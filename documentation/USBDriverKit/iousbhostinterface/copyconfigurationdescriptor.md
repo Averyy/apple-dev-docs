@@ -1,7 +1,8 @@
 # CopyConfigurationDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the parent configuration descriptor for this interface.
 
@@ -10,7 +11,7 @@ Retrieves the parent configuration descriptor for this interface.
 
 ## Declaration
 
-```swift
+```cpp
 virtual const IOUSBConfigurationDescriptor * CopyConfigurationDescriptor();
 ```
 
@@ -20,11 +21,12 @@ The configuration descriptor for this interface. It’s your responsibility to f
 
 ## See Also
 
-- [GetInterfaceDescriptor](iousbhostinterface/getinterfacedescriptor.md)
+### Getting Interface-Related Descriptors
+- [GetInterfaceDescriptor](./getinterfacedescriptor.md)
   Returns the version of the interface descriptor that is associated with the specified configuration.
-- [CopyStringDescriptor](iousbhostinterface/copystringdescriptor-83du1.md)
+- [CopyStringDescriptor](./copystringdescriptor-83du1.md)
   Returns a descriptor from the device in the specified language.
-- [CopyStringDescriptor](iousbhostinterface/copystringdescriptor-8k65j.md)
+- [CopyStringDescriptor](./copystringdescriptor-8k65j.md)
   Returns a string descriptor from the device.
 
 

@@ -1,7 +1,8 @@
 # GaussianSplatResource.ActivationFunction.exponential
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies an exponential function to each value.
 

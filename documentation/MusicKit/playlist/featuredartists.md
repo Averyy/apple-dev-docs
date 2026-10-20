@@ -1,7 +1,8 @@
 # featuredArtists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of featured artists for this playlist.
 

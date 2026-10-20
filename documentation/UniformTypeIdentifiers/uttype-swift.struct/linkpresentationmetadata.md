@@ -1,7 +1,8 @@
 # linkPresentationMetadata
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Serialized LinkPresentation metadata.
 

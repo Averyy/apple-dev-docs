@@ -1,7 +1,8 @@
 # kCMTextVerticalLayout_RightToLeft
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Add new vertical lines from right to left.
 
@@ -20,9 +21,14 @@ Add new vertical lines from right to left.
 let kCMTextVerticalLayout_RightToLeft: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextVerticalLayout_RightToLeft;
+```
+
 ## See Also
 
-- [let kCMTextVerticalLayout_LeftToRight: CFString](kcmtextverticallayout_lefttoright.md)
+### Layouts
+- [let kCMTextVerticalLayout_LeftToRight: CFString](./kcmtextverticallayout_lefttoright.md)
   Add new vertical lines from left to right.
 
 

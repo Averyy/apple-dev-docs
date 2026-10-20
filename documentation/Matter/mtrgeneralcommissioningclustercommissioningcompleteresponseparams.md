@@ -1,7 +1,8 @@
 # MTRGeneralCommissioningClusterCommissioningCompleteResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 class MTRGeneralCommissioningClusterCommissioningCompleteResponseParams
 ```
 
+```objc
+@interface MTRGeneralCommissioningClusterCommissioningCompleteResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrgeneralcommissioningclustercommissioningcompleteresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrgeneralcommissioningclustercommissioningcompleteresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var debugText: String](mtrgeneralcommissioningclustercommissioningcompleteresponseparams/debugtext.md)
-- [var errorCode: NSNumber](mtrgeneralcommissioningclustercommissioningcompleteresponseparams/errorcode.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrgeneralcommissioningclustercommissioningcompleteresponseparams/timedinvoketimeoutms.md)
+- [var debugText: String](./mtrgeneralcommissioningclustercommissioningcompleteresponseparams/debugtext.md)
+- [var errorCode: NSNumber](./mtrgeneralcommissioningclustercommissioningcompleteresponseparams/errorcode.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrgeneralcommissioningclustercommissioningcompleteresponseparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

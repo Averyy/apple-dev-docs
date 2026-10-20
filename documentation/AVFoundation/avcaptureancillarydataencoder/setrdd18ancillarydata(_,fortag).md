@@ -1,7 +1,8 @@
 # setRDD18AncillaryData(_:forTag:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the user to add their own data to be encoded and transmitted using SMPTE RDD 18 standards.
 
@@ -16,6 +17,10 @@ Allows the user to add their own data to be encoded and transmitted using SMPTE 
 
 ```swift
 func setRDD18AncillaryData(_ data: Data, forTag tag: UInt16) throws
+```
+
+```objc
+- (BOOL) setRDD18AncillaryData:(NSData *) data forTag:(uint16_t) tag error:(NSError **) error;
 ```
 
 ## Parameters

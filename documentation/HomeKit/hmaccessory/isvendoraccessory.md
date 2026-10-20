@@ -1,7 +1,8 @@
 # isVendorAccessory
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var isVendorAccessory: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isVendorAccessory) BOOL vendorAccessory;
 ```
 
 #### Discussion

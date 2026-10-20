@@ -1,7 +1,8 @@
 # performSingleReplacement(query:replacementString:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a single instance of the query string with the replacement string you provide.
 
@@ -17,6 +18,10 @@ Replaces a single instance of the query string with the replacement string you p
 func performSingleReplacement(query searchQuery: String, replacementString: String, options: UITextSearchOptions?)
 ```
 
+```objc
+- (void) performSingleReplacementWithSearchQuery:(NSString *) searchQuery replacementString:(NSString *) replacementString options:(UITextSearchOptions *) options;
+```
+
 #### Discussion
 
 The system calls this method when the user initiates the replacement the text for a single match of a string in your app’s text content with the replacement string.
@@ -29,13 +34,14 @@ The system calls this method when the user initiates the replacement the text fo
 
 ## See Also
 
-- [func performSearch(query: String, options: UITextSearchOptions?)](uifindsession/performsearch(query:options:).md)
+### Managing session interactions
+- [func performSearch(query: String, options: UITextSearchOptions?)](./performsearch%28query,options%29.md)
   Initiates a search for the query string you provide.
-- [func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)](uifindsession/replaceall(searchquery:replacementstring:options:).md)
+- [func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)](./replaceall%28searchquery,replacementstring,options%29.md)
   Replaces all matching instances of the query string with the replacement string you provide.
-- [func highlightNextResult(in: UITextStorageDirection)](uifindsession/highlightnextresult(in:).md)
+- [func highlightNextResult(in: UITextStorageDirection)](./highlightnextresult%28in%29.md)
   Updates the highlighted result to the next or previous match.
-- [func invalidateFoundResults()](uifindsession/invalidatefoundresults.md)
+- [func invalidateFoundResults()](./invalidatefoundresults%28%29.md)
   Invalidates the found ranges and updates the system find panel.
 
 

@@ -1,21 +1,22 @@
 # Strideable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func + (Self, Self.Stride) -> Self](unsafemutablerawpointer/+(_:_:)-5q1cr.md)
-- [static func + (Self.Stride, Self) -> Self](unsafemutablerawpointer/+(_:_:)-7xyiv.md)
-- [static func += (inout Self, Self.Stride)](unsafemutablerawpointer/+=(_:_:).md)
-- [static func - (Self, Self) -> Self.Stride](unsafemutablerawpointer/-(_:_:)-2mzz6.md)
-- [static func - (Self, Self.Stride) -> Self](unsafemutablerawpointer/-(_:_:)-7vabq.md)
-- [static func -= (inout Self, Self.Stride)](unsafemutablerawpointer/-=(_:_:).md)
+- [static func + (Self, Self.Stride) -> Self](./plus%28_,_%29-5q1cr.md)
+- [static func + (Self.Stride, Self) -> Self](./plus%28_,_%29-7xyiv.md)
+- [static func += (inout Self, Self.Stride)](./pluseq%28_,_%29.md)
+- [static func - (Self, Self) -> Self.Stride](./minus%28_,_%29-2mzz6.md)
+- [static func - (Self, Self.Stride) -> Self](./minus%28_,_%29-7vabq.md)
+- [static func -= (inout Self, Self.Stride)](./minuseq%28_,_%29.md)
 ### Instance Methods
-- [func advanced(by: Int) -> UnsafeMutableRawPointer](unsafemutablerawpointer/advanced(by:).md)
+- [func advanced(by: Int) -> UnsafeMutableRawPointer](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
 ### Type Aliases
-- [UnsafeMutableRawPointer.Stride](unsafemutablerawpointer/stride.md)
+- [UnsafeMutableRawPointer.Stride](./stride.md)
   A type that represents the distance between two values.
 
 

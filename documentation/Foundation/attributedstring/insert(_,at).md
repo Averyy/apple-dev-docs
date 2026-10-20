@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the specified string at a specific index in the attributed string.
 
@@ -27,11 +28,12 @@ mutating func insert(_ s: some AttributedStringProtocol, at index: AttributedStr
 
 ## See Also
 
-- [AttributedString.Index](attributedstring/index.md)
+### Modifying an Attributed String
+- [AttributedString.Index](./index.md)
   A type that represents the position of a character or code unit within an attributed string.
-- [func removeSubrange(some RangeExpression<AttributedString.Index>)](attributedstring/removesubrange(_:).md)
+- [func removeSubrange(some RangeExpression<AttributedString.Index>)](./removesubrange%28_%29.md)
   Removes a range of characters from the attributed string.
-- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](attributedstring/replacesubrange(_:with:).md)
+- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](./replacesubrange%28_,with%29.md)
   Replaces the contents in a range of the attributed string.
 
 

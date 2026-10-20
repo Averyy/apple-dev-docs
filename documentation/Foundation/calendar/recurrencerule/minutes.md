@@ -1,7 +1,8 @@
 # minutes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which minutes of the hour the event should repeat. Accepts values between 0 and 59
 

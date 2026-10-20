@@ -1,7 +1,8 @@
 # anchored
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 4.0+
@@ -18,13 +19,18 @@
 static var anchored: CFDataSearchFlags { get }
 ```
 
+```c
+kCFDataSearchAnchored
+```
+
 #### Discussion
 
 Performs searching only on bytes at the beginning or, if `kCFDataSearchBackwards` is also specified, at the end of the search range. No match at the beginning or end means nothing is found, even if a matching sequence of bytes occurs elsewhere in the data object.
 
 ## See Also
 
-- [static var backwards: CFDataSearchFlags](cfdatasearchflags/backwards.md)
+### Constants
+- [static var backwards: CFDataSearchFlags](./backwards.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # shading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shading to fill uncolored text regions with.
 
@@ -22,15 +23,16 @@ var shading: GraphicsContext.Shading
 
 #### Discussion
 
-This value defaults to the [`foreground`](graphicscontext/shading/foreground.md) shading.
+This value defaults to the [`foreground`](../shading/foreground.md) shading.
 
 ## See Also
 
-- [func firstBaseline(in: CGSize) -> CGFloat](graphicscontext/resolvedtext/firstbaseline(in:).md)
+### Getting the text properties
+- [func firstBaseline(in: CGSize) -> CGFloat](./firstbaseline%28in%29.md)
   Gets the distance from the first line’s ascender to its baseline.
-- [func lastBaseline(in: CGSize) -> CGFloat](graphicscontext/resolvedtext/lastbaseline(in:).md)
+- [func lastBaseline(in: CGSize) -> CGFloat](./lastbaseline%28in%29.md)
   Gets the distance from the first line’s ascender to the last line’s baseline.
-- [func measure(in: CGSize) -> CGSize](graphicscontext/resolvedtext/measure(in:).md)
+- [func measure(in: CGSize) -> CGSize](./measure%28in%29.md)
   Measures the size of the resolved text for a given area into which the text should be placed.
 
 

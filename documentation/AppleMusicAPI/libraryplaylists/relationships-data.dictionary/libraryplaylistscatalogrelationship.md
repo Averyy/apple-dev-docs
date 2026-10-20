@@ -1,7 +1,8 @@
 # LibraryPlaylists.Relationships.LibraryPlaylistsCatalogRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the playlist to its associated catalog content.
 
@@ -10,7 +11,7 @@ A relationship from the playlist to its associated catalog content.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylists.Relationships.LibraryPlaylistsCatalogRelationship
 ```
 
@@ -22,7 +23,8 @@ object LibraryPlaylists.Relationships.LibraryPlaylistsCatalogRelationship
 
 ## See Also
 
-- [object LibraryPlaylists.Relationships.LibraryPlaylistsTracksRelationship](libraryplaylists/relationships-data.dictionary/libraryplayliststracksrelationship.md)
+### Related Objects
+- [object LibraryPlaylists.Relationships.LibraryPlaylistsTracksRelationship](./libraryplayliststracksrelationship.md)
   A relationship from the playlist to its tracks.
 
 

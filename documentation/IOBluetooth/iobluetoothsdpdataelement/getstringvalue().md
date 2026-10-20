@@ -1,17 +1,22 @@
 # getStringValue()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the data element is represented by a string object, it returns the value as an NSString.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getStringValue() -> String!
+```
+
+```objc
+- (NSString *) getStringValue;
 ```
 
 #### Return Value

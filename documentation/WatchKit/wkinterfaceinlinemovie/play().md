@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays the movie.
 
@@ -14,15 +15,20 @@ Plays the movie.
 func play()
 ```
 
+```objc
+- (void) play;
+```
+
 #### Discussion
 
 If the movie is currently paused, this resumes playback from the current position.
 
 ## See Also
 
-- [func pause()](wkinterfaceinlinemovie/pause.md)
+### Controlling Playback
+- [func pause()](./pause%28%29.md)
   Pauses the movie.
-- [func playFromBeginning()](wkinterfaceinlinemovie/playfrombeginning.md)
+- [func playFromBeginning()](./playfrombeginning%28%29.md)
   Plays the movie from the beginning.
 
 

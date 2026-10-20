@@ -1,7 +1,8 @@
 # passwordFieldPasswordRules
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Developer provided password rules.
 
@@ -15,6 +16,10 @@ Developer provided password rules.
 
 ```swift
 var passwordFieldPasswordRules: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * passwordFieldPasswordRules;
 ```
 
 

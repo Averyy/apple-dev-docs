@@ -1,14 +1,15 @@
 # Supporting additional widget sizes
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Offer widgets in additional contexts by adding support for various widget sizes.
 
 #### Overview
 
-After you add a widget extension to your app and create your first widget, add code to declare additional widgets your app supports using the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedfamilies(_:)) property modifier. The sizes you use depend on the devices your app supports. If your app supports more than one platform, make sure to conditionally declare supported widget families.
+After you add a widget extension to your app and create your first widget, add code to declare additional widgets your app supports using the [`supportedFamilies(_:)`](../SwiftUI/widgetconfiguration/supportedfamilies%28_%29.md) property modifier. The sizes you use depend on the devices your app supports. If your app supports more than one platform, make sure to conditionally declare supported widget families.
 
-The following example from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how you declare several widgets sizes in your [`Widget`](https://developer.apple.com/documentation/swiftui/widget) implementation. The app supports accessory widgets in both watchOS and iOS and [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) and [`WidgetFamily.systemMedium`](widgetfamily/systemmedium.md) widgets in iOS. Note the usage of the `#if os(watchOS)` macro to make sure you declare the correct supported widget families for each platform.
+The following example from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how you declare several widgets sizes in your [`Widget`](../SwiftUI/widget.md) implementation. The app supports accessory widgets in both watchOS and iOS and [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md) and [`WidgetFamily.systemMedium`](./widgetfamily/systemmedium.md) widgets in iOS. Note the usage of the `#if os(watchOS)` macro to make sure you declare the correct supported widget families for each platform.
 
 ```swift
 public var body: some WidgetConfiguration {
@@ -26,14 +27,14 @@ public var body: some WidgetConfiguration {
 }
 ```
 
-##### Update Swiftui Views to Support Additional Sizes
+##### Update SwiftUI views to support additional sizes
 
-After you’ve declared support for additional widget sizes in your [`Widget`](https://developer.apple.com/documentation/swiftui/widget), update the views of your widget to support the additional family sizes. In your view code:
+After you’ve declared support for additional widget sizes in your [`Widget`](../SwiftUI/widget.md), update the views of your widget to support the additional family sizes. In your view code:
 
-1. Use the [`widgetFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/widgetfamily) environment variable to detect different widget families.
-2. Construct the view for each size and include code to handle appearances like vibrant and Dark Mode, as applicable. To learn more, see [`Preparing widgets for additional platforms, contexts, and appearances`](preparing-widgets-for-additional-contexts-and-appearances.md).
+1. Use the [`widgetFamily`](../SwiftUI/environmentvalues/widgetfamily.md) environment variable to detect different widget families.
+2. Construct the view for each size and include code to handle appearances like vibrant and Dark Mode, as applicable. To learn more, see [Preparing widgets for additional platforms, contexts, and appearances](./preparing-widgets-for-additional-contexts-and-appearances.md).
 
-The following example shows an abbreviated code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project. It conditionally returns the right SwiftUI view for each widget family.
+The following example shows an abbreviated code snippet from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project. It conditionally returns the right SwiftUI view for each widget family.
 
 ```swift
 struct EmojiRangerWidgetEntryView: View {
@@ -63,37 +64,38 @@ struct EmojiRangerWidgetEntryView: View {
 }
 ```
 
-> 💡 **Tip**: Use Xcode previews to view your widget designs without running your app in Simulator or on a device. For more information, see [`Preview widgets in Xcode`](creating-a-widget-extension#Preview-widgets-in-Xcode.md).
+> 💡 **Tip**: Use Xcode previews to view your widget designs without running your app in Simulator or on a device. For more information, see [Preview widgets in Xcode](./creating-a-widget-extension.md#Preview-widgets-in-Xcode).
 
 ## See Also
 
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
+### Layout and presentation
+- [Displaying the right widget background](./displaying-the-right-widget-background.md)
   Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
   Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+- [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md)
   Ensure that your small system family widget works well in StandBy and CarPlay.
-- [struct WidgetRenderingMode](widgetrenderingmode.md)
+- [struct WidgetRenderingMode](./widgetrenderingmode.md)
   Constants that indicate the rendering mode for a widget.
-- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
-  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
-- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
+- [struct WidgetAccentedRenderingMode](./widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](./widgetrenderingmode/accented.md) mode.
+- [struct AccessoryWidgetBackground](./accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
-- [struct WidgetLocation](widgetlocation.md)
+- [struct WidgetLocation](./widgetlocation.md)
   Values that indicate different widget locations.
 - [func widgetAccentable(Bool) -> some View
-](../swiftui/view/widgetaccentable(_:).md)
+](../SwiftUI/view/widgetaccentable%28_%29.md)
   Adds the view and all of its subviews to the accented group.
 - [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
-](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+](../SwiftUI/image/widgetaccentedrenderingmode%28_%29.md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
-- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](../SwiftUI/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](../SwiftUI/environmentvalues/widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
-- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+- [static let widget: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/widget.md)
   The container background placement for a widget.
-- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+- [var showsWidgetContainerBackground: Bool](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
 
 

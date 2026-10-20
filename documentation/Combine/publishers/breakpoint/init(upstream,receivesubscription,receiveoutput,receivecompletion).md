@@ -1,7 +1,8 @@
 # init(upstream:receiveSubscription:receiveOutput:receiveCompletion:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a breakpoint publisher with the provided upstream publisher and breakpoint-raising closures.
 

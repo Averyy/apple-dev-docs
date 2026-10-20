@@ -1,16 +1,17 @@
 # CFBitVector
 
 **Framework**: Core Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,65 +19,71 @@
 class CFBitVector
 ```
 
+```c
+typedef const struct __CFBitVector * CFBitVectorRef;
+```
+
 #### Overview
 
-CFBitVector and its derived mutable type, [`CFMutableBitVector`](cfmutablebitvector.md), manage ordered collections of bit values, which are either `0` or `1`. CFBitVector creates static bit vectors and CFMutableBitVector creates dynamic bit vectors.
+CFBitVector and its derived mutable type, [`CFMutableBitVector`](./cfmutablebitvector.md), manage ordered collections of bit values, which are either `0` or `1`. CFBitVector creates static bit vectors and CFMutableBitVector creates dynamic bit vectors.
 
 ## Topics
 
 ### Creating a Bit Vector
-- [func CFBitVectorCreate(CFAllocator!, UnsafePointer<UInt8>!, CFIndex) -> CFBitVector!](cfbitvectorcreate(_:_:_:).md)
+- [func CFBitVectorCreate(CFAllocator!, UnsafePointer<UInt8>!, CFIndex) -> CFBitVector!](./cfbitvectorcreate%28_,_,_%29.md)
   Creates an immutable bit vector from a block of memory.
-- [func CFBitVectorCreateCopy(CFAllocator!, CFBitVector!) -> CFBitVector!](cfbitvectorcreatecopy(_:_:).md)
+- [func CFBitVectorCreateCopy(CFAllocator!, CFBitVector!) -> CFBitVector!](./cfbitvectorcreatecopy%28_,_%29.md)
   Creates an immutable bit vector that is a copy of another bit vector.
 ### Getting Information About a Bit Vector
-- [func CFBitVectorContainsBit(CFBitVector!, CFRange, CFBit) -> Bool](cfbitvectorcontainsbit(_:_:_:).md)
+- [func CFBitVectorContainsBit(CFBitVector!, CFRange, CFBit) -> Bool](./cfbitvectorcontainsbit%28_,_,_%29.md)
   Returns whether a bit vector contains a particular bit value.
-- [func CFBitVectorGetBitAtIndex(CFBitVector!, CFIndex) -> CFBit](cfbitvectorgetbitatindex(_:_:).md)
+- [func CFBitVectorGetBitAtIndex(CFBitVector!, CFIndex) -> CFBit](./cfbitvectorgetbitatindex%28_,_%29.md)
   Returns the bit value at a given index in a bit vector.
-- [func CFBitVectorGetBits(CFBitVector!, CFRange, UnsafeMutablePointer<UInt8>!)](cfbitvectorgetbits(_:_:_:).md)
+- [func CFBitVectorGetBits(CFBitVector!, CFRange, UnsafeMutablePointer<UInt8>!)](./cfbitvectorgetbits%28_,_,_%29.md)
   Returns the bit values in a range of indices in a bit vector.
-- [func CFBitVectorGetCount(CFBitVector!) -> CFIndex](cfbitvectorgetcount(_:).md)
+- [func CFBitVectorGetCount(CFBitVector!) -> CFIndex](./cfbitvectorgetcount%28_%29.md)
   Returns the number of bit values in a bit vector.
-- [func CFBitVectorGetCountOfBit(CFBitVector!, CFRange, CFBit) -> CFIndex](cfbitvectorgetcountofbit(_:_:_:).md)
+- [func CFBitVectorGetCountOfBit(CFBitVector!, CFRange, CFBit) -> CFIndex](./cfbitvectorgetcountofbit%28_,_,_%29.md)
   Counts the number of times a certain bit value occurs within a range of bits in a bit vector.
-- [func CFBitVectorGetFirstIndexOfBit(CFBitVector!, CFRange, CFBit) -> CFIndex](cfbitvectorgetfirstindexofbit(_:_:_:).md)
+- [func CFBitVectorGetFirstIndexOfBit(CFBitVector!, CFRange, CFBit) -> CFIndex](./cfbitvectorgetfirstindexofbit%28_,_,_%29.md)
   Locates the first occurrence of a certain bit value within a range of bits in a bit vector.
-- [func CFBitVectorGetLastIndexOfBit(CFBitVector!, CFRange, CFBit) -> CFIndex](cfbitvectorgetlastindexofbit(_:_:_:).md)
+- [func CFBitVectorGetLastIndexOfBit(CFBitVector!, CFRange, CFBit) -> CFIndex](./cfbitvectorgetlastindexofbit%28_,_,_%29.md)
   Locates the last occurrence of a certain bit value within a range of bits in a bit vector.
 ### Getting the CFBitVector Type ID
-- [func CFBitVectorGetTypeID() -> CFTypeID](cfbitvectorgettypeid().md)
+- [func CFBitVectorGetTypeID() -> CFTypeID](./cfbitvectorgettypeid%28%29.md)
   Returns the type identifier for the CFBitVector opaque type.
 ### Data Types
-- [typealias CFBit](cfbit.md)
+- [typealias CFBit](./cfbit.md)
   A binary value of either `0` or `1`.
 
 ## Relationships
 
 ### Inherited By
-- [CFMutableBitVector](cfmutablebitvector.md)
+- [CFMutableBitVector](./cfmutablebitvector.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Collections Programming Topics for Core Foundation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFCollections/CFCollections.html#//apple_ref/doc/uid/10000124i)
-- [class CFAllocator](cfallocator.md)
-- [class CFArray](cfarray.md)
-- [class CFAttributedString](cfattributedstring.md)
-- [class CFBag](cfbag.md)
-- [class CFBinaryHeap](cfbinaryheap.md)
-- [class CFBoolean](cfboolean.md)
-- [class CFBundle](cfbundle.md)
-- [class CFCalendar](cfcalendar.md)
-- [class CFCharacterSet](cfcharacterset.md)
-- [class CFData](cfdata.md)
-- [class CFDate](cfdate.md)
-- [class CFDateFormatter](cfdateformatter.md)
-- [class CFDictionary](cfdictionary.md)
-- [class CFError](cferror.md)
-- [class CFFileDescriptor](cffiledescriptor.md)
+### Related Documentation
+- [Collections Programming Topics for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFCollections/CFCollections.html#//apple_ref/doc/uid/10000124i)
+### Opaque Types
+- [class CFAllocator](./cfallocator.md)
+- [class CFArray](./cfarray.md)
+- [class CFAttributedString](./cfattributedstring.md)
+- [class CFBag](./cfbag.md)
+- [class CFBinaryHeap](./cfbinaryheap.md)
+- [class CFBoolean](./cfboolean.md)
+- [class CFBundle](./cfbundle.md)
+- [class CFCalendar](./cfcalendar.md)
+- [class CFCharacterSet](./cfcharacterset.md)
+- [class CFData](./cfdata.md)
+- [class CFDate](./cfdate.md)
+- [class CFDateFormatter](./cfdateformatter.md)
+- [class CFDictionary](./cfdictionary.md)
+- [class CFError](./cferror.md)
+- [class CFFileDescriptor](./cffiledescriptor.md)
 
 
 ---

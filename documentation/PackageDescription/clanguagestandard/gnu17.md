@@ -1,7 +1,8 @@
 # CLanguageStandard.gnu17
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The identifier for the ISO C 2017 language standard with GNU extensions.
 
@@ -16,35 +17,36 @@ case gnu17
 
 ## See Also
 
-- [CLanguageStandard.c11](clanguagestandard/c11.md)
+### Enumeration Cases
+- [CLanguageStandard.c11](./c11.md)
   The identifier for the ISO C 2011 language standard.
-- [CLanguageStandard.c17](clanguagestandard/c17.md)
+- [CLanguageStandard.c17](./c17.md)
   The identifier for the ISO C 2017 language stadard.
-- [CLanguageStandard.c18](clanguagestandard/c18.md)
+- [CLanguageStandard.c18](./c18.md)
   The identifier for the ISO C 2017 language standard.
-- [CLanguageStandard.c2x](clanguagestandard/c2x.md)
+- [CLanguageStandard.c2x](./c2x.md)
   The identifier for the ISO C2x draft language standard.
-- [CLanguageStandard.c89](clanguagestandard/c89.md)
+- [CLanguageStandard.c89](./c89.md)
   The identifier for the ISO C 1989 language standard.
-- [CLanguageStandard.c90](clanguagestandard/c90.md)
+- [CLanguageStandard.c90](./c90.md)
   The identifier for the ISO C 1990 language standard.
-- [CLanguageStandard.c99](clanguagestandard/c99.md)
+- [CLanguageStandard.c99](./c99.md)
   The identifier for the ISO C 1999 language standard.
-- [CLanguageStandard.gnu11](clanguagestandard/gnu11.md)
+- [CLanguageStandard.gnu11](./gnu11.md)
   The identifier for the ISO C 2011 language standard with GNU extensions.
-- [CLanguageStandard.gnu18](clanguagestandard/gnu18.md)
+- [CLanguageStandard.gnu18](./gnu18.md)
   The identifier for the ISO C 2017 language standard with GNU extensions.
-- [CLanguageStandard.gnu2x](clanguagestandard/gnu2x.md)
+- [CLanguageStandard.gnu2x](./gnu2x.md)
   The identifier for the ISO C2x draft language standard with GNU extensions.
-- [CLanguageStandard.gnu89](clanguagestandard/gnu89.md)
+- [CLanguageStandard.gnu89](./gnu89.md)
   The identifier for the ISO C 1990 language standard with GNU extensions.
-- [CLanguageStandard.gnu90](clanguagestandard/gnu90.md)
+- [CLanguageStandard.gnu90](./gnu90.md)
   The identifier for the ISO C 1990 language standard with GNU extensions.
-- [CLanguageStandard.gnu99](clanguagestandard/gnu99.md)
+- [CLanguageStandard.gnu99](./gnu99.md)
   The identifier for the ISO C 1999 language standard with GNU extensions.
-- [CLanguageStandard.iso9899_1990](clanguagestandard/iso9899_1990.md)
+- [CLanguageStandard.iso9899_1990](./iso9899_1990.md)
   The identifier for the ISO C 1990 language standard.
-- [CLanguageStandard.iso9899_199409](clanguagestandard/iso9899_199409.md)
+- [CLanguageStandard.iso9899_199409](./iso9899_199409.md)
   The identifier for the ISO C 1990 language standard with amendment 1.
 
 

@@ -1,7 +1,8 @@
 # setProfileState(_:enabledChannelCount:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func setProfileState(_ isEnabled: Bool, enabledChannelCount: MIDIUInteger14) throws
+```
+
+```objc
+- (BOOL) setProfileState:(BOOL) isEnabled enabledChannelCount:(MIDIUInteger14) enabledChannelCount error:(NSError **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(catching:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new result by evaluating an async throwing closure, capturing the returned value as a success, or any thrown error as a failure.
 
@@ -20,6 +21,8 @@ Creates a new result by evaluating an async throwing closure, capturing the retu
 nonisolated
 (nonsending) init(catching body: nonisolated(nonsending) () async throws(Failure) -> Success) async
 ```
+
+Available when `Failure` conforms to `Error`.
 
 ## Parameters
 

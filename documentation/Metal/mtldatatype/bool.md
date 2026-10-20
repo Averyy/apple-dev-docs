@@ -1,7 +1,8 @@
 # MTLDataType.bool
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Boolean value.
 
@@ -10,7 +11,7 @@ A Boolean value.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ A Boolean value.
 case bool
 ```
 
+```c
+MTLDataTypeBool
+```
+
 ## See Also
 
-- [MTLDataType.bool2](mtldatatype/bool2.md)
+### Boolean types
+- [MTLDataType.bool2](./bool2.md)
   A two-component Boolean vector.
-- [MTLDataType.bool3](mtldatatype/bool3.md)
+- [MTLDataType.bool3](./bool3.md)
   A three-component Boolean vector.
-- [MTLDataType.bool4](mtldatatype/bool4.md)
+- [MTLDataType.bool4](./bool4.md)
   A four-component Boolean vector.
 
 

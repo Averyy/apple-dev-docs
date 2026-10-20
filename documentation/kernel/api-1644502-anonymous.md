@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDOptionsTypeNone](1644502-anonymous/kiohidoptionstypenone.md)
-- [kIOHIDOptionsTypeSeizeDevice](1644502-anonymous/kiohidoptionstypeseizedevice.md)
-- [kIOHIDOptionsTypeMaskPrivate](1644502-anonymous/kiohidoptionstypemaskprivate.md)
+- [kIOHIDOptionsTypeNone](./api-1644502-anonymous/kiohidoptionstypenone.md)
+- [kIOHIDOptionsTypeSeizeDevice](./api-1644502-anonymous/kiohidoptionstypeseizedevice.md)
+- [kIOHIDOptionsTypeMaskPrivate](./api-1644502-anonymous/kiohidoptionstypemaskprivate.md)
 
 
 ---

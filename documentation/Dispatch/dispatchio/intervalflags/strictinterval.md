@@ -1,18 +1,19 @@
 # strictInterval
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enqueue handlers for a channel at strict intervals regardless of how much data has been read or written.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ Setting this flag can lead to the handler being called even if the amount of dat
 
 ## See Also
 
-- [var DISPATCH_IO_STRICT_INTERVAL: Int32](dispatch_io_strict_interval.md)
+### Interval Flags
+- [var DISPATCH_IO_STRICT_INTERVAL: Int32](../../dispatch_io_strict_interval.md)
   Enqueue handlers for a channel at strict intervals regardless of how much data has been read or written.
 
 

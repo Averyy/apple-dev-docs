@@ -1,7 +1,8 @@
 # write(to:atomically:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the data object’s bytes to the location specified by a given URL.
 
@@ -20,30 +21,35 @@ Writes the data object’s bytes to the location specified by a given URL.
 func write(to url: URL, atomically: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) url atomically:(BOOL) atomically;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation succeeds, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Since at present only `file://` URLs are supported, there is no difference between this method and [`write(toFile:atomically:)`](nsdata/write(tofile:atomically:).md), except for the type of the first argument.
+Since at present only `file://` URLs are supported, there is no difference between this method and [`write(toFile:atomically:)`](./write%28tofile,atomically%29.md), except for the type of the first argument.
 
-This method may not be appropriate when writing to publicly accessible files. To securely write data to a public location, use [`FileHandle`](filehandle.md) instead. For more information, see [`Securing File Operations`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Articles/RaceConditions.html#//apple_ref/doc/uid/TP40002585-SW9) in [`Secure Coding Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415).
+This method may not be appropriate when writing to publicly accessible files. To securely write data to a public location, use [`FileHandle`](../filehandle.md) instead. For more information, see [Securing File Operations](https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Articles/RaceConditions.html#//apple_ref/doc/uid/TP40002585-SW9) in [Secure Coding Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415).
 
 ## Parameters
 
 - `url`: The location to which to write the receiver’s bytes. Only `file://` URLs are supported.
-- `atomically`: If [`true`](https://developer.apple.com/documentation/swift/true), the data is written to a backup location, and then—assuming no errors occur—the backup location is renamed to the name specified by `aURL`; otherwise, the data is written directly to `aURL`. `atomically` is ignored if `aURL` is not of a type the supports atomic writes.
+- `atomically`: If [`true`](../../Swift/true.md), the data is written to a backup location, and then—assuming no errors occur—the backup location is renamed to the name specified by `aURL`; otherwise, the data is written directly to `aURL`. `atomically` is ignored if `aURL` is not of a type the supports atomic writes.
 
 ## See Also
 
-- [func write(toFile: String, atomically: Bool) -> Bool](nsdata/write(tofile:atomically:).md)
+### Writing Data to a File
+- [func write(toFile: String, atomically: Bool) -> Bool](./write%28tofile,atomically%29.md)
   Writes the data object’s bytes to the file specified by a given path.
-- [func write(toFile: String, options: NSData.WritingOptions) throws](nsdata/write(tofile:options:).md)
+- [func write(toFile: String, options: NSData.WritingOptions) throws](./write%28tofile,options%29.md)
   Writes the data object’s bytes to the file specified by a given path.
-- [func write(to: URL, options: NSData.WritingOptions) throws](nsdata/write(to:options:).md)
+- [func write(to: URL, options: NSData.WritingOptions) throws](./write%28to,options%29.md)
   Writes the data object’s bytes to the location specified by a given URL.
-- [NSData.WritingOptions](nsdata/writingoptions.md)
+- [NSData.WritingOptions](./writingoptions.md)
   Options for methods used to write data objects.
 
 

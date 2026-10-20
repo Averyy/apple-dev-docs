@@ -1,25 +1,27 @@
 # size
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 size_t size() const;
 ```
 
 ## See Also
 
-- [data](osmappedfile/data.md)
-- [free](osmappedfile/free.md)
-- [init](osmappedfile/init.md)
+### Instance Methods
+- [data](./data.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

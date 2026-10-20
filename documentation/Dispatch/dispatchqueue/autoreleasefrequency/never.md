@@ -1,7 +1,8 @@
 # DispatchQueue.AutoreleaseFrequency.never
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The queue does not set up an autorelease pool around executed blocks.
 
@@ -11,7 +12,7 @@ The queue does not set up an autorelease pool around executed blocks.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ This option is the default behavior for the system-defined global queues.
 
 ## See Also
 
-- [DispatchQueue.AutoreleaseFrequency.inherit](dispatchqueue/autoreleasefrequency/inherit.md)
+### Autorelease Frequencies
+- [DispatchQueue.AutoreleaseFrequency.inherit](./inherit.md)
   The queue inherits its autorelease frequency from its target queue.
-- [DispatchQueue.AutoreleaseFrequency.workItem](dispatchqueue/autoreleasefrequency/workitem.md)
+- [DispatchQueue.AutoreleaseFrequency.workItem](./workitem.md)
   The queue configures an autorelease pool before the execution of a block, and releases the objects in that pool after the block finishes executing.
 
 

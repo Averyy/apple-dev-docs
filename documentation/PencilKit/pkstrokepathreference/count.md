@@ -1,7 +1,8 @@
 # count
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of control points in this stroke path.
 
@@ -18,9 +19,14 @@ The number of control points in this stroke path.
 var count: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger count;
+```
+
 ## See Also
 
-- [var creationDate: Date](pkstrokepathreference/creationdate.md)
+### Getting the stroke path properties
+- [var creationDate: Date](./creationdate.md)
   The time at which this stroke path starts.
 
 

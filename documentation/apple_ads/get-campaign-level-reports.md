@@ -1,28 +1,31 @@
 # Get Campaign-Level Reports
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetches reports for campaigns.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 3](apple-search-ads-campaign-management-api-3.md)
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Ads Campaign Management API 3](./apple-search-ads-campaign-management-api-3.md)
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
 #### Discussion
 
-Use this endpoint to fetch reports for your campaigns. See [`ReportingCampaign`](reportingcampaign.md) and [`CampaignAppDetail`](campaignappdetail.md) for [`Condition`](condition.md) operators and field values to filter results with a [`Selector`](selector.md).
+Use this endpoint to fetch reports for your campaigns. See [`ReportingCampaign`](./reportingcampaign.md) and [`CampaignAppDetail`](./campaignappdetail.md) for [`Condition`](./condition.md) operators and field values to filter results with a [`Selector`](./selector.md).
 
-See the `groupBy` parameter description in the [`ReportingRequest`](reportingrequest.md) for supported values per targeting dimension.
+See the `groupBy` parameter description in the [`ReportingRequest`](./reportingrequest.md) for supported values per targeting dimension.
 
-The `orderBy` [`Selector`](selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingCampaign`](reportingcampaign.md) fields are available to the `orderBy` [`Selector`](selector.md) except `servingStateReasons`, `app`, `app:{appName}`, and `app:{adamId}`.
+The `orderBy` [`Selector`](./selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingCampaign`](./reportingcampaign.md) fields are available to the `orderBy` [`Selector`](./selector.md) except `servingStateReasons`, `app`, `app:{appName}`, and `app:{adamId}`.
 
-##### Payload Example 1 Get Campaign Level Reports for Campaigns with a Maximize Conversions Bid Strategy
+##### Payload example 1: Get campaign-level reports for campaigns with a Maximize Conversions bid strategy
 
 In campaigns with a Maximize Conversions bid strategy, for filtering and ordering you can use `biddingStrategy` and `targetCpa` in a selector for conditions and ordering.
 
@@ -102,7 +105,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
 }
 ```
 
-##### Payload Example 2 Get Campaign Level Reports with Geo
+##### Payload example 2: Get campaign-level reports with geo
 
 **Request**:
 
@@ -279,7 +282,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
 }
 ```
 
-##### Payload Example 3 Get Campaign Level Reports
+##### Payload example 3: Get campaign-level reports
 
 **Request**:
 
@@ -445,7 +448,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
     }
 ```
 
-##### Payload Example 4 Get Campaign Level Reports with Granularity
+##### Payload example 4: Get campaign-level reports with granularity
 
 **Request**:
 
@@ -621,21 +624,34 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ReportingRequest`
+
 The report request body consisting of metrics and dimensions to use as filters.
+
+## Responses
+
+- `200` OK (`ReportingResponseBody`, `application/json`): If the call succeeds, the API returns the [`ReportingResponse`](./reportingresponse.md) object in the response payload with an HTTP status code of `200(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`): An invalid query or missing required parameters.
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`): An unauthenticated call fails to get the requested response.
+- `403` Forbidden (`ApiErrorResponse`, `application/json`): Insufficient rights to the resource.
+- `429` (`ApiErrorResponse`, `application/json`): The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`): The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 ## See Also
 
-- [Get Ad Group-Level Reports](get-ad-group-level-reports.md)
+### Reports Endpoints
+- [Get Ad Group-Level Reports](./get-ad-group-level-reports.md)
   Fetches reports for ad groups within a campaign.
-- [Get Keyword-Level Reports](get-keyword-level-reports.md)
+- [Get Keyword-Level Reports](./get-keyword-level-reports.md)
   Fetches reports for targeting keywords within a campaign.
-- [Get Keyword-Level within Ad Group Reports](get-keyword-level-within-ad-group-reports.md)
+- [Get Keyword-Level within Ad Group Reports](./get-keyword-level-within-ad-group-reports.md)
   Fetches reports for targeting keywords within an ad group.
-- [Get Search Term-Level Reports](get-search-term-level-reports.md)
+- [Get Search Term-Level Reports](./get-search-term-level-reports.md)
   Fetches reports for search terms within a campaign.
-- [Get Search Term-Level within Ad Group Reports](get-search-term-level-within-ad-group-reports.md)
+- [Get Search Term-Level within Ad Group Reports](./get-search-term-level-within-ad-group-reports.md)
   Fetches reports for search terms within an ad group.
-- [Get Ad-Level Reports](get-ad-level-reports.md)
+- [Get Ad-Level Reports](./get-ad-level-reports.md)
   Fetches ad performance data within a campaign.
 
 

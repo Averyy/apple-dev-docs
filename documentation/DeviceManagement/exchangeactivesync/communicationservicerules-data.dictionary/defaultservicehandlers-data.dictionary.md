@@ -1,7 +1,8 @@
 # ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The default service handlers.
 
@@ -13,7 +14,7 @@ The default service handlers.
 
 ## Declaration
 
-```swift
+```
 object ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers
 ```
 

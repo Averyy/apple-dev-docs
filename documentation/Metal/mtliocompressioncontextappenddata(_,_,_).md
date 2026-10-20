@@ -1,7 +1,8 @@
 # MTLIOCompressionContextAppendData(_:_:_:)
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds data to a compression context.
 
@@ -19,25 +20,30 @@ Adds data to a compression context.
 func MTLIOCompressionContextAppendData(_ context: MTLIOCompressionContext, _ data: UnsafeRawPointer, _ size: Int)
 ```
 
+```c
+extern void MTLIOCompressionContextAppendData(MTLIOCompressionContext context, const void *data, size_t size);
+```
+
 ## Parameters
 
-- `context`: An [`MTLIOCompressionContext`](mtliocompressioncontext.md) instance that you create with the [`MTLIOCreateCompressionContext(_:_:_:)`](mtliocreatecompressioncontext(_:_:_:).md) function.
+- `context`: An [`MTLIOCompressionContext`](./mtliocompressioncontext.md) instance that you create with the [`MTLIOCreateCompressionContext(_:_:_:)`](./mtliocreatecompressioncontext%28_,_,_%29.md) function.
 - `data`: A pointer to memory that contains the data the function adds to the compression context.
 - `size`: The number of bytes the function adds to the compression context from the data pointer.
 
 ## See Also
 
-- [func MTLIOCreateCompressionContext(String, MTLIOCompressionMethod, Int) -> MTLIOCompressionContext?](mtliocreatecompressioncontext(_:_:_:).md)
+### Asset compression
+- [func MTLIOCreateCompressionContext(String, MTLIOCompressionMethod, Int) -> MTLIOCompressionContext?](./mtliocreatecompressioncontext%28_,_,_%29.md)
   Creates a compression context that you use to compress data into a single file.
-- [enum MTLIOCompressionMethod](mtliocompressionmethod.md)
+- [enum MTLIOCompressionMethod](./mtliocompressionmethod.md)
   The compression codecs that Metal supports for input/output handles.
-- [func MTLIOCompressionContextDefaultChunkSize() -> Int](mtliocompressioncontextdefaultchunksize().md)
+- [func MTLIOCompressionContextDefaultChunkSize() -> Int](./mtliocompressioncontextdefaultchunksize%28%29.md)
   Returns a compression chunk size you can use as a default for creating a compression context.
-- [typealias MTLIOCompressionContext](mtliocompressioncontext.md)
+- [typealias MTLIOCompressionContext](./mtliocompressioncontext.md)
   A pointer that represents the state of a file compression session in progress.
-- [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](mtlioflushanddestroycompressioncontext(_:).md)
+- [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](./mtlioflushanddestroycompressioncontext%28_%29.md)
   Finishes compressing and saves the file that a compression context represents.
-- [enum MTLIOCompressionStatus](mtliocompressionstatus.md)
+- [enum MTLIOCompressionStatus](./mtliocompressionstatus.md)
   Represents the final state of a compression context.
 
 

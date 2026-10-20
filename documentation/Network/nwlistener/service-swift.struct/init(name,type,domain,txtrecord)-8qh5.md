@@ -1,7 +1,8 @@
 # init(name:type:domain:txtRecord:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Bonjour service to advertise with a TXT record.
 
@@ -26,9 +27,10 @@ Advertised services are primarily defined by their types. If you do not specify 
 
 ## See Also
 
-- [init(name: String?, type: String, domain: String?, txtRecord: Data?)](nwlistener/service-swift.struct/init(name:type:domain:txtrecord:)-1lb30.md)
+### Defining Services
+- [init(name: String?, type: String, domain: String?, txtRecord: Data?)](./init%28name,type,domain,txtrecord%29-1lb30.md)
   Initializes a Bonjour service to advertise.
-- [var noAutoRename: Bool](nwlistener/service-swift.struct/noautorename.md)
+- [var noAutoRename: Bool](./noautorename.md)
   A Boolean that indicates whether the service prohibits automatic renaming in the event of a name conflict.
 
 

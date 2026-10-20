@@ -1,7 +1,8 @@
 # webOrderLineItemID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique ID that identifies subscription purchase events across devices, including subscription renewals.
 
@@ -22,7 +23,8 @@ let webOrderLineItemID: String?
 
 ## See Also
 
-- [let id: UInt64](transaction/id.md)
+### Identifying a transaction
+- [let id: UInt64](./id.md)
   The unique identifier for the transaction.
 
 

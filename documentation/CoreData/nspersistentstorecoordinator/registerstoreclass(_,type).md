@@ -1,7 +1,8 @@
 # registerStoreClass(_:type:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a persistent store subclass using the specified store type.
 
@@ -11,7 +12,7 @@ Registers a persistent store subclass using the specified store type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -26,14 +27,15 @@ You must register the subclass before you load instances of it into the persiste
 
 ## Parameters
 
-- `storeClass`: A subclass of [`NSPersistentStore`](nspersistentstore.md).
-- `type`: The store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
+- `storeClass`: A subclass of [`NSPersistentStore`](../nspersistentstore.md).
+- `type`: The store type. For possible values, see [`NSPersistentStore.StoreType`](../nspersistentstore/storetype.md).
 
 ## See Also
 
-- [class func registerStoreClass(AnyClass?, forStoreType: String)](nspersistentstorecoordinator/registerstoreclass(_:forstoretype:).md)
+### Registering store types
+- [class func registerStoreClass(AnyClass?, forStoreType: String)](./registerstoreclass%28_,forstoretype%29.md)
   Registers a persistent store subclass using the specified store type identifier.
-- [class var registeredStoreTypes: [String : NSValue]](nspersistentstorecoordinator/registeredstoretypes.md)
+- [class var registeredStoreTypes: [String : NSValue]](./registeredstoretypes.md)
   The coordinator’s registered store types.
 
 

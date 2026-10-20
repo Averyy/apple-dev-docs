@@ -1,7 +1,8 @@
 # timeout(_:scheduler:options:customError:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
 
@@ -26,9 +27,9 @@ A publisher that terminates if the specified interval elapses with no events rec
 
 #### Discussion
 
-Use [`timeout(_:scheduler:options:customError:)`](publisher/timeout(_:scheduler:options:customerror:).md) to terminate a publisher if an element isn’t delivered within a timeout interval you specify.
+Use [`timeout(_:scheduler:options:customError:)`](./timeout%28_,scheduler,options,customerror%29.md) to terminate a publisher if an element isn’t delivered within a timeout interval you specify.
 
-In the example below, a [`PassthroughSubject`](passthroughsubject.md) publishes [`String`](https://developer.apple.com/documentation/swift/string) elements and is configured to time out if no new elements are received within its `TIME_OUT` window of 5 seconds. A single value is published after the specified 2-second `WAIT_TIME`, after which no more elements are available; the publisher then times out and completes normally.
+In the example below, a [`PassthroughSubject`](../passthroughsubject.md) publishes [`String`](../../Swift/string.md) elements and is configured to time out if no new elements are received within its `TIME_OUT` window of 5 seconds. A single value is published after the specified 2-second `WAIT_TIME`, after which no more elements are available; the publisher then times out and completes normally.
 
 ```swift
 var WAIT_TIME : Int = 2
@@ -60,13 +61,14 @@ If `customError` is `nil`, the publisher completes normally; if you provide a cl
 
 ## See Also
 
-- [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](publisher/measureinterval(using:options:).md)
+### Controlling timing
+- [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](./measureinterval%28using,options%29.md)
   Measures and emits the time interval between events received from an upstream publisher.
-- [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](publisher/debounce(for:scheduler:options:).md)
+- [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](./debounce%28for,scheduler,options%29.md)
   Publishes elements only after a specified time interval elapses between events.
-- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](publisher/delay(for:tolerance:scheduler:options:).md)
+- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](./delay%28for,tolerance,scheduler,options%29.md)
   Delays delivery of all output to the downstream receiver by a specified amount of time on a particular scheduler.
-- [func throttle<S>(for: S.SchedulerTimeType.Stride, scheduler: S, latest: Bool) -> Publishers.Throttle<Self, S>](publisher/throttle(for:scheduler:latest:).md)
+- [func throttle<S>(for: S.SchedulerTimeType.Stride, scheduler: S, latest: Bool) -> Publishers.Throttle<Self, S>](./throttle%28for,scheduler,latest%29.md)
   Publishes either the most-recent or first element published by the upstream publisher in the specified time interval.
 
 

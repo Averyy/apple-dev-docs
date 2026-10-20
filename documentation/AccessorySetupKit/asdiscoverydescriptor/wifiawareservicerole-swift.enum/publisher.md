@@ -1,7 +1,8 @@
 # ASDiscoveryDescriptor.WiFiAwareServiceRole.publisher
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The publisher service role.
 
@@ -15,9 +16,14 @@ The publisher service role.
 case publisher
 ```
 
+```c
+ASDiscoveryDescriptorWiFiAwareServiceRolePublisher
+```
+
 ## See Also
 
-- [ASDiscoveryDescriptor.WiFiAwareServiceRole.subscriber](asdiscoverydescriptor/wifiawareservicerole-swift.enum/subscriber.md)
+### Determining service role
+- [ASDiscoveryDescriptor.WiFiAwareServiceRole.subscriber](./subscriber.md)
   The subscriber service role.
 
 

@@ -1,7 +1,8 @@
 # dataCodewordCount
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of non-error-correction codewords carried by the Aztec code symbol.
 
@@ -19,6 +20,10 @@ The number of non-error-correction codewords carried by the Aztec code symbol.
 var dataCodewordCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger dataCodewordCount;
+```
+
 #### Discussion
 
 Used to determine the level of error correction in conjunction with the number of data layers. Valid values are 1 to 2048. Compact symbols can have up to 64 message codewords.
@@ -27,11 +32,12 @@ Used to determine the level of error correction in conjunction with the number o
 
 ## See Also
 
-- [var errorCorrectedPayload: Data](ciazteccodedescriptor/errorcorrectedpayload-swift.property.md)
+### Examining a Descriptor
+- [var errorCorrectedPayload: Data](./errorcorrectedpayload-swift.property.md)
   The error-corrected payload that comprises the the Aztec code symbol.
-- [var isCompact: Bool](ciazteccodedescriptor/iscompact-swift.property.md)
+- [var isCompact: Bool](./iscompact-swift.property.md)
   A Boolean value telling if the Aztec code is compact.
-- [var layerCount: Int](ciazteccodedescriptor/layercount-swift.property.md)
+- [var layerCount: Int](./layercount-swift.property.md)
   The number of data layers in the Aztec code symbol.
 
 

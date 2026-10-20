@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct tcp_measure_bw_burst {
     ...
 };
@@ -17,8 +17,8 @@ struct tcp_measure_bw_burst {
 ## Topics
 
 ### Instance Properties
-- [max_burst_size](tcp_measure_bw_burst/3944517-max_burst_size.md)
-- [min_burst_size](tcp_measure_bw_burst/3944518-min_burst_size.md)
+- [max_burst_size](./tcp_measure_bw_burst/api-3944517-max_burst_size.md)
+- [min_burst_size](./tcp_measure_bw_burst/api-3944518-min_burst_size.md)
 
 
 ---

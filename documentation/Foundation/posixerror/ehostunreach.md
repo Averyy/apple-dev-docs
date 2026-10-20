@@ -1,7 +1,8 @@
 # EHOSTUNREACH
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No route to host.
 

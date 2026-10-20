@@ -1,7 +1,8 @@
 # NSComboButton.Style.unified
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that unifies the button’s title and image with the menu indicator.
 
@@ -14,13 +15,18 @@ A style that unifies the button’s title and image with the menu indicator.
 case unified
 ```
 
+```c
+NSComboButtonStyleUnified
+```
+
 #### Discussion
 
 This style hides the system-supplied menu control. When this style is active, the combo button displays its menu in response to a long-press gesture.
 
 ## See Also
 
-- [NSComboButton.Style.split](nscombobutton/style-swift.enum/split.md)
+### Getting the Combo Button Styles
+- [NSComboButton.Style.split](./split.md)
   A style that separates the button’s title and image from the menu indicator people use to activate the button.
 
 

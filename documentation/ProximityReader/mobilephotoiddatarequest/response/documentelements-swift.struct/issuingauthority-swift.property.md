@@ -1,7 +1,8 @@
 # issuingAuthority
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state or government that issued the identity document.
 

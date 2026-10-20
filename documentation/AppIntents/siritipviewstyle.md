@@ -1,7 +1,8 @@
 # SiriTipViewStyle
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The styles to apply to the tip views you use to display spoken phrases.
 
@@ -9,7 +10,7 @@ The styles to apply to the tip views you use to display spoken phrases.
 - iOS 16.0+
 - iPadOS 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,20 +21,21 @@ struct SiriTipViewStyle
 
 #### Overview
 
-Specify a [`SiriTipViewStyle`](siritipviewstyle.md) value when you add a [`SiriTipUIView`](siritipuiview.md) or [`SiriTipView`](siritipview.md) type to your interface. For the [`SiriTipView`](siritipview.md) type, specify the style using the [`siriTipViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/siritipviewstyle(_:)) modifier.
+Specify a [`SiriTipViewStyle`](./siritipviewstyle.md) value when you add a [`SiriTipUIView`](./siritipuiview.md) or [`SiriTipView`](./siritipview.md) type to your interface. For the [`SiriTipView`](./siritipview.md) type, specify the style using the [`siriTipViewStyle(_:)`](../SwiftUI/view/siritipviewstyle%28_%29.md) modifier.
 
 ## Topics
 
 ### Getting the styles
-- [static let automatic: SiriTipViewStyle](siritipviewstyle/automatic.md)
-- [static let dark: SiriTipViewStyle](siritipviewstyle/dark.md)
-- [static let light: SiriTipViewStyle](siritipviewstyle/light.md)
+- [static let automatic: SiriTipViewStyle](./siritipviewstyle/automatic.md)
+- [static let dark: SiriTipViewStyle](./siritipviewstyle/dark.md)
+- [static let light: SiriTipViewStyle](./siritipviewstyle/light.md)
 
 ## See Also
 
-- [class SiriTipUIView](siritipuiview.md)
+### Tip views
+- [class SiriTipUIView](./siritipuiview.md)
   A view that displays the phrase a person uses to invoke an App Shortcut.
-- [struct SiriTipView](siritipview.md)
+- [struct SiriTipView](./siritipview.md)
   A SwiftUI view that displays the phrase someone uses to invoke an App Shortcut.
 
 

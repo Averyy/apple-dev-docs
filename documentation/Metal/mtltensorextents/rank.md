@@ -1,7 +1,8 @@
 # rank
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of values in the extents object.
 
@@ -17,6 +18,10 @@ The number of values in the extents object.
 
 ```swift
 var rank: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger rank;
 ```
 
 

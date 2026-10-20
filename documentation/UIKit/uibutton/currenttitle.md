@@ -1,7 +1,8 @@
 # currentTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current title that is displayed on the button.
 
@@ -9,7 +10,7 @@ The current title that is displayed on the button.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,39 @@ The current title that is displayed on the button.
 var currentTitle: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * currentTitle;
+```
+
 #### Discussion
 
-The value for this property is set automatically whenever the button state changes. For states that do not have a custom title string associated with them, this method returns the title that is currently displayed, which is typically the one associated with the [`normal`](uicontrol/state-swift.struct/normal.md) state. The value may be `nil`.
+The value for this property is set automatically whenever the button state changes. For states that do not have a custom title string associated with them, this method returns the title that is currently displayed, which is typically the one associated with the [`normal`](../uicontrol/state-swift.struct/normal.md) state. The value may be `nil`.
 
 ## See Also
 
-- [var titleLabel: UILabel?](uibutton/titlelabel.md)
+### Related Documentation
+- [var titleLabel: UILabel?](./titlelabel.md)
   A view that displays the value of the `currentTitle` property for a button.
-- [func setTitle(String?, for: UIControl.State)](uibutton/settitle(_:for:).md)
+- [func setTitle(String?, for: UIControl.State)](./settitle%28_,for%29.md)
   Sets the title to use for the specified state.
-- [var buttonType: UIButton.ButtonType](uibutton/buttontype-swift.property.md)
+### Getting the current state
+- [var buttonType: UIButton.ButtonType](./buttontype-swift.property.md)
   The button type.
-- [var currentAttributedTitle: NSAttributedString?](uibutton/currentattributedtitle.md)
+- [var currentAttributedTitle: NSAttributedString?](./currentattributedtitle.md)
   The current styled title that is displayed on the button.
-- [var currentTitleColor: UIColor](uibutton/currenttitlecolor.md)
+- [var currentTitleColor: UIColor](./currenttitlecolor.md)
   The color used to display the title.
-- [var currentTitleShadowColor: UIColor?](uibutton/currenttitleshadowcolor.md)
+- [var currentTitleShadowColor: UIColor?](./currenttitleshadowcolor.md)
   The color of the title’s shadow.
-- [var currentImage: UIImage?](uibutton/currentimage.md)
+- [var currentImage: UIImage?](./currentimage.md)
   The current image displayed on the button.
-- [var currentBackgroundImage: UIImage?](uibutton/currentbackgroundimage.md)
+- [var currentBackgroundImage: UIImage?](./currentbackgroundimage.md)
   The current background image displayed on the button.
-- [var currentPreferredSymbolConfiguration: UIImage.SymbolConfiguration?](uibutton/currentpreferredsymbolconfiguration.md)
+- [var currentPreferredSymbolConfiguration: UIImage.SymbolConfiguration?](./currentpreferredsymbolconfiguration.md)
   The current symbol size, style, and weight.
-- [var imageView: UIImageView?](uibutton/imageview.md)
+- [var imageView: UIImageView?](./imageview.md)
   The button’s image view.
-- [var subtitleLabel: UILabel?](uibutton/subtitlelabel.md)
+- [var subtitleLabel: UILabel?](./subtitlelabel.md)
   The label that displays the text of the subtitle.
 
 

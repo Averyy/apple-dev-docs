@@ -1,12 +1,13 @@
 # HV_SHADOW_VMCS_READ
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that indicates read access to the shadow VMCS fields.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The value that indicates read access to the shadow VMCS fields.
 var HV_SHADOW_VMCS_READ: Int { get }
 ```
 
+```c
+HV_SHADOW_VMCS_READ
+```
+
 ## See Also
 
-- [var HV_SHADOW_VMCS_NONE: Int](hv_shadow_vmcs_none.md)
+### Permissions
+- [var HV_SHADOW_VMCS_NONE: Int](./hv_shadow_vmcs_none.md)
   The value that indicates no access to the shadow VMCS fields.
-- [var HV_SHADOW_VMCS_WRITE: Int](hv_shadow_vmcs_write.md)
+- [var HV_SHADOW_VMCS_WRITE: Int](./hv_shadow_vmcs_write.md)
   The value that indicates read access to the write access shadow VMCS fields.
 
 

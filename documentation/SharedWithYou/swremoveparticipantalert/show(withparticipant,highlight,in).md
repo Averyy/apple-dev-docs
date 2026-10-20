@@ -1,7 +1,8 @@
 # show(withParticipant:highlight:in:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 13.0+
@@ -12,6 +13,10 @@
 class func show(withParticipant participant: SWPerson, highlight: SWCollaborationHighlight, in window: NSWindow?)
 ```
 
+```objc
++ (void) showAlertWithParticipant:(SWPerson *) participant highlight:(SWCollaborationHighlight *) highlight inWindow:(NSWindow *) window;
+```
+
 ## Parameters
 
 - `participant`: The `SWPerson` displayed in the alert.
@@ -20,7 +25,8 @@ class func show(withParticipant participant: SWPerson, highlight: SWCollaboratio
 
 ## See Also
 
-- [class SWRemoveParticipantAlertController](swremoveparticipantalertcontroller.md)
+### Requesting participant removal
+- [class SWRemoveParticipantAlertController](../swremoveparticipantalertcontroller.md)
   The view controller for the remove-participant alert.
 
 

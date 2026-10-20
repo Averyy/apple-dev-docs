@@ -1,7 +1,8 @@
 # MTL4AlphaToCoverageState.disabled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disables alpha-to-coverage.
 
@@ -17,6 +18,10 @@ Disables alpha-to-coverage.
 
 ```swift
 case disabled
+```
+
+```c
+MTL4AlphaToCoverageStateDisabled
 ```
 
 

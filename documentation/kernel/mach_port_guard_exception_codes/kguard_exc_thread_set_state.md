@@ -1,14 +1,15 @@
 # kGUARD_EXC_THREAD_SET_STATE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_THREAD_SET_STATE = 5
 ```
 

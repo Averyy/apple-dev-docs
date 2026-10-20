@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Topology
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The primitive topology used to assemble output geometry for an output stage.
 
@@ -12,7 +13,7 @@ The primitive topology used to assemble output geometry for an output stage.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -27,41 +28,42 @@ Set on an output stage via the `topology` property. The output’s topology dete
 ## Topics
 
 ### Enumeration Cases
-- [ComputeNodeGraph.Topology.instances](computenodegraph/topology/instances.md)
+- [ComputeNodeGraph.Topology.instances](./topology/instances.md)
   Elements are rendered as instanced meshes.
-- [ComputeNodeGraph.Topology.octagon](computenodegraph/topology/octagon.md)
+- [ComputeNodeGraph.Topology.octagon](./topology/octagon.md)
   Each element emits eight vertices, rendered as an octagon.
-- [ComputeNodeGraph.Topology.point](computenodegraph/topology/point.md)
+- [ComputeNodeGraph.Topology.point](./topology/point.md)
   Each element emits a single vertex.
-- [ComputeNodeGraph.Topology.quad](computenodegraph/topology/quad.md)
+- [ComputeNodeGraph.Topology.quad](./topology/quad.md)
   Each element emits four vertices, rendered as a quad (two triangles).
-- [ComputeNodeGraph.Topology.strip](computenodegraph/topology/strip.md)
+- [ComputeNodeGraph.Topology.strip](./topology/strip.md)
   Elements share vertices in a triangle-strip winding order. Requires a simulation with a grouping of `strips`.
-- [ComputeNodeGraph.Topology.triangle](computenodegraph/topology/triangle.md)
+- [ComputeNodeGraph.Topology.triangle](./topology/triangle.md)
   Each element emits three vertices, rendered as an independent triangle.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CoordinateSpace](coordinatespace.md)
+### Geometry and simulation inputs
+- [enum CoordinateSpace](../coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
-- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
-- [enum StripOrientation](striporientation.md)
+- [ComputeNodeGraph.StructureLayout](./structurelayout.md)
+- [enum StripOrientation](../striporientation.md)
   An enumeration that specifies how a strip should be oriented.
-- [struct Viewpoint](viewpoint-swift.struct.md)
+- [struct Viewpoint](../viewpoint-swift.struct.md)
   Camera viewpoint parameters in 3D space.
-- [struct MouseParams](mouseparams.md)
+- [struct MouseParams](../mouseparams.md)
   Parameters describing mouse interaction in 3D space.
 
 

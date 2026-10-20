@@ -1,7 +1,8 @@
 # init(softwareSimulationState:andExternalAccessoryState:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of location source information.
 
@@ -18,6 +19,10 @@ Creates an instance of location source information.
 
 ```swift
 init(softwareSimulationState isSoftware: Bool, andExternalAccessoryState isAccessory: Bool)
+```
+
+```objc
+- (instancetype) initWithSoftwareSimulationState:(BOOL) isSoftware andExternalAccessoryState:(BOOL) isAccessory;
 ```
 
 ## Parameters

@@ -1,13 +1,14 @@
 # SpatialPreviewSession
 
 **Framework**: Spatial Preview  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A session that manages the lifecycle and connection state of a spatial preview on a visionOS device.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,27 +19,28 @@ protocol SpatialPreviewSession : AnyObject, Observable
 ## Topics
 
 ### Instance Properties
-- [var progress: ProgressReporter](spatialpreviewsession/progress.md)
+- [var progress: ProgressReporter](./spatialpreviewsession/progress.md)
   Reports the progress of the session
-- [var state: SpatialPreviewSessionState](spatialpreviewsession/state.md)
+- [var state: SpatialPreviewSessionState](./spatialpreviewsession/state.md)
   Can observe this state
 ### Instance Methods
-- [func close() async throws](spatialpreviewsession/close.md)
+- [func close() async throws](./spatialpreviewsession/close%28%29.md)
   Gracefully close the session
 
 ## Relationships
 
 ### Inherits From
-- [Observable](../observation/observable.md)
+- [Observable](../Observation/observable.md)
 ### Conforming Types
-- [DocumentPreviewSession](documentpreviewsession.md)
-- [USDPreviewSession](usdpreviewsession.md)
+- [DocumentPreviewSession](./documentpreviewsession.md)
+- [USDPreviewSession](./usdpreviewsession.md)
 
 ## See Also
 
-- [class DocumentPreviewSession](documentpreviewsession.md)
+### Preview sessions
+- [class DocumentPreviewSession](./documentpreviewsession.md)
   A session that streams document content to a connected visionOS device for spatial preview.
-- [class USDPreviewSession](usdpreviewsession.md)
+- [class USDPreviewSession](./usdpreviewsession.md)
   A session that enables you to present the contents of a Universal Scene Description (USD) stage.
 
 

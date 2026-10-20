@@ -1,7 +1,8 @@
 # model
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-defined name of the device.
 
@@ -16,15 +17,20 @@ The user-defined name of the device.
 var model: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * model;
+```
+
 ## See Also
 
-- [var name: String](srdevice/name.md)
+### Accessing Device Information
+- [var name: String](./name.md)
   The framework-defined name of the device.
-- [var systemName: String](srdevice/systemname.md)
+- [var systemName: String](./systemname.md)
   The device’s operating system.
-- [var systemVersion: String](srdevice/systemversion.md)
+- [var systemVersion: String](./systemversion.md)
   The device’s operating system version.
-- [var productType: String](srdevice/producttype.md)
+- [var productType: String](./producttype.md)
   A string that identifies the device used to save a sample.
 
 

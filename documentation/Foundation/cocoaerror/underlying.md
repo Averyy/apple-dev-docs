@@ -1,7 +1,8 @@
 # underlying
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error behind this error, if any.
 

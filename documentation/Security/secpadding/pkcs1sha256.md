@@ -1,18 +1,21 @@
 # PKCS1SHA256
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Data to be signed is a SHA256 hash.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.6+
-- tvOS 4.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.6+ - Deprecated in 12.0
+- tvOS 4.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 8.0
+
+> **Deprecated**: Replaced with SecKeyAlgorithm
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Data to be signed is a SHA256 hash.
 static var PKCS1SHA256: SecPadding { get }
 ```
 
+```c
+kSecPaddingPKCS1SHA256
+```
+
 #### Discussion
 
-Standard ASN.1 padding will be done, as well as PKCS1 padding of the underlying RSA operation. Used with [`SecKeyRawSign(_:_:_:_:_:_:)`](seckeyrawsign(_:_:_:_:_:_:).md) and [`SecKeyRawVerify(_:_:_:_:_:_:)`](seckeyrawverify(_:_:_:_:_:_:).md) only.
+Standard ASN.1 padding will be done, as well as PKCS1 padding of the underlying RSA operation. Used with [`SecKeyRawSign(_:_:_:_:_:_:)`](../seckeyrawsign%28_,_,_,_,_,_%29.md) and [`SecKeyRawVerify(_:_:_:_:_:_:)`](../seckeyrawverify%28_,_,_,_,_,_%29.md) only.
 
 
 ---

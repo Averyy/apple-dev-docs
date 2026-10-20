@@ -1,7 +1,8 @@
 # BufferedAsyncByteIterator
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous iterator for byte data.
 
@@ -10,7 +11,7 @@ An asynchronous iterator for byte data.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct BufferedAsyncByteIterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../Swift/asynciteratorprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # formIndex(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the given index with its successor.
 

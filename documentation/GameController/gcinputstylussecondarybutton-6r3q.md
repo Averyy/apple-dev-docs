@@ -1,7 +1,8 @@
 # GCInputStylusSecondaryButton
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - visionOS 26.0+
@@ -14,8 +15,9 @@ var GCInputStylusSecondaryButton: String { get }
 
 ## See Also
 
-- [var GCInputStylusPrimaryButton: String](gcinputstylusprimarybutton-18g2p.md)
-- [var GCInputStylusTip: String](gcinputstylustip-1rhuw.md)
+### Retrieving the buttons
+- [var GCInputStylusPrimaryButton: String](./gcinputstylusprimarybutton-18g2p.md)
+- [var GCInputStylusTip: String](./gcinputstylustip-1rhuw.md)
 
 
 ---

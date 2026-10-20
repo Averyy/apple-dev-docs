@@ -1,14 +1,15 @@
 # kIOWSAA_Reserved
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 kIOWSAA_Reserved = 0xF0000000
 ```
 

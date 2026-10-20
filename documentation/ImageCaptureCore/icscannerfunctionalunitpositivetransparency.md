@@ -1,7 +1,8 @@
 # ICScannerFunctionalUnitPositiveTransparency
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the transparency unit for scanning positives on the scanner.
 
@@ -14,36 +15,41 @@ An object that represents the transparency unit for scanning positives on the sc
 class ICScannerFunctionalUnitPositiveTransparency
 ```
 
+```objc
+@interface ICScannerFunctionalUnitPositiveTransparency : ICScannerFunctionalUnit
+```
+
 ## Topics
 
 ### Instance Properties
-- [var documentSize: NSSize](icscannerfunctionalunitpositivetransparency/documentsize.md)
-- [var documentType: ICScannerDocumentType](icscannerfunctionalunitpositivetransparency/documenttype.md)
-- [var supportedDocumentTypes: IndexSet](icscannerfunctionalunitpositivetransparency/supporteddocumenttypes.md)
+- [var documentSize: NSSize](./icscannerfunctionalunitpositivetransparency/documentsize.md)
+- [var documentType: ICScannerDocumentType](./icscannerfunctionalunitpositivetransparency/documenttype.md)
+- [var supportedDocumentTypes: IndexSet](./icscannerfunctionalunitpositivetransparency/supporteddocumenttypes.md)
 
 ## Relationships
 
 ### Inherits From
-- [ICScannerFunctionalUnit](icscannerfunctionalunit.md)
+- [ICScannerFunctionalUnit](./icscannerfunctionalunit.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ICScannerFunctionalUnit](icscannerfunctionalunit.md)
+### Functional Units
+- [class ICScannerFunctionalUnit](./icscannerfunctionalunit.md)
   An abstract class that represents a scanner functional unit.
-- [class ICScannerFunctionalUnitDocumentFeeder](icscannerfunctionalunitdocumentfeeder.md)
+- [class ICScannerFunctionalUnitDocumentFeeder](./icscannerfunctionalunitdocumentfeeder.md)
   An object that represents the document feeder unit on a scanner.
-- [class ICScannerFunctionalUnitFlatbed](icscannerfunctionalunitflatbed.md)
+- [class ICScannerFunctionalUnitFlatbed](./icscannerfunctionalunitflatbed.md)
   An object that represents the flatbed unit on a scanner.
-- [class ICScannerFunctionalUnitNegativeTransparency](icscannerfunctionalunitnegativetransparency.md)
+- [class ICScannerFunctionalUnitNegativeTransparency](./icscannerfunctionalunitnegativetransparency.md)
   An object that represents the transparency unit for scanning negatives on the scanner.
-- [enum ICScannerTransferMode](icscannertransfermode.md)
+- [enum ICScannerTransferMode](./icscannertransfermode.md)
   The modes for transferring scan data from the scanner functional unit.
 
 

@@ -1,7 +1,8 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the image classifier shown in a playground.
 
@@ -20,9 +21,10 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mlimageclassifier/description.md)
+### Describing an image classifier
+- [var description: String](./description.md)
   A text representation of the image classifier.
-- [var debugDescription: String](mlimageclassifier/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the image classifier that’s suitable for output during debugging.
 
 

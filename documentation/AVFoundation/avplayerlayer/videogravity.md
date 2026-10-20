@@ -1,7 +1,8 @@
 # videoGravity
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies how the layer displays the player’s visual content within the layer’s bounds.
 
@@ -19,23 +20,28 @@ A value that specifies how the layer displays the player’s visual content with
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 
+```objc
+@property (copy) AVLayerVideoGravity videoGravity;
+```
+
 #### Discussion
 
 A player layer supports the following video gravity values:
 
-- [`resizeAspect`](avlayervideogravity/resizeaspect.md)
-- [`resizeAspectFill`](avlayervideogravity/resizeaspectfill.md)
-- [`resize`](avlayervideogravity/resize.md)
+- [`resizeAspect`](../avlayervideogravity/resizeaspect.md)
+- [`resizeAspectFill`](../avlayervideogravity/resizeaspectfill.md)
+- [`resize`](../avlayervideogravity/resize.md)
 
-The default value is [`resizeAspect`](avlayervideogravity/resizeaspect.md).
+The default value is [`resizeAspect`](../avlayervideogravity/resizeaspect.md).
 
 This property is animatable.
 
 ## See Also
 
-- [var videoRect: CGRect](avplayerlayer/videorect.md)
+### Configuring the presentation
+- [var videoRect: CGRect](./videorect.md)
   The current size and position of the video image that displays within the layer’s bounds.
-- [struct AVLayerVideoGravity](avlayervideogravity.md)
+- [struct AVLayerVideoGravity](../avlayervideogravity.md)
   A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
 
 

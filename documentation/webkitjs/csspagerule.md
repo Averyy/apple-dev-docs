@@ -1,7 +1,8 @@
 # CSSPageRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSPageRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [selectorText](csspagerule/1630855-selectortext.md)
-- [style](csspagerule/1633402-style.md)
+- [selectorText](./csspagerule/api-1630855-selectortext.md)
+- [style](./csspagerule/api-1633402-style.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

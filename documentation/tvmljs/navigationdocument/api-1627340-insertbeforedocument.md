@@ -1,7 +1,8 @@
 # insertBeforeDocument
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Inserts a new document directly before a document currently on the stack.
 
@@ -10,7 +11,7 @@ Inserts a new document directly before a document currently on the stack.
 
 ## Declaration
 
-```swift
+```
 void insertBeforeDocument(
     in Document document, 
     in optional Document beforeDocument
@@ -28,9 +29,10 @@ This function searches the stack for the first instance of the document containe
 
 ## See Also
 
-- [pushDocument](navigationdocument/1627361-pushdocument.md)
+### Adding Documents to the Stack
+- [pushDocument](./api-1627361-pushdocument.md)
   Pushes the specified document onto the stack.
-- [replaceDocument](navigationdocument/1627430-replacedocument.md)
+- [replaceDocument](./api-1627430-replacedocument.md)
   Replaces a document on the stack with a new document.
 
 

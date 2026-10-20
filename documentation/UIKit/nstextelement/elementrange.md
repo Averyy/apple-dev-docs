@@ -1,7 +1,8 @@
 # elementRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range value that represents the range of the element inside the document.
 
@@ -16,6 +17,10 @@ A range value that represents the range of the element inside the document.
 
 ```swift
 var elementRange: NSTextRange? { get set }
+```
+
+```objc
+@property (strong, nullable) NSTextRange * elementRange;
 ```
 
 

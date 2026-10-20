@@ -1,14 +1,15 @@
 # kIOMapperUncached
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 kIOMapperUncached = 0x0001
 ```
 

@@ -1,7 +1,8 @@
 # AccessibilityDeclarationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes you set that describe the updated accessibility declaration resource.
 
@@ -10,7 +11,7 @@ Attributes you set that describe the updated accessibility declaration resource.
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationUpdateRequest.Data.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # rank
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rank of the shape.
 
@@ -20,9 +21,14 @@ The rank of the shape.
 var rank: Int
 ```
 
+```c
+size_t rank;
+```
+
 ## See Also
 
-- [var shape: UnsafeMutablePointer<UInt64>?](bnns_graph_shape_t/shape.md)
+### Specifying a shape’s properties
+- [var shape: UnsafeMutablePointer<UInt64>?](./shape.md)
   An array of unsigned-integer elements that specify the size of the shape.
 
 

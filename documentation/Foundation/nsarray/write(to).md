@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func write(to url: URL) throws
+```
+
+```objc
+- (BOOL) writeToURL:(NSURL *) url error:(NSError **) error;
 ```
 
 

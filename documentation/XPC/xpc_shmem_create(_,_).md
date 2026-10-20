@@ -1,7 +1,8 @@
 # xpc_shmem_create(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an XPC object that represents the specified shared memory region.
 
@@ -10,7 +11,7 @@ Creates an XPC object that represents the specified shared memory region.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates an XPC object that represents the specified shared memory region.
 
 ```swift
 func xpc_shmem_create(_ region: UnsafeMutableRawPointer, _ length: Int) -> xpc_object_t
+```
+
+```c
+extern xpc_object_txpc_shmem_create(void *region, size_t length);
 ```
 
 #### Return Value
@@ -35,7 +40,8 @@ This API is NOT for making a private region of memory shareable. It is to allow 
 
 ## See Also
 
-- [func xpc_shmem_map(xpc_object_t, UnsafeMutablePointer<UnsafeMutableRawPointer?>) -> Int](xpc_shmem_map(_:_:).md)
+### Shared memory objects
+- [func xpc_shmem_map(xpc_object_t, UnsafeMutablePointer<UnsafeMutableRawPointer?>) -> Int](./xpc_shmem_map%28_,_%29.md)
   Maps the region that the XPC shared memory object boxes into the caller’s address space.
 
 

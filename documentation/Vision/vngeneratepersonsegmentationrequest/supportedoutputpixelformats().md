@@ -1,7 +1,8 @@
 # supportedOutputPixelFormats()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of output pixel formats that the request supports.
 
@@ -17,6 +18,10 @@ Returns a list of output pixel formats that the request supports.
 
 ```swift
 func supportedOutputPixelFormats() throws -> [NSNumber]
+```
+
+```objc
+- (NSArray<NSNumber *> *) supportedOutputPixelFormatsAndReturnError:(NSError **) error;
 ```
 
 

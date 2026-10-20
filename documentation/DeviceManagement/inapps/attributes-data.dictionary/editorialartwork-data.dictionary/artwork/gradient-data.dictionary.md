@@ -1,11 +1,12 @@
 # InApps.Attributes.EditorialArtwork.Artwork.Gradient
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Attributes.EditorialArtwork.Artwork.Gradient
 ```
 

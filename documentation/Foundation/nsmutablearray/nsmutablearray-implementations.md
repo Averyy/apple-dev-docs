@@ -1,11 +1,12 @@
 # NSMutableArray Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(contentsOfURL: URL)](nsmutablearray/init(contentsofurl:).md)
+- [init?(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Creates and returns a mutable array containing the contents specified by a given URL.
 
 

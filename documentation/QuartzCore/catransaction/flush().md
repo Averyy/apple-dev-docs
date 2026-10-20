@@ -1,7 +1,8 @@
 # flush()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Flushes any extant implicit transaction.
 
@@ -19,6 +20,10 @@ Flushes any extant implicit transaction.
 class func flush()
 ```
 
+```objc
++ (void) flush;
+```
+
 #### Discussion
 
 Delays the commit until any nested explicit transactions have completed.
@@ -29,9 +34,10 @@ However, you should attempt to avoid calling `flush` explicitly. By allowing `fl
 
 ## See Also
 
-- [class func begin()](catransaction/begin.md)
+### Creating and Committing Transactions
+- [class func begin()](./begin%28%29.md)
   Begin a new transaction for the current thread.
-- [class func commit()](catransaction/commit.md)
+- [class func commit()](./commit%28%29.md)
   Commit all changes made during the current transaction.
 
 

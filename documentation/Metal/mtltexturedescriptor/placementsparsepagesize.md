@@ -1,7 +1,8 @@
 # placementSparsePageSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the page size for a placement sparse texture.
 
@@ -19,11 +20,15 @@ Determines the page size for a placement sparse texture.
 var placementSparsePageSize: MTLSparsePageSize { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLSparsePageSize placementSparsePageSize;
+```
+
 #### Discussion
 
 Set this property to a non-zero value to create a *placement sparse texture*.
 
-Placement sparse textures are instances of [`MTLTexture`](mtltexture.md) that you assign memory to using a [`MTLHeap`](mtlheap.md) instance of type [`MTLHeapType.placement`](mtlheaptype/placement.md) and a [`maxCompatiblePlacementSparsePageSize`](mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md) at least as large as the [`MTLSparsePageSize`](mtlsparsepagesize.md) value you assign to this property.
+Placement sparse textures are instances of [`MTLTexture`](../mtltexture.md) that you assign memory to using a [`MTLHeap`](../mtlheap.md) instance of type [`MTLHeapType.placement`](../mtlheaptype/placement.md) and a [`maxCompatiblePlacementSparsePageSize`](../mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md) at least as large as the [`MTLSparsePageSize`](../mtlsparsepagesize.md) value you assign to this property.
 
 This value is 0 by default.
 

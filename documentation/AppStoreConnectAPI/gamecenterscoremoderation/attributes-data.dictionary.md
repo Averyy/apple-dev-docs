@@ -1,7 +1,8 @@
 # GameCenterScoreModeration.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Game Center score moderation.
 
@@ -10,7 +11,7 @@ The attributes that describe a Game Center score moderation.
 
 ## Declaration
 
-```swift
+```
 object GameCenterScoreModeration.Attributes
 ```
 
@@ -26,7 +27,8 @@ object GameCenterScoreModeration.Attributes
 
 ## See Also
 
-- [object GameCenterScoreModeration.Relationships](gamecenterscoremoderation/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterScoreModeration.Relationships](./relationships-data.dictionary.md)
   The relationships between a Game Center score moderation and other resources.
 
 

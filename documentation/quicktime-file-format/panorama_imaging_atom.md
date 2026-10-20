@@ -1,9 +1,12 @@
 # Panorama imaging atom
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom describes the default imaging characteristics for all the panoramic nodes in a scene.
+
+> **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
 #### Overview
 
@@ -49,36 +52,37 @@ enum {
 ## Topics
 
 ### Data fields
-- [majorVersion](panorama_imaging_atom/majorversion.md)
+- [majorVersion](./panorama_imaging_atom/majorversion.md)
   The major version number of the file format.
-- [minorVersion](panorama_imaging_atom/minorversion.md)
+- [minorVersion](./panorama_imaging_atom/minorversion.md)
   The minor version number of the file format.
-- [imagingMode](panorama_imaging_atom/imagingmode.md)
+- [imagingMode](./panorama_imaging_atom/imagingmode.md)
   The imaging mode to which the default values apply.
-- [imagingValidFlags](panorama_imaging_atom/imagingvalidflags.md)
+- [imagingValidFlags](./panorama_imaging_atom/imagingvalidflags.md)
   A set of flags that indicate which imaging property fields in this structure are valid.
-- [correction](panorama_imaging_atom/correction.md)
+- [correction](./panorama_imaging_atom/correction.md)
   The default correction mode for panoramic nodes.
-- [quality](panorama_imaging_atom/quality.md)
+- [quality](./panorama_imaging_atom/quality.md)
   The default imaging quality for panoramic nodes.
-- [directDraw](panorama_imaging_atom/directdraw.md)
+- [directDraw](./panorama_imaging_atom/directdraw.md)
   The default direct-drawing property for panoramic nodes.
-- [imagingProperties](panorama_imaging_atom/imagingproperties.md)
+- [imagingProperties](./panorama_imaging_atom/imagingproperties.md)
   Reserved for future panorama-imaging properties.
-- [reserved1](panorama_imaging_atom/reserved1.md)
+- [reserved1](./panorama_imaging_atom/reserved1.md)
   Reserved.
-- [reserved2](panorama_imaging_atom/reserved2.md)
+- [reserved2](./panorama_imaging_atom/reserved2.md)
   Reserved.
 
 ## See Also
 
-- [QTVR string atom](qtvr_string_atom.md)
+### Describing VR worlds
+- [QTVR string atom](./qtvr_string_atom.md)
   An atom that contains a string for QuickTime VR.
-- [VR world atom container](vr_world_atom_container.md)
+- [VR world atom container](./vr_world_atom_container.md)
   An atom that contains name for the entire scene, the default node ID, and default imaging properties, as well as a list of the nodes contained in the QTVR track.
-- [VR world header atom](vr_world_header_atom.md)
+- [VR world header atom](./vr_world_header_atom.md)
   An atom contains the name of the scene and the default node ID to be used when the file is first opened.
-- [Imaging parent atom](imaging_parent_atom.md)
+- [Imaging parent atom](./imaging_parent_atom.md)
   An atom that is the parent atom of one or more node-specific imaging atoms.
 
 

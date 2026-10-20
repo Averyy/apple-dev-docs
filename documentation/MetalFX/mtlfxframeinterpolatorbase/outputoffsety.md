@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The vertical offset, in pixels, of the region within the output texture to write results. . For regions outside the contents of the colorTexture are copied.
@@ -17,6 +18,10 @@ The vertical offset, in pixels, of the region within the output texture to write
 
 ```swift
 var outputOffsetY: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger outputOffsetY;
 ```
 
 

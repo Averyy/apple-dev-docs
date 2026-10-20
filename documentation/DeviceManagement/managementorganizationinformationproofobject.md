@@ -1,7 +1,8 @@
 # ManagementOrganizationInformationProofObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The additional properties that verify the identity and authenticity of the organization.
 
@@ -16,7 +17,7 @@ The additional properties that verify the identity and authenticity of the organ
 
 ## Declaration
 
-```swift
+```
 object ManagementOrganizationInformationProofObject
 ```
 

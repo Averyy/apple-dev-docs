@@ -1,7 +1,8 @@
 # ImmediateScheduler.SchedulerOptions
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that defines options accepted by the immediate scheduler.
 
@@ -22,7 +23,8 @@ typealias SchedulerOptions = Never
 
 ## See Also
 
-- [ImmediateScheduler.SchedulerTimeType](immediatescheduler/schedulertimetype.md)
+### Declaring scheduler timekeeping and options
+- [ImmediateScheduler.SchedulerTimeType](./schedulertimetype.md)
   The time type used by the immediate scheduler.
 
 

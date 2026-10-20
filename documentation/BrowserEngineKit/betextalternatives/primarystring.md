@@ -1,14 +1,15 @@
 # primaryString
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original text that the alternatives derive from.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -16,6 +17,10 @@ The original text that the alternatives derive from.
 
 ```swift
 var primaryString: String { get }
+```
+
+```objc
+@property (readonly) NSString * primaryString;
 ```
 
 

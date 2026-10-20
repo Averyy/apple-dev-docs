@@ -1,18 +1,19 @@
 # CFMessagePortGetInvalidationCallBack(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the invalidation callback function for a CFMessagePort object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the invalidation callback function for a CFMessagePort object.
 func CFMessagePortGetInvalidationCallBack(_ ms: CFMessagePort!) -> CFMessagePortInvalidationCallBack!
 ```
 
+```c
+extern CFMessagePortInvalidationCallBackCFMessagePortGetInvalidationCallBack(CFMessagePortRef ms);
+```
+
 #### Return Value
 
-The callback function invoked when `ms` is invalidated. `NULL` if no callback has been set with [`CFMessagePortSetInvalidationCallBack(_:_:)`](cfmessageportsetinvalidationcallback(_:_:).md).
+The callback function invoked when `ms` is invalidated. `NULL` if no callback has been set with [`CFMessagePortSetInvalidationCallBack(_:_:)`](./cfmessageportsetinvalidationcallback%28_,_%29.md).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The callback function invoked when `ms` is invalidated. `NULL` if no callback ha
 
 ## See Also
 
-- [func CFMessagePortGetContext(CFMessagePort!, UnsafeMutablePointer<CFMessagePortContext>!)](cfmessageportgetcontext(_:_:).md)
+### Examining a Message Port
+- [func CFMessagePortGetContext(CFMessagePort!, UnsafeMutablePointer<CFMessagePortContext>!)](./cfmessageportgetcontext%28_,_%29.md)
   Returns the context information for a CFMessagePort object.
-- [func CFMessagePortGetName(CFMessagePort!) -> CFString!](cfmessageportgetname(_:).md)
+- [func CFMessagePortGetName(CFMessagePort!) -> CFString!](./cfmessageportgetname%28_%29.md)
   Returns the name with which a CFMessagePort object is registered.
-- [func CFMessagePortIsRemote(CFMessagePort!) -> Bool](cfmessageportisremote(_:).md)
+- [func CFMessagePortIsRemote(CFMessagePort!) -> Bool](./cfmessageportisremote%28_%29.md)
   Returns a Boolean value that indicates whether a CFMessagePort object represents a remote port.
-- [func CFMessagePortIsValid(CFMessagePort!) -> Bool](cfmessageportisvalid(_:).md)
+- [func CFMessagePortIsValid(CFMessagePort!) -> Bool](./cfmessageportisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a CFMessagePort object is valid and able to send or receive messages.
 
 

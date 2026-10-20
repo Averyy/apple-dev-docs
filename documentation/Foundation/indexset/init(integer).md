@@ -1,7 +1,8 @@
 # init(integer:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an index set with a single integer.
 
@@ -22,9 +23,10 @@ init(integer: IndexSet.Element)
 
 ## See Also
 
-- [init()](indexset/init.md)
+### Creating an Index Set
+- [init()](./init%28%29.md)
   Initializes an empty index set.
-- [init(integersIn: Range<IndexSet.Element>)](indexset/init(integersin:)-40cz3.md)
+- [init(integersIn: Range<IndexSet.Element>)](./init%28integersin%29-40cz3.md)
   Initializes an index set with a range of integers.
 
 

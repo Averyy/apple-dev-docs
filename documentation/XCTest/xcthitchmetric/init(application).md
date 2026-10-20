@@ -1,7 +1,8 @@
 # init(application:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a metric that measures hitches metric in the specified app.
 
@@ -17,6 +18,10 @@ Initializes a metric that measures hitches metric in the specified app.
 
 ```swift
 init(application: XCUIApplication)
+```
+
+```objc
+- (instancetype) initWithApplication:(XCUIApplication *) application;
 ```
 
 ## Parameters

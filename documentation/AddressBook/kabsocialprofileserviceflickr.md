@@ -1,7 +1,8 @@
 # kABSocialProfileServiceFlickr
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Flickr social profile service.
 
@@ -14,17 +15,22 @@ Flickr social profile service.
 let kABSocialProfileServiceFlickr: String
 ```
 
+```c
+extern NSString * const kABSocialProfileServiceFlickr;
+```
+
 ## See Also
 
-- [let kABSocialProfileServiceTwitter: String](kabsocialprofileservicetwitter.md)
+### Services
+- [let kABSocialProfileServiceTwitter: String](./kabsocialprofileservicetwitter.md)
   Twitter social profile service.
-- [let kABSocialProfileServiceFacebook: String](kabsocialprofileservicefacebook.md)
+- [let kABSocialProfileServiceFacebook: String](./kabsocialprofileservicefacebook.md)
   Facebook social profile service.
-- [let kABSocialProfileServiceMySpace: String](kabsocialprofileservicemyspace.md)
+- [let kABSocialProfileServiceMySpace: String](./kabsocialprofileservicemyspace.md)
   Myspace social profile service.
-- [let kABSocialProfileServiceLinkedIn: String](kabsocialprofileservicelinkedin.md)
+- [let kABSocialProfileServiceLinkedIn: String](./kabsocialprofileservicelinkedin.md)
   LinkedIn social profile service.
-- [let kABSocialProfileServiceSinaWeibo: String](kabsocialprofileservicesinaweibo.md)
+- [let kABSocialProfileServiceSinaWeibo: String](./kabsocialprofileservicesinaweibo.md)
   Sina Weibo social profile service.
 
 

@@ -1,7 +1,8 @@
 # weekNumber
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The week number of the day of the week.
 
@@ -19,13 +20,18 @@ The week number of the day of the week.
 var weekNumber: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger weekNumber;
+```
+
 #### Discussion
 
 Values range from `–53` to `53`. A negative value indicates a value from the end of the range. `0` indicates the week number is irrelevant.
 
 ## See Also
 
-- [var dayOfTheWeek: EKWeekday](ekrecurrencedayofweek/dayoftheweek.md)
+### Accessing Properties of a Day of the Week
+- [var dayOfTheWeek: EKWeekday](./dayoftheweek.md)
   The day of the week.
 
 

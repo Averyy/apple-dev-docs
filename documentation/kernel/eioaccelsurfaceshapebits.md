@@ -1,30 +1,31 @@
 # eIOAccelSurfaceShapeBits
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum eIOAccelSurfaceShapeBits eIOAccelSurfaceShapeBits;
 ```
 
 ## Topics
 
 ### Constants
-- [kIOAccelSurfaceShapeAssemblyBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapeassemblybit.md)
-- [kIOAccelSurfaceShapeBeamSyncBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapebeamsyncbit.md)
-- [kIOAccelSurfaceShapeBlockingBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapeblockingbit.md)
-- [kIOAccelSurfaceShapeFrameSyncBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapeframesyncbit.md)
-- [kIOAccelSurfaceShapeIdentityScaleBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapeidentityscalebit.md)
-- [kIOAccelSurfaceShapeNonBlockingBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapenonblockingbit.md)
-- [kIOAccelSurfaceShapeNonSimpleBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapenonsimplebit.md)
-- [kIOAccelSurfaceShapeNone](eioaccelsurfaceshapebits/kioaccelsurfaceshapenone.md)
-- [kIOAccelSurfaceShapeStaleBackingBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapestalebackingbit.md)
-- [kIOAccelSurfaceShapeWaitEnabledBit](eioaccelsurfaceshapebits/kioaccelsurfaceshapewaitenabledbit.md)
+- [kIOAccelSurfaceShapeAssemblyBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapeassemblybit.md)
+- [kIOAccelSurfaceShapeBeamSyncBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapebeamsyncbit.md)
+- [kIOAccelSurfaceShapeBlockingBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapeblockingbit.md)
+- [kIOAccelSurfaceShapeFrameSyncBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapeframesyncbit.md)
+- [kIOAccelSurfaceShapeIdentityScaleBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapeidentityscalebit.md)
+- [kIOAccelSurfaceShapeNonBlockingBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapenonblockingbit.md)
+- [kIOAccelSurfaceShapeNonSimpleBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapenonsimplebit.md)
+- [kIOAccelSurfaceShapeNone](./eioaccelsurfaceshapebits/kioaccelsurfaceshapenone.md)
+- [kIOAccelSurfaceShapeStaleBackingBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapestalebackingbit.md)
+- [kIOAccelSurfaceShapeWaitEnabledBit](./eioaccelsurfaceshapebits/kioaccelsurfaceshapewaitenabledbit.md)
 
 
 ---

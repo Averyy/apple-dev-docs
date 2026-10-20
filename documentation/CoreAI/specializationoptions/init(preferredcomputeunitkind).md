@@ -1,7 +1,8 @@
 # init(preferredComputeUnitKind:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates options with a preferred compute unit kind.
 
@@ -20,7 +21,7 @@ init(preferredComputeUnitKind: ComputeUnitKind)
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Discussion
 

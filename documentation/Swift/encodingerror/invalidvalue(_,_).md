@@ -1,7 +1,8 @@
 # EncodingError.invalidValue(_:_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that an encoder or its containers could not encode the given value.
 

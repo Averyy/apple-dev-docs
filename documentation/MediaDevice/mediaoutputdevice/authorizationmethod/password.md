@@ -1,7 +1,8 @@
 # password
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Presents a freeform text password input for device authorization.
 
@@ -18,7 +19,7 @@ static var password: MediaOutputDevice.AuthorizationMethod { get }
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rotation structure.
 
@@ -22,29 +23,30 @@ init()
 
 ## See Also
 
-- [init()](rotation3d/init-2uz53.md)
+### Creating a 3D rotation structure
+- [init()](./init%28%29-2uz53.md)
   Creates a rotation.
-- [init(eulerAngles: EulerAngles)](rotation3d/init(eulerangles:).md)
+- [init(eulerAngles: EulerAngles)](./init%28eulerangles%29.md)
   Creates a rotation structure with the specified Euler angles.
-- [init(eulerAngles: EulerAngles)](rotation3d/init(eulerangles:).md)
+- [init(eulerAngles: EulerAngles)](./init%28eulerangles%29.md)
   Creates a rotation structure with the specified Euler angles.
-- [struct EulerAngles](eulerangles.md)
+- [struct EulerAngles](../eulerangles.md)
   A vector that represents three Euler angles and specifies the angle ordering.
-- [init(quaternion: simd_quatd)](rotation3d/init(quaternion:)-2c79y.md)
+- [init(quaternion: simd_quatd)](./init%28quaternion%29-2c79y.md)
   Creates a rotation axis from the specified double-precision quaternion.
-- [init(simd_quatd)](rotation3d/init(_:)-8z2bn.md)
+- [init(simd_quatd)](./init%28_%29-8z2bn.md)
   Creates a rotation from the specified double-precision quaternion.
-- [init(simd_quatf)](rotation3d/init(_:)-829qb.md)
+- [init(simd_quatf)](./init%28_%29-829qb.md)
   Creates a rotation axis from the specified single-precision quaternion.
-- [init(angle: Angle2D, axis: RotationAxis3D)](rotation3d/init(angle:axis:).md)
+- [init(angle: Angle2D, axis: RotationAxis3D)](./init%28angle,axis%29.md)
   Creates a rotation structure with the specified axis and the specified angle from Spatial structures.
-- [init(position: Point3D, target: Point3D, up: Vector3D)](rotation3d/init(position:target:up:).md)
+- [init(position: Point3D, target: Point3D, up: Vector3D)](./init%28position,target,up%29.md)
   Creates a rotation structure that represents the look-at direction from a position to a target.
-- [init(forward: Vector3D)](rotation3d/init(forward:).md)
+- [init(forward: Vector3D)](./init%28forward%29.md)
   Creates a rotation with the specified forward vector.
-- [init(forward: Vector3D, up: Vector3D)](rotation3d/init(forward:up:).md)
+- [init(forward: Vector3D, up: Vector3D)](./init%28forward,up%29.md)
   Creates a rotation with the specified forward and up vectors.
-- [init(forward: Vector3D, up: Vector3D)](rotation3d/init(forward:up:).md)
+- [init(forward: Vector3D, up: Vector3D)](./init%28forward,up%29.md)
   Creates a rotation with the specified forward and up vectors.
 
 

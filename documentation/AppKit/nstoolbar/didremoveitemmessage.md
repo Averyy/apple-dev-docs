@@ -1,7 +1,8 @@
 # NSToolbar.DidRemoveItemMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -16,16 +17,16 @@ struct DidRemoveItemMessage
 ## Topics
 
 ### Initializers
-- [init(toolbar: NSToolbar, item: NSToolbarItem)](nstoolbar/didremoveitemmessage/init(toolbar:item:).md)
+- [init(toolbar: NSToolbar, item: NSToolbarItem)](./didremoveitemmessage/init%28toolbar,item%29.md)
 ### Instance Properties
-- [var item: NSToolbarItem](nstoolbar/didremoveitemmessage/item.md)
-- [var toolbar: NSToolbar](nstoolbar/didremoveitemmessage/toolbar.md)
+- [var item: NSToolbarItem](./didremoveitemmessage/item.md)
+- [var toolbar: NSToolbar](./didremoveitemmessage/toolbar.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

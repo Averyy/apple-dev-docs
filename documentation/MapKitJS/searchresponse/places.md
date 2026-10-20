@@ -1,7 +1,8 @@
 # places
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A list of places that match the search query.
 
@@ -10,19 +11,20 @@ A list of places that match the search query.
 
 ## Declaration
 
-```swift
+```
 places: Place[];
 ```
 
 #### Discussion
 
-The [`places`](searchresponse/places.md) array is empty if there is no match.
+The [`places`](./places.md) array is empty if there is no match.
 
 ## See Also
 
-- [query](searchresponse/query.md)
+### Search response
+- [query](./query.md)
   The query string for performing the search.
-- [boundingRegion](searchresponse/boundingregion.md)
+- [boundingRegion](./boundingregion.md)
   The region that encloses the places from the search results.
 
 

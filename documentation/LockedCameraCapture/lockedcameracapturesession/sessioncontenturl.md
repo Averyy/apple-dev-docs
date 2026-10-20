@@ -1,7 +1,8 @@
 # sessionContentURL
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A temporary directory URL inside the extension’s data container.
 

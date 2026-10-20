@@ -1,7 +1,8 @@
 # getBuffer(_:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by reference a pointer to a read buffer and, by reference, the number of bytes available, and returns a Boolean value that indicates whether the buffer is available.
 
@@ -20,13 +21,17 @@ Returns by reference a pointer to a read buffer and, by reference, the number of
 func getBuffer(_ buffer: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>, length len: UnsafeMutablePointer<Int>) -> Bool
 ```
 
+```objc
+- (BOOL) getBuffer:(uint8_t **) buffer length:(NSUInteger *) len;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the buffer is available, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the buffer is available, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Subclasses of `NSInputStream` may return [`false`](https://developer.apple.com/documentation/swift/false) if this operation is not appropriate for the stream type.
+Subclasses of `NSInputStream` may return [`false`](../../Swift/false.md) if this operation is not appropriate for the stream type.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ Subclasses of `NSInputStream` may return [`false`](https://developer.apple.com/d
 
 ## See Also
 
-- [func read(UnsafeMutablePointer<UInt8>, maxLength: Int) -> Int](inputstream/read(_:maxlength:).md)
+### Using Streams
+- [func read(UnsafeMutablePointer<UInt8>, maxLength: Int) -> Int](./read%28_,maxlength%29.md)
   Reads up to a given number of bytes into a given buffer.
-- [var hasBytesAvailable: Bool](inputstream/hasbytesavailable.md)
+- [var hasBytesAvailable: Bool](./hasbytesavailable.md)
   A Boolean value that indicates whether the receiver has bytes available to read.
 
 

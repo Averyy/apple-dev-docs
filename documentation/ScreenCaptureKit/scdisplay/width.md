@@ -1,7 +1,8 @@
 # width
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the display in points.
 
@@ -15,11 +16,16 @@ The width of the display in points.
 var width: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger width;
+```
+
 ## See Also
 
-- [var frame: CGRect](scdisplay/frame.md)
+### Accessing dimensions
+- [var frame: CGRect](./frame.md)
   The frame of the display.
-- [var height: Int](scdisplay/height.md)
+- [var height: Int](./height.md)
   The height of the display in points.
 
 

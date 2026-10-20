@@ -1,7 +1,8 @@
 # dampingFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor that slows particles relative to their velocity. Defaults to 0.
 

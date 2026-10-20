@@ -1,7 +1,8 @@
 # scrollBounceBehavior(_:axes:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the bounce behavior of scrollable views along the specified axis.
 
@@ -27,7 +28,7 @@ A view that’s configured with the specified scroll bounce behavior.
 
 #### Discussion
 
-Use this modifier to indicate whether scrollable views bounce when people scroll to the end of the view’s content, taking into account the relative sizes of the view and its content. For example, the following [`ScrollView`](scrollview.md) only enables bounce behavior if its content is large enough to require scrolling:
+Use this modifier to indicate whether scrollable views bounce when people scroll to the end of the view’s content, taking into account the relative sizes of the view and its content. For example, the following [`ScrollView`](../scrollview.md) only enables bounce behavior if its content is large enough to require scrolling:
 
 ```swift
 ScrollView {
@@ -37,7 +38,7 @@ ScrollView {
 .scrollBounceBehavior(.basedOnSize)
 ```
 
-The modifier passes the scroll bounce mode through the [`Environment`](environment.md), which means that the mode affects any scrollable views in the modified view hierarchy. Provide an axis to the modifier to constrain the kinds of scrollable views that the mode affects. For example, all the scroll views in the following example can access the mode value, but only the two nested scroll views are affected, because only they use horizontal scrolling:
+The modifier passes the scroll bounce mode through the [`Environment`](../environment.md), which means that the mode affects any scrollable views in the modified view hierarchy. Provide an axis to the modifier to constrain the kinds of scrollable views that the mode affects. For example, all the scroll views in the following example can access the mode value, but only the two nested scroll views are affected, because only they use horizontal scrolling:
 
 ```swift
 ScrollView { // Defaults to vertical scrolling.
@@ -51,7 +52,7 @@ ScrollView { // Defaults to vertical scrolling.
 .scrollBounceBehavior(.basedOnSize, axes: .horizontal)
 ```
 
-You can use this modifier to configure any kind of scrollable view, including [`ScrollView`](scrollview.md), [`List`](list.md), [`Table`](table.md), and [`TextEditor`](texteditor.md):
+You can use this modifier to configure any kind of scrollable view, including [`ScrollView`](../scrollview.md), [`List`](../list.md), [`Table`](../table.md), and [`TextEditor`](../texteditor.md):
 
 ```swift
 List {
@@ -63,16 +64,17 @@ List {
 
 ## Parameters
 
-- `behavior`: The bounce behavior to apply to any scrollable views within the configured view. Use one of the [`ScrollBounceBehavior`](scrollbouncebehavior.md) values.
-- `axes`: The set of axes to apply `behavior` to. The default is [`Axis.vertical`](axis/vertical.md).
+- `behavior`: The bounce behavior to apply to any scrollable views within the configured view. Use one of the [`ScrollBounceBehavior`](../scrollbouncebehavior.md) values.
+- `axes`: The set of axes to apply `behavior` to. The default is [`Axis.vertical`](../axis/vertical.md).
 
 ## See Also
 
-- [var horizontalScrollBounceBehavior: ScrollBounceBehavior](environmentvalues/horizontalscrollbouncebehavior.md)
+### Configuring scroll bounce behavior
+- [var horizontalScrollBounceBehavior: ScrollBounceBehavior](../environmentvalues/horizontalscrollbouncebehavior.md)
   The scroll bounce mode for the horizontal axis of scrollable views.
-- [var verticalScrollBounceBehavior: ScrollBounceBehavior](environmentvalues/verticalscrollbouncebehavior.md)
+- [var verticalScrollBounceBehavior: ScrollBounceBehavior](../environmentvalues/verticalscrollbouncebehavior.md)
   The scroll bounce mode for the vertical axis of scrollable views.
-- [struct ScrollBounceBehavior](scrollbouncebehavior.md)
+- [struct ScrollBounceBehavior](../scrollbouncebehavior.md)
   The ways that a scrollable view can bounce when it reaches the end of its content.
 
 

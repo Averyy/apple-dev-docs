@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
 
@@ -21,11 +22,12 @@ var offset: Int
 
 ## See Also
 
-- [var format: MTLVertexFormat](lowlevelmesh/attribute/format.md)
+### Describing an attribute
+- [var format: MTLVertexFormat](./format.md)
   The format of the vertex attribute.
-- [var layoutIndex: Int](lowlevelmesh/attribute/layoutindex.md)
+- [var layoutIndex: Int](./layoutindex.md)
   The index of the layout that contains this attribute.
-- [var semantic: LowLevelMesh.VertexSemantic](lowlevelmesh/attribute/semantic.md)
+- [var semantic: LowLevelMesh.VertexSemantic](./semantic.md)
   The semantic of the vertex attribute, which describes how you want RealityKit to interpret the attribute.
 
 

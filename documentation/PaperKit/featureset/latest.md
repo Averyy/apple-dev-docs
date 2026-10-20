@@ -1,7 +1,8 @@
 # latest
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A new feature set supporting all features.
 
@@ -24,9 +25,10 @@ To automatically get the latest features that PaperKit adds in new releases use 
 
 ## See Also
 
-- [static var version1: FeatureSet](featureset/version1.md)
+### Creating a feature set
+- [static var version1: FeatureSet](./version1.md)
   A new feature set supporting all features in version 1.
-- [static var empty: FeatureSet](featureset/empty.md)
+- [static var empty: FeatureSet](./empty.md)
   A maximally empty feature set.
 
 

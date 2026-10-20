@@ -1,13 +1,14 @@
 # reserved
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused field reserved for future use.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ An unused field reserved for future use.
 var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+uint8_t reserved[64];
+```
+
 ## See Also
 
-- [var target: UnsafeMutablePointer<es_file_t>](es_event_getattrlist_t/target.md)
+### Inspecting Event Properties
+- [var target: UnsafeMutablePointer<es_file_t>](./target.md)
   The file for which to retrieve attributes.
-- [var attrlist: attrlist](es_event_getattrlist_t/attrlist.md)
+- [var attrlist: attrlist](./attrlist.md)
   The attributes to retrieve, such as volume, directory, file, and fork attributes.
 
 

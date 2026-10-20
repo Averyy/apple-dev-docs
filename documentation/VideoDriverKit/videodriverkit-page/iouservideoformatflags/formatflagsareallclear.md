@@ -1,7 +1,8 @@
 # FormatFlagsAreAllClear
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Set if all the flags would be clear.
 
@@ -10,7 +11,7 @@ Set if all the flags would be clear.
 
 ## Declaration
 
-```swift
+```c
 FormatFlagsAreAllClear
 ```
 
@@ -20,7 +21,8 @@ This flag preserves `0` as the wildcard value.
 
 ## See Also
 
-- [LinearPCMFormatFlagsAreAllClear](videodriverkit/iouservideoformatflags/linearpcmformatflagsareallclear.md)
+### Special purpose flags
+- [LinearPCMFormatFlagsAreAllClear](./linearpcmformatflagsareallclear.md)
   Synonym for `FormatFlagsAreAllClear`.
 
 

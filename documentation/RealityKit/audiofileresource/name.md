@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this `AudioFileResource`.
 
@@ -11,7 +12,7 @@ The name of this `AudioFileResource`.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ The name of this `AudioFileResource`.
 
 ## See Also
 
-- [let configuration: AudioFileResource.Configuration](audiofileresource/configuration-swift.property.md)
+### Describing the resource
+- [let configuration: AudioFileResource.Configuration](./configuration-swift.property.md)
   The configuration of this `AudioFileResource`.
-- [var duration: Duration](audiofileresource/duration.md)
+- [var duration: Duration](./duration.md)
   The duration of this `AudioFileResource`.
 
 

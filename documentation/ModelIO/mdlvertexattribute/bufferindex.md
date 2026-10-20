@@ -1,9 +1,10 @@
 # bufferIndex
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The index of the vertex buffer containing data for this attribute in a mesh’s [`vertexBuffers`](mdlmesh/vertexbuffers.md) array.
+The index of the vertex buffer containing data for this attribute in a mesh’s [`vertexBuffers`](../mdlmesh/vertexbuffers.md) array.
 
 **Availability**:
 - iOS 9.0+
@@ -19,19 +20,24 @@ The index of the vertex buffer containing data for this attribute in a mesh’s 
 var bufferIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger bufferIndex;
+```
+
 #### Discussion
 
-A mesh may store vertex data in either a *structure of arrays* model, where data for each attribute lies in a separate vertex buffer, or in an *array of structures* model. In the latter, multiple vertex attributes share the same buffer (and thus have the same [`bufferIndex`](mdlvertexattribute/bufferindex.md) value), and the [`format`](mdlvertexattribute/format.md) and [`offset`](mdlvertexattribute/offset.md) values (together with the [`stride`](mdlvertexbufferlayout/stride.md) value of a related [`MDLVertexBufferLayout`](mdlvertexbufferlayout.md) object) identify which bytes in that buffer refer to which vertex attributes.
+A mesh may store vertex data in either a *structure of arrays* model, where data for each attribute lies in a separate vertex buffer, or in an *array of structures* model. In the latter, multiple vertex attributes share the same buffer (and thus have the same [`bufferIndex`](./bufferindex.md) value), and the [`format`](./format.md) and [`offset`](./offset.md) values (together with the [`stride`](../mdlvertexbufferlayout/stride.md) value of a related [`MDLVertexBufferLayout`](../mdlvertexbufferlayout.md) object) identify which bytes in that buffer refer to which vertex attributes.
 
 ## See Also
 
-- [var name: String](mdlvertexattribute/name.md)
+### Inspecting a Vertex Attribute
+- [var name: String](./name.md)
   An identifier for the semantic use of the vertex attribute.
-- [var format: MDLVertexFormat](mdlvertexattribute/format.md)
+- [var format: MDLVertexFormat](./format.md)
   The format of per-vertex data for the attribute.
-- [var offset: Int](mdlvertexattribute/offset.md)
+- [var offset: Int](./offset.md)
   The offset, in bytes, of vertex data for the attribute in a vertex buffer, relative to the start of data for each vertex.
-- [var initializationValue: vector_float4](mdlvertexattribute/initializationvalue.md)
+- [var initializationValue: vector_float4](./initializationvalue.md)
   The default value for vertex data for this attribute.
 
 

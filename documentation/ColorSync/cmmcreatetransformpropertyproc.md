@@ -1,7 +1,8 @@
 # CMMCreateTransformPropertyProc
 
 **Framework**: ColorSync  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A function a CMM provider implements to create a transform property for a given key.
 
@@ -15,15 +16,20 @@ A function a CMM provider implements to create a transform property for a given 
 typealias CMMCreateTransformPropertyProc = (ColorSyncTransform?, CFTypeRef?, CFDictionary?) -> Unmanaged<CFTypeRef>?
 ```
 
+```c
+typedef const void *(*)(struct ColorSyncTransform *, const void *, const struct __CFDictionary *) CMMCreateTransformPropertyProc;
+```
+
 ## See Also
 
-- [typealias ColorSyncCMMIterateCallback](colorsynccmmiteratecallback.md)
+### Implementing CMM callbacks
+- [typealias ColorSyncCMMIterateCallback](./colorsynccmmiteratecallback.md)
   A callback that the framework invokes for each installed CMM during iteration.
-- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
+- [typealias CMMApplyTransformProc](./cmmapplytransformproc.md)
   A function a CMM provider implements to apply a color transform to image data.
-- [typealias CMMInitializeLinkProfileProc](cmminitializelinkprofileproc.md)
+- [typealias CMMInitializeLinkProfileProc](./cmminitializelinkprofileproc.md)
   A function a CMM provider implements to initialize a device-link profile.
-- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
+- [typealias CMMInitializeTransformProc](./cmminitializetransformproc.md)
   A function a CMM provider implements to initialize a color transform.
 
 

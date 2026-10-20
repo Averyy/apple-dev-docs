@@ -1,7 +1,8 @@
 # init(contentsOfFileAtURL:uniformTypeIdentifier:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment from the contents of an existing file on disk, with a custom UTI.
 
@@ -13,9 +14,9 @@ convenience init(contentsOfFileAtURL url: URL, uniformTypeIdentifier identifier:
 
 #### Discussion
 
-The attachment’s [`name`](xctattachment/name.md) property is the file name of the provided url.
+The attachment’s [`name`](./name.md) property is the file name of the provided url.
 
-> **Note**:  Use this initializer with files only. To create an attachment from a directory, use [`init(compressedContentsOfDirectoryAtURL:)`](xctattachment/init(compressedcontentsofdirectoryaturl:).md).
+> **Note**:  Use this initializer with files only. To create an attachment from a directory, use [`init(compressedContentsOfDirectoryAtURL:)`](./init%28compressedcontentsofdirectoryaturl%29.md).
 
 ## Parameters
 
@@ -24,9 +25,10 @@ The attachment’s [`name`](xctattachment/name.md) property is the file name of 
 
 ## See Also
 
-- [convenience init(contentsOfFileAtURL: URL)](xctattachment/init(contentsoffileaturl:).md)
+### Creating Attachments from Files and Folders
+- [convenience init(contentsOfFileAtURL: URL)](./init%28contentsoffileaturl%29.md)
   Creates an attachment from the contents of an existing file on disk.
-- [convenience init(compressedContentsOfDirectoryAtURL: URL)](xctattachment/init(compressedcontentsofdirectoryaturl:).md)
+- [convenience init(compressedContentsOfDirectoryAtURL: URL)](./init%28compressedcontentsofdirectoryaturl%29.md)
   Creates an attachment containing a zipped archive of an existing directory on disk.
 
 

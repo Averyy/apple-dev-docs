@@ -1,7 +1,8 @@
 # reload()
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Refreshes the compose session with the extension’s new information.
 
@@ -14,13 +15,18 @@ Refreshes the compose session with the extension’s new information.
 func reload()
 ```
 
+```objc
+- (void) reloadSession;
+```
+
 #### Discussion
 
-Call this method from your extension to regenerate address annotations to replace existing annotations for the session. In response, MailKit invokes [`annotateAddressesForSession(_:completion:)`](mecomposesessionhandler/annotateaddressesforsession(_:completion:).md) for all addresses in the To, Cc, and Bcc fields.
+Call this method from your extension to regenerate address annotations to replace existing annotations for the session. In response, MailKit invokes [`annotateAddressesForSession(_:completion:)`](../mecomposesessionhandler/annotateaddressesforsession%28_,completion%29.md) for all addresses in the To, Cc, and Bcc fields.
 
 ## See Also
 
-- [var sessionID: UUID](mecomposesession/sessionid.md)
+### Managing Compose Sessions
+- [var sessionID: UUID](./sessionid.md)
   A unique identifier for the session.
 
 

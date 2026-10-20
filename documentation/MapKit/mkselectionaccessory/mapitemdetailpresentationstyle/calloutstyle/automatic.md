@@ -1,7 +1,8 @@
 # MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle.automatic
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that allows the framework to choose an appropriate callout style automatically.
 
@@ -16,6 +17,10 @@ A value that allows the framework to choose an appropriate callout style automat
 
 ```swift
 case automatic
+```
+
+```c
+MKMapItemDetailSelectionAccessoryCalloutStyleAutomatic
 ```
 
 

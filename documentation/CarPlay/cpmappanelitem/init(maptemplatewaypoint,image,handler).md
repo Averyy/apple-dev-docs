@@ -1,7 +1,8 @@
 # init(mapTemplateWaypoint:image:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map panel item with waypoint information.
 
@@ -14,6 +15,10 @@ Creates a map panel item with waypoint information.
 
 ```swift
 init(mapTemplateWaypoint: CPMapTemplateWaypoint, image: UIImage?, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithMapTemplateWaypoint:(CPMapTemplateWaypoint *) mapTemplateWaypoint image:(UIImage *) image handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
 #### Return Value

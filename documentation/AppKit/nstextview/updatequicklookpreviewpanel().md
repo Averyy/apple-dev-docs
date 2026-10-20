@@ -1,7 +1,8 @@
 # updateQuickLookPreviewPanel()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the QuickLook panel that an update may be required.
 
@@ -14,15 +15,20 @@ Notifies the QuickLook panel that an update may be required.
 func updateQuickLookPreviewPanel()
 ```
 
+```objc
+- (void) updateQuickLookPreviewPanel;
+```
+
 #### Discussion
 
-Notifies the  [`QLPreviewPanel`](https://developer.apple.com/documentation/quicklookui/qlpreviewpanel) class for possible status changes with the data source or controller.  Typically invoked in response to selection changes.
+Notifies the  [`QLPreviewPanel`](../../QuickLookUI/qlpreviewpanel.md) class for possible status changes with the data source or controller.  Typically invoked in response to selection changes.
 
 ## See Also
 
-- [func toggleQuickLookPreviewPanel(Any?)](nstextview/togglequicklookpreviewpanel(_:).md)
+### Supporting QuickLook
+- [func toggleQuickLookPreviewPanel(Any?)](./togglequicklookpreviewpanel%28_%29.md)
   An action message that toggles the visibility state of the Quick Look preview panel.
-- [func quickLookPreviewableItems(inRanges: [NSValue]) -> [any QLPreviewItem]](nstextview/quicklookpreviewableitems(inranges:).md)
+- [func quickLookPreviewableItems(inRanges: [NSValue]) -> [any QLPreviewItem]](./quicklookpreviewableitems%28inranges%29.md)
   Returns an array of URLs for items that can be displayed by QuickLook in the specified ranges.
 
 

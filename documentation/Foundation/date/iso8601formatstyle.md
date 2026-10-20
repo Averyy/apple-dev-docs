@@ -1,7 +1,8 @@
 # Date.ISO8601FormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that converts between dates and their ISO-8601 string representations.
 
@@ -22,7 +23,7 @@ struct ISO8601FormatStyle
 
 #### Overview
 
-The [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) type generates and parses string representations of dates following the [`ISO-8601`](https://developer.apple.comhttps://www.iso.org/iso-8601-date-and-time-format.html) standard, like `2024-04-01T12:34:56.789Z`. Use this type to create ISO-8601 representations of dates and create dates from text strings in ISO 8601 format. For other formatting conventions, like human-readable, localized date formats, use [`Date.FormatStyle`](date/formatstyle.md).
+The [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md) type generates and parses string representations of dates following the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard, like `2024-04-01T12:34:56.789Z`. Use this type to create ISO-8601 representations of dates and create dates from text strings in ISO 8601 format. For other formatting conventions, like human-readable, localized date formats, use [`Date.FormatStyle`](./formatstyle.md).
 
 Instance modifier methods applied to an ISO-8601 format style customize the formatted output, as the following example illustrates.
 
@@ -32,7 +33,7 @@ print(now.formatted(Date.ISO8601FormatStyle().dateSeparator(.dash)))
 // 2021-06-21T211015Z
 ```
 
-Use the static factory property `FormatStyle/iso8601` to create an instance of [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md). Then apply instance modifier methods to customize the format, as in the example below.
+Use the static factory property `FormatStyle/iso8601` to create an instance of [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md). Then apply instance modifier methods to customize the format, as in the example below.
 
 ```swift
 let meetNow = Date()
@@ -50,109 +51,110 @@ let formatted = meetNow.formatted(.iso8601
 ## Topics
 
 ### Creating an ISO 8601 Format Style
-- [init(dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeZone: TimeZone)](date/iso8601formatstyle/init(dateseparator:datetimeseparator:timezone:).md)
+- [init(dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeZone: TimeZone)](./iso8601formatstyle/init%28dateseparator,datetimeseparator,timezone%29.md)
   Creates an instance using the provided date separator, date and time components separator, and time zone.
 ### Modifying an ISO 8601 Format Style
-- [var dateSeparator: Date.ISO8601FormatStyle.DateSeparator](date/iso8601formatstyle/dateseparator-swift.property.md)
+- [var dateSeparator: Date.ISO8601FormatStyle.DateSeparator](./iso8601formatstyle/dateseparator-swift.property.md)
   The character used to separate the components of a date.
-- [var dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator](date/iso8601formatstyle/datetimeseparator-swift.property.md)
+- [var dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator](./iso8601formatstyle/datetimeseparator-swift.property.md)
   The character used to separate the date and time components of an ISO 8601 string representation of a date.
-- [var timeZone: TimeZone](date/iso8601formatstyle/timezone.md)
+- [var timeZone: TimeZone](./iso8601formatstyle/timezone.md)
   The time zone used to create and parse date representations.
-- [func dateTimeSeparator(Date.ISO8601FormatStyle.DateTimeSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/datetimeseparator(_:).md)
+- [func dateTimeSeparator(Date.ISO8601FormatStyle.DateTimeSeparator) -> Date.ISO8601FormatStyle](./iso8601formatstyle/datetimeseparator%28_%29.md)
   Sets the character that specifies the date and time components.
 ### Modifying Dates in an ISO 8601 Format Style
-- [func dateSeparator(Date.ISO8601FormatStyle.DateSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/dateseparator(_:).md)
+- [func dateSeparator(Date.ISO8601FormatStyle.DateSeparator) -> Date.ISO8601FormatStyle](./iso8601formatstyle/dateseparator%28_%29.md)
   Modifies the ISO 8601 date format style to use the specified date separator.
-- [func year() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/year.md)
+- [func year() -> Date.ISO8601FormatStyle](./iso8601formatstyle/year%28%29.md)
   Modifies the ISO 8601 date format style to include the year in the formatted output.
-- [func month() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/month.md)
+- [func month() -> Date.ISO8601FormatStyle](./iso8601formatstyle/month%28%29.md)
   Modifies the ISO 8601 date format style to include the month in the formatted output.
-- [func weekOfYear() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/weekofyear.md)
+- [func weekOfYear() -> Date.ISO8601FormatStyle](./iso8601formatstyle/weekofyear%28%29.md)
   Modifies the ISO 8601 date format style to include the week of the year in the formatted output.
-- [func day() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/day.md)
+- [func day() -> Date.ISO8601FormatStyle](./iso8601formatstyle/day%28%29.md)
   Modifies the ISO 8601 date format style to include the day in the formatted output.
 ### Modifying Times in an ISO 8601 Format Style
-- [func time(includingFractionalSeconds: Bool) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/time(includingfractionalseconds:).md)
+- [func time(includingFractionalSeconds: Bool) -> Date.ISO8601FormatStyle](./iso8601formatstyle/time%28includingfractionalseconds%29.md)
   Modifies the ISO 8601 date format style to include the time in the formatted output.
-- [func timeSeparator(Date.ISO8601FormatStyle.TimeSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timeseparator(_:).md)
+- [func timeSeparator(Date.ISO8601FormatStyle.TimeSeparator) -> Date.ISO8601FormatStyle](./iso8601formatstyle/timeseparator%28_%29.md)
   Modifies the ISO 8601 date format style to use the specified time separator.
-- [func timeZone(separator: Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timezone(separator:).md)
+- [func timeZone(separator: Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](./iso8601formatstyle/timezone%28separator%29.md)
   Modifies the ISO 8601 date format style to include the time zone in the formatted output.
-- [func timeZoneSeparator(Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timezoneseparator(_:).md)
+- [func timeZoneSeparator(Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](./iso8601formatstyle/timezoneseparator%28_%29.md)
   Modifies the ISO 8601 date format style to use the specified time zone separator.
 ### Parsing an ISO 8601 Format Style
-- [func parse(String) throws -> Date](date/iso8601formatstyle/parse(_:).md)
+- [func parse(String) throws -> Date](./iso8601formatstyle/parse%28_%29.md)
   Parses a string into a date.
-- [var parseStrategy: Date.ISO8601FormatStyle](date/iso8601formatstyle/parsestrategy.md)
+- [var parseStrategy: Date.ISO8601FormatStyle](./iso8601formatstyle/parsestrategy.md)
   The strategy used to parse a string into a date.
 ### Applying an ISO 8601 Format Style
-- [func format(Date) -> String](date/iso8601formatstyle/format(_:).md)
+- [func format(Date) -> String](./iso8601formatstyle/format%28_%29.md)
   Creates a locale-aware ISO 8601 string representation from a date value.
 ### Comparing ISO 8601 Format Styles
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](./eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Types
-- [Date.ISO8601FormatStyle.DateSeparator](date/iso8601formatstyle/dateseparator-swift.enum.md)
+- [Date.ISO8601FormatStyle.DateSeparator](./iso8601formatstyle/dateseparator-swift.enum.md)
   A type describing the character separating year, month, and day components of a date in an ISO 8601 date format.
-- [Date.ISO8601FormatStyle.DateTimeSeparator](date/iso8601formatstyle/datetimeseparator-swift.enum.md)
+- [Date.ISO8601FormatStyle.DateTimeSeparator](./iso8601formatstyle/datetimeseparator-swift.enum.md)
   Type describing the character separating the date and time components of a date in an ISO 8601 date format.
-- [Date.ISO8601FormatStyle.TimeSeparator](date/iso8601formatstyle/timeseparator-swift.enum.md)
+- [Date.ISO8601FormatStyle.TimeSeparator](./iso8601formatstyle/timeseparator-swift.enum.md)
   Type describing the character separating the time components of a date in an ISO 8601 date format.
-- [Date.ISO8601FormatStyle.TimeZoneSeparator](date/iso8601formatstyle/timezoneseparator-swift.enum.md)
+- [Date.ISO8601FormatStyle.TimeZoneSeparator](./iso8601formatstyle/timezoneseparator-swift.enum.md)
   A type describing the character separating the time and time zone of a date in an ISO 8601 date format.
 ### Initializers
-- [init(dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator, timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator, includingFractionalSeconds: Bool, timeZone: TimeZone)](date/iso8601formatstyle/init(dateseparator:datetimeseparator:timeseparator:timezoneseparator:includingfractionalseconds:timezone:).md)
+- [init(dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator, timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator, includingFractionalSeconds: Bool, timeZone: TimeZone)](./iso8601formatstyle/init%28dateseparator,datetimeseparator,timeseparator,timezoneseparator,includingfractionalseconds,timezone%29.md)
 ### Instance Properties
-- [var includingFractionalSeconds: Bool](date/iso8601formatstyle/includingfractionalseconds.md)
+- [var includingFractionalSeconds: Bool](./iso8601formatstyle/includingfractionalseconds.md)
   If set, the style includes fractional seconds when formatting. Before Swift 6.2, if true when parsing, fractional seconds must be present. If false when parsing, fractional seconds must not be present. After Swift 6.2, fractional seconds may be present in the String regardless of the setting of this property.
-- [var timeSeparator: Date.ISO8601FormatStyle.TimeSeparator](date/iso8601formatstyle/timeseparator-swift.property.md)
-- [var timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator](date/iso8601formatstyle/timezoneseparator-swift.property.md)
+- [var timeSeparator: Date.ISO8601FormatStyle.TimeSeparator](./iso8601formatstyle/timeseparator-swift.property.md)
+- [var timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator](./iso8601formatstyle/timezoneseparator-swift.property.md)
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](date/iso8601formatstyle/customconsumingregexcomponent-implementations.md)
-- [FormatStyle Implementations](date/iso8601formatstyle/formatstyle-implementations.md)
-- [ParseStrategy Implementations](date/iso8601formatstyle/parsestrategy-implementations.md)
-- [ParseableFormatStyle Implementations](date/iso8601formatstyle/parseableformatstyle-implementations.md)
-- [RegexComponent Implementations](date/iso8601formatstyle/regexcomponent-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./iso8601formatstyle/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](./iso8601formatstyle/formatstyle-implementations.md)
+- [ParseStrategy Implementations](./iso8601formatstyle/parsestrategy-implementations.md)
+- [ParseableFormatStyle Implementations](./iso8601formatstyle/parseableformatstyle-implementations.md)
+- [RegexComponent Implementations](./iso8601formatstyle/regexcomponent-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseStrategy](parsestrategy.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseStrategy](../parsestrategy.md)
+- [ParseableFormatStyle](../parseableformatstyle.md)
+- [RegexComponent](../../Swift/regexcomponent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var dateTime: Date.FormatStyle](formatstyle/datetime.md)
+### Applying date and time styles
+- [static var dateTime: Date.FormatStyle](../formatstyle/datetime.md)
   A style for formatting a date and time.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](./formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
+- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](../formatstyle/verbatim%28_,locale,timezone,calendar%29.md)
   Returns a style for formatting a date with an explicitly-specified style.
-- [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
+- [struct VerbatimFormatStyle](./verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
-- [static var interval: Date.IntervalFormatStyle](formatstyle/interval.md)
+- [static var interval: Date.IntervalFormatStyle](../formatstyle/interval.md)
   A style for formatting a date interval.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](formatstyle/relative(presentation:unitsstyle:).md)
+- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](../formatstyle/relative%28presentation,unitsstyle%29.md)
   Returns a style for formatting a date as relative to the current date.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](formatstyle/components(style:fields:).md)
+- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](../formatstyle/components%28style,fields%29.md)
   Returns a style for formatting a date interval in terms of specific date components.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](./componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 
 

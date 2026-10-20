@@ -1,7 +1,8 @@
 # view(atColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the given view at a particular column.
 
@@ -12,6 +13,10 @@ Provides access to the given view at a particular column.
 
 ```swift
 func view(atColumn column: Int) -> Any?
+```
+
+```objc
+- (id) viewAtColumn:(NSInteger) column;
 ```
 
 #### Return Value

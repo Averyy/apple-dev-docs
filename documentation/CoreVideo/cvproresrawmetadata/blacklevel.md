@@ -1,7 +1,8 @@
 # blackLevel
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sensel level corresponding to no light exposure.
 

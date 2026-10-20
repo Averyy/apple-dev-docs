@@ -1,7 +1,8 @@
 # maxBounds
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner of the bounding box with the highest x-, y-, and z-coordinate values.
 
@@ -17,6 +18,10 @@ The corner of the bounding box with the highest x-, y-, and z-coordinate values.
 
 ```swift
 var maxBounds: vector_float3
+```
+
+```c
+vector_float3 maxBounds;
 ```
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,17 +18,17 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDKeyFormatAGID_CPRM](1646177-anonymous/kdvdkeyformatagid_cprm.md)
-- [kDVDKeyFormatAGID_CSS](1646177-anonymous/kdvdkeyformatagid_css.md)
-- [kDVDKeyFormatAGID_CSS2](1646177-anonymous/kdvdkeyformatagid_css2.md)
-- [kDVDKeyFormatAGID_Invalidate](1646177-anonymous/kdvdkeyformatagid_invalidate.md)
-- [kDVDKeyFormatASF](1646177-anonymous/kdvdkeyformatasf.md)
-- [kDVDKeyFormatChallengeKey](1646177-anonymous/kdvdkeyformatchallengekey.md)
-- [kDVDKeyFormatKey1](1646177-anonymous/kdvdkeyformatkey1.md)
-- [kDVDKeyFormatKey2](1646177-anonymous/kdvdkeyformatkey2.md)
-- [kDVDKeyFormatRegionState](1646177-anonymous/kdvdkeyformatregionstate.md)
-- [kDVDKeyFormatSetRegion](1646177-anonymous/kdvdkeyformatsetregion.md)
-- [kDVDKeyFormatTitleKey](1646177-anonymous/kdvdkeyformattitlekey.md)
+- [kDVDKeyFormatAGID_CPRM](./api-1646177-anonymous/kdvdkeyformatagid_cprm.md)
+- [kDVDKeyFormatAGID_CSS](./api-1646177-anonymous/kdvdkeyformatagid_css.md)
+- [kDVDKeyFormatAGID_CSS2](./api-1646177-anonymous/kdvdkeyformatagid_css2.md)
+- [kDVDKeyFormatAGID_Invalidate](./api-1646177-anonymous/kdvdkeyformatagid_invalidate.md)
+- [kDVDKeyFormatASF](./api-1646177-anonymous/kdvdkeyformatasf.md)
+- [kDVDKeyFormatChallengeKey](./api-1646177-anonymous/kdvdkeyformatchallengekey.md)
+- [kDVDKeyFormatKey1](./api-1646177-anonymous/kdvdkeyformatkey1.md)
+- [kDVDKeyFormatKey2](./api-1646177-anonymous/kdvdkeyformatkey2.md)
+- [kDVDKeyFormatRegionState](./api-1646177-anonymous/kdvdkeyformatregionstate.md)
+- [kDVDKeyFormatSetRegion](./api-1646177-anonymous/kdvdkeyformatsetregion.md)
+- [kDVDKeyFormatTitleKey](./api-1646177-anonymous/kdvdkeyformattitlekey.md)
 
 
 ---

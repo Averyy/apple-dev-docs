@@ -1,7 +1,8 @@
 # trimStart
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time, in seconds, at which the animation plays.
 
@@ -11,7 +12,7 @@ The time, in seconds, at which the animation plays.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,23 +24,24 @@ var trimStart: TimeInterval? { get set }
 
 This property is `nil` by default, which plays the animation with `time` = `0`. If you set a value, the animation edits the duration according to the specified beginning time.
 
-If you set a negative value for this property, the duration increases and the additional animation data fills in based on the [`fillMode`](fromtobyanimation/fillmode.md) you choose.
+If you set a negative value for this property, the duration increases and the additional animation data fills in based on the [`fillMode`](./fillmode.md) you choose.
 
 ## See Also
 
-- [var speed: Float](fromtobyanimation/speed.md)
+### Timing the animation
+- [var speed: Float](./speed.md)
   A factor that increases or decreases the animation’s rate of playback.
-- [var delay: TimeInterval](fromtobyanimation/delay.md)
+- [var delay: TimeInterval](./delay.md)
   An amount of time that elapses before the animation plays.
-- [var duration: TimeInterval](fromtobyanimation/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](fromtobyanimation/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animation begins within the duration.
-- [var timing: AnimationTimingFunction](fromtobyanimation/timing.md)
+- [var timing: AnimationTimingFunction](./timing.md)
   An option that determines the animation’s pace over time.
-- [var trimDuration: TimeInterval?](fromtobyanimation/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the calculated duration.
-- [var trimEnd: TimeInterval?](fromtobyanimation/trimend.md)
+- [var trimEnd: TimeInterval?](./trimend.md)
   The time, in seconds, at which the animation stops.
 
 

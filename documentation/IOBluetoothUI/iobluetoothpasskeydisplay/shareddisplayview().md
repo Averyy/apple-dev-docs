@@ -1,7 +1,8 @@
 # sharedDisplayView()
 
 **Framework**: IOBluetooth UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 class func sharedDisplayView() -> IOBluetoothPasskeyDisplay!
+```
+
+```objc
++ (IOBluetoothPasskeyDisplay *) sharedDisplayView;
 ```
 
 

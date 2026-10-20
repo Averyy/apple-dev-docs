@@ -1,7 +1,8 @@
 # init(model:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a MLModel regressor adaptor from a model.
 
@@ -26,7 +27,8 @@ init(model: MLModel) throws
 
 ## See Also
 
-- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](mlmodelregressoradaptor/init(contentsof:configuration:).md)
+### Creating an adaptor
+- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](./init%28contentsof,configuration%29.md)
   Creates a model adaptor from a CoreML model URL.
 
 

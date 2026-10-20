@@ -1,7 +1,8 @@
 # compose
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Adds the new animation to existing animations, and immediately starts the new animation.
 

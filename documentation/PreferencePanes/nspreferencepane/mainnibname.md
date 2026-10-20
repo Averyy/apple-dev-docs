@@ -1,7 +1,8 @@
 # mainNibName
 
 **Framework**: Preference Panes  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the preference pane’s nib file.
 
@@ -15,6 +16,10 @@ The name of the preference pane’s nib file.
 var mainNibName: String { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) NSString * mainNibName;
+```
+
 #### Discussion
 
 The name should not include the `.nib` extension.
@@ -23,9 +28,10 @@ The default implementation returns the value of the `NSMainNibFile` key in the b
 
 ## See Also
 
-- [var bundle: Bundle](nspreferencepane/bundle.md)
+### Getting the Bundle Information
+- [var bundle: Bundle](./bundle.md)
   The preference pane’s bundle.
-- [var mainView: NSView](nspreferencepane/mainview.md)
+- [var mainView: NSView](./mainview.md)
   The main view of the preference pane.
 
 

@@ -1,12 +1,13 @@
 # NSAccessibilityProtocol
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The complete list of properties and methods for accessible elements.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,745 +15,750 @@ The complete list of properties and methods for accessible elements.
 protocol NSAccessibilityProtocol : NSObjectProtocol
 ```
 
+```objc
+@protocol NSAccessibility <NSObject>
+```
+
 #### Overview
 
 To be accessible, an app must provide information to the assistive app about its user interface and capabilities. There are three ways that apps and assistive apps interact:
 
-- Informational properties. [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) defines a number of properties that provide information about your view or control. If you’re working with a subclass of a standard AppKit view or control, you can either set the desired property or override its getters and setters. By default, overriding only the getter tells the assistive app that it has read-only access to the property. Overriding the setter tells the assistive app that it also has write access to the property.
-- Action methods. [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) also defines a number of methods that simulate button presses, mouse clicks, and selections in your view or control. By implementing these methods, you give assistive apps the ability to drive your view or control.
-- Notifications. Your view or control may need to let the assistive app know when changes occur. [`NSAccessibility.Notification`](nsaccessibility-swift.struct/notification.md) defines a number of notifications that you can send using the [`post(element:notification:)`](nsaccessibility-swift.struct/post(element:notification:).md) method. The role-specific protocols don’t include these notifications; however, standard AppKit controls already send appropriate messages for their standard usage patterns. You typically need to send your own notifications only when you’re creating a custom control or when you’re using a standard control in a nonstandard way.
+- Informational properties. [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) defines a number of properties that provide information about your view or control. If you’re working with a subclass of a standard AppKit view or control, you can either set the desired property or override its getters and setters. By default, overriding only the getter tells the assistive app that it has read-only access to the property. Overriding the setter tells the assistive app that it also has write access to the property.
+- Action methods. [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) also defines a number of methods that simulate button presses, mouse clicks, and selections in your view or control. By implementing these methods, you give assistive apps the ability to drive your view or control.
+- Notifications. Your view or control may need to let the assistive app know when changes occur. [`NSAccessibility.Notification`](./nsaccessibility-swift.struct/notification.md) defines a number of notifications that you can send using the [`post(element:notification:)`](./nsaccessibility-swift.struct/post%28element,notification%29.md) method. The role-specific protocols don’t include these notifications; however, standard AppKit controls already send appropriate messages for their standard usage patterns. You typically need to send your own notifications only when you’re creating a custom control or when you’re using a standard control in a nonstandard way.
 
-If you’re using standard AppKit user interface elements, much of the work has been done for you. AppKit views and controls adopt the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol by default. In particular, [`NSView`](nsview.md), [`NSWindow`](nswindow.md), [`NSCell`](nscell.md), and [`NSDrawer`](nsdrawer.md) provide a default implementation for all the properties and methods in this protocol. In some cases, you may need to modify these default values to better represent your app, to provide additional context, or to modify the user’s flow through the app.
+If you’re using standard AppKit user interface elements, much of the work has been done for you. AppKit views and controls adopt the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol by default. In particular, [`NSView`](./nsview.md), [`NSWindow`](./nswindow.md), [`NSCell`](./nscell.md), and [`NSDrawer`](./nsdrawer.md) provide a default implementation for all the properties and methods in this protocol. In some cases, you may need to modify these default values to better represent your app, to provide additional context, or to modify the user’s flow through the app.
 
-If you’re using custom view or control subclasses, you need to add the appropriate informational properties, action methods, and notifications. You do this by adopting a role-specific protocol instead of [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md). See [`Custom Controls`](custom-controls.md).
+If you’re using custom view or control subclasses, you need to add the appropriate informational properties, action methods, and notifications. You do this by adopting a role-specific protocol instead of [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md). See [Custom Controls](./custom-controls.md).
 
-If you’re using custom user interface elements that don’t inherit from [`NSView`](nsview.md) or one of the other accessibility-enabled AppKit classes, subclass the [`NSAccessibilityElement`](nsaccessibilityelement-swift.class.md) class instead of adopting instead of [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md).
+If you’re using custom user interface elements that don’t inherit from [`NSView`](./nsview.md) or one of the other accessibility-enabled AppKit classes, subclass the [`NSAccessibilityElement`](./nsaccessibilityelement-swift.class.md) class instead of adopting instead of [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md).
 
 ##### Customizing User Interface Elements
 
-Often, you can adjust how an assistive app interacts with your user interface element without creating a custom subclass. If a user interface element inherits from [`NSView`](nsview.md) or one of the other accessibility-enabled AppKit classes, you can customize it by:
+Often, you can adjust how an assistive app interacts with your user interface element without creating a custom subclass. If a user interface element inherits from [`NSView`](./nsview.md) or one of the other accessibility-enabled AppKit classes, you can customize it by:
 
-- Setting its accessibility values using any of the setter methods in the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol.
-- Overriding any of the properties or methods in the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol with a custom implementation.
+- Setting its accessibility values using any of the setter methods in the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol.
+- Overriding any of the properties or methods in the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol with a custom implementation.
 
 If you override a getter method, the system lets assistive apps call your getter. This can be particularly useful when managing dynamic properties because you can calculate their current value on demand instead of trying to update the property in response to a change.
 
 If you override a setter method, the system lets assistive apps both read and modify that property.
 
-You can control which accessor methods the assistive app can use by overriding [`isAccessibilitySelectorAllowed(_:)`](nsaccessibilityprotocol/isaccessibilityselectorallowed(_:).md). Return [`true`](https://developer.apple.com/documentation/swift/true) if the assistive app can call the selector; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false).
+You can control which accessor methods the assistive app can use by overriding [`isAccessibilitySelectorAllowed(_:)`](./nsaccessibilityprotocol/isaccessibilityselectorallowed%28_%29.md). Return [`true`](../Swift/true.md) if the assistive app can call the selector; otherwise, return [`false`](../Swift/false.md).
 
 ## Topics
 
 ### Configuring accessibility
-- [func isAccessibilityElement() -> Bool](nsaccessibilityprotocol/isaccessibilityelement.md)
+- [func isAccessibilityElement() -> Bool](./nsaccessibilityprotocol/isaccessibilityelement%28%29.md)
   Returns a Boolean value that determines whether the accessibility element participates in the accessibility hierarchy.
-- [func setAccessibilityElement(Bool)](nsaccessibilityprotocol/setaccessibilityelement(_:).md)
+- [func setAccessibilityElement(Bool)](./nsaccessibilityprotocol/setaccessibilityelement%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element participates in the accessibility hierarchy.
-- [func isAccessibilityEnabled() -> Bool](nsaccessibilityprotocol/isaccessibilityenabled.md)
+- [func isAccessibilityEnabled() -> Bool](./nsaccessibilityprotocol/isaccessibilityenabled%28%29.md)
   Returns a Boolean value that determines whether the accessibility element responds to user events.
-- [func setAccessibilityEnabled(Bool)](nsaccessibilityprotocol/setaccessibilityenabled(_:).md)
+- [func setAccessibilityEnabled(Bool)](./nsaccessibilityprotocol/setaccessibilityenabled%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element responds to user events.
-- [func accessibilityFrame() -> NSRect](nsaccessibilityprotocol/accessibilityframe.md)
+- [func accessibilityFrame() -> NSRect](./nsaccessibilityprotocol/accessibilityframe%28%29.md)
   Returns the accessibility element’s frame in screen coordinates.
-- [func setAccessibilityFrame(NSRect)](nsaccessibilityprotocol/setaccessibilityframe(_:).md)
+- [func setAccessibilityFrame(NSRect)](./nsaccessibilityprotocol/setaccessibilityframe%28_%29.md)
   Sets the accessibility element’s frame in screen coordinates.
-- [func accessibilityHelp() -> String?](nsaccessibilityprotocol/accessibilityhelp.md)
+- [func accessibilityHelp() -> String?](./nsaccessibilityprotocol/accessibilityhelp%28%29.md)
   Returns the help text for the accessibility element.
-- [func setAccessibilityHelp(String?)](nsaccessibilityprotocol/setaccessibilityhelp(_:).md)
+- [func setAccessibilityHelp(String?)](./nsaccessibilityprotocol/setaccessibilityhelp%28_%29.md)
   Sets the help text for the accessibility element.
-- [func accessibilityLabel() -> String?](nsaccessibilityprotocol/accessibilitylabel.md)
+- [func accessibilityLabel() -> String?](./nsaccessibilityprotocol/accessibilitylabel%28%29.md)
   Returns a short description of the accessibility element.
-- [func setAccessibilityLabel(String?)](nsaccessibilityprotocol/setaccessibilitylabel(_:).md)
+- [func setAccessibilityLabel(String?)](./nsaccessibilityprotocol/setaccessibilitylabel%28_%29.md)
   Sets a short description of the accessibility element.
-- [func accessibilityTitle() -> String?](nsaccessibilityprotocol/accessibilitytitle.md)
+- [func accessibilityTitle() -> String?](./nsaccessibilityprotocol/accessibilitytitle%28%29.md)
   Returns the title of the accessibility element—for example, a button’s visible text.
-- [func setAccessibilityTitle(String?)](nsaccessibilityprotocol/setaccessibilitytitle(_:).md)
+- [func setAccessibilityTitle(String?)](./nsaccessibilityprotocol/setaccessibilitytitle%28_%29.md)
   Sets the title of the accessibility element.
-- [func accessibilityValue() -> Any?](nsaccessibilityprotocol/accessibilityvalue.md)
+- [func accessibilityValue() -> Any?](./nsaccessibilityprotocol/accessibilityvalue%28%29.md)
   Returns the accessibility element’s value.
-- [func setAccessibilityValue(Any?)](nsaccessibilityprotocol/setaccessibilityvalue(_:).md)
+- [func setAccessibilityValue(Any?)](./nsaccessibilityprotocol/setaccessibilityvalue%28_%29.md)
   Sets the accessibility element’s value.
-- [func isAccessibilitySelectorAllowed(Selector) -> Bool](nsaccessibilityprotocol/isaccessibilityselectorallowed(_:).md)
+- [func isAccessibilitySelectorAllowed(Selector) -> Bool](./nsaccessibilityprotocol/isaccessibilityselectorallowed%28_%29.md)
   Returns a Boolean value that indicates whether assistive apps can invoke the specified selector on the accessibility element.
 ### Setting content and values
-- [func accessibilityContents() -> [Any]?](nsaccessibilityprotocol/accessibilitycontents.md)
+- [func accessibilityContents() -> [Any]?](./nsaccessibilityprotocol/accessibilitycontents%28%29.md)
   Returns the contents of the current accessibility element.
-- [func setAccessibilityContents([Any]?)](nsaccessibilityprotocol/setaccessibilitycontents(_:).md)
+- [func setAccessibilityContents([Any]?)](./nsaccessibilityprotocol/setaccessibilitycontents%28_%29.md)
   Sets the contents of the current accessibility element.
-- [func accessibilityCriticalValue() -> Any?](nsaccessibilityprotocol/accessibilitycriticalvalue.md)
+- [func accessibilityCriticalValue() -> Any?](./nsaccessibilityprotocol/accessibilitycriticalvalue%28%29.md)
   Returns the critical value for the level indicator.
-- [func setAccessibilityCriticalValue(Any?)](nsaccessibilityprotocol/setaccessibilitycriticalvalue(_:).md)
+- [func setAccessibilityCriticalValue(Any?)](./nsaccessibilityprotocol/setaccessibilitycriticalvalue%28_%29.md)
   Sets the critical value for the level indicator.
-- [func accessibilityIdentifier() -> String?](nsaccessibilityprotocol/accessibilityidentifier.md)
+- [func accessibilityIdentifier() -> String?](./nsaccessibilityprotocol/accessibilityidentifier%28%29.md)
   Returns the accessibility element’s identity.
-- [func setAccessibilityIdentifier(String?)](nsaccessibilityprotocol/setaccessibilityidentifier(_:).md)
+- [func setAccessibilityIdentifier(String?)](./nsaccessibilityprotocol/setaccessibilityidentifier%28_%29.md)
   Sets the accessibility element’s identity.
-- [func accessibilityMaxValue() -> Any?](nsaccessibilityprotocol/accessibilitymaxvalue.md)
+- [func accessibilityMaxValue() -> Any?](./nsaccessibilityprotocol/accessibilitymaxvalue%28%29.md)
   Returns the maximum value for the accessibility element.
-- [func setAccessibilityMaxValue(Any?)](nsaccessibilityprotocol/setaccessibilitymaxvalue(_:).md)
+- [func setAccessibilityMaxValue(Any?)](./nsaccessibilityprotocol/setaccessibilitymaxvalue%28_%29.md)
   Sets the maximum value for the accessibility element.
-- [func accessibilityMinValue() -> Any?](nsaccessibilityprotocol/accessibilityminvalue.md)
+- [func accessibilityMinValue() -> Any?](./nsaccessibilityprotocol/accessibilityminvalue%28%29.md)
   Returns the minimum value for the accessibility element.
-- [func setAccessibilityMinValue(Any?)](nsaccessibilityprotocol/setaccessibilityminvalue(_:).md)
+- [func setAccessibilityMinValue(Any?)](./nsaccessibilityprotocol/setaccessibilityminvalue%28_%29.md)
   Sets the minimum value for the accessibility element.
-- [func accessibilityOrientation() -> NSAccessibilityOrientation](nsaccessibilityprotocol/accessibilityorientation.md)
+- [func accessibilityOrientation() -> NSAccessibilityOrientation](./nsaccessibilityprotocol/accessibilityorientation%28%29.md)
   Returns the orientation of the accessibility element.
-- [func setAccessibilityOrientation(NSAccessibilityOrientation)](nsaccessibilityprotocol/setaccessibilityorientation(_:).md)
+- [func setAccessibilityOrientation(NSAccessibilityOrientation)](./nsaccessibilityprotocol/setaccessibilityorientation%28_%29.md)
   Sets the orientation of the accessibility element.
-- [func isAccessibilityProtectedContent() -> Bool](nsaccessibilityprotocol/isaccessibilityprotectedcontent.md)
+- [func isAccessibilityProtectedContent() -> Bool](./nsaccessibilityprotocol/isaccessibilityprotectedcontent%28%29.md)
   Returns a Boolean value that determines whether the accessibility element contains protected content.
-- [func setAccessibilityProtectedContent(Bool)](nsaccessibilityprotocol/setaccessibilityprotectedcontent(_:).md)
+- [func setAccessibilityProtectedContent(Bool)](./nsaccessibilityprotocol/setaccessibilityprotectedcontent%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element contains protected content.
-- [func isAccessibilitySelected() -> Bool](nsaccessibilityprotocol/isaccessibilityselected.md)
+- [func isAccessibilitySelected() -> Bool](./nsaccessibilityprotocol/isaccessibilityselected%28%29.md)
   Returns a Boolean value that determines whether the accessibility element is currently in a selected state.
-- [func setAccessibilitySelected(Bool)](nsaccessibilityprotocol/setaccessibilityselected(_:).md)
+- [func setAccessibilitySelected(Bool)](./nsaccessibilityprotocol/setaccessibilityselected%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element is currently in a selected state.
-- [func accessibilityURL() -> URL?](nsaccessibilityprotocol/accessibilityurl.md)
+- [func accessibilityURL() -> URL?](./nsaccessibilityprotocol/accessibilityurl%28%29.md)
   Returns the URL for the accessibility element.
-- [func setAccessibilityURL(URL?)](nsaccessibilityprotocol/setaccessibilityurl(_:).md)
+- [func setAccessibilityURL(URL?)](./nsaccessibilityprotocol/setaccessibilityurl%28_%29.md)
   Sets the URL for the accessibility element.
-- [func accessibilityValueDescription() -> String?](nsaccessibilityprotocol/accessibilityvaluedescription.md)
+- [func accessibilityValueDescription() -> String?](./nsaccessibilityprotocol/accessibilityvaluedescription%28%29.md)
   Returns the human-readable description of the accessibility element’s value.
-- [func setAccessibilityValueDescription(String?)](nsaccessibilityprotocol/setaccessibilityvaluedescription(_:).md)
+- [func setAccessibilityValueDescription(String?)](./nsaccessibilityprotocol/setaccessibilityvaluedescription%28_%29.md)
   Sets the human-readable description of the accessibility element’s value.
-- [func accessibilityWarningValue() -> Any?](nsaccessibilityprotocol/accessibilitywarningvalue.md)
+- [func accessibilityWarningValue() -> Any?](./nsaccessibilityprotocol/accessibilitywarningvalue%28%29.md)
   Returns the warning value for the level indicator.
-- [func setAccessibilityWarningValue(Any?)](nsaccessibilityprotocol/setaccessibilitywarningvalue(_:).md)
+- [func setAccessibilityWarningValue(Any?)](./nsaccessibilityprotocol/setaccessibilitywarningvalue%28_%29.md)
   Sets the warning value for the level indicator.
-- [enum NSAccessibilityOrientation](nsaccessibilityorientation.md)
+- [enum NSAccessibilityOrientation](./nsaccessibilityorientation.md)
   Values that indicate the orientation of accessibility elements, such as scroll bars and split views.
 ### Determining relationships
-- [func accessibilityChildren() -> [Any]?](nsaccessibilityprotocol/accessibilitychildren.md)
+- [func accessibilityChildren() -> [Any]?](./nsaccessibilityprotocol/accessibilitychildren%28%29.md)
   Returns the child accessibility elements in the accessibility hierarchy.
-- [func setAccessibilityChildren([Any]?)](nsaccessibilityprotocol/setaccessibilitychildren(_:).md)
+- [func setAccessibilityChildren([Any]?)](./nsaccessibilityprotocol/setaccessibilitychildren%28_%29.md)
   Sets the child accessibility elements in the accessibility hierarchy.
-- [func accessibilityChildrenInNavigationOrder() -> [any NSAccessibilityElementProtocol]?](nsaccessibilityprotocol/accessibilitychildreninnavigationorder.md)
+- [func accessibilityChildrenInNavigationOrder() -> [any NSAccessibilityElementProtocol]?](./nsaccessibilityprotocol/accessibilitychildreninnavigationorder%28%29.md)
   Returns the array of child accessibility elements in order for linear navigation.
-- [func setAccessibilityChildrenInNavigationOrder([any NSAccessibilityElementProtocol]?)](nsaccessibilityprotocol/setaccessibilitychildreninnavigationorder(_:).md)
+- [func setAccessibilityChildrenInNavigationOrder([any NSAccessibilityElementProtocol]?)](./nsaccessibilityprotocol/setaccessibilitychildreninnavigationorder%28_%29.md)
   Sets the array of child accessibility elements in order for linear navigation.
-- [func accessibilityParent() -> Any?](nsaccessibilityprotocol/accessibilityparent.md)
+- [func accessibilityParent() -> Any?](./nsaccessibilityprotocol/accessibilityparent%28%29.md)
   Returns the accessibility element’s parent in the accessibility hierarchy.
-- [func setAccessibilityParent(Any?)](nsaccessibilityprotocol/setaccessibilityparent(_:).md)
+- [func setAccessibilityParent(Any?)](./nsaccessibilityprotocol/setaccessibilityparent%28_%29.md)
   Sets the accessibility element’s parent in the accessibility hierarchy.
-- [func accessibilitySelectedChildren() -> [Any]?](nsaccessibilityprotocol/accessibilityselectedchildren.md)
+- [func accessibilitySelectedChildren() -> [Any]?](./nsaccessibilityprotocol/accessibilityselectedchildren%28%29.md)
   Returns the accessibility element’s currently selected children.
-- [func setAccessibilitySelectedChildren([Any]?)](nsaccessibilityprotocol/setaccessibilityselectedchildren(_:).md)
+- [func setAccessibilitySelectedChildren([Any]?)](./nsaccessibilityprotocol/setaccessibilityselectedchildren%28_%29.md)
   Sets the accessibility element’s currently selected children.
-- [func accessibilityTopLevelUIElement() -> Any?](nsaccessibilityprotocol/accessibilitytopleveluielement.md)
+- [func accessibilityTopLevelUIElement() -> Any?](./nsaccessibilityprotocol/accessibilitytopleveluielement%28%29.md)
   Returns the top-level element that contains the accessibility element.
-- [func setAccessibilityTopLevelUIElement(Any?)](nsaccessibilityprotocol/setaccessibilitytopleveluielement(_:).md)
+- [func setAccessibilityTopLevelUIElement(Any?)](./nsaccessibilityprotocol/setaccessibilitytopleveluielement%28_%29.md)
   Sets the top-level element that contains the accessibility element.
-- [func accessibilityVisibleChildren() -> [Any]?](nsaccessibilityprotocol/accessibilityvisiblechildren.md)
+- [func accessibilityVisibleChildren() -> [Any]?](./nsaccessibilityprotocol/accessibilityvisiblechildren%28%29.md)
   Returns the accessibility element’s visible child accessibility elements.
-- [func setAccessibilityVisibleChildren([Any]?)](nsaccessibilityprotocol/setaccessibilityvisiblechildren(_:).md)
+- [func setAccessibilityVisibleChildren([Any]?)](./nsaccessibilityprotocol/setaccessibilityvisiblechildren%28_%29.md)
   Sets the accessibility element’s visible child accessibility elements.
 ### Setting the focus
-- [func accessibilityApplicationFocusedUIElement() -> Any?](nsaccessibilityprotocol/accessibilityapplicationfocuseduielement.md)
+- [func accessibilityApplicationFocusedUIElement() -> Any?](./nsaccessibilityprotocol/accessibilityapplicationfocuseduielement%28%29.md)
   Returns the child accessibility element with the current focus.
-- [func setAccessibilityApplicationFocusedUIElement(Any?)](nsaccessibilityprotocol/setaccessibilityapplicationfocuseduielement(_:).md)
+- [func setAccessibilityApplicationFocusedUIElement(Any?)](./nsaccessibilityprotocol/setaccessibilityapplicationfocuseduielement%28_%29.md)
   Sets the child accessibility element with the current focus.
-- [func isAccessibilityFocused() -> Bool](nsaccessibilityprotocol/isaccessibilityfocused.md)
+- [func isAccessibilityFocused() -> Bool](./nsaccessibilityprotocol/isaccessibilityfocused%28%29.md)
   Returns a Boolean value that determines whether the accessibility element has the keyboard focus.
-- [func setAccessibilityFocused(Bool)](nsaccessibilityprotocol/setaccessibilityfocused(_:).md)
+- [func setAccessibilityFocused(Bool)](./nsaccessibilityprotocol/setaccessibilityfocused%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element has the keyboard focus.
-- [func accessibilityFocusedWindow() -> Any?](nsaccessibilityprotocol/accessibilityfocusedwindow.md)
+- [func accessibilityFocusedWindow() -> Any?](./nsaccessibilityprotocol/accessibilityfocusedwindow%28%29.md)
   Returns the child window with the current focus.
-- [func setAccessibilityFocusedWindow(Any?)](nsaccessibilityprotocol/setaccessibilityfocusedwindow(_:).md)
+- [func setAccessibilityFocusedWindow(Any?)](./nsaccessibilityprotocol/setaccessibilityfocusedwindow%28_%29.md)
   Sets the child window with the current focus.
-- [func accessibilitySharedFocusElements() -> [Any]?](nsaccessibilityprotocol/accessibilitysharedfocuselements.md)
+- [func accessibilitySharedFocusElements() -> [Any]?](./nsaccessibilityprotocol/accessibilitysharedfocuselements%28%29.md)
   Returns the array of elements that shares the keyboard focus with the accessibility element.
-- [func setAccessibilitySharedFocusElements([Any]?)](nsaccessibilityprotocol/setaccessibilitysharedfocuselements(_:).md)
+- [func setAccessibilitySharedFocusElements([Any]?)](./nsaccessibilityprotocol/setaccessibilitysharedfocuselements%28_%29.md)
   Sets the array of elements that shares the keyboard focus with the accessibility element.
 ### Assigning roles
-- [func isAccessibilityRequired() -> Bool](nsaccessibilityprotocol/isaccessibilityrequired.md)
+- [func isAccessibilityRequired() -> Bool](./nsaccessibilityprotocol/isaccessibilityrequired%28%29.md)
   Returns a Boolean value that determines whether the accessibility element must have content for successful submission of a form.
-- [func setAccessibilityRequired(Bool)](nsaccessibilityprotocol/setaccessibilityrequired(_:).md)
+- [func setAccessibilityRequired(Bool)](./nsaccessibilityprotocol/setaccessibilityrequired%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element must have content for successful submission of a form.
-- [func accessibilityRole() -> NSAccessibility.Role?](nsaccessibilityprotocol/accessibilityrole.md)
+- [func accessibilityRole() -> NSAccessibility.Role?](./nsaccessibilityprotocol/accessibilityrole%28%29.md)
   Returns the type of interface element that the accessibility element represents.
-- [func setAccessibilityRole(NSAccessibility.Role?)](nsaccessibilityprotocol/setaccessibilityrole(_:).md)
+- [func setAccessibilityRole(NSAccessibility.Role?)](./nsaccessibilityprotocol/setaccessibilityrole%28_%29.md)
   Sets the type of interface element that the accessibility element represents.
-- [func accessibilityRoleDescription() -> String?](nsaccessibilityprotocol/accessibilityroledescription.md)
+- [func accessibilityRoleDescription() -> String?](./nsaccessibilityprotocol/accessibilityroledescription%28%29.md)
   Returns a localized, human-intelligible description of the accessibility element’s role, such as *radio button*.
-- [func setAccessibilityRoleDescription(String?)](nsaccessibilityprotocol/setaccessibilityroledescription(_:).md)
+- [func setAccessibilityRoleDescription(String?)](./nsaccessibilityprotocol/setaccessibilityroledescription%28_%29.md)
   Sets the localized, human-intelligible description of the accessibility element’s role, such as *radio button*.
-- [func accessibilitySubrole() -> NSAccessibility.Subrole?](nsaccessibilityprotocol/accessibilitysubrole.md)
+- [func accessibilitySubrole() -> NSAccessibility.Subrole?](./nsaccessibilityprotocol/accessibilitysubrole%28%29.md)
   Returns the specialized interface element type that the accessibility element represents.
-- [func setAccessibilitySubrole(NSAccessibility.Subrole?)](nsaccessibilityprotocol/setaccessibilitysubrole(_:).md)
+- [func setAccessibilitySubrole(NSAccessibility.Subrole?)](./nsaccessibilityprotocol/setaccessibilitysubrole%28_%29.md)
   Sets the specialized interface element type that the accessibility element represents.
-- [NSAccessibility.Role](nsaccessibility-swift.struct/role.md)
+- [NSAccessibility.Role](./nsaccessibility-swift.struct/role.md)
   Values that describe types of objects that accessibility elements represent.
-- [NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole.md)
+- [NSAccessibility.Subrole](./nsaccessibility-swift.struct/subrole.md)
   Values that describe specialized object subtypes that accessibility elements represent.
 ### Assigning actions
-- [func accessibilityCustomActions() -> [NSAccessibilityCustomAction]?](nsaccessibilityprotocol/accessibilitycustomactions.md)
+- [func accessibilityCustomActions() -> [NSAccessibilityCustomAction]?](./nsaccessibilityprotocol/accessibilitycustomactions%28%29.md)
   Returns the custom actions of the current accessibility element.
-- [func setAccessibilityCustomActions([NSAccessibilityCustomAction]?)](nsaccessibilityprotocol/setaccessibilitycustomactions(_:).md)
+- [func setAccessibilityCustomActions([NSAccessibilityCustomAction]?)](./nsaccessibilityprotocol/setaccessibilitycustomactions%28_%29.md)
   Sets the custom actions of the current accessibility element.
-- [class NSAccessibilityCustomAction](nsaccessibilitycustomaction.md)
+- [class NSAccessibilityCustomAction](./nsaccessibilitycustomaction.md)
   A custom action to perform on an accessible object.
 ### Assigning rotors
-- [func accessibilityCustomRotors() -> [NSAccessibilityCustomRotor]](nsaccessibilityprotocol/accessibilitycustomrotors.md)
+- [func accessibilityCustomRotors() -> [NSAccessibilityCustomRotor]](./nsaccessibilityprotocol/accessibilitycustomrotors%28%29.md)
   Returns the custom rotors of the current accessibility element.
-- [func setAccessibilityCustomRotors([NSAccessibilityCustomRotor])](nsaccessibilityprotocol/setaccessibilitycustomrotors(_:).md)
+- [func setAccessibilityCustomRotors([NSAccessibilityCustomRotor])](./nsaccessibilityprotocol/setaccessibilitycustomrotors%28_%29.md)
   Sets the custom rotors of the current accessibility element.
-- [class NSAccessibilityCustomRotor](nsaccessibilitycustomrotor.md)
+- [class NSAccessibilityCustomRotor](./nsaccessibilitycustomrotor.md)
   A context-sensitive function that helps VoiceOver users find the next instance of a related accessibility element.
 ### Configuring text elements
-- [func accessibilityInsertionPointLineNumber() -> Int](nsaccessibilityprotocol/accessibilityinsertionpointlinenumber.md)
+- [func accessibilityInsertionPointLineNumber() -> Int](./nsaccessibilityprotocol/accessibilityinsertionpointlinenumber%28%29.md)
   Returns the line number that contains the insertion point.
-- [func setAccessibilityInsertionPointLineNumber(Int)](nsaccessibilityprotocol/setaccessibilityinsertionpointlinenumber(_:).md)
+- [func setAccessibilityInsertionPointLineNumber(Int)](./nsaccessibilityprotocol/setaccessibilityinsertionpointlinenumber%28_%29.md)
   Sets the line number that contains the insertion point.
-- [func accessibilityNumberOfCharacters() -> Int](nsaccessibilityprotocol/accessibilitynumberofcharacters.md)
+- [func accessibilityNumberOfCharacters() -> Int](./nsaccessibilityprotocol/accessibilitynumberofcharacters%28%29.md)
   Returns the number of characters in the text.
-- [func setAccessibilityNumberOfCharacters(Int)](nsaccessibilityprotocol/setaccessibilitynumberofcharacters(_:).md)
+- [func setAccessibilityNumberOfCharacters(Int)](./nsaccessibilityprotocol/setaccessibilitynumberofcharacters%28_%29.md)
   Sets the number of characters in the text.
-- [func accessibilityPlaceholderValue() -> String?](nsaccessibilityprotocol/accessibilityplaceholdervalue.md)
+- [func accessibilityPlaceholderValue() -> String?](./nsaccessibilityprotocol/accessibilityplaceholdervalue%28%29.md)
   Returns the placeholder value for the accessibility element.
-- [func setAccessibilityPlaceholderValue(String?)](nsaccessibilityprotocol/setaccessibilityplaceholdervalue(_:).md)
+- [func setAccessibilityPlaceholderValue(String?)](./nsaccessibilityprotocol/setaccessibilityplaceholdervalue%28_%29.md)
   Sets the placeholder value for the accessibility element.
-- [func accessibilitySelectedText() -> String?](nsaccessibilityprotocol/accessibilityselectedtext.md)
+- [func accessibilitySelectedText() -> String?](./nsaccessibilityprotocol/accessibilityselectedtext%28%29.md)
   Returns the currently selected text.
-- [func setAccessibilitySelectedText(String?)](nsaccessibilityprotocol/setaccessibilityselectedtext(_:).md)
+- [func setAccessibilitySelectedText(String?)](./nsaccessibilityprotocol/setaccessibilityselectedtext%28_%29.md)
   Sets the currently selected text.
-- [func accessibilitySelectedTextRange() -> NSRange](nsaccessibilityprotocol/accessibilityselectedtextrange.md)
+- [func accessibilitySelectedTextRange() -> NSRange](./nsaccessibilityprotocol/accessibilityselectedtextrange%28%29.md)
   Returns the range of the currently selected text.
-- [func setAccessibilitySelectedTextRange(NSRange)](nsaccessibilityprotocol/setaccessibilityselectedtextrange(_:).md)
+- [func setAccessibilitySelectedTextRange(NSRange)](./nsaccessibilityprotocol/setaccessibilityselectedtextrange%28_%29.md)
   Sets the range of the currently selected text.
-- [func accessibilitySelectedTextRanges() -> [NSValue]?](nsaccessibilityprotocol/accessibilityselectedtextranges.md)
+- [func accessibilitySelectedTextRanges() -> [NSValue]?](./nsaccessibilityprotocol/accessibilityselectedtextranges%28%29.md)
   Returns an array of ranges for the currently selected text.
-- [func setAccessibilitySelectedTextRanges([NSValue]?)](nsaccessibilityprotocol/setaccessibilityselectedtextranges(_:).md)
+- [func setAccessibilitySelectedTextRanges([NSValue]?)](./nsaccessibilityprotocol/setaccessibilityselectedtextranges%28_%29.md)
   Sets an array of ranges for the currently selected text.
-- [func accessibilitySharedCharacterRange() -> NSRange](nsaccessibilityprotocol/accessibilitysharedcharacterrange.md)
+- [func accessibilitySharedCharacterRange() -> NSRange](./nsaccessibilityprotocol/accessibilitysharedcharacterrange%28%29.md)
   Returns the range of characters that the accessibility element displays.
-- [func setAccessibilitySharedCharacterRange(NSRange)](nsaccessibilityprotocol/setaccessibilitysharedcharacterrange(_:).md)
+- [func setAccessibilitySharedCharacterRange(NSRange)](./nsaccessibilityprotocol/setaccessibilitysharedcharacterrange%28_%29.md)
   Sets the range of characters that the accessibility element displays.
-- [func accessibilitySharedTextUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitysharedtextuielements.md)
+- [func accessibilitySharedTextUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilitysharedtextuielements%28%29.md)
   Returns the other elements that share text with the accessibility element.
-- [func setAccessibilitySharedTextUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitysharedtextuielements(_:).md)
+- [func setAccessibilitySharedTextUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilitysharedtextuielements%28_%29.md)
   Sets the other elements that share text with the accessibility element.
-- [func accessibilityVisibleCharacterRange() -> NSRange](nsaccessibilityprotocol/accessibilityvisiblecharacterrange.md)
+- [func accessibilityVisibleCharacterRange() -> NSRange](./nsaccessibilityprotocol/accessibilityvisiblecharacterrange%28%29.md)
   Returns the range of visible characters in the document.
-- [func setAccessibilityVisibleCharacterRange(NSRange)](nsaccessibilityprotocol/setaccessibilityvisiblecharacterrange(_:).md)
+- [func setAccessibilityVisibleCharacterRange(NSRange)](./nsaccessibilityprotocol/setaccessibilityvisiblecharacterrange%28_%29.md)
   Sets the range of visible characters in the document.
-- [func accessibilityString(for: NSRange) -> String?](nsaccessibilityprotocol/accessibilitystring(for:).md)
+- [func accessibilityString(for: NSRange) -> String?](./nsaccessibilityprotocol/accessibilitystring%28for%29.md)
   Returns the substring for the specified range.
-- [func accessibilityAttributedString(for: NSRange) -> NSAttributedString?](nsaccessibilityprotocol/accessibilityattributedstring(for:).md)
+- [func accessibilityAttributedString(for: NSRange) -> NSAttributedString?](./nsaccessibilityprotocol/accessibilityattributedstring%28for%29.md)
   Returns the attributed substring for the specified range of characters.
-- [func accessibilityRTF(for: NSRange) -> Data?](nsaccessibilityprotocol/accessibilityrtf(for:).md)
+- [func accessibilityRTF(for: NSRange) -> Data?](./nsaccessibilityprotocol/accessibilityrtf%28for%29.md)
   Returns the rich text format (RTF) data that describes the specified range of characters.
-- [func accessibilityFrame(for: NSRange) -> NSRect](nsaccessibilityprotocol/accessibilityframe(for:).md)
+- [func accessibilityFrame(for: NSRange) -> NSRect](./nsaccessibilityprotocol/accessibilityframe%28for%29.md)
   Returns the rectangle that encloses the specified range of characters.
-- [func accessibilityLine(for: Int) -> Int](nsaccessibilityprotocol/accessibilityline(for:).md)
+- [func accessibilityLine(for: Int) -> Int](./nsaccessibilityprotocol/accessibilityline%28for%29.md)
   Returns the line number for the line that contains the specified character index.
-- [func accessibilityRange(for: Int) -> NSRange](nsaccessibilityprotocol/accessibilityrange(for:)-6kv3.md)
+- [func accessibilityRange(for: Int) -> NSRange](./nsaccessibilityprotocol/accessibilityrange%28for%29-6kv3.md)
   Returns the range of characters for the glyph that includes the specified character.
-- [func accessibilityStyleRange(for: Int) -> NSRange](nsaccessibilityprotocol/accessibilitystylerange(for:).md)
+- [func accessibilityStyleRange(for: Int) -> NSRange](./nsaccessibilityprotocol/accessibilitystylerange%28for%29.md)
   Returns a range of characters that all have the same style as the specified character.
-- [func accessibilityRange(forLine: Int) -> NSRange](nsaccessibilityprotocol/accessibilityrange(forline:).md)
+- [func accessibilityRange(forLine: Int) -> NSRange](./nsaccessibilityprotocol/accessibilityrange%28forline%29.md)
   Returns the range of characters in the specified line.
-- [func accessibilityRange(for: NSPoint) -> NSRange](nsaccessibilityprotocol/accessibilityrange(for:)-1iudm.md)
+- [func accessibilityRange(for: NSPoint) -> NSRange](./nsaccessibilityprotocol/accessibilityrange%28for%29-1iudm.md)
   Returns the range of characters for the glyph at the specified point.
 ### Configuring windows
-- [func accessibilityActivationPoint() -> NSPoint](nsaccessibilityprotocol/accessibilityactivationpoint.md)
+- [func accessibilityActivationPoint() -> NSPoint](./nsaccessibilityprotocol/accessibilityactivationpoint%28%29.md)
   Returns the activation point for the user interface element.
-- [func setAccessibilityActivationPoint(NSPoint)](nsaccessibilityprotocol/setaccessibilityactivationpoint(_:).md)
+- [func setAccessibilityActivationPoint(NSPoint)](./nsaccessibilityprotocol/setaccessibilityactivationpoint%28_%29.md)
   Sets the activation point for the user interface element.
-- [func isAccessibilityAlternateUIVisible() -> Bool](nsaccessibilityprotocol/isaccessibilityalternateuivisible.md)
+- [func isAccessibilityAlternateUIVisible() -> Bool](./nsaccessibilityprotocol/isaccessibilityalternateuivisible%28%29.md)
   Returns the Boolean value that determines whether the accessibility element’s alternative UI is currently visible.
-- [func setAccessibilityAlternateUIVisible(Bool)](nsaccessibilityprotocol/setaccessibilityalternateuivisible(_:).md)
+- [func setAccessibilityAlternateUIVisible(Bool)](./nsaccessibilityprotocol/setaccessibilityalternateuivisible%28_%29.md)
   Sets the Boolean value that determines whether the accessibility element’s alternative UI is currently visible.
-- [func accessibilityCancelButton() -> Any?](nsaccessibilityprotocol/accessibilitycancelbutton.md)
+- [func accessibilityCancelButton() -> Any?](./nsaccessibilityprotocol/accessibilitycancelbutton%28%29.md)
   Returns the child accessibility element that represents the window’s cancel button.
-- [func setAccessibilityCancelButton(Any?)](nsaccessibilityprotocol/setaccessibilitycancelbutton(_:).md)
+- [func setAccessibilityCancelButton(Any?)](./nsaccessibilityprotocol/setaccessibilitycancelbutton%28_%29.md)
   Sets the child accessibility element that represents the window’s cancel button.
-- [func accessibilityCloseButton() -> Any?](nsaccessibilityprotocol/accessibilityclosebutton.md)
+- [func accessibilityCloseButton() -> Any?](./nsaccessibilityprotocol/accessibilityclosebutton%28%29.md)
   Returns the child accessibility element that represents the window’s close button.
-- [func setAccessibilityCloseButton(Any?)](nsaccessibilityprotocol/setaccessibilityclosebutton(_:).md)
+- [func setAccessibilityCloseButton(Any?)](./nsaccessibilityprotocol/setaccessibilityclosebutton%28_%29.md)
   Sets the child accessibility element that represents the window’s close button.
-- [func accessibilityDefaultButton() -> Any?](nsaccessibilityprotocol/accessibilitydefaultbutton.md)
+- [func accessibilityDefaultButton() -> Any?](./nsaccessibilityprotocol/accessibilitydefaultbutton%28%29.md)
   Returns the child accessibility element that represents the window’s default button.
-- [func setAccessibilityDefaultButton(Any?)](nsaccessibilityprotocol/setaccessibilitydefaultbutton(_:).md)
+- [func setAccessibilityDefaultButton(Any?)](./nsaccessibilityprotocol/setaccessibilitydefaultbutton%28_%29.md)
   Sets the child accessibility element that represents the window’s default button.
-- [func accessibilityFullScreenButton() -> Any?](nsaccessibilityprotocol/accessibilityfullscreenbutton.md)
+- [func accessibilityFullScreenButton() -> Any?](./nsaccessibilityprotocol/accessibilityfullscreenbutton%28%29.md)
   Returns the child accessibility element that represents the window’s full-screen button.
-- [func setAccessibilityFullScreenButton(Any?)](nsaccessibilityprotocol/setaccessibilityfullscreenbutton(_:).md)
+- [func setAccessibilityFullScreenButton(Any?)](./nsaccessibilityprotocol/setaccessibilityfullscreenbutton%28_%29.md)
   Sets the child accessibility element that represents the window’s full-screen button.
-- [func accessibilityGrowArea() -> Any?](nsaccessibilityprotocol/accessibilitygrowarea.md)
+- [func accessibilityGrowArea() -> Any?](./nsaccessibilityprotocol/accessibilitygrowarea%28%29.md)
   Returns the child accessibility element that represents the window’s grow area.
-- [func setAccessibilityGrowArea(Any?)](nsaccessibilityprotocol/setaccessibilitygrowarea(_:).md)
+- [func setAccessibilityGrowArea(Any?)](./nsaccessibilityprotocol/setaccessibilitygrowarea%28_%29.md)
   Sets the child accessibility element that represents the window’s grow area.
-- [func isAccessibilityMain() -> Bool](nsaccessibilityprotocol/isaccessibilitymain.md)
+- [func isAccessibilityMain() -> Bool](./nsaccessibilityprotocol/isaccessibilitymain%28%29.md)
   Returns a Boolean value that determines whether the window is the app’s main window.
-- [func setAccessibilityMain(Bool)](nsaccessibilityprotocol/setaccessibilitymain(_:).md)
+- [func setAccessibilityMain(Bool)](./nsaccessibilityprotocol/setaccessibilitymain%28_%29.md)
   Sets a Boolean value that determines whether the window is the app’s main window.
-- [func accessibilityMinimizeButton() -> Any?](nsaccessibilityprotocol/accessibilityminimizebutton.md)
+- [func accessibilityMinimizeButton() -> Any?](./nsaccessibilityprotocol/accessibilityminimizebutton%28%29.md)
   Returns the child accessibility element that represents the window’s minimize button.
-- [func setAccessibilityMinimizeButton(Any?)](nsaccessibilityprotocol/setaccessibilityminimizebutton(_:).md)
+- [func setAccessibilityMinimizeButton(Any?)](./nsaccessibilityprotocol/setaccessibilityminimizebutton%28_%29.md)
   Sets the child accessibility element that represents the window’s minimize button.
-- [func isAccessibilityMinimized() -> Bool](nsaccessibilityprotocol/isaccessibilityminimized.md)
+- [func isAccessibilityMinimized() -> Bool](./nsaccessibilityprotocol/isaccessibilityminimized%28%29.md)
   Returns the Boolean value that determines whether the window is in a minimized state.
-- [func setAccessibilityMinimized(Bool)](nsaccessibilityprotocol/setaccessibilityminimized(_:).md)
+- [func setAccessibilityMinimized(Bool)](./nsaccessibilityprotocol/setaccessibilityminimized%28_%29.md)
   Sets the Boolean value that determines whether the window is in a minimized state.
-- [func isAccessibilityModal() -> Bool](nsaccessibilityprotocol/isaccessibilitymodal.md)
+- [func isAccessibilityModal() -> Bool](./nsaccessibilityprotocol/isaccessibilitymodal%28%29.md)
   Returns a Boolean value that determines whether the window is modal.
-- [func setAccessibilityModal(Bool)](nsaccessibilityprotocol/setaccessibilitymodal(_:).md)
+- [func setAccessibilityModal(Bool)](./nsaccessibilityprotocol/setaccessibilitymodal%28_%29.md)
   Sets a Boolean value that determines whether the window is modal.
-- [func accessibilityProxy() -> Any?](nsaccessibilityprotocol/accessibilityproxy.md)
+- [func accessibilityProxy() -> Any?](./nsaccessibilityprotocol/accessibilityproxy%28%29.md)
   Returns the child accessibility element that represents the window’s proxy icon.
-- [func setAccessibilityProxy(Any?)](nsaccessibilityprotocol/setaccessibilityproxy(_:).md)
+- [func setAccessibilityProxy(Any?)](./nsaccessibilityprotocol/setaccessibilityproxy%28_%29.md)
   Sets the child accessibility element that represents the window’s proxy icon.
-- [func accessibilityShownMenu() -> Any?](nsaccessibilityprotocol/accessibilityshownmenu.md)
+- [func accessibilityShownMenu() -> Any?](./nsaccessibilityprotocol/accessibilityshownmenu%28%29.md)
   Returns the menu currently displaying for the accessibility element.
-- [func setAccessibilityShownMenu(Any?)](nsaccessibilityprotocol/setaccessibilityshownmenu(_:).md)
+- [func setAccessibilityShownMenu(Any?)](./nsaccessibilityprotocol/setaccessibilityshownmenu%28_%29.md)
   Sets the menu currently displaying for the accessibility element.
-- [func accessibilityToolbarButton() -> Any?](nsaccessibilityprotocol/accessibilitytoolbarbutton.md)
+- [func accessibilityToolbarButton() -> Any?](./nsaccessibilityprotocol/accessibilitytoolbarbutton%28%29.md)
   Returns the child accessibility element that represents the window’s toolbar button.
-- [func setAccessibilityToolbarButton(Any?)](nsaccessibilityprotocol/setaccessibilitytoolbarbutton(_:).md)
+- [func setAccessibilityToolbarButton(Any?)](./nsaccessibilityprotocol/setaccessibilitytoolbarbutton%28_%29.md)
   Sets the child accessibility element that represents the window’s toolbar button.
-- [func accessibilityWindow() -> Any?](nsaccessibilityprotocol/accessibilitywindow.md)
+- [func accessibilityWindow() -> Any?](./nsaccessibilityprotocol/accessibilitywindow%28%29.md)
   Returns the window that contains the accessibility element.
-- [func setAccessibilityWindow(Any?)](nsaccessibilityprotocol/setaccessibilitywindow(_:).md)
+- [func setAccessibilityWindow(Any?)](./nsaccessibilityprotocol/setaccessibilitywindow%28_%29.md)
   Sets the window that contains the accessibility element.
-- [func accessibilityZoomButton() -> Any?](nsaccessibilityprotocol/accessibilityzoombutton.md)
+- [func accessibilityZoomButton() -> Any?](./nsaccessibilityprotocol/accessibilityzoombutton%28%29.md)
   Returns the child accessibility element that represents the window’s zoom button.
-- [func setAccessibilityZoomButton(Any?)](nsaccessibilityprotocol/setaccessibilityzoombutton(_:).md)
+- [func setAccessibilityZoomButton(Any?)](./nsaccessibilityprotocol/setaccessibilityzoombutton%28_%29.md)
   Sets the child accessibility element that represents the window’s zoom button.
 ### Managing apps
-- [func accessibilityExtrasMenuBar() -> Any?](nsaccessibilityprotocol/accessibilityextrasmenubar.md)
+- [func accessibilityExtrasMenuBar() -> Any?](./nsaccessibilityprotocol/accessibilityextrasmenubar%28%29.md)
   Returns the icon for the app’s menu bar extra.
-- [func setAccessibilityExtrasMenuBar(Any?)](nsaccessibilityprotocol/setaccessibilityextrasmenubar(_:).md)
+- [func setAccessibilityExtrasMenuBar(Any?)](./nsaccessibilityprotocol/setaccessibilityextrasmenubar%28_%29.md)
   Sets the icon for the app’s menu bar extra.
-- [func isAccessibilityFrontmost() -> Bool](nsaccessibilityprotocol/isaccessibilityfrontmost.md)
+- [func isAccessibilityFrontmost() -> Bool](./nsaccessibilityprotocol/isaccessibilityfrontmost%28%29.md)
   Returns a Boolean value that determines whether the app is the frontmost app.
-- [func setAccessibilityFrontmost(Bool)](nsaccessibilityprotocol/setaccessibilityfrontmost(_:).md)
+- [func setAccessibilityFrontmost(Bool)](./nsaccessibilityprotocol/setaccessibilityfrontmost%28_%29.md)
   Sets a Boolean value that determines whether the app is the frontmost app.
-- [func isAccessibilityHidden() -> Bool](nsaccessibilityprotocol/isaccessibilityhidden.md)
+- [func isAccessibilityHidden() -> Bool](./nsaccessibilityprotocol/isaccessibilityhidden%28%29.md)
   Returns a Boolean value that determines whether the app is in a hidden state.
-- [func setAccessibilityHidden(Bool)](nsaccessibilityprotocol/setaccessibilityhidden(_:).md)
+- [func setAccessibilityHidden(Bool)](./nsaccessibilityprotocol/setaccessibilityhidden%28_%29.md)
   Sets a Boolean value that determines whether the app is in a hidden state.
-- [func accessibilityMainWindow() -> Any?](nsaccessibilityprotocol/accessibilitymainwindow.md)
+- [func accessibilityMainWindow() -> Any?](./nsaccessibilityprotocol/accessibilitymainwindow%28%29.md)
   Returns the app’s main window.
-- [func setAccessibilityMainWindow(Any?)](nsaccessibilityprotocol/setaccessibilitymainwindow(_:).md)
+- [func setAccessibilityMainWindow(Any?)](./nsaccessibilityprotocol/setaccessibilitymainwindow%28_%29.md)
   Sets the app’s main window.
-- [func accessibilityMenuBar() -> Any?](nsaccessibilityprotocol/accessibilitymenubar.md)
+- [func accessibilityMenuBar() -> Any?](./nsaccessibilityprotocol/accessibilitymenubar%28%29.md)
   Returns the app’s menu bar.
-- [func setAccessibilityMenuBar(Any?)](nsaccessibilityprotocol/setaccessibilitymenubar(_:).md)
+- [func setAccessibilityMenuBar(Any?)](./nsaccessibilityprotocol/setaccessibilitymenubar%28_%29.md)
   Sets the app’s menu bar.
-- [func accessibilityWindows() -> [Any]?](nsaccessibilityprotocol/accessibilitywindows.md)
+- [func accessibilityWindows() -> [Any]?](./nsaccessibilityprotocol/accessibilitywindows%28%29.md)
   Returns an array that contains all the app’s windows.
-- [func setAccessibilityWindows([Any]?)](nsaccessibilityprotocol/setaccessibilitywindows(_:).md)
+- [func setAccessibilityWindows([Any]?)](./nsaccessibilityprotocol/setaccessibilitywindows%28_%29.md)
   Sets the array that contains all the app’s windows.
 ### Configuring grid views
-- [func accessibilityColumnCount() -> Int](nsaccessibilityprotocol/accessibilitycolumncount.md)
+- [func accessibilityColumnCount() -> Int](./nsaccessibilityprotocol/accessibilitycolumncount%28%29.md)
   Returns the number of columns in the accessibility element’s grid.
-- [func setAccessibilityColumnCount(Int)](nsaccessibilityprotocol/setaccessibilitycolumncount(_:).md)
+- [func setAccessibilityColumnCount(Int)](./nsaccessibilityprotocol/setaccessibilitycolumncount%28_%29.md)
   Sets the number of columns in the accessibility element’s grid.
-- [func isAccessibilityOrderedByRow() -> Bool](nsaccessibilityprotocol/isaccessibilityorderedbyrow.md)
+- [func isAccessibilityOrderedByRow() -> Bool](./nsaccessibilityprotocol/isaccessibilityorderedbyrow%28%29.md)
   Returns a Boolean value that determines whether the accessibility element’s grid is in row major order or in column major order.
-- [func setAccessibilityOrderedByRow(Bool)](nsaccessibilityprotocol/setaccessibilityorderedbyrow(_:).md)
+- [func setAccessibilityOrderedByRow(Bool)](./nsaccessibilityprotocol/setaccessibilityorderedbyrow%28_%29.md)
   Sets a Boolean value that determines whether the element’s grid is in row major order or in column major order.
-- [func accessibilityRowCount() -> Int](nsaccessibilityprotocol/accessibilityrowcount.md)
+- [func accessibilityRowCount() -> Int](./nsaccessibilityprotocol/accessibilityrowcount%28%29.md)
   Returns the number of rows in the accessibility element’s grid.
-- [func setAccessibilityRowCount(Int)](nsaccessibilityprotocol/setaccessibilityrowcount(_:).md)
+- [func setAccessibilityRowCount(Int)](./nsaccessibilityprotocol/setaccessibilityrowcount%28_%29.md)
   Sets the number of rows in the accessibility element’s grid.
 ### Configuring scroll views
-- [func accessibilityHorizontalScrollBar() -> Any?](nsaccessibilityprotocol/accessibilityhorizontalscrollbar.md)
+- [func accessibilityHorizontalScrollBar() -> Any?](./nsaccessibilityprotocol/accessibilityhorizontalscrollbar%28%29.md)
   Returns the horizontal scroll bar for the scroll view.
-- [func setAccessibilityHorizontalScrollBar(Any?)](nsaccessibilityprotocol/setaccessibilityhorizontalscrollbar(_:).md)
+- [func setAccessibilityHorizontalScrollBar(Any?)](./nsaccessibilityprotocol/setaccessibilityhorizontalscrollbar%28_%29.md)
   Sets the horizontal scroll bar for the scroll view.
-- [func accessibilityVerticalScrollBar() -> Any?](nsaccessibilityprotocol/accessibilityverticalscrollbar.md)
+- [func accessibilityVerticalScrollBar() -> Any?](./nsaccessibilityprotocol/accessibilityverticalscrollbar%28%29.md)
   Returns the vertical scroll bar for the scroll view.
-- [func setAccessibilityVerticalScrollBar(Any?)](nsaccessibilityprotocol/setaccessibilityverticalscrollbar(_:).md)
+- [func setAccessibilityVerticalScrollBar(Any?)](./nsaccessibilityprotocol/setaccessibilityverticalscrollbar%28_%29.md)
   Sets the vertical scroll bar for the scroll view.
 ### Configuring table and outline views
-- [func accessibilityColumnHeaderUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitycolumnheaderuielements.md)
+- [func accessibilityColumnHeaderUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilitycolumnheaderuielements%28%29.md)
   Returns the column header accessibility elements for the table or outline.
-- [func setAccessibilityColumnHeaderUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitycolumnheaderuielements(_:).md)
+- [func setAccessibilityColumnHeaderUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilitycolumnheaderuielements%28_%29.md)
   Sets the column header accessibility elements for the table or outline.
-- [func accessibilityColumns() -> [Any]?](nsaccessibilityprotocol/accessibilitycolumns.md)
+- [func accessibilityColumns() -> [Any]?](./nsaccessibilityprotocol/accessibilitycolumns%28%29.md)
   Returns the column accessibility elements for the table or outline.
-- [func setAccessibilityColumns([Any]?)](nsaccessibilityprotocol/setaccessibilitycolumns(_:).md)
+- [func setAccessibilityColumns([Any]?)](./nsaccessibilityprotocol/setaccessibilitycolumns%28_%29.md)
   Sets the column accessibility elements for the table or outline.
-- [func accessibilityColumnTitles() -> [Any]?](nsaccessibilityprotocol/accessibilitycolumntitles.md)
+- [func accessibilityColumnTitles() -> [Any]?](./nsaccessibilityprotocol/accessibilitycolumntitles%28%29.md)
   Returns the column titles for the accessibility element.
-- [func setAccessibilityColumnTitles([Any]?)](nsaccessibilityprotocol/setaccessibilitycolumntitles(_:).md)
+- [func setAccessibilityColumnTitles([Any]?)](./nsaccessibilityprotocol/setaccessibilitycolumntitles%28_%29.md)
   Sets the column titles for the accessibility element.
-- [func isAccessibilityExpanded() -> Bool](nsaccessibilityprotocol/isaccessibilityexpanded.md)
+- [func isAccessibilityExpanded() -> Bool](./nsaccessibilityprotocol/isaccessibilityexpanded%28%29.md)
   Returns a Boolean value that determines whether the accessibility element is in an expanded state.
-- [func setAccessibilityExpanded(Bool)](nsaccessibilityprotocol/setaccessibilityexpanded(_:).md)
+- [func setAccessibilityExpanded(Bool)](./nsaccessibilityprotocol/setaccessibilityexpanded%28_%29.md)
   Sets a Boolean value that determines whether accessibility element is in an expanded state.
-- [func accessibilityHeader() -> Any?](nsaccessibilityprotocol/accessibilityheader.md)
+- [func accessibilityHeader() -> Any?](./nsaccessibilityprotocol/accessibilityheader%28%29.md)
   Returns the header for the table view.
-- [func setAccessibilityHeader(Any?)](nsaccessibilityprotocol/setaccessibilityheader(_:).md)
+- [func setAccessibilityHeader(Any?)](./nsaccessibilityprotocol/setaccessibilityheader%28_%29.md)
   Sets the header for the table view.
-- [func accessibilityIndex() -> Int](nsaccessibilityprotocol/accessibilityindex.md)
+- [func accessibilityIndex() -> Int](./nsaccessibilityprotocol/accessibilityindex%28%29.md)
   Returns the index of the row or column that the accessibility element represents.
-- [func setAccessibilityIndex(Int)](nsaccessibilityprotocol/setaccessibilityindex(_:).md)
+- [func setAccessibilityIndex(Int)](./nsaccessibilityprotocol/setaccessibilityindex%28_%29.md)
   Sets the index of the row or column that the accessibility element represents.
-- [func accessibilityRowHeaderUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilityrowheaderuielements.md)
+- [func accessibilityRowHeaderUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilityrowheaderuielements%28%29.md)
   Returns the row header accessibility elements for the table or outline.
-- [func setAccessibilityRowHeaderUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilityrowheaderuielements(_:).md)
+- [func setAccessibilityRowHeaderUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilityrowheaderuielements%28_%29.md)
   Sets the row header accessibility elements for the table or outline.
-- [func accessibilityRows() -> [Any]?](nsaccessibilityprotocol/accessibilityrows.md)
+- [func accessibilityRows() -> [Any]?](./nsaccessibilityprotocol/accessibilityrows%28%29.md)
   Returns the row accessibility elements for the table or outline.
-- [func setAccessibilityRows([Any]?)](nsaccessibilityprotocol/setaccessibilityrows(_:).md)
+- [func setAccessibilityRows([Any]?)](./nsaccessibilityprotocol/setaccessibilityrows%28_%29.md)
   Sets the row accessibility elements for the table or outline.
-- [func accessibilitySelectedColumns() -> [Any]?](nsaccessibilityprotocol/accessibilityselectedcolumns.md)
+- [func accessibilitySelectedColumns() -> [Any]?](./nsaccessibilityprotocol/accessibilityselectedcolumns%28%29.md)
   Returns the currently selected columns for the table or outline.
-- [func setAccessibilitySelectedColumns([Any]?)](nsaccessibilityprotocol/setaccessibilityselectedcolumns(_:).md)
+- [func setAccessibilitySelectedColumns([Any]?)](./nsaccessibilityprotocol/setaccessibilityselectedcolumns%28_%29.md)
   Sets the currently selected columns for the table or outline.
-- [func accessibilitySelectedRows() -> [Any]?](nsaccessibilityprotocol/accessibilityselectedrows.md)
+- [func accessibilitySelectedRows() -> [Any]?](./nsaccessibilityprotocol/accessibilityselectedrows%28%29.md)
   Returns the currently selected rows for the table or outline.
-- [func setAccessibilitySelectedRows([Any]?)](nsaccessibilityprotocol/setaccessibilityselectedrows(_:).md)
+- [func setAccessibilitySelectedRows([Any]?)](./nsaccessibilityprotocol/setaccessibilityselectedrows%28_%29.md)
   Sets the currently selected rows for the table or outline.
-- [func accessibilitySortDirection() -> NSAccessibilitySortDirection](nsaccessibilityprotocol/accessibilitysortdirection.md)
+- [func accessibilitySortDirection() -> NSAccessibilitySortDirection](./nsaccessibilityprotocol/accessibilitysortdirection%28%29.md)
   Returns the accessibility element’s sort direction.
-- [func setAccessibilitySortDirection(NSAccessibilitySortDirection)](nsaccessibilityprotocol/setaccessibilitysortdirection(_:).md)
+- [func setAccessibilitySortDirection(NSAccessibilitySortDirection)](./nsaccessibilityprotocol/setaccessibilitysortdirection%28_%29.md)
   Sets the accessibility element’s sort direction.
-- [func accessibilityVisibleColumns() -> [Any]?](nsaccessibilityprotocol/accessibilityvisiblecolumns.md)
+- [func accessibilityVisibleColumns() -> [Any]?](./nsaccessibilityprotocol/accessibilityvisiblecolumns%28%29.md)
   Returns the visible columns for the table or outline.
-- [func setAccessibilityVisibleColumns([Any]?)](nsaccessibilityprotocol/setaccessibilityvisiblecolumns(_:).md)
+- [func setAccessibilityVisibleColumns([Any]?)](./nsaccessibilityprotocol/setaccessibilityvisiblecolumns%28_%29.md)
   Sets the visible columns for the table or outline.
-- [func accessibilityVisibleRows() -> [Any]?](nsaccessibilityprotocol/accessibilityvisiblerows.md)
+- [func accessibilityVisibleRows() -> [Any]?](./nsaccessibilityprotocol/accessibilityvisiblerows%28%29.md)
   Returns the visible rows for the table or outline.
-- [func setAccessibilityVisibleRows([Any]?)](nsaccessibilityprotocol/setaccessibilityvisiblerows(_:).md)
+- [func setAccessibilityVisibleRows([Any]?)](./nsaccessibilityprotocol/setaccessibilityvisiblerows%28_%29.md)
   Sets the visible rows for the table or outline.
-- [enum NSAccessibilitySortDirection](nsaccessibilitysortdirection.md)
+- [enum NSAccessibilitySortDirection](./nsaccessibilitysortdirection.md)
   Values that indicate the sort direction of a column.
 ### Configuring outline rows
-- [func isAccessibilityDisclosed() -> Bool](nsaccessibilityprotocol/isaccessibilitydisclosed.md)
+- [func isAccessibilityDisclosed() -> Bool](./nsaccessibilityprotocol/isaccessibilitydisclosed%28%29.md)
   Returns a Boolean value that determines whether the row is disclosing other rows.
-- [func setAccessibilityDisclosed(Bool)](nsaccessibilityprotocol/setaccessibilitydisclosed(_:).md)
+- [func setAccessibilityDisclosed(Bool)](./nsaccessibilityprotocol/setaccessibilitydisclosed%28_%29.md)
   Sets a Boolean value that determines whether the row is disclosing other rows.
-- [func accessibilityDisclosedByRow() -> Any?](nsaccessibilityprotocol/accessibilitydisclosedbyrow.md)
+- [func accessibilityDisclosedByRow() -> Any?](./nsaccessibilityprotocol/accessibilitydisclosedbyrow%28%29.md)
   Returns the row disclosing the current row.
-- [func setAccessibilityDisclosedByRow(Any?)](nsaccessibilityprotocol/setaccessibilitydisclosedbyrow(_:).md)
+- [func setAccessibilityDisclosedByRow(Any?)](./nsaccessibilityprotocol/setaccessibilitydisclosedbyrow%28_%29.md)
   Sets the row disclosing the current row.
-- [func accessibilityDisclosedRows() -> Any?](nsaccessibilityprotocol/accessibilitydisclosedrows.md)
+- [func accessibilityDisclosedRows() -> Any?](./nsaccessibilityprotocol/accessibilitydisclosedrows%28%29.md)
   Returns the rows that the current row discloses.
-- [func setAccessibilityDisclosedRows(Any?)](nsaccessibilityprotocol/setaccessibilitydisclosedrows(_:).md)
+- [func setAccessibilityDisclosedRows(Any?)](./nsaccessibilityprotocol/setaccessibilitydisclosedrows%28_%29.md)
   Sets the rows that the current row discloses.
-- [func accessibilityDisclosureLevel() -> Int](nsaccessibilityprotocol/accessibilitydisclosurelevel.md)
+- [func accessibilityDisclosureLevel() -> Int](./nsaccessibilityprotocol/accessibilitydisclosurelevel%28%29.md)
   Returns the indention level for the row.
-- [func setAccessibilityDisclosureLevel(Int)](nsaccessibilityprotocol/setaccessibilitydisclosurelevel(_:).md)
+- [func setAccessibilityDisclosureLevel(Int)](./nsaccessibilityprotocol/setaccessibilitydisclosurelevel%28_%29.md)
   Sets the indention level for the row.
 ### Configuring cell-based tables
-- [func accessibilityColumnIndexRange() -> NSRange](nsaccessibilityprotocol/accessibilitycolumnindexrange.md)
+- [func accessibilityColumnIndexRange() -> NSRange](./nsaccessibilityprotocol/accessibilitycolumnindexrange%28%29.md)
   Returns the column index range of the cell.
-- [func setAccessibilityColumnIndexRange(NSRange)](nsaccessibilityprotocol/setaccessibilitycolumnindexrange(_:).md)
+- [func setAccessibilityColumnIndexRange(NSRange)](./nsaccessibilityprotocol/setaccessibilitycolumnindexrange%28_%29.md)
   Sets the column index range of the cell.
-- [func accessibilityRowIndexRange() -> NSRange](nsaccessibilityprotocol/accessibilityrowindexrange.md)
+- [func accessibilityRowIndexRange() -> NSRange](./nsaccessibilityprotocol/accessibilityrowindexrange%28%29.md)
   Returns the row index range of the cell.
-- [func setAccessibilityRowIndexRange(NSRange)](nsaccessibilityprotocol/setaccessibilityrowindexrange(_:).md)
+- [func setAccessibilityRowIndexRange(NSRange)](./nsaccessibilityprotocol/setaccessibilityrowindexrange%28_%29.md)
   Sets the row index range of the cell.
-- [func accessibilitySelectedCells() -> [Any]?](nsaccessibilityprotocol/accessibilityselectedcells.md)
+- [func accessibilitySelectedCells() -> [Any]?](./nsaccessibilityprotocol/accessibilityselectedcells%28%29.md)
   Returns the currently selected cells for the table.
-- [func setAccessibilitySelectedCells([Any]?)](nsaccessibilityprotocol/setaccessibilityselectedcells(_:).md)
+- [func setAccessibilitySelectedCells([Any]?)](./nsaccessibilityprotocol/setaccessibilityselectedcells%28_%29.md)
   Sets the currently selected cells for the table.
-- [func accessibilityVisibleCells() -> [Any]?](nsaccessibilityprotocol/accessibilityvisiblecells.md)
+- [func accessibilityVisibleCells() -> [Any]?](./nsaccessibilityprotocol/accessibilityvisiblecells%28%29.md)
   Returns the visible cells for the table.
-- [func setAccessibilityVisibleCells([Any]?)](nsaccessibilityprotocol/setaccessibilityvisiblecells(_:).md)
+- [func setAccessibilityVisibleCells([Any]?)](./nsaccessibilityprotocol/setaccessibilityvisiblecells%28_%29.md)
   Sets the visible cells for the table.
-- [func accessibilityCell(forColumn: Int, row: Int) -> Any?](nsaccessibilityprotocol/accessibilitycell(forcolumn:row:).md)
+- [func accessibilityCell(forColumn: Int, row: Int) -> Any?](./nsaccessibilityprotocol/accessibilitycell%28forcolumn,row%29.md)
   Returns the cell at the specified column and row.
 ### Configuring layout
-- [func accessibilityHandles() -> [Any]?](nsaccessibilityprotocol/accessibilityhandles.md)
+- [func accessibilityHandles() -> [Any]?](./nsaccessibilityprotocol/accessibilityhandles%28%29.md)
   Returns the drag handle elements for the layout item element.
-- [func setAccessibilityHandles([Any]?)](nsaccessibilityprotocol/setaccessibilityhandles(_:).md)
+- [func setAccessibilityHandles([Any]?)](./nsaccessibilityprotocol/setaccessibilityhandles%28_%29.md)
   Sets the drag handle accessibility elements for the layout item element.
-- [func accessibilityHorizontalUnits() -> NSAccessibilityUnits](nsaccessibilityprotocol/accessibilityhorizontalunits.md)
+- [func accessibilityHorizontalUnits() -> NSAccessibilityUnits](./nsaccessibilityprotocol/accessibilityhorizontalunits%28%29.md)
   Returns the units that the layout area uses for horizontal values.
-- [func setAccessibilityHorizontalUnits(NSAccessibilityUnits)](nsaccessibilityprotocol/setaccessibilityhorizontalunits(_:).md)
+- [func setAccessibilityHorizontalUnits(NSAccessibilityUnits)](./nsaccessibilityprotocol/setaccessibilityhorizontalunits%28_%29.md)
   Sets the units that the layout area uses for horizontal values.
-- [func accessibilityHorizontalUnitDescription() -> String?](nsaccessibilityprotocol/accessibilityhorizontalunitdescription.md)
+- [func accessibilityHorizontalUnitDescription() -> String?](./nsaccessibilityprotocol/accessibilityhorizontalunitdescription%28%29.md)
   Returns the description of the layout area’s horizontal units.
-- [func setAccessibilityHorizontalUnitDescription(String?)](nsaccessibilityprotocol/setaccessibilityhorizontalunitdescription(_:).md)
+- [func setAccessibilityHorizontalUnitDescription(String?)](./nsaccessibilityprotocol/setaccessibilityhorizontalunitdescription%28_%29.md)
   Sets the description of the layout area’s horizontal units.
-- [func accessibilityVerticalUnits() -> NSAccessibilityUnits](nsaccessibilityprotocol/accessibilityverticalunits.md)
+- [func accessibilityVerticalUnits() -> NSAccessibilityUnits](./nsaccessibilityprotocol/accessibilityverticalunits%28%29.md)
   Returns the units that the layout area uses for vertical values.
-- [func setAccessibilityVerticalUnits(NSAccessibilityUnits)](nsaccessibilityprotocol/setaccessibilityverticalunits(_:).md)
+- [func setAccessibilityVerticalUnits(NSAccessibilityUnits)](./nsaccessibilityprotocol/setaccessibilityverticalunits%28_%29.md)
   Sets the units that the layout area uses for vertical values.
-- [func accessibilityVerticalUnitDescription() -> String?](nsaccessibilityprotocol/accessibilityverticalunitdescription.md)
+- [func accessibilityVerticalUnitDescription() -> String?](./nsaccessibilityprotocol/accessibilityverticalunitdescription%28%29.md)
   Returns the description of the layout area’s vertical units.
-- [func setAccessibilityVerticalUnitDescription(String?)](nsaccessibilityprotocol/setaccessibilityverticalunitdescription(_:).md)
+- [func setAccessibilityVerticalUnitDescription(String?)](./nsaccessibilityprotocol/setaccessibilityverticalunitdescription%28_%29.md)
   Sets the description of the layout area’s vertical units.
-- [func accessibilityLayoutPoint(forScreenPoint: NSPoint) -> NSPoint](nsaccessibilityprotocol/accessibilitylayoutpoint(forscreenpoint:).md)
+- [func accessibilityLayoutPoint(forScreenPoint: NSPoint) -> NSPoint](./nsaccessibilityprotocol/accessibilitylayoutpoint%28forscreenpoint%29.md)
   Converts the provided point in screen coordinates to a point in the layout area’s coordinate system.
-- [func accessibilityLayoutSize(forScreenSize: NSSize) -> NSSize](nsaccessibilityprotocol/accessibilitylayoutsize(forscreensize:).md)
+- [func accessibilityLayoutSize(forScreenSize: NSSize) -> NSSize](./nsaccessibilityprotocol/accessibilitylayoutsize%28forscreensize%29.md)
   Converts the provided size in screen coordinates to a size in the layout area’s coordinate system.
-- [func accessibilityScreenPoint(forLayoutPoint: NSPoint) -> NSPoint](nsaccessibilityprotocol/accessibilityscreenpoint(forlayoutpoint:).md)
+- [func accessibilityScreenPoint(forLayoutPoint: NSPoint) -> NSPoint](./nsaccessibilityprotocol/accessibilityscreenpoint%28forlayoutpoint%29.md)
   Converts the provided point in the layout area’s coordinates to a point in the screen’s coordinate system.
-- [func accessibilityScreenSize(forLayoutSize: NSSize) -> NSSize](nsaccessibilityprotocol/accessibilityscreensize(forlayoutsize:).md)
+- [func accessibilityScreenSize(forLayoutSize: NSSize) -> NSSize](./nsaccessibilityprotocol/accessibilityscreensize%28forlayoutsize%29.md)
   Converts the provided size in the layout area’s coordinates to a size in the screen’s coordinate system.
 ### Configuring sliders
-- [func accessibilityAllowedValues() -> [NSNumber]?](nsaccessibilityprotocol/accessibilityallowedvalues.md)
+- [func accessibilityAllowedValues() -> [NSNumber]?](./nsaccessibilityprotocol/accessibilityallowedvalues%28%29.md)
   Returns the allowed values for the slider accessibility element.
-- [func setAccessibilityAllowedValues([NSNumber]?)](nsaccessibilityprotocol/setaccessibilityallowedvalues(_:).md)
+- [func setAccessibilityAllowedValues([NSNumber]?)](./nsaccessibilityprotocol/setaccessibilityallowedvalues%28_%29.md)
   Sets the allowed values for the slider accessibility element.
-- [func accessibilityLabelUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitylabeluielements.md)
+- [func accessibilityLabelUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilitylabeluielements%28%29.md)
   Returns the child label elements for the slider accessibility element.
-- [func setAccessibilityLabelUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitylabeluielements(_:).md)
+- [func setAccessibilityLabelUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilitylabeluielements%28_%29.md)
   Sets the child label elements for the slider accessibility element.
-- [func accessibilityLabelValue() -> Float](nsaccessibilityprotocol/accessibilitylabelvalue.md)
+- [func accessibilityLabelValue() -> Float](./nsaccessibilityprotocol/accessibilitylabelvalue%28%29.md)
   Returns the value of the label accessibility element.
-- [func setAccessibilityLabelValue(Float)](nsaccessibilityprotocol/setaccessibilitylabelvalue(_:).md)
+- [func setAccessibilityLabelValue(Float)](./nsaccessibilityprotocol/setaccessibilitylabelvalue%28_%29.md)
   Sets the value of the label accessibility element.
 ### Configuring split views
-- [func accessibilityNextContents() -> [Any]?](nsaccessibilityprotocol/accessibilitynextcontents.md)
+- [func accessibilityNextContents() -> [Any]?](./nsaccessibilityprotocol/accessibilitynextcontents%28%29.md)
   Returns the contents that follow the divider accessibility element.
-- [func setAccessibilityNextContents([Any]?)](nsaccessibilityprotocol/setaccessibilitynextcontents(_:).md)
+- [func setAccessibilityNextContents([Any]?)](./nsaccessibilityprotocol/setaccessibilitynextcontents%28_%29.md)
   Sets the contents that follow the divider accessibility element.
-- [func accessibilityPreviousContents() -> [Any]?](nsaccessibilityprotocol/accessibilitypreviouscontents.md)
+- [func accessibilityPreviousContents() -> [Any]?](./nsaccessibilityprotocol/accessibilitypreviouscontents%28%29.md)
   Returns the contents that precede the divider accessibility element.
-- [func setAccessibilityPreviousContents([Any]?)](nsaccessibilityprotocol/setaccessibilitypreviouscontents(_:).md)
+- [func setAccessibilityPreviousContents([Any]?)](./nsaccessibilityprotocol/setaccessibilitypreviouscontents%28_%29.md)
   Sets the contents that precede the divider accessibility element.
-- [func accessibilitySplitters() -> [Any]?](nsaccessibilityprotocol/accessibilitysplitters.md)
+- [func accessibilitySplitters() -> [Any]?](./nsaccessibilityprotocol/accessibilitysplitters%28%29.md)
   Returns an array that contains the views and splitter bar from the split view.
-- [func setAccessibilitySplitters([Any]?)](nsaccessibilityprotocol/setaccessibilitysplitters(_:).md)
+- [func setAccessibilitySplitters([Any]?)](./nsaccessibilityprotocol/setaccessibilitysplitters%28_%29.md)
   Sets the array that contains the views and splitter bar from the split view.
 ### Configuring tabs and toolbars
-- [func accessibilityOverflowButton() -> Any?](nsaccessibilityprotocol/accessibilityoverflowbutton.md)
+- [func accessibilityOverflowButton() -> Any?](./nsaccessibilityprotocol/accessibilityoverflowbutton%28%29.md)
   Returns the overflow button for the toolbar.
-- [func setAccessibilityOverflowButton(Any?)](nsaccessibilityprotocol/setaccessibilityoverflowbutton(_:).md)
+- [func setAccessibilityOverflowButton(Any?)](./nsaccessibilityprotocol/setaccessibilityoverflowbutton%28_%29.md)
   Sets the overflow button for the toolbar.
-- [func accessibilityTabs() -> [Any]?](nsaccessibilityprotocol/accessibilitytabs.md)
+- [func accessibilityTabs() -> [Any]?](./nsaccessibilityprotocol/accessibilitytabs%28%29.md)
   Returns the tab accessibility elements for the tab view.
-- [func setAccessibilityTabs([Any]?)](nsaccessibilityprotocol/setaccessibilitytabs(_:).md)
+- [func setAccessibilityTabs([Any]?)](./nsaccessibilityprotocol/setaccessibilitytabs%28_%29.md)
   Sets the tab accessibility elements for the tab view.
 ### Configuring ruler views
-- [func accessibilityMarkerGroupUIElement() -> Any?](nsaccessibilityprotocol/accessibilitymarkergroupuielement.md)
+- [func accessibilityMarkerGroupUIElement() -> Any?](./nsaccessibilityprotocol/accessibilitymarkergroupuielement%28%29.md)
   Returns the user interface element that functions as a marker group for the ruler accessibility element.
-- [func setAccessibilityMarkerGroupUIElement(Any?)](nsaccessibilityprotocol/setaccessibilitymarkergroupuielement(_:).md)
+- [func setAccessibilityMarkerGroupUIElement(Any?)](./nsaccessibilityprotocol/setaccessibilitymarkergroupuielement%28_%29.md)
   Sets the user interface element that functions as a marker group for the ruler accessibility element.
-- [func accessibilityMarkerTypeDescription() -> String?](nsaccessibilityprotocol/accessibilitymarkertypedescription.md)
+- [func accessibilityMarkerTypeDescription() -> String?](./nsaccessibilityprotocol/accessibilitymarkertypedescription%28%29.md)
   Returns the human-readable description of the marker type.
-- [func setAccessibilityMarkerTypeDescription(String?)](nsaccessibilityprotocol/setaccessibilitymarkertypedescription(_:).md)
+- [func setAccessibilityMarkerTypeDescription(String?)](./nsaccessibilityprotocol/setaccessibilitymarkertypedescription%28_%29.md)
   Sets the human-readable description of the marker type.
-- [func accessibilityMarkerUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitymarkeruielements.md)
+- [func accessibilityMarkerUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilitymarkeruielements%28%29.md)
   Returns the array of marker accessibility elements for the ruler.
-- [func setAccessibilityMarkerUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitymarkeruielements(_:).md)
+- [func setAccessibilityMarkerUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilitymarkeruielements%28_%29.md)
   Sets the array of marker accessibility elements for the ruler.
-- [func accessibilityMarkerValues() -> Any?](nsaccessibilityprotocol/accessibilitymarkervalues.md)
+- [func accessibilityMarkerValues() -> Any?](./nsaccessibilityprotocol/accessibilitymarkervalues%28%29.md)
   Returns the marker values for the ruler.
-- [func setAccessibilityMarkerValues(Any?)](nsaccessibilityprotocol/setaccessibilitymarkervalues(_:).md)
+- [func setAccessibilityMarkerValues(Any?)](./nsaccessibilityprotocol/setaccessibilitymarkervalues%28_%29.md)
   Sets the marker values for the ruler.
-- [func accessibilityRulerMarkerType() -> NSAccessibilityRulerMarkerType](nsaccessibilityprotocol/accessibilityrulermarkertype.md)
+- [func accessibilityRulerMarkerType() -> NSAccessibilityRulerMarkerType](./nsaccessibilityprotocol/accessibilityrulermarkertype%28%29.md)
   Returns the type of markers for the ruler.
-- [func setAccessibilityRulerMarkerType(NSAccessibilityRulerMarkerType)](nsaccessibilityprotocol/setaccessibilityrulermarkertype(_:).md)
+- [func setAccessibilityRulerMarkerType(NSAccessibilityRulerMarkerType)](./nsaccessibilityprotocol/setaccessibilityrulermarkertype%28_%29.md)
   Sets the type of markers for the ruler.
-- [func accessibilityUnits() -> NSAccessibilityUnits](nsaccessibilityprotocol/accessibilityunits.md)
+- [func accessibilityUnits() -> NSAccessibilityUnits](./nsaccessibilityprotocol/accessibilityunits%28%29.md)
   Returns the units for the ruler.
-- [func setAccessibilityUnits(NSAccessibilityUnits)](nsaccessibilityprotocol/setaccessibilityunits(_:).md)
+- [func setAccessibilityUnits(NSAccessibilityUnits)](./nsaccessibilityprotocol/setaccessibilityunits%28_%29.md)
   Sets the units used for the ruler.
-- [func accessibilityUnitDescription() -> String?](nsaccessibilityprotocol/accessibilityunitdescription.md)
+- [func accessibilityUnitDescription() -> String?](./nsaccessibilityprotocol/accessibilityunitdescription%28%29.md)
   Returns the human-readable description of the ruler’s units.
-- [func setAccessibilityUnitDescription(String?)](nsaccessibilityprotocol/setaccessibilityunitdescription(_:).md)
+- [func setAccessibilityUnitDescription(String?)](./nsaccessibilityprotocol/setaccessibilityunitdescription%28_%29.md)
   Sets the human-readable description of the ruler’s units.
-- [enum NSAccessibilityRulerMarkerType](nsaccessibilityrulermarkertype.md)
+- [enum NSAccessibilityRulerMarkerType](./nsaccessibilityrulermarkertype.md)
   Values that indicate the marker type of an accessibility element.
-- [enum NSAccessibilityUnits](nsaccessibilityunits.md)
+- [enum NSAccessibilityUnits](./nsaccessibilityunits.md)
   Values that indicate the unit values of a ruler or layout area.
 ### Managing documents and editing
-- [func accessibilityDocument() -> String?](nsaccessibilityprotocol/accessibilitydocument.md)
+- [func accessibilityDocument() -> String?](./nsaccessibilityprotocol/accessibilitydocument%28%29.md)
   Returns the URL for the file that the accessibility element represents.
-- [func setAccessibilityDocument(String?)](nsaccessibilityprotocol/setaccessibilitydocument(_:).md)
+- [func setAccessibilityDocument(String?)](./nsaccessibilityprotocol/setaccessibilitydocument%28_%29.md)
   Sets the URL for the file that the accessibility element represents.
-- [func isAccessibilityEdited() -> Bool](nsaccessibilityprotocol/isaccessibilityedited.md)
+- [func isAccessibilityEdited() -> Bool](./nsaccessibilityprotocol/isaccessibilityedited%28%29.md)
   Returns a Boolean value that indicates whether the accessibility element is in an edited state.
-- [func setAccessibilityEdited(Bool)](nsaccessibilityprotocol/setaccessibilityedited(_:).md)
+- [func setAccessibilityEdited(Bool)](./nsaccessibilityprotocol/setaccessibilityedited%28_%29.md)
   Sets a Boolean value that indicates whether the accessibility element is in an edited state.
-- [func accessibilityFilename() -> String?](nsaccessibilityprotocol/accessibilityfilename.md)
+- [func accessibilityFilename() -> String?](./nsaccessibilityprotocol/accessibilityfilename%28%29.md)
   Returns the filename for the file that the accessibility element represents.
-- [func setAccessibilityFilename(String?)](nsaccessibilityprotocol/setaccessibilityfilename(_:).md)
+- [func setAccessibilityFilename(String?)](./nsaccessibilityprotocol/setaccessibilityfilename%28_%29.md)
   Sets the filename for the file that the accessibility element represents.
 ### Configuring linkage elements
-- [func accessibilityLinkedUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitylinkeduielements.md)
+- [func accessibilityLinkedUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilitylinkeduielements%28%29.md)
   Returns the elements that have links with the accessibility element.
-- [func setAccessibilityLinkedUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitylinkeduielements(_:).md)
+- [func setAccessibilityLinkedUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilitylinkeduielements%28_%29.md)
   Sets the elements that have links with the accessibility element.
-- [func accessibilityServesAsTitleForUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilityservesastitleforuielements.md)
+- [func accessibilityServesAsTitleForUIElements() -> [Any]?](./nsaccessibilityprotocol/accessibilityservesastitleforuielements%28%29.md)
   Returns the list of elements that the accessibility element is a title for.
-- [func setAccessibilityServesAsTitleForUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilityservesastitleforuielements(_:).md)
+- [func setAccessibilityServesAsTitleForUIElements([Any]?)](./nsaccessibilityprotocol/setaccessibilityservesastitleforuielements%28_%29.md)
   Sets the list of elements that the accessibility element is a title for.
-- [func accessibilityTitleUIElement() -> Any?](nsaccessibilityprotocol/accessibilitytitleuielement.md)
+- [func accessibilityTitleUIElement() -> Any?](./nsaccessibilityprotocol/accessibilitytitleuielement%28%29.md)
   Returns the static text element that represents the accessibility element’s title.
-- [func setAccessibilityTitleUIElement(Any?)](nsaccessibilityprotocol/setaccessibilitytitleuielement(_:).md)
+- [func setAccessibilityTitleUIElement(Any?)](./nsaccessibilityprotocol/setaccessibilitytitleuielement%28_%29.md)
   Sets the static text element that represents the accessibility element’s title.
 ### Configuring search fields
-- [func accessibilityClearButton() -> Any?](nsaccessibilityprotocol/accessibilityclearbutton.md)
+- [func accessibilityClearButton() -> Any?](./nsaccessibilityprotocol/accessibilityclearbutton%28%29.md)
   Returns the clear button for the search field.
-- [func setAccessibilityClearButton(Any?)](nsaccessibilityprotocol/setaccessibilityclearbutton(_:).md)
+- [func setAccessibilityClearButton(Any?)](./nsaccessibilityprotocol/setaccessibilityclearbutton%28_%29.md)
   Sets the clear button for the search field.
-- [func accessibilitySearchButton() -> Any?](nsaccessibilityprotocol/accessibilitysearchbutton.md)
+- [func accessibilitySearchButton() -> Any?](./nsaccessibilityprotocol/accessibilitysearchbutton%28%29.md)
   Returns the search button for the search field.
-- [func setAccessibilitySearchButton(Any?)](nsaccessibilityprotocol/setaccessibilitysearchbutton(_:).md)
+- [func setAccessibilitySearchButton(Any?)](./nsaccessibilityprotocol/setaccessibilitysearchbutton%28_%29.md)
   Sets the search button for the search field.
-- [func accessibilitySearchMenu() -> Any?](nsaccessibilityprotocol/accessibilitysearchmenu.md)
+- [func accessibilitySearchMenu() -> Any?](./nsaccessibilityprotocol/accessibilitysearchmenu%28%29.md)
   Returns the search menu for the search field.
-- [func setAccessibilitySearchMenu(Any?)](nsaccessibilityprotocol/setaccessibilitysearchmenu(_:).md)
+- [func setAccessibilitySearchMenu(Any?)](./nsaccessibilityprotocol/setaccessibilitysearchmenu%28_%29.md)
   Sets the search menu for the search field.
 ### Confirming and canceling operations
-- [func accessibilityPerformCancel() -> Bool](nsaccessibilityprotocol/accessibilityperformcancel.md)
+- [func accessibilityPerformCancel() -> Bool](./nsaccessibilityprotocol/accessibilityperformcancel%28%29.md)
   Cancels the current operation.
-- [func accessibilityPerformConfirm() -> Bool](nsaccessibilityprotocol/accessibilityperformconfirm.md)
+- [func accessibilityPerformConfirm() -> Bool](./nsaccessibilityprotocol/accessibilityperformconfirm%28%29.md)
   Simulates pressing Return in the accessibility element.
 ### Selecting elements
-- [func accessibilityPerformPick() -> Bool](nsaccessibilityprotocol/accessibilityperformpick.md)
+- [func accessibilityPerformPick() -> Bool](./nsaccessibilityprotocol/accessibilityperformpick%28%29.md)
   Selects the accessibility element.
-- [func accessibilityPerformPress() -> Bool](nsaccessibilityprotocol/accessibilityperformpress.md)
+- [func accessibilityPerformPress() -> Bool](./nsaccessibilityprotocol/accessibilityperformpress%28%29.md)
   Simulates clicking the accessibility element.
 ### Searching elements
-- [let NSAccessibilitySearchCurrentElementKey: String](nsaccessibilitysearchcurrentelementkey.md)
-- [let NSAccessibilitySearchCurrentRangeKey: String](nsaccessibilitysearchcurrentrangekey.md)
-- [let NSAccessibilitySearchDirectionKey: String](nsaccessibilitysearchdirectionkey.md)
-- [let NSAccessibilitySearchDirectionNext: String](nsaccessibilitysearchdirectionnext.md)
-- [let NSAccessibilitySearchDirectionPrevious: String](nsaccessibilitysearchdirectionprevious.md)
-- [struct NSAccessibilitySearchKey](nsaccessibilitysearchkey.md)
+- [let NSAccessibilitySearchCurrentElementKey: String](./nsaccessibilitysearchcurrentelementkey.md)
+- [let NSAccessibilitySearchCurrentRangeKey: String](./nsaccessibilitysearchcurrentrangekey.md)
+- [let NSAccessibilitySearchDirectionKey: String](./nsaccessibilitysearchdirectionkey.md)
+- [let NSAccessibilitySearchDirectionNext: String](./nsaccessibilitysearchdirectionnext.md)
+- [let NSAccessibilitySearchDirectionPrevious: String](./nsaccessibilitysearchdirectionprevious.md)
+- [struct NSAccessibilitySearchKey](./nsaccessibilitysearchkey.md)
 ### Showing user interface elements
-- [func accessibilityPerformShowAlternateUI() -> Bool](nsaccessibilityprotocol/accessibilityperformshowalternateui.md)
+- [func accessibilityPerformShowAlternateUI() -> Bool](./nsaccessibilityprotocol/accessibilityperformshowalternateui%28%29.md)
   Displays the accessibility element’s alternative UI.
-- [func accessibilityPerformShowDefaultUI() -> Bool](nsaccessibilityprotocol/accessibilityperformshowdefaultui.md)
+- [func accessibilityPerformShowDefaultUI() -> Bool](./nsaccessibilityprotocol/accessibilityperformshowdefaultui%28%29.md)
   Returns to the accessibility element’s original UI.
-- [func accessibilityPerformShowMenu() -> Bool](nsaccessibilityprotocol/accessibilityperformshowmenu.md)
+- [func accessibilityPerformShowMenu() -> Bool](./nsaccessibilityprotocol/accessibilityperformshowmenu%28%29.md)
   Displays the menu accessibility element.
-- [func accessibilityPerformRaise() -> Bool](nsaccessibilityprotocol/accessibilityperformraise.md)
+- [func accessibilityPerformRaise() -> Bool](./nsaccessibilityprotocol/accessibilityperformraise%28%29.md)
   Brings the window to the front.
 ### Incrementing, decrementing, and deleting values
-- [func accessibilityIncrementButton() -> Any?](nsaccessibilityprotocol/accessibilityincrementbutton.md)
+- [func accessibilityIncrementButton() -> Any?](./nsaccessibilityprotocol/accessibilityincrementbutton%28%29.md)
   Returns the increment button for the stepper accessibility element.
-- [func setAccessibilityIncrementButton(Any?)](nsaccessibilityprotocol/setaccessibilityincrementbutton(_:).md)
+- [func setAccessibilityIncrementButton(Any?)](./nsaccessibilityprotocol/setaccessibilityincrementbutton%28_%29.md)
   Sets the increment button for the stepper accessibility element.
-- [func accessibilityDecrementButton() -> Any?](nsaccessibilityprotocol/accessibilitydecrementbutton.md)
+- [func accessibilityDecrementButton() -> Any?](./nsaccessibilityprotocol/accessibilitydecrementbutton%28%29.md)
   Returns the decrement button for the stepper accessibility element.
-- [func setAccessibilityDecrementButton(Any?)](nsaccessibilityprotocol/setaccessibilitydecrementbutton(_:).md)
+- [func setAccessibilityDecrementButton(Any?)](./nsaccessibilityprotocol/setaccessibilitydecrementbutton%28_%29.md)
   Sets the decrement button for the stepper accessibility element.
-- [func accessibilityPerformIncrement() -> Bool](nsaccessibilityprotocol/accessibilityperformincrement.md)
+- [func accessibilityPerformIncrement() -> Bool](./nsaccessibilityprotocol/accessibilityperformincrement%28%29.md)
   Increments the accessibility element’s value.
-- [func accessibilityPerformDecrement() -> Bool](nsaccessibilityprotocol/accessibilityperformdecrement.md)
+- [func accessibilityPerformDecrement() -> Bool](./nsaccessibilityprotocol/accessibilityperformdecrement%28%29.md)
   Decrements the accessibility element’s value.
-- [func accessibilityPerformDelete() -> Bool](nsaccessibilityprotocol/accessibilityperformdelete.md)
+- [func accessibilityPerformDelete() -> Bool](./nsaccessibilityprotocol/accessibilityperformdelete%28%29.md)
   Deletes the accessibility element’s value.
 ### Managing notifications
-- [static func post(element: Any, notification: NSAccessibility.Notification)](nsaccessibility-swift.struct/post(element:notification:).md)
+- [static func post(element: Any, notification: NSAccessibility.Notification)](./nsaccessibility-swift.struct/post%28element,notification%29.md)
   Sends a notification to any observing assistive apps.
-- [static func post(element: Any, notification: NSAccessibility.Notification, userInfo: [NSAccessibility.NotificationUserInfoKey : Any]?)](nsaccessibility-swift.struct/post(element:notification:userinfo:).md)
+- [static func post(element: Any, notification: NSAccessibility.Notification, userInfo: [NSAccessibility.NotificationUserInfoKey : Any]?)](./nsaccessibility-swift.struct/post%28element,notification,userinfo%29.md)
   Sends a notification and an optional user info dictionary to any observing assistive apps.
-- [NSAccessibility.Notification](nsaccessibility-swift.struct/notification.md)
+- [NSAccessibility.Notification](./nsaccessibility-swift.struct/notification.md)
   The name of the notification.
-- [NSAccessibility.NotificationUserInfoKey](nsaccessibility-swift.struct/notificationuserinfokey.md)
+- [NSAccessibility.NotificationUserInfoKey](./nsaccessibility-swift.struct/notificationuserinfokey.md)
   The key in the user info dictionary for a notification.
 ### Handling errors
-- [static let ErrorCodeExceptionInfo: String](nsaccessibility-swift.struct/errorcodeexceptioninfo.md)
+- [static let ErrorCodeExceptionInfo: String](./nsaccessibility-swift.struct/errorcodeexceptioninfo.md)
   An integer error code for debugging.
 ### Supporting types
-- [struct NSAccessibility](nsaccessibility-swift.struct.md)
+- [struct NSAccessibility](./nsaccessibility-swift.struct.md)
   A namespace for accessibility symbols for AppKit apps.
 ### Instance methods
-- [func accessibilityAttributedUserInputLabels() -> [NSAttributedString]?](nsaccessibilityprotocol/accessibilityattributeduserinputlabels.md)
-- [func accessibilityUserInputLabels() -> [String]?](nsaccessibilityprotocol/accessibilityuserinputlabels.md)
-- [func setAccessibilityAttributedUserInputLabels([NSAttributedString]?)](nsaccessibilityprotocol/setaccessibilityattributeduserinputlabels(_:).md)
-- [func setAccessibilityUserInputLabels([String]?)](nsaccessibilityprotocol/setaccessibilityuserinputlabels(_:).md)
+- [func accessibilityAttributedUserInputLabels() -> [NSAttributedString]?](./nsaccessibilityprotocol/accessibilityattributeduserinputlabels%28%29.md)
+- [func accessibilityUserInputLabels() -> [String]?](./nsaccessibilityprotocol/accessibilityuserinputlabels%28%29.md)
+- [func setAccessibilityAttributedUserInputLabels([NSAttributedString]?)](./nsaccessibilityprotocol/setaccessibilityattributeduserinputlabels%28_%29.md)
+- [func setAccessibilityUserInputLabels([String]?)](./nsaccessibilityprotocol/setaccessibilityuserinputlabels%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSAccessibilityElement](nsaccessibilityelement-swift.class.md)
-- [NSActionCell](nsactioncell.md)
-- [NSApplication](nsapplication.md)
-- [NSBackgroundExtensionView](nsbackgroundextensionview.md)
-- [NSBox](nsbox.md)
-- [NSBrowser](nsbrowser.md)
-- [NSBrowserCell](nsbrowsercell.md)
-- [NSButton](nsbutton.md)
-- [NSButtonCell](nsbuttoncell.md)
-- [NSCell](nscell.md)
-- [NSClipView](nsclipview.md)
-- [NSCollectionView](nscollectionview.md)
-- [NSColorPanel](nscolorpanel.md)
-- [NSColorWell](nscolorwell.md)
-- [NSComboBox](nscombobox.md)
-- [NSComboBoxCell](nscomboboxcell.md)
-- [NSComboButton](nscombobutton.md)
-- [NSControl](nscontrol.md)
-- [NSDatePicker](nsdatepicker.md)
-- [NSDatePickerCell](nsdatepickercell.md)
-- [NSDrawer](nsdrawer.md)
-- [NSFontPanel](nsfontpanel.md)
-- [NSForm](nsform.md)
-- [NSFormCell](nsformcell.md)
-- [NSGlassEffectContainerView](nsglasseffectcontainerview.md)
-- [NSGlassEffectView](nsglasseffectview.md)
-- [NSGridView](nsgridview.md)
-- [NSImageCell](nsimagecell.md)
-- [NSImageView](nsimageview.md)
-- [NSLevelIndicator](nslevelindicator.md)
-- [NSLevelIndicatorCell](nslevelindicatorcell.md)
-- [NSMatrix](nsmatrix.md)
-- [NSMenu](nsmenu.md)
-- [NSMenuItem](nsmenuitem.md)
-- [NSMenuItemCell](nsmenuitemcell.md)
-- [NSOpenGLView](nsopenglview.md)
-- [NSOpenPanel](nsopenpanel.md)
-- [NSOutlineView](nsoutlineview.md)
-- [NSPanel](nspanel.md)
-- [NSPathCell](nspathcell.md)
-- [NSPathComponentCell](nspathcomponentcell.md)
-- [NSPathControl](nspathcontrol.md)
-- [NSPopUpButton](nspopupbutton.md)
-- [NSPopUpButtonCell](nspopupbuttoncell.md)
-- [NSPopover](nspopover.md)
-- [NSPredicateEditor](nspredicateeditor.md)
-- [NSProgressIndicator](nsprogressindicator.md)
-- [NSRuleEditor](nsruleeditor.md)
-- [NSRulerView](nsrulerview.md)
-- [NSSavePanel](nssavepanel.md)
-- [NSScrollView](nsscrollview.md)
-- [NSScroller](nsscroller.md)
-- [NSScrubber](nsscrubber.md)
-- [NSScrubberArrangedView](nsscrubberarrangedview.md)
-- [NSScrubberImageItemView](nsscrubberimageitemview.md)
-- [NSScrubberItemView](nsscrubberitemview.md)
-- [NSScrubberSelectionView](nsscrubberselectionview.md)
-- [NSScrubberTextItemView](nsscrubbertextitemview.md)
-- [NSSearchField](nssearchfield.md)
-- [NSSearchFieldCell](nssearchfieldcell.md)
-- [NSSecureTextField](nssecuretextfield.md)
-- [NSSecureTextFieldCell](nssecuretextfieldcell.md)
-- [NSSegmentedCell](nssegmentedcell.md)
-- [NSSegmentedControl](nssegmentedcontrol.md)
-- [NSSlider](nsslider.md)
-- [NSSliderAccessory](nsslideraccessory.md)
-- [NSSliderCell](nsslidercell.md)
-- [NSSplitView](nssplitview.md)
-- [NSStackView](nsstackview.md)
-- [NSStatusBarButton](nsstatusbarbutton.md)
-- [NSStepper](nsstepper.md)
-- [NSStepperCell](nssteppercell.md)
-- [NSSwitch](nsswitch.md)
-- [NSTabView](nstabview.md)
-- [NSTableCellView](nstablecellview.md)
-- [NSTableHeaderCell](nstableheadercell.md)
-- [NSTableHeaderView](nstableheaderview.md)
-- [NSTableRowView](nstablerowview.md)
-- [NSTableView](nstableview.md)
-- [NSText](nstext.md)
-- [NSTextAttachmentCell](nstextattachmentcell-swift.class.md)
-- [NSTextField](nstextfield.md)
-- [NSTextFieldCell](nstextfieldcell.md)
-- [NSTextInsertionIndicator](nstextinsertionindicator.md)
-- [NSTextView](nstextview.md)
-- [NSTokenField](nstokenfield.md)
-- [NSTokenFieldCell](nstokenfieldcell.md)
-- [NSView](nsview.md)
-- [NSVisualEffectView](nsvisualeffectview.md)
-- [NSWindow](nswindow.md)
+- [NSAccessibilityElement](./nsaccessibilityelement-swift.class.md)
+- [NSActionCell](./nsactioncell.md)
+- [NSApplication](./nsapplication.md)
+- [NSBackgroundExtensionView](./nsbackgroundextensionview.md)
+- [NSBox](./nsbox.md)
+- [NSBrowser](./nsbrowser.md)
+- [NSBrowserCell](./nsbrowsercell.md)
+- [NSButton](./nsbutton.md)
+- [NSButtonCell](./nsbuttoncell.md)
+- [NSCell](./nscell.md)
+- [NSClipView](./nsclipview.md)
+- [NSCollectionView](./nscollectionview.md)
+- [NSColorPanel](./nscolorpanel.md)
+- [NSColorWell](./nscolorwell.md)
+- [NSComboBox](./nscombobox.md)
+- [NSComboBoxCell](./nscomboboxcell.md)
+- [NSComboButton](./nscombobutton.md)
+- [NSControl](./nscontrol.md)
+- [NSDatePicker](./nsdatepicker.md)
+- [NSDatePickerCell](./nsdatepickercell.md)
+- [NSDrawer](./nsdrawer.md)
+- [NSFontPanel](./nsfontpanel.md)
+- [NSForm](./nsform.md)
+- [NSFormCell](./nsformcell.md)
+- [NSGlassEffectContainerView](./nsglasseffectcontainerview.md)
+- [NSGlassEffectView](./nsglasseffectview.md)
+- [NSGridView](./nsgridview.md)
+- [NSImageCell](./nsimagecell.md)
+- [NSImageView](./nsimageview.md)
+- [NSLevelIndicator](./nslevelindicator.md)
+- [NSLevelIndicatorCell](./nslevelindicatorcell.md)
+- [NSMatrix](./nsmatrix.md)
+- [NSMenu](./nsmenu.md)
+- [NSMenuItem](./nsmenuitem.md)
+- [NSMenuItemCell](./nsmenuitemcell.md)
+- [NSOpenGLView](./nsopenglview.md)
+- [NSOpenPanel](./nsopenpanel.md)
+- [NSOutlineView](./nsoutlineview.md)
+- [NSPanel](./nspanel.md)
+- [NSPathCell](./nspathcell.md)
+- [NSPathComponentCell](./nspathcomponentcell.md)
+- [NSPathControl](./nspathcontrol.md)
+- [NSPopUpButton](./nspopupbutton.md)
+- [NSPopUpButtonCell](./nspopupbuttoncell.md)
+- [NSPopover](./nspopover.md)
+- [NSPredicateEditor](./nspredicateeditor.md)
+- [NSProgressIndicator](./nsprogressindicator.md)
+- [NSRuleEditor](./nsruleeditor.md)
+- [NSRulerView](./nsrulerview.md)
+- [NSSavePanel](./nssavepanel.md)
+- [NSScrollView](./nsscrollview.md)
+- [NSScroller](./nsscroller.md)
+- [NSScrubber](./nsscrubber.md)
+- [NSScrubberArrangedView](./nsscrubberarrangedview.md)
+- [NSScrubberImageItemView](./nsscrubberimageitemview.md)
+- [NSScrubberItemView](./nsscrubberitemview.md)
+- [NSScrubberSelectionView](./nsscrubberselectionview.md)
+- [NSScrubberTextItemView](./nsscrubbertextitemview.md)
+- [NSSearchField](./nssearchfield.md)
+- [NSSearchFieldCell](./nssearchfieldcell.md)
+- [NSSecureTextField](./nssecuretextfield.md)
+- [NSSecureTextFieldCell](./nssecuretextfieldcell.md)
+- [NSSegmentedCell](./nssegmentedcell.md)
+- [NSSegmentedControl](./nssegmentedcontrol.md)
+- [NSSlider](./nsslider.md)
+- [NSSliderAccessory](./nsslideraccessory.md)
+- [NSSliderCell](./nsslidercell.md)
+- [NSSplitView](./nssplitview.md)
+- [NSStackView](./nsstackview.md)
+- [NSStatusBarButton](./nsstatusbarbutton.md)
+- [NSStepper](./nsstepper.md)
+- [NSStepperCell](./nssteppercell.md)
+- [NSSwitch](./nsswitch.md)
+- [NSTabView](./nstabview.md)
+- [NSTableCellView](./nstablecellview.md)
+- [NSTableHeaderCell](./nstableheadercell.md)
+- [NSTableHeaderView](./nstableheaderview.md)
+- [NSTableRowView](./nstablerowview.md)
+- [NSTableView](./nstableview.md)
+- [NSText](./nstext.md)
+- [NSTextAttachmentCell](./nstextattachmentcell-swift.class.md)
+- [NSTextField](./nstextfield.md)
+- [NSTextFieldCell](./nstextfieldcell.md)
+- [NSTextInsertionIndicator](./nstextinsertionindicator.md)
+- [NSTextView](./nstextview.md)
+- [NSTokenField](./nstokenfield.md)
+- [NSTokenFieldCell](./nstokenfieldcell.md)
+- [NSView](./nsview.md)
+- [NSVisualEffectView](./nsvisualeffectview.md)
+- [NSWindow](./nswindow.md)
 
 ## See Also
 
-- [struct NSAccessibility](nsaccessibility-swift.struct.md)
+### AppKit Elements
+- [struct NSAccessibility](./nsaccessibility-swift.struct.md)
   A namespace for accessibility symbols for AppKit apps.
 
 

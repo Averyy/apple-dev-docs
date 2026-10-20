@@ -1,7 +1,8 @@
 # splitView(_:canCollapseSubview:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the split view controller to determine whether the user can collapse and expand the specified subview.
 
@@ -15,9 +16,14 @@ Allows the split view controller to determine whether the user can collapse and 
 func splitView(_ splitView: NSSplitView, canCollapseSubview subview: NSView) -> Bool
 ```
 
+```objc
+- (BOOL) splitView:(NSSplitView *) splitView canCollapseSubview:(NSView *) subview;
+```
+
 ## See Also
 
-- [func splitView(NSSplitView, shouldCollapseSubview: NSView, forDoubleClickOnDividerAt: Int) -> Bool](nssplitviewcontroller/splitview(_:shouldcollapsesubview:fordoubleclickondividerat:).md)
+### Managing Subviews
+- [func splitView(NSSplitView, shouldCollapseSubview: NSView, forDoubleClickOnDividerAt: Int) -> Bool](./splitview%28_,shouldcollapsesubview,fordoubleclickondividerat%29.md)
   Allows the split view controller to determine if a subview collapses in response to a double click.
 
 

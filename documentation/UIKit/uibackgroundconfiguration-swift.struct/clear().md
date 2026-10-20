@@ -1,7 +1,8 @@
 # clear()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an empty background configuration with a transparent background and no default styling.
 
@@ -10,7 +11,7 @@ Creates an empty background configuration with a transparent background and no d
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

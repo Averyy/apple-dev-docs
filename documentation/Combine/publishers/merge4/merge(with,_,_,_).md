@@ -1,7 +1,8 @@
 # merge(with:_:_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ func merge<Z, Y, X, W>(with z: Z, _ y: Y, _ x: X, _ w: W) -> Publishers.Merge8<A
 
 ## See Also
 
-- [func merge<P>(with: P) -> Publishers.Merge5<A, B, C, D, P>](publishers/merge4/merge(with:).md)
-- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge6<A, B, C, D, Z, Y>](publishers/merge4/merge(with:_:).md)
-- [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge7<A, B, C, D, Z, Y, X>](publishers/merge4/merge(with:_:_:).md)
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge5<A, B, C, D, P>](./merge%28with%29.md)
+- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge6<A, B, C, D, Z, Y>](./merge%28with,_%29.md)
+- [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge7<A, B, C, D, Z, Y, X>](./merge%28with,_,_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MLModelClassifierAdaptor.Label
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The classifier label type.
 
@@ -23,33 +24,34 @@ enum Label
 ## Topics
 
 ### Label types
-- [MLModelClassifierAdaptor.Label.int(_:)](mlmodelclassifieradaptor/label/int(_:).md)
+- [MLModelClassifierAdaptor.Label.int(_:)](./label/int%28_%29.md)
   The label is integer type.
-- [MLModelClassifierAdaptor.Label.string(_:)](mlmodelclassifieradaptor/label/string(_:).md)
+- [MLModelClassifierAdaptor.Label.string(_:)](./label/string%28_%29.md)
   The label is string type.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlmodelclassifieradaptor/label/customdebugstringconvertible-implementations.md)
-- [ExpressibleByIntegerLiteral Implementations](mlmodelclassifieradaptor/label/expressiblebyintegerliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](mlmodelclassifieradaptor/label/expressiblebystringliteral-implementations.md)
+- [CustomDebugStringConvertible Implementations](./label/customdebugstringconvertible-implementations.md)
+- [ExpressibleByIntegerLiteral Implementations](./label/expressiblebyintegerliteral-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./label/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByIntegerLiteral](../../Swift/expressiblebyintegerliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<MLModelClassifierAdaptor<Scalar>.Label>](mlmodelclassifieradaptor/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<MLModelClassifierAdaptor<Scalar>.Label>](./applied%28to,eventhandler%29.md)
   Performs a prediction from a single input.
 
 

@@ -1,7 +1,8 @@
 # CurrentBalance.booked(_:)
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Only the booked balance is present.
 
@@ -17,9 +18,10 @@ case booked(Balance)
 
 ## See Also
 
-- [CurrentBalance.available(_:)](currentbalance/available(_:).md)
+### Enumeration Cases
+- [CurrentBalance.available(_:)](./available%28_%29.md)
   Only the available balance is present.
-- [case availableAndBooked(available: Balance, booked: Balance)](currentbalance/availableandbooked(available:booked:).md)
+- [case availableAndBooked(available: Balance, booked: Balance)](./availableandbooked%28available,booked%29.md)
   Both available and booked balances are present.
 
 

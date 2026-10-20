@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date of the timed metadata.
 
@@ -20,15 +21,20 @@ The start date of the timed metadata.
 var startDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSDate * startDate;
+```
+
 #### Discussion
 
 The value is `nil` if the metadata item doesn’t provide a start date.
 
 ## See Also
 
-- [var time: CMTime](avmutablemetadataitem/time.md)
+### Accessing timing
+- [var time: CMTime](./time.md)
   The timestamp for a mutable metadata item.
-- [var duration: CMTime](avmutablemetadataitem/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of a mutable metadata item.
 
 

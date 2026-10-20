@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Allocate a new Mach port with a receive right, creating a Mach.Port<Mach.ReceiveRight> to manage it.
 
@@ -19,6 +20,8 @@ Allocate a new Mach port with a receive right, creating a Mach.Port<Mach.Receive
 ```swift
 init()
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

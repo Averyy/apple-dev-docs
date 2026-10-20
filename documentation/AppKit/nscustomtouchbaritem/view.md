@@ -1,7 +1,8 @@
 # view
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view displayed in the bar to represent this item.
 
@@ -14,15 +15,20 @@ The view displayed in the bar to represent this item.
 var view: NSView { get set }
 ```
 
+```objc
+@property (strong, readwrite) NSView * view;
+```
+
 #### Discussion
 
-By default, this property returns the value of [`view`](nsviewcontroller/view.md) property from the view controller assigned to the [`viewController`](nscustomtouchbaritem/viewcontroller.md) property.
+By default, this property returns the value of [`view`](../nsviewcontroller/view.md) property from the view controller assigned to the [`viewController`](./viewcontroller.md) property.
 
-If you set the value of this property, then the [`viewController`](nscustomtouchbaritem/viewcontroller.md) property is automatically set to `nil`.
+If you set the value of this property, then the [`viewController`](./viewcontroller.md) property is automatically set to `nil`.
 
 ## See Also
 
-- [var viewController: NSViewController?](nscustomtouchbaritem/viewcontroller.md)
+### Providing item content
+- [var viewController: NSViewController?](./viewcontroller.md)
   A view controller whose view is displayed in the bar to represent this item.
 
 

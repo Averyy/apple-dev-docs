@@ -1,7 +1,8 @@
 # time
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the value applies.
 

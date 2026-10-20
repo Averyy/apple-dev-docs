@@ -1,7 +1,8 @@
 # BGTask
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class for the framework’s tasks.
 
@@ -18,46 +19,51 @@ An abstract class for the framework’s tasks.
 class BGTask
 ```
 
+```objc
+@interface BGTask : NSObject
+```
+
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Overview
 
-With the exception of [`BGContinuedProcessingTask`](bgcontinuedprocessingtask.md), which your app executes in the foreground, the system executes [`BGTask`](bgtask.md) subclasses on behalf of your app, while your app is in the background.
+With the exception of [`BGContinuedProcessingTask`](./bgcontinuedprocessingtask.md), which your app executes in the foreground, the system executes [`BGTask`](./bgtask.md) subclasses on behalf of your app, while your app is in the background.
 
 ## Topics
 
 ### Reading Task Information
-- [var identifier: String](bgtask/identifier.md)
+- [var identifier: String](./bgtask/identifier.md)
   The string identifier of the task.
 ### Configuring a Task
-- [var expirationHandler: (() -> Void)?](bgtask/expirationhandler.md)
+- [var expirationHandler: (() -> Void)?](./bgtask/expirationhandler.md)
   A handler called shortly before the task’s background time expires.
-- [func setTaskCompleted(success: Bool)](bgtask/settaskcompleted(success:).md)
+- [func setTaskCompleted(success: Bool)](./bgtask/settaskcompleted%28success%29.md)
   Informs the background task scheduler that the task is complete.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [BGAppRefreshTask](bgapprefreshtask.md)
-- [BGContinuedProcessingTask](bgcontinuedprocessingtask.md)
-- [BGProcessingTask](bgprocessingtask.md)
+- [BGAppRefreshTask](./bgapprefreshtask.md)
+- [BGContinuedProcessingTask](./bgcontinuedprocessingtask.md)
+- [BGProcessingTask](./bgprocessingtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Background Tasks updates](../updates/backgroundtasks.md)
+### Essentials
+- [Background Tasks updates](../Updates/backgroundtasks.md)
   Learn about important changes in Background Tasks.
-- [class BGTaskScheduler](bgtaskscheduler.md)
+- [class BGTaskScheduler](./bgtaskscheduler.md)
   A class for scheduling tasks that add background support to your app’s most critical work.
 
 

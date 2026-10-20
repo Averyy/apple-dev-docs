@@ -1,16 +1,21 @@
 # CGWindowSharingType.readOnly
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case readOnly
+```
+
+```c
+kCGWindowSharingReadOnly
 ```
 
 #### Discussion
@@ -19,8 +24,9 @@ The window is shared and its contents can be read by all processes but modified 
 
 ## See Also
 
-- [CGWindowSharingType.none](cgwindowsharingtype/none.md)
-- [CGWindowSharingType.readWrite](cgwindowsharingtype/readwrite.md)
+### Constants
+- [CGWindowSharingType.none](./none.md)
+- [CGWindowSharingType.readWrite](./readwrite.md)
 
 
 ---

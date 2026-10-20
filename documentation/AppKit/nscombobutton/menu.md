@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu that contains the button’s alternate actions.
 
@@ -14,11 +15,15 @@ The menu that contains the button’s alternate actions.
 var menu: NSMenu { get set }
 ```
 
+```objc
+@property (strong) NSMenu * menu;
+```
+
 #### Discussion
 
 The combo button executes the menu item’s action when someone selects that item, so make sure to configure the targets and actions for each menu item in your menu.
 
-An [`NSComboButton`](nscombobutton.md) doesn’t support the addition of a contextual menu.
+An [`NSComboButton`](../nscombobutton.md) doesn’t support the addition of a contextual menu.
 
 
 ---

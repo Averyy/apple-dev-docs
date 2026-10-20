@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter used to determine the points of interest shown on the map.
 
@@ -21,13 +22,18 @@ The filter used to determine the points of interest shown on the map.
 var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MKPointOfInterestFilter * pointOfInterestFilter;
+```
+
 ## See Also
 
-- [var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.property.md)
+### Customizing the map display
+- [var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle](./emphasisstyle-swift.property.md)
   The value that indicates how the framework emphasizes map features.
-- [MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
+- [MKStandardMapConfiguration.EmphasisStyle](./emphasisstyle-swift.enum.md)
   Values that control how the framework emphasizes map features.
-- [var showsTraffic: Bool](mkstandardmapconfiguration/showstraffic.md)
+- [var showsTraffic: Bool](./showstraffic.md)
   A Boolean value that controls whether the map displays traffic conditions.
 
 

@@ -1,7 +1,8 @@
 # VideoPlaybackController
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that controls the playback of video for a video material.
 
@@ -11,7 +12,7 @@ An object that controls the playback of video for a video material.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,33 +24,34 @@ An object that controls the playback of video for a video material.
 ## Topics
 
 ### Instance Properties
-- [var audioInputMode: AudioResource.InputMode](videoplaybackcontroller/audioinputmode.md)
-- [var currentImageSize: CGSize?](videoplaybackcontroller/currentimagesize.md)
+- [var audioInputMode: AudioResource.InputMode](./videoplaybackcontroller/audioinputmode.md)
+- [var currentImageSize: CGSize?](./videoplaybackcontroller/currentimagesize.md)
   What is the width and height of currently playing video (for stereo, the width and height of each eye)? This is optional because the video may not currently be playing, or the size is otherwise not available.
-- [var currentViewingMode: VideoPlaybackController.ViewingMode?](videoplaybackcontroller/currentviewingmode.md)
+- [var currentViewingMode: VideoPlaybackController.ViewingMode?](./videoplaybackcontroller/currentviewingmode.md)
   Is the currently playing video in mono or stereo? This is optional because the video may not currently be playing, or the mode is otherwise not available.
-- [var preferredViewingMode: VideoPlaybackController.ViewingMode](videoplaybackcontroller/preferredviewingmode.md)
+- [var preferredViewingMode: VideoPlaybackController.ViewingMode](./videoplaybackcontroller/preferredviewingmode.md)
   Do we want to play stereo video in mono or stereo? Default is to play in stereo.
-- [var reverbSendLevel: AudioPlaybackController.Decibel](videoplaybackcontroller/reverbsendlevel.md)
+- [var reverbSendLevel: AudioPlaybackController.Decibel](./videoplaybackcontroller/reverbsendlevel.md)
 ### Enumerations
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+- [VideoPlaybackController.ViewingMode](./videoplaybackcontroller/viewingmode.md)
   Options for viewing video playback.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct VideoPlayerComponent](videoplayercomponent.md)
+### Video player configurations
+- [struct VideoPlayerComponent](./videoplayercomponent.md)
   A component that supports general video-playback experience with an AV player.
-- [VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/immersiveviewingmode-swift.enum.md)
+- [VideoPlayerComponent.ImmersiveViewingMode](./videoplayercomponent/immersiveviewingmode-swift.enum.md)
   Options for viewing the video during immersive-media playback.
-- [struct VideoMaterial](videomaterial.md)
+- [struct VideoMaterial](./videomaterial.md)
   A material that supports animated textures.
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+- [VideoPlaybackController.ViewingMode](./videoplaybackcontroller/viewingmode.md)
   Options for viewing video playback.
 
 

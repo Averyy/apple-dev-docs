@@ -1,18 +1,19 @@
 # getBytePointer
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A pointer to a function that returns a pointer to the provider’s data. For more information, see [`CGDataProviderGetBytePointerCallback`](cgdataprovidergetbytepointercallback.md).
+A pointer to a function that returns a pointer to the provider’s data. For more information, see [`CGDataProviderGetBytePointerCallback`](../cgdataprovidergetbytepointercallback.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A pointer to a function that returns a pointer to the provider’s data. For mor
 var getBytePointer: CGDataProviderGetBytePointerCallback?
 ```
 
+```c
+CGDataProviderGetBytePointerCallback getBytePointer;
+```
+
 ## See Also
 
-- [var getBytesAtPosition: CGDataProviderGetBytesAtPositionCallback?](cgdataproviderdirectcallbacks/getbytesatposition.md)
+### Instance Properties
+- [var getBytesAtPosition: CGDataProviderGetBytesAtPositionCallback?](./getbytesatposition.md)
   A pointer to a function that copies data from the provider.
-- [var releaseBytePointer: CGDataProviderReleaseBytePointerCallback?](cgdataproviderdirectcallbacks/releasebytepointer.md)
-  A pointer to a function that Core Graphics calls to release a pointer to the provider’s data. For more information, see [`CGDataProviderReleaseBytePointerCallback`](cgdataproviderreleasebytepointercallback.md).
-- [var releaseInfo: CGDataProviderReleaseInfoCallback?](cgdataproviderdirectcallbacks/releaseinfo.md)
-  A pointer to a function that handles clean-up for the data provider, or `NULL`. For more information, see [`CGDataProviderReleaseInfoCallback`](cgdataproviderreleaseinfocallback.md).
-- [var version: UInt32](cgdataproviderdirectcallbacks/version.md)
+- [var releaseBytePointer: CGDataProviderReleaseBytePointerCallback?](./releasebytepointer.md)
+  A pointer to a function that Core Graphics calls to release a pointer to the provider’s data. For more information, see [`CGDataProviderReleaseBytePointerCallback`](../cgdataproviderreleasebytepointercallback.md).
+- [var releaseInfo: CGDataProviderReleaseInfoCallback?](./releaseinfo.md)
+  A pointer to a function that handles clean-up for the data provider, or `NULL`. For more information, see [`CGDataProviderReleaseInfoCallback`](../cgdataproviderreleaseinfocallback.md).
+- [var version: UInt32](./version.md)
   The version of this structure. It should be set to 0.
 
 

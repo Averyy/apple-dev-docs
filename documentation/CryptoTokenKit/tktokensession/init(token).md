@@ -1,7 +1,8 @@
 # init(token:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a token session with the specified token.
 
@@ -18,6 +19,10 @@ Initializes a token session with the specified token.
 
 ```swift
 init(token: TKToken)
+```
+
+```objc
+- (instancetype) initWithToken:(TKToken *) token;
 ```
 
 #### Return Value

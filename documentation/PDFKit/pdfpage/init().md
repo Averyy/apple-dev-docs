@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(image: UIImage, options: [PDFPage.ImageInitializationOption : Any])](pdfpage/init(image:options:).md)
+### Initializers
+- [init?(image: UIImage, options: [PDFPage.ImageInitializationOption : Any])](./init%28image,options%29.md)
 
 
 ---

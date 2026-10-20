@@ -1,7 +1,8 @@
 # tiled(multiples:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tensor by replicating its elements multiple times.
 
@@ -46,13 +47,14 @@ If tensor has fewer dimensions than `multiples`, then the tensor is reshaped by 
 
 ## See Also
 
-- [func expandingShape(at:)](mltensor/expandingshape(at:).md)
+### Accessing the extended tensor, sign and reciprocal
+- [func expandingShape(at:)](./expandingshape%28at%29.md)
   Returns a shape-expanded tensor with a dimension of 1 inserted at the specified shape indices.
-- [func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor](mltensor/bandpart(lowerbandcount:upperbandcount:).md)
+- [func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor](./bandpart%28lowerbandcount,upperbandcount%29.md)
   Returns a new tensor with the same shape where everything outside a central band in each innermost matrix is set to zero.
-- [func sign() -> MLTensor](mltensor/sign.md)
+- [func sign() -> MLTensor](./sign%28%29.md)
   Returns the sign of the tensor’s elements.
-- [func reciprocal() -> MLTensor](mltensor/reciprocal.md)
+- [func reciprocal() -> MLTensor](./reciprocal%28%29.md)
   Computes the reciprocal of the tensor’s elements.
 
 

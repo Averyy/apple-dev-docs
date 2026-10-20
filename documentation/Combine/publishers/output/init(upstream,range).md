@@ -1,7 +1,8 @@
 # init(upstream:range:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that publishes elements specified by a range.
 

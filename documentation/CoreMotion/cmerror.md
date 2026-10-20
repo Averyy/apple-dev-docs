@@ -1,7 +1,8 @@
 # CMError
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines motion errors.
 
@@ -19,55 +20,60 @@ Defines motion errors.
 struct CMError
 ```
 
+```c
+typedef enum { ... } CMError;
+```
+
 ## Topics
 
 ### Errors
-- [var CMErrorDeviceRequiresMovement: CMError](cmerrordevicerequiresmovement.md)
+- [var CMErrorDeviceRequiresMovement: CMError](./cmerrordevicerequiresmovement.md)
   The device must move for a sampling of motion data to occur.
-- [var CMErrorInvalidAction: CMError](cmerrorinvalidaction.md)
+- [var CMErrorInvalidAction: CMError](./cmerrorinvalidaction.md)
   The specified action is invalid.
-- [var CMErrorInvalidParameter: CMError](cmerrorinvalidparameter.md)
+- [var CMErrorInvalidParameter: CMError](./cmerrorinvalidparameter.md)
   The specified parameter is invalid.
-- [var CMErrorMotionActivityNotAuthorized: CMError](cmerrormotionactivitynotauthorized.md)
+- [var CMErrorMotionActivityNotAuthorized: CMError](./cmerrormotionactivitynotauthorized.md)
   The app isn’t currently authorized to use motion activity support.
-- [var CMErrorMotionActivityNotAvailable: CMError](cmerrormotionactivitynotavailable.md)
+- [var CMErrorMotionActivityNotAvailable: CMError](./cmerrormotionactivitynotavailable.md)
   Motion activity support isn’t available on the current device.
-- [var CMErrorMotionActivityNotEntitled: CMError](cmerrormotionactivitynotentitled.md)
+- [var CMErrorMotionActivityNotEntitled: CMError](./cmerrormotionactivitynotentitled.md)
   The app is missing an entitlement for the requested activity.
-- [var CMErrorNilData: CMError](cmerrornildata.md)
+- [var CMErrorNilData: CMError](./cmerrornildata.md)
   Core Motion didn’t return any data.
-- [var CMErrorNULL: CMError](cmerrornull.md)
+- [var CMErrorNULL: CMError](./cmerrornull.md)
   No error occurred.
-- [var CMErrorNotAuthorized: CMError](cmerrornotauthorized.md)
+- [var CMErrorNotAuthorized: CMError](./cmerrornotauthorized.md)
   The app isn’t authorized to use the Core Motion framework.
-- [var CMErrorNotAvailable: CMError](cmerrornotavailable.md)
+- [var CMErrorNotAvailable: CMError](./cmerrornotavailable.md)
   The requested service isn’t available on this device.
-- [var CMErrorNotEntitled: CMError](cmerrornotentitled.md)
+- [var CMErrorNotEntitled: CMError](./cmerrornotentitled.md)
   The app is missing a required entitlement.
-- [var CMErrorSize: CMError](cmerrorsize.md)
+- [var CMErrorSize: CMError](./cmerrorsize.md)
   The data is the incorrect size.
-- [var CMErrorTrueNorthNotAvailable: CMError](cmerrortruenorthnotavailable.md)
+- [var CMErrorTrueNorthNotAvailable: CMError](./cmerrortruenorthnotavailable.md)
   True north isn’t available on this device.
-- [var CMErrorUnknown: CMError](cmerrorunknown.md)
+- [var CMErrorUnknown: CMError](./cmerrorunknown.md)
   An unknown error occurred.
 ### Initializers
-- [init(UInt32)](cmerror/init(_:).md)
-- [init(rawValue: UInt32)](cmerror/init(rawvalue:).md)
+- [init(UInt32)](./cmerror/init%28_%29.md)
+- [init(rawValue: UInt32)](./cmerror/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](cmerror/rawvalue.md)
+- [var rawValue: UInt32](./cmerror/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [let CMErrorDomain: String](cmerrordomain.md)
+### Understanding Errors
+- [let CMErrorDomain: String](./cmerrordomain.md)
   The error domain for Core Motion.
 
 

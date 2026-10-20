@@ -1,17 +1,20 @@
 # sslCipherSuites
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of allowed cipher suites when negotiating TLS.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- tvOS 17.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`sec_protocol_options_append_tls_ciphersuite(_:_:)`](../../Security/sec_protocol_options_append_tls_ciphersuite%28_,_%29.md) function from the [Security](../../Security/Security.md) framework instead.
 
 ## Declaration
 
@@ -19,17 +22,22 @@ The set of allowed cipher suites when negotiating TLS.
 var sslCipherSuites: Set<NSNumber>? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSSet<NSNumber *> * SSLCipherSuites;
+```
+
 #### Discussion
 
-Values for cipher suites are defined in `<Security/CipherSuite.h>`. These values should be wrapped as [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects in a set. If this property is set to `nil`, the default cipher suites will be used.
+Values for cipher suites are defined in `<Security/CipherSuite.h>`. These values should be wrapped as [`NSNumber`](../../Foundation/nsnumber.md) objects in a set. If this property is set to `nil`, the default cipher suites will be used.
 
 ## See Also
 
-- [var tlsSessionID: Data?](nwtlsparameters/tlssessionid.md)
+### Accessing TLS parameters
+- [var tlsSessionID: Data?](./tlssessionid.md)
   The Session ID to use for the associated TCP connection.
-- [var minimumSSLProtocolVersion: Int](nwtlsparameters/minimumsslprotocolversion.md)
+- [var minimumSSLProtocolVersion: Int](./minimumsslprotocolversion.md)
   The minimum allowed `SSLProtocol` value to use when negotiating TLS.
-- [var maximumSSLProtocolVersion: Int](nwtlsparameters/maximumsslprotocolversion.md)
+- [var maximumSSLProtocolVersion: Int](./maximumsslprotocolversion.md)
   The maximum allowed `SSLProtocol` value to use when negotiating TLS.
 
 

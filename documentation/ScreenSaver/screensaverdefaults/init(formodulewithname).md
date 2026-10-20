@@ -1,7 +1,8 @@
 # init(forModuleWithName:)
 
 **Framework**: Screen Saver  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a screen saver defaults instance that reads and writes defaults for the specified module.
 
@@ -12,6 +13,10 @@ Returns a screen saver defaults instance that reads and writes defaults for the 
 
 ```swift
 convenience init?(forModuleWithName inModuleName: String)
+```
+
+```objc
++ (instancetype) defaultsForModuleWithName:(NSString *) inModuleName;
 ```
 
 

@@ -1,7 +1,8 @@
 # FamilyControlsError.invalidArgument
 
 **Framework**: Family Controls  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The method’s arguments are invalid.
 
@@ -18,19 +19,20 @@ case invalidArgument
 
 ## See Also
 
-- [FamilyControlsError.invalidAccountType](familycontrolserror/invalidaccounttype.md)
+### Error values
+- [FamilyControlsError.invalidAccountType](./invalidaccounttype.md)
   The device isn’t signed into a valid iCloud account.
-- [FamilyControlsError.authorizationConflict](familycontrolserror/authorizationconflict.md)
+- [FamilyControlsError.authorizationConflict](./authorizationconflict.md)
   Another authorized app already provides parental controls.
-- [FamilyControlsError.authorizationCanceled](familycontrolserror/authorizationcanceled.md)
+- [FamilyControlsError.authorizationCanceled](./authorizationcanceled.md)
   The parent or guardian canceled a request for authorization.
-- [FamilyControlsError.unavailable](familycontrolserror/unavailable.md)
+- [FamilyControlsError.unavailable](./unavailable.md)
   The system failed to set up the Family Control framework.
-- [FamilyControlsError.restricted](familycontrolserror/restricted.md)
+- [FamilyControlsError.restricted](./restricted.md)
   A restriction prevents your app from using Family Controls on this device.
-- [FamilyControlsError.networkError](familycontrolserror/networkerror.md)
+- [FamilyControlsError.networkError](./networkerror.md)
   The device must be connected to the network in order to enroll with parental controls.
-- [FamilyControlsError.authenticationMethodUnavailable](familycontrolserror/authenticationmethodunavailable.md)
+- [FamilyControlsError.authenticationMethodUnavailable](./authenticationmethodunavailable.md)
   The device must have a passcode set in order for an individual to enroll with parental controls.
 
 

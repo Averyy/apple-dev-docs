@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The result file’s creation date.
@@ -15,15 +16,20 @@ The result file’s creation date.
 var creationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * creationDate;
+```
+
 ## See Also
 
-- [var contentModificationDate: Date?](nsfileprovidersearchresult/contentmodificationdate.md)
+### Accessing file metadata
+- [var contentModificationDate: Date?](./contentmodificationdate.md)
   The result file’s content modification date.
-- [var lastUsedDate: Date?](nsfileprovidersearchresult/lastuseddate.md)
+- [var lastUsedDate: Date?](./lastuseddate.md)
   The result file’s last-used date.
-- [var contentType: UTType](nsfileprovidersearchresult/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The result file’s content type.
-- [var documentSize: NSNumber?](nsfileprovidersearchresult/documentsize.md)
+- [var documentSize: NSNumber?](./documentsize.md)
   The result file’s size.
 
 

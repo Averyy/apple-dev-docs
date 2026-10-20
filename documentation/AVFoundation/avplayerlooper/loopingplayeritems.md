@@ -1,7 +1,8 @@
 # loopingPlayerItems
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing replicas of the template player item used to accomplish the looping.
 
@@ -19,17 +20,22 @@ An array containing replicas of the template player item used to accomplish the 
 var loopingPlayerItems: [AVPlayerItem] { get }
 ```
 
+```objc
+@property (readonly) NSArray<AVPlayerItem *> * loopingPlayerItems;
+```
+
 #### Discussion
 
-`AVPlayerLooper` creates replicas of the template [`AVPlayerItem`](avplayeritem.md) using the [`copyWithZone:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copywithzone:) method and inserts them in the queue player’s queue to accomplish the looping. You can determine the number of replicas created and can listen for notifications and property changes from the replicas if desired.
+`AVPlayerLooper` creates replicas of the template [`AVPlayerItem`](../avplayeritem.md) using the [`copyWithZone:`](../../ObjectiveC/nsobject-swift.class/copywithzone_.md) method and inserts them in the queue player’s queue to accomplish the looping. You can determine the number of replicas created and can listen for notifications and property changes from the replicas if desired.
 
-Access to the [`AVPlayerItem`](avplayeritem.md) replicas are for informational purposes and to allow you to apply any configuration that is not transferred from the template player item to the replicas. For instance, any instances of [`AVPlayerItemOutput`](avplayeritemoutput.md) and [`AVPlayerItemMediaDataCollector`](avplayeritemmediadatacollector.md) attached to the template player item are not transferred to the replicas so you should add them to each replica item if needed.
+Access to the [`AVPlayerItem`](../avplayeritem.md) replicas are for informational purposes and to allow you to apply any configuration that is not transferred from the template player item to the replicas. For instance, any instances of [`AVPlayerItemOutput`](../avplayeritemoutput.md) and [`AVPlayerItemMediaDataCollector`](../avplayeritemmediadatacollector.md) attached to the template player item are not transferred to the replicas so you should add them to each replica item if needed.
 
 > ❗ **Important**:  You should not modify any properties of the replicas that would disrupt looping playback. This includes properties such as the playhead time/date, selected media option, and forward playback end time.
 
 ## See Also
 
-- [func disableLooping()](avplayerlooper/disablelooping.md)
+### Configuring looping
+- [func disableLooping()](./disablelooping%28%29.md)
   Disables looping for the player queue.
 
 

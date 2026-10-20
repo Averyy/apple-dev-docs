@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit component of the measurement.
 
@@ -22,7 +23,8 @@ let unit: UnitType
 
 ## See Also
 
-- [var value: Double](measurement/value.md)
+### Accessing the Value and Units
+- [var value: Double](./value.md)
   The value component of the measurement.
 
 

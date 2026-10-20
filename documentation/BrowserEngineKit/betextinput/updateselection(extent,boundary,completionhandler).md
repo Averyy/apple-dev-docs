@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Includes the text up to the given point in the current text selection.
@@ -15,12 +16,20 @@ Includes the text up to the given point in the current text selection.
 ## Declaration
 
 ```swift
+func updateSelection(extent point: CGPoint, boundary granularity: UITextGranularity, completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func updateSelection(extent point: CGPoint, boundary granularity: UITextGranularity) async -> Bool
+```
+
+```objc
+- (void) updateSelectionWithExtentPoint:(CGPoint) point boundary:(UITextGranularity) granularity completionHandler:(void (^)(BOOL selectionEndIsMoving)) completionHandler;
 ```
 
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 ## Parameters
 

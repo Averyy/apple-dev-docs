@@ -1,7 +1,8 @@
 # scrollIndexToVisible(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the receiver to the item at the specified index.
 
@@ -12,6 +13,10 @@ Scrolls the receiver to the item at the specified index.
 
 ```swift
 func scrollIndexToVisible(_ index: Int)
+```
+
+```objc
+- (void) scrollIndexToVisible:(NSInteger) index;
 ```
 
 ## Parameters

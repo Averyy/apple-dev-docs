@@ -1,17 +1,22 @@
 # dataString
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text of the processing instruction.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var dataString: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef dataString;
 ```
 
 

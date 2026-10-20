@@ -1,7 +1,8 @@
 # IOFreeAligned
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Frees memory allocated with IOMallocAligned.
 
@@ -10,7 +11,7 @@ Frees memory allocated with IOMallocAligned.
 
 ## Declaration
 
-```swift
+```c
 void IOFreeAligned(void *address, vm_size_t size);
 ```
 
@@ -25,9 +26,10 @@ This function frees memory allocated with IOMallocAligned, it may block and so s
 
 ## See Also
 
-- [IOFree](1575290-iofree.md)
+### Deallocation
+- [IOFree](./api-1575290-iofree.md)
   Frees memory allocated with IOMalloc.
-- [IOFreePageable](1575300-iofreepageable.md)
+- [IOFreePageable](./api-1575300-iofreepageable.md)
   Frees memory allocated with IOMallocPageable.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierAudioFeedbackSupport
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierAudioFeedbackSupport = 0x0305
 ```
 

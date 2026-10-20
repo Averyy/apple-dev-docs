@@ -1,7 +1,8 @@
 # setMagnification(_:centeredAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Magnify the content by the given amount and center the result on the given point.
 
@@ -14,9 +15,13 @@ Magnify the content by the given amount and center the result on the given point
 func setMagnification(_ magnification: CGFloat, centeredAt point: NSPoint)
 ```
 
+```objc
+- (void) setMagnification:(CGFloat) magnification centeredAtPoint:(NSPoint) point;
+```
+
 #### Discussion
 
-This method scales the content view such that the passed in point (in content view space) remains at the same screen location once the scaling is completed. The resulting magnification value is clipped to the [`minMagnification`](nsscrollview/minmagnification.md) and [`maxMagnification`](nsscrollview/maxmagnification.md) values. To animate the magnification, use the object’s animator.
+This method scales the content view such that the passed in point (in content view space) remains at the same screen location once the scaling is completed. The resulting magnification value is clipped to the [`minMagnification`](./minmagnification.md) and [`maxMagnification`](./maxmagnification.md) values. To animate the magnification, use the object’s animator.
 
 ## Parameters
 
@@ -25,15 +30,16 @@ This method scales the content view such that the passed in point (in content vi
 
 ## See Also
 
-- [var allowsMagnification: Bool](nsscrollview/allowsmagnification.md)
+### Zooming the Scroll View
+- [var allowsMagnification: Bool](./allowsmagnification.md)
   Allows the user to magnify the scroll view.
-- [var magnification: CGFloat](nsscrollview/magnification.md)
+- [var magnification: CGFloat](./magnification.md)
   The amount by which the content is currently scaled.
-- [func magnify(toFit: NSRect)](nsscrollview/magnify(tofit:).md)
+- [func magnify(toFit: NSRect)](./magnify%28tofit%29.md)
   Magnifies the content view proportionally such that the given rectangle fits centered in the scroll view.
-- [var maxMagnification: CGFloat](nsscrollview/maxmagnification.md)
+- [var maxMagnification: CGFloat](./maxmagnification.md)
   The maximum value to which the content can be magnified.
-- [var minMagnification: CGFloat](nsscrollview/minmagnification.md)
+- [var minMagnification: CGFloat](./minmagnification.md)
   The minimum value to which the content can be magnified.
 
 

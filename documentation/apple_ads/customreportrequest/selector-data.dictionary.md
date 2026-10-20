@@ -1,7 +1,8 @@
 # CustomReportRequest.Selector
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of condition objects.
 
@@ -10,14 +11,14 @@ A list of condition objects.
 
 ## Declaration
 
-```swift
+```
 object CustomReportRequest.Selector
 ```
 
 ## Topics
 
 ### Objects
-- [object CustomReportRequest.Selector.Conditions](customreportrequest/selector-data.dictionary/conditions-data.dictionary.md)
+- [object CustomReportRequest.Selector.Conditions](./selector-data.dictionary/conditions-data.dictionary.md)
   A container for condition objects that allow users to filter a list of records.
 
 ## Properties

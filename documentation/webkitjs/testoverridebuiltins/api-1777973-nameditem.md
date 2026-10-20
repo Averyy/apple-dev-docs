@@ -1,14 +1,15 @@
 # namedItem
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Mobile 10.0+
 
 ## Declaration
 
-```swift
+```
 getter Node namedItem(
     DOMString name
 );

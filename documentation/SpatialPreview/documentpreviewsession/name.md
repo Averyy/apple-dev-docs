@@ -1,13 +1,14 @@
 # name
 
 **Framework**: Spatial Preview  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name of the document on the spatial preview
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

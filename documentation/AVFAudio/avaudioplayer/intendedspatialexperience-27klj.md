@@ -1,7 +1,8 @@
 # intendedSpatialExperience
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intended spatial experience for this player.
 

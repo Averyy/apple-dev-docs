@@ -1,7 +1,8 @@
 # sampleType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sample type.
 
@@ -20,23 +21,29 @@ The sample type.
 var sampleType: HKSampleType { get }
 ```
 
+```objc
+@property (copy, readonly) HKSampleType * sampleType;
+```
+
 #### Discussion
 
-This property contains a concrete sample type that corresponds with this sample’s concrete class. For example, if the sample is an [`HKQuantitySample`](hkquantitysample.md) instance, it returns an [`HKQuantityType`](hkquantitytype.md) object.
+This property contains a concrete sample type that corresponds with this sample’s concrete class. For example, if the sample is an [`HKQuantitySample`](../hkquantitysample.md) instance, it returns an [`HKQuantityType`](../hkquantitytype.md) object.
 
 ## See Also
 
-- [var quantityType: HKQuantityType](hkquantitysample/quantitytype.md)
+### Related Documentation
+- [var quantityType: HKQuantityType](../hkquantitysample/quantitytype.md)
   The quantity type for this sample.
-- [var correlationType: HKCorrelationType](hkcorrelation/correlationtype.md)
+- [var correlationType: HKCorrelationType](../hkcorrelation/correlationtype.md)
   The type for this correlation.
-- [var categoryType: HKCategoryType](hkcategorysample/categorytype.md)
+- [var categoryType: HKCategoryType](../hkcategorysample/categorytype.md)
   The category type for this sample.
-- [var startDate: Date](hksample/startdate.md)
+### Accessing the Sample’s Data
+- [var startDate: Date](./startdate.md)
   The sample’s start date.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](./enddate.md)
   The sample’s end date.
-- [var hasUndeterminedDuration: Bool](hksample/hasundeterminedduration.md)
+- [var hasUndeterminedDuration: Bool](./hasundeterminedduration.md)
   Indicates whether the sample has an unknown duration.
 
 

@@ -1,10 +1,11 @@
 # init(deviceAddress:pageScanRepetitionMode:pageScanPeriodMode:pageScanMode:classOfDevice:clockOffset:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a frame semantics feature.
 
@@ -17,9 +18,9 @@ init(rawValue: UInt)
 
 #### Discussion
 
-Initialize an [`ARConfiguration.FrameSemantics`](arconfiguration/framesemantics-swift.struct.md) with the value of zero to indicate that no optional frame features are enabled.
+Initialize an [`ARConfiguration.FrameSemantics`](../framesemantics-swift.struct.md) with the value of zero to indicate that no optional frame features are enabled.
 
-You enable a feature by adding it to your configuration’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md) option set.
+You enable a feature by adding it to your configuration’s [`frameSemantics`](../framesemantics-swift.property.md) option set.
 
 
 ---

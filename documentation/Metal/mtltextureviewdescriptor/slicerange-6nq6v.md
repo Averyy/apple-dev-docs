@@ -1,7 +1,8 @@
 # sliceRange
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A desired range of slices of a texture view.
 

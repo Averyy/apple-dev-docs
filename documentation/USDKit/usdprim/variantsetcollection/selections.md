@@ -1,7 +1,8 @@
 # selections
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The composed variant selections on this prim, keyed by variant set name.
 

@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata for the output file.
 
@@ -18,13 +19,18 @@ The metadata for the output file.
 var metadata: [AVMetadataItem]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<AVMetadataItem *> * metadata;
+```
+
 #### Discussion
 
-This array contains [`AVMetadataItem`](avmetadataitem.md) objects. You use it to add metadata, such as copyright, creation date, and so on, to the recorded movie file.
+This array contains [`AVMetadataItem`](../avmetadataitem.md) objects. You use it to add metadata, such as copyright, creation date, and so on, to the recorded movie file.
 
 ## See Also
 
-- [var movieFragmentInterval: CMTime](avcapturemoviefileoutput/moviefragmentinterval.md)
+### Configuring movies
+- [var movieFragmentInterval: CMTime](./moviefragmentinterval.md)
   The number of seconds of output that are written per fragment.
 
 

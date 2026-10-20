@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents no encryption.
 
@@ -11,7 +12,7 @@ A constant that represents no encryption.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static let none: ArchiveEncryptionContext.EncryptionMode
 
 ## See Also
 
-- [static let ecdhe_p256: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct/ecdhe_p256.md)
+### Encryption Mode Constants
+- [static let ecdhe_p256: ArchiveEncryptionContext.EncryptionMode](./ecdhe_p256.md)
   A constant that represents ephemeral Diffie-Hellman encryption mode.
-- [static let scrypt: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct/scrypt.md)
+- [static let scrypt: ArchiveEncryptionContext.EncryptionMode](./scrypt.md)
   A constant that represents ephemeral password encryption mode.
-- [static let symmetric: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct/symmetric.md)
+- [static let symmetric: ArchiveEncryptionContext.EncryptionMode](./symmetric.md)
   A constant that represents symmetric key encryption mode.
 
 

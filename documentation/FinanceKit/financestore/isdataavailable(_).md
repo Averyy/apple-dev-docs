@@ -1,7 +1,8 @@
 # isDataAvailable(_:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates if data that represents the provided type is available in the finance store.
 

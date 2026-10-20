@@ -1,7 +1,8 @@
 # kSCBondStatusDeviceDistributing
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Can be `0` or `1`.
 
@@ -14,11 +15,16 @@ Can be `0` or `1`.
 let kSCBondStatusDeviceDistributing: CFString
 ```
 
+```c
+extern CFStringRef const kSCBondStatusDeviceDistributing;
+```
+
 ## See Also
 
-- [let kSCBondStatusDeviceAggregationStatus: CFString](kscbondstatusdeviceaggregationstatus.md)
-  Device is aggregating. See [`Ethernet Bond Aggregation Status`](1546981-ethernet-bond-aggregation-status.md) for a list of possible values.
-- [let kSCBondStatusDeviceCollecting: CFString](kscbondstatusdevicecollecting.md)
+### Constants
+- [let kSCBondStatusDeviceAggregationStatus: CFString](./kscbondstatusdeviceaggregationstatus.md)
+  Device is aggregating. See [Ethernet Bond Aggregation Status](./api-1546981-ethernet-bond-aggregation-status.md) for a list of possible values.
+- [let kSCBondStatusDeviceCollecting: CFString](./kscbondstatusdevicecollecting.md)
   Can be `0` or `1`.
 
 

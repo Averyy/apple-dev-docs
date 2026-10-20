@@ -1,17 +1,22 @@
 # init(request:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 initializes a data source with a URL request.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 init!(request: URLRequest!)
+```
+
+```objc
+- (instancetype) initWithRequest:(NSURLRequest *) request;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ This method is the designated initializer for `WebDataSource` objects. Normally,
 
 ## See Also
 
-- [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
+### Related Documentation
+- [WebKit Objective-C Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
 
 
 ---

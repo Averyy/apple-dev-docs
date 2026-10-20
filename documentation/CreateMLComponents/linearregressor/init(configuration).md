@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linear regressor.
 
@@ -26,7 +27,8 @@ init(configuration: LinearRegressor<Scalar>.Configuration = Configuration())
 
 ## See Also
 
-- [LinearRegressor.Configuration](linearregressor/configuration-swift.struct.md)
+### Creating a regressor
+- [LinearRegressor.Configuration](./configuration-swift.struct.md)
   A linear regressor configuration.
 
 

@@ -1,7 +1,8 @@
 # numberOfCharacters
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of characters on the page, including whitespace characters.
 
@@ -19,15 +20,20 @@ Returns the number of characters on the page, including whitespace characters.
 var numberOfCharacters: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfCharacters;
+```
+
 ## See Also
 
-- [var string: String?](pdfpage/string.md)
+### Working with Textual Content
+- [var string: String?](./string.md)
   Returns an `NSString` object representing the text on the page.
-- [var attributedString: NSAttributedString?](pdfpage/attributedstring.md)
+- [var attributedString: NSAttributedString?](./attributedstring.md)
   Returns an `NSAttributedString` object representing the text on the page.
-- [func characterBounds(at: Int) -> CGRect](pdfpage/characterbounds(at:).md)
+- [func characterBounds(at: Int) -> CGRect](./characterbounds%28at%29.md)
   Returns the bounds, in page space, of the character at the specified index.
-- [func characterIndex(at: CGPoint) -> Int](pdfpage/characterindex(at:).md)
+- [func characterIndex(at: CGPoint) -> Int](./characterindex%28at%29.md)
   Returns the character index value for the specified point in page space.
 
 

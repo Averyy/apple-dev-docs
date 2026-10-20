@@ -1,7 +1,8 @@
 # imaginaryPartOfTensor(tensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the imaginary part of a tensor.
 
@@ -17,6 +18,10 @@ Returns the imaginary part of a tensor.
 
 ```swift
 func imaginaryPartOfTensor(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) imaginaryPartOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

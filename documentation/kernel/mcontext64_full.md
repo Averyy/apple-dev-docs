@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mcontext64_full {
     ...
 };
@@ -17,9 +17,9 @@ struct mcontext64_full {
 ## Topics
 
 ### Instance Properties
-- [es](mcontext64_full/3242803-es.md)
-- [fs](mcontext64_full/3242804-fs.md)
-- [ss](mcontext64_full/3242805-ss.md)
+- [es](./mcontext64_full/api-3242803-es.md)
+- [fs](./mcontext64_full/api-3242804-fs.md)
+- [ss](./mcontext64_full/api-3242805-ss.md)
 
 
 ---

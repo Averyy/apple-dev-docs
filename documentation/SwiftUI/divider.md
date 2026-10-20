@@ -1,7 +1,8 @@
 # Divider
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A visual element that can be used to separate other content.
 
@@ -23,8 +24,8 @@ struct Divider
 
 ## Mentions
 
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Building layouts with stack views](./building-layouts-with-stack-views.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
@@ -33,16 +34,17 @@ When contained in a stack, the divider extends across the minor axis of the stac
 ## Topics
 
 ### Creating a divider
-- [init()](divider/init.md)
+- [init()](./divider/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Spacer](spacer.md)
+### Separators
+- [struct Spacer](./spacer.md)
   A flexible space that expands along the major axis of its containing stack layout, or on both axes if not contained in a stack.
 
 

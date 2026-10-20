@@ -1,7 +1,8 @@
 # init(textElement:range:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new layout fragment using the provided text element and range.
 
@@ -18,14 +19,19 @@ Create a new layout fragment using the provided text element and range.
 init(textElement: NSTextElement, range rangeInElement: NSTextRange?)
 ```
 
+```objc
+- (instancetype) initWithTextElement:(NSTextElement *) textElement range:(NSTextRange *) rangeInElement;
+```
+
 ## Parameters
 
-- `textElement`: An [`NSTextElement`](nstextelement.md).
+- `textElement`: An [`NSTextElement`](../nstextelement.md).
 - `rangeInElement`: A range that defines the boundaries of the text for the new layout fragment.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nstextlayoutfragment/init(coder:).md)
+### Creating a layout fragment
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new layout fragment with the coder you provide.
 
 

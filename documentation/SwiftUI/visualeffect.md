@@ -1,7 +1,8 @@
 # VisualEffect
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Visual Effects change the visual appearance of a view without changing its ancestors or descendents.
 
@@ -38,78 +39,79 @@ You don’t conform to this protocol yourself. Instead, visual effects are creat
 ## Topics
 
 ### Adjusting Color
-- [func brightness(Double) -> some VisualEffect](visualeffect/brightness(_:).md)
+- [func brightness(Double) -> some VisualEffect](./visualeffect/brightness%28_%29.md)
   Brightens the view by the specified amount.
-- [func colorEffect(Shader, isEnabled: Bool) -> some VisualEffect](visualeffect/coloreffect(_:isenabled:).md)
+- [func colorEffect(Shader, isEnabled: Bool) -> some VisualEffect](./visualeffect/coloreffect%28_,isenabled%29.md)
   Returns a new visual effect that applies `shader` to `self` as a filter effect on the color of each pixel.
-- [func contrast(Double) -> some VisualEffect](visualeffect/contrast(_:).md)
+- [func contrast(Double) -> some VisualEffect](./visualeffect/contrast%28_%29.md)
   Sets the contrast and separation between similar colors in the view.
-- [func grayscale(Double) -> some VisualEffect](visualeffect/grayscale(_:).md)
+- [func grayscale(Double) -> some VisualEffect](./visualeffect/grayscale%28_%29.md)
   Adds a grayscale effect to the view.
-- [func hueRotation(Angle) -> some VisualEffect](visualeffect/huerotation(_:).md)
+- [func hueRotation(Angle) -> some VisualEffect](./visualeffect/huerotation%28_%29.md)
   Applies a hue rotation effect to the view.
-- [func saturation(Double) -> some VisualEffect](visualeffect/saturation(_:).md)
+- [func saturation(Double) -> some VisualEffect](./visualeffect/saturation%28_%29.md)
   Adjusts the color saturation of the view.
-- [func opacity(Double) -> some VisualEffect](visualeffect/opacity(_:).md)
+- [func opacity(Double) -> some VisualEffect](./visualeffect/opacity%28_%29.md)
   Sets the transparency of the view.
 ### Scaling
-- [func scaleEffect(_:anchor:)](visualeffect/scaleeffect(_:anchor:).md)
+- [func scaleEffect(_:anchor:)](./visualeffect/scaleeffect%28_,anchor%29.md)
   Scales this view uniformly by the specified factor, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some VisualEffect](visualeffect/scaleeffect(x:y:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some VisualEffect](./visualeffect/scaleeffect%28x,y,anchor%29.md)
   Scales the view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some VisualEffect](visualeffect/scaleeffect(x:y:z:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some VisualEffect](./visualeffect/scaleeffect%28x,y,z,anchor%29.md)
   Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 ### Rotating
-- [func rotationEffect(Angle, anchor: UnitPoint) -> some VisualEffect](visualeffect/rotationeffect(_:anchor:).md)
+- [func rotationEffect(Angle, anchor: UnitPoint) -> some VisualEffect](./visualeffect/rotationeffect%28_,anchor%29.md)
   Rotates content in two dimensions around the specified point.
-- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some VisualEffect](visualeffect/rotation3deffect(_:axis:anchor:anchorz:perspective:).md)
+- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some VisualEffect](./visualeffect/rotation3deffect%28_,axis,anchor,anchorz,perspective%29.md)
   Renders content as if it’s rotated in three dimensions around the specified axis.
-- [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint3D, perspective: CGFloat) -> some VisualEffect](visualeffect/perspectiverotationeffect(_:axis:anchor:perspective:).md)
+- [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint3D, perspective: CGFloat) -> some VisualEffect](./visualeffect/perspectiverotationeffect%28_,axis,anchor,perspective%29.md)
   Renders content as if it’s rotated in three dimensions around the specified axis.
-- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some VisualEffect](visualeffect/rotation3deffect(_:anchor:).md)
+- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some VisualEffect](./visualeffect/rotation3deffect%28_,anchor%29.md)
   Rotates content by the specified 3D rotation value.
-- [func rotation3DEffect(_:axis:anchor:)](visualeffect/rotation3deffect(_:axis:anchor:).md)
+- [func rotation3DEffect(_:axis:anchor:)](./visualeffect/rotation3deffect%28_,axis,anchor%29.md)
   Rotates content by an angle about an axis that you specify as a rotation axis value.
 ### Translating
-- [func offset(CGSize) -> some VisualEffect](visualeffect/offset(_:).md)
+- [func offset(CGSize) -> some VisualEffect](./visualeffect/offset%28_%29.md)
   Offsets the view by the horizontal and vertical amount specified in the offset parameter.
-- [func offset(x: CGFloat, y: CGFloat) -> some VisualEffect](visualeffect/offset(x:y:).md)
+- [func offset(x: CGFloat, y: CGFloat) -> some VisualEffect](./visualeffect/offset%28x,y%29.md)
   Offsets the view by the specified horizontal and vertical distances.
-- [func offset(z: CGFloat) -> some VisualEffect](visualeffect/offset(z:).md)
+- [func offset(z: CGFloat) -> some VisualEffect](./visualeffect/offset%28z%29.md)
   Brings a view forward in Z by the provided distance in points.
 ### Applying a transform
-- [func transform3DEffect(AffineTransform3D) -> some VisualEffect](visualeffect/transform3deffect(_:).md)
+- [func transform3DEffect(AffineTransform3D) -> some VisualEffect](./visualeffect/transform3deffect%28_%29.md)
   Applies a 3D transformation to this view’s rendered output.
-- [func transformEffect(_:)](visualeffect/transformeffect(_:).md)
+- [func transformEffect(_:)](./visualeffect/transformeffect%28_%29.md)
   Applies an affine transformation to the view’s rendered output.
 ### Applying other effects
-- [func blur(radius: CGFloat, opaque: Bool) -> some VisualEffect](visualeffect/blur(radius:opaque:).md)
+- [func blur(radius: CGFloat, opaque: Bool) -> some VisualEffect](./visualeffect/blur%28radius,opaque%29.md)
   Applies a Gaussian blur to the view.
-- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](visualeffect/distortioneffect(_:maxsampleoffset:isenabled:).md)
+- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](./visualeffect/distortioneffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new visual effect that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
-- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](visualeffect/layereffect(_:maxsampleoffset:isenabled:).md)
+- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](./visualeffect/layereffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new visual effect that applies `shader` to `self` as a filter on the raster layer created from `self`.
 ### Instance Methods
-- [func blendMode(BlendMode) -> some VisualEffect](visualeffect/blendmode(_:).md)
+- [func blendMode(BlendMode) -> some VisualEffect](./visualeffect/blendmode%28_%29.md)
   Sets the blend mode for compositing this view with overlapping views.
 
 ## Relationships
 
 ### Inherits From
-- [Animatable](animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Animatable](./animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [EmptyVisualEffect](emptyvisualeffect.md)
-- [ModifiedContent](modifiedcontent.md)
+- [EmptyVisualEffect](./emptyvisualeffect.md)
+- [ModifiedContent](./modifiedcontent.md)
 
 ## See Also
 
-- [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](view/visualeffect(_:).md)
+### Applying effects based on geometry
+- [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](./view/visualeffect%28_%29.md)
   Applies effects to this view, while providing access to layout information through a geometry proxy.
-- [func visualEffect3D((EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View](view/visualeffect3d(_:).md)
+- [func visualEffect3D((EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View](./view/visualeffect3d%28_%29.md)
   Applies effects to this view, while providing access to layout information through a 3D geometry proxy.
-- [struct EmptyVisualEffect](emptyvisualeffect.md)
+- [struct EmptyVisualEffect](./emptyvisualeffect.md)
   The base visual effect that you apply additional effect to.
 
 

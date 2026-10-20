@@ -1,7 +1,8 @@
 # shadowColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the shadow.
 
@@ -19,15 +20,20 @@ The color of the shadow.
 var shadowColor: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) id shadowColor;
+```
+
 #### Discussion
 
 The default shadow color is black with an alpha of 1/3. If you set this property to `nil`, the shadow is not drawn. The color you specify must be convertible to an RGBA color and may contain alpha information.
 
 ## See Also
 
-- [var shadowOffset: CGSize](nsshadow/shadowoffset.md)
+### Managing a shadow
+- [var shadowOffset: CGSize](./shadowoffset.md)
   The shadow’s relative position, which you specify with horizontal and vertical offset values.
-- [var shadowBlurRadius: CGFloat](nsshadow/shadowblurradius.md)
+- [var shadowBlurRadius: CGFloat](./shadowblurradius.md)
   The blur radius of the shadow.
 
 

@@ -1,7 +1,8 @@
 # Pipe
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A one-way communications channel between related processes.
 
@@ -20,35 +21,40 @@ A one-way communications channel between related processes.
 class Pipe
 ```
 
+```objc
+@interface NSPipe : NSObject
+```
+
 #### Overview
 
-[`Pipe`](pipe.md) objects provide an object-oriented interface for accessing pipes. An [`Pipe`](pipe.md) object represents both ends of a pipe and enables communication through the pipe. A pipe is a one-way communications channel between related processes; one process writes data, while the other process reads that data. The data that passes through the pipe is buffered; the size of the buffer is determined by the underlying operating system. [`Pipe`](pipe.md) is an abstract class, the public interface of a class cluster.
+[`Pipe`](./pipe.md) objects provide an object-oriented interface for accessing pipes. An [`Pipe`](./pipe.md) object represents both ends of a pipe and enables communication through the pipe. A pipe is a one-way communications channel between related processes; one process writes data, while the other process reads that data. The data that passes through the pipe is buffered; the size of the buffer is determined by the underlying operating system. [`Pipe`](./pipe.md) is an abstract class, the public interface of a class cluster.
 
 ## Topics
 
 ### Getting the File Handles for a Pipe
-- [var fileHandleForReading: FileHandle](pipe/filehandleforreading.md)
+- [var fileHandleForReading: FileHandle](./pipe/filehandleforreading.md)
   The receiver’s read file handle.
-- [var fileHandleForWriting: FileHandle](pipe/filehandleforwriting.md)
+- [var fileHandleForWriting: FileHandle](./pipe/filehandleforwriting.md)
   The receiver’s write file handle.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class Process](process.md)
+### Tasks and Pipes
+- [class Process](./process.md)
   An object that represents a subprocess of the current process.
 
 

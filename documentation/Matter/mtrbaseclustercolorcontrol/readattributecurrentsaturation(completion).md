@@ -1,7 +1,8 @@
 # readAttributeCurrentSaturation(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentSaturation(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentSaturation() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCurrentSaturationWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

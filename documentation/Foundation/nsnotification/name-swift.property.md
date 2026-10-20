@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the notification.
 
@@ -20,6 +21,10 @@ The name of the notification.
 var name: NSNotification.Name { get }
 ```
 
+```objc
+@property (copy, readonly) NSNotificationName name;
+```
+
 #### Discussion
 
 Typically you use this property to find out what kind of notification you are dealing with when you receive a notification.
@@ -30,9 +35,10 @@ Notification names can be any string. To avoid name collisions, you might want t
 
 ## See Also
 
-- [var object: Any?](nsnotification/object.md)
+### Getting Notification Information
+- [var object: Any?](./object.md)
   The object associated with the notification.
-- [var userInfo: [AnyHashable : Any]?](nsnotification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user information dictionary associated with the notification.
 
 

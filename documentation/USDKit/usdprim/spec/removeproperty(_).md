@@ -1,7 +1,8 @@
 # removeProperty(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the given property spec from this prim.
 

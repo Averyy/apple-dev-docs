@@ -1,7 +1,8 @@
 # filled(with:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a filled column by replacing missing elements with a value.
 

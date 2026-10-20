@@ -1,6 +1,7 @@
 # Migrating to a single-target watchOS app
 
-**Framework**: watchOS apps
+**Framework**: watchOS apps  
+**Role**: Article
 
 Adopt the single-target configuration to simplify your project and avoid ambiguity about where to store resources and apply entitlements.
 
@@ -15,9 +16,9 @@ Single-target apps have a simpler project configuration and avoid ambiguity abou
 
 > **Note**: Both single-target and dual-target apps can include other targets. For example, you can add a target to implement widgets or app intents.
 
-When the minimum deployment target is watchOS 9.2 or later, building a dual-target app with Xcode produces an error, and prompts you to migrate to a single-target app using the built-in migrator. Building a single-target app that still uses the  [`WKExtension`](https://developer.apple.comhttps://developer.apple.com/documentation/watchkit/wkextension) APIs produces warnings that guide you to replace the APIs with the [`WKApplication`](https://developer.apple.comhttps://developer.apple.com/documentation/watchkit/wkapplication) counterparts. If you have a dual-target watchOS app, migrate it to a single-target app.
+When the minimum deployment target is watchOS 9.2 or later, building a dual-target app with Xcode produces an error, and prompts you to migrate to a single-target app using the built-in migrator. Building a single-target app that still uses the  [WKExtension](../WatchKit/wkextension.md) APIs produces warnings that guide you to replace the APIs with the [WKApplication](../WatchKit/wkapplication.md) counterparts. If you have a dual-target watchOS app, migrate it to a single-target app.
 
-#### Convert a Dual Target App to a Single Target App
+#### Convert a dual-target app to a single-target app
 
 Follow these steps to convert your app:
 
@@ -29,19 +30,20 @@ Follow these steps to convert your app:
 6. Reorganize the groups and files in the Project navigator to clean up your project.
 7. Run the project on an Apple Watch to verify everything works.
 
-The second step removes the WatchKit extension target and moves its source code and resources to the watchOS app target. At the code level, it replaces [`WKExtension`](https://developer.apple.comhttps://developer.apple.com/documentation/watchkit/wkextension) and [`WKExtensionDelegate`](https://developer.apple.comhttps://developer.apple.com/documentation/watchkit/wkextensiondelegate) with [`WKApplication`](https://developer.apple.comhttps://developer.apple.com/documentation/watchkit/wkapplication) and [`WKApplicationDelegate`](https://developer.apple.comhttps://developer.apple.com/documentation/watchkit/wkapplicationdelegate).
+The second step removes the WatchKit extension target and moves its source code and resources to the watchOS app target. At the code level, it replaces [`WKExtension`](../WatchKit/wkextension.md) and [WKExtensionDelegate](../WatchKit/wkextensiondelegate.md) with [`WKApplication`](../WatchKit/wkapplication.md) and [WKApplicationDelegate](../WatchKit/wkapplicationdelegate.md).
 
-It also updates the watchOS app target’s information property list as needed. For example, if your watchOS app has a complication, it moves the complication controller class, which is specified with [`CLKComplicationPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/clkcomplicationprincipalclass), to the watchOS app target, and adds the `CLKComplicationPrincipalClass` and [`CLKComplicationSupportedFamilies`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/clkcomplicationsupportedfamilies) entries to the watchOS app’s information property list.
+It also updates the watchOS app target’s information property list as needed. For example, if your watchOS app has a complication, it moves the complication controller class, which is specified with [CLKComplicationPrincipalClass](../BundleResources/information_property_list/clkcomplicationprincipalclass.md), to the watchOS app target, and adds the `CLKComplicationPrincipalClass` and [CLKComplicationSupportedFamilies](../BundleResources/information_property_list/clkcomplicationsupportedfamilies.md) entries to the watchOS app’s information property list.
 
 ## See Also
 
-- [Creating an intuitive and effective UI in watchOS 10](creating-an-intuitive-and-effective-ui-in-watchos-10.md)
+### Essentials
+- [Creating an intuitive and effective UI in watchOS 10](./creating-an-intuitive-and-effective-ui-in-watchos-10.md)
   Provide an even more streamlined, consistent, and glanceable user experience with new design features.
-- [Updating your app and widgets for watchOS 10](updating-your-app-and-widgets-for-watchos-10.md)
+- [Updating your app and widgets for watchOS 10](./updating-your-app-and-widgets-for-watchos-10.md)
   Integrate SwiftUI elements and watch-specific features, and build widgets for the Smart Stack.
-- [Building a watchOS app](building_a_watchos_app.md)
+- [Building a watchOS app](./building_a_watchos_app.md)
   Set up your app’s life cycle and create its user interface with SwiftUI.
-- [watchOS updates](../updates/watchos.md)
+- [watchOS updates](../Updates/watchos.md)
   Learn about important changes to watchOS.
 
 

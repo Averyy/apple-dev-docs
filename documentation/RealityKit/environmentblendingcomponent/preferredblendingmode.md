@@ -1,7 +1,8 @@
 # preferredBlendingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies how the entity and its descendants blend against environments which encompass them.
 

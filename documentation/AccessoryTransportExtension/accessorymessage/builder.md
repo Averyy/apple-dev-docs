@@ -1,7 +1,8 @@
 # AccessoryMessage.Builder
 
 **Framework**: Accessory Transport Extension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A builder that constructs accessory messages declaratively.
 
@@ -18,21 +19,22 @@ struct Builder
 ## Topics
 
 ### Building messages
-- [static func buildBlock(AccessoryMessage...) -> AccessoryMessage](accessorymessage/builder/buildblock(_:).md)
+- [static func buildBlock(AccessoryMessage...) -> AccessoryMessage](./builder/buildblock%28_%29.md)
   Builds an accessory message from one or more payload components.
 ### Type Methods - generated
-- [static func buildEither(first: AccessoryMessage) -> AccessoryMessage](accessorymessage/builder/buildeither(first:).md)
+- [static func buildEither(first: AccessoryMessage) -> AccessoryMessage](./builder/buildeither%28first%29.md)
   Builds an accessory message from the first branch of a conditional.
-- [static func buildEither(second: AccessoryMessage) -> AccessoryMessage](accessorymessage/builder/buildeither(second:).md)
+- [static func buildEither(second: AccessoryMessage) -> AccessoryMessage](./builder/buildeither%28second%29.md)
   Builds an accessory message from the second branch of a conditional.
-- [static func buildExpression(AccessoryMessage.Payload) -> AccessoryMessage](accessorymessage/builder/buildexpression(_:).md)
+- [static func buildExpression(AccessoryMessage.Payload) -> AccessoryMessage](./builder/buildexpression%28_%29.md)
   Builds an accessory message from a payload expression.
-- [static func buildOptional(AccessoryMessage?) -> AccessoryMessage](accessorymessage/builder/buildoptional(_:).md)
+- [static func buildOptional(AccessoryMessage?) -> AccessoryMessage](./builder/buildoptional%28_%29.md)
   Builds an accessory message from an optional component.
 
 ## See Also
 
-- [init(() -> AccessoryMessage)](accessorymessage/init(_:).md)
+### Creating messages
+- [init(() -> AccessoryMessage)](./init%28_%29.md)
   Initializes an accessory message using a result builder closure.
 
 

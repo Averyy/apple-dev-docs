@@ -1,7 +1,8 @@
 # MLCPUComputeDevice
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a CPU compute device.
 
@@ -20,30 +21,35 @@ An object that represents a CPU compute device.
 class MLCPUComputeDevice
 ```
 
+```objc
+@interface MLCPUComputeDevice : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MLComputeDeviceProtocol](mlcomputedeviceprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MLComputeDeviceProtocol](./mlcomputedeviceprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MLComputeDevice](mlcomputedevice.md)
+### Compute devices
+- [enum MLComputeDevice](./mlcomputedevice.md)
   Compute devices for framework operations.
-- [class MLGPUComputeDevice](mlgpucomputedevice.md)
+- [class MLGPUComputeDevice](./mlgpucomputedevice.md)
   An object that represents a GPU compute device.
-- [class MLNeuralEngineComputeDevice](mlneuralenginecomputedevice.md)
+- [class MLNeuralEngineComputeDevice](./mlneuralenginecomputedevice.md)
   An object that represents a Neural Engine compute device.
-- [protocol MLComputeDeviceProtocol](mlcomputedeviceprotocol.md)
+- [protocol MLComputeDeviceProtocol](./mlcomputedeviceprotocol.md)
   An interface that represents a compute device type.
 
 

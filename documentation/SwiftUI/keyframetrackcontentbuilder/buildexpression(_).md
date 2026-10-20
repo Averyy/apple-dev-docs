@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+
@@ -20,16 +21,17 @@ static func buildExpression<K>(_ expression: K) -> K where Value == K.Value, K :
 
 ## See Also
 
+### Building keyframe track content
 - [static func buildArray([some KeyframeTrackContent<Value>]) -> some KeyframeTrackContent<Value>
-](keyframetrackcontentbuilder/buildarray(_:).md)
+](./buildarray%28_%29.md)
 - [static func buildBlock() -> some KeyframeTrackContent<Value>
-](keyframetrackcontentbuilder/buildblock.md)
-- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframetrackcontentbuilder/buildeither(first:).md)
-- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframetrackcontentbuilder/buildeither(second:).md)
+](./buildblock%28%29.md)
+- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28first%29.md)
+- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28second%29.md)
 - [static func buildPartialBlock(accumulated: some KeyframeTrackContent<Value>, next: some KeyframeTrackContent<Value>) -> some KeyframeTrackContent<Value>
-](keyframetrackcontentbuilder/buildpartialblock(accumulated:next:).md)
-- [static func buildPartialBlock<K>(first: K) -> K](keyframetrackcontentbuilder/buildpartialblock(first:).md)
-- [KeyframeTrackContentBuilder.Conditional](keyframetrackcontentbuilder/conditional.md)
+](./buildpartialblock%28accumulated,next%29.md)
+- [static func buildPartialBlock<K>(first: K) -> K](./buildpartialblock%28first%29.md)
+- [KeyframeTrackContentBuilder.Conditional](./conditional.md)
   A conditional result from the result builder.
 
 

@@ -1,7 +1,8 @@
 # message
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A message from the current participant to all other participants when you end a turn, forfeit a match, or end a match.
 
@@ -20,9 +21,21 @@ A message from the current participant to all other participants when you end a 
 var message: String? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * message;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite, nullable) NSString * message;
+```
+
 ## Mentions
 
-- [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
+- [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 
 #### Discussion
 
@@ -32,9 +45,10 @@ If your game instance isn’t running or is running in the background on other p
 
 ## See Also
 
-- [func setLocalizableMessageWithKey(String, arguments: [String]?)](gkturnbasedmatch/setlocalizablemessagewithkey(_:arguments:).md)
+### Sending Messages Between Participants
+- [func setLocalizableMessageWithKey(String, arguments: [String]?)](./setlocalizablemessagewithkey%28_,arguments%29.md)
   Sends a localized message from the current participant to all other participants when you end a turn, forfeit a match, or end a match.
-- [func sendReminder(to: [GKTurnBasedParticipant], localizableMessageKey: String, arguments: [String], completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/sendreminder(to:localizablemessagekey:arguments:completionhandler:).md)
+- [func sendReminder(to: [GKTurnBasedParticipant], localizableMessageKey: String, arguments: [String], completionHandler: (((any Error)?) -> Void)?)](./sendreminder%28to,localizablemessagekey,arguments,completionhandler%29.md)
   Sends a reminder from one participant to a specific set of other participants.
 
 

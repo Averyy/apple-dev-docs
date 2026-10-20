@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines whether to connect to a domain from another device.
@@ -12,7 +13,15 @@ Determines whether to connect to a domain from another device.
 ## Declaration
 
 ```swift
+func shouldConnectExternalDomain(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func shouldConnectExternalDomain() async throws
+```
+
+```objc
+- (void) shouldConnectExternalDomainWithCompletionHandler:(void (^)(NSError *connectionError)) completionHandler;
 ```
 
 

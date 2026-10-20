@@ -1,7 +1,8 @@
 # init(baselineHeadroomStops:method:)
 
 **Framework**: ColorSync  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a headroom-adaptive tone mapping.
 
@@ -22,12 +23,12 @@ init(baselineHeadroomStops: Float, method: ColorSyncProfile.HeadroomAdaptiveGain
 
 #### Discussion
 
-> **Note**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeBaselineHeadroom(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom(_:).md) if `baselineHeadroomStops` is negative.
+> **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeBaselineHeadroom(_:)`](../../error/negativebaselineheadroom%28_%29.md) if `baselineHeadroomStops` is negative.
 
 ## Parameters
 
 - `baselineHeadroomStops`: The headroom of the source content in stops above reference white. Must be greater than or equal to `0`.
-- `method`: The tone-mapping method to apply. Defaults to [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.referenceWhiteBased`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/referencewhitebased.md).
+- `method`: The tone-mapping method to apply. Defaults to [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.referenceWhiteBased`](./method-swift.enum/referencewhitebased.md).
 
 
 ---

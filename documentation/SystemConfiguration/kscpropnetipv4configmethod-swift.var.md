@@ -1,7 +1,8 @@
 # kSCPropNetIPv4ConfigMethod
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The IPv4 key `ConfigMethod`, whose value is of type `CFString`.
 
@@ -12,6 +13,10 @@ The IPv4 key `ConfigMethod`, whose value is of type `CFString`.
 
 ```swift
 let kSCPropNetIPv4ConfigMethod: CFString
+```
+
+```c
+extern CFStringRef const kSCPropNetIPv4ConfigMethod;
 ```
 
 #### Discussion
@@ -27,17 +32,18 @@ This key can be passed the following constants:
 
 ## See Also
 
-- [let kSCPropNetIPv4Addresses: CFString](kscpropnetipv4addresses-swift.var.md)
+### Constants
+- [let kSCPropNetIPv4Addresses: CFString](./kscpropnetipv4addresses-swift.var.md)
   The IPv4 key `Addresses`, whose value is of type `CFArray`, containing elements of type `CFString`.
-- [let kSCPropNetIPv4DHCPClientID: CFString](kscpropnetipv4dhcpclientid-swift.var.md)
+- [let kSCPropNetIPv4DHCPClientID: CFString](./kscpropnetipv4dhcpclientid-swift.var.md)
   The IPv4 key `DHCPClientID`, whose value is of type `CFString`.
-- [let kSCPropNetIPv4Router: CFString](kscpropnetipv4router-swift.var.md)
+- [let kSCPropNetIPv4Router: CFString](./kscpropnetipv4router-swift.var.md)
   The IPv4 key `Router`, whose value is of type `CFString`.
-- [let kSCPropNetIPv4SubnetMasks: CFString](kscpropnetipv4subnetmasks-swift.var.md)
+- [let kSCPropNetIPv4SubnetMasks: CFString](./kscpropnetipv4subnetmasks-swift.var.md)
   The IPv4 key `SubnetMasks`, whose value is of type `CFArray`, containing elements of type `CFString`.
-- [let kSCPropNetIPv4DestAddresses: CFString](kscpropnetipv4destaddresses-swift.var.md)
+- [let kSCPropNetIPv4DestAddresses: CFString](./kscpropnetipv4destaddresses-swift.var.md)
   The IPv4 key `DestAddresses`, whose value is of type `CFArray`, containing elements of type `CFString`.
-- [let kSCPropNetIPv4BroadcastAddresses: CFString](kscpropnetipv4broadcastaddresses-swift.var.md)
+- [let kSCPropNetIPv4BroadcastAddresses: CFString](./kscpropnetipv4broadcastaddresses-swift.var.md)
   The IPv4 key `BroadcastAddresses`, whose value is of type `CFArray`, containing elements of type `CFString`.
 
 

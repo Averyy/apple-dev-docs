@@ -1,7 +1,8 @@
 # handlesURLScheme(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether WebKit natively supports resources with the specified URL scheme.
 
@@ -18,9 +19,13 @@ Returns a Boolean value that indicates whether WebKit natively supports resource
 class func handlesURLScheme(_ urlScheme: String) -> Bool
 ```
 
+```objc
++ (BOOL) handlesURLScheme:(NSString *) urlScheme;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if WebKit provides native support for the URL scheme, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](../../Swift/true.md) if WebKit provides native support for the URL scheme, or [`false`](../../Swift/false.md) if it doesn’t.
 
 ## Parameters
 

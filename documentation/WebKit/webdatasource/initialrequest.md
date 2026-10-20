@@ -1,12 +1,13 @@
 # initialRequest
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the original request that was used to load the web content.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,11 +15,16 @@ A reference to the original request that was used to load the web content.
 var initialRequest: URLRequest! { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSURLRequest * initialRequest;
+```
+
 ## See Also
 
-- [var request: NSMutableURLRequest!](webdatasource/request.md)
+### Getting the request and response
+- [var request: NSMutableURLRequest!](./request.md)
   The request that was used to create the data source.
-- [var response: URLResponse!](webdatasource/response.md)
+- [var response: URLResponse!](./response.md)
   The response for this data source.
 
 

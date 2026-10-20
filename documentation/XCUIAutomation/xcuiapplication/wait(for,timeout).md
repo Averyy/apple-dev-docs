@@ -1,24 +1,29 @@
 # wait(for:timeout:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits for the application to reach the specified state or timeout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func wait(for state: XCUIApplication.State, timeout: TimeInterval) -> Bool
+```
+
+```objc
+- (BOOL) waitForState:(XCUIApplicationState) state timeout:(NSTimeInterval) timeout;
 ```
 
 #### Return Value

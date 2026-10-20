@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new conversation manager with a given conversation.
 
@@ -24,9 +25,10 @@ convenience init(configuration: ConversationManager.Configuration)
 
 ## See Also
 
-- [let configuration: ConversationManager.Configuration](conversationmanager/configuration-swift.property.md)
+### Creating the manager
+- [let configuration: ConversationManager.Configuration](./configuration-swift.property.md)
   The configuration of a conversation manager.
-- [ConversationManager.Configuration](conversationmanager/configuration-swift.struct.md)
+- [ConversationManager.Configuration](./configuration-swift.struct.md)
   Configuration options for a conversation manager.
 
 

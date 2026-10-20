@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.SoundStageSize.automatic
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A system-defined sound stage size.
 

@@ -1,7 +1,8 @@
 # relevantDates
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var relevantDates: [PKPassRelevantDate] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<PKPassRelevantDate *> * relevantDates;
 ```
 
 

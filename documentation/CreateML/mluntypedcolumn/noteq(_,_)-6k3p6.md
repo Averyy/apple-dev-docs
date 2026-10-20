@@ -1,7 +1,8 @@
 # !=(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of Booleans by testing whether the given value is not equal to each element in the given column.
 
@@ -19,6 +20,16 @@ Creates a column of Booleans by testing whether the given value is not equal to 
 static func != (a: any MLDataValueConvertible, b: MLUntypedColumn) -> MLUntypedColumn
 ```
 
+**Other overloads**:
+
+```swift
+static func != (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
+```
+
+```swift
+static func != (a: MLUntypedColumn, b: any MLDataValueConvertible) -> MLUntypedColumn
+```
+
 #### Return Value
 
 A new column of Booleans if the column and value have the same underlying type; otherwise an invalid column.
@@ -30,15 +41,16 @@ A new column of Booleans if the column and value have the same underlying type; 
 
 ## See Also
 
-- [static func == (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/==(_:_:)-6z88q.md)
+### Comparing a value with a column to generate an untyped column of booleans
+- [static func == (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](./eqeq%28_,_%29-6z88q.md)
   Creates a column of Booleans by testing whether the given value is equal to each element in the given column.
-- [static func > (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_(_:_:)-52drj.md)
+- [static func > (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](./op%28_,_%29-52drj.md)
   Creates a column of Booleans by testing whether the given value is greater than each element in the given column.
-- [static func < (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_(_:_:)-6qou9.md)
+- [static func < (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](./op%28_,_%29-6qou9.md)
   Creates a column of Booleans by testing whether the given value is less than each element in the given column.
-- [static func <= (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_=(_:_:)-t4bt.md)
+- [static func <= (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](./opeq%28_,_%29-t4bt.md)
   Creates a column of Booleans by testing whether the given value is less than or equal to each element in the given column.
-- [static func >= (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_=(_:_:)-6yycf.md)
+- [static func >= (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](./opeq%28_,_%29-6yycf.md)
   Creates a column of Booleans by testing whether the given value is greater than or equal to each element in the given column.
 
 

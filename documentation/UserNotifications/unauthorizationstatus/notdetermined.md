@@ -1,7 +1,8 @@
 # UNAuthorizationStatus.notDetermined
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user hasn’t yet made a choice about whether the app is allowed to schedule notifications.
 
@@ -20,15 +21,20 @@ The user hasn’t yet made a choice about whether the app is allowed to schedule
 case notDetermined
 ```
 
+```c
+UNAuthorizationStatusNotDetermined
+```
+
 ## See Also
 
-- [UNAuthorizationStatus.denied](unauthorizationstatus/denied.md)
+### Status
+- [UNAuthorizationStatus.denied](./denied.md)
   The app isn’t authorized to schedule or receive notifications.
-- [UNAuthorizationStatus.authorized](unauthorizationstatus/authorized.md)
+- [UNAuthorizationStatus.authorized](./authorized.md)
   The app is authorized to schedule or receive notifications.
-- [UNAuthorizationStatus.provisional](unauthorizationstatus/provisional.md)
+- [UNAuthorizationStatus.provisional](./provisional.md)
   The application is provisionally authorized to post noninterruptive user notifications.
-- [UNAuthorizationStatus.ephemeral](unauthorizationstatus/ephemeral.md)
+- [UNAuthorizationStatus.ephemeral](./ephemeral.md)
   The app is authorized to schedule or receive notifications for a limited amount of time.
 
 

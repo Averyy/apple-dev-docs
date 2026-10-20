@@ -1,33 +1,35 @@
 # BigUInt16
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```cpp
 class BigUInt16
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- get](biguint16/1402536-get.md)
-- [- operator=](biguint16/1402526-operator.md)
-- [- readValue](biguint16/1402533-readvalue.md)
-- [- writeValue](biguint16/1402576-writevalue.md)
+- [- get](./biguint16/api-1402536-get.md)
+- [- operator=](./biguint16/api-1402526-operator.md)
+- [- readValue](./biguint16/api-1402533-readvalue.md)
+- [- writeValue](./biguint16/api-1402576-writevalue.md)
 
 ## See Also
 
-- [LittleUInt16](littleuint16.md)
-- [LittleUInt32](littleuint32.md)
-- [LittleUInt64](littleuint64.md)
-- [BigUInt32](biguint32.md)
-- [BigUInt64](biguint64.md)
-- [U128](u128.md)
+### Unsigned Integers
+- [LittleUInt16](./littleuint16.md)
+- [LittleUInt32](./littleuint32.md)
+- [LittleUInt64](./littleuint64.md)
+- [BigUInt32](./biguint32.md)
+- [BigUInt64](./biguint64.md)
+- [U128](./u128.md)
 
 
 ---

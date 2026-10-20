@@ -1,6 +1,7 @@
 # Closed captioning media
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 Store closed captioning for QuickTime movies.
 
@@ -15,18 +16,19 @@ Like other media data tracks, a closed caption track should include a language c
 ## Topics
 
 ### Storing closed captioning
-- [Closed captioning sample description](closed_captioning_sample_description.md)
+- [Closed captioning sample description](./closed_captioning_sample_description.md)
   An atom that defines how to interpret closed captioning media data.
-- [Closed captioning sample data ('cdat')](closed_captioning_sample_data.md)
+- [Closed captioning sample data ('cdat')](./closed_captioning_sample_data.md)
   A sequence of one or more atoms that store closed captioning sample data.
-- [Including multiple closed-caption tracks](including_multiple_closed-caption_tracks.md)
+- [Including multiple closed-caption tracks](./including_multiple_closed-caption_tracks.md)
   Include multiple closed-caption tracks in a movie.
 
 ## See Also
 
-- [Text media](text_media.md)
+### Text, captions, and subtitles
+- [Text media](./text_media.md)
   Store text data in QuickTime movies.
-- [Subtitle media](subtitle_media.md)
+- [Subtitle media](./subtitle_media.md)
   Store text data used for subtitles in QuickTime movies.
 
 

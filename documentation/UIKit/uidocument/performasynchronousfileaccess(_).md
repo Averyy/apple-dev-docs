@@ -1,7 +1,8 @@
 # performAsynchronousFileAccess(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a document-reading or document-writing operation on a concurrent background queue.
 
@@ -17,11 +18,15 @@ Schedules a document-reading or document-writing operation on a concurrent backg
 func performAsynchronousFileAccess(_ block: @escaping () -> Void)
 ```
 
+```objc
+- (void) performAsynchronousFileAccessUsingBlock:(void (^)()) block;
+```
+
 #### Discussion
 
-A typical [`UIDocument`](uidocument.md) subclass — one that overrides [`contents(forType:)`](uidocument/contents(fortype:).md) and [`load(fromContents:ofType:)`](uidocument/load(fromcontents:oftype:).md) — doesn’t need to call this method.
+A typical [`UIDocument`](../uidocument.md) subclass — one that overrides [`contents(forType:)`](./contents%28fortype%29.md) and [`load(fromContents:ofType:)`](./load%28fromcontents,oftype%29.md) — doesn’t need to call this method.
 
-The default implementations of [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) and [`open(completionHandler:)`](uidocument/open(completionhandler:).md) call this method to serialize file access. If you override these methods and don’t call `super`, you should call this method to serialize file access on a background queue. If you directly call the [`read(from:)`](uidocument/read(from:).md) method, you should wrap that call in the block passed into [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md).
+The default implementations of [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md) and [`open(completionHandler:)`](./open%28completionhandler%29.md) call this method to serialize file access. If you override these methods and don’t call `super`, you should call this method to serialize file access on a background queue. If you directly call the [`read(from:)`](./read%28from%29.md) method, you should wrap that call in the block passed into [`performAsynchronousFileAccess(_:)`](./performasynchronousfileaccess%28_%29.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array’s “past the end” position—that is, the position one greater than the last valid subscript argument. This is always equal to array’s count.
 
@@ -22,7 +23,7 @@ var endIndex: Int { get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

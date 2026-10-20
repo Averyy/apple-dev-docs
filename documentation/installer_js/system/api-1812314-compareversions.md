@@ -7,11 +7,11 @@ Provides the result of comparing two given version strings (for example, `'10.3.
 
 ## Declaration
 
-```swift
+```
 compareVersions(versionA, versionB)
 ```
 
-#### Return_value
+#### Return Value
 
 `-1` when `versionA` is lower than `versionB`, `0` when `versionA` is equal to `versionB`, and `1` when `versionA` is higher than `versionB`. 
 

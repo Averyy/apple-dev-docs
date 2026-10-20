@@ -1,20 +1,25 @@
 # MTLFeatureSet.iOS_GPUFamily3_v4
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU family 3, version 4 feature set for iOS.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 12.0+
-- visionOS 1.0+
+- iOS 12.0+ - Deprecated in 16.0
+- iPadOS 12.0+ - Deprecated in 16.0
+- Mac Catalyst 12.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 case iOS_GPUFamily3_v4
+```
+
+```c
+MTLFeatureSet_iOS_GPUFamily3_v4
 ```
 
 #### Discussion
@@ -23,11 +28,12 @@ This feature set corresponds with Apple A9 devices running iOS 12.
 
 ## See Also
 
-- [MTLFeatureSet.iOS_GPUFamily3_v3](mtlfeatureset/ios_gpufamily3_v3.md)
+### iOS GPU family 3
+- [MTLFeatureSet.iOS_GPUFamily3_v3](./ios_gpufamily3_v3.md)
   The GPU family 3, version 3 feature set for iOS.
-- [MTLFeatureSet.iOS_GPUFamily3_v2](mtlfeatureset/ios_gpufamily3_v2.md)
+- [MTLFeatureSet.iOS_GPUFamily3_v2](./ios_gpufamily3_v2.md)
   The GPU family 3, version 2 feature set for iOS.
-- [MTLFeatureSet.iOS_GPUFamily3_v1](mtlfeatureset/ios_gpufamily3_v1.md)
+- [MTLFeatureSet.iOS_GPUFamily3_v1](./ios_gpufamily3_v1.md)
   The GPU family 3, version 1 feature set for iOS.
 
 

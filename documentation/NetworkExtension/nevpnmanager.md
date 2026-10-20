@@ -1,7 +1,8 @@
 # NEVPNManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object to create and manage a Personal VPN configuration.
 
@@ -19,77 +20,82 @@ An object to create and manage a Personal VPN configuration.
 class NEVPNManager
 ```
 
+```objc
+@interface NEVPNManager : NSObject
+```
+
 #### Overview
 
-The [`NEVPNManager`](nevpnmanager.md) API gives apps the ability to create and manage a Personal VPN configuration on iOS and macOS. Personal VPN configurations are typically used to provide a service to users that protects their Internet browsing activity on insecure networks such as public Wi-Fi networks.
+The [`NEVPNManager`](./nevpnmanager.md) API gives apps the ability to create and manage a Personal VPN configuration on iOS and macOS. Personal VPN configurations are typically used to provide a service to users that protects their Internet browsing activity on insecure networks such as public Wi-Fi networks.
 
 ## Topics
 
 ### Managing VPN configurations
-- [class func shared() -> NEVPNManager](nevpnmanager/shared.md)
+- [class func shared() -> NEVPNManager](./nevpnmanager/shared%28%29.md)
   Access the single instance of `NEVPNManager`.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nevpnmanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./nevpnmanager/loadfrompreferences%28completionhandler%29.md)
   Load the VPN configuration from the Network Extension preferences.
-- [func saveToPreferences(completionHandler: (((any Error)?) -> Void)?)](nevpnmanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: (((any Error)?) -> Void)?)](./nevpnmanager/savetopreferences%28completionhandler%29.md)
   Save the VPN configuration in the Network Extension preferences.
-- [func setAuthorization(AuthorizationRef)](nevpnmanager/setauthorization(_:).md)
-- [func removeFromPreferences(completionHandler: (((any Error)?) -> Void)?)](nevpnmanager/removefrompreferences(completionhandler:).md)
+- [func setAuthorization(AuthorizationRef)](./nevpnmanager/setauthorization%28_%29.md)
+- [func removeFromPreferences(completionHandler: (((any Error)?) -> Void)?)](./nevpnmanager/removefrompreferences%28completionhandler%29.md)
   Remove the VPN configuration from the Network Extension preferences.
 ### Accessing VPN configuration properties
-- [var isEnabled: Bool](nevpnmanager/isenabled.md)
+- [var isEnabled: Bool](./nevpnmanager/isenabled.md)
   A Boolean used to toggle the enabled state of the VPN configuration.
-- [var protocolConfiguration: NEVPNProtocol?](nevpnmanager/protocolconfiguration.md)
-  An [`NEVPNProtocol`](nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
-- [var `protocol`: NEVPNProtocol?](nevpnmanager/protocol.md)
+- [var protocolConfiguration: NEVPNProtocol?](./nevpnmanager/protocolconfiguration.md)
+  An [`NEVPNProtocol`](./nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
+- [var `protocol`: NEVPNProtocol?](./nevpnmanager/protocol.md)
   An `NEVPNProtocol` object containing the configuration settings of the VPN tunneling protocol.
-- [var localizedDescription: String?](nevpnmanager/localizeddescription.md)
+- [var localizedDescription: String?](./nevpnmanager/localizeddescription.md)
   A string containing the display name of the VPN configuration.
-- [var isOnDemandEnabled: Bool](nevpnmanager/isondemandenabled.md)
+- [var isOnDemandEnabled: Bool](./nevpnmanager/isondemandenabled.md)
   A Boolean used to toggle the Connect On Demand capability.
-- [var onDemandRules: [NEOnDemandRule]?](nevpnmanager/ondemandrules.md)
+- [var onDemandRules: [NEOnDemandRule]?](./nevpnmanager/ondemandrules.md)
   An ordered list of Connect On Demand rules.
 ### Connecting and disconnecting VPN
-- [var connection: NEVPNConnection](nevpnmanager/connection.md)
-  An [`NEVPNConnection`](nevpnconnection.md) object that is used to control the VPN tunnel specified by the VPN configuration.
+- [var connection: NEVPNConnection](./nevpnmanager/connection.md)
+  An [`NEVPNConnection`](./nevpnconnection.md) object that is used to control the VPN tunnel specified by the VPN configuration.
 ### Errors
-- [NEVPNError.Code](nevpnerror-swift.struct/code.md)
+- [NEVPNError.Code](./nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
-- [let NEVPNErrorDomain: String](nevpnerrordomain.md)
-- [NEVPNError.Code](nevpnerror-swift.struct/code.md)
+- [let NEVPNErrorDomain: String](./nevpnerrordomain.md)
+- [NEVPNError.Code](./nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
 ### Notifications
-- [static let NEVPNConfigurationChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nevpnconfigurationchange.md)
+- [static let NEVPNConfigurationChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nevpnconfigurationchange.md)
   Posted after the VPN configuration stored in the Network Extension preferences changes.
 ### Entitlements
-- [Personal VPN Entitlement](../bundleresources/entitlements/com.apple.developer.networking.vpn.api.md)
+- [Personal VPN Entitlement](../BundleResources/entitlements/com.apple.developer.networking.vpn.api.md)
   The API an app can use to create and control a custom system VPN configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NETransparentProxyManager](netransparentproxymanager.md)
-- [NETunnelProviderManager](netunnelprovidermanager.md)
+- [NETransparentProxyManager](./netransparentproxymanager.md)
+- [NETunnelProviderManager](./netunnelprovidermanager.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEAppProxyProviderManager](neappproxyprovidermanager.md)
+### VPN configuration
+- [class NEAppProxyProviderManager](./neappproxyprovidermanager.md)
   An object to create and manage the app proxy provider’s VPN configuration.
-- [class NETunnelProviderManager](netunnelprovidermanager.md)
+- [class NETunnelProviderManager](./netunnelprovidermanager.md)
   An object to create and manage the tunnel provider’s VPN configuration.
-- [class NETunnelProviderProtocol](netunnelproviderprotocol.md)
+- [class NETunnelProviderProtocol](./netunnelproviderprotocol.md)
   Configuration parameters for a VPN tunnel.
-- [class NEAppRule](neapprule.md)
+- [class NEAppRule](./neapprule.md)
   The identity of an app whose traffic is to be routed through the tunnel.
-- [VPN On Demand Rules](vpn-on-demand-rules.md)
+- [VPN On Demand Rules](./vpn-on-demand-rules.md)
   Set up VPN On Demand.
 
 

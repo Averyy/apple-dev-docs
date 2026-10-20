@@ -1,7 +1,8 @@
 # dimensions
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width and height, in texels, of the texture image.
 
@@ -19,23 +20,28 @@ The width and height, in texels, of the texture image.
 var dimensions: vector_int2 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) vector_int2 dimensions;
+```
+
 #### Discussion
 
-If the texture contains multiple mipmap levels (the [`mipLevelCount`](mdltexture/miplevelcount.md) value is greater than zero), this property reflects the base (largest) mipmap level.
+If the texture contains multiple mipmap levels (the [`mipLevelCount`](./miplevelcount.md) value is greater than zero), this property reflects the base (largest) mipmap level.
 
-If the texture is a cube texture (the [`isCube`](mdltexture/iscube.md) value is [`true`](https://developer.apple.com/documentation/swift/true)), this property reflects the vertical arrangement of cube faces in the texture image data. That is, the texture’s height is six times its width, and the data represents six square images for the six sides of the cube.
+If the texture is a cube texture (the [`isCube`](./iscube.md) value is [`true`](../../Swift/true.md)), this property reflects the vertical arrangement of cube faces in the texture image data. That is, the texture’s height is six times its width, and the data represents six square images for the six sides of the cube.
 
 ## See Also
 
-- [var rowStride: Int](mdltexture/rowstride.md)
+### Examining Texture Attributes
+- [var rowStride: Int](./rowstride.md)
   The number of bytes between the first texel in a row of image data and the first texel in the next row.
-- [var channelCount: Int](mdltexture/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   The number of channels per texel.
-- [var channelEncoding: MDLTextureChannelEncoding](mdltexture/channelencoding.md)
+- [var channelEncoding: MDLTextureChannelEncoding](./channelencoding.md)
   The data format for each channel value per texel.
-- [var isCube: Bool](mdltexture/iscube.md)
+- [var isCube: Bool](./iscube.md)
   A Boolean value that indicates whether the texture is a cube textures.
-- [var mipLevelCount: Int](mdltexture/miplevelcount.md)
+- [var mipLevelCount: Int](./miplevelcount.md)
   The number of mipmap levels contained in the texture image data.
 
 

@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The simulation mode that determines how time steps are calculated.
 
@@ -12,7 +13,7 @@ The simulation mode that determines how time steps are calculated.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

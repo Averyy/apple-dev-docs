@@ -1,7 +1,8 @@
 # languageTag
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The abbreviated language code for the language option.
 
@@ -20,21 +21,26 @@ The abbreviated language code for the language option.
 var languageTag: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * languageTag;
+```
+
 #### Discussion
 
-This property contains the IETF BCP 47 language code for the language option. A value of [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) indicates that this option is disabled.
+This property contains the IETF BCP 47 language code for the language option. A value of [`nil`](../../ObjectiveC/nil-227m0.md) indicates that this option is disabled.
 
 ## See Also
 
-- [var displayName: String?](mpnowplayinginfolanguageoption/displayname.md)
+### Retrieving language option properties
+- [var displayName: String?](./displayname.md)
   The display name for a language option.
-- [var identifier: String?](mpnowplayinginfolanguageoption/identifier.md)
+- [var identifier: String?](./identifier.md)
   The unique identifier for the language option.
-- [var languageOptionCharacteristics: [String]?](mpnowplayinginfolanguageoption/languageoptioncharacteristics.md)
+- [var languageOptionCharacteristics: [String]?](./languageoptioncharacteristics.md)
   The characteristics that describe the content of the language option.
-- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoption/languageoptiontype.md)
+- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](./languageoptiontype.md)
   The type of language option.
-- [enum MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoptiontype.md)
+- [enum MPNowPlayingInfoLanguageOptionType](../mpnowplayinginfolanguageoptiontype.md)
   The language option type to use for the Now Playing item.
 
 

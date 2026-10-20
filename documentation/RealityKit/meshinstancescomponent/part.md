@@ -1,7 +1,8 @@
 # MeshInstancesComponent.Part
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A group of instances to render.
 
@@ -22,11 +23,11 @@ struct Part
 ## Topics
 
 ### Initializers
-- [init(data: LowLevelInstanceData, bounds: BoundingBox?)](meshinstancescomponent/part/init(data:bounds:).md)
+- [init(data: LowLevelInstanceData, bounds: BoundingBox?)](./part/init%28data,bounds%29.md)
 ### Instance Properties
-- [var bounds: BoundingBox?](meshinstancescomponent/part/bounds.md)
+- [var bounds: BoundingBox?](./part/bounds.md)
   The bounding box to encompass all of the instances this group part draws.
-- [var data: LowLevelInstanceData](meshinstancescomponent/part/data.md)
+- [var data: LowLevelInstanceData](./part/data.md)
 
 
 ---

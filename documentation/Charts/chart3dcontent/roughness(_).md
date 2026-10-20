@@ -1,7 +1,8 @@
 # roughness(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A value that controls the degree of surface roughness.
 

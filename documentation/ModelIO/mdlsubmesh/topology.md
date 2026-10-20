@@ -1,7 +1,8 @@
 # topology
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of how the non-uniform layout of the submesh’s index buffer defines the shape of the mesh.
 
@@ -19,21 +20,26 @@ A description of how the non-uniform layout of the submesh’s index buffer defi
 var topology: MDLSubmeshTopology? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLSubmeshTopology * topology;
+```
+
 #### Discussion
 
-Submeshes with non-uniform topology can also contain edge and vertex crease information for use by the [`newSubdividedMesh(_:submeshIndex:subdivisionLevels:)`](mdlmesh/newsubdividedmesh(_:submeshindex:subdivisionlevels:).md) method.
+Submeshes with non-uniform topology can also contain edge and vertex crease information for use by the [`newSubdividedMesh(_:submeshIndex:subdivisionLevels:)`](../mdlmesh/newsubdividedmesh%28_,submeshindex,subdivisionlevels%29.md) method.
 
 ## See Also
 
-- [var indexBuffer: any MDLMeshBuffer](mdlsubmesh/indexbuffer.md)
+### Working with a Submesh’s Index Buffer
+- [var indexBuffer: any MDLMeshBuffer](./indexbuffer.md)
   An object that provides index data for the submesh.
-- [var indexCount: Int](mdlsubmesh/indexcount.md)
+- [var indexCount: Int](./indexcount.md)
   The number of indices in the submesh’s index buffer.
-- [var indexType: MDLIndexBitDepth](mdlsubmesh/indextype.md)
+- [var indexType: MDLIndexBitDepth](./indextype.md)
   The data type for each element in the submesh’s index buffer.
-- [var geometryType: MDLGeometryType](mdlsubmesh/geometrytype.md)
+- [var geometryType: MDLGeometryType](./geometrytype.md)
   The type of geometric primitives described by the submesh’s index buffer.
-- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](mdlsubmesh/indexbuffer(asindextype:).md)
+- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](./indexbuffer%28asindextype%29.md)
 
 
 ---

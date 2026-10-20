@@ -1,7 +1,8 @@
 # zIndex
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z-index of the button. A lower z-index is drawn first.
 
@@ -16,17 +17,22 @@ The z-index of the button. A lower z-index is drawn first.
 var zIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger zIndex;
+```
+
 ## See Also
 
-- [var contents: TCControlContents?](tcbuttondescriptor/contents.md)
+### Inspecting the descriptor
+- [var contents: TCControlContents?](./contents.md)
   The contents for the button in its normal state.
-- [var highlightDuration: TimeInterval](tcbuttondescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var label: TCControlLabel](tcbuttondescriptor/label.md)
+- [var label: TCControlLabel](./label.md)
   The label you associate with the button.
-- [var offset: CGPoint](tcbuttondescriptor/offset.md)
+- [var offset: CGPoint](./offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var size: CGSize](tcbuttondescriptor/size.md)
+- [var size: CGSize](./size.md)
   The size (width, height) of the button in points.
 
 

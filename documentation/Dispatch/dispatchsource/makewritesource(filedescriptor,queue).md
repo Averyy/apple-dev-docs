@@ -1,18 +1,19 @@
 # makeWriteSource(fileDescriptor:queue:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new dispatch source object for writing data to the specified file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,11 +23,11 @@ class func makeWriteSource(fileDescriptor: Int32, queue: DispatchQueue? = nil) -
 
 #### Return Value
 
-A dispatch source object that conforms to the [`DispatchSourceWrite`](dispatchsourcewrite.md) protocol.
+A dispatch source object that conforms to the [`DispatchSourceWrite`](../dispatchsourcewrite.md) protocol.
 
 #### Discussion
 
-After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](dispatchobject/activate().md) method.
+After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](../dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](../dispatchobject/activate%28%29.md) method.
 
 ## Parameters
 
@@ -35,17 +36,18 @@ After creating the dispatch source, use the methods of the [`DispatchSourceProto
 
 ## See Also
 
-- [class func makeReadSource(fileDescriptor: Int32, queue: DispatchQueue?) -> any DispatchSourceRead](dispatchsource/makereadsource(filedescriptor:queue:).md)
+### Creating a File System Source
+- [class func makeReadSource(fileDescriptor: Int32, queue: DispatchQueue?) -> any DispatchSourceRead](./makereadsource%28filedescriptor,queue%29.md)
   Creates a new dispatch source object for reading bytes from the specified file.
-- [class func makeFileSystemObjectSource(fileDescriptor: Int32, eventMask: DispatchSource.FileSystemEvent, queue: DispatchQueue?) -> any DispatchSourceFileSystemObject](dispatchsource/makefilesystemobjectsource(filedescriptor:eventmask:queue:).md)
+- [class func makeFileSystemObjectSource(fileDescriptor: Int32, eventMask: DispatchSource.FileSystemEvent, queue: DispatchQueue?) -> any DispatchSourceFileSystemObject](./makefilesystemobjectsource%28filedescriptor,eventmask,queue%29.md)
   Creates a new dispatch source object for monitoring file-system events.
-- [protocol DispatchSourceRead](dispatchsourceread.md)
+- [protocol DispatchSourceRead](../dispatchsourceread.md)
   A dispatch source object for reading data from a file descriptor.
-- [protocol DispatchSourceWrite](dispatchsourcewrite.md)
+- [protocol DispatchSourceWrite](../dispatchsourcewrite.md)
   A dispatch source object for writing data to a file descriptor.
-- [protocol DispatchSourceFileSystemObject](dispatchsourcefilesystemobject.md)
+- [protocol DispatchSourceFileSystemObject](../dispatchsourcefilesystemobject.md)
   A dispatch source that monitors events associated with a file descriptor.
-- [DispatchSource.FileSystemEvent](dispatchsource/filesystemevent.md)
+- [DispatchSource.FileSystemEvent](./filesystemevent.md)
   Events involving a change to a file system object.
 
 

@@ -1,18 +1,21 @@
 # BNNSFilterCreateLayerPadding(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new loss layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns a new loss layer.
 func BNNSFilterCreateLayerPadding(_ layer_params: UnsafePointer<BNNSLayerParametersPadding>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateLayerPadding(const BNNSLayerParametersPadding *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use a padding layer to add elements to an n-dimensional array before and after existing data. The padding can either contain a single value or a reflection of the existing data. For `BNNSPaddingModeConstant`, pass the bit pattern of the padding value, for example, using [`bitPattern`](https://developer.apple.com/documentation/swift/float/bitpattern) to pass a single-precision value.
+Use a padding layer to add elements to an n-dimensional array before and after existing data. The padding can either contain a single value or a reflection of the existing data. For `BNNSPaddingModeConstant`, pass the bit pattern of the padding value, for example, using [`bitPattern`](../Swift/float/bitpattern.md) to pass a single-precision value.
 
 The following code shows how to add two elements before, and four elements after a vector of ten values:
 
@@ -86,11 +93,12 @@ On return, `destination` contains `[99.0, 99.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 7.
 
 ## See Also
 
-- [class PaddingLayer](bnns/paddinglayer.md)
+### Padding layers
+- [class PaddingLayer](./bnns/paddinglayer.md)
   A layer object that wraps a padding filter and manages its deinitialization.
-- [struct BNNSPaddingMode](bnnspaddingmode.md)
+- [struct BNNSPaddingMode](./bnnspaddingmode.md)
   Constants that define padding modes.
-- [struct BNNSLayerParametersPadding](bnnslayerparameterspadding.md)
+- [struct BNNSLayerParametersPadding](./bnnslayerparameterspadding.md)
   A structure that contains the parameters of a padding layer.
 
 

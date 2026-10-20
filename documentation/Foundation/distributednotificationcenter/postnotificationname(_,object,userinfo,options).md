@@ -1,7 +1,8 @@
 # postNotificationName(_:object:userInfo:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a notification with information, and posts it to the receiver.
 
@@ -15,6 +16,10 @@ Creates a notification with information, and posts it to the receiver.
 func postNotificationName(_ name: NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]? = nil, options: DistributedNotificationCenter.Options = [])
 ```
 
+```objc
+- (void) postNotificationName:(NSNotificationName) name object:(NSString *) object userInfo:(NSDictionary *) userInfo options:(NSDistributedNotificationOptions) options;
+```
+
 #### Discussion
 
 The `userInfo` dictionary is serialized as a property list, so it can be passed to another task. In the receiving task, it is deserialized back into a dictionary. This serialization imposes some restrictions on the objects that can be placed in the `userInfo` dictionary. See XML Property Lists for details.
@@ -23,16 +28,19 @@ The `userInfo` dictionary is serialized as a property list, so it can be passed 
 
 - `name`: Name of the notification to post. Must not be `nil`.
 - `object`: Sender of the notification. May be `nil`.
-- `userInfo`: Dictionary containing additional information. May be `nil`. > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `userInfo` *must* be `nil`.
+- `userInfo`: Dictionary containing additional information. May be `nil`.
+
+  > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `userInfo` *must* be `nil`.
 - `options`: Specifies how the notification is posted to the task and when to deliver it to its observers. See `Notification Posting Behavior` for details.
 
 ## See Also
 
-- [func post(name: NSNotification.Name, object: String?)](distributednotificationcenter/post(name:object:).md)
+### Posting Notifications
+- [func post(name: NSNotification.Name, object: String?)](./post%28name,object%29.md)
   Creates a notification, and posts it to the receiver.
-- [func post(name: NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?)](distributednotificationcenter/post(name:object:userinfo:).md)
+- [func post(name: NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?)](./post%28name,object,userinfo%29.md)
   Creates a notification with information, and posts it to the receiver.
-- [func postNotificationName(NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?, deliverImmediately: Bool)](distributednotificationcenter/postnotificationname(_:object:userinfo:deliverimmediately:).md)
+- [func postNotificationName(NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?, deliverImmediately: Bool)](./postnotificationname%28_,object,userinfo,deliverimmediately%29.md)
   Creates a notification with information and an immediate-delivery specifier, and posts it to the receiver.
 
 

@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera node in the scene that determines what part of the scene’s coordinate space is visible in the view.
 
@@ -20,18 +21,22 @@ The camera node in the scene that determines what part of the scene’s coordina
 weak var camera: SKCameraNode? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) SKCameraNode * camera;
+```
+
 ## Mentions
 
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
-- [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
+- [Getting Started with a Camera](../getting-started-with-a-camera.md)
+- [Positioning a Scene’s Origin Within its View](../positioning-a-scene-s-origin-within-its-view.md)
 
 #### Discussion
 
-The default value of this property is `nil`, which means that the scene’s [`anchorPoint`](skscene/anchorpoint.md) and [`size`](skscene/size.md) properties determine what portion of the scene is visible. If set to point to a camera node contained in the scene, the [`anchorPoint`](skscene/anchorpoint.md) property is ignored and the scene is rendered using the camera node’s properties instead.
+The default value of this property is `nil`, which means that the scene’s [`anchorPoint`](./anchorpoint.md) and [`size`](./size.md) properties determine what portion of the scene is visible. If set to point to a camera node contained in the scene, the [`anchorPoint`](./anchorpoint.md) property is ignored and the scene is rendered using the camera node’s properties instead.
 
 A camera must be added as a child of the scene for it to render that scene.
 
-Listing 1 shows, in Swift, how to add a camera to an [`SKScene`](skscene.md) named `scene`. The camera is positioned in the center of the scene which gives the same result as rendering a camera-less scene with an [`anchorPoint`](skscene/anchorpoint.md) of [`zero`](https://developer.apple.com/documentation/corefoundation/cgpoint/zero).
+Listing 1 shows, in Swift, how to add a camera to an [`SKScene`](../skscene.md) named `scene`. The camera is positioned in the center of the scene which gives the same result as rendering a camera-less scene with an [`anchorPoint`](./anchorpoint.md) of [`zero`](../../CoreFoundation/cgpoint/zero.md).
 
 Listing 1. Adding a camera to a scene
 
@@ -45,13 +50,14 @@ scene.addChild(cameraNode)
 scene.camera = cameraNode
 ```
 
-For more information, see [`SKCameraNode`](skcameranode.md).
+For more information, see [`SKCameraNode`](../skcameranode.md).
 
 ## See Also
 
-- [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
+### Configuring the Viewport
+- [Positioning a Scene’s Origin Within its View](../positioning-a-scene-s-origin-within-its-view.md)
   Try the different ways to configure the scene’s origin inside its view.
-- [var anchorPoint: CGPoint](skscene/anchorpoint.md)
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   The point in the view’s frame that corresponds to the scene’s origin.
 
 

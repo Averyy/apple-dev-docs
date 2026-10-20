@@ -1,7 +1,8 @@
 # Update a Keyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update a keyword’s bid amount or status to optimize spend and control delivery for that term.
 
@@ -10,9 +11,9 @@ Update a keyword’s bid amount or status to optimize spend and control delivery
 
 #### Discussion
 
-This endpoint updates an existing keyword. Only fields included in the request body are modified. Omitted fields retain their current values. The `KeywordUpdate` schema is intentionally narrow. Only `bid` and `status` are accepted. Attempting to update a deleted keyword returns 404 Not Found. This differs from [`Get a Keyword`](get-keywords-_id_.md), which doesn’t return 404 for a deleted keyword. It returns the keyword with `deleted: true` instead.
+This endpoint updates an existing keyword. Only fields included in the request body are modified. Omitted fields retain their current values. The `KeywordUpdate` schema is intentionally narrow. Only `bid` and `status` are accepted. Attempting to update a deleted keyword returns 404 Not Found. This differs from [`Get a Keyword`](./get-keywords-_id_.md), which doesn’t return 404 for a deleted keyword. It returns the keyword with `deleted: true` instead.
 
-On update, `bid` must be a valid `Money` object. Passing `null` returns an error, unlike [`Create a Keyword`](post-keywords.md), where omitting `bid` or passing `null` defaults the keyword to the ad group’s bid strategy. See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for the full explanation.
+On update, `bid` must be a valid `Money` object. Passing `null` returns an error, unlike [`Create a Keyword`](./post-keywords.md), where omitting `bid` or passing `null` defaults the keyword to the ad group’s bid strategy. See [Managing Keywords and Negative Keywords](./keywords-and-negative-keywords.md) for the full explanation.
 
 #### Payload Examples
 
@@ -101,17 +102,38 @@ PUT /v1/keywords/888999000
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `KeywordUpdate`
+
+## Responses
+
+- `200` OK (`KeywordResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Keyword](post-keywords.md)
+- [Create a Keyword](./post-keywords.md)
   Create a new keyword in an ad group, setting the match type and optional bid amount.
-- [Query Keywords](post-keywords-query.md)
+- [Query Keywords](./post-keywords-query.md)
   Query keywords using structured filters, sorting, and pagination.
-- [Get a Keyword](get-keywords-_id_.md)
+- [Get a Keyword](./get-keywords-_id_.md)
   Retrieve a single keyword by its unique identifier.
-- [Delete a Keyword](delete-keywords-_id_.md)
+- [Delete a Keyword](./delete-keywords-_id_.md)
   Soft-delete a keyword by ID, setting its deleted field to true and stopping bids on that term.
 
 

@@ -1,7 +1,8 @@
 # init(obstacles:bufferRadius:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a graph with the specified list of obstacles.
 
@@ -19,6 +20,10 @@ Initializes a graph with the specified list of obstacles.
 init(obstacles: [GKPolygonObstacle], bufferRadius: Float)
 ```
 
+```objc
+- (instancetype) initWithObstacles:(NSArray<GKPolygonObstacle *> *) obstacles bufferRadius:(float) bufferRadius;
+```
+
 #### Return Value
 
 A new obstacle graph.
@@ -27,9 +32,9 @@ A new obstacle graph.
 
 This method generates a graph that can be traversed in all directions, except into the areas occupied by obstacles.
 
-Use the `bufferRadius` parameter to take the size of potential travelers into account when determining navigability. For example, if a game character that will use pathfinding has a radius of 20 units (in the same coordinate space you use to define obstacles), specify a buffer radius of 20. As a result, the graph will consider any points within 20 units of an obstacle non-navigable—that is, pathfinding in the graph will not result in any positions that lie inside this buffer region, so you can safely set the character’s center point to the location of a node returned from the [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method without the character overlapping any obstacles.
+Use the `bufferRadius` parameter to take the size of potential travelers into account when determining navigability. For example, if a game character that will use pathfinding has a radius of 20 units (in the same coordinate space you use to define obstacles), specify a buffer radius of 20. As a result, the graph will consider any points within 20 units of an obstacle non-navigable—that is, pathfinding in the graph will not result in any positions that lie inside this buffer region, so you can safely set the character’s center point to the location of a node returned from the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method without the character overlapping any obstacles.
 
-This initializer is equivalent to the [`init(obstacles:bufferRadius:nodeClass:)`](gkobstaclegraph/init(obstacles:bufferradius:nodeclass:).md) initializer, but uses the default [`GKGraphNode2D`](gkgraphnode2d.md) node class.
+This initializer is equivalent to the [`init(obstacles:bufferRadius:nodeClass:)`](./init%28obstacles,bufferradius,nodeclass%29.md) initializer, but uses the default [`GKGraphNode2D`](../gkgraphnode2d.md) node class.
 
 ## Parameters
 
@@ -38,7 +43,8 @@ This initializer is equivalent to the [`init(obstacles:bufferRadius:nodeClass:)`
 
 ## See Also
 
-- [init(obstacles: [GKPolygonObstacle], bufferRadius: Float, nodeClass: AnyClass)](gkobstaclegraph/init(obstacles:bufferradius:nodeclass:).md)
+### Creating a Graph
+- [init(obstacles: [GKPolygonObstacle], bufferRadius: Float, nodeClass: AnyClass)](./init%28obstacles,bufferradius,nodeclass%29.md)
   Initializes a graph with the specified list of obstacles, using the specified node class.
 
 

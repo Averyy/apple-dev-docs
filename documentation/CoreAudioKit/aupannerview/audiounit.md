@@ -1,7 +1,8 @@
 # audioUnit
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The panner audio unit associated with the generic panner view.
 
@@ -12,6 +13,10 @@ The panner audio unit associated with the generic panner view.
 
 ```swift
 var audioUnit: AudioUnit { get }
+```
+
+```objc
+@property (readonly) AudioUnit audioUnit;
 ```
 
 #### Discussion

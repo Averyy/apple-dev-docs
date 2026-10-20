@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The function’s name.
@@ -20,11 +21,16 @@ The function’s name.
 var name: String { get }
 ```
 
+```objc
+@property (readonly, nonnull) NSString * name;
+```
+
 ## See Also
 
-- [var device: any MTLDevice](mtlfunctionhandle/device.md)
+### Querying handle properties
+- [var device: any MTLDevice](./device.md)
   The device object that created the shader function.
-- [var functionType: MTLFunctionType](mtlfunctionhandle/functiontype.md)
+- [var functionType: MTLFunctionType](./functiontype.md)
   The shader function’s type.
 
 

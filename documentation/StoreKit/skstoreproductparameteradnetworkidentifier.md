@@ -1,7 +1,8 @@
 # SKStoreProductParameterAdNetworkIdentifier
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key that represents the advertising network’s unique identifier.
 
@@ -17,27 +18,32 @@ The key that represents the advertising network’s unique identifier.
 let SKStoreProductParameterAdNetworkIdentifier: String
 ```
 
+```c
+extern NSString * const SKStoreProductParameterAdNetworkIdentifier;
+```
+
 ## Mentions
 
-- [Combining parameters to generate a signature for SKAdNetwork 1](combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
-- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
-- [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
+- [Combining parameters to generate a signature for SKAdNetwork 1](./combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
+- [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
+- [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md)
 
 #### Discussion
 
-The value for this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
+The value for this key is an [`NSString`](../Foundation/nsstring.md).
 
-Ad networks obtain an ad network identifier during registration. Ad networks are responsible for sharing their ad network IDs with participating app developers. Apps that display ads and need to initiate the app install validation process must include the ad network ID in their `Info.plist`. For more information see [`Registering an ad network`](registering-an-ad-network.md) and `Configuring Apps`.
+Ad networks obtain an ad network identifier during registration. Ad networks are responsible for sharing their ad network IDs with participating app developers. Apps that display ads and need to initiate the app install validation process must include the ad network ID in their `Info.plist`. For more information see [Registering an ad network](./registering-an-ad-network.md) and `Configuring Apps`.
 
 ## See Also
 
-- [let SKStoreProductParameterAdNetworkCampaignIdentifier: String](skstoreproductparameteradnetworkcampaignidentifier.md)
+### Required keys
+- [let SKStoreProductParameterAdNetworkCampaignIdentifier: String](./skstoreproductparameteradnetworkcampaignidentifier.md)
   The key that represents the advertising network’s campaign.
-- [let SKStoreProductParameterAdNetworkTimestamp: String](skstoreproductparameteradnetworktimestamp.md)
+- [let SKStoreProductParameterAdNetworkTimestamp: String](./skstoreproductparameteradnetworktimestamp.md)
   The key that represents the UNIX time, in milliseconds, of the ad impression.
-- [let SKStoreProductParameterAdNetworkNonce: String](skstoreproductparameteradnetworknonce.md)
+- [let SKStoreProductParameterAdNetworkNonce: String](./skstoreproductparameteradnetworknonce.md)
   The key that represents a random value to use for added security.
-- [let SKStoreProductParameterAdNetworkAttributionSignature: String](skstoreproductparameteradnetworkattributionsignature.md)
+- [let SKStoreProductParameterAdNetworkAttributionSignature: String](./skstoreproductparameteradnetworkattributionsignature.md)
   The key that represents the advertising network’s cryptographic signature to use for install validation.
 
 

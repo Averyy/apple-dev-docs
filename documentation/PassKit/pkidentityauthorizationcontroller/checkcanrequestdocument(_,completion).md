@@ -1,7 +1,8 @@
 # checkCanRequestDocument(_:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether an identity document is available to request.
 
@@ -14,12 +15,20 @@ Returns whether an identity document is available to request.
 ## Declaration
 
 ```swift
+func checkCanRequestDocument(_ descriptor: any PKIdentityDocumentDescriptor, completion: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func canRequestDocument(_ descriptor: any PKIdentityDocumentDescriptor) async -> Bool
+```
+
+```objc
+- (void) checkCanRequestDocument:(id<PKIdentityDocumentDescriptor>) descriptor completion:(void (^)(BOOL canRequest)) completion;
 ```
 
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+- [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
 #### Discussion
 
@@ -43,7 +52,8 @@ controller.checkCanRequestDocument(descriptor) { canRequest in
 
 ## See Also
 
-- [func requestDocument(PKIdentityRequest, completion: (PKIdentityDocument?, (any Error)?) -> Void)](pkidentityauthorizationcontroller/requestdocument(_:completion:).md)
+### Requesting a document
+- [func requestDocument(PKIdentityRequest, completion: (PKIdentityDocument?, (any Error)?) -> Void)](./requestdocument%28_,completion%29.md)
   Prompts the user to approve the request to get the identity information.
 
 

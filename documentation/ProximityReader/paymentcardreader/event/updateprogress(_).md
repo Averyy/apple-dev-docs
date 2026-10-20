@@ -1,7 +1,8 @@
 # PaymentCardReader.Event.updateProgress(_:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current update progress, specified as an integer value from 1 to 100.
 
@@ -22,27 +23,28 @@ This value represents the completion percentage of the update process.
 
 ## See Also
 
-- [PaymentCardReader.Event.cardDetected](paymentcardreader/event/carddetected.md)
+### Getting the event type
+- [PaymentCardReader.Event.cardDetected](./carddetected.md)
   An event that indicates the reader detected the presence of a card.
-- [PaymentCardReader.Event.pinEntryCompleted](paymentcardreader/event/pinentrycompleted.md)
+- [PaymentCardReader.Event.pinEntryCompleted](./pinentrycompleted.md)
   An event that indicates the reader captured the card PIN successfully.
-- [PaymentCardReader.Event.pinEntryRequested](paymentcardreader/event/pinentryrequested.md)
+- [PaymentCardReader.Event.pinEntryRequested](./pinentryrequested.md)
   An event that indicates the reader requested the card PIN.
-- [PaymentCardReader.Event.readCancelled](paymentcardreader/event/readcancelled.md)
+- [PaymentCardReader.Event.readCancelled](./readcancelled.md)
   An event that indicates the cancellation of the operation.
-- [PaymentCardReader.Event.readCompleted](paymentcardreader/event/readcompleted.md)
+- [PaymentCardReader.Event.readCompleted](./readcompleted.md)
   An event that indicates the reader completed the reading process.
-- [PaymentCardReader.Event.readNotCompleted](paymentcardreader/event/readnotcompleted.md)
+- [PaymentCardReader.Event.readNotCompleted](./readnotcompleted.md)
   An event that indicates the read operation didn’t finish.
-- [PaymentCardReader.Event.readRetry](paymentcardreader/event/readretry.md)
+- [PaymentCardReader.Event.readRetry](./readretry.md)
   An event that indicates the UI triggered a retry.
-- [PaymentCardReader.Event.readyForTap](paymentcardreader/event/readyfortap.md)
+- [PaymentCardReader.Event.readyForTap](./readyfortap.md)
   An event that indicates the reader is ready for someone to move their card within range of the iPhone.
-- [PaymentCardReader.Event.removeCard](paymentcardreader/event/removecard.md)
+- [PaymentCardReader.Event.removeCard](./removecard.md)
   An event that indicates the consumer can move the card away from the device.
-- [PaymentCardReader.Event.userInterfaceDismissed](paymentcardreader/event/userinterfacedismissed.md)
+- [PaymentCardReader.Event.userInterfaceDismissed](./userinterfacedismissed.md)
   An event that indicates the UI has been closed.
-- [PaymentCardReader.Event.notReady](paymentcardreader/event/notready.md)
+- [PaymentCardReader.Event.notReady](./notready.md)
   A reader that is not ready to perform transactions.
 
 

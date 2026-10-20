@@ -1,7 +1,8 @@
 # HMCharacteristicValueInputSourceType
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of accessory input sources.
 
@@ -19,43 +20,47 @@ Types of accessory input sources.
 enum HMCharacteristicValueInputSourceType
 ```
 
+```c
+enum HMCharacteristicValueInputSourceType : NSInteger;
+```
+
 ## Topics
 
 ### Accessory source types
-- [HMCharacteristicValueInputSourceType.airPlay](hmcharacteristicvalueinputsourcetype/airplay.md)
+- [HMCharacteristicValueInputSourceType.airPlay](./hmcharacteristicvalueinputsourcetype/airplay.md)
   The input source is an AirPlay device.
-- [HMCharacteristicValueInputSourceType.application](hmcharacteristicvalueinputsourcetype/application.md)
+- [HMCharacteristicValueInputSourceType.application](./hmcharacteristicvalueinputsourcetype/application.md)
   A virtual input source type for any preinstalled or downloaded applications on the television.
-- [HMCharacteristicValueInputSourceType.componentVideo](hmcharacteristicvalueinputsourcetype/componentvideo.md)
+- [HMCharacteristicValueInputSourceType.componentVideo](./hmcharacteristicvalueinputsourcetype/componentvideo.md)
   The input source is a Component Video input.
-- [HMCharacteristicValueInputSourceType.compositeVideo](hmcharacteristicvalueinputsourcetype/compositevideo.md)
+- [HMCharacteristicValueInputSourceType.compositeVideo](./hmcharacteristicvalueinputsourcetype/compositevideo.md)
   The input source is a Composite Video input.
-- [HMCharacteristicValueInputSourceType.dvi](hmcharacteristicvalueinputsourcetype/dvi.md)
+- [HMCharacteristicValueInputSourceType.dvi](./hmcharacteristicvalueinputsourcetype/dvi.md)
   The input source is a DVI input.
-- [HMCharacteristicValueInputSourceType.hdmi](hmcharacteristicvalueinputsourcetype/hdmi.md)
+- [HMCharacteristicValueInputSourceType.hdmi](./hmcharacteristicvalueinputsourcetype/hdmi.md)
   The input source is an HDMI input.
-- [HMCharacteristicValueInputSourceType.homeScreen](hmcharacteristicvalueinputsourcetype/homescreen.md)
+- [HMCharacteristicValueInputSourceType.homeScreen](./hmcharacteristicvalueinputsourcetype/homescreen.md)
   A virtual input source type that represents the television’s default home screen, if there is one.
-- [HMCharacteristicValueInputSourceType.other](hmcharacteristicvalueinputsourcetype/other.md)
+- [HMCharacteristicValueInputSourceType.other](./hmcharacteristicvalueinputsourcetype/other.md)
   The input source is another input category.
-- [HMCharacteristicValueInputSourceType.sVideo](hmcharacteristicvalueinputsourcetype/svideo.md)
+- [HMCharacteristicValueInputSourceType.sVideo](./hmcharacteristicvalueinputsourcetype/svideo.md)
   The input source is a S-Video input.
-- [HMCharacteristicValueInputSourceType.tuner](hmcharacteristicvalueinputsourcetype/tuner.md)
+- [HMCharacteristicValueInputSourceType.tuner](./hmcharacteristicvalueinputsourcetype/tuner.md)
   The input source is the television’s tuner.
-- [HMCharacteristicValueInputSourceType.usb](hmcharacteristicvalueinputsourcetype/usb.md)
+- [HMCharacteristicValueInputSourceType.usb](./hmcharacteristicvalueinputsourcetype/usb.md)
   The input source is a USB device.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueinputsourcetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueinputsourcetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

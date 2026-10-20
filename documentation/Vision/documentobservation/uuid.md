@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique alphanumeric value that the framework assigns to the observation.
 
@@ -21,11 +22,12 @@ let uuid: UUID
 
 ## See Also
 
-- [let confidence: Float](documentobservation/confidence.md)
+### Inspecting an observation
+- [let confidence: Float](./confidence.md)
   The level of confidence in the observation’s accuracy.
-- [let document: DocumentObservation.Container](documentobservation/document.md)
+- [let document: DocumentObservation.Container](./document.md)
   The contents of the document.
-- [let timeRange: CMTimeRange?](documentobservation/timerange.md)
+- [let timeRange: CMTimeRange?](./timerange.md)
   Time in a video frame where the observation was detected.
 
 

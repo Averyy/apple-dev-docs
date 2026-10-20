@@ -1,7 +1,8 @@
 # init(stream:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a parser with the XML contents from the specified stream and parses it.
 
@@ -20,6 +21,10 @@ Initializes a parser with the XML contents from the specified stream and parses 
 convenience init(stream: InputStream)
 ```
 
+```objc
+- (instancetype) initWithStream:(NSInputStream *) stream;
+```
+
 #### Return Value
 
 An initialized `NSXMLParser` object or `nil` if an error occurs.
@@ -30,9 +35,10 @@ An initialized `NSXMLParser` object or `nil` if an error occurs.
 
 ## See Also
 
-- [convenience init?(contentsOf: URL)](xmlparser/init(contentsof:).md)
+### Initializing a Parser Object
+- [convenience init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes a parser with the XML content referenced by the given URL.
-- [init(data: Data)](xmlparser/init(data:).md)
+- [init(data: Data)](./init%28data%29.md)
   Initializes a parser with the XML contents encapsulated in a given data object.
 
 

@@ -1,22 +1,29 @@
 # CFURLDestroyResource(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Destroys a resource indicated by a given URL.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 2.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 7.0
+- iPadOS 2.0+ - Deprecated in 7.0
+- Mac Catalyst 2.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use CFURLGetFileSystemRepresentation and removefile(3) instead.
 
 ## Declaration
 
 ```swift
 func CFURLDestroyResource(_ url: CFURL!, _ errorCode: UnsafeMutablePointer<Int32>!) -> Bool
+```
+
+```c
+extern Boolean CFURLDestroyResource(CFURLRef url, SInt32 *errorCode);
 ```
 
 #### Return Value
@@ -34,15 +41,16 @@ If `url` uses an http scheme, an http `DELETE` request is sent to the resource. 
 ## Parameters
 
 - `url`: The `CFURL` object of the resource to destroy.
-- `errorCode`: On return, `0` if successful, otherwise an error code indicating the nature of the problem. See [`CFURLError`](cfurlerror.md) for a list of possible error codes.
+- `errorCode`: On return, `0` if successful, otherwise an error code indicating the nature of the problem. See [`CFURLError`](./cfurlerror.md) for a list of possible error codes.
 
 ## See Also
 
-- [func CFURLCreateDataAndPropertiesFromResource(CFAllocator!, CFURL!, UnsafeMutablePointer<Unmanaged<CFData>?>!, UnsafeMutablePointer<Unmanaged<CFDictionary>?>!, CFArray!, UnsafeMutablePointer<Int32>!) -> Bool](cfurlcreatedataandpropertiesfromresource(_:_:_:_:_:_:).md)
+### Core Foundation URL Access Utilities Miscellaneous Functions
+- [func CFURLCreateDataAndPropertiesFromResource(CFAllocator!, CFURL!, UnsafeMutablePointer<Unmanaged<CFData>?>!, UnsafeMutablePointer<Unmanaged<CFDictionary>?>!, CFArray!, UnsafeMutablePointer<Int32>!) -> Bool](./cfurlcreatedataandpropertiesfromresource%28_,_,_,_,_,_%29.md)
   Loads the data and properties referred to by a given URL.
-- [func CFURLCreatePropertyFromResource(CFAllocator!, CFURL!, CFString!, UnsafeMutablePointer<Int32>!) -> CFTypeRef!](cfurlcreatepropertyfromresource(_:_:_:_:).md)
+- [func CFURLCreatePropertyFromResource(CFAllocator!, CFURL!, CFString!, UnsafeMutablePointer<Int32>!) -> CFTypeRef!](./cfurlcreatepropertyfromresource%28_,_,_,_%29.md)
   Returns a given property specified by a given URL and property string.
-- [func CFURLWriteDataAndPropertiesToResource(CFURL!, CFData!, CFDictionary!, UnsafeMutablePointer<Int32>!) -> Bool](cfurlwritedataandpropertiestoresource(_:_:_:_:).md)
+- [func CFURLWriteDataAndPropertiesToResource(CFURL!, CFData!, CFDictionary!, UnsafeMutablePointer<Int32>!) -> Bool](./cfurlwritedataandpropertiestoresource%28_,_,_,_%29.md)
   Writes the given data and properties to a given URL.
 
 

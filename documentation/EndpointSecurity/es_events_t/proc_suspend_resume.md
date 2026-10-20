@@ -1,13 +1,14 @@
 # proc_suspend_resume
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates a call to suspend, resume, or shut down sockets for a process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Properties of an event that indicates a call to suspend, resume, or shut down so
 var proc_suspend_resume: es_event_proc_suspend_resume_t { get set }
 ```
 
+```c
+es_event_proc_suspend_resume_t proc_suspend_resume;
+```
+
 ## See Also
 
-- [var trace: es_event_trace_t](es_events_t/trace.md)
+### Interprocess Events
+- [var trace: es_event_trace_t](./trace.md)
   Properties of an event that indicates an attempt by one process to attach to another.
-- [var remote_thread_create: es_event_remote_thread_create_t](es_events_t/remote_thread_create.md)
+- [var remote_thread_create: es_event_remote_thread_create_t](./remote_thread_create.md)
   Properties of an event that indicates an attempt by one process to spawn a thread in another.
 
 

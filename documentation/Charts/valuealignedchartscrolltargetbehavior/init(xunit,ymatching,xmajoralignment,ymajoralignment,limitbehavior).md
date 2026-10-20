@@ -1,7 +1,8 @@
 # init(xUnit:yMatching:xMajorAlignment:yMajorAlignment:limitBehavior:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
 

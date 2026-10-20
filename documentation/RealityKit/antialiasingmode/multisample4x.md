@@ -1,7 +1,8 @@
 # AntialiasingMode.multisample4X
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Multisampling renders each pixel multiple times and combines the results, creating a higher quality image at a performance cost proportional to the number of samples used.
 
@@ -21,7 +22,8 @@ case multisample4X
 
 ## See Also
 
-- [AntialiasingMode.none](antialiasingmode/none.md)
+### Setting the antialiasing mode
+- [AntialiasingMode.none](./none.md)
   Do not apply any technique to smooth jagged edges.
 
 

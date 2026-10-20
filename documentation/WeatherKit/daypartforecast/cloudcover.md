@@ -1,7 +1,8 @@
 # cloudCover
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the sky covered with clouds.
 

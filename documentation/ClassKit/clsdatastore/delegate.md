@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data store delegate instance.
 
@@ -18,6 +19,10 @@ The data store delegate instance.
 weak var delegate: (any CLSDataStoreDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CLSDataStoreDelegate> delegate;
+```
+
 #### Discussion
 
 The data store delegate creates contexts when the data store receives a request for a context it doesn’t already have. The data store calls on its delegate to build the missing context.
@@ -26,9 +31,10 @@ For privacy reasons, and depending on factors like the user’s role as student,
 
 ## See Also
 
-- [Building missing contexts](building-missing-contexts.md)
+### Managing the delegate
+- [Building missing contexts](../building-missing-contexts.md)
   Create and initialize missing contexts.
-- [protocol CLSDataStoreDelegate](clsdatastoredelegate.md)
+- [protocol CLSDataStoreDelegate](../clsdatastoredelegate.md)
   An interface the data store uses to request new contexts.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a counter sample buffer.
@@ -20,13 +21,17 @@ Creates a counter sample buffer.
 func makeCounterSampleBuffer(descriptor: MTLCounterSampleBufferDescriptor) throws -> any MTLCounterSampleBuffer
 ```
 
+```objc
+- (id<MTLCounterSampleBuffer>) newCounterSampleBufferWithDescriptor:(MTLCounterSampleBufferDescriptor *) descriptor error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
 #### Return Value
 
-A new [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLCounterSampleBuffer`](../mtlcountersamplebuffer.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 #### Discussion
 
@@ -34,15 +39,16 @@ The method may produce an error if the GPU driver has exhausted its underlying r
 
 ## Parameters
 
-- `descriptor`: An [`MTLCounterSampleBufferDescriptor`](mtlcountersamplebufferdescriptor.md) instance.
+- `descriptor`: An [`MTLCounterSampleBufferDescriptor`](../mtlcountersamplebufferdescriptor.md) instance.
 
 ## See Also
 
-- [var counterSets: [any MTLCounterSet]?](mtldevice/countersets.md)
+### Sampling a GPU device’s counters
+- [var counterSets: [any MTLCounterSet]?](./countersets.md)
   The counter sets supported by the device object.
-- [func supportsCounterSampling(MTLCounterSamplingPoint) -> Bool](mtldevice/supportscountersampling(_:).md)
+- [func supportsCounterSampling(MTLCounterSamplingPoint) -> Bool](./supportscountersampling%28_%29.md)
   Returns a Boolean value that indicates whether you can read GPU counters at the specified command boundary.
-- [enum MTLCounterSamplingPoint](mtlcountersamplingpoint.md)
+- [enum MTLCounterSamplingPoint](../mtlcountersamplingpoint.md)
   Options for different times when you can sample GPU counters.
 
 

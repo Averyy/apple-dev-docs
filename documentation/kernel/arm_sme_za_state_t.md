@@ -1,7 +1,8 @@
 # arm_sme_za_state_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.4+
@@ -9,7 +10,7 @@
 ## Topics
 
 ### Instance Properties
-- [za](arm_sme_za_state_t/4520086-za.md)
+- [za](./arm_sme_za_state_t/api-4520086-za.md)
 
 
 ---

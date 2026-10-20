@@ -1,7 +1,8 @@
 # supportIndirectCommandBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the pipeline supports indirect command buffers.
 
@@ -17,6 +18,10 @@ Indicates whether the pipeline supports indirect command buffers.
 
 ```swift
 var supportIndirectCommandBuffers: MTL4IndirectCommandBufferSupportState { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTL4IndirectCommandBufferSupportState supportIndirectCommandBuffers;
 ```
 
 

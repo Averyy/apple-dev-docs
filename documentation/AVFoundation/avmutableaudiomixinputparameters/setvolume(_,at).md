@@ -1,7 +1,8 @@
 # setVolume(_:at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the audio volume starting at the specified time.
 
@@ -20,6 +21,10 @@ Sets the value of the audio volume starting at the specified time.
 func setVolume(_ volume: Float, at time: CMTime)
 ```
 
+```objc
+- (void) setVolume:(float) volume atTime:(CMTime) time;
+```
+
 #### Discussion
 
 This method adds a volume ramp starting at `time`. This volume setting remains in effect until the end of the track unless you set a different volume level to start at a later time.
@@ -31,7 +36,8 @@ This method adds a volume ramp starting at `time`. This volume setting remains i
 
 ## See Also
 
-- [func setVolumeRamp(fromStartVolume: Float, toEndVolume: Float, timeRange: CMTimeRange)](avmutableaudiomixinputparameters/setvolumeramp(fromstartvolume:toendvolume:timerange:).md)
+### Setting the volume
+- [func setVolumeRamp(fromStartVolume: Float, toEndVolume: Float, timeRange: CMTimeRange)](./setvolumeramp%28fromstartvolume,toendvolume,timerange%29.md)
   Sets a volume ramp to apply during a specified time range.
 
 

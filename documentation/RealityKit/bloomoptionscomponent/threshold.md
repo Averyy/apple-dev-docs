@@ -1,7 +1,8 @@
 # threshold
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The brightness threshold for bloom activation.
 
@@ -31,9 +32,10 @@ Higher thresholds create more selective bloom that only affects the brightest el
 
 ## See Also
 
-- [var strength: Float](bloomoptionscomponent/strength.md)
+### Configuring the bloom effect
+- [var strength: Float](./strength.md)
   The intensity of the bloom effect.
-- [var blurRadius: Float](bloomoptionscomponent/blurradius.md)
+- [var blurRadius: Float](./blurradius.md)
   The width of the bloom blur kernel as a percentage of viewport height
 
 

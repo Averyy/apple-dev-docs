@@ -1,7 +1,8 @@
 # kSecKeyPermanent
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key is permanent (stored in some keychain) and is always `1`.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key is permanent (stored in some keychain) a
 
 ```swift
 var kSecKeyPermanent: Int32 { get }
+```
+
+```c
+kSecKeyPermanent
 ```
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated value component of this union value parameter.
 
@@ -19,6 +20,8 @@ The associated value component of this union value parameter.
 ```swift
 final var value: IntentParameter<Value>.AppUnionValueComponent { get }
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` conforms to `AppUnionValue`.
 
 
 ---

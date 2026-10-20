@@ -1,7 +1,8 @@
 # CKRecordKeyValueSetting
 
 **Framework**: CloudKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for managing the key-value pairs of a CloudKit record.
 
@@ -20,49 +21,54 @@ A protocol for managing the key-value pairs of a CloudKit record.
 protocol CKRecordKeyValueSetting : NSObjectProtocol
 ```
 
+```objc
+@protocol CKRecordKeyValueSetting <NSObject>
+```
+
 ## Topics
 
 ### Accessing a Record’s Fields
-- [func object(forKey: String) -> (any __CKRecordObjCValue)?](ckrecordkeyvaluesetting/object(forkey:).md)
+- [func object(forKey: String) -> (any __CKRecordObjCValue)?](./ckrecordkeyvaluesetting/object%28forkey%29.md)
   Returns the object that the record stores for the specified key.
-- [subscript(String) -> (any __CKRecordObjCValue)?](ckrecordkeyvaluesetting/subscript(_:).md)
+- [subscript(String) -> (any __CKRecordObjCValue)?](./ckrecordkeyvaluesetting/subscript%28_%29.md)
   Returns the object that the record stores for the specified key.
-- [func setObject((any __CKRecordObjCValue)?, forKey: String)](ckrecordkeyvaluesetting/setobject(_:forkey:).md)
+- [func setObject((any __CKRecordObjCValue)?, forKey: String)](./ckrecordkeyvaluesetting/setobject%28_,forkey%29.md)
   Stores an object in the record using the specified key.
-- [func allKeys() -> [String]](ckrecordkeyvaluesetting/allkeys.md)
+- [func allKeys() -> [String]](./ckrecordkeyvaluesetting/allkeys%28%29.md)
   Returns an array of the record’s keys.
-- [func changedKeys() -> [String]](ckrecordkeyvaluesetting/changedkeys.md)
+- [func changedKeys() -> [String]](./ckrecordkeyvaluesetting/changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [CKRecord](ckrecord.md)
-- [CKShare](ckshare.md)
+- [CKRecord](./ckrecord.md)
+- [CKShare](./ckshare.md)
 
 ## See Also
 
-- [func object(forKey: CKRecord.FieldKey) -> (any __CKRecordObjCValue)?](ckrecord/object(forkey:).md)
+### Accessing the Record’s Fields
+- [func object(forKey: CKRecord.FieldKey) -> (any __CKRecordObjCValue)?](./ckrecord/object%28forkey%29.md)
   Returns the object that the record stores for the specified key.
-- [subscript(String) -> (any __CKRecordObjCValue)?](ckrecord/subscript(_:)-51whk.md)
+- [subscript(String) -> (any __CKRecordObjCValue)?](./ckrecord/subscript%28_%29-51whk.md)
   Returns the object that the record stores for the specified key.
-- [subscript(CKRecord.FieldKey) -> (any __CKRecordObjCValue)?](ckrecord/subscript(_:)-4g91i.md)
+- [subscript(CKRecord.FieldKey) -> (any __CKRecordObjCValue)?](./ckrecord/subscript%28_%29-4g91i.md)
   Returns the object that the record stores for the specified key.
-- [func setObject((any __CKRecordObjCValue)?, forKey: CKRecord.FieldKey)](ckrecord/setobject(_:forkey:).md)
+- [func setObject((any __CKRecordObjCValue)?, forKey: CKRecord.FieldKey)](./ckrecord/setobject%28_,forkey%29.md)
   Stores an object in the record using the specified key.
-- [func allKeys() -> [CKRecord.FieldKey]](ckrecord/allkeys.md)
+- [func allKeys() -> [CKRecord.FieldKey]](./ckrecord/allkeys%28%29.md)
   Returns an array of the record’s keys.
-- [func changedKeys() -> [CKRecord.FieldKey]](ckrecord/changedkeys.md)
+- [func changedKeys() -> [CKRecord.FieldKey]](./ckrecord/changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
-- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+- [func makeIterator() -> CKRecordKeyValueIterator](./ckrecord/makeiterator%28%29.md)
   Returns an iterator of the record’s key-value pairs.
-- [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
+- [struct CKRecordKeyValueIterator](./ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
-- [protocol CKRecordValueProtocol](ckrecordvalueprotocol.md)
+- [protocol CKRecordValueProtocol](./ckrecordvalueprotocol.md)
   A description of a CloudKit record value.
-- [typealias CKRecordValue](ckrecordvalue-swift.typealias.md)
+- [typealias CKRecordValue](./ckrecordvalue-swift.typealias.md)
   A data type for objects that CloudKit stores on the server.
 
 

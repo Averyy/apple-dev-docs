@@ -1,7 +1,8 @@
 # omitted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A time style with no time-related components represented.
 
@@ -26,11 +27,12 @@ If both the date style and time style are set to `omitted`, the time is represen
 
 ## See Also
 
-- [static let complete: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/complete.md)
+### Modifying a Time Style
+- [static let complete: Date.FormatStyle.TimeStyle](./complete.md)
   A time style with all components represented.
-- [static let shortened: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/shortened.md)
+- [static let shortened: Date.FormatStyle.TimeStyle](./shortened.md)
   A shortened time style with only the hour, minute, and day period components represented.
-- [static let standard: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/standard.md)
+- [static let standard: Date.FormatStyle.TimeStyle](./standard.md)
   A time style with all components except the time zone represented.
 
 

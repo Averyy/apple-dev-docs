@@ -1,10 +1,13 @@
 # wantsExtendedDynamicRangeOpenGLSurface
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.11+
+- macOS 10.11+ - Deprecated in 10.14
+
+> **Deprecated**: Use NSOpenGLView instead.
 
 ## Declaration
 
@@ -12,13 +15,18 @@
 var wantsExtendedDynamicRangeOpenGLSurface: Bool { get set }
 ```
 
+```objc
+@property BOOL wantsExtendedDynamicRangeOpenGLSurface;
+```
+
 ## See Also
 
-- [var acceptsTouchEvents: Bool](nsview/acceptstouchevents.md)
+### Deprecated properties
+- [var acceptsTouchEvents: Bool](./acceptstouchevents.md)
   A Boolean value indicating whether the view accepts touch events.
-- [var canDraw: Bool](nsview/candraw.md)
+- [var canDraw: Bool](./candraw.md)
   A Boolean value indicating whether drawing commands will produce any results.
-- [var wantsBestResolutionOpenGLSurface: Bool](nsview/wantsbestresolutionopenglsurface.md)
+- [var wantsBestResolutionOpenGLSurface: Bool](./wantsbestresolutionopenglsurface.md)
   A Boolean value indicating whether the view wants an OpenGL backing surface with a resolution greater than 1 pixel per point.
 
 

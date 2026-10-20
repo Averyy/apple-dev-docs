@@ -1,7 +1,8 @@
 # TabularEstimatorToSupervisedAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An adaptor that exposes a tabular estimator as a tabular supervised estimator.
 
@@ -23,38 +24,39 @@ struct TabularEstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimato
 ## Topics
 
 ### Creating an adaptor
-- [init(Estimator, annotationColumnID: ColumnID<Annotation>)](tabularestimatortosupervisedadaptor/init(_:annotationcolumnid:).md)
+- [init(Estimator, annotationColumnID: ColumnID<Annotation>)](./tabularestimatortosupervisedadaptor/init%28_,annotationcolumnid%29.md)
   Creates a tabular estimator supervised adaptor.
 ### Getting the properties
-- [var annotationColumnID: ColumnID<Annotation>](tabularestimatortosupervisedadaptor/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<Annotation>](./tabularestimatortosupervisedadaptor/annotationcolumnid.md)
   The annotation column identifier.
-- [let estimator: Estimator](tabularestimatortosupervisedadaptor/estimator.md)
+- [let estimator: Estimator](./tabularestimatortosupervisedadaptor/estimator.md)
   The wrapped estimator.
 ### Encoding and decoding
-- [func encode(Estimator.Transformer, to: inout any EstimatorEncoder) throws](tabularestimatortosupervisedadaptor/encode(_:to:).md)
+- [func encode(Estimator.Transformer, to: inout any EstimatorEncoder) throws](./tabularestimatortosupervisedadaptor/encode%28_,to%29.md)
   Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> Estimator.Transformer](tabularestimatortosupervisedadaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> Estimator.Transformer](./tabularestimatortosupervisedadaptor/decode%28from%29.md)
   Decodes a previously fitted transformer.
 ### Fitting
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> Estimator.Transformer](tabularestimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> Estimator.Transformer](./tabularestimatortosupervisedadaptor/fitted%28to,validateon,eventhandler%29.md)
   Returns the tabular transformer fitted using the provided tabular estimator.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedTabularEstimator](./supervisedtabularestimator.md)
 
 ## See Also
 
-- [struct TabularTransformerToEstimatorAdaptor](tabulartransformertoestimatoradaptor.md)
+### Tabular adaptors
+- [struct TabularTransformerToEstimatorAdaptor](./tabulartransformertoestimatoradaptor.md)
   A tabular estimator that always returns a predefined tabular transformer.
-- [struct TabularTransformerToUpdatableEstimatorAdaptor](tabulartransformertoupdatableestimatoradaptor.md)
+- [struct TabularTransformerToUpdatableEstimatorAdaptor](./tabulartransformertoupdatableestimatoradaptor.md)
   An updatable tabular estimator that always returns a predefined transformer.
-- [struct UpdatableTabularEstimatorToSupervisedAdaptor](updatabletabularestimatortosupervisedadaptor.md)
+- [struct UpdatableTabularEstimatorToSupervisedAdaptor](./updatabletabularestimatortosupervisedadaptor.md)
   An adaptor that exposes an updatable tabular estimator as an updatable supervised tabular estimator.
 
 

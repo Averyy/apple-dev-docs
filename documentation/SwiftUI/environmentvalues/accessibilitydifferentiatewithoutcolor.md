@@ -1,7 +1,8 @@
 # accessibilityDifferentiateWithoutColor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the system preference for Differentiate without Color is enabled.
 
@@ -26,9 +27,10 @@ If this is true, UI should not convey information using color alone and instead 
 
 ## See Also
 
-- [func accessibilityIgnoresInvertColors(Bool) -> some View](view/accessibilityignoresinvertcolors(_:).md)
+### Managing color
+- [func accessibilityIgnoresInvertColors(Bool) -> some View](../view/accessibilityignoresinvertcolors%28_%29.md)
   Sets whether this view should ignore the system Smart Invert setting.
-- [var accessibilityInvertColors: Bool](environmentvalues/accessibilityinvertcolors.md)
+- [var accessibilityInvertColors: Bool](./accessibilityinvertcolors.md)
   Whether the system preference for Invert Colors is enabled.
 
 

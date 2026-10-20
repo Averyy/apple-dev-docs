@@ -1,7 +1,8 @@
 # updateEvents(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the set of trigger events.
 
@@ -14,27 +15,40 @@ Updates the set of trigger events.
 ## Declaration
 
 ```swift
+func updateEvents(_ events: [HMEvent], completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateEvents(_ events: [HMEvent]) async throws
+```
+
+```objc
+- (void) updateEvents:(NSArray<HMEvent *> *) events completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `events`: An array of events that replaces the events on the trigger.
-- `completion`: A block that executes after processing the request. The block takes the following parameter: - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
+- `completion`: A block that executes after processing the request.
+
+  The block takes the following parameter:
+
+  - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
 
 ## See Also
 
-- [var events: [HMEvent]](hmeventtrigger/events.md)
+### Setting trigger events
+- [var events: [HMEvent]](./events.md)
   The events that activate the trigger.
-- [Location events](location-events.md)
+- [Location events](../location-events.md)
   Events that represent the user’s movement among regions.
-- [Time events](time-events.md)
+- [Time events](../time-events.md)
   Events based on time, significant occurrences, and time durations.
-- [Characteristic events](characteristic-events.md)
+- [Characteristic events](../characteristic-events.md)
   Events based on the capabilities or characteristics of accessories.
-- [Presence events](presence-events.md)
+- [Presence events](../presence-events.md)
   Events based on the user’s presence in a home.
-- [class HMEvent](hmevent.md)
+- [class HMEvent](../hmevent.md)
   The abstract base class for a HomeKit event.
 
 

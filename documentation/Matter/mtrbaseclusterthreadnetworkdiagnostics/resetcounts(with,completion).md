@@ -1,7 +1,8 @@
 # resetCounts(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func resetCounts(with params: MTRThreadNetworkDiagnosticsClusterResetCountsParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func resetCounts(with params: MTRThreadNetworkDiagnosticsClusterResetCountsParams?) async throws
+```
+
+```objc
+- (void) resetCountsWithParams:(MTRThreadNetworkDiagnosticsClusterResetCountsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

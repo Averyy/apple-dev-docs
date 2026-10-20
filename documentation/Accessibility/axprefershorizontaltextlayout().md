@@ -1,18 +1,21 @@
 # AXPrefersHorizontalTextLayout()
 
 **Framework**: Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the system setting for Prefer Horizontal Text is on.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
+- iOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
+- iPadOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
+- Mac Catalyst 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
+- macOS 14.0+ - Deprecated in 15.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
+- tvOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
 - visionOS 1.0+
-- watchOS 10.0+
+- watchOS 10.0+ - Deprecated in 11.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
+
+> **Deprecated**: Use [`prefersHorizontalTextLayout`](./accessibilitysettings/prefershorizontaltextlayout.md) instead.
 
 ## Declaration
 
@@ -23,13 +26,14 @@ func AXPrefersHorizontalTextLayout() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system setting for Prefer Horizontal Text is on; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the system setting for Prefer Horizontal Text is on; otherwise, [`false`](../Swift/false.md).
 
 ## See Also
 
-- [func AXAnimatedImagesEnabled() -> Bool](axanimatedimagesenabled().md)
+### Deprecated
+- [func AXAnimatedImagesEnabled() -> Bool](./axanimatedimagesenabled%28%29.md)
   Returns a Boolean value that indicates whether the system setting for Animated Images is on.
-- [func AXPrefersHeadAnchorAlternative() -> Bool](axprefersheadanchoralternative().md)
+- [func AXPrefersHeadAnchorAlternative() -> Bool](./axprefersheadanchoralternative%28%29.md)
   Returns a Boolean value that indicates the person’s preference for content that follows their head position.
 
 

@@ -1,6 +1,8 @@
 # Accessing a User’s Clinical Records
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Sample Code  
+**Download**: [AccessingAUsersClinicalRecords.zip](https://docs-assets.developer.apple.com/published/ab45cb934896/AccessingAUsersClinicalRecords.zip)
 
 Request authorization to query HealthKit for a user’s clinical records and display them in your app.
 
@@ -12,24 +14,24 @@ Request authorization to query HealthKit for a user’s clinical records and dis
 
 #### Overview
 
-This sample demonstrates how to request access to a user’s clinical records through [`HealthKit`](HealthKit.md). With the HealthKit framework’s clinical record support, you can read [`Fast Healthcare Interoperability Resources`](https://developer.apple.comhttp://hl7.org/fhir) (FHIR) objects from the HealthKit store. People must first download their clinical records from one of the [`supported healthcare institutions`](https://developer.apple.comhttps://support.apple.com/en-us/HT208647) before the records appear in HealthKit.
+This sample demonstrates how to request access to a user’s clinical records through [HealthKit](./HealthKit.md). With the HealthKit framework’s clinical record support, you can read [Fast Healthcare Interoperability Resources](http://hl7.org/fhir) (FHIR) objects from the HealthKit store. People must first download their clinical records from one of the [supported healthcare institutions](https://support.apple.com/en-us/HT208647) before the records appear in HealthKit.
 
 ##### Configure the Sample Code Project
 
-To use HealthKit, you must first enable the HealthKit capability and include the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key in your app’s `Info.plist` file, as described in [`Accessing Health Records`](accessing-health-records.md). To access the clinical records, check the Clinical Health Records checkbox in the HealthKit capability and include the [`NSHealthClinicalHealthRecordsShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription) key in your app’s `Info.plist` file.
+To use HealthKit, you must first enable the HealthKit capability and include the [`NSHealthShareUsageDescription`](../BundleResources/information-property-list/nshealthshareusagedescription.md) key in your app’s `Info.plist` file, as described in [Accessing Health Records](./accessing-health-records.md). To access the clinical records, check the Clinical Health Records checkbox in the HealthKit capability and include the [`NSHealthClinicalHealthRecordsShareUsageDescription`](../BundleResources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md) key in your app’s `Info.plist` file.
 
 The sample app enables the capability and provides the usage string.
 
 Before building and running the app:
 
 1. Set a valid signing team in the target’s General pane so that Xcode can create a provisioning profile containing the HealthKit entitlement when you build the app for the first time.
-2. Add sample data to the Health app by connecting a valid patient portal account from a [`supported healthcare institutions`](https://developer.apple.comhttps://support.apple.com/en-us/HT208647). If you don’t have such an account, you can add sample data within the Simulator as described in [`Accessing Sample Data in the Simulator`](accessing-sample-data-in-the-simulator.md).
+2. Add sample data to the Health app by connecting a valid patient portal account from a [supported healthcare institution](https://support.apple.com/en-us/HT208647). If you don’t have such an account, you can add sample data within the Simulator as described in [Accessing Sample Data in the Simulator](./accessing-sample-data-in-the-simulator.md).
 
 When you first run the app, it hasn’t requested permission to read or share any data in HealthKit. Tapping any items in the list results in an Authorization not Determined error. To authorize the app, scroll to the bottom of the list, and tap the Authorize button.
 
 ##### Define the Sample Types to Request
 
-The app defines the clinical record sample types using the [`HKClinicalTypeIdentifier`](hkclinicaltypeidentifier.md) enumeration. The app must request permission to read all the types that it intends to use. Note that the app may define both clinical records and standard HealthKit sample types at the same time.
+The app defines the clinical record sample types using the [`HKClinicalTypeIdentifier`](./hkclinicaltypeidentifier.md) enumeration. The app must request permission to read all the types that it intends to use. Note that the app may define both clinical records and standard HealthKit sample types at the same time.
 
 ```swift
 /// An enumeration that defines two categories of data types: Health Records and Fitness Data.
@@ -121,7 +123,7 @@ Typically, apps that read or share HealthKit data automatically request authoriz
 
 ##### Query for Health Records
 
-To query for clinical records, the app uses an [`HKSampleQuery`](hksamplequery.md) as shown below.
+To query for clinical records, the app uses an [HKSampleQuery](./hksamplequery.md) as shown below.
 
 ```swift
 /// Use HKSampleQuery to query the HealthKit store for samples by type.
@@ -143,11 +145,11 @@ func queryForSamples() {
 }
 ```
 
-##### Access Elements Within a Fhir Resource
+##### Access Elements Within a FHIR Resource
 
-After a person using the app has given the app access to their clinical records, the app needs to extract the relevant information from the FHIR JSON data so that it can do something useful with it. For example, to display the status of a medication in the form of a [`MedicationStatement`](https://developer.apple.comhttp://hl7.org/fhir/DSTU2/medicationstatement) resource, the app needs to access the `MedicationStatement.status` element.
+After a person using the app has given the app access to their clinical records, the app needs to extract the relevant information from the FHIR JSON data so that it can do something useful with it. For example, to display the status of a medication in the form of a [MedicationStatement](http://hl7.org/fhir/DSTU2/medicationstatement) resource, the app needs to access the `MedicationStatement.status` element.
 
-The app uses the [`FHIRModels`](https://developer.apple.comhttps://github.com/apple/FHIRModels) library to parse the JSON data into Swift classes. For more details on FHIRModels, see [`Handling FHIR Without Getting Burned`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10669).
+The app uses the [FHIRModels](https://github.com/apple/FHIRModels) library to parse the JSON data into Swift classes. For more details on FHIRModels, see [Handling FHIR Without Getting Burned](https://developer.apple.com/videos/play/wwdc2020/10669).
 
 It uses a `JSONDecoder` to convert the resource’s JSON data:
 
@@ -181,27 +183,28 @@ extension ModelsDSTU2.MedicationStatement: DisplayItemSubtitleConvertible {
 
 ## See Also
 
-- [Accessing Health Records](accessing-health-records.md)
+### Medical records
+- [Accessing Health Records](./accessing-health-records.md)
   Read clinical record data from the HealthKit store.
-- [Accessing Sample Data in the Simulator](accessing-sample-data-in-the-simulator.md)
+- [Accessing Sample Data in the Simulator](./accessing-sample-data-in-the-simulator.md)
   Set up sample accounts to build and test your app.
-- [Accessing Data from a SMART Health Card](accessing-data-from-a-smart-health-card.md)
+- [Accessing Data from a SMART Health Card](./accessing-data-from-a-smart-health-card.md)
   Query for and validate a verifiable clinical record.
-- [class HKClinicalRecord](hkclinicalrecord.md)
+- [class HKClinicalRecord](./hkclinicalrecord.md)
   A sample that stores a clinical record.
-- [class HKFHIRResource](hkfhirresource.md)
+- [class HKFHIRResource](./hkfhirresource.md)
   An object containing Fast Healthcare Interoperability Resources (FHIR) data.
-- [class HKVerifiableClinicalRecord](hkverifiableclinicalrecord.md)
+- [class HKVerifiableClinicalRecord](./hkverifiableclinicalrecord.md)
   A sample that represents the contents of a SMART Health Card or EU Digital COVID Certificate.
-- [class HKVerifiableClinicalRecordSubject](hkverifiableclinicalrecordsubject.md)
+- [class HKVerifiableClinicalRecordSubject](./hkverifiableclinicalrecordsubject.md)
   The subject associated with a signed clinical record.
-- [class HKCDADocumentSample](hkcdadocumentsample.md)
+- [class HKCDADocumentSample](./hkcdadocumentsample.md)
   A Clinical Document Architecture (CDA) sample that stores a single document.
-- [class HKDocumentSample](hkdocumentsample.md)
+- [class HKDocumentSample](./hkdocumentsample.md)
   An abstract class that represents a health document in the HealthKit store.
-- [static let CDA: HKDocumentTypeIdentifier](hkdocumenttypeidentifier/cda.md)
+- [static let CDA: HKDocumentTypeIdentifier](./hkdocumenttypeidentifier/cda.md)
   The CDA Document type identifier, used when requesting permission to read or share CDA documents.
-- [class HKDocumentType](hkdocumenttype.md)
+- [class HKDocumentType](./hkdocumenttype.md)
   A sample type used to create queries for documents.
 
 

@@ -1,7 +1,8 @@
 # HMAC.MAC
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for a hash-based message authentication code.
 
@@ -22,9 +23,10 @@ typealias MAC = HashedAuthenticationCode<H>
 
 ## See Also
 
-- [struct HashedAuthenticationCode](hashedauthenticationcode.md)
+### Working with codes
+- [struct HashedAuthenticationCode](../hashedauthenticationcode.md)
   A hash-based message authentication code.
-- [protocol MessageAuthenticationCode](messageauthenticationcode.md)
+- [protocol MessageAuthenticationCode](../messageauthenticationcode.md)
   A type that represents a message authentication code.
 
 

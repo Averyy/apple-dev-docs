@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The song’s recent play date.
 

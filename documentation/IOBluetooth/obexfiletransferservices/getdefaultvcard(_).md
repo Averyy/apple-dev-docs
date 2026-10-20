@@ -1,17 +1,22 @@
 # getDefaultVCard(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the remote default VCard, if it is supported
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getDefaultVCard(_ inLocalPathAndName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) getDefaultVCard:(NSString *) inLocalPathAndName;
 ```
 
 #### Return Value

@@ -1,14 +1,15 @@
 # kINQUIRY_VENDOR_IDENTIFICATION_Length
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_VENDOR_IDENTIFICATION_Length = 8
 ```
 

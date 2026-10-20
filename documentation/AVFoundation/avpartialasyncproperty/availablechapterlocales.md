@@ -1,7 +1,8 @@
 # availableChapterLocales
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The locales of an asset’s chapter metadata.
 
@@ -20,15 +21,18 @@ The locales of an asset’s chapter metadata.
 static var availableChapterLocales: AVAsyncProperty<Root, [Locale]> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [func loadChapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]) async throws -> [AVTimedMetadataGroup]](avasset/loadchaptermetadatagroups(withtitlelocale:containingitemswithcommonkeys:).md)
+### Loading chapter metadata
+- [func loadChapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]) async throws -> [AVTimedMetadataGroup]](../avasset/loadchaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
   Loads chapter metadata that contains the specified title locale and common keys.
-- [func loadChapterMetadataGroups(bestMatchingPreferredLanguages: [String], completionHandler: ([AVTimedMetadataGroup]?, (any Error)?) -> Void)](avasset/loadchaptermetadatagroups(bestmatchingpreferredlanguages:completionhandler:).md)
+- [func loadChapterMetadataGroups(bestMatchingPreferredLanguages: [String], completionHandler: ([AVTimedMetadataGroup]?, (any Error)?) -> Void)](../avasset/loadchaptermetadatagroups%28bestmatchingpreferredlanguages,completionhandler%29.md)
   Loads chapter metadata with a locale that best matches the list of preferred languages.
 
 

@@ -1,7 +1,8 @@
 # renderTargetArrayIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index into the render target texture array slice for this camera.
 
@@ -23,7 +24,8 @@ Corresponds to `MTLRenderPassDescriptor.renderTargetArrayLength` slices.
 
 ## See Also
 
-- [var viewportArrayIndex: Int](lowlevelrenderer/camera/viewportarrayindex.md)
+### Specifying render targets
+- [var viewportArrayIndex: Int](./viewportarrayindex.md)
   The index into the output viewports and scissor rects arrays for this camera.
 
 

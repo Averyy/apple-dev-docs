@@ -1,7 +1,8 @@
 # depthBias
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant value that RealityKit applies as a bias to its shadow calculations.
 
@@ -25,11 +26,12 @@ Reduce visual effects such as *shadow acne*, by adjusting this property. The def
 
 ## See Also
 
-- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride.md)
+### Configuring the shadow
+- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](./cullmodeoverride.md)
   The light’s culling mode for shadow map rendering.
-- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection.md)
+- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](./shadowprojection.md)
   Sets the shadow projection used for shadow map rendering
-- [var maximumDistance: Float](directionallightcomponent/shadow/maximumdistance.md)
+- [var maximumDistance: Float](./maximumdistance.md)
   The maximum distance for the shadow.
 
 

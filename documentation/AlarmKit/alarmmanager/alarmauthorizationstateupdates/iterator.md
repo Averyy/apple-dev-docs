@@ -1,7 +1,8 @@
 # AlarmManager.AlarmAuthorizationStateUpdates.Iterator
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A nested type that iterates over the elements of this sequence.
 
@@ -19,19 +20,20 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async -> AlarmManager.AuthorizationState?](alarmmanager/alarmauthorizationstateupdates/iterator/next.md)
+- [func next() async -> AlarmManager.AuthorizationState?](./iterator/next%28%29.md)
   Returns the next element in the sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AlarmManager.AlarmAuthorizationStateUpdates.Iterator](alarmmanager/alarmauthorizationstateupdates/makeasynciterator.md)
+### Iterating an update
+- [func makeAsyncIterator() -> AlarmManager.AlarmAuthorizationStateUpdates.Iterator](./makeasynciterator%28%29.md)
   Returns an asynchronous iterator over the elements of this sequence.
-- [AlarmManager.AlarmAuthorizationStateUpdates.Element](alarmmanager/alarmauthorizationstateupdates/element.md)
+- [AlarmManager.AlarmAuthorizationStateUpdates.Element](./element.md)
   A type representing the sequence’s elements.
 
 

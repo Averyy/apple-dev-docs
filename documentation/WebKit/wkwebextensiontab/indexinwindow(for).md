@@ -1,7 +1,8 @@
 # indexInWindow(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the index of the tab in the window is needed.
 
@@ -18,9 +19,13 @@ Called when the index of the tab in the window is needed.
 optional func indexInWindow(for context: WKWebExtensionContext) -> Int
 ```
 
+```objc
+- (NSUInteger) indexInWindowForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-This method should be implemented for better performance. Defaults to the window’s [`tabs(for:)`](wkwebextensionwindow/tabs(for:).md) method to find the index if not implemented.
+This method should be implemented for better performance. Defaults to the window’s [`tabs(for:)`](../wkwebextensionwindow/tabs%28for%29.md) method to find the index if not implemented.
 
 ## Parameters
 

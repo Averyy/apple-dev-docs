@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct internal_state {
     ...
 };
@@ -17,7 +17,7 @@ struct internal_state {
 ## Topics
 
 ### Instance Properties
-- [dummy](internal_state/1546913-dummy.md)
+- [dummy](./internal_state/api-1546913-dummy.md)
 
 
 ---

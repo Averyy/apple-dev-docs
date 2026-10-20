@@ -1,7 +1,8 @@
 # skipInitialSpaces
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether to ignore leading spaces of a data field.
 
@@ -21,9 +22,10 @@ var skipInitialSpaces: Bool
 
 ## See Also
 
-- [var skipRows: Int](mldatatable/parsingoptions/skiprows.md)
+### Ignoring CSV components
+- [var skipRows: Int](./skiprows.md)
   The number of starting rows to skip from the start of a CSV file.
-- [var comment: String](mldatatable/parsingoptions/comment.md)
+- [var comment: String](./comment.md)
   The character that marks the beginning of a comment, or text to ignore, in a CSV file.
 
 

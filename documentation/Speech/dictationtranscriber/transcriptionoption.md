@@ -1,7 +1,8 @@
 # DictationTranscriber.TranscriptionOption
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options relating to the text of the transcription.
 
@@ -21,29 +22,30 @@ enum TranscriptionOption
 ## Topics
 
 ### Transcription options
-- [DictationTranscriber.TranscriptionOption.emoji](dictationtranscriber/transcriptionoption/emoji.md)
+- [DictationTranscriber.TranscriptionOption.emoji](./transcriptionoption/emoji.md)
   Transcribes named emoji as emoji.
-- [DictationTranscriber.TranscriptionOption.etiquetteReplacements](dictationtranscriber/transcriptionoption/etiquettereplacements.md)
+- [DictationTranscriber.TranscriptionOption.etiquetteReplacements](./transcriptionoption/etiquettereplacements.md)
   Replaces certain words and phrases with a redacted form.
-- [DictationTranscriber.TranscriptionOption.punctuation](dictationtranscriber/transcriptionoption/punctuation.md)
+- [DictationTranscriber.TranscriptionOption.punctuation](./transcriptionoption/punctuation.md)
   Automatically punctuates the transcription.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DictationTranscriber.ContentHint](dictationtranscriber/contenthint.md)
+### Configuring transcription
+- [DictationTranscriber.ContentHint](./contenthint.md)
   Expected characteristics of the spoken audio content and its delivery.
-- [DictationTranscriber.ReportingOption](dictationtranscriber/reportingoption.md)
+- [DictationTranscriber.ReportingOption](./reportingoption.md)
   Options relating to the transcriber’s result delivery.
-- [DictationTranscriber.ResultAttributeOption](dictationtranscriber/resultattributeoption.md)
+- [DictationTranscriber.ResultAttributeOption](./resultattributeoption.md)
   Options relating to the attributes of the transcription.
 
 

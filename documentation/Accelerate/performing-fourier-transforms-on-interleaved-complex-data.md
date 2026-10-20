@@ -1,12 +1,13 @@
 # Performing Fourier transforms on interleaved-complex data
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
 
 #### Overview
 
-In many cases, your code performs Fourier transforms on data that originates as interleaved-complex values. An interleaved-complex representation stores the real and imaginary parts of complex values together as collections of [`DSPComplex`](dspcomplex.md) or [`DSPDoubleComplex`](dspdoublecomplex.md) structures. Many Fourier-related routines in [`vDSP`](vdsp.md) accept complex values in a split-complex representation that stores real and imaginary parts as separate collections.
+In many cases, your code performs Fourier transforms on data that originates as interleaved-complex values. An interleaved-complex representation stores the real and imaginary parts of complex values together as collections of [`DSPComplex`](./dspcomplex.md) or [`DSPDoubleComplex`](./dspdoublecomplex.md) structures. Many Fourier-related routines in [`vDSP`](./vdsp.md) accept complex values in a split-complex representation that stores real and imaginary parts as separate collections.
 
 For example, the following shows a collection of four complex values in a single interleaved collection:
 
@@ -37,11 +38,11 @@ let reals = [real₀, real₁, real₂, real₃]
 let imaginaries = [imag₀, imag₁, imag₂, imag₃]
 ```
 
-vDSP routines accept split-complex values either as [`DSPSplitComplex`](dspsplitcomplex.md) structures or as two separate collections.
+vDSP routines accept split-complex values either as [`DSPSplitComplex`](./dspsplitcomplex.md) structures or as two separate collections.
 
-##### Convert Interleaved Values to Split Complex Format
+##### Convert interleaved values to split-complex format
 
-Given an array `signal` that contains 32 interleaved-complex values, the following code performs a Fourier transform on the values. Use [`vDSP_ctoz`](vdsp_ctoz.md) to populate the split collections `splitSignalReal` and `splitSignalImag` with the interleaved values from `signal`:
+Given an array `signal` that contains 32 interleaved-complex values, the following code performs a Fourier transform on the values. Use [`vDSP_ctoz`](./vdsp_ctoz.md) to populate the split collections `splitSignalReal` and `splitSignalImag` with the interleaved values from `signal`:
 
 **Swift**:
 
@@ -89,9 +90,9 @@ vDSP_ctoz(signal, 2,
           complexValuesCount);
 ```
 
-##### Perform a Fourier Transform on Split Data
+##### Perform a Fourier transform on split data
 
-Use the vDSP function [`vDSP_DFT_zop_CreateSetup`](vdsp_dft_zop_createsetup.md) to create a setup object for complex-to-complex DFTs. The execute function, [`vDSP_DFT_Execute`](vdsp_dft_execute.md), automatically switches to a fast Fourier transform (FFT) when the specified count supports the FFT algorithm.
+Use the vDSP function [`vDSP_DFT_zop_CreateSetup`](./vdsp_dft_zop_createsetup.md) to create a setup object for complex-to-complex DFTs. The execute function, [`vDSP_DFT_Execute`](./vdsp_dft_execute.md), automatically switches to a fast Fourier transform (FFT) when the specified count supports the FFT algorithm.
 
 **Swift**:
 
@@ -140,11 +141,11 @@ if (splitComplexSetup) {
 // Use platform APIs (such as cblas or manual loop) to find the dominant frequency index.
 ```
 
-On return,`splitOutputReal` and `splitOutputImag` contain the split format frequency-domain representation of the values in `signal`. Use [`indexOfMaximum(_:)`](vdsp/indexofmaximum(_:)-5qdtm.md) to find the dominant frequency.
+On return,`splitOutputReal` and `splitOutputImag` contain the split format frequency-domain representation of the values in `signal`. Use [`indexOfMaximum(_:)`](./vdsp/indexofmaximum%28_%29-5qdtm.md) to find the dominant frequency.
 
-##### Convert Split Complex Values to Interleaved Format
+##### Convert split-complex values to interleaved format
 
-Use [`vDSP_ztoc`](vdsp_ztoc.md) to convert the split result to the interleaved format.
+Use [`vDSP_ztoc`](./vdsp_ztoc.md) to convert the split result to the interleaved format.
 
 **Swift**:
 
@@ -181,11 +182,11 @@ vDSP_ztoc(&splitComplex2, 1,
 
 On return, `dftOutputInterleaved` contains the DFT result in the interleaved format.
 
-##### Perform a Fourier Transform Directly on Interleaved Data
+##### Perform a Fourier transform directly on interleaved data
 
-vDSP provides routines for DFTs directly on interleaved data. Use these functions instead of using [`vDSP_ctoz`](vdsp_ctoz.md) and [`vDSP_ztoc`](vdsp_ztoc.md) to convert between interleaved and split formats.
+vDSP provides routines for DFTs directly on interleaved data. Use these functions instead of using [`vDSP_ctoz`](./vdsp_ctoz.md) and [`vDSP_ztoc`](./vdsp_ztoc.md) to convert between interleaved and split formats.
 
-The following code performs the transform from the [`Performing Fourier transforms on interleaved-complex data`](performing-fourier-transforms-on-interleaved-complex-data.md) section directly on the interleaved data:
+The following code performs the transform from the [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md) section directly on the interleaved data:
 
 **Swift**:
 
@@ -238,23 +239,24 @@ On return, `interleavedOutput` contains the FFT result in the interleaved format
 
 ## See Also
 
-- [Understanding data packing for Fourier transforms](understanding-data-packing-for-fourier-transforms.md)
+### Fourier and Cosine Transforms
+- [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
   Format source data for the vDSP Fourier functions, and interpret the results.
-- [Finding the component frequencies in a composite sine wave](finding-the-component-frequencies-in-a-composite-sine-wave.md)
+- [Finding the component frequencies in a composite sine wave](./finding-the-component-frequencies-in-a-composite-sine-wave.md)
   Use 1D fast Fourier transform to compute the frequency components of a signal.
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+- [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [Signal extraction from noise](signal-extraction-from-noise.md)
+- [Signal extraction from noise](./signal-extraction-from-noise.md)
   Use Accelerate’s discrete cosine transform to remove noise from a signal.
-- [Performing Fourier Transforms on Multiple Signals](performing-fourier-transforms-on-multiple-signals.md)
+- [Performing Fourier Transforms on Multiple Signals](./performing-fourier-transforms-on-multiple-signals.md)
   Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call.
-- [Halftone descreening with 2D fast Fourier transform](halftone-descreening-with-2d-fast-fourier-transform.md)
+- [Halftone descreening with 2D fast Fourier transform](./halftone-descreening-with-2d-fast-fourier-transform.md)
   Reduce or remove periodic artifacts from images.
-- [Fast Fourier transforms](fast-fourier-transforms.md)
+- [Fast Fourier transforms](./fast-fourier-transforms.md)
   Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Fourier transforms](discrete-fourier-transforms.md)
+- [Discrete Fourier transforms](./discrete-fourier-transforms.md)
   Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Cosine transforms](discrete-cosine-transforms.md)
+- [Discrete Cosine transforms](./discrete-cosine-transforms.md)
   Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa.
 
 

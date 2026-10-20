@@ -1,7 +1,8 @@
 # NSGlassEffectView.Style.clear
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Clear glass effect style.
 
@@ -12,6 +13,10 @@ Clear glass effect style.
 
 ```swift
 case clear
+```
+
+```c
+NSGlassEffectViewStyleClear
 ```
 
 

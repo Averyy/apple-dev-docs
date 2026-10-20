@@ -1,7 +1,8 @@
 # checkPendingGameActivityExistence(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks whether there is a pending activity to handle for the current game.
 
@@ -16,7 +17,15 @@ Checks whether there is a pending activity to handle for the current game.
 ## Declaration
 
 ```swift
+class func checkPendingGameActivityExistence(completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 class var hasPendingGameActivities: Bool { get async }
+```
+
+```objc
++ (void) checkPendingGameActivityExistenceWithCompletionHandler:(void (^)(BOOL )) completionHandler;
 ```
 
 #### Discussion

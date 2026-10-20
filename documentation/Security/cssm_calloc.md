@@ -1,7 +1,8 @@
 # CSSM_CALLOC
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_CALLOC = (uint32, CSSM_SIZE, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?
+```
+
+```c
+typedef void *(*)(unsigned int, unsigned long, void *) CSSM_CALLOC;
 ```
 
 

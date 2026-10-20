@@ -1,7 +1,8 @@
 # LowLevelDeformation.VertexSemantic.position
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The semantic for vertex position data.
 
@@ -19,13 +20,14 @@ case position
 
 ## See Also
 
-- [LowLevelDeformation.VertexSemantic.normal](lowleveldeformation/vertexsemantic/normal.md)
+### Identifying vertex attributes
+- [LowLevelDeformation.VertexSemantic.normal](./normal.md)
   The semantic for surface normal data.
-- [LowLevelDeformation.VertexSemantic.tangent](lowleveldeformation/vertexsemantic/tangent.md)
+- [LowLevelDeformation.VertexSemantic.tangent](./tangent.md)
   The semantic for surface tangent vector data.
-- [LowLevelDeformation.VertexSemantic.bitangent](lowleveldeformation/vertexsemantic/bitangent.md)
+- [LowLevelDeformation.VertexSemantic.bitangent](./bitangent.md)
   The semantic for surface bitangent vector data.
-- [LowLevelDeformation.VertexSemantic.uv](lowleveldeformation/vertexsemantic/uv.md)
+- [LowLevelDeformation.VertexSemantic.uv](./uv.md)
   Texture coordinate (for input to renormalization).
 
 

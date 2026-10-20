@@ -1,7 +1,8 @@
 # automationElements
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var automationElements: [Any]? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSArray * automationElements;
 ```
 
 

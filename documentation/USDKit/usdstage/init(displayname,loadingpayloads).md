@@ -1,7 +1,8 @@
 # init(displayName:loadingPayloads:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new memory-backed stage.
 
@@ -21,13 +22,14 @@ init(displayName: String? = nil, loadingPayloads: USDStage.InitialLoadRule = .al
 
 #### Discussion
 
-This is analogous to creating an anonymous [`USDLayer`](usdlayer.md).
+This is analogous to creating an anonymous [`USDLayer`](../usdlayer.md).
 
 ## See Also
 
-- [init(string: String, loadingPayloads: USDStage.InitialLoadRule) throws](usdstage/init(string:loadingpayloads:).md)
+### Creating a stage
+- [init(string: String, loadingPayloads: USDStage.InitialLoadRule) throws](./init%28string,loadingpayloads%29.md)
   Creates a stage from a string containing a `.usda` document.
-- [init(Data, type: UTType, loadingPayloads: USDStage.InitialLoadRule) throws](usdstage/init(_:type:loadingpayloads:).md)
+- [init(Data, type: UTType, loadingPayloads: USDStage.InitialLoadRule) throws](./init%28_,type,loadingpayloads%29.md)
   Creates a stage from in-memory data in a given format.
 
 

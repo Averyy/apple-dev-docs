@@ -1,7 +1,8 @@
 # defaultAnimation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default animation resource.
 
@@ -21,15 +22,16 @@ var defaultAnimation: AnimationResource? { get }
 
 #### Discussion
 
-The component looks up the resource by key if [`defaultKey`](animationlibrarycomponent/defaultkey.md) is non-`nil` and the library contains an animation that the key identifies. Otherwise, the component returns the first entry in the library.
+The component looks up the resource by key if [`defaultKey`](./defaultkey.md) is non-`nil` and the library contains an animation that the key identifies. Otherwise, the component returns the first entry in the library.
 
 ## See Also
 
-- [var animations: AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animations.md)
+### Accessing animations
+- [var animations: AnimationLibraryComponent.AnimationCollection](./animations.md)
   The collection of animations an entity can play.
-- [var unkeyedResources: [AnimationResource]?](animationlibrarycomponent/unkeyedresources.md)
+- [var unkeyedResources: [AnimationResource]?](./unkeyedresources.md)
   The library’s animation resources that don’t have a queryable name.
-- [var defaultKey: String?](animationlibrarycomponent/defaultkey.md)
+- [var defaultKey: String?](./defaultkey.md)
   The name of the default animation resource.
 
 

@@ -1,19 +1,20 @@
 # IODelay
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sleep the calling thread for a number of microseconds.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void IODelay(uint64_t us);
 ```
 
@@ -27,7 +28,8 @@ This function blocks the calling thread for at least the number of specified mic
 
 ## See Also
 
-- [IOSleep](iosleep.md)
+### Thread Utilities
+- [IOSleep](./iosleep.md)
   Sleep the calling thread for a number of milliseconds.
 
 

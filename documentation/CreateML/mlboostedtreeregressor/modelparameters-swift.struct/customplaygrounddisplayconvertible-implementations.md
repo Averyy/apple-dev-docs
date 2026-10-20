@@ -1,11 +1,12 @@
 # CustomPlaygroundDisplayConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var playgroundDescription: Any](mlboostedtreeregressor/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the model parameters for a boosted tree regressor shown in a playground.
 
 

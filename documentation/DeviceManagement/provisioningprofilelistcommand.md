@@ -1,7 +1,8 @@
 # ProvisioningProfileListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of installed provisioning profiles on a device.
 
@@ -16,18 +17,18 @@ The command to get a list of installed provisioning profiles on a device.
 
 ## Declaration
 
-```swift
+```
 object ProvisioningProfileListCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object ProvisioningProfileListCommand.Command](provisioningprofilelistcommand/command-data.dictionary.md)
+- [object ProvisioningProfileListCommand.Command](./provisioningprofilelistcommand/command-data.dictionary.md)
   The command to get a list of installed provisioning profiles on a device.
 
 ## Properties
@@ -37,7 +38,8 @@ object ProvisioningProfileListCommand
 
 ## See Also
 
-- [object ProvisioningProfileListResponse](provisioningprofilelistresponse.md)
+### Commands and responses
+- [object ProvisioningProfileListResponse](./provisioningprofilelistresponse.md)
   A response from the device after it processes the command to get a list of installed provisioning profiles on a device.
 
 

@@ -1,7 +1,8 @@
 # performBackgroundTask(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ func performBackgroundTask<T>(_ block: @escaping (NSManagedObjectContext) throws
 
 ## See Also
 
-- [func performBackgroundTask((NSManagedObjectContext) -> Void)](nspersistentcontainer/performbackgroundtask(_:)-39sch.md)
+### Performing Background Tasks
+- [func performBackgroundTask((NSManagedObjectContext) -> Void)](./performbackgroundtask%28_%29-39sch.md)
   Executes a closure on a private queue using an ephemeral managed object context.
 
 

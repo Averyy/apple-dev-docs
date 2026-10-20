@@ -1,7 +1,8 @@
 # MKMapType.satelliteFlyover
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A satellite image of the area with flyover data where available.
 
@@ -19,17 +20,22 @@ A satellite image of the area with flyover data where available.
 case satelliteFlyover
 ```
 
+```c
+MKMapTypeSatelliteFlyover
+```
+
 ## See Also
 
-- [MKMapType.standard](mkmaptype/standard.md)
+### Constants
+- [MKMapType.standard](./standard.md)
   A street map that shows the position of all roads and some road names.
-- [MKMapType.satellite](mkmaptype/satellite.md)
+- [MKMapType.satellite](./satellite.md)
   Satellite imagery of the area.
-- [MKMapType.hybrid](mkmaptype/hybrid.md)
+- [MKMapType.hybrid](./hybrid.md)
   A satellite image of the area with road and road name information layered on top.
-- [MKMapType.hybridFlyover](mkmaptype/hybridflyover.md)
+- [MKMapType.hybridFlyover](./hybridflyover.md)
   A hybrid satellite image with flyover data where available.
-- [MKMapType.mutedStandard](mkmaptype/mutedstandard.md)
+- [MKMapType.mutedStandard](./mutedstandard.md)
   A street map where MapKit emphasizes your data over the underlying map details.
 
 

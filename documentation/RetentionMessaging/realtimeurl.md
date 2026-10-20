@@ -1,7 +1,8 @@
 # realtimeURL
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that contains the URL you provide for your Get Retention Message endpoint.
 
@@ -10,17 +11,21 @@ A string that contains the URL you provide for your Get Retention Message endpoi
 
 ## Declaration
 
-```swift
+```
 string realtimeURL
 ```
 
 ## Mentions
 
-- [Retention Messaging API changelog](retention-messaging-changelog.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
+
+
+
+**Maximum Length**: `256`
 
 #### Discussion
 
-> ❗ **Important**: The `realtimeURL` must begin with `https://` and be a maximum of 256 characters. Otherwise, the call to [`Configure Realtime URL`](configure-realtime-url.md) fails.
+> ❗ **Important**: The `realtimeURL` must begin with `https://` and be a maximum of 256 characters. Otherwise, the call to [`Configure Realtime URL`](./configure-realtime-url.md) fails.
 
 
 ---

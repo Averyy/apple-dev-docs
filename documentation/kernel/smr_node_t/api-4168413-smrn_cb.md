@@ -1,14 +1,15 @@
 # smrn_cb
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 __ptrauth(0,1,40822) smr_cb_t smrn_cb;
 ```
 

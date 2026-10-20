@@ -1,7 +1,8 @@
 # scene
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene associated with the current session.
 
@@ -18,11 +19,16 @@ The scene associated with the current session.
 var scene: UIScene? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIScene * scene;
+```
+
 ## See Also
 
-- [var role: UISceneSession.Role](uiscenesession/role-swift.property.md)
+### Getting the scene information
+- [var role: UISceneSession.Role](./role-swift.property.md)
   The role played by the scene’s content.
-- [UISceneSession.Role](uiscenesession/role-swift.struct.md)
+- [UISceneSession.Role](./role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
 
 

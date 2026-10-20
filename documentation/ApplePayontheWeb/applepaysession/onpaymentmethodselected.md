@@ -1,7 +1,8 @@
 # onpaymentmethodselected
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An event handler to call when the user selects a new payment method.
 
@@ -11,7 +12,7 @@ An event handler to call when the user selects a new payment method.
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler onpaymentmethodselected;
 ```
 
@@ -19,21 +20,22 @@ attribute EventHandler onpaymentmethodselected;
 
 This attribute must be set to a function that accepts an `events` argument; for example, `session.onpaymentmethodselected = function(event) {}`.
 
-The event parameter contains the [`paymentMethod`](applepaypaymentmethodselectedevent/paymentmethod.md) attribute. Access it like this:
+The event parameter contains the [`paymentMethod`](../applepaypaymentmethodselectedevent/paymentmethod.md) attribute. Access it like this:
 
 `var myPaymentMethod = event.paymentMethod;`
 
-The [`onpaymentmethodselected`](applepaysession/onpaymentmethodselected.md) function must respond by calling [`completePaymentMethodSelection`](applepaysession/completepaymentmethodselection.md) before the 30 second timeout, after which a message appears stating that the payment could not be completed.
+The [`onpaymentmethodselected`](./onpaymentmethodselected.md) function must respond by calling [`completePaymentMethodSelection`](./completepaymentmethodselection.md) before the 30 second timeout, after which a message appears stating that the payment could not be completed.
 
 ## See Also
 
-- [completePaymentMethodSelection](applepaysession/completepaymentmethodselection.md)
+### Handling payment method updates
+- [completePaymentMethodSelection](./completepaymentmethodselection.md)
   Completes the selection of a payment method with an update.
-- [ApplePayPaymentMethodUpdate](applepaypaymentmethodupdate.md)
+- [ApplePayPaymentMethodUpdate](../applepaypaymentmethodupdate.md)
   Updated transaction details to provide after the user changes the payment method in the payment sheet.
-- [ApplePayPaymentMethodSelectedEvent](applepaypaymentmethodselectedevent.md)
+- [ApplePayPaymentMethodSelectedEvent](../applepaypaymentmethodselectedevent.md)
   An event object that contains the payment method.
-- [ApplePayPaymentMethod](applepaypaymentmethod.md)
+- [ApplePayPaymentMethod](../applepaypaymentmethod.md)
   A dictionary that describes an Apple Pay payment method.
 
 

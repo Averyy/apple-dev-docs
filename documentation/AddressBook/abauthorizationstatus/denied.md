@@ -1,14 +1,17 @@
 # ABAuthorizationStatus.denied
 
 **Framework**: Address Book  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user explicitly denied access to address book data for this app.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: use CNAuthorizationStatus
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The user explicitly denied access to address book data for this app.
 case denied
 ```
 
+```c
+kABAuthorizationStatusDenied
+```
+
 ## See Also
 
-- [ABAuthorizationStatus.notDetermined](abauthorizationstatus/notdetermined.md)
+### Constants
+- [ABAuthorizationStatus.notDetermined](./notdetermined.md)
   No authorization status could be determined.
-- [ABAuthorizationStatus.restricted](abauthorizationstatus/restricted.md)
+- [ABAuthorizationStatus.restricted](./restricted.md)
   The app is not authorized to access address book data. The user cannot change this access, possibly due to restrictions such as parental controls.
-- [ABAuthorizationStatus.authorized](abauthorizationstatus/authorized.md)
+- [ABAuthorizationStatus.authorized](./authorized.md)
   The app is authorized to access address book data.
 
 

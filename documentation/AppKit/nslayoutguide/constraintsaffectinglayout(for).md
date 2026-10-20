@@ -1,7 +1,8 @@
 # constraintsAffectingLayout(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 func constraintsAffectingLayout(for orientation: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]
+```
+
+```objc
+- (NSArray<NSLayoutConstraint *> *) constraintsAffectingLayoutForOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
 

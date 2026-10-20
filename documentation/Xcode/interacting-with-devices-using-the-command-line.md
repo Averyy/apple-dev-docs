@@ -1,6 +1,7 @@
 # Interacting with devices using the command line
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Manage simulated and physical devices from the command line.
 
@@ -18,13 +19,13 @@ For complete `devicectl` documentation, enter `devicectl help` or `devicectl hel
 
 Before using `devicectl`, start the simulated devices and pair the physical devices you want to use.
 
-#### Start Simulated Devices
+#### Start simulated devices
 
-To start simulated devices, use the `simctl` command. To install `simctl` and other command-line tools, see [`Installing the command-line tools`](installing-the-command-line-tools.md). After you install `simctl`, enter `xcrun simctl help` in Terminal to learn more.
+To start simulated devices, use the `simctl` command. To install `simctl` and other command-line tools, see [Installing the command-line tools](./installing-the-command-line-tools.md). After you install `simctl`, enter `xcrun simctl help` in Terminal to learn more.
 
 Alternatively, use Device Hub to start simulators. Select the simulated device you want to use in the sidebar and click Start in the canvas.
 
-#### Pair Physical Devices
+#### Pair physical devices
 
 To pair physical devices that you connect to your Mac with a cable, enter this command:
 
@@ -32,11 +33,11 @@ To pair physical devices that you connect to your Mac with a cable, enter this c
 % devicectl manage pair
 ```
 
-To use Device Hub to pair physical devices with your Mac, either wirelessly or with a cable, see [`Managing your simulated and physical devices in Device Hub`](managing-your-simulated-and-physical-devices-in-device-hub.md).
+To use Device Hub to pair physical devices with your Mac, either wirelessly or with a cable, see [Managing your simulated and physical devices in Device Hub](./managing-your-simulated-and-physical-devices-in-device-hub.md).
 
 Whether you use the command line or Device Hub to pair physical devices, unlock the device before entering `devicectl` commands.
 
-#### Specify Devices in Subcommands
+#### Specify devices in subcommands
 
 You pass the device to subcommands by adding the `--device` option followed by the UUID, ECID, UDID, or name for the device.
 
@@ -44,9 +45,9 @@ To get devices and identifiers you use in subsequent commands, enter the `device
 
 Alternatively, you can find most of these properties in the Device Hub inspector. Select the physical device in the sidebar, click the Info button in the far right of the toolbar, and then click the Info tab below. If the identifier doesn’t appear below, click Edit Visibility to see more properties.
 
-To find device identifiers using other methods, see [`Locating device identifiers`](locating-device-identifiers.md).
+To find device identifiers using other methods, see [Locating device identifiers](./locating-device-identifiers.md).
 
-#### Get Information About Devices
+#### Get information about devices
 
 Use the `devicectl device info` command and subcommands to get additional information about devices. For example, use this command to find out whether a device is locked:
 
@@ -60,7 +61,7 @@ Use this command to get more hardware details and metadata about a device:
 % devicectl device info details --device <uuid|ecid|udid|name>
 ```
 
-#### Install Apps on Devices
+#### Install apps on devices
 
 Use the `devicectl device install app` subcommand to install your app on the device:
 
@@ -70,7 +71,7 @@ Use the `devicectl device install app` subcommand to install your app on the dev
 
 If you build your app in Xcode, you can get the path to your app using the Project navigator. Under Products, Control-click the app and choose Show in Finder, or, as a shortcut, choose Open Terminal at Location from the contextual menu.
 
-#### Launch Apps on Devices
+#### Launch apps on devices
 
 You can launch an app on a simulated or physical device using its bundle ID or using the path to the app:
 
@@ -82,7 +83,7 @@ For example, pass `com.example.MyApp` as the bundle ID or `.../MyApp.app` with t
 
 For other ways to launch apps, enter `devicectl help device process launch` in Terminal. For example, use the `--environment-variables` option to pass environment variables to the app.
 
-#### Pass File Locations to Subcommands
+#### Pass file locations to subcommands
 
 You provide file locations to subcommands that access the file system, such as `devicectl device info files` and `devicectl device copy`, as described below.
 
@@ -98,7 +99,7 @@ For the `temporary` domain, the identifier can be any nonempty string that allow
 
 In addition, you may need to pass credentials using the `--user` option.
 
-#### List Files on Devices
+#### List files on devices
 
 Use the `devicectl device info files` subcommand to return a list of files in a location on a device:
 
@@ -114,7 +115,7 @@ For example, to list all the crash reports, pass `systemCrashLogs` as the `--dom
 
 Then, use the `devicectl device copy from` command below to copy a crash log in the output to your Mac.
 
-#### Transfer Files to and From Devices
+#### Transfer files to and from devices
 
 Use the `devicectl device copy` subcommand to transfer files to and from physical devices that you pair with your Mac. You transfer files to and from specific file system locations where you have permissions.
 
@@ -132,7 +133,7 @@ This command copies a file on the device to your Mac:
 % devicectl device copy from --device <uuid|ecid|udid|name> --source <filename> --destination <filename> --domain-type <domain> --domain-identifier <identifier>
 ```
 
-#### Mount Devices on Your Mac
+#### Mount devices on your Mac
 
 Instead of transferring files, you can browse the files of all physical and started simulated devices that your Mac knows about on a single shared volume or mount point, or get the mount point for a single device using `devicectl`.
 

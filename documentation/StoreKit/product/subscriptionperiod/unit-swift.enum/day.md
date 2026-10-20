@@ -1,7 +1,8 @@
 # Product.SubscriptionPeriod.Unit.day
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A subscription period unit of a day.
 
@@ -22,11 +23,12 @@ case day
 
 ## See Also
 
-- [Product.SubscriptionPeriod.Unit.month](product/subscriptionperiod/unit-swift.enum/month.md)
+### Getting the subscription period units
+- [Product.SubscriptionPeriod.Unit.month](./month.md)
   A subscription period unit of a month.
-- [Product.SubscriptionPeriod.Unit.week](product/subscriptionperiod/unit-swift.enum/week.md)
+- [Product.SubscriptionPeriod.Unit.week](./week.md)
   A subscription period unit of a week.
-- [Product.SubscriptionPeriod.Unit.year](product/subscriptionperiod/unit-swift.enum/year.md)
+- [Product.SubscriptionPeriod.Unit.year](./year.md)
   A subscription period unit of a year.
 
 

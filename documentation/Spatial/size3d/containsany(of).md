@@ -1,7 +1,8 @@
 # containsAny(of:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the size contains the specified point.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether the size contains the specified p
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,7 +31,8 @@ A Boolean value that indicates whether the size contains the specified point.
 
 ## See Also
 
-- [var simd: simd_double3](size3d/simd.md)
+### Deprecated symbols
+- [var simd: simd_double3](./simd.md)
 
 
 ---

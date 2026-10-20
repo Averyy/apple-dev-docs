@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of data coming from a provider.
 
@@ -17,7 +18,8 @@ final var state: DataProviderState { get }
 
 ## See Also
 
-- [var description: String](worldtrackingprovider/description.md)
+### Inspecting a world-tracking provider
+- [var description: String](./description.md)
   A textual description of a world-tracking provider.
 
 

@@ -1,7 +1,8 @@
 # password(percentEncoded:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the password component of the URL, optionally removing any percent-encoding.
 
@@ -26,9 +27,9 @@ The password component of the URL, optionally percent-encoding any unreserved ch
 
 #### Discussion
 
-The system doesn’t allow certain characters in the URL password component, so [`URL`](url.md) percent-encodes those characters to create a valid URL. Calling this function with `percentEncoded = false` removes any percent-encoding and returns the unencoded password.
+The system doesn’t allow certain characters in the URL password component, so [`URL`](../url.md) percent-encodes those characters to create a valid URL. Calling this function with `percentEncoded = false` removes any percent-encoding and returns the unencoded password.
 
-If the URL doesn’t contain a password component according to [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt), this function returns `nil`.
+If the URL doesn’t contain a password component according to [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt), this function returns `nil`.
 
 ## Parameters
 
@@ -36,35 +37,36 @@ If the URL doesn’t contain a password component according to [`RFC 3986`](http
 
 ## See Also
 
-- [func fragment(percentEncoded: Bool) -> String?](url/fragment(percentencoded:).md)
+### Accessing the parts of a URL
+- [func fragment(percentEncoded: Bool) -> String?](./fragment%28percentencoded%29.md)
   Returns the fragment component of the URL, optionally removing any percent-encoding.
-- [var fragment: String?](url/fragment.md)
+- [var fragment: String?](./fragment.md)
   The fragment component of the URL if the URL conforms to RFC 3986; otherwise, nil.
-- [func host(percentEncoded: Bool) -> String?](url/host(percentencoded:).md)
+- [func host(percentEncoded: Bool) -> String?](./host%28percentencoded%29.md)
   Returns the host component of the URL, optionally removing any percent-encoding.
-- [var host: String?](url/host.md)
+- [var host: String?](./host.md)
   The host component of a URL if the URL conforms to RFC 3986; otherwise, nil.
-- [var lastPathComponent: String](url/lastpathcomponent.md)
+- [var lastPathComponent: String](./lastpathcomponent.md)
   The last path component of the URL, or an empty string if the path is an empty string.
-- [func path(percentEncoded: Bool) -> String](url/path(percentencoded:).md)
+- [func path(percentEncoded: Bool) -> String](./path%28percentencoded%29.md)
   Returns the path component of the URL, optionally removing any percent-encoding.
-- [var path: String](url/path.md)
+- [var path: String](./path.md)
   The path component of the URL if the URL conforms to RFC 3986; otherwise, an empty string.
-- [var password: String?](url/password.md)
+- [var password: String?](./password.md)
   The password component of the URL if the URL conforms to RFC 3986; otherwise, nil.
-- [var pathComponents: [String]](url/pathcomponents.md)
+- [var pathComponents: [String]](./pathcomponents.md)
   The path components of the URL, or an empty array if the path is an empty string.
-- [var pathExtension: String](url/pathextension.md)
+- [var pathExtension: String](./pathextension.md)
   The path extension of the URL, or an empty string if the path is an empty string.
-- [var port: Int?](url/port.md)
+- [var port: Int?](./port.md)
   The port component of the URL if the URL conforms to RFC 3986; otherwise, nil.
-- [func query(percentEncoded: Bool) -> String?](url/query(percentencoded:).md)
+- [func query(percentEncoded: Bool) -> String?](./query%28percentencoded%29.md)
   Returns the query component of the URL, optionally removing any percent-encoding.
-- [var query: String?](url/query.md)
+- [var query: String?](./query.md)
   The query of the URL if the URL conforms to RFC 3986; otherwise, nil.
-- [var scheme: String?](url/scheme.md)
+- [var scheme: String?](./scheme.md)
   The scheme of the URL.
-- [func user(percentEncoded: Bool) -> String?](url/user(percentencoded:).md)
+- [func user(percentEncoded: Bool) -> String?](./user%28percentencoded%29.md)
   Returns the user component of the URL, optionally removing any percent-encoding.
 
 

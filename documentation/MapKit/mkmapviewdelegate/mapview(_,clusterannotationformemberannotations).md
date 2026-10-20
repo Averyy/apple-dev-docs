@@ -1,7 +1,8 @@
 # mapView(_:clusterAnnotationForMemberAnnotations:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to provide a cluster annotation object for the specified annotations.
 
@@ -19,6 +20,10 @@ Asks the delegate to provide a cluster annotation object for the specified annot
 optional func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotations memberAnnotations: [any MKAnnotation]) -> MKClusterAnnotation
 ```
 
+```objc
+- (MKClusterAnnotation *) mapView:(MKMapView *) mapView clusterAnnotationForMemberAnnotations:(NSArray<id<MKAnnotation>> *) memberAnnotations;
+```
+
 #### Return Value
 
 The cluster annotation object.
@@ -30,15 +35,16 @@ Use this method to customize the cluster annotations that display on your map. T
 ## Parameters
 
 - `mapView`: The map view containing the specified annotations.
-- `memberAnnotations`: The annotations for the map to cluster together. The returned [`MKClusterAnnotation`](mkclusterannotation.md) object needs to include the specific annotations in this parameter.
+- `memberAnnotations`: The annotations for the map to cluster together. The returned [`MKClusterAnnotation`](../mkclusterannotation.md) object needs to include the specific annotations in this parameter.
 
 ## See Also
 
-- [func mapView(MKMapView, viewFor: any MKAnnotation) -> MKAnnotationView?](mkmapviewdelegate/mapview(_:viewfor:)-8humz.md)
+### Managing annotation views
+- [func mapView(MKMapView, viewFor: any MKAnnotation) -> MKAnnotationView?](./mapview%28_,viewfor%29-8humz.md)
   Returns the view associated with the specified annotation object.
-- [func mapView(MKMapView, didAdd: [MKAnnotationView])](mkmapviewdelegate/mapview(_:didadd:)-44xon.md)
+- [func mapView(MKMapView, didAdd: [MKAnnotationView])](./mapview%28_,didadd%29-44xon.md)
   Tells the delegate when the map view adds one or more annotation views to the map.
-- [func mapView(MKMapView, annotationView: MKAnnotationView, calloutAccessoryControlTapped: UIControl)](mkmapviewdelegate/mapview(_:annotationview:calloutaccessorycontroltapped:).md)
+- [func mapView(MKMapView, annotationView: MKAnnotationView, calloutAccessoryControlTapped: UIControl)](./mapview%28_,annotationview,calloutaccessorycontroltapped%29.md)
   Tells the delegate when the user taps one of the annotation view’s accessory buttons.
 
 

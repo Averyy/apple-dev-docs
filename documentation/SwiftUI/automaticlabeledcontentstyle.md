@@ -1,7 +1,8 @@
 # AutomaticLabeledContentStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default labeled content style.
 
@@ -23,18 +24,18 @@ struct AutomaticLabeledContentStyle
 
 #### Overview
 
-Use [`automatic`](labeledcontentstyle/automatic.md) to construct this style.
+Use [`automatic`](./labeledcontentstyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the labeled content style
-- [init()](automaticlabeledcontentstyle/init.md)
+- [init()](./automaticlabeledcontentstyle/init%28%29.md)
   Creates an automatic labeled content style.
 
 ## Relationships
 
 ### Conforms To
-- [LabeledContentStyle](labeledcontentstyle.md)
+- [LabeledContentStyle](./labeledcontentstyle.md)
 
 
 ---

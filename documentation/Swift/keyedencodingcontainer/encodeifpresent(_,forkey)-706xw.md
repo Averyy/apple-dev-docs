@@ -1,7 +1,8 @@
 # encodeIfPresent(_:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the given value for the given key if it is not `nil`.
 
@@ -22,7 +23,7 @@ mutating func encodeIfPresent(_ value: String?, forKey key: Self.Key) throws
 
 #### Discussion
 
-> **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
 ## Parameters
 

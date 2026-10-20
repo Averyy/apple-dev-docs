@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action to play dual-tone multifrequency (DTMF) tones with data in an unarchiver.
 
@@ -18,13 +19,18 @@ Creates a new action to play dual-tone multifrequency (DTMF) tones with data in 
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: An unarchiver object.
 
 ## See Also
 
-- [init(call: UUID, digits: String, type: CXPlayDTMFCallAction.ActionType)](cxplaydtmfcallaction/init(call:digits:type:).md)
+### Creating New Actions
+- [init(call: UUID, digits: String, type: CXPlayDTMFCallAction.ActionType)](./init%28call,digits,type%29.md)
   Initializes a new action for a call identified by a given UUID, as well as a specified type and sequence of digits.
 
 

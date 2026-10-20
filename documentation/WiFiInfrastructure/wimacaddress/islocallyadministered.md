@@ -1,7 +1,8 @@
 # isLocallyAdministered
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this a locally administered MAC Address.
 
@@ -22,11 +23,12 @@ The value of this property is `true` if the MAC address is locally administered,
 
 ## See Also
 
-- [var isZero: Bool](wimacaddress/iszero.md)
+### Checking MAC Address properties
+- [var isZero: Bool](./iszero.md)
   A Boolean value that indicates whether this MAC address is the all-zero MAC Address.
-- [var isBroadcast: Bool](wimacaddress/isbroadcast.md)
+- [var isBroadcast: Bool](./isbroadcast.md)
   A Boolean value that indicates whether this is the broadcast MAC Address.
-- [var isMulticast: Bool](wimacaddress/ismulticast.md)
+- [var isMulticast: Bool](./ismulticast.md)
   A Boolean value that indicates whether this a multicast MAC Address.
 
 

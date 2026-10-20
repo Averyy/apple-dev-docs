@@ -1,7 +1,8 @@
 # callAsFunction()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers the standard rename action provided through the environment.
 

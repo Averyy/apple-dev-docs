@@ -1,7 +1,8 @@
 # listSectionMargins(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the section margins for the specific edges.
 
@@ -24,7 +25,7 @@ A view in which the margins of list sections are set to the specified amount on 
 
 #### Discussion
 
-Use this modifier on a list section to set customize its margins. Indicate the edges to set the margin of by naming either a single value from  [`Edge.Set`](edge/set.md), or by specifying an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) that contains edge values. Margins for the other edges remain unchanged.
+Use this modifier on a list section to set customize its margins. Indicate the edges to set the margin of by naming either a single value from  [`Edge.Set`](../edge/set.md), or by specifying an [`OptionSet`](../../Swift/optionset.md) that contains edge values. Margins for the other edges remain unchanged.
 
 The default section margins are based on the list style, list section spacing and content margins of the list. Using this modifier overrides these default values completely.
 
@@ -32,24 +33,25 @@ For sections that have headers or footers, the section margins are applied aroun
 
 ## Parameters
 
-- `edges`: The set of edges to pad for sections in this view. The default is [`all`](edge/set/all.md).
+- `edges`: The set of edges to pad for sections in this view. The default is [`all`](../edge/set/all.md).
 - `length`: An amount, given in points, to pad section on the specified edges.
 
 ## See Also
 
-- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
+### Configuring a list’s layout
+- [func listRowInsets(EdgeInsets?) -> some View](./listrowinsets%28_%29.md)
   Applies an inset to the rows in a list.
-- [func listRowInsets(Edge.Set, CGFloat?) -> some View](view/listrowinsets(_:_:).md)
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](./listrowinsets%28_,_%29.md)
   Sets the insets of rows in a list on the specified edges.
-- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+- [var defaultMinListRowHeight: CGFloat](../environmentvalues/defaultminlistrowheight.md)
   The default minimum height of rows in a list.
-- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+- [var defaultMinListHeaderHeight: CGFloat?](../environmentvalues/defaultminlistheaderheight.md)
   The default minimum height of a header in a list.
-- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
+- [func listRowSpacing(CGFloat?) -> some View](./listrowspacing%28_%29.md)
   Sets the vertical spacing between two adjacent rows in a List.
-- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
-  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
-- [struct ListSectionSpacing](listsectionspacing.md)
+- [func listSectionSpacing(_:)](./listsectionspacing%28_%29.md)
+  Sets the spacing between adjacent sections in a [`List`](../list.md) to a custom value.
+- [struct ListSectionSpacing](../listsectionspacing.md)
   The spacing options between two adjacent sections in a list.
 
 

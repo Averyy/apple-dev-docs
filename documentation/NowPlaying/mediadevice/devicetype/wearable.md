@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.wearable
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A wearable device like a watch.
 

@@ -1,7 +1,8 @@
 # contact
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact being displayed.
 
@@ -14,18 +15,39 @@ The contact being displayed.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var contact: CNContact { get }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var contact: CNContact? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, strong, readonly) CNContact * contact;
+```
+
+*macOS*
+
+```objc
+@property (copy, readwrite, nullable) CNContact * contact;
+```
+
 ## See Also
 
-- [var alternateName: String?](cncontactviewcontroller/alternatename.md)
+### Displaying Contact Properties
+- [var alternateName: String?](./alternatename.md)
   The name to use if the contact has no display name.
-- [var message: String?](cncontactviewcontroller/message.md)
+- [var message: String?](./message.md)
   The message displayed under the name of the contact.
-- [var displayedPropertyKeys: [Any]?](cncontactviewcontroller/displayedpropertykeys.md)
+- [var displayedPropertyKeys: [Any]?](./displayedpropertykeys.md)
   The contact property keys to display.
 
 

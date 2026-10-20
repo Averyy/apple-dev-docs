@@ -1,7 +1,8 @@
 # AssistantSchemas.Intent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -21,43 +22,43 @@ protocol Intent : AssistantSchemas.Model
 ## Topics
 
 ### Type Properties
-- [static var assistant: some AssistantSchemas.AssistantIntent](assistantschemas/intent/assistant.md)
+- [static var assistant: some AssistantSchemas.AssistantIntent](./intent/assistant.md)
   Assistant schema conformance for types you use for assistant functionality.
-- [static var books: some AssistantSchemas.BooksIntent](assistantschemas/intent/books.md)
+- [static var books: some AssistantSchemas.BooksIntent](./intent/books.md)
   Assistant schema conformance for app intents that offer ebook and audiobook viewing and rendering functionality.
-- [static var browser: some AssistantSchemas.BrowserIntent](assistantschemas/intent/browser.md)
+- [static var browser: some AssistantSchemas.BrowserIntent](./intent/browser.md)
   Assistant schema conformance for app intents that offer web browsing functionality.
-- [static var camera: some AssistantSchemas.CameraIntent](assistantschemas/intent/camera.md)
+- [static var camera: some AssistantSchemas.CameraIntent](./intent/camera.md)
   Assistant schema conformance for app intents that offer camera functionality.
-- [static var files: some AssistantSchemas.FilesIntent](assistantschemas/intent/files.md)
+- [static var files: some AssistantSchemas.FilesIntent](./intent/files.md)
   Assistant schema conformance for app intents that offer file management functionality.
-- [static var journal: some AssistantSchemas.JournalIntent](assistantschemas/intent/journal.md)
+- [static var journal: some AssistantSchemas.JournalIntent](./intent/journal.md)
   Assistant schema conformance for app intents that offer journaling functionality.
-- [static var mail: some AssistantSchemas.MailIntent](assistantschemas/intent/mail.md)
+- [static var mail: some AssistantSchemas.MailIntent](./intent/mail.md)
   Assistant schema conformance for app intents that offer email functionality.
-- [static var photos: some AssistantSchemas.PhotosIntent](assistantschemas/intent/photos.md)
+- [static var photos: some AssistantSchemas.PhotosIntent](./intent/photos.md)
   Assistant schema conformance for app intents that offer photo and video functionality.
-- [static var presentation: some AssistantSchemas.PresentationIntent](assistantschemas/intent/presentation.md)
-- [static var reader: some AssistantSchemas.ReaderIntent](assistantschemas/intent/reader.md)
+- [static var presentation: some AssistantSchemas.PresentationIntent](./intent/presentation.md)
+- [static var reader: some AssistantSchemas.ReaderIntent](./intent/reader.md)
   Assistant schema conformance for app intents that offer document viewing and editing functionality.
-- [static var spreadsheet: some AssistantSchemas.SpreadsheetIntent](assistantschemas/intent/spreadsheet.md)
+- [static var spreadsheet: some AssistantSchemas.SpreadsheetIntent](./intent/spreadsheet.md)
   Assistant schema conformance for app intents that offer spreadsheet functionality.
-- [static var system: some AssistantSchemas.SystemIntent](assistantschemas/intent/system.md)
+- [static var system: some AssistantSchemas.SystemIntent](./intent/system.md)
   Assistant schema conformance for types you use for system functionality.
-- [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](assistantschemas/intent/visualintelligence.md)
+- [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](./intent/visualintelligence.md)
   Assistant schema conformance for app intents that match visual intelligence intents.
-- [static var whiteboard: some AssistantSchemas.WhiteboardIntent](assistantschemas/intent/whiteboard.md)
+- [static var whiteboard: some AssistantSchemas.WhiteboardIntent](./intent/whiteboard.md)
   Assistant schema conformance for app intents that offer whiteboard functionality.
-- [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](assistantschemas/intent/wordprocessor.md)
+- [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](./intent/wordprocessor.md)
   Assistant schema conformance for app intents that offer word processing functionality.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

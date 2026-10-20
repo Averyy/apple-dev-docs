@@ -1,7 +1,8 @@
 # eyeLookDownRight
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The coefficient describing movement of the right eyelids consistent with a downward gaze.
 
@@ -15,25 +16,30 @@ The coefficient describing movement of the right eyelids consistent with a downw
 static let eyeLookDownRight: ARFaceAnchor.BlendShapeLocation
 ```
 
+```c
+extern ARBlendShapeLocation const ARBlendShapeLocationEyeLookDownRight;
+```
+
 #### Discussion
 
-The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
+The figure below shows a face geometry (see [`ARSCNFaceGeometry`](../../arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](../blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](/images/com.apple.arkit/media-2929212@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2929212@2x.png)
 
 ## See Also
 
-- [static let eyeBlinkRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/eyeblinkright.md)
+### Right Eye
+- [static let eyeBlinkRight: ARFaceAnchor.BlendShapeLocation](./eyeblinkright.md)
   The coefficient describing closure of the eyelids over the right eye.
-- [static let eyeLookInRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/eyelookinright.md)
+- [static let eyeLookInRight: ARFaceAnchor.BlendShapeLocation](./eyelookinright.md)
   The coefficient describing movement of the right eyelids consistent with a leftward gaze.
-- [static let eyeLookOutRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/eyelookoutright.md)
+- [static let eyeLookOutRight: ARFaceAnchor.BlendShapeLocation](./eyelookoutright.md)
   The coefficient describing movement of the right eyelids consistent with a rightward gaze.
-- [static let eyeLookUpRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/eyelookupright.md)
+- [static let eyeLookUpRight: ARFaceAnchor.BlendShapeLocation](./eyelookupright.md)
   The coefficient describing movement of the right eyelids consistent with an upward gaze.
-- [static let eyeSquintRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/eyesquintright.md)
+- [static let eyeSquintRight: ARFaceAnchor.BlendShapeLocation](./eyesquintright.md)
   The coefficient describing contraction of the face around the right eye.
-- [static let eyeWideRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/eyewideright.md)
+- [static let eyeWideRight: ARFaceAnchor.BlendShapeLocation](./eyewideright.md)
   The coefficient describing a widening of the eyelids around the right eye.
 
 

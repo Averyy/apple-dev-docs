@@ -1,7 +1,8 @@
 # CSSM_HINT_ADDRESS_APP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_HINT_ADDRESS_APP: Int { get }
+```
+
+```c
+CSSM_HINT_ADDRESS_APP
 ```
 
 

@@ -1,7 +1,8 @@
 # stopMotion(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stopMotion(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stopMotion() async throws
+```
+
+```objc
+- (void) stopMotionWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

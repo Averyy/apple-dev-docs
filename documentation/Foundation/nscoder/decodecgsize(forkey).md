@@ -1,7 +1,8 @@
 # decodeCGSize(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes and returns the Core Graphics size structure associated with the specified key in the coder’s archive.
 
@@ -19,13 +20,17 @@ Decodes and returns the Core Graphics size structure associated with the specifi
 func decodeCGSize(forKey key: String) -> CGSize
 ```
 
+```objc
+- (CGSize) decodeCGSizeForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The `CGSize` structure.
 
 #### Discussion
 
-Use this method to decode size information that was previously encoded using the [`encode(_:forKey:)`](nscoder/encode(_:forkey:)-6wq3n.md) method.
+Use this method to decode size information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-6wq3n.md) method.
 
 ## Parameters
 
@@ -33,21 +38,23 @@ Use this method to decode size information that was previously encoded using the
 
 ## See Also
 
-- [func encode(CGSize, forKey: String)](nscoder/encode(_:forkey:)-6wq3n.md)
+### Related Documentation
+- [func encode(CGSize, forKey: String)](./encode%28_,forkey%29-6wq3n.md)
   Encodes size information and associates it with the specified key in the coder’s archive.
-- [func decodeCGAffineTransform(forKey: String) -> CGAffineTransform](nscoder/decodecgaffinetransform(forkey:).md)
+### Decoding Geometry-Based Data
+- [func decodeCGAffineTransform(forKey: String) -> CGAffineTransform](./decodecgaffinetransform%28forkey%29.md)
   Decodes and returns the Core Graphics affine transform structure associated with the specified key in the coder’s archive.
-- [func decodeCGPoint(forKey: String) -> CGPoint](nscoder/decodecgpoint(forkey:).md)
+- [func decodeCGPoint(forKey: String) -> CGPoint](./decodecgpoint%28forkey%29.md)
   Decodes and returns the Core Graphics point structure associated with the specified key in the coder’s archive.
-- [func decodeCGRect(forKey: String) -> CGRect](nscoder/decodecgrect(forkey:).md)
+- [func decodeCGRect(forKey: String) -> CGRect](./decodecgrect%28forkey%29.md)
   Decodes and returns the Core Graphics rectangle structure associated with the specified key in the coder’s archive.
-- [func decodeCGVector(forKey: String) -> CGVector](nscoder/decodecgvector(forkey:).md)
+- [func decodeCGVector(forKey: String) -> CGVector](./decodecgvector%28forkey%29.md)
   Decodes and returns the Core Graphics vector data associated with the specified key in the coder’s archive.
-- [func decodeDirectionalEdgeInsets(forKey: String) -> NSDirectionalEdgeInsets](nscoder/decodedirectionaledgeinsets(forkey:).md)
+- [func decodeDirectionalEdgeInsets(forKey: String) -> NSDirectionalEdgeInsets](./decodedirectionaledgeinsets%28forkey%29.md)
   Decodes and returns the UIKit directional edge insets structure associated with the specified key in the coder’s archive.
-- [func decodeUIEdgeInsets(forKey: String) -> UIEdgeInsets](nscoder/decodeuiedgeinsets(forkey:).md)
+- [func decodeUIEdgeInsets(forKey: String) -> UIEdgeInsets](./decodeuiedgeinsets%28forkey%29.md)
   Decodes and returns the UIKit edge insets structure associated with the specified key in the coder’s archive.
-- [func decodeUIOffset(forKey: String) -> UIOffset](nscoder/decodeuioffset(forkey:).md)
+- [func decodeUIOffset(forKey: String) -> UIOffset](./decodeuioffset%28forkey%29.md)
   Decodes and returns the UIKit offset structure associated with the specified key in the coder’s archive.
 
 

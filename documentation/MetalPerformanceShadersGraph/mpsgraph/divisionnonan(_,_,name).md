@@ -1,7 +1,8 @@
 # divisionNoNaN(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Divides the first input tensor by the second, with the result being 0 if the denominator is 0.
 
@@ -17,6 +18,10 @@ Divides the first input tensor by the second, with the result being 0 if the den
 
 ```swift
 func divisionNoNaN(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) divisionNoNaNWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

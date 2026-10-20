@@ -1,7 +1,8 @@
 # sparse_unpack_vector_float(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*, with both vectors containing single-precision values.
 
@@ -20,9 +21,13 @@ Extracts elements from the sparse vector *x* into the corresponding location in 
 func sparse_unpack_vector_float(_ N: sparse_dimension, _ nz: sparse_dimension, _ zero: Bool, _ x: UnsafePointer<Float>!, _ indx: UnsafePointer<sparse_index>!, _ y: UnsafeMutablePointer<Float>!, _ incy: sparse_stride)
 ```
 
+```c
+void sparse_unpack_vector_float(sparse_dimension N, sparse_dimension nz, bool zero, const float * restrictx, const sparse_index * restrictindx, float * restricty, sparse_stride incy);
+```
+
 #### Discussion
 
-This function extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*. It can optionally zero the unused values of *y* by setting the `zero` parameter to [`true`](https://developer.apple.com/documentation/swift/true).
+This function extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*. It can optionally zero the unused values of *y* by setting the `zero` parameter to [`true`](../Swift/true.md).
 
 The function is equivalent to the following code.
 
@@ -44,23 +49,26 @@ On exit, *y* has been updated with the nonzero values. If `nz` is less than or e
 
 - `N`: The number of elements in the dense vector *y*.
 - `nz`: The number of nonzero entries in the sparse vector *x*.
-- `zero`: When [`true`](https://developer.apple.com/documentation/swift/true), zero the elements of *y* which do not have nonzero values written to them. When [`false`](https://developer.apple.com/documentation/swift/false) ignore the elements of *y* which do not have nonzero values written to them.
+- `zero`: When [`true`](../Swift/true.md), zero the elements of *y* which do not have nonzero values written to them. When [`false`](../Swift/false.md) ignore the elements of *y* which do not have nonzero values written to them.
 - `x`: Pointer to the dense storage for the values of the sparse vector *x*. The corresponding entry in `indx` holds the index of the value. Contains `nz` values.
-- `indx`: Pointer to the dense storage for the index values of the sparse vector *x*. The corresponding entry in *x* holds the values of the vector.  Contains `nz` values. Indices are always assumed to be stored in ascending order. Additionally, indices are assumed to be unique.  Undefined behavior if either of these assumptions are not met.All indices are 0 based (the first element of a pointer is `ptr[0]`).
-- `y`: Pointer to the dense vector y.  Expected to be of size `N * abs(incy)` elements.  Negative strides are supported.  Note, unlike dense BLAS routines, the pointer points to the last element when stride is negative. On exit, the entries described by the indices in `indx` will be filled with the corresponding values in `x` and all other values will be unchanged if parameter zero is [`false`](https://developer.apple.com/documentation/swift/false), or set to zero if parameter zero is [`true`](https://developer.apple.com/documentation/swift/true).
+- `indx`: Pointer to the dense storage for the index values of the sparse vector *x*. The corresponding entry in *x* holds the values of the vector.  Contains `nz` values.
+
+  Indices are always assumed to be stored in ascending order. Additionally, indices are assumed to be unique.  Undefined behavior if either of these assumptions are not met.All indices are 0 based (the first element of a pointer is `ptr[0]`).
+- `y`: Pointer to the dense vector y.  Expected to be of size `N * abs(incy)` elements.  Negative strides are supported.  Note, unlike dense BLAS routines, the pointer points to the last element when stride is negative. On exit, the entries described by the indices in `indx` will be filled with the corresponding values in `x` and all other values will be unchanged if parameter zero is [`false`](../Swift/false.md), or set to zero if parameter zero is [`true`](../Swift/true.md).
 - `incy`: Increment between valid values in the dense vector y.  Negative strides are supported.
 
 ## See Also
 
-- [func sparse_get_vector_nonzero_count_double(sparse_dimension, UnsafePointer<Double>!, sparse_stride) -> Int](sparse_get_vector_nonzero_count_double(_:_:_:).md)
+### Sparse Utility Operations
+- [func sparse_get_vector_nonzero_count_double(sparse_dimension, UnsafePointer<Double>!, sparse_stride) -> Int](./sparse_get_vector_nonzero_count_double%28_,_,_%29.md)
   Returns the number of nonzero values in the double-precision dense vector *x*.
-- [func sparse_get_vector_nonzero_count_float(sparse_dimension, UnsafePointer<Float>!, sparse_stride) -> Int](sparse_get_vector_nonzero_count_float(_:_:_:).md)
+- [func sparse_get_vector_nonzero_count_float(sparse_dimension, UnsafePointer<Float>!, sparse_stride) -> Int](./sparse_get_vector_nonzero_count_float%28_,_,_%29.md)
   Returns the number of nonzero values in the single-precision dense vector *x*.
-- [func sparse_pack_vector_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, sparse_stride, UnsafeMutablePointer<Double>!, UnsafeMutablePointer<sparse_index>!) -> Int](sparse_pack_vector_double(_:_:_:_:_:_:).md)
+- [func sparse_pack_vector_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, sparse_stride, UnsafeMutablePointer<Double>!, UnsafeMutablePointer<sparse_index>!) -> Int](./sparse_pack_vector_double%28_,_,_,_,_,_%29.md)
   Packs nonzero values from a double-precision dense vector to a destination array.
-- [func sparse_pack_vector_float(sparse_dimension, sparse_dimension, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> Int](sparse_pack_vector_float(_:_:_:_:_:_:).md)
+- [func sparse_pack_vector_float(sparse_dimension, sparse_dimension, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> Int](./sparse_pack_vector_float%28_,_,_,_,_,_%29.md)
   Packs nonzero values from a single-precision dense vector to a destination array.
-- [func sparse_unpack_vector_double(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](sparse_unpack_vector_double(_:_:_:_:_:_:_:).md)
+- [func sparse_unpack_vector_double(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](./sparse_unpack_vector_double%28_,_,_,_,_,_,_%29.md)
   Extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*, with both vectors containing double-precision values.
 
 

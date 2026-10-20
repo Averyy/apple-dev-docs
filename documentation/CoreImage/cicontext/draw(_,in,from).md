@@ -1,7 +1,8 @@
 # draw(_:in:from:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders a region of an image to a rectangle in the context destination.
 
@@ -10,7 +11,7 @@ Renders a region of an image to a rectangle in the context destination.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,15 @@ Renders a region of an image to a rectangle in the context destination.
 func draw(_ image: CIImage, in inRect: CGRect, from fromRect: CGRect)
 ```
 
+```objc
+- (void) drawImage:(CIImage *) image inRect:(CGRect) inRect fromRect:(CGRect) fromRect;
+```
+
 #### Discussion
 
-In iOS, this method draws the `CIImage` object into a renderbuffer for the OpenGL ES context. Use this method only if the [`CIContext`](cicontext.md) object is created with `contextWithEAGLContext:`  and if you are rendering to a CAEAGLayer. This method is asynchronous for apps linked against the iOS 6 or later SDK.
+In iOS, this method draws the `CIImage` object into a renderbuffer for the OpenGL ES context. Use this method only if the [`CIContext`](../cicontext.md) object is created with `contextWithEAGLContext:`  and if you are rendering to a CAEAGLayer. This method is asynchronous for apps linked against the iOS 6 or later SDK.
 
-In macOS, you need to be aware of whether the [`CIContext`](cicontext.md) object is created with a `CGContextRef` or a `CGLContext` object. If you create the [`CIContext`](cicontext.md) object with a `CGContextRef`, the dimensions of the destination rectangle are in points. If you create the [`CIContext`](cicontext.md) object with a `CGLContext` object, the dimensions are in pixels.
+In macOS, you need to be aware of whether the [`CIContext`](../cicontext.md) object is created with a `CGContextRef` or a `CGLContext` object. If you create the [`CIContext`](../cicontext.md) object with a `CGContextRef`, the dimensions of the destination rectangle are in points. If you create the [`CIContext`](../cicontext.md) object with a `CGLContext` object, the dimensions are in pixels.
 
 ## Parameters
 

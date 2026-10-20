@@ -1,7 +1,8 @@
 # pointOfInterestTemplate(_:didSelectPointOfInterest:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user selects a point of interest.
 
@@ -16,11 +17,15 @@ Tells the delegate when the user selects a point of interest.
 optional func pointOfInterestTemplate(_ pointOfInterestTemplate: CPPointOfInterestTemplate, didSelectPointOfInterest pointOfInterest: CPPointOfInterest)
 ```
 
+```objc
+- (void) pointOfInterestTemplate:(CPPointOfInterestTemplate *) pointOfInterestTemplate didSelectPointOfInterest:(CPPointOfInterest *) pointOfInterest;
+```
+
 #### Discussion
 
 CarPlay calls this method whenever the user selects a point of interest from the template’s map. The template displays a detail card for the selection, which contains secondary information and optional actions the user can perform.
 
-Use the [`userInfo`](cppointofinterest/userinfo.md) property to attach a value that provides additional context for the point of interest. You can then reference that value in your implementation of this method.
+Use the [`userInfo`](../cppointofinterest/userinfo.md) property to attach a value that provides additional context for the point of interest. You can then reference that value in your implementation of this method.
 
 ## Parameters
 

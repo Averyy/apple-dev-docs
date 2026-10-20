@@ -1,7 +1,8 @@
 # locationManager(_:didFinishDeferredUpdatesWithError:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that updates will no longer be deferred.
 
@@ -18,6 +19,10 @@ Tells the delegate that updates will no longer be deferred.
 optional func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: (any Error)?)
 ```
 
+```objc
+- (void) locationManager:(CLLocationManager *) manager didFinishDeferredUpdatesWithError:(NSError *) error;
+```
+
 #### Discussion
 
 The location manager object calls this method to let you know that it has stopped deferring the delivery of location events. The manager may call this method for any number of reasons. For example, it calls it when you stop location updates altogether, when you ask the location manager to disallow deferred updates, or when a condition for deferring updates (such as exceeding a timeout or distance parameter) is met.
@@ -29,9 +34,10 @@ The location manager object calls this method to let you know that it has stoppe
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didUpdateLocations: [CLLocation])](cllocationmanagerdelegate/locationmanager(_:didupdatelocations:).md)
+### Receiving location updates
+- [func locationManager(CLLocationManager, didUpdateLocations: [CLLocation])](./locationmanager%28_,didupdatelocations%29.md)
   Tells the delegate that new location data is available.
-- [func locationManager(CLLocationManager, didUpdateTo: CLLocation, from: CLLocation)](cllocationmanagerdelegate/locationmanager(_:didupdateto:from:).md)
+- [func locationManager(CLLocationManager, didUpdateTo: CLLocation, from: CLLocation)](./locationmanager%28_,didupdateto,from%29.md)
   Tells the delegate that a new location value is available.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ColorSync  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty set of options.
 

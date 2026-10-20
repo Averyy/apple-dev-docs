@@ -1,7 +1,8 @@
 # SpotLightComponent.ProjectiveTexture
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that specifies a map of a projective texture or cookie light to use for shadow mapping.
 
@@ -26,33 +27,34 @@ Cookie lights or projective lights in RealityKit are essentially a light mask ad
 ## Topics
 
 ### Creating a projective texture
-- [init(texture: TextureResource, coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform)](spotlightcomponent/projectivetexture/init(texture:coordinatetransform:).md)
+- [init(texture: TextureResource, coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform)](./projectivetexture/init%28texture,coordinatetransform%29.md)
   Creates a new instance with the specified texture and coordinate transform for scale and rotation
-- [init(texture: TextureResource, scale: SIMD2<Float>)](spotlightcomponent/projectivetexture/init(texture:scale:).md)
+- [init(texture: TextureResource, scale: SIMD2<Float>)](./projectivetexture/init%28texture,scale%29.md)
   Creates a new instance with the specified texture and scale
 ### Transforming texture coordinates
-- [var coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](spotlightcomponent/projectivetexture/coordinatetransform.md)
+- [var coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](./projectivetexture/coordinatetransform.md)
   The coordinate transform for the projective texture
-- [SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](spotlightcomponent/projectivetexture/texturecoordinatetransform.md)
+- [SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](./projectivetexture/texturecoordinatetransform.md)
 ### Comparing projective textures
-- [static func == (SpotLightComponent.ProjectiveTexture, SpotLightComponent.ProjectiveTexture) -> Bool](spotlightcomponent/projectivetexture/==(_:_:).md)
+- [static func == (SpotLightComponent.ProjectiveTexture, SpotLightComponent.ProjectiveTexture) -> Bool](./projectivetexture/eqeq%28_,_%29.md)
 ### Initializers
-- [init(texture: TextureResource)](spotlightcomponent/projectivetexture/init(texture:).md)
+- [init(texture: TextureResource)](./projectivetexture/init%28texture%29.md)
   Creates a new instance with the specified texture
 ### Instance Properties
-- [var texture: TextureResource](spotlightcomponent/projectivetexture/texture.md)
+- [var texture: TextureResource](./projectivetexture/texture.md)
   The texture for the projective texture
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [Component](../component.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [SpotLightComponent.SurroundingsLight](spotlightcomponent/surroundingslight.md)
+### Defining the light contribution
+- [SpotLightComponent.SurroundingsLight](./surroundingslight.md)
   A component that specifies that the spot light illuminates the physical and immersive environment.
 
 

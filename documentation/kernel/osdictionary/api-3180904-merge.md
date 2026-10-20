@@ -1,7 +1,8 @@
 # merge
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Adds all members of a dictionary to this dictionary.
 
@@ -11,11 +12,19 @@ Adds all members of a dictionary to this dictionary.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool merge(const OSDictionary *otherDictionary);
+```
+
+*macOS*
+
+```cpp
 virtual bool merge(const OSDictionary *aDictionary);
 ```
 
-#### Return_value
+#### Return Value
 
 true on success, which retains all the added objects, or false on failure which does not retain the objects.
 
@@ -29,14 +38,15 @@ Adds all members of a dictionary to this dictionary. Any keys in the dictionary 
 
 ## See Also
 
-- [+ withCapacity](osdictionary/3180907-withcapacity.md)
+### Creating a Dictionary
+- [+ withCapacity](./api-3180907-withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [+ withDictionary](osdictionary/3180908-withdictionary.md)
+- [+ withDictionary](./api-3180908-withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [+ withObjects](osdictionary/3180909-withobjects.md)
+- [+ withObjects](./api-3180909-withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [- free](osdictionary/3180898-free.md)
-- [- flushCollection](osdictionary/3180897-flushcollection.md)
+- [- free](./api-3180898-free.md)
+- [- flushCollection](./api-3180897-flushcollection.md)
   Removes and drops references to all members of dictionary.
 
 

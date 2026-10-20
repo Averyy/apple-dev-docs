@@ -1,7 +1,8 @@
 # PropertyListSerialization.PropertyListFormat.binary
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the binary property list format.
 
@@ -20,11 +21,16 @@ Specifies the binary property list format.
 case binary
 ```
 
+```c
+NSPropertyListBinaryFormat_v1_0
+```
+
 ## See Also
 
-- [PropertyListSerialization.PropertyListFormat.openStep](propertylistserialization/propertylistformat/openstep.md)
+### Constants
+- [PropertyListSerialization.PropertyListFormat.openStep](./openstep.md)
   Specifies the ASCII property list format inherited from the OpenStep APIs.
-- [PropertyListSerialization.PropertyListFormat.xml](propertylistserialization/propertylistformat/xml.md)
+- [PropertyListSerialization.PropertyListFormat.xml](./xml.md)
   Specifies the XML property list format.
 
 

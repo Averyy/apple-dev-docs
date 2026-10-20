@@ -1,12 +1,13 @@
 # init(line1ImageProvider:line2TextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template from the provided image and text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Creates a new template from the provided image and text.
 init(line1ImageProvider: CLKImageProvider, line2TextProvider: CLKTextProvider)
 ```
 
+```objc
+- (instancetype) initWithLine1ImageProvider:(CLKImageProvider *) line1ImageProvider line2TextProvider:(CLKTextProvider *) line2TextProvider;
+```
+
 ## Parameters
 
-- `line1ImageProvider`: The image provider for the main image. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [`Providing images for different appearances`](https://developer.apple.com/documentation/uikit/providing-images-for-different-appearances).
+- `line1ImageProvider`: The image provider for the main image. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [Providing images for different appearances](../../UIKit/providing-images-for-different-appearances.md).
 - `line2TextProvider`: A text provider for text below the image. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 
 

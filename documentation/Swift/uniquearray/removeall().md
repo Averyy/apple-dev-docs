@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all elements from the array, preserving its allocated capacity.
 
@@ -22,7 +23,7 @@ mutating func removeAll()
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the original count of the array.
+> **Complexity**: O(*n*), where *n* is the original count of the array.
 
 
 ---

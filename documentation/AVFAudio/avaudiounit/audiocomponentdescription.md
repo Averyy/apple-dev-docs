@@ -1,7 +1,8 @@
 # audioComponentDescription
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio component description that represents the underlying Core Audio audio unit.
 
@@ -19,17 +20,23 @@ The audio component description that represents the underlying Core Audio audio 
 var audioComponentDescription: AudioComponentDescription { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AudioComponentDescription audioComponentDescription;
+```
+
 ## See Also
 
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-66uo7.md)
+### Related Documentation
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](./withaudiounit%28_%29-66uo7.md)
   Provides scoped access to the audio unit’s AudioUnit
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](./withaudiounit%28_%29-6c2ze.md)
   Provides scoped access to the audio unit’s AudioUnit
-- [var manufacturerName: String](avaudiounit/manufacturername.md)
+### Getting Audio Unit values
+- [var manufacturerName: String](./manufacturername.md)
   The name of the manufacturer of the audio unit.
-- [var name: String](avaudiounit/name.md)
+- [var name: String](./name.md)
   The name of the audio unit.
-- [var version: Int](avaudiounit/version.md)
+- [var version: Int](./version.md)
   The version number of the audio unit.
 
 

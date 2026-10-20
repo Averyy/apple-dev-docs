@@ -1,7 +1,8 @@
 # SCDynamicStoreGetTypeID()
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier of all `SCDynamicStore` instances.
 
@@ -12,6 +13,10 @@ Returns the type identifier of all `SCDynamicStore` instances.
 
 ```swift
 func SCDynamicStoreGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID SCDynamicStoreGetTypeID();
 ```
 
 #### Return Value

@@ -1,12 +1,15 @@
 # splitView(_:shouldCollapseSubview:forDoubleClickOnDividerAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows a delegate to determine if a subview collapses in response to a double click.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.15
+
+> **Deprecated**: NSSplitView no longer supports collapsing sections via double-click. This delegate method is never called.
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Allows a delegate to determine if a subview collapses in response to a double cl
 optional func splitView(_ splitView: NSSplitView, shouldCollapseSubview subview: NSView, forDoubleClickOnDividerAt dividerIndex: Int) -> Bool
 ```
 
+```objc
+- (BOOL) splitView:(NSSplitView *) splitView shouldCollapseSubview:(NSView *) subview forDoubleClickOnDividerAtIndex:(NSInteger) dividerIndex;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the subview should collapse; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the subview should collapse; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the delegate implements this method, it receives this message once for the subview before a divider when the user double-clicks that divider, and again for the subview after the divider, but only if the delegate returns [`true`](https://developer.apple.com/documentation/swift/true) when it receives [`splitView(_:canCollapseSubview:)`](nssplitviewdelegate/splitview(_:cancollapsesubview:).md) for the subview in question. When the delegate indicates that both subviews should collapse, the behavior of [`NSSplitView`](nssplitview.md) is undefined.
+If the delegate implements this method, it receives this message once for the subview before a divider when the user double-clicks that divider, and again for the subview after the divider, but only if the delegate returns [`true`](../../Swift/true.md) when it receives [`splitView(_:canCollapseSubview:)`](./splitview%28_,cancollapsesubview%29.md) for the subview in question. When the delegate indicates that both subviews should collapse, the behavior of [`NSSplitView`](../nssplitview.md) is undefined.
 
 ## Parameters
 
@@ -30,11 +37,12 @@ If the delegate implements this method, it receives this message once for the su
 
 ## See Also
 
-- [func splitViewWillResizeSubviews(Notification)](nssplitviewdelegate/splitviewwillresizesubviews(_:).md)
+### Managing Subviews
+- [func splitViewWillResizeSubviews(Notification)](./splitviewwillresizesubviews%28_%29.md)
   Notifies the delegate when the split view is about to resize its subviews.
-- [func splitViewDidResizeSubviews(Notification)](nssplitviewdelegate/splitviewdidresizesubviews(_:).md)
+- [func splitViewDidResizeSubviews(Notification)](./splitviewdidresizesubviews%28_%29.md)
   Notifies the delegate when the split view resizes its subviews.
-- [func splitView(NSSplitView, canCollapseSubview: NSView) -> Bool](nssplitviewdelegate/splitview(_:cancollapsesubview:).md)
+- [func splitView(NSSplitView, canCollapseSubview: NSView) -> Bool](./splitview%28_,cancollapsesubview%29.md)
   Allows the delegate to determine whether the user can collapse and expand the specified subview.
 
 

@@ -1,7 +1,8 @@
 # Morphology.GrammaticalGender
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of grammatical gender, used for inflecting strings.
 
@@ -23,39 +24,40 @@ enum GrammaticalGender
 ## Topics
 
 ### Determining Grammatical Gender
-- [Morphology.GrammaticalGender.feminine](morphology/grammaticalgender-swift.enum/feminine.md)
+- [Morphology.GrammaticalGender.feminine](./grammaticalgender-swift.enum/feminine.md)
   The feminine grammatical gender.
-- [Morphology.GrammaticalGender.masculine](morphology/grammaticalgender-swift.enum/masculine.md)
+- [Morphology.GrammaticalGender.masculine](./grammaticalgender-swift.enum/masculine.md)
   The masculine grammatical gender.
-- [Morphology.GrammaticalGender.neuter](morphology/grammaticalgender-swift.enum/neuter.md)
+- [Morphology.GrammaticalGender.neuter](./grammaticalgender-swift.enum/neuter.md)
   A value to not specify gender when inflecting a string.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isUnspecified: Bool](morphology/isunspecified.md)
+### Accessing Grammatical Properties
+- [var isUnspecified: Bool](./isunspecified.md)
   A Boolean value that indicates whether this instance specifies no particular grammar.
-- [var grammaticalGender: Morphology.GrammaticalGender?](morphology/grammaticalgender-swift.property.md)
+- [var grammaticalGender: Morphology.GrammaticalGender?](./grammaticalgender-swift.property.md)
   The grammatical gender used for inflecting strings with this morphology.
-- [var number: Morphology.GrammaticalNumber?](morphology/number.md)
+- [var number: Morphology.GrammaticalNumber?](./number.md)
   The grammatical number used for inflecting strings with this morphology.
-- [Morphology.GrammaticalNumber](morphology/grammaticalnumber.md)
+- [Morphology.GrammaticalNumber](./grammaticalnumber.md)
   A representation of grammatical number, used for inflecting strings.
-- [var partOfSpeech: Morphology.PartOfSpeech?](morphology/partofspeech-swift.property.md)
+- [var partOfSpeech: Morphology.PartOfSpeech?](./partofspeech-swift.property.md)
   The grammatical part of speech used for inflecting strings with this morphology.
-- [Morphology.PartOfSpeech](morphology/partofspeech-swift.enum.md)
+- [Morphology.PartOfSpeech](./partofspeech-swift.enum.md)
   A representation of grammatical parts of speech, used for inflecting strings.
 
 

@@ -1,7 +1,8 @@
 # DeviceID
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Swift wrapper of the C `dev_t` type.
 
@@ -24,26 +25,26 @@ struct DeviceID
 ## Topics
 
 ### Initializers
-- [init(CInterop.DeviceID)](deviceid/init(_:).md)
+- [init(CInterop.DeviceID)](./deviceid/init%28_%29.md)
   Creates a strongly-typed `DeviceID` from the raw C value.
-- [init(rawValue: CInterop.DeviceID)](deviceid/init(rawvalue:).md)
+- [init(rawValue: CInterop.DeviceID)](./deviceid/init%28rawvalue%29.md)
   Creates a strongly-typed `DeviceID` from the raw C value.
 ### Instance Properties
-- [var rawValue: CInterop.DeviceID](deviceid/rawvalue.md)
+- [var rawValue: CInterop.DeviceID](./deviceid/rawvalue.md)
   The raw C `dev_t`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

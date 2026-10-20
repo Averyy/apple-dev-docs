@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a search bar from data in a given unarchiver.
 
@@ -17,15 +18,20 @@ Creates a search bar from data in a given unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: An unarchiver object.
 
 ## See Also
 
-- [convenience init()](uisearchbar/init.md)
+### Creating a search bar
+- [convenience init()](./init%28%29.md)
   Initializes the search bar to its default state.
-- [init(frame: CGRect)](uisearchbar/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a search bar with a specified frame.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(_ matrix: simd_float4x3)
+```
+
+```c
+static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWith4x3Matrix(simd_float4x3 matrix);
 ```
 
 #### Return Value

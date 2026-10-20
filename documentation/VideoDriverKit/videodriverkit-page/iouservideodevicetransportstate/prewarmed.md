@@ -1,7 +1,8 @@
 # Prewarmed
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Device transport state is prewarmed.
 
@@ -10,7 +11,7 @@ Device transport state is prewarmed.
 
 ## Declaration
 
-```swift
+```c
 Prewarmed
 ```
 
@@ -20,9 +21,10 @@ In this state, enable the minimal hardware for I/O, to minimize transition to no
 
 ## See Also
 
-- [Stopped](videodriverkit/iouservideodevicetransportstate/stopped.md)
+### Transport states
+- [Stopped](./stopped.md)
   Device transport state is stopped.
-- [Running](videodriverkit/iouservideodevicetransportstate/running.md)
+- [Running](./running.md)
   Device transport state is running.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type associated with the protocol.
@@ -18,7 +19,8 @@ associatedtype IdentityType : JPKIPassContents.Identity
 
 ## See Also
 
-- [func certificate(using: JPKIPassContents.AuthenticationRequest<Self.IdentityType>) async throws -> JPKIPassContents.Certificate<Self.IdentityType>](jpkipasscontents/identity/certificate(using:).md)
+### Data associated with the identity
+- [func certificate(using: JPKIPassContents.AuthenticationRequest<Self.IdentityType>) async throws -> JPKIPassContents.Certificate<Self.IdentityType>](./certificate%28using%29.md)
   The certificate associated with the Identity.
 
 

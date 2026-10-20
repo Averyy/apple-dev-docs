@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer that you can use to identify view objects in your application.
 
@@ -9,7 +10,7 @@ An integer that you can use to identify view objects in your application.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ An integer that you can use to identify view objects in your application.
 var tag: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger tag;
+```
+
 #### Discussion
 
 The default value is `0`. You can set the value of this tag and use that value to identify the view later.
 
 ## See Also
 
-- [func viewWithTag(Int) -> UIView?](uiview/viewwithtag(_:).md)
+### Identifying the view at runtime
+- [func viewWithTag(Int) -> UIView?](./viewwithtag%28_%29.md)
   Returns the view whose tag matches the specified value.
 
 

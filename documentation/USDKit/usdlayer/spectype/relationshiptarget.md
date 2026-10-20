@@ -1,7 +1,8 @@
 # USDLayer.SpecType.relationshipTarget
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A relationship target spec.
 

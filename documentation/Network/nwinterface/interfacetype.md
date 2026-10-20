@@ -1,7 +1,8 @@
 # NWInterface.InterfaceType
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of network interfaces, based on their link layer media types.
 
@@ -23,32 +24,33 @@ enum InterfaceType
 ## Topics
 
 ### Interface Types
-- [NWInterface.InterfaceType.wifi](nwinterface/interfacetype/wifi.md)
+- [NWInterface.InterfaceType.wifi](./interfacetype/wifi.md)
   The network interface type used for communication over Wi-Fi networks.
-- [NWInterface.InterfaceType.cellular](nwinterface/interfacetype/cellular.md)
+- [NWInterface.InterfaceType.cellular](./interfacetype/cellular.md)
   The network interface type used for communication over cellular networks.
-- [NWInterface.InterfaceType.wiredEthernet](nwinterface/interfacetype/wiredethernet.md)
+- [NWInterface.InterfaceType.wiredEthernet](./interfacetype/wiredethernet.md)
   The network interface type used for communication over wired Ethernet networks.
-- [NWInterface.InterfaceType.loopback](nwinterface/interfacetype/loopback.md)
+- [NWInterface.InterfaceType.loopback](./interfacetype/loopback.md)
   The network interface type used for communication over local loopback networks.
-- [NWInterface.InterfaceType.other](nwinterface/interfacetype/other.md)
+- [NWInterface.InterfaceType.other](./interfacetype/other.md)
   The network interface type used for communication over virtual networks or networks of unknown types.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: NWInterface.InterfaceType](nwinterface/type.md)
+### Inspecting Interfaces
+- [var type: NWInterface.InterfaceType](./type.md)
   The type of the interface, such as Wi-Fi or loopback.
-- [var name: String](nwinterface/name.md)
+- [var name: String](./name.md)
   The name of the interface.
-- [var index: Int](nwinterface/index.md)
+- [var index: Int](./index.md)
   The system interface index associated with the interface.
 
 

@@ -1,7 +1,8 @@
 # BNNSInstanceNorm
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An instance normalization filter.
 
@@ -20,23 +21,28 @@ An instance normalization filter.
 var BNNSInstanceNorm: BNNSFilterType { get }
 ```
 
+```c
+BNNSInstanceNorm
+```
+
 ## See Also
 
-- [var BNNSArithmetic: BNNSFilterType](bnnsarithmetic.md)
+### Layer Constants
+- [var BNNSArithmetic: BNNSFilterType](./bnnsarithmetic.md)
   An arithmetic filter.
-- [var BNNSConvolution: BNNSFilterType](bnnsconvolution.md)
+- [var BNNSConvolution: BNNSFilterType](./bnnsconvolution.md)
   A convolution filter.
-- [var BNNSTransposedConvolution: BNNSFilterType](bnnstransposedconvolution.md)
+- [var BNNSTransposedConvolution: BNNSFilterType](./bnnstransposedconvolution.md)
   A transposed convolution filter.
-- [var BNNSFullyConnected: BNNSFilterType](bnnsfullyconnected.md)
+- [var BNNSFullyConnected: BNNSFilterType](./bnnsfullyconnected.md)
   A fully connected filter.
-- [var BNNSBatchNorm: BNNSFilterType](bnnsbatchnorm.md)
+- [var BNNSBatchNorm: BNNSFilterType](./bnnsbatchnorm.md)
   A batch normalization filter.
-- [var BNNSGroupNorm: BNNSFilterType](bnnsgroupnorm.md)
+- [var BNNSGroupNorm: BNNSFilterType](./bnnsgroupnorm.md)
   A group normalization filter.
-- [var BNNSLayerNorm: BNNSFilterType](bnnslayernorm.md)
+- [var BNNSLayerNorm: BNNSFilterType](./bnnslayernorm.md)
   A layer normalization filter.
-- [var BNNSQuantization: BNNSFilterType](bnnsquantization.md)
+- [var BNNSQuantization: BNNSFilterType](./bnnsquantization.md)
   A quantization filter.
 
 

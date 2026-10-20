@@ -1,9 +1,10 @@
 # left
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A set containing only [`SquareAzimuth.left`](squareazimuth/left.md).
+A set containing only [`SquareAzimuth.left`](../left.md).
 
 **Availability**:
 - visionOS 2.0+

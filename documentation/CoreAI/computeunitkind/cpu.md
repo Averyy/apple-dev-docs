@@ -1,7 +1,8 @@
 # ComputeUnitKind.cpu
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The central processing unit.
 
@@ -20,9 +21,10 @@ case cpu
 
 ## See Also
 
-- [ComputeUnitKind.gpu](computeunitkind/gpu.md)
+### Defining compute unit types
+- [ComputeUnitKind.gpu](./gpu.md)
   The graphics processing unit.
-- [ComputeUnitKind.neuralEngine](computeunitkind/neuralengine.md)
+- [ComputeUnitKind.neuralEngine](./neuralengine.md)
   The Neural Engine.
 
 

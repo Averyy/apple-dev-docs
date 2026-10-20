@@ -1,7 +1,8 @@
 # actionHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler to perform for the action.
 
@@ -18,23 +19,28 @@ A handler to perform for the action.
 var actionHandler: UIAccessibilityCustomAction.Handler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIAccessibilityCustomActionHandler actionHandler;
+```
+
 #### Discussion
 
-If you set this property, the system chooses this action handler over the [`target`](uiaccessibilitycustomaction/target.md) and [`selector`](uiaccessibilitycustomaction/selector.md).
+If you set this property, the system chooses this action handler over the [`target`](./target.md) and [`selector`](./selector.md).
 
 ## See Also
 
-- [var name: String](uiaccessibilitycustomaction/name.md)
+### Accessing the action parameters
+- [var name: String](./name.md)
   The localized name of the action.
-- [var attributedName: NSAttributedString](uiaccessibilitycustomaction/attributedname.md)
+- [var attributedName: NSAttributedString](./attributedname.md)
   The localized name of the action as an attributed string.
-- [var image: UIImage?](uiaccessibilitycustomaction/image.md)
+- [var image: UIImage?](./image.md)
   An image that represents the action in assistive apps.
-- [var target: AnyObject?](uiaccessibilitycustomaction/target.md)
+- [var target: AnyObject?](./target.md)
   The object that performs the action.
-- [var selector: Selector](uiaccessibilitycustomaction/selector.md)
+- [var selector: Selector](./selector.md)
   The method that performs the action.
-- [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
+- [UIAccessibilityCustomAction.Handler](./handler.md)
   A closure type that defines a handler to perform for an action.
 
 

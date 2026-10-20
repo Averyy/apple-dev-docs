@@ -1,7 +1,8 @@
 # EstimatorToSupervisedAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An adaptor that exposes an estimator as a supervised estimator.
 
@@ -23,36 +24,37 @@ struct EstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimator : Est
 ## Topics
 
 ### Creating the adaptor
-- [init(Estimator)](estimatortosupervisedadaptor/init(_:).md)
+- [init(Estimator)](./estimatortosupervisedadaptor/init%28_%29.md)
   Creates an estimator adaptor.
 ### Getting the properties
-- [let estimator: Estimator](estimatortosupervisedadaptor/estimator.md)
+- [let estimator: Estimator](./estimatortosupervisedadaptor/estimator.md)
   The wrapped estimator.
 ### Encoding and decoding
-- [func encode(EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](estimatortosupervisedadaptor/encode(_:to:).md)
+- [func encode(EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](./estimatortosupervisedadaptor/encode%28_,to%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](estimatortosupervisedadaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./estimatortosupervisedadaptor/decode%28from%29.md)
   Returns the pre-defined transformer.
 ### Fitting a transformer
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](estimatortosupervisedadaptor/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./estimatortosupervisedadaptor/fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples, ignoring the annotations and the validation.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](estimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./estimatortosupervisedadaptor/fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
 
 ## See Also
 
-- [struct EstimatorToTemporalAdaptor](estimatortotemporaladaptor.md)
+### Estimator adaptors
+- [struct EstimatorToTemporalAdaptor](./estimatortotemporaladaptor.md)
   A temporal estimator wrapping an estimator.
-- [struct SupervisedEstimatorToTemporalAdaptor](supervisedestimatortotemporaladaptor.md)
+- [struct SupervisedEstimatorToTemporalAdaptor](./supervisedestimatortotemporaladaptor.md)
   A supervised temporal estimator wrapping a supervised estimator.
 
 

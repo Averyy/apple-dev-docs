@@ -1,7 +1,8 @@
 # date(bySettingHour:minute:second:of:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new date calculated with the given time.
 
@@ -20,6 +21,10 @@ Creates a new date calculated with the given time.
 func date(bySettingHour h: Int, minute m: Int, second s: Int, of date: Date, options opts: NSCalendar.Options = []) -> Date?
 ```
 
+```objc
+- (NSDate *) dateBySettingHour:(NSInteger) h minute:(NSInteger) m second:(NSInteger) s ofDate:(NSDate *) date options:(NSCalendarOptions) opts;
+```
+
 #### Return Value
 
 A new `NSDate` instance representing the date calculated by setting the given hour, minute, and second, to a given time. If no such time exists for the specified components, the next available date is returned, which may be on a different calendar day.
@@ -34,23 +39,24 @@ You can use this method to calculate a date at a different time of a particular 
 - `m`: The minute value.
 - `s`: The second value.
 - `date`: The date to use to perform the calculation.
-- `opts`: Options for the calculation. For possible values, see [`NSCalendar.Options`](nscalendar/options.md).
+- `opts`: Options for the calculation. For possible values, see [`NSCalendar.Options`](./options.md).
 
 ## See Also
 
-- [func date(from: DateComponents) -> Date?](nscalendar/date(from:).md)
+### Calculating Dates
+- [func date(from: DateComponents) -> Date?](./date%28from%29.md)
   Returns a date representing the absolute time calculated from given components.
-- [func date(byAdding: DateComponents, to: Date, options: NSCalendar.Options) -> Date?](nscalendar/date(byadding:to:options:).md)
+- [func date(byAdding: DateComponents, to: Date, options: NSCalendar.Options) -> Date?](./date%28byadding,to,options%29.md)
   Returns a date representing the absolute time calculated by adding given components to a given date.
-- [func date(byAdding: NSCalendar.Unit, value: Int, to: Date, options: NSCalendar.Options) -> Date?](nscalendar/date(byadding:value:to:options:).md)
+- [func date(byAdding: NSCalendar.Unit, value: Int, to: Date, options: NSCalendar.Options) -> Date?](./date%28byadding,value,to,options%29.md)
   Returns a date representing the absolute time calculated by adding the value of a given component to a given date.
-- [func date(bySettingUnit: NSCalendar.Unit, value: Int, of: Date, options: NSCalendar.Options) -> Date?](nscalendar/date(bysettingunit:value:of:options:).md)
+- [func date(bySettingUnit: NSCalendar.Unit, value: Int, of: Date, options: NSCalendar.Options) -> Date?](./date%28bysettingunit,value,of,options%29.md)
   Returns a new date representing the date calculated by setting a specific component of a given date to a given value, while trying to keep lower components the same.
-- [func date(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) -> Date?](nscalendar/date(era:year:month:day:hour:minute:second:nanosecond:).md)
+- [func date(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) -> Date?](./date%28era,year,month,day,hour,minute,second,nanosecond%29.md)
   Returns a date created with the given components.
-- [func date(era: Int, yearForWeekOfYear: Int, weekOfYear: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) -> Date?](nscalendar/date(era:yearforweekofyear:weekofyear:weekday:hour:minute:second:nanosecond:).md)
+- [func date(era: Int, yearForWeekOfYear: Int, weekOfYear: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) -> Date?](./date%28era,yearforweekofyear,weekofyear,weekday,hour,minute,second,nanosecond%29.md)
   Returns a new date created with the given components base on a week-of-year value.
-- [func nextWeekendStart(AutoreleasingUnsafeMutablePointer<NSDate?>?, interval: UnsafeMutablePointer<TimeInterval>?, options: NSCalendar.Options, after: Date) -> Bool](nscalendar/nextweekendstart(_:interval:options:after:).md)
+- [func nextWeekendStart(AutoreleasingUnsafeMutablePointer<NSDate?>?, interval: UnsafeMutablePointer<TimeInterval>?, options: NSCalendar.Options, after: Date) -> Bool](./nextweekendstart%28_,interval,options,after%29.md)
   Returns by reference the starting date and time interval range of the next weekend period after a given date.
 
 

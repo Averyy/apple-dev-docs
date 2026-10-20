@@ -1,14 +1,15 @@
 # kernel_resource_sizes_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kernel_resource_sizes {
     ...
 } kernel_resource_sizes_data_t;
@@ -17,11 +18,11 @@ typedef struct kernel_resource_sizes {
 ## Topics
 
 ### Instance Properties
-- [memory_object](kernel_resource_sizes_data_t/1586778-memory_object.md)
-- [memory_region](kernel_resource_sizes_data_t/1586783-memory_region.md)
-- [port](kernel_resource_sizes_data_t/1586780-port.md)
-- [task](kernel_resource_sizes_data_t/1586795-task.md)
-- [thread](kernel_resource_sizes_data_t/1586788-thread.md)
+- [memory_object](./kernel_resource_sizes_data_t/api-1586778-memory_object.md)
+- [memory_region](./kernel_resource_sizes_data_t/api-1586783-memory_region.md)
+- [port](./kernel_resource_sizes_data_t/api-1586780-port.md)
+- [task](./kernel_resource_sizes_data_t/api-1586795-task.md)
+- [thread](./kernel_resource_sizes_data_t/api-1586788-thread.md)
 
 
 ---

@@ -1,9 +1,10 @@
 # captureStreams()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Completes any already enqueued reads and writes, and then invokes the [`urlSession(_:streamTask:didBecome:outputStream:)`](urlsessionstreamdelegate/urlsession(_:streamtask:didbecome:outputstream:).md) delegate message.
+Completes any already enqueued reads and writes, and then invokes the [`urlSession(_:streamTask:didBecome:outputStream:)`](../urlsessionstreamdelegate/urlsession%28_,streamtask,didbecome,outputstream%29.md) delegate message.
 
 **Availability**:
 - iOS 9.0+
@@ -18,6 +19,10 @@ Completes any already enqueued reads and writes, and then invokes the [`urlSessi
 
 ```swift
 func captureStreams()
+```
+
+```objc
+- (void) captureStreams;
 ```
 
 

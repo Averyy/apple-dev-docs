@@ -1,7 +1,8 @@
 # automaticAcceptanceInterval
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interval between the time playback ends and automatic acceptance of this content proposal.
 
@@ -14,21 +15,26 @@ The interval between the time playback ends and automatic acceptance of this con
 var automaticAcceptanceInterval: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSTimeInterval automaticAcceptanceInterval;
+```
+
 #### Discussion
 
-The content proposal displays a countdown timer to reflect this value. Set this value to [`nan`](https://developer.apple.com/documentation/swift/double/nan) to disable the default, which is automatic acceptance.
+The content proposal displays a countdown timer to reflect this value. Set this value to [`nan`](../../Swift/double/nan.md) to disable the default, which is automatic acceptance.
 
 ## See Also
 
-- [var contentTimeForTransition: CMTime](avcontentproposal/contenttimefortransition.md)
+### Configuring the content proposal
+- [var contentTimeForTransition: CMTime](./contenttimefortransition.md)
   The time within the timeline of the current player item when the content proposal presentation should begin.
-- [var title: String](avcontentproposal/title.md)
+- [var title: String](./title.md)
   The title of the proposed content.
-- [var previewImage: UIImage?](avcontentproposal/previewimage.md)
+- [var previewImage: UIImage?](./previewimage.md)
   The preview image of the proposed item.
-- [var metadata: [AVMetadataItem]](avcontentproposal/metadata.md)
+- [var metadata: [AVMetadataItem]](./metadata.md)
   Optional custom metadata associated with the proposed item.
-- [var url: URL?](avcontentproposal/url.md)
+- [var url: URL?](./url.md)
   The URL of the proposed content.
 
 

@@ -1,7 +1,8 @@
 # init(style:view:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an impact feedback generator with the specified style and view.
 
@@ -16,11 +17,16 @@ Creates an impact feedback generator with the specified style and view.
 convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)
 ```
 
+```objc
++ (instancetype) feedbackGeneratorWithStyle:(UIImpactFeedbackStyle) style forView:(UIView *) view;
+```
+
 ## See Also
 
-- [UIImpactFeedbackGenerator.FeedbackStyle](uiimpactfeedbackgenerator/feedbackstyle.md)
+### Initializing the feedback generator
+- [UIImpactFeedbackGenerator.FeedbackStyle](./feedbackstyle.md)
   The mass of the objects in the collision simulated by an impact feedback generator object.
-- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
+- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](./init%28style%29.md)
   Creates an impact feedback generator with the specified style.
 
 

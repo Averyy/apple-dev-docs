@@ -1,16 +1,19 @@
 # ASCredentialUpdater
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class to pass credential update events to credential managers enabled on the system.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.2
+- iPadOS 26.0+ - Deprecated in 26.2
+- Mac Catalyst 26.0+ - Deprecated in 26.2
+- macOS 26.0+ - Deprecated in 26.2
+- visionOS 26.0+ - Deprecated in 26.2
+
+> **Deprecated**: Use `ASCredentialDataManager` instead
 
 ## Declaration
 
@@ -24,9 +27,9 @@ The `ASCredentialUpdater` implements the functionality of the WebAuthn Signal AP
 
 Use `ASCredendialUpdater` in the following scenarios:
 
-- **Updating passkey metadata**: The system UI represents passkeys by a “user name”, set when the passkey is created. This field is usually a user name or email address. If your app allows the person using it to change the user name for their account, use [`reportPublicKeyCredentialUpdate(relyingPartyIdentifier:userHandle:newName:)`](ascredentialupdater/reportpublickeycredentialupdate(relyingpartyidentifier:userhandle:newname:).md) to relay that information to credential managers.
-- **Removing revoked passkeys**: Your app and its related services may allow someone using it to remove passkeys associated with their account, or delete the account entirely. Use [`reportUnknownPublicKeyCredential(relyingPartyIdentifier:credentialID:)`](ascredentialupdater/reportunknownpublickeycredential(relyingpartyidentifier:credentialid:).md) to inform credential managers of this deletion, so the passkeys aren’t shown in future login flows.
-- **Removing passwords**: When you’re confident the person using your app has transitioned to using a passkey to sign in and no longer requires a password fallback to sign in, you can direct credential managers to remove or hide passwords with [`reportUnusedPasswordCredential(domain:userName:)`](ascredentialupdater/reportunusedpasswordcredential(domain:username:).md). This prevents the now invalid passwords from appearing in the UI.
+- **Updating passkey metadata**: The system UI represents passkeys by a “user name”, set when the passkey is created. This field is usually a user name or email address. If your app allows the person using it to change the user name for their account, use [`reportPublicKeyCredentialUpdate(relyingPartyIdentifier:userHandle:newName:)`](./ascredentialupdater/reportpublickeycredentialupdate%28relyingpartyidentifier,userhandle,newname%29.md) to relay that information to credential managers.
+- **Removing revoked passkeys**: Your app and its related services may allow someone using it to remove passkeys associated with their account, or delete the account entirely. Use [`reportUnknownPublicKeyCredential(relyingPartyIdentifier:credentialID:)`](./ascredentialupdater/reportunknownpublickeycredential%28relyingpartyidentifier,credentialid%29.md) to inform credential managers of this deletion, so the passkeys aren’t shown in future login flows.
+- **Removing passwords**: When you’re confident the person using your app has transitioned to using a passkey to sign in and no longer requires a password fallback to sign in, you can direct credential managers to remove or hide passwords with [`reportUnusedPasswordCredential(domain:userName:)`](./ascredentialupdater/reportunusedpasswordcredential%28domain,username%29.md). This prevents the now invalid passwords from appearing in the UI.
 
 The following example shows how an app might use this class when processing various sign-in and account-management events:
 
@@ -65,18 +68,18 @@ func handleAccountAccountDeletion() {
 ## Topics
 
 ### Creating a credential updater
-- [init()](ascredentialupdater/init.md)
+- [init()](./ascredentialupdater/init%28%29.md)
   Creates an instance of the credential updater class.
 ### Reporting accepted credentials
-- [func reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier: String, userHandle: Data, acceptedCredentialIDs: [Data]) async throws](ascredentialupdater/reportallacceptedpublickeycredentials(relyingpartyidentifier:userhandle:acceptedcredentialids:).md)
+- [func reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier: String, userHandle: Data, acceptedCredentialIDs: [Data]) async throws](./ascredentialupdater/reportallacceptedpublickeycredentials%28relyingpartyidentifier,userhandle,acceptedcredentialids%29.md)
   Provides credential managers with a snapshot of all credential identifiers accepted for a given user handle.
 ### Reporting updated credentials
-- [func reportPublicKeyCredentialUpdate(relyingPartyIdentifier: String, userHandle: Data, newName: String) async throws](ascredentialupdater/reportpublickeycredentialupdate(relyingpartyidentifier:userhandle:newname:).md)
+- [func reportPublicKeyCredentialUpdate(relyingPartyIdentifier: String, userHandle: Data, newName: String) async throws](./ascredentialupdater/reportpublickeycredentialupdate%28relyingpartyidentifier,userhandle,newname%29.md)
   Provides credential managers with an update to a credential’s name, such as when changing the user name or email address on an account.
 ### Reporting unused and unknown credentials
-- [func reportUnusedPasswordCredential(domain: String, userName: String) async throws](ascredentialupdater/reportunusedpasswordcredential(domain:username:).md)
+- [func reportUnusedPasswordCredential(domain: String, userName: String) async throws](./ascredentialupdater/reportunusedpasswordcredential%28domain,username%29.md)
   Informs credential managers that a password is no longer in use.
-- [func reportUnknownPublicKeyCredential(relyingPartyIdentifier: String, credentialID: Data) async throws](ascredentialupdater/reportunknownpublickeycredential(relyingpartyidentifier:credentialid:).md)
+- [func reportUnknownPublicKeyCredential(relyingPartyIdentifier: String, credentialID: Data) async throws](./ascredentialupdater/reportunknownpublickeycredential%28relyingpartyidentifier,credentialid%29.md)
   Informs credential managers that a specific credential is unknown or no longer accepted.
 
 

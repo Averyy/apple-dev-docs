@@ -1,7 +1,8 @@
 # Measurement.AttributedStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides localized representations of measurements with an attributed string.
 
@@ -21,48 +22,51 @@ A type that provides localized representations of measurements with an attribute
 struct AttributedStyle
 ```
 
+Available when `UnitType` inherits `Dimension`.
+
 #### Overview
 
-Use either the [`formatted()`](measurement/formatted().md) or the [`formatted(_:)`](measurement/formatted(_:).md) instance method of [`Measurement`](measurement.md) to create an attributed string representation of a measurement.
+Use either the [`formatted()`](./formatted%28%29.md) or the [`formatted(_:)`](./formatted%28_%29.md) instance method of [`Measurement`](../measurement.md) to create an attributed string representation of a measurement.
 
-The [`formatted()`](measurement/formatted().md) method generates a string using the default measurement format style.
+The [`formatted()`](./formatted%28%29.md) method generates a string using the default measurement format style.
 
 ## Topics
 
 ### Formatting a Measurement
-- [func format(Measurement<UnitType>) -> AttributedString](measurement/attributedstyle/format(_:).md)
+- [func format(Measurement<UnitType>) -> AttributedString](./attributedstyle/format%28_%29.md)
   Creates a string representation of a measurement.
 ### Modififying a Measurement Attributed Style
-- [func locale(Locale) -> Measurement<UnitType>.AttributedStyle](measurement/attributedstyle/locale(_:).md)
+- [func locale(Locale) -> Measurement<UnitType>.AttributedStyle](./attributedstyle/locale%28_%29.md)
   Modifies the measurement format style to use the specified locale.
 ### Comparing Measurement Attributed Styles
-- [static func == <LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool](measurement/==(_:_:).md)
+- [static func == <LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool](./eqeq%28_,_%29.md)
   Compare two measurements of the same `Dimension`.
 ### Structures
-- [Measurement.AttributedStyle.ByteCount](measurement/attributedstyle/bytecount.md)
+- [Measurement.AttributedStyle.ByteCount](./attributedstyle/bytecount.md)
   A format style that converts byte counts into attributed strings.
 ### Subscripts
-- [subscript<T>(dynamicMember _: KeyPath<Measurement<UnitType>.FormatStyle, T>) -> T](measurement/attributedstyle/subscript(dynamicmember:)-83rva.md)
-- [subscript<T>(dynamicMember _: WritableKeyPath<Measurement<UnitType>.FormatStyle, T>) -> T](measurement/attributedstyle/subscript(dynamicmember:)-c2b1.md)
+- [subscript<T>(dynamicMember _: KeyPath<Measurement<UnitType>.FormatStyle, T>) -> T](./attributedstyle/subscript%28dynamicmember%29-83rva.md)
+- [subscript<T>(dynamicMember _: WritableKeyPath<Measurement<UnitType>.FormatStyle, T>) -> T](./attributedstyle/subscript%28dynamicmember%29-c2b1.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func formatted() -> String](measurement/formatted.md)
+### Formatting a Measurement
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of a measurement using the default measurement format style.
-- [func formatted<S>(S) -> S.FormatOutput](measurement/formatted(_:).md)
+- [func formatted<S>(S) -> S.FormatOutput](./formatted%28_%29.md)
   Generates a locale-aware string representation of a measurement using the provided measurement format style.
-- [Measurement.FormatStyle](measurement/formatstyle.md)
+- [Measurement.FormatStyle](./formatstyle.md)
   A type that provides localized representations of measurements.
 
 

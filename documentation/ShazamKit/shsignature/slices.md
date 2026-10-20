@@ -1,7 +1,8 @@
 # SHSignature.Slices
 
 **Framework**: ShazamKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of signature segments.
 
@@ -23,19 +24,20 @@ struct Slices
 ## Topics
 
 ### Supporting types
-- [SHSignature.Slices.Iterator](shsignature/slices/iterator.md)
+- [SHSignature.Slices.Iterator](./slices/iterator.md)
   An iterator for asynchronously accessing signature slices.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func slices(from: TimeInterval, duration: TimeInterval, stride: TimeInterval?) throws -> SHSignature.Slices](shsignature/slices(from:duration:stride:).md)
+### Slicing signature segments
+- [func slices(from: TimeInterval, duration: TimeInterval, stride: TimeInterval?) throws -> SHSignature.Slices](./slices%28from,duration,stride%29.md)
   Returns a sequence of signatures of the specified duration from a starting value, stepping by the stride.
 
 

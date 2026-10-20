@@ -1,7 +1,8 @@
 # GameCenterAppVersionCompatibilityVersionsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Game Center app version resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related Game Center app version resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAppVersionCompatibilityVersionsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAppVersions`
 
 
 ---

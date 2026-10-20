@@ -11,7 +11,7 @@ The network connection is idle.
 
 ## Declaration
 
-```swift
+```
 const unsigned short NETWORK_IDLE;
 ```
 

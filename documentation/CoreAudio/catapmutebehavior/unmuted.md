@@ -1,7 +1,8 @@
 # CATapMuteBehavior.unmuted
 
 **Framework**: Core Audio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case unmuted
+```
+
+```c
+CATapUnmuted
 ```
 
 

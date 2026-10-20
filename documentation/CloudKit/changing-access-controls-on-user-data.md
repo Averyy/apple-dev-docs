@@ -1,6 +1,7 @@
 # Changing Access Controls on User Data
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: Article
 
 Restrict access to or remove restrictions from a user’s data at their request.
 
@@ -10,7 +11,7 @@ Users can ask you to prevent any further changes to their data that your app sto
 
 ##### Identify Containers
 
-To be sure that you restrict changes and access to all of a user’s data that your app stores, cross-reference the list of containers your app has access to in Xcode and assemble a list of those containers’ identifiers. [`Identifying an App’s Containers`](identifying-an-app-s-containers.md) describes this process.
+To be sure that you restrict changes and access to all of a user’s data that your app stores, cross-reference the list of containers your app has access to in Xcode and assemble a list of those containers’ identifiers. [Identifying an App’s Containers](./identifying-an-app-s-containers.md) describes this process.
 
 The example below stores containers in constants to use later:
 
@@ -20,7 +21,7 @@ let documents = CKContainer(identifier: "iCloud.com.example.myexampleapp.documen
 let settings = CKContainer(identifier: "iCloud.com.example.myexampleapp.settings")
 ```
 
-##### Create Reusable Api Tokens
+##### Create Reusable API Tokens
 
 The `restrict` API call requires a token each time you call the API. You create an API token once for each container in your app using the CloudKit Dashboard, and reuse it in each API call to a specific container.
 
@@ -40,7 +41,7 @@ let containers = Array(containerAPITokens.keys)
 
 ##### Create Web Authentication Tokens
 
-The `restrict` API call requires a new authentication token each time you call the API, in addition to the reusable API token. The example below shows how to create that token using an instance of [`CKFetchWebAuthTokenOperation`](ckfetchwebauthtokenoperation.md):
+The `restrict` API call requires a new authentication token each time you call the API, in addition to the reusable API token. The example below shows how to create that token using an instance of [`CKFetchWebAuthTokenOperation`](./ckfetchwebauthtokenoperation.md):
 
 ```swift
 for container in containers {
@@ -150,15 +151,16 @@ A successful call to the `unrestrict(container:apiToken:webToken: completionHand
 
 ## See Also
 
-- [Encrypting User Data](encrypting-user-data.md)
+### Privacy
+- [Encrypting User Data](./encrypting-user-data.md)
   Deploy industry-standard security technologies using CloudKit encryption.
-- [Providing User Access to CloudKit Data](providing-user-access-to-cloudkit-data.md)
+- [Providing User Access to CloudKit Data](./providing-user-access-to-cloudkit-data.md)
   Provide users access to the data your app stores on their behalf.
-- [class CKFetchWebAuthTokenOperation](ckfetchwebauthtokenoperation.md)
+- [class CKFetchWebAuthTokenOperation](./ckfetchwebauthtokenoperation.md)
   An operation that creates an authentication token for use with CloudKit web services.
-- [Responding to Requests to Delete Data](responding-to-requests-to-delete-data.md)
+- [Responding to Requests to Delete Data](./responding-to-requests-to-delete-data.md)
   Provide options for users to delete their CloudKit data from your app.
-- [Identifying an App’s Containers](identifying-an-app-s-containers.md)
+- [Identifying an App’s Containers](./identifying-an-app-s-containers.md)
   Use Xcode’s Project navigator to find the identifiers of active CloudKit containers.
 
 

@@ -1,17 +1,20 @@
 # init(activityType:start:end:workoutEvents:totalEnergyBurned:totalDistance:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a new workout whose duration is calculated based on the start and end dates and the provided workout events.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.0+
-- macOS 13.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 17.0
+- iPadOS 8.0+ - Deprecated in 17.0
+- Mac Catalyst 13.0+ - Deprecated in 16.0
+- macOS 13.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use HKWorkoutBuilder
 
 ## Declaration
 
@@ -19,11 +22,15 @@ Instantiates a new workout whose duration is calculated based on the start and e
 convenience init(activityType workoutActivityType: HKWorkoutActivityType, start startDate: Date, end endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)
 ```
 
+```objc
++ (instancetype) workoutWithActivityType:(HKWorkoutActivityType) workoutActivityType startDate:(NSDate *) startDate endDate:(NSDate *) endDate workoutEvents:(NSArray<HKWorkoutEvent *> *) workoutEvents totalEnergyBurned:(HKQuantity *) totalEnergyBurned totalDistance:(HKQuantity *) totalDistance metadata:(NSDictionary<NSString *,id> *) metadata;
+```
+
 #### Discussion
 
-This method calculates the workout’s duration based on the amount of time it spends in an active state. A workout starts in an active state. A pause event switches it to an inactive state, and a resume event switches it back to an active state. For more information on workout events, see [`HKWorkoutEvent`](hkworkoutevent.md).
+This method calculates the workout’s duration based on the amount of time it spends in an active state. A workout starts in an active state. A pause event switches it to an inactive state, and a resume event switches it back to an active state. For more information on workout events, see [`HKWorkoutEvent`](../hkworkoutevent.md).
 
-If the total energy burned or total distance are non-zero values, create a set of corresponding samples that add up to the calculated totals. Associate these samples with the workout by calling the health store’s [`add(_:to:completion:)`](hkhealthstore/add(_:to:completion:).md) method.
+If the total energy burned or total distance are non-zero values, create a set of corresponding samples that add up to the calculated totals. Associate these samples with the workout by calling the health store’s [`add(_:to:completion:)`](../hkhealthstore/add%28_,to,completion%29.md) method.
 
 **Swift**:
 
@@ -91,39 +98,43 @@ HKWorkout *kayaking = [HKWorkout workoutWithActivityType:HKWorkoutActivityTypeHi
 
 ## Parameters
 
-- `workoutActivityType`: The type of activity performed during the workout. For the complete list of activity types, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
+- `workoutActivityType`: The type of activity performed during the workout. For the complete list of activity types, see [`HKWorkoutActivityType`](../hkworkoutactivitytype.md).
 - `startDate`: The date and time when the activity started.
 - `endDate`: The date and time when the activity ended. This date must be equal to or later than the start date.
 - `workoutEvents`: An array of workout event objects. This array specifies when the user has paused and resumed the workout activity. This method calculates the workout’s duration based on the total amount of active time between the provided start and end dates.
-- `totalEnergyBurned`: A quantity using energy units, or `nil`. This parameter sets the workout’s [`totalEnergyBurned`](hkworkout/totalenergyburned.md) property. It represents the total active energy burned during the workout.
-- `totalDistance`: A quantity using length units, or `nil`. This parameter sets the workout’s [`totalDistance`](hkworkout/totaldistance.md) property.
-- `metadata`: The metadata dictionary contains extra information describing this workout. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects . The values may be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects. For a complete list of predefined keys, see [`Metadata Keys`](metadata-keys.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit quantity sample’s capabilities.
+- `totalEnergyBurned`: A quantity using energy units, or `nil`. This parameter sets the workout’s [`totalEnergyBurned`](./totalenergyburned.md) property. It represents the total active energy burned during the workout.
+- `totalDistance`: A quantity using length units, or `nil`. This parameter sets the workout’s [`totalDistance`](./totaldistance.md) property.
+- `metadata`: The metadata dictionary contains extra information describing this workout. The dictionary’s keys are all [`NSString`](../../Foundation/nsstring.md) objects . The values may be [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), or [`NSDate`](../../Foundation/nsdate.md) objects. For a complete list of predefined keys, see [Metadata Keys](../metadata-keys.md).
+
+  Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit quantity sample’s capabilities.
 
 ## See Also
 
-- [var workoutActivityType: HKWorkoutActivityType](hkworkout/workoutactivitytype.md)
+### Related Documentation
+- [var workoutActivityType: HKWorkoutActivityType](./workoutactivitytype.md)
   The type of activity performed during the workout.
-- [var totalDistance: HKQuantity?](hkworkout/totaldistance.md)
+- [var totalDistance: HKQuantity?](./totaldistance.md)
   The total distance traveled during the workout.
-- [var duration: TimeInterval](hkworkout/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The workout’s duration.
-- [var metadata: [String : Any]?](hkobject/metadata.md)
+- [var metadata: [String : Any]?](../hkobject/metadata.md)
   The metadata for this HealthKit object.
-- [var totalEnergyBurned: HKQuantity?](hkworkout/totalenergyburned.md)
+- [var totalEnergyBurned: HKQuantity?](./totalenergyburned.md)
   The total active energy burned during the workout.
-- [var workoutEvents: [HKWorkoutEvent]?](hkworkout/workoutevents.md)
+- [var workoutEvents: [HKWorkoutEvent]?](./workoutevents.md)
   An array of workout event objects.
-- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date)](hkworkout/init(activitytype:start:end:).md)
+### Creating workouts
+- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date)](./init%28activitytype,start,end%29.md)
   Instantiates a new workout.
-- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](hkworkout/init(activitytype:start:end:duration:totalenergyburned:totaldistance:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](./init%28activitytype,start,end,duration,totalenergyburned,totaldistance,metadata%29.md)
   Instantiates a new workout that includes the energy burned, distance, and metadata for the workout.
-- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:start:end:duration:totalenergyburned:totaldistance:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](./init%28activitytype,start,end,duration,totalenergyburned,totaldistance,device,metadata%29.md)
   Instantiates a new workout activity that includes the device that produced the sample data.
-- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:start:end:workoutevents:totalenergyburned:totaldistance:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](./init%28activitytype,start,end,workoutevents,totalenergyburned,totaldistance,device,metadata%29.md)
   Instantiates a workout that includes both workout events and the device that produced the sample data.
-- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalFlightsClimbed: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:start:end:workoutevents:totalenergyburned:totaldistance:totalflightsclimbed:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalFlightsClimbed: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](./init%28activitytype,start,end,workoutevents,totalenergyburned,totaldistance,totalflightsclimbed,device,metadata%29.md)
   Instantiates a workout using a variety of data, including the number of flights of stairs climbed.
-- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalSwimmingStrokeCount: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:start:end:workoutevents:totalenergyburned:totaldistance:totalswimmingstrokecount:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, start: Date, end: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalSwimmingStrokeCount: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](./init%28activitytype,start,end,workoutevents,totalenergyburned,totaldistance,totalswimmingstrokecount,device,metadata%29.md)
   Instantiates a workout using a variety of data, including the number of strokes while swimming.
 
 

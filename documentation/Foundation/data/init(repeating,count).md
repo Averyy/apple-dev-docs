@@ -1,7 +1,8 @@
 # init(repeating:count:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `Data` with a repeating byte pattern
 

@@ -1,7 +1,8 @@
 # allCases
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A collection of all values for Apple Walking Steadiness classification
 
@@ -10,7 +11,7 @@ A collection of all values for Apple Walking Steadiness classification
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

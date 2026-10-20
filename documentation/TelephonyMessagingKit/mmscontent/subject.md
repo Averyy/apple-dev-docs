@@ -1,7 +1,8 @@
 # subject
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subject of the MMS message.
 
@@ -16,11 +17,12 @@ var subject: String?
 
 ## See Also
 
-- [var parts: [MMSPartContent]](mmscontent/parts.md)
+### Accessing content properties
+- [var parts: [MMSPartContent]](./parts.md)
   The individual parts of the MMS message.
-- [struct MMSPartContent](mmspartcontent.md)
+- [struct MMSPartContent](../mmspartcontent.md)
   A structure that defines custom headers within MMS content.
-- [var headers: [String : String]](mmscontent/headers.md)
+- [var headers: [String : String]](./headers.md)
   Additional headers in a received MMS message, as a key-value dictionary of strings.
 
 

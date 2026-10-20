@@ -1,7 +1,8 @@
 # AlarmPresentationState.Mode.countdown(_:)
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode indicating the alarm timer is active.
 
@@ -22,7 +23,8 @@ An alarm can only be in one of these states at a time.
 
 ## See Also
 
-- [AlarmPresentationState.Mode.Countdown](alarmpresentationstate/mode-swift.enum/countdown.md)
+### Creating a countdown
+- [AlarmPresentationState.Mode.Countdown](./countdown.md)
   An object that specifies a countdown is in progress.
 
 

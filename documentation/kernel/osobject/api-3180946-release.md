@@ -1,7 +1,8 @@
 # release
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Releases the OSObject instance
 
@@ -11,7 +12,7 @@ Releases the OSObject instance
 
 ## Declaration
 
-```swift
+```cpp
 virtual void release(void);
 ```
 
@@ -21,12 +22,13 @@ Decreases the retain count of the instance by one. If the count is then zero, fr
 
 ## See Also
 
-- [- init](osobject/3180945-init.md)
-- [- retain](osobject/3180947-retain.md)
+### Managing the Object Lifecycle
+- [- init](./api-3180945-init.md)
+- [- retain](./api-3180947-retain.md)
   Retains the OSObject instance
-- [- free](osobject/3180944-free.md)
-- [OSObjectPtr](../driverkit/osobjectptr.md)
-- [OSObjectRef](../driverkit/osobjectref.md)
+- [- free](./api-3180944-free.md)
+- [OSObjectPtr](../../DriverKit/osobjectptr.md)
+- [OSObjectRef](../../DriverKit/osobjectref.md)
 
 
 ---

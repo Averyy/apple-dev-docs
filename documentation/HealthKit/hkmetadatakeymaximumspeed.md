@@ -1,7 +1,8 @@
 # HKMetadataKeyMaximumSpeed
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the maximum speed during a workout.
 
@@ -19,19 +20,24 @@ A key that indicates the maximum speed during a workout.
 let HKMetadataKeyMaximumSpeed: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyMaximumSpeed;
+```
+
 ## Mentions
 
-- [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
+- [Receiving Downhill Skiing and Snowboarding Data](./receiving-downhill-skiing-and-snowboarding-data.md)
 
 #### Discussion
 
-Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](hkquantity.md) object with a length/time unit (for example, m/s). For more information on creating complex units, see Performing unit math.
+Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](./hkquantity.md) object with a length/time unit (for example, m/s). For more information on creating complex units, see Performing unit math.
 
-HealthKit assigns this metadata key to the segments it automatically creates for [`HKWorkoutActivityType.downhillSkiing`](hkworkoutactivitytype/downhillskiing.md) and [`HKWorkoutActivityType.snowboarding`](hkworkoutactivitytype/snowboarding.md) workout sessions (Apple Watch Series 3 only).
+HealthKit assigns this metadata key to the segments it automatically creates for [`HKWorkoutActivityType.downhillSkiing`](./hkworkoutactivitytype/downhillskiing.md) and [`HKWorkoutActivityType.snowboarding`](./hkworkoutactivitytype/snowboarding.md) workout sessions (Apple Watch Series 3 only).
 
 ## See Also
 
-- [let HKMetadataKeyAverageSpeed: String](hkmetadatakeyaveragespeed.md)
+### Speed
+- [let HKMetadataKeyAverageSpeed: String](./hkmetadatakeyaveragespeed.md)
   A key that indicates the average speed during a workout.
 
 

@@ -1,7 +1,8 @@
 # addVideoEffectOutput(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func addVideoEffectOutput(_ videoEffectOutput: SCVideoEffectOutput) throws
+```
+
+```objc
+- (BOOL) addVideoEffectOutput:(SCVideoEffectOutput *) videoEffectOutput error:(NSError **) error;
 ```
 
 #### Discussion

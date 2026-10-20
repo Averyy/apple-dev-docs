@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithBuffers(
  OSArray *buffers,
  IOStreamMode mode = kIOStreamModeOutput,
@@ -22,17 +22,18 @@ virtual bool initWithBuffers(
 
 ## See Also
 
-- [getStreamMode](iovideostream/1809380-getstreammode.md)
+### Miscellaneous
+- [getStreamMode](./api-1809380-getstreammode.md)
   Returns the mode of the stream, either input or output.
-- [setStreamMode](iovideostream/1809395-setstreammode.md)
+- [setStreamMode](./api-1809395-setstreammode.md)
   Sets the mode of the stream, either input or output.
-- [startStream](iovideostream/1809402-startstream.md)
+- [startStream](./api-1809402-startstream.md)
   Start sending data on a stream.
-- [stopStream](iovideostream/1809407-stopstream.md)
+- [stopStream](./api-1809407-stopstream.md)
   Stop sending data on a stream.
-- [suspendStream](iovideostream/1809411-suspendstream.md)
+- [suspendStream](./api-1809411-suspendstream.md)
   Temporarily suspend data flow on the stream.
-- [withBuffers](iovideostream/1809420-withbuffers.md)
+- [withBuffers](./api-1809420-withbuffers.md)
 
 
 ---

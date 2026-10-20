@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transition layout object from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a transition layout object from data in an unarchiver.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Creates a transition layout object from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(currentLayout: UICollectionViewLayout, nextLayout: UICollectionViewLayout)](uicollectionviewtransitionlayout/init(currentlayout:nextlayout:).md)
+### Initializing the transition layout object
+- [init(currentLayout: UICollectionViewLayout, nextLayout: UICollectionViewLayout)](./init%28currentlayout,nextlayout%29.md)
   Initializes and returns a transition layout object.
 
 

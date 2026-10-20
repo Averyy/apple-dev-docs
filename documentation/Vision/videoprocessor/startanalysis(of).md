@@ -1,7 +1,8 @@
 # startAnalysis(of:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins analyzing video frames.
 

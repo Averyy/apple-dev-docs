@@ -1,7 +1,8 @@
 # apiTokenAuth
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The API token and other authentication properties, described in the Discussion section. Either this key or the `serverToServerKeyAuth` key is required. If you include this key, don’t include the `serverToServerKeyAuth` key.
 
@@ -10,7 +11,7 @@ The API token and other authentication properties, described in the Discussion s
 
 ## Declaration
 
-```swift
+```
 attribute Object apiTokenAuth;
 ```
 

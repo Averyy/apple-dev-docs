@@ -1,14 +1,15 @@
 # kBluetoothHCICommandWriteLogicalLinkAcceptTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandWriteLogicalLinkAcceptTimeout = 0x0062
 ```
 

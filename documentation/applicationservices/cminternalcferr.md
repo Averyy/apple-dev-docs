@@ -1,7 +1,8 @@
 # cmInternalCFErr
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 CoreFoundation failure; returned by a CM device integration routine.
 
@@ -16,6 +17,7 @@ var cmInternalCFErr: Int { get }
 
 ## See Also
 
+### Result Codes
 - [var cmProfileError: Int](../coreservices/cmprofileerror.md)
   There is something wrong with the content of the profile
 - [var cmMethodError: Int](../coreservices/cmmethoderror.md)
@@ -72,13 +74,13 @@ var cmInternalCFErr: Int { get }
   The specified named color was not found in the specified profile
 - [var cmCantGamutCheckError: Int](../coreservices/cmcantgamutcheckerror.md)
   Gamut checking not supported by this color world—that is, the color world does not contain a gamut table because it was built with gamut checking turned off
-- [var cmDeviceDBNotFoundErr: Int](cmdevicedbnotfounderr.md)
+- [var cmDeviceDBNotFoundErr: Int](./cmdevicedbnotfounderr.md)
   Preferences not found or loaded; returned by a CM device integration routine.
-- [var cmDeviceAlreadyRegistered: Int](cmdevicealreadyregistered.md)
+- [var cmDeviceAlreadyRegistered: Int](./cmdevicealreadyregistered.md)
   Device already registered; returned by a CM device integration routine.
-- [var cmDeviceNotRegistered: Int](cmdevicenotregistered.md)
+- [var cmDeviceNotRegistered: Int](./cmdevicenotregistered.md)
   Device not found; returned by a CM device integration routine.
-- [var cmDeviceProfilesNotFound: Int](cmdeviceprofilesnotfound.md)
+- [var cmDeviceProfilesNotFound: Int](./cmdeviceprofilesnotfound.md)
   Profiles not found; returned by a CM device integration routine.
 
 

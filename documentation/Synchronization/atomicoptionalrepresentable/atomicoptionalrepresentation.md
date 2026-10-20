@@ -2,6 +2,7 @@
 
 **Framework**: Synchronization  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The storage representation type that encodes to and decodes from `Optional<Self>` which is a suitable type when used in atomic operations on `Optional`.

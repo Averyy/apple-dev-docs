@@ -1,7 +1,8 @@
 # sizeInPixels
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display mode’s dimensions in pixels.
 
@@ -15,9 +16,14 @@ The display mode’s dimensions in pixels.
 var sizeInPixels: PGDisplayCoord_t { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PGDisplayCoord_t sizeInPixels;
+```
+
 ## See Also
 
-- [var refreshRate: Double](pgdisplaymode/refreshrate.md)
+### Inspecting Mode Properties
+- [var refreshRate: Double](./refreshrate.md)
   The mode’s refresh rate.
 
 

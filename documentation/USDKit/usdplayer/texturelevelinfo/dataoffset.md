@@ -1,9 +1,10 @@
 # dataOffset
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Byte offset into [`data`](usdplayer/texturedata/data.md) where this mip level begins.
+Byte offset into [`data`](../texturedata/data.md) where this mip level begins.
 
 **Availability**:
 - iOS 27.0+

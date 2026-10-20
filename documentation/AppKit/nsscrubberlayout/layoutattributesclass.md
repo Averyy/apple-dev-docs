@@ -1,7 +1,8 @@
 # layoutAttributesClass
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property containing a class that describes layout attributes.
 
@@ -14,23 +15,29 @@ A property containing a class that describes layout attributes.
 class var layoutAttributesClass: AnyClass { get }
 ```
 
+```objc
+@property (class, readonly) Class layoutAttributesClass;
+```
+
 #### Return Value
 
-The default return value is [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md).
+The default return value is [`NSScrubberLayoutAttributes`](../nsscrubberlayoutattributes.md).
 
 #### Discussion
 
-Create a custom subclass of [`NSScrubberLayout`](nsscrubberlayout.md) and override this method if you wish to use a custom layout attributes subclass.
+Create a custom subclass of [`NSScrubberLayout`](../nsscrubberlayout.md) and override this method if you wish to use a custom layout attributes subclass.
 
 ## See Also
 
-- [class NSScrubberLayoutAttributes](nsscrubberlayoutattributes.md)
+### Related Documentation
+- [class NSScrubberLayoutAttributes](../nsscrubberlayoutattributes.md)
   The layout of a scrubber item.
-- [var scrubber: NSScrubber?](nsscrubberlayout/scrubber.md)
+### Configuring a scrubber layout
+- [var scrubber: NSScrubber?](./scrubber.md)
   The scrubber control that this layout is assigned to.
-- [var visibleRect: NSRect](nsscrubberlayout/visiblerect.md)
+- [var visibleRect: NSRect](./visiblerect.md)
   The currently visible rectangle, in the coordinate space of the scrubber content.
-- [func invalidateLayout()](nsscrubberlayout/invalidatelayout.md)
+- [func invalidateLayout()](./invalidatelayout%28%29.md)
   Signals that the layout has been invalidated, and that the scrubber control should perform a new layout pass.
 
 

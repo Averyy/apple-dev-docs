@@ -1,7 +1,8 @@
 # longitude
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 longitude is the coordinate’s longitude value in degrees.
 
@@ -14,6 +15,10 @@ longitude is the coordinate’s longitude value in degrees.
 
 ```swift
 var longitude: CLLocationDegrees
+```
+
+```c
+CLLocationDegrees longitude;
 ```
 
 

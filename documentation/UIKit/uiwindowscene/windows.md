@@ -1,7 +1,8 @@
 # windows
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The windows associated with the scene.
 
@@ -18,15 +19,20 @@ The windows associated with the scene.
 var windows: [UIWindow] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<UIWindow *> * windows;
+```
+
 #### Discussion
 
-Use this property to retrieve the windows associated with the scene. To remove the window from the current scene, or move it to a different scene, change the value of the window’s [`windowScene`](uiwindow/windowscene.md) property.
+Use this property to retrieve the windows associated with the scene. To remove the window from the current scene, or move it to a different scene, change the value of the window’s [`windowScene`](../uiwindow/windowscene.md) property.
 
 ## See Also
 
-- [var keyWindow: UIWindow?](uiwindowscene/keywindow.md)
+### Getting the active windows
+- [var keyWindow: UIWindow?](./keywindow.md)
   The key window associated with the scene.
-- [var screen: UIScreen](uiwindowscene/screen.md)
+- [var screen: UIScreen](./screen.md)
   The screen that displays the contents of the scene.
 
 

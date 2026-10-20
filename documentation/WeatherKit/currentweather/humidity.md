@@ -1,7 +1,8 @@
 # humidity
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of water vapor in the air.
 
@@ -28,11 +29,12 @@ The range of this property is from `0` to `1`, inclusive.
 
 ## See Also
 
-- [var apparentTemperature: Measurement<UnitTemperature>](currentweather/apparenttemperature.md)
+### Getting temperature and humidity
+- [var apparentTemperature: Measurement<UnitTemperature>](./apparenttemperature.md)
   The feels-like temperature when factoring wind and humidity.
-- [var dewPoint: Measurement<UnitTemperature>](currentweather/dewpoint.md)
+- [var dewPoint: Measurement<UnitTemperature>](./dewpoint.md)
   The temperature at which relative humidity is 100%.
-- [var temperature: Measurement<UnitTemperature>](currentweather/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The current temperature.
 
 

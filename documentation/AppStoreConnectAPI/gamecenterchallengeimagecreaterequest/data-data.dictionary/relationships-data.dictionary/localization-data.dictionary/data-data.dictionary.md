@@ -1,7 +1,8 @@
 # GameCenterChallengeImageCreateRequest.Data.Relationships.Localization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center challenge image.
 
@@ -10,14 +11,14 @@ The request body you use to create a Game Center challenge image.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImageCreateRequest.Data.Relationships.Localization.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallengeLocalizations`
 
 
 ---

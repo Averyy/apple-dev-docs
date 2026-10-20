@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes contained by this guest memory mapping object.
 
@@ -12,6 +13,10 @@ The number of bytes contained by this guest memory mapping object.
 
 ```swift
 var length: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger length;
 ```
 
 

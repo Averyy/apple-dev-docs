@@ -1,7 +1,8 @@
 # GameCenterActivityImageCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for creating an image asset for a Game Center activity.
 
@@ -10,14 +11,14 @@ The request body for creating an image asset for a Game Center activity.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityImageCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityImageCreateRequest.Data](gamecenteractivityimagecreaterequest/data-data.dictionary.md)
+- [object GameCenterActivityImageCreateRequest.Data](./gamecenteractivityimagecreaterequest/data-data.dictionary.md)
   The request body you use to create a Game Center activity image.
 
 ## Properties
@@ -26,11 +27,12 @@ object GameCenterActivityImageCreateRequest
 
 ## See Also
 
-- [object GameCenterActivityImage](gamecenteractivityimage.md)
+### Objects
+- [object GameCenterActivityImage](./gamecenteractivityimage.md)
   An image asset representing a Game Center activity in the player interface.
-- [object GameCenterActivityImageResponse](gamecenteractivityimageresponse.md)
+- [object GameCenterActivityImageResponse](./gamecenteractivityimageresponse.md)
   A response containing a single image asset for a Game Center activity.
-- [object GameCenterActivityImageUpdateRequest](gamecenteractivityimageupdaterequest.md)
+- [object GameCenterActivityImageUpdateRequest](./gamecenteractivityimageupdaterequest.md)
   The request body you use to update an activity.
 
 

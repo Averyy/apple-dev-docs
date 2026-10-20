@@ -1,7 +1,8 @@
 # CardSession.Error.systemNotAvailable
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A system resource is currently unavailable.
 
@@ -18,21 +19,22 @@ case systemNotAvailable
 
 ## See Also
 
-- [CardSession.Error.invalidated](cardsession/error/invalidated.md)
+### Card session errors
+- [CardSession.Error.invalidated](./invalidated.md)
   The system invalidated the card session.
-- [CardSession.Error.userInvalidated](cardsession/error/userinvalidated.md)
+- [CardSession.Error.userInvalidated](./userinvalidated.md)
   The person using the app invalidated the card session.
-- [CardSession.Error.maxSessionDurationReached](cardsession/error/maxsessiondurationreached.md)
+- [CardSession.Error.maxSessionDurationReached](./maxsessiondurationreached.md)
   The session is no longer valid because it reached its maximum duration.
-- [CardSession.Error.transmissionError](cardsession/error/transmissionerror.md)
+- [CardSession.Error.transmissionError](./transmissionerror.md)
   The card session experienced a general error transmitting data.
-- [CardSession.Error.accessNotAccepted](cardsession/error/accessnotaccepted.md)
+- [CardSession.Error.accessNotAccepted](./accessnotaccepted.md)
   The person using the app hasn’t yet accepted or declined your app’s request to use the NFC card emulation service.
-- [CardSession.Error.systemEligibilityFailed](cardsession/error/systemeligibilityfailed.md)
+- [CardSession.Error.systemEligibilityFailed](./systemeligibilityfailed.md)
   The current system setting or hardware configuation isn’t eligible to use the NFC card emulation service.
-- [CardSession.Error.emulationStopped](cardsession/error/emulationstopped.md)
+- [CardSession.Error.emulationStopped](./emulationstopped.md)
   The card emulation stopped.
-- [CardSession.Error.radioDisabled](cardsession/error/radiodisabled.md)
+- [CardSession.Error.radioDisabled](./radiodisabled.md)
   The card session failed because the NFC radio is disabled.
 
 

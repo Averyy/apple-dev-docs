@@ -1,7 +1,8 @@
 # init(position:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point object with the position you specify.
 
@@ -19,13 +20,18 @@ Creates a point object with the position you specify.
 init?(position: simd_float4x4)
 ```
 
+```objc
+- (instancetype) initWithPosition:(simd_float4x4) position;
+```
+
 ## Parameters
 
 - `position`: The three-dimensional position.
 
 ## See Also
 
-- [init?(coder: NSCoder)](vnpoint3d/init(coder:).md)
+### Creating a Point
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

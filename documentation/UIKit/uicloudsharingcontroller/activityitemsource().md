@@ -1,7 +1,8 @@
 # activityItemSource()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The activity item object that can be used by an activity view controller.
 
@@ -17,11 +18,15 @@ The activity item object that can be used by an activity view controller.
 func activityItemSource() -> any UIActivityItemSource
 ```
 
+```objc
+- (id<UIActivityItemSource>) activityItemSource;
+```
+
 #### Discussion
 
-Use [`activityItemSource()`](uicloudsharingcontroller/activityitemsource().md), an object that conforms to the [`UIActivityItemSource`](uiactivityitemsource.md) protocol, when you want to include the CloudKit Sharing action as one of the action items in an instance of [`UIActivityViewController`](uiactivityviewcontroller.md).
+Use [`activityItemSource()`](./activityitemsource%28%29.md), an object that conforms to the [`UIActivityItemSource`](../uiactivityitemsource.md) protocol, when you want to include the CloudKit Sharing action as one of the action items in an instance of [`UIActivityViewController`](../uiactivityviewcontroller.md).
 
-Including [`activityItemSource()`](uicloudsharingcontroller/activityitemsource().md) in an activity view controller can be useful when your app’s user interface doesn’t have space to display a button dedicated to CloudKit Sharing. For instance, say your app already has an action button that lets the user share data with social media sites or other apps through an activity view controller. If you include [`activityItemSource()`](uicloudsharingcontroller/activityitemsource().md) as one of the activity view controller’s action items, the controller includes the action as a user-selectable option, thus eliminating the need for a second button in your app’s user interface.
+Including [`activityItemSource()`](./activityitemsource%28%29.md) in an activity view controller can be useful when your app’s user interface doesn’t have space to display a button dedicated to CloudKit Sharing. For instance, say your app already has an action button that lets the user share data with social media sites or other apps through an activity view controller. If you include [`activityItemSource()`](./activityitemsource%28%29.md) as one of the activity view controller’s action items, the controller includes the action as a user-selectable option, thus eliminating the need for a second button in your app’s user interface.
 
 **Swift**:
 

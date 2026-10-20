@@ -1,12 +1,13 @@
 # Using permissions for scripts and style sheets
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Learn about URL permissions for scripts and style sheets in a Safari app extension using information property list keys.
 
 #### Overview
 
-If you specify `Some` or `All` access for your Safari app extension, Safari can inject scripts or style sheets that your app extension provides into the webpage. In Safari 17 or later, users also need to grant your extension access to a website. For more information, see [`Adjusting website access permissions`](adjusting-website-access-permissions.md). By default, the setting is `All` access. However, you can set separate, precise controls for each file that define whether Safari injects it into the webpage.
+If you specify `Some` or `All` access for your Safari app extension, Safari can inject scripts or style sheets that your app extension provides into the webpage. In Safari 17 or later, users also need to grant your extension access to a website. For more information, see [Adjusting website access permissions](./adjusting-website-access-permissions.md). By default, the setting is `All` access. However, you can set separate, precise controls for each file that define whether Safari injects it into the webpage.
 
 For each file you add to the `SFSafariContentScript` and `SFSafariStyleSheet` sections of your app extension’s `Info.plist` file, you create a dictionary to describe the file. The required key specifies a path to the file. If you don’t specify any optional keys, Safari can inject the file into any website. You can add additional keys to this dictionary to permit or prevent injection of the file.
 
@@ -18,7 +19,7 @@ For both `SFSafariContentScript` and `SFSafariStyleSheet`, a key’s `Allowed UR
 
 These restrictions are in addition to those that you set in the `SFSafariWebsiteAccess` values. If you specify `Some` access for your app extension, you have access only to the domains matching your provided domain patterns. Items in `Allowed URL Patterns` and `Excluded URL Patterns` create additional restrictions within those domains. Be sure all the items in your `Allowed URL Patterns` are within a domain you have access to.
 
-##### Specify Url Patterns
+##### Specify URL patterns
 
 A URL pattern takes the form *Scheme://Domain/Path*.
 
@@ -37,13 +38,14 @@ You can use the asterisk character anywhere in the domain or path, but not in th
 - `https://*/*`—Matches all webpages that Safari delivers over HTTPS.
 - `https://secure.example.com/accounts/*`—Matches all webpages from the `accounts` directory of `secure.example.com` that Safari delivers over HTTPS.
 
-> ❗ **Important**:  The format for URL patterns in `Allowed URL Patterns` and `Excluded URL Patterns` keys isn’t the same as the format for domain patterns in the `Allowed Domains` array that you specify in your website access list.  See [`Adjusting website access permissions`](adjusting-website-access-permissions.md).
+> ❗ **Important**:  The format for URL patterns in `Allowed URL Patterns` and `Excluded URL Patterns` keys isn’t the same as the format for domain patterns in the `Allowed Domains` array that you specify in your website access list.  See [Adjusting website access permissions](./adjusting-website-access-permissions.md).
 
 ## See Also
 
-- [Setting Safari app extension feature keys](setting-safari-app-extension-feature-keys.md)
+### Access and permissions
+- [Setting Safari app extension feature keys](./setting-safari-app-extension-feature-keys.md)
   Set keys for permissions, scripts, style sheets, contextual menu items, and toolbar items in the information property list file.
-- [Adjusting website access permissions](adjusting-website-access-permissions.md)
+- [Adjusting website access permissions](./adjusting-website-access-permissions.md)
   Set website access permissions in a Safari app extension using information property list keys.
 
 

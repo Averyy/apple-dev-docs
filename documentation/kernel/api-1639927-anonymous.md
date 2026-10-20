@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothACLLogicalChannelL2CAPContinue](1639927-anonymous/kbluetoothacllogicalchannell2capcontinue.md)
-- [kBluetoothACLLogicalChannelL2CAPStart](1639927-anonymous/kbluetoothacllogicalchannell2capstart.md)
-- [kBluetoothACLLogicalChannelLMP](1639927-anonymous/kbluetoothacllogicalchannellmp.md)
-- [kBluetoothACLLogicalChannelReserved](1639927-anonymous/kbluetoothacllogicalchannelreserved.md)
-- [kBluetoothL2CAPMaxPacketSize](1639927-anonymous/kbluetoothl2capmaxpacketsize.md)
+- [kBluetoothACLLogicalChannelL2CAPContinue](./api-1639927-anonymous/kbluetoothacllogicalchannell2capcontinue.md)
+- [kBluetoothACLLogicalChannelL2CAPStart](./api-1639927-anonymous/kbluetoothacllogicalchannell2capstart.md)
+- [kBluetoothACLLogicalChannelLMP](./api-1639927-anonymous/kbluetoothacllogicalchannellmp.md)
+- [kBluetoothACLLogicalChannelReserved](./api-1639927-anonymous/kbluetoothacllogicalchannelreserved.md)
+- [kBluetoothL2CAPMaxPacketSize](./api-1639927-anonymous/kbluetoothl2capmaxpacketsize.md)
 
 
 ---

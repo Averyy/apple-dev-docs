@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection’s “past the end” position–that is, the position one greater than the last valid subscript argument.
 
@@ -22,13 +23,14 @@ var endIndex: Int { get }
 
 ## See Also
 
-- [let input: MLShapedArray<Scalar>](slidingwindows/input.md)
+### Inspecting the sliding window
+- [let input: MLShapedArray<Scalar>](./input.md)
   The input shaped array.
-- [let length: Int](slidingwindows/length.md)
+- [let length: Int](./length.md)
   The number samples in each window.
-- [var startIndex: Int](slidingwindows/startindex.md)
+- [var startIndex: Int](./startindex.md)
   The position of the first window.
-- [let stride: Int](slidingwindows/stride.md)
+- [let stride: Int](./stride.md)
   The number of samples between windows.
 
 

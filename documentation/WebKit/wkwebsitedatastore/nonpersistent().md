@@ -1,7 +1,8 @@
 # nonPersistent()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new data store object that stores website data in memory, and doesn’t write that data to disk.
 
@@ -18,6 +19,10 @@ Creates a new data store object that stores website data in memory, and doesn’
 class func nonPersistent() -> WKWebsiteDataStore
 ```
 
+```objc
++ (WKWebsiteDataStore *) nonPersistentDataStore;
+```
+
 #### Return Value
 
 A new data store object that doesn’t save data to disk.
@@ -28,9 +33,10 @@ Use a nonpersistent data store to implement private browsing in your web view. T
 
 ## See Also
 
-- [class func `default`() -> WKWebsiteDataStore](wkwebsitedatastore/default.md)
+### Creating a data store object
+- [class func `default`() -> WKWebsiteDataStore](./default%28%29.md)
   Returns the default data store, which stores data persistently to disk.
-- [init(forIdentifier: UUID)](wkwebsitedatastore/init(foridentifier:).md)
+- [init(forIdentifier: UUID)](./init%28foridentifier%29.md)
   Returns the persistent data store with the unique identifier you provide.
 
 

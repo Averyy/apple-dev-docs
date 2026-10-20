@@ -1,7 +1,8 @@
 # stopRecording()
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops recording sensor data.
 
@@ -20,7 +21,7 @@ final func stopRecording() async throws
 
 The reader must be authorized for the sensor for this to succeed. This stops recording on this device and any paired devices. Sensor recording will continue until the last interested reader has stopped recording.
 
-> **Note**: An error if the stop operation fails
+> **Throws**: An error if the stop operation fails
 
 #### Example
 

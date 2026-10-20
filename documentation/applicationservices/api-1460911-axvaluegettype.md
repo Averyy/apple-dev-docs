@@ -1,7 +1,8 @@
 # AXValueGetType(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXValueGetType(_ value: AXValue) -> AXValueType
+```
+
+```c
+AXValueType AXValueGetType(AXValueRef value);
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ Returns the structure type encoded in value. If the type is not recognized, it r
 
 ## See Also
 
-- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](1459351-axvaluecreate.md)
-- [func AXValueGetTypeID() -> CFTypeID](1460780-axvaluegettypeid.md)
-- [func AXValueGetValue(AXValue, AXValueType, UnsafeMutableRawPointer) -> Bool](1462933-axvaluegetvalue.md)
+### Miscellaneous
+- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](./api-1459351-axvaluecreate.md)
+- [func AXValueGetTypeID() -> CFTypeID](./api-1460780-axvaluegettypeid.md)
+- [func AXValueGetValue(AXValue, AXValueType, UnsafeMutableRawPointer) -> Bool](./api-1462933-axvaluegetvalue.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # attestationChallenge
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attestation challenge from the secure session.
 
@@ -18,6 +19,10 @@ The attestation challenge from the secure session.
 
 ```swift
 var attestationChallenge: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSData * attestationChallenge;
 ```
 
 

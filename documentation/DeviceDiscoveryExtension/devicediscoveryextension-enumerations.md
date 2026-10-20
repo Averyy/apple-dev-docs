@@ -1,11 +1,12 @@
 # DeviceDiscoveryExtension Enumerations
 
-**Framework**: DeviceDiscoveryExtension
+**Framework**: DeviceDiscoveryExtension  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [struct DDDeviceSupports](dddevicesupports.md)
+- [struct DDDeviceSupports](./dddevicesupports.md)
 
 
 ---

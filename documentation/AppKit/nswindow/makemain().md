@@ -1,12 +1,13 @@
 # makeMain()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes the window the main window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ Makes the window the main window.
 func makeMain()
 ```
 
+```objc
+- (void) makeMainWindow;
+```
+
 ## See Also
 
-- [func makeKey()](nswindow/makekey.md)
+### Related Documentation
+- [func makeKey()](./makekey%28%29.md)
   Makes the window the key window.
-- [var isMainWindow: Bool](nswindow/ismainwindow.md)
+### Managing Main Status
+- [var isMainWindow: Bool](./ismainwindow.md)
   A Boolean value that indicates whether the window is the application’s main window.
-- [var canBecomeMain: Bool](nswindow/canbecomemain.md)
+- [var canBecomeMain: Bool](./canbecomemain.md)
   A Boolean value that indicates whether the window can become the application’s main window.
-- [func becomeMain()](nswindow/becomemain.md)
+- [func becomeMain()](./becomemain%28%29.md)
   Informs the window that it has become the main window.
-- [func resignMain()](nswindow/resignmain.md)
+- [func resignMain()](./resignmain%28%29.md)
   Resigns the window’s main window status.
 
 

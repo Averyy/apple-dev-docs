@@ -1,7 +1,8 @@
 # TextureResource.Format.NormalEncoding
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A profile that specifies the interpretation of pixel values as a normal.
 
@@ -22,22 +23,23 @@ enum NormalEncoding
 ## Topics
 
 ### Normal profiles
-- [TextureResource.Format.NormalEncoding.wy](textureresource/format/normalencoding/wy.md)
+- [TextureResource.Format.NormalEncoding.wy](./normalencoding/wy.md)
   A normal map with the X and Y components of a surface normal in the tangent space of the surface that RealityKit encodes in the alpha and green channels of a texture.
-- [TextureResource.Format.NormalEncoding.xy](textureresource/format/normalencoding/xy.md)
+- [TextureResource.Format.NormalEncoding.xy](./normalencoding/xy.md)
   A normal map with the X and Y components of a surface normal in the tangent space of the surface that RealityKit encodes in the red and green channels of a texture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TextureResource.Format.ColorSpace](textureresource/format/colorspace.md)
+### Defining the format profile
+- [TextureResource.Format.ColorSpace](./colorspace.md)
   A profile that specifies the interpretation of pixel values as a color.
 
 

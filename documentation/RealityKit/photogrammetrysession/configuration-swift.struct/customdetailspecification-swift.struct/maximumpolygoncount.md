@@ -1,7 +1,8 @@
 # maximumPolygonCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The upper limit on polygons in the model mesh.
 

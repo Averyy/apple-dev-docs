@@ -2,6 +2,7 @@
 
 **Framework**: CryptoTokenKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate to create a session for the specified token.
@@ -21,6 +22,10 @@ Tells the delegate to create a session for the specified token.
 func createSession(_ token: TKToken) throws -> TKTokenSession
 ```
 
+```objc
+- (TKTokenSession *) token:(TKToken *) token createSessionWithError:(NSError **) error;
+```
+
 #### Return Value
 
 A new token session, or `nil` if an error occurred.
@@ -35,7 +40,8 @@ All operations for a token are performed within a session representing an authen
 
 ## See Also
 
-- [func token(TKToken, terminateSession: TKTokenSession)](tktokendelegate/token(_:terminatesession:).md)
+### Delegate Methods
+- [func token(TKToken, terminateSession: TKTokenSession)](./token%28_,terminatesession%29.md)
   Tells the delegate to terminate the specified token session.
 
 

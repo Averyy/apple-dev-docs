@@ -1,7 +1,8 @@
 # targetContentIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that determines which scene handles the quick action.
 
@@ -17,9 +18,13 @@ The object that determines which scene handles the quick action.
 var targetContentIdentifier: Any? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) id targetContentIdentifier;
+```
+
 #### Discussion
 
-UIKit applies the value in this property to the activation conditions defined by the [`UISceneActivationConditions`](uisceneactivationconditions.md) objects of the available scenes. Based on the predicates you specify, UIKit selects the most appropriate scene for handling the action.
+UIKit applies the value in this property to the activation conditions defined by the [`UISceneActivationConditions`](../uisceneactivationconditions.md) objects of the available scenes. Based on the predicates you specify, UIKit selects the most appropriate scene for handling the action.
 
 
 ---

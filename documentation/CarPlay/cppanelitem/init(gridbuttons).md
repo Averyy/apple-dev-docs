@@ -1,7 +1,8 @@
 # init(gridButtons:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the item using one or more grid buttons.
 
@@ -14,6 +15,10 @@ Initialize the item using one or more grid buttons.
 
 ```swift
 init(gridButtons: [CPGridButton])
+```
+
+```objc
+- (instancetype) initWithGridButtons:(NSArray<CPGridButton *> *) gridButtons;
 ```
 
 #### Return Value

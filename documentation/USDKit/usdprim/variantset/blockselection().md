@@ -1,7 +1,8 @@
 # blockSelection()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks the variant selection by authoring an explicit empty value on the current edit target.
 
@@ -21,7 +22,7 @@ func blockSelection() throws
 
 #### Discussion
 
-> **Note**: An error if the selection cannot be blocked.
+> **Throws**: An error if the selection cannot be blocked.
 
 
 ---

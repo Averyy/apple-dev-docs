@@ -1,7 +1,8 @@
 # includedRoutes
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IPv6 network traffic that the system routes to the TUN interface.
 
@@ -19,9 +20,13 @@ The IPv6 network traffic that the system routes to the TUN interface.
 var includedRoutes: [NEIPv6Route]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NEIPv6Route *> * includedRoutes;
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ If you include the default route (`0.0.0.0/0` or `::/0`) in this property, the s
 
 ## See Also
 
-- [var excludedRoutes: [NEIPv6Route]?](neipv6settings/excludedroutes.md)
+### Routing network traffic
+- [var excludedRoutes: [NEIPv6Route]?](./excludedroutes.md)
   The IPv6 network traffic that the system routes to the primary physical interface, not the TUN interface.
-- [class NEIPv6Route](neipv6route.md)
+- [class NEIPv6Route](../neipv6route.md)
   The settings for an IPv6 route.
 
 

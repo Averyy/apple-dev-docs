@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the entity mapping.
 
@@ -10,7 +11,7 @@ The name of the entity mapping.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ The name of the entity mapping.
 var name: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * name;
+```
+
 #### Discussion
 
 The name is used only as a means of distinguishing mappings in a model. If not specified, the value defaults to SOURCE->DESTINATION.
 
 ## See Also
 
-- [var mappingType: NSEntityMappingType](nsentitymapping/mappingtype.md)
+### Managing Mapping Information
+- [var mappingType: NSEntityMappingType](./mappingtype.md)
   The mapping type for the entity mapping.
-- [var entityMigrationPolicyClassName: String?](nsentitymapping/entitymigrationpolicyclassname.md)
+- [var entityMigrationPolicyClassName: String?](./entitymigrationpolicyclassname.md)
   The class name of the migration policy for the entity mapping.
-- [var attributeMappings: [NSPropertyMapping]?](nsentitymapping/attributemappings.md)
+- [var attributeMappings: [NSPropertyMapping]?](./attributemappings.md)
   The array of attribute mappings for the entity mapping.
-- [var relationshipMappings: [NSPropertyMapping]?](nsentitymapping/relationshipmappings.md)
+- [var relationshipMappings: [NSPropertyMapping]?](./relationshipmappings.md)
   The array of relationship mappings for the entity mapping.
-- [var userInfo: [AnyHashable : Any]?](nsentitymapping/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info dictionary for the entity mapping.
 
 

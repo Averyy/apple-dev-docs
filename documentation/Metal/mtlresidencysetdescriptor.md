@@ -1,7 +1,8 @@
 # MTLResidencySetDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that customizes the behavior for a residency set.
 
@@ -19,42 +20,47 @@ A configuration that customizes the behavior for a residency set.
 class MTLResidencySetDescriptor
 ```
 
+```objc
+@interface MTLResidencySetDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Overview
 
-Make an [`MTLResidencySet`](mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](mtlresidencysetdescriptor.md) instance and pass it to the [`makeResidencySet(descriptor:)`](mtldevice/makeresidencyset(descriptor:).md) method of an [`MTLDevice`](mtldevice.md) instance.
+Make an [`MTLResidencySet`](./mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](./mtlresidencysetdescriptor.md) instance and pass it to the [`makeResidencySet(descriptor:)`](./mtldevice/makeresidencyset%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md) instance.
 
-See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
+See [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md) for more information.
 
 ## Topics
 
 ### Configuring the residency set
-- [var label: String?](mtlresidencysetdescriptor/label.md)
+- [var label: String?](./mtlresidencysetdescriptor/label.md)
   An optional name that can help you identify a residency set you create with the descriptor.
-- [var initialCapacity: Int](mtlresidencysetdescriptor/initialcapacity.md)
+- [var initialCapacity: Int](./mtlresidencysetdescriptor/initialcapacity.md)
   The number of allocations a new residency set can store without reallocating memory.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+### Residency sets
+- [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
   Organize your resources into groups and influence when they become accessible to the GPU.
-- [protocol MTLResidencySet](mtlresidencyset.md)
+- [protocol MTLResidencySet](./mtlresidencyset.md)
   A collection of resource allocations that can move in and out of resident memory.
 
 

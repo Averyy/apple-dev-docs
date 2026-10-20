@@ -1,7 +1,8 @@
 # kLACredentialTypeApplicationPassword
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies that a password is provided by the application.
 
@@ -19,9 +20,14 @@ Specifies that a password is provided by the application.
 var kLACredentialTypeApplicationPassword: Int32 { get }
 ```
 
+```c
+#define kLACredentialTypeApplicationPassword
+```
+
 ## See Also
 
-- [var kLACredentialSmartCardPIN: Int32](klacredentialsmartcardpin.md)
+### Constants
+- [var kLACredentialSmartCardPIN: Int32](./klacredentialsmartcardpin.md)
 
 
 ---

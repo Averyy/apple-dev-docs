@@ -1,11 +1,12 @@
 # none
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- Mac Catalyst 16.0+
-- macOS 13.0+
+- Mac Catalyst 16.0+ - Deprecated in 17.0 (renamed: XPCSession.InitializationOptions)
+- macOS 13.0+ - Deprecated in 14.0 (renamed: XPCSession.InitializationOptions)
 
 ## Declaration
 

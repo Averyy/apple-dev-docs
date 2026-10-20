@@ -1,7 +1,8 @@
 # FileManager.UnmountOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that specify the behavior of an unmount operation.
 
@@ -14,33 +15,38 @@ Options that specify the behavior of an unmount operation.
 struct UnmountOptions
 ```
 
+```c
+enum NSFileManagerUnmountOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Unmount Behavior
-- [init(rawValue: UInt)](filemanager/unmountoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./unmountoptions/init%28rawvalue%29.md)
   Creates an unmount option set from the given raw value.
-- [static var allPartitionsAndEjectDisk: FileManager.UnmountOptions](filemanager/unmountoptions/allpartitionsandejectdisk.md)
+- [static var allPartitionsAndEjectDisk: FileManager.UnmountOptions](./unmountoptions/allpartitionsandejectdisk.md)
   Specifies that all partitions on an unmountable disk should be unmounted.
-- [static var withoutUI: FileManager.UnmountOptions](filemanager/unmountoptions/withoutui.md)
+- [static var withoutUI: FileManager.UnmountOptions](./unmountoptions/withoutui.md)
   Specifies that no UI should accompany the unmount operation.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func unmountVolume(at: URL, options: FileManager.UnmountOptions, completionHandler: ((any Error)?) -> Void)](filemanager/unmountvolume(at:options:completionhandler:).md)
+### Unmounting volumes
+- [func unmountVolume(at: URL, options: FileManager.UnmountOptions, completionHandler: ((any Error)?) -> Void)](./unmountvolume%28at,options,completionhandler%29.md)
   Starts the process of unmounting the specified volume.
-- [let NSFileManagerUnmountDissentingProcessIdentifierErrorKey: String](nsfilemanagerunmountdissentingprocessidentifiererrorkey.md)
+- [let NSFileManagerUnmountDissentingProcessIdentifierErrorKey: String](../nsfilemanagerunmountdissentingprocessidentifiererrorkey.md)
   The process identifier of the process that prevented a volume from unmounting.
 
 

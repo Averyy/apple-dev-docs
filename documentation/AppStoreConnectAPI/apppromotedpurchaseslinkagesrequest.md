@@ -1,7 +1,8 @@
 # AppPromotedPurchasesLinkagesRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for updating the ordered list of In-App Purchases and subscriptions promoted on an app’s product page.
 
@@ -10,14 +11,14 @@ The request body for updating the ordered list of In-App Purchases and subscript
 
 ## Declaration
 
-```swift
+```
 object AppPromotedPurchasesLinkagesRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPromotedPurchasesLinkagesRequest.Data](apppromotedpurchaseslinkagesrequest/data-data.dictionary.md)
+- [object AppPromotedPurchasesLinkagesRequest.Data](./apppromotedpurchaseslinkagesrequest/data-data.dictionary.md)
   The resource linkage identifying a promoted purchase associated with the app promoted purchases linkages request.
 
 ## Properties
@@ -26,15 +27,16 @@ object AppPromotedPurchasesLinkagesRequest
 
 ## See Also
 
-- [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
+### Objects
+- [object PromotedPurchaseResponse](./promotedpurchaseresponse.md)
   The response body for endpoints that read or modify a promoted In-App Purchase or subscription.
-- [object PromotedPurchasesResponse](promotedpurchasesresponse.md)
+- [object PromotedPurchasesResponse](./promotedpurchasesresponse.md)
   The response body for endpoints that list promoted In-App Purchases and subscriptions for an app.
-- [object PromotedPurchaseCreateRequest](promotedpurchasecreaterequest.md)
+- [object PromotedPurchaseCreateRequest](./promotedpurchasecreaterequest.md)
   The request body you use to create a promoted purchase.
-- [object PromotedPurchaseUpdateRequest](promotedpurchaseupdaterequest.md)
+- [object PromotedPurchaseUpdateRequest](./promotedpurchaseupdaterequest.md)
   The request body you use to update a promoted purchase update request.
-- [object AppPromotedPurchasesLinkagesResponse](apppromotedpurchaseslinkagesresponse.md)
+- [object AppPromotedPurchasesLinkagesResponse](./apppromotedpurchaseslinkagesresponse.md)
   A response containing the resource identifiers of In-App Purchases and subscriptions promoted on an app’s product page.
 
 

@@ -1,7 +1,8 @@
 # requiresConstraintBasedLayout
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.15+
@@ -15,12 +16,13 @@
 
 ## See Also
 
-- [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](nshostingview/userinterfacelayoutdirection.md)
-- [var isFlipped: Bool](nshostingview/isflipped.md)
-- [var layerContentsRedrawPolicy: NSView.LayerContentsRedrawPolicy](nshostingview/layercontentsredrawpolicy.md)
-- [func updateConstraints()](nshostingview/updateconstraints.md)
-- [func layout()](nshostingview/layout.md)
-- [var safeAreaRegions: SafeAreaRegions](nshostingview/safearearegions.md)
+### Configuring the view layout behavior
+- [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](./userinterfacelayoutdirection.md)
+- [var isFlipped: Bool](./isflipped.md)
+- [var layerContentsRedrawPolicy: NSView.LayerContentsRedrawPolicy](./layercontentsredrawpolicy.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
+- [func layout()](./layout%28%29.md)
+- [var safeAreaRegions: SafeAreaRegions](./safearearegions.md)
   The safe area regions that this view controller adds to its view.
 
 

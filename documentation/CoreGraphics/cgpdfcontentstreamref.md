@@ -1,23 +1,28 @@
 # CGPDFContentStreamRef
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An opaque type that provides access to the data that describes the appearance of a PDF page.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CGPDFContentStreamRef = OpaquePointer
+```
+
+```c
+typedef struct CGPDFContentStream * CGPDFContentStreamRef;
 ```
 
 

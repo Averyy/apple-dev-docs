@@ -1,7 +1,8 @@
 # maximumIntegerDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of digits before the decimal separator.
 
@@ -20,11 +21,15 @@ The maximum number of digits before the decimal separator.
 var maximumIntegerDigits: Int { get set }
 ```
 
+```objc
+@property NSUInteger maximumIntegerDigits;
+```
+
 #### Discussion
 
 By default, this property is set to `42`.
 
-The following code demonstrates the effect of setting [`maximumIntegerDigits`](numberformatter/maximumintegerdigits.md) when formatting a number:
+The following code demonstrates the effect of setting [`maximumIntegerDigits`](./maximumintegerdigits.md) when formatting a number:
 
 ```swift
 var numberFormatter = NumberFormatter()
@@ -38,11 +43,12 @@ numberFormatter.string(from: 12345) // 345
 
 ## See Also
 
-- [var minimumIntegerDigits: Int](numberformatter/minimumintegerdigits.md)
+### Configuring Integer and Fraction Digits
+- [var minimumIntegerDigits: Int](./minimumintegerdigits.md)
   The minimum number of digits before the decimal separator.
-- [var minimumFractionDigits: Int](numberformatter/minimumfractiondigits.md)
+- [var minimumFractionDigits: Int](./minimumfractiondigits.md)
   The minimum number of digits after the decimal separator.
-- [var maximumFractionDigits: Int](numberformatter/maximumfractiondigits.md)
+- [var maximumFractionDigits: Int](./maximumfractiondigits.md)
   The maximum number of digits after the decimal separator.
 
 

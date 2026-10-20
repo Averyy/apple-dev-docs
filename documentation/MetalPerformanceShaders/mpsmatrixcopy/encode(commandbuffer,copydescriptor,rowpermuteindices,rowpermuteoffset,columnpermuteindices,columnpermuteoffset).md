@@ -1,7 +1,8 @@
 # encode(commandBuffer:copyDescriptor:rowPermuteIndices:rowPermuteOffset:columnPermuteIndices:columnPermuteOffset:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(commandBuffer: any MTLCommandBuffer, copyDescriptor: MPSMatrixCopyDescriptor, rowPermuteIndices: MPSVector?, rowPermuteOffset: Int, columnPermuteIndices: MPSVector?, columnPermuteOffset: Int)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer copyDescriptor:(MPSMatrixCopyDescriptor *) copyDescriptor rowPermuteIndices:(MPSVector *) rowPermuteIndices rowPermuteOffset:(NSUInteger) rowPermuteOffset columnPermuteIndices:(MPSVector *) columnPermuteIndices columnPermuteOffset:(NSUInteger) columnPermuteOffset;
 ```
 
 

@@ -1,7 +1,8 @@
 # refreshSourcesIfNecessary()
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pulls new data from remote sources, if necessary.
 
@@ -18,15 +19,20 @@ Pulls new data from remote sources, if necessary.
 func refreshSourcesIfNecessary()
 ```
 
+```objc
+- (void) refreshSourcesIfNecessary;
+```
+
 #### Discussion
 
 Use this method to pull new data from remote sources if the local data is out of date.
 
 ## See Also
 
-- [func commit() throws](ekeventstore/commit.md)
+### Saving and restoring state
+- [func commit() throws](./commit%28%29.md)
   Commits all unsaved changes to the event store.
-- [func reset()](ekeventstore/reset.md)
+- [func reset()](./reset%28%29.md)
   Reverts the event store to its saved state.
 
 

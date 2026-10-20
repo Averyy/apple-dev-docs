@@ -1,7 +1,8 @@
 # generalForm
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The general form the medication is manufactured in.
 
@@ -17,6 +18,10 @@ The general form the medication is manufactured in.
 
 ```swift
 var generalForm: HKMedicationGeneralForm { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) HKMedicationGeneralForm generalForm;
 ```
 
 #### Discussion

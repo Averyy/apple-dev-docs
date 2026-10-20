@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale of the format style.
 
@@ -22,11 +23,12 @@ var locale: Locale
 
 #### Discussion
 
-Use the [`locale(_:)`](formatstyle/locale(_:).md) modifier to create a copy of this format style with a different locale.
+Use the [`locale(_:)`](../../formatstyle/locale%28_%29.md) modifier to create a copy of this format style with a different locale.
 
 ## See Also
 
-- [let currencyCode: String](integerformatstyle/currency/currencycode.md)
+### Accessing style properties
+- [let currencyCode: String](./currencycode.md)
   The currency code this format style uses.
 
 

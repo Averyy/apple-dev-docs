@@ -1,7 +1,8 @@
 # IOCreateThread
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deprecated function - use kernel_thread_start(). Create a kernel thread.
 
@@ -10,11 +11,11 @@ Deprecated function - use kernel_thread_start(). Create a kernel thread.
 
 ## Declaration
 
-```swift
+```c
 IOThread IOCreateThread(IOThreadFunc function, void *argument);
 ```
 
-#### Return_value
+#### Return Value
 
 An IOThread identifier for the new thread, equivalent to an osfmk thread_t.
 

@@ -1,7 +1,8 @@
 # Enable Lost Mode
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 
@@ -16,7 +17,7 @@ While in Lost Mode, a device responds to invalid commands with error code `12078
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -26,7 +27,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -72,9 +73,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object EnableLostModeCommand](enablelostmodecommand.md)
+- [object EnableLostModeCommand](./enablelostmodecommand.md)
   The command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
-- [object EnableLostModeResponse](enablelostmoderesponse.md)
+- [object EnableLostModeResponse](./enablelostmoderesponse.md)
   A response from the device after it processes the command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 
 ## Endpoint
@@ -83,15 +84,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `EnableLostModeCommand`
+
 The request object the server returns for the Enable Lost Mode Command.
+
+## Responses
+
+- `200` OK (`EnableLostModeResponse`, `application/xml`): The response object the system returns for the Enable Lost Mode Command.
 
 ## See Also
 
-- [Device Location](device-location-command.md)
+### Lost device
+- [Device Location](./device-location-command.md)
   Request the location of a device when in Lost Mode.
-- [Play Lost Mode Sound](play-lost-mode-sound-command.md)
+- [Play Lost Mode Sound](./play-lost-mode-sound-command.md)
   Play the Lost Mode sound on a device that’s in Lost Mode.
-- [Disable Lost Mode](disable-lost-mode-command.md)
+- [Disable Lost Mode](./disable-lost-mode-command.md)
   Take the device out of Lost Mode.
 
 

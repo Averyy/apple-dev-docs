@@ -1,7 +1,8 @@
 # CSSM_APPLE_PRIVATE_CSPDL_CODE_26
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_APPLE_PRIVATE_CSPDL_CODE_26: Int { get }
+```
+
+```c
+CSSM_APPLE_PRIVATE_CSPDL_CODE_26
 ```
 
 

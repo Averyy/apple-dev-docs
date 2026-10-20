@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the data with an OSObject
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
@@ -31,11 +32,12 @@ If the object is of class OSData, the result of isEqualTo(const OSData * aDataOb
 
 ## See Also
 
-- [isEqualTo](osdata/isequalto-2kdml.md)
+### Comparing Data Objects
+- [isEqualTo](./isequalto-2kdml.md)
   Compares the data with an OSData
-- [isEqualTo](osdata/isequalto-5ssf5.md)
+- [isEqualTo](./isequalto-5ssf5.md)
   Compares the data with an OSString
-- [isEqualTo](osdata/isequalto-79gqy.md)
+- [isEqualTo](./isequalto-79gqy.md)
   Compares the data with a pointer to bytes
 
 

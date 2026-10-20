@@ -1,7 +1,8 @@
 # BetaAppClipInvocationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,16 +11,16 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary.md)
+- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations](./relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary.md)
   The relationship to the Beta App Clip Invocation Localizations resource you set with the request that creates a Beta App Clip Invocations resource.
-- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/buildbundle-data.dictionary.md)
+- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle](./relationships-data.dictionary/buildbundle-data.dictionary.md)
   The relationship to the Build Bundles resource you set with the request that creates a Beta App Clip Invocations resource.
 
 ## Properties
@@ -29,7 +30,8 @@ object BetaAppClipInvocationCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object BetaAppClipInvocationCreateRequest.Data.Attributes](betaappclipinvocationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object BetaAppClipInvocationCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the new Beta App Clip Invocations resource.
 
 

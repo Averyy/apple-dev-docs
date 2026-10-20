@@ -1,7 +1,8 @@
 # init(callUUID:digits:type:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

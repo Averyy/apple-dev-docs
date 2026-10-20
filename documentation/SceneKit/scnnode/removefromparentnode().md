@@ -1,23 +1,28 @@
 # removeFromParentNode()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the node from its parent’s array of child nodes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func removeFromParentNode()
+```
+
+```objc
+- (void) removeFromParentNode;
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ Removing nodes from the node hierarchy serves two purposes. Nodes own their cont
 
 ## See Also
 
-- [var parent: SCNNode?](scnnode/parent.md)
+### Managing the Node Hierarchy
+- [var parent: SCNNode?](./parent.md)
   The node’s parent in the scene graph hierarchy.
-- [var childNodes: [SCNNode]](scnnode/childnodes.md)
+- [var childNodes: [SCNNode]](./childnodes.md)
   An array of the node’s children in the scene graph hierarchy.
-- [func addChildNode(SCNNode)](scnnode/addchildnode(_:).md)
+- [func addChildNode(SCNNode)](./addchildnode%28_%29.md)
   Adds a node to the node’s array of children.
-- [func insertChildNode(SCNNode, at: Int)](scnnode/insertchildnode(_:at:).md)
+- [func insertChildNode(SCNNode, at: Int)](./insertchildnode%28_,at%29.md)
   Adds a node to the node’s array of children at a specified index.
-- [func replaceChildNode(SCNNode, with: SCNNode)](scnnode/replacechildnode(_:with:).md)
+- [func replaceChildNode(SCNNode, with: SCNNode)](./replacechildnode%28_,with%29.md)
   Removes a child from the node’s array of children and inserts another node in its place.
 
 

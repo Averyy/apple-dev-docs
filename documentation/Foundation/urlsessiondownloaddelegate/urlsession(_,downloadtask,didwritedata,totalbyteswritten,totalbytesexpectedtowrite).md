@@ -1,7 +1,8 @@
 # urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Periodically informs the delegate about the download’s progress.
 
@@ -20,9 +21,13 @@ Periodically informs the delegate about the download’s progress.
 optional func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session downloadTask:(NSURLSessionDownloadTask *) downloadTask didWriteData:(int64_t) bytesWritten totalBytesWritten:(int64_t) totalBytesWritten totalBytesExpectedToWrite:(int64_t) totalBytesExpectedToWrite;
+```
+
 ## Mentions
 
-- [Downloading files from websites](downloading-files-from-websites.md)
+- [Downloading files from websites](../downloading-files-from-websites.md)
 
 ## Parameters
 
@@ -30,7 +35,7 @@ optional func urlSession(_ session: URLSession, downloadTask: URLSessionDownload
 - `downloadTask`: The download task.
 - `bytesWritten`: The number of bytes transferred since the last time this delegate method was called.
 - `totalBytesWritten`: The total number of bytes transferred so far.
-- `totalBytesExpectedToWrite`: The expected length of the file, as provided by the `Content-Length` header. If this header was not provided, the value is [`NSURLSessionTransferSizeUnknown`](nsurlsessiontransfersizeunknown.md).
+- `totalBytesExpectedToWrite`: The expected length of the file, as provided by the `Content-Length` header. If this header was not provided, the value is [`NSURLSessionTransferSizeUnknown`](../nsurlsessiontransfersizeunknown.md).
 
 
 ---

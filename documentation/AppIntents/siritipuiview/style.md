@@ -1,14 +1,15 @@
 # style
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use for the view.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ The style to use for the view.
 
 ## See Also
 
-- [struct SiriTipViewStyle](siritipviewstyle.md)
+### Getting the view style
+- [struct SiriTipViewStyle](../siritipviewstyle.md)
   The styles to apply to the tip views you use to display spoken phrases.
 
 

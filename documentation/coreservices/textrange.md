@@ -1,7 +1,8 @@
 # TextRange
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies a range of text. Not typically used by developers.
 
@@ -15,15 +16,21 @@ Specifies a range of text. Not typically used by developers.
 struct TextRange
 ```
 
+```c
+typedef struct TextRange {
+    ...
+} TextRange;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](textrange/1445677-init.md)
-- [init(fStart: Int32, fEnd: Int32, fHiliteStyle: Int16)](textrange/1442042-init.md)
+- [init()](./textrange/api-1445677-init.md)
+- [init(fStart: Int32, fEnd: Int32, fHiliteStyle: Int16)](./textrange/api-1442042-init.md)
 ### Instance Properties
-- [var fEnd: Int32](textrange/1448002-fend.md)
-- [var fHiliteStyle: Int16](textrange/1450504-fhilitestyle.md)
-- [var fStart: Int32](textrange/1449071-fstart.md)
+- [var fEnd: Int32](./textrange/api-1448002-fend.md)
+- [var fHiliteStyle: Int16](./textrange/api-1450504-fhilitestyle.md)
+- [var fStart: Int32](./textrange/api-1449071-fstart.md)
 
 
 ---

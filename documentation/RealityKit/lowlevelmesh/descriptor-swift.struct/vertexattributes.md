@@ -1,7 +1,8 @@
 # vertexAttributes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that describes the vertex input attributes to a vertex function.
 
@@ -21,11 +22,12 @@ var vertexAttributes: [LowLevelMesh.Attribute]
 
 ## See Also
 
-- [var indexType: MTLIndexType](lowlevelmesh/descriptor-swift.struct/indextype.md)
+### Defining the descriptor’s contents
+- [var indexType: MTLIndexType](./indextype.md)
   The data type of the indices that the index buffer stores.
-- [var vertexLayouts: [LowLevelMesh.Layout]](lowlevelmesh/descriptor-swift.struct/vertexlayouts.md)
+- [var vertexLayouts: [LowLevelMesh.Layout]](./vertexlayouts.md)
   The list of layouts.
-- [var vertexBufferCount: Int](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md)
+- [var vertexBufferCount: Int](./vertexbuffercount.md)
   The number of buffers this descriptor uses.
 
 

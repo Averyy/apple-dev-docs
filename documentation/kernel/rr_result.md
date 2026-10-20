@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rr_result {
     ...
 };
@@ -17,11 +17,11 @@ struct rr_result {
 ## Topics
 
 ### Instance Properties
-- [rrr_flags](rr_result/3754219-rrr_flags.md)
-- [rrr_ifid](rr_result/3754220-rrr_ifid.md)
-- [rrr_matchedlen](rr_result/3754221-rrr_matchedlen.md)
-- [rrr_ordinal](rr_result/3754222-rrr_ordinal.md)
-- [rrr_prefix](rr_result/3754223-rrr_prefix.md)
+- [rrr_flags](./rr_result/api-3754219-rrr_flags.md)
+- [rrr_ifid](./rr_result/api-3754220-rrr_ifid.md)
+- [rrr_matchedlen](./rr_result/api-3754221-rrr_matchedlen.md)
+- [rrr_ordinal](./rr_result/api-3754222-rrr_ordinal.md)
+- [rrr_prefix](./rr_result/api-3754223-rrr_prefix.md)
 
 
 ---

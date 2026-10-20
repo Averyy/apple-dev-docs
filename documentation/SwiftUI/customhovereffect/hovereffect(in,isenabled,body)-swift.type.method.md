@@ -1,7 +1,8 @@
 # hoverEffect(in:isEnabled:body:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a hover effect that applies effects to a view using the given closure.
 
@@ -20,11 +21,11 @@ A new effect that applies effects to a view using the given body closure.
 
 #### Discussion
 
-The closure is provided an empty effect that you use to compose effects, as well as a boolean describing which phase is being requested. A [`GeometryProxy`](geometryproxy.md) is also provided, allowing effects to change based on the view’s geometry.
+The closure is provided an empty effect that you use to compose effects, as well as a boolean describing which phase is being requested. A [`GeometryProxy`](../geometryproxy.md) is also provided, allowing effects to change based on the view’s geometry.
 
-Typically the `CustomHoverEffect/hoverEffect(in:isEnabled:body:)` or [`hoverEffect(in:isEnabled:body:)`](view/hovereffect(in:isenabled:body:).md) modifiers are used to create effects. Use this method when you need to create effects in other contexts.
+Typically the `CustomHoverEffect/hoverEffect(in:isEnabled:body:)` or [`hoverEffect(in:isEnabled:body:)`](../view/hovereffect%28in,isenabled,body%29.md) modifiers are used to create effects. Use this method when you need to create effects in other contexts.
 
-For example, the following code uses this method and [`HoverEffect`](hovereffect.md) to create a type-erased fade effect:
+For example, the following code uses this method and [`HoverEffect`](../hovereffect.md) to create a type-erased fade effect:
 
 ```swift
 HoverEffect(
@@ -36,7 +37,7 @@ HoverEffect(
 
 ## Parameters
 
-- `group`: An optional [`HoverEffectGroup`](hovereffectgroup.md) to add this effect to.
+- `group`: An optional [`HoverEffectGroup`](../hovereffectgroup.md) to add this effect to.
 - `isEnabled`: Whether the effect is enabled or not. If `false`, the effect will not become active when hovered.
 - `body`: The closure that constructs a `HoverEffectContent` for each of the effect’s phases.
 

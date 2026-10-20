@@ -1,7 +1,8 @@
 # kMDItemMediaExtensions
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemMediaExtensions: CFString!
+```
+
+```c
+const CFStringRef kMDItemMediaExtensions;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The message to encode in the QR Code
@@ -18,6 +19,10 @@ The message to encode in the QR Code
 
 ```swift
 var message: Data { get set }
+```
+
+```objc
+@property (nonatomic, retain) NSData * message;
 ```
 
 

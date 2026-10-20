@@ -1,7 +1,8 @@
 # PKIdentityIntentToStore
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents your intention to store an identity element or values derived from an identity element.
 
@@ -17,35 +18,40 @@ An object that represents your intention to store an identity element or values 
 class PKIdentityIntentToStore
 ```
 
+```objc
+@interface PKIdentityIntentToStore : NSObject
+```
+
 ## Topics
 
 ### Creating a default intent
-- [class func mayStore(days: Int) -> Self](pkidentityintenttostore/maystore(days:).md)
+- [class func mayStore(days: Int) -> Self](./pkidentityintenttostore/maystore%28days%29.md)
   An object that indicates your app may store a data element for the length of time you specify.
 ### Getting default intents
-- [class var mayStore: PKIdentityIntentToStore](pkidentityintenttostore/maystore.md)
+- [class var mayStore: PKIdentityIntentToStore](./pkidentityintenttostore/maystore.md)
   An object that indicates your app may store a data element for an indefinite length of time.
-- [class var willNotStore: PKIdentityIntentToStore](pkidentityintenttostore/willnotstore.md)
+- [class var willNotStore: PKIdentityIntentToStore](./pkidentityintenttostore/willnotstore.md)
   An object that indicates your app won’t store a data element any longer than necessary to complete a request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+### Describing a document
+- [class PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
   An object for requesting information from a user’s driver’s license or equivalent document.
-- [protocol PKIdentityDocumentDescriptor](pkidentitydocumentdescriptor.md)
+- [protocol PKIdentityDocumentDescriptor](./pkidentitydocumentdescriptor.md)
   A type that describes the structure and behavior of an identity document.
 
 

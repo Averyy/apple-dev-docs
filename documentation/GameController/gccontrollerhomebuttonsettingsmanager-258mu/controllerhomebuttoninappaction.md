@@ -1,7 +1,8 @@
 # controllerHomeButtonInAppAction
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the current controller Home button in-app action setting.
 

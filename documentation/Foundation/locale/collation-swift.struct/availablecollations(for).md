@@ -1,7 +1,8 @@
 # availableCollations(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A list of available collations for the specified `language` in the order that it is most likely to make a difference.
 

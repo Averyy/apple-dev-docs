@@ -1,7 +1,8 @@
 # init(name:description:schema:isOptional:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property referencing a dynamic schema.
 

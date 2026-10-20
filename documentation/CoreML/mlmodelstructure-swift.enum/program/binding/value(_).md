@@ -1,7 +1,8 @@
 # MLModelStructure.Program.Binding.value(_:)
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant value in the Program.
 
@@ -22,7 +23,8 @@ case value(MLModelStructure.Program.Value)
 
 ## See Also
 
-- [MLModelStructure.Program.Binding.name(_:)](mlmodelstructure-swift.enum/program/binding/name(_:).md)
+### Bindings
+- [MLModelStructure.Program.Binding.name(_:)](./name%28_%29.md)
   The name of the previously defined variable in the Program.
 
 

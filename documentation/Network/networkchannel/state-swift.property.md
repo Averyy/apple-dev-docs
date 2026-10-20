@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the current state of the connection
 

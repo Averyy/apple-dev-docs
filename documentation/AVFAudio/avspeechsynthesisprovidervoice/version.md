@@ -1,7 +1,8 @@
 # version
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the voice.
 
@@ -20,27 +21,32 @@ The version of the voice.
 var version: String { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSString * version;
+```
+
 #### Discussion
 
 This value is for your own tracking and doesn’t impact the behavior of the system.
 
 ## See Also
 
-- [var age: Int](avspeechsynthesisprovidervoice/age.md)
+### Inspecting a voice
+- [var age: Int](./age.md)
   The age of the voice, in years.
-- [var gender: AVSpeechSynthesisVoiceGender](avspeechsynthesisprovidervoice/gender.md)
+- [var gender: AVSpeechSynthesisVoiceGender](./gender.md)
   The gender of the voice.
-- [enum AVSpeechSynthesisVoiceGender](avspeechsynthesisvoicegender.md)
+- [enum AVSpeechSynthesisVoiceGender](../avspeechsynthesisvoicegender.md)
   The gender for a voice.
-- [var identifier: String](avspeechsynthesisprovidervoice/identifier.md)
+- [var identifier: String](./identifier.md)
   The unique identifier for the voice.
-- [var name: String](avspeechsynthesisprovidervoice/name.md)
+- [var name: String](./name.md)
   The localized name of the voice.
-- [var primaryLanguages: [String]](avspeechsynthesisprovidervoice/primarylanguages.md)
+- [var primaryLanguages: [String]](./primarylanguages.md)
   A list of BCP 47 codes that identify the languages the synthesizer uses.
-- [var supportedLanguages: [String]](avspeechsynthesisprovidervoice/supportedlanguages.md)
+- [var supportedLanguages: [String]](./supportedlanguages.md)
   A list of BCP 47 codes that identify the languages a voice supports.
-- [var voiceSize: Int64](avspeechsynthesisprovidervoice/voicesize.md)
+- [var voiceSize: Int64](./voicesize.md)
   The size of the voice package on disk, in bytes.
 
 

@@ -1,7 +1,8 @@
 # resultCount
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of results the search matches.
 
@@ -17,19 +18,24 @@ The total number of results the search matches.
 var resultCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger resultCount;
+```
+
 ## See Also
 
-- [var highlightedResultIndex: Int](uifindsession/highlightedresultindex.md)
+### Getting session information
+- [var highlightedResultIndex: Int](./highlightedresultindex.md)
   The index of the result the find panel highlights.
-- [var supportsReplacement: Bool](uifindsession/supportsreplacement.md)
+- [var supportsReplacement: Bool](./supportsreplacement.md)
   A Boolean value that indicates whether to allow replacing find panel results.
-- [var allowsReplacementForCurrentlyHighlightedResult: Bool](uifindsession/allowsreplacementforcurrentlyhighlightedresult.md)
+- [var allowsReplacementForCurrentlyHighlightedResult: Bool](./allowsreplacementforcurrentlyhighlightedresult.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
-- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.property.md)
+- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.property.md)
   The information the find panel includes in the summary of found results.
-- [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
+- [UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
-- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+- [var allowsReplacement: Bool](./allowsreplacement.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 

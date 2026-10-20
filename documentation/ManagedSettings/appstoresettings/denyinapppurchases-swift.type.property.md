@@ -1,7 +1,8 @@
 # denyInAppPurchases
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the setting to deny in-app purchases.
 
@@ -18,11 +19,12 @@ static let denyInAppPurchases: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyInAppPurchases` to access metadata about [`denyInAppPurchases`](appstoresettings/denyinapppurchases-swift.property.md). The default value is `false`.
+Use `denyInAppPurchases` to access metadata about [`denyInAppPurchases`](./denyinapppurchases-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyInAppPurchases: Bool?](appstoresettings/denyinapppurchases-swift.property.md)
+### Denying In-App Purchases
+- [var denyInAppPurchases: Bool?](./denyinapppurchases-swift.property.md)
   A Boolean value that indicates whether to deny the user permission to make in-app purchases.
 
 

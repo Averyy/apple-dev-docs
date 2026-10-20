@@ -1,7 +1,8 @@
 # String.StringLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a string literal.
 

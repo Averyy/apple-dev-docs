@@ -1,7 +1,8 @@
 # coarseMesh(using:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func coarseMesh(using allocator: (any MDLMeshBufferAllocator)?) -> MDLMesh?
+```
+
+```objc
+- (MDLMesh *) coarseMeshUsingAllocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
 

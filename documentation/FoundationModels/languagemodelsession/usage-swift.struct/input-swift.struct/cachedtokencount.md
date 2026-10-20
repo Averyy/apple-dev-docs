@@ -1,7 +1,8 @@
 # cachedTokenCount
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of input tokens that were served from a cache.
 
@@ -21,11 +22,12 @@ var cachedTokenCount: Int
 
 #### Discussion
 
-This value is always less than or equal to [`totalTokenCount`](languagemodelsession/usage-swift.struct/input-swift.struct/totaltokencount.md).
+This value is always less than or equal to [`totalTokenCount`](./totaltokencount.md).
 
 ## See Also
 
-- [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/input-swift.struct/totaltokencount.md)
+### Getting the token count
+- [var totalTokenCount: Int](./totaltokencount.md)
   The total number of input tokens from the transcript.
 
 

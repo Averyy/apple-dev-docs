@@ -1,7 +1,8 @@
 # isActivated
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to display the system selection UI.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether to display the system selection UI.
 var isActivated: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite, getter=isActivated) BOOL activated;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the system to display the selection UI. Set the property to [`false`](https://developer.apple.com/documentation/swift/false) to hide the selection UI again.
+Set this property to [`true`](../../Swift/true.md) when you want the system to display the selection UI. Set the property to [`false`](../../Swift/false.md) to hide the selection UI again.
 
 
 ---

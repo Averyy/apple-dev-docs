@@ -1,13 +1,14 @@
 # Collection Implementations
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](cmreadonlydatablockbuffer/count.md)
+- [var count: Int](./count.md)
   The number of bytes in the block buffer.
-- [var isEmpty: Bool](cmreadonlydatablockbuffer/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   Indicates whether the block buffer is empty.
 
 

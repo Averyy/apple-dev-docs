@@ -1,7 +1,8 @@
 # ManagedApplicationAttributesCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to query attributes in managed apps on a device.
 
@@ -15,14 +16,14 @@ The command to query attributes in managed apps on a device.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationAttributesCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationAttributesCommand.Command](managedapplicationattributescommand/command-data.dictionary.md)
+- [object ManagedApplicationAttributesCommand.Command](./managedapplicationattributescommand/command-data.dictionary.md)
   The command to query attributes in managed apps on a device.
 
 ## Properties
@@ -32,7 +33,8 @@ object ManagedApplicationAttributesCommand
 
 ## See Also
 
-- [object ManagedApplicationAttributesResponse](managedapplicationattributesresponse.md)
+### Commands and responses
+- [object ManagedApplicationAttributesResponse](./managedapplicationattributesresponse.md)
   A response from the device after it processes the command to query attributes in managed apps on a device.
 
 

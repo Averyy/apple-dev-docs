@@ -1,7 +1,8 @@
 # kIOUSB30BusCurrentMinimum
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The minimum current.
 
@@ -10,7 +11,7 @@ The minimum current.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30BusCurrentMinimum = 150
 ```
 

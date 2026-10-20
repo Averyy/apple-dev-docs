@@ -1,7 +1,8 @@
 # dtls
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set of default parameters for connections and listeners that use DTLS and UDP.
 
@@ -22,27 +23,28 @@ final class var dtls: NWParameters { get }
 
 ## See Also
 
-- [class var tls: NWParameters](nwparameters/tls.md)
+### Creating Parameters
+- [class var tls: NWParameters](./tls.md)
   A set of default parameters for connections and listeners that use TLS and TCP.
-- [class var tcp: NWParameters](nwparameters/tcp.md)
+- [class var tcp: NWParameters](./tcp.md)
   A set of default parameters for connections and listeners that use TCP.
-- [class var udp: NWParameters](nwparameters/udp.md)
+- [class var udp: NWParameters](./udp.md)
   A set of default parameters for connections and listeners that use UDP.
-- [class func quic(alpn: [String]) -> NWParameters](nwparameters/quic(alpn:).md)
+- [class func quic(alpn: [String]) -> NWParameters](./quic%28alpn%29.md)
   Returns a set of default parameters for connections and listeners that use QUIC, with a set of supported Application-Layer Protocol Negotiation values.
-- [class func quicDatagram(alpn: [String]) -> NWParameters](nwparameters/quicdatagram(alpn:).md)
+- [class func quicDatagram(alpn: [String]) -> NWParameters](./quicdatagram%28alpn%29.md)
   Returns a set of default parameters for connections and listeners that use QUIC datagrams, with a set of supported Application-Layer Protocol Negotiation values.
-- [convenience init(tls: NWProtocolTLS.Options?, tcp: NWProtocolTCP.Options)](nwparameters/init(tls:tcp:).md)
+- [convenience init(tls: NWProtocolTLS.Options?, tcp: NWProtocolTCP.Options)](./init%28tls,tcp%29.md)
   Initializes parameters for TLS connections and listeners with custom TLS and TCP options.
-- [convenience init(dtls: NWProtocolTLS.Options?, udp: NWProtocolUDP.Options)](nwparameters/init(dtls:udp:).md)
+- [convenience init(dtls: NWProtocolTLS.Options?, udp: NWProtocolUDP.Options)](./init%28dtls,udp%29.md)
   Initializes parameters for DTLS connections and listeners with custom DTLS and UDP options.
-- [convenience init(quic: NWProtocolQUIC.Options)](nwparameters/init(quic:).md)
+- [convenience init(quic: NWProtocolQUIC.Options)](./init%28quic%29.md)
   Initializes parameters for QUIC connections and listeners with custom QUIC options.
-- [init()](nwparameters/init.md)
+- [init()](./init%28%29.md)
   Initializes parameters for connections, listeners, and browsers with no protocols specified.
-- [init(customIPProtocolNumber: UInt8)](nwparameters/init(customipprotocolnumber:).md)
+- [init(customIPProtocolNumber: UInt8)](./init%28customipprotocolnumber%29.md)
   Initializes parameters for connections and listeners using a custom IP protocol.
-- [func copy() -> NWParameters](nwparameters/copy.md)
+- [func copy() -> NWParameters](./copy%28%29.md)
   Performs a deep copy of a parameters object.
 
 

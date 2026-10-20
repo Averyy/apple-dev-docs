@@ -1,6 +1,7 @@
 # Modifying atoms
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Modify attributes or data associated with an atom in an atom container.
 
@@ -27,13 +28,14 @@ else
 
 ## See Also
 
-- [Creating new atoms](creating_new_atoms.md)
+### Managing atoms
+- [Creating new atoms](./creating_new_atoms.md)
   Create new atoms and insert them in a QT atom container.
-- [Copying existing atoms](copying_existing_atoms.md)
+- [Copying existing atoms](./copying_existing_atoms.md)
   Copy existing atoms within an atom container.
-- [Retrieving atoms from an atom container](retrieving_atoms_from_an_atom_container.md)
+- [Retrieving atoms from an atom container](./retrieving_atoms_from_an_atom_container.md)
   Retrieve information about the types of a parent atom’s children, search for a specific atom, and retrieve a leaf atom’s data.
-- [Removing atoms from an atom container](removing_atoms_from_an_atom_container.md)
+- [Removing atoms from an atom container](./removing_atoms_from_an_atom_container.md)
   Remove atoms from an atom container.
 
 

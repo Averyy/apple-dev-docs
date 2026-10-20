@@ -1,7 +1,8 @@
 # SignpostIntervalMetric
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric that measures the duration and count of custom signpost intervals.
 
@@ -19,13 +20,13 @@ struct SignpostIntervalMetric
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-This metric corresponds to the [`MetricResult.signpostInterval(_:)`](metricresult/signpostinterval(_:).md) case. This metric appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when you enable state reporting.
+This metric corresponds to the [`MetricResult.signpostInterval(_:)`](./metricresult/signpostinterval%28_%29.md) case. This metric appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when you enable state reporting.
 
-Create signpost log handles with [`logHandle(category:)`](metricmanager/loghandle(category:).md) and wrap each custom operation with [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md):
+Create signpost log handles with [`logHandle(category:)`](./metricmanager/loghandle%28category%29.md) and wrap each custom operation with [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](./mxsignpost%28_,dso,log,name,signpostid,_,_%29.md):
 
 ```swift
 let networkLog = MetricManager.logHandle(category: "NetworkRequests")
@@ -42,44 +43,45 @@ Signpost intervals measure the duration and frequency of specific code operation
 ## Topics
 
 ### Signpost details
-- [let signpostName: String](signpostintervalmetric/signpostname.md)
+- [let signpostName: String](./signpostintervalmetric/signpostname.md)
   The developer-specified name of the custom metric represented by the object.
-- [let signpostCategory: String](signpostintervalmetric/signpostcategory.md)
+- [let signpostCategory: String](./signpostintervalmetric/signpostcategory.md)
   The developer-specified category of the custom metric represented by the object.
 ### Counts and timing
-- [let totalCount: Int](signpostintervalmetric/totalcount.md)
+- [let totalCount: Int](./signpostintervalmetric/totalcount.md)
   The total number of occurrences of the captured custom metric.
-- [let signpostDuration: Histogram<UnitDuration>](signpostintervalmetric/signpostduration.md)
+- [let signpostDuration: Histogram<UnitDuration>](./signpostintervalmetric/signpostduration.md)
   A histogram of the different time intervals of a custom metric event.
 ### Additional measurements
-- [let averageMemory: AverageStatistics<UnitInformationStorage>?](signpostintervalmetric/averagememory.md)
+- [let averageMemory: AverageStatistics<UnitInformationStorage>?](./signpostintervalmetric/averagememory.md)
   The average memory used during the logged intervals.
-- [let cpuTime: Measurement<UnitDuration>?](signpostintervalmetric/cputime.md)
+- [let cpuTime: Measurement<UnitDuration>?](./signpostintervalmetric/cputime.md)
   The total amount of CPU time used during the logged intervals.
-- [let logicalWrites: Measurement<UnitInformationStorage>?](signpostintervalmetric/logicalwrites.md)
+- [let logicalWrites: Measurement<UnitInformationStorage>?](./signpostintervalmetric/logicalwrites.md)
   The total amount of data written to disk or other long term storage during the logged intervals.
-- [let hitchTimeRatio: Measurement<HitchTimeRatio>?](signpostintervalmetric/hitchtimeratio.md)
+- [let hitchTimeRatio: Measurement<HitchTimeRatio>?](./signpostintervalmetric/hitchtimeratio.md)
   The ratio of the total time spent hitching to the total time spent animating during the logged intervals.
-- [let totalHitchTime: Measurement<UnitDuration>?](signpostintervalmetric/totalhitchtime.md)
+- [let totalHitchTime: Measurement<UnitDuration>?](./signpostintervalmetric/totalhitchtime.md)
   The total time spent hitching during the logged intervals.
-- [let totalAnimationTime: Measurement<UnitDuration>?](signpostintervalmetric/totalanimationtime.md)
+- [let totalAnimationTime: Measurement<UnitDuration>?](./signpostintervalmetric/totalanimationtime.md)
   The total time spent animating during the logged intervals.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpost(_:dso:log:name:signpostid:_:_:).md)
+### Signpost and custom metrics
+- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpost%28_,dso,log,name,signpostid,_,_%29.md)
   Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
-- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md)
+- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpostanimationintervalbegin%28dso,log,name,signpostid,_,_%29.md)
   Posts the start time of an animation interval to the log system.
 
 

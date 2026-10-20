@@ -1,12 +1,13 @@
 # statusItem(withLength:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a newly created status item that has been allotted a specified space within the status bar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a newly created status item that has been allotted a specified space wit
 func statusItem(withLength length: CGFloat) -> NSStatusItem
 ```
 
+```objc
+- (NSStatusItem *) statusItemWithLength:(CGFloat) length;
+```
+
 #### Return Value
 
-An [`NSStatusItem`](nsstatusitem.md) object.
+An [`NSStatusItem`](../nsstatusitem.md) object.
 
 #### Discussion
 
@@ -24,11 +29,12 @@ The receiver does not retain a reference to the status item, so you need to reta
 
 ## Parameters
 
-- `length`: A constant that specifies whether the status item is of fixed width, or variable width. The valid constants are described in [`Status Bar Item Length`](status-bar-item-length.md).
+- `length`: A constant that specifies whether the status item is of fixed width, or variable width. The valid constants are described in [Status Bar Item Length](../status-bar-item-length.md).
 
 ## See Also
 
-- [func removeStatusItem(NSStatusItem)](nsstatusbar/removestatusitem(_:).md)
+### Managing Status items
+- [func removeStatusItem(NSStatusItem)](./removestatusitem%28_%29.md)
   Removes the specified status item from the receiver.
 
 

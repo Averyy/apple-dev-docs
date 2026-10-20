@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGCameraSerialNumber
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The camera serial number.
 
@@ -20,13 +21,18 @@ The camera serial number.
 let kCGImagePropertyDNGCameraSerialNumber: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGCameraSerialNumber;
+```
+
 ## See Also
 
-- [let kCGImagePropertyDNGLensInfo: CFString](kcgimagepropertydnglensinfo.md)
+### Camera Details
+- [let kCGImagePropertyDNGLensInfo: CFString](./kcgimagepropertydnglensinfo.md)
   Information about the lens used for the image.
-- [let kCGImagePropertyDNGUniqueCameraModel: CFString](kcgimagepropertydnguniquecameramodel.md)
+- [let kCGImagePropertyDNGUniqueCameraModel: CFString](./kcgimagepropertydnguniquecameramodel.md)
   A unique, nonlocalized name for the camera model.
-- [let kCGImagePropertyDNGLocalizedCameraModel: CFString](kcgimagepropertydnglocalizedcameramodel.md)
+- [let kCGImagePropertyDNGLocalizedCameraModel: CFString](./kcgimagepropertydnglocalizedcameramodel.md)
   The localized camera model name.
 
 

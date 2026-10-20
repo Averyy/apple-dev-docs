@@ -1,7 +1,8 @@
 # PermissionResponse
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A full permission response that includes the original question and chosen answer.
 
@@ -20,26 +21,27 @@ struct PermissionResponse<Topic> where Topic : QuestionTopic
 
 ## Mentions
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+- [Creating a communication experience](./creating-a-communication-experience.md)
 
 ## Topics
 
 ### Getting response information
-- [let choice: PermissionChoice](permissionresponse/choice.md)
+- [let choice: PermissionChoice](./permissionresponse/choice.md)
   The choice made by the person initiating this response.
-- [let question: PermissionQuestion<Topic>](permissionresponse/question.md)
+- [let question: PermissionQuestion<Topic>](./permissionresponse/question.md)
   The original question that this response answers.
 
 ## See Also
 
+### Response management
 - [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
-](askcenter/responses(for:).md)
+](./askcenter/responses%28for%29.md)
   Registers the topic type with the system and returns an asynchronous sequence of responses.
-- [struct CommunicationHandle](communicationhandle.md)
+- [struct CommunicationHandle](./communicationhandle.md)
   Contact information for identifying and communicating with a person.
-- [struct PermissionChoice](permissionchoice.md)
+- [struct PermissionChoice](./permissionchoice.md)
   A class that uniquely identifies a specific, statically defined permission choice.
-- [class CommunicationLimits](communicationlimits.md)
+- [class CommunicationLimits](./communicationlimits.md)
   A type that encapsulates the communication limits for your app.
 
 

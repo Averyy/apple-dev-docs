@@ -1,7 +1,8 @@
 # jointTransforms
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current transformation matrices for each joint in the skeleton hierarchy, in joint order.
 

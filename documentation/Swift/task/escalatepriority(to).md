@@ -1,7 +1,8 @@
 # escalatePriority(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Manually escalate the task `priority` of this task to the `newPriority`.
 
@@ -20,9 +21,13 @@ Manually escalate the task `priority` of this task to the `newPriority`.
 func escalatePriority(to newPriority: TaskPriority)
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 #### Discussion
 
-> ⚠️ **Warning**: This API should rarely be used, and instead you can rely on structured concurrency and implicit priority escalation which happens when a higher priority task awaits on a result of a lower priority task. I.e. using `await` on the target task usually is the correct way to escalate the target task to the current priority of the calling task, especially because in such setup if the waiting task gets escalated, the waited on task would be escalated automatically as well.
+> ⚠️ **Warning**: This API should rarely be used, and instead you can rely on structured concurrency and implicit priority escalation which happens when a higher priority task awaits on a result of a lower priority task.
+>
+> I.e. using `await` on the target task usually is the correct way to escalate the target task to the current priority of the calling task, especially because in such setup if the waiting task gets escalated, the waited on task would be escalated automatically as well.
 
 The concurrency runtime is free to interpret and handle escalation depending on platform characteristics.
 

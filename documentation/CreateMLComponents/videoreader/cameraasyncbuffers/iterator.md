@@ -1,7 +1,8 @@
 # VideoReader.CameraAsyncBuffers.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An async iterator of video frames.
 
@@ -21,17 +22,18 @@ final class Iterator
 ## Topics
 
 ### Getting the next element
-- [func next() async throws -> TemporalFeature<CIImage>?](videoreader/cameraasyncbuffers/iterator/next.md)
+- [func next() async throws -> TemporalFeature<CIImage>?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or nil if no next element exists.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> VideoReader.CameraAsyncBuffers.Iterator](videoreader/cameraasyncbuffers/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> VideoReader.CameraAsyncBuffers.Iterator](./makeasynciterator%28%29.md)
   Constructs an iterator.
 
 

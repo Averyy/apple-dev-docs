@@ -1,7 +1,8 @@
 # ClothSimulationEvents.BeforeUpdate
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event type that a cloth simulation publishes immediately before performing an update.
 
@@ -19,26 +20,27 @@ struct BeforeUpdate
 ## Topics
 
 ### Inspecting the update
-- [let simulationEntity: Entity](clothsimulationevents/beforeupdate/simulationentity.md)
+- [let simulationEntity: Entity](./beforeupdate/simulationentity.md)
   The entity that has the simulation component that this event originates from.
-- [let updateCount: UInt64](clothsimulationevents/beforeupdate/updatecount.md)
+- [let updateCount: UInt64](./beforeupdate/updatecount.md)
   The total number of updates in the simulation including the next update that immediately follows this event.
 ### Instance Properties
-- [let deltaTime: TimeInterval](clothsimulationevents/beforeupdate/deltatime.md)
+- [let deltaTime: TimeInterval](./beforeupdate/deltatime.md)
   The duration of the simulation update, in seconds, that this event represents.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ClothSimulationEvents.Start](clothsimulationevents/start.md)
+### Observing simulation events
+- [ClothSimulationEvents.Start](./start.md)
   An event type that a cloth simulation publishes immediately after it starts.
-- [ClothSimulationEvents.AfterUpdate](clothsimulationevents/afterupdate.md)
+- [ClothSimulationEvents.AfterUpdate](./afterupdate.md)
   An event type that a cloth simulation publishes immediately after performing an update.
 
 

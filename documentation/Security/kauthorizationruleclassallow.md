@@ -1,7 +1,8 @@
 # kAuthorizationRuleClassAllow
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates a delegate rule definition constant that always allows the specified right.
 
@@ -13,6 +14,10 @@ Indicates a delegate rule definition constant that always allows the specified r
 
 ```swift
 var kAuthorizationRuleClassAllow: String { get }
+```
+
+```c
+#define kAuthorizationRuleClassAllow
 ```
 
 

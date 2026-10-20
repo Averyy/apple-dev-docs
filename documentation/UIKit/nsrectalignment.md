@@ -1,7 +1,8 @@
 # NSRectAlignment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
 
@@ -19,53 +20,58 @@ Constants that specify alignment to an edge or a set of edges depending on the u
 enum NSRectAlignment
 ```
 
+```c
+enum NSRectAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Alignments
-- [NSRectAlignment.none](nsrectalignment/none.md)
+- [NSRectAlignment.none](./nsrectalignment/none.md)
   Has no specified alignment.
-- [NSRectAlignment.top](nsrectalignment/top.md)
+- [NSRectAlignment.top](./nsrectalignment/top.md)
   Aligns to the top edge.
-- [NSRectAlignment.topLeading](nsrectalignment/topleading.md)
+- [NSRectAlignment.topLeading](./nsrectalignment/topleading.md)
   Aligns to the top and leading edges.
-- [NSRectAlignment.leading](nsrectalignment/leading.md)
+- [NSRectAlignment.leading](./nsrectalignment/leading.md)
   Aligns to the leading edge.
-- [NSRectAlignment.bottomLeading](nsrectalignment/bottomleading.md)
+- [NSRectAlignment.bottomLeading](./nsrectalignment/bottomleading.md)
   Aligns to the bottom and leading edges.
-- [NSRectAlignment.bottom](nsrectalignment/bottom.md)
+- [NSRectAlignment.bottom](./nsrectalignment/bottom.md)
   Aligns to the bottom edge.
-- [NSRectAlignment.bottomTrailing](nsrectalignment/bottomtrailing.md)
+- [NSRectAlignment.bottomTrailing](./nsrectalignment/bottomtrailing.md)
   Aligns to the bottom and trailing edges.
-- [NSRectAlignment.trailing](nsrectalignment/trailing.md)
+- [NSRectAlignment.trailing](./nsrectalignment/trailing.md)
   Aligns to the trailing edge.
-- [NSRectAlignment.topTrailing](nsrectalignment/toptrailing.md)
+- [NSRectAlignment.topTrailing](./nsrectalignment/toptrailing.md)
   Aligns to the top and trailing edges.
 ### Initializers
-- [init?(rawValue: Int)](nsrectalignment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsrectalignment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UIOffset](uioffset.md)
+### Related types
+- [struct UIOffset](./uioffset.md)
   A structure that specifies an amount to offset a position.
-- [struct UIAxis](uiaxis.md)
+- [struct UIAxis](./uiaxis.md)
   A structure that specifies the layout axes.
-- [struct UIEdgeInsets](uiedgeinsets.md)
+- [struct UIEdgeInsets](./uiedgeinsets.md)
   The inset distances for views.
-- [struct NSDirectionalEdgeInsets](nsdirectionaledgeinsets.md)
+- [struct NSDirectionalEdgeInsets](./nsdirectionaledgeinsets.md)
   The inset distances for views, taking the user interface layout direction into account.
-- [struct NSDirectionalRectEdge](nsdirectionalrectedge.md)
+- [struct NSDirectionalRectEdge](./nsdirectionalrectedge.md)
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
-- [UIKit macros](uikit-macros.md)
+- [UIKit macros](./uikit-macros.md)
   Macros that UIKit defines.
 
 

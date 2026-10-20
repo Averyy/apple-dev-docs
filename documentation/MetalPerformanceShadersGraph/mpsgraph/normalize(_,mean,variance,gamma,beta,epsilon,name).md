@@ -1,7 +1,8 @@
 # normalize(_:mean:variance:gamma:beta:epsilon:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a batch normalization operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a batch normalization operation and returns the result tensor.
 
 ```swift
 func normalize(_ tensor: MPSGraphTensor, mean: MPSGraphTensor, variance: MPSGraphTensor, gamma: MPSGraphTensor?, beta: MPSGraphTensor?, epsilon: Float, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) normalizationWithTensor:(MPSGraphTensor *) tensor meanTensor:(MPSGraphTensor *) mean varianceTensor:(MPSGraphTensor *) variance gammaTensor:(MPSGraphTensor *) gamma betaTensor:(MPSGraphTensor *) beta epsilon:(float) epsilon name:(NSString *) name;
 ```
 
 #### Return Value

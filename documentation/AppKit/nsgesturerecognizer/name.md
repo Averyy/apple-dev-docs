@@ -1,7 +1,8 @@
 # name
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 26.0+
@@ -12,12 +13,17 @@
 var name: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
-- [var isCancellableByScrollGesture: Bool](nsgesturerecognizer/iscancellablebyscrollgesture.md)
+### Getting additional recognizer information
+- [var allowedTouchTypes: NSTouch.TouchTypeMask](./allowedtouchtypes.md)
+- [var isCancellableByScrollGesture: Bool](./iscancellablebyscrollgesture.md)
   Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
-- [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
+- [var modifierFlags: NSEvent.ModifierFlags](./modifierflags.md)
   The keyboard modifier flags in effect while the receiver last processed an event.
 
 

@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Orientation (rotation) of the bounding box
 

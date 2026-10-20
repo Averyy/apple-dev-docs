@@ -1,14 +1,15 @@
 # DOUBLE_COMPLEX_SPLIT
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef DSPDoubleSplitComplex DOUBLE_COMPLEX_SPLIT;
 ```
 

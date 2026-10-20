@@ -1,29 +1,31 @@
 # minorVersion
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The minor version number of the file format.
 
 ## See Also
 
-- [majorVersion](panorama_imaging_atom/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [imagingMode](panorama_imaging_atom/imagingmode.md)
+- [imagingMode](./imagingmode.md)
   The imaging mode to which the default values apply.
-- [imagingValidFlags](panorama_imaging_atom/imagingvalidflags.md)
+- [imagingValidFlags](./imagingvalidflags.md)
   A set of flags that indicate which imaging property fields in this structure are valid.
-- [correction](panorama_imaging_atom/correction.md)
+- [correction](./correction.md)
   The default correction mode for panoramic nodes.
-- [quality](panorama_imaging_atom/quality.md)
+- [quality](./quality.md)
   The default imaging quality for panoramic nodes.
-- [directDraw](panorama_imaging_atom/directdraw.md)
+- [directDraw](./directdraw.md)
   The default direct-drawing property for panoramic nodes.
-- [imagingProperties](panorama_imaging_atom/imagingproperties.md)
+- [imagingProperties](./imagingproperties.md)
   Reserved for future panorama-imaging properties.
-- [reserved1](panorama_imaging_atom/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
-- [reserved2](panorama_imaging_atom/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
 
 

@@ -1,12 +1,15 @@
 # NSXMLExternalRecordType
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies an XML file format.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.13
+
+> **Deprecated**: Spotlight integration is deprecated. Use CoreSpotlight integration instead.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ Specifies an XML file format.
 let NSXMLExternalRecordType: String
 ```
 
+```c
+extern NSString * const NSXMLExternalRecordType;
+```
+
 ## See Also
 
-- [let NSBinaryExternalRecordType: String](nsbinaryexternalrecordtype.md)
+### Deprecated constants
+- [let NSBinaryExternalRecordType: String](./nsbinaryexternalrecordtype.md)
   Specifies a binary file format
 
 

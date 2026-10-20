@@ -1,14 +1,15 @@
 # ExpressibleByArrayLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(arrayLiteral: Element...)](arrayslice/init(arrayliteral:).md)
+- [init(arrayLiteral: Element...)](./init%28arrayliteral%29.md)
   Creates an array from the given array literal.
 ### Type Aliases
-- [ArraySlice.ArrayLiteralElement](arrayslice/arrayliteralelement.md)
+- [ArraySlice.ArrayLiteralElement](./arrayliteralelement.md)
   The type of the elements of an array literal.
 
 

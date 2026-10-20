@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties that contain additional information about the activity.
 
@@ -19,9 +20,13 @@ Properties that contain additional information about the activity.
 var properties: [String : String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *,NSString *> * properties;
+```
+
 #### Discussion
 
-This takes precedence over [`defaultProperties`](gkgameactivitydefinition/defaultproperties.md) on the activity definition.
+This takes precedence over [`defaultProperties`](../gkgameactivitydefinition/defaultproperties.md) on the activity definition.
 
 1. The framework initializes this dictionary with the default properties from the activity definition and deep linked properties, if any.
 2. If deep linking contains the same key as the default properties, the deep linked value overrides the default value.

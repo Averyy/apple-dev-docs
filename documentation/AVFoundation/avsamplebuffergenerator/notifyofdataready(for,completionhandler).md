@@ -1,7 +1,8 @@
 # notifyOfDataReady(for:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Notifies the sample buffer generator when data is ready for the sample buffer reference or an error has occurred.
 
@@ -17,13 +18,21 @@ Notifies the sample buffer generator when data is ready for the sample buffer re
 ## Declaration
 
 ```swift
+class func notifyOfDataReady(for sbuf: CMSampleBuffer, completionHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 class func notifyOfDataReady(for sbuf: CMSampleBuffer) async throws
+```
+
+```objc
++ (void) notifyOfDataReadyForSampleBuffer:(CMSampleBufferRef) sbuf completionHandler:(void (^)(BOOL dataReady, NSError *error)) completionHandler;
 ```
 
 ## Parameters
 
 - `sbuf`: The `CMSampleBufferRef`.
-- `completionHandler`: A completion block that is called when data is ready for the sample buffer or an error occurs. The `dataReady` argument is [`true`](https://developer.apple.com/documentation/swift/true) if data is read for the sample buffer. If an error occurs, the `error` argument contains the `NSError` object.
+- `completionHandler`: A completion block that is called when data is ready for the sample buffer or an error occurs. The `dataReady` argument is [`true`](../../Swift/true.md) if data is read for the sample buffer. If an error occurs, the `error` argument contains the `NSError` object.
 
 
 ---

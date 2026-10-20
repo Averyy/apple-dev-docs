@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,20 +19,20 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMemoryDirectionIn](3852596-anonymous/kiomemorydirectionin.md)
-- [kIOMemoryDirectionIn](../driverkit/kiomemorydirectionin.md)
+- [kIOMemoryDirectionIn](./api-3852596-anonymous/kiomemorydirectionin.md)
+- [kIOMemoryDirectionIn](../DriverKit/kiomemorydirectionin.md)
   A buffer from which the current process reads. 
-- [kIOMemoryDirectionInOut](3852596-anonymous/kiomemorydirectioninout.md)
-- [kIOMemoryDirectionInOut](../driverkit/kiomemorydirectioninout.md)
+- [kIOMemoryDirectionInOut](./api-3852596-anonymous/kiomemorydirectioninout.md)
+- [kIOMemoryDirectionInOut](../DriverKit/kiomemorydirectioninout.md)
   A buffer that the current process reads and writes. 
-- [kIOMemoryDirectionNone](3852596-anonymous/kiomemorydirectionnone.md)
-- [kIOMemoryDirectionOut](3852596-anonymous/kiomemorydirectionout.md)
-- [kIOMemoryDirectionOut](../driverkit/kiomemorydirectionout.md)
+- [kIOMemoryDirectionNone](./api-3852596-anonymous/kiomemorydirectionnone.md)
+- [kIOMemoryDirectionOut](./api-3852596-anonymous/kiomemorydirectionout.md)
+- [kIOMemoryDirectionOut](../DriverKit/kiomemorydirectionout.md)
   A buffer to which the current process writes.  
-- [kIOMemoryDirectionOutIn](3852596-anonymous/kiomemorydirectionoutin.md)
-- [kIOMemoryDirectionOutIn](../driverkit/kiomemorydirectionoutin.md)
+- [kIOMemoryDirectionOutIn](./api-3852596-anonymous/kiomemorydirectionoutin.md)
+- [kIOMemoryDirectionOutIn](../DriverKit/kiomemorydirectionoutin.md)
   A buffer that the current process writes and reads.
-- [kIOMemoryDisableCopyOnWrite](3852596-anonymous/kiomemorydisablecopyonwrite.md)
+- [kIOMemoryDisableCopyOnWrite](./api-3852596-anonymous/kiomemorydisablecopyonwrite.md)
 
 
 ---

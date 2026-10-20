@@ -1,7 +1,8 @@
 # repeat(_:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a set of symbol effect options that repeats with a preferred behavior.
 

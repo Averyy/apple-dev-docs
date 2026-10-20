@@ -1,7 +1,8 @@
 # solo()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Silences all other groups.
 
@@ -19,21 +20,26 @@ Silences all other groups.
 func solo()
 ```
 
+```objc
+- (void) solo;
+```
+
 #### Discussion
 
 The engine silences all groups other than the group on which the app calls this function.
 
 ## See Also
 
-- [func mute()](phasegroup/mute.md)
+### Silencing Sounds
+- [func mute()](./mute%28%29.md)
   Silences the group.
-- [func unmute()](phasegroup/unmute.md)
+- [func unmute()](./unmute%28%29.md)
   Restores the group’s volume.
-- [var isMuted: Bool](phasegroup/ismuted.md)
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether the app silences the group.
-- [func unsolo()](phasegroup/unsolo.md)
+- [func unsolo()](./unsolo%28%29.md)
   Restores the other groups’ volume.
-- [var isSoloed: Bool](phasegroup/issoloed.md)
+- [var isSoloed: Bool](./issoloed.md)
   A Boolean value that indicates whether the app silences all groups other than this group.
 
 

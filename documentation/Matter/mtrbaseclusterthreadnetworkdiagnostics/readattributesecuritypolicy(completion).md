@@ -1,7 +1,8 @@
 # readAttributeSecurityPolicy(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSecurityPolicy(completion: @escaping @Sendable (MTRThreadNetworkDiagnosticsClusterSecurityPolicy?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSecurityPolicy() async throws -> MTRThreadNetworkDiagnosticsClusterSecurityPolicy
+```
+
+```objc
+- (void) readAttributeSecurityPolicyWithCompletion:(void (^)(MTRThreadNetworkDiagnosticsClusterSecurityPolicy *value, NSError *error)) completion;
 ```
 
 

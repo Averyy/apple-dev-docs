@@ -1,7 +1,8 @@
 # accuracyRanges
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var accuracyRanges: [Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * accuracyRanges;
 ```
 
 

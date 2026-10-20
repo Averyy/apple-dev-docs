@@ -1,7 +1,8 @@
 # SceneEvents.TrackingStateUpdate.State.untracked
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device anchor is untracked.
 

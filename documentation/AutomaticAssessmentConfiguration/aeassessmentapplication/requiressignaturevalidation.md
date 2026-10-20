@@ -1,7 +1,8 @@
 # requiresSignatureValidation
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the session requires the app to have a valid code signature to run.
 
@@ -13,6 +14,10 @@ A Boolean that indicates whether the session requires the app to have a valid co
 
 ```swift
 var requiresSignatureValidation: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL requiresSignatureValidation;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # isSidebarDestination
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the tab group itself can be selected as a destination in the sidebar.
 
@@ -15,6 +16,10 @@ Determines if the tab group itself can be selected as a destination in the sideb
 
 ```swift
 var isSidebarDestination: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL isSidebarDestination;
 ```
 
 #### Discussion

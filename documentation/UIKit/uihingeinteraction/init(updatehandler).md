@@ -1,7 +1,8 @@
 # init(updateHandler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new hinge interaction with the provided update handler.
 
@@ -16,6 +17,10 @@ Creates a new hinge interaction with the provided update handler.
 
 ```swift
 init(updateHandler: @escaping (UIHingeInteraction, UIHingeInteraction.Update) -> Void)
+```
+
+```objc
+- (instancetype) initWithUpdateHandler:(void (^)(UIHingeInteraction *, UIHingeInteractionUpdate *)) updateHandler;
 ```
 
 #### Discussion

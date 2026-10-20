@@ -1,7 +1,8 @@
 # AVC decoder configuration record
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A record that configures the AVC decoder.
 
@@ -11,9 +12,10 @@ An `AVCDecoderConfigurationRecord` for H.264 video, as defined in the MPEG-4 spe
 
 ## See Also
 
-- [Size](avc_decoder_configuration_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the AVC decoder configuration atom.
-- [Type](avc_decoder_configuration_atom/type.md)
+- [Type](./type.md)
   An unsigned 32-bit field.
 
 

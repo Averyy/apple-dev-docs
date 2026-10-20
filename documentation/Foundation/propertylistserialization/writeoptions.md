@@ -1,7 +1,8 @@
 # PropertyListSerialization.WriteOptions
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -18,11 +19,16 @@
 typealias WriteOptions = Int
 ```
 
+```c
+typedef NSUInteger NSPropertyListWriteOptions;
+```
+
 ## See Also
 
-- [class func data(fromPropertyList: Any, format: PropertyListSerialization.PropertyListFormat, options: PropertyListSerialization.WriteOptions) throws -> Data](propertylistserialization/data(frompropertylist:format:options:).md)
+### Serializing a Property List
+- [class func data(fromPropertyList: Any, format: PropertyListSerialization.PropertyListFormat, options: PropertyListSerialization.WriteOptions) throws -> Data](./data%28frompropertylist,format,options%29.md)
   Returns an `NSData` object containing a given property list in a specified format.
-- [class func writePropertyList(Any, to: OutputStream, format: PropertyListSerialization.PropertyListFormat, options: PropertyListSerialization.WriteOptions, error: NSErrorPointer) -> Int](propertylistserialization/writepropertylist(_:to:format:options:error:).md)
+- [class func writePropertyList(Any, to: OutputStream, format: PropertyListSerialization.PropertyListFormat, options: PropertyListSerialization.WriteOptions, error: NSErrorPointer) -> Int](./writepropertylist%28_,to,format,options,error%29.md)
   Writes a property list to the specified stream.
 
 

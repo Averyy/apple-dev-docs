@@ -1,7 +1,8 @@
 # selectedMediaPresentationSettings(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the media presentation settings that have most recently been selected for each AVMediaPresentationSelector of the AVCustomMediaSelectionScheme of the specified AVMediaSelectionGroup.
 
@@ -20,6 +21,10 @@ Indicates the media presentation settings that have most recently been selected 
 func selectedMediaPresentationSettings(for mediaSelectionGroup: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]
 ```
 
+```objc
+- (NSDictionary<AVMediaPresentationSelector *,id> *) selectedMediaPresentationSettingsForMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
+```
+
 #### Return Value
 
 A dictionary with AVMediaPresentationSelectors as keys and AVMediaPresentationSettings as values, providing the most recently selected setting for each selector or, if no setting has previously been selected, NSNull.
@@ -30,21 +35,22 @@ A dictionary with AVMediaPresentationSelectors as keys and AVMediaPresentationSe
 
 ## See Also
 
-- [func select(AVMediaPresentationSetting, for: AVMediaSelectionGroup)](avplayeritem/select(_:for:).md)
+### Selecting media options
+- [func select(AVMediaPresentationSetting, for: AVMediaSelectionGroup)](./select%28_,for%29.md)
   When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property is set to YES, configures the player item to prefer a particular presentation setting, replacing any previous preference for settings of the same media presentation selector.
-- [var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme]](avplayeritem/preferredcustommediaselectionschemes.md)
+- [var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme]](./preferredcustommediaselectionschemes.md)
   Indicates the AVCustomMediaSelectionSchemes of AVMediaSelectionGroups of the receiver’s asset with which an associated UI implementation should configure its interface for media selection.
-- [func effectiveMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](avplayeritem/effectivemediapresentationsettings(for:).md)
+- [func effectiveMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](./effectivemediapresentationsettings%28for%29.md)
   Indicates the media presentation settings with media characteristics that are possessed by the currently selected AVMediaSelectionOption in the specified AVMediaSelectionGroup.
-- [func selectMediaPresentationLanguage(String, for: AVMediaSelectionGroup)](avplayeritem/selectmediapresentationlanguage(_:for:).md)
+- [func selectMediaPresentationLanguage(String, for: AVMediaSelectionGroup)](./selectmediapresentationlanguage%28_,for%29.md)
   When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property is set to YES, configures the player item to prefer a particular language, replacing any previous preference for available languages of the specified group’s custom media selection scheme.
-- [func selectedMediaPresentationLanguage(for: AVMediaSelectionGroup) -> String?](avplayeritem/selectedmediapresentationlanguage(for:).md)
+- [func selectedMediaPresentationLanguage(for: AVMediaSelectionGroup) -> String?](./selectedmediapresentationlanguage%28for%29.md)
   Returns the selected media presentation language for the specified media selection group, if any language has previously been selected via use of -selectMediaPresentationLanguages:forMediaSelectionGroup:.
-- [var currentMediaSelection: AVMediaSelection](avplayeritem/currentmediaselection.md)
+- [var currentMediaSelection: AVMediaSelection](./currentmediaselection.md)
   The current media selections for each of the receiver’s media selection groups.
-- [func select(AVMediaSelectionOption?, in: AVMediaSelectionGroup)](avplayeritem/select(_:in:).md)
+- [func select(AVMediaSelectionOption?, in: AVMediaSelectionGroup)](./select%28_,in%29.md)
   Selects a media option in a given media selection group and deselects all other options in that group.
-- [func selectMediaOptionAutomatically(in: AVMediaSelectionGroup)](avplayeritem/selectmediaoptionautomatically(in:).md)
+- [func selectMediaOptionAutomatically(in: AVMediaSelectionGroup)](./selectmediaoptionautomatically%28in%29.md)
   Selects the media option in the specified media selection group that best matches the receiver’s automatic selection criteria.
 
 

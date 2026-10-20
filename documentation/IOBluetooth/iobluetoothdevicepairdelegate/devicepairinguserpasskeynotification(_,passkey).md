@@ -1,15 +1,20 @@
 # devicePairingUserPasskeyNotification(_:passkey:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func devicePairingUserPasskeyNotification(_ sender: Any!, passkey: BluetoothPasskey)
+```
+
+```objc
+- (void) devicePairingUserPasskeyNotification:(id) sender passkey:(BluetoothPasskey) passkey;
 ```
 
 

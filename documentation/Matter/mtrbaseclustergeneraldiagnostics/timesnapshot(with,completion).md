@@ -1,7 +1,8 @@
 # timeSnapshot(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command TimeSnapshot
 
@@ -17,7 +18,15 @@ Command TimeSnapshot
 ## Declaration
 
 ```swift
+func timeSnapshot(with params: MTRGeneralDiagnosticsClusterTimeSnapshotParams?, completion: @escaping @Sendable (MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func timeSnapshot(with params: MTRGeneralDiagnosticsClusterTimeSnapshotParams?) async throws -> MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams
+```
+
+```objc
+- (void) timeSnapshotWithParams:(MTRGeneralDiagnosticsClusterTimeSnapshotParams *) params completion:(void (^)(MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

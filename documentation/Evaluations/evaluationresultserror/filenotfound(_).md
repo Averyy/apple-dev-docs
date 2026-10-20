@@ -1,7 +1,8 @@
 # EvaluationResultsError.fileNotFound(_:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The specified file URL is not findable on disk.
 

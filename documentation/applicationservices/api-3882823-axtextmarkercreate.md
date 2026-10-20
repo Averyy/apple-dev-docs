@@ -1,7 +1,8 @@
 # AXTextMarkerCreate(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXTextMarkerCreate(_ allocator: CFAllocator?, _ bytes: UnsafePointer<UInt8>, _ length: CFIndex) -> AXTextMarker
+```
+
+```c
+AXTextMarkerRef AXTextMarkerCreate(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex length);
 ```
 
 

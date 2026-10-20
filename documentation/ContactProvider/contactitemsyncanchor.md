@@ -1,7 +1,8 @@
 # ContactItemSyncAnchor
 
 **Framework**: ContactProvider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A snapshot point into enumerating changed contact items.
 
@@ -22,26 +23,27 @@ You can break an enumeration of changes into batches with multiple anchors to re
 ## Topics
 
 ### Creating a sync anchor
-- [init(generationMarker: Data, offset: Int)](contactitemsyncanchor/init(generationmarker:offset:).md)
+- [init(generationMarker: Data, offset: Int)](./contactitemsyncanchor/init%28generationmarker,offset%29.md)
   Creates a sync anchor with the given generation marker and offset.
 ### Inspecting sync anchor properties
-- [var generationMarker: Data](contactitemsyncanchor/generationmarker.md)
+- [var generationMarker: Data](./contactitemsyncanchor/generationmarker.md)
   A value specific to your data source identifying the database generation you’re enumerating for changes.
-- [var offset: Int](contactitemsyncanchor/offset.md)
+- [var offset: Int](./contactitemsyncanchor/offset.md)
   An offset from the anchor’s generation marker.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func didFinishEnumeratingChanges(upTo: ContactItemSyncAnchor, moreComing: Bool)](contactitemchangeobserver/didfinishenumeratingchanges(upto:morecoming:).md)
+### Ending enumeration
+- [func didFinishEnumeratingChanges(upTo: ContactItemSyncAnchor, moreComing: Bool)](./contactitemchangeobserver/didfinishenumeratingchanges%28upto,morecoming%29.md)
   Marks a sync anchor of changed contact items as completed.
-- [func didFinishEnumeratingChangesWithError(any Error)](contactitemchangeobserver/didfinishenumeratingchangeswitherror(_:).md)
+- [func didFinishEnumeratingChangesWithError(any Error)](./contactitemchangeobserver/didfinishenumeratingchangeswitherror%28_%29.md)
   Finishes the change enumeration with an error, indicating failure, to the observer.
 
 

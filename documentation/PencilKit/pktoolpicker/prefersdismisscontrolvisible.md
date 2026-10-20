@@ -1,7 +1,8 @@
 # prefersDismissControlVisible
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If this is true the tool picker may show UI that allows dismissing it. If this is false the tool picker will not show this UI. By default this resigns first responder, but is customizable by `PKToolPickerDelegate`’s `toolPickerWillDismiss...` method.
 
@@ -12,6 +13,10 @@ If this is true the tool picker may show UI that allows dismissing it. If this i
 
 ```swift
 var prefersDismissControlVisible: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL prefersDismissControlVisible;
 ```
 
 #### Discussion

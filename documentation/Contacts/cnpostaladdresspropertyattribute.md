@@ -1,7 +1,8 @@
 # CNPostalAddressPropertyAttribute
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute that identifies the purpose of a range of characters in an attributed string.
 
@@ -19,17 +20,22 @@ An attribute that identifies the purpose of a range of characters in an attribut
 let CNPostalAddressPropertyAttribute: String
 ```
 
+```c
+extern NSString * const CNPostalAddressPropertyAttribute;
+```
+
 #### Discussion
 
-The value of this key is a string constant that specifies the meaning of the range of characters. For example, the value is [`CNPostalAddressCityKey`](cnpostaladdresscitykey.md) when the characters specify the city portion of the address.
+The value of this key is a string constant that specifies the meaning of the range of characters. For example, the value is [`CNPostalAddressCityKey`](./cnpostaladdresscitykey.md) when the characters specify the city portion of the address.
 
 ## See Also
 
-- [func attributedString(from: CNPostalAddress, withDefaultAttributes: [AnyHashable : Any]) -> NSAttributedString](cnpostaladdressformatter/attributedstring(from:withdefaultattributes:).md)
+### Generating a formatted attributed string
+- [func attributedString(from: CNPostalAddress, withDefaultAttributes: [AnyHashable : Any]) -> NSAttributedString](./cnpostaladdressformatter/attributedstring%28from,withdefaultattributes%29.md)
   Returns a formatted postal address as an attributed string.
-- [class func attributedString(from: CNPostalAddress, style: CNPostalAddressFormatterStyle, withDefaultAttributes: [AnyHashable : Any]) -> NSAttributedString](cnpostaladdressformatter/attributedstring(from:style:withdefaultattributes:).md)
+- [class func attributedString(from: CNPostalAddress, style: CNPostalAddressFormatterStyle, withDefaultAttributes: [AnyHashable : Any]) -> NSAttributedString](./cnpostaladdressformatter/attributedstring%28from,style,withdefaultattributes%29.md)
   Returns a postal address as an attributed string and formatted for the specified style.
-- [let CNPostalAddressLocalizedPropertyNameAttribute: String](cnpostaladdresslocalizedpropertynameattribute.md)
+- [let CNPostalAddressLocalizedPropertyNameAttribute: String](./cnpostaladdresslocalizedpropertynameattribute.md)
   An attribute that identifies the localized property of postal address.
 
 

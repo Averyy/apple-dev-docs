@@ -1,7 +1,8 @@
 # compare(_:to:toGranularity:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares two dates down to the specified component.
 
@@ -32,17 +33,18 @@ func compare(_ date1: Date, to date2: Date, toGranularity component: Calendar.Co
 
 ## See Also
 
-- [func isDate(Date, equalTo: Date, toGranularity: Calendar.Component) -> Bool](calendar/isdate(_:equalto:togranularity:).md)
+### Comparing Dates
+- [func isDate(Date, equalTo: Date, toGranularity: Calendar.Component) -> Bool](./isdate%28_,equalto,togranularity%29.md)
   Returns a Boolean value indicating whether two dates are equal down to the specified component.
-- [func isDate(Date, inSameDayAs: Date) -> Bool](calendar/isdate(_:insamedayas:).md)
+- [func isDate(Date, inSameDayAs: Date) -> Bool](./isdate%28_,insamedayas%29.md)
   Returns a Boolean value indicating whether a date is within the same day as another date.
-- [func isDateInToday(Date) -> Bool](calendar/isdateintoday(_:).md)
+- [func isDateInToday(Date) -> Bool](./isdateintoday%28_%29.md)
   Returns a Boolean value indicating whether the given date is within today.
-- [func isDateInTomorrow(Date) -> Bool](calendar/isdateintomorrow(_:).md)
+- [func isDateInTomorrow(Date) -> Bool](./isdateintomorrow%28_%29.md)
   Returns a Boolean value indicating whether the given date is within tomorrow.
-- [func isDateInYesterday(Date) -> Bool](calendar/isdateinyesterday(_:).md)
+- [func isDateInYesterday(Date) -> Bool](./isdateinyesterday%28_%29.md)
   Returns a Boolean value indicating whether the given date is within yesterday.
-- [func isDateInWeekend(Date) -> Bool](calendar/isdateinweekend(_:).md)
+- [func isDateInWeekend(Date) -> Bool](./isdateinweekend%28_%29.md)
   Returns a Boolean value indicating whether the given date is within a weekend period.
 
 

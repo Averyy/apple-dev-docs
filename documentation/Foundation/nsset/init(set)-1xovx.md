@@ -1,7 +1,8 @@
 # init(set:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated set and adds to it objects from another given set.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated set and adds to it objects from another given set.
 convenience init(set: Set<AnyHashable>)
 ```
 
+```objc
+- (instancetype) initWithSet:(NSSet<id> *) set;
+```
+
 #### Return Value
 
 An initialized objects set containing the objects from `set`. The returned set might be different than the original receiver.
@@ -30,13 +35,14 @@ An initialized objects set containing the objects from `set`. The returned set m
 
 ## See Also
 
-- [convenience init(array: [Any])](nsset/init(array:).md)
+### Initializing a Set
+- [convenience init(array: [Any])](./init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
-- [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsset/init(objects:count:)-7kift.md)
+- [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-7kift.md)
   Initializes a newly allocated set with a specified number of objects from a given C array of objects.
-- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](nsset/init(set:copyitems:).md)
+- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](./init%28set,copyitems%29.md)
   Initializes a newly allocated set and adds to it members of another given set.
-- [init()](nsset/init.md)
+- [init()](./init%28%29.md)
   Initializes a newly allocated set.
 
 

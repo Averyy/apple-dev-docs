@@ -1,7 +1,8 @@
 # symbolTintColor
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbolTintColor to apply to the label.
 
@@ -14,6 +15,10 @@ The symbolTintColor to apply to the label.
 
 ```swift
 var symbolTintColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIColor * symbolTintColor;
 ```
 
 #### Discussion

@@ -1,14 +1,15 @@
 # sf_getsockname
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 sf_getsockname_func sf_getsockname;
 ```
 

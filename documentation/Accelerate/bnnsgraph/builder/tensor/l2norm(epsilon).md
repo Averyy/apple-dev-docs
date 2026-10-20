@@ -1,7 +1,8 @@
 # l2Norm(epsilon:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an L2 spatial normalization operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an L2 spatial normalization operation to the current graph.
 ```swift
 func l2Norm(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

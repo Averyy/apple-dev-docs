@@ -1,7 +1,8 @@
 # init(idType:point:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new scroll position to be scrolled to the provided point.
 

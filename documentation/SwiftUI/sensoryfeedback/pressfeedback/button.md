@@ -1,7 +1,8 @@
 # button
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a button has been pressed (touch down).
 

@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bounding region of the scene to which light probes are being added.
@@ -20,15 +21,20 @@ The bounding region of the scene to which light probes are being added.
 var boundingBox: MDLAxisAlignedBoundingBox { get set }
 ```
 
+```objc
+@property MDLAxisAlignedBoundingBox boundingBox;
+```
+
 #### Discussion
 
-When you call the [`MDLAsset`](mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](mdlasset/placelightprobes(withdensity:heuristic:using:).md) method to automatically distribute light probes in a scene, Model I/O reads this property to ask your code which regions should be evaluated for light probe placement.
+When you call the [`MDLAsset`](../mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](../mdlasset/placelightprobes%28withdensity,heuristic,using%29.md) method to automatically distribute light probes in a scene, Model I/O reads this property to ask your code which regions should be evaluated for light probe placement.
 
 ## See Also
 
-- [var sphericalHarmonicsLevel: Int](mdllightprobeirradiancedatasource/sphericalharmonicslevel.md)
+### Providing Light Probe Information
+- [var sphericalHarmonicsLevel: Int](./sphericalharmonicslevel.md)
   The number of levels of spherical harmonics information provided by the data source.
-- [func sphericalHarmonicsCoefficients(atPosition: vector_float3) -> Data](mdllightprobeirradiancedatasource/sphericalharmonicscoefficients(atposition:).md)
+- [func sphericalHarmonicsCoefficients(atPosition: vector_float3) -> Data](./sphericalharmonicscoefficients%28atposition%29.md)
   Asks the data source to provide spherical harmonics coefficients that describe lighting conditions in all directions from the specified point in a scene.
 
 

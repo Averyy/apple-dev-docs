@@ -1,7 +1,8 @@
 # mouthSmileLeft
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The coefficient describing upward movement of the left corner of the mouth.
 
@@ -15,43 +16,48 @@ The coefficient describing upward movement of the left corner of the mouth.
 static let mouthSmileLeft: ARFaceAnchor.BlendShapeLocation
 ```
 
+```c
+extern ARBlendShapeLocation const ARBlendShapeLocationMouthSmileLeft;
+```
+
 #### Discussion
 
-The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
+The figure below shows a face geometry (see [`ARSCNFaceGeometry`](../../arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](../blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](/images/com.apple.arkit/media-2930071@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2930071@2x.png)
 
 ## See Also
 
-- [static let jawForward: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/jawforward.md)
+### Mouth and Jaw
+- [static let jawForward: ARFaceAnchor.BlendShapeLocation](./jawforward.md)
   The coefficient describing forward movement of the lower jaw.
-- [static let jawLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/jawleft.md)
+- [static let jawLeft: ARFaceAnchor.BlendShapeLocation](./jawleft.md)
   The coefficient describing leftward movement of the lower jaw.
-- [static let jawRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/jawright.md)
+- [static let jawRight: ARFaceAnchor.BlendShapeLocation](./jawright.md)
   The coefficient describing rightward movement of the lower jaw.
-- [static let jawOpen: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/jawopen.md)
+- [static let jawOpen: ARFaceAnchor.BlendShapeLocation](./jawopen.md)
   The coefficient describing an opening of the lower jaw.
-- [static let mouthClose: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthclose.md)
+- [static let mouthClose: ARFaceAnchor.BlendShapeLocation](./mouthclose.md)
   The coefficient describing closure of the lips *independent of jaw position*.
-- [static let mouthFunnel: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthfunnel.md)
+- [static let mouthFunnel: ARFaceAnchor.BlendShapeLocation](./mouthfunnel.md)
   The coefficient describing contraction of both lips into an open shape.
-- [static let mouthPucker: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthpucker.md)
+- [static let mouthPucker: ARFaceAnchor.BlendShapeLocation](./mouthpucker.md)
   The coefficient describing contraction and compression of both closed lips.
-- [static let mouthLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthleft.md)
+- [static let mouthLeft: ARFaceAnchor.BlendShapeLocation](./mouthleft.md)
   The coefficient describing leftward movement of both lips together.
-- [static let mouthRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthright.md)
+- [static let mouthRight: ARFaceAnchor.BlendShapeLocation](./mouthright.md)
   The coefficient describing rightward movement of both lips together.
-- [static let mouthSmileRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthsmileright.md)
+- [static let mouthSmileRight: ARFaceAnchor.BlendShapeLocation](./mouthsmileright.md)
   The coefficient describing upward movement of the right corner of the mouth.
-- [static let mouthFrownLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthfrownleft.md)
+- [static let mouthFrownLeft: ARFaceAnchor.BlendShapeLocation](./mouthfrownleft.md)
   The coefficient describing downward movement of the left corner of the mouth.
-- [static let mouthFrownRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthfrownright.md)
+- [static let mouthFrownRight: ARFaceAnchor.BlendShapeLocation](./mouthfrownright.md)
   The coefficient describing downward movement of the right corner of the mouth.
-- [static let mouthDimpleLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthdimpleleft.md)
+- [static let mouthDimpleLeft: ARFaceAnchor.BlendShapeLocation](./mouthdimpleleft.md)
   The coefficient describing backward movement of the left corner of the mouth.
-- [static let mouthDimpleRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthdimpleright.md)
+- [static let mouthDimpleRight: ARFaceAnchor.BlendShapeLocation](./mouthdimpleright.md)
   The coefficient describing backward movement of the right corner of the mouth.
-- [static let mouthStretchLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthstretchleft.md)
+- [static let mouthStretchLeft: ARFaceAnchor.BlendShapeLocation](./mouthstretchleft.md)
   The coefficient describing leftward movement of the left corner of the mouth.
 
 

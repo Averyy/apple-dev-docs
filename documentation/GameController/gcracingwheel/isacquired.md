@@ -1,7 +1,8 @@
 # isAcquired
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the racing wheel sends events to the app.
 
@@ -15,11 +16,16 @@ A Boolean value that indicates whether the racing wheel sends events to the app.
 var isAcquired: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isAcquired) BOOL acquired;
+```
+
 ## See Also
 
-- [func acquireDevice() throws](gcracingwheel/acquiredevice.md)
+### Getting events
+- [func acquireDevice() throws](./acquiredevice%28%29.md)
   Starts receiving events from the racing wheel.
-- [func relinquishDevice()](gcracingwheel/relinquishdevice.md)
+- [func relinquishDevice()](./relinquishdevice%28%29.md)
   Stops receiving events from the racing wheel.
 
 

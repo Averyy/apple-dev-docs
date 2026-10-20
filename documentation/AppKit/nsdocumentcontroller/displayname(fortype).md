@@ -1,17 +1,22 @@
 # displayName(forType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the descriptive name for the specified document type, which is used in the File Format pop-up menu of the Save As dialog.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func displayName(forType typeName: String) -> String?
+```
+
+```objc
+- (NSString *) displayNameForType:(NSString *) typeName;
 ```
 
 #### Return Value
@@ -47,13 +52,14 @@ BinaryFile = "Binary file format";
 
 ## See Also
 
-- [var documentClassNames: [String]](nsdocumentcontroller/documentclassnames.md)
+### Managing Document Types
+- [var documentClassNames: [String]](./documentclassnames.md)
   An array of strings representing the custom document classes supported by this app.
-- [var defaultType: String?](nsdocumentcontroller/defaulttype.md)
+- [var defaultType: String?](./defaulttype.md)
   Returns the name of the document type that should be used when creating new documents.
-- [func documentClass(forType: String) -> AnyClass?](nsdocumentcontroller/documentclass(fortype:).md)
+- [func documentClass(forType: String) -> AnyClass?](./documentclass%28fortype%29.md)
   Returns the `NSDocument` subclass associated with a given document type.
-- [func typeForContents(of: URL) throws -> String](nsdocumentcontroller/typeforcontents(of:).md)
+- [func typeForContents(of: URL) throws -> String](./typeforcontents%28of%29.md)
   Returns, for a specified URL, the document type identifier to use when opening the document at that location, if successful.
 
 

@@ -1,7 +1,8 @@
 # background
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background for the environment.
 
@@ -20,7 +21,8 @@ var background: ARView.Environment.Background
 
 ## See Also
 
-- [ARView.Environment.Background](arview/environment-swift.struct/background-swift.struct.md)
+### Setting a background
+- [ARView.Environment.Background](./background-swift.struct.md)
   Content that appears as the background of the scene.
 
 

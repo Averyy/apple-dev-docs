@@ -1,7 +1,8 @@
 # validUntil
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Expiration date for the contained capabilities.
 

@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.czechia
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Czech Republic in the HID specification.
 

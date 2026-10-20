@@ -1,7 +1,8 @@
 # Location.Address
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The postal address of a brand location.
 
@@ -10,7 +11,7 @@ The postal address of a brand location.
 
 ## Declaration
 
-```swift
+```
 object Location.Address
 ```
 

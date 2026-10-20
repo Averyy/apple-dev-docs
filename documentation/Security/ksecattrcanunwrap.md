@@ -1,7 +1,8 @@
 # kSecAttrCanUnwrap
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean that indicates whether the cryptographic key can be used for unwrapping.
 
@@ -20,11 +21,15 @@ A key whose value is a Boolean that indicates whether the cryptographic key can 
 let kSecAttrCanUnwrap: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrCanUnwrap;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and indicates whether this cryptographic key can be used to unwrap another key.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to unwrap another key.
 
-On key creation, if not explicitly specified, this attribute defaults to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) for private keys and [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) for public keys.
+On key creation, if not explicitly specified, this attribute defaults to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) for private keys and [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) for public keys.
 
 
 ---

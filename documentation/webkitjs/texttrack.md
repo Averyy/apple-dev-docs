@@ -1,7 +1,8 @@
 # TextTrack
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,29 +10,29 @@
 
 ## Declaration
 
-```swift
+```
 interface TextTrack
 ```
 
 ## Topics
 
 ### Instance Properties
-- [activeCues](texttrack/1631168-activecues.md)
-- [cues](texttrack/1631831-cues.md)
-- [id](texttrack/1634121-id.md)
-- [inBandMetadataTrackDispatchType](texttrack/1633277-inbandmetadatatrackdispatchtype.md)
-- [kind](texttrack/1629327-kind.md)
-- [label](texttrack/1634304-label.md)
-- [language](texttrack/1634112-language.md)
-- [mode](texttrack/1631462-mode.md)
-- [oncuechange](texttrack/1630886-oncuechange.md)
-- [regions](texttrack/1630088-regions.md)
-- [sourceBuffer](texttrack/1633325-sourcebuffer.md)
+- [activeCues](./texttrack/api-1631168-activecues.md)
+- [cues](./texttrack/api-1631831-cues.md)
+- [id](./texttrack/api-1634121-id.md)
+- [inBandMetadataTrackDispatchType](./texttrack/api-1633277-inbandmetadatatrackdispatchtype.md)
+- [kind](./texttrack/api-1629327-kind.md)
+- [label](./texttrack/api-1634304-label.md)
+- [language](./texttrack/api-1634112-language.md)
+- [mode](./texttrack/api-1631462-mode.md)
+- [oncuechange](./texttrack/api-1630886-oncuechange.md)
+- [regions](./texttrack/api-1630088-regions.md)
+- [sourceBuffer](./texttrack/api-1633325-sourcebuffer.md)
 ### Instance Methods
-- [addCue](texttrack/1634149-addcue.md)
-- [addRegion](texttrack/1633861-addregion.md)
-- [removeCue](texttrack/1630532-removecue.md)
-- [removeRegion](texttrack/1630661-removeregion.md)
+- [addCue](./texttrack/api-1634149-addcue.md)
+- [addRegion](./texttrack/api-1633861-addregion.md)
+- [removeCue](./texttrack/api-1630532-removecue.md)
+- [removeRegion](./texttrack/api-1630661-removeregion.md)
 
 ## Relationships
 

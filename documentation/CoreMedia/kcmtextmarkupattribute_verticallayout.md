@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_VerticalLayout
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The vertical layout of a text block.
 
@@ -20,27 +21,32 @@ The vertical layout of a text block.
 let kCMTextMarkupAttribute_VerticalLayout: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_VerticalLayout;
+```
+
 #### Discussion
 
-Specifying this attribute indicates that the writing direction is vertical instead of horizontal. You can set the associated value to [`kCMTextVerticalLayout_LeftToRight`](kcmtextverticallayout_lefttoright.md) or [`kCMTextVerticalLayout_RightToLeft`](kcmtextverticallayout_righttoleft.md) to indicate the progression direction for new vertical lines of text.
+Specifying this attribute indicates that the writing direction is vertical instead of horizontal. You can set the associated value to [`kCMTextVerticalLayout_LeftToRight`](./kcmtextverticallayout_lefttoright.md) or [`kCMTextVerticalLayout_RightToLeft`](./kcmtextverticallayout_righttoleft.md) to indicate the progression direction for new vertical lines of text.
 
 ## Topics
 
 ### Layouts
-- [let kCMTextVerticalLayout_LeftToRight: CFString](kcmtextverticallayout_lefttoright.md)
+- [let kCMTextVerticalLayout_LeftToRight: CFString](./kcmtextverticallayout_lefttoright.md)
   Add new vertical lines from left to right.
-- [let kCMTextVerticalLayout_RightToLeft: CFString](kcmtextverticallayout_righttoleft.md)
+- [let kCMTextVerticalLayout_RightToLeft: CFString](./kcmtextverticallayout_righttoleft.md)
   Add new vertical lines from right to left.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_Alignment: CFString](kcmtextmarkupattribute_alignment.md)
+### Layout
+- [let kCMTextMarkupAttribute_Alignment: CFString](./kcmtextmarkupattribute_alignment.md)
   The text alignment in the writing direction of the first line of text.
-- [let kCMTextMarkupAttribute_TextPositionPercentageRelativeToWritingDirection: CFString](kcmtextmarkupattribute_textpositionpercentagerelativetowritingdirection.md)
+- [let kCMTextMarkupAttribute_TextPositionPercentageRelativeToWritingDirection: CFString](./kcmtextmarkupattribute_textpositionpercentagerelativetowritingdirection.md)
   The placement of the block of text as a percentage in the writing direction.
-- [let kCMTextMarkupAttribute_OrthogonalLinePositionPercentageRelativeToWritingDirection: CFString](kcmtextmarkupattribute_orthogonallinepositionpercentagerelativetowritingdirection.md)
+- [let kCMTextMarkupAttribute_OrthogonalLinePositionPercentageRelativeToWritingDirection: CFString](./kcmtextmarkupattribute_orthogonallinepositionpercentagerelativetowritingdirection.md)
   The placement of the first line in a block of text as a percentage in the direction orthogonal to the writing direction.
-- [let kCMTextMarkupAttribute_WritingDirectionSizePercentage: CFString](kcmtextmarkupattribute_writingdirectionsizepercentage.md)
+- [let kCMTextMarkupAttribute_WritingDirectionSizePercentage: CFString](./kcmtextmarkupattribute_writingdirectionsizepercentage.md)
   The width or height as a percentage of the bounding box that contains the text.
 
 

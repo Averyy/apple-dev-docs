@@ -1,7 +1,8 @@
 # canProvideSampleCursors
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the track can provide instances of sample cursors to traverse its media samples and discover information.
 
@@ -19,6 +20,8 @@ A Boolean value that indicates whether the track can provide instances of sample
 ```swift
 static var canProvideSampleCursors: AVAsyncProperty<Root, Bool> { get }
 ```
+
+Available when `Root` inherits `AVAssetTrack`.
 
 
 ---

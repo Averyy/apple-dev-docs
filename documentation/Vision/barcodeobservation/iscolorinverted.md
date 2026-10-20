@@ -1,7 +1,8 @@
 # isColorInverted
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the barcode is color inverted.
 
@@ -22,9 +23,10 @@ let isColorInverted: Bool
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let isGS1DataCarrier: Bool](barcodeobservation/isgs1datacarrier.md)
+- [let isGS1DataCarrier: Bool](./isgs1datacarrier.md)
   A Boolean value that indicates whether the barcode carries any global standards data.
 
 

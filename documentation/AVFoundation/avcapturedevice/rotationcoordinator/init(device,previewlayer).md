@@ -1,7 +1,8 @@
 # init(device:previewLayer:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a coordinator that provides separate compensation angles for content your app takes with a capture device, and for your app’s camera preview.
 
@@ -18,10 +19,14 @@ Creates a coordinator that provides separate compensation angles for content you
 init(device: AVCaptureDevice, previewLayer: CALayer?)
 ```
 
+```objc
+- (instancetype) initWithDevice:(AVCaptureDevice *) device previewLayer:(CALayer *) previewLayer;
+```
+
 ## Parameters
 
-- `device`: A capture device the new coordinator monitors to track its physical rotation to calculate its [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) property.
-- `previewLayer`: A layer that displays a camera preview the new coordinator monitors to calculate its [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) property.
+- `device`: A capture device the new coordinator monitors to track its physical rotation to calculate its [`videoRotationAngleForHorizonLevelCapture`](./videorotationangleforhorizonlevelcapture.md) property.
+- `previewLayer`: A layer that displays a camera preview the new coordinator monitors to calculate its [`videoRotationAngleForHorizonLevelPreview`](./videorotationangleforhorizonlevelpreview.md) property.
 
 
 ---

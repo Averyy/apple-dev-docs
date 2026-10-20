@@ -1,7 +1,8 @@
 # removeAllocations(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stages multiple resources to leave the residency set’s list of allocations.
 
@@ -11,7 +12,7 @@ Stages multiple resources to leave the residency set’s list of allocations.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ func removeAllocations(_ allocations: [any MTLAllocation])
 
 #### Discussion
 
-Finalize the removal of these resource allocations, and all other changes you stage, by calling a residency set’s [`commit()`](mtlresidencyset/commit().md) method.
+Finalize the removal of these resource allocations, and all other changes you stage, by calling a residency set’s [`commit()`](./commit%28%29.md) method.
 
 ## Parameters
 
-- `allocations`: An array of resource allocations, whose elements can be an arbitrarily mix of [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
+- `allocations`: An array of resource allocations, whose elements can be an arbitrarily mix of [`MTLBuffer`](../mtlbuffer.md), [`MTLTexture`](../mtltexture.md), and [`MTLHeap`](../mtlheap.md) instances.
 
 ## See Also
 
-- [func removeAllAllocations()](mtlresidencyset/removeallallocations.md)
+### Removing allocations
+- [func removeAllAllocations()](./removeallallocations%28%29.md)
   Stages all the resources in the residency set to leave its list of allocations.
-- [func removeAllocation(any MTLAllocation)](mtlresidencyset/removeallocation(_:).md)
+- [func removeAllocation(any MTLAllocation)](./removeallocation%28_%29.md)
   Stages a single resource to leave the residency set’s list of allocations.
 
 

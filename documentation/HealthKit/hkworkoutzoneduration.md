@@ -1,7 +1,8 @@
 # HKWorkoutZoneDuration
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the time spent in a specific zone during a workout or activity.
 
@@ -26,30 +27,31 @@ This structure pairs a zone with the duration of time the person spent in that z
 ## Topics
 
 ### Accessing duration properties
-- [let zone: HKWorkoutZone](hkworkoutzoneduration/zone.md)
+- [let zone: HKWorkoutZone](./hkworkoutzoneduration/zone.md)
   A property that identifies the workout zone.
-- [let duration: TimeInterval](hkworkoutzoneduration/duration.md)
+- [let duration: TimeInterval](./hkworkoutzoneduration/duration.md)
   A property that specifies the time spent in this zone, measured in seconds.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Tracking heart rate zones for workouts](tracking-heart-rate-zones-for-workouts.md)
+### Workout zones
+- [Tracking heart rate zones for workouts](./tracking-heart-rate-zones-for-workouts.md)
   Start a workout on iOS or watchOS and track and display heart rate zones.
-- [Accessing workout zone data](accessing-workout-zone-data.md)
+- [Accessing workout zone data](./accessing-workout-zone-data.md)
   Provide training insights to people on your app using workout zone data.
-- [struct HKWorkoutZone](hkworkoutzone.md)
+- [struct HKWorkoutZone](./hkworkoutzone.md)
   A structure that represents a single zone with defined thresholds for a quantity type.
-- [struct HKWorkoutZoneConfiguration](hkworkoutzoneconfiguration.md)
+- [struct HKWorkoutZoneConfiguration](./hkworkoutzoneconfiguration.md)
   A structure that defines a complete set of zones for a quantity type.
-- [struct HKWorkoutZoneGroup](hkworkoutzonegroup.md)
+- [struct HKWorkoutZoneGroup](./hkworkoutzonegroup.md)
   A structure that contains zone configuration and time-in-zone data for a quantity type.
-- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+- [class HKLiveWorkoutZoneUpdate](./hkliveworkoutzoneupdate.md)
   A structure that contains information about zone transitions during a live workout session.
 
 

@@ -1,7 +1,8 @@
 # HMCameraStreamControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that can start and stop the camera stream and contains the view into which the stream is rendered.
 
@@ -19,46 +20,51 @@ An object that can start and stop the camera stream and contains the view into w
 class HMCameraStreamControl
 ```
 
+```objc
+@interface HMCameraStreamControl : HMCameraControl
+```
+
 ## Topics
 
 ### Controlling the stream
-- [func startStream()](hmcamerastreamcontrol/startstream.md)
+- [func startStream()](./hmcamerastreamcontrol/startstream%28%29.md)
   Starts the camera stream.
-- [func stopStream()](hmcamerastreamcontrol/stopstream.md)
+- [func stopStream()](./hmcamerastreamcontrol/stopstream%28%29.md)
   Stops the camera stream.
-- [var cameraStream: HMCameraStream?](hmcamerastreamcontrol/camerastream.md)
+- [var cameraStream: HMCameraStream?](./hmcamerastreamcontrol/camerastream.md)
   The current camera stream.
-- [class HMCameraStream](hmcamerastream.md)
+- [class HMCameraStream](./hmcamerastream.md)
   An object that represents a camera’s audiovisual stream.
-- [var streamState: HMCameraStreamState](hmcamerastreamcontrol/streamstate.md)
+- [var streamState: HMCameraStreamState](./hmcamerastreamcontrol/streamstate.md)
   The current state of the camera stream.
-- [enum HMCameraStreamState](hmcamerastreamstate.md)
+- [enum HMCameraStreamState](./hmcamerastreamstate.md)
   The states associated with a camera stream.
 ### Observing stream activity
-- [var delegate: (any HMCameraStreamControlDelegate)?](hmcamerastreamcontrol/delegate.md)
+- [var delegate: (any HMCameraStreamControlDelegate)?](./hmcamerastreamcontrol/delegate.md)
   Delegate that receives updates as the camera stream changes.
-- [protocol HMCameraStreamControlDelegate](hmcamerastreamcontroldelegate.md)
+- [protocol HMCameraStreamControlDelegate](./hmcamerastreamcontroldelegate.md)
   A protocol that gives the delegate updates on the camera stream.
 ### Initializers
-- [init()](hmcamerastreamcontrol/init.md)
+- [init()](./hmcamerastreamcontrol/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HMCameraControl](hmcameracontrol.md)
+- [HMCameraControl](./hmcameracontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var streamControl: HMCameraStreamControl?](hmcameraprofile/streamcontrol.md)
+### Streaming
+- [var streamControl: HMCameraStreamControl?](./hmcameraprofile/streamcontrol.md)
   Controls the camera stream.
 
 

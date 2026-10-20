@@ -1,7 +1,8 @@
 # strokePath(_:in:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a line along the specified path.
 
@@ -19,9 +20,13 @@ Draws a line along the specified path.
 func strokePath(_ path: CGPath, in context: CGContext)
 ```
 
+```objc
+- (void) strokePath:(CGPathRef) path inContext:(CGContextRef) context;
+```
+
 #### Discussion
 
-You must set the current stroke color before calling this method. Typically you do this by calling the [`applyStrokeProperties(to:atZoomScale:)`](mkoverlaypathrenderer/applystrokeproperties(to:atzoomscale:).md) method prior to drawing. If the [`strokeColor`](mkoverlaypathrenderer/strokecolor.md) property is currently `nil`, this method does nothing.
+You must set the current stroke color before calling this method. Typically you do this by calling the [`applyStrokeProperties(to:atZoomScale:)`](./applystrokeproperties%28to,atzoomscale%29.md) method prior to drawing. If the [`strokeColor`](./strokecolor.md) property is currently `nil`, this method does nothing.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ You must set the current stroke color before calling this method. Typically you 
 
 ## See Also
 
-- [func applyStrokeProperties(to: CGContext, atZoomScale: MKZoomScale)](mkoverlaypathrenderer/applystrokeproperties(to:atzoomscale:).md)
+### Drawing the path
+- [func applyStrokeProperties(to: CGContext, atZoomScale: MKZoomScale)](./applystrokeproperties%28to,atzoomscale%29.md)
   Applies the renderer’s stroke-related drawing properties to the specified graphics context.
-- [func applyFillProperties(to: CGContext, atZoomScale: MKZoomScale)](mkoverlaypathrenderer/applyfillproperties(to:atzoomscale:).md)
+- [func applyFillProperties(to: CGContext, atZoomScale: MKZoomScale)](./applyfillproperties%28to,atzoomscale%29.md)
   Applies the receiver’s fill-related drawing properties to the specified graphics context.
-- [func fillPath(CGPath, in: CGContext)](mkoverlaypathrenderer/fillpath(_:in:).md)
+- [func fillPath(CGPath, in: CGContext)](./fillpath%28_,in%29.md)
   Fills the area that the specified path encloses.
-- [var shouldRasterize: Bool](mkoverlaypathrenderer/shouldrasterize.md)
+- [var shouldRasterize: Bool](./shouldrasterize.md)
   A Boolean value that determines whether the overlay path renderer renders the overlay as a bitmap before compositing.
 
 

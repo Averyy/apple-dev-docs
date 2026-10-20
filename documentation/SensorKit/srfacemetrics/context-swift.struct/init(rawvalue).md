@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SensorKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new structure with the specified value.
 

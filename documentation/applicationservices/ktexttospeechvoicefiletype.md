@@ -1,7 +1,8 @@
 # kTextToSpeechVoiceFileType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The type of a voice file. Typically. files containing a single voice are of type `kTextToSpeechVoiceFileType`.
 

@@ -1,17 +1,22 @@
 # selectedCell()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the receiver’s selected cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func selectedCell() -> NSCell?
+```
+
+```objc
+- (NSCell *) selectedCell;
 ```
 
 #### Return Value
@@ -24,23 +29,25 @@ The default implementation of this method simply returns the control’s associa
 
 ## See Also
 
-- [var cell: NSCell?](nscontrol/cell.md)
+### Related Documentation
+- [var cell: NSCell?](./cell.md)
   The receiver’s cell object.
-- [func selectedTag() -> Int](nscontrol/selectedtag.md)
+### Deprecated methods
+- [func selectedTag() -> Int](./selectedtag%28%29.md)
   Returns the tag of the receiver’s selected cell.
-- [func setNeedsDisplay()](nscontrol/setneedsdisplay.md)
+- [func setNeedsDisplay()](./setneedsdisplay%28%29.md)
   Marks the receiver as needing redisplay (assuming automatic display is enabled).
-- [func calcSize()](nscontrol/calcsize.md)
+- [func calcSize()](./calcsize%28%29.md)
   Recomputes any internal sizing information for the receiver, if necessary.
-- [func selectCell(NSCell)](nscontrol/selectcell(_:).md)
+- [func selectCell(NSCell)](./selectcell%28_%29.md)
   Selects the specified cell and redraws the control as needed.
-- [func drawCell(NSCell)](nscontrol/drawcell(_:).md)
+- [func drawCell(NSCell)](./drawcell%28_%29.md)
   Draws the specified cell, as long as it belongs to the receiver.
-- [func drawCellInside(NSCell)](nscontrol/drawcellinside(_:).md)
+- [func drawCellInside(NSCell)](./drawcellinside%28_%29.md)
   Draws the inside of the receiver’s cell (the area within the bezel or border)
-- [func updateCell(NSCell)](nscontrol/updatecell(_:).md)
+- [func updateCell(NSCell)](./updatecell%28_%29.md)
   Marks the specified cell as in need of redrawing.
-- [func updateCellInside(NSCell)](nscontrol/updatecellinside(_:).md)
+- [func updateCellInside(NSCell)](./updatecellinside%28_%29.md)
   Marks the inside of the specified cell as in need of redrawing.
 
 

@@ -1,14 +1,15 @@
 # kSENSE_KEY_VOLUME_OVERFLOW
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_KEY_VOLUME_OVERFLOW = 0x0D
 ```
 

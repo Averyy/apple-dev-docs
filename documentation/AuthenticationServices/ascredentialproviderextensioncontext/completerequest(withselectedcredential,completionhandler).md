@@ -1,7 +1,8 @@
 # completeRequest(withSelectedCredential:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the user-selected credential.
 
@@ -18,6 +19,10 @@ Provides the user-selected credential.
 func completeRequest(withSelectedCredential credential: ASPasswordCredential, completionHandler: ((Bool) -> Void)? = nil)
 ```
 
+```objc
+- (void) completeRequestWithSelectedCredential:(ASPasswordCredential *) credential completionHandler:(void (^)(BOOL expired)) completionHandler;
+```
+
 #### Discussion
 
 After calling this method, the system dismisses the associated view controller.
@@ -29,19 +34,20 @@ After calling this method, the system dismisses the associated view controller.
 
 ## See Also
 
-- [func completeAssertionRequest(using: ASPasskeyAssertionCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeassertionrequest(using:completionhandler:).md)
+### Providing credentials
+- [func completeAssertionRequest(using: ASPasskeyAssertionCredential, completionHandler: ((Bool) -> Void)?)](./completeassertionrequest%28using,completionhandler%29.md)
   Complete the passkey assertion request by providing the user-selected passkey credential.
-- [func completeRegistrationRequest(using: ASPasskeyRegistrationCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeregistrationrequest(using:completionhandler:).md)
+- [func completeRegistrationRequest(using: ASPasskeyRegistrationCredential, completionHandler: ((Bool) -> Void)?)](./completeregistrationrequest%28using,completionhandler%29.md)
   Complete the registration request by providing the newly-created passkey credential.
-- [func completeOneTimeCodeRequest(using: ASOneTimeCodeCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeonetimecoderequest(using:completionhandler:).md)
+- [func completeOneTimeCodeRequest(using: ASOneTimeCodeCredential, completionHandler: ((Bool) -> Void)?)](./completeonetimecoderequest%28using,completionhandler%29.md)
   Provides the user-selected one-time passcode (OTP).
-- [class ASPasswordCredential](aspasswordcredential.md)
+- [class ASPasswordCredential](../aspasswordcredential.md)
   A password credential.
-- [class ASPasskeyAssertionCredential](aspasskeyassertioncredential.md)
+- [class ASPasskeyAssertionCredential](../aspasskeyassertioncredential.md)
   A passkey assertion credential.
-- [class ASPasskeyRegistrationCredential](aspasskeyregistrationcredential.md)
+- [class ASPasskeyRegistrationCredential](../aspasskeyregistrationcredential.md)
   A passkey registration credential.
-- [class ASOneTimeCodeCredential](asonetimecodecredential.md)
+- [class ASOneTimeCodeCredential](../asonetimecodecredential.md)
   A one-time passcode (OTP) credential.
 
 

@@ -1,7 +1,8 @@
 # allowEmptySelection
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the system requires a selection for the language option group.
 
@@ -20,15 +21,20 @@ A Boolean that indicates whether the system requires a selection for the languag
 var allowEmptySelection: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowEmptySelection;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), there must be a language option in the language option group.
+When set to [`true`](../../Swift/true.md), there must be a language option in the language option group.
 
 ## See Also
 
-- [var defaultLanguageOption: MPNowPlayingInfoLanguageOption?](mpnowplayinginfolanguageoptiongroup/defaultlanguageoption.md)
+### Retrieving language option group information
+- [var defaultLanguageOption: MPNowPlayingInfoLanguageOption?](./defaultlanguageoption.md)
   The default language option for the group.
-- [var languageOptions: [MPNowPlayingInfoLanguageOption]](mpnowplayinginfolanguageoptiongroup/languageoptions.md)
+- [var languageOptions: [MPNowPlayingInfoLanguageOption]](./languageoptions.md)
   The available language options for the group.
 
 

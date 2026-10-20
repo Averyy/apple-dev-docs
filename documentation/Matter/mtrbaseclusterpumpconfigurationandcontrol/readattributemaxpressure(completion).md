@@ -1,7 +1,8 @@
 # readAttributeMaxPressure(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxPressure(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxPressure() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxPressureWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

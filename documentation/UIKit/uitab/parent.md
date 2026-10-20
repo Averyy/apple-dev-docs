@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The containing tab group.
 
@@ -18,11 +19,16 @@ The containing tab group.
 weak var parent: UITabGroup? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) UITabGroup * parent;
+```
+
 ## See Also
 
-- [var tabBarController: UITabBarController?](uitab/tabbarcontroller.md)
+### Accessing context
+- [var tabBarController: UITabBarController?](./tabbarcontroller.md)
   The containing tab bar controller.
-- [var userInfo: Any?](uitab/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   A custom object associated with the tab.
 
 

@@ -1,6 +1,7 @@
 # Displaying static and interactive snippets
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: Article
 
 Enable people to view the outcome of an app intent and immediately perform follow-up actions.
 
@@ -10,11 +11,11 @@ Using App Intents, you can make your app’s actions available to system experie
 
 Many of the actions you make available to the system as app intents are simple, and happen quickly. App intents can return an interactive snippet that allows people to perform an action from a snippet instead of viewing static information. Instead of taking a person out of their current context by launching your app from the app intent if it needs further action from the person, you can change the app intent to display an interactive snippet that shows the intent’s result, a way to confirm its action, or a button for a follow-up action.
 
-For example, the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) sample app offers an app intent to view details about the landmarks nearby. People might use it to create shortcuts and perform its action from Spotlight or the Action button. When the app intent finds information about a nearby landmark, it displays an interactive snippet with the most important information, a button to add it to a list favorites, and a button to search for available tickets if the landmark requires people to pay an entrance fee.
+For example, the [Adopting App Intents to support system experiences](./adopting-app-intents-to-support-system-experiences.md) sample app offers an app intent to view details about the landmarks nearby. People might use it to create shortcuts and perform its action from Spotlight or the Action button. When the app intent finds information about a nearby landmark, it displays an interactive snippet with the most important information, a button to add it to a list favorites, and a button to search for available tickets if the landmark requires people to pay an entrance fee.
 
-> **Note**: When someone performs an action with Siri AI that invokes your app intent, the system might not display [`IntentDialog`](intentdialog.md) or [`ShowsSnippetView`](showssnippetview.md).
+> **Note**: When someone performs an action with Siri AI that invokes your app intent, the system might not display [`IntentDialog`](./intentdialog.md) or [`ShowsSnippetView`](./showssnippetview.md).
 
-##### Show a Static Snippet
+##### Show a static snippet
 
 If your app intent doesn’t require a follow-up action, return a static snippet that enables someone to view the outcome of the app intent. To show a static snippet as a result from an app intent, return a view from your app intent’s `perform()` method:
 
@@ -26,7 +27,7 @@ func perform() async throws -> some IntentResult & ShowsSnippetView {
 }
 ```
 
-##### Return an Interactive Snippet
+##### Return an interactive snippet
 
 To display an interactive snippet as a result of an app intent, start by creating an app intent for your action - or use an existing app intent. The following example shows an intent that finds the closest landmark and returns it for display. The system will present the information using a default appearance:
 
@@ -44,7 +45,7 @@ struct ClosestLandmarkIntent: AppIntent {
 }
 ```
 
-To display a snippet instead of just returning the app entity, change the result of the intent’s `perform()` function to return a [`SnippetIntent`](snippetintent.md), in addition to the existing return value. When you return a  [`ShowsSnippetIntent`](showssnippetintent.md) result from the intent, you let the system know that the action displays an interactive snippet. To enable the system to speak the result of the intent on devices without a screen or when a person uses AirPods, the previous example’s updated `perform()` method also returns a `SnippetIntent` with a custom dialog:
+To display a snippet instead of just returning the app entity, change the result of the intent’s `perform()` function to return a [`SnippetIntent`](./snippetintent.md), in addition to the existing return value. When you return a  [`ShowsSnippetIntent`](./showssnippetintent.md) result from the intent, you let the system know that the action displays an interactive snippet. To enable the system to speak the result of the intent on devices without a screen or when a person uses AirPods, the previous example’s updated `perform()` method also returns a `SnippetIntent` with a custom dialog:
 
 ```swift
 public struct ClosestLandmarkIntent: AppIntent {
@@ -68,18 +69,18 @@ public struct ClosestLandmarkIntent: AppIntent {
 }
 ```
 
-In the example, the intent returns a landmark entity by declaring `-> some ReturnsValue<LandmarkEntity>` and, additionally, a `LandmarkSnippetIntent`. This intent implements [`SnippetIntent`](snippetintent.md) and handles the snippet’s layout and interactive components.
+In the example, the intent returns a landmark entity by declaring `-> some ReturnsValue<LandmarkEntity>` and, additionally, a `LandmarkSnippetIntent`. This intent implements [`SnippetIntent`](./snippetintent.md) and handles the snippet’s layout and interactive components.
 
 When you adopt interactive snippets, you might be able to reuse existing intents and add logic to display a snippet. Like the example above, you can return several results from an intent. By keeping an existing result type and additionally returning a snippet intent, you avoid breaking people’s custom shortcuts that use the previous version of your intent.
 
-##### Create the Interactive Snippet
+##### Create the interactive snippet
 
-As described in the previous section, the intent that performs your app’s action can return a [`SnippetIntent`](snippetintent.md). The snippet intent constructs your snippet’s layout and returns it to the system, which then displays the interactive snippet. To return the views for your interactive snippet:
+As described in the previous section, the intent that performs your app’s action can return a [`SnippetIntent`](./snippetintent.md). The snippet intent constructs your snippet’s layout and returns it to the system, which then displays the interactive snippet. To return the views for your interactive snippet:
 
-1. Create an app intent that conforms to [`SnippetIntent`](snippetintent.md).
-2. Make sure the intent’s `perform()` method returns a [`ShowsSnippetView`](showssnippetview.md).
+1. Create an app intent that conforms to [`SnippetIntent`](./snippetintent.md).
+2. Make sure the intent’s `perform()` method returns a [`ShowsSnippetView`](./showssnippetview.md).
 
-The following code continues the previous example and shows how the `AppIntentsTravelTracking` app might return a `LandmarkView` from the [`SnippetIntent`](snippetintent.md):
+The following code continues the previous example and shows how the `AppIntentsTravelTracking` app might return a `LandmarkView` from the [`SnippetIntent`](./snippetintent.md):
 
 ```swift
 import AppIntents
@@ -111,27 +112,27 @@ extension LandmarkSnippetIntent {
 
 Note the `isFavorite` parameter in the view’s initializer. The `LandmarkView` indicates whether a landmark is marked as a favorite already, and includes a button to add or remove it from favorites. The `LandMarkView` also includes a button to start a search for tickets to visit the landmark.
 
-> **Note**: Snippets are great candidates to reuse views you use in your widgets, and, like widgets, you must initialize the snippet’s [`Button`](https://developer.apple.com/documentation/swiftui/button) or [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) with an [`AppIntent`](appintent.md) that performs the underlying action. For more information, refer to [`Adding interactivity to widgets and Live Activities`](https://developer.apple.com/documentation/widgetkit/adding-interactivity-to-widgets-and-live-activities).
+> **Note**: Snippets are great candidates to reuse views you use in your widgets, and, like widgets, you must initialize the snippet’s [`Button`](../SwiftUI/button.md) or [`Toggle`](../SwiftUI/toggle.md) with an [`AppIntent`](./appintent.md) that performs the underlying action. For more information, refer to [Adding interactivity to widgets and Live Activities](../WidgetKit/adding-interactivity-to-widgets-and-live-activities.md).
 
-##### Review the Lifecycle of Snippet Intents
+##### Review the lifecycle of snippet intents
 
-A snippet remains visible until a person dismisses it, and, similar to SwiftUI views, the system and a person’s actions might result in your [`SnippetIntent`](snippetintent.md) being created and performed multiple times during its lifecycle.
+A snippet remains visible until a person dismisses it, and, similar to SwiftUI views, the system and a person’s actions might result in your [`SnippetIntent`](./snippetintent.md) being created and performed multiple times during its lifecycle.
 
-For example, the landmarks sample code project’s snippet includes a Favorites button to add or remove a nearby landmark from a list of favorites. When a person taps the Favorites button, the system performs the `FavoriteLandmarkIntent` to make the change. It discards the snippet’s old SwiftUI views, and performs the [`SnippetIntent`](snippetintent.md) again to provide a new version of the snippet to show that the person added or removed the landmark from the list of favorites.
+For example, the landmarks sample code project’s snippet includes a Favorites button to add or remove a nearby landmark from a list of favorites. When a person taps the Favorites button, the system performs the `FavoriteLandmarkIntent` to make the change. It discards the snippet’s old SwiftUI views, and performs the [`SnippetIntent`](./snippetintent.md) again to provide a new version of the snippet to show that the person added or removed the landmark from the list of favorites.
 
-> **Note**: Treat intents that conform to [`SnippetIntent`](snippetintent.md) like any other intent; they aren’t limited to displaying a snippet. People can use them in their custom shortcuts, and you can reuse them. For example, the sample app might use `FavoriteLandmarkIntent` in an App Shortcut or interactive widget.
+> **Note**: Treat intents that conform to [`SnippetIntent`](./snippetintent.md) like any other intent; they aren’t limited to displaying a snippet. People can use them in their custom shortcuts, and you can reuse them. For example, the sample app might use `FavoriteLandmarkIntent` in an App Shortcut or interactive widget.
 
 In the snippet intent’s `perform()` function, retrieve app state - for example, whether a current landmark is a favorite - and return an updated snippet as shown in the `LandmarkSnippetIntent ` example code above.
 
-Because the system creates and performs your [`SnippetIntent`](snippetintent.md) repeatedly, make sure calling its `perform()` method doesn’t produce side effects:
+Because the system creates and performs your [`SnippetIntent`](./snippetintent.md) repeatedly, make sure calling its `perform()` method doesn’t produce side effects:
 
 - If you pass data between intents, pass a minimum amount of immutable data.
 - Avoiding long-running tasks to ensure the snippet appears responsive.
-- Fetch dynamic values from a shared object instead of passing them around as parameters between intents; for example, the `LandmarkSnippetIntent` above uses an [`AppDependency`](appdependency.md) for its `modelData`.
+- Fetch dynamic values from a shared object instead of passing them around as parameters between intents; for example, the `LandmarkSnippetIntent` above uses an [`AppDependency`](./appdependency.md) for its `modelData`.
 
 > **Note**: As long as a snippet is visible, the system keeps your app active in the background, retaining all information in memory. As a result, you don’t have to persist or refresh data while your snippet is visible.
 
-##### Create a Sequence of Snippets and Request Confirmation
+##### Create a sequence of snippets and request confirmation
 
 With interactive snippets, you can create quick, fast-flowing interactions, allowing people to view content and perform a series of actions without leaving their current context. For example, the landmark example might display a sequence of three snippets:
 
@@ -139,9 +140,9 @@ With interactive snippets, you can create quick, fast-flowing interactions, allo
 2. When a person taps the button to search for tickets, a second snippet appears, requesting confirmation of the total number of tickets. When they’ve adjusted the number of tickets and confirmed the number of tickets, the search starts.
 3. When the search finishes, a third snippet appears to display the total amount for the number of tickets and a buy button.
 
-To create this sequence of snippets, the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) app uses a combination of regular app intents, a request for confirmation, and snippet intents.
+To create this sequence of snippets, the [Adopting App Intents to support system experiences](./adopting-app-intents-to-support-system-experiences.md) app uses a combination of regular app intents, a request for confirmation, and snippet intents.
 
-First, the app defines the `FindTicketsIntent`, a regular app intent to perform the search. In its `perform()` method, the [`requestConfirmation(conditions:actionName:dialog:showDialogAsPrompt:snippetIntent:)`](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj.md) API displays the interactive snippet for people to enter the tickets, using the  `TicketRequestSnippetIntent`.
+First, the app defines the `FindTicketsIntent`, a regular app intent to perform the search. In its `perform()` method, the [`requestConfirmation(conditions:actionName:dialog:showDialogAsPrompt:snippetIntent:)`](./appintent/requestconfirmation%28conditions,actionname,dialog,showdialogasprompt,snippetintent%29-3vewj.md) API displays the interactive snippet for people to enter the tickets, using the  `TicketRequestSnippetIntent`.
 
 ```swift
 import AppIntents
@@ -198,11 +199,11 @@ func perform() async throws -> some IntentResult & ShowsSnippetIntent {
 
 By displaying the snippet using the `requestConfirmation()` API, the snippet includes the option to cancel the action. If the person doesn’t confirm the number of tickets, the app intent doesn’t continue its `perform()` function, perform the search, or display another snippet.
 
-##### Reload a Snippet to Display Updated Data
+##### Reload a snippet to display updated data
 
 In the above example, three snippets appear in a sequence, each snippet replacing the previous snippet. If a snippet remains onscreen for some time; for example, if you perform a search like the in the example; reload the snippet to let people know that the search is ongoing. Similarly, reload the snippet if its underlying data changes.
 
-To reload a snippet, use the [`reload()`](snippetintent/reload().md) function defined by [`SnippetIntent`](snippetintent.md) . The following example adds it to the trailing closure of the search method:
+To reload a snippet, use the [`reload()`](./snippetintent/reload%28%29.md) function defined by [`SnippetIntent`](./snippetintent.md) . The following example adds it to the trailing closure of the search method:
 
 ```swift
 // ...
@@ -231,11 +232,12 @@ func perform() async throws -> some IntentResult & ShowsSnippetIntent {
 
 ## See Also
 
-- [protocol ShowsSnippetIntent](showssnippetintent.md)
+### Result and confirmation snippets
+- [protocol ShowsSnippetIntent](./showssnippetintent.md)
   The result of performing an action that present a snippet generated by a `SnippetIntent`-conforming type.
-- [protocol SnippetIntent](snippetintent.md)
+- [protocol SnippetIntent](./snippetintent.md)
   An app intent that presents an interactive snippet onscreen.
-- [protocol ShowsSnippetView](showssnippetview.md)
+- [protocol ShowsSnippetView](./showssnippetview.md)
   The result of performing an action that delivers a view back to the initiator of the action.
 
 

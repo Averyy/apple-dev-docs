@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trailing edge inset value.
 
@@ -14,13 +15,18 @@ The trailing edge inset value.
 var trailing: CGFloat
 ```
 
+```c
+CGFloat trailing;
+```
+
 ## See Also
 
-- [var bottom: CGFloat](nsdirectionaledgeinsets/bottom.md)
+### Getting the edge values
+- [var bottom: CGFloat](./bottom.md)
   The bottom edge inset value.
-- [var leading: CGFloat](nsdirectionaledgeinsets/leading.md)
+- [var leading: CGFloat](./leading.md)
   The leading edge inset value.
-- [var top: CGFloat](nsdirectionaledgeinsets/top.md)
+- [var top: CGFloat](./top.md)
   The top edge inset value.
 
 

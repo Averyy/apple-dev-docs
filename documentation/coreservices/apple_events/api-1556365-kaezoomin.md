@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kAEZoomIn: Int](kaezoomin.md)
-- [var kAEZoomOut: Int](kaezoomout.md)
+- [var kAEZoomIn: Int](../kaezoomin.md)
+- [var kAEZoomOut: Int](../kaezoomout.md)
 
 
 ---

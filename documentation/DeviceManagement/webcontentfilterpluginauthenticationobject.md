@@ -1,7 +1,8 @@
 # WebContentFilterPluginAuthenticationObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings that control authentication.
 
@@ -14,7 +15,7 @@ Settings that control authentication.
 
 ## Declaration
 
-```swift
+```
 object WebContentFilterPluginAuthenticationObject
 ```
 
@@ -25,9 +26,10 @@ object WebContentFilterPluginAuthenticationObject
 
 ## See Also
 
-- [object WebContentFilterPluginFilterObject](webcontentfilterpluginfilterobject.md)
+### Objects
+- [object WebContentFilterPluginFilterObject](./webcontentfilterpluginfilterobject.md)
   Settings that control authentication.
-- [object WebContentFilterPluginVendorConfigObject](webcontentfilterpluginvendorconfigobject.md)
+- [object WebContentFilterPluginVendorConfigObject](./webcontentfilterpluginvendorconfigobject.md)
   The custom dictionary that the filtering service plug-in needs.
 
 

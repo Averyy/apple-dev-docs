@@ -1,7 +1,8 @@
 # MTLStoreAction.customSampleDepthStore
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU stores depth data in a sample-position–agnostic representation.
 
@@ -19,25 +20,30 @@ The GPU stores depth data in a sample-position–agnostic representation.
 case customSampleDepthStore
 ```
 
+```c
+MTLStoreActionCustomSampleDepthStore
+```
+
 #### Discussion
 
-You can only set this action on an [`MTLRenderPassDepthAttachmentDescriptor`](mtlrenderpassdepthattachmentdescriptor.md) instance.
+You can only set this action on an [`MTLRenderPassDepthAttachmentDescriptor`](../mtlrenderpassdepthattachmentdescriptor.md) instance.
 
 Set this action when you need to read the depth data in a subsequent render pass or blit operation that is unaware of the programmable sample positions used to generate the data.
 
-If you specify this action, Metal may decompress the depth render target and store the resulting data in its decompressed form. If you don’t change programmable sample positions in a subsequent render pass, use [`MTLStoreAction.store`](mtlstoreaction/store.md) instead to improve performance.
+If you specify this action, Metal may decompress the depth render target and store the resulting data in its decompressed form. If you don’t change programmable sample positions in a subsequent render pass, use [`MTLStoreAction.store`](./store.md) instead to improve performance.
 
 ## See Also
 
-- [MTLStoreAction.dontCare](mtlstoreaction/dontcare.md)
+### Store actions
+- [MTLStoreAction.dontCare](./dontcare.md)
   The GPU has permission to discard the rendered contents of the attachment at the end of the render pass, replacing them with arbitrary data.
-- [MTLStoreAction.store](mtlstoreaction/store.md)
+- [MTLStoreAction.store](./store.md)
   The GPU stores the rendered contents to the texture.
-- [MTLStoreAction.multisampleResolve](mtlstoreaction/multisampleresolve.md)
+- [MTLStoreAction.multisampleResolve](./multisampleresolve.md)
   The GPU resolves the multisampled data to one sample per pixel and stores the data to the resolve texture, discarding the multisample data afterwards.
-- [MTLStoreAction.storeAndMultisampleResolve](mtlstoreaction/storeandmultisampleresolve.md)
+- [MTLStoreAction.storeAndMultisampleResolve](./storeandmultisampleresolve.md)
   The GPU stores the multisample data to the multisample texture, resolves the data to a sample per pixel, and stores the data to the resolve texture.
-- [MTLStoreAction.unknown](mtlstoreaction/unknown.md)
+- [MTLStoreAction.unknown](./unknown.md)
   The system selects a store action when it encodes the render pass.
 
 

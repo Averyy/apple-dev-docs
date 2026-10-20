@@ -1,7 +1,8 @@
 # cancel
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops any work the promise is doing.
 
@@ -10,7 +11,7 @@ Stops any work the promise is doing.
 
 ## Declaration
 
-```swift
+```
 void cancel();
 ```
 

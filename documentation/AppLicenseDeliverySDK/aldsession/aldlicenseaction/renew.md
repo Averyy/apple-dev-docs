@@ -1,7 +1,8 @@
 # ALDSession.ALDLicenseAction.renew
 
 **Framework**: App License Delivery SDK  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 ## Declaration
 

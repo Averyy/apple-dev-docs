@@ -1,16 +1,17 @@
 # AVCustomRoutingEventReason
 
 **Framework**: AVRouting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the reason for a routing event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,35 +19,40 @@ Values that indicate the reason for a routing event.
 enum AVCustomRoutingEventReason
 ```
 
+```c
+enum AVCustomRoutingEventReason : NSInteger;
+```
+
 ## Topics
 
 ### Reasons
-- [AVCustomRoutingEventReason.activate](avcustomroutingeventreason/activate.md)
+- [AVCustomRoutingEventReason.activate](./avcustomroutingeventreason/activate.md)
   A value that indicates that a user selects a route in the picker.
-- [AVCustomRoutingEventReason.deactivate](avcustomroutingeventreason/deactivate.md)
+- [AVCustomRoutingEventReason.deactivate](./avcustomroutingeventreason/deactivate.md)
   A value that indicates that a user deselects a route in the picker.
-- [AVCustomRoutingEventReason.reactivate](avcustomroutingeventreason/reactivate.md)
+- [AVCustomRoutingEventReason.reactivate](./avcustomroutingeventreason/reactivate.md)
   A value that indicates to reactivate a route a user authorized previously.
 ### Initializers
-- [init?(rawValue: Int)](avcustomroutingeventreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcustomroutingeventreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var route: AVCustomDeviceRoute](avcustomroutingevent/route.md)
+### Inspecting an event
+- [var route: AVCustomDeviceRoute](./avcustomroutingevent/route.md)
   A route for the event.
-- [class AVCustomDeviceRoute](avcustomdeviceroute.md)
+- [class AVCustomDeviceRoute](./avcustomdeviceroute.md)
   An object that represents a custom device route.
-- [var reason: AVCustomRoutingEventReason](avcustomroutingevent/reason.md)
+- [var reason: AVCustomRoutingEventReason](./avcustomroutingevent/reason.md)
   A reason for an event, such as a user request to activate or deactivate a route.
 
 

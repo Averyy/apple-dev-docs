@@ -1,7 +1,8 @@
 # MediaDeviceError.Code.authorizationFailed
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authorization to use the device failed.
 

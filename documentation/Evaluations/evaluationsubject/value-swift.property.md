@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The typed value the system under test produces.

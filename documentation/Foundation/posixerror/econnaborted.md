@@ -1,7 +1,8 @@
 # ECONNABORTED
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Software caused connection abort.
 

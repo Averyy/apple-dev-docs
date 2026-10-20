@@ -1,7 +1,8 @@
 # InAppPurchaseV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase.
 
@@ -10,23 +11,23 @@ The request body you use to create an In-App Purchase.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseV2CreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseV2CreateRequest.Data.Attributes](inapppurchasev2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object InAppPurchaseV2CreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase create request resource.
-- [object InAppPurchaseV2CreateRequest.Data.Relationships](inapppurchasev2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object InAppPurchaseV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (InAppPurchaseV2CreateRequest.Data.Attributes) *(required)*
 - `relationships` (InAppPurchaseV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchases`
 
 
 ---

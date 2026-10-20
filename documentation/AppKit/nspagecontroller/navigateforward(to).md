@@ -1,7 +1,8 @@
 # navigateForward(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Navigates to the specific object.
 
@@ -14,9 +15,13 @@ Navigates to the specific object.
 func navigateForward(to object: Any)
 ```
 
+```objc
+- (void) navigateForwardToObject:(id) object;
+```
+
 #### Discussion
 
-Clears the [`arrangedObjects`](nspagecontroller/arrangedobjects.md) array after the selected index, adds the argument to that array, and sets the [`selectedIndex`](nspagecontroller/selectedindex.md) to the object’s index.
+Clears the [`arrangedObjects`](./arrangedobjects.md) array after the selected index, adds the argument to that array, and sets the [`selectedIndex`](./selectedindex.md) to the object’s index.
 
 ## Parameters
 
@@ -24,15 +29,17 @@ Clears the [`arrangedObjects`](nspagecontroller/arrangedobjects.md) array after 
 
 ## See Also
 
-- [func takeSelectedIndexFrom(Any?)](nspagecontroller/takeselectedindexfrom(_:).md)
+### Related Documentation
+- [func takeSelectedIndexFrom(Any?)](./takeselectedindexfrom%28_%29.md)
   Navigates to the selected index, which is taken from the sender.
-- [func navigateBack(Any?)](nspagecontroller/navigateback(_:).md)
+- [func navigateBack(Any?)](./navigateback%28_%29.md)
   Navigates backwards in the page controller’s arranged objects array.
-- [func navigateForward(Any?)](nspagecontroller/navigateforward(_:).md)
+- [func navigateForward(Any?)](./navigateforward%28_%29.md)
   Navigates to the next object in the page controller’s arranged objects array, if appropriate.
-- [var arrangedObjects: [Any]](nspagecontroller/arrangedobjects.md)
+### Page Controller Items
+- [var arrangedObjects: [Any]](./arrangedobjects.md)
   An array containing the objects displayed in the page controller’s view.
-- [var selectedIndex: Int](nspagecontroller/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The currently selected object in the arranged objects array.
 
 

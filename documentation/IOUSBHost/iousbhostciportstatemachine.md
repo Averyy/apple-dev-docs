@@ -1,7 +1,8 @@
 # IOUSBHostCIPortStateMachine
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,41 +14,46 @@
 class IOUSBHostCIPortStateMachine
 ```
 
+```objc
+@interface IOUSBHostCIPortStateMachine : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var connected: Bool](iousbhostciportstatemachine/connected.md)
-- [var controllerInterface: IOUSBHostControllerInterface](iousbhostciportstatemachine/controllerinterface.md)
-- [var linkState: IOUSBHostCILinkState](iousbhostciportstatemachine/linkstate.md)
-- [var overcurrent: Bool](iousbhostciportstatemachine/overcurrent.md)
-- [var portNumber: Int](iousbhostciportstatemachine/portnumber.md)
-- [var portState: IOUSBHostCIPortState](iousbhostciportstatemachine/portstate.md)
-- [var portStatus: IOUSBHostCIPortStatus](iousbhostciportstatemachine/portstatus.md)
-- [var powered: Bool](iousbhostciportstatemachine/powered.md)
-- [var speed: IOUSBHostCIDeviceSpeed](iousbhostciportstatemachine/speed.md)
+- [var connected: Bool](./iousbhostciportstatemachine/connected.md)
+- [var controllerInterface: IOUSBHostControllerInterface](./iousbhostciportstatemachine/controllerinterface.md)
+- [var linkState: IOUSBHostCILinkState](./iousbhostciportstatemachine/linkstate.md)
+- [var overcurrent: Bool](./iousbhostciportstatemachine/overcurrent.md)
+- [var portNumber: Int](./iousbhostciportstatemachine/portnumber.md)
+- [var portState: IOUSBHostCIPortState](./iousbhostciportstatemachine/portstate.md)
+- [var portStatus: IOUSBHostCIPortStatus](./iousbhostciportstatemachine/portstatus.md)
+- [var powered: Bool](./iousbhostciportstatemachine/powered.md)
+- [var speed: IOUSBHostCIDeviceSpeed](./iousbhostciportstatemachine/speed.md)
 ### Instance Methods
-- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](iousbhostciportstatemachine/inspectcommand(_:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](iousbhostciportstatemachine/respond(tocommand:status:).md)
-- [func updateLinkState(IOUSBHostCILinkState, speed: IOUSBHostCIDeviceSpeed, inhibitLinkStateChange: Bool) throws](iousbhostciportstatemachine/updatelinkstate(_:speed:inhibitlinkstatechange:).md)
+- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./iousbhostciportstatemachine/inspectcommand%28_%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./iousbhostciportstatemachine/respond%28tocommand,status%29.md)
+- [func updateLinkState(IOUSBHostCILinkState, speed: IOUSBHostCIDeviceSpeed, inhibitLinkStateChange: Bool) throws](./iousbhostciportstatemachine/updatelinkstate%28_,speed,inhibitlinkstatechange%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostCIControllerStateMachine](iousbhostcicontrollerstatemachine.md)
-- [class IOUSBHostCIDeviceStateMachine](iousbhostcidevicestatemachine.md)
-- [class IOUSBHostCIEndpointStateMachine](iousbhostciendpointstatemachine.md)
-- [class IOUSBHostControllerInterface](iousbhostcontrollerinterface.md)
+### Classes
+- [class IOUSBHostCIControllerStateMachine](./iousbhostcicontrollerstatemachine.md)
+- [class IOUSBHostCIDeviceStateMachine](./iousbhostcidevicestatemachine.md)
+- [class IOUSBHostCIEndpointStateMachine](./iousbhostciendpointstatemachine.md)
+- [class IOUSBHostControllerInterface](./iousbhostcontrollerinterface.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # end
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end time of the time range.
 
@@ -22,15 +23,16 @@ var end: CMTime { get }
 
 ## See Also
 
-- [var start: CMTime](cmtimerange/start.md)
+### Inspecting Time Ranges
+- [var start: CMTime](./start.md)
   The start time of the time range.
-- [var duration: CMTime](cmtimerange/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of the time range.
-- [var isValid: Bool](cmtimerange/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the time range is valid.
-- [var isEmpty: Bool](cmtimerange/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the time range is empty.
-- [var isIndefinite: Bool](cmtimerange/isindefinite.md)
+- [var isIndefinite: Bool](./isindefinite.md)
   A Boolean value that indicates whether the time range is indefinite.
 
 

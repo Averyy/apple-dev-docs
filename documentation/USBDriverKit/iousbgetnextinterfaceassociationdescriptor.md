@@ -1,7 +1,8 @@
 # IOUSBGetNextInterfaceAssociationDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds the next interface association descriptor in a configuration descriptor.
 
@@ -10,7 +11,7 @@ Finds the next interface association descriptor in a configuration descriptor.
 
 ## Declaration
 
-```swift
+```c
 const IOUSBInterfaceAssociationDescriptor *IOUSBGetNextInterfaceAssociationDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
@@ -29,7 +30,8 @@ This method uses `getNextDescriptorWithType` to fetch the next interface associa
 
 ## See Also
 
-- [IOUSBGetNextInterfaceDescriptor](iousbgetnextinterfacedescriptor.md)
+### Interface Descriptors
+- [IOUSBGetNextInterfaceDescriptor](./iousbgetnextinterfacedescriptor.md)
   Finds the next interface descriptor in a configuration descriptor.
 
 

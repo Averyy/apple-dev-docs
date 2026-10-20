@@ -1,7 +1,8 @@
 # init(SSID:eapSettings:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

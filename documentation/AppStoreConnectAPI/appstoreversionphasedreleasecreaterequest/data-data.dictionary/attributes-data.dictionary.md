@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships](appstoreversionphasedreleasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

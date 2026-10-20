@@ -1,12 +1,13 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s background color to a given color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The receiver’s background color to a given color.
 var backgroundColor: NSColor? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSColor * backgroundColor;
+```
+
 ## See Also
 
-- [var drawsBackground: Bool](nstext/drawsbackground.md)
+### Setting graphics attributes
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean that controls whether the receiver draws its background.
 
 

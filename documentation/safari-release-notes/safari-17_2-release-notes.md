@@ -1,6 +1,7 @@
 # Safari 17.2 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released December 11, 2023 — Version 17.2 (19617.1.17)
 
@@ -24,13 +25,13 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 - Deprecated `enabled` in favor of `available` in `shippingContactEditingMode`.  (113159800)
 
-##### Autofill
+##### AutoFill
 
 ###### Resolved Issues
 
 - Fixed clipping the “Strong Password” button after selecting “Suggest New Password”.  (113701243)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -119,7 +120,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed CSS grid to synthesize the central baseline of grid items in the column axis.  (117424263)
 - Fixed serialization for CSS highlight pseudo-elements.  (117864974)
 
-##### Dom
+##### DOM
 
 ###### Resolved Issues
 
@@ -135,7 +136,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 - Fixed COLRv0 font rendering.  (115721319)
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -152,13 +153,13 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed empty value attributes to not be ignored on image input types.  (114887143)
 - Fixed `[dir=auto]` invalidation with password fields.  (115887776)
 
-##### Http
+##### HTTP
 
 ###### Resolved Issues
 
 - Fixed COOP header breaking back and forward behavior when client-side redirects are involved.  (104659192)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -253,7 +254,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 - Fixed a cache miss bug in DOMCache that triggered service worker fetch errors.  (115740959) (FB13188943)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -279,7 +280,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 - Fixed `color-scheme` to support discrete animation.  (94615599)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -324,7 +325,9 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 ###### Resolved Issues
 
-- Fixed many common issues such as an icon appearing blurry with jagged edges, lacking padding, or failing to load by improving how web app icons are loaded. If you supply multiple size variants for the preferred icon kind, all sizes are saved, allowing the most appropriate size to be displayed based on context. For example, the largest size variant is shown in Finder’s Gallery view and Quick Look, a medium sized variant is shown in the Dock and Launchpad, while a smaller sized variant is shown in Spotlight. To provide the best user experience, supply at least one opaque, full-bleed `maskable` square icon in the web app manifest, either as an SVG (any size) or high resolution bitmap (1024x1024). If the web app manifest doesn’t specify any high resolution full-bleed icon, Safari may fall back to the `apple-touch-icon` if it improves the user experience. If you specify an `apple-touch-icon` through `link` elements in the webpage, do not omit these link elements based on user agent detection. When you only supply a transparent icon with custom shape, Safari automatically adjusts spacing between your icon and the standard system background to avoid tangents.  (102449619)
+- Fixed many common issues such as an icon appearing blurry with jagged edges, lacking padding, or failing to load by improving how web app icons are loaded. If you supply multiple size variants for the preferred icon kind, all sizes are saved, allowing the most appropriate size to be displayed based on context. For example, the largest size variant is shown in Finder’s Gallery view and Quick Look, a medium sized variant is shown in the Dock and Launchpad, while a smaller sized variant is shown in Spotlight.
+
+  To provide the best user experience, supply at least one opaque, full-bleed `maskable` square icon in the web app manifest, either as an SVG (any size) or high resolution bitmap (1024x1024). If the web app manifest doesn’t specify any high resolution full-bleed icon, Safari may fall back to the `apple-touch-icon` if it improves the user experience. If you specify an `apple-touch-icon` through `link` elements in the webpage, do not omit these link elements based on user agent detection. When you only supply a transparent icon with custom shape, Safari automatically adjusts spacing between your icon and the standard system background to avoid tangents.  (102449619)
 - Fixed an issue where page zoom is reset to 100% after quit and relaunch.  (110298546) (FB12233006)
 - Fixed a bug where `theme-color` is not applied to the title bar in web apps.  (112980819)
 - Fixed an issue where sign in pages sometimes unexpectely open in Safari instead of the web app.  (113520837)
@@ -337,7 +340,9 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed an issue where AutoFill settings in Safari do not take effect in web apps.  (117671220)
 - Fixed an issue where option+clicking a link failed to start a download.  (117809013)
 - Fixed an issue where JavaScript-based redirection to an external website causes a blank window to appear or the current window to disappear.  (117809066)
-- Fixed an issue where web app usage is not reflected in Screen Time.  (117809075) - Fixed an issue that prevents Ignore Screen Time Limits from working in web apps.  (117809075)
+- Fixed an issue where web app usage is not reflected in Screen Time.  (117809075)
+
+  - Fixed an issue that prevents Ignore Screen Time Limits from working in web apps.  (117809075)
 
 ##### Web Assembly
 
@@ -357,13 +362,13 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed: Moved the details sidebar to the bottom when Web Inspector is too narrow.  (63567675) (FB7711657)
 - Fixed objects logged to the console with multiple private fields that use the same name.  (109215331)
 
-##### Webdriver
+##### WebDriver
 
 ###### Resolved Issues
 
 - Fixed dispatched mouse events always having `buttons` property set to zero.  (116049187)
 
-##### Webgl
+##### WebGL
 
 ###### New Features
 
@@ -374,7 +379,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 - Fixed a bug where multi-level textures would lose levels in WebGL.  (116362216)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -385,17 +390,18 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
 ## See Also
 
-- [Safari 17.6 Release Notes](safari-17_6-release-notes.md)
+### Version 17
+- [Safari 17.6 Release Notes](./safari-17_6-release-notes.md)
   Released July 29, 2024 — 17.6 (19618.3.11)
-- [Safari 17.5 Release Notes](safari-17_5-release-notes.md)
+- [Safari 17.5 Release Notes](./safari-17_5-release-notes.md)
   Released May 13, 2024 — 17.5 (19618.2.12)
-- [Safari 17.4 Release Notes](safari-17_4-release-notes.md)
+- [Safari 17.4 Release Notes](./safari-17_4-release-notes.md)
   Released March 5, 2024 — 17.4  (19618.1.15)
-- [Safari 17.3 Release Notes](safari-17_3-release-notes.md)
+- [Safari 17.3 Release Notes](./safari-17_3-release-notes.md)
   Released January 22, 2024 — Version 17.3 (19617.2.4)
-- [Safari 17.1 Release Notes](safari-17_1-release-notes.md)
+- [Safari 17.1 Release Notes](./safari-17_1-release-notes.md)
   Released October 25, 2023 — Version 17.1 (19616.2.9)
-- [Safari 17 Release Notes](safari-17-release-notes.md)
+- [Safari 17 Release Notes](./safari-17-release-notes.md)
   Released September 18, 2023 — Version 17 (19616.1.27)
 
 

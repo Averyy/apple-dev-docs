@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: GameplayKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the goal at the specified index in the behavior’s list of goals.
 
@@ -19,6 +20,10 @@ Returns the goal at the specified index in the behavior’s list of goals.
 subscript(idx: Int) -> GKGoal { get }
 ```
 
+```objc
+- (GKGoal *) objectAtIndexedSubscript:(NSUInteger) idx;
+```
+
 #### Return Value
 
 The goal at the specified index.
@@ -29,11 +34,12 @@ The order of goals in a behavior is undefined. However, you can use this method 
 
 ## Parameters
 
-- `idx`: An index in the behavior’s list of goals; must be less than the value of the [`goalCount`](gkbehavior/goalcount.md) property.
+- `idx`: An index in the behavior’s list of goals; must be less than the value of the [`goalCount`](./goalcount.md) property.
 
 ## See Also
 
-- [subscript(GKGoal) -> NSNumber!](gkbehavior/subscript(_:)-2yvko.md)
+### Working with Goals Using Subscript Syntax
+- [subscript(GKGoal) -> NSNumber!](./subscript%28_%29-2yvko.md)
   Returns the weight associated with the goal specified by subscript syntax.
 
 

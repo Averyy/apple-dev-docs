@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the variable.
 
@@ -17,6 +18,10 @@ The shape of the variable.
 
 ```swift
 var shape: [NSNumber] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) MPSShape * shape;
 ```
 
 

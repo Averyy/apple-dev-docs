@@ -1,7 +1,8 @@
 # forMetadata(_:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the identity document configuration.
 
@@ -9,13 +10,21 @@ Returns the identity document configuration.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
+class func forMetadata(_ metadata: PKIdentityDocumentMetadata, completion: @escaping @Sendable (PKAddIdentityDocumentConfiguration?, (any Error)?) -> Void)
+```
+
+```swift
 class func forMetadata(_ metadata: PKIdentityDocumentMetadata) async throws -> PKAddIdentityDocumentConfiguration
+```
+
+```objc
++ (void) configurationForMetadata:(PKIdentityDocumentMetadata *) metadata completion:(void (^)(PKAddIdentityDocumentConfiguration *credentialConfiguration, NSError *error)) completion;
 ```
 
 ## Parameters
@@ -25,7 +34,8 @@ class func forMetadata(_ metadata: PKIdentityDocumentMetadata) async throws -> P
 
 ## See Also
 
-- [var metadata: PKIdentityDocumentMetadata](pkaddidentitydocumentconfiguration/metadata.md)
+### Setting the metadata
+- [var metadata: PKIdentityDocumentMetadata](./metadata.md)
   A set of configurable metadata that defines the required information to add the corresponding pass to Wallet.
 
 

@@ -1,18 +1,19 @@
 # CFBundleGetAllBundles()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array containing all of the bundles currently open in the application.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns an array containing all of the bundles currently open in the application
 func CFBundleGetAllBundles() -> CFArray!
 ```
 
+```c
+extern CFArrayRefCFBundleGetAllBundles();
+```
+
 #### Return Value
 
-A CFArray object containing CFBundle objects for each open bundle in the application. Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+A CFArray object containing CFBundle objects for each open bundle in the application. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 #### Discussion
 
@@ -30,13 +35,14 @@ This function is potentially expensive and not thread-safe. It’s best used for
 
 ## See Also
 
-- [func CFBundleCreate(CFAllocator!, CFURL!) -> CFBundle!](cfbundlecreate(_:_:).md)
+### Creating and Accessing Bundles
+- [func CFBundleCreate(CFAllocator!, CFURL!) -> CFBundle!](./cfbundlecreate%28_,_%29.md)
   Creates a CFBundle object.
-- [func CFBundleCreateBundlesFromDirectory(CFAllocator!, CFURL!, CFString!) -> CFArray!](cfbundlecreatebundlesfromdirectory(_:_:_:).md)
+- [func CFBundleCreateBundlesFromDirectory(CFAllocator!, CFURL!, CFString!) -> CFArray!](./cfbundlecreatebundlesfromdirectory%28_,_,_%29.md)
   Searches a directory and constructs an array of CFBundle objects from all valid bundles in the specified directory.
-- [func CFBundleGetBundleWithIdentifier(CFString!) -> CFBundle!](cfbundlegetbundlewithidentifier(_:).md)
+- [func CFBundleGetBundleWithIdentifier(CFString!) -> CFBundle!](./cfbundlegetbundlewithidentifier%28_%29.md)
   Locate a bundle given its program-defined identifier.
-- [func CFBundleGetMainBundle() -> CFBundle!](cfbundlegetmainbundle().md)
+- [func CFBundleGetMainBundle() -> CFBundle!](./cfbundlegetmainbundle%28%29.md)
   Returns an application’s main bundle.
 
 

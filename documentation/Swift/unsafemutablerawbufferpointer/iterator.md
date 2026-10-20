@@ -1,7 +1,8 @@
 # UnsafeMutableRawBufferPointer.Iterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 

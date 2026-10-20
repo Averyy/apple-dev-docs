@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Place the annotation on the leading edge of the item.
 

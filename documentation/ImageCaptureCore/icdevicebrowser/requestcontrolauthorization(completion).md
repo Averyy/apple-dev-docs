@@ -1,7 +1,8 @@
 # requestControlAuthorization(completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+func requestControlAuthorization(completion: @escaping @Sendable (ICAuthorizationStatus) -> Void)
+```
+
+```swift
 func requestControlAuthorization() async -> ICAuthorizationStatus
+```
+
+```objc
+- (void) requestControlAuthorizationWithCompletion:(void (^)(ICAuthorizationStatus status)) completion;
 ```
 
 

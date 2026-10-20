@@ -1,7 +1,8 @@
 # extents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extents of the bounding box.
 
@@ -11,7 +12,7 @@ The extents of the bounding box.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ This value is (0, 0, 0) if the box is empty.
 
 ## See Also
 
-- [var max: SIMD3<Float>](boundingbox/max.md)
+### Getting the box characteristics
+- [var max: SIMD3<Float>](./max.md)
   The position of the maximum corner of the box.
-- [var min: SIMD3<Float>](boundingbox/min.md)
+- [var min: SIMD3<Float>](./min.md)
   The position of the minimum corner of the box.
-- [var center: SIMD3<Float>](boundingbox/center.md)
+- [var center: SIMD3<Float>](./center.md)
   The center of the bounding box.
-- [var boundingRadius: Float](boundingbox/boundingradius.md)
+- [var boundingRadius: Float](./boundingradius.md)
   The radius of a bounding sphere that encompasses the bounding box.
 
 

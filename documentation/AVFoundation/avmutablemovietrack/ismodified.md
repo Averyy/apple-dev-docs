@@ -1,7 +1,8 @@
 # isModified
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a track is in a modified state.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether a track is in a modified state.
 var isModified: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isModified) BOOL modified;
+```
+
 #### Discussion
 
 This property is `YES` when the `AVMutableMovieTrack` object has been modified since it was created, was last written, or had its modified state cleared.
 
 ## See Also
 
-- [var alternateGroupID: Int](avmutablemovietrack/alternategroupid.md)
+### Configuring track information
+- [var alternateGroupID: Int](./alternategroupid.md)
   A number that identifies the track as a member of a particular alternate group.
-- [var mediaDataStorage: AVMediaDataStorage?](avmutablemovietrack/mediadatastorage.md)
+- [var mediaDataStorage: AVMediaDataStorage?](./mediadatastorage.md)
   A storage container for the media data to be added to a track.
-- [var sampleReferenceBaseURL: URL?](avmutablemovietrack/samplereferencebaseurl.md)
+- [var sampleReferenceBaseURL: URL?](./samplereferencebaseurl.md)
   The base URL for sample references.
 
 

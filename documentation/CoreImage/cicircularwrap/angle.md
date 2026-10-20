@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var angle: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float angle;
+```
+
 ## See Also
 
-- [var center: CGPoint](cicircularwrap/center.md)
-- [var inputImage: CIImage?](cicircularwrap/inputimage.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var radius: Float](cicircularwrap/radius.md)
+- [var radius: Float](./radius.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # load(asset:configuration:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct the compute plan of a model asynchronously given the model asset.
 
@@ -27,7 +28,8 @@ static func load(asset: MLModelAsset, configuration: MLModelConfiguration) async
 
 ## See Also
 
-- [static func load(contentsOf: URL, configuration: MLModelConfiguration) async throws -> MLComputePlan](mlcomputeplan-1w21n/load(contentsof:configuration:).md)
+### Loading a compute plan
+- [static func load(contentsOf: URL, configuration: MLModelConfiguration) async throws -> MLComputePlan](./load%28contentsof,configuration%29.md)
   Construct the compute plan of a model asynchronously given the location of its on-disk representation.
 
 

@@ -1,7 +1,8 @@
 # USDLayer.ListOperationType.deleted
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items to remove during composition.
 

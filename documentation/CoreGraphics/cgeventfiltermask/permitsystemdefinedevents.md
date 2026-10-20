@@ -1,11 +1,12 @@
 # permitSystemDefinedEvents
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 static var permitSystemDefinedEvents: CGEventFilterMask { get }
 ```
 
+```c
+kCGEventFilterMaskPermitSystemDefinedEvents
+```
+
 ## See Also
 
-- [static var permitLocalKeyboardEvents: CGEventFilterMask](cgeventfiltermask/permitlocalkeyboardevents.md)
-- [static var permitLocalMouseEvents: CGEventFilterMask](cgeventfiltermask/permitlocalmouseevents.md)
+### Type Properties
+- [static var permitLocalKeyboardEvents: CGEventFilterMask](./permitlocalkeyboardevents.md)
+- [static var permitLocalMouseEvents: CGEventFilterMask](./permitlocalmouseevents.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # simpleRW
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOFWPseudoAddressSpace * simpleRW(IOFireWireBus *bus, FWAddress *addr, UInt32 len, void *data);
 ```
 

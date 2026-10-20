@@ -1,7 +1,8 @@
 # rotate
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Rotates the canvas coordinate system.
 
@@ -11,7 +12,7 @@ Rotates the canvas coordinate system.
 
 ## Declaration
 
-```swift
+```
 void rotate(
     unrestricted float angle
 );
@@ -27,13 +28,14 @@ Changes to the coordinate system affect subsequent drawing operations, but do no
 
 ## See Also
 
-- [scale](canvasrenderingcontext2d/1631799-scale.md)
+### Changing the Coordinate System
+- [scale](./api-1631799-scale.md)
   Scales the canvas coordinate system horizontally and vertically.
-- [setTransform](canvasrenderingcontext2d/1630015-settransform.md)
+- [setTransform](./api-1630015-settransform.md)
   Sets the transformation matrix.
-- [transform](canvasrenderingcontext2d/1629911-transform.md)
+- [transform](./api-1629911-transform.md)
   Transforms the current transformation matrix using another matrix.
-- [translate](canvasrenderingcontext2d/1629441-translate.md)
+- [translate](./api-1629441-translate.md)
   Moves the origin of the canvas coordinate system.
 
 

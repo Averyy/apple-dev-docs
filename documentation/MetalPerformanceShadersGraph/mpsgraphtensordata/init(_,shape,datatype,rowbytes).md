@@ -1,7 +1,8 @@
 # init(_:shape:dataType:rowBytes:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an tensor data with a metal buffer.
 
@@ -17,6 +18,10 @@ Initializes an tensor data with a metal buffer.
 
 ```swift
 init(_ buffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType, rowBytes: Int)
+```
+
+```objc
+- (instancetype) initWithMTLBuffer:(id<MTLBuffer>) buffer shape:(MPSShape *) shape dataType:(MPSDataType) dataType rowBytes:(NSUInteger) rowBytes;
 ```
 
 #### Return Value

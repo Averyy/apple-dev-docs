@@ -1,7 +1,8 @@
 # SecCertificateCopyEmailAddresses(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the email addresses for the subject of a certificate.
 
@@ -20,9 +21,13 @@ Retrieves the email addresses for the subject of a certificate.
 func SecCertificateCopyEmailAddresses(_ certificate: SecCertificate, _ emailAddresses: UnsafeMutablePointer<CFArray?>) -> OSStatus
 ```
 
+```c
+OSStatus SecCertificateCopyEmailAddresses(SecCertificateRef certificate, CFArrayRef*emailAddresses);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -31,7 +36,7 @@ Not every certificate subject includes an email address. If the function does no
 ## Parameters
 
 - `certificate`: The certificate object from which to retrieve the email addresses.
-- `emailAddresses`: On return, an array of zero or more `CFStringRef` elements, each containing one email address found in the certificate subject. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `emailAddresses`: On return, an array of zero or more `CFStringRef` elements, each containing one email address found in the certificate subject. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
 
 ---

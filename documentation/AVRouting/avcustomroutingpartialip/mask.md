@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that represents how many octets of the IP address to respect.
 
@@ -17,9 +18,14 @@ A mask that represents how many octets of the IP address to respect.
 var mask: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * mask;
+```
+
 ## See Also
 
-- [var address: Data](avcustomroutingpartialip/address.md)
+### Inspecting the IP fragment
+- [var address: Data](./address.md)
   A full or partial IP address for a device known to be on the network.
 
 

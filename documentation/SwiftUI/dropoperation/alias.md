@@ -1,7 +1,8 @@
 # DropOperation.alias
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 26.0+

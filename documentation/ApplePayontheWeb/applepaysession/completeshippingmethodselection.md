@@ -1,7 +1,8 @@
 # completeShippingMethodSelection
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes the selection of a shipping method with an update.
 
@@ -11,7 +12,7 @@ Completes the selection of a shipping method with an update.
 
 ## Declaration
 
-```swift
+```
 undefined completeShippingMethodSelection(
 	unsigned short
 );
@@ -19,29 +20,29 @@ undefined completeShippingMethodSelection(
 
 ## Mentions
 
-- [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
+- [Apple Pay on the Web Version 3 Release Notes](../apple-pay-on-the-web-version-3-release-notes.md)
 
 #### Discussion
 
-This method must be called by [`onshippingmethodselected`](applepaysession/onshippingmethodselected.md).
+This method must be called by [`onshippingmethodselected`](./onshippingmethodselected.md).
 
-For Apple Pay JS API version 3, the parameter is an [`ApplePayShippingMethodUpdate`](applepayshippingmethodupdate.md) object.
+For Apple Pay JS API version 3, the parameter is an [`ApplePayShippingMethodUpdate`](../applepayshippingmethodupdate.md) object.
 
-##### Completeshippingmethodselection in Apple Pay Js Api Version 1 and 2
+##### completeShippingMethodSelection in Apple Pay JS API version 1 and 2
 
-In Apple Pay JS API version 1 and 2, [`completeShippingMethodSelection`](applepaysession/completeshippingmethodselection.md) has the following parameters:
+In Apple Pay JS API version 1 and 2, [`completeShippingMethodSelection`](./completeshippingmethodselection.md) has the following parameters:
 
 `status`
 
-The status of the shipping method update. For valid values, see [`Apple Pay Status Codes`](apple-pay-status-codes.md). If status is not [`STATUS_SUCCESS`](applepaysession/status_success.md), pass null for the other parameters.
+The status of the shipping method update. For valid values, see [Apple Pay Status Codes](../apple-pay-status-codes.md). If status is not [`STATUS_SUCCESS`](./status_success.md), pass null for the other parameters.
 
 `newTotal`
 
-An [`ApplePayLineItem`](applepaylineitem.md) dictionary representing the total price for the purchase. Set the label to the merchant’s name, and the amount to the total price. The amount must be greater than zero.
+An [`ApplePayLineItem`](../applepaylineitem.md) dictionary representing the total price for the purchase. Set the label to the merchant’s name, and the amount to the total price. The amount must be greater than zero.
 
 `newLineItems`
 
-A sequence of [`ApplePayLineItem`](applepaylineitem.md) dictionaries. Use [`ApplePayLineItem`](applepaylineitem.md) dictionaries to represent all other costs or discounts.
+A sequence of [`ApplePayLineItem`](../applepaylineitem.md) dictionaries. Use [`ApplePayLineItem`](../applepaylineitem.md) dictionaries to represent all other costs or discounts.
 
 Do not use line items to represent the individual items purchased by the user. Instead, combine all the purchases into a single subtotal item. Use additional line items to represent other costs or discounts (tax, shipping, coupons, and so forth.).
 
@@ -49,13 +50,15 @@ If you do not have any additional costs or discounts, do not use this argument. 
 
 ## See Also
 
-- [supportsVersion](applepaysession/supportsversion.md)
+### Related Documentation
+- [supportsVersion](./supportsversion.md)
   Detects whether a web browser supports a particular Apple Pay version.
-- [onshippingmethodselected](applepaysession/onshippingmethodselected.md)
+### Handling shipping method updates
+- [onshippingmethodselected](./onshippingmethodselected.md)
   An event handler to call when the user selects a shipping method.
-- [ApplePayShippingMethodSelectedEvent](applepayshippingmethodselectedevent.md)
+- [ApplePayShippingMethodSelectedEvent](../applepayshippingmethodselectedevent.md)
   An event object that contains the shipping method.
-- [ApplePayShippingMethodUpdate](applepayshippingmethodupdate.md)
+- [ApplePayShippingMethodUpdate](../applepayshippingmethodupdate.md)
   Updated transaction details that result from a change in shipping method.
 
 

@@ -1,7 +1,8 @@
 # insertionIndex
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an insertion index that indicates where the new or copied object or objects should be placed.
 
@@ -15,23 +16,28 @@ Returns an insertion index that indicates where the new or copied object or obje
 var insertionIndex: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger insertionIndex;
+```
+
 #### Return Value
 
 An insertion index. Determined by evaluating the receiver.
 
 ## See Also
 
-- [var insertionContainer: Any?](nspositionalspecifier/insertioncontainer.md)
+### Accessing information about a positional specifier
+- [var insertionContainer: Any?](./insertioncontainer.md)
   Returns the container in which the new or copied object or objects should be placed.
-- [var insertionKey: String?](nspositionalspecifier/insertionkey.md)
+- [var insertionKey: String?](./insertionkey.md)
   Returns the key that identifies the relationship into which the new or copied object or objects should be inserted.
-- [var insertionReplaces: Bool](nspositionalspecifier/insertionreplaces.md)
+- [var insertionReplaces: Bool](./insertionreplaces.md)
   Returns a Boolean value that indicates whether evaluation has been successful and the object to be inserted should actually replace the keyed, indexed object in the insertion container.
-- [var objectSpecifier: NSScriptObjectSpecifier](nspositionalspecifier/objectspecifier.md)
+- [var objectSpecifier: NSScriptObjectSpecifier](./objectspecifier.md)
   Returns the object specifier specified at initialization time.
-- [var position: NSPositionalSpecifier.InsertionPosition](nspositionalspecifier/position.md)
+- [var position: NSPositionalSpecifier.InsertionPosition](./position.md)
   Returns the insertion position specified at initialization time.
-- [func setInsertionClassDescription(NSScriptClassDescription)](nspositionalspecifier/setinsertionclassdescription(_:).md)
+- [func setInsertionClassDescription(NSScriptClassDescription)](./setinsertionclassdescription%28_%29.md)
   Sets the class description for the object or objects to be inserted.
 
 

@@ -1,7 +1,8 @@
 # PredicateExpressions.ExpressionEvaluate
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,23 +22,23 @@ struct ExpressionEvaluate<Transformation, each Input, Output> where Transformati
 ## Topics
 
 ### Initializers
-- [init(expression: Transformation, input: repeat each Input)](predicateexpressions/expressionevaluate/init(expression:input:).md)
+- [init(expression: Transformation, input: repeat each Input)](./expressionevaluate/init%28expression,input%29.md)
 ### Instance Properties
-- [let expression: Transformation](predicateexpressions/expressionevaluate/expression.md)
-- [let input: (repeat each Input)](predicateexpressions/expressionevaluate/input.md)
+- [let expression: Transformation](./expressionevaluate/expression.md)
+- [let input: (repeat each Input)](./expressionevaluate/input.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

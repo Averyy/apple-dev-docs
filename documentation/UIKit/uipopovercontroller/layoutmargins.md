@@ -1,20 +1,27 @@
 # layoutMargins
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The margins that define the portion of the screen in which it is permissible to display the popover.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 5.0+ - Deprecated in 9.0
+- iPadOS 5.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: UIPopoverController is deprecated. Popovers are now implemented as UIViewController presentations. Use a modal presentation style of UIModalPresentationPopover and UIPopoverPresentationController.
 
 ## Declaration
 
 ```swift
 var layoutMargins: UIEdgeInsets { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) UIEdgeInsets popoverLayoutMargins;
 ```
 
 #### Discussion
@@ -25,9 +32,10 @@ The default edge insets are 10 points along each edge. The popover controller au
 
 ## See Also
 
-- [var backgroundViewClass: AnyClass?](uipopovercontroller/backgroundviewclass.md)
+### Customizing the popover appearance
+- [var backgroundViewClass: AnyClass?](./backgroundviewclass.md)
   The class to use for displaying the popover background content.
-- [var backgroundColor: UIColor?](uipopovercontroller/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The color of the popover’s backdrop view.
 
 

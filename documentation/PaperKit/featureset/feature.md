@@ -1,7 +1,8 @@
 # FeatureSet.Feature
 
 **Framework**: PaperKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The features that PaperKit markup supports.
 
@@ -21,43 +22,44 @@ enum Feature
 ## Topics
 
 ### Describing element features
-- [FeatureSet.Feature.images](featureset/feature/images.md)
+- [FeatureSet.Feature.images](./feature/images.md)
   Supports image elements.
-- [FeatureSet.Feature.stickers](featureset/feature/stickers.md)
+- [FeatureSet.Feature.stickers](./feature/stickers.md)
   Supports inserting stickers.
-- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
+- [FeatureSet.Feature.loupes](./feature/loupes.md)
   Supports loupe elements.
-- [FeatureSet.Feature.links](featureset/feature/links.md)
+- [FeatureSet.Feature.links](./feature/links.md)
   Supports link elements.
 ### Describing shape features
-- [FeatureSet.Feature.shapeFills](featureset/feature/shapefills.md)
+- [FeatureSet.Feature.shapeFills](./feature/shapefills.md)
   Supports shapes with fills.
-- [FeatureSet.Feature.shapeStrokes](featureset/feature/shapestrokes.md)
+- [FeatureSet.Feature.shapeStrokes](./feature/shapestrokes.md)
   Supports shapes with strokes.
-- [FeatureSet.Feature.shapeOpacity](featureset/feature/shapeopacity.md)
+- [FeatureSet.Feature.shapeOpacity](./feature/shapeopacity.md)
   Supports shapes with opacity.
-- [FeatureSet.Feature.text](featureset/feature/text.md)
+- [FeatureSet.Feature.text](./feature/text.md)
   Supports shapes with text.
 ### Describing drawing features
-- [FeatureSet.Feature.drawing](featureset/feature/drawing.md)
+- [FeatureSet.Feature.drawing](./feature/drawing.md)
   Supports drawing.
 ### Type Properties
-- [static var allCases: [FeatureSet.Feature]](featureset/feature/allcases.md)
+- [static var allCases: [FeatureSet.Feature]](./feature/allcases.md)
   All cases of the feature enumeration, including platform-restricted ones.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FeatureSet.ContentVersion](featureset/contentversion-swift.enum.md)
-- [FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.struct.md)
+### Describing feature types
+- [FeatureSet.ContentVersion](./contentversion-swift.enum.md)
+- [FeatureSet.LineMarkerPositions](./linemarkerpositions-swift.struct.md)
   The arrow marker positions for the ends of a line.
 
 

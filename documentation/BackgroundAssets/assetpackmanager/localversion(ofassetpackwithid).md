@@ -1,7 +1,8 @@
 # localVersion(ofAssetPackWithID:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a locally available asset pack’s version number.
 
@@ -26,7 +27,7 @@ The asset pack’s version number.
 
 #### Discussion
 
-> **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the specified ID is available locally.
+> **Throws**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](../managedbackgroundassetserror/assetpacknotfound%28withid%29.md) when no asset pack with the specified ID is available locally.
 
 ## Parameters
 

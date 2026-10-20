@@ -1,18 +1,19 @@
 # fontName
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font used for the text in the label.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The font used for the text in the label.
 var fontName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * fontName;
+```
+
 ## Mentions
 
-- [Adding Text to a Scene](adding-text-to-a-scene.md)
+- [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
 ## See Also
 
-- [var fontColor: UIColor?](sklabelnode/fontcolor.md)
+### Specifying a Label’s Font
+- [var fontColor: UIColor?](./fontcolor.md)
   The color of the label.
-- [var fontSize: CGFloat](sklabelnode/fontsize.md)
+- [var fontSize: CGFloat](./fontsize.md)
   The size of the font used in the label.
 
 

@@ -1,7 +1,8 @@
 # scheme
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scheme URL component, or nil if not present.
 
@@ -20,6 +21,10 @@ The scheme URL component, or nil if not present.
 var scheme: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * scheme;
+```
+
 #### Discussion
 
 For example, in the URL `http://www.example.com/index.html`, the scheme is `http`.
@@ -30,23 +35,24 @@ If you attempt to set the scheme to an invalid scheme string, this class throws 
 
 ## See Also
 
-- [var fragment: String?](nsurlcomponents/fragment.md)
+### Accessing components in native format
+- [var fragment: String?](./fragment.md)
   The fragment URL component (the part after a `#` symbol), or nil if not present.
-- [var host: String?](nsurlcomponents/host.md)
+- [var host: String?](./host.md)
   The host URL subcomponent, or nil if not present.
-- [var encodedHost: String?](nsurlcomponents/encodedhost.md)
+- [var encodedHost: String?](./encodedhost.md)
   The host subcomponent, percent-encoded.
-- [var password: String?](nsurlcomponents/password.md)
+- [var password: String?](./password.md)
   The password URL subcomponent, or nil if not present.
-- [var path: String?](nsurlcomponents/path.md)
+- [var path: String?](./path.md)
   The path URL component, or nil if not present.
-- [var port: NSNumber?](nsurlcomponents/port.md)
+- [var port: NSNumber?](./port.md)
   The port number URL component, or nil if not present.
-- [var query: String?](nsurlcomponents/query.md)
+- [var query: String?](./query.md)
   The query URL component as a string, or nil if not present.
-- [var queryItems: [URLQueryItem]?](nsurlcomponents/queryitems.md)
+- [var queryItems: [URLQueryItem]?](./queryitems.md)
   The query URL component as an array of name/value pairs.
-- [var user: String?](nsurlcomponents/user.md)
+- [var user: String?](./user.md)
   The username URL subcomponent, or nil if not present.
 
 

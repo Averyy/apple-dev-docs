@@ -1,7 +1,8 @@
 # rawTagValue
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag’s contained value.
 
@@ -22,9 +23,10 @@ final let rawTagValue: CMTag.Value
 
 ## See Also
 
-- [let rawCategory: CMTag.RawCategory](cmtag-swift.class/rawcategory-swift.property.md)
+### Inspecting Tags
+- [let rawCategory: CMTag.RawCategory](./rawcategory-swift.property.md)
   The raw 64-bit representation of the tag’s category.
-- [func value<T>(onlyIfMatching: CMTypedTag<T>.Category) -> T?](cmtag-swift.class/value(onlyifmatching:).md)
+- [func value<T>(onlyIfMatching: CMTypedTag<T>.Category) -> T?](./value%28onlyifmatching%29.md)
   Retrieves a tag’s value as a specific type, if and only if it matches a category.
 
 

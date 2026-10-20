@@ -1,7 +1,8 @@
 # MTLPrimitiveType.point
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rasterize a point at each vertex. The vertex shader needs to provide `[[point_size]]`, or the point size is undefined.
 
@@ -10,7 +11,7 @@ Rasterize a point at each vertex. The vertex shader needs to provide `[[point_si
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ Rasterize a point at each vertex. The vertex shader needs to provide `[[point_si
 case point
 ```
 
+```c
+MTLPrimitiveTypePoint
+```
+
 ## See Also
 
-- [MTLPrimitiveType.line](mtlprimitivetype/line.md)
+### Geometric primitive types
+- [MTLPrimitiveType.line](./line.md)
   Rasterize a line between each separate pair of vertices, resulting in a series of unconnected lines. If there are an odd number of vertices, the last vertex is ignored.
-- [MTLPrimitiveType.lineStrip](mtlprimitivetype/linestrip.md)
+- [MTLPrimitiveType.lineStrip](./linestrip.md)
   Rasterize a line between each pair of adjacent vertices, resulting in a series of connected lines (also called a polyline).
-- [MTLPrimitiveType.triangle](mtlprimitivetype/triangle.md)
+- [MTLPrimitiveType.triangle](./triangle.md)
   For every separate set of three vertices, rasterize a triangle. If the number of vertices is not a multiple of three, either one or two vertices is ignored.
-- [MTLPrimitiveType.triangleStrip](mtlprimitivetype/trianglestrip.md)
+- [MTLPrimitiveType.triangleStrip](./trianglestrip.md)
   For every three adjacent vertices, rasterize a triangle.
 
 

@@ -1,12 +1,13 @@
 # WebNavigationType.backForward
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user clicked back or forward button.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The user clicked back or forward button.
 case backForward
 ```
 
+```c
+WebNavigationTypeBackForward
+```
+
 ## See Also
 
-- [WebNavigationType.linkClicked](webnavigationtype/linkclicked.md)
+### Constants
+- [WebNavigationType.linkClicked](./linkclicked.md)
   A link (an `href`) was clicked.
-- [WebNavigationType.formSubmitted](webnavigationtype/formsubmitted.md)
+- [WebNavigationType.formSubmitted](./formsubmitted.md)
   A form was submitted.
-- [WebNavigationType.reload](webnavigationtype/reload.md)
+- [WebNavigationType.reload](./reload.md)
   The user hit the reload button.
-- [WebNavigationType.formResubmitted](webnavigationtype/formresubmitted.md)
+- [WebNavigationType.formResubmitted](./formresubmitted.md)
   A form was resubmitted (through a back, forward or reload action).
-- [WebNavigationType.other](webnavigationtype/other.md)
+- [WebNavigationType.other](./other.md)
   Navigation is taking place for some other reason.
 
 

@@ -1,7 +1,8 @@
 # attributed
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that formats the duration as an attributed string.
 
@@ -22,7 +23,7 @@ var attributed: Duration.UnitsFormatStyle.Attributed { get }
 
 #### Discussion
 
-Apply the `attributed` property to a configured [`Duration.UnitsFormatStyle`](duration/unitsformatstyle.md) to produce an [`Duration.UnitsFormatStyle.Attributed`](duration/unitsformatstyle/attributed-swift.struct.md) style. You can then format a duration with this style to create a formatted   [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](https://developer.apple.com/documentation/foundation/attributescopes/foundationattributes/datefieldattribute) and [`AttributeScopes.FoundationAttributes.MeasurementAttribute`](https://developer.apple.com/documentation/foundation/attributescopes/foundationattributes/measurementattribute) for runs with formatted durations.
+Apply the `attributed` property to a configured [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) to produce an [`Duration.UnitsFormatStyle.Attributed`](./attributed-swift.struct.md) style. You can then format a duration with this style to create a formatted   [`AttributedString`](../../../Foundation/attributedstring.md). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](../../../Foundation/attributescopes/foundationattributes/datefieldattribute.md) and [`AttributeScopes.FoundationAttributes.MeasurementAttribute`](../../../Foundation/attributescopes/foundationattributes/measurementattribute.md) for runs with formatted durations.
 
 The following example formats a duration as an attributed string:
 
@@ -52,7 +53,8 @@ The resulting `attributedDuration`, representing the string `1 hr, 10 min, 32 se
 
 ## See Also
 
-- [Duration.UnitsFormatStyle.Attributed](duration/unitsformatstyle/attributed-swift.struct.md)
+### Formatting a duration as an attributed string
+- [Duration.UnitsFormatStyle.Attributed](./attributed-swift.struct.md)
   A format style that formats durations as attributed strings.
 
 

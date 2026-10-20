@@ -1,7 +1,8 @@
 # init(title:subtitle:image:identifier:discoverabilityTitle:attributes:state:handler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action with the specified title, subtitle, image, identifier, discoverability title, attributes, state, and handler.
 
@@ -10,7 +11,7 @@ Creates an action with the specified title, subtitle, image, identifier, discove
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,22 +24,25 @@ Creates an action with the specified title, subtitle, image, identifier, discove
 
 - `title`: The title to display for the action.
 - `subtitle`: The subtitle to display alongside the action’s title.
-- `image`: The image to display next to the action’s `title`. Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
+- `image`: The image to display next to the action’s `title`. Only the [`context`](../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 - `identifier`: The unique identifier for the action. Specify `nil` to let this method create a unique identifier for you.
 - `discoverabilityTitle`: An elaborated title that explains the purpose of the action.
 - `attributes`: The attributes indicating the style of the action.
 - `state`: The initial state of the action.
-- `handler`: The handler to invoke after a person selects the action. This handler has the following parameter: - **action**: The action that a person selects.
+- `handler`: The handler to invoke after a person selects the action. This handler has the following parameter:
+
+  - **action**: The action that a person selects.
 
 ## See Also
 
-- [convenience init(title: String, image: UIImage?, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State, handler: UIActionHandler)](uiaction/init(title:image:identifier:discoverabilitytitle:attributes:state:handler:).md)
+### Creating an action
+- [convenience init(title: String, image: UIImage?, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State, handler: UIActionHandler)](./init%28title,image,identifier,discoverabilitytitle,attributes,state,handler%29.md)
   Creates an action with the specified title, image, identifier, discoverability title, attributes, state, and handler.
-- [class func captureTextFromCamera(responder: any UIResponder & UIKeyInput, identifier: UIAction.Identifier?) -> Self](uiaction/capturetextfromcamera(responder:identifier:).md)
+- [class func captureTextFromCamera(responder: any UIResponder & UIKeyInput, identifier: UIAction.Identifier?) -> Self](./capturetextfromcamera%28responder,identifier%29.md)
   Creates an action for capturing text using the device’s camera.
-- [UIAction.Identifier](uiaction/identifier-swift.struct.md)
+- [UIAction.Identifier](./identifier-swift.struct.md)
   A type that represents an action identifier.
-- [typealias UIActionHandler](uiactionhandler.md)
+- [typealias UIActionHandler](../uiactionhandler.md)
   A type that defines the closure for an action handler.
 
 

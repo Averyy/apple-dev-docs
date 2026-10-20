@@ -1,7 +1,8 @@
 # commit
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the operations on the database that created this batch builder object.
 
@@ -10,13 +11,13 @@ Executes the operations on the database that created this batch builder object.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordsResponse, CloudKit.CKError> commit();
 ```
 
 #### Return Value
 
-A `Promise` object that resolves to a RecordsResponse object if the operation succeeds; otherwise, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a RecordsResponse object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
 
 ---

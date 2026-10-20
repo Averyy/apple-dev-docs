@@ -1,7 +1,8 @@
 # dynamicAnimatorWillResume(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a dynamic animator is about to resume the animations for its behaviors’ associated dynamic items.
 
@@ -9,7 +10,7 @@ Called when a dynamic animator is about to resume the animations for its behavio
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Called when a dynamic animator is about to resume the animations for its behavio
 optional func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator)
 ```
 
+```objc
+- (void) dynamicAnimatorWillResume:(UIDynamicAnimator *) animator;
+```
+
 ## Parameters
 
 - `animator`: The dynamic animator that is about to resume animation.
 
 ## See Also
 
-- [func dynamicAnimatorDidPause(UIDynamicAnimator)](uidynamicanimatordelegate/dynamicanimatordidpause(_:).md)
+### Responding to animation pausing and resumption
+- [func dynamicAnimatorDidPause(UIDynamicAnimator)](./dynamicanimatordidpause%28_%29.md)
   Called when a dynamic animator pauses the animations for its behaviors’ associated dynamic items.
 
 

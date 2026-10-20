@@ -1,7 +1,8 @@
 # shippingContactEditingMode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the shipping mode prevents the user from editing the shipping address.
 
@@ -11,7 +12,7 @@ A value that indicates whether the shipping mode prevents the user from editing 
 
 ## Declaration
 
-```swift
+```
 ApplePayShippingContactEditingMode shippingContactEditingMode;
 ```
 
@@ -19,15 +20,16 @@ ApplePayShippingContactEditingMode shippingContactEditingMode;
 
 Set the value to `storePickup` for an in-store or other pickup to prevent the user from editing the shipping address.
 
-For more information on configuring a package for store pickup, see [`Displaying a Read-Only Pickup Address`](https://developer.apple.com/documentation/passkit/displaying-a-read-only-pickup-address).
+For more information on configuring a package for store pickup, see [Displaying a Read-Only Pickup Address](../../PassKit/displaying-a-read-only-pickup-address.md).
 
 > ❗ **Important**:  Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to restart the payment process.
 
 ## See Also
 
-- [billingContact](applepayrequestbase/billingcontact.md)
+### Setting contact information
+- [billingContact](./billingcontact.md)
   A prepopulated billing address.
-- [shippingContact](applepayrequestbase/shippingcontact.md)
+- [shippingContact](./shippingcontact.md)
   The customer’s address, used for sending products or services for to the person.
 
 

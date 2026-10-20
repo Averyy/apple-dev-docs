@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool-calling behavior this mode represents.
 
@@ -21,7 +22,8 @@ var kind: GenerationOptions.ToolCallingMode.Kind
 
 ## See Also
 
-- [GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.enum.md)
+### Accessing the content
+- [GenerationOptions.ToolCallingMode.Kind](./kind-swift.enum.md)
   A representation of the different ways a model can use tools.
 
 

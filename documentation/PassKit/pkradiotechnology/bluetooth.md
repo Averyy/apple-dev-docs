@@ -1,7 +1,8 @@
 # bluetooth
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier that indicates the Bluetooth radio frequency communication technology.
 
@@ -9,7 +10,7 @@ An identifier that indicates the Bluetooth radio frequency communication technol
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.3+
 
@@ -19,9 +20,14 @@ An identifier that indicates the Bluetooth radio frequency communication technol
 static var bluetooth: PKRadioTechnology { get }
 ```
 
+```c
+PKRadioTechnologyBluetooth
+```
+
 ## See Also
 
-- [static var NFC: PKRadioTechnology](pkradiotechnology/nfc.md)
+### Reading the radio technology type
+- [static var NFC: PKRadioTechnology](./nfc.md)
   An identifier that indicates the near field communication (NFC) radio frequency communication technology.
 
 

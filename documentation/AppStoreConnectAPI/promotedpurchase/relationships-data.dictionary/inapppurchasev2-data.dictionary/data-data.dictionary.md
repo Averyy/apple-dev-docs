@@ -1,7 +1,8 @@
 # PromotedPurchase.Relationships.InAppPurchaseV2.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a promoted purchase.
 
@@ -10,14 +11,14 @@ The request body you use to update a promoted purchase.
 
 ## Declaration
 
-```swift
+```
 object PromotedPurchase.Relationships.InAppPurchaseV2.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchases`
 
 
 ---

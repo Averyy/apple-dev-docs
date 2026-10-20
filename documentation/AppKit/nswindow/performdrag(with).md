@@ -1,7 +1,8 @@
 # performDrag(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a window drag based on the specified mouse-down event.
 
@@ -12,6 +13,10 @@ Starts a window drag based on the specified mouse-down event.
 
 ```swift
 func performDrag(with event: NSEvent)
+```
+
+```objc
+- (void) performWindowDragWithEvent:(NSEvent *) event;
 ```
 
 #### Discussion
@@ -26,17 +31,18 @@ This method returns right away, and a mouse-up event may not get sent.
 
 ## See Also
 
-- [var acceptsMouseMovedEvents: Bool](nswindow/acceptsmousemovedevents.md)
+### Handling Mouse Events
+- [var acceptsMouseMovedEvents: Bool](./acceptsmousemovedevents.md)
   A Boolean value that indicates whether the window accepts mouse-moved events.
-- [var ignoresMouseEvents: Bool](nswindow/ignoresmouseevents.md)
+- [var ignoresMouseEvents: Bool](./ignoresmouseevents.md)
   A Boolean value that indicates whether the window is transparent to mouse events.
-- [var mouseLocationOutsideOfEventStream: NSPoint](nswindow/mouselocationoutsideofeventstream.md)
+- [var mouseLocationOutsideOfEventStream: NSPoint](./mouselocationoutsideofeventstream.md)
   The current location of the pointer reckoned in the window’s base coordinate system, regardless of the current event being handled or of any events pending.
-- [class func windowNumber(at: NSPoint, belowWindowWithWindowNumber: Int) -> Int](nswindow/windownumber(at:belowwindowwithwindownumber:).md)
+- [class func windowNumber(at: NSPoint, belowWindowWithWindowNumber: Int) -> Int](./windownumber%28at,belowwindowwithwindownumber%29.md)
   Returns the number of the frontmost window that would be hit by a mouse-down at the specified screen location.
-- [func trackEvents(matching: NSEvent.EventTypeMask, timeout: TimeInterval, mode: RunLoop.Mode, handler: (NSEvent?, UnsafeMutablePointer<ObjCBool>) -> Void)](nswindow/trackevents(matching:timeout:mode:handler:).md)
+- [func trackEvents(matching: NSEvent.EventTypeMask, timeout: TimeInterval, mode: RunLoop.Mode, handler: (NSEvent?, UnsafeMutablePointer<ObjCBool>) -> Void)](./trackevents%28matching,timeout,mode,handler%29.md)
   Tracks events that match the specified mask using the specified tracking handler until the tracking handler explicitly terminates tracking.
-- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](../nsevent/foreverduration.md)
   The longest time duration possible.
 
 

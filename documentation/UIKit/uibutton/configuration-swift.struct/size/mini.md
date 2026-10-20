@@ -1,7 +1,8 @@
 # UIButton.Configuration.Size.mini
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays button elements at the smallest size.
 
@@ -10,7 +11,7 @@ Displays button elements at the smallest size.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ case mini
 
 ## See Also
 
-- [UIButton.Configuration.Size.large](uibutton/configuration-swift.struct/size/large.md)
+### Button sizes
+- [UIButton.Configuration.Size.large](./large.md)
   Displays button elements at a large size.
-- [UIButton.Configuration.Size.medium](uibutton/configuration-swift.struct/size/medium.md)
+- [UIButton.Configuration.Size.medium](./medium.md)
   Displays button elements at a standard size.
-- [UIButton.Configuration.Size.small](uibutton/configuration-swift.struct/size/small.md)
+- [UIButton.Configuration.Size.small](./small.md)
   Displays button elements at a small size.
 
 

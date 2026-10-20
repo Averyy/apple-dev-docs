@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hand-tracking provider.
 
@@ -16,9 +17,10 @@ init()
 
 ## See Also
 
-- [static var isSupported: Bool](handtrackingprovider/issupported.md)
+### Creating a hand-tracking provider
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports hand-tracking providers.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](handtrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking hands.
 
 

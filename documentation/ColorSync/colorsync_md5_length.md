@@ -1,7 +1,8 @@
 # COLORSYNC_MD5_LENGTH
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -18,13 +19,18 @@
 var COLORSYNC_MD5_LENGTH: Int32 { get }
 ```
 
+```c
+#define COLORSYNC_MD5_LENGTH
+```
+
 ## See Also
 
-- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](colorsyncprofilegetmd5(_:).md)
+### Computing profile digests
+- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](./colorsyncprofilegetmd5%28_%29.md)
   Returns the MD5 digest for a profile.
-- [struct ColorSyncMD5](colorsyncmd5.md)
+- [struct ColorSyncMD5](./colorsyncmd5.md)
   An MD5 digest that uniquely identifies a profile, as defined by the ICC specification.
-- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](kcolorsyncprofilemd5digest.md)
+- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](./kcolorsyncprofilemd5digest.md)
   A key for the profile’s MD5 digest.
 
 

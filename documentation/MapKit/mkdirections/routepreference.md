@@ -1,7 +1,8 @@
 # MKDirections.RoutePreference
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that modify how the framework selects routes when calculating directions.
 
@@ -20,31 +21,36 @@ Options that modify how the framework selects routes when calculating directions
 enum RoutePreference
 ```
 
+```c
+enum MKDirectionsRoutePreference : NSInteger;
+```
+
 ## Topics
 
 ### Route selection options
-- [MKDirections.RoutePreference.any](mkdirections/routepreference/any.md)
+- [MKDirections.RoutePreference.any](./routepreference/any.md)
   The option that specifies any available route.
-- [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
+- [MKDirections.RoutePreference.avoid](./routepreference/avoid.md)
   The option that requests the framework avoid certain routes.
 ### Initializers
-- [init?(rawValue: Int)](mkdirections/routepreference/init(rawvalue:).md)
+- [init?(rawValue: Int)](./routepreference/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(request: MKDirections.Request)](mkdirections/init(request:).md)
+### Creating a directions object
+- [init(request: MKDirections.Request)](./init%28request%29.md)
   Creates and returns a directions object using the specified request.
-- [MKDirections.Request](mkdirections/request.md)
+- [MKDirections.Request](./request.md)
   The start and end points of a route, along with the planned mode of transportation.
 
 

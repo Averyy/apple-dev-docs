@@ -1,7 +1,8 @@
 # visibility
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance at which an object can be clearly seen.
 
@@ -26,11 +27,12 @@ The amount of light and weather conditions like fog, mist, and smog affect visib
 
 ## See Also
 
-- [var cloudCover: Double](hourweather/cloudcover.md)
+### Getting conditions
+- [var cloudCover: Double](./cloudcover.md)
   The percentage of the sky covered with clouds.
-- [var condition: WeatherCondition](hourweather/condition.md)
+- [var condition: WeatherCondition](./condition.md)
   A description of the weather condition for this hour.
-- [var isDaylight: Bool](hourweather/isdaylight.md)
+- [var isDaylight: Bool](./isdaylight.md)
   The presence or absence of daylight at the requested location and hour.
 
 

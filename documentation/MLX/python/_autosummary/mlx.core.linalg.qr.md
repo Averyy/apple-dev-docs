@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.qr
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.linalg.qr.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.linalg.qr
-
- Table of contents 
-
-## Contents
-
-# mlx.core.linalg.qr
-
-**qr(*a: array*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**qr(*a: array*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.md#mlx.core.array), [array](mlx.core.array.md#mlx.core.array)]**
 : The QR factorization of the input matrix.
 This function supports arrays with at least 2 dimensions. The matrices
 which are factorized are assumed to be in the last two dimensions of
@@ -41,24 +14,25 @@ the input.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
 Returns:
 `Q` and `R` matrices such that `Q @ R = a`.
 
 Return type:
-[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array))
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array), [array](mlx.core.array.md#mlx.core.array))
 
 Example
->>> A = mx.array([[2., 3.], [1., 2.]])
->>> Q, R = mx.linalg.qr(A, stream=mx.cpu)
->>> Q
-array([[-0.894427, -0.447214],
-       [-0.447214, 0.894427]], dtype=float32)
->>> R
-array([[-2.23607, -3.57771],
-       [0, 0.447214]], dtype=float32)
 
-** Contents
+  ```
+  >>> A = mx.array([[2., 3.], [1., 2.]])
+  >>> Q, R = mx.linalg.qr(A, stream=mx.cpu)
+  >>> Q
+  array([[-0.894427, -0.447214],
+         [-0.447214, 0.894427]], dtype=float32)
+  >>> R
+  array([[-2.23607, -3.57771],
+         [0, 0.447214]], dtype=float32)
+  ```

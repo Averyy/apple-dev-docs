@@ -1,14 +1,15 @@
 # ai_auid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 au_id_t ai_auid;
 ```
 

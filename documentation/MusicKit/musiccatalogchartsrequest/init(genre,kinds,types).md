@@ -1,7 +1,8 @@
 # init(genre:kinds:types:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a catalog charts request for a specified genre and list of types to include in the catalog charts response.
 

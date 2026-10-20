@@ -1,7 +1,8 @@
 # conferenceDetails
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the conference that users may find helpful.
 
@@ -19,13 +20,18 @@ Additional information about the conference that users may find helpful.
 var conferenceDetails: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * conferenceDetails;
+```
+
 ## See Also
 
-- [var title: String?](ekvirtualconferencedescriptor/title.md)
+### Configuring Virtual Conferences
+- [var title: String?](./title.md)
   The user-visible name of the virtual conference.
-- [var urlDescriptors: [EKVirtualConferenceURLDescriptor]](ekvirtualconferencedescriptor/urldescriptors.md)
+- [var urlDescriptors: [EKVirtualConferenceURLDescriptor]](./urldescriptors.md)
   An array that contains objects with details about where to join the virtual conference.
-- [class EKVirtualConferenceURLDescriptor](ekvirtualconferenceurldescriptor.md)
+- [class EKVirtualConferenceURLDescriptor](../ekvirtualconferenceurldescriptor.md)
   Details about how users join a virtual conference, including a title and URL.
 
 

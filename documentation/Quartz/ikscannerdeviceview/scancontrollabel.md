@@ -1,7 +1,8 @@
 # scanControlLabel
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows customization of the “Scan” label.
 
@@ -14,9 +15,14 @@ Allows customization of the “Scan” label.
 var scanControlLabel: String! { get set }
 ```
 
+```objc
+@property (copy) NSString * scanControlLabel;
+```
+
 ## See Also
 
-- [var overviewControlLabel: String!](ikscannerdeviceview/overviewcontrollabel.md)
+### Customizing Button Labels
+- [var overviewControlLabel: String!](./overviewcontrollabel.md)
   Allows customization of the “Overview” label.
 
 

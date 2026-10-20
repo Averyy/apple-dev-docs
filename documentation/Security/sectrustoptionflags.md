@@ -1,7 +1,8 @@
 # SecTrustOptionFlags
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The option flags used to condition a trust evaluation.
 
@@ -14,42 +15,46 @@ The option flags used to condition a trust evaluation.
 struct SecTrustOptionFlags
 ```
 
+```c
+enum SecTrustOptionFlags : uint32_t;
+```
+
 #### Overview
 
-Use these flags in calls to the [`SecTrustSetOptions(_:_:)`](sectrustsetoptions(_:_:).md) function.
+Use these flags in calls to the [`SecTrustSetOptions(_:_:)`](./sectrustsetoptions%28_,_%29.md) function.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](sectrustoptionflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./sectrustoptionflags/init%28rawvalue%29.md)
   Initializes a trust option flags structure.
 ### Flags
-- [static var allowExpired: SecTrustOptionFlags](sectrustoptionflags/allowexpired.md)
+- [static var allowExpired: SecTrustOptionFlags](./sectrustoptionflags/allowexpired.md)
   Allow expired certificates (except for the root certificate).
-- [static var leafIsCA: SecTrustOptionFlags](sectrustoptionflags/leafisca.md)
+- [static var leafIsCA: SecTrustOptionFlags](./sectrustoptionflags/leafisca.md)
   Allow CA certificates as leaf certificates.
-- [static var fetchIssuerFromNet: SecTrustOptionFlags](sectrustoptionflags/fetchissuerfromnet.md)
+- [static var fetchIssuerFromNet: SecTrustOptionFlags](./sectrustoptionflags/fetchissuerfromnet.md)
   Allow network downloads of CA certificates.
-- [static var allowExpiredRoot: SecTrustOptionFlags](sectrustoptionflags/allowexpiredroot.md)
+- [static var allowExpiredRoot: SecTrustOptionFlags](./sectrustoptionflags/allowexpiredroot.md)
   Allow expired root certificates.
-- [static var requireRevPerCert: SecTrustOptionFlags](sectrustoptionflags/requirerevpercert.md)
+- [static var requireRevPerCert: SecTrustOptionFlags](./sectrustoptionflags/requirerevpercert.md)
   Require a positive revocation check for each certificate.
-- [static var useTrustSettings: SecTrustOptionFlags](sectrustoptionflags/usetrustsettings.md)
+- [static var useTrustSettings: SecTrustOptionFlags](./sectrustoptionflags/usetrustsettings.md)
   Use TrustSettings instead of anchors.
-- [static var implicitAnchors: SecTrustOptionFlags](sectrustoptionflags/implicitanchors.md)
+- [static var implicitAnchors: SecTrustOptionFlags](./sectrustoptionflags/implicitanchors.md)
   Treat properly self-signed certificates as anchors implicitly.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

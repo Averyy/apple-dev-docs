@@ -1,6 +1,7 @@
 # PreferencePanes Constants
 
-**Framework**: Preference Panes
+**Framework**: Preference Panes  
+**Role**: API Collection
 
 
 ---

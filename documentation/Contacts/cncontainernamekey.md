@@ -1,7 +1,8 @@
 # CNContainerNameKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the container.
 
@@ -19,17 +20,22 @@ The name of the container.
 let CNContainerNameKey: String
 ```
 
+```c
+extern NSString * const CNContainerNameKey;
+```
+
 #### Discussion
 
 This key represents the container identifier property for KVC/KVO usage. This property is always fetched.
 
 ## See Also
 
-- [let CNGroupNameKey: String](cngroupnamekey.md)
+### Groups and Containers
+- [let CNGroupNameKey: String](./cngroupnamekey.md)
   The name of the group.
-- [let CNGroupIdentifierKey: String](cngroupidentifierkey.md)
+- [let CNGroupIdentifierKey: String](./cngroupidentifierkey.md)
   The identifier of the group.
-- [let CNContainerTypeKey: String](cncontainertypekey.md)
+- [let CNContainerTypeKey: String](./cncontainertypekey.md)
   The type of the container.
 
 

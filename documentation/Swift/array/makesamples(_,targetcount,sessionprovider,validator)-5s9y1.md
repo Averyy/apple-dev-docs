@@ -1,7 +1,8 @@
 # makeSamples(_:targetCount:sessionProvider:validator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates synthetic data based on this dataset and returns a stream of new samples.
 
@@ -17,6 +18,8 @@ Generates synthetic data based on this dataset and returns a stream of new sampl
 ```swift
 func makeSamples(_ prompt: Prompt, targetCount: Int, sessionProvider: (@Sendable () -> LanguageModelSession)? = nil, validator: (nonisolated(nonsending) @Sendable (Element) async throws -> Bool)? = nil) -> some AsyncSequence<Element, any Error>
 ```
+
+Available when `Element` conforms to `ModelSampleProtocol` and `Generable`.
 
 #### Return Value
 

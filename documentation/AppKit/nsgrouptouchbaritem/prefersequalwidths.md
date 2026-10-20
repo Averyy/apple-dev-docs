@@ -1,7 +1,8 @@
 # prefersEqualWidths
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies that items should have equal widths when possible.
 
@@ -17,15 +18,20 @@ A Boolean value that specifies that items should have equal widths when possible
 var prefersEqualWidths: Bool { get set }
 ```
 
+```objc
+@property BOOL prefersEqualWidths;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), items in the [`groupTouchBar`](nsgrouptouchbaritem/grouptouchbar.md) are sized to have equal widths when possible.
+When [`true`](../../Swift/true.md), items in the [`groupTouchBar`](./grouptouchbar.md) are sized to have equal widths when possible.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var preferredItemWidth: CGFloat](nsgrouptouchbaritem/preferreditemwidth.md)
+### Configuring item width
+- [var preferredItemWidth: CGFloat](./preferreditemwidth.md)
   The preferred width for items in the group.
 
 

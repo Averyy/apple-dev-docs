@@ -1,7 +1,8 @@
 # accountName
 
 **Framework**: Media Setup  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s display name, email address, or other identifier in a streaming media service.
 
@@ -17,11 +18,16 @@ The user’s display name, email address, or other identifier in a streaming med
 var accountName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * accountName;
+```
+
 ## See Also
 
-- [init(serviceName: String, accountName: String)](msserviceaccount/init(servicename:accountname:).md)
+### Presenting Account Information to the User
+- [init(serviceName: String, accountName: String)](./init%28servicename,accountname%29.md)
   Creates a new account.
-- [var serviceName: String](msserviceaccount/servicename.md)
+- [var serviceName: String](./servicename.md)
   The localized name of the streaming media service.
 
 

@@ -1,7 +1,8 @@
 # TerritoryAvailability.Relationships.Territory.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a territory availability.
 
@@ -10,14 +11,14 @@ The request body you use to update a territory availability.
 
 ## Declaration
 
-```swift
+```
 object TerritoryAvailability.Relationships.Territory.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `territories`
 
 
 ---

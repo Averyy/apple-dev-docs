@@ -1,7 +1,8 @@
 # PersistentIdentifier
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes the aggregate identity of a SwiftData model.
 
@@ -22,41 +23,42 @@ struct PersistentIdentifier
 
 #### Overview
 
-> **Note**: Decoded [`PersistentIdentifier`](persistentidentifier.md) and identifiers created by the [`DefaultStore`](defaultstore.md) are not considered equivalent.
+> **Note**: Decoded [`PersistentIdentifier`](./persistentidentifier.md) and identifiers created by the [`DefaultStore`](./defaultstore.md) are not considered equivalent.
 
 ## Topics
 
 ### Accessing identity information
-- [let id: PersistentIdentifier.ID](persistentidentifier/id-swift.property.md)
+- [let id: PersistentIdentifier.ID](./persistentidentifier/id-swift.property.md)
   The value that uniquely identifies the associated model within the containing store.
-- [PersistentIdentifier.ID](persistentidentifier/id-swift.struct.md)
+- [PersistentIdentifier.ID](./persistentidentifier/id-swift.struct.md)
   A type that represents the stable identity of a SwiftData model.
-- [var storeIdentifier: String?](persistentidentifier/storeidentifier.md)
+- [var storeIdentifier: String?](./persistentidentifier/storeidentifier.md)
   The identifier of the store that contains the associated model.
-- [var entityName: String](persistentidentifier/entityname.md)
+- [var entityName: String](./persistentidentifier/entityname.md)
   The entity name for the associated model.
 ### Instance Properties
-- [var isTemporary: Bool](persistentidentifier/istemporary.md)
+- [var isTemporary: Bool](./persistentidentifier/istemporary.md)
   A Boolean value that indicates whether the identifier is temporary.
 ### Type Methods
-- [static func identifier<T>(for: String, entityName: String, primaryKey: T) throws -> PersistentIdentifier](persistentidentifier/identifier(for:entityname:primarykey:).md)
+- [static func identifier<T>(for: String, entityName: String, primaryKey: T) throws -> PersistentIdentifier](./persistentidentifier/identifier%28for,entityname,primarykey%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../Swift/comparable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var persistentModelID: PersistentIdentifier](persistentmodel/persistentmodelid.md)
-- [var modelContext: ModelContext?](persistentmodel/modelcontext.md)
+### Identifying the model instance
+- [var persistentModelID: PersistentIdentifier](./persistentmodel/persistentmodelid.md)
+- [var modelContext: ModelContext?](./persistentmodel/modelcontext.md)
 
 
 ---

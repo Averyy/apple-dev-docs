@@ -1,7 +1,8 @@
 # init(_:duration:startVelocity:endVelocity:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new keyframe using the given value and timestamp.
 

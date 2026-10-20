@@ -1,11 +1,12 @@
 # ExpressibleByDictionaryLiteral Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(dictionaryLiteral: (String, [Any?])...)](dataframe/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, [Any?])...)](./init%28dictionaryliteral%29.md)
   Creates a data frame from a dictionary literal.
 
 

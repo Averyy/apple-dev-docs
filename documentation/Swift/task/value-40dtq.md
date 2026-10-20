@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result from a nonthrowing task, after it completes.
 
@@ -20,6 +21,8 @@ The result from a nonthrowing task, after it completes.
 var value: Success { get async }
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` is `Never`.
+
 #### Discussion
 
 If the task hasn’t completed yet, accessing this property waits for it to complete and its priority increases to that of the current task. Note that this might not be as effective as creating the task with the correct priority, depending on the executor’s scheduling details.
@@ -28,9 +31,10 @@ Tasks that never throw an error can still check for cancellation, but they need 
 
 ## See Also
 
-- [var value: Success](task/value-60t02.md)
+### Accessing Results
+- [var value: Success](./value-60t02.md)
   The result from a throwing task, after it completes.
-- [var result: Result<Success, Failure>](task/result.md)
+- [var result: Result<Success, Failure>](./result.md)
   The result or error from a throwing task, after it completes.
 
 

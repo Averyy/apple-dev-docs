@@ -1,7 +1,8 @@
 # channelAssignments
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of channel descriptions associated with the audio recorder.
 
@@ -19,13 +20,17 @@ An array of channel descriptions associated with the audio recorder.
 var channelAssignments: [AVAudioSessionChannelDescription]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<AVAudioSessionChannelDescription *> * channelAssignments;
+```
+
 ## Mentions
 
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](../routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
 #### Discussion
 
-The default value of this property is `nil`. When the value is non-`nil`, this value must have the same number of channels as defined in the [`settings`](avaudiorecorder/settings.md) property for the [`AVNumberOfChannelsKey`](avnumberofchannelskey.md) value. Use this property to help record specific audio channels.
+The default value of this property is `nil`. When the value is non-`nil`, this value must have the same number of channels as defined in the [`settings`](./settings.md) property for the [`AVNumberOfChannelsKey`](../avnumberofchannelskey.md) value. Use this property to help record specific audio channels.
 
 
 ---

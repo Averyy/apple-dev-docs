@@ -1,7 +1,8 @@
 # readAttributeSessionDuration(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSessionDuration(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSessionDuration() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSessionDurationWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

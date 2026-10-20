@@ -1,7 +1,8 @@
 # DictationTranscriber.ReportingOption.frequentFinalization
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Biases the transcriber towards responsiveness, resulting in more frequent but also less accurate finalized results.
 
@@ -20,9 +21,10 @@ case frequentFinalization
 
 ## See Also
 
-- [DictationTranscriber.ReportingOption.alternativeTranscriptions](dictationtranscriber/reportingoption/alternativetranscriptions.md)
+### Reporting options
+- [DictationTranscriber.ReportingOption.alternativeTranscriptions](./alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
-- [DictationTranscriber.ReportingOption.volatileResults](dictationtranscriber/reportingoption/volatileresults.md)
+- [DictationTranscriber.ReportingOption.volatileResults](./volatileresults.md)
   Provides tentative results for an audio range in addition to the finalized result.
 
 

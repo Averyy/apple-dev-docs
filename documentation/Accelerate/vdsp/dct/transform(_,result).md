@@ -1,7 +1,8 @@
 # transform(_:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes an out-of-place single-precision real discrete cosine transform.
 
@@ -11,7 +12,7 @@ Computes an out-of-place single-precision real discrete cosine transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ func transform<U, V>(_ vector: U, result: inout V) where U : AccelerateBuffer, V
 
 ## See Also
 
-- [func transform<U>(U) -> [Float]](vdsp/dct/transform(_:).md)
+### Instance Methods
+- [func transform<U>(U) -> [Float]](./transform%28_%29.md)
   Returns the single-precision real discrete cosine transform.
 
 

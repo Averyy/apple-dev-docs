@@ -415,7 +415,7 @@ If a `catch` clause doesn't have a pattern,
 the clause matches any error
 and binds the error to a local constant named `error`.
 For more information about pattern matching,
-see [Patterns](Patterns.md).
+see [Patterns](../ReferenceManual/Patterns.md).
 
 <!--
   TODO: Call out the reasoning why we don't let you
@@ -750,7 +750,7 @@ in the following special cases:
   and propagates any errors from that closure.
   For a comparison between propagating a specific error type
   and using `rethrows`,
-  see [Rethrowing Functions and Methods](Declarations.md#Rethrowing-Functions-and-Methods).
+  see [Rethrowing Functions and Methods](../ReferenceManual/Declarations.md#Rethrowing-Functions-and-Methods).
 
 For example,
 consider code that summarizes ratings

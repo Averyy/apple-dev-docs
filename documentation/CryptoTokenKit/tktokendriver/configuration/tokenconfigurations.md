@@ -1,7 +1,8 @@
 # tokenConfigurations
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of all currently configured tokens for this token class, which the token instance identifier keys.
 
@@ -20,11 +21,16 @@ A dictionary of all currently configured tokens for this token class, which the 
 var tokenConfigurations: [TKToken.InstanceID : TKToken.Configuration] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,TKTokenConfiguration *> * tokenConfigurations;
+```
+
 ## See Also
 
-- [var classID: TKTokenDriver.ClassID](tktokendriver/configuration/classid.md)
+### Reporting Configuration Information
+- [var classID: TKTokenDriver.ClassID](./classid.md)
   The class identifier of the token driver.
-- [class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configuration]](tktokendriver/configuration/driverconfigurations.md)
+- [class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configuration]](./driverconfigurations.md)
   A dictionary of token class configurations which the class identifier of the token driver keys.
 
 

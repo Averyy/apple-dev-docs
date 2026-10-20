@@ -1,7 +1,8 @@
 # Transcript.Instructions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Instructions you provide to the model that define its behavior.
 
@@ -26,34 +27,35 @@ Instructions are typically provided to define the role and behavior of the model
 ## Topics
 
 ### Creating instructions
-- [init(id: String, segments: [Transcript.Segment], toolDefinitions: [Transcript.ToolDefinition])](transcript/instructions/init(id:segments:tooldefinitions:).md)
+- [init(id: String, segments: [Transcript.Segment], toolDefinitions: [Transcript.ToolDefinition])](./instructions/init%28id,segments,tooldefinitions%29.md)
   Creates instructions that describe how you want the model to behave, in natural language.
 ### Inspecting instructions
-- [var segments: [Transcript.Segment]](transcript/instructions/segments.md)
+- [var segments: [Transcript.Segment]](./instructions/segments.md)
   The content of the instructions, in natural language.
-- [var toolDefinitions: [Transcript.ToolDefinition]](transcript/instructions/tooldefinitions.md)
+- [var toolDefinitions: [Transcript.ToolDefinition]](./instructions/tooldefinitions.md)
   A list of tools made available to the model.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.Entry](transcript/entry.md)
+### Transcript entries
+- [Transcript.Entry](./entry.md)
   An entry in a transcript.
-- [Transcript.Prompt](transcript/prompt.md)
+- [Transcript.Prompt](./prompt.md)
   A prompt from the user to the model.
-- [Transcript.Response](transcript/response.md)
+- [Transcript.Response](./response.md)
   A response from the model.
-- [Transcript.Reasoning](transcript/reasoning.md)
+- [Transcript.Reasoning](./reasoning.md)
   A reasoning entry from the model.
 
 

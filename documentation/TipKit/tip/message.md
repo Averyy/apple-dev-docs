@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A short description of how to use the tip’s feature.
@@ -27,11 +28,12 @@ This property is `Optional` and defaults to a value of `nil`.
 
 ## See Also
 
-- [var title: Text](tip/title.md)
+### Setting tip content
+- [var title: Text](./title.md)
   A title that names the tip.
-- [var image: Image?](tip/image.md)
+- [var image: Image?](./image.md)
   The image associated with the tip.
-- [var id: String](tip/id.md)
+- [var id: String](./id.md)
   The tip’s unique identifier.
 
 

@@ -1,12 +1,13 @@
 # hv_gic_state_t
 
 **Framework**: Hypervisor  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for this value type’s equivalent Hypervisor generic interrupt controller (GIC) state’s reference type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ An alias for this value type’s equivalent Hypervisor generic interrupt control
 typealias hv_gic_state_t = any OS_hv_gic_state
 ```
 
+```c
+typedef NSObject<OS_hv_gic_state> * hv_gic_state_t;
+```
+
 ## See Also
 
-- [func hv_gic_state_create() -> hv_gic_state_t](hv_gic_state_create().md)
+### Getting and setting the GIC’s state
+- [func hv_gic_state_create() -> hv_gic_state_t](./hv_gic_state_create%28%29.md)
   Create a generic interrupt controller (GIC) state object.
-- [func hv_gic_set_state(UnsafeRawPointer, Int) -> hv_return_t](hv_gic_set_state(_:_:).md)
+- [func hv_gic_set_state(UnsafeRawPointer, Int) -> hv_return_t](./hv_gic_set_state%28_,_%29.md)
   Sets the state of a generic interrupt controller (GIC) device.
-- [func hv_gic_state_get_size(hv_gic_state_t, UnsafeMutablePointer<Int>) -> hv_return_t](hv_gic_state_get_size(_:_:).md)
+- [func hv_gic_state_get_size(hv_gic_state_t, UnsafeMutablePointer<Int>) -> hv_return_t](./hv_gic_state_get_size%28_,_%29.md)
   Gets the size of the buffer required for generic interrupt controller (GIC) state.
-- [func hv_gic_state_get_data(hv_gic_state_t, UnsafeMutableRawPointer) -> hv_return_t](hv_gic_state_get_data(_:_:).md)
+- [func hv_gic_state_get_data(hv_gic_state_t, UnsafeMutableRawPointer) -> hv_return_t](./hv_gic_state_get_data%28_,_%29.md)
   Gets the state data for generic interrupt controller (GIC).
-- [protocol OS_hv_gic_state](os_hv_gic_state.md)
+- [protocol OS_hv_gic_state](./os_hv_gic_state.md)
   Methods that provide information on the hypervisor state.
 
 

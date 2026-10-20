@@ -1,23 +1,30 @@
 # BNNSMatMul(_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a matrix multiplication operation directly to two input matrices.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSMatMul(_ transA: Bool, _ transB: Bool, _ alpha: Float, _ inputA: UnsafePointer<BNNSNDArrayDescriptor>, _ inputB: UnsafePointer<BNNSNDArrayDescriptor>, _ output: UnsafePointer<BNNSNDArrayDescriptor>, _ workspace: UnsafeMutableRawPointer?, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
+```
+
+```c
+int BNNSMatMul(const _Bool transA, const _Bool transB, const float alpha, const BNNSNDArrayDescriptor *inputA, const BNNSNDArrayDescriptor *inputB, const BNNSNDArrayDescriptor *output, void *workspace, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -57,7 +64,7 @@ var outputDescriptor = BNNSNDArrayDescriptor.allocateUninitialized(
                      inputBDescriptor.shape.size.1))
 ```
 
-The [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatmul(_:_:_:_:_:_:_:_:).md) function calculates the same result using a 2 x 2 matrix.
+The [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](./bnnsmatmul%28_,_,_,_,_,_,_,_%29.md) function calculates the same result using a 2 x 2 matrix.
 
 ```swift
 let inputBValues: [Float] = [
@@ -80,7 +87,7 @@ BNNSMatMul(false, false,
            nil, nil)
 ```
 
-You may optionally pass a workspace to [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatmul(_:_:_:_:_:_:_:_:).md). Call [`BNNSMatMulWorkspaceSize(_:_:_:_:_:_:_:)`](bnnsmatmulworkspacesize(_:_:_:_:_:_:_:).md) to calculate the required workspace size for a set of parameters. If you pass `nil` to the [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatmul(_:_:_:_:_:_:_:_:).md) workspace parameter, BNNS allocates and dellocates the workspace.
+You may optionally pass a workspace to [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](./bnnsmatmul%28_,_,_,_,_,_,_,_%29.md). Call [`BNNSMatMulWorkspaceSize(_:_:_:_:_:_:_:)`](./bnnsmatmulworkspacesize%28_,_,_,_,_,_,_%29.md) to calculate the required workspace size for a set of parameters. If you pass `nil` to the [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](./bnnsmatmul%28_,_,_,_,_,_,_,_%29.md) workspace parameter, BNNS allocates and dellocates the workspace.
 
 ## Parameters
 
@@ -90,24 +97,25 @@ You may optionally pass a workspace to [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatm
 - `inputA`: A pointer to the `inputA` matrix descriptor.
 - `inputB`: A pointer to the `inputB` matrix descriptor.
 - `output`: A pointer to the output matrix descriptor.
-- `workspace`: An optional pointer to the workspace memory. Use [`BNNSMatMulWorkspaceSize(_:_:_:_:_:_:_:)`](bnnsmatmulworkspacesize(_:_:_:_:_:_:_:).md) to calculate the workspace size that operation requires. [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatmul(_:_:_:_:_:_:_:_:).md) doesn’t require any particular alignment for the workspace memory.
+- `workspace`: An optional pointer to the workspace memory. Use [`BNNSMatMulWorkspaceSize(_:_:_:_:_:_:_:)`](./bnnsmatmulworkspacesize%28_,_,_,_,_,_,_%29.md) to calculate the workspace size that operation requires. [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](./bnnsmatmul%28_,_,_,_,_,_,_,_%29.md) doesn’t require any particular alignment for the workspace memory.
 - `filter_params`: The filter runtime parameters.
 
 ## See Also
 
-- [func BNNSDirectApplyBroadcastMatMul(Bool, Bool, Float, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?)](bnnsdirectapplybroadcastmatmul(_:_:_:_:_:_:_:).md)
+### Matrix multiplication
+- [func BNNSDirectApplyBroadcastMatMul(Bool, Bool, Float, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?)](./bnnsdirectapplybroadcastmatmul%28_,_,_,_,_,_,_%29.md)
   Applies a broadcast matrix multiplication operation directly to two input matrices.
-- [class BroadcastMatrixMultiplyLayer](bnns/broadcastmatrixmultiplylayer.md)
+- [class BroadcastMatrixMultiplyLayer](./bnns/broadcastmatrixmultiplylayer.md)
   A layer object that wraps a broadcast matrix multiply filter and manages its deinitialization.
-- [struct BNNSLayerParametersBroadcastMatMul](bnnslayerparametersbroadcastmatmul.md)
+- [struct BNNSLayerParametersBroadcastMatMul](./bnnslayerparametersbroadcastmatmul.md)
   A set of parameters that define a broadcast matrix multiply layer.
-- [func BNNSFilterCreateLayerBroadcastMatMul(UnsafePointer<BNNSLayerParametersBroadcastMatMul>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerbroadcastmatmul(_:_:).md)
+- [func BNNSFilterCreateLayerBroadcastMatMul(UnsafePointer<BNNSLayerParametersBroadcastMatMul>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerbroadcastmatmul%28_,_%29.md)
   Returns a new broadcast matrix multiply layer.
-- [func BNNSMatMulWorkspaceSize(Bool, Bool, Float, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int](bnnsmatmulworkspacesize(_:_:_:_:_:_:_:).md)
+- [func BNNSMatMulWorkspaceSize(Bool, Bool, Float, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int](./bnnsmatmulworkspacesize%28_,_,_,_,_,_,_%29.md)
   Returns the workspace size that a matrix multiply operation requires.
-- [static func applyMatrixMultiplication(inputA: BNNSNDArrayDescriptor, transposed: Bool, inputB: BNNSNDArrayDescriptor, transposed: Bool, output: BNNSNDArrayDescriptor, alpha: Float, workspace: UnsafeMutableRawBufferPointer?, filterParameters: BNNSFilterParameters?) throws](bnns/applymatrixmultiplication(inputa:transposed:inputb:transposed:output:alpha:workspace:filterparameters:).md)
+- [static func applyMatrixMultiplication(inputA: BNNSNDArrayDescriptor, transposed: Bool, inputB: BNNSNDArrayDescriptor, transposed: Bool, output: BNNSNDArrayDescriptor, alpha: Float, workspace: UnsafeMutableRawBufferPointer?, filterParameters: BNNSFilterParameters?) throws](./bnns/applymatrixmultiplication%28inputa,transposed,inputb,transposed,output,alpha,workspace,filterparameters%29.md)
   Performs a matrix multiplication operation directly on two input matrices.
-- [static func matrixMultiplicationWorkspaceSize(inputA: BNNSNDArrayDescriptor, transposed: Bool, inputB: BNNSNDArrayDescriptor, transposed: Bool, output: BNNSNDArrayDescriptor, alpha: Float, filterParameters: BNNSFilterParameters?) -> Int?](bnns/matrixmultiplicationworkspacesize(inputa:transposed:inputb:transposed:output:alpha:filterparameters:).md)
+- [static func matrixMultiplicationWorkspaceSize(inputA: BNNSNDArrayDescriptor, transposed: Bool, inputB: BNNSNDArrayDescriptor, transposed: Bool, output: BNNSNDArrayDescriptor, alpha: Float, filterParameters: BNNSFilterParameters?) -> Int?](./bnns/matrixmultiplicationworkspacesize%28inputa,transposed,inputb,transposed,output,alpha,filterparameters%29.md)
   Returns the workspace size that a matrix multiply operation requires.
 
 

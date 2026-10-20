@@ -1,7 +1,8 @@
 # MTLFunctionHandle
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object representing a function that you can add to a visible function table.
 
@@ -19,40 +20,45 @@ An object representing a function that you can add to a visible function table.
 protocol MTLFunctionHandle : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol MTLFunctionHandle <NSObject>
+```
+
 ## Topics
 
 ### Querying handle properties
-- [var device: any MTLDevice](mtlfunctionhandle/device.md)
+- [var device: any MTLDevice](./mtlfunctionhandle/device.md)
   The device object that created the shader function.
-- [var functionType: MTLFunctionType](mtlfunctionhandle/functiontype.md)
+- [var functionType: MTLFunctionType](./mtlfunctionhandle/functiontype.md)
   The shader function’s type.
-- [var name: String](mtlfunctionhandle/name.md)
+- [var name: String](./mtlfunctionhandle/name.md)
   The function’s name.
 ### Instance Properties
-- [var gpuResourceID: MTLResourceID](mtlfunctionhandle/gpuresourceid.md)
+- [var gpuResourceID: MTLResourceID](./mtlfunctionhandle/gpuresourceid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLFunctionDescriptor](mtlfunctiondescriptor.md)
+### Shader functions
+- [class MTLFunctionDescriptor](./mtlfunctiondescriptor.md)
   A description of a function object to create.
-- [protocol MTLFunction](mtlfunction.md)
+- [protocol MTLFunction](./mtlfunction.md)
   A interface that represents a public shader function in a Metal library.
-- [class MTLVisibleFunctionTableDescriptor](mtlvisiblefunctiontabledescriptor.md)
+- [class MTLVisibleFunctionTableDescriptor](./mtlvisiblefunctiontabledescriptor.md)
   A specification of how to create a visible function table.
-- [protocol MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)
+- [protocol MTLVisibleFunctionTable](./mtlvisiblefunctiontable.md)
   A table of shader functions visible to your app that you can pass into compute commands to customize the behavior of a shader.
-- [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
+- [class MTLIntersectionFunctionDescriptor](./mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
-- [class MTLIntersectionFunctionTableDescriptor](mtlintersectionfunctiontabledescriptor.md)
+- [class MTLIntersectionFunctionTableDescriptor](./mtlintersectionfunctiontabledescriptor.md)
   A specification of how to create an intersection function table.
-- [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+- [protocol MTLIntersectionFunctionTable](./mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
 
 

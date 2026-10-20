@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated array.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated array.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An array.
@@ -30,9 +35,10 @@ This method is a designated initializer.
 
 ## See Also
 
-- [init?(contentsOfURL: URL)](nsmutablearray/init(contentsofurl:).md)
+### Creating and Initializing a Mutable Array
+- [init?(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Creates and returns a mutable array containing the contents specified by a given URL.
-- [init(capacity: Int)](nsmutablearray/init(capacity:).md)
+- [init(capacity: Int)](./init%28capacity%29.md)
   Returns an array, initialized with enough memory to initially hold a given number of objects.
 
 

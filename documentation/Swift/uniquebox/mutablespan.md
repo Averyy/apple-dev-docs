@@ -1,7 +1,8 @@
 # mutableSpan
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable span over the single element stored in this box.
 
@@ -26,7 +27,7 @@ A `MutableSpan` over the element stored in this box.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

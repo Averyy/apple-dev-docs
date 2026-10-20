@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (SphericalCoordinates3DFloat, SphericalCoordinates3DFloat) -> Bool](sphericalcoordinates3dfloat/==(_:_:).md)
+- [static func == (SphericalCoordinates3DFloat, SphericalCoordinates3DFloat) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two points are equal.
 
 

@@ -1,7 +1,8 @@
 # init(version:videoTimeScale:videoTime:hostTime:rateScalar:videoRefreshPeriod:smpteTime:flags:reserved:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init(version: UInt32, videoTimeScale: Int32, videoTime: Int64, hostTime: UInt64,
 
 ## See Also
 
-- [init()](cvtimestamp/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

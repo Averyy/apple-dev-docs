@@ -1,7 +1,8 @@
 # instanceCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current number of instances in this low-level instance data.
 

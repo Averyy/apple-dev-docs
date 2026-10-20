@@ -1,7 +1,8 @@
 # identityDataPassword
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password for the PKCS12 tunneling protocol authentication credentials.
 
@@ -19,19 +20,24 @@ The password for the PKCS12 tunneling protocol authentication credentials.
 var identityDataPassword: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * identityDataPassword;
+```
+
 #### Discussion
 
-If the PKCS12 data set in the [`identityData`](nevpnprotocol/identitydata.md) property uses a password for encryption, you must specify the password here.
+If the PKCS12 data set in the [`identityData`](./identitydata.md) property uses a password for encryption, you must specify the password here.
 
 ## See Also
 
-- [var username: String?](nevpnprotocol/username.md)
+### Authenticating the user
+- [var username: String?](./username.md)
   The user name component of the tunneling protocol authentication credential.
-- [var passwordReference: Data?](nevpnprotocol/passwordreference.md)
+- [var passwordReference: Data?](./passwordreference.md)
   A persistent keychain reference to a keychain item containing the password component of the tunneling protocol authentication credential.
-- [var identityReference: Data?](nevpnprotocol/identityreference.md)
+- [var identityReference: Data?](./identityreference.md)
   A persistent keychain reference to a keychain item containing the certificate and private key components of the tunneling protocol authentication credential.
-- [var identityData: Data?](nevpnprotocol/identitydata.md)
+- [var identityData: Data?](./identitydata.md)
   The certificate and private key components of the tunneling protocol authentication credential, in PKCS12 format.
 
 

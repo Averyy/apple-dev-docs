@@ -1,7 +1,8 @@
 # iFrame960x540
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A preset suitable for capturing 960 x 540 quality iFrame H.264 video at about 30 Mbits/sec with AAC audio.
 
@@ -18,13 +19,18 @@ A preset suitable for capturing 960 x 540 quality iFrame H.264 video at about 30
 static let iFrame960x540: AVCaptureSession.Preset
 ```
 
+```c
+extern AVCaptureSessionPreset const AVCaptureSessionPresetiFrame960x540;
+```
+
 #### Discussion
 
 QuickTime movies captured in iFrame format are optimal for editing applications.
 
 ## See Also
 
-- [static let iFrame1280x720: AVCaptureSession.Preset](avcapturesession/preset/iframe1280x720.md)
+### iFrame
+- [static let iFrame1280x720: AVCaptureSession.Preset](./iframe1280x720.md)
   A preset suitable for capturing 1280 x 720 quality iFrame H.264 video at about 40 Mbits/sec with AAC audio.
 
 

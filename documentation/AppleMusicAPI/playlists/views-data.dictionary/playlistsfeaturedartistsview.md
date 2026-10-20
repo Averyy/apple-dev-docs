@@ -1,7 +1,8 @@
 # Playlists.Views.PlaylistsFeaturedArtistsView
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Artists that are featured on this playlist.
 
@@ -10,14 +11,14 @@ Artists that are featured on this playlist.
 
 ## Declaration
 
-```swift
+```
 object Playlists.Views.PlaylistsFeaturedArtistsView
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Playlists.Views.PlaylistsFeaturedArtistsView.Attributes](playlists/views-data.dictionary/playlistsfeaturedartistsview/attributes-data.dictionary.md)
+- [object Playlists.Views.PlaylistsFeaturedArtistsView.Attributes](./playlistsfeaturedartistsview/attributes-data.dictionary.md)
   Attribute metadata for the playlist featured artists view.
 
 ## Properties
@@ -29,7 +30,8 @@ object Playlists.Views.PlaylistsFeaturedArtistsView
 
 ## See Also
 
-- [object Playlists.Views.PlaylistsMoreByCuratorView](playlists/views-data.dictionary/playlistsmorebycuratorview.md)
+### Related Objects
+- [object Playlists.Views.PlaylistsMoreByCuratorView](./playlistsmorebycuratorview.md)
   Additional content by the same curator for this playlist.
 
 

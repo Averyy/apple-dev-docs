@@ -1,7 +1,8 @@
 # UserActivity.UserActivityUserInfo
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains service-specific state information necessary to continue an activity in a separate request.
 
@@ -10,7 +11,7 @@ A dictionary that contains service-specific state information necessary to conti
 
 ## Declaration
 
-```swift
+```
 object UserActivity.UserActivityUserInfo
 ```
 

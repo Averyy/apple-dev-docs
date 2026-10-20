@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized description of the App Store message.
 

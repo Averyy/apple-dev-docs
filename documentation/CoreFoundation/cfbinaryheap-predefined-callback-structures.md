@@ -1,14 +1,15 @@
 # Predefined Callback Structures
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 `CFBinaryHeap` provides some predefined callbacks for your convenience.
 
 ## Topics
 
 ### Constants
-- [let kCFStringBinaryHeapCallBacks: CFBinaryHeapCallBacks](kcfstringbinaryheapcallbacks.md)
-  Predefined [`CFBinaryHeapCallBacks`](cfbinaryheapcallbacks.md) structure containing a set of callbacks appropriate for use when the values in a binary heap are all `CFString` objects.
+- [let kCFStringBinaryHeapCallBacks: CFBinaryHeapCallBacks](./kcfstringbinaryheapcallbacks.md)
+  Predefined [`CFBinaryHeapCallBacks`](./cfbinaryheapcallbacks.md) structure containing a set of callbacks appropriate for use when the values in a binary heap are all `CFString` objects.
 
 
 ---

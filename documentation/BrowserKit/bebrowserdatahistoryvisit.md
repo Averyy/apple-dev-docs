@@ -1,7 +1,8 @@
 # BEBrowserDataHistoryVisit
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that transfers page visit history between browsers.
 
@@ -15,6 +16,10 @@ A class that transfers page visit history between browsers.
 class BEBrowserDataHistoryVisit
 ```
 
+```objc
+@interface BEBrowserDataHistoryVisit : BEBrowserData
+```
+
 #### Overview
 
 This class captures comprehensive information about a page visit, including metadata, the URL, redirect information, and success status. The redirect properties enable a browser to preserve full navigation context when transferring history.
@@ -22,58 +27,59 @@ This class captures comprehensive information about a page visit, including meta
 ## Topics
 
 ### Gathering data that creates the history of a visit
-- [init(url: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:)-j2oc.md)
+- [init(url: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](./bebrowserdatahistoryvisit/init%28url,dateoflastvisit,title,loadedsuccessfully,httpget,redirectsourceurl,redirectsourcedateofvisit,redirectdestinationurl,redirectdestinationdateofvisit,visitcount%29-j2oc.md)
   Creates a record of a page visit that includes metadata and redirect information.
 ### Accessing visit properties
-- [var dateOfLastVisit: Date](bebrowserdatahistoryvisit/dateoflastvisit.md)
+- [var dateOfLastVisit: Date](./bebrowserdatahistoryvisit/dateoflastvisit.md)
   The date of the person’s last page visit.
-- [var httpGet: Bool](bebrowserdatahistoryvisit/httpget.md)
+- [var httpGet: Bool](./bebrowserdatahistoryvisit/httpget.md)
   A Boolean value that indicates whether the visit is an HTTP GET request.
-- [var loadedSuccessfully: Bool](bebrowserdatahistoryvisit/loadedsuccessfully.md)
+- [var loadedSuccessfully: Bool](./bebrowserdatahistoryvisit/loadedsuccessfully.md)
   A Boolean value that indicates whether the page loads without errors.
-- [var title: String?](bebrowserdatahistoryvisit/title.md)
+- [var title: String?](./bebrowserdatahistoryvisit/title.md)
   A localized title for a visited page.
-- [var url: URL](bebrowserdatahistoryvisit/url.md)
+- [var url: URL](./bebrowserdatahistoryvisit/url.md)
   A URL for the visited page.
-- [var visitCount: Int](bebrowserdatahistoryvisit/visitcount.md)
+- [var visitCount: Int](./bebrowserdatahistoryvisit/visitcount.md)
   A count of how many visits the page received.
 ### Managing redirect information
-- [var redirectDestinationDateOfVisit: Date?](bebrowserdatahistoryvisit/redirectdestinationdateofvisit.md)
+- [var redirectDestinationDateOfVisit: Date?](./bebrowserdatahistoryvisit/redirectdestinationdateofvisit.md)
   The date of the redirect destination visit.
-- [var redirectDestinationURL: URL?](bebrowserdatahistoryvisit/redirectdestinationurl.md)
+- [var redirectDestinationURL: URL?](./bebrowserdatahistoryvisit/redirectdestinationurl.md)
   A URL to which the visit redirects.
-- [var redirectSourceDateOfVisit: Date?](bebrowserdatahistoryvisit/redirectsourcedateofvisit.md)
+- [var redirectSourceDateOfVisit: Date?](./bebrowserdatahistoryvisit/redirectsourcedateofvisit.md)
   The date of the redirect source visit.
-- [var redirectSourceURL: URL?](bebrowserdatahistoryvisit/redirectsourceurl.md)
+- [var redirectSourceURL: URL?](./bebrowserdatahistoryvisit/redirectsourceurl.md)
   A URL that redirects to the visited page.
 ### Initializers
-- [init(URL: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:)-hvhk.md)
+- [init(URL: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](./bebrowserdatahistoryvisit/init%28url,dateoflastvisit,title,loadedsuccessfully,httpget,redirectsourceurl,redirectsourcedateofvisit,redirectdestinationurl,redirectdestinationdateofvisit,visitcount%29-hvhk.md)
 
 ## Relationships
 
 ### Inherits From
-- [BEBrowserData](bebrowserdata.md)
+- [BEBrowserData](./bebrowserdata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class BEBrowserDataBookmark](bebrowserdatabookmark.md)
+### Browser data
+- [class BEBrowserDataBookmark](./bebrowserdatabookmark.md)
   A class that transfers bookmark information between browsers.
-- [class BEBrowserDataReadingListItem](bebrowserdatareadinglistitem.md)
+- [class BEBrowserDataReadingListItem](./bebrowserdatareadinglistitem.md)
   A class that transfers reading list data between browsers.
-- [class BEBrowserDataExtension](bebrowserdataextension.md)
+- [class BEBrowserDataExtension](./bebrowserdataextension.md)
   A class that transfers browser extension information between browsers.
-- [class BEBrowserData](bebrowserdata.md)
+- [class BEBrowserData](./bebrowserdata.md)
   A representation of browsing data from a source browser app.
 
 

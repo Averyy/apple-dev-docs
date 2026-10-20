@@ -1,7 +1,8 @@
 # pixelFormatTypes
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allow multiple pixel formats to be specified in attributes
 
@@ -22,7 +23,7 @@ var pixelFormatTypes: [CVPixelFormatType]? { get set }
 
 #### Discussion
 
-Setting this property will override the single format value set by [`pixelFormatType`](cvbuffer/creationattributes/pixelformattype.md) and vice-versa. When accessing [`pixelFormatType`](cvbuffer/creationattributes/pixelformattype.md), only the first value is used if multiple format values are set. Do not set this value to an empty array.
+Setting this property will override the single format value set by [`pixelFormatType`](../creationattributes/pixelformattype.md) and vice-versa. When accessing [`pixelFormatType`](../creationattributes/pixelformattype.md), only the first value is used if multiple format values are set. Do not set this value to an empty array.
 
 
 ---

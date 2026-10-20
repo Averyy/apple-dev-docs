@@ -1,7 +1,8 @@
 # country
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The country or region of the place.
 
@@ -10,17 +11,18 @@ The country or region of the place.
 
 ## Declaration
 
-```swift
+```
 country: string | null;
 ```
 
 #### Discussion
 
-For example, the [`country`](place/country.md) for Golden Gate Park in San Francisco, California, is `"United States"`.
+For example, the [`country`](./country.md) for Golden Gate Park in San Francisco, California, is `"United States"`.
 
 ## See Also
 
-- [countryCode](place/countrycode.md)
+### Country address
+- [countryCode](./countrycode.md)
   The country or region associated with the place.
 
 

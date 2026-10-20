@@ -1,17 +1,22 @@
 # getRef()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an IOBluetoothRFCOMMChannelRef representation of the target IOBluetoothRFCOMMChannel object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getRef() -> Unmanaged<IOBluetoothRFCOMMChannelRef>!
+```
+
+```objc
+- (IOBluetoothRFCOMMChannelRef) getRFCOMMChannelRef;
 ```
 
 #### Return Value

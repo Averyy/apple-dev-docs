@@ -1,7 +1,8 @@
 # AppPreviewSet.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,19 +11,19 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSet.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPreviewSet.Relationships.AppPreviews](apppreviewset/relationships-data.dictionary/apppreviews-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppPreviews](./relationships-data.dictionary/apppreviews-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppPreviewSet.Relationships.AppStoreVersionLocalization](apppreviewset/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppStoreVersionLocalization](./relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppPreviewSet.Relationships.AppCustomProductPageLocalization](apppreviewset/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
-- [object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization](apppreviewset/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppCustomProductPageLocalization](./relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization](./relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
 
 ## Properties
 
@@ -33,7 +34,8 @@ object AppPreviewSet.Relationships
 
 ## See Also
 
-- [object AppPreviewSet.Attributes](apppreviewset/attributes-data.dictionary.md)
+### Objects
+- [object AppPreviewSet.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Preview Sets resource.
 
 

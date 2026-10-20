@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the interaction to update the pointer in response to an event.
 
@@ -15,6 +16,10 @@ Causes the interaction to update the pointer in response to an event.
 
 ```swift
 func invalidate()
+```
+
+```objc
+- (void) invalidate;
 ```
 
 

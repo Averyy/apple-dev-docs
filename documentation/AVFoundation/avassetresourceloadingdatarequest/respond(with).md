@@ -1,7 +1,8 @@
 # respond(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides data to the loading request.
 
@@ -19,9 +20,13 @@ Provides data to the loading request.
 func respond(with data: Data)
 ```
 
+```objc
+- (void) respondWithData:(NSData *) data;
+```
+
 #### Discussion
 
-This method may be invoked multiple times on the same instance of `AVAssetResourceLoadingDataRequest` to provide the full range of requested data incrementally. Upon each invocation, the value of the [`currentOffset`](avassetresourceloadingdatarequest/currentoffset.md) property is updated to match the amount of data provided.
+This method may be invoked multiple times on the same instance of `AVAssetResourceLoadingDataRequest` to provide the full range of requested data incrementally. Upon each invocation, the value of the [`currentOffset`](./currentoffset.md) property is updated to match the amount of data provided.
 
 The system can retain the data you provide and keep processing it for an indefinite period after this method returns. Don’t modify that data after you share its contents. If you manage your own memory pool, create the data with `init(bytesNoCopy:count:deallocator:)`, and its deallocator signals the earliest moment when reusing the memory is safe.
 
@@ -31,13 +36,14 @@ The system can retain the data you provide and keep processing it for an indefin
 
 ## See Also
 
-- [var requestedLength: Int](avassetresourceloadingdatarequest/requestedlength.md)
+### Providing data to a request
+- [var requestedLength: Int](./requestedlength.md)
   The length, in bytes, of the data requested.
-- [var requestedOffset: Int64](avassetresourceloadingdatarequest/requestedoffset.md)
+- [var requestedOffset: Int64](./requestedoffset.md)
   The position within the resource of the first byte requested.
-- [var currentOffset: Int64](avassetresourceloadingdatarequest/currentoffset.md)
+- [var currentOffset: Int64](./currentoffset.md)
   The position within the resource of the next byte.
-- [var requestsAllDataToEndOfResource: Bool](avassetresourceloadingdatarequest/requestsalldatatoendofresource.md)
+- [var requestsAllDataToEndOfResource: Bool](./requestsalldatatoendofresource.md)
   A Boolean value that indicates the entire remaining length of the resource from the offest to the end of the resource is being requested.
 
 

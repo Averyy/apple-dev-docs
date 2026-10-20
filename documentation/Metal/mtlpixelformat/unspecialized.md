@@ -1,7 +1,8 @@
 # MTLPixelFormat.unspecialized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -17,9 +18,13 @@
 case unspecialized
 ```
 
+```c
+MTLPixelFormatUnspecialized
+```
+
 ## Mentions
 
-- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+- [Using the Metal 4 compilation API](../using-the-metal-4-compilation-api.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the inverse of the decoding process.
 

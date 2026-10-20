@@ -1,7 +1,8 @@
 # kSecAttrSerialNumber
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s serial number.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s serial number.
 let kSecAttrSerialNumber: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrSerialNumber;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains the serial number data of a certificate. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains the serial number data of a certificate. Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

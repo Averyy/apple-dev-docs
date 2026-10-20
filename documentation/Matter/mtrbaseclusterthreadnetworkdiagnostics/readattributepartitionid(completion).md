@@ -1,7 +1,8 @@
 # readAttributePartitionId(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePartitionId(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePartitionId() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePartitionIdWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

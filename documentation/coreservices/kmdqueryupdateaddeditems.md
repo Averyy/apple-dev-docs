@@ -1,7 +1,8 @@
 # kMDQueryUpdateAddedItems
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array that identifies the items that have been added to the query results. This list only contains result objects that have previously been created, result objects that have not been created are not included.
 
@@ -12,6 +13,10 @@ An array that identifies the items that have been added to the query results. Th
 
 ```swift
 let kMDQueryUpdateAddedItems: CFString!
+```
+
+```c
+const CFStringRef kMDQueryUpdateAddedItems;
 ```
 
 

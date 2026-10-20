@@ -1,7 +1,8 @@
 # results
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An array of places that returns from a geocoder lookup or reverse lookup.
 
@@ -10,15 +11,15 @@ An array of places that returns from a geocoder lookup or reverse lookup.
 
 ## Declaration
 
-```swift
+```
 results: Place[];
 ```
 
 #### Discussion
 
-An object the system parses from the geocoder JSON response, which contains an array of places. Each [`Place`](place.md) has several properties.
+An object the system parses from the geocoder JSON response, which contains an array of places. Each [`Place`](../place.md) has several properties.
 
-If there’s no response, [`results`](geocoderresponse/results.md) is an empty array.
+If there’s no response, [`results`](./results.md) is an empty array.
 
 
 ---

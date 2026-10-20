@@ -1,7 +1,8 @@
 # kAXOutlineRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An accessibility object that displays row-based, hierarchically structured data, such as the list view in a Finder window.
 
@@ -12,6 +13,10 @@ An accessibility object that displays row-based, hierarchically structured data,
 
 ```swift
 var kAXOutlineRole: String { get }
+```
+
+```c
+#define kAXOutlineRole
 ```
 
 

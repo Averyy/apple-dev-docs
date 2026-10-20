@@ -1,7 +1,8 @@
 # textColor
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the overlay text.
 
@@ -14,6 +15,10 @@ The color of the overlay text.
 
 ```swift
 var textColor: UIColor? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UIColor * textColor;
 ```
 
 

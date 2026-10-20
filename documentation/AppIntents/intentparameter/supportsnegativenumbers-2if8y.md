@@ -1,7 +1,8 @@
 # supportsNegativeNumbers
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var supportsNegativeNumbers: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitPower>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Power?](intentparameter/unit-3mp17.md)
-- [IntentParameter.Power](intentparameter/power.md)
-- [var defaultUnit: IntentParameter<Value>.Power?](intentparameter/defaultunit-4fr1a.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-hnv2.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Power?](./unit-3mp17.md)
+- [IntentParameter.Power](./power.md)
+- [var defaultUnit: IntentParameter<Value>.Power?](./defaultunit-4fr1a.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-hnv2.md)
 
 
 ---

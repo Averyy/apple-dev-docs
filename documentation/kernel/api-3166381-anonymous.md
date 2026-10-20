@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,17 +18,17 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBSuperSpeedDeviceCapability5Gb](3166381-anonymous/kiousbsuperspeeddevicecapability5gb.md)
-- [kIOUSBSuperSpeedDeviceCapabilityFullSpeed](3166381-anonymous/kiousbsuperspeeddevicecapabilityfullspeed.md)
-- [kIOUSBSuperSpeedDeviceCapabilityHighSpeed](3166381-anonymous/kiousbsuperspeeddevicecapabilityhighspeed.md)
-- [kIOUSBSuperSpeedDeviceCapabilityLTM](3166381-anonymous/kiousbsuperspeeddevicecapabilityltm.md)
-- [kIOUSBSuperSpeedDeviceCapabilityLowSpeed](3166381-anonymous/kiousbsuperspeeddevicecapabilitylowspeed.md)
-- [kIOUSBSuperSpeedDeviceCapabilitySupport5Gb](3166381-anonymous/kiousbsuperspeeddevicecapabilitysupport5gb.md)
-- [kIOUSBSuperSpeedDeviceCapabilitySupportFullSpeed](3166381-anonymous/kiousbsuperspeeddevicecapabilitysupportfullspeed.md)
-- [kIOUSBSuperSpeedDeviceCapabilitySupportHighSpeed](3166381-anonymous/kiousbsuperspeeddevicecapabilitysupporthighspeed.md)
-- [kIOUSBSuperSpeedDeviceCapabilitySupportLowSpeed](3166381-anonymous/kiousbsuperspeeddevicecapabilitysupportlowspeed.md)
-- [kIOUSBSuperSpeedDeviceCapabilityU1DevExitLatMax](3166381-anonymous/kiousbsuperspeeddevicecapabilityu1devexitlatmax.md)
-- [kIOUSBSuperSpeedDeviceCapabilityU2DevExitLatMax](3166381-anonymous/kiousbsuperspeeddevicecapabilityu2devexitlatmax.md)
+- [kIOUSBSuperSpeedDeviceCapability5Gb](./api-3166381-anonymous/kiousbsuperspeeddevicecapability5gb.md)
+- [kIOUSBSuperSpeedDeviceCapabilityFullSpeed](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilityfullspeed.md)
+- [kIOUSBSuperSpeedDeviceCapabilityHighSpeed](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilityhighspeed.md)
+- [kIOUSBSuperSpeedDeviceCapabilityLTM](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilityltm.md)
+- [kIOUSBSuperSpeedDeviceCapabilityLowSpeed](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilitylowspeed.md)
+- [kIOUSBSuperSpeedDeviceCapabilitySupport5Gb](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilitysupport5gb.md)
+- [kIOUSBSuperSpeedDeviceCapabilitySupportFullSpeed](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilitysupportfullspeed.md)
+- [kIOUSBSuperSpeedDeviceCapabilitySupportHighSpeed](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilitysupporthighspeed.md)
+- [kIOUSBSuperSpeedDeviceCapabilitySupportLowSpeed](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilitysupportlowspeed.md)
+- [kIOUSBSuperSpeedDeviceCapabilityU1DevExitLatMax](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilityu1devexitlatmax.md)
+- [kIOUSBSuperSpeedDeviceCapabilityU2DevExitLatMax](./api-3166381-anonymous/kiousbsuperspeeddevicecapabilityu2devexitlatmax.md)
 
 
 ---

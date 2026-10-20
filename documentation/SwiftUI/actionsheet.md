@@ -1,17 +1,20 @@
 # ActionSheet
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of an action sheet presentation.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use a [`View`](./view.md) modifier like [`confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)`](./view/confirmationdialog%28_,ispresented,titlevisibility,presenting,actions,message%29-8y541.md) instead.
 
 ## Declaration
 
@@ -21,9 +24,9 @@ struct ActionSheet
 
 #### Overview
 
-Use an action sheet when you want the user to make a choice between two or more options, in response to their own action. If you want the user to act in response to the state of the app or the system, rather than a user action, use an [`Alert`](alert.md) instead.
+Use an action sheet when you want the user to make a choice between two or more options, in response to their own action. If you want the user to act in response to the state of the app or the system, rather than a user action, use an [`Alert`](./alert.md) instead.
 
-You show an action sheet by using the [`actionSheet(isPresented:content:)`](view/actionsheet(ispresented:content:).md) view modifier to create an action sheet, which then appears whenever the bound `isPresented` value is `true`. The `content` closure you provide to this modifier produces a customized instance of the `ActionSheet` type. To supply the options, create instances of [`ActionSheet.Button`](actionsheet/button.md) to distinguish between ordinary options, destructive options, and cancellation of the user’s original action.
+You show an action sheet by using the [`actionSheet(isPresented:content:)`](./view/actionsheet%28ispresented,content%29.md) view modifier to create an action sheet, which then appears whenever the bound `isPresented` value is `true`. The `content` closure you provide to this modifier produces a customized instance of the `ActionSheet` type. To supply the options, create instances of [`ActionSheet.Button`](./actionsheet/button.md) to distinguish between ordinary options, destructive options, and cancellation of the user’s original action.
 
 The action sheet handles its dismissal by setting the bound `isPresented` value back to `false` when the user taps a button in the action sheet.
 
@@ -56,26 +59,27 @@ var body: some View {
 
 The system may interpret the order of items as they appear in the `buttons` array to accommodate platform conventions. In this example, the Cancel button is the first member of the array, but the action sheet puts it in its standard position at the bottom of the sheet.
 
-![An action sheet with the title Resume Workout Recording in bold text and the message Choose a destination for workout data in smaller text. Below the text, three buttons: a destructive Overwrite Current Workout button in red, a default-styled Overwrite Current Workout button, and a Cancel button, farther below and set off in its own button group.](/images/com.apple.SwiftUI/SwiftUI-ActionSheet-cancel-and-destructive@2x.png)
+![An action sheet with the title Resume Workout Recording in bold text and the message Choose a destination for workout data in smaller text. Below the text, three buttons: a destructive Overwrite Current Workout button in red, a default-styled Overwrite Current Workout button, and a Cancel button, farther below and set off in its own button group.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-ActionSheet-cancel-and-destructive@2x.png)
 
 ## Topics
 
 ### Creating an action sheet
-- [init(title: Text, message: Text?, buttons: [ActionSheet.Button])](actionsheet/init(title:message:buttons:).md)
+- [init(title: Text, message: Text?, buttons: [ActionSheet.Button])](./actionsheet/init%28title,message,buttons%29.md)
   Creates an action sheet with the provided buttons.
 ### Specifying the button type
-- [ActionSheet.Button](actionsheet/button.md)
+- [ActionSheet.Button](./actionsheet/button.md)
   A button representing an operation of an action sheet presentation.
 
 ## See Also
 
-- [struct Alert](alert.md)
+### Deprecated
+- [struct Alert](./alert.md)
   A representation of an alert presentation.
-- [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:).md)
+- [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](./view/fileexporter%28ispresented,document,contenttype,defaultfilename,oncompletion%29.md)
   Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
-- [func fileExporter(isPresented:documents:contentType:onCompletion:)](view/fileexporter(ispresented:documents:contenttype:oncompletion:).md)
+- [func fileExporter(isPresented:documents:contentType:onCompletion:)](./view/fileexporter%28ispresented,documents,contenttype,oncompletion%29.md)
   Presents a system dialog for exporting a collection of value type documents to files on disk.
-- [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
+- [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](./view/fileexporter%28ispresented,document,contenttypes,defaultfilename,oncompletion,oncancellation%29.md)
   Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 
 

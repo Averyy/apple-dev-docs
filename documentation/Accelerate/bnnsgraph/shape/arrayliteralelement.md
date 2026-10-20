@@ -1,7 +1,8 @@
 # BNNSGraph.Shape.ArrayLiteralElement
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the elements of an array literal.
 
@@ -11,7 +12,7 @@ The type of the elements of an array literal.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

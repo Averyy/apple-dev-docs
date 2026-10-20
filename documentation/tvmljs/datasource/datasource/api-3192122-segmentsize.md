@@ -1,16 +1,17 @@
 # segmentSize
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
-The maximum number of indexes that are loaded each time the [`loadindexes`](datasource/datasource/3192119-loadindexes.md) event is triggered.
+The maximum number of indexes that are loaded each time the [`loadindexes`](./api-3192119-loadindexes.md) event is triggered.
 
 **Availability**:
 - tvOS 13.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute int segmentSize;
 ```
 
@@ -22,7 +23,8 @@ The `segmentSize` attribute defaults to 20 indexes.
 
 ## See Also
 
-- [loadindexes](datasource/datasource/3192119-loadindexes.md)
+### Loading Elements
+- [loadindexes](./api-3192119-loadindexes.md)
   An event type that tells the data source to load its indexes.
 
 

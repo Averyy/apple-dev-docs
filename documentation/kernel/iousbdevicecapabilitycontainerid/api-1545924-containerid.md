@@ -1,7 +1,8 @@
 # containerID
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A number that uniquely identifies the device instance across all modes of operation.
 
@@ -10,19 +11,20 @@ A number that uniquely identifies the device instance across all modes of operat
 
 ## Declaration
 
-```swift
+```c
 uint8_t containerID[16];
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitycontainerid/1546211-blength.md)
+### Getting the Properties
+- [bLength](./api-1546211-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicecapabilitycontainerid/1546207-bdescriptortype.md)
+- [bDescriptorType](./api-1546207-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilitycontainerid/1546363-bdevcapabilitytype.md)
+- [bDevCapabilityType](./api-1546363-bdevcapabilitytype.md)
   The device capability type.
-- [bReservedID](iousbdevicecapabilitycontainerid/1546323-breservedid.md)
+- [bReservedID](./api-1546323-breservedid.md)
   Reserved for future use.
 
 

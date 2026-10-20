@@ -1,7 +1,8 @@
 # accessibilityTextInputResponderBlock
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to use to handle text input calls to a backing view.
 
@@ -18,9 +19,13 @@ The block to use to handle text input calls to a backing view.
 var accessibilityTextInputResponderBlock: AXUITextInputReturnBlock? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AXUITextInputReturnBlock accessibilityTextInputResponderBlock;
+```
+
 #### Discussion
 
-If your accessibility element represents a view that supports text operations using the [`UITextInput`](https://developer.apple.com/documentation/uikit/uitextinput) protocol, use this property to forward `UITextInput` calls to your backing view.
+If your accessibility element represents a view that supports text operations using the [`UITextInput`](../../UIKit/uitextinput.md) protocol, use this property to forward `UITextInput` calls to your backing view.
 
 
 ---

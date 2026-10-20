@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_vendor_code {
     ...
 };
@@ -21,9 +21,9 @@ This structure is used with the SIOCGKEVVENDOR ioctl to convert from a string id
 ## Topics
 
 ### Fields
-- [vendor_code](kev_vendor_code/1446971-vendor_code.md)
+- [vendor_code](./kev_vendor_code/api-1446971-vendor_code.md)
   After making the SIOCGKEVVENDOR ioctl call, this will be filled in with the vendor code if there is one.
-- [vendor_string](kev_vendor_code/1446951-vendor_string.md)
+- [vendor_string](./kev_vendor_code/api-1446951-vendor_string.md)
   A bundle style identifier.
 
 

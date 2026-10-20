@@ -1,7 +1,8 @@
 # undoManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The undo manager for the document.
 
@@ -17,23 +18,28 @@ The undo manager for the document.
 var undoManager: UndoManager! { get set }
 ```
 
+```objc
+@property (strong, null_resettable) NSUndoManager * undoManager;
+```
+
 #### Discussion
 
-This property holds the document’s undo manager (an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object). Accessing this property lazily creates a default undo manager if a custom undo manager hasn’t been set.
+This property holds the document’s undo manager (an [`UndoManager`](../../Foundation/undomanager.md) object). Accessing this property lazily creates a default undo manager if a custom undo manager hasn’t been set.
 
-The undo manager for the document is registered as an observer of various [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) notifications so that it can call [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) as the user makes undoable changes to the document. When a subclass sets this property and implements registers changes with it, it doesn’t need to call [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) directly or (more rarely) override [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md).
+The undo manager for the document is registered as an observer of various [`UndoManager`](../../Foundation/undomanager.md) notifications so that it can call [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) as the user makes undoable changes to the document. When a subclass sets this property and implements registers changes with it, it doesn’t need to call [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) directly or (more rarely) override [`hasUnsavedChanges`](./hasunsavedchanges.md).
 
 ## See Also
 
-- [var hasUnsavedChanges: Bool](uidocument/hasunsavedchanges.md)
+### Tracking changes and autosaving
+- [var hasUnsavedChanges: Bool](./hasunsavedchanges.md)
   A Boolean value that indicates whether the document has any unsaved changes.
-- [func updateChangeCount(UIDocument.ChangeKind)](uidocument/updatechangecount(_:).md)
+- [func updateChangeCount(UIDocument.ChangeKind)](./updatechangecount%28_%29.md)
   Updates the change counter by indicating the kind of change.
-- [func changeCountToken(for: UIDocument.SaveOperation) -> Any](uidocument/changecounttoken(for:).md)
+- [func changeCountToken(for: UIDocument.SaveOperation) -> Any](./changecounttoken%28for%29.md)
   Returns a change token for a specific save operation.
-- [func updateChangeCount(withToken: Any, for: UIDocument.SaveOperation)](uidocument/updatechangecount(withtoken:for:).md)
+- [func updateChangeCount(withToken: Any, for: UIDocument.SaveOperation)](./updatechangecount%28withtoken,for%29.md)
   Updates the change count with reference to a change-count token passed in by UIKit.
-- [func autosave(completionHandler: ((Bool) -> Void)?)](uidocument/autosave(completionhandler:).md)
+- [func autosave(completionHandler: ((Bool) -> Void)?)](./autosave%28completionhandler%29.md)
   Initiates automatic saving of documents with unsaved changes.
 
 

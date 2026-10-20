@@ -1,7 +1,8 @@
 # center
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Stack marks using a center offset.
 

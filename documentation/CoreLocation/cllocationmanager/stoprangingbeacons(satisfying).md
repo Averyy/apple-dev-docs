@@ -1,7 +1,8 @@
 # stopRangingBeacons(satisfying:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the delivery of notifications for the specified beacon constraints.
 
@@ -17,15 +18,20 @@ Stops the delivery of notifications for the specified beacon constraints.
 func stopRangingBeacons(satisfying constraint: CLBeaconIdentityConstraint)
 ```
 
+```objc
+- (void) stopRangingBeaconsSatisfyingConstraint:(CLBeaconIdentityConstraint *) constraint;
+```
+
 ## Parameters
 
-- `constraint`: A [`CLBeaconIdentityConstraint`](clbeaconidentityconstraint.md) constraint.
+- `constraint`: A [`CLBeaconIdentityConstraint`](../clbeaconidentityconstraint.md) constraint.
 
 ## See Also
 
-- [func startRangingBeacons(satisfying: CLBeaconIdentityConstraint)](cllocationmanager/startrangingbeacons(satisfying:).md)
+### Performing beacon ranging
+- [func startRangingBeacons(satisfying: CLBeaconIdentityConstraint)](./startrangingbeacons%28satisfying%29.md)
   Starts the delivery of notifications for the specified beacon constraints.
-- [var rangedBeaconConstraints: Set<CLBeaconIdentityConstraint>](cllocationmanager/rangedbeaconconstraints.md)
+- [var rangedBeaconConstraints: Set<CLBeaconIdentityConstraint>](./rangedbeaconconstraints.md)
   The set of beacon constraints currently being tracked using ranging.
 
 

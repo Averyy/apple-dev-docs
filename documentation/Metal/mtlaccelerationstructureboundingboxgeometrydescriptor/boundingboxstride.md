@@ -1,7 +1,8 @@
 # boundingBoxStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between bounding boxes in the buffer.
 
@@ -19,15 +20,20 @@ The stride, in bytes, between bounding boxes in the buffer.
 var boundingBoxStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger boundingBoxStride;
+```
+
 #### Discussion
 
 The stride needs be at least 24 bytes, and be a multiple of 4 bytes. The default value is 24 bytes.
 
 ## See Also
 
-- [var boundingBoxBuffer: (any MTLBuffer)?](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
+### Specifying bounding boxes data
+- [var boundingBoxBuffer: (any MTLBuffer)?](./boundingboxbuffer.md)
   A buffer that contains an array of bounding box structures.
-- [var boundingBoxBufferOffset: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbufferoffset.md)
+- [var boundingBoxBufferOffset: Int](./boundingboxbufferoffset.md)
   The offset, in bytes, to the first bounding box in the buffer.
 
 

@@ -1,7 +1,8 @@
 # CNContactsUserDefaults
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the default options to use when displaying contacts.
 
@@ -19,36 +20,41 @@ An object that defines the default options to use when displaying contacts.
 class CNContactsUserDefaults
 ```
 
+```objc
+@interface CNContactsUserDefaults : NSObject
+```
+
 ## Topics
 
 ### Getting the Shared Database
-- [class func shared() -> Self](cncontactsuserdefaults/shared.md)
+- [class func shared() -> Self](./cncontactsuserdefaults/shared%28%29.md)
   The singleton contacts user defaults object.
 ### Getting the Default Values
-- [var countryCode: String](cncontactsuserdefaults/countrycode.md)
+- [var countryCode: String](./cncontactsuserdefaults/countrycode.md)
   An ISO country code.
-- [var sortOrder: CNContactSortOrder](cncontactsuserdefaults/sortorder.md)
+- [var sortOrder: CNContactSortOrder](./cncontactsuserdefaults/sortorder.md)
   Default sorting order by name.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CNContactFormatter](cncontactformatter.md)
+### Formatters
+- [class CNContactFormatter](./cncontactformatter.md)
   An object that you use to format contact information before displaying it to the user.
-- [class CNPostalAddressFormatter](cnpostaladdressformatter.md)
+- [class CNPostalAddressFormatter](./cnpostaladdressformatter.md)
   An object that you use to format a contact’s postal addresses.
-- [class CNContactVCardSerialization](cncontactvcardserialization.md)
+- [class CNContactVCardSerialization](./cncontactvcardserialization.md)
   An object you use to convert to and from a vCard representation of the user’s contacts.
 
 

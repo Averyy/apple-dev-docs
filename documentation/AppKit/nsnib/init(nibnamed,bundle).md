@@ -1,17 +1,22 @@
 # init(nibNamed:bundle:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSNib` object initialized to the nib file in the specified bundle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(nibNamed nibName: NSNib.Name, bundle: Bundle?)
+```
+
+```objc
+- (instancetype) initWithNibNamed:(NSNibName) nibName bundle:(NSBundle *) bundle;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ After the nib file has been loaded, the `NSNib` object uses the bundle’s resou
 
 ## See Also
 
-- [init(nibData: Data, bundle: Bundle?)](nsnib/init(nibdata:bundle:).md)
+### Initializing a Nib
+- [init(nibData: Data, bundle: Bundle?)](./init%28nibdata,bundle%29.md)
   Initializes an instance with nib data and specified bundle for locating resources.
-- [typealias Name](nsnib/name.md)
+- [typealias Name](./name.md)
 
 
 ---

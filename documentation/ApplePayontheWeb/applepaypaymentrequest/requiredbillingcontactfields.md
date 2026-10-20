@@ -1,7 +1,8 @@
 # requiredBillingContactFields
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields of billing information the user must provide to process the transaction.
 
@@ -11,7 +12,7 @@ The fields of billing information the user must provide to process the transacti
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayContactField> requiredBillingContactFields;
 ```
 
@@ -31,13 +32,14 @@ The source of the information may be the user’s Me contact card, the back of c
 
 ## See Also
 
-- [requiredShippingContactFields](applepaypaymentrequest/requiredshippingcontactfields.md)
+### Requesting billing and shipping contact information
+- [requiredShippingContactFields](./requiredshippingcontactfields.md)
   The fields of shipping information the user must provide to fulfill the order.
-- [shippingContactEditingMode](applepaypaymentrequest/shippingcontacteditingmode.md)
+- [shippingContactEditingMode](./shippingcontacteditingmode.md)
   A value that indicates whether the shipping mode prevents the user from editing the shipping address.
-- [ApplePayContactField](applepaycontactfield.md)
+- [ApplePayContactField](../applepaycontactfield.md)
   Field names for requesting contact information in a payment request.
-- [ApplePayShippingContactEditingMode](applepayshippingcontacteditingmode.md)
+- [ApplePayShippingContactEditingMode](../applepayshippingcontacteditingmode.md)
   Values that indicate whether the shipping mode prevents the user from editing fields of the shipping address.
 
 

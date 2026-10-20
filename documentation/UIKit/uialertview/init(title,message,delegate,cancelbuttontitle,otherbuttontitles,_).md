@@ -1,14 +1,17 @@
 # init(title:message:delegate:cancelButtonTitle:otherButtonTitles:_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alert view with the specified values.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 2.0+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 2.0+ - Deprecated in 9.0
+
+> **Deprecated**: For more information, see [`UIAlertView`](../uialertview.md).
 
 ## Declaration
 
@@ -19,11 +22,12 @@ Creates an alert view with the specified values.
 
 ## See Also
 
-- [convenience init(title: String?, message: String?, delegate: Any?, cancelButtonTitle: String?)](uialertview/init(title:message:delegate:cancelbuttontitle:).md)
+### Creating alert views
+- [convenience init(title: String?, message: String?, delegate: Any?, cancelButtonTitle: String?)](./init%28title,message,delegate,cancelbuttontitle%29.md)
   Convenience method for initializing an alert view.
-- [init(frame: CGRect)](uialertview/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an alert view with the specified frame.
-- [init?(coder: NSCoder)](uialertview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates an alert view from data in an unarchiver.
 
 

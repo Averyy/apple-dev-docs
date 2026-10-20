@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value indicating whether this instance should precede or tie positions with the given value in an ascending sort.
@@ -38,11 +39,17 @@ print(numbers)
 // Prints "[-9.5, 2.5, 3.0, 21.25, nan]"
 ```
 
-The `isTotallyOrdered(belowOrEqualTo:)` method implements the total order relation as defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `isTotallyOrdered(belowOrEqualTo:)` method implements the total order relation as defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
 - `other`: A floating-point value to compare to this value.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [func isTotallyOrdered(belowOrEqualTo: Self) -> Bool](./istotallyordered%28beloworequalto%29-itx6.md)
+  Returns a Boolean value indicating whether this instance should precede or tie positions with the given value in an ascending sort.
 
 
 ---

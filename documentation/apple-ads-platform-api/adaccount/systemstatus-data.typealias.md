@@ -1,7 +1,8 @@
 # AdAccount.SystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The system status for an ad account.
 
@@ -10,13 +11,18 @@ The system status for an ad account.
 
 ## Declaration
 
-```swift
+```
 string AdAccount.SystemStatus
 ```
 
+## Possible Values
+
+- `ACTIVE`: The ad account is active and capable of running campaigns.
+- `INACTIVE`: The ad account is inactive. Check [`AdAccount.SystemStatusReasons`](./systemstatusreasons-data.typealias.md) for the specific cause.
+
 #### Discussion
 
-This status reflects the ad account specifically, separate from the [`Org.SystemStatus`](org/systemstatus-data.typealias.md) of its parent organization.
+This status reflects the ad account specifically, separate from the [`Org.SystemStatus`](../org/systemstatus-data.typealias.md) of its parent organization.
 
 ##### Example
 
@@ -26,7 +32,7 @@ This status reflects the ad account specifically, separate from the [`Org.System
 }
 ```
 
-See [`AdAccountSystemStatus`](adaccountsystemstatus.md) for additional context.
+See [`AdAccountSystemStatus`](../adaccountsystemstatus.md) for additional context.
 
 
 ---

@@ -1,7 +1,8 @@
 # FullyConnectedNetworkClassifier.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The transformer type created by this estimator.
 
@@ -22,11 +23,12 @@ typealias Transformer = FullyConnectedNetworkClassifierModel<Scalar, Label>
 
 ## See Also
 
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/fitted(to:eventhandler:).md)
+### Fitting a classifier
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](./fitted%28to,eventhandler%29.md)
   Fits a fully connected network classifier model to a sequence of examples.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a fully connected network classifier model to a sequence of examples.
-- [FullyConnectedNetworkClassifier.Annotation](fullyconnectednetworkclassifier/annotation.md)
+- [FullyConnectedNetworkClassifier.Annotation](./annotation.md)
   The annotation type.
 
 

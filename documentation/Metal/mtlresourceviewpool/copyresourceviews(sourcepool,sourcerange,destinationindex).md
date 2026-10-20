@@ -1,7 +1,8 @@
 # copyResourceViews(sourcePool:sourceRange:destinationIndex:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies a range of resource views from a source view pool to a destination location in this view pool.
 
@@ -21,7 +22,7 @@ func copyResourceViews(sourcePool: any MTLResourceViewPool, sourceRange: Range<I
 
 #### Return Value
 
-The [`MTLResourceID`](mtlresourceid.md) of the resource view corresponding to `destinationIndex` of the copy in this resource view pool.
+The [`MTLResourceID`](../mtlresourceid.md) of the resource view corresponding to `destinationIndex` of the copy in this resource view pool.
 
 ## Parameters
 

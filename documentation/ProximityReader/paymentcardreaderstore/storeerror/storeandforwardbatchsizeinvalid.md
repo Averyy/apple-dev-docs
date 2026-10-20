@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.storeAndForwardBatchSizeInvalid
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested batch size is invalid.
 

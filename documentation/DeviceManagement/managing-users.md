@@ -1,6 +1,7 @@
 # Managing users
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Register and manage users for your organization’s managed organizational unit.
 
@@ -8,9 +9,9 @@ Register and manage users for your organization’s managed organizational unit.
 
 Deployment of an organization’s owned assets to user-owned devices requires registering those users for the organizational unit you’re managing. The provided API allows for asynchronous management of these users in the organization.
 
-#### Retrieve Users
+#### Retrieve users
 
-Before managing the users in the organization, the device management service needs to determine what users are currently active. Making a request to [`Get Users`](get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
+Before managing the users in the organization, the device management service needs to determine what users are currently active. Making a request to [`Get Users`](./get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
 
 > **Note**:  The Get Users endpoint can return multiple entries with the same `clientUserId` if a user has been retired and re-created. For a given `clientUserId` at an organizational unit, there can be zero or more entries in the Retired state, but only zero or one entry in the Created or Associated state. To retrieve only active users, pass `activeOnly=true` as a query parameter.
 
@@ -69,15 +70,15 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/users?clientU
 --header 'Authorization: Bearer {sToken}'
 ```
 
-For pagination response fields and versioned queries using `sinceVersionId`, see [`Using paginated endpoints`](using-paginated-endpoints.md).
+For pagination response fields and versioned queries using `sinceVersionId`, see [Using paginated endpoints](./using-paginated-endpoints.md).
 
-#### Invite Users
+#### Invite users
 
 You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed organizational unit.
 
-Use [`ServiceConfigResponse.Urls`](serviceconfigresponse/urls-data.dictionary.md) to retrieve the `invitationEmail` template URL, and then replace `%25inviteCode%25` with the user’s `inviteCode` from [`ResponseUser`](responseuser.md).
+Use [`ServiceConfigResponse.Urls`](./serviceconfigresponse/urls-data.dictionary.md) to retrieve the `invitationEmail` template URL, and then replace `%25inviteCode%25` with the user’s `inviteCode` from [`ResponseUser`](./responseuser.md).
 
-The following code shows an example of retrieving the URL from [`Service Config`](service-config.md):
+The following code shows an example of retrieving the URL from [`Service Config`](./service-config.md):
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/config'
@@ -95,7 +96,7 @@ The code above results in a response like the following:
 }
 ```
 
-#### Interpret User States
+#### Interpret user states
 
 A user has an `email` key and either an `idHash` or an `inviteCode` key, depending on the status. A registered user has an `inviteCode` because the system has created the user, but that user doesn’t have an associated Apple Account yet. An associated user has an `idHash` that uniquely identifies the user’s associated Apple Account. A retired user may have an `idHash` if the user had an associated `appleId` previously.
 
@@ -106,13 +107,13 @@ A user has an `email` key and either an `idHash` or an `inviteCode` key, dependi
 | Retired | Indicates that the server has retired the user. |
 | Deleted | A legacy state that indicates that the server has retired the user and has associated that user’s Apple Account with a new user that shares the same `clientUserId`. |
 
-#### Check Request Size Limits
+#### Check request size limits
 
-The size limits for a [`ManageUsersRequest`](manageusersrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](serviceconfigresponse/limits-data.dictionary.md).
+The size limits for a [`ManageUsersRequest`](./manageusersrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](./serviceconfigresponse/limits-data.dictionary.md).
 
-The sole key that is specific to [`ManageUsersRequest`](manageusersrequest.md) is `maxUsers,` which represents the maximum number of unique users in a manage request.
+The sole key that is specific to [`ManageUsersRequest`](./manageusersrequest.md) is `maxUsers,` which represents the maximum number of unique users in a manage request.
 
-The following code shows an example of getting request limits from [`Service Config`](service-config.md):
+The following code shows an example of getting request limits from [`Service Config`](./service-config.md):
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/config'
@@ -141,9 +142,9 @@ The code above results in a response like the following:
 }
 ```
 
-#### Manage Users
+#### Manage users
 
-Use [`ManageUsersRequest`](manageusersrequest.md) to asynchronously create, update, or retire users. Ensure that your use of `clientUserIds` complies with your organization’s privacy policy and applicable agreements governing user data in your deployment.
+Use [`ManageUsersRequest`](./manageusersrequest.md) to asynchronously create, update, or retire users. Ensure that your use of `clientUserIds` complies with your organization’s privacy policy and applicable agreements governing user data in your deployment.
 
 The following code shows an example of creating users to associate in the organization:
 
@@ -201,7 +202,7 @@ The code above results in a response like the following:
 }
 ```
 
-To view progress for your create, update, or retire event, make a request to [`Event Status`](events-status.md) using the unique identifier that the synchronous [`EventResponse`](eventresponse.md) returns, as the following code demonstrates:
+To view progress for your create, update, or retire event, make a request to [`Event Status`](./events-status.md) using the unique identifier that the synchronous [`EventResponse`](./eventresponse.md) returns, as the following code demonstrates:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=1039246b-97f5-4bdc-b3b6-78362dbf7652' \
@@ -241,19 +242,20 @@ The code above results in a response like the following:
 }
 ```
 
-The [`StatusResponse`](statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED,` which represents the overall status of the asynchronous request.
+The [`StatusResponse`](./statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED,` which represents the overall status of the asynchronous request.
 
-#### Handle Notifications
+#### Handle notifications
 
-For device management services that subscribe to `USER_MANAGEMENT` notifications in [`Client Config`](client-config-4szk1.md), the server sends incremental notifications as it manages users. For more information, see [`Subscribing to notifications`](subscribing-to-notifications.md).
+For device management services that subscribe to `USER_MANAGEMENT` notifications in [`Client Config`](./client-config-4szk1.md), the server sends incremental notifications as it manages users. For more information, see [Subscribing to notifications](./subscribing-to-notifications.md).
 
 ## See Also
 
-- [Managing assets](managing-assets.md)
+### Managing content
+- [Managing assets](./managing-assets.md)
   Assign and revoke app and book licenses across your organization.
-- [Managing subscriptions](managing-subscriptions.md)
+- [Managing subscriptions](./managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
-- [Setting up and assigning content](setting-up-and-assigning-content.md)
+- [Setting up and assigning content](./setting-up-and-assigning-content.md)
   Distribute purchased licenses to managed users through your device management service.
 
 

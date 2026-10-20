@@ -1,7 +1,8 @@
 # update(_:with:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a model with a new shaped array of examples.
 
@@ -20,6 +21,8 @@ Updates a model with a new shaped array of examples.
 func update(_ model: inout MultivariateLinearRegressor<Scalar>.Model, with input: AnnotatedBatch<Scalar>) async throws -> Scalar
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 #### Return Value
 
 The mean squared error for the batch, also known as the batch loss.
@@ -31,9 +34,10 @@ The mean squared error for the batch, also known as the batch loss.
 
 ## See Also
 
-- [func makeTransformer() -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/maketransformer.md)
+### Fitting Progressively
+- [func makeTransformer() -> MultivariateLinearRegressor<Scalar>.Model](./maketransformer%28%29.md)
   Creates a default-initialized model suitable for incremental fitting.
-- [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](multivariatelinearregressor/update(_:with:eventhandler:).md)
+- [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a model with a new sequence of examples.
 
 

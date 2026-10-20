@@ -1,17 +1,18 @@
 # AdditiveArithmetic Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func + (Vector3D, Vector3D) -> Vector3D](vector3d/+(_:_:)-7gbcj.md)
+- [static func + (Vector3D, Vector3D) -> Vector3D](./plus%28_,_%29-7gbcj.md)
   Returns a vector that’s the element-wise sum of two sizes.
-- [static func += (inout Vector3D, Vector3D)](vector3d/+=(_:_:).md)
+- [static func += (inout Vector3D, Vector3D)](./pluseq%28_,_%29.md)
   Adds two vectors and stores the result in the left-hand-side variable.
-- [static func - (Vector3D, Vector3D) -> Vector3D](vector3d/-(_:_:)-6zam.md)
+- [static func - (Vector3D, Vector3D) -> Vector3D](./minus%28_,_%29-6zam.md)
   Returns a size that’s the element-wise difference of two vectors.
-- [static func -= (inout Vector3D, Vector3D)](vector3d/-=(_:_:).md)
+- [static func -= (inout Vector3D, Vector3D)](./minuseq%28_,_%29.md)
   Subtracts a vector from a vector and stores the difference in the left-hand-side variable.
 
 

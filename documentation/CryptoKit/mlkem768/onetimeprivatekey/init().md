@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a random one-time-use private key.
 

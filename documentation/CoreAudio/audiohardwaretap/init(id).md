@@ -1,7 +1,8 @@
 # init(id:)
 
 **Framework**: Core Audio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+

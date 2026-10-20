@@ -1,7 +1,8 @@
 # timeLimit
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of time this test’s cases may run for.
 
@@ -11,7 +12,7 @@ The maximum amount of time this test’s cases may run for.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 - Swift 6.0+
 - Xcode 16.0+
@@ -24,7 +25,7 @@ var timeLimit: Duration? { get }
 
 #### Discussion
 
-Associate a time limit with tests by using [`timeLimit(_:)`](trait/timelimit(_:).md).
+Associate a time limit with tests by using [`timeLimit(_:)`](../trait/timelimit%28_%29.md).
 
 If a test has more than one time limit associated with it, the value of this property is the shortest one. If a test has no time limits associated with it, the value of this property is `nil`.
 

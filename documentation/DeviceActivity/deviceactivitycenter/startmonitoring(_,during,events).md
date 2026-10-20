@@ -1,7 +1,8 @@
 # startMonitoring(_:during:events:)
 
 **Framework**: Device Activity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts monitoring the specified device activity.
 
@@ -22,21 +23,22 @@ If the app already monitored the activity, this method overwrites the previous s
 
 The system throws an error if the attempt to monitor the device activity failed. To avoid errors, reduce the number of unique, tightly-scheduled activities. For example, consider using the `warningTime` property of an activity’s schedule.
 
-> ❗ **Important**: The application extension’s [`DeviceActivityMonitor`](deviceactivitymonitor.md) may begin receiving callbacks as soon as the system calls this method if the activity’s scheduled interval is ongoing.
+> ❗ **Important**: The application extension’s [`DeviceActivityMonitor`](../deviceactivitymonitor.md) may begin receiving callbacks as soon as the system calls this method if the activity’s scheduled interval is ongoing.
 
 ## Parameters
 
 - `activity`: The name of the activity.
-- `schedule`: The schedule on which your app extension’s [`DeviceActivityMonitor`](deviceactivitymonitor.md) receives callbacks.
+- `schedule`: The schedule on which your app extension’s [`DeviceActivityMonitor`](../deviceactivitymonitor.md) receives callbacks.
 - `events`: An optional mapping of events keyed by their names. If this parameter is empty, the application extension only receives callbacks for the start and end times of the schedule’s interval. If the device’s time zone changes in the middle of a schedule’s interval, any ongoing events include device activity that may have accumulated outside of the new time zone. In other words, the system uses the time zone of the device at `nextInterval.start` to calculate device activity for the entirety of the interval.
 
 ## See Also
 
-- [init()](deviceactivitycenter/init.md)
+### Monitoring Device Activities
+- [init()](./init%28%29.md)
   Creates an activity center to manage which device activities your application monitors.
-- [func stopMonitoring([DeviceActivityName])](deviceactivitycenter/stopmonitoring(_:).md)
+- [func stopMonitoring([DeviceActivityName])](./stopmonitoring%28_%29.md)
   Stops monitoring the specified device activities.
-- [var activities: [DeviceActivityName]](deviceactivitycenter/activities.md)
+- [var activities: [DeviceActivityName]](./activities.md)
   The activities that the application’s extension currently monitors.
 
 

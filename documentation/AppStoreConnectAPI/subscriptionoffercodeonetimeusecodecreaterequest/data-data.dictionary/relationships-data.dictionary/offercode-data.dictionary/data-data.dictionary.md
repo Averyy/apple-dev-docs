@@ -1,7 +1,8 @@
 # SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription offer code one-time-use code.
 
@@ -10,14 +11,14 @@ The request body you use to create a subscription offer code one-time-use code.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionOfferCodes`
 
 
 ---

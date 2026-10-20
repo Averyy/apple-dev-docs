@@ -1,7 +1,8 @@
 # renderingVersion
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rendering version used to render
 
@@ -16,6 +17,10 @@ Rendering version used to render
 
 ```swift
 var renderingVersion: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger renderingVersion;
 ```
 
 

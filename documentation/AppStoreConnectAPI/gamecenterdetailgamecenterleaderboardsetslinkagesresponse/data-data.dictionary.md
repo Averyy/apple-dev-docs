@@ -1,7 +1,8 @@
 # GameCenterDetailGameCenterLeaderboardSetsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the leaderboard sets associated with a Game Center detail.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the leaderboard sets associated with a Gam
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailGameCenterLeaderboardSetsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSets`
 
 
 ---

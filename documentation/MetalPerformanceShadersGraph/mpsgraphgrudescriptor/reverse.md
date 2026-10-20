@@ -1,7 +1,8 @@
 # reverse
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that defines the time direction of the input sequence.
 
@@ -17,6 +18,10 @@ A parameter that defines the time direction of the input sequence.
 
 ```swift
 var reverse: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL reverse;
 ```
 
 #### Discussion

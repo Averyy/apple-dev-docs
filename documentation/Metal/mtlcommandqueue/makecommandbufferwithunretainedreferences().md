@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a command buffer from the command queue that doesn’t maintain strong references to resources.
@@ -11,7 +12,7 @@ Returns a command buffer from the command queue that doesn’t maintain strong r
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,13 @@ Returns a command buffer from the command queue that doesn’t maintain strong r
 func makeCommandBufferWithUnretainedReferences() -> (any MTLCommandBuffer)?
 ```
 
+```objc
+- (id<MTLCommandBuffer>) commandBufferWithUnretainedReferences;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Discussion
 
@@ -34,15 +39,16 @@ It’s your app’s responsibility to maintain strong references to all the reso
 
 > ❗ **Important**:  Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
 
-This method sets the [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property to [`false`](https://developer.apple.com/documentation/swift/false) for the command buffer it creates.
+This method sets the [`retainedReferences`](../mtlcommandbuffer/retainedreferences.md) property to [`false`](../../Swift/false.md) for the command buffer it creates.
 
-Each command queue has a fixed number of command buffers for its lifetime (see [`makeCommandQueue(maxCommandBufferCount:)`](mtldevice/makecommandqueue(maxcommandbuffercount:).md)). This method blocks the calling CPU thread when the queue doesn’t have any free command buffers, and returns after the GPU finishes executing one.
+Each command queue has a fixed number of command buffers for its lifetime (see [`makeCommandQueue(maxCommandBufferCount:)`](../mtldevice/makecommandqueue%28maxcommandbuffercount%29.md)). This method blocks the calling CPU thread when the queue doesn’t have any free command buffers, and returns after the GPU finishes executing one.
 
 ## See Also
 
-- [func makeCommandBuffer(descriptor: MTLCommandBufferDescriptor) -> (any MTLCommandBuffer)?](mtlcommandqueue/makecommandbuffer(descriptor:).md)
+### Creating command buffers
+- [func makeCommandBuffer(descriptor: MTLCommandBufferDescriptor) -> (any MTLCommandBuffer)?](./makecommandbuffer%28descriptor%29.md)
   Returns a command buffer from the command queue that you configure with a descriptor.
-- [func makeCommandBuffer() -> (any MTLCommandBuffer)?](mtlcommandqueue/makecommandbuffer.md)
+- [func makeCommandBuffer() -> (any MTLCommandBuffer)?](./makecommandbuffer%28%29.md)
   Returns a command buffer from the command queue that maintains strong references to resources.
 
 

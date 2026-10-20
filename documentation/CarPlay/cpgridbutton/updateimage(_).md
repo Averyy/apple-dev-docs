@@ -1,7 +1,8 @@
 # updateImage(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func updateImage(_ image: UIImage)
+```
+
+```objc
+- (void) updateImage:(UIImage *) image;
 ```
 
 

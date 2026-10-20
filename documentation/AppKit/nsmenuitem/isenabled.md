@@ -1,17 +1,22 @@
 # isEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the menu item is enabled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

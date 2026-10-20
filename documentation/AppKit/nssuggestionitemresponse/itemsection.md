@@ -1,7 +1,8 @@
 # NSSuggestionItemResponse.ItemSection
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A suggestion item section with the same suggestion item type as the response
 

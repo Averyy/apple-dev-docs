@@ -1,7 +1,8 @@
 # removeContact(_:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a host as a contact.
 
@@ -18,9 +19,13 @@ Removes a host as a contact.
 func removeContact(_ contact: MIDINetworkHost) -> Bool
 ```
 
+```objc
+- (BOOL) removeContact:(MIDINetworkHost *) contact;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the session successfully removed the host, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the session successfully removed the host, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -28,11 +33,12 @@ func removeContact(_ contact: MIDINetworkHost) -> Bool
 
 ## See Also
 
-- [func contacts() -> Set<MIDINetworkHost>](midinetworksession/contacts.md)
+### Managing Contacts
+- [func contacts() -> Set<MIDINetworkHost>](./contacts%28%29.md)
   Returns the array of network hosts.
-- [func addContact(MIDINetworkHost) -> Bool](midinetworksession/addcontact(_:).md)
+- [func addContact(MIDINetworkHost) -> Bool](./addcontact%28_%29.md)
   Adds a host as a contact.
-- [let MIDINetworkNotificationContactsDidChange: String](midinetworknotificationcontactsdidchange.md)
+- [let MIDINetworkNotificationContactsDidChange: String](../midinetworknotificationcontactsdidchange.md)
   Indicates that the list of contacts changed.
 
 

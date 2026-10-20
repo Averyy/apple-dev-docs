@@ -1,7 +1,8 @@
 # startDeviceMotionUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts device-motion updates without a block handler.
 
@@ -18,29 +19,34 @@ Starts device-motion updates without a block handler.
 func startDeviceMotionUpdates()
 ```
 
+```objc
+- (void) startDeviceMotionUpdates;
+```
+
 #### Discussion
 
-You can get the latest device-motion data through the [`deviceMotion`](cmmotionmanager/devicemotion.md) property. You must call [`stopDeviceMotionUpdates()`](cmmotionmanager/stopdevicemotionupdates().md) when you no longer want your app to process device-motion updates. This method uses the reference frame returned by [`attitudeReferenceFrame`](cmmotionmanager/attitudereferenceframe.md) for device-motion updates.
+You can get the latest device-motion data through the [`deviceMotion`](./devicemotion.md) property. You must call [`stopDeviceMotionUpdates()`](./stopdevicemotionupdates%28%29.md) when you no longer want your app to process device-motion updates. This method uses the reference frame returned by [`attitudeReferenceFrame`](./attitudereferenceframe.md) for device-motion updates.
 
 ## See Also
 
-- [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
+### Managing device motion updates
+- [var deviceMotionBody: (any CMBodyIdentifiable)?](./devicemotionbody.md)
   A physical body or view that defines the coordinate system for device-motion data.
-- [var showsDeviceMovementDisplay: Bool](cmmotionmanager/showsdevicemovementdisplay.md)
+- [var showsDeviceMovementDisplay: Bool](./showsdevicemovementdisplay.md)
   Controls whether the device-movement display is shown.
-- [var deviceMotionUpdateInterval: TimeInterval](cmmotionmanager/devicemotionupdateinterval.md)
+- [var deviceMotionUpdateInterval: TimeInterval](./devicemotionupdateinterval.md)
   The interval, in seconds, for providing device-motion updates to the block handler.
-- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame, to: OperationQueue, withHandler: CMDeviceMotionHandler)](cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).md)
+- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame, to: OperationQueue, withHandler: CMDeviceMotionHandler)](./startdevicemotionupdates%28using,to,withhandler%29.md)
   Starts device-motion updates on an operation queue and using a specified reference frame and block handler.
-- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMDeviceMotionHandler)](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md)
+- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMDeviceMotionHandler)](./startdevicemotionupdates%28to,withhandler%29.md)
   Starts device-motion updates on an operation queue and using a specified block handler.
-- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame)](cmmotionmanager/startdevicemotionupdates(using:).md)
+- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame)](./startdevicemotionupdates%28using%29.md)
   Starts device-motion updates using a reference frame but without a block handler.
-- [func stopDeviceMotionUpdates()](cmmotionmanager/stopdevicemotionupdates.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
   Stops device-motion updates.
-- [var deviceMotion: CMDeviceMotion?](cmmotionmanager/devicemotion.md)
+- [var deviceMotion: CMDeviceMotion?](./devicemotion.md)
   The latest sample of device-motion data.
-- [typealias CMDeviceMotionHandler](cmdevicemotionhandler.md)
+- [typealias CMDeviceMotionHandler](../cmdevicemotionhandler.md)
   The type of block callback for handling device-motion data.
 
 

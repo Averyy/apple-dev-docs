@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The private key that’s persisted by the right.
 
@@ -18,9 +19,14 @@ The private key that’s persisted by the right.
 var key: LAPrivateKey { get }
 ```
 
+```objc
+@property (nonatomic, readonly) LAPrivateKey * key;
+```
+
 ## See Also
 
-- [var secret: LASecret](lapersistedright/secret.md)
+### Accessing persistent data
+- [var secret: LASecret](./secret.md)
   The data kept secret by the right.
 
 

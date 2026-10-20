@@ -1,7 +1,8 @@
 # SecKeyOperationType
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of operations that you can use a cryptographic key to perform.
 
@@ -20,26 +21,30 @@ The types of operations that you can use a cryptographic key to perform.
 enum SecKeyOperationType
 ```
 
+```c
+enum SecKeyOperationType : CFIndex;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SecKeyOperationType.decrypt](seckeyoperationtype/decrypt.md)
-- [SecKeyOperationType.encrypt](seckeyoperationtype/encrypt.md)
-- [SecKeyOperationType.keyExchange](seckeyoperationtype/keyexchange.md)
-- [SecKeyOperationType.sign](seckeyoperationtype/sign.md)
-- [SecKeyOperationType.verify](seckeyoperationtype/verify.md)
+- [SecKeyOperationType.decrypt](./seckeyoperationtype/decrypt.md)
+- [SecKeyOperationType.encrypt](./seckeyoperationtype/encrypt.md)
+- [SecKeyOperationType.keyExchange](./seckeyoperationtype/keyexchange.md)
+- [SecKeyOperationType.sign](./seckeyoperationtype/sign.md)
+- [SecKeyOperationType.verify](./seckeyoperationtype/verify.md)
 ### Initializers
-- [init?(rawValue: CFIndex)](seckeyoperationtype/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./seckeyoperationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

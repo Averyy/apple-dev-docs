@@ -1,7 +1,8 @@
 # convertScale(_:method:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the source time to a new timescale using the specified rounding method.
 
@@ -31,7 +32,8 @@ A converted time value.
 
 ## See Also
 
-- [enum CMTimeRoundingMethod](cmtimeroundingmethod.md)
+### Changing the Timescale
+- [enum CMTimeRoundingMethod](../cmtimeroundingmethod.md)
   An enumeration of rounding methods to use when performing time calculations.
 
 

@@ -1,7 +1,8 @@
 # didStartRunningNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when a capture session starts.
 
@@ -19,19 +20,24 @@ A notification the system posts when a capture session starts.
 class let didStartRunningNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCaptureSessionDidStartRunningNotification;
+```
+
 ## See Also
 
-- [var isRunning: Bool](avcapturesession/isrunning.md)
+### Observing session state
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the capture session is in a running state.
-- [var isInterrupted: Bool](avcapturesession/isinterrupted.md)
+- [var isInterrupted: Bool](./isinterrupted.md)
   A Boolean value that indicates whether the capture session is in an interrupted state.
-- [class let didStopRunningNotification: NSNotification.Name](avcapturesession/didstoprunningnotification.md)
+- [class let didStopRunningNotification: NSNotification.Name](./didstoprunningnotification.md)
   A notification the system posts when a capture session stops.
-- [class let wasInterruptedNotification: NSNotification.Name](avcapturesession/wasinterruptednotification.md)
+- [class let wasInterruptedNotification: NSNotification.Name](./wasinterruptednotification.md)
   A notification the system posts when it interrupts a capture session.
-- [class let interruptionEndedNotification: NSNotification.Name](avcapturesession/interruptionendednotification.md)
+- [class let interruptionEndedNotification: NSNotification.Name](./interruptionendednotification.md)
   A notification the system posts when an interruption to a capture session finishes.
-- [class let runtimeErrorNotification: NSNotification.Name](avcapturesession/runtimeerrornotification.md)
+- [class let runtimeErrorNotification: NSNotification.Name](./runtimeerrornotification.md)
   A notification the system posts when an error occurs during a capture session.
 
 

@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identity activation function.
 
@@ -11,8 +12,10 @@ Identity activation function.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

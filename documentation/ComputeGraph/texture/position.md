@@ -1,13 +1,14 @@
 # texture::position
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Current pixel’s position
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ uint2 texture::position()
 
 In the context of a texture stage, returns the current pixel position, in integer coordinates.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/texture__position.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/texture__position.svg)
 
 
 ---

@@ -1,23 +1,28 @@
 # makeNowPlayingInfoLanguageOption()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a language option for a media selection option.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func makeNowPlayingInfoLanguageOption() -> MPNowPlayingInfoLanguageOption?
+```
+
+```objc
+- (MPNowPlayingInfoLanguageOption *) makeNowPlayingInfoLanguageOption;
 ```
 
 #### Return Value

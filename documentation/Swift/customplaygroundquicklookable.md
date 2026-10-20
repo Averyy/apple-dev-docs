@@ -1,7 +1,8 @@
 # CustomPlaygroundQuickLookable
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that explicitly supplies its own playground Quick Look.
 
@@ -40,21 +41,22 @@ If you need to provide a customized playground representation in Swift 4.0 or Sw
 
 ## See Also
 
-- [typealias ArrayLiteralConvertible](arrayliteralconvertible.md)
-- [typealias BidirectionalIndexable](bidirectionalindexable.md)
-- [typealias BidirectionalSlice](bidirectionalslice.md)
-- [typealias BooleanLiteralConvertible](booleanliteralconvertible.md)
-- [typealias ClosedRangeIndex](closedrangeindex.md)
-- [typealias DefaultBidirectionalIndices](defaultbidirectionalindices.md)
-- [typealias DefaultRandomAccessIndices](defaultrandomaccessindices.md)
-- [typealias DictionaryIterator](dictionaryiterator.md)
-- [typealias DictionaryLiteralConvertible](dictionaryliteralconvertible.md)
-- [typealias EmptyIterator](emptyiterator.md)
-- [typealias ExtendedGraphemeClusterLiteralConvertible](extendedgraphemeclusterliteralconvertible.md)
-- [typealias FlattenBidirectionalCollectionIndex](flattenbidirectionalcollectionindex.md)
-- [typealias FlattenBidirectionalCollection](flattenbidirectionalcollection.md)
-- [typealias FlattenCollectionIndex](flattencollectionindex.md)
-- [typealias FloatLiteralConvertible](floatliteralconvertible.md)
+### Deprecated Type Aliases
+- [typealias ArrayLiteralConvertible](./arrayliteralconvertible.md)
+- [typealias BidirectionalIndexable](./bidirectionalindexable.md)
+- [typealias BidirectionalSlice](./bidirectionalslice.md)
+- [typealias BooleanLiteralConvertible](./booleanliteralconvertible.md)
+- [typealias ClosedRangeIndex](./closedrangeindex.md)
+- [typealias DefaultBidirectionalIndices](./defaultbidirectionalindices.md)
+- [typealias DefaultRandomAccessIndices](./defaultrandomaccessindices.md)
+- [typealias DictionaryIterator](./dictionaryiterator.md)
+- [typealias DictionaryLiteralConvertible](./dictionaryliteralconvertible.md)
+- [typealias EmptyIterator](./emptyiterator.md)
+- [typealias ExtendedGraphemeClusterLiteralConvertible](./extendedgraphemeclusterliteralconvertible.md)
+- [typealias FlattenBidirectionalCollectionIndex](./flattenbidirectionalcollectionindex.md)
+- [typealias FlattenBidirectionalCollection](./flattenbidirectionalcollection.md)
+- [typealias FlattenCollectionIndex](./flattencollectionindex.md)
+- [typealias FloatLiteralConvertible](./floatliteralconvertible.md)
 
 
 ---

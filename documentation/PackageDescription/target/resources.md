@@ -1,7 +1,8 @@
 # resources
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The explicit list of resource files in the target.
 
@@ -16,15 +17,16 @@ final var resources: [Resource]?
 
 ## See Also
 
-- [var path: String?](target/path.md)
+### Configuring File Locations
+- [var path: String?](./path.md)
   The path of the target, relative to the package root.
-- [var exclude: [String]](target/exclude.md)
+- [var exclude: [String]](./exclude.md)
   The paths to source and resource files that you don’t want to include in the target.
-- [var sources: [String]?](target/sources.md)
+- [var sources: [String]?](./sources.md)
   The source files in this target.
-- [struct Resource](resource.md)
+- [struct Resource](../resource.md)
   A resource to bundle with the Swift package.
-- [var publicHeadersPath: String?](target/publicheaderspath.md)
+- [var publicHeadersPath: String?](./publicheaderspath.md)
   The path to the directory that contains public headers of a C-family target.
 
 

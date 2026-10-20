@@ -1,7 +1,8 @@
 # kvImageEdgeExtend
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that extends the edges of the image infinitely.
 
@@ -10,7 +11,7 @@ A flag that extends the edges of the image infinitely.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ A flag that extends the edges of the image infinitely.
 
 ```swift
 var kvImageEdgeExtend: Int { get }
+```
+
+```c
+kvImageEdgeExtend
 ```
 
 #### Discussion
@@ -28,11 +33,12 @@ For example, for all pixels that are both above and to the left of the image, th
 
 ## See Also
 
-- [var kvImageCopyInPlace: Int](kvimagecopyinplace.md)
+### Edging Modes
+- [var kvImageCopyInPlace: Int](./kvimagecopyinplace.md)
   A flag that copies the value of the edge pixel in the source to the destination.
-- [var kvImageBackgroundColorFill: Int](kvimagebackgroundcolorfill.md)
+- [var kvImageBackgroundColorFill: Int](./kvimagebackgroundcolorfill.md)
   A flag that uses the background color for missing pixels.
-- [var kvImageTruncateKernel: Int](kvimagetruncatekernel.md)
+- [var kvImageTruncateKernel: Int](./kvimagetruncatekernel.md)
   A flag that uses only the part of the kernel that overlaps the image.
 
 

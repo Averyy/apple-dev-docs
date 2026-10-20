@@ -1,7 +1,8 @@
 # kAXIncrementAction
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Increments the value of the accessibility object. The amount the value is incremented by is determined by the value of the `kAXValueIncrementAttribute` attribute.
 
@@ -12,6 +13,10 @@ Increments the value of the accessibility object. The amount the value is increm
 
 ```swift
 var kAXIncrementAction: String { get }
+```
+
+```c
+#define kAXIncrementAction
 ```
 
 

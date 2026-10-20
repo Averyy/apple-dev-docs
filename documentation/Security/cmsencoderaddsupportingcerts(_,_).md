@@ -1,7 +1,8 @@
 # CMSEncoderAddSupportingCerts(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds certificates to a message.
 
@@ -14,9 +15,13 @@ Adds certificates to a message.
 func CMSEncoderAddSupportingCerts(_ cmsEncoder: CMSEncoder, _ certOrArray: CFTypeRef) -> OSStatus
 ```
 
+```c
+OSStatus CMSEncoderAddSupportingCerts(CMSEncoderRef cmsEncoder, CFTypeRef certOrArray);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -33,15 +38,16 @@ If you do add content to the message in addition to the certificates, you must c
 
 ## See Also
 
-- [func CMSEncoderUpdateContent(CMSEncoder, UnsafeRawPointer, Int) -> OSStatus](cmsencoderupdatecontent(_:_:_:).md)
+### Related Documentation
+- [func CMSEncoderUpdateContent(CMSEncoder, UnsafeRawPointer, Int) -> OSStatus](./cmsencoderupdatecontent%28_,_,_%29.md)
   Feeds content bytes into the encoder.
-- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](cmsencodercreate(_:).md)
+- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](./cmsencodercreate%28_%29.md)
   Creates a CMSEncoder reference.
-- [func CMSDecoderCopyAllCerts(CMSDecoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](cmsdecodercopyallcerts(_:_:).md)
+- [func CMSDecoderCopyAllCerts(CMSDecoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](./cmsdecodercopyallcerts%28_,_%29.md)
   Obtains an array of all of the certificates in a message.
-- [func CMSEncoderCopyEncodedContent(CMSEncoder, UnsafeMutablePointer<CFData?>) -> OSStatus](cmsencodercopyencodedcontent(_:_:).md)
+- [func CMSEncoderCopyEncodedContent(CMSEncoder, UnsafeMutablePointer<CFData?>) -> OSStatus](./cmsencodercopyencodedcontent%28_,_%29.md)
   Finishes encoding the message and obtains the encoded result.
-- [func CMSEncoderCopySupportingCerts(CMSEncoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](cmsencodercopysupportingcerts(_:_:).md)
+- [func CMSEncoderCopySupportingCerts(CMSEncoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](./cmsencodercopysupportingcerts%28_,_%29.md)
   Obtains the certificates added to a message with `CMSEncoderAddSupportingCerts`.
 
 

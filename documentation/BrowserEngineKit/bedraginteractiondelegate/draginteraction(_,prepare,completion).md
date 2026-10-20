@@ -1,7 +1,8 @@
 # dragInteraction(_:prepare:completion:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the delegate for a drag session.
 
@@ -13,6 +14,10 @@ Prepares the delegate for a drag session.
 
 ```swift
 optional func dragInteraction(_ dragInteraction: BEDragInteraction, prepare session: any UIDragSession, completion: @escaping () -> Bool)
+```
+
+```objc
+- (void) dragInteraction:(BEDragInteraction *) dragInteraction prepareDragSession:(id<UIDragSession>) session completion:(BOOL (^)()) completion;
 ```
 
 #### Discussion
@@ -31,7 +36,8 @@ Pass `true` in the completion handler to indicate successful preparations; other
 
 ## See Also
 
-- [func dragInteraction(BEDragInteraction, itemsForAddingTo: any UIDragSession, forTouchAt: CGPoint, completion: ([UIDragItem]) -> Bool)](bedraginteractiondelegate/draginteraction(_:itemsforaddingto:fortouchat:completion:).md)
+### Participating in drag gestures
+- [func dragInteraction(BEDragInteraction, itemsForAddingTo: any UIDragSession, forTouchAt: CGPoint, completion: ([UIDragItem]) -> Bool)](./draginteraction%28_,itemsforaddingto,fortouchat,completion%29.md)
   Requests items to add to a drag session.
 
 

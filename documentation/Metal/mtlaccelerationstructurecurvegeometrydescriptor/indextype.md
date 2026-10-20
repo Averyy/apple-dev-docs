@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of each index in the index buffer.
 
@@ -19,9 +20,13 @@ The size of each index in the index buffer.
 var indexType: MTLIndexType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLIndexType indexType;
+```
+
 #### Discussion
 
-Set this property to a value that reflects the size of the indices in the [`indexBuffer`](mtlaccelerationstructurecurvegeometrydescriptor/indexbuffer.md) property, such as [`MTLIndexType.uint16`](mtlindextype/uint16.md) or [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+Set this property to a value that reflects the size of the indices in the [`indexBuffer`](./indexbuffer.md) property, such as [`MTLIndexType.uint16`](../mtlindextype/uint16.md) or [`MTLIndexType.uint32`](../mtlindextype/uint32.md).
 
 
 ---

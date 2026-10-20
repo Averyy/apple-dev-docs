@@ -1,7 +1,8 @@
 # ILCallCommunication
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete subclass representing a  phone call.
 
@@ -17,25 +18,30 @@ A concrete subclass representing a  phone call.
 class ILCallCommunication
 ```
 
+```objc
+@interface ILCallCommunication : ILCommunication
+```
+
 ## Relationships
 
 ### Inherits From
-- [ILCommunication](ilcommunication.md)
+- [ILCommunication](./ilcommunication.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class ILCommunication](ilcommunication.md)
+### Communications
+- [class ILCommunication](./ilcommunication.md)
   An abstract superclass representing a message or call to the user.
-- [class ILMessageCommunication](ilmessagecommunication.md)
+- [class ILMessageCommunication](./ilmessagecommunication.md)
   A concrete subclass representing a SMS message.
 
 

@@ -1,7 +1,8 @@
 # UIShape.ResolutionContext
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context for resolving a dynamic shape.
 
@@ -20,16 +21,17 @@ struct ResolutionContext
 ## Topics
 
 ### Determining the content shape
-- [var contentShape: UIShape.Resolved](uishape-swift.struct/resolutioncontext/contentshape.md)
+- [var contentShape: UIShape.Resolved](./resolutioncontext/contentshape.md)
   The resolved shape of the content to which this shape can apply.
 
 ## See Also
 
-- [init(some UIShapeProvider)](uishape-swift.struct/init(_:).md)
+### Creating a dynamic hover shape
+- [init(some UIShapeProvider)](./init%28_%29.md)
   Creates a dynamic shape that resolves using the provided resolver closure and resolution context.
-- [protocol UIShapeProvider](uishapeprovider-60loj.md)
+- [protocol UIShapeProvider](../uishapeprovider-60loj.md)
   An interface for a type that provides a custom shape by resolving it dynamically based on a context.
-- [UIShape.Resolved](uishape-swift.struct/resolved.md)
+- [UIShape.Resolved](./resolved.md)
   A shape that has completely resolved based on a context.
 
 

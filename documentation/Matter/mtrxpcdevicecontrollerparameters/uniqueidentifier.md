@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 var uniqueIdentifier: UUID { get }
+```
+
+```objc
+@property (atomic, retain, readonly) NSUUID * uniqueIdentifier;
 ```
 
 

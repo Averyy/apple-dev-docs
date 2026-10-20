@@ -1,7 +1,8 @@
 # objects
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of object annotations in the image.
 
@@ -21,11 +22,12 @@ let objects: [ObjectDetectionAnnotation<Label>.Annotation]
 
 ## See Also
 
-- [let imageFileName: String](objectdetectionannotation/imagefilename.md)
+### Getting the properties
+- [let imageFileName: String](./imagefilename.md)
   The name of the image file.
-- [ObjectDetectionAnnotation.Annotation](objectdetectionannotation/annotation.md)
+- [ObjectDetectionAnnotation.Annotation](./annotation.md)
   The annotation represented by an object label and its bounding box.
-- [let prominentObject: Label](objectdetectionannotation/prominentobject.md)
+- [let prominentObject: Label](./prominentobject.md)
   The most prominent object in the image.
 
 

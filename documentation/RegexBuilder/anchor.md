@@ -1,7 +1,8 @@
 # Anchor
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A regex component that matches a specific condition at a particular position in an input string.
 
@@ -11,7 +12,7 @@ A regex component that matches a specific condition at a particular position in 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,42 +28,43 @@ You can use anchors to guarantee that a match only occurs at certain points in a
 ## Topics
 
 ### Instance Properties
-- [var inverted: Anchor](anchor/inverted.md)
+- [var inverted: Anchor](./anchor/inverted.md)
   The inverse of this anchor, which matches at every position that this anchor does not.
 ### Type Properties
-- [static var endOfLine: Anchor](anchor/endofline.md)
+- [static var endOfLine: Anchor](./anchor/endofline.md)
   An anchor that matches at the end of a line, including at the end of the input string.
-- [static var endOfSubject: Anchor](anchor/endofsubject.md)
+- [static var endOfSubject: Anchor](./anchor/endofsubject.md)
   An anchor that matches at the end of the input string.
-- [static var endOfSubjectBeforeNewline: Anchor](anchor/endofsubjectbeforenewline.md)
+- [static var endOfSubjectBeforeNewline: Anchor](./anchor/endofsubjectbeforenewline.md)
   An anchor that matches at the end of the input string or at the end of the line immediately before the end of the string.
-- [static var firstMatchingPositionInSubject: Anchor](anchor/firstmatchingpositioninsubject.md)
+- [static var firstMatchingPositionInSubject: Anchor](./anchor/firstmatchingpositioninsubject.md)
   An anchor that matches at the first position of a match in the input string.
-- [static var startOfLine: Anchor](anchor/startofline.md)
+- [static var startOfLine: Anchor](./anchor/startofline.md)
   An anchor that matches at the start of a line, including the start of the input string.
-- [static var startOfSubject: Anchor](anchor/startofsubject.md)
+- [static var startOfSubject: Anchor](./anchor/startofsubject.md)
   An anchor that matches at the start of the input string.
-- [static var textSegmentBoundary: Anchor](anchor/textsegmentboundary.md)
+- [static var textSegmentBoundary: Anchor](./anchor/textsegmentboundary.md)
   An anchor that matches at a grapheme cluster boundary.
-- [static var wordBoundary: Anchor](anchor/wordboundary.md)
+- [static var wordBoundary: Anchor](./anchor/wordboundary.md)
   An anchor that matches at a word boundary.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RegexComponent](../swift/regexcomponent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct CharacterClass](characterclass.md)
+### Components
+- [struct CharacterClass](./characterclass.md)
   A class of characters that match in a regex.
-- [struct Lookahead](lookahead.md)
+- [struct Lookahead](./lookahead.md)
   A regex component that allows a match to continue only if its contents match at the given location.
-- [struct NegativeLookahead](negativelookahead.md)
+- [struct NegativeLookahead](./negativelookahead.md)
   A regex component that allows a match to continue only if its contents do not match at the given location.
-- [struct ChoiceOf](choiceof.md)
+- [struct ChoiceOf](./choiceof.md)
   A regex component that chooses exactly one of its constituent regex components when matching.
 
 

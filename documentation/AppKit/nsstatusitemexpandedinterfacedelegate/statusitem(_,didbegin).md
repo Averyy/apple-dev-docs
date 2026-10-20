@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -11,6 +12,10 @@
 
 ```swift
 func statusItem(_ statusItem: NSStatusItem, didBegin expandedInterfaceSession: NSStatusItemExpandedInterfaceSession)
+```
+
+```objc
+- (void) statusItem:(NSStatusItem *) statusItem didBeginExpandedInterfaceSession:(NSStatusItemExpandedInterfaceSession *) expandedInterfaceSession;
 ```
 
 

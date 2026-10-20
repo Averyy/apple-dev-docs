@@ -1,7 +1,8 @@
 # LowLevelArgumentTable
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A table of buffer slices and textures bound to a single shader function.
 
@@ -21,33 +22,34 @@ final class LowLevelArgumentTable
 
 A `LowLevelArgumentTable` binds a set of `LowLevelBufferSlice` and `LowLevelTextureResource` objects at indexed slots. Its layout is described by an `LowLevelArgumentTable.Descriptor` that must match the `argumentTableDescriptor` on the corresponding material function.
 
-Create a `LowLevelArgumentTable` using [`makeArgumentTable(descriptor:buffers:textures:)`](lowlevelrendercontext/makeargumenttable(descriptor:buffers:textures:).md).
+Create a `LowLevelArgumentTable` using [`makeArgumentTable(descriptor:buffers:textures:)`](./lowlevelrendercontext/makeargumenttable%28descriptor,buffers,textures%29.md).
 
 ## Topics
 
 ### Inspecting the table
-- [var descriptor: LowLevelArgumentTable.Descriptor](lowlevelargumenttable/descriptor-swift.property.md)
+- [var descriptor: LowLevelArgumentTable.Descriptor](./lowlevelargumenttable/descriptor-swift.property.md)
   The descriptor that describes the buffer and texture slots of this argument table.
-- [LowLevelArgumentTable.Descriptor](lowlevelargumenttable/descriptor-swift.struct.md)
+- [LowLevelArgumentTable.Descriptor](./lowlevelargumenttable/descriptor-swift.struct.md)
   The buffer and texture slot configuration for an argument table.
 ### Accessing textures
-- [func texture(at: Int) -> LowLevelTextureResource?](lowlevelargumenttable/texture(at:).md)
+- [func texture(at: Int) -> LowLevelTextureResource?](./lowlevelargumenttable/texture%28at%29.md)
   Returns the texture bound at the given index, or `nil` if the slot is unset.
-- [func setTexture(LowLevelTextureResource, at: Int) throws(LowLevelRenderContextError)](lowlevelargumenttable/settexture(_:at:).md)
+- [func setTexture(LowLevelTextureResource, at: Int) throws(LowLevelRenderContextError)](./lowlevelargumenttable/settexture%28_,at%29.md)
   Binds a texture to the slot at the given index.
 ### Accessing buffer slices
-- [func bufferSlice(at: Int) -> LowLevelBufferSlice?](lowlevelargumenttable/bufferslice(at:).md)
+- [func bufferSlice(at: Int) -> LowLevelBufferSlice?](./lowlevelargumenttable/bufferslice%28at%29.md)
   Returns the buffer slice bound at the given index, or `nil` if the slot is unset.
-- [func setBufferSlice(LowLevelBufferSlice, at: Int) throws(LowLevelRenderContextError)](lowlevelargumenttable/setbufferslice(_:at:).md)
+- [func setBufferSlice(LowLevelBufferSlice, at: Int) throws(LowLevelRenderContextError)](./lowlevelargumenttable/setbufferslice%28_,at%29.md)
   Binds a buffer slice to the slot at the given index.
 
 ## See Also
 
-- [class LowLevelRenderPipelineState](lowlevelrenderpipelinestate.md)
+### Pipeline and render targets
+- [class LowLevelRenderPipelineState](./lowlevelrenderpipelinestate.md)
   A compiled Metal render pipeline state for a specific mesh descriptor, material, and render target configuration.
-- [class LowLevelRenderTarget](lowlevelrendertarget.md)
+- [class LowLevelRenderTarget](./lowlevelrendertarget.md)
   An object that describes the pixel format configuration for a render pass’s color and depth attachments.
-- [struct LowLevelMaterialParameterMapping](lowlevelmaterialparametermapping.md)
+- [struct LowLevelMaterialParameterMapping](./lowlevelmaterialparametermapping.md)
   A mapping of named buffer and texture parameters to binding indices for a compiled shader function.
 
 

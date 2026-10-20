@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in a nonempty collection. (See `Collection.startIndex`.)
 
@@ -11,7 +12,7 @@ The position of the first element in a nonempty collection. (See `Collection.sta
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ The position of the first element in a nonempty collection. (See `Collection.sta
 
 ## See Also
 
-- [var endIndex: Int](entity/childcollection/endindex.md)
+### Manipulating indices
+- [var endIndex: Int](./endindex.md)
   TThe collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
-- [func index(after: Int) -> Int](entity/childcollection/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the position immediately after the given index. (See `Collection.index`.)
 
 

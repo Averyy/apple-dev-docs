@@ -1,7 +1,8 @@
 # FSVolume
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A directory structure for files and folders.
 
@@ -14,104 +15,108 @@ A directory structure for files and folders.
 class FSVolume
 ```
 
+```objc
+@interface FSVolume : NSObject
+```
+
 #### Overview
 
-A file system, depending on its type, provides one or more volumes to clients. The [`FSUnaryFileSystem`](fsunaryfilesystem.md) by definition provides only one volume, while an [`FSFileSystem`](fsfilesystem.md) supports multiple volumes.
+A file system, depending on its type, provides one or more volumes to clients. The [`FSUnaryFileSystem`](./fsunaryfilesystem.md) by definition provides only one volume, while an [`FSFileSystem`](./fsfilesystem.md) supports multiple volumes.
 
-You implement a volume for your file system type by subclassing this class, and also conforming to the [`FSVolume.Handler`](fsvolume/handler.md) and [`FSVolume.PathConfOperations`](fsvolume/pathconfoperations.md) protocols. This protocol defines the minimum set of operations supported by a volume, such as mounting, activating, creating and removing items, and more.
+You implement a volume for your file system type by subclassing this class, and also conforming to the [`FSVolume.Handler`](./fsvolume/handler.md) and [`FSVolume.PathConfOperations`](./fsvolume/pathconfoperations.md) protocols. This protocol defines the minimum set of operations supported by a volume, such as mounting, activating, creating and removing items, and more.
 
 Your volume can provide additional functionality by conforming to other volume handler protocols. These protocols add support for operations like open and close, read and write, extended attribute (Xattr) manipulation, and more.
 
 ## Topics
 
 ### Creating a volume
-- [init(volumeID: FSVolume.Identifier, volumeName: FSFileName)](fsvolume/init(volumeid:volumename:).md)
+- [init(volumeID: FSVolume.Identifier, volumeName: FSFileName)](./fsvolume/init%28volumeid,volumename%29.md)
   Creates a volume with the given identifier and name.
-- [FSVolume.Identifier](fsvolume/identifier.md)
+- [FSVolume.Identifier](./fsvolume/identifier.md)
   A type that identifies a volume.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
 ### Accessing volume properties
-- [var volumeID: FSVolume.Identifier](fsvolume/volumeid.md)
+- [var volumeID: FSVolume.Identifier](./fsvolume/volumeid.md)
   An identifier that uniquely identifies the volume.
-- [var name: FSFileName](fsvolume/name.md)
+- [var name: FSFileName](./fsvolume/name.md)
   The name of the volume.
 ### Implementing required handlers
-- [FSVolume.Handler](fsvolume/handler.md)
+- [FSVolume.Handler](./fsvolume/handler.md)
   Methods that all volumes implement to provide required capabilities.
-- [class FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [class FSVolumeHandlerResult](./fsvolumehandlerresult.md)
   An abstract base class for all result objects in FSKit handler-style protocols.
-- [FSVolume.PathConfOperations](fsvolume/pathconfoperations.md)
+- [FSVolume.PathConfOperations](./fsvolume/pathconfoperations.md)
   Properties implemented by volumes that support providing the values of system limits or options.
 ### Implementing optional handlers
-- [FSVolume.OpenCloseHandler](fsvolume/openclosehandler.md)
+- [FSVolume.OpenCloseHandler](./fsvolume/openclosehandler.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
-- [FSVolume.ReadWriteHandler](fsvolume/readwritehandler.md)
+- [FSVolume.ReadWriteHandler](./fsvolume/readwritehandler.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
-- [FSVolume.AccessCheckHandler](fsvolume/accesscheckhandler.md)
+- [FSVolume.AccessCheckHandler](./fsvolume/accesscheckhandler.md)
   Methods and properties implemented by volumes that want to enforce access check operations.
-- [FSVolume.RenameHandler](fsvolume/renamehandler.md)
+- [FSVolume.RenameHandler](./fsvolume/renamehandler.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [FSVolume.PreallocateHandler](fsvolume/preallocatehandler.md)
+- [FSVolume.PreallocateHandler](./fsvolume/preallocatehandler.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
-- [FSVolume.XattrHandler](fsvolume/xattrhandler.md)
+- [FSVolume.XattrHandler](./fsvolume/xattrhandler.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
-- [FSVolume.ItemDeactivationHandler](fsvolume/itemdeactivationhandler.md)
+- [FSVolume.ItemDeactivationHandler](./fsvolume/itemdeactivationhandler.md)
   Methods and properties implemented by volumes that support deactivating items.
-- [FSVolume.KernelOffloadedIOHandler](fsvolume/kerneloffloadediohandler.md)
+- [FSVolume.KernelOffloadedIOHandler](./fsvolume/kerneloffloadediohandler.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
-- [FSVolume.DataCacheHandler](fsvolume/datacachehandler.md)
+- [FSVolume.DataCacheHandler](./fsvolume/datacachehandler.md)
   Methods and properties implemented by volumes that coordinate kernel-level data caching.
-- [FSVolume.SeekRegionHandler](fsvolume/seekregionhandler.md)
+- [FSVolume.SeekRegionHandler](./fsvolume/seekregionhandler.md)
   Methods and properties implemented by volumes that support seek operations
 ### Managing caching behavior
-- [func setCacheState(for: FSItem, cacheMode: FSVolume.DataCacheMode, coherencyType: FSVolume.KernelCacheCoherencyType, action: FSVolume.KernelCacheCoherencyAction) -> (any Error)?](fsvolume/setcachestate(for:cachemode:coherencytype:action:).md)
+- [func setCacheState(for: FSItem, cacheMode: FSVolume.DataCacheMode, coherencyType: FSVolume.KernelCacheCoherencyType, action: FSVolume.KernelCacheCoherencyAction) -> (any Error)?](./fsvolume/setcachestate%28for,cachemode,coherencytype,action%29.md)
   Sends a synchronous cache state update request from the module to the kernel.
-- [class FSItem](fsitem.md)
+- [class FSItem](./fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [FSVolume.DataCacheMode](fsvolume/datacachemode.md)
+- [FSVolume.DataCacheMode](./fsvolume/datacachemode.md)
   A type that defines the cache mode requested by the kernel for data operations.
-- [FSVolume.KernelCacheCoherencyType](fsvolume/kernelcachecoherencytype.md)
+- [FSVolume.KernelCacheCoherencyType](./fsvolume/kernelcachecoherencytype.md)
   A type that defines how the kernel caches data.
-- [FSVolume.KernelCacheCoherencyAction](fsvolume/kernelcachecoherencyaction.md)
+- [FSVolume.KernelCacheCoherencyAction](./fsvolume/kernelcachecoherencyaction.md)
   A type that defines actions for cache state changes.
 ### Deprecated
-- [FSVolume.Operations](fsvolume/operations.md)
+- [FSVolume.Operations](./fsvolume/operations.md)
   Methods that all volumes implement to provide required capabilities.
-- [FSVolume.OpenCloseOperations](fsvolume/opencloseoperations.md)
+- [FSVolume.OpenCloseOperations](./fsvolume/opencloseoperations.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
-- [FSVolume.ReadWriteOperations](fsvolume/readwriteoperations.md)
+- [FSVolume.ReadWriteOperations](./fsvolume/readwriteoperations.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
-- [FSVolume.AccessCheckOperations](fsvolume/accesscheckoperations.md)
+- [FSVolume.AccessCheckOperations](./fsvolume/accesscheckoperations.md)
   Methods and properties implemented by volumes that want to enforce access check operations.
-- [FSVolume.RenameOperations](fsvolume/renameoperations.md)
+- [FSVolume.RenameOperations](./fsvolume/renameoperations.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [FSVolume.PreallocateOperations](fsvolume/preallocateoperations.md)
+- [FSVolume.PreallocateOperations](./fsvolume/preallocateoperations.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
-- [FSVolume.XattrOperations](fsvolume/xattroperations.md)
+- [FSVolume.XattrOperations](./fsvolume/xattroperations.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
-- [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
+- [FSVolume.ItemDeactivation](./fsvolume/itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
-- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
+- [protocol FSVolumeKernelOffloadedIOOperations](./fsvolumekerneloffloadediooperations.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 ### Protocols
-- [FSVolume.CommonOperations](fsvolume/commonoperations.md)
+- [FSVolume.CommonOperations](./fsvolume/commonoperations.md)
   Methods common to `FSVolumeHandler` and `FSVolumeOperations`
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

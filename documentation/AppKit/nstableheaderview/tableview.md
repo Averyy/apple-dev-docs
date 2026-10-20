@@ -1,17 +1,22 @@
 # tableView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`NSTableView`](nstableview.md) instance that this table header view belongs to.
+The [`NSTableView`](../nstableview.md) instance that this table header view belongs to.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var tableView: NSTableView? { get set }
+```
+
+```objc
+@property (weak, nullable) NSTableView * tableView;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ You should never need to set this property; it’s assigned automatically when y
 
 ## See Also
 
-- [class NSTableView](nstableview.md)
+### Related Documentation
+- [class NSTableView](../nstableview.md)
   A set of related records, displayed in rows that represent individual records and columns that represent the attributes of those records.
-- [var headerView: NSTableHeaderView?](nstableview/headerview.md)
+- [var headerView: NSTableHeaderView?](../nstableview/headerview.md)
   The view object used to draw headers over columns.
 
 

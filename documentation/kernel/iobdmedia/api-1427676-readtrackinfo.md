@@ -1,14 +1,15 @@
 # readTrackInfo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn readTrackInfo(IOMemoryDescriptor *buffer, UInt32 address, UInt8 addressType, UInt8 open, UInt16 *actualByteCount);
 ```
 

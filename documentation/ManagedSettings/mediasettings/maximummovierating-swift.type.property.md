@@ -1,7 +1,8 @@
 # maximumMovieRating
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the setting that controls the maximum movie rating.
 
@@ -22,11 +23,12 @@ The default value is `1000` and the bounds are `0...1000`.
 
 ## See Also
 
-- [var maximumMovieRating: Int?](mediasettings/maximummovierating-swift.property.md)
+### Limiting movie and TV show ratings
+- [var maximumMovieRating: Int?](./maximummovierating-swift.property.md)
   The maximum movie rating the user may view.
-- [var maximumTVShowRating: Int?](mediasettings/maximumtvshowrating-swift.property.md)
+- [var maximumTVShowRating: Int?](./maximumtvshowrating-swift.property.md)
   The maximum TV show rating that the user may view.
-- [static let maximumTVShowRating: BoundedSettingMetadata<Int>](mediasettings/maximumtvshowrating-swift.type.property.md)
+- [static let maximumTVShowRating: BoundedSettingMetadata<Int>](./maximumtvshowrating-swift.type.property.md)
   The metadata for the setting that controls the maximum TV show rating.
 
 

@@ -1,7 +1,8 @@
 # includesRowIndices
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the description includes the row indices.
 

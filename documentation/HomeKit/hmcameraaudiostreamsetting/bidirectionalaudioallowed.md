@@ -1,7 +1,8 @@
 # HMCameraAudioStreamSetting.bidirectionalAudioAllowed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The setting that permits both incoming and outgoing audio.
 
@@ -19,11 +20,16 @@ The setting that permits both incoming and outgoing audio.
 case bidirectionalAudioAllowed
 ```
 
+```c
+HMCameraAudioStreamSettingBidirectionalAudioAllowed
+```
+
 ## See Also
 
-- [HMCameraAudioStreamSetting.muted](hmcameraaudiostreamsetting/muted.md)
+### Configuring the Audio Stream
+- [HMCameraAudioStreamSetting.muted](./muted.md)
   The setting that mutes both incoming and outgoing audio.
-- [HMCameraAudioStreamSetting.incomingAudioAllowed](hmcameraaudiostreamsetting/incomingaudioallowed.md)
+- [HMCameraAudioStreamSetting.incomingAudioAllowed](./incomingaudioallowed.md)
   The setting that permits incoming audio.
 
 

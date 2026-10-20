@@ -1,7 +1,8 @@
 # kAERemoteProcess
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The source application is a process on a remote computer on the network.
 

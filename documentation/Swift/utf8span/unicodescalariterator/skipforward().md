@@ -1,7 +1,8 @@
 # skipForward()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advance `currentCodeUnitOffset` to the end of the current scalar, without decoding it.
 
@@ -24,7 +25,7 @@ mutating func skipForward() -> Int
 
 Returns the number of `Unicode.Scalar`s skipped over, which can be 0 if at the end of the UTF8Span.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

@@ -1,7 +1,8 @@
 # preferredPresentation
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of media presentation shown after selecting the item.
 
@@ -14,6 +15,10 @@ The style of media presentation shown after selecting the item.
 
 ```swift
 var preferredPresentation: CPPlaybackConfiguration.Presentation { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CPPlaybackPresentation preferredPresentation;
 ```
 
 

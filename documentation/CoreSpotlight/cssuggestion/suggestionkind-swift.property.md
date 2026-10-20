@@ -1,7 +1,8 @@
 # suggestionKind
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of suggestion.
 
@@ -18,11 +19,16 @@ The type of suggestion.
 var suggestionKind: CSSuggestion.SuggestionKind { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CSSuggestionKind suggestionKind;
+```
+
 ## See Also
 
-- [var localizedAttributedSuggestion: AttributedString](cssuggestion/localizedattributedsuggestion-3ssly.md)
+### Setting suggestion attributes
+- [var localizedAttributedSuggestion: AttributedString](./localizedattributedsuggestion-3ssly.md)
   An attributed string for the localized suggestion.
-- [CSSuggestion.SuggestionKind](cssuggestion/suggestionkind-swift.enum.md)
+- [CSSuggestion.SuggestionKind](./suggestionkind-swift.enum.md)
   The suggestion type that determines how the system handles a suggestion.
 
 

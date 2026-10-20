@@ -1,7 +1,8 @@
 # noPush(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enable no-push mode.
 

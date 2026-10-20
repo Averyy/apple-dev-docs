@@ -1,20 +1,31 @@
 # getWebAppManifest(completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the web app’s manifest to the system, if the bookmark represents a web app.
 
 **Availability**:
-- iOS 17.5+
-- iPadOS 17.5+
-- Mac Catalyst 17.5+
-- visionOS 1.2+
+- iOS 17.5+ - Deprecated in 27.2
+- iPadOS 17.5+ - Deprecated in 27.2
+- Mac Catalyst 17.5+ - Deprecated in 27.2
+- visionOS 1.2+ - Deprecated in 27.2
+
+> **Deprecated**: Create a SFAddToHomeScreenInfo instead
 
 ## Declaration
 
 ```swift
+optional func getWebAppManifest(completionHandler: @escaping @Sendable (BEWebAppManifest?) -> Void)
+```
+
+```swift
 optional func webAppManifest() async -> BEWebAppManifest?
+```
+
+```objc
+- (void) getWebAppManifestWithCompletionHandler:(void (^)(BEWebAppManifest *)) completionHandler;
 ```
 
 #### Discussion
@@ -27,9 +38,10 @@ The system only calls this method in browser apps that include an alternative br
 
 ## See Also
 
-- [func getHomeScreenWebAppInfo(completionHandler: (SFAddToHomeScreenInfo?) -> Void)](sfaddtohomescreenactivityitem/gethomescreenwebappinfo(completionhandler:).md)
+### Providing information about a web app to the system
+- [func getHomeScreenWebAppInfo(completionHandler: (SFAddToHomeScreenInfo?) -> Void)](./gethomescreenwebappinfo%28completionhandler%29.md)
   Provides information about a web app to the system.
-- [class SFAddToHomeScreenInfo](sfaddtohomescreeninfo.md)
+- [class SFAddToHomeScreenInfo](../sfaddtohomescreeninfo.md)
   A class that provides information about a web app that someone adds to their Home Screen.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:as:)
 
 **Framework**: Core Video  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get or set attachment value associated with a string key
 

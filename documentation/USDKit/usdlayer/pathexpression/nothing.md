@@ -1,7 +1,8 @@
 # nothing
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An expression that matches no paths, representing an empty selection.
 

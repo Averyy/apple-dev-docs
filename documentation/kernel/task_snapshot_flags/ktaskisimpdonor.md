@@ -1,14 +1,15 @@
 # kTaskIsImpDonor
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 kTaskIsImpDonor = 0x4000
 ```
 

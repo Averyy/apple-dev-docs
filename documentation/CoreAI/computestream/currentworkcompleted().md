@@ -1,7 +1,8 @@
 # currentWorkCompleted()
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits for all previous work encoded to this stream to be complete.
 

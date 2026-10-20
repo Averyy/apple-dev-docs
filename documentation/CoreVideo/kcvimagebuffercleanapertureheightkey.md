@@ -1,7 +1,8 @@
 # kCVImageBufferCleanApertureHeightKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to the clean aperture height of the image buffer.
 
@@ -20,17 +21,22 @@ A key to the clean aperture height of the image buffer.
 let kCVImageBufferCleanApertureHeightKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVImageBufferCleanApertureHeightKey;
+```
+
 #### Discussion
 
-The clean aperture height value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The clean aperture height value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 ## See Also
 
-- [let kCVImageBufferCleanApertureWidthKey: CFString](kcvimagebuffercleanaperturewidthkey.md)
+### Constants
+- [let kCVImageBufferCleanApertureWidthKey: CFString](./kcvimagebuffercleanaperturewidthkey.md)
   A key to the clean aperture width of the image buffer.
-- [let kCVImageBufferCleanApertureHorizontalOffsetKey: CFString](kcvimagebuffercleanaperturehorizontaloffsetkey.md)
+- [let kCVImageBufferCleanApertureHorizontalOffsetKey: CFString](./kcvimagebuffercleanaperturehorizontaloffsetkey.md)
   A key to the clean aperture horizontal offset value from the center of the image buffer.
-- [let kCVImageBufferCleanApertureVerticalOffsetKey: CFString](kcvimagebuffercleanapertureverticaloffsetkey.md)
+- [let kCVImageBufferCleanApertureVerticalOffsetKey: CFString](./kcvimagebuffercleanapertureverticaloffsetkey.md)
   A key to the clean aperture vertical offset value from the center of the image buffer.
 
 

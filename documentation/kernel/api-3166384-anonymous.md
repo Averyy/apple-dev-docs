@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,42 +18,42 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount](3166384-anonymous/kiousbsuperspeedplusdevicecapabilityminrxlanecount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilityminrxlanecountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](3166384-anonymous/kiousbsuperspeedplusdevicecapabilityreserved.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilityreservedphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklse.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsephase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedId](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkminspeedid.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkminspeedidphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocol](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkprotocol.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocolPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkprotocolphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReserved](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkreserved.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReservedPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkreservedphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCount](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCountPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedId](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedid.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCount](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedidcount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCountPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedidcountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedidphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissa](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissa.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissaPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissaphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetric](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinksymmetric.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetry](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinksymmetry.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetryPhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinksymmetryphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkType](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinktype.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkTypePhase](3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinktypephase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilityminrxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilityminrxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilityreserved.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilityreservedphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklse.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinklsephase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedId](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkminspeedid.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkminspeedidphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocol](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkprotocol.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocolPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkprotocolphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReserved](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkreserved.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReservedPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkreservedphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCount](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCountPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedId](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedid.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCount](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedidcount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCountPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedidcountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedidphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissa](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissa.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissaPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissaphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetric](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinksymmetric.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetry](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinksymmetry.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetryPhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinksymmetryphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkType](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinktype.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkTypePhase](./api-3166384-anonymous/kiousbsuperspeedplusdevicecapabilitysublinktypephase.md)
 
 
 ---

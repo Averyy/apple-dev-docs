@@ -1,7 +1,8 @@
 # didApplyConstraints(for:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you to peform any necessary logic after constraints are applied.
 
@@ -20,6 +21,10 @@ Tells you to peform any necessary logic after constraints are applied.
 optional func didApplyConstraints(for scene: SKScene)
 ```
 
+```objc
+- (void) didApplyConstraintsForScene:(SKScene *) scene;
+```
+
 #### Discussion
 
 Do not call this method directly; it is called by the system exactly once per frame, so long as the scene is presented in a view and is not paused. It is called after any enabled constraints in the scene have been applied.
@@ -36,15 +41,16 @@ Any changes to constraints will not be applied until the next update.
 
 ## See Also
 
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+### Handling Animation Events
+- [Use SpriteKit Objects within Scene Delegate Callbacks](../use-spritekit-objects-within-scene-delegate-callbacks.md)
   Follow threading guidelines to keep your SpriteKit app thread safe.
-- [func update(TimeInterval, for: SKScene)](skscenedelegate/update(_:for:).md)
+- [func update(TimeInterval, for: SKScene)](./update%28_,for%29.md)
   Tells you to perform any app specific logic to update your scene.
-- [func didEvaluateActions(for: SKScene)](skscenedelegate/didevaluateactions(for:).md)
+- [func didEvaluateActions(for: SKScene)](./didevaluateactions%28for%29.md)
   Tells you to peform any necessary logic after scene actions are evaluated.
-- [func didSimulatePhysics(for: SKScene)](skscenedelegate/didsimulatephysics(for:).md)
+- [func didSimulatePhysics(for: SKScene)](./didsimulatephysics%28for%29.md)
   Tells you to peform any necessary logic after physics simulations are performed.
-- [func didFinishUpdate(for: SKScene)](skscenedelegate/didfinishupdate(for:).md)
+- [func didFinishUpdate(for: SKScene)](./didfinishupdate%28for%29.md)
   Tells you to peform any necessary logic after the scene has finished all of the steps required to process animations.
 
 

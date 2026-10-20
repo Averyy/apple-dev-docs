@@ -1,7 +1,8 @@
 # keyboardSelectionDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted after the selected text input source changes.
 
@@ -14,9 +15,13 @@ Posted after the selected text input source changes.
 class let keyboardSelectionDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSTextInputContextKeyboardSelectionDidChangeNotification;
+```
+
 #### Discussion
 
-To observe this notification using Swift concurrency, use [`NSTextInputContext.KeyboardSelectionDidChangeMessage`](nstextinputcontext/keyboardselectiondidchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSTextInputContext.KeyboardSelectionDidChangeMessage`](./keyboardselectiondidchangemessage.md).
 
 
 ---

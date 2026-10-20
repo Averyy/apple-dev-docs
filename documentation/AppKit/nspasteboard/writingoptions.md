@@ -1,7 +1,8 @@
 # NSPasteboard.WritingOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type to specify options for writing to a pasteboard.
 
@@ -14,29 +15,33 @@ Type to specify options for writing to a pasteboard.
 struct WritingOptions
 ```
 
+```c
+enum NSPasteboardWritingOptions : NSUInteger;
+```
+
 #### Overview
 
-For possible values, see [`Pasteboard Writing Options`](pasteboard-writing-options.md).
+For possible values, see [Pasteboard Writing Options](../pasteboard-writing-options.md).
 
 ## Topics
 
 ### Options
-- [static var promised: NSPasteboard.WritingOptions](nspasteboard/writingoptions/promised.md)
+- [static var promised: NSPasteboard.WritingOptions](./writingoptions/promised.md)
   Data for a type with this option is promised, not immediately written.
 ### Initializers
-- [init(rawValue: UInt)](nspasteboard/writingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./writingoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

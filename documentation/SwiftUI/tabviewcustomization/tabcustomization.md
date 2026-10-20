@@ -1,9 +1,10 @@
 # TabViewCustomization.TabCustomization
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The customizations a user has made to a [`Tab`](tab.md).
+The customizations a user has made to a [`Tab`](../tab.md).
 
 **Availability**:
 - iOS 18.4+
@@ -21,9 +22,9 @@ struct TabCustomization
 ## Topics
 
 ### Instance Properties
-- [var sidebarVisibility: Visibility](tabviewcustomization/tabcustomization/sidebarvisibility.md)
+- [var sidebarVisibility: Visibility](./tabcustomization/sidebarvisibility.md)
   The visibility of the tab in the sidebar.
-- [var tabBarVisibility: Visibility](tabviewcustomization/tabcustomization/tabbarvisibility.md)
+- [var tabBarVisibility: Visibility](./tabcustomization/tabbarvisibility.md)
   The visibility of the tab in the tab bar.
 
 

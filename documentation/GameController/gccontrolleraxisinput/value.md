@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value of the axis.
 
@@ -19,15 +20,20 @@ The current value of the axis.
 var value: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float value;
+```
+
 #### Discussion
 
-Often a physical controller ignores values near the neutral position called the dead zone. The [`GCControllerAxisInput`](gccontrolleraxisinput.md) element handles this dead zone, and other physical constraints of a hardware control, by computing a normalized value.
+Often a physical controller ignores values near the neutral position called the dead zone. The [`GCControllerAxisInput`](../gccontrolleraxisinput.md) element handles this dead zone, and other physical constraints of a hardware control, by computing a normalized value.
 
 The normalized value ranges from `-1` to `1`. If the value is `0`, the movement is in the dead zone. A nonzero value indicates the moment is outside of the dead zone.
 
 ## See Also
 
-- [func setValue(Float)](gccontrolleraxisinput/setvalue(_:).md)
+### Accessing the input values
+- [func setValue(Float)](./setvalue%28_%29.md)
   Sets the normalized value of the axis.
 
 

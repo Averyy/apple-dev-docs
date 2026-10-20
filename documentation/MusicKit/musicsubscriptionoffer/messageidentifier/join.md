@@ -1,7 +1,8 @@
 # join
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the message that invites the user to join Apple Music.
 

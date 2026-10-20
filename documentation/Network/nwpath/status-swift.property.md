@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A status indicating whether a path can be used by connections.
 
@@ -22,7 +23,8 @@ let status: NWPath.Status
 
 ## See Also
 
-- [NWPath.Status](nwpath/status-swift.enum.md)
+### Checking Path Availability
+- [NWPath.Status](./status-swift.enum.md)
   Status values indicating whether a path can be used by connections.
 
 

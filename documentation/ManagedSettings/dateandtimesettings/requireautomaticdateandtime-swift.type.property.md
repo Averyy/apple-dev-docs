@@ -1,7 +1,8 @@
 # requireAutomaticDateAndTime
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the constraint that configures the date and time setting.
 
@@ -18,11 +19,12 @@ static let requireAutomaticDateAndTime: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `requireAutomaticDateAndTime`  to access the metadata for [`requireAutomaticDateAndTime`](dateandtimesettings/requireautomaticdateandtime-swift.property.md). The default value is `false`.
+Use `requireAutomaticDateAndTime`  to access the metadata for [`requireAutomaticDateAndTime`](./requireautomaticdateandtime-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var requireAutomaticDateAndTime: Bool?](dateandtimesettings/requireautomaticdateandtime-swift.property.md)
+### Requiring automatic date and time
+- [var requireAutomaticDateAndTime: Bool?](./requireautomaticdateandtime-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing their device’s date and time.
 
 

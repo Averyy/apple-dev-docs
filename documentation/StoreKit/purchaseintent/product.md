@@ -1,7 +1,8 @@
 # product
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product information of the Apple In-App Purchase the customer selects to purchase outside of the app.
 
@@ -19,16 +20,17 @@ let product: Product
 
 ## Mentions
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
 #### Discussion
 
-To enable users to complete the purchase they start on the App Store, call [`purchase(options:)`](product/purchase(options:).md) on this product instance.
+To enable users to complete the purchase they start on the App Store, call [`purchase(options:)`](../product/purchase%28options%29.md) on this product instance.
 
 ## See Also
 
-- [var id: Product.ID](purchaseintent/id.md)
+### Identifying the product
+- [var id: Product.ID](./id.md)
   The product identifier of the Apple In-App Purchase that the customer selects to purchase outside of the app.
 
 

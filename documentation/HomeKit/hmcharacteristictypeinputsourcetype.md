@@ -1,7 +1,8 @@
 # HMCharacteristicTypeInputSourceType
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The accessory input source type.
 
@@ -19,43 +20,48 @@ The accessory input source type.
 let HMCharacteristicTypeInputSourceType: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeInputSourceType;
+```
+
 #### Overview
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueInputSourceType`](hmcharacteristicvalueinputsourcetype.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueInputSourceType`](./hmcharacteristicvalueinputsourcetype.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueInputSourceType](hmcharacteristicvalueinputsourcetype.md)
+- [enum HMCharacteristicValueInputSourceType](./hmcharacteristicvalueinputsourcetype.md)
   Types of accessory input sources.
 
 ## See Also
 
-- [let HMCharacteristicTypeName: String](hmcharacteristictypename.md)
+### Accessory identification
+- [let HMCharacteristicTypeName: String](./hmcharacteristictypename.md)
   The name of the accessory.
-- [let HMCharacteristicTypeIdentify: String](hmcharacteristictypeidentify.md)
+- [let HMCharacteristicTypeIdentify: String](./hmcharacteristictypeidentify.md)
   A control you can use to ask the accessory to identify itself.
-- [let HMCharacteristicTypeVersion: String](hmcharacteristictypeversion.md)
+- [let HMCharacteristicTypeVersion: String](./hmcharacteristictypeversion.md)
   The version of the accessory.
-- [let HMCharacteristicTypeLogs: String](hmcharacteristictypelogs.md)
+- [let HMCharacteristicTypeLogs: String](./hmcharacteristictypelogs.md)
   Log data for the accessory.
-- [let HMCharacteristicTypeAdminOnlyAccess: String](hmcharacteristictypeadminonlyaccess.md)
+- [let HMCharacteristicTypeAdminOnlyAccess: String](./hmcharacteristictypeadminonlyaccess.md)
   An indicator of whether the accessory accepts only administrator access.
-- [let HMCharacteristicTypeHardwareVersion: String](hmcharacteristictypehardwareversion.md)
+- [let HMCharacteristicTypeHardwareVersion: String](./hmcharacteristictypehardwareversion.md)
   The hardware version of the accessory.
-- [let HMCharacteristicTypeSoftwareVersion: String](hmcharacteristictypesoftwareversion.md)
+- [let HMCharacteristicTypeSoftwareVersion: String](./hmcharacteristictypesoftwareversion.md)
   The software version of the accessory.
-- [let HMCharacteristicTypeLabelIndex: String](hmcharacteristictypelabelindex.md)
+- [let HMCharacteristicTypeLabelIndex: String](./hmcharacteristictypelabelindex.md)
   The index of the label for the service on an accessory with multiple instances of the same service.
-- [let HMCharacteristicTypeLabelNamespace: String](hmcharacteristictypelabelnamespace.md)
+- [let HMCharacteristicTypeLabelNamespace: String](./hmcharacteristictypelabelnamespace.md)
   The naming schema used to label the services on an accessory with multiple services of the same type.
-- [let HMCharacteristicTypeActiveIdentifier: String](hmcharacteristictypeactiveidentifier.md)
+- [let HMCharacteristicTypeActiveIdentifier: String](./hmcharacteristictypeactiveidentifier.md)
   An index that maps to the current active Input Source service.
-- [let HMCharacteristicTypeIdentifier: String](hmcharacteristictypeidentifier.md)
+- [let HMCharacteristicTypeIdentifier: String](./hmcharacteristictypeidentifier.md)
   The identifier for an accessory.
-- [let HMCharacteristicTypeInputDeviceType: String](hmcharacteristictypeinputdevicetype.md)
+- [let HMCharacteristicTypeInputDeviceType: String](./hmcharacteristictypeinputdevicetype.md)
   The accessory input device type.
-- [let HMCharacteristicTypeConfiguredName: String](hmcharacteristictypeconfiguredname.md)
+- [let HMCharacteristicTypeConfiguredName: String](./hmcharacteristictypeconfiguredname.md)
   A `UTF‑8` encoded user visible name on an accessory.
 
 

@@ -1,7 +1,8 @@
 # channel
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A channel on which the Access Point is operating.
 

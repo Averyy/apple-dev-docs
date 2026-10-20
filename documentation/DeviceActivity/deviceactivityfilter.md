@@ -1,7 +1,8 @@
 # DeviceActivityFilter
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that filters the device activity data to include in a report.
 
@@ -23,42 +24,43 @@ Your app can choose to filter device activity data for a specific date interval,
 ## Topics
 
 ### Structures
-- [DeviceActivityFilter.Devices](deviceactivityfilter/devices-swift.struct.md)
+- [DeviceActivityFilter.Devices](./deviceactivityfilter/devices-swift.struct.md)
   A type your app uses to indiciate which devices to include in a device activity report.
-- [DeviceActivityFilter.Users](deviceactivityfilter/users-swift.struct.md)
+- [DeviceActivityFilter.Users](./deviceactivityfilter/users-swift.struct.md)
   A type your app uses to indicate which users to include in a device activity report.
 ### Initializers
-- [init(segment: DeviceActivityFilter.SegmentInterval, devices: DeviceActivityFilter.Devices?, applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>)](deviceactivityfilter/init(segment:devices:applications:categories:webdomains:).md)
+- [init(segment: DeviceActivityFilter.SegmentInterval, devices: DeviceActivityFilter.Devices?, applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>)](./deviceactivityfilter/init%28segment,devices,applications,categories,webdomains%29.md)
   Creates a new filter for the current user.
-- [init(segment: DeviceActivityFilter.SegmentInterval, users: DeviceActivityFilter.Users, devices: DeviceActivityFilter.Devices, applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>)](deviceactivityfilter/init(segment:users:devices:applications:categories:webdomains:).md)
+- [init(segment: DeviceActivityFilter.SegmentInterval, users: DeviceActivityFilter.Users, devices: DeviceActivityFilter.Devices, applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>)](./deviceactivityfilter/init%28segment,users,devices,applications,categories,webdomains%29.md)
   Creates a new filter for the specified users and devices.
 ### Instance Properties
-- [var applications: Set<ApplicationToken>](deviceactivityfilter/applications.md)
+- [var applications: Set<ApplicationToken>](./deviceactivityfilter/applications.md)
   An optional set of applications to include in a report.
-- [var categories: Set<ActivityCategoryToken>](deviceactivityfilter/categories.md)
+- [var categories: Set<ActivityCategoryToken>](./deviceactivityfilter/categories.md)
   An optional set of categories to include in a report.
-- [let devices: DeviceActivityFilter.Devices?](deviceactivityfilter/devices-swift.property.md)
+- [let devices: DeviceActivityFilter.Devices?](./deviceactivityfilter/devices-swift.property.md)
   The devices to include in a report.
-- [var segmentInterval: DeviceActivityFilter.SegmentInterval](deviceactivityfilter/segmentinterval-swift.property.md)
+- [var segmentInterval: DeviceActivityFilter.SegmentInterval](./deviceactivityfilter/segmentinterval-swift.property.md)
   The interval at which the system subdivides the report’s device activity data during a specified date interval.
-- [let users: DeviceActivityFilter.Users?](deviceactivityfilter/users-swift.property.md)
+- [let users: DeviceActivityFilter.Users?](./deviceactivityfilter/users-swift.property.md)
   The users to include in a report.
-- [var webDomains: Set<WebDomainToken>](deviceactivityfilter/webdomains.md)
+- [var webDomains: Set<WebDomainToken>](./deviceactivityfilter/webdomains.md)
   An optional set of web domains to include in a report.
 ### Enumerations
-- [DeviceActivityFilter.SegmentInterval](deviceactivityfilter/segmentinterval-swift.enum.md)
+- [DeviceActivityFilter.SegmentInterval](./deviceactivityfilter/segmentinterval-swift.enum.md)
   A type indicating the interval at which the system subdivides device activity data within a specified date interval.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct DeviceActivityData](deviceactivitydata.md)
+### Filter activity data
+- [struct DeviceActivityData](./deviceactivitydata.md)
   Activity data for a person on a specific device.
-- [struct DeviceActivityResults](deviceactivityresults.md)
+- [struct DeviceActivityResults](./deviceactivityresults.md)
   An asynchronous sequence of filtered device activity results.
 
 

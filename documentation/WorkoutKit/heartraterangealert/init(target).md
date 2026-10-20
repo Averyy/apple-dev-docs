@@ -1,7 +1,8 @@
 # init(target:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new heart rate alert for a closed range of measurements.
 

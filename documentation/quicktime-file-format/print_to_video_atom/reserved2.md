@@ -1,7 +1,8 @@
 # Reserved
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 16-bit integer.
 
@@ -11,11 +12,12 @@ Set this value to `0`.
 
 ## See Also
 
-- [Display size](print_to_video_atom/display_size.md)
+### Data fields
+- [Display size](./display_size.md)
   A 16-bit little-endian integer indicating the display size for the movie.
-- [Reserved](print_to_video_atom/reserved1.md)
+- [Reserved](./reserved1.md)
   A 16-bit integer.
-- [Play on open](print_to_video_atom/play_on_open.md)
+- [Play on open](./play_on_open.md)
   An 8-bit Boolean value that indicates whether the movie plays when opened.
 
 

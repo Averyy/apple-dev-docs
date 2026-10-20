@@ -1,7 +1,8 @@
 # UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify whether the orthogonal scrolling section bounces past the edge of content and back again.
 
@@ -18,31 +19,36 @@ Constants that specify whether the orthogonal scrolling section bounces past the
 enum Bounce
 ```
 
+```c
+enum UICollectionLayoutSectionOrthogonalScrollingBounce : NSInteger;
+```
+
 ## Topics
 
 ### Selecting bounce options
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.always](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum/always.md)
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.always](./bounce-swift.enum/always.md)
   The orthogonal scroll view bounces even if the content is smaller than its bounds.
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.automatic](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum/automatic.md)
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.automatic](./bounce-swift.enum/automatic.md)
   The orthogonal scroll view bounces when it encounters a content boundary.
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.never](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum/never.md)
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.never](./bounce-swift.enum/never.md)
   The orthogonal scroll view stops scrolling immediately when it encounters a content boundary without bouncing.
 ### Initializers
-- [init?(rawValue: Int)](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./bounce-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.property.md)
+### Specifying the bounce behavior
+- [var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](./bounce-swift.property.md)
   A value that specifies whether the orthogonal scrolling section bounces past the edge of content and back again.
 
 

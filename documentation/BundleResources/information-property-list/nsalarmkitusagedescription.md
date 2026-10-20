@@ -1,7 +1,8 @@
 # NSAlarmKitUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to schedule alarms.
 
@@ -10,9 +11,10 @@ A message that tells people why the app is requesting access to schedule alarms.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSAlarmKitUsageDescription` (Privacy - Alarm Kit Usage Description)
+- **Type**: string
 
 #### Discussion
 

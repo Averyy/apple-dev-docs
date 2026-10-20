@@ -1,7 +1,8 @@
 # target_system
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var target_system: BNNSTargetSystem
+```
+
+```c
+BNNSTargetSystem target_system;
 ```
 
 #### Discussion

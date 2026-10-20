@@ -1,7 +1,8 @@
 # init(entityName:dictionaryHandler:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(entityName: String, dictionaryHandler handler: @escaping (NSMutableDictionary) -> Bool)
+```
+
+```objc
+- (instancetype) initWithEntityName:(NSString *) entityName dictionaryHandler:(BOOL (^)(NSMutableDictionary<NSString *,id> *obj)) handler;
 ```
 
 

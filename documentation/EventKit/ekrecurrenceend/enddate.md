@@ -1,7 +1,8 @@
 # endDate
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end date of the recurrence end, or `nil` if the recurrence end is count-based.
 
@@ -19,9 +20,14 @@ The end date of the recurrence end, or `nil` if the recurrence end is count-base
 var endDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * endDate;
+```
+
 ## See Also
 
-- [var occurrenceCount: Int](ekrecurrenceend/occurrencecount.md)
+### Accessing Recurrence End Properties
+- [var occurrenceCount: Int](./occurrencecount.md)
   The occurrence count of the recurrence end, or `0` if the recurrence end is date-based.
 
 

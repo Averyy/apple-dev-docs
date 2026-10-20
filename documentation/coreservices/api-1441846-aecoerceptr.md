@@ -1,7 +1,8 @@
 # AECoercePtr(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Coerces data to a desired descriptor type and creates a descriptor containing the newly coerced data.
 
@@ -14,9 +15,13 @@ Coerces data to a desired descriptor type and creates a descriptor containing th
 func AECoercePtr(_ typeCode: DescType, _ dataPtr: UnsafeRawPointer!, _ dataSize: Size, _ toType: DescType, _ result: UnsafeMutablePointer<AEDesc>!) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AECoercePtr(DescType typeCode, const void *dataPtr, Size dataSize, DescType toType, AEDesc *result);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
@@ -26,15 +31,16 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `typeCode`: The descriptor type of the source data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `typeCode`: The descriptor type of the source data. For a list of AppleScript’s predefined descriptor types, see [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md). See [`DescType`](./desctype.md).
 - `dataPtr`: A pointer to the data to coerce.
 - `dataSize`: The length, in bytes, of the data to coerce.
-- `toType`: The desired descriptor type of the resulting descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md).
-- `result`: A pointer to a descriptor. On successful return, a descriptor containing the coerced data and matching the descriptor type specified in `toType`. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
+- `toType`: The desired descriptor type of the resulting descriptor. For a list of AppleScript’s predefined descriptor types, see [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md).
+- `result`: A pointer to a descriptor. On successful return, a descriptor containing the coerced data and matching the descriptor type specified in `toType`. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func AECoerceDesc(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](1446519-aecoercedesc.md)
+### Coercing Descriptor Types
+- [func AECoerceDesc(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1446519-aecoercedesc.md)
   Coerces the data in a descriptor to another descriptor type and creates a descriptor containing the newly coerced data.
 
 

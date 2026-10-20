@@ -1,7 +1,8 @@
 # sharesClipboard
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the framework needs to share the clipboard between the host and the VM.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the framework needs to share the clipboar
 
 ```swift
 var sharesClipboard: Bool { get set }
+```
+
+```objc
+@property BOOL sharesClipboard;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foveated Streaming  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the view that renders the streamed content.

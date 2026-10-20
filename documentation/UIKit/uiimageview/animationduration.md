@@ -1,7 +1,8 @@
 # animationDuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time it takes to go through one cycle of the images.
 
@@ -9,7 +10,7 @@ The amount of time it takes to go through one cycle of the images.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The amount of time it takes to go through one cycle of the images.
 var animationDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval animationDuration;
+```
+
 #### Discussion
 
 The time duration is measured in seconds. The default value of this property is `0.0`, which causes the image view to use a duration equal to the number of images multiplied by 1/30th of a second. Thus, if you had 30 images, the duration would be 1 second.
 
 ## See Also
 
-- [var animationImages: [UIImage]?](uiimageview/animationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation.
-- [var highlightedAnimationImages: [UIImage]?](uiimageview/highlightedanimationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation when the view is highlighted.
-- [var animationRepeatCount: Int](uiimageview/animationrepeatcount.md)
+### Animating a sequence of images
+- [var animationImages: [UIImage]?](./animationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation.
+- [var highlightedAnimationImages: [UIImage]?](./highlightedanimationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation when the view is highlighted.
+- [var animationRepeatCount: Int](./animationrepeatcount.md)
   Specifies the number of times to repeat the animation.
-- [func startAnimating()](uiimageview/startanimating.md)
+- [func startAnimating()](./startanimating%28%29.md)
   Starts animating the images in the receiver.
-- [func stopAnimating()](uiimageview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops animating the images in the receiver.
-- [var isAnimating: Bool](uiimageview/isanimating.md)
+- [var isAnimating: Bool](./isanimating.md)
   Returns a Boolean value indicating whether the animation is running.
 
 

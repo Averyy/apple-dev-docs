@@ -1,16 +1,17 @@
 # UIAccessibilityScrollDirection.right
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is scrolling to the right.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ The user is scrolling to the right.
 case right
 ```
 
+```c
+UIAccessibilityScrollDirectionRight
+```
+
 ## See Also
 
-- [UIAccessibilityScrollDirection.left](uiaccessibilityscrolldirection/left.md)
+### Constants
+- [UIAccessibilityScrollDirection.left](./left.md)
   The user is scrolling to the left.
-- [UIAccessibilityScrollDirection.up](uiaccessibilityscrolldirection/up.md)
+- [UIAccessibilityScrollDirection.up](./up.md)
   The user is scrolling up.
-- [UIAccessibilityScrollDirection.down](uiaccessibilityscrolldirection/down.md)
+- [UIAccessibilityScrollDirection.down](./down.md)
   The user is scrolling down.
-- [UIAccessibilityScrollDirection.next](uiaccessibilityscrolldirection/next.md)
+- [UIAccessibilityScrollDirection.next](./next.md)
   The user is scrolling to the next view in an ordered set of views.
-- [UIAccessibilityScrollDirection.previous](uiaccessibilityscrolldirection/previous.md)
+- [UIAccessibilityScrollDirection.previous](./previous.md)
   The user is scrolling to the previous view in an ordered set of views.
 
 

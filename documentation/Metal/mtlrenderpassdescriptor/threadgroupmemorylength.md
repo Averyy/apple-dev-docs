@@ -1,7 +1,8 @@
 # threadgroupMemoryLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-tile size, in bytes, of the persistent threadgroup memory allocation.
 
@@ -19,13 +20,18 @@ The per-tile size, in bytes, of the persistent threadgroup memory allocation.
 var threadgroupMemoryLength: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger threadgroupMemoryLength;
+```
+
 ## See Also
 
-- [var imageblockSampleLength: Int](mtlrenderpassdescriptor/imageblocksamplelength.md)
+### Specifying tile shading parameters
+- [var imageblockSampleLength: Int](./imageblocksamplelength.md)
   The per-sample size, in bytes, of the largest explicit imageblock layout in the render pass.
-- [var tileWidth: Int](mtlrenderpassdescriptor/tilewidth.md)
+- [var tileWidth: Int](./tilewidth.md)
   The tile width, in pixels.
-- [var tileHeight: Int](mtlrenderpassdescriptor/tileheight.md)
+- [var tileHeight: Int](./tileheight.md)
   The tile height, in pixels.
 
 

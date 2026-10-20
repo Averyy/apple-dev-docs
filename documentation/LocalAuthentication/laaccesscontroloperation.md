@@ -1,7 +1,8 @@
 # LAAccessControlOperation
 
 **Framework**: Local Authentication  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Operations to be evaluated for access control.
 
@@ -19,43 +20,48 @@ Operations to be evaluated for access control.
 enum LAAccessControlOperation
 ```
 
+```c
+enum LAAccessControlOperation : NSInteger;
+```
+
 #### Overview
 
-Use one of these values to specify the operation for which you want to evaluate an access control when calling the [`evaluateAccessControl(_:operation:localizedReason:reply:)`](lacontext/evaluateaccesscontrol(_:operation:localizedreason:reply:).md) method.
+Use one of these values to specify the operation for which you want to evaluate an access control when calling the [`evaluateAccessControl(_:operation:localizedReason:reply:)`](./lacontext/evaluateaccesscontrol%28_,operation,localizedreason,reply%29.md) method.
 
 ## Topics
 
 ### Constants
-- [LAAccessControlOperation.createItem](laaccesscontroloperation/createitem.md)
+- [LAAccessControlOperation.createItem](./laaccesscontroloperation/createitem.md)
   Specifies that access control is used for item creation.
-- [LAAccessControlOperation.useItem](laaccesscontroloperation/useitem.md)
+- [LAAccessControlOperation.useItem](./laaccesscontroloperation/useitem.md)
   Specifies that access control is used for accessing an existing item.
-- [LAAccessControlOperation.createKey](laaccesscontroloperation/createkey.md)
+- [LAAccessControlOperation.createKey](./laaccesscontroloperation/createkey.md)
   Specifies that access control is used for key creation.
-- [LAAccessControlOperation.useKeySign](laaccesscontroloperation/usekeysign.md)
+- [LAAccessControlOperation.useKeySign](./laaccesscontroloperation/usekeysign.md)
   Specifies that access control is used for accessing an existing key.
-- [LAAccessControlOperation.useKeyDecrypt](laaccesscontroloperation/usekeydecrypt.md)
+- [LAAccessControlOperation.useKeyDecrypt](./laaccesscontroloperation/usekeydecrypt.md)
   Specifies that access control is used for data decryption using existing key.
-- [LAAccessControlOperation.useKeyKeyExchange](laaccesscontroloperation/usekeykeyexchange.md)
+- [LAAccessControlOperation.useKeyKeyExchange](./laaccesscontroloperation/usekeykeyexchange.md)
   Specifies that access control is used for key exchange.
 ### Initializers
-- [init?(rawValue: Int)](laaccesscontroloperation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./laaccesscontroloperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func evaluateAccessControl(SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](lacontext/evaluateaccesscontrol(_:operation:localizedreason:reply:).md)
+### Evaluating access controls
+- [func evaluateAccessControl(SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](./lacontext/evaluateaccesscontrol%28_,operation,localizedreason,reply%29.md)
   Evaluates an access control for a given operation.
-- [var interactionNotAllowed: Bool](lacontext/interactionnotallowed.md)
+- [var interactionNotAllowed: Bool](./lacontext/interactionnotallowed.md)
   A Boolean value indicating whether authentication can be interactive.
 
 

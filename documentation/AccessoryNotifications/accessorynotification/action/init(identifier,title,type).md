@@ -1,7 +1,8 @@
 # init(identifier:title:type:)
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a notification action with the given identifier, title, and type.
 

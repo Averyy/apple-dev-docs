@@ -1,7 +1,8 @@
 # password
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password to be filled in when the `finishWithError:` is called.
 
@@ -18,6 +19,10 @@ The password to be filled in when the `finishWithError:` is called.
 
 ```swift
 var password: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * password;
 ```
 
 

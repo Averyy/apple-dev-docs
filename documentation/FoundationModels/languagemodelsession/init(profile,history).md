@@ -1,7 +1,8 @@
 # init(profile:history:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a session with a profile.
 
@@ -21,8 +22,8 @@ convenience init(profile: sending some LanguageModelSession.DynamicProfile, hist
 
 ## Mentions
 
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Optimizing key-value caching in language model sessions](../optimizing-key-value-caching-in-language-model-sessions.md)
+- [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
 ## Parameters
 
@@ -31,23 +32,24 @@ convenience init(profile: sending some LanguageModelSession.DynamicProfile, hist
 
 ## See Also
 
-- [convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry>)](languagemodelsession/init(model:dynamicinstructions:history:).md)
+### Creating a session with a dynamic profile
+- [convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry>)](./init%28model,dynamicinstructions,history%29.md)
   Creates a session with dynamic instructions.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
+- [LanguageModelSession.DynamicProfileModifier](./dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
-- [LanguageModelSession.ConditionalDynamicProfile](languagemodelsession/conditionaldynamicprofile.md)
+- [LanguageModelSession.ConditionalDynamicProfile](./conditionaldynamicprofile.md)
   A dynamic profile that resolves to one of two profiles, depending on a condition.
-- [LanguageModelSession.DynamicProfileBuilder](languagemodelsession/dynamicprofilebuilder.md)
+- [LanguageModelSession.DynamicProfileBuilder](./dynamicprofilebuilder.md)
   A type that represents a dynamic profile builder.
-- [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
+- [LanguageModelSession.DynamicProfileModifierContent](./dynamicprofilemodifiercontent.md)
   A type that represents the dynamic profile a modifier applies to.
-- [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+- [LanguageModelSession.ModifiedDynamicProfile](./modifieddynamicprofile.md)
   A dynamic profile with a modifier applied to it.
-- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
+- [LanguageModelSession.AnyDynamicProfile](./anydynamicprofile.md)
   A type-erased dynamic profile.
-- [LanguageModelSession.Profile](languagemodelsession/profile.md)
+- [LanguageModelSession.Profile](./profile.md)
   A profile that contains dynamic instructions.
 
 

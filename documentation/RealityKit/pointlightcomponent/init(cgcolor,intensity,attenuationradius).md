@@ -1,7 +1,8 @@
 # init(cgColor:intensity:attenuationRadius:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified color, intensity and attenuation.
 

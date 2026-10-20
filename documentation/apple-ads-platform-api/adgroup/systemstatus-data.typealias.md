@@ -1,7 +1,8 @@
 # AdGroup.SystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-derived operational status reflecting whether an ad group is actively serving.
 
@@ -10,13 +11,18 @@ System-derived operational status reflecting whether an ad group is actively ser
 
 ## Declaration
 
-```swift
+```
 string AdGroup.SystemStatus
 ```
 
+## Possible Values
+
+- `RUNNING`: The ad group is active and serving ads.
+- `NOT_RUNNING`: The ad group is not serving ads. Check `systemStatusReasons` for the specific cause.
+
 #### Discussion
 
-This status reflects the ad group specifically, separate from the advertiser-set [`AdGroup.Status`](adgroup/status-data.typealias.md) and the system status of ads within it.
+This status reflects the ad group specifically, separate from the advertiser-set [`AdGroup.Status`](./status-data.typealias.md) and the system status of ads within it.
 
 ##### Example
 
@@ -26,7 +32,7 @@ This status reflects the ad group specifically, separate from the advertiser-set
 }
 ```
 
-See [`AdGroupSystemStatus`](adgroupsystemstatus.md) for additional context.
+See [`AdGroupSystemStatus`](../adgroupsystemstatus.md) for additional context.
 
 
 ---

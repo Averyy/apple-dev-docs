@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bind target for the entity’s opacity.. Requires that the entity has an OpacityComponent
 

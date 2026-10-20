@@ -1,7 +1,8 @@
 # AttributedTextValueConstraint
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for defining a constraint on the value of a certain attribute.
 
@@ -22,11 +23,11 @@ protocol AttributedTextValueConstraint : Hashable, Sendable, AttributedTextForma
 
 #### Overview
 
-Used as an [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), this constrains the [`AttributeKey`](attributedtextvalueconstraint/attributekey.md)’s value using the `constrain(_:)-(Attributes)` function.
+Used as an [`AttributedTextFormattingDefinition`](./attributedtextformattingdefinition.md), this constrains the [`AttributeKey`](./attributedtextvalueconstraint/attributekey.md)’s value using the `constrain(_:)-(Attributes)` function.
 
-Given value constraints can read other attribute values, it is crucial to avoid mixing value constraints in a way where they create cyclic dependencies with undefined behavior. Thus, it is recommended to think about value constraints in the context of the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) they will be used in:
+Given value constraints can read other attribute values, it is crucial to avoid mixing value constraints in a way where they create cyclic dependencies with undefined behavior. Thus, it is recommended to think about value constraints in the context of the [`AttributedTextFormattingDefinition`](./attributedtextformattingdefinition.md) they will be used in:
 
-A simple constraint only accesses a single attribute. It can be made generic over the attribute scope so it can be reused in different [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md)s.
+A simple constraint only accesses a single attribute. It can be made generic over the attribute scope so it can be reused in different [`AttributedTextFormattingDefinition`](./attributedtextformattingdefinition.md)s.
 
 ```swift
 struct NoBlackOrWhiteForeground<Scope: AttributeScope>: AttributedTextValueConstraint {
@@ -42,7 +43,7 @@ struct NoBlackOrWhiteForeground<Scope: AttributeScope>: AttributedTextValueConst
 }
 ```
 
-When the constraint needs to access other attribute values, it is recommended to define it on a specific attribute scope that is used for a single [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md).
+When the constraint needs to access other attribute values, it is recommended to define it on a specific attribute scope that is used for a single [`AttributedTextFormattingDefinition`](./attributedtextformattingdefinition.md).
 
 ```swift
 extension MyTextFormattingDefinition {
@@ -69,7 +70,7 @@ struct NoEqualForegroundAndBackground: AttributedTextValueConstraint {
 }
 ```
 
-Constraints that access multiple attributes and are generic over the scope should document their dependencies so that the dependencies can be considered for the ordering of constraints in the [`body`](attributedtextformattingdefinition/body-1b01t.md).
+Constraints that access multiple attributes and are generic over the scope should document their dependencies so that the dependencies can be considered for the ordering of constraints in the [`body`](./attributedtextformattingdefinition/body-1b01t.md).
 
 ```swift
 /// Makes the background color for all Genmoji blue.
@@ -94,47 +95,48 @@ struct BlueGenmojiBackgroundConstraint<Scope: AttributeScope>: AttributedTextVal
 ## Topics
 
 ### Associated Types
-- [associatedtype AttributeKey : AttributedStringKey](attributedtextvalueconstraint/attributekey.md)
+- [associatedtype AttributeKey : AttributedStringKey](./attributedtextvalueconstraint/attributekey.md)
   The attribute constrained by this constraint.
 ### Instance Methods
-- [func constrain(inout Self.Attributes)](attributedtextvalueconstraint/constrain(_:).md)
+- [func constrain(inout Self.Attributes)](./attributedtextvalueconstraint/constrain%28_%29.md)
   Enforce constraints on the attribute.
 ### Type Aliases
-- [AttributedTextValueConstraint.Attributes](attributedtextvalueconstraint/attributes.md)
+- [AttributedTextValueConstraint.Attributes](./attributedtextvalueconstraint/attributes.md)
   A proxy type for a container of partially constrained attributes.
 
 ## Relationships
 
 ### Inherits From
-- [AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedTextFormattingDefinition](./attributedtextformattingdefinition.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AttributedTextFormatting.ValueConstraint](attributedtextformatting/valueconstraint.md)
+- [AttributedTextFormatting.ValueConstraint](./attributedtextformatting/valueconstraint.md)
 
 ## See Also
 
-- [func bold(Bool) -> some View](view/bold(_:).md)
+### Controlling text style
+- [func bold(Bool) -> some View](./view/bold%28_%29.md)
   Applies a bold font weight to the text in this view.
-- [func italic(Bool) -> some View](view/italic(_:).md)
+- [func italic(Bool) -> some View](./view/italic%28_%29.md)
   Applies italics to the text in this view.
-- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/underline(_:pattern:color:).md)
+- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](./view/underline%28_,pattern,color%29.md)
   Applies an underline to the text in this view.
-- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/strikethrough(_:pattern:color:).md)
+- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](./view/strikethrough%28_,pattern,color%29.md)
   Applies a strikethrough to the text in this view.
-- [func textCase(Text.Case?) -> some View](view/textcase(_:).md)
+- [func textCase(Text.Case?) -> some View](./view/textcase%28_%29.md)
   Sets a transform for the case of the text contained in this view when displayed.
-- [var textCase: Text.Case?](environmentvalues/textcase.md)
+- [var textCase: Text.Case?](./environmentvalues/textcase.md)
   A stylistic override to transform the case of `Text` when displayed, using the environment’s locale.
-- [func monospaced(Bool) -> some View](view/monospaced(_:).md)
+- [func monospaced(Bool) -> some View](./view/monospaced%28_%29.md)
   Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
-- [func monospacedDigit() -> some View](view/monospaceddigit.md)
+- [func monospacedDigit() -> some View](./view/monospaceddigit%28%29.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
-- [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+- [protocol AttributedTextFormattingDefinition](./attributedtextformattingdefinition.md)
   A protocol for defining how text can be styled in a view.
-- [enum AttributedTextFormatting](attributedtextformatting.md)
+- [enum AttributedTextFormatting](./attributedtextformatting.md)
   A namespace for types related to attributed text formatting definitions.
 
 

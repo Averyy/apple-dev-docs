@@ -1,7 +1,8 @@
 # cProperty
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A property of any object class.
 

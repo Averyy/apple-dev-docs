@@ -1,7 +1,8 @@
 # prefixMatch(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a match if this string is matched by the given regex at its start.
 
@@ -19,6 +20,8 @@ Returns a match if this string is matched by the given regex at its start.
 ```swift
 func prefixMatch<R>(of regex: R) -> Regex<R.RegexOutput>.Match? where R : RegexComponent
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

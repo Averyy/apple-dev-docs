@@ -1,7 +1,8 @@
 # apply(to:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func apply(to aContext: CGContext!) -> Bool
+```
+
+```objc
+- (BOOL) applyToContext:(CGContextRef) aContext;
 ```
 
 

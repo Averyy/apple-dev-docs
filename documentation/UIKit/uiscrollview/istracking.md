@@ -1,7 +1,8 @@
 # isTracking
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user has touched the content to initiate scrolling.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the user has touched the content to initi
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ A Boolean value that indicates whether the user has touched the content to initi
 var isTracking: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTracking) BOOL tracking;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the user has touched the content view but might not have yet have started dragging it.
+The value of this property is [`true`](../../Swift/true.md) if the user has touched the content view but might not have yet have started dragging it.
 
 ## See Also
 
-- [var isDragging: Bool](uiscrollview/isdragging.md)
+### Managing the scrolling state
+- [var isDragging: Bool](./isdragging.md)
   A Boolean value that indicates whether the user has begun scrolling the content.
-- [var isDecelerating: Bool](uiscrollview/isdecelerating.md)
+- [var isDecelerating: Bool](./isdecelerating.md)
   A Boolean value that indicates whether the content is moving in the scroll view after the user lifted their finger.
-- [var isScrollAnimating: Bool](uiscrollview/isscrollanimating.md)
+- [var isScrollAnimating: Bool](./isscrollanimating.md)
   A Boolean value that indicates whether the scroll view is currently animating a scroll update.
-- [func stopScrollingAndZooming()](uiscrollview/stopscrollingandzooming.md)
+- [func stopScrollingAndZooming()](./stopscrollingandzooming%28%29.md)
   Stops active scroll and zoom animations.
-- [var decelerationRate: UIScrollView.DecelerationRate](uiscrollview/decelerationrate-swift.property.md)
+- [var decelerationRate: UIScrollView.DecelerationRate](./decelerationrate-swift.property.md)
   A floating-point value that determines the rate of deceleration after the user lifts their finger.
-- [UIScrollView.DecelerationRate](uiscrollview/decelerationrate-swift.struct.md)
+- [UIScrollView.DecelerationRate](./decelerationrate-swift.struct.md)
   Deceleration rates for the scroll view.
 
 

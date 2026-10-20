@@ -1,7 +1,8 @@
 # InvalidLimitError
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error that indicates the request limit is invalid.
 
@@ -10,28 +11,29 @@ An error that indicates the request limit is invalid.
 
 ## Declaration
 
-```swift
+```
 object InvalidLimitError
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-A request returns this error if you call the [`Get Group Members`](get-group-members.md) endpoint with a [`limit`](limit.md) query parameter that’s outside the supported range. The maximum value is `100`.
+A request returns this error if you call the [`Get Group Members`](./get-group-members.md) endpoint with a [`limit`](./limit.md) query parameter that’s outside the supported range. The maximum value is `100`.
 
 ## Properties
 
-- `errorCode` (int64)
-- `errorMessage` (string)
+- `errorCode` (int64): **Allowed Values**: `4000004`
+- `errorMessage` (string): **Allowed Values**: `Invalid request limit.`
 
 ## See Also
 
-- [object GroupNotFoundError](groupnotfounderror.md)
+### Group membership errors
+- [object GroupNotFoundError](./groupnotfounderror.md)
   An error that indicates the group wasn’t found.
-- [object InvalidGroupIdError](invalidgroupiderror.md)
+- [object InvalidGroupIdError](./invalidgroupiderror.md)
   An error that indicates the group identifier is invalid.
 
 

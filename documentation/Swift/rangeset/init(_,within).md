@@ -1,7 +1,8 @@
 # init(_:within:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new range set containing ranges that contain only the specified indices in the given collection.
 
@@ -19,6 +20,8 @@ Creates a new range set containing ranges that contain only the specified indice
 ```swift
 init<S, C>(_ indices: S, within collection: C) where Bound == S.Element, S : Sequence, C : Collection, S.Element == C.Index
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 ## Parameters
 

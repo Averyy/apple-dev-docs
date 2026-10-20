@@ -1,12 +1,13 @@
 # timeInterval
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval that represents the date range.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The time interval that represents the date range.
 var timeInterval: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval timeInterval;
+```
+
 #### Discussion
 
-The date range begins at the date in the [`dateValue`](nsdatepickercell/datevalue.md) property. The value in this property applies only when the date picker is in the [`NSRangeDateMode`](nsrangedatemode.md) mode.
+The date range begins at the date in the [`dateValue`](./datevalue.md) property. The value in this property applies only when the date picker is in the [`NSRangeDateMode`](../nsrangedatemode.md) mode.
 
 ## See Also
 
-- [var dateValue: Date](nsdatepickercell/datevalue.md)
+### Object Values
+- [var dateValue: Date](./datevalue.md)
   The date currently specified in the picker.
-- [var calendar: Calendar?](nsdatepickercell/calendar.md)
+- [var calendar: Calendar?](./calendar.md)
   The calendar used by the date picker.
-- [var locale: Locale?](nsdatepickercell/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale used to display dates.
-- [var timeZone: TimeZone?](nsdatepickercell/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone used to display time-related values.
 
 

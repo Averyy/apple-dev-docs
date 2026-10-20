@@ -1,7 +1,8 @@
 # wakeup
 
 **Framework**: RelevanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A timespan close to when a person typically wakes up.
 
@@ -22,7 +23,8 @@ static var wakeup: RelevantContext.SleepCondition { get }
 
 ## See Also
 
-- [static var bedtime: RelevantContext.SleepCondition](relevantcontext/sleepcondition/bedtime.md)
+### Conditions
+- [static var bedtime: RelevantContext.SleepCondition](./bedtime.md)
   A timespan close to when a person typically goes to bed.
 
 

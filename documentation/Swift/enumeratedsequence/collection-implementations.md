@@ -1,80 +1,81 @@
 # Collection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [EnumeratedSequence.Index](enumeratedsequence/index.md)
+- [EnumeratedSequence.Index](./index.md)
   A type that represents a position in the collection.
 ### Instance Properties
-- [var count: Int](enumeratedsequence/count.md)
+- [var count: Int](./count.md)
   The number of elements in the collection.
-- [var count: Int](enumeratedsequence/count-3o2fx.md)
+- [var count: Int](./count-3o2fx.md)
   The number of elements in the collection.
-- [var endIndex: EnumeratedSequence<Base>.Index](enumeratedsequence/endindex.md)
+- [var endIndex: EnumeratedSequence<Base>.Index](./endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: DefaultIndices<Self>](enumeratedsequence/indices-swift.property.md)
+- [var indices: DefaultIndices<Self>](./indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var isEmpty: Bool](enumeratedsequence/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var isEmpty: Bool](enumeratedsequence/isempty-1yllc.md)
+- [var isEmpty: Bool](./isempty-1yllc.md)
   A Boolean value indicating whether the collection is empty.
-- [var startIndex: EnumeratedSequence<Base>.Index](enumeratedsequence/startindex.md)
+- [var startIndex: EnumeratedSequence<Base>.Index](./startindex.md)
   The position of the first element in a nonempty collection.
 ### Instance Methods
-- [func distance(from: EnumeratedSequence<Base>.Index, to: EnumeratedSequence<Base>.Index) -> Int](enumeratedsequence/distance(from:to:).md)
+- [func distance(from: EnumeratedSequence<Base>.Index, to: EnumeratedSequence<Base>.Index) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
-- [func distance(from: Self.Index, to: Self.Index) -> Int](enumeratedsequence/distance(from:to:)-6kmqj.md)
+- [func distance(from: Self.Index, to: Self.Index) -> Int](./distance%28from,to%29-6kmqj.md)
   Returns the distance between two indices.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](enumeratedsequence/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func formIndex(inout Self.Index, offsetBy: Int)](enumeratedsequence/formindex(_:offsetby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](enumeratedsequence/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func formIndex(after: inout Self.Index)](enumeratedsequence/formindex(after:).md)
+- [func formIndex(after: inout Self.Index)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(EnumeratedSequence<Base>.Index, offsetBy: Int) -> EnumeratedSequence<Base>.Index](enumeratedsequence/index(_:offsetby:).md)
+- [func index(EnumeratedSequence<Base>.Index, offsetBy: Int) -> EnumeratedSequence<Base>.Index](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Self.Index, offsetBy: Int) -> Self.Index](enumeratedsequence/index(_:offsetby:)-4bcg9.md)
+- [func index(Self.Index, offsetBy: Int) -> Self.Index](./index%28_,offsetby%29-4bcg9.md)
   Returns an index that is the specified distance from the given index.
-- [func index(EnumeratedSequence<Base>.Index, offsetBy: Int, limitedBy: EnumeratedSequence<Base>.Index) -> EnumeratedSequence<Base>.Index?](enumeratedsequence/index(_:offsetby:limitedby:).md)
+- [func index(EnumeratedSequence<Base>.Index, offsetBy: Int, limitedBy: EnumeratedSequence<Base>.Index) -> EnumeratedSequence<Base>.Index?](./index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](enumeratedsequence/index(_:offsetby:limitedby:)-4rme3.md)
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](./index%28_,offsetby,limitedby%29-4rme3.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(after: EnumeratedSequence<Base>.Index) -> EnumeratedSequence<Base>.Index](enumeratedsequence/index(after:).md)
+- [func index(after: EnumeratedSequence<Base>.Index) -> EnumeratedSequence<Base>.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](enumeratedsequence/indices(where:).md)
+- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](./indices%28where%29.md)
   Returns the indices of all the elements that match the given predicate.
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](enumeratedsequence/map(_:)-9le0.md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./map%28_%29-9le0.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func prefix(through: Self.Index) -> Self.SubSequence](enumeratedsequence/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(upTo: Self.Index) -> Self.SubSequence](enumeratedsequence/prefix(upto:).md)
+- [func prefix(upTo: Self.Index) -> Self.SubSequence](./prefix%28upto%29.md)
   Returns a subsequence from the start of the collection up to, but not including, the specified position.
-- [func randomElement() -> Self.Element?](enumeratedsequence/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](enumeratedsequence/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
-- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](enumeratedsequence/removingsubranges(_:).md)
+- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./removingsubranges%28_%29.md)
   Returns a collection of the elements in this collection that are not represented by the given range set.
-- [func suffix(from: Self.Index) -> Self.SubSequence](enumeratedsequence/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
-- [subscript(EnumeratedSequence<Base>.Index) -> EnumeratedSequence<Base>.Element](enumeratedsequence/subscript(_:).md)
+- [subscript(EnumeratedSequence<Base>.Index) -> EnumeratedSequence<Base>.Element](./subscript%28_%29.md)
   Accesses the element at the specified position.
-- [subscript(Range<Self.Index>) -> Slice<Self>](enumeratedsequence/subscript(_:)-5gng6.md)
+- [subscript(Range<Self.Index>) -> Slice<Self>](./subscript%28_%29-5gng6.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript(UnboundedRange) -> Self.SubSequence](enumeratedsequence/subscript(_:)-7y5my.md)
-- [subscript<R>(R) -> Self.SubSequence](enumeratedsequence/subscript(_:)-8ubal.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-7y5my.md)
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-8ubal.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](enumeratedsequence/subscript(_:)-91gqg.md)
+- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./subscript%28_%29-91gqg.md)
   Accesses a view of this collection with the elements at the given indices.
 ### Type Aliases
-- [EnumeratedSequence.Indices](enumeratedsequence/indices.md)
+- [EnumeratedSequence.Indices](./indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [EnumeratedSequence.SubSequence](enumeratedsequence/subsequence.md)
+- [EnumeratedSequence.SubSequence](./subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
 

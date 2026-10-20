@@ -1,7 +1,8 @@
 # logarithmBase2(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the logarithm with base 2 to the input tensor elements.
 
@@ -17,6 +18,10 @@ Computes the logarithm with base 2 to the input tensor elements.
 
 ```swift
 func logarithmBase2(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) logarithmBase2WithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

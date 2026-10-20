@@ -1,7 +1,8 @@
 # falloff
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exponent that defines the rate of decay for the strength of the field as the distance increases between the node and the physics body being affected.
 
@@ -20,9 +21,13 @@ The exponent that defines the rate of decay for the strength of the field as the
 var falloff: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float falloff;
+```
+
 ## Mentions
 
-- [Adding Physics Fields to a Scene](adding-physics-fields-to-a-scene.md)
+- [Adding Physics Fields to a Scene](../adding-physics-fields-to-a-scene.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ When the force of a field node is calculated, the force is multiplied by `pow(di
 
 ## See Also
 
-- [var strength: Float](skfieldnode/strength.md)
+### Configuring the Strength of the Field
+- [var strength: Float](./strength.md)
   The strength of the field.
 
 

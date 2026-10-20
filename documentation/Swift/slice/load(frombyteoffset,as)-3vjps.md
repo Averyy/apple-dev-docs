@@ -1,7 +1,8 @@
 # load(fromByteOffset:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new instance of the given type, read from the specified offset into the buffer pointer slice’s raw memory.
 
@@ -19,6 +20,8 @@ Returns a new instance of the given type, read from the specified offset into th
 ```swift
 func load<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T
 ```
+
+Available when `Base` is `UnsafeRawBufferPointer`.
 
 #### Return Value
 

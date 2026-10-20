@@ -1,14 +1,15 @@
 # IOTimeStampConstantFiltered
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void IOTimeStampConstantFiltered(uintptr_t csc, uintptr_t a, uintptr_t b, uintptr_t c, uintptr_t d);
 ```
 

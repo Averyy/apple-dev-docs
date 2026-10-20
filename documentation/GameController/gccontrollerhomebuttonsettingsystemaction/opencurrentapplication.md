@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingSystemAction.openCurrentApplication
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The controller home button system action opens the current application.
 
@@ -16,6 +17,10 @@ The controller home button system action opens the current application.
 
 ```swift
 case openCurrentApplication
+```
+
+```c
+GCControllerHomeButtonSettingSystemActionOpenCurrentApplication
 ```
 
 

@@ -1,7 +1,8 @@
 # requestConfirmation(conditions:actionName:dialog:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a confirmation prompt that includes the specified text and action details.
 
@@ -32,13 +33,14 @@ Call this method when you want someone to confirm a particular choice. For examp
 
 ## See Also
 
-- [func requestConfirmation() async throws](appintent/requestconfirmation.md)
+### Requesting confirmation
+- [func requestConfirmation() async throws](./requestconfirmation%28%29.md)
   Displays a prompt that asks the person for confirmation before performing the app intent.
-- [func requestConfirmation<Content>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, content: () -> Content) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:content:).md)
+- [func requestConfirmation<Content>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, content: () -> Content) async throws](./requestconfirmation%28conditions,actionname,dialog,showdialogasprompt,content%29.md)
   Displays a confirmation prompt with an interactive snippet.
-- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj.md)
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](./requestconfirmation%28conditions,actionname,dialog,showdialogasprompt,snippetintent%29-3vewj.md)
   Displays a confirmation prompt that includes an interactive snippet.
-- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-jxb8.md)
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](./requestconfirmation%28conditions,actionname,dialog,showdialogasprompt,snippetintent%29-jxb8.md)
   Displays a confirmation prompt with an interactive snippet.
 
 

@@ -1,7 +1,8 @@
 # originalID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original transaction identifier of a purchase.
 
@@ -22,15 +23,16 @@ let originalID: UInt64
 
 #### Discussion
 
-The original transaction identifier, [`originalID`](transaction/originalid.md), is identical to [`id`](transaction/id.md) except when the user restores a purchase or renews a transaction. You can use this value to:
+The original transaction identifier, [`originalID`](./originalid.md), is identical to [`id`](./id.md) except when the user restores a purchase or renews a transaction. You can use this value to:
 
 - Identify one or more renewals for the same subscription.
-- Differentiate a purchase transaction from a restore or a renewal transaction. For restore and renewal transactions, the original transaction identifier, [`originalID`](transaction/originalid.md), and transaction identifier, [`id`](transaction/id.md), differ.
-- Match a transaction in the app with a transaction you receive on your server in an [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) event.
+- Differentiate a purchase transaction from a restore or a renewal transaction. For restore and renewal transactions, the original transaction identifier, [`originalID`](./originalid.md), and transaction identifier, [`id`](./id.md), differ.
+- Match a transaction in the app with a transaction you receive on your server in an [App Store Server Notifications](../../AppStoreServerNotifications/AppStoreServerNotifications.md) event.
 
 ## See Also
 
-- [let originalPurchaseDate: Date](transaction/originalpurchasedate.md)
+### Getting the original transaction identifier
+- [let originalPurchaseDate: Date](./originalpurchasedate.md)
   The date of purchase for the original transaction.
 
 

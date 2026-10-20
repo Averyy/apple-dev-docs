@@ -1,16 +1,19 @@
 # MTRBridgedDeviceBasicClusterStartUpEvent
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 17.0
+- iPadOS 16.1+ - Deprecated in 17.0
+- Mac Catalyst 16.1+ - Deprecated in 17.0
+- macOS 13.0+ - Deprecated in 14.0
+- tvOS 16.1+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 10.0
+
+> **Deprecated**: Please use MTRBridgedDeviceBasicInformationClusterStartUpEvent
 
 ## Declaration
 
@@ -18,23 +21,27 @@
 class MTRBridgedDeviceBasicClusterStartUpEvent
 ```
 
+```objc
+@interface MTRBridgedDeviceBasicClusterStartUpEvent : MTRBridgedDeviceBasicInformationClusterStartUpEvent
+```
+
 ## Topics
 
 ### Instance Properties
-- [var softwareVersion: NSNumber](mtrbridgeddevicebasicclusterstartupevent/softwareversion.md)
+- [var softwareVersion: NSNumber](./mtrbridgeddevicebasicclusterstartupevent/softwareversion.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRBridgedDeviceBasicInformationClusterStartUpEvent](mtrbridgeddevicebasicinformationclusterstartupevent.md)
+- [MTRBridgedDeviceBasicInformationClusterStartUpEvent](./mtrbridgeddevicebasicinformationclusterstartupevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

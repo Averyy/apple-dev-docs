@@ -1,7 +1,8 @@
 # init(forLocale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `Dimension` which the specified `locale` prefers.
 

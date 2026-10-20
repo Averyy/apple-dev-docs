@@ -1,7 +1,8 @@
 # receive()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive an object from a connection.
 
@@ -19,6 +20,8 @@ Receive an object from a connection.
 ```swift
 func receive<Sending, Receiving, CoderType>() async throws -> ApplicationProtocol.Message<Receiving> where ApplicationProtocol == Coder<Sending, Receiving, CoderType>, Sending : Encodable, Receiving : Decodable, CoderType : NetworkCoder
 ```
+
+Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
 #### Discussion
 

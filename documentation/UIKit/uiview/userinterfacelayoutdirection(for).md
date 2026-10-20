@@ -1,7 +1,8 @@
 # userInterfaceLayoutDirection(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the user interface direction for the given semantic content attribute.
 
@@ -18,6 +19,10 @@ Returns the user interface direction for the given semantic content attribute.
 class func userInterfaceLayoutDirection(for attribute: UISemanticContentAttribute) -> UIUserInterfaceLayoutDirection
 ```
 
+```objc
++ (UIUserInterfaceLayoutDirection) userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute) attribute;
+```
+
 #### Return Value
 
 The user interface layout direction (left-to-right or right-to-left).
@@ -32,13 +37,14 @@ When creating a view that contains subviews, you can use this method to determin
 
 ## See Also
 
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiview/overrideuserinterfacestyle.md)
+### Adjusting the user interface
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
-- [var semanticContentAttribute: UISemanticContentAttribute](uiview/semanticcontentattribute.md)
+- [var semanticContentAttribute: UISemanticContentAttribute](./semanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
-- [var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection](uiview/effectiveuserinterfacelayoutdirection.md)
+- [var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection](./effectiveuserinterfacelayoutdirection.md)
   The user interface layout direction appropriate for arranging the immediate content of the view.
-- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection) -> UIUserInterfaceLayoutDirection](uiview/userinterfacelayoutdirection(for:relativeto:).md)
+- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection) -> UIUserInterfaceLayoutDirection](./userinterfacelayoutdirection%28for,relativeto%29.md)
   Returns the layout direction implied by the specified semantic content attribute, relative to the specified layout direction.
 
 

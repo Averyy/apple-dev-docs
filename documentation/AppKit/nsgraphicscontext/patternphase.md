@@ -1,17 +1,22 @@
 # patternPhase
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to offset the pattern color when filling the graphics context.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var patternPhase: NSPoint { get set }
+```
+
+```objc
+@property NSPoint patternPhase;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ Use this property when you need to line up the pattern color with another patter
 
 ## See Also
 
-- [var compositingOperation: NSCompositingOperation](nsgraphicscontext/compositingoperation.md)
+### Configuring Rendering Options
+- [var compositingOperation: NSCompositingOperation](./compositingoperation.md)
   The graphics context’s global compositing operation setting.
-- [enum NSCompositingOperation](nscompositingoperation.md)
+- [enum NSCompositingOperation](../nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
-- [var imageInterpolation: NSImageInterpolation](nsgraphicscontext/imageinterpolation.md)
+- [var imageInterpolation: NSImageInterpolation](./imageinterpolation.md)
   A constant that specifies the graphics context’s interpolation, or image smoothing, behavior.
-- [enum NSImageInterpolation](nsimageinterpolation.md)
+- [enum NSImageInterpolation](../nsimageinterpolation.md)
   Constants that specify the interpolation, or image smoothing, behavior used by the image interpolation property.
-- [var shouldAntialias: Bool](nsgraphicscontext/shouldantialias.md)
+- [var shouldAntialias: Bool](./shouldantialias.md)
   A Boolean value that indicates whether the graphics context uses antialiasing.
 
 

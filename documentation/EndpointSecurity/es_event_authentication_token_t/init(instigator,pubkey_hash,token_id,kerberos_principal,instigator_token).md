@@ -1,11 +1,12 @@
 # init(instigator:pubkey_hash:token_id:kerberos_principal:instigator_token:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

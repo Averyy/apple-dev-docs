@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data frame from a dictionary literal.
 
@@ -42,18 +43,21 @@ The initializer checks each column’s elements and, if possible, defines the co
 
 Otherwise, the data frame sets a column’s type to `Any`.
 
-> **Note**: Use [`append(column:)`](dataframe/append(column:)-aema.md) to add a column of a specific type.
+> **Note**: Use [`append(column:)`](./append%28column%29-aema.md) to add a column of a specific type.
 
 ## Parameters
 
-- `elements`: A comma-separated, or variadic, list of tuples. Each tuple consists of two elements: - A string that represents a column’s name
-- An array that represents the elements for that column
+- `elements`: A comma-separated, or variadic, list of tuples. Each tuple consists of two elements:
+
+  - A string that represents a column’s name
+  - An array that represents the elements for that column
 
 ## See Also
 
-- [init()](dataframe/init.md)
+### Creating a Data Frame
+- [init()](./init%28%29.md)
   Creates an empty data frame with no rows or columns.
-- [init<S>(columns: S)](dataframe/init(columns:).md)
+- [init<S>(columns: S)](./init%28columns%29.md)
   Creates a new data frame from a sequence of columns.
 
 

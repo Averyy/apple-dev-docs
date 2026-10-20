@@ -1,7 +1,8 @@
 # relationships
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ final var relationships: Set<Schema.Relationship>
 
 ## See Also
 
-- [var relationshipsByName: [String : Schema.Relationship]](schema/entity/relationshipsbyname.md)
+### Defining relationships
+- [var relationshipsByName: [String : Schema.Relationship]](./relationshipsbyname.md)
 
 
 ---

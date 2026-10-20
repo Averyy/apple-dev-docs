@@ -1,7 +1,8 @@
 # rangeOfScheme
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the character range of the scheme in the string returned by the string property.
 
@@ -20,22 +21,27 @@ Returns the character range of the scheme in the string returned by the string p
 var rangeOfScheme: NSRange { get }
 ```
 
+```objc
+@property (readonly) NSRange rangeOfScheme;
+```
+
 ## See Also
 
-- [var percentEncodedQueryItems: [URLQueryItem]?](nsurlcomponents/percentencodedqueryitems.md)
-- [var rangeOfFragment: NSRange](nsurlcomponents/rangeoffragment.md)
+### Locating components in the URL string representation
+- [var percentEncodedQueryItems: [URLQueryItem]?](./percentencodedqueryitems.md)
+- [var rangeOfFragment: NSRange](./rangeoffragment.md)
   Returns the character range of the fragment in the string returned by the string property.
-- [var rangeOfHost: NSRange](nsurlcomponents/rangeofhost.md)
+- [var rangeOfHost: NSRange](./rangeofhost.md)
   Returns the character range of the host in the string returned by the string property.
-- [var rangeOfPassword: NSRange](nsurlcomponents/rangeofpassword.md)
+- [var rangeOfPassword: NSRange](./rangeofpassword.md)
   Returns the character range of the password in the string returned by the string property.
-- [var rangeOfPath: NSRange](nsurlcomponents/rangeofpath.md)
+- [var rangeOfPath: NSRange](./rangeofpath.md)
   Returns the character range of the path in the string returned by the string property.
-- [var rangeOfPort: NSRange](nsurlcomponents/rangeofport.md)
+- [var rangeOfPort: NSRange](./rangeofport.md)
   Returns the character range of the port in the string returned by the string property.
-- [var rangeOfQuery: NSRange](nsurlcomponents/rangeofquery.md)
+- [var rangeOfQuery: NSRange](./rangeofquery.md)
   Returns the character range of the query in the string returned by the string property.
-- [var rangeOfUser: NSRange](nsurlcomponents/rangeofuser.md)
+- [var rangeOfUser: NSRange](./rangeofuser.md)
   Returns the character range of the user in the string returned by the string property.
 
 

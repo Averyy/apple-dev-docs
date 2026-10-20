@@ -1,7 +1,8 @@
 # init(ringtoneName:iconTemplateImageData:maximumConversationGroups:maximumConversationsPerConversationGroup:includesConversationInRecents:supportsVideo:supportedHandleTypes:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new configuration for a conversation manager.
 
@@ -30,7 +31,8 @@ init(ringtoneName: String?, iconTemplateImageData: Data?, maximumConversationGro
 
 ## See Also
 
-- [init(ringtoneName: String?, iconTemplateImageData: Data?, maximumConversationGroups: Int, maximumConversationsPerConversationGroup: Int, includesConversationInRecents: Bool, supportsVideo: Bool, supportedHandleTypes: Set<Handle.Kind>, supportsAudioTranslation: Bool)](conversationmanager/configuration-swift.struct/init(ringtonename:icontemplateimagedata:maximumconversationgroups:maximumconversationsperconversationgroup:includesconversationinrecents:supportsvideo:supportedhandletypes:supportsaudiotranslation:).md)
+### Initializers
+- [init(ringtoneName: String?, iconTemplateImageData: Data?, maximumConversationGroups: Int, maximumConversationsPerConversationGroup: Int, includesConversationInRecents: Bool, supportsVideo: Bool, supportedHandleTypes: Set<Handle.Kind>, supportsAudioTranslation: Bool)](./init%28ringtonename,icontemplateimagedata,maximumconversationgroups,maximumconversationsperconversationgroup,includesconversationinrecents,supportsvideo,supportedhandletypes,supportsaudiotranslation%29.md)
   Creates a new configuration for a conversation manager.
 
 

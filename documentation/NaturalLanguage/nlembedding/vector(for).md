@@ -1,7 +1,8 @@
 # vector(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the vector for the given term.
 
@@ -23,7 +24,7 @@ func vector(for string: String) -> [Double]?
 
 ## Mentions
 
-- [Finding similarities between pieces of text](finding-similarities-between-pieces-of-text.md)
+- [Finding similarities between pieces of text](../finding-similarities-between-pieces-of-text.md)
 
 #### Return Value
 
@@ -31,7 +32,7 @@ A vector represented as an array of doubles if present in the word embedding, ot
 
 #### Discussion
 
-> ❗ **Important**: This method isn’t safe to call concurrently on a shared [`NLEmbedding`](nlembedding.md) instance. Calling it from multiple threads, queues, or tasks at the same time can corrupt the embedding’s state and crash your app. Serialize calls into a shared instance, or give each thread its own instance.
+> ❗ **Important**: This method isn’t safe to call concurrently on a shared [`NLEmbedding`](../nlembedding.md) instance. Calling it from multiple threads, queues, or tasks at the same time can corrupt the embedding’s state and crash your app. Serialize calls into a shared instance, or give each thread its own instance.
 
 ## Parameters
 
@@ -39,15 +40,16 @@ A vector represented as an array of doubles if present in the word embedding, ot
 
 ## See Also
 
-- [var dimension: Int](nlembedding/dimension.md)
+### Inspecting the vocabulary of an embedding
+- [var dimension: Int](./dimension.md)
   The number of dimensions in the vocabulary’s vector space.
-- [var vocabularySize: Int](nlembedding/vocabularysize.md)
+- [var vocabularySize: Int](./vocabularysize.md)
   The number of words in the vocabulary.
-- [var language: NLLanguage?](nlembedding/language.md)
+- [var language: NLLanguage?](./language.md)
   The language of the text in the word embedding.
-- [func contains(String) -> Bool](nlembedding/contains(_:).md)
+- [func contains(String) -> Bool](./contains%28_%29.md)
   Requests a Boolean value that indicates whether the term is in the vocabulary.
-- [var revision: Int](nlembedding/revision.md)
+- [var revision: Int](./revision.md)
   The revision of the word embedding.
 
 

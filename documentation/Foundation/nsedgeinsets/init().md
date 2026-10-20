@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an edge insets structure.
 
@@ -17,9 +18,10 @@ init()
 
 ## See Also
 
-- [init(top: Double, left: Double, bottom: Double, right: Double)](nsedgeinsets/init(top:left:bottom:right:).md)
+### Creating an edge insets structure
+- [init(top: Double, left: Double, bottom: Double, right: Double)](./init%28top,left,bottom,right%29.md)
   Creates an edge insets structure with the specified inset values.
-- [func NSEdgeInsetsMake(Double, Double, Double, Double) -> NSEdgeInsets](nsedgeinsetsmake(_:_:_:_:).md)
+- [func NSEdgeInsetsMake(Double, Double, Double, Double) -> NSEdgeInsets](../nsedgeinsetsmake%28_,_,_,_%29.md)
   Creates an edge insets structure with the specified inset values.
 
 

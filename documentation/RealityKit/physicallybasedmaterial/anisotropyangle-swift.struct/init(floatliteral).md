@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anisotropy angle object from a single value.
 
@@ -11,7 +12,7 @@ Creates an anisotropy angle object from a single value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(floatLiteral value: Float)
 
 ## See Also
 
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/anisotropyangle-swift.struct/init(scale:texture:).md)
+### Creating an anisotropy angle object
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an anisotropy angle object using a single value or a texture.
 
 

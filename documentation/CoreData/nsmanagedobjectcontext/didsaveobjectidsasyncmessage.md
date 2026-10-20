@@ -1,7 +1,8 @@
 # NSManagedObjectContext.DidSaveObjectIDsAsyncMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted after a private queue context saves, containing object IDs rather than full objects.
 
@@ -22,33 +23,33 @@ struct DidSaveObjectIDsAsyncMessage
 
 #### Overview
 
-Only use this message type for contexts with `NSPrivateQueueConcurrencyType`. For main queue contexts, use [`NSManagedObjectContext.DidSaveObjectIDsMessage`](nsmanagedobjectcontext/didsaveobjectidsmessage.md).
+Only use this message type for contexts with `NSPrivateQueueConcurrencyType`. For main queue contexts, use [`NSManagedObjectContext.DidSaveObjectIDsMessage`](./didsaveobjectidsmessage.md).
 
 ## Topics
 
 ### Instance Properties
-- [let context: NSManagedObjectContext](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/context.md)
-- [let deletedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/deletedids.md)
+- [let context: NSManagedObjectContext](./didsaveobjectidsasyncmessage/context.md)
+- [let deletedIDs: Set<NSManagedObjectID>](./didsaveobjectidsasyncmessage/deletedids.md)
   Object IDs of objects that were deleted during this save.
-- [let historyToken: NSPersistentHistoryToken?](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/historytoken.md)
+- [let historyToken: NSPersistentHistoryToken?](./didsaveobjectidsasyncmessage/historytoken.md)
   The persistent history token representing the state after the save.
-- [let insertedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/insertedids.md)
+- [let insertedIDs: Set<NSManagedObjectID>](./didsaveobjectidsasyncmessage/insertedids.md)
   Object IDs of objects that were inserted during this save.
-- [let invalidatedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/invalidatedids.md)
+- [let invalidatedIDs: Set<NSManagedObjectID>](./didsaveobjectidsasyncmessage/invalidatedids.md)
   Object IDs of objects that were invalidated during this save.
-- [let queryGeneration: NSQueryGenerationToken?](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/querygeneration.md)
+- [let queryGeneration: NSQueryGenerationToken?](./didsaveobjectidsasyncmessage/querygeneration.md)
   Query generation token after the save.
-- [let refreshedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/refreshedids.md)
+- [let refreshedIDs: Set<NSManagedObjectID>](./didsaveobjectidsasyncmessage/refreshedids.md)
   Object IDs of objects that were refreshed during this save.
-- [let updatedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsasyncmessage/updatedids.md)
+- [let updatedIDs: Set<NSManagedObjectID>](./didsaveobjectidsasyncmessage/updatedids.md)
   Object IDs of objects that were updated during this save.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

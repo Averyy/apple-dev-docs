@@ -1,17 +1,18 @@
 # AudioFileStreamID
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines an opaque data type that represents an audio file stream parser.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ Defines an opaque data type that represents an audio file stream parser.
 typealias AudioFileStreamID = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueAudioFileStreamID * AudioFileStreamID;
+```
+
 ## See Also
 
-- [typealias AudioFileStreamPropertyID](audiofilestreampropertyid.md)
+### Data Types
+- [typealias AudioFileStreamPropertyID](./audiofilestreampropertyid.md)
   Uniquely identifies an audio file stream property.
 
 

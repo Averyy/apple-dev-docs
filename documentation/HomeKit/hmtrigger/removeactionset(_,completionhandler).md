@@ -1,7 +1,8 @@
 # removeActionSet(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an action set from the trigger.
 
@@ -14,19 +15,30 @@ Removes an action set from the trigger.
 ## Declaration
 
 ```swift
+func removeActionSet(_ actionSet: HMActionSet, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeActionSet(_ actionSet: HMActionSet) async throws
+```
+
+```objc
+- (void) removeActionSet:(HMActionSet *) actionSet completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `actionSet`: The action set to remove.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var actionSets: [HMActionSet]](hmtrigger/actionsets.md)
+### Managing Action Sets
+- [var actionSets: [HMActionSet]](./actionsets.md)
   Array of all action sets that will be executed by the trigger.
-- [func addActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](hmtrigger/addactionset(_:completionhandler:).md)
+- [func addActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](./addactionset%28_,completionhandler%29.md)
   Adds an action set to the trigger.
 
 

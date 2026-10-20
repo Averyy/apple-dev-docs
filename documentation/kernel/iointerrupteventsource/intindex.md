@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 int intIndex;
 ```
 
@@ -13,12 +13,13 @@ int intIndex;
 
 ## See Also
 
-- [reserved](iointerrupteventsource/reserved.md)
-- [provider](iointerrupteventsource/provider.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [provider](./provider.md)
+- [producerCount](./producercount.md)
+- [explicitDisable](./explicitdisable.md)
+- [consumerCount](./consumercount.md)
+- [autoDisable](./autodisable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # suggestedEntitiesQuery()
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an entity query that retrieves suggested entities of this type.
 
@@ -26,7 +27,8 @@ An entity query configured to fetch suggested entities.
 
 ## See Also
 
-- [func suggestedEntities() async throws -> [AnyAppEntity]](appentitydefinition/suggestedentities.md)
+### Accessing suggested entities
+- [func suggestedEntities() async throws -> [AnyAppEntity]](./suggestedentities%28%29.md)
   Fetches all suggested entities of this type.
 
 

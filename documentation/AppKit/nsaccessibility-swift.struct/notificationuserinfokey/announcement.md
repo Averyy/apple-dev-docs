@@ -1,7 +1,8 @@
 # announcement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The announcement as a localized string.
 
@@ -14,17 +15,22 @@ The announcement as a localized string.
 static let announcement: NSAccessibility.NotificationUserInfoKey
 ```
 
+```c
+extern NSAccessibilityNotificationUserInfoKey const NSAccessibilityAnnouncementKey;
+```
+
 #### Discussion
 
-This key is required for [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) and should be used in conjunction with [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) to help assistive apps determine the importance of the announcement.
+This key is required for [`NSAccessibilityProtocol`](../../nsaccessibilityprotocol.md) and should be used in conjunction with [`priority`](./priority.md) to help assistive apps determine the importance of the announcement.
 
 ## See Also
 
-- [static let uiElements: NSAccessibility.NotificationUserInfoKey](nsaccessibility-swift.struct/notificationuserinfokey/uielements.md)
+### Constants
+- [static let uiElements: NSAccessibility.NotificationUserInfoKey](./uielements.md)
   An array of elements for the notification.
-- [static let priority: NSAccessibility.NotificationUserInfoKey](nsaccessibility-swift.struct/notificationuserinfokey/priority.md)
+- [static let priority: NSAccessibility.NotificationUserInfoKey](./priority.md)
   A priority level that can help an assistive app determine how to handle the corresponding notification.
-- [enum NSAccessibilityPriorityLevel](nsaccessibilityprioritylevel.md)
+- [enum NSAccessibilityPriorityLevel](../../nsaccessibilityprioritylevel.md)
   A data type for notification priority levels.
 
 

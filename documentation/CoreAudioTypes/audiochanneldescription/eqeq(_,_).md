@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Core Audio Types  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 13.0+

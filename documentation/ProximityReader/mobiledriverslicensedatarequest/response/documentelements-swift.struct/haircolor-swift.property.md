@@ -1,7 +1,8 @@
 # hairColor
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mobile identity document holder’s hair color on record with the issuer.
 

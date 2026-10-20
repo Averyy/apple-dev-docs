@@ -1,7 +1,8 @@
 # resources
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `AudioFileResource` objects which comprise this `AudioFileGroupResource`.
 

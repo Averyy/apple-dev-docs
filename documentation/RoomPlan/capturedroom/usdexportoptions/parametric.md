@@ -1,7 +1,8 @@
 # parametric
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An export option that formats the output file as a collection of size-dependent primitives.
 
@@ -22,9 +23,10 @@ A parametric model stores elements as unit-sized cubes versus polygonal units. T
 
 ## See Also
 
-- [static let mesh: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/mesh.md)
+### Choosing an export option
+- [static let mesh: CapturedRoom.USDExportOptions](./mesh.md)
   An export option that formats the output file as a collection of size-independant triangles that connect to form a mesh.
-- [static let model: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/model.md)
+- [static let model: CapturedRoom.USDExportOptions](./model.md)
   An export option that formats the output file as a collection of 3D models.
 
 

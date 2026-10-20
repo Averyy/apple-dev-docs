@@ -1,7 +1,8 @@
 # faultRecording
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var faultRecording: Data? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * faultRecording;
 ```
 
 

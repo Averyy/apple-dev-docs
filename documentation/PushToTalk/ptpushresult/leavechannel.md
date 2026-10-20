@@ -1,7 +1,8 @@
 # leaveChannel
 
 **Framework**: Push to Talk  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a push result for leaving a channel.
 
@@ -14,6 +15,10 @@ Creates a push result for leaving a channel.
 
 ```swift
 class var leaveChannel: PTPushResult { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) PTPushResult * leaveChannelPushResult;
 ```
 
 

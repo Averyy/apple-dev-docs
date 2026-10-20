@@ -1,7 +1,8 @@
 # payAsYouGo
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A payment mode of a product discount that applies over a single billing period or multiple billing periods.
 
@@ -24,15 +25,16 @@ static let payAsYouGo: Transaction.Offer.PaymentMode
 
 With a Pay As You Go payment mode, subscribers pay a discounted price for each billing period for the duration of the discount.
 
-![A timeline titled Pay As You Go that’s divided into four sections. The first three sections, labeled Introductory price, each have an equal timespan, and the fourth section, labeled Regular price has a different timespan. The first three sections represent the initial purchase, first renewal, and second renewal, respectively.  The fourth section is the third renewal, at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](/images/com.apple.storekit/media-4311727@2x.png)
+![A timeline titled Pay As You Go that’s divided into four sections. The first three sections, labeled Introductory price, each have an equal timespan, and the fourth section, labeled Regular price has a different timespan. The first three sections represent the initial purchase, first renewal, and second renewal, respectively.  The fourth section is the third renewal, at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-4311727@2x.png)
 
 ## See Also
 
-- [static let freeTrial: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/freetrial.md)
+### Getting payment modes
+- [static let freeTrial: Transaction.Offer.PaymentMode](./freetrial.md)
   A payment mode of a product discount that indicates a free trial.
-- [static let payUpFront: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)
+- [static let payUpFront: Transaction.Offer.PaymentMode](./payupfront.md)
   A payment mode of a product discount that applies the discount up front.
-- [static var oneTime: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/onetime.md)
+- [static var oneTime: Transaction.Offer.PaymentMode](./onetime.md)
   A payment mode for a consumable, non-consumable, or non-renewing subscription offer that indicates a one-time purchase.
 
 

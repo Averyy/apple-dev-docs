@@ -1,7 +1,8 @@
 # automaticallyAdjustsSafeAreaInsets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 When YES, other items such as sidebars or inspectors may appear overlaid on top of this item’s `viewController` and this item’s `safeAreaInsets` will be adjusted with respect to overlaid content. Defaults to `NO`.
 
@@ -14,9 +15,14 @@ When YES, other items such as sidebars or inspectors may appear overlaid on top 
 var automaticallyAdjustsSafeAreaInsets: Bool { get set }
 ```
 
+```objc
+@property BOOL automaticallyAdjustsSafeAreaInsets;
+```
+
 ## See Also
 
-- [var holdingPriority: NSLayoutConstraint.Priority](nssplitviewitem/holdingpriority.md)
+### Getting Auto Layout behaviors
+- [var holdingPriority: NSLayoutConstraint.Priority](./holdingpriority.md)
   The priority for a split view item to hold its size.
 
 

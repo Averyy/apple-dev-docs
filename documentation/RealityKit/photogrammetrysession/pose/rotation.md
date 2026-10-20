@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rotation (orientation) of the pose relative to the reference coordinate system.
 

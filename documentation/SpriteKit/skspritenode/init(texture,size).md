@@ -1,23 +1,28 @@
 # init(texture:size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a textured sprite using an existing texture object but with a specified size.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 convenience init(texture: SKTexture?, size: CGSize)
+```
+
+```objc
++ (instancetype) spriteNodeWithTexture:(SKTexture *) texture size:(CGSize) size;
 ```
 
 #### Return Value
@@ -35,13 +40,14 @@ The sprite is initialized using the texture, but the texture’s dimensions are 
 
 ## See Also
 
-- [convenience init(texture: SKTexture?)](skspritenode/init(texture:).md)
+### Creating a Sprite from a Texture
+- [convenience init(texture: SKTexture?)](./init%28texture%29.md)
   Initializes a textured sprite using an existing texture object.
-- [init(texture: SKTexture?, color: UIColor, size: CGSize)](skspritenode/init(texture:color:size:).md)
+- [init(texture: SKTexture?, color: UIColor, size: CGSize)](./init%28texture,color,size%29.md)
   Initializes a textured sprite in color using an existing texture object.
-- [convenience init(texture: SKTexture?, normalMap: SKTexture?)](skspritenode/init(texture:normalmap:).md)
+- [convenience init(texture: SKTexture?, normalMap: SKTexture?)](./init%28texture,normalmap%29.md)
   Initializes a textured sprite with a normal map to simulate 3D lighting.
-- [var texture: SKTexture?](skspritenode/texture.md)
+- [var texture: SKTexture?](./texture.md)
   The texture used to draw the sprite.
 
 

@@ -1,7 +1,8 @@
 # errSecCSInfoPlistFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Info.plist file or the signature has been modified.
 
@@ -13,6 +14,10 @@ The Info.plist file or the signature has been modified.
 
 ```swift
 var errSecCSInfoPlistFailed: OSStatus { get }
+```
+
+```c
+errSecCSInfoPlistFailed
 ```
 
 

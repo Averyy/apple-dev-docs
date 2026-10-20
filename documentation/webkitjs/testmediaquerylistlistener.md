@@ -1,21 +1,22 @@
 # TestMediaQueryListListener
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 5.0+
 
 ## Declaration
 
-```swift
+```
 interface TestMediaQueryListListener
 ```
 
 ## Topics
 
 ### Instance Methods
-- [method](testmediaquerylistlistener/1631198-method.md)
+- [method](./testmediaquerylistlistener/api-1631198-method.md)
 
 
 ---

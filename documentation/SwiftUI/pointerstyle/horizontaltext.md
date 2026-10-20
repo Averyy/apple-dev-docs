@@ -1,7 +1,8 @@
 # horizontalText
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pointer style appropriate for selecting or inserting text in a horizontal layout.
 
@@ -16,31 +17,32 @@ static let horizontalText: PointerStyle
 
 #### Discussion
 
-This pointer style is sometimes referred to as the I-beam pointer. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](view/pointerstyle(_:).md) modifier.
+This pointer style is sometimes referred to as the I-beam pointer. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## See Also
 
-- [static let `default`: PointerStyle](pointerstyle/default.md)
+### Getting built-in pointer styles
+- [static let `default`: PointerStyle](./default.md)
   The pointer style that uses the default platform appearance.
-- [static let verticalText: PointerStyle](pointerstyle/verticaltext.md)
+- [static let verticalText: PointerStyle](./verticaltext.md)
   The pointer style appropriate for selecting or inserting text in a vertical layout.
-- [static let rectSelection: PointerStyle](pointerstyle/rectselection.md)
+- [static let rectSelection: PointerStyle](./rectselection.md)
   The pointer style appropriate for precise rectangular selection, such as selecting a portion of an image or multiple lines of text.
-- [static let grabIdle: PointerStyle](pointerstyle/grabidle.md)
+- [static let grabIdle: PointerStyle](./grabidle.md)
   The pointer style appropriate to indicate that dragging to reposition content within specific bounds, such as panning a large image, is possible.
-- [static let grabActive: PointerStyle](pointerstyle/grabactive.md)
+- [static let grabActive: PointerStyle](./grabactive.md)
   The pointer style appropriate for actively dragging to reposition content within specific bounds, such as panning a large image.
-- [static let link: PointerStyle](pointerstyle/link.md)
+- [static let link: PointerStyle](./link.md)
   The pointer style appropriate for content opens a URL link to a webpage, document, or other item when clicked.
-- [static let zoomIn: PointerStyle](pointerstyle/zoomin.md)
+- [static let zoomIn: PointerStyle](./zoomin.md)
   The pointer style appropriate to indicate that the content can be zoomed in.
-- [static let zoomOut: PointerStyle](pointerstyle/zoomout.md)
+- [static let zoomOut: PointerStyle](./zoomout.md)
   The pointer style appropriate to indicate that the content can be zoomed out.
-- [static func frameResize(position: FrameResizePosition, directions: FrameResizeDirection.Set) -> PointerStyle](pointerstyle/frameresize(position:directions:).md)
+- [static func frameResize(position: FrameResizePosition, directions: FrameResizeDirection.Set) -> PointerStyle](./frameresize%28position,directions%29.md)
   The pointer style for resizing a rectangular frame from a specific edge or corner.
-- [static func columnResize(directions: HorizontalDirection.Set) -> PointerStyle](pointerstyle/columnresize(directions:).md)
+- [static func columnResize(directions: HorizontalDirection.Set) -> PointerStyle](./columnresize%28directions%29.md)
   The pointer style for resizing a column, or vertical division.
-- [static func rowResize(directions: VerticalDirection.Set) -> PointerStyle](pointerstyle/rowresize(directions:).md)
+- [static func rowResize(directions: VerticalDirection.Set) -> PointerStyle](./rowresize%28directions%29.md)
   The pointer style for resizing a row, or horizontal division.
 
 

@@ -1,7 +1,8 @@
 # kSCPropNetInterfaces
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Network key `Interfaces`, whose value is of type `CFArray`, containing elements of type `CFString`.
 
@@ -12,6 +13,10 @@ The Network key `Interfaces`, whose value is of type `CFArray`, containing eleme
 
 ```swift
 let kSCPropNetInterfaces: CFString
+```
+
+```c
+extern CFStringRef const kSCPropNetInterfaces;
 ```
 
 

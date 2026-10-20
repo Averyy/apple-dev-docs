@@ -1,7 +1,8 @@
 # description
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the configuration that’s suitable for logging.
 
@@ -11,7 +12,7 @@ A textual description of the configuration that’s suitable for logging.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

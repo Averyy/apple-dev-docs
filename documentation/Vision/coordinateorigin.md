@@ -1,7 +1,8 @@
 # CoordinateOrigin
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The origin of a coordinate system relative to an image.
 
@@ -23,32 +24,33 @@ enum CoordinateOrigin
 ## Topics
 
 ### Getting the origins
-- [CoordinateOrigin.upperLeft](coordinateorigin/upperleft.md)
+- [CoordinateOrigin.upperLeft](./coordinateorigin/upperleft.md)
   The origin at the upper-left corner of the image.
-- [CoordinateOrigin.lowerLeft](coordinateorigin/lowerleft.md)
+- [CoordinateOrigin.lowerLeft](./coordinateorigin/lowerleft.md)
   The origin at the lower-left corner of the image.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct NormalizedPoint](normalizedpoint.md)
+### Image locations and regions
+- [struct NormalizedPoint](./normalizedpoint.md)
   A point in a 2D coordinate system.
-- [struct NormalizedRect](normalizedrect.md)
+- [struct NormalizedRect](./normalizedrect.md)
   The location and dimensions of a rectangle.
-- [typealias NormalizedRegion](normalizedregion.md)
+- [typealias NormalizedRegion](./normalizedregion.md)
   A polygon composed of normalized points.
-- [struct NormalizedCircle](normalizedcircle.md)
+- [struct NormalizedCircle](./normalizedcircle.md)
   The center point and radius of a 2D circle.
-- [protocol BoundingBoxProviding](boundingboxproviding.md)
+- [protocol BoundingBoxProviding](./boundingboxproviding.md)
   A protocol for objects that have a bounding box.
-- [protocol BoundingRegionProviding](boundingregionproviding.md)
+- [protocol BoundingRegionProviding](./boundingregionproviding.md)
   A protocol for objects that have a defined boundary in an image.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+- [protocol QuadrilateralProviding](./quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
 
 

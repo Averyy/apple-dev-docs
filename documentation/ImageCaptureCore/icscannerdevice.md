@@ -1,7 +1,8 @@
 # ICScannerDevice
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a scanner.
 
@@ -14,6 +15,10 @@ An object that represents a scanner.
 class ICScannerDevice
 ```
 
+```objc
+@interface ICScannerDevice : ICDevice
+```
+
 #### Overview
 
 An instance of ICScannerDevice class is intended to be used by the ICScannerDeviceView object. The ICScannerDeviceView class encapsulates the complexities of setting scan parameters, performing scans and saving the result. The developer should consider using ICScannerDeviceView instead of building their own views using the ICScannerDevice object.
@@ -21,56 +26,57 @@ An instance of ICScannerDevice class is intended to be used by the ICScannerDevi
 ## Topics
 
 ### Selecting a Functional Unit
-- [var availableFunctionalUnitTypes: [NSNumber]](icscannerdevice/availablefunctionalunittypes.md)
+- [var availableFunctionalUnitTypes: [NSNumber]](./icscannerdevice/availablefunctionalunittypes.md)
   An array of functional unit types available on this scanner.
-- [var selectedFunctionalUnit: ICScannerFunctionalUnit](icscannerdevice/selectedfunctionalunit.md)
+- [var selectedFunctionalUnit: ICScannerFunctionalUnit](./icscannerdevice/selectedfunctionalunit.md)
   The currently selected functional unit on the scanner.
-- [func requestSelect(ICScannerFunctionalUnitType)](icscannerdevice/requestselect(_:).md)
+- [func requestSelect(ICScannerFunctionalUnitType)](./icscannerdevice/requestselect%28_%29.md)
   Requests to select a functional unit on the scanner.
-- [enum ICScannerFunctionalUnitType](icscannerfunctionalunittype.md)
+- [enum ICScannerFunctionalUnitType](./icscannerfunctionalunittype.md)
   The types of scanner functional units.
-- [enum ICScannerFunctionalUnitState](icscannerfunctionalunitstate.md)
+- [enum ICScannerFunctionalUnitState](./icscannerfunctionalunitstate.md)
   Flags to indicate the state of the scanner functional unit.
 ### Performing a Scan
-- [func requestOpenSession(withCredentials: String, password: String)](icscannerdevice/requestopensession(withcredentials:password:).md)
+- [func requestOpenSession(withCredentials: String, password: String)](./icscannerdevice/requestopensession%28withcredentials,password%29.md)
   Opens a session on the protected device with the authorized username and passcode.
-- [func requestOverviewScan()](icscannerdevice/requestoverviewscan.md)
+- [func requestOverviewScan()](./icscannerdevice/requestoverviewscan%28%29.md)
   Starts an overview scan on the selected functional unit.
-- [func requestScan()](icscannerdevice/requestscan.md)
+- [func requestScan()](./icscannerdevice/requestscan%28%29.md)
   Starts a scan on the selected functional unit.
-- [func cancelScan()](icscannerdevice/cancelscan.md)
+- [func cancelScan()](./icscannerdevice/cancelscan%28%29.md)
   Cancels the current scan.
-- [var documentName: String](icscannerdevice/documentname.md)
+- [var documentName: String](./icscannerdevice/documentname.md)
   The document’s name.
-- [var documentUTI: String](icscannerdevice/documentuti.md)
+- [var documentUTI: String](./icscannerdevice/documentuti.md)
   The document’s uniform type identifier.
-- [var downloadsDirectory: URL](icscannerdevice/downloadsdirectory.md)
+- [var downloadsDirectory: URL](./icscannerdevice/downloadsdirectory.md)
   The downloads directory.
-- [var transferMode: ICScannerTransferMode](icscannerdevice/transfermode.md)
+- [var transferMode: ICScannerTransferMode](./icscannerdevice/transfermode.md)
   The transfer mode for the scanned document.
-- [var maxMemoryBandSize: UInt32](icscannerdevice/maxmemorybandsize.md)
+- [var maxMemoryBandSize: UInt32](./icscannerdevice/maxmemorybandsize.md)
   The total maximum band size requested when performing a memory-based transfer.
 ### Logging into a Protected Device
-- [var defaultUsername: String](icscannerdevice/defaultusername.md)
+- [var defaultUsername: String](./icscannerdevice/defaultusername.md)
   A default username on protected scanners.
 
 ## Relationships
 
 ### Inherits From
-- [ICDevice](icdevice.md)
+- [ICDevice](./icdevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol ICScannerDeviceDelegate](icscannerdevicedelegate.md)
+### Scanners
+- [protocol ICScannerDeviceDelegate](./icscannerdevicedelegate.md)
   Methods for determining availability, selecting a functional unit, and performing scans on connected scanners.
-- [Scanner Configuration](scanner-configuration.md)
+- [Scanner Configuration](./scanner-configuration.md)
   Examine a scanner’s functional units and features.
 
 

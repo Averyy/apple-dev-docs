@@ -1,18 +1,21 @@
 # week
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the week unit.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.4+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 8.0
+- iPadOS 2.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.4+ - Deprecated in 10.10
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use kCFCalendarUnitWeekOfYear or kCFCalendarUnitWeekOfMonth instead
 
 ## Declaration
 
@@ -20,33 +23,38 @@ Specifies the week unit.
 static var week: CFCalendarUnit { get }
 ```
 
+```c
+kCFCalendarUnitWeek
+```
+
 ## See Also
 
-- [static var era: CFCalendarUnit](cfcalendarunit/era.md)
+### Constants
+- [static var era: CFCalendarUnit](./era.md)
   Specifies the era unit.
-- [static var year: CFCalendarUnit](cfcalendarunit/year.md)
+- [static var year: CFCalendarUnit](./year.md)
   Specifies the year unit.
-- [static var month: CFCalendarUnit](cfcalendarunit/month.md)
+- [static var month: CFCalendarUnit](./month.md)
   Specifies the month unit.
-- [static var day: CFCalendarUnit](cfcalendarunit/day.md)
+- [static var day: CFCalendarUnit](./day.md)
   Specifies the day unit.
-- [static var hour: CFCalendarUnit](cfcalendarunit/hour.md)
+- [static var hour: CFCalendarUnit](./hour.md)
   Specifies the hour unit.
-- [static var minute: CFCalendarUnit](cfcalendarunit/minute.md)
+- [static var minute: CFCalendarUnit](./minute.md)
   Specifies the minute unit.
-- [static var second: CFCalendarUnit](cfcalendarunit/second.md)
+- [static var second: CFCalendarUnit](./second.md)
   Specifies the second unit.
-- [static var weekday: CFCalendarUnit](cfcalendarunit/weekday.md)
+- [static var weekday: CFCalendarUnit](./weekday.md)
   Specifies the weekday unit.
-- [static var weekdayOrdinal: CFCalendarUnit](cfcalendarunit/weekdayordinal.md)
+- [static var weekdayOrdinal: CFCalendarUnit](./weekdayordinal.md)
   Specifies the ordinal weekday unit.
-- [static var quarter: CFCalendarUnit](cfcalendarunit/quarter.md)
+- [static var quarter: CFCalendarUnit](./quarter.md)
   Specifies the quarter-year unit.
-- [static var weekOfMonth: CFCalendarUnit](cfcalendarunit/weekofmonth.md)
+- [static var weekOfMonth: CFCalendarUnit](./weekofmonth.md)
   Specifies the original week of a month calendar unit.
-- [static var weekOfYear: CFCalendarUnit](cfcalendarunit/weekofyear.md)
+- [static var weekOfYear: CFCalendarUnit](./weekofyear.md)
   Specifies the original week of the year calendar unit.
-- [static var yearForWeekOfYear: CFCalendarUnit](cfcalendarunit/yearforweekofyear.md)
+- [static var yearForWeekOfYear: CFCalendarUnit](./yearforweekofyear.md)
   Specifies the relative year for a week within a year calendar unit.
 
 

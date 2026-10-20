@@ -2,6 +2,7 @@
 
 **Framework**: ExtensionFoundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -19,6 +20,11 @@
 @MainActor
 @AppExtensionPoint.Bind var extensionPoint: AppExtensionPoint { get }
 ```
+
+## Default Implementations
+
+### AppExtension Implementations
+- [var extensionPoint: AppExtensionPoint](./extensionpoint-y2zv.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # BNNSArithmeticExp
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An operation that calculates the element-wise result of *e* raised to the power of its input.
 
@@ -20,13 +21,18 @@ An operation that calculates the element-wise result of *e* raised to the power 
 var BNNSArithmeticExp: BNNSArithmeticFunction { get }
 ```
 
+```c
+BNNSArithmeticExp
+```
+
 ## See Also
 
-- [var BNNSArithmeticExp2: BNNSArithmeticFunction](bnnsarithmeticexp2.md)
+### Exponential and Logarithmic Functions
+- [var BNNSArithmeticExp2: BNNSArithmeticFunction](./bnnsarithmeticexp2.md)
   An operation that calculates the element-wise result of 2 raised to the power of its input.
-- [var BNNSArithmeticLog: BNNSArithmeticFunction](bnnsarithmeticlog.md)
+- [var BNNSArithmeticLog: BNNSArithmeticFunction](./bnnsarithmeticlog.md)
   An operation that calculates the element-wise natural logarithm of its input.
-- [var BNNSArithmeticLog2: BNNSArithmeticFunction](bnnsarithmeticlog2.md)
+- [var BNNSArithmeticLog2: BNNSArithmeticFunction](./bnnsarithmeticlog2.md)
   An operation that calculates the element-wise base 2 logarithm of its input.
 
 

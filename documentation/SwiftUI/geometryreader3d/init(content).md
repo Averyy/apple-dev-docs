@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 1.0+
@@ -15,7 +16,8 @@ init(@ContentBuilder content: @escaping (GeometryProxy3D) -> Content)
 
 ## See Also
 
-- [var content: (GeometryProxy3D) -> Content](geometryreader3d/content.md)
+### Creating a geometry reader
+- [var content: (GeometryProxy3D) -> Content](./content.md)
 
 
 ---

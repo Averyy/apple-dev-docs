@@ -1,7 +1,8 @@
 # present(launchConfiguration:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches Desk View with the configuration and completion handler that you specify.
 
@@ -12,7 +13,15 @@ Launches Desk View with the configuration and completion handler that you specif
 ## Declaration
 
 ```swift
+func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfiguration, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfiguration) async throws
+```
+
+```objc
+- (void) presentWithLaunchConfiguration:(AVCaptureDeskViewApplicationLaunchConfiguration *) launchConfiguration completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -21,7 +30,7 @@ If Desk View is already running, this method brings it to the front. If Desk Vie
 
 Desk View launches in setup mode. This mode shows the full field of view of an ultrawide camera with a superimposed trapezoid that indicates the cropped desk region to display. The system displays this region after the user completes setup and starts Desk View.
 
-Create an instance of [`AVCaptureDeskViewApplication.LaunchConfiguration`](avcapturedeskviewapplication/launchconfiguration.md) and set it for `launchConfiguration` to specify the frame for Desk View and when to perform the `completionHandler`.
+Create an instance of [`AVCaptureDeskViewApplication.LaunchConfiguration`](./launchconfiguration.md) and set it for `launchConfiguration` to specify the frame for Desk View and when to perform the `completionHandler`.
 
 ## Parameters
 
@@ -30,9 +39,10 @@ Create an instance of [`AVCaptureDeskViewApplication.LaunchConfiguration`](avcap
 
 ## See Also
 
-- [func present(completionHandler: (((any Error)?) -> Void)?)](avcapturedeskviewapplication/present(completionhandler:).md)
+### Presenting the Desk View app
+- [func present(completionHandler: (((any Error)?) -> Void)?)](./present%28completionhandler%29.md)
   Launches Desk View with no additional configuration and then performs a completion handler if you specify it.
-- [AVCaptureDeskViewApplication.LaunchConfiguration](avcapturedeskviewapplication/launchconfiguration.md)
+- [AVCaptureDeskViewApplication.LaunchConfiguration](./launchconfiguration.md)
   An object that configures how to present Desk View.
 
 

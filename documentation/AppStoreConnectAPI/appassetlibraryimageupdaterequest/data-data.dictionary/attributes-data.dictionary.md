@@ -1,7 +1,8 @@
 # AppAssetLibraryImageUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the updated app asset library image resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the updated app asset library image resourc
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryImageUpdateRequest.Data.Attributes
 ```
 

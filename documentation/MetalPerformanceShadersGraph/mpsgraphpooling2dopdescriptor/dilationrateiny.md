@@ -1,7 +1,8 @@
 # dilationRateInY
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the dilation rate for the height dimension.
 
@@ -17,6 +18,10 @@ Defines the dilation rate for the height dimension.
 
 ```swift
 var dilationRateInY: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger dilationRateInY;
 ```
 
 #### Discussion

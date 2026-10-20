@@ -1,7 +1,8 @@
 # init(tracking:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration with a set of anchor capabilities.
 
@@ -16,7 +17,7 @@ init(tracking capabilities: Set<SpatialTrackingSession.Configuration.AnchorCapab
 
 ## Parameters
 
-- `capabilities`: The set of anchor capabilities to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
+- `capabilities`: The set of anchor capabilities to run with a [`SpatialTrackingSession`](../../spatialtrackingsession.md).
 
 
 ---

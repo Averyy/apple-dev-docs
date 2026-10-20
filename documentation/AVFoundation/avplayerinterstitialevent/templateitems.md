@@ -1,7 +1,8 @@
 # templateItems
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of player item configurations to use as templates for player items that play interstitial content.
 
@@ -20,15 +21,20 @@ An array of player item configurations to use as templates for player items that
 var templateItems: [AVPlayerItem] { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVPlayerItem *> * templateItems;
+```
+
 #### Discussion
 
-If you require the system to create new player items using the same asset instance as the template item, create the asset with an [`AVURLAssetPrimarySessionIdentifierKey`](avurlassetprimarysessionidentifierkey.md) value equal to [`httpSessionIdentifier`](avurlasset/httpsessionidentifier.md) of the primary item’s [`asset`](avplayeritem/asset.md). Creating assets this way simplifies cases where you require loading their data with a custom [`AVAssetResourceLoader`](avassetresourceloader.md) delegate.
+If you require the system to create new player items using the same asset instance as the template item, create the asset with an [`AVURLAssetPrimarySessionIdentifierKey`](../avurlassetprimarysessionidentifierkey.md) value equal to [`httpSessionIdentifier`](../avurlasset/httpsessionidentifier.md) of the primary item’s [`asset`](../avplayeritem/asset.md). Creating assets this way simplifies cases where you require loading their data with a custom [`AVAssetResourceLoader`](../avassetresourceloader.md) delegate.
 
-> ❗ **Important**:  The system raises an exception if template items contain assets that aren’t URL based, such as [`AVComposition`](avcomposition.md).
+> ❗ **Important**:  The system raises an exception if template items contain assets that aren’t URL based, such as [`AVComposition`](../avcomposition.md).
 
 ## See Also
 
-- [var primaryItem: AVPlayerItem?](avplayerinterstitialevent/primaryitem.md)
+### Accessing player items
+- [var primaryItem: AVPlayerItem?](./primaryitem.md)
   The player item that represents the primary content.
 
 

@@ -1,7 +1,8 @@
 # MTRPowerSourceBatApprovedChemistry
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.5+
@@ -18,54 +19,58 @@
 enum MTRPowerSourceBatApprovedChemistry
 ```
 
+```c
+enum MTRPowerSourceBatApprovedChemistry : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPowerSourceBatApprovedChemistry.alkaline](mtrpowersourcebatapprovedchemistry/alkaline.md)
-- [MTRPowerSourceBatApprovedChemistry.leadAcid](mtrpowersourcebatapprovedchemistry/leadacid.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumCarbonFluoride](mtrpowersourcebatapprovedchemistry/lithiumcarbonfluoride.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumChromiumOxide](mtrpowersourcebatapprovedchemistry/lithiumchromiumoxide.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumCobaltOxide](mtrpowersourcebatapprovedchemistry/lithiumcobaltoxide.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumCopperOxide](mtrpowersourcebatapprovedchemistry/lithiumcopperoxide.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumIon](mtrpowersourcebatapprovedchemistry/lithiumion.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumIonPolymer](mtrpowersourcebatapprovedchemistry/lithiumionpolymer.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumIronDisulfide](mtrpowersourcebatapprovedchemistry/lithiumirondisulfide.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumIronPhosphate](mtrpowersourcebatapprovedchemistry/lithiumironphosphate.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumManganeseDioxide](mtrpowersourcebatapprovedchemistry/lithiummanganesedioxide.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumSulfur](mtrpowersourcebatapprovedchemistry/lithiumsulfur.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumThionylChloride](mtrpowersourcebatapprovedchemistry/lithiumthionylchloride.md)
-- [MTRPowerSourceBatApprovedChemistry.lithiumTitanate](mtrpowersourcebatapprovedchemistry/lithiumtitanate.md)
-- [MTRPowerSourceBatApprovedChemistry.magnesium](mtrpowersourcebatapprovedchemistry/magnesium.md)
-- [MTRPowerSourceBatApprovedChemistry.mercuryOxide](mtrpowersourcebatapprovedchemistry/mercuryoxide.md)
-- [MTRPowerSourceBatApprovedChemistry.nickelCadmium](mtrpowersourcebatapprovedchemistry/nickelcadmium.md)
-- [MTRPowerSourceBatApprovedChemistry.nickelHydrogen](mtrpowersourcebatapprovedchemistry/nickelhydrogen.md)
-- [MTRPowerSourceBatApprovedChemistry.nickelIron](mtrpowersourcebatapprovedchemistry/nickeliron.md)
-- [MTRPowerSourceBatApprovedChemistry.nickelMetalHydride](mtrpowersourcebatapprovedchemistry/nickelmetalhydride.md)
-- [MTRPowerSourceBatApprovedChemistry.nickelOxyhydride](mtrpowersourcebatapprovedchemistry/nickeloxyhydride.md)
-- [MTRPowerSourceBatApprovedChemistry.nickelZinc](mtrpowersourcebatapprovedchemistry/nickelzinc.md)
-- [MTRPowerSourceBatApprovedChemistry.silverOxide](mtrpowersourcebatapprovedchemistry/silveroxide.md)
-- [MTRPowerSourceBatApprovedChemistry.silverZinc](mtrpowersourcebatapprovedchemistry/silverzinc.md)
-- [MTRPowerSourceBatApprovedChemistry.sodiumIon](mtrpowersourcebatapprovedchemistry/sodiumion.md)
-- [MTRPowerSourceBatApprovedChemistry.sodiumSulfur](mtrpowersourcebatapprovedchemistry/sodiumsulfur.md)
-- [MTRPowerSourceBatApprovedChemistry.unspecified](mtrpowersourcebatapprovedchemistry/unspecified.md)
-- [MTRPowerSourceBatApprovedChemistry.zincAir](mtrpowersourcebatapprovedchemistry/zincair.md)
-- [MTRPowerSourceBatApprovedChemistry.zincBromide](mtrpowersourcebatapprovedchemistry/zincbromide.md)
-- [MTRPowerSourceBatApprovedChemistry.zincCarbon](mtrpowersourcebatapprovedchemistry/zinccarbon.md)
-- [MTRPowerSourceBatApprovedChemistry.zincCerium](mtrpowersourcebatapprovedchemistry/zinccerium.md)
-- [MTRPowerSourceBatApprovedChemistry.zincChloride](mtrpowersourcebatapprovedchemistry/zincchloride.md)
-- [MTRPowerSourceBatApprovedChemistry.zincManganeseDioxide](mtrpowersourcebatapprovedchemistry/zincmanganesedioxide.md)
+- [MTRPowerSourceBatApprovedChemistry.alkaline](./mtrpowersourcebatapprovedchemistry/alkaline.md)
+- [MTRPowerSourceBatApprovedChemistry.leadAcid](./mtrpowersourcebatapprovedchemistry/leadacid.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumCarbonFluoride](./mtrpowersourcebatapprovedchemistry/lithiumcarbonfluoride.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumChromiumOxide](./mtrpowersourcebatapprovedchemistry/lithiumchromiumoxide.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumCobaltOxide](./mtrpowersourcebatapprovedchemistry/lithiumcobaltoxide.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumCopperOxide](./mtrpowersourcebatapprovedchemistry/lithiumcopperoxide.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumIon](./mtrpowersourcebatapprovedchemistry/lithiumion.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumIonPolymer](./mtrpowersourcebatapprovedchemistry/lithiumionpolymer.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumIronDisulfide](./mtrpowersourcebatapprovedchemistry/lithiumirondisulfide.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumIronPhosphate](./mtrpowersourcebatapprovedchemistry/lithiumironphosphate.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumManganeseDioxide](./mtrpowersourcebatapprovedchemistry/lithiummanganesedioxide.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumSulfur](./mtrpowersourcebatapprovedchemistry/lithiumsulfur.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumThionylChloride](./mtrpowersourcebatapprovedchemistry/lithiumthionylchloride.md)
+- [MTRPowerSourceBatApprovedChemistry.lithiumTitanate](./mtrpowersourcebatapprovedchemistry/lithiumtitanate.md)
+- [MTRPowerSourceBatApprovedChemistry.magnesium](./mtrpowersourcebatapprovedchemistry/magnesium.md)
+- [MTRPowerSourceBatApprovedChemistry.mercuryOxide](./mtrpowersourcebatapprovedchemistry/mercuryoxide.md)
+- [MTRPowerSourceBatApprovedChemistry.nickelCadmium](./mtrpowersourcebatapprovedchemistry/nickelcadmium.md)
+- [MTRPowerSourceBatApprovedChemistry.nickelHydrogen](./mtrpowersourcebatapprovedchemistry/nickelhydrogen.md)
+- [MTRPowerSourceBatApprovedChemistry.nickelIron](./mtrpowersourcebatapprovedchemistry/nickeliron.md)
+- [MTRPowerSourceBatApprovedChemistry.nickelMetalHydride](./mtrpowersourcebatapprovedchemistry/nickelmetalhydride.md)
+- [MTRPowerSourceBatApprovedChemistry.nickelOxyhydride](./mtrpowersourcebatapprovedchemistry/nickeloxyhydride.md)
+- [MTRPowerSourceBatApprovedChemistry.nickelZinc](./mtrpowersourcebatapprovedchemistry/nickelzinc.md)
+- [MTRPowerSourceBatApprovedChemistry.silverOxide](./mtrpowersourcebatapprovedchemistry/silveroxide.md)
+- [MTRPowerSourceBatApprovedChemistry.silverZinc](./mtrpowersourcebatapprovedchemistry/silverzinc.md)
+- [MTRPowerSourceBatApprovedChemistry.sodiumIon](./mtrpowersourcebatapprovedchemistry/sodiumion.md)
+- [MTRPowerSourceBatApprovedChemistry.sodiumSulfur](./mtrpowersourcebatapprovedchemistry/sodiumsulfur.md)
+- [MTRPowerSourceBatApprovedChemistry.unspecified](./mtrpowersourcebatapprovedchemistry/unspecified.md)
+- [MTRPowerSourceBatApprovedChemistry.zincAir](./mtrpowersourcebatapprovedchemistry/zincair.md)
+- [MTRPowerSourceBatApprovedChemistry.zincBromide](./mtrpowersourcebatapprovedchemistry/zincbromide.md)
+- [MTRPowerSourceBatApprovedChemistry.zincCarbon](./mtrpowersourcebatapprovedchemistry/zinccarbon.md)
+- [MTRPowerSourceBatApprovedChemistry.zincCerium](./mtrpowersourcebatapprovedchemistry/zinccerium.md)
+- [MTRPowerSourceBatApprovedChemistry.zincChloride](./mtrpowersourcebatapprovedchemistry/zincchloride.md)
+- [MTRPowerSourceBatApprovedChemistry.zincManganeseDioxide](./mtrpowersourcebatapprovedchemistry/zincmanganesedioxide.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrpowersourcebatapprovedchemistry/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrpowersourcebatapprovedchemistry/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # stringValue()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the selection in the widget annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func stringValue() -> String!
+```
+
+```objc
+- (NSString *) stringValue;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ If the widget annotation object is backed by PDF form data, this method returns 
 
 ## See Also
 
-- [func setStringValue(String!)](pdfannotationchoicewidget/setstringvalue(_:).md)
+### Getting and Setting the String Value
+- [func setStringValue(String!)](./setstringvalue%28_%29.md)
   Sets the selection in the widget annotation.
 
 

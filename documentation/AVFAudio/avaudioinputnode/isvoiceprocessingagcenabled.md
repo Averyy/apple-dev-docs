@@ -1,7 +1,8 @@
 # isVoiceProcessingAGCEnabled
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether automatic gain control on the processed microphone uplink signal is active.
 
@@ -20,19 +21,24 @@ A Boolean that indicates whether automatic gain control on the processed microph
 var isVoiceProcessingAGCEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isVoiceProcessingAGCEnabled) BOOL voiceProcessingAGCEnabled;
+```
+
 #### Discussion
 
 This property is in an enabled state by default.
 
 ## See Also
 
-- [var isVoiceProcessingInputMuted: Bool](avaudioinputnode/isvoiceprocessinginputmuted.md)
+### Configuring voice processing
+- [var isVoiceProcessingInputMuted: Bool](./isvoiceprocessinginputmuted.md)
   A Boolean that indicates whether the input of the voice processing unit is in a muted state.
-- [var isVoiceProcessingBypassed: Bool](avaudioinputnode/isvoiceprocessingbypassed.md)
+- [var isVoiceProcessingBypassed: Bool](./isvoiceprocessingbypassed.md)
   A Boolean that indicates whether the node bypasses all microphone uplink processing of the voice-processing unit.
-- [var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAudioDuckingConfiguration](avaudioinputnode/voiceprocessingotheraudioduckingconfiguration.md)
+- [var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAudioDuckingConfiguration](./voiceprocessingotheraudioduckingconfiguration.md)
   The ducking configuration of nonvoice audio.
-- [struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration](avaudiovoiceprocessingotheraudioduckingconfiguration.md)
+- [struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration](../avaudiovoiceprocessingotheraudioduckingconfiguration.md)
   The configuration of ducking non-voice audio.
 
 

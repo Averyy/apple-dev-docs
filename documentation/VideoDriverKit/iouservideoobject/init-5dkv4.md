@@ -1,7 +1,8 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes a video object.
 
@@ -10,7 +11,7 @@ Initializes a video object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserVideoDriver *in_video_driver);
 ```
 
@@ -28,7 +29,8 @@ Always pass in the `IOUserVideoDriver`; calling `init()` always returns false.
 
 ## See Also
 
-- [init](iouservideoobject/init-853a8.md)
+### Creating a video object
+- [init](./init-853a8.md)
 
 
 ---

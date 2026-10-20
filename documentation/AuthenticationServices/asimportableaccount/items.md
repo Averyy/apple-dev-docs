@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All items stored in the account.
 
@@ -20,19 +21,20 @@ var items: [ASImportableItem]
 
 ## See Also
 
-- [var id: Data](asimportableaccount/id.md)
+### Accessing account properties
+- [var id: Data](./id.md)
   A unique identifier for the account.
-- [var userName: String](asimportableaccount/username.md)
+- [var userName: String](./username.md)
   The username associated with the account.
-- [var email: String](asimportableaccount/email.md)
+- [var email: String](./email.md)
   The email address associated with this account.
-- [var fullName: String?](asimportableaccount/fullname.md)
+- [var fullName: String?](./fullname.md)
   The full name of the account owner, if provided.
-- [var collections: [ASImportableCollection]](asimportableaccount/collections.md)
+- [var collections: [ASImportableCollection]](./collections.md)
   The collections stored in this account.
-- [struct ASImportableCollection](asimportablecollection.md)
+- [struct ASImportableCollection](../asimportablecollection.md)
   A collection of items and subcollections for use in import and export.
-- [struct ASImportableItem](asimportableitem.md)
+- [struct ASImportableItem](../asimportableitem.md)
   An item for use in import and export.
 
 

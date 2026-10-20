@@ -1,11 +1,12 @@
 # SupervisedEstimator Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label>](fullyconnectednetworkmultilabelclassifier/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label>](./decode%28from%29.md)
   Decodes the estimator.
 
 

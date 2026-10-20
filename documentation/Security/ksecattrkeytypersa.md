@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeRSA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 RSA algorithm.
 
@@ -20,9 +21,13 @@ RSA algorithm.
 let kSecAttrKeyTypeRSA: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrKeyTypeRSA;
+```
+
 ## Mentions
 
-- [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
+- [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
 
 ---

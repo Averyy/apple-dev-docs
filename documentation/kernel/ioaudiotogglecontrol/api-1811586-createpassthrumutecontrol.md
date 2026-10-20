@@ -7,7 +7,7 @@ Allocates a new pass through mute control with the given attributes
 
 ## Declaration
 
-```swift
+```c
 static IOAudioToggleControl *createPassThruMuteControl (
  boolinitialValue, 
  UInt32channelID, 
@@ -15,7 +15,7 @@ static IOAudioToggleControl *createPassThruMuteControl (
  UInt32cntrlID);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a newly allocated and initialized mute IOAudioControl
 
@@ -28,9 +28,10 @@ Returns a newly allocated and initialized mute IOAudioControl
 
 ## See Also
 
-- [create](ioaudiotogglecontrol/1811569-create.md)
+### Miscellaneous
+- [create](./api-1811569-create.md)
   Allocates a new mute control with the given attributes
-- [init](ioaudiotogglecontrol/1811599-init.md)
+- [init](./api-1811599-init.md)
   Initializes a newly allocated IOAudioToggleControl with the given attributes
 
 

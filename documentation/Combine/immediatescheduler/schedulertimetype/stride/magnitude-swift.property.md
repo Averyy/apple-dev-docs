@@ -1,7 +1,8 @@
 # magnitude
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of this time interval in seconds.
 

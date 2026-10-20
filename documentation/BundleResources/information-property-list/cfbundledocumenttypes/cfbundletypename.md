@@ -1,7 +1,8 @@
 # CFBundleTypeName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The abstract name for the document type.
 
@@ -13,25 +14,27 @@ The abstract name for the document type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleTypeName` (Document Type Name)
+- **Type**: string
 
 ## See Also
 
-- [CFBundleTypeIconFile](information-property-list/cfbundledocumenttypes/cfbundletypeiconfile.md)
+### Property List Keys
+- [CFBundleTypeIconFile](./cfbundletypeiconfile.md)
   The icon to associate with the document type.
-- [CFBundleTypeRole](information-property-list/cfbundledocumenttypes/cfbundletyperole.md)
+- [CFBundleTypeRole](./cfbundletyperole.md)
   The app’s role with respect to the document type.
-- [LSHandlerRank](information-property-list/cfbundledocumenttypes/lshandlerrank.md)
+- [LSHandlerRank](./lshandlerrank.md)
   The ranking of this app among apps that declare themselves as editors or viewers of the given file type.
-- [LSItemContentTypes](information-property-list/cfbundledocumenttypes/lsitemcontenttypes.md)
+- [LSItemContentTypes](./lsitemcontenttypes.md)
   The document file types the app supports.
-- [LSTypeIsPackage](information-property-list/cfbundledocumenttypes/lstypeispackage.md)
+- [LSTypeIsPackage](./lstypeispackage.md)
   A Boolean value indicating whether the document is distributed as a bundle.
-- [NSDocumentClass](information-property-list/cfbundledocumenttypes/nsdocumentclass.md)
+- [NSDocumentClass](./nsdocumentclass.md)
   The subclass used to create instances of this document.
-- [NSExportableTypes](information-property-list/cfbundledocumenttypes/nsexportabletypes.md)
+- [NSExportableTypes](./nsexportabletypes.md)
   The file types that this document can be exported to.
 
 

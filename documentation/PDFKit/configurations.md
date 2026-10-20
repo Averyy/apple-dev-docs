@@ -1,52 +1,53 @@
 # Configurations
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 Define display modes, scaling, rendering, printing and graphics properties.
 
 ## Topics
 
 ### Working with Display Modes and Characteristics
-- [var displayMode: PDFDisplayMode](pdfview/displaymode.md)
+- [var displayMode: PDFDisplayMode](./pdfview/displaymode.md)
   The current display mode.
-- [enum PDFDisplayMode](pdfdisplaymode.md)
+- [enum PDFDisplayMode](./pdfdisplaymode.md)
   A wrapper for the chosen display mode constant.
-- [Additional Display Configurations](additional-display-configurations.md)
+- [Additional Display Configurations](./additional-display-configurations.md)
   Operations for setting up page breaks, a display box, and display direction.
-- [Book Display](book-display.md)
+- [Book Display](./book-display.md)
   Operations to setup a book display for a PDF view.
-- [Graphics Properties](graphics-properties.md)
+- [Graphics Properties](./graphics-properties.md)
   Operations to define the background color, antialiasing, and greeking for a PDF view.
 ### Scaling the View
-- [var scaleFactor: CGFloat](pdfview/scalefactor.md)
+- [var scaleFactor: CGFloat](./pdfview/scalefactor.md)
   The current scale factor for the view.
-- [var scaleFactorForSizeToFit: CGFloat](pdfview/scalefactorforsizetofit.md)
+- [var scaleFactorForSizeToFit: CGFloat](./pdfview/scalefactorforsizetofit.md)
   The “size to fit” scale factor that `autoScales` would use for scaling the current document and layout.
-- [var maxScaleFactor: CGFloat](pdfview/maxscalefactor.md)
+- [var maxScaleFactor: CGFloat](./pdfview/maxscalefactor.md)
   The maximum scaling factor for the PDF document.
-- [var minScaleFactor: CGFloat](pdfview/minscalefactor.md)
+- [var minScaleFactor: CGFloat](./pdfview/minscalefactor.md)
   The minimum scaling factor for the PDF document.
-- [var autoScales: Bool](pdfview/autoscales.md)
+- [var autoScales: Bool](./pdfview/autoscales.md)
   A Boolean value indicating whether autoscaling is set.
-- [func rowSize(for: PDFPage) -> CGSize](pdfview/rowsize(for:).md)
+- [func rowSize(for: PDFPage) -> CGSize](./pdfview/rowsize%28for%29.md)
   Returns the size needed to display a row of the current document page.
-- [Zoom Operations](zoom-operations.md)
+- [Zoom Operations](./zoom-operations.md)
   Zoom operations for a PDF View.
 ### Rendering the View and Printing
-- [func draw(PDFPage)](pdfview/draw(_:).md)
+- [func draw(PDFPage)](./pdfview/draw%28_%29.md)
   Draw and render a visible page.
-- [func drawPagePost(PDFPage)](pdfview/drawpagepost(_:).md)
+- [func drawPagePost(PDFPage)](./pdfview/drawpagepost%28_%29.md)
   Perform post-page rendering.
-- [func print(with: NSPrintInfo, autoRotate: Bool)](pdfview/print(with:autorotate:).md)
+- [func print(with: NSPrintInfo, autoRotate: Bool)](./pdfview/print%28with,autorotate%29.md)
   Prints the document with the specified printer information.
-- [func print(with: NSPrintInfo, autoRotate: Bool, pageScaling: PDFPrintScalingMode)](pdfview/print(with:autorotate:pagescaling:).md)
+- [func print(with: NSPrintInfo, autoRotate: Bool, pageScaling: PDFPrintScalingMode)](./pdfview/print%28with,autorotate,pagescaling%29.md)
   Prints the document with the specified printer and page-scaling information.
 ### Specializing the View
-- [var documentView: UIView?](pdfview/documentview.md)
+- [var documentView: UIView?](./pdfview/documentview.md)
   The innermost view used by `PDFView` or by your `PDFView` subclass.
-- [func layoutDocumentView()](pdfview/layoutdocumentview.md)
+- [func layoutDocumentView()](./pdfview/layoutdocumentview%28%29.md)
   Performs layout of the inner views.
-- [Draw Operations](draw-operations.md)
+- [Draw Operations](./draw-operations.md)
   Draw in a PDF page.
 
 

@@ -1,7 +1,8 @@
 # completionDeadlineTime
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval that represents the time by which an app needs to finish submitting changes to the render server.
 
@@ -18,15 +19,20 @@ The time interval that represents the time by which an app needs to finish submi
 var completionDeadlineTime: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval completionDeadlineTime;
+```
+
 #### Discussion
 
 Missing this completion deadline results in a presentation delay.
 
 ## See Also
 
-- [var modelTime: TimeInterval](uiupdateinfo/modeltime.md)
+### Getting information about timing
+- [var modelTime: TimeInterval](./modeltime.md)
   The time interval that represents a reference point for the current time of the UI update.
-- [var estimatedPresentationTime: TimeInterval](uiupdateinfo/estimatedpresentationtime.md)
+- [var estimatedPresentationTime: TimeInterval](./estimatedpresentationtime.md)
   The time interval that represents an estimate for when current UI update changes become visible onscreen.
 
 

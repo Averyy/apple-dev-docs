@@ -1,7 +1,8 @@
 # MPSNNGradientFilterNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient filter.
 
@@ -19,43 +20,48 @@ A representation of a gradient filter.
 class MPSNNGradientFilterNode
 ```
 
+```objc
+@interface MPSNNGradientFilterNode : MPSNNFilterNode
+```
+
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Inherited By
-- [MPSCNNBatchNormalizationGradientNode](mpscnnbatchnormalizationgradientnode.md)
-- [MPSCNNConvolutionGradientNode](mpscnnconvolutiongradientnode.md)
-- [MPSCNNCrossChannelNormalizationGradientNode](mpscnncrosschannelnormalizationgradientnode.md)
-- [MPSCNNDropoutGradientNode](mpscnndropoutgradientnode.md)
-- [MPSCNNGroupNormalizationGradientNode](mpscnngroupnormalizationgradientnode.md)
-- [MPSCNNInstanceNormalizationGradientNode](mpscnninstancenormalizationgradientnode.md)
-- [MPSCNNLocalContrastNormalizationGradientNode](mpscnnlocalcontrastnormalizationgradientnode.md)
-- [MPSCNNLogSoftMaxGradientNode](mpscnnlogsoftmaxgradientnode.md)
-- [MPSCNNNeuronGradientNode](mpscnnneurongradientnode.md)
-- [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
-- [MPSCNNSoftMaxGradientNode](mpscnnsoftmaxgradientnode.md)
-- [MPSCNNSpatialNormalizationGradientNode](mpscnnspatialnormalizationgradientnode.md)
-- [MPSCNNUpsamplingBilinearGradientNode](mpscnnupsamplingbilineargradientnode.md)
-- [MPSCNNUpsamplingNearestGradientNode](mpscnnupsamplingnearestgradientnode.md)
-- [MPSNNArithmeticGradientNode](mpsnnarithmeticgradientnode.md)
-- [MPSNNConcatenationGradientNode](mpsnnconcatenationgradientnode.md)
-- [MPSNNGramMatrixCalculationGradientNode](mpsnngrammatrixcalculationgradientnode.md)
-- [MPSNNLossGradientNode](mpsnnlossgradientnode.md)
-- [MPSNNPadGradientNode](mpsnnpadgradientnode.md)
-- [MPSNNReductionSpatialMeanGradientNode](mpsnnreductionspatialmeangradientnode.md)
-- [MPSNNReshapeGradientNode](mpsnnreshapegradientnode.md)
+- [MPSCNNBatchNormalizationGradientNode](./mpscnnbatchnormalizationgradientnode.md)
+- [MPSCNNConvolutionGradientNode](./mpscnnconvolutiongradientnode.md)
+- [MPSCNNCrossChannelNormalizationGradientNode](./mpscnncrosschannelnormalizationgradientnode.md)
+- [MPSCNNDropoutGradientNode](./mpscnndropoutgradientnode.md)
+- [MPSCNNGroupNormalizationGradientNode](./mpscnngroupnormalizationgradientnode.md)
+- [MPSCNNInstanceNormalizationGradientNode](./mpscnninstancenormalizationgradientnode.md)
+- [MPSCNNLocalContrastNormalizationGradientNode](./mpscnnlocalcontrastnormalizationgradientnode.md)
+- [MPSCNNLogSoftMaxGradientNode](./mpscnnlogsoftmaxgradientnode.md)
+- [MPSCNNNeuronGradientNode](./mpscnnneurongradientnode.md)
+- [MPSCNNPoolingGradientNode](./mpscnnpoolinggradientnode.md)
+- [MPSCNNSoftMaxGradientNode](./mpscnnsoftmaxgradientnode.md)
+- [MPSCNNSpatialNormalizationGradientNode](./mpscnnspatialnormalizationgradientnode.md)
+- [MPSCNNUpsamplingBilinearGradientNode](./mpscnnupsamplingbilineargradientnode.md)
+- [MPSCNNUpsamplingNearestGradientNode](./mpscnnupsamplingnearestgradientnode.md)
+- [MPSNNArithmeticGradientNode](./mpsnnarithmeticgradientnode.md)
+- [MPSNNConcatenationGradientNode](./mpsnnconcatenationgradientnode.md)
+- [MPSNNGramMatrixCalculationGradientNode](./mpsnngrammatrixcalculationgradientnode.md)
+- [MPSNNLossGradientNode](./mpsnnlossgradientnode.md)
+- [MPSNNPadGradientNode](./mpsnnpadgradientnode.md)
+- [MPSNNReductionSpatialMeanGradientNode](./mpsnnreductionspatialmeangradientnode.md)
+- [MPSNNReshapeGradientNode](./mpsnnreshapegradientnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSNNFilterNode](mpsnnfilternode.md)
+### Filter Node Base Classes
+- [class MPSNNFilterNode](./mpsnnfilternode.md)
   A placeholder node denoting a neural network filter stage.
 
 

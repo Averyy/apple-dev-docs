@@ -1,25 +1,26 @@
 # CheckForWork
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks for events to handle.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CheckForWork(bool synchronous);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -27,9 +28,10 @@ Don’t override this method or call it from your own code. The dispatch source 
 
 ## See Also
 
-- [InterruptOccurred](iointerruptdispatchsource/interruptoccurred.md)
+### Declaring Actions
+- [InterruptOccurred](./interruptoccurred.md)
   Executes custom code when an interrupt occurs.
-- [IOInterruptDispatchSourcePayload](iointerruptdispatchsourcepayload.md)
+- [IOInterruptDispatchSourcePayload](../iointerruptdispatchsourcepayload.md)
   A private structure for an interrupt dispatch source.
 
 

@@ -1,7 +1,8 @@
 # AskCenter
 
 **Framework**: PermissionKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that manages permission requests you send to parents or guardians for approval.
 
@@ -27,32 +28,33 @@ Access the shared instance to send permission requests and register for response
 ## Topics
 
 ### Getting the shared instance
-- [static let shared: AskCenter](askcenter/shared.md)
+- [static let shared: AskCenter](./askcenter/shared.md)
   The shared instance you use to send permission requests and receive responses.
 ### Making permission requests
-- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: NSWindow) async throws](askcenter/ask(_:in:)-39vi7.md)
+- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: NSWindow) async throws](./askcenter/ask%28_,in%29-39vi7.md)
   Tells the system to request that the person send the communication permission question to the person’s parent or guardian.
-- [func ask(PermissionQuestion<CommunicationTopic>, in: NSWindow) async throws](askcenter/ask(_:in:)-3znb6.md)
+- [func ask(PermissionQuestion<CommunicationTopic>, in: NSWindow) async throws](./askcenter/ask%28_,in%29-3znb6.md)
   Tells the system to request that the person send the communication permission question to the person’s parent or guardian.
-- [func ask(PermissionQuestion<CommunicationTopic>, in: UIViewController) async throws](askcenter/ask(_:in:)-6xupo.md)
+- [func ask(PermissionQuestion<CommunicationTopic>, in: UIViewController) async throws](./askcenter/ask%28_,in%29-6xupo.md)
   Tells the system to request that a person send the communication permission question to the person’s parent or guardian.
-- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: UIViewController) async throws](askcenter/ask(_:in:)-8ks48.md)
+- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: UIViewController) async throws](./askcenter/ask%28_,in%29-8ks48.md)
   Tells the system to request that a person send the the significant app update permission question to their parent or guardian.
 ### Receiving responses
 - [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
-](askcenter/responses(for:).md)
+](./askcenter/responses%28for%29.md)
   Registers the topic type with the system and returns an asynchronous sequence of responses.
 ### Instance Methods
-- [func askSignificantChangePermission(for: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in: NSWindow) async throws -> PermissionResult](askcenter/asksignificantchangepermission(for:permissionflow:in:)-85gmn.md)
+- [func askSignificantChangePermission(for: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in: NSWindow) async throws -> PermissionResult](./askcenter/asksignificantchangepermission%28for,permissionflow,in%29-85gmn.md)
   Tells the system to request that the user send the significant app update permission question to the user’s parent/s and/or guardian/s using the specified permission flow. Throws an error if the system was unable to request the user to send the question.
-- [func askSignificantChangePermission(for: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in: UIViewController) async throws -> PermissionResult](askcenter/asksignificantchangepermission(for:permissionflow:in:)-nm9w.md)
+- [func askSignificantChangePermission(for: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in: UIViewController) async throws -> PermissionResult](./askcenter/asksignificantchangepermission%28for,permissionflow,in%29-nm9w.md)
   Requests that a child send the significant app update permission question to their parent or guardian using the specified permission flow.
 
 ## See Also
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+### Essentials
+- [Creating a communication experience](./creating-a-communication-experience.md)
   Request permission from a parent or guardian to modify a child’s communication rules.
-- [class PermissionQuestion](permissionquestion.md)
+- [class PermissionQuestion](./permissionquestion.md)
   A class that captures a permission question posed by a person.
 
 

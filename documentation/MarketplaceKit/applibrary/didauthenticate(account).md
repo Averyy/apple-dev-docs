@@ -1,7 +1,8 @@
 # didAuthenticate(account:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the system to reinstall an app after a required reuthorization completes.
 
@@ -18,19 +19,20 @@ final func didAuthenticate(account: String) async
 
 ## Mentions
 
-- [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
+- [Reauthenticating a person to manage apps](../reauthenticating-a-person-to-manage-apps.md)
 
 #### Discussion
 
-The marketplace or other web-distributed app calls this method after reauthenticating a person when the access token expires. For more information, see [`Reauthenticating a person to manage apps`](reauthenticating-a-person-to-manage-apps.md).
+The marketplace or other web-distributed app calls this method after reauthenticating a person when the access token expires. For more information, see [Reauthenticating a person to manage apps](../reauthenticating-a-person-to-manage-apps.md).
 
 ## Parameters
 
-- `account`: The account ID or username for the person. The marketplace server provides this value in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) installation request.
+- `account`: The account ID or username for the person. The marketplace server provides this value in the [`MarketplaceKitURIScheme`](../marketplacekiturischeme.md) installation request.
 
 ## See Also
 
-- [static let current: AppLibrary](applibrary/current.md)
+### Accessing app library and account authorization information
+- [static let current: AppLibrary](./current.md)
   A global accessor for the device’s app library instance.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOEthernetWakeOnMagicPacket](1645322-anonymous/kioethernetwakeonmagicpacket.md)
-- [kIOEthernetWakeOnPacketAddressMatch](1645322-anonymous/kioethernetwakeonpacketaddressmatch.md)
+- [kIOEthernetWakeOnMagicPacket](./api-1645322-anonymous/kioethernetwakeonmagicpacket.md)
+- [kIOEthernetWakeOnPacketAddressMatch](./api-1645322-anonymous/kioethernetwakeonpacketaddressmatch.md)
 
 
 ---

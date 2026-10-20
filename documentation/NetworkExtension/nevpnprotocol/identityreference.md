@@ -1,7 +1,8 @@
 # identityReference
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A persistent keychain reference to a keychain item containing the certificate and private key components of the tunneling protocol authentication credential.
 
@@ -19,19 +20,24 @@ A persistent keychain reference to a keychain item containing the certificate an
 var identityReference: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * identityReference;
+```
+
 #### Discussion
 
-The keychain item must have the [`kSecClassIdentity`](https://developer.apple.com/documentation/security/ksecclassidentity) class. In macOS, the system ignores this property for [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) objects. On iOS, the system ignores this property for [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) and [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) objects. In these cases where the system ingores this property, set the identity using the [`identityData`](nevpnprotocol/identitydata.md) property.
+The keychain item must have the [`kSecClassIdentity`](../../Security/ksecclassidentity.md) class. In macOS, the system ignores this property for [`NEVPNProtocolIPSec`](../nevpnprotocolipsec.md) objects. On iOS, the system ignores this property for [`NEVPNProtocolIPSec`](../nevpnprotocolipsec.md) and [`NEVPNProtocolIKEv2`](../nevpnprotocolikev2.md) objects. In these cases where the system ingores this property, set the identity using the [`identityData`](./identitydata.md) property.
 
 ## See Also
 
-- [var username: String?](nevpnprotocol/username.md)
+### Authenticating the user
+- [var username: String?](./username.md)
   The user name component of the tunneling protocol authentication credential.
-- [var passwordReference: Data?](nevpnprotocol/passwordreference.md)
+- [var passwordReference: Data?](./passwordreference.md)
   A persistent keychain reference to a keychain item containing the password component of the tunneling protocol authentication credential.
-- [var identityData: Data?](nevpnprotocol/identitydata.md)
+- [var identityData: Data?](./identitydata.md)
   The certificate and private key components of the tunneling protocol authentication credential, in PKCS12 format.
-- [var identityDataPassword: String?](nevpnprotocol/identitydatapassword.md)
+- [var identityDataPassword: String?](./identitydatapassword.md)
   The password for the PKCS12 tunneling protocol authentication credentials.
 
 

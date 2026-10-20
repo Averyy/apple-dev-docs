@@ -1,7 +1,8 @@
 # errSecCSResourceNotSupported
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Found an unsupported resource.
 
@@ -13,6 +14,10 @@ Found an unsupported resource.
 
 ```swift
 var errSecCSResourceNotSupported: OSStatus { get }
+```
+
+```c
+errSecCSResourceNotSupported
 ```
 
 #### Discussion

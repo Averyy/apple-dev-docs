@@ -1,7 +1,8 @@
 # AppClip.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe an App Clips resource.
 
@@ -10,7 +11,7 @@ The attributes that describe an App Clips resource.
 
 ## Declaration
 
-```swift
+```
 object AppClip.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppClip.Attributes
 
 ## See Also
 
-- [object AppClip.Relationships](appclip/relationships-data.dictionary.md)
+### Objects
+- [object AppClip.Relationships](./relationships-data.dictionary.md)
   The relationships of the App Clips resource you included in the request and those on which you can operate.
 
 

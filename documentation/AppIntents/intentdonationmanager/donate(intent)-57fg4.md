@@ -1,7 +1,8 @@
 # donate(intent:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Donates the specified app intent to the system synchronously.
 
@@ -11,7 +12,7 @@ Donates the specified app intent to the system synchronously.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -35,11 +36,12 @@ When someone completes an action in your app, call this method to donate a match
 
 ## See Also
 
-- [func donate(intent: some AppIntent) async throws -> IntentDonationIdentifier](intentdonationmanager/donate(intent:)-hly2.md)
+### Donating intents to the system
+- [func donate(intent: some AppIntent) async throws -> IntentDonationIdentifier](./donate%28intent%29-hly2.md)
   Donates the specified app intent to the system asynchronously.
-- [func donate(intent: some AppIntent, result: some IntentResult) async throws -> IntentDonationIdentifier](intentdonationmanager/donate(intent:result:)-1ltmi.md)
+- [func donate(intent: some AppIntent, result: some IntentResult) async throws -> IntentDonationIdentifier](./donate%28intent,result%29-1ltmi.md)
   Donates the specified app intent and result to the system asynchronously.
-- [func donate(intent: some AppIntent, result: some IntentResult) -> IntentDonationIdentifier](intentdonationmanager/donate(intent:result:)-7ztce.md)
+- [func donate(intent: some AppIntent, result: some IntentResult) -> IntentDonationIdentifier](./donate%28intent,result%29-7ztce.md)
   Donates the specified app intent and result to the system synchronously.
 
 

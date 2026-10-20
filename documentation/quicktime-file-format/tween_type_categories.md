@@ -1,6 +1,7 @@
 # Tween type categories
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 #### Overview
 
@@ -15,10 +16,11 @@ Each of the tween types supported by QuickTime belongs to one of these categorie
 
 ## See Also
 
-- [Tween sample description](tween_sample_description.md)
+### Storing tween media
+- [Tween sample description](./tween_sample_description.md)
   An atom that contains information for converting from media time to sample number to sample location for tweens.
-- [Tween sample data](tween_sample_data.md)
-- [Tween QT atom container](tween_qt_atom_container.md)
+- [Tween sample data](./tween_sample_data.md)
+- [Tween QT atom container](./tween_qt_atom_container.md)
   Specify the characteristics of a tween with atoms in a tween QT atom container.
 
 

@@ -1,7 +1,8 @@
 # getPendingDatasetRequest(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getPendingDatasetRequest(completion: @escaping @Sendable (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func pendingDatasetRequest() async throws -> MTRThreadBorderRouterManagementClusterDatasetResponseParams
+```
+
+```objc
+- (void) getPendingDatasetRequestWithCompletion:(void (^)(MTRThreadBorderRouterManagementClusterDatasetResponseParams *data, NSError *error)) completion;
 ```
 
 

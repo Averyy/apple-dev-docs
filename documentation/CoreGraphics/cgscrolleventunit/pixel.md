@@ -1,13 +1,14 @@
 # CGScrollEventUnit.pixel
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the unit of measurement is pixels.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ Specifies that the unit of measurement is pixels.
 case pixel
 ```
 
+```c
+kCGScrollEventUnitPixel
+```
+
 ## See Also
 
-- [CGScrollEventUnit.line](cgscrolleventunit/line.md)
+### Constants
+- [CGScrollEventUnit.line](./line.md)
   Specifies that the unit of measurement is lines.
 
 

@@ -1,7 +1,8 @@
 # evaluate(with:substitutionVariables:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies after substituting in the values from a specified variables dictionary.
 
@@ -20,13 +21,17 @@ Returns a Boolean value that indicates whether the specified object matches the 
 func evaluate(with object: Any?, substitutionVariables bindings: [String : Any]?) -> Bool
 ```
 
+```objc
+- (BOOL) evaluateWithObject:(id) object substitutionVariables:(NSDictionary<NSString *,id> *) bindings;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `object` matches the conditions specified by the predicate after substituting in the values in `bindings` for any replacement tokens, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `object` matches the conditions specified by the predicate after substituting in the values in `bindings` for any replacement tokens, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method returns the same result as the two step process of first invoking [`withSubstitutionVariables(_:)`](nspredicate/withsubstitutionvariables(_:).md) on the predicate and then invoking [`evaluate(with:)`](nspredicate/evaluate(with:).md) on the returned value. This method is optimized for situations which require repeatedly evaluating a predicate with substitution variables with different variable substitutions.
+This method returns the same result as the two step process of first invoking [`withSubstitutionVariables(_:)`](./withsubstitutionvariables%28_%29.md) on the predicate and then invoking [`evaluate(with:)`](./evaluate%28with%29.md) on the returned value. This method is optimized for situations which require repeatedly evaluating a predicate with substitution variables with different variable substitutions.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ This method returns the same result as the two step process of first invoking [`
 
 ## See Also
 
-- [func evaluate(with: Any?) -> Bool](nspredicate/evaluate(with:).md)
+### Evaluating a Predicate
+- [func evaluate(with: Any?) -> Bool](./evaluate%28with%29.md)
   Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies.
-- [func allowEvaluation()](nspredicate/allowevaluation.md)
+- [func allowEvaluation()](./allowevaluation%28%29.md)
   Forces a securely decoded predicate to allow evaluation.
 
 

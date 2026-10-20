@@ -1,7 +1,8 @@
 # MPSStateBatchSynchronize(_:_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes any copy of the specified state batch from the device’s caches, and, if needed, invalidates any CPU caches.
 
@@ -17,6 +18,10 @@ Removes any copy of the specified state batch from the device’s caches, and, i
 
 ```swift
 func MPSStateBatchSynchronize(_ batch: [MPSState], _ cmdBuf: any MTLCommandBuffer)
+```
+
+```c
+void MPSStateBatchSynchronize(MPSStateBatch *batch, id<MTLCommandBuffer>cmdBuf);
 ```
 
 

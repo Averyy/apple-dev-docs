@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,108 +21,109 @@ struct ParticleEmitter
 ## Topics
 
 ### Structures
-- [ParticleEmitterComponent.ParticleEmitter.ImageSequence](particleemittercomponent/particleemitter/imagesequence-swift.struct.md)
+- [ParticleEmitterComponent.ParticleEmitter.ImageSequence](./particleemitter/imagesequence-swift.struct.md)
   Structure used to define properties of the sprite sheet, used by imageSequence.
 ### Initializers
-- [init()](particleemittercomponent/particleemitter/init.md)
+- [init()](./particleemitter/init%28%29.md)
 ### Instance Properties
-- [var acceleration: SIMD3<Float>](particleemittercomponent/particleemitter/acceleration.md)
+- [var acceleration: SIMD3<Float>](./particleemitter/acceleration.md)
   The constant acceleration vector, in meters per second squared, applied to all particles in the system.
-- [var angle: Float](particleemittercomponent/particleemitter/angle.md)
+- [var angle: Float](./particleemitter/angle.md)
   The rotation angle, in radians, of newly spawned particles. Defaults to 0.
-- [var angleVariation: Float](particleemittercomponent/particleemitter/anglevariation.md)
+- [var angleVariation: Float](./particleemitter/anglevariation.md)
   Defines a plus/minus range (in radians) from which a value is randomly selected to offset `angle`.
-- [var angularSpeed: Float](particleemittercomponent/particleemitter/angularspeed.md)
+- [var angularSpeed: Float](./particleemitter/angularspeed.md)
   The initial spin rate, in radians per second, of newly spawned particles. Defaults to 0.
-- [var angularSpeedVariation: Float](particleemittercomponent/particleemitter/angularspeedvariation.md)
+- [var angularSpeedVariation: Float](./particleemitter/angularspeedvariation.md)
   Defines a plus/minus range (in radians per second) from which a value is randomly selected to offset `angularSpeed`.
-- [var attractionCenter: SIMD3<Float>](particleemittercomponent/particleemitter/attractioncenter.md)
+- [var attractionCenter: SIMD3<Float>](./particleemitter/attractioncenter.md)
   The spot that the particles are attracted to. In local space. Defaults to (1, 1, 0).
-- [var attractionStrength: Float](particleemittercomponent/particleemitter/attractionstrength.md)
+- [var attractionStrength: Float](./particleemitter/attractionstrength.md)
   The particles are attracted to the `attractionCenter` by this amount. Defaults to 0.
-- [var billboardMode: ParticleEmitterComponent.ParticleEmitter.BillboardMode](particleemittercomponent/particleemitter/billboardmode-swift.property.md)
+- [var billboardMode: ParticleEmitterComponent.ParticleEmitter.BillboardMode](./particleemitter/billboardmode-swift.property.md)
   The mode defining whether and how particles orient towards the camera. Defaults to `billboardYAligned`.
-- [var birthRate: Float](particleemittercomponent/particleemitter/birthrate.md)
+- [var birthRate: Float](./particleemitter/birthrate.md)
   The number of particles emitted over the emission duration. Defaults to 100.
-- [var birthRateVariation: Float](particleemittercomponent/particleemitter/birthratevariation.md)
+- [var birthRateVariation: Float](./particleemitter/birthratevariation.md)
   Defines a plus/minus range from which a value is randomly selected to offset `birthRate`.
-- [var blendMode: ParticleEmitterComponent.ParticleEmitter.BlendMode](particleemittercomponent/particleemitter/blendmode-swift.property.md)
+- [var blendMode: ParticleEmitterComponent.ParticleEmitter.BlendMode](./particleemitter/blendmode-swift.property.md)
   How overlapping particles are composited together. Defaults to `alpha`.
-- [var color: ParticleEmitterComponent.ParticleEmitter.ParticleColor](particleemittercomponent/particleemitter/color-swift.property.md)
+- [var color: ParticleEmitterComponent.ParticleEmitter.ParticleColor](./particleemitter/color-swift.property.md)
   The color of particles.
-- [var colorEvolutionPower: Float](particleemittercomponent/particleemitter/colorevolutionpower.md)
+- [var colorEvolutionPower: Float](./particleemitter/colorevolutionpower.md)
   How quickly the color evolves from its start to its end color — a value of 1 is a linear transition, values below 1 transition quicker, values over 1 transition slower.
-- [var dampingFactor: Float](particleemittercomponent/particleemitter/dampingfactor.md)
+- [var dampingFactor: Float](./particleemitter/dampingfactor.md)
   A factor that slows particles relative to their velocity. Defaults to 0.
-- [var image: TextureResource?](particleemittercomponent/particleemitter/image.md)
+- [var image: TextureResource?](./particleemitter/image.md)
   The image that each particle will use (requires pre-multiplied RGB values). Defaults to a white circular texture.
-- [var imageSequence: ParticleEmitterComponent.ParticleEmitter.ImageSequence?](particleemittercomponent/particleemitter/imagesequence-swift.property.md)
+- [var imageSequence: ParticleEmitterComponent.ParticleEmitter.ImageSequence?](./particleemitter/imagesequence-swift.property.md)
   Determines if the particle image is a sprite sheet (used for animation).
-- [var isLightingEnabled: Bool](particleemittercomponent/particleemitter/islightingenabled.md)
+- [var isLightingEnabled: Bool](./particleemitter/islightingenabled.md)
   Determines if particles are affected by scene lighting.
-- [var lifeSpan: Double](particleemittercomponent/particleemitter/lifespan.md)
+- [var lifeSpan: Double](./particleemitter/lifespan.md)
   The duration, in seconds, for which each particle is rendered before being removed from the scene. Defaults to 1.
-- [var lifeSpanVariation: Double](particleemittercomponent/particleemitter/lifespanvariation.md)
+- [var lifeSpanVariation: Double](./particleemitter/lifespanvariation.md)
   Defines a plus/minus range (in seconds) from which a value is randomly selected to offset `lifeSpan`. Defaults to 0.2.
-- [var mass: Float](particleemittercomponent/particleemitter/mass.md)
+- [var mass: Float](./particleemitter/mass.md)
   The mass, in grams, of each particle in the system. Defaults to 1.
-- [var massVariation: Float](particleemittercomponent/particleemitter/massvariation.md)
+- [var massVariation: Float](./particleemitter/massvariation.md)
   Defines a plus/minus range (in grams) from which a value is randomly selected to offset `mass`.
-- [var noiseAnimationSpeed: Float](particleemittercomponent/particleemitter/noiseanimationspeed.md)
+- [var noiseAnimationSpeed: Float](./particleemitter/noiseanimationspeed.md)
   Determines how fast the noise field changes over time. Defaults to 0.
-- [var noiseScale: Float](particleemittercomponent/particleemitter/noisescale.md)
+- [var noiseScale: Float](./particleemitter/noisescale.md)
   Scale of the noise (turbulence) patterns. Defaults to 1.
-- [var noiseStrength: Float](particleemittercomponent/particleemitter/noisestrength.md)
+- [var noiseStrength: Float](./particleemitter/noisestrength.md)
   Strength of the noise (turbulence) fields affecting particle motion. Defaults to 0.
-- [var opacityCurve: ParticleEmitterComponent.ParticleEmitter.OpacityCurve](particleemittercomponent/particleemitter/opacitycurve-swift.property.md)
+- [var opacityCurve: ParticleEmitterComponent.ParticleEmitter.OpacityCurve](./particleemitter/opacitycurve-swift.property.md)
   The curve of opacity change over the lifetime of the particle. Defaults to `quickFadeInOut`.
-- [var size: Float](particleemittercomponent/particleemitter/size.md)
+- [var size: Float](./particleemitter/size.md)
   The rendered size, in units of the scene’s world coordinate space, of the particle image. Value is the half-extent of the particle’s quad. Defaults to 0.02.
-- [var sizeMultiplierAtEndOfLifespan: Float](particleemittercomponent/particleemitter/sizemultiplieratendoflifespan.md)
+- [var sizeMultiplierAtEndOfLifespan: Float](./particleemitter/sizemultiplieratendoflifespan.md)
   At the end of the particle lifespan, the particle’s size will be it’s initial size times this multiplier. Defaults to 0.1.
-- [var sizeMultiplierAtEndOfLifespanPower: Float](particleemittercomponent/particleemitter/sizemultiplieratendoflifespanpower.md)
+- [var sizeMultiplierAtEndOfLifespanPower: Float](./particleemitter/sizemultiplieratendoflifespanpower.md)
   How quickly or slowly particle size changes over its lifetime — a value of 1 is linear, values below 1 transition quicker, values above 1 transition slower.
-- [var sizeVariation: Float](particleemittercomponent/particleemitter/sizevariation.md)
+- [var sizeVariation: Float](./particleemitter/sizevariation.md)
   Defines a plus/minus range from which a value is randomly selected to offset `size`.
-- [var sortOrder: ParticleEmitterComponent.ParticleEmitter.SortOrder](particleemittercomponent/particleemitter/sortorder-swift.property.md)
+- [var sortOrder: ParticleEmitterComponent.ParticleEmitter.SortOrder](./particleemitter/sortorder-swift.property.md)
   How overlapping particles are sorted before rendering. Defaults to `increasingDepth`.
-- [var spreadingAngle: Float](particleemittercomponent/particleemitter/spreadingangle.md)
+- [var spreadingAngle: Float](./particleemitter/spreadingangle.md)
   The range, in radians, of randomized initial particle directions as radians describing the size of the spreading cone. Defaults to 0.
-- [var stretchFactor: Float](particleemittercomponent/particleemitter/stretchfactor.md)
+- [var stretchFactor: Float](./particleemitter/stretchfactor.md)
   How much a particle’s shape is stretched along its velocity direction (Billboard particles only).
-- [var vortexDirection: SIMD3<Float>](particleemittercomponent/particleemitter/vortexdirection.md)
+- [var vortexDirection: SIMD3<Float>](./particleemitter/vortexdirection.md)
   Direction vector of the vortex axis. Defaults to (0, 1, 0).
-- [var vortexStrength: Float](particleemittercomponent/particleemitter/vortexstrength.md)
+- [var vortexStrength: Float](./particleemitter/vortexstrength.md)
   Strength of the vortex forces affecting particle motion. Defaults to 0.
 ### Type Aliases
-- [ParticleEmitterComponent.ParticleEmitter.Color](particleemittercomponent/particleemitter/color-swift.typealias.md)
+- [ParticleEmitterComponent.ParticleEmitter.Color](./particleemitter/color-swift.typealias.md)
 ### Enumerations
-- [ParticleEmitterComponent.ParticleEmitter.BillboardMode](particleemittercomponent/particleemitter/billboardmode-swift.enum.md)
+- [ParticleEmitterComponent.ParticleEmitter.BillboardMode](./particleemitter/billboardmode-swift.enum.md)
   Options for specifying the axis about which the particle will be oriented, used by the `billboardMode` property.
-- [ParticleEmitterComponent.ParticleEmitter.BlendMode](particleemittercomponent/particleemitter/blendmode-swift.enum.md)
+- [ParticleEmitterComponent.ParticleEmitter.BlendMode](./particleemitter/blendmode-swift.enum.md)
   Options for combining source and destination pixel colors when compositing particles during rendering, used by the blendMode property.
-- [ParticleEmitterComponent.ParticleEmitter.OpacityCurve](particleemittercomponent/particleemitter/opacitycurve-swift.enum.md)
+- [ParticleEmitterComponent.ParticleEmitter.OpacityCurve](./particleemitter/opacitycurve-swift.enum.md)
   Options for the curve of opacity change over the lifetime of the particle, used by the opacityOverLife property.
-- [ParticleEmitterComponent.ParticleEmitter.ParticleColor](particleemittercomponent/particleemitter/particlecolor.md)
+- [ParticleEmitterComponent.ParticleEmitter.ParticleColor](./particleemitter/particlecolor.md)
   Options for specifying the behavior of the color of the particles.
-- [ParticleEmitterComponent.ParticleEmitter.SortOrder](particleemittercomponent/particleemitter/sortorder-swift.enum.md)
+- [ParticleEmitterComponent.ParticleEmitter.SortOrder](./particleemitter/sortorder-swift.enum.md)
   Options for the rendering order of particles.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [Simulating particles in your visionOS app](simulating-particles-in-your-visionos-app.md)
+### Particle simulation
+- [Simulating particles in your visionOS app](../simulating-particles-in-your-visionos-app.md)
   Add a range of visual effects to a RealityKit view by attaching a particle emitter component to an entity.
-- [struct ParticleEmitterComponent](particleemittercomponent.md)
+- [struct ParticleEmitterComponent](../particleemittercomponent.md)
   A component that emits particles.
-- [ParticleEmitterComponent.Presets](particleemittercomponent/presets.md)
+- [ParticleEmitterComponent.Presets](./presets.md)
   Initial configurations that can be set when starting a new simulation.
 
 

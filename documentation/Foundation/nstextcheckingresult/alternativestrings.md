@@ -1,7 +1,8 @@
 # alternativeStrings
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 7.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var alternativeStrings: [String]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<NSString *> * alternativeStrings;
 ```
 
 

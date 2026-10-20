@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable ID that can be used to identify this publishable service.
 
@@ -22,9 +23,10 @@ The ID is stable for a given unique service name.
 
 ## See Also
 
-- [WAPublishableService.ID](wapublishableservice/id-swift.typealias.md)
+### Checking a service name and ID
+- [WAPublishableService.ID](./id-swift.typealias.md)
   The type of value that uniquely identifies the service.
-- [let name: String](wapublishableservice/name.md)
+- [let name: String](./name.md)
   The full name of the service, as sent over the air.
 
 

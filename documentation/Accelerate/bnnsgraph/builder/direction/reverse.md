@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Direction.reverse
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reverse direction.
 

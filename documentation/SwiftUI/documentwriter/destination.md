@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the destination location to write to.
@@ -25,9 +26,10 @@ SwiftUI provides the document’s file URL as the destination.
 
 ## See Also
 
-- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(snapshot:to:previous:progress:).md)
+### Writing a document
+- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](./write%28snapshot,to,previous,progress%29.md)
   Writes the document content to disk.
-- [associatedtype Snapshot](documentwriter/snapshot.md)
+- [associatedtype Snapshot](./snapshot.md)
   The type representing the document’s content to write.
 
 

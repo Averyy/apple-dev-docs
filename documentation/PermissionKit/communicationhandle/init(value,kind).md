@@ -1,7 +1,8 @@
 # init(value:kind:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a communication handle.
 

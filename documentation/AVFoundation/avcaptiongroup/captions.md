@@ -1,7 +1,8 @@
 # captions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The captions associated with the caption group.
 
@@ -17,9 +18,14 @@ The captions associated with the caption group.
 var captions: [AVCaption] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaption *> * captions;
+```
+
 ## See Also
 
-- [var timeRange: CMTimeRange](avcaptiongroup/timerange.md)
+### Inspecting the caption group
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the caption group.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Blocks the current thread until the GPU finishes executing the input/output command buffer and all of its completion handlers.
@@ -18,6 +19,10 @@ Blocks the current thread until the GPU finishes executing the input/output comm
 
 ```swift
 func waitUntilCompleted()
+```
+
+```objc
+- (void) waitUntilCompleted;
 ```
 
 

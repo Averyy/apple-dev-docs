@@ -1,7 +1,8 @@
 # errSecInsufficientClientID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The client ID is incorrect.
 
@@ -18,6 +19,10 @@ The client ID is incorrect.
 
 ```swift
 var errSecInsufficientClientID: OSStatus { get }
+```
+
+```c
+errSecInsufficientClientID
 ```
 
 

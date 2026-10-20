@@ -2,6 +2,7 @@
 
 **Framework**: Quartz  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns an image.
@@ -15,6 +16,10 @@ Returns an image.
 var image: CGImage! { get }
 ```
 
+```objc
+@property (atomic, readonly) CGImageRef image;
+```
+
 #### Return Value
 
 An image.
@@ -25,7 +30,8 @@ Your data source must implement this method.
 
 ## See Also
 
-- [func thumbnail(withMaximumSize: NSSize) -> Unmanaged<CGImage>!](ikimageeditpaneldatasource/thumbnail(withmaximumsize:).md)
+### Getting Images From the Data Source
+- [func thumbnail(withMaximumSize: NSSize) -> Unmanaged<CGImage>!](./thumbnail%28withmaximumsize%29.md)
   Returns a thumbnail image whose size is no larger than the specified size.
 
 

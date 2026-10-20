@@ -1,14 +1,15 @@
 # bufattr_markexpeditedmeta
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 void bufattr_markexpeditedmeta(bufattr_t bap);
 ```
 

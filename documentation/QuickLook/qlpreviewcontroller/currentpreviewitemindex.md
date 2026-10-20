@@ -1,7 +1,8 @@
 # currentPreviewItemIndex
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index within the preview item navigation list of the item displaying in the Quick Look preview controller.
 
@@ -17,19 +18,24 @@ The index within the preview item navigation list of the item displaying in the 
 var currentPreviewItemIndex: Int { get set }
 ```
 
+```objc
+@property NSInteger currentPreviewItemIndex;
+```
+
 #### Discussion
 
 You can change which item the preview controller displays, among those in a navigation list, by setting this property’s value. If the preview controller isn’t displaying an item, this property’s value is `NSNotFound`.
 
 ## See Also
 
-- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreview(_:).md)
+### Managing item previews
+- [class func canPreview(any QLPreviewItem) -> Bool](./canpreview%28_%29.md)
   Returns a Boolean value that indicates whether the preview controller can display an item.
-- [var currentPreviewItem: (any QLPreviewItem)?](qlpreviewcontroller/currentpreviewitem.md)
+- [var currentPreviewItem: (any QLPreviewItem)?](./currentpreviewitem.md)
   The item displaying in the Quick Look preview controller.
-- [func refreshCurrentPreviewItem()](qlpreviewcontroller/refreshcurrentpreviewitem.md)
+- [func refreshCurrentPreviewItem()](./refreshcurrentpreviewitem%28%29.md)
   Asks the Quick Look preview controller to recompute the display of the current preview item.
-- [func reloadData()](qlpreviewcontroller/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Asks the preview controller to reload its data from its data source.
 
 

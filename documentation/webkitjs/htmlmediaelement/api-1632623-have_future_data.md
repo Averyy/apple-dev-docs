@@ -11,7 +11,7 @@ Enough data is available to begin playback.
 
 ## Declaration
 
-```swift
+```
 const unsigned short HAVE_FUTURE_DATA;
 ```
 

@@ -1,7 +1,8 @@
 # AnyHashable
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased hashable value.
 
@@ -47,42 +48,43 @@ Note that `AnyHashable` does not guarantee that it preserves the hash encoding o
 ## Topics
 
 ### Initializers
-- [init<H>(H)](anyhashable/init(_:).md)
+- [init<H>(H)](./anyhashable/init%28_%29.md)
   Creates a type-erased hashable value that wraps the given instance.
 ### Instance Properties
-- [var base: Any](anyhashable/base.md)
+- [var base: Any](./anyhashable/base.md)
   The value wrapped by this instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](anyhashable/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](anyhashable/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](anyhashable/customstringconvertible-implementations.md)
-- [Equatable Implementations](anyhashable/equatable-implementations.md)
-- [Hashable Implementations](anyhashable/hashable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./anyhashable/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./anyhashable/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./anyhashable/customstringconvertible-implementations.md)
+- [Equatable Implementations](./anyhashable/equatable-implementations.md)
+- [Hashable Implementations](./anyhashable/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
 
 ## See Also
 
-- [struct AnySequence](anysequence.md)
+### Type-Erasing Wrappers
+- [struct AnySequence](./anysequence.md)
   A type-erased sequence.
-- [struct AnyCollection](anycollection.md)
+- [struct AnyCollection](./anycollection.md)
   A type-erased wrapper over any collection with indices that support forward traversal.
-- [struct AnyBidirectionalCollection](anybidirectionalcollection.md)
+- [struct AnyBidirectionalCollection](./anybidirectionalcollection.md)
   A type-erased wrapper over any collection with indices that support bidirectional traversal.
-- [struct AnyRandomAccessCollection](anyrandomaccesscollection.md)
+- [struct AnyRandomAccessCollection](./anyrandomaccesscollection.md)
   A type-erased wrapper over any collection with indices that support random access traversal.
-- [struct AnyIterator](anyiterator.md)
+- [struct AnyIterator](./anyiterator.md)
   A type-erased iterator of `Element`.
-- [struct AnyIndex](anyindex.md)
+- [struct AnyIndex](./anyindex.md)
   A wrapper over an underlying index that hides the specific underlying type.
 
 

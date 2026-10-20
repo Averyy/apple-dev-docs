@@ -1,7 +1,8 @@
 # prepareForDisplay(completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes an image asynchronously and provides a new one for display in views and animations.
 
@@ -15,14 +16,22 @@ Decodes an image asynchronously and provides a new one for display in views and 
 ## Declaration
 
 ```swift
+func prepareForDisplay(completionHandler: @escaping @Sendable (UIImage?) -> Void)
+```
+
+```swift
 func byPreparingForDisplay() async -> UIImage?
+```
+
+```objc
+- (void) prepareForDisplayWithCompletionHandler:(void (^)(UIImage *)) completionHandler;
 ```
 
 #### Discussion
 
-The Animation Hitches [`instrument`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/) measures system performance for multiple stages of preparing views for display. It can show you the exact cause of an animation hitch, which appears to the user as an interruption or jump in an animation that should be smooth. If Animation Hitches indicates that decoding an image takes too long and causes hitches, use this method to move the decoding work to the background.
+The Animation Hitches [instrument](https://help.apple.com/instruments/mac/current/) measures system performance for multiple stages of preparing views for display. It can show you the exact cause of an animation hitch, which appears to the user as an interruption or jump in an animation that should be smooth. If Animation Hitches indicates that decoding an image takes too long and causes hitches, use this method to move the decoding work to the background.
 
-This method creates a new image object and passes it to the completion handler. The new image is ready for efficient display by an image view. Assign the image this method creates to the [`image`](uilistcontentconfiguration-swift.struct/image.md) property of an image view. If [`UIImageView`](uiimageview.md) can render the image without decoding, this method passes the completion handler a valid image without further processing. If the system can’t decode the image, such as an image created from a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), the method passes `nil` to the completion handler`.`
+This method creates a new image object and passes it to the completion handler. The new image is ready for efficient display by an image view. Assign the image this method creates to the [`image`](../uilistcontentconfiguration-swift.struct/image.md) property of an image view. If [`UIImageView`](../uiimageview.md) can render the image without decoding, this method passes the completion handler a valid image without further processing. If the system can’t decode the image, such as an image created from a [`CIImage`](../../CoreImage/ciimage.md), the method passes `nil` to the completion handler`.`
 
 UIKit doesn’t associate the prepared image with the original, or with any related variants from an asset catalog. If your app environment dynamically changes display traits, listen for changes in the trait environment and prepare new images when the environment changes.
 
@@ -44,15 +53,20 @@ func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPat
 
 ## Parameters
 
-- `completionHandler`: The closure to call when the function finishes preparing the image. This completion handler takes one parameter: - **`image`**: A new version of the image object for display. If the system can’t decode the image, the parameter value is `nil.`
+- `completionHandler`: The closure to call when the function finishes preparing the image.
+
+  This completion handler takes one parameter:
+
+  - **`image`**: A new version of the image object for display. If the system can’t decode the image, the parameter value is `nil.`
 
 ## See Also
 
-- [func preparingForDisplay() -> UIImage?](uiimage/preparingfordisplay.md)
+### Loading images for display
+- [func preparingForDisplay() -> UIImage?](./preparingfordisplay%28%29.md)
   Decodes an image synchronously and provides a new one for display in views and animations.
-- [func preparingThumbnail(of: CGSize) -> UIImage?](uiimage/preparingthumbnail(of:).md)
+- [func preparingThumbnail(of: CGSize) -> UIImage?](./preparingthumbnail%28of%29.md)
   Returns a new thumbnail image at the specified size.
-- [func prepareThumbnail(of: CGSize, completionHandler: (UIImage?) -> Void)](uiimage/preparethumbnail(of:completionhandler:).md)
+- [func prepareThumbnail(of: CGSize, completionHandler: (UIImage?) -> Void)](./preparethumbnail%28of,completionhandler%29.md)
   Creates a thumbnail image at the specified size asynchronously on a background thread.
 
 

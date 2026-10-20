@@ -1,18 +1,19 @@
 # drawsAfterEndLocation
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The fill should extend beyond the ending location. The color that extends beyond the ending point is the solid color defined by the [`CGGradient`](cggradient.md) object to be at location 1.
+The fill should extend beyond the ending location. The color that extends beyond the ending point is the solid color defined by the [`CGGradient`](../cggradient.md) object to be at location 1.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,15 @@ The fill should extend beyond the ending location. The color that extends beyond
 static var drawsAfterEndLocation: CGGradientDrawingOptions { get }
 ```
 
+```c
+kCGGradientDrawsAfterEndLocation
+```
+
 ## See Also
 
-- [static var drawsBeforeStartLocation: CGGradientDrawingOptions](cggradientdrawingoptions/drawsbeforestartlocation.md)
-  The fill should extend beyond the starting location. The color that extends beyond the starting point is the solid color defined by the [`CGGradient`](cggradient.md) object to be at location 0.
+### Constants
+- [static var drawsBeforeStartLocation: CGGradientDrawingOptions](./drawsbeforestartlocation.md)
+  The fill should extend beyond the starting location. The color that extends beyond the starting point is the solid color defined by the [`CGGradient`](../cggradient.md) object to be at location 0.
 
 
 ---

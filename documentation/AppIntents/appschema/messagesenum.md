@@ -1,7 +1,8 @@
 # AppSchema.MessagesEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the messages domain.
 
@@ -21,35 +22,36 @@ protocol MessagesEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var conversationAttribute: some AppSchemaEnum](appschema/messagesenum/conversationattribute.md)
+- [var conversationAttribute: some AppSchemaEnum](./messagesenum/conversationattribute.md)
   An enum schema for a conversation attribute parameter.
-- [var customReaction: some AppSchemaEnum](appschema/messagesenum/customreaction.md)
+- [var customReaction: some AppSchemaEnum](./messagesenum/customreaction.md)
   An enum schema for a custom reaction parameter.
-- [var messageAttribute: some AppSchemaEnum](appschema/messagesenum/messageattribute.md)
+- [var messageAttribute: some AppSchemaEnum](./messagesenum/messageattribute.md)
   An enum schema for a message attribute parameter.
-- [var messageEffect: some AppSchemaEnum](appschema/messagesenum/messageeffect.md)
+- [var messageEffect: some AppSchemaEnum](./messagesenum/messageeffect.md)
   An enum schema for a message effect parameter.
-- [var messageType: some AppSchemaEnum](appschema/messagesenum/messagetype.md)
+- [var messageType: some AppSchemaEnum](./messagesenum/messagetype.md)
   An enum schema for a message type parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var conversationAttribute: some AppSchemaEnum](appschema/messagesenum/conversationattribute.md)
+### Types for static parameters
+- [var conversationAttribute: some AppSchemaEnum](./messagesenum/conversationattribute.md)
   An enum schema for a conversation attribute parameter.
-- [var customReaction: some AppSchemaEnum](appschema/messagesenum/customreaction.md)
+- [var customReaction: some AppSchemaEnum](./messagesenum/customreaction.md)
   An enum schema for a custom reaction parameter.
-- [var messageAttribute: some AppSchemaEnum](appschema/messagesenum/messageattribute.md)
+- [var messageAttribute: some AppSchemaEnum](./messagesenum/messageattribute.md)
   An enum schema for a message attribute parameter.
-- [var messageEffect: some AppSchemaEnum](appschema/messagesenum/messageeffect.md)
+- [var messageEffect: some AppSchemaEnum](./messagesenum/messageeffect.md)
   An enum schema for a message effect parameter.
-- [var messageType: some AppSchemaEnum](appschema/messagesenum/messagetype.md)
+- [var messageType: some AppSchemaEnum](./messagesenum/messagetype.md)
   An enum schema for a message type parameter.
 
 

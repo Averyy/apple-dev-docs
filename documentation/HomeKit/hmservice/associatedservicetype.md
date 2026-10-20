@@ -1,7 +1,8 @@
 # associatedServiceType
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the service associated with an outlet or a switch.
 
@@ -19,17 +20,22 @@ The type of the service associated with an outlet or a switch.
 var associatedServiceType: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * associatedServiceType;
+```
+
 #### Discussion
 
 Because different things can be plugged into outlets or controlled by switches, there is a tight association between a switch or outlet service and another service that it controls—for example, a lamp plugged into an outlet associates a lightbulb service with the outlet, even if the lamp itself is not a supported HomeKit accessory.
 
-The associated service can be any service defined by the HomeKit Accessory Profile that supports [`HMCharacteristicTypePowerState`](hmcharacteristictypepowerstate.md), other than [`HMServiceTypeOutlet`](hmservicetypeoutlet.md) or [`HMServiceTypeSwitch`](hmservicetypeswitch.md).
+The associated service can be any service defined by the HomeKit Accessory Profile that supports [`HMCharacteristicTypePowerState`](../hmcharacteristictypepowerstate.md), other than [`HMServiceTypeOutlet`](../hmservicetypeoutlet.md) or [`HMServiceTypeSwitch`](../hmservicetypeswitch.md).
 
-See [`Accessory Service Types`](accessory-service-types.md) for a list of service types.
+See [Accessory Service Types](../accessory-service-types.md) for a list of service types.
 
 ## See Also
 
-- [func updateAssociatedServiceType(String?, completionHandler: ((any Error)?) -> Void)](hmservice/updateassociatedservicetype(_:completionhandler:).md)
+### Associating a secondary service
+- [func updateAssociatedServiceType(String?, completionHandler: ((any Error)?) -> Void)](./updateassociatedservicetype%28_,completionhandler%29.md)
   Associates the service type of the plugged-in device with a switch or an outlet service.
 
 

@@ -1,22 +1,27 @@
 # kNumberOfResponseFrequencies
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of frequency response bin structures for the `AudioUnitProperty_FrequencyResponse` property.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kNumberOfResponseFrequencies: Int { get }
+```
+
+```c
+kNumberOfResponseFrequencies
 ```
 
 

@@ -1,7 +1,8 @@
 # NSView.BackgroundStyle.raised
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that makes the background appear higher than the content drawn on it.
 
@@ -14,21 +15,26 @@ A style that makes the background appear higher than the content drawn on it.
 case raised
 ```
 
+```c
+NSBackgroundStyleRaised
+```
+
 #### Discussion
 
 You might need to inset the cell’s content to achieve this effect.
 
 ## See Also
 
-- [NSView.BackgroundStyle.normal](nsview/backgroundstyle/normal.md)
+### Getting the Background Styles
+- [NSView.BackgroundStyle.normal](./normal.md)
   A style that reflects the predominant color scheme of the view’s appearance.
-- [NSView.BackgroundStyle.emphasized](nsview/backgroundstyle/emphasized.md)
+- [NSView.BackgroundStyle.emphasized](./emphasized.md)
   A style that adds emphasis to the background using an alternate color or visual effect.
-- [NSView.BackgroundStyle.lowered](nsview/backgroundstyle/lowered.md)
+- [NSView.BackgroundStyle.lowered](./lowered.md)
   A style that makes the background appear lower than the content drawn on it.
-- [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
+- [static var light: NSView.BackgroundStyle](./light.md)
   The background is a light color.
-- [static var dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
+- [static var dark: NSView.BackgroundStyle](./dark.md)
   The background is a dark color.
 
 

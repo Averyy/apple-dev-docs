@@ -1,7 +1,8 @@
 # UIBarAppearance
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for customizing the basic appearance of system bars.
 
@@ -19,77 +20,82 @@ An object for customizing the basic appearance of system bars.
 class UIBarAppearance
 ```
 
+```objc
+@interface UIBarAppearance : NSObject
+```
+
 #### Overview
 
-A [`UIBarAppearance`](uibarappearance.md) object contains the common traits shared by navigation bars, tab bars, and toolbars. When configuring a specific type of bar, you usually instantiate the appropriate bar appearance subclass. However, you may also create a [`UIBarAppearance`](uibarappearance.md) object, configure its properties, and use it to create new bar appearance objects in your app.
+A [`UIBarAppearance`](./uibarappearance.md) object contains the common traits shared by navigation bars, tab bars, and toolbars. When configuring a specific type of bar, you usually instantiate the appropriate bar appearance subclass. However, you may also create a [`UIBarAppearance`](./uibarappearance.md) object, configure its properties, and use it to create new bar appearance objects in your app.
 
 ## Topics
 
 ### Creating a custom bar appearance object
-- [init(idiom: UIUserInterfaceIdiom)](uibarappearance/init(idiom:).md)
+- [init(idiom: UIUserInterfaceIdiom)](./uibarappearance/init%28idiom%29.md)
   Creates a new bar appearance object that targets the specified idiom.
-- [init(barAppearance: UIBarAppearance)](uibarappearance/init(barappearance:).md)
+- [init(barAppearance: UIBarAppearance)](./uibarappearance/init%28barappearance%29.md)
   Creates a new bar appearance object by copying relevant data from the specified appearance object.
-- [convenience init()](uibarappearance/init.md)
+- [convenience init()](./uibarappearance/init%28%29.md)
   Creates a new bar appearance object containing default values.
-- [init(coder: NSCoder)](uibarappearance/init(coder:).md)
+- [init(coder: NSCoder)](./uibarappearance/init%28coder%29.md)
   Creates an appearance object from data in an unarchiver.
 ### Copying a custom bar appearance object
-- [func copy() -> Self](uibarappearance/copy.md)
+- [func copy() -> Self](./uibarappearance/copy%28%29.md)
   Creates a copy of the appearance object.
 ### Resetting the appearance properties
-- [func configureWithDefaultBackground()](uibarappearance/configurewithdefaultbackground.md)
+- [func configureWithDefaultBackground()](./uibarappearance/configurewithdefaultbackground%28%29.md)
   Configures the bar appearance object with default background and shadow values.
-- [func configureWithOpaqueBackground()](uibarappearance/configurewithopaquebackground.md)
+- [func configureWithOpaqueBackground()](./uibarappearance/configurewithopaquebackground%28%29.md)
   Configures the bar appearance object with a set of opaque colors that are appropriate for the current theme.
-- [func configureWithTransparentBackground()](uibarappearance/configurewithtransparentbackground.md)
+- [func configureWithTransparentBackground()](./uibarappearance/configurewithtransparentbackground%28%29.md)
   Configures the bar appearance object with a transparent background and no shadow.
 ### Configuring the background appearance
-- [var backgroundEffect: UIBlurEffect?](uibarappearance/backgroundeffect.md)
+- [var backgroundEffect: UIBlurEffect?](./uibarappearance/backgroundeffect.md)
   The blur effect to apply to the bar’s background.
-- [var backgroundColor: UIColor?](uibarappearance/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./uibarappearance/backgroundcolor.md)
   The background color of the bar.
-- [var backgroundImage: UIImage?](uibarappearance/backgroundimage.md)
+- [var backgroundImage: UIImage?](./uibarappearance/backgroundimage.md)
   The image to display on top of the bar’s background color.
-- [var backgroundImageContentMode: UIView.ContentMode](uibarappearance/backgroundimagecontentmode.md)
+- [var backgroundImageContentMode: UIView.ContentMode](./uibarappearance/backgroundimagecontentmode.md)
   The content mode to use when displaying the bar’s background image.
 ### Configuring the shadow appearance
-- [var shadowColor: UIColor?](uibarappearance/shadowcolor.md)
+- [var shadowColor: UIColor?](./uibarappearance/shadowcolor.md)
   The color to apply to the bar’s custom or default shadow.
-- [var shadowImage: UIImage?](uibarappearance/shadowimage.md)
+- [var shadowImage: UIImage?](./uibarappearance/shadowimage.md)
   The image to use for the bar’s shadow.
 ### Getting the supported idiom
-- [var idiom: UIUserInterfaceIdiom](uibarappearance/idiom.md)
+- [var idiom: UIUserInterfaceIdiom](./uibarappearance/idiom.md)
   The idiom targeted by this bar appearance object.
 ### Instance Properties
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uibarappearance/overrideuserinterfacestyle.md)
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./uibarappearance/overrideuserinterfacestyle.md)
   Overrides the userInterfaceStyle of the bar.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UINavigationBarAppearance](uinavigationbarappearance.md)
-- [UITabBarAppearance](uitabbarappearance.md)
-- [UIToolbarAppearance](uitoolbarappearance.md)
+- [UINavigationBarAppearance](./uinavigationbarappearance.md)
+- [UITabBarAppearance](./uitabbarappearance.md)
+- [UIToolbarAppearance](./uitoolbarappearance.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIBarButtonItemAppearance](uibarbuttonitemappearance.md)
+### Shared appearance
+- [class UIBarButtonItemAppearance](./uibarbuttonitemappearance.md)
   An object for customizing the appearance of bar button items.
-- [class UIBarButtonItemStateAppearance](uibarbuttonitemstateappearance.md)
+- [class UIBarButtonItemStateAppearance](./uibarbuttonitemstateappearance.md)
   A data object containing the specific customizations for a bar button item in a particular state.
 
 

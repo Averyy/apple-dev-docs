@@ -1,7 +1,8 @@
 # synchronizeResource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -17,10 +18,15 @@
 var synchronizeResource: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL synchronizeResource;
+```
+
 ## See Also
 
-- [var handle: (any MPSHandle)?](mpsnnstatenode/handle.md)
-- [var exportFromGraph: Bool](mpsnnstatenode/exportfromgraph.md)
+### Instance Properties
+- [var handle: (any MPSHandle)?](./handle.md)
+- [var exportFromGraph: Bool](./exportfromgraph.md)
 
 
 ---

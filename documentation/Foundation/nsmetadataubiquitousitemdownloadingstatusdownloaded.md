@@ -1,7 +1,8 @@
 # NSMetadataUbiquitousItemDownloadingStatusDownloaded
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -18,16 +19,21 @@
 let NSMetadataUbiquitousItemDownloadingStatusDownloaded: String
 ```
 
+```c
+extern NSString * const NSMetadataUbiquitousItemDownloadingStatusDownloaded;
+```
+
 #### Discussion
 
-A string used as the value for [`NSMetadataUbiquitousItemPercentUploadedKey`](nsmetadataubiquitousitempercentuploadedkey.md) to indicate that there is a local version of this item available.
+A string used as the value for [`NSMetadataUbiquitousItemPercentUploadedKey`](./nsmetadataubiquitousitempercentuploadedkey.md) to indicate that there is a local version of this item available.
 
 The most current version will be downloaded as soon as possible.
 
 ## See Also
 
-- [let NSMetadataUbiquitousItemDownloadingStatusCurrent: String](nsmetadataubiquitousitemdownloadingstatuscurrent.md)
-- [let NSMetadataUbiquitousItemDownloadingStatusNotDownloaded: String](nsmetadataubiquitousitemdownloadingstatusnotdownloaded.md)
+### iCloud Download Status Values
+- [let NSMetadataUbiquitousItemDownloadingStatusCurrent: String](./nsmetadataubiquitousitemdownloadingstatuscurrent.md)
+- [let NSMetadataUbiquitousItemDownloadingStatusNotDownloaded: String](./nsmetadataubiquitousitemdownloadingstatusnotdownloaded.md)
 
 
 ---

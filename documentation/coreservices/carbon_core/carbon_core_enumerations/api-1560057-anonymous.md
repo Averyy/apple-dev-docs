@@ -5,16 +5,16 @@
 ## Topics
 
 ### Constants
-- [var kISpBufferToSmallErr: Int](kispbuffertosmallerr.md)
-- [var kISpDeviceActiveErr: Int](kispdeviceactiveerr.md)
-- [var kISpDeviceInactiveErr: Int](kispdeviceinactiveerr.md)
-- [var kISpElementInListErr: Int](kispelementinlisterr.md)
-- [var kISpElementNotInListErr: Int](kispelementnotinlisterr.md)
-- [var kISpInternalErr: Int](kispinternalerr.md)
-- [var kISpListBusyErr: Int](kisplistbusyerr.md)
-- [var kISpSystemActiveErr: Int](kispsystemactiveerr.md)
-- [var kISpSystemInactiveErr: Int](kispsysteminactiveerr.md)
-- [var kISpSystemListErr: Int](kispsystemlisterr.md)
+- [var kISpBufferToSmallErr: Int](../../kispbuffertosmallerr.md)
+- [var kISpDeviceActiveErr: Int](../../kispdeviceactiveerr.md)
+- [var kISpDeviceInactiveErr: Int](../../kispdeviceinactiveerr.md)
+- [var kISpElementInListErr: Int](../../kispelementinlisterr.md)
+- [var kISpElementNotInListErr: Int](../../kispelementnotinlisterr.md)
+- [var kISpInternalErr: Int](../../kispinternalerr.md)
+- [var kISpListBusyErr: Int](../../kisplistbusyerr.md)
+- [var kISpSystemActiveErr: Int](../../kispsystemactiveerr.md)
+- [var kISpSystemInactiveErr: Int](../../kispsysteminactiveerr.md)
+- [var kISpSystemListErr: Int](../../kispsystemlisterr.md)
 
 
 ---

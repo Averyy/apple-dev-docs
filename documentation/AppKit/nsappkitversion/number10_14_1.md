@@ -1,7 +1,8 @@
 # number10_14_1
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.9+
@@ -14,12 +15,13 @@ static var number10_14_1: NSAppKitVersion { get }
 
 ## See Also
 
-- [static var number10_14: NSAppKitVersion](nsappkitversion/number10_14.md)
-- [static var number10_14_2: NSAppKitVersion](nsappkitversion/number10_14_2.md)
-- [static var number10_14_3: NSAppKitVersion](nsappkitversion/number10_14_3.md)
-- [static var number10_14_4: NSAppKitVersion](nsappkitversion/number10_14_4.md)
-- [static var number10_14_5: NSAppKitVersion](nsappkitversion/number10_14_5.md)
-- [static var number10_15: NSAppKitVersion](nsappkitversion/number10_15.md)
+### Deprecated properties
+- [static var number10_14: NSAppKitVersion](./number10_14.md)
+- [static var number10_14_2: NSAppKitVersion](./number10_14_2.md)
+- [static var number10_14_3: NSAppKitVersion](./number10_14_3.md)
+- [static var number10_14_4: NSAppKitVersion](./number10_14_4.md)
+- [static var number10_14_5: NSAppKitVersion](./number10_14_5.md)
+- [static var number10_15: NSAppKitVersion](./number10_15.md)
 
 
 ---

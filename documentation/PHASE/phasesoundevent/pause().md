@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses the sound event.
 
@@ -19,13 +20,18 @@ Pauses the sound event.
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 #### Discussion
 
 If the sound event plays audio, this function pauses audio playback.
 
 ## See Also
 
-- [func resume()](phasesoundevent/resume.md)
+### Pausing Playback
+- [func resume()](./resume%28%29.md)
   Resumes the sound event.
 
 

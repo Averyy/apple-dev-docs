@@ -1,7 +1,8 @@
 # InvalidStartDateError
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error that indicates the start date is invalid.
 
@@ -10,46 +11,47 @@ An error that indicates the start date is invalid.
 
 ## Declaration
 
-```swift
+```
 object InvalidStartDateError
 ```
 
 ## Properties
 
-- `errorCode` (int64)
-- `errorMessage` (string)
+- `errorCode` (int64): **Allowed Values**: `4000015`
+- `errorMessage` (string): **Allowed Values**: `Invalid request. The start date is not a timestamp value represented in milliseconds.`
 
 ## See Also
 
-- [object InvalidEndDateError](invalidenddateerror.md)
+### Notification test and history errors
+- [object InvalidEndDateError](./invalidenddateerror.md)
   An error that indicates the end date is invalid.
-- [object InvalidNotificationTypeError](invalidnotificationtypeerror.md)
+- [object InvalidNotificationTypeError](./invalidnotificationtypeerror.md)
   An error that indicates the notification type or subtype is invalid.
-- [object InvalidPaginationTokenError](invalidpaginationtokenerror.md)
+- [object InvalidPaginationTokenError](./invalidpaginationtokenerror.md)
   An error that indicates the pagination token is invalid.
-- [object InvalidTestNotificationTokenError](invalidtestnotificationtokenerror.md)
+- [object InvalidTestNotificationTokenError](./invalidtestnotificationtokenerror.md)
   An error that indicates the test notification token is invalid.
-- [object InvalidInAppOwnershipTypeError](invalidinappownershiptypeerror.md)
+- [object InvalidInAppOwnershipTypeError](./invalidinappownershiptypeerror.md)
   An error that indicates an invalid in-app ownership type parameter.
-- [object InvalidProductIdError](invalidproductiderror.md)
+- [object InvalidProductIdError](./invalidproductiderror.md)
   An error that indicates the product ID parameter is invalid.
-- [object InvalidProductTypeError](invalidproducttypeerror.md)
+- [object InvalidProductTypeError](./invalidproducttypeerror.md)
   An error that indicates the product type parameter is invalid.
-- [object InvalidSortError](invalidsorterror.md)
+- [object InvalidSortError](./invalidsorterror.md)
   An error that indicates the sort parameter is invalid.
-- [object InvalidSubscriptionGroupIdentifierError](invalidsubscriptiongroupidentifiererror.md)
+- [object InvalidSubscriptionGroupIdentifierError](./invalidsubscriptiongroupidentifiererror.md)
   An error that indicates the subscription group identifier is invalid.
-- [object MultipleFiltersSuppliedError](multiplefilterssuppliederror.md)
+- [object MultipleFiltersSuppliedError](./multiplefilterssuppliederror.md)
   An error that indicates the request is invalid because it has too many applied constraints.
-- [object PaginationTokenExpiredError](paginationtokenexpirederror.md)
+- [object PaginationTokenExpiredError](./paginationtokenexpirederror.md)
   An error that indicates the pagination token expired.
-- [object ServerNotificationURLNotFoundError](servernotificationurlnotfounderror.md)
+- [object ServerNotificationURLNotFoundError](./servernotificationurlnotfounderror.md)
   An error that indicates the App Store server couldn’t find a notifications URL for your app in the environment.
-- [object StartDateAfterEndDateError](startdateafterenddateerror.md)
+- [object StartDateAfterEndDateError](./startdateafterenddateerror.md)
   An error that indicates the end date precedes the start date, or the two dates are equal.
-- [object StartDateTooFarInPastError](startdatetoofarinpasterror.md)
+- [object StartDateTooFarInPastError](./startdatetoofarinpasterror.md)
   An error that indicates the start date is earlier than the earliest allowed date.
-- [object TestNotificationNotFoundError](testnotificationnotfounderror.md)
+- [object TestNotificationNotFoundError](./testnotificationnotfounderror.md)
   An error that indicates the test notification token is expired or the test notification status isn’t available.
 
 

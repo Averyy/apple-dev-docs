@@ -1,6 +1,7 @@
 # Providing User Access to CloudKit Data
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: Article
 
 Provide users access to the data your app stores on their behalf.
 
@@ -86,15 +87,16 @@ Use each field’s keys and values to give users an accessible report of the dat
 
 ## See Also
 
-- [Encrypting User Data](encrypting-user-data.md)
+### Privacy
+- [Encrypting User Data](./encrypting-user-data.md)
   Deploy industry-standard security technologies using CloudKit encryption.
-- [Changing Access Controls on User Data](changing-access-controls-on-user-data.md)
+- [Changing Access Controls on User Data](./changing-access-controls-on-user-data.md)
   Restrict access to or remove restrictions from a user’s data at their request.
-- [class CKFetchWebAuthTokenOperation](ckfetchwebauthtokenoperation.md)
+- [class CKFetchWebAuthTokenOperation](./ckfetchwebauthtokenoperation.md)
   An operation that creates an authentication token for use with CloudKit web services.
-- [Responding to Requests to Delete Data](responding-to-requests-to-delete-data.md)
+- [Responding to Requests to Delete Data](./responding-to-requests-to-delete-data.md)
   Provide options for users to delete their CloudKit data from your app.
-- [Identifying an App’s Containers](identifying-an-app-s-containers.md)
+- [Identifying an App’s Containers](./identifying-an-app-s-containers.md)
   Use Xcode’s Project navigator to find the identifiers of active CloudKit containers.
 
 

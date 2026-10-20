@@ -1,17 +1,24 @@
 # hyphenationFactor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The threshold controlling when hyphenation is done.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.15
+
+> **Deprecated**: Use [`usesDefaultHyphenation`](./usesdefaulthyphenation.md) instead.
 
 ## Declaration
 
 ```swift
 var hyphenationFactor: Float { get set }
+```
+
+```objc
+@property float hyphenationFactor;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ Whenever (width of the real contents of the line) / (the line fragment width) is
 
 ## See Also
 
-- [var usesScreenFonts: Bool](nslayoutmanager/usesscreenfonts.md)
+### Deprecated properties
+- [var usesScreenFonts: Bool](./usesscreenfonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
 
 

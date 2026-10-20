@@ -1,16 +1,17 @@
 # Setting the Finder Sidebar Icon
 
-**Framework**: File Provider
+**Framework**: File Provider  
+**Role**: Article
 
 Specify a standard or custom symbol as a sidebar icon.
 
 #### Overview
 
-To set the sidebar icon for your File Provider extension, set the [`CFBundleSymbolName`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname) key in the File Provider extension’s `Info.plist` file. The key takes the name of one of the SF Symbols. For the complete list of available symbols, see [`SF Symbols 3`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/).
+To set the sidebar icon for your File Provider extension, set the [`CFBundleSymbolName`](../BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md) key in the File Provider extension’s `Info.plist` file. The key takes the name of one of the SF Symbols. For the complete list of available symbols, see [SF Symbols 3](https://developer.apple.com/sf-symbols/).
 
 This image shows setting the sidebar icon to the `cloud.bolt.fill` symbol in the Plist editor.
 
-![A screenshot of the File Provider extension’s Info.plist file. The Plist editor shows an Icon file (iOS 5) key that contains a Primary Icon key, which also contains the SF Symbol name key. ](/images/com.apple.fileprovider/media-3908721@2x.png)
+![A screenshot of the File Provider extension’s Info.plist file. The Plist editor shows an Icon file (iOS 5) key that contains a Primary Icon key, which also contains the SF Symbol name key. ](https://developer.apple.com/tutorials/images/com.apple.fileprovider/media-3908721@2x.png)
 
 Alternatively, you can open the `Info.plist` file as source code and edit the XML directly.
 
@@ -42,13 +43,14 @@ Alternatively, you can open the `Info.plist` file as source code and edit the XM
 </plist>
 ```
 
-To create a custom symbol for your app, see [`Creating custom symbols`](https://developer.apple.com/documentation/technologyoverviews/custom-sf-symbols). To see a sample code project that uses a custom symbol, see [`Synchronizing files using file provider extensions`](synchronizing-files-using-file-provider-extensions.md).
+To create a custom symbol for your app, see [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md). To see a sample code project that uses a custom symbol, see [Synchronizing files using file provider extensions](./synchronizing-files-using-file-provider-extensions.md).
 
 ## See Also
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
+### Essentials
+- [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md)
   Keep the local and remote copies of your File Provider extension’s content in sync.
-- [Synchronizing files using file provider extensions](synchronizing-files-using-file-provider-extensions.md)
+- [Synchronizing files using file provider extensions](./synchronizing-files-using-file-provider-extensions.md)
   Make remote files available in macOS and iOS, and synchronize their states by using file provider extensions.
 
 

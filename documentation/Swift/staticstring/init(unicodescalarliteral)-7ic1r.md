@@ -1,7 +1,8 @@
 # init(unicodeScalarLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 init(unicodeScalarLiteral value: Self.ExtendedGraphemeClusterLiteralType)
 ```
+
+Available when `ExtendedGraphemeClusterLiteralType` is `Self.UnicodeScalarLiteralType`.
 
 
 ---

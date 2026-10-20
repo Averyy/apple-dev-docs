@@ -1,7 +1,8 @@
 # source
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting point for routing directions.
 
@@ -20,13 +21,18 @@ The starting point for routing directions.
 var source: MKMapItem? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) MKMapItem * source;
+```
+
 #### Discussion
 
 Use the setter method `setSource:` to set this property.
 
 ## See Also
 
-- [var destination: MKMapItem?](mkdirections/request/destination.md)
+### Accessing the start and end points
+- [var destination: MKMapItem?](./destination.md)
   The end point for routing directions.
 
 

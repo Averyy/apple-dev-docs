@@ -1,6 +1,8 @@
 # Backyard Birds: Building an app with SwiftData and widgets
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip](https://docs-assets.developer.apple.com/published/7f06a68fb95e/BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip)
 
 Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
@@ -16,13 +18,13 @@ Create an app with persistent data, interactive widgets, and an all new in-app p
 
 Backyard Birds offers a rich environment in which you can watch the birds that visit your backyard garden. You can monitor their water and food supply to ensure they always have fresh water and plenty to eat, or upgrade the game using an in-app purchase to provide tastier food for the birds to eat.
 
-The sample implements its data model using [`SwiftData`](https://developer.apple.com/documentation/swiftdata) for persistence, and integrates seamlessly with SwiftUI using the [`Observation`](https://developer.apple.com/documentation/observation) protocol. The game’s widgets implement [`App Intents`](https://developer.apple.com/documentation/appintents) for interactive and configurable widgets. The in-app purchase experience uses the [`ProductView`](https://developer.apple.com/documentation/storekit/productview) and [`SubscriptionStoreView`](https://developer.apple.com/documentation/storekit/subscriptionstoreview) from StoreKit.
+The sample implements its data model using [SwiftData](../SwiftData/SwiftData.md) for persistence, and integrates seamlessly with SwiftUI using the [`Observable`](../Observation/Observation.md) protocol. The game’s widgets implement [App Intents](../AppIntents/AppIntents.md) for interactive and configurable widgets. The in-app purchase experience uses the [`ProductView`](../StoreKit/productview.md) and [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) from StoreKit.
 
-You can access the source code for this sample on [`GitHub`](https://developer.apple.comhttps://github.com/apple/sample-backyard-birds).
+You can access the source code for this sample on [GitHub](https://github.com/apple/sample-backyard-birds).
 
-> **Note**: This sample code project is associated with WWDC23 session 102: [`State of the Union`](https://developer.apple.comhttps://developer.apple.com/wwdc23/102/).
+> **Note**: This sample code project is associated with WWDC23 session 102: [State of the Union](https://developer.apple.com/wwdc23/102/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To configure the Backyard Birds app to run on your devices, follow these steps:
 
@@ -32,9 +34,9 @@ To configure the Backyard Birds app to run on your devices, follow these steps:
 4. Select the top-level Backyard Birds project.
 5. For all targets, choose your team from the Team menu in the Signing & Capabilities pane so Xcode can automatically manage your provisioning profile.
 
-##### Create a Data Driven App
+##### Create a data-driven app
 
-The app defines its data model by conforming the model objects to [`PersistentModel`](https://developer.apple.com/documentation/swiftdata/persistentmodel) using the [`Model()`](https://developer.apple.com/documentation/swiftdata/model()) macro. Using the [`Attribute(_:originalName:hashModifier:)`](https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier:)) macro with the [`unique`](https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique) option ensures that the `id` property is unique.
+The app defines its data model by conforming the model objects to [`PersistentModel`](../SwiftData/persistentmodel.md) using the [`Model`](../SwiftData/model%28%29.md) macro. Using the [`Attribute`](../SwiftData/attribute%28_,originalname,hashmodifier%29.md) macro with the [`unique`](../SwiftData/schema/attribute/option/unique.md) option ensures that the `id` property is unique.
 
 ```swift
 @Model public class BirdSpecies {
@@ -57,9 +59,9 @@ The app defines its data model by conforming the model objects to [`PersistentMo
 }
 ```
 
-##### Construct Interactive Widgets
+##### Construct interactive widgets
 
-Backyard Birds displays interactive widgets by presenting a [`Button`](button.md) to refill a backyard’s supplies when the water and food are running low. The app does this by placing a `Button` in the widget’s view, and passing a `ResupplyBackyardIntent` instance to the [`init(intent:label:)`](button/init(intent:label:).md) initializer:
+Backyard Birds displays interactive widgets by presenting a [`Button`](./button.md) to refill a backyard’s supplies when the water and food are running low. The app does this by placing a `Button` in the widget’s view, and passing a `ResupplyBackyardIntent` instance to the [`init(intent:label:)`](./button/init%28intent,label%29.md) initializer:
 
 ```swift
 Button(intent: ResupplyBackyardIntent(backyard: BackyardEntity(from: snapshot.backyard))) {
@@ -72,7 +74,7 @@ Button(intent: ResupplyBackyardIntent(backyard: BackyardEntity(from: snapshot.ba
 }
 ```
 
-The app allows for configuration of the widget by implementing the [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/appintents/widgetconfigurationintent) protocol:
+The app allows for configuration of the widget by implementing the [`WidgetConfigurationIntent`](../AppIntents/widgetconfigurationintent.md) protocol:
 
 ```swift
 struct BackyardWidgetIntent: WidgetConfigurationIntent {
@@ -108,9 +110,9 @@ struct BackyardWidgetIntent: WidgetConfigurationIntent {
 }
 ```
 
-##### Provide a New in App Purchase Experience
+##### Provide a new in-app purchase experience
 
-The sample app uses [`ProductView`](https://developer.apple.com/documentation/storekit/productview) to display several different bird food upgrades available for purchase on a store shelf. To prominently feature an in-app purchase item, the app uses the [`productViewStyle(_:)`](view/productviewstyle(_:).md) modifier:
+The sample app uses [`ProductView`](../StoreKit/productview.md) to display several different bird food upgrades available for purchase on a store shelf. To prominently feature an in-app purchase item, the app uses the [`.productViewStyle(.large)`](./view/productviewstyle%28_%29.md) modifier:
 
 ```swift
 ProductView(id: product.id) {
@@ -122,7 +124,7 @@ ProductView(id: product.id) {
 .productViewStyle(.large)
 ```
 
-The Backyard Birds Pass page displays renewable subscriptions using the [`SubscriptionStoreView`](https://developer.apple.com/documentation/storekit/subscriptionstoreview) view. The app uses the `PassMarketingContent` view as the content of the `SubscriptionStoreView`:
+The Backyard Birds Pass page displays renewable subscriptions using the [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) view. The app uses the `PassMarketingContent` view as the content of the `SubscriptionStoreView`:
 
 ```swift
 SubscriptionStoreView(
@@ -140,17 +142,18 @@ SubscriptionStoreView(
 
 ## See Also
 
-- [Destination Video](../visionos/destination-video.md)
+### Creating an app
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Hello World](../visionos/world.md)
+- [Hello World](../visionOS/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Food Truck: Building a SwiftUI multiplatform app](food-truck-building-a-swiftui-multiplatform-app.md)
+- [Food Truck: Building a SwiftUI multiplatform app](./food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.
-- [Fruta: Building a feature-rich app with SwiftUI](../appclip/fruta-building-a-feature-rich-app-with-swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
-- [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
+- [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
   Use a scene-based life cycle in SwiftUI while keeping your existing codebase.
-- [protocol App](app.md)
+- [protocol App](./app.md)
   A type that represents the structure and behavior of an app.
 
 

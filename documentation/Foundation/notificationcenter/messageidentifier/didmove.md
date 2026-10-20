@@ -1,7 +1,8 @@
 # didMove
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didMove: NotificationCenter.BaseMessageIdentifier<NSWindow.DidMoveMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidMoveMessage>`.
 
 
 ---

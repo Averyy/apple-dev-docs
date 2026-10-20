@@ -1,7 +1,8 @@
 # variations
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the variation specification dictionary for a font.
 
@@ -10,7 +11,7 @@ Returns the variation specification dictionary for a font.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Returns the variation specification dictionary for a font.
 var variations: CFDictionary? { get }
 ```
 
+```c
+extern CFDictionaryRefCGFontCopyVariations(CGFontRef font);
+```
+
 #### Discussion
 
-The variation specification dictionary contains keys that correspond to the variation axis names of the font. Each key is a variation axis name. The value for each key is the value specified for that particular variation axis represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
+The variation specification dictionary contains keys that correspond to the variation axis names of the font. Each key is a variation axis name. The value for each key is the value specified for that particular variation axis represented as a [`CFNumber`](../../CoreFoundation/cfnumber.md) object.
 
 ## See Also
 
-- [func copy(withVariations: CFDictionary?) -> CGFont?](cgfont/copy(withvariations:).md)
+### Working with Variations
+- [func copy(withVariations: CFDictionary?) -> CGFont?](./copy%28withvariations%29.md)
   Creates a copy of a font using a variation specification dictionary.
-- [var variationAxes: CFArray?](cgfont/variationaxes.md)
+- [var variationAxes: CFArray?](./variationaxes.md)
   Returns an array of the variation axis dictionaries for a font.
-- [Font Variation Axis Keys](font-variation-axis-keys.md)
+- [Font Variation Axis Keys](../font-variation-axis-keys.md)
   Keys used for a font variation axis dictionary.
 
 

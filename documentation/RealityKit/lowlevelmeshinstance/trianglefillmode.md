@@ -1,7 +1,8 @@
 # triangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fill mode used when rasterizing this mesh instance’s triangles.
 

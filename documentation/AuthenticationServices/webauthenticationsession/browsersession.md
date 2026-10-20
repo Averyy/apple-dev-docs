@@ -1,7 +1,8 @@
 # WebAuthenticationSession.BrowserSession
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the preferred browser session behavior.
 
@@ -23,22 +24,23 @@ struct BrowserSession
 ## Topics
 
 ### Behaviors
-- [static var ephemeral: WebAuthenticationSession.BrowserSession](webauthenticationsession/browsersession/ephemeral.md)
+- [static var ephemeral: WebAuthenticationSession.BrowserSession](./browsersession/ephemeral.md)
   A session that doesn’t share cookies or other browsing data with a person’s normal browser session.
-- [static var shared: WebAuthenticationSession.BrowserSession](webauthenticationsession/browsersession/shared.md)
+- [static var shared: WebAuthenticationSession.BrowserSession](./browsersession/shared.md)
   A session that can share cookies and other browsing data with a person’s normal browser session.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func authenticate(using: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession?, additionalHeaderFields: [String : String]) async throws -> URL](webauthenticationsession/authenticate(using:callback:preferredbrowsersession:additionalheaderfields:).md)
+### Authenticating a session
+- [func authenticate(using: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession?, additionalHeaderFields: [String : String]) async throws -> URL](./authenticate%28using,callback,preferredbrowsersession,additionalheaderfields%29.md)
   Begins a web authentication session.
-- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+- [ASWebAuthenticationSession.Callback](../aswebauthenticationsession/callback.md)
   An object for evaluating navigation events in an authentication session.
 
 

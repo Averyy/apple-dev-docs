@@ -1,7 +1,8 @@
 # processID
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system process identifier of the app.
 
@@ -15,11 +16,16 @@ The system process identifier of the app.
 var processID: pid_t { get }
 ```
 
+```objc
+@property (readonly) pid_t processID;
+```
+
 ## See Also
 
-- [var bundleIdentifier: String](scrunningapplication/bundleidentifier.md)
+### Inspecting an app
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The unique bundle identifier of the app.
-- [var applicationName: String](scrunningapplication/applicationname.md)
+- [var applicationName: String](./applicationname.md)
   The display name of the app.
 
 

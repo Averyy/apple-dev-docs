@@ -1,9 +1,10 @@
 # artist
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Attributes queried for the artist. Default: [`artist`](searchableitemattribute/artist.md)
+Attributes queried for the artist. Default: [`artist`](../../../searchableitemattribute/artist.md)
 
 **Availability**:
 - iOS 27.0+
@@ -20,11 +21,12 @@ var artist: [SearchableItemAttribute]?
 
 ## See Also
 
-- [var album: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/album.md)
-  Attributes queried for the album. Default: [`album`](searchableitemattribute/album.md)
-- [var date: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/date.md)
-  Attributes queried for the recording date. Default: [`contentCreationDate`](searchableitemattribute/contentcreationdate.md)
-- [var transcription: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/transcription.md)
+### Getting the domain attributes
+- [var album: [SearchableItemAttribute]?](./album.md)
+  Attributes queried for the album. Default: [`album`](../../../searchableitemattribute/album.md)
+- [var date: [SearchableItemAttribute]?](./date.md)
+  Attributes queried for the recording date. Default: [`contentCreationDate`](../../../searchableitemattribute/contentcreationdate.md)
+- [var transcription: [SearchableItemAttribute]?](./transcription.md)
   Attributes queried for transcribed text.
 
 

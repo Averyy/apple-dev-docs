@@ -1,7 +1,8 @@
 # stateUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives connection group state updates.
 
@@ -23,11 +24,12 @@ final var stateUpdateHandler: (@Sendable (NWConnectionGroup.State) -> Void)? { g
 
 ## See Also
 
-- [NWConnectionGroup.State](nwconnectiongroup/state-swift.enum.md)
+### Managing Groups
+- [NWConnectionGroup.State](./state-swift.enum.md)
   States that indicate whether you can use a connection group to send and receive messages.
-- [var state: NWConnectionGroup.State](nwconnectiongroup/state-swift.property.md)
+- [var state: NWConnectionGroup.State](./state-swift.property.md)
   The current state of the connection group.
-- [func cancel()](nwconnectiongroup/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the connection group object and leaves the network group.
 
 

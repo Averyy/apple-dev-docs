@@ -1,7 +1,8 @@
 # runtimeErrorNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when an error occurs during a capture session.
 
@@ -19,29 +20,34 @@ A notification the system posts when an error occurs during a capture session.
 class let runtimeErrorNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCaptureSessionRuntimeErrorNotification;
+```
+
 #### Discussion
 
-Retrieve the underlying error from the notification’s user information dictionary using the key [`AVCaptureSessionErrorKey`](avcapturesessionerrorkey.md).
+Retrieve the underlying error from the notification’s user information dictionary using the key [`AVCaptureSessionErrorKey`](../avcapturesessionerrorkey.md).
 
 ## Topics
 
 ### User info keys
-- [let AVCaptureSessionErrorKey: String](avcapturesessionerrorkey.md)
-  Key to retrieve the error object from a [`runtimeErrorNotification`](avcapturesession/runtimeerrornotification.md) user info dictionary.
+- [let AVCaptureSessionErrorKey: String](../avcapturesessionerrorkey.md)
+  Key to retrieve the error object from a [`runtimeErrorNotification`](./runtimeerrornotification.md) user info dictionary.
 
 ## See Also
 
-- [var isRunning: Bool](avcapturesession/isrunning.md)
+### Observing session state
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the capture session is in a running state.
-- [var isInterrupted: Bool](avcapturesession/isinterrupted.md)
+- [var isInterrupted: Bool](./isinterrupted.md)
   A Boolean value that indicates whether the capture session is in an interrupted state.
-- [class let didStartRunningNotification: NSNotification.Name](avcapturesession/didstartrunningnotification.md)
+- [class let didStartRunningNotification: NSNotification.Name](./didstartrunningnotification.md)
   A notification the system posts when a capture session starts.
-- [class let didStopRunningNotification: NSNotification.Name](avcapturesession/didstoprunningnotification.md)
+- [class let didStopRunningNotification: NSNotification.Name](./didstoprunningnotification.md)
   A notification the system posts when a capture session stops.
-- [class let wasInterruptedNotification: NSNotification.Name](avcapturesession/wasinterruptednotification.md)
+- [class let wasInterruptedNotification: NSNotification.Name](./wasinterruptednotification.md)
   A notification the system posts when it interrupts a capture session.
-- [class let interruptionEndedNotification: NSNotification.Name](avcapturesession/interruptionendednotification.md)
+- [class let interruptionEndedNotification: NSNotification.Name](./interruptionendednotification.md)
   A notification the system posts when an interruption to a capture session finishes.
 
 

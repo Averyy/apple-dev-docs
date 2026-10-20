@@ -1,7 +1,8 @@
 # NFCWindowSceneEvent
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An NFC-related event that your app uses to update its user interface.
 
@@ -18,12 +19,12 @@ enum NFCWindowSceneEvent
 
 #### Overview
 
-When the device is eligible to receive NFC-related events, this type indicates the type of received event. The event may indicate the presence of an NFC reader or a gesture by the person using the app to initiate a contactless transaction. [`NFCWindowSceneEvent`](nfcwindowsceneevent.md) represents these as the [`NFCWindowSceneEvent.readerDetected`](nfcwindowsceneevent/readerdetected.md) and [`NFCWindowSceneEvent.presentation`](nfcwindowsceneevent/presentation.md) cases, respectively.
+When the device is eligible to receive NFC-related events, this type indicates the type of received event. The event may indicate the presence of an NFC reader or a gesture by the person using the app to initiate a contactless transaction. [`NFCWindowSceneEvent`](./nfcwindowsceneevent.md) represents these as the [`NFCWindowSceneEvent.readerDetected`](./nfcwindowsceneevent/readerdetected.md) and [`NFCWindowSceneEvent.presentation`](./nfcwindowsceneevent/presentation.md) cases, respectively.
 
 You can receive this event in two scenarios:
 
-- When the system calls [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) method [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)), the system created a new scene in response to the event. In this case, check the `connectionOptions` parameter for the presence of the [`nfcEvent`](https://developer.apple.com/documentation/uikit/uiscene/connectionoptions/nfcevent) member, which is an instance of [`NFCWindowSceneEvent`](nfcwindowsceneevent.md).
-- When the system calls the [`NFCWindowSceneDelegate`](nfcwindowscenedelegate.md) method [`windowScene(_:didReceiveNFCWindowSceneEvent:)`](nfcwindowscenedelegate/windowscene(_:didreceivenfcwindowsceneevent:).md), the system delivered the event to an existing scene.
+- When the system calls [`UISceneDelegate`](../UIKit/uiscenedelegate.md) method [`scene(_:willConnectTo:options:)`](../UIKit/uiscenedelegate/scene%28_,willconnectto,options%29.md), the system created a new scene in response to the event. In this case, check the `connectionOptions` parameter for the presence of the [`nfcEvent`](../UIKit/uiscene/connectionoptions/nfcevent.md) member, which is an instance of [`NFCWindowSceneEvent`](./nfcwindowsceneevent.md).
+- When the system calls the [`NFCWindowSceneDelegate`](./nfcwindowscenedelegate.md) method [`windowScene(_:didReceiveNFCWindowSceneEvent:)`](./nfcwindowscenedelegate/windowscene%28_,didreceivenfcwindowsceneevent%29.md), the system delivered the event to an existing scene.
 
 In either case, store the event and use it to update the UI for an NFC interaction. The following example shows a scene delegate that handles both scenarios, using a `ViewModel` class to store the event for use by an appropriate view:
 
@@ -62,23 +63,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, NFCWindowSceneDelegate 
 ## Topics
 
 ### Events
-- [NFCWindowSceneEvent.readerDetected](nfcwindowsceneevent/readerdetected.md)
+- [NFCWindowSceneEvent.readerDetected](./nfcwindowsceneevent/readerdetected.md)
   The eligible device detected the RF field of an NFC reader.
-- [NFCWindowSceneEvent.presentation](nfcwindowsceneevent/presentation.md)
+- [NFCWindowSceneEvent.presentation](./nfcwindowsceneevent/presentation.md)
   The user performed a gesture to present an NFC display.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol NFCWindowSceneDelegate](nfcwindowscenedelegate.md)
+### NFC window scenes
+- [protocol NFCWindowSceneDelegate](./nfcwindowscenedelegate.md)
   A protocol to notify your app’s user interface about NFC-related events.
 
 

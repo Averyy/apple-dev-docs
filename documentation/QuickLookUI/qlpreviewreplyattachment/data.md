@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data of the preview attachment.
 
@@ -14,9 +15,14 @@ The data of the preview attachment.
 var data: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * data;
+```
+
 ## See Also
 
-- [var contentType: UTType](qlpreviewreplyattachment/contenttype.md)
+### Inspecting a preview reply attachment
+- [var contentType: UTType](./contenttype.md)
   The content type of the preview attachment.
 
 

@@ -1,6 +1,7 @@
 # Adding alternate media to a playlist
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Specify Rendition Playlists that can override the main presentation.
 
@@ -8,7 +9,7 @@ Specify Rendition Playlists that can override the main presentation.
 
 Adding alternate media to a Multivariant Playlist allows a provider to specify one of a set of variant playlists as an *override* of the main presentation. The client plays only the override media (audio or video), and suppresses any media of the same type from the main presentation, if present. This allows a presentation to offer multiple versions of the media without requiring the provider to store duplicate media, or requiring the client to download all variants when it only needs one. It also allows additional media to be offered subsequently without remastering the original content.
 
-##### Add Alternate Media
+##### Add alternate media
 
 Here’s an example of a Multivariant Playlist that provides additional audio renditions:
 
@@ -27,7 +28,7 @@ hi/prog_index.m3u8
 The tags used in this Multivariant Playlist example include:
 
 - **`EXT-X-MEDIA`**: Identifies an element of a media selection group. All the elements of a media selection group must have similar characteristics, for example, the same codecs and the same maximum bandwidth.
-- **`EXT-X-STREAM-INF`**: indicates that the next URL in the Multivariant Playlist identifies a Rendition Playlist. See [`Creating a Multivariant Playlist`](creating-a-multivariant-playlist.md) for the basic parameters.
+- **`EXT-X-STREAM-INF`**: indicates that the next URL in the Multivariant Playlist identifies a Rendition Playlist. See [Creating a Multivariant Playlist](./creating-a-multivariant-playlist.md) for the basic parameters.
 
 The EXT-X-MEDIA tag has the following parameters:
 
@@ -112,7 +113,8 @@ Angle1/500kbs/prog_index.m3u8
 
 ## See Also
 
-- [Incorporating Ads into a Playlist](incorporating-ads-into-a-playlist.md)
+### Modified playlists
+- [Incorporating Ads into a Playlist](./incorporating-ads-into-a-playlist.md)
   Add branding or ads to a playlist.
 
 

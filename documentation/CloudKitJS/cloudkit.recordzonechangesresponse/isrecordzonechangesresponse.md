@@ -1,16 +1,17 @@
 # isRecordZoneChangesResponse
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value indicating whether this object is an instance of the [`CloudKit.RecordZoneChangesResponse`](cloudkit.recordzonechangesresponse.md) class.
+A Boolean value indicating whether this object is an instance of the [`CloudKit.RecordZoneChangesResponse`](../cloudkit.recordzonechangesresponse.md) class.
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isRecordZoneChangesResponse;
 ```
 

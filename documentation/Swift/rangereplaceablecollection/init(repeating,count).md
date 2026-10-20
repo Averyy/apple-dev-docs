@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new collection containing the specified number of a single, repeated value.
@@ -35,6 +36,12 @@ print(fiveZs)
 
 - `repeatedValue`: The element to repeat.
 - `count`: The number of times to repeat the value passed in the `repeating` parameter. `count` must be zero or greater.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [init(repeating: Self.Element, count: Int)](./init%28repeating,count%29-7exog.md)
+  Creates a new collection containing the specified number of a single, repeated value.
 
 
 ---

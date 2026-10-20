@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates table columns across updates based on the identity of the underlying data.
 
@@ -19,14 +20,22 @@ nonisolated
 init(_ data: Data, @TableColumnBuilder<TableColumnForEach<Data, ID, RowValue, Sort, Content>.TableRowValue, TableColumnForEach<Data, ID, RowValue, Sort, Content>.TableColumnSortComparator> content: @escaping (Data.Element) -> Content) where ID == Data.Element.ID, Data.Element : Identifiable
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ data: Range<Int>, @TableColumnBuilder<TableColumnForEach<Range<Int>, Int, RowValue, Sort, Content>.TableRowValue, TableColumnForEach<Range<Int>, Int, RowValue, Sort, Content>.TableColumnSortComparator> content: @escaping (Int) -> Content) where Data == Range<Int>, ID == Int
+```
+
 ## Parameters
 
-- `data`: The identified data that the [`TableColumnForEach`](tablecolumnforeach.md) instance uses to create table columns dynamically.
+- `data`: The identified data that the [`TableColumnForEach`](../tablecolumnforeach.md) instance uses to create table columns dynamically.
 - `content`: The table column builder that creates columns dynamically for each element.
 
 ## See Also
 
-- [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](tablecolumnforeach/init(_:id:content:).md)
+### Creating the collection
+- [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](./init%28_,id,content%29.md)
   Creates an instance that uniquely identifies and creates table columns across updates based on the provided key path to the underlying data’s identifier.
 
 

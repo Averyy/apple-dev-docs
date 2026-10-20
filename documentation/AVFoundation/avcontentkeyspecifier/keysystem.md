@@ -1,7 +1,8 @@
 # keySystem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key system that generates content keys.
 
@@ -20,11 +21,16 @@ The key system that generates content keys.
 var keySystem: AVContentKeySystem { get }
 ```
 
+```objc
+@property (readonly) AVContentKeySystem keySystem;
+```
+
 ## See Also
 
-- [var identifier: any Sendable](avcontentkeyspecifier/identifier.md)
+### Inspecting a specifier
+- [var identifier: any Sendable](./identifier.md)
   The container and protocol-specific key identifier.
-- [var options: [String : any Sendable]](avcontentkeyspecifier/options.md)
+- [var options: [String : any Sendable]](./options.md)
   A dictionary of options with which you initialized the specifier.
 
 

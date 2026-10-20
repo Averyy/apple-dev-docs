@@ -9,17 +9,18 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_LINEAR;
 ```
 
 ## See Also
 
-- [SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE](svgcomponenttransferfunctionelement/1629071-svg_fecomponenttransfer_type_dis.md)
-- [SVG_FECOMPONENTTRANSFER_TYPE_GAMMA](svgcomponenttransferfunctionelement/1633026-svg_fecomponenttransfer_type_gam.md)
-- [SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY](svgcomponenttransferfunctionelement/1629839-svg_fecomponenttransfer_type_ide.md)
-- [SVG_FECOMPONENTTRANSFER_TYPE_TABLE](svgcomponenttransferfunctionelement/1628904-svg_fecomponenttransfer_type_tab.md)
-- [SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN](svgcomponenttransferfunctionelement/1633087-svg_fecomponenttransfer_type_unk.md)
+### Miscellaneous
+- [SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE](./api-1629071-svg_fecomponenttransfer_type_dis.md)
+- [SVG_FECOMPONENTTRANSFER_TYPE_GAMMA](./api-1633026-svg_fecomponenttransfer_type_gam.md)
+- [SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY](./api-1629839-svg_fecomponenttransfer_type_ide.md)
+- [SVG_FECOMPONENTTRANSFER_TYPE_TABLE](./api-1628904-svg_fecomponenttransfer_type_tab.md)
+- [SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN](./api-1633087-svg_fecomponenttransfer_type_unk.md)
 
 
 ---

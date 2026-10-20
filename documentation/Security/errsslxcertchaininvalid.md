@@ -1,7 +1,8 @@
 # errSSLXCertChainInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid certificate chain.
 
@@ -18,6 +19,10 @@ Invalid certificate chain.
 
 ```swift
 var errSSLXCertChainInvalid: OSStatus { get }
+```
+
+```c
+errSSLXCertChainInvalid
 ```
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.norway
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Norwegian in the HID specification.
 

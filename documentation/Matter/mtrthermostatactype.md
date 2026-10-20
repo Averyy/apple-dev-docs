@@ -1,7 +1,8 @@
 # MTRThermostatACType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,26 +19,30 @@
 enum MTRThermostatACType
 ```
 
+```c
+enum MTRThermostatACType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatACType.coolingFixed](mtrthermostatactype/coolingfixed.md)
-- [MTRThermostatACType.coolingInverter](mtrthermostatactype/coolinginverter.md)
-- [MTRThermostatACType.heatPumpFixed](mtrthermostatactype/heatpumpfixed.md)
-- [MTRThermostatACType.heatPumpInverter](mtrthermostatactype/heatpumpinverter.md)
-- [MTRThermostatACType.unknown](mtrthermostatactype/unknown.md)
+- [MTRThermostatACType.coolingFixed](./mtrthermostatactype/coolingfixed.md)
+- [MTRThermostatACType.coolingInverter](./mtrthermostatactype/coolinginverter.md)
+- [MTRThermostatACType.heatPumpFixed](./mtrthermostatactype/heatpumpfixed.md)
+- [MTRThermostatACType.heatPumpInverter](./mtrthermostatactype/heatpumpinverter.md)
+- [MTRThermostatACType.unknown](./mtrthermostatactype/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatactype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatactype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

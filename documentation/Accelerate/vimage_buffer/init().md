@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty vImage buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init()
 
 #### Discussion
 
-Use this initializer to create an empty vImage buffer that you pass to a subsequent function that allocates and initializes the buffer’s storage and properties. For example, the following code creates an empty buffer and initializes it using the [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) function:
+Use this initializer to create an empty vImage buffer that you pass to a subsequent function that allocates and initializes the buffer’s storage and properties. For example, the following code creates an empty buffer and initializes it using the [`vImageBuffer_Init(_:_:_:_:_:)`](../vimagebuffer_init%28_,_,_,_,_%29.md) function:
 
 ```swift
 var buffer = vImage_Buffer()
@@ -37,9 +38,10 @@ vImageBuffer_Init(&buffer,
 
 ## See Also
 
-- [init(width: Int, height: Int, bitsPerPixel: UInt32) throws](vimage_buffer/init(width:height:bitsperpixel:).md)
+### Creating an empty vImage buffer
+- [init(width: Int, height: Int, bitsPerPixel: UInt32) throws](./init%28width,height,bitsperpixel%29.md)
   Creates a new buffer with the specified width, height, and bits per pixel.
-- [init(size: CGSize, bitsPerPixel: UInt32) throws](vimage_buffer/init(size:bitsperpixel:).md)
+- [init(size: CGSize, bitsPerPixel: UInt32) throws](./init%28size,bitsperpixel%29.md)
   Creates a new buffer with the specified size and bits per pixel.
 
 

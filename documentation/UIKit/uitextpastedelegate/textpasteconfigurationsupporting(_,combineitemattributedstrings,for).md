@@ -1,7 +1,8 @@
 # textPasteConfigurationSupporting(_:combineItemAttributedStrings:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to combine multiple strings into a single attributed string.
 
@@ -15,6 +16,10 @@ Asks the delegate to combine multiple strings into a single attributed string.
 
 ```swift
 optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupporting: any UITextPasteConfigurationSupporting, combineItemAttributedStrings itemStrings: [NSAttributedString], for textRange: UITextRange) -> NSAttributedString
+```
+
+```objc
+- (NSAttributedString *) textPasteConfigurationSupporting:(id<UITextPasteConfigurationSupporting>) textPasteConfigurationSupporting combineItemAttributedStrings:(NSArray<NSAttributedString *> *) itemStrings forRange:(UITextRange *) textRange;
 ```
 
 #### Return Value
@@ -33,7 +38,8 @@ You implement this method when you need to change how the item strings are combi
 
 ## See Also
 
-- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, performPasteOf: NSAttributedString, to: UITextRange) -> UITextRange](uitextpastedelegate/textpasteconfigurationsupporting(_:performpasteof:to:).md)
+### Pasting the text paste item
+- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, performPasteOf: NSAttributedString, to: UITextRange) -> UITextRange](./textpasteconfigurationsupporting%28_,performpasteof,to%29.md)
   Asks the delegate to explicitly handle the final incorporation of a pasted or dropped string of text into the text view.
 
 

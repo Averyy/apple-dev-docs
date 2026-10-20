@@ -1,7 +1,8 @@
 # ConventionCenter
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for convention centers.
 
@@ -10,7 +11,7 @@ The point-of-interest category for convention centers.
 
 ## Declaration
 
-```swift
+```
 readonly ConventionCenter: "ConventionCenter";
 ```
 

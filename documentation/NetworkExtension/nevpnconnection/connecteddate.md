@@ -1,7 +1,8 @@
 # connectedDate
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time when the connection status changed to `NEVPNStatusConnected`.
 
@@ -19,16 +20,21 @@ The date and time when the connection status changed to `NEVPNStatusConnected`.
 var connectedDate: Date? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDate * connectedDate;
+```
+
 #### Discussion
 
 This property contains the date and time when the connection status changed to `NEVPNStatusConnected` after previously being set to `NEVPNStatusDisconnected`. This property is set to nil whenever the status changes to `NEVPNStatusDisconnected`.
 
 ## See Also
 
-- [var manager: NEVPNManager](nevpnconnection/manager.md)
-- [var status: NEVPNStatus](nevpnconnection/status.md)
+### Getting VPN connection status
+- [var manager: NEVPNManager](./manager.md)
+- [var status: NEVPNStatus](./status.md)
   The current status of the VPN connection.
-- [enum NEVPNStatus](nevpnstatus.md)
+- [enum NEVPNStatus](../nevpnstatus.md)
   The possible states of a VPN connection.
 
 

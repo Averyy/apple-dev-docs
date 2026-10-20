@@ -1,7 +1,8 @@
 # objectBindings
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of binding instances, each of which represents a parameter of the pipeline state’s object shader.
 
@@ -19,19 +20,24 @@ An array of binding instances, each of which represents a parameter of the pipel
 var objectBindings: [any MTLBinding] { get }
 ```
 
+```objc
+@property (readonly, nonnull) NSArray<id<MTLBinding>> * objectBindings;
+```
+
 #### Discussion
 
-The [`MTLBinding`](mtlbinding.md) elements in the array are in the same order as the object shader’s declaration signature.
+The [`MTLBinding`](../mtlbinding.md) elements in the array are in the same order as the object shader’s declaration signature.
 
 ## See Also
 
-- [var fragmentBindings: [any MTLBinding]](mtlrenderpipelinereflection/fragmentbindings.md)
+### Inspecting a shader’s parameter
+- [var fragmentBindings: [any MTLBinding]](./fragmentbindings.md)
   An array of binding instances, each of which represents a parameter of the pipeline state’s fragment shader.
-- [var meshBindings: [any MTLBinding]](mtlrenderpipelinereflection/meshbindings.md)
+- [var meshBindings: [any MTLBinding]](./meshbindings.md)
   An array of binding instances, each of which represents a parameter of the pipeline state’s mesh shader.
-- [var tileBindings: [any MTLBinding]](mtlrenderpipelinereflection/tilebindings.md)
+- [var tileBindings: [any MTLBinding]](./tilebindings.md)
   An array of binding instances, each of which represents a parameter of the pipeline state’s tile shader.
-- [var vertexBindings: [any MTLBinding]](mtlrenderpipelinereflection/vertexbindings.md)
+- [var vertexBindings: [any MTLBinding]](./vertexbindings.md)
   An array of binding instances, each of which represents a parameter of the pipeline state’s vertex shader.
 
 

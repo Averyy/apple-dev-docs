@@ -1,7 +1,8 @@
 # createMetadataSampleBuffer(from:forDuration:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a sample buffer containing Timecode Media Description metadata for a specified duration.
 
@@ -18,6 +19,10 @@ Creates a sample buffer containing Timecode Media Description metadata for a spe
 static func createMetadataSampleBuffer(from timecode: AVCaptureTimecode, forDuration duration: CMTime) -> Unmanaged<CMSampleBuffer>?
 ```
 
+```c
+CMSampleBufferRefAVCaptureTimecodeCreateMetadataSampleBufferForDuration(AVCaptureTimecode timecode, CMTime duration);
+```
+
 #### Return Value
 
 A `CMSampleBufferRef` with encoded Timecode Media Description metadata for the given duration, or `nil` if sample buffer creation fails.
@@ -28,26 +33,27 @@ Use this function for scenarios where timecode metadata needs to span a custom i
 
 ## Parameters
 
-- `timecode`: The [`AVCaptureTimecode`](avcapturetimecode.md) instance providing the timecode details for the metadata sample.
+- `timecode`: The [`AVCaptureTimecode`](../avcapturetimecode.md) instance providing the timecode details for the metadata sample.
 - `duration`: The duration that the metadata sample buffer should represent.
 
 ## See Also
 
-- [class AVCaptureTimecodeGenerator](avcapturetimecodegenerator.md)
+### Timecode generation
+- [class AVCaptureTimecodeGenerator](../avcapturetimecodegenerator.md)
   Generates and synchronizes timecode data from various sources for precise video and audio synchronization.
-- [protocol AVCaptureTimecodeGeneratorDelegate](avcapturetimecodegeneratordelegate.md)
+- [protocol AVCaptureTimecodeGeneratorDelegate](../avcapturetimecodegeneratordelegate.md)
   A protocol for receiving real-time timecode updates and error notifications from a timecode generator.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus](avcapturetimecodegenerator/synchronizationstatus.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus](../avcapturetimecodegenerator/synchronizationstatus.md)
   Constants defining the synchronization status of a timecode generator .
-- [AVCaptureTimecode.Source](avcapturetimecode/source.md)
+- [AVCaptureTimecode.Source](./source.md)
   Describes a timecode source that a timecode generator can synchronize to.
-- [AVCaptureTimecode.SourceType](avcapturetimecode/sourcetype-swift.enum.md)
+- [AVCaptureTimecode.SourceType](./sourcetype-swift.enum.md)
   Defines possible sources for generating timecode in using a timecode generator.
-- [struct AVCaptureTimecode](avcapturetimecode.md)
+- [struct AVCaptureTimecode](../avcapturetimecode.md)
   This structure represents a timecode, adhering to SMPTE standards, which define precise time information and associated timestamps for video or audio synchronization.
-- [static func advanced(AVCaptureTimecode, by: Int64) -> AVCaptureTimecode](avcapturetimecode/advanced(_:by:).md)
+- [static func advanced(AVCaptureTimecode, by: Int64) -> AVCaptureTimecode](./advanced%28_,by%29.md)
   Generates a new timecode by adding a specified number of frames to the given timecode, handling overflow for seconds, minutes, and hours.
-- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, associatedWithPresentationTimeStamp: CMTime) -> Unmanaged<CMSampleBuffer>?](avcapturetimecode/createmetadatasamplebuffer(from:associatedwithpresentationtimestamp:).md)
+- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, associatedWithPresentationTimeStamp: CMTime) -> Unmanaged<CMSampleBuffer>?](./createmetadatasamplebuffer%28from,associatedwithpresentationtimestamp%29.md)
   Creates a sample buffer containing Timecode Media Description metadata for integration with a video track.
 
 

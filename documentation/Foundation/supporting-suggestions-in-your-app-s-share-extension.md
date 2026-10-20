@@ -1,6 +1,7 @@
 # Supporting suggestions in your app’s share extension
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Article
 
 Make your messaging app available for share sheet suggestions and use SiriKit intents to populate your app’s share extension.
 
@@ -8,11 +9,11 @@ Make your messaging app available for share sheet suggestions and use SiriKit in
 
 Using the iOS share sheet, people can launch your messaging app instantly from a list of suggestions when sharing content like a link, image, video, or file. The share sheet suggests conversations with people in apps that a person interacts with frequently, and updates its suggestions over time based on a person’s favorite apps and conversations. When a person shares an image in iOS 16 or later, the share sheet prioritizes conversations with people it identifies in the image.
 
-![A screenshot of an iPhone. The upper half shows the apple.com website in Safari. The bottom half of the screen shows the share sheet after the person has decided to share the website with someone. iOS suggests conversations in the Messages app and another app.](/images/com.apple.foundation/media-4323287@2x.png)
+![A screenshot of an iPhone. The upper half shows the apple.com website in Safari. The bottom half of the screen shows the share sheet after the person has decided to share the website with someone. iOS suggests conversations in the Messages app and another app.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-4323287@2x.png)
 
 To allow iOS to include conversations from your messaging app in the list of suggestions:
 
-- Add a share extension to your app as described in [`Understand Share Extensions`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2).
+- Add a share extension to your app as described in [Understand Share Extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2).
 - Declare support for the [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) intent type.
 - Donate an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) in your messaging app and its share extension.
 
@@ -20,23 +21,23 @@ As a person selects an app from the list of suggestions, the app’s sharing int
 
 A screenshot of an iPhone with the Safari browser displaying the apple.com homepage. The person tapped the Share button and selected an app from the list of suggestions. The platforms default sharing interface, based on an SLComposeViewController, is visible. Based on the available metadata, the extension has prepopulated the interface with a recipient (Juan Chavez).
 
-![A screenshot of an iPhone with the Safari browser displaying the apple.com homepage. The person tapped the Share button and selected an app from the list of suggestions. The platforms default sharing interface, based on an SLComposeViewController, is visible. Based on the available metadata, the extension has prepopulated the interface with a recipient (Juan Chavez).](/images/com.apple.foundation/media-3379657@2x.png)
+![A screenshot of an iPhone with the Safari browser displaying the apple.com homepage. The person tapped the Share button and selected an app from the list of suggestions. The platforms default sharing interface, based on an SLComposeViewController, is visible. Based on the available metadata, the extension has prepopulated the interface with a recipient (Juan Chavez).](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3379657@2x.png)
 
-##### Add a Share Extension to Your App
+##### Add a share extension to your app
 
-To add a share extension to your app, open your app’s project in Xcode and select File > New > Target from the menu bar. Xcode presents a sheet that contains templates for different kinds of targets. Select the share extension template from the iOS pane and follow the steps in Xcode’s interface to add one to your app. For more information, see [`Understand Share Extensions`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2) in the App Extension Programming Guide.
+To add a share extension to your app, open your app’s project in Xcode and select File > New > Target from the menu bar. Xcode presents a sheet that contains templates for different kinds of targets. Select the share extension template from the iOS pane and follow the steps in Xcode’s interface to add one to your app. For more information, see [Understand Share Extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2) in the App Extension Programming Guide.
 
-##### Support the Send Message Intent
+##### Support the send message intent
 
-Open the Share extension’s `Info.plist`, and expand the [`NSExtension`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension) and [`NSExtensionAttributes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes) keys. Add a new entry with the [`IntentsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/intentssupported) key and select `Array` for its value type. Add the string `INSendMessageIntent` as a new value to the array to declare support for the [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) intent type.
+Open the Share extension’s `Info.plist`, and expand the [`NSExtension`](../BundleResources/information-property-list/nsextension.md) and [`NSExtensionAttributes`](../BundleResources/information-property-list/nsextension/nsextensionattributes.md) keys. Add a new entry with the [`IntentsSupported`](../BundleResources/information-property-list/nsextension/intentssupported.md) key and select `Array` for its value type. Add the string `INSendMessageIntent` as a new value to the array to declare support for the [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) intent type.
 
-![A screenshot of Xcode showing the Info.plist file for a Share extension that the developer created using Xcode’s share extension template. The entries below the NSExtension key are expanded and show the IntentsSupported key with an item that has the value set to INSendMessageIntent. The NSExtensionActivationRule entry is set to TRUEPREDICATE.](/images/com.apple.foundation/media-3358270@2x.png)
+![A screenshot of Xcode showing the Info.plist file for a Share extension that the developer created using Xcode’s share extension template. The entries below the NSExtension key are expanded and show the IntentsSupported key with an item that has the value set to INSendMessageIntent. The NSExtensionActivationRule entry is set to TRUEPREDICATE.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3358270@2x.png)
 
-To make debugging easier, set the value of [`NSExtensionActivationRule`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule) to `TRUEPREDICATE` when you first add a share extension using Xcode’s template. Replace it with valid activation rules as described in [`Declaring Supported Data Types for a Share or Action Extension`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8) before submitting your app for review.
+To make debugging easier, set the value of [`NSExtensionActivationRule`](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule.md) to `TRUEPREDICATE` when you first add a share extension using Xcode’s template. Replace it with valid activation rules as described in [Declaring Supported Data Types for a Share or Action Extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8) before submitting your app for review.
 
-##### Donate a Send Message Intent
+##### Donate a send message intent
 
-Donate an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) only when a person sends or receives a message in your app and its share extension. Donate a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) along with [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) for [`sender`](https://developer.apple.com/documentation/intents/insendmessageintent/sender) and [`recipients`](https://developer.apple.com/documentation/intents/insendmessageintent/recipients) by adding values to the contact [`contactIdentifier`](https://developer.apple.com/documentation/intents/inperson/contactidentifier) field when initializing an [`INPerson`](https://developer.apple.com/documentation/intents/inperson).
+Donate an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) only when a person sends or receives a message in your app and its share extension. Donate a [`CNContact`](../Contacts/cncontact.md) along with [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) for [`sender`](https://developer.apple.com/documentation/intents/insendmessageintent/sender) and [`recipients`](https://developer.apple.com/documentation/intents/insendmessageintent/recipients) by adding values to the contact [`contactIdentifier`](https://developer.apple.com/documentation/intents/inperson/contactidentifier) field when initializing an [`INPerson`](https://developer.apple.com/documentation/intents/inperson).
 
 As you initialize the [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) object, provide metadata that’s available later when a person choses your app’s share extension from the list of suggestions. The following code snippet donates an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) with a [`speakableGroupName`](https://developer.apple.com/documentation/intents/insendmessageintent/speakablegroupname), a [`conversationIdentifier`](https://developer.apple.com/documentation/intents/insendmessageintent/conversationidentifier), and an [`INImage`](https://developer.apple.com/documentation/intents/inimage).
 
@@ -71,11 +72,11 @@ When a person shares an image in iOS 16 or later with the suggestions from Apple
 
 > 💡 **Tip**:  Both your app and its share extension donate an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent). Write reusable code by creating an object that donates the intent and is available to both the extension and the app.
 
-##### Populate Your Share Extensions Interface with Metadata
+##### Populate your share extension’s interface with metadata
 
 When a person selects your app from the list of suggestions, you can access the metadata that you created when your app donated the [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent). Use it to populate your share extension’s interface.
 
-The following code listing shows a template implementation for an [`SLComposeServiceViewController`](https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller) subclass. It accesses the [`intent`](nsextensioncontext/intent.md) property, makes sure it’s an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent), and uses the intent’s [`conversationIdentifier`](https://developer.apple.com/documentation/intents/insendmessageintent/conversationidentifier) to create a new `Recipient` object. It then uses the `Recipient` object to populate the share extension’s interface in the [`configurationItems()`](https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/configurationitems()) method.
+The following code listing shows a template implementation for an [`SLComposeServiceViewController`](../Social/slcomposeserviceviewcontroller.md) subclass. It accesses the [`intent`](./nsextensioncontext/intent.md) property, makes sure it’s an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent), and uses the intent’s [`conversationIdentifier`](https://developer.apple.com/documentation/intents/insendmessageintent/conversationidentifier) to create a new `Recipient` object. It then uses the `Recipient` object to populate the share extension’s interface in the [`configurationItems()`](../Social/slcomposeserviceviewcontroller/configurationitems%28%29.md) method.
 
 ```swift
 import Intents

@@ -1,15 +1,18 @@
 # UIPreviewAction.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The style for a peek quick action.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 17.1
+- iPadOS 9.0+ - Deprecated in 17.1
+- Mac Catalyst 13.1+ - Deprecated in 17.1
+- tvOS 9.0+ - Deprecated in 17.1
+
+> **Deprecated**: For more information, see [`UIPreviewAction`](../uipreviewaction.md).
 
 ## Declaration
 
@@ -17,37 +20,42 @@ The style for a peek quick action.
 enum Style
 ```
 
+```c
+enum UIPreviewActionStyle : NSInteger;
+```
+
 #### Overview
 
-Use these styles with instances of the [`UIPreviewAction`](uipreviewaction.md) and [`UIPreviewActionGroup`](uipreviewactiongroup.md) classes.
+Use these styles with instances of the [`UIPreviewAction`](../uipreviewaction.md) and [`UIPreviewActionGroup`](../uipreviewactiongroup.md) classes.
 
 ## Topics
 
 ### Constants
-- [UIPreviewAction.Style.default](uipreviewaction/style/default.md)
+- [UIPreviewAction.Style.default](./style/default.md)
   The default style.
-- [UIPreviewAction.Style.selected](uipreviewaction/style/selected.md)
+- [UIPreviewAction.Style.selected](./style/selected.md)
   The style for a selected peek quick action.
-- [UIPreviewAction.Style.destructive](uipreviewaction/style/destructive.md)
+- [UIPreviewAction.Style.destructive](./style/destructive.md)
   The style for a peek quick action that changes or deletes data.
 ### Initializers
-- [init?(rawValue: Int)](uipreviewaction/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(title: String, style: UIPreviewAction.Style, handler: (UIPreviewAction, UIViewController) -> Void)](uipreviewaction/init(title:style:handler:).md)
+### Creating a peek quick action
+- [convenience init(title: String, style: UIPreviewAction.Style, handler: (UIPreviewAction, UIViewController) -> Void)](./init%28title,style,handler%29.md)
   Creates a peek quick action using a specified title, style, and handler.
-- [var handler: (any UIPreviewActionItem, UIViewController) -> Void](uipreviewaction/handler.md)
+- [var handler: (any UIPreviewActionItem, UIViewController) -> Void](./handler.md)
   The block called when the peek quick action is selected by the user.
 
 

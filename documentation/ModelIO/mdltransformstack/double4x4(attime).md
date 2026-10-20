@@ -1,7 +1,8 @@
 # double4x4(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func double4x4(atTime time: TimeInterval) -> matrix_double4x4
+```
+
+```objc
+- (matrix_double4x4) double4x4AtTime:(NSTimeInterval) time;
 ```
 
 

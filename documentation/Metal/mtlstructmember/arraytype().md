@@ -1,7 +1,8 @@
 # arrayType()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a description of the underlying array when the struct member holds an array.
 
@@ -10,7 +11,7 @@ Provides a description of the underlying array when the struct member holds an a
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Provides a description of the underlying array when the struct member holds an a
 func arrayType() -> MTLArrayType?
 ```
 
+```objc
+- (MTLArrayType *) arrayType;
+```
+
 #### Return Value
 
-An object that describes the array. If [`dataType`](mtlstructmember/datatype.md) indicates that this member is not an array, this method returns `nil.`
+An object that describes the array. If [`dataType`](./datatype.md) indicates that this member is not an array, this method returns `nil.`
 
 ## See Also
 
-- [func structType() -> MTLStructType?](mtlstructmember/structtype.md)
+### Obtaining struct member details
+- [func structType() -> MTLStructType?](./structtype%28%29.md)
   Provides a description of the underlying struct when the struct member holds a struct.
-- [func pointerType() -> MTLPointerType?](mtlstructmember/pointertype.md)
+- [func pointerType() -> MTLPointerType?](./pointertype%28%29.md)
   Provides a description of the underlying pointer when the struct member holds a pointer.
-- [func textureReferenceType() -> MTLTextureReferenceType?](mtlstructmember/texturereferencetype.md)
+- [func textureReferenceType() -> MTLTextureReferenceType?](./texturereferencetype%28%29.md)
   Provides a description of the underlying texture when the struct member holds a texture.
 
 

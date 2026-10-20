@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeDiskCache
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 On-disk caches.
 
@@ -18,11 +19,16 @@ On-disk caches.
 let WKWebsiteDataTypeDiskCache: String
 ```
 
+```c
+extern NSString * const WKWebsiteDataTypeDiskCache;
+```
+
 ## See Also
 
-- [let WKWebsiteDataTypeMemoryCache: String](wkwebsitedatatypememorycache.md)
+### Cache types
+- [let WKWebsiteDataTypeMemoryCache: String](./wkwebsitedatatypememorycache.md)
   In-memory caches.
-- [let WKWebsiteDataTypeOfflineWebApplicationCache: String](wkwebsitedatatypeofflinewebapplicationcache.md)
+- [let WKWebsiteDataTypeOfflineWebApplicationCache: String](./wkwebsitedatatypeofflinewebapplicationcache.md)
   HTML offline web app caches.
 
 

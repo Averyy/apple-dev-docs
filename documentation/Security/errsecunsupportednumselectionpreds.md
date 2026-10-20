@@ -1,7 +1,8 @@
 # errSecUnsupportedNumSelectionPreds
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of selection predicates is not supported.
 
@@ -18,6 +19,10 @@ The number of selection predicates is not supported.
 
 ```swift
 var errSecUnsupportedNumSelectionPreds: OSStatus { get }
+```
+
+```c
+errSecUnsupportedNumSelectionPreds
 ```
 
 

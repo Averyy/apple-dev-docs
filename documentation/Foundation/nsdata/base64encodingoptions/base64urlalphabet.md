@@ -1,7 +1,8 @@
 # base64URLAlphabet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use the base64url alphabet to encode the data
 

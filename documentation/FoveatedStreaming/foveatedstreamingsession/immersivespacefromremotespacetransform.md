@@ -1,7 +1,8 @@
 # immersiveSpaceFromRemoteSpaceTransform
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
 

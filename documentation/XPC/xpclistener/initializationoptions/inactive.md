@@ -1,7 +1,8 @@
 # inactive
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the listener isn’t activated during its creation.
 
@@ -17,11 +18,12 @@ static let inactive: XPCListener.InitializationOptions
 
 #### Discussion
 
-> ❗ **Important**:  If you create a listener with this option, you must manually activate it by calling [`activate()`](xpclistener/activate().md).
+> ❗ **Important**:  If you create a listener with this option, you must manually activate it by calling [`activate()`](../activate%28%29.md).
 
 ## See Also
 
-- [static let none: XPCListener.InitializationOptions](xpclistener/initializationoptions/none.md)
+### Listener creation options
+- [static let none: XPCListener.InitializationOptions](./none.md)
   Indicates that the listener uses a default configuration during creation.
 
 

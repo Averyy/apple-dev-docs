@@ -1,7 +1,8 @@
 # startAction
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 static var startAction: MTRActionsCommandBits { get }
+```
+
+```c
+MTRActionsCommandBitsStartAction
 ```
 
 

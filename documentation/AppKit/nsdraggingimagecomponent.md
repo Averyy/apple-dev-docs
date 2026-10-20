@@ -1,7 +1,8 @@
 # NSDraggingImageComponent
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single object in a dragging item.
 
@@ -14,46 +15,51 @@ A single object in a dragging item.
 class NSDraggingImageComponent
 ```
 
+```objc
+@interface NSDraggingImageComponent : NSObject
+```
+
 #### Overview
 
-An array of [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) instances are composited together to create the dragging image for an [`NSDraggingItem`](nsdraggingitem.md). [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) instances can simply be considered as named images with a location used by an [`NSDraggingItem`](nsdraggingitem.md) instance.
+An array of [`NSDraggingImageComponent`](./nsdraggingimagecomponent.md) instances are composited together to create the dragging image for an [`NSDraggingItem`](./nsdraggingitem.md). [`NSDraggingImageComponent`](./nsdraggingimagecomponent.md) instances can simply be considered as named images with a location used by an [`NSDraggingItem`](./nsdraggingitem.md) instance.
 
 ## Topics
 
 ### Creating a Dragging Image Component
-- [init(key: NSDraggingItem.ImageComponentKey)](nsdraggingimagecomponent/init(key:).md)
+- [init(key: NSDraggingItem.ImageComponentKey)](./nsdraggingimagecomponent/init%28key%29.md)
   Initializes and returns a dragging image component with the specified key.
 ### Dragging Image Component
-- [var key: NSDraggingItem.ImageComponentKey](nsdraggingimagecomponent/key.md)
+- [var key: NSDraggingItem.ImageComponentKey](./nsdraggingimagecomponent/key.md)
   The unique name of this image component instance.
 ### Dragging Image Contents
-- [var contents: Any?](nsdraggingimagecomponent/contents.md)
+- [var contents: Any?](./nsdraggingimagecomponent/contents.md)
   An object providing the image contents of the component.
-- [var frame: NSRect](nsdraggingimagecomponent/frame.md)
+- [var frame: NSRect](./nsdraggingimagecomponent/frame.md)
   The coordinate space is the bounds of the parent dragging item.
 ### Constants
-- [NSDragImage Component Keys](nsdragimage-component-keys.md)
-  These constants are used by the [`init(key:)`](nsdraggingimagecomponent/init(key:).md), [`draggingImageComponentWithKey:`](nsdraggingimagecomponent/draggingimagecomponentwithkey:.md) methods and the [`key`](nsdraggingimagecomponent/key.md) property.
+- [NSDragImage Component Keys](./nsdragimage-component-keys.md)
+  These constants are used by the [`init(key:)`](./nsdraggingimagecomponent/init%28key%29.md), [`draggingImageComponentWithKey:`](./nsdraggingimagecomponent/draggingimagecomponentwithkey_.md) methods and the [`key`](./nsdraggingimagecomponent/key.md) property.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSDraggingSource](nsdraggingsource.md)
+### Drag Sources
+- [protocol NSDraggingSource](./nsdraggingsource.md)
   A set of methods that are implemented by the source object in a dragging session.
-- [class NSDraggingItem](nsdraggingitem.md)
+- [class NSDraggingItem](./nsdraggingitem.md)
   A single dragged item within a dragging session.
-- [class NSDraggingSession](nsdraggingsession.md)
+- [class NSDraggingSession](./nsdraggingsession.md)
   An object that encapsulates a drag-and-drop action.
 
 

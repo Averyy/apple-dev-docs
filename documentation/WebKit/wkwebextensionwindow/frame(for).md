@@ -1,7 +1,8 @@
 # frame(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the frame of the window is needed.
 
@@ -18,9 +19,13 @@ Called when the frame of the window is needed.
 optional func frame(for context: WKWebExtensionContext) -> CGRect
 ```
 
+```objc
+- (CGRect) frameForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-Defaults to [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) if not implemented.
+Defaults to [`CGRectNull`](../../CoreGraphics/cgrectnull.md) if not implemented.
 
 ## Parameters
 

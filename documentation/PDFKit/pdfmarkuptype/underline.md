@@ -1,7 +1,8 @@
 # PDFMarkupType.underline
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Underline style for the markup.
 
@@ -10,7 +11,7 @@ Underline style for the markup.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ Underline style for the markup.
 case underline
 ```
 
+```c
+kPDFMarkupTypeUnderline
+```
+
 ## See Also
 
-- [PDFMarkupType.highlight](pdfmarkuptype/highlight.md)
+### Constants
+- [PDFMarkupType.highlight](./highlight.md)
   Highlight style for the markup.
-- [PDFMarkupType.strikeOut](pdfmarkuptype/strikeout.md)
+- [PDFMarkupType.strikeOut](./strikeout.md)
   Strikethrough style for the markup.
-- [PDFMarkupType.redact](pdfmarkuptype/redact.md)
+- [PDFMarkupType.redact](./redact.md)
   The redaction style for markup.
 
 

@@ -1,7 +1,8 @@
 # RefreshCellularPlansCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to query a carrier URL for active eSIM cellular-plan profiles on a device.
 
@@ -12,7 +13,7 @@ The command to query a carrier URL for active eSIM cellular-plan profiles on a d
 
 ## Declaration
 
-```swift
+```
 object RefreshCellularPlansCommand.Command
 ```
 
@@ -20,7 +21,11 @@ object RefreshCellularPlansCommand.Command
 
 - `eSIMServerURL` (string) *(required)*: The carrier’s eSIM server URL to query. Obtain this URL from each carrier separately.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RefreshCellularPlans`
 
 
 ---

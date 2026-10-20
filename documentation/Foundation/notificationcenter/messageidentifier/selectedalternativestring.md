@@ -1,7 +1,8 @@
 # selectedAlternativeString
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var selectedAlternativeString: NotificationCenter.BaseMessageIdentifier<NSTextAlternatives.SelectedAlternativeStringMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSTextAlternatives.SelectedAlternativeStringMessage>`.
 
 
 ---

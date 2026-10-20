@@ -1,7 +1,8 @@
 # minutes(_:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct a time limit duration given a number of minutes.
 
@@ -11,7 +12,7 @@ Construct a time limit duration given a number of minutes.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 - Swift 6.0+
 - Xcode 16.0+

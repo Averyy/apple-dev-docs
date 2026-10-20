@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the image, text, and buttons.
 
@@ -10,7 +11,7 @@ The alignment of the image, text, and buttons.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

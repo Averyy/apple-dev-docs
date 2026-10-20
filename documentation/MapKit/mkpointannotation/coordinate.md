@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate point of the annotation.
 
@@ -20,9 +21,14 @@ The coordinate point of the annotation.
 var coordinate: CLLocationCoordinate2D { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+```
+
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
 
 
 ---

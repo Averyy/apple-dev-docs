@@ -1,7 +1,8 @@
 # init(channelFormat:width:height:featureChannels:numberOfImages:usage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image descriptor for an image container with options to set texture usage and batch size (number of images).
 
@@ -19,9 +20,13 @@ Creates an image descriptor for an image container with options to set texture u
 convenience init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int, numberOfImages: Int, usage: MTLTextureUsage)
 ```
 
+```objc
++ (instancetype) imageDescriptorWithChannelFormat:(MPSImageFeatureChannelFormat) channelFormat width:(NSUInteger) width height:(NSUInteger) height featureChannels:(NSUInteger) featureChannels numberOfImages:(NSUInteger) numberOfImages usage:(MTLTextureUsage) usage;
+```
+
 #### Return Value
 
-A valid [`MPSImageDescriptor`](mpsimagedescriptor.md) object.
+A valid [`MPSImageDescriptor`](../mpsimagedescriptor.md) object.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ A valid [`MPSImageDescriptor`](mpsimagedescriptor.md) object.
 
 ## See Also
 
-- [convenience init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int)](mpsimagedescriptor/init(channelformat:width:height:featurechannels:).md)
+### Methods
+- [convenience init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int)](./init%28channelformat,width,height,featurechannels%29.md)
   Creates an image descriptor for a single image.
 
 

@@ -1,7 +1,8 @@
 # boost(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command Boost
 
@@ -17,7 +18,15 @@ Command Boost
 ## Declaration
 
 ```swift
+func boost(with params: MTRWaterHeaterManagementClusterBoostParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func boost(with params: MTRWaterHeaterManagementClusterBoostParams) async throws
+```
+
+```objc
+- (void) boostWithParams:(MTRWaterHeaterManagementClusterBoostParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

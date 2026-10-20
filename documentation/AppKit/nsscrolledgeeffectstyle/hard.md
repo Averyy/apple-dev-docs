@@ -1,7 +1,8 @@
 # hard
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scroll edge effect with a hard cutoff.
 
@@ -12,6 +13,10 @@ A scroll edge effect with a hard cutoff.
 
 ```swift
 class var hard: NSScrollEdgeEffectStyle { get }
+```
+
+```objc
+@property (class, strong, readonly) NSScrollEdgeEffectStyle * hardStyle;
 ```
 
 

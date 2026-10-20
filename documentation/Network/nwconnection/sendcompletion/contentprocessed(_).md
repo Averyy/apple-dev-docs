@@ -1,7 +1,8 @@
 # NWConnection.SendCompletion.contentProcessed(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Provide a completion handler that’s invoked when the sent data is processed by the stack.
 
@@ -23,7 +24,8 @@ case contentProcessed(@Sendable (NWError?) -> Void)
 
 ## See Also
 
-- [NWConnection.SendCompletion.idempotent](nwconnection/sendcompletion/idempotent.md)
+### Completions
+- [NWConnection.SendCompletion.idempotent](./idempotent.md)
   Mark the sent data as idempotent—data that can be sent multiple times.
 
 

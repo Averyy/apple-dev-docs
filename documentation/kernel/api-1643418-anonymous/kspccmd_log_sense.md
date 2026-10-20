@@ -1,7 +1,8 @@
 # kSPCCmd_LOG_SENSE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSPCCmd_LOG_SENSE = 0x4D
 ```
 

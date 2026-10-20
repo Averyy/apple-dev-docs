@@ -1,17 +1,22 @@
 # addressString
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get a string representation of the Bluetooth device address for the target device. The format of the string is the same as returned by IOBluetoothNSStringFromDeviceAddress().
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var addressString: String! { get }
+```
+
+```objc
+@property (readonly) NSString * addressString;
 ```
 
 #### Discussion

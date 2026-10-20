@@ -1,7 +1,8 @@
 # GetUID
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the UID of the audio box.
 
@@ -10,7 +11,7 @@ Returns the UID of the audio box.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> GetUID();
 ```
 

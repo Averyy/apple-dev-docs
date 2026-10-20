@@ -1,7 +1,8 @@
 # fallbackURL
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that offers participants a way to identify or join the activity from a web browser.
 
@@ -27,11 +28,12 @@ Use this property to provide fallback behavior for users who don’t have your a
 
 ## See Also
 
-- [var title: String?](groupactivitymetadata/title.md)
+### Presenting the activity
+- [var title: String?](./title.md)
   The localized string to display as the title of your activity.
-- [var subtitle: String?](groupactivitymetadata/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The localized string that provides additional information about the activity.
-- [var previewImage: CGImage?](groupactivitymetadata/previewimage.md)
+- [var previewImage: CGImage?](./previewimage.md)
   The image to display for the current activity.
 
 

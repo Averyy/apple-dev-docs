@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The contrast of the third replacement color.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,31 +21,36 @@ The contrast of the third replacement color.
 var contrast3: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float contrast3;
+```
+
 ## See Also
 
-- [var centerColor1: CIColor](cispotcolor/centercolor1.md)
+### Instance Properties
+- [var centerColor1: CIColor](./centercolor1.md)
   The center value of the first color range to replace.
-- [var centerColor2: CIColor](cispotcolor/centercolor2.md)
+- [var centerColor2: CIColor](./centercolor2.md)
   The center value of the second color range to replace.
-- [var centerColor3: CIColor](cispotcolor/centercolor3.md)
+- [var centerColor3: CIColor](./centercolor3.md)
   The center value of the third color range to replace.
-- [var closeness1: Float](cispotcolor/closeness1.md)
+- [var closeness1: Float](./closeness1.md)
   A value that indicates how closely the first color must match before it’s replaced.
-- [var closeness2: Float](cispotcolor/closeness2.md)
+- [var closeness2: Float](./closeness2.md)
   A value that indicates how closely the second color must match before it’s replaced.
-- [var closeness3: Float](cispotcolor/closeness3.md)
+- [var closeness3: Float](./closeness3.md)
   A value that indicates how closely the third color must match before it’s replaced.
-- [var contrast1: Float](cispotcolor/contrast1.md)
+- [var contrast1: Float](./contrast1.md)
   The contrast of the first replacement color.
-- [var contrast2: Float](cispotcolor/contrast2.md)
+- [var contrast2: Float](./contrast2.md)
   The contrast of the second replacement color.
-- [var inputImage: CIImage?](cispotcolor/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var replacementColor1: CIColor](cispotcolor/replacementcolor1.md)
+- [var replacementColor1: CIColor](./replacementcolor1.md)
   A replacement color for the first color range.
-- [var replacementColor2: CIColor](cispotcolor/replacementcolor2.md)
+- [var replacementColor2: CIColor](./replacementcolor2.md)
   A replacement color for the second color range.
-- [var replacementColor3: CIColor](cispotcolor/replacementcolor3.md)
+- [var replacementColor3: CIColor](./replacementcolor3.md)
   A replacement color for the third color range.
 
 

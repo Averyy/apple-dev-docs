@@ -1,7 +1,8 @@
 # tableView(_:canHandle:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks your delegate whether it can accept the specified type of data.
 
@@ -17,19 +18,23 @@ Asks your delegate whether it can accept the specified type of data.
 optional func tableView(_ tableView: UITableView, canHandle session: any UIDropSession) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView canHandleDropSession:(id<UIDropSession>) session;
+```
+
 ## Mentions
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the table view can accept the dragged data, or [`false`](https://developer.apple.com/documentation/swift/false) if it can’t.
+[`true`](../../Swift/true.md) if the table view can accept the dragged data, or [`false`](../../Swift/false.md) if it can’t.
 
 #### Discussion
 
-Implement this method when you want to dynamically determine whether to accept dropped data in your table view. In your implementation, check the type of the dragged data and return a Boolean value indicating whether you can accept the drop. For example, you might call the [`hasItemsConforming(toTypeIdentifiers:)`](uidragdropsession/hasitemsconforming(totypeidentifiers:).md) method of the session object to determine whether it contains data that your app can accept.
+Implement this method when you want to dynamically determine whether to accept dropped data in your table view. In your implementation, check the type of the dragged data and return a Boolean value indicating whether you can accept the drop. For example, you might call the [`hasItemsConforming(toTypeIdentifiers:)`](../uidragdropsession/hasitemsconforming%28totypeidentifiers%29.md) method of the session object to determine whether it contains data that your app can accept.
 
-If you don’t implement this method, the table view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true). If you return [`false`](https://developer.apple.com/documentation/swift/false) from this method, the table view doesn’t call any more methods of your drop delegate for the given session.
+If you don’t implement this method, the table view assumes a return value of [`true`](../../Swift/true.md). If you return [`false`](../../Swift/false.md) from this method, the table view doesn’t call any more methods of your drop delegate for the given session.
 
 ## Parameters
 

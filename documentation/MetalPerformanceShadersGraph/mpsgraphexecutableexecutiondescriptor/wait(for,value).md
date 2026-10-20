@@ -1,7 +1,8 @@
 # wait(for:value:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits on these shared events before scheduling execution on the HW.
 
@@ -17,6 +18,10 @@ Waits on these shared events before scheduling execution on the HW.
 
 ```swift
 func wait(for event: any MTLSharedEvent, value: UInt64)
+```
+
+```objc
+- (void) waitForEvent:(id<MTLSharedEvent>) event value:(uint64_t) value;
 ```
 
 #### Discussion

@@ -1,17 +1,22 @@
 # people()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of all the people in the Address Book database.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func people() -> [Any]!
+```
+
+```objc
+- (NSArray *) people;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ If the database doesn’t contain any people, this method returns an empty array
 
 ## See Also
 
-- [func groups() -> [Any]!](abaddressbook-swift.class/groups.md)
+### Retrieving Groups and People
+- [func groups() -> [Any]!](./groups%28%29.md)
   Returns an array of all the groups in the Address Book database.
 
 

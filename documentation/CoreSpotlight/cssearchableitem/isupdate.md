@@ -1,7 +1,8 @@
 # isUpdate
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to treat the item as an update instead of a new item.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether to treat the item as an update instead of
 var isUpdate: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL isUpdate;
+```
+
 #### Discussion
 
 Set the value of this property to `true` if the item represents an update to information already in the index. Marking an item as an update makes the indexing process more efficient. If this property is `false` and the system encounters an item with the same identifier in the index, it deletes the old item and then inserts the new one. When the property is `true`, it updates the existing item, which saves time. If this property is `true` and the item doesn’t exist in the index, the system ignores the request to index the item and doesn’t create a new item.
@@ -26,17 +31,18 @@ When configuring the attributes for the item, set an attribute to `nil` to remov
 
 ## See Also
 
-- [var uniqueIdentifier: String](cssearchableitem/uniqueidentifier.md)
+### Setting attributes on a searchable item
+- [var uniqueIdentifier: String](./uniqueidentifier.md)
   The value that uniquely identifies the searchable item within your app.
-- [var domainIdentifier: String?](cssearchableitem/domainidentifier.md)
+- [var domainIdentifier: String?](./domainidentifier.md)
   An optional identifier that represents the domain or owner of the item.
-- [var attributeSet: CSSearchableItemAttributeSet](cssearchableitem/attributeset.md)
-  The set of attributes that contain metadata associated with the item in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) object.
-- [var expirationDate: Date!](cssearchableitem/expirationdate.md)
+- [var attributeSet: CSSearchableItemAttributeSet](./attributeset.md)
+  The set of attributes that contain metadata associated with the item in a [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md) object.
+- [var expirationDate: Date!](./expirationdate.md)
   The date after which the searchable item should no longer exist.
-- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
+- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](./updatelisteneroptions-swift.property.md)
   The types of notifications to request from Spotlight.
-- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
+- [CSSearchableItem.UpdateListenerOptions](./updatelisteneroptions-swift.struct.md)
   The options to generate summarization or prioritization information for a searchable item.
 
 

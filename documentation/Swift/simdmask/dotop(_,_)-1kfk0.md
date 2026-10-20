@@ -1,7 +1,8 @@
 # .^(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 A vector mask that is the pointwise exclusive or of the inputs.
 
@@ -19,6 +20,8 @@ A vector mask that is the pointwise exclusive or of the inputs.
 ```swift
 static func .^ (a: SIMDMask<Storage>, b: SIMDMask<Storage>) -> SIMDMask<Storage>
 ```
+
+Available when `Storage` is `SIMD8<Int32>`.
 
 #### Discussion
 

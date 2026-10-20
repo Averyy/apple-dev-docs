@@ -1,7 +1,8 @@
 # depthResolveFilter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter to use when resolving the depth attachment at the end of a multisampled render pass.
 
@@ -23,9 +24,10 @@ Corresponds to `MTLRenderPassDepthAttachmentDescriptor.depthResolveFilter`.
 
 ## See Also
 
-- [var clearColor: MTLClearColor](lowlevelrenderer/output-swift.struct/clearcolor.md)
+### Clearing and resolving
+- [var clearColor: MTLClearColor](./clearcolor.md)
   The color to use when clearing the color attachment at the start of a render pass.
-- [var clearDepth: Double](lowlevelrenderer/output-swift.struct/cleardepth.md)
+- [var clearDepth: Double](./cleardepth.md)
   The depth value to use when clearing the depth attachment at the start of a render pass.
 
 

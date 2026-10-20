@@ -1,7 +1,8 @@
 # Resolvable()
 
 **Framework**: Distributed  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Enables the attached to protocol to be resolved as remote distributed actor reference.
 
@@ -11,7 +12,7 @@ Enables the attached to protocol to be resolved as remote distributed actor refe
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,11 +28,12 @@ The attached to type must be a protocol that refines the `DistributedActor` prot
 
 ## See Also
 
-- [protocol DistributedActor](distributedactor.md)
+### Distributed Actors
+- [protocol DistributedActor](./distributedactor.md)
   Common protocol to which all distributed actors conform implicitly.
-- [protocol DistributedActorSystem](distributedactorsystem.md)
+- [protocol DistributedActorSystem](./distributedactorsystem.md)
   A distributed actor system underpins and implements all functionality of distributed actors.
-- [func buildDefaultDistributedRemoteActorExecutor<Act>(Act) -> UnownedSerialExecutor](builddefaultdistributedremoteactorexecutor(_:).md)
+- [func buildDefaultDistributedRemoteActorExecutor<Act>(Act) -> UnownedSerialExecutor](./builddefaultdistributedremoteactorexecutor%28_%29.md)
   Obtain the unowned `SerialExecutor` that is used by by remote distributed actor references. The executor is shared between all remote default executor remote distributed actors, and it will crash if any job is enqueued on it.
 
 

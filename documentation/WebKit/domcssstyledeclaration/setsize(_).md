@@ -1,7 +1,8 @@
 # setSize(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setSize(_ size: String!)
+```
+
+```objc
+- (void) setSize:(NSString *) size;
 ```
 
 

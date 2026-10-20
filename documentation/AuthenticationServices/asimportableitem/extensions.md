@@ -1,7 +1,8 @@
 # extensions
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extensions associated with this item.
 

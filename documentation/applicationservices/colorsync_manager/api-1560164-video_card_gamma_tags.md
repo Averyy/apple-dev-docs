@@ -7,11 +7,11 @@ Specify video card gamma information.
 ## Topics
 
 ### Constants
-- [var cmPS2CRDVMSizeTag: Int](cmps2crdvmsizetag.md)
-- [var cmVideoCardGammaTag: Int](cmvideocardgammatag.md)
-- [var cmMakeAndModelTag: Int](cmmakeandmodeltag.md)
-- [var cmProfileDescriptionMLTag: Int](cmprofiledescriptionmltag.md)
-- [var cmNativeDisplayInfoTag: Int](cmnativedisplayinfotag.md)
+- [var cmPS2CRDVMSizeTag: Int](../cmps2crdvmsizetag.md)
+- [var cmVideoCardGammaTag: Int](../cmvideocardgammatag.md)
+- [var cmMakeAndModelTag: Int](../cmmakeandmodeltag.md)
+- [var cmProfileDescriptionMLTag: Int](../cmprofiledescriptionmltag.md)
+- [var cmNativeDisplayInfoTag: Int](../cmnativedisplayinfotag.md)
 
 
 ---

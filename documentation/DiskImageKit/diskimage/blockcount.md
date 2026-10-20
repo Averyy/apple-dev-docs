@@ -1,7 +1,8 @@
 # blockCount
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of blocks in the disk image.
 

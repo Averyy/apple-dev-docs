@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the color used in the background of the thumbnail view.
 
@@ -15,9 +16,30 @@ Returns the color used in the background of the thumbnail view.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+@NSCopying
+var backgroundColor: UIColor? { get set }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var backgroundColor: NSColor? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, nullable) UIColor * backgroundColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSColor * backgroundColor;
 ```
 
 #### Return Value
@@ -26,9 +48,10 @@ The color of the background in the thumbnail view.
 
 ## See Also
 
-- [var maximumNumberOfColumns: Int](pdfthumbnailview/maximumnumberofcolumns.md)
+### Working with Thumbnail View Display Characteristics
+- [var maximumNumberOfColumns: Int](./maximumnumberofcolumns.md)
   Returns the maximum number of columns of thumbnails the thumbnail view can display.
-- [var labelFont: NSFont?](pdfthumbnailview/labelfont.md)
+- [var labelFont: NSFont?](./labelfont.md)
   Returns the font used to label the thumbnails.
 
 

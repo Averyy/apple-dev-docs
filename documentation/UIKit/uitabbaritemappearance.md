@@ -1,7 +1,8 @@
 # UITabBarItemAppearance
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for customizing the appearance of tab bar items.
 
@@ -19,58 +20,63 @@ An object for customizing the appearance of tab bar items.
 class UITabBarItemAppearance
 ```
 
+```objc
+@interface UITabBarItemAppearance : NSObject
+```
+
 #### Overview
 
-Use a [`UITabBarItemAppearance`](uitabbaritemappearance.md) object to customize the appearance of a tab bar item in each of its possible states. You can customize the appearance differently for each state. For example, you might apply different colors to the tab bar item’s icon in the [`normal`](uitabbaritemappearance/normal.md) and [`selected`](uitabbaritemappearance/selected.md) states.
+Use a [`UITabBarItemAppearance`](./uitabbaritemappearance.md) object to customize the appearance of a tab bar item in each of its possible states. You can customize the appearance differently for each state. For example, you might apply different colors to the tab bar item’s icon in the [`normal`](./uitabbaritemappearance/normal.md) and [`selected`](./uitabbaritemappearance/selected.md) states.
 
 ## Topics
 
 ### Creating a tab bar item appearance object
-- [init(style: UITabBarItemAppearance.Style)](uitabbaritemappearance/init(style:).md)
+- [init(style: UITabBarItemAppearance.Style)](./uitabbaritemappearance/init%28style%29.md)
   Creates an appearance object with appropriate default values for a tab bar, displaying its items with the specified layout style.
-- [convenience init()](uitabbaritemappearance/init.md)
+- [convenience init()](./uitabbaritemappearance/init%28%29.md)
   Creates an appearance object with default values for a stacked tab bar item.
-- [init(coder: NSCoder)](uitabbaritemappearance/init(coder:).md)
+- [init(coder: NSCoder)](./uitabbaritemappearance/init%28coder%29.md)
   Creates an appearance object from data in an unarchiver.
 ### Copying a tab bar item appearance object
-- [func copy() -> Self](uitabbaritemappearance/copy.md)
+- [func copy() -> Self](./uitabbaritemappearance/copy%28%29.md)
   Creates a copy of the appearance object.
 ### Resetting the appearance properties
-- [func configureWithDefault(for: UITabBarItemAppearance.Style)](uitabbaritemappearance/configurewithdefault(for:).md)
+- [func configureWithDefault(for: UITabBarItemAppearance.Style)](./uitabbaritemappearance/configurewithdefault%28for%29.md)
   Configures the tab bar item appearance object with appropriate values for the specified style.
-- [UITabBarItemAppearance.Style](uitabbaritemappearance/style.md)
+- [UITabBarItemAppearance.Style](./uitabbaritemappearance/style.md)
   Constants indicating the layout of a tab bar item’s content.
 ### Configuring attributes for different item states
-- [var normal: UITabBarItemStateAppearance](uitabbaritemappearance/normal.md)
+- [var normal: UITabBarItemStateAppearance](./uitabbaritemappearance/normal.md)
   The appearance data to apply to the tab bar item when it’s enabled, unselected, and not the focused item.
-- [var selected: UITabBarItemStateAppearance](uitabbaritemappearance/selected.md)
+- [var selected: UITabBarItemStateAppearance](./uitabbaritemappearance/selected.md)
   The appearance data to apply to the tab bar item when it’s selected.
-- [var disabled: UITabBarItemStateAppearance](uitabbaritemappearance/disabled.md)
+- [var disabled: UITabBarItemStateAppearance](./uitabbaritemappearance/disabled.md)
   The appearance data to apply to the tab bar item when it’s disabled.
-- [var focused: UITabBarItemStateAppearance](uitabbaritemappearance/focused.md)
+- [var focused: UITabBarItemStateAppearance](./uitabbaritemappearance/focused.md)
   The appearance data to apply to the tab bar item when it’s focused.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UITabBarAppearance](uitabbarappearance.md)
+### Tab bar appearance
+- [class UITabBarAppearance](./uitabbarappearance.md)
   An object for customizing the appearance of a tab bar.
-- [class UITabBarItemStateAppearance](uitabbaritemstateappearance.md)
+- [class UITabBarItemStateAppearance](./uitabbaritemstateappearance.md)
   A data object containing the specific customizations for tab bar items in a particular state.
 
 

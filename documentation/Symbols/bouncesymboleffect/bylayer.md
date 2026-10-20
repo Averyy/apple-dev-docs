@@ -1,7 +1,8 @@
 # byLayer
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that bounces each layer separately.
 
@@ -22,7 +23,8 @@ var byLayer: BounceSymbolEffect { get }
 
 ## See Also
 
-- [var wholeSymbol: BounceSymbolEffect](bouncesymboleffect/wholesymbol.md)
+### Determining effect scope
+- [var wholeSymbol: BounceSymbolEffect](./wholesymbol.md)
   An effect that bounces all layers simultaneously.
 
 

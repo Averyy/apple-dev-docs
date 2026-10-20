@@ -1,7 +1,8 @@
 # favoriteRank
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The item’s favorite rank.
 
@@ -18,15 +19,20 @@ The item’s favorite rank.
 static var favoriteRank: NSFileProviderItemFields { get }
 ```
 
+```c
+NSFileProviderItemFavoriteRank
+```
+
 ## See Also
 
-- [static var extendedAttributes: NSFileProviderItemFields](nsfileprovideritemfields/extendedattributes.md)
+### Working with Metadata
+- [static var extendedAttributes: NSFileProviderItemFields](./extendedattributes.md)
   The item’s extended attributes.
-- [static var fileSystemFlags: NSFileProviderItemFields](nsfileprovideritemfields/filesystemflags.md)
+- [static var fileSystemFlags: NSFileProviderItemFields](./filesystemflags.md)
   The flags describing the item’s on-disk representation.
-- [static var tagData: NSFileProviderItemFields](nsfileprovideritemfields/tagdata.md)
+- [static var tagData: NSFileProviderItemFields](./tagdata.md)
   The tags for the item.
-- [static var typeAndCreator: NSFileProviderItemFields](nsfileprovideritemfields/typeandcreator.md)
+- [static var typeAndCreator: NSFileProviderItemFields](./typeandcreator.md)
   The file type and creator codes for the item.
 
 

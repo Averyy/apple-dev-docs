@@ -1,7 +1,8 @@
 # MeshDescriptor.Materials.allFaces(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A single material index for the whole mesh.
 
@@ -11,7 +12,7 @@ A single material index for the whole mesh.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

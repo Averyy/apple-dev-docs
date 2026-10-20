@@ -1,7 +1,8 @@
 # PaymentCardReaderError.requestInterrupted
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the application went to background before a reader request completed.
 

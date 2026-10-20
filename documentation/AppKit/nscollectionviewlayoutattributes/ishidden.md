@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the element is hidden.
 
@@ -14,19 +15,24 @@ A Boolean value indicating whether the element is hidden.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). As an optimization, the collection view might not create the corresponding view when the value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Because there might not be a view, hidden elements do not participate in hit testing for the collection view.
+The default value of this property is [`false`](../../Swift/false.md). As an optimization, the collection view might not create the corresponding view when the value of this property is [`true`](../../Swift/true.md). Because there might not be a view, hidden elements do not participate in hit testing for the collection view.
 
 ## See Also
 
-- [var frame: NSRect](nscollectionviewlayoutattributes/frame.md)
+### Accessing the Layout Attributes
+- [var frame: NSRect](./frame.md)
   The frame rectangle of the element.
-- [var size: NSSize](nscollectionviewlayoutattributes/size.md)
+- [var size: NSSize](./size.md)
   The size of the element.
-- [var alpha: CGFloat](nscollectionviewlayoutattributes/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   The transparency of the element.
-- [var zIndex: Int](nscollectionviewlayoutattributes/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The element’s position on the z axis.
 
 

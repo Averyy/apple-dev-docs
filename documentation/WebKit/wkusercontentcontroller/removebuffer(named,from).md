@@ -1,7 +1,8 @@
 # removeBuffer(named:from:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a previously added data buffer from the given `WKContentWorld`.
 

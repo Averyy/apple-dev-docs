@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The raw data of an IP address.
@@ -23,13 +24,14 @@ var rawValue: Data { get }
 
 ## See Also
 
-- [var interface: NWInterface?](ipaddress/interface.md)
+### Inspecting Address Properties
+- [var interface: NWInterface?](./interface.md)
   The interface associated with this address, such as the IPv6 scoped interface.
-- [var isLinkLocal: Bool](ipaddress/islinklocal.md)
+- [var isLinkLocal: Bool](./islinklocal.md)
   A Boolean indicating whether this address is in a link-local range.
-- [var isLoopback: Bool](ipaddress/isloopback.md)
+- [var isLoopback: Bool](./isloopback.md)
   A Boolean indicating whether this address is a loopback address for the local device.
-- [var isMulticast: Bool](ipaddress/ismulticast.md)
+- [var isMulticast: Bool](./ismulticast.md)
   A Boolean indicating whether this address is a multicast address.
 
 

@@ -1,7 +1,8 @@
 # init(radius:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a region with a circular shape of the specified radius.
 
@@ -18,6 +19,10 @@ Initializes and returns a region with a circular shape of the specified radius.
 init(radius: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithRadius:(CGFloat) radius;
+```
+
 #### Return Value
 
 A circular region with the specified radius.
@@ -32,9 +37,10 @@ The center of the circle is the origin of the region’s coordinate system.
 
 ## See Also
 
-- [class var infinite: UIRegion](uiregion/infinite.md)
+### Creating and initializing regions
+- [class var infinite: UIRegion](./infinite.md)
   Returns the region that encloses all points.
-- [init(size: CGSize)](uiregion/init(size:).md)
+- [init(size: CGSize)](./init%28size%29.md)
   Initializes and returns a rectangular region of the specified size.
 
 

@@ -1,7 +1,8 @@
 # didChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a change in a user defaults setting.
 
@@ -20,13 +21,16 @@ An identifier for a message about a change in a user defaults setting.
 static var didChange: NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UserDefaults.DidChangeMessage`](userdefaults/didchangemessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UserDefaults.DidChangeMessage`](../../userdefaults/didchangemessage.md).
 
 ## See Also
 
-- [static var sizeLimitExceeded: NotificationCenter.BaseMessageIdentifier<UserDefaults.SizeLimitExceededMessage>](notificationcenter/messageidentifier/sizelimitexceeded.md)
+### Identifying defaults messages
+- [static var sizeLimitExceeded: NotificationCenter.BaseMessageIdentifier<UserDefaults.SizeLimitExceededMessage>](./sizelimitexceeded.md)
   An identifier for a message about a user defaults database exceeding its maximum size.
 
 

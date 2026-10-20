@@ -1,7 +1,8 @@
 # init(formatDescription:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an AVSpatialVideoConfiguration with a format description.
 
@@ -33,9 +34,10 @@ The format description is not stored.
 
 ## See Also
 
-- [init()](avspatialvideoconfiguration-swift.struct/init.md)
+### Creating a configuration
+- [init()](./init%28%29.md)
   Initializes an AVSpatialVideoConfiguration instance with all the properties set to nil.
-- [static var nonSpatial: AVSpatialVideoConfiguration](avspatialvideoconfiguration-swift.struct/nonspatial.md)
+- [static var nonSpatial: AVSpatialVideoConfiguration](./nonspatial.md)
   A non-spatial video configuration.
 
 

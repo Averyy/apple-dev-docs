@@ -1,7 +1,8 @@
 # ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary containing details of the beta program.
 
@@ -14,7 +15,7 @@ A dictionary containing details of the beta program.
 
 ## Declaration
 
-```swift
+```
 object ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram
 ```
 

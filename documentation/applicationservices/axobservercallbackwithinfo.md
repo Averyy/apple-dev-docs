@@ -1,7 +1,8 @@
 # AXObserverCallbackWithInfo
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias AXObserverCallbackWithInfo = (AXObserver, AXUIElement, CFString, CFDictionary, UnsafeMutableRawPointer?) -> Void
+```
+
+```c
+typedef void (*AXObserverCallbackWithInfo)(AXObserverRef observer, AXUIElementRef element, CFStringRef notification, CFDictionaryRef info, void *refcon);
 ```
 
 ## Parameters
@@ -22,7 +27,8 @@ typealias AXObserverCallbackWithInfo = (AXObserver, AXUIElement, CFString, CFDic
 
 ## See Also
 
-- [typealias AXObserverCallback](axobservercallback.md)
+### Callbacks
+- [typealias AXObserverCallback](./axobservercallback.md)
 
 
 ---

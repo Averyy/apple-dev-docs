@@ -1,7 +1,8 @@
 # init(wrappedValue:_:store:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property that can save and restore tab sidebar customizations.
 
@@ -20,7 +21,7 @@ init(wrappedValue: Value = TabViewCustomization(), _ key: String, store: UserDef
 
 #### Discussion
 
-You can set this customization on the TabView using [`tabViewCustomization(_:)`](view/tabviewcustomization(_:).md).
+You can set this customization on the TabView using [`tabViewCustomization(_:)`](../view/tabviewcustomization%28_%29.md).
 
 The tab view customization is typically not added to `SceneStorage`, but instead stored in `AppStorage` so the customizations are consistent across different scenes.
 

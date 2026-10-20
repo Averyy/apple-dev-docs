@@ -1,7 +1,8 @@
 # publicPermission
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Th public’s read and write permissions.
 
@@ -10,7 +11,7 @@ Th public’s read and write permissions.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ShareParticipantPermission publicPermission;
 ```
 

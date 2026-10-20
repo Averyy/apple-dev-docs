@@ -1,7 +1,8 @@
 # traitCollection
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of traits that describes orientation and other characteristics of the snapshot.
 
@@ -18,11 +19,16 @@ A collection of traits that describes orientation and other characteristics of t
 var traitCollection: UITraitCollection { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UITraitCollection * traitCollection;
+```
+
 ## See Also
 
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklookaroundsnapshotter/options/pointofinterestfilter.md)
+### Customizing Snaphot Appearance
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   A filter to use to customize what map features are visible in the snapshot.
-- [var size: CGSize](mklookaroundsnapshotter/options/size.md)
+- [var size: CGSize](./size.md)
   The requested size of the snapshot image.
 
 

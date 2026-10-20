@@ -1,145 +1,147 @@
 # Concurrency
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 Perform asynchronous and parallel operations.
 
 ## Topics
 
 ### Essentials
-- [Code-along: Elevating an app with Swift concurrency](code-along-elevating-an-app-with-swift-concurrency.md)
+- [Code-along: Elevating an app with Swift concurrency](./code-along-elevating-an-app-with-swift-concurrency.md)
   Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
-- [Updating an app to use strict concurrency](updating-an-app-to-use-strict-concurrency.md)
+- [Updating an app to use strict concurrency](./updating-an-app-to-use-strict-concurrency.md)
   Use this code to follow along with a guide to migrating your code to take advantage of the full concurrency protection that the Swift 6 language mode provides.
-- [Updating an app to use Swift concurrency](updating-an-app-to-use-swift-concurrency.md)
+- [Updating an app to use Swift concurrency](./updating-an-app-to-use-swift-concurrency.md)
   Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 ### Tasks
-- [struct Task](task.md)
+- [struct Task](./task.md)
   A unit of asynchronous work.
-- [struct TaskGroup](taskgroup.md)
+- [struct TaskGroup](./taskgroup.md)
   A group that contains dynamically created child tasks.
-- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
+- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](./withtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingTaskGroup](throwingtaskgroup.md)
+- [struct ThrowingTaskGroup](./throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
-- [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)
+- [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](./withthrowingtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of throwing child tasks.
-- [struct TaskPriority](taskpriority.md)
+- [struct TaskPriority](./taskpriority.md)
   The priority of a task.
-- [struct DiscardingTaskGroup](discardingtaskgroup.md)
+- [struct DiscardingTaskGroup](./discardingtaskgroup.md)
   A discarding group that contains dynamically created child tasks.
-- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](withdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](./withdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingDiscardingTaskGroup](throwingdiscardingtaskgroup.md)
+- [struct ThrowingDiscardingTaskGroup](./throwingdiscardingtaskgroup.md)
   A throwing discarding group that contains dynamically created child tasks.
-- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](withthrowingdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](./withthrowingdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct UnsafeCurrentTask](unsafecurrenttask.md)
+- [struct UnsafeCurrentTask](./unsafecurrenttask.md)
   An unsafe reference to the current task.
 ### Asynchronous Sequences
-- [protocol AsyncSequence](asyncsequence.md)
+- [protocol AsyncSequence](./asyncsequence.md)
   A type that provides asynchronous, sequential, iterated access to its elements.
-- [struct AsyncStream](asyncstream.md)
+- [struct AsyncStream](./asyncstream.md)
   An asynchronous sequence generated from a closure that calls a continuation to produce new elements.
-- [struct AsyncThrowingStream](asyncthrowingstream.md)
+- [struct AsyncThrowingStream](./asyncthrowingstream.md)
   An asynchronous sequence generated from an error-throwing closure that calls a continuation to produce new elements.
 ### Continuations
-- [struct Continuation](continuation.md)
+- [struct Continuation](./continuation.md)
   A mechanism to interface between synchronous and asynchronous code, which enforces that the continuation is resumed exactly once.
-- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](withcontinuation(of:_:).md)
+- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](./withcontinuation%28of,_%29.md)
   Invokes the passed in closure with a non-copyable continuation for the current task.
-- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](./withcontinuation%28of,throwing,_%29.md)
   Invokes the passed in closure with a non-copyable continuation for the current task.
-- [struct CheckedContinuation](checkedcontinuation.md)
+- [struct CheckedContinuation](./checkedcontinuation.md)
   A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
-- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](./withcheckedcontinuation%28function,_%29.md)
   Invokes the passed in closure with a checked continuation for the current task.
-- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
-- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](./withcheckedthrowingcontinuation%28function,_%29-13yf6.md)
+- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](./withcheckedthrowingcontinuation%28function,_%29-2k46m.md)
   Invokes the passed in closure with a checked continuation for the current task.
-- [struct UnsafeContinuation](unsafecontinuation.md)
+- [struct UnsafeContinuation](./unsafecontinuation.md)
   A mechanism to interface between synchronous and asynchronous code, without correctness checking.
-- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](./withunsafecontinuation%28_%29.md)
   Invokes the passed in closure with a unsafe continuation for the current task.
-- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](./withunsafethrowingcontinuation%28_%29-32nwt.md)
   Invokes the passed in closure with a unsafe continuation for the current task.
-- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](./withunsafethrowingcontinuation%28_%29-7zhvy.md)
 ### Actors
-- [protocol Sendable](sendable.md)
+- [protocol Sendable](./sendable.md)
   A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
-- [protocol Actor](actor.md)
+- [protocol Actor](./actor.md)
   Common protocol to which all actors conform.
-- [actor MainActor](mainactor.md)
+- [actor MainActor](./mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
-- [protocol GlobalActor](globalactor.md)
+- [protocol GlobalActor](./globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
-- [protocol SendableMetatype](sendablemetatype.md)
+- [protocol SendableMetatype](./sendablemetatype.md)
   A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
-- [macro isolation<T>() -> T](isolation().md)
+- [macro isolation<T>() -> T](./isolation%28%29.md)
   Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
 ### Task-Local Storage
-- [class TaskLocal](tasklocal.md)
+- [class TaskLocal](./tasklocal.md)
   Wrapper type that defines a task-local value key.
-- [macro TaskLocal()](tasklocal().md)
-  Macro that introduces a [`TaskLocal`](tasklocal.md) binding.
+- [macro TaskLocal()](./tasklocal%28%29.md)
+  Macro that introduces a [`TaskLocal`](./tasklocal.md) binding.
 ### Executors
-- [protocol Executor](executor.md)
+- [protocol Executor](./executor.md)
   A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
+- [struct ExecutorJob](./executorjob.md)
   A unit of schedulable work.
-- [protocol SerialExecutor](serialexecutor.md)
+- [protocol SerialExecutor](./serialexecutor.md)
   A service that executes jobs.
-- [protocol TaskExecutor](taskexecutor.md)
+- [protocol TaskExecutor](./taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [struct UnownedJob](unownedjob.md)
+- [struct UnownedJob](./unownedjob.md)
   A unit of schedulable work.
-- [struct JobPriority](jobpriority.md)
+- [struct JobPriority](./jobpriority.md)
   The priority of this job.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
+- [struct UnownedSerialExecutor](./unownedserialexecutor.md)
   An unowned reference to a serial executor (a `SerialExecutor` value).
-- [struct UnownedTaskExecutor](unownedtaskexecutor.md)
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
+- [struct UnownedTaskExecutor](./unownedtaskexecutor.md)
+- [var globalConcurrentExecutor: any TaskExecutor](./globalconcurrentexecutor.md)
   The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
-  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](./withtaskexecutorpreference%28_,isolation,operation%29.md)
+  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](./taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
 ### Deprecated
-- [func extractIsolation<each Arg, Result>((repeat each Arg) async throws -> Result) -> (any Actor)?](extractisolation(_:).md)
-- [func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(isolation:function:_:).md)
-  Source-compatibility overload; replaced by [`withCheckedContinuation(function:_:)`](withcheckedcontinuation(function:_:).md).
-- [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(isolation:function:_:).md)
-  Source-compatibility overload; replaced by [`withCheckedThrowingContinuation(function:_:)`](withcheckedthrowingcontinuation(function:_:)-2k46m.md).
-- [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(isolation:_:).md)
-  Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](withunsafecontinuation(_:).md).
-- [typealias AnyActor](anyactor.md)
+- [func extractIsolation<each Arg, Result>((repeat each Arg) async throws -> Result) -> (any Actor)?](./extractisolation%28_%29.md)
+- [func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](./withcheckedcontinuation%28isolation,function,_%29.md)
+  Source-compatibility overload; replaced by [`withCheckedContinuation(function:_:)`](./withcheckedcontinuation%28function,_%29.md).
+- [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](./withcheckedthrowingcontinuation%28isolation,function,_%29.md)
+  Source-compatibility overload; replaced by [`withCheckedThrowingContinuation(function:_:)`](./withcheckedthrowingcontinuation%28function,_%29-2k46m.md).
+- [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](./withunsafecontinuation%28isolation,_%29.md)
+  Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](./withunsafecontinuation%28_%29.md).
+- [typealias AnyActor](./anyactor.md)
   Common marker protocol providing a shared “base” for both (local) `Actor` and (potentially remote) `DistributedActor` types.
-- [typealias ConcurrentValue](concurrentvalue.md)
-- [struct Job](job.md)
-  Deprecated equivalent of [`ExecutorJob`](executorjob.md).
-- [typealias PartialAsyncTask](partialasynctask.md)
-- [typealias UnsafeConcurrentValue](unsafeconcurrentvalue.md)
-- [protocol UnsafeSendable](unsafesendable.md)
+- [typealias ConcurrentValue](./concurrentvalue.md)
+- [struct Job](./job.md)
+  Deprecated equivalent of [`ExecutorJob`](./executorjob.md).
+- [typealias PartialAsyncTask](./partialasynctask.md)
+- [typealias UnsafeConcurrentValue](./unsafeconcurrentvalue.md)
+- [protocol UnsafeSendable](./unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
-- [typealias UnsafeThrowingContinuation](unsafethrowingcontinuation.md)
-- [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(isolation:_:).md)
-  Source-compatibility overload; replaced by [`withUnsafeThrowingContinuation(_:)`](withunsafethrowingcontinuation(_:)-32nwt.md).
+- [typealias UnsafeThrowingContinuation](./unsafethrowingcontinuation.md)
+- [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](./withunsafethrowingcontinuation%28isolation,_%29.md)
+  Source-compatibility overload; replaced by [`withUnsafeThrowingContinuation(_:)`](./withunsafethrowingcontinuation%28_%29-32nwt.md).
 
 ## See Also
 
-- [Input and Output](input-and-output.md)
+### Programming Tasks
+- [Input and Output](./input-and-output.md)
   Print values to the console, read from and write to text streams, and use command line arguments.
-- [Debugging and Reflection](debugging-and-reflection.md)
+- [Debugging and Reflection](./debugging-and-reflection.md)
   Fortify your code with runtime checks, and examine your values’ runtime representation.
-- [Macros](macros.md)
+- [Macros](./macros.md)
   Generate boilerplate code and perform other compile-time operations.
-- [Key-Path Expressions](key-path-expressions.md)
+- [Key-Path Expressions](./key-path-expressions.md)
   Use key-path expressions to access properties dynamically.
-- [Manual Memory Management](manual-memory-management.md)
+- [Manual Memory Management](./manual-memory-management.md)
   Allocate and manage memory manually.
-- [Type Casting and Existential Types](type-casting-and-existential-types.md)
+- [Type Casting and Existential Types](./type-casting-and-existential-types.md)
   Perform casts between types or represent values of any type.
-- [C Interoperability](c-interoperability.md)
+- [C Interoperability](./c-interoperability.md)
   Use imported C types or call C variadic functions.
-- [Operator Declarations](operator-declarations.md)
+- [Operator Declarations](./operator-declarations.md)
   Work with prefix, postfix, and infix operators.
 
 

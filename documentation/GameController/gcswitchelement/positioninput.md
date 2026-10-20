@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The input object that provides the position of the switch.
@@ -18,6 +19,10 @@ The input object that provides the position of the switch.
 
 ```swift
 var positionInput: any GCSwitchPositionInput { get }
+```
+
+```objc
+@property (readonly) id<GCSwitchPositionInput> positionInput;
 ```
 
 

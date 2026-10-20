@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.BundledSubscription
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
 
@@ -23,32 +24,32 @@ struct BundledSubscription
 ## Topics
 
 ### Instance Properties
-- [let description: String](product/subscriptioninfo/bundledsubscription/description.md)
+- [let description: String](./bundledsubscription/description.md)
   A localized description of the product.
-- [let displayName: String](product/subscriptioninfo/bundledsubscription/displayname.md)
+- [let displayName: String](./bundledsubscription/displayname.md)
   A localized display name of the product.
-- [let displayPrice: String](product/subscriptioninfo/bundledsubscription/displayprice.md)
+- [let displayPrice: String](./bundledsubscription/displayprice.md)
   A localized string representation of `price`.
-- [let id: Product.ID](product/subscriptioninfo/bundledsubscription/id.md)
+- [let id: Product.ID](./bundledsubscription/id.md)
   The unique product identifier.
-- [let isFamilyShareable: Bool](product/subscriptioninfo/bundledsubscription/isfamilyshareable.md)
+- [let isFamilyShareable: Bool](./bundledsubscription/isfamilyshareable.md)
   Whether the product is available for family sharing.
-- [let price: Decimal](product/subscriptioninfo/bundledsubscription/price.md)
+- [let price: Decimal](./bundledsubscription/price.md)
   The price of the product in local currency.
-- [let subscriptionGroupDisplayName: String](product/subscriptioninfo/bundledsubscription/subscriptiongroupdisplayname.md)
+- [let subscriptionGroupDisplayName: String](./bundledsubscription/subscriptiongroupdisplayname.md)
   A localized display name of the subscription’s group.
-- [let subscriptionGroupID: String](product/subscriptioninfo/bundledsubscription/subscriptiongroupid.md)
+- [let subscriptionGroupID: String](./bundledsubscription/subscriptiongroupid.md)
   The group identifier for this subscription.
-- [let subscriptionGroupLevel: Int](product/subscriptioninfo/bundledsubscription/subscriptiongrouplevel.md)
+- [let subscriptionGroupLevel: Int](./bundledsubscription/subscriptiongrouplevel.md)
   The level of this subscription relative to other subscriptions in the same group.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

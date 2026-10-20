@@ -1,7 +1,8 @@
 # startProvidingItem(at:completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an actual file on disk for a placeholder.
 
@@ -14,14 +15,26 @@ Provides an actual file on disk for a placeholder.
 ## Declaration
 
 ```swift
+func startProvidingItem(at url: URL, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startProvidingItem(at url: URL) async throws
+```
+
+```objc
+- (void) startProvidingItemAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func startProvidingItem(at url: URL) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func startProvidingItem(at url: URL) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 This method is called whenever another process tries to access a placeholder for a shared document.
 
@@ -34,15 +47,20 @@ You must override this method. Do not call `super` in your implementations.
 ## Parameters
 
 - `url`: The URL of a shared document.
-- `completionHandler`: A block to be called as soon as the file is available. The completion handler takes the following parameter: - **error**: If the document was produced, this value is `nil`. Otherwise, it holds an `NSError` object describing the error.
+- `completionHandler`: A block to be called as soon as the file is available.
+
+  The completion handler takes the following parameter:
+
+  - **error**: If the document was produced, this value is `nil`. Otherwise, it holds an `NSError` object describing the error.
 
 ## See Also
 
-- [func itemChanged(at: URL)](nsfileproviderextension/itemchanged(at:).md)
+### Managing shared files
+- [func itemChanged(at: URL)](./itemchanged%28at%29.md)
   Tells the File Provider extension that a document has changed.
-- [func providePlaceholder(at: URL, completionHandler: ((any Error)?) -> Void)](nsfileproviderextension/provideplaceholder(at:completionhandler:).md)
+- [func providePlaceholder(at: URL, completionHandler: ((any Error)?) -> Void)](./provideplaceholder%28at,completionhandler%29.md)
   Triggers the creation of a placeholder for the given URL.
-- [func stopProvidingItem(at: URL)](nsfileproviderextension/stopprovidingitem(at:).md)
+- [func stopProvidingItem(at: URL)](./stopprovidingitem%28at%29.md)
   Tells the File Provider extension that a given document is no longer being accessed.
 
 

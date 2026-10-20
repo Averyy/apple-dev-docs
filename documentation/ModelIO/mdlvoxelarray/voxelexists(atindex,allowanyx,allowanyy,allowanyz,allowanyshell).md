@@ -1,7 +1,8 @@
 # voxelExists(atIndex:allowAnyX:allowAnyY:allowAnyZ:allowAnyShell:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the voxel array contains voxel data for the specified index.
 
@@ -19,9 +20,13 @@ Returns a Boolean value indicating whether the voxel array contains voxel data f
 func voxelExists(atIndex index: MDLVoxelIndex, allowAnyX: Bool, allowAnyY: Bool, allowAnyZ: Bool, allowAnyShell: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) voxelExistsAtIndex:(MDLVoxelIndex) index allowAnyX:(BOOL) allowAnyX allowAnyY:(BOOL) allowAnyY allowAnyZ:(BOOL) allowAnyZ allowAnyShell:(BOOL) allowAnyShell;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -60,20 +65,21 @@ exists = [voxelArray voxelExistsAtIndex:index allowAnyX:YES allowAnyY:YES allowA
 ## Parameters
 
 - `index`: An index describing both the location of the voxel within the three-dimensional grid of the voxel array and its relationship to the volume of the object modeled by the voxel array.
-- `allowAnyX`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the x component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the x component.
-- `allowAnyY`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the y component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the y component.
-- `allowAnyZ`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the z component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the z component.
-- `allowAnyShell`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the w (shell level) component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the shell level component.
+- `allowAnyX`: If [`true`](../../Swift/true.md), this method treats the x component of the index parameter as a wildcard. If [`false`](../../Swift/false.md), this method requires an exact match for the x component.
+- `allowAnyY`: If [`true`](../../Swift/true.md), this method treats the y component of the index parameter as a wildcard. If [`false`](../../Swift/false.md), this method requires an exact match for the y component.
+- `allowAnyZ`: If [`true`](../../Swift/true.md), this method treats the z component of the index parameter as a wildcard. If [`false`](../../Swift/false.md), this method requires an exact match for the z component.
+- `allowAnyShell`: If [`true`](../../Swift/true.md), this method treats the w (shell level) component of the index parameter as a wildcard. If [`false`](../../Swift/false.md), this method requires an exact match for the shell level component.
 
 ## See Also
 
-- [var count: Int](mdlvoxelarray/count.md)
+### Examining Voxels
+- [var count: Int](./count.md)
   The number of voxels in the array.
-- [var voxelIndexExtent: MDLVoxelIndexExtent](mdlvoxelarray/voxelindexextent.md)
+- [var voxelIndexExtent: MDLVoxelIndexExtent](./voxelindexextent.md)
   The indexes that define the corners of the three-dimensional voxel grid.
-- [func voxels(within: MDLVoxelIndexExtent) -> Data?](mdlvoxelarray/voxels(within:).md)
+- [func voxels(within: MDLVoxelIndexExtent) -> Data?](./voxels%28within%29.md)
   Returns a data object containing all voxels within the specified volume.
-- [func voxelIndices() -> Data?](mdlvoxelarray/voxelindices.md)
+- [func voxelIndices() -> Data?](./voxelindices%28%29.md)
   Returns a data object containing all voxels within the voxel array.
 
 

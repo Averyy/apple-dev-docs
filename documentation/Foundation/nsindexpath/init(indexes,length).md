@@ -1,7 +1,8 @@
 # init(indexes:length:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an index path with the given nodes and length.
 
@@ -20,13 +21,17 @@ Initializes an index path with the given nodes and length.
 init(indexes: UnsafePointer<Int>?, length: Int)
 ```
 
+```objc
+- (instancetype) initWithIndexes:(const NSUInteger[]) indexes length:(NSUInteger) length;
+```
+
 #### Return Value
 
-Initialized [`NSIndexPath`](nsindexpath.md) object with `indexes` up to `length`.
+Initialized [`NSIndexPath`](../nsindexpath.md) object with `indexes` up to `length`.
 
 #### Discussion
 
-This method is a designated initializer of [`NSIndexPath`](nsindexpath.md).
+This method is a designated initializer of [`NSIndexPath`](../nsindexpath.md).
 
 ## Parameters
 
@@ -35,7 +40,8 @@ This method is a designated initializer of [`NSIndexPath`](nsindexpath.md).
 
 ## See Also
 
-- [convenience init(index: Int)](nsindexpath/init(index:).md)
+### Creating and Initializing Index Paths
+- [convenience init(index: Int)](./init%28index%29.md)
   Initializes an index path with a single node.
 
 

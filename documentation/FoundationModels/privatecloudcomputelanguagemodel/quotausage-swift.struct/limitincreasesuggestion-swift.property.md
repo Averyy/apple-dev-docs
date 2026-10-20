@@ -1,7 +1,8 @@
 # limitIncreaseSuggestion
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A suggestion the user can act on to increase their quota.
 
@@ -25,9 +26,10 @@ A `nil` value indicates that the model provider does not surface an upgrade path
 
 ## See Also
 
-- [var isLimitReached: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/islimitreached.md)
+### Inspecting the quota limit
+- [var isLimitReached: Bool](./islimitreached.md)
   A Boolean value that indicates whether the usage limit has been reached.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.struct.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](./limitincreasesuggestion-swift.struct.md)
   An offer that a user can act on to increase their quota for a language model.
 
 

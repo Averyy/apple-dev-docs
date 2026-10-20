@@ -1,20 +1,21 @@
 # Adding Custom Graphics to a PDF
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: Article
 
 Create and add custom annotation and page graphics to your PDF document.
 
 #### Overview
 
-You can add custom annotation and page graphics to a PDF by overriding the `draw` method for [`PDFAnnotation`](pdfannotation.md) or [`PDFPage`](pdfpage.md). If the graphic applies to the whole page, like a watermark, custom border, or logo, you add it to the page using [`PDFPage`](pdfpage.md). If the graphic is something small, such as circling or highlighting a particular element on the page, or a repeatable custom graphic, such as a heart, club, spade, or diamond, then it should be added using [`PDFAnnotation`](pdfannotation.md). Some graphics, like lines, can work as annotations or page elements.
+You can add custom annotation and page graphics to a PDF by overriding the `draw` method for [`PDFAnnotation`](./pdfannotation.md) or [`PDFPage`](./pdfpage.md). If the graphic applies to the whole page, like a watermark, custom border, or logo, you add it to the page using [`PDFPage`](./pdfpage.md). If the graphic is something small, such as circling or highlighting a particular element on the page, or a repeatable custom graphic, such as a heart, club, spade, or diamond, then it should be added using [`PDFAnnotation`](./pdfannotation.md). Some graphics, like lines, can work as annotations or page elements.
 
-Drawings are static, unlike interactive annotation types like widgets. To learn more about widgets, see [`Adding Widgets to a PDF Document`](adding-widgets-to-a-pdf-document.md).
+Drawings are static, unlike interactive annotation types like widgets. To learn more about widgets, see [Adding Widgets to a PDF Document](./adding-widgets-to-a-pdf-document.md).
 
-![Add a custom watermark annotation to a PDF. ](/images/com.apple.pdfkit/media-3039566@2x.png)
+![Add a custom watermark annotation to a PDF. ](https://developer.apple.com/tutorials/images/com.apple.pdfkit/media-3039566@2x.png)
 
 ##### Register a Delegate for the Document
 
-Register a [`PDFDocumentDelegate`](pdfdocumentdelegate.md) to the [`PDFDocument`](pdfdocument.md) loaded in the current [`PDFView`](pdfview.md). This delegate will allow you to specify a method for building PDF annotations or PDF pages. The [`PDFDocument`](pdfdocument.md) is called `document`.
+Register a [`PDFDocumentDelegate`](./pdfdocumentdelegate.md) to the [`PDFDocument`](./pdfdocument.md) loaded in the current [`PDFView`](./pdfview.md). This delegate will allow you to specify a method for building PDF annotations or PDF pages. The [`PDFDocument`](./pdfdocument.md) is called `document`.
 
 ```swift
 document.delegate = self
@@ -35,7 +36,7 @@ class LineAnnotation: PDFAnnotation {
 }
 ```
 
-Implement the [`class(forAnnotationType:)`](pdfdocumentdelegate/class(forannotationtype:).md) function in the document’s delegate. This method returns the subclass type for [`PDFAnnotation`](pdfannotation.md) for a given annotation subtype string.  In this case you return the `LineAnnotation` class for a `Line` type annotation.
+Implement the [`class(forAnnotationType:)`](./pdfdocumentdelegate/class%28forannotationtype%29.md) function in the document’s delegate. This method returns the subclass type for [`PDFAnnotation`](./pdfannotation.md) for a given annotation subtype string.  In this case you return the `LineAnnotation` class for a `Line` type annotation.
 
 ```swift
 func `class`(forAnnotationType annotationType: String) -> AnyClass {
@@ -49,7 +50,7 @@ func `class`(forAnnotationType annotationType: String) -> AnyClass {
 
 ###### Implement a Custom Page Subclass
 
-Create a custom subclass for [`PDFPage`](pdfpage.md) that includes your line graphic.
+Create a custom subclass for [`PDFPage`](./pdfpage.md) that includes your line graphic.
 
 ```swift
 class LinePage: PDFPage {
@@ -57,7 +58,7 @@ class LinePage: PDFPage {
 }
 ```
 
-Implement the [`classForPage()`](pdfdocumentdelegate/classforpage().md) function in the document delegate. This class returns the subclass type for [`PDFPage`](pdfpage.md), the `LinePage` class:
+Implement the [`classForPage()`](./pdfdocumentdelegate/classforpage%28%29.md) function in the document delegate. This class returns the subclass type for [`PDFPage`](./pdfpage.md), the `LinePage` class:
 
 ```swift
 func classForPage() -> AnyClass {
@@ -69,7 +70,7 @@ func classForPage() -> AnyClass {
 
 Override the `draw` method in your subclass to draw your custom graphic, the line. Draw the original content by calling the superclass version of the `draw` method. The `draw` methods for pages and annotations are nearly identical, the only difference being the `in context` parameter for annotations and the `to context` parameter for pages:
 
-**For annotations, use this** [`draw(with:)`](pdfannotation/draw(with:).md) **method:**
+**For annotations, use this** [`draw(with:)`](./pdfannotation/draw%28with%29.md) **method:**
 
 ```swift
 override func draw(with box: PDFDisplayBox, in context: CGContext) {
@@ -78,7 +79,7 @@ override func draw(with box: PDFDisplayBox, in context: CGContext) {
 }
 ```
 
-**For pages, use this** [`draw(with:)`](pdfpage/draw(with:).md) **method:**
+**For pages, use this** [`draw(with:)`](./pdfpage/draw%28with%29.md) **method:**
 
 ```swift
 override func draw(with box: PDFDisplayBox, to context: CGContext) {
@@ -87,7 +88,7 @@ override func draw(with box: PDFDisplayBox, to context: CGContext) {
 }
 ```
 
-In the appropriate `draw` method, add your custom drawing, in this case the line. To ensure that your drawing maintains its [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) properties and doesn’t affect other contexts in your PDF, make sure to save and restore your graphics state (before and after, respectively) you add your custom drawing code.
+In the appropriate `draw` method, add your custom drawing, in this case the line. To ensure that your drawing maintains its [`CGContext`](../CoreGraphics/cgcontext.md) properties and doesn’t affect other contexts in your PDF, make sure to save and restore your graphics state (before and after, respectively) you add your custom drawing code.
 
 > ❗ **Important**:  Ensure that you draw your content with respect to the PDF page coordinate system. The origin is at the bottom left corner, with the Y axis increasing from bottom to top and the X axis increasing from left to right.
 
@@ -114,17 +115,18 @@ class LineAnnotation: PDFAnnotation {
 }
 ```
 
-> **Note**:  PDFAnnotation also allows custom drawing for annotations with a type unknown to PDFKit,  but only if the annotation has an appearance stream ([`hasAppearanceStream`](pdfannotation/hasappearancestream.md)).
+> **Note**:  PDFAnnotation also allows custom drawing for annotations with a type unknown to PDFKit,  but only if the annotation has an appearance stream ([`hasAppearanceStream`](./pdfannotation/hasappearancestream.md)).
 
 ## See Also
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+### Annotations
+- [Adding Widgets to a PDF Document](./adding-widgets-to-a-pdf-document.md)
   Add text, button, and choice widgets to a PDF document.
-- [Custom Graphics](custom-graphics.md)
+- [Custom Graphics](./custom-graphics.md)
   Demonstrates adding a watermark to a PDF page.
-- [PDF Widgets](pdf-widgets.md)
+- [PDF Widgets](./pdf-widgets.md)
   Demonstrates adding widgets—interactive form elements—to a PDF document.
-- [class PDFAnnotation](pdfannotation.md)
+- [class PDFAnnotation](./pdfannotation.md)
   An annotation in a PDF document.
 
 

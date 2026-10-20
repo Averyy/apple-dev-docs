@@ -1,7 +1,8 @@
 # MeshDeformerOptions.Cadence
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies when RealityKit applies the custom deformer functions.
 
@@ -22,24 +23,25 @@ enum Cadence
 ## Topics
 
 ### Choosing an update cadence
-- [MeshDeformerOptions.Cadence.everyFrame](meshdeformeroptions/cadence-swift.enum/everyframe.md)
+- [MeshDeformerOptions.Cadence.everyFrame](./cadence-swift.enum/everyframe.md)
   Applies the custom deformer function automatically, every frame.
-- [MeshDeformerOptions.Cadence.onDemand](meshdeformeroptions/cadence-swift.enum/ondemand.md)
+- [MeshDeformerOptions.Cadence.onDemand](./cadence-swift.enum/ondemand.md)
   Applies the custom deformer function only when you request it. You can explicitly request the deformer function to be called by setting new input. Like all other deformers, the deformer updates again if a previous deformer in the `MeshDeformationStack` updates.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let cadence: MeshDeformerOptions.Cadence](meshdeformeroptions/cadence-swift.property.md)
+### Configuring the cadence
+- [let cadence: MeshDeformerOptions.Cadence](./cadence-swift.property.md)
   Determines the update frequence for the defomer type.
 
 

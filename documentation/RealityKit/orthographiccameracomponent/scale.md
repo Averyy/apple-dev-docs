@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A floating-point value the camera uses to scale entities.
 
@@ -21,7 +22,8 @@ var scale: Float
 
 ## See Also
 
-- [var scaleDirection: CameraFieldOfViewOrientation](orthographiccameracomponent/scaledirection.md)
+### Setting the camera scale
+- [var scaleDirection: CameraFieldOfViewOrientation](./scaledirection.md)
   The direction in which the camera applies scaling.
 
 

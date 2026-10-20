@@ -1,7 +1,8 @@
 # errSecOCSPResponderInternalError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) responder detected an internal error.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) responder detected an internal err
 
 ```swift
 var errSecOCSPResponderInternalError: OSStatus { get }
+```
+
+```c
+errSecOCSPResponderInternalError
 ```
 
 

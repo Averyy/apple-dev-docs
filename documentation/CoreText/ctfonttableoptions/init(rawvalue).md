@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: Core Text  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font table options structure with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [static var excludeSynthetic: CTFontTableOptions](ctfonttableoptions/excludesynthetic.md)
+### Constants
+- [static var excludeSynthetic: CTFontTableOptions](./excludesynthetic.md)
   The font table excludes synthetic font data.
 
 

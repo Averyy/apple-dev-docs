@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates the custom object that you use to communicate state changes from your gesture recognizer to other parts of your SwiftUI interface.
@@ -25,6 +26,11 @@ You access the resulting coordinator via the `Context` passed into other methods
 ## Parameters
 
 - `converter`: A structure used to convert locations  to/from coordinate spaces in the hierarchy of the associated SwiftUI view.
+
+## Default Implementations
+
+### UIGestureRecognizerRepresentable Implementations
+- [func makeCoordinator(converter: Self.CoordinateSpaceConverter)](./makecoordinator%28converter%29-504ge.md)
 
 
 ---

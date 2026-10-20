@@ -1,7 +1,8 @@
 # UIBandSelectionInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that tracks the selection of multiple items using pointer-based input.
 
@@ -18,9 +19,13 @@ An object that tracks the selection of multiple items using pointer-based input.
 class UIBandSelectionInteraction
 ```
 
+```objc
+@interface UIBandSelectionInteraction : NSObject
+```
+
 #### Overview
 
-Attach a [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object to a custom view that contains one or more selectable items. On devices with pointer-based input, such as an iPad with a Magic Keyboard, this interaction object displays a visible selection rectangle over the view when someone clicks and drags on it. As the pointer moves, the selection rectangle expands or contracts to match. Use your interaction object’s handler to select items based on the current selection rectangle.
+Attach a [`UIBandSelectionInteraction`](./uibandselectioninteraction.md) object to a custom view that contains one or more selectable items. On devices with pointer-based input, such as an iPad with a Magic Keyboard, this interaction object displays a visible selection rectangle over the view when someone clicks and drags on it. As the pointer moves, the selection rectangle expands or contracts to match. Use your interaction object’s handler to select items based on the current selection rectangle.
 
 You create a band selection interaction object and add it to a view that contains one or more selectable items. When you create the interaction object, specify a handler to process changes to the selection rectangle. In the example, the custom view defines an `itemsInRect` method to get the items that intersect the selection rectangle. It also defines custom methods to modify the selection and commit the changes. If someone presses the Shift key at the start of the interaction, the code extends the current selection instead of replacing it.
 
@@ -54,48 +59,49 @@ let bandSelectionInteraction = UIBandSelectionInteraction { [weak self] interact
 view.addInteraction(bandSelectionInteraction)
 ```
 
-> **Note**:  You don’t need to add this interaction object to a collection view to handle the selection of items. [`UICollectionView`](uicollectionview.md) already supports its own multiple selection interface. For a list of methods you use to manage selections in a collection view, see [`UICollectionViewDelegate`](uicollectionviewdelegate.md).
+> **Note**:  You don’t need to add this interaction object to a collection view to handle the selection of items. [`UICollectionView`](./uicollectionview.md) already supports its own multiple selection interface. For a list of methods you use to manage selections in a collection view, see [`UICollectionViewDelegate`](./uicollectionviewdelegate.md).
 
 ## Topics
 
 ### Creating a band selection interaction
-- [init((UIBandSelectionInteraction) -> Void)](uibandselectioninteraction/init(_:).md)
+- [init((UIBandSelectionInteraction) -> Void)](./uibandselectioninteraction/init%28_%29.md)
   Creates a new band selection interaction object with the provided handler code.
 ### Getting the selection rectangle
-- [var selectionRect: CGRect?](uibandselectioninteraction/selectionrect-2us5d.md)
+- [var selectionRect: CGRect?](./uibandselectioninteraction/selectionrect-2us5d.md)
   The selection rectangle for an in-progress interaction.
 ### Getting the interaction state
-- [var isEnabled: Bool](uibandselectioninteraction/isenabled.md)
+- [var isEnabled: Bool](./uibandselectioninteraction/isenabled.md)
   A Boolean value that specifies whether the object is ready to detect interactions.
-- [var initialModifierFlags: UIKeyModifierFlags](uibandselectioninteraction/initialmodifierflags.md)
+- [var initialModifierFlags: UIKeyModifierFlags](./uibandselectioninteraction/initialmodifierflags.md)
   The pressed modifier keys at the start of the interaction.
-- [var state: UIBandSelectionInteraction.State](uibandselectioninteraction/state-swift.property.md)
+- [var state: UIBandSelectionInteraction.State](./uibandselectioninteraction/state-swift.property.md)
   The current state of the interaction object.
-- [UIBandSelectionInteraction.State](uibandselectioninteraction/state-swift.enum.md)
+- [UIBandSelectionInteraction.State](./uibandselectioninteraction/state-swift.enum.md)
   Constants that indicate whether a band selection interaction object is inactive or currently tracking an interaction.
 ### Starting the interaction
-- [var shouldBeginHandler: ((UIBandSelectionInteraction, CGPoint) -> Bool)?](uibandselectioninteraction/shouldbeginhandler.md)
+- [var shouldBeginHandler: ((UIBandSelectionInteraction, CGPoint) -> Bool)?](./uibandselectioninteraction/shouldbeginhandler.md)
   The handler that determines whether to start a band selection interaction.
 ### Initializers
-- [init(selectionHandler: (UIBandSelectionInteraction) -> Void)](uibandselectioninteraction/init(selectionhandler:).md)
+- [init(selectionHandler: (UIBandSelectionInteraction) -> Void)](./uibandselectioninteraction/init%28selectionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [UIBandSelectionInteraction.State](uibandselectioninteraction/state-swift.enum.md)
+### Band selection
+- [UIBandSelectionInteraction.State](./uibandselectioninteraction/state-swift.enum.md)
   Constants that indicate whether a band selection interaction object is inactive or currently tracking an interaction.
 
 

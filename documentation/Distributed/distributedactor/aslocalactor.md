@@ -1,7 +1,8 @@
 # asLocalActor
 
 **Framework**: Distributed  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Produces an erased `any Actor` reference to this known to be local distributed actor.
 
@@ -11,7 +12,7 @@ Produces an erased `any Actor` reference to this known to be local distributed a
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

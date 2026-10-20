@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.remove_value
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.Buffer.remove_value.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.Buffer.remove_value
-
- Table of contents 
-
-## Contents
-
-# mlx.data.Buffer.remove_value
-
 **Buffer.remove_value(*self: mlx.data._c.Buffer*, *key: str*, *size_key: str*, *dim: int*, *value: float*, *pad: float = 0*) → mlx.data._c.Buffer**
 : Remove instances of a certain value from an array and shift the whole
 array to the left.
@@ -39,5 +22,3 @@ sizes of the array at `key`.
 filtered.
 **value** (*double*) – The value to look for and remove.
 **pad** (*double*) – The pad value to use.
-
-** Contents

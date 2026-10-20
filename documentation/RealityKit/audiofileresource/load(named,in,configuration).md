@@ -1,7 +1,8 @@
 # load(named:in:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads an AudioFileResource synchronously.
 

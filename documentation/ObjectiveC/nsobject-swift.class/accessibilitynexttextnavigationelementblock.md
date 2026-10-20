@@ -1,7 +1,8 @@
 # accessibilityNextTextNavigationElementBlock
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 ```swift
 @MainActor
 var accessibilityNextTextNavigationElementBlock: AXObjectReturnBlock? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) AXObjectReturnBlock accessibilityNextTextNavigationElementBlock;
 ```
 
 

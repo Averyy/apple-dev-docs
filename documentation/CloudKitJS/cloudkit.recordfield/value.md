@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the field.
 
@@ -10,7 +11,7 @@ The value of the field.
 
 ## Declaration
 
-```swift
+```
 attribute Object value;
 ```
 

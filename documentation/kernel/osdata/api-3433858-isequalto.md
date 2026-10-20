@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the data with an OSObject
 
@@ -11,11 +12,11 @@ Compares the data with an OSObject
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject);
 ```
 
-#### Return_value
+#### Return Value
 
 true iff the object is of class OSData or OSString and isEqualTo() returns true.
 
@@ -29,11 +30,12 @@ If the object is of class OSData, the result of isEqualTo(const OSData * aDataOb
 
 ## See Also
 
-- [- isEqualTo](osdata/3180882-isequalto.md)
+### Comparing Data Objects
+- [- isEqualTo](./api-3180882-isequalto.md)
   Compares the data with an OSData
-- [- isEqualTo](osdata/3433843-isequalto.md)
+- [- isEqualTo](./api-3433843-isequalto.md)
   Compares the data with an OSString
-- [- isEqualTo](osdata/3433844-isequalto.md)
+- [- isEqualTo](./api-3433844-isequalto.md)
   Compares the data with a pointer to bytes
 
 

@@ -1,7 +1,8 @@
 # localParticipantStates
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence that reports changes to the local participant’s state.
 
@@ -16,8 +17,8 @@ final var localParticipantStates: SystemCoordinator.ParticipantStates { get }
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
-- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
+- [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 
 #### Discussion
 
@@ -35,10 +36,11 @@ Task.detached {
 
 ## See Also
 
-- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](systemcoordinator/remoteparticipantstates.md)
-- [var localParticipantState: SystemCoordinator.ParticipantState](systemcoordinator/localparticipantstate.md)
+### Getting the participant state
+- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](./remoteparticipantstates.md)
+- [var localParticipantState: SystemCoordinator.ParticipantState](./localparticipantstate.md)
   The current participant’s level of support for an activity that takes place in a shared simulation space.
-- [SystemCoordinator.ParticipantStates](systemcoordinator/participantstates.md)
+- [SystemCoordinator.ParticipantStates](./participantstates.md)
   An asynchronous sequence that reports the current person’s ability to participate in a shared context.
 
 

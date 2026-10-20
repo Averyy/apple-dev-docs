@@ -1,7 +1,8 @@
 # gradientMaterial
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,8 +18,9 @@ static var gradientMaterial: SubscriptionStoreControlBackground { get }
 
 ## See Also
 
-- [static var automatic: SubscriptionStoreControlBackground](subscriptionstorecontrolbackground/automatic.md)
-- [static var gradientMaterialOnScroll: SubscriptionStoreControlBackground](subscriptionstorecontrolbackground/gradientmaterialonscroll.md)
+### Background types
+- [static var automatic: SubscriptionStoreControlBackground](./automatic.md)
+- [static var gradientMaterialOnScroll: SubscriptionStoreControlBackground](./gradientmaterialonscroll.md)
 
 
 ---

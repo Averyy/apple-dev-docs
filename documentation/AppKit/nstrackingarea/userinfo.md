@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary containing the data associated with the receiver when it was created.
 
@@ -14,17 +15,22 @@ The dictionary containing the data associated with the receiver when it was crea
 var userInfo: [AnyHashable : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<id,id> * userInfo;
+```
+
 #### Discussion
 
-You can obtain this dictionary per event in each [`mouseEntered(with:)`](nsresponder/mouseentered(with:).md) and [`mouseExited(with:)`](nsresponder/mouseexited(with:).md) method by querying the passed-in `NSEvent` object with `[[event trackingArea] userData]`.
+You can obtain this dictionary per event in each [`mouseEntered(with:)`](../nsresponder/mouseentered%28with%29.md) and [`mouseExited(with:)`](../nsresponder/mouseexited%28with%29.md) method by querying the passed-in `NSEvent` object with `[[event trackingArea] userData]`.
 
 ## See Also
 
-- [var options: NSTrackingArea.Options](nstrackingarea/options-swift.property.md)
+### Getting Object Attributes
+- [var options: NSTrackingArea.Options](./options-swift.property.md)
   The options specified for the receiver.
-- [var owner: AnyObject?](nstrackingarea/owner.md)
+- [var owner: AnyObject?](./owner.md)
   The object owning the receiver, which is the recipient of mouse-tracking, mouse-movement, and cursor-update messages.
-- [var rect: NSRect](nstrackingarea/rect.md)
+- [var rect: NSRect](./rect.md)
   The rectangle defining the area encompassed by the receiver.
 
 

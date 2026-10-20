@@ -1,18 +1,19 @@
 # pause()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses video playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Pauses video playback.
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 ## Mentions
 
-- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
+- [Adding a Video to a Scene](../adding-a-video-to-a-scene.md)
 
 ## See Also
 
-- [func play()](skvideonode/play.md)
+### Controlling Video Playback
+- [func play()](./play%28%29.md)
   Starts video playback.
 
 

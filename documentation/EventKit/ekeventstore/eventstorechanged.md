@@ -1,7 +1,8 @@
 # EKEventStore.EventStoreChanged
 
 **Framework**: EventKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A notification posted when changes are made to the Calendar or Reminders database.
 
@@ -26,13 +27,13 @@ Let observation = NotificationCenter.default.addObserver(of: eventStore, for: .c
 ## Topics
 
 ### Initializers
-- [init()](ekeventstore/eventstorechanged/init.md)
+- [init()](./eventstorechanged/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

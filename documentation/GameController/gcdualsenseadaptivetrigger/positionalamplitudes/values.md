@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amplitude values for possible trigger positions.
 
@@ -17,6 +18,10 @@ The amplitude values for possible trigger positions.
 
 ```swift
 var values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float)
+```
+
+```c
+float values[10];
 ```
 
 

@@ -1,7 +1,8 @@
 # playerViewController(_:willEndFullScreenPresentationWithAnimationCoordinator:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the player view controller is about to end full-screen display.
 
@@ -17,6 +18,10 @@ Tells the delegate when the player view controller is about to end full-screen d
 optional func playerViewController(_ playerViewController: AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator coordinator: any UIViewControllerTransitionCoordinator)
 ```
 
+```objc
+- (void) playerViewController:(AVPlayerViewController *) playerViewController willEndFullScreenPresentationWithAnimationCoordinator:(id<UIViewControllerTransitionCoordinator>) coordinator;
+```
+
 ## Parameters
 
 - `playerViewController`: The player view controller.
@@ -24,9 +29,10 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, willBeginFullScreenPresentationWithAnimationCoordinator: any UIViewControllerTransitionCoordinator)](avplayerviewcontrollerdelegate/playerviewcontroller(_:willbeginfullscreenpresentationwithanimationcoordinator:).md)
+### Responding to full-screen presentations
+- [func playerViewController(AVPlayerViewController, willBeginFullScreenPresentationWithAnimationCoordinator: any UIViewControllerTransitionCoordinator)](./playerviewcontroller%28_,willbeginfullscreenpresentationwithanimationcoordinator%29.md)
   Tells the delegate when the player view controller is about to start full-screen display.
-- [func playerViewController(AVPlayerViewController, restoreUserInterfaceForFullScreenExitWithCompletionHandler: (Bool) -> Void)](avplayerviewcontrollerdelegate/playerviewcontroller(_:restoreuserinterfaceforfullscreenexitwithcompletionhandler:).md)
+- [func playerViewController(AVPlayerViewController, restoreUserInterfaceForFullScreenExitWithCompletionHandler: (Bool) -> Void)](./playerviewcontroller%28_,restoreuserinterfaceforfullscreenexitwithcompletionhandler%29.md)
   Tells the delegate to restore the app’s user interface after returning from a full-screen presentation.
 
 

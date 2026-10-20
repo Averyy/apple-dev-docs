@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared object that allows your app to modify the user’s music library.
 

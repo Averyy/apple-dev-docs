@@ -1,7 +1,8 @@
 # AutomaticSubscriptionStoreControlStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default in-app subscription store control style that resolves its appearance based on the view’s context.
 
@@ -24,28 +25,29 @@ The default in-app subscription store control style that resolves its appearance
 ## Topics
 
 ### Getting the automatic subscription store control style
-- [static var automatic: AutomaticSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/automatic.md)
+- [static var automatic: AutomaticSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/automatic.md)
   A subscription store control style that resolves its appearance automatically, based on the current context.
 ### Creating the style
-- [init()](automaticsubscriptionstorecontrolstyle/init.md)
+- [init()](./automaticsubscriptionstorecontrolstyle/init%28%29.md)
   Creates an automatic subscription store control style.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SubscriptionStoreControlStyle](./subscriptionstorecontrolstyle.md)
 
 ## See Also
 
-- [struct ButtonsSubscriptionStoreControlStyle](buttonssubscriptionstorecontrolstyle.md)
+### Placement types
+- [struct ButtonsSubscriptionStoreControlStyle](./buttonssubscriptionstorecontrolstyle.md)
   A subscription store control style that displays a subscribe button for each subscription plan.
-- [struct PickerSubscriptionStoreControlStyle](pickersubscriptionstorecontrolstyle.md)
+- [struct PickerSubscriptionStoreControlStyle](./pickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a picker control, with a single button to subscribe.
-- [struct CompactPickerSubscriptionStoreControlStyle](compactpickersubscriptionstorecontrolstyle.md)
+- [struct CompactPickerSubscriptionStoreControlStyle](./compactpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a compact picker control, with a single button to subscribe.
-- [struct PagedPickerSubscriptionStoreControlStyle](pagedpickersubscriptionstorecontrolstyle.md)
+- [struct PagedPickerSubscriptionStoreControlStyle](./pagedpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a paged picker control, with a single button to subscribe.
 
 

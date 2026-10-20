@@ -1,7 +1,8 @@
 # ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Element
 
 **Framework**: ActivityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 
@@ -17,9 +18,10 @@ typealias Element = Bool
 
 ## See Also
 
-- [func makeAsyncIterator() -> ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator.md)
+- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](./iterator.md)
   An iterator for accessing individual data entries from the series.
 
 

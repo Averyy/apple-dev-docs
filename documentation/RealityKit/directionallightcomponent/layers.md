@@ -1,7 +1,8 @@
 # layers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layers this light illuminates.
 
@@ -21,9 +22,9 @@ var layers: RenderLayer.Set { get set }
 
 #### Discussion
 
-A directional light illuminates an entity when the layers of the entity’s [`RenderLayerComponent`](renderlayercomponent.md) intersect with this set. Entities without a [`RenderLayerComponent`](renderlayercomponent.md) belong to [`defaultLayer`](renderlayer/defaultlayer.md), which is the only member of `layers` by default.
+A directional light illuminates an entity when the layers of the entity’s [`RenderLayerComponent`](../renderlayercomponent.md) intersect with this set. Entities without a [`RenderLayerComponent`](../renderlayercomponent.md) belong to [`defaultLayer`](../renderlayer/defaultlayer.md), which is the only member of `layers` by default.
 
-Define your custom layers in an extension to [`RenderLayer`](renderlayer.md) and assign them to lights and entities to control which lights affect which entities:
+Define your custom layers in an extension to [`RenderLayer`](../renderlayer.md) and assign them to lights and entities to control which lights affect which entities:
 
 ```swift
 extension RenderLayer {

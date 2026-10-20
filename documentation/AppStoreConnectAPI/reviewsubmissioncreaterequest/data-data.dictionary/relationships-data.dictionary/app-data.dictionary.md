@@ -1,7 +1,8 @@
 # ReviewSubmissionCreateRequest.Data.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionCreateRequest.Data.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionCreateRequest.Data.Relationships.App.Data](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object ReviewSubmissionCreateRequest.Data.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

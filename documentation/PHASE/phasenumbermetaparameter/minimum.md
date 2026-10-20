@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lowest possible number for the value.
 
@@ -19,13 +20,18 @@ The lowest possible number for the value.
 var minimum: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double minimum;
+```
+
 #### Discussion
 
-The framework sets the value to the metaparameter definition’s [`minimum`](phasenumbermetaparameterdefinition/minimum.md) property.
+The framework sets the value to the metaparameter definition’s [`minimum`](../phasenumbermetaparameterdefinition/minimum.md) property.
 
 ## See Also
 
-- [var maximum: Double](phasenumbermetaparameter/maximum.md)
+### Inspecting Extremes
+- [var maximum: Double](./maximum.md)
   The highest possible number for the value.
 
 

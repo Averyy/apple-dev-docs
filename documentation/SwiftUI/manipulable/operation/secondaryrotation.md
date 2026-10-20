@@ -1,7 +1,8 @@
 # secondaryRotation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A secondary rotation operation.
 

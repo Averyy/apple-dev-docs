@@ -2,6 +2,7 @@
 
 **Framework**: XCTest  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reports the measurements gathered for a metric between specific timestamps.
@@ -10,6 +11,10 @@ Reports the measurements gathered for a metric between specific timestamps.
 
 ```swift
 func reportMeasurements(from startTime: XCTPerformanceMeasurementTimestamp, to endTime: XCTPerformanceMeasurementTimestamp) throws -> [XCTPerformanceMeasurement]
+```
+
+```objc
+- (NSArray<XCTPerformanceMeasurement *> *) reportMeasurementsFromStartTime:(XCTPerformanceMeasurementTimestamp *) startTime toEndTime:(XCTPerformanceMeasurementTimestamp *) endTime error:(NSError **) error;
 ```
 
 #### Return Value

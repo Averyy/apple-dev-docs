@@ -1,7 +1,8 @@
 # SRAmbientLightSample.SensorPlacement
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Directional values that describe light-source location with respect to the sensor.
 
@@ -16,49 +17,54 @@ Directional values that describe light-source location with respect to the senso
 enum SensorPlacement
 ```
 
+```c
+enum SRAmbientLightSensorPlacement : NSInteger;
+```
+
 ## Topics
 
 ### Placement configurations
-- [SRAmbientLightSample.SensorPlacement.frontBottom](srambientlightsample/sensorplacement/frontbottom.md)
+- [SRAmbientLightSample.SensorPlacement.frontBottom](./sensorplacement/frontbottom.md)
   Indicates that the light source is toward the bottom of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontBottomLeft](srambientlightsample/sensorplacement/frontbottomleft.md)
+- [SRAmbientLightSample.SensorPlacement.frontBottomLeft](./sensorplacement/frontbottomleft.md)
   Indicates that the light source is toward the bottom-left of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontBottomRight](srambientlightsample/sensorplacement/frontbottomright.md)
+- [SRAmbientLightSample.SensorPlacement.frontBottomRight](./sensorplacement/frontbottomright.md)
   Indicates that the light source is toward the bottom-right of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontLeft](srambientlightsample/sensorplacement/frontleft.md)
+- [SRAmbientLightSample.SensorPlacement.frontLeft](./sensorplacement/frontleft.md)
   Indicates that the light source is toward the left of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontRight](srambientlightsample/sensorplacement/frontright.md)
+- [SRAmbientLightSample.SensorPlacement.frontRight](./sensorplacement/frontright.md)
   Indicates that the light source is toward the right of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontTop](srambientlightsample/sensorplacement/fronttop.md)
+- [SRAmbientLightSample.SensorPlacement.frontTop](./sensorplacement/fronttop.md)
   Indicates that the light source is toward the top of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontTopLeft](srambientlightsample/sensorplacement/fronttopleft.md)
+- [SRAmbientLightSample.SensorPlacement.frontTopLeft](./sensorplacement/fronttopleft.md)
   Indicates that the light source is toward the top-left of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontTopRight](srambientlightsample/sensorplacement/fronttopright.md)
+- [SRAmbientLightSample.SensorPlacement.frontTopRight](./sensorplacement/fronttopright.md)
   Indicates that the light source is toward the top-right of the sensor.
-- [SRAmbientLightSample.SensorPlacement.unknown](srambientlightsample/sensorplacement/unknown.md)
+- [SRAmbientLightSample.SensorPlacement.unknown](./sensorplacement/unknown.md)
   Indicates that the sensor can’t determine the light source’s location.
 ### Initializers
-- [init?(rawValue: Int)](srambientlightsample/sensorplacement/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sensorplacement/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var chromaticity: SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.property.md)
+### Measuring light level
+- [var chromaticity: SRAmbientLightSample.Chromaticity](./chromaticity-swift.property.md)
   A coordinate pair that describes the sample’s light brightness and tint.
-- [SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.struct.md)
+- [SRAmbientLightSample.Chromaticity](./chromaticity-swift.struct.md)
   A coordinate pair that describes light brightness and tint.
-- [var lux: Measurement<UnitIlluminance>](srambientlightsample/lux.md)
+- [var lux: Measurement<UnitIlluminance>](./lux.md)
   An object that describes the sample’s luminous flux.
-- [var placement: SRAmbientLightSample.SensorPlacement](srambientlightsample/placement.md)
+- [var placement: SRAmbientLightSample.SensorPlacement](./placement.md)
   The light’s location relative to the sensor.
 
 

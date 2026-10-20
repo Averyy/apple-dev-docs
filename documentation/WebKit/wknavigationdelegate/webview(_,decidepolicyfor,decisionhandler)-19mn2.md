@@ -1,7 +1,8 @@
 # webView(_:decidePolicyFor:decisionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for permission to navigate to new content after the response to the navigation request is known.
 
@@ -15,12 +16,20 @@ Asks the delegate for permission to navigate to new content after the response t
 ## Declaration
 
 ```swift
+optional func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping @MainActor @Sendable (WKNavigationResponsePolicy) -> Void)
+```
+
+```swift
 optional func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse) async -> WKNavigationResponsePolicy
+```
+
+```objc
+- (void) webView:(WKWebView *) webView decidePolicyForNavigationResponse:(WKNavigationResponse *) navigationResponse decisionHandler:(void (^)(enum WKNavigationResponsePolicy)) decisionHandler;
 ```
 
 ## Mentions
 
-- [Replacing UIWebView in your app](replacing-uiwebview-in-your-app.md)
+- [Replacing UIWebView in your app](../replacing-uiwebview-in-your-app.md)
 
 #### Discussion
 
@@ -30,17 +39,20 @@ Use this method to allow or deny a navigation request after the web view receive
 
 - `webView`: The web view from which the navigation request began.
 - `navigationResponse`: Descriptive information about the navigation response.
-- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameter: - **policy**: A constant that indicates whether to cancel or allow the navigation. For a list of possible values, see [`WKNavigationResponsePolicy`](wknavigationresponsepolicy.md).
+- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameter:
+
+  - **policy**: A constant that indicates whether to cancel or allow the navigation. For a list of possible values, see [`WKNavigationResponsePolicy`](../wknavigationresponsepolicy.md).
 
 ## See Also
 
-- [func webView(WKWebView, decidePolicyFor: WKNavigationAction, preferences: WKWebpagePreferences, decisionHandler: (WKNavigationActionPolicy, WKWebpagePreferences) -> Void)](wknavigationdelegate/webview(_:decidepolicyfor:preferences:decisionhandler:).md)
+### Allowing or denying navigation requests
+- [func webView(WKWebView, decidePolicyFor: WKNavigationAction, preferences: WKWebpagePreferences, decisionHandler: (WKNavigationActionPolicy, WKWebpagePreferences) -> Void)](./webview%28_,decidepolicyfor,preferences,decisionhandler%29.md)
   Asks the delegate for permission to navigate to new content based on the specified preferences and action information.
-- [func webView(WKWebView, decidePolicyFor: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void)](wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62.md)
+- [func webView(WKWebView, decidePolicyFor: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void)](./webview%28_,decidepolicyfor,decisionhandler%29-2ni62.md)
   Asks the delegate for permission to navigate to new content based on the specified action information.
-- [enum WKNavigationActionPolicy](wknavigationactionpolicy.md)
+- [enum WKNavigationActionPolicy](../wknavigationactionpolicy.md)
   Constants that indicate whether to allow or cancel navigation to a webpage from an action.
-- [enum WKNavigationResponsePolicy](wknavigationresponsepolicy.md)
+- [enum WKNavigationResponsePolicy](../wknavigationresponsepolicy.md)
   Constants that indicate whether to allow or cancel navigation to a webpage from a response.
 
 

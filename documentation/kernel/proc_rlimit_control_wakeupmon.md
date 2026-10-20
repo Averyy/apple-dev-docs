@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct proc_rlimit_control_wakeupmon {
     ...
 };
@@ -17,8 +17,8 @@ struct proc_rlimit_control_wakeupmon {
 ## Topics
 
 ### Instance Properties
-- [wm_flags](proc_rlimit_control_wakeupmon/1577468-wm_flags.md)
-- [wm_rate](proc_rlimit_control_wakeupmon/1577477-wm_rate.md)
+- [wm_flags](./proc_rlimit_control_wakeupmon/api-1577468-wm_flags.md)
+- [wm_rate](./proc_rlimit_control_wakeupmon/api-1577477-wm_rate.md)
 
 
 ---

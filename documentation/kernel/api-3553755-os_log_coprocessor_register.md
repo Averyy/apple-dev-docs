@@ -1,14 +1,15 @@
 # os_log_coprocessor_register
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void os_log_coprocessor_register(const char *uuid, const char *file_path, bool copy);
 ```
 

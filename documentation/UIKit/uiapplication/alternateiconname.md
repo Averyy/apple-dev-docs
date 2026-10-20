@@ -1,7 +1,8 @@
 # alternateIconName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the icon the system displays for the app.
 
@@ -18,15 +19,20 @@ The name of the icon the system displays for the app.
 var alternateIconName: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * alternateIconName;
+```
+
 #### Discussion
 
 When the system is displaying one of your app’s alternate icons, the value of this property is the name of the alternate icon (from your app’s `Info.plist` file). When the system is displaying your app’s primary icon, the value of this property is `nil`.
 
 ## See Also
 
-- [var supportsAlternateIcons: Bool](uiapplication/supportsalternateicons.md)
+### Managing the app’s icon
+- [var supportsAlternateIcons: Bool](./supportsalternateicons.md)
   A Boolean value that indicates whether the app is allowed to change its icon.
-- [func setAlternateIconName(String?, completionHandler: (((any Error)?) -> Void)?)](uiapplication/setalternateiconname(_:completionhandler:).md)
+- [func setAlternateIconName(String?, completionHandler: (((any Error)?) -> Void)?)](./setalternateiconname%28_,completionhandler%29.md)
   Changes the icon the system displays for the app.
 
 

@@ -1,7 +1,8 @@
 # uploadTask(withResumeData:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a URLSessionUploadTask from a resume data blob. If resuming from an upload file, the file must still exist and be unmodified.
 
@@ -20,6 +21,10 @@ Creates a URLSessionUploadTask from a resume data blob. If resuming from an uplo
 func uploadTask(withResumeData resumeData: Data, completionHandler: @escaping @Sendable (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
 ```
 
+```objc
+- (NSURLSessionUploadTask *) uploadTaskWithResumeData:(NSData *) resumeData completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error)) completionHandler;
+```
+
 #### Return Value
 
 A new session upload task, or nil if the resumeData is invalid.
@@ -31,23 +36,24 @@ A new session upload task, or nil if the resumeData is invalid.
 
 ## See Also
 
-- [Building a resumable upload server with SwiftNIO](building-a-resumable-upload-server-with-swiftnio.md)
+### Adding upload tasks to a session
+- [Building a resumable upload server with SwiftNIO](../building-a-resumable-upload-server-with-swiftnio.md)
   Support HTTP resumable upload protocol in SwiftNIO by translating resumable uploads to regular uploads.
-- [func uploadTask(with: URLRequest, from: Data) -> URLSessionUploadTask](urlsession/uploadtask(with:from:).md)
+- [func uploadTask(with: URLRequest, from: Data) -> URLSessionUploadTask](./uploadtask%28with,from%29.md)
   Creates a task that performs an HTTP request for the specified URL request object and uploads the provided data.
-- [func uploadTask(with: URLRequest, from: Data?, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(with:from:completionhandler:).md)
+- [func uploadTask(with: URLRequest, from: Data?, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](./uploadtask%28with,from,completionhandler%29.md)
   Creates a task that performs an HTTP request for the specified URL request object, uploads the provided data, and calls a handler upon completion.
-- [func uploadTask(with: URLRequest, fromFile: URL) -> URLSessionUploadTask](urlsession/uploadtask(with:fromfile:).md)
+- [func uploadTask(with: URLRequest, fromFile: URL) -> URLSessionUploadTask](./uploadtask%28with,fromfile%29.md)
   Creates a task that performs an HTTP request for uploading the specified file.
-- [func uploadTask(with: URLRequest, fromFile: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(with:fromfile:completionhandler:).md)
+- [func uploadTask(with: URLRequest, fromFile: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](./uploadtask%28with,fromfile,completionhandler%29.md)
   Creates a task that performs an HTTP request for uploading the specified file, then calls a handler upon completion.
-- [func uploadTask(withStreamedRequest: URLRequest) -> URLSessionUploadTask](urlsession/uploadtask(withstreamedrequest:).md)
+- [func uploadTask(withStreamedRequest: URLRequest) -> URLSessionUploadTask](./uploadtask%28withstreamedrequest%29.md)
   Creates a task that performs an HTTP request for uploading data based on the specified URL request.
-- [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:).md)
+- [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](./uploadtask%28withresumedata%29.md)
   Creates an upload task from a resume data blob. Requires the server to support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/ If resuming from an upload file, the file must still exist and be unmodified. If the upload cannot be successfully resumed, URLSession:task:didCompleteWithError: will be called.
-- [class URLSessionUploadTask](urlsessionuploadtask.md)
+- [class URLSessionUploadTask](../urlsessionuploadtask.md)
   A URL session task that uploads data to the network in a request body.
-- [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)
+- [protocol URLSessionDataDelegate](../urlsessiondatadelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 
 

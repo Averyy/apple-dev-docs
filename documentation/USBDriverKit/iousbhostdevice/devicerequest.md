@@ -1,7 +1,8 @@
 # DeviceRequest
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a synchronous request to the device on the default control endpoint.
 
@@ -10,21 +11,21 @@ Sends a synchronous request to the device on the default control endpoint.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t DeviceRequest(IOService *forClient, uint8_t bmRequestType, uint8_t bRequest, uint16_t wValue, uint16_t wIndex, uint16_t wLength, IOMemoryDescriptor *dataBuffer, uint16_t *bytesTransferred, uint32_t completionTimeoutMs);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-This method acquires the service’s workloop lock and performs a USB device request (USB 2.0, section 9.3). The method waits for the request to complete, and may call [`commandSleep`](https://developer.apple.com/documentation/kernel/iocommandgate/1573818-commandsleep) during that time.
+This method acquires the service’s workloop lock and performs a USB device request (USB 2.0, section 9.3). The method waits for the request to complete, and may call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md) during that time.
 
 ## Parameters
 
-- `bmRequestType`: The characteristics of the device request. See the [`USBmakebmRequestType`](https://developer.apple.com/documentation/iokit/usbmakebmrequesttype) macro for information about how to construct this request.
+- `bmRequestType`: The characteristics of the device request. See the [`USBmakebmRequestType`](../../iokit/usbmakebmrequesttype.md) macro for information about how to construct this request.
 - `bRequest`: The request you want to make.
 - `wValue`: Request-specific data.
 - `wIndex`: Request-specific data.
@@ -35,11 +36,12 @@ This method acquires the service’s workloop lock and performs a USB device req
 
 ## See Also
 
-- [AsyncDeviceRequest](iousbhostdevice/asyncdevicerequest.md)
+### Requesting Information from the Device
+- [AsyncDeviceRequest](./asyncdevicerequest.md)
   Enqueues a request on the default control endpoint of the device.
-- [CompleteAsyncDeviceRequest](iousbhostdevice/completeasyncdevicerequest.md)
+- [CompleteAsyncDeviceRequest](./completeasyncdevicerequest.md)
   The type definition for an asynchronous device request completion routine.
-- [AbortDeviceRequests](iousbhostdevice/abortdevicerequests.md)
+- [AbortDeviceRequests](./abortdevicerequests.md)
   Aborts device requests that you made previously from the current device client.
 
 

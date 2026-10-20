@@ -1,7 +1,8 @@
 # touchesEnded(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns that a set of touches have been removed.
 
@@ -14,11 +15,15 @@ Returns that a set of touches have been removed.
 func touchesEnded(with event: NSEvent)
 ```
 
+```objc
+- (void) touchesEndedWithEvent:(NSEvent *) event;
+```
+
 #### Discussion
 
-The system sends the event to the view under the touch in the key window. To get the set of touches that ended for this view (or descendants of this view) call [`touches(matching:in:)`](nsevent/touches(matching:in:).md) on `event` and pass [`ended`](nstouch/phase-swift.struct/ended.md) for the phase.
+The system sends the event to the view under the touch in the key window. To get the set of touches that ended for this view (or descendants of this view) call [`touches(matching:in:)`](../nsevent/touches%28matching,in%29.md) on `event` and pass [`ended`](../nstouch/phase-swift.struct/ended.md) for the phase.
 
-This isn’t always the point of removal with the touch device. A touch that transitions from active to resting may be part of an [`touchesEnded(with:)`](nsresponder/touchesended(with:).md) set.
+This isn’t always the point of removal with the touch device. A touch that transitions from active to resting may be part of an [`touchesEnded(with:)`](./touchesended%28with%29.md) set.
 
 ## Parameters
 
@@ -26,25 +31,26 @@ This isn’t always the point of removal with the touch device. A touch that tra
 
 ## See Also
 
-- [func magnify(with: NSEvent)](nsresponder/magnify(with:).md)
+### Touch and Gesture Events
+- [func magnify(with: NSEvent)](./magnify%28with%29.md)
   Informs the receiver that the user has begun a pinch gesture.
-- [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)
+- [func rotate(with: NSEvent)](./rotate%28with%29.md)
   Informs the receiver that the user has begun a rotation gesture.
-- [func swipe(with: NSEvent)](nsresponder/swipe(with:).md)
+- [func swipe(with: NSEvent)](./swipe%28with%29.md)
   Informs the receiver that the user has begun a swipe gesture.
-- [func touchesBegan(with: NSEvent)](nsresponder/touchesbegan(with:).md)
+- [func touchesBegan(with: NSEvent)](./touchesbegan%28with%29.md)
   Informs the receiver that new set of touches has been recognized.
-- [func touchesMoved(with: NSEvent)](nsresponder/touchesmoved(with:).md)
+- [func touchesMoved(with: NSEvent)](./touchesmoved%28with%29.md)
   Informs the receiver that one or more touches has moved.
-- [func touchesCancelled(with: NSEvent)](nsresponder/touchescancelled(with:).md)
+- [func touchesCancelled(with: NSEvent)](./touchescancelled%28with%29.md)
   Informs the receiver that tracking of touches has been cancelled for any reason.
-- [func wantsForwardedScrollEvents(for: NSEvent.GestureAxis) -> Bool](nsresponder/wantsforwardedscrollevents(for:).md)
+- [func wantsForwardedScrollEvents(for: NSEvent.GestureAxis) -> Bool](./wantsforwardedscrollevents%28for%29.md)
   Returns whether to forward elastic scrolling gesture events up the responder.
-- [func smartMagnify(with: NSEvent)](nsresponder/smartmagnify(with:).md)
+- [func smartMagnify(with: NSEvent)](./smartmagnify%28with%29.md)
   Informs the receiver that the user performed a smart zoom gesture.
-- [func wantsScrollEventsForSwipeTracking(on: NSEvent.GestureAxis) -> Bool](nsresponder/wantsscrolleventsforswipetracking(on:).md)
+- [func wantsScrollEventsForSwipeTracking(on: NSEvent.GestureAxis) -> Bool](./wantsscrolleventsforswipetracking%28on%29.md)
   Implement this method to track gesture scroll events such as a swipe.
-- [NSEvent.GestureAxis](nsevent/gestureaxis.md)
+- [NSEvent.GestureAxis](../nsevent/gestureaxis.md)
   Constants that specify the direction of travel for a gesture.
 
 

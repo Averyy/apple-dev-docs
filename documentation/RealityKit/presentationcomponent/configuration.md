@@ -1,7 +1,8 @@
 # PresentationComponent.Configuration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration that specifies the modality, appearance, and behavior of the presentation.
 
@@ -21,14 +22,14 @@ You don’t instantiate this struct yourself. Instead, create a configuration by
 ## Topics
 
 ### Type Methods
-- [static func popover(arrowEdge: Edge?) -> PresentationComponent.Configuration](presentationcomponent/configuration/popover(arrowedge:).md)
+- [static func popover(arrowEdge: Edge?) -> PresentationComponent.Configuration](./configuration/popover%28arrowedge%29.md)
   Return a configuration that will present a SwiftUI popover.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

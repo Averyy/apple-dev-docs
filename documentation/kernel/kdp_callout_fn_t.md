@@ -1,14 +1,15 @@
 # kdp_callout_fn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*kdp_callout_fn_t)(void *arg, kdp_event_t event);
 ```
 

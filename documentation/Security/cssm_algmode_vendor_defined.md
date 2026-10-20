@@ -1,7 +1,8 @@
 # CSSM_ALGMODE_VENDOR_DEFINED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGMODE_VENDOR_DEFINED: UInt32 { get }
+```
+
+```c
+CSSM_ALGMODE_VENDOR_DEFINED
 ```
 
 

@@ -1,7 +1,8 @@
 # depthTextures
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of depth textures to use to render the current frame.
 
@@ -21,7 +22,8 @@ The layer’s texture topology determines the total number of textures in the ar
 
 ## See Also
 
-- [var colorTextures: [any MTLTexture]](layerrenderer/drawable/colortextures.md)
+### Getting the render textures
+- [var colorTextures: [any MTLTexture]](./colortextures.md)
   An array of color textures to use to render the current frame.
 
 

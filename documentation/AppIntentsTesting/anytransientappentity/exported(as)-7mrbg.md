@@ -1,7 +1,8 @@
 # exported(as:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this transient entity’s content as an `IntentFile`.
 
@@ -30,7 +31,7 @@ When no content type is specified, the entity’s first registered `TransferRepr
 
 The exported file can be passed as a parameter to another intent or used to verify the entity’s export format. To resolve exported content back into an entity, use `AppEntityDefinition/resolved(from:)-8f2x` on a non-transient entity definition — transient entities are not resolvable by design since they have no stable identifier.
 
-> **Note**: If the entity does not conform to `Transferable` or does not support the requested format.
+> **Throws**: If the entity does not conform to `Transferable` or does not support the requested format.
 
 ## Parameters
 

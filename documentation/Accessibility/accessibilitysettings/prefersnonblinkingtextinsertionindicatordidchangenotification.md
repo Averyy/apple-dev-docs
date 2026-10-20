@@ -1,7 +1,8 @@
 # prefersNonBlinkingTextInsertionIndicatorDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the system setting to prefer a nonblinking cursor in editable text fields changes.
 
@@ -20,9 +21,14 @@ A notification that posts when the system setting to prefer a nonblinking cursor
 static let prefersNonBlinkingTextInsertionIndicatorDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AXPrefersNonBlinkingTextInsertionIndicatorDidChangeNotification;
+```
+
 ## See Also
 
-- [static var prefersNonBlinkingTextInsertionIndicator: Bool](accessibilitysettings/prefersnonblinkingtextinsertionindicator.md)
+### Reducing animation for text insertion indicators
+- [static var prefersNonBlinkingTextInsertionIndicator: Bool](./prefersnonblinkingtextinsertionindicator.md)
   A Boolean value that indicates whether the system setting to prefer a nonblinking cursor in editable text fields is on.
 
 

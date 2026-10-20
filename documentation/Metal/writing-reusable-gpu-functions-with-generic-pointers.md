@@ -1,6 +1,7 @@
 # Writing reusable GPU functions with generic pointers
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Define utility functions once for multiple address spaces, and share types with your app’s main code.
 
@@ -25,13 +26,13 @@ void negate(float* value) { *value = -(*value); }
 
 Before adopting generic pointers in your apps, weigh the runtime trade-offs. As you add generic pointers to your MSL types and functions, migrate your existing code by consolidating the MSL 4.0 overloads, and share a single type definition with your app’s regular CPU code.
 
-#### Evaluate the Runtime Trade Offs
+#### Evaluate the runtime trade-offs
 
 The compiler usually identifies each generic pointer’s address space with static analysis and resolves it to a concrete pointer, which adds no runtime cost. In situations where the compiler can’t resolve a generic pointer to a concrete address space, such as across dynamic libraries or for a generic pointer that comes from an argument buffer, the program resolves the address space at runtime and branches to the matching code path. Each branch is relatively fast, but within tight inner loops, the small branching costs can add up and noticeably affect runtime performance. You can avoid the branching runtime costs by providing concrete versions of the function for the relevant call sites, which also compile for MSL 4.0 and earlier.
 
 Generic pointers can also slightly increase register pressure on some GPUs.
 
-#### Write a Generic Function
+#### Write a generic function
 
 Because generic pointers omit the address space annotation, a single function can accept pointer arguments from any address space the feature supports. For example, this `accumulate` function has generic pointers as its `total` and `value` parameters:
 
@@ -59,7 +60,7 @@ For example, you can pass any of the following arguments to either parameter:
 
 > **Note**: In an entry-point function, you need to provide an explicit address space annotation for resource parameters, such as `device` or `threadgroup`.
 
-#### Consolidate Function Overloads
+#### Consolidate function overloads
 
 This MSL 4.0 equivalent implementation of the `accumulate` function applies the `thread` address space annotation to both of its pointer parameters:
 
@@ -100,7 +101,7 @@ void accumulate(device float* total, const thread float* value) {
 
 The earlier MSL 4.1 version of `accumulate` replaces all of the MSL 4.0 overloads with a single definition with generic pointers.
 
-#### Update Existing Functions
+#### Update existing functions
 
 You can convert any of your app’s existing functions to a generic version by removing the address space annotation from one or more of its pointers. For example, the following `maskByte` utility function only works for call sites that pass a pointer to a `threadgroup` memory address:
 
@@ -176,7 +177,7 @@ struct Sphere {
 
 > 💡 **Tip**: Consider preserving a copy of the original code before running the command with `-Xclang -fixit`.
 
-#### Share Types Between Host and Device
+#### Share types between host and device
 
 Generic pointers also apply to a pointer member inside a structure. A type that holds a pointer can have the same definition on the host and the device, so your app and its GPU functions can share a single header.
 
@@ -228,7 +229,7 @@ struct LightData {
 
 With MSL, both source files can share one definition for a type in a common header, which is easier to maintain than separate, language-specific copies of common types.
 
-#### Define Member Functions Once
+#### Define member functions once
 
 A single generic definition in MSL 4.1 and later can replace a set of overloads. The following `RowMatrix` type defines its member functions and operators once, which the project can share with its C++ code and its MSL 4.1 code:
 
@@ -283,7 +284,7 @@ kernel void combine_matrices(device RowMatrix& result,
 
 In this example, the `result` and `factor` parameters point to `device` memory, and `scratch` is a `thread`-local value. When a GPU function calls a member function on `scratch`, its implicit `this` points to `thread` memory. The generic definitions of the member functions support all of these pointer combinations.
 
-#### Consolidate Member Function Overloads
+#### Consolidate member-function overloads
 
 To implement the same support with function overloads, which MSL 4.0 and earlier requires, provide an implementation for each unique combination of parameter pointers across all of the call sites.
 
@@ -367,7 +368,7 @@ RowMatrix& operator*=(const RowMatrix& other) {
 }
 ```
 
-#### Cast Between Address Spaces
+#### Cast between address spaces
 
 A generic function works across address spaces, but sometimes one path inside it needs a concrete pointer, such as a 64-bit atomic operation that only runs on a `device` pointer. Casting keeps a function generic while it converts a pointer to a concrete address space where a path needs it.
 
@@ -392,7 +393,7 @@ The `static_cast` operator converts a generic pointer to a concrete pointer with
 thread int* concrete = static_cast<thread int*>(generic);
 ```
 
-The conversion is only valid when the generic pointer refers to the address space in the cast operator. Invalid conversions can lead to incorrect behavior or results. When you enable Shader Validation, it detects these invalid conversions during development. For more information, see [`Validating your app’s Metal shader usage`](https://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage).
+The conversion is only valid when the generic pointer refers to the address space in the cast operator. Invalid conversions can lead to incorrect behavior or results. When you enable Shader Validation, it detects these invalid conversions during development. For more information, see [Validating your app’s Metal shader usage](../Xcode/validating-your-apps-metal-shader-usage.md).
 
 > **Note**: Casting a null pointer returns a null pointer.
 
@@ -428,7 +429,7 @@ Each test is equivalent to casting the generic pointer with `addrspace_cast` and
 
 > **Note**: The testing functions return `false` for arguments that equal `nullptr`.
 
-#### Prevent Abi Mismatches
+#### Prevent ABI mismatches
 
 MSL 4.1 alters how the compiler applies name decoration to function names, which creates an application binary interface (ABI) boundary at the language-version level. This boundary applies to any GPU binaries you link together, whether you distribute them in a binary archive, a dynamic library, or a Metal library. For example, linking a component you compile with MSL 4.0 and another you compile with MSL 4.1 can result in incorrect runtime behavior, even when both components contain only intermediate representation (IR) code.
 
@@ -438,11 +439,12 @@ To avoid this scenario, compile everything you link together with the same MSL l
 
 ## See Also
 
-- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+### Shader compilation and libraries
+- [Using the Metal 4 compilation API](./using-the-metal-4-compilation-api.md)
   Control when and how you compile an app’s shaders.
-- [Shader libraries](shader-libraries.md)
+- [Shader libraries](./shader-libraries.md)
   Manage and load your app’s Metal shaders.
-- [Using function specialization to build pipeline variants](using-function-specialization-to-build-pipeline-variants.md)
+- [Using function specialization to build pipeline variants](./using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
 
 

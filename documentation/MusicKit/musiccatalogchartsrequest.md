@@ -1,7 +1,8 @@
 # MusicCatalogChartsRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch the most popular items in the Apple Music catalog.
 
@@ -23,30 +24,30 @@ struct MusicCatalogChartsRequest
 ## Topics
 
 ### Initializers
-- [init(genre: Genre?, kinds: [MusicCatalogChartKind], types: [any MusicCatalogChartRequestable.Type])](musiccatalogchartsrequest/init(genre:kinds:types:).md)
+- [init(genre: Genre?, kinds: [MusicCatalogChartKind], types: [any MusicCatalogChartRequestable.Type])](./musiccatalogchartsrequest/init%28genre,kinds,types%29.md)
   Creates a catalog charts request for a specified genre and list of types to include in the catalog charts response.
 ### Instance Properties
-- [var genre: Genre?](musiccatalogchartsrequest/genre.md)
+- [var genre: Genre?](./musiccatalogchartsrequest/genre.md)
   The genre for the request.
-- [var kinds: [MusicCatalogChartKind]](musiccatalogchartsrequest/kinds.md)
+- [var kinds: [MusicCatalogChartKind]](./musiccatalogchartsrequest/kinds.md)
   The kinds of requested catalog charts.
-- [var limit: Int?](musiccatalogchartsrequest/limit.md)
+- [var limit: Int?](./musiccatalogchartsrequest/limit.md)
   A limit for the number of items to return in the catalog search response.
-- [var offset: Int?](musiccatalogchartsrequest/offset.md)
+- [var offset: Int?](./musiccatalogchartsrequest/offset.md)
   An offset for the request.
-- [var types: [any MusicCatalogChartRequestable.Type]](musiccatalogchartsrequest/types.md)
+- [var types: [any MusicCatalogChartRequestable.Type]](./musiccatalogchartsrequest/types.md)
   The list of requested types for the catalog charts response.
 ### Instance Methods
-- [func response() async throws -> MusicCatalogChartsResponse](musiccatalogchartsrequest/response.md)
+- [func response() async throws -> MusicCatalogChartsResponse](./musiccatalogchartsrequest/response%28%29.md)
   Fetches the most popular items of the requested types that match the genre and kinds for the request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

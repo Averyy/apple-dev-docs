@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic behavior.
 
@@ -20,7 +21,7 @@ static let automatic: WebView.LinkPreviewBehavior
 
 #### Discussion
 
-The web view automatically chooses whether pressing a link displays a preview of the destination for the link. By default, web views use the [`enabled`](webview-swift.struct/linkpreviewbehavior/enabled.md) behavior.
+The web view automatically chooses whether pressing a link displays a preview of the destination for the link. By default, web views use the [`enabled`](./enabled.md) behavior.
 
 
 ---

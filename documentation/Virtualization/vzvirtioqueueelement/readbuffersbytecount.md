@@ -1,7 +1,8 @@
 # readBuffersByteCount
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total size of the read buffers memory (in bytes) exposed by the Virtio queue element.
 
@@ -12,6 +13,10 @@ The total size of the read buffers memory (in bytes) exposed by the Virtio queue
 
 ```swift
 var readBuffersByteCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger readBuffersByteCount;
 ```
 
 

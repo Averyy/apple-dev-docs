@@ -1,7 +1,8 @@
 # PartResult.composite(_:)
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The result is a Composite; data is in the CompositeWriter
 

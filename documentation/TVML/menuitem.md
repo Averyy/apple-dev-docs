@@ -1,6 +1,7 @@
 # menuItem
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Displays a label for an item.
 
@@ -19,30 +20,31 @@ One or more `menuItem` elements are used inside of a `menuBar` element to indica
 </menuBar>
 ```
 
-##### Subelements of Menuitem
+##### Subelements of menuItem
 
-- [`title`](title.md)
+- [title](./title.md)
 
-##### Elements That Use Menuitem
+##### Elements that Use menuItem
 
-- [`menuBar`](menubar.md)
-- [`section`](section.md)
+- [menuBar](./menubar.md)
+- [section](./section.md)
 
 ## See Also
 
-- [menuBar](menubar.md)
+### Bar Elements
+- [menuBar](./menubar.md)
   Displays menu items along the top of the screen.
-- [nowPlayingMenuItem](nowplayingmenuitem.md)
+- [nowPlayingMenuItem](./nowplayingmenuitem.md)
   Displays information about currently playing audio.
-- [segmentBar](segmentbar.md)
+- [segmentBar](./segmentbar.md)
   Displays a list of segment bar items.
-- [segmentBarHeader](segmentbarheader.md)
+- [segmentBarHeader](./segmentbarheader.md)
   Displays information above a segment bar.
-- [segmentBarItem](segmentbaritem.md)
+- [segmentBarItem](./segmentbaritem.md)
   Provides titles inside of a segment bar.
-- [tumblerBar](tumblerbar.md)
+- [tumblerBar](./tumblerbar.md)
   Displays a list of `tumblerItem` elements.
-- [tumblerItem](tumbleritem.md)
+- [tumblerItem](./tumbleritem.md)
   Contains title information for a tumbler header.
 
 

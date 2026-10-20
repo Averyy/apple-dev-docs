@@ -1,7 +1,8 @@
 # init(red:green:blue:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object with the specified red, green, blue, and alpha channel values.
 
@@ -14,11 +15,15 @@ Creates a color object with the specified red, green, blue, and alpha channel va
 init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 ```
 
+```objc
++ (NSColor *) colorWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
+```
+
 #### Discussion
 
-This method accepts extended color component values. If the red, green, blue, or alpha values are outside of the `0-1.0` range, the method creates a color in the extended range color space. This method is provided for easier reuse of code that uses [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) in iOS.
+This method accepts extended color component values. If the red, green, blue, or alpha values are outside of the `0-1.0` range, the method creates a color in the extended range color space. This method is provided for easier reuse of code that uses [`UIColor`](../../UIKit/uicolor.md) in iOS.
 
-Where possible, it is preferable to specify the colorspace explicitly using the [`init(srgbRed:green:blue:alpha:)`](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md) or [`init(genericGamma22White:alpha:)`](nscolor/init(genericgamma22white:alpha:).md) method.
+Where possible, it is preferable to specify the colorspace explicitly using the [`init(srgbRed:green:blue:alpha:)`](./init%28srgbred,green,blue,alpha%29-9oz51.md) or [`init(genericGamma22White:alpha:)`](./init%28genericgamma22white,alpha%29.md) method.
 
 ## Parameters
 
@@ -29,13 +34,14 @@ Where possible, it is preferable to specify the colorspace explicitly using the 
 
 ## See Also
 
-- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md)
+### Creating a color using RGB components
+- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28srgbred,green,blue,alpha%29-9oz51.md)
   Creates a color object from the specified components in the sRGB colorspace.
-- [init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(displayp3red:green:blue:alpha:).md)
+- [init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28displayp3red,green,blue,alpha%29.md)
   Creates a color object from the specified components in the Display P3 color space.
-- [init(calibratedRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(calibratedred:green:blue:alpha:).md)
+- [init(calibratedRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28calibratedred,green,blue,alpha%29.md)
   Creates a color object using the given opacity and RGB components.
-- [init(deviceRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(devicered:green:blue:alpha:).md)
+- [init(deviceRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28devicered,green,blue,alpha%29.md)
   Creates a color object using the given opacity value and RGB components.
 
 

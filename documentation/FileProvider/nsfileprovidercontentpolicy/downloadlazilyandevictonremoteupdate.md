@@ -1,7 +1,8 @@
 # NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -16,11 +17,16 @@
 case downloadLazilyAndEvictOnRemoteUpdate
 ```
 
+```c
+NSFileProviderContentPolicyDownloadLazilyAndEvictOnRemoteUpdate
+```
+
 ## See Also
 
-- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](nsfileprovidercontentpolicy/downloadeagerlyandkeepdownloaded.md)
-- [NSFileProviderContentPolicy.downloadLazily](nsfileprovidercontentpolicy/downloadlazily.md)
-- [NSFileProviderContentPolicy.inherited](nsfileprovidercontentpolicy/inherited.md)
+### Policies
+- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](./downloadeagerlyandkeepdownloaded.md)
+- [NSFileProviderContentPolicy.downloadLazily](./downloadlazily.md)
+- [NSFileProviderContentPolicy.inherited](./inherited.md)
 
 
 ---

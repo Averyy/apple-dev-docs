@@ -1,7 +1,8 @@
 # sourceDirectivityModelParameters
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data set that directs sound such that it’s louder when directed at the listener.
 
@@ -19,13 +20,18 @@ A data set that directs sound such that it’s louder when directed at the liste
 var sourceDirectivityModelParameters: PHASEDirectivityModelParameters? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PHASEDirectivityModelParameters * sourceDirectivityModelParameters;
+```
+
 #### Discussion
 
 The framework applies directivity to sound sources that emanate from a point.
 
 ## See Also
 
-- [var listenerDirectivityModelParameters: PHASEDirectivityModelParameters?](phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)
+### Configuring Directivity
+- [var listenerDirectivityModelParameters: PHASEDirectivityModelParameters?](./listenerdirectivitymodelparameters.md)
   A data set that determines how well the listener hears depending on its direction relative to a sound source.
 
 

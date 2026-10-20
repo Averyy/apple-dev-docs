@@ -1,7 +1,8 @@
 # title
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The localized string that describes the intent’s functionality.
 

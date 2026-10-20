@@ -1,14 +1,15 @@
 # lpss_uart_enable
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 void lpss_uart_enable(boolean_t on_off);
 ```
 

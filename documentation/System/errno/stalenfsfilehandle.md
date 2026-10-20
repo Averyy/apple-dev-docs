@@ -1,7 +1,8 @@
 # staleNFSFileHandle
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Stale NFS file handle.
 
@@ -22,7 +23,7 @@ static var staleNFSFileHandle: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `ESTALE`.
 
 ## See Also
 
-- [static var authenticationError: Errno](errno/authenticationerror.md)
+### NFS Errors
+- [static var authenticationError: Errno](./authenticationerror.md)
   Authentication error.
-- [static var needAuthenticator: Errno](errno/needauthenticator.md)
+- [static var needAuthenticator: Errno](./needauthenticator.md)
   Need authenticator.
 
 

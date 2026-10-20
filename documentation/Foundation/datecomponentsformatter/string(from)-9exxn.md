@@ -1,7 +1,8 @@
 # string(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a formatted string based on the specified date component information.
 
@@ -20,6 +21,10 @@ Returns a formatted string based on the specified date component information.
 func string(from components: DateComponents) -> String?
 ```
 
+```objc
+- (NSString *) stringFromDateComponents:(NSDateComponents *) components;
+```
+
 #### Return Value
 
 A formatted string representing the specified date information.
@@ -30,17 +35,18 @@ Use this method to format date information that is already broken down into the 
 
 ## Parameters
 
-- `components`: A date components object containing the date and time information to format. The [`allowedUnits`](datecomponentsformatter/allowedunits.md) property determines which date components are actually used to generate the string. All other date components are ignored. This parameter must not be `nil`.
+- `components`: A date components object containing the date and time information to format. The [`allowedUnits`](./allowedunits.md) property determines which date components are actually used to generate the string. All other date components are ignored. This parameter must not be `nil`.
 
 ## See Also
 
-- [func string(for: Any?) -> String?](datecomponentsformatter/string(for:).md)
+### Formatting Values
+- [func string(for: Any?) -> String?](./string%28for%29.md)
   Returns a formatted string based on the date information in the specified object.
-- [func string(from: Date, to: Date) -> String?](datecomponentsformatter/string(from:to:).md)
+- [func string(from: Date, to: Date) -> String?](./string%28from,to%29.md)
   Returns a formatted string based on the time difference between two dates.
-- [func string(from: TimeInterval) -> String?](datecomponentsformatter/string(from:)-7sj4j.md)
+- [func string(from: TimeInterval) -> String?](./string%28from%29-7sj4j.md)
   Returns a formatted string based on the specified number of seconds.
-- [class func localizedString(from: DateComponents, unitsStyle: DateComponentsFormatter.UnitsStyle) -> String?](datecomponentsformatter/localizedstring(from:unitsstyle:).md)
+- [class func localizedString(from: DateComponents, unitsStyle: DateComponentsFormatter.UnitsStyle) -> String?](./localizedstring%28from,unitsstyle%29.md)
   Returns a localized string based on the specified date components and style option.
 
 

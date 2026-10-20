@@ -1,7 +1,8 @@
 # WebPage.DialogPresenting
 
 **Framework**: WebKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Allows providing custom behavior to handle JavaScript actions and provide a response.
 
@@ -27,22 +28,23 @@ When these methods are invoked, JavaScript is blocked until the async method ret
 ## Topics
 
 ### Instance Methods
-- [func handleFileInputPrompt(parameters: WKOpenPanelParameters, initiatedBy: WebPage.FrameInfo) async -> WebPage.FileInputPromptResult](webpage/dialogpresenting/handlefileinputprompt(parameters:initiatedby:).md)
+- [func handleFileInputPrompt(parameters: WKOpenPanelParameters, initiatedBy: WebPage.FrameInfo) async -> WebPage.FileInputPromptResult](./dialogpresenting/handlefileinputprompt%28parameters,initiatedby%29.md)
   Returns the result of handling a JavaScript request to open files.
-- [func handleJavaScriptAlert(message: String, initiatedBy: WebPage.FrameInfo) async](webpage/dialogpresenting/handlejavascriptalert(message:initiatedby:).md)
+- [func handleJavaScriptAlert(message: String, initiatedBy: WebPage.FrameInfo) async](./dialogpresenting/handlejavascriptalert%28message,initiatedby%29.md)
   A JavaScript `alert()` function has been invoked.
-- [func handleJavaScriptConfirm(message: String, initiatedBy: WebPage.FrameInfo) async -> WebPage.JavaScriptConfirmResult](webpage/dialogpresenting/handlejavascriptconfirm(message:initiatedby:).md)
+- [func handleJavaScriptConfirm(message: String, initiatedBy: WebPage.FrameInfo) async -> WebPage.JavaScriptConfirmResult](./dialogpresenting/handlejavascriptconfirm%28message,initiatedby%29.md)
   A JavaScript `confirm()` function has been invoked.
-- [func handleJavaScriptPrompt(message: String, defaultText: String?, initiatedBy: WebPage.FrameInfo) async -> WebPage.JavaScriptPromptResult](webpage/dialogpresenting/handlejavascriptprompt(message:defaulttext:initiatedby:).md)
+- [func handleJavaScriptPrompt(message: String, defaultText: String?, initiatedBy: WebPage.FrameInfo) async -> WebPage.JavaScriptPromptResult](./dialogpresenting/handlejavascriptprompt%28message,defaulttext,initiatedby%29.md)
   A JavaScript `prompt()` function has been invoked.
 
 ## See Also
 
-- [WebPage.FileInputPromptResult](webpage/fileinputpromptresult.md)
+### Customizing JavaScript dialogs
+- [WebPage.FileInputPromptResult](./fileinputpromptresult.md)
   The result of handling a JavaScript open invocation.
-- [WebPage.JavaScriptConfirmResult](webpage/javascriptconfirmresult.md)
+- [WebPage.JavaScriptConfirmResult](./javascriptconfirmresult.md)
   The result of handling a JavaScript confirm invocation.
-- [WebPage.JavaScriptPromptResult](webpage/javascriptpromptresult.md)
+- [WebPage.JavaScriptPromptResult](./javascriptpromptresult.md)
   The result of handling a JavaScript confirm invocation.
 
 

@@ -1,7 +1,8 @@
 # SCPreferencesSetComputerName(_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the computer name preference to the specified name.
 
@@ -14,13 +15,17 @@ Sets the computer name preference to the specified name.
 func SCPreferencesSetComputerName(_ prefs: SCPreferences, _ name: CFString?, _ nameEncoding: CFStringEncoding) -> Bool
 ```
 
+```c
+Boolean SCPreferencesSetComputerName(SCPreferencesRef prefs, CFStringRef name, CFStringEncoding nameEncoding);
+```
+
 #### Return Value
 
 `TRUE` if successful; otherwise, `FALSE`.
 
 #### Discussion
 
-To commit these changes to permanent storage you must call the [`SCPreferencesCommitChanges(_:)`](scpreferencescommitchanges(_:).md) function. In addition, you must call the [`SCPreferencesApplyChanges(_:)`](scpreferencesapplychanges(_:).md) function for the new name to become active.
+To commit these changes to permanent storage you must call the [`SCPreferencesCommitChanges(_:)`](./scpreferencescommitchanges%28_%29.md) function. In addition, you must call the [`SCPreferencesApplyChanges(_:)`](./scpreferencesapplychanges%28_%29.md) function for the new name to become active.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ To commit these changes to permanent storage you must call the [`SCPreferencesCo
 
 ## See Also
 
-- [func SCPreferencesSetLocalHostName(SCPreferences, CFString?) -> Bool](scpreferencessetlocalhostname(_:_:).md)
+### Setting Configuration Information
+- [func SCPreferencesSetLocalHostName(SCPreferences, CFString?) -> Bool](./scpreferencessetlocalhostname%28_,_%29.md)
   Sets the local host name to the specified name.
 
 

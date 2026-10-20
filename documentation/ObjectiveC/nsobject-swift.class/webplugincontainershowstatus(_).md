@@ -1,17 +1,22 @@
 # webPlugInContainerShowStatus(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the container to show a status message.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func webPlugInContainerShowStatus(_ message: String!)
+```
+
+```objc
+- (void) webPlugInContainerShowStatus:(NSString *) message;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func webPlugInContainerShowStatus(_ message: String!)
 
 ## See Also
 
-- [func webPlugInContainerLoad(URLRequest!, inFrame: String!)](nsobject-swift.class/webplugincontainerload(_:inframe:).md)
+### Performing actions on the enclosing container
+- [func webPlugInContainerLoad(URLRequest!, inFrame: String!)](./webplugincontainerload%28_,inframe%29.md)
   Loads a URL into a web frame.
 
 

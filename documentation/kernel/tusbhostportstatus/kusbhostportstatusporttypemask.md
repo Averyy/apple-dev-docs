@@ -1,7 +1,8 @@
 # kUSBHostPortStatusPortTypeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port type mask.
 
@@ -10,7 +11,7 @@ The port type mask.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusPortTypeMask = kIOUSBHostPortStatusPortTypeMask
 ```
 

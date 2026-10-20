@@ -1,7 +1,8 @@
 # AVCaptureDevice.Format.AutoFocusSystem.none
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Autofocus isn’t available.
 
@@ -18,11 +19,16 @@ Autofocus isn’t available.
 case none
 ```
 
+```c
+AVCaptureAutoFocusSystemNone
+```
+
 ## See Also
 
-- [AVCaptureDevice.Format.AutoFocusSystem.contrastDetection](avcapturedevice/format/autofocussystem-swift.enum/contrastdetection.md)
+### Systems
+- [AVCaptureDevice.Format.AutoFocusSystem.contrastDetection](./contrastdetection.md)
   A slower autofocus system based on differences in contrast.
-- [AVCaptureDevice.Format.AutoFocusSystem.phaseDetection](avcapturedevice/format/autofocussystem-swift.enum/phasedetection.md)
+- [AVCaptureDevice.Format.AutoFocusSystem.phaseDetection](./phasedetection.md)
   A faster autofoscus system based on differences in light phase.
 
 

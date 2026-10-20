@@ -1,7 +1,8 @@
 # displayDirection
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction, either vertical or horizontal, for the given display mode.
 
@@ -19,9 +20,14 @@ The layout direction, either vertical or horizontal, for the given display mode.
 var displayDirection: PDFDisplayDirection { get set }
 ```
 
+```objc
+@property (nonatomic) PDFDisplayDirection displayDirection;
+```
+
 ## See Also
 
-- [var displaysRTL: Bool](pdfview/displaysrtl.md)
+### Defining Display Direction
+- [var displaysRTL: Bool](./displaysrtl.md)
   The presentation of pages from right-to-left.
 
 

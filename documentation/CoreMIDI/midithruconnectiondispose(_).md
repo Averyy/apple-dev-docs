@@ -1,7 +1,8 @@
 # MIDIThruConnectionDispose(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disposes a MIDI thru connection.
 
@@ -18,6 +19,10 @@ Disposes a MIDI thru connection.
 func MIDIThruConnectionDispose(_ connection: MIDIThruConnectionRef) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIThruConnectionDispose(MIDIThruConnectionRef connection);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -28,13 +33,14 @@ An `OSStatus` result code.
 
 ## See Also
 
-- [func MIDIThruConnectionCreate(CFString?, CFData, UnsafeMutablePointer<MIDIThruConnectionRef>) -> OSStatus](midithruconnectioncreate(_:_:_:).md)
+### Managing Connections
+- [func MIDIThruConnectionCreate(CFString?, CFData, UnsafeMutablePointer<MIDIThruConnectionRef>) -> OSStatus](./midithruconnectioncreate%28_,_,_%29.md)
   Creates a MIDI thru connection.
-- [typealias MIDIThruConnectionRef](midithruconnectionref.md)
+- [typealias MIDIThruConnectionRef](./midithruconnectionref.md)
   An opaque reference to a play-through connection.
-- [struct MIDIThruConnectionEndpoint](midithruconnectionendpoint.md)
+- [struct MIDIThruConnectionEndpoint](./midithruconnectionendpoint.md)
   A source or destination in a MIDI thru connection.
-- [Endpoint Configuration](endpoint-configuration.md)
+- [Endpoint Configuration](./endpoint-configuration.md)
   Values that define the supported endpoint configurations.
 
 

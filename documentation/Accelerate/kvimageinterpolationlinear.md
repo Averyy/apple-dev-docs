@@ -1,7 +1,8 @@
 # kvImageInterpolationLinear
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Linear interpoation
 
@@ -20,9 +21,14 @@ Linear interpoation
 var kvImageInterpolationLinear: Int { get }
 ```
 
+```c
+kvImageInterpolationLinear
+```
+
 ## See Also
 
-- [var kvImageInterpolationNearest: Int](kvimageinterpolationnearest.md)
+### Constants
+- [var kvImageInterpolationNearest: Int](./kvimageinterpolationnearest.md)
   Nearest neigborhood
 
 

@@ -1,7 +1,8 @@
 # ATSFlatDataStyleListHeader
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSFlatDataStyleListHeader
 ```
 
+```c
+typedef struct ATSFlatDataStyleListHeader {
+    ...
+} ATSFlatDataStyleListHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsflatdatastylelistheader/1461739-init.md)
-- [init(numberOfStyles: UInt32, styleDataArray: ATSFlatDataStyleListStyleDataHeader)](atsflatdatastylelistheader/1462628-init.md)
+- [init()](./atsflatdatastylelistheader/api-1461739-init.md)
+- [init(numberOfStyles: UInt32, styleDataArray: ATSFlatDataStyleListStyleDataHeader)](./atsflatdatastylelistheader/api-1462628-init.md)
 ### Instance Properties
-- [var numberOfStyles: UInt32](atsflatdatastylelistheader/1459380-numberofstyles.md)
-- [var styleDataArray: ATSFlatDataStyleListStyleDataHeader](atsflatdatastylelistheader/1463390-styledataarray.md)
+- [var numberOfStyles: UInt32](./atsflatdatastylelistheader/api-1459380-numberofstyles.md)
+- [var styleDataArray: ATSFlatDataStyleListStyleDataHeader](./atsflatdatastylelistheader/api-1463390-styledataarray.md)
 
 
 ---

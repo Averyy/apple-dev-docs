@@ -1,16 +1,17 @@
 # draw(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the view’s image within the passed-in rectangle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,23 +19,27 @@ Draws the view’s image within the passed-in rectangle.
 func draw(_ rect: CGRect)
 ```
 
+```objc
+- (void) drawRect:(CGRect) rect;
+```
+
 #### Discussion
 
 The default implementation of this method does nothing. Subclasses that use technologies such as Core Graphics and UIKit to draw their view’s content should override this method and implement their drawing code there. You don’t need to override this method if your view sets its content in other ways. For example, you don’t need to override this method if your view just displays a background color or if your view sets its content directly using the underlying layer object.
 
-By the time this method is called, UIKit has configured the drawing environment appropriately for your view and you can simply call whatever drawing methods and functions you need to render your content. Specifically, UIKit creates and configures a graphics context for drawing and adjusts the transform of that context so that its origin matches the origin of your view’s bounds rectangle. You can get a reference to the graphics context using the [`UIGraphicsGetCurrentContext()`](uigraphicsgetcurrentcontext().md) function, but don’t establish a strong reference to the graphics context because it can change between calls to the [`draw(_:)`](uiview/draw(_:).md) method.
+By the time this method is called, UIKit has configured the drawing environment appropriately for your view and you can simply call whatever drawing methods and functions you need to render your content. Specifically, UIKit creates and configures a graphics context for drawing and adjusts the transform of that context so that its origin matches the origin of your view’s bounds rectangle. You can get a reference to the graphics context using the [`UIGraphicsGetCurrentContext()`](../uigraphicsgetcurrentcontext%28%29.md) function, but don’t establish a strong reference to the graphics context because it can change between calls to the [`draw(_:)`](./draw%28_%29.md) method.
 
-Similarly, if you draw using OpenGL ES and the [`GLKView`](https://developer.apple.com/documentation/glkit/glkview) class, GLKit configures the underlying OpenGL ES context appropriately for your view before calling this method (or the [`glkView(_:drawIn:)`](https://developer.apple.com/documentation/glkit/glkviewdelegate/glkview(_:drawin:)) method of your [`GLKView`](https://developer.apple.com/documentation/glkit/glkview) delegate), so you can simply issue whatever OpenGL ES commands you need to render your content. For more information about how to draw using OpenGL ES, see [`OpenGL ES Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
+Similarly, if you draw using OpenGL ES and the [`GLKView`](../../GLKit/glkview.md) class, GLKit configures the underlying OpenGL ES context appropriately for your view before calling this method (or the [`glkView(_:drawIn:)`](../../GLKit/glkviewdelegate/glkview%28_,drawin%29.md) method of your [`GLKView`](../../GLKit/glkview.md) delegate), so you can simply issue whatever OpenGL ES commands you need to render your content. For more information about how to draw using OpenGL ES, see [OpenGL ES Programming Guide](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
 
-You should limit any drawing to the rectangle specified in the `rect` parameter. In addition, if the [`isOpaque`](uiview/isopaque.md) property of your view is set to [`true`](https://developer.apple.com/documentation/swift/true), your [`draw(_:)`](uiview/draw(_:).md) method must totally fill the specified rectangle with opaque content.
+You should limit any drawing to the rectangle specified in the `rect` parameter. In addition, if the [`isOpaque`](./isopaque.md) property of your view is set to [`true`](../../Swift/true.md), your [`draw(_:)`](./draw%28_%29.md) method must totally fill the specified rectangle with opaque content.
 
-If you subclass [`UIView`](uiview.md) directly, your implementation of this method doesn’t need to call `super`. However, if you’re subclassing a different view class, you should call `super` at some point in your implementation.
+If you subclass [`UIView`](../uiview.md) directly, your implementation of this method doesn’t need to call `super`. However, if you’re subclassing a different view class, you should call `super` at some point in your implementation.
 
-This method is called when a view is first displayed or when an event occurs that invalidates a visible part of the view. You should never call this method directly yourself. To invalidate part of your view, and thus cause that portion to be redrawn, call the [`setNeedsDisplay()`](uiview/setneedsdisplay().md) or [`setNeedsDisplay(_:)`](uiview/setneedsdisplay(_:).md) method instead.
+This method is called when a view is first displayed or when an event occurs that invalidates a visible part of the view. You should never call this method directly yourself. To invalidate part of your view, and thus cause that portion to be redrawn, call the [`setNeedsDisplay()`](./setneedsdisplay%28%29.md) or [`setNeedsDisplay(_:)`](./setneedsdisplay%28_%29.md) method instead.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view’s `traitCollection`. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view’s `traitCollection`. For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## Parameters
 
@@ -42,13 +47,15 @@ This method supports automatic observation tracking. For more information, see [
 
 ## See Also
 
-- [var contentMode: UIView.ContentMode](uiview/contentmode-swift.property.md)
+### Related Documentation
+- [var contentMode: UIView.ContentMode](./contentmode-swift.property.md)
   A flag used to determine how a view lays out its content when its bounds change.
-- [func updateProperties()](uiview/updateproperties.md)
+### Observing data in views
+- [func updateProperties()](./updateproperties%28%29.md)
   Configures the view’s content and styling properties before layout.
-- [func layoutSubviews()](uiview/layoutsubviews.md)
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Lays out subviews.
-- [func updateConstraints()](uiview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Updates constraints for the view.
 
 

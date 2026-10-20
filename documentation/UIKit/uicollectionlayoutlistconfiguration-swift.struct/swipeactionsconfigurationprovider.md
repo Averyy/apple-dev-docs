@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures the swipe actions for a cell.
 
@@ -9,7 +10,7 @@ A closure that configures the swipe actions for a cell.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ typealias SwipeActionsConfigurationProvider = (IndexPath) -> UISwipeActionsConfi
 
 ## See Also
 
-- [var leadingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](uicollectionlayoutlistconfiguration-swift.struct/leadingswipeactionsconfigurationprovider.md)
+### Customizing swipe actions
+- [var leadingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](./leadingswipeactionsconfigurationprovider.md)
   The closure that provides the set of actions to display when swiping on the leading edge of the cell.
-- [var trailingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](uicollectionlayoutlistconfiguration-swift.struct/trailingswipeactionsconfigurationprovider.md)
+- [var trailingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](./trailingswipeactionsconfigurationprovider.md)
   The closure that provides the set of actions to display when swiping on the trailing edge of the cell.
 
 

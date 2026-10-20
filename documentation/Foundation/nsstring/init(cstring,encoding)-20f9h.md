@@ -1,7 +1,8 @@
 # init(cString:encoding:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an @c NSString object initialized using the characters in a given C array, interpreted according to a given encoding.
 
@@ -18,6 +19,10 @@ Returns an @c NSString object initialized using the characters in a given C arra
 
 ```swift
 convenience init?(cString nullTerminatedCString: UnsafePointer<CChar>, encoding: UInt)
+```
+
+```objc
+- (instancetype) initWithCString:(const char *) nullTerminatedCString encoding:(NSStringEncoding) encoding;
 ```
 
 #### Return Value

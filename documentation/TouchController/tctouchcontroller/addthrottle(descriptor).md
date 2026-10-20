@@ -1,7 +1,8 @@
 # addThrottle(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new throttle control with the provided descriptor, and adds it to the touch controller.
 
@@ -16,6 +17,10 @@ Creates a new throttle control with the provided descriptor, and adds it to the 
 func addThrottle(descriptor: TCThrottleDescriptor) -> TCThrottle
 ```
 
+```objc
+- (TCThrottle *) addThrottleWithDescriptor:(TCThrottleDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCThrottle` instance.
@@ -26,7 +31,8 @@ A new `TCThrottle` instance.
 
 ## See Also
 
-- [class TCThrottleDescriptor](tcthrottledescriptor.md)
+### Adding a throttle control
+- [class TCThrottleDescriptor](../tcthrottledescriptor.md)
   A descriptor for configuring a throttle.
 
 

@@ -1,7 +1,8 @@
 # UAZoomChangeFocusType
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines the Universal Access zoom change focus type.
 
@@ -12,6 +13,10 @@ Defines the Universal Access zoom change focus type.
 
 ```swift
 typealias UAZoomChangeFocusType = UInt32
+```
+
+```c
+typedef UInt32 UAZoomChangeFocusType;
 ```
 
 

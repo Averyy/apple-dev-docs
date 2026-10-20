@@ -1,6 +1,7 @@
 # Detecting GPU features and Metal software versions
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Use the device object’s properties to determine how you perform tasks in Metal.
 
@@ -14,14 +15,14 @@ You need to determine which Metal features that a specific device object support
 - Restrict some features to specific GPUs or implement different levels of functionality. For example, in a game, you might remove shadows or reduce the complexity of shadows on older GPUs.
 - Restrict your app so that it only runs when some GPUs are available; however, you should only use this option in extreme cases.
 
-The version of Metal running on the system and the GPU you’re targeting determine which features are available. The [`MTLDevice`](mtldevice.md) object provides information about the software and hardware capabilities for a specific GPU. To see a summary of the features available in each family, see the Metal Feature Set Tables:
+The version of Metal running on the system and the GPU you’re targeting determine which features are available. The [`MTLDevice`](./mtldevice.md) object provides information about the software and hardware capabilities for a specific GPU. To see a summary of the features available in each family, see the Metal Feature Set Tables:
 
-- [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
-- [`Metal feature set tables (Numbers)`](https://developer.apple.comhttps://developer.apple.com/metal/metal-feature-set-tables.zip)
+- [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
+- [Metal feature set tables (Numbers)](https://developer.apple.com/metal/metal-feature-set-tables.zip)
 
 A new version of Metal adds multiple features to device object at the same time. You should design your app around collections of common functionality. For example, on iOS, you might design two major rendering paths: one for current and future GPUs, and one for earlier GPUs.
 
-##### Determine Gpu Feature Support
+##### Determine GPU feature support
 
 Metal organizes GPUs into four major families:
 
@@ -32,7 +33,7 @@ Metal organizes GPUs into four major families:
 
 A GPU can be a member of more than one family; in most cases, a GPU supports one of the Common families and then one or more families specific to the build target.
 
-More recent GPUs have higher version numbers and support larger feature sets. A higher GPU version is always a superset of an earlier version in the same GPU family. For details on the individual families and version numbers, see [`MTLGPUFamily`](mtlgpufamily.md).
+More recent GPUs have higher version numbers and support larger feature sets. A higher GPU version is always a superset of an earlier version in the same GPU family. For details on the individual families and version numbers, see [`MTLGPUFamily`](./mtlgpufamily.md).
 
 The code below shows how to test whether a GPU supports a particular GPU family:
 
@@ -64,7 +65,7 @@ else
 }
 ```
 
-##### Determine Metal Version Availability
+##### Determine Metal version availability
 
 Each new Metal release adds new features for supported GPUs. In addition to checking for a GPU with the correct family, ensure that the features your app needs are also there. Use `available` statements to query whether the framework supports the features you need, as shown in the code below.
 
@@ -92,7 +93,7 @@ else
 }
 ```
 
-##### Find Variations in a Gpu Family
+##### Find variations in a GPU family
 
 GPUs in the same family can vary in small ways. Some features aren’t supported uniformly across a family. Use the device object to test for the existence of these features using an API specific to each feature.
 
@@ -116,9 +117,9 @@ if (device.argumentBuffersSupport == MTLArgumentBuffersTier2)
 }
 ```
 
-##### Discover Feature Availability in Earlier Operating Systems
+##### Discover feature availability in earlier operating systems
 
-If the GPU Family API isn’t available, test for features using *feature sets*. A feature set combines a Metal GPU family number with a software revision number. For example, to test for the first release of Metal that supported Apple family 4 GPUs, use [`MTLFeatureSet.iOS_GPUFamily4_v1`](mtlfeatureset/ios_gpufamily4_v1.md), as shown here:
+If the GPU Family API isn’t available, test for features using *feature sets*. A feature set combines a Metal GPU family number with a software revision number. For example, to test for the first release of Metal that supported Apple family 4 GPUs, use [`MTLFeatureSet.iOS_GPUFamily4_v1`](./mtlfeatureset/ios_gpufamily4_v1.md), as shown here:
 
 **Swift**:
 
@@ -138,17 +139,18 @@ if ([device supportsFeatureSet: MTLFeatureSet_iOS_GPUFamily4_v1])
 }
 ```
 
-Metal added new feature set enumerations in new versions of Apple operating systems to support new software features and GPU families, so there are many different enumeration values representing different collections of features. If a GPU supports a feature set, it supports all features provided by earlier members of the same family, and all features in earlier software revisions. For example, [`MTLFeatureSet.iOS_GPUFamily4_v2`](mtlfeatureset/ios_gpufamily4_v2.md) is version 2 of family 4, so it supports the same features as version 1, as well as all features supported by families 1, 2, and 3. You don’t need to test for those feature sets separately. Test for feature sets, from newest to oldest, until you successfully find a feature set that your app and the GPU both support.
+Metal added new feature set enumerations in new versions of Apple operating systems to support new software features and GPU families, so there are many different enumeration values representing different collections of features. If a GPU supports a feature set, it supports all features provided by earlier members of the same family, and all features in earlier software revisions. For example, [`MTLFeatureSet.iOS_GPUFamily4_v2`](./mtlfeatureset/ios_gpufamily4_v2.md) is version 2 of family 4, so it supports the same features as version 1, as well as all features supported by families 1, 2, and 3. You don’t need to test for those feature sets separately. Test for feature sets, from newest to oldest, until you successfully find a feature set that your app and the GPU both support.
 
 ## See Also
 
-- [Getting the default GPU](getting-the-default-gpu.md)
+### Locating and inspecting a GPU device
+- [Getting the default GPU](./getting-the-default-gpu.md)
   Select the system’s default GPU device on which to run your Metal code.
-- [func MTLCreateSystemDefaultDevice() -> (any MTLDevice)?](mtlcreatesystemdefaultdevice().md)
+- [func MTLCreateSystemDefaultDevice() -> (any MTLDevice)?](./mtlcreatesystemdefaultdevice%28%29.md)
   Returns the device instance Metal selects as the default.
-- [protocol MTLDevice](mtldevice.md)
+- [protocol MTLDevice](./mtldevice.md)
   The main Metal interface to a GPU that apps use to draw graphics and run computations in parallel.
-- [Multi-GPU systems](multi-gpu-systems.md)
+- [Multi-GPU systems](./multi-gpu-systems.md)
   Locate and work with internal and external GPUs and their displays, video memory, and performance tradeoffs.
 
 

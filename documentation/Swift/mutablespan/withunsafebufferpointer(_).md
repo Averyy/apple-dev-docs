@@ -1,7 +1,8 @@
 # withUnsafeBufferPointer(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Call a closure with a pointer to the viewed contiguous storage.
 

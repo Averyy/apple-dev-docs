@@ -1,7 +1,8 @@
 # SecTrustSettingsResult.trustRoot
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This root certificate is explicitly trusted.
 
@@ -13,6 +14,10 @@ This root certificate is explicitly trusted.
 
 ```swift
 case trustRoot
+```
+
+```c
+kSecTrustSettingsResultTrustRoot
 ```
 
 #### Discussion

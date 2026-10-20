@@ -1,7 +1,8 @@
 # ATSFontFamilyGetQuickDrawName(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontFamilyGetQuickDrawName(_ iFamily: ATSFontFamilyRef, _ oName: UnsafeMutablePointer<UInt8>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontFamilyGetQuickDrawName(ATSFontFamilyRef iFamily, Str255 oName);
 ```
 
 

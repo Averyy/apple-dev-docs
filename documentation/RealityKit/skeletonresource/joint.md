@@ -1,7 +1,8 @@
 # SkeletonResource.Joint
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes a single joint of a `Skeleton`
 
@@ -36,31 +37,32 @@ let arm = try Joint("shoulder") {
 ## Topics
 
 ### Creating a joint
-- [init(String, restPoseTransform: Transform, children: () throws -> [SkeletonResource.Joint]) throws](skeletonresource/joint/init(_:restposetransform:children:).md)
+- [init(String, restPoseTransform: Transform, children: () throws -> [SkeletonResource.Joint]) throws](./joint/init%28_,restposetransform,children%29.md)
   Creates a joint with the provided name, rest pose transform, and optional children.
 ### Inspecting a joint
-- [var id: String](skeletonresource/joint/id.md)
+- [var id: String](./joint/id.md)
   The identifier of the joint, automatically derived from the joint name.
-- [var restPoseTransform: Transform](skeletonresource/joint/restposetransform.md)
+- [var restPoseTransform: Transform](./joint/restposetransform.md)
   The rest pose transform of the joint. Defines position, rotation, and scale relative to the parent joint in local space. Used as the reference pose for all animations and deformations.
-- [let children: [SkeletonResource.Joint]](skeletonresource/joint/children.md)
+- [let children: [SkeletonResource.Joint]](./joint/children.md)
   The child joints of this joint. All children must have unique names within the same parent. `JointBuilder` preserves the order children are declared in the closure body, so iteration over `children` is deterministic.
 ### Instance Properties
-- [let name: String](skeletonresource/joint/name.md)
+- [let name: String](./joint/name.md)
   The unique name of the joint. Names should be unique within a skeleton.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var rootJoint: SkeletonResource.Joint](skeletonresource/rootjoint.md)
+### Defining the joint hierarchy
+- [var rootJoint: SkeletonResource.Joint](./rootjoint.md)
   The root joint of the skeleton hierarchy.
-- [SkeletonResource.JointBuilder](skeletonresource/jointbuilder.md)
+- [SkeletonResource.JointBuilder](./jointbuilder.md)
   A result builder for declaratively constructing the children of a joint.
 
 

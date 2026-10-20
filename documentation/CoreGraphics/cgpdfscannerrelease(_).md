@@ -1,7 +1,8 @@
 # CGPDFScannerRelease(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Decrements the retain count of a scanner object.
 
@@ -10,7 +11,7 @@ Decrements the retain count of a scanner object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Decrements the retain count of a scanner object.
 func CGPDFScannerRelease(_ scanner: CGPDFScannerRef)
 ```
 
+```c
+extern void CGPDFScannerRelease(CGPDFScannerRef scanner);
+```
+
 ## Parameters
 
 - `scanner`: The scanner object to release.
 
 ## See Also
 
-- [func CGPDFScannerRetain(CGPDFScannerRef) -> CGPDFScannerRef](cgpdfscannerretain(_:).md)
+### Retaining and Releasing PDF Scanner Objects
+- [func CGPDFScannerRetain(CGPDFScannerRef) -> CGPDFScannerRef](./cgpdfscannerretain%28_%29.md)
   Increments the retain count of a scanner object.
 
 

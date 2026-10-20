@@ -1,7 +1,8 @@
 # UINotificationFeedbackGenerator.FeedbackType.success
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification feedback type that indicates a task has completed successfully.
 
@@ -16,11 +17,16 @@ A notification feedback type that indicates a task has completed successfully.
 case success
 ```
 
+```c
+UINotificationFeedbackTypeSuccess
+```
+
 ## See Also
 
-- [UINotificationFeedbackGenerator.FeedbackType.error](uinotificationfeedbackgenerator/feedbacktype/error.md)
+### Constants
+- [UINotificationFeedbackGenerator.FeedbackType.error](./error.md)
   A notification feedback type that indicates a task has failed.
-- [UINotificationFeedbackGenerator.FeedbackType.warning](uinotificationfeedbackgenerator/feedbacktype/warning.md)
+- [UINotificationFeedbackGenerator.FeedbackType.warning](./warning.md)
   A notification feedback type that indicates a task has produced a warning.
 
 

@@ -1,7 +1,8 @@
 # cullOption
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action the engine performs after it temporarily removes the node’s sound from the audio output.
 
@@ -19,9 +20,14 @@ The action the engine performs after it temporarily removes the node’s sound f
 var cullOption: PHASECullOption { get set }
 ```
 
+```objc
+@property (nonatomic) PHASECullOption cullOption;
+```
+
 ## See Also
 
-- [enum PHASECullOption](phaseculloption.md)
+### Defining Cull Behavior
+- [enum PHASECullOption](../phaseculloption.md)
   The actions the engine takes when it culls sound.
 
 

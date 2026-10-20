@@ -1,7 +1,8 @@
 # init(address:symbolInfo:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance with a frame address and symbol information.
 
@@ -11,6 +12,10 @@ Initializes an instance with a frame address and symbol information.
 init(address: UInt64, symbolInfo: XCTSourceCodeSymbolInfo?)
 ```
 
+```objc
+- (instancetype) initWithAddress:(uint64_t) address symbolInfo:(XCTSourceCodeSymbolInfo *) symbolInfo;
+```
+
 ## Parameters
 
 - `address`: An address that represents a specific frame in a call stack.
@@ -18,7 +23,8 @@ init(address: UInt64, symbolInfo: XCTSourceCodeSymbolInfo?)
 
 ## See Also
 
-- [convenience init(address: UInt64)](xctsourcecodeframe/init(address:).md)
+### Initializers
+- [convenience init(address: UInt64)](./init%28address%29.md)
   Initializes an instance with a frame address.
 
 

@@ -1,7 +1,8 @@
 # NSFileProviderChangeObserver
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An observer that receives changes and deletions during enumeration.
 
@@ -18,30 +19,35 @@ An observer that receives changes and deletions during enumeration.
 protocol NSFileProviderChangeObserver : NSObjectProtocol
 ```
 
+```objc
+@protocol NSFileProviderChangeObserver <NSObject>
+```
+
 ## Topics
 
 ### Observing Changes
-- [func didDeleteItems(withIdentifiers: [NSFileProviderItemIdentifier])](nsfileproviderchangeobserver/diddeleteitems(withidentifiers:).md)
+- [func didDeleteItems(withIdentifiers: [NSFileProviderItemIdentifier])](./nsfileproviderchangeobserver/diddeleteitems%28withidentifiers%29.md)
   Tells the observer that the specified items have been deleted.
-- [func didUpdate([any NSFileProviderItemProtocol])](nsfileproviderchangeobserver/didupdate(_:).md)
+- [func didUpdate([any NSFileProviderItemProtocol])](./nsfileproviderchangeobserver/didupdate%28_%29.md)
   Tells the observer that the specified items have been updated.
-- [func finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor, moreComing: Bool)](nsfileproviderchangeobserver/finishenumeratingchanges(upto:morecoming:).md)
+- [func finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor, moreComing: Bool)](./nsfileproviderchangeobserver/finishenumeratingchanges%28upto,morecoming%29.md)
   Tells the observer that all of the changes have been enumerated up to the specified sync anchor.
-- [func finishEnumeratingWithError(any Error)](nsfileproviderchangeobserver/finishenumeratingwitherror(_:).md)
+- [func finishEnumeratingWithError(any Error)](./nsfileproviderchangeobserver/finishenumeratingwitherror%28_%29.md)
   Tells the observer that an error occurred during change notification.
-- [var suggestedBatchSize: Int](nsfileproviderchangeobserver/suggestedbatchsize.md)
+- [var suggestedBatchSize: Int](./nsfileproviderchangeobserver/suggestedbatchsize.md)
   The batch size that the system recommends.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Tracking Your File Provider’s Changes](tracking-your-file-provider-s-changes.md)
+### Change Tracking
+- [Tracking Your File Provider’s Changes](./tracking-your-file-provider-s-changes.md)
   Create an enumerator to track changes to your file provider’s content.
-- [struct NSFileProviderSyncAnchor](nsfileprovidersyncanchor.md)
+- [struct NSFileProviderSyncAnchor](./nsfileprovidersyncanchor.md)
   A synchronization point that represents the last batch of changes returned by the enumerator.
 
 

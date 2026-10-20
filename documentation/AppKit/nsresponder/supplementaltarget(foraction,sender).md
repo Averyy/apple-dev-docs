@@ -1,7 +1,8 @@
 # supplementalTarget(forAction:sender:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds a target for an action method.
 
@@ -12,6 +13,10 @@ Finds a target for an action method.
 
 ```swift
 func supplementalTarget(forAction action: Selector, sender: Any?) -> Any?
+```
+
+```objc
+- (id) supplementalTargetForAction:(SEL) action sender:(id) sender;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ NSResponder’s implementation returns `nil`.
 
 ## See Also
 
-- [protocol NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
+### Responding to Action Messages
+- [protocol NSStandardKeyBindingResponding](../nsstandardkeybindingresponding.md)
   Methods that responder subclasses implement to support key binding commands, such as inserting tabs and newlines, or moving the insertion point.
-- [Action Messages](action-messages.md)
+- [Action Messages](../action-messages.md)
   Implement action messages in your first responders to handle common tasks.
 
 

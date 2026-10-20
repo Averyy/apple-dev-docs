@@ -1,9 +1,10 @@
 # kUCKeyOutputStateIndexMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-If the bit specified by this mask is set, the [`UCKeyStateRecordsIndex`](uckeystaterecordsindex.md) `UCKeyOutput` value contains an index into a structure of type [`UCKeyStateRecordsIndex`](uckeystaterecordsindex.md).
+If the bit specified by this mask is set, the [`UCKeyStateRecordsIndex`](./uckeystaterecordsindex.md) `UCKeyOutput` value contains an index into a structure of type [`UCKeyStateRecordsIndex`](./uckeystaterecordsindex.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

@@ -1,7 +1,8 @@
 # capturing
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A capture to Pro Video Storage is in progress.
 
@@ -16,6 +17,10 @@ A capture to Pro Video Storage is in progress.
 
 ```swift
 static let capturing: AVProVideoStorage.BusyReason
+```
+
+```c
+extern AVProVideoStorageBusyReason const AVProVideoStorageBusyReasonCapturing;
 ```
 
 

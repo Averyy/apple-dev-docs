@@ -1,7 +1,8 @@
 # AVAudioUnitComponentManager
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides a way to search and query audio components that the system registers.
 
@@ -19,6 +20,10 @@ An object that provides a way to search and query audio components that the syst
 class AVAudioUnitComponentManager
 ```
 
+```objc
+@interface AVAudioUnitComponentManager : NSObject
+```
+
 #### Overview
 
 The component manager has methods to find various information about the audio components without opening them. Currently, you can only search audio components that are audio units.
@@ -34,41 +39,42 @@ You can search for audio units in the following ways:
 ## Topics
 
 ### Getting the shared manager
-- [class func shared() -> Self](avaudiounitcomponentmanager/shared.md)
+- [class func shared() -> Self](./avaudiounitcomponentmanager/shared%28%29.md)
   Gets the shared component manager instance.
 ### Getting matching audio components
-- [func components(matching: AudioComponentDescription) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(matching:)-9qt94.md)
+- [func components(matching: AudioComponentDescription) -> [AVAudioUnitComponent]](./avaudiounitcomponentmanager/components%28matching%29-9qt94.md)
   Gets an array of audio component objects that match the description.
-- [func components(matching: NSPredicate) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(matching:)-96l2c.md)
+- [func components(matching: NSPredicate) -> [AVAudioUnitComponent]](./avaudiounitcomponentmanager/components%28matching%29-96l2c.md)
   Gets an array of audio component objects that match the search predicate.
-- [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(passingtest:).md)
+- [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](./avaudiounitcomponentmanager/components%28passingtest%29.md)
   Gets an array of audio components that pass the block method.
 ### Getting Audio Unit tags
-- [var standardLocalizedTagNames: [String]](avaudiounitcomponentmanager/standardlocalizedtagnames.md)
+- [var standardLocalizedTagNames: [String]](./avaudiounitcomponentmanager/standardlocalizedtagnames.md)
   An array of the localized standard system tags the audio units define.
-- [var tagNames: [String]](avaudiounitcomponentmanager/tagnames.md)
+- [var tagNames: [String]](./avaudiounitcomponentmanager/tagnames.md)
   An array of all tags the audio unit associates with the current user, and the system tags the audio units define.
 ### Observing registration changes
-- [AVAudioUnitComponentManager.RegistrationsChangedMessage](avaudiounitcomponentmanager/registrationschangedmessage.md)
+- [AVAudioUnitComponentManager.RegistrationsChangedMessage](./avaudiounitcomponentmanager/registrationschangedmessage.md)
   Type-safe notification message for audio unit component registration changes.
-- [class let registrationsChangedNotification: NSNotification.Name](avaudiounitcomponentmanager/registrationschangednotification.md)
+- [class let registrationsChangedNotification: NSNotification.Name](./avaudiounitcomponentmanager/registrationschangednotification.md)
   A notification the component manager generates when it updates its list of components.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAudioUnitComponent](avaudiounitcomponent.md)
+### Component management
+- [class AVAudioUnitComponent](./avaudiounitcomponent.md)
   An object that provides details about an audio unit.
 
 

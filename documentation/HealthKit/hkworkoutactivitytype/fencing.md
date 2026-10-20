@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.fencing
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for fencing.
 
@@ -19,15 +20,20 @@ The constant for fencing.
 case fencing
 ```
 
+```c
+HKWorkoutActivityTypeFencing
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.archery](hkworkoutactivitytype/archery.md)
+### Individual sports
+- [HKWorkoutActivityType.archery](./archery.md)
   The constant for shooting archery.
-- [HKWorkoutActivityType.bowling](hkworkoutactivitytype/bowling.md)
+- [HKWorkoutActivityType.bowling](./bowling.md)
   The constant for bowling.
-- [HKWorkoutActivityType.gymnastics](hkworkoutactivitytype/gymnastics.md)
+- [HKWorkoutActivityType.gymnastics](./gymnastics.md)
   Performing gymnastics.
-- [HKWorkoutActivityType.trackAndField](hkworkoutactivitytype/trackandfield.md)
+- [HKWorkoutActivityType.trackAndField](./trackandfield.md)
   Participating in track and field events, including shot put, javelin, pole vaulting, and related sports.
 
 

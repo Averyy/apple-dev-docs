@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the suggestion with a second specified suggestion.
 
@@ -18,6 +19,10 @@ Compares the suggestion with a second specified suggestion.
 func compare(_ other: CSSuggestion) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) compare:(CSSuggestion *) other;
+```
+
 #### Return Value
 
 Returns an `NSComparisonResult`.
@@ -28,7 +33,8 @@ Returns an `NSComparisonResult`.
 
 ## See Also
 
-- [func compare(byRank: CSSuggestion) -> ComparisonResult](cssuggestion/compare(byrank:).md)
+### Comparing suggestions
+- [func compare(byRank: CSSuggestion) -> ComparisonResult](./compare%28byrank%29.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSetCLUTByValue](1645150-anonymous/ksetclutbyvalue.md)
-- [kSetCLUTImmediately](1645150-anonymous/ksetclutimmediately.md)
-- [kSetCLUTWithLuminance](1645150-anonymous/ksetclutwithluminance.md)
+- [kSetCLUTByValue](./api-1645150-anonymous/ksetclutbyvalue.md)
+- [kSetCLUTImmediately](./api-1645150-anonymous/ksetclutimmediately.md)
+- [kSetCLUTWithLuminance](./api-1645150-anonymous/ksetclutwithluminance.md)
 
 
 ---

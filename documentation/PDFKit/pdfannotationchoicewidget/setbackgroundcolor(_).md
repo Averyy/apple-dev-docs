@@ -1,17 +1,22 @@
 # setBackgroundColor(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the background color of the widget annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setBackgroundColor(_ color: NSColor!)
+```
+
+```objc
+- (void) setBackgroundColor:(NSColor *) color;
 ```
 
 ## Parameters
@@ -20,15 +25,16 @@ func setBackgroundColor(_ color: NSColor!)
 
 ## See Also
 
-- [func backgroundColor() -> NSColor!](pdfannotationchoicewidget/backgroundcolor.md)
+### Managing Font and Background Color Characteristics
+- [func backgroundColor() -> NSColor!](./backgroundcolor%28%29.md)
   Returns the color of the widget annotation background.
-- [func font() -> NSFont!](pdfannotationchoicewidget/font.md)
+- [func font() -> NSFont!](./font%28%29.md)
   Returns the font used to display the text in the widget annotation.
-- [func setFont(NSFont!)](pdfannotationchoicewidget/setfont(_:).md)
+- [func setFont(NSFont!)](./setfont%28_%29.md)
   Sets the font used to display the text in the widget annotation.
-- [func fontColor() -> NSColor!](pdfannotationchoicewidget/fontcolor.md)
+- [func fontColor() -> NSColor!](./fontcolor%28%29.md)
   Returns the font color used to display the text in the widget annotation.
-- [func setFontColor(NSColor!)](pdfannotationchoicewidget/setfontcolor(_:).md)
+- [func setFontColor(NSColor!)](./setfontcolor%28_%29.md)
   Sets the font color used to display the text in the widget annotation.
 
 

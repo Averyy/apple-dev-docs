@@ -1,14 +1,15 @@
 # notify_complete_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 tcp_notify_ack_id_t notify_complete_id[10];
 ```
 

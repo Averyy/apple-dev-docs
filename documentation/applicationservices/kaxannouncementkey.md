@@ -1,7 +1,8 @@
 # kAXAnnouncementKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification info key used to specify an announcement to be spoken with a notification.
 
@@ -12,6 +13,10 @@ Notification info key used to specify an announcement to be spoken with a notifi
 
 ```swift
 var kAXAnnouncementKey: String { get }
+```
+
+```c
+#define kAXAnnouncementKey
 ```
 
 

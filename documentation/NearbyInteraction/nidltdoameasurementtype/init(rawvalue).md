@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a measurement type from the given underlying value.
 

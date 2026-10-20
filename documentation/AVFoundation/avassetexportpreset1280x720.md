@@ -1,7 +1,8 @@
 # AVAssetExportPreset1280x720
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A preset to export a 1280 by 720 movie that contains H.264 video and AAC audio.
 
@@ -19,19 +20,24 @@ A preset to export a 1280 by 720 movie that contains H.264 video and AAC audio.
 let AVAssetExportPreset1280x720: String
 ```
 
+```c
+extern NSString * const AVAssetExportPreset1280x720;
+```
+
 #### Discussion
 
 The system doesn’t scale movies up from a smaller size.
 
 ## See Also
 
-- [let AVAssetExportPreset640x480: String](avassetexportpreset640x480.md)
+### Size presets
+- [let AVAssetExportPreset640x480: String](./avassetexportpreset640x480.md)
   A preset to export a 640 by 480 movie that contains H.264 video and AAC audio.
-- [let AVAssetExportPreset960x540: String](avassetexportpreset960x540.md)
+- [let AVAssetExportPreset960x540: String](./avassetexportpreset960x540.md)
   A preset to export a 960 by 540 movie that contains H.264 video and AAC audio.
-- [let AVAssetExportPreset1920x1080: String](avassetexportpreset1920x1080.md)
+- [let AVAssetExportPreset1920x1080: String](./avassetexportpreset1920x1080.md)
   A preset to export a 1920 by 1080 movie that contains H.264 video and AAC audio.
-- [let AVAssetExportPreset3840x2160: String](avassetexportpreset3840x2160.md)
+- [let AVAssetExportPreset3840x2160: String](./avassetexportpreset3840x2160.md)
   A preset to export a 3840 by 2160 movie that contains H.264 video and AAC audio.
 
 

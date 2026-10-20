@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A circle object centered at the origin, with a radius of zero.
 
@@ -19,13 +20,18 @@ A circle object centered at the origin, with a radius of zero.
 class var zero: VNCircle { get }
 ```
 
+```objc
+@property (class, strong, readonly) VNCircle * zeroCircle;
+```
+
 ## See Also
 
-- [init(center: VNPoint, radius: Double)](vncircle/init(center:radius:).md)
+### Creating a Circle
+- [init(center: VNPoint, radius: Double)](./init%28center,radius%29.md)
   Creates a circle with the specified center and radius.
-- [convenience init(center: VNPoint, diameter: Double)](vncircle/init(center:diameter:).md)
+- [convenience init(center: VNPoint, diameter: Double)](./init%28center,diameter%29.md)
   Creates a circle with the specified center and diameter.
-- [init?(coder: NSCoder)](vncircle/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

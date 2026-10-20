@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates the view controller object and configures its initial state.
@@ -26,7 +27,7 @@ Your UIKit view controller configured with the provided information.
 
 #### Discussion
 
-You must implement this method and use it to create your view controller object. Create the view controller using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your view controller for the first time. For all subsequent updates, the system calls the [`updateUIViewController(_:context:)`](uiviewcontrollerrepresentable/updateuiviewcontroller(_:context:).md) method.
+You must implement this method and use it to create your view controller object. Create the view controller using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your view controller for the first time. For all subsequent updates, the system calls the [`updateUIViewController(_:context:)`](./updateuiviewcontroller%28_,context%29.md) method.
 
 ## Parameters
 
@@ -34,10 +35,11 @@ You must implement this method and use it to create your view controller object.
 
 ## See Also
 
-- [func updateUIViewController(Self.UIViewControllerType, context: Self.Context)](uiviewcontrollerrepresentable/updateuiviewcontroller(_:context:).md)
+### Creating and updating the view controller
+- [func updateUIViewController(Self.UIViewControllerType, context: Self.Context)](./updateuiviewcontroller%28_,context%29.md)
   Updates the state of the specified view controller with new information from SwiftUI.
-- [UIViewControllerRepresentable.Context](uiviewcontrollerrepresentable/context.md)
-- [associatedtype UIViewControllerType : UIViewController](uiviewcontrollerrepresentable/uiviewcontrollertype.md)
+- [UIViewControllerRepresentable.Context](./context.md)
+- [associatedtype UIViewControllerType : UIViewController](./uiviewcontrollertype.md)
   The type of view controller to present.
 
 

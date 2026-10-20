@@ -1,7 +1,8 @@
 # showSystemUserInterface(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Displays the system’s user interface to configure video effects or microphone modes.
 
@@ -18,6 +19,10 @@ Displays the system’s user interface to configure video effects or microphone 
 class func showSystemUserInterface(_ systemUserInterface: AVCaptureDevice.SystemUserInterface)
 ```
 
+```objc
++ (void) showSystemUserInterface:(AVCaptureSystemUserInterface) systemUserInterface;
+```
+
 #### Discussion
 
 Use this method to prompt the user to make changes to Video Effects (such as Center Stage or Portrait Effect) or Microphone Modes. It presents the system user interface and deep links to the appropriate module.
@@ -30,7 +35,8 @@ Calling this method isn’t a blocking operation. After the system presents the 
 
 ## See Also
 
-- [AVCaptureDevice.SystemUserInterface](avcapturedevice/systemuserinterface.md)
+### Presenting the configuration user interface
+- [AVCaptureDevice.SystemUserInterface](./systemuserinterface.md)
   Constants that describe the capture device configuration user interfaces.
 
 

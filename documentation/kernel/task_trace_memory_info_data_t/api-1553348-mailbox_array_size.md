@@ -1,14 +1,15 @@
 # mailbox_array_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 uint64_t mailbox_array_size;
 ```
 

@@ -1,6 +1,7 @@
 # velocity
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 The amount of velocity the impulse adds to the target prims.
 
@@ -16,9 +17,10 @@ uniform vector3d velocity = (0.0, 0.0, 0.0)
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
 
 

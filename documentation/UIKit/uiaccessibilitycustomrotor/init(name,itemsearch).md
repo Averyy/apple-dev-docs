@@ -1,7 +1,8 @@
 # init(name:itemSearch:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rotor with the specified name and search block.
 
@@ -18,6 +19,10 @@ Creates a rotor with the specified name and search block.
 init(name: String, itemSearch itemSearchBlock: @escaping UIAccessibilityCustomRotor.Search)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name itemSearchBlock:(UIAccessibilityCustomRotorSearch) itemSearchBlock;
+```
+
 #### Return Value
 
 An initialized rotor object.
@@ -29,9 +34,10 @@ An initialized rotor object.
 
 ## See Also
 
-- [init(attributedName: NSAttributedString, itemSearch: UIAccessibilityCustomRotor.Search)](uiaccessibilitycustomrotor/init(attributedname:itemsearch:).md)
+### Creating a rotor object
+- [init(attributedName: NSAttributedString, itemSearch: UIAccessibilityCustomRotor.Search)](./init%28attributedname,itemsearch%29.md)
   Creates a rotor with the specified name and search block.
-- [init(systemType: UIAccessibilityCustomRotor.SystemRotorType, itemSearch: UIAccessibilityCustomRotor.Search)](uiaccessibilitycustomrotor/init(systemtype:itemsearch:).md)
+- [init(systemType: UIAccessibilityCustomRotor.SystemRotorType, itemSearch: UIAccessibilityCustomRotor.Search)](./init%28systemtype,itemsearch%29.md)
   Creates a rotor for the specified type of item.
 
 

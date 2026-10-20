@@ -1,18 +1,25 @@
 # glGetSamplerParameterfv(_:_:_:)
 
 **Framework**: OpenGL ES  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 7.0+
-- tvOS 9.0+
+- iOS 7.0+ - Deprecated in 12.0
+- iPadOS 7.0+ - Deprecated in 12.0
+- Mac Catalyst 7.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func glGetSamplerParameterfv(_ sampler: GLuint, _ pname: GLenum, _ params: UnsafeMutablePointer<GLfloat>!)
+```
+
+```c
+extern void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat *params);
 ```
 
 

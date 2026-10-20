@@ -1,7 +1,8 @@
 # language
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language of this media selection option.
 

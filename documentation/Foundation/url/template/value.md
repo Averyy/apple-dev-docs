@@ -1,7 +1,8 @@
 # URL.Template.Value
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of a variable used for expanding a template.
 
@@ -51,28 +52,28 @@ let keys: URL.Template.Value = [
 ## Topics
 
 ### Type Methods
-- [static func associativeList(some Sequence<(key: String, value: String)>) -> URL.Template.Value](url/template/value/associativelist(_:).md)
+- [static func associativeList(some Sequence<(key: String, value: String)>) -> URL.Template.Value](./value/associativelist%28_%29.md)
   An associative list value (ordered key-value pairs) to be used with a `URL.Template`.
-- [static func list(some Sequence<String>) -> URL.Template.Value](url/template/value/list(_:).md)
+- [static func list(some Sequence<String>) -> URL.Template.Value](./value/list%28_%29.md)
   A list value (an array of `String`s) to be used with a `URL.Template`.
-- [static func text(String) -> URL.Template.Value](url/template/value/text(_:).md)
+- [static func text(String) -> URL.Template.Value](./value/text%28_%29.md)
   A text value to be used with a `URL.Template`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [ExpressibleByDictionaryLiteral](../../../Swift/expressiblebydictionaryliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

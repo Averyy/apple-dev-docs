@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determine CWConfiguration object equality.
 
@@ -12,6 +13,10 @@ Determine CWConfiguration object equality.
 
 ```swift
 func isEqual(to configuration: CWConfiguration) -> Bool
+```
+
+```objc
+- (BOOL) isEqualToConfiguration:(CWConfiguration *) configuration;
 ```
 
 #### Return Value

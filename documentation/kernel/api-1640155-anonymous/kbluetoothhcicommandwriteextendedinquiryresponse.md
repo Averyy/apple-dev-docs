@@ -1,14 +1,15 @@
 # kBluetoothHCICommandWriteExtendedInquiryResponse
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandWriteExtendedInquiryResponse = 0x0052
 ```
 

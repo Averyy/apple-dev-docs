@@ -1,7 +1,8 @@
 # extensionName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the Media Extension.
 
@@ -14,18 +15,23 @@ The name of the Media Extension.
 var extensionName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * extensionName;
+```
+
 #### Discussion
 
-This value corresponds to the extension’s [`CFBundleDisplayName`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledisplayname).
+This value corresponds to the extension’s [`CFBundleDisplayName`](../../BundleResources/information-property-list/cfbundledisplayname.md).
 
 ## See Also
 
-- [var containingBundleName: String](avmediaextensionproperties/containingbundlename.md)
+### Inspecting the extension
+- [var containingBundleName: String](./containingbundlename.md)
   The name of the containing app bundle.
-- [var extensionIdentifier: String](avmediaextensionproperties/extensionidentifier.md)
-- [var extensionURL: URL](avmediaextensionproperties/extensionurl.md)
+- [var extensionIdentifier: String](./extensionidentifier.md)
+- [var extensionURL: URL](./extensionurl.md)
   The file URL of the Media Extension bundle.
-- [var containingBundleURL: URL](avmediaextensionproperties/containingbundleurl.md)
+- [var containingBundleURL: URL](./containingbundleurl.md)
   The file URL of the host application for the Media Extension.
 
 

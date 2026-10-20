@@ -1,7 +1,8 @@
 # setHolidayScheduleWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setHolidayScheduleWith(_ params: MTRDoorLockClusterSetHolidayScheduleParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setHolidayScheduleWith(_ params: MTRDoorLockClusterSetHolidayScheduleParams) async throws
+```
+
+```objc
+- (void) setHolidayScheduleWithParams:(MTRDoorLockClusterSetHolidayScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

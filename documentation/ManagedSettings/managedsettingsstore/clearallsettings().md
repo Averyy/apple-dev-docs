@@ -1,7 +1,8 @@
 # clearAllSettings()
 
 **Framework**: Managed Settings  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all settings for this store.
 

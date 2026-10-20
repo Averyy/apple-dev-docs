@@ -1,7 +1,8 @@
 # NetworkProxyConfiguration.Proxies
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload for configuring network proxies.
 
@@ -10,14 +11,16 @@ The payload for configuring network proxies.
 
 ## Declaration
 
-```swift
+```
 object NetworkProxyConfiguration.Proxies
 ```
 
 ## Properties
 
 - `ExceptionsList` ([string]): The list of hosts and domains that should bypass proxy settings.
-- `FallBackAllowed` (integer): If `1`, enables fallback. Default is `1`. For managed devices, if not supplied, the default is `0`.
+- `FallBackAllowed` (integer): If `1`, enables fallback. Default is `1`.
+
+  For managed devices, if not supplied, the default is `0`.
 - `FTPEnable` (integer): If `true`, enables FTP proxy.
 - `FTPPassive` (integer): If `true`, enables passive FTP mode.
 - `FTPPort` (integer): The FTP proxy port.
@@ -33,7 +36,9 @@ object NetworkProxyConfiguration.Proxies
 - `HTTPSProxy` (string): The host name or IP address for the secure web proxy.
 - `ProxyAutoConfigEnable` (integer): If `true`, enables automatic proxy configuration.
 - `ProxyAutoConfigURLString` (string): The automatic proxy configuration URL.
-- `ProxyCaptiveLoginAllowed` (integer): If 1, allows client to log into captive portal network. Available: macOS 10.9+
+- `ProxyCaptiveLoginAllowed` (integer): If 1, allows client to log into captive portal network.
+
+  Available: macOS 10.9+
 - `RTSPEnable` (integer): If `true`, enable streaming proxy.
 - `RTSPPort` (integer): The streaming proxy port.
 - `RTSPProxy` (string): The host name or IP address for the streaming proxy.

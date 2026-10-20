@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the state object that creates bindings to its properties.
 
@@ -23,7 +24,7 @@ A projection of the state object that creates bindings to its properties.
 
 #### Discussion
 
-Use the projected value to get a [`Binding`](binding.md) to a property of a state object. To access the projected value, prefix the property name with a dollar sign (`$`). For example, you can get a binding to a model’s `isEnabled` Boolean so that a [`Toggle`](toggle.md) can control the value:
+Use the projected value to get a [`Binding`](../binding.md) to a property of a state object. To access the projected value, prefix the property name with a dollar sign (`$`). For example, you can get a binding to a model’s `isEnabled` Boolean so that a [`Toggle`](../toggle.md) can control the value:
 
 ```swift
 struct MyView: View {
@@ -39,7 +40,8 @@ struct MyView: View {
 
 ## See Also
 
-- [var wrappedValue: ObjectType](stateobject/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: ObjectType](./wrappedvalue.md)
   The underlying value referenced by the state object.
 
 

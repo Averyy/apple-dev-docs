@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a token that the merchant server generates.
 

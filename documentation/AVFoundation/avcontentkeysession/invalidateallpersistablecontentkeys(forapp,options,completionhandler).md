@@ -1,7 +1,8 @@
 # invalidateAllPersistableContentKeys(forApp:options:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates all of an app’s persistable content keys and creates a secure server playback context (SPC) to verify the outcome of an invalidation request.
 
@@ -17,20 +18,31 @@ Invalidates all of an app’s persistable content keys and creates a secure serv
 ## Declaration
 
 ```swift
+func invalidateAllPersistableContentKeys(forApp appIdentifier: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]? = nil, completionHandler handler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func invalidateAllPersistableContentKeys(forApp appIdentifier: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]? = nil) async throws -> Data
+```
+
+```objc
+- (void) invalidateAllPersistableContentKeysForApp:(NSData *) appIdentifier options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSData *secureTokenData, NSError *error)) handler;
 ```
 
 ## Parameters
 
 - `appIdentifier`: An opaque identifier for the app.
-- `options`: Additional data necessary to generate the server playback context. Pass `nil` to indicate no additional options. See [`AVContentKeySessionServerPlaybackContextOption`](avcontentkeysessionserverplaybackcontextoption.md) for supported options.
+- `options`: Additional data necessary to generate the server playback context. Pass `nil` to indicate no additional options.
+
+  See [`AVContentKeySessionServerPlaybackContextOption`](../avcontentkeysessionserverplaybackcontextoption.md) for supported options.
 - `handler`: The completion handler callback.
 
 ## See Also
 
-- [func invalidatePersistableContentKey(Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeysession/invalidatepersistablecontentkey(_:options:completionhandler:).md)
+### Invalidating content keys
+- [func invalidatePersistableContentKey(Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](./invalidatepersistablecontentkey%28_,options,completionhandler%29.md)
   Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request.
-- [struct AVContentKeySessionServerPlaybackContextOption](avcontentkeysessionserverplaybackcontextoption.md)
+- [struct AVContentKeySessionServerPlaybackContextOption](../avcontentkeysessionserverplaybackcontextoption.md)
   Options for specifying additional information for generating server playback context (SPC).
 
 

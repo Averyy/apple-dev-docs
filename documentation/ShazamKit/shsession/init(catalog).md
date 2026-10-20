@@ -1,7 +1,8 @@
 # init(catalog:)
 
 **Framework**: ShazamKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new session object for matching audio in a custom catalog.
 
@@ -20,13 +21,18 @@ Creates a new session object for matching audio in a custom catalog.
 init(catalog: SHCatalog)
 ```
 
+```objc
+- (instancetype) initWithCatalog:(SHCatalog *) catalog;
+```
+
 ## Parameters
 
 - `catalog`: The catalog that contains the reference audio signatures and their associated metadata.
 
 ## See Also
 
-- [init()](shsession/init.md)
+### Creating a session object
+- [init()](./init%28%29.md)
   Creates a new session object for matching songs in the Shazam Music catalog.
 
 

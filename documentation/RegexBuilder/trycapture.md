@@ -1,7 +1,8 @@
 # TryCapture
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A regex component that attempts to transform a matched substring, saving the result if successful and backtracking if the transformation fails.
 
@@ -11,7 +12,7 @@ A regex component that attempts to transform a matched substring, saving the res
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -61,112 +62,113 @@ for match in transactions.matches(of: regex) {
 // Prints "Transaction amount: 121.54"
 ```
 
-Throwing an error from a `transform` closure aborts matching and propagates the error out to the caller. If you want to capture the `nil` results of a failable transformation, instead of continuing a search, use [`Capture`](capture.md) instead of `TryCapture`.
+Throwing an error from a `transform` closure aborts matching and propagates the error out to the caller. If you want to capture the `nil` results of a failable transformation, instead of continuing a search, use [`Capture`](./capture.md) instead of `TryCapture`.
 
 ## Topics
 
 ### Initializers
-- [init<W, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-2a4o2.md)
+- [init<W, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-2a4o2.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-2bjbf.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-2bjbf.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-41r67.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-41r67.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-4kzw6.md)
+- [init<W, C1, C2, C3, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-4kzw6.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-674ml.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-674ml.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-7tqt7.md)
+- [init<W, C1, C2, C3, C4, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-7tqt7.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-88lf1.md)
+- [init<W, C1, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-88lf1.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-89xrg.md)
+- [init<W, C1, C2, C3, C4, C5, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-89xrg.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-8m89r.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-8m89r.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-9p9ig.md)
+- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-9p9ig.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](trycapture/init(_:as:transform:)-z449.md)
+- [init<W, C1, C2, NewCapture>(some RegexComponent, as: Reference<NewCapture>, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,as,transform%29-z449.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-18te8.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-18te8.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-1oiex.md)
+- [init<W, C1, C2, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-1oiex.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-1q8tj.md)
+- [init<W, C1, C2, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-1q8tj.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-2akes.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-2akes.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-2cmjm.md)
+- [init<W, C1, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-2cmjm.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-2o3dd.md)
+- [init<W, C1, C2, C3, C4, C5, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-2o3dd.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-35erc.md)
+- [init<W, C1, C2, C3, C4, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-35erc.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-49jj.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-49jj.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-4ctec.md)
+- [init<W, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-4ctec.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-4fb8m.md)
+- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-4fb8m.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-55y26.md)
+- [init<W, C1, C2, C3, C4, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-55y26.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-5blap.md)
+- [init<W, C1, C2, C3, C4, C5, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-5blap.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-5f28q.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-5f28q.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-5qk0r.md)
+- [init<W, C1, C2, C3, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-5qk0r.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-631wm.md)
+- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-631wm.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-7vgez.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-7vgez.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-7w4kc.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-7w4kc.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-8d6xo.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-8d6xo.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-8kgfm.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-8kgfm.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-951zx.md)
+- [init<W, NewCapture>(() -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-951zx.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-9oonc.md)
+- [init<W, C1, C2, C3, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-9oonc.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, C1, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(_:transform:)-t0lx.md)
+- [init<W, C1, NewCapture>(some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28_,transform%29-t0lx.md)
   Creates a capture for the given component, attempting to transform with the given closure.
-- [init<W, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-2nfnn.md)
+- [init<W, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-2nfnn.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-5tqfd.md)
+- [init<W, C1, C2, C3, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-5tqfd.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-6vy4m.md)
+- [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-6vy4m.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-7di2q.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-7di2q.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-7j2mj.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-7j2mj.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-7pe1b.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-7pe1b.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-85qkx.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-85qkx.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-8byjf.md)
+- [init<W, C1, C2, C3, C4, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-8byjf.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-8xl17.md)
+- [init<W, C1, C2, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-8xl17.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, C2, C3, C4, C5, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-b8x0.md)
+- [init<W, C1, C2, C3, C4, C5, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-b8x0.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-- [init<W, C1, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-p58t.md)
+- [init<W, C1, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](./trycapture/init%28as,_,transform%29-p58t.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RegexComponent](../swift/regexcomponent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct Capture](capture.md)
+### Captures
+- [struct Capture](./capture.md)
   A regex component that saves the matched substring, or a transformed result, for access in a regex match.
-- [struct Reference](reference.md)
+- [struct Reference](./reference.md)
   A reference to a captured portion of a regular expression.
 
 

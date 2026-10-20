@@ -1,6 +1,7 @@
 # Secure Download
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Implement Apple’s Secure Download System in macOS.
 
@@ -15,7 +16,7 @@ The `Security.SecureDownload` API provides access to Apple’s Secure Download S
 ## Topics
 
 ### Result Codes
-- [Secure Download Result Codes](secure-download-result-codes.md)
+- [Secure Download Result Codes](./secure-download-result-codes.md)
   Result codes specific to the secure download API.
 
 

@@ -1,6 +1,7 @@
 # Audio Unit Processing Graph Services
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 Audio Unit Processing Graph Services provide interfaces for representing a set of audio units, connections between their inputs and outputs, and callbacks used to provide inputs. It also enables the embedding of sub (or child) processing graphs within parent graphs to allow for a logical organization of parts of an overall signal chain.
 
@@ -17,94 +18,94 @@ A graph object will have a single head node––an output unit. The output unit
 ## Topics
 
 ### Audio Unit Processing Graph Services Functions
-- [func AUGraphAddNode(AUGraph, UnsafePointer<AudioComponentDescription>, UnsafeMutablePointer<AUNode>) -> OSStatus](augraphaddnode(_:_:_:).md)
+- [func AUGraphAddNode(AUGraph, UnsafePointer<AudioComponentDescription>, UnsafeMutablePointer<AUNode>) -> OSStatus](./augraphaddnode%28_,_,_%29.md)
   Adds a node to an audio processing graph.
-- [func AUGraphAddRenderNotify(AUGraph, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](augraphaddrendernotify(_:_:_:).md)
+- [func AUGraphAddRenderNotify(AUGraph, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](./augraphaddrendernotify%28_,_,_%29.md)
   Adds a render notification callback to an audio processing graph.
-- [func AUGraphClearConnections(AUGraph) -> OSStatus](augraphclearconnections(_:).md)
+- [func AUGraphClearConnections(AUGraph) -> OSStatus](./augraphclearconnections%28_%29.md)
   Clears all of the interactions in an audio unit processing graph.
-- [func AUGraphClose(AUGraph) -> OSStatus](augraphclose(_:).md)
+- [func AUGraphClose(AUGraph) -> OSStatus](./augraphclose%28_%29.md)
   Closes an audio unit processing graph.
-- [func AUGraphConnectNodeInput(AUGraph, AUNode, UInt32, AUNode, UInt32) -> OSStatus](augraphconnectnodeinput(_:_:_:_:_:).md)
+- [func AUGraphConnectNodeInput(AUGraph, AUNode, UInt32, AUNode, UInt32) -> OSStatus](./augraphconnectnodeinput%28_,_,_,_,_%29.md)
   Connects one node’s output to another node’s input.
-- [func AUGraphCountNodeInteractions(AUGraph, AUNode, UnsafeMutablePointer<UInt32>) -> OSStatus](augraphcountnodeinteractions(_:_:_:).md)
+- [func AUGraphCountNodeInteractions(AUGraph, AUNode, UnsafeMutablePointer<UInt32>) -> OSStatus](./augraphcountnodeinteractions%28_,_,_%29.md)
   Retrieves the number of interactions of an audio processing graph’s node.
-- [func AUGraphDisconnectNodeInput(AUGraph, AUNode, UInt32) -> OSStatus](augraphdisconnectnodeinput(_:_:_:).md)
+- [func AUGraphDisconnectNodeInput(AUGraph, AUNode, UInt32) -> OSStatus](./augraphdisconnectnodeinput%28_,_,_%29.md)
   Disconnects a node’s input.
-- [func AUGraphGetCPULoad(AUGraph, UnsafeMutablePointer<Float32>) -> OSStatus](augraphgetcpuload(_:_:).md)
+- [func AUGraphGetCPULoad(AUGraph, UnsafeMutablePointer<Float32>) -> OSStatus](./augraphgetcpuload%28_,_%29.md)
   Obtains the short-term running average of the current CPU load of the audio processing graph.
-- [func AUGraphGetIndNode(AUGraph, UInt32, UnsafeMutablePointer<AUNode>) -> OSStatus](augraphgetindnode(_:_:_:).md)
+- [func AUGraphGetIndNode(AUGraph, UInt32, UnsafeMutablePointer<AUNode>) -> OSStatus](./augraphgetindnode%28_,_,_%29.md)
   Gets the audio processing graph node at a given index.
-- [func AUGraphGetInteractionInfo(AUGraph, UInt32, UnsafeMutablePointer<AUNodeInteraction>) -> OSStatus](augraphgetinteractioninfo(_:_:_:).md)
+- [func AUGraphGetInteractionInfo(AUGraph, UInt32, UnsafeMutablePointer<AUNodeInteraction>) -> OSStatus](./augraphgetinteractioninfo%28_,_,_%29.md)
   Retrieves information about a particular interaction in an audio processing graph.
-- [func AUGraphGetMaxCPULoad(AUGraph, UnsafeMutablePointer<Float32>) -> OSStatus](augraphgetmaxcpuload(_:_:).md)
+- [func AUGraphGetMaxCPULoad(AUGraph, UnsafeMutablePointer<Float32>) -> OSStatus](./augraphgetmaxcpuload%28_,_%29.md)
   Obtains the maximum CPU load of an audio processing graph since this call was last made or since the graph was last started.
-- [func AUGraphGetNodeCount(AUGraph, UnsafeMutablePointer<UInt32>) -> OSStatus](augraphgetnodecount(_:_:).md)
+- [func AUGraphGetNodeCount(AUGraph, UnsafeMutablePointer<UInt32>) -> OSStatus](./augraphgetnodecount%28_,_%29.md)
   The number of nodes in an audio processing graph.
-- [func AUGraphGetNodeInfoSubGraph(AUGraph, AUNode, UnsafeMutablePointer<AUGraph?>) -> OSStatus](augraphgetnodeinfosubgraph(_:_:_:).md)
+- [func AUGraphGetNodeInfoSubGraph(AUGraph, AUNode, UnsafeMutablePointer<AUGraph?>) -> OSStatus](./augraphgetnodeinfosubgraph%28_,_,_%29.md)
   Gets the audio processing subgraph object represented by a node.
-- [func AUGraphGetNodeInteractions(AUGraph, AUNode, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AUNodeInteraction>) -> OSStatus](augraphgetnodeinteractions(_:_:_:_:).md)
+- [func AUGraphGetNodeInteractions(AUGraph, AUNode, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AUNodeInteraction>) -> OSStatus](./augraphgetnodeinteractions%28_,_,_,_%29.md)
   Retrieves information about the interactions in an audio processing graph for a given node.
-- [func AUGraphGetNumberOfInteractions(AUGraph, UnsafeMutablePointer<UInt32>) -> OSStatus](augraphgetnumberofinteractions(_:_:).md)
+- [func AUGraphGetNumberOfInteractions(AUGraph, UnsafeMutablePointer<UInt32>) -> OSStatus](./augraphgetnumberofinteractions%28_,_%29.md)
   Retrieves the number of interactions for an audio processing graph.
-- [func AUGraphInitialize(AUGraph) -> OSStatus](augraphinitialize(_:).md)
+- [func AUGraphInitialize(AUGraph) -> OSStatus](./augraphinitialize%28_%29.md)
   Initializes an audio processing graph.
-- [func AUGraphIsInitialized(AUGraph, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](augraphisinitialized(_:_:).md)
+- [func AUGraphIsInitialized(AUGraph, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./augraphisinitialized%28_,_%29.md)
   Determines whether an audio processing graph is initialized.
-- [func AUGraphIsNodeSubGraph(AUGraph, AUNode, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](augraphisnodesubgraph(_:_:_:).md)
+- [func AUGraphIsNodeSubGraph(AUGraph, AUNode, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./augraphisnodesubgraph%28_,_,_%29.md)
   Determines whether a node object represent an audio processing graph or an audio unit.
-- [func AUGraphIsOpen(AUGraph, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](augraphisopen(_:_:).md)
+- [func AUGraphIsOpen(AUGraph, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./augraphisopen%28_,_%29.md)
   Determines whether an audio processing graph is open.
-- [func AUGraphIsRunning(AUGraph, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](augraphisrunning(_:_:).md)
+- [func AUGraphIsRunning(AUGraph, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./augraphisrunning%28_,_%29.md)
   Determines whether an audio processing graph running.
-- [func AUGraphNewNodeSubGraph(AUGraph, UnsafeMutablePointer<AUNode>) -> OSStatus](augraphnewnodesubgraph(_:_:).md)
+- [func AUGraphNewNodeSubGraph(AUGraph, UnsafeMutablePointer<AUNode>) -> OSStatus](./augraphnewnodesubgraph%28_,_%29.md)
   Creates a node object to represent a subgraph.
-- [func AUGraphNodeInfo(AUGraph, AUNode, UnsafeMutablePointer<AudioComponentDescription>?, UnsafeMutablePointer<AudioUnit?>?) -> OSStatus](augraphnodeinfo(_:_:_:_:).md)
+- [func AUGraphNodeInfo(AUGraph, AUNode, UnsafeMutablePointer<AudioComponentDescription>?, UnsafeMutablePointer<AudioUnit?>?) -> OSStatus](./augraphnodeinfo%28_,_,_,_%29.md)
   Returns information about a node object.
-- [func AUGraphOpen(AUGraph) -> OSStatus](augraphopen(_:).md)
+- [func AUGraphOpen(AUGraph) -> OSStatus](./augraphopen%28_%29.md)
   Opens an audio processing graph.
-- [func AUGraphRemoveNode(AUGraph, AUNode) -> OSStatus](augraphremovenode(_:_:).md)
+- [func AUGraphRemoveNode(AUGraph, AUNode) -> OSStatus](./augraphremovenode%28_,_%29.md)
   Removes a node from an audio processing graph.
-- [func AUGraphRemoveRenderNotify(AUGraph, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](augraphremoverendernotify(_:_:_:).md)
+- [func AUGraphRemoveRenderNotify(AUGraph, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](./augraphremoverendernotify%28_,_,_%29.md)
   Removes a notification callback from an audio processing graph.
-- [func AUGraphSetNodeInputCallback(AUGraph, AUNode, UInt32, UnsafePointer<AURenderCallbackStruct>) -> OSStatus](augraphsetnodeinputcallback(_:_:_:_:).md)
+- [func AUGraphSetNodeInputCallback(AUGraph, AUNode, UInt32, UnsafePointer<AURenderCallbackStruct>) -> OSStatus](./augraphsetnodeinputcallback%28_,_,_,_%29.md)
   Sets an input callback function for a node.
-- [func AUGraphStart(AUGraph) -> OSStatus](augraphstart(_:).md)
+- [func AUGraphStart(AUGraph) -> OSStatus](./augraphstart%28_%29.md)
   Starts an audio processing graph.
-- [func AUGraphStop(AUGraph) -> OSStatus](augraphstop(_:).md)
+- [func AUGraphStop(AUGraph) -> OSStatus](./augraphstop%28_%29.md)
   Stops an audio processing graph.
-- [func AUGraphUninitialize(AUGraph) -> OSStatus](augraphuninitialize(_:).md)
+- [func AUGraphUninitialize(AUGraph) -> OSStatus](./augraphuninitialize%28_%29.md)
   Uninitializes an audio processing graph.
-- [func AUGraphUpdate(AUGraph, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](augraphupdate(_:_:).md)
+- [func AUGraphUpdate(AUGraph, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./augraphupdate%28_,_%29.md)
   Updates the state of a running audio processing graph.
-- [func DisposeAUGraph(AUGraph) -> OSStatus](disposeaugraph(_:).md)
+- [func DisposeAUGraph(AUGraph) -> OSStatus](./disposeaugraph%28_%29.md)
   Disposes of an audio processing graph.
-- [func NewAUGraph(UnsafeMutablePointer<AUGraph?>) -> OSStatus](newaugraph(_:).md)
+- [func NewAUGraph(UnsafeMutablePointer<AUGraph?>) -> OSStatus](./newaugraph%28_%29.md)
   Creates a new audio processing graph.
 ### Data Types
-- [struct AudioUnitNodeConnection](audiounitnodeconnection.md)
+- [struct AudioUnitNodeConnection](./audiounitnodeconnection.md)
   A connection between two node objects in an audio processing graph.
-- [typealias AUGraph](augraph.md)
+- [typealias AUGraph](./augraph.md)
   An opaque type representing an audio processing graph.
-- [typealias AUNode](aunode.md)
+- [typealias AUNode](./aunode.md)
   A member of an audio processing graph, associated with an audio unit.
-- [struct AUNodeInteraction](aunodeinteraction.md)
+- [struct AUNodeInteraction](./aunodeinteraction.md)
   Describes the interaction between two node objects.
-- [struct AUNodeRenderCallback](aunoderendercallback.md)
+- [struct AUNodeRenderCallback](./aunoderendercallback.md)
   A callback used to provide input to an audio unit.
 ### Constants
-- [kAUNodeInteraction_Connection](1537633-kaunodeinteraction-connection.md)
+- [kAUNodeInteraction_Connection](./api-1537633-kaunodeinteraction-connection.md)
   The different types of node interactions.
 ### Result Codes
-- [var kAUGraphErr_NodeNotFound: OSStatus](kaugrapherr_nodenotfound.md)
+- [var kAUGraphErr_NodeNotFound: OSStatus](./kaugrapherr_nodenotfound.md)
   The specified node cannot be found.
-- [var kAUGraphErr_InvalidConnection: OSStatus](kaugrapherr_invalidconnection.md)
+- [var kAUGraphErr_InvalidConnection: OSStatus](./kaugrapherr_invalidconnection.md)
   The attempted connection between two nodes cannot be made.
-- [var kAUGraphErr_OutputNodeErr: OSStatus](kaugrapherr_outputnodeerr.md)
+- [var kAUGraphErr_OutputNodeErr: OSStatus](./kaugrapherr_outputnodeerr.md)
   Audio processing graphs can only contain one output unit. This error is returned if trying to add a second output unit or if the graph’s output unit is removed while the graph is running.
-- [var kAUGraphErr_CannotDoInCurrentContext: OSStatus](kaugrapherr_cannotdoincurrentcontext.md)
+- [var kAUGraphErr_CannotDoInCurrentContext: OSStatus](./kaugrapherr_cannotdoincurrentcontext.md)
   To avoid spinning or waiting in the render thread (a bad idea!), many of the calls to AUGraph can return: `kAUGraphErr_CannotDoInCurrentContext`. This result is only generated when you call an AUGraph API from its render callback. It means that the lock that it required was held at that time, by another thread. If you see this result code, you can generally attempt the action again - typically the NEXT render cycle (so in the mean time the lock can be cleared), or you can delegate that call to another thread in your app. You should not spin or put-to-sleep the render thread.
-- [var kAUGraphErr_InvalidAudioUnit: OSStatus](kaugrapherr_invalidaudiounit.md)
+- [var kAUGraphErr_InvalidAudioUnit: OSStatus](./kaugrapherr_invalidaudiounit.md)
 
 
 ---

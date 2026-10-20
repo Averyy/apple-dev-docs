@@ -1,23 +1,28 @@
 # init(body:axis:anchor:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hinge joint that anchors a single physics body in space and lets it rotate around a specific axis.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(body: SCNPhysicsBody, axis: SCNVector3, anchor: SCNVector3)
+```
+
+```objc
++ (instancetype) jointWithBody:(SCNPhysicsBody *) body axis:(SCNVector3) axis anchor:(SCNVector3) anchor;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new hinge joint behavior.
 
 #### Discussion
 
-For a behavior to take effect, add it to the physics simulation by calling the [`addBehavior(_:)`](scnphysicsworld/addbehavior(_:).md) method on your scene’s [`SCNPhysicsWorld`](scnphysicsworld.md) object. The physics bodies constrained by the joint must be attached to nodes in the scene.
+For a behavior to take effect, add it to the physics simulation by calling the [`addBehavior(_:)`](../scnphysicsworld/addbehavior%28_%29.md) method on your scene’s [`SCNPhysicsWorld`](../scnphysicsworld.md) object. The physics bodies constrained by the joint must be attached to nodes in the scene.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ For a behavior to take effect, add it to the physics simulation by calling the [
 
 ## See Also
 
-- [convenience init(bodyA: SCNPhysicsBody, axisA: SCNVector3, anchorA: SCNVector3, bodyB: SCNPhysicsBody, axisB: SCNVector3, anchorB: SCNVector3)](scnphysicshingejoint/init(bodya:axisa:anchora:bodyb:axisb:anchorb:).md)
+### Creating a Hinge Joint
+- [convenience init(bodyA: SCNPhysicsBody, axisA: SCNVector3, anchorA: SCNVector3, bodyB: SCNPhysicsBody, axisB: SCNVector3, anchorB: SCNVector3)](./init%28bodya,axisa,anchora,bodyb,axisb,anchorb%29.md)
   Creates a hinge joint connecting two physics bodies.
 
 

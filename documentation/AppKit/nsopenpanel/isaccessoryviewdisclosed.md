@@ -1,7 +1,8 @@
 # isAccessoryViewDisclosed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the panel’s accessory view is visible.
 
@@ -14,19 +15,24 @@ A Boolean value that indicates whether the panel’s accessory view is visible.
 var isAccessoryViewDisclosed: Bool { get set }
 ```
 
+```objc
+@property (getter=isAccessoryViewDisclosed) BOOL accessoryViewDisclosed;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the accessory view is visible, and [`false`](https://developer.apple.com/documentation/swift/false) when it isn’t. Setting the value of this property programmatically changes the visibility of the accessory panel. If no accessory panel is present, setting this property does nothing.
+The value of this property is [`true`](../../Swift/true.md) when the accessory view is visible, and [`false`](../../Swift/false.md) when it isn’t. Setting the value of this property programmatically changes the visibility of the accessory panel. If no accessory panel is present, setting this property does nothing.
 
 ## See Also
 
-- [var canChooseFiles: Bool](nsopenpanel/canchoosefiles.md)
+### Configuring the Open Panel
+- [var canChooseFiles: Bool](./canchoosefiles.md)
   A Boolean that indicates whether the user can choose files in the panel.
-- [var canChooseDirectories: Bool](nsopenpanel/canchoosedirectories.md)
+- [var canChooseDirectories: Bool](./canchoosedirectories.md)
   A Boolean that indicates whether the user can choose directories in the panel.
-- [var resolvesAliases: Bool](nsopenpanel/resolvesaliases.md)
+- [var resolvesAliases: Bool](./resolvesaliases.md)
   A Boolean that indicates whether the panel resolves aliases.
-- [var allowsMultipleSelection: Bool](nsopenpanel/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean that indicates whether the user may select multiple files and directories.
 
 

@@ -1,7 +1,8 @@
 # withUnsafeBytes(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
 
@@ -19,6 +20,8 @@ Calls the given closure with a pointer to the underlying bytes of the viewed con
 ```swift
 func withUnsafeBytes<E, Result>(_ body: (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result where E : Error, Result : ~Copyable
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 #### Return Value
 

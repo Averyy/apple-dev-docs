@@ -1,17 +1,18 @@
 # HKWorkoutRouteQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query to access the location data stored in a workout route.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,54 +20,59 @@ A query to access the location data stored in a workout route.
 class HKWorkoutRouteQuery
 ```
 
+```objc
+@interface HKWorkoutRouteQuery : HKQuery
+```
+
 ## Mentions
 
-- [Reading route data](reading-route-data.md)
+- [Reading route data](./reading-route-data.md)
 
 #### Overview
 
-Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](hkworkoutroute.md). Because a route sample can include a large number of [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
+Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](./hkworkoutroute.md). Because a route sample can include a large number of [`CLLocation`](../CoreLocation/cllocation.md) objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
 
 ## Topics
 
 ### Creating route queries
-- [init(route: HKWorkoutRoute, dataHandler: (HKWorkoutRouteQuery, [CLLocation]?, Bool, (any Error)?) -> Void)](hkworkoutroutequery/init(route:datahandler:).md)
+- [init(route: HKWorkoutRoute, dataHandler: (HKWorkoutRouteQuery, [CLLocation]?, Bool, (any Error)?) -> Void)](./hkworkoutroutequery/init%28route,datahandler%29.md)
   Creates a new query to access the location data associated with a workout route.
-- [init(route: HKWorkoutRoute, dateInterval: DateInterval, dataHandler: (HKWorkoutRouteQuery, [CLLocation]?, Bool, (any Error)?) -> Void)](hkworkoutroutequery/init(route:dateinterval:datahandler:).md)
+- [init(route: HKWorkoutRoute, dateInterval: DateInterval, dataHandler: (HKWorkoutRouteQuery, [CLLocation]?, Bool, (any Error)?) -> Void)](./hkworkoutroutequery/init%28route,dateinterval,datahandler%29.md)
   Creates a new query to access the location data associated with a workout route during the specified date interval.
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKQuantitySeriesSampleQueryDescriptor](hkquantityseriessamplequerydescriptor.md)
+### Series queries
+- [struct HKQuantitySeriesSampleQueryDescriptor](./hkquantityseriessamplequerydescriptor.md)
   A query interface that reads the series data associated with quantity samples using Swift concurrency.
-- [class HKQuantitySeriesSampleQuery](hkquantityseriessamplequery.md)
+- [class HKQuantitySeriesSampleQuery](./hkquantityseriessamplequery.md)
   A query that accesses the series data associated with a quantity sample.
-- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+- [struct HKWorkoutRouteQueryDescriptor](./hkworkoutroutequerydescriptor.md)
   A query interface that reads the location data stored in a workout route using Swift concurrency.
-- [struct HKHeartbeatSeriesQueryDescriptor](hkheartbeatseriesquerydescriptor.md)
+- [struct HKHeartbeatSeriesQueryDescriptor](./hkheartbeatseriesquerydescriptor.md)
   A query interface that reads the heartbeat series data stored in a heartbeat sample using Swift concurrency.
-- [class HKHeartbeatSeriesQuery](hkheartbeatseriesquery.md)
+- [class HKHeartbeatSeriesQuery](./hkheartbeatseriesquery.md)
   A query that returns the heartbeat data contained in a heartbeat series sample.
-- [struct HKElectrocardiogramQueryDescriptor](hkelectrocardiogramquerydescriptor.md)
+- [struct HKElectrocardiogramQueryDescriptor](./hkelectrocardiogramquerydescriptor.md)
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
-- [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
+- [class HKElectrocardiogramQuery](./hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
-- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
-- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
+- [class HKWorkoutEffortRelationship](./hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](./hkworkouteffortrelationshipquery.md)
 
 
 ---

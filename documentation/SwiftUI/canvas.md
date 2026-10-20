@@ -1,7 +1,8 @@
 # Canvas
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view type that supports immediate mode drawing.
 
@@ -23,7 +24,7 @@ struct Canvas<Symbols> where Symbols : View
 
 #### Overview
 
-Use a canvas to draw rich and dynamic 2D graphics inside a SwiftUI view. The canvas passes a [`GraphicsContext`](graphicscontext.md) to the closure that you use to perform immediate mode drawing operations. The canvas also passes a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) value that you can use to customize what you draw. For example, you can use the context’s [`stroke(_:with:lineWidth:)`](graphicscontext/stroke(_:with:linewidth:).md) command to draw a [`Path`](path.md) instance:
+Use a canvas to draw rich and dynamic 2D graphics inside a SwiftUI view. The canvas passes a [`GraphicsContext`](./graphicscontext.md) to the closure that you use to perform immediate mode drawing operations. The canvas also passes a [`CGSize`](../CoreFoundation/cgsize.md) value that you can use to customize what you draw. For example, you can use the context’s [`stroke(_:with:lineWidth:)`](./graphicscontext/stroke%28_,with,linewidth%29.md) command to draw a [`Path`](./path.md) instance:
 
 ```swift
 Canvas { context, size in
@@ -38,45 +39,46 @@ Canvas { context, size in
 
 The example above draws the outline of an ellipse that exactly inscribes a canvas with a blue border:
 
-![A screenshot of a canvas view that shows the green outline of an](/images/com.apple.SwiftUI/Canvas-1@2x.png)
+![A screenshot of a canvas view that shows the green outline of an](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Canvas-1@2x.png)
 
-In addition to outlined and filled paths, you can draw images, text, and complete SwiftUI views. To draw views, use the [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](canvas/init(opaque:colormode:rendersasynchronously:renderer:symbols:).md) method to supply views that you can reference from inside the renderer. You can also add masks, apply filters, perform transforms, control blending, and more. For information about how to draw, see [`GraphicsContext`](graphicscontext.md).
+In addition to outlined and filled paths, you can draw images, text, and complete SwiftUI views. To draw views, use the [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](./canvas/init%28opaque,colormode,rendersasynchronously,renderer,symbols%29.md) method to supply views that you can reference from inside the renderer. You can also add masks, apply filters, perform transforms, control blending, and more. For information about how to draw, see [`GraphicsContext`](./graphicscontext.md).
 
 A canvas doesn’t offer interactivity or accessibility for individual elements, including for views that you pass in as symbols. However, it might provide better performance for a complex drawing that involves dynamic data. Use a canvas to improve performance for a drawing that doesn’t primarily involve text or require interactive elements.
 
 ## Topics
 
 ### Creating a canvas
-- [init(opaque: Bool, colorMode: ColorRenderingMode, rendersAsynchronously: Bool, renderer: (inout GraphicsContext, CGSize) -> Void)](canvas/init(opaque:colormode:rendersasynchronously:renderer:).md)
+- [init(opaque: Bool, colorMode: ColorRenderingMode, rendersAsynchronously: Bool, renderer: (inout GraphicsContext, CGSize) -> Void)](./canvas/init%28opaque,colormode,rendersasynchronously,renderer%29.md)
   Creates and configures a canvas.
-- [init(opaque: Bool, colorMode: ColorRenderingMode, rendersAsynchronously: Bool, renderer: (inout GraphicsContext, CGSize) -> Void, symbols: () -> Symbols)](canvas/init(opaque:colormode:rendersasynchronously:renderer:symbols:).md)
+- [init(opaque: Bool, colorMode: ColorRenderingMode, rendersAsynchronously: Bool, renderer: (inout GraphicsContext, CGSize) -> Void, symbols: () -> Symbols)](./canvas/init%28opaque,colormode,rendersasynchronously,renderer,symbols%29.md)
   Creates and configures a canvas that you supply with renderable child views.
 ### Managing opacity and color
-- [var isOpaque: Bool](canvas/isopaque.md)
+- [var isOpaque: Bool](./canvas/isopaque.md)
   A Boolean that indicates whether the canvas is fully opaque.
-- [var colorMode: ColorRenderingMode](canvas/colormode.md)
+- [var colorMode: ColorRenderingMode](./canvas/colormode.md)
   The working color space and storage format of the canvas.
 ### Referencing symbols
-- [var symbols: Symbols](canvas/symbols.md)
+- [var symbols: Symbols](./canvas/symbols.md)
   A view that provides child views that you can use in the drawing callback.
 ### Rendering
-- [var rendersAsynchronously: Bool](canvas/rendersasynchronously.md)
+- [var rendersAsynchronously: Bool](./canvas/rendersasynchronously.md)
   A Boolean that indicates whether the canvas can present its contents to its parent view asynchronously.
-- [var renderer: (inout GraphicsContext, CGSize) -> Void](canvas/renderer.md)
+- [var renderer: (inout GraphicsContext, CGSize) -> Void](./canvas/renderer.md)
   The drawing callback that you use to draw into the canvas.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [View](view.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Add rich graphics to your SwiftUI app](add-rich-graphics-to-your-swiftui-app.md)
+### Immediate mode drawing
+- [Add rich graphics to your SwiftUI app](./add-rich-graphics-to-your-swiftui-app.md)
   Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.
-- [struct GraphicsContext](graphicscontext.md)
+- [struct GraphicsContext](./graphicscontext.md)
   An immediate mode drawing destination, and its current state.
 
 

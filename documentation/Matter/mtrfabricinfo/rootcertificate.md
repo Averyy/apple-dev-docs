@@ -1,7 +1,8 @@
 # rootCertificate
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 var rootCertificate: Data? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) MTRCertificateDERBytes rootCertificate;
 ```
 
 

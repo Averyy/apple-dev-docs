@@ -1,7 +1,8 @@
 # world(name:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the custom content world with the specified name.
 
@@ -18,6 +19,10 @@ Returns the custom content world with the specified name.
 class func world(name: String) -> WKContentWorld
 ```
 
+```objc
++ (WKContentWorld *) worldWithName:(NSString *) name;
+```
+
 #### Return Value
 
 The content world with the specified name.
@@ -28,11 +33,12 @@ Use this method to create unique content worlds for your script code. For exampl
 
 ## Parameters
 
-- `name`: The name of the content world you want. If no content world with that name exists, this method creates a new [`WKContentWorld`](wkcontentworld.md) object and returns it. The next time you request a content world with the same name, this method returns the object it previously created.
+- `name`: The name of the content world you want. If no content world with that name exists, this method creates a new [`WKContentWorld`](../wkcontentworld.md) object and returns it. The next time you request a content world with the same name, this method returns the object it previously created.
 
 ## See Also
 
-- [var name: String?](wkcontentworld/name.md)
+### Retrieving a Custom Content World
+- [var name: String?](./name.md)
   The name of a custom content world.
 
 

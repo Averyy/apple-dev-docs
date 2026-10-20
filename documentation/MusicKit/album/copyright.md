@@ -1,7 +1,8 @@
 # copyright
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The copyright text for the album.
 

@@ -1,7 +1,8 @@
 # accept(connection:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts incoming XPC connections from the host process.
 

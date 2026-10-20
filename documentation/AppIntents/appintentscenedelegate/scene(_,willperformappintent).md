@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the scene delegate to prepare the scene for the specified app intent.
@@ -21,13 +22,13 @@ func scene(_ scene: UIScene, willPerformAppIntent appIntent: any UISceneAppInten
 
 ## Mentions
 
-- [Directing app intents to your app’s scenes](directing-app-intents-to-your-apps-scenes.md)
+- [Directing app intents to your app’s scenes](../directing-app-intents-to-your-apps-scenes.md)
 
 #### Discussion
 
-Implement this method in your scene delegate and use it to incorporate the specified app intent into the scene. For example, you might change the views of your scene to display an entity that the app intent contains. The system calls the app intent’s [`perform()`](appintent/perform().md) method after this method returns.
+Implement this method in your scene delegate and use it to incorporate the specified app intent into the scene. For example, you might change the views of your scene to display an entity that the app intent contains. The system calls the app intent’s [`perform()`](../appintent/perform%28%29.md) method after this method returns.
 
-If you don’t implement this method in your scene delegate, the system calls the [`performNavigation(forScene:)`](uisceneappintent/performnavigation(forscene:).md) method of the app intent to configure the scene instead.
+If you don’t implement this method in your scene delegate, the system calls the [`performNavigation(forScene:)`](../uisceneappintent/performnavigation%28forscene%29.md) method of the app intent to configure the scene instead.
 
 ## Parameters
 

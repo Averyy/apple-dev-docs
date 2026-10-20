@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rlimit {
     ...
 };
@@ -17,8 +17,8 @@ struct rlimit {
 ## Topics
 
 ### Instance Properties
-- [rlim_cur](rlimit/1577533-rlim_cur.md)
-- [rlim_max](rlimit/1577471-rlim_max.md)
+- [rlim_cur](./rlimit/api-1577533-rlim_cur.md)
+- [rlim_max](./rlimit/api-1577471-rlim_max.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the capabilities.
 

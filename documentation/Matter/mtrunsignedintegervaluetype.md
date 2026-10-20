@@ -1,7 +1,8 @@
 # MTRUnsignedIntegerValueType
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRUnsignedIntegerValueType: String
+```
+
+```c
+extern NSString * const MTRUnsignedIntegerValueType;
 ```
 
 

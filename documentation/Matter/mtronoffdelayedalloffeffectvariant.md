@@ -1,7 +1,8 @@
 # MTROnOffDelayedAllOffEffectVariant
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 enum MTROnOffDelayedAllOffEffectVariant
 ```
 
+```c
+enum MTROnOffDelayedAllOffEffectVariant : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTROnOffDelayedAllOffEffectVariant.delayedOffFastFade](mtronoffdelayedalloffeffectvariant/delayedofffastfade.md)
-- [MTROnOffDelayedAllOffEffectVariant.delayedOffSlowFade](mtronoffdelayedalloffeffectvariant/delayedoffslowfade.md)
-- [MTROnOffDelayedAllOffEffectVariant.noFade](mtronoffdelayedalloffeffectvariant/nofade.md)
+- [MTROnOffDelayedAllOffEffectVariant.delayedOffFastFade](./mtronoffdelayedalloffeffectvariant/delayedofffastfade.md)
+- [MTROnOffDelayedAllOffEffectVariant.delayedOffSlowFade](./mtronoffdelayedalloffeffectvariant/delayedoffslowfade.md)
+- [MTROnOffDelayedAllOffEffectVariant.noFade](./mtronoffdelayedalloffeffectvariant/nofade.md)
 ### Type Properties
-- [static var fadeToOffIn0p8Seconds: MTROnOffDelayedAllOffEffectVariant](mtronoffdelayedalloffeffectvariant/fadetooffin0p8seconds.md)
+- [static var fadeToOffIn0p8Seconds: MTROnOffDelayedAllOffEffectVariant](./mtronoffdelayedalloffeffectvariant/fadetooffin0p8seconds.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtronoffdelayedalloffeffectvariant/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtronoffdelayedalloffeffectvariant/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

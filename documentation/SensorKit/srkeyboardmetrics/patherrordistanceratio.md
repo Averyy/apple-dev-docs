@@ -1,7 +1,8 @@
 # pathErrorDistanceRatio
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sample values of the ratio of error distance between the intended and actual path.
 
@@ -16,27 +17,32 @@ Sample values of the ratio of error distance between the intended and actual pat
 var pathErrorDistanceRatio: [NSNumber] { get }
 ```
 
+```objc
+@property (strong, readonly) NSArray<NSNumber *> * pathErrorDistanceRatio;
+```
+
 ## See Also
 
-- [var longWordUpErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](srkeyboardmetrics/longworduperrordistance.md)
+### Measuring Key Use
+- [var longWordUpErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](./longworduperrordistance.md)
   The distance from the touch up to the center of the intended key of the characters of a long word.
-- [var longWordDownErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](srkeyboardmetrics/longworddownerrordistance.md)
+- [var longWordDownErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](./longworddownerrordistance.md)
   The distance from the touch down to the center of the intended key of the characters of a long word.
-- [var upErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/uperrordistance.md)
+- [var upErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./uperrordistance.md)
   The distance from the touch up to the center of any key.
-- [var downErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/downerrordistance.md)
+- [var downErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./downerrordistance.md)
   The distance from the touch down to the center of any key.
-- [var spaceUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/spaceuperrordistance.md)
+- [var spaceUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./spaceuperrordistance.md)
   The distance from the touch up to the right centroid of the Space bar.
-- [var spaceDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/spacedownerrordistance.md)
+- [var spaceDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./spacedownerrordistance.md)
   The distance from the touch down to the right centroid of the Space bar.
-- [var deleteUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/deleteuperrordistance.md)
+- [var deleteUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./deleteuperrordistance.md)
   The distance from the touch up to the center of the Delete key.
-- [var deleteDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/deletedownerrordistance.md)
+- [var deleteDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./deletedownerrordistance.md)
   The distance from the touch down to the center of the Delete key.
-- [var shortWordCharKeyUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/shortwordcharkeyuperrordistance.md)
+- [var shortWordCharKeyUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./shortwordcharkeyuperrordistance.md)
   The distance from the touch up to the center of the intended key of a character in a short word.
-- [var shortWordCharKeyDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/shortwordcharkeydownerrordistance.md)
+- [var shortWordCharKeyDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./shortwordcharkeydownerrordistance.md)
   The distance from the touch down to the center of the intended key of a character in a short word.
 
 

@@ -1,7 +1,8 @@
 # showsCompletionBanner
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether GameKit displays a banner when the player completes the achievement.
 
@@ -20,21 +21,34 @@ A Boolean value that indicates whether GameKit displays a banner when the player
 var showsCompletionBanner: Bool { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign) BOOL showsCompletionBanner;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign) BOOL showsCompletionBanner;
+```
+
 ## Mentions
 
-- [Rewarding players with achievements](rewarding-players-with-achievements.md)
+- [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), GameKit displays a notification banner to inform the player that they completed the achievement. If you want to present your own interface, set this property to [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is [`true`](../../Swift/true.md), GameKit displays a notification banner to inform the player that they completed the achievement. If you want to present your own interface, set this property to [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [class func report([GKAchievement], withCompletionHandler: (((any Error)?) -> Void)?)](gkachievement/report(_:withcompletionhandler:).md)
+### Reporting Progress on Achievements
+- [class func report([GKAchievement], withCompletionHandler: (((any Error)?) -> Void)?)](./report%28_,withcompletionhandler%29.md)
   Reports the player’s progress of players toward one or more achievements.
-- [class func report([GKAchievement], withEligibleChallenges: [GKChallenge], withCompletionHandler: (((any Error)?) -> Void)?)](gkachievement/report(_:witheligiblechallenges:withcompletionhandler:).md)
+- [class func report([GKAchievement], withEligibleChallenges: [GKChallenge], withCompletionHandler: (((any Error)?) -> Void)?)](./report%28_,witheligiblechallenges,withcompletionhandler%29.md)
   Reports the player’s progress on achievements and limits the challenges, associated with those achievements, that the player may complete.
-- [class func resetAchievements(completionHandler: (((any Error)?) -> Void)?)](gkachievement/resetachievements(completionhandler:).md)
+- [class func resetAchievements(completionHandler: (((any Error)?) -> Void)?)](./resetachievements%28completionhandler%29.md)
   Resets the percentage completed for all of the player’s achievements.
 
 

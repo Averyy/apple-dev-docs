@@ -1,7 +1,8 @@
 # setField(_:to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the field `name` to `value`.
 

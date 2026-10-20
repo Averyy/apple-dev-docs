@@ -1,7 +1,8 @@
 # badComponentSelector
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Component does not support the specified request code.
 
@@ -17,16 +18,17 @@ var badComponentSelector: Int { get }
 
 ## See Also
 
-- [var invalidComponentID: Int](invalidcomponentid.md)
+### Result Codes
+- [var invalidComponentID: Int](./invalidcomponentid.md)
   Invalid component ID.
-- [var validInstancesExist: Int](validinstancesexist.md)
+- [var validInstancesExist: Int](./validinstancesexist.md)
   This component has open connections.
-- [var componentNotCaptured: Int](componentnotcaptured.md)
+- [var componentNotCaptured: Int](./componentnotcaptured.md)
   This component has not been captured.
-- [var componentDontRegister: Int](componentdontregister.md)
-- [var unresolvedComponentDLLErr: Int](unresolvedcomponentdllerr.md)
-- [var retryComponentRegistrationErr: Int](retrycomponentregistrationerr.md)
-- [var badComponentInstance: Int](badcomponentinstance.md)
+- [var componentDontRegister: Int](./componentdontregister.md)
+- [var unresolvedComponentDLLErr: Int](./unresolvedcomponentdllerr.md)
+- [var retryComponentRegistrationErr: Int](./retrycomponentregistrationerr.md)
+- [var badComponentInstance: Int](./badcomponentinstance.md)
   Invalid component  passed to Component Manager.
 
 

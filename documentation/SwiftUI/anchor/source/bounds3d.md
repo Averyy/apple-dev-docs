@@ -1,7 +1,8 @@
 # bounds3D
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor source rect defined as the entire bounding rect of the current element.
 
@@ -13,6 +14,8 @@ An anchor source rect defined as the entire bounding rect of the current element
 ```swift
 static var bounds3D: Anchor<Rect3D>.Source { get }
 ```
+
+Available when `Value` is `Rect3D`.
 
 
 ---

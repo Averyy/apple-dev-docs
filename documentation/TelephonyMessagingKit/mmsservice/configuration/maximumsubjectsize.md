@@ -1,7 +1,8 @@
 # maximumSubjectSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum length of the subject allowed for a sent group message.
 

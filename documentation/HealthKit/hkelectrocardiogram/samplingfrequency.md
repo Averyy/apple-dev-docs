@@ -1,7 +1,8 @@
 # samplingFrequency
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frequency at which the Apple Watch sampled the voltage.
 
@@ -20,17 +21,22 @@ The frequency at which the Apple Watch sampled the voltage.
 var samplingFrequency: HKQuantity? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * samplingFrequency;
+```
+
 #### Discussion
 
-The system records the frequency in [`hertz()`](hkunit/hertz().md) units.
+The system records the frequency in [`hertz()`](../hkunit/hertz%28%29.md) units.
 
 ## See Also
 
-- [var numberOfVoltageMeasurements: Int](hkelectrocardiogram/numberofvoltagemeasurements.md)
+### Accessing Voltage Measurements
+- [var numberOfVoltageMeasurements: Int](./numberofvoltagemeasurements.md)
   The number of voltage measurements associated with this sample.
-- [HKElectrocardiogram.VoltageMeasurement](hkelectrocardiogram/voltagemeasurement.md)
+- [HKElectrocardiogram.VoltageMeasurement](./voltagemeasurement.md)
   The voltage for all leads at a single point in time.
-- [HKElectrocardiogram.Lead](hkelectrocardiogram/lead.md)
+- [HKElectrocardiogram.Lead](./lead.md)
   The lead used to record a voltage measurement.
 
 

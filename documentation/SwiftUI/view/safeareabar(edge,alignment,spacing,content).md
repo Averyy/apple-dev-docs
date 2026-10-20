@@ -1,7 +1,8 @@
 # safeAreaBar(edge:alignment:spacing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows the specified content as a custom bar beside the modified view.
 
@@ -21,13 +22,20 @@ nonisolated
 func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> some View) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> some View) -> some View
+```
+
 #### Return Value
 
 A new view that displays `content` beside the modified view, making space for the `content` view by horizontally insetting the modified view, adjusting the safe area and scroll edge effects to match.
 
 #### Discussion
 
-Similar to the [`safeAreaInset(edge:alignment:spacing:content:)`](view/safeareainset(edge:alignment:spacing:content:)-6gwby.md) modifier, the `content` view is anchored to the specified horizontal edge of the parent view and its width insets the safe area.
+Similar to the [`safeAreaInset(edge:alignment:spacing:content:)`](./safeareainset%28edge,alignment,spacing,content%29-6gwby.md) modifier, the `content` view is anchored to the specified horizontal edge of the parent view and its width insets the safe area.
 
 Additionally, it extends the edge effect of any scroll views affected by the inset safe area.
 
@@ -40,11 +48,12 @@ Additionally, it extends the edge effect of any scroll views affected by the ins
 
 ## See Also
 
-- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](view/scrolledgeeffectstyle(_:for:).md)
+### Configuring scroll edge effects
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](./scrolledgeeffectstyle%28_,for%29.md)
   Configures the scroll edge effect style for scroll views within this hierarchy.
-- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
+- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](./scrolledgeeffecthidden%28_,for%29.md)
   Hides any scroll edge effects for scroll views within this hierarchy.
-- [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
+- [struct ScrollEdgeEffectStyle](../scrolledgeeffectstyle.md)
   A structure that specifies blur transitions between scrolling content and an area with controls, such as toolbars.
 
 

@@ -1,7 +1,8 @@
 # NFCFeliCaPollingTimeSlot
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 13.0+
@@ -14,46 +15,51 @@
 enum NFCFeliCaPollingTimeSlot
 ```
 
+```c
+enum NFCFeliCaPollingTimeSlot : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NFCFeliCaPollingTimeSlot.max1](nfcfelicapollingtimeslot/max1.md)
-- [NFCFeliCaPollingTimeSlot.max16](nfcfelicapollingtimeslot/max16.md)
-- [NFCFeliCaPollingTimeSlot.max2](nfcfelicapollingtimeslot/max2.md)
-- [NFCFeliCaPollingTimeSlot.max4](nfcfelicapollingtimeslot/max4.md)
-- [NFCFeliCaPollingTimeSlot.max8](nfcfelicapollingtimeslot/max8.md)
+- [NFCFeliCaPollingTimeSlot.max1](./nfcfelicapollingtimeslot/max1.md)
+- [NFCFeliCaPollingTimeSlot.max16](./nfcfelicapollingtimeslot/max16.md)
+- [NFCFeliCaPollingTimeSlot.max2](./nfcfelicapollingtimeslot/max2.md)
+- [NFCFeliCaPollingTimeSlot.max4](./nfcfelicapollingtimeslot/max4.md)
+- [NFCFeliCaPollingTimeSlot.max8](./nfcfelicapollingtimeslot/max8.md)
 ### Initializers
-- [init?(rawValue: Int)](nfcfelicapollingtimeslot/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nfcfelicapollingtimeslot/init%28rawvalue%29.md)
 ### Type Properties
-- [static var PollingTimeSlotMax1: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax1.md)
+- [static var PollingTimeSlotMax1: NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot/pollingtimeslotmax1.md)
   A constant that indicates a maximum of one slot.
-- [static var PollingTimeSlotMax16: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax16.md)
+- [static var PollingTimeSlotMax16: NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot/pollingtimeslotmax16.md)
   A constant that indicates a maximum of sixteen slots.
-- [static var PollingTimeSlotMax2: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax2.md)
+- [static var PollingTimeSlotMax2: NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot/pollingtimeslotmax2.md)
   A constant that indicates a maximum of two slots.
-- [static var PollingTimeSlotMax4: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax4.md)
+- [static var PollingTimeSlotMax4: NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot/pollingtimeslotmax4.md)
   A constant that indicates a maximum of four slots.
-- [static var PollingTimeSlotMax8: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax8.md)
+- [static var PollingTimeSlotMax8: NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot/pollingtimeslotmax8.md)
   A constant that indicates a maximum of eight slots.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NFCFeliCaEncryptionId](nfcfelicaencryptionid.md)
-- [enum NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode.md)
-- [struct NFCISO15693RequestFlag](nfciso15693requestflag.md)
-- [struct NFCISO15693ResponseFlag](nfciso15693responseflag.md)
-- [NFCVASResponse.ErrorCode](nfcvasresponse/errorcode.md)
-- [NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.enum.md)
+### Enumerations
+- [enum NFCFeliCaEncryptionId](./nfcfelicaencryptionid.md)
+- [enum NFCFeliCaPollingRequestCode](./nfcfelicapollingrequestcode.md)
+- [struct NFCISO15693RequestFlag](./nfciso15693requestflag.md)
+- [struct NFCISO15693ResponseFlag](./nfciso15693responseflag.md)
+- [NFCVASResponse.ErrorCode](./nfcvasresponse/errorcode.md)
+- [NFCVASCommandConfiguration.Mode](./nfcvascommandconfiguration/mode-swift.enum.md)
 
 
 ---

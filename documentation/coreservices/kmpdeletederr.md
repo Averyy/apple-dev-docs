@@ -1,7 +1,8 @@
 # kMPDeletedErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The desired notification the function was waiting upon was deleted.
 
@@ -17,20 +18,21 @@ var kMPDeletedErr: Int { get }
 
 ## See Also
 
-- [var kMPIterationEndErr: Int](kmpiterationenderr.md)
-- [var kMPPrivilegedErr: Int](kmpprivilegederr.md)
-- [var kMPProcessCreatedErr: Int](kmpprocesscreatederr.md)
-- [var kMPProcessTerminatedErr: Int](kmpprocessterminatederr.md)
-- [var kMPTaskCreatedErr: Int](kmptaskcreatederr.md)
-- [var kMPTaskBlockedErr: Int](kmptaskblockederr.md)
+### Result Codes
+- [var kMPIterationEndErr: Int](./kmpiterationenderr.md)
+- [var kMPPrivilegedErr: Int](./kmpprivilegederr.md)
+- [var kMPProcessCreatedErr: Int](./kmpprocesscreatederr.md)
+- [var kMPProcessTerminatedErr: Int](./kmpprocessterminatederr.md)
+- [var kMPTaskCreatedErr: Int](./kmptaskcreatederr.md)
+- [var kMPTaskBlockedErr: Int](./kmptaskblockederr.md)
   The desired task is blocked.
-- [var kMPTaskStoppedErr: Int](kmptaskstoppederr.md)
+- [var kMPTaskStoppedErr: Int](./kmptaskstoppederr.md)
   The desired task is stopped.
-- [var kMPTimeoutErr: Int](kmptimeouterr.md)
+- [var kMPTimeoutErr: Int](./kmptimeouterr.md)
   The designated timeout interval passed before the function could take action.
-- [var kMPInsufficientResourcesErr: Int](kmpinsufficientresourceserr.md)
+- [var kMPInsufficientResourcesErr: Int](./kmpinsufficientresourceserr.md)
   Could not complete task due to unavailable Multiprocessing Services resources. Note that many functions return this value as a general error when the desired action could not be performed.
-- [var kMPInvalidIDErr: Int](kmpinvalididerr.md)
+- [var kMPInvalidIDErr: Int](./kmpinvalididerr.md)
   Invalid ID value. For example, an invalid message queue ID was passed to `MPNotifyQueue`.
 
 

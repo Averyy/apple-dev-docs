@@ -1,7 +1,8 @@
 # ASCredentialRequestType.passkeyRegistration
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app or website is requesting a passkey registration credential.
 
@@ -18,13 +19,18 @@ The app or website is requesting a passkey registration credential.
 case passkeyRegistration
 ```
 
+```c
+ASCredentialRequestTypePasskeyRegistration
+```
+
 ## See Also
 
-- [ASCredentialRequestType.passkeyAssertion](ascredentialrequesttype/passkeyassertion.md)
+### Credential types
+- [ASCredentialRequestType.passkeyAssertion](./passkeyassertion.md)
   The app or website is requesting a passkey assertion credential.
-- [ASCredentialRequestType.password](ascredentialrequesttype/password.md)
+- [ASCredentialRequestType.password](./password.md)
   The app or website is requesting a password credential.
-- [ASCredentialRequestType.oneTimeCode](ascredentialrequesttype/onetimecode.md)
+- [ASCredentialRequestType.oneTimeCode](./onetimecode.md)
   The app or website is requesting a one-time passcode.
 
 

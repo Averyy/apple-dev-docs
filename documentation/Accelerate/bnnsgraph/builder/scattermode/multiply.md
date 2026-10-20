@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode.multiply
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation multiplies existing values by scattered values.
 

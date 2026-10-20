@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the value, suitable for debugging.
 
@@ -26,13 +27,14 @@ This property has the same value as the `description` property, except that NaN 
 
 ## See Also
 
-- [func hash(into: inout Hasher)](float/hash(into:).md)
+### Describing a Float
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var description: String](float/description.md)
+- [var description: String](./description.md)
   A textual representation of the value.
-- [var customMirror: Mirror](float/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Float` instance.
-- [var hashValue: Int](float/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

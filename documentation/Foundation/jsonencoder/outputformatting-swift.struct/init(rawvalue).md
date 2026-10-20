@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an OutputFormatting value with the given raw value.
 
@@ -22,9 +23,10 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [let rawValue: UInt](jsonencoder/outputformatting-swift.struct/rawvalue.md)
+### Creating Options
+- [let rawValue: UInt](./rawvalue.md)
   The format’s default value.
-- [init()](jsonencoder/init.md)
+- [init()](../init%28%29.md)
   Creates a new, reusable JSON encoder with the default formatting settings and encoding strategies.
 
 

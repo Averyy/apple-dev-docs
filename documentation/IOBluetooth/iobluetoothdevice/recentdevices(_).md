@@ -1,17 +1,22 @@
 # recentDevices(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets an array of recently used Bluetooth devices.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func recentDevices(_ numDevices: UInt) -> [Any]!
+```
+
+```objc
++ (NSArray *) recentDevices:(unsigned long) numDevices;
 ```
 
 #### Return Value

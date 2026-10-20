@@ -1,7 +1,8 @@
 # init(remoteNetworkEndpoint:remotePrefix:localNetworkEndpoint:localPrefix:protocol:direction:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+

@@ -1,7 +1,8 @@
 # MTLTextureSparseTier.tier1
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates support for sparse textures tier 1.
 
@@ -17,6 +18,10 @@ Indicates support for sparse textures tier 1.
 
 ```swift
 case tier1
+```
+
+```c
+MTLTextureSparseTier1
 ```
 
 #### Discussion

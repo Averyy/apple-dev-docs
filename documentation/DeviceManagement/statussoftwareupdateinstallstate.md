@@ -1,7 +1,8 @@
 # StatusSoftwareUpdateInstallState
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s software update install state.
 
@@ -15,18 +16,18 @@ The status item that reports the device’s software update install state.
 
 ## Declaration
 
-```swift
+```
 object StatusSoftwareUpdateInstallState
 ```
 
 ## Mentions
 
-- [Phases of software update enforcement](phases-of-software-update-enforcement.md)
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
+- [Phases of software update enforcement](./phases-of-software-update-enforcement.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ object StatusSoftwareUpdateInstallState
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -49,23 +50,28 @@ object StatusSoftwareUpdateInstallState
 
 ## Properties
 
-- `softwareupdate.install-state` (string) *(required)*: The software update install status, which has the following values: - `none`: There’s no software update pending, and any previous software update succeeded.
-- `downloading`: The system is downloading data for a software update.
-- `prepared`: The system prepared the software update and it’s ready for installation.
-- `installing`: The system is installing the software update.
-- `failed`: The software update failed.
+- `softwareupdate.install-state` (string) *(required)*: The software update install status, which has the following values:
+
+  - `none`: There’s no software update pending, and any previous software update succeeded.
+  - `downloading`: The system is downloading data for a software update.
+  - `prepared`: The system prepared the software update and it’s ready for installation.
+  - `installing`: The system is installing the software update.
+  - `failed`: The software update failed.
+
+  **Allowed Values**: `none`, `downloading`, `prepared`, `installing`, `failed`
 
 ## See Also
 
-- [object StatusSoftwareUpdateBetaEnrollment](statussoftwareupdatebetaenrollment.md)
+### Software update items
+- [object StatusSoftwareUpdateBetaEnrollment](./statussoftwareupdatebetaenrollment.md)
   The status item that reports the device’s enrolled beta program.
-- [object StatusSoftwareUpdateDeviceID](statussoftwareupdatedeviceid.md)
+- [object StatusSoftwareUpdateDeviceID](./statussoftwareupdatedeviceid.md)
   The status item that reports the device’s software update device ID.
-- [object StatusSoftwareUpdateFailureReason](statussoftwareupdatefailurereason.md)
+- [object StatusSoftwareUpdateFailureReason](./statussoftwareupdatefailurereason.md)
   The status item that reports the device’s software update failure reason.
-- [object StatusSoftwareUpdateInstallReason](statussoftwareupdateinstallreason.md)
+- [object StatusSoftwareUpdateInstallReason](./statussoftwareupdateinstallreason.md)
   The status item that reports the device’s pending software update reason.
-- [object StatusSoftwareUpdatePendingVersion](statussoftwareupdatependingversion.md)
+- [object StatusSoftwareUpdatePendingVersion](./statussoftwareupdatependingversion.md)
   The status item that reports the device’s pending software update version.
 
 

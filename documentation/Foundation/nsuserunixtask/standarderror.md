@@ -1,7 +1,8 @@
 # standardError
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard error stream.
 
@@ -14,6 +15,10 @@ The standard error stream.
 var standardError: FileHandle? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSFileHandle * standardError;
+```
+
 #### Discussion
 
 Setting to `nil` will bind the stream to `/dev/null`.
@@ -22,9 +27,10 @@ The default is `nil`.
 
 ## See Also
 
-- [var standardInput: FileHandle?](nsuserunixtask/standardinput.md)
+### Standard Unix Streams
+- [var standardInput: FileHandle?](./standardinput.md)
   The standard input stream.
-- [var standardOutput: FileHandle?](nsuserunixtask/standardoutput.md)
+- [var standardOutput: FileHandle?](./standardoutput.md)
   The standard output stream.
 
 

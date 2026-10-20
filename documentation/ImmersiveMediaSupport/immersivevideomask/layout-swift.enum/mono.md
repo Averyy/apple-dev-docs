@@ -1,7 +1,8 @@
 # ImmersiveVideoMask.Layout.mono
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents mono mask layout.
 
@@ -20,11 +21,12 @@ case mono
 
 ## See Also
 
-- [ImmersiveVideoMask.Layout.overUnder](immersivevideomask/layout-swift.enum/overunder.md)
+### Enumeration Cases
+- [ImmersiveVideoMask.Layout.overUnder](./overunder.md)
   A value that represents over-under mask layout.
-- [ImmersiveVideoMask.Layout.separate](immersivevideomask/layout-swift.enum/separate.md)
+- [ImmersiveVideoMask.Layout.separate](./separate.md)
   A value that represents stereo mask, but separated.
-- [ImmersiveVideoMask.Layout.sideBySide](immersivevideomask/layout-swift.enum/sidebyside.md)
+- [ImmersiveVideoMask.Layout.sideBySide](./sidebyside.md)
   A value that represents side by side mask layout.
 
 

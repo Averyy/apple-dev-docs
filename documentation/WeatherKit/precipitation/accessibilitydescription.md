@@ -1,7 +1,8 @@
 # accessibilityDescription
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized accessibility description describing the form of precipitation.
 
@@ -26,7 +27,8 @@ This description is suitable for Voice Over and other assistive technologies.
 
 ## See Also
 
-- [var description: String](precipitation/description.md)
+### Describing the precipitation
+- [var description: String](./description.md)
   A localized string describing the form of precipitation.
 
 

@@ -1,7 +1,8 @@
 # propertyList(_:isValidFor:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether a given property list is valid for a given format.
 
@@ -20,14 +21,18 @@ Returns a Boolean value that indicates whether a given property list is valid fo
 class func propertyList(_ plist: Any, isValidFor format: PropertyListSerialization.PropertyListFormat) -> Bool
 ```
 
+```objc
++ (BOOL) propertyList:(id) plist isValidForFormat:(NSPropertyListFormat) format;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `plist` is a valid property list in format `format`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `plist` is a valid property list in format `format`, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
 - `plist`: A property list object.
-- `format`: A property list format. For possible values, see [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
+- `format`: A property list format. For possible values, see [`PropertyListSerialization.PropertyListFormat`](./propertylistformat.md).
 
 
 ---

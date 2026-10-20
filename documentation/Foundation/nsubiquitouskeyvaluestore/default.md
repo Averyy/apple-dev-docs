@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared iCloud key-value store object.
 
@@ -18,6 +19,10 @@ The shared iCloud key-value store object.
 
 ```swift
 class var `default`: NSUbiquitousKeyValueStore { get }
+```
+
+```objc
+@property (class, strong, readonly) NSUbiquitousKeyValueStore * defaultStore;
 ```
 
 #### Discussion

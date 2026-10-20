@@ -1,7 +1,8 @@
 # item(at:willMoveTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Announces that your app is moving a file to a new URL.
 
@@ -20,13 +21,17 @@ Announces that your app is moving a file to a new URL.
 func item(at oldURL: URL, willMoveTo newURL: URL)
 ```
 
+```objc
+- (void) itemAtURL:(NSURL *) oldURL willMoveToURL:(NSURL *) newURL;
+```
+
 #### Discussion
 
 This method is intended for apps that adopt App Sandbox.
 
 Some apps need to rename files while saving them. For example, when a user adds an attachment to a rich text document, TextEdit changes the document’s filename extension from `.rtf` to `.rtfd`. In such a case, in a sandboxed app, you must call this method to declare your intent to rename a file without user approval.
 
-After the renaming process succeeds, call the [`item(at:didMoveTo:)`](nsfilecoordinator/item(at:didmoveto:).md) method, with the same arguments, to provide your app with continued access to the file under its new name, while also giving up access to any file that appears with the old name.
+After the renaming process succeeds, call the [`item(at:didMoveTo:)`](./item%28at,didmoveto%29.md) method, with the same arguments, to provide your app with continued access to the file under its new name, while also giving up access to any file that appears with the old name.
 
 If your macOS app is not sandboxed, this method serves no purpose. This method is nonfunctional in iOS.
 
@@ -37,19 +42,20 @@ If your macOS app is not sandboxed, this method serves no purpose. This method i
 
 ## See Also
 
-- [func coordinate(readingItemAt: URL, options: NSFileCoordinator.ReadingOptions, error: NSErrorPointer, byAccessor: (URL) -> Void)](nsfilecoordinator/coordinate(readingitemat:options:error:byaccessor:).md)
+### Coordinating File Operations Synchronously
+- [func coordinate(readingItemAt: URL, options: NSFileCoordinator.ReadingOptions, error: NSErrorPointer, byAccessor: (URL) -> Void)](./coordinate%28readingitemat,options,error,byaccessor%29.md)
   Initiates a read operation on a single file or directory using the specified options.
-- [func coordinate(writingItemAt: URL, options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (URL) -> Void)](nsfilecoordinator/coordinate(writingitemat:options:error:byaccessor:).md)
+- [func coordinate(writingItemAt: URL, options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (URL) -> Void)](./coordinate%28writingitemat,options,error,byaccessor%29.md)
   Initiates a write operation on a single file or directory using the specified options.
-- [func coordinate(readingItemAt: URL, options: NSFileCoordinator.ReadingOptions, writingItemAt: URL, options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (URL, URL) -> Void)](nsfilecoordinator/coordinate(readingitemat:options:writingitemat:options:error:byaccessor:).md)
+- [func coordinate(readingItemAt: URL, options: NSFileCoordinator.ReadingOptions, writingItemAt: URL, options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (URL, URL) -> Void)](./coordinate%28readingitemat,options,writingitemat,options,error,byaccessor%29.md)
   Initiates a read operation that contains a follow-up write operation.
-- [func coordinate(writingItemAt: URL, options: NSFileCoordinator.WritingOptions, writingItemAt: URL, options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (URL, URL) -> Void)](nsfilecoordinator/coordinate(writingitemat:options:writingitemat:options:error:byaccessor:).md)
+- [func coordinate(writingItemAt: URL, options: NSFileCoordinator.WritingOptions, writingItemAt: URL, options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (URL, URL) -> Void)](./coordinate%28writingitemat,options,writingitemat,options,error,byaccessor%29.md)
   Initiates a write operation that involves a secondary write operation.
-- [func prepare(forReadingItemsAt: [URL], options: NSFileCoordinator.ReadingOptions, writingItemsAt: [URL], options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (() -> Void) -> Void)](nsfilecoordinator/prepare(forreadingitemsat:options:writingitemsat:options:error:byaccessor:).md)
+- [func prepare(forReadingItemsAt: [URL], options: NSFileCoordinator.ReadingOptions, writingItemsAt: [URL], options: NSFileCoordinator.WritingOptions, error: NSErrorPointer, byAccessor: (() -> Void) -> Void)](./prepare%28forreadingitemsat,options,writingitemsat,options,error,byaccessor%29.md)
   Prepare to read or write from multiple files in a single batch operation.
-- [func item(at: URL, didMoveTo: URL)](nsfilecoordinator/item(at:didmoveto:).md)
+- [func item(at: URL, didMoveTo: URL)](./item%28at,didmoveto%29.md)
   Notifies relevant file presenters that the location of a file or directory changed.
-- [func cancel()](nsfilecoordinator/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels any active file coordination calls.
 
 

@@ -1,7 +1,8 @@
 # init(category:value:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the given category and value.
 

@@ -1,7 +1,8 @@
 # init(includeEntireCategory:)
 
 **Framework**: Family Controls  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new activity selection instance.
 
@@ -21,9 +22,10 @@ init(includeEntireCategory: Bool)
 
 ## See Also
 
-- [var categories: Set<ActivityCategory>](familyactivityselection/categories.md)
+### Accessing selected categories
+- [var categories: Set<ActivityCategory>](./categories.md)
   A set of category instances selected by the user.
-- [var categoryTokens: Set<ActivityCategoryToken>](familyactivityselection/categorytokens.md)
+- [var categoryTokens: Set<ActivityCategoryToken>](./categorytokens.md)
   Tokens that represent categories selected by the user.
 
 

@@ -1,7 +1,8 @@
 # settlingDuration(fromValue:toValue:initialVelocity:epsilon:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The estimated duration required for the spring system to be considered at rest.
 
@@ -26,11 +27,12 @@ The epsilon value specifies the threshold for how small all subsequent values ne
 
 ## See Also
 
-- [func force<V>(target: V, position: V, velocity: V) -> V](spring/force(target:position:velocity:).md)
+### Calculating forces and durations
+- [func force<V>(target: V, position: V, velocity: V) -> V](./force%28target,position,velocity%29.md)
   Calculates the force upon the spring given a current position, target, and velocity amount of change.
-- [func force<V>(fromValue: V, toValue: V, position: V, velocity: V) -> V](spring/force(fromvalue:tovalue:position:velocity:).md)
+- [func force<V>(fromValue: V, toValue: V, position: V, velocity: V) -> V](./force%28fromvalue,tovalue,position,velocity%29.md)
   Calculates the force upon the spring given a current position, velocity, and divisor from the starting and end values for the spring to travel.
-- [func settlingDuration<V>(target: V, initialVelocity: V, epsilon: Double) -> TimeInterval](spring/settlingduration(target:initialvelocity:epsilon:).md)
+- [func settlingDuration<V>(target: V, initialVelocity: V, epsilon: Double) -> TimeInterval](./settlingduration%28target,initialvelocity,epsilon%29.md)
   The estimated duration required for the spring system to be considered at rest.
 
 

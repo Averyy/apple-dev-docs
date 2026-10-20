@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a roughness object from a physically based material’s roughness property.
 
@@ -20,11 +21,11 @@ init(_ value: PhysicallyBasedMaterial.Roughness)
 
 #### Discussion
 
-This initializer creates a roughness object by copying the scale and texture values from an existing [`PhysicallyBasedMaterial.Roughness`](physicallybasedmaterial/roughness-swift.struct.md) object.
+This initializer creates a roughness object by copying the scale and texture values from an existing [`PhysicallyBasedMaterial.Roughness`](../../physicallybasedmaterial/roughness-swift.struct.md) object.
 
-With custom materials, the `texture` and `scale` properties of the [`CustomMaterial.Roughness`](custommaterial/roughness-swift.struct.md) object are available in your surface shader function, but RealityKit doesn’t automatically use them when rendering your entity. To render an entity with roughness, set [`lightingModel`](custommaterial/lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md), and call `params.surface().set_roughness()` from its surface shader.
+With custom materials, the `texture` and `scale` properties of the [`CustomMaterial.Roughness`](../roughness-swift.struct.md) object are available in your surface shader function, but RealityKit doesn’t automatically use them when rendering your entity. To render an entity with roughness, set [`lightingModel`](../lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](../lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](../lightingmodel-swift.enum/clearcoat.md), and call `params.surface().set_roughness()` from its surface shader.
 
-To achieve the same roughness behavior as [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), the surface shader function multiplies roughness scale by the sampled value from the texture, as the following Metal code demonstrates:
+To achieve the same roughness behavior as [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md), the surface shader function multiplies roughness scale by the sampled value from the texture, as the following Metal code demonstrates:
 
 ```swift
     // Retrieve the roughness scale from the CustomMaterial.
@@ -49,7 +50,7 @@ To achieve the same roughness behavior as [`PhysicallyBasedMaterial`](physically
     params.surface().set_roughness(roughness);
 ```
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## Parameters
 
@@ -57,9 +58,10 @@ For more information on creating custom materials and writing shader functions, 
 
 ## See Also
 
-- [init(floatLiteral: Float)](custommaterial/roughness-swift.struct/init(floatliteral:).md)
+### Creating a roughness object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an object to specify the amount of roughness, using a single value that applies to the entire material.
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/roughness-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a roughness object from a color or texture.
 
 

@@ -1,7 +1,8 @@
 # isFinished
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the symbol effect finished completely.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the symbol effect finished completely.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var isFinished: Bool { get }
 
 ## See Also
 
-- [var effect: any SymbolEffect](uisymboleffectcompletioncontext-swift.struct/effect.md)
+### Determining completion status
+- [var effect: any SymbolEffect](./effect.md)
   The symbol effect that completed.
-- [var sender: AnyObject?](uisymboleffectcompletioncontext-swift.struct/sender.md)
+- [var sender: AnyObject?](./sender.md)
   The object, an image view or bar button item, that received the symbol effect.
 
 

@@ -1,7 +1,8 @@
 # setIndexRange(indexOffset:indexCount:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the first index and index count for this mesh part.
 
@@ -19,7 +20,7 @@ final func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRende
 
 #### Discussion
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the resulting range falls outside the mesh resource’s index buffer.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if the resulting range falls outside the mesh resource’s index buffer.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ final func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRende
 
 ## See Also
 
-- [var primitive: MTLPrimitiveType](lowlevelmeshpart/primitive.md)
+### Configuring the geometry
+- [var primitive: MTLPrimitiveType](./primitive.md)
   The geometric primitive to use when rendering this part.
-- [var windingOrder: MTLWinding](lowlevelmeshpart/windingorder.md)
+- [var windingOrder: MTLWinding](./windingorder.md)
   The winding order of front-facing polygons.
 
 

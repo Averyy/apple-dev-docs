@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsConnectedMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device has connected.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device has connected.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsConnectedMask = (1 << kUSBInformationDeviceIsConnectedBit)
 ```
 

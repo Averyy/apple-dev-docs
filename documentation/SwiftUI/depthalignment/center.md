@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide marking the vertical center of the view.
 
@@ -16,9 +17,10 @@ static let center: DepthAlignment
 
 ## See Also
 
-- [static let back: DepthAlignment](depthalignment/back.md)
+### Getting guides
+- [static let back: DepthAlignment](./back.md)
   A guide marking the bottom edge of the view.
-- [static let front: DepthAlignment](depthalignment/front.md)
+- [static let front: DepthAlignment](./front.md)
   A guide marking the top edge of the view.
 
 

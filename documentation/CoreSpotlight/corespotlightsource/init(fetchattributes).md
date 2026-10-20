@@ -1,7 +1,8 @@
 # init(fetchAttributes:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +19,8 @@ init(fetchAttributes: [SearchableItemAttribute] = [])
 
 ## See Also
 
-- [init(searchableIndexDelegate: (any CSSearchableIndexDelegate)?, fetchAttributes: [SearchableItemAttribute])](corespotlightsource/init(searchableindexdelegate:fetchattributes:).md)
+### Creating a Spotlight source
+- [init(searchableIndexDelegate: (any CSSearchableIndexDelegate)?, fetchAttributes: [SearchableItemAttribute])](./init%28searchableindexdelegate,fetchattributes%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ComputeStage
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types that represent the compute stage.
 
@@ -27,32 +28,33 @@ The main compute stage represents the essential functionality of a request. Requ
 ## Topics
 
 ### Getting the compute stages
-- [ComputeStage.main](computestage/main.md)
+- [ComputeStage.main](./computestage/main.md)
   A stage that represents where the system performs the main functionality.
-- [ComputeStage.postProcessing](computestage/postprocessing.md)
+- [ComputeStage.postProcessing](./computestage/postprocessing.md)
   A stage that represents where the system performs additional analysis after the main compute stage.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var supportedIdentifiers: [String]?](coremlrequest/supportedidentifiers.md)
+### Configuring a request
+- [var supportedIdentifiers: [String]?](./coremlrequest/supportedidentifiers.md)
   The classification identifiers supported by the request.
-- [let modelContainer: CoreMLModelContainer](coremlrequest/modelcontainer.md)
+- [let modelContainer: CoreMLModelContainer](./coremlrequest/modelcontainer.md)
   The model to base the image analysis request on.
-- [struct CoreMLModelContainer](coremlmodelcontainer.md)
+- [struct CoreMLModelContainer](./coremlmodelcontainer.md)
   A model container to use with an image-analysis request.
-- [var cropAndScaleAction: ImageCropAndScaleAction](coremlrequest/cropandscaleaction.md)
+- [var cropAndScaleAction: ImageCropAndScaleAction](./coremlrequest/cropandscaleaction.md)
   An optional setting that tells the Vision algorithm how to scale an input image.
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+- [enum ImageCropAndScaleAction](./imagecropandscaleaction.md)
   A scale to apply to an input image before performing a request.
 
 

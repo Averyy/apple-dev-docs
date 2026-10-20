@@ -1,6 +1,7 @@
 # 1D correlation and convolution
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Use correlation to compare and convolution to combine vectors of real or complex data.
 
@@ -14,26 +15,27 @@ The vDSP library provides functions that calculate the convolution and correlati
 ## Topics
 
 ### Real Vectors
-- [static func convolve<T, U>(T, withKernel: U) -> [Double]](vdsp/convolve(_:withkernel:)-1nv65.md)
+- [static func convolve<T, U>(T, withKernel: U) -> [Double]](./vdsp/convolve%28_,withkernel%29-1nv65.md)
   Returns the 1D convolution of a double-precision vector.
-- [static func convolve<T, U>(T, withKernel: U) -> [Float]](vdsp/convolve(_:withkernel:)-4p0rt.md)
+- [static func convolve<T, U>(T, withKernel: U) -> [Float]](./vdsp/convolve%28_,withkernel%29-4p0rt.md)
   Returns the 1D convolution of a single-precision vector.
-- [static func convolve<T, U, V>(T, withKernel: U, result: inout V)](vdsp/convolve(_:withkernel:result:)-8j76l.md)
+- [static func convolve<T, U, V>(T, withKernel: U, result: inout V)](./vdsp/convolve%28_,withkernel,result%29-8j76l.md)
   Calculates the 1D convolution of a double-precision vector.
-- [static func convolve<T, U, V>(T, withKernel: U, result: inout V)](vdsp/convolve(_:withkernel:result:)-2z66w.md)
+- [static func convolve<T, U, V>(T, withKernel: U, result: inout V)](./vdsp/convolve%28_,withkernel,result%29-2z66w.md)
   Calculates the 1D convolution of a single-precision vector.
-- [static func correlate<T, U>(T, withKernel: U) -> [Double]](vdsp/correlate(_:withkernel:)-7f6o0.md)
+- [static func correlate<T, U>(T, withKernel: U) -> [Double]](./vdsp/correlate%28_,withkernel%29-7f6o0.md)
   Returns the correlation of a double-precision signal vector and a filter vector.
-- [static func correlate<T, U>(T, withKernel: U) -> [Float]](vdsp/correlate(_:withkernel:)-9sol8.md)
+- [static func correlate<T, U>(T, withKernel: U) -> [Float]](./vdsp/correlate%28_,withkernel%29-9sol8.md)
   Returns the correlation of a single-precision signal vector and a filter vector.
-- [static func correlate<T, U, V>(T, withKernel: U, result: inout V)](vdsp/correlate(_:withkernel:result:)-1lb82.md)
+- [static func correlate<T, U, V>(T, withKernel: U, result: inout V)](./vdsp/correlate%28_,withkernel,result%29-1lb82.md)
   Calculates the correlation of a double-precision signal vector and a filter vector.
-- [static func correlate<T, U, V>(T, withKernel: U, result: inout V)](vdsp/correlate(_:withkernel:result:)-377zj.md)
+- [static func correlate<T, U, V>(T, withKernel: U, result: inout V)](./vdsp/correlate%28_,withkernel,result%29-377zj.md)
   Calculates the correlation of a single-precision signal vector and a filter vector.
 
 ## See Also
 
-- [2D convolution](2d-convolution.md)
+### Vector and matrix correlation and convolution
+- [2D convolution](./api-2d-convolution.md)
   Perform convolution operations on matrices of real data.
 
 

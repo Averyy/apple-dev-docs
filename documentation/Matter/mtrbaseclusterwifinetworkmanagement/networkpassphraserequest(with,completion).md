@@ -1,7 +1,8 @@
 # networkPassphraseRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command NetworkPassphraseRequest
 
@@ -17,7 +18,15 @@ Command NetworkPassphraseRequest
 ## Declaration
 
 ```swift
+func networkPassphraseRequest(with params: MTRWiFiNetworkManagementClusterNetworkPassphraseRequestParams?, completion: @escaping @Sendable (MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func networkPassphraseRequest(with params: MTRWiFiNetworkManagementClusterNetworkPassphraseRequestParams?) async throws -> MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams
+```
+
+```objc
+- (void) networkPassphraseRequestWithParams:(MTRWiFiNetworkManagementClusterNetworkPassphraseRequestParams *) params completion:(void (^)(MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

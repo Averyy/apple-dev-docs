@@ -1,7 +1,8 @@
 # dynamicRangeControlConfiguration
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +19,10 @@
 var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudioDynamicRangeControlConfiguration dynamicRangeControlConfiguration;
+```
+
 #### Discussion
 
 Encoder Dynamic Range Control (DRC) configuration.
@@ -26,10 +31,11 @@ When supported by the encoder, this property controls which configuration is app
 
 ## See Also
 
-- [var audioSyncPacketFrequency: Int](avaudioconverter/audiosyncpacketfrequency.md)
-- [var contentSource: AVAudioContentSource](avaudioconverter/contentsource.md)
-- [enum AVAudioContentSource](avaudiocontentsource.md)
-- [enum AVAudioDynamicRangeControlConfiguration](avaudiodynamicrangecontrolconfiguration.md)
+### Managing packet dependencies
+- [var audioSyncPacketFrequency: Int](./audiosyncpacketfrequency.md)
+- [var contentSource: AVAudioContentSource](./contentsource.md)
+- [enum AVAudioContentSource](../avaudiocontentsource.md)
+- [enum AVAudioDynamicRangeControlConfiguration](../avaudiodynamicrangecontrolconfiguration.md)
 
 
 ---

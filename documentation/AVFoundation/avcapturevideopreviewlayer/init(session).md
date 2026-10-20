@@ -1,7 +1,8 @@
 # init(session:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer to preview the visual output of a capture session.
 
@@ -18,13 +19,18 @@ Creates a layer to preview the visual output of a capture session.
 init(session: AVCaptureSession)
 ```
 
+```objc
+- (instancetype) initWithSession:(AVCaptureSession *) session;
+```
+
 ## Parameters
 
 - `session`: A capture session to preview.
 
 ## See Also
 
-- [init(sessionWithNoConnection: AVCaptureSession)](avcapturevideopreviewlayer/init(sessionwithnoconnection:).md)
+### Creating a preview layer
+- [init(sessionWithNoConnection: AVCaptureSession)](./init%28sessionwithnoconnection%29.md)
   Creates a layer to preview the visual output of a capture session, without making connections to eligible video inputs.
 
 

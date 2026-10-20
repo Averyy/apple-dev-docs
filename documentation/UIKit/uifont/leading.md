@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font’s leading information.
 
@@ -9,7 +10,7 @@ The font’s leading information.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,23 +20,28 @@ The font’s leading information.
 var leading: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat leading;
+```
+
 #### Discussion
 
-The leading value represents additional space between lines of text and is measured in points. For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](uifont.md).
+The leading value represents additional space between lines of text and is measured in points. For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](../uifont.md).
 
 ## See Also
 
-- [var pointSize: CGFloat](uifont/pointsize.md)
+### Getting Font Metrics
+- [var pointSize: CGFloat](./pointsize.md)
   The font’s point size, or the effective vertical point size for a font with a nonstandard matrix.
-- [var ascender: CGFloat](uifont/ascender.md)
+- [var ascender: CGFloat](./ascender.md)
   The top y-coordinate, offset from the baseline, of the font’s longest ascender.
-- [var descender: CGFloat](uifont/descender.md)
+- [var descender: CGFloat](./descender.md)
   The bottom y-coordinate, offset from the baseline, of the font’s longest descender.
-- [var capHeight: CGFloat](uifont/capheight.md)
+- [var capHeight: CGFloat](./capheight.md)
   The font’s cap height information.
-- [var xHeight: CGFloat](uifont/xheight.md)
+- [var xHeight: CGFloat](./xheight.md)
   The x-height of the font.
-- [var lineHeight: CGFloat](uifont/lineheight.md)
+- [var lineHeight: CGFloat](./lineheight.md)
   The height, in points, of text lines.
 
 

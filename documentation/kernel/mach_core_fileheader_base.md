@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mach_core_fileheader_base {
     ...
 };
@@ -17,8 +17,8 @@ struct mach_core_fileheader_base {
 ## Topics
 
 ### Instance Properties
-- [signature](mach_core_fileheader_base/3753705-signature.md)
-- [version](mach_core_fileheader_base/3753706-version.md)
+- [signature](./mach_core_fileheader_base/api-3753705-signature.md)
+- [version](./mach_core_fileheader_base/api-3753706-version.md)
 
 
 ---

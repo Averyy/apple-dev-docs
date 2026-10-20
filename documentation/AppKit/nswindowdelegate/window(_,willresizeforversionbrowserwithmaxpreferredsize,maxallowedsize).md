@@ -1,7 +1,8 @@
 # window(_:willResizeForVersionBrowserWithMaxPreferredSize:maxAllowedSize:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the window will resize for presentation during version browsing.
 
@@ -15,6 +16,10 @@ Tells the delegate the window will resize for presentation during version browsi
 optional func window(_ window: NSWindow, willResizeForVersionBrowserWithMaxPreferredSize maxPreferredFrameSize: NSSize, maxAllowedSize maxAllowedFrameSize: NSSize) -> NSSize
 ```
 
+```objc
+- (NSSize) window:(NSWindow *) window willResizeForVersionBrowserWithMaxPreferredSize:(NSSize) maxPreferredFrameSize maxAllowedSize:(NSSize) maxAllowedFrameSize;
+```
+
 #### Return Value
 
 The size that the window should be.
@@ -23,7 +28,7 @@ The size that the window should be.
 
 Windows entering the version browser will be resized to the size returned by this method. If either dimension of the returned size is larger than the `maxPreferredFrameSize`, the window will also be scaled down to ensure it fits properly in the version browser.
 
-If this method is not implemented, the version browser will use [`windowWillUseStandardFrame(_:defaultFrame:)`](nswindowdelegate/windowwillusestandardframe(_:defaultframe:).md) to determine the resulting window frame size.
+If this method is not implemented, the version browser will use [`windowWillUseStandardFrame(_:defaultFrame:)`](./windowwillusestandardframe%28_,defaultframe%29.md) to determine the resulting window frame size.
 
 ## Parameters
 
@@ -33,13 +38,14 @@ If this method is not implemented, the version browser will use [`windowWillUseS
 
 ## See Also
 
-- [func windowWillEnterVersionBrowser(Notification)](nswindowdelegate/windowwillenterversionbrowser(_:).md)
+### Managing Presentation in Version Browsers
+- [func windowWillEnterVersionBrowser(Notification)](./windowwillenterversionbrowser%28_%29.md)
   Tells the delegate the window is about to enter version browsing.
-- [func windowDidEnterVersionBrowser(Notification)](nswindowdelegate/windowdidenterversionbrowser(_:).md)
+- [func windowDidEnterVersionBrowser(Notification)](./windowdidenterversionbrowser%28_%29.md)
   Tells the delegate that the window has entered version browsing.
-- [func windowWillExitVersionBrowser(Notification)](nswindowdelegate/windowwillexitversionbrowser(_:).md)
+- [func windowWillExitVersionBrowser(Notification)](./windowwillexitversionbrowser%28_%29.md)
   Tells the delegate that the window is about to leave version browsing.
-- [func windowDidExitVersionBrowser(Notification)](nswindowdelegate/windowdidexitversionbrowser(_:).md)
+- [func windowDidExitVersionBrowser(Notification)](./windowdidexitversionbrowser%28_%29.md)
   Tells the delegate that the window has left version browsing.
 
 

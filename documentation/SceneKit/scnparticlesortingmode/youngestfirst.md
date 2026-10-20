@@ -1,18 +1,19 @@
 # SCNParticleSortingMode.youngestFirst
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emitted more recently are rendered before particles emitted earlier.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,15 +21,20 @@ Particles emitted more recently are rendered before particles emitted earlier.
 case youngestFirst
 ```
 
+```c
+SCNParticleSortingModeYoungestFirst
+```
+
 ## See Also
 
-- [SCNParticleSortingMode.none](scnparticlesortingmode/none.md)
+### Constants
+- [SCNParticleSortingMode.none](./none.md)
   Particles are not sorted; they may be rendered in any order.
-- [SCNParticleSortingMode.projectedDepth](scnparticlesortingmode/projecteddepth.md)
+- [SCNParticleSortingMode.projectedDepth](./projecteddepth.md)
   Particles farther from the point of view (as measured using projected depth) are rendered before closer particles.
-- [SCNParticleSortingMode.distance](scnparticlesortingmode/distance.md)
+- [SCNParticleSortingMode.distance](./distance.md)
   Particles farther from the point of view (as measured using distance from the camera in scene space) are rendered before closer particles.
-- [SCNParticleSortingMode.oldestFirst](scnparticlesortingmode/oldestfirst.md)
+- [SCNParticleSortingMode.oldestFirst](./oldestfirst.md)
   Particles emitted earlier are rendered before particles emitted more recently.
 
 

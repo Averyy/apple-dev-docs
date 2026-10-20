@@ -1,7 +1,8 @@
 # init(sources:name:weight:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tree node made up of multiple branches.
 
@@ -11,7 +12,7 @@ Creates a tree node made up of multiple branches.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

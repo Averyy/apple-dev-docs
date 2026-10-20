@@ -1,7 +1,8 @@
 # target
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that performs the action.
 
@@ -9,7 +10,7 @@ The object that performs the action.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The object that performs the action.
 weak var target: AnyObject? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id target;
+```
+
 ## See Also
 
-- [var name: String](uiaccessibilitycustomaction/name.md)
+### Accessing the action parameters
+- [var name: String](./name.md)
   The localized name of the action.
-- [var attributedName: NSAttributedString](uiaccessibilitycustomaction/attributedname.md)
+- [var attributedName: NSAttributedString](./attributedname.md)
   The localized name of the action as an attributed string.
-- [var image: UIImage?](uiaccessibilitycustomaction/image.md)
+- [var image: UIImage?](./image.md)
   An image that represents the action in assistive apps.
-- [var actionHandler: UIAccessibilityCustomAction.Handler?](uiaccessibilitycustomaction/actionhandler.md)
+- [var actionHandler: UIAccessibilityCustomAction.Handler?](./actionhandler.md)
   A handler to perform for the action.
-- [var selector: Selector](uiaccessibilitycustomaction/selector.md)
+- [var selector: Selector](./selector.md)
   The method that performs the action.
-- [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
+- [UIAccessibilityCustomAction.Handler](./handler.md)
   A closure type that defines a handler to perform for an action.
 
 

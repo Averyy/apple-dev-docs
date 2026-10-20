@@ -1,30 +1,32 @@
 # error
 
 **Framework**: App Store Receipts  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Error information that returns in the response body when a request isn’t successful.
 
 **Availability**:
-- App Store Receipts 1.0+
+- App Store Receipts 1.0+ - Deprecated in 1.7
 
 ## Declaration
 
-```swift
+```
 object error
 ```
 
 ## Properties
 
-- `code` (int32) *(required)*: A standard HTTP status code returned in the response body whenever a request isn’t successful due to a general networking issue.
+- `code` (int32) *(required)* *(deprecated)*: A standard HTTP status code returned in the response body whenever a request isn’t successful due to a general networking issue.
 
 ## See Also
 
-- [verifyReceipt](verify-receipt.md)
+### Deprecated
+- [verifyReceipt](./verify-receipt.md)
   Send a receipt to the App Store for verification.
-- [object requestBody](requestbody.md)
+- [object requestBody](./requestbody.md)
   The JSON contents you submit with the request to the App Store.
-- [object responseBody](responsebody.md)
+- [object responseBody](./responsebody.md)
   The JSON data that returns in the response from the App Store.
 
 

@@ -1,9 +1,10 @@
 # FileWrapper.WritingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Writing options that can be set by the [`write(to:options:originalContentsURL:)`](filewrapper/write(to:options:originalcontentsurl:).md) method.
+Writing options that can be set by the [`write(to:options:originalContentsURL:)`](./write%28to,options,originalcontentsurl%29.md) method.
 
 **Availability**:
 - iOS 4.0+
@@ -20,32 +21,37 @@ Writing options that can be set by the [`write(to:options:originalContentsURL:)`
 struct WritingOptions
 ```
 
+```c
+enum NSFileWrapperWritingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var atomic: FileWrapper.WritingOptions](filewrapper/writingoptions/atomic.md)
+- [static var atomic: FileWrapper.WritingOptions](./writingoptions/atomic.md)
   Whether writing is done atomically.
-- [static var withNameUpdating: FileWrapper.WritingOptions](filewrapper/writingoptions/withnameupdating.md)
-  Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
+- [static var withNameUpdating: FileWrapper.WritingOptions](./writingoptions/withnameupdating.md)
+  Whether descendant file wrappers’[`filename`](./filename.md) properties are set if the writing succeeds.
 ### Initializers
-- [init(rawValue: UInt)](filewrapper/writingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./writingoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [FileWrapper.ReadingOptions](filewrapper/readingoptions.md)
-  Reading options that can be set by the [`init(url:options:)`](filewrapper/init(url:options:)-70161.md) and [`read(from:options:)`](filewrapper/read(from:options:).md) methods.
+### Constants
+- [FileWrapper.ReadingOptions](./readingoptions.md)
+  Reading options that can be set by the [`init(url:options:)`](./init%28url,options%29-70161.md) and [`read(from:options:)`](./read%28from,options%29.md) methods.
 
 
 ---

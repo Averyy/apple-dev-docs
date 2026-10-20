@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -18,10 +19,13 @@
 static var center: Anchor<CGPoint>.Source { get }
 ```
 
+Available when `Value` is `CGPoint`.
+
 ## See Also
 
-- [static var leading: Anchor<CGPoint>.Source](anchor/source/leading.md)
-- [static var trailing: Anchor<CGPoint>.Source](anchor/source/trailing.md)
+### Getting middle anchor sources
+- [static var leading: Anchor<CGPoint>.Source](./leading.md)
+- [static var trailing: Anchor<CGPoint>.Source](./trailing.md)
 
 
 ---

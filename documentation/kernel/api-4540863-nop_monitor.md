@@ -1,14 +1,15 @@
 # nop_monitor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 int nop_monitor(struct vnop_monitor_args *ap);
 ```
 

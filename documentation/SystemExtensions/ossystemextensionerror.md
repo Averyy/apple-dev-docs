@@ -1,7 +1,8 @@
 # OSSystemExtensionError
 
 **Framework**: System Extensions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that describes a failed extension manager request.
 
@@ -20,53 +21,54 @@ struct OSSystemExtensionError
 ## Topics
 
 ### Inspecting Error Properties
-- [static var errorDomain: String](ossystemextensionerror/errordomain.md)
+- [static var errorDomain: String](./ossystemextensionerror/errordomain.md)
   The domain of SystemExtension errors.
 ### Error Codes
-- [OSSystemExtensionError.Code](ossystemextensionerror/code.md)
+- [OSSystemExtensionError.Code](./ossystemextensionerror/code.md)
   Error codes for system extensions.
-- [static var unknown: OSSystemExtensionError.Code](ossystemextensionerror/unknown.md)
+- [static var unknown: OSSystemExtensionError.Code](./ossystemextensionerror/unknown.md)
   An error code that indicates an unknown error occurred.
-- [static var missingEntitlement: OSSystemExtensionError.Code](ossystemextensionerror/missingentitlement.md)
+- [static var missingEntitlement: OSSystemExtensionError.Code](./ossystemextensionerror/missingentitlement.md)
   An error code that indicates the system extension lacks a required entitlement.
-- [static var unsupportedParentBundleLocation: OSSystemExtensionError.Code](ossystemextensionerror/unsupportedparentbundlelocation.md)
+- [static var unsupportedParentBundleLocation: OSSystemExtensionError.Code](./ossystemextensionerror/unsupportedparentbundlelocation.md)
   An error code that indicates the extension’s parent app isn’t in a valid location for activation.
-- [static var extensionNotFound: OSSystemExtensionError.Code](ossystemextensionerror/extensionnotfound.md)
+- [static var extensionNotFound: OSSystemExtensionError.Code](./ossystemextensionerror/extensionnotfound.md)
   An error code that indicates the manager can’t find the system extension.
-- [static var extensionMissingIdentifier: OSSystemExtensionError.Code](ossystemextensionerror/extensionmissingidentifier.md)
+- [static var extensionMissingIdentifier: OSSystemExtensionError.Code](./ossystemextensionerror/extensionmissingidentifier.md)
   An error code that indicates the extension identifier is missing.
-- [static var duplicateExtensionIdentifer: OSSystemExtensionError.Code](ossystemextensionerror/duplicateextensionidentifer.md)
+- [static var duplicateExtensionIdentifer: OSSystemExtensionError.Code](./ossystemextensionerror/duplicateextensionidentifer.md)
   An error code that indicates the extension identifier duplicates an existing identifier.
-- [static var unknownExtensionCategory: OSSystemExtensionError.Code](ossystemextensionerror/unknownextensioncategory.md)
+- [static var unknownExtensionCategory: OSSystemExtensionError.Code](./ossystemextensionerror/unknownextensioncategory.md)
   An error code that indicates the extension manager can’t recognize the extension’s category identifier.
-- [static var codeSignatureInvalid: OSSystemExtensionError.Code](ossystemextensionerror/codesignatureinvalid.md)
+- [static var codeSignatureInvalid: OSSystemExtensionError.Code](./ossystemextensionerror/codesignatureinvalid.md)
   An error code that indicates the extension’s signature is invalid.
-- [static var validationFailed: OSSystemExtensionError.Code](ossystemextensionerror/validationfailed.md)
+- [static var validationFailed: OSSystemExtensionError.Code](./ossystemextensionerror/validationfailed.md)
   An error code that indicates the manager can’t validate the extension.
-- [static var forbiddenBySystemPolicy: OSSystemExtensionError.Code](ossystemextensionerror/forbiddenbysystempolicy.md)
+- [static var forbiddenBySystemPolicy: OSSystemExtensionError.Code](./ossystemextensionerror/forbiddenbysystempolicy.md)
   An error code that indicates the system policy prohibits activating the system extension.
-- [static var requestCanceled: OSSystemExtensionError.Code](ossystemextensionerror/requestcanceled.md)
+- [static var requestCanceled: OSSystemExtensionError.Code](./ossystemextensionerror/requestcanceled.md)
   An error code that indicates the system extension manager request was canceled.
-- [static var requestSuperseded: OSSystemExtensionError.Code](ossystemextensionerror/requestsuperseded.md)
+- [static var requestSuperseded: OSSystemExtensionError.Code](./ossystemextensionerror/requestsuperseded.md)
   An error code that indicates the system extension request failed because the system already has a pending request for the same identifier.
-- [static var authorizationRequired: OSSystemExtensionError.Code](ossystemextensionerror/authorizationrequired.md)
+- [static var authorizationRequired: OSSystemExtensionError.Code](./ossystemextensionerror/authorizationrequired.md)
   An error code that indicates the system was unable to obtain the proper authorization.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [OSSystemExtensionError.Code](ossystemextensionerror/code.md)
+### Errors
+- [OSSystemExtensionError.Code](./ossystemextensionerror/code.md)
   Error codes for system extensions.
-- [let OSSystemExtensionErrorDomain: String](ossystemextensionerrordomain.md)
+- [let OSSystemExtensionErrorDomain: String](./ossystemextensionerrordomain.md)
   The error domain identifying system extension errors.
 
 

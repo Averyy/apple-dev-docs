@@ -1,7 +1,8 @@
 # CKSyncEngine.PendingDatabaseChange
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes an unsent database modification.
 
@@ -11,7 +12,7 @@ Describes an unsent database modification.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,45 +24,46 @@ enum PendingDatabaseChange
 ## Topics
 
 ### Database change types
-- [enum CKSyncEnginePendingDatabaseChangeType](cksyncenginependingdatabasechangetype.md)
+- [enum CKSyncEnginePendingDatabaseChangeType](../cksyncenginependingdatabasechangetype.md)
   Describes the type of a pending database change.
 ### Identifying and comparing changes
-- [static func == (CKSyncEngine.PendingDatabaseChange, CKSyncEngine.PendingDatabaseChange) -> Bool](cksyncengine-5sie5/pendingdatabasechange/==(_:_:).md)
+- [static func == (CKSyncEngine.PendingDatabaseChange, CKSyncEngine.PendingDatabaseChange) -> Bool](./pendingdatabasechange/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Debugging the change
-- [var description: String](cksyncengine-5sie5/pendingdatabasechange/description.md)
+- [var description: String](./pendingdatabasechange/description.md)
   A textual description of the change that’s suitable for logging.
 ### Enumeration Cases
-- [CKSyncEngine.PendingDatabaseChange.deleteZone(_:)](cksyncengine-5sie5/pendingdatabasechange/deletezone(_:).md)
+- [CKSyncEngine.PendingDatabaseChange.deleteZone(_:)](./pendingdatabasechange/deletezone%28_%29.md)
   A pending deletion of a zone from the server.
-- [CKSyncEngine.PendingDatabaseChange.saveZone(_:)](cksyncengine-5sie5/pendingdatabasechange/savezone(_:).md)
+- [CKSyncEngine.PendingDatabaseChange.saveZone(_:)](./pendingdatabasechange/savezone%28_%29.md)
   A pending save of a zone to the server.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/pendingdatabasechange/customstringconvertible-implementations.md)
-- [Equatable Implementations](cksyncengine-5sie5/pendingdatabasechange/equatable-implementations.md)
+- [CustomStringConvertible Implementations](./pendingdatabasechange/customstringconvertible-implementations.md)
+- [Equatable Implementations](./pendingdatabasechange/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/add(pendingdatabasechanges:).md)
+### Manipulating pending changes
+- [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](./state-swift.class/add%28pendingdatabasechanges%29.md)
   Adds the specified database changes to the state.
-- [func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/remove(pendingdatabasechanges:).md)
+- [func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](./state-swift.class/remove%28pendingdatabasechanges%29.md)
   Removes the specified database changes from the state.
-- [func add(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](cksyncengine-5sie5/state-swift.class/add(pendingrecordzonechanges:).md)
+- [func add(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](./state-swift.class/add%28pendingrecordzonechanges%29.md)
   Adds the specified record zone changes to the state.
-- [func remove(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](cksyncengine-5sie5/state-swift.class/remove(pendingrecordzonechanges:).md)
+- [func remove(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](./state-swift.class/remove%28pendingrecordzonechanges%29.md)
   Removes the specified record zone changes from the state.
-- [CKSyncEngine.PendingRecordZoneChange](cksyncengine-5sie5/pendingrecordzonechange.md)
+- [CKSyncEngine.PendingRecordZoneChange](./pendingrecordzonechange.md)
   Describes an unsent record modification.
 
 

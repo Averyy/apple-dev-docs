@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the contents of the given data table to the end of this data table.
 

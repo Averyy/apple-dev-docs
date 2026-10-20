@@ -1,7 +1,8 @@
 # CMBITMAPCALLBACKPROCPTR_DEFINED
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 var CMBITMAPCALLBACKPROCPTR_DEFINED: Int32 { get }
+```
+
+```c
+#define CMBITMAPCALLBACKPROCPTR_DEFINED
 ```
 
 

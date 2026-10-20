@@ -1,7 +1,8 @@
 # AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.default
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Describes the system default behavior.
 
@@ -16,7 +17,8 @@ case `default`
 
 ## See Also
 
-- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.none](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum/none.md)
+### Transition behaviors
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.none](./none.md)
   Describes no behavior.
 
 

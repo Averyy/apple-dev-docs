@@ -1,15 +1,20 @@
 # esr_pending
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var esr_pending: UInt32
+```
+
+```c
+uint32_t esr_pending;
 ```
 
 

@@ -1,7 +1,8 @@
 # PortalComponent.ClippingMode.plane(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Clips the contents within the portal by the edge of the plane.
 

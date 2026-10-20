@@ -1,18 +1,23 @@
 # tokenField(_:completionsForSubstring:indexOfToken:indexOfSelectedItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to provide an array of appropriate completions for the contents of the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func tokenField(_ tokenField: NSTokenField, completionsForSubstring substring: String, indexOfToken tokenIndex: Int, indexOfSelectedItem selectedIndex: UnsafeMutablePointer<Int>?) -> [Any]?
+```
+
+```objc
+- (NSArray *) tokenField:(NSTokenField *) tokenField completionsForSubstring:(NSString *) substring indexOfToken:(NSInteger) tokenIndex indexOfSelectedItem:(NSInteger *) selectedIndex;
 ```
 
 #### Return Value
@@ -32,11 +37,12 @@ If the delegate does not implement this method, no completions are provided.
 
 ## See Also
 
-- [func tokenField(NSTokenField, editingStringForRepresentedObject: Any) -> String?](nstokenfielddelegate/tokenfield(_:editingstringforrepresentedobject:).md)
+### Editing a Tokenized Strings
+- [func tokenField(NSTokenField, editingStringForRepresentedObject: Any) -> String?](./tokenfield%28_,editingstringforrepresentedobject%29.md)
   Allows the delegate to provide a string to be edited as a proxy for a represented object.
-- [func tokenField(NSTokenField, representedObjectForEditing: String) -> Any?](nstokenfielddelegate/tokenfield(_:representedobjectforediting:).md)
+- [func tokenField(NSTokenField, representedObjectForEditing: String) -> Any?](./tokenfield%28_,representedobjectforediting%29.md)
   Allows the delegate to provide a represented object for the given editing string.
-- [func tokenField(NSTokenField, shouldAdd: [Any], at: Int) -> [Any]](nstokenfielddelegate/tokenfield(_:shouldadd:at:).md)
+- [func tokenField(NSTokenField, shouldAdd: [Any], at: Int) -> [Any]](./tokenfield%28_,shouldadd,at%29.md)
   Allows the delegate to validate the tokens to be added to the receiver at a particular location.
 
 

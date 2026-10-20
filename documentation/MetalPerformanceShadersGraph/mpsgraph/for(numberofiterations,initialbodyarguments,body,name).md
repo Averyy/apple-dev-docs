@@ -1,7 +1,8 @@
 # for(numberOfIterations:initialBodyArguments:body:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a for loop operation, with a specific number of iterations.
 
@@ -17,6 +18,10 @@ Adds a for loop operation, with a specific number of iterations.
 
 ```swift
 func `for`(numberOfIterations: MPSGraphTensor, initialBodyArguments: [MPSGraphTensor], body: @escaping MPSGraphForLoopBodyBlock, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) forLoopWithNumberOfIterations:(MPSGraphTensor *) numberOfIterations initialBodyArguments:(NSArray<MPSGraphTensor *> *) initialBodyArguments body:(MPSGraphForLoopBodyBlock) body name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # ascending
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver specifies sorting in ascending order.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the receiver specifies sorting in ascendi
 var ascending: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL ascending;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver specifies sorting in ascending order, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver specifies sorting in ascending order, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var key: String?](nssortdescriptor/key.md)
+### Getting Information About a Sort Descriptor
+- [var key: String?](./key.md)
   The key that specifies the property to compare during sorting.
-- [var keyPath: AnyKeyPath?](nssortdescriptor/keypath.md)
+- [var keyPath: AnyKeyPath?](./keypath.md)
   The key path that specifies the property to compare during sorting.
-- [var selector: Selector?](nssortdescriptor/selector.md)
+- [var selector: Selector?](./selector.md)
   The selector for comparing objects.
-- [var comparator: Comparator](nssortdescriptor/comparator.md)
+- [var comparator: Comparator](./comparator.md)
   The comparator for the sort descriptor.
 
 

@@ -1,7 +1,8 @@
 # indexName()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index’s name.
 
@@ -18,15 +19,20 @@ Returns the index’s name.
 func indexName() -> String?
 ```
 
+```objc
+- (NSString *) indexName;
+```
+
 #### Discussion
 
 The default value is `nil`.
 
 ## See Also
 
-- [var isIndexingEnabled: Bool](nscoredatacorespotlightdelegate/isindexingenabled.md)
+### Configuring the Index
+- [var isIndexingEnabled: Bool](./isindexingenabled.md)
   A Boolean value that indicates whether Core Data is currently updating the Core Spotlight index with the persistent store’s entities.
-- [func domainIdentifier() -> String](nscoredatacorespotlightdelegate/domainidentifier.md)
+- [func domainIdentifier() -> String](./domainidentifier%28%29.md)
   Returns the domain identifier.
 
 

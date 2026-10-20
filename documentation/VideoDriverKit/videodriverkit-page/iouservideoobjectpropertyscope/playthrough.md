@@ -1,7 +1,8 @@
 # PlayThrough
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The scope for properties that apply to the play-through side of an object.
 
@@ -10,17 +11,18 @@ The scope for properties that apply to the play-through side of an object.
 
 ## Declaration
 
-```swift
+```c
 PlayThrough
 ```
 
 ## See Also
 
-- [Global](videodriverkit/iouservideoobjectpropertyscope/global.md)
+### Property scopes
+- [Global](./global.md)
   The scope for properties that apply to the object as a whole.
-- [Input](videodriverkit/iouservideoobjectpropertyscope/input.md)
+- [Input](./input.md)
   The scope for properties that apply to the input side of an object.
-- [Output](videodriverkit/iouservideoobjectpropertyscope/output.md)
+- [Output](./output.md)
   The scope for properties that apply to the output side of an object.
 
 

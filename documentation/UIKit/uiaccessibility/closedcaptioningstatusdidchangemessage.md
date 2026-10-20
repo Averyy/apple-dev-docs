@@ -1,7 +1,8 @@
 # UIAccessibility.ClosedCaptioningStatusDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,13 +20,13 @@ struct ClosedCaptioningStatusDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](uiaccessibility/closedcaptioningstatusdidchangemessage/init.md)
+- [init()](./closedcaptioningstatusdidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

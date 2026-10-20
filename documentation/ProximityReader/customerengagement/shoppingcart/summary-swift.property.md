@@ -1,7 +1,8 @@
 # summary
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A summary section of the shopping cart.
 

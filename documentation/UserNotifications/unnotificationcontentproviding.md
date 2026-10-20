@@ -1,7 +1,8 @@
 # UNNotificationContentProviding
 
 **Framework**: User Notifications  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol the system uses to provide context relevant to user notifications.
 
@@ -20,6 +21,10 @@ A protocol the system uses to provide context relevant to user notifications.
 protocol UNNotificationContentProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol UNNotificationContentProviding <NSObject>
+```
+
 #### Overview
 
 The system allows only objects in the Apple SDK that conform to `UNNotificationContentProviding`. The system ignores objects outside of the Apple SDK that your app conforms to `UNNotificationContentProviding`.
@@ -27,25 +32,26 @@ The system allows only objects in the Apple SDK that conform to `UNNotificationC
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UNNotificationAttributedMessageContext](unnotificationattributedmessagecontext.md)
+- [UNNotificationAttributedMessageContext](./unnotificationattributedmessagecontext.md)
 
 ## See Also
 
-- [Implementing communication notifications](implementing-communication-notifications.md)
+### Notification content
+- [Implementing communication notifications](./implementing-communication-notifications.md)
   Configure and display your app’s communication notifications by using intents.
-- [class UNNotificationActionIcon](unnotificationactionicon.md)
+- [class UNNotificationActionIcon](./unnotificationactionicon.md)
   An icon associated with an action.
-- [class UNMutableNotificationContent](unmutablenotificationcontent.md)
+- [class UNMutableNotificationContent](./unmutablenotificationcontent.md)
   The editable content for a notification.
-- [class UNNotificationContent](unnotificationcontent.md)
+- [class UNNotificationContent](./unnotificationcontent.md)
   The uneditable content of a notification.
-- [class UNNotificationAttachment](unnotificationattachment.md)
+- [class UNNotificationAttachment](./unnotificationattachment.md)
   A media file associated with a notification.
-- [class UNNotificationSound](unnotificationsound.md)
+- [class UNNotificationSound](./unnotificationsound.md)
   The sound played upon delivery of a notification.
-- [struct UNNotificationSoundName](unnotificationsoundname.md)
+- [struct UNNotificationSoundName](./unnotificationsoundname.md)
   A string providing the name of a sound file.
 
 

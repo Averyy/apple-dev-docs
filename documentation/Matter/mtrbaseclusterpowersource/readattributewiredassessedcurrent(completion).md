@@ -1,7 +1,8 @@
 # readAttributeWiredAssessedCurrent(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWiredAssessedCurrent(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWiredAssessedCurrent() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWiredAssessedCurrentWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

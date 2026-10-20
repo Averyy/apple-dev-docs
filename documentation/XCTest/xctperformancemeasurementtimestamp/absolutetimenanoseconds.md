@@ -1,7 +1,8 @@
 # absoluteTimeNanoSeconds
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nanoseconds component of the absolute time.
 
@@ -11,13 +12,18 @@ The nanoseconds component of the absolute time.
 var absoluteTimeNanoSeconds: UInt64 { get }
 ```
 
+```objc
+@property (readonly) uint64_t absoluteTimeNanoSeconds;
+```
+
 #### Discussion
 
 This property reflects the number of nanoseconds since an arbitrary reference time. It doesn’t update while the system is sleeping.
 
 ## See Also
 
-- [var absoluteTime: UInt64](xctperformancemeasurementtimestamp/absolutetime.md)
+### Mach Absolute Time
+- [var absoluteTime: UInt64](./absolutetime.md)
   The absolute time of the timestamp, which is the value of the mach absolute time clock.
 
 

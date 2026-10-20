@@ -1,7 +1,8 @@
 # init(waypoint:travelEstimates:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new CPMapTemplateWaypoint with the specified waypoint and travel estimates.
 
@@ -14,6 +15,10 @@ Initializes a new CPMapTemplateWaypoint with the specified waypoint and travel e
 
 ```swift
 init(waypoint: CPNavigationWaypoint, travelEstimates: CPTravelEstimates)
+```
+
+```objc
+- (instancetype) initWithWaypoint:(CPNavigationWaypoint *) waypoint travelEstimates:(CPTravelEstimates *) travelEstimates;
 ```
 
 #### Return Value

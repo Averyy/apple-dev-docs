@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a URL to a file in the file system.
 
@@ -24,13 +25,14 @@ static var fileURL: UTType { get }
 
 The identifier for this type is `public.file-url`.
 
-This type conforms to [`UTTypeURL`](uttypeurl.md).
+This type conforms to [`UTTypeURL`](../uttypeurl.md).
 
 ## See Also
 
-- [static var url: UTType](uttype-swift.struct/url.md)
+### URLs
+- [static var url: UTType](./url.md)
   A type that represents a URL.
-- [static var urlBookmarkData: UTType](uttype-swift.struct/urlbookmarkdata.md)
+- [static var urlBookmarkData: UTType](./urlbookmarkdata.md)
   A type that represents a URL bookmark.
 
 

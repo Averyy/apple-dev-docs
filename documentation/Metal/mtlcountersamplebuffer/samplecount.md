@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of samples in the buffer.
@@ -20,11 +21,16 @@ The number of samples in the buffer.
 var sampleCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger sampleCount;
+```
+
 ## See Also
 
-- [var label: String](mtlcountersamplebuffer/label.md)
+### Inspecting the counter sample buffer’s configuration
+- [var label: String](./label.md)
   A string that identifies the counter sample buffer.
-- [var device: any MTLDevice](mtlcountersamplebuffer/device.md)
+- [var device: any MTLDevice](./device.md)
   The GPU device instance that owns the counter sample buffer.
 
 

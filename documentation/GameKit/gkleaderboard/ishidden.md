@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current leaderboard isn’t visible in Game Center views.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the current leaderboard isn’t visible i
 
 ```swift
 var isHidden: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isHidden;
 ```
 
 #### Discussion

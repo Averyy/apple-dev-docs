@@ -1,7 +1,8 @@
 # networkTransactionMetrics
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,17 +19,22 @@
 var networkTransactionMetrics: URLSessionTaskMetrics? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURLSessionTaskMetrics * networkTransactionMetrics;
+```
+
 ## See Also
 
-- [var byteRange: NSRange](avmetricmediaresourcerequestevent/byterange.md)
-- [var errorEvent: AVMetricErrorEvent?](avmetricmediaresourcerequestevent/errorevent.md)
-- [var requestEndTime: Date](avmetricmediaresourcerequestevent/requestendtime.md)
-- [var requestStartTime: Date](avmetricmediaresourcerequestevent/requeststarttime.md)
-- [var responseEndTime: Date](avmetricmediaresourcerequestevent/responseendtime.md)
-- [var responseStartTime: Date](avmetricmediaresourcerequestevent/responsestarttime.md)
-- [var serverAddress: String?](avmetricmediaresourcerequestevent/serveraddress.md)
-- [var url: URL?](avmetricmediaresourcerequestevent/url.md)
-- [var wasReadFromCache: Bool](avmetricmediaresourcerequestevent/wasreadfromcache.md)
+### Inspecting the event
+- [var byteRange: NSRange](./byterange.md)
+- [var errorEvent: AVMetricErrorEvent?](./errorevent.md)
+- [var requestEndTime: Date](./requestendtime.md)
+- [var requestStartTime: Date](./requeststarttime.md)
+- [var responseEndTime: Date](./responseendtime.md)
+- [var responseStartTime: Date](./responsestarttime.md)
+- [var serverAddress: String?](./serveraddress.md)
+- [var url: URL?](./url.md)
+- [var wasReadFromCache: Bool](./wasreadfromcache.md)
 
 
 ---

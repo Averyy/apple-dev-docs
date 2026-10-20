@@ -1,14 +1,15 @@
 # tts_p_comm
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 char tts_p_comm[32];
 ```
 

@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.spacingMark
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A spacing combining mark with positive advance width.
 
@@ -22,7 +23,7 @@ case spacingMark
 
 #### Discussion
 
-This value corresponds to the category `Spacing_Mark` (abbreviated `Mc`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Spacing_Mark` (abbreviated `Mc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

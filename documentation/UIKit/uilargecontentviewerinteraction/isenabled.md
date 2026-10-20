@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the large content viewer is enabled on the device.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether the large content viewer is enabled on th
 class var isEnabled: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-It isn’t necessary to check this value before adding a [`UILargeContentViewerInteraction`](uilargecontentviewerinteraction.md) to a view, but it may be helpful if you need to adjust the behavior of coexisting gesture handlers. For example, a button with a long press handler might increase its long press duration so the user can read the text in the large content viewer first.
+It isn’t necessary to check this value before adding a [`UILargeContentViewerInteraction`](../uilargecontentviewerinteraction.md) to a view, but it may be helpful if you need to adjust the behavior of coexisting gesture handlers. For example, a button with a long press handler might increase its long press duration so the user can read the text in the large content viewer first.
 
 ## See Also
 
-- [class let enabledStatusDidChangeNotification: NSNotification.Name](uilargecontentviewerinteraction/enabledstatusdidchangenotification.md)
+### Detecting the large content viewer
+- [class let enabledStatusDidChangeNotification: NSNotification.Name](./enabledstatusdidchangenotification.md)
   A notification the system posts when it enables or disables the large content viewer.
 
 

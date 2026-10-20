@@ -1,7 +1,8 @@
 # trimDuration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional duration that overrides the calculated duration.
 

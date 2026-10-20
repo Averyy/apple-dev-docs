@@ -1,7 +1,8 @@
 # PTChannelDescriptor
 
 **Framework**: Push to Talk  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a channel.
 
@@ -16,38 +17,43 @@ An object that describes a channel.
 class PTChannelDescriptor
 ```
 
+```objc
+@interface PTChannelDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](./creating-a-push-to-talk-app.md)
 
 ## Topics
 
 ### Creating a channel descriptor
-- [init(name: String, image: UIImage?)](ptchanneldescriptor/init(name:image:).md)
+- [init(name: String, image: UIImage?)](./ptchanneldescriptor/init%28name,image%29.md)
   Creates a channel descriptor with the name and image you specify.
 ### Inspecting a channel descriptor
-- [var name: String](ptchanneldescriptor/name.md)
+- [var name: String](./ptchanneldescriptor/name.md)
   The channel name that the system presents in the system user interface.
-- [var image: UIImage?](ptchanneldescriptor/image.md)
+- [var image: UIImage?](./ptchanneldescriptor/image.md)
   The channel photo that the system presents in the user interface to represent the channel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol PTChannelRestorationDelegate](ptchannelrestorationdelegate.md)
+### Channel restoration
+- [protocol PTChannelRestorationDelegate](./ptchannelrestorationdelegate.md)
   A type that represents the channel restoration behavior.
 
 

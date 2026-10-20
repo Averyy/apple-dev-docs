@@ -1,7 +1,8 @@
 # rateScalarValid
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value in the rate scalar field is valid.
 
@@ -20,23 +21,28 @@ The value in the rate scalar field is valid.
 static var rateScalarValid: CVTimeStampFlags { get }
 ```
 
+```c
+kCVTimeStampRateScalarValid
+```
+
 ## See Also
 
-- [static var bottomField: CVTimeStampFlags](cvtimestampflags/bottomfield.md)
+### Constants
+- [static var bottomField: CVTimeStampFlags](./bottomfield.md)
   The timestamp represents the bottom lines of an interlaced image.
-- [static var hostTimeValid: CVTimeStampFlags](cvtimestampflags/hosttimevalid.md)
+- [static var hostTimeValid: CVTimeStampFlags](./hosttimevalid.md)
   The value in the host time field is valid.
-- [static var isInterlaced: CVTimeStampFlags](cvtimestampflags/isinterlaced.md)
+- [static var isInterlaced: CVTimeStampFlags](./isinterlaced.md)
   A convenience constant indicating that the timestamp is for an interlaced image.
-- [static var smpteTimeValid: CVTimeStampFlags](cvtimestampflags/smptetimevalid.md)
+- [static var smpteTimeValid: CVTimeStampFlags](./smptetimevalid.md)
   The value in the SMPTE time field is valid.
-- [static var topField: CVTimeStampFlags](cvtimestampflags/topfield.md)
+- [static var topField: CVTimeStampFlags](./topfield.md)
   The timestamp represents the top lines of an interlaced image.
-- [static var videoHostTimeValid: CVTimeStampFlags](cvtimestampflags/videohosttimevalid.md)
+- [static var videoHostTimeValid: CVTimeStampFlags](./videohosttimevalid.md)
   A convenience constant indicating that both the video time and host time fields are valid.
-- [static var videoRefreshPeriodValid: CVTimeStampFlags](cvtimestampflags/videorefreshperiodvalid.md)
+- [static var videoRefreshPeriodValid: CVTimeStampFlags](./videorefreshperiodvalid.md)
   The value in the video refresh period field is valid.
-- [static var videoTimeValid: CVTimeStampFlags](cvtimestampflags/videotimevalid.md)
+- [static var videoTimeValid: CVTimeStampFlags](./videotimevalid.md)
   The value in the video time field is valid.
 
 

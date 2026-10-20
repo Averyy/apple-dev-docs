@@ -1,7 +1,8 @@
 # AVMediaSelectionOption
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a specific option for the presentation of media within a group of options.
 
@@ -20,78 +21,83 @@ An object that represents a specific option for the presentation of media within
 class AVMediaSelectionOption
 ```
 
+```objc
+@interface AVMediaSelectionOption : NSObject
+```
+
 ## Mentions
 
-- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
 
 ## Topics
 
 ### Accessing media information
-- [var mediaType: AVMediaType](avmediaselectionoption/mediatype.md)
+- [var mediaType: AVMediaType](./avmediaselectionoption/mediatype.md)
   The media type of the media data.
-- [var mediaSubTypes: [NSNumber]](avmediaselectionoption/mediasubtypes.md)
+- [var mediaSubTypes: [NSNumber]](./avmediaselectionoption/mediasubtypes.md)
   The media sub-types of the media data associated with the option.
-- [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](avmediaselectionoption/hasmediacharacteristic(_:).md)
+- [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](./avmediaselectionoption/hasmediacharacteristic%28_%29.md)
   Returns a Boolean value that indicates whether the receiver has media with the given media characteristic.
 ### Managing metadata
-- [var commonMetadata: [AVMetadataItem]](avmediaselectionoption/commonmetadata.md)
+- [var commonMetadata: [AVMetadataItem]](./avmediaselectionoption/commonmetadata.md)
   An array of metadata items for each common metadata key for which a value is available.
-- [var availableMetadataFormats: [String]](avmediaselectionoption/availablemetadataformats.md)
+- [var availableMetadataFormats: [String]](./avmediaselectionoption/availablemetadataformats.md)
   The metadata formats that contain metadata associated with the option.
-- [func metadata(forFormat: String) -> [AVMetadataItem]](avmediaselectionoption/metadata(forformat:).md)
+- [func metadata(forFormat: String) -> [AVMetadataItem]](./avmediaselectionoption/metadata%28forformat%29.md)
   Returns an array of metadata items—one for each metadata item in the container of a given format.
 ### Determining playability
-- [var isPlayable: Bool](avmediaselectionoption/isplayable.md)
+- [var isPlayable: Bool](./avmediaselectionoption/isplayable.md)
   A Boolean value that indicates whether the media selection option is playable.
 ### Getting the language and locale settings
-- [var displayName: String](avmediaselectionoption/displayname.md)
+- [var displayName: String](./avmediaselectionoption/displayname.md)
   A string suitable for display using the current system locale.
-- [func displayName(with: Locale) -> String](avmediaselectionoption/displayname(with:).md)
+- [func displayName(with: Locale) -> String](./avmediaselectionoption/displayname%28with%29.md)
   Returns a string suitable for display using the specified locale.
-- [var locale: Locale?](avmediaselectionoption/locale.md)
+- [var locale: Locale?](./avmediaselectionoption/locale.md)
   The locale for which the media option was authored.
-- [var extendedLanguageTag: String?](avmediaselectionoption/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./avmediaselectionoption/extendedlanguagetag.md)
   The IETF BCP 47 language tag associated with the option
 ### Getting the associated media selection option
-- [func associatedMediaSelectionOption(in: AVMediaSelectionGroup) -> AVMediaSelectionOption?](avmediaselectionoption/associatedmediaselectionoption(in:).md)
+- [func associatedMediaSelectionOption(in: AVMediaSelectionGroup) -> AVMediaSelectionOption?](./avmediaselectionoption/associatedmediaselectionoption%28in%29.md)
   Returns a media selection option associated with the receiver in a given group.
 ### Creating a Now Playing language option
-- [func makeNowPlayingInfoLanguageOption() -> MPNowPlayingInfoLanguageOption?](avmediaselectionoption/makenowplayinginfolanguageoption.md)
+- [func makeNowPlayingInfoLanguageOption() -> MPNowPlayingInfoLanguageOption?](./avmediaselectionoption/makenowplayinginfolanguageoption%28%29.md)
   Creates a language option for a media selection option.
 ### Creating a property list representation
-- [func propertyList() -> Any](avmediaselectionoption/propertylist.md)
+- [func propertyList() -> Any](./avmediaselectionoption/propertylist%28%29.md)
   Returns a serializable property list that’s sufficient to identify the option within its group.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+### Media selection
+- [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
-- [class AVMediaSelection](avmediaselection.md)
+- [class AVMediaSelection](./avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
-- [class AVMediaSelectionGroup](avmediaselectiongroup.md)
+- [class AVMediaSelectionGroup](./avmediaselectiongroup.md)
   An object that represents a collection of mutually exclusive options for the presentation of media within an asset.
-- [class AVMutableMediaSelection](avmutablemediaselection.md)
+- [class AVMutableMediaSelection](./avmutablemediaselection.md)
   A mutable object that represents a complete rendition of media selection options on an asset.
-- [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
+- [class AVPlayerMediaSelectionCriteria](./avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
-- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+- [class AVCustomMediaSelectionScheme](./avcustommediaselectionscheme.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
-- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+- [class AVMediaPresentationSelector](./avmediapresentationselector.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
-- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+- [class AVMediaPresentationSetting](./avmediapresentationsetting.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 

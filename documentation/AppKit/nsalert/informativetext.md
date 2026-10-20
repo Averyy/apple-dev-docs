@@ -1,17 +1,22 @@
 # informativeText
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alert’s informative text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var informativeText: String { get set }
+```
+
+```objc
+@property (copy) NSString * informativeText;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The value of this property must not be `nil`.
 
 ## See Also
 
-- [var messageText: String](nsalert/messagetext.md)
+### Accessing alert text
+- [var messageText: String](./messagetext.md)
   The alert’s message text or title.
 
 

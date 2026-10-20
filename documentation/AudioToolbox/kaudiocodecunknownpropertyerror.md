@@ -1,15 +1,16 @@
 # kAudioCodecUnknownPropertyError
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,16 +18,21 @@
 var kAudioCodecUnknownPropertyError: OSStatus { get }
 ```
 
+```c
+kAudioCodecUnknownPropertyError
+```
+
 ## See Also
 
-- [var kAudioCodecBadPropertySizeError: OSStatus](kaudiocodecbadpropertysizeerror.md)
-- [var kAudioCodecIllegalOperationError: OSStatus](kaudiocodecillegaloperationerror.md)
-- [var kAudioCodecNoError: OSStatus](kaudiocodecnoerror.md)
-- [var kAudioCodecNotEnoughBufferSpaceError: OSStatus](kaudiocodecnotenoughbufferspaceerror.md)
-- [var kAudioCodecStateError: OSStatus](kaudiocodecstateerror.md)
-- [var kAudioCodecUnspecifiedError: OSStatus](kaudiocodecunspecifiederror.md)
-- [var kAudioCodecUnsupportedFormatError: OSStatus](kaudiocodecunsupportedformaterror.md)
-- [var kAudioCodecBadDataError: OSStatus](kaudiocodecbaddataerror.md)
+### Constants
+- [var kAudioCodecBadPropertySizeError: OSStatus](./kaudiocodecbadpropertysizeerror.md)
+- [var kAudioCodecIllegalOperationError: OSStatus](./kaudiocodecillegaloperationerror.md)
+- [var kAudioCodecNoError: OSStatus](./kaudiocodecnoerror.md)
+- [var kAudioCodecNotEnoughBufferSpaceError: OSStatus](./kaudiocodecnotenoughbufferspaceerror.md)
+- [var kAudioCodecStateError: OSStatus](./kaudiocodecstateerror.md)
+- [var kAudioCodecUnspecifiedError: OSStatus](./kaudiocodecunspecifiederror.md)
+- [var kAudioCodecUnsupportedFormatError: OSStatus](./kaudiocodecunsupportedformaterror.md)
+- [var kAudioCodecBadDataError: OSStatus](./kaudiocodecbaddataerror.md)
 
 
 ---

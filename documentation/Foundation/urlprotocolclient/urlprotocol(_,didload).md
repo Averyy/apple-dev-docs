@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the protocol implementation has loaded some data.
@@ -21,6 +22,10 @@ Tells the client that the protocol implementation has loaded some data.
 func urlProtocol(_ protocol: URLProtocol, didLoad data: Data)
 ```
 
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol didLoadData:(NSData *) data;
+```
+
 #### Discussion
 
 The data object must contain only new data loaded since the previous invocation of this method.
@@ -32,9 +37,10 @@ The data object must contain only new data loaded since the previous invocation 
 
 ## See Also
 
-- [func urlProtocol(URLProtocol, didFailWithError: any Error)](urlprotocolclient/urlprotocol(_:didfailwitherror:).md)
+### Indicating loading progress or failure
+- [func urlProtocol(URLProtocol, didFailWithError: any Error)](./urlprotocol%28_,didfailwitherror%29.md)
   Tells the client that the load request failed due to an error.
-- [func urlProtocolDidFinishLoading(URLProtocol)](urlprotocolclient/urlprotocoldidfinishloading(_:).md)
+- [func urlProtocolDidFinishLoading(URLProtocol)](./urlprotocoldidfinishloading%28_%29.md)
   Tells the client that the protocol implementation has finished loading.
 
 

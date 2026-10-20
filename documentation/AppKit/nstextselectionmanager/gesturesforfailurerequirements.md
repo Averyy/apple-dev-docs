@@ -1,7 +1,8 @@
 # gesturesForFailureRequirements
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gesture recognizers managed by the selection manager.
 
@@ -12,6 +13,10 @@ The gesture recognizers managed by the selection manager.
 
 ```swift
 var gesturesForFailureRequirements: [NSGestureRecognizer] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSGestureRecognizer *> * gesturesForFailureRequirements;
 ```
 
 #### Discussion

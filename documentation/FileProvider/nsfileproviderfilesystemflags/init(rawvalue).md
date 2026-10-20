@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new file system flag from the provided value.
 

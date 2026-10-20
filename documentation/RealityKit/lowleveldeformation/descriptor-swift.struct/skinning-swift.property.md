@@ -1,7 +1,8 @@
 # skinning
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The skinning configuration, or `nil` if skinning is not used.
 
@@ -19,8 +20,9 @@ var skinning: LowLevelDeformation.Descriptor.Skinning?
 
 ## See Also
 
-- [LowLevelDeformation.Descriptor.Skinning](lowleveldeformation/descriptor-swift.struct/skinning-swift.struct.md)
-  The skinning data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
+### Configuring skinning
+- [LowLevelDeformation.Descriptor.Skinning](./skinning-swift.struct.md)
+  The skinning data dimensions for a [`LowLevelDeformation`](../../lowleveldeformation.md).
 
 
 ---

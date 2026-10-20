@@ -1,14 +1,15 @@
 # kATAcmdFlushCache
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAcmdFlushCache = 0x00E7
 ```
 

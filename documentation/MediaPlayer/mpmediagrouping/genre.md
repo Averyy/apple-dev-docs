@@ -1,7 +1,8 @@
 # MPMediaGrouping.genre
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Groups and sorts media item collections by musical or film genre.
 
@@ -17,21 +18,26 @@ Groups and sorts media item collections by musical or film genre.
 case genre
 ```
 
+```c
+MPMediaGroupingGenre
+```
+
 ## See Also
 
-- [MPMediaGrouping.title](mpmediagrouping/title.md)
+### Media query keys
+- [MPMediaGrouping.title](./title.md)
   Groups and sorts media item collections by title. For songs, for example, the title is the song name. This is the default grouping key.
-- [MPMediaGrouping.album](mpmediagrouping/album.md)
+- [MPMediaGrouping.album](./album.md)
   Groups and sorts media item collections by album, and sorts songs within an album by track order.
-- [MPMediaGrouping.artist](mpmediagrouping/artist.md)
+- [MPMediaGrouping.artist](./artist.md)
   Groups and sorts media item collections by performing artist.
-- [MPMediaGrouping.albumArtist](mpmediagrouping/albumartist.md)
+- [MPMediaGrouping.albumArtist](./albumartist.md)
   Groups and sorts media item collections by album artist (the primary performing artist for an album as a whole).
-- [MPMediaGrouping.composer](mpmediagrouping/composer.md)
+- [MPMediaGrouping.composer](./composer.md)
   Groups and sorts media item collections by composer.
-- [MPMediaGrouping.playlist](mpmediagrouping/playlist.md)
+- [MPMediaGrouping.playlist](./playlist.md)
   Groups and sorts media item collections by playlist.
-- [MPMediaGrouping.podcastTitle](mpmediagrouping/podcasttitle.md)
+- [MPMediaGrouping.podcastTitle](./podcasttitle.md)
   Groups and sorts media item collections by podcast title.
 
 

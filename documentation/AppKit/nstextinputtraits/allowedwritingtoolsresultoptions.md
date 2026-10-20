@@ -1,7 +1,8 @@
 # allowedWritingToolsResultOptions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional var allowedWritingToolsResultOptions: NSWritingToolsResultOptions { get set }
+```
+
+```objc
+@property NSWritingToolsResultOptions allowedWritingToolsResultOptions;
 ```
 
 

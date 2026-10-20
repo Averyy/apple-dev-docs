@@ -1,7 +1,8 @@
 # MLPhase.training
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The training session is training a model from the features it extracted from the training dataset.
 
@@ -21,13 +22,14 @@ case training
 
 ## See Also
 
-- [MLPhase.initialized](mlphase/initialized.md)
+### Retrieving session phases
+- [MLPhase.initialized](./initialized.md)
   The training session is in the initial idle state before extracting features and training.
-- [MLPhase.extractingFeatures](mlphase/extractingfeatures.md)
+- [MLPhase.extractingFeatures](./extractingfeatures.md)
   The training session is extracting features from the training dataset.
-- [MLPhase.evaluating](mlphase/evaluating.md)
+- [MLPhase.evaluating](./evaluating.md)
   The training session is evaluating the model it trained.
-- [MLPhase.inferencing](mlphase/inferencing.md)
+- [MLPhase.inferencing](./inferencing.md)
   The training session is using the model to make a prediction.
 
 

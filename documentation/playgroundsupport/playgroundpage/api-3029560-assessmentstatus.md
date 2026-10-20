@@ -1,7 +1,8 @@
 # assessmentStatus
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A value that indicates whether a learner has passed, failed, or not yet finished the task on a page.
 
@@ -17,7 +18,8 @@ var assessmentStatus: PlaygroundPage.AssessmentStatus? { get set }
 
 ## See Also
 
-- [enum PlaygroundPage.AssessmentStatus](playgroundpage/assessmentstatus.md)
+### Assessing Progress
+- [enum PlaygroundPage.AssessmentStatus](./assessmentstatus.md)
   The values you use to communicate whether a learner has passed, failed, or not yet finished the task on a page.
 
 

@@ -1,7 +1,8 @@
 # capturesAudio
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to capture audio.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether to capture audio.
 var capturesAudio: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL capturesAudio;
+```
+
 #### Discussion
 
-A stream doesn’t capture audio by default. Set this value to [`true`](https://developer.apple.com/documentation/swift/true) if you require audio capture.
+A stream doesn’t capture audio by default. Set this value to [`true`](../../Swift/true.md) if you require audio capture.
 
 ## See Also
 
-- [var sampleRate: Int](scstreamconfiguration/samplerate.md)
+### Configuring audio
+- [var sampleRate: Int](./samplerate.md)
   The sample rate for audio capture.
-- [var channelCount: Int](scstreamconfiguration/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   The number of audio channels to capture.
-- [var excludesCurrentProcessAudio: Bool](scstreamconfiguration/excludescurrentprocessaudio.md)
+- [var excludesCurrentProcessAudio: Bool](./excludescurrentprocessaudio.md)
   A Boolean value that indicates whether to exclude audio from your app during capture.
 
 

@@ -1,7 +1,8 @@
 # errSecDataNotModifiable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data is not modifiable.
 
@@ -18,6 +19,10 @@ The data is not modifiable.
 
 ```swift
 var errSecDataNotModifiable: OSStatus { get }
+```
+
+```c
+errSecDataNotModifiable
 ```
 
 

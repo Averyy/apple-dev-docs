@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.automaticDownsampling
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session reduced the image size because of memory constraints.
 
@@ -19,14 +20,15 @@ case automaticDownsampling
 
 #### Discussion
 
-If [`PhotogrammetrySession`](photogrammetrysession.md) encounters serious resource constraints during the object-creation process, it attempts to reduce memory usage by creating scaled-down copies of the sample images, and publishes this message.
+If [`PhotogrammetrySession`](../../photogrammetrysession.md) encounters serious resource constraints during the object-creation process, it attempts to reduce memory usage by creating scaled-down copies of the sample images, and publishes this message.
 
 ## See Also
 
-- [PhotogrammetrySession.Output.invalidSample(id:reason:)](photogrammetrysession/output/invalidsample(id:reason:).md)
+### Monitoring data ingestion
+- [PhotogrammetrySession.Output.invalidSample(id:reason:)](./invalidsample%28id,reason%29.md)
   A provided sample was invalid.
-- [PhotogrammetrySession.Output.skippedSample(id:)](photogrammetrysession/output/skippedsample(id:).md)
-  The type of element used for Object Capture updates. The [`PhotogrammetrySample`](photogrammetrysample.md) with the [`id`](photogrammetrysample/id.md) indicated was not able to be used for reconstruction.
+- [PhotogrammetrySession.Output.skippedSample(id:)](./skippedsample%28id%29.md)
+  The type of element used for Object Capture updates. The [`PhotogrammetrySample`](../../photogrammetrysample.md) with the [`id`](../../photogrammetrysample/id.md) indicated was not able to be used for reconstruction.
 
 
 ---

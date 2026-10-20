@@ -1,7 +1,8 @@
 # supplementaryHeader
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode where supplementary headers in the collection view tightly hug their content.
 

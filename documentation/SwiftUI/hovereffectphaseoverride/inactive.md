@@ -1,7 +1,8 @@
 # inactive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Immediately transition to the inactive phase.
 

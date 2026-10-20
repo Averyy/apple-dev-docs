@@ -1,7 +1,8 @@
 # withData
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Allocates an OSData object with a copy of bytes from a subset of another OSData.
 
@@ -11,11 +12,19 @@ Allocates an OSData object with a copy of bytes from a subset of another OSData.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static OSDataPtr withData(const OSData *inData, size_t start, size_t numBytes);
+```
+
+*macOS*
+
+```c
 static OSPtr<OSData> withData(const OSData *inData, unsigned int start, unsigned int numBytes);
 ```
 
-#### Return_value
+#### Return Value
 
 NULL on failure, otherwise the allocated OSData with reference count 1 to be released by the caller.
 
@@ -27,16 +36,17 @@ NULL on failure, otherwise the allocated OSData with reference count 1 to be rel
 
 ## See Also
 
-- [+ withBytes](../driverkit/osdata/withbytes.md)
+### Creating a Data Object
+- [+ withBytes](../../DriverKit/osdata/withbytes.md)
   Allocates an OSData object with a copy of bytes.
-- [+ withBytesNoCopy](../driverkit/osdata/withbytesnocopy.md)
+- [+ withBytesNoCopy](../../DriverKit/osdata/withbytesnocopy.md)
   Allocates an OSData object with a copy of bytes.
-- [+ withCapacity](osdata/3180885-withcapacity.md)
+- [+ withCapacity](./api-3180885-withcapacity.md)
   Allocates an OSData object with preallocated capacity.
-- [+ withData](osdata/3180886-withdata.md)
+- [+ withData](./api-3180886-withdata.md)
   Allocates an OSData object with a copy of bytes from another OSData.
-- [OSDataPtr](../driverkit/osdataptr.md)
-- [- free](osdata/3180878-free.md)
+- [OSDataPtr](../../DriverKit/osdataptr.md)
+- [- free](./api-3180878-free.md)
 
 
 ---

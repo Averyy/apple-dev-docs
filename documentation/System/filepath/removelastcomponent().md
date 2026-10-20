@@ -1,7 +1,8 @@
 # removeLastComponent()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 In-place mutating variant of `removingLastComponent`.
 

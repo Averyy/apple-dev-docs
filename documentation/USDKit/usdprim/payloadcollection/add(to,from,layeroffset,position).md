@@ -1,7 +1,8 @@
 # add(to:from:layerOffset:position:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an external payload arc.
 
@@ -21,7 +22,7 @@ func add(to primPath: USDLayer.Path?, from assetPath: String, layerOffset: USDLa
 
 #### Discussion
 
-> **Note**: An error if the payload cannot be added.
+> **Throws**: An error if the payload cannot be added.
 
 ## Parameters
 

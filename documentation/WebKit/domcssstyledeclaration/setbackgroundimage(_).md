@@ -1,7 +1,8 @@
 # setBackgroundImage(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBackgroundImage(_ backgroundImage: String!)
+```
+
+```objc
+- (void) setBackgroundImage:(NSString *) backgroundImage;
 ```
 
 

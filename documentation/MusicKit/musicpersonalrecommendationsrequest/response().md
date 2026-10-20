@@ -1,7 +1,8 @@
 # response()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the music recommendations based on the user’s library and listening history.
 

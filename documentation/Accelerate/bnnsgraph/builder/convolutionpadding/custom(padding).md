@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ConvolutionPadding.custom(padding:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Custom padding
 

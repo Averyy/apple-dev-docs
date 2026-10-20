@@ -1,7 +1,8 @@
 # toolbarItemImage
 
 **Framework**: Finder Sync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image for the extension’s toolbar button.
 
@@ -15,23 +16,28 @@ The image for the extension’s toolbar button.
 optional var toolbarItemImage: NSImage { get }
 ```
 
+```objc
+@property (copy, readonly) NSImage * toolbarItemImage;
+```
+
 #### Discussion
 
 To add a toolbar item to the Finder, override the getter method for the toolbar image, name, and tooltip properties.
 
 ## See Also
 
-- [func beginObservingDirectory(at: URL)](fifindersyncprotocol/beginobservingdirectory(at:).md)
+### Managing Badges, Shortcut Menus, and Toolbar Buttons
+- [func beginObservingDirectory(at: URL)](./beginobservingdirectory%28at%29.md)
   Tells the extension that the user is looking at a monitored directory or at one of its subdirectories.
-- [func endObservingDirectory(at: URL)](fifindersyncprotocol/endobservingdirectory(at:).md)
+- [func endObservingDirectory(at: URL)](./endobservingdirectory%28at%29.md)
   Tells the extension that the user has stopped looking at a monitored directory or at one of its subdirectories.
-- [func menu(for: FIMenuKind) -> NSMenu?](fifindersyncprotocol/menu(for:).md)
+- [func menu(for: FIMenuKind) -> NSMenu?](./menu%28for%29.md)
   Requests a custom menu from the extension.
-- [func requestBadgeIdentifier(for: URL)](fifindersyncprotocol/requestbadgeidentifier(for:).md)
+- [func requestBadgeIdentifier(for: URL)](./requestbadgeidentifier%28for%29.md)
   Requests a badge for the given file or directory.
-- [var toolbarItemName: String](fifindersyncprotocol/toolbaritemname.md)
+- [var toolbarItemName: String](./toolbaritemname.md)
   The name of the extension’s toolbar button.
-- [var toolbarItemToolTip: String](fifindersyncprotocol/toolbaritemtooltip.md)
+- [var toolbarItemToolTip: String](./toolbaritemtooltip.md)
   The tooltip text for the extension’s toolbar button.
 
 

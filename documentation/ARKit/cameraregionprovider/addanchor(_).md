@@ -1,7 +1,8 @@
 # addAnchor(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a camera region anchor.
 
@@ -16,7 +17,7 @@ final func addAnchor(_ anchor: CameraRegionAnchor) async throws
 
 #### Discussion
 
-> **Note**: `CameraRegionProvider.Error`
+> **Throws**: `CameraRegionProvider.Error`
 
 > **Note**: This could fail if the maximum anchors for the given camera enhancement has been reached.
 

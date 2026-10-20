@@ -1,7 +1,8 @@
 # +=(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Modifies a column slice by adding a value to each element.
 
@@ -27,13 +28,14 @@ static func += (lhs: inout ColumnSlice<WrappedElement>, rhs: WrappedElement) whe
 
 ## See Also
 
-- [static func -= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/-=(_:_:)-1n1gh.md)
+### Modifying a Column Slice with a Value
+- [static func -= (inout ColumnSlice<WrappedElement>, WrappedElement)](./minuseq%28_,_%29-1n1gh.md)
   Modifies a column slice by subtracting a value from each element.
-- [static func *= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/*=(_:_:)-i6qs.md)
+- [static func *= (inout ColumnSlice<WrappedElement>, WrappedElement)](./stareq%28_,_%29-i6qs.md)
   Modifies a column slice by multiplying each element by a value.
-- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/_=(_:_:)-8oi36.md)
+- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](./opeq%28_,_%29-8oi36.md)
   Modifies an integer column slice by dividing each element by a value.
-- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/_=(_:_:)-8pl3f.md)
+- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](./opeq%28_,_%29-8pl3f.md)
   Modifies a floating-point column slice by dividing each element by a value.
 
 

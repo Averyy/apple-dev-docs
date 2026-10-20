@@ -1,7 +1,8 @@
 # CrashDiagnostic.TerminationReason
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that describes the reason the app terminated.
 
@@ -20,7 +21,7 @@ struct TerminationReason
 
 #### Discussion
 
-`TerminationReason` is [`RawRepresentable`](https://developer.apple.com/documentation/swift/rawrepresentable) and [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible). Use `rawValue` to access the underlying string value, or rely on the [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible) conformance to print the termination reason or interpolate it into a string:
+`TerminationReason` is [`RawRepresentable`](../../Swift/rawrepresentable.md) and [`CustomStringConvertible`](../../Swift/customstringconvertible.md). Use `rawValue` to access the underlying string value, or rely on the [`CustomStringConvertible`](../../Swift/customstringconvertible.md) conformance to print the termination reason or interpolate it into a string:
 
 ```swift
 if let reason = diagnostic.terminationReason {
@@ -31,14 +32,14 @@ if let reason = diagnostic.terminationReason {
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

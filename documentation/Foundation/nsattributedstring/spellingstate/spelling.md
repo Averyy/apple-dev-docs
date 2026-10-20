@@ -1,7 +1,8 @@
 # NSAttributedString.SpellingState.spelling
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Flag for spelling issues.
 
@@ -16,7 +17,8 @@ case spelling
 
 ## See Also
 
-- [NSAttributedString.SpellingState.grammar](nsattributedstring/spellingstate/grammar.md)
+### Getting the spelling states
+- [NSAttributedString.SpellingState.grammar](./grammar.md)
   Flag for grammar issues.
 
 

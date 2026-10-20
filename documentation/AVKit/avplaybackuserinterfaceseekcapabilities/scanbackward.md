@@ -1,7 +1,8 @@
 # scanBackward
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The source supports backward scanning at accelerated rates for rewind operations. Enables rapid reverse progression through content at speeds greater than normal playback.
 
@@ -14,6 +15,10 @@ The source supports backward scanning at accelerated rates for rewind operations
 
 ```swift
 static var scanBackward: AVPlaybackUserInterfaceSeekCapabilities { get }
+```
+
+```c
+AVPlaybackUserInterfaceSeekCapabilitiesScanBackward
 ```
 
 

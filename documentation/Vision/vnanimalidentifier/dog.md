@@ -1,7 +1,8 @@
 # dog
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An animal identifier for dogs.
 
@@ -19,9 +20,14 @@ An animal identifier for dogs.
 static let dog: VNAnimalIdentifier
 ```
 
+```c
+extern VNAnimalIdentifier const VNAnimalIdentifierDog;
+```
+
 ## See Also
 
-- [static let cat: VNAnimalIdentifier](vnanimalidentifier/cat.md)
+### Animals
+- [static let cat: VNAnimalIdentifier](./cat.md)
   An animal identifier for cats.
 
 

@@ -1,7 +1,8 @@
 # numberOfTextRanges(on:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 func numberOfTextRanges(on page: PDFPage) -> Int
 ```
 
+```objc
+- (NSUInteger) numberOfTextRangesOnPage:(PDFPage *) page;
+```
+
 ## See Also
 
-- [func extendForLineBoundaries()](pdfselection/extendforlineboundaries.md)
-- [func range(at: Int, on: PDFPage) -> NSRange](pdfselection/range(at:on:).md)
+### Instance Methods
+- [func extendForLineBoundaries()](./extendforlineboundaries%28%29.md)
+- [func range(at: Int, on: PDFPage) -> NSRange](./range%28at,on%29.md)
 
 
 ---

@@ -1,20 +1,21 @@
 # Certificate.Relationships
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object Certificate.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object Certificate.Relationships.PassTypeId](certificate/relationships-data.dictionary/passtypeid-data.dictionary.md)
+- [object Certificate.Relationships.PassTypeId](./relationships-data.dictionary/passtypeid-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -23,7 +24,8 @@ object Certificate.Relationships
 
 ## See Also
 
-- [object Certificate.Attributes](certificate/attributes-data.dictionary.md)
+### Objects
+- [object Certificate.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Certificates resource.
 
 

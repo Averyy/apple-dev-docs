@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,6 +18,8 @@
 ```swift
 var kind: PredicateExpressions.KeyPath<Root, Output>.CommonKeyPathKind? { get }
 ```
+
+Available when `Root` conforms to `PredicateExpression`.
 
 
 ---

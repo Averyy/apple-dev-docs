@@ -1,7 +1,8 @@
 # GRU(_:recurrentWeight:inputWeight:bias:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a GRU operation and returns the value and optionally the training state tensor.
 
@@ -17,6 +18,10 @@ Creates a GRU operation and returns the value and optionally the training state 
 
 ```swift
 func GRU(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, inputWeight: MPSGraphTensor?, bias: MPSGraphTensor?, descriptor: MPSGraphGRUDescriptor, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) GRUWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias descriptor:(MPSGraphGRUDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value
@@ -48,7 +53,7 @@ If `flipZ = YES` then `h[t]` is replaced by
   h[t] = (1-z[t])h[t-1] + z[t]o[t].
 ```
 
-`W` is optional `inputWeight`, `R` is `recurrentWeight`, `b` is optional  `bias`, `m` is optional `mask`, `x[t]` is `source` `h[t]` is the first output, `z[t]` is the second output (optional) and `h[-1]` is `initState`. `b2` is an optional `resetBias` vector, only used when `resetAfter = YES`. See [`MPSGraphGRUDescriptor`](mpsgraphgrudescriptor.md) for different `activation` options for `f()`.
+`W` is optional `inputWeight`, `R` is `recurrentWeight`, `b` is optional  `bias`, `m` is optional `mask`, `x[t]` is `source` `h[t]` is the first output, `z[t]` is the second output (optional) and `h[-1]` is `initState`. `b2` is an optional `resetBias` vector, only used when `resetAfter = YES`. See [`MPSGraphGRUDescriptor`](../mpsgraphgrudescriptor.md) for different `activation` options for `f()`.
 
 ## Parameters
 

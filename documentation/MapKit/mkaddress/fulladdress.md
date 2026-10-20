@@ -1,7 +1,8 @@
 # fullAddress
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents a place’s full address
 
@@ -20,9 +21,14 @@ A string that represents a place’s full address
 var fullAddress: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * fullAddress;
+```
+
 ## See Also
 
-- [var shortAddress: String?](mkaddress/shortaddress.md)
+### Getting the full and short addresses
+- [var shortAddress: String?](./shortaddress.md)
   A  string that represents the short address of a location, such as it’s street address and city.
 
 

@@ -1,7 +1,8 @@
 # warpTransform
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The warp transform matrix to morph the floating image into the reference image.
 

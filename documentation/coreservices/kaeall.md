@@ -1,7 +1,8 @@
 # kAEAll
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies all the elements in the container.
 

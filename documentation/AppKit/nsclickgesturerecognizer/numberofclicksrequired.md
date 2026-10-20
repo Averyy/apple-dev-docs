@@ -1,7 +1,8 @@
 # numberOfClicksRequired
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of clicks required to match.
 
@@ -14,16 +15,21 @@ The number of clicks required to match.
 var numberOfClicksRequired: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfClicksRequired;
+```
+
 #### Discussion
 
 The value in this property should always be a positive integer. Negative integers or `0` cause this object to never recognize its gesture. The default value of this property is `1`.
 
 ## See Also
 
-- [var buttonMask: Int](nsclickgesturerecognizer/buttonmask.md)
+### Configuring the gesture
+- [var buttonMask: Int](./buttonmask.md)
   A bit mask of the button (or buttons) required to recognize this click.
-- [var numberOfTouchesRequired: Int](nsclickgesturerecognizer/numberoftouchesrequired.md)
-  The number of touches required in an [`NSTouchBar`](nstouchbar.md) object for the gesture recognizer to match.
+- [var numberOfTouchesRequired: Int](./numberoftouchesrequired.md)
+  The number of touches required in an [`NSTouchBar`](../nstouchbar.md) object for the gesture recognizer to match.
 
 
 ---

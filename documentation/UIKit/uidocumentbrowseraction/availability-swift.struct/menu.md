@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that appears in the Edit Menu when the user long presses a supported document.
 
@@ -17,9 +18,14 @@ An action that appears in the Edit Menu when the user long presses a supported d
 static var menu: UIDocumentBrowserAction.Availability { get }
 ```
 
+```c
+UIDocumentBrowserActionAvailabilityMenu
+```
+
 ## See Also
 
-- [static var navigationBar: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct/navigationbar.md)
+### Constants
+- [static var navigationBar: UIDocumentBrowserAction.Availability](./navigationbar.md)
   An action that appears in the navigation bar when the user puts the document browser in Select mode.
 
 

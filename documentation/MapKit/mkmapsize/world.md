@@ -1,7 +1,8 @@
 # world
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The width and height, in map points, of the world in a two-dimensional map projection.
 
@@ -18,6 +19,10 @@ The width and height, in map points, of the world in a two-dimensional map proje
 
 ```swift
 static let world: MKMapSize
+```
+
+```c
+extern const MKMapSize MKMapSizeWorld;
 ```
 
 

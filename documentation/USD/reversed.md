@@ -1,6 +1,7 @@
 # reversed
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A Boolean value that determines the clip playback direction.
 
@@ -16,17 +17,18 @@ uniform bool reversed = false
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [start](start.md)
+- [start](./start.md)
   The moment to begin an animation.
-- [duration](duration.md)
+- [duration](./duration.md)
   The amount of time that the objects face the camera.
-- [animationSpeed](animationspeed.md)
+- [animationSpeed](./animationspeed.md)
   A factor to apply to the animation speed.
-- [reverses](reverses.md)
+- [reverses](./reverses.md)
   A Boolean value that indicates whether the animation plays from beginning to end, then again from end to beginning.
 
 

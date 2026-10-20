@@ -1,7 +1,8 @@
 # errSecCSNoMainExecutable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The code has no main executable file.
 
@@ -13,6 +14,10 @@ The code has no main executable file.
 
 ```swift
 var errSecCSNoMainExecutable: OSStatus { get }
+```
+
+```c
+errSecCSNoMainExecutable
 ```
 
 

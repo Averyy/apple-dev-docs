@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone to use for creating the date.
 

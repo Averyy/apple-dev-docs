@@ -1,7 +1,8 @@
 # MeshBuffers.Rate
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines how elements in the buffer map to features of the mesh.
 
@@ -11,7 +12,7 @@ Defines how elements in the buffer map to features of the mesh.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,18 +23,18 @@ enum Rate
 ## Topics
 
 ### Enumeration Cases
-- [MeshBuffers.Rate.face](meshbuffers/rate/face.md)
+- [MeshBuffers.Rate.face](./rate/face.md)
   Buffer maps at the face rate.
-- [MeshBuffers.Rate.faceVarying](meshbuffers/rate/facevarying.md)
+- [MeshBuffers.Rate.faceVarying](./rate/facevarying.md)
   Buffer maps at the index rate.
-- [MeshBuffers.Rate.vertex](meshbuffers/rate/vertex.md)
+- [MeshBuffers.Rate.vertex](./rate/vertex.md)
   Buffer maps at the vertex rate.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

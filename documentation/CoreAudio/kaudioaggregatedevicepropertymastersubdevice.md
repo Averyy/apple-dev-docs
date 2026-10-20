@@ -1,13 +1,14 @@
 # kAudioAggregateDevicePropertyMasterSubDevice
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 15.0 (renamed: kAudioAggregateDevicePropertyMainSubDevice)
+- iPadOS 2.0+ - Deprecated in 15.0 (renamed: kAudioAggregateDevicePropertyMainSubDevice)
+- Mac Catalyst 13.1+ - Deprecated in 15.0 (renamed: kAudioAggregateDevicePropertyMainSubDevice)
+- macOS 10.0+ - Deprecated in 12.0 (renamed: kAudioAggregateDevicePropertyMainSubDevice)
 
 ## Declaration
 
@@ -15,12 +16,17 @@
 var kAudioAggregateDevicePropertyMasterSubDevice: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioAggregateDevicePropertyMasterSubDevice
+```
+
 ## See Also
 
-- [var kAudioAggregateDevicePropertyActiveSubDeviceList: AudioObjectPropertySelector](kaudioaggregatedevicepropertyactivesubdevicelist.md)
-- [var kAudioAggregateDevicePropertyComposition: AudioObjectPropertySelector](kaudioaggregatedevicepropertycomposition.md)
-- [var kAudioAggregateDevicePropertyFullSubDeviceList: AudioObjectPropertySelector](kaudioaggregatedevicepropertyfullsubdevicelist.md)
-- [var kAudioAggregateDevicePropertyClockDevice: AudioObjectPropertySelector](kaudioaggregatedevicepropertyclockdevice.md)
+### Constants
+- [var kAudioAggregateDevicePropertyActiveSubDeviceList: AudioObjectPropertySelector](./kaudioaggregatedevicepropertyactivesubdevicelist.md)
+- [var kAudioAggregateDevicePropertyComposition: AudioObjectPropertySelector](./kaudioaggregatedevicepropertycomposition.md)
+- [var kAudioAggregateDevicePropertyFullSubDeviceList: AudioObjectPropertySelector](./kaudioaggregatedevicepropertyfullsubdevicelist.md)
+- [var kAudioAggregateDevicePropertyClockDevice: AudioObjectPropertySelector](./kaudioaggregatedevicepropertyclockdevice.md)
 
 
 ---

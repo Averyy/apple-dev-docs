@@ -1,7 +1,8 @@
 # pointee
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Reads or updates the instance referenced by this pointer.
 

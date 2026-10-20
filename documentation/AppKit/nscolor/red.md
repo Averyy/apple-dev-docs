@@ -1,17 +1,22 @@
 # red
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a color object whose RGB value is `1.0`, `0.0`, `0.0` and whose alpha value is `1.0`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var red: NSColor { get }
+```
+
+```objc
+@property (class, strong, readonly) NSColor * redColor;
 ```
 
 #### Return Value
@@ -20,33 +25,35 @@ The `NSColor` object.
 
 ## See Also
 
-- [var redComponent: CGFloat](nscolor/redcomponent.md)
+### Related Documentation
+- [var redComponent: CGFloat](./redcomponent.md)
   The red component value of the color.
-- [class var black: NSColor](nscolor/black.md)
+### Fixed colors
+- [class var black: NSColor](./black.md)
   Returns a color object whose grayscale value is `0.0` and whose alpha value is `1.0`.
-- [class var blue: NSColor](nscolor/blue.md)
+- [class var blue: NSColor](./blue.md)
   Returns a color object whose RGB value is `0.0`, `0.0`, `1.0` and whose alpha value is `1.0`.
-- [class var brown: NSColor](nscolor/brown.md)
+- [class var brown: NSColor](./brown.md)
   Returns a color object whose RGB value is `0.6`, `0.4`, `0.2` and whose alpha value is `1.0`.
-- [class var cyan: NSColor](nscolor/cyan.md)
+- [class var cyan: NSColor](./cyan.md)
   Returns a color object whose RGB value is `0.0`, `1.0`, `1.0` and whose alpha value is `1.0`.
-- [class var darkGray: NSColor](nscolor/darkgray.md)
+- [class var darkGray: NSColor](./darkgray.md)
   Returns a color object whose grayscale value is `1/3` and whose alpha value is `1.0`.
-- [class var gray: NSColor](nscolor/gray.md)
+- [class var gray: NSColor](./gray.md)
   Returns a color object whose grayscale value is `0.5` and whose alpha value is `1.0`.
-- [class var green: NSColor](nscolor/green.md)
+- [class var green: NSColor](./green.md)
   Returns a color object whose RGB value is `0.0`, `1.0`, `0.0` and whose alpha value is `1.0`.
-- [class var lightGray: NSColor](nscolor/lightgray.md)
+- [class var lightGray: NSColor](./lightgray.md)
   Returns a color object whose grayscale value is `2/3` and whose alpha value is `1.0`.
-- [class var magenta: NSColor](nscolor/magenta.md)
+- [class var magenta: NSColor](./magenta.md)
   Returns a color object whose RGB value is `1.0`, `0.0`, `1.0` and whose alpha value is `1.0`.
-- [class var orange: NSColor](nscolor/orange.md)
+- [class var orange: NSColor](./orange.md)
   Returns a color object whose RGB value is `1.0`, `0.5`, `0.0` and whose alpha value is `1.0`.
-- [class var purple: NSColor](nscolor/purple.md)
+- [class var purple: NSColor](./purple.md)
   Returns a color object whose RGB value is `0.5`, `0.0`, `0.5` and whose alpha value is `1.0`.
-- [class var white: NSColor](nscolor/white.md)
+- [class var white: NSColor](./white.md)
   Returns a color object whose grayscale and alpha values are both `1.0`.
-- [class var yellow: NSColor](nscolor/yellow.md)
+- [class var yellow: NSColor](./yellow.md)
   Returns a color object whose RGB value is `1.0`, `1.0`, `0.0` and whose alpha value is `1.0`.
 
 

@@ -1,6 +1,7 @@
 # Building a searchable catalog for your marketplace app for inclusion in Spotlight
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Set up and build your alternative marketplace’s searchable index.
 
@@ -8,11 +9,11 @@ Set up and build your alternative marketplace’s searchable index.
 
 Apple builds an index of alternative marketplace apps in order to integrate them into Spotlight. You can set up a catalog of your applications so the Applebot web crawler discovers, indexes, and then shows your apps as Spotlight results on iOS. You must implement this interface to be part of search results in Spotlight.
 
-##### Understand Basic Requirements
+##### Understand basic requirements
 
-The application catalog-crawling mechanism is based on two standard industry practices: [`sitemaps`](https://developer.apple.comhttps://sitemaps.org) and semantic, [`structured data schemas`](https://developer.apple.comhttps://schema.org).
+The application catalog-crawling mechanism is based on two standard industry practices: [sitemaps](https://sitemaps.org) and semantic, [structured data schemas](https://schema.org).
 
-App developers for alternative marketplaces need to maintain a web presence, which means being reachable over the web, and use App Store Connect API to submit the URL of a root sitemap. To learn more see, [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md). Apple uses the root sitemap for further URL discovery and traverses subsequent sitemaps when a catalog is large enough to need fragmentation, or directly uses application URLs. Each application URL needs to return an HTML document enriched with structured data annotated in accordance with schema.org’s schemas, specifically the `MobileApplication` type. Apple defines which fields must be populated using a mixture of standard fields and additional proprietary properties specified using the `supportingData` field, which is described below.
+App developers for alternative marketplaces need to maintain a web presence, which means being reachable over the web, and use App Store Connect API to submit the URL of a root sitemap. To learn more see, [`Add a marketplace search detail url`](./post-v1-marketplacesearchdetails.md). Apple uses the root sitemap for further URL discovery and traverses subsequent sitemaps when a catalog is large enough to need fragmentation, or directly uses application URLs. Each application URL needs to return an HTML document enriched with structured data annotated in accordance with schema.org’s schemas, specifically the `MobileApplication` type. Apple defines which fields must be populated using a mixture of standard fields and additional proprietary properties specified using the `supportingData` field, which is described below.
 
 Here’s an example catalog with two applications – an app called Backyard Birds, and another called Camping App:
 
@@ -34,7 +35,7 @@ The following items are required for the alternative marketplace:
 
 > **Note**:  Apple infers the hostname from the root sitemap URL you configure by using `POST-v1-marketplaceDomains`.
 
-The marketplace submits the sitemap URL to App Store Connect with [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md).
+The marketplace submits the sitemap URL to App Store Connect with [`Add a marketplace search detail url`](./post-v1-marketplacesearchdetails.md).
 
 The sitemap is the root file where Applebot start its crawl and then it proceeds to the application URLs.
 
@@ -60,9 +61,9 @@ curl -X GET https://example.com/apps/sitemap.xml
 </urlset> 
 ```
 
-The [`Applebot`](https://developer.apple.comhttps://support.apple.com/en-us/HT204683) web crawler fetches the list of URLs present in the sitemap and crawls them all. Each URL needs to point to an HTML document that contains structured data schemas that include essential information about the content using the [`JSON-LD format.`](https://developer.apple.comhttps://json-ld.org)
+The [Applebot](https://support.apple.com/en-us/HT204683) web crawler fetches the list of URLs present in the sitemap and crawls them all. Each URL needs to point to an HTML document that contains structured data schemas that include essential information about the content using the [JSON-LD format.](https://json-ld.org)
 
-> **Note**:  If you have catalog discovery issues contact [`applebot@apple.com`](https://developer.apple.commailto://applebot@apple.com) for assistance.
+> **Note**:  If you have catalog discovery issues contact [applebot@apple.com](mailto://applebot@apple.com) for assistance.
 
 Here’s an example markup:
 
@@ -194,26 +195,26 @@ curl -X GET https://example.com/apps/catalog/backyard-birds.html
 </html>
 ```
 
-##### Include Mandatory Fields
+##### Include mandatory fields
 
-These fields are the exact and only fields that are mandatory for `MobileApplication`. For more information see [`supportingData`](https://developer.apple.comhttps://schema.org/supportingData).
+These fields are the exact and only fields that are mandatory for `MobileApplication`. For more information see [supportingData](https://schema.org/supportingData).
 
 | Field name | Name in code | Type | Note |
 | --- | --- | --- | --- |
 | App Apple ID | `com.apple.alternativeDistribution.search.appleItemId` | `string` | You can find this value in the alternative distribution package’s manifest.json under the key `appleItemId.` |
 | Apple Version ID | `com.apple.alternativeDistribution.search.appleVersionId` | `string` | You can find this value in the alternative distribution package’s manifest.json under the key `appleVersionId`. |
-| Date published | `datePublished` | `string` ![None](/images/com.apple.appstoreconnectapi/spacer.png) following the [`ISO 8601`](https://developer.apple.comhttps://www.iso.org/iso-8601-date-and-time-format.html) standard, in the format `YYYY-MM-DDThh:mm:ssZ` | The UTC timestamp at which time the app version published on the marketplace. |
+| Date published | `datePublished` | `string` ![](https://developer.apple.com/tutorials/images/com.apple.appstoreconnectapi/spacer.png) following the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard, in the format `YYYY-MM-DDThh:mm:ssZ` | The UTC timestamp at which time the app version published on the marketplace. |
 
 > **Note**:  For each version of your app, provide all the fields contained in `supportingData` in a single instance of `supportingData` that wraps all of them.
 
-##### Consider Optional Fields
+##### Consider optional fields
 
-Optionally, every instance *may* define additional ranking signals to facilitate surfacing the best results. These signals use [`structured data schemas`](https://developer.apple.comhttps://schema.org)’s `aggregateRating`, which is an app-rating value, together with the total review count and the rating range. The widest supported rating range is from 0 to 100. When using `aggregateRating`, all four properties are mandatory. For more information see [`aggregateRating`](https://developer.apple.comhttps://schema.org/aggregateRating).
+Optionally, every instance *may* define additional ranking signals to facilitate surfacing the best results. These signals use [schema.org](https://schema.org)’s `aggregateRating`, which is an app-rating value, together with the total review count and the rating range. The widest supported rating range is from 0 to 100. When using `aggregateRating`, all four properties are mandatory. For more information see [aggregateRating](https://schema.org/aggregateRating).
 
 | Property name | Name in code | Type | Note |
 | --- | --- | --- | --- |
 | Aggregate rating | `aggregateRating` | `object` | This object is not in `supportingData` object. All four fields are mandatory. For more information, see the next table. |
-| Country supported | `countriesSupported` | `array` ![None](/images/com.apple.appstoreconnectapi/spacer.png) 2-letter country codes as defined per [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search/code/) | You can use this array to filter the availability of apps per country for Spotlight. |
+| Country supported | `countriesSupported` | `array` ![](https://developer.apple.com/tutorials/images/com.apple.appstoreconnectapi/spacer.png) 2-letter country codes as defined per [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) | You can use this array to filter the availability of apps per country for Spotlight. |
 | Popularity | `com.apple.alternativeDistribution.search.ranking.popularity` | `float, 0` to `100` | A higher number means a more popular app, that gives a notion of popularity in an alternative marketplace by comparing apps within a specific marketplace. |
 
 This table shows details for the `AggregateRating` properties:
@@ -240,11 +241,11 @@ This example shows the `popularity` property as part of the `supportingData` cod
 }
 ```
 
-##### Understand Supported Countries
+##### Understand supported countries
 
-Searchabilty for apps distributed on alternative marketplaces has two approaches: Applebot web crawler uses `countriesSupported`, while [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit) uses `searchTerritory`.
+Searchabilty for apps distributed on alternative marketplaces has two approaches: Applebot web crawler uses `countriesSupported`, while [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md) uses `searchTerritory`.
 
-`countriesSupported` is an array that contains a list of 2-letter country codes as defined by [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search). Use these codes to filter the availability of an app per country for search. You’re responsible for setting an optional territory as necessary inside your marketplace app. To learn more about territory support, see the MarketplaceKit property `searchTerritory`.
+`countriesSupported` is an array that contains a list of 2-letter country codes as defined by [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search). Use these codes to filter the availability of an app per country for search. You’re responsible for setting an optional territory as necessary inside your marketplace app. To learn more about territory support, see the MarketplaceKit property `searchTerritory`.
 
 When someone searchs inside Lookup, Safari, or Spotlight, the request context contains the territory, which you set through the `setSearchTerritory` instance method on `AppLibrary`.
 
@@ -258,14 +259,15 @@ For this example, the user searches for outdoor apps. There are three apps that 
 
 ## See Also
 
-- [Add a marketplace search detail url](post-v1-marketplacesearchdetails.md)
+### Managing search URLs
+- [Add a marketplace search detail url](./post-v1-marketplacesearchdetails.md)
   Add a search detail URL for the alternative marketplace.
-- [Read the marketplace search detail url](get-v1-apps-_id_-marketplacesearchdetail.md)
+- [Read the marketplace search detail url](./get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
-- [Get the marketplace search detail ID for an app](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
-- [Modify a marketplace search detail url](patch-v1-marketplacesearchdetails-_id_.md)
+- [Get the marketplace search detail ID for an app](./get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
+- [Modify a marketplace search detail url](./patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
-- [Delete a marketplace search detail url](delete-v1-marketplacesearchdetails-_id_.md)
+- [Delete a marketplace search detail url](./delete-v1-marketplacesearchdetails-_id_.md)
   Delete search detail URL for the alternative marketplace.
 
 

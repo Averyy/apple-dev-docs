@@ -1,17 +1,22 @@
 # NSTableView.ColumnAutoresizingStyle.firstColumnOnlyAutoresizingStyle
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Autoresize only the first table column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case firstColumnOnlyAutoresizingStyle
+```
+
+```c
+NSTableViewFirstColumnOnlyAutoresizingStyle
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ When that table column can no longer be resized, stop autoresizing.  Normally yo
 
 ## See Also
 
-- [NSTableView.ColumnAutoresizingStyle.noColumnAutoresizing](nstableview/columnautoresizingstyle-swift.enum/nocolumnautoresizing.md)
+### Constants
+- [NSTableView.ColumnAutoresizingStyle.noColumnAutoresizing](./nocolumnautoresizing.md)
   Disable table column autoresizing.
-- [NSTableView.ColumnAutoresizingStyle.uniformColumnAutoresizingStyle](nstableview/columnautoresizingstyle-swift.enum/uniformcolumnautoresizingstyle.md)
+- [NSTableView.ColumnAutoresizingStyle.uniformColumnAutoresizingStyle](./uniformcolumnautoresizingstyle.md)
   Autoresize all columns by distributing space equally, simultaneously.
-- [NSTableView.ColumnAutoresizingStyle.sequentialColumnAutoresizingStyle](nstableview/columnautoresizingstyle-swift.enum/sequentialcolumnautoresizingstyle.md)
+- [NSTableView.ColumnAutoresizingStyle.sequentialColumnAutoresizingStyle](./sequentialcolumnautoresizingstyle.md)
   Autoresize each table column sequentially, from the last auto-resizable column to the first auto-resizable column; proceed to the next column when the current column has reached its minimum or maximum size.
-- [NSTableView.ColumnAutoresizingStyle.reverseSequentialColumnAutoresizingStyle](nstableview/columnautoresizingstyle-swift.enum/reversesequentialcolumnautoresizingstyle.md)
+- [NSTableView.ColumnAutoresizingStyle.reverseSequentialColumnAutoresizingStyle](./reversesequentialcolumnautoresizingstyle.md)
   Autoresize each table column sequentially, from the first auto-resizable column to the last auto-resizable column; proceed to the next column when the current column has reached its minimum or maximum size.
-- [NSTableView.ColumnAutoresizingStyle.lastColumnOnlyAutoresizingStyle](nstableview/columnautoresizingstyle-swift.enum/lastcolumnonlyautoresizingstyle.md)
+- [NSTableView.ColumnAutoresizingStyle.lastColumnOnlyAutoresizingStyle](./lastcolumnonlyautoresizingstyle.md)
   Autoresize only the last table column.
 
 

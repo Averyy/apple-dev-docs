@@ -1,7 +1,8 @@
 # UITextView.BorderStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of border around the text view.
 
@@ -18,42 +19,47 @@ The type of border around the text view.
 enum BorderStyle
 ```
 
+```c
+enum UITextViewBorderStyle : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UITextView.BorderStyle.none](uitextview/borderstyle-swift.enum/none.md)
+- [UITextView.BorderStyle.none](./borderstyle-swift.enum/none.md)
   The text view does not display a border.
-- [UITextView.BorderStyle.roundedRect](uitextview/borderstyle-swift.enum/roundedrect.md)
+- [UITextView.BorderStyle.roundedRect](./borderstyle-swift.enum/roundedrect.md)
   Displays a rounded-style border for the text view.
 ### Initializers
-- [init?(rawValue: Int)](uitextview/borderstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./borderstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var font: UIFont?](uitextview/font.md)
+### Configuring appearance attributes
+- [var font: UIFont?](./font.md)
   The font of the text.
-- [var textColor: UIColor?](uitextview/textcolor.md)
+- [var textColor: UIColor?](./textcolor.md)
   The color of the text.
-- [var textAlignment: NSTextAlignment](uitextview/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The technique for aligning the text.
-- [var typingAttributes: [NSAttributedString.Key : Any]](uitextview/typingattributes.md)
+- [var typingAttributes: [NSAttributedString.Key : Any]](./typingattributes.md)
   The attributes to apply to new text that the user enters.
-- [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
+- [var linkTextAttributes: [NSAttributedString.Key : Any]!](./linktextattributes.md)
   The attributes to apply to links.
-- [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+- [var borderStyle: UITextView.BorderStyle](./borderstyle-swift.property.md)
   The border style for the text field.
-- [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
-- [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
+- [var textHighlightAttributes: [NSAttributedString.Key : Any]!](./texthighlightattributes.md)
+- [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](./drawtexthighlightbackground%28for,origin%29.md)
 
 
 ---

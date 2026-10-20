@@ -1,7 +1,8 @@
 # inhibitPolicyMappingPresent
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var inhibitPolicyMappingPresent: Bool
+```
+
+```c
+bool inhibitPolicyMappingPresent;
 ```
 
 

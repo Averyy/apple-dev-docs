@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A behavior that doesn’t match any scenes to the activity.
 
@@ -21,7 +22,7 @@ static let none: SceneAssociationBehavior
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 
@@ -29,9 +30,10 @@ Choose this option when you don’t want the system to associate one of your sce
 
 ## See Also
 
-- [static let `default`: SceneAssociationBehavior](sceneassociationbehavior/default.md)
+### Getting the scene-association options
+- [static let `default`: SceneAssociationBehavior](./default.md)
   A behavior that matches the activity to a scene using the identifier of your activity object.
-- [static func content(String) -> SceneAssociationBehavior](sceneassociationbehavior/content(_:).md)
+- [static func content(String) -> SceneAssociationBehavior](./content%28_%29.md)
   A behavior that matches the activity to a scene using a custom string that you supply.
 
 

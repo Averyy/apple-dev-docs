@@ -1,6 +1,7 @@
 # Predicting which mips the GPU samples with level-of-detail queries
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Determine in advance which mipmap levels the GPU requires to sample a texture.
 
@@ -10,12 +11,12 @@ When you sample a texture, the GPU automatically chooses which mipmaps to access
 
 Sometimes, you want to know which mipmaps the GPU would read from. For example, if only some of your mipmaps have data, you might use a clamp operation to limit the range of mipmaps the GPU can sample from, but want to know when the GPU requires sampling higher mipmaps. Metal Shading Language provides texture functions that you can use to determine which mipmaps your shader would access if it were to sample the texture.
 
-##### Check for Level of Detail Support
+##### Check for level-of-detail support
 
 Before loading any shaders that use LOD queries, make sure the GPU supports them by checking if it supports one of the following:
 
-- The [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) feature set.
-- The [`MTLGPUFamily.apple7`](mtlgpufamily/apple7.md) feature set.
+- The [`MTLGPUFamily.mac2`](./mtlgpufamily/mac2.md) feature set.
+- The [`MTLGPUFamily.apple7`](./mtlgpufamily/apple7.md) feature set.
 
 **Swift**:
 
@@ -33,7 +34,7 @@ Boolean appleFamily7Support = [device supportsFamily: MTLGPUFamilyApple7];
 Boolean supportsCalculateLevelOfDetail = macFamily2Support || appleFamily7Support;
 ```
 
-##### Determine Level of Detail
+##### Determine level of detail
 
 In your shader, the functions that return LOD information have signatures that are similar to those of functions used to sample textures. There are two kinds of these functions: clamped and unclamped. The clamped kind restricts LOD selection by applying the sampler’s range of permitted values, the range of mipmaps provided in the texture, and the sampler’s anisotropy settings. The unclamped kind returns the raw calculation.
 
@@ -44,25 +45,26 @@ float unclampedLOD = texture.calculate_unclamped_lod(mySampler, coords);
 
 A fractional part in a returned value indicates that the value is between two mipmaps. The fractional part of the number is the blending weight between the two mipmaps if you’ve specified linear mipmap blending.
 
-##### Determine Level of Detail When Shader Support Is Unavailable
+##### Determine level of detail when shader support is unavailable
 
-Alternatively, you can get the LOD by performing the calculation yourself, based on the size of the model object and its distance from the camera. For an example of this technique, see [`Using function specialization to build pipeline variants`](using-function-specialization-to-build-pipeline-variants.md).
+Alternatively, you can get the LOD by performing the calculation yourself, based on the size of the model object and its distance from the camera. For an example of this technique, see [Using function specialization to build pipeline variants](./using-function-specialization-to-build-pipeline-variants.md).
 
 ## See Also
 
-- [Improving texture sampling quality and performance with mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
+### Texture mipmapping
+- [Improving texture sampling quality and performance with mipmaps](./improving-texture-sampling-quality-and-performance-with-mipmaps.md)
   Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
-- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
+- [Creating a mipmapped texture](./creating-a-mipmapped-texture.md)
   Decide whether a texture that you’re creating needs mipmaps.
-- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](./copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Generating mipmap data](generating-mipmap-data.md)
+- [Generating mipmap data](./generating-mipmap-data.md)
   Create your mipmaps either when you author content or at runtime.
-- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](./adding-mipmap-filtering-to-samplers.md)
   Specify how the GPU samples mipmaps in your textures.
-- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](./restricting-access-to-specific-mipmaps.md)
   Set the range of mipmap levels that a sampler can access.
-- [Dynamically adjusting texture level of detail](dynamically-adjusting-texture-level-of-detail.md)
+- [Dynamically adjusting texture level of detail](./dynamically-adjusting-texture-level-of-detail.md)
   Defer generating or loading larger mipmaps until that level of detail is needed.
 
 

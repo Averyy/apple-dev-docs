@@ -1,7 +1,8 @@
 # musicEQSettings
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var musicEQSettings: SRAcousticSettings.MusicEQ { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) SRAcousticSettingsMusicEQ * musicEQSettings;
 ```
 
 #### Discussion

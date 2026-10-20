@@ -1,7 +1,8 @@
 # accented
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system divides the widget’s view hierarchy into an accent group and a default group, applying a different color to each group.
 
@@ -21,11 +22,11 @@ static let accented: WidgetRenderingMode
 
 ## Mentions
 
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+- [Developing a WidgetKit strategy](../developing-a-widgetkit-strategy.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](../optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
+- [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
 #### Discussion
 
@@ -33,7 +34,7 @@ In watchOS, the system displays accented widget-based complications on many watc
 
 When applying the colors, the system treats the widget’s views as if they were template images. It replaces the view’s color — rendering the new colors while preserving the view’s alpha channel.
 
-To control your view’s appearance, add the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/swiftui/view/widgetaccentable(_:)) modifier to part of your view’s hierarchy. The system adds that view and all of its subviews to the accent group. It puts all other views in the default group.
+To control your view’s appearance, add the [`widgetAccentable(_:)`](../../SwiftUI/view/widgetaccentable%28_%29.md) modifier to part of your view’s hierarchy. The system adds that view and all of its subviews to the accent group. It puts all other views in the default group.
 
 ```swift
 var body: some View {
@@ -50,9 +51,10 @@ var body: some View {
 
 ## See Also
 
-- [static let fullColor: WidgetRenderingMode](widgetrenderingmode/fullcolor.md)
+### Rendering modes
+- [static let fullColor: WidgetRenderingMode](./fullcolor.md)
   The system renders the widget in full color.
-- [static let vibrant: WidgetRenderingMode](widgetrenderingmode/vibrant.md)
+- [static let vibrant: WidgetRenderingMode](./vibrant.md)
   The system desaturates the widget, making a monochrome version that it uses to create an adaptive, vibrant effect.
 
 

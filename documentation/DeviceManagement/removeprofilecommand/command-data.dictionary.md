@@ -1,7 +1,8 @@
 # RemoveProfileCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove a previously installed profile from the device.
 
@@ -16,7 +17,7 @@ The command to remove a previously installed profile from the device.
 
 ## Declaration
 
-```swift
+```
 object RemoveProfileCommand.Command
 ```
 
@@ -24,7 +25,11 @@ object RemoveProfileCommand.Command
 
 - `Identifier` (string) *(required)*: The identifier of the profile to remove.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RemoveProfile`
 
 
 ---

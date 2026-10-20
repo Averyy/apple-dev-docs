@@ -1,7 +1,8 @@
 # fetchAvailableRoomTypes(completionHandler:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an array of room types where events take place.
 
@@ -16,12 +17,20 @@ Provides an array of room types where events take place.
 ## Declaration
 
 ```swift
+func fetchAvailableRoomTypes(completionHandler: @escaping @Sendable ([EKVirtualConferenceRoomTypeDescriptor]?, (any Error)?) -> Void)
+```
+
+```swift
 func fetchAvailableRoomTypes() async throws -> [EKVirtualConferenceRoomTypeDescriptor]
+```
+
+```objc
+- (void) fetchAvailableRoomTypesWithCompletionHandler:(void (^)(NSArray<EKVirtualConferenceRoomTypeDescriptor *> *, NSError *)) completionHandler;
 ```
 
 #### Discussion
 
-Your virtual conference provider implements this method to provide the list of rooms where users schedule events using your service. Create an instance of [`EKVirtualConferenceRoomTypeDescriptor`](ekvirtualconferenceroomtypedescriptor.md) for each room that’s available for users to schedule events in.
+Your virtual conference provider implements this method to provide the list of rooms where users schedule events using your service. Create an instance of [`EKVirtualConferenceRoomTypeDescriptor`](../ekvirtualconferenceroomtypedescriptor.md) for each room that’s available for users to schedule events in.
 
 ```swift
 override func fetchAvailableRoomTypes(completionHandler: @escaping ([EKVirtualConferenceRoomTypeDescriptor]?, Error?) -> Void) {
@@ -45,7 +54,7 @@ override func fetchAvailableRoomTypes(completionHandler: @escaping ([EKVirtualCo
 
 If your virtual conference provider is unable to provide any room types, call the completion handler with `nil` for the array and an error that describes why rooms aren’t available.
 
-Users choose one of the room type descriptors when adding an event to their calendar. To complete the process of adding the event, EventKit calls [`fetchVirtualConference(identifier:completionHandler:)`](ekvirtualconferenceprovider/fetchvirtualconference(identifier:completionhandler:).md) and passes the room type descriptor that the user selects.
+Users choose one of the room type descriptors when adding an event to their calendar. To complete the process of adding the event, EventKit calls [`fetchVirtualConference(identifier:completionHandler:)`](./fetchvirtualconference%28identifier,completionhandler%29.md) and passes the room type descriptor that the user selects.
 
 ## Parameters
 

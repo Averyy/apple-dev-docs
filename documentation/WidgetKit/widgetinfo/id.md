@@ -1,7 +1,8 @@
 # id
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stable identity of the widget.
 

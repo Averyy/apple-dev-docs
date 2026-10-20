@@ -1,7 +1,8 @@
 # start(totalCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instantiates a ProgressManager which is a child to the parent from which `self` is returned.
 

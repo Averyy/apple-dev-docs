@@ -1,7 +1,8 @@
 # MTRThermostatClusterSetWeeklyScheduleParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,28 +19,32 @@
 class MTRThermostatClusterSetWeeklyScheduleParams
 ```
 
+```objc
+@interface MTRThermostatClusterSetWeeklyScheduleParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var dayOfWeekForSequence: NSNumber](mtrthermostatclustersetweeklyscheduleparams/dayofweekforsequence.md)
-- [var modeForSequence: NSNumber](mtrthermostatclustersetweeklyscheduleparams/modeforsequence.md)
-- [var numberOfTransitionsForSequence: NSNumber](mtrthermostatclustersetweeklyscheduleparams/numberoftransitionsforsequence.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrthermostatclustersetweeklyscheduleparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrthermostatclustersetweeklyscheduleparams/timedinvoketimeoutms.md)
-- [var transitions: [Any]](mtrthermostatclustersetweeklyscheduleparams/transitions.md)
+- [var dayOfWeekForSequence: NSNumber](./mtrthermostatclustersetweeklyscheduleparams/dayofweekforsequence.md)
+- [var modeForSequence: NSNumber](./mtrthermostatclustersetweeklyscheduleparams/modeforsequence.md)
+- [var numberOfTransitionsForSequence: NSNumber](./mtrthermostatclustersetweeklyscheduleparams/numberoftransitionsforsequence.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrthermostatclustersetweeklyscheduleparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrthermostatclustersetweeklyscheduleparams/timedinvoketimeoutms.md)
+- [var transitions: [Any]](./mtrthermostatclustersetweeklyscheduleparams/transitions.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

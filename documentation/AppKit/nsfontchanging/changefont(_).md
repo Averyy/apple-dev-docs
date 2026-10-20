@@ -1,10 +1,11 @@
 # changeFont(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 optional func changeFont(_ sender: NSFontManager?)
 ```
 
+```objc
+- (void) changeFont:(NSFontManager *) sender;
+```
+
 ## See Also
 
-- [func validModesForFontPanel(NSFontPanel) -> NSFontPanel.ModeMask](nsfontchanging/validmodesforfontpanel(_:).md)
+### Instance Methods
+- [func validModesForFontPanel(NSFontPanel) -> NSFontPanel.ModeMask](./validmodesforfontpanel%28_%29.md)
 
 
 ---

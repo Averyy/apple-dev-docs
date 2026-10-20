@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-facing name of the variant.
 

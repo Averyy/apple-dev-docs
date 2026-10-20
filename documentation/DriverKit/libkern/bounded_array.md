@@ -1,38 +1,39 @@
 # bounded_array
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, size_t N, typename TrappingPolicy> struct bounded_array;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [data_](libkern/bounded_array/data_.md)
+- [data_](./bounded_array/data_.md)
 ### Instance Methods
-- [begin](libkern/bounded_array/begin-29xl0.md)
-- [begin](libkern/bounded_array/begin-8i9bj.md)
-- [data](libkern/bounded_array/data-6lz82.md)
-- [data](libkern/bounded_array/data-71k3b.md)
-- [end](libkern/bounded_array/end-158ro.md)
-- [end](libkern/bounded_array/end-7sa6w.md)
-- [length](libkern/bounded_array/length.md)
-- [operator[]](libkern/bounded_array/operator__-1p57n.md)
-- [operator[]](libkern/bounded_array/operator__-595gh.md)
-- [size](libkern/bounded_array/size.md)
+- [begin](./bounded_array/begin-29xl0.md)
+- [begin](./bounded_array/begin-8i9bj.md)
+- [data](./bounded_array/data-6lz82.md)
+- [data](./bounded_array/data-71k3b.md)
+- [end](./bounded_array/end-158ro.md)
+- [end](./bounded_array/end-7sa6w.md)
+- [length](./bounded_array/length.md)
+- [operator[]](./bounded_array/operator__-1p57n.md)
+- [operator[]](./bounded_array/operator__-595gh.md)
+- [size](./bounded_array/size.md)
 ### Type Aliases
-- [const_iterator](libkern/bounded_array/const_iterator.md)
-- [iterator](libkern/bounded_array/iterator.md)
+- [const_iterator](./bounded_array/const_iterator.md)
+- [iterator](./bounded_array/iterator.md)
 
 
 ---

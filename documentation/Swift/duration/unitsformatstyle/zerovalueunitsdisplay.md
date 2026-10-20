@@ -1,7 +1,8 @@
 # zeroValueUnitsDisplay
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy for how zero-value units are handled.
 
@@ -22,7 +23,8 @@ var zeroValueUnitsDisplay: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrate
 
 ## See Also
 
-- [Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy](duration/unitsformatstyle/zerovalueunitsdisplaystrategy.md)
+### Working with zero values
+- [Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy](./zerovalueunitsdisplaystrategy.md)
   A strategy that determines how to format a unit whose value is zero.
 
 

@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the concatenation of two poses.
 
@@ -11,7 +12,7 @@ Returns the concatenation of two poses.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,8 @@ static func * (lhs: Pose3D, rhs: Pose3D) -> Pose3D
 
 ## See Also
 
-- [static func *= (inout Pose3D, Pose3D)](pose3d/*=(_:_:).md)
+### Applying arithmetic operations
+- [static func *= (inout Pose3D, Pose3D)](./stareq%28_,_%29.md)
   Concatenates two poses and stores the result in the left-hand-side variable.
 
 

@@ -1,7 +1,8 @@
 # ClearActivationLockBypassCodeCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to clear the Activation Lock bypass code on a device.
 
@@ -14,14 +15,18 @@ The command to clear the Activation Lock bypass code on a device.
 
 ## Declaration
 
-```swift
+```
 object ClearActivationLockBypassCodeCommand.Command
 ```
 
 ## Properties
 
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `ClearActivationLockBypassCode`
 
 
 ---

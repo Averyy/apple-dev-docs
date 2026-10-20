@@ -1,7 +1,8 @@
 # size
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image that you want to create.
 
@@ -16,8 +17,28 @@ The size of the image that you want to create.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var size: CGSize { get set }
+```
+
+*macOS*
+
 ```swift
 var size: NSSize { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign) CGSize size;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, assign) NSSize size;
 ```
 
 #### Discussion
@@ -26,11 +47,12 @@ The default value of this property is 256 by 256 points.
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](mkmapsnapshotter/options/traitcollection.md)
+### Configuring the image output
+- [var traitCollection: UITraitCollection](./traitcollection.md)
   Traits that determine the appearance of the map snapshot.
-- [var appearance: NSAppearance?](mkmapsnapshotter/options/appearance.md)
+- [var appearance: NSAppearance?](./appearance.md)
   The visual style (light or dark) to apply to the map when rendering the snapshot image.
-- [var scale: CGFloat](mkmapsnapshotter/options/scale.md)
+- [var scale: CGFloat](./scale.md)
   The scale factor to use when creating the image.
 
 

@@ -1,18 +1,19 @@
 # SparseIterativeConverged
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A status that indicates the convergence of all solutions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ A status that indicates the convergence of all solutions.
 var SparseIterativeConverged: SparseIterativeStatus_t { get }
 ```
 
+```c
+SparseIterativeConverged
+```
+
 ## Mentions
 
-- [Solving systems using iterative methods](solving-systems-using-iterative-methods.md)
+- [Solving systems using iterative methods](./solving-systems-using-iterative-methods.md)
 
 ## See Also
 
-- [var SparseIterativeIllConditioned: SparseIterativeStatus_t](sparseiterativeillconditioned.md)
+### Constants
+- [var SparseIterativeIllConditioned: SparseIterativeStatus_t](./sparseiterativeillconditioned.md)
   A status that indicates the operation determines the problem is sufficiently ill-conditioned that convergence is unlikely.
-- [var SparseIterativeInternalError: SparseIterativeStatus_t](sparseiterativeinternalerror.md)
+- [var SparseIterativeInternalError: SparseIterativeStatus_t](./sparseiterativeinternalerror.md)
   A status that indicates an internal failure.
-- [var SparseIterativeMaxIterations: SparseIterativeStatus_t](sparseiterativemaxiterations.md)
+- [var SparseIterativeMaxIterations: SparseIterativeStatus_t](./sparseiterativemaxiterations.md)
   A status that indicates a failure to converge one or more solutions in the maximum number of iterations.
-- [var SparseIterativeParameterError: SparseIterativeStatus_t](sparseiterativeparametererror.md)
+- [var SparseIterativeParameterError: SparseIterativeStatus_t](./sparseiterativeparametererror.md)
   A status that indicates an error with one or more parameters.
 
 

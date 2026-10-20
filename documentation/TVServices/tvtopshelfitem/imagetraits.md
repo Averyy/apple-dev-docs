@@ -1,7 +1,8 @@
 # TVTopShelfItem.ImageTraits
 
 **Framework**: TV Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants describing the image format.
 
@@ -14,33 +15,38 @@ Constants describing the image format.
 struct ImageTraits
 ```
 
+```c
+enum TVTopShelfItemImageTraits : NSUInteger;
+```
+
 ## Topics
 
 ### Image Traits
-- [static var screenScale1x: TVTopShelfItem.ImageTraits](tvtopshelfitem/imagetraits/screenscale1x.md)
+- [static var screenScale1x: TVTopShelfItem.ImageTraits](./imagetraits/screenscale1x.md)
   An image to display on devices running in a 1x resolution mode.
-- [static var screenScale2x: TVTopShelfItem.ImageTraits](tvtopshelfitem/imagetraits/screenscale2x.md)
+- [static var screenScale2x: TVTopShelfItem.ImageTraits](./imagetraits/screenscale2x.md)
   A high-resolution image to display on devices running in a 2x resolution mode.
 ### Initializers
-- [init(rawValue: UInt)](tvtopshelfitem/imagetraits/init(rawvalue:).md)
+- [init(rawValue: UInt)](./imagetraits/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func imageURL(for: TVTopShelfItem.ImageTraits) -> URL?](tvtopshelfitem/imageurl(for:).md)
+### Providing an Image for the Item
+- [func imageURL(for: TVTopShelfItem.ImageTraits) -> URL?](./imageurl%28for%29.md)
   Returns an image associated with the current item.
-- [func setImageURL(URL?, for: TVTopShelfItem.ImageTraits)](tvtopshelfitem/setimageurl(_:for:).md)
+- [func setImageURL(URL?, for: TVTopShelfItem.ImageTraits)](./setimageurl%28_,for%29.md)
   Associates an image with the current item.
 
 

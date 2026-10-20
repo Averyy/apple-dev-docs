@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: USDKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the row at the specified index.
 

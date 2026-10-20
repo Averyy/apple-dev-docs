@@ -1,7 +1,8 @@
 # HMError.Code.alreadyExists
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the container already contains the object you are trying to add.
 
@@ -19,28 +20,34 @@ An error indicating the container already contains the object you are trying to 
 case alreadyExists
 ```
 
+```c
+HMErrorCodeAlreadyExists
+```
+
 ## See Also
 
-- [HomeKit Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
-- [HMError.Code.genericError](hmerror/code/genericerror.md)
+### Related Documentation
+- [HomeKit Developer Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
+### General errors
+- [HMError.Code.genericError](./genericerror.md)
   An error that does not have a more specific error code.
-- [static var incompatibleHomeHub: HMError.Code](hmerror/code/incompatiblehomehub.md)
+- [static var incompatibleHomeHub: HMError.Code](./incompatiblehomehub.md)
   An error indicating an incompatible home hub.
-- [HMError.Code.invalidClass](hmerror/code/invalidclass.md)
+- [HMError.Code.invalidClass](./invalidclass.md)
   An attempt to use an abstract base class in an operation instead of a concrete subclass.
-- [HMError.Code.notFound](hmerror/code/notfound.md)
+- [HMError.Code.notFound](./notfound.md)
   An error indicating the object was not found in the container.
-- [HMError.Code.notificationAlreadyEnabled](hmerror/code/notificationalreadyenabled.md)
+- [HMError.Code.notificationAlreadyEnabled](./notificationalreadyenabled.md)
   An error indicating the notification is already enabled.
-- [HMError.Code.notificationNotSupported](hmerror/code/notificationnotsupported.md)
+- [HMError.Code.notificationNotSupported](./notificationnotsupported.md)
   An attempt to register for notifications from an accessory that does not support notifications.
-- [HMError.Code.operationNotSupported](hmerror/code/operationnotsupported.md)
+- [HMError.Code.operationNotSupported](./operationnotsupported.md)
   An attempt to use an unsupported operation.
-- [HMError.Code.unexpectedError](hmerror/code/unexpectederror.md)
+- [HMError.Code.unexpectedError](./unexpectederror.md)
   An unexpected error.
-- [HMError.Code.missingEntitlement](hmerror/code/missingentitlement.md)
+- [HMError.Code.missingEntitlement](./missingentitlement.md)
   An error indicating a required entitlement is not available.
-- [HMError.Code.referToUserManual](hmerror/code/refertousermanual.md)
+- [HMError.Code.referToUserManual](./refertousermanual.md)
   An error described in the device’s user manual.
 
 

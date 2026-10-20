@@ -1,7 +1,8 @@
 # CMTimeFlags
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the flags for a time value.
 
@@ -20,45 +21,50 @@ A structure that defines the flags for a time value.
 struct CMTimeFlags
 ```
 
+```c
+enum CMTimeFlags : uint32_t;
+```
+
 ## Topics
 
 ### Properties
-- [static var valid: CMTimeFlags](cmtimeflags/valid.md)
+- [static var valid: CMTimeFlags](./cmtimeflags/valid.md)
   A flag that indicates a time is valid.
-- [static var hasBeenRounded: CMTimeFlags](cmtimeflags/hasbeenrounded.md)
+- [static var hasBeenRounded: CMTimeFlags](./cmtimeflags/hasbeenrounded.md)
   A flag that indicates a previous time calculation rounded the result.
-- [static var positiveInfinity: CMTimeFlags](cmtimeflags/positiveinfinity.md)
+- [static var positiveInfinity: CMTimeFlags](./cmtimeflags/positiveinfinity.md)
   A flag that indicates the time is positive infinity.
-- [static var negativeInfinity: CMTimeFlags](cmtimeflags/negativeinfinity.md)
+- [static var negativeInfinity: CMTimeFlags](./cmtimeflags/negativeinfinity.md)
   A flag that indicates the time is negative infinity.
-- [static var indefinite: CMTimeFlags](cmtimeflags/indefinite.md)
+- [static var indefinite: CMTimeFlags](./cmtimeflags/indefinite.md)
   A flag that indicates the time is indefinite.
-- [static var impliedValueFlagsMask: CMTimeFlags](cmtimeflags/impliedvalueflagsmask.md)
+- [static var impliedValueFlagsMask: CMTimeFlags](./cmtimeflags/impliedvalueflagsmask.md)
   A flag that indicates the time is positive or negative infinity, or indefinite.
 ### Initializers
-- [init(rawValue: UInt32)](cmtimeflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./cmtimeflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct CMTime](cmtime.md)
+### Data Types
+- [struct CMTime](./cmtime.md)
   A structure that represents time.
-- [typealias CMTimeValue](cmtimevalue.md)
+- [typealias CMTimeValue](./cmtimevalue.md)
   An integer time value.
-- [typealias CMTimeScale](cmtimescale.md)
+- [typealias CMTimeScale](./cmtimescale.md)
   An integer timescale.
-- [typealias CMTimeEpoch](cmtimeepoch.md)
+- [typealias CMTimeEpoch](./cmtimeepoch.md)
   An epoch for a time.
 
 

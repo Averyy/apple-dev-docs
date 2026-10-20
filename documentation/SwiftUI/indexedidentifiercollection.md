@@ -1,7 +1,8 @@
 # IndexedIdentifierCollection
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection wrapper that iterates over the indices and identifiers of a collection together.
 
@@ -27,26 +28,27 @@ You don’t use this type directly. Instead SwiftUI creates this type on your be
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [func moveDisabled(Bool) -> some View](view/movedisabled(_:).md)
+### Editing a list
+- [func moveDisabled(Bool) -> some View](./view/movedisabled%28_%29.md)
   Adds a condition for whether the view’s view hierarchy is movable.
-- [func deleteDisabled(Bool) -> some View](view/deletedisabled(_:).md)
+- [func deleteDisabled(Bool) -> some View](./view/deletedisabled%28_%29.md)
   Adds a condition for whether the view’s view hierarchy is deletable.
-- [var editMode: Binding<EditMode>?](environmentvalues/editmode.md)
+- [var editMode: Binding<EditMode>?](./environmentvalues/editmode.md)
   An indication of whether the user can edit the contents of a view associated with this environment.
-- [enum EditMode](editmode.md)
+- [enum EditMode](./editmode.md)
   A mode that indicates whether the user can edit a view’s content.
-- [struct EditActions](editactions.md)
+- [struct EditActions](./editactions.md)
   A set of edit actions on a collection of data that a view can offer to a user.
-- [struct EditableCollectionContent](editablecollectioncontent.md)
+- [struct EditableCollectionContent](./editablecollectioncontent.md)
   An opaque wrapper view that adds editing capabilities to a row in a list.
 
 

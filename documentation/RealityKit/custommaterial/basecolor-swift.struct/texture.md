@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base color as a UV-mapped image.
 
@@ -20,8 +21,9 @@ var texture: CustomMaterial.Texture?
 
 ## See Also
 
-- [var tint: UIColor](custommaterial/basecolor-swift.struct/tint-4xg2a.md)
-- [var tint: NSColor](custommaterial/basecolor-swift.struct/tint-99g.md)
+### Accessing base color data
+- [var tint: UIColor](./tint-4xg2a.md)
+- [var tint: NSColor](./tint-99g.md)
 
 
 ---

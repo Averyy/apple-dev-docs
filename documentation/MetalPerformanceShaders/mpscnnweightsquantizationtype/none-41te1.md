@@ -1,7 +1,8 @@
 # MPSCNNWeightsQuantizationType.none
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case none
+```
+
+```c
+MPSCNNWeightsQuantizationTypeNone
 ```
 
 

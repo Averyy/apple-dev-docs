@@ -7,8 +7,8 @@ Specify a location size.
 ## Topics
 
 ### Constants
-- [var cmOriginalProfileLocationSize: Int](cmoriginalprofilelocationsize.md)
-- [var cmCurrentProfileLocationSize: Int](cmcurrentprofilelocationsize.md)
+- [var cmOriginalProfileLocationSize: Int](../cmoriginalprofilelocationsize.md)
+- [var cmCurrentProfileLocationSize: Int](../cmcurrentprofilelocationsize.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: StoreKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a product view.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](productviewstyle/makebody(configuration:).md)
+### Creating custom product views
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a product view.
-- [ProductViewStyle.Configuration](productviewstyle/configuration.md)
+- [ProductViewStyle.Configuration](./configuration.md)
   A type that represents the properties of a product view style.
 
 

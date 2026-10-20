@@ -1,7 +1,8 @@
 # HIDDeviceError.ioError
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An input/output error occurred between the host and the device.
 

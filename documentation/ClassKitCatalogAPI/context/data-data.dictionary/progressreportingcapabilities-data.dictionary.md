@@ -1,7 +1,8 @@
 # Context.Data.ProgressReportingCapabilities
 
 **Framework**: ClassKit Catalog API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 The progress reporting capabilities supported by a context.
 
@@ -10,7 +11,7 @@ The progress reporting capabilities supported by a context.
 
 ## Declaration
 
-```swift
+```
 object Context.Data.ProgressReportingCapabilities
 ```
 
@@ -20,8 +21,10 @@ When creating a context, if you don’t specify a progress reporting capability 
 
 ## Properties
 
-- `details` (string): A description of the capability presented to teachers. See [`details`](https://developer.apple.com/documentation/classkit/clsprogressreportingcapability/details).
-- `kind` (string): The kind of progress reporting capability. See [`kind`](https://developer.apple.com/documentation/classkit/clsprogressreportingcapability/kind-swift.property).
+- `details` (string): A description of the capability presented to teachers. See [`details`](../../../ClassKit/clsprogressreportingcapability/details.md).
+- `kind` (string): The kind of progress reporting capability. See [`kind`](../../../ClassKit/clsprogressreportingcapability/kind-swift.property.md).
+
+  **Allowed Values**: `duration`, `percent`, `binary`, `quantity`, `score`
 
 
 ---

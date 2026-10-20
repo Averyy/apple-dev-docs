@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default display coordinate.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [init(x: UInt16, y: UInt16)](pgdisplaycoord_t/init(x:y:).md)
+### Creating Display Coordinates
+- [init(x: UInt16, y: UInt16)](./init%28x,y%29.md)
   Initializes a coordinate.
 
 

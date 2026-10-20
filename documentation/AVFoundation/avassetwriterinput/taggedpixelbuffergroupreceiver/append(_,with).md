@@ -1,7 +1,8 @@
 # append(_:with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends until the input is ready for more media data, then appends the tagged pixel buffers.
 
@@ -21,7 +22,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if the underlying writer failed.
+> **Throws**: An error if the underlying writer failed.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ nonisolated
 
 ## See Also
 
-- [func appendImmediately([CMTaggedDynamicBuffer], with: CMTime) throws -> Bool](avassetwriterinput/taggedpixelbuffergroupreceiver/appendimmediately(_:with:).md)
+### Appending tagged buffers
+- [func appendImmediately([CMTaggedDynamicBuffer], with: CMTime) throws -> Bool](./appendimmediately%28_,with%29.md)
   Appends the tagged pixel buffers synchronously if the input is ready for more media data.
-- [func finish()](avassetwriterinput/taggedpixelbuffergroupreceiver/finish.md)
+- [func finish()](./finish%28%29.md)
   Indicates to the AVAssetWriter that no more buffers will be appended to this receiver.
 
 

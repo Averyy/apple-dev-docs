@@ -1,7 +1,8 @@
 # findingConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configuration for the find elements should they be present in the main menu.
 
@@ -16,6 +17,10 @@ Configuration for the find elements should they be present in the main menu.
 
 ```swift
 var findingConfiguration: UIMenuSystem.FindElementGroupConfiguration { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) UIMenuSystemFindElementGroupConfiguration * findingConfiguration;
 ```
 
 

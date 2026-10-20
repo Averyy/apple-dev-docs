@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layout manager from data in an unarchiver.
 
@@ -14,13 +15,18 @@ Creates a layout manager from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: A coder that implements [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
+- `coder`: A coder that implements [`NSCoder`](../../Foundation/nscoder.md).
 
 ## See Also
 
-- [init()](nslayoutmanager/init.md)
+### Creating a layout manager
+- [init()](./init%28%29.md)
   Initializes a newly created layout manager object.
 
 

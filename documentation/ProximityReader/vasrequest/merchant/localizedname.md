@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of the merchant or corresponding loyalty program.
 

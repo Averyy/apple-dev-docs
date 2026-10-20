@@ -1,7 +1,8 @@
 # centralManager(_:didDisconnectPeripheral:timestamp:isReconnecting:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 5.0+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, timestamp: CFAbsoluteTime, isReconnecting: Bool, error: (any Error)?)
+```
+
+```objc
+- (void) centralManager:(CBCentralManager *) central didDisconnectPeripheral:(CBPeripheral *) peripheral timestamp:(CFAbsoluteTime) timestamp isReconnecting:(BOOL) isReconnecting error:(NSError *) error;
 ```
 
 

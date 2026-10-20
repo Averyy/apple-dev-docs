@@ -1,7 +1,8 @@
 # pluginCapability
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capability provided by a package plug-in target.
 
@@ -16,15 +17,16 @@ final var pluginCapability: Target.PluginCapability?
 
 ## See Also
 
-- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, packageAccess: Bool) -> Target](target/plugin(name:capability:dependencies:path:exclude:sources:packageaccess:).md)
+### Creating a Plugin Target
+- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, packageAccess: Bool) -> Target](./plugin%28name,capability,dependencies,path,exclude,sources,packageaccess%29.md)
   Defines a new package plug-in target.
-- [Target.PluginCapability](target/plugincapability-swift.enum.md)
+- [Target.PluginCapability](./plugincapability-swift.enum.md)
   The different types of capability that a plug-in can provide.
-- [enum PluginCommandIntent](plugincommandintent.md)
+- [enum PluginCommandIntent](../plugincommandintent.md)
   The intended use case of the command plug-in.
-- [enum PluginPermission](pluginpermission.md)
+- [enum PluginPermission](../pluginpermission.md)
   The type of permission a plug-in requires.
-- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](target/plugin(name:capability:dependencies:path:exclude:sources:).md)
+- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](./plugin%28name,capability,dependencies,path,exclude,sources%29.md)
   Defines a new package plugin target.
 
 

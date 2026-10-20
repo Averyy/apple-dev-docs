@@ -1,7 +1,8 @@
 # Read xcode cloud workflow information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific Xcode Cloud workflow.
 
@@ -16,7 +17,7 @@ The example request below accesses information about an Xcode Cloud workflow. Di
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f
 ```
 
@@ -119,21 +120,43 @@ GET https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Workflows resource.
+
+### Query Parameters
+
 - `fields[ciWorkflows]` ([string]): Additional fields to include for the Workflows resource returned by the response.
+
+  **Allowed Values**: `name`, `description`, `branchStartCondition`, `tagStartCondition`, `pullRequestStartCondition`, `scheduledStartCondition`, `manualBranchStartCondition`, `manualTagStartCondition`, `manualPullRequestStartCondition`, `actions`, `isEnabled`, `isLockedForEditing`, `clean`, `containerFilePath`, `lastModifiedDate`, `product`, `repository`, `xcodeVersion`, `macOsVersion`, `buildRuns`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `product`, `repository`, `xcodeVersion`, `macOsVersion`
 - `fields[scmRepositories]` ([string]): Additional fields to include for the Workflows resource returned by the response.
-- `fields[ciMacOsVersions]` ([string])
-- `fields[ciProducts]` ([string])
-- `fields[ciXcodeVersions]` ([string])
+
+  **Allowed Values**: `lastAccessedDate`, `httpCloneUrl`, `sshCloneUrl`, `ownerName`, `repositoryName`, `scmProvider`, `defaultBranch`, `gitReferences`, `pullRequests`
+- `fields[ciMacOsVersions]` ([string]): **Allowed Values**: `version`, `name`, `xcodeVersions`
+- `fields[ciProducts]` ([string]): **Allowed Values**: `name`, `createdDate`, `productType`, `app`, `bundleId`, `workflows`, `primaryRepositories`, `additionalRepositories`, `buildRuns`
+- `fields[ciXcodeVersions]` ([string]): **Allowed Values**: `version`, `name`, `testDestinations`, `macOsVersions`
+
+## Responses
+
+- `200` OK (`CiWorkflowResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all xcode cloud builds for a workflow](get-v1-ciworkflows-_id_-buildruns.md)
+### Getting Xcode Cloud Workflows
+- [List all xcode cloud builds for a workflow](./get-v1-ciworkflows-_id_-buildruns.md)
   List all builds Xcode Cloud performed for a specific workflow.
-- [Read the repository information for an xcode cloud workflow](get-v1-ciworkflows-_id_-repository.md)
+- [Read the repository information for an xcode cloud workflow](./get-v1-ciworkflows-_id_-repository.md)
   Get information about the Git repository of a specific Xcode Cloud workflow.
-- [List build run IDs for a CI workflow](get-v1-ciworkflows-_id_-relationships-buildruns.md)
-- [Get the repository ID for a CI workflow](get-v1-ciworkflows-_id_-relationships-repository.md)
+- [List build run IDs for a CI workflow](./get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [Get the repository ID for a CI workflow](./get-v1-ciworkflows-_id_-relationships-repository.md)
 
 
 ---

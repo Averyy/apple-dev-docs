@@ -1,7 +1,8 @@
 # MPSCNNDropoutGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that stores the mask used by dropout and gradient dropout filters.
 
@@ -19,28 +20,33 @@ A class that stores the mask used by dropout and gradient dropout filters.
 class MPSCNNDropoutGradientState
 ```
 
+```objc
+@interface MPSCNNDropoutGradientState : MPSNNGradientState
+```
+
 ## Topics
 
 ### Instance Methods
-- [func maskData() -> Data](mpscnndropoutgradientstate/maskdata.md)
+- [func maskData() -> Data](./mpscnndropoutgradientstate/maskdata%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientState](mpsnngradientstate.md)
+- [MPSNNGradientState](./mpsnngradientstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNDropout](mpscnndropout.md)
+### Dropout Layers
+- [class MPSCNNDropout](./mpscnndropout.md)
   A dropout filter.
-- [class MPSCNNDropoutGradient](mpscnndropoutgradient.md)
+- [class MPSCNNDropoutGradient](./mpscnndropoutgradient.md)
   A gradient dropout filter.
 
 

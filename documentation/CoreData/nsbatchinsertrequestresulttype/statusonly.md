@@ -1,7 +1,8 @@
 # NSBatchInsertRequestResultType.statusOnly
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the return type is a Boolean value representing whether the batch-insertion request succeeded.
 
@@ -20,11 +21,16 @@ A value that indicates that the return type is a Boolean value representing whet
 case statusOnly
 ```
 
+```c
+NSBatchInsertRequestResultTypeStatusOnly
+```
+
 ## See Also
 
-- [NSBatchInsertRequestResultType.objectIDs](nsbatchinsertrequestresulttype/objectids.md)
+### Request Types
+- [NSBatchInsertRequestResultType.objectIDs](./objectids.md)
   A value that indicates the return type is an array of object IDs that corresponds to the inserted rows.
-- [NSBatchInsertRequestResultType.count](nsbatchinsertrequestresulttype/count.md)
+- [NSBatchInsertRequestResultType.count](./count.md)
   A value that indicates that the return type is the number of inserted rows.
 
 

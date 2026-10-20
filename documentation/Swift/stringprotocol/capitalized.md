@@ -1,7 +1,8 @@
 # capitalized
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy of the string with each word changed to its corresponding capitalized spelling.
 

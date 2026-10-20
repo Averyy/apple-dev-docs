@@ -1,14 +1,15 @@
 # dot3VendorAMD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3VendorAMD = 1
 ```
 

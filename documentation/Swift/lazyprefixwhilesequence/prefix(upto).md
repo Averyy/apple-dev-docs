@@ -1,7 +1,8 @@
 # prefix(upTo:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence from the start of the collection up to, but not including, the specified position.
 
@@ -52,7 +53,7 @@ if let i = numbers.firstIndex(of: 40) {
 // Prints "[10, 20, 30]"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

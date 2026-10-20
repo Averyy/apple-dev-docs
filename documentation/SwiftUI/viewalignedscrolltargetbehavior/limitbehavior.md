@@ -1,7 +1,8 @@
 # ViewAlignedScrollTargetBehavior.LimitBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the amount of views that can be scrolled at a time.
 
@@ -23,21 +24,22 @@ struct LimitBehavior
 ## Topics
 
 ### Getting the limit behavior
-- [static var automatic: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/automatic.md)
+- [static var automatic: ViewAlignedScrollTargetBehavior.LimitBehavior](./limitbehavior/automatic.md)
   The automatic limit behavior.
-- [static var always: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/always.md)
+- [static var always: ViewAlignedScrollTargetBehavior.LimitBehavior](./limitbehavior/always.md)
   The always limit behavior.
-- [static var never: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/never.md)
+- [static var never: ViewAlignedScrollTargetBehavior.LimitBehavior](./limitbehavior/never.md)
   The never limit behavior.
 ### Type Properties
-- [static var alwaysByFew: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/alwaysbyfew.md)
+- [static var alwaysByFew: ViewAlignedScrollTargetBehavior.LimitBehavior](./limitbehavior/alwaysbyfew.md)
   The always-by-few limit behavior.
-- [static var alwaysByOne: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/alwaysbyone.md)
+- [static var alwaysByOne: ViewAlignedScrollTargetBehavior.LimitBehavior](./limitbehavior/alwaysbyone.md)
   The always-by-one limit behavior.
 
 ## See Also
 
-- [init(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior)](viewalignedscrolltargetbehavior/init(limitbehavior:).md)
+### Creating the target behavior
+- [init(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior)](./init%28limitbehavior%29.md)
   Creates a view aligned scroll behavior.
 
 

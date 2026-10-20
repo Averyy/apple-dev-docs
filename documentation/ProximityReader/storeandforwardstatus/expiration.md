@@ -1,7 +1,8 @@
 # expiration
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the Store and Forward session expires.
 
@@ -18,7 +19,8 @@ let expiration: Date
 
 ## See Also
 
-- [let readCount: Int](storeandforwardstatus/readcount.md)
+### Getting the status
+- [let readCount: Int](./readcount.md)
   The number of successful reads the framework performed using a Store and Forward session.
 
 

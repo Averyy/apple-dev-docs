@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a compute command encoder with a dispatch type.
@@ -20,21 +21,26 @@ Creates a compute command encoder with a dispatch type.
 func makeComputeCommandEncoder(dispatchType: MTLDispatchType) -> (any MTLComputeCommandEncoder)?
 ```
 
+```objc
+- (id<MTLComputeCommandEncoder>) computeCommandEncoderWithDispatchType:(MTLDispatchType) dispatchType;
+```
+
 #### Discussion
 
-Use an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass.
+Use an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass.
 
 ## Parameters
 
-- `dispatchType`: An [`MTLDispatchType`](mtldispatchtype.md) instance that indicates whether the compute pass the encoder creates runs commands serially or concurrently.
+- `dispatchType`: An [`MTLDispatchType`](../mtldispatchtype.md) instance that indicates whether the compute pass the encoder creates runs commands serially or concurrently.
 
 ## See Also
 
-- [func makeComputeCommandEncoder(descriptor: MTLComputePassDescriptor) -> (any MTLComputeCommandEncoder)?](mtlcommandbuffer/makecomputecommandencoder(descriptor:).md)
+### Creating compute encoders
+- [func makeComputeCommandEncoder(descriptor: MTLComputePassDescriptor) -> (any MTLComputeCommandEncoder)?](./makecomputecommandencoder%28descriptor%29.md)
   Creates a compute command encoder from a descriptor.
-- [func makeComputeCommandEncoder() -> (any MTLComputeCommandEncoder)?](mtlcommandbuffer/makecomputecommandencoder.md)
+- [func makeComputeCommandEncoder() -> (any MTLComputeCommandEncoder)?](./makecomputecommandencoder%28%29.md)
   Creates a compute command encoder that uses default settings.
-- [enum MTLDispatchType](mtldispatchtype.md)
+- [enum MTLDispatchType](../mtldispatchtype.md)
   The type of dispatch method to use when calling encoded functions.
 
 

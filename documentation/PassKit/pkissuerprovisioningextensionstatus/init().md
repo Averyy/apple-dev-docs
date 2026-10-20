@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new extension-handler status object.
 
@@ -9,13 +10,17 @@ Creates a new extension-handler status object.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

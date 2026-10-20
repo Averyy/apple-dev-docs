@@ -1,6 +1,7 @@
 # Addressing missing framework crashes
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Identify missing frameworks from a crash report, and adjust your app’s build to correctly include the framework.
 
@@ -8,7 +9,7 @@ Identify missing frameworks from a crash report, and adjust your app’s build t
 
 If you modularize your app’s functionality into frameworks, the app must link the frameworks at build time, and also embed a copy of the frameworks inside the app bundle during the build. If an app links a framework but doesn’t embed it, the app crashes at launch, because the dynamic linker can’t locate the missing framework.
 
-##### Identify the Missing Framework
+##### Identify the missing framework
 
 The dynamic linker, `dyld`, outputs detailed information about the framework it couldn’t locate, in the `Termination Description` of the crash report:
 
@@ -38,21 +39,22 @@ Termination Description: DYLD, Library not loaded: @rpath/MyFramework.framework/
 
 > **Note**: For readability, extra line breaks are in this example. In the original crash report file for these examples, the `dyld` information is on fewer lines.
 
-##### Inspect the Frameworks Configuration
+##### Inspect the framework’s configuration
 
-Ensure the framework is correctly embedded in the app bundle—see [`Embedding Frameworks In An App`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2435/_index.html#//apple_ref/doc/uid/DTS40017543).
+Ensure the framework is correctly embedded in the app bundle—see [Embedding Frameworks In An App](https://developer.apple.com/library/archive/technotes/tn2435/_index.html#//apple_ref/doc/uid/DTS40017543).
 
-If you can’t reproduce the crash, archive the app, export it for Development distribution, and apply app thinning, as described in [`Distributing your app for beta testing and releases`](distributing-your-app-for-beta-testing-and-releases.md). Test the different variants produced through app thinning to see if the framework is missing only after applying app thinning. If this reproduces the crash, do the following:
+If you can’t reproduce the crash, archive the app, export it for Development distribution, and apply app thinning, as described in [Distributing your app for beta testing and releases](./distributing-your-app-for-beta-testing-and-releases.md). Test the different variants produced through app thinning to see if the framework is missing only after applying app thinning. If this reproduces the crash, do the following:
 
 - Verify the framework’s build setting for Architectures (`ARCHS`) is the default value.
 - Verify the framework’s build setting for Valid Architectures (`VALID_ARCHS`) is the default value.
-- Verify the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) key in the framework’s `Info.plist` file correctly specifies the CPU architectures the framework supports.
+- Verify the [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md) key in the framework’s `Info.plist` file correctly specifies the CPU architectures the framework supports.
 
 > **Note**: If the missing framework is from a third-party framework vendor or uses third-party development tools to integrate it in your app, contact the vendor for assistance in addressing the issue.
 
 ## See Also
 
-- [Analyzing a crash report](analyzing-a-crash-report.md)
+### Related Documentation
+- [Analyzing a crash report](./analyzing-a-crash-report.md)
   Identify clues in a crash report that help you diagnose problems.
 
 

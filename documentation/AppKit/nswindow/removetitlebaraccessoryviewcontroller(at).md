@@ -1,7 +1,8 @@
 # removeTitlebarAccessoryViewController(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the view controller at the specified index from the window’s array of title bar accessory view controllers.
 
@@ -14,9 +15,13 @@ Removes the view controller at the specified index from the window’s array of 
 func removeTitlebarAccessoryViewController(at index: Int)
 ```
 
+```objc
+- (void) removeTitlebarAccessoryViewControllerAtIndex:(NSInteger) index;
+```
+
 #### Discussion
 
-You can also use [`removeFromParent()`](nsviewcontroller/removefromparent().md) to remove a specific title bar accessory view controller.
+You can also use [`removeFromParent()`](../nsviewcontroller/removefromparent%28%29.md) to remove a specific title bar accessory view controller.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ You can also use [`removeFromParent()`](nsviewcontroller/removefromparent().md) 
 
 ## See Also
 
-- [func addTitlebarAccessoryViewController(NSTitlebarAccessoryViewController)](nswindow/addtitlebaraccessoryviewcontroller(_:).md)
+### Managing Title Bar Accessories
+- [func addTitlebarAccessoryViewController(NSTitlebarAccessoryViewController)](./addtitlebaraccessoryviewcontroller%28_%29.md)
   Adds the specified title bar accessory view controller to the window.
-- [func insertTitlebarAccessoryViewController(NSTitlebarAccessoryViewController, at: Int)](nswindow/inserttitlebaraccessoryviewcontroller(_:at:).md)
+- [func insertTitlebarAccessoryViewController(NSTitlebarAccessoryViewController, at: Int)](./inserttitlebaraccessoryviewcontroller%28_,at%29.md)
   Inserts the view controller into the window’s array of title bar accessory view controllers at the specified index.
-- [var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController]](nswindow/titlebaraccessoryviewcontrollers.md)
+- [var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController]](./titlebaraccessoryviewcontrollers.md)
   An array of title bar accessory view controllers that are currently added to the window.
 
 

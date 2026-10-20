@@ -1,7 +1,8 @@
 # isExposureModeSupported(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a device supports the specified exposure mode.
 
@@ -18,9 +19,13 @@ Returns a Boolean value that indicates whether a device supports the specified e
 func isExposureModeSupported(_ exposureMode: AVCaptureDevice.ExposureMode) -> Bool
 ```
 
+```objc
+- (BOOL) isExposureModeSupported:(AVCaptureExposureMode) exposureMode;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `exposureMode` is supported; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `exposureMode` is supported; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -28,9 +33,10 @@ func isExposureModeSupported(_ exposureMode: AVCaptureDevice.ExposureMode) -> Bo
 
 ## See Also
 
-- [var exposureMode: AVCaptureDevice.ExposureMode](avcapturedevice/exposuremode-swift.property.md)
+### Managing the exposure mode
+- [var exposureMode: AVCaptureDevice.ExposureMode](./exposuremode-swift.property.md)
   The exposure mode for the device.
-- [AVCaptureDevice.ExposureMode](avcapturedevice/exposuremode-swift.enum.md)
+- [AVCaptureDevice.ExposureMode](./exposuremode-swift.enum.md)
   Constants that specify the exposure mode of a capture device.
 
 

@@ -1,7 +1,8 @@
 # precipitationChance
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The probability of precipitation during the day.
 
@@ -26,11 +27,12 @@ The value is from `0` (no chance of precipitation) to `1` (100% chance of precip
 
 ## See Also
 
-- [var precipitation: Precipitation](dayweather/precipitation.md)
+### Getting precipitation
+- [var precipitation: Precipitation](./precipitation.md)
   The description of precipitation for this day.
-- [var rainfallAmount: Measurement<UnitLength>](dayweather/rainfallamount.md)
+- [var rainfallAmount: Measurement<UnitLength>](./rainfallamount.md)
   The amount of liquid precipitation for the day.
-- [var snowfallAmount: Measurement<UnitLength>](dayweather/snowfallamount.md)
+- [var snowfallAmount: Measurement<UnitLength>](./snowfallamount.md)
   The amount of snowfall for the day.
 
 

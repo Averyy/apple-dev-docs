@@ -1,7 +1,8 @@
 # printerPickerController(_:shouldShow:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the specified printer should be included in the picker.
 
@@ -17,9 +18,13 @@ Asks the delegate if the specified printer should be included in the picker.
 optional func printerPickerController(_ printerPickerController: UIPrinterPickerController, shouldShow printer: UIPrinter) -> Bool
 ```
 
+```objc
+- (BOOL) printerPickerController:(UIPrinterPickerController *) printerPickerController shouldShowPrinter:(UIPrinter *) printer;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the printer should be displayed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if the printer should be displayed or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 

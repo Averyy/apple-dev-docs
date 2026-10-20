@@ -1,7 +1,8 @@
 # supportsURL(_:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines whether a URL can be added to the Reading List.
 
@@ -17,9 +18,13 @@ Determines whether a URL can be added to the Reading List.
 class func supportsURL(_ URL: URL) -> Bool
 ```
 
+```objc
++ (BOOL) supportsURL:(NSURL *) URL;
+```
+
 #### Return Value
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the URL is supported by Reading List; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), then the URL is supported by Reading List; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # areaAverageMaximumRed()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func areaAverageMaximumRed() -> any CIFilter & CIAreaAverageMaximumRed
+```
+
+```objc
++ (CIFilter<CIAreaAverageMaximumRed> *) areaAverageMaximumRedFilter;
 ```
 
 

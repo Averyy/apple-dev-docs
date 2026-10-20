@@ -1,7 +1,8 @@
 # TCControlContents.ButtonShape.circle
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A circular button shape.
 
@@ -16,9 +17,14 @@ A circular button shape.
 case circle
 ```
 
+```c
+TCControlContentsButtonShapeCircle
+```
+
 ## See Also
 
-- [TCControlContents.ButtonShape.rect](tccontrolcontents/buttonshape/rect.md)
+### Shapes
+- [TCControlContents.ButtonShape.rect](./rect.md)
   A rectangular button shape.
 
 

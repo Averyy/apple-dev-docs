@@ -35,7 +35,7 @@ add(a, b, stream: .gpu)
 
 In the above, both the CPU and the GPU will perform the same add
 operation. The operations can (and likely will) be run in parallel since
-there are no dependencies between them. See <doc:using-streams> for more
+there are no dependencies between them. See [Using Streams](using-streams.md) for more
 information the semantics of streams in MLX.
 
 In the above `add` example, there are no dependencies between operations, so

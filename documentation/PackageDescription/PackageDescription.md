@@ -1,7 +1,8 @@
 # PackageDescription
 
 **Framework**: PackageDescription  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
@@ -11,7 +12,7 @@ Swift packages are reusable components of Swift, Objective-C, Objective-C++, C, 
 
 Each Swift package requires a `Package.swift` file in the main directory of the package — referred to as the package manifest. When you create a Swift package, you use the PackageDescription library in the package manifest to list dependencies, configure localized resources, and set other configuration options.
 
-For example, the package manifest from the [`SlothCreator: Building DocC Documentation in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode) sample project below defines the SlothCreator package, with the SlothCreator library in it. It specifies the deployment targets, and that its resources are in the `Resources` folder.
+For example, the package manifest from the [SlothCreator: Building DocC Documentation in Xcode](../Xcode/slothcreator_building_docc_documentation_in_xcode.md) sample project below defines the SlothCreator package, with the SlothCreator library in it. It specifies the deployment targets, and that its resources are in the `Resources` folder.
 
 ```swift
 import PackageDescription
@@ -43,24 +44,24 @@ let package = Package(
 
 The package manifest also allows you to define executable products, as well as plugins that Swift Package Manager can use to build other products in the manifest.
 
-For more information about adding a package dependency to your app project and creating Swift packages with Xcode, see [`Adding Package Dependencies to Your App`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app), [`Creating a Standalone Swift Package with Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode), and [`Swift Packages`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/swift-packages).
+For more information about adding a package dependency to your app project and creating Swift packages with Xcode, see [Adding Package Dependencies to Your App](../Xcode/adding-package-dependencies-to-your-app.md), [Creating a Standalone Swift Package with Xcode](../Xcode/creating-a-standalone-swift-package-with-xcode.md), and [Swift Packages](../Xcode/swift-packages.md).
 
-Support for Swift packages in Xcode builds on the open-source Swift Package Manager project. To learn more about the Swift Package Manager, visit [`Swift.org`](https://developer.apple.comhttps://www.swift.org/package-manager/) and the Swift Package Manager repository on [`GitHub`](https://developer.apple.comhttps://github.com/swiftlang/swift-package-manager).
+Support for Swift packages in Xcode builds on the open-source Swift Package Manager project. To learn more about the Swift Package Manager, visit [Swift.org](https://www.swift.org/package-manager/) and the Swift Package Manager repository on [GitHub](https://github.com/swiftlang/swift-package-manager).
 
 ## Topics
 
 ### Creating a Package
-- [class Package](package.md)
+- [class Package](./package.md)
   The configuration of a Swift package.
-- [struct Context](context.md)
+- [struct Context](./context.md)
   The context information for a Swift package.
 ### Structures
-- [struct GitInformation](gitinformation.md)
+- [struct GitInformation](./gitinformation.md)
   Information about the git status of a given package, if available.
-- [struct Version](version.md)
+- [struct Version](./version.md)
   A version according to the semantic versioning specification.
 ### Enumerations
-- [enum WarningLevel](warninglevel.md)
+- [enum WarningLevel](./warninglevel.md)
   The level at which a compiler warning should be treated.
 
 

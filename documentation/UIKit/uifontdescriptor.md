@@ -1,7 +1,8 @@
 # UIFontDescriptor
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of attributes that describes a font.
 
@@ -9,7 +10,7 @@ A collection of attributes that describes a font.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,113 +20,118 @@ A collection of attributes that describes a font.
 class UIFontDescriptor
 ```
 
+```objc
+@interface UIFontDescriptor : NSObject
+```
+
 #### Overview
 
-A font descriptor can be used to create or modify a [`UIFont`](uifont.md) object. Font descriptors have a font matching capability, so that you can partially describe a font by creating a font descriptor with, for example, just a family name. You can use [`matchingFontDescriptors(withMandatoryKeys:)`](uifontdescriptor/matchingfontdescriptors(withmandatorykeys:).md) to find all the available fonts in the system with a matching family name. Font descriptors can also be archived and unarchived.
+A font descriptor can be used to create or modify a [`UIFont`](./uifont.md) object. Font descriptors have a font matching capability, so that you can partially describe a font by creating a font descriptor with, for example, just a family name. You can use [`matchingFontDescriptors(withMandatoryKeys:)`](./uifontdescriptor/matchingfontdescriptors%28withmandatorykeys%29.md) to find all the available fonts in the system with a matching family name. Font descriptors can also be archived and unarchived.
 
-There are several ways to create a new [`UIFontDescriptor`](uifontdescriptor.md) object. To take advantage of text styles and respect the user’s current content size category, use [`preferredFontDescriptor(withTextStyle:)`](uifontdescriptor/preferredfontdescriptor(withtextstyle:).md). You can also use `alloc` and [`init(fontAttributes:)`](uifontdescriptor/init(fontattributes:).md), [`fontDescriptorWithFontAttributes:`](uifontdescriptor/fontdescriptorwithfontattributes:.md), [`init(name:matrix:)`](uifontdescriptor/init(name:matrix:).md), or [`init(name:size:)`](uifontdescriptor/init(name:size:).md) to create a font descriptor based on your custom attributes dictionary or on a specific font’s name and size. Alternatively you can use one of the `fontDescriptor…` instance methods (such as [`withFace(_:)`](uifontdescriptor/withface(_:).md)) to create a modified version of an existing descriptor. The latter methods are useful if you have an existing descriptor and simply want to change one aspect.
+There are several ways to create a new [`UIFontDescriptor`](./uifontdescriptor.md) object. To take advantage of text styles and respect the user’s current content size category, use [`preferredFontDescriptor(withTextStyle:)`](./uifontdescriptor/preferredfontdescriptor%28withtextstyle%29.md). You can also use `alloc` and [`init(fontAttributes:)`](./uifontdescriptor/init%28fontattributes%29.md), [`fontDescriptorWithFontAttributes:`](./uifontdescriptor/fontdescriptorwithfontattributes_.md), [`init(name:matrix:)`](./uifontdescriptor/init%28name,matrix%29.md), or [`init(name:size:)`](./uifontdescriptor/init%28name,size%29.md) to create a font descriptor based on your custom attributes dictionary or on a specific font’s name and size. Alternatively you can use one of the `fontDescriptor…` instance methods (such as [`withFace(_:)`](./uifontdescriptor/withface%28_%29.md)) to create a modified version of an existing descriptor. The latter methods are useful if you have an existing descriptor and simply want to change one aspect.
 
 All attributes in the attributes dictionary are optional.
 
-For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/).
+For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/).
 
 ## Topics
 
 ### Creating a font descriptor
-- [class func preferredFontDescriptor(withTextStyle: UIFont.TextStyle) -> UIFontDescriptor](uifontdescriptor/preferredfontdescriptor(withtextstyle:).md)
+- [class func preferredFontDescriptor(withTextStyle: UIFont.TextStyle) -> UIFontDescriptor](./uifontdescriptor/preferredfontdescriptor%28withtextstyle%29.md)
   Returns a font descriptor that contains the specified text style and the user’s selected content size category.
-- [class func preferredFontDescriptor(withTextStyle: UIFont.TextStyle, compatibleWith: UITraitCollection?) -> UIFontDescriptor](uifontdescriptor/preferredfontdescriptor(withtextstyle:compatiblewith:).md)
+- [class func preferredFontDescriptor(withTextStyle: UIFont.TextStyle, compatibleWith: UITraitCollection?) -> UIFontDescriptor](./uifontdescriptor/preferredfontdescriptor%28withtextstyle,compatiblewith%29.md)
   Returns a font descriptor that contains the text style and the content size category that the provided trait collection specifies.
-- [init(name: String, matrix: CGAffineTransform)](uifontdescriptor/init(name:matrix:).md)
+- [init(name: String, matrix: CGAffineTransform)](./uifontdescriptor/init%28name,matrix%29.md)
   Returns a font descriptor with the specified values for the name and matrix dictionary attributes.
-- [init(name: String, size: CGFloat)](uifontdescriptor/init(name:size:).md)
+- [init(name: String, size: CGFloat)](./uifontdescriptor/init%28name,size%29.md)
   Returns a font descriptor with the specified values for the name and size dictionary attributes.
-- [func addingAttributes([UIFontDescriptor.AttributeName : Any]) -> UIFontDescriptor](uifontdescriptor/addingattributes(_:).md)
+- [func addingAttributes([UIFontDescriptor.AttributeName : Any]) -> UIFontDescriptor](./uifontdescriptor/addingattributes%28_%29.md)
   Returns a new font descriptor that’s the same as the existing descriptor, but with the specified attributes taking precedence over the existing ones.
-- [func withDesign(UIFontDescriptor.SystemDesign) -> UIFontDescriptor?](uifontdescriptor/withdesign(_:).md)
+- [func withDesign(UIFontDescriptor.SystemDesign) -> UIFontDescriptor?](./uifontdescriptor/withdesign%28_%29.md)
   Returns a new font descriptor that’s the same as the existing descriptor, but with the specified design.
-- [func withFamily(String) -> UIFontDescriptor](uifontdescriptor/withfamily(_:).md)
+- [func withFamily(String) -> UIFontDescriptor](./uifontdescriptor/withfamily%28_%29.md)
   Returns a new font descriptor whose attributes are the same as the existing font descriptor, but from the specified family.
-- [func withFace(String) -> UIFontDescriptor](uifontdescriptor/withface(_:).md)
+- [func withFace(String) -> UIFontDescriptor](./uifontdescriptor/withface%28_%29.md)
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified face.
-- [func withMatrix(CGAffineTransform) -> UIFontDescriptor](uifontdescriptor/withmatrix(_:).md)
+- [func withMatrix(CGAffineTransform) -> UIFontDescriptor](./uifontdescriptor/withmatrix%28_%29.md)
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified matrix.
-- [func withSize(CGFloat) -> UIFontDescriptor](uifontdescriptor/withsize(_:).md)
+- [func withSize(CGFloat) -> UIFontDescriptor](./uifontdescriptor/withsize%28_%29.md)
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified point size.
-- [func withSymbolicTraits(UIFontDescriptor.SymbolicTraits) -> UIFontDescriptor?](uifontdescriptor/withsymbolictraits(_:).md)
+- [func withSymbolicTraits(UIFontDescriptor.SymbolicTraits) -> UIFontDescriptor?](./uifontdescriptor/withsymbolictraits%28_%29.md)
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified symbolic traits.
 ### Initializing a font descriptor
-- [init(fontAttributes: [UIFontDescriptor.AttributeName : Any])](uifontdescriptor/init(fontattributes:).md)
+- [init(fontAttributes: [UIFontDescriptor.AttributeName : Any])](./uifontdescriptor/init%28fontattributes%29.md)
   Creates a font descriptor with the specified attributes.
-- [convenience init()](uifontdescriptor/init.md)
+- [convenience init()](./uifontdescriptor/init%28%29.md)
   Creates a font descriptor.
-- [init?(coder: NSCoder)](uifontdescriptor/init(coder:).md)
+- [init?(coder: NSCoder)](./uifontdescriptor/init%28coder%29.md)
   Creates a font descriptor from data in an unarchiver.
 ### Finding fonts
-- [func matchingFontDescriptors(withMandatoryKeys: Set<UIFontDescriptor.AttributeName>?) -> [UIFontDescriptor]](uifontdescriptor/matchingfontdescriptors(withmandatorykeys:).md)
+- [func matchingFontDescriptors(withMandatoryKeys: Set<UIFontDescriptor.AttributeName>?) -> [UIFontDescriptor]](./uifontdescriptor/matchingfontdescriptors%28withmandatorykeys%29.md)
   Returns all the fonts available in the system with specified attributes that match those of the font.
 ### Querying a font descriptor
-- [var fontAttributes: [UIFontDescriptor.AttributeName : Any]](uifontdescriptor/fontattributes.md)
+- [var fontAttributes: [UIFontDescriptor.AttributeName : Any]](./uifontdescriptor/fontattributes.md)
   The font descriptor’s dictionary of attributes.
-- [var matrix: CGAffineTransform](uifontdescriptor/matrix.md)
+- [var matrix: CGAffineTransform](./uifontdescriptor/matrix.md)
   The current transform matrix of the font descriptor.
-- [func object(forKey: UIFontDescriptor.AttributeName) -> Any?](uifontdescriptor/object(forkey:).md)
+- [func object(forKey: UIFontDescriptor.AttributeName) -> Any?](./uifontdescriptor/object%28forkey%29.md)
   Returns the font attribute that the corresponding key specifies.
-- [var pointSize: CGFloat](uifontdescriptor/pointsize.md)
+- [var pointSize: CGFloat](./uifontdescriptor/pointsize.md)
   The point size of the font descriptor.
-- [var postscriptName: String](uifontdescriptor/postscriptname.md)
+- [var postscriptName: String](./uifontdescriptor/postscriptname.md)
   The PostScript name of the font descriptor.
-- [var symbolicTraits: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.property.md)
+- [var symbolicTraits: UIFontDescriptor.SymbolicTraits](./uifontdescriptor/symbolictraits-swift.property.md)
   The traits of the font descriptor.
-- [UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct.md)
+- [UIFontDescriptor.SymbolicTraits](./uifontdescriptor/symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
 ### Constants
-- [UIFont.TextStyle](uifont/textstyle.md)
+- [UIFont.TextStyle](./uifont/textstyle.md)
   Constants that describe the preferred styles for fonts.
-- [UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign.md)
+- [UIFontDescriptor.SystemDesign](./uifontdescriptor/systemdesign.md)
   Constants that describe the system-defined typeface designs.
-- [UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct.md)
+- [UIFontDescriptor.SymbolicTraits](./uifontdescriptor/symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
-- [UIFontDescriptor.Class](uifontdescriptor/class.md)
+- [UIFontDescriptor.Class](./uifontdescriptor/class.md)
   Constants that classify certain stylistic qualities of the font.
-- [UIFontDescriptor.AttributeName](uifontdescriptor/attributename.md)
+- [UIFontDescriptor.AttributeName](./uifontdescriptor/attributename.md)
   Constants that describe font attributes.
-- [UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey.md)
+- [UIFontDescriptor.FeatureKey](./uifontdescriptor/featurekey.md)
   Keys for retrieving feature settings.
-- [UIFontDescriptor.TraitKey](uifontdescriptor/traitkey.md)
+- [UIFontDescriptor.TraitKey](./uifontdescriptor/traitkey.md)
   Keys for retrieving the font descriptor’s trait information.
-- [UIFont.Weight](uifont/weight.md)
+- [UIFont.Weight](./uifont/weight.md)
   Constants that represent standard typeface styles.
-- [UIFont.Width](uifont/width.md)
+- [UIFont.Width](./uifont/width.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Scaling fonts automatically](scaling-fonts-automatically.md)
+### Fonts
+- [Scaling fonts automatically](./scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
-- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
+- [Adding a custom font to your app](./adding-a-custom-font-to-your-app.md)
   Add a custom font to your app and use it in your app’s interface.
-- [class UIFont](uifont.md)
+- [class UIFont](./uifont.md)
   An object that provides access to the font’s characteristics.
-- [UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct.md)
+- [UIFontDescriptor.SymbolicTraits](./uifontdescriptor/symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
-- [class UIFontMetrics](uifontmetrics.md)
+- [class UIFontMetrics](./uifontmetrics.md)
   A utility object for obtaining custom fonts that scale to support Dynamic Type.
 
 

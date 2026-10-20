@@ -1,7 +1,8 @@
 # UIContentUnavailableConfiguration.Alignment.center
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Views with centered alignment.
 
@@ -10,7 +11,7 @@ Views with centered alignment.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

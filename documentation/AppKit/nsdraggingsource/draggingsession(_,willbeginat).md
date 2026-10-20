@@ -1,7 +1,8 @@
 # draggingSession(_:willBeginAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the drag will begin.
 
@@ -15,6 +16,10 @@ Invoked when the drag will begin.
 optional func draggingSession(_ session: NSDraggingSession, willBeginAt screenPoint: NSPoint)
 ```
 
+```objc
+- (void) draggingSession:(NSDraggingSession *) session willBeginAtPoint:(NSPoint) screenPoint;
+```
+
 ## Parameters
 
 - `session`: The dragging session.
@@ -22,9 +27,10 @@ optional func draggingSession(_ session: NSDraggingSession, willBeginAt screenPo
 
 ## See Also
 
-- [func draggingSession(NSDraggingSession, movedTo: NSPoint)](nsdraggingsource/draggingsession(_:movedto:).md)
+### Dragging Session Locations
+- [func draggingSession(NSDraggingSession, movedTo: NSPoint)](./draggingsession%28_,movedto%29.md)
   Invoked when the drag moves on the screen.
-- [func draggingSession(NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](nsdraggingsource/draggingsession(_:endedat:operation:).md)
+- [func draggingSession(NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](./draggingsession%28_,endedat,operation%29.md)
   Invoked when the dragging session has completed.
 
 

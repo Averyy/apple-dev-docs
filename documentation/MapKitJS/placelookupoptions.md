@@ -1,7 +1,8 @@
 # PlaceLookupOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Options for place lookup requests.
 
@@ -10,23 +11,24 @@ Options for place lookup requests.
 
 ## Declaration
 
-```swift
+```
 interface PlaceLookupOptions
 ```
 
 ## Topics
 
 ### Options
-- [language](placelookupoptions/language.md)
+- [language](./placelookupoptions/language.md)
   The language to use for the lookup.
-- [signal](placelookupoptions/signal.md)
+- [signal](./placelookupoptions/signal.md)
   A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [getPlace(id, options)](placelookup/getplace.md)
+### Getting a place
+- [getPlace(id, options)](./placelookup/getplace.md)
   Obtains a place using its identifier.
-- [getPlace(annotation, options)](placelookup/getplace1.md)
+- [getPlace(annotation, options)](./placelookup/getplace1.md)
   Obtains the place associated with a map feature annotation.
 
 

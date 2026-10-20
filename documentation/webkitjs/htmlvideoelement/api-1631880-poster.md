@@ -1,7 +1,8 @@
 # poster
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The URI address of an image file that is shown when no video data is available.
 
@@ -11,7 +12,7 @@ The URI address of an image file that is shown when no video data is available.
 
 ## Declaration
 
-```swift
+```
 attribute USVString poster;
 ```
 
@@ -21,9 +22,10 @@ When a video element is paused and the current playback position is the first fr
 
 ## See Also
 
-- [width](htmlvideoelement/1631245-width.md)
+### Getting and Setting Properties
+- [width](./api-1631245-width.md)
   The width of the video element in CSS pixels.
-- [height](htmlvideoelement/1633722-height.md)
+- [height](./api-1633722-height.md)
   The height of the video element in CSS pixels.
 
 

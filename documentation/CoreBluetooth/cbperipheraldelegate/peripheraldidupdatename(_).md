@@ -1,7 +1,8 @@
 # peripheralDidUpdateName(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a peripheral’s name changed.
 
@@ -20,6 +21,10 @@ Tells the delegate that a peripheral’s name changed.
 optional func peripheralDidUpdateName(_ peripheral: CBPeripheral)
 ```
 
+```objc
+- (void) peripheralDidUpdateName:(CBPeripheral *) peripheral;
+```
+
 #### Discussion
 
 Core Bluetooth invokes this method whenever the peripheral’s Generic Access Profile (GAP) device name changes. Since a peripheral device can change its GAP device name, you can implement this method if your app needs to display the current name of the peripheral device.
@@ -30,7 +35,8 @@ Core Bluetooth invokes this method whenever the peripheral’s Generic Access Pr
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didModifyServices: [CBService])](cbperipheraldelegate/peripheral(_:didmodifyservices:).md)
+### Monitoring Changes to a Peripheral’s Name or Services
+- [func peripheral(CBPeripheral, didModifyServices: [CBService])](./peripheral%28_,didmodifyservices%29.md)
   Tells the delegate that a peripheral’s services changed.
 
 

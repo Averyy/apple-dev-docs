@@ -1,7 +1,8 @@
 # init(icon:text:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a search token with the specified text and icon (if any).
 
@@ -17,6 +18,10 @@ Creates a search token with the specified text and icon (if any).
 init(icon: UIImage?, text: String)
 ```
 
+```objc
++ (UISearchToken *) tokenWithIcon:(UIImage *) icon text:(NSString *) text;
+```
+
 #### Return Value
 
 A new search token.
@@ -28,7 +33,8 @@ A new search token.
 
 ## See Also
 
-- [var representedObject: Any?](uisearchtoken/representedobject.md)
+### Creating a search token
+- [var representedObject: Any?](./representedobject.md)
   The object represented by the search token.
 
 

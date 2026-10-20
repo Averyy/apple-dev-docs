@@ -1,7 +1,8 @@
 # innerConeAngle
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radial angle, in degrees, of the area fully illuminated by the light.
 
@@ -19,13 +20,18 @@ The radial angle, in degrees, of the area fully illuminated by the light.
 var innerConeAngle: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float innerConeAngle;
+```
+
 #### Discussion
 
-This property measures the angle from the light axis (the direction in which the light points; the negative z-axis of its local coordinate space) to the edge of the light’s effect. For example, a cone angle of 22.5 degrees (the default) creates a broad spot light. (The light’s [`lightType`](mdllight/lighttype.md) value is [`MDLLightType.spot`](mdllighttype/spot.md).) An angle of 90 degrees divides space evenly, illuminating in all directions in front of the light and none behind, and an angle of 180 degrees illuminates in all directions (creating a light whose type is [`MDLLightType.point`](mdllighttype/point.md)).
+This property measures the angle from the light axis (the direction in which the light points; the negative z-axis of its local coordinate space) to the edge of the light’s effect. For example, a cone angle of 22.5 degrees (the default) creates a broad spot light. (The light’s [`lightType`](../mdllight/lighttype.md) value is [`MDLLightType.spot`](../mdllighttype/spot.md).) An angle of 90 degrees divides space evenly, illuminating in all directions in front of the light and none behind, and an angle of 180 degrees illuminates in all directions (creating a light whose type is [`MDLLightType.point`](../mdllighttype/point.md)).
 
 ## See Also
 
-- [var outerConeAngle: Float](mdlphysicallyplausiblelight/outerconeangle.md)
+### Managing Light Geometry
+- [var outerConeAngle: Float](./outerconeangle.md)
   The radial angle, in degrees, at which the illumination from a spotlight becomes zero.
 
 

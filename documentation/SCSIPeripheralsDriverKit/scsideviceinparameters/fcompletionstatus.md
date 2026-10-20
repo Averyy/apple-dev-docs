@@ -1,7 +1,8 @@
 # fCompletionStatus
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the task at completion of the call, such as good, busy, or timeout.
 
@@ -10,21 +11,22 @@ The status of the task at completion of the call, such as good, busy, or timeout
 
 ## Declaration
 
-```swift
+```c
 SCSITaskStatus fCompletionStatus;
 ```
 
 #### Discussion
 
-Use the values that [`SCSITaskStatus`](https://developer.apple.com/documentation/iokit/scsitaskstatus) defines to evaluate this field.
+Use the values that [`SCSITaskStatus`](../../iokit/scsitaskstatus.md) defines to evaluate this field.
 
 ## See Also
 
-- [fServiceResponse](scsideviceinparameters/fserviceresponse.md)
+### Accessing response properties
+- [fServiceResponse](./fserviceresponse.md)
   The response from the service, such as complete, in process, or rejected.
-- [fRealizedByteCountOfTransfer](scsideviceinparameters/frealizedbytecountoftransfer.md)
+- [fRealizedByteCountOfTransfer](./frealizedbytecountoftransfer.md)
   The byte count of the tranferred data.
-- [fSenseDataValid](scsideviceinparameters/fsensedatavalid.md)
+- [fSenseDataValid](./fsensedatavalid.md)
   A Boolean value that indicates whether the sense data that the kernel provides is valid.
 
 

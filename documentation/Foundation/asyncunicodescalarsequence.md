@@ -1,7 +1,8 @@
 # AsyncUnicodeScalarSequence
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asychronous sequence of Unicode scalar values.
 
@@ -23,31 +24,32 @@ struct AsyncUnicodeScalarSequence<Base> where Base : AsyncSequence, Base.Element
 ## Topics
 
 ### Supporting types
-- [AsyncUnicodeScalarSequence.Element](asyncunicodescalarsequence/element.md)
+- [AsyncUnicodeScalarSequence.Element](./asyncunicodescalarsequence/element.md)
   The type of elements produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+### Structures
+- [struct AsyncCharacterSequence](./asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](./asynclinesequence.md)
   An asynchronous sequence of lines of text.
-- [struct Expression](expression.md)
-- [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+- [struct Expression](./expression.md)
+- [struct NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey.md)
   A type that represents a key in the formatting context dictionary.
-- [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
+- [struct NSKeyValueChangeKey](./nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
-- [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)
-- [struct NSKeyValueOperator](nskeyvalueoperator.md)
-  These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
-- [struct PresentationIntent](presentationintent.md)
+- [struct NSKeyValueObservedChange](./nskeyvalueobservedchange.md)
+- [struct NSKeyValueOperator](./nskeyvalueoperator.md)
+  These constants define the available array operators. See [Using Collection Operators](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+- [struct PresentationIntent](./presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
 

@@ -1,7 +1,8 @@
 # list(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A list value (an array of `String`s) to be used with a `URL.Template`.
 

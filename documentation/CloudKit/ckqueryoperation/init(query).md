@@ -1,7 +1,8 @@
 # init(query:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation that searches for records in the specified record zone.
 
@@ -10,7 +11,7 @@ Creates an operation that searches for records in the specified record zone.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Creates an operation that searches for records in the specified record zone.
 
 ```swift
 convenience init(query: CKQuery)
+```
+
+```objc
+- (instancetype) initWithQuery:(CKQuery *) query;
 ```
 
 #### Discussion
@@ -30,9 +35,10 @@ You can use the operation that this method returns only once to perform a search
 
 ## See Also
 
-- [convenience init(cursor: CKQueryOperation.Cursor)](ckqueryoperation/init(cursor:).md)
+### Creating a Query Operation
+- [convenience init(cursor: CKQueryOperation.Cursor)](./init%28cursor%29.md)
   Creates an operation with additional results from a previous search.
-- [init()](ckqueryoperation/init.md)
+- [init()](./init%28%29.md)
   Creates an empty query operation.
 
 

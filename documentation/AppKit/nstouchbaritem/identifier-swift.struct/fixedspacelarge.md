@@ -1,7 +1,8 @@
 # fixedSpaceLarge
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of an item appropriate for use as a large space in a Touch Bar.
 
@@ -17,15 +18,20 @@ The identifier of an item appropriate for use as a large space in a Touch Bar.
 static let fixedSpaceLarge: NSTouchBarItem.Identifier
 ```
 
+```c
+extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierFixedSpaceLarge;
+```
+
 #### Discussion
 
-Use this identifier in the [`itemIdentifiers`](nstouchbar/itemidentifiers.md) array on an [`NSTouchBar`](nstouchbar.md) object and the system will instantiate the item for you.
+Use this identifier in the [`itemIdentifiers`](../../nstouchbar/itemidentifiers.md) array on an [`NSTouchBar`](../../nstouchbar.md) object and the system will instantiate the item for you.
 
 ## See Also
 
-- [static let fixedSpaceSmall: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/fixedspacesmall.md)
+### Creating identifiers for space items
+- [static let fixedSpaceSmall: NSTouchBarItem.Identifier](./fixedspacesmall.md)
   The identifier of an item appropriate for use as a small space in a Touch Bar.
-- [static let flexibleSpace: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/flexiblespace.md)
+- [static let flexibleSpace: NSTouchBarItem.Identifier](./flexiblespace.md)
   The identifier of an item appropriate for use as a flexible space in a Touch Bar.
 
 

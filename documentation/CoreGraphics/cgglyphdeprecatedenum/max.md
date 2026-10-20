@@ -1,18 +1,21 @@
 # CGGlyphDeprecatedEnum.max
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Maximum font index value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+
+> **Deprecated**: Use [`kCGGlyphMax`](../kcgglyphmax.md) instead.
 
 ## Declaration
 
@@ -20,9 +23,14 @@ Maximum font index value.
 case max
 ```
 
+```c
+CGGlyphMax
+```
+
 ## See Also
 
-- [CGGlyphDeprecatedEnum.min](cgglyphdeprecatedenum/min.md)
+### Constants
+- [CGGlyphDeprecatedEnum.min](./min.md)
   Minimum font index value.
 
 

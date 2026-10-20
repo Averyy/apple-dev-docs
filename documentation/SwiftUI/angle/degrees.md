@@ -1,7 +1,8 @@
 # degrees
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var degrees: Double { get set }
 
 ## See Also
 
-- [var radians: Double](angle/radians.md)
+### Getting the angle size
+- [var radians: Double](./radians.md)
 
 
 ---

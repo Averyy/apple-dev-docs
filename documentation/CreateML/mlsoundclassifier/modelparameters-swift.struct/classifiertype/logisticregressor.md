@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.ClassifierType.logisticRegressor
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A statistical model that uses logistic regression to classify an input vector into a category.
 
@@ -20,7 +21,8 @@ case logisticRegressor
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.ClassifierType.multilayerPerceptron(layerSizes:)](mlsoundclassifier/modelparameters-swift.struct/classifiertype/multilayerperceptron(layersizes:).md)
+### Designating an algorithm’s classifier
+- [MLSoundClassifier.ModelParameters.ClassifierType.multilayerPerceptron(layerSizes:)](./multilayerperceptron%28layersizes%29.md)
   A neural network model that uses three or more layers to classify an input into a category.
 
 

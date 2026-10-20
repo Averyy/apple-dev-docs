@@ -1,14 +1,17 @@
 # ENRiskWeightMin
 
 **Framework**: Exposure Notification  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that is the minimum for risk weight.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,11 +19,16 @@ The value that is the minimum for risk weight.
 var ENRiskWeightMin: Int { get }
 ```
 
+```c
+ENRiskWeightMin
+```
+
 ## See Also
 
-- [var ENRiskWeightMax: Int](enriskweightmax.md)
+### Constants
+- [var ENRiskWeightMax: Int](./enriskweightmax.md)
   The value that is the maximum for risk weight.
-- [var ENRiskWeightDefault: Int](enriskweightdefault.md)
+- [var ENRiskWeightDefault: Int](./enriskweightdefault.md)
   The value that is the default for risk weight.
 
 

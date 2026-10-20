@@ -1,7 +1,8 @@
 # SharePreview
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of a type to display in a share preview.
 
@@ -21,7 +22,7 @@ struct SharePreview<Image, Icon> where Image : Transferable, Icon : Transferable
 
 ## Mentions
 
-- [Configure your apps navigation titles](configure-your-apps-navigation-titles.md)
+- [Configure your apps navigation titles](./configure-your-apps-navigation-titles.md)
 
 #### Overview
 
@@ -77,29 +78,30 @@ Each preview specifies text and images that describe an item of the type. The pr
 
 The preview’s `icon` parameter is typically a thumbnail-sized representation of the source of the item. For instance, if the system prepares a preview for a link to a webpage, the icon might be an image that represents the website overall.
 
-The system may reuse a single preview representation for multiple previews, and show different images in each context. For more information and recommended sizes for each image, see [`TN2444: Best Practices for Link Previews in Messages`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2444/_index.html).
+The system may reuse a single preview representation for multiple previews, and show different images in each context. For more information and recommended sizes for each image, see [TN2444: Best Practices for Link Previews in Messages](https://developer.apple.com/library/archive/technotes/tn2444/_index.html).
 
 ## Topics
 
 ### Creating a preview
-- [init(_:)](sharepreview/init(_:).md)
+- [init(_:)](./sharepreview/init%28_%29.md)
   Creates a preview representation.
-- [init(_:image:)](sharepreview/init(_:image:).md)
+- [init(_:image:)](./sharepreview/init%28_,image%29.md)
   Creates a preview representation.
-- [init(_:icon:)](sharepreview/init(_:icon:).md)
+- [init(_:icon:)](./sharepreview/init%28_,icon%29.md)
   Creates a preview representation.
-- [init(_:image:icon:)](sharepreview/init(_:image:icon:).md)
+- [init(_:image:icon:)](./sharepreview/init%28_,image,icon%29.md)
   Creates a preview representation.
 
 ## See Also
 
-- [struct Link](link.md)
+### Linking to other content
+- [struct Link](./link.md)
   A control for navigating to a URL.
-- [struct ShareLink](sharelink.md)
+- [struct ShareLink](./sharelink.md)
   A view that controls a sharing presentation.
-- [struct TextFieldLink](textfieldlink.md)
+- [struct TextFieldLink](./textfieldlink.md)
   A control that requests text input from the user when pressed.
-- [struct HelpLink](helplink.md)
+- [struct HelpLink](./helplink.md)
   A button with a standard appearance that opens app-specific help documentation.
 
 

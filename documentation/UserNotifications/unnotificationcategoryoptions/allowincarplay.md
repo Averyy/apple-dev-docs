@@ -1,7 +1,8 @@
 # allowInCarPlay
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow CarPlay to display notifications of this type.
 
@@ -18,13 +19,18 @@ Allow CarPlay to display notifications of this type.
 static var allowInCarPlay: UNNotificationCategoryOptions { get }
 ```
 
+```c
+UNNotificationCategoryOptionAllowInCarPlay
+```
+
 #### Discussion
 
 Apps must be approved for CarPlay overall and then you must enable CarPlay for the notification types you want displayed. If a category doesn’t explicitly contain this option, notifications of that type aren’t displayed in a CarPlay environment.
 
 ## See Also
 
-- [static var allowAnnouncement: UNNotificationCategoryOptions](unnotificationcategoryoptions/allowannouncement.md)
+### Customizing a category
+- [static var allowAnnouncement: UNNotificationCategoryOptions](./allowannouncement.md)
   An option that grants Siri permission to read incoming messages out loud when the user has a compatible audio output device connected.
 
 

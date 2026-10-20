@@ -1,7 +1,8 @@
 # reportsRelativeValues
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that represents the touchpad reports deltas.
 
@@ -16,15 +17,20 @@ A Boolean value that represents the touchpad reports deltas.
 var reportsRelativeValues: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL reportsRelativeValues;
+```
+
 #### Discussion
 
 If `YES`, the touchpad will report relative delta changes between frames as touch moves instead of absolute positions.
 
 ## See Also
 
-- [var contents: TCControlContents?](tctouchpad/contents.md)
+### Inspecting at touchpad
+- [var contents: TCControlContents?](./contents.md)
   The contents for the touchpad. May be `nil`.
-- [var highlightDuration: TimeInterval](tctouchpad/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
 
 

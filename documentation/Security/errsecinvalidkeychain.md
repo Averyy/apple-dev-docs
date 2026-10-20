@@ -1,7 +1,8 @@
 # errSecInvalidKeychain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keychain is not valid.
 
@@ -18,6 +19,10 @@ The keychain is not valid.
 
 ```swift
 var errSecInvalidKeychain: OSStatus { get }
+```
+
+```c
+errSecInvalidKeychain
 ```
 
 

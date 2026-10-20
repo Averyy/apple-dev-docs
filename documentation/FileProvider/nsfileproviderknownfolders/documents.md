@@ -1,7 +1,8 @@
 # documents
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.0+
@@ -12,9 +13,14 @@
 static var documents: NSFileProviderKnownFolders { get }
 ```
 
+```c
+NSFileProviderDocuments
+```
+
 ## See Also
 
-- [static var desktop: NSFileProviderKnownFolders](nsfileproviderknownfolders/desktop.md)
+### Identifying known folders
+- [static var desktop: NSFileProviderKnownFolders](./desktop.md)
 
 
 ---

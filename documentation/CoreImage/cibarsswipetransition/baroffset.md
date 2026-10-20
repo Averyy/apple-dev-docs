@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The offset of one bar with respect to another.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The offset of one bar with respect to another.
 var barOffset: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float barOffset;
+```
+
 ## See Also
 
-- [var angle: Float](cibarsswipetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle, in radians, of the bars.
-- [var width: Float](cibarsswipetransition/width.md)
+- [var width: Float](./width.md)
   The width of each bar.
 
 

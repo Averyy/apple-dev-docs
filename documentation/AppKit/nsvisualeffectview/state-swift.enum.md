@@ -1,7 +1,8 @@
 # NSVisualEffectView.State
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to specify how the material appearance should reflect window activity state.
 
@@ -14,31 +15,36 @@ Constants to specify how the material appearance should reflect window activity 
 enum State
 ```
 
+```c
+enum NSVisualEffectState : NSInteger;
+```
+
 ## Topics
 
 ### Visual Effect View States
-- [NSVisualEffectView.State.followsWindowActiveState](nsvisualeffectview/state-swift.enum/followswindowactivestate.md)
+- [NSVisualEffectView.State.followsWindowActiveState](./state-swift.enum/followswindowactivestate.md)
   The backdrop should automatically appear active when the window is active, and inactive when it is not.
-- [NSVisualEffectView.State.active](nsvisualeffectview/state-swift.enum/active.md)
+- [NSVisualEffectView.State.active](./state-swift.enum/active.md)
   The backdrop should always appear active.
-- [NSVisualEffectView.State.inactive](nsvisualeffectview/state-swift.enum/inactive.md)
+- [NSVisualEffectView.State.inactive](./state-swift.enum/inactive.md)
   The backdrop should always appear inactive.
 ### Initializers
-- [init?(rawValue: Int)](nsvisualeffectview/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: NSVisualEffectView.State](nsvisualeffectview/state-swift.property.md)
+### Enabling or Disabling the Effect
+- [var state: NSVisualEffectView.State](./state-swift.property.md)
   A value that indicates whether a view has a visual effect applied.
 
 

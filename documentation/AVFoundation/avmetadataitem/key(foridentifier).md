@@ -1,7 +1,8 @@
 # key(forIdentifier:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a metadata key for the specified identifier.
 
@@ -20,6 +21,10 @@ Returns a metadata key for the specified identifier.
 class func key(forIdentifier identifier: AVMetadataIdentifier) -> Any?
 ```
 
+```objc
++ (id) keyForIdentifier:(AVMetadataIdentifier) identifier;
+```
+
 #### Return Value
 
 A metadata key.
@@ -30,9 +35,10 @@ A metadata key.
 
 ## See Also
 
-- [class func identifier(forKey: Any, keySpace: AVMetadataKeySpace) -> AVMetadataIdentifier?](avmetadataitem/identifier(forkey:keyspace:).md)
+### Translating metadata items
+- [class func identifier(forKey: Any, keySpace: AVMetadataKeySpace) -> AVMetadataIdentifier?](./identifier%28forkey,keyspace%29.md)
   Returns a metadata identifier for the specified key and key space.
-- [class func keySpace(forIdentifier: AVMetadataIdentifier) -> AVMetadataKeySpace?](avmetadataitem/keyspace(foridentifier:).md)
+- [class func keySpace(forIdentifier: AVMetadataIdentifier) -> AVMetadataKeySpace?](./keyspace%28foridentifier%29.md)
   Returns a metadata key space for the specified identifier.
 
 

@@ -1,7 +1,8 @@
 # PerformanceTestResponse
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The performance test response object.
 
@@ -10,13 +11,13 @@ The performance test response object.
 
 ## Declaration
 
-```swift
+```
 object PerformanceTestResponse
 ```
 
 #### Overview
 
-Use the `requestId` to get the test results, by calling [`Get Performance Test Results`](get-performance-test-results.md).
+Use the `requestId` to get the test results, by calling [`Get Performance Test Results`](./get-performance-test-results.md).
 
 ## Properties
 
@@ -25,13 +26,14 @@ Use the `requestId` to get the test results, by calling [`Get Performance Test R
 
 ## See Also
 
-- [Initiate Performance Test](initiate-performance-test.md)
+### Server performance testing
+- [Initiate Performance Test](./initiate-performance-test.md)
   Initiates a performance test of your Get Retention Message endpoint in the sandbox environment.
-- [Get Performance Test Results](get-performance-test-results.md)
+- [Get Performance Test Results](./get-performance-test-results.md)
   Gets the results of the performance test for the specified identifier.
-- [object PerformanceTestRequest](performancetestrequest.md)
+- [object PerformanceTestRequest](./performancetestrequest.md)
   The request object you provide for a performance test that contains an original transaction identifier.
-- [object PerformanceTestResultResponse](performancetestresultresponse.md)
+- [object PerformanceTestResultResponse](./performancetestresultresponse.md)
   An object the API returns that describes the performance test results.
 
 

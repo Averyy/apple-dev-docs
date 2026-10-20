@@ -1,7 +1,8 @@
 # AuthorizationExternalForm
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The external representation of an authorization reference.
 
@@ -15,24 +16,28 @@ The external representation of an authorization reference.
 struct AuthorizationExternalForm
 ```
 
+```c
+typedef struct { ... } AuthorizationExternalForm;
+```
+
 #### Overview
 
-Authorization references are bound by session, process, and time limits, so you can’t store the authorization references for another process to use. Use the functions [`AuthorizationMakeExternalForm(_:_:)`](authorizationmakeexternalform(_:_:).md) and [`AuthorizationCreateFromExternalForm(_:_:)`](authorizationcreatefromexternalform(_:_:).md) to externalize and internalize the authorization reference. Apps should take care not to disclose the external authorization reference to potential attackers since any process can use this external authorization reference to access the authorization reference.
+Authorization references are bound by session, process, and time limits, so you can’t store the authorization references for another process to use. Use the functions [`AuthorizationMakeExternalForm(_:_:)`](./authorizationmakeexternalform%28_,_%29.md) and [`AuthorizationCreateFromExternalForm(_:_:)`](./authorizationcreatefromexternalform%28_,_%29.md) to externalize and internalize the authorization reference. Apps should take care not to disclose the external authorization reference to potential attackers since any process can use this external authorization reference to access the authorization reference.
 
 ## Topics
 
 ### Initializers
-- [init()](authorizationexternalform/init.md)
-- [init(bytes: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar))](authorizationexternalform/init(bytes:).md)
+- [init()](./authorizationexternalform/init%28%29.md)
+- [init(bytes: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar))](./authorizationexternalform/init%28bytes%29.md)
 ### Instance Properties
-- [var bytes: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar)](authorizationexternalform/bytes.md)
+- [var bytes: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar)](./authorizationexternalform/bytes.md)
   An array of characters representing the external form of an authorization reference.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

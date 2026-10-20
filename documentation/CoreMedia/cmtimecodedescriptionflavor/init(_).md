@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time code description flavor.
 
@@ -26,7 +27,8 @@ init(_ rawValue: CFString)
 
 ## See Also
 
-- [init(rawValue: CFString)](cmtimecodedescriptionflavor/init(rawvalue:).md)
+### Creating a Timecode Description Flavor
+- [init(rawValue: CFString)](./init%28rawvalue%29.md)
   Creates a time code description flavor.
 
 

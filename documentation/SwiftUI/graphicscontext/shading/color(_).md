@@ -1,7 +1,8 @@
 # color(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shading instance that fills with a color.
 
@@ -26,13 +27,14 @@ A shading instance filled with a color.
 
 ## Parameters
 
-- `color`: A [`Color`](color.md) instance that defines the color of the shading.
+- `color`: A [`Color`](../../color.md) instance that defines the color of the shading.
 
 ## See Also
 
-- [static func color(Color.RGBColorSpace, red: Double, green: Double, blue: Double, opacity: Double) -> GraphicsContext.Shading](graphicscontext/shading/color(_:red:green:blue:opacity:).md)
+### Colors
+- [static func color(Color.RGBColorSpace, red: Double, green: Double, blue: Double, opacity: Double) -> GraphicsContext.Shading](./color%28_,red,green,blue,opacity%29.md)
   Returns a shading instance that fills with a color in the given color space.
-- [static func color(Color.RGBColorSpace, white: Double, opacity: Double) -> GraphicsContext.Shading](graphicscontext/shading/color(_:white:opacity:).md)
+- [static func color(Color.RGBColorSpace, white: Double, opacity: Double) -> GraphicsContext.Shading](./color%28_,white,opacity%29.md)
   Returns a shading instance that fills with a monochrome color in the given color space.
 
 

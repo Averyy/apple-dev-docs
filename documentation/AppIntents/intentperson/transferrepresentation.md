@@ -1,7 +1,8 @@
 # transferRepresentation
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transfer representation for an `IntentPerson`.
 

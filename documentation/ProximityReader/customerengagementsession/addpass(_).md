@@ -1,7 +1,8 @@
 # addPass(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the customer to confirm adding a Pass to Wallet.
 
@@ -18,7 +19,7 @@ final func addPass(_ pass: Data) async throws -> Bool
 
 ## Mentions
 
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+- [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
 #### Return Value
 
@@ -26,11 +27,11 @@ final func addPass(_ pass: Data) async throws -> Bool
 
 #### Discussion
 
-> **Note**: [`CustomerEngagementSession.Error`](customerengagementsession/error.md) if the request fails.
+> **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the request fails.
 
 ## Parameters
 
-- `pass`: Properly created `.pkpass` data to be added to Wallet. The `passTypeIdentifier` of the pass must be one of the identifiers in the [`passTypeIdentifiers`](customerengagementsession/configuration-swift.struct/passtypeidentifiers.md).
+- `pass`: Properly created `.pkpass` data to be added to Wallet. The `passTypeIdentifier` of the pass must be one of the identifiers in the [`passTypeIdentifiers`](./configuration-swift.struct/passtypeidentifiers.md).
 
 
 ---

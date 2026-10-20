@@ -1,7 +1,8 @@
 # ringtoneSoundNamed(_:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 15.2+
@@ -13,6 +14,10 @@
 
 ```swift
 class func ringtoneSoundNamed(_ name: UNNotificationSoundName) -> Self
+```
+
+```objc
++ (instancetype) ringtoneSoundNamed:(UNNotificationSoundName) name;
 ```
 
 

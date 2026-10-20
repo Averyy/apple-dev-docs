@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEvent.Restrictions
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that define restrictions on the playback of interstitial content.
 
@@ -20,32 +21,37 @@ Constants that define restrictions on the playback of interstitial content.
 struct Restrictions
 ```
 
+```c
+enum AVPlayerInterstitialEventRestrictions : NSUInteger;
+```
+
 ## Topics
 
 ### Configure
-- [static var constrainsSeekingForwardInPrimaryContent: AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.struct/constrainsseekingforwardinprimarycontent.md)
+- [static var constrainsSeekingForwardInPrimaryContent: AVPlayerInterstitialEvent.Restrictions](./restrictions-swift.struct/constrainsseekingforwardinprimarycontent.md)
   A restriction that indicates the event doesn’t allow seeking forward within an interstitial item.
-- [static var requiresPlaybackAtPreferredRateForAdvancement: AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.struct/requiresplaybackatpreferredrateforadvancement.md)
+- [static var requiresPlaybackAtPreferredRateForAdvancement: AVPlayerInterstitialEvent.Restrictions](./restrictions-swift.struct/requiresplaybackatpreferredrateforadvancement.md)
   A restriction that indicates the event doesn’t allow advancing the current time within an interstitial item.
 ### Initializing a restriction
-- [init(rawValue: UInt)](avplayerinterstitialevent/restrictions-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./restrictions-swift.struct/init%28rawvalue%29.md)
   Creates a restriction with an integer.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var restrictions: AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.property.md)
+### Managing restrictions
+- [var restrictions: AVPlayerInterstitialEvent.Restrictions](./restrictions-swift.property.md)
   The restrictions the event imposes on the playback of interstitial content.
 
 

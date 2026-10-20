@@ -1,7 +1,8 @@
 # removeAllObjects()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Empties the map table of its entries.
 
@@ -20,11 +21,16 @@ Empties the map table of its entries.
 func removeAllObjects()
 ```
 
+```objc
+- (void) removeAllObjects;
+```
+
 ## See Also
 
-- [func setObject(ObjectType?, forKey: KeyType?)](nsmaptable/setobject(_:forkey:).md)
+### Manipulating Content
+- [func setObject(ObjectType?, forKey: KeyType?)](./setobject%28_,forkey%29.md)
   Adds a given key-value pair to the map table.
-- [func removeObject(forKey: KeyType?)](nsmaptable/removeobject(forkey:).md)
+- [func removeObject(forKey: KeyType?)](./removeobject%28forkey%29.md)
   Removes a given key and its associated value from the map table.
 
 

@@ -1,7 +1,8 @@
 # map
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map that the annotation is on.
 
@@ -10,7 +11,7 @@ The map that the annotation is on.
 
 ## Declaration
 
-```swift
+```
 get map(): Map | null;
 ```
 

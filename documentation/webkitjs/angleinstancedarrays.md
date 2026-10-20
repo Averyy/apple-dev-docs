@@ -1,7 +1,8 @@
 # ANGLEInstancedArrays
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface ANGLEInstancedArrays
 ```
 
 ## Topics
 
 ### Instance Methods
-- [drawArraysInstancedANGLE](angleinstancedarrays/1632857-drawarraysinstancedangle.md)
-- [drawElementsInstancedANGLE](angleinstancedarrays/1631423-drawelementsinstancedangle.md)
-- [vertexAttribDivisorANGLE](angleinstancedarrays/1631547-vertexattribdivisorangle.md)
+- [drawArraysInstancedANGLE](./angleinstancedarrays/api-1632857-drawarraysinstancedangle.md)
+- [drawElementsInstancedANGLE](./angleinstancedarrays/api-1631423-drawelementsinstancedangle.md)
+- [vertexAttribDivisorANGLE](./angleinstancedarrays/api-1631547-vertexattribdivisorangle.md)
 ### Miscellaneous
-- [VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE](angleinstancedarrays/1631398-vertex_attrib_array_divisor_angl.md)
+- [VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE](./angleinstancedarrays/api-1631398-vertex_attrib_array_divisor_angl.md)
 
 
 ---

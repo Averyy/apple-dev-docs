@@ -1,7 +1,8 @@
 # DocumentType
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface DocumentType
 ```
 
 ## Topics
 
 ### Instance Properties
-- [name](documenttype/1633255-name.md)
-- [publicId](documenttype/1632296-publicid.md)
-- [systemId](documenttype/1631394-systemid.md)
+- [name](./documenttype/api-1633255-name.md)
+- [publicId](./documenttype/api-1632296-publicid.md)
+- [systemId](./documenttype/api-1631394-systemid.md)
 
 ## Relationships
 

@@ -1,7 +1,8 @@
 # mapError(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new result, mapping any failure value using the given transformation.
 
@@ -19,6 +20,8 @@ Returns a new result, mapping any failure value using the given transformation.
 ```swift
 consuming func mapError<NewFailure>(_ transform: (Failure) -> NewFailure) -> Result<Success, NewFailure> where NewFailure : Error
 ```
+
+Available when `Failure` conforms to `Error`.
 
 #### Return Value
 
@@ -51,11 +54,12 @@ let resultWithDatedError = result.mapError { DatedError($0) }
 
 ## See Also
 
-- [func map<NewSuccess>((Success) -> NewSuccess) -> Result<NewSuccess, Failure>](result/map(_:).md)
+### Transforming a Result
+- [func map<NewSuccess>((Success) -> NewSuccess) -> Result<NewSuccess, Failure>](./map%28_%29.md)
   Returns a new result, mapping any success value using the given transformation.
-- [func flatMap<NewSuccess>((Success) -> Result<NewSuccess, Failure>) -> Result<NewSuccess, Failure>](result/flatmap(_:).md)
+- [func flatMap<NewSuccess>((Success) -> Result<NewSuccess, Failure>) -> Result<NewSuccess, Failure>](./flatmap%28_%29.md)
   Returns a new result, mapping any success value using the given transformation and unwrapping the produced result.
-- [func flatMapError<NewFailure>((Failure) -> Result<Success, NewFailure>) -> Result<Success, NewFailure>](result/flatmaperror(_:).md)
+- [func flatMapError<NewFailure>((Failure) -> Result<Success, NewFailure>) -> Result<Success, NewFailure>](./flatmaperror%28_%29.md)
   Returns a new result, mapping any failure value using the given transformation and unwrapping the produced result.
 
 

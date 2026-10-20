@@ -1,7 +1,8 @@
 # NominationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single App Store nomination submission.
 
@@ -10,25 +11,26 @@ A response containing a single App Store nomination submission.
 
 ## Declaration
 
-```swift
+```
 object NominationResponse
 ```
 
 ## Properties
 
 - `data` (Nomination) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `Actor`, `AppEvent`, `App`, `Territory`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object Nomination](nomination.md)
+### Objects
+- [object Nomination](./nomination.md)
   A developer recommendation submitted to Apple proposing an app or in-app event for App Store editorial featuring.
-- [object NominationUpdateRequest](nominationupdaterequest.md)
+- [object NominationUpdateRequest](./nominationupdaterequest.md)
   The request body you use to update a featuring nomination.
-- [object NominationCreateRequest](nominationcreaterequest.md)
+- [object NominationCreateRequest](./nominationcreaterequest.md)
   The request body you use to create a featuring nomination.
-- [object NominationsResponse](nominationsresponse.md)
+- [object NominationsResponse](./nominationsresponse.md)
   A response containing a list of app nominations submitted for App Store editorial featuring consideration.
 
 

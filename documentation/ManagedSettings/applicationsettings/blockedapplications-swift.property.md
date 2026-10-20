@@ -1,7 +1,8 @@
 # blockedApplications
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of applications for the system to block.
 
@@ -22,7 +23,8 @@ The system hides blocked applications and prevents the user from launching them.
 
 ## See Also
 
-- [static let blockedApplications: SettingMetadata<Set<Application>>](applicationsettings/blockedapplications-swift.type.property.md)
+### Blocking applications
+- [static let blockedApplications: SettingMetadata<Set<Application>>](./blockedapplications-swift.type.property.md)
   A description of the setting that controls which apps a user can launch on their device.
 
 

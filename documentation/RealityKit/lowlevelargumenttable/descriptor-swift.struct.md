@@ -1,7 +1,8 @@
 # LowLevelArgumentTable.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The buffer and texture slot configuration for an argument table.
 
@@ -20,25 +21,26 @@ struct Descriptor
 ## Topics
 
 ### Specifying resources
-- [var buffers: [LowLevelArgumentTable.Descriptor.Buffer]](lowlevelargumenttable/descriptor-swift.struct/buffers.md)
+- [var buffers: [LowLevelArgumentTable.Descriptor.Buffer]](./descriptor-swift.struct/buffers.md)
   The ordered list of buffer slots in this table.
-- [LowLevelArgumentTable.Descriptor.Buffer](lowlevelargumenttable/descriptor-swift.struct/buffer.md)
+- [LowLevelArgumentTable.Descriptor.Buffer](./descriptor-swift.struct/buffer.md)
   A buffer slot descriptor in an argument table.
-- [var textures: [LowLevelArgumentTable.Descriptor.Texture]](lowlevelargumenttable/descriptor-swift.struct/textures.md)
+- [var textures: [LowLevelArgumentTable.Descriptor.Texture]](./descriptor-swift.struct/textures.md)
   The ordered list of texture slots in this table.
-- [LowLevelArgumentTable.Descriptor.Texture](lowlevelargumenttable/descriptor-swift.struct/texture.md)
+- [LowLevelArgumentTable.Descriptor.Texture](./descriptor-swift.struct/texture.md)
   A texture slot descriptor in an argument table.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var descriptor: LowLevelArgumentTable.Descriptor](lowlevelargumenttable/descriptor-swift.property.md)
+### Inspecting the table
+- [var descriptor: LowLevelArgumentTable.Descriptor](./descriptor-swift.property.md)
   The descriptor that describes the buffer and texture slots of this argument table.
 
 

@@ -1,6 +1,7 @@
 # Xcode 14.0.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -20,15 +21,16 @@ Xcode 14.0.1 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS
 
 ## See Also
 
-- [Xcode 14.3.1 Release Notes](xcode-14_3_1-release-notes.md)
+### Xcode 14
+- [Xcode 14.3.1 Release Notes](./xcode-14_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.3 Release Notes](xcode-14_3-release-notes.md)
+- [Xcode 14.3 Release Notes](./xcode-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.2 Release Notes](xcode-14_2-release-notes.md)
+- [Xcode 14.2 Release Notes](./xcode-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.1 Release Notes](xcode-14_1-release-notes.md)
+- [Xcode 14.1 Release Notes](./xcode-14_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14 Release Notes](xcode-14-release-notes.md)
+- [Xcode 14 Release Notes](./xcode-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

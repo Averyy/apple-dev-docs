@@ -1,7 +1,8 @@
 # init(duration:timingFunction:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transition with a duration and timing function.
 

@@ -1,7 +1,8 @@
 # kMIDIPropertyMaxTransmitChannels
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of MIDI channels on which a device may simultaneously transmit channel messages.
 
@@ -18,17 +19,22 @@ The maximum number of MIDI channels on which a device may simultaneously transmi
 let kMIDIPropertyMaxTransmitChannels: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyMaxTransmitChannels;
+```
+
 #### Discussion
 
 Common values are 0, 1, and 16.
 
 ## See Also
 
-- [let kMIDIPropertyReceiveChannels: CFString](kmidipropertyreceivechannels.md)
+### Channels
+- [let kMIDIPropertyReceiveChannels: CFString](./kmidipropertyreceivechannels.md)
   The bitmap of channels on which the object receives messages.
-- [let kMIDIPropertyTransmitChannels: CFString](kmidipropertytransmitchannels.md)
+- [let kMIDIPropertyTransmitChannels: CFString](./kmidipropertytransmitchannels.md)
   The bitmap of channels on which the object transmits messages.
-- [let kMIDIPropertyMaxReceiveChannels: CFString](kmidipropertymaxreceivechannels.md)
+- [let kMIDIPropertyMaxReceiveChannels: CFString](./kmidipropertymaxreceivechannels.md)
   The maximum number of MIDI channels on which a device may simultaneously receive channel messages.
 
 

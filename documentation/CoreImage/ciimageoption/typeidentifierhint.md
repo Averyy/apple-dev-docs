@@ -1,7 +1,8 @@
 # typeIdentifierHint
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The uniform type identifier string to use in cases where a file’s format cannot be conclusively determined based solely on its contents.
 
@@ -17,6 +18,10 @@ The uniform type identifier string to use in cases where a file’s format canno
 
 ```swift
 static let typeIdentifierHint: CIImageOption
+```
+
+```c
+extern CIImageOption const kCIImageTypeIdentifierHint;
 ```
 
 #### Discussion

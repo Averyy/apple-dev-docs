@@ -1,7 +1,8 @@
 # testingModes
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mode that gives the File Provider extension more control over the system’s behavior during testing.
 
@@ -18,6 +19,10 @@ A mode that gives the File Provider extension more control over the system’s b
 var testingModes: NSFileProviderDomain.TestingModes { get set }
 ```
 
+```objc
+@property (assign, readwrite) NSFileProviderDomainTestingModes testingModes;
+```
+
 #### Discussion
 
 By default, the value is `[]` (Swift) or `0` (Objective-C) and all testing modes are disabled. To enable a testing mode, assign its value to this property. You can combine multiple modes:
@@ -26,13 +31,14 @@ By default, the value is `[]` (Swift) or `0` (Objective-C) and all testing modes
 myDomain.testingModes = [.alwaysEnabled, .interactive]
 ```
 
-> ❗ **Important**:  You must add the [`com.apple.developer.fileprovider.testing-mode`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.fileprovider.testing-mode) entitlement to your target before assigning a non-empty value to this property. You can only use this entitlement during testing and development. If you add it to your app or extension, you must remove it before you submit your app to TestFlight or the Mac App Store.
+> ❗ **Important**:  You must add the [`com.apple.developer.fileprovider.testing-mode`](../../BundleResources/entitlements/com.apple.developer.fileprovider.testing-mode.md) entitlement to your target before assigning a non-empty value to this property. You can only use this entitlement during testing and development. If you add it to your app or extension, you must remove it before you submit your app to TestFlight or the Mac App Store.
 
-The system registers the domain’s testing mode when you add the domain by calling [`add(_:completionHandler:)`](nsfileprovidermanager/add(_:completionhandler:).md). You can’t change the test mode after you add the domain.
+The system registers the domain’s testing mode when you add the domain by calling [`add(_:completionHandler:)`](../nsfileprovidermanager/add%28_,completionhandler%29.md). You can’t change the test mode after you add the domain.
 
 ## See Also
 
-- [NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.struct.md)
+### Testing
+- [NSFileProviderDomain.TestingModes](./testingmodes-swift.struct.md)
   Modes that modify the system’s behavior while testing.
 
 

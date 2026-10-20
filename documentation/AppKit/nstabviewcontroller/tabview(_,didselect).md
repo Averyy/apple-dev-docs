@@ -1,7 +1,8 @@
 # tabView(_:didSelect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the tab view controller that the specified tab was selected.
 
@@ -15,9 +16,13 @@ Informs the tab view controller that the specified tab was selected.
 func tabView(_ tabView: NSTabView, didSelect tabViewItem: NSTabViewItem?)
 ```
 
+```objc
+- (void) tabView:(NSTabView *) tabView didSelectTabViewItem:(NSTabViewItem *) tabViewItem;
+```
+
 #### Discussion
 
-This method is a delegate method called by the [`NSTabView`](nstabview.md) object when changes occur. Use it to perform any necessary tasks after a tab is selected.
+This method is a delegate method called by the [`NSTabView`](../nstabview.md) object when changes occur. Use it to perform any necessary tasks after a tab is selected.
 
 If you override this method, you must call `super` at some point in your implementation.
 
@@ -28,11 +33,12 @@ If you override this method, you must call `super` at some point in your impleme
 
 ## See Also
 
-- [func viewDidLoad()](nstabviewcontroller/viewdidload.md)
+### Responding to Tab View Events
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Called after the view controller’s view has been loaded into memory.
-- [func tabView(NSTabView, shouldSelect: NSTabViewItem?) -> Bool](nstabviewcontroller/tabview(_:shouldselect:).md)
+- [func tabView(NSTabView, shouldSelect: NSTabViewItem?) -> Bool](./tabview%28_,shouldselect%29.md)
   Asks the tab view controller if the specified tab should be selected.
-- [func tabView(NSTabView, willSelect: NSTabViewItem?)](nstabviewcontroller/tabview(_:willselect:).md)
+- [func tabView(NSTabView, willSelect: NSTabViewItem?)](./tabview%28_,willselect%29.md)
   Informs the tab view controller that the specified tab is about to be selected.
 
 

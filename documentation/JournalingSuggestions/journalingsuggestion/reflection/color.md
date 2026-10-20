@@ -1,7 +1,8 @@
 # color
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color the system uses in the picker to render the reflection prompt content.
 
@@ -16,7 +17,8 @@ var color: Color?
 
 ## See Also
 
-- [var prompt: String](journalingsuggestion/reflection/prompt.md)
+### Identifying a reflection prompt
+- [var prompt: String](./prompt.md)
   A reflection prompt suggestion.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an input/output file handle instance that represents a file at a URL.
@@ -20,13 +21,17 @@ Creates an input/output file handle instance that represents a file at a URL.
 func makeIOFileHandle(url: URL) throws -> any MTLIOFileHandle
 ```
 
+```objc
+- (id<MTLIOFileHandle>) newIOFileHandleWithURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MTLIOFileHandle`](mtliofilehandle.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLIOFileHandle`](../mtliofilehandle.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 #### Discussion
 
-For information about using input/output command queues and file handles, see [`Resource loading`](resource-loading.md).
+For information about using input/output command queues and file handles, see [Resource loading](../resource-loading.md).
 
 ## Parameters
 
@@ -34,11 +39,12 @@ For information about using input/output command queues and file handles, see [`
 
 ## See Also
 
-- [func makeIOFileHandle(url: URL, compressionMethod: MTLIOCompressionMethod) throws -> any MTLIOFileHandle](mtldevice/makeiofilehandle(url:compressionmethod:).md)
+### Creating I/O file handles
+- [func makeIOFileHandle(url: URL, compressionMethod: MTLIOCompressionMethod) throws -> any MTLIOFileHandle](./makeiofilehandle%28url,compressionmethod%29.md)
   Creates an input/output file handle instance that represents a compressed file at a URL.
-- [func makeIOHandle(url: URL) throws -> any MTLIOFileHandle](mtldevice/makeiohandle(url:).md)
+- [func makeIOHandle(url: URL) throws -> any MTLIOFileHandle](./makeiohandle%28url%29.md)
   Creates an input/output file handle instance that represents a file at a URL.
-- [func makeIOHandle(url: URL, compressionMethod: MTLIOCompressionMethod) throws -> any MTLIOFileHandle](mtldevice/makeiohandle(url:compressionmethod:).md)
+- [func makeIOHandle(url: URL, compressionMethod: MTLIOCompressionMethod) throws -> any MTLIOFileHandle](./makeiohandle%28url,compressionmethod%29.md)
   Creates an input/output file handle instance that represents a compressed file at a URL.
 
 

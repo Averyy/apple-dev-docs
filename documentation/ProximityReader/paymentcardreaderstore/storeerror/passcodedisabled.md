@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.passcodeDisabled
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 To fetch a batch device’s passcode needs to be enabled.
 

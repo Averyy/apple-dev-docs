@@ -1,7 +1,8 @@
 # USDPrim.SpecializeCollection
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Manages specializes composition arcs on a prim.
 
@@ -26,16 +27,16 @@ Specialization is similar to inheritance but with different composition strength
 ## Topics
 
 ### Instance Properties
-- [var prim: USDPrim](usdprim/specializecollection/prim.md)
+- [var prim: USDPrim](./specializecollection/prim.md)
   The prim that owns these specializes arcs.
 ### Instance Methods
-- [func add(USDLayer.Path, position: USDPrim.ListPosition) throws](usdprim/specializecollection/add(_:position:).md)
+- [func add(USDLayer.Path, position: USDPrim.ListPosition) throws](./specializecollection/add%28_,position%29.md)
   Adds a specializes arc to the prim.
-- [func clear() throws](usdprim/specializecollection/clear.md)
+- [func clear() throws](./specializecollection/clear%28%29.md)
   Removes all specializes arcs from the prim.
-- [func remove(USDLayer.Path) throws](usdprim/specializecollection/remove(_:).md)
+- [func remove(USDLayer.Path) throws](./specializecollection/remove%28_%29.md)
   Removes a specific specializes arc from the prim.
-- [func set([USDLayer.Path]) throws](usdprim/specializecollection/set(_:).md)
+- [func set([USDLayer.Path]) throws](./specializecollection/set%28_%29.md)
   Replaces all specializes arcs with the specified list.
 
 

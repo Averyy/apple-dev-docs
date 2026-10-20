@@ -1,7 +1,8 @@
 # SecPolicyCreateRevocation(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a policy object for checking revocation of certificates.
 
@@ -20,6 +21,10 @@ Returns a policy object for checking revocation of certificates.
 func SecPolicyCreateRevocation(_ revocationFlags: CFOptionFlags) -> SecPolicy?
 ```
 
+```c
+SecPolicyRefSecPolicyCreateRevocation(CFOptionFlags revocationFlags);
+```
+
 #### Return Value
 
 A policy object or `nil` on failure.
@@ -30,7 +35,7 @@ It’s usually not necessary to create a revocation policy yourself unless you w
 
 ## Parameters
 
-- `revocationFlags`: Flags that specify revocation checking options. See [`Revocation Policy Constants`](revocation-policy-constants.md) for a list of possible values.
+- `revocationFlags`: Flags that specify revocation checking options. See [Revocation Policy Constants](./revocation-policy-constants.md) for a list of possible values.
 
 
 ---

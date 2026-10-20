@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the localized description of the app push manager.
 
@@ -17,11 +18,16 @@ A string that contains the localized description of the app push manager.
 var localizedDescription: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * localizedDescription;
+```
+
 ## See Also
 
-- [var isActive: Bool](neapppushmanager/isactive.md)
+### Inspecting manager properties
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether a configuration is in use.
-- [var isEnabled: Bool](neapppushmanager/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A property you use to toggle enabling the configuration.
 
 

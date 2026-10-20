@@ -1,7 +1,8 @@
 # removePage(at:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the page at the specified index point.
 
@@ -19,23 +20,28 @@ Removes the page at the specified index point.
 func removePage(at index: Int)
 ```
 
+```objc
+- (void) removePageAtIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 This method raises an exception if `index` is out of bounds.
 
 ## See Also
 
-- [var pageCount: Int](pdfdocument/pagecount.md)
+### Working with Pages
+- [var pageCount: Int](./pagecount.md)
   The number of pages in the document.
-- [func page(at: Int) -> PDFPage?](pdfdocument/page(at:).md)
+- [func page(at: Int) -> PDFPage?](./page%28at%29.md)
   Returns the page at the specified index number.
-- [func index(for: PDFPage) -> Int](pdfdocument/index(for:).md)
+- [func index(for: PDFPage) -> Int](./index%28for%29.md)
   Gets the index number for the specified page.
-- [func insert(PDFPage, at: Int)](pdfdocument/insert(_:at:).md)
+- [func insert(PDFPage, at: Int)](./insert%28_,at%29.md)
   Inserts a page at the specified index point.
-- [func exchangePage(at: Int, withPageAt: Int)](pdfdocument/exchangepage(at:withpageat:).md)
+- [func exchangePage(at: Int, withPageAt: Int)](./exchangepage%28at,withpageat%29.md)
   Swaps one page with another.
-- [var pageClass: AnyClass](pdfdocument/pageclass.md)
+- [var pageClass: AnyClass](./pageclass.md)
   The class that is allocated and initialized when page objects are created for the document.
 
 

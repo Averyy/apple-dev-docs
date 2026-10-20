@@ -1,7 +1,8 @@
 # NSOutlineView.ColumnDidMoveMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct ColumnDidMoveMessage
 ## Topics
 
 ### Initializers
-- [init(outlineView: NSOutlineView, oldColumn: Int, newColumn: Int)](nsoutlineview/columndidmovemessage/init(outlineview:oldcolumn:newcolumn:).md)
+- [init(outlineView: NSOutlineView, oldColumn: Int, newColumn: Int)](./columndidmovemessage/init%28outlineview,oldcolumn,newcolumn%29.md)
 ### Instance Properties
-- [var newColumn: Int](nsoutlineview/columndidmovemessage/newcolumn.md)
-- [var oldColumn: Int](nsoutlineview/columndidmovemessage/oldcolumn.md)
-- [var outlineView: NSOutlineView](nsoutlineview/columndidmovemessage/outlineview.md)
+- [var newColumn: Int](./columndidmovemessage/newcolumn.md)
+- [var oldColumn: Int](./columndidmovemessage/oldcolumn.md)
+- [var outlineView: NSOutlineView](./columndidmovemessage/outlineview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

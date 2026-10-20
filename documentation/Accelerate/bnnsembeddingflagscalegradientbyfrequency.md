@@ -1,7 +1,8 @@
 # BNNSEmbeddingFlagScaleGradientByFrequency
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that specifies that the operation scales calculated gradients based on the number of occurrence of the corresponding index in the input.
 
@@ -20,13 +21,18 @@ A flag that specifies that the operation scales calculated gradients based on th
 var BNNSEmbeddingFlagScaleGradientByFrequency: BNNSEmbeddingFlags { get }
 ```
 
+```c
+BNNSEmbeddingFlagScaleGradientByFrequency
+```
+
 ## See Also
 
-- [init(UInt32)](bnnsembeddingflags/init(_:).md)
+### Embedding Flags
+- [init(UInt32)](./bnnsembeddingflags/init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: UInt32)](bnnsembeddingflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsembeddingflags/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: UInt32](bnnsembeddingflags/rawvalue.md)
+- [var rawValue: UInt32](./bnnsembeddingflags/rawvalue.md)
   The corresponding value of the raw type.
 
 

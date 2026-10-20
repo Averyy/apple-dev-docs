@@ -1,7 +1,8 @@
 # HPKE.Errors.inconsistentPSKInputs
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The PSK is nil and the PSK ID isn’t nil, or the PSK ID is nil and the PSK isn’t nil.
 

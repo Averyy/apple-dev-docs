@@ -1,7 +1,8 @@
 # nan
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quiet NaN (“not a number”).
 

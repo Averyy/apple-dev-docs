@@ -1,14 +1,15 @@
 # PE_mark_hwaccess_data
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 void PE_mark_hwaccess_data(uint8_t type, uint8_t size, uint64_t paddr);
 ```
 

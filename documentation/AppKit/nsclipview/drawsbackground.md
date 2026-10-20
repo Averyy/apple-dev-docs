@@ -1,12 +1,13 @@
 # drawsBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the clip view draws its background color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates if the clip view draws its background color.
 var drawsBackground: Bool { get set }
 ```
 
+```objc
+@property BOOL drawsBackground;
+```
+
 #### Discussion
 
-If your [`NSClipView`](nsclipview.md) is enclosed in an [`NSScrollView`](nsscrollview.md), you should set the [`drawsBackground`](nsclipview/drawsbackground.md) property on the [`NSScrollView`](nsscrollview.md). Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) on an [`NSScrollView`](nsscrollview.md) has the added effect of setting the [`NSClipView`](nsclipview.md) property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/swift/false). The side effect of setting the [`drawsBackground`](nsclipview/drawsbackground.md) property on the [`NSClipView`](nsclipview.md) is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
+If your [`NSClipView`](../nsclipview.md) is enclosed in an [`NSScrollView`](../nsscrollview.md), you should set the [`drawsBackground`](./drawsbackground.md) property on the [`NSScrollView`](../nsscrollview.md). Setting this property to [`false`](../../Swift/false.md) on an [`NSScrollView`](../nsscrollview.md) has the added effect of setting the [`NSClipView`](../nsclipview.md) property [`copiesOnScroll`](./copiesonscroll.md) to [`false`](../../Swift/false.md). The side effect of setting the [`drawsBackground`](./drawsbackground.md) property on the [`NSClipView`](../nsclipview.md) is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
 
 ## See Also
 
-- [var backgroundColor: NSColor](nsclipview/backgroundcolor.md)
+### Working with Background Color
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The color of the clip view’s background.
 
 

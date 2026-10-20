@@ -1,7 +1,8 @@
 # match(_:shouldReinviteDisconnectedPlayer:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the local player should reinvite another player who disconnected from a two-player match.
 
@@ -19,17 +20,21 @@ Determines whether the local player should reinvite another player who disconnec
 optional func match(_ match: GKMatch, shouldReinviteDisconnectedPlayer player: GKPlayer) -> Bool
 ```
 
+```objc
+- (BOOL) match:(GKMatch *) match shouldReinviteDisconnectedPlayer:(GKPlayer *) player;
+```
+
 ## Mentions
 
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if GameKit should reinvite the player when they disconnect; [`false`](https://developer.apple.com/documentation/swift/false) if GameKit should end the match when the player disconnects.
+[`true`](../../Swift/true.md) if GameKit should reinvite the player when they disconnect; [`false`](../../Swift/false.md) if GameKit should end the match when the player disconnects.
 
 #### Discussion
 
-If the player successfully reconnects to the match, GameKit sends [`match(_:player:didChange:)`](gkmatchdelegate/match(_:player:didchange:)-8ohgr.md) to the match’s delegate.
+If the player successfully reconnects to the match, GameKit sends [`match(_:player:didChange:)`](./match%28_,player,didchange%29-8ohgr.md) to the match’s delegate.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # left()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func left() -> String!
+```
+
+```objc
+- (NSString *) left;
 ```
 
 

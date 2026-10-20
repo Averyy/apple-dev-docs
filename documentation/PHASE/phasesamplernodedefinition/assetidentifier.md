@@ -1,7 +1,8 @@
 # assetIdentifier
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the audio this node plays.
 
@@ -19,9 +20,13 @@ The name of the audio this node plays.
 var assetIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * assetIdentifier;
+```
+
 #### Discussion
 
-This property refers to the registered identifier of the audio file. See [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).md).
+This property refers to the registered identifier of the audio file. See [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](../phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md).
 
 
 ---

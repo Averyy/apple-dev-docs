@@ -1,14 +1,15 @@
 # kInterlacedCEA861SyncModeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kInterlacedCEA861SyncModeMask = (1 << kInterlacedCEA861SyncModeBit)
 ```
 

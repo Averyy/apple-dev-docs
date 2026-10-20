@@ -1,7 +1,8 @@
 # symbolVariableValueMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current symbol variable value mode, or `nil` denoting that the mode is picked automatically.
 

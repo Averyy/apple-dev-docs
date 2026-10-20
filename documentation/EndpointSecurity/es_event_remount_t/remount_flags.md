@@ -1,16 +1,21 @@
 # remount_flags
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var remount_flags: UInt64
+```
+
+```c
+uint64_t remount_flags;
 ```
 
 

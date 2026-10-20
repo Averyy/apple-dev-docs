@@ -1,13 +1,14 @@
 # output::outputIndex
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the current output element being processed.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The zero-based index of the current output element.
 
 This function provides the zero-based index of the output element within the current output range, useful for per-element computations and indexing operations. If sorting is active, this corresponds to the post-sorting ordering.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__outputIndex.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__outputIndex.svg)
 
 
 ---

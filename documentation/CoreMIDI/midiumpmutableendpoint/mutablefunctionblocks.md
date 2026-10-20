@@ -1,7 +1,8 @@
 # mutableFunctionBlocks
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var mutableFunctionBlocks: [MIDIUMPMutableFunctionBlock] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<MIDIUMPMutableFunctionBlock *> * mutableFunctionBlocks;
 ```
 
 

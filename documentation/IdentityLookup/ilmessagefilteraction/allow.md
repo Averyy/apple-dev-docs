@@ -1,7 +1,8 @@
 # ILMessageFilterAction.allow
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows the system to show the message unfiltered.
 
@@ -17,15 +18,20 @@ Allows the system to show the message unfiltered.
 case allow
 ```
 
+```c
+ILMessageFilterActionAllow
+```
+
 ## See Also
 
-- [ILMessageFilterAction.none](ilmessagefilteraction/none.md)
+### Filter Actions
+- [ILMessageFilterAction.none](./none.md)
   Allows the system to show the message unfiltered due to insufficient information to determine an action.
-- [ILMessageFilterAction.junk](ilmessagefilteraction/junk.md)
+- [ILMessageFilterAction.junk](./junk.md)
   Prevents the system from showing the message normally, filtered as a Junk message.
-- [ILMessageFilterAction.promotion](ilmessagefilteraction/promotion.md)
+- [ILMessageFilterAction.promotion](./promotion.md)
   Prevents the system from showing the message normally, filtered as a Promotional message.
-- [ILMessageFilterAction.transaction](ilmessagefilteraction/transaction.md)
+- [ILMessageFilterAction.transaction](./transaction.md)
   Prevents the system from showing the message normally, filtered as a Transactional message.
 
 

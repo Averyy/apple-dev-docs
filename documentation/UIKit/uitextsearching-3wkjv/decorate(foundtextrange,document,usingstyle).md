@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Applies the style to a specific text range to indicate found and highlighted results.
@@ -10,7 +11,7 @@ Applies the style to a specific text range to indicate found and highlighted res
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,11 +31,12 @@ The system calls this method during a find session to display the results of a s
 
 ## See Also
 
-- [func clearAllDecoratedFoundText()](uitextsearching-3wkjv/clearalldecoratedfoundtext.md)
+### Displaying results
+- [func clearAllDecoratedFoundText()](./clearalldecoratedfoundtext%28%29.md)
   Clears the style from all found and highlighted results.
-- [func willHighlight(foundTextRange: UITextRange, document: Self.DocumentIdentifier?)](uitextsearching-3wkjv/willhighlight(foundtextrange:document:).md)
+- [func willHighlight(foundTextRange: UITextRange, document: Self.DocumentIdentifier?)](./willhighlight%28foundtextrange,document%29.md)
   Informs the searchable object when the highlighted search result is about to change.
-- [func scrollRangeToVisible(UITextRange, inDocument: Self.DocumentIdentifier?)](uitextsearching-3wkjv/scrollrangetovisible(_:indocument:).md)
+- [func scrollRangeToVisible(UITextRange, inDocument: Self.DocumentIdentifier?)](./scrollrangetovisible%28_,indocument%29.md)
   Scrolls to the containing view to make the text range visible.
 
 

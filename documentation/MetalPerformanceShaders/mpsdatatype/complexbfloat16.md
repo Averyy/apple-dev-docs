@@ -1,7 +1,8 @@
 # MPSDataType.complexBFloat16
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.3+
@@ -15,6 +16,10 @@
 
 ```swift
 case complexBFloat16
+```
+
+```c
+MPSDataTypeComplexBFloat16
 ```
 
 

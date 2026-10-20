@@ -1,7 +1,8 @@
 # init(preAlert:postAlert:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of a countdown duration.
 
@@ -23,9 +24,10 @@ init(preAlert: TimeInterval?, postAlert: TimeInterval?)
 
 ## See Also
 
-- [var postAlert: TimeInterval?](alarm/countdownduration-swift.struct/postalert.md)
+### Creating a countdown duration
+- [var postAlert: TimeInterval?](./postalert.md)
   The duration applied after the alarm has alerted at least once and moves back to the countdown state.
-- [var preAlert: TimeInterval?](alarm/countdownduration-swift.struct/prealert.md)
+- [var preAlert: TimeInterval?](./prealert.md)
   The duration applied before the alarm fires.
 
 

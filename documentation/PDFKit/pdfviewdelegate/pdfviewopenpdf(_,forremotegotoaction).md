@@ -1,7 +1,8 @@
 # pdfViewOpenPDF(_:forRemoteGoToAction:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a specified page.
 
@@ -19,13 +20,18 @@ Opens a specified page.
 optional func pdfViewOpenPDF(_ sender: PDFView, forRemoteGoToAction action: PDFActionRemoteGoTo)
 ```
 
+```objc
+- (void) PDFViewOpenPDF:(PDFView *) sender forRemoteGoToAction:(PDFActionRemoteGoTo *) action;
+```
+
 ## See Also
 
-- [func pdfViewPerformFind(PDFView)](pdfviewdelegate/pdfviewperformfind(_:).md)
+### Working with Annotation Actions
+- [func pdfViewPerformFind(PDFView)](./pdfviewperformfind%28_%29.md)
   Performs a find operation.
-- [func pdfViewPerformGo(toPage: PDFView)](pdfviewdelegate/pdfviewperformgo(topage:).md)
+- [func pdfViewPerformGo(toPage: PDFView)](./pdfviewperformgo%28topage%29.md)
   Performs a go-to operation.
-- [func pdfViewPerformPrint(PDFView)](pdfviewdelegate/pdfviewperformprint(_:).md)
+- [func pdfViewPerformPrint(PDFView)](./pdfviewperformprint%28_%29.md)
   Prints the current document.
 
 

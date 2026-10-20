@@ -1,7 +1,8 @@
 # endTime
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom end time of the track.
 

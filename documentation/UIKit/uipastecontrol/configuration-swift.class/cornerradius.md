@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that rounds the edges of a paste button.
 
@@ -17,13 +18,18 @@ A value that rounds the edges of a paste button.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat cornerRadius;
+```
+
 #### Discussion
 
 Set this property to `0` for square edges. A nonzero value indicates rounded edges.
 
 ## See Also
 
-- [var cornerStyle: UIButton.Configuration.CornerStyle](uipastecontrol/configuration-swift.class/cornerstyle.md)
+### Shaping button corners
+- [var cornerStyle: UIButton.Configuration.CornerStyle](./cornerstyle.md)
   A shape for the button among a predetermined set of templates.
 
 

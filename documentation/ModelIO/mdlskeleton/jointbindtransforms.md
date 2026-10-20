@@ -1,7 +1,8 @@
 # jointBindTransforms
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var jointBindTransforms: MDLMatrix4x4Array { get }
+```
+
+```objc
+@property (nonatomic, readonly) MDLMatrix4x4Array * jointBindTransforms;
 ```
 
 

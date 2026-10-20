@@ -1,7 +1,8 @@
 # decodeIfPresent(_:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a value of the given type for the given key, if present.
 
@@ -28,7 +29,7 @@ A decoded value of the requested type, or `nil` if the `Decoder` does not have a
 
 This method returns `nil` if the container does not have a value associated with `key`, or if the value is null. The difference between these states can be distinguished with a `contains(_:)` call.
 
-> **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
+> **Throws**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
 ## Parameters
 

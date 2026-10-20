@@ -1,7 +1,8 @@
 # leave()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Explicitly indicates that a block in the group finished executing.
 
@@ -10,7 +11,7 @@ Explicitly indicates that a block in the group finished executing.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ Explicitly indicates that a block in the group finished executing.
 func leave()
 ```
 
+```c
+extern void dispatch_group_leave(dispatch_group_t group);
+```
+
 #### Discussion
 
-Calling this function decrements the current count of outstanding tasks in the group. Using this function (with [`enter()`](dispatchgroup/enter().md)) allows your application to properly manage the task reference count if it explicitly adds and removes tasks from the group by a means other than using the [`dispatch_group_async`](dispatch_group_async.md) function.
+Calling this function decrements the current count of outstanding tasks in the group. Using this function (with [`enter()`](./enter%28%29.md)) allows your application to properly manage the task reference count if it explicitly adds and removes tasks from the group by a means other than using the [`dispatch_group_async`](../dispatch_group_async.md) function.
 
-A call to this function must balance a call to [`enter()`](dispatchgroup/enter().md). It is invalid to call it more times than [`enter()`](dispatchgroup/enter().md), which would result in a negative count.
+A call to this function must balance a call to [`enter()`](./enter%28%29.md). It is invalid to call it more times than [`enter()`](./enter%28%29.md), which would result in a negative count.
 
 ## See Also
 
-- [func enter()](dispatchgroup/enter.md)
+### Updating the Group Manually
+- [func enter()](./enter%28%29.md)
   Explicitly indicates that a block has entered the group.
 
 

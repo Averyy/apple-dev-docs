@@ -1,7 +1,8 @@
 # value(forKey:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value for the property specified by `key`.
 
@@ -10,7 +11,7 @@ Returns the value for the property specified by `key`.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the value for the property specified by `key`.
 
 ```swift
 func value(forKey key: String) -> Any?
+```
+
+```objc
+- (id) valueForKey:(NSString *) key;
 ```
 
 #### Return Value
@@ -36,15 +41,17 @@ If `key` is not a property defined by the model, the method raises an exception.
 
 ## See Also
 
-- [func setObservationInfo(UnsafeMutableRawPointer?)](nsmanagedobject/setobservationinfo(_:).md)
+### Related Documentation
+- [func setObservationInfo(UnsafeMutableRawPointer?)](./setobservationinfo%28_%29.md)
   Sets the observation info of the managed object.
-- [func setValue(Any?, forKey: String)](nsmanagedobject/setvalue(_:forkey:).md)
+### Supporting Key-Value Coding
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Sets the specified property of the managed object to the specified value.
-- [func primitiveValue(forKey: String) -> Any?](nsmanagedobject/primitivevalue(forkey:).md)
+- [func primitiveValue(forKey: String) -> Any?](./primitivevalue%28forkey%29.md)
   Returns the value for the specified property from the managed object’s private internal storage .
-- [func setPrimitiveValue(Any?, forKey: String)](nsmanagedobject/setprimitivevalue(_:forkey:).md)
+- [func setPrimitiveValue(Any?, forKey: String)](./setprimitivevalue%28_,forkey%29.md)
   Sets the value of a given property in the managed object’s private internal storage.
-- [func objectIDs(forRelationshipNamed: String) -> [NSManagedObjectID]](nsmanagedobject/objectids(forrelationshipnamed:).md)
+- [func objectIDs(forRelationshipNamed: String) -> [NSManagedObjectID]](./objectids%28forrelationshipnamed%29.md)
   Returns the object IDs for all of the managed objects that are in the named relationship.
 
 

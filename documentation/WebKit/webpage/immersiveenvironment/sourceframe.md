@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame information of the website that provided this immersive environment.
 

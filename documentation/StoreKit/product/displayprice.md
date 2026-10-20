@@ -1,7 +1,8 @@
 # displayPrice
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized string representation of the product price, suitable for display.
 
@@ -22,23 +23,24 @@ let displayPrice: String
 
 #### Discussion
 
-Use this string to display the price, formatted for the locale. The storefront that the user’s device is connected to determines the locale. For more information, see [`Storefront`](storefront.md).
+Use this string to display the price, formatted for the locale. The storefront that the user’s device is connected to determines the locale. For more information, see [`Storefront`](../storefront.md).
 
-To perform arithmetic calculations with the price, use the [`price`](product/price.md) property instead.
+To perform arithmetic calculations with the price, use the [`price`](./price.md) property instead.
 
 ## See Also
 
-- [let displayName: String](product/displayname.md)
+### Displaying a product description and price
+- [let displayName: String](./displayname.md)
   The localized display name of the product, if it exists.
-- [let description: String](product/description.md)
+- [let description: String](./description.md)
   The localized description of the product.
-- [let price: Decimal](product/price.md)
+- [let price: Decimal](./price.md)
   The decimal representation of the cost of the product, in local currency.
-- [var priceFormatStyle: Decimal.FormatStyle.Currency](product/priceformatstyle.md)
+- [var priceFormatStyle: Decimal.FormatStyle.Currency](./priceformatstyle.md)
   The format style for the numbers in the price of the product.
-- [var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle](product/subscriptionperiodformatstyle.md)
+- [var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle](./subscriptionperiodformatstyle.md)
   The format style for the date components related to a subscription’s duration.
-- [var subscriptionPeriodUnitFormatStyle: Product.SubscriptionPeriod.Unit.FormatStyle](product/subscriptionperiodunitformatstyle.md)
+- [var subscriptionPeriodUnitFormatStyle: Product.SubscriptionPeriod.Unit.FormatStyle](./subscriptionperiodunitformatstyle.md)
   The format style for subscription period units, such as week, month, or year.
 
 

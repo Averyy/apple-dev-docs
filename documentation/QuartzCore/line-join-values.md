@@ -1,30 +1,32 @@
 # Line Join Values
 
-**Framework**: Core Animation
+**Framework**: Core Animation  
+**Role**: API Collection
 
 These constants specify the shape of the joints between connected segments of a stroked path.
 
 #### Overview
 
-Used by [`lineJoin`](cashapelayer/linejoin.md). The following figure shows the appearance of the available line join styles.
+Used by [`lineJoin`](./cashapelayer/linejoin.md). The following figure shows the appearance of the available line join styles.
 
-![None](/images/com.apple.quartzcore/media-1965771.gif)
+![](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-1965771.gif)
 
 ## Topics
 
 ### Constants
-- [static let miter: CAShapeLayerLineJoin](cashapelayerlinejoin/miter.md)
+- [static let miter: CAShapeLayerLineJoin](./cashapelayerlinejoin/miter.md)
   Specifies a miter line shape of the joints between connected segments of a stroked path.
-- [static let round: CAShapeLayerLineJoin](cashapelayerlinejoin/round.md)
+- [static let round: CAShapeLayerLineJoin](./cashapelayerlinejoin/round.md)
   Specifies a round line shape of the joints between connected segments of a stroked path.
-- [static let bevel: CAShapeLayerLineJoin](cashapelayerlinejoin/bevel.md)
+- [static let bevel: CAShapeLayerLineJoin](./cashapelayerlinejoin/bevel.md)
   Specifies a bevel line shape of the joints between connected segments of a stroked path.
 
 ## See Also
 
-- [Shape Fill Mode Values](shape-fill-mode-values.md)
-  These constants specify the possible fill modes for [`fillRule`](cashapelayer/fillrule.md).
-- [Line Cap Values](line-cap-values.md)
+### Constants
+- [Shape Fill Mode Values](./shape-fill-mode-values.md)
+  These constants specify the possible fill modes for [`fillRule`](./cashapelayer/fillrule.md).
+- [Line Cap Values](./line-cap-values.md)
   These constants specify the shape of endpoints for an open path when stroked.
 
 

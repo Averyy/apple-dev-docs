@@ -1,7 +1,8 @@
 # lastModificationDate
 
 **Framework**: ThreadNetwork  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time that the framework updated the credential in the database.
 
@@ -19,9 +20,14 @@ The date and time that the framework updated the credential in the database.
 var lastModificationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * lastModificationDate;
+```
+
 ## See Also
 
-- [var creationDate: Date?](thcredentials/creationdate.md)
+### Getting the Framework Parameters
+- [var creationDate: Date?](./creationdate.md)
   The date and time that the framework stored the credential in the database.
 
 

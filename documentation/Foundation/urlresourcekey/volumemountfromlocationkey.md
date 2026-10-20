@@ -1,7 +1,8 @@
 # volumeMountFromLocationKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key for the volume mounted-from location.
 
@@ -20,33 +21,38 @@ The key for the volume mounted-from location.
 static let volumeMountFromLocationKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLVolumeMountFromLocationKey;
+```
+
 ## See Also
 
-- [static let volumeIsAutomountedKey: URLResourceKey](urlresourcekey/volumeisautomountedkey.md)
+### Volume status keys
+- [static let volumeIsAutomountedKey: URLResourceKey](./volumeisautomountedkey.md)
   A key for determining whether the volume is automounted.
-- [static let volumeIsBrowsableKey: URLResourceKey](urlresourcekey/volumeisbrowsablekey.md)
+- [static let volumeIsBrowsableKey: URLResourceKey](./volumeisbrowsablekey.md)
   A key for determining whether the volume is visible in GUI-based file-browsing environments, such as the Desktop or the Finder app.
-- [static let volumeIsEjectableKey: URLResourceKey](urlresourcekey/volumeisejectablekey.md)
+- [static let volumeIsEjectableKey: URLResourceKey](./volumeisejectablekey.md)
   A key for determining whether the volume is ejectable from the drive mechanism under software control.
-- [static let volumeIsEncryptedKey: URLResourceKey](urlresourcekey/volumeisencryptedkey.md)
+- [static let volumeIsEncryptedKey: URLResourceKey](./volumeisencryptedkey.md)
   A key for determining whether the volume is encrypted.
-- [static let volumeIsInternalKey: URLResourceKey](urlresourcekey/volumeisinternalkey.md)
+- [static let volumeIsInternalKey: URLResourceKey](./volumeisinternalkey.md)
   A key for determining whether the volume is connected to an internal bus.
-- [static let volumeIsJournalingKey: URLResourceKey](urlresourcekey/volumeisjournalingkey.md)
+- [static let volumeIsJournalingKey: URLResourceKey](./volumeisjournalingkey.md)
   A key for determining whether the volume is currently journaling.
-- [static let volumeIsLocalKey: URLResourceKey](urlresourcekey/volumeislocalkey.md)
+- [static let volumeIsLocalKey: URLResourceKey](./volumeislocalkey.md)
   A key for determining whether the volume is on a local device.
-- [static let volumeIsReadOnlyKey: URLResourceKey](urlresourcekey/volumeisreadonlykey.md)
+- [static let volumeIsReadOnlyKey: URLResourceKey](./volumeisreadonlykey.md)
   A key for determining whether the volume is read-only.
-- [static let volumeIsRemovableKey: URLResourceKey](urlresourcekey/volumeisremovablekey.md)
+- [static let volumeIsRemovableKey: URLResourceKey](./volumeisremovablekey.md)
   A key for determining whether the volume is removable from the drive mechanism.
-- [static let volumeIsRootFileSystemKey: URLResourceKey](urlresourcekey/volumeisrootfilesystemkey.md)
+- [static let volumeIsRootFileSystemKey: URLResourceKey](./volumeisrootfilesystemkey.md)
   A key for determining whether the volume is the root file system.
-- [static let volumeSupportsFileProtectionKey: URLResourceKey](urlresourcekey/volumesupportsfileprotectionkey.md)
+- [static let volumeSupportsFileProtectionKey: URLResourceKey](./volumesupportsfileprotectionkey.md)
   A Boolean value that indicates the volume supports data protection for files.
-- [static let volumeTypeNameKey: URLResourceKey](urlresourcekey/volumetypenamekey.md)
+- [static let volumeTypeNameKey: URLResourceKey](./volumetypenamekey.md)
   The key for the name of the file system type.
-- [static let volumeSubtypeKey: URLResourceKey](urlresourcekey/volumesubtypekey.md)
+- [static let volumeSubtypeKey: URLResourceKey](./volumesubtypekey.md)
   The key for the file system subtype value.
 
 

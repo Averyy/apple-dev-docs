@@ -1,7 +1,8 @@
 # privateFunctionDescriptors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides an array of private functions to link at the Metal IR level.
 
@@ -19,11 +20,15 @@ Provides an array of private functions to link at the Metal IR level.
 var privateFunctionDescriptors: [MTL4FunctionDescriptor]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<MTL4FunctionDescriptor *> * privateFunctionDescriptors;
+```
+
 #### Discussion
 
-You specify private functions to link separately from [`functionDescriptors`](mtl4staticlinkingdescriptor/functiondescriptors.md) because pipelines don’t export private functions as [`MTLFunctionHandle`](mtlfunctionhandle.md) instances.
+You specify private functions to link separately from [`functionDescriptors`](./functiondescriptors.md) because pipelines don’t export private functions as [`MTLFunctionHandle`](../mtlfunctionhandle.md) instances.
 
-> **Note**: You can link private functions even when your [`MTLDevice`](mtldevice.md) doesn’t support function pointers.
+> **Note**: You can link private functions even when your [`MTLDevice`](../mtldevice.md) doesn’t support function pointers.
 
 
 ---

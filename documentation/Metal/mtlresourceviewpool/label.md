@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Queries the optional debug label of this resource view pool.
@@ -18,6 +19,10 @@ Queries the optional debug label of this resource view pool.
 
 ```swift
 var label: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * label;
 ```
 
 

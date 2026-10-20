@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a view controller object initialized to the nib file in the specified bundle.
 
@@ -14,17 +15,21 @@ Returns a view controller object initialized to the nib file in the specified bu
 init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?)
 ```
 
+```objc
+- (instancetype) initWithNibName:(NSNibName) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
+```
+
 #### Return Value
 
-The initialized [`NSViewController`](nsviewcontroller.md) object.
+The initialized [`NSViewController`](../nsviewcontroller.md) object.
 
 #### Discussion
 
-The [`NSViewController`](nsviewcontroller.md) object looks for the nib file in the bundle’s language-specific project directories first, followed by the Resources directory.
+The [`NSViewController`](../nsviewcontroller.md) object looks for the nib file in the bundle’s language-specific project directories first, followed by the Resources directory.
 
-The specified nib file should typically have the class of the file’s owner set to [`NSViewController`](nsviewcontroller.md), or a custom subclass, with the `view` outlet connected to a view.
+The specified nib file should typically have the class of the file’s owner set to [`NSViewController`](../nsviewcontroller.md), or a custom subclass, with the `view` outlet connected to a view.
 
-If you pass in `nil` for `nibNameOrNil`, [`nibName`](nsviewcontroller/nibname.md) returns `nil` and [`loadView()`](nsviewcontroller/loadview().md) throws an exception; in this case you must set [`view`](nsviewcontroller/view.md) before [`view`](nsviewcontroller/view.md) is invoked, or override [`loadView()`](nsviewcontroller/loadview().md).
+If you pass in `nil` for `nibNameOrNil`, [`nibName`](./nibname.md) returns `nil` and [`loadView()`](./loadview%28%29.md) throws an exception; in this case you must set [`view`](./view.md) before [`view`](./view.md) is invoked, or override [`loadView()`](./loadview%28%29.md).
 
 ## Parameters
 
@@ -33,8 +38,9 @@ If you pass in `nil` for `nibNameOrNil`, [`nibName`](nsviewcontroller/nibname.md
 
 ## See Also
 
-- [func loadView()](nsviewcontroller/loadview.md)
-  Instantiates a view from a nib file and sets the value of the [`view`](nsviewcontroller/view.md) property.
+### Creating A View Controller
+- [func loadView()](./loadview%28%29.md)
+  Instantiates a view from a nib file and sets the value of the [`view`](./view.md) property.
 
 
 ---

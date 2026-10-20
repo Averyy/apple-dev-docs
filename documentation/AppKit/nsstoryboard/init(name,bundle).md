@@ -1,7 +1,8 @@
 # init(name:bundle:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a storyboard based on the named storyboard file in the specified bundle.
 
@@ -12,6 +13,10 @@ Creates a storyboard based on the named storyboard file in the specified bundle.
 
 ```swift
 convenience init(name: NSStoryboard.Name, bundle storyboardBundleOrNil: Bundle?)
+```
+
+```objc
++ (instancetype) storyboardWithName:(NSStoryboardName) name bundle:(NSBundle *) storyboardBundleOrNil;
 ```
 
 #### Return Value
@@ -25,9 +30,10 @@ A new storyboard object.
 
 ## See Also
 
-- [class var main: NSStoryboard?](nsstoryboard/main.md)
+### Creating a Storyboard Object
+- [class var main: NSStoryboard?](./main.md)
   The app’s main storyboard.
-- [NSStoryboard.Name](nsstoryboard/name.md)
+- [NSStoryboard.Name](./name.md)
   The name of the storyboard file.
 
 

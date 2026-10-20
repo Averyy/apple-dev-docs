@@ -1,7 +1,8 @@
 # primaryAction
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary action button for the panel.
 
@@ -15,6 +16,10 @@ The primary action button for the panel.
 ```swift
 @NSCopying
 var primaryAction: CPTextButton { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CPTextButton * primaryAction;
 ```
 
 #### Discussion

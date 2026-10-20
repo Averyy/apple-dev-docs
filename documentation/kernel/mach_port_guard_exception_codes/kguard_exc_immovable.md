@@ -1,14 +1,15 @@
 # kGUARD_EXC_IMMOVABLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_IMMOVABLE = 32
 ```
 

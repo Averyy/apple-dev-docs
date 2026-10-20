@@ -1681,7 +1681,7 @@
       "hash": "bbb5651d247ef56b28968b978c51941a49bd58d672b5025bcf0b59a19d61f938"
     },
     "https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription()": {
-      "etag": "\"14a5-65d55daf72495-df\"",
+      "etag": "\"14a5-65d55daf72495\"",
       "file_path": "documentation/UIKit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription().md",
       "hash": "d19a1a18f594282aa17798d5f600e2a33b5a1d7365abb52c34ff4b10fd3da93e"
     },
@@ -58780,7 +58780,7 @@
       "hash": "bbb5651d247ef56b28968b978c51941a49bd58d672b5025bcf0b59a19d61f938"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription().json": {
-      "etag": "\"14a5-65d55daf72495-df\"",
+      "etag": "\"14a5-65d55daf72495\"",
       "file_path": "documentation/UIKit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription().md",
       "hash": "d19a1a18f594282aa17798d5f600e2a33b5a1d7365abb52c34ff4b10fd3da93e"
     },
@@ -114196,6 +114196,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 22839
   }
 }

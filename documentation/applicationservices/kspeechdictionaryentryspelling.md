@@ -1,7 +1,8 @@
 # kSpeechDictionaryEntrySpelling
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The spelling of an entry.
 
@@ -12,6 +13,10 @@ The spelling of an entry.
 
 ```swift
 let kSpeechDictionaryEntrySpelling: CFString
+```
+
+```c
+const CFStringRef kSpeechDictionaryEntrySpelling;
 ```
 
 

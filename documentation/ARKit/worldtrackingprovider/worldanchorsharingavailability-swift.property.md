@@ -1,7 +1,8 @@
 # worldAnchorSharingAvailability
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of world anchor sharing availability changes.
 

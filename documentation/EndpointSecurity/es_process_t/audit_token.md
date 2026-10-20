@@ -1,18 +1,23 @@
 # audit_token
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A token for use with Basic Security Module auditing functions.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var audit_token: audit_token_t
+```
+
+```c
+audit_token_t audit_token;
 ```
 
 #### Discussion
@@ -21,13 +26,14 @@ Use this token with the functions defined in `libbsm.h` to extract values such a
 
 ## See Also
 
-- [var executable: UnsafeMutablePointer<es_file_t>](es_process_t/executable.md)
+### Inspecting the Source Process
+- [var executable: UnsafeMutablePointer<es_file_t>](./executable.md)
   The file containing the executed process.
-- [var is_es_client: Bool](es_process_t/is_es_client.md)
+- [var is_es_client: Bool](./is_es_client.md)
   A Boolean value that indicates whether the process connects to the Endpoint Security subsystem.
-- [var is_platform_binary: Bool](es_process_t/is_platform_binary.md)
+- [var is_platform_binary: Bool](./is_platform_binary.md)
   A Boolean value that indicates whether the process is a platform binary.
-- [var start_time: timeval](es_process_t/start_time.md)
+- [var start_time: timeval](./start_time.md)
   The time the process started.
 
 

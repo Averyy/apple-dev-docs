@@ -1,7 +1,8 @@
 # ReviewSubmissionItemUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a review submission item update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a review submission item update request resource.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemUpdateRequest.Data.Attributes
 ```
 

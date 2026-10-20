@@ -1,7 +1,8 @@
 # WeatherChange.Direction.decrease
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value will be significantly lower than before.
 

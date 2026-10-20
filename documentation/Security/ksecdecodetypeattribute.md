@@ -1,7 +1,8 @@
 # kSecDecodeTypeAttribute
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The encoding used by a decode transform.
 
@@ -13,6 +14,10 @@ The encoding used by a decode transform.
 
 ```swift
 let kSecDecodeTypeAttribute: CFString
+```
+
+```c
+extern CFStringRef const kSecDecodeTypeAttribute;
 ```
 
 #### Discussion

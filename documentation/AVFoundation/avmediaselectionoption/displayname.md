@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string suitable for display using the current system locale.
 
@@ -20,17 +21,22 @@ A string suitable for display using the current system locale.
 var displayName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * displayName;
+```
+
 #### Discussion
 
 The string takes into account this option’s common metadata, media characteristics, and locale properties in addition to the provided locale to formulate a string intended for display
 
 ## See Also
 
-- [func displayName(with: Locale) -> String](avmediaselectionoption/displayname(with:).md)
+### Getting the language and locale settings
+- [func displayName(with: Locale) -> String](./displayname%28with%29.md)
   Returns a string suitable for display using the specified locale.
-- [var locale: Locale?](avmediaselectionoption/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale for which the media option was authored.
-- [var extendedLanguageTag: String?](avmediaselectionoption/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The IETF BCP 47 language tag associated with the option
 
 

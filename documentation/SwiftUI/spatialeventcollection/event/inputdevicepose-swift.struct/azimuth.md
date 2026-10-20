@@ -1,7 +1,8 @@
 # azimuth
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The azimuth angle.
 
@@ -25,9 +26,10 @@ An angle of zero points along the content’s positive x-axis.
 
 ## See Also
 
-- [var altitude: Angle](spatialeventcollection/event/inputdevicepose-swift.struct/altitude.md)
+### Getting the event type
+- [var altitude: Angle](./altitude.md)
   The altitude angle.
-- [var pose3D: Pose3D](spatialeventcollection/event/inputdevicepose-swift.struct/pose3d.md)
+- [var pose3D: Pose3D](./pose3d.md)
   The 3D pose of the input device.
 
 

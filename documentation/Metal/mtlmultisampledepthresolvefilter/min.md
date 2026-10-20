@@ -1,7 +1,8 @@
 # MTLMultisampleDepthResolveFilter.min
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU compares all depth samples in the pixel and selects the sample with the smallest value.
 
@@ -19,11 +20,16 @@ The GPU compares all depth samples in the pixel and selects the sample with the 
 case min
 ```
 
+```c
+MTLMultisampleDepthResolveFilterMin
+```
+
 ## See Also
 
-- [MTLMultisampleDepthResolveFilter.sample0](mtlmultisampledepthresolvefilter/sample0.md)
+### Depth resolve filters
+- [MTLMultisampleDepthResolveFilter.sample0](./sample0.md)
   No filter is applied.
-- [MTLMultisampleDepthResolveFilter.max](mtlmultisampledepthresolvefilter/max.md)
+- [MTLMultisampleDepthResolveFilter.max](./max.md)
   The GPU compares all depth samples in the pixel and selects the sample with the largest value.
 
 

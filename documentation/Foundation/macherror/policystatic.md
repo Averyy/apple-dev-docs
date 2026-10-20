@@ -1,7 +1,8 @@
 # policyStatic
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The requested property cannot be changed at this time.
 

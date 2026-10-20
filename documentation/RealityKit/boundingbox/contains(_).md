@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the bounding box contains the specified bounds.
 
@@ -11,12 +12,18 @@ Checks whether the bounding box contains the specified bounds.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 func contains(_ boundingBox: BoundingBox) -> Bool
+```
+
+**Other overloads**:
+
+```swift
+func contains(_ point: SIMD3<Float>) -> Bool
 ```
 
 #### Return Value

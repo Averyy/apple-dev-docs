@@ -1,7 +1,8 @@
 # SceneEvents.AnchoredStateChanged
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event invoked when the anchored state of an anchoring entity changes.
 
@@ -11,7 +12,7 @@ An event invoked when the anchored state of an anchoring entity changes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,21 +23,22 @@ struct AnchoredStateChanged
 ## Topics
 
 ### Characterizing an update
-- [let anchor: any HasAnchoring](sceneevents/anchoredstatechanged/anchor.md)
+- [let anchor: any HasAnchoring](./anchoredstatechanged/anchor.md)
   The entity whose anchoring state changed.
-- [let isAnchored: Bool](sceneevents/anchoredstatechanged/isanchored.md)
+- [let isAnchored: Bool](./anchoredstatechanged/isanchored.md)
   The current anchoring state of the entity.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SceneEvents.Update](sceneevents/update.md)
+### Detecting scene-level updates
+- [SceneEvents.Update](./update.md)
   An event invoked once per frame interval that you can use to execute custom logic for each frame.
 
 

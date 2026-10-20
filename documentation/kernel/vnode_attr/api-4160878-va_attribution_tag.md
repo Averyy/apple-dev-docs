@@ -1,14 +1,15 @@
 # va_attribution_tag
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t va_attribution_tag;
 ```
 

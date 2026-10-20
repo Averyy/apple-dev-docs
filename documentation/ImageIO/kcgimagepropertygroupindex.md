@@ -1,7 +1,8 @@
 # kCGImagePropertyGroupIndex
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 15.0+
@@ -18,23 +19,28 @@
 let kCGImagePropertyGroupIndex: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGroupIndex;
+```
+
 ## See Also
 
-- [let kCGImageAuxiliaryDataInfoColorSpace: CFString](kcgimageauxiliarydatainfocolorspace.md)
-- [let kCGImageAuxiliaryDataTypeISOGainMap: CFString](kcgimageauxiliarydatatypeisogainmap.md)
-- [let kCGImagePropertyGroupMonoscopicImageLocation: CFString](kcgimagepropertygroupmonoscopicimagelocation.md)
-- [let kCGImagePropertyAVISDictionary: CFString](kcgimagepropertyavisdictionary.md)
-- [let kCGImagePropertyGroupImageBaseline: CFString](kcgimagepropertygroupimagebaseline.md)
-- [let kCGImagePropertyGroupImageDisparityAdjustment: CFString](kcgimagepropertygroupimagedisparityadjustment.md)
-- [let kCGImagePropertyGroupImageIndexLeft: CFString](kcgimagepropertygroupimageindexleft.md)
-- [let kCGImagePropertyGroupImageIndexRight: CFString](kcgimagepropertygroupimageindexright.md)
-- [let kCGImagePropertyGroupImageIndexMonoscopic: CFString](kcgimagepropertygroupimageindexmonoscopic.md)
-- [let kCGImagePropertyGroupImageIsAlternateImage: CFString](kcgimagepropertygroupimageisalternateimage.md)
-- [let kCGImagePropertyGroupImageIsLeftImage: CFString](kcgimagepropertygroupimageisleftimage.md)
-- [let kCGImagePropertyGroupImageIsRightImage: CFString](kcgimagepropertygroupimageisrightimage.md)
-- [let kCGImagePropertyGroupImageIsMonoscopicImage: CFString](kcgimagepropertygroupimageismonoscopicimage.md)
-- [let kCGImagePropertyGroupImageStereoAggressors: CFString](kcgimagepropertygroupimagestereoaggressors.md)
-- [let kCGImagePropertyGroupImagesAlternate: CFString](kcgimagepropertygroupimagesalternate.md)
+### Constants
+- [let kCGImageAuxiliaryDataInfoColorSpace: CFString](./kcgimageauxiliarydatainfocolorspace.md)
+- [let kCGImageAuxiliaryDataTypeISOGainMap: CFString](./kcgimageauxiliarydatatypeisogainmap.md)
+- [let kCGImagePropertyGroupMonoscopicImageLocation: CFString](./kcgimagepropertygroupmonoscopicimagelocation.md)
+- [let kCGImagePropertyAVISDictionary: CFString](./kcgimagepropertyavisdictionary.md)
+- [let kCGImagePropertyGroupImageBaseline: CFString](./kcgimagepropertygroupimagebaseline.md)
+- [let kCGImagePropertyGroupImageDisparityAdjustment: CFString](./kcgimagepropertygroupimagedisparityadjustment.md)
+- [let kCGImagePropertyGroupImageIndexLeft: CFString](./kcgimagepropertygroupimageindexleft.md)
+- [let kCGImagePropertyGroupImageIndexRight: CFString](./kcgimagepropertygroupimageindexright.md)
+- [let kCGImagePropertyGroupImageIndexMonoscopic: CFString](./kcgimagepropertygroupimageindexmonoscopic.md)
+- [let kCGImagePropertyGroupImageIsAlternateImage: CFString](./kcgimagepropertygroupimageisalternateimage.md)
+- [let kCGImagePropertyGroupImageIsLeftImage: CFString](./kcgimagepropertygroupimageisleftimage.md)
+- [let kCGImagePropertyGroupImageIsRightImage: CFString](./kcgimagepropertygroupimageisrightimage.md)
+- [let kCGImagePropertyGroupImageIsMonoscopicImage: CFString](./kcgimagepropertygroupimageismonoscopicimage.md)
+- [let kCGImagePropertyGroupImageStereoAggressors: CFString](./kcgimagepropertygroupimagestereoaggressors.md)
+- [let kCGImagePropertyGroupImagesAlternate: CFString](./kcgimagepropertygroupimagesalternate.md)
 
 
 ---

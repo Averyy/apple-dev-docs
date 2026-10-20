@@ -1,6 +1,7 @@
 # Using contextual menu and toolbar item keys
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Learn about adding contextual menu items and toolbar items to a Safari app extension with information property list keys.
 
@@ -8,11 +9,11 @@ Learn about adding contextual menu items and toolbar items to a Safari app exten
 
 Contextual menu items and toolbar items give you ways to add more menu options and entry points to your Safari app extension. You define and adjust these items using information property list keys.
 
-##### Add Context Menu Items
+##### Add context menu items
 
-The `SFSafariContextMenu` key lets your app extension add items to the context menu that appears in webpages. See [`Context menus`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/menus/contextual-menus/) for design guidelines.
+The `SFSafariContextMenu` key lets your app extension add items to the context menu that appears in webpages. See [Context menus](https://developer.apple.com/design/human-interface-guidelines/macos/menus/contextual-menus/) for design guidelines.
 
-![A screenshot of a context menu in Safari. It’s a vertical menu containing five options, including Reload Page and Inspect Element. ](/images/com.apple.safariservices/media-3027377@2x.png)
+![A screenshot of a context menu in Safari. It’s a vertical menu containing five options, including Reload Page and Inspect Element. ](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-3027377@2x.png)
 
 The key’s value must be an array, and must contain one dictionary with two subkeys for each menu item.
 
@@ -41,11 +42,11 @@ For example, if you add two contextual menu items, your `Info.plist` file might 
 </array>
 ```
 
-##### Add a Toolbar Item
+##### Add a toolbar item
 
-The `SFSafariToolbarItem` dictionary adds a toolbar item to Safari windows. See [`Toolbars`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/toolbars/) for design guidelines.
+The `SFSafariToolbarItem` dictionary adds a toolbar item to Safari windows. See [Toolbars](https://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/toolbars/) for design guidelines.
 
-![A screenshot of a partial Safari toolbar. It shows standard toolbar items, as well as an app extension toolbar item that looks like a lightning bolt inside a circle. ](/images/com.apple.safariservices/media-3027375@2x.png)
+![A screenshot of a partial Safari toolbar. It shows standard toolbar items, as well as an app extension toolbar item that looks like a lightning bolt inside a circle. ](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-3027375@2x.png)
 
 Each app extension can have only one toolbar item. The value for this key is a dictionary that describes the toolbar item. There are four required keys for the toolbar item dictionary.
 
@@ -77,13 +78,14 @@ Use the `Image` key to provide an image for the toolbar button. Safari may resiz
 
 ## See Also
 
-- [Adjusting settings for a toolbar item](adjusting-settings-for-a-toolbar-item.md)
+### Contextual menu and toolbar items
+- [Adjusting settings for a toolbar item](./adjusting-settings-for-a-toolbar-item.md)
   Customize a toolbar item for your Safari app extension.
-- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
+- [Adjusting settings for contextual menu items](./adjusting-settings-for-contextual-menu-items.md)
   Customize contextual menu items for your Safari app extension.
-- [class SFSafariToolbarItem](sfsafaritoolbaritem.md)
+- [class SFSafariToolbarItem](./sfsafaritoolbaritem.md)
   A proxy for a Safari app extension toolbar item in a Safari window.
-- [class SFSafariExtensionViewController](sfsafariextensionviewcontroller.md)
+- [class SFSafariExtensionViewController](./sfsafariextensionviewcontroller.md)
   The view controller for a popover associated with your app extension.
 
 

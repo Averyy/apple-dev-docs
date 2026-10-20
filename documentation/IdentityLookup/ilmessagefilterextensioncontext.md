@@ -1,7 +1,8 @@
 # ILMessageFilterExtensionContext
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The extension context for a Message Filter app extension.
 
@@ -17,29 +18,34 @@ The extension context for a Message Filter app extension.
 class ILMessageFilterExtensionContext
 ```
 
+```objc
+@interface ILMessageFilterExtensionContext : NSExtensionContext
+```
+
 ## Topics
 
 ### Deferring a Request to the Network
-- [func deferQueryRequestToNetwork(completion: (ILNetworkResponse?, (any Error)?) -> Void)](ilmessagefilterextensioncontext/deferqueryrequesttonetwork(completion:).md)
+- [func deferQueryRequestToNetwork(completion: (ILNetworkResponse?, (any Error)?) -> Void)](./ilmessagefilterextensioncontext/deferqueryrequesttonetwork%28completion%29.md)
   Tells the system to pass the current query request to the app extension’s associated network service.
 
 ## Relationships
 
 ### Inherits From
-- [NSExtensionContext](../foundation/nsextensioncontext.md)
+- [NSExtensionContext](../Foundation/nsextensioncontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ILMessageFilterExtension](ilmessagefilterextension.md)
+### App Extension
+- [class ILMessageFilterExtension](./ilmessagefilterextension.md)
   The abstract base class for the principal class of a Message Filter app extension.
 
 

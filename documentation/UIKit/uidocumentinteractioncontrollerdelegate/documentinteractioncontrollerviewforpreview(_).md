@@ -1,7 +1,8 @@
 # documentInteractionControllerViewForPreview(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller needs the starting point for animating the display of a document preview.
 
@@ -17,13 +18,17 @@ Called when a document interaction controller needs the starting point for anima
 optional func documentInteractionControllerViewForPreview(_ controller: UIDocumentInteractionController) -> UIView?
 ```
 
+```objc
+- (UIView *) documentInteractionControllerViewForPreview:(UIDocumentInteractionController *) controller;
+```
+
 #### Return Value
 
 The view to use as the starting point for the animation or `nil` if you want the document preview to fade into place.
 
 #### Discussion
 
-By default, the starting rectangle for the animation is set to the bounds of the returned view. To specify a different starting rectangle, you must also override the [`documentInteractionControllerRectForPreview(_:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerrectforpreview(_:).md) method.
+By default, the starting rectangle for the animation is set to the bounds of the returned view. To specify a different starting rectangle, you must also override the [`documentInteractionControllerRectForPreview(_:)`](./documentinteractioncontrollerrectforpreview%28_%29.md) method.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ By default, the starting rectangle for the animation is set to the bounds of the
 
 ## See Also
 
-- [func documentInteractionControllerViewControllerForPreview(UIDocumentInteractionController) -> UIViewController](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewcontrollerforpreview(_:).md)
+### Configuring the parent view controller
+- [func documentInteractionControllerViewControllerForPreview(UIDocumentInteractionController) -> UIViewController](./documentinteractioncontrollerviewcontrollerforpreview%28_%29.md)
   Called when a document interaction controller needs a view controller for presenting a document preview.
-- [func documentInteractionControllerRectForPreview(UIDocumentInteractionController) -> CGRect](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerrectforpreview(_:).md)
+- [func documentInteractionControllerRectForPreview(UIDocumentInteractionController) -> CGRect](./documentinteractioncontrollerrectforpreview%28_%29.md)
   Called when a document interaction controller needs the rectangle to use as the starting point for animating the display of a document preview.
 
 

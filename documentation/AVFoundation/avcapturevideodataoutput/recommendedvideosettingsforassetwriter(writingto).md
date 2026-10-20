@@ -1,7 +1,8 @@
 # recommendedVideoSettingsForAssetWriter(writingTo:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the recommended settings for use with an AVAssetWriterInput.
 
@@ -18,17 +19,21 @@ Specifies the recommended settings for use with an AVAssetWriterInput.
 func recommendedVideoSettingsForAssetWriter(writingTo outputFileType: AVFileType) -> [String : Any]?
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) recommendedVideoSettingsForAssetWriterWithOutputFileType:(AVFileType) outputFileType;
+```
+
 #### Return Value
 
-A fully populated dictionary of keys and values that are compatible with [`AVAssetWriter`](avassetwriter.md).
+A fully populated dictionary of keys and values that are compatible with [`AVAssetWriter`](../avassetwriter.md).
 
 #### Discussion
 
-This dictionary contains keys and values described in [`Video settings`](video-settings.md) and is suitable for use when creating an [`AVAssetWriterInput`](avassetwriterinput.md) with the [`init(mediaType:outputSettings:)`](avassetwriterinput/init(mediatype:outputsettings:).md) initializer. For QuickTime movie and ISO file types, the recommended video settings produce output comparable to that of [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md).
+This dictionary contains keys and values described in [Video settings](../video-settings.md) and is suitable for use when creating an [`AVAssetWriterInput`](../avassetwriterinput.md) with the [`init(mediaType:outputSettings:)`](../avassetwriterinput/init%28mediatype,outputsettings%29.md) initializer. For QuickTime movie and ISO file types, the recommended video settings produce output comparable to that of [`AVCaptureMovieFileOutput`](../avcapturemoviefileoutput.md).
 
-Note that the dictionary of settings is dependent on the current configuration of the output’s [`AVCaptureSession`](avcapturesession.md) and its inputs. The settings dictionary may change if the session’s configuration changes. As such, configure your session first, then query the recommended video settings.
+Note that the dictionary of settings is dependent on the current configuration of the output’s [`AVCaptureSession`](../avcapturesession.md) and its inputs. The settings dictionary may change if the session’s configuration changes. As such, configure your session first, then query the recommended video settings.
 
-> **Note**:  This method returns appropriate settings based on the device’s default video recording codec, but that default can differ between devices. Use the [`recommendedVideoSettings(forVideoCodecType:assetWriterOutputFileType:)`](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:).md) method to obtain video settings appropriate for a specific codec.
+> **Note**:  This method returns appropriate settings based on the device’s default video recording codec, but that default can differ between devices. Use the [`recommendedVideoSettings(forVideoCodecType:assetWriterOutputFileType:)`](./recommendedvideosettings%28forvideocodectype,assetwriteroutputfiletype%29.md) method to obtain video settings appropriate for a specific codec.
 
 ## Parameters
 
@@ -36,27 +41,28 @@ Note that the dictionary of settings is dependent on the current configuration o
 
 ## See Also
 
-- [var videoSettings: [String : Any]!](avcapturevideodataoutput/videosettings.md)
+### Configuring video capture
+- [var videoSettings: [String : Any]!](./videosettings.md)
   A dictionary that contains the compression settings for the output.
-- [Video settings](video-settings.md)
+- [Video settings](../video-settings.md)
   Configure video processing settings using standard key and value constants.
-- [var alwaysDiscardsLateVideoFrames: Bool](avcapturevideodataoutput/alwaysdiscardslatevideoframes.md)
+- [var alwaysDiscardsLateVideoFrames: Bool](./alwaysdiscardslatevideoframes.md)
   Indicates whether to drop video frames if they arrive late.
-- [var automaticallyConfiguresOutputBufferDimensions: Bool](avcapturevideodataoutput/automaticallyconfiguresoutputbufferdimensions.md)
+- [var automaticallyConfiguresOutputBufferDimensions: Bool](./automaticallyconfiguresoutputbufferdimensions.md)
   A Boolean value that indicates whether the output automatically configures the size of output buffers.
-- [var deliversPreviewSizedOutputBuffers: Bool](avcapturevideodataoutput/deliverspreviewsizedoutputbuffers.md)
+- [var deliversPreviewSizedOutputBuffers: Bool](./deliverspreviewsizedoutputbuffers.md)
   A Boolean value that indicates whether the output is configured to deliver preview-sized buffers.
-- [var preparesCellularRadioForNetworkConnection: Bool](avcapturevideodataoutput/preparescellularradiofornetworkconnection.md)
+- [var preparesCellularRadioForNetworkConnection: Bool](./preparescellularradiofornetworkconnection.md)
   Indicates whether the receiver should prepare the cellular radio for imminent network activity.
-- [var preservesDynamicHDRMetadata: Bool](avcapturevideodataoutput/preservesdynamichdrmetadata.md)
+- [var preservesDynamicHDRMetadata: Bool](./preservesdynamichdrmetadata.md)
   Indicates whether the receiver should preserve dynamic HDR metadata as an attachment on the output sample buffer’s underlying pixel buffer.
-- [var recommendedMediaTimeScaleForAssetWriter: CMTimeScale](avcapturevideodataoutput/recommendedmediatimescaleforassetwriter.md)
+- [var recommendedMediaTimeScaleForAssetWriter: CMTimeScale](./recommendedmediatimescaleforassetwriter.md)
   Indicates the recommended media timescale for the video track.
-- [func recommendedMovieMetadata(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [AVMetadataItem]?](avcapturevideodataoutput/recommendedmoviemetadata(forvideocodectype:assetwriteroutputfiletype:).md)
+- [func recommendedMovieMetadata(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [AVMetadataItem]?](./recommendedmoviemetadata%28forvideocodectype,assetwriteroutputfiletype%29.md)
   Recommends movie-level metadata for a particular video codec type and output file type, to be used with an asset writer input.
-- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [String : Any]?](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:).md)
+- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [String : Any]?](./recommendedvideosettings%28forvideocodectype,assetwriteroutputfiletype%29.md)
   Returns a video settings dictionary appropriate for capturing video to a file with the specified codec and type.
-- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType, outputFileURL: URL?) -> [String : Any]?](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:outputfileurl:).md)
+- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType, outputFileURL: URL?) -> [String : Any]?](./recommendedvideosettings%28forvideocodectype,assetwriteroutputfiletype,outputfileurl%29.md)
   Returns a dictionary of recommended output settings for writing the specified code, file type, and output URL.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Applies a pose.
@@ -24,6 +25,16 @@ mutating func apply(_ pose: Self.Pose)
 ## Parameters
 
 - `pose`: The pose.
+
+## Default Implementations
+
+### Primitive3DProtocol Implementations
+- [func apply(Self.ProjectiveTransform)](./apply%28_%29-2ch0y.md)
+  Applies a projective transform.
+- [func apply(Self.AffineTransform)](./apply%28_%29-2zt51.md)
+  Applies an affine transform.
+- [func apply(Self.Pose)](./apply%28_%29-40ngr.md)
+  Applies a pose.
 
 
 ---

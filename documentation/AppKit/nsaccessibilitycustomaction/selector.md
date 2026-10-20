@@ -1,7 +1,8 @@
 # selector
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method to call on the target to perform the action.
 
@@ -14,11 +15,16 @@ The method to call on the target to perform the action.
 var selector: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL selector;
+```
+
 ## See Also
 
-- [var handler: (() -> Bool)?](nsaccessibilitycustomaction/handler.md)
+### Getting the Action
+- [var handler: (() -> Bool)?](./handler.md)
   The closure that handles the execution of the action.
-- [var target: (any NSObjectProtocol)?](nsaccessibilitycustomaction/target.md)
+- [var target: (any NSObjectProtocol)?](./target.md)
   The object that performs the action through a selector.
 
 

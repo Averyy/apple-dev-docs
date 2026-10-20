@@ -1,7 +1,8 @@
 # UITextFormattingViewController.ComponentGroup
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Defines grouping of text formatting components in view.
 
@@ -17,38 +18,43 @@ Defines grouping of text formatting components in view.
 class ComponentGroup
 ```
 
+```objc
+@interface UITextFormattingViewControllerComponentGroup : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](uitextformattingviewcontroller/componentgroup/init(coder:).md)
-- [init(components: [UITextFormattingViewController.Component])](uitextformattingviewcontroller/componentgroup/init(components:).md)
+- [init?(coder: NSCoder)](./componentgroup/init%28coder%29.md)
+- [init(components: [UITextFormattingViewController.Component])](./componentgroup/init%28components%29.md)
   Creates a group of components.
 ### Instance Properties
-- [var components: [UITextFormattingViewController.Component]](uitextformattingviewcontroller/componentgroup/components.md)
+- [var components: [UITextFormattingViewController.Component]](./componentgroup/components.md)
   Components in group.
 ### Type Methods
-- [static func group([UITextFormattingViewController.Component]) -> UITextFormattingViewController.ComponentGroup](uitextformattingviewcontroller/componentgroup/group(_:).md)
+- [static func group([UITextFormattingViewController.Component]) -> UITextFormattingViewController.ComponentGroup](./componentgroup/group%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [UITextFormattingViewController.Component](uitextformattingviewcontroller/component.md)
+### Classes
+- [UITextFormattingViewController.Component](./component.md)
   Defines text formatting view component.
-- [UITextFormattingViewController.Configuration](uitextformattingviewcontroller/configuration-swift.class.md)
+- [UITextFormattingViewController.Configuration](./configuration-swift.class.md)
   Text formatting view controller configuration object.
 
 

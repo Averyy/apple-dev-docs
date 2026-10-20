@@ -1,18 +1,20 @@
 # NSError userInfo Dictionary Keys
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 Keys in the userInfo dictionary of an `NSError` object when certain NSURL methods return an error.
 
 ## Topics
 
 ### Constants
-- [static let keysOfUnsetValuesKey: URLResourceKey](urlresourcekey/keysofunsetvalueskey.md)
-  Key for the resource properties that have not been set after the [`setResourceValues(_:)`](nsurl/setresourcevalues(_:).md) method returns an error, returned as an array of `NSString` objects.
+- [static let keysOfUnsetValuesKey: URLResourceKey](./urlresourcekey/keysofunsetvalueskey.md)
+  Key for the resource properties that have not been set after the [`setResourceValues(_:)`](./nsurl/setresourcevalues%28_%29.md) method returns an error, returned as an array of `NSString` objects.
 
 ## See Also
 
-- [NSURL Schemes](nsurl-schemes.md)
+### Constants
+- [NSURL Schemes](./nsurl-schemes.md)
   The schemes that the `NSURL` class is able to parse.
 
 

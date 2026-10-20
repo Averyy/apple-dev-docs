@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle that represents the intersection of two rectangles.
 
@@ -20,9 +21,13 @@ Returns the rectangle that represents the intersection of two rectangles.
 func intersection(_ rect2: MKMapRect) -> MKMapRect
 ```
 
+```c
+extern MKMapRect MKMapRectIntersection(MKMapRect rect1, MKMapRect rect2);
+```
+
 #### Return Value
 
-The rectangle representing the intersection of the two rectangles, or [`null`](mkmaprect/null.md) if there’s no intersection.
+The rectangle representing the intersection of the two rectangles, or [`null`](./null.md) if there’s no intersection.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The rectangle representing the intersection of the two rectangles, or [`null`](m
 
 ## See Also
 
-- [func union(MKMapRect) -> MKMapRect](mkmaprect/union(_:).md)
+### Modifying the rectangle
+- [func union(MKMapRect) -> MKMapRect](./union%28_%29.md)
   Returns a rectangle that represents the union of two rectangles.
-- [func insetBy(dx: Double, dy: Double) -> MKMapRect](mkmaprect/insetby(dx:dy:).md)
+- [func insetBy(dx: Double, dy: Double) -> MKMapRect](./insetby%28dx,dy%29.md)
   Returns the specified rectangle with an inset by the specified amounts.
-- [func offsetBy(dx: Double, dy: Double) -> MKMapRect](mkmaprect/offsetby(dx:dy:).md)
+- [func offsetBy(dx: Double, dy: Double) -> MKMapRect](./offsetby%28dx,dy%29.md)
   Returns a rectangle with an origin point that shifts by the specified amount.
-- [func MKMapRectDivide(MKMapRect, UnsafeMutablePointer<MKMapRect>, UnsafeMutablePointer<MKMapRect>, Double, CGRectEdge)](mkmaprectdivide(_:_:_:_:_:).md)
+- [func MKMapRectDivide(MKMapRect, UnsafeMutablePointer<MKMapRect>, UnsafeMutablePointer<MKMapRect>, Double, CGRectEdge)](../mkmaprectdivide%28_,_,_,_,_%29.md)
   Divides the specified rectangle into two smaller rectangles.
 
 

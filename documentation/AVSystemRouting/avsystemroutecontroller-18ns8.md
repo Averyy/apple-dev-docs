@@ -1,7 +1,8 @@
 # AVSystemRouteController
 
 **Framework**: AVSystemRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages interaction with system routes.
 
@@ -18,7 +19,7 @@ final class AVSystemRouteController
 
 ## Mentions
 
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
 #### Overview
 
@@ -36,34 +37,35 @@ Important: Your app must declare support for Media Sharing Extensions with the `
 
 Where the key in `MDESupportedProtocols` is the Protocol ID of the extension you are declaring support for and the string value is the application ID of your remote application which the protocol would launch on the receiver.
 
-Use the shared [`shared`](avsystemroutecontroller-18ns8/shared.md) instance to observe routing events. Register an [`AVSystemRouteControllerObserver`](avsystemroutecontrollerobserver-5syvg.md) to receive callbacks when users select or deselect routes in the system route picker.
+Use the shared [`shared`](./avsystemroutecontroller-18ns8/shared.md) instance to observe routing events. Register an [`AVSystemRouteControllerObserver`](./avsystemroutecontrollerobserver-5syvg.md) to receive callbacks when users select or deselect routes in the system route picker.
 
 ## Topics
 
 ### Instance Methods
-- [func addObserver(any AVSystemRouteControllerObserver) -> Bool](avsystemroutecontroller-18ns8/addobserver(_:).md)
+- [func addObserver(any AVSystemRouteControllerObserver) -> Bool](./avsystemroutecontroller-18ns8/addobserver%28_%29.md)
   Adds an observer to receive notifications about system routing events.
-- [func removeObserver(any AVSystemRouteControllerObserver)](avsystemroutecontroller-18ns8/removeobserver(_:).md)
+- [func removeObserver(any AVSystemRouteControllerObserver)](./avsystemroutecontroller-18ns8/removeobserver%28_%29.md)
   Removes a previously registered observer from the system routing controller.
 ### Type Properties
-- [class var shared: AVSystemRouteController](avsystemroutecontroller-18ns8/shared.md)
+- [class var shared: AVSystemRouteController](./avsystemroutecontroller-18ns8/shared.md)
   The shared system routing controller instance.
-- [class var supportedExtensionAvailable: Bool](avsystemroutecontroller-18ns8/supportedextensionavailable.md)
+- [class var supportedExtensionAvailable: Bool](./avsystemroutecontroller-18ns8/supportedextensionavailable.md)
   A Boolean value that indicates whether a supported system routing extension is available.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+### Essentials
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
   Send media from an app to nearby remote playback devices.
-- [protocol AVSystemRouteControllerObserver](avsystemroutecontrollerobserver-5syvg.md)
+- [protocol AVSystemRouteControllerObserver](./avsystemroutecontrollerobserver-5syvg.md)
   A protocol for observers of a system routing controller.
 
 

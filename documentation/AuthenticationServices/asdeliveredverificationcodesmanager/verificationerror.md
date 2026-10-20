@@ -1,7 +1,8 @@
 # ASDeliveredVerificationCodesManager.VerificationError
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,23 +20,23 @@ struct VerificationError
 ## Topics
 
 ### Initializers
-- [init(ASDeliveredVerificationCodesManager.VerificationError.Code, userInfo: [String : Any])](asdeliveredverificationcodesmanager/verificationerror/init(_:userinfo:).md)
+- [init(ASDeliveredVerificationCodesManager.VerificationError.Code, userInfo: [String : Any])](./verificationerror/init%28_,userinfo%29.md)
 ### Instance Properties
-- [let code: ASDeliveredVerificationCodesManager.VerificationError.Code](asdeliveredverificationcodesmanager/verificationerror/code-swift.property.md)
+- [let code: ASDeliveredVerificationCodesManager.VerificationError.Code](./verificationerror/code-swift.property.md)
 ### Type Properties
-- [static var appIsNotEnabledCredentialProvider: ASDeliveredVerificationCodesManager.VerificationError.Code](asdeliveredverificationcodesmanager/verificationerror/appisnotenabledcredentialprovider.md)
-- [static var failed: ASDeliveredVerificationCodesManager.VerificationError.Code](asdeliveredverificationcodesmanager/verificationerror/failed.md)
-- [static var userPermissionDenied: ASDeliveredVerificationCodesManager.VerificationError.Code](asdeliveredverificationcodesmanager/verificationerror/userpermissiondenied.md)
+- [static var appIsNotEnabledCredentialProvider: ASDeliveredVerificationCodesManager.VerificationError.Code](./verificationerror/appisnotenabledcredentialprovider.md)
+- [static var failed: ASDeliveredVerificationCodesManager.VerificationError.Code](./verificationerror/failed.md)
+- [static var userPermissionDenied: ASDeliveredVerificationCodesManager.VerificationError.Code](./verificationerror/userpermissiondenied.md)
 ### Enumerations
-- [ASDeliveredVerificationCodesManager.VerificationError.Code](asdeliveredverificationcodesmanager/verificationerror/code-swift.enum.md)
+- [ASDeliveredVerificationCodesManager.VerificationError.Code](./verificationerror/code-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../../Foundation/customnserror.md)
+- [Error](../../Swift/error.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # draw(in:withAttributes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the attributed string inside the specified bounding rectangle.
 
@@ -20,6 +21,10 @@ Draws the attributed string inside the specified bounding rectangle.
 func draw(in rect: CGRect, withAttributes attrs: [NSAttributedString.Key : Any]? = nil)
 ```
 
+```objc
+- (void) drawInRect:(CGRect) rect withAttributes:(NSDictionary<NSString *,id> *) attrs;
+```
+
 #### Discussion
 
 This method draws as much of the string as it can inside the specified rectangle, wrapping the string text as needed to make it fit. If the string is too long to fit inside the rectangle, the method renders as much as possible and clips the rest.
@@ -35,17 +40,18 @@ There must be either a focused view or an active graphics context when you call 
 
 ## See Also
 
-- [func draw(at: CGPoint, withAttributes: [NSAttributedString.Key : Any]?)](nsstring/draw(at:withattributes:).md)
+### Sizing and Drawing Strings
+- [func draw(at: CGPoint, withAttributes: [NSAttributedString.Key : Any]?)](./draw%28at,withattributes%29.md)
   Draws the receiver with the font and other display characteristics of the given attributes, at the specified point in the current graphics context.
-- [func draw(with: CGRect, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?)](nsstring/draw(with:options:attributes:context:).md)
+- [func draw(with: CGRect, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?)](./draw%28with,options,attributes,context%29.md)
   Draws the attributed string in the specified bounding rectangle using the provided options.
-- [func boundingRect(with: CGSize, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?) -> CGRect](nsstring/boundingrect(with:options:attributes:context:).md)
+- [func boundingRect(with: CGSize, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?) -> CGRect](./boundingrect%28with,options,attributes,context%29.md)
   Calculates and returns the bounding rect for the receiver drawn using the given options and display characteristics, within the specified rectangle in the current graphics context.
-- [func size(withAttributes: [NSAttributedString.Key : Any]?) -> CGSize](nsstring/size(withattributes:).md)
+- [func size(withAttributes: [NSAttributedString.Key : Any]?) -> CGSize](./size%28withattributes%29.md)
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
-- [func variantFittingPresentationWidth(Int) -> String](nsstring/variantfittingpresentationwidth(_:).md)
+- [func variantFittingPresentationWidth(Int) -> String](./variantfittingpresentationwidth%28_%29.md)
   Returns a string variation suitable for the specified presentation width.
-- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
+- [struct NSStringDrawingOptions](../../UIKit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

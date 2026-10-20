@@ -1,7 +1,8 @@
 # CMTag
 
 **Framework**: Core Media  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A tag to set additional metadata on media buffers.
 
@@ -24,76 +25,77 @@ class CMTag
 
 The Core Media framework uses tags to describe the properties of media channels. Each tag consists of a category and a value, both of which are 64 bits in size.
 
-> ❗ **Important**:  Tag data can only contain values that can be safely stored on disk. In particular, [`CMTag`](cmtag-swift.class.md) values can’t contain a pointer. If you need to refer to another media element or in-memory data as part of a tag, use a buffer index or other constant.
+> ❗ **Important**:  Tag data can only contain values that can be safely stored on disk. In particular, [`CMTag`](./cmtag-swift.class.md) values can’t contain a pointer. If you need to refer to another media element or in-memory data as part of a tag, use a buffer index or other constant.
 
-It’s recommended to use [`CMTypedTag`](cmtypedtag.md) instances where possible to preserve type safety.
+It’s recommended to use [`CMTypedTag`](./cmtypedtag.md) instances where possible to preserve type safety.
 
 ## Topics
 
 ### Creating Tags
-- [static func channelID(Int64) -> CMTypedTag<Int64>](cmtag-swift.class/channelid(_:).md)
+- [static func channelID(Int64) -> CMTypedTag<Int64>](./cmtag-swift.class/channelid%28_%29.md)
   Creates a new channel ID tag from an integer.
-- [static func mediaSubType(CMFormatDescription.MediaSubType) -> CMTypedTag<CMFormatDescription.MediaSubType>](cmtag-swift.class/mediasubtype(_:).md)
+- [static func mediaSubType(CMFormatDescription.MediaSubType) -> CMTypedTag<CMFormatDescription.MediaSubType>](./cmtag-swift.class/mediasubtype%28_%29.md)
   Creates a tag containing media subtype metadata.
-- [static func mediaType(CMFormatDescription.MediaType) -> CMTypedTag<CMFormatDescription.MediaType>](cmtag-swift.class/mediatype(_:).md)
+- [static func mediaType(CMFormatDescription.MediaType) -> CMTypedTag<CMFormatDescription.MediaType>](./cmtag-swift.class/mediatype%28_%29.md)
   Creates a tag containing media type metadata.
-- [static func packingType(CMPackingType) -> CMTypedTag<CMPackingType>](cmtag-swift.class/packingtype(_:).md)
+- [static func packingType(CMPackingType) -> CMTypedTag<CMPackingType>](./cmtag-swift.class/packingtype%28_%29.md)
   Creates a tag containing frame-packing information.
-- [static func pixelFormat(OSType) -> CMTypedTag<OSType>](cmtag-swift.class/pixelformat(_:).md)
+- [static func pixelFormat(OSType) -> CMTypedTag<OSType>](./cmtag-swift.class/pixelformat%28_%29.md)
   Creates a tag containing pixel format information.
-- [static func projectionType(CMProjectionType) -> CMTypedTag<CMProjectionType>](cmtag-swift.class/projectiontype(_:).md)
+- [static func projectionType(CMProjectionType) -> CMTypedTag<CMProjectionType>](./cmtag-swift.class/projectiontype%28_%29.md)
   Creates a tag containing projection surface information.
-- [static func stereoView(CMStereoViewComponents) -> CMTypedTag<CMStereoViewComponents>](cmtag-swift.class/stereoview(_:).md)
+- [static func stereoView(CMStereoViewComponents) -> CMTypedTag<CMStereoViewComponents>](./cmtag-swift.class/stereoview%28_%29.md)
   Creates a tag containing eye information for 3D video.
-- [static func stereoViewInterpretation(CMStereoViewInterpretationOptions) -> CMTypedTag<CMStereoViewInterpretationOptions>](cmtag-swift.class/stereoviewinterpretation(_:).md)
+- [static func stereoViewInterpretation(CMStereoViewInterpretationOptions) -> CMTypedTag<CMStereoViewInterpretationOptions>](./cmtag-swift.class/stereoviewinterpretation%28_%29.md)
   Creates a tag containing information on how to interpret stereo view metadata.
-- [static func trackID(CMPersistentTrackID) -> CMTypedTag<CMPersistentTrackID>](cmtag-swift.class/trackid(_:).md)
+- [static func trackID(CMPersistentTrackID) -> CMTypedTag<CMPersistentTrackID>](./cmtag-swift.class/trackid%28_%29.md)
   Creates a tag containing a track ID.
-- [static func videoLayerID(Int64) -> CMTypedTag<Int64>](cmtag-swift.class/videolayerid(_:).md)
+- [static func videoLayerID(Int64) -> CMTypedTag<Int64>](./cmtag-swift.class/videolayerid%28_%29.md)
   Creates a tag containing a video layer ID.
-- [init(rawCategory: CMTag.RawCategory, rawTagValue: CMTag.Value)](cmtag-swift.class/init(rawcategory:rawtagvalue:).md)
+- [init(rawCategory: CMTag.RawCategory, rawTagValue: CMTag.Value)](./cmtag-swift.class/init%28rawcategory,rawtagvalue%29.md)
   Creates a new tag from a category and value.
 ### Inspecting Tags
-- [let rawCategory: CMTag.RawCategory](cmtag-swift.class/rawcategory-swift.property.md)
+- [let rawCategory: CMTag.RawCategory](./cmtag-swift.class/rawcategory-swift.property.md)
   The raw 64-bit representation of the tag’s category.
-- [let rawTagValue: CMTag.Value](cmtag-swift.class/rawtagvalue.md)
+- [let rawTagValue: CMTag.Value](./cmtag-swift.class/rawtagvalue.md)
   The tag’s contained value.
-- [func value<T>(onlyIfMatching: CMTypedTag<T>.Category) -> T?](cmtag-swift.class/value(onlyifmatching:).md)
+- [func value<T>(onlyIfMatching: CMTypedTag<T>.Category) -> T?](./cmtag-swift.class/value%28onlyifmatching%29.md)
   Retrieves a tag’s value as a specific type, if and only if it matches a category.
 ### Wrapped Values
-- [CMTag.Value](cmtag-swift.class/value.md)
+- [CMTag.Value](./cmtag-swift.class/value.md)
   A wrapper type for a value associated with a tag.
 ### Type Aliases
-- [typealias RawCategory](cmtag-swift.class/rawcategory-swift.typealias.md)
+- [typealias RawCategory](./cmtag-swift.class/rawcategory-swift.typealias.md)
   The raw 64-bit representation of a tag’s category.
 
 ## Relationships
 
 ### Inherited By
-- [CMTypedTag](cmtypedtag.md)
+- [CMTypedTag](./cmtypedtag.md)
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMMetadata](cmmetadata.md)
+### Metadata
+- [CMMetadata](./cmmetadata.md)
   The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
-- [CMTag](cmtag-api.md)
+- [CMTag](./cmtag-api.md)
   Types and interfaces for working with Core Media tags.
-- [class CMTypedTag](cmtypedtag.md)
+- [class CMTypedTag](./cmtypedtag.md)
   A tag to set additional metadata on media buffers, with an associated Swift type for its value.
-- [CMTagCollection](cmtagcollection.md)
+- [CMTagCollection](./cmtagcollection.md)
   Objective-C types and interfaces for working with Core Media tag collections.
-- [enum CMProjectionType](cmprojectiontype.md)
+- [enum CMProjectionType](./cmprojectiontype.md)
   Constants describing the projection surface information in a 3D video buffer or channel.
-- [struct CMStereoViewComponents](cmstereoviewcomponents.md)
+- [struct CMStereoViewComponents](./cmstereoviewcomponents.md)
   Constants describing the stereo views contained within a buffer or channel.
-- [struct CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions.md)
+- [struct CMStereoViewInterpretationOptions](./cmstereoviewinterpretationoptions.md)
   Create a set of stereo view interpretation options from a constant.
-- [enum CMPackingType](cmpackingtype.md)
+- [enum CMPackingType](./cmpackingtype.md)
   The type of packing within each video frame, if any.
 
 

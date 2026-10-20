@@ -1,7 +1,8 @@
 # Dictionary
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection whose elements are key-value pairs.
 
@@ -146,7 +147,7 @@ A dictionary’s indices stay valid across additions to the dictionary as long a
 
 When you know how many new values you’re adding to a dictionary, use the `init(minimumCapacity:)` initializer to allocate the correct amount of buffer.
 
-### Bridging Between Dictionary and Nsdictionary
+### Bridging Between Dictionary and NSDictionary
 
 You can bridge between `Dictionary` and `NSDictionary` using the `as` operator. For bridging to be possible, the `Key` and `Value` types of a dictionary must be classes, `@objc` protocols, or types that bridge to Foundation types.
 
@@ -157,207 +158,208 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 ## Topics
 
 ### Creating a Dictionary
-- [init()](dictionary/init.md)
+- [init()](./dictionary/init%28%29.md)
   Creates an empty dictionary.
-- [init(minimumCapacity: Int)](dictionary/init(minimumcapacity:).md)
+- [init(minimumCapacity: Int)](./dictionary/init%28minimumcapacity%29.md)
   Creates an empty dictionary with preallocated space for at least the specified number of elements.
-- [init<S>(uniqueKeysWithValues: S)](dictionary/init(uniquekeyswithvalues:).md)
+- [init<S>(uniqueKeysWithValues: S)](./dictionary/init%28uniquekeyswithvalues%29.md)
   Creates a new dictionary from the key-value pairs in the given sequence.
-- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/init(_:uniquingkeyswith:).md)
+- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](./dictionary/init%28_,uniquingkeyswith%29.md)
   Creates a new dictionary from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
-- [init<S, E>(grouping: S, by: (S.Element) throws(E) -> Key) throws(E)](dictionary/init(grouping:by:).md)
+- [init<S, E>(grouping: S, by: (S.Element) throws(E) -> Key) throws(E)](./dictionary/init%28grouping,by%29.md)
   Creates a new dictionary whose keys are the groupings returned by the given closure and whose values are arrays of the elements that returned each key.
 ### Inspecting a Dictionary
-- [var isEmpty: Bool](dictionary/isempty.md)
+- [var isEmpty: Bool](./dictionary/isempty.md)
   A Boolean value that indicates whether the dictionary is empty.
-- [var count: Int](dictionary/count.md)
+- [var count: Int](./dictionary/count.md)
   The number of key-value pairs in the dictionary.
-- [var capacity: Int](dictionary/capacity.md)
+- [var capacity: Int](./dictionary/capacity.md)
   The total number of key-value pairs that the dictionary can contain without allocating new storage.
 ### Accessing Keys and Values
-- [subscript(Key) -> Value?](dictionary/subscript(_:)-8rfql.md)
+- [subscript(Key) -> Value?](./dictionary/subscript%28_%29-8rfql.md)
   Accesses the value associated with the given key for reading and writing.
-- [subscript(Key, default _: @autoclosure () -> Value) -> Value](dictionary/subscript(_:default:).md)
+- [subscript(Key, default _: @autoclosure () -> Value) -> Value](./dictionary/subscript%28_,default%29.md)
   Accesses the value with the given key, falling back to the given default value if the key isn’t found.
-- [func index(forKey: Key) -> Dictionary<Key, Value>.Index?](dictionary/index(forkey:).md)
+- [func index(forKey: Key) -> Dictionary<Key, Value>.Index?](./dictionary/index%28forkey%29.md)
   Returns the index for the given key.
-- [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/subscript(_:)-4bhoo.md)
+- [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](./dictionary/subscript%28_%29-4bhoo.md)
   Accesses the key-value pair at the specified position.
-- [var keys: Dictionary<Key, Value>.Keys](dictionary/keys-swift.property.md)
+- [var keys: Dictionary<Key, Value>.Keys](./dictionary/keys-swift.property.md)
   A collection containing just the keys of the dictionary.
-- [var values: Dictionary<Key, Value>.Values](dictionary/values-swift.property.md)
+- [var values: Dictionary<Key, Value>.Values](./dictionary/values-swift.property.md)
   A collection containing just the values of the dictionary.
-- [var first: Self.Element?](dictionary/first.md)
+- [var first: Self.Element?](./dictionary/first.md)
   The first element of the collection.
-- [func randomElement() -> Self.Element?](dictionary/randomelement.md)
+- [func randomElement() -> Self.Element?](./dictionary/randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](dictionary/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./dictionary/randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 ### Adding Keys and Values
-- [func updateValue(Value, forKey: Key) -> Value?](dictionary/updatevalue(_:forkey:).md)
+- [func updateValue(Value, forKey: Key) -> Value?](./dictionary/updatevalue%28_,forkey%29.md)
   Updates the value stored in the dictionary for the given key, or adds a new key-value pair if the key does not exist.
-- [func reserveCapacity(Int)](dictionary/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./dictionary/reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of key-value pairs.
 ### Removing Keys and Values
-- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](dictionary/filter(_:).md)
+- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](./dictionary/filter%28_%29.md)
   Returns a new dictionary containing the key-value pairs of the dictionary that satisfy the given predicate.
-- [func removeValue(forKey: Key) -> Value?](dictionary/removevalue(forkey:).md)
+- [func removeValue(forKey: Key) -> Value?](./dictionary/removevalue%28forkey%29.md)
   Removes the given key and its associated value from the dictionary.
-- [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/remove(at:).md)
+- [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](./dictionary/remove%28at%29.md)
   Removes and returns the key-value pair at the specified index.
-- [func removeAll(keepingCapacity: Bool)](dictionary/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./dictionary/removeall%28keepingcapacity%29.md)
   Removes all key-value pairs from the dictionary.
 ### Comparing Dictionaries
-- [static func == ([Key : Value], [Key : Value]) -> Bool](dictionary/==(_:_:).md)
+- [static func == ([Key : Value], [Key : Value]) -> Bool](./dictionary/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](dictionary/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./dictionary/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Iterating over Keys and Values
-- [func forEach((Self.Element) throws -> Void) rethrows](dictionary/foreach(_:).md)
+- [func forEach((Self.Element) throws -> Void) rethrows](./dictionary/foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](dictionary/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./dictionary/enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [var lazy: LazySequence<Self>](dictionary/lazy.md)
+- [var lazy: LazySequence<Self>](./dictionary/lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
-- [func makeIterator() -> Dictionary<Key, Value>.Iterator](dictionary/makeiterator.md)
+- [func makeIterator() -> Dictionary<Key, Value>.Iterator](./dictionary/makeiterator%28%29.md)
   Returns an iterator over the dictionary’s key-value pairs.
-- [var underestimatedCount: Int](dictionary/underestimatedcount.md)
+- [var underestimatedCount: Int](./dictionary/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Finding Elements
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](dictionary/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./dictionary/contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](dictionary/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./dictionary/allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./dictionary/first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](dictionary/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./dictionary/firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./dictionary/min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./dictionary/max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 ### Transforming a Dictionary
-- [func mapValues<T, E>((Value) throws(E) -> T) throws(E) -> Dictionary<Key, T>](dictionary/mapvalues(_:).md)
+- [func mapValues<T, E>((Value) throws(E) -> T) throws(E) -> Dictionary<Key, T>](./dictionary/mapvalues%28_%29.md)
   Returns a new dictionary containing the keys of this dictionary with the values transformed by the given closure.
-- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](dictionary/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](./dictionary/reduce%28_,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](dictionary/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](./dictionary/reduce%28into,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](dictionary/compactmap(_:).md)
+- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./dictionary/compactmap%28_%29.md)
   Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
-- [func compactMapValues<T>((Value) throws -> T?) rethrows -> Dictionary<Key, T>](dictionary/compactmapvalues(_:).md)
+- [func compactMapValues<T>((Value) throws -> T?) rethrows -> Dictionary<Key, T>](./dictionary/compactmapvalues%28_%29.md)
   Returns a new dictionary containing only the key-value pairs that have non-`nil` values as the result of transformation by the given closure.
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](dictionary/flatmap(_:)-i3ly.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./dictionary/flatmap%28_%29-i3ly.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](dictionary/flatmap(_:)-6chv9.md)
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](dictionary/sorted(by:).md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./dictionary/flatmap%28_%29-6chv9.md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./dictionary/sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func shuffled() -> [Self.Element]](dictionary/shuffled.md)
+- [func shuffled() -> [Self.Element]](./dictionary/shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](dictionary/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./dictionary/shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
 ### Performing Collection Operations
-- [Order Dependent Operations on Dictionary](order-dependent-operations-on-dictionary.md)
+- [Order Dependent Operations on Dictionary](./order-dependent-operations-on-dictionary.md)
   Perform order-dependent operations common to all collections, as implemented for `Dictionary`.
 ### Encoding and Decoding
-- [func encode(to: any Encoder) throws](dictionary/encode(to:).md)
+- [func encode(to: any Encoder) throws](./dictionary/encode%28to%29.md)
   Encodes the contents of this dictionary into the given encoder.
-- [init(from: any Decoder) throws](dictionary/init(from:)-6e6js.md)
+- [init(from: any Decoder) throws](./dictionary/init%28from%29-6e6js.md)
   Creates a new dictionary by decoding from the given decoder.
 ### Describing a Dictionary
-- [var description: String](dictionary/description.md)
+- [var description: String](./dictionary/description.md)
   A string that represents the contents of the dictionary.
-- [var debugDescription: String](dictionary/debugdescription.md)
+- [var debugDescription: String](./dictionary/debugdescription.md)
   A string that represents the contents of the dictionary, suitable for debugging.
-- [var customMirror: Mirror](dictionary/custommirror.md)
+- [var customMirror: Mirror](./dictionary/custommirror.md)
   A mirror that reflects the dictionary.
-- [func hash(into: inout Hasher)](dictionary/hash(into:).md)
+- [func hash(into: inout Hasher)](./dictionary/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Using a Dictionary as a Data Value
-- [init?(from: MLDataValue.DictionaryType)](dictionary/init(from:)-5zhfu.md)
+- [init?(from: MLDataValue.DictionaryType)](./dictionary/init%28from%29-5zhfu.md)
 ### Reference Types
-- [class NSDictionary](../foundation/nsdictionary.md)
+- [class NSDictionary](../Foundation/nsdictionary.md)
   A static collection of objects associated with unique keys.
-- [class NSMutableDictionary](../foundation/nsmutabledictionary.md)
+- [class NSMutableDictionary](../Foundation/nsmutabledictionary.md)
   A dynamic collection of objects associated with unique keys.
 ### Supporting Types
-- [Dictionary.Keys](dictionary/keys-swift.struct.md)
+- [Dictionary.Keys](./dictionary/keys-swift.struct.md)
   A view of a dictionary’s keys.
-- [Dictionary.Values](dictionary/values-swift.struct.md)
+- [Dictionary.Values](./dictionary/values-swift.struct.md)
   A view of a dictionary’s values.
-- [Dictionary.Index](dictionary/index.md)
+- [Dictionary.Index](./dictionary/index.md)
   The position of a key-value pair in a dictionary.
-- [Dictionary.Indices](dictionary/indices.md)
+- [Dictionary.Indices](./dictionary/indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Dictionary.Iterator](dictionary/iterator.md)
+- [Dictionary.Iterator](./dictionary/iterator.md)
   An iterator over the members of a `Dictionary<Key, Value>`.
 ### Creating a Dictionary from an Attribute Container
-- [init<S>(AttributeContainer, including: S.Type) throws](dictionary/init(_:including:)-7afz2.md)
-- [init<S>(AttributeContainer, including: KeyPath<AttributeScopes, S.Type>) throws](dictionary/init(_:including:)-8ls7v.md)
-- [init(AttributeContainer)](dictionary/init(_:).md)
+- [init<S>(AttributeContainer, including: S.Type) throws](./dictionary/init%28_,including%29-7afz2.md)
+- [init<S>(AttributeContainer, including: KeyPath<AttributeScopes, S.Type>) throws](./dictionary/init%28_,including%29-8ls7v.md)
+- [init(AttributeContainer)](./dictionary/init%28_%29.md)
 ### Infrequently Used Functionality
-- [init(dictionaryLiteral: (Key, Value)...)](dictionary/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (Key, Value)...)](./dictionary/init%28dictionaryliteral%29.md)
   Creates a dictionary initialized with a dictionary literal.
-- [var hashValue: Int](dictionary/hashvalue.md)
+- [var hashValue: Int](./dictionary/hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func isTriviallyIdentical(to: Dictionary<Key, Value>) -> Bool](dictionary/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: Dictionary<Key, Value>) -> Bool](./dictionary/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this dictionary is identical to `other`.
-- [func merge<E>([Key : Value], uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/merge(_:uniquingkeyswith:)-1u8be.md)
+- [func merge<E>([Key : Value], uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](./dictionary/merge%28_,uniquingkeyswith%29-1u8be.md)
   Merges the given dictionary into this dictionary, using a combining closure to determine the value for any duplicate keys.
-- [func merge<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/merge(_:uniquingkeyswith:)-84ffe.md)
+- [func merge<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](./dictionary/merge%28_,uniquingkeyswith%29-84ffe.md)
   Merges the key-value pairs in the given sequence into the dictionary, using a combining closure to determine the value for any duplicate keys.
-- [func merging<E>([Key : Value], uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-4vrqz.md)
+- [func merging<E>([Key : Value], uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](./dictionary/merging%28_,uniquingkeyswith%29-4vrqz.md)
   Creates a dictionary by merging the given dictionary into this dictionary, using a combining closure to determine the value for duplicate keys.
-- [func merging<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-6cztu.md)
+- [func merging<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](./dictionary/merging%28_,uniquingkeyswith%29-6cztu.md)
   Creates a dictionary by merging key-value pairs in a sequence into the dictionary, using a combining closure to determine the value for duplicate keys.
 ### Type Aliases
-- [Dictionary.Element](dictionary/element.md)
+- [Dictionary.Element](./dictionary/element.md)
   The element type of a dictionary: a tuple containing an individual key-value pair.
 ### Default Implementations
-- [Collection Implementations](dictionary/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](dictionary/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](dictionary/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](dictionary/customstringconvertible-implementations.md)
-- [Decodable Implementations](dictionary/decodable-implementations.md)
-- [Encodable Implementations](dictionary/encodable-implementations.md)
-- [Equatable Implementations](dictionary/equatable-implementations.md)
-- [ExpressibleByDictionaryLiteral Implementations](dictionary/expressiblebydictionaryliteral-implementations.md)
-- [Hashable Implementations](dictionary/hashable-implementations.md)
-- [Sequence Implementations](dictionary/sequence-implementations.md)
+- [Collection Implementations](./dictionary/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./dictionary/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./dictionary/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./dictionary/customstringconvertible-implementations.md)
+- [Decodable Implementations](./dictionary/decodable-implementations.md)
+- [Encodable Implementations](./dictionary/encodable-implementations.md)
+- [Equatable Implementations](./dictionary/equatable-implementations.md)
+- [ExpressibleByDictionaryLiteral Implementations](./dictionary/expressiblebydictionaryliteral-implementations.md)
+- [Hashable Implementations](./dictionary/hashable-implementations.md)
+- [Sequence Implementations](./dictionary/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [CVarArg](cvararg.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByDictionaryLiteral](expressiblebydictionaryliteral.md)
-- [Hashable](hashable.md)
-- [MLDataValueConvertible](../createml/mldatavalueconvertible.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [CVarArg](./cvararg.md)
+- [Collection](./collection.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByDictionaryLiteral](./expressiblebydictionaryliteral.md)
+- [Hashable](./hashable.md)
+- [MLDataValueConvertible](../CreateML/mldatavalueconvertible.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct Int](int.md)
+### Standard Library
+- [struct Int](./int.md)
   A signed integer value type.
-- [struct Double](double.md)
+- [struct Double](./double.md)
   A double-precision (64-bit), floating-point value type.
-- [struct String](string.md)
+- [struct String](./string.md)
   A Unicode string value that is a collection of characters.
-- [struct Array](array.md)
+- [struct Array](./array.md)
   An ordered, random-access collection.
-- [Swift Standard Library](swift-standard-library.md)
+- [Swift Standard Library](./swift-standard-library.md)
   Solve complex problems and write high-performance, readable code.
 
 

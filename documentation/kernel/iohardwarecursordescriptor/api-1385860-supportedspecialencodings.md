@@ -1,7 +1,8 @@
 # supportedSpecialEncodings
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Mask of supported special pixel values, eg. kTransparentEncodedPixel, kInvertingEncodedPixel.
 
@@ -10,7 +11,7 @@ Mask of supported special pixel values, eg. kTransparentEncodedPixel, kInverting
 
 ## Declaration
 
-```swift
+```c
 UInt32 supportedSpecialEncodings;
 ```
 

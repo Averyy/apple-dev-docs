@@ -1,7 +1,8 @@
 # status(for:to:)
 
 **Framework**: Translation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks to see if the framework supports the language pairing based off a string of sample text.
 
@@ -25,7 +26,7 @@ The availability status for the language pairing to use in the translation.
 
 Use this function when you don’t know the source language and want the framework to attempt a translation based on the sample text you pass in.
 
-Pass in a string of sample `text` representing the language you want to translate from. When you do, the system automatically tries to detect the language of the text you pass in. If it can’t, it throws a [`TranslationError`](translationerror.md).
+Pass in a string of sample `text` representing the language you want to translate from. When you do, the system automatically tries to detect the language of the text you pass in. If it can’t, it throws a [`TranslationError`](../translationerror.md).
 
 If it can detect the source language of the text, it checks for necessary language asset downloads and whether they’re ready for use.
 
@@ -38,9 +39,10 @@ If it can detect the source language of the text, it checks for necessary langua
 
 ## See Also
 
-- [func status(from: Locale.Language, to: Locale.Language?) async -> LanguageAvailability.Status](languageavailability/status(from:to:).md)
+### Checking language availability
+- [func status(from: Locale.Language, to: Locale.Language?) async -> LanguageAvailability.Status](./status%28from,to%29.md)
   Checks for the installation of a specific language pairing and whether it’s ready for translation.
-- [LanguageAvailability.Status](languageavailability/status.md)
+- [LanguageAvailability.Status](./status.md)
   The availability status for a language or language pairing.
 
 

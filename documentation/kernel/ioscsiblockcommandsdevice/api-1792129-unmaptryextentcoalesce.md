@@ -1,14 +1,15 @@
 # UnmapTryExtentCoalesce
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 bool UnmapTryExtentCoalesce(IOBlockStorageDeviceExtent *mergedExtent, IOBlockStorageDeviceExtent *currentExtent, IOBlockStorageDeviceExtent *nextExtent);
 ```
 

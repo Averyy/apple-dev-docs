@@ -1,7 +1,8 @@
 # floatQuaternionValue(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func floatQuaternionValue(atTime time: TimeInterval) -> simd_quatf
+```
+
+```objc
+- (simd_quatf) floatQuaternionAtTime:(NSTimeInterval) time;
 ```
 
 

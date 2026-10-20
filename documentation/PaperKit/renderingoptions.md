@@ -1,7 +1,8 @@
 # RenderingOptions
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The rendering options for drawing paper data models.
 
@@ -21,30 +22,31 @@ struct RenderingOptions
 ## Topics
 
 ### Creating rendering options
-- [init(darkUserInterfaceStyle: Bool, layoutRightToLeft: Bool)](renderingoptions/init(darkuserinterfacestyle:layoutrighttoleft:).md)
+- [init(darkUserInterfaceStyle: Bool, layoutRightToLeft: Bool)](./renderingoptions/init%28darkuserinterfacestyle,layoutrighttoleft%29.md)
   Creates a new rendering options value.
-- [init(traitCollection: UITraitCollection)](renderingoptions/init(traitcollection:).md)
+- [init(traitCollection: UITraitCollection)](./renderingoptions/init%28traitcollection%29.md)
   Creates the most suitable options for rendering on a device with the specified traits.
 ### Configuring style
-- [var darkUserInterfaceStyle: Bool](renderingoptions/darkuserinterfacestyle.md)
+- [var darkUserInterfaceStyle: Bool](./renderingoptions/darkuserinterfacestyle.md)
   Use a dark user interface style for rendering.
-- [var rightToLeftLayoutDirection: Bool](renderingoptions/righttoleftlayoutdirection.md)
+- [var rightToLeftLayoutDirection: Bool](./renderingoptions/righttoleftlayoutdirection.md)
   Use a right to left layout direction for rendering.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct FeatureSet](featureset.md)
+### Configuration
+- [struct FeatureSet](./featureset.md)
   The features PaperKit supports in its UI and data models.
-- [struct ShapeConfiguration](shapeconfiguration.md)
+- [struct ShapeConfiguration](./shapeconfiguration.md)
   A configuration that specifies the appearance of a shape.
-- [struct MarkupAutoresizing](markupautoresizing.md)
+- [struct MarkupAutoresizing](./markupautoresizing.md)
   Automatic sizing behaviors for this markup.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the text selection manager.
 
@@ -14,13 +15,18 @@ The delegate of the text selection manager.
 weak var delegate: (any NSTextSelectionManager.Delegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextSelectionManagerDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate is responsible for storing the current text selection and responding to selection-related events.
 
 ## See Also
 
-- [NSTextSelectionManager.Delegate](nstextselectionmanager/delegate-swift.protocol.md)
+### Setting a delegate
+- [NSTextSelectionManager.Delegate](./delegate-swift.protocol.md)
   A set of methods that manage text selection state and let you customize selection behavior.
 
 

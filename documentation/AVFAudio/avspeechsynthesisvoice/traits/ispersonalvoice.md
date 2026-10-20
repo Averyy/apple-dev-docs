@@ -1,7 +1,8 @@
 # isPersonalVoice
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The trait that indicates a voice is a personal voice.
 
@@ -20,15 +21,20 @@ The trait that indicates a voice is a personal voice.
 static var isPersonalVoice: AVSpeechSynthesisVoice.Traits { get }
 ```
 
+```c
+AVSpeechSynthesisVoiceTraitIsPersonalVoice
+```
+
 #### Discussion
 
 A user generates and owns a personal voice.
 
-> **Note**:  The system only makes personal voices available when [`personalVoiceAuthorizationStatus`](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md) is [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized`](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/authorized.md).
+> **Note**:  The system only makes personal voices available when [`personalVoiceAuthorizationStatus`](../../avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md) is [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized`](../../avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/authorized.md).
 
 ## See Also
 
-- [static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/traits/isnoveltyvoice.md)
+### Inspecting a voice trait
+- [static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits](./isnoveltyvoice.md)
   The trait that indicates a voice is a novelty voice.
 
 

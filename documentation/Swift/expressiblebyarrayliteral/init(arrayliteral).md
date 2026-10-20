@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance initialized with the given elements.
@@ -20,6 +21,14 @@ Creates an instance initialized with the given elements.
 ```swift
 init(arrayLiteral elements: Self.ArrayLiteralElement...)
 ```
+
+## Default Implementations
+
+### ExpressibleByArrayLiteral Implementations
+- [init(arrayLiteral: Self.Scalar...)](./init%28arrayliteral%29-9x660.md)
+  Creates a vector from the specified elements.
+- [init(arrayLiteral: Self.Element...)](./init%28arrayliteral%29-q0d7.md)
+  Creates a set containing the elements of the given array literal.
 
 
 ---

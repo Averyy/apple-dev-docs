@@ -1,7 +1,8 @@
 # Chart
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI view that displays a chart.
 
@@ -23,7 +24,7 @@ A SwiftUI view that displays a chart.
 
 ## Mentions
 
-- [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
+- [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
 
 #### Overview
 
@@ -42,7 +43,7 @@ let data: [ValuePerCategory] = [
 ]
 ```
 
-You can use [`BarMark`](barmark.md) inside a chart to represent the `category` property as different bars in the chart and the `value` property as the y value for each bar:
+You can use [`BarMark`](./barmark.md) inside a chart to represent the `category` property as different bars in the chart and the `value` property as the y value for each bar:
 
 ```swift
 Chart(data, id: \.category) { item in
@@ -53,11 +54,11 @@ Chart(data, id: \.category) { item in
 }
 ```
 
-This chart initializer behaves a lot like a SwiftUI [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach), creating a mark — in this case, a bar — for each of the values in the `data` array:
+This chart initializer behaves a lot like a SwiftUI [`ForEach`](../SwiftUI/foreach.md), creating a mark — in this case, a bar — for each of the values in the `data` array:
 
-![A bar chart with three categories A, B, and C on the x-axis and a range of 0 to 10 on the y-axis. A bar appears in each category. All the bars are the same color. The first has a value of 5. The second has a value of 9. The third has a value of 7.](/images/com.apple.Charts/chart-1-macOS@2x.png)
+![A bar chart with three categories A, B, and C on the x-axis and a range of 0 to 10 on the y-axis. A bar appears in each category. All the bars are the same color. The first has a value of 5. The second has a value of 9. The third has a value of 7.](https://developer.apple.com/tutorials/images/com.apple.Charts/chart-1-macOS@2x.png)
 
-##### Controlling Data Series Inside a Chart
+##### Controlling data series inside a chart
 
 You can compose more sophisticated charts by providing more than one series of marks to the chart. For example, suppose you have profit data for two companies:
 
@@ -71,7 +72,7 @@ let departmentAProfit: [ProfitOverTime] = <#Profit array A#>
 let departmentBProfit: [ProfitOverTime] = <#Profit array B#>
 ```
 
-The following chart creates two different series of [`LineMark`](linemark.md) instances with different colors to represent the data for each company. In effect, it moves the `ForEach` construct from the chart’s initializer into the body of the chart, enabling you to represent multiple different series:
+The following chart creates two different series of [`LineMark`](./linemark.md) instances with different colors to represent the data for each company. In effect, it moves the `ForEach` construct from the chart’s initializer into the body of the chart, enabling you to represent multiple different series:
 
 ```swift
 Chart {
@@ -98,41 +99,42 @@ Chart {
 }
 ```
 
-You indicate which series a line mark belongs to by specifying its `series` input parameter. The above chart also uses a [`RuleMark`](rulemark.md) to produce a horizontal line segment that displays a constant threshold value across the width of the chart:
+You indicate which series a line mark belongs to by specifying its `series` input parameter. The above chart also uses a [`RuleMark`](./rulemark.md) to produce a horizontal line segment that displays a constant threshold value across the width of the chart:
 
-![A line chart with three lines. Dates appear on the x-axis, spanning one full month, and company profit appears on the y-axis in the range of 0 to 750. Two of the lines trend upward from left to right, with occasional downward movement. The third line is purely horizontal at the level of 400.](/images/com.apple.Charts/chart-2-macOS@2x.png)
+![A line chart with three lines. Dates appear on the x-axis, spanning one full month, and company profit appears on the y-axis in the range of 0 to 750. Two of the lines trend upward from left to right, with occasional downward movement. The third line is purely horizontal at the level of 400.](https://developer.apple.com/tutorials/images/com.apple.Charts/chart-2-macOS@2x.png)
 
 ## Topics
 
 ### Creating a chart
-- [init(content: () -> Content)](chart/init(content:).md)
+- [init(content: () -> Content)](./chart/init%28content%29.md)
   Creates a chart composed of any number of data series and individual marks.
-- [init<Data, C>(Data, content: (Data.Element) -> C)](chart/init(_:content:).md)
+- [init<Data, C>(Data, content: (Data.Element) -> C)](./chart/init%28_,content%29.md)
   Creates a chart composed of a series of identifiable marks.
-- [init<Data, ID, C>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> C)](chart/init(_:id:content:).md)
+- [init<Data, ID, C>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> C)](./chart/init%28_,id,content%29.md)
   Creates a chart composed of a series of marks.
 ### Supporting types
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
+### Charts
+- [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing-your-app-s-data.md)
+- [Visualizing your app’s data](./visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
-- [protocol ChartContent](chartcontent.md)
+- [protocol ChartContent](./chartcontent.md)
   A type that represents the content that you draw on a chart.
-- [struct ChartContentBuilder](chartcontentbuilder.md)
+- [struct ChartContentBuilder](./chartcontentbuilder.md)
   A result builder that you use to compose the contents of a chart.
-- [struct Plot](plot.md)
+- [struct Plot](./plot.md)
   A mechanism for grouping chart contents into a single entity.
 
 

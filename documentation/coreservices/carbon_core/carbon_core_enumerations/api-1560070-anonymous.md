@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var badTranslationSpecErr: Int](badtranslationspecerr.md)
-- [var couldNotParseSourceFileErr: Int](couldnotparsesourcefileerr.md)
-- [var invalidTranslationPathErr: Int](invalidtranslationpatherr.md)
-- [var noPrefAppErr: Int](noprefapperr.md)
-- [var noTranslationPathErr: Int](notranslationpatherr.md)
+- [var badTranslationSpecErr: Int](../../badtranslationspecerr.md)
+- [var couldNotParseSourceFileErr: Int](../../couldnotparsesourcefileerr.md)
+- [var invalidTranslationPathErr: Int](../../invalidtranslationpatherr.md)
+- [var noPrefAppErr: Int](../../noprefapperr.md)
+- [var noTranslationPathErr: Int](../../notranslationpatherr.md)
 
 
 ---

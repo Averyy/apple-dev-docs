@@ -1,7 +1,8 @@
 # allowsPictureInPicturePlayback
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the player view allows Picture in Picture playback.
 
@@ -14,15 +15,20 @@ A Boolean value that determines whether the player view allows Picture in Pictur
 var allowsPictureInPicturePlayback: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsPictureInPicturePlayback;
+```
+
 #### Discussion
 
 The default value is `false`.
 
 ## See Also
 
-- [var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)?](avplayerview/pictureinpicturedelegate.md)
+### Configuring picture in picture
+- [var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)?](./pictureinpicturedelegate.md)
   The Picture in Picture delegate object.
-- [protocol AVPlayerViewPictureInPictureDelegate](avplayerviewpictureinpicturedelegate.md)
+- [protocol AVPlayerViewPictureInPictureDelegate](../avplayerviewpictureinpicturedelegate.md)
   A protocol that defines the methods to implement to respond to Picture in Picture playback events.
 
 

@@ -1,22 +1,27 @@
 # Exporting delivery metrics logs
 
-**Framework**: PushKit
+**Framework**: PushKit  
+**Role**: Article
 
 Download and analyze push-notification metrics.
 
 #### Overview
 
-Use the CloudKit Console to export Apple Push Notification service (APNs) delivery metrics logs for your apps. To download the push notification metrics report, create a data export token, request data from iCloud Web Services, and download the results when the request completes. For more information about CloudKit and CloudKit Console, see [`Build apps using CloudKit`](https://developer.apple.comhttps://developer.apple.com/icloud/cloudkit/).
+Use the CloudKit Console to export Apple Push Notification service (APNs) delivery metrics logs for your apps. To download the push notification metrics report, create a data export token, request data from iCloud Web Services, and download the results when the request completes. For more information about CloudKit and CloudKit Console, see [Build apps using CloudKit](https://developer.apple.com/icloud/cloudkit/).
 
 The push-notification metrics report includes aggregated, rounded metrics on notification states as your notifications pass through APNs. It shows multiple notification statuses, such as `delivered`, `stored`, and `discarded`. It also provides insights into various statistics for notifications, including a detailed breakdown based on push type.
 
-> **Note**:  If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > CloudKit Console > Data Export [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
+> **Note**:  If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option:
+>
+> Developer Tools & Resources > CloudKit Console > Data Export
+>
+> [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-#### Create a Data Export Token
+#### Create a data export token
 
 To access log data for your apps, create a data export token by following these steps:
 
-1. Navigate to [`CloudKit Console settings`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/notifications/teams?settings=account) and log in.
+1. Navigate to [CloudKit Console settings](https://icloud.developer.apple.com/dashboard/notifications/teams?settings=account) and log in.
 2. Click Tokens.
 3. Click Create Data Export Token.
 4. Give the token a name and an optional description.
@@ -30,7 +35,7 @@ To access log data for your apps, create a data export token by following these 
 
 The token you create is restricted to your developer account, and only gives you access to the APNs data set for the specified app.
 
-#### Create a Data Export Request
+#### Create a data export request
 
 Make an HTTPS `POST` request to the data export request endpoint at:
 
@@ -54,7 +59,7 @@ The server responds with a JSON object that contains these fields:
 
 **Example request**:
 
-```None
+```
 curl -X POST \
 -H "Content-Type: application/json" \
 -H "X-Apple-CloudKit-Management-Token: {data-export-token}" \
@@ -69,7 +74,7 @@ https://api.icloud.apple.com/v1/dataExports/apns/teams/{teamId}/appId/{appId}/da
 
 **Response**:
 
-```None
+```
 {
     "statusUrl": "https://example.com/statusURL",
     "requestedAt": "2024-01-28 10:01:00Z"
@@ -86,25 +91,27 @@ You can request a download that covers the same date range as a previous downloa
 
 > **Note**:  The status URLs for all requests are available for 6 months after you make the request. Make sure you use the latest URLs for checking status and downloading reports.
 
-#### Check the Status of Your Data Export
+#### Check the status of your data export
 
 Make an HTTPS `GET` request to the status URL, passing your data export token in the `X-Apple-CloudKit-Management-Token` header. The server responds with a JSON object that contains these fields:
 
 - **`status`**: One of `PROCESSING`, `FAILED`, `EXPIRED`, or `SUCCESS`.
 - **`requestedAt`**: The time at which you requested the data export, in ISO8601 format.
-- **`downloadDetails`**: If the status is `PROCESSING`, `EXPIRED`, or `FAILED`, this key isn’t set. If the status is `SUCCESS`, it’s a JSON object that contains these fields: - **`dataURL`**: The URL you use to get the exported data.
-- **`expiresAt`**: The time at which the data URL expires.
+- **`downloadDetails`**: If the status is `PROCESSING`, `EXPIRED`, or `FAILED`, this key isn’t set. If the status is `SUCCESS`, it’s a JSON object that contains these fields:
+
+  - **`dataURL`**: The URL you use to get the exported data.
+  - **`expiresAt`**: The time at which the data URL expires.
 
 **Example Request**:
 
-```None
+```
 curl -X GET -H "X-Apple-CloudKit-Management-Token: {data-export-token}" \
 https://example.com/statusURL
 ```
 
 **Response**:
 
-```None
+```
 {
     "requestedAt": "2024-02-14T18:32:30.947Z",
     "status": "SUCCESS",
@@ -121,11 +128,11 @@ The data export status endpoint might return the following HTTP status codes tha
 - **`404`**: The data export token is invalid.
 - **`500`**: An internal error occurred.
 
-#### Download the Exported Data
+#### Download the exported data
 
 Make an HTTPS `GET` request to URL in the status object’s `downloadDetails.dataUrl` field to receive a CSV file that contains your exported data:
 
-```None
+```
 curl --compressed -X GET "https://example.com/download/data.csv" -o export.csv
 ```
 
@@ -140,7 +147,8 @@ Apple’s servers retain the exported data for six months. To re-download the da
 
 ## See Also
 
-- [Exporting broadcast push notification metrics](exporting-broadcast-push-notification-metrics.md)
+### Data export
+- [Exporting broadcast push notification metrics](./exporting-broadcast-push-notification-metrics.md)
   Discover how many people subscribe to your broadcast channels, and how many messages they receive.
 
 

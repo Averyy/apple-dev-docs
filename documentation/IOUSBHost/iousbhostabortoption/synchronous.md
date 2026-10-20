@@ -1,7 +1,8 @@
 # IOUSBHostAbortOption.synchronous
 
 **Framework**: IOUSBHost  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The option to abort input/output requests synchronously.
 
@@ -15,13 +16,18 @@ The option to abort input/output requests synchronously.
 case synchronous
 ```
 
+```c
+IOUSBHostAbortOptionSynchronous
+```
+
 #### Discussion
 
 This is the default argument for functions that abort pending input/output requests. All input/output requests must abort before functions can return.
 
 ## See Also
 
-- [IOUSBHostAbortOption.asynchronous](iousbhostabortoption/asynchronous.md)
+### Options
+- [IOUSBHostAbortOption.asynchronous](./asynchronous.md)
   The option to abort input/output requests asynchronously.
 
 

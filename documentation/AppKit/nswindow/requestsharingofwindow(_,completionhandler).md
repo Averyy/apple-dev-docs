@@ -1,7 +1,8 @@
 # requestSharingOfWindow(_:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -9,7 +10,15 @@
 ## Declaration
 
 ```swift
+func requestSharingOfWindow(_ window: NSWindow, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func requestSharingOfWindow(_ window: NSWindow) async throws
+```
+
+```objc
+- (void) requestSharingOfWindow:(NSWindow *) window completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

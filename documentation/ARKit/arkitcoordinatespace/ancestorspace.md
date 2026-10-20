@@ -1,7 +1,8 @@
 # ancestorSpace
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent space of this ARKit coordinate space.
 

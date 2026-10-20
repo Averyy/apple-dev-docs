@@ -1,7 +1,8 @@
 # topLeadingBack
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s in the top-leading-back corner of a view.
 
@@ -20,21 +21,22 @@ The leading edge appears on the left in a left-to-right language environment and
 
 ## See Also
 
-- [static let topLeading: UnitPoint3D](unitpoint3d/topleading.md)
+### Getting top points
+- [static let topLeading: UnitPoint3D](./topleading.md)
   A point that’s centered in the depth dimension on the top-leading edge of a view.
-- [static let topLeadingFront: UnitPoint3D](unitpoint3d/topleadingfront.md)
+- [static let topLeadingFront: UnitPoint3D](./topleadingfront.md)
   A point that’s in the top-leading-front corner of a view.
-- [static let topBack: UnitPoint3D](unitpoint3d/topback.md)
+- [static let topBack: UnitPoint3D](./topback.md)
   A point that’s centered horizontally on the top-back edge of a view.
-- [static let top: UnitPoint3D](unitpoint3d/top.md)
+- [static let top: UnitPoint3D](./top.md)
   A point that’s centered horizontally and in the depth dimension on the top face of a view.
-- [static let topFront: UnitPoint3D](unitpoint3d/topfront.md)
+- [static let topFront: UnitPoint3D](./topfront.md)
   A point that’s centered horizontally on the top-front edge of a view.
-- [static let topTrailingBack: UnitPoint3D](unitpoint3d/toptrailingback.md)
+- [static let topTrailingBack: UnitPoint3D](./toptrailingback.md)
   A point that’s in the top-trailing-back corner of a view.
-- [static let topTrailing: UnitPoint3D](unitpoint3d/toptrailing.md)
+- [static let topTrailing: UnitPoint3D](./toptrailing.md)
   A point that’s centered in the depth dimension on the top-trailing edge of a view.
-- [static let topTrailingFront: UnitPoint3D](unitpoint3d/toptrailingfront.md)
+- [static let topTrailingFront: UnitPoint3D](./toptrailingfront.md)
   A point that’s in the top-trailing-front corner of a view.
 
 

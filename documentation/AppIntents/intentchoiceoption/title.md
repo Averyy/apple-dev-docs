@@ -1,7 +1,8 @@
 # title
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized text displayed for this option.
 

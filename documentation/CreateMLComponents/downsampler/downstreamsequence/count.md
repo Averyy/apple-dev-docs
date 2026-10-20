@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The count of elements.
 

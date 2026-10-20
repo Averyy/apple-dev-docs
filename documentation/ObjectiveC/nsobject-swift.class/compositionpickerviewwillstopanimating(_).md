@@ -1,17 +1,24 @@
 # compositionPickerViewWillStopAnimating(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom tasks when the composition picker view stops animating a composition.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func compositionPickerViewWillStopAnimating(_ pickerView: QCCompositionPickerView!)
+```
+
+```objc
+- (void) compositionPickerViewWillStopAnimating:(QCCompositionPickerView *) pickerView;
 ```
 
 #### Discussion

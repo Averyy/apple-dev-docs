@@ -1,7 +1,8 @@
 # MTRDoorLockDoorState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.4+
@@ -18,27 +19,31 @@
 enum MTRDoorLockDoorState
 ```
 
+```c
+enum MTRDoorLockDoorState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDoorLockDoorState.doorAjar](mtrdoorlockdoorstate/doorajar.md)
-- [MTRDoorLockDoorState.doorClosed](mtrdoorlockdoorstate/doorclosed.md)
-- [MTRDoorLockDoorState.doorForcedOpen](mtrdoorlockdoorstate/doorforcedopen.md)
-- [MTRDoorLockDoorState.doorJammed](mtrdoorlockdoorstate/doorjammed.md)
-- [MTRDoorLockDoorState.doorOpen](mtrdoorlockdoorstate/dooropen.md)
-- [MTRDoorLockDoorState.doorUnspecifiedError](mtrdoorlockdoorstate/doorunspecifiederror.md)
+- [MTRDoorLockDoorState.doorAjar](./mtrdoorlockdoorstate/doorajar.md)
+- [MTRDoorLockDoorState.doorClosed](./mtrdoorlockdoorstate/doorclosed.md)
+- [MTRDoorLockDoorState.doorForcedOpen](./mtrdoorlockdoorstate/doorforcedopen.md)
+- [MTRDoorLockDoorState.doorJammed](./mtrdoorlockdoorstate/doorjammed.md)
+- [MTRDoorLockDoorState.doorOpen](./mtrdoorlockdoorstate/dooropen.md)
+- [MTRDoorLockDoorState.doorUnspecifiedError](./mtrdoorlockdoorstate/doorunspecifiederror.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdoorlockdoorstate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdoorlockdoorstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kCAOnOrderIn
 
 **Framework**: Core Animation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifier that represents the action taken when a layer becomes visible, either as a result being inserted into the visible layer hierarchy or the layer is no longer set as hidden.
 
@@ -19,11 +20,16 @@ The identifier that represents the action taken when a layer becomes visible, ei
 let kCAOnOrderIn: String
 ```
 
+```c
+extern NSString * const kCAOnOrderIn;
+```
+
 ## See Also
 
-- [let kCAOnOrderOut: String](kcaonorderout.md)
+### Constants
+- [let kCAOnOrderOut: String](./kcaonorderout.md)
   The identifier that represents the action taken when the layer is removed from the layer hierarchy or is hidden.
-- [let kCATransition: String](kcatransition.md)
+- [let kCATransition: String](./kcatransition.md)
   The identifier that represents a transition animation.
 
 

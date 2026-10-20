@@ -1,7 +1,8 @@
 # AVSpeechSynthesisVoice.Traits
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Traits that describe a voice.
 
@@ -20,46 +21,51 @@ Traits that describe a voice.
 struct Traits
 ```
 
+```c
+enum AVSpeechSynthesisVoiceTraits : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a voice trait
-- [init(rawValue: UInt)](avspeechsynthesisvoice/traits/init(rawvalue:).md)
+- [init(rawValue: UInt)](./traits/init%28rawvalue%29.md)
   Creates a voice trait with the corresponding integer that you specify.
 ### Inspecting a voice trait
-- [static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/traits/isnoveltyvoice.md)
+- [static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits](./traits/isnoveltyvoice.md)
   The trait that indicates a voice is a novelty voice.
-- [static var isPersonalVoice: AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/traits/ispersonalvoice.md)
+- [static var isPersonalVoice: AVSpeechSynthesisVoice.Traits](./traits/ispersonalvoice.md)
   The trait that indicates a voice is a personal voice.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var identifier: String](avspeechsynthesisvoice/identifier.md)
+### Inspecting voices
+- [var identifier: String](./identifier.md)
   The unique identifier of a voice.
-- [var name: String](avspeechsynthesisvoice/name.md)
+- [var name: String](./name.md)
   The name of a voice.
-- [var quality: AVSpeechSynthesisVoiceQuality](avspeechsynthesisvoice/quality.md)
+- [var quality: AVSpeechSynthesisVoiceQuality](./quality.md)
   The speech quality of a voice.
-- [var gender: AVSpeechSynthesisVoiceGender](avspeechsynthesisvoice/gender.md)
+- [var gender: AVSpeechSynthesisVoiceGender](./gender.md)
   The gender for a voice.
-- [var voiceTraits: AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/voicetraits.md)
+- [var voiceTraits: AVSpeechSynthesisVoice.Traits](./voicetraits.md)
   The traits of a voice.
-- [var audioFileSettings: [String : Any]](avspeechsynthesisvoice/audiofilesettings.md)
+- [var audioFileSettings: [String : Any]](./audiofilesettings.md)
   A dictionary that contains audio file settings.
-- [enum AVSpeechSynthesisVoiceQuality](avspeechsynthesisvoicequality.md)
+- [enum AVSpeechSynthesisVoiceQuality](../avspeechsynthesisvoicequality.md)
   The speech quality of a voice.
-- [enum AVSpeechSynthesisVoiceGender](avspeechsynthesisvoicegender.md)
+- [enum AVSpeechSynthesisVoiceGender](../avspeechsynthesisvoicegender.md)
   The gender for a voice.
 
 

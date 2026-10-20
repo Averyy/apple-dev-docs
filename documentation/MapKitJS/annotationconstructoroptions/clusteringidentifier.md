@@ -1,7 +1,8 @@
 # clusteringIdentifier
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An identifier for grouping annotations into the same cluster.
 
@@ -10,7 +11,7 @@ An identifier for grouping annotations into the same cluster.
 
 ## Declaration
 
-```swift
+```
 clusteringIdentifier?: string | null;
 ```
 
@@ -20,13 +21,14 @@ When zooming out on a map that contains many annotations, MapKit JS groups the c
 
 The default value is `null`.
 
-For more information, see [`Clustering annotations`](clustering-annotations.md).
+For more information, see [Clustering annotations](../clustering-annotations.md).
 
 ## See Also
 
-- [collisionMode](annotationconstructoroptions/collisionmode.md)
+### Grouping annotations
+- [collisionMode](./collisionmode.md)
   A mode that determines the shape of the collision frame.
-- [id](annotationconstructoroptions/id.md)
+- [id](./id.md)
   A Place ID that uniquely identifies a feature.
 
 

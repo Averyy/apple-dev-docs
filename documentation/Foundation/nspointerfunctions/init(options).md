@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSPointerFunctions` object initialized with the given options.
 
@@ -20,6 +21,10 @@ Returns an `NSPointerFunctions` object initialized with the given options.
 init(options: NSPointerFunctions.Options = [])
 ```
 
+```objc
+- (instancetype) initWithOptions:(NSPointerFunctionsOptions) options;
+```
+
 #### Return Value
 
 The `NSPointerFunctions` object, initialized with the given options.
@@ -30,7 +35,8 @@ The `NSPointerFunctions` object, initialized with the given options.
 
 ## See Also
 
-- [Collections Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+### Related Documentation
+- [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
 
 
 ---

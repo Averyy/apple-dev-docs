@@ -1,7 +1,8 @@
 # PG_SUPPORT_CREATE_DEVICE
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var PG_SUPPORT_CREATE_DEVICE: Int32 { get }
+```
+
+```c
+#define PG_SUPPORT_CREATE_DEVICE
 ```
 
 

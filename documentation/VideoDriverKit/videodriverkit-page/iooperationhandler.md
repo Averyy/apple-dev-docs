@@ -1,7 +1,8 @@
 # IOOperationHandler
 
 **Framework**: VideoDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that tells the device to perform a video IO operation.
 
@@ -10,13 +11,13 @@ A block that tells the device to perform a video IO operation.
 
 ## Declaration
 
-```swift
+```c
 typedef int (^)(unsigned int, unsigned int, unsigned int, unsigned long long, unsigned long long) IOOperationHandler;
 ```
 
 #### Discussion
 
-See also [`SetIOOperationHandler`](iouservideodevice/setiooperationhandler.md).
+See also [`SetIOOperationHandler`](../iouservideodevice/setiooperationhandler.md).
 
 ## Parameters
 
@@ -27,15 +28,16 @@ See also [`SetIOOperationHandler`](iouservideodevice/setiooperationhandler.md).
 
 ## See Also
 
-- [StartIO](iouservideodevice/startio.md)
+### Performing I/O
+- [StartIO](../iouservideodevice/startio.md)
   Tells the device to start IO.
-- [StopIO](iouservideodevice/stopio.md)
+- [StopIO](../iouservideodevice/stopio.md)
   Tells the device to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](./iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
-- [GetCurrentClientIOTime](iouservideodevice/getcurrentclientiotime.md)
+- [GetCurrentClientIOTime](../iouservideodevice/getcurrentclientiotime.md)
   Gets the current sample/host time pair in the ring buffer written to or read from by the client
-- [SetIOOperationHandler](iouservideodevice/setiooperationhandler.md)
+- [SetIOOperationHandler](../iouservideodevice/setiooperationhandler.md)
   Sets the IOOperationHandler block on the device.
 
 

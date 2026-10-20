@@ -1,17 +1,22 @@
 # NSApplication.ActivationPolicy.regular
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The application is an ordinary app that appears in the Dock and may have a user interface.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case regular
+```
+
+```c
+NSApplicationActivationPolicyRegular
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ This policy is the default for bundled apps, unless overridden in the `Info.plis
 
 ## See Also
 
-- [NSApplication.ActivationPolicy.accessory](nsapplication/activationpolicy-swift.enum/accessory.md)
+### Activation Policies
+- [NSApplication.ActivationPolicy.accessory](./accessory.md)
   The application doesn’t appear in the Dock and doesn’t have a menu bar, but it may be activated programmatically or by clicking on one of its windows.
-- [NSApplication.ActivationPolicy.prohibited](nsapplication/activationpolicy-swift.enum/prohibited.md)
+- [NSApplication.ActivationPolicy.prohibited](./prohibited.md)
   The application doesn’t appear in the Dock and may not create windows or be activated.
 
 

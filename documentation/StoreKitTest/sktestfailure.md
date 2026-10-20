@@ -1,7 +1,8 @@
 # SKTestFailure
 
 **Framework**: StoreKit Test  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -21,23 +22,24 @@ protocol SKTestFailure : Equatable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [SKTestFailures.AppStoreSync](sktestfailures/appstoresync.md)
-- [SKTestFailures.AppTransaction](sktestfailures/apptransaction.md)
-- [SKTestFailures.LoadProducts](sktestfailures/loadproducts.md)
-- [SKTestFailures.ManageSubscriptions](sktestfailures/managesubscriptions.md)
-- [SKTestFailures.OfferCodeRedeem](sktestfailures/offercoderedeem.md)
-- [SKTestFailures.Purchase](sktestfailures/purchase.md)
-- [SKTestFailures.RefundRequest](sktestfailures/refundrequest.md)
-- [SKTestFailures.SubscriptionStatus](sktestfailures/subscriptionstatus.md)
-- [SKTestFailures.Verification](sktestfailures/verification.md)
+- [SKTestFailures.AppStoreSync](./sktestfailures/appstoresync.md)
+- [SKTestFailures.AppTransaction](./sktestfailures/apptransaction.md)
+- [SKTestFailures.LoadProducts](./sktestfailures/loadproducts.md)
+- [SKTestFailures.ManageSubscriptions](./sktestfailures/managesubscriptions.md)
+- [SKTestFailures.OfferCodeRedeem](./sktestfailures/offercoderedeem.md)
+- [SKTestFailures.Purchase](./sktestfailures/purchase.md)
+- [SKTestFailures.RefundRequest](./sktestfailures/refundrequest.md)
+- [SKTestFailures.SubscriptionStatus](./sktestfailures/subscriptionstatus.md)
+- [SKTestFailures.Verification](./sktestfailures/verification.md)
 
 ## See Also
 
-- [protocol FailableStoreKitAPI](failablestorekitapi.md)
+### Protocols
+- [protocol FailableStoreKitAPI](./failablestorekitapi.md)
 
 
 ---

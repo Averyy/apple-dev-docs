@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.france
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to France in the HID specification.
 

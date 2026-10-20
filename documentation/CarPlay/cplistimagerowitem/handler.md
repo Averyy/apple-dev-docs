@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure that CarPlay invokes when the user selects the list item.
 
@@ -16,11 +17,15 @@ An optional closure that CarPlay invokes when the user selects the list item.
 var handler: ((any CPSelectableListItem, @escaping () -> Void) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^)(id<CPSelectableListItem>, void (^)(void)) handler;
+```
+
 #### Discussion
 
 In Swift, this property is a closure that has two parameters:
 
-- An object that conforms to [`CPSelectableListItem`](cpselectablelistitem.md), which is the list item that the user selects.
+- An object that conforms to [`CPSelectableListItem`](../cpselectablelistitem.md), which is the list item that the user selects.
 - The completion closure you call to notify CarPlay when you finish processing the selection.
 
 In Objective-C, the block’s parameters are:
@@ -32,7 +37,8 @@ CarPlay executes your handler on the main queue. You must call the completion cl
 
 ## See Also
 
-- [var listImageRowHandler: ((CPListImageRowItem, Int, () -> Void) -> Void)?](cplistimagerowitem/listimagerowhandler.md)
+### Managing Selection
+- [var listImageRowHandler: ((CPListImageRowItem, Int, () -> Void) -> Void)?](./listimagerowhandler.md)
   An optional closure that CarPlay invokes when the user selects an image.
 
 

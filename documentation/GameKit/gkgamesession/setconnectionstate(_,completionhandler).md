@@ -1,22 +1,33 @@
 # setConnectionState(_:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the connection state for the player.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.12+ - Deprecated in 10.14
+- tvOS 10.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For real-time matches, use GKMatchmakerViewController. For turn-based matches, use GKTurnBasedMatchmakerViewController.
 
 ## Declaration
 
 ```swift
+func setConnectionState(_ state: GKConnectionState, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setConnectionState(_ state: GKConnectionState) async throws
+```
+
+```objc
+- (void) setConnectionState:(GKConnectionState) state completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -26,15 +37,18 @@ This method will fail when the game session’s player limit has already been re
 ## Parameters
 
 - `state`: The `GKConnectionState` to be assigned to the player.
-- `completionHandler`: A block that is called after the connect state has been set. - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
+- `completionHandler`: A block that is called after the connect state has been set.
+
+  - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 
-- [func players(with: GKConnectionState) -> [GKCloudPlayer]](gkgamesession/players(with:).md)
+### Connecting Players for Real-Time Communication
+- [func players(with: GKConnectionState) -> [GKCloudPlayer]](./players%28with%29.md)
   Retrieves a list of players with the specified connection state.
-- [func send(Data, with: GKTransportType, completionHandler: ((any Error)?) -> Void)](gkgamesession/send(_:with:completionhandler:).md)
+- [func send(Data, with: GKTransportType, completionHandler: ((any Error)?) -> Void)](./send%28_,with,completionhandler%29.md)
   Sends the indicated data to all connected players.
-- [enum GKTransportType](gktransporttype.md)
+- [enum GKTransportType](../gktransporttype.md)
   The mechanism used to send messages to other players in a game session.
 
 

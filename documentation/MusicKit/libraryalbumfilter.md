@@ -1,7 +1,8 @@
 # LibraryAlbumFilter
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Album properties your app uses as a filter for a library request.
 
@@ -23,17 +24,17 @@ protocol LibraryAlbumFilter
 ## Topics
 
 ### Instance Properties
-- [var artistName: String](libraryalbumfilter/artistname.md)
+- [var artistName: String](./libraryalbumfilter/artistname.md)
   The artist’s name.
-- [var artists: MusicItemCollection<Artist>?](libraryalbumfilter/artists.md)
+- [var artists: MusicItemCollection<Artist>?](./libraryalbumfilter/artists.md)
   The album’s associated artists.
-- [var genres: MusicItemCollection<Genre>?](libraryalbumfilter/genres.md)
+- [var genres: MusicItemCollection<Genre>?](./libraryalbumfilter/genres.md)
   The genres for the album.
-- [var id: MusicItemID](libraryalbumfilter/id.md)
+- [var id: MusicItemID](./libraryalbumfilter/id.md)
   The unique identifier for the album.
-- [var isCompilation: Bool?](libraryalbumfilter/iscompilation.md)
+- [var isCompilation: Bool?](./libraryalbumfilter/iscompilation.md)
   A Boolean value that indicates whether the album is a compilation.
-- [var title: String](libraryalbumfilter/title.md)
+- [var title: String](./libraryalbumfilter/title.md)
   The title of the album.
 
 

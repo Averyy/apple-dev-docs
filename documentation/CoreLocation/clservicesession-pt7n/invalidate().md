@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the services session.
 

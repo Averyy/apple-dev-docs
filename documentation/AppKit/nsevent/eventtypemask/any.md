@@ -1,17 +1,22 @@
 # any
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask that matches any type of event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static var any: NSEvent.EventTypeMask { get }
+```
+
+```c
+NSEventMaskAny
 ```
 
 

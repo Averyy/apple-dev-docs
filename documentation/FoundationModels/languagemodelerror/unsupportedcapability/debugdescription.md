@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A debug description to help developers diagnose issues during development.
 
@@ -21,9 +22,10 @@ var debugDescription: String
 
 ## See Also
 
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedcapability/metadata.md)
+### Inspecting unsupported capability errors
+- [var metadata: [String : any Sendable]](./metadata.md)
   Additional information about the failure, keyed by name.
-- [var capability: LanguageModelCapabilities.Capability](languagemodelerror/unsupportedcapability/capability.md)
+- [var capability: LanguageModelCapabilities.Capability](./capability.md)
   The capability that the model doesn’t support.
 
 

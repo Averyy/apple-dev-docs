@@ -1,15 +1,16 @@
 # kAudioComponentErr_InvalidFormat
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 var kAudioComponentErr_InvalidFormat: OSStatus { get }
 ```
 
+```c
+kAudioComponentErr_InvalidFormat
+```
+
 ## See Also
 
-- [var kAudioComponentErr_DuplicateDescription: OSStatus](kaudiocomponenterr_duplicatedescription.md)
-- [var kAudioComponentErr_InitializationTimedOut: OSStatus](kaudiocomponenterr_initializationtimedout.md)
-- [var kAudioComponentErr_NotPermitted: OSStatus](kaudiocomponenterr_notpermitted.md)
-- [var kAudioComponentErr_TooManyInstances: OSStatus](kaudiocomponenterr_toomanyinstances.md)
-- [var kAudioComponentErr_UnsupportedType: OSStatus](kaudiocomponenterr_unsupportedtype.md)
+### Constants
+- [var kAudioComponentErr_DuplicateDescription: OSStatus](./kaudiocomponenterr_duplicatedescription.md)
+- [var kAudioComponentErr_InitializationTimedOut: OSStatus](./kaudiocomponenterr_initializationtimedout.md)
+- [var kAudioComponentErr_NotPermitted: OSStatus](./kaudiocomponenterr_notpermitted.md)
+- [var kAudioComponentErr_TooManyInstances: OSStatus](./kaudiocomponenterr_toomanyinstances.md)
+- [var kAudioComponentErr_UnsupportedType: OSStatus](./kaudiocomponenterr_unsupportedtype.md)
 
 
 ---

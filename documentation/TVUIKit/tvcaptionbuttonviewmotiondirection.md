@@ -1,7 +1,8 @@
 # TVCaptionButtonViewMotionDirection
 
 **Framework**: TVUIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The directions that the caption button view can tilt in response to user interactions on the remote.
 
@@ -14,33 +15,38 @@ The directions that the caption button view can tilt in response to user interac
 enum TVCaptionButtonViewMotionDirection
 ```
 
+```c
+enum TVCaptionButtonViewMotionDirection : NSInteger;
+```
+
 ## Topics
 
 ### Tilt Directions
-- [TVCaptionButtonViewMotionDirection.all](tvcaptionbuttonviewmotiondirection/all.md)
+- [TVCaptionButtonViewMotionDirection.all](./tvcaptionbuttonviewmotiondirection/all.md)
   The caption button view can tilt in all directions.
-- [TVCaptionButtonViewMotionDirection.horizontal](tvcaptionbuttonviewmotiondirection/horizontal.md)
+- [TVCaptionButtonViewMotionDirection.horizontal](./tvcaptionbuttonviewmotiondirection/horizontal.md)
   The caption button view can tilt in the horzontal direction.
-- [TVCaptionButtonViewMotionDirection.none](tvcaptionbuttonviewmotiondirection/none.md)
+- [TVCaptionButtonViewMotionDirection.none](./tvcaptionbuttonviewmotiondirection/none.md)
   The caption button view can’t tilt.
-- [TVCaptionButtonViewMotionDirection.vertical](tvcaptionbuttonviewmotiondirection/vertical.md)
+- [TVCaptionButtonViewMotionDirection.vertical](./tvcaptionbuttonviewmotiondirection/vertical.md)
   The caption button view can tilt in the vertical direction.
 ### Initializers
-- [init?(rawValue: Int)](tvcaptionbuttonviewmotiondirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./tvcaptionbuttonviewmotiondirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var motionDirection: TVCaptionButtonViewMotionDirection](tvcaptionbuttonview/motiondirection.md)
+### Setting the Motion Direction
+- [var motionDirection: TVCaptionButtonViewMotionDirection](./tvcaptionbuttonview/motiondirection.md)
   The direction that the caption button view tilts in response to user interaction on the remote.
 
 

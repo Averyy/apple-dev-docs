@@ -1,7 +1,8 @@
 # plugin(name:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies use of a plugin target in the same package.
 
@@ -24,7 +25,8 @@ A `PluginUsage` instance.
 
 ## See Also
 
-- [case plugin(name: String, package: String?)](target/pluginusage/plugin(name:package:).md)
+### Creating a Plugin Usage
+- [case plugin(name: String, package: String?)](./plugin%28name,package%29.md)
   Specifies the use of a plug-in product in a package dependency.
 
 

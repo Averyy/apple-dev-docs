@@ -1,7 +1,8 @@
 # fontPanel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Text formatting controls for choosing fonts that appear in a dedicated window on macOS.
 

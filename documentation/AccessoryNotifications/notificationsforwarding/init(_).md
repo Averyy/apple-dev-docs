@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a notifications-forwarding capability with a handler factory.
 
@@ -16,7 +17,7 @@ init(_ handlerFactory: @escaping @Sendable () -> any NotificationsForwarding.Acc
 
 ## Parameters
 
-- `handlerFactory`: A closure that creates and returns an [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) instance.
+- `handlerFactory`: A closure that creates and returns an [`NotificationsForwarding.AccessoryNotificationsHandler`](./accessorynotificationshandler.md) instance.
 
 
 ---

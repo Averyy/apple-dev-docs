@@ -1,7 +1,8 @@
 # thresholds
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Find the bin thresholds.
 

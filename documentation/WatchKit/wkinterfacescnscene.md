@@ -1,7 +1,8 @@
 # WKInterfaceSCNScene
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that lets you manage SceneKit content for display in your app.
 
@@ -14,9 +15,13 @@ An object that lets you manage SceneKit content for display in your app.
 class WKInterfaceSCNScene
 ```
 
+```objc
+@interface WKInterfaceSCNScene : WKInterfaceObject
+```
+
 #### Overview
 
-To provide content for a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) interface object, assign a [`SCNScene`](https://developer.apple.com/documentation/scenekit/scnscene) object to the interface’s [`scene`](wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the [`SCNSceneRenderer`](https://developer.apple.com/documentation/scenekit/scnscenerenderer) protocol, which defines functionality common across all platforms.
+To provide content for a [`WKInterfaceSCNScene`](./wkinterfacescnscene.md) interface object, assign a [`SCNScene`](../SceneKit/scnscene.md) object to the interface’s [`scene`](./wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the [`SCNSceneRenderer`](../SceneKit/scnscenerenderer.md) protocol, which defines functionality common across all platforms.
 
 Do not subclass or create instances of this class yourself. Instead, drag a SceneKit Scene object from your Object Library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the SceneKit Scene object. For example, to refer to a scene in your interface, define a property with the following syntax in your interface controller class:
 
@@ -34,7 +39,7 @@ Do not subclass or create instances of this class yourself. Instead, drag a Scen
 
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the SceneKit scene.
 
-The SceneKit scene in your Watch app must be connected to a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) outlet in your WatchKit extension for the scene to be visible in your watchOS app’s user interface.
+The SceneKit scene in your Watch app must be connected to a [`WKInterfaceSCNScene`](./wkinterfacescnscene.md) outlet in your WatchKit extension for the scene to be visible in your watchOS app’s user interface.
 
 ##### Interface Builder Attributes
 
@@ -42,12 +47,12 @@ Xcode lets you configure information about your SceneKit Scene in your storyboar
 
 | Attribute | Description |
 | --- | --- |
-| Antialiasing | The antialiasing mode used for rendering the scene. You can also set this value programmatically using the [`antialiasingMode`](wkinterfacescnscene/antialiasingmode.md) property. |
-| Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`WKInterfaceSCNScene`](wkinterfacescnscene.md) property. |
-| Default Lighting | A checkbox that determines whether SceneKit automatically adds lights to a scene. If unchecked, SceneKit uses only the light sources contained in the scene graph. If checked, SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. You can also set this value programmatically using the [`autoenablesDefaultLighting`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/autoenablesdefaultlighting) property. |
-| Jitter | A checkbox that determines whether SceneKit applies jittering to reduce aliasing artifacts. Jittering is a process that SceneKit uses to improve the visual quality of a rendered scene. While the scene’s content is still, SceneKit moves the [`pointOfView`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/pointofview) location very slightly (by less than a pixel in projected screen space). It then composites images rendered after several such moves to create the final rendered scene, creating an antialiasing effect that smooths the edges of rendered geometry. You can also set this value programmatically using the [`isJitteringEnabled`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/isjitteringenabled) property. |
-| Play | A checkbox that determines whether the scene is animated. If unchecked, SceneKit does not increment the scene time, so animations associated with the scene do not play. You can also set this value programmatically using the [`isPlaying`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/isplaying) property. |
-| Loop | A checkbox that determines whether SceneKit restarts the scene time after all animations in the scene have played. If checked, SceneKit returns the scene time to zero after all animations associated with the scene have played, causing those animations to repeat; otherwise, SceneKit stops playing the scene when all animations have completed. You can also set this value programmatically using the [`loops`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/loops) property. |
+| Antialiasing | The antialiasing mode used for rendering the scene. You can also set this value programmatically using the [`antialiasingMode`](./wkinterfacescnscene/antialiasingmode.md) property. |
+| Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`WKInterfaceSCNScene`](./wkinterfacescnscene.md) property. |
+| Default Lighting | A checkbox that determines whether SceneKit automatically adds lights to a scene. If unchecked, SceneKit uses only the light sources contained in the scene graph. If checked, SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. You can also set this value programmatically using the [`autoenablesDefaultLighting`](../SceneKit/scnscenerenderer/autoenablesdefaultlighting.md) property. |
+| Jitter | A checkbox that determines whether SceneKit applies jittering to reduce aliasing artifacts. Jittering is a process that SceneKit uses to improve the visual quality of a rendered scene. While the scene’s content is still, SceneKit moves the [`pointOfView`](../SceneKit/scnscenerenderer/pointofview.md) location very slightly (by less than a pixel in projected screen space). It then composites images rendered after several such moves to create the final rendered scene, creating an antialiasing effect that smooths the edges of rendered geometry. You can also set this value programmatically using the [`isJitteringEnabled`](../SceneKit/scnscenerenderer/isjitteringenabled.md) property. |
+| Play | A checkbox that determines whether the scene is animated. If unchecked, SceneKit does not increment the scene time, so animations associated with the scene do not play. You can also set this value programmatically using the [`isPlaying`](../SceneKit/scnscenerenderer/isplaying.md) property. |
+| Loop | A checkbox that determines whether SceneKit restarts the scene time after all animations in the scene have played. If checked, SceneKit returns the scene time to zero after all animations associated with the scene have played, causing those animations to repeat; otherwise, SceneKit stops playing the scene when all animations have completed. You can also set this value programmatically using the [`loops`](../SceneKit/scnscenerenderer/loops.md) property. |
 
 ##### Enabling Full Screen Mode
 
@@ -57,39 +62,40 @@ In watchOS 4 and later, SpriteKit and SceneKit scenes can fill the full screen. 
 
 To enable full screen mode, place a SpriteKit or SceneKit scene as the interface controller’s only content. Then, in the interface controller’s Attribute inspector, enable the Full Screen attribute.
 
-![A screenshot showing the Full Screen attribute. ](/images/com.apple.watchkit/media-2929968@2x.png)
+![A screenshot showing the Full Screen attribute. ](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2929968@2x.png)
 
 ## Topics
 
 ### Managing the SceneKit Scene
-- [var antialiasingMode: SCNAntialiasingMode](wkinterfacescnscene/antialiasingmode.md)
+- [var antialiasingMode: SCNAntialiasingMode](./wkinterfacescnscene/antialiasingmode.md)
   The antialiasing mode used for rendering the scene.
-- [var preferredFramesPerSecond: Int](wkinterfacescnscene/preferredframespersecond.md)
+- [var preferredFramesPerSecond: Int](./wkinterfacescnscene/preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
-- [var scene: SCNScene?](wkinterfacescnscene/scene.md)
+- [var scene: SCNScene?](./wkinterfacescnscene/scene.md)
   The scene to be displayed.
-- [func snapshot() -> UIImage](wkinterfacescnscene/snapshot.md)
+- [func snapshot() -> UIImage](./wkinterfacescnscene/snapshot%28%29.md)
   Renders the scene to a new image object.
 ### Initializing for SwiftUI
-- [init()](wkinterfacescnscene/init.md)
+- [init()](./wkinterfacescnscene/init%28%29.md)
   Creates a SceneKit scene for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [SCNSceneRenderer](../scenekit/scnscenerenderer.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [SCNSceneRenderer](../SceneKit/scnscenerenderer.md)
 
 ## See Also
 
-- [class WKInterfaceSKScene](wkinterfaceskscene.md)
+### Graphics and games
+- [class WKInterfaceSKScene](./wkinterfaceskscene.md)
   A visual WatchKit element that displays a SpriteKit scene.
 
 

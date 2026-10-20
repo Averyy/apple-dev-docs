@@ -1,7 +1,8 @@
 # WIChannel.Band.band6GHz
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The 6 GHz Wi-Fi band.
 

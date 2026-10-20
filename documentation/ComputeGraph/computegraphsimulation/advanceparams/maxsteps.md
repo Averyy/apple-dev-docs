@@ -1,7 +1,8 @@
 # maxSteps
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of fixed-size steps per advance.
 
@@ -12,7 +13,7 @@ The maximum number of fixed-size steps per advance.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ var maxSteps: Int
 
 #### Discussion
 
-This value is only used when [`mode`](computegraphsimulation/simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency`](computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedfrequency.md) or [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedtime.md).
+This value is only used when [`mode`](../simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency`](../simulationrate-swift.struct/mode-swift.enum/fixedfrequency.md) or [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](../simulationrate-swift.struct/mode-swift.enum/fixedtime.md).
 
 
 ---

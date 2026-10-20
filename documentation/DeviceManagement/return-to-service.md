@@ -1,7 +1,8 @@
 # Return To Service
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Gets the return-to-service configuration from the server.
 
@@ -13,13 +14,13 @@ Gets the return-to-service configuration from the server.
 
 ## Mentions
 
-- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+- [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
 #### Discussion
 
 The device sends the `ReturnToService` message when the user triggers a return to service, or when the device’s idle timeout expires. The device only sends this message when it’s in the return-to-service mode that its Automated Device Enrollment profile sets.
 
-##### Check in Availability
+##### Check-in availability
 
 |  |  |
 | --- | --- |
@@ -31,9 +32,9 @@ The device sends the `ReturnToService` message when the user triggers a return t
 ## Topics
 
 ### Requests and responses
-- [object ReturnToServiceRequest](returntoservicerequest.md)
+- [object ReturnToServiceRequest](./returntoservicerequest.md)
   The return-to-service request details.
-- [object ReturnToServiceResponse](returntoserviceresponse.md)
+- [object ReturnToServiceResponse](./returntoserviceresponse.md)
   The return-to-service response details.
 
 ## Endpoint
@@ -42,23 +43,31 @@ The device sends the `ReturnToService` message when the user triggers a return t
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm-checkin`  
+**Type**: `ReturnToServiceRequest`
+
 The request object the system sends for the `ReturnToService` request.
+
+## Responses
+
+- `200` OK (`ReturnToServiceResponse`, `application/xml`): The response object the server returns for the `ReturnToService` request.
 
 ## See Also
 
-- [Authenticate](authenticate.md)
+### Commands
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [User Authenticate](user-authenticate.md)
+- [User Authenticate](./user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
-- [Check Out](check-out.md)
+- [Check Out](./check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
-- [Get Token](get-token.md)
+- [Get Token](./get-token.md)
   Gets a token from the server.
-- [Token Update](token-update.md)
+- [Token Update](./token-update.md)
   Updates the token for a device on the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Set Bootstrap Token](set-bootstrap-token.md)
+- [Set Bootstrap Token](./set-bootstrap-token.md)
   Sends the bootstrap token to the server.
 
 

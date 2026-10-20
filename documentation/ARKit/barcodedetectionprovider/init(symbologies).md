@@ -1,7 +1,8 @@
 # init(symbologies:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a barcode detection provider that looks for the specified symbologies.
 

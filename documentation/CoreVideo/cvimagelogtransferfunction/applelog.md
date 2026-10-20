@@ -1,7 +1,8 @@
 # CVImageLogTransferFunction.appleLog
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apple log profile.
 

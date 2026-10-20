@@ -1,7 +1,8 @@
 # supportsStringSearchRequest
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the provider supports search.
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the provider supports search.
 var supportsStringSearchRequest: Bool { get set }
 ```
 
+```objc
+@property (assign, readwrite) BOOL supportsStringSearchRequest;
+```
+
 #### Discussion
 
-If this value is `true`, the framework uses the extension’s [`NSFileProviderSearching`](nsfileprovidersearching.md) implementation to support search.
+If this value is `true`, the framework uses the extension’s [`NSFileProviderSearching`](../nsfileprovidersearching.md) implementation to support search.
 
 The property defaults to `false` (Swift) or `NO` (Objective-C).
 

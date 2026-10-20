@@ -1,7 +1,8 @@
 # LPError.Code.metadataFetchCancelled
 
 **Framework**: Link Presentation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the metadata fetch was canceled by the client.
 
@@ -20,13 +21,18 @@ An error indicating that the metadata fetch was canceled by the client.
 case metadataFetchCancelled
 ```
 
+```c
+LPErrorMetadataFetchCancelled
+```
+
 ## See Also
 
-- [LPError.Code.metadataFetchFailed](lperror/code/metadatafetchfailed.md)
+### Error cases
+- [LPError.Code.metadataFetchFailed](./metadatafetchfailed.md)
   An error indicating that a metadata fetch failed.
-- [LPError.Code.metadataFetchTimedOut](lperror/code/metadatafetchtimedout.md)
+- [LPError.Code.metadataFetchTimedOut](./metadatafetchtimedout.md)
   An error indicating that the metadata fetch took longer than allowed.
-- [LPError.Code.unknown](lperror/code/unknown.md)
+- [LPError.Code.unknown](./unknown.md)
   An unknown error.
 
 

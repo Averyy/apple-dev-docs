@@ -1,7 +1,8 @@
 # preferredFramesPerSecond
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation frame rate that the interface uses to render its scene.
 
@@ -14,9 +15,13 @@ The animation frame rate that the interface uses to render its scene.
 var preferredFramesPerSecond: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger preferredFramesPerSecond;
+```
+
 ## Mentions
 
-- [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md)
+- [Configuring a WatchKit Scene in a Storyboard](../configuring-a-watchkit-scene-in-a-storyboard.md)
 
 #### Discussion
 
@@ -26,7 +31,8 @@ To provide a consistent frame rate, SpriteKit usually selects a frame rate that 
 
 ## See Also
 
-- [var isPaused: Bool](wkinterfaceskscene/ispaused.md)
+### Controlling the Timing of a Scene’s Rendering
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that determines whether the view’s scene animations are paused.
 
 

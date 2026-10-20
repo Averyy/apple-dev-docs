@@ -1,23 +1,25 @@
 # HIDDriverKitVersionString
 
 **Framework**: HIDDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The project version string for HIDDriverKit.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 extern const unsigned char HIDDriverKitVersionString[];
 ```
 
 ## See Also
 
-- [HIDDriverKitVersionNumber](hiddriverkitversionnumber.md)
+### Version Information
+- [HIDDriverKitVersionNumber](./hiddriverkitversionnumber.md)
   The project version number for HIDDriverKit.
 
 

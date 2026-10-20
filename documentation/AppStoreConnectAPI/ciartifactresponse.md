@@ -1,7 +1,8 @@
 # CiArtifactResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single artifact produced by an Xcode Cloud build action.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single artifact produced by an Xcode
 
 ## Declaration
 
-```swift
+```
 object CiArtifactResponse
 ```
 
@@ -21,7 +22,8 @@ object CiArtifactResponse
 
 ## See Also
 
-- [object CiArtifact](ciartifact.md)
+### Objects
+- [object CiArtifact](./ciartifact.md)
   A file output produced by an Xcode Cloud build action, such as an app archive, test result bundle, or build log.
 
 

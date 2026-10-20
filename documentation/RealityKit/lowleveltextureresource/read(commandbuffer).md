@@ -1,7 +1,8 @@
 # read(commandBuffer:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Metal texture containing the current contents of the texture resource for GPU read operations.
 
@@ -31,7 +32,8 @@ The renderer waits for the provided command buffer to complete before discarding
 
 ## See Also
 
-- [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](lowleveltextureresource/replace(commandbuffer:).md)
+### Reading and writing texture data
+- [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](./replace%28commandbuffer%29.md)
   Returns a Metal texture you populate on the GPU with the new contents of the texture resource.
 
 

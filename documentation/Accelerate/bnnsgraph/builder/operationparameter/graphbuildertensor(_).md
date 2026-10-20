@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a tensor for the specified BNNS Graph builder.

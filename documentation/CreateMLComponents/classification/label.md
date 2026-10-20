@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification label.
 
@@ -22,7 +23,8 @@ var label: Label
 
 ## See Also
 
-- [var probability: Float](classification/probability.md)
+### Getting the properties
+- [var probability: Float](./probability.md)
   The classification probability. A value between 0 and 1.
 
 

@@ -1,7 +1,8 @@
 # motionKeyframeCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the motion keyframe count.
 
@@ -17,6 +18,10 @@ Sets the motion keyframe count.
 
 ```swift
 var motionKeyframeCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger motionKeyframeCount;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # flushCollection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,14 +10,15 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual void flushCollection(void);
 ```
 
 ## See Also
 
-- [- iterateObjects](../driverkit/oscollection/iterateobjects.md)
-- [OSCollectionIterateObjectsBlock](../driverkit/oscollectioniterateobjectsblock.md)
+### Accessing Collection Elements
+- [- iterateObjects](../../DriverKit/oscollection/iterateobjects.md)
+- [OSCollectionIterateObjectsBlock](../../DriverKit/oscollectioniterateobjectsblock.md)
 
 
 ---

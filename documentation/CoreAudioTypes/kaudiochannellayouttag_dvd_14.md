@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_DVD_14
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A DVD 5-channel audio layout.
 
@@ -20,9 +21,13 @@ A DVD 5-channel audio layout.
 var kAudioChannelLayoutTag_DVD_14: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_DVD_14
+```
+
 #### Discussion
 
-This tag is equivalent to [`kAudioChannelLayoutTag_DVD_9`](kaudiochannellayouttag_dvd_9.md). Your channels must be laid out in the following order:
+This tag is equivalent to [`kAudioChannelLayoutTag_DVD_9`](./kaudiochannellayouttag_dvd_9.md). Your channels must be laid out in the following order:
 
 - Left
 - Right
@@ -32,35 +37,36 @@ This tag is equivalent to [`kAudioChannelLayoutTag_DVD_9`](kaudiochannellayoutta
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_DVD_0: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_0.md)
+### DVD Defined Layouts
+- [var kAudioChannelLayoutTag_DVD_0: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_0.md)
   A DVD monaural audio layout.
-- [var kAudioChannelLayoutTag_DVD_1: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_1.md)
+- [var kAudioChannelLayoutTag_DVD_1: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_1.md)
   A DVD stereo audio layout.
-- [var kAudioChannelLayoutTag_DVD_2: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_2.md)
+- [var kAudioChannelLayoutTag_DVD_2: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_2.md)
   A DVD 3-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_3: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_3.md)
+- [var kAudioChannelLayoutTag_DVD_3: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_3.md)
   A DVD 4-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_4: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_4.md)
+- [var kAudioChannelLayoutTag_DVD_4: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_4.md)
   A DVD 2.1-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_5: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_5.md)
+- [var kAudioChannelLayoutTag_DVD_5: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_5.md)
   A DVD 3.1-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_6: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_6.md)
+- [var kAudioChannelLayoutTag_DVD_6: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_6.md)
   A DVD 4.1-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_7: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_7.md)
+- [var kAudioChannelLayoutTag_DVD_7: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_7.md)
   A DVD 3-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_8: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_8.md)
+- [var kAudioChannelLayoutTag_DVD_8: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_8.md)
   A DVD 4-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_9: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_9.md)
+- [var kAudioChannelLayoutTag_DVD_9: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_9.md)
   A DVD 5-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_10: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_10.md)
+- [var kAudioChannelLayoutTag_DVD_10: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_10.md)
   A DVD 3.1-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_11: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_11.md)
+- [var kAudioChannelLayoutTag_DVD_11: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_11.md)
   A DVD 4.1-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_12: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_12.md)
+- [var kAudioChannelLayoutTag_DVD_12: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_12.md)
   A DVD 5.1-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_13: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_13.md)
+- [var kAudioChannelLayoutTag_DVD_13: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_13.md)
   A DVD 4-channel audio layout.
-- [var kAudioChannelLayoutTag_DVD_15: AudioChannelLayoutTag](kaudiochannellayouttag_dvd_15.md)
+- [var kAudioChannelLayoutTag_DVD_15: AudioChannelLayoutTag](./kaudiochannellayouttag_dvd_15.md)
   A DVD 3.1-channel audio layout.
 
 

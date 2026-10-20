@@ -1,7 +1,8 @@
 # stride(by:count:roundLowerBound:roundUpperBound:calendar:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates values with the given calendar unit.
 
@@ -22,7 +23,7 @@ static func stride(by component: Calendar.Component, count: Int = 1, roundLowerB
 
 ## Mentions
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+- [Customizing axes in Swift Charts](../customizing-axes-in-swift-charts.md)
 
 
 ---

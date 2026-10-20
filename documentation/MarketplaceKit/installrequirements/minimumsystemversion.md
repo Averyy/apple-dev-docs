@@ -1,7 +1,8 @@
 # minimumSystemVersion
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the system version required to install an app.
 

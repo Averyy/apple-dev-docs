@@ -1,7 +1,8 @@
 # init(anchorEdge:scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map scale view.
 
@@ -11,7 +12,7 @@ Creates a map scale view.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,12 +23,13 @@ Creates a map scale view.
 
 ## Parameters
 
-- `anchorEdge`: The fixed edge the scale grows and shrinks from. Use this outside of [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)) view modifier.
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies this namespace and that you can use to associate this control with a map instance.
+- `anchorEdge`: The fixed edge the scale grows and shrinks from. Use this outside of [`mapControls(_:)`](../../SwiftUI/view/mapcontrols%28_%29.md) view modifier.
+- `scope`: A [`Namespace.ID`](../../SwiftUI/namespace/id.md) value that identifies this namespace and that you can use to associate this control with a map instance.
 
 ## See Also
 
-- [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](mapscaleview/init(alignment:scope:).md)
+### Creating a map scale view
+- [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](./init%28alignment,scope%29.md)
   Creates a scale view with the provided alignment and scope.
 
 

@@ -1,18 +1,21 @@
 # BNNSFilterCreateLayerFullyConnected(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new fully connected layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,11 +23,15 @@ Returns a new fully connected layer.
 func BNNSFilterCreateLayerFullyConnected(_ layer_params: UnsafePointer<BNNSLayerParametersFullyConnected>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateLayerFullyConnected(const BNNSLayerParametersFullyConnected *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
 Use a fully connected layer to construct each output feature from a linear combination of all input features. Fully connected layers compute the matrix-vector product of a weights matrix and the input vector.
 
-##### Applying a Fully Connected Filter with a 2d Weights Matrix
+##### Applying a Fully Connected Filter With a 2D Weights Matrix
 
 In the case where your input data is a vector and your weights data is a matrix, provide the weights as an *m x n* row-major matrix where *m* is the number of fully connected results, and *n* is the number of items in the input.
 
@@ -118,13 +125,14 @@ On return, `output` contains the following values:
 
 ## See Also
 
-- [struct BNNSFullyConnectedLayerParameters](bnnsfullyconnectedlayerparameters.md)
+### Fully connected layers
+- [struct BNNSFullyConnectedLayerParameters](./bnnsfullyconnectedlayerparameters.md)
   A structure containing fully connected layer parameters.
-- [func BNNSFilterCreateFullyConnectedLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSFullyConnectedLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatefullyconnectedlayer(_:_:_:_:).md)
+- [func BNNSFilterCreateFullyConnectedLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSFullyConnectedLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatefullyconnectedlayer%28_,_,_,_%29.md)
   Returns a fully connected filter, initialized with input, output, layer, and filter parameters.
-- [class FullyConnectedLayer](bnns/fullyconnectedlayer.md)
+- [class FullyConnectedLayer](./bnns/fullyconnectedlayer.md)
   A layer object that wraps a fully connected filter and manages its deinitialization.
-- [struct BNNSLayerParametersFullyConnected](bnnslayerparametersfullyconnected.md)
+- [struct BNNSLayerParametersFullyConnected](./bnnslayerparametersfullyconnected.md)
   A structure that contains the parameters of a fully connected layer.
 
 

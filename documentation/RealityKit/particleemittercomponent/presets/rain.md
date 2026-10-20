@@ -1,7 +1,8 @@
 # rain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Fast, semi-opaque particles rendered as streaks
 

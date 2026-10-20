@@ -1,15 +1,20 @@
 # address
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var address: BluetoothDeviceAddress
+```
+
+```c
+BluetoothDeviceAddress address;
 ```
 
 

@@ -1,7 +1,8 @@
 # kAERemoteProcessNameKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use this key to obtain the visible name of the remote process, in the localization supplied by the server, as a `CFStringRef`.
 
@@ -12,6 +13,10 @@ Use this key to obtain the visible name of the remote process, in the localizati
 
 ```swift
 let kAERemoteProcessNameKey: CFString!
+```
+
+```c
+const CFStringRef kAERemoteProcessNameKey;
 ```
 
 

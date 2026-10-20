@@ -1,7 +1,8 @@
 # AsyncThrowingStream.Continuation.Termination
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates how the stream terminated.
 
@@ -27,20 +28,21 @@ The `onTermination` closure receives an instance of this type.
 ## Topics
 
 ### Termination States
-- [AsyncThrowingStream.Continuation.Termination.finished(_:)](asyncthrowingstream/continuation/termination/finished(_:).md)
+- [AsyncThrowingStream.Continuation.Termination.finished(_:)](./termination/finished%28_%29.md)
   The stream finished as a result of calling the continuation’s `finish` method.
-- [AsyncThrowingStream.Continuation.Termination.cancelled](asyncthrowingstream/continuation/termination/cancelled.md)
+- [AsyncThrowingStream.Continuation.Termination.cancelled](./termination/cancelled.md)
   The stream finished as a result of cancellation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 ## See Also
 
-- [var onTermination: ((AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)?](asyncthrowingstream/continuation/ontermination.md)
+### Handling Termination
+- [var onTermination: ((AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)?](./ontermination.md)
   A callback to invoke when canceling iteration of an asynchronous stream.
 
 

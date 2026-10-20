@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether the scaled pose is the identity transform.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether the scaled pose is the identity t
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # distanceAttenuation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies the way that the sound level decreases as the distance between the listener and the sound source increases.
 

@@ -1,7 +1,8 @@
 # MLStyleTransfer.ModelParameters.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The style transfer training algorithm options.
 
@@ -25,39 +26,40 @@ This object uses a convolutional neural network for training the style transfer 
 ## Topics
 
 ### Selecting an algorithm type
-- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnn](mlstyletransfer/modelparameters/modelalgorithmtype/cnn.md)
+- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnn](./modelalgorithmtype/cnn.md)
   A style-transfer training algorithm that generates a model that prioritizes image quality over speed.
-- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnnLite](mlstyletransfer/modelparameters/modelalgorithmtype/cnnlite.md)
+- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnnLite](./modelalgorithmtype/cnnlite.md)
   A style-transfer training algorithm that generates a model that prioritizes speed over image quality.
 ### Describing an algorithm type
-- [var description: String](mlstyletransfer/modelparameters/modelalgorithmtype/description.md)
+- [var description: String](./modelalgorithmtype/description.md)
   A text representation of the model parameters.
-- [var debugDescription: String](mlstyletransfer/modelparameters/modelalgorithmtype/debugdescription.md)
+- [var debugDescription: String](./modelalgorithmtype/debugdescription.md)
   A text representation of the model parameters that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlstyletransfer/modelparameters/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelalgorithmtype/playgrounddescription.md)
   A description of the model parameters shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelalgorithmtype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelalgorithmtype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLStyleTransfer.ModelParameters.ValidationData](mlstyletransfer/modelparameters/validationdata.md)
+### Describing parameters
+- [MLStyleTransfer.ModelParameters.ValidationData](./validationdata.md)
   The source of a validation dataset for a style transfer model.
 
 

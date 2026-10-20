@@ -1,7 +1,8 @@
 # Extended Virtual Addressing Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may access an extended address space.
 
@@ -10,9 +11,10 @@ A Boolean value that indicates whether the app may access an extended address sp
 - iPadOS 14.0+
 - tvOS 14.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.kernel.extended-virtual-addressing` (Extended Virtual Addressing)
+- **Type**: boolean
 
 #### Discussion
 
@@ -22,7 +24,8 @@ Enable this entitlement with the “Extended Virtual Addressing” capability in
 
 ## See Also
 
-- [com.apple.developer.kernel.increased-memory-limit](entitlements/com.apple.developer.kernel.increased-memory-limit.md)
+### Memory
+- [com.apple.developer.kernel.increased-memory-limit](./com.apple.developer.kernel.increased-memory-limit.md)
   A Boolean value that indicates whether core features of your app may perform better with a higher memory limit on supported devices.
 
 

@@ -1,7 +1,8 @@
 # damping
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines how the spring’s motion should be damped due to the forces of friction.
 
@@ -19,19 +20,24 @@ Defines how the spring’s motion should be damped due to the forces of friction
 var damping: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat damping;
+```
+
 #### Discussion
 
-The default value of the [`damping`](caspringanimation/damping.md) property is `10`. Reducing this value reduces the energy loss with each oscillation: the animated value will overshoot the [`toValue`](cabasicanimation/tovalue.md) and the [`settlingDuration`](caspringanimation/settlingduration.md) may be greater than the [`duration`](camediatiming/duration.md). Increasing the value increases the energy loss with each duration: there will be fewer and smaller oscillations and the [`settlingDuration`](caspringanimation/settlingduration.md) may be smaller than the duration.
+The default value of the [`damping`](./damping.md) property is `10`. Reducing this value reduces the energy loss with each oscillation: the animated value will overshoot the [`toValue`](../cabasicanimation/tovalue.md) and the [`settlingDuration`](./settlingduration.md) may be greater than the [`duration`](../camediatiming/duration.md). Increasing the value increases the energy loss with each duration: there will be fewer and smaller oscillations and the [`settlingDuration`](./settlingduration.md) may be smaller than the duration.
 
 ## See Also
 
-- [var initialVelocity: CGFloat](caspringanimation/initialvelocity.md)
+### Configuring Physical Attributes
+- [var initialVelocity: CGFloat](./initialvelocity.md)
   The initial velocity of the object attached to the spring.
-- [var mass: CGFloat](caspringanimation/mass.md)
+- [var mass: CGFloat](./mass.md)
   The mass of the object attached to the end of the spring.
-- [var settlingDuration: CFTimeInterval](caspringanimation/settlingduration.md)
+- [var settlingDuration: CFTimeInterval](./settlingduration.md)
   The estimated duration required for the spring system to be considered at rest.
-- [var stiffness: CGFloat](caspringanimation/stiffness.md)
+- [var stiffness: CGFloat](./stiffness.md)
   The spring stiffness coefficient.
 
 

@@ -1,7 +1,8 @@
 # NSControl.Events
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of events that a control can report to its target.
 
@@ -14,9 +15,13 @@ A set of events that a control can report to its target.
 struct Events
 ```
 
+```c
+enum NSControlEvents : NSUInteger;
+```
+
 #### Discussion
 
-You set up a control to send an action message to a target object by associating both target and action with one or more control events. To do this, call [`addTarget(_:action:for:)`](nscontrol/addtarget(_:action:for:).md) on the control for each target-action pair you want to specify.
+You set up a control to send an action message to a target object by associating both target and action with one or more control events. To do this, call [`addTarget(_:action:for:)`](./addtarget%28_,action,for%29.md) on the control for each target-action pair you want to specify.
 
 ```swift
 let slider = NSSlider()
@@ -26,66 +31,67 @@ let button = NSButton()
 button.addTarget(self, action: #selector(buttonActivated), for: [.primaryActionTriggered, .menuActionTriggered])
 ```
 
-Use tracking events to observe the progress of mouse interaction as it unfolds — for example, to respond to a drag in progress rather than only on completion. Use semantic events like [`valueChanged`](nscontrol/events/valuechanged.md), [`primaryActionTriggered`](nscontrol/events/primaryactiontriggered.md), or [`menuActionTriggered`](nscontrol/events/menuactiontriggered.md) to respond to higher-level, input-device-independent meanings. [`applicationReserved`](nscontrol/events/applicationreserved.md) is a range of bits available for app use.
+Use tracking events to observe the progress of mouse interaction as it unfolds — for example, to respond to a drag in progress rather than only on completion. Use semantic events like [`valueChanged`](./events/valuechanged.md), [`primaryActionTriggered`](./events/primaryactiontriggered.md), or [`menuActionTriggered`](./events/menuactiontriggered.md) to respond to higher-level, input-device-independent meanings. [`applicationReserved`](./events/applicationreserved.md) is a range of bits available for app use.
 
 ## Topics
 
 ### Tracking events
-- [static var trackingBegan: NSControl.Events](nscontrol/events/trackingbegan.md)
+- [static var trackingBegan: NSControl.Events](./events/trackingbegan.md)
   A tracking began event in the control.
-- [static var trackingRepeated: NSControl.Events](nscontrol/events/trackingrepeated.md)
+- [static var trackingRepeated: NSControl.Events](./events/trackingrepeated.md)
   A repeated tracking began event in the control. For this event the click count is greater than one.
-- [static var trackingInside: NSControl.Events](nscontrol/events/trackinginside.md)
+- [static var trackingInside: NSControl.Events](./events/trackinginside.md)
   An event where the pointer or touch moves inside the bounds of the control.
-- [static var trackingOutside: NSControl.Events](nscontrol/events/trackingoutside.md)
+- [static var trackingOutside: NSControl.Events](./events/trackingoutside.md)
   An event where the pointer or touch moves outside the bounds of the control.
-- [static var trackingEntered: NSControl.Events](nscontrol/events/trackingentered.md)
+- [static var trackingEntered: NSControl.Events](./events/trackingentered.md)
   An event where tracking transitions from outside to inside the bounds of the control.
-- [static var trackingExited: NSControl.Events](nscontrol/events/trackingexited.md)
+- [static var trackingExited: NSControl.Events](./events/trackingexited.md)
   An event where tracking transitions from inside to outside the bounds of the control.
-- [static var trackingEndedInside: NSControl.Events](nscontrol/events/trackingendedinside.md)
+- [static var trackingEndedInside: NSControl.Events](./events/trackingendedinside.md)
   A tracking ended event where the pointer or touch is inside the bounds of the control.
-- [static var trackingEndedOutside: NSControl.Events](nscontrol/events/trackingendedoutside.md)
+- [static var trackingEndedOutside: NSControl.Events](./events/trackingendedoutside.md)
   A tracking ended event where the pointer or touch is outside the bounds of the control.
-- [static var trackingCancelled: NSControl.Events](nscontrol/events/trackingcancelled.md)
+- [static var trackingCancelled: NSControl.Events](./events/trackingcancelled.md)
   A system event canceling the current tracking for the control.
 ### Semantic events
-- [static var valueChanged: NSControl.Events](nscontrol/events/valuechanged.md)
+- [static var valueChanged: NSControl.Events](./events/valuechanged.md)
   An event where dragging or otherwise manipulating a control causes it to emit a series of different values.
-- [static var primaryActionTriggered: NSControl.Events](nscontrol/events/primaryactiontriggered.md)
+- [static var primaryActionTriggered: NSControl.Events](./events/primaryactiontriggered.md)
   A semantic action triggered by buttons.
-- [static var menuActionTriggered: NSControl.Events](nscontrol/events/menuactiontriggered.md)
+- [static var menuActionTriggered: NSControl.Events](./events/menuactiontriggered.md)
   A menu action has triggered prior to the menu being presented.
 ### Aggregate events
-- [static var allTrackingEvents: NSControl.Events](nscontrol/events/alltrackingevents.md)
+- [static var allTrackingEvents: NSControl.Events](./events/alltrackingevents.md)
   All tracking events.
-- [static var allEvents: NSControl.Events](nscontrol/events/allevents.md)
+- [static var allEvents: NSControl.Events](./events/allevents.md)
   All events, including system events.
 ### Reserved ranges
-- [static var applicationReserved: NSControl.Events](nscontrol/events/applicationreserved.md)
+- [static var applicationReserved: NSControl.Events](./events/applicationreserved.md)
   A range of control-event values available for app use.
-- [static var systemReserved: NSControl.Events](nscontrol/events/systemreserved.md)
+- [static var systemReserved: NSControl.Events](./events/systemreserved.md)
   A range of control-event values reserved for internal framework use.
 ### Initializers
-- [init(rawValue: UInt)](nscontrol/events/init(rawvalue:).md)
+- [init(rawValue: UInt)](./events/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func addTarget(Any?, action: Selector, for: NSControl.Events)](nscontrol/addtarget(_:action:for:).md)
+### Handling Control Events
+- [func addTarget(Any?, action: Selector, for: NSControl.Events)](./addtarget%28_,action,for%29.md)
   Registers a target-action pair for the specified control events.
-- [func removeTarget(Any?, action: Selector?, for: NSControl.Events)](nscontrol/removetarget(_:action:for:).md)
+- [func removeTarget(Any?, action: Selector?, for: NSControl.Events)](./removetarget%28_,action,for%29.md)
   Stops the delivery of events to the specified target object.
 
 

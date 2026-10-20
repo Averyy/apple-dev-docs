@@ -1,7 +1,8 @@
 # tileOverlays
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An array of the map tile overlays.
 
@@ -10,7 +11,7 @@ An array of the map tile overlays.
 
 ## Declaration
 
-```swift
+```
 tileOverlays?: TileOverlay[];
 ```
 

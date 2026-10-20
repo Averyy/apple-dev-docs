@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error present when the metrics are invalid.
 
@@ -21,7 +22,8 @@ var error: (any Error)? { get }
 
 ## See Also
 
-- [var isValid: Bool](mlregressormetrics/isvalid.md)
+### Handling errors
+- [var isValid: Bool](./isvalid.md)
   A Boolean value indicating whether the regressor model was able to calculate metrics.
 
 

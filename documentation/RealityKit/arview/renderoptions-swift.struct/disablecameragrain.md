@@ -1,7 +1,8 @@
 # disableCameraGrain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Disable the image noise effect.
 
@@ -22,31 +23,32 @@ Images from a camera may contain a small amount of noise, called *camera grain*,
 
 | Without camera grain | With camera grain |
 | --- | --- |
-| ![A screenshot of a scene with a blue sphere on a white surface. The white surface has grain, but the blue sphere does not, which makes the sphere appear out of place.](/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-without.jpg) | ![A screenshot of a scene with a blue sphere on a white surface. The white surface and the sphere both have gain, which makes the sphere better blend into the surroundings.](/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-with.jpg) |
+| ![A screenshot of a scene with a blue sphere on a white surface. The white surface has grain, but the blue sphere does not, which makes the sphere appear out of place.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-without.jpg) | ![A screenshot of a scene with a blue sphere on a white surface. The white surface and the sphere both have gain, which makes the sphere better blend into the surroundings.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-with.jpg) |
 
-Applying this effect involves a low, constant GPU cost. If necessary, you can disable the effect by adding the [`disableCameraGrain`](arview/renderoptions-swift.struct/disablecameragrain.md) option to the view’s [`renderOptions`](arview/renderoptions-swift.property.md) set. Disabling the effect is most useful for older devices, like those with an A9 processor or earlier.
+Applying this effect involves a low, constant GPU cost. If necessary, you can disable the effect by adding the [`disableCameraGrain`](./disablecameragrain.md) option to the view’s [`renderOptions`](../renderoptions-swift.property.md) set. Disabling the effect is most useful for older devices, like those with an A9 processor or earlier.
 
-When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
+When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [Improving the Performance of a RealityKit App](../../improving-the-performance-of-a-realitykit-app.md).
 
 ## See Also
 
-- [static let disableHDR: ARView.RenderOptions](arview/renderoptions-swift.struct/disablehdr.md)
+### Disabling rendering effects
+- [static let disableHDR: ARView.RenderOptions](./disablehdr.md)
   Disable the high dynamic range post-processing effect.
-- [static let disableGroundingShadows: ARView.RenderOptions](arview/renderoptions-swift.struct/disablegroundingshadows.md)
+- [static let disableGroundingShadows: ARView.RenderOptions](./disablegroundingshadows.md)
   Disable rendering of ambient occlusion and shadows that ground objects in an AR scene.
-- [static let disableMotionBlur: ARView.RenderOptions](arview/renderoptions-swift.struct/disablemotionblur.md)
+- [static let disableMotionBlur: ARView.RenderOptions](./disablemotionblur.md)
   Disable the motion blur for all virtual content.
-- [static let disableDepthOfField: ARView.RenderOptions](arview/renderoptions-swift.struct/disabledepthoffield.md)
+- [static let disableDepthOfField: ARView.RenderOptions](./disabledepthoffield.md)
   Disable the depth of field effect for all virtual content.
-- [static let disableFaceMesh: ARView.RenderOptions](arview/renderoptions-swift.struct/disablefacemesh.md)
+- [static let disableFaceMesh: ARView.RenderOptions](./disablefacemesh.md)
   Disable generation of the face entity with the default occlusion material.
-- [static let disablePersonOcclusion: ARView.RenderOptions](arview/renderoptions-swift.struct/disablepersonocclusion.md)
+- [static let disablePersonOcclusion: ARView.RenderOptions](./disablepersonocclusion.md)
   Disable person segmentation.
-- [static let disableAREnvironmentLighting: ARView.RenderOptions](arview/renderoptions-swift.struct/disablearenvironmentlighting.md)
+- [static let disableAREnvironmentLighting: ARView.RenderOptions](./disablearenvironmentlighting.md)
   Disable lighting from environment probes.
-- [static let disableFaceOcclusions: ARView.RenderOptions](arview/renderoptions-swift.struct/disablefaceocclusions.md)
+- [static let disableFaceOcclusions: ARView.RenderOptions](./disablefaceocclusions.md)
   Disable automatic face occlusion.
-- [static let disableAutomaticLighting: ARView.RenderOptions](arview/renderoptions-swift.struct/disableautomaticlighting.md)
+- [static let disableAutomaticLighting: ARView.RenderOptions](./disableautomaticlighting.md)
   Disable automatic updates of the scene lighting.
 
 

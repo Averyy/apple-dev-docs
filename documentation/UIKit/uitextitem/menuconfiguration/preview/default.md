@@ -1,7 +1,8 @@
 # UITextItem.MenuConfiguration.Preview.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to show the default system preview alongside the text item’s menu.
 
@@ -9,7 +10,7 @@ An option to show the default system preview alongside the text item’s menu.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ case `default`
 
 ## See Also
 
-- [UITextItem.MenuConfiguration.Preview.view(_:)](uitextitem/menuconfiguration/preview/view(_:).md)
+### Getting the preview options
+- [UITextItem.MenuConfiguration.Preview.view(_:)](./view%28_%29.md)
   An option to show the view you provide alongside the text item’s menu.
 
 

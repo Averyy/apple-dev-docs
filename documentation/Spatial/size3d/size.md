@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size value.
 
@@ -11,7 +12,7 @@ The size value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var size: Size3D { get }
 
 ## See Also
 
-- [var width: Double](size3d/width.md)
+### Inspecting a 3D size’s properties
+- [var width: Double](./width.md)
   The width value.
-- [var height: Double](size3d/height.md)
+- [var height: Double](./height.md)
   The height value.
-- [var depth: Double](size3d/depth.md)
+- [var depth: Double](./depth.md)
   The depth value.
-- [var vector: simd_double3](size3d/vector.md)
+- [var vector: simd_double3](./vector.md)
 
 
 ---

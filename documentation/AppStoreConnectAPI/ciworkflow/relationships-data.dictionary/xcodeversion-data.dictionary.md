@@ -1,7 +1,8 @@
 # CiWorkflow.Relationships.XcodeVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Workflows and the Xcode Versions resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Workflows and the 
 
 ## Declaration
 
-```swift
+```
 object CiWorkflow.Relationships.XcodeVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object CiWorkflow.Relationships.XcodeVersion.Data](ciworkflow/relationships-data.dictionary/xcodeversion-data.dictionary/data-data.dictionary.md)
+- [object CiWorkflow.Relationships.XcodeVersion.Data](./xcodeversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Xcode Versions resource.
 
 ## Properties
@@ -26,11 +27,12 @@ object CiWorkflow.Relationships.XcodeVersion
 
 ## See Also
 
-- [object CiWorkflow.Relationships.MacOsVersion](ciworkflow/relationships-data.dictionary/macosversion-data.dictionary.md)
+### Objects
+- [object CiWorkflow.Relationships.MacOsVersion](./macosversion-data.dictionary.md)
   The data and links that describe the relationship between the Workflows and the macOS Versions resources.
-- [object CiWorkflow.Relationships.Product](ciworkflow/relationships-data.dictionary/product-data.dictionary.md)
+- [object CiWorkflow.Relationships.Product](./product-data.dictionary.md)
   The data and links that describe the relationship between the Workflows and the Products resources.
-- [object CiWorkflow.Relationships.Repository](ciworkflow/relationships-data.dictionary/repository-data.dictionary.md)
+- [object CiWorkflow.Relationships.Repository](./repository-data.dictionary.md)
   The data and links that describe the relationship between the Workflows and the Repositories resources.
 
 

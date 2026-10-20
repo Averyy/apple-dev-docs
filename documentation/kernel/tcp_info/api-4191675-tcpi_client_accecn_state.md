@@ -1,14 +1,15 @@
 # tcpi_client_accecn_state
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t tcpi_client_accecn_state;
 ```
 

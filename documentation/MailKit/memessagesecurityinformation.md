@@ -1,7 +1,8 @@
 # MEMessageSecurityInformation
 
 **Framework**: MailKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains details about a message’s content, such as if it’s encrypted and who digitally signed it.
 
@@ -14,47 +15,52 @@ An object that contains details about a message’s content, such as if it’s e
 class MEMessageSecurityInformation
 ```
 
+```objc
+@interface MEMessageSecurityInformation : NSObject
+```
+
 ## Topics
 
 ### Describing Message Security Attributes
-- [init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, encryptionError: (any Error)?)](memessagesecurityinformation/init(signers:isencrypted:signingerror:encryptionerror:).md)
+- [init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, encryptionError: (any Error)?)](./memessagesecurityinformation/init%28signers,isencrypted,signingerror,encryptionerror%29.md)
   Creates a message security information object that indicates if a message is encrypted, who signed it, or if an error occurred when decoding the message.
-- [var isEncrypted: Bool](memessagesecurityinformation/isencrypted.md)
+- [var isEncrypted: Bool](./memessagesecurityinformation/isencrypted.md)
   A Boolean value that indicates if the sender encrypted the message.
-- [var encryptionError: (any Error)?](memessagesecurityinformation/encryptionerror.md)
+- [var encryptionError: (any Error)?](./memessagesecurityinformation/encryptionerror.md)
   An error that indicates the security handler couldn’t decrypt the message.
-- [var signers: [MEMessageSigner]](memessagesecurityinformation/signers.md)
+- [var signers: [MEMessageSigner]](./memessagesecurityinformation/signers.md)
   An array of objects that contain information about who signed the message.
-- [var signingError: (any Error)?](memessagesecurityinformation/signingerror.md)
+- [var signingError: (any Error)?](./memessagesecurityinformation/signingerror.md)
   An error that indicates the security handler couldn’t decode the message’s digital signatures.
 ### Initializers
-- [init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, encryptionError: (any Error)?, shouldBlockRemoteContent: Bool, localizedRemoteContentBlockingReason: String?)](memessagesecurityinformation/init(signers:isencrypted:signingerror:encryptionerror:shouldblockremotecontent:localizedremotecontentblockingreason:).md)
-- [init?(coder: NSCoder)](memessagesecurityinformation/init(coder:).md)
+- [init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, encryptionError: (any Error)?, shouldBlockRemoteContent: Bool, localizedRemoteContentBlockingReason: String?)](./memessagesecurityinformation/init%28signers,isencrypted,signingerror,encryptionerror,shouldblockremotecontent,localizedremotecontentblockingreason%29.md)
+- [init?(coder: NSCoder)](./memessagesecurityinformation/init%28coder%29.md)
 ### Instance Properties
-- [var localizedRemoteContentBlockingReason: String?](memessagesecurityinformation/localizedremotecontentblockingreason.md)
-- [var shouldBlockRemoteContent: Bool](memessagesecurityinformation/shouldblockremotecontent.md)
+- [var localizedRemoteContentBlockingReason: String?](./memessagesecurityinformation/localizedremotecontentblockingreason.md)
+- [var shouldBlockRemoteContent: Bool](./memessagesecurityinformation/shouldblockremotecontent.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [protocol MEMessageDecoder](memessagedecoder.md)
+### Decrypting Messages and Verifying Signatures
+- [protocol MEMessageDecoder](./memessagedecoder.md)
   An object that decrypts messages and provides details about digital signatures.
-- [class MEDecodedMessage](medecodedmessage.md)
+- [class MEDecodedMessage](./medecodedmessage.md)
   An object that contains the RFC 2822 data for a message, without encryption or digital signatures.
-- [class MEMessageSigner](memessagesigner.md)
+- [class MEMessageSigner](./memessagesigner.md)
   An object that contains details about the person who signed a message.
 
 

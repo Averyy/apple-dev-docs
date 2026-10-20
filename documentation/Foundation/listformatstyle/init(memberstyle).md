@@ -1,7 +1,8 @@
 # init(memberStyle:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided format style.
 
@@ -33,7 +34,7 @@ The following example uses a `FloatingPointFormatStyle.Descriptive` member style
 
 ## Parameters
 
-- `memberStyle`: The [`FormatStyle`](formatstyle.md) applied to elements of the [`Sequence`](https://developer.apple.com/documentation/swift/sequence).
+- `memberStyle`: The [`FormatStyle`](../formatstyle.md) applied to elements of the [`Sequence`](../../Swift/sequence.md).
 
 
 ---

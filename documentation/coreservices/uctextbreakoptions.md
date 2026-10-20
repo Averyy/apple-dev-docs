@@ -1,7 +1,8 @@
 # UCTextBreakOptions
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specifies options for locating boundaries in Unicode text.
 
@@ -15,12 +16,16 @@ Specifies options for locating boundaries in Unicode text.
 typealias UCTextBreakOptions = UInt32
 ```
 
+```c
+typedef UInt32 UCTextBreakOptions;
+```
+
 ## Topics
 
 ### Constants
-- [var kUCTextBreakLeadingEdgeMask: Int](kuctextbreakleadingedgemask.md)
-- [var kUCTextBreakGoBackwardsMask: Int](kuctextbreakgobackwardsmask.md)
-- [var kUCTextBreakIterateMask: Int](kuctextbreakiteratemask.md)
+- [var kUCTextBreakLeadingEdgeMask: Int](./kuctextbreakleadingedgemask.md)
+- [var kUCTextBreakGoBackwardsMask: Int](./kuctextbreakgobackwardsmask.md)
+- [var kUCTextBreakIterateMask: Int](./kuctextbreakiteratemask.md)
 
 
 ---

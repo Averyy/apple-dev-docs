@@ -1,7 +1,8 @@
 # shaderValidation
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether to enable or disable Metal Shader Validation for the pipeline.
 
@@ -17,6 +18,10 @@ Controls whether to enable or disable Metal Shader Validation for the pipeline.
 
 ```swift
 var shaderValidation: MTLShaderValidation { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLShaderValidation shaderValidation;
 ```
 
 

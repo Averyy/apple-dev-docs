@@ -1,7 +1,8 @@
 # BNNS.RandomGeneratorMethod
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe random number generation methods.
 
@@ -11,7 +12,7 @@ Constants that describe random number generation methods.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,18 +24,19 @@ enum RandomGeneratorMethod
 ## Topics
 
 ### Random Number Generation Methods
-- [BNNS.RandomGeneratorMethod.aesCtr](bnns/randomgeneratormethod/aesctr.md)
+- [BNNS.RandomGeneratorMethod.aesCtr](./randomgeneratormethod/aesctr.md)
   A constant that specifes an implementation that’s based on the Advanced Encryption Standard (AES) hash of a counter.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init?(method: BNNS.RandomGeneratorMethod, seed: UInt64?, filterParameters: BNNSFilterParameters?)](bnns/randomgenerator/init(method:seed:filterparameters:).md)
+### Creating a Random Number Generator
+- [init?(method: BNNS.RandomGeneratorMethod, seed: UInt64?, filterParameters: BNNSFilterParameters?)](./randomgenerator/init%28method,seed,filterparameters%29.md)
   Returns a new random number generator.
 
 

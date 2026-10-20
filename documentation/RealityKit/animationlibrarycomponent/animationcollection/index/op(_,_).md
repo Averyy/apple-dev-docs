@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether the first argument represents a position before the second argument.
 

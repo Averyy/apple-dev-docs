@@ -1,7 +1,8 @@
 # systemColorsDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var systemColorsDidChange: NotificationCenter.BaseMessageIdentifier<NSColor.SystemColorsDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSColor.SystemColorsDidChangeMessage>`.
 
 
 ---

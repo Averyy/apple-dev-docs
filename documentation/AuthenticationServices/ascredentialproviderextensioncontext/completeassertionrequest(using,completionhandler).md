@@ -1,7 +1,8 @@
 # completeAssertionRequest(using:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Complete the passkey assertion request by providing the user-selected passkey credential.
 
@@ -15,33 +16,42 @@ Complete the passkey assertion request by providing the user-selected passkey cr
 ## Declaration
 
 ```swift
+func completeAssertionRequest(using credential: ASPasskeyAssertionCredential, completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func completeAssertionRequest(using credential: ASPasskeyAssertionCredential) async -> Bool
+```
+
+```objc
+- (void) completeAssertionRequestWithSelectedPasskeyCredential:(ASPasskeyAssertionCredential *) credential completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
 #### Discussion
 
-The synchronous version of this method calls its completion handler with [`background`](https://developer.apple.com/documentation/dispatch/dispatchqos/background) priority.
+The synchronous version of this method calls its completion handler with [`background`](../../Dispatch/dispatchqos/background.md) priority.
 
 ## Parameters
 
 - `credential`: The credential that the user selected.
-- `completionHandler`: An optional block your extension can provide to perform any cleanup work after the system has used the credential. The expired parameter is [`true`](https://developer.apple.com/documentation/swift/true) if the system decides to prematurely end a previous non-expiration invocation of the completion handler.
+- `completionHandler`: An optional block your extension can provide to perform any cleanup work after the system has used the credential. The expired parameter is [`true`](../../Swift/true.md) if the system decides to prematurely end a previous non-expiration invocation of the completion handler.
 
 ## See Also
 
-- [func completeRequest(withSelectedCredential: ASPasswordCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completerequest(withselectedcredential:completionhandler:).md)
+### Providing credentials
+- [func completeRequest(withSelectedCredential: ASPasswordCredential, completionHandler: ((Bool) -> Void)?)](./completerequest%28withselectedcredential,completionhandler%29.md)
   Provides the user-selected credential.
-- [func completeRegistrationRequest(using: ASPasskeyRegistrationCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeregistrationrequest(using:completionhandler:).md)
+- [func completeRegistrationRequest(using: ASPasskeyRegistrationCredential, completionHandler: ((Bool) -> Void)?)](./completeregistrationrequest%28using,completionhandler%29.md)
   Complete the registration request by providing the newly-created passkey credential.
-- [func completeOneTimeCodeRequest(using: ASOneTimeCodeCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeonetimecoderequest(using:completionhandler:).md)
+- [func completeOneTimeCodeRequest(using: ASOneTimeCodeCredential, completionHandler: ((Bool) -> Void)?)](./completeonetimecoderequest%28using,completionhandler%29.md)
   Provides the user-selected one-time passcode (OTP).
-- [class ASPasswordCredential](aspasswordcredential.md)
+- [class ASPasswordCredential](../aspasswordcredential.md)
   A password credential.
-- [class ASPasskeyAssertionCredential](aspasskeyassertioncredential.md)
+- [class ASPasskeyAssertionCredential](../aspasskeyassertioncredential.md)
   A passkey assertion credential.
-- [class ASPasskeyRegistrationCredential](aspasskeyregistrationcredential.md)
+- [class ASPasskeyRegistrationCredential](../aspasskeyregistrationcredential.md)
   A passkey registration credential.
-- [class ASOneTimeCodeCredential](asonetimecodecredential.md)
+- [class ASOneTimeCodeCredential](../asonetimecodecredential.md)
   A one-time passcode (OTP) credential.
 
 

@@ -1,7 +1,8 @@
 # UTF16
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,9 +21,10 @@ typealias UTF16 = Unicode.UTF16
 
 ## See Also
 
-- [typealias UnicodeScalar](unicodescalar.md)
-- [typealias UTF8](utf8.md)
-- [typealias UTF32](utf32.md)
+### Deprecated
+- [typealias UnicodeScalar](./unicodescalar.md)
+- [typealias UTF8](./utf8.md)
+- [typealias UTF32](./utf32.md)
 
 
 ---

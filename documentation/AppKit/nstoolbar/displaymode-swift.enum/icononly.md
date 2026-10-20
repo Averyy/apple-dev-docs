@@ -1,7 +1,8 @@
 # NSToolbar.DisplayMode.iconOnly
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The toolbar displays only an icon for each item.
 
@@ -9,7 +10,7 @@ The toolbar displays only an icon for each item.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The toolbar displays only an icon for each item.
 case iconOnly
 ```
 
+```c
+NSToolbarDisplayModeIconOnly
+```
+
 ## See Also
 
-- [NSToolbar.DisplayMode.default](nstoolbar/displaymode-swift.enum/default.md)
+### Display modes
+- [NSToolbar.DisplayMode.default](./default.md)
   The default display mode.
-- [NSToolbar.DisplayMode.iconAndLabel](nstoolbar/displaymode-swift.enum/iconandlabel.md)
+- [NSToolbar.DisplayMode.iconAndLabel](./iconandlabel.md)
   The toolbar displays an icon and label for each item.
-- [NSToolbar.DisplayMode.labelOnly](nstoolbar/displaymode-swift.enum/labelonly.md)
+- [NSToolbar.DisplayMode.labelOnly](./labelonly.md)
   The toolbar displays only a label for each item.
 
 

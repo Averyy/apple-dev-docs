@@ -1,7 +1,8 @@
 # UICollectionViewDiffableDataSource.CellProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a cell for a collection view from its diffable data source.
 
@@ -10,7 +11,7 @@ A closure that configures and returns a cell for a collection view from its diff
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,23 +25,25 @@ A non-`nil` configured cell object. The cell provider must return a valid cell o
 
 #### Discussion
 
-You use this closure to configure and return cells when creating a diffable data source using [`init(collectionView:cellProvider:)`](uicollectionviewdiffabledatasource-9tqpa/init(collectionview:cellprovider:).md).
+You use this closure to configure and return cells when creating a diffable data source using [`init(collectionView:cellProvider:)`](./init%28collectionview,cellprovider%29.md).
 
 ## Parameters
 
 - `collectionView`: The collection view to configure this cell for.
 - `indexPath`: The index path that specifies the location of the cell in the collection view.
-- `itemIdentifier`: An object, with a type that implements the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol, the data source uses to uniquely identify the item for this cell.
+- `itemIdentifier`: An object, with a type that implements the [`Hashable`](../../Swift/hashable.md) protocol, the data source uses to uniquely identify the item for this cell.
 
 ## See Also
 
-- [class UICollectionViewDiffableDataSourceReference](uicollectionviewdiffabledatasourcereference.md)
+### Related Documentation
+- [class UICollectionViewDiffableDataSourceReference](../uicollectionviewdiffabledatasourcereference.md)
   The object you use to manage data and provide cells for a collection view.
-- [Updating collection views using diffable data sources](updating-collection-views-using-diffable-data-sources.md)
+- [Updating collection views using diffable data sources](../updating-collection-views-using-diffable-data-sources.md)
   Streamline the display and update of data in a collection view using a diffable data source that contains identifiers.
-- [Implementing modern collection views](implementing-modern-collection-views.md)
+- [Implementing modern collection views](../implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
-- [init(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.CellProvider)](uicollectionviewdiffabledatasource-9tqpa/init(collectionview:cellprovider:).md)
+### Creating a diffable data source
+- [init(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.CellProvider)](./init%28collectionview,cellprovider%29.md)
   Creates a diffable data source with the specified cell provider, and connects it to the specified collection view.
 
 

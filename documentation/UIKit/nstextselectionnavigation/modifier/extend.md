@@ -1,7 +1,8 @@
 # extend
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value that indicates the framework extends the selection by not moving the initial location while in a drag selection.
 
@@ -18,11 +19,16 @@ The value that indicates the framework extends the selection by not moving the i
 static var extend: NSTextSelectionNavigation.Modifier { get }
 ```
 
+```c
+NSTextSelectionNavigationModifierExtend
+```
+
 ## See Also
 
-- [static var multiple: NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier/multiple.md)
+### Navigation modifier characteristics
+- [static var multiple: NSTextSelectionNavigation.Modifier](./multiple.md)
   The value that indicates the framework extends the selection visually inside the rectangular area defined by the anchor and dragged positions.
-- [static var visual: NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier/visual.md)
+- [static var visual: NSTextSelectionNavigation.Modifier](./visual.md)
   The value that indicates the framework extends the selection visually inside the rectangular area defined by the anchor and drag positions.
 
 

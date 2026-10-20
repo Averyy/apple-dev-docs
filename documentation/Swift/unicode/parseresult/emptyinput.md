@@ -1,7 +1,8 @@
 # Unicode.ParseResult.emptyInput
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The input was entirely consumed.
 

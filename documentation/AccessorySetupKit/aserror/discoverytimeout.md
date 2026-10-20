@@ -1,7 +1,8 @@
 # discoveryTimeout
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,7 +16,8 @@ static var discoveryTimeout: ASError.Code { get }
 
 ## See Also
 
-- [static var connectionFailed: ASError.Code](aserror/connectionfailed.md)
+### Communication errors
+- [static var connectionFailed: ASError.Code](./connectionfailed.md)
 
 
 ---

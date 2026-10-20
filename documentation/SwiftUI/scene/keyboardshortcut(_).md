@@ -1,7 +1,8 @@
 # keyboardShortcut(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a keyboard shortcut for opening new scene windows.
 
@@ -17,7 +18,7 @@ func keyboardShortcut(_ shortcut: KeyboardShortcut?) -> some Scene
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Building and customizing the menu bar with SwiftUI](../building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Return Value
 
@@ -51,13 +52,14 @@ If `shortcut` is `nil`, the scene’s presentation command will not be associate
 
 ## See Also
 
-- [func commands<Content>(content: () -> Content) -> some Scene](scene/commands(content:).md)
+### Setting commands
+- [func commands<Content>(content: () -> Content) -> some Scene](./commands%28content%29.md)
   Adds commands to the scene.
-- [func commandsRemoved() -> some Scene](scene/commandsremoved.md)
+- [func commandsRemoved() -> some Scene](./commandsremoved%28%29.md)
   Removes all commands defined by the modified scene.
-- [func commandsReplaced<Content>(content: () -> Content) -> some Scene](scene/commandsreplaced(content:).md)
+- [func commandsReplaced<Content>(content: () -> Content) -> some Scene](./commandsreplaced%28content%29.md)
   Replaces all commands defined by the modified scene with the commands from the builder.
-- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization) -> some Scene](scene/keyboardshortcut(_:modifiers:localization:).md)
+- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization) -> some Scene](./keyboardshortcut%28_,modifiers,localization%29.md)
   Defines a keyboard shortcut for opening new scene windows.
 
 

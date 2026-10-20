@@ -1,7 +1,8 @@
 # QUICStream.Initiator
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,14 +22,14 @@ enum Initiator
 ## Topics
 
 ### Enumeration Cases
-- [QUICStream.Initiator.client](quicstream/initiator/client.md)
-- [QUICStream.Initiator.server](quicstream/initiator/server.md)
+- [QUICStream.Initiator.client](./initiator/client.md)
+- [QUICStream.Initiator.server](./initiator/server.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

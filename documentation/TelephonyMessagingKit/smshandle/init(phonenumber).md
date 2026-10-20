@@ -1,7 +1,8 @@
 # init(phoneNumber:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a handle instance with the given phone number.
 

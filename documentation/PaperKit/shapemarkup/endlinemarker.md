@@ -1,7 +1,8 @@
 # endLineMarker
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line marker used at the end of an open shape path.
 
@@ -26,9 +27,10 @@ Default is `.none`.
 
 ## See Also
 
-- [var startLineMarker: ShapeMarkup.LineMarker](shapemarkup/startlinemarker.md)
+### Configuring line markers
+- [var startLineMarker: ShapeMarkup.LineMarker](./startlinemarker.md)
   The line marker used at the start of an open shape path.
-- [ShapeMarkup.LineMarker](shapemarkup/linemarker.md)
+- [ShapeMarkup.LineMarker](./linemarker.md)
   A marker that can be attached to a line.
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/dev/metal_debugger.html
 
 # Metal Debugger
 
-**
-
-- [.rst](../_sources/dev/metal_debugger.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Metal Debugger
-
- Table of contents 
-
-## Contents
-
-# Metal Debugger
-
 Profiling is a key step for performance optimization. You can build MLX with
 the `MLX_METAL_DEBUG` option to improve the Metal debugging and
 optimization workflow. The `MLX_METAL_DEBUG` debug option:
@@ -44,7 +17,7 @@ debugging.
 To build with debugging enabled in Python prepend
 `CMAKE_ARGS="-DMLX_METAL_DEBUG=ON"` to the build call.
 
-The [metal.start_capture()](../python/_autosummary/mlx.core.metal.start_capture.html#mlx.core.metal.start_capture) function initiates a capture of all MLX GPU
+The [metal.start_capture()](../python/_autosummary/mlx.core.metal.start_capture.md#mlx.core.metal.start_capture) function initiates a capture of all MLX GPU
 work.
 
 Note
@@ -75,7 +48,7 @@ You can open and replay the GPU trace in Xcode. The `Dependencies` view
 has a great overview of all operations. Checkout the [Metal debugger
 documentation](https://developer.apple.com/documentation/xcode/metal-debugger) for more information.
 
-![../_images/capture.png](../_images/capture.png)
+![../_images/capture.png](https://ml-explore.github.io/mlx/build/html/_images/capture.png)
 
 ## Xcode Workflow
 
@@ -90,6 +63,4 @@ open mlx.xcodeproj
 
 Select the `metal_capture` example schema and run.
 
-![../_images/schema.png](../_images/schema.png)
-
-** Contents
+![../_images/schema.png](https://ml-explore.github.io/mlx/build/html/_images/schema.png)

@@ -1,7 +1,8 @@
 # Unicode.NumericType.decimal
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A digit that is commonly understood to form base-10 numbers.
 

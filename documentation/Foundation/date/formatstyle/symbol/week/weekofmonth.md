@@ -1,7 +1,8 @@
 # weekOfMonth
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom format style portraying the numeric week of the month.
 
@@ -22,9 +23,10 @@ static var weekOfMonth: Date.FormatStyle.Symbol.Week { get }
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.Week](date/formatstyle/symbol/week/defaultdigits.md)
+### Modifying a Week
+- [static var defaultDigits: Date.FormatStyle.Symbol.Week](./defaultdigits.md)
   Custom week format style showing the minimum number of digits that represents the numeric week.
-- [static var twoDigits: Date.FormatStyle.Symbol.Week](date/formatstyle/symbol/week/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Week](./twodigits.md)
   Custom format style portraying the two-digit numeric week, zero-padded if necessary.
 
 

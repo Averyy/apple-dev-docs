@@ -1,7 +1,8 @@
 # retrieveCredentials(forExtendedPANID:completion:)
 
 **Framework**: ThreadNetwork  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests Thread credentials for an extended Personal Area Network (PAN) ID.
 
@@ -16,14 +17,26 @@ Requests Thread credentials for an extended Personal Area Network (PAN) ID.
 ## Declaration
 
 ```swift
+func retrieveCredentials(forExtendedPANID extendedPANID: Data, completion: @escaping @Sendable (THCredentials?, (any Error)?) -> Void)
+```
+
+```swift
 func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredentials
+```
+
+```objc
+- (void) retrieveCredentialsForExtendedPANID:(NSData *) extendedPANID completion:(void (^)(THCredentials *credentials, NSError *error)) completion;
 ```
 
 #### Discussion
 
-> **Note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredentials
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> **Concurrency note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredentials
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 When calling this method, an alert appears asking for user permission to access credentials.
 
@@ -50,17 +63,18 @@ func obtainCredentials(xpanID: Data) async -> (cred: THCredentials? ,err: Error?
 
 ## See Also
 
-- [func isPreferredNetworkAvailable(completion: (Bool) -> Void)](thclient/ispreferrednetworkavailable(completion:).md)
+### Retrieving Credentials
+- [func isPreferredNetworkAvailable(completion: (Bool) -> Void)](./ispreferrednetworkavailable%28completion%29.md)
   Indicates whether a preferred network is available.
-- [func checkPreferredNetwork(forActiveOperationalDataset: Data, completion: (Bool) -> Void)](thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).md)
+- [func checkPreferredNetwork(forActiveOperationalDataset: Data, completion: (Bool) -> Void)](./checkpreferrednetwork%28foractiveoperationaldataset,completion%29.md)
   Determines if the essential operating parameters match the preferred network’s parameters.
-- [func retrieveCredentials(forBorderAgent: Data, completion: (THCredentials?, (any Error)?) -> Void)](thclient/retrievecredentials(forborderagent:completion:).md)
+- [func retrieveCredentials(forBorderAgent: Data, completion: (THCredentials?, (any Error)?) -> Void)](./retrievecredentials%28forborderagent,completion%29.md)
   Requests Thread credentials for a Border Agent.
-- [func retrieveAllCredentials((Set<THCredentials>?, (any Error)?) -> Void)](thclient/retrieveallcredentials(_:).md)
+- [func retrieveAllCredentials((Set<THCredentials>?, (any Error)?) -> Void)](./retrieveallcredentials%28_%29.md)
   Requests all Thread credentials from the framework.
-- [func retrievePreferredCredentials((THCredentials?, (any Error)?) -> Void)](thclient/retrievepreferredcredentials(_:).md)
+- [func retrievePreferredCredentials((THCredentials?, (any Error)?) -> Void)](./retrievepreferredcredentials%28_%29.md)
   Requests Thread credentials for the preferred network.
-- [func retrieveAllActiveCredentials((Set<THCredentials>?, (any Error)?) -> Void)](thclient/retrieveallactivecredentials(_:).md)
+- [func retrieveAllActiveCredentials((Set<THCredentials>?, (any Error)?) -> Void)](./retrieveallactivecredentials%28_%29.md)
   Returns a set of the active credentials.
 
 

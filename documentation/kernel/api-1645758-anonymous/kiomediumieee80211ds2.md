@@ -1,14 +1,15 @@
 # kIOMediumIEEE80211DS2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMediumIEEE80211DS2 = ( IFM_IEEE80211_DS2  | IFM_IEEE80211 )
 ```
 

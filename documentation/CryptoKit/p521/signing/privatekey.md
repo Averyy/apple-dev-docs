@@ -1,7 +1,8 @@
 # P521.Signing.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A P-521 private key used to create cryptographic signatures.
 
@@ -23,45 +24,46 @@ struct PrivateKey
 ## Topics
 
 ### Creating a key
-- [init<Bytes>(rawRepresentation: Bytes) throws](p521/signing/privatekey/init(rawrepresentation:).md)
+- [init<Bytes>(rawRepresentation: Bytes) throws](./privatekey/init%28rawrepresentation%29.md)
   Creates a P-521 private key for signing from a collection of bytes.
-- [init(compactRepresentable: Bool)](p521/signing/privatekey/init(compactrepresentable:).md)
+- [init(compactRepresentable: Bool)](./privatekey/init%28compactrepresentable%29.md)
   Creates a random P-521 private key for signing.
-- [init<Bytes>(derRepresentation: Bytes) throws](p521/signing/privatekey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./privatekey/init%28derrepresentation%29.md)
   Creates a P-521 private key for signing from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p521/signing/privatekey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./privatekey/init%28pemrepresentation%29.md)
   Creates a P-521 private key for signing from a Privacy-Enhanced Mail PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p521/signing/privatekey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./privatekey/init%28x963representation%29.md)
   Creates a P-521 private key for signing from an ANSI x9.63 representation.
 ### Representing the key
-- [var rawRepresentation: Data](p521/signing/privatekey/rawrepresentation.md)
+- [var rawRepresentation: Data](./privatekey/rawrepresentation.md)
   A data representation of the private key.
-- [var derRepresentation: Data](p521/signing/privatekey/derrepresentation.md)
+- [var derRepresentation: Data](./privatekey/derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of the private key.
-- [var pemRepresentation: String](p521/signing/privatekey/pemrepresentation.md)
+- [var pemRepresentation: String](./privatekey/pemrepresentation.md)
   A Privacy-Enhanced Mail (PEM) representation of the private key.
-- [var x963Representation: Data](p521/signing/privatekey/x963representation.md)
+- [var x963Representation: Data](./privatekey/x963representation.md)
   An ANSI x9.63 representation of the private key.
 ### Finding the public key
-- [var publicKey: P521.Signing.PublicKey](p521/signing/privatekey/publickey.md)
+- [var publicKey: P521.Signing.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Creating a signature
-- [func signature<D>(for: D) throws -> P521.Signing.ECDSASignature](p521/signing/privatekey/signature(for:)-34g01.md)
+- [func signature<D>(for: D) throws -> P521.Signing.ECDSASignature](./privatekey/signature%28for%29-34g01.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the data you provide over the P-521 elliptic curve, using SHA-512 as the hash function.
-- [func signature<D>(for: D) throws -> P521.Signing.ECDSASignature](p521/signing/privatekey/signature(for:)-7rxva.md)
+- [func signature<D>(for: D) throws -> P521.Signing.ECDSASignature](./privatekey/signature%28for%29-7rxva.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the digest you provide over the P-521 elliptic curve.
-- [P521.Signing.ECDSASignature](p521/signing/ecdsasignature.md)
+- [P521.Signing.ECDSASignature](./ecdsasignature.md)
   A P-521 elliptic curve digital signature algorithm (ECDSA) signature.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P521.Signing.PublicKey](p521/signing/publickey.md)
+### Using keys
+- [P521.Signing.PublicKey](./publickey.md)
   A P-521 public key used to verify cryptographic signatures.
 
 

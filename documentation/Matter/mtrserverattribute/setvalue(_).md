@@ -1,7 +1,8 @@
 # setValue(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func setValue(_ value: [String : Any]) -> Bool
+```
+
+```objc
+- (BOOL) setValue:(NSDictionary<NSString *,id> *) value;
 ```
 
 

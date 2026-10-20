@@ -1,7 +1,8 @@
 # attributedSubstring(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an attributed string consisting of the characters and attributes within the specified range in the attributed string.
 
@@ -20,13 +21,17 @@ Returns an attributed string consisting of the characters and attributes within 
 func attributedSubstring(from range: NSRange) -> NSAttributedString
 ```
 
+```objc
+- (NSAttributedString *) attributedSubstringFromRange:(NSRange) range;
+```
+
 #### Return Value
 
 An `NSAttributedString` object consisting of the characters and attributes within `aRange` in the receiver.
 
 #### Discussion
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `aRange` lies beyond the end of the receiver’s characters. This method treats the length of the string as a valid range value that returns an empty string.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `aRange` lies beyond the end of the receiver’s characters. This method treats the length of the string as a valid range value that returns an empty string.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## See Also
 
-- [var string: String](nsattributedstring/string.md)
+### Getting the characters
+- [var string: String](./string.md)
   The character contents of the attributed string as a string.
-- [var length: Int](nsattributedstring/length.md)
+- [var length: Int](./length.md)
   The length of the attributed string.
 
 

@@ -1,7 +1,8 @@
 # end(_:dismissalPolicy:timestamp:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends an active Live Activity.
 
@@ -17,7 +18,7 @@ func end(_ content: ActivityContent<Activity<Attributes>.ContentState>?, dismiss
 
 #### Discussion
 
-End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks). When you end a Live Activity, include a final content update using the `content` parameter to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity may remain visible until the system or the person removes it.
+End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [Background Tasks](../../BackgroundTasks/BackgroundTasks.md). When you end a Live Activity, include a final content update using the `content` parameter to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity may remain visible until the system or the person removes it.
 
 ## Parameters
 
@@ -27,9 +28,10 @@ End an active Live Activity while your app is in the foreground or while it’s 
 
 ## See Also
 
-- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy) async](activity/end(_:dismissalpolicy:).md)
+### Ending a Live Activity
+- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy) async](./end%28_,dismissalpolicy%29.md)
   Ends an active Live Activity.
-- [struct ActivityUIDismissalPolicy](activityuidismissalpolicy.md)
+- [struct ActivityUIDismissalPolicy](../activityuidismissalpolicy.md)
   The structure that describes when the system should remove a Live Activity that ended.
 
 

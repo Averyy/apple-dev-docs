@@ -1,7 +1,8 @@
 # accessibilityTextualContext
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityTextualContext: UIAccessibilityTextualContext? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIAccessibilityTextualContext accessibilityTextualContext;
 ```
 
 

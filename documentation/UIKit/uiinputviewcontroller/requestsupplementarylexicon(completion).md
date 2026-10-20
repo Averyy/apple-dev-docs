@@ -1,7 +1,8 @@
 # requestSupplementaryLexicon(completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains a supplementary lexicon of term pairs in a custom keyboard.
 
@@ -9,18 +10,26 @@ Obtains a supplementary lexicon of term pairs in a custom keyboard.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
+func requestSupplementaryLexicon(completion completionHandler: @escaping (UILexicon) -> Void)
+```
+
+```swift
 func requestSupplementaryLexicon() async -> UILexicon
+```
+
+```objc
+- (void) requestSupplementaryLexiconWithCompletion:(void (^)(UILexicon *)) completionHandler;
 ```
 
 #### Discussion
 
-Call this method to obtain a [`UILexicon`](uilexicon.md) object containing a basic set of term pairs for use in autocorrection or textual suggestions based on user input. The [`UILexicon`](uilexicon.md) object contains words from various sources, including:
+Call this method to obtain a [`UILexicon`](../uilexicon.md) object containing a basic set of term pairs for use in autocorrection or textual suggestions based on user input. The [`UILexicon`](../uilexicon.md) object contains words from various sources, including:
 
 - Unpaired first names and last names from the user’s Address Book database
 - Text shortcuts defined in the Settings > General > Keyboard > Shortcuts list

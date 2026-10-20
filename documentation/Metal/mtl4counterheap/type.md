@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Queries the type of the heap.
@@ -18,6 +19,10 @@ Queries the type of the heap.
 
 ```swift
 var type: MTL4CounterHeapType { get }
+```
+
+```objc
+@property (readonly) MTL4CounterHeapType type;
 ```
 
 

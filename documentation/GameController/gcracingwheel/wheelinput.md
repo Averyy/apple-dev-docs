@@ -1,7 +1,8 @@
 # wheelInput
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physical input profile for the racing wheel.
 
@@ -15,9 +16,13 @@ The physical input profile for the racing wheel.
 var wheelInput: GCRacingWheelInput { get }
 ```
 
+```objc
+@property (strong, readonly) GCRacingWheelInput * wheelInput;
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 
 ---

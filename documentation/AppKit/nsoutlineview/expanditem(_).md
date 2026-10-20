@@ -1,17 +1,22 @@
 # expandItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Expands a given item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func expandItem(_ item: Any?)
+```
+
+```objc
+- (void) expandItem:(id) item;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ If expanding takes place, posts an item expanded notification.
 
 ## See Also
 
-- [func expandItem(Any?, expandChildren: Bool)](nsoutlineview/expanditem(_:expandchildren:).md)
+### Expanding and Collapsing the Outline
+- [func expandItem(Any?, expandChildren: Bool)](./expanditem%28_,expandchildren%29.md)
   Expands a specified item and, optionally, its children.
-- [func collapseItem(Any?)](nsoutlineview/collapseitem(_:).md)
+- [func collapseItem(Any?)](./collapseitem%28_%29.md)
   Collapses a given item.
-- [func collapseItem(Any?, collapseChildren: Bool)](nsoutlineview/collapseitem(_:collapsechildren:).md)
+- [func collapseItem(Any?, collapseChildren: Bool)](./collapseitem%28_,collapsechildren%29.md)
   Collapses a given item and, optionally, its children.
 
 

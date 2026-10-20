@@ -1,7 +1,8 @@
 # paddingTop
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the padding in height dimension at the top.
 
@@ -17,6 +18,10 @@ The property that defines the padding in height dimension at the top.
 
 ```swift
 var paddingTop: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingTop;
 ```
 
 

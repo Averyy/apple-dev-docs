@@ -1,7 +1,8 @@
 # functionNames
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the inference functions in this model.
 
@@ -20,12 +21,13 @@ var functionNames: [String] { get }
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 ## See Also
 
-- [func loadFunction(named: String) throws -> InferenceFunction?](aimodel/loadfunction(named:).md)
-- [func functionDescriptor(for: String) -> InferenceFunctionDescriptor?](aimodel/functiondescriptor(for:).md)
+### Loading inference functions
+- [func loadFunction(named: String) throws -> InferenceFunction?](./loadfunction%28named%29.md)
+- [func functionDescriptor(for: String) -> InferenceFunctionDescriptor?](./functiondescriptor%28for%29.md)
   Returns a descriptor for the specified function.
 
 

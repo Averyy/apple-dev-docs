@@ -1,7 +1,8 @@
 # locationInfo
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var locationInfo: MTRDataTypeLocationDescriptorStruct? { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRDataTypeLocationDescriptorStruct * locationInfo;
 ```
 
 

@@ -1,7 +1,8 @@
 # catmullRom(alpha:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Interpolate data points with Catmull-Rom spline, using the given alpha parameter.
 

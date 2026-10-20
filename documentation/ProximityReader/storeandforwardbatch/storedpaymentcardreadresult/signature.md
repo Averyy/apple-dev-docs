@@ -1,7 +1,8 @@
 # signature
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signature, as a Base64-encoded string, that guarantees the integrity of the payment
 

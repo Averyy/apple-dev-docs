@@ -1,17 +1,22 @@
 # withAlphaComponent(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new color object that has the same color space and component values as the current color object, but the specified alpha component.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func withAlphaComponent(_ alpha: CGFloat) -> NSColor
+```
+
+```objc
+- (NSColor *) colorWithAlphaComponent:(CGFloat) alpha;
 ```
 
 #### Return Value
@@ -28,15 +33,17 @@ A subclass with explicit opacity components should override this method to retur
 
 ## See Also
 
-- [var alphaComponent: CGFloat](nscolor/alphacomponent.md)
+### Related Documentation
+- [var alphaComponent: CGFloat](./alphacomponent.md)
   The alpha (opacity) component value of the color.
-- [func usingColorSpace(NSColorSpace) -> NSColor?](nscolor/usingcolorspace(_:).md)
+### Transforming existing color objects
+- [func usingColorSpace(NSColorSpace) -> NSColor?](./usingcolorspace%28_%29.md)
   Creates a new color object representing the color of the current color object in the specified color space.
-- [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](nscolor/blended(withfraction:of:).md)
+- [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](./blended%28withfraction,of%29.md)
   Creates a new color object whose component values are a weighted sum of the current color object and the specified color object’s.
-- [func highlight(withLevel: CGFloat) -> NSColor?](nscolor/highlight(withlevel:).md)
+- [func highlight(withLevel: CGFloat) -> NSColor?](./highlight%28withlevel%29.md)
   Creates a new color object that represents a blend between the current color and the highlight color.
-- [func shadow(withLevel: CGFloat) -> NSColor?](nscolor/shadow(withlevel:).md)
+- [func shadow(withLevel: CGFloat) -> NSColor?](./shadow%28withlevel%29.md)
   Creates a new color object that represents a blend between the current color and the shadow color.
 
 

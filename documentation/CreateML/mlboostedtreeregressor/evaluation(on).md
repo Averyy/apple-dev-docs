@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates the classifier on the provided labeled data.
 
@@ -19,9 +20,15 @@ Evaluates the classifier on the provided labeled data.
 func evaluation(on labeledData: DataFrame) -> MLRegressorMetrics
 ```
 
+**Other overloads**:
+
+```swift
+func evaluation(on labeledData: MLDataTable) -> MLRegressorMetrics
+```
+
 #### Return Value
 
-Metrics that describe the maximum error ([`maximumError`](mlregressormetrics/maximumerror.md)) or the average error ([`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md)).
+Metrics that describe the maximum error ([`maximumError`](../mlregressormetrics/maximumerror.md)) or the average error ([`rootMeanSquaredError`](../mlregressormetrics/rootmeansquarederror.md)).
 
 #### Discussion
 
@@ -33,9 +40,10 @@ Evaluation should be done on a testing data set that the model has not seen as p
 
 ## See Also
 
-- [var trainingMetrics: MLRegressorMetrics](mlboostedtreeregressor/trainingmetrics.md)
+### Evaluating a boosted tree regressor
+- [var trainingMetrics: MLRegressorMetrics](./trainingmetrics.md)
   Measurements of the regressor’s performance on the training data set.
-- [var validationMetrics: MLRegressorMetrics](mlboostedtreeregressor/validationmetrics.md)
+- [var validationMetrics: MLRegressorMetrics](./validationmetrics.md)
   Measurements of the regressor’s performance on the validation data set.
 
 

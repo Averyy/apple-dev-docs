@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new texture view pool from a resource view pool descriptor.
@@ -20,13 +21,17 @@ Creates a new texture view pool from a resource view pool descriptor.
 func makeTextureViewPool(descriptor: MTLResourceViewPoolDescriptor) throws -> any MTLTextureViewPool
 ```
 
+```objc
+- (id<MTLTextureViewPool>) newTextureViewPoolWithDescriptor:(MTLResourceViewPoolDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A [`MTLTextureViewPool`](mtltextureviewpool.md) instance, or `nil` if the function failed.
+A [`MTLTextureViewPool`](../mtltextureviewpool.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A [`MTLResourceViewPoolDescriptor`](mtlresourceviewpooldescriptor.md) instance that configures the [`MTLTextureViewPool`](mtltextureviewpool.md) instance.
+- `descriptor`: A [`MTLResourceViewPoolDescriptor`](../mtlresourceviewpooldescriptor.md) instance that configures the [`MTLTextureViewPool`](../mtltextureviewpool.md) instance.
 
 
 ---

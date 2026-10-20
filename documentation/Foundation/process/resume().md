@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes execution of a suspended task.
 
@@ -15,25 +16,30 @@ Resumes execution of a suspended task.
 func resume() -> Bool
 ```
 
+```objc
+- (BOOL) resume;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver was able to resume execution, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the receiver was able to resume execution, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-If the system sent multiple [`suspend()`](process/suspend().md) messages to the receiver, an equal number of [`resume()`](process/resume().md) messages must be sent before the task resumes execution.
+If the system sent multiple [`suspend()`](./suspend%28%29.md) messages to the receiver, an equal number of [`resume()`](./resume%28%29.md) messages must be sent before the task resumes execution.
 
 ## See Also
 
-- [func run() throws](process/run.md)
+### Running and stopping
+- [func run() throws](./run%28%29.md)
   Runs the process with the current environment.
-- [func interrupt()](process/interrupt.md)
+- [func interrupt()](./interrupt%28%29.md)
   Sends an interrupt signal to the receiver and all of its subtasks.
-- [func suspend() -> Bool](process/suspend.md)
+- [func suspend() -> Bool](./suspend%28%29.md)
   Suspends execution of the receiver task.
-- [func terminate()](process/terminate.md)
+- [func terminate()](./terminate%28%29.md)
   Sends a terminate signal to the receiver and all of its subtasks.
-- [func waitUntilExit()](process/waituntilexit.md)
+- [func waitUntilExit()](./waituntilexit%28%29.md)
   Blocks the process until the receiver is finished.
 
 

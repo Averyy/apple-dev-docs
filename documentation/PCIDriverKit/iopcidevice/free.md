@@ -1,27 +1,29 @@
 # free
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the object.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](iopcidevice/init.md)
+### Running the Service
+- [init](./init.md)
   Initializes the device.
-- [Open](iopcidevice/open.md)
+- [Open](./open.md)
   Opens a session to the PCI device.
-- [Close](iopcidevice/close.md)
+- [Close](./close.md)
   Closes the session to the PCI device.
 
 

@@ -1,7 +1,8 @@
 # onDeactivate(perform:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs an action when this dynamic profile becomes inactive.
 
@@ -21,7 +22,7 @@ func onDeactivate(perform action: sending @escaping @isolated(any) () async -> V
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Composing dynamic sessions with instructions and profiles](../../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
 #### Discussion
 
@@ -42,17 +43,18 @@ struct MyDynamicProfile: LanguageModelSession.DynamicProfile {
 
 ## See Also
 
-- [func onActivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/onactivate(perform:).md)
+### Observing life cycle modifiers
+- [func onActivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](./onactivate%28perform%29.md)
   Runs an action when this dynamic profile becomes active.
-- [func onPrompt(perform:)](languagemodelsession/dynamicprofile/onprompt(perform:).md)
+- [func onPrompt(perform:)](./onprompt%28perform%29.md)
   Runs an action before the model is invoked for this dynamic profile.
-- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+- [func onReasoning(perform:)](./onreasoning%28perform%29.md)
   Runs an action whenever this dynamic profile produces reasoning.
-- [func onResponse(perform:)](languagemodelsession/dynamicprofile/onresponse(perform:).md)
+- [func onResponse(perform:)](./onresponse%28perform%29.md)
   Runs an action after this dynamic profile produces a response.
-- [func onToolCall(perform:)](languagemodelsession/dynamicprofile/ontoolcall(perform:).md)
+- [func onToolCall(perform:)](./ontoolcall%28perform%29.md)
   Runs an action whenever a tool is called within this dynamic profile.
-- [func onToolOutput(perform:)](languagemodelsession/dynamicprofile/ontooloutput(perform:).md)
+- [func onToolOutput(perform:)](./ontooloutput%28perform%29.md)
   Runs an action whenever a tool call output is received within this dynamic profile.
 
 

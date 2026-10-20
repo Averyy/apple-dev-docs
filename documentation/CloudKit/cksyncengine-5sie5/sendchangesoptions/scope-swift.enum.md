@@ -1,7 +1,8 @@
 # CKSyncEngine.SendChangesOptions.Scope
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The scope for sending changes to the server.
 
@@ -11,7 +12,7 @@ The scope for sending changes to the server.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,29 +24,29 @@ enum Scope
 ## Topics
 
 ### Enumeration Cases
-- [CKSyncEngine.SendChangesOptions.Scope.all](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/all.md)
+- [CKSyncEngine.SendChangesOptions.Scope.all](./scope-swift.enum/all.md)
   Send changes for all zones.
-- [CKSyncEngine.SendChangesOptions.Scope.allExcluding(_:)](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/allexcluding(_:).md)
+- [CKSyncEngine.SendChangesOptions.Scope.allExcluding(_:)](./scope-swift.enum/allexcluding%28_%29.md)
   Send changes for all zones except the given set of zones.
-- [CKSyncEngine.SendChangesOptions.Scope.recordIDs(_:)](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/recordids(_:).md)
+- [CKSyncEngine.SendChangesOptions.Scope.recordIDs(_:)](./scope-swift.enum/recordids%28_%29.md)
   Send changes for a specific set of records.
-- [CKSyncEngine.SendChangesOptions.Scope.zoneIDs(_:)](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/zoneids(_:).md)
+- [CKSyncEngine.SendChangesOptions.Scope.zoneIDs(_:)](./scope-swift.enum/zoneids%28_%29.md)
   Send changes in a specific set of zones.
 ### Instance Methods
-- [func contains(CKRecord.ID) -> Bool](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/contains(_:)-59hve.md)
+- [func contains(CKRecord.ID) -> Bool](./scope-swift.enum/contains%28_%29-59hve.md)
   Returns true if the specified record ID is included in this scope.
-- [func contains(CKSyncEngine.PendingRecordZoneChange) -> Bool](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/contains(_:)-8qiyf.md)
+- [func contains(CKSyncEngine.PendingRecordZoneChange) -> Bool](./scope-swift.enum/contains%28_%29-8qiyf.md)
   Returns true if the specified pending record zone change is included in this scope.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

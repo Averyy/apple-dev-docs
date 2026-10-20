@@ -1,7 +1,8 @@
 # trackNumber
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The song’s number in the album’s track list.
 

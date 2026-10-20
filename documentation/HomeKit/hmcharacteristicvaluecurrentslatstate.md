@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentSlatState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the current state of slats on an accessory like a window or a fan.
 
@@ -19,27 +20,31 @@ Possible values for the current state of slats on an accessory like a window or 
 enum HMCharacteristicValueCurrentSlatState
 ```
 
+```c
+enum HMCharacteristicValueCurrentSlatState : NSInteger;
+```
+
 ## Topics
 
 ### Slat States
-- [HMCharacteristicValueCurrentSlatState.stationary](hmcharacteristicvaluecurrentslatstate/stationary.md)
+- [HMCharacteristicValueCurrentSlatState.stationary](./hmcharacteristicvaluecurrentslatstate/stationary.md)
   The slats are stationary.
-- [HMCharacteristicValueCurrentSlatState.jammed](hmcharacteristicvaluecurrentslatstate/jammed.md)
+- [HMCharacteristicValueCurrentSlatState.jammed](./hmcharacteristicvaluecurrentslatstate/jammed.md)
   The slats are jammed.
-- [HMCharacteristicValueCurrentSlatState.oscillating](hmcharacteristicvaluecurrentslatstate/oscillating.md)
+- [HMCharacteristicValueCurrentSlatState.oscillating](./hmcharacteristicvaluecurrentslatstate/oscillating.md)
   The slats are oscillating.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrentslatstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrentslatstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AppIntentError.Unrecoverable
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Unknown or unrecoverable errors that might have occurred due to either a system or user error.
 
@@ -27,19 +28,19 @@ Use these system-defined errors to inform people that there’s no immediate way
 ## Topics
 
 ### Type Properties
-- [static let entityNotFound: AppIntentError](appintenterror/unrecoverable/entitynotfound.md)
+- [static let entityNotFound: AppIntentError](./unrecoverable/entitynotfound.md)
   No app entity matched the search criteria.
-- [static let featureCurrentlyRestricted: AppIntentError](appintenterror/unrecoverable/featurecurrentlyrestricted.md)
+- [static let featureCurrentlyRestricted: AppIntentError](./unrecoverable/featurecurrentlyrestricted.md)
   This feature is currently restricted due to Screen Time restrictions, MDM profiles, or similar.
-- [static let networkFailure: AppIntentError](appintenterror/unrecoverable/networkfailure.md)
+- [static let networkFailure: AppIntentError](./unrecoverable/networkfailure.md)
   The person needs to be connected to the internet.
-- [static let notAllowed: AppIntentError](appintenterror/unrecoverable/notallowed.md)
+- [static let notAllowed: AppIntentError](./unrecoverable/notallowed.md)
   This action isn’t allowed.
-- [static let partialFailure: AppIntentError](appintenterror/unrecoverable/partialfailure.md)
+- [static let partialFailure: AppIntentError](./unrecoverable/partialfailure.md)
   Not every action was completed.
-- [static let unknown: AppIntentError](appintenterror/unrecoverable/unknown.md)
+- [static let unknown: AppIntentError](./unrecoverable/unknown.md)
   Something went wrong.
-- [static let unsupportedOnDevice: AppIntentError](appintenterror/unrecoverable/unsupportedondevice.md)
+- [static let unsupportedOnDevice: AppIntentError](./unrecoverable/unsupportedondevice.md)
   This feature isn’t supported on this device.
 
 

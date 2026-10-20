@@ -1,7 +1,8 @@
 # !=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are not equal.
 
@@ -33,11 +34,12 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ## See Also
 
-- [static func == (Range<Bound>, Range<Bound>) -> Bool](range/==(_:_:).md)
+### Comparing Ranges
+- [static func == (Range<Bound>, Range<Bound>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two ranges are equal.
-- [func overlaps(Range<Bound>) -> Bool](range/overlaps(_:)-7osha.md)
+- [func overlaps(Range<Bound>) -> Bool](./overlaps%28_%29-7osha.md)
   Returns a Boolean value indicating whether this range and the given range contain an element in common.
-- [func overlaps(ClosedRange<Bound>) -> Bool](range/overlaps(_:)-9fkb2.md)
+- [func overlaps(ClosedRange<Bound>) -> Bool](./overlaps%28_%29-9fkb2.md)
   Returns a Boolean value indicating whether this range and the given closed range contain an element in common.
 
 

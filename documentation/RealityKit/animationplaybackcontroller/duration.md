@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of time the animation spans, in seconds.
 
@@ -11,7 +12,7 @@ The length of time the animation spans, in seconds.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ The length of time the animation spans, in seconds.
 
 ## See Also
 
-- [var speed: Float](animationplaybackcontroller/speed.md)
+### Timing animation playback
+- [var speed: Float](./speed.md)
   The animation’s rate of playback.
-- [var clock: CMClockOrTimebase](animationplaybackcontroller/clock.md)
+- [var clock: CMClockOrTimebase](./clock.md)
   A reference clock to synchronize the animation with other events.
-- [var time: TimeInterval](animationplaybackcontroller/time.md)
+- [var time: TimeInterval](./time.md)
   The animation’s location within the timeline.
 
 

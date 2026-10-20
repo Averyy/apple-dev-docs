@@ -1,7 +1,8 @@
 # levelsOfDetail
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of levels of detail maintained by this layer.
 
@@ -19,13 +20,18 @@ The number of levels of detail maintained by this layer.
 var levelsOfDetail: Int { get set }
 ```
 
+```objc
+@property size_t levelsOfDetail;
+```
+
 #### Discussion
 
 Defaults to 1. Each level of detail is half the resolution of the previous level. If too many levels are specified for the current size of the layer, then the number of levels is clamped to the maximum value (the bottom most level of detail must contain at least a single pixel in each dimension.)
 
 ## See Also
 
-- [var levelsOfDetailBias: Int](catiledlayer/levelsofdetailbias.md)
+### Levels of detail
+- [var levelsOfDetailBias: Int](./levelsofdetailbias.md)
   The number of magnified levels of detail for this layer.
 
 

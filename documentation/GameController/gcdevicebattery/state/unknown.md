@@ -1,7 +1,8 @@
 # GCDeviceBattery.State.unknown
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state of the device’s battery is unknown.
 
@@ -19,13 +20,18 @@ The state of the device’s battery is unknown.
 case unknown
 ```
 
+```c
+GCDeviceBatteryStateUnknown
+```
+
 ## See Also
 
-- [GCDeviceBattery.State.discharging](gcdevicebattery/state/discharging.md)
+### States
+- [GCDeviceBattery.State.discharging](./discharging.md)
   The device’s battery is discharging.
-- [GCDeviceBattery.State.charging](gcdevicebattery/state/charging.md)
+- [GCDeviceBattery.State.charging](./charging.md)
   The device’s battery has power and is charging, but isn’t fully charged.
-- [GCDeviceBattery.State.full](gcdevicebattery/state/full.md)
+- [GCDeviceBattery.State.full](./full.md)
   The device’s battery has power and is fully charged.
 
 

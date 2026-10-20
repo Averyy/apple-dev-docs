@@ -1,7 +1,8 @@
 # kMDItemFSIsStationery
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Boolean indicating if this file is stationery. Type is a CFBoolean.
 
@@ -12,6 +13,10 @@ Boolean indicating if this file is stationery. Type is a CFBoolean.
 
 ```swift
 let kMDItemFSIsStationery: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSIsStationery;
 ```
 
 

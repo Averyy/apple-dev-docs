@@ -1,7 +1,8 @@
 # write(to:options:originalContentsURL:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Recursively writes the entire contents of a file wrapper to a given file-system URL.
 
@@ -20,23 +21,33 @@ Recursively writes the entire contents of a file wrapper to a given file-system 
 func write(to url: URL, options: FileWrapper.WritingOptions = [], originalContentsURL: URL?) throws
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) url options:(NSFileWrapperWritingOptions) options originalContentsURL:(NSURL *) originalContentsURL error:(NSError **) outError;
+```
+
 #### Discussion
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
 - `url`: URL of the file-system node to which the file wrapper’s contents are written.
-- `options`: Option flags for writing to the node located at `url`. See [`FileWrapper.WritingOptions`](filewrapper/writingoptions.md) for possible values.
-- `originalContentsURL`: The location of a previous revision of the contents being written. The default implementation of this method attempts to avoid unnecessary I/O by writing hard links to regular files instead of actually writing out their contents when the contents have not changed.  The child file wrappers must return accurate values when its [`filename`](filewrapper/filename.md) property is accessed for this to work. Use the `NSFileWrapperWritingWithNameUpdating` writing option to increase the likelihood of that. Specify `nil` for this parameter if there is no earlier version of the contents or if you want to ensure that all the contents are written to files.
+- `options`: Option flags for writing to the node located at `url`. See [`FileWrapper.WritingOptions`](./writingoptions.md) for possible values.
+- `originalContentsURL`: The location of a previous revision of the contents being written. The default implementation of this method attempts to avoid unnecessary I/O by writing hard links to regular files instead of actually writing out their contents when the contents have not changed.  The child file wrappers must return accurate values when its [`filename`](./filename.md) property is accessed for this to work. Use the `NSFileWrapperWritingWithNameUpdating` writing option to increase the likelihood of that.
+
+  Specify `nil` for this parameter if there is no earlier version of the contents or if you want to ensure that all the contents are written to files.
 
 ## See Also
 
-- [func read(from: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/read(from:options:).md)
+### Related Documentation
+- [func read(from: URL, options: FileWrapper.ReadingOptions) throws](./read%28from,options%29.md)
   Recursively rereads the entire contents of a file wrapper from the specified location on disk.
-- [var filename: String?](filewrapper/filename.md)
+- [var filename: String?](./filename.md)
   The filename of the file wrapper object
-- [func write(toFile: String, atomically: Bool, updateFilenames: Bool) -> Bool](filewrapper/write(tofile:atomically:updatefilenames:).md)
+### Writing Files
+- [func write(toFile: String, atomically: Bool, updateFilenames: Bool) -> Bool](./write%28tofile,atomically,updatefilenames%29.md)
   Writes a file wrapper’s contents to a given file-system node.
 
 

@@ -1,7 +1,8 @@
 # activityMoveMode
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains the movement mode value.
 
@@ -17,6 +18,10 @@ A property that contains the movement mode value.
 
 ```swift
 var activityMoveMode: HKActivityMoveMode { get }
+```
+
+```objc
+@property (readonly) HKActivityMoveMode activityMoveMode;
 ```
 
 

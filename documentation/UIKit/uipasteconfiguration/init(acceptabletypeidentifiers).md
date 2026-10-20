@@ -1,7 +1,8 @@
 # init(acceptableTypeIdentifiers:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new paste configuration with a specified array of acceptable UTIs.
 
@@ -15,6 +16,10 @@ Initializes a new paste configuration with a specified array of acceptable UTIs.
 
 ```swift
 convenience init(acceptableTypeIdentifiers: [String])
+```
+
+```objc
+- (instancetype) initWithAcceptableTypeIdentifiers:(NSArray<NSString *> *) acceptableTypeIdentifiers;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ Specify the acceptable UTIs in descending order of fidelity. The UTI that provid
 
 ## See Also
 
-- [init()](uipasteconfiguration/init.md)
+### Initializing a paste configuration
+- [init()](./init%28%29.md)
   Initializes a new paste configuration.
-- [convenience init(forAccepting: any NSItemProviderReading.Type)](uipasteconfiguration/init(foraccepting:)-6is3h.md)
+- [convenience init(forAccepting: any NSItemProviderReading.Type)](./init%28foraccepting%29-6is3h.md)
   Initializes a new paste configuration with the UTIs declared as supported by a specified class.
-- [convenience init<T>(forAccepting: T.Type)](uipasteconfiguration/init(foraccepting:)-84r2r.md)
+- [convenience init<T>(forAccepting: T.Type)](./init%28foraccepting%29-84r2r.md)
 
 
 ---

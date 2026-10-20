@@ -1,7 +1,8 @@
 # ManipulationComponent.Dynamics.RotationBehavior
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Definition of different standardized rotation behaviors for an object.
 
@@ -17,18 +18,18 @@ struct RotationBehavior
 ## Topics
 
 ### Type Properties
-- [static var none: ManipulationComponent.Dynamics.RotationBehavior](manipulationcomponent/dynamics-swift.struct/rotationbehavior/none.md)
+- [static var none: ManipulationComponent.Dynamics.RotationBehavior](./rotationbehavior/none.md)
   No active rotation behavior.
-- [static var unconstrained: ManipulationComponent.Dynamics.RotationBehavior](manipulationcomponent/dynamics-swift.struct/rotationbehavior/unconstrained.md)
+- [static var unconstrained: ManipulationComponent.Dynamics.RotationBehavior](./rotationbehavior/unconstrained.md)
   Rotation is unconstrained in all axes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

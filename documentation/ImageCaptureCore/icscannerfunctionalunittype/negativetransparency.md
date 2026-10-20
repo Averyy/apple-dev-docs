@@ -1,7 +1,8 @@
 # ICScannerFunctionalUnitType.negativeTransparency
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transparency functional unit for scanning negatives.
 
@@ -14,13 +15,18 @@ A transparency functional unit for scanning negatives.
 case negativeTransparency
 ```
 
+```c
+ICScannerFunctionalUnitTypeNegativeTransparency
+```
+
 ## See Also
 
-- [ICScannerFunctionalUnitType.documentFeeder](icscannerfunctionalunittype/documentfeeder.md)
+### Constants
+- [ICScannerFunctionalUnitType.documentFeeder](./documentfeeder.md)
   A document feeder functional unit.
-- [ICScannerFunctionalUnitType.flatbed](icscannerfunctionalunittype/flatbed.md)
+- [ICScannerFunctionalUnitType.flatbed](./flatbed.md)
   A flatbed functional unit.
-- [ICScannerFunctionalUnitType.positiveTransparency](icscannerfunctionalunittype/positivetransparency.md)
+- [ICScannerFunctionalUnitType.positiveTransparency](./positivetransparency.md)
   A transparency functional unit for scanning positives.
 
 

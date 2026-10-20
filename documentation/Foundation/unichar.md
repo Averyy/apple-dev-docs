@@ -1,7 +1,8 @@
 # unichar
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type for UTF-16 code units.
 
@@ -18,6 +19,10 @@ Type for UTF-16 code units.
 
 ```swift
 typealias unichar = UInt16
+```
+
+```c
+typedef unsigned short unichar;
 ```
 
 

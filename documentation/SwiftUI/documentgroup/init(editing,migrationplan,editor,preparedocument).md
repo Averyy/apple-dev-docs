@@ -1,7 +1,8 @@
 # init(editing:migrationPlan:editor:prepareDocument:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a document group for creating and editing documents described by the last `Schema` in the migration plan.
 
@@ -18,6 +19,8 @@ nonisolated
 init(editing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, editor: @escaping () -> Content, prepareDocument: @escaping (ModelContext) -> Void = { _ in })
 ```
 
+Available when `Document` is `ModelDocument` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `editing`: The content type of the document. It should conform to `UTType.package`.
@@ -26,7 +29,8 @@ init(editing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, e
 
 ## See Also
 
-- [init(editing:contentType:editor:prepareDocument:)](documentgroup/init(editing:contenttype:editor:preparedocument:).md)
+### Editing a document backed by a persistent store
+- [init(editing:contentType:editor:prepareDocument:)](./init%28editing,contenttype,editor,preparedocument%29.md)
   Instantiates a document group for creating and editing documents that store a specific model type.
 
 

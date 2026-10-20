@@ -1,7 +1,8 @@
 # bidirectional
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that defines a bidirectional LSTM layer.
 
@@ -17,6 +18,10 @@ A parameter that defines a bidirectional LSTM layer.
 
 ```swift
 var bidirectional: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL bidirectional;
 ```
 
 #### Discussion

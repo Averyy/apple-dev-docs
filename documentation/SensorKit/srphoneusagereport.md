@@ -1,7 +1,8 @@
 # SRPhoneUsageReport
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the user’s phone activity over a period of time.
 
@@ -16,55 +17,60 @@ An object that describes the user’s phone activity over a period of time.
 class SRPhoneUsageReport
 ```
 
+```objc
+@interface SRPhoneUsageReport : NSObject
+```
+
 #### Overview
 
 This object describes the frequency that a device makes or receives phone calls, and the relative amount of time the user is on a call.
 
-The [`phoneUsageReport`](srsensor/phoneusagereport.md) sensor provides this class as its [`sample`](srfetchresult/sample.md) type.
+The [`phoneUsageReport`](./srsensor/phoneusagereport.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Analyzing Phone Use
-- [var duration: TimeInterval](srphoneusagereport/duration.md)
+- [var duration: TimeInterval](./srphoneusagereport/duration.md)
   The duration that the report spans.
-- [var totalIncomingCalls: Int](srphoneusagereport/totalincomingcalls.md)
+- [var totalIncomingCalls: Int](./srphoneusagereport/totalincomingcalls.md)
   The number of calls the user receives.
-- [var totalOutgoingCalls: Int](srphoneusagereport/totaloutgoingcalls.md)
+- [var totalOutgoingCalls: Int](./srphoneusagereport/totaloutgoingcalls.md)
   The number of calls the user makes.
-- [var totalPhoneCallDuration: TimeInterval](srphoneusagereport/totalphonecallduration.md)
+- [var totalPhoneCallDuration: TimeInterval](./srphoneusagereport/totalphonecallduration.md)
   The total duration of all calls.
-- [var totalUniqueContacts: Int](srphoneusagereport/totaluniquecontacts.md)
+- [var totalUniqueContacts: Int](./srphoneusagereport/totaluniquecontacts.md)
   The user’s number of contacts.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SRAmbientLightSample](srambientlightsample.md)
+### Interpreting data
+- [class SRAmbientLightSample](./srambientlightsample.md)
   The amount of ambient light in the user’s environment.
-- [class SRDeviceUsageReport](srdeviceusagereport.md)
+- [class SRDeviceUsageReport](./srdeviceusagereport.md)
   The frequency and relative duration that the user uses their device, particular Apple apps, or websites.
-- [class SRKeyboardMetrics](srkeyboardmetrics.md)
+- [class SRKeyboardMetrics](./srkeyboardmetrics.md)
   The configuration of a device’s keyboard and its usage patterns.
-- [class SRMediaEvent](srmediaevent.md)
+- [class SRMediaEvent](./srmediaevent.md)
   A user interaction with a media object, such as an image or a video.
-- [class SRMessagesUsageReport](srmessagesusagereport.md)
+- [class SRMessagesUsageReport](./srmessagesusagereport.md)
   An object that describes the user’s Messages app activity over a period of time.
-- [class SRVisit](srvisit.md)
+- [class SRVisit](./srvisit.md)
   The user’s progress in their daily travel routine.
-- [class SRWristDetection](srwristdetection.md)
+- [class SRWristDetection](./srwristdetection.md)
   The configuration of a watch on the wearer’s wrist.
 
 

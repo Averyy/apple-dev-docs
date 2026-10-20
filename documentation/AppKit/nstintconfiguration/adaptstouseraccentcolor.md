@@ -1,7 +1,8 @@
 # adaptsToUserAccentColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the tint configuration alters its effect based on the user’s preferred accent color choice.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the tint configuration alters its effect 
 
 ```swift
 var adaptsToUserAccentColor: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL adaptsToUserAccentColor;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # MTLBlendFactor.zero
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blend factor of zero.
 
@@ -10,13 +11,17 @@ Blend factor of zero.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 case zero
+```
+
+```c
+MTLBlendFactorZero
 ```
 
 #### Discussion
@@ -27,35 +32,36 @@ case zero
 
 ## See Also
 
-- [MTLBlendFactor.one](mtlblendfactor/one.md)
+### Blend factors
+- [MTLBlendFactor.one](./one.md)
   Blend factor of one.
-- [MTLBlendFactor.sourceColor](mtlblendfactor/sourcecolor.md)
+- [MTLBlendFactor.sourceColor](./sourcecolor.md)
   Blend factor of source values.
-- [MTLBlendFactor.oneMinusSourceColor](mtlblendfactor/oneminussourcecolor.md)
+- [MTLBlendFactor.oneMinusSourceColor](./oneminussourcecolor.md)
   Blend factor of one minus source values.
-- [MTLBlendFactor.sourceAlpha](mtlblendfactor/sourcealpha.md)
+- [MTLBlendFactor.sourceAlpha](./sourcealpha.md)
   Blend factor of source alpha.
-- [MTLBlendFactor.oneMinusSourceAlpha](mtlblendfactor/oneminussourcealpha.md)
+- [MTLBlendFactor.oneMinusSourceAlpha](./oneminussourcealpha.md)
   Blend factor of one minus source alpha.
-- [MTLBlendFactor.destinationColor](mtlblendfactor/destinationcolor.md)
+- [MTLBlendFactor.destinationColor](./destinationcolor.md)
   Blend factor of destination values.
-- [MTLBlendFactor.oneMinusDestinationColor](mtlblendfactor/oneminusdestinationcolor.md)
+- [MTLBlendFactor.oneMinusDestinationColor](./oneminusdestinationcolor.md)
   Blend factor of one minus destination values.
-- [MTLBlendFactor.destinationAlpha](mtlblendfactor/destinationalpha.md)
+- [MTLBlendFactor.destinationAlpha](./destinationalpha.md)
   Blend factor of destination alpha.
-- [MTLBlendFactor.oneMinusDestinationAlpha](mtlblendfactor/oneminusdestinationalpha.md)
+- [MTLBlendFactor.oneMinusDestinationAlpha](./oneminusdestinationalpha.md)
   Blend factor of one minus destination alpha.
-- [MTLBlendFactor.sourceAlphaSaturated](mtlblendfactor/sourcealphasaturated.md)
+- [MTLBlendFactor.sourceAlphaSaturated](./sourcealphasaturated.md)
   Blend factor of the minimum of either source alpha or one minus destination alpha.
-- [MTLBlendFactor.blendColor](mtlblendfactor/blendcolor.md)
+- [MTLBlendFactor.blendColor](./blendcolor.md)
   A blend factor that applies the blend color’s red, green, and blue components.
-- [MTLBlendFactor.oneMinusBlendColor](mtlblendfactor/oneminusblendcolor.md)
+- [MTLBlendFactor.oneMinusBlendColor](./oneminusblendcolor.md)
   A blend factor that applies one minus the blend color’s red, green, and blue components.
-- [MTLBlendFactor.blendAlpha](mtlblendfactor/blendalpha.md)
+- [MTLBlendFactor.blendAlpha](./blendalpha.md)
   Blend factor of alpha value.
-- [MTLBlendFactor.oneMinusBlendAlpha](mtlblendfactor/oneminusblendalpha.md)
+- [MTLBlendFactor.oneMinusBlendAlpha](./oneminusblendalpha.md)
   Blend factor of one minus alpha value.
-- [MTLBlendFactor.source1Color](mtlblendfactor/source1color.md)
+- [MTLBlendFactor.source1Color](./source1color.md)
   Blend factor of source values. This option supports dual-source blending and reads from the second color output of the fragment function.
 
 

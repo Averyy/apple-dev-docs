@@ -1,7 +1,8 @@
 # CMBufferCompareHandler
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 12.2+
@@ -18,14 +19,19 @@
 typealias CMBufferCompareHandler = (CMBuffer, CMBuffer) -> CFComparisonResult
 ```
 
+```c
+typedef enum CFComparisonResult (^)(const void *, const void *) CMBufferCompareHandler;
+```
+
 ## See Also
 
-- [typealias CMBufferGetBooleanHandler](cmbuffergetbooleanhandler.md)
-- [typealias CMBufferGetSizeHandler](cmbuffergetsizehandler.md)
-- [typealias CMBufferGetTimeHandler](cmbuffergettimehandler.md)
-- [typealias CMTaggedBufferGroupFormatDescription](cmtaggedbuffergroupformatdescription.md)
+### Type Aliases
+- [typealias CMBufferGetBooleanHandler](./cmbuffergetbooleanhandler.md)
+- [typealias CMBufferGetSizeHandler](./cmbuffergetsizehandler.md)
+- [typealias CMBufferGetTimeHandler](./cmbuffergettimehandler.md)
+- [typealias CMTaggedBufferGroupFormatDescription](./cmtaggedbuffergroupformatdescription.md)
   A type for tagged buffer format descriptions.
-- [typealias CMTaggedBufferGroupFormatType](cmtaggedbuffergroupformattype.md)
+- [typealias CMTaggedBufferGroupFormatType](./cmtaggedbuffergroupformattype.md)
   A type for tagged buffer format information.
 
 

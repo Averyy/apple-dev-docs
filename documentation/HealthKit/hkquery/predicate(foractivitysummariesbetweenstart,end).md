@@ -1,7 +1,8 @@
 # predicate(forActivitySummariesBetweenStart:end:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate for matching all the activity summaries that fall between the days identified by the start and end date components.
 
@@ -17,6 +18,10 @@ Returns a predicate for matching all the activity summaries that fall between th
 
 ```swift
 class func predicate(forActivitySummariesBetweenStart startDateComponents: DateComponents, end endDateComponents: DateComponents) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForActivitySummariesBetweenStartDateComponents:(NSDateComponents *) startDateComponents endDateComponents:(NSDateComponents *) endDateComponents;
 ```
 
 #### Return Value
@@ -50,14 +55,20 @@ NSPredicate *explicitforDay =
 
 ## Parameters
 
-- `startDateComponents`: Date components that uniquely identify the start day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/foundation/nsdatecomponents/calendar) property.
-- `endDateComponents`: Date components that uniquely identify the end day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/foundation/nsdatecomponents/calendar) property.
+- `startDateComponents`: Date components that uniquely identify the start day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones).
+
+  The date components must have a valid [`calendar`](../../Foundation/nsdatecomponents/calendar.md) property.
+- `endDateComponents`: Date components that uniquely identify the end day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones).
+
+  The date components must have a valid [`calendar`](../../Foundation/nsdatecomponents/calendar.md) property.
 
 ## See Also
 
-- [let HKPredicateKeyPathDateComponents: String](hkpredicatekeypathdatecomponents.md)
+### Related Documentation
+- [let HKPredicateKeyPathDateComponents: String](../hkpredicatekeypathdatecomponents.md)
   The key path for accessing an activity summary’s date components.
-- [class func predicateForActivitySummary(with: DateComponents) -> NSPredicate](hkquery/predicateforactivitysummary(with:).md)
+### Creating activity summary predicates
+- [class func predicateForActivitySummary(with: DateComponents) -> NSPredicate](./predicateforactivitysummary%28with%29.md)
   Returns a predicate that matches the activity summary for the specified day.
 
 

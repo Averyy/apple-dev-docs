@@ -1,13 +1,14 @@
 # UIWebView.PaginationBreakingMode.column
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content respects CSS properties related to column-breaking.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ Content respects CSS properties related to column-breaking.
 case column
 ```
 
+```c
+UIWebPaginationBreakingModeColumn
+```
+
 ## See Also
 
-- [UIWebView.PaginationBreakingMode.page](uiwebview/paginationbreakingmode-swift.enum/page.md)
+### Constants
+- [UIWebView.PaginationBreakingMode.page](./page.md)
   Content respects CSS properties related to page-breaking.
 
 

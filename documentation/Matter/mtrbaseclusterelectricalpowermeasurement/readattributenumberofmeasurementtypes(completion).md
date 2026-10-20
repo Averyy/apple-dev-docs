@@ -1,7 +1,8 @@
 # readAttributeNumberOfMeasurementTypes(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfMeasurementTypes(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfMeasurementTypes() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfMeasurementTypesWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

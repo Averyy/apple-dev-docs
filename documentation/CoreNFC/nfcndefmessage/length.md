@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length, in bytes, of the NDEF message when stored on an NFC tag.
 
@@ -14,6 +15,10 @@ The length, in bytes, of the NDEF message when stored on an NFC tag.
 
 ```swift
 var length: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger length;
 ```
 
 #### Discussion

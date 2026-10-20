@@ -1,16 +1,17 @@
 # SCNInteractionMode
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,28 +19,32 @@
 enum SCNInteractionMode
 ```
 
+```c
+enum SCNInteractionMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SCNInteractionMode.fly](scninteractionmode/fly.md)
-- [SCNInteractionMode.orbitAngleMapping](scninteractionmode/orbitanglemapping.md)
-- [SCNInteractionMode.orbitArcball](scninteractionmode/orbitarcball.md)
-- [SCNInteractionMode.orbitCenteredArcball](scninteractionmode/orbitcenteredarcball.md)
-- [SCNInteractionMode.orbitTurntable](scninteractionmode/orbitturntable.md)
-- [SCNInteractionMode.pan](scninteractionmode/pan.md)
-- [SCNInteractionMode.truck](scninteractionmode/truck.md)
+- [SCNInteractionMode.fly](./scninteractionmode/fly.md)
+- [SCNInteractionMode.orbitAngleMapping](./scninteractionmode/orbitanglemapping.md)
+- [SCNInteractionMode.orbitArcball](./scninteractionmode/orbitarcball.md)
+- [SCNInteractionMode.orbitCenteredArcball](./scninteractionmode/orbitcenteredarcball.md)
+- [SCNInteractionMode.orbitTurntable](./scninteractionmode/orbitturntable.md)
+- [SCNInteractionMode.pan](./scninteractionmode/pan.md)
+- [SCNInteractionMode.truck](./scninteractionmode/truck.md)
 ### Initializers
-- [init?(rawValue: Int)](scninteractionmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scninteractionmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

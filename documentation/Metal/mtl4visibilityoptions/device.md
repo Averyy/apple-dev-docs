@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flushes caches to the GPU (device) memory coherence point.
 
@@ -17,6 +18,10 @@ Flushes caches to the GPU (device) memory coherence point.
 
 ```swift
 static var device: MTL4VisibilityOptions { get }
+```
+
+```c
+MTL4VisibilityOptionDevice
 ```
 
 

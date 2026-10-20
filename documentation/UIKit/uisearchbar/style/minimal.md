@@ -1,7 +1,8 @@
 # UISearchBar.Style.minimal
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The search bar has no background, and the search field is translucent.
 
@@ -9,7 +10,7 @@ The search bar has no background, and the search field is translucent.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The search bar has no background, and the search field is translucent.
 case minimal
 ```
 
+```c
+UISearchBarStyleMinimal
+```
+
 ## See Also
 
-- [UISearchBar.Style.default](uisearchbar/style/default.md)
+### Constants
+- [UISearchBar.Style.default](./default.md)
   The search bar has the default style.
-- [UISearchBar.Style.prominent](uisearchbar/style/prominent.md)
+- [UISearchBar.Style.prominent](./prominent.md)
   The search bar has a translucent background, and the search field is opaque.
 
 

@@ -1,7 +1,8 @@
 # init(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the provided descriptor.
 
@@ -16,6 +17,10 @@ Creates a new instance with the provided descriptor.
 init(descriptor: TCTouchControllerDescriptor)
 ```
 
+```objc
+- (instancetype) initWithDescriptor:(TCTouchControllerDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCTouchController` instance.
@@ -26,7 +31,8 @@ A new `TCTouchController` instance.
 
 ## See Also
 
-- [class TCTouchControllerDescriptor](tctouchcontrollerdescriptor.md)
+### Creating a touch controller
+- [class TCTouchControllerDescriptor](../tctouchcontrollerdescriptor.md)
   A descriptor for configuring a touch controller.
 
 

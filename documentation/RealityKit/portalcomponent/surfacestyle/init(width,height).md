@@ -1,7 +1,8 @@
 # init(width:height:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a surface style with the given width and height in meters.
 

@@ -1,7 +1,8 @@
 # Publishers.CompactMap.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,7 +27,8 @@ This publisher produces its upstream publisher’s failure type.
 
 ## See Also
 
-- [Publishers.Output](publishers/output.md)
+### Declaring supporting types
+- [Publishers.Output](../output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 
 

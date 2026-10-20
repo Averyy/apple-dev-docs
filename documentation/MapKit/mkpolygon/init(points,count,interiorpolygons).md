@@ -1,7 +1,8 @@
 # init(points:count:interiorPolygons:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a polygon object from the specified set of map points and interior polygons.
 
@@ -20,6 +21,10 @@ Creates and returns a polygon object from the specified set of map points and in
 convenience init(points: UnsafePointer<MKMapPoint>, count: Int, interiorPolygons: [MKPolygon]?)
 ```
 
+```objc
++ (instancetype) polygonWithPoints:(const MKMapPoint *) points count:(NSUInteger) count interiorPolygons:(NSArray<MKPolygon *> *) interiorPolygons;
+```
+
 #### Return Value
 
 A new polygon object.
@@ -32,11 +37,12 @@ A new polygon object.
 
 ## See Also
 
-- [convenience init(points: UnsafePointer<MKMapPoint>, count: Int)](mkpolygon/init(points:count:).md)
+### Creating a polygon overlay
+- [convenience init(points: UnsafePointer<MKMapPoint>, count: Int)](./init%28points,count%29.md)
   Creates and returns a polygon object from the specified set of map points.
-- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](mkpolygon/init(coordinates:count:).md)
+- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](./init%28coordinates,count%29.md)
   Creates and returns a polygon object from the specified set of coordinates.
-- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int, interiorPolygons: [MKPolygon]?)](mkpolygon/init(coordinates:count:interiorpolygons:).md)
+- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int, interiorPolygons: [MKPolygon]?)](./init%28coordinates,count,interiorpolygons%29.md)
   Creates and returns a polygon object from the specified set of coordinates and interior polygons.
 
 

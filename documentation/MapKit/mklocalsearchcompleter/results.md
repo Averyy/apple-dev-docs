@@ -1,7 +1,8 @@
 # results
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recently received search completions.
 
@@ -20,9 +21,13 @@ The most recently received search completions.
 var results: [MKLocalSearchCompletion] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<MKLocalSearchCompletion *> * results;
+```
+
 #### Discussion
 
-This property is `nil` initially. After a successful query, the search completer sets this property to the array of [`MKLocalSearchCompletion`](mklocalsearchcompletion.md) objects that the query returns. Each new successful query replaces the previous value of this property.
+This property is `nil` initially. After a successful query, the search completer sets this property to the array of [`MKLocalSearchCompletion`](../mklocalsearchcompletion.md) objects that the query returns. Each new successful query replaces the previous value of this property.
 
 
 ---

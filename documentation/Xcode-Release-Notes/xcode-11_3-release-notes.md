@@ -1,6 +1,7 @@
 # Xcode 11.3 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes
 
@@ -16,9 +17,11 @@ Xcode 11.3 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchO
 
 ###### Known Issues
 
-- When you create an Objective-C category file by choosing File > New > File…, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800) **Workaround**: Remove the import of AppKit from the source file.
+- When you create an Objective-C category file by choosing File > New > File…, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800)
 
-##### Create Ml
+  **Workaround**: Remove the import of AppKit from the source file.
+
+##### Create ML
 
 ###### New Features
 
@@ -28,7 +31,9 @@ Xcode 11.3 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchO
 
 ###### Known Issues
 
-- The color picker panel does not respond to choosing a color while a text field in the inspector has insertion focus. (56067005) (FB7358220) **Workaround**: Click the Interface Builder canvas to remove focus from the text field, then choose a color in the panel.
+- The color picker panel does not respond to choosing a color while a text field in the inspector has insertion focus. (56067005) (FB7358220)
+
+  **Workaround**: Click the Interface Builder canvas to remove focus from the text field, then choose a color in the panel.
 
 ###### Resolved Issues
 
@@ -45,8 +50,12 @@ Xcode 11.3 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchO
 
 ###### Known Issues
 
-- Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections, or sends simulator applications a `SIGKILL` signal. (55853555) **Workaround**: Uninstall the third party software.
-- Under certain network conditions, GateKeeper may block simulators from booting, and show error code 60 `"launchd` failed to respond.” (55878667) **Workaround**: Try to boot the simulator again. Disabling WiFi or disconnecting from any active VPNs may resolve the problem.
+- Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections, or sends simulator applications a `SIGKILL` signal. (55853555)
+
+  **Workaround**: Uninstall the third party software.
+- Under certain network conditions, GateKeeper may block simulators from booting, and show error code 60 `"launchd` failed to respond.” (55878667)
+
+  **Workaround**: Try to boot the simulator again. Disabling WiFi or disconnecting from any active VPNs may resolve the problem.
 - When a new Mac Pro has multiple GPUs, Simulator assigns each booted simulator to one of the available GPUs. (56488185)
 
 ##### Swift Packages
@@ -57,25 +66,26 @@ Xcode 11.3 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchO
 
 ## See Also
 
-- [Xcode 11.7 Release Notes](xcode-11_7-release-notes.md)
+### Xcode 11
+- [Xcode 11.7 Release Notes](./xcode-11_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.6 Release Notes](xcode-11_6-release-notes.md)
+- [Xcode 11.6 Release Notes](./xcode-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.5 Release Notes](xcode-11_5-release-notes.md)
+- [Xcode 11.5 Release Notes](./xcode-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4.1 Release Notes](xcode-11_4_1-release-notes.md)
+- [Xcode 11.4.1 Release Notes](./xcode-11_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4 Release Notes](xcode-11_4-release-notes.md)
+- [Xcode 11.4 Release Notes](./xcode-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.3.1 Release Notes](xcode-11_3_1-release-notes.md)
+- [Xcode 11.3.1 Release Notes](./xcode-11_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.2.1 Release Notes](xcode-11_2_1-release-notes.md)
+- [Xcode 11.2.1 Release Notes](./xcode-11_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.2 Release Notes](xcode-11_2-release-notes.md)
+- [Xcode 11.2 Release Notes](./xcode-11_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.1 Release Notes](xcode-11_1-release-notes.md)
+- [Xcode 11.1 Release Notes](./xcode-11_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11 Release Notes](xcode-11-release-notes.md)
+- [Xcode 11 Release Notes](./xcode-11-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

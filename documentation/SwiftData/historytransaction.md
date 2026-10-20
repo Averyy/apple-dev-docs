@@ -1,7 +1,8 @@
 # HistoryTransaction
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -22,42 +23,43 @@ protocol HistoryTransaction : Hashable, Identifiable, Sendable
 ## Topics
 
 ### Associated Types
-- [associatedtype TokenType : Comparable, Hashable, Identifiable, Sendable](historytransaction/tokentype.md)
-- [associatedtype TransactionIdentifier : Comparable, Hashable, Sendable](historytransaction/transactionidentifier-swift.associatedtype.md)
+- [associatedtype TokenType : Comparable, Hashable, Identifiable, Sendable](./historytransaction/tokentype.md)
+- [associatedtype TransactionIdentifier : Comparable, Hashable, Sendable](./historytransaction/transactionidentifier-swift.associatedtype.md)
 ### Instance Properties
-- [var author: String?](historytransaction/author.md)
-- [var changes: [HistoryChange]](historytransaction/changes.md)
-- [var storeIdentifier: String](historytransaction/storeidentifier.md)
-- [var timestamp: Date](historytransaction/timestamp.md)
-- [var token: Self.TokenType](historytransaction/token.md)
-- [var transactionIdentifier: Self.TransactionIdentifier](historytransaction/transactionidentifier-swift.property.md)
+- [var author: String?](./historytransaction/author.md)
+- [var changes: [HistoryChange]](./historytransaction/changes.md)
+- [var storeIdentifier: String](./historytransaction/storeidentifier.md)
+- [var timestamp: Date](./historytransaction/timestamp.md)
+- [var token: Self.TokenType](./historytransaction/token.md)
+- [var transactionIdentifier: Self.TransactionIdentifier](./historytransaction/transactionidentifier-swift.property.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DefaultHistoryTransaction](defaulthistorytransaction.md)
+- [DefaultHistoryTransaction](./defaulthistorytransaction.md)
 
 ## See Also
 
-- [enum HistoryChange](historychange.md)
+### History life cycle
+- [enum HistoryChange](./historychange.md)
   Values that describe data history transactions.
-- [protocol HistoryDelete](historydelete.md)
+- [protocol HistoryDelete](./historydelete.md)
   An interface that enables a custom data store to delete items from the history of changes to its persisted models.
-- [protocol HistoryInsert](historyinsert.md)
-- [protocol HistoryToken](historytoken.md)
-- [protocol HistoryUpdate](historyupdate.md)
-- [struct HistoryTombstone](historytombstone.md)
-- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
-- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
-- [struct DefaultHistoryDelete](defaulthistorydelete.md)
-- [struct DefaultHistoryToken](defaulthistorytoken.md)
-- [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+- [protocol HistoryInsert](./historyinsert.md)
+- [protocol HistoryToken](./historytoken.md)
+- [protocol HistoryUpdate](./historyupdate.md)
+- [struct HistoryTombstone](./historytombstone.md)
+- [struct DefaultHistoryInsert](./defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](./defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](./defaulthistorydelete.md)
+- [struct DefaultHistoryToken](./defaulthistorytoken.md)
+- [struct DefaultHistoryTransaction](./defaulthistorytransaction.md)
 
 
 ---

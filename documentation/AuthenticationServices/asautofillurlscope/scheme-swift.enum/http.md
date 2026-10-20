@@ -1,7 +1,8 @@
 # ASAutoFillURLScope.Scheme.http
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.2+

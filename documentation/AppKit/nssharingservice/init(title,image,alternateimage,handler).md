@@ -1,7 +1,8 @@
 # init(title:image:alternateImage:handler:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom sharing service object.
 
@@ -14,15 +15,19 @@ Creates a custom sharing service object.
 init(title: String, image: NSImage, alternateImage: NSImage?, handler block: @escaping () -> Void)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title image:(NSImage *) image alternateImage:(NSImage *) alternateImage handler:(void (^)()) block;
+```
+
 #### Return Value
 
 An instance of the custom sharing object.
 
 #### Discussion
 
-Custom sharing services can be added to the [`NSSharingServicePicker`](nssharingservicepicker.md) with the [`sharingServicePicker(_:sharingServicesForItems:proposedSharingServices:)`](nssharingservicepickerdelegate/sharingservicepicker(_:sharingservicesforitems:proposedsharingservices:).md) delegate method.
+Custom sharing services can be added to the [`NSSharingServicePicker`](../nssharingservicepicker.md) with the [`sharingServicePicker(_:sharingServicesForItems:proposedSharingServices:)`](../nssharingservicepickerdelegate/sharingservicepicker%28_,sharingservicesforitems,proposedsharingservices%29.md) delegate method.
 
-When implementing this method, consider subclassing `NSSharingService` so the [`canPerform(withItems:)`](nssharingservice/canperform(withitems:).md) and [`sharingServices(forItems:)`](nssharingservice/sharingservices(foritems:).md) can provide accurate results.
+When implementing this method, consider subclassing `NSSharingService` so the [`canPerform(withItems:)`](./canperform%28withitems%29.md) and [`sharingServices(forItems:)`](./sharingservices%28foritems%29.md) can provide accurate results.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ When implementing this method, consider subclassing `NSSharingService` so the [`
 
 ## See Also
 
-- [init?(named: NSSharingService.Name)](nssharingservice/init(named:).md)
+### Creating a Sharing Service
+- [init?(named: NSSharingService.Name)](./init%28named%29.md)
   Returns a sharing service instance representing the specified service name.
-- [NSSharingService.Name](nssharingservice/name.md)
+- [NSSharingService.Name](./name.md)
   Constants that describe the sharing services that macOS supports.
 
 

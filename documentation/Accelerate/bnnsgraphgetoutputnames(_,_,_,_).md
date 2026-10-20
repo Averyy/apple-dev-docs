@@ -1,7 +1,8 @@
 # BNNSGraphGetOutputNames(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts the names of output arguments for the given function argument.
 
@@ -20,6 +21,10 @@ Extracts the names of output arguments for the given function argument.
 func BNNSGraphGetOutputNames(_ graph: bnns_graph_t, _ function: UnsafePointer<CChar>?, _ output_names_count: Int, _ output_names: UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32
 ```
 
+```c
+int BNNSGraphGetOutputNames(bnns_graph_t graph, const char *function, size_t output_names_count, const char **output_names);
+```
+
 #### Return Value
 
 `0` on success, nonzero on failure.
@@ -33,27 +38,28 @@ func BNNSGraphGetOutputNames(_ graph: bnns_graph_t, _ function: UnsafePointer<CC
 
 ## See Also
 
-- [func BNNSGraphGetArgumentIntents(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<BNNSGraphArgumentIntent>) -> Int32](bnnsgraphgetargumentintents(_:_:_:_:).md)
+### Querying a graph’s properties
+- [func BNNSGraphGetArgumentIntents(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<BNNSGraphArgumentIntent>) -> Int32](./bnnsgraphgetargumentintents%28_,_,_,_%29.md)
   Extracts the intents of arguments for the given function argument.
-- [struct BNNSGraphArgumentIntent](bnnsgraphargumentintent.md)
+- [struct BNNSGraphArgumentIntent](./bnnsgraphargumentintent.md)
   Constants that describe argument intents.
-- [func BNNSGraphGetArgumentCount(bnns_graph_t, UnsafePointer<CChar>?) -> Int](bnnsgraphgetargumentcount(_:_:).md)
+- [func BNNSGraphGetArgumentCount(bnns_graph_t, UnsafePointer<CChar>?) -> Int](./bnnsgraphgetargumentcount%28_,_%29.md)
   Returns the number of arguments for the given function argument.
-- [func BNNSGraphGetArgumentNames(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](bnnsgraphgetargumentnames(_:_:_:_:).md)
+- [func BNNSGraphGetArgumentNames(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](./bnnsgraphgetargumentnames%28_,_,_,_%29.md)
   Extracts the names of arguments for the given function argument.
-- [func BNNSGraphGetFunctionCount(bnns_graph_t) -> Int](bnnsgraphgetfunctioncount(_:).md)
+- [func BNNSGraphGetFunctionCount(bnns_graph_t) -> Int](./bnnsgraphgetfunctioncount%28_%29.md)
   Returns the number of callable functions in the specified graph.
-- [func BNNSGraphGetFunctionNames(bnns_graph_t, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](bnnsgraphgetfunctionnames(_:_:_:).md)
+- [func BNNSGraphGetFunctionNames(bnns_graph_t, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](./bnnsgraphgetfunctionnames%28_,_,_%29.md)
   Extracts the names of callable functions in the graph.
-- [func BNNSGraphGetInputCount(bnns_graph_t, UnsafePointer<CChar>?) -> Int](bnnsgraphgetinputcount(_:_:).md)
+- [func BNNSGraphGetInputCount(bnns_graph_t, UnsafePointer<CChar>?) -> Int](./bnnsgraphgetinputcount%28_,_%29.md)
   Returns the number of input arguments for the given function argument.
-- [func BNNSGraphGetInputNames(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](bnnsgraphgetinputnames(_:_:_:_:).md)
+- [func BNNSGraphGetInputNames(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](./bnnsgraphgetinputnames%28_,_,_,_%29.md)
   Extracts the names of input arguments for the given function argument.
-- [func BNNSGraphGetOutputCount(bnns_graph_t, UnsafePointer<CChar>?) -> Int](bnnsgraphgetoutputcount(_:_:).md)
+- [func BNNSGraphGetOutputCount(bnns_graph_t, UnsafePointer<CChar>?) -> Int](./bnnsgraphgetoutputcount%28_,_%29.md)
   Returns the number of output arguments for the given function argument.
-- [func BNNSGraphGetArgumentPosition(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>) -> Int](bnnsgraphgetargumentposition(_:_:_:).md)
+- [func BNNSGraphGetArgumentPosition(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>) -> Int](./bnnsgraphgetargumentposition%28_,_,_%29.md)
   Returns the index into the arguments array for the given function argument.
-- [func BNNSGraphGetArgumentInterleaveFactors(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<UInt16>?>, UnsafeMutablePointer<Int>) -> Int32](bnnsgraphgetargumentinterleavefactors(_:_:_:_:_:).md)
+- [func BNNSGraphGetArgumentInterleaveFactors(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<UInt16>?>, UnsafeMutablePointer<Int>) -> Int32](./bnnsgraphgetargumentinterleavefactors%28_,_,_,_,_%29.md)
   Returns the interleave factors for arguments, if present
 
 

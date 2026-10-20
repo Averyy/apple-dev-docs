@@ -1,7 +1,8 @@
 # bottomTrailing(relativeTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The bottom trailing corner of the frame, in the given user interface layout direction.
 

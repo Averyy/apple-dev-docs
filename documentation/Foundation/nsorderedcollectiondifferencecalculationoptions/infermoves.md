@@ -1,7 +1,8 @@
 # inferMoves
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that identifies insertions or removals as moves.
 
@@ -20,15 +21,20 @@ An option that identifies insertions or removals as moves.
 static var inferMoves: NSOrderedCollectionDifferenceCalculationOptions { get }
 ```
 
+```c
+NSOrderedCollectionDifferenceCalculationInferMoves
+```
+
 #### Discussion
 
 When you use the option to infer moves, the difference calculation adds an associated index to change objects to indicate the original positions of the objects.
 
 ## See Also
 
-- [static var omitInsertedObjects: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/omitinsertedobjects.md)
+### Difference Calculation Options
+- [static var omitInsertedObjects: NSOrderedCollectionDifferenceCalculationOptions](./omitinsertedobjects.md)
   An option that indicates that the difference should omit references to the insertions.
-- [static var omitRemovedObjects: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/omitremovedobjects.md)
+- [static var omitRemovedObjects: NSOrderedCollectionDifferenceCalculationOptions](./omitremovedobjects.md)
   An option that indicates that the difference should omit references to the removals.
 
 

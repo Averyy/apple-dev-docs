@@ -1,7 +1,8 @@
 # sum()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The sum of the scalars in the vector.
 
@@ -19,6 +20,8 @@ The sum of the scalars in the vector.
 ```swift
 func sum() -> Self.Scalar
 ```
+
+Available when `Scalar` conforms to `FloatingPoint`.
 
 
 ---

@@ -1,7 +1,8 @@
 # Decimal.FormatStyle.Percent
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that converts between decimal percentage values and their textual representations.
 
@@ -23,69 +24,70 @@ struct Percent
 ## Topics
 
 ### Creating a decimal percent format style
-- [init(locale: Locale)](decimal/formatstyle/percent/init(locale:).md)
+- [init(locale: Locale)](./percent/init%28locale%29.md)
   Creates a decimal percent format style that uses the given locale.
 ### Customizing style behavior
-- [func decimalSeparator(strategy: Decimal.FormatStyle.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/decimalseparator(strategy:).md)
+- [func decimalSeparator(strategy: Decimal.FormatStyle.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Percent](./percent/decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(Decimal.FormatStyle.Percent.Configuration.Grouping) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/grouping(_:).md)
+- [func grouping(Decimal.FormatStyle.Percent.Configuration.Grouping) -> Decimal.FormatStyle.Percent](./percent/grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/locale(_:).md)
+- [func locale(Locale) -> Decimal.FormatStyle.Percent](./percent/locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(Decimal.FormatStyle.Percent.Configuration.Notation) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/notation(_:).md)
+- [func notation(Decimal.FormatStyle.Percent.Configuration.Notation) -> Decimal.FormatStyle.Percent](./percent/notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(Decimal.FormatStyle.Percent.Configuration.Precision) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/precision(_:).md)
+- [func precision(Decimal.FormatStyle.Percent.Configuration.Precision) -> Decimal.FormatStyle.Percent](./percent/precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: Decimal.FormatStyle.Percent.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/rounded(rule:increment:).md)
+- [func rounded(rule: Decimal.FormatStyle.Percent.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Percent](./percent/rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/scale(_:).md)
+- [func scale(Double) -> Decimal.FormatStyle.Percent](./percent/scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: Decimal.FormatStyle.Percent.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/sign(strategy:).md)
+- [func sign(strategy: Decimal.FormatStyle.Percent.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Percent](./percent/sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [Decimal.FormatStyle.Percent.Configuration](decimal/formatstyle/percent/configuration.md)
+- [Decimal.FormatStyle.Percent.Configuration](./percent/configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 ### Formatting decimal percent values
-- [func format(Decimal) -> String](decimal/formatstyle/percent/format(_:).md)
+- [func format(Decimal) -> String](./percent/format%28_%29.md)
   Formats an decimal, using this style.
 ### Creating attributed strings
-- [var attributed: Decimal.FormatStyle.Attributed](decimal/formatstyle/percent/attributed.md)
+- [var attributed: Decimal.FormatStyle.Attributed](./percent/attributed.md)
   An attributed format style based on the decimal percent format style.
-- [Decimal.FormatStyle.Attributed](decimal/formatstyle/attributed-swift.struct.md)
+- [Decimal.FormatStyle.Attributed](./attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 ### Accessing style properties
-- [var locale: Locale](decimal/formatstyle/percent/locale.md)
+- [var locale: Locale](./percent/locale.md)
   The locale of the format style.
 ### Parsing decimal percent values
-- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Percent>](decimal/formatstyle/percent/parsestrategy.md)
+- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Percent>](./percent/parsestrategy.md)
   The parse strategy that this format style uses.
 ### Locating decimal values in regular expressions
-- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](decimal/formatstyle/percent/consuming(_:startingat:in:).md)
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](./percent/consuming%28_,startingat,in%29.md)
   Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](decimal/formatstyle/percent/customconsumingregexcomponent-implementations.md)
-- [ParseableFormatStyle Implementations](decimal/formatstyle/percent/parseableformatstyle-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./percent/customconsumingregexcomponent-implementations.md)
+- [ParseableFormatStyle Implementations](./percent/parseableformatstyle-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [FormatStyle](../../formatstyle.md)
+- [Hashable](../../../Swift/hashable.md)
+- [ParseableFormatStyle](../../parseableformatstyle.md)
+- [RegexComponent](../../../Swift/regexcomponent.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Decimal.FormatStyle.Currency](decimal/formatstyle/currency.md)
+### Supporting types
+- [Decimal.FormatStyle.Currency](./currency.md)
   A format style that converts between decimal currency values and their textual representations.
 
 

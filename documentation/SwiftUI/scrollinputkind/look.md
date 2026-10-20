@@ -1,7 +1,8 @@
 # look
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 On visionOS, by looking at the edge of a scroll view the content can automatically scroll. The axes will be determined automatically.
 

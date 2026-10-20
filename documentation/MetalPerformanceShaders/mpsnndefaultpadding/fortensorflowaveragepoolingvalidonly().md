@@ -1,7 +1,8 @@
 # forTensorflowAveragePoolingValidOnly()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.3+
@@ -17,9 +18,14 @@
 class func forTensorflowAveragePoolingValidOnly() -> Self
 ```
 
+```objc
++ (instancetype) paddingForTensorflowAveragePoolingValidOnly;
+```
+
 ## See Also
 
-- [class func forTensorflowAveragePooling() -> Self](mpsnndefaultpadding/fortensorflowaveragepooling.md)
+### Type Methods
+- [class func forTensorflowAveragePooling() -> Self](./fortensorflowaveragepooling%28%29.md)
 
 
 ---

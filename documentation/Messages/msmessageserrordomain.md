@@ -1,7 +1,8 @@
 # MSMessagesErrorDomain
 
 **Framework**: Messages  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for iMessage apps.
 
@@ -16,13 +17,18 @@ The error domain for iMessage apps.
 let MSMessagesErrorDomain: String
 ```
 
+```c
+extern NSString * const MSMessagesErrorDomain;
+```
+
 ## See Also
 
-- [let MSStickersErrorDomain: String](msstickerserrordomain.md)
+### Errors
+- [let MSStickersErrorDomain: String](./msstickerserrordomain.md)
   The error domain for stickers.
-- [enum MSMessageErrorCode](msmessageerrorcode.md)
+- [enum MSMessageErrorCode](./msmessageerrorcode.md)
   The error codes that the Messages framework generates.
-- [enum MSCriticalMessagingError](mscriticalmessagingerror.md)
+- [enum MSCriticalMessagingError](./mscriticalmessagingerror.md)
   Values that describe errors the Critical Messaging API returns.
 
 

@@ -1,7 +1,8 @@
 # DeviceActivityData.Device.Model.iPod
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An iPod device.
 
@@ -18,11 +19,12 @@ case iPod
 
 ## See Also
 
-- [DeviceActivityData.Device.Model.iPhone](deviceactivitydata/device-swift.struct/model-swift.enum/iphone.md)
+### Representing device models
+- [DeviceActivityData.Device.Model.iPhone](./iphone.md)
   An iPhone device.
-- [DeviceActivityData.Device.Model.iPad](deviceactivitydata/device-swift.struct/model-swift.enum/ipad.md)
+- [DeviceActivityData.Device.Model.iPad](./ipad.md)
   An iPad device.
-- [DeviceActivityData.Device.Model.mac](deviceactivitydata/device-swift.struct/model-swift.enum/mac.md)
+- [DeviceActivityData.Device.Model.mac](./mac.md)
   A Mac device.
 
 

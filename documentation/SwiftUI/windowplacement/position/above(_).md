@@ -1,7 +1,8 @@
 # above(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Window position relative to the top edge of another window.
 

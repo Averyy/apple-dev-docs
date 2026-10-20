@@ -1,7 +1,8 @@
 # stackSize
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stack size of the receiver, in bytes.
 
@@ -20,19 +21,24 @@ The stack size of the receiver, in bytes.
 var stackSize: Int { get set }
 ```
 
+```objc
+@property NSUInteger stackSize;
+```
+
 #### Discussion
 
 This value must be in bytes and a multiple of 4KB.
 
-To change the stack size, you must set this property before starting your thread. Setting the stack size after the thread has started changes the attribute size (which is reflected by the [`stackSize`](thread/stacksize.md) method), but it does not affect the actual number of pages set aside for the thread.
+To change the stack size, you must set this property before starting your thread. Setting the stack size after the thread has started changes the attribute size (which is reflected by the [`stackSize`](./stacksize.md) method), but it does not affect the actual number of pages set aside for the thread.
 
 ## See Also
 
-- [var threadDictionary: NSMutableDictionary](thread/threaddictionary.md)
+### Working with Thread Properties
+- [var threadDictionary: NSMutableDictionary](./threaddictionary.md)
   The thread object’s dictionary.
-- [let NSAssertionHandlerKey: String](nsassertionhandlerkey.md)
+- [let NSAssertionHandlerKey: String](../nsassertionhandlerkey.md)
   A key with a corresponding value in the thread dictionary.
-- [var name: String?](thread/name.md)
+- [var name: String?](./name.md)
   The name of the receiver.
 
 

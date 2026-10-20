@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary you use to customize the encoding process by providing contextual information.
 
@@ -23,7 +24,8 @@ var userInfo: [CodingUserInfoKey : any Sendable] { get set }
 
 ## See Also
 
-- [var outputFormat: PropertyListDecoder.PropertyListFormat](propertylistencoder/outputformat.md)
+### Customizing Encoding
+- [var outputFormat: PropertyListDecoder.PropertyListFormat](./outputformat.md)
   A value that determines which property list format is used during encoding.
 
 

@@ -1,12 +1,13 @@
 # WatchKitError.Code
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes reported by WatchKit.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,45 +15,49 @@ Error codes reported by WatchKit.
 enum Code
 ```
 
+```c
+enum WatchKitErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
+- [WatchKitError.Code.downloadFailed](./code/downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
+- [WatchKitError.Code.invalidArgument](./code/invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.mediaPlayerFailed](watchkiterror/code/mediaplayerfailed.md)
+- [WatchKitError.Code.mediaPlayerFailed](./code/mediaplayerfailed.md)
   A media player error.
-- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
+- [WatchKitError.Code.recordingFailed](./code/recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
+- [WatchKitError.Code.unknown](./code/unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](./code/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
-- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
+- [WatchKitError.Code.downloadFailed](./code/downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
+- [WatchKitError.Code.invalidArgument](./code/invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.mediaPlayerFailed](watchkiterror/code/mediaplayerfailed.md)
+- [WatchKitError.Code.mediaPlayerFailed](./code/mediaplayerfailed.md)
   A media player error.
-- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
+- [WatchKitError.Code.recordingFailed](./code/recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
+- [WatchKitError.Code.unknown](./code/unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](./code/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 ### Initializers
-- [init?(rawValue: Int)](watchkiterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

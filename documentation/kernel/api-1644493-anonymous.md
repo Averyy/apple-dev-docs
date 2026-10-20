@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDValueOptionsFlagPrevious](1644493-anonymous/kiohidvalueoptionsflagprevious.md)
-- [kIOHIDValueOptionsFlagRelativeSimple](1644493-anonymous/kiohidvalueoptionsflagrelativesimple.md)
-- [kIOHIDValueOptionsUpdateElementValues](1644493-anonymous/kiohidvalueoptionsupdateelementvalues.md)
+- [kIOHIDValueOptionsFlagPrevious](./api-1644493-anonymous/kiohidvalueoptionsflagprevious.md)
+- [kIOHIDValueOptionsFlagRelativeSimple](./api-1644493-anonymous/kiohidvalueoptionsflagrelativesimple.md)
+- [kIOHIDValueOptionsUpdateElementValues](./api-1644493-anonymous/kiohidvalueoptionsupdateelementvalues.md)
 
 
 ---

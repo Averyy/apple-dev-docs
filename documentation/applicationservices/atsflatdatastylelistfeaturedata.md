@@ -1,7 +1,8 @@
 # ATSFlatDataStyleListFeatureData
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSFlatDataStyleListFeatureData
 ```
 
+```c
+typedef struct ATSFlatDataStyleListFeatureData {
+    ...
+} ATSFlatDataStyleListFeatureData;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsflatdatastylelistfeaturedata/1459027-init.md)
-- [init(theFeatureType: ATSUFontFeatureType, theFeatureSelector: ATSUFontFeatureSelector)](atsflatdatastylelistfeaturedata/1463856-init.md)
+- [init()](./atsflatdatastylelistfeaturedata/api-1459027-init.md)
+- [init(theFeatureType: ATSUFontFeatureType, theFeatureSelector: ATSUFontFeatureSelector)](./atsflatdatastylelistfeaturedata/api-1463856-init.md)
 ### Instance Properties
-- [var theFeatureSelector: ATSUFontFeatureSelector](atsflatdatastylelistfeaturedata/1461688-thefeatureselector.md)
-- [var theFeatureType: ATSUFontFeatureType](atsflatdatastylelistfeaturedata/1461496-thefeaturetype.md)
+- [var theFeatureSelector: ATSUFontFeatureSelector](./atsflatdatastylelistfeaturedata/api-1461688-thefeatureselector.md)
+- [var theFeatureType: ATSUFontFeatureType](./atsflatdatastylelistfeaturedata/api-1461496-thefeaturetype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # willCloseNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sent before the popover is closed.
 
@@ -14,19 +15,24 @@ Sent before the popover is closed.
 class let willCloseNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSPopoverWillCloseNotification;
+```
+
 #### Discussion
 
-The `userInfo` key [`closeReasonUserInfoKey`](nspopover/closereasonuserinfokey.md) specifies the reason for closing. It can currently be either [`standard`](nspopover/closereason/standard.md) or [`detachToWindow`](nspopover/closereason/detachtowindow.md), although more reasons for closing may be added in the future.
+The `userInfo` key [`closeReasonUserInfoKey`](./closereasonuserinfokey.md) specifies the reason for closing. It can currently be either [`standard`](./closereason/standard.md) or [`detachToWindow`](./closereason/detachtowindow.md), although more reasons for closing may be added in the future.
 
-To observe this notification using Swift concurrency, use [`NSPopover.WillCloseMessage`](nspopover/willclosemessage.md).
+To observe this notification using Swift concurrency, use [`NSPopover.WillCloseMessage`](./willclosemessage.md).
 
 ## See Also
 
-- [class let willShowNotification: NSNotification.Name](nspopover/willshownotification.md)
+### Notifications
+- [class let willShowNotification: NSNotification.Name](./willshownotification.md)
   Sent before the popover is shown.
-- [class let didShowNotification: NSNotification.Name](nspopover/didshownotification.md)
+- [class let didShowNotification: NSNotification.Name](./didshownotification.md)
   Sent after the popover has finished animating onscreen.
-- [class let didCloseNotification: NSNotification.Name](nspopover/didclosenotification.md)
+- [class let didCloseNotification: NSNotification.Name](./didclosenotification.md)
   Sent after the popover has finished animating offscreen.
 
 

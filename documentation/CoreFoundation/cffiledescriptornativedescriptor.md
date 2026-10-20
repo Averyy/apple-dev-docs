@@ -1,18 +1,19 @@
 # CFFileDescriptorNativeDescriptor
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a type for the native file descriptor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Defines a type for the native file descriptor.
 typealias CFFileDescriptorNativeDescriptor = Int32
 ```
 
+```c
+typedef int CFFileDescriptorNativeDescriptor;
+```
+
 ## See Also
 
-- [typealias CFFileDescriptorCallBack](cffiledescriptorcallback.md)
+### Data Types
+- [typealias CFFileDescriptorCallBack](./cffiledescriptorcallback.md)
   Defines a structure for a callback for a CFFileDescriptor.
-- [struct CFFileDescriptorContext](cffiledescriptorcontext.md)
+- [struct CFFileDescriptorContext](./cffiledescriptorcontext.md)
   Defines a structure for the context of a CFFileDescriptor.
 
 

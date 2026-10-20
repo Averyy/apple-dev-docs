@@ -1,7 +1,8 @@
 # SpeechDetector
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A module that performs a voice activity detection (VAD) analysis.
 
@@ -23,63 +24,64 @@ final class SpeechDetector
 
 This module asks “is there speech?” and provides you with the ability to gate transcription by the presence of voices, saving power otherwise used by attempting to transcribe what is likely to be silence.
 
-To enable voice activated transcription, initialize a [`SpeechDetector`](speechdetector.md) module. Like any other module, it can be set when first initializing SpeechAnalyzer:
+To enable voice activated transcription, initialize a [`SpeechDetector`](./speechdetector.md) module. Like any other module, it can be set when first initializing SpeechAnalyzer:
 
-```None
+```
 let transcriber = SpeechTranscriber(..)
 let speechDetector = SpeechDetector()
 let analyzer = SpeechAnalyzer(.., modules: [speechDetector, transcriber])
 ```
 
-or later on with [`setModules(_:)`](speechanalyzer/setmodules(_:).md):
+or later on with [`setModules(_:)`](./speechanalyzer/setmodules%28_%29.md):
 
-```None
+```
 let analyzer = SpeechAnalyzer(..)
 let transcriber = SpeechTranscriber(..)
 let speechDetector = SpeechDetector()
 try await analyzer.setModules([transcriber, speechDetector])
 ```
 
-> ❗ **Important**: This module only functions in conjunction with a [`SpeechTranscriber`](speechtranscriber.md) or [`DictationTranscriber`](dictationtranscriber.md) module.
+> ❗ **Important**: This module only functions in conjunction with a [`SpeechTranscriber`](./speechtranscriber.md) or [`DictationTranscriber`](./dictationtranscriber.md) module.
 
-> **Note**: For certain use cases, such as those with a lot of silence, it might be tempting to always enable voice activated transcription. But if the model drops audio that does contain speech, there could be a tradeoff between the power being saved by always having VAD enabled and potentially lower accuracy transcriptions. You can set the aggressiveness of the VAD model with [`SpeechDetector.SensitivityLevel`](speechdetector/sensitivitylevel.md). While [`SpeechDetector.SensitivityLevel.medium`](speechdetector/sensitivitylevel/medium.md) is recommended for most use cases, the value of these tradeoffs will be context-specific.
+> **Note**: For certain use cases, such as those with a lot of silence, it might be tempting to always enable voice activated transcription. But if the model drops audio that does contain speech, there could be a tradeoff between the power being saved by always having VAD enabled and potentially lower accuracy transcriptions. You can set the aggressiveness of the VAD model with [`SpeechDetector.SensitivityLevel`](./speechdetector/sensitivitylevel.md). While [`SpeechDetector.SensitivityLevel.medium`](./speechdetector/sensitivitylevel/medium.md) is recommended for most use cases, the value of these tradeoffs will be context-specific.
 
 ## Topics
 
 ### Creating a detector
-- [convenience init()](speechdetector/init.md)
+- [convenience init()](./speechdetector/init%28%29.md)
   Creates a speech detector with default settings.
-- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
+- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](./speechdetector/init%28detectionoptions,reportresults%29.md)
   Creates a speech detector.
-- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
+- [SpeechDetector.DetectionOptions](./speechdetector/detectionoptions.md)
   Allows clients to customize an instance of a speech detector.
-- [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
+- [SpeechDetector.SensitivityLevel](./speechdetector/sensitivitylevel.md)
   Determines how “aggressive” the voice activity detection (VAD) model will be.
 ### Checking audio format support
-- [var availableCompatibleAudioFormats: [AVAudioFormat]](speechmodule/availablecompatibleaudioformats.md)
+- [var availableCompatibleAudioFormats: [AVAudioFormat]](./speechmodule/availablecompatibleaudioformats.md)
   The audio formats that this module is able to analyze, given its configuration.
 ### Getting results
-- [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](speechdetector/results.md)
+- [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](./speechdetector/results.md)
   The asynchronous sequence of speech detection results.
-- [SpeechDetector.Result](speechdetector/result.md)
-  A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](speechdetector/init(detectionoptions:reportresults:).md) and currently only support error handling from the VAD model.
+- [SpeechDetector.Result](./speechdetector/result.md)
+  A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](./speechdetector/init%28detectionoptions,reportresults%29.md) and currently only support error handling from the VAD model.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpeechModule](speechmodule.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpeechModule](./speechmodule.md)
 
 ## See Also
 
-- [class SpeechTranscriber](speechtranscriber.md)
+### Modules
+- [class SpeechTranscriber](./speechtranscriber.md)
   A speech-to-text transcription module that’s appropriate for normal conversation and general purposes.
-- [class DictationTranscriber](dictationtranscriber.md)
+- [class DictationTranscriber](./dictationtranscriber.md)
   A speech-to-text transcription module that’s similar to system dictation features and compatible with older devices.
-- [protocol SpeechModule](speechmodule.md)
+- [protocol SpeechModule](./speechmodule.md)
   Protocol that all analyzer modules conform to.
-- [protocol LocaleDependentSpeechModule](localedependentspeechmodule.md)
+- [protocol LocaleDependentSpeechModule](./localedependentspeechmodule.md)
   A module that requires locale-specific assets.
 
 

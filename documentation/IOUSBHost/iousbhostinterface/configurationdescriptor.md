@@ -1,7 +1,8 @@
 # configurationDescriptor
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration descriptor for the interface.
 
@@ -15,13 +16,18 @@ The configuration descriptor for the interface.
 var configurationDescriptor: UnsafePointer<IOUSBConfigurationDescriptor> { get }
 ```
 
+```objc
+@property (readonly) const IOUSBConfigurationDescriptor * configurationDescriptor;
+```
+
 #### Return Value
 
 A pointer to the device’s configuration descriptor.
 
 ## See Also
 
-- [var interfaceDescriptor: UnsafePointer<IOUSBInterfaceDescriptor>](iousbhostinterface/interfacedescriptor.md)
+### Retrieving Function Descriptors
+- [var interfaceDescriptor: UnsafePointer<IOUSBInterfaceDescriptor>](./interfacedescriptor.md)
   The descriptor for the interface.
 
 

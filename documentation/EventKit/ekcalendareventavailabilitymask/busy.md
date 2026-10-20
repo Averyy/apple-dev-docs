@@ -1,17 +1,18 @@
 # busy
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The calendar supports the busy event availability setting.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The calendar supports the busy event availability setting.
 static var busy: EKCalendarEventAvailabilityMask { get }
 ```
 
+```c
+EKCalendarEventAvailabilityBusy
+```
+
 ## See Also
 
-- [static var free: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/free.md)
+### Type Properties
+- [static var free: EKCalendarEventAvailabilityMask](./free.md)
   The calendar supports the free event availability setting.
-- [static var tentative: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/tentative.md)
+- [static var tentative: EKCalendarEventAvailabilityMask](./tentative.md)
   The calendar supports the tentative event availability setting.
-- [static var unavailable: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/unavailable.md)
+- [static var unavailable: EKCalendarEventAvailabilityMask](./unavailable.md)
   The calendar supports the unavailable event availability setting.
 
 

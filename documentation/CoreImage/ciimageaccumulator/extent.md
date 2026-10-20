@@ -1,7 +1,8 @@
 # extent
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the image associated with the image accumulator.
 
@@ -19,15 +20,20 @@ The extent of the image associated with the image accumulator.
 var extent: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect extent;
+```
+
 #### Discussion
 
 Extent is a rectangle that specifies the size of the image associated with the image accumulator. This rectangle is the size of the complete region of the working coordinate space, and is a fixed area. It specifies the x-value of the rectangle origin, the y-value of the rectangle origin, and the width and height.
 
 ## See Also
 
-- [var format: CIFormat](ciimageaccumulator/format.md)
+### Obtaining Data From an Image Accumulator
+- [var format: CIFormat](./format.md)
   The pixel format of the image accumulator.
-- [func image() -> CIImage](ciimageaccumulator/image.md)
+- [func image() -> CIImage](./image%28%29.md)
   Returns the current contents of the image accumulator.
 
 

@@ -1,19 +1,20 @@
 # GetLength
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the length of the memory block in bytes.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t GetLength();
 ```
 
@@ -27,9 +28,10 @@ The length represents the number of bytes that are accessible to the current pro
 
 ## See Also
 
-- [GetAddress](iomemorymap/getaddress.md)
+### Getting the Map Attributes
+- [GetAddress](./getaddress.md)
   Returns the address of the memory block.
-- [GetOffset](iomemorymap/getoffset.md)
+- [GetOffset](./getoffset.md)
   Returns the offset from the original start of the memory block.
 
 

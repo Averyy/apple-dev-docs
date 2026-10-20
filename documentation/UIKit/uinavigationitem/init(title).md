@@ -1,7 +1,8 @@
 # init(title:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a navigation item with the specified title.
 
@@ -9,7 +10,7 @@ Creates a navigation item with the specified title.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Creates a navigation item with the specified title.
 init(title: String)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title;
+```
+
 #### Return Value
 
-A new [`UINavigationItem`](uinavigationitem.md) object initialized with the specified title.
+A new [`UINavigationItem`](../uinavigationitem.md) object initialized with the specified title.
 
 #### Discussion
 
@@ -32,9 +37,11 @@ This is the designated initializer for this class.
 
 ## See Also
 
-- [var title: String?](uinavigationitem/title.md)
+### Related Documentation
+- [var title: String?](./title.md)
   The navigation item’s title that displays in the navigation bar.
-- [init?(coder: NSCoder)](uinavigationitem/init(coder:).md)
+### Initializing an item
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a navigation item from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # parentID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the parent equipment that holds or contains this equipment.
 

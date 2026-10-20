@@ -1,7 +1,8 @@
 # viewDidAppear()
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -15,9 +16,10 @@
 
 ## See Also
 
-- [func loadView()](papermarkupviewcontroller/loadview.md)
-- [func viewDidLoad()](papermarkupviewcontroller/viewdidload.md)
-- [func viewDidLayout()](papermarkupviewcontroller/viewdidlayout.md)
+### Managing view lifecycle
+- [func loadView()](./loadview%28%29.md)
+- [func viewDidLoad()](./viewdidload%28%29.md)
+- [func viewDidLayout()](./viewdidlayout%28%29.md)
 
 
 ---

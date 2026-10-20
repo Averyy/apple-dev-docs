@@ -1,7 +1,8 @@
 # FileMode
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A strongly-typed file mode representing a C `mode_t`.
 
@@ -28,30 +29,30 @@ struct FileMode
 ## Topics
 
 ### Initializers
-- [init(rawValue: CInterop.Mode)](filemode/init(rawvalue:).md)
+- [init(rawValue: CInterop.Mode)](./filemode/init%28rawvalue%29.md)
   Creates a strongly-typed `FileMode` from the raw C value.
-- [init(type: FileType, permissions: FilePermissions)](filemode/init(type:permissions:).md)
+- [init(type: FileType, permissions: FilePermissions)](./filemode/init%28type,permissions%29.md)
   Creates a `FileMode` from the given file type and permissions.
 ### Instance Properties
-- [var permissions: FilePermissions](filemode/permissions.md)
+- [var permissions: FilePermissions](./filemode/permissions.md)
   The file’s permissions, from the mode’s permission bits.
-- [var rawValue: CInterop.Mode](filemode/rawvalue.md)
+- [var rawValue: CInterop.Mode](./filemode/rawvalue.md)
   The raw C mode.
-- [var type: FileType](filemode/type.md)
+- [var type: FileType](./filemode/type.md)
   The file’s type, from the mode’s file-type bits.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

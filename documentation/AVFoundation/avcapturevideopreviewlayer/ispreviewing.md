@@ -1,7 +1,8 @@
 # isPreviewing
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the layer is rendering video frames from its source.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the layer is rendering video frames from 
 var isPreviewing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPreviewing) BOOL previewing;
+```
+
 #### Discussion
 
-A preview layer begins displaying content when you call the capture session’s [`startRunning()`](avcapturesession/startrunning().md) method. If you associate the layer with an instance of [`AVCaptureMultiCamSession`](avcapturemulticamsession.md), the system guarantees that all video preview layers display content by the time the blocking call to [`startRunning()`](avcapturesession/startrunning().md) or [`commitConfiguration()`](avcapturesession/commitconfiguration().md) returns.
+A preview layer begins displaying content when you call the capture session’s [`startRunning()`](../avcapturesession/startrunning%28%29.md) method. If you associate the layer with an instance of [`AVCaptureMultiCamSession`](../avcapturemulticamsession.md), the system guarantees that all video preview layers display content by the time the blocking call to [`startRunning()`](../avcapturesession/startrunning%28%29.md) or [`commitConfiguration()`](../avcapturesession/commitconfiguration%28%29.md) returns.
 
-While a session is running, you may enable or disable a video preview layer’s connection to start or stop the flow of video to the layer. You may key-value observe the connection’s [`isEnabled`](avcaptureconnection/isenabled.md) property to observe this property changing, and synchronize any user interface changes to take place precisely when the video resumes rendering to the video preview layer.
+While a session is running, you may enable or disable a video preview layer’s connection to start or stop the flow of video to the layer. You may key-value observe the connection’s [`isEnabled`](../avcaptureconnection/isenabled.md) property to observe this property changing, and synchronize any user interface changes to take place precisely when the video resumes rendering to the video preview layer.
 
 ## See Also
 
-- [var videoGravity: AVLayerVideoGravity](avcapturevideopreviewlayer/videogravity.md)
+### Layer configuration
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A value that indicates how the layer displays video content within its bounds.
 
 

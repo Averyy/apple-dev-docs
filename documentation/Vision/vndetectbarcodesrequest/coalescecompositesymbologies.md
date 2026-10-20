@@ -1,7 +1,8 @@
 # coalesceCompositeSymbologies
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to coalesce multiple codes based on the symbology.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether to coalesce multiple codes based on the s
 var coalesceCompositeSymbologies: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL coalesceCompositeSymbologies;
+```
+
 ## See Also
 
-- [func supportedSymbologies() throws -> [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)
+### Specifying Symbologies
+- [func supportedSymbologies() throws -> [VNBarcodeSymbology]](./supportedsymbologies%28%29.md)
   Returns the barcode symbologies that the request supports.
-- [var symbologies: [VNBarcodeSymbology]](vndetectbarcodesrequest/symbologies.md)
+- [var symbologies: [VNBarcodeSymbology]](./symbologies.md)
   The barcode symbologies that the request detects in an image.
-- [struct VNBarcodeSymbology](vnbarcodesymbology.md)
+- [struct VNBarcodeSymbology](../vnbarcodesymbology.md)
   The barcode symbologies that the framework detects.
-- [class var supportedSymbologies: [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)
+- [class var supportedSymbologies: [VNBarcodeSymbology]](./supportedsymbologies.md)
   The array of barcode symbologies that the request supports.
 
 

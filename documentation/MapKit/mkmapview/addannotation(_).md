@@ -1,7 +1,8 @@
 # addAnnotation(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified annotation to the map view.
 
@@ -19,21 +20,26 @@ Adds the specified annotation to the map view.
 func addAnnotation(_ annotation: any MKAnnotation)
 ```
 
+```objc
+- (void) addAnnotation:(id<MKAnnotation>) annotation;
+```
+
 ## Parameters
 
-- `annotation`: The annotation object to add to the receiver. This object must conform to the [`MKAnnotation`](mkannotation.md) protocol. The map view retains the specified object.
+- `annotation`: The annotation object to add to the receiver. This object must conform to the [`MKAnnotation`](../mkannotation.md) protocol. The map view retains the specified object.
 
 ## See Also
 
-- [var annotations: [any MKAnnotation]](mkmapview/annotations.md)
+### Annotating the map
+- [var annotations: [any MKAnnotation]](./annotations.md)
   The annotations associated with the map view.
-- [func addAnnotations([any MKAnnotation])](mkmapview/addannotations(_:).md)
+- [func addAnnotations([any MKAnnotation])](./addannotations%28_%29.md)
   Adds an array of annotation objects to the map view.
-- [func removeAnnotation(any MKAnnotation)](mkmapview/removeannotation(_:).md)
+- [func removeAnnotation(any MKAnnotation)](./removeannotation%28_%29.md)
   Removes the specified annotation object from the map view.
-- [func removeAnnotations([any MKAnnotation])](mkmapview/removeannotations(_:).md)
+- [func removeAnnotations([any MKAnnotation])](./removeannotations%28_%29.md)
   Removes an array of annotation objects from the map view.
-- [func annotations(in: MKMapRect) -> Set<AnyHashable>](mkmapview/annotations(in:).md)
+- [func annotations(in: MKMapRect) -> Set<AnyHashable>](./annotations%28in%29.md)
   Returns the annotation objects within the specified map rectangle.
 
 

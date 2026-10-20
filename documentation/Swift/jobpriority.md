@@ -1,7 +1,8 @@
 # JobPriority
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The priority of this job.
 
@@ -32,50 +33,51 @@ Conversions between the two priorities are available as initializers on the resp
 ## Topics
 
 ### Operators
-- [static func != (JobPriority, JobPriority) -> Bool](jobpriority/!=(_:_:).md)
+- [static func != (JobPriority, JobPriority) -> Bool](./jobpriority/noteq%28_,_%29.md)
 ### Initializers
-- [init(TaskPriority)](jobpriority/init(_:).md)
+- [init(TaskPriority)](./jobpriority/init%28_%29.md)
   Construct from a TaskPriority
-- [init(rawValue: JobPriority.RawValue)](jobpriority/init(rawvalue:).md)
+- [init(rawValue: JobPriority.RawValue)](./jobpriority/init%28rawvalue%29.md)
   Construct from a raw value
 ### Instance Properties
-- [var rawValue: JobPriority.RawValue](jobpriority/rawvalue-swift.property.md)
+- [var rawValue: JobPriority.RawValue](./jobpriority/rawvalue-swift.property.md)
   The raw priority value.
 ### Type Aliases
-- [JobPriority.RawValue](jobpriority/rawvalue-swift.typealias.md)
+- [JobPriority.RawValue](./jobpriority/rawvalue-swift.typealias.md)
 ### Default Implementations
-- [Comparable Implementations](jobpriority/comparable-implementations.md)
-- [Equatable Implementations](jobpriority/equatable-implementations.md)
+- [Comparable Implementations](./jobpriority/comparable-implementations.md)
+- [Equatable Implementations](./jobpriority/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [Equatable](equatable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Comparable](./comparable.md)
+- [Copyable](./copyable.md)
+- [Equatable](./equatable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Executor](executor.md)
+### Executors
+- [protocol Executor](./executor.md)
   A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
+- [struct ExecutorJob](./executorjob.md)
   A unit of schedulable work.
-- [protocol SerialExecutor](serialexecutor.md)
+- [protocol SerialExecutor](./serialexecutor.md)
   A service that executes jobs.
-- [protocol TaskExecutor](taskexecutor.md)
+- [protocol TaskExecutor](./taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [struct UnownedJob](unownedjob.md)
+- [struct UnownedJob](./unownedjob.md)
   A unit of schedulable work.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
+- [struct UnownedSerialExecutor](./unownedserialexecutor.md)
   An unowned reference to a serial executor (a `SerialExecutor` value).
-- [struct UnownedTaskExecutor](unownedtaskexecutor.md)
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
+- [struct UnownedTaskExecutor](./unownedtaskexecutor.md)
+- [var globalConcurrentExecutor: any TaskExecutor](./globalconcurrentexecutor.md)
   The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
-  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](./withtaskexecutorpreference%28_,isolation,operation%29.md)
+  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](./taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
 
 
 ---

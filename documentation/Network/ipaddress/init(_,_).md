@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Initializes an IP address with data.
@@ -27,7 +28,8 @@ The provided data is expected to be either an IPv4 address of 4 bytes or an IPv6
 
 ## See Also
 
-- [init?(String)](ipaddress/init(_:).md)
+### Creating Addresses
+- [init?(String)](./init%28_%29.md)
   Initializes an IP address with a string.
 
 

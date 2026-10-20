@@ -1,7 +1,8 @@
 # average
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average per-packet transmit latency measured for this flow’s peers.
 

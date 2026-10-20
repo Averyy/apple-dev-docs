@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed in the thumbnail.
 
@@ -14,6 +15,10 @@ The image displayed in the thumbnail.
 
 ```swift
 var image: UIImage { get set }
+```
+
+```objc
+@property (nonatomic, strong) UIImage * image;
 ```
 
 

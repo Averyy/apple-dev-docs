@@ -1,7 +1,8 @@
 # PersonalizationDictionary
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains the information you use to personalize a pass.
 
@@ -12,14 +13,14 @@ An object that contains the information you use to personalize a pass.
 
 ## Declaration
 
-```swift
+```
 object PersonalizationDictionary
 ```
 
 ## Topics
 
 ### Reading the User Information
-- [object PersonalizationDictionary.RequiredPersonalizationInfo](personalizationdictionary/requiredpersonalizationinfo-data.dictionary.md)
+- [object PersonalizationDictionary.RequiredPersonalizationInfo](./personalizationdictionary/requiredpersonalizationinfo-data.dictionary.md)
   An object that contains the user-entered information for a personalized pass.
 
 ## Properties
@@ -29,7 +30,8 @@ object PersonalizationDictionary
 
 ## See Also
 
-- [Return a Personalized Pass](return-a-personalized-pass.md)
+### Personalized passes
+- [Return a Personalized Pass](./return-a-personalized-pass.md)
   Create and sign a personalized pass, and send it to a device.
 
 

@@ -1,7 +1,8 @@
 # performAction(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the extension action associated with the specified tab or performs the default action if `nil` is passed.
 
@@ -16,6 +17,10 @@ Performs the extension action associated with the specified tab or performs the 
 
 ```swift
 func performAction(for tab: (any WKWebExtensionTab)?)
+```
+
+```objc
+- (void) performActionForTab:(id<WKWebExtensionTab>) tab;
 ```
 
 #### Discussion

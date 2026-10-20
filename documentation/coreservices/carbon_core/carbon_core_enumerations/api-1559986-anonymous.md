@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kHIDDeviceNotReady: Int](khiddevicenotready.md)
-- [var kHIDVersionIncompatibleErr: Int](khidversionincompatibleerr.md)
+- [var kHIDDeviceNotReady: Int](../../khiddevicenotready.md)
+- [var kHIDVersionIncompatibleErr: Int](../../khidversionincompatibleerr.md)
 
 
 ---

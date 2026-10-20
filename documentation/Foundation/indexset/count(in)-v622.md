@@ -1,7 +1,8 @@
 # count(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the count of integers in `self` that intersect `range`.
 

@@ -1,7 +1,8 @@
 # setInputDimensions(_:bufferIndex:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the dimensions of multiple input tensors on a range of buffer bindings.
 

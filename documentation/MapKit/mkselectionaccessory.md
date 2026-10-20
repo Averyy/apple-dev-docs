@@ -1,7 +1,8 @@
 # MKSelectionAccessory
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The type of accessory to display for a selected annotation.
 
@@ -18,41 +19,46 @@ The type of accessory to display for a selected annotation.
 class MKSelectionAccessory
 ```
 
+```objc
+@interface MKSelectionAccessory : NSObject
+```
+
 ## Mentions
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
 
 #### Overview
 
-Implement [`mapView(_:selectionAccessoryFor:)`](mkmapviewdelegate/mapview(_:selectionaccessoryfor:).md) in your map view delegate to specify a selection accessory for annotation content.
+Implement [`mapView(_:selectionAccessoryFor:)`](./mkmapviewdelegate/mapview%28_,selectionaccessoryfor%29.md) in your map view delegate to specify a selection accessory for annotation content.
 
 ## Topics
 
 ### Creating a selection accessory
-- [class func mapItemDetail(MKSelectionAccessory.MapItemDetailPresentationStyle) -> MKSelectionAccessory](mkselectionaccessory/mapitemdetail(_:).md)
+- [class func mapItemDetail(MKSelectionAccessory.MapItemDetailPresentationStyle) -> MKSelectionAccessory](./mkselectionaccessory/mapitemdetail%28_%29.md)
   Detailed information about a place
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MKMapItemDetailViewControllerDelegate](mkmapitemdetailviewcontrollerdelegate.md)
+### Place information
+- [protocol MKMapItemDetailViewControllerDelegate](./mkmapitemdetailviewcontrollerdelegate.md)
   The methods that you use to receive events from an associated map view controller.
-- [class MKMapItemDetailViewController](mkmapitemdetailviewcontroller.md)
+- [class MKMapItemDetailViewController](./mkmapitemdetailviewcontroller.md)
   An object that displays detailed information about a map item.
-- [MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle.md)
+- [MKSelectionAccessory.MapItemDetailPresentationStyle](./mkselectionaccessory/mapitemdetailpresentationstyle.md)
   The type of map item detail accessory presentation to use.
-- [MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle](mkselectionaccessory/mapitemdetailpresentationstyle/calloutstyle.md)
+- [MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle](./mkselectionaccessory/mapitemdetailpresentationstyle/calloutstyle.md)
   The style to use for a map item detail callout presentation.
 
 

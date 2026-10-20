@@ -1,7 +1,8 @@
 # shapedArrayValue(of:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the shaped array value, if the contained value is a shaped array of the specified type.
 

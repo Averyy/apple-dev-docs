@@ -1,7 +1,8 @@
 # init(notificationName:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expectation that waits for a Darwin notification with the specified name to be posted.
 
@@ -9,6 +10,10 @@ Creates an expectation that waits for a Darwin notification with the specified n
 
 ```swift
 init(notificationName: String)
+```
+
+```objc
+- (instancetype) initWithNotificationName:(NSString *) notificationName;
 ```
 
 ## Parameters

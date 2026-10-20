@@ -1,7 +1,8 @@
 # prism
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains information about the eye alignment correction.
 
@@ -20,13 +21,18 @@ An object that contains information about the eye alignment correction.
 var prism: HKVisionPrism? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKVisionPrism * prism;
+```
+
 ## See Also
 
-- [var farPupillaryDistance: HKQuantity?](hkglasseslensspecification/farpupillarydistance.md)
+### Accessing the specification’s data
+- [var farPupillaryDistance: HKQuantity?](./farpupillarydistance.md)
   The distance between the pupil and the center of the nose when looking at an object far away, measured in mm.
-- [var nearPupillaryDistance: HKQuantity?](hkglasseslensspecification/nearpupillarydistance.md)
+- [var nearPupillaryDistance: HKQuantity?](./nearpupillarydistance.md)
   The distance between the pupil and the center of the nose when looking at a nearby object, measured in mm.
-- [var vertexDistance: HKQuantity?](hkglasseslensspecification/vertexdistance.md)
+- [var vertexDistance: HKQuantity?](./vertexdistance.md)
   The distance between the back of the lens and the eye, measured in mm.
 
 

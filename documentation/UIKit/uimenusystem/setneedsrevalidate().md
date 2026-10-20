@@ -1,7 +1,8 @@
 # setNeedsRevalidate()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the menu system to validate all of its menus.
 
@@ -16,6 +17,10 @@ Tells the menu system to validate all of its menus.
 
 ```swift
 func setNeedsRevalidate()
+```
+
+```objc
+- (void) setNeedsRevalidate;
 ```
 
 #### Discussion

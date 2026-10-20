@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Recovers a shared secret from an encapsulated representation.
@@ -27,7 +28,7 @@ The decapsulated shared secret.
 
 ## Parameters
 
-- `encapsulated`: The encapsulated shared secret that someone created using this key’s [`publicKey`](kemprivatekey/publickey-swift.property.md).
+- `encapsulated`: The encapsulated shared secret that someone created using this key’s [`publicKey`](./publickey-swift.property.md).
 
 
 ---

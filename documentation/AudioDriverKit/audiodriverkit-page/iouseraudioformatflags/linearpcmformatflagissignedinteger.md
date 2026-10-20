@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsSignedInteger
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate whether PCM samples are signed or unsigned integers.
 
@@ -10,21 +11,22 @@ A flag to indicate whether PCM samples are signed or unsigned integers.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsSignedInteger
 ```
 
 #### Discussion
 
-This flag is a synonym of [`FormatFlagIsSignedInteger`](audiodriverkit/iouseraudioformatflags/formatflagissignedinteger.md).
+This flag is a synonym of [`FormatFlagIsSignedInteger`](./formatflagissignedinteger.md).
 
 ## See Also
 
-- [FormatFlagIsFloat](audiodriverkit/iouseraudioformatflags/formatflagisfloat.md)
+### Numeric Representation Flags
+- [FormatFlagIsFloat](./formatflagisfloat.md)
   A flag to indicate whether samples are floating-point values.
-- [LinearPCMFormatFlagIsFloat](audiodriverkit/iouseraudioformatflags/linearpcmformatflagisfloat.md)
+- [LinearPCMFormatFlagIsFloat](./linearpcmformatflagisfloat.md)
   A flag to indicate whether PCM samples are floating-point values.
-- [FormatFlagIsSignedInteger](audiodriverkit/iouseraudioformatflags/formatflagissignedinteger.md)
+- [FormatFlagIsSignedInteger](./formatflagissignedinteger.md)
   A flag to indicate whether samples are signed or unsigned integers.
 
 

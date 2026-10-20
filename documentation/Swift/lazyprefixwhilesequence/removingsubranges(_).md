@@ -1,7 +1,8 @@
 # removingSubranges(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collection of the elements in this collection that are not represented by the given range set.
 
@@ -38,7 +39,7 @@ print(String(disemvoweled))
 // Prints "Th rn n Spn stys mnly n th pln."
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

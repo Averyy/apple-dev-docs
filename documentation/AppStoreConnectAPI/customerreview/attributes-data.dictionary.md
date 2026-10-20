@@ -1,7 +1,8 @@
 # CustomerReview.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of the customer’s review including its content.
 
@@ -10,14 +11,14 @@ The attributes of the customer’s review including its content.
 
 ## Declaration
 
-```swift
+```
 object CustomerReview.Attributes
 ```
 
 ## Topics
 
 ### Types
-- [type TerritoryCode](territorycode.md)
+- [type TerritoryCode](../territorycode.md)
   The App Store territory codes.
 
 ## Properties
@@ -25,13 +26,16 @@ object CustomerReview.Attributes
 - `body` (string): The review text that the customer wrote.
 - `createdDate` (date-time): The date and time the customer created the review.
 - `rating` (integer): The rating the customer provided.
+
+  **Minimum**: `1`; **Maximum**: `5`
 - `reviewerNickname` (string): The customer’s nickname used in the review.
 - `title` (string): The title that the customer wrote for the review.
 - `territory` (TerritoryCode): The App Store territory.
 
 ## See Also
 
-- [object CustomerReview.Relationships](customerreview/relationships-data.dictionary.md)
+### Objects
+- [object CustomerReview.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

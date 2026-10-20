@@ -1,14 +1,15 @@
 # InterruptOccurred_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 void InterruptOccurred_Impl(OSAction *action, uint64_t count, uint64_t time);
 ```
 

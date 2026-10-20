@@ -1,7 +1,8 @@
 # readAttributeCurrentFabricIndex(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentFabricIndex(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentFabricIndex() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCurrentFabricIndexWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

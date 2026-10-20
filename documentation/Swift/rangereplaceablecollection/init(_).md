@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance of a collection containing the elements of a sequence.
@@ -24,6 +25,12 @@ init<S>(_ elements: S) where S : Sequence, Self.Element == S.Element
 ## Parameters
 
 - `elements`: The sequence of elements for the new collection. `elements` must be finite.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [init<S>(S)](./init%28_%29-2c3y1.md)
+  Creates a new instance of a collection containing the elements of a sequence.
 
 
 ---

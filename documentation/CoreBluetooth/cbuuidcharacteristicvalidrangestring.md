@@ -1,7 +1,8 @@
 # CBUUIDCharacteristicValidRangeString
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 5.0+
@@ -18,9 +19,14 @@
 let CBUUIDCharacteristicValidRangeString: String
 ```
 
+```c
+extern NSString * const CBUUIDCharacteristicValidRangeString;
+```
+
 ## See Also
 
-- [let CBCentralManagerOptionDeviceAccessForMedia: String](cbcentralmanageroptiondeviceaccessformedia.md)
+### Constants
+- [let CBCentralManagerOptionDeviceAccessForMedia: String](./cbcentralmanageroptiondeviceaccessformedia.md)
 
 
 ---

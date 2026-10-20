@@ -1,7 +1,8 @@
 # ASAutoFillURLScope
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 This structure represents the subset of URL components supported for the AutoFill of credentials.
 
@@ -21,33 +22,33 @@ struct ASAutoFillURLScope
 ## Topics
 
 ### Initializers
-- [init(scheme: ASAutoFillURLScope.Scheme, host: String, port: Int?, path: String)](asautofillurlscope/init(scheme:host:port:path:).md)
+- [init(scheme: ASAutoFillURLScope.Scheme, host: String, port: Int?, path: String)](./asautofillurlscope/init%28scheme,host,port,path%29.md)
   Creates a URL components instance
-- [init?(url: URL)](asautofillurlscope/init(url:).md)
+- [init?(url: URL)](./asautofillurlscope/init%28url%29.md)
   Initialize with the components of a URL.
 ### Instance Properties
-- [var host: String](asautofillurlscope/host.md)
+- [var host: String](./asautofillurlscope/host.md)
   The host subcomponent.
-- [var path: String](asautofillurlscope/path.md)
+- [var path: String](./asautofillurlscope/path.md)
   The path subcomponent.
-- [var port: Int?](asautofillurlscope/port.md)
+- [var port: Int?](./asautofillurlscope/port.md)
   The port subcomponent.
-- [var scheme: ASAutoFillURLScope.Scheme](asautofillurlscope/scheme-swift.property.md)
+- [var scheme: ASAutoFillURLScope.Scheme](./asautofillurlscope/scheme-swift.property.md)
   The scheme subcomponent of the URL.
-- [var url: URL?](asautofillurlscope/url.md)
+- [var url: URL?](./asautofillurlscope/url.md)
   A URL created from the components.
 ### Enumerations
-- [ASAutoFillURLScope.Scheme](asautofillurlscope/scheme-swift.enum.md)
+- [ASAutoFillURLScope.Scheme](./asautofillurlscope/scheme-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

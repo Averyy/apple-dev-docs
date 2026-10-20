@@ -1,7 +1,8 @@
 # AccessoryTrackingProvider.Error.Code
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration of all error codes.
 
@@ -17,20 +18,20 @@ enum Code
 ## Topics
 
 ### Enumeration Cases
-- [AccessoryTrackingProvider.Error.Code.accessoryLoadingFailed](accessorytrackingprovider/error/code-swift.enum/accessoryloadingfailed.md)
+- [AccessoryTrackingProvider.Error.Code.accessoryLoadingFailed](./code-swift.enum/accessoryloadingfailed.md)
   Loading an accessory failed.
-- [AccessoryTrackingProvider.Error.Code.updateAccessoriesFailed](accessorytrackingprovider/error/code-swift.enum/updateaccessoriesfailed.md)
+- [AccessoryTrackingProvider.Error.Code.updateAccessoriesFailed](./code-swift.enum/updateaccessoriesfailed.md)
   Updating accessories failed.
 ### Instance Properties
-- [var description: String](accessorytrackingprovider/error/code-swift.enum/description.md)
+- [var description: String](./code-swift.enum/description.md)
   A textual representation of the code.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # assign(_:tensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an assign operation which writes at this point of execution of the graph.
 
@@ -17,6 +18,10 @@ Creates an assign operation which writes at this point of execution of the graph
 
 ```swift
 func assign(_ variable: MPSGraphTensor, tensor: MPSGraphTensor, name: String?) -> MPSGraphOperation
+```
+
+```objc
+- (MPSGraphOperation *) assignVariable:(MPSGraphTensor *) variable withValueOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

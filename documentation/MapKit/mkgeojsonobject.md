@@ -1,7 +1,8 @@
 # MKGeoJSONObject
 
 **Framework**: MapKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Objects that the GeoJSON decoder can return.
 
@@ -20,6 +21,10 @@ Objects that the GeoJSON decoder can return.
 protocol MKGeoJSONObject : NSObjectProtocol
 ```
 
+```objc
+@protocol MKGeoJSONObject <NSObject>
+```
+
 #### Overview
 
 Classes that conform to this protocol represent the types that the GeoJSON decoder can return.
@@ -29,24 +34,25 @@ There’s no reason to create your own classes that conform to this protocol; on
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [MKGeoJSONFeature](mkgeojsonfeature.md)
-- [MKGeodesicPolyline](mkgeodesicpolyline.md)
-- [MKMultiPoint](mkmultipoint.md)
-- [MKMultiPolygon](mkmultipolygon.md)
-- [MKMultiPolyline](mkmultipolyline.md)
-- [MKPointAnnotation](mkpointannotation.md)
-- [MKPolygon](mkpolygon.md)
-- [MKPolyline](mkpolyline.md)
+- [MKGeoJSONFeature](./mkgeojsonfeature.md)
+- [MKGeodesicPolyline](./mkgeodesicpolyline.md)
+- [MKMultiPoint](./mkmultipoint.md)
+- [MKMultiPolygon](./mkmultipolygon.md)
+- [MKMultiPolyline](./mkmultipolyline.md)
+- [MKPointAnnotation](./mkpointannotation.md)
+- [MKPolygon](./mkpolygon.md)
+- [MKPolyline](./mkpolyline.md)
 
 ## See Also
 
-- [Displaying an Indoor Map](displaying-an-indoor-map.md)
+### Geographical features
+- [Displaying an Indoor Map](./displaying-an-indoor-map.md)
   Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest.
-- [class MKGeoJSONDecoder](mkgeojsondecoder.md)
+- [class MKGeoJSONDecoder](./mkgeojsondecoder.md)
   An object that decodes GeoJSON objects into MapKit types.
-- [class MKGeoJSONFeature](mkgeojsonfeature.md)
+- [class MKGeoJSONFeature](./mkgeojsonfeature.md)
   The decoded representation of a GeoJSON feature.
 
 

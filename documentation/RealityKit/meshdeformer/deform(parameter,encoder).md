@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 deform the mesh on the GPU (the preferred method)
@@ -22,7 +23,8 @@ func deform(parameter: MeshDeformParameterGPU, encoder: any MTLComputeCommandEnc
 
 ## See Also
 
-- [func deform(parameter: MeshDeformParameterCPU)](meshdeformer/deform(parameter:).md)
+### Deforming the mesh
+- [func deform(parameter: MeshDeformParameterCPU)](./deform%28parameter%29.md)
   deform the mesh on the CPU (may be useful for debugging), a no-op is allowed, default implementation is provided
 
 

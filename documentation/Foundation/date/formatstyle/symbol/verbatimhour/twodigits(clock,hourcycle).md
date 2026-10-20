@@ -1,7 +1,8 @@
 # twoDigits(clock:hourCycle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom format style portraying two digits that represent the hour.
 
@@ -31,7 +32,8 @@ An hour format style customized according to the specified clock representation 
 
 ## See Also
 
-- [static func defaultDigits(clock: Date.FormatStyle.Symbol.VerbatimHour.Clock, hourCycle: Date.FormatStyle.Symbol.VerbatimHour.HourCycle) -> Date.FormatStyle.Symbol.VerbatimHour](date/formatstyle/symbol/verbatimhour/defaultdigits(clock:hourcycle:).md)
+### Modifying a Verbatim Hour
+- [static func defaultDigits(clock: Date.FormatStyle.Symbol.VerbatimHour.Clock, hourCycle: Date.FormatStyle.Symbol.VerbatimHour.HourCycle) -> Date.FormatStyle.Symbol.VerbatimHour](./defaultdigits%28clock,hourcycle%29.md)
   Creates a custom format style portraying the minimum number of digits that represents the hour.
 
 

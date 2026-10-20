@@ -1,7 +1,8 @@
 # touchBarItemPrincipal(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets principal views that have special significance to this Touch Bar.
 
@@ -42,7 +43,7 @@ TextField("TouchBar Demo", text: $placeholder)
 
 > **Note**: Multiple visible bars may each specify a principal view, but the system only honors one of them.
 
-![A Touch Bar view showing one element designated as the principal view](/images/com.apple.SwiftUI/SwiftUI-touchBarItemPrincipal@2x.png)
+![A Touch Bar view showing one element designated as the principal view](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-touchBarItemPrincipal@2x.png)
 
 ## Parameters
 
@@ -50,17 +51,18 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## See Also
 
-- [func touchBar<Content>(content: () -> Content) -> some View](view/touchbar(content:).md)
+### Managing Touch Bar input
+- [func touchBar<Content>(content: () -> Content) -> some View](./touchbar%28content%29.md)
   Sets the content that the Touch Bar displays.
-- [func touchBar<Content>(TouchBar<Content>) -> some View](view/touchbar(_:).md)
+- [func touchBar<Content>(TouchBar<Content>) -> some View](./touchbar%28_%29.md)
   Sets the Touch Bar content to be shown in the Touch Bar when applicable.
-- [func touchBarCustomizationLabel(Text) -> some View](view/touchbarcustomizationlabel(_:).md)
+- [func touchBarCustomizationLabel(Text) -> some View](./touchbarcustomizationlabel%28_%29.md)
   Sets a user-visible string that identifies the view’s functionality.
-- [func touchBarItemPresence(TouchBarItemPresence) -> some View](view/touchbaritempresence(_:).md)
+- [func touchBarItemPresence(TouchBarItemPresence) -> some View](./touchbaritempresence%28_%29.md)
   Sets the behavior of the user-customized view.
-- [struct TouchBar](touchbar.md)
+- [struct TouchBar](../touchbar.md)
   A container for a view that you can show in the Touch Bar.
-- [enum TouchBarItemPresence](touchbaritempresence.md)
+- [enum TouchBarItemPresence](../touchbaritempresence.md)
   Options that affect user customization of the Touch Bar.
 
 

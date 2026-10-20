@@ -1,7 +1,8 @@
 # removeAttachment(_:from:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified attachment.
 
@@ -16,7 +17,15 @@ Removes the specified attachment.
 ## Declaration
 
 ```swift
+func removeAttachment(_ attachment: HKAttachment, from object: HKObject, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func removeAttachment(_ attachment: HKAttachment, from object: HKObject) async throws
+```
+
+```objc
+- (void) removeAttachment:(HKAttachment *) attachment fromObject:(HKObject *) object completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
@@ -37,8 +46,10 @@ do {
 
 - `attachment`: An attachment associated with the specified object.
 - `object`: An object from the HealthKit store.
-- `completion`: A completion handler that the system calls after removing the attachment. This handler takes the following parameters: - **success**: A Boolean value that indicates whether the system successfully removed the attachment.
-- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
+- `completion`: A completion handler that the system calls after removing the attachment. This handler takes the following parameters:
+
+  - **success**: A Boolean value that indicates whether the system successfully removed the attachment.
+  - **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 
 ---

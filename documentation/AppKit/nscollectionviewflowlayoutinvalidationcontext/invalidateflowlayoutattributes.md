@@ -1,7 +1,8 @@
 # invalidateFlowLayoutAttributes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the flow layout object should invalidate its current attributes.
 
@@ -14,15 +15,20 @@ A Boolean value indicating whether the flow layout object should invalidate its 
 var invalidateFlowLayoutAttributes: Bool { get set }
 ```
 
+```objc
+@property BOOL invalidateFlowLayoutAttributes;
+```
+
 #### Discussion
 
-Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) tells the flow layout object to keep its existing layout information, effectively stopping the invalidation process. Typically, you set this property to [`false`](https://developer.apple.com/documentation/swift/false) only if you subclass [`NSCollectionViewFlowLayout`](nscollectionviewflowlayout.md) and update changed layout information directly.
+Setting this property to [`false`](../../Swift/false.md) tells the flow layout object to keep its existing layout information, effectively stopping the invalidation process. Typically, you set this property to [`false`](../../Swift/false.md) only if you subclass [`NSCollectionViewFlowLayout`](../nscollectionviewflowlayout.md) and update changed layout information directly.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the flow layout object to throw out its existing layout information and recompute it.
+The default value of this property is [`true`](../../Swift/true.md), which causes the flow layout object to throw out its existing layout information and recompute it.
 
 ## See Also
 
-- [var invalidateFlowLayoutDelegateMetrics: Bool](nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutdelegatemetrics.md)
+### Invalidating the Flow Layout
+- [var invalidateFlowLayoutDelegateMetrics: Bool](./invalidateflowlayoutdelegatemetrics.md)
   A Boolean value indicating whether the flow layout object should fetch new size information from its delegate.
 
 

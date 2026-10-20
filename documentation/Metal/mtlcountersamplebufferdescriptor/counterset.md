@@ -1,7 +1,8 @@
 # counterSet
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A GPU device’s counter set instance that you want to sample.
 
@@ -19,17 +20,22 @@ A GPU device’s counter set instance that you want to sample.
 var counterSet: (any MTLCounterSet)? { get set }
 ```
 
+```objc
+@property (retain, readwrite, nullable) id<MTLCounterSet> counterSet;
+```
+
 #### Discussion
 
-Assign this property to one of the counter sets in an [`MTLDevice`](mtldevice.md) instance’s [`counterSets`](mtldevice/countersets.md) property.
+Assign this property to one of the counter sets in an [`MTLDevice`](../mtldevice.md) instance’s [`counterSets`](../mtldevice/countersets.md) property.
 
 ## See Also
 
-- [var label: String](mtlcountersamplebufferdescriptor/label.md)
+### Configuring a descriptor for a counter sample buffer
+- [var label: String](./label.md)
   The name for the counter sample buffer you create with the descriptor.
-- [var sampleCount: Int](mtlcountersamplebufferdescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of instances of a counter set’s data that a counter sample buffer can store.
-- [var storageMode: MTLStorageMode](mtlcountersamplebufferdescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The memory storage mode for the counter sample buffers you create with the descriptor.
 
 

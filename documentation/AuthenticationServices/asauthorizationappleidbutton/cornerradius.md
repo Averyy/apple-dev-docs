@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius, in points, for the rounded corners on the Apple ID sign-in button.
 
@@ -18,11 +19,16 @@ The radius, in points, for the rounded corners on the Apple ID sign-in button.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat cornerRadius;
+```
+
 ## See Also
 
-- [ASAuthorizationAppleIDButton.Style](asauthorizationappleidbutton/style.md)
+### Styling the Button
+- [ASAuthorizationAppleIDButton.Style](./style.md)
   A style for the authorization button.
-- [ASAuthorizationAppleIDButton.ButtonType](asauthorizationappleidbutton/buttontype.md)
+- [ASAuthorizationAppleIDButton.ButtonType](./buttontype.md)
   A type for the authorization button.
 
 

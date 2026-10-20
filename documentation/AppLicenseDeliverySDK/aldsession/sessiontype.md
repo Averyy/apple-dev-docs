@@ -1,7 +1,8 @@
 # sessionType
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the current session type
 

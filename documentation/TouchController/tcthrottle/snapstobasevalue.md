@@ -1,7 +1,8 @@
 # snapsToBaseValue
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the control reverts to it’s base value.
 
@@ -16,23 +17,28 @@ A Boolean value that indicates whether the control reverts to it’s base value.
 var snapsToBaseValue: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL snapsToBaseValue;
+```
+
 #### Discussion
 
 If `YES`, the control’s value will revert to its base value when no longer pressed.
 
 ## See Also
 
-- [var backgroundContents: TCControlContents?](tcthrottle/backgroundcontents.md)
+### Inspecting the throttle
+- [var backgroundContents: TCControlContents?](./backgroundcontents.md)
   The contents for the background of the throttle.
-- [var baseValue: CGFloat](tcthrottle/basevalue.md)
+- [var baseValue: CGFloat](./basevalue.md)
   The initial value of this control.
-- [var highlightDuration: TimeInterval](tcthrottle/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var indicatorContents: TCControlContents?](tcthrottle/indicatorcontents.md)
+- [var indicatorContents: TCControlContents?](./indicatorcontents.md)
   The contents for the indicator of the throttle.
-- [var indicatorSize: CGSize](tcthrottle/indicatorsize.md)
+- [var indicatorSize: CGSize](./indicatorsize.md)
   The size (width, height) of the indicator itself in points.
-- [var throttleSize: CGSize](tcthrottle/throttlesize.md)
+- [var throttleSize: CGSize](./throttlesize.md)
   The size (width, height) of the throttle itself, providing boundaries for the indicator, in points.
 
 

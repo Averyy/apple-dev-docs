@@ -1,7 +1,8 @@
 # RangeSet.Ranges
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of the ranges that make up a range set.
 
@@ -20,31 +21,33 @@ A collection of the ranges that make up a range set.
 struct Ranges
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 ## Topics
 
 ### Default Implementations
-- [BidirectionalCollection Implementations](rangeset/ranges-swift.struct/bidirectionalcollection-implementations.md)
-- [Collection Implementations](rangeset/ranges-swift.struct/collection-implementations.md)
-- [CustomStringConvertible Implementations](rangeset/ranges-swift.struct/customstringconvertible-implementations.md)
-- [Equatable Implementations](rangeset/ranges-swift.struct/equatable-implementations.md)
-- [Hashable Implementations](rangeset/ranges-swift.struct/hashable-implementations.md)
-- [RandomAccessCollection Implementations](rangeset/ranges-swift.struct/randomaccesscollection-implementations.md)
-- [Sequence Implementations](rangeset/ranges-swift.struct/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./ranges-swift.struct/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./ranges-swift.struct/collection-implementations.md)
+- [CustomStringConvertible Implementations](./ranges-swift.struct/customstringconvertible-implementations.md)
+- [Equatable Implementations](./ranges-swift.struct/equatable-implementations.md)
+- [Hashable Implementations](./ranges-swift.struct/hashable-implementations.md)
+- [RandomAccessCollection Implementations](./ranges-swift.struct/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./ranges-swift.struct/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [CustomStringConvertible](../customstringconvertible.md)
+- [Equatable](../equatable.md)
+- [Escapable](../escapable.md)
+- [Hashable](../hashable.md)
+- [RandomAccessCollection](../randomaccesscollection.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

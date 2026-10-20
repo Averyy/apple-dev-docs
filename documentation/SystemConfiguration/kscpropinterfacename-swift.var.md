@@ -1,7 +1,8 @@
 # kSCPropInterfaceName
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The generic key `InterfaceName`, whose value is of type `CFString`.
 
@@ -14,13 +15,18 @@ The generic key `InterfaceName`, whose value is of type `CFString`.
 let kSCPropInterfaceName: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropInterfaceName;
+```
+
 ## See Also
 
-- [let kSCPropMACAddress: CFString](kscpropmacaddress-swift.var.md)
+### Constants
+- [let kSCPropMACAddress: CFString](./kscpropmacaddress-swift.var.md)
   The generic key `MACAddress`, whose value is of type `CFString`.
-- [let kSCPropUserDefinedName: CFString](kscpropuserdefinedname-swift.var.md)
+- [let kSCPropUserDefinedName: CFString](./kscpropuserdefinedname-swift.var.md)
   The generic key `UserDefinedName`, whose value is of type `CFString`.
-- [let kSCPropVersion: CFString](kscpropversion-swift.var.md)
+- [let kSCPropVersion: CFString](./kscpropversion-swift.var.md)
   The generic key `Version`, whose value is of type `CFString`.
 
 

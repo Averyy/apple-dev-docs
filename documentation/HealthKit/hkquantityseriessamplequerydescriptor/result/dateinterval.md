@@ -1,7 +1,8 @@
 # dateInterval
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date interval for the entry.
 
@@ -10,7 +11,7 @@ The date interval for the entry.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,9 +22,10 @@ let dateInterval: DateInterval
 
 ## See Also
 
-- [let sample: HKQuantitySample?](hkquantityseriessamplequerydescriptor/result/sample.md)
+### Accessing Sample Data
+- [let sample: HKQuantitySample?](./sample.md)
   The quantity sample that owns the series of data entries.
-- [let quantity: HKQuantity](hkquantityseriessamplequerydescriptor/result/quantity.md)
+- [let quantity: HKQuantity](./quantity.md)
   The quantity stored by the data entry.
 
 

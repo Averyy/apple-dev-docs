@@ -1,7 +1,8 @@
 # sampleBuffer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sample buffer containing media data.
 

@@ -1,12 +1,13 @@
 # HV_GIC_INT_MAINTENANCE
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A register Hypervisor uses to signal virtual Interrupts (vIRQs) that the framework sends to guests running at exception level 2 (EL2).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A register Hypervisor uses to signal virtual Interrupts (vIRQs) that the framewo
 var HV_GIC_INT_MAINTENANCE: hv_gic_intid_t { get }
 ```
 
+```c
+HV_GIC_INT_MAINTENANCE
+```
+
 #### Discussion
 
-For more information on maintenance interrupts, see *maintenance interrupts* in the [`ARM Generic Interrupt Controller (GIC) v3`](https://developer.apple.comhttps://developer.arm.com/documentation/ihi0069/latest/) specification.
+For more information on maintenance interrupts, see *maintenance interrupts* in the [ARM Generic Interrupt Controller (GIC) v3](https://developer.arm.com/documentation/ihi0069/latest/) specification.
 
 ## See Also
 
-- [func hv_gic_get_intid(hv_gic_intid_t, UnsafeMutablePointer<UInt32>) -> hv_return_t](hv_gic_get_intid(_:_:).md)
+### Reserved interrupt identifiers
+- [func hv_gic_get_intid(hv_gic_intid_t, UnsafeMutablePointer<UInt32>) -> hv_return_t](./hv_gic_get_intid%28_,_%29.md)
   Gets the interrupt ID for reserved interrupts.
-- [var HV_GIC_INT_PERFORMANCE_MONITOR: hv_gic_intid_t](hv_gic_int_performance_monitor.md)
+- [var HV_GIC_INT_PERFORMANCE_MONITOR: hv_gic_intid_t](./hv_gic_int_performance_monitor.md)
   A register the framework uses to count GIC related events.
-- [var HV_GIC_INT_EL1_PHYSICAL_TIMER: hv_gic_intid_t](hv_gic_int_el1_physical_timer.md)
-- [var HV_GIC_INT_EL2_PHYSICAL_TIMER: hv_gic_intid_t](hv_gic_int_el2_physical_timer.md)
-- [var HV_GIC_INT_EL1_VIRTUAL_TIMER: hv_gic_intid_t](hv_gic_int_el1_virtual_timer.md)
+- [var HV_GIC_INT_EL1_PHYSICAL_TIMER: hv_gic_intid_t](./hv_gic_int_el1_physical_timer.md)
+- [var HV_GIC_INT_EL2_PHYSICAL_TIMER: hv_gic_intid_t](./hv_gic_int_el2_physical_timer.md)
+- [var HV_GIC_INT_EL1_VIRTUAL_TIMER: hv_gic_intid_t](./hv_gic_int_el1_virtual_timer.md)
 
 
 ---

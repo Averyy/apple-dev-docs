@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a buffer on the heap.
@@ -20,6 +21,10 @@ Creates a buffer on the heap.
 func makeBuffer(length: Int, options: MTLResourceOptions = []) -> (any MTLBuffer)?
 ```
 
+```objc
+- (id<MTLBuffer>) newBufferWithLength:(NSUInteger) length options:(MTLResourceOptions) options;
+```
+
 #### Return Value
 
 A new buffer object backed by heap memory, or `nil` if the heap memory is full.
@@ -28,9 +33,9 @@ A new buffer object backed by heap memory, or `nil` if the heap memory is full.
 
 You can call the method with the following restrictions:
 
-- The heap’s type needs to be [`MTLHeapType.automatic`](mtlheaptype/automatic.md)
-- The buffer’s storage mode option needs to match the heap’s [`storageMode`](mtlheap/storagemode.md) property
-- The buffer’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) property
+- The heap’s type needs to be [`MTLHeapType.automatic`](../mtlheaptype/automatic.md)
+- The buffer’s storage mode option needs to match the heap’s [`storageMode`](./storagemode.md) property
+- The buffer’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](./cpucachemode.md) property
 
 ## Parameters
 
@@ -39,7 +44,8 @@ You can call the method with the following restrictions:
 
 ## See Also
 
-- [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:offset:).md)
+### Creating buffers from a heap
+- [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](./makebuffer%28length,options,offset%29.md)
   Creates a buffer at a specified offset on the heap.
 
 

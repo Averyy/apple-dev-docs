@@ -1,7 +1,8 @@
 # WinBackOfferUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The updateable attributes of a win-back offer, including its duration, start date, and eligibility conditions.
 
@@ -10,21 +11,21 @@ The updateable attributes of a win-back offer, including its duration, start dat
 
 ## Declaration
 
-```swift
+```
 object WinBackOfferUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object WinBackOfferUpdateRequest.Data.Attributes](winbackofferupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object WinBackOfferUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a win-back offer update resource.
 
 ## Properties
 
 - `attributes` (WinBackOfferUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `winBackOffers`
 
 
 ---

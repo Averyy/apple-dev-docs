@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?<S>(S)](float/init(_:)-h2f4.md)
+- [init?<S>(S)](./init%28_%29-h2f4.md)
   Creates a new instance from the given string.
 
 

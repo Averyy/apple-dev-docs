@@ -1,7 +1,8 @@
 # CSIndexErrorDomain
 
 **Framework**: Core Spotlight  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for the index.
 
@@ -18,9 +19,14 @@ The error domain for the index.
 let CSIndexErrorDomain: String
 ```
 
+```c
+extern NSString * const CSIndexErrorDomain;
+```
+
 ## See Also
 
-- [CSIndexError.Code](csindexerror/code.md)
+### Index Errors
+- [CSIndexError.Code](./csindexerror/code.md)
   Error codes that describe indexing-specific errors.
 
 

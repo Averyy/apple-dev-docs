@@ -1,7 +1,8 @@
 # VideoPlayerComponent.RenderingStatus.ready
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content is ready to be presented
 

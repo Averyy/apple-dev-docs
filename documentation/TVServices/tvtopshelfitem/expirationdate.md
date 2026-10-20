@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date on which the item becomes unavailable.
 
@@ -14,13 +15,18 @@ The date on which the item becomes unavailable.
 var expirationDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDate * expirationDate;
+```
+
 #### Discussion
 
 Specify an expiration date when the content associated with the item has a limited lifespan. For example, use it to specify the date on which a rented movie expires. The system uses this property to remove items that have expired since you last provided data.
 
 ## See Also
 
-- [var identifier: String](tvtopshelfitem/identifier.md)
+### Getting the Item Attributes
+- [var identifier: String](./identifier.md)
   The unique identifier for the item.
 
 

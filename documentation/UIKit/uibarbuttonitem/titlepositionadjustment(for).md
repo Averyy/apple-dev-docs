@@ -1,7 +1,8 @@
 # titlePositionAdjustment(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the title offset for specified bar metrics.
 
@@ -9,13 +10,17 @@ Returns the title offset for specified bar metrics.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func titlePositionAdjustment(for barMetrics: UIBarMetrics) -> UIOffset
+```
+
+```objc
+- (UIOffset) titlePositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ This offset is used to adjust the position of a title (if any) within a bordered
 
 ## See Also
 
-- [func setTitlePositionAdjustment(UIOffset, for: UIBarMetrics)](uibarbuttonitem/settitlepositionadjustment(_:for:).md)
+### Customizing the title placement
+- [func setTitlePositionAdjustment(UIOffset, for: UIBarMetrics)](./settitlepositionadjustment%28_,for%29.md)
   Sets the title offset for specified bar metrics.
 
 

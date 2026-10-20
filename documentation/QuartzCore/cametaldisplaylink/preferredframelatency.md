@@ -1,7 +1,8 @@
 # preferredFrameLatency
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time, in frames, your app requests to render a frame.
 
@@ -19,6 +20,10 @@ The amount of time, in frames, your app requests to render a frame.
 var preferredFrameLatency: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float preferredFrameLatency;
+```
+
 #### Discussion
 
 The final latency may be bigger if the system needs more time, such as for windowed modes on macOS.
@@ -27,9 +32,10 @@ The final latency may be bigger if the system needs more time, such as for windo
 
 ## See Also
 
-- [var preferredFrameRateRange: CAFrameRateRange](cametaldisplaylink/preferredframeraterange.md)
+### Configuring a Display Link
+- [var preferredFrameRateRange: CAFrameRateRange](./preferredframeraterange.md)
   A range of frequencies your app allows for frame updates, affecting how often the system invokes your delegate’s callback.
-- [var delegate: (any CAMetalDisplayLinkDelegate)?](cametaldisplaylink/delegate.md)
+- [var delegate: (any CAMetalDisplayLinkDelegate)?](./delegate.md)
   An instance of a type your app implements that responds to the system’s callbacks.
 
 

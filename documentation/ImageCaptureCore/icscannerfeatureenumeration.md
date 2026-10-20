@@ -1,7 +1,8 @@
 # ICScannerFeatureEnumeration
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A feature that can have one of several discrete values, strings or numbers.
 
@@ -14,38 +15,43 @@ A feature that can have one of several discrete values, strings or numbers.
 class ICScannerFeatureEnumeration
 ```
 
+```objc
+@interface ICScannerFeatureEnumeration : ICScannerFeature
+```
+
 ## Topics
 
 ### Instance Properties
-- [var currentValue: AnyObject](icscannerfeatureenumeration/currentvalue.md)
-- [var defaultValue: Any](icscannerfeatureenumeration/defaultvalue.md)
-- [var menuItemLabels: [String]](icscannerfeatureenumeration/menuitemlabels.md)
-- [var menuItemLabelsTooltips: [String]](icscannerfeatureenumeration/menuitemlabelstooltips.md)
-- [var values: [NSNumber]](icscannerfeatureenumeration/values.md)
+- [var currentValue: AnyObject](./icscannerfeatureenumeration/currentvalue.md)
+- [var defaultValue: Any](./icscannerfeatureenumeration/defaultvalue.md)
+- [var menuItemLabels: [String]](./icscannerfeatureenumeration/menuitemlabels.md)
+- [var menuItemLabelsTooltips: [String]](./icscannerfeatureenumeration/menuitemlabelstooltips.md)
+- [var values: [NSNumber]](./icscannerfeatureenumeration/values.md)
 
 ## Relationships
 
 ### Inherits From
-- [ICScannerFeature](icscannerfeature.md)
+- [ICScannerFeature](./icscannerfeature.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ICScannerFeature](icscannerfeature.md)
+### Features
+- [class ICScannerFeature](./icscannerfeature.md)
   An abstract class that describes a scanner feature.
-- [class ICScannerFeatureBoolean](icscannerfeatureboolean.md)
+- [class ICScannerFeatureBoolean](./icscannerfeatureboolean.md)
   A feature with a value of `YES` or `NO`.
-- [class ICScannerFeatureRange](icscannerfeaturerange.md)
+- [class ICScannerFeatureRange](./icscannerfeaturerange.md)
   A feature with a value that lies within a range.
-- [class ICScannerFeatureTemplate](icscannerfeaturetemplate.md)
+- [class ICScannerFeatureTemplate](./icscannerfeaturetemplate.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
-- [enum ICScannerFeatureType](icscannerfeaturetype.md)
+- [enum ICScannerFeatureType](./icscannerfeaturetype.md)
   The types of scanner features.
 
 

@@ -1,6 +1,8 @@
 # Placing entities using head and device transform
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [PlacingEntitiesUsingHeadAndDeviceTransform.zip](https://docs-assets.developer.apple.com/published/87329c74e5cd/PlacingEntitiesUsingHeadAndDeviceTransform.zip)
 
 Query and react to changes in the position and rotation of Apple Vision Pro.
 
@@ -10,24 +12,26 @@ Query and react to changes in the position and rotation of Apple Vision Pro.
 
 #### Overview
 
-This sample code project demonstrates how to create and display content that appears at a person’s head location, and follows a person’s view as they move their head in immersive spaces. It uses [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) and [`queryDeviceAnchor(atTimestamp:)`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/querydeviceanchor(attimestamp:)) to get the transform of the person’s head and Apple Vision Pro to place content relative to them.
+This sample code project demonstrates how to create and display content that appears at a person’s head location, and follows a person’s view as they move their head in immersive spaces. It uses [`AnchorEntity`](../RealityKit/anchorentity.md) and [`queryDeviceAnchor(atTimestamp:)`](../ARKit/worldtrackingprovider/querydeviceanchor%28attimestamp%29.md) to get the transform of the person’s head and Apple Vision Pro to place content relative to them.
 
 This sample creates the following two views and allows you to toggle between them:
 
 - A hummingbird and a feeder directly in front of the person wearing the device.
 - A hummingbird that flies to stay in the view of the person wearing the device.
 
+[Video: A video of a visionOS app in Simulator. A hummingbird flits behind a feeder in front of the person. The toggle changes to a view where the hummingbird flies to stay in the view as the person moves around.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/head-tracking-sim.mp4)
+
 The sample code project uses RealityKit and ARKit, respectively, to position the entities relative to the person. You can run the sample app in either Simulator or on-device.
 
-> **Note**: See [`Design considerations for vision and motion`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10078?time=678) and [`Motion`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines for guidance on continuously head-tracked entities.
+> **Note**: See [Design considerations for vision and motion](https://developer.apple.com/videos/play/wwdc2023/10078?time=678) and [Motion](https://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines for guidance on continuously head-tracked entities.
 
-#### Show Entities at a Persons Head Position
+#### Show entities at a person’s head position
 
-To launch the hummingbird feeder at the position of the wearer’s head, the sample uses `AnchorEntity` with the anchoring target of [`AnchoringComponent.Target.head`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/target-swift.enum/head). This target provides the center of the wearer’s head, rather than the position of the device itself. You can only use `AnchorEntity` in an immersive space. Although it allows you to anchor content to the wearer’s head, you can’t access its transform because there’s no authorization required. If you attempt to access the transform, the property returns the identity transform instead.
+To launch the hummingbird feeder at the position of the wearer’s head, the sample uses `AnchorEntity` with the anchoring target of [`AnchoringComponent.Target.head`](../RealityKit/anchoringcomponent/target-swift.enum/head.md). This target provides the center of the wearer’s head, rather than the position of the device itself. You can only use `AnchorEntity` in an immersive space. Although it allows you to anchor content to the wearer’s head, you can’t access its transform because there’s no authorization required. If you attempt to access the transform, the property returns the identity transform instead.
 
-> **Note**: You can get the transform of an `AnchorEntity` with a different [`AnchoringComponent.Target`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/target-swift.enum), such as a hand, by using a [`SpatialTrackingSession`](https://developer.apple.com/documentation/realitykit/spatialtrackingsession) and requesting authorization from the person using the app.
+> **Note**: You can get the transform of an `AnchorEntity` with a different [`AnchoringComponent.Target`](../RealityKit/anchoringcomponent/target-swift.enum.md), such as a hand, by using a [`SpatialTrackingSession`](../RealityKit/spatialtrackingsession.md) and requesting authorization from the person using the app.
 
-The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the [`AnchoringComponent.TrackingMode`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct) to [`once`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct/once) to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
+The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the [`AnchoringComponent.TrackingMode`](../RealityKit/anchoringcomponent/trackingmode-swift.struct.md) to [`once`](../RealityKit/anchoringcomponent/trackingmode-swift.struct/once.md) to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
 
 ```swift
 func startHeadPositionMode(content: RealityViewContent) {
@@ -54,15 +58,15 @@ func startHeadPositionMode(content: RealityViewContent) {
 }
 ```
 
-#### Move Entities Relative to Device Transform
+#### Move entities relative to device transform
 
-This sample contains a hummingbird that reacts to the wearer while they move around. It achieves this by creating a [`System`](https://developer.apple.com/documentation/realitykit/system) and using `queryDeviceAnchor` to update the entities in the scene with each scene update.
+This sample contains a hummingbird that reacts to the wearer while they move around. It achieves this by creating a [`System`](../RealityKit/system.md) and using `queryDeviceAnchor` to update the entities in the scene with each scene update.
 
 You can only use `queryDeviceAnchor` in an immersive space, but it doesn’t require authorization.
 
 > **Note**: `queryDeviceAnchor` gives you the transform of the device, not the wearer’s head. If you want to get the visual transform of the center of the wearer’s head, use `AnchorEntity(.head)`.
 
-The sample starts by creating a RealityKit system, which allows you to update the entities with each scene update. See [`Implementing systems for entities in a scene`](https://developer.apple.com/documentation/realitykit/implementing-systems-for-entities-in-a-scene) for information on creating a system class and using components to query entities. In the system, the app creates a query for entities with the `FollowComponent` [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) and an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) as follows:
+The sample starts by creating a RealityKit system, which allows you to update the entities with each scene update. See [Implementing systems for entities in a scene](../RealityKit/implementing-systems-for-entities-in-a-scene.md) for information on creating a system class and using components to query entities. In the system, the app creates a query for entities with the `FollowComponent` [`WorldTrackingProvider`](../ARKit/worldtrackingprovider.md) and an [`ARKitSession`](../ARKit/arkitsession.md) as follows:
 
 ```swift
 public struct FollowSystem: System {
@@ -97,7 +101,7 @@ public struct FollowSystem: System {
 }
 ```
 
-The sample adds a custom [`Component`](https://developer.apple.com/documentation/realitykit/component) named `FollowComponent` to the root entity of the hummingbird entity, and then uses it to query the entities in the scene to apply the movement to.
+The sample adds a custom [`Component`](../RealityKit/component.md) named `FollowComponent` to the root entity of the hummingbird entity, and then uses it to query the entities in the scene to apply the movement to.
 
 > ❗ **Important**: Make sure to register both the system and the component.
 
@@ -142,35 +146,36 @@ func startFollowMode() {
 
 ## See Also
 
-- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
+### RealityKit and Reality Composer Pro
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
-- [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
+- [Chaparral Village: Building an immersive visionOS adventure game](./chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
-- [Designing no-code games with Reality Composer Pro 3](designing-no-code-games-in-reality-composer-pro-3.md)
+- [Designing no-code games with Reality Composer Pro 3](./designing-no-code-games-in-reality-composer-pro-3.md)
   Build a video game in Reality Composer Pro without code using Script Graphs.
-- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+- [Petite Asteroids: Building a volumetric visionOS game](./petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [BOT-anist](bot-anist.md)
+- [BOT-anist](./bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
-- [Swift Splash](swift-splash.md)
+- [Swift Splash](./swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Diorama](diorama.md)
+- [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
-- [Building an immersive media viewing experience](building-an-immersive-media-viewing-experience.md)
+- [Building an immersive media viewing experience](./building-an-immersive-media-viewing-experience.md)
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
-- [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](./enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
-- [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
+- [Understanding the modular architecture of RealityKit](./understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
-- [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
+- [Using transforms to move, scale, and rotate entities](./understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
+- [Capturing screenshots and video from Apple Vision Pro for 2D viewing](./capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
-- [Implementing object tracking in your app](implementing-object-tracking-in-your-app.md)
+- [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
-- [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
+- [Manipulating entities with solid collisions](./manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 
 

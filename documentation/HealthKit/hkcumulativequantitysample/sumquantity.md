@@ -1,7 +1,8 @@
 # sumQuantity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sum of all the quantities contained by the sample.
 
@@ -18,6 +19,10 @@ The sum of all the quantities contained by the sample.
 ```swift
 @NSCopying
 var sumQuantity: HKQuantity { get }
+```
+
+```objc
+@property (copy, readonly) HKQuantity * sumQuantity;
 ```
 
 

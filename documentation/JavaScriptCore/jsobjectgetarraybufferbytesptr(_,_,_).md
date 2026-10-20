@@ -1,7 +1,8 @@
 # JSObjectGetArrayBufferBytesPtr(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a pointer to the data buffer that serves as the backing store for a JavaScript typed array object.
 
@@ -19,6 +20,10 @@ Returns a pointer to the data buffer that serves as the backing store for a Java
 func JSObjectGetArrayBufferBytesPtr(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ exception: UnsafeMutablePointer<JSValueRef?>!) -> UnsafeMutableRawPointer!
 ```
 
+```c
+void *JSObjectGetArrayBufferBytesPtr(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
+```
+
 #### Discussion
 
 The pointer that this function returns is temporary and may not remain valid across JavaScriptCore API calls.
@@ -26,14 +31,15 @@ The pointer that this function returns is temporary and may not remain valid acr
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The [`JSObjectRef`](jsobjectref.md) with the typed array type data pointer to obtain.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
+- `object`: The [`JSObjectRef`](./jsobjectref.md) with the typed array type data pointer to obtain.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 
-- [func JSObjectMakeArrayBufferWithBytesNoCopy(JSContextRef!, UnsafeMutableRawPointer!, Int, JSTypedArrayBytesDeallocator!, UnsafeMutableRawPointer!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmakearraybufferwithbytesnocopy(_:_:_:_:_:_:).md)
+### Working with Array Buffers
+- [func JSObjectMakeArrayBufferWithBytesNoCopy(JSContextRef!, UnsafeMutableRawPointer!, Int, JSTypedArrayBytesDeallocator!, UnsafeMutableRawPointer!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmakearraybufferwithbytesnocopy%28_,_,_,_,_,_%29.md)
   Creates a JavaScript array buffer object from an existing pointer.
-- [func JSObjectGetArrayBufferByteLength(JSContextRef!, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> Int](jsobjectgetarraybufferbytelength(_:_:_:).md)
+- [func JSObjectGetArrayBufferByteLength(JSContextRef!, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> Int](./jsobjectgetarraybufferbytelength%28_,_,_%29.md)
   Returns the number of bytes in a JavaScript data object.
 
 

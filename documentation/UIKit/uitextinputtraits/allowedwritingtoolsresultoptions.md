@@ -1,7 +1,8 @@
 # allowedWritingToolsResultOptions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 optional var allowedWritingToolsResultOptions: UIWritingToolsResultOptions { get set }
+```
+
+```objc
+@property UIWritingToolsResultOptions allowedWritingToolsResultOptions;
 ```
 
 

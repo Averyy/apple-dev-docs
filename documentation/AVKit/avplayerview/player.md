@@ -1,7 +1,8 @@
 # player
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player instance that provides the media content for the view.
 
@@ -12,6 +13,10 @@ The player instance that provides the media content for the view.
 
 ```swift
 var player: AVPlayer? { get set }
+```
+
+```objc
+@property (strong, nullable) AVPlayer * player;
 ```
 
 

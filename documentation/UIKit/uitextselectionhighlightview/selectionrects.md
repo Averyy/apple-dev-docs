@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The rectangles to draw with the selection highlight.
@@ -17,6 +18,10 @@ The rectangles to draw with the selection highlight.
 
 ```swift
 var selectionRects: [UITextSelectionRect] { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSArray<UITextSelectionRect *> * selectionRects;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the control change event.
 
@@ -19,11 +20,16 @@ The value of the control change event.
 var value: UInt32 { get }
 ```
 
+```objc
+@property (readonly) UInt32 value;
+```
+
 ## See Also
 
-- [var messageType: AVMIDIControlChangeEvent.MessageType](avmidicontrolchangeevent/messagetype-swift.property.md)
+### Inspecting a control change event
+- [var messageType: AVMIDIControlChangeEvent.MessageType](./messagetype-swift.property.md)
   The type of control change message.
-- [AVMIDIControlChangeEvent.MessageType](avmidicontrolchangeevent/messagetype-swift.enum.md)
+- [AVMIDIControlChangeEvent.MessageType](./messagetype-swift.enum.md)
   Constants that represents control change event types.
 
 

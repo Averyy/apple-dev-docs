@@ -1,14 +1,15 @@
 # vfs_sync
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int (*vfs_sync)(struct mount *mp, int waitfor, vfs_context_t context);
 ```
 

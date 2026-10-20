@@ -1,7 +1,8 @@
 # keySetReadAllIndices(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func keySetReadAllIndices(completion: @escaping @Sendable (MTRGroupKeyManagementClusterKeySetReadAllIndicesResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func keySetReadAllIndices() async throws -> MTRGroupKeyManagementClusterKeySetReadAllIndicesResponseParams
+```
+
+```objc
+- (void) keySetReadAllIndicesWithCompletion:(void (^)(MTRGroupKeyManagementClusterKeySetReadAllIndicesResponseParams *data, NSError *error)) completion;
 ```
 
 

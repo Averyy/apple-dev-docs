@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accessor for reading a blend shape weights data in the set.
 
@@ -17,6 +18,12 @@ Accessor for reading a blend shape weights data in the set.
 
 ```swift
 subscript(blendShapeName: String) -> BlendShapeWeightsSet.Element? { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript(index: BlendShapeWeightsSet.Index) -> BlendShapeWeightsSet.Element { get set }
 ```
 
 #### Return Value

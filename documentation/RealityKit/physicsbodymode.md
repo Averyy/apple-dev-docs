@@ -1,7 +1,8 @@
 # PhysicsBodyMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The ways that a physics body can move in response to physical forces.
 
@@ -11,7 +12,7 @@ The ways that a physics body can move in response to physical forces.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,26 +23,27 @@ enum PhysicsBodyMode
 ## Topics
 
 ### Setting the physics body mode
-- [PhysicsBodyMode.static](physicsbodymode/static.md)
+- [PhysicsBodyMode.static](./physicsbodymode/static.md)
   The body never moves.
-- [PhysicsBodyMode.kinematic](physicsbodymode/kinematic.md)
+- [PhysicsBodyMode.kinematic](./physicsbodymode/kinematic.md)
   The user controls body movement.
-- [PhysicsBodyMode.dynamic](physicsbodymode/dynamic.md)
+- [PhysicsBodyMode.dynamic](./physicsbodymode/dynamic.md)
   Forces and collisions control body movement.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct PhysicsBodyComponent](physicsbodycomponent.md)
+### Physical properties
+- [struct PhysicsBodyComponent](./physicsbodycomponent.md)
   A component that defines an entity’s behavior in physics body simulations.
-- [class PhysicsMaterialResource](physicsmaterialresource.md)
+- [class PhysicsMaterialResource](./physicsmaterialresource.md)
   Material properties, like friction, of a physically simulated object.
-- [struct PhysicsMassProperties](physicsmassproperties.md)
+- [struct PhysicsMassProperties](./physicsmassproperties.md)
   Mass properties of a physics body.
 
 

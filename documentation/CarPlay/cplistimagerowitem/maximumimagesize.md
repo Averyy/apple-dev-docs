@@ -1,19 +1,26 @@
 # maximumImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum size of an image that an image row can display.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
+- iOS 14.0+ - Deprecated in 26.0
+- iPadOS 14.0+ - Deprecated in 26.0
+- Mac Catalyst 14.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use +[CPListImageRowItemElement maximumImageSize] on an appropriate element
 
 ## Declaration
 
 ```swift
 class var maximumImageSize: CGSize { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CGSize maximumImageSize;
 ```
 
 #### Discussion
@@ -22,13 +29,14 @@ At runtime, use this value to determine the maximum size that CarPlay allows for
 
 ## See Also
 
-- [var text: String?](cplistimagerowitem/text.md)
+### Managing Content
+- [var text: String?](./text.md)
   The list item’s primary text.
-- [var gridImages: [UIImage]](cplistimagerowitem/gridimages.md)
+- [var gridImages: [UIImage]](./gridimages.md)
   The images that appear in the list item’s image row.
-- [func update([UIImage])](cplistimagerowitem/update(_:).md)
+- [func update([UIImage])](./update%28_%29.md)
   Adds, removes, reorders, or updates the images in the list item’s image row.
-- [let CPMaximumNumberOfGridImages: Int](cpmaximumnumberofgridimages.md)
+- [let CPMaximumNumberOfGridImages: Int](../cpmaximumnumberofgridimages.md)
   The maximum number of images that an image row can contain.
 
 

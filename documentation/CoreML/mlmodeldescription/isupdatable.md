@@ -1,7 +1,8 @@
 # isUpdatable
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can update the model with additional training.
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether you can update the model with additional 
 var isUpdatable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isUpdatable;
+```
+
 ## See Also
 
-- [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/traininginputdescriptionsbyname.md)
+### Accessing update descriptions
+- [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](./traininginputdescriptionsbyname.md)
   A dictionary of the training input feature descriptions, which the model keys by the input’s name.
-- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](mlmodeldescription/parameterdescriptionsbykey.md)
+- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](./parameterdescriptionsbykey.md)
   A dictionary of the descriptions for the model’s parameters.
-- [class MLParameterDescription](mlparameterdescription.md)
+- [class MLParameterDescription](../mlparameterdescription.md)
   A description of a model parameter that includes a default value and a constraint, if applicable.
 
 

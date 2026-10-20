@@ -1,14 +1,15 @@
 # right
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right edge of the rectangle.
 
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,15 +19,20 @@ The right edge of the rectangle.
 static var right: UIRectEdge { get }
 ```
 
+```c
+UIRectEdgeRight
+```
+
 ## See Also
 
-- [static var top: UIRectEdge](uirectedge/top.md)
+### Edges
+- [static var top: UIRectEdge](./top.md)
   The top edge of the rectangle.
-- [static var left: UIRectEdge](uirectedge/left.md)
+- [static var left: UIRectEdge](./left.md)
   The left edge of the rectangle.
-- [static var bottom: UIRectEdge](uirectedge/bottom.md)
+- [static var bottom: UIRectEdge](./bottom.md)
   The bottom edge of the rectangle.
-- [static var all: UIRectEdge](uirectedge/all.md)
+- [static var all: UIRectEdge](./all.md)
   All edges of the rectangle.
 
 

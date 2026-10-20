@@ -1,7 +1,8 @@
 # ASImportableEditableField
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A field that someone can edit within a credential.
 
@@ -20,40 +21,41 @@ struct ASImportableEditableField
 
 #### Overview
 
-Examples of editable fields include [`userName`](asimportablecredential/basicauthentication/username.md) and [`password`](asimportablecredential/basicauthentication/password.md) in [`ASImportableCredential.BasicAuthentication`](asimportablecredential/basicauthentication.md).
+Examples of editable fields include [`userName`](./asimportablecredential/basicauthentication/username.md) and [`password`](./asimportablecredential/basicauthentication/password.md) in [`ASImportableCredential.BasicAuthentication`](./asimportablecredential/basicauthentication.md).
 
-This type is a representation of `EditableField` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `EditableField` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/foundation/jsondecoder/decode(_:from:)).
+This type is a representation of `EditableField` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `EditableField` to initialize an instance of this struct by using a [`JSONDecoder`](../Foundation/jsondecoder.md) and calling [`decode(_:from:)`](../Foundation/jsondecoder/decode%28_,from%29.md).
 
 ## Topics
 
 ### Creating an editable field
-- [init(id: Data?, fieldType: ASImportableEditableField.FieldType, value: String, label: String?)](asimportableeditablefield/init(id:fieldtype:value:label:).md)
+- [init(id: Data?, fieldType: ASImportableEditableField.FieldType, value: String, label: String?)](./asimportableeditablefield/init%28id,fieldtype,value,label%29.md)
   Creates an editable field instance.
 ### Accessing field properties
-- [var id: Data?](asimportableeditablefield/id.md)
+- [var id: Data?](./asimportableeditablefield/id.md)
   A unique identifier for this editable field.
-- [var fieldType: ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.property.md)
+- [var fieldType: ASImportableEditableField.FieldType](./asimportableeditablefield/fieldtype-swift.property.md)
   The type of this editable field.
-- [ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.enum.md)
+- [ASImportableEditableField.FieldType](./asimportableeditablefield/fieldtype-swift.enum.md)
   An enumeration of editable field types.
-- [var value: String](asimportableeditablefield/value.md)
+- [var value: String](./asimportableeditablefield/value.md)
   The value stored in this editable field.
-- [var label: String?](asimportableeditablefield/label.md)
+- [var label: String?](./asimportableeditablefield/label.md)
   A value describing the field, if any.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var password: ASImportableEditableField?](asimportablecredential/basicauthentication/password.md)
+### Accessing authentication properties
+- [var password: ASImportableEditableField?](./asimportablecredential/basicauthentication/password.md)
   The password associated with the credential.
 
 

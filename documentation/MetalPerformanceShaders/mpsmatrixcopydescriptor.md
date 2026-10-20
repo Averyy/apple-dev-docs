@@ -1,7 +1,8 @@
 # MPSMatrixCopyDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of multiple matrix copy operations.
 
@@ -19,34 +20,39 @@ A description of multiple matrix copy operations.
 class MPSMatrixCopyDescriptor
 ```
 
+```objc
+@interface MPSMatrixCopyDescriptor : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, count: Int)](mpsmatrixcopydescriptor/init(device:count:).md)
-- [init(sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], offsetVector: MPSVector?, offset: Int)](mpsmatrixcopydescriptor/init(sourcematrices:destinationmatrices:offsetvector:offset:).md)
-- [convenience init(sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](mpsmatrixcopydescriptor/init(sourcematrix:destinationmatrix:offsets:).md)
+- [init(device: any MTLDevice, count: Int)](./mpsmatrixcopydescriptor/init%28device,count%29.md)
+- [init(sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], offsetVector: MPSVector?, offset: Int)](./mpsmatrixcopydescriptor/init%28sourcematrices,destinationmatrices,offsetvector,offset%29.md)
+- [convenience init(sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](./mpsmatrixcopydescriptor/init%28sourcematrix,destinationmatrix,offsets%29.md)
 ### Instance Methods
-- [func setCopyOperationAt(Int, sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](mpsmatrixcopydescriptor/setcopyoperationat(_:sourcematrix:destinationmatrix:offsets:).md)
+- [func setCopyOperationAt(Int, sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](./mpsmatrixcopydescriptor/setcopyoperationat%28_,sourcematrix,destinationmatrix,offsets%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSMatrixCopy](mpsmatrixcopy.md)
+### Matrix Copying Operations
+- [class MPSMatrixCopy](./mpsmatrixcopy.md)
   A class that can perform multiple matrix copy operations.
-- [class MPSMatrixCopyToImage](mpsmatrixcopytoimage.md)
+- [class MPSMatrixCopyToImage](./mpsmatrixcopytoimage.md)
   A kernel that copies matrix data to a Metal Performance Shaders image.
-- [class MPSImageCopyToMatrix](mpsimagecopytomatrix.md)
+- [class MPSImageCopyToMatrix](./mpsimagecopytomatrix.md)
   A class that copies image data to a matrix.
 
 

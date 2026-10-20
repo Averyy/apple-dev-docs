@@ -1,7 +1,8 @@
 # authorizationRestricted
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -19,13 +20,14 @@ var authorizationRestricted: Bool { get }
 
 ## See Also
 
-- [var alwaysAuthorizationDenied: Bool](clservicesession-pt7n/diagnostic/alwaysauthorizationdenied.md)
-- [var authorizationDenied: Bool](clservicesession-pt7n/diagnostic/authorizationdenied.md)
-- [var authorizationDeniedGlobally: Bool](clservicesession-pt7n/diagnostic/authorizationdeniedglobally.md)
-- [var authorizationRequestInProgress: Bool](clservicesession-pt7n/diagnostic/authorizationrequestinprogress.md)
-- [var fullAccuracyDenied: Bool](clservicesession-pt7n/diagnostic/fullaccuracydenied.md)
-- [var insufficientlyInUse: Bool](clservicesession-pt7n/diagnostic/insufficientlyinuse.md)
-- [var serviceSessionRequired: Bool](clservicesession-pt7n/diagnostic/servicesessionrequired.md)
+### Diagnostic values
+- [var alwaysAuthorizationDenied: Bool](./alwaysauthorizationdenied.md)
+- [var authorizationDenied: Bool](./authorizationdenied.md)
+- [var authorizationDeniedGlobally: Bool](./authorizationdeniedglobally.md)
+- [var authorizationRequestInProgress: Bool](./authorizationrequestinprogress.md)
+- [var fullAccuracyDenied: Bool](./fullaccuracydenied.md)
+- [var insufficientlyInUse: Bool](./insufficientlyinuse.md)
+- [var serviceSessionRequired: Bool](./servicesessionrequired.md)
 
 
 ---

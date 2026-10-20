@@ -1,7 +1,8 @@
 # InAppPurchaseLocalization.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase localization resource.
 
@@ -10,20 +11,21 @@ Attributes that describe an In-App Purchase localization resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalization.Attributes
 ```
 
 ## Properties
 
 - `description` (string)
-- `locale` (string): The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string): The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `name` (string)
-- `state` (string)
+- `state` (string): **Allowed Values**: `PREPARE_FOR_SUBMISSION`, `WAITING_FOR_REVIEW`, `APPROVED`, `REJECTED`
 
 ## See Also
 
-- [object InAppPurchaseLocalization.Relationships](inapppurchaselocalization/relationships-data.dictionary.md)
+### Objects and types
+- [object InAppPurchaseLocalization.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

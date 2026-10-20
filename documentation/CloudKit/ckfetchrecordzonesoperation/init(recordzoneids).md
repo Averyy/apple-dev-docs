@@ -1,7 +1,8 @@
 # init(recordZoneIDs:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for fetching the specified record zones.
 
@@ -10,7 +11,7 @@ Creates an operation for fetching the specified record zones.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,17 +21,22 @@ Creates an operation for fetching the specified record zones.
 convenience init(recordZoneIDs zoneIDs: [CKRecordZone.ID])
 ```
 
+```objc
+- (instancetype) initWithRecordZoneIDs:(NSArray<CKRecordZoneID *> *) zoneIDs;
+```
+
 #### Discussion
 
-After creating the operation, assign a value to the [`fetchRecordZonesCompletionBlock`](ckfetchrecordzonesoperation/fetchrecordzonescompletionblock.md) property so you can process the results.
+After creating the operation, assign a value to the [`fetchRecordZonesCompletionBlock`](./fetchrecordzonescompletionblock.md) property so you can process the results.
 
 ## Parameters
 
-- `zoneIDs`: An array of [`CKRecordZone.ID`](ckrecordzone/id.md) objects that represents the zones you want to retrieve. If you provide an empty array, you must set the [`recordZoneIDs`](ckfetchrecordzonesoperation/recordzoneids.md) property before you execute the operation.
+- `zoneIDs`: An array of [`CKRecordZone.ID`](../ckrecordzone/id.md) objects that represents the zones you want to retrieve. If you provide an empty array, you must set the [`recordZoneIDs`](./recordzoneids.md) property before you execute the operation.
 
 ## See Also
 
-- [init()](ckfetchrecordzonesoperation/init.md)
+### Initializing the Zone Fetch Operation
+- [init()](./init%28%29.md)
   Creates an empty fetch zones operation.
 
 

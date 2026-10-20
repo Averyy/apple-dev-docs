@@ -1,7 +1,8 @@
 # HumanBodyActionCounter.CumulativeSumSequence.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async iterator of cumulative count sequence.
 
@@ -22,17 +23,18 @@ struct Iterator
 ## Topics
 
 ### Getting the next element
-- [func next() async throws -> TemporalFeature<Float>?](humanbodyactioncounter/cumulativesumsequence/iterator/next.md)
+- [func next() async throws -> TemporalFeature<Float>?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or nil if no next element exists.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterator](./makeasynciterator%28%29.md)
   Constructs an iterator.
 
 

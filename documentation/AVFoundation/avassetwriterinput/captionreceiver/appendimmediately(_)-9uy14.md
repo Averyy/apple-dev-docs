@@ -1,7 +1,8 @@
 # appendImmediately(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the caption synchronously if the input is ready for more media data.
 
@@ -23,7 +24,7 @@ Returns true if the append was successful, false if the input was not ready for 
 
 #### Discussion
 
-> **Note**: An error if the underlying writer failed.
+> **Throws**: An error if the underlying writer failed.
 
 ## Parameters
 
@@ -31,13 +32,14 @@ Returns true if the append was successful, false if the input was not ready for 
 
 ## See Also
 
-- [func append(AVCaptionGroup) async throws](avassetwriterinput/captionreceiver/append(_:)-4opbd.md)
+### Appending captions
+- [func append(AVCaptionGroup) async throws](./append%28_%29-4opbd.md)
   Suspends until the input is ready for more media data, then appends the caption group.
-- [func append(AVCaption) async throws](avassetwriterinput/captionreceiver/append(_:)-4wpi2.md)
+- [func append(AVCaption) async throws](./append%28_%29-4wpi2.md)
   Suspends until the input is ready for more media data, then appends the caption.
-- [func appendImmediately(AVCaptionGroup) throws -> Bool](avassetwriterinput/captionreceiver/appendimmediately(_:)-7q21r.md)
+- [func appendImmediately(AVCaptionGroup) throws -> Bool](./appendimmediately%28_%29-7q21r.md)
   Appends the caption group synchronously if the input is ready for more media data.
-- [func finish()](avassetwriterinput/captionreceiver/finish.md)
+- [func finish()](./finish%28%29.md)
   Indicates to the AVAssetWriter that no more buffers will be appended to this receiver.
 
 

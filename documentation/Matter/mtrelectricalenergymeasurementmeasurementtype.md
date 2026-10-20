@@ -1,7 +1,8 @@
 # MTRElectricalEnergyMeasurementMeasurementType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,36 +19,40 @@
 enum MTRElectricalEnergyMeasurementMeasurementType
 ```
 
+```c
+enum MTRElectricalEnergyMeasurementMeasurementType : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRElectricalEnergyMeasurementMeasurementType.activeCurrent](mtrelectricalenergymeasurementmeasurementtype/activecurrent.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.activePower](mtrelectricalenergymeasurementmeasurementtype/activepower.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.apparentCurrent](mtrelectricalenergymeasurementmeasurementtype/apparentcurrent.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.apparentPower](mtrelectricalenergymeasurementmeasurementtype/apparentpower.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.electricalEnergy](mtrelectricalenergymeasurementmeasurementtype/electricalenergy.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.frequency](mtrelectricalenergymeasurementmeasurementtype/frequency.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.neutralCurrent](mtrelectricalenergymeasurementmeasurementtype/neutralcurrent.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.powerFactor](mtrelectricalenergymeasurementmeasurementtype/powerfactor.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.reactiveCurrent](mtrelectricalenergymeasurementmeasurementtype/reactivecurrent.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.reactivePower](mtrelectricalenergymeasurementmeasurementtype/reactivepower.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.rmsCurrent](mtrelectricalenergymeasurementmeasurementtype/rmscurrent.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.rmsPower](mtrelectricalenergymeasurementmeasurementtype/rmspower.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.rmsVoltage](mtrelectricalenergymeasurementmeasurementtype/rmsvoltage.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.unspecified](mtrelectricalenergymeasurementmeasurementtype/unspecified.md)
-- [MTRElectricalEnergyMeasurementMeasurementType.voltage](mtrelectricalenergymeasurementmeasurementtype/voltage.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.activeCurrent](./mtrelectricalenergymeasurementmeasurementtype/activecurrent.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.activePower](./mtrelectricalenergymeasurementmeasurementtype/activepower.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.apparentCurrent](./mtrelectricalenergymeasurementmeasurementtype/apparentcurrent.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.apparentPower](./mtrelectricalenergymeasurementmeasurementtype/apparentpower.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.electricalEnergy](./mtrelectricalenergymeasurementmeasurementtype/electricalenergy.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.frequency](./mtrelectricalenergymeasurementmeasurementtype/frequency.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.neutralCurrent](./mtrelectricalenergymeasurementmeasurementtype/neutralcurrent.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.powerFactor](./mtrelectricalenergymeasurementmeasurementtype/powerfactor.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.reactiveCurrent](./mtrelectricalenergymeasurementmeasurementtype/reactivecurrent.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.reactivePower](./mtrelectricalenergymeasurementmeasurementtype/reactivepower.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.rmsCurrent](./mtrelectricalenergymeasurementmeasurementtype/rmscurrent.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.rmsPower](./mtrelectricalenergymeasurementmeasurementtype/rmspower.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.rmsVoltage](./mtrelectricalenergymeasurementmeasurementtype/rmsvoltage.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.unspecified](./mtrelectricalenergymeasurementmeasurementtype/unspecified.md)
+- [MTRElectricalEnergyMeasurementMeasurementType.voltage](./mtrelectricalenergymeasurementmeasurementtype/voltage.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrelectricalenergymeasurementmeasurementtype/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrelectricalenergymeasurementmeasurementtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

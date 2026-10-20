@@ -1,16 +1,21 @@
 # team_id
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var team_id: es_string_token_t
+```
+
+```c
+es_string_token_t team_id;
 ```
 
 

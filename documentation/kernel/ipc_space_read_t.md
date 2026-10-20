@@ -1,14 +1,15 @@
 # ipc_space_read_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ipc_space *ipc_space_read_t;
 ```
 

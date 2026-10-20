@@ -1,17 +1,22 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu associated with the pop-up button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var menu: NSMenu? { get set }
+```
+
+```objc
+@property (strong, nullable) NSMenu * menu;
 ```
 
 #### Discussion
@@ -20,19 +25,20 @@ If another menu was already associated with the pop-up button, this method relea
 
 ## See Also
 
-- [var numberOfItems: Int](nspopupbutton/numberofitems.md)
+### Getting menu items
+- [var numberOfItems: Int](./numberofitems.md)
   The number of items in the menu.
-- [var itemArray: [NSMenuItem]](nspopupbutton/itemarray.md)
+- [var itemArray: [NSMenuItem]](./itemarray.md)
   The array of menu item objects associated with the button.
-- [func item(at: Int) -> NSMenuItem?](nspopupbutton/item(at:).md)
+- [func item(at: Int) -> NSMenuItem?](./item%28at%29.md)
   Returns the menu item at the specified index.
-- [func itemTitle(at: Int) -> String](nspopupbutton/itemtitle(at:).md)
+- [func itemTitle(at: Int) -> String](./itemtitle%28at%29.md)
   Returns the title of the item at the specified index.
-- [var itemTitles: [String]](nspopupbutton/itemtitles.md)
+- [var itemTitles: [String]](./itemtitles.md)
   An array of strings corresponding to the titles of the items in the menu.
-- [func item(withTitle: String) -> NSMenuItem?](nspopupbutton/item(withtitle:).md)
+- [func item(withTitle: String) -> NSMenuItem?](./item%28withtitle%29.md)
   Returns the menu item with the specified title.
-- [var lastItem: NSMenuItem?](nspopupbutton/lastitem.md)
+- [var lastItem: NSMenuItem?](./lastitem.md)
   The last item in the menu.
 
 

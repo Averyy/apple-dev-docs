@@ -1,14 +1,15 @@
 # kdebug_timestamp_from_continuous
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t kdebug_timestamp_from_continuous(uint64_t conttime);
 ```
 

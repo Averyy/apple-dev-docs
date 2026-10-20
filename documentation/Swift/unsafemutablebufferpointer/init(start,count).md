@@ -1,7 +1,8 @@
 # init(start:count:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new buffer pointer over the specified number of contiguous instances beginning at the given pointer.
 

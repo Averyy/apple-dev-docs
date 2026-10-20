@@ -1,7 +1,8 @@
 # crossfade
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A smooth overlap between the currently playing item and the next item with default options.
 

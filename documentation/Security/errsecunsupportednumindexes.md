@@ -1,7 +1,8 @@
 # errSecUnsupportedNumIndexes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of indexes is not supported.
 
@@ -18,6 +19,10 @@ The number of indexes is not supported.
 
 ```swift
 var errSecUnsupportedNumIndexes: OSStatus { get }
+```
+
+```c
+errSecUnsupportedNumIndexes
 ```
 
 

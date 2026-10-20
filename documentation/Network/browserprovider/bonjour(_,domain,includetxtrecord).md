@@ -1,7 +1,8 @@
 # bonjour(_:domain:includeTxtRecord:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a Bonjour browser provider used to browse for Bonjour services.
 
@@ -19,6 +20,8 @@ Create a Bonjour browser provider used to browse for Bonjour services.
 ```swift
 static func bonjour(_ type: String, domain: String? = nil, includeTxtRecord: Bool = false) -> Bonjour
 ```
+
+Available when `Self` is `Bonjour`.
 
 ## Parameters
 

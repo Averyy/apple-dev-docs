@@ -1,7 +1,8 @@
 # sourceApplication
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle ID of the app that originated the request.
 
@@ -16,6 +17,10 @@ The bundle ID of the app that originated the request.
 
 ```swift
 var sourceApplication: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * sourceApplication;
 ```
 
 #### Discussion

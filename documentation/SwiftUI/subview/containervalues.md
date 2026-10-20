@@ -1,7 +1,8 @@
 # containerValues
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container values associated with the given subview.
 

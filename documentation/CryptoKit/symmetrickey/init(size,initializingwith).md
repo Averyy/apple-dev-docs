@@ -1,7 +1,8 @@
 # init(size:initializingWith:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new key of the given size where the key contents are initialized via a callback.
 
@@ -22,7 +23,7 @@ init<E>(size: SymmetricKeySize, initializingWith callback: @_lifetime(0: copy 0)
 
 ## Parameters
 
-- `size`: The size of the key to generate. You can use one of the standard sizes, like [`bits256`](symmetrickeysize/bits256.md), or you can create a key of custom length by initializing a [`SymmetricKeySize`](symmetrickeysize.md) instance with a non-standard value.
+- `size`: The size of the key to generate. You can use one of the standard sizes, like [`bits256`](../symmetrickeysize/bits256.md), or you can create a key of custom length by initializing a [`SymmetricKeySize`](../symmetrickeysize.md) instance with a non-standard value.
 - `callback`: A callback that will be invoked to initialize the contents of the key. It must initialize the full set of size.bitCount / 8 bytes in the provided output span.
 
 

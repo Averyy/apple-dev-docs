@@ -1,6 +1,8 @@
 # Rendering a curve primitive in a ray tracing scene
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [RenderingACurvePrimitiveInARayTracingScene.zip](https://docs-assets.developer.apple.com/published/8df3074149f0/RenderingACurvePrimitiveInARayTracingScene.zip)
 
 Implement ray traced rendering using GPU-based parallel processing.
 
@@ -13,9 +15,9 @@ Implement ray traced rendering using GPU-based parallel processing.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session [`10128: Your guide to Metal ray tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10128).
+> **Note**: This sample code project is associated with WWDC23 session [10128: Your guide to Metal ray tracing](https://developer.apple.com/wwdc23/10128).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This sample requires the following system and software configuration:
 
@@ -25,13 +27,14 @@ This sample requires the following system and software configuration:
 
 ## See Also
 
-- [Rendering reflections in real time using ray tracing](rendering-reflections-in-real-time-using-ray-tracing.md)
+### Ray tracing
+- [Rendering reflections in real time using ray tracing](./rendering-reflections-in-real-time-using-ray-tracing.md)
   Implement realistic real-time lighting by dynamically generating reflection maps by encoding a ray-tracing compute pass.
-- [Accelerating ray tracing using Metal](accelerating-ray-tracing-using-metal.md)
+- [Accelerating ray tracing using Metal](./accelerating-ray-tracing-using-metal.md)
   Implement ray-traced rendering using GPU-based parallel processing.
-- [Control the ray tracing process using intersection queries](control-the-ray-tracing-process-using-intersection-queries.md)
+- [Control the ray tracing process using intersection queries](./control-the-ray-tracing-process-using-intersection-queries.md)
   Explicitly enumerate a ray’s intersections with acceleration structures by creating an intersection query object.
-- [Accelerating ray tracing and motion blur using Metal](accelerating-ray-tracing-and-motion-blur-using-metal.md)
+- [Accelerating ray tracing and motion blur using Metal](./accelerating-ray-tracing-and-motion-blur-using-metal.md)
   Generate ray-traced images with motion blur using GPU-based parallel processing.
 
 

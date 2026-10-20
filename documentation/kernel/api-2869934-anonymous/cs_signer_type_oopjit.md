@@ -1,14 +1,15 @@
 # CS_SIGNER_TYPE_OOPJIT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CS_SIGNER_TYPE_OOPJIT = 9
 ```
 

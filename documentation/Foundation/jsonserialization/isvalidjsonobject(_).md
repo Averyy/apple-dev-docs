@@ -1,7 +1,8 @@
 # isValidJSONObject(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the serializer can convert a given object to JSON data.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether the serializer can convert a give
 class func isValidJSONObject(_ obj: Any) -> Bool
 ```
 
+```objc
++ (BOOL) isValidJSONObject:(id) obj;
+```
+
 #### Return Value
 
 `true` if `obj` can be converted to JSON data; otherwise, `false`.
@@ -30,11 +35,12 @@ class func isValidJSONObject(_ obj: Any) -> Bool
 
 ## See Also
 
-- [class func data(withJSONObject: Any, options: JSONSerialization.WritingOptions) throws -> Data](jsonserialization/data(withjsonobject:options:).md)
+### Creating JSON Data
+- [class func data(withJSONObject: Any, options: JSONSerialization.WritingOptions) throws -> Data](./data%28withjsonobject,options%29.md)
   Returns JSON data from a Foundation object.
-- [class func writeJSONObject(Any, to: OutputStream, options: JSONSerialization.WritingOptions, error: NSErrorPointer) -> Int](jsonserialization/writejsonobject(_:to:options:error:).md)
+- [class func writeJSONObject(Any, to: OutputStream, options: JSONSerialization.WritingOptions, error: NSErrorPointer) -> Int](./writejsonobject%28_,to,options,error%29.md)
   Writes a given JSON object to a stream.
-- [JSONSerialization.WritingOptions](jsonserialization/writingoptions.md)
+- [JSONSerialization.WritingOptions](./writingoptions.md)
   Options for writing JSON data.
 
 

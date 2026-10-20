@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentType.pixelBuffer
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sample buffer is carrying a CoreVideo pixel buffer.
 

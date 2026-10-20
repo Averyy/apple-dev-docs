@@ -1,7 +1,8 @@
 # removeParamDescriptor(withKeyword:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the receiver’s parameter descriptor identified by the specified keyword.
 
@@ -15,6 +16,10 @@ Removes the receiver’s parameter descriptor identified by the specified keywor
 func removeParamDescriptor(withKeyword keyword: AEKeyword)
 ```
 
+```objc
+- (void) removeParamDescriptorWithKeyword:(AEKeyword) keyword;
+```
+
 #### Discussion
 
 The receiver must be an Apple event or Apple event record, both of which can contain parameters.
@@ -25,21 +30,22 @@ The receiver must be an Apple event or Apple event record, both of which can con
 
 ## See Also
 
-- [func attributeDescriptor(forKeyword: AEKeyword) -> NSAppleEventDescriptor?](nsappleeventdescriptor/attributedescriptor(forkeyword:).md)
+### Working With Apple Event Descriptors
+- [func attributeDescriptor(forKeyword: AEKeyword) -> NSAppleEventDescriptor?](./attributedescriptor%28forkeyword%29.md)
   Returns a descriptor for the receiver’s Apple event attribute identified by the specified keyword.
-- [var eventClass: AEEventClass](nsappleeventdescriptor/eventclass.md)
+- [var eventClass: AEEventClass](./eventclass.md)
   The event class for the receiver.
-- [var eventID: AEEventID](nsappleeventdescriptor/eventid.md)
+- [var eventID: AEEventID](./eventid.md)
   The event ID for the receiver.
-- [func paramDescriptor(forKeyword: AEKeyword) -> NSAppleEventDescriptor?](nsappleeventdescriptor/paramdescriptor(forkeyword:).md)
+- [func paramDescriptor(forKeyword: AEKeyword) -> NSAppleEventDescriptor?](./paramdescriptor%28forkeyword%29.md)
   Returns a descriptor for the receiver’s Apple event parameter identified by the specified keyword.
-- [var returnID: AEReturnID](nsappleeventdescriptor/returnid.md)
+- [var returnID: AEReturnID](./returnid.md)
   The receiver’s return ID (the ID for a reply Apple event).
-- [func setAttribute(NSAppleEventDescriptor, forKeyword: AEKeyword)](nsappleeventdescriptor/setattribute(_:forkeyword:).md)
+- [func setAttribute(NSAppleEventDescriptor, forKeyword: AEKeyword)](./setattribute%28_,forkeyword%29.md)
   Adds a descriptor to the receiver as an attribute identified by the specified keyword.
-- [func setParam(NSAppleEventDescriptor, forKeyword: AEKeyword)](nsappleeventdescriptor/setparam(_:forkeyword:).md)
+- [func setParam(NSAppleEventDescriptor, forKeyword: AEKeyword)](./setparam%28_,forkeyword%29.md)
   Adds a descriptor to the receiver as an Apple event parameter identified by the specified keyword.
-- [var transactionID: AETransactionID](nsappleeventdescriptor/transactionid.md)
+- [var transactionID: AETransactionID](./transactionid.md)
   The receiver’s transaction ID, if any.
 
 

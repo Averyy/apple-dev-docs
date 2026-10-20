@@ -1,7 +1,8 @@
 # append
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Add additional images to a currently running slideshow.
 
@@ -10,7 +11,7 @@ Add additional images to a currently running slideshow.
 
 ## Declaration
 
-```swift
+```
 void append(
     in Object imageRequests
 );
@@ -29,9 +30,10 @@ The `imageRequests` parameter contains an array of image request objects that ca
 
 ## See Also
 
-- [dismiss](slideshow/1657241-dismiss.md)
+### Creating and Modifying a Slideshow
+- [dismiss](./api-1657241-dismiss.md)
   Dismisses a currently running slideshow.
-- [start](slideshow/1657265-start.md)
+- [start](./api-1657265-start.md)
   Starts a slideshow with the given set of images.
 
 

@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ContentTypeDidChange.ContentType.immersive
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+

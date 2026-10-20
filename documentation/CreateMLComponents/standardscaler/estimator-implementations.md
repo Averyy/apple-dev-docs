@@ -1,11 +1,12 @@
 # Estimator Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [StandardScaler.Transformer](standardscaler/transformer.md)
+- [StandardScaler.Transformer](./transformer.md)
   A transformer that standardizes the input by removing the mean and scaling to unit variance.
 
 

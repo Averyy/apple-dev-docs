@@ -1,7 +1,8 @@
 # image
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thumbnail image of the question.
 
@@ -9,7 +10,7 @@ The thumbnail image of the question.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var image: UIImage
 
 ## See Also
 
-- [var box: AssignableDocument.QuestionBox](assignabledocument/question/thumbnail/data-swift.struct/box.md)
+### Inspecting thumbnail data
+- [var box: AssignableDocument.QuestionBox](./box.md)
   A copy of the box on the page this thumbnail was generated from.
-- [var pageID: AssignableDocument.Page.ID](assignabledocument/question/thumbnail/data-swift.struct/pageid.md)
+- [var pageID: AssignableDocument.Page.ID](./pageid.md)
   The ID of the page this thumbnail was generated from.
 
 

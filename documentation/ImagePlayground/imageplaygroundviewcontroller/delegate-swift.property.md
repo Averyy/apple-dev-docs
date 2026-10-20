@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that receives the generated image and handles events from the view controller.
 
@@ -21,11 +22,12 @@ The delegate object that receives the generated image and handles events from th
 
 #### Discussion
 
-Set the value of this property to a custom type you define. The view controller reports relevant interactions to your type using the methods of the [`ImagePlaygroundViewController.Delegate`](imageplaygroundviewcontroller/delegate-swift.protocol.md) protocol. For example, the view controller notifies your delegate when the person accepts a generated image.
+Set the value of this property to a custom type you define. The view controller reports relevant interactions to your type using the methods of the [`ImagePlaygroundViewController.Delegate`](./delegate-swift.protocol.md) protocol. For example, the view controller notifies your delegate when the person accepts a generated image.
 
 ## See Also
 
-- [ImagePlaygroundViewController.Delegate](imageplaygroundviewcontroller/delegate-swift.protocol.md)
+### Processing a generated image
+- [ImagePlaygroundViewController.Delegate](./delegate-swift.protocol.md)
   An interface you use to receive images and handle events related to an image-generation view controller.
 
 

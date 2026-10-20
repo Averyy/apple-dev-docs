@@ -1,7 +1,8 @@
 # terminationReason
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason the app was terminated as a human-readable string.
 
@@ -20,7 +21,8 @@ let terminationReason: CrashDiagnostic.TerminationReason?
 
 ## See Also
 
-- [let terminationCategory: CrashDiagnostic.TerminationCategory?](crashdiagnostic/terminationcategory-swift.property.md)
+### Termination counts
+- [let terminationCategory: CrashDiagnostic.TerminationCategory?](./terminationcategory-swift.property.md)
   The category of termination that caused this crash.
 
 

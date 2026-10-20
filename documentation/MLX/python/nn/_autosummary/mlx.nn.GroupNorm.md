@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 
 # mlx.nn.GroupNorm
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.GroupNorm.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.GroupNorm
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.GroupNorm
-
 **class GroupNorm(*num_groups: int*, *dims: int*, *eps: float = 1e-05*, *affine: bool = True*, *pytorch_compatible: bool = False*)**
 : Applies Group Normalization [1] to the inputs.
 Computes the same normalization as layer norm, namely
@@ -59,5 +32,3 @@ normalization. Default: `True`.
 the same order/grouping as PyTorch. Default: `False`.
 
 Methods
-
-** Contents

@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 One of the discrete texture dimensions to specify the size of the model texture maps. For example, a `.twoK` dimension means the texture map size can be up to size 2048x2048.
 
@@ -18,22 +19,22 @@ enum TextureDimension
 ## Topics
 
 ### Enumeration Cases
-- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.eightK](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturedimension/eightk.md)
-- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.fourK](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturedimension/fourk.md)
-- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.oneK](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturedimension/onek.md)
-- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.sixteenK](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturedimension/sixteenk.md)
-- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.twoK](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturedimension/twok.md)
+- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.eightK](./texturedimension/eightk.md)
+- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.fourK](./texturedimension/fourk.md)
+- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.oneK](./texturedimension/onek.md)
+- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.sixteenK](./texturedimension/sixteenk.md)
+- [PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.twoK](./texturedimension/twok.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

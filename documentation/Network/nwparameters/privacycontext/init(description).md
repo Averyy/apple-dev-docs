@@ -1,7 +1,8 @@
 # init(description:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a privacy context with a description string.
 
@@ -22,11 +23,12 @@ init(description: String)
 
 ## See Also
 
-- [static let `default`: NWParameters.PrivacyContext](nwparameters/privacycontext/default.md)
+### Configuring Custom Privacy Settings
+- [static let `default`: NWParameters.PrivacyContext](./default.md)
   The privacy context that applies to all connections that do not use a custom context.
-- [func disableLogging()](nwparameters/privacycontext/disablelogging.md)
+- [func disableLogging()](./disablelogging%28%29.md)
   Disables system logging of connection activity.
-- [func flushCache()](nwparameters/privacycontext/flushcache.md)
+- [func flushCache()](./flushcache%28%29.md)
   Flushes all cached data, such as TLS session state, created by connections associated with the privacy context.
 
 

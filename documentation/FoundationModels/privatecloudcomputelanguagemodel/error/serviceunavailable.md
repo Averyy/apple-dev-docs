@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Error.ServiceUnavailable
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about the model service being unable to handle a request.
 
@@ -22,21 +23,22 @@ struct ServiceUnavailable
 ## Topics
 
 ### Creating a service unavailable error
-- [init(debugDescription: String)](privatecloudcomputelanguagemodel/error/serviceunavailable/init(debugdescription:).md)
+- [init(debugDescription: String)](./serviceunavailable/init%28debugdescription%29.md)
   Creates a service unavailable instance.
 ### Getting the error description
-- [var debugDescription: String](privatecloudcomputelanguagemodel/error/serviceunavailable/debugdescription.md)
+- [var debugDescription: String](./serviceunavailable/debugdescription.md)
   A debug description of why the service is unavailable.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case serviceUnavailable(PrivateCloudComputeLanguageModel.Error.ServiceUnavailable)](privatecloudcomputelanguagemodel/error/serviceunavailable(_:).md)
+### Service unavailable error
+- [case serviceUnavailable(PrivateCloudComputeLanguageModel.Error.ServiceUnavailable)](./serviceunavailable%28_%29.md)
   Services are unavailable.
 
 

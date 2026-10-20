@@ -1,7 +1,8 @@
 # point(for:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the specified map coordinate to a point in the coordinate space of the image.
 
@@ -16,8 +17,28 @@ Converts the specified map coordinate to a point in the coordinate space of the 
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+func point(for coordinate: CLLocationCoordinate2D) -> CGPoint
+```
+
+*macOS*
+
 ```swift
 func point(for coordinate: CLLocationCoordinate2D) -> NSPoint
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (CGPoint) pointForCoordinate:(CLLocationCoordinate2D) coordinate;
+```
+
+*macOS*
+
+```objc
+- (NSPoint) pointForCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
 #### Return Value

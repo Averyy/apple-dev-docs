@@ -1,7 +1,8 @@
 # init(object:owned:messageProc:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new archive stream from the specified traits and entry message processing callback.
 
@@ -11,7 +12,7 @@ Returns a new archive stream from the specified traits and entry message process
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

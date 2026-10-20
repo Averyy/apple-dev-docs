@@ -1,7 +1,8 @@
 # billingAddress
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s billing address.
 
@@ -20,19 +21,24 @@ The user’s billing address.
 var billingAddress: CNContact? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CNContact * billingAddress;
+```
+
 #### Discussion
 
 For privacy, PassKit partially redacts the user’s billing address. PassKit populates this property only when the app doesn’t request a shipping address.
 
 ## See Also
 
-- [var type: PKPaymentMethodType](pkpaymentmethod/type.md)
+### Getting the payment method’s attributes
+- [var type: PKPaymentMethodType](./type.md)
   A value that represents the card’s type.
-- [enum PKPaymentMethodType](pkpaymentmethodtype.md)
+- [enum PKPaymentMethodType](../pkpaymentmethodtype.md)
   The type of cards available in Apple Pay.
-- [var displayName: String?](pkpaymentmethod/displayname.md)
+- [var displayName: String?](./displayname.md)
   A string, suitable for display, that describes the card.
-- [var network: PKPaymentNetwork?](pkpaymentmethod/network.md)
+- [var network: PKPaymentNetwork?](./network.md)
   A string, suitable for display, that describes the payment network for the card.
 
 

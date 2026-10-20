@@ -1,6 +1,7 @@
 # Updating widgets with WidgetKit push notifications
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Use WidgetKit to receive push tokens and reload your widgets with remote push notifications.
 
@@ -11,29 +12,29 @@ In addition to requesting a widget timeline refresh from your app, widgets can r
 To update your widget with WidgetKit push notifications:
 
 1. Add the capability to use remote push notifications to your widget extension target in Xcode.
-2. Set up a remote notification server or make changes to your existing server to support WidgetKit push notifications. If you’re new to using remote push notifications, plan to spend time implementing your remote notification server. For more information, refer to [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns).
-3. Update your app to obtain push tokens, handle token updates, update or invalidate them on your remote push notification server, and use the tokens to establish a token-based connection to APNs, as described in [`Establishing a token-based connection to APNs`](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns).
+2. Set up a remote notification server or make changes to your existing server to support WidgetKit push notifications. If you’re new to using remote push notifications, plan to spend time implementing your remote notification server. For more information, refer to [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md).
+3. Update your app to obtain push tokens, handle token updates, update or invalidate them on your remote push notification server, and use the tokens to establish a token-based connection to APNs, as described in [Establishing a token-based connection to APNs](../UserNotifications/establishing-a-token-based-connection-to-apns.md).
 4. Send WidgetKit push notifications from your remote notification server with APNs using the push tokens, HTTP header fields, and JSON payload to update your widget.
-5. When WidgetKit receives a push notification, it reloads your timelines, similar to when you call [`reloadAllTimelines()`](widgetcenter/reloadalltimelines().md).
+5. When WidgetKit receives a push notification, it reloads your timelines, similar to when you call [`reloadAllTimelines()`](./widgetcenter/reloadalltimelines%28%29.md).
 
 > ❗ **Important**: Like timeline updates, the system budgets WidgetKit push notifications and delivers them opportunistically, making push updates an additional update mechanism for your widgets that doesn’t replace timeline updates.
 
-##### Add the Push Notifications Capability and Create a Remote Notification Server
+##### Add the Push Notifications capability and create a remote notification server
 
-In your Xcode project, start by adding the Push Notifications capability to your app in Xcode as described in [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns). Note that you can’t use the User Notifications framework to register your widget for push notifications. Instead, you use WidgetKit to obtain a push token as described below.
+In your Xcode project, start by adding the Push Notifications capability to your app in Xcode as described in [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md). Note that you can’t use the User Notifications framework to register your widget for push notifications. Instead, you use WidgetKit to obtain a push token as described below.
 
 > **Note**: You can’t update widgets with broadcast push notifications you send on a channel.
 
-##### Manage Push Tokens and Send Them to Your Server
+##### Manage push tokens and send them to your server
 
 To update your widgets with push notifications, your app needs to receive and manage push tokens, send them to your remote notification server, and configure the widget to receive push updates.
 
-First, create an object that conforms to the [`WidgetPushHandler`](widgetpushhandler.md) protocol and that handles:
+First, create an object that conforms to the [`WidgetPushHandler`](./widgetpushhandler.md) protocol and that handles:
 
 - Updates to the push tokens that allow your remote notification server to send notifications to the widget using APNs
 - Changes to a person’s configured widgets; for example, when they add or remove a widget
 
-In your widget push handler, implement the  [`pushTokenDidChange(_:widgets:)`](widgetpushhandler/pushtokendidchange(_:widgets:).md) requirement, access the updated push token using the [`WidgetPushInfo`](widgetpushinfo.md) object, and the [`WidgetInfo`](widgetinfo.md) objects, and send updated information to your remote notification server as needed.
+In your widget push handler, implement the  [`pushTokenDidChange(_:widgets:)`](./widgetpushhandler/pushtokendidchange%28_,widgets%29.md) requirement, access the updated push token using the [`WidgetPushInfo`](./widgetpushinfo.md) object, and the [`WidgetInfo`](./widgetinfo.md) objects, and send updated information to your remote notification server as needed.
 
 > **Note**: The system calls `pushTokenDidChange(_:widgets:)` for all push token updates and for the first push token you receive from WidgetKit.
 
@@ -50,9 +51,9 @@ struct CaffeineTrackerPushHandler: WidgetPushHandler {
 }
 ```
 
-##### Configure Your Widget to Receive Push Updates
+##### Configure your widget to receive push updates
 
-When you implement the push handler, tell WidgetKit which widget you want to update with remote push notifications by adding the handler to your [`WidgetConfiguration`](https://developer.apple.com/documentation/swiftui/widgetconfiguration) using the [`pushHandler(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/pushhandler(_:)) API:
+When you implement the push handler, tell WidgetKit which widget you want to update with remote push notifications by adding the handler to your [`WidgetConfiguration`](../SwiftUI/widgetconfiguration.md) using the [`pushHandler(_:)`](../SwiftUI/widgetconfiguration/pushhandler%28_%29.md) API:
 
 ```swift
 // Add the pushHandler to the WidgetConfiguration.
@@ -70,9 +71,9 @@ struct CaffeineTrackerWidget: Widget {
 }
 ```
 
-##### Send the Widgetkit Notification Payload That Updates Your Widget
+##### Send the WidgetKit notification payload that updates your widget
 
-Sending a remote push notification to your widget works the same as other remote push notifications, as described in [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns). To send WidgetKit push notification updates, make sure your remote notification server constructs a JSON payload that conforms to the following requirements:
+Sending a remote push notification to your widget works the same as other remote push notifications, as described in [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md). To send WidgetKit push notification updates, make sure your remote notification server constructs a JSON payload that conforms to the following requirements:
 
 - Set the value for the `apns-push-type` header field to `widgets`.
 - Set the value for the `apns-topic` header field to `<your bundleID>.push-type.widgets`.
@@ -98,13 +99,14 @@ apns-topic = com.example.CaffeineTracker.push-type.widgets
 }
 ```
 
-For information about testing push notifications, refer to [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/usernotifications/sending-push-notifications-using-command-line-tools) and [`Testing notifications using the Push Notification Console`](https://developer.apple.com/documentation/usernotifications/testing-notifications-using-the-push-notification-console).
+For information about testing push notifications, refer to [Sending push notifications using command-line tools](../UserNotifications/sending-push-notifications-using-command-line-tools.md) and [Testing notifications using the Push Notification Console](../UserNotifications/testing-notifications-using-the-push-notification-console.md).
 
 ## See Also
 
-- [protocol WidgetPushHandler](widgetpushhandler.md)
+### Push notification updates
+- [protocol WidgetPushHandler](./widgetpushhandler.md)
   A type that can receive push information about widget refreshes and relevance refreshes.
-- [struct WidgetPushInfo](widgetpushinfo.md)
+- [struct WidgetPushInfo](./widgetpushinfo.md)
   A structure that contains information about the push token for updating widgets and widget relevances.
 
 

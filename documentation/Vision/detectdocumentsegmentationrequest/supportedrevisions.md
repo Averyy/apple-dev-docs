@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of revisions the request supports.
 
@@ -22,9 +23,10 @@ static let supportedRevisions: [DetectDocumentSegmentationRequest.Revision]
 
 ## See Also
 
-- [let revision: DetectDocumentSegmentationRequest.Revision](detectdocumentsegmentationrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: DetectDocumentSegmentationRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [DetectDocumentSegmentationRequest.Revision](detectdocumentsegmentationrequest/revision-swift.enum.md)
+- [DetectDocumentSegmentationRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

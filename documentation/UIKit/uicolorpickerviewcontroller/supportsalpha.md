@@ -1,7 +1,8 @@
 # supportsAlpha
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that enables alpha value control.
 
@@ -17,17 +18,22 @@ A Boolean value that enables alpha value control.
 var supportsAlpha: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsAlpha;
+```
+
 ## See Also
 
-- [var delegate: (any UIColorPickerViewControllerDelegate)?](uicolorpickerviewcontroller/delegate.md)
+### Configuring the color picker view controller
+- [var delegate: (any UIColorPickerViewControllerDelegate)?](./delegate.md)
   The delegate that receives updates about the color selection.
-- [protocol UIColorPickerViewControllerDelegate](uicolorpickerviewcontrollerdelegate.md)
+- [protocol UIColorPickerViewControllerDelegate](../uicolorpickerviewcontrollerdelegate.md)
   The delegate protocol to inform about changes in color selection.
-- [var maximumLinearExposure: CGFloat](uicolorpickerviewcontroller/maximumlinearexposure.md)
+- [var maximumLinearExposure: CGFloat](./maximumlinearexposure.md)
   The maximum exposure to apply to a color when returned by the color picker.
-- [var selectedColor: UIColor](uicolorpickerviewcontroller/selectedcolor.md)
+- [var selectedColor: UIColor](./selectedcolor.md)
   The color selected by the user.
-- [var supportsEyedropper: Bool](uicolorpickerviewcontroller/supportseyedropper.md)
+- [var supportsEyedropper: Bool](./supportseyedropper.md)
   If set to `NO` the eyedropper functionality is not supported for this color picker.
 
 

@@ -1,7 +1,8 @@
 # MTRClusterDeviceEnergyManagement
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Device Energy Management This cluster allows a client to manage the power draw of a device. An example of such a client could be an Energy Management System (EMS) which controls an Energy Smart Appliance (ESA).
 
@@ -20,48 +21,52 @@ Cluster Device Energy Management This cluster allows a client to manage the powe
 class MTRClusterDeviceEnergyManagement
 ```
 
+```objc
+@interface MTRClusterDeviceEnergyManagement : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterdeviceenergymanagement/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterdeviceenergymanagement/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func cancelPowerAdjustRequest(with: MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/cancelpoweradjustrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelPowerAdjustRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/cancelpoweradjustrequest(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelRequest(with: MTRDeviceEnergyManagementClusterCancelRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/cancelrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/cancelrequest(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func modifyForecastRequest(with: MTRDeviceEnergyManagementClusterModifyForecastRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/modifyforecastrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func pauseRequest(with: MTRDeviceEnergyManagementClusterPauseRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/pauserequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func powerAdjustRequest(with: MTRDeviceEnergyManagementClusterPowerAdjustRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/poweradjustrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAbsMaxPower(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeabsmaxpower(with:).md)
-- [func readAttributeAbsMinPower(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeabsminpower(with:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeclusterrevision(with:).md)
-- [func readAttributeESACanGenerate(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeesacangenerate(with:).md)
-- [func readAttributeESAState(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeesastate(with:).md)
-- [func readAttributeESAType(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeesatype(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributefeaturemap(with:).md)
-- [func readAttributeForecast(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeforecast(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeOptOutState(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributeoptoutstate(with:).md)
-- [func readAttributePowerAdjustmentCapability(with: MTRReadParams?) -> [String : Any]?](mtrclusterdeviceenergymanagement/readattributepoweradjustmentcapability(with:).md)
-- [func requestConstraintBasedForecast(with: MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/requestconstraintbasedforecast(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resumeRequest(with: MTRDeviceEnergyManagementClusterResumeRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/resumerequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resumeRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/resumerequest(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func startTimeAdjustRequest(with: MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdeviceenergymanagement/starttimeadjustrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func cancelPowerAdjustRequest(with: MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/cancelpoweradjustrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func cancelPowerAdjustRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/cancelpoweradjustrequest%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func cancelRequest(with: MTRDeviceEnergyManagementClusterCancelRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/cancelrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func cancelRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/cancelrequest%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func modifyForecastRequest(with: MTRDeviceEnergyManagementClusterModifyForecastRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/modifyforecastrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func pauseRequest(with: MTRDeviceEnergyManagementClusterPauseRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/pauserequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func powerAdjustRequest(with: MTRDeviceEnergyManagementClusterPowerAdjustRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/poweradjustrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAbsMaxPower(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeabsmaxpower%28with%29.md)
+- [func readAttributeAbsMinPower(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeabsminpower%28with%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeclusterrevision%28with%29.md)
+- [func readAttributeESACanGenerate(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeesacangenerate%28with%29.md)
+- [func readAttributeESAState(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeesastate%28with%29.md)
+- [func readAttributeESAType(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeesatype%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributefeaturemap%28with%29.md)
+- [func readAttributeForecast(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeforecast%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeOptOutState(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributeoptoutstate%28with%29.md)
+- [func readAttributePowerAdjustmentCapability(with: MTRReadParams?) -> [String : Any]?](./mtrclusterdeviceenergymanagement/readattributepoweradjustmentcapability%28with%29.md)
+- [func requestConstraintBasedForecast(with: MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/requestconstraintbasedforecast%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func resumeRequest(with: MTRDeviceEnergyManagementClusterResumeRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/resumerequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func resumeRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/resumerequest%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func startTimeAdjustRequest(with: MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterdeviceenergymanagement/starttimeadjustrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

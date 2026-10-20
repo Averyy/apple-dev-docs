@@ -1,7 +1,8 @@
 # NSEqualSizes(_:_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean that indicates whether two size values are equal.
 
@@ -15,21 +16,26 @@ Returns a Boolean that indicates whether two size values are equal.
 func NSEqualSizes(_ aSize: NSSize, _ bSize: NSSize) -> Bool
 ```
 
+```c
+extern BOOL NSEqualSizes(NSSize aSize, NSSize bSize);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aSize` and `bSize` are identical, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if `aSize` and `bSize` are identical, otherwise [`false`](../Swift/false.md).
 
 ## See Also
 
-- [func NSMakeSize(Double, Double) -> NSSize](nsmakesize(_:_:).md)
+### Managing Sizes
+- [func NSMakeSize(Double, Double) -> NSSize](./nsmakesize%28_,_%29.md)
   Returns a new `NSSize` from the specified values.
-- [func NSSizeFromString(String) -> NSSize](nssizefromstring(_:).md)
+- [func NSSizeFromString(String) -> NSSize](./nssizefromstring%28_%29.md)
   Returns an `NSSize` from a text-based representation.
-- [func NSStringFromSize(NSSize) -> String](nsstringfromsize(_:).md)
+- [func NSStringFromSize(NSSize) -> String](./nsstringfromsize%28_%29.md)
   Returns a string representation of a size.
-- [func NSSizeFromCGSize(CGSize) -> NSSize](nssizefromcgsize(_:).md)
+- [func NSSizeFromCGSize(CGSize) -> NSSize](./nssizefromcgsize%28_%29.md)
   Returns an `NSSize` typecast from a `CGSize`.
-- [func NSSizeToCGSize(NSSize) -> CGSize](nssizetocgsize(_:).md)
+- [func NSSizeToCGSize(NSSize) -> CGSize](./nssizetocgsize%28_%29.md)
   Returns a `CGSize` typecast from an `NSSize`.
 
 

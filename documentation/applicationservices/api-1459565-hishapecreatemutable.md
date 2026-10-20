@@ -1,7 +1,8 @@
 # HIShapeCreateMutable()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateMutable() -> Unmanaged<HIMutableShape>!
+```
+
+```c
+HIMutableShapeRef HIShapeCreateMutable(void);
 ```
 
 

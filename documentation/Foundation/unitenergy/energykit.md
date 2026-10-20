@@ -1,7 +1,8 @@
 # UnitEnergy.EnergyKit
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -18,28 +19,28 @@ class EnergyKit
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](unitenergy/energykit/init(coder:).md)
-- [init(symbol: String)](unitenergy/energykit/init(symbol:).md)
+- [init?(coder: NSCoder)](./energykit/init%28coder%29.md)
+- [init(symbol: String)](./energykit/init%28symbol%29.md)
 ### Type Properties
-- [static let milliwattHours: UnitEnergy](unitenergy/energykit/milliwatthours.md)
+- [static let milliwattHours: UnitEnergy](./energykit/milliwatthours.md)
   1 mWh = 3.6 J
 
 ## Relationships
 
 ### Inherits From
-- [Unit](unit.md)
+- [Unit](../unit.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../nscoding.md)
+- [NSCopying](../nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

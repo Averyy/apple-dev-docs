@@ -1,14 +1,15 @@
 # console_write_unbuffered
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void console_write_unbuffered(char);
 ```
 

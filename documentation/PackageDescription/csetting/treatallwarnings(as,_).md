@@ -1,7 +1,8 @@
 # treatAllWarnings(as:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Controls how all C compiler warnings are treated during compilation.
 
@@ -20,7 +21,7 @@ Use this setting to specify whether all warnings should be treated as warnings (
 
 This setting applies to all warnings emitted by the C compiler. To control specific warnings individually, use `treatWarning(name:as:_:)` instead.
 
-> **Note**: First available in PackageDescription 6.2.
+> **Since**: First available in PackageDescription 6.2.
 
 ## Parameters
 

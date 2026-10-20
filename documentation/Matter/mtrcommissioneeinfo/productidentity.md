@@ -1,7 +1,8 @@
 # productIdentity
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product identity (VID / PID) of the commissionee.
 
@@ -19,6 +20,10 @@ The product identity (VID / PID) of the commissionee.
 ```swift
 @NSCopying
 var productIdentity: MTRProductIdentity { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) MTRProductIdentity * productIdentity;
 ```
 
 

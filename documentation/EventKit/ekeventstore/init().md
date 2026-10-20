@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new event store.
 
@@ -19,15 +20,20 @@ Creates a new event store.
 init()
 ```
 
+```objc
+- (id) init;
+```
+
 #### Return Value
 
 An initialized event store.
 
 ## See Also
 
-- [init(sources: [EKSource])](ekeventstore/init(sources:).md)
+### Creating event stores
+- [init(sources: [EKSource])](./init%28sources%29.md)
   Creates an event store that contains data for the specified sources.
-- [var eventStoreIdentifier: String](ekeventstore/eventstoreidentifier.md)
+- [var eventStoreIdentifier: String](./eventstoreidentifier.md)
   The unique identifier for the event store.
 
 

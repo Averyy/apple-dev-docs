@@ -1,14 +1,15 @@
 # kSENSE_KEY_NOT_READY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_KEY_NOT_READY = 0x02
 ```
 

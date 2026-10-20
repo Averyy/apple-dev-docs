@@ -1,7 +1,8 @@
 # init(formatDescription:maxFrameDuration:minFrameDuration:validFrameDurations:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stream format with a format description and frame durations.
 

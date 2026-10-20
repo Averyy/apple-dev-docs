@@ -1,7 +1,8 @@
 # collectionView(_:sceneActivationConfigurationForItemAt:point:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a scene activation configuration that allows the cell to expand into a new scene.
 
@@ -17,9 +18,13 @@ Returns a scene activation configuration that allows the cell to expand into a n
 optional func collectionView(_ collectionView: UICollectionView, sceneActivationConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIWindowScene.ActivationConfiguration?
 ```
 
+```objc
+- (UIWindowSceneActivationConfiguration *) collectionView:(UICollectionView *) collectionView sceneActivationConfigurationForItemAtIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
+```
+
 #### Return Value
 
-A [`UIWindowScene.ActivationConfiguration`](uiwindowscene/activationconfiguration.md) object that facilitates expanding the cell into a new scene. Return `nil` to prevent the interaction from starting.
+A [`UIWindowScene.ActivationConfiguration`](../uiwindowscene/activationconfiguration.md) object that facilitates expanding the cell into a new scene. Return `nil` to prevent the interaction from starting.
 
 ## Parameters
 

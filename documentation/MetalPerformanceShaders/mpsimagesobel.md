@@ -1,7 +1,8 @@
 # MPSImageSobel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that convolves an image with the Sobel operator.
 
@@ -19,6 +20,10 @@ A filter that convolves an image with the Sobel operator.
 class MPSImageSobel
 ```
 
+```objc
+@interface MPSImageSobel : MPSUnaryImageKernel
+```
+
 #### Overview
 
 When the color model (e.g. RGB, two-channel, grayscale, etc.) of the source and destination textures match, the filter is applied to each color channel separately. If the destination is single-channel (i.e. monochrome) but the source is multi-channel, the pixel values are converted to grayscale before applying the Sobel operator by using the linear gray color transform vector `v` shown in the code listing below.
@@ -30,54 +35,55 @@ Luminance = v[0] * pixel.x + v[1] * pixel.y + v[2] * pixel.z
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagesobel/init(coder:device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagesobel/init%28coder,device%29.md)
 ### Methods
-- [convenience init(device: any MTLDevice)](mpsimagesobel/init(device:).md)
+- [convenience init(device: any MTLDevice)](./mpsimagesobel/init%28device%29.md)
   Initializes a Sobel filter on a given device using the default color transform.
-- [init(device: any MTLDevice, linearGrayColorTransform: UnsafePointer<Float>)](mpsimagesobel/init(device:lineargraycolortransform:).md)
+- [init(device: any MTLDevice, linearGrayColorTransform: UnsafePointer<Float>)](./mpsimagesobel/init%28device,lineargraycolortransform%29.md)
   Initializes a Sobel filter on a given device using a specific color transform.
 ### Properties
-- [var colorTransform: UnsafePointer<Float>](mpsimagesobel/colortransform.md)
+- [var colorTransform: UnsafePointer<Float>](./mpsimagesobel/colortransform.md)
   The color transform used to initialize the Sobel filter.
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageConvolution](mpsimageconvolution.md)
+### Convolution Image Filters
+- [class MPSImageConvolution](./mpsimageconvolution.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageMedian](mpsimagemedian.md)
+- [class MPSImageMedian](./mpsimagemedian.md)
   A filter that applies a median filter in a square region centered around each pixel in the source image.
-- [class MPSImageBox](mpsimagebox.md)
+- [class MPSImageBox](./mpsimagebox.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageTent](mpsimagetent.md)
+- [class MPSImageTent](./mpsimagetent.md)
   A filter that convolves an image with a tent filter.
-- [class MPSImageGaussianBlur](mpsimagegaussianblur.md)
+- [class MPSImageGaussianBlur](./mpsimagegaussianblur.md)
   A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.
-- [class MPSImageGaussianPyramid](mpsimagegaussianpyramid.md)
+- [class MPSImageGaussianPyramid](./mpsimagegaussianpyramid.md)
   A filter that convolves an image with a Gaussian pyramid.
-- [class MPSImageLaplacian](mpsimagelaplacian.md)
+- [class MPSImageLaplacian](./mpsimagelaplacian.md)
   An optimized Laplacian filter, provided for ease of use.
-- [class MPSImageLaplacianPyramid](mpsimagelaplacianpyramid.md)
+- [class MPSImageLaplacianPyramid](./mpsimagelaplacianpyramid.md)
   A filter that convolves an image with a Laplacian filter.
-- [class MPSImageLaplacianPyramidAdd](mpsimagelaplacianpyramidadd.md)
+- [class MPSImageLaplacianPyramidAdd](./mpsimagelaplacianpyramidadd.md)
   A filter that convolves an image with an additive Laplacian pyramid.
-- [class MPSImageLaplacianPyramidSubtract](mpsimagelaplacianpyramidsubtract.md)
+- [class MPSImageLaplacianPyramidSubtract](./mpsimagelaplacianpyramidsubtract.md)
   A filter that convolves an image with a subtractive Laplacian pyramid.
-- [class MPSImagePyramid](mpsimagepyramid.md)
+- [class MPSImagePyramid](./mpsimagepyramid.md)
   A base class for creating different kinds of pyramid images.
 
 

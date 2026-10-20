@@ -1,7 +1,8 @@
 # Audio.Absorption
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that holds a set of absorption data.
 
@@ -39,36 +40,37 @@ let data: Audio.Absorption = [500: 0.3, 1000: 0.4, 4000: 0.5]
 ## Topics
 
 ### Creating an absorption value
-- [static func uniform(Float) -> Audio.Absorption](audio/absorption/uniform(_:).md)
+- [static func uniform(Float) -> Audio.Absorption](./absorption/uniform%28_%29.md)
   Creates an absorption data set with the coefficient applied uniformly for every frequency.
 ### Scaling absorption
-- [func scaled(by: (Float) -> Float) -> Audio.Absorption](audio/absorption/scaled(by:).md)
+- [func scaled(by: (Float) -> Float) -> Audio.Absorption](./absorption/scaled%28by%29.md)
   Scale the absorption data by a frequency-dependent scalar value between -1 and 1.
 ### Initializers
-- [init(_:)](audio/absorption/init(_:).md)
+- [init(_:)](./absorption/init%28_%29.md)
   Creates an absorption data set from a sequence of pairs of center frequency and Sabine absorption coefficient.
 ### Type Properties
-- [static let `default`: Audio.Absorption](audio/absorption/default.md)
+- [static let `default`: Audio.Absorption](./absorption/default.md)
   The default set of absorption data.
 ### Default Implementations
-- [ExpressibleByDictionaryLiteral Implementations](audio/absorption/expressiblebydictionaryliteral-implementations.md)
+- [ExpressibleByDictionaryLiteral Implementations](./absorption/expressiblebydictionaryliteral-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByDictionaryLiteral](../../Swift/expressiblebydictionaryliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Material](audio/material.md)
+### Defining acoustic properties
+- [struct Material](./material.md)
   A type that describes the acoustic characteristics of a surface.
-- [struct Scattering](audio/scattering.md)
+- [struct Scattering](./scattering.md)
   An object that holds a set of scattering data.
 
 

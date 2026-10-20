@@ -1,7 +1,8 @@
 # string
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On Unix, this returns `"/"`.
 

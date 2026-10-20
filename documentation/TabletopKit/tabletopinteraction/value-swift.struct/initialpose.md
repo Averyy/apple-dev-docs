@@ -1,7 +1,8 @@
 # initialPose
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pose of the equipment that the interaction was started with
 
@@ -16,9 +17,10 @@ var initialPose: Pose3D { get }
 
 ## See Also
 
-- [var configuration: TabletopInteraction.Configuration](tabletopinteraction/value-swift.struct/configuration.md)
+### Getting the interaction properties
+- [var configuration: TabletopInteraction.Configuration](./configuration.md)
   The current configuration of this interaction
-- [var constants: TabletopInteraction.Constants](tabletopinteraction/value-swift.struct/constants.md)
+- [var constants: TabletopInteraction.Constants](./constants.md)
   The constants of this interaction
 
 

@@ -1,7 +1,8 @@
 # SpeechChannelRecord
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a speech channel.
 
@@ -14,13 +15,19 @@ Represents a speech channel.
 struct SpeechChannelRecord
 ```
 
+```c
+typedef struct SpeechChannelRecord {
+    ...
+} SpeechChannelRecord;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](speechchannelrecord/1461764-init.md)
-- [init(data: Int)](speechchannelrecord/1459019-init.md)
+- [init()](./speechchannelrecord/api-1461764-init.md)
+- [init(data: Int)](./speechchannelrecord/api-1459019-init.md)
 ### Instance Properties
-- [var data: Int](speechchannelrecord/1460355-data.md)
+- [var data: Int](./speechchannelrecord/api-1460355-data.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Declares the types of operations the source allows to be performed.
@@ -14,6 +15,10 @@ Declares the types of operations the source allows to be performed.
 ```swift
 @MainActor
 func draggingSession(_ session: NSDraggingSession, sourceOperationMaskFor context: NSDraggingContext) -> NSDragOperation
+```
+
+```objc
+- (NSDragOperation) draggingSession:(NSDraggingSession *) session sourceOperationMaskForDraggingContext:(NSDraggingContext) context;
 ```
 
 #### Return Value
@@ -38,7 +43,7 @@ To account for unexpected contexts, set a `default` case for the most specific c
 ## Parameters
 
 - `session`: The dragging session.
-- `context`: The dragging context. See [`NSDraggingContext`](nsdraggingcontext.md) for the supported values.
+- `context`: The dragging context. See [`NSDraggingContext`](../nsdraggingcontext.md) for the supported values.
 
 
 ---

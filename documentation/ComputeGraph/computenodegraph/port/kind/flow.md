@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Port.Kind.flow
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Execution-ordering edge whose destination is conceptually a consumer of the source’s typed output. No runtime payload is transferred, but type compatibility is enforced. Used for stage → stage sequencing.
 
@@ -12,7 +13,7 @@ Execution-ordering edge whose destination is conceptually a consumer of the sour
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

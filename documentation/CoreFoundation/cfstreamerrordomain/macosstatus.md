@@ -1,18 +1,19 @@
 # CFStreamErrorDomain.macOSStatus
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error is an OSStatus value defined in `MacErrors.h`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The error is an OSStatus value defined in `MacErrors.h`.
 case macOSStatus
 ```
 
+```c
+kCFStreamErrorDomainMacOSStatus
+```
+
 ## See Also
 
-- [CFStreamErrorDomain.custom](cfstreamerrordomain/custom.md)
+### Constants
+- [CFStreamErrorDomain.custom](./custom.md)
   The error code is a custom error code.
-- [CFStreamErrorDomain.POSIX](cfstreamerrordomain/posix.md)
+- [CFStreamErrorDomain.POSIX](./posix.md)
   The error code is an error code defined in `errno.h`.
 
 

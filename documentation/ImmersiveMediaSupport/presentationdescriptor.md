@@ -1,7 +1,8 @@
 # PresentationDescriptor
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 
@@ -21,37 +22,38 @@ struct PresentationDescriptor
 ## Topics
 
 ### Initializers
-- [init(commands: [PresentationCommand])](presentationdescriptor/init(commands:).md)
+- [init(commands: [PresentationCommand])](./presentationdescriptor/init%28commands%29.md)
   Creates an instance that contains the commands specified in the given array.
-- [init(duration: CMTime?, commands: [PresentationCommand])](presentationdescriptor/init(duration:commands:).md)
+- [init(duration: CMTime?, commands: [PresentationCommand])](./presentationdescriptor/init%28duration,commands%29.md)
   Creates an instance that contains the commands specified in the array:
 ### Instance Properties
-- [var commands: [PresentationCommand]](presentationdescriptor/commands.md)
+- [var commands: [PresentationCommand]](./presentationdescriptor/commands.md)
   An array of presentation commands.
-- [var duration: CMTime?](presentationdescriptor/duration.md)
+- [var duration: CMTime?](./presentationdescriptor/duration.md)
   The total duration of the presentation commands.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PresentationCommand](presentationcommand.md)
+### Presentation commands
+- [enum PresentationCommand](./presentationcommand.md)
   A set of properties that define the interface for a presentation command.
-- [struct FadeCommand](fadecommand.md)
+- [struct FadeCommand](./fadecommand.md)
   A command type for color fading during immersive media playback.
-- [struct FadeEnvironmentCommand](fadeenvironmentcommand.md)
+- [struct FadeEnvironmentCommand](./fadeenvironmentcommand.md)
   A command type for opacity fading environment backdrops during immersive media playback.
-- [struct SetCameraCommand](setcameracommand.md)
+- [struct SetCameraCommand](./setcameracommand.md)
   A command type for immersive camera switching during playback.
-- [struct ShotFlopCommand](shotflopcommand.md)
+- [struct ShotFlopCommand](./shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [struct ShotFlipCommand](shotflipcommand.md)
+- [struct ShotFlipCommand](./shotflipcommand.md)
   A command type to flip the video frames vertically during playback for the duration of the command.
-- [class PresentationDescriptorReader](presentationdescriptorreader.md)
+- [class PresentationDescriptorReader](./presentationdescriptorreader.md)
   An object that provides the functionality required to understand and process immersive presentation commands.
 
 

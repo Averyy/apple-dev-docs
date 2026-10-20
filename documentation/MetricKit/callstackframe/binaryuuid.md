@@ -1,7 +1,8 @@
 # binaryUUID
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Binary UUID (references CallStackTree.binaryInfo)
 
@@ -20,7 +21,7 @@ let binaryUUID: UUID?
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -28,11 +29,12 @@ This may be nil if symbolication information is unavailable or the binary is uni
 
 ## See Also
 
-- [let address: UInt64?](callstackframe/address.md)
+### Frame details
+- [let address: UInt64?](./address.md)
   Absolute address
-- [let offsetIntoBinaryTextSegment: UInt64?](callstackframe/offsetintobinarytextsegment.md)
+- [let offsetIntoBinaryTextSegment: UInt64?](./offsetintobinarytextsegment.md)
   Offset into binary text segment
-- [let sampleCount: Int?](callstackframe/samplecount.md)
+- [let sampleCount: Int?](./samplecount.md)
   Sample count (for sampled stack traces)
 
 

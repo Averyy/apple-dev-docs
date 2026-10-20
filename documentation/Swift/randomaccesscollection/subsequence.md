@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.

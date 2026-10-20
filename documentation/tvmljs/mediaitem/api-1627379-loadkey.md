@@ -1,7 +1,8 @@
 # loadKey
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A callback function used to load the security key for an item.
 
@@ -10,7 +11,7 @@ A callback function used to load the security key for an item.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Object loadKey;
 ```
 
@@ -26,9 +27,10 @@ The callback function must be called with the following three parameters:
 
 ## See Also
 
-- [loadAssetID](mediaitem/1627392-loadassetid.md)
+### Supporting FairPlay Streaming
+- [loadAssetID](./api-1627392-loadassetid.md)
   A callback function used to load the asset identifier for an item.
-- [loadCertificate](mediaitem/1627435-loadcertificate.md)
+- [loadCertificate](./api-1627435-loadcertificate.md)
   A callback function used to load the security certificate for an item.
 
 

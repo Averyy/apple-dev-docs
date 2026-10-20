@@ -1,7 +1,8 @@
 # WCSessionUserInfoTransfer
 
 **Framework**: Watch Connectivity  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about in-progress data transfers.
 
@@ -18,46 +19,51 @@ Information about in-progress data transfers.
 class WCSessionUserInfoTransfer
 ```
 
+```objc
+@interface WCSessionUserInfoTransfer : NSObject
+```
+
 #### Overview
 
 You don’t create instances of this class yourself. When you begin a data transfer, the system creates a new instance of this class for you. Use the created object to monitor or cancel the transfer as needed.
 
-To initiate a file transfer operation, call the [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md) or [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method of your app’s [`WCSession`](wcsession.md) object.
+To initiate a file transfer operation, call the [`transferUserInfo(_:)`](./wcsession/transferuserinfo%28_%29.md) or [`transferCurrentComplicationUserInfo(_:)`](./wcsession/transfercurrentcomplicationuserinfo%28_%29.md) method of your app’s [`WCSession`](./wcsession.md) object.
 
 ## Topics
 
 ### Getting the Transfer Information
-- [var isCurrentComplicationInfo: Bool](wcsessionuserinfotransfer/iscurrentcomplicationinfo.md)
+- [var isCurrentComplicationInfo: Bool](./wcsessionuserinfotransfer/iscurrentcomplicationinfo.md)
   A Boolean indicating whether the data is related to the app’s complication.
-- [var userInfo: [String : Any]](wcsessionuserinfotransfer/userinfo.md)
+- [var userInfo: [String : Any]](./wcsessionuserinfotransfer/userinfo.md)
   The data being transferred.
 ### Managing the Transfer Operation
-- [var isTransferring: Bool](wcsessionuserinfotransfer/istransferring.md)
+- [var isTransferring: Bool](./wcsessionuserinfotransfer/istransferring.md)
   A Boolean value indicating whether the data is still being transferred.
-- [func cancel()](wcsessionuserinfotransfer/cancel.md)
+- [func cancel()](./wcsessionuserinfotransfer/cancel%28%29.md)
   Cancels the data transfer.
 ### Initializers
-- [init?(coder: NSCoder)](wcsessionuserinfotransfer/init(coder:).md)
+- [init?(coder: NSCoder)](./wcsessionuserinfotransfer/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class WCSessionFile](wcsessionfile.md)
+### Data Objects
+- [class WCSessionFile](./wcsessionfile.md)
   Information about a file currently being transferred between an iOS app and WatchKit extension.
-- [class WCSessionFileTransfer](wcsessionfiletransfer.md)
+- [class WCSessionFileTransfer](./wcsessionfiletransfer.md)
   Information about in-progress file transfers.
 
 

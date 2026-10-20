@@ -1,7 +1,8 @@
 # ElementSpawnParameters
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters used to configure the initial state of a particle when it’s spawned in the simulation.
 
@@ -12,7 +13,7 @@ Parameters used to configure the initial state of a particle when it’s spawned
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -39,35 +40,36 @@ let params = ElementSpawnParameters(
 ## Topics
 
 ### Initializers
-- [init(position: SIMD3<Float>, velocity: SIMD3<Float>, size: SIMD2<Float>, color: SIMD4<Float>, lifetime: Float)](elementspawnparameters/init(position:velocity:size:color:lifetime:).md)
+- [init(position: SIMD3<Float>, velocity: SIMD3<Float>, size: SIMD2<Float>, color: SIMD4<Float>, lifetime: Float)](./elementspawnparameters/init%28position,velocity,size,color,lifetime%29.md)
   Creates a new set of particle spawn parameters.
 ### Instance Properties
-- [var color: SIMD4<Float>](elementspawnparameters/color.md)
+- [var color: SIMD4<Float>](./elementspawnparameters/color.md)
   The initial color and alpha (transparency) of the particle.
-- [var lifetime: Float](elementspawnparameters/lifetime.md)
+- [var lifetime: Float](./elementspawnparameters/lifetime.md)
   The initial lifetime of the particle in seconds.
-- [var position: SIMD3<Float>](elementspawnparameters/position.md)
+- [var position: SIMD3<Float>](./elementspawnparameters/position.md)
   The initial 3D position of the particle in world space coordinates.
-- [var size: SIMD2<Float>](elementspawnparameters/size.md)
+- [var size: SIMD2<Float>](./elementspawnparameters/size.md)
   The initial size of the particle as a 2D vector representing width and height.
-- [var velocity: SIMD3<Float>](elementspawnparameters/velocity.md)
+- [var velocity: SIMD3<Float>](./elementspawnparameters/velocity.md)
   The initial velocity vector of the particle in world space units per second.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ComputeGraphSimulation](computegraphsimulation.md)
+### Running a simulation
+- [class ComputeGraphSimulation](./computegraphsimulation.md)
   A simulation of particles, which use a single pipeline.
-- [enum ElementGrouping](elementgrouping.md)
+- [enum ElementGrouping](./elementgrouping.md)
   An enumeration of how elements are grouped.
-- [ComputeGraphSimulation.SimulationRate](computegraphsimulation/simulationrate-swift.struct.md)
+- [ComputeGraphSimulation.SimulationRate](./computegraphsimulation/simulationrate-swift.struct.md)
   Specifies the rate and mode for simulation.
-- [enum Sorting](sorting.md)
+- [enum Sorting](./sorting.md)
   An enumeration of sorting modes.
 
 

@@ -1,7 +1,8 @@
 # OID_ETSI_QCS_LENGTH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var OID_ETSI_QCS_LENGTH: Int32 { get }
+```
+
+```c
+#define OID_ETSI_QCS_LENGTH
 ```
 
 

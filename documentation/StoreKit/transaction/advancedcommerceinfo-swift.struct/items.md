@@ -1,7 +1,8 @@
 # items
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items purchased as part of this transaction.
 
@@ -22,14 +23,15 @@ let items: [Transaction.AdvancedCommerceInfo.Item]
 
 ## See Also
 
-- [let description: String?](transaction/advancedcommerceinfo-swift.struct/description.md)
-- [let displayName: String?](transaction/advancedcommerceinfo-swift.struct/displayname.md)
-- [let estimatedTax: Decimal](transaction/advancedcommerceinfo-swift.struct/estimatedtax.md)
-- [let period: SubscriptionPeriod?](transaction/advancedcommerceinfo-swift.struct/period.md)
-- [let requestReferenceID: String](transaction/advancedcommerceinfo-swift.struct/requestreferenceid.md)
-- [let taxCode: String](transaction/advancedcommerceinfo-swift.struct/taxcode.md)
-- [let taxExclusivePrice: Decimal](transaction/advancedcommerceinfo-swift.struct/taxexclusiveprice.md)
-- [let taxRate: Decimal](transaction/advancedcommerceinfo-swift.struct/taxrate.md)
+### Instance Properties
+- [let description: String?](./description.md)
+- [let displayName: String?](./displayname.md)
+- [let estimatedTax: Decimal](./estimatedtax.md)
+- [let period: SubscriptionPeriod?](./period.md)
+- [let requestReferenceID: String](./requestreferenceid.md)
+- [let taxCode: String](./taxcode.md)
+- [let taxExclusivePrice: Decimal](./taxexclusiveprice.md)
+- [let taxRate: Decimal](./taxrate.md)
 
 
 ---

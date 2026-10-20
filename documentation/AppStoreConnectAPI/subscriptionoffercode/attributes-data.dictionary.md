@@ -1,7 +1,8 @@
 # SubscriptionOfferCode.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription offer code resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription offer code resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCode.Attributes
 ```
 
@@ -31,15 +32,16 @@ object SubscriptionOfferCode.Attributes
 
 ## See Also
 
-- [type SubscriptionOfferDuration](subscriptionofferduration.md)
+### Objects and types
+- [type SubscriptionOfferDuration](../subscriptionofferduration.md)
   A length of time that can be assigned to a subscription.
-- [type SubscriptionOfferEligibility](subscriptionoffereligibility.md)
+- [type SubscriptionOfferEligibility](../subscriptionoffereligibility.md)
   A string that represents the eligibility of a subscription offer.
-- [type SubscriptionCustomerEligibility](subscriptioncustomereligibility.md)
+- [type SubscriptionCustomerEligibility](../subscriptioncustomereligibility.md)
   A string that represents a customer’s eligibility for a subscription offer.
-- [type SubscriptionOfferMode](subscriptionoffermode.md)
+- [type SubscriptionOfferMode](../subscriptionoffermode.md)
   A string that indicates the payment mode of a subscription offer.
-- [object SubscriptionOfferCode.Relationships](subscriptionoffercode/relationships-data.dictionary.md)
+- [object SubscriptionOfferCode.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

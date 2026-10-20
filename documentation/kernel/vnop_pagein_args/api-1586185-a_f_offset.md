@@ -1,14 +1,15 @@
 # a_f_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 off_t a_f_offset;
 ```
 

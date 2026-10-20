@@ -1,11 +1,12 @@
 # DeviceListResponse.Devices
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DeviceListResponse.Devices
 ```
 
@@ -15,9 +16,10 @@ object DeviceListResponse.Devices
 
 ## See Also
 
-- [object DeviceListRequest](devicelistrequest.md)
+### Request and Response
+- [object DeviceListRequest](../devicelistrequest.md)
   The request for a list of devices.
-- [object DeviceListResponse](devicelistresponse.md)
+- [object DeviceListResponse](../devicelistresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # model(for:options:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a previously specialized model from the cache, if available.
 
@@ -20,7 +21,7 @@ final func model(for modelURL: URL, options: SpecializationOptions) throws -> AI
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Return Value
 
@@ -30,7 +31,7 @@ The model if a matching cache entry exists, or `nil` otherwise.
 
 If this cache holds a specialized asset from previously specializing the model at `modelURL` with the specified `options`, this method loads and returns the model. This method never performs specialization.
 
-> **Note**: If a cache entry was found but the specialized asset failed to load.
+> **Throws**: If a cache entry was found but the specialized asset failed to load.
 
 ## Parameters
 

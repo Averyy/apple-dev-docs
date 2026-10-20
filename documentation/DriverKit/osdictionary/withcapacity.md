@@ -1,19 +1,20 @@
 # withCapacity
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates an OSDictionary object with preallocated capacity.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSDictionaryPtr withCapacity(uint32_t capacity);
 ```
 
@@ -27,15 +28,16 @@ NULL on failure, otherwise the allocated OSDictionary with reference count 1 to 
 
 ## See Also
 
-- [withDictionary](osdictionary/withdictionary.md)
+### Creating a Dictionary
+- [withDictionary](./withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [withObjects](osdictionary/withobjects.md)
+- [withObjects](./withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [OSDictionaryCreate](osdictionarycreate.md)
-- [merge](osdictionary/merge.md)
+- [OSDictionaryCreate](../osdictionarycreate.md)
+- [merge](./merge.md)
   Adds all members of a dictionary to this dictionary.
-- [free](osdictionary/free.md)
-- [flushCollection](osdictionary/flushcollection.md)
+- [free](./free.md)
+- [flushCollection](./flushcollection.md)
   Removes and drops references to all members of dictionary.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionPeriod
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Represents the duration of time between subscription renewals.
 
@@ -22,15 +23,16 @@ typealias SubscriptionPeriod = Product.SubscriptionPeriod
 
 ## See Also
 
-- [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
+### Subscription status and renewal information
+- [Product.SubscriptionInfo.Status](./product/subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
+- [Product.SubscriptionInfo.RenewalInfo](./product/subscriptioninfo/renewalinfo.md)
   The renewal information for an auto-renewable subscription.
-- [typealias SubscriptionRenewalInfo](subscriptionrenewalinfo.md)
+- [typealias SubscriptionRenewalInfo](./subscriptionrenewalinfo.md)
   Represents the renewal information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
+- [Product.SubscriptionInfo.RenewalState](./product/subscriptioninfo/renewalstate.md)
   The renewal states of auto-renewable subscriptions.
-- [typealias SubscriptionRenewalState](subscriptionrenewalstate.md)
+- [typealias SubscriptionRenewalState](./subscriptionrenewalstate.md)
   The renewal states of auto-renewable subscriptions.
 
 

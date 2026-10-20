@@ -1,7 +1,8 @@
 # appearsOnAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of albums from other artists that this artist appears on.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of albums f
 ```swift
 static let appearsOnAlbums: MusicRelationshipProperty<Artist, Album>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

@@ -1,7 +1,8 @@
 # NWInterface.RadioType
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,17 +22,17 @@ enum RadioType
 ## Topics
 
 ### Enumeration Cases
-- [case cell(NWInterface.RadioType.Cellular)](nwinterface/radiotype/cell(_:).md)
-- [case wifi(NWInterface.RadioType.WiFi)](nwinterface/radiotype/wifi(_:).md)
+- [case cell(NWInterface.RadioType.Cellular)](./radiotype/cell%28_%29.md)
+- [case wifi(NWInterface.RadioType.WiFi)](./radiotype/wifi%28_%29.md)
 ### Enumerations
-- [NWInterface.RadioType.Cellular](nwinterface/radiotype/cellular.md)
-- [NWInterface.RadioType.WiFi](nwinterface/radiotype/wifi.md)
+- [NWInterface.RadioType.Cellular](./radiotype/cellular.md)
+- [NWInterface.RadioType.WiFi](./radiotype/wifi.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

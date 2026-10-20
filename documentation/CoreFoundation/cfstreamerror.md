@@ -1,18 +1,19 @@
 # CFStreamError
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The structure returned by [`CFReadStreamGetError(_:)`](cfreadstreamgeterror(_:).md) and [`CFWriteStreamGetError(_:)`](cfwritestreamgeterror(_:).md).
+The structure returned by [`CFReadStreamGetError(_:)`](./cfreadstreamgeterror%28_%29.md) and [`CFWriteStreamGetError(_:)`](./cfwritestreamgeterror%28_%29.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,26 +21,31 @@ The structure returned by [`CFReadStreamGetError(_:)`](cfreadstreamgeterror(_:).
 struct CFStreamError
 ```
 
+```c
+typedef struct { ... } CFStreamError;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cfstreamerror/init.md)
-- [init(domain: CFIndex, error: Int32)](cfstreamerror/init(domain:error:).md)
+- [init()](./cfstreamerror/init%28%29.md)
+- [init(domain: CFIndex, error: Int32)](./cfstreamerror/init%28domain,error%29.md)
 ### Instance Properties
-- [var domain: CFIndex](cfstreamerror/domain.md)
-  The error domain that should be used to interpret the error. See [`CFStreamErrorDomain`](cfstreamerrordomain.md) for possible values.
-- [var error: Int32](cfstreamerror/error.md)
+- [var domain: CFIndex](./cfstreamerror/domain.md)
+  The error domain that should be used to interpret the error. See [`CFStreamErrorDomain`](./cfstreamerrordomain.md) for possible values.
+- [var error: Int32](./cfstreamerror/error.md)
   The error code.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct CFStreamClientContext](cfstreamclientcontext.md)
+### Data Types
+- [struct CFStreamClientContext](./cfstreamclientcontext.md)
   A structure that contains program-defined data and callbacks with which you can configure a stream’s client behavior.
 
 

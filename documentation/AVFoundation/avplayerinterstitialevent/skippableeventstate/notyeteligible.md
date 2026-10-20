@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEvent.SkippableEventState.notYetEligible
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the interstitial event will eventually become eligible to be skipped.
 
@@ -20,13 +21,18 @@ Indicates that the interstitial event will eventually become eligible to be skip
 case notYetEligible
 ```
 
+```c
+AVPlayerInterstitialEventSkippableEventStateNotYetEligible
+```
+
 ## See Also
 
-- [AVPlayerInterstitialEvent.SkippableEventState.eligible](avplayerinterstitialevent/skippableeventstate/eligible.md)
+### Event states
+- [AVPlayerInterstitialEvent.SkippableEventState.eligible](./eligible.md)
   Indicates that the interstitial event is currently skippable.
-- [AVPlayerInterstitialEvent.SkippableEventState.noLongerEligible](avplayerinterstitialevent/skippableeventstate/nolongereligible.md)
+- [AVPlayerInterstitialEvent.SkippableEventState.noLongerEligible](./nolongereligible.md)
   Indicates that the interstitial event is no longer eligible to be skipped.
-- [AVPlayerInterstitialEvent.SkippableEventState.notSkippable](avplayerinterstitialevent/skippableeventstate/notskippable.md)
+- [AVPlayerInterstitialEvent.SkippableEventState.notSkippable](./notskippable.md)
   Indicates that the interstitial event is not skippable.
 
 

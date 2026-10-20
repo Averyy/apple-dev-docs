@@ -1,7 +1,8 @@
 # SSLCiphersuiteGroup.atsfcp_v2_1
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.5+
@@ -16,6 +17,10 @@
 
 ```swift
 case atsfcp_v2_1
+```
+
+```c
+kSSLCiphersuiteGroupATSFCP_v2_1
 ```
 
 

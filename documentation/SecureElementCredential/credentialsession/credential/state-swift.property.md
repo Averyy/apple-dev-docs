@@ -1,7 +1,8 @@
 # state
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A snapshot of the credential’s installation state.
 
@@ -17,7 +18,8 @@ let state: CredentialSession.Credential.State
 
 ## See Also
 
-- [CredentialSession.Credential.State](credentialsession/credential/state-swift.enum.md)
+### Inspecting credential state
+- [CredentialSession.Credential.State](./state-swift.enum.md)
   An enumeration of possible values of a credential’s installation state.
 
 

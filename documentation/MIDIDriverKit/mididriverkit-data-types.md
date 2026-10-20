@@ -1,22 +1,24 @@
 # MIDIDriverKit Data Types
 
-**Framework**: MIDIDriverKit
+**Framework**: MIDIDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [IOUserMIDIClassID](mididriverkit/iousermidiclassid.md)
-- [IOUserMIDIObjectID](mididriverkit/iousermidiobjectid.md)
-- [IOUserMIDIProperty](mididriverkit/iousermidiproperty.md)
-- [IOUserMIDIPropertySelector](mididriverkit/iousermidipropertyselector.md)
-- [IOUserMIDIPropertyType](mididriverkit/iousermidipropertytype.md)
-- [IOUserMIDIProtocolID](mididriverkit/iousermidiprotocolid.md)
-- [IOUserMIDIUMPWord](mididriverkit/iousermidiumpword.md)
-- [MIDIIOBlock](mididriverkit/midiioblock.md)
+- [IOUserMIDIClassID](./mididriverkit-page/iousermidiclassid.md)
+- [IOUserMIDIObjectID](./mididriverkit-page/iousermidiobjectid.md)
+- [IOUserMIDIProperty](./mididriverkit-page/iousermidiproperty.md)
+- [IOUserMIDIPropertySelector](./mididriverkit-page/iousermidipropertyselector.md)
+- [IOUserMIDIPropertyType](./mididriverkit-page/iousermidipropertytype.md)
+- [IOUserMIDIProtocolID](./mididriverkit-page/iousermidiprotocolid.md)
+- [IOUserMIDIUMPWord](./mididriverkit-page/iousermidiumpword.md)
+- [MIDIIOBlock](./mididriverkit-page/midiioblock.md)
 
 ## See Also
 
-- [MIDIDriverKit Constants](mididriverkit-constants.md)
+### Reference
+- [MIDIDriverKit Constants](./mididriverkit-constants.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # List app asset library ref data
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List app asset library reference data.
 
@@ -10,10 +11,10 @@ List app asset library reference data.
 
 ## Mentions
 
-- [App Store Connect API 4.5.1 release notes](app-store-connect-api-4-5-1-release-notes.md)
-- [Discovering asset specifications](discovering-asset-specifications.md)
-- [Uploading and managing image assets](uploading-and-managing-image-assets.md)
-- [Uploading and managing video assets](uploading-and-managing-video-assets.md)
+- [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
+- [Discovering asset specifications](./discovering-asset-specifications.md)
+- [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
+- [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ List app asset library reference data.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appAssetLibraryRefData?filter[features]=APP_STORE_VERSIONS
 ```
 
@@ -126,15 +127,28 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraryRefData?filter[features]
 
 ## Parameters
 
+### Query Parameters
+
 - `filter[placementTypes]` ([string]): Filter the returned app asset library reference data by placement types.
 - `filter[placementProfileGroups]` ([string]): Filter the returned app asset library reference data by placement profile groups.
 - `filter[features]` ([string]): Filter the returned app asset library reference data by features.
 - `filter[specs]` ([string]): Filter the returned app asset library reference data by specification.
 - `fields[appAssetLibraryRefData]` ([string]): Additional fields to include for each app asset library reference data resource returned by the response.
 
+  **Allowed Values**: `features`, `placementProfileGroups`, `imageSpecs`, `videoSpecs`, `placementTypes`, `displayClasses`
+
+## Responses
+
+- `200` OK (`AppAssetLibraryRefDataResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read an app asset library ref data](get-v1-appassetlibraryrefdata-_id_.md)
+### Getting reference data
+- [Read an app asset library ref data](./get-v1-appassetlibraryrefdata-_id_.md)
   Get information about an app asset library reference data resource.
 
 

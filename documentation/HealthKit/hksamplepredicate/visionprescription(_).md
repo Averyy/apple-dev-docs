@@ -1,7 +1,8 @@
 # visionPrescription(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that matches prescription samples.
 
@@ -10,7 +11,7 @@ Returns a predicate that matches prescription samples.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,6 +19,8 @@ Returns a predicate that matches prescription samples.
 ```swift
 static func visionPrescription(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKVisionPrescription>
 ```
+
+Available when `Sample` inherits `HKSample`.
 
 #### Discussion
 
@@ -39,25 +42,26 @@ let predicate = HKSamplePredicate.visionPrescription(datePredicate)
 
 ## See Also
 
-- [static func audiogram(NSPredicate?) -> HKSamplePredicate<HKAudiogramSample>](hksamplepredicate/audiogram(_:).md)
+### Creating Sample Predicates
+- [static func audiogram(NSPredicate?) -> HKSamplePredicate<HKAudiogramSample>](./audiogram%28_%29.md)
   Returns a sample predicate that matches audiogram samples.
-- [static func categorySample(type: HKCategoryType, predicate: NSPredicate?) -> HKSamplePredicate<HKCategorySample>](hksamplepredicate/categorysample(type:predicate:).md)
+- [static func categorySample(type: HKCategoryType, predicate: NSPredicate?) -> HKSamplePredicate<HKCategorySample>](./categorysample%28type,predicate%29.md)
   Returns a sample predicate that matches category samples.
-- [static func clinicalRecord(type: HKClinicalType, predicate: NSPredicate?) -> HKSamplePredicate<HKClinicalRecord>](hksamplepredicate/clinicalrecord(type:predicate:).md)
+- [static func clinicalRecord(type: HKClinicalType, predicate: NSPredicate?) -> HKSamplePredicate<HKClinicalRecord>](./clinicalrecord%28type,predicate%29.md)
   Returns a sample predicate that matches clinical record samples.
-- [static func correlation(type: HKCorrelationType, predicate: NSPredicate?) -> HKSamplePredicate<HKCorrelation>](hksamplepredicate/correlation(type:predicate:).md)
+- [static func correlation(type: HKCorrelationType, predicate: NSPredicate?) -> HKSamplePredicate<HKCorrelation>](./correlation%28type,predicate%29.md)
   Returns a sample predicate that matches samples that contain correlated data.
-- [static func electrocardiogram(NSPredicate?) -> HKSamplePredicate<HKElectrocardiogram>](hksamplepredicate/electrocardiogram(_:).md)
+- [static func electrocardiogram(NSPredicate?) -> HKSamplePredicate<HKElectrocardiogram>](./electrocardiogram%28_%29.md)
   Returns a sample predicate that matches electrocardiogram samples.
-- [static func heartbeatSeries(NSPredicate?) -> HKSamplePredicate<HKHeartbeatSeriesSample>](hksamplepredicate/heartbeatseries(_:).md)
+- [static func heartbeatSeries(NSPredicate?) -> HKSamplePredicate<HKHeartbeatSeriesSample>](./heartbeatseries%28_%29.md)
   Returns a sample predicate that matches heartbeat series samples.
-- [static func quantitySample(type: HKQuantityType, predicate: NSPredicate?) -> HKSamplePredicate<HKQuantitySample>](hksamplepredicate/quantitysample(type:predicate:).md)
+- [static func quantitySample(type: HKQuantityType, predicate: NSPredicate?) -> HKSamplePredicate<HKQuantitySample>](./quantitysample%28type,predicate%29.md)
   Returns a sample predicate that matches quantity samples.
-- [static func sample(type: HKSampleType, predicate: NSPredicate?) -> HKSamplePredicate<HKSample>](hksamplepredicate/sample(type:predicate:).md)
+- [static func sample(type: HKSampleType, predicate: NSPredicate?) -> HKSamplePredicate<HKSample>](./sample%28type,predicate%29.md)
   Returns a sample predicate that matches samples.
-- [static func workout(NSPredicate?) -> HKSamplePredicate<HKWorkout>](hksamplepredicate/workout(_:).md)
+- [static func workout(NSPredicate?) -> HKSamplePredicate<HKWorkout>](./workout%28_%29.md)
   Returns a sample predicate that matches workout samples.
-- [static func workoutRoute(NSPredicate?) -> HKSamplePredicate<HKWorkoutRoute>](hksamplepredicate/workoutroute(_:).md)
+- [static func workoutRoute(NSPredicate?) -> HKSamplePredicate<HKWorkoutRoute>](./workoutroute%28_%29.md)
   Returns a sample predicate that matches samples containing workout route data.
 
 

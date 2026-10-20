@@ -1,7 +1,8 @@
 # resource(at:allocateMemory:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func resource(at index: Int, allocateMemory: Bool) -> (any MTLResource)?
+```
+
+```objc
+- (id<MTLResource>) resourceAtIndex:(NSUInteger) index allocateMemory:(BOOL) allocateMemory;
 ```
 
 

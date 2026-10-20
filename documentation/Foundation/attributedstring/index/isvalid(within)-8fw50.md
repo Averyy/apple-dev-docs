@@ -1,7 +1,8 @@
 # isValid(within:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the index is valid for use with the provided attributed string.
 

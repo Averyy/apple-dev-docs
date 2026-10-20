@@ -1,7 +1,8 @@
 # MPSCNNNeuronTanHNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a hyperbolic tangent neuron filter.
 
@@ -19,55 +20,60 @@ A representation of a hyperbolic tangent neuron filter.
 class MPSCNNNeuronTanHNode
 ```
 
+```objc
+@interface MPSCNNNeuronTanHNode : MPSCNNNeuronNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneurontanhnode/init(source:a:b:).md)
-- [init(source: MPSNNImageNode)](mpscnnneurontanhnode/init(source:).md)
+- [init(source: MPSNNImageNode, a: Float, b: Float)](./mpscnnneurontanhnode/init%28source,a,b%29.md)
+- [init(source: MPSNNImageNode)](./mpscnnneurontanhnode/init%28source%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNNeuronNode](mpscnnneuronnode.md)
+- [MPSCNNNeuronNode](./mpscnnneuronnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNNeuronAbsoluteNode](mpscnnneuronabsolutenode.md)
+### Neuron Layer Nodes
+- [class MPSCNNNeuronAbsoluteNode](./mpscnnneuronabsolutenode.md)
   A representation of an absolute neuron filter.
-- [class MPSCNNNeuronELUNode](mpscnnneuronelunode.md)
+- [class MPSCNNNeuronELUNode](./mpscnnneuronelunode.md)
   A representation of a parametric ELU neuron filter.
-- [class MPSCNNNeuronHardSigmoidNode](mpscnnneuronhardsigmoidnode.md)
+- [class MPSCNNNeuronHardSigmoidNode](./mpscnnneuronhardsigmoidnode.md)
   A representation of a hard sigmoid neuron filter.
-- [class MPSCNNNeuronLinearNode](mpscnnneuronlinearnode.md)
+- [class MPSCNNNeuronLinearNode](./mpscnnneuronlinearnode.md)
   A representation of a linear neuron filter.
-- [class MPSCNNNeuronPReLUNode](mpscnnneuronprelunode.md)
+- [class MPSCNNNeuronPReLUNode](./mpscnnneuronprelunode.md)
   A representation a PReLU neuron filter.
-- [class MPSCNNNeuronReLUNNode](mpscnnneuronrelunnode.md)
+- [class MPSCNNNeuronReLUNNode](./mpscnnneuronrelunnode.md)
   A representation a ReLUN neuron filter.
-- [class MPSCNNNeuronReLUNode](mpscnnneuronrelunode.md)
+- [class MPSCNNNeuronReLUNode](./mpscnnneuronrelunode.md)
   A representation a ReLU neuron filter.
-- [class MPSCNNNeuronSigmoidNode](mpscnnneuronsigmoidnode.md)
+- [class MPSCNNNeuronSigmoidNode](./mpscnnneuronsigmoidnode.md)
   A representation of a sigmoid neuron filter.
-- [class MPSCNNNeuronSoftPlusNode](mpscnnneuronsoftplusnode.md)
+- [class MPSCNNNeuronSoftPlusNode](./mpscnnneuronsoftplusnode.md)
   A representation of a parametric softplus neuron filter.
-- [class MPSCNNNeuronSoftSignNode](mpscnnneuronsoftsignnode.md)
+- [class MPSCNNNeuronSoftSignNode](./mpscnnneuronsoftsignnode.md)
   A representation of a softsign neuron filter.
-- [class MPSCNNNeuronExponentialNode](mpscnnneuronexponentialnode.md)
+- [class MPSCNNNeuronExponentialNode](./mpscnnneuronexponentialnode.md)
   A representation of an exponential neuron filter.
-- [class MPSCNNNeuronGradientNode](mpscnnneurongradientnode.md)
+- [class MPSCNNNeuronGradientNode](./mpscnnneurongradientnode.md)
   A representation of a gradient exponential neuron filter.
-- [class MPSCNNNeuronLogarithmNode](mpscnnneuronlogarithmnode.md)
+- [class MPSCNNNeuronLogarithmNode](./mpscnnneuronlogarithmnode.md)
   A representation of a logarithm neuron filter.
-- [class MPSCNNNeuronPowerNode](mpscnnneuronpowernode.md)
+- [class MPSCNNNeuronPowerNode](./mpscnnneuronpowernode.md)
   A representation of a power neuron filter.
-- [class MPSCNNNeuronNode](mpscnnneuronnode.md)
+- [class MPSCNNNeuronNode](./mpscnnneuronnode.md)
   The virtual base class for MPS CNN neuron nodes.
 
 

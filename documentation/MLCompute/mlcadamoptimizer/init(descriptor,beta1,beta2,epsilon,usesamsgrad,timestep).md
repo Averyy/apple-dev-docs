@@ -1,21 +1,26 @@
 # init(descriptor:beta1:beta2:epsilon:usesAMSGrad:timeStep:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an Adam optimizer with the values you specify.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor, beta1: Float, beta2: Float, epsilon: Float, usesAMSGrad: Bool, timeStep: Int)
+```
+
+```objc
++ (instancetype) optimizerWithDescriptor:(MLCOptimizerDescriptor *) optimizerDescriptor beta1:(float) beta1 beta2:(float) beta2 epsilon:(float) epsilon usesAMSGrad:(BOOL) usesAMSGrad timeStep:(NSUInteger) timeStep;
 ```
 
 ## Parameters
@@ -29,9 +34,10 @@ convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor, beta1: 
 
 ## See Also
 
-- [convenience init(descriptor: MLCOptimizerDescriptor)](mlcadamoptimizer/init(descriptor:).md)
+### Creating an Adam Optimizer
+- [convenience init(descriptor: MLCOptimizerDescriptor)](./init%28descriptor%29.md)
   Creates an Adam optimizer with the descriptor you specify.
-- [convenience init(descriptor: MLCOptimizerDescriptor, beta1: Float, beta2: Float, epsilon: Float, timeStep: Int)](mlcadamoptimizer/init(descriptor:beta1:beta2:epsilon:timestep:).md)
+- [convenience init(descriptor: MLCOptimizerDescriptor, beta1: Float, beta2: Float, epsilon: Float, timeStep: Int)](./init%28descriptor,beta1,beta2,epsilon,timestep%29.md)
   Creates an Adam optimizer with the values you specify.
 
 

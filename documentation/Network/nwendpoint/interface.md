@@ -1,7 +1,8 @@
 # interface
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional interface associated with this endpoint, such as the interface on which it was discovered.
 

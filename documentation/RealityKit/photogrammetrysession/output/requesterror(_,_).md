@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.requestError(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session aborted a request due to an error.
 
@@ -24,9 +25,10 @@ case requestError(PhotogrammetrySession.Request, any Error)
 
 ## See Also
 
-- [case requestProgress(PhotogrammetrySession.Request, fractionComplete: Double)](photogrammetrysession/output/requestprogress(_:fractioncomplete:).md)
+### Monitoring request status
+- [case requestProgress(PhotogrammetrySession.Request, fractionComplete: Double)](./requestprogress%28_,fractioncomplete%29.md)
   A progress update provided by the session.
-- [case requestComplete(PhotogrammetrySession.Request, PhotogrammetrySession.Result)](photogrammetrysession/output/requestcomplete(_:_:).md)
+- [case requestComplete(PhotogrammetrySession.Request, PhotogrammetrySession.Result)](./requestcomplete%28_,_%29.md)
   The session finished handling all pending requests.
 
 

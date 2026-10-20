@@ -1,7 +1,8 @@
 # serviceIdentifier
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service identifier for which the radio access technology changed.
 

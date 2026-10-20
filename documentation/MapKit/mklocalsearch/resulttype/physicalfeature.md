@@ -1,7 +1,8 @@
 # physicalFeature
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates that search results include physical features.
 
@@ -20,15 +21,20 @@ A value that indicates that search results include physical features.
 static var physicalFeature: MKLocalSearch.ResultType { get }
 ```
 
+```c
+MKLocalSearchResultTypePhysicalFeature
+```
+
 ## See Also
 
-- [static var address: MKLocalSearch.ResultType](mklocalsearch/resulttype/address.md)
+### Specifying types of search results
+- [static var address: MKLocalSearch.ResultType](./address.md)
   A value that indicates that search results include addresses.
-- [static var pointOfInterest: MKLocalSearch.ResultType](mklocalsearch/resulttype/pointofinterest.md)
+- [static var pointOfInterest: MKLocalSearch.ResultType](./pointofinterest.md)
   A value that indicates that search results include points of interest.
-- [static var address: MKLocalSearch.ResultType](mklocalsearch/resulttype/address.md)
+- [static var address: MKLocalSearch.ResultType](./address.md)
   A value that indicates that search results include addresses.
-- [static var pointOfInterest: MKLocalSearch.ResultType](mklocalsearch/resulttype/pointofinterest.md)
+- [static var pointOfInterest: MKLocalSearch.ResultType](./pointofinterest.md)
   A value that indicates that search results include points of interest.
 
 

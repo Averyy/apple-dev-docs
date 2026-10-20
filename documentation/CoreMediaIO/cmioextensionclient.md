@@ -1,7 +1,8 @@
 # CMIOExtensionClient
 
 **Framework**: Core Media I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a client of the extension.
 
@@ -15,36 +16,41 @@ An object that represents a client of the extension.
 class CMIOExtensionClient
 ```
 
+```objc
+@interface CMIOExtensionClient : NSObject
+```
+
 ## Topics
 
 ### Identifying a Client
-- [var clientID: UUID](cmioextensionclient/clientid.md)
+- [var clientID: UUID](./cmioextensionclient/clientid.md)
   A unique client identifier.
-- [var pid: pid_t](cmioextensionclient/pid.md)
+- [var pid: pid_t](./cmioextensionclient/pid.md)
   The process identifier of the client.
 ### Instance Properties
-- [var signingID: String?](cmioextensionclient/signingid.md)
+- [var signingID: String?](./cmioextensionclient/signingid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CMIOExtensionStream](cmioextensionstream.md)
+### Streams
+- [class CMIOExtensionStream](./cmioextensionstream.md)
   An object that represents a stream of media data.
-- [protocol CMIOExtensionStreamSource](cmioextensionstreamsource.md)
+- [protocol CMIOExtensionStreamSource](./cmioextensionstreamsource.md)
   A protocol for objects that act as stream sources.
-- [class CMIOExtensionStreamProperties](cmioextensionstreamproperties.md)
+- [class CMIOExtensionStreamProperties](./cmioextensionstreamproperties.md)
   An object that describes the properties of an extension stream.
 
 

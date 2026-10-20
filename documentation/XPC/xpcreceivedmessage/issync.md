@@ -1,7 +1,8 @@
 # isSync
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if this message is from a synchronous request.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates if this message is from a synchronous request.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var isSync: Bool { get }
 
 ## See Also
 
-- [func decode<T>(as: T.Type) throws -> T](xpcreceivedmessage/decode(as:).md)
+### Accessing message content
+- [func decode<T>(as: T.Type) throws -> T](./decode%28as%29.md)
   Decodes a message as the given type.
 
 

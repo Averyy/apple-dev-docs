@@ -1,7 +1,8 @@
 # USDPrim.Relationship.Spec
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A handle to a relationship definition stored in a layer.
 
@@ -26,60 +27,60 @@ Relationships store connections to other prims (target paths) rather than typed 
 ## Topics
 
 ### Initializers
-- [init()](usdprim/relationship/spec/init.md)
+- [init()](./spec/init%28%29.md)
   Creates an empty (invalid) relationship spec handle.
-- [init?(USDLayer.Spec)](usdprim/relationship/spec/init(_:).md)
-  Narrows an untyped [`USDLayer.Spec`](usdlayer/spec.md) to a relationship spec.
-- [init?(layer: USDLayer, relationshipPath: USDLayer.Path, variability: USDPrim.Property.Variability, isCustom: Bool)](usdprim/relationship/spec/init(layer:relationshippath:variability:iscustom:).md)
+- [init?(USDLayer.Spec)](./spec/init%28_%29.md)
+  Narrows an untyped [`USDLayer.Spec`](../../usdlayer/spec.md) to a relationship spec.
+- [init?(layer: USDLayer, relationshipPath: USDLayer.Path, variability: USDPrim.Property.Variability, isCustom: Bool)](./spec/init%28layer,relationshippath,variability,iscustom%29.md)
   Creates a relationship spec at the given path in the layer, authoring intermediate ancestor prim specs as `over`s where needed.
-- [init?(owner: USDPrim.Spec, name: USDToken, variability: USDPrim.Property.Variability, isCustom: Bool)](usdprim/relationship/spec/init(owner:name:variability:iscustom:).md)
+- [init?(owner: USDPrim.Spec, name: USDToken, variability: USDPrim.Property.Variability, isCustom: Bool)](./spec/init%28owner,name,variability,iscustom%29.md)
   Creates a new relationship spec under the given prim spec.
 ### Instance Properties
-- [var comment: String?](usdprim/relationship/spec/comment.md)
+- [var comment: String?](./spec/comment.md)
   The authored user comment, or `nil` if not authored.
-- [var customData: Dictionary<String, USDValue>](usdprim/relationship/spec/customdata.md)
+- [var customData: Dictionary<String, USDValue>](./spec/customdata.md)
   The custom data dictionary authored on this relationship.
-- [var documentation: String?](usdprim/relationship/spec/documentation.md)
+- [var documentation: String?](./spec/documentation.md)
   The authored documentation, or `nil` if not authored.
-- [var isCustom: Bool](usdprim/relationship/spec/iscustom.md)
+- [var isCustom: Bool](./spec/iscustom.md)
   Whether this relationship was authored as `custom`.
-- [var name: USDToken](usdprim/relationship/spec/name.md)
+- [var name: USDToken](./spec/name.md)
   The relationship’s local name.
-- [var noLoadHint: Bool](usdprim/relationship/spec/noloadhint.md)
+- [var noLoadHint: Bool](./spec/noloadhint.md)
   Hint to the runtime to skip loading payloads on targeted prims. Default: `false`.
-- [var owner: USDLayer.Spec?](usdprim/relationship/spec/owner.md)
+- [var owner: USDLayer.Spec?](./spec/owner.md)
   The spec that contains this relationship.
-- [var permission: USDLayer.Permission](usdprim/relationship/spec/permission.md)
+- [var permission: USDLayer.Permission](./spec/permission.md)
   The relationship’s permission level (public, restricted, private).
-- [var targetPaths: [USDLayer.Path]?](usdprim/relationship/spec/targetpaths.md)
+- [var targetPaths: [USDLayer.Path]?](./spec/targetpaths.md)
   The authored target paths, or `nil` if none authored.
 ### Instance Methods
-- [func clearAssetInfo(String)](usdprim/relationship/spec/clearassetinfo(_:).md)
+- [func clearAssetInfo(String)](./spec/clearassetinfo%28_%29.md)
   Removes `key` from the asset info dictionary.
-- [func clearCustomData(String)](usdprim/relationship/spec/clearcustomdata(_:).md)
+- [func clearCustomData(String)](./spec/clearcustomdata%28_%29.md)
   Removes `key` from the custom data dictionary.
-- [func clearTargetPaths()](usdprim/relationship/spec/cleartargetpaths.md)
+- [func clearTargetPaths()](./spec/cleartargetpaths%28%29.md)
   Clears all authored target paths on this relationship.
-- [func removeTarget(USDLayer.Path, preservingOrder: Bool)](usdprim/relationship/spec/removetarget(_:preservingorder:).md)
+- [func removeTarget(USDLayer.Path, preservingOrder: Bool)](./spec/removetarget%28_,preservingorder%29.md)
   Removes an authored target path.
-- [func rename(to: USDToken) throws](usdprim/relationship/spec/rename(to:).md)
+- [func rename(to: USDToken) throws](./spec/rename%28to%29.md)
   Sets the relationship’s name.
-- [func replaceTarget(USDLayer.Path, with: USDLayer.Path)](usdprim/relationship/spec/replacetarget(_:with:).md)
+- [func replaceTarget(USDLayer.Path, with: USDLayer.Path)](./spec/replacetarget%28_,with%29.md)
   Replaces an authored target path with a new path.
-- [func setAssetInfo(String, to: USDValue)](usdprim/relationship/spec/setassetinfo(_:to:).md)
+- [func setAssetInfo(String, to: USDValue)](./spec/setassetinfo%28_,to%29.md)
   Sets `key` in the asset info dictionary to `value`. Read the full dictionary via `field("assetInfo")` from FieldCollection.
-- [func setCustomData(String, to: USDValue)](usdprim/relationship/spec/setcustomdata(_:to:).md)
+- [func setCustomData(String, to: USDValue)](./spec/setcustomdata%28_,to%29.md)
   Sets `key` in the custom data dictionary to `value`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [USDLayer.Spec.FieldCollection](usdlayer/spec/fieldcollection.md)
-- [USDLayer.Spec.MetadataCollection](usdlayer/spec/metadatacollection.md)
-- [USDPrim.Property.Spec.SymmetryCollection](usdprim/property/spec/symmetrycollection.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [USDLayer.Spec.FieldCollection](../../usdlayer/spec/fieldcollection.md)
+- [USDLayer.Spec.MetadataCollection](../../usdlayer/spec/metadatacollection.md)
+- [USDPrim.Property.Spec.SymmetryCollection](../property/spec/symmetrycollection.md)
 
 
 ---

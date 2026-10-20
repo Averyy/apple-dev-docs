@@ -1,7 +1,8 @@
 # latestRevision
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The latest feature extractor revision.
 
@@ -21,9 +22,10 @@ static let latestRevision: Int
 
 ## See Also
 
-- [let cropAndScale: VNImageCropAndScaleOption](imagefeatureprint/cropandscale.md)
+### Getting the properties
+- [let cropAndScale: VNImageCropAndScaleOption](./cropandscale.md)
   The crop and scale options.
-- [var revision: Int](imagefeatureprint/revision.md)
+- [var revision: Int](./revision.md)
   The feature extractor revision number.
 
 

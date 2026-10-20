@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the default notification queue for the current thread.
 
@@ -18,6 +19,10 @@ Returns the default notification queue for the current thread.
 
 ```swift
 class var `default`: NotificationQueue { get }
+```
+
+```objc
+@property (class, strong, readonly) NSNotificationQueue * defaultQueue;
 ```
 
 #### Return Value

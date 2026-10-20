@@ -1,7 +1,8 @@
 # prefersHomeIndicatorAutoHidden
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view controller prefers the home indicator to be hidden or shown.
 
@@ -20,7 +21,8 @@ A Boolean value that indicates whether the view controller prefers the home indi
 
 ## See Also
 
-- [var childForHomeIndicatorAutoHidden: UIViewController?](uihostingcontroller/childforhomeindicatorautohidden.md)
+### Configuring the home indicator
+- [var childForHomeIndicatorAutoHidden: UIViewController?](./childforhomeindicatorautohidden.md)
 
 
 ---

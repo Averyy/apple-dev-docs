@@ -1,7 +1,8 @@
 # UIImpactFeedbackGenerator.FeedbackStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The mass of the objects in the collision simulated by an impact feedback generator object.
 
@@ -16,37 +17,42 @@ The mass of the objects in the collision simulated by an impact feedback generat
 enum FeedbackStyle
 ```
 
+```c
+enum UIImpactFeedbackStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIImpactFeedbackGenerator.FeedbackStyle.heavy](uiimpactfeedbackgenerator/feedbackstyle/heavy.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.heavy](./feedbackstyle/heavy.md)
   A collision between large, heavy user interface elements.
-- [UIImpactFeedbackGenerator.FeedbackStyle.light](uiimpactfeedbackgenerator/feedbackstyle/light.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.light](./feedbackstyle/light.md)
   A collision between small, light user interface elements.
-- [UIImpactFeedbackGenerator.FeedbackStyle.medium](uiimpactfeedbackgenerator/feedbackstyle/medium.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.medium](./feedbackstyle/medium.md)
   A collision between moderately sized user interface elements.
-- [UIImpactFeedbackGenerator.FeedbackStyle.rigid](uiimpactfeedbackgenerator/feedbackstyle/rigid.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.rigid](./feedbackstyle/rigid.md)
   A collision between user interface elements that are rigid, exhibiting a small amount of compression or elasticity.
-- [UIImpactFeedbackGenerator.FeedbackStyle.soft](uiimpactfeedbackgenerator/feedbackstyle/soft.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.soft](./feedbackstyle/soft.md)
   A collision between user interface elements that are soft, exhibiting a large amount of compression or elasticity.
 ### Initializers
-- [init?(rawValue: Int)](uiimpactfeedbackgenerator/feedbackstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./feedbackstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](uiimpactfeedbackgenerator/init(style:view:).md)
+### Initializing the feedback generator
+- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](./init%28style,view%29.md)
   Creates an impact feedback generator with the specified style and view.
-- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
+- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](./init%28style%29.md)
   Creates an impact feedback generator with the specified style.
 
 

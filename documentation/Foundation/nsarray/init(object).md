@@ -1,7 +1,8 @@
 # init(object:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an array containing a given object.
 
@@ -18,6 +19,10 @@ Creates and returns an array containing a given object.
 
 ```swift
 convenience init(object anObject: Any)
+```
+
+```objc
++ (instancetype) arrayWithObject:(ObjectType) anObject;
 ```
 
 #### Return Value
@@ -46,7 +51,8 @@ NSArray *array = @[@"Hello, world!"];
 
 ## See Also
 
-- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsarray/init(objects:count:)-7dct1.md)
+### Creating an Array
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./init%28objects,count%29-7dct1.md)
   Creates and returns an array that includes a given number of objects from a given C array.
 
 

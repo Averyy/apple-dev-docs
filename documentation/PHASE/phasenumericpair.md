@@ -1,7 +1,8 @@
 # PHASENumericPair
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An ordered pair that defines a bounding box for an envelope.
 
@@ -19,42 +20,47 @@ An ordered pair that defines a bounding box for an envelope.
 class PHASENumericPair
 ```
 
+```objc
+@interface PHASENumericPair : NSObject
+```
+
 #### Overview
 
-A [`PHASEEnvelope`](phaseenvelope.md) object uses this class to bound the value of its [`range`](phaseenvelope/range.md) and [`domain`](phaseenvelope/domain.md).
+A [`PHASEEnvelope`](./phaseenvelope.md) object uses this class to bound the value of its [`range`](./phaseenvelope/range.md) and [`domain`](./phaseenvelope/domain.md).
 
 ## Topics
 
 ### Creating a Numeric Pair
-- [init(firstValue: Double, secondValue: Double)](phasenumericpair/init(firstvalue:secondvalue:).md)
+- [init(firstValue: Double, secondValue: Double)](./phasenumericpair/init%28firstvalue,secondvalue%29.md)
   Creates a pair of numbers with the given values.
 ### Defining the Values
-- [var first: Double](phasenumericpair/first.md)
+- [var first: Double](./phasenumericpair/first.md)
   The first value in the pair.
-- [var second: Double](phasenumericpair/second.md)
+- [var second: Double](./phasenumericpair/second.md)
   The second value in the pair.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEEnvelope](phaseenvelope.md)
+### Dynamic Sound Control
+- [class PHASEEnvelope](./phaseenvelope.md)
   A collection of segments that connect to graph a complex curve over a linear input.
-- [class PHASEEnvelopeSegment](phaseenvelopesegment.md)
+- [class PHASEEnvelopeSegment](./phaseenvelopesegment.md)
   A curved portion of an envelope.
-- [enum PHASECurveType](phasecurvetype.md)
+- [enum PHASECurveType](./phasecurvetype.md)
   Options that apply a mathematical function to an input value.
-- [Playback Parameterization](playback-parameterization.md)
+- [Playback Parameterization](./playback-parameterization.md)
   Change the characteristics of in-flight audio by adjusting its properties at runtime.
 
 

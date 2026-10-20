@@ -1,7 +1,8 @@
 # init(cropRectangle:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image crop transformer. This transformer is used to crop an image to the `cropRectangle`.
 

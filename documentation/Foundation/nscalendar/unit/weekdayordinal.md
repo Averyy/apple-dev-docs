@@ -1,7 +1,8 @@
 # weekdayOrdinal
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the ordinal weekday unit.
 
@@ -20,23 +21,28 @@ Identifier for the ordinal weekday unit.
 static var weekdayOrdinal: NSCalendar.Unit { get }
 ```
 
+```c
+NSCalendarUnitWeekdayOrdinal
+```
+
 #### Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitWeekdayOrdinal`. The weekday ordinal unit describes ordinal position within the month unit of the corresponding weekday unit. For example, in the Gregorian calendar a weekday ordinal unit of `2` for a weekday unit `3` indicates “the second Tuesday in the month”.
 
 ## See Also
 
-- [static var weekOfYear: NSCalendar.Unit](nscalendar/unit/weekofyear.md)
+### Specifying Weeks and Days
+- [static var weekOfYear: NSCalendar.Unit](./weekofyear.md)
   Identifier for the week of the year calendar unit.
-- [static var weekOfMonth: NSCalendar.Unit](nscalendar/unit/weekofmonth.md)
+- [static var weekOfMonth: NSCalendar.Unit](./weekofmonth.md)
   Identifier for the week of the month calendar unit.
-- [static var weekday: NSCalendar.Unit](nscalendar/unit/weekday.md)
+- [static var weekday: NSCalendar.Unit](./weekday.md)
   Identifier for the weekday unit.
-- [static var day: NSCalendar.Unit](nscalendar/unit/day.md)
+- [static var day: NSCalendar.Unit](./day.md)
   Identifier for the day unit.
-- [static var dayOfYear: NSCalendar.Unit](nscalendar/unit/dayofyear.md)
+- [static var dayOfYear: NSCalendar.Unit](./dayofyear.md)
   Identifier for the nanosecond unit.
-- [static var isRepeatedDay: NSCalendar.Unit](nscalendar/unit/isrepeatedday.md)
+- [static var isRepeatedDay: NSCalendar.Unit](./isrepeatedday.md)
   Identifier for the time zone of a date components object.
 
 

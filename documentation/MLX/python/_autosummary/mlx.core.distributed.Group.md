@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.distributed.Group
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.distributed.Group.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.distributed.Group
-
- Table of contents 
-
-## Contents
-
-# mlx.core.distributed.Group
-
 **class Group**
 : An [mlx.core.distributed.Group](#mlx.core.distributed.Group) represents a group of independent mlx
 processes that can communicate.
@@ -51,5 +24,3 @@ Get the size of the group
 
 `split`(self, color[, key])
 Split the group to subgroups based on the provided color.
-
-** Contents

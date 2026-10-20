@@ -1,7 +1,8 @@
 # SpotlightSearchTool.GuidanceLevel.complete
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to use all available search techniques.
 
@@ -20,13 +21,14 @@ case complete
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 ## See Also
 
-- [case dynamic(SpotlightSearchTool.GuidanceProfile)](spotlightsearchtool/guidancelevel/dynamic(_:).md)
+### Getting the guidance levels
+- [case dynamic(SpotlightSearchTool.GuidanceProfile)](./dynamic%28_%29.md)
   An option to search using only the specified techniques.
-- [case focused(SpotlightSearchTool.ContentDomain)](spotlightsearchtool/guidancelevel/focused(_:).md)
+- [case focused(SpotlightSearchTool.ContentDomain)](./focused%28_%29.md)
   An option to search only specific types of content.
 
 

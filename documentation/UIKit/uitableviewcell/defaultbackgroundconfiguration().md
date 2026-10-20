@@ -1,7 +1,8 @@
 # defaultBackgroundConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a background configuration with system default values.
 
@@ -10,7 +11,7 @@ Retrieves a background configuration with system default values.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ A default background configuration. The system determines default values for the
 
 ## See Also
 
-- [var backgroundConfiguration: UIBackgroundConfiguration?](uitableviewcell/backgroundconfiguration-24e8e.md)
+### Configuring the background
+- [var backgroundConfiguration: UIBackgroundConfiguration?](./backgroundconfiguration-24e8e.md)
   The current background configuration of the cell.
-- [var automaticallyUpdatesBackgroundConfiguration: Bool](uitableviewcell/automaticallyupdatesbackgroundconfiguration.md)
+- [var automaticallyUpdatesBackgroundConfiguration: Bool](./automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its background configuration when its state changes.
-- [var backgroundView: UIView?](uitableviewcell/backgroundview.md)
+- [var backgroundView: UIView?](./backgroundview.md)
   The view to use as the background of the cell.
-- [var selectedBackgroundView: UIView?](uitableviewcell/selectedbackgroundview.md)
+- [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view to use as the background for a selected cell.
-- [var multipleSelectionBackgroundView: UIView?](uitableviewcell/multipleselectionbackgroundview.md)
+- [var multipleSelectionBackgroundView: UIView?](./multipleselectionbackgroundview.md)
   The background view to use for a selected cell when the table view allows multiple row selections.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Converts the specified number of seconds, as a floating-point value, into an instance of this scheduler time type.
@@ -23,13 +24,14 @@ static func seconds(_ s: Double) -> Self
 
 ## See Also
 
-- [static func microseconds(Int) -> Self](schedulertimeintervalconvertible/microseconds(_:).md)
+### Converting seconds to scheduler time intervals
+- [static func microseconds(Int) -> Self](./microseconds%28_%29.md)
   Converts the specified number of microseconds into an instance of this scheduler time type.
-- [static func milliseconds(Int) -> Self](schedulertimeintervalconvertible/milliseconds(_:).md)
+- [static func milliseconds(Int) -> Self](./milliseconds%28_%29.md)
   Converts the specified number of milliseconds into an instance of this scheduler time type.
-- [static func nanoseconds(Int) -> Self](schedulertimeintervalconvertible/nanoseconds(_:).md)
+- [static func nanoseconds(Int) -> Self](./nanoseconds%28_%29.md)
   Converts the specified number of nanoseconds into an instance of this scheduler time type.
-- [static func seconds(Int) -> Self](schedulertimeintervalconvertible/seconds(_:)-3g8ay.md)
+- [static func seconds(Int) -> Self](./seconds%28_%29-3g8ay.md)
   Converts the specified number of seconds into an instance of this scheduler time type.
 
 

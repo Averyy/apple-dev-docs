@@ -1,7 +1,8 @@
 # loadOutOfProcess
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -17,9 +18,14 @@
 static var loadOutOfProcess: AudioComponentInstantiationOptions { get }
 ```
 
+```c
+kAudioComponentInstantiation_LoadOutOfProcess
+```
+
 ## See Also
 
-- [static var loadInProcess: AudioComponentInstantiationOptions](audiocomponentinstantiationoptions/loadinprocess.md)
+### Constants
+- [static var loadInProcess: AudioComponentInstantiationOptions](./loadinprocess.md)
 
 
 ---

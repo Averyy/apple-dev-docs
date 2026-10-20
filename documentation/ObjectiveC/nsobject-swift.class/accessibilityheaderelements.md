@@ -1,7 +1,8 @@
 # accessibilityHeaderElements
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - tvOS 9.0+
@@ -11,6 +12,10 @@
 ```swift
 @MainActor
 var accessibilityHeaderElements: [Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray * accessibilityHeaderElements;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(uuid:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a UUID from the uuid C-language structure.
 
@@ -26,9 +27,10 @@ init(uuid: uuid_t)
 
 ## See Also
 
-- [init()](uuid/init.md)
+### Creating UUIDs
+- [init()](./init%28%29.md)
   Creates a UUID with RFC 4122 version 4 random bytes.
-- [init?(uuidString: String)](uuid/init(uuidstring:).md)
+- [init?(uuidString: String)](./init%28uuidstring%29.md)
   Creates a UUID from a string representation.
 
 

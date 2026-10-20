@@ -1,7 +1,8 @@
 # deviceInfo
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var deviceInfo: MIDI2DeviceInfo { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDI2DeviceInfo * deviceInfo;
 ```
 
 

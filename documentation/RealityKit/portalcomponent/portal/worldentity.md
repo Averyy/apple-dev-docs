@@ -1,9 +1,10 @@
 # worldEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The entity that has [`WorldComponent`](worldcomponent.md). Add portal world content as descendants of this entity.
+The entity that has [`WorldComponent`](../../worldcomponent.md). Add portal world content as descendants of this entity.
 
 **Availability**:
 - iOS 27.0+

@@ -1,7 +1,8 @@
 # largeTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font you use for large titles.
 
@@ -14,27 +15,32 @@ The font you use for large titles.
 static let largeTitle: NSFont.TextStyle
 ```
 
+```c
+extern NSFontTextStyle const NSFontTextStyleLargeTitle;
+```
+
 ## See Also
 
-- [static let body: NSFont.TextStyle](nsfont/textstyle/body.md)
+### Constants
+- [static let body: NSFont.TextStyle](./body.md)
   The font you use for body text.
-- [static let callout: NSFont.TextStyle](nsfont/textstyle/callout.md)
+- [static let callout: NSFont.TextStyle](./callout.md)
   The font you use for callouts.
-- [static let caption1: NSFont.TextStyle](nsfont/textstyle/caption1.md)
+- [static let caption1: NSFont.TextStyle](./caption1.md)
   The font you use for standard captions.
-- [static let caption2: NSFont.TextStyle](nsfont/textstyle/caption2.md)
+- [static let caption2: NSFont.TextStyle](./caption2.md)
   The font you use for alternate captions.
-- [static let footnote: NSFont.TextStyle](nsfont/textstyle/footnote.md)
+- [static let footnote: NSFont.TextStyle](./footnote.md)
   The font you use in footnotes.
-- [static let headline: NSFont.TextStyle](nsfont/textstyle/headline.md)
+- [static let headline: NSFont.TextStyle](./headline.md)
   The font you use for headings.
-- [static let subheadline: NSFont.TextStyle](nsfont/textstyle/subheadline.md)
+- [static let subheadline: NSFont.TextStyle](./subheadline.md)
   The font you use for subheadings.
-- [static let title1: NSFont.TextStyle](nsfont/textstyle/title1.md)
+- [static let title1: NSFont.TextStyle](./title1.md)
   The font you use for first-level hierarchical headings.
-- [static let title2: NSFont.TextStyle](nsfont/textstyle/title2.md)
+- [static let title2: NSFont.TextStyle](./title2.md)
   The font you use for second-level hierarchical headings.
-- [static let title3: NSFont.TextStyle](nsfont/textstyle/title3.md)
+- [static let title3: NSFont.TextStyle](./title3.md)
   The font you use for third-level hierarchical headings.
 
 

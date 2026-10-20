@@ -1,7 +1,8 @@
 # quickSwitchManager(_:didChangeTo:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates there’s been a change in device’s quick switch state.
 
@@ -16,13 +17,18 @@ Indicates there’s been a change in device’s quick switch state.
 optional func quickSwitchManager(_ quickSwitchManager: CTQuickSwitchManager, didChangeTo state: CTQuickSwitchState)
 ```
 
+```objc
+- (void) quickSwitchManager:(CTQuickSwitchManager *) quickSwitchManager didChangeToState:(CTQuickSwitchState) state;
+```
+
 #### Discussion
 
 Implement this method to receive notification when the device’s quick switch state changes.
 
 ## See Also
 
-- [enum CTQuickSwitchState](ctquickswitchstate.md)
+### Related Documentation
+- [enum CTQuickSwitchState](../../ctquickswitchstate.md)
   Values that describe a device’s quick switch status.
 
 

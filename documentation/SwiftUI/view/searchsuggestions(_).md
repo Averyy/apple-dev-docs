@@ -1,7 +1,8 @@
 # searchSuggestions(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the search suggestions for this view.
 
@@ -23,12 +24,12 @@ func searchSuggestions<S>(@ContentBuilder _ suggestions: () -> S) -> some View w
 
 ## Mentions
 
-- [Scoping a search operation](scoping-a-search-operation.md)
-- [Suggesting search terms](suggesting-search-terms.md)
+- [Scoping a search operation](../scoping-a-search-operation.md)
+- [Suggesting search terms](../suggesting-search-terms.md)
 
 #### Discussion
 
-You can suggest search terms during a search operation by providing a collection of view to this modifier. The interface presents the suggestion views as a list of choices when someone activates the search interface. Associate a string with each suggestion view by adding the [`searchCompletion(_:)`](view/searchcompletion(_:).md) modifier to the view. For example, you can suggest fruit types by displaying their emoji, and provide the corresponding search string as a search completion in each case:
+You can suggest search terms during a search operation by providing a collection of view to this modifier. The interface presents the suggestion views as a list of choices when someone activates the search interface. Associate a string with each suggestion view by adding the [`searchCompletion(_:)`](./searchcompletion%28_%29.md) modifier to the view. For example, you can suggest fruit types by displaying their emoji, and provide the corresponding search string as a search completion in each case:
 
 ```swift
 ProductList()
@@ -42,7 +43,7 @@ ProductList()
 
 When someone chooses a suggestion, SwiftUI replaces the text in the search field with the search completion string. If you omit the search completion modifier for a particular suggestion view, SwiftUI displays the suggestion, but the suggestion view doesn’t react to taps or clicks.
 
-> ❗ **Important**: In tvOS, searchable modifiers only support suggestion views of type [`Text`](text.md), like in the above example. Other platforms can use any view for the suggestions, including custom views.
+> ❗ **Important**: In tvOS, searchable modifiers only support suggestion views of type [`Text`](../text.md), like in the above example. Other platforms can use any view for the suggestions, including custom views.
 
 You can update the suggestions that you provide as conditions change.
 
@@ -61,7 +62,7 @@ ProductList()
 
 If the model’s `suggestedSearches` begins as an empty array, the interface doesn’t display any suggestions to start. You can then provide logic that updates the array based on some condition. For example, you might update the completions based on the current search text. Note that certain events or actions, like when someone moves a macOS window, might dismiss the suggestion view.
 
-For more information about using search modifiers, see [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
+For more information about using search modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 
 ## Parameters
 
@@ -69,15 +70,16 @@ For more information about using search modifiers, see [`Adding a search interfa
 
 ## See Also
 
-- [Suggesting search terms](suggesting-search-terms.md)
+### Making search suggestions
+- [Suggesting search terms](../suggesting-search-terms.md)
   Provide suggestions to people searching for content in your app.
-- [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](view/searchsuggestions(_:for:).md)
+- [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](./searchsuggestions%28_,for%29.md)
   Configures how to display search suggestions within this view.
-- [func searchCompletion(_:)](view/searchcompletion(_:).md)
+- [func searchCompletion(_:)](./searchcompletion%28_%29.md)
   Associates a fully formed string with the value of this view when used as a search suggestion.
-- [func searchable(text:tokens:suggestedTokens:placement:prompt:token:)](view/searchable(text:tokens:suggestedtokens:placement:prompt:token:).md)
+- [func searchable(text:tokens:suggestedTokens:placement:prompt:token:)](./searchable%28text,tokens,suggestedtokens,placement,prompt,token%29.md)
   Marks this view as searchable with text, tokens, and suggestions.
-- [struct SearchSuggestionsPlacement](searchsuggestionsplacement.md)
+- [struct SearchSuggestionsPlacement](../searchsuggestionsplacement.md)
   The ways that SwiftUI displays search suggestions.
 
 

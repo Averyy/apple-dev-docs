@@ -1,7 +1,8 @@
 # HKObjectType
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass with subclasses that identify a specific type of data for the HealthKit store.
 
@@ -19,23 +20,27 @@ An abstract superclass with subclasses that identify a specific type of data for
 class HKObjectType
 ```
 
+```objc
+@interface HKObjectType : NSObject
+```
+
 ## Mentions
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
-- [About the HealthKit framework](about-the-healthkit-framework.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
 
 #### Overview
 
 The `HKObjectType` class is an abstract class. Don’t instantiate an `HKObjectType` object directly. Instead, instantiate one of the following concrete subclasses:
 
-- [`HKActivitySummaryType`](hkactivitysummarytype.md)
-- [`HKCategoryType`](hkcategorytype.md)
-- [`HKCorrelationType`](hkcorrelationtype.md)
-- [`HKCharacteristicType`](hkcharacteristictype.md)
-- [`HKDocumentType`](hkdocumenttype.md)
-- [`HKQuantityType`](hkquantitytype.md)
-- [`HKSeriesType`](hkseriestype.md)
-- [`HKWorkoutType`](hkworkouttype.md)
+- [`HKActivitySummaryType`](./hkactivitysummarytype.md)
+- [`HKCategoryType`](./hkcategorytype.md)
+- [`HKCorrelationType`](./hkcorrelationtype.md)
+- [`HKCharacteristicType`](./hkcharacteristictype.md)
+- [`HKDocumentType`](./hkdocumenttype.md)
+- [`HKQuantityType`](./hkquantitytype.md)
+- [`HKSeriesType`](./hkseriestype.md)
+- [`HKWorkoutType`](./hkworkouttype.md)
 
 The `HKObjectType` class provides a convenience method to create each of these subclasses.
 
@@ -43,113 +48,114 @@ The `HKObjectType` class provides a convenience method to create each of these s
 
 Like many HealthKit classes, HealthKit object types aren’t extensible. Don’t subclass these classes.
 
-Additionally, wherever possible, this class uses a single instance to represent all copies of the same type. For example, if you make two calls to the [`quantityType(forIdentifier:)`](hkobjecttype/quantitytype(foridentifier:).md) method with the same identifier, the system returns the same instance. Reusing object types helps reduce HealthKit’s overall memory usage.
+Additionally, wherever possible, this class uses a single instance to represent all copies of the same type. For example, if you make two calls to the [`quantityType(forIdentifier:)`](./hkobjecttype/quantitytype%28foridentifier%29.md) method with the same identifier, the system returns the same instance. Reusing object types helps reduce HealthKit’s overall memory usage.
 
 ## Topics
 
 ### Creating quantity types
-- [class func quantityType(forIdentifier: HKQuantityTypeIdentifier) -> HKQuantityType?](hkobjecttype/quantitytype(foridentifier:).md)
+- [class func quantityType(forIdentifier: HKQuantityTypeIdentifier) -> HKQuantityType?](./hkobjecttype/quantitytype%28foridentifier%29.md)
   Returns the shared quantity type for the provided identifier.
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+- [struct HKQuantityTypeIdentifier](./hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
 ### Creating category types
-- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](hkobjecttype/categorytype(foridentifier:).md)
+- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](./hkobjecttype/categorytype%28foridentifier%29.md)
   Returns the shared category type for the provided identifier.
-- [struct HKCategoryTypeIdentifier](hkcategorytypeidentifier.md)
+- [struct HKCategoryTypeIdentifier](./hkcategorytypeidentifier.md)
   Identifiers for creating category types.
 ### Creating characteristic types
-- [class func characteristicType(forIdentifier: HKCharacteristicTypeIdentifier) -> HKCharacteristicType?](hkobjecttype/characteristictype(foridentifier:).md)
+- [class func characteristicType(forIdentifier: HKCharacteristicTypeIdentifier) -> HKCharacteristicType?](./hkobjecttype/characteristictype%28foridentifier%29.md)
   Returns the shared characteristic type for the provided identifier.
-- [struct HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier.md)
+- [struct HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier.md)
   The identifiers that create characteristic type objects.
 ### Creating correlation types
-- [class func correlationType(forIdentifier: HKCorrelationTypeIdentifier) -> HKCorrelationType?](hkobjecttype/correlationtype(foridentifier:).md)
+- [class func correlationType(forIdentifier: HKCorrelationTypeIdentifier) -> HKCorrelationType?](./hkobjecttype/correlationtype%28foridentifier%29.md)
   Returns the shared correlation type for the provided identifier.
-- [struct HKCorrelationTypeIdentifier](hkcorrelationtypeidentifier.md)
+- [struct HKCorrelationTypeIdentifier](./hkcorrelationtypeidentifier.md)
   The identifiers that create correlation type objects.
 ### Creating workout types
-- [class func workoutType() -> HKWorkoutType](hkobjecttype/workouttype.md)
-  Returns the shared [`HKWorkoutType`](hkworkouttype.md) object.
+- [class func workoutType() -> HKWorkoutType](./hkobjecttype/workouttype%28%29.md)
+  Returns the shared [`HKWorkoutType`](./hkworkouttype.md) object.
 ### Creating activity summary types
-- [class func activitySummaryType() -> HKActivitySummaryType](hkobjecttype/activitysummarytype.md)
+- [class func activitySummaryType() -> HKActivitySummaryType](./hkobjecttype/activitysummarytype%28%29.md)
   Returns the shared activity summary type.
 ### Creating electrocardiogram types
-- [class func electrocardiogramType() -> HKElectrocardiogramType](hkobjecttype/electrocardiogramtype.md)
+- [class func electrocardiogramType() -> HKElectrocardiogramType](./hkobjecttype/electrocardiogramtype%28%29.md)
   Returns the shared electrocardiogram type.
 ### Creating audiogram sample types
-- [class func audiogramSampleType() -> HKAudiogramSampleType](hkobjecttype/audiogramsampletype.md)
+- [class func audiogramSampleType() -> HKAudiogramSampleType](./hkobjecttype/audiogramsampletype%28%29.md)
   Returns an audiogram sample type.
 ### Creating vision prescription types
-- [class func visionPrescriptionType() -> HKPrescriptionType](hkobjecttype/visionprescriptiontype.md)
+- [class func visionPrescriptionType() -> HKPrescriptionType](./hkobjecttype/visionprescriptiontype%28%29.md)
   Returns a shared vision prescription type object.
 ### Creating clinical record types
-- [class func clinicalType(forIdentifier: HKClinicalTypeIdentifier) -> HKClinicalType?](hkobjecttype/clinicaltype(foridentifier:).md)
+- [class func clinicalType(forIdentifier: HKClinicalTypeIdentifier) -> HKClinicalType?](./hkobjecttype/clinicaltype%28foridentifier%29.md)
   Returns the shared clinical type for the provided identifier.
 ### Creating series types
-- [class func seriesType(forIdentifier: String) -> HKSeriesType?](hkobjecttype/seriestype(foridentifier:).md)
+- [class func seriesType(forIdentifier: String) -> HKSeriesType?](./hkobjecttype/seriestype%28foridentifier%29.md)
   Returns the shared series type for the provided identifier.
 ### Creating document types
-- [class func documentType(forIdentifier: HKDocumentTypeIdentifier) -> HKDocumentType?](hkobjecttype/documenttype(foridentifier:).md)
+- [class func documentType(forIdentifier: HKDocumentTypeIdentifier) -> HKDocumentType?](./hkobjecttype/documenttype%28foridentifier%29.md)
   Returns the shared document type for the provided identifier.
-- [struct HKDocumentTypeIdentifier](hkdocumenttypeidentifier.md)
+- [struct HKDocumentTypeIdentifier](./hkdocumenttypeidentifier.md)
   The identifiers for documents.
 ### Getting property data
-- [var identifier: String](hkobjecttype/identifier.md)
+- [var identifier: String](./hkobjecttype/identifier.md)
   A unique string identifying the HealthKit object type.
-- [func requiresPerObjectAuthorization() -> Bool](hkobjecttype/requiresperobjectauthorization.md)
+- [func requiresPerObjectAuthorization() -> Bool](./hkobjecttype/requiresperobjectauthorization%28%29.md)
   Returns a Boolean that indicates whether the data type requires per-object authorization.
 ### Initializers
-- [init?(coder: NSCoder)](hkobjecttype/init(coder:).md)
+- [init?(coder: NSCoder)](./hkobjecttype/init%28coder%29.md)
 ### Type Methods
-- [class func medicationDoseEventType() -> HKMedicationDoseEventType](hkobjecttype/medicationdoseeventtype.md)
-- [class func stateOfMindType() -> HKStateOfMindType](hkobjecttype/stateofmindtype.md)
-- [class func userAnnotatedMedicationType() -> HKUserAnnotatedMedicationType](hkobjecttype/userannotatedmedicationtype.md)
+- [class func medicationDoseEventType() -> HKMedicationDoseEventType](./hkobjecttype/medicationdoseeventtype%28%29.md)
+- [class func stateOfMindType() -> HKStateOfMindType](./hkobjecttype/stateofmindtype%28%29.md)
+- [class func userAnnotatedMedicationType() -> HKUserAnnotatedMedicationType](./hkobjecttype/userannotatedmedicationtype%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HKActivitySummaryType](hkactivitysummarytype.md)
-- [HKCharacteristicType](hkcharacteristictype.md)
-- [HKSampleType](hksampletype.md)
-- [HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
+- [HKActivitySummaryType](./hkactivitysummarytype.md)
+- [HKCharacteristicType](./hkcharacteristictype.md)
+- [HKSampleType](./hksampletype.md)
+- [HKUserAnnotatedMedicationType](./hkuserannotatedmedicationtype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKCharacteristicType](hkcharacteristictype.md)
+### Object type subclasses
+- [class HKCharacteristicType](./hkcharacteristictype.md)
   A type that represents data that doesn’t typically change over time.
-- [class HKQuantityType](hkquantitytype.md)
+- [class HKQuantityType](./hkquantitytype.md)
   A type that identifies samples that store numerical values.
-- [class HKCategoryType](hkcategorytype.md)
+- [class HKCategoryType](./hkcategorytype.md)
   A type that identifies samples that contain a value from a small set of possible values.
-- [class HKCorrelationType](hkcorrelationtype.md)
+- [class HKCorrelationType](./hkcorrelationtype.md)
   A type that identifies samples that group multiple subsamples.
-- [class HKActivitySummaryType](hkactivitysummarytype.md)
+- [class HKActivitySummaryType](./hkactivitysummarytype.md)
   A type that identifies activity summary objects.
-- [class HKAudiogramSampleType](hkaudiogramsampletype.md)
+- [class HKAudiogramSampleType](./hkaudiogramsampletype.md)
   A type that identifies samples that contain audiogram data.
-- [class HKElectrocardiogramType](hkelectrocardiogramtype.md)
+- [class HKElectrocardiogramType](./hkelectrocardiogramtype.md)
   A type that identifies samples containing electrocardiogram data.
-- [class HKSeriesType](hkseriestype.md)
+- [class HKSeriesType](./hkseriestype.md)
   A type that indicates the data stored in a series sample.
-- [class HKClinicalType](hkclinicaltype.md)
+- [class HKClinicalType](./hkclinicaltype.md)
   A type that identifies samples that contain clinical record data.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [class HKSampleType](hksampletype.md)
+- [class HKSampleType](./hksampletype.md)
   An abstract superclass for all classes that identify a specific type of sample when working with the HealthKit store.
 
 

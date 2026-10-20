@@ -1,7 +1,8 @@
 # timeInterval
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval of the cadence.
 
@@ -17,6 +18,10 @@ The time interval of the cadence.
 
 ```swift
 var timeInterval: CFTimeInterval { get }
+```
+
+```objc
+@property (readonly) CFTimeInterval timeInterval;
 ```
 
 

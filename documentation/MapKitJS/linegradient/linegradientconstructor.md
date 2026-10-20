@@ -1,7 +1,8 @@
 # new LineGradient(colorStops)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a style that renders a gradient along the length of a line.
 
@@ -10,7 +11,7 @@ Creates a style that renders a gradient along the length of a line.
 
 ## Declaration
 
-```swift
+```
 constructor(colorStops?: Record<number, string>);
 ```
 
@@ -27,9 +28,9 @@ overlay.style.lineGradient = new mapkit.LineGradient({
 });
 ```
 
-If the start or end of the line doesn’t have a defined color, the gradient uses the style’s [`strokeColor`](style/strokecolor.md) as a default.
+If the start or end of the line doesn’t have a defined color, the gradient uses the style’s [`strokeColor`](../style/strokecolor.md) as a default.
 
-You can extend gradients programatically with [`addColorStop()`](linegradient/addcolorstop.md) and [`addColorStopAtIndex()`](linegradient/addcolorstopatindex.md).
+You can extend gradients programatically with [`addColorStop()`](./addcolorstop.md) and [`addColorStopAtIndex()`](./addcolorstopatindex.md).
 
 ## Parameters
 
@@ -37,9 +38,10 @@ You can extend gradients programatically with [`addColorStop()`](linegradient/ad
 
 ## See Also
 
-- [addColorStop(offset, color)](linegradient/addcolorstop.md)
+### Creating a Line Gradient
+- [addColorStop(offset, color)](./addcolorstop.md)
   Adds a color transition point to the gradient.
-- [addColorStopAtIndex(index, color)](linegradient/addcolorstopatindex.md)
+- [addColorStopAtIndex(index, color)](./addcolorstopatindex.md)
   Adds a color transition at the index point in the list of points within a polyline.
 
 

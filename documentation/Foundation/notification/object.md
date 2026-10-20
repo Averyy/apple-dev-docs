@@ -1,7 +1,8 @@
 # object
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that the poster wishes to send to observers.
 
@@ -26,9 +27,10 @@ Typically this is the object that posted the notification.
 
 ## See Also
 
-- [var name: Notification.Name](notification/name-swift.property.md)
+### Getting Notification Information
+- [var name: Notification.Name](./name-swift.property.md)
   A tag identifying the notification.
-- [var userInfo: [AnyHashable : Any]?](notification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   Storage for values or objects related to this notification.
 
 

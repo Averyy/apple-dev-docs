@@ -1,7 +1,8 @@
 # init(scene:options:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new snapshotter object with the scene and options you specify.
 
@@ -18,10 +19,14 @@ Create a new snapshotter object with the scene and options you specify.
 init(scene: MKLookAroundScene, options: MKLookAroundSnapshotter.Options)
 ```
 
+```objc
+- (instancetype) initWithScene:(MKLookAroundScene *) scene options:(MKLookAroundSnapshotOptions *) options;
+```
+
 ## Parameters
 
-- `scene`: The [`MKLookAroundScene`](mklookaroundscene.md) to use as the source for the snapshot.
-- `options`: The available [`MKLookAroundSnapshotter.Options`](mklookaroundsnapshotter/options.md).
+- `scene`: The [`MKLookAroundScene`](../mklookaroundscene.md) to use as the source for the snapshot.
+- `options`: The available [`MKLookAroundSnapshotter.Options`](./options.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # UIViewAnimatingPosition.start
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The beginning of the animation. Use this constant when you want the starting values for any animatable properties—that is, the values of the properties before you applied any animations.
 
@@ -18,11 +19,16 @@ The beginning of the animation. Use this constant when you want the starting val
 case start
 ```
 
+```c
+UIViewAnimatingPositionStart
+```
+
 ## See Also
 
-- [UIViewAnimatingPosition.end](uiviewanimatingposition/end.md)
+### Constants
+- [UIViewAnimatingPosition.end](./end.md)
   The end point of the animation. Use this constant when you want the final values for any animatable properties—that is, you want to refer to the values you specified in your animation blocks.
-- [UIViewAnimatingPosition.current](uiviewanimatingposition/current.md)
+- [UIViewAnimatingPosition.current](./current.md)
   The current position. Use this constant when you want the most recent value set by an animator object.
 
 

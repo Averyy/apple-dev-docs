@@ -1,7 +1,8 @@
 # CiXcodeVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe an Xcode Versions resource.
 
@@ -10,14 +11,14 @@ The attributes that describe an Xcode Versions resource.
 
 ## Declaration
 
-```swift
+```
 object CiXcodeVersion.Attributes
 ```
 
 ## Topics
 
 ### Objects
-- [object CiXcodeVersion.Attributes.TestDestinations](cixcodeversion/attributes-data.dictionary/testdestinations-data.dictionary.md)
+- [object CiXcodeVersion.Attributes.TestDestinations](./attributes-data.dictionary/testdestinations-data.dictionary.md)
   The test destinations available for an Xcode version.
 
 ## Properties
@@ -28,7 +29,8 @@ object CiXcodeVersion.Attributes
 
 ## See Also
 
-- [object CiXcodeVersion.Relationships](cixcodeversion/relationships-data.dictionary.md)
+### Objects
+- [object CiXcodeVersion.Relationships](./relationships-data.dictionary.md)
   The relationships of the Xcode Versions resource you included in the request and those on which you can operate.
 
 

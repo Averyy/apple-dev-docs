@@ -1,7 +1,8 @@
 # productAttestationAuthorityCertificates
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -18,9 +19,13 @@
 var productAttestationAuthorityCertificates: [Data]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSData *> * productAttestationAuthorityCertificates;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

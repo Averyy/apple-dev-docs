@@ -1,7 +1,8 @@
 # vDSP_vabs
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the absolute value of each element in the supplied single-precision vector using the specified stride.
 
@@ -10,7 +11,7 @@ Calculates the absolute value of each element in the supplied single-precision v
 
 ## Declaration
 
-```swift
+```c
 void vDSP_vabs(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 

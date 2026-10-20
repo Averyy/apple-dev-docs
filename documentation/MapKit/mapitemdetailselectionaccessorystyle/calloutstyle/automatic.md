@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that allows the framework to choose an appropriate callout style automatically.
 
@@ -20,11 +21,12 @@ static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle { get }
 
 ## See Also
 
-- [MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle.md)
+### Callout styles
+- [MapItemDetailSelectionAccessoryStyle.CalloutStyle](../calloutstyle.md)
   The style to use for callout content.
-- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/compact.md)
+- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./compact.md)
   A compact, space-saving callout style.
-- [static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/full.md)
+- [static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./full.md)
   A rich, detailed callout style that is suitable for large map views.
 
 

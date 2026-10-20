@@ -1,7 +1,8 @@
 # HKWorkoutSession
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A session that tracks a person’s workout.
 
@@ -9,7 +10,7 @@ A session that tracks a person’s workout.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,9 +20,13 @@ A session that tracks a person’s workout.
 class HKWorkoutSession
 ```
 
+```objc
+@interface HKWorkoutSession : NSObject
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](./running-workout-sessions.md)
 
 #### Overview
 
@@ -35,106 +40,107 @@ iPhone typically locks during workouts. For privacy reasons, health data usually
 
 Siri support extends to the Lock Screen, allowing people to start, pause, resume, or cancel workouts hands-free. You can integrate Siri intents into your apps to enable this functionality.
 
-Apple Watch runs one workout session at a time. If a second workout starts while your workout is running, your [`HKWorkoutSessionDelegate`](hkworkoutsessiondelegate.md) object receives an [`HKError.Code.errorAnotherWorkoutSessionStarted`](hkerror/code/erroranotherworkoutsessionstarted.md) error, and your session ends.
+Apple Watch runs one workout session at a time. If a second workout starts while your workout is running, your [`HKWorkoutSessionDelegate`](./hkworkoutsessiondelegate.md) object receives an [`HKError.Code.errorAnotherWorkoutSessionStarted`](./hkerror/code/erroranotherworkoutsessionstarted.md) error, and your session ends.
 
 ## Topics
 
 ### Creating workout sessions
-- [init(healthStore: HKHealthStore, configuration: HKWorkoutConfiguration) throws](hkworkoutsession/init(healthstore:configuration:).md)
+- [init(healthStore: HKHealthStore, configuration: HKWorkoutConfiguration) throws](./hkworkoutsession/init%28healthstore,configuration%29.md)
   Returns a newly instantiated workout session with an associated workout builder.
 ### Monitoring the session
-- [var delegate: (any HKWorkoutSessionDelegate)?](hkworkoutsession/delegate.md)
+- [var delegate: (any HKWorkoutSessionDelegate)?](./hkworkoutsession/delegate.md)
   The workout session’s delegate.
-- [protocol HKWorkoutSessionDelegate](hkworkoutsessiondelegate.md)
+- [protocol HKWorkoutSessionDelegate](./hkworkoutsessiondelegate.md)
   The session delegate protocol that defines an interface for receiving notifications about errors and changes in the workout session’s state.
 ### Accessing the workout builder
-- [func associatedWorkoutBuilder() -> HKLiveWorkoutBuilder](hkworkoutsession/associatedworkoutbuilder.md)
+- [func associatedWorkoutBuilder() -> HKLiveWorkoutBuilder](./hkworkoutsession/associatedworkoutbuilder%28%29.md)
   Returns the live workout builder associated with the workout session.
 ### Managing the workout
-- [func prepare()](hkworkoutsession/prepare.md)
+- [func prepare()](./hkworkoutsession/prepare%28%29.md)
   Prepares the workout session.
-- [func startActivity(with: Date?)](hkworkoutsession/startactivity(with:).md)
+- [func startActivity(with: Date?)](./hkworkoutsession/startactivity%28with%29.md)
   Starts the workout session activity, and sets the start date.
-- [func pause()](hkworkoutsession/pause.md)
+- [func pause()](./hkworkoutsession/pause%28%29.md)
   Pauses the workout session.
-- [func resume()](hkworkoutsession/resume.md)
+- [func resume()](./hkworkoutsession/resume%28%29.md)
   Resumes the workout session.
-- [func stopActivity(with: Date?)](hkworkoutsession/stopactivity(with:).md)
+- [func stopActivity(with: Date?)](./hkworkoutsession/stopactivity%28with%29.md)
   Stops the workout session activity, and sets the end date.
-- [func end()](hkworkoutsession/end.md)
+- [func end()](./hkworkoutsession/end%28%29.md)
   Ends the workout session.
 ### Working with remote workout sessions
-- [func startMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/startmirroringtocompaniondevice(completion:).md)
+- [func startMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](./hkworkoutsession/startmirroringtocompaniondevice%28completion%29.md)
   Starts mirroring the workout session to the companion iOS device.
-- [func stopMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/stopmirroringtocompaniondevice(completion:).md)
+- [func stopMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](./hkworkoutsession/stopmirroringtocompaniondevice%28completion%29.md)
   Stops mirroring the workout session to the companion iOS device.
-- [func sendToRemoteWorkoutSession(data: Data, completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/sendtoremoteworkoutsession(data:completion:).md)
+- [func sendToRemoteWorkoutSession(data: Data, completion: (Bool, (any Error)?) -> Void)](./hkworkoutsession/sendtoremoteworkoutsession%28data,completion%29.md)
   Sends the provided data to the remote workout session.
 ### Accessing session data
-- [var endDate: Date?](hkworkoutsession/enddate.md)
+- [var endDate: Date?](./hkworkoutsession/enddate.md)
   The ending time and date for this workout session.
-- [var startDate: Date?](hkworkoutsession/startdate.md)
+- [var startDate: Date?](./hkworkoutsession/startdate.md)
   The starting time and date for this workout session.
-- [var state: HKWorkoutSessionState](hkworkoutsession/state.md)
+- [var state: HKWorkoutSessionState](./hkworkoutsession/state.md)
   The workout session’s current state.
-- [var type: HKWorkoutSessionType](hkworkoutsession/type.md)
+- [var type: HKWorkoutSessionType](./hkworkoutsession/type.md)
   A value that indicates whether the session is a primary session or a mirrored session.
-- [var workoutConfiguration: HKWorkoutConfiguration](hkworkoutsession/workoutconfiguration.md)
+- [var workoutConfiguration: HKWorkoutConfiguration](./hkworkoutsession/workoutconfiguration.md)
   The configuration object that describes this workout.
 ### Managing workout activities
-- [var currentActivity: HKWorkoutActivity](hkworkoutsession/currentactivity.md)
+- [var currentActivity: HKWorkoutActivity](./hkworkoutsession/currentactivity.md)
   The current workout activity.
-- [func beginNewActivity(configuration: HKWorkoutConfiguration, date: Date, metadata: [String : Any]?)](hkworkoutsession/beginnewactivity(configuration:date:metadata:).md)
+- [func beginNewActivity(configuration: HKWorkoutConfiguration, date: Date, metadata: [String : Any]?)](./hkworkoutsession/beginnewactivity%28configuration,date,metadata%29.md)
   Begins a new workout activity in the workout session.
-- [func endCurrentActivity(on: Date)](hkworkoutsession/endcurrentactivity(on:).md)
+- [func endCurrentActivity(on: Date)](./hkworkoutsession/endcurrentactivity%28on%29.md)
   Ends the current workout activity.
 ### Deprecated methods
-- [init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)](hkworkoutsession/init(activitytype:locationtype:).md)
+- [init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)](./hkworkoutsession/init%28activitytype,locationtype%29.md)
   Returns a newly instantiated workout session.
-- [init(configuration: HKWorkoutConfiguration) throws](hkworkoutsession/init(configuration:).md)
+- [init(configuration: HKWorkoutConfiguration) throws](./hkworkoutsession/init%28configuration%29.md)
   Returns a newly instantiated workout session.
-- [var activityType: HKWorkoutActivityType](hkworkoutsession/activitytype.md)
+- [var activityType: HKWorkoutActivityType](./hkworkoutsession/activitytype.md)
   The workout activity performed during this session.
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutsession/locationtype.md)
+- [var locationType: HKWorkoutSessionLocationType](./hkworkoutsession/locationtype.md)
   A value that indicates whether the workout session occurred indoors or outdoors.
 ### Initializers
-- [init?(coder: NSCoder)](hkworkoutsession/init(coder:).md)
+- [init?(coder: NSCoder)](./hkworkoutsession/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Running workout sessions](running-workout-sessions.md)
+### Sessions
+- [Running workout sessions](./running-workout-sessions.md)
   Track a workout on Apple Watch.
-- [Build a workout app for Apple Watch](build-a-workout-app-for-apple-watch.md)
+- [Build a workout app for Apple Watch](./build-a-workout-app-for-apple-watch.md)
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
-- [Building a multidevice workout app](building-a-multidevice-workout-app.md)
+- [Building a multidevice workout app](./building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
-- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+- [Building a workout app for iPhone and iPad](./building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
-- [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
+- [class HKWorkoutConfiguration](./hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
-- [enum HKWorkoutSessionState](hkworkoutsessionstate.md)
+- [enum HKWorkoutSessionState](./hkworkoutsessionstate.md)
   A workout session’s state.
-- [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)
+- [class HKLiveWorkoutBuilder](./hkliveworkoutbuilder.md)
   A builder object that constructs a workout incrementally based on live data from an active workout session.
-- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
+- [protocol HKLiveWorkoutBuilderDelegate](./hkliveworkoutbuilderdelegate.md)
   A protocol that defines methods for receiving updates from a live workout builder.
-- [class HKLiveWorkoutDataSource](hkliveworkoutdatasource.md)
+- [class HKLiveWorkoutDataSource](./hkliveworkoutdatasource.md)
   A data source that automatically provides live data from an active workout session.
 
 

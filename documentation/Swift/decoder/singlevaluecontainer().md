@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the data stored in this decoder as represented in a container appropriate for holding a single primitive value.
@@ -27,7 +28,7 @@ A single value container view into this decoder.
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered stored value is not a single value container.
+> **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a single value container.
 
 
 ---

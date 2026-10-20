@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: WeatherKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 static func == (lhs: Forecast<MinuteWeather>, rhs: Forecast<MinuteWeather>) -> Bool
 ```
+
+Available when `Element` conforms to `Decodable`, `Encodable`, `Equatable`, and `Sendable`.
 
 
 ---

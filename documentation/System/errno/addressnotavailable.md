@@ -1,7 +1,8 @@
 # addressNotAvailable
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Can’t assign the requested address.
 
@@ -22,7 +23,7 @@ static var addressNotAvailable: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,11 +33,12 @@ The corresponding C error is `EADDRNOTAVAIL`.
 
 ## See Also
 
-- [static var addressFamilyNotSupported: Errno](errno/addressfamilynotsupported.md)
+### Network Address Errors
+- [static var addressFamilyNotSupported: Errno](./addressfamilynotsupported.md)
   The address family isn’t supported by the protocol family.
-- [static var addressInUse: Errno](errno/addressinuse.md)
+- [static var addressInUse: Errno](./addressinuse.md)
   Address already in use.
-- [static var addressRequired: Errno](errno/addressrequired.md)
+- [static var addressRequired: Errno](./addressrequired.md)
   Destination address required.
 
 

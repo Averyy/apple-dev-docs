@@ -1,7 +1,8 @@
 # addresses
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IPv4 addresses to assign to the TUN interface.
 
@@ -19,11 +20,16 @@ The IPv4 addresses to assign to the TUN interface.
 var addresses: [String] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSString *> * addresses;
+```
+
 ## See Also
 
-- [var subnetMasks: [String]](neipv4settings/subnetmasks.md)
+### Accessing IPv4 properties
+- [var subnetMasks: [String]](./subnetmasks.md)
   The IPv4 network masks to assign to the TUN interface.
-- [var router: String?](neipv4settings/router.md)
+- [var router: String?](./router.md)
   The address of the next-hop gateway router represented as a dotted decimal string.
 
 

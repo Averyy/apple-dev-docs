@@ -1,7 +1,8 @@
 # fetchLatestSupported(completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Fetches the latest restore image supported by this host from the network.
 
@@ -17,21 +18,24 @@ class func fetchLatestSupported(completionHandler: @escaping @Sendable (Result<V
 
 #### Discussion
 
-Construct a [`VZMacOSInstaller`](vzmacosinstaller.md) object with a `VZMacOSRestoreImage` loaded from a file on the local file system. A `VZMacOSRestoreImage` fetched with the [`latestSupported`](vzmacosrestoreimage/latestsupported.md) method has a URL property that refers to a restore image on the network.
+Construct a [`VZMacOSInstaller`](../vzmacosinstaller.md) object with a `VZMacOSRestoreImage` loaded from a file on the local file system. A `VZMacOSRestoreImage` fetched with the [`latestSupported`](./latestsupported.md) method has a URL property that refers to a restore image on the network.
 
-To use a network restore image, download the file to disk (using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) or similar API). After downloading the restore image, you can initialize a [`VZMacOSInstaller`](vzmacosinstaller.md) using a URL referring to the local file.
+To use a network restore image, download the file to disk (using [`URLSession`](../../Foundation/urlsession.md) or similar API). After downloading the restore image, you can initialize a [`VZMacOSInstaller`](../vzmacosinstaller.md) using a URL referring to the local file.
 
 ## Parameters
 
-- `completionHandler`: A block called after the restore image fetch has succeeded or failed. The `error` parameter passed to the block is `nil` if the image restoration was successful. The system invokes the completion handler on an arbitrary thread. The completion handler returns an `error` parameter that describes the reason for the failure; the block is `nil` if installation was successful.
+- `completionHandler`: A block called after the restore image fetch has succeeded or failed. The `error` parameter passed to the block is `nil` if the image restoration was successful.
+
+  The system invokes the completion handler on an arbitrary thread. The completion handler returns an `error` parameter that describes the reason for the failure; the block is `nil` if installation was successful.
 
 ## See Also
 
-- [class func load(from: URL, completionHandler: (Result<VZMacOSRestoreImage, any Error>) -> Void)](vzmacosrestoreimage/load(from:completionhandler:).md)
+### Controlling the Restoration Process
+- [class func load(from: URL, completionHandler: (Result<VZMacOSRestoreImage, any Error>) -> Void)](./load%28from,completionhandler%29.md)
   Load a restore image from a file on the local file system.
-- [class var latestSupported: VZMacOSRestoreImage](vzmacosrestoreimage/latestsupported.md)
+- [class var latestSupported: VZMacOSRestoreImage](./latestsupported.md)
   Fetches the latest restore image supported by this host from the network.
-- [class func image(from: URL) async throws -> VZMacOSRestoreImage](vzmacosrestoreimage/image(from:).md)
+- [class func image(from: URL) async throws -> VZMacOSRestoreImage](./image%28from%29.md)
   Load a restore image from a file on the local file system.
 
 

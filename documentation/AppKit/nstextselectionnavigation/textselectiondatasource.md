@@ -1,7 +1,8 @@
 # textSelectionDataSource
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data source associated with this selection navigation.
 
@@ -14,9 +15,14 @@ The data source associated with this selection navigation.
 weak var textSelectionDataSource: (any NSTextSelectionDataSource)? { get }
 ```
 
+```objc
+@property (weak, readonly) id<NSTextSelectionDataSource> textSelectionDataSource;
+```
+
 ## See Also
 
-- [protocol NSTextSelectionDataSource](nstextselectiondatasource.md)
+### Accessing the data source
+- [protocol NSTextSelectionDataSource](../nstextselectiondatasource.md)
   A set of methods that objects implement to provide data for, and manage text selections.
 
 

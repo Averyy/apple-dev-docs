@@ -1,7 +1,8 @@
 # NormalizationScaler
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that normalizes the input values using a normalization strategy.
 
@@ -23,35 +24,36 @@ struct NormalizationScaler<Element> where Element : BinaryFloatingPoint, Element
 ## Topics
 
 ### Creating a scaler
-- [init(norm: NormalizationScaler<Element>.NormalizationStrategy)](normalizationscaler/init(norm:).md)
+- [init(norm: NormalizationScaler<Element>.NormalizationStrategy)](./normalizationscaler/init%28norm%29.md)
   Creates a normalization scaler.
-- [NormalizationScaler.NormalizationStrategy](normalizationscaler/normalizationstrategy.md)
+- [NormalizationScaler.NormalizationStrategy](./normalizationscaler/normalizationstrategy.md)
   A normalization strategy.
 ### Getting the normalization
-- [var norm: NormalizationScaler<Element>.NormalizationStrategy](normalizationscaler/norm.md)
+- [var norm: NormalizationScaler<Element>.NormalizationStrategy](./normalizationscaler/norm.md)
   The normalization strategy.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> NormalizationScaler<Element>.Transformer](normalizationscaler/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> NormalizationScaler<Element>.Transformer](./normalizationscaler/fitted%28to,eventhandler%29.md)
   Fits a normalization scaler to a sequence of elements.
 ### Default Implementations
-- [Estimator Implementations](normalizationscaler/estimator-implementations.md)
+- [Estimator Implementations](./normalizationscaler/estimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StandardScaler](standardscaler.md)
+### Scalers
+- [struct StandardScaler](./standardscaler.md)
   An estimator that standardizes the input by removing the mean and scaling to unit variance.
-- [struct MaxAbsScaler](maxabsscaler.md)
+- [struct MaxAbsScaler](./maxabsscaler.md)
   An estimator that scales the input values so that the maximum absolute value is 1.0.
-- [struct MinMaxScaler](minmaxscaler.md)
+- [struct MinMaxScaler](./minmaxscaler.md)
   An estimator that scales the input values so that they all lie in a closed range.
-- [struct RobustScaler](robustscaler.md)
+- [struct RobustScaler](./robustscaler.md)
   An estimator that scales the input using statistics that are robust to outliers.
 
 

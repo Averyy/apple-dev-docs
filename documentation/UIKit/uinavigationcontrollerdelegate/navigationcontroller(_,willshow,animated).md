@@ -1,7 +1,8 @@
 # navigationController(_:willShow:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate before the navigation controller displays a view controller’s view and navigation item properties.
 
@@ -9,7 +10,7 @@ Notifies the delegate before the navigation controller displays a view controlle
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ Notifies the delegate before the navigation controller displays a view controlle
 optional func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool)
 ```
 
+```objc
+- (void) navigationController:(UINavigationController *) navigationController willShowViewController:(UIViewController *) viewController animated:(BOOL) animated;
+```
+
 ## Mentions
 
-- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+- [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
 
 ## Parameters
 
 - `navigationController`: The navigation controller that is showing the view and properties of a view controller.
 - `viewController`: The view controller whose view and navigation item properties are being shown.
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `animated`: [`true`](../../Swift/true.md) to animate the transition; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func navigationController(UINavigationController, didShow: UIViewController, animated: Bool)](uinavigationcontrollerdelegate/navigationcontroller(_:didshow:animated:).md)
+### Responding to a view controller being shown
+- [func navigationController(UINavigationController, didShow: UIViewController, animated: Bool)](./navigationcontroller%28_,didshow,animated%29.md)
   Notifies the delegate after the navigation controller displays a view controller’s view and navigation item properties.
 
 

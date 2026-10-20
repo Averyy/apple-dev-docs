@@ -1,7 +1,8 @@
 # sliceUUID
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var sliceUUID: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * sliceUUID;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecPrivilegeNotSupported
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The privilege is not supported.
 
@@ -18,6 +19,10 @@ The privilege is not supported.
 
 ```swift
 var errSecPrivilegeNotSupported: OSStatus { get }
+```
+
+```c
+errSecPrivilegeNotSupported
 ```
 
 

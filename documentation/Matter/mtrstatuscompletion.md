@@ -1,7 +1,8 @@
 # MTRStatusCompletion
 
 **Framework**: Matter  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias MTRStatusCompletion = ((any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSError *) MTRStatusCompletion;
 ```
 
 

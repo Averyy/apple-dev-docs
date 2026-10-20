@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object that encapsulates a SwiftUI color.
 
@@ -10,7 +11,7 @@ Creates a color object that encapsulates a SwiftUI color.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -25,11 +26,12 @@ convenience init(_ color: Color)
 
 ## See Also
 
-- [init(ciColor: CIColor)](uicolor/init(cicolor:)-2z057.md)
+### Creating a color from another color object
+- [init(ciColor: CIColor)](./init%28cicolor%29-2z057.md)
   Creates a color object that encapsulates a Core Image color.
-- [init(cgColor: CGColor)](uicolor/init(cgcolor:)-27r9g.md)
+- [init(cgColor: CGColor)](./init%28cgcolor%29-27r9g.md)
   Creates a color object using the specified Quartz color reference.
-- [func withAlphaComponent(CGFloat) -> UIColor](uicolor/withalphacomponent(_:).md)
+- [func withAlphaComponent(CGFloat) -> UIColor](./withalphacomponent%28_%29.md)
   Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component.
 
 

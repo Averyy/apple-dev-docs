@@ -1,7 +1,8 @@
 # minimumFocusDistance
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture device’s minimum focus distance in millimeters.
 
@@ -18,9 +19,13 @@ The capture device’s minimum focus distance in millimeters.
 var minimumFocusDistance: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger minimumFocusDistance;
+```
+
 #### Discussion
 
-For virtual cameras, like [`builtInDualCamera`](avcapturedevice/devicetype-swift.struct/builtindualcamera.md) or [`builtInTripleCamera`](avcapturedevice/devicetype-swift.struct/builtintriplecamera.md), this value represents the smallest minimum focus distance of the autofocus-capable cameras that it sources.
+For virtual cameras, like [`builtInDualCamera`](./devicetype-swift.struct/builtindualcamera.md) or [`builtInTripleCamera`](./devicetype-swift.struct/builtintriplecamera.md), this value represents the smallest minimum focus distance of the autofocus-capable cameras that it sources.
 
 This value is `-1` if the distance is unknown.
 

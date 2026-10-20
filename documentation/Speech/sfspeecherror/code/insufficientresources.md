@@ -1,7 +1,8 @@
 # insufficientResources
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 There are not sufficient resources available on-device to process the incoming transcription request.
 
@@ -21,9 +22,10 @@ static var insufficientResources: SFSpeechError.Code { get }
 
 ## See Also
 
-- [SFSpeechError.Code.internalServiceError](sfspeecherror/code/internalserviceerror.md)
+### Other errors
+- [SFSpeechError.Code.internalServiceError](./internalserviceerror.md)
   There was an internal error.
-- [static var moduleOutputFailed: SFSpeechError.Code](sfspeecherror/code/moduleoutputfailed.md)
+- [static var moduleOutputFailed: SFSpeechError.Code](./moduleoutputfailed.md)
   The module’s result task failed.
 
 

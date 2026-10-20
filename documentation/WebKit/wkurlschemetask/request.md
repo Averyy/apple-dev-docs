@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Information about the resource to load.
@@ -19,9 +20,13 @@ Information about the resource to load.
 var request: URLRequest { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURLRequest * request;
+```
+
 #### Discussion
 
-Use the value of this property to get the URL of the requested resource, and any additional details. It is safe to retrieve the value of this property even after WebKit cancels the load request by calling your handler’s [`webView(_:stop:)`](wkurlschemehandler/webview(_:stop:).md) method.
+Use the value of this property to get the URL of the requested resource, and any additional details. It is safe to retrieve the value of this property even after WebKit cancels the load request by calling your handler’s [`webView(_:stop:)`](../wkurlschemehandler/webview%28_,stop%29.md) method.
 
 
 ---

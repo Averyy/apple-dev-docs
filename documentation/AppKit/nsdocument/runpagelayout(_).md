@@ -1,12 +1,13 @@
 # runPageLayout(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The action method invoked in the receiver as first responder when the user chooses the Page Setup menu command.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ The action method invoked in the receiver as first responder when the user choos
 func runPageLayout(_ sender: Any?)
 ```
 
+```objc
+- (void) runPageLayout:(id) sender;
+```
+
 #### Discussion
 
-The default implementation invokes [`runModalPageLayout(with:delegate:didRun:contextInfo:)`](nsdocument/runmodalpagelayout(with:delegate:didrun:contextinfo:).md) with the document’s current NSPrintInfo object as argument; if the user clicks the OK button and the document authorizes changes to its printing information ([`shouldChangePrintInfo(_:)`](nsdocument/shouldchangeprintinfo(_:).md)), the method sets the document’s new `NSPrintInfo` object and increments the document’s change count.
+The default implementation invokes [`runModalPageLayout(with:delegate:didRun:contextInfo:)`](./runmodalpagelayout%28with,delegate,didrun,contextinfo%29.md) with the document’s current NSPrintInfo object as argument; if the user clicks the OK button and the document authorizes changes to its printing information ([`shouldChangePrintInfo(_:)`](./shouldchangeprintinfo%28_%29.md)), the method sets the document’s new `NSPrintInfo` object and increments the document’s change count.
 
 ## Parameters
 
@@ -25,21 +30,23 @@ The default implementation invokes [`runModalPageLayout(with:delegate:didRun:con
 
 ## See Also
 
-- [func updateChangeCount(NSDocument.ChangeType)](nsdocument/updatechangecount(_:).md)
+### Related Documentation
+- [func updateChangeCount(NSDocument.ChangeType)](./updatechangecount%28_%29.md)
   Updates the receiver’s change count according to the given change type.
-- [var printInfo: NSPrintInfo](nsdocument/printinfo.md)
+- [var printInfo: NSPrintInfo](./printinfo.md)
   The printing information associated with the document.
-- [func printDocument(Any?)](nsdocument/printdocument(_:).md)
+### Handling User Actions
+- [func printDocument(Any?)](./printdocument%28_%29.md)
   Prints the receiver in response to the user choosing the Print menu command.
-- [func revertToSaved(Any?)](nsdocument/reverttosaved(_:).md)
+- [func revertToSaved(Any?)](./reverttosaved%28_%29.md)
   The action of the File menu item Revert in a document-based app.
-- [func save(Any?)](nsdocument/save(_:).md)
+- [func save(Any?)](./save%28_%29.md)
   The action method invoked in the receiver as first responder when the user chooses the Save menu command.
-- [func saveAs(Any?)](nsdocument/saveas(_:).md)
+- [func saveAs(Any?)](./saveas%28_%29.md)
   The action method invoked in the receiver as first responder when the user chooses the Save As menu command.
-- [func saveTo(Any?)](nsdocument/saveto(_:).md)
+- [func saveTo(Any?)](./saveto%28_%29.md)
   The action method invoked in the receiver as first responder when the user chooses the Save To menu command.
-- [func save(withDelegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/save(withdelegate:didsave:contextinfo:).md)
+- [func save(withDelegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](./save%28withdelegate,didsave,contextinfo%29.md)
   Saves the document and delivers the results to the provided delegate object.
 
 

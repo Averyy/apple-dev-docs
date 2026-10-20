@@ -1,13 +1,14 @@
 # force::twist
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a twisting force around a vertical axis through a specified origin point.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void force::twist(float3 origin, float strength, float attraction)
 
 This function creates a vortex-like effect by applying two force components: a tangential force that causes rotation around the origin, and an optional attractive or repulsive force toward or away from the origin. The twist occurs around a vertical (Y-axis) through the specified origin point.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/force__twist.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__twist.svg)
 
 ## Parameters
 

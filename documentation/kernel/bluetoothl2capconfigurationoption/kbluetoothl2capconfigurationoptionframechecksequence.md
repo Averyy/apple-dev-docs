@@ -1,14 +1,15 @@
 # kBluetoothL2CAPConfigurationOptionFrameCheckSequence
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPConfigurationOptionFrameCheckSequence = 0x05
 ```
 

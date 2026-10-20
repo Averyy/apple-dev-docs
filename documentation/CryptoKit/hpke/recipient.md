@@ -1,7 +1,8 @@
 # HPKE.Recipient
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the receiving side of an HPKE message exchange.
 
@@ -22,38 +23,39 @@ struct Recipient
 
 #### Overview
 
-To decrypt and verify the identity of encrypted messages, initialize a `Recipient` specifying the appropriate cipher suite, the receiver’s private key, the encapsulated symmetric key, and the additional cryptographic material relevant to your chosen mode of operation. Call [`open(_:)`](hpke/recipient/open(_:).md) or [`open(_:authenticating:)`](hpke/recipient/open(_:authenticating:).md) on the `Recipient` instance for each message in turn to retrieve its cleartext. The recipient of the messages needs to process them in the same order as the `Sender`, using the same cipher suite, encryption mode, and key schedule information (`info` data). Use a separate `Recipient` instance for each stream of messages.
+To decrypt and verify the identity of encrypted messages, initialize a `Recipient` specifying the appropriate cipher suite, the receiver’s private key, the encapsulated symmetric key, and the additional cryptographic material relevant to your chosen mode of operation. Call [`open(_:)`](./recipient/open%28_%29.md) or [`open(_:authenticating:)`](./recipient/open%28_,authenticating%29.md) on the `Recipient` instance for each message in turn to retrieve its cleartext. The recipient of the messages needs to process them in the same order as the `Sender`, using the same cipher suite, encryption mode, and key schedule information (`info` data). Use a separate `Recipient` instance for each stream of messages.
 
 ## Topics
 
 ### Initializers
-- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:)-6jqhf.md)
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](./recipient/init%28privatekey,ciphersuite,info,encapsulatedkey%29-6jqhf.md)
   Creates a recipient in base mode.
-- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:)-7v86b.md)
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](./recipient/init%28privatekey,ciphersuite,info,encapsulatedkey%29-7v86b.md)
   Creates a recipient in base mode.
-- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy: SK.PublicKey) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:authenticatedby:).md)
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy: SK.PublicKey) throws](./recipient/init%28privatekey,ciphersuite,info,encapsulatedkey,authenticatedby%29.md)
   Creates a recipient in authentication mode.
-- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy: SK.PublicKey, presharedKey: SymmetricKey, presharedKeyIdentifier: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:authenticatedby:presharedkey:presharedkeyidentifier:).md)
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy: SK.PublicKey, presharedKey: SymmetricKey, presharedKeyIdentifier: Data) throws](./recipient/init%28privatekey,ciphersuite,info,encapsulatedkey,authenticatedby,presharedkey,presharedkeyidentifier%29.md)
   Creates a recipient in authentication and preshared key mode.
-- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, presharedKey: SymmetricKey, presharedKeyIdentifier: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:presharedkey:presharedkeyidentifier:).md)
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, presharedKey: SymmetricKey, presharedKeyIdentifier: Data) throws](./recipient/init%28privatekey,ciphersuite,info,encapsulatedkey,presharedkey,presharedkeyidentifier%29.md)
   Creates a recipient in preshared key (PSK) mode.
 ### Instance Methods
-- [func exportSecret<Context>(context: Context, outputByteCount: Int) throws -> SymmetricKey](hpke/recipient/exportsecret(context:outputbytecount:).md)
+- [func exportSecret<Context>(context: Context, outputByteCount: Int) throws -> SymmetricKey](./recipient/exportsecret%28context,outputbytecount%29.md)
   Exports a secret given domain-separation context and the desired output length.
-- [func open<C>(C) throws -> Data](hpke/recipient/open(_:).md)
+- [func open<C>(C) throws -> Data](./recipient/open%28_%29.md)
   Decrypts a message, if the ciphertext is valid.
-- [func open<C, AD>(C, authenticating: AD) throws -> Data](hpke/recipient/open(_:authenticating:).md)
+- [func open<C, AD>(C, authenticating: AD) throws -> Data](./recipient/open%28_,authenticating%29.md)
   Decrypts a message, if the ciphertext is valid, verifying the integrity of additional authentication data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Sender](hpke/sender.md)
+### Sending and receiving messages
+- [struct Sender](./sender.md)
   A type that represents the sending side of an HPKE message exchange.
 
 

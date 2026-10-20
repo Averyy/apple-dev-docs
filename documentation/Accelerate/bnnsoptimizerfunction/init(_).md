@@ -1,16 +1,17 @@
 # init(_:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [var rawValue: UInt32](bnnsoptimizerfunction/rawvalue.md)
-- [init(rawValue: UInt32)](bnnsoptimizerfunction/init(rawvalue:).md)
+### Raw Values
+- [var rawValue: UInt32](./rawvalue.md)
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AudioVariant.dolbyAtmos
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Dolby Atmos is an immersive audio experience that surrounds you with sound from all sides, including above.
 

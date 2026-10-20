@@ -1,7 +1,8 @@
 # none
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the listener uses a default configuration during creation.
 
@@ -17,7 +18,8 @@ static let none: XPCListener.InitializationOptions
 
 ## See Also
 
-- [static let inactive: XPCListener.InitializationOptions](xpclistener/initializationoptions/inactive.md)
+### Listener creation options
+- [static let inactive: XPCListener.InitializationOptions](./inactive.md)
   Indicates that the listener isn’t activated during its creation.
 
 

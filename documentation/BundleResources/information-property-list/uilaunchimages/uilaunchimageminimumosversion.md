@@ -1,18 +1,20 @@
 # UILaunchImageMinimumOSVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string representing the minimum iOS version number for which the image is intended.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- tvOS 9.0+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 13.0
 
+## Details
 
-
-**Type**: string
+- **Name**: `UILaunchImageMinimumOSVersion`
+- **Type**: string
 
 #### Discussion
 
@@ -20,11 +22,12 @@ The version number string is formatted in the form `n.n.n`, where n is a number.
 
 ## See Also
 
-- [UILaunchImageName](information-property-list/uilaunchimages/uilaunchimagename.md)
+### Launch Image Configuration
+- [UILaunchImageName](./uilaunchimagename.md)
   A string containing the name of the image file.
-- [UILaunchImageOrientation](information-property-list/uilaunchimages/uilaunchimageorientation.md)
+- [UILaunchImageOrientation](./uilaunchimageorientation.md)
   A string containing the orientation of the image
-- [UILaunchImageSize](information-property-list/uilaunchimages/uilaunchimagesize.md)
+- [UILaunchImageSize](./uilaunchimagesize.md)
   A string containing the width and height of the image.
 
 

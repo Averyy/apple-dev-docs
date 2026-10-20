@@ -1,7 +1,8 @@
 # Search
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that retrieves map-based search results for a user-entered query.
 
@@ -10,13 +11,13 @@ An object that retrieves map-based search results for a user-entered query.
 
 ## Declaration
 
-```swift
+```
 class Search extends Service
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](./mapkit-js-5.md)
 
 #### Overview
 
@@ -29,70 +30,71 @@ To use the search service, create an instance of a search object with the desire
 ## Topics
 
 ### Creating a search
-- [new Search(options)](search/searchconstructor.md)
+- [new Search(options)](./search/searchconstructor.md)
   Creates a search object with optional initial values that you provide.
-- [interface SearchConstructorOptions](searchconstructoroptions.md)
+- [interface SearchConstructorOptions](./searchconstructoroptions.md)
   Options you provide when you create a search object.
 ### Performing a search
-- [search(query, options)](search/search.md)
+- [search(query, options)](./search/search.md)
   Retrieves the results of a search query.
-- [type SearchDelegate](searchdelegate.md)
+- [type SearchDelegate](./searchdelegate.md)
   An object or callback function the framework calls when performing a search or an autocomplete request.
-- [interface SearchOptions](searchoptions.md)
+- [interface SearchOptions](./searchoptions.md)
   An object that contains options to adjust a search.
-- [interface SearchResponse](searchresponse.md)
+- [interface SearchResponse](./searchresponse.md)
   The result of a search, including the original search query, the bounding region, and a list of places that match the query.
 ### Performing a search autocomplete
-- [autocomplete(query, options)](search/autocomplete.md)
+- [autocomplete(query, options)](./search/autocomplete.md)
   Retrieves a list of autocomplete results for the specified search query.
-- [interface SearchAutocompleteOptions](searchautocompleteoptions.md)
+- [interface SearchAutocompleteOptions](./searchautocompleteoptions.md)
   Options you provide to constrain an autocomplete request.
-- [interface SearchAutocompleteResponse](searchautocompleteresponse.md)
+- [interface SearchAutocompleteResponse](./searchautocompleteresponse.md)
   An object containing the response from an autocomplete request.
-- [class SearchAutocompleteResult](searchautocompleteresult.md)
+- [class SearchAutocompleteResult](./searchautocompleteresult.md)
   The result of an autocomplete query, including display lines and a coordinate.
 ### Filtering a search
-- [class AddressFilter](addressfilter.md)
+- [class AddressFilter](./addressfilter.md)
   An object that filters which address options to include or exclude in search results.
 ### Deprecated
-- [autocomplete(query, callback, options)](search/autocomplete1.md)
+- [autocomplete(query, callback, options)](./search/autocomplete1.md)
   Retrieves a list of autocomplete results for the specified search query.
-- [cancel(promise)](service/cancel.md)
+- [cancel(promise)](./service/cancel.md)
   Cancels a request using the provided request promise.
-- [RegionPriority](search/regionpriority-data.var.md)
+- [RegionPriority](./search/regionpriority-data.var.md)
   A static property that allows you to access region priority enumeration.
-- [search(query, callback, options)](search/search1.md)
+- [search(query, callback, options)](./search/search1.md)
   Retrieves the results of a search query.
 ### Instance Properties
-- [addressFilter](search/addressfilter.md)
+- [addressFilter](./search/addressfilter.md)
   An filter that lists which address components to include or exclude in search results.
-- [coordinate](search/coordinate.md)
+- [coordinate](./search/coordinate.md)
   A map coordinate that provides a hint for the geographic area to search.
-- [includeAddresses](search/includeaddresses.md)
+- [includeAddresses](./search/includeaddresses.md)
   A Boolean value that indicates whether the search results include addresses.
-- [includePhysicalFeatures](search/includephysicalfeatures.md)
+- [includePhysicalFeatures](./search/includephysicalfeatures.md)
   A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
-- [includePointsOfInterest](search/includepointsofinterest.md)
+- [includePointsOfInterest](./search/includepointsofinterest.md)
   A Boolean value that indicates whether the search results should include points of interest.
-- [includeQueries](search/includequeries.md)
+- [includeQueries](./search/includequeries.md)
   A Boolean value that indicates whether the search results include queries.
-- [limitToCountries](search/limittocountries.md)
+- [limitToCountries](./search/limittocountries.md)
   A string that constrains search results to be within the provided countries.
-- [pointOfInterestFilter](search/pointofinterestfilter.md)
+- [pointOfInterestFilter](./search/pointofinterestfilter.md)
   A filter to use to include or exclude point-of-interest categories.
-- [region](search/region.md)
+- [region](./search/region.md)
   A map region that provides a hint about the geographic area to search.
-- [regionPriority](search/regionpriority-data.property.md)
+- [regionPriority](./search/regionpriority-data.property.md)
   A region priority value that controls whether results occur outside, or strictly within, the region.
 
 ## Relationships
 
 ### Inherits From
-- [Service](service.md)
+- [Service](./service.md)
 
 ## See Also
 
-- [class AddressFilter](addressfilter.md)
+### Search
+- [class AddressFilter](./addressfilter.md)
   An object that filters which address options to include or exclude in search results.
 
 

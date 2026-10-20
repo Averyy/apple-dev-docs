@@ -1,10 +1,11 @@
 # kOBEXRealmISO88597
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,18 +13,23 @@
 var kOBEXRealmISO88597: OBEXRealmValues { get }
 ```
 
+```c
+kOBEXRealmISO88597
+```
+
 ## See Also
 
-- [var kOBEXRealmASCII: OBEXRealmValues](kobexrealmascii.md)
-- [var kOBEXRealmISO88591: OBEXRealmValues](kobexrealmiso88591.md)
-- [var kOBEXRealmISO88592: OBEXRealmValues](kobexrealmiso88592.md)
-- [var kOBEXRealmISO88593: OBEXRealmValues](kobexrealmiso88593.md)
-- [var kOBEXRealmISO88594: OBEXRealmValues](kobexrealmiso88594.md)
-- [var kOBEXRealmISO88595: OBEXRealmValues](kobexrealmiso88595.md)
-- [var kOBEXRealmISO88596: OBEXRealmValues](kobexrealmiso88596.md)
-- [var kOBEXRealmISO88598: OBEXRealmValues](kobexrealmiso88598.md)
-- [var kOBEXRealmISO88599: OBEXRealmValues](kobexrealmiso88599.md)
-- [var kOBEXRealmUNICODE: OBEXRealmValues](kobexrealmunicode.md)
+### Constants
+- [var kOBEXRealmASCII: OBEXRealmValues](./kobexrealmascii.md)
+- [var kOBEXRealmISO88591: OBEXRealmValues](./kobexrealmiso88591.md)
+- [var kOBEXRealmISO88592: OBEXRealmValues](./kobexrealmiso88592.md)
+- [var kOBEXRealmISO88593: OBEXRealmValues](./kobexrealmiso88593.md)
+- [var kOBEXRealmISO88594: OBEXRealmValues](./kobexrealmiso88594.md)
+- [var kOBEXRealmISO88595: OBEXRealmValues](./kobexrealmiso88595.md)
+- [var kOBEXRealmISO88596: OBEXRealmValues](./kobexrealmiso88596.md)
+- [var kOBEXRealmISO88598: OBEXRealmValues](./kobexrealmiso88598.md)
+- [var kOBEXRealmISO88599: OBEXRealmValues](./kobexrealmiso88599.md)
+- [var kOBEXRealmUNICODE: OBEXRealmValues](./kobexrealmunicode.md)
 
 
 ---

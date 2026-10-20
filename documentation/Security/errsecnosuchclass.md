@@ -1,7 +1,8 @@
 # errSecNoSuchClass
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keychain item class does not exist.
 
@@ -18,6 +19,10 @@ The keychain item class does not exist.
 
 ```swift
 var errSecNoSuchClass: OSStatus { get }
+```
+
+```c
+errSecNoSuchClass
 ```
 
 

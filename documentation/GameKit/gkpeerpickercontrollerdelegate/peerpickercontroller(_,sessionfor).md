@@ -1,15 +1,18 @@
 # peerPickerController(_:sessionFor:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to return a session for the specified connection type.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use MCBrowserViewController along with MCBrowserViewControllerDelegate from the MultipeerConnectivity framework.
 
 ## Declaration
 
@@ -17,15 +20,19 @@ Asks the delegate to return a session for the specified connection type.
 optional func peerPickerController(_ picker: GKPeerPickerController, sessionFor type: GKPeerPickerConnectionType) -> GKSession
 ```
 
+```objc
+- (GKSession *) peerPickerController:(GKPeerPickerController *) picker sessionForConnectionType:(GKPeerPickerConnectionType) type;
+```
+
 #### Discussion
 
-Your delegate is responsible for providing a [`GKSession`](gksession.md) to use to find and connect to other devices. When the peer picker needs a session, it calls this method. Your application can either create a new session or return a previously created session to the peer picker. The session that your application returns to the peer picker must advertise itself as a peer ([`GKSessionMode.peer`](gksessionmode/peer.md)).
+Your delegate is responsible for providing a [`GKSession`](../gksession.md) to use to find and connect to other devices. When the peer picker needs a session, it calls this method. Your application can either create a new session or return a previously created session to the peer picker. The session that your application returns to the peer picker must advertise itself as a peer ([`GKSessionMode.peer`](../gksessionmode/peer.md)).
 
-If your delegate does not implement this method and the user selected a network of type [`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md), the peer controller allocates a new session that advertises itself as a peer ([`GKSessionMode.peer`](gksessionmode/peer.md)) with the default [`sessionID`](gksession/sessionid.md) and [`displayName`](gksession/displayname.md) parameters.
+If your delegate does not implement this method and the user selected a network of type [`GKPeerPickerConnectionType.nearby`](../gkpeerpickerconnectiontype/nearby.md), the peer controller allocates a new session that advertises itself as a peer ([`GKSessionMode.peer`](../gksessionmode/peer.md)) with the default [`sessionID`](../gksession/sessionid.md) and [`displayName`](../gksession/displayname.md) parameters.
 
 ##### Special Considerations
 
-In iOS 3.0, your delegate receives requests only for networks of type [`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md).
+In iOS 3.0, your delegate receives requests only for networks of type [`GKPeerPickerConnectionType.nearby`](../gkpeerpickerconnectiontype/nearby.md).
 
 ## Parameters
 
@@ -34,7 +41,8 @@ In iOS 3.0, your delegate receives requests only for networks of type [`GKPeerPi
 
 ## See Also
 
-- [func peerPickerController(GKPeerPickerController, didSelect: GKPeerPickerConnectionType)](gkpeerpickercontrollerdelegate/peerpickercontroller(_:didselect:).md)
+### Creating a Session for the Peer Picker
+- [func peerPickerController(GKPeerPickerController, didSelect: GKPeerPickerConnectionType)](./peerpickercontroller%28_,didselect%29.md)
   Tells the delegate that the user selected a connection type.
 
 

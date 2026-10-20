@@ -1,7 +1,8 @@
 # isTranslationAnimated
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the animation interpolates changes to the target object’s position.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the animation interpolates changes to the
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,24 @@ A Boolean value that indicates whether the animation interpolates changes to the
 var isTranslationAnimated: Bool { get set }
 ```
 
+Available when `Value` is `JointTransforms`.
+
 ## See Also
 
-- [var name: String](fromtobyanimation/name.md)
+### Configuring the animation
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](fromtobyanimation/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
-- [var blendLayer: Int32](fromtobyanimation/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
-- [var jointNames: [String]](fromtobyanimation/jointnames.md)
+- [var jointNames: [String]](./jointnames.md)
   Joint names that define the joints in the skeletal pose.
-- [var isScaleAnimated: Bool](fromtobyanimation/isscaleanimated.md)
+- [var isScaleAnimated: Bool](./isscaleanimated.md)
   A Boolean value that indicates whether that animation interpolates changes to the target’s size.
-- [var isRotationAnimated: Bool](fromtobyanimation/isrotationanimated.md)
+- [var isRotationAnimated: Bool](./isrotationanimated.md)
   A Boolean value that indicates whether the animation interpolates rotational changes.
-- [var isAdditive: Bool](fromtobyanimation/isadditive.md)
+- [var isAdditive: Bool](./isadditive.md)
   A Boolean value that indicates whether the animation blends additively with concurrent animations.
 
 

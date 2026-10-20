@@ -1,7 +1,8 @@
 # EnvironmentResource.SkyboxMode
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enumeration controlling how to preserve the skybox.
 
@@ -22,28 +23,29 @@ struct SkyboxMode
 ## Topics
 
 ### Choosing a skybox mode
-- [static var preserve: EnvironmentResource.SkyboxMode](environmentresource/skyboxmode/preserve.md)
+- [static var preserve: EnvironmentResource.SkyboxMode](./skyboxmode/preserve.md)
   Preserve and reference the original skybox cube texture.
-- [static var discard: EnvironmentResource.SkyboxMode](environmentresource/skyboxmode/discard.md)
+- [static var discard: EnvironmentResource.SkyboxMode](./skyboxmode/discard.md)
   Only keep a low-resolution proxy of the skybox, reducing memory usage.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(named: String, in: Bundle?, skyboxMode: EnvironmentResource.SkyboxMode) async throws](environmentresource/init(named:in:skyboxmode:).md)
+### Creating an environment resource
+- [convenience init(named: String, in: Bundle?, skyboxMode: EnvironmentResource.SkyboxMode) async throws](./init%28named,in,skyboxmode%29.md)
   Asynchronously loads an environment resource from a bundle.
-- [convenience init(equirectangular: CGImage, options: EnvironmentResource.CreateOptions) async throws](environmentresource/init(equirectangular:options:)-8e7wv.md)
+- [convenience init(equirectangular: CGImage, options: EnvironmentResource.CreateOptions) async throws](./init%28equirectangular,options%29-8e7wv.md)
   Asynchronously generates an environment resource from an equirectangular image.
-- [convenience init(equirectangular: CGImage, options: EnvironmentResource.CreateOptions) throws](environmentresource/init(equirectangular:options:)-5bxl3.md)
+- [convenience init(equirectangular: CGImage, options: EnvironmentResource.CreateOptions) throws](./init%28equirectangular,options%29-5bxl3.md)
   Synchronously creates an environment resource from an equirectangular image.
-- [convenience init(skybox: TextureResource?, specular: TextureResource, diffuse: TextureResource) throws](environmentresource/init(skybox:specular:diffuse:).md)
+- [convenience init(skybox: TextureResource?, specular: TextureResource, diffuse: TextureResource) throws](./init%28skybox,specular,diffuse%29.md)
   Creates an EnvironmentResource a skybox, specular and diffuse texture resources.
 
 

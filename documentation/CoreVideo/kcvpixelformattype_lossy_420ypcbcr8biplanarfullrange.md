@@ -1,7 +1,8 @@
 # kCVPixelFormatType_Lossy_420YpCbCr8BiPlanarFullRange
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -18,12 +19,17 @@
 var kCVPixelFormatType_Lossy_420YpCbCr8BiPlanarFullRange: OSType { get }
 ```
 
+```c
+kCVPixelFormatType_Lossy_420YpCbCr8BiPlanarFullRange
+```
+
 ## See Also
 
-- [var kCVPixelFormatType_Lossy_32BGRA: OSType](kcvpixelformattype_lossy_32bgra.md)
-- [var kCVPixelFormatType_Lossy_420YpCbCr10PackedBiPlanarVideoRange: OSType](kcvpixelformattype_lossy_420ypcbcr10packedbiplanarvideorange.md)
-- [var kCVPixelFormatType_Lossy_420YpCbCr8BiPlanarVideoRange: OSType](kcvpixelformattype_lossy_420ypcbcr8biplanarvideorange.md)
-- [var kCVPixelFormatType_Lossy_422YpCbCr10PackedBiPlanarVideoRange: OSType](kcvpixelformattype_lossy_422ypcbcr10packedbiplanarvideorange.md)
+### Constants
+- [var kCVPixelFormatType_Lossy_32BGRA: OSType](./kcvpixelformattype_lossy_32bgra.md)
+- [var kCVPixelFormatType_Lossy_420YpCbCr10PackedBiPlanarVideoRange: OSType](./kcvpixelformattype_lossy_420ypcbcr10packedbiplanarvideorange.md)
+- [var kCVPixelFormatType_Lossy_420YpCbCr8BiPlanarVideoRange: OSType](./kcvpixelformattype_lossy_420ypcbcr8biplanarvideorange.md)
+- [var kCVPixelFormatType_Lossy_422YpCbCr10PackedBiPlanarVideoRange: OSType](./kcvpixelformattype_lossy_422ypcbcr10packedbiplanarvideorange.md)
 
 
 ---

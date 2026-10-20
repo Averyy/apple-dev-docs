@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the value.
 
@@ -26,13 +27,14 @@ For any finite value, this property provides a string that can be converted back
 
 ## See Also
 
-- [func hash(into: inout Hasher)](float/hash(into:).md)
+### Describing a Float
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var debugDescription: String](float/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the value, suitable for debugging.
-- [var customMirror: Mirror](float/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Float` instance.
-- [var hashValue: Int](float/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

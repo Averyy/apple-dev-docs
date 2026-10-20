@@ -1,7 +1,8 @@
 # default
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared singleton Smart Card reader slot manager.
 
@@ -20,9 +21,13 @@ The shared singleton Smart Card reader slot manager.
 class var `default`: TKSmartCardSlotManager? { get }
 ```
 
+```objc
+@property (class, readonly, nullable) TKSmartCardSlotManager * defaultManager;
+```
+
 #### Discussion
 
-This method returns `nil` unless the [`com.apple.security.smartcard`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.smartcard) entitlement is enabled.
+This method returns `nil` unless the [`com.apple.security.smartcard`](../../BundleResources/entitlements/com.apple.security.smartcard.md) entitlement is enabled.
 
 
 ---

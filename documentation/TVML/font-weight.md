@@ -1,6 +1,7 @@
 # font-weight
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the font weight for the text in an element.
 
@@ -8,7 +9,7 @@ Specifies the font weight for the text in an element.
 
 Use the `font-weight` style to specify how thick or thin a font looks.
 
-##### Values for Font Weight
+##### Values for font-weight
 
 - **`black`**: A font weight that is thicker than `heavy`.
 - **`bold`**: A font weight that is thicker than the default.
@@ -22,22 +23,23 @@ Use the `font-weight` style to specify how thick or thin a font looks.
 
 > **Note**: The `font-weight` values from thinnest to thickest are `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, and `black`.
 
-##### Elements That Use Font Weight
+##### Elements that Use font-weight
 
-- [`decorationLabel`](decorationlabel.md)
-- [`description`](description.md)
-- [`monogram`](monogram.md)
-- [`ordinal`](ordinal.md)
-- [`subtitle`](subtitle.md)
-- [`text`](text.md)
-- [`textBadge`](textbadge.md)
-- [`title`](title.md)
+- [decorationLabel](./decorationlabel.md)
+- [description](./description.md)
+- [monogram](./monogram.md)
+- [ordinal](./ordinal.md)
+- [subtitle](./subtitle.md)
+- [text](./text.md)
+- [textBadge](./textbadge.md)
+- [title](./title.md)
 
 ## See Also
 
-- [font-family](font-family.md)
+### Font Styles
+- [font-family](./font-family.md)
   Specifies the font used for the text in an element.
-- [font-size](font-size.md)
+- [font-size](./font-size.md)
   Specifies the font size for the text in an element.
 
 

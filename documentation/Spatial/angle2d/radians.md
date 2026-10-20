@@ -1,7 +1,8 @@
 # radians
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle in radians.
 
@@ -20,9 +21,14 @@ The angle in radians.
 var radians: Double
 ```
 
+```c
+double radians;
+```
+
 ## See Also
 
-- [var degrees: Double](angle2d/degrees.md)
+### Inspecting an angle’s properties
+- [var degrees: Double](./degrees.md)
   The angle in degrees.
 
 

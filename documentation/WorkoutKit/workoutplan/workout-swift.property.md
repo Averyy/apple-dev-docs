@@ -1,7 +1,8 @@
 # workout
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout represented by this plan.
 

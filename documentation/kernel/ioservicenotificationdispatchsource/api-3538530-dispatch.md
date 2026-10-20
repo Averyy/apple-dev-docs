@@ -1,14 +1,15 @@
 # Dispatch
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Dispatch(const IORPC rpc);
 ```
 

@@ -1,7 +1,8 @@
 # Resource.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Relationships belonging to the resource.
 
@@ -10,7 +11,7 @@ Relationships belonging to the resource.
 
 ## Declaration
 
-```swift
+```
 object Resource.Relationships
 ```
 
@@ -20,7 +21,8 @@ object Resource.Relationships
 
 ## See Also
 
-- [object Resource.Attributes](resource/attributes-data.dictionary.md)
+### Related Objects
+- [object Resource.Attributes](./attributes-data.dictionary.md)
   Attributes representing the metadata of the resource.
 
 

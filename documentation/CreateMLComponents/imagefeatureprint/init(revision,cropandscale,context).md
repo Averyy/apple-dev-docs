@@ -1,7 +1,8 @@
 # init(revision:cropAndScale:context:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a FeaturePrint feature extractor.
 
@@ -27,7 +28,8 @@ init(revision: Int, cropAndScale: VNImageCropAndScaleOption = .centerCrop, conte
 
 ## See Also
 
-- [init(cropAndScale: VNImageCropAndScaleOption, context: CIContext)](imagefeatureprint/init(cropandscale:context:).md)
+### Creating the extractor
+- [init(cropAndScale: VNImageCropAndScaleOption, context: CIContext)](./init%28cropandscale,context%29.md)
   Creates a FeaturePrint feature extractor.
 
 

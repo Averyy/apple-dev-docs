@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure that CarPlay invokes when the user selects the list item.
 
@@ -16,11 +17,15 @@ An optional closure that CarPlay invokes when the user selects the list item.
 var handler: ((any CPSelectableListItem, @escaping () -> Void) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^)(id<CPSelectableListItem>, void (^)(void)) handler;
+```
+
 #### Discussion
 
 In Swift, the handler is a closure that has two parameters:
 
-- An object that conforms to [`CPSelectableListItem`](cpselectablelistitem.md), which is the list item that the user selects.
+- An object that conforms to [`CPSelectableListItem`](../cpselectablelistitem.md), which is the list item that the user selects.
 - The completion closure you call to notify CarPlay when you finish processing the selection.
 
 In Objective-C, the block’s parameters are:
@@ -32,9 +37,10 @@ CarPlay executes your handler on the main queue. You must call the completion cl
 
 ## See Also
 
-- [var isEnabled: Bool](cplistitem/isenabled.md)
+### Managing Configuration
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates if the item is enabled.
-- [var userInfo: Any?](cplistitem/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   An opaque value for the list item.
 
 

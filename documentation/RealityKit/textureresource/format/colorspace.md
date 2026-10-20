@@ -1,7 +1,8 @@
 # TextureResource.Format.ColorSpace
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A profile that specifies the interpretation of pixel values as a color.
 
@@ -26,20 +27,21 @@ This color space specifies the color primaries, and the pixel format specifies t
 ## Topics
 
 ### Format color spaces
-- [TextureResource.Format.ColorSpace.displayP3](textureresource/format/colorspace/displayp3.md)
+- [TextureResource.Format.ColorSpace.displayP3](./colorspace/displayp3.md)
   DCI P3 primaries with a D65 white point.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TextureResource.Format.NormalEncoding](textureresource/format/normalencoding.md)
+### Defining the format profile
+- [TextureResource.Format.NormalEncoding](./normalencoding.md)
   A profile that specifies the interpretation of pixel values as a normal.
 
 

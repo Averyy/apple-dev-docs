@@ -1,7 +1,8 @@
 # VNGeneratePersonSegmentationRequest.QualityLevel
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the levels of quality for a person segmentation request.
 
@@ -11,33 +12,38 @@ Constants that define the levels of quality for a person segmentation request.
 enum QualityLevel
 ```
 
+```c
+enum VNGeneratePersonSegmentationRequestQualityLevel : NSUInteger;
+```
+
 ## Topics
 
 ### Quality Levels
-- [VNGeneratePersonSegmentationRequest.QualityLevel.accurate](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum/accurate.md)
+- [VNGeneratePersonSegmentationRequest.QualityLevel.accurate](./qualitylevel-swift.enum/accurate.md)
   Prefers image quality over performance.
-- [VNGeneratePersonSegmentationRequest.QualityLevel.balanced](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum/balanced.md)
+- [VNGeneratePersonSegmentationRequest.QualityLevel.balanced](./qualitylevel-swift.enum/balanced.md)
   Prefers processing that balances image quality and performance.
-- [VNGeneratePersonSegmentationRequest.QualityLevel.fast](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum/fast.md)
+- [VNGeneratePersonSegmentationRequest.QualityLevel.fast](./qualitylevel-swift.enum/fast.md)
   Prefers performance over image quality.
 ### Creating a Quality Level
-- [init?(rawValue: UInt)](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./qualitylevel-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var outputPixelFormat: OSType](vngeneratepersonsegmentationrequest/outputpixelformat.md)
+### Configuring the Request
+- [var outputPixelFormat: OSType](./outputpixelformat.md)
   The pixel format of the output image.
-- [var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel](vngeneratepersonsegmentationrequest/qualitylevel-swift.property.md)
+- [var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.property.md)
   A value that indicates how the request balances accuracy and performance.
 
 

@@ -1,7 +1,8 @@
 # GKTurnBasedMatch.Outcome
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a participant when they forfeit a match or when a match ends.
 
@@ -20,49 +21,54 @@ The state of a participant when they forfeit a match or when a match ends.
 enum Outcome
 ```
 
+```c
+enum GKTurnBasedMatchOutcome : NSInteger;
+```
+
 ## Topics
 
 ### Outcomes
-- [GKTurnBasedMatch.Outcome.none](gkturnbasedmatch/outcome/none.md)
+- [GKTurnBasedMatch.Outcome.none](./outcome/none.md)
   The participant doesn’t reach an outcome.
-- [GKTurnBasedMatch.Outcome.quit](gkturnbasedmatch/outcome/quit.md)
+- [GKTurnBasedMatch.Outcome.quit](./outcome/quit.md)
   The participant forfeits the match.
-- [GKTurnBasedMatch.Outcome.won](gkturnbasedmatch/outcome/won.md)
+- [GKTurnBasedMatch.Outcome.won](./outcome/won.md)
   The participant wins the match.
-- [GKTurnBasedMatch.Outcome.lost](gkturnbasedmatch/outcome/lost.md)
+- [GKTurnBasedMatch.Outcome.lost](./outcome/lost.md)
   The participant loses the match.
-- [GKTurnBasedMatch.Outcome.tied](gkturnbasedmatch/outcome/tied.md)
+- [GKTurnBasedMatch.Outcome.tied](./outcome/tied.md)
   The participant ties the match.
-- [GKTurnBasedMatch.Outcome.timeExpired](gkturnbasedmatch/outcome/timeexpired.md)
+- [GKTurnBasedMatch.Outcome.timeExpired](./outcome/timeexpired.md)
   The match ends because the time limit expires.
-- [GKTurnBasedMatch.Outcome.first](gkturnbasedmatch/outcome/first.md)
+- [GKTurnBasedMatch.Outcome.first](./outcome/first.md)
   The participant finishes in first place.
-- [GKTurnBasedMatch.Outcome.second](gkturnbasedmatch/outcome/second.md)
+- [GKTurnBasedMatch.Outcome.second](./outcome/second.md)
   The participant finishes in second place.
-- [GKTurnBasedMatch.Outcome.third](gkturnbasedmatch/outcome/third.md)
+- [GKTurnBasedMatch.Outcome.third](./outcome/third.md)
   The participant finishes in third place.
-- [GKTurnBasedMatch.Outcome.fourth](gkturnbasedmatch/outcome/fourth.md)
+- [GKTurnBasedMatch.Outcome.fourth](./outcome/fourth.md)
   The participant finishes in fourth place.
-- [GKTurnBasedMatch.Outcome.customRange](gkturnbasedmatch/outcome/customrange.md)
+- [GKTurnBasedMatch.Outcome.customRange](./outcome/customrange.md)
   The participant reaches a game-specific outcome.
 ### Initializers
-- [init?(rawValue: Int)](gkturnbasedmatch/outcome/init(rawvalue:).md)
+- [init?(rawValue: Int)](./outcome/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func participantQuitInTurn(with: GKTurnBasedMatch.Outcome, nextParticipants: [GKTurnBasedParticipant], turnTimeout: TimeInterval, match: Data, completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/participantquitinturn(with:nextparticipants:turntimeout:match:completionhandler:).md)
+### Forfeiting a Match
+- [func participantQuitInTurn(with: GKTurnBasedMatch.Outcome, nextParticipants: [GKTurnBasedParticipant], turnTimeout: TimeInterval, match: Data, completionHandler: (((any Error)?) -> Void)?)](./participantquitinturn%28with,nextparticipants,turntimeout,match,completionhandler%29.md)
   Forfeits the match on behalf of the local player when it’s their turn.
-- [func participantQuitOutOfTurn(with: GKTurnBasedMatch.Outcome, withCompletionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/participantquitoutofturn(with:withcompletionhandler:).md)
+- [func participantQuitOutOfTurn(with: GKTurnBasedMatch.Outcome, withCompletionHandler: (((any Error)?) -> Void)?)](./participantquitoutofturn%28with,withcompletionhandler%29.md)
   Forfeits the match on behalf of the local player when it’s not their turn.
 
 

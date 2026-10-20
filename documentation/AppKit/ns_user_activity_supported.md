@@ -1,11 +1,12 @@
 # NS_USER_ACTIVITY_SUPPORTED
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var NS_USER_ACTIVITY_SUPPORTED: Int32 { get }
 ```
 
+```c
+#define NS_USER_ACTIVITY_SUPPORTED
+```
+
 ## See Also
 
-- [var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32](nsimage_unavailable_maccatalyst.md)
+### Constants
+- [var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32](./nsimage_unavailable_maccatalyst.md)
 
 
 ---

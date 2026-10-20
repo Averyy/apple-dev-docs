@@ -1,7 +1,8 @@
 # cursor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a cursor attribute.
 
@@ -16,9 +17,10 @@ let cursor: AttributeScopes.AppKitAttributes.CursorAttribute
 
 ## See Also
 
-- [let toolTip: AttributeScopes.AppKitAttributes.ToolTipAttribute](attributescopes/appkitattributes/tooltip.md)
+### Using User Interface Attributes
+- [let toolTip: AttributeScopes.AppKitAttributes.ToolTipAttribute](./tooltip.md)
   A property for accessing a tool tip attribute.
-- [let textAlternatives: AttributeScopes.AppKitAttributes.TextAlternativesAttribute](attributescopes/appkitattributes/textalternatives.md)
+- [let textAlternatives: AttributeScopes.AppKitAttributes.TextAlternativesAttribute](./textalternatives.md)
   A property for accessing a text alternatives attribute.
 
 

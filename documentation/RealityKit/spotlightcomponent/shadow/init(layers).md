@@ -1,7 +1,8 @@
 # init(layers:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a spot light shadow that accepts shadow casters from the specified layers.
 
@@ -21,13 +22,14 @@ init(layers: RenderLayer.Set? = nil)
 
 ## Parameters
 
-- `layers`: The layers of entities that cast shadows from this light. Pass `nil` (the default) to inherit [`layers`](spotlightcomponent/layers.md), or an empty set to disable shadow casting entirely.
+- `layers`: The layers of entities that cast shadows from this light. Pass `nil` (the default) to inherit [`layers`](../layers.md), or an empty set to disable shadow casting entirely.
 
 ## See Also
 
-- [init()](spotlightcomponent/shadow/init.md)
+### Creating a shadow
+- [init()](./init%28%29.md)
   Creates a new spot light shadow object.
-- [var layers: RenderLayer.Set?](spotlightcomponent/shadow/layers.md)
+- [var layers: RenderLayer.Set?](./layers.md)
   The layers of entities that cast shadows from this light.
 
 

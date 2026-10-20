@@ -1,7 +1,8 @@
 # UIBehavioralStyle.pad
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that indicates that a control appears and behaves as it does in iPadOS.
 
@@ -17,16 +18,21 @@ A style that indicates that a control appears and behaves as it does in iPadOS.
 case pad
 ```
 
+```c
+UIBehavioralStylePad
+```
+
 ## Mentions
 
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 ## See Also
 
-- [UIBehavioralStyle.automatic](uibehavioralstyle/automatic.md)
+### Styles
+- [UIBehavioralStyle.automatic](./automatic.md)
   A style the system chooses based on the app’s targeted platform.
-- [UIBehavioralStyle.mac](uibehavioralstyle/mac.md)
+- [UIBehavioralStyle.mac](./mac.md)
   A style that indicates that a control appears and behaves as it does in macOS.
 
 

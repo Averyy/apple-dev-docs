@@ -1,7 +1,8 @@
 # init(sessionDelegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a find interaction object with the delegate object you specify.
 
@@ -17,13 +18,17 @@ Initializes a find interaction object with the delegate object you specify.
 init(sessionDelegate: any UIFindInteractionDelegate)
 ```
 
+```objc
+- (instancetype) initWithSessionDelegate:(id<UIFindInteractionDelegate>) sessionDelegate;
+```
+
 #### Return Value
 
 Returns a find interaction object with the associated delegate.
 
 #### Discussion
 
-Create an object that conforms to the [`UIFindInteractionDelegate`](uifindinteractiondelegate.md) protocol and assign it to this property.
+Create an object that conforms to the [`UIFindInteractionDelegate`](../uifindinteractiondelegate.md) protocol and assign it to this property.
 
 
 ---

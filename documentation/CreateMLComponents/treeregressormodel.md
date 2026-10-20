@@ -1,7 +1,8 @@
 # TreeRegressorModel
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A trained tree regressor model.
 
@@ -23,46 +24,47 @@ struct TreeRegressorModel
 ## Topics
 
 ### Getting the column names
-- [var featureColumnNames: [String]](treeregressormodel/featurecolumnnames.md)
+- [var featureColumnNames: [String]](./treeregressormodel/featurecolumnnames.md)
   The names of the columns containing feature values.
-- [var predictionColumnName: String](treeregressormodel/predictioncolumnname.md)
+- [var predictionColumnName: String](./treeregressormodel/predictioncolumnname.md)
   The name of the column containing the predicted values.
 ### Applying
-- [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](treeregressormodel/applied(to:eventhandler:).md)
+- [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./treeregressormodel/applied%28to,eventhandler%29.md)
   Performs a regression on a data frame.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TabularTransformer](tabulartransformer.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TabularTransformer](./tabulartransformer.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [protocol Regressor](regressor.md)
+### Regressors
+- [protocol Regressor](./regressor.md)
   A transformer that predicts a float value.
-- [struct LinearRegressor](linearregressor.md)
+- [struct LinearRegressor](./linearregressor.md)
   A linear regressor.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](./linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressor](multivariatelinearregressor.md)
+- [struct MultivariateLinearRegressor](./multivariatelinearregressor.md)
   A multivariate linear regressor.
-- [struct MultivariateLinearRegressorConfiguration](multivariatelinearregressorconfiguration.md)
+- [struct MultivariateLinearRegressorConfiguration](./multivariatelinearregressorconfiguration.md)
   A linear regressor configuration.
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](./fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct BoostedTreeRegressor](boostedtreeregressor.md)
+- [struct BoostedTreeRegressor](./boostedtreeregressor.md)
   A gradient boosted decision tree regressor.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](./optimizationstrategy.md)
   A linear optimization strategy.
 
 

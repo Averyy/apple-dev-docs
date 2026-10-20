@@ -1,7 +1,8 @@
 # DeviceActivityData.Error.unauthorized
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the app isn’t authorized to provide parental controls and access data.
 
@@ -17,13 +18,14 @@ case unauthorized
 
 #### Discussion
 
-See [`AuthorizationCenter`](https://developer.apple.com/documentation/familycontrols/authorizationcenter) for more details.
+See [`AuthorizationCenter`](../../../FamilyControls/authorizationcenter.md) for more details.
 
 ## See Also
 
-- [DeviceActivityData.Error.unavailable](deviceactivitydata/error/unavailable.md)
+### Representing errors
+- [DeviceActivityData.Error.unavailable](./unavailable.md)
   An error indicating data access is unavailable.
-- [DeviceActivityData.Error.missingData](deviceactivitydata/error/missingdata.md)
+- [DeviceActivityData.Error.missingData](./missingdata.md)
   An error indicating the requested data does not exist.
 
 

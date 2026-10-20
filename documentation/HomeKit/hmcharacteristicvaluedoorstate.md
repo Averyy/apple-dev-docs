@@ -1,7 +1,8 @@
 # HMCharacteristicValueDoorState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the state of a door.
 
@@ -19,31 +20,35 @@ Possible values for the state of a door.
 enum HMCharacteristicValueDoorState
 ```
 
+```c
+enum HMCharacteristicValueDoorState : NSInteger;
+```
+
 ## Topics
 
 ### Door States
-- [HMCharacteristicValueDoorState.open](hmcharacteristicvaluedoorstate/open.md)
+- [HMCharacteristicValueDoorState.open](./hmcharacteristicvaluedoorstate/open.md)
   The door is fully open.
-- [HMCharacteristicValueDoorState.closed](hmcharacteristicvaluedoorstate/closed.md)
+- [HMCharacteristicValueDoorState.closed](./hmcharacteristicvaluedoorstate/closed.md)
   The door is fully closed.
-- [HMCharacteristicValueDoorState.opening](hmcharacteristicvaluedoorstate/opening.md)
+- [HMCharacteristicValueDoorState.opening](./hmcharacteristicvaluedoorstate/opening.md)
   The door is actively opening.
-- [HMCharacteristicValueDoorState.closing](hmcharacteristicvaluedoorstate/closing.md)
+- [HMCharacteristicValueDoorState.closing](./hmcharacteristicvaluedoorstate/closing.md)
   The door is actively closing.
-- [HMCharacteristicValueDoorState.stopped](hmcharacteristicvaluedoorstate/stopped.md)
+- [HMCharacteristicValueDoorState.stopped](./hmcharacteristicvaluedoorstate/stopped.md)
   The door is not moving, and is neither fully open nor fully closed.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluedoorstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluedoorstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

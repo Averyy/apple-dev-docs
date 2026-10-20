@@ -1,7 +1,8 @@
 # local
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier you use to refer to the entity on the current device.
 

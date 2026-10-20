@@ -1,7 +1,8 @@
 # MusicRecentlyPlayedContainerRequest
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A request that your app uses to fetch albums, playlists or stations that the user has recently played.
 

@@ -1,7 +1,8 @@
 # Create an app store version localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add localized version-level information for a new locale.
 
@@ -10,15 +11,15 @@ Add localized version-level information for a new locale.
 
 #### Discussion
 
-Use this endpoint to add localized version information for a new locale. Be sure to use [`Create an app info localization`](post-v1-appinfolocalizations.md) to add the same locale to the version as well.
+Use this endpoint to add localized version information for a new locale. Be sure to use [`Create an app info localization`](./post-v1-appinfolocalizations.md) to add the same locale to the version as well.
 
 > ❗ **Important**:  If the App Store version and the app info don’t have the same set of localizations, you will receive an erorr when you submit the version to the App Store.
 
-##### Add Localized App Store Version Information in Us English
+##### Add Localized App Store Version Information in US English
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations
 
 {
@@ -96,11 +97,27 @@ POST https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations
 
 `POST https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppStoreVersionLocalizationCreateRequest`
+
+## Responses
+
+- `201` Created (`AppStoreVersionLocalizationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Modify an app store version localization](patch-v1-appstoreversionlocalizations-_id_.md)
+### Creating, Modifying, and Deleting Version Localizations
+- [Modify an app store version localization](./patch-v1-appstoreversionlocalizations-_id_.md)
   Modify localized version-level information for a particular language.
-- [Delete an app store version localization](delete-v1-appstoreversionlocalizations-_id_.md)
+- [Delete an app store version localization](./delete-v1-appstoreversionlocalizations-_id_.md)
   Delete a language from your version metadata.
 
 

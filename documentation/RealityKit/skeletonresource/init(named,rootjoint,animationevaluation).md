@@ -1,7 +1,8 @@
 # init(named:rootJoint:animationEvaluation:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skeleton resource with the specified name, joint hierarchy, and animation-evaluation data.
 
@@ -21,7 +22,7 @@ convenience init(named name: String, rootJoint: SkeletonResource.Joint, animatio
 
 #### Discussion
 
-> **Note**: If the joint hierarchy contains invalid data, or if the underlying resource cannot be created.
+> **Throws**: If the joint hierarchy contains invalid data, or if the underlying resource cannot be created.
 
 ## Parameters
 

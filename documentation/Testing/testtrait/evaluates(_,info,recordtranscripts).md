@@ -1,7 +1,8 @@
 # evaluates(_:info:recordTranscripts:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a trait that runs a single evaluation and makes its result available through the current evaluation context.
 
@@ -20,6 +21,8 @@ Creates a trait that runs a single evaluation and makes its result available thr
 ```swift
 static func evaluates(_ evaluation: any Evaluation, info: [String : String] = [:], recordTranscripts: Bool = false) -> Self
 ```
+
+Available when `Self` is `EvaluationTrait`.
 
 #### Discussion
 

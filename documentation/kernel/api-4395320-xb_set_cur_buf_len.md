@@ -1,14 +1,15 @@
 # xb_set_cur_buf_len
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 void xb_set_cur_buf_len(struct xdrbuf *);
 ```
 

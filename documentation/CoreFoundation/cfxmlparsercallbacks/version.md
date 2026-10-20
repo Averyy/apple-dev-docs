@@ -1,17 +1,22 @@
 # version
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Version number. Must be `0`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var version: CFIndex
+```
+
+```c
+CFIndex version;
 ```
 
 

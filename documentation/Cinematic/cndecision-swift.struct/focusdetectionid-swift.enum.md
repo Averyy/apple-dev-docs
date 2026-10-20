@@ -1,12 +1,13 @@
 # CNDecision.FocusDetectionID
 
 **Framework**: Cinematic  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -19,13 +20,13 @@ enum FocusDetectionID
 ## Topics
 
 ### Enumeration Casese
-- [CNDecision.FocusDetectionID.group(_:)](cndecision-swift.struct/focusdetectionid-swift.enum/group(_:).md)
-- [CNDecision.FocusDetectionID.single(_:)](cndecision-swift.struct/focusdetectionid-swift.enum/single(_:).md)
+- [CNDecision.FocusDetectionID.group(_:)](./focusdetectionid-swift.enum/group%28_%29.md)
+- [CNDecision.FocusDetectionID.single(_:)](./focusdetectionid-swift.enum/single%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

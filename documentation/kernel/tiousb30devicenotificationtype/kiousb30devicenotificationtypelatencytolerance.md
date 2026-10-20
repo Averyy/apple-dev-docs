@@ -1,7 +1,8 @@
 # kIOUSB30DeviceNotificationTypeLatencyTolerance
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The latency tolerance.
 
@@ -10,7 +11,7 @@ The latency tolerance.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30DeviceNotificationTypeLatencyTolerance = 2
 ```
 

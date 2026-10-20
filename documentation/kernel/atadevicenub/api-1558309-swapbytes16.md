@@ -1,14 +1,15 @@
 # swapBytes16
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void swapBytes16(UInt8 *dataBuffer, IOByteCount length);
 ```
 

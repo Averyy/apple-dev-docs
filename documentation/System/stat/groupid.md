@@ -1,7 +1,8 @@
 # groupID
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Group ID of owner
 

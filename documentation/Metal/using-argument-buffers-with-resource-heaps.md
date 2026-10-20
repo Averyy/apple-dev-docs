@@ -1,6 +1,8 @@
 # Using argument buffers with resource heaps
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [UsingArgumentBuffersWithResourceHeaps.zip](https://docs-assets.developer.apple.com/published/514424a93273/UsingArgumentBuffersWithResourceHeaps.zip)
 
 Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
 
@@ -14,15 +16,15 @@ Reduce CPU overhead by using arrays inside argument buffers and combining them w
 
 #### Overview
 
-In the [`Managing groups of resources with argument buffers`](managing-groups-of-resources-with-argument-buffers.md) sample, you learned how to specify, encode, set, and access resources in an argument buffer.
+In the [Managing Groups of Resources with Argument Buffers](./managing-groups-of-resources-with-argument-buffers.md) sample, you learned how to specify, encode, set, and access resources in an argument buffer.
 
 In this sample, you’ll learn how to combine argument buffers with arrays of resources and resource heaps. In particular, you’ll learn how to define an argument buffer structure that contains arrays and how to allocate and use resources from a heap. The sample renders a static quad that uses multiple resources encoded into an argument buffer.
 
-##### Getting Started
+##### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS. Metal is not supported in the iOS or tvOS Simulator, so the iOS and tvOS schemes require a physical device to run the sample. The default scheme is macOS, which runs the sample as is on your Mac.
 
-##### Arrays of Arguments in the Metal Shading Language
+##### Arrays of arguments in the Metal shading language
 
 Arrays can be used as parameters to graphics or compute functions. When a function takes an array as a parameter, the index of the first resource in the array is equal to the base index of the array parameter itself. Thus, each subsequent resource in the array is automatically assigned a subsequent index value, counting incrementally from the base index value.
 
@@ -35,7 +37,7 @@ exampleFragmentFunction(array<texture2d<float>, 10> textureParameters [[ texture
 
 Because `textureParameters` has a `[[ texture(5) ]]` attribute qualifier, the corresponding Metal framework method to set this parameter is `setFragmentTexture:atIndex:`, where the values for `index` begin at `5`. Thus, the texture at array index `0` is set at index number `5`, the texture at array index `1` is set at index number `6`, and so on. The last texture in the array, at array index `9`, is set at index number `14`.
 
-##### Define Argument Buffers with Arrays
+##### Define argument buffers with arrays
 
 Arrays can also be used as elements of an argument buffer structure. In this case, the `[[ id(n) ]]` attribute qualifier of an argument buffer behaves the same way as the `[[ texture(n) ]]` attribute qualifier of a function parameter, where `n` is the base index value of the array. However, you don’t call the `setFragmentTexture:atIndex:` method, of a `MTLRenderCommandEncoder` object, to set a texture from the array. Instead, you call the `setTexture:atIndex:` method, of a `MTLArgumentEncoder` object, to encode a texture from the array into the argument buffer, where `index` corresponds to the base index value, `n`,  plus the index of the texture within the array.
 
@@ -55,9 +57,9 @@ Each element of this structure uses the `array<T, N>` template, which defines th
 - `exampleBuffers`, an array of 32 `float` buffers with a base index value of `100`.
 - `exampleConstants`, an array of 32 `uint32_t` constants with a base index value of `200`.
 
-![Layout diagram that shows an array of textures, an array of buffers, and an array of constants all encoded into a single argument buffer.](/images/com.apple.metal/argument-buffers-with-heaps-1-ArgumentBufferWithArrays.png)
+![Layout diagram that shows an array of textures, an array of buffers, and an array of constants all encoded into a single argument buffer.](https://developer.apple.com/tutorials/images/com.apple.metal/argument-buffers-with-heaps-1-ArgumentBufferWithArrays.png)
 
-##### Encode Array Elements Into an Argument Buffer
+##### Encode array elements into an argument buffer
 
 This sample encodes array elements into an argument buffer by matching the `index` parameter of each `setTexture:atIndex:`, `setBuffer:offset:atIndex:`, and `constantDataAtIndex:` method call to the element’s corresponding index value, defined by the `[[ id(n) ]]` attribute qualifier in the argument buffer.
 
@@ -83,7 +85,7 @@ for(uint32_t i = 0; i < AAPLNumBufferArguments; i++)
 }
 ```
 
-##### Access Array Elements in an Argument Buffer
+##### Access array elements in an argument buffer
 
 Within a function, accessing elements of an array encoded in an argument buffer is the same as accessing elements of a standard array. In this sample, the `exampleTextures`, `exampleBuffers`, and `exampleConstants` arrays are accessed via the `fragmentShaderArgs` parameter of the `fragmentShader` function. Each array element is accessed with the `[n]` subscript syntax, where `n` is the index of the element within the array.
 
@@ -119,7 +121,7 @@ device float* buffer = fragmentShaderArgs.exampleBuffers[bufferToRead];
 color = buffer[indexToRead];
 ```
 
-##### Combine Argument Buffers with Resource Heaps
+##### Combine argument buffers with resource heaps
 
 The fragment function accesses 32 textures and 32 buffers via the argument buffer, totaling 64 different resources overall. If memory for each of these resources was allocated individually, despite residing in arrays, Metal would need to validate the memory of 64 individual resources before making these resources accessible to the GPU.
 
@@ -281,29 +283,30 @@ Before using these resources, instead of calling the `useResource:usage:` method
 #endif
 ```
 
-##### Next Steps
+##### Next steps
 
-In this sample, you learned how to combine argument buffers with arrays of resources and resource heaps. In the [`Encoding argument buffers on the GPU`](encoding-argument-buffers-on-the-gpu.md) sample, you’ll learn how to encode resources into argument buffers with a graphics or compute function.
+In this sample, you learned how to combine argument buffers with arrays of resources and resource heaps. In the [Encoding Argument Buffers on the GPU](./encoding-argument-buffers-on-the-gpu.md) sample, you’ll learn how to encode resources into argument buffers with a graphics or compute function.
 
 ## See Also
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+### Argument buffers
+- [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
   Optimize your app’s performance by grouping your resources into argument buffers.
-- [Managing groups of resources with argument buffers](managing-groups-of-resources-with-argument-buffers.md)
+- [Managing groups of resources with argument buffers](./managing-groups-of-resources-with-argument-buffers.md)
   Create argument buffers to organize related resources.
-- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
   Optimize resource performance within an argument buffer.
-- [Indexing argument buffers](indexing-argument-buffers.md)
+- [Indexing argument buffers](./indexing-argument-buffers.md)
   Assign resource indices within an argument buffer.
-- [Rendering terrain dynamically with argument buffers](rendering-terrain-dynamically-with-argument-buffers.md)
+- [Rendering terrain dynamically with argument buffers](./rendering-terrain-dynamically-with-argument-buffers.md)
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
-- [Encoding argument buffers on the GPU](encoding-argument-buffers-on-the-gpu.md)
+- [Encoding argument buffers on the GPU](./encoding-argument-buffers-on-the-gpu.md)
   Use a compute pass to encode an argument buffer and access its arguments in a subsequent render pass.
-- [class MTLArgumentDescriptor](mtlargumentdescriptor.md)
+- [class MTLArgumentDescriptor](./mtlargumentdescriptor.md)
   A representation of an argument within an argument buffer.
-- [protocol MTLArgumentEncoder](mtlargumentencoder.md)
+- [protocol MTLArgumentEncoder](./mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](./mtlattributestridestatic.md)
 
 
 ---

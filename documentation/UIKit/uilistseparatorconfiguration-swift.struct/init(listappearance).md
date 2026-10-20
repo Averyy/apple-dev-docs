@@ -1,7 +1,8 @@
 # init(listAppearance:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list separator configuration with default values according to the specified list appearance.
 
@@ -9,7 +10,7 @@ Creates a list separator configuration with default values according to the spec
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

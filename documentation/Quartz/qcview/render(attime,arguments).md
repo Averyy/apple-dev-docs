@@ -1,12 +1,15 @@
 # render(atTime:arguments:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides to perform  your custom operations prior to or after rendering a frame of a composition.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Overrides to perform  your custom operations prior to or after rendering a frame
 func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 ```
 
+```objc
+- (BOOL) renderAtTime:(NSTimeInterval) time arguments:(NSDictionary *) arguments;
+```
+
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if your custom rendering fails, otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](../../Swift/false.md) if your custom rendering fails, otherwise, [`true`](../../Swift/true.md).
 
 #### Discussion
 
@@ -91,7 +98,7 @@ Here’s an example implementation of this method using OpenGL to draw an overla
 ## Parameters
 
 - `time`: The rendering time, in seconds, of the composition frame.
-- `arguments`: An optional dictionary that can contain `QCRendererEventKey` or `QCRendererMouseLocationKey` and the associated values. (See [`QCRenderer`](qcrenderer.md) or more information.)
+- `arguments`: An optional dictionary that can contain `QCRendererEventKey` or `QCRendererMouseLocationKey` and the associated values. (See [`QCRenderer`](../qcrenderer.md) or more information.)
 
 
 ---

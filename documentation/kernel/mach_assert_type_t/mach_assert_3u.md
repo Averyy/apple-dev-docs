@@ -1,14 +1,15 @@
 # MACH_ASSERT_3U
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 MACH_ASSERT_3U
 ```
 

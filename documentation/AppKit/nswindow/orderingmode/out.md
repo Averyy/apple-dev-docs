@@ -1,12 +1,13 @@
 # NSWindow.OrderingMode.out
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Moves the window off the screen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Moves the window off the screen.
 case out
 ```
 
+```c
+NSWindowOut
+```
+
 ## See Also
 
-- [NSWindow.OrderingMode.above](nswindow/orderingmode/above.md)
+### Constants
+- [NSWindow.OrderingMode.above](./above.md)
   Moves the window above the indicated window.
-- [NSWindow.OrderingMode.below](nswindow/orderingmode/below.md)
+- [NSWindow.OrderingMode.below](./below.md)
   Moves the window below the indicated window.
 
 

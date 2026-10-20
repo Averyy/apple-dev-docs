@@ -1,7 +1,8 @@
 # Formatter.UnitStyle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the width of the unit, determining the textual representation.
 
@@ -20,35 +21,40 @@ Specifies the width of the unit, determining the textual representation.
 enum UnitStyle
 ```
 
+```c
+enum NSFormattingUnitStyle : NSInteger;
+```
+
 #### Overview
 
-The unit is represented in the shortest notation available. For example, for English, when formatting “3 pounds”: [`Formatter.UnitStyle.long`](formatter/unitstyle/long.md) is “3 pounds”; [`Formatter.UnitStyle.medium`](formatter/unitstyle/medium.md) is “3 lb”; [`Formatter.UnitStyle.short`](formatter/unitstyle/short.md) is “3#”.
+The unit is represented in the shortest notation available. For example, for English, when formatting “3 pounds”: [`Formatter.UnitStyle.long`](./unitstyle/long.md) is “3 pounds”; [`Formatter.UnitStyle.medium`](./unitstyle/medium.md) is “3 lb”; [`Formatter.UnitStyle.short`](./unitstyle/short.md) is “3#”.
 
 ## Topics
 
 ### Constants
-- [Formatter.UnitStyle.short](formatter/unitstyle/short.md)
+- [Formatter.UnitStyle.short](./unitstyle/short.md)
   Specifies a short unit style.
-- [Formatter.UnitStyle.medium](formatter/unitstyle/medium.md)
+- [Formatter.UnitStyle.medium](./unitstyle/medium.md)
   Specifies a medium unit style.
-- [Formatter.UnitStyle.long](formatter/unitstyle/long.md)
+- [Formatter.UnitStyle.long](./unitstyle/long.md)
   Specifies a long unit style.
 ### Initializers
-- [init?(rawValue: Int)](formatter/unitstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unitstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Formatter.Context](formatter/context.md)
+### Constants
+- [Formatter.Context](./context.md)
   The formatting context for a formatter.
 
 

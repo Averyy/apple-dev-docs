@@ -1,7 +1,8 @@
 # init(cgAffineTransform:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Core Image vector object that is initialized with six values provided by a `CGAffineTransform` structure.
 
@@ -17,9 +18,13 @@ Create a Core Image vector object that is initialized with six values provided b
 convenience init(cgAffineTransform t: CGAffineTransform)
 ```
 
+```objc
++ (instancetype) vectorWithCGAffineTransform:(CGAffineTransform) t;
+```
+
 #### Return Value
 
- An autoreleased [`CIVector`](civector.md) object of length 6.
+ An autoreleased [`CIVector`](../civector.md) object of length 6.
 
 #### Discussion
 
@@ -31,9 +36,10 @@ The `CGAffineTransform` structure’s `a`, `b`, `c`, `d`, `tx` and `ty` values a
 
 ## See Also
 
-- [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:)-3mobm.md)
+### Creating a Vector
+- [convenience init(cgPoint: CGPoint)](./init%28cgpoint%29-3mobm.md)
   Create a Core Image vector object that is initialized with two values provided by a `CGPoint` structure.
-- [convenience init(cgRect: CGRect)](civector/init(cgrect:)-3undj.md)
+- [convenience init(cgRect: CGRect)](./init%28cgrect%29-3undj.md)
   Create a Core Image vector object that is initialized with four values provided by a `CGRect` structure.
 
 

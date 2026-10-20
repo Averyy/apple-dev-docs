@@ -1,7 +1,8 @@
 # PerformanceSignature.MetricsSummary
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A summary of the metric values for a performance signature across reference versions.
 
@@ -10,14 +11,14 @@ A summary of the metric values for a performance signature across reference vers
 
 ## Declaration
 
-```swift
+```
 object PerformanceSignature.MetricsSummary
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PerformanceSignature.MetricsSummary.ReferenceVersions](performancesignature/metricssummary-data.dictionary/referenceversions-data.dictionary.md)
+- [object PerformanceSignature.MetricsSummary.ReferenceVersions](./metricssummary-data.dictionary/referenceversions-data.dictionary.md)
 
 ## Properties
 

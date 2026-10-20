@@ -1,7 +1,8 @@
 # DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The response dictionary that contains information about the active service subscription.
 
@@ -12,7 +13,7 @@ The response dictionary that contains information about the active service subsc
 
 ## Declaration
 
-```swift
+```
 object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty
 ```
 
@@ -22,7 +23,9 @@ object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty
 - `CurrentCarrierNetwork` (string): The name of the current carrier network.
 - `CurrentMCC` (string): The current mobile country code (MCC).
 - `CurrentMNC` (string): The current mobile network code (MNC).
-- `EID` (string): The eSIM identifier. Available: iOS 14+ | iPadOS 14+
+- `EID` (string): The eSIM identifier.
+
+  Available: iOS 14+ | iPadOS 14+
 - `ICCID` (string): The integrated circuit card identifier (ICCID) value.
 - `IMEI` (string): The device International Mobile Equipment Identity (IMEI) number.
 - `IsDataPreferred` (boolean): If `true`, this subscription is the preference for data.
@@ -33,21 +36,24 @@ object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty
 - `MEID` (string): The device Mobile Equipment Identifier (MEID) number.
 - `PhoneNumber` (string): The raw phone number without punctuation and including country code.
 - `Slot` (string): The description of the slot that contains the SIM representing this subscription.
-- `SubscriberCarrierNetwork` (string): The name of the home carrier network. Available: iOS 16+ | iPadOS 16+
+- `SubscriberCarrierNetwork` (string): The name of the home carrier network.
+
+  Available: iOS 16+ | iPadOS 16+
 
 ## See Also
 
-- [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary.md)
+### Objects
+- [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](./accessibilitysettings-data.dictionary.md)
   The response dictionary that contains the devices accessibility settings.
-- [object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem.md)
+- [object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](./autosetupadminaccountsitem.md)
   The response dictionary that contains the administrator setup information.
-- [object DeviceInformationResponse.QueryResponses.MDMOptions](deviceinformationresponse/queryresponses-data.dictionary/mdmoptions-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.MDMOptions](./mdmoptions-data.dictionary.md)
   The response dictionary that contains MDM options.
-- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](./osupdatesettings-data.dictionary.md)
   The response dictionary that contains operating system update settings.
-- [object DeviceInformationResponse.QueryResponses.OrganizationInfo](deviceinformationresponse/queryresponses-data.dictionary/organizationinfo-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.OrganizationInfo](./organizationinfo-data.dictionary.md)
   The response dictionary that contains organization information.
-- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](./softwareupdatesettings-data.dictionary.md)
   The response dictionary that contains information about the Software Update pane in Settings.
 
 

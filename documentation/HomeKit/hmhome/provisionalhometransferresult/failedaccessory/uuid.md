@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the accessory.
 
@@ -17,15 +18,16 @@ var uuid: UUID
 
 ## See Also
 
-- [init(uuid: UUID, name: String, reason: HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason, localizedFailureDescription: String?)](hmhome/provisionalhometransferresult/failedaccessory/init(uuid:name:reason:localizedfailuredescription:).md)
+### Describing the failed accessory
+- [init(uuid: UUID, name: String, reason: HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason, localizedFailureDescription: String?)](./init%28uuid,name,reason,localizedfailuredescription%29.md)
   Creates the structure that contains information about why a transfer failed.
-- [var name: String](hmhome/provisionalhometransferresult/failedaccessory/name.md)
+- [var name: String](./name.md)
   The name of the accessory.
-- [var reason: HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason](hmhome/provisionalhometransferresult/failedaccessory/reason-swift.property.md)
+- [var reason: HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason](./reason-swift.property.md)
   A value that indicates why the transfer failed.
-- [HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason](hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum.md)
+- [HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason](./reason-swift.enum.md)
   Values that explain why a transfer failed.
-- [var localizedFailureDescription: String?](hmhome/provisionalhometransferresult/failedaccessory/localizedfailuredescription.md)
+- [var localizedFailureDescription: String?](./localizedfailuredescription.md)
   A localized string that explains why the transfer failed.
 
 

@@ -1,7 +1,8 @@
 # ASImportableCredential.Note
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A piece of text used to store some information about an item.
 
@@ -21,25 +22,26 @@ struct Note
 ## Topics
 
 ### Creating a note
-- [init(content: ASImportableEditableField)](asimportablecredential/note/init(content:).md)
+- [init(content: ASImportableEditableField)](./note/init%28content%29.md)
   Creates a note instance from the note contents.
 ### Accessing note properties
-- [var content: ASImportableEditableField](asimportablecredential/note/content.md)
+- [var content: ASImportableEditableField](./note/content.md)
   The contents of the note.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case note(ASImportableCredential.Note)](asimportablecredential/note(_:).md)
+### Document credential types
+- [case note(ASImportableCredential.Note)](./note%28_%29.md)
   A note credential.
 
 

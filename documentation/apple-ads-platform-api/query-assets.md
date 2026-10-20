@@ -1,7 +1,8 @@
 # Query Assets
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a paginated list of creative assets using filters and sorting.
 
@@ -14,7 +15,7 @@ This endpoint queries assets using a standard `QueryRequest` body. Filter by `pr
 
 After uploading an asset, use this endpoint to check `eligibility` status in bulk rather than polling each asset individually.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -22,7 +23,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | --- | --- | --- | --- | --- |
 | `id` | string (UUID) | `EQUALS`, `NOT_EQUALS`, `IN`, `LIKE`, `STARTS_WITH` | Yes | Internal asset identifier. |
 | `name` | string | `EQUALS`, `NOT_EQUALS`, `IN`, `LIKE`, `STARTS_WITH`, `ENDS_WITH` | Yes | User-facing asset name or description. |
-| `assetType` | string (enum) | `EQUALS`, `NOT_EQUALS`, `IN` | Yes | The media type of the asset. See [`AssetType`](assettype.md). |
+| `assetType` | string (enum) | `EQUALS`, `NOT_EQUALS`, `IN` | Yes | The media type of the asset. See [`AssetType`](./assettype.md). |
 | `providerAssetId` | string | `EQUALS`, `NOT_EQUALS`, `IN` | No | Asset identifier assigned by the provider system. |
 | `promotedObjectId` | string | `EQUALS`, `NOT_EQUALS`, `IN` | No | Identifier of the promoted object. Scope to a specific brand or app. |
 | `promotedObjectType` | string (enum) | `EQUALS`, `NOT_EQUALS`, `IN` | No | The type of the promoted object: `BUSINESS_BRAND` or `APPSTORE_APP`. |
@@ -33,11 +34,11 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 
 `providerAssetMetadata`, `assetDetails`, `eligibility`, and `eligibility.status` aren’t filterable.
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Request Body
 
-See [`QueryRequest`](queryrequest.md).
+See [`QueryRequest`](./queryrequest.md).
 
 Querying assets carries a couple of caveats around scope and variants:
 
@@ -191,15 +192,32 @@ Retrieve assets for a specific App Store app by its Adam ID.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`AssetQueryResponse`, `application/json`)
+- `400` Bad Request (`AssetQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Upload Asset](upload-asset.md)
+- [Upload Asset](./upload-asset.md)
   Upload a binary image file to create a new asset.
-- [Get Asset](get-asset-by-id.md)
+- [Get Asset](./get-asset-by-id.md)
   Retrieve a single asset by its UUID.
-- [Delete Asset](delete-asset-by-id.md)
+- [Delete Asset](./delete-asset-by-id.md)
   Soft-delete an asset by its UUID.
 
 

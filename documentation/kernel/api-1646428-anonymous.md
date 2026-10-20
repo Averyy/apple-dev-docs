@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioStreamAlignmentHighByte](1646428-anonymous/kioaudiostreamalignmenthighbyte.md)
-- [kIOAudioStreamAlignmentLowByte](1646428-anonymous/kioaudiostreamalignmentlowbyte.md)
+- [kIOAudioStreamAlignmentHighByte](./api-1646428-anonymous/kioaudiostreamalignmenthighbyte.md)
+- [kIOAudioStreamAlignmentLowByte](./api-1646428-anonymous/kioaudiostreamalignmentlowbyte.md)
 
 
 ---

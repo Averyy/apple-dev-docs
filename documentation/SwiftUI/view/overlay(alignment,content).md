@@ -1,7 +1,8 @@
 # overlay(alignment:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Layers the views that you specify in front of this view.
 
@@ -27,7 +28,7 @@ A view that uses the specified content as a foreground.
 
 #### Discussion
 
-Use this modifier to place one or more views in front of another view. For example, you can place a group of stars on a [`RoundedRectangle`](roundedrectangle.md):
+Use this modifier to place one or more views in front of another view. For example, you can place a group of stars on a [`RoundedRectangle`](../roundedrectangle.md):
 
 ```swift
 RoundedRectangle(cornerRadius: 8)
@@ -53,9 +54,9 @@ struct Star: View {
 
 By setting different `alignment` values for each modifier, you make the stars appear in different places on the rectangle:
 
-![A screenshot of a rounded rectangle with a star in each corner. The](/images/com.apple.SwiftUI/View-overlay-2@2x.png)
+![A screenshot of a rounded rectangle with a star in each corner. The](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-overlay-2@2x.png)
 
-If you specify more than one view in the `content` closure, the modifier collects all of the views in the closure into an implicit [`ZStack`](zstack.md), taking them in order from back to front. For example, you can place a star and a [`Circle`](circle.md) on a field of [`blue`](shapestyle/blue.md):
+If you specify more than one view in the `content` closure, the modifier collects all of the views in the closure into an implicit [`ZStack`](../zstack.md), taking them in order from back to front. For example, you can place a star and a [`Circle`](../circle.md) on a field of [`blue`](../shapestyle/blue.md):
 
 ```swift
 Color.blue
@@ -67,11 +68,11 @@ Color.blue
     }
 ```
 
-Both the overlay modifier and the implicit [`ZStack`](zstack.md) composed from the overlay content — the circle and the star — use a default [`center`](alignment/center.md) alignment. The star appears centered on the circle, and both appear as a composite view centered in front of the square:
+Both the overlay modifier and the implicit [`ZStack`](../zstack.md) composed from the overlay content — the circle and the star — use a default [`center`](../alignment/center.md) alignment. The star appears centered on the circle, and both appear as a composite view centered in front of the square:
 
-![A screenshot of a star centered on a circle, which is](/images/com.apple.SwiftUI/View-overlay-3@2x.png)
+![A screenshot of a star centered on a circle, which is](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-overlay-3@2x.png)
 
-If you specify an alignment for the overlay, it applies to the implicit stack rather than to the individual views in the closure. You can see this if you add the [`bottom`](alignment/bottom.md) alignment:
+If you specify an alignment for the overlay, it applies to the implicit stack rather than to the individual views in the closure. You can see this if you add the [`bottom`](../alignment/bottom.md) alignment:
 
 ```swift
 Color.blue
@@ -85,9 +86,9 @@ Color.blue
 
 The circle and the star move down as a unit to align the stack’s bottom edge with the bottom edge of the square, while the star remains centered on the circle:
 
-![A screenshot of a star centered on a circle, which is on a square.](/images/com.apple.SwiftUI/View-overlay-3a@2x.png)
+![A screenshot of a star centered on a circle, which is on a square.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-overlay-3a@2x.png)
 
-To control the placement of individual items inside the `content` closure, either use a different overlay modifier for each item, as the earlier example of stars in the corners of a rectangle demonstrates, or add an explicit [`ZStack`](zstack.md) inside the content closure with its own alignment:
+To control the placement of individual items inside the `content` closure, either use a different overlay modifier for each item, as the earlier example of stars in the corners of a rectangle demonstrates, or add an explicit [`ZStack`](../zstack.md) inside the content closure with its own alignment:
 
 ```swift
 Color.blue
@@ -103,46 +104,47 @@ Color.blue
 
 The stack alignment ensures that the star’s bottom edge aligns with the circle’s, while the overlay aligns the composite view with the square:
 
-![A screenshot of a star, a circle, and a square with all their](/images/com.apple.SwiftUI/View-overlay-4@2x.png)
+![A screenshot of a star, a circle, and a square with all their](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-overlay-4@2x.png)
 
-You can achieve layering without an overlay modifier by putting both the modified view and the overlay content into a [`ZStack`](zstack.md). This can produce a simpler view hierarchy, but changes the layout priority that SwiftUI applies to the views. Use the overlay modifier when you want the modified view to dominate the layout.
+You can achieve layering without an overlay modifier by putting both the modified view and the overlay content into a [`ZStack`](../zstack.md). This can produce a simpler view hierarchy, but changes the layout priority that SwiftUI applies to the views. Use the overlay modifier when you want the modified view to dominate the layout.
 
-If you want to specify a [`ShapeStyle`](shapestyle.md) like a [`Color`](color.md) or a [`Material`](material.md) as the overlay, use [`overlay(_:ignoresSafeAreaEdges:)`](view/overlay(_:ignoressafeareaedges:).md) instead. To specify a [`Shape`](shape.md), use [`overlay(_:in:fillStyle:)`](view/overlay(_:in:fillstyle:).md).
+If you want to specify a [`ShapeStyle`](../shapestyle.md) like a [`Color`](../color.md) or a [`Material`](../material.md) as the overlay, use [`overlay(_:ignoresSafeAreaEdges:)`](./overlay%28_,ignoressafeareaedges%29.md) instead. To specify a [`Shape`](../shape.md), use [`overlay(_:in:fillStyle:)`](./overlay%28_,in,fillstyle%29.md).
 
 ## Parameters
 
-- `alignment`: The alignment that the modifier uses to position the implicit [`ZStack`](zstack.md) that groups the foreground views. The default is [`center`](alignment/center.md).
-- `content`: A [`ContentBuilder`](contentbuilder.md) that you use to declare the views to draw in front of this view, stacked in the order that you list them. The last view that you list appears at the front of the stack.
+- `alignment`: The alignment that the modifier uses to position the implicit [`ZStack`](../zstack.md) that groups the foreground views. The default is [`center`](../alignment/center.md).
+- `content`: A [`ContentBuilder`](../contentbuilder.md) that you use to declare the views to draw in front of this view, stacked in the order that you list them. The last view that you list appears at the front of the stack.
 
 ## See Also
 
-- [Adding a background to your view](adding-a-background-to-your-view.md)
+### Layering views
+- [Adding a background to your view](../adding-a-background-to-your-view.md)
   Compose a background behind your view and extend it beyond the safe area insets.
-- [struct ZStack](zstack.md)
+- [struct ZStack](../zstack.md)
   A view that overlays its subviews, aligning them in both axes.
-- [func zIndex(Double) -> some View](view/zindex(_:).md)
+- [func zIndex(Double) -> some View](./zindex%28_%29.md)
   Controls the display order of overlapping views.
-- [func background<V>(alignment: Alignment, content: () -> V) -> some View](view/background(alignment:content:).md)
+- [func background<V>(alignment: Alignment, content: () -> V) -> some View](./background%28alignment,content%29.md)
   Layers the views that you specify behind this view.
-- [func background<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](view/background(_:ignoressafeareaedges:).md)
+- [func background<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](./background%28_,ignoressafeareaedges%29.md)
   Sets the view’s background to a style.
-- [func background(ignoresSafeAreaEdges: Edge.Set) -> some View](view/background(ignoressafeareaedges:).md)
+- [func background(ignoresSafeAreaEdges: Edge.Set) -> some View](./background%28ignoressafeareaedges%29.md)
   Sets the view’s background to the default background style.
-- [func background(_:in:fillStyle:)](view/background(_:in:fillstyle:).md)
+- [func background(_:in:fillStyle:)](./background%28_,in,fillstyle%29.md)
   Sets the view’s background to an insettable shape filled with a style.
-- [func background(in:fillStyle:)](view/background(in:fillstyle:).md)
+- [func background(in:fillStyle:)](./background%28in,fillstyle%29.md)
   Sets the view’s background to an insettable shape filled with the default background style.
-- [func overlay<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](view/overlay(_:ignoressafeareaedges:).md)
+- [func overlay<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](./overlay%28_,ignoressafeareaedges%29.md)
   Layers the specified style in front of this view.
-- [func overlay<S, T>(S, in: T, fillStyle: FillStyle) -> some View](view/overlay(_:in:fillstyle:).md)
+- [func overlay<S, T>(S, in: T, fillStyle: FillStyle) -> some View](./overlay%28_,in,fillstyle%29.md)
   Layers a shape that you specify in front of this view.
-- [var backgroundMaterial: Material?](environmentvalues/backgroundmaterial.md)
+- [var backgroundMaterial: Material?](../environmentvalues/backgroundmaterial.md)
   The material underneath the current view.
-- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](view/containerbackground(_:for:).md)
+- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](./containerbackground%28_,for%29.md)
   Sets the container background of the enclosing container using a view.
-- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](view/containerbackground(for:alignment:content:).md)
+- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](./containerbackground%28for,alignment,content%29.md)
   Sets the container background of the enclosing container using a view.
-- [struct ContainerBackgroundPlacement](containerbackgroundplacement.md)
+- [struct ContainerBackgroundPlacement](../containerbackgroundplacement.md)
   The placement of a container background.
 
 

@@ -1,7 +1,8 @@
 # cachePolicy
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Cache policy to use for request.
 
@@ -20,11 +21,12 @@ Always use cache first and then if it fails, prefer cacheOrRemote, remote is som
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/remotecapabilitiesrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var handle: RCSHandle](rcsservice/remotecapabilitiesrequest/handle.md)
+- [var handle: RCSHandle](./handle.md)
   The RCS handle, typically a phone number.
-- [RCSService.RemoteCapabilitiesRequest.CachePolicy](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.enum.md)
+- [RCSService.RemoteCapabilitiesRequest.CachePolicy](./cachepolicy-swift.enum.md)
   Enumeration representing the cache policy to use in requests.
 
 

@@ -1,7 +1,8 @@
 # stopAdvertising()
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops advertising peripheral manager data.
 
@@ -20,16 +21,21 @@ Stops advertising peripheral manager data.
 func stopAdvertising()
 ```
 
+```objc
+- (void) stopAdvertising;
+```
+
 #### Discussion
 
 Call this method when you no longer want to advertise peripheral manager data.
 
 ## See Also
 
-- [func startAdvertising([String : Any]?)](cbperipheralmanager/startadvertising(_:).md)
+### Managing Advertising
+- [func startAdvertising([String : Any]?)](./startadvertising%28_%29.md)
   Advertises peripheral manager data.
-- [Advertising Data](advertising-data.md)
-- [var isAdvertising: Bool](cbperipheralmanager/isadvertising.md)
+- [Advertising Data](../advertising-data.md)
+- [var isAdvertising: Bool](./isadvertising.md)
   A Boolean value that indicates whether the peripheral is advertising data.
 
 

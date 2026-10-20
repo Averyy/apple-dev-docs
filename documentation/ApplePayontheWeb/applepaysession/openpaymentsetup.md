@@ -1,7 +1,8 @@
 # openPaymentSetup
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A method that displays the Set up Apple Pay button.
 
@@ -11,7 +12,7 @@ A method that displays the Set up Apple Pay button.
 
 ## Declaration
 
-```swift
+```
 static Promise <boolean> openPaymentSetup(
 	DOMString merchantIdentifier
 );
@@ -19,7 +20,7 @@ static Promise <boolean> openPaymentSetup(
 
 ## Mentions
 
-- [Apple Pay on the Web Version 2 Release Notes](apple-pay-on-the-web-version-2-release-notes.md)
+- [Apple Pay on the Web Version 2 Release Notes](../apple-pay-on-the-web-version-2-release-notes.md)
 
 #### Discussion
 
@@ -81,7 +82,7 @@ Listing 2. Configuring a Set up Apple Pay button
 </style>
 ```
 
-See [`Human Interface Guidelines > Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/apple-pay/web-human-interface-guidelines/) for information on how to use Apple Pay buttons.
+See [Human Interface Guidelines > Apple Pay on the Web](https://developer.apple.com/apple-pay/web-human-interface-guidelines/) for information on how to use Apple Pay buttons.
 
 ## Parameters
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Queries the number of resource views that this pool contains.
@@ -18,6 +19,10 @@ Queries the number of resource views that this pool contains.
 
 ```swift
 var resourceViewCount: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger resourceViewCount;
 ```
 
 

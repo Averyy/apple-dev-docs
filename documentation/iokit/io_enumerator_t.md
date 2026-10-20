@@ -1,7 +1,8 @@
 # io_enumerator_t
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias io_enumerator_t = io_object_t
+```
+
+```c
+typedef io_object_t io_enumerator_t;
 ```
 
 

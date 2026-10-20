@@ -1,7 +1,8 @@
 # init(row:section:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an index path that references a row in a particular section.
 

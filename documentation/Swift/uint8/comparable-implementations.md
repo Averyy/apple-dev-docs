@@ -1,33 +1,34 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeFrom<Self>](uint8/'...(_:)-29jcj.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-29jcj.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](uint8/'...(_:)-6irj6.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-6irj6.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](uint8/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](uint8/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](uint8/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (borrowing Self, borrowing Self) -> Bool](uint8/_(_:_:)-4ackf.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-4ackf.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func < (Self, Self) -> Bool](uint8/_(_:_:)-5a3l3.md)
+- [static func < (Self, Self) -> Bool](./op%28_,_%29-5a3l3.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (UInt8, UInt8) -> Bool](uint8/_(_:_:)-5fz9k.md)
+- [static func > (UInt8, UInt8) -> Bool](./op%28_,_%29-5fz9k.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](uint8/_=(_:_:)-1n380.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-1n380.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (UInt8, UInt8) -> Bool](uint8/_=(_:_:)-469h1.md)
+- [static func >= (UInt8, UInt8) -> Bool](./opeq%28_,_%29-469h1.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (UInt8, UInt8) -> Bool](uint8/_=(_:_:)-5nmsv.md)
+- [static func <= (UInt8, UInt8) -> Bool](./opeq%28_,_%29-5nmsv.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](uint8/_=(_:_:)-9bxoz.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-9bxoz.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

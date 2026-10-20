@@ -1,7 +1,8 @@
 # routeChoices
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of route choices for the trip.
 
@@ -16,9 +17,14 @@ The list of route choices for the trip.
 var routeChoices: [CPRouteChoice] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPRouteChoice *> * routeChoices;
+```
+
 ## See Also
 
-- [var destinationNameVariants: [String]?](cptrip/destinationnamevariants.md)
+### Getting Route Choices
+- [var destinationNameVariants: [String]?](./destinationnamevariants.md)
   An array of strings that represents the names of the destination for this trip, arranged from most to least preferred.
 
 

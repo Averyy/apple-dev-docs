@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether the drag and the drop are within the same text view.
@@ -18,11 +19,16 @@ A Boolean value indicating whether the drag and the drop are within the same tex
 var isSameView: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSameView) BOOL sameView;
+```
+
 ## See Also
 
-- [var dropPosition: UITextPosition](uitextdroprequest/dropposition.md)
+### Getting information about the text drop request
+- [var dropPosition: UITextPosition](./dropposition.md)
   The text position corresponding to the location of a drop session.
-- [var suggestedProposal: UITextDropProposal](uitextdroprequest/suggestedproposal.md)
+- [var suggestedProposal: UITextDropProposal](./suggestedproposal.md)
   The text drop proposal offered by the text view.
 
 

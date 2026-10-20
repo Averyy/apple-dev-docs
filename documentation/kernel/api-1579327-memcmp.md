@@ -1,14 +1,15 @@
 # memcmp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int memcmp(const void *s1, const void *s2, size_t n);
 ```
 

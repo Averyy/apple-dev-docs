@@ -1,7 +1,8 @@
 # init(toBuffer:capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized output stream that can write to a provided buffer.
 
@@ -20,6 +21,10 @@ Returns an initialized output stream that can write to a provided buffer.
 init(toBuffer buffer: UnsafeMutablePointer<UInt8>, capacity: Int)
 ```
 
+```objc
+- (instancetype) initToBuffer:(uint8_t *) buffer capacity:(NSUInteger) capacity;
+```
+
 #### Return Value
 
 An initialized output stream that can write to `buffer`.
@@ -28,7 +33,7 @@ An initialized output stream that can write to `buffer`.
 
 The stream must be opened before it can be used.
 
-When the number of bytes written to `buffer` has reached `capacity`, the stream’s [`streamStatus`](stream/streamstatus.md) will return `NSStreamStatusAtEnd`.
+When the number of bytes written to `buffer` has reached `capacity`, the stream’s [`streamStatus`](../stream/streamstatus.md) will return `NSStreamStatusAtEnd`.
 
 ## Parameters
 
@@ -37,13 +42,14 @@ When the number of bytes written to `buffer` has reached `capacity`, the stream�
 
 ## See Also
 
-- [class func toMemory() -> Self](outputstream/tomemory.md)
+### Creating Streams
+- [class func toMemory() -> Self](./tomemory%28%29.md)
   Creates and returns an initialized output stream that will write stream data to memory.
-- [init(toMemory: ())](outputstream/init(tomemory:).md)
+- [init(toMemory: ())](./init%28tomemory%29.md)
   Returns an initialized output stream that will write to memory.
-- [convenience init?(toFileAtPath: String, append: Bool)](outputstream/init(tofileatpath:append:).md)
+- [convenience init?(toFileAtPath: String, append: Bool)](./init%28tofileatpath,append%29.md)
   Returns an initialized output stream for writing to a specified file.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
+- [init?(url: URL, append: Bool)](./init%28url,append%29-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
 
 

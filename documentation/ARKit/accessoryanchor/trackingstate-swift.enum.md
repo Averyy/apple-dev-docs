@@ -1,7 +1,8 @@
 # AccessoryAnchor.TrackingState
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Tracking state of accessory anchors.
 
@@ -17,24 +18,24 @@ enum TrackingState
 ## Topics
 
 ### Enumeration Cases
-- [AccessoryAnchor.TrackingState.orientationTracked](accessoryanchor/trackingstate-swift.enum/orientationtracked.md)
+- [AccessoryAnchor.TrackingState.orientationTracked](./trackingstate-swift.enum/orientationtracked.md)
   Orientation is tracked.
-- [AccessoryAnchor.TrackingState.positionOrientationTracked](accessoryanchor/trackingstate-swift.enum/positionorientationtracked.md)
+- [AccessoryAnchor.TrackingState.positionOrientationTracked](./trackingstate-swift.enum/positionorientationtracked.md)
   Both position and orientation are tracked.
-- [AccessoryAnchor.TrackingState.positionOrientationTrackedLowAccuracy](accessoryanchor/trackingstate-swift.enum/positionorientationtrackedlowaccuracy.md)
+- [AccessoryAnchor.TrackingState.positionOrientationTrackedLowAccuracy](./trackingstate-swift.enum/positionorientationtrackedlowaccuracy.md)
   Both position and orientation are tracked, but with low accuracy.
-- [AccessoryAnchor.TrackingState.untracked](accessoryanchor/trackingstate-swift.enum/untracked.md)
+- [AccessoryAnchor.TrackingState.untracked](./trackingstate-swift.enum/untracked.md)
   Neither position nor orientation are tracked.
 ### Instance Properties
-- [var description: String](accessoryanchor/trackingstate-swift.enum/description.md)
+- [var description: String](./trackingstate-swift.enum/description.md)
   A textual representation of this tracking state.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

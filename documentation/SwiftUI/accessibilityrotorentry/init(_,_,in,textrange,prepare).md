@@ -1,7 +1,8 @@
 # init(_:_:in:textRange:prepare:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Rotor entry with a specific label, identifier and namespace, and with an optional range.
 
@@ -30,7 +31,8 @@ init<L>(_ label: L, _ id: ID, in namespace: Namespace.ID, textRange: Range<Strin
 
 ## See Also
 
-- [init(_:id:in:textRange:prepare:)](accessibilityrotorentry/init(_:id:in:textrange:prepare:).md)
+### Creating an identified rotor entry in a namespace
+- [init(_:id:in:textRange:prepare:)](./init%28_,id,in,textrange,prepare%29.md)
   Create a Rotor entry with a specific label, identifier and namespace, and with an optional range.
 
 

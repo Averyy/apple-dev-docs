@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells your prefetch data source object to begin preparing data for the cells at the supplied index paths.
@@ -19,13 +20,17 @@ Tells your prefetch data source object to begin preparing data for the cells at 
 func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath])
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView prefetchItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 #### Discussion
 
-The collection view calls this method as the user scrolls, providing the index paths for cells it’s likely to display in the near future. Your implementation of this method is responsible for starting any expensive data loading processes. The data loading must be performed asynchronously, and the results made available to the [`collectionView(_:cellForItemAt:)`](uicollectionviewdatasource/collectionview(_:cellforitemat:).md) method on the collection view’s data source.
+The collection view calls this method as the user scrolls, providing the index paths for cells it’s likely to display in the near future. Your implementation of this method is responsible for starting any expensive data loading processes. The data loading must be performed asynchronously, and the results made available to the [`collectionView(_:cellForItemAt:)`](../uicollectionviewdatasource/collectionview%28_,cellforitemat%29.md) method on the collection view’s data source.
 
 The collection view doesn’t call this method for cells it requires immediately, so your code must not rely on this method to load data. The order of the index paths provided represents the priority.
 
-For further information about creating an asynchronous data loading task, see [`Concurrency Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
+For further information about creating an asynchronous data loading task, see [Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ For further information about creating an asynchronous data loading task, see [`
 
 ## See Also
 
-- [Prefetching collection view data](prefetching-collection-view-data.md)
+### Managing data prefetching
+- [Prefetching collection view data](../prefetching-collection-view-data.md)
   Load data for collection view cells before they display.
-- [func collectionView(UICollectionView, cancelPrefetchingForItemsAt: [IndexPath])](uicollectionviewdatasourceprefetching/collectionview(_:cancelprefetchingforitemsat:).md)
+- [func collectionView(UICollectionView, cancelPrefetchingForItemsAt: [IndexPath])](./collectionview%28_,cancelprefetchingforitemsat%29.md)
   Cancels a previously triggered data prefetch request.
 
 

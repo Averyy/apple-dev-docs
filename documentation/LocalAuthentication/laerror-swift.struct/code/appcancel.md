@@ -1,7 +1,8 @@
 # LAError.Code.appCancel
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app canceled authentication.
 
@@ -19,15 +20,20 @@ The app canceled authentication.
 case appCancel
 ```
 
+```c
+LAErrorAppCancel
+```
+
 #### Discussion
 
-You receive this error if you call the [`invalidate()`](lacontext/invalidate().md) method while authentication is in process.
+You receive this error if you call the [`invalidate()`](../../lacontext/invalidate%28%29.md) method while authentication is in process.
 
 ## See Also
 
-- [LAError.Code.systemCancel](laerror-swift.struct/code/systemcancel.md)
+### Cancellation
+- [LAError.Code.systemCancel](./systemcancel.md)
   The system canceled authentication.
-- [LAError.Code.userCancel](laerror-swift.struct/code/usercancel.md)
+- [LAError.Code.userCancel](./usercancel.md)
   The user tapped the cancel button in the authentication dialog.
 
 

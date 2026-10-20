@@ -1,7 +1,8 @@
 # imageBufferValue
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying image of the feature value as a pixel buffer.
 
@@ -20,23 +21,28 @@ The underlying image of the feature value as a pixel buffer.
 var imageBufferValue: CVPixelBuffer? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CVPixelBufferRef imageBufferValue;
+```
+
 ## See Also
 
-- [var isUndefined: Bool](mlfeaturevalue/isundefined.md)
+### Accessing the feature’s value
+- [var isUndefined: Bool](./isundefined.md)
   A Boolean value that indicates whether the feature value is undefined or missing.
-- [var int64Value: Int64](mlfeaturevalue/int64value.md)
+- [var int64Value: Int64](./int64value.md)
   The underlying integer of the feature value.
-- [var doubleValue: Double](mlfeaturevalue/doublevalue.md)
+- [var doubleValue: Double](./doublevalue.md)
   The underlying double of the feature value.
-- [var stringValue: String](mlfeaturevalue/stringvalue.md)
+- [var stringValue: String](./stringvalue.md)
   The underlying string of the feature value.
-- [func shapedArrayValue<Scalar>(of: Scalar.Type) -> MLShapedArray<Scalar>?](mlfeaturevalue/shapedarrayvalue(of:).md)
+- [func shapedArrayValue<Scalar>(of: Scalar.Type) -> MLShapedArray<Scalar>?](./shapedarrayvalue%28of%29.md)
   Returns the underlying shaped array of the feature value.
-- [var multiArrayValue: MLMultiArray?](mlfeaturevalue/multiarrayvalue.md)
+- [var multiArrayValue: MLMultiArray?](./multiarrayvalue.md)
   The underlying multiarray of the feature value.
-- [var sequenceValue: MLSequence?](mlfeaturevalue/sequencevalue.md)
+- [var sequenceValue: MLSequence?](./sequencevalue.md)
   The underlying sequence of the feature value.
-- [var dictionaryValue: [AnyHashable : NSNumber]](mlfeaturevalue/dictionaryvalue.md)
+- [var dictionaryValue: [AnyHashable : NSNumber]](./dictionaryvalue.md)
   The underlying dictionary of the feature value.
 
 

@@ -1,7 +1,8 @@
 # init(isContrastAndVibrancyEnhancementEnabled:pixelBufferProcessor:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view that renders a spatial camera region and optionally applies contrast enhancement.
 

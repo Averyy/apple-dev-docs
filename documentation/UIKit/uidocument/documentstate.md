@@ -1,7 +1,8 @@
 # documentState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the document.
 
@@ -17,21 +18,26 @@ The current state of the document.
 var documentState: UIDocument.State { get }
 ```
 
+```objc
+@property (readonly) UIDocumentState documentState;
+```
+
 #### Discussion
 
-When document state changes, the [`UIDocument`](uidocument.md) object stores a constant identifying the new state in this property. See the [`UIDocument.State`](uidocument/state.md) enum for descriptions of these constants. To receive notifications about changes in document state, observe the [`stateChangedNotification`](uidocument/statechangednotification.md) notification.
+When document state changes, the [`UIDocument`](../uidocument.md) object stores a constant identifying the new state in this property. See the [`UIDocument.State`](./state.md) enum for descriptions of these constants. To receive notifications about changes in document state, observe the [`stateChangedNotification`](./statechangednotification.md) notification.
 
 ## See Also
 
-- [var fileURL: URL](uidocument/fileurl.md)
+### Accessing document attributes
+- [var fileURL: URL](./fileurl.md)
   The file URL you use to initialize the document.
-- [var localizedName: String](uidocument/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized name of the document.
-- [var fileType: String?](uidocument/filetype.md)
+- [var fileType: String?](./filetype.md)
   The file type of the document.
-- [var fileModificationDate: Date?](uidocument/filemodificationdate.md)
+- [var fileModificationDate: Date?](./filemodificationdate.md)
   The date and time your app last modified the document file.
-- [var progress: Progress?](uidocument/progress.md)
+- [var progress: Progress?](./progress.md)
   The upload or download progress of a document.
 
 

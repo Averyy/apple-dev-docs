@@ -1,7 +1,8 @@
 # MPSGraphScatterMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The scatter mode.
 
@@ -19,35 +20,39 @@ The scatter mode.
 enum MPSGraphScatterMode
 ```
 
+```c
+enum MPSGraphScatterMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphScatterMode.add](mpsgraphscattermode/add.md)
+- [MPSGraphScatterMode.add](./mpsgraphscattermode/add.md)
   Add
-- [MPSGraphScatterMode.div](mpsgraphscattermode/div.md)
+- [MPSGraphScatterMode.div](./mpsgraphscattermode/div.md)
   Divide
-- [MPSGraphScatterMode.max](mpsgraphscattermode/max.md)
+- [MPSGraphScatterMode.max](./mpsgraphscattermode/max.md)
   Maximum
-- [MPSGraphScatterMode.min](mpsgraphscattermode/min.md)
+- [MPSGraphScatterMode.min](./mpsgraphscattermode/min.md)
   Minimum
-- [MPSGraphScatterMode.mul](mpsgraphscattermode/mul.md)
+- [MPSGraphScatterMode.mul](./mpsgraphscattermode/mul.md)
   Multiply
-- [MPSGraphScatterMode.set](mpsgraphscattermode/set.md)
+- [MPSGraphScatterMode.set](./mpsgraphscattermode/set.md)
   Set
-- [MPSGraphScatterMode.sub](mpsgraphscattermode/sub.md)
+- [MPSGraphScatterMode.sub](./mpsgraphscattermode/sub.md)
   Sub
 ### Initializers
-- [init?(rawValue: Int)](mpsgraphscattermode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mpsgraphscattermode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

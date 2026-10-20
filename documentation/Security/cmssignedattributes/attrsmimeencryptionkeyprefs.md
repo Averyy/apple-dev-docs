@@ -1,7 +1,8 @@
 # attrSmimeEncryptionKeyPrefs
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicate that the signing certificate included with the message is the preferred one for S/MIME encryption.
 
@@ -13,6 +14,10 @@ Indicate that the signing certificate included with the message is the preferred
 
 ```swift
 static var attrSmimeEncryptionKeyPrefs: CMSSignedAttributes { get }
+```
+
+```c
+kCMSAttrSmimeEncryptionKeyPrefs
 ```
 
 

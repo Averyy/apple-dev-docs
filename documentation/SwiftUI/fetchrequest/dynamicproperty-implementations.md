@@ -1,11 +1,12 @@
 # DynamicProperty Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func update()](fetchrequest/update.md)
+- [func update()](./update%28%29.md)
   Updates the fetched results.
 
 

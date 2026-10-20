@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the destination’s user interface to display a new highlighting style during a spring-loading operation.
@@ -16,11 +17,15 @@ Updates the destination’s user interface to display a new highlighting style d
 func springLoadingHighlightChanged(_ draggingInfo: any NSDraggingInfo)
 ```
 
+```objc
+- (void) springLoadingHighlightChanged:(id<NSDraggingInfo>) draggingInfo;
+```
+
 #### Discussion
 
 During a spring-loaded operation, a destination may initiate animated highlighting to visually cue the user that spring-loading has been engaged or disengaged. This method is called as different stages of this animation are reached, providing an opportunity to change the highlighting style. Check the `springLoadingHighlight` property of the `draggingInfo` object to determine the style of highlighting to apply. Then, update the destination’s user interface accordingly.
 
-> ❗ **Important**:  Do not use highlighting as a means to determine whether spring-loading has actually been activated or deactivated. The [`springLoadingActivated(_:draggingInfo:)`](nsspringloadingdestination/springloadingactivated(_:dragginginfo:).md) method alerts your app when spring-loading activation occurs.
+> ❗ **Important**:  Do not use highlighting as a means to determine whether spring-loading has actually been activated or deactivated. The [`springLoadingActivated(_:draggingInfo:)`](./springloadingactivated%28_,dragginginfo%29.md) method alerts your app when spring-loading activation occurs.
 
 ## Parameters
 
@@ -28,21 +33,23 @@ During a spring-loaded operation, a destination may initiate animated highlighti
 
 ## See Also
 
-- [struct NSDragOperation](nsdragoperation.md)
+### Related Documentation
+- [struct NSDragOperation](../nsdragoperation.md)
   A group of constants that represent which operations the dragging source can perform on dragging items.
-- [struct NSSpringLoadingOptions](nsspringloadingoptions.md)
+- [struct NSSpringLoadingOptions](../nsspringloadingoptions.md)
   These constants denote the type of spring-loading behavior configured for the destination object.
-- [protocol NSDraggingInfo](nsdragginginfo.md)
+- [protocol NSDraggingInfo](../nsdragginginfo.md)
   A set of methods that supply information about a dragging session.
-- [func springLoadingActivated(Bool, draggingInfo: any NSDraggingInfo)](nsspringloadingdestination/springloadingactivated(_:dragginginfo:).md)
+### Respond to Spring-loading Events
+- [func springLoadingActivated(Bool, draggingInfo: any NSDraggingInfo)](./springloadingactivated%28_,dragginginfo%29.md)
   Responds to the activation or deactivation of spring-loading on a destination.
-- [func springLoadingEntered(any NSDraggingInfo) -> NSSpringLoadingOptions](nsspringloadingdestination/springloadingentered(_:).md)
+- [func springLoadingEntered(any NSDraggingInfo) -> NSSpringLoadingOptions](./springloadingentered%28_%29.md)
   Returns whether to enable or disable spring-loading when a drag enters the bounds of the spring-loading destination.
-- [func springLoadingUpdated(any NSDraggingInfo) -> NSSpringLoadingOptions](nsspringloadingdestination/springloadingupdated(_:).md)
+- [func springLoadingUpdated(any NSDraggingInfo) -> NSSpringLoadingOptions](./springloadingupdated%28_%29.md)
   Returns whether to enable or disable spring-loading as a drag moves within the bounds of the spring-loading destination or `draggingInfo` changes during the drag.
-- [func springLoadingExited(any NSDraggingInfo)](nsspringloadingdestination/springloadingexited(_:).md)
+- [func springLoadingExited(any NSDraggingInfo)](./springloadingexited%28_%29.md)
   Responds when a drag exits the bounds of the spring-loading destination.
-- [func draggingEnded(any NSDraggingInfo)](nsspringloadingdestination/draggingended(_:).md)
+- [func draggingEnded(any NSDraggingInfo)](./draggingended%28_%29.md)
   Responds to the end of a drag operation.
 
 

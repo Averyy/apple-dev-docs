@@ -1,7 +1,8 @@
 # authenticationMethod
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authentication method used by the receiver.
 
@@ -20,31 +21,36 @@ The authentication method used by the receiver.
 var authenticationMethod: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * authenticationMethod;
+```
+
 ## Mentions
 
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
+- [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
 #### Discussion
 
-The supported authentication methods are listed in [`NSURLProtectionSpace authentication method constants`](nsurlprotectionspace-authentication-method-constants.md).
+The supported authentication methods are listed in [NSURLProtectionSpace authentication method constants](../nsurlprotectionspace-authentication-method-constants.md).
 
 ## See Also
 
-- [var distinguishedNames: [Data]?](urlprotectionspace/distinguishednames.md)
+### Getting protection space properties
+- [var distinguishedNames: [Data]?](./distinguishednames.md)
   The acceptable certificate-issuing authorities for client certificate authentication.
-- [var host: String](urlprotectionspace/host.md)
+- [var host: String](./host.md)
   The receiver’s host.
-- [var port: Int](urlprotectionspace/port.md)
+- [var port: Int](./port.md)
   The receiver’s port.
-- [var `protocol`: String?](urlprotectionspace/protocol.md)
+- [var `protocol`: String?](./protocol.md)
   The receiver’s protocol.
-- [var proxyType: String?](urlprotectionspace/proxytype.md)
+- [var proxyType: String?](./proxytype.md)
   The receiver’s proxy type.
-- [var realm: String?](urlprotectionspace/realm.md)
+- [var realm: String?](./realm.md)
   The receiver’s authentication realm
-- [var receivesCredentialSecurely: Bool](urlprotectionspace/receivescredentialsecurely.md)
+- [var receivesCredentialSecurely: Bool](./receivescredentialsecurely.md)
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
-- [var serverTrust: SecTrust?](urlprotectionspace/servertrust.md)
+- [var serverTrust: SecTrust?](./servertrust.md)
   A representation of the server’s SSL transaction state.
 
 

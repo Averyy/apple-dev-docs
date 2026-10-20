@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core HID  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get or set a property from the device.
 

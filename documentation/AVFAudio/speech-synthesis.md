@@ -1,6 +1,7 @@
 # Speech synthesis
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: API Collection
 
 Configure voices to speak strings of text.
 
@@ -8,7 +9,7 @@ Configure voices to speak strings of text.
 
 Speech synthesis in AVFAudio requires two primary tasks:
 
-Create an [`AVSpeechUtterance`](avspeechutterance.md) instance that contains the text to speak. Optionally, configure speech parameters, such as voice and rate, for each utterance.
+Create an [`AVSpeechUtterance`](./avspeechutterance.md) instance that contains the text to speak. Optionally, configure speech parameters, such as voice and rate, for each utterance.
 
 ```swift
 // Create an utterance.
@@ -27,7 +28,7 @@ let voice = AVSpeechSynthesisVoice(language: "en-GB")
 utterance.voice = voice
 ```
 
-Pass the utterance to an [`AVSpeechSynthesizer`](avspeechsynthesizer.md) instance to produce spoken audio.
+Pass the utterance to an [`AVSpeechSynthesizer`](./avspeechsynthesizer.md) instance to produce spoken audio.
 
 ```swift
 // Create a speech synthesizer.
@@ -37,22 +38,22 @@ let synthesizer = AVSpeechSynthesizer()
 synthesizer.speak(utterance)
 ```
 
-Optionally, use the speech synthesizer instance to control or respond to ongoing speech; for example, assign its [`delegate`](avspeechsynthesizer/delegate.md) to receive speech event notifications.
+Optionally, use the speech synthesizer instance to control or respond to ongoing speech; for example, assign its [`delegate`](./avspeechsynthesizer/delegate.md) to receive speech event notifications.
 
 ## Topics
 
 ### Spoken text attributes
-- [class AVSpeechUtterance](avspeechutterance.md)
+- [class AVSpeechUtterance](./avspeechutterance.md)
   An object that encapsulates the text for speech synthesis and parameters that affect the speech.
-- [class AVSpeechSynthesisVoice](avspeechsynthesisvoice.md)
+- [class AVSpeechSynthesisVoice](./avspeechsynthesisvoice.md)
   A distinct voice for use in speech synthesis.
 ### Speech synthesis controls
-- [class AVSpeechSynthesizer](avspeechsynthesizer.md)
+- [class AVSpeechSynthesizer](./avspeechsynthesizer.md)
   An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
 ### Speech synthesis Audio Unit
-- [Creating a custom speech synthesizer](creating-a-custom-speech-synthesizer.md)
+- [Creating a custom speech synthesizer](./creating-a-custom-speech-synthesizer.md)
   Use your custom voices to synthesize speech by building a speech synthesis provider.
-- [class AVSpeechSynthesisProviderAudioUnit](avspeechsynthesisprovideraudiounit.md)
+- [class AVSpeechSynthesisProviderAudioUnit](./avspeechsynthesisprovideraudiounit.md)
   An object that generates speech from text.
 
 

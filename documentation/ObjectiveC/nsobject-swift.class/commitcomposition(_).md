@@ -1,17 +1,22 @@
 # commitComposition(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the controller that the composition should be committed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func commitComposition(_ sender: Any!)
+```
+
+```objc
+- (void) commitComposition:(id) sender;
 ```
 
 #### Discussion

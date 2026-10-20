@@ -1,7 +1,8 @@
 # MTLIntersectionFunctionTable
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
 
@@ -19,60 +20,65 @@ A table of intersection functions that Metal calls to perform ray-tracing inters
 protocol MTLIntersectionFunctionTable : MTLResource
 ```
 
+```objc
+@protocol MTLIntersectionFunctionTable <MTLResource>
+```
+
 #### Overview
 
-Don’t implement this protocol yourself. Instead create an [`MTLIntersectionFunctionTableDescriptor`](mtlintersectionfunctiontabledescriptor.md) instance and configure its properties. Then call the appropriate method on the pipeline state that you want to use this table with:
+Don’t implement this protocol yourself. Instead create an [`MTLIntersectionFunctionTableDescriptor`](./mtlintersectionfunctiontabledescriptor.md) instance and configure its properties. Then call the appropriate method on the pipeline state that you want to use this table with:
 
-- **Compute pipeline**: [`makeIntersectionFunctionTable(descriptor:)`](mtlcomputepipelinestate/makeintersectionfunctiontable(descriptor:).md)
-- **Render pipeline**: [`makeIntersectionFunctionTable(descriptor:stage:)`](mtlrenderpipelinestate/makeintersectionfunctiontable(descriptor:stage:).md)
+- **Compute pipeline**: [`makeIntersectionFunctionTable(descriptor:)`](./mtlcomputepipelinestate/makeintersectionfunctiontable%28descriptor%29.md)
+- **Render pipeline**: [`makeIntersectionFunctionTable(descriptor:stage:)`](./mtlrenderpipelinestate/makeintersectionfunctiontable%28descriptor,stage%29.md)
 
 If you use the same ray-tracing functions with more than one pipeline, make a separate table for each.
 
-Use the methods on this instance to set the table entries to point at the intersection functions, and to provide buffers as arguments for those functions. For more information about intersection functions, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+Use the methods on this instance to set the table entries to point at the intersection functions, and to provide buffers as arguments for those functions. For more information about intersection functions, see [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## Topics
 
 ### Setting a table entry
-- [func setFunction((any MTLFunctionHandle)?, index: Int)](mtlintersectionfunctiontable/setfunction(_:index:).md)
+- [func setFunction((any MTLFunctionHandle)?, index: Int)](./mtlintersectionfunctiontable/setfunction%28_,index%29.md)
   Sets an entry in the table.
-- [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](mtlintersectionfunctiontable/setfunctions(_:range:).md)
+- [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](./mtlintersectionfunctiontable/setfunctions%28_,range%29.md)
   Sets a range of entries in the table.
 ### Specifying arguments for intersection functions
-- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlintersectionfunctiontable/setbuffer(_:offset:index:).md)
+- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](./mtlintersectionfunctiontable/setbuffer%28_,offset,index%29.md)
   Sets a buffer for the intersection functions.
-- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlintersectionfunctiontable/setbuffers(_:offsets:range:).md)
+- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./mtlintersectionfunctiontable/setbuffers%28_,offsets,range%29.md)
   Sets a range of buffers for the intersection functions.
-- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlintersectionfunctiontable/setvisiblefunctiontable(_:bufferindex:).md)
+- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./mtlintersectionfunctiontable/setvisiblefunctiontable%28_,bufferindex%29.md)
   Sets a visible function table for the intersection functions.
-- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](mtlintersectionfunctiontable/setvisiblefunctiontables(_:bufferrange:).md)
+- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./mtlintersectionfunctiontable/setvisiblefunctiontables%28_,bufferrange%29.md)
   Sets a range of visible function tables for the intersection functions.
 ### Specifying opaque triangle intersection testing
-- [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](mtlintersectionfunctiontable/setopaquetriangleintersectionfunction(signature:index:).md)
+- [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](./mtlintersectionfunctiontable/setopaquetriangleintersectionfunction%28signature,index%29.md)
   Sets an entry in the intersection table to point to a system-defined opaque triangle intersection function.
-- [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)](mtlintersectionfunctiontable/setopaquetriangleintersectionfunction(signature:range:).md)
+- [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)](./mtlintersectionfunctiontable/setopaquetriangleintersectionfunction%28signature,range%29.md)
   Sets a range of entries in the intersection table to point to a system-defined opaque triangle intersection function.
 ### Instance Properties
-- [var gpuResourceID: MTLResourceID](mtlintersectionfunctiontable/gpuresourceid.md)
+- [var gpuResourceID: MTLResourceID](./mtlintersectionfunctiontable/gpuresourceid.md)
 ### Instance Methods
-- [func setOpaqueCurveIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature:index:).md)
-- [func setOpaqueCurveIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)](mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature:range:).md)
+- [func setOpaqueCurveIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](./mtlintersectionfunctiontable/setopaquecurveintersectionfunction%28signature,index%29.md)
+- [func setOpaqueCurveIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)](./mtlintersectionfunctiontable/setopaquecurveintersectionfunction%28signature,range%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTLAllocation](mtlallocation.md)
-- [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTLAllocation](./mtlallocation.md)
+- [MTLResource](./mtlresource.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLIntersectionFunctionTableDescriptor](mtlintersectionfunctiontabledescriptor.md)
+### Intersection function tables
+- [class MTLIntersectionFunctionTableDescriptor](./mtlintersectionfunctiontabledescriptor.md)
   A specification of how to create an intersection function table.
-- [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
+- [class MTLIntersectionFunctionDescriptor](./mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
-- [struct MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature.md)
+- [struct MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature.md)
   Constants for specifying different types of custom intersection functions.
-- [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
+- [struct MTLIntersectionFunctionBufferArguments](./mtlintersectionfunctionbufferarguments.md)
 
 
 ---

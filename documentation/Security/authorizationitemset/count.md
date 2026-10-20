@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the `items` array.
 
@@ -13,6 +14,10 @@ The number of elements in the `items` array.
 
 ```swift
 var count: UInt32
+```
+
+```c
+UInt32 count;
 ```
 
 

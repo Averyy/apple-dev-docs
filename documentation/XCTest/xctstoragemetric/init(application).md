@@ -1,7 +1,8 @@
 # init(application:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metric for measuring disk use in the requested app.
 
@@ -19,13 +20,18 @@ Creates a metric for measuring disk use in the requested app.
 init(application: XCUIApplication)
 ```
 
+```objc
+- (instancetype) initWithApplication:(XCUIApplication *) application;
+```
+
 ## Parameters
 
 - `application`: The application to be tested.
 
 ## See Also
 
-- [init()](xctstoragemetric/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a metric for measuring disk use in a process.
 
 

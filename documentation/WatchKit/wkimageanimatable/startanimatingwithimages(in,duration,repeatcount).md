@@ -2,17 +2,22 @@
 
 **Framework**: WatchKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Animates the specified images with the given duration and repeat information.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
 ```swift
 func startAnimatingWithImages(in imageRange: NSRange, duration: TimeInterval, repeatCount: Int)
+```
+
+```objc
+- (void) startAnimatingWithImagesInRange:(NSRange) imageRange duration:(NSTimeInterval) duration repeatCount:(NSInteger) repeatCount;
 ```
 
 #### Discussion
@@ -27,9 +32,10 @@ This method animates a subset of the images associated with the current image in
 
 ## See Also
 
-- [func startAnimating()](wkimageanimatable/startanimating.md)
+### Animating an Image Sequence
+- [func startAnimating()](./startanimating%28%29.md)
   Begins animating the current sequence of images.
-- [func stopAnimating()](wkimageanimatable/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops any in-progress animations.
 
 

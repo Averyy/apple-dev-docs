@@ -1,7 +1,8 @@
 # UIKeyboardType.webSearch
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a keyboard for web search terms and URL entry.
 
@@ -9,7 +10,7 @@ Specifies a keyboard for web search terms and URL entry.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,35 +19,40 @@ Specifies a keyboard for web search terms and URL entry.
 case webSearch
 ```
 
+```c
+UIKeyboardTypeWebSearch
+```
+
 #### Discussion
 
 This keyboard type prominently features the space and period (”`.`”) characters.
 
 ## See Also
 
-- [UIKeyboardType.default](uikeyboardtype/default.md)
+### Constants
+- [UIKeyboardType.default](./default.md)
   Specifies the default keyboard for the current input method.
-- [UIKeyboardType.asciiCapable](uikeyboardtype/asciicapable.md)
+- [UIKeyboardType.asciiCapable](./asciicapable.md)
   Specifies a keyboard that displays standard ASCII characters.
-- [UIKeyboardType.numbersAndPunctuation](uikeyboardtype/numbersandpunctuation.md)
+- [UIKeyboardType.numbersAndPunctuation](./numbersandpunctuation.md)
   Specifies the numbers and punctuation keyboard.
-- [UIKeyboardType.URL](uikeyboardtype/url.md)
+- [UIKeyboardType.URL](./url.md)
   Specifies a keyboard for URL entry.
-- [UIKeyboardType.numberPad](uikeyboardtype/numberpad.md)
+- [UIKeyboardType.numberPad](./numberpad.md)
   Specifies a numeric keypad for PIN entry.
-- [UIKeyboardType.phonePad](uikeyboardtype/phonepad.md)
+- [UIKeyboardType.phonePad](./phonepad.md)
   Specifies a keypad for entering telephone numbers.
-- [UIKeyboardType.namePhonePad](uikeyboardtype/namephonepad.md)
+- [UIKeyboardType.namePhonePad](./namephonepad.md)
   Specifies a keypad for entering a person’s name or phone number.
-- [UIKeyboardType.emailAddress](uikeyboardtype/emailaddress.md)
+- [UIKeyboardType.emailAddress](./emailaddress.md)
   Specifies a keyboard for entering email addresses.
-- [UIKeyboardType.decimalPad](uikeyboardtype/decimalpad.md)
+- [UIKeyboardType.decimalPad](./decimalpad.md)
   Specifies a keyboard with numbers and a decimal point.
-- [UIKeyboardType.twitter](uikeyboardtype/twitter.md)
+- [UIKeyboardType.twitter](./twitter.md)
   Specifies a keyboard for Twitter text entry, with easy access to the at (”`@`”) and hash (”`#`”) characters.
-- [UIKeyboardType.asciiCapableNumberPad](uikeyboardtype/asciicapablenumberpad.md)
+- [UIKeyboardType.asciiCapableNumberPad](./asciicapablenumberpad.md)
   Specifies a number pad that outputs only ASCII digits.
-- [static var alphabet: UIKeyboardType](uikeyboardtype/alphabet.md)
+- [static var alphabet: UIKeyboardType](./alphabet.md)
   Specifies a keyboard for alphabetic entry.
 
 

@@ -1,7 +1,8 @@
 # init(period:periodicity:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a human body action period prediction.
 

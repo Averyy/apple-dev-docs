@@ -1,7 +1,8 @@
 # CATransform3DInvert(_:)
 
 **Framework**: Core Animation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Inverts `t` and returns the result.
 
@@ -17,6 +18,10 @@ Inverts `t` and returns the result.
 
 ```swift
 func CATransform3DInvert(_ t: CATransform3D) -> CATransform3D
+```
+
+```c
+extern CATransform3D CATransform3DInvert(CATransform3D t);
 ```
 
 #### Discussion

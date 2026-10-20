@@ -1,7 +1,8 @@
 # CVAttachmentMode.shouldPropagate
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates to copy the attachment.
 
@@ -20,13 +21,18 @@ Indicates to copy the attachment.
 case shouldPropagate
 ```
 
+```c
+kCVAttachmentMode_ShouldPropagate
+```
+
 #### Discussion
 
-The [`CVBufferPropagateAttachments(_:_:)`](cvbufferpropagateattachments(_:_:).md) function propagates all attachments that have this attachment mode. For example, in most cases, you’ll want to propagate an attachment bearing a timestamp to each successive buffer.
+The [`CVBufferPropagateAttachments(_:_:)`](../cvbufferpropagateattachments%28_,_%29.md) function propagates all attachments that have this attachment mode. For example, in most cases, you’ll want to propagate an attachment bearing a timestamp to each successive buffer.
 
 ## See Also
 
-- [CVAttachmentMode.shouldNotPropagate](cvattachmentmode/shouldnotpropagate.md)
+### Constants
+- [CVAttachmentMode.shouldNotPropagate](./shouldnotpropagate.md)
   Indicates to not propagate the attachment.
 
 

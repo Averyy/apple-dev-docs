@@ -1,7 +1,8 @@
 # allowedExperiences
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of experiences the app supports.
 
@@ -17,23 +18,24 @@ final var allowedExperiences: AVExperienceController.Experiences { get set }
 
 #### Discussion
 
-Use this to allow additional experiences like multiview, or to disable expanded. This list is the basis for [`availableExperiences`](avexperiencecontroller/availableexperiences.md), which filters out inapplicable experiences.
+Use this to allow additional experiences like multiview, or to disable expanded. This list is the basis for [`availableExperiences`](./availableexperiences.md), which filters out inapplicable experiences.
 
-> **Note**: Because [`AVExperienceController.Experience.embedded`](avexperiencecontroller/experience-swift.enum/embedded.md) is the initial experience, and the one that the player returns to when others end, it’s a programming error to exclude it from this list.
+> **Note**: Because [`AVExperienceController.Experience.embedded`](./experience-swift.enum/embedded.md) is the initial experience, and the one that the player returns to when others end, it’s a programming error to exclude it from this list.
 
 ## See Also
 
-- [var availableExperiences: AVExperienceController.Experiences](avexperiencecontroller/availableexperiences.md)
+### Configuring the experience
+- [var availableExperiences: AVExperienceController.Experiences](./availableexperiences.md)
   The allowed experiences that are available to use on the device at this time.
-- [AVExperienceController.Experiences](avexperiencecontroller/experiences.md)
+- [AVExperienceController.Experiences](./experiences.md)
   A structure that represents a collection of experiences to use with an experience controller.
-- [var experience: AVExperienceController.Experience](avexperiencecontroller/experience-swift.property.md)
+- [var experience: AVExperienceController.Experience](./experience-swift.property.md)
   The current experience.
-- [AVExperienceController.Experience](avexperiencecontroller/experience-swift.enum.md)
+- [AVExperienceController.Experience](./experience-swift.enum.md)
   The types of experiences the system supports.
-- [var configuration: AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.property.md)
+- [var configuration: AVExperienceController.Configuration](./configuration-swift.property.md)
   The configuration options per experience.
-- [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
+- [AVExperienceController.Configuration](./configuration-swift.struct.md)
   Options that configure each experience.
 
 

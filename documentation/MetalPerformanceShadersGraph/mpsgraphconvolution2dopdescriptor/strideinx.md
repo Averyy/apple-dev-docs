@@ -1,7 +1,8 @@
 # strideInX
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale that maps `x`-coordinate of the destination to `x`-coordinate of the source.
 
@@ -17,6 +18,10 @@ The scale that maps `x`-coordinate of the destination to `x`-coordinate of the s
 
 ```swift
 var strideInX: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger strideInX;
 ```
 
 #### Discussion

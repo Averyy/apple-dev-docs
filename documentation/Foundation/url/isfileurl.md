@@ -1,7 +1,8 @@
 # isFileURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that is true if the scheme is `file:`.
 
@@ -22,15 +23,16 @@ var isFileURL: Bool { get }
 
 ## See Also
 
-- [var hasDirectoryPath: Bool](url/hasdirectorypath.md)
+### Working with file URLs
+- [var hasDirectoryPath: Bool](./hasdirectorypath.md)
   A Boolean that is true if the URL path represents a directory.
-- [func withUnsafeFileSystemRepresentation<ResultType>((UnsafePointer<Int8>?) throws -> ResultType) rethrows -> ResultType](url/withunsafefilesystemrepresentation(_:).md)
+- [func withUnsafeFileSystemRepresentation<ResultType>((UnsafePointer<Int8>?) throws -> ResultType) rethrows -> ResultType](./withunsafefilesystemrepresentation%28_%29.md)
   Passes the URL’s path in the file system representation to a closure.
-- [func resolveSymlinksInPath()](url/resolvesymlinksinpath.md)
+- [func resolveSymlinksInPath()](./resolvesymlinksinpath%28%29.md)
   Resolves any symlinks in the path of a file URL.
-- [func resolvingSymlinksInPath() -> URL](url/resolvingsymlinksinpath.md)
+- [func resolvingSymlinksInPath() -> URL](./resolvingsymlinksinpath%28%29.md)
   Resolves any symlinks in the path of a file URL.
-- [func standardize()](url/standardize.md)
+- [func standardize()](./standardize%28%29.md)
   Standardizes the path of a file URL.
 
 

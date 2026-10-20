@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The rows of the underlying data frame.
@@ -23,17 +24,18 @@ var rows: DataFrame.Rows { get set }
 
 ## See Also
 
-- [var isEmpty: Bool](dataframeprotocol/isempty.md)
+### Inspecting a Data Frame Type
+- [var isEmpty: Bool](./isempty.md)
   A Boolean that indicates whether the data frame type is empty.
-- [var shape: (rows: Int, columns: Int)](dataframeprotocol/shape.md)
+- [var shape: (rows: Int, columns: Int)](./shape.md)
   The number or rows and columns of the data frame type.
-- [var columns: [Self.ColumnType]](dataframeprotocol/columns.md)
+- [var columns: [Self.ColumnType]](./columns.md)
   The columns of the underlying data frame.
-- [associatedtype ColumnType : AnyColumnProtocol](dataframeprotocol/columntype.md)
+- [associatedtype ColumnType : AnyColumnProtocol](./columntype.md)
   A type that conforms to the type-erased column protocol.
-- [DataFrame.Rows](dataframe/rows-swift.struct.md)
+- [DataFrame.Rows](../dataframe/rows-swift.struct.md)
   A collection of rows in a data frame.
-- [var base: DataFrame](dataframeprotocol/base.md)
+- [var base: DataFrame](./base.md)
   The underlying data frame.
 
 

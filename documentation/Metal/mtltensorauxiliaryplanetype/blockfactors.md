@@ -1,7 +1,8 @@
 # blockFactors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of data plane elements that correspond to one element in this plane.
 
@@ -17,6 +18,10 @@ The number of data plane elements that correspond to one element in this plane.
 
 ```swift
 var blockFactors: MTLTensorExtents { get }
+```
+
+```objc
+@property (readonly) MTLTensorExtents * blockFactors;
 ```
 
 

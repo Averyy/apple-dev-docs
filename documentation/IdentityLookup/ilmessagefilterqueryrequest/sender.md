@@ -1,7 +1,8 @@
 # sender
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sender of the message.
 
@@ -17,11 +18,16 @@ The sender of the message.
 var sender: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * sender;
+```
+
 ## See Also
 
-- [var messageBody: String?](ilmessagefilterqueryrequest/messagebody.md)
+### Getting Information About a Message
+- [var messageBody: String?](./messagebody.md)
   The body of a message received from an unknown sender.
-- [var receiverISOCountryCode: String?](ilmessagefilterqueryrequest/receiverisocountrycode.md)
+- [var receiverISOCountryCode: String?](./receiverisocountrycode.md)
   The ISO Country Code of the receiving phone number, in format specified by the ISO 3166-2 standard.
 
 

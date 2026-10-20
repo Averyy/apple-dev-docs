@@ -1,7 +1,8 @@
 # enforcement
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enforce code signing.
 
@@ -13,6 +14,10 @@ Enforce code signing.
 
 ```swift
 static var enforcement: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureEnforcement
 ```
 
 

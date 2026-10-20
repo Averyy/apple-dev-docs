@@ -1,21 +1,28 @@
 # urlSession(_:aggregateAssetDownloadTask:didCompleteFor:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a child task finished downloading a media selection.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use the NSURLSessionDownloadDelegate method instead, URLSession:task:didCompleteWithError:
 
 ## Declaration
 
 ```swift
 optional func urlSession(_ session: URLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, didCompleteFor mediaSelection: AVMediaSelection)
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *) aggregateAssetDownloadTask didCompleteForMediaSelection:(AVMediaSelection *) mediaSelection;
 ```
 
 ## Parameters
@@ -26,9 +33,10 @@ optional func urlSession(_ session: URLSession, aggregateAssetDownloadTask: AVAg
 
 ## See Also
 
-- [func urlSession(URLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, willDownloadTo: URL)](avassetdownloaddelegate/urlsession(_:aggregateassetdownloadtask:willdownloadto:).md)
+### Responding to aggregate download events
+- [func urlSession(URLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, willDownloadTo: URL)](./urlsession%28_,aggregateassetdownloadtask,willdownloadto%29.md)
   Tells the delegate the final location of the asset when the download completes.
-- [func urlSession(URLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, didLoad: CMTimeRange, totalTimeRangesLoaded: [NSValue], timeRangeExpectedToLoad: CMTimeRange, for: AVMediaSelection)](avassetdownloaddelegate/urlsession(_:aggregateassetdownloadtask:didload:totaltimerangesloaded:timerangeexpectedtoload:for:).md)
+- [func urlSession(URLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, didLoad: CMTimeRange, totalTimeRangesLoaded: [NSValue], timeRangeExpectedToLoad: CMTimeRange, for: AVMediaSelection)](./urlsession%28_,aggregateassetdownloadtask,didload,totaltimerangesloaded,timerangeexpectedtoload,for%29.md)
   Tells the delegate that the aggregate download task loaded a new time range.
 
 

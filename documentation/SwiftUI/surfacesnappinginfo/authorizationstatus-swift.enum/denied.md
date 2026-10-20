@@ -1,7 +1,8 @@
 # SurfaceSnappingInfo.AuthorizationStatus.denied
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user denied providing access to information about their surroundings.
 

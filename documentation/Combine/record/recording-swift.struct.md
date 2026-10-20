@@ -1,7 +1,8 @@
 # Record.Recording
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A recorded sequence of outputs, followed by a completion value.
 
@@ -23,37 +24,38 @@ struct Recording
 ## Topics
 
 ### Creating a recording
-- [init()](record/recording-swift.struct/init.md)
+- [init()](./recording-swift.struct/init%28%29.md)
   Set up a recording in a state ready to receive output.
-- [init(output: [Output], completion: Subscribers.Completion<Failure>)](record/recording-swift.struct/init(output:completion:).md)
+- [init(output: [Output], completion: Subscribers.Completion<Failure>)](./recording-swift.struct/init%28output,completion%29.md)
   Set up a complete recording with the specified output and completion.
 ### Receiving elements
-- [func receive(Record<Output, Failure>.Recording.Input)](record/recording-swift.struct/receive(_:).md)
+- [func receive(Record<Output, Failure>.Recording.Input)](./recording-swift.struct/receive%28_%29.md)
   Add an output to the recording.
 ### Receiving life cycle events
-- [func receive(completion: Subscribers.Completion<Failure>)](record/recording-swift.struct/receive(completion:).md)
+- [func receive(completion: Subscribers.Completion<Failure>)](./recording-swift.struct/receive%28completion%29.md)
   Add a completion to the recording.
 ### Encoding
-- [func encode(into: any Encoder) throws](record/recording-swift.struct/encode(into:).md)
+- [func encode(into: any Encoder) throws](./recording-swift.struct/encode%28into%29.md)
 ### Inspecting publisher properties
-- [var output: [Output]](record/recording-swift.struct/output.md)
+- [var output: [Output]](./recording-swift.struct/output.md)
   The output which will be sent to a `Subscriber`.
-- [var completion: Subscribers.Completion<Failure>](record/recording-swift.struct/completion.md)
+- [var completion: Subscribers.Completion<Failure>](./recording-swift.struct/completion.md)
   The completion which will be sent to a `Subscriber`.
 ### Declaring supporting types
-- [Record.Recording.Input](record/recording-swift.struct/input.md)
+- [Record.Recording.Input](./recording-swift.struct/input.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [let recording: Record<Output, Failure>.Recording](record/recording-swift.property.md)
+### Inspecting publisher properties
+- [let recording: Record<Output, Failure>.Recording](./recording-swift.property.md)
   The recorded output and completion.
 
 

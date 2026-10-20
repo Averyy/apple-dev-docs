@@ -1,7 +1,8 @@
 # currentPushInfo
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides the current push information for widget reloads and relevance refreshes.
 

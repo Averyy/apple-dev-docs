@@ -1,7 +1,8 @@
 # lifetime
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial lifetime of the particle in seconds.
 
@@ -12,7 +13,7 @@ The initial lifetime of the particle in seconds.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

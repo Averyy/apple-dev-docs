@@ -1,7 +1,8 @@
 # NSScroller.Style.overlay
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies overlay-style scrollers in macOS 10.7 and later.
 
@@ -14,9 +15,14 @@ Specifies overlay-style scrollers in macOS 10.7 and later.
 case overlay
 ```
 
+```c
+NSScrollerStyleOverlay
+```
+
 ## See Also
 
-- [NSScroller.Style.legacy](nsscroller/style/legacy.md)
+### Constants
+- [NSScroller.Style.legacy](./legacy.md)
   Specifies legacy-style scrollers as prior to macOS 10.7.
 
 

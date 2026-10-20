@@ -1,6 +1,7 @@
 # Displaying Apple Pay Buttons Using JavaScript
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Load and configure the JavaScript Apple Pay button.
 
@@ -62,13 +63,14 @@ The default value is `0` pixels.
 
 - **`--apple-pay-button-box-sizing`**: The box size for the Apple Pay button. The possible values are the same as the `box-sizing` CSS property.
 
-For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
+For design guidance, see [Human Interface Guidelines > Apple Pay > Buttons and Marks](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 
 ## See Also
 
-- [ApplePayButton](applepaybutton.md)
+### Apple Pay buttons
+- [ApplePayButton](./applepaybutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
-- [Displaying Apple Pay Buttons Using CSS](displaying-apple-pay-buttons-using-css.md)
+- [Displaying Apple Pay Buttons Using CSS](./displaying-apple-pay-buttons-using-css.md)
   Use CSS templates to display Apple Pay buttons in Safari.
 
 

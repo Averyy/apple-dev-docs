@@ -1,7 +1,8 @@
 # trackGroups
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The track groups an asset contains.
 
@@ -20,9 +21,11 @@ The track groups an asset contains.
 static var trackGroups: AVAsyncProperty<Root, [AVAssetTrackGroup]> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 The value is an empty array if the asset has no track groups.
 

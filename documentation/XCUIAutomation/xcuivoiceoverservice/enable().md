@@ -1,7 +1,8 @@
 # enable()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enable VoiceOver.
 
@@ -19,6 +20,10 @@ Enable VoiceOver.
 
 ```swift
 func enable() throws
+```
+
+```objc
+- (BOOL) enableAndReturnError:(NSError **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # CGConfigureDisplayMirrorOfDisplay(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Changes the configuration of a mirroring set.
 
@@ -15,6 +16,10 @@ Changes the configuration of a mirroring set.
 func CGConfigureDisplayMirrorOfDisplay(_ config: CGDisplayConfigRef?, _ display: CGDirectDisplayID, _ master: CGDirectDisplayID) -> CGError
 ```
 
+```c
+extern CGError CGConfigureDisplayMirrorOfDisplay(CGDisplayConfigRef config, CGDirectDisplayID display, CGDirectDisplayID master);
+```
+
 #### Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
@@ -25,7 +30,7 @@ Display mirroring and display matte generation are implemented either in hardwar
 
 - Hardware mirroring
 
-With hardware mirroring enabled, all drawing is directed to the primary display—see [`CGDisplayPrimaryDisplay(_:)`](cgdisplayprimarydisplay(_:).md).
+With hardware mirroring enabled, all drawing is directed to the primary display—see [`CGDisplayPrimaryDisplay(_:)`](./cgdisplayprimarydisplay%28_%29.md).
 
 If the device driver selects hardware matte generation, the display bounds and row-bytes values are adjusted to reflect the active drawable area.
 
@@ -35,45 +40,46 @@ In this form of mirroring, identical content is drawn into each display in the m
 
 Applications that draw directly to the display, as with display capture, must make sure to draw the same content to all mirrored displays in a software mirror set. When drawing to software mirrored displays using a full screen OpenGL context (not drawing through a window), you should create shared OpenGL contexts for each display and rerender for each display.
 
-You can use the function [`CGGetActiveDisplayList(_:_:_:)`](cggetactivedisplaylist(_:_:_:).md) to determine which displays are active, or drawable. This automatically gives your application the correct view of the current displays.
+You can use the function [`CGGetActiveDisplayList(_:_:_:)`](./cggetactivedisplaylist%28_,_,_%29.md) to determine which displays are active, or drawable. This automatically gives your application the correct view of the current displays.
 
 ## Parameters
 
-- `config`: A display configuration, acquired by calling [`CGBeginDisplayConfiguration(_:)`](cgbegindisplayconfiguration(_:).md).
+- `config`: A display configuration, acquired by calling [`CGBeginDisplayConfiguration(_:)`](./cgbegindisplayconfiguration%28_%29.md).
 - `display`: The identifier of the display to add to a mirroring set.
-- `master`: A display in a mirroring set, or `kCGNullDirectDisplay` to disable mirroring. To specify the main display, use [`CGMainDisplayID()`](cgmaindisplayid().md).
+- `master`: A display in a mirroring set, or `kCGNullDirectDisplay` to disable mirroring. To specify the main display, use [`CGMainDisplayID()`](./cgmaindisplayid%28%29.md).
 
 ## See Also
 
-- [func CGAcquireDisplayFadeReservation(CGDisplayReservationInterval, UnsafeMutablePointer<CGDisplayFadeReservationToken>?) -> CGError](cgacquiredisplayfadereservation(_:_:).md)
+### Functions
+- [func CGAcquireDisplayFadeReservation(CGDisplayReservationInterval, UnsafeMutablePointer<CGDisplayFadeReservationToken>?) -> CGError](./cgacquiredisplayfadereservation%28_,_%29.md)
   Reserves the fade hardware for a specified time interval.
-- [func CGAssociateMouseAndMouseCursorPosition(boolean_t) -> CGError](cgassociatemouseandmousecursorposition(_:).md)
+- [func CGAssociateMouseAndMouseCursorPosition(boolean_t) -> CGError](./cgassociatemouseandmousecursorposition%28_%29.md)
   Connects or disconnects the mouse and cursor while an application is in the foreground.
-- [func CGBeginDisplayConfiguration(UnsafeMutablePointer<CGDisplayConfigRef?>?) -> CGError](cgbegindisplayconfiguration(_:).md)
+- [func CGBeginDisplayConfiguration(UnsafeMutablePointer<CGDisplayConfigRef?>?) -> CGError](./cgbegindisplayconfiguration%28_%29.md)
   Begins a new set of display configuration changes.
-- [func CGCancelDisplayConfiguration(CGDisplayConfigRef?) -> CGError](cgcanceldisplayconfiguration(_:).md)
+- [func CGCancelDisplayConfiguration(CGDisplayConfigRef?) -> CGError](./cgcanceldisplayconfiguration%28_%29.md)
   Cancels a set of display configuration changes.
-- [func CGCaptureAllDisplays() -> CGError](cgcapturealldisplays().md)
+- [func CGCaptureAllDisplays() -> CGError](./cgcapturealldisplays%28%29.md)
   Obtains exclusive use of all active displays, preventing other applications and system services from using the display or changing its configuration.
-- [func CGCaptureAllDisplaysWithOptions(CGCaptureOptions) -> CGError](cgcapturealldisplayswithoptions(_:).md)
+- [func CGCaptureAllDisplaysWithOptions(CGCaptureOptions) -> CGError](./cgcapturealldisplayswithoptions%28_%29.md)
   Captures all attached displays, using the specified options.
-- [func CGCompleteDisplayConfiguration(CGDisplayConfigRef?, CGConfigureOption) -> CGError](cgcompletedisplayconfiguration(_:_:).md)
+- [func CGCompleteDisplayConfiguration(CGDisplayConfigRef?, CGConfigureOption) -> CGError](./cgcompletedisplayconfiguration%28_,_%29.md)
   Completes a set of display configuration changes.
-- [func CGConfigureDisplayFadeEffect(CGDisplayConfigRef?, CGDisplayFadeInterval, CGDisplayFadeInterval, Float, Float, Float) -> CGError](cgconfiguredisplayfadeeffect(_:_:_:_:_:_:).md)
+- [func CGConfigureDisplayFadeEffect(CGDisplayConfigRef?, CGDisplayFadeInterval, CGDisplayFadeInterval, Float, Float, Float) -> CGError](./cgconfiguredisplayfadeeffect%28_,_,_,_,_,_%29.md)
   Modifies the settings of the built-in fade effect that occurs during a display configuration.
-- [func CGConfigureDisplayMode(CGDisplayConfigRef?, CGDirectDisplayID, CFDictionary?) -> CGError](cgconfiguredisplaymode(_:_:_:).md)
+- [func CGConfigureDisplayMode(CGDisplayConfigRef?, CGDirectDisplayID, CFDictionary?) -> CGError](./cgconfiguredisplaymode%28_,_,_%29.md)
   Configures the display mode of a display.
-- [func CGConfigureDisplayOrigin(CGDisplayConfigRef?, CGDirectDisplayID, Int32, Int32) -> CGError](cgconfiguredisplayorigin(_:_:_:_:).md)
+- [func CGConfigureDisplayOrigin(CGDisplayConfigRef?, CGDirectDisplayID, Int32, Int32) -> CGError](./cgconfiguredisplayorigin%28_,_,_,_%29.md)
   Configures the origin of a display relative to the global display coordinate space.
-- [func CGConfigureDisplayStereoOperation(CGDisplayConfigRef?, CGDirectDisplayID, boolean_t, boolean_t) -> CGError](cgconfiguredisplaystereooperation(_:_:_:_:).md)
+- [func CGConfigureDisplayStereoOperation(CGDisplayConfigRef?, CGDirectDisplayID, boolean_t, boolean_t) -> CGError](./cgconfiguredisplaystereooperation%28_,_,_,_%29.md)
   Enables or disables stereo operation for a display, as part of a display configuration.
-- [func CGConfigureDisplayWithDisplayMode(CGDisplayConfigRef?, CGDirectDisplayID, CGDisplayMode?, CFDictionary?) -> CGError](cgconfiguredisplaywithdisplaymode(_:_:_:_:).md)
+- [func CGConfigureDisplayWithDisplayMode(CGDisplayConfigRef?, CGDirectDisplayID, CGDisplayMode?, CFDictionary?) -> CGError](./cgconfiguredisplaywithdisplaymode%28_,_,_,_%29.md)
   Configures the display mode of a display.
-- [func CGCursorIsDrawnInFramebuffer() -> boolean_t](cgcursorisdrawninframebuffer().md)
+- [func CGCursorIsDrawnInFramebuffer() -> boolean_t](./cgcursorisdrawninframebuffer%28%29.md)
   Returns a Boolean value indicating whether the mouse cursor is drawn in framebuffer memory.
-- [func CGCursorIsVisible() -> boolean_t](cgcursorisvisible().md)
+- [func CGCursorIsVisible() -> boolean_t](./cgcursorisvisible%28%29.md)
   Returns a Boolean value indicating whether the mouse cursor is visible.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](cgdirectdisplaycopycurrentmetaldevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](./cgdirectdisplaycopycurrentmetaldevice%28_%29.md)
   Returns the GPU device instance that’s currently driving a display.
 
 

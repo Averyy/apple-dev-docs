@@ -1,7 +1,8 @@
 # playbackCoordinator(_:identifierFor:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an identifier for a player item.
 
@@ -17,6 +18,10 @@ Returns an identifier for a player item.
 
 ```swift
 optional func playbackCoordinator(_ coordinator: AVPlayerPlaybackCoordinator, identifierFor playerItem: AVPlayerItem) -> String
+```
+
+```objc
+- (NSString *) playbackCoordinator:(AVPlayerPlaybackCoordinator *) coordinator identifierForPlayerItem:(AVPlayerItem *) playerItem;
 ```
 
 #### Return Value

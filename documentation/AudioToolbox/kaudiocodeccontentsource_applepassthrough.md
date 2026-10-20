@@ -1,20 +1,25 @@
 # kAudioCodecContentSource_ApplePassthrough
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioCodecContentSource_ApplePassthrough: Int32 { get }
+```
+
+```c
+kAudioCodecContentSource_ApplePassthrough
 ```
 
 

@@ -1,6 +1,7 @@
 # Using Imported C Macros in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use imported C-defined macros as constants.
 
@@ -34,9 +35,10 @@ C macros that are more complex than simple constant definitions have no counterp
 
 ## See Also
 
-- [Using Imported C Structs and Unions in Swift](using-imported-c-structs-and-unions-in-swift.md)
+### C APIs
+- [Using Imported C Structs and Unions in Swift](./using-imported-c-structs-and-unions-in-swift.md)
   Learn how Swift represents imported C structures and unions, including types with bitfields and unnamed fields.
-- [Using Imported C Functions in Swift](using-imported-c-functions-in-swift.md)
+- [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
   Learn how to call imported functions that are declared in a C header.
 
 

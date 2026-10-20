@@ -1,7 +1,8 @@
 # givenName
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact’s given name.
 
@@ -11,21 +12,22 @@ The contact’s given name.
 
 ## Declaration
 
-```swift
+```
 DOMString givenName;
 ```
 
 ## See Also
 
-- [phoneNumber](applepaypaymentcontact/phonenumber.md)
+### Contact properties
+- [phoneNumber](./phonenumber.md)
   A phone number for the contact.
-- [emailAddress](applepaypaymentcontact/emailaddress.md)
+- [emailAddress](./emailaddress.md)
   An email address for the contact.
-- [familyName](applepaypaymentcontact/familyname.md)
+- [familyName](./familyname.md)
   The contact’s family name.
-- [phoneticGivenName](applepaypaymentcontact/phoneticgivenname.md)
+- [phoneticGivenName](./phoneticgivenname.md)
   The phonetic spelling of the contact’s given name.
-- [phoneticFamilyName](applepaypaymentcontact/phoneticfamilyname.md)
+- [phoneticFamilyName](./phoneticfamilyname.md)
   The phonetic spelling of the contact’s family name.
 
 

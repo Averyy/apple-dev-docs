@@ -1,7 +1,8 @@
 # SortDirection
 
 **Framework**: CKTool JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that indicates sorting direction when applying a custom sort.
 
@@ -10,7 +11,7 @@ An enumeration that indicates sorting direction when applying a custom sort.
 
 ## Declaration
 
-```swift
+```
 interface SortDirection {
 	const string ASC;
 	const string DESC;
@@ -26,18 +27,19 @@ import { SortDirection } from "@apple/cktool.database";
 ## Topics
 
 ### Enumeration Cases
-- [ASC](sortdirection/asc.md)
-- [DESC](sortdirection/desc.md)
+- [ASC](./sortdirection/asc.md)
+- [DESC](./sortdirection/desc.md)
 
 ## See Also
 
-- [Container](container.md)
+### Global Structures and Enumerations
+- [Container](./container.md)
   Details about a CloudKit container.
-- [ContainersResponse](containersresponse.md)
+- [ContainersResponse](./containersresponse.md)
   An object that represents results of fetching multiple CloudKit containers.
-- [CKEnvironment](ckenvironment.md)
+- [CKEnvironment](./ckenvironment.md)
   An enumeration of container environments.
-- [ContainersSortByField](containerssortbyfield.md)
+- [ContainersSortByField](./containerssortbyfield.md)
   An enumeration that indicates sorting options for retrieved containers.
 
 

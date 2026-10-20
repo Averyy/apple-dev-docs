@@ -1,7 +1,8 @@
 # GCDualSenseAdaptiveTrigger.Mode.vibration
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Vibrates when the user depresses the trigger equal to, or greater than, the start position.
 
@@ -19,15 +20,20 @@ Vibrates when the user depresses the trigger equal to, or greater than, the star
 case vibration
 ```
 
+```c
+GCDualSenseAdaptiveTriggerModeVibration
+```
+
 ## See Also
 
-- [GCDualSenseAdaptiveTrigger.Mode.off](gcdualsenseadaptivetrigger/mode-swift.enum/off.md)
+### Modes
+- [GCDualSenseAdaptiveTrigger.Mode.off](./off.md)
   Provides no adaptive trigger effects.
-- [GCDualSenseAdaptiveTrigger.Mode.feedback](gcdualsenseadaptivetrigger/mode-swift.enum/feedback.md)
+- [GCDualSenseAdaptiveTrigger.Mode.feedback](./feedback.md)
   Provides feedback when the user depresses the trigger equal to, or greater than, the start position.
-- [GCDualSenseAdaptiveTrigger.Mode.weapon](gcdualsenseadaptivetrigger/mode-swift.enum/weapon.md)
+- [GCDualSenseAdaptiveTrigger.Mode.weapon](./weapon.md)
   Provides feedback when the user depresses the trigger between the start and the end positions.
-- [GCDualSenseAdaptiveTrigger.Mode.slopeFeedback](gcdualsenseadaptivetrigger/mode-swift.enum/slopefeedback.md)
+- [GCDualSenseAdaptiveTrigger.Mode.slopeFeedback](./slopefeedback.md)
   Provides feedback when the user tilts the trigger between the start and the end positions.
 
 

@@ -1,7 +1,8 @@
 # MTRFormaldehydeConcentrationMeasurementFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 struct MTRFormaldehydeConcentrationMeasurementFeature
 ```
 
+```c
+enum MTRFormaldehydeConcentrationMeasurementFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrformaldehydeconcentrationmeasurementfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrformaldehydeconcentrationmeasurementfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var averageMeasurement: MTRFormaldehydeConcentrationMeasurementFeature](mtrformaldehydeconcentrationmeasurementfeature/averagemeasurement.md)
-- [static var criticalLevel: MTRFormaldehydeConcentrationMeasurementFeature](mtrformaldehydeconcentrationmeasurementfeature/criticallevel.md)
-- [static var levelIndication: MTRFormaldehydeConcentrationMeasurementFeature](mtrformaldehydeconcentrationmeasurementfeature/levelindication.md)
-- [static var mediumLevel: MTRFormaldehydeConcentrationMeasurementFeature](mtrformaldehydeconcentrationmeasurementfeature/mediumlevel.md)
-- [static var numericMeasurement: MTRFormaldehydeConcentrationMeasurementFeature](mtrformaldehydeconcentrationmeasurementfeature/numericmeasurement.md)
-- [static var peakMeasurement: MTRFormaldehydeConcentrationMeasurementFeature](mtrformaldehydeconcentrationmeasurementfeature/peakmeasurement.md)
+- [static var averageMeasurement: MTRFormaldehydeConcentrationMeasurementFeature](./mtrformaldehydeconcentrationmeasurementfeature/averagemeasurement.md)
+- [static var criticalLevel: MTRFormaldehydeConcentrationMeasurementFeature](./mtrformaldehydeconcentrationmeasurementfeature/criticallevel.md)
+- [static var levelIndication: MTRFormaldehydeConcentrationMeasurementFeature](./mtrformaldehydeconcentrationmeasurementfeature/levelindication.md)
+- [static var mediumLevel: MTRFormaldehydeConcentrationMeasurementFeature](./mtrformaldehydeconcentrationmeasurementfeature/mediumlevel.md)
+- [static var numericMeasurement: MTRFormaldehydeConcentrationMeasurementFeature](./mtrformaldehydeconcentrationmeasurementfeature/numericmeasurement.md)
+- [static var peakMeasurement: MTRFormaldehydeConcentrationMeasurementFeature](./mtrformaldehydeconcentrationmeasurementfeature/peakmeasurement.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # XMLParser.ErrorCode.entityRefAtEOFError
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Target of entity reference is not found.
 
@@ -20,37 +21,42 @@ Target of entity reference is not found.
 case entityRefAtEOFError
 ```
 
+```c
+NSXMLParserEntityRefAtEOFError
+```
+
 ## See Also
 
-- [XMLParser.ErrorCode.internalError](xmlparser/errorcode/internalerror.md)
+### Constants
+- [XMLParser.ErrorCode.internalError](./internalerror.md)
   The parser object encountered an internal error.
-- [XMLParser.ErrorCode.outOfMemoryError](xmlparser/errorcode/outofmemoryerror.md)
+- [XMLParser.ErrorCode.outOfMemoryError](./outofmemoryerror.md)
   The parser object ran out of memory.
-- [XMLParser.ErrorCode.documentStartError](xmlparser/errorcode/documentstarterror.md)
+- [XMLParser.ErrorCode.documentStartError](./documentstarterror.md)
   The parser object is unable to start parsing.
-- [XMLParser.ErrorCode.emptyDocumentError](xmlparser/errorcode/emptydocumenterror.md)
+- [XMLParser.ErrorCode.emptyDocumentError](./emptydocumenterror.md)
   The document is empty.
-- [XMLParser.ErrorCode.prematureDocumentEndError](xmlparser/errorcode/prematuredocumentenderror.md)
+- [XMLParser.ErrorCode.prematureDocumentEndError](./prematuredocumentenderror.md)
   The document ended unexpectedly.
-- [XMLParser.ErrorCode.invalidHexCharacterRefError](xmlparser/errorcode/invalidhexcharacterreferror.md)
+- [XMLParser.ErrorCode.invalidHexCharacterRefError](./invalidhexcharacterreferror.md)
   Invalid hexadecimal character reference encountered.
-- [XMLParser.ErrorCode.invalidDecimalCharacterRefError](xmlparser/errorcode/invaliddecimalcharacterreferror.md)
+- [XMLParser.ErrorCode.invalidDecimalCharacterRefError](./invaliddecimalcharacterreferror.md)
   Invalid decimal character reference encountered.
-- [XMLParser.ErrorCode.invalidCharacterRefError](xmlparser/errorcode/invalidcharacterreferror.md)
+- [XMLParser.ErrorCode.invalidCharacterRefError](./invalidcharacterreferror.md)
   Invalid character reference encountered.
-- [XMLParser.ErrorCode.invalidCharacterError](xmlparser/errorcode/invalidcharactererror.md)
+- [XMLParser.ErrorCode.invalidCharacterError](./invalidcharactererror.md)
   Invalid character encountered.
-- [XMLParser.ErrorCode.characterRefAtEOFError](xmlparser/errorcode/characterrefateoferror.md)
+- [XMLParser.ErrorCode.characterRefAtEOFError](./characterrefateoferror.md)
   Target of character reference cannot be found.
-- [XMLParser.ErrorCode.characterRefInPrologError](xmlparser/errorcode/characterrefinprologerror.md)
+- [XMLParser.ErrorCode.characterRefInPrologError](./characterrefinprologerror.md)
   Invalid character found in the prolog.
-- [XMLParser.ErrorCode.characterRefInEpilogError](xmlparser/errorcode/characterrefinepilogerror.md)
+- [XMLParser.ErrorCode.characterRefInEpilogError](./characterrefinepilogerror.md)
   Invalid character found in the epilog.
-- [XMLParser.ErrorCode.characterRefInDTDError](xmlparser/errorcode/characterrefindtderror.md)
+- [XMLParser.ErrorCode.characterRefInDTDError](./characterrefindtderror.md)
   Invalid character encountered in the DTD.
-- [XMLParser.ErrorCode.entityRefInPrologError](xmlparser/errorcode/entityrefinprologerror.md)
+- [XMLParser.ErrorCode.entityRefInPrologError](./entityrefinprologerror.md)
   Invalid entity reference found in the prolog.
-- [XMLParser.ErrorCode.entityRefInEpilogError](xmlparser/errorcode/entityrefinepilogerror.md)
+- [XMLParser.ErrorCode.entityRefInEpilogError](./entityrefinepilogerror.md)
   Invalid entity reference found in the epilog.
 
 

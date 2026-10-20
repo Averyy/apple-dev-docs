@@ -1,7 +1,8 @@
 # defaultWritingDirection(forLanguage:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default writing direction for the specified language.
 
@@ -14,6 +15,10 @@ Returns the default writing direction for the specified language.
 class func defaultWritingDirection(forLanguage languageName: String?) -> NSWritingDirection
 ```
 
+```objc
++ (NSWritingDirection) defaultWritingDirectionForLanguage:(NSString *) languageName;
+```
+
 #### Return Value
 
 The default writing direction.
@@ -24,9 +29,10 @@ The default writing direction.
 
 ## See Also
 
-- [var baseWritingDirection: NSWritingDirection](nsparagraphstyle/basewritingdirection.md)
+### Determining writing direction
+- [var baseWritingDirection: NSWritingDirection](./basewritingdirection.md)
   The base writing direction for the paragraph.
-- [enum NSWritingDirection](nswritingdirection.md)
+- [enum NSWritingDirection](../nswritingdirection.md)
   Constants that specify the writing direction.
 
 

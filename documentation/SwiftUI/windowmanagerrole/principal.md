@@ -1,7 +1,8 @@
 # principal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The principal role. Windows derived from this scene will show in full screen, if enabled, or in Stage Manager.
 

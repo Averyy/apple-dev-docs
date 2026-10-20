@@ -1,7 +1,8 @@
 # removeData(ofTypes:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified types of website data from one or more data records.
 
@@ -15,7 +16,15 @@ Removes the specified types of website data from one or more data records.
 ## Declaration
 
 ```swift
+func removeData(ofTypes dataTypes: Set<String>, for dataRecords: [WKWebsiteDataRecord], completionHandler: @escaping @MainActor @Sendable () -> Void)
+```
+
+```swift
 func removeData(ofTypes dataTypes: Set<String>, for dataRecords: [WKWebsiteDataRecord]) async
+```
+
+```objc
+- (void) removeDataOfTypes:(NSSet<NSString *> *) dataTypes forDataRecords:(NSArray<WKWebsiteDataRecord *> *) dataRecords completionHandler:(void (^)(void)) completionHandler;
 ```
 
 ## Parameters
@@ -26,7 +35,8 @@ func removeData(ofTypes dataTypes: Set<String>, for dataRecords: [WKWebsiteDataR
 
 ## See Also
 
-- [func removeData(ofTypes: Set<String>, modifiedSince: Date, completionHandler: () -> Void)](wkwebsitedatastore/removedata(oftypes:modifiedsince:completionhandler:).md)
+### Removing specific types of data
+- [func removeData(ofTypes: Set<String>, modifiedSince: Date, completionHandler: () -> Void)](./removedata%28oftypes,modifiedsince,completionhandler%29.md)
   Removes website data that changed after the specified date.
 
 

@@ -1,7 +1,8 @@
 # accelerationStructureIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the acceleration structure to use for the instance.
 
@@ -19,13 +20,18 @@ The index of the acceleration structure to use for the instance.
 var accelerationStructureIndex: UInt32
 ```
 
+```c
+uint32_t accelerationStructureIndex;
+```
+
 #### Discussion
 
-This index refers to a bottom-level instance in the [`instancedAccelerationStructures`](mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md) of the [`MTLInstanceAccelerationStructureDescriptor`](mtlinstanceaccelerationstructuredescriptor.md) that you use to create the new instance acceleration structure.
+This index refers to a bottom-level instance in the [`instancedAccelerationStructures`](../mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md) of the [`MTLInstanceAccelerationStructureDescriptor`](../mtlinstanceaccelerationstructuredescriptor.md) that you use to create the new instance acceleration structure.
 
 ## See Also
 
-- [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md)
+### Related Documentation
+- [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](../mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md)
   The bottom-level acceleration structures that instances use in the instance acceleration structure .
 
 

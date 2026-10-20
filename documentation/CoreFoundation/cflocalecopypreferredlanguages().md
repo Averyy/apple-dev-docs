@@ -1,7 +1,8 @@
 # CFLocaleCopyPreferredLanguages()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the array of canonicalized language IDs that the user prefers.
 
@@ -20,9 +21,13 @@ Returns the array of canonicalized language IDs that the user prefers.
 func CFLocaleCopyPreferredLanguages() -> CFArray!
 ```
 
+```c
+extern CFArrayRefCFLocaleCopyPreferredLanguages();
+```
+
 #### Return Value
 
-The array of canonicalized `CFString` language IDs that the current user prefers. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The array of canonicalized `CFString` language IDs that the current user prefers. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 
 ---

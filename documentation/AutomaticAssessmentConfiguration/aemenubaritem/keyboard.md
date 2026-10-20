@@ -1,7 +1,8 @@
 # keyboard
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Input Menu system menu bar item, which selects keyboard layouts.
 
@@ -13,6 +14,10 @@ The Input Menu system menu bar item, which selects keyboard layouts.
 
 ```swift
 static let keyboard: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemKeyboard;
 ```
 
 

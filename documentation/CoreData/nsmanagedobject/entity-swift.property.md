@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity description of the managed object.
 
@@ -10,7 +11,7 @@ The entity description of the managed object.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The entity description of the managed object.
 var entity: NSEntityDescription { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSEntityDescription * entity;
+```
+
 #### Discussion
 
 If the receiver is a fault, accessing this property does not cause it to fire.
 
 ## See Also
 
-- [var objectID: NSManagedObjectID](nsmanagedobject/objectid.md)
+### Getting a Managed Object’s Identity
+- [var objectID: NSManagedObjectID](./objectid.md)
   The object ID of the managed object.
-- [class func entity() -> NSEntityDescription](nsmanagedobject/entity.md)
+- [class func entity() -> NSEntityDescription](./entity%28%29.md)
   Returns the entity description that is associated with this subclass.
 
 

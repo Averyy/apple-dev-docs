@@ -1,7 +1,8 @@
 # first_max_ms
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum number of milliseconds that can passbefore the first progress notification is sent. This value is advisory,in that the notification will be triggered at some point after `first_max_ms` millisecondshave passed since the query began accumulating results. This valueis used only during the initial result-gathering phase of a query.
 
@@ -13,6 +14,10 @@ The maximum number of milliseconds that can passbefore the first progress notifi
 
 ```swift
 var first_max_ms: Int
+```
+
+```c
+size_t first_max_ms;
 ```
 
 

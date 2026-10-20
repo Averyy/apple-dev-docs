@@ -1,7 +1,8 @@
 # aeBuildSyntaxUncoercedDoubleAt
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 You must coerce a “@@” substitution.
 

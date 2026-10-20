@@ -1,7 +1,8 @@
 # com.apple.developer.group-session
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may implement shared group experiences.
 
@@ -12,9 +13,12 @@ A Boolean value that indicates whether the app may implement shared group experi
 - tvOS 15.0+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `com.apple.developer.group-session` (Group Activities)
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `YES`
 
@@ -22,7 +26,7 @@ A Boolean value that indicates whether the app may implement shared group experi
 
 To add this entitlement to your app, enable the Group Activities capability in Xcode. This entitlement applies only to apps.
 
-Use this entitlement to create group experiences with the [`Group Activities`](https://developer.apple.com/documentation/groupactivities) framework.
+Use this entitlement to create group experiences with the [Group Activities](../../GroupActivities/GroupActivities.md) framework.
 
 
 ---

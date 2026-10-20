@@ -1,7 +1,8 @@
 # allowsUltraConstrainedNetworkAccess
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a connection created with this request is allowed to use network interfaces which have been marked as ultra constrained.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether a connection created with this request is
 
 ```swift
 var allowsUltraConstrainedNetworkAccess: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL allowsUltraConstrainedNetworkAccess;
 ```
 
 

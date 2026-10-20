@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A collection of buffers that make up the whole of the type conforming to a data protocol.
@@ -23,7 +24,8 @@ var regions: Self.Regions { get }
 
 ## See Also
 
-- [associatedtype Regions : BidirectionalCollection](dataprotocol/regions-swift.associatedtype.md)
+### Accessing Backing Storage
+- [associatedtype Regions : BidirectionalCollection](./regions-swift.associatedtype.md)
   A type that represents a collection of contiguous parts that make up the type conforming to a data protocol.
 
 

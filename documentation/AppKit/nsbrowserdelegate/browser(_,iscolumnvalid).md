@@ -1,12 +1,13 @@
 # browser(_:isColumnValid:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the contents of the specified column are valid.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Returns whether the contents of the specified column are valid.
 optional func browser(_ sender: NSBrowser, isColumnValid column: Int) -> Bool
 ```
 
+```objc
+- (BOOL) browser:(NSBrowser *) sender isColumnValid:(NSInteger) column;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the column’s contents are valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If [`false`](https://developer.apple.com/documentation/swift/false) is returned, `sender` reloads the column.
+[`true`](../../Swift/true.md) if the column’s contents are valid; otherwise, [`false`](../../Swift/false.md). If [`false`](../../Swift/false.md) is returned, `sender` reloads the column.
 
 #### Discussion
 
-This method is invoked in response to the [`validateVisibleColumns()`](nsbrowser/validatevisiblecolumns().md)method of [`NSBrowser`](nsbrowser.md) being sent to `sender`.
+This method is invoked in response to the [`validateVisibleColumns()`](../nsbrowser/validatevisiblecolumns%28%29.md)method of [`NSBrowser`](../nsbrowser.md) being sent to `sender`.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ This method is invoked in response to the [`validateVisibleColumns()`](nsbrowser
 
 ## See Also
 
-- [func browser(NSBrowser, numberOfRowsInColumn: Int) -> Int](nsbrowserdelegate/browser(_:numberofrowsincolumn:).md)
+### Getting Browser Information
+- [func browser(NSBrowser, numberOfRowsInColumn: Int) -> Int](./browser%28_,numberofrowsincolumn%29.md)
   Returns the number of rows of data in the specified column.
-- [func browser(NSBrowser, numberOfChildrenOfItem: Any?) -> Int](nsbrowserdelegate/browser(_:numberofchildrenofitem:).md)
+- [func browser(NSBrowser, numberOfChildrenOfItem: Any?) -> Int](./browser%28_,numberofchildrenofitem%29.md)
   Asks the delegate for the number of children the given item has.
-- [func browser(NSBrowser, titleOfColumn: Int) -> String?](nsbrowserdelegate/browser(_:titleofcolumn:).md)
+- [func browser(NSBrowser, titleOfColumn: Int) -> String?](./browser%28_,titleofcolumn%29.md)
   Asks the delegate for the title to display above the specified column.
 
 

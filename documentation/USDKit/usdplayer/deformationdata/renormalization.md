@@ -1,7 +1,8 @@
 # renormalization
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Renormalization data.
 

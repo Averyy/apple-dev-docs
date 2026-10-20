@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if shapes and element data type are the same as the input shaped type.
 
@@ -17,6 +18,10 @@ Checks if shapes and element data type are the same as the input shaped type.
 
 ```swift
 func isEqual(to object: MPSGraphShapedType?) -> Bool
+```
+
+```objc
+- (BOOL) isEqualTo:(MPSGraphShapedType *) object;
 ```
 
 #### Return Value

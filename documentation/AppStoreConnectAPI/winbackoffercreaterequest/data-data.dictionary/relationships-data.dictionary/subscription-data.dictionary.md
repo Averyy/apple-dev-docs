@@ -1,7 +1,8 @@
 # WinBackOfferCreateRequest.Data.Relationships.Subscription
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object WinBackOfferCreateRequest.Data.Relationships.Subscription
 ```
 
 ## Topics
 
 ### Objects
-- [object WinBackOfferCreateRequest.Data.Relationships.Subscription.Data](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+- [object WinBackOfferCreateRequest.Data.Relationships.Subscription.Data](./subscription-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object WinBackOfferCreateRequest.Data.Relationships.Subscription
 
 ## See Also
 
-- [object WinBackOfferCreateRequest.Data.Relationships.Prices](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary.md)
+### Objects
+- [object WinBackOfferCreateRequest.Data.Relationships.Prices](./prices-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

@@ -1,7 +1,8 @@
 # leading(increase:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Constant line height based on point size and a fixed increase.
 

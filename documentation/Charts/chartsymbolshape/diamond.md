@@ -1,7 +1,8 @@
 # diamond
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Diamond symbol.
 
@@ -19,6 +20,8 @@ Diamond symbol.
 ```swift
 static var diamond: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

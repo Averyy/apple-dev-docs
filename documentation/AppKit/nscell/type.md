@@ -1,12 +1,13 @@
 # type
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,29 @@ The type of the cell.
 var type: NSCell.CellType { get set }
 ```
 
+```objc
+@property NSCellType type;
+```
+
 #### Discussion
 
-When you change the cell type to [`NSCell.CellType.textCellType`](nscell/celltype/textcelltype.md), the cell converts gives itself a default title and sets the font to the system font at the default size. When you change the cell type to [`NSCell.CellType.imageCellType`](nscell/celltype/imagecelltype.md), the cell type does not change until you assign a new non-`nil` image to it.
+When you change the cell type to [`NSCell.CellType.textCellType`](./celltype/textcelltype.md), the cell converts gives itself a default title and sets the font to the system font at the default size. When you change the cell type to [`NSCell.CellType.imageCellType`](./celltype/imagecelltype.md), the cell type does not change until you assign a new non-`nil` image to it.
 
-For a list of possible cell types, see [`NSCell.CellType`](nscell/celltype.md).
+For a list of possible cell types, see [`NSCell.CellType`](./celltype.md).
 
 ## See Also
 
-- [var image: NSImage?](nscell/image.md)
+### Related Documentation
+- [var image: NSImage?](./image.md)
   The image displayed by the cell, if any.
-- [func setCellAttribute(NSCell.Attribute, to: Int)](nscell/setcellattribute(_:to:).md)
+### Managing Cell Attributes
+- [func setCellAttribute(NSCell.Attribute, to: Int)](./setcellattribute%28_,to%29.md)
   Sets the value for the specified cell attribute.
-- [func cellAttribute(NSCell.Attribute) -> Int](nscell/cellattribute(_:).md)
+- [func cellAttribute(NSCell.Attribute) -> Int](./cellattribute%28_%29.md)
   Returns the value for the specified cell attribute.
-- [var isEnabled: Bool](nscell/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the cell is currently enabled.
-- [var allowsUndo: Bool](nscell/allowsundo.md)
+- [var allowsUndo: Bool](./allowsundo.md)
   A Boolean value indicating whether the cell assumes responsibility for undo operations.
 
 

@@ -1,7 +1,8 @@
 # TextComponent.EdgeInsets
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,14 @@
 - visionOS 1.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+typealias EdgeInsets = UIEdgeInsets
+```
+
+*macOS*
 
 ```swift
 typealias EdgeInsets = NSEdgeInsets

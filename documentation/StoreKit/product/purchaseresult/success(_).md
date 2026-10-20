@@ -1,7 +1,8 @@
 # Product.PurchaseResult.success(_:)
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The purchase succeeded and results in a transaction.
 
@@ -22,13 +23,14 @@ case success(VerificationResult<Transaction>)
 
 ## Mentions
 
-- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+- [Testing Ask to Buy in Xcode](../../testing-ask-to-buy-in-xcode.md)
 
 ## See Also
 
-- [Product.PurchaseResult.userCancelled](product/purchaseresult/usercancelled.md)
+### Getting the Purchase Results
+- [Product.PurchaseResult.userCancelled](./usercancelled.md)
   The user canceled the purchase.
-- [Product.PurchaseResult.pending](product/purchaseresult/pending.md)
+- [Product.PurchaseResult.pending](./pending.md)
   The purchase is pending, and requires action from the customer.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Network Extension  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A localized string that the system UI uses for annotation of the Wi-Fi network.
@@ -20,9 +21,9 @@ var localizedDisplayName: String { get }
 
 #### Discussion
 
-The framework uses this property only if the evaluation provider responds to the [`NEHotspotHelperCommandType.filterScanList`](nehotspothelpercommandtype/filterscanlist.md) command with a [`NEHotspotHelperResult.success`](nehotspothelperresult/success.md) result, and the network list contains the Wi-Fi network.
+The framework uses this property only if the evaluation provider responds to the [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md) command with a [`NEHotspotHelperResult.success`](../nehotspothelperresult/success.md) result, and the network list contains the Wi-Fi network.
 
-If the framework doesn’t use your provider for hotspot evaluation and the hotspot manager’s [`evaluatedSSIDs`](nehotspotmanager/evaluatedssids.md) property contains valid SSIDs, it uses a system-defined localized string instead of this property.
+If the framework doesn’t use your provider for hotspot evaluation and the hotspot manager’s [`evaluatedSSIDs`](../nehotspotmanager/evaluatedssids.md) property contains valid SSIDs, it uses a system-defined localized string instead of this property.
 
 
 ---

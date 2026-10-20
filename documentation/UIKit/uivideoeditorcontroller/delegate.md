@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video editor’s delegate object.
 
@@ -17,13 +18,18 @@ The video editor’s delegate object.
 unowned(unsafe) var delegate: (any UINavigationControllerDelegate & UIVideoEditorControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) id<UINavigationControllerDelegate,UIVideoEditorControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate receives a notification when the system has finished saving an edited movie or when the user cancels the video editor. The delegate also decides when to dismiss the editor interface, so you must provide a delegate to use a video editor. If this property is `nil`, the editor is dismissed immediately if you try to show it. The delegate protocol is described in [`UIVideoEditorControllerDelegate`](uivideoeditorcontrollerdelegate.md).
+The delegate receives a notification when the system has finished saving an edited movie or when the user cancels the video editor. The delegate also decides when to dismiss the editor interface, so you must provide a delegate to use a video editor. If this property is `nil`, the editor is dismissed immediately if you try to show it. The delegate protocol is described in [`UIVideoEditorControllerDelegate`](../uivideoeditorcontrollerdelegate.md).
 
 ## See Also
 
-- [protocol UIVideoEditorControllerDelegate](uivideoeditorcontrollerdelegate.md)
+### Managing changes to the video
+- [protocol UIVideoEditorControllerDelegate](../uivideoeditorcontrollerdelegate.md)
   A set of methods that your delegate object must implement to respond to the video editor.
 
 

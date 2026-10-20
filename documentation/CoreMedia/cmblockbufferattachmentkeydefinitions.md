@@ -1,7 +1,8 @@
 # CMBlockBufferAttachmentKeyDefinitions
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for block buffer attachment keys.
 
@@ -23,7 +24,7 @@ enum CMBlockBufferAttachmentKeyDefinitions
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentKeyDefinitions](../corevideo/cvattachmentkeydefinitions.md)
+- [CVAttachmentKeyDefinitions](../CoreVideo/cvattachmentkeydefinitions.md)
 
 
 ---

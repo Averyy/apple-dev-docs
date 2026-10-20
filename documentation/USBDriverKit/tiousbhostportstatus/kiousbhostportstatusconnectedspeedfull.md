@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusConnectedSpeedFull
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A port with a full-speed device connected to it.
 
@@ -10,41 +11,42 @@ A port with a full-speed device connected to it.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusConnectedSpeedFull
 ```
 
 ## See Also
 
-- [kIOUSBHostPortStatusPortTypeMask](tiousbhostportstatus/kiousbhostportstatusporttypemask.md)
+### Getting the Port Status Flags
+- [kIOUSBHostPortStatusPortTypeMask](./kiousbhostportstatusporttypemask.md)
   A mask for isolating the port bits.
-- [kIOUSBHostPortStatusPortTypePhase](tiousbhostportstatus/kiousbhostportstatusporttypephase.md)
+- [kIOUSBHostPortStatusPortTypePhase](./kiousbhostportstatusporttypephase.md)
   The starting phase for port types.
-- [kIOUSBHostPortStatusPortTypeStandard](tiousbhostportstatus/kiousbhostportstatusporttypestandard.md)
+- [kIOUSBHostPortStatusPortTypeStandard](./kiousbhostportstatusporttypestandard.md)
   A general-purpose USB port.
-- [kIOUSBHostPortStatusPortTypeCaptive](tiousbhostportstatus/kiousbhostportstatusporttypecaptive.md)
+- [kIOUSBHostPortStatusPortTypeCaptive](./kiousbhostportstatusporttypecaptive.md)
   A device that cannot be physically disconnected from the port.
-- [kIOUSBHostPortStatusPortTypeInternal](tiousbhostportstatus/kiousbhostportstatusporttypeinternal.md)
+- [kIOUSBHostPortStatusPortTypeInternal](./kiousbhostportstatusporttypeinternal.md)
   A device that cannot be physically disconnected from the host machine.
-- [kIOUSBHostPortStatusPortTypeAccessory](tiousbhostportstatus/kiousbhostportstatusporttypeaccessory.md)
+- [kIOUSBHostPortStatusPortTypeAccessory](./kiousbhostportstatusporttypeaccessory.md)
   A device that might require authentication before drivers can access it.
-- [kIOUSBHostPortStatusPortTypeReserved](tiousbhostportstatus/kiousbhostportstatusporttypereserved.md)
+- [kIOUSBHostPortStatusPortTypeReserved](./kiousbhostportstatusporttypereserved.md)
   A mask for isolating reserved port types.
-- [kIOUSBHostPortStatusConnectedSpeedMask](tiousbhostportstatus/kiousbhostportstatusconnectedspeedmask.md)
+- [kIOUSBHostPortStatusConnectedSpeedMask](./kiousbhostportstatusconnectedspeedmask.md)
   A mask for isolating the connection state bits.
-- [kIOUSBHostPortStatusConnectedSpeedPhase](tiousbhostportstatus/kiousbhostportstatusconnectedspeedphase.md)
+- [kIOUSBHostPortStatusConnectedSpeedPhase](./kiousbhostportstatusconnectedspeedphase.md)
   The initial phase for connected state bits.
-- [kIOUSBHostPortStatusConnectedSpeedNone](tiousbhostportstatus/kiousbhostportstatusconnectedspeednone.md)
+- [kIOUSBHostPortStatusConnectedSpeedNone](./kiousbhostportstatusconnectedspeednone.md)
   A port with no device connected to it.
-- [kIOUSBHostPortStatusConnectedSpeedLow](tiousbhostportstatus/kiousbhostportstatusconnectedspeedlow.md)
+- [kIOUSBHostPortStatusConnectedSpeedLow](./kiousbhostportstatusconnectedspeedlow.md)
   A port with a low-speed device connected to it.
-- [kIOUSBHostPortStatusConnectedSpeedHigh](tiousbhostportstatus/kiousbhostportstatusconnectedspeedhigh.md)
+- [kIOUSBHostPortStatusConnectedSpeedHigh](./kiousbhostportstatusconnectedspeedhigh.md)
   A port with a high-speed device connected to it.
-- [kIOUSBHostPortStatusConnectedSpeedSuper](tiousbhostportstatus/kiousbhostportstatusconnectedspeedsuper.md)
+- [kIOUSBHostPortStatusConnectedSpeedSuper](./kiousbhostportstatusconnectedspeedsuper.md)
   A port with a super-speed device connected to it.
-- [kIOUSBHostPortStatusConnectedSpeedSuperPlus](tiousbhostportstatus/kiousbhostportstatusconnectedspeedsuperplus.md)
+- [kIOUSBHostPortStatusConnectedSpeedSuperPlus](./kiousbhostportstatusconnectedspeedsuperplus.md)
   A port with a super-speed plus device connected to it.
-- [kIOUSBHostPortStatusConnectedSpeedSuperPlusBy2](tiousbhostportstatus/kiousbhostportstatusconnectedspeedsuperplusby2.md)
+- [kIOUSBHostPortStatusConnectedSpeedSuperPlusBy2](./kiousbhostportstatusconnectedspeedsuperplusby2.md)
   A port with a super-speed plus two device connected to it.
 
 

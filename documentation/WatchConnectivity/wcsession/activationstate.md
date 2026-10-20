@@ -1,7 +1,8 @@
 # activationState
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current activation state of the session.
 
@@ -18,17 +19,22 @@ The current activation state of the session.
 var activationState: WCSessionActivationState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WCSessionActivationState activationState;
+```
+
 #### Discussion
 
-Check the value of this property before attempting to transfer data or files using the methods of this object. When the value is [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md) you may initiate the transfer of data and files normally. If it is any other value, do not initiate any transfers.
+Check the value of this property before attempting to transfer data or files using the methods of this object. When the value is [`WCSessionActivationState.activated`](../wcsessionactivationstate/activated.md) you may initiate the transfer of data and files normally. If it is any other value, do not initiate any transfers.
 
-The value of this property is valid even when the session itself is not activated, so you can access it at any time. Use the  [`sessionDidBecomeInactive(_:)`](wcsessiondelegate/sessiondidbecomeinactive(_:).md) and [`sessionDidDeactivate(_:)`](wcsessiondelegate/sessiondiddeactivate(_:).md) methods of your session delegate to monitor changes in the session’s activation state. You can also use key-value observing to monitor changes to this property.
+The value of this property is valid even when the session itself is not activated, so you can access it at any time. Use the  [`sessionDidBecomeInactive(_:)`](../wcsessiondelegate/sessiondidbecomeinactive%28_%29.md) and [`sessionDidDeactivate(_:)`](../wcsessiondelegate/sessiondiddeactivate%28_%29.md) methods of your session delegate to monitor changes in the session’s activation state. You can also use key-value observing to monitor changes to this property.
 
 ## See Also
 
-- [var delegate: (any WCSessionDelegate)?](wcsession/delegate.md)
+### Configuring the Session
+- [var delegate: (any WCSessionDelegate)?](./delegate.md)
   The delegate for the session object
-- [func activate()](wcsession/activate.md)
+- [func activate()](./activate%28%29.md)
   Activates the session asynchronously.
 
 

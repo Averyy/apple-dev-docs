@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.expiredCredential
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credential used to create the session has expired.
 

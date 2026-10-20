@@ -1,14 +1,17 @@
 # UIActionSheetStyle.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Takes the appearance of the bottom bar if specified; otherwise, same as [`UIActionSheetStyle.default`](uiactionsheetstyle/default.md).
+Takes the appearance of the bottom bar if specified; otherwise, same as [`UIActionSheetStyle.default`](./default.md).
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIActionSheet`](../uiactionsheet.md).
 
 ## Declaration
 
@@ -16,13 +19,18 @@ Takes the appearance of the bottom bar if specified; otherwise, same as [`UIActi
 case automatic
 ```
 
+```c
+UIActionSheetStyleAutomatic
+```
+
 ## See Also
 
-- [UIActionSheetStyle.default](uiactionsheetstyle/default.md)
+### Constants
+- [UIActionSheetStyle.default](./default.md)
   The default style.
-- [UIActionSheetStyle.blackTranslucent](uiactionsheetstyle/blacktranslucent.md)
+- [UIActionSheetStyle.blackTranslucent](./blacktranslucent.md)
   A black translucent style.
-- [UIActionSheetStyle.blackOpaque](uiactionsheetstyle/blackopaque.md)
+- [UIActionSheetStyle.blackOpaque](./blackopaque.md)
   A black opaque style.
 
 

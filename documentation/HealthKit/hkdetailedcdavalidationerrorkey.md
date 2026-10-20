@@ -1,7 +1,8 @@
 # HKDetailedCDAValidationErrorKey
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for accessing validation error information from an error object’s user information dictionary.
 
@@ -19,9 +20,14 @@ A key for accessing validation error information from an error object’s user i
 let HKDetailedCDAValidationErrorKey: String
 ```
 
+```c
+extern NSString * const HKDetailedCDAValidationErrorKey;
+```
+
 ## See Also
 
-- [convenience init(data: Data, start: Date, end: Date, metadata: [String : Any]?) throws](hkcdadocumentsample/init(data:start:end:metadata:).md)
+### Creating CDA Samples
+- [convenience init(data: Data, start: Date, end: Date, metadata: [String : Any]?) throws](./hkcdadocumentsample/init%28data,start,end,metadata%29.md)
   Returns a CDA document sample containing the provided XML document and metadata.
 
 

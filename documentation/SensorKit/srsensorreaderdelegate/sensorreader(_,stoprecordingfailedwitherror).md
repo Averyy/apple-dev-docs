@@ -1,19 +1,26 @@
 # sensorReader(_:stopRecordingFailedWithError:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the delegate with a reason when the reader fails to stop recording.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
 ```swift
 optional func sensorReader(_ reader: SRSensorReader, stopRecordingFailedWithError error: any Error)
+```
+
+```objc
+- (void) sensorReader:(SRSensorReader *) reader stopRecordingFailedWithError:(NSError *) error;
 ```
 
 ## Parameters
@@ -23,11 +30,12 @@ optional func sensorReader(_ reader: SRSensorReader, stopRecordingFailedWithErro
 
 ## See Also
 
-- [func sensorReaderWillStartRecording(SRSensorReader)](srsensorreaderdelegate/sensorreaderwillstartrecording(_:).md)
+### Recording Data
+- [func sensorReaderWillStartRecording(SRSensorReader)](./sensorreaderwillstartrecording%28_%29.md)
   Notifies the delegate when a reader starts recording.
-- [func sensorReader(SRSensorReader, startRecordingFailedWithError: any Error)](srsensorreaderdelegate/sensorreader(_:startrecordingfailedwitherror:).md)
+- [func sensorReader(SRSensorReader, startRecordingFailedWithError: any Error)](./sensorreader%28_,startrecordingfailedwitherror%29.md)
   Provides the delegate with a reason when the reader fails to record.
-- [func sensorReaderDidStopRecording(SRSensorReader)](srsensorreaderdelegate/sensorreaderdidstoprecording(_:).md)
+- [func sensorReaderDidStopRecording(SRSensorReader)](./sensorreaderdidstoprecording%28_%29.md)
   Notifies the delegate when a reader stops recording.
 
 

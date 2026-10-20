@@ -1,14 +1,15 @@
 # PDFAccessPermissions.allowsContentAccessibility
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,15 +18,20 @@
 case allowsContentAccessibility
 ```
 
+```c
+PDFAllowsContentAccessibility
+```
+
 ## See Also
 
-- [PDFAccessPermissions.allowsCommenting](pdfaccesspermissions/allowscommenting.md)
-- [PDFAccessPermissions.allowsContentCopying](pdfaccesspermissions/allowscontentcopying.md)
-- [PDFAccessPermissions.allowsDocumentAssembly](pdfaccesspermissions/allowsdocumentassembly.md)
-- [PDFAccessPermissions.allowsDocumentChanges](pdfaccesspermissions/allowsdocumentchanges.md)
-- [PDFAccessPermissions.allowsFormFieldEntry](pdfaccesspermissions/allowsformfieldentry.md)
-- [PDFAccessPermissions.allowsHighQualityPrinting](pdfaccesspermissions/allowshighqualityprinting.md)
-- [PDFAccessPermissions.allowsLowQualityPrinting](pdfaccesspermissions/allowslowqualityprinting.md)
+### Enumeration Cases
+- [PDFAccessPermissions.allowsCommenting](./allowscommenting.md)
+- [PDFAccessPermissions.allowsContentCopying](./allowscontentcopying.md)
+- [PDFAccessPermissions.allowsDocumentAssembly](./allowsdocumentassembly.md)
+- [PDFAccessPermissions.allowsDocumentChanges](./allowsdocumentchanges.md)
+- [PDFAccessPermissions.allowsFormFieldEntry](./allowsformfieldentry.md)
+- [PDFAccessPermissions.allowsHighQualityPrinting](./allowshighqualityprinting.md)
+- [PDFAccessPermissions.allowsLowQualityPrinting](./allowslowqualityprinting.md)
 
 
 ---

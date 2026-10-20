@@ -1,7 +1,8 @@
 # OptimizationStrategy.nonSmooth
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An optimization strategy that can handle non-smooth problems.
 
@@ -26,11 +27,12 @@ Select this strategy when using L1 regularization. Using L1 regularization cause
 
 ## See Also
 
-- [OptimizationStrategy.automatic](optimizationstrategy/automatic.md)
+### Optimization strategies
+- [OptimizationStrategy.automatic](./automatic.md)
   Chooses the best optimization strategy based on the problem size and configuration.
-- [OptimizationStrategy.fast](optimizationstrategy/fast.md)
+- [OptimizationStrategy.fast](./fast.md)
   An optimization strategy that minimizes computation time.
-- [OptimizationStrategy.lowMemory](optimizationstrategy/lowmemory.md)
+- [OptimizationStrategy.lowMemory](./lowmemory.md)
   An optimization strategy that minimizes memory use.
 
 

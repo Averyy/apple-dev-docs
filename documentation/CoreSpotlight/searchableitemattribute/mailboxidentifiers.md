@@ -1,7 +1,8 @@
 # mailboxIdentifiers
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,19 +19,20 @@ static let mailboxIdentifiers: SearchableItemAttribute
 
 ## See Also
 
-- [static let accountHandles: SearchableItemAttribute](searchableitemattribute/accounthandles.md)
-- [static let accountIdentifier: SearchableItemAttribute](searchableitemattribute/accountidentifier.md)
-- [static let authorAddresses: SearchableItemAttribute](searchableitemattribute/authoraddresses.md)
-- [static let authorEmailAddresses: SearchableItemAttribute](searchableitemattribute/authoremailaddresses.md)
-- [static let authorNames: SearchableItemAttribute](searchableitemattribute/authornames.md)
-- [static let emailAddresses: SearchableItemAttribute](searchableitemattribute/emailaddresses.md)
-- [static let instantMessageAddresses: SearchableItemAttribute](searchableitemattribute/instantmessageaddresses.md)
-- [static let likelyJunk: SearchableItemAttribute](searchableitemattribute/likelyjunk.md)
-- [static let phoneNumbers: SearchableItemAttribute](searchableitemattribute/phonenumbers.md)
-- [static let recipientAddresses: SearchableItemAttribute](searchableitemattribute/recipientaddresses.md)
-- [static let recipientEmailAddresses: SearchableItemAttribute](searchableitemattribute/recipientemailaddresses.md)
-- [static let recipientNames: SearchableItemAttribute](searchableitemattribute/recipientnames.md)
-- [static let textContent: SearchableItemAttribute](searchableitemattribute/textcontent.md)
+### Describing messages
+- [static let accountHandles: SearchableItemAttribute](./accounthandles.md)
+- [static let accountIdentifier: SearchableItemAttribute](./accountidentifier.md)
+- [static let authorAddresses: SearchableItemAttribute](./authoraddresses.md)
+- [static let authorEmailAddresses: SearchableItemAttribute](./authoremailaddresses.md)
+- [static let authorNames: SearchableItemAttribute](./authornames.md)
+- [static let emailAddresses: SearchableItemAttribute](./emailaddresses.md)
+- [static let instantMessageAddresses: SearchableItemAttribute](./instantmessageaddresses.md)
+- [static let likelyJunk: SearchableItemAttribute](./likelyjunk.md)
+- [static let phoneNumbers: SearchableItemAttribute](./phonenumbers.md)
+- [static let recipientAddresses: SearchableItemAttribute](./recipientaddresses.md)
+- [static let recipientEmailAddresses: SearchableItemAttribute](./recipientemailaddresses.md)
+- [static let recipientNames: SearchableItemAttribute](./recipientnames.md)
+- [static let textContent: SearchableItemAttribute](./textcontent.md)
 
 
 ---

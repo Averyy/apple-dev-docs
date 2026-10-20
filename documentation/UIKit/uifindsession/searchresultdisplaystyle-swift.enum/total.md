@@ -1,7 +1,8 @@
 # UIFindSession.SearchResultDisplayStyle.total
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The find panel includes the total number of results the session reports.
 
@@ -17,11 +18,16 @@ The find panel includes the total number of results the session reports.
 case total
 ```
 
+```c
+UIFindSessionSearchResultDisplayStyleTotal
+```
+
 ## See Also
 
-- [UIFindSession.SearchResultDisplayStyle.currentAndTotal](uifindsession/searchresultdisplaystyle-swift.enum/currentandtotal.md)
+### Constants
+- [UIFindSession.SearchResultDisplayStyle.currentAndTotal](./currentandtotal.md)
   The find panel includes the total number of results the session reports and the index of the target result.
-- [UIFindSession.SearchResultDisplayStyle.none](uifindsession/searchresultdisplaystyle-swift.enum/none.md)
+- [UIFindSession.SearchResultDisplayStyle.none](./none.md)
   The find panel doesn’t include the number of results the session reports.
 
 

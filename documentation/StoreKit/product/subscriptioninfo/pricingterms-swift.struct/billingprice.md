@@ -1,7 +1,8 @@
 # billingPrice
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,11 +21,12 @@ let billingPrice: Decimal
 
 ## See Also
 
-- [let billingDisplayPrice: String](product/subscriptioninfo/pricingterms-swift.struct/billingdisplayprice.md)
-- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](product/subscriptioninfo/pricingterms-swift.struct/billingperiod.md)
-- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/pricingterms-swift.struct/billingplantype.md)
-- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](product/subscriptioninfo/pricingterms-swift.struct/commitmentinfo.md)
-- [let subscriptionOffers: [Product.SubscriptionOffer]](product/subscriptioninfo/pricingterms-swift.struct/subscriptionoffers.md)
+### Instance Properties - generated
+- [let billingDisplayPrice: String](./billingdisplayprice.md)
+- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./billingperiod.md)
+- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](./billingplantype.md)
+- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
+- [let subscriptionOffers: [Product.SubscriptionOffer]](./subscriptionoffers.md)
 
 
 ---

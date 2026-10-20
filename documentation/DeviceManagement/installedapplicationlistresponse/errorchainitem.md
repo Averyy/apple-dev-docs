@@ -1,7 +1,8 @@
 # InstalledApplicationListResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -16,7 +17,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object InstalledApplicationListResponse.ErrorChainItem
 ```
 
@@ -29,7 +30,8 @@ object InstalledApplicationListResponse.ErrorChainItem
 
 ## See Also
 
-- [object InstalledApplicationListResponse.InstalledApplicationListItem](installedapplicationlistresponse/installedapplicationlistitem.md)
+### Objects
+- [object InstalledApplicationListResponse.InstalledApplicationListItem](./installedapplicationlistitem.md)
   A dictionary that describes an app list item.
 
 

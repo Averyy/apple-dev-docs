@@ -1,7 +1,8 @@
 # queryNotificationReason
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event that triggers the push notification.
 
@@ -10,7 +11,7 @@ The event that triggers the push notification.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,13 +21,18 @@ The event that triggers the push notification.
 var queryNotificationReason: CKQueryNotification.Reason { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CKQueryNotificationReason queryNotificationReason;
+```
+
 #### Discussion
 
 Subscription notifications result from the creation, deletion, or updating of a single record. The record in question must match the subscription’s predicate for an event to trigger.
 
 ## See Also
 
-- [CKQueryNotification.Reason](ckquerynotification/reason.md)
+### Getting the Notification Attributes
+- [CKQueryNotification.Reason](./reason.md)
   Constants that indicate the event that triggers the notification.
 
 

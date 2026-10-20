@@ -1,17 +1,18 @@
 # init
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the interface.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -21,7 +22,8 @@ virtual bool init();
 
 ## See Also
 
-- [free](iohidinterface/free.md)
+### Running the Interface
+- [free](./free.md)
 
 
 ---

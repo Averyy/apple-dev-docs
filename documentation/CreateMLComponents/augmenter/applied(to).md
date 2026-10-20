@@ -1,7 +1,8 @@
 # applied(to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an augmentation per input of the base sequence.
 
@@ -22,7 +23,7 @@ func applied<S, Annotation>(to base: S) -> AugmentationSequence<S, RandomTransfo
 
 ## Mentions
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+- [Augmenting images to expand your training data](../augmenting-images-to-expand-your-training-data.md)
 
 #### Return Value
 
@@ -34,7 +35,8 @@ A sequence of augmented elements having the same number of elements as the input
 
 ## See Also
 
-- [func applied<C, Annotation>(to: C, upsampledBy: Int) -> UpsampledAugmentationSequence<C, RandomTransformer, RandomNumberGenerator, Annotation>](augmenter/applied(to:upsampledby:).md)
+### Applying an augmentation
+- [func applied<C, Annotation>(to: C, upsampledBy: Int) -> UpsampledAugmentationSequence<C, RandomTransformer, RandomNumberGenerator, Annotation>](./applied%28to,upsampledby%29.md)
   Applies an augmentation repeatedly to an array of inputs.
 
 

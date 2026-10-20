@@ -1,7 +1,8 @@
 # setData(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the entire contents of the receiver with the contents of another data object.
 
@@ -20,9 +21,13 @@ Replaces the entire contents of the receiver with the contents of another data o
 func setData(_ data: Data)
 ```
 
+```objc
+- (void) setData:(NSData *) data;
+```
+
 #### Discussion
 
-As part of its implementation, this method calls [`replaceBytes(in:withBytes:)`](nsmutabledata/replacebytes(in:withbytes:).md).
+As part of its implementation, this method calls [`replaceBytes(in:withBytes:)`](./replacebytes%28in,withbytes%29.md).
 
 ## Parameters
 
@@ -30,11 +35,12 @@ As part of its implementation, this method calls [`replaceBytes(in:withBytes:)`]
 
 ## See Also
 
-- [func replaceBytes(in: NSRange, withBytes: UnsafeRawPointer)](nsmutabledata/replacebytes(in:withbytes:).md)
+### Modifying Bytes
+- [func replaceBytes(in: NSRange, withBytes: UnsafeRawPointer)](./replacebytes%28in,withbytes%29.md)
   Replaces with a given set of bytes a given range within the contents of the receiver.
-- [func replaceBytes(in: NSRange, withBytes: UnsafeRawPointer?, length: Int)](nsmutabledata/replacebytes(in:withbytes:length:).md)
+- [func replaceBytes(in: NSRange, withBytes: UnsafeRawPointer?, length: Int)](./replacebytes%28in,withbytes,length%29.md)
   Replaces with a given set of bytes a given range within the contents of the receiver.
-- [func resetBytes(in: NSRange)](nsmutabledata/resetbytes(in:).md)
+- [func resetBytes(in: NSRange)](./resetbytes%28in%29.md)
   Replaces with zeroes the contents of the receiver in a given range.
 
 

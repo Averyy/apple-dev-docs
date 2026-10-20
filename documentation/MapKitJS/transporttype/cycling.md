@@ -1,7 +1,8 @@
 # Cycling
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant identifying the mode of transportation as cycling.
 
@@ -10,13 +11,13 @@ A constant identifying the mode of transportation as cycling.
 
 ## Declaration
 
-```swift
+```
 readonly Cycling: "CYCLING";
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
@@ -24,9 +25,10 @@ Use for directions that are suitable for cycling.
 
 ## See Also
 
-- [Walking](transporttype/walking.md)
+### Transport types
+- [Walking](./walking.md)
   A constant identifying the mode of transportation as walking.
-- [Automobile](transporttype/automobile.md)
+- [Automobile](./automobile.md)
   A constant identifying the mode of transportation as driving.
 
 

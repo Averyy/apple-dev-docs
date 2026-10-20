@@ -1,7 +1,8 @@
 # expectedMaterialCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of material entries required to render the mesh resource.
 
@@ -11,7 +12,7 @@ The number of material entries required to render the mesh resource.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ The number of material entries required to render the mesh resource.
 
 #### Discussion
 
-Use this value to determine the number of [`Material`](material.md) instances to provide in the [`materials`](modelcomponent/materials.md) array. When a mesh has multiple submeshes, each submesh references a material by index.
+Use this value to determine the number of [`Material`](../material.md) instances to provide in the [`materials`](../modelcomponent/materials.md) array. When a mesh has multiple submeshes, each submesh references a material by index.
 
 ## See Also
 
-- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+### Configuring the resource
+- [func replace(with: MeshResource.Contents) throws](./replace%28with%29-g0kn.md)
   Replace the contents of this mesh resource.
-- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+- [func replace(with: MeshResource.Contents) throws](./replace%28with%29-g0kn.md)
   Replace the contents of this mesh resource.
-- [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/replaceasync(with:).md)
+- [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](./replaceasync%28with%29.md)
   Replace the contents of this mesh resource asynchronously.
 
 

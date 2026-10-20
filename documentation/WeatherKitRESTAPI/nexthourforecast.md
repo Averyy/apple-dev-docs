@@ -1,7 +1,8 @@
 # NextHourForecast
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A minute-by-minute forecast for the next hour.
 
@@ -10,27 +11,28 @@ A minute-by-minute forecast for the next hour.
 
 ## Declaration
 
-```swift
+```
 object NextHourForecast
 ```
 
 ## Topics
 
 ### Getting the next hour forecast
-- [object NextHourForecast.NextHourForecastData](nexthourforecast/nexthourforecastdata.md)
+- [object NextHourForecast.NextHourForecastData](./nexthourforecast/nexthourforecastdata.md)
   The next hour forecast information.
 
 ## Relationships
 
 ### Inherits From
-- [NextHourForecast.NextHourForecastData](nexthourforecast/nexthourforecastdata.md)
-- [ProductData](productdata.md)
+- [NextHourForecast.NextHourForecastData](./nexthourforecast/nexthourforecastdata.md)
+- [ProductData](./productdata.md)
 
 ## See Also
 
-- [object HourWeatherConditions](hourweatherconditions.md)
+### Obtaining hourly weather information
+- [object HourWeatherConditions](./hourweatherconditions.md)
   The historical or forecasted weather conditions for a specified hour.
-- [object HourlyForecast](hourlyforecast.md)
+- [object HourlyForecast](./hourlyforecast.md)
   A collection of hour forecasts for a specified range of hours.
 
 

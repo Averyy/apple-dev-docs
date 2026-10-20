@@ -1,7 +1,8 @@
 # formUniqueID
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a value that uniquely identifies an object within its container or across an application.
 

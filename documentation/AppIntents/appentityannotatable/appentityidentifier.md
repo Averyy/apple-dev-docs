@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The identifier of an app entity you want to associate with a system type.
@@ -23,12 +24,12 @@ var appEntityIdentifier: EntityIdentifier? { get set }
 
 ## Mentions
 
-- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
-- [Donating your app’s data and actions to the system](donating-your-apps-data-and-actions-to-the-system.md)
+- [Providing contextual cues to Apple Intelligence and Siri](../providing-contextual-cues-to-apple-intelligence-and-siri.md)
+- [Donating your app’s data and actions to the system](../donating-your-apps-data-and-actions-to-the-system.md)
 
 #### Discussion
 
-This property stores the unique identifier of one of your app’s entities. Use it to create an association between a system type and one of your custom [`AppEntity`](appentity.md) types. For example, the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) makes this property available so you can specify the entity associated with your app’s activity. To remove the association with one of your app’s entities, set this property to `nil`.
+This property stores the unique identifier of one of your app’s entities. Use it to create an association between a system type and one of your custom [`AppEntity`](../appentity.md) types. For example, the [`NSUserActivity`](../../Foundation/nsuseractivity.md) makes this property available so you can specify the entity associated with your app’s activity. To remove the association with one of your app’s entities, set this property to `nil`.
 
 
 ---

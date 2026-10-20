@@ -6,7 +6,7 @@ Notarize your app from the command line to handle special distribution cases.
 
 #### Overview
 
-The easiest way to notarize your app is through the Xcode user interface, as described in [`Notarizing macOS software before distribution`](notarizing-macos-software-before-distribution.md). However, if you have a more complex scenario, you can use command line tools to manually notarize your app. This workflow can be useful in a number of cases, like when you need to:
+The easiest way to notarize your app is through the Xcode user interface, as described in [Notarizing macOS software before distribution](./notarizing-macos-software-before-distribution.md). However, if you have a more complex scenario, you can use command line tools to manually notarize your app. This workflow can be useful in a number of cases, like when you need to:
 
 - Notarize software you’ve already shipped.
 - Notarize plug-ins for other software packages.
@@ -14,11 +14,11 @@ The easiest way to notarize your app is through the Xcode user interface, as des
 - Create complex distributions, like disk images or installer packages.
 - Add the notarization process to a scripted build environment.
 
-##### Export a Package for Notarization
+##### Export a package for notarization
 
 To prepare an app for notarization, you must export the app from Xcode. Using Xcode, you can export your archived app by clicking Distribute App in the Organizer window. But in a scripted build environment, you use the `xcodebuild` utility to perform the export. Because export directly follows archiving, the archive’s post-action script is a convenient place to perform the export from. You can edit the post-action from the scheme editor in Xcode.
 
-![Screenshot of Xcode’s scheme editor showing an example of a post-actions script for the Archive action.](/images/com.apple.security/media-3563043@2x.png)
+![Screenshot of Xcode’s scheme editor showing an example of a post-actions script for the Archive action.](https://developer.apple.com/tutorials/images/com.apple.security/media-3563043@2x.png)
 
 The script begins by exporting the archive with `xcodebuild`:
 
@@ -29,7 +29,7 @@ EXPORT_PATH="$TEMP_DIR/Export"
 
 You tell `xcodebuild` which archive to export using an environment variable automatically defined by Xcode, and provide a location for the output by defining the `EXPORT_PATH` variable. Use the `exportOptionsPlist` option to indicate an options property list that configures the export operation. You typically obtain this file by exporting from Xcode just once. The export options file appears alongside the app in the export directory:
 
-![Getting the ExportOptions.plist file from Xcode.](/images/com.apple.security/media-3088613@2x.png)
+![Getting the ExportOptions.plist file from Xcode.](https://developer.apple.com/tutorials/images/com.apple.security/media-3088613@2x.png)
 
 Alternatively, you can create a custom export options property list file with a text or property list editor.
 
@@ -48,13 +48,13 @@ ZIP_PATH="$EXPORT_PATH/$PRODUCT_NAME.zip"
 /usr/bin/open "$EXPORT_PATH"
 ```
 
-For a detailed example that shows how to automate notarization using post-action scripts, see [`Customizing the Xcode archive process`](customizing-the-xcode-archive-process.md).
+For a detailed example that shows how to automate notarization using post-action scripts, see [Customizing the Xcode archive process](./customizing-the-xcode-archive-process.md).
 
 Alternatively, you can put apps, kernel extensions, and other software in a container, like a disk image, and notarize the container. The notary service accepts disk images (UDIF format), signed flat installer packages, and ZIP archives. It processes nested containers as well, like packages inside a disk image.
 
-> ❗ **Important**:  If you distribute your software via a custom third-party installer, you need two rounds of notarization. First you notarize the installer’s payload (everything the installer will install). You then package the notarized (and stapled, as described in [`Staple the ticket to your distribution`](customizing-the-notarization-workflow#Staple-the-ticket-to-your-distribution.md)) items into the installer and notarize it as you would any other executable. If you use a network installer, separately notarize both the installer and the items it downloads.
+> ❗ **Important**:  If you distribute your software via a custom third-party installer, you need two rounds of notarization. First you notarize the installer’s payload (everything the installer will install). You then package the notarized (and stapled, as described in [Staple the ticket to your distribution](./customizing-the-notarization-workflow.md#Staple-the-ticket-to-your-distribution)) items into the installer and notarize it as you would any other executable. If you use a network installer, separately notarize both the installer and the items it downloads.
 
-##### Upload Your App to the Notarization Service
+##### Upload your app to the notarization service
 
 You upload your app for notarization using `notarytool` command line tool. Xcode 13 or later supports this tool, so if you have more than one version of Xcode installed on your Mac, be sure to use the `xcode-select` utility to choose an appropriate version:
 
@@ -62,7 +62,7 @@ You upload your app for notarization using `notarytool` command line tool. Xcode
 % sudo xcode-select -s /path/to/Xcode13.app
 ```
 
-> **Note**:  The `altool` command has been deprecated, and the Apple notary service no longer supports `altool` from November 1, 2023. For more information, see the WWDC22 session [`What’s new in notarization for Mac apps`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10109).
+> **Note**:  The `altool` command has been deprecated, and the Apple notary service no longer supports `altool` from November 1, 2023. For more information, see the WWDC22 session [What’s new in notarization for Mac apps](https://developer.apple.com/wwdc22/10109).
 
 Use `xcrun` to invoke the `notarytool` command with the `submit` option:
 
@@ -77,7 +77,7 @@ The notary service generates a ticket for the top-level file that you specify, a
 
 Use the `wait` flag to tell `notarytool` to exit only after the Notary service finishes processing the submission. This eliminates the need to poll the service for status. Use the `webhook` flag if you want to specify a URL for the service to access after processing the submission.
 
-You can add the `apple-id` and `password` options to supply your App Store Connect credentials. Because App Store Connect requires two-factor authentication (2FA) on all accounts, you must create an app-specific password for `notarytool`, as described in [`Using app-specific passwords`](https://developer.apple.comhttps://support.apple.com/en-us/HT204397).
+You can add the `apple-id` and `password` options to supply your App Store Connect credentials. Because App Store Connect requires two-factor authentication (2FA) on all accounts, you must create an app-specific password for `notarytool`, as described in [Using app-specific passwords](https://support.apple.com/en-us/HT204397).
 
 Alternatively, to avoid including your password as cleartext in a script, you can provide a reference to a keychain item, as shown in the example above. This assumes the keychain holds a keychain item named `notarytool-password`. You can add a new keychain item for this purpose from the command line using the `notarytool` utility:
 
@@ -102,9 +102,9 @@ Save the `id` value to use later when checking the status of your request. For m
 % xcrun notarytool --help
 ```
 
-> **Note**:  To avoid a dependency on Xcode for interacting with the notary service, you can use the [`Notary API`](https://developer.apple.com/documentation/notaryapi) described in [`Submitting software for notarization over the web`](https://developer.apple.com/documentation/notaryapi/submitting-software-for-notarization-over-the-web).
+> **Note**:  To avoid a dependency on Xcode for interacting with the notary service, you can use the [Notary API](../NotaryAPI/NotaryAPI.md) described in [Submitting software for notarization over the web](../NotaryAPI/submitting-software-for-notarization-over-the-web.md).
 
-##### Check the Status of Your Request
+##### Check the status of your request
 
 After you upload your app, the notarization process typically takes less than an hour. If you use the `wait` flag that the previous section demonstrates, `notarytool` returns with the status of the request:
 
@@ -152,9 +152,9 @@ The file enumerates any issues that notarization found:
 
 > **Note**:  Always check the log file, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission.
 
-For information about how to deal with common problems, see [`Resolving common notarization issues`](resolving-common-notarization-issues.md).
+For information about how to deal with common problems, see [Resolving common notarization issues](./resolving-common-notarization-issues.md).
 
-##### Staple the Ticket to Your Distribution
+##### Staple the ticket to your distribution
 
 Notarization produces a ticket that tells Gatekeeper that your app is notarized. After notarization completes, the next time any user attempts to run your app on macOS 10.14 or later, Gatekeeper finds the ticket online. This includes users who downloaded your app before notarization.
 
@@ -166,13 +166,13 @@ You should also attach the ticket to your software using the `stapler` tool, so 
 
 While you can notarize a ZIP archive, you can’t staple to it directly. Instead, run `stapler` against each item that you added to the archive. Then create a new ZIP file containing the stapled items for distribution. Although tickets are created for standalone binaries, it’s not currently possible to staple tickets to them.
 
-##### Ensure Your Build Server Has Network Access
+##### Ensure your build server has network access
 
 To incorporate notarization into a custom workflow, your build server needs access to certain network resources.
 
-The `notarytool` tool uses Amazon S3 Transfer Acceleration by default, which connects to `notary-submissions-prod.s3-accelerate.amazonaws.com`. Use the `no-s3-acceleration` flag during submission to use the `notary-submissions-prod.s3.us-west-2.amazonaws.com` endpoint instead. You can find the range of Internet Protocol (IP) addresses used by Amazon S3 in the documentation on [`https://aws.amazon.com`](https://developer.apple.comhttps://aws.amazon.com).
+The `notarytool` tool uses Amazon S3 Transfer Acceleration by default, which connects to `notary-submissions-prod.s3-accelerate.amazonaws.com`. Use the `no-s3-acceleration` flag during submission to use the `notary-submissions-prod.s3.us-west-2.amazonaws.com` endpoint instead. You can find the range of Internet Protocol (IP) addresses used by Amazon S3 in the documentation on [https://aws.amazon.com](https://aws.amazon.com).
 
-In addition, `stapler` uses [`CloudKit`](https://developer.apple.com/documentation/cloudkit) to download tickets, which requires access to the following IP address ranges, all on port 443:
+In addition, `stapler` uses [CloudKit](../CloudKit/CloudKit.md) to download tickets, which requires access to the following IP address ranges, all on port 443:
 
 ```console
 17.36.196.0/22
@@ -193,7 +193,7 @@ In addition, `stapler` uses [`CloudKit`](https://developer.apple.com/documentati
 2a01:b740:1360::/44
 ```
 
-##### Avoid Long Notarization Response Times and Size Limits
+##### Avoid long notarization response times and size limits
 
 Notarization completes for most software within 5 minutes, and for 98 percent of software within 15 minutes. However, notarization can take longer under certain conditions. Help to avoid long response times by following a few rules:
 
@@ -214,12 +214,13 @@ For large uploads, try to exclude non-executable data from notarization. For exa
 ## Topics
 
 ### Automation
-- [Customizing the Xcode archive process](customizing-the-xcode-archive-process.md)
+- [Customizing the Xcode archive process](./customizing-the-xcode-archive-process.md)
   Archive, export, and notarize your app in one step using Xcode post-action build scripts.
 
 ## See Also
 
-- [Notary API](../notaryapi/notaryapi.md)
+### Related Documentation
+- [Notary API](../NotaryAPI/NotaryAPI.md)
   Submit your macOS software for notarization through a web interface.
 
 

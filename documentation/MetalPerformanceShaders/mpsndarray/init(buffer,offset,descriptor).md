@@ -1,7 +1,8 @@
 # init(buffer:offset:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(buffer: any MTLBuffer, offset: Int, descriptor: MPSNDArrayDescriptor)
+```
+
+```objc
+- (instancetype) initWithBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset descriptor:(MPSNDArrayDescriptor *) descriptor;
 ```
 
 

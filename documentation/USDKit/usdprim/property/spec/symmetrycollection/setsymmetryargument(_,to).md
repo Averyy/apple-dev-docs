@@ -1,7 +1,8 @@
 # setSymmetryArgument(_:to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets `name` in the symmetry arguments dictionary to `value`.
 

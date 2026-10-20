@@ -1,7 +1,8 @@
 # SVGLengthList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGLengthList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [numberOfItems](svglengthlist/1629981-numberofitems.md)
+- [numberOfItems](./svglengthlist/api-1629981-numberofitems.md)
 ### Instance Methods
-- [appendItem](svglengthlist/1633451-appenditem.md)
-- [clear](svglengthlist/1630012-clear.md)
-- [getItem](svglengthlist/1632747-getitem.md)
-- [initialize](svglengthlist/1629681-initialize.md)
-- [insertItemBefore](svglengthlist/1631792-insertitembefore.md)
-- [removeItem](svglengthlist/1633449-removeitem.md)
-- [replaceItem](svglengthlist/1631870-replaceitem.md)
+- [appendItem](./svglengthlist/api-1633451-appenditem.md)
+- [clear](./svglengthlist/api-1630012-clear.md)
+- [getItem](./svglengthlist/api-1632747-getitem.md)
+- [initialize](./svglengthlist/api-1629681-initialize.md)
+- [insertItemBefore](./svglengthlist/api-1631792-insertitembefore.md)
+- [removeItem](./svglengthlist/api-1633449-removeitem.md)
+- [replaceItem](./svglengthlist/api-1631870-replaceitem.md)
 
 
 ---

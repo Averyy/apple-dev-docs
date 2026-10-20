@@ -1,7 +1,8 @@
 # AccessorySecuritySession
 
 **Framework**: Accessory Transport Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that manages a security session between the extension and the system.
 
@@ -16,7 +17,7 @@ class AccessorySecuritySession
 
 ## Mentions
 
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 
 #### Overview
 
@@ -25,38 +26,39 @@ The security session handles a key exchange process (see `AccessorySecurity/Even
 ## Topics
 
 ### Managing session requests
-- [AccessorySecuritySession.Request](accessorysecuritysession/request.md)
+- [AccessorySecuritySession.Request](./accessorysecuritysession/request.md)
   A structure that represents an incoming security session request.
 ### Handling session events
-- [AccessorySecuritySession.EventHandler](accessorysecuritysession/eventhandler.md)
+- [AccessorySecuritySession.EventHandler](./accessorysecuritysession/eventhandler.md)
   A protocol that defines methods for handling security session events.
-- [AccessorySecuritySession.Error](accessorysecuritysession/error.md)
+- [AccessorySecuritySession.Error](./accessorysecuritysession/error.md)
   An error that occurs during accessory security-session operations.
 ### Accessing session properties
-- [var description: String](accessorysecuritysession/description.md)
+- [var description: String](./accessorysecuritysession/description.md)
   A string that describes the security session.
 ### Managing the session life cycle
-- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](accessorysecuritysession/sendsecuritymessage(_:).md)
+- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](./accessorysecuritysession/sendsecuritymessage%28_%29.md)
   Sends a security message to the system.
-- [func cancel(error: AccessorySecuritySession.Error?)](accessorysecuritysession/cancel(error:).md)
+- [func cancel(error: AccessorySecuritySession.Error?)](./accessorysecuritysession/cancel%28error%29.md)
   Cancels the security session.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [protocol AccessoryFeature](accessoryfeature.md)
+### Data and sessions
+- [protocol AccessoryFeature](./accessoryfeature.md)
   A protocol that defines a capability for an accessory data provider extension.
-- [struct AccessoryMessage](accessorymessage.md)
+- [struct AccessoryMessage](./accessorymessage.md)
   A structure that represents a message to send to an accessory.
-- [struct TransportMessage](transportmessage.md)
+- [struct TransportMessage](./transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
-- [struct SecurityMessage](securitymessage.md)
+- [struct SecurityMessage](./securitymessage.md)
   A structure that carries key material for a secure channel between the system and an accessory.
-- [enum AccessoryTransport](accessorytransport.md)
+- [enum AccessoryTransport](./accessorytransport.md)
   Transport methods for communicating with an accessory.
 
 

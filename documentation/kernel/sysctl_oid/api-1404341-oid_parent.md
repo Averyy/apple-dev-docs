@@ -1,14 +1,15 @@
 # oid_parent
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct sysctl_oid_list *__ptrauth(2,1,56137) oid_parent;
 ```
 

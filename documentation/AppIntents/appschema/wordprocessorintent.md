@@ -1,7 +1,8 @@
 # AppSchema.WordProcessorIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the word processor domain.
 
@@ -21,51 +22,52 @@ protocol WordProcessorIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var addAudioToPage: some AppSchemaIntent](appschema/wordprocessorintent/addaudiotopage.md)
+- [var addAudioToPage: some AppSchemaIntent](./wordprocessorintent/addaudiotopage.md)
   An intent schema that adds an audio clip to a page.
-- [var addImageToPage: some AppSchemaIntent](appschema/wordprocessorintent/addimagetopage.md)
+- [var addImageToPage: some AppSchemaIntent](./wordprocessorintent/addimagetopage.md)
   An intent schema that adds an image to a page.
-- [var addTextBoxToPage: some AppSchemaIntent](appschema/wordprocessorintent/addtextboxtopage.md)
+- [var addTextBoxToPage: some AppSchemaIntent](./wordprocessorintent/addtextboxtopage.md)
   An intent schema that adds a textbox to a page.
-- [var addVideoToPage: some AppSchemaIntent](appschema/wordprocessorintent/addvideotopage.md)
+- [var addVideoToPage: some AppSchemaIntent](./wordprocessorintent/addvideotopage.md)
   An intent schema that adds a video to a page.
-- [var addWebVideoToPage: some AppSchemaIntent](appschema/wordprocessorintent/addwebvideotopage.md)
+- [var addWebVideoToPage: some AppSchemaIntent](./wordprocessorintent/addwebvideotopage.md)
   An intent schema that adds a web video to a page.
-- [var create: some AppSchemaIntent](appschema/wordprocessorintent/create.md)
+- [var create: some AppSchemaIntent](./wordprocessorintent/create.md)
   An intent schema that opens the app for composing a new text document.
-- [var createPage: some AppSchemaIntent](appschema/wordprocessorintent/createpage.md)
+- [var createPage: some AppSchemaIntent](./wordprocessorintent/createpage.md)
   An intent schema that creates a new page in an editor document.
-- [var open: some AppSchemaIntent](appschema/wordprocessorintent/open.md)
+- [var open: some AppSchemaIntent](./wordprocessorintent/open.md)
   An intent schema that opens the app to an editor.
-- [var openPage: some AppSchemaIntent](appschema/wordprocessorintent/openpage.md)
+- [var openPage: some AppSchemaIntent](./wordprocessorintent/openpage.md)
   An intent schema that opens an editor document page.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var addAudioToPage: some AppSchemaIntent](appschema/wordprocessorintent/addaudiotopage.md)
+### Actions
+- [var addAudioToPage: some AppSchemaIntent](./wordprocessorintent/addaudiotopage.md)
   An intent schema that adds an audio clip to a page.
-- [var addImageToPage: some AppSchemaIntent](appschema/wordprocessorintent/addimagetopage.md)
+- [var addImageToPage: some AppSchemaIntent](./wordprocessorintent/addimagetopage.md)
   An intent schema that adds an image to a page.
-- [var addTextBoxToPage: some AppSchemaIntent](appschema/wordprocessorintent/addtextboxtopage.md)
+- [var addTextBoxToPage: some AppSchemaIntent](./wordprocessorintent/addtextboxtopage.md)
   An intent schema that adds a textbox to a page.
-- [var addVideoToPage: some AppSchemaIntent](appschema/wordprocessorintent/addvideotopage.md)
+- [var addVideoToPage: some AppSchemaIntent](./wordprocessorintent/addvideotopage.md)
   An intent schema that adds a video to a page.
-- [var addWebVideoToPage: some AppSchemaIntent](appschema/wordprocessorintent/addwebvideotopage.md)
+- [var addWebVideoToPage: some AppSchemaIntent](./wordprocessorintent/addwebvideotopage.md)
   An intent schema that adds a web video to a page.
-- [var create: some AppSchemaIntent](appschema/wordprocessorintent/create.md)
+- [var create: some AppSchemaIntent](./wordprocessorintent/create.md)
   An intent schema that opens the app for composing a new text document.
-- [var createPage: some AppSchemaIntent](appschema/wordprocessorintent/createpage.md)
+- [var createPage: some AppSchemaIntent](./wordprocessorintent/createpage.md)
   An intent schema that creates a new page in an editor document.
-- [var open: some AppSchemaIntent](appschema/wordprocessorintent/open.md)
+- [var open: some AppSchemaIntent](./wordprocessorintent/open.md)
   An intent schema that opens the app to an editor.
-- [var openPage: some AppSchemaIntent](appschema/wordprocessorintent/openpage.md)
+- [var openPage: some AppSchemaIntent](./wordprocessorintent/openpage.md)
   An intent schema that opens an editor document page.
 
 

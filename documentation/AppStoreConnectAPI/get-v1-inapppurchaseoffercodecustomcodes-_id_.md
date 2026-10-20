@@ -1,7 +1,8 @@
 # Read In-App Purchase Offer Code Custom Code Information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific In-App Purchase offer code custom code.
 
@@ -14,19 +15,35 @@ Get information about a specific In-App Purchase offer code custom code.
 
 ## Parameters
 
-- `fields[inAppPurchaseOfferCodeCustomCodes]` ([string])
-- `include` ([string])
-- `fields[actors]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[inAppPurchaseOfferCodeCustomCodes]` ([string]): **Allowed Values**: `customCode`, `numberOfCodes`, `createdDate`, `expirationDate`, `active`, `createdByActor`, `deactivatedByActor`
+- `include` ([string]): **Allowed Values**: `createdByActor`, `deactivatedByActor`
+- `fields[actors]` ([string]): **Allowed Values**: `actorType`, `userFirstName`, `userLastName`, `userEmail`, `apiKeyId`
+
+## Responses
+
+- `200` OK (`InAppPurchaseOfferCodeCustomCodeResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an In-App Purchase Offer Code Custom Code](post-v1-inapppurchaseoffercodecustomcodes.md)
+### Managing Custom Offer Codes
+- [Create an In-App Purchase Offer Code Custom Code](./post-v1-inapppurchaseoffercodecustomcodes.md)
   Create a custom code for an In-App Purchase offer code.
-- [List All Custom Codes for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-customcodes.md)
+- [List All Custom Codes for an In-App Purchase Offer Code](./get-v1-inapppurchaseoffercodes-_id_-customcodes.md)
   Get a list of custom codes for a specific In-App Purchase offer code.
-- [Get All Custom Code IDs for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-relationships-customcodes.md)
+- [Get All Custom Code IDs for an In-App Purchase Offer Code](./get-v1-inapppurchaseoffercodes-_id_-relationships-customcodes.md)
   Get a list of custom code resource IDs for a specific In-App Purchase offer code.
-- [Modify an In-App Purchase Offer Code Custom Code](patch-v1-inapppurchaseoffercodecustomcodes-_id_.md)
+- [Modify an In-App Purchase Offer Code Custom Code](./patch-v1-inapppurchaseoffercodecustomcodes-_id_.md)
   Update a specific In-App Purchase offer code custom code.
 
 

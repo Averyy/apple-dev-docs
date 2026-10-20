@@ -1,7 +1,8 @@
 # ~=(_:_:)
 
 **Framework**: Authentication Services  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 27.0+

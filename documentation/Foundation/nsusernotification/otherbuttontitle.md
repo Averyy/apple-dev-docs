@@ -1,17 +1,24 @@
 # otherButtonTitle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies a custom title for the close button in an alert-style notification.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
 ```swift
 var otherButtonTitle: String { get set }
+```
+
+```objc
+@property (copy) NSString * otherButtonTitle;
 ```
 
 #### Discussion
@@ -22,11 +29,12 @@ An empty string will cause the default localized text to be used. A `nil` value 
 
 ## See Also
 
-- [var hasActionButton: Bool](nsusernotification/hasactionbutton.md)
+### Displayed Notification Buttons
+- [var hasActionButton: Bool](./hasactionbutton.md)
   A Boolean value that specifies whether the notification displays an action button.
-- [var actionButtonTitle: String](nsusernotification/actionbuttontitle.md)
+- [var actionButtonTitle: String](./actionbuttontitle.md)
   Specifies the title of the action button displayed in the notification.
-- [var hasReplyButton: Bool](nsusernotification/hasreplybutton.md)
+- [var hasReplyButton: Bool](./hasreplybutton.md)
   A Boolean value that specifies whether the notification displays a reply button.
 
 

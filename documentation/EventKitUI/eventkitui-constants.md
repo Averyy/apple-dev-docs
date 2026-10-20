@@ -1,12 +1,13 @@
 # EventKitUI Constants
 
-**Framework**: EventKit UI
+**Framework**: EventKit UI  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var EKUI_IS_IOS: Int32](ekui_is_ios.md)
-- [var EKUI_IS_SIMULATOR: Int32](ekui_is_simulator.md)
+- [var EKUI_IS_IOS: Int32](./ekui_is_ios.md)
+- [var EKUI_IS_SIMULATOR: Int32](./ekui_is_simulator.md)
 
 
 ---

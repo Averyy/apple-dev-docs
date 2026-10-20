@@ -1,7 +1,8 @@
 # isInvisible
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is invisible, because either its name begins with a period or its `isInvisible` Finder flag is set.
 

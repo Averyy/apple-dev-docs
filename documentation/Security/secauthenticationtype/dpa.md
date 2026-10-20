@@ -1,7 +1,8 @@
 # SecAuthenticationType.DPA
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies Distributed Password authentication.
 
@@ -13,6 +14,10 @@ Specifies Distributed Password authentication.
 
 ```swift
 case DPA
+```
+
+```c
+kSecAuthenticationTypeDPA
 ```
 
 

@@ -1,7 +1,8 @@
 # MTRClusterAudioOutput
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,35 +19,39 @@
 class MTRClusterAudioOutput
 ```
 
+```objc
+@interface MTRClusterAudioOutput : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusteraudiooutput/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusteraudiooutput/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclusteraudiooutput/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusteraudiooutput/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentOutput(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributecurrentoutput(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeOutputList(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributeoutputlist(with:).md)
-- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteraudiooutput/renameoutput(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteraudiooutput/renameoutput(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteraudiooutput/select(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteraudiooutput/select(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentOutput(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributecurrentoutput%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeOutputList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteraudiooutput/readattributeoutputlist%28with%29.md)
+- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteraudiooutput/renameoutput%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteraudiooutput/renameoutput%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteraudiooutput/select%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteraudiooutput/select%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

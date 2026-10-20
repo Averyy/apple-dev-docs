@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a priming information instance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(leadingFrames: AVAudioFrameCount, trailingFrames: AVAudioFrameCount)](avaudioconverterprimeinfo/init(leadingframes:trailingframes:).md)
+### Creating priming information
+- [init(leadingFrames: AVAudioFrameCount, trailingFrames: AVAudioFrameCount)](./init%28leadingframes,trailingframes%29.md)
   Creates a priming information instance with the specified leading and trailing frames.
 
 

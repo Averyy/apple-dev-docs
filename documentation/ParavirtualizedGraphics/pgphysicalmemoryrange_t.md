@@ -1,7 +1,8 @@
 # PGPhysicalMemoryRange_t
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias PGPhysicalMemoryRange_t = PGPhysicalMemoryRange_s
+```
+
+```c
+typedef struct PGPhysicalMemoryRange_s PGPhysicalMemoryRange_t;
 ```
 
 #### Discussion

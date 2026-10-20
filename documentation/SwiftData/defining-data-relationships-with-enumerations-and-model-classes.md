@@ -1,6 +1,8 @@
 # Defining data relationships with enumerations and model classes
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: Sample Code  
+**Download**: [SwiftDataAnimals.zip](https://docs-assets.developer.apple.com/published/f84bac78ac34/SwiftDataAnimals.zip)
 
 Create relationships for static and dynamic data stored in your app.
 
@@ -14,11 +16,11 @@ Create relationships for static and dynamic data stored in your app.
 
 #### Overview
 
-There are two ways to define data relationships in your app: using enumerations and using the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro in a model class. Which one to use depends on the unique circumstances of your app. This article explains how to apply both approaches to the sample [`SwiftUI`](https://developer.apple.com/documentation/swiftui) app that persist data using SwiftData.
+There are two ways to define data relationships in your app: using enumerations and using the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md) macro in a model class. Which one to use depends on the unique circumstances of your app. This article explains how to apply both approaches to the sample [SwiftUI](../SwiftUI/SwiftUI.md) app that persist data using SwiftData.
 
-##### Relate a Model Class to Static Data
+##### Relate a model class to static data
 
-Enumerations are a convenient way to form relationships between a model class and static data — data that the app defines and doesn’t change. To define the static data, create an enumeration and ensure it conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. SwiftData requires this conformance to persist any data that is of the enumeration type. The following code, for example, declares a `Codable` conforming enumeration that specify the animal type based on their diets:
+Enumerations are a convenient way to form relationships between a model class and static data — data that the app defines and doesn’t change. To define the static data, create an enumeration and ensure it conforms to the [`Codable`](../Swift/codable.md) protocol. SwiftData requires this conformance to persist any data that is of the enumeration type. The following code, for example, declares a `Codable` conforming enumeration that specify the animal type based on their diets:
 
 ```swift
 extension Animal {
@@ -46,7 +48,7 @@ final class Animal {
 }
 ```
 
-A person using the sample app can set the diet of an animal by choosing one of the available `Diet` cases from a [`Picker`](https://developer.apple.com/documentation/swiftui/picker); for example:
+A person using the sample app can set the diet of an animal by choosing one of the available `Diet` cases from a [`Picker`](../SwiftUI/picker.md); for example:
 
 ```swift
 Picker("Diet", selection: $selectedDiet) {
@@ -56,29 +58,29 @@ Picker("Diet", selection: $selectedDiet) {
 }
 ```
 
-To learn more about how the sample app saves data changes, see [`Adding and editing persistent data in your app`](adding-and-editing-persistent-data-in-your-app.md).
+To learn more about how the sample app saves data changes, see [Adding and editing persistent data in your app](./adding-and-editing-persistent-data-in-your-app.md).
 
-##### Relate a Model Class to Dynamic Data
+##### Relate a model class to dynamic data
 
 If the related data is dynamic and unknown to the app — data that comes from an external source such as someone using the app or a remote server — then form a relationship between two model classes instead of a class and enumeration. For instance, the dynamic data in the sample app includes animals and animal categories. An animal can belong to no more than one animal category, and a category can contain zero, one, or more animals.
 
 **iOS**:
 
-![A screenshot of the sample app running in iOS, showing the list of animals that are in the mammal category.](/images/com.apple.SwiftData/Defining-data-relationships-01@2x.png)
+![A screenshot of the sample app running in iOS, showing the list of animals that are in the mammal category.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Defining-data-relationships-01@2x.png)
 
 **iPadOS**:
 
-![A screenshot of the sample app running in iPadOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](/images/com.apple.SwiftData/Defining-data-relationships-02@2x.png)
+![A screenshot of the sample app running in iPadOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Defining-data-relationships-02@2x.png)
 
 **macOS**:
 
-![A screenshot of the sample app running in macOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](/images/com.apple.SwiftData/Defining-data-relationships-04@2x.png)
+![A screenshot of the sample app running in macOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Defining-data-relationships-04@2x.png)
 
 **tvOS**:
 
-![A screenshot of the sample app running in tvOS, showing the list of animals that are in the Mammal category. The first animal, cat, is highlighted.](/images/com.apple.SwiftData/Defining-data-relationships-03@2x.png)
+![A screenshot of the sample app running in tvOS, showing the list of animals that are in the Mammal category. The first animal, cat, is highlighted.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Defining-data-relationships-03@2x.png)
 
-To declare this relationship, the `AnimalCategory` class defines the property `animals`, which represents the animals contained in the category. The class also applies the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro to the `animals` property. This macro defines the relationship between the `AnimalCategory` and `Animal` model classes.
+To declare this relationship, the `AnimalCategory` class defines the property `animals`, which represents the animals contained in the category. The class also applies the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md) macro to the `animals` property. This macro defines the relationship between the `AnimalCategory` and `Animal` model classes.
 
 ```swift
 @Model
@@ -97,27 +99,27 @@ final class AnimalCategory {
 
 Set the parameter values of this macro to configure the relationship. For example, the `deleteRule` parameter specifies how SwiftData handles related data during delete operations. The `inverse` parameter is a key path to the store property, `category`, declared in the related model class, `Animal`. The inverse parameter forms the relationship between the two classes, `AnimalCategory` and `Animal`, and the `category` property declared in `Animal` provides a reference to an animal category.
 
-##### Set a Relationships Delete Rule
+##### Set a relationship’s delete rule
 
-The `deleteRule` parameter specifies how SwiftData handles delete operations with regards to the related data. The [`Schema.Relationship.DeleteRule.cascade`](schema/relationship/deleterule-swift.enum/cascade.md) delete rule tells SwiftData to delete all related data when deleting the primary object. For example, deleting an `AnimalCategory` in the sample app causes SwiftData to also delete all animals contained in that category.
+The `deleteRule` parameter specifies how SwiftData handles delete operations with regards to the related data. The [`Schema.Relationship.DeleteRule.cascade`](./schema/relationship/deleterule-swift.enum/cascade.md) delete rule tells SwiftData to delete all related data when deleting the primary object. For example, deleting an `AnimalCategory` in the sample app causes SwiftData to also delete all animals contained in that category.
 
 ```swift
 @Relationship(deleteRule: .cascade, inverse: \Animal.category)
 var animals = [Animal]()
 ```
 
-If you don’t want to delete the animals within a category, you can use the [`Schema.Relationship.DeleteRule.nullify`](schema/relationship/deleterule-swift.enum/nullify.md) delete rule. This rule tells SwiftData to set the animal’s `category` property to `nil` for each animal contained in the animal category when deleting the category. Because the default value for the `deleteRule` parameter is `nullify`, you can create the relationship without explicitly specifying the delete rule, like so:
+If you don’t want to delete the animals within a category, you can use the [`Schema.Relationship.DeleteRule.nullify`](./schema/relationship/deleterule-swift.enum/nullify.md) delete rule. This rule tells SwiftData to set the animal’s `category` property to `nil` for each animal contained in the animal category when deleting the category. Because the default value for the `deleteRule` parameter is `nullify`, you can create the relationship without explicitly specifying the delete rule, like so:
 
 ```swift
 @Relationship(inverse: \Animal.category)
 var animals = [Animal]()
 ```
 
-For a complete list of delete rules, see [`Schema.Relationship.DeleteRule`](schema/relationship/deleterule-swift.enum.md).
+For a complete list of delete rules, see [`Schema.Relationship.DeleteRule`](./schema/relationship/deleterule-swift.enum.md).
 
-##### Create a Model Container
+##### Create a model container
 
-Whether your data model includes relationships, you must always create a model container for your app when using SwiftData. The sample app creates a model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-18hhy) modifier, passing in the model type `AnimalCategory.self`:
+Whether your data model includes relationships, you must always create a model container for your app when using SwiftData. The sample app creates a model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](../SwiftUI/view/modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29-18hhy.md) modifier, passing in the model type `AnimalCategory.self`:
 
 ```swift
 @main
@@ -134,23 +136,24 @@ struct SwiftDataAnimalsApp: App {
 SwiftData uses the model type to construct the schema that determines the structure of the persistent storage area. The schema also includes all related types that form the object graph of the provided model type. For instance, `AnimalCategory` is a root model type of an object graph. `AnimalCategory` contains a relationship to the model type `Animal`, which means that the schema includes `Animal` along with `AnimalCategory`. If `Animal` had a relationship to another model type, the schema would also include that type.
 
 If your app defines multiple root model types, use the
-[`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-8oc48) modifier, passing in an array that contains each root model type used in your app.
+[`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](../SwiftUI/view/modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29-8oc48.md) modifier, passing in an array that contains each root model type used in your app.
 
 ## See Also
 
-- [macro Model()](model().md)
+### Model definition
+- [macro Model()](./model%28%29.md)
   Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
+- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](./attribute%28_,originalname,hashmodifier%29.md)
   Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Unique<T>([PartialKeyPath<T>]...)](unique(_:).md)
+- [macro Unique<T>([PartialKeyPath<T>]...)](./unique%28_%29.md)
   Specifies the key-paths that SwiftData uses to enforce the uniqueness of model instances.
-- [macro Index<T>([PartialKeyPath<T>]...)](index(_:)-74ia2.md)
+- [macro Index<T>([PartialKeyPath<T>]...)](./index%28_%29-74ia2.md)
   Specifies the key-paths that SwiftData uses to create one or more binary indices for the associated model.
-- [macro Index<T>(Schema.Index<T>.Types<T>...)](index(_:)-7d4z0.md)
+- [macro Index<T>(Schema.Index<T>.Types<T>...)](./index%28_%29-7d4z0.md)
   Specifies the key-paths that SwiftData uses to create one or more indicies for the associated model, where each index is either binary or R-tree.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
+- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md)
   Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [macro Transient()](transient().md)
+- [macro Transient()](./transient%28%29.md)
   Tells SwiftData not to persist the annotated property when managing the owning class.
 
 

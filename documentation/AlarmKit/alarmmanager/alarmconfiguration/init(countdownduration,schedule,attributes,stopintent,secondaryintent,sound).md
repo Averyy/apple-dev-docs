@@ -1,7 +1,8 @@
 # init(countdownDuration:schedule:attributes:stopIntent:secondaryIntent:sound:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration that behaves like a countdown.
 
@@ -27,7 +28,8 @@ init(countdownDuration: Alarm.CountdownDuration? = nil, schedule: Alarm.Schedule
 
 ## See Also
 
-- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/timer(duration:attributes:stopintent:secondaryintent:sound:).md)
+### Configuring a countdown
+- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](./timer%28duration,attributes,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a traditional timer.
 
 

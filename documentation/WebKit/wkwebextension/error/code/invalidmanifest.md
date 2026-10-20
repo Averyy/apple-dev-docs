@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.invalidManifest
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that an invalid `manifest.json` was encountered.
 
@@ -16,6 +17,10 @@ Indicates that an invalid `manifest.json` was encountered.
 
 ```swift
 case invalidManifest
+```
+
+```c
+WKWebExtensionErrorInvalidManifest
 ```
 
 

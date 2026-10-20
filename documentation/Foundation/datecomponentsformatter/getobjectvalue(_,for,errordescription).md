@@ -1,7 +1,8 @@
 # getObjectValue(_:for:errorDescription:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 `NSDateComponentsFormatter` currently only implements formatting, not parsing. Until it implements parsing, this will always return `NO`.
 
@@ -18,6 +19,10 @@
 
 ```swift
 func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool
+```
+
+```objc
+- (BOOL) getObjectValue:(id*) obj forString:(NSString *) string errorDescription:(NSString **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A function you call to cancel a geocoding request that’s in progress.
 
@@ -18,6 +19,10 @@ A function you call to cancel a geocoding request that’s in progress.
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 

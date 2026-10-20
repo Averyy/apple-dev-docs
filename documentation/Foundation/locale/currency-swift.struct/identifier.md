@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency’s identifier.
 
@@ -22,7 +23,8 @@ var identifier: String { get set }
 
 ## See Also
 
-- [var isISOCurrency: Bool](locale/currency-swift.struct/isisocurrency.md)
+### Examining currency properties
+- [var isISOCurrency: Bool](./isisocurrency.md)
   A Boolean value that indicates whether the currency is in the list of ISO-defined currencies.
 
 

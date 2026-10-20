@@ -1,7 +1,8 @@
 # tab(forIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tab with a matching identifier, if any.
 
@@ -18,13 +19,18 @@ Returns a tab with a matching identifier, if any.
 func tab(forIdentifier identifier: String) -> UITab?
 ```
 
+```objc
+- (UITab *) tabForIdentifier:(NSString *) identifier;
+```
+
 ## See Also
 
-- [var children: [UITab]](uitabgroup/children.md)
+### Accessing tabs
+- [var children: [UITab]](./children.md)
   The tabs within a tab group.
-- [var defaultChildIdentifier: String?](uitabgroup/defaultchildidentifier.md)
+- [var defaultChildIdentifier: String?](./defaultchildidentifier.md)
   The identifier for the default subitem.
-- [var selectedChild: UITab?](uitabgroup/selectedchild.md)
+- [var selectedChild: UITab?](./selectedchild.md)
   The currently selected tab.
 
 

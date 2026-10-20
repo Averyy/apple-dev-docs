@@ -1,7 +1,8 @@
 # AppSchema.MapsEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the maps domain.
 
@@ -21,39 +22,40 @@ protocol MapsEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var currentLocation: some AppSchemaEntity](appschema/mapsentity/currentlocation.md)
+- [var currentLocation: some AppSchemaEntity](./mapsentity/currentlocation.md)
   An entity schema for a current location.
-- [var navigationSession: some AppSchemaEntity](appschema/mapsentity/navigationsession.md)
+- [var navigationSession: some AppSchemaEntity](./mapsentity/navigationsession.md)
   An entity schema for a navigation session.
-- [var operatingHours: some AppSchemaEntity](appschema/mapsentity/operatinghours.md)
+- [var operatingHours: some AppSchemaEntity](./mapsentity/operatinghours.md)
   An entity schema for an operating hours.
-- [var operatingTimeRange: some AppSchemaEntity](appschema/mapsentity/operatingtimerange.md)
+- [var operatingTimeRange: some AppSchemaEntity](./mapsentity/operatingtimerange.md)
   An entity schema for an operating time range.
-- [var place: some AppSchemaEntity](appschema/mapsentity/place.md)
+- [var place: some AppSchemaEntity](./mapsentity/place.md)
   An entity schema for a place.
-- [var rating: some AppSchemaEntity](appschema/mapsentity/rating.md)
+- [var rating: some AppSchemaEntity](./mapsentity/rating.md)
   An entity schema for a rating.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var currentLocation: some AppSchemaEntity](appschema/mapsentity/currentlocation.md)
+### Content and parameter types
+- [var currentLocation: some AppSchemaEntity](./mapsentity/currentlocation.md)
   An entity schema for a current location.
-- [var navigationSession: some AppSchemaEntity](appschema/mapsentity/navigationsession.md)
+- [var navigationSession: some AppSchemaEntity](./mapsentity/navigationsession.md)
   An entity schema for a navigation session.
-- [var operatingHours: some AppSchemaEntity](appschema/mapsentity/operatinghours.md)
+- [var operatingHours: some AppSchemaEntity](./mapsentity/operatinghours.md)
   An entity schema for an operating hours.
-- [var operatingTimeRange: some AppSchemaEntity](appschema/mapsentity/operatingtimerange.md)
+- [var operatingTimeRange: some AppSchemaEntity](./mapsentity/operatingtimerange.md)
   An entity schema for an operating time range.
-- [var place: some AppSchemaEntity](appschema/mapsentity/place.md)
+- [var place: some AppSchemaEntity](./mapsentity/place.md)
   An entity schema for a place.
-- [var rating: some AppSchemaEntity](appschema/mapsentity/rating.md)
+- [var rating: some AppSchemaEntity](./mapsentity/rating.md)
   An entity schema for a rating.
 
 

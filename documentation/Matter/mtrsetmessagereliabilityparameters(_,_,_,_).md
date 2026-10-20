@@ -1,7 +1,8 @@
 # MTRSetMessageReliabilityParameters(_:_:_:_:)
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func MTRSetMessageReliabilityParameters(_ idleRetransmitMs: NSNumber?, _ activeRetransmitMs: NSNumber?, _ activeThresholdMs: NSNumber?, _ additionalRetransmitDelayMs: NSNumber?)
+```
+
+```c
+extern void MTRSetMessageReliabilityParameters(NSNumber *idleRetransmitMs, NSNumber *activeRetransmitMs, NSNumber *activeThresholdMs, NSNumber *additionalRetransmitDelayMs);
 ```
 
 

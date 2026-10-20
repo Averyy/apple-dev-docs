@@ -1,7 +1,8 @@
 # init(exporting:importing:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 an entity and an `IntentPerson`.
 
@@ -19,6 +20,8 @@ an entity and an `IntentPerson`.
 ```swift
 init(exporting: @escaping @Sendable (Item) async throws -> IntentValue, importing: @escaping @Sendable (IntentValue) async throws -> Item)
 ```
+
+Available when `Item` conforms to `Transferable` and `IntentValue` is `IntentPerson`.
 
 #### Example
 

@@ -1,7 +1,8 @@
 # Relationship
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A to-one or to-many relationship from one resource object to others.
 
@@ -10,14 +11,14 @@ A to-one or to-many relationship from one resource object to others.
 
 ## Declaration
 
-```swift
+```
 object Relationship
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Relationship.Meta](relationship/meta-data.dictionary.md)
+- [object Relationship.Meta](./relationship/meta-data.dictionary.md)
 
 ## Properties
 
@@ -28,7 +29,8 @@ object Relationship
 
 ## See Also
 
-- [object Resource](resource.md)
+### Getting resource and relationship information
+- [object Resource](./resource.md)
   A resource such as an app or book.
 
 

@@ -1,7 +1,8 @@
 # receiveOutput
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that executes when the publisher receives output from the upstream publisher, and can raise a debugger signal by returning a true Boolean value.
 
@@ -22,11 +23,12 @@ let receiveOutput: ((Upstream.Output) -> Bool)?
 
 ## See Also
 
-- [let upstream: Upstream](publishers/breakpoint/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let receiveSubscription: ((any Subscription) -> Bool)?](publishers/breakpoint/receivesubscription.md)
+- [let receiveSubscription: ((any Subscription) -> Bool)?](./receivesubscription.md)
   A closure that executes when the publisher receives a subscription, and can raise a debugger signal by returning a true Boolean value.
-- [let receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?](publishers/breakpoint/receivecompletion.md)
+- [let receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?](./receivecompletion.md)
   A closure that executes when the publisher receives completion, and can raise a debugger signal by returning a true Boolean value.
 
 

@@ -1,7 +1,8 @@
 # DockAccessory.CameraOrientation
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of camera orientations used to extract coordinates.
 
@@ -20,42 +21,43 @@ enum CameraOrientation
 ## Topics
 
 ### Getting camera orientation
-- [DockAccessory.CameraOrientation.corrected](dockaccessory/cameraorientation/corrected.md)
+- [DockAccessory.CameraOrientation.corrected](./cameraorientation/corrected.md)
   The orientation corresponds to the unit rectangle.
-- [DockAccessory.CameraOrientation.faceUp](dockaccessory/cameraorientation/faceup.md)
+- [DockAccessory.CameraOrientation.faceUp](./cameraorientation/faceup.md)
   The orientation is facing up.
-- [DockAccessory.CameraOrientation.faceDown](dockaccessory/cameraorientation/facedown.md)
+- [DockAccessory.CameraOrientation.faceDown](./cameraorientation/facedown.md)
   The orientation is facing down.
-- [DockAccessory.CameraOrientation.landscapeLeft](dockaccessory/cameraorientation/landscapeleft.md)
+- [DockAccessory.CameraOrientation.landscapeLeft](./cameraorientation/landscapeleft.md)
   The orientation is landscape left.
-- [DockAccessory.CameraOrientation.landscapeRight](dockaccessory/cameraorientation/landscaperight.md)
+- [DockAccessory.CameraOrientation.landscapeRight](./cameraorientation/landscaperight.md)
   The orientation is landscape right.
-- [DockAccessory.CameraOrientation.portrait](dockaccessory/cameraorientation/portrait.md)
+- [DockAccessory.CameraOrientation.portrait](./cameraorientation/portrait.md)
   The orientation is portrait.
-- [DockAccessory.CameraOrientation.portraitUpsideDown](dockaccessory/cameraorientation/portraitupsidedown.md)
+- [DockAccessory.CameraOrientation.portraitUpsideDown](./cameraorientation/portraitupsidedown.md)
   The orientation is portrait, upside down.
-- [DockAccessory.CameraOrientation.unknown](dockaccessory/cameraorientation/unknown.md)
+- [DockAccessory.CameraOrientation.unknown](./cameraorientation/unknown.md)
   The orientation is unknown.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func selectSubject(at: CGPoint) async throws](dockaccessory/selectsubject(at:).md)
+### Selecting and tracking
+- [func selectSubject(at: CGPoint) async throws](./selectsubject%28at%29.md)
   Selects a subject to track at the supplied coordinates.
-- [func track([AVMetadataObject], cameraInformation: DockAccessory.CameraInformation) async throws](dockaccessory/track(_:camerainformation:)-4yl9b.md)
+- [func track([AVMetadataObject], cameraInformation: DockAccessory.CameraInformation) async throws](./track%28_,camerainformation%29-4yl9b.md)
   Automatically generate and send tracking vectors to the device.
-- [func track([DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation) async throws](dockaccessory/track(_:camerainformation:)-44mwn.md)
+- [func track([DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation) async throws](./track%28_,camerainformation%29-44mwn.md)
   Automatically generate and send tracking vectors to the device.
-- [DockAccessory.Observation](dockaccessory/observation.md)
+- [DockAccessory.Observation](./observation.md)
   An observation of the contents of a single video frame.
-- [DockAccessory.CameraInformation](dockaccessory/camerainformation.md)
+- [DockAccessory.CameraInformation](./camerainformation.md)
   A collection of tracking information about the camera currently in use.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that serves as the delegate to the interface controller.
 
@@ -16,13 +17,18 @@ An object that serves as the delegate to the interface controller.
 weak var delegate: (any CPInterfaceControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<CPInterfaceControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol CPInterfaceControllerDelegate](cpinterfacecontrollerdelegate.md)
+### Configuring the Interface Controller
+- [protocol CPInterfaceControllerDelegate](../cpinterfacecontrollerdelegate.md)
   The interface that an object implements to serve as a delegate to an interface controller.
-- [var prefersDarkUserInterfaceStyle: Bool](cpinterfacecontroller/prefersdarkuserinterfacestyle.md)
+- [var prefersDarkUserInterfaceStyle: Bool](./prefersdarkuserinterfacestyle.md)
   A Boolean value that determines whether the system draws the user interface in Dark Mode.
-- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/setroottemplate(_:animated:completion:).md)
+- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./setroottemplate%28_,animated,completion%29.md)
   Sets the root template of the navigation hierarchy.
 
 

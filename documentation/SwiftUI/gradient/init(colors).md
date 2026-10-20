@@ -1,7 +1,8 @@
 # init(colors:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gradient from an array of colors.
 

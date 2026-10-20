@@ -1,7 +1,8 @@
 # errSecInvalidQuery
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified query is not valid.
 
@@ -18,6 +19,10 @@ The specified query is not valid.
 
 ```swift
 var errSecInvalidQuery: OSStatus { get }
+```
+
+```c
+errSecInvalidQuery
 ```
 
 

@@ -1,7 +1,8 @@
 # altText
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The alternative text for a corresponding image.
 
@@ -10,9 +11,13 @@ The alternative text for a corresponding image.
 
 ## Declaration
 
-```swift
+```
 string altText
 ```
+
+
+
+**Maximum Length**: `150`
 
 #### Discussion
 
@@ -20,11 +25,12 @@ Provide the `altText` as a UTF-8-encoded string. The maximum string length for `
 
 ## See Also
 
-- [type imageIdentifier](imageidentifier.md)
+### Images
+- [type imageIdentifier](./imageidentifier.md)
   A unique identifier for an image that you provide when you upload the image.
-- [type imageState](imagestate.md)
+- [type imageState](./imagestate.md)
   The approval state of an image.
-- [type imageSize](imagesize.md)
+- [type imageSize](./imagesize.md)
   The size of an image.
 
 

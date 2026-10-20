@@ -1,14 +1,15 @@
 # CompleteAsyncIO
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void CompleteAsyncIO(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp, OSDispatchMethod supermethod);
 ```
 

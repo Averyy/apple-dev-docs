@@ -1,7 +1,8 @@
 # SynchronizationComponent.OwnershipTransferCompletionResult.granted
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request is accepted and ownership is transferred.
 
@@ -11,7 +12,7 @@ The request is accepted and ownership is transferred.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ case granted
 
 ## See Also
 
-- [SynchronizationComponent.OwnershipTransferCompletionResult.timedOut](synchronizationcomponent/ownershiptransfercompletionresult/timedout.md)
+### Ownership transfer completion results
+- [SynchronizationComponent.OwnershipTransferCompletionResult.timedOut](./timedout.md)
   The ownership transfer request timed out.
 
 

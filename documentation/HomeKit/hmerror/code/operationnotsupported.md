@@ -1,7 +1,8 @@
 # HMError.Code.operationNotSupported
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to use an unsupported operation.
 
@@ -19,27 +20,32 @@ An attempt to use an unsupported operation.
 case operationNotSupported
 ```
 
+```c
+HMErrorCodeOperationNotSupported
+```
+
 ## See Also
 
-- [HMError.Code.alreadyExists](hmerror/code/alreadyexists.md)
+### General errors
+- [HMError.Code.alreadyExists](./alreadyexists.md)
   An error indicating the container already contains the object you are trying to add.
-- [HMError.Code.genericError](hmerror/code/genericerror.md)
+- [HMError.Code.genericError](./genericerror.md)
   An error that does not have a more specific error code.
-- [static var incompatibleHomeHub: HMError.Code](hmerror/code/incompatiblehomehub.md)
+- [static var incompatibleHomeHub: HMError.Code](./incompatiblehomehub.md)
   An error indicating an incompatible home hub.
-- [HMError.Code.invalidClass](hmerror/code/invalidclass.md)
+- [HMError.Code.invalidClass](./invalidclass.md)
   An attempt to use an abstract base class in an operation instead of a concrete subclass.
-- [HMError.Code.notFound](hmerror/code/notfound.md)
+- [HMError.Code.notFound](./notfound.md)
   An error indicating the object was not found in the container.
-- [HMError.Code.notificationAlreadyEnabled](hmerror/code/notificationalreadyenabled.md)
+- [HMError.Code.notificationAlreadyEnabled](./notificationalreadyenabled.md)
   An error indicating the notification is already enabled.
-- [HMError.Code.notificationNotSupported](hmerror/code/notificationnotsupported.md)
+- [HMError.Code.notificationNotSupported](./notificationnotsupported.md)
   An attempt to register for notifications from an accessory that does not support notifications.
-- [HMError.Code.unexpectedError](hmerror/code/unexpectederror.md)
+- [HMError.Code.unexpectedError](./unexpectederror.md)
   An unexpected error.
-- [HMError.Code.missingEntitlement](hmerror/code/missingentitlement.md)
+- [HMError.Code.missingEntitlement](./missingentitlement.md)
   An error indicating a required entitlement is not available.
-- [HMError.Code.referToUserManual](hmerror/code/refertousermanual.md)
+- [HMError.Code.referToUserManual](./refertousermanual.md)
   An error described in the device’s user manual.
 
 

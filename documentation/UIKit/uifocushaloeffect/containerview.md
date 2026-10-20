@@ -1,7 +1,8 @@
 # containerView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container view to place the halo effect into.
 
@@ -17,17 +18,22 @@ The container view to place the halo effect into.
 weak var containerView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) UIView * containerView;
+```
+
 #### Discussion
 
-If you don’t set this property, the system automatically determines the container according to the focus item that provides the effect and [`referenceView`](uifocushaloeffect/referenceview.md), if present.
+If you don’t set this property, the system automatically determines the container according to the focus item that provides the effect and [`referenceView`](./referenceview.md), if present.
 
 ## See Also
 
-- [var referenceView: UIView?](uifocushaloeffect/referenceview.md)
+### Configuring a halo effect
+- [var referenceView: UIView?](./referenceview.md)
   The view to place the halo effect above.
-- [var position: UIFocusHaloEffect.Position](uifocushaloeffect/position-swift.property.md)
+- [var position: UIFocusHaloEffect.Position](./position-swift.property.md)
   The position of the halo effect relative to its shape.
-- [UIFocusHaloEffect.Position](uifocushaloeffect/position-swift.enum.md)
+- [UIFocusHaloEffect.Position](./position-swift.enum.md)
   Constants that describe positions for drawing the halo focus effect.
 
 

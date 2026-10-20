@@ -2,6 +2,7 @@
 
 **Framework**: DeveloperToolsSupport  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates a collection of SwiftUI view modifiers to add to the Xcode library.
@@ -24,7 +25,7 @@ func modifiers(base: Self.ModifierBase) -> [LibraryItem]
 
 #### Discussion
 
-Xcode adds the [`LibraryItem`](libraryitem.md) instances returned by your implementation of this method to its Modifiers library. The following restrictions apply:
+Xcode adds the [`LibraryItem`](../libraryitem.md) instances returned by your implementation of this method to its Modifiers library. The following restrictions apply:
 
 - You must instantiate the library items inline.
 - If specified, the item’s `title`, `category`, and `matchingSignature` must be static strings and not `nil`.
@@ -35,9 +36,16 @@ Xcode adds the [`LibraryItem`](libraryitem.md) instances returned by your implem
 
 - `base`: An instance to apply modifiers to when declaring a library item.
 
+## Default Implementations
+
+### LibraryContentProvider Implementations
+- [func modifiers(base: Self.ModifierBase) -> [LibraryItem]](./modifiers%28base%29-4gfkr.md)
+  Indicates a collection of SwiftUI view modifiers to add to the Xcode library.
+
 ## See Also
 
-- [associatedtype ModifierBase = Any](librarycontentprovider/modifierbase.md)
+### Adding Modifiers
+- [associatedtype ModifierBase = Any](./modifierbase.md)
   A type to use as a base for modifier completions.
 
 

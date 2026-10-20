@@ -1,7 +1,8 @@
 # firstIndex(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first index in which an element of the collection satisfies the given predicate.
 
@@ -36,7 +37,7 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 // Prints "Abena starts with 'A'!"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
@@ -44,15 +45,16 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 
 ## See Also
 
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](dictionary/contains(where:).md)
+### Finding Elements
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](dictionary/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 
 

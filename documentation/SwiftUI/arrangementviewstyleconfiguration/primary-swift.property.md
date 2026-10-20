@@ -1,7 +1,8 @@
 # primary
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary view to lay out in an arrangement view.
 
@@ -22,11 +23,12 @@ var primary: ArrangementViewStyleConfiguration.Primary { get }
 
 ## See Also
 
-- [ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.struct.md)
+### Setting up a configuration
+- [ArrangementViewStyleConfiguration.Primary](./primary-swift.struct.md)
   A type-erased view of the primary content of an arrangement view.
-- [var secondary: ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.property.md)
+- [var secondary: ArrangementViewStyleConfiguration.Secondary](./secondary-swift.property.md)
   The secondary view to lay out in an arrangement view.
-- [ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.struct.md)
+- [ArrangementViewStyleConfiguration.Secondary](./secondary-swift.struct.md)
   A type-erased view of the secondary content of an arrangement view.
 
 

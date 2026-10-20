@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kPlotIconRefNoImage: Int](kploticonrefnoimage.md)
-- [var kPlotIconRefNoMask: Int](kploticonrefnomask.md)
-- [var kPlotIconRefNormalFlags: Int](kploticonrefnormalflags.md)
+- [var kPlotIconRefNoImage: Int](../kploticonrefnoimage.md)
+- [var kPlotIconRefNoMask: Int](../kploticonrefnomask.md)
+- [var kPlotIconRefNormalFlags: Int](../kploticonrefnormalflags.md)
 
 
 ---

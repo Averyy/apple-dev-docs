@@ -1,7 +1,8 @@
 # performanceMode
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial performance configuration of the data path when connected.
 
@@ -18,7 +19,8 @@ var performanceMode: WAPerformanceMode
 
 ## See Also
 
-- [init(performanceMode: WAPerformanceMode)](waparameters/init(performancemode:).md)
+### Checking the configured performance mode
+- [init(performanceMode: WAPerformanceMode)](./init%28performancemode%29.md)
   Initializes the parameters with defaults.
 
 

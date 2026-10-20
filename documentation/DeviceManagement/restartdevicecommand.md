@@ -1,7 +1,8 @@
 # RestartDeviceCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remotely and immediately restart a device.
 
@@ -14,18 +15,18 @@ The command to remotely and immediately restart a device.
 
 ## Declaration
 
-```swift
+```
 object RestartDeviceCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object RestartDeviceCommand.Command](restartdevicecommand/command-data.dictionary.md)
+- [object RestartDeviceCommand.Command](./restartdevicecommand/command-data.dictionary.md)
   The command to remotely and immediately restart a device.
 
 ## Properties
@@ -35,7 +36,8 @@ object RestartDeviceCommand
 
 ## See Also
 
-- [object RestartDeviceResponse](restartdeviceresponse.md)
+### Commands and responses
+- [object RestartDeviceResponse](./restartdeviceresponse.md)
   A response from the device after it processes the command to remotely and immediately restart a device.
 
 

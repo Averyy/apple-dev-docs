@@ -1,7 +1,8 @@
 # isHandlingWriting
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user is actively writing.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the user is actively writing.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

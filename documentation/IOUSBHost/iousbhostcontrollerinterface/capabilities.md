@@ -1,7 +1,8 @@
 # capabilities
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,12 +14,17 @@
 var capabilities: UnsafePointer<IOUSBHostCIMessage> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) const IOUSBHostCIMessage * capabilities;
+```
+
 ## See Also
 
-- [var controllerStateMachine: IOUSBHostCIControllerStateMachine](iousbhostcontrollerinterface/controllerstatemachine.md)
-- [var interruptRateHz: Int](iousbhostcontrollerinterface/interruptratehz.md)
-- [var queue: dispatch_queue_t](iousbhostcontrollerinterface/queue.md)
-- [var uuid: UUID](iousbhostcontrollerinterface/uuid.md)
+### Instance Properties
+- [var controllerStateMachine: IOUSBHostCIControllerStateMachine](./controllerstatemachine.md)
+- [var interruptRateHz: Int](./interruptratehz.md)
+- [var queue: dispatch_queue_t](./queue.md)
+- [var uuid: UUID](./uuid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # WKInterfaceSwitch
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface element that toggles between an On and Off state.
 
@@ -12,6 +13,10 @@ An interface element that toggles between an On and Off state.
 
 ```swift
 class WKInterfaceSwitch
+```
+
+```objc
+@interface WKInterfaceSwitch : WKInterfaceObject
 ```
 
 #### Overview
@@ -56,62 +61,63 @@ Xcode lets you configure information about switches in your storyboard file. The
 
 | Attribute | Description |
 | --- | --- |
-| State | The initial state of the switch. The switch can be off or on. You can modify the state of the switch programmatically at runtime using the [`setOn(_:)`](wkinterfaceswitch/seton(_:).md) method. |
+| State | The initial state of the switch. The switch can be off or on. You can modify the state of the switch programmatically at runtime using the [`setOn(_:)`](./wkinterfaceswitch/seton%28_%29.md) method. |
 | Tint | The color of the switch when it is in the on state. |
-| Enabled | A checkbox indicating whether the switch is enabled. An enabled switch calls its action method when the user changes the state of the switch. You can enable or disable a switch programmatically using the [`setEnabled(_:)`](wkinterfaceswitch/setenabled(_:).md) method. |
+| Enabled | A checkbox indicating whether the switch is enabled. An enabled switch calls its action method when the user changes the state of the switch. You can enable or disable a switch programmatically using the [`setEnabled(_:)`](./wkinterfaceswitch/setenabled%28_%29.md) method. |
 | Title | The string to be displayed next to the switch. If specified, the title string is displayed next to the switch. |
-| Color | The text color for the switch’s title string. You can also set the switch color using the [`setColor(_:)`](wkinterfaceswitch/setcolor(_:).md) method. |
+| Color | The text color for the switch’s title string. You can also set the switch color using the [`setColor(_:)`](./wkinterfaceswitch/setcolor%28_%29.md) method. |
 | Font | The font information to be applied to the title string. You can specify one of the predefined styles or provide custom style information. |
 
 ## Topics
 
 ### Setting the Switch’s Title
-- [func setTitle(String?)](wkinterfaceswitch/settitle(_:).md)
+- [func setTitle(String?)](./wkinterfaceswitch/settitle%28_%29.md)
   Sets the switch title to the specified string.
-- [func setAttributedTitle(NSAttributedString?)](wkinterfaceswitch/setattributedtitle(_:).md)
+- [func setAttributedTitle(NSAttributedString?)](./wkinterfaceswitch/setattributedtitle%28_%29.md)
   Sets the switch title to the specified attributed string.
 ### Configuring the Switch
-- [func setOn(Bool)](wkinterfaceswitch/seton(_:).md)
+- [func setOn(Bool)](./wkinterfaceswitch/seton%28_%29.md)
   Sets the state of the switch to the specified value.
-- [func setColor(UIColor?)](wkinterfaceswitch/setcolor(_:).md)
+- [func setColor(UIColor?)](./wkinterfaceswitch/setcolor%28_%29.md)
   Changes the tint color of the switch when it is on.
 ### Enabling the Switch
-- [func setEnabled(Bool)](wkinterfaceswitch/setenabled(_:).md)
+- [func setEnabled(Bool)](./wkinterfaceswitch/setenabled%28_%29.md)
   Enables or disables the switch.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md)
+### Controls
+- [class WKInterfaceLabel](./wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md)
+- [class WKInterfaceDate](./wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md)
+- [class WKInterfaceTimer](./wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceButton](wkinterfacebutton.md)
+- [class WKInterfaceButton](./wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
+- [class WKInterfaceAuthorizationAppleIDButton](./wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
+- [class WKInterfacePaymentButton](./wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md)
+- [class WKInterfaceTextField](./wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSlider](wkinterfaceslider.md)
+- [class WKInterfaceSlider](./wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
+- [class WKInterfaceActivityRing](./wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
-- [class WKInterfaceMap](wkinterfacemap.md)
+- [class WKInterfaceMap](./wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

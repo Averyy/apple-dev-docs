@@ -1,7 +1,8 @@
 # HMCharacteristicValueTemperatureUnit.fahrenheit
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Temperature is reported in degrees Fahrenheit.
 
@@ -19,9 +20,14 @@ Temperature is reported in degrees Fahrenheit.
 case fahrenheit
 ```
 
+```c
+HMCharacteristicValueTemperatureUnitFahrenheit
+```
+
 ## See Also
 
-- [HMCharacteristicValueTemperatureUnit.celsius](hmcharacteristicvaluetemperatureunit/celsius.md)
+### Temperature Units
+- [HMCharacteristicValueTemperatureUnit.celsius](./celsius.md)
   Temperature is reported in degrees Celsius.
 
 

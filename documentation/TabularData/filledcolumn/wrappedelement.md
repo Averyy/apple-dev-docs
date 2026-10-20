@@ -1,7 +1,8 @@
 # FilledColumn.WrappedElement
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the column’s elements that defines an associated type for the optional column protocol.
 
@@ -22,11 +23,12 @@ typealias WrappedElement = Base.WrappedElement
 
 #### Discussion
 
-See [`OptionalColumnProtocol`](optionalcolumnprotocol.md) for more information.
+See [`OptionalColumnProtocol`](../optionalcolumnprotocol.md) for more information.
 
 ## See Also
 
-- [FilledColumn.Element](filledcolumn/element.md)
+### Supporting Types
+- [FilledColumn.Element](./element.md)
   The type of the column’s elements that defines an associated type for the bidirectional collection protocol.
 
 

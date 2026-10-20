@@ -1,7 +1,8 @@
 # finish()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finishes the authentication operation.
 
@@ -18,6 +19,10 @@ Finishes the authentication operation.
 
 ```swift
 func finish() throws
+```
+
+```objc
+- (BOOL) finishWithError:(NSError **) error;
 ```
 
 

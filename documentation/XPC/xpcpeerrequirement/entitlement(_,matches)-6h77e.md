@@ -1,7 +1,8 @@
 # entitlement(_:matches:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a requirement that the peer has the specified entitlement with the matching bool value
 

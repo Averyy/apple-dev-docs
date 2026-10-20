@@ -1,7 +1,8 @@
 # MIDIEventPacketSysexBytesForGroup(_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets MIDI 1.0 system-exclusive (SysEx) bytes on the indicated group.
 
@@ -18,31 +19,36 @@ Gets MIDI 1.0 system-exclusive (SysEx) bytes on the indicated group.
 func MIDIEventPacketSysexBytesForGroup(_ pkt: UnsafePointer<MIDIEventPacket>, _ groupIndex: UInt8, _ outData: UnsafeMutablePointer<Unmanaged<CFData>?>) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIEventPacketSysexBytesForGroup(const MIDIEventPacket *pkt, UInt8 groupIndex, CFDataRef*outData);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 ## Parameters
 
-- `pkt`: A [`MIDIEventPacket`](midieventpacket.md) that contains universal MIDI packet (UMP) SysEx data.
+- `pkt`: A [`MIDIEventPacket`](./midieventpacket.md) that contains universal MIDI packet (UMP) SysEx data.
 - `groupIndex`: The target group index, from `0` to `15`.
 - `outData`: When successful, a reference byte stream of extracted SysEx data.
 
 ## See Also
 
-- [var destination: MIDIEndpointRef](midisysexsendrequestump/destination.md)
+### Configuring and inspecting a request
+- [var destination: MIDIEndpointRef](./midisysexsendrequestump/destination.md)
   The endpoint to send the event to.
-- [var words: UnsafeMutablePointer<UInt32>](midisysexsendrequestump/words.md)
+- [var words: UnsafeMutablePointer<UInt32>](./midisysexsendrequestump/words.md)
   A pointer to the event to send, which the system advances as it sends the data.
-- [var wordsToSend: UInt32](midisysexsendrequestump/wordstosend.md)
+- [var wordsToSend: UInt32](./midisysexsendrequestump/wordstosend.md)
   A counter of the number of words to send.
-- [var complete: DarwinBoolean](midisysexsendrequestump/complete.md)
+- [var complete: DarwinBoolean](./midisysexsendrequestump/complete.md)
   A Boolean value that indicates whether the transmission is complete.
-- [typealias MIDICompletionProcUMP](midicompletionprocump.md)
+- [typealias MIDICompletionProcUMP](./midicompletionprocump.md)
   A function the system calls after it completely sends a UMP system-exclusive (SysEx) or SysEx 8-bit event.
-- [var completionProc: MIDICompletionProcUMP](midisysexsendrequestump/completionproc.md)
+- [var completionProc: MIDICompletionProcUMP](./midisysexsendrequestump/completionproc.md)
   A function that the system calls after it sends all data for the request, or after the client marks the request as complete.
-- [var completionRefCon: UnsafeMutableRawPointer?](midisysexsendrequestump/completionrefcon.md)
+- [var completionRefCon: UnsafeMutableRawPointer?](./midisysexsendrequestump/completionrefcon.md)
   Data to pass to the completion function.
 
 

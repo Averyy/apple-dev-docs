@@ -1,7 +1,8 @@
 # worldScalingCompensation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains a new converter with a different world scale compensation behavior.
 
@@ -17,9 +18,9 @@ Obtains a new converter with a different world scale compensation behavior.
 
 #### Discussion
 
-> **Note**: [`WorldScalingCompensation`](worldscalingcompensation.md)
+> **See Also**: [`WorldScalingCompensation`](../worldscalingcompensation.md)
 
-> **Note**: [`WorldScalingCompensation`](worldscalingcompensation.md)
+> **See Also**: [`WorldScalingCompensation`](../worldscalingcompensation.md)
 
 
 ---

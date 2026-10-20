@@ -1,7 +1,8 @@
 # fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a system dialog for allowing the user to export a `WritableDocument` to a file on disk.
 
@@ -71,13 +72,14 @@ struct ExportView: View {
 
 ## See Also
 
-- [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:).md)
+### Exporting to file
+- [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](./fileexporter%28ispresented,documents,contenttypes,oncompletion,oncancellation%29.md)
   Presents a system dialog for allowing the user to export a collection of objects conforming to `WritableDocument` to files on disk.
-- [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
+- [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](./fileexporter%28ispresented,item,contenttypes,defaultfilename,oncompletion,oncancellation%29.md)
   Presents a system dialog allowing the user to export a `Transferable` item to a file on disk.
-- [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
+- [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](./fileexporter%28ispresented,items,contenttypes,oncompletion,oncancellation%29.md)
   Presents a system dialog allowing the user to export a collection of `Transferable` items to files on disk.
-- [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)
+- [func fileExporterFilenameLabel(_:)](./fileexporterfilenamelabel%28_%29.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 
 

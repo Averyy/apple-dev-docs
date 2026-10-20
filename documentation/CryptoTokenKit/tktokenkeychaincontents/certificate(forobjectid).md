@@ -1,7 +1,8 @@
 # certificate(forObjectID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the key for a specified object identifier.
 
@@ -20,6 +21,10 @@ Returns the key for a specified object identifier.
 func certificate(forObjectID objectID: TKToken.ObjectID) throws -> TKTokenKeychainCertificate
 ```
 
+```objc
+- (TKTokenKeychainCertificate *) certificateForObjectID:(TKTokenObjectID) objectID error:(NSError **) error;
+```
+
 #### Return Value
 
 The certificate, or `nil` if no certificate exists.
@@ -30,9 +35,10 @@ The certificate, or `nil` if no certificate exists.
 
 ## See Also
 
-- [var items: [TKTokenKeychainItem]](tktokenkeychaincontents/items.md)
+### Accessing Keychain Items
+- [var items: [TKTokenKeychainItem]](./items.md)
   Returns all items for token in the keychain.
-- [func key(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainKey](tktokenkeychaincontents/key(forobjectid:).md)
+- [func key(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainKey](./key%28forobjectid%29.md)
   Returns the key for a specified object identifier.
 
 

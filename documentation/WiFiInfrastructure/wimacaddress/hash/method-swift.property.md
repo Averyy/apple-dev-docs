@@ -1,7 +1,8 @@
 # method
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method used to generate the hash.
 

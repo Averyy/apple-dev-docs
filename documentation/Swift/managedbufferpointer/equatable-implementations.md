@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](managedbufferpointer/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (ManagedBufferPointer<Header, Element>, ManagedBufferPointer<Header, Element>) -> Bool](managedbufferpointer/==(_:_:).md)
+- [static func == (ManagedBufferPointer<Header, Element>, ManagedBufferPointer<Header, Element>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

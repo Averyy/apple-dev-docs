@@ -1,15 +1,16 @@
 # kProgramTargetLevel_Minus23dB
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kProgramTargetLevel_Minus23dB: UInt32 { get }
 ```
 
+```c
+kProgramTargetLevel_Minus23dB
+```
+
 ## See Also
 
-- [var kProgramTargetLevel_Minus20dB: UInt32](kprogramtargetlevel_minus20db.md)
-- [var kProgramTargetLevel_Minus31dB: UInt32](kprogramtargetlevel_minus31db.md)
-- [var kProgramTargetLevel_None: UInt32](kprogramtargetlevel_none.md)
+### Constants
+- [var kProgramTargetLevel_Minus20dB: UInt32](./kprogramtargetlevel_minus20db.md)
+- [var kProgramTargetLevel_Minus31dB: UInt32](./kprogramtargetlevel_minus31db.md)
+- [var kProgramTargetLevel_None: UInt32](./kprogramtargetlevel_none.md)
 
 
 ---

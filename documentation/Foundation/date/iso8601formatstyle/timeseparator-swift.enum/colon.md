@@ -1,7 +1,8 @@
 # Date.ISO8601FormatStyle.TimeSeparator.colon
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a colon character separating the time components in an ISO 8601 date format style.
 
@@ -26,7 +27,8 @@ The `rawValue` of `colon` is “`:”`.
 
 ## See Also
 
-- [Date.ISO8601FormatStyle.TimeSeparator.omitted](date/iso8601formatstyle/timeseparator-swift.enum/omitted.md)
+### Specifying ISO 8601 Format Style Time Separators
+- [Date.ISO8601FormatStyle.TimeSeparator.omitted](./omitted.md)
   Specifies no separator between the time components in an ISO 8601 date format style.
 
 

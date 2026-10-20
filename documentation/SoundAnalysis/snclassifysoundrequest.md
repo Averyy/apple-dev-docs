@@ -1,7 +1,8 @@
 # SNClassifySoundRequest
 
 **Framework**: Sound Analysis  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that classifies sound using a Core ML model.
 
@@ -20,17 +21,21 @@ A request that classifies sound using a Core ML model.
 class SNClassifySoundRequest
 ```
 
+```objc
+@interface SNClassifySoundRequest : NSObject
+```
+
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
-- [Classifying Sounds in an Audio Stream](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
 
 #### Overview
 
 An `SNClassifySoundRequest` represents a specific sound classification model. Analyze audio data with a sound classification model by:
 
 1. Creating an `SNClassifySoundRequest`, either with the Sound Analysis model, or by providing your custom Core ML model.
-2. Adding the sound request to an [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) or [`SNAudioStreamAnalyzer`](snaudiostreamanalyzer.md) to process an audio file or stream, respectively.
+2. Adding the sound request to an [`SNAudioFileAnalyzer`](./snaudiofileanalyzer.md) or [`SNAudioStreamAnalyzer`](./snaudiostreamanalyzer.md) to process an audio file or stream, respectively.
 
 ```swift
 func makeRequest(_ customModel: MLModel? = nil) throws -> SNClassifySoundRequest {
@@ -55,52 +60,53 @@ print(classifySoundRequest.knownClassifications)
 
 For more information about creating and using classify sound requests, see:
 
-- [`Classifying Sounds in an Audio File`](classifying-sounds-in-an-audio-file.md)
-- [`Classifying Sounds in an Audio Stream`](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
 
 ## Topics
 
 ### Creating a Request
-- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-6rmee.md)
+- [init(mlModel: MLModel) throws](./snclassifysoundrequest/init%28mlmodel%29-6rmee.md)
   Creates a request that uses a custom sound classification model.
-- [init(classifierIdentifier: SNClassifierIdentifier) throws](snclassifysoundrequest/init(classifieridentifier:).md)
+- [init(classifierIdentifier: SNClassifierIdentifier) throws](./snclassifysoundrequest/init%28classifieridentifier%29.md)
   Creates a request that uses the framework’s built-in sound classification model.
-- [struct SNClassifierIdentifier](snclassifieridentifier.md)
+- [struct SNClassifierIdentifier](./snclassifieridentifier.md)
   An identifier that represents the versions of the framework’s sound classifier.
 ### Configuring a Request
-- [var overlapFactor: Double](snclassifysoundrequest/overlapfactor.md)
+- [var overlapFactor: Double](./snclassifysoundrequest/overlapfactor.md)
   The amount of overlap between successive analysis windows when the model operates on a fixed-size audio block.
-- [var windowDuration: CMTime](snclassifysoundrequest/windowduration.md)
+- [var windowDuration: CMTime](./snclassifysoundrequest/windowduration.md)
   The duration of the audio buffer the request sends to the underlying sound classifier for each prediction.
 ### Inspecting a Request
-- [var knownClassifications: [String]](snclassifysoundrequest/knownclassifications.md)
+- [var knownClassifications: [String]](./snclassifysoundrequest/knownclassifications.md)
   A string array that contains every prediction label in the request’s underlying sound classifier model.
-- [enum SNTimeDurationConstraint](sntimedurationconstraint-swift.enum.md)
+- [enum SNTimeDurationConstraint](./sntimedurationconstraint-swift.enum.md)
   Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
 ### Instance Properties
-- [var windowDurationConstraint: SNTimeDurationConstraint](snclassifysoundrequest/windowdurationconstraint-5no60.md)
+- [var windowDurationConstraint: SNTimeDurationConstraint](./snclassifysoundrequest/windowdurationconstraint-5no60.md)
   A range or list of sound duration times the request’s underlying sound classifier supports.
 ### Initializers
-- [init(MLModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-9p7qz.md)
+- [init(MLModel: MLModel) throws](./snclassifysoundrequest/init%28mlmodel%29-9p7qz.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [SNRequest](snrequest.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [SNRequest](./snrequest.md)
 
 ## See Also
 
-- [Classifying Live Audio Input with a Built-in Sound Classifier](classifying-live-audio-input-with-a-built-in-sound-classifier.md)
+### Sound classification requests
+- [Classifying Live Audio Input with a Built-in Sound Classifier](./classifying-live-audio-input-with-a-built-in-sound-classifier.md)
   Detect and identify hundreds of sounds by using a trained classifier.
-- [class SNClassificationResult](snclassificationresult.md)
+- [class SNClassificationResult](./snclassificationresult.md)
   A result that contains the highest-ranking classifications in a time range.
 
 

@@ -1,7 +1,8 @@
 # HKLiveWorkoutBuilderDelegate
 
 **Framework**: HealthKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods for receiving updates from a live workout builder.
 
@@ -9,7 +10,7 @@ A protocol that defines methods for receiving updates from a live workout builde
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - watchOS 5.0+
 
 ## Declaration
@@ -18,10 +19,14 @@ A protocol that defines methods for receiving updates from a live workout builde
 protocol HKLiveWorkoutBuilderDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol HKLiveWorkoutBuilderDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
-- [Accessing workout zone data](accessing-workout-zone-data.md)
+- [Running workout sessions](./running-workout-sessions.md)
+- [Accessing workout zone data](./accessing-workout-zone-data.md)
 
 #### Overview
 
@@ -30,43 +35,44 @@ Conform to this protocol to receive notifications about workout data collection,
 ## Topics
 
 ### Receiving data updates
-- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didcollectdataof:).md)
+- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](./hkliveworkoutbuilderdelegate/workoutbuilder%28_,didcollectdataof%29.md)
   Tells the delegate that new data has been added to the builder.
-- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md)
+- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](./hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent%28_%29.md)
   Tells the delegate that a new event has been added to the builder.
 ### Receiving activity updates
-- [func workoutBuilder(HKLiveWorkoutBuilder, didBegin: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didbegin:).md)
+- [func workoutBuilder(HKLiveWorkoutBuilder, didBegin: HKWorkoutActivity)](./hkliveworkoutbuilderdelegate/workoutbuilder%28_,didbegin%29.md)
   Tells the delegate that a new workout activity has started.
-- [func workoutBuilder(HKLiveWorkoutBuilder, didEnd: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didend:).md)
+- [func workoutBuilder(HKLiveWorkoutBuilder, didEnd: HKWorkoutActivity)](./hkliveworkoutbuilderdelegate/workoutbuilder%28_,didend%29.md)
   Tells the delegate that the current workout activity has ended.
 ### Receiving zone updates
-- [func workoutBuilder(HKLiveWorkoutBuilder, didUpdateWorkoutZone: HKLiveWorkoutZoneUpdate)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didupdateworkoutzone:).md)
+- [func workoutBuilder(HKLiveWorkoutBuilder, didUpdateWorkoutZone: HKLiveWorkoutZoneUpdate)](./hkliveworkoutbuilderdelegate/workoutbuilder%28_,didupdateworkoutzone%29.md)
   Tells the delegate that the person changed zones during the workout.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Running workout sessions](running-workout-sessions.md)
+### Sessions
+- [Running workout sessions](./running-workout-sessions.md)
   Track a workout on Apple Watch.
-- [Build a workout app for Apple Watch](build-a-workout-app-for-apple-watch.md)
+- [Build a workout app for Apple Watch](./build-a-workout-app-for-apple-watch.md)
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
-- [Building a multidevice workout app](building-a-multidevice-workout-app.md)
+- [Building a multidevice workout app](./building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
-- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+- [Building a workout app for iPhone and iPad](./building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
-- [class HKWorkoutSession](hkworkoutsession.md)
+- [class HKWorkoutSession](./hkworkoutsession.md)
   A session that tracks a person’s workout.
-- [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
+- [class HKWorkoutConfiguration](./hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
-- [enum HKWorkoutSessionState](hkworkoutsessionstate.md)
+- [enum HKWorkoutSessionState](./hkworkoutsessionstate.md)
   A workout session’s state.
-- [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)
+- [class HKLiveWorkoutBuilder](./hkliveworkoutbuilder.md)
   A builder object that constructs a workout incrementally based on live data from an active workout session.
-- [class HKLiveWorkoutDataSource](hkliveworkoutdatasource.md)
+- [class HKLiveWorkoutDataSource](./hkliveworkoutdatasource.md)
   A data source that automatically provides live data from an active workout session.
 
 

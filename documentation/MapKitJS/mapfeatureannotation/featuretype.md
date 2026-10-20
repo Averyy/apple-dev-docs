@@ -1,7 +1,8 @@
 # featureType
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that describes the type of place the feature represents.
 
@@ -10,25 +11,26 @@ A value that describes the type of place the feature represents.
 
 ## Declaration
 
-```swift
+```
 get featureType(): "" | MapFeatureType;
 ```
 
 #### Discussion
 
-This is one of the possible [`MapFeatureType`](mapfeaturetype.md) values.
+This is one of the possible [`MapFeatureType`](../mapfeaturetype.md) values.
 
 ## See Also
 
-- [title](mapfeatureannotation/title.md)
+### Annotation properties
+- [title](./title.md)
   The title of the feature.
-- [pointOfInterestCategory](mapfeatureannotation/pointofinterestcategory.md)
+- [pointOfInterestCategory](./pointofinterestcategory.md)
   The point-of-interest category of the feature.
-- [color](placeannotation/color.md)
+- [color](../placeannotation/color.md)
   The color of the place.
-- [glyphImage](placeannotation/glyphimage.md)
+- [glyphImage](../placeannotation/glyphimage.md)
   The glyph image for the place.
-- [selectedGlyphImage](placeannotation/selectedglyphimage.md)
+- [selectedGlyphImage](../placeannotation/selectedglyphimage.md)
   The selected glyph image for the place.
 
 

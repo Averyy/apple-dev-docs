@@ -1,7 +1,8 @@
 # Track name atom ('tnam')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that provides a name for a track.
 
@@ -14,18 +15,19 @@ A track can have multiple `'tnam'` atoms with different language codes. Normally
 ## Topics
 
 ### Data fields
-- [Reserved](track_name_atom/reserved.md)
+- [Reserved](./track_name_atom/reserved.md)
   A 32-bit integer.
-- [Language](track_name_atom/language.md)
+- [Language](./track_name_atom/language.md)
   A 16-bit integer holding a packed ISO 639-2/T code.
-- [Name](track_name_atom/name.md)
+- [Name](./track_name_atom/name.md)
   A string holding the track name.
 
 ## See Also
 
-- [User data atom ('udta')](user_data_atom.md)
+### Atoms for user data
+- [User data atom ('udta')](./user_data_atom.md)
   An atom where you define and store data associated with a QuickTime object.
-- [Print to video atom ('ptv ')](print_to_video_atom.md)
+- [Print to video atom ('ptv ')](./print_to_video_atom.md)
   An atom you use to play the movie in full-screen mode, with no window and no visible controller.
 
 

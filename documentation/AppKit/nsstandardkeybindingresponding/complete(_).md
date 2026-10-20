@@ -1,15 +1,20 @@
 # complete(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func complete(_ sender: Any?)
+```
+
+```objc
+- (void) complete:(id) sender;
 ```
 
 

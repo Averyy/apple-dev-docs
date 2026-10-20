@@ -1,7 +1,8 @@
 # IOUserVideoStreamBasicDescription
 
 **Framework**: VideoDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that encapsulates all the information for describing the basic format properties of a stream of audio data.
 
@@ -10,7 +11,7 @@ A structure that encapsulates all the information for describing the basic forma
 
 ## Declaration
 
-```swift
+```c
 struct IOUserVideoStreamBasicDescription;
 ```
 
@@ -23,43 +24,44 @@ In audio data a frame is one sample across all channels. In non-interleaved audi
 ## Topics
 
 ### Accessing the frame rate
-- [mFrameRate](videodriverkit/iouservideostreambasicdescription/mframerate.md)
+- [mFrameRate](./iouservideostreambasicdescription/mframerate.md)
 ### Identifying the codec
-- [mVideoCodecType](videodriverkit/iouservideostreambasicdescription/mvideocodectype.md)
-- [IOUserVideoFormatID](videodriverkit/iouservideoformatid.md)
+- [mVideoCodecType](./iouservideostreambasicdescription/mvideocodectype.md)
+- [IOUserVideoFormatID](./iouservideoformatid.md)
   Identifiers used for formats of audio data.
-- [mVideoCodecFlags](videodriverkit/iouservideostreambasicdescription/mvideocodecflags.md)
-- [IOUserVideoFormatFlags](videodriverkit/iouservideoformatflags.md)
+- [mVideoCodecFlags](./iouservideostreambasicdescription/mvideocodecflags.md)
+- [IOUserVideoFormatFlags](./iouservideoformatflags.md)
   Standard format flags for a basic description.
 ### Accessing spatial properties
-- [mWidth](videodriverkit/iouservideostreambasicdescription/mwidth.md)
-- [mHeight](videodriverkit/iouservideostreambasicdescription/mheight.md)
+- [mWidth](./iouservideostreambasicdescription/mwidth.md)
+- [mHeight](./iouservideostreambasicdescription/mheight.md)
 ### Accessing timing properties
-- [mFrameTimeScale](videodriverkit/iouservideostreambasicdescription/mframetimescale.md)
-- [mFrameTimeValue](videodriverkit/iouservideostreambasicdescription/mframetimevalue.md)
+- [mFrameTimeScale](./iouservideostreambasicdescription/mframetimescale.md)
+- [mFrameTimeValue](./iouservideostreambasicdescription/mframetimevalue.md)
 ### Accessing reserved properties
-- [mReserved1](videodriverkit/iouservideostreambasicdescription/mreserved1.md)
-- [mReserved2](videodriverkit/iouservideostreambasicdescription/mreserved2.md)
+- [mReserved1](./iouservideostreambasicdescription/mreserved1.md)
+- [mReserved2](./iouservideostreambasicdescription/mreserved2.md)
 
 ## See Also
 
-- [SetCurrentStreamFormat](iouservideostream/setcurrentstreamformat.md)
+### Working with stream formats
+- [SetCurrentStreamFormat](../iouservideostream/setcurrentstreamformat.md)
   Sets the current stream format.
-- [GetCurrentStreamFormat](iouservideostream/getcurrentstreamformat.md)
+- [GetCurrentStreamFormat](../iouservideostream/getcurrentstreamformat.md)
   Gets the current basic description of the stream.
-- [SetAvailableStreamFormats](iouservideostream/setavailablestreamformats.md)
+- [SetAvailableStreamFormats](../iouservideostream/setavailablestreamformats.md)
   Sets the available descriptions for the stream.
-- [GetAvailableStreamFormats](iouservideostream/getavailablestreamformats.md)
+- [GetAvailableStreamFormats](../iouservideostream/getavailablestreamformats.md)
   Gets the available basic descriptions for the stream.
-- [GetNumberAvailableStreamFormats](iouservideostream/getnumberavailablestreamformats.md)
+- [GetNumberAvailableStreamFormats](../iouservideostream/getnumberavailablestreamformats.md)
   Gets the number of available description for the stream.
-- [GetStreamDirection](iouservideostream/getstreamdirection.md)
+- [GetStreamDirection](../iouservideostream/getstreamdirection.md)
   Gets the direction of the stream.
-- [IOUserVideoStreamDirection](videodriverkit/iouservideostreamdirection.md)
+- [IOUserVideoStreamDirection](./iouservideostreamdirection.md)
   The direction of a video stream.
-- [SetStreamIsActive](iouservideostream/setstreamisactive.md)
+- [SetStreamIsActive](../iouservideostream/setstreamisactive.md)
   Sets whether that the stream is active and doing IO.
-- [GetStreamIsActive](iouservideostream/getstreamisactive.md)
+- [GetStreamIsActive](../iouservideostream/getstreamisactive.md)
   Gets the stream activity state.
 
 

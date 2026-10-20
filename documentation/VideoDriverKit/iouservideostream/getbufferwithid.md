@@ -1,14 +1,15 @@
 # GetBufferWithID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<IOUserVideoBuffer> GetBufferWithID(uint32_t bufferID);
 ```
 
@@ -22,18 +23,19 @@ The buffer, or `NULL` if the buffer identifier was invalid for this stream.
 
 ## See Also
 
-- [GetBufferCount](iouservideostream/getbuffercount.md)
+### Working with video buffers
+- [GetBufferCount](./getbuffercount.md)
   Returns the number of buffers in the buffer queue.
-- [GetBufferList](iouservideostream/getbufferlist.md)
+- [GetBufferList](./getbufferlist.md)
   Gets an array containing all the buffers in the video stream.
-- [addBuffer](iouservideostream/addbuffer.md)
+- [addBuffer](./addbuffer.md)
   Add a buffer to a video stream.
-- [addBuffers](iouservideostream/addbuffers.md)
-- [enqueueOutputBuffer](iouservideostream/enqueueoutputbuffer.md)
-- [IOUserVideoBuffer](iouservideobuffer.md)
-- [removeAllBuffers](iouservideostream/removeallbuffers.md)
+- [addBuffers](./addbuffers.md)
+- [enqueueOutputBuffer](./enqueueoutputbuffer.md)
+- [IOUserVideoBuffer](../iouservideobuffer.md)
+- [removeAllBuffers](./removeallbuffers.md)
   Removes all buffers from the video stream.
-- [SendOutputBufferNotification](iouservideostream/sendoutputbuffernotification.md)
+- [SendOutputBufferNotification](./sendoutputbuffernotification.md)
   Sends a notification to the host that data is available for reading on the output queue.
 
 

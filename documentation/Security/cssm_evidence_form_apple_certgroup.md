@@ -1,7 +1,8 @@
 # CSSM_EVIDENCE_FORM_APPLE_CERTGROUP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_EVIDENCE_FORM_APPLE_CERTGROUP: UInt32 { get }
+```
+
+```c
+CSSM_EVIDENCE_FORM_APPLE_CERTGROUP
 ```
 
 

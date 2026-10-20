@@ -1,7 +1,8 @@
 # clear()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all reference arcs from the prim.
 
@@ -21,7 +22,7 @@ func clear() throws
 
 #### Discussion
 
-> **Note**: An error if the references cannot be cleared.
+> **Throws**: An error if the references cannot be cleared.
 
 
 ---

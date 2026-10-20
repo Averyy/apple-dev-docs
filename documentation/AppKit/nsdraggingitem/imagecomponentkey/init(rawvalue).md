@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image component key using the string you provide.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nsdraggingitem/imagecomponentkey/init(_:).md)
+### Initializing a component key
+- [init(String)](./init%28_%29.md)
   Creates an image component key using the string you provide.
 
 

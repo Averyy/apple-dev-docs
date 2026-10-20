@@ -1,7 +1,8 @@
 # shareParticipant(forUserRecordID:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the share participant with the specified user record ID.
 
@@ -11,7 +12,7 @@ Fetches the share participant with the specified user record ID.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The share participant for the user record ID.
 
 #### Discussion
 
-This method searches for the share participant asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
+This method searches for the share participant asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # CPNowPlayingButtonMaximumImageSize
 
 **Framework**: CarPlay  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum size CarPlay supports for a button’s image.
 
@@ -16,9 +17,14 @@ The maximum size CarPlay supports for a button’s image.
 let CPNowPlayingButtonMaximumImageSize: CGSize
 ```
 
+```c
+extern const CGSize CPNowPlayingButtonMaximumImageSize;
+```
+
 ## See Also
 
-- [init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)?)](cpnowplayingimagebutton/init(image:handler:).md)
+### Creating a Button
+- [init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)?)](./cpnowplayingimagebutton/init%28image,handler%29.md)
   Creates a Now Playing button that displays a custom image and invokes a handler.
 
 

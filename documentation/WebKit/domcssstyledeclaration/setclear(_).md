@@ -1,7 +1,8 @@
 # setClear(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setClear(_ clear: String!)
+```
+
+```objc
+- (void) setClear:(NSString *) clear;
 ```
 
 

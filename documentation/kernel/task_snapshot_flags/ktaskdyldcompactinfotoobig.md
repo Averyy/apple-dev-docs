@@ -1,14 +1,15 @@
 # kTaskDyldCompactInfoTooBig
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 kTaskDyldCompactInfoTooBig = 0x200000000
 ```
 

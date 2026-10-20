@@ -1,7 +1,8 @@
 # UIArrangementViewController.ViewPlacement
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A placement of a view controller within an arrangement view controller.
 
@@ -22,33 +23,34 @@ struct ViewPlacement
 
 You use a view placement to specify which position a view takes in an arrangement.
 
-For more information on how an overlay arrangement presents primary and secondary views, see [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md).
+For more information on how an overlay arrangement presents primary and secondary views, see [`UIOverlayArrangement`](../uioverlayarrangement-swift.struct.md).
 
-For more information on how a split arrangement presents primary and secondary views, see [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+For more information on how a split arrangement presents primary and secondary views, see [`UISplitArrangement`](../uisplitarrangement-swift.struct.md).
 
 ## Topics
 
 ### Getting a placement
-- [static var primary: UIArrangementViewController.ViewPlacement](uiarrangementviewcontroller/viewplacement/primary.md)
+- [static var primary: UIArrangementViewController.ViewPlacement](./viewplacement/primary.md)
   The primary placement in the arrangement.
-- [static var secondary: UIArrangementViewController.ViewPlacement](uiarrangementviewcontroller/viewplacement/secondary.md)
+- [static var secondary: UIArrangementViewController.ViewPlacement](./viewplacement/secondary.md)
   The secondary placement in the arrangement.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](uiarrangementviewcontroller/viewcontroller(for:).md)
+### Managing arrangement view controllers
+- [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](./viewcontroller%28for%29.md)
   Returns the view controller in the arrangement for the placement you provide.
-- [func setViewController(UIViewController?, for: UIArrangementViewController.ViewPlacement, animated: Bool)](uiarrangementviewcontroller/setviewcontroller(_:for:animated:).md)
+- [func setViewController(UIViewController?, for: UIArrangementViewController.ViewPlacement, animated: Bool)](./setviewcontroller%28_,for,animated%29.md)
   Sets the view controller in the arrangement for the specific placement you provide.
-- [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](uiarrangementviewcontroller/placement(for:).md)
+- [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](./placement%28for%29.md)
   Returns the placement for the view controller you provide in the arrangement.
 
 

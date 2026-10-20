@@ -1,7 +1,8 @@
 # colorKey
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ static let colorKey: String
 
 ## See Also
 
-- [static let textureKey: String](physicallybasedmaterial/subsurfacecolor-swift.struct/texturekey.md)
+### Accessing material keys
+- [static let textureKey: String](./texturekey.md)
 
 
 ---

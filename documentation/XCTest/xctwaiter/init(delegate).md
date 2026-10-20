@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new waiter with the specified delegate.
 
@@ -11,9 +12,13 @@ Creates a new waiter with the specified delegate.
 init(delegate: (any XCTWaiterDelegate)?)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<XCTWaiterDelegate>) delegate;
+```
+
 ## Parameters
 
-- `delegate`: The [`XCTWaiterDelegate`](xctwaiterdelegate.md) that wait events should be sent to.
+- `delegate`: The [`XCTWaiterDelegate`](../xctwaiterdelegate.md) that wait events should be sent to.
 
 
 ---

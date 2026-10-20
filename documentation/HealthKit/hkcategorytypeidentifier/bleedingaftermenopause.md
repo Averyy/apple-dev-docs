@@ -1,7 +1,8 @@
 # bleedingAfterMenopause
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for samples that record bleeding after menopause.
 
@@ -19,19 +20,24 @@ An identifier for samples that record bleeding after menopause.
 static let bleedingAfterMenopause: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBleedingAfterMenopause;
+```
+
 #### Discussion
 
-Use this category type to record instances of bleeding that occur after menopause. After menopause, menstruation has ended, making this clinically distinct from menstrual flow or intermenstrual bleeding. Each sample represents an interval of bleeding and stores an intensity value using [`HKCategoryValueVaginalBleeding`](hkcategoryvaluevaginalbleeding.md).
+Use this category type to record instances of bleeding that occur after menopause. After menopause, menstruation has ended, making this clinically distinct from menstrual flow or intermenstrual bleeding. Each sample represents an interval of bleeding and stores an intensity value using [`HKCategoryValueVaginalBleeding`](../hkcategoryvaluevaginalbleeding.md).
 
-For information about menopause state tracking, see [`menopausalState`](hkcategorytypeidentifier/menopausalstate.md).
+For information about menopause state tracking, see [`menopausalState`](./menopausalstate.md).
 
 ## See Also
 
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+### Menopause
+- [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
   Personalize someone’s experience on a health app by tracking the information they record on menopausal state.
-- [static let menopausalState: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menopausalstate.md)
+- [static let menopausalState: HKCategoryTypeIdentifier](./menopausalstate.md)
   An identifier for samples that record a person’s menopausal state.
-- [enum HKCategoryValueMenopausalState](hkcategoryvaluemenopausalstate.md)
+- [enum HKCategoryValueMenopausalState](../hkcategoryvaluemenopausalstate.md)
   A value that indicates the menopausal state at a recorded point in time.
 
 

@@ -1,7 +1,8 @@
 # preferredLocalizations(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns one or more localizations from the specified list that a bundle object would use to locate resources for the current user.
 
@@ -20,6 +21,10 @@ Returns one or more localizations from the specified list that a bundle object w
 class func preferredLocalizations(from localizationsArray: [String]) -> [String]
 ```
 
+```objc
++ (NSArray<NSString *> *) preferredLocalizationsFromArray:(NSArray<NSString *> *) localizationsArray;
+```
+
 #### Return Value
 
 An array of `NSString` objects containing the preferred localizations. These strings are ordered in the array according to the user’s language preferences and are taken from the strings in the `localizationsArray` parameter.
@@ -36,15 +41,16 @@ However, clients who want all localizations in preference order can make repeate
 
 ## See Also
 
-- [var localizations: [String]](bundle/localizations.md)
+### Getting localization information
+- [var localizations: [String]](./localizations.md)
   A list of all the localizations contained in the bundle.
-- [var preferredLocalizations: [String]](bundle/preferredlocalizations.md)
+- [var preferredLocalizations: [String]](./preferredlocalizations.md)
   An ordered list of preferred localizations contained in the bundle.
-- [var developmentLocalization: String?](bundle/developmentlocalization.md)
+- [var developmentLocalization: String?](./developmentlocalization.md)
   The localization for the development language.
-- [var localizedInfoDictionary: [String : Any]?](bundle/localizedinfodictionary.md)
+- [var localizedInfoDictionary: [String : Any]?](./localizedinfodictionary.md)
   A dictionary with the keys from the bundle’s localized property list.
-- [class func preferredLocalizations(from: [String], forPreferences: [String]?) -> [String]](bundle/preferredlocalizations(from:forpreferences:).md)
+- [class func preferredLocalizations(from: [String], forPreferences: [String]?) -> [String]](./preferredlocalizations%28from,forpreferences%29.md)
   Returns locale identifiers for which a bundle would provide localized content, given a specified list of candidates for a user’s language preferences.
 
 

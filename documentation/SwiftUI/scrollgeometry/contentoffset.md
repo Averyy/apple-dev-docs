@@ -1,7 +1,8 @@
 # contentOffset
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content offset of the scroll view.
 

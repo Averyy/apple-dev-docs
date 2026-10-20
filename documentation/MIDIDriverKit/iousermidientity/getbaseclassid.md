@@ -1,31 +1,33 @@
 # GetBaseClassID
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOUserMIDIClassID GetBaseClassID() const;
 ```
 
 ## See Also
 
-- [AddDestination](iousermidientity/adddestination.md)
-- [AddSource](iousermidientity/addsource.md)
-- [GetClassID](iousermidientity/getclassid.md)
-- [GetDestination](iousermidientity/getdestination.md)
-- [GetDestinations](iousermidientity/getdestinations.md)
-- [GetSource](iousermidientity/getsource.md)
-- [GetSources](iousermidientity/getsources.md)
-- [RemoveDestination](iousermidientity/removedestination.md)
-- [RemoveSource](iousermidientity/removesource.md)
-- [SetProperties](iousermidientity/setproperties.md)
-- [free](iousermidientity/free.md)
-- [init](iousermidientity/init.md)
+### Instance Methods
+- [AddDestination](./adddestination.md)
+- [AddSource](./addsource.md)
+- [GetClassID](./getclassid.md)
+- [GetDestination](./getdestination.md)
+- [GetDestinations](./getdestinations.md)
+- [GetSource](./getsource.md)
+- [GetSources](./getsources.md)
+- [RemoveDestination](./removedestination.md)
+- [RemoveSource](./removesource.md)
+- [SetProperties](./setproperties.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

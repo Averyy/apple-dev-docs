@@ -1,7 +1,8 @@
 # AEUnflattenDescFromBytes(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AEUnflattenDescFromBytes(_ buffer: UnsafeRawPointer!, _ bufferLen: Int, _ result: UnsafeMutablePointer<AEDesc>!) -> OSStatus
+```
+
+```c
+OSStatus AEUnflattenDescFromBytes(const void *buffer, size_t bufferLen, AEDesc *result);
 ```
 
 

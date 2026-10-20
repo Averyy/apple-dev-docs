@@ -1,7 +1,8 @@
 # children
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the menu.
 
@@ -18,13 +19,18 @@ The contents of the menu.
 var children: [UIMenuElement] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<UIMenuElement *> * children;
+```
+
 #### Discussion
 
 If the menu doesn’t have any child menu elements, this property contains an empty array.
 
 ## See Also
 
-- [func replacingChildren([UIMenuElement]) -> UIMenu](uimenu/replacingchildren(_:).md)
+### Accessing child elements
+- [func replacingChildren([UIMenuElement]) -> UIMenu](./replacingchildren%28_%29.md)
   Creates a new menu with the same configuration as the current menu, but with a new set of child elements.
 
 

@@ -1,7 +1,8 @@
 # backgroundContents
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents for the background of the thumbstick.
 
@@ -16,27 +17,32 @@ The contents for the background of the thumbstick.
 var backgroundContents: TCControlContents? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TCControlContents * backgroundContents;
+```
+
 #### Discussion
 
 May be `nil`.
 
 ## See Also
 
-- [var hidesWhenNotPressed: Bool](tcthumbstickdescriptor/hideswhennotpressed.md)
+### Inspecting the descriptor
+- [var hidesWhenNotPressed: Bool](./hideswhennotpressed.md)
   Whether to hide the thumbstick when it is not being pressed.
-- [var highlightDuration: TimeInterval](tcthumbstickdescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var label: TCControlLabel](tcthumbstickdescriptor/label.md)
+- [var label: TCControlLabel](./label.md)
   The label associated with the thumbstick.
-- [var offset: CGPoint](tcthumbstickdescriptor/offset.md)
+- [var offset: CGPoint](./offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var size: CGSize](tcthumbstickdescriptor/size.md)
+- [var size: CGSize](./size.md)
   The size (width, height) of the thumbstick in points.
-- [var stickContents: TCControlContents?](tcthumbstickdescriptor/stickcontents.md)
+- [var stickContents: TCControlContents?](./stickcontents.md)
   The contents for the thumbstick itself.
-- [var stickSize: CGSize](tcthumbstickdescriptor/sticksize.md)
+- [var stickSize: CGSize](./sticksize.md)
   The size (width, height) of the thumbstick stick itself in points.
-- [var zIndex: Int](tcthumbstickdescriptor/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The z-index of the thumbstick. A lower z-index is drawn first.
 
 

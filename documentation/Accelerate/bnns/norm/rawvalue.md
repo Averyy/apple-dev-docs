@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding value of the raw type.
 
@@ -11,8 +12,10 @@ The corresponding value of the raw type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ var rawValue: Float
 
 ## See Also
 
-- [init(rawValue: Float)](bnns/norm/init(rawvalue:).md)
+### Raw Values
+- [init(rawValue: Float)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 

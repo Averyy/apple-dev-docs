@@ -1,7 +1,8 @@
 # dragInteraction(_:sessionAllowsMoveOperation:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the session allows the move operation.
 
@@ -17,13 +18,17 @@ Asks the delegate whether the session allows the move operation.
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionAllowsMoveOperation session: any UIDragSession) -> Bool
 ```
 
+```objc
+- (BOOL) dragInteraction:(UIDragInteraction *) interaction sessionAllowsMoveOperation:(id<UIDragSession>) session;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the session allows moving drag items to the destination view; otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default is [`true`](https://developer.apple.com/documentation/swift/true) if you don’t provide this method.
+[`true`](../../Swift/true.md) if the session allows moving drag items to the destination view; otherwise [`false`](../../Swift/false.md). The default is [`true`](../../Swift/true.md) if you don’t provide this method.
 
 #### Discussion
 
-The [`UIDropOperation.move`](uidropoperation/move.md) operation only applies to drop activities within the same app. Drag items dropped onto another app are always copied.
+The [`UIDropOperation.move`](../uidropoperation/move.md) operation only applies to drop activities within the same app. Drag items dropped onto another app are always copied.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ The [`UIDropOperation.move`](uidropoperation/move.md) operation only applies to 
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, sessionIsRestrictedToDraggingApplication: any UIDragSession) -> Bool](uidraginteractiondelegate/draginteraction(_:sessionisrestrictedtodraggingapplication:).md)
+### Restricting the drag behavior
+- [func dragInteraction(UIDragInteraction, sessionIsRestrictedToDraggingApplication: any UIDragSession) -> Bool](./draginteraction%28_,sessionisrestrictedtodraggingapplication%29.md)
   Asks the delegate whether the system should restrict the drag session to the app that started the session.
 
 

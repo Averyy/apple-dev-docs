@@ -1,7 +1,8 @@
 # orientationTransform(for:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The affine transform for changing the image to the given orientation.
 
@@ -19,13 +20,18 @@ The affine transform for changing the image to the given orientation.
 func orientationTransform(for orientation: CGImagePropertyOrientation) -> CGAffineTransform
 ```
 
+```objc
+- (CGAffineTransform) imageTransformForCGOrientation:(CGImagePropertyOrientation) orientation;
+```
+
 #### Discussion
 
-Returns a [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) for the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) value to apply to the image.
+Returns a [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) for the [`CGImagePropertyOrientation`](../../ImageIO/cgimagepropertyorientation.md) value to apply to the image.
 
 ## See Also
 
-- [func oriented(CGImagePropertyOrientation) -> CIImage](ciimage/oriented(_:).md)
+### Working with Orientation
+- [func oriented(CGImagePropertyOrientation) -> CIImage](./oriented%28_%29.md)
   Transforms the original image by a given orientation.
 
 

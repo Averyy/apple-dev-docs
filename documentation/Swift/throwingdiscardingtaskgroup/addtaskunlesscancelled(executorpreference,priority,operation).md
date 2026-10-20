@@ -1,7 +1,8 @@
 # addTaskUnlessCancelled(executorPreference:priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 
@@ -20,6 +21,8 @@ Adds a child task to the group, unless the group has been canceled. Returns a bo
 mutating func addTaskUnlessCancelled(executorPreference taskExecutor: (any TaskExecutor)? = nil, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> Void) -> Bool
 ```
 
+Available when `Failure` conforms to `Error`.
+
 #### Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
@@ -30,7 +33,7 @@ This method doesn’t throw an error, even if the child task does. Instead, the 
 
 ## Parameters
 
-- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to calling the `addTaskUnlessCancelled` method without a preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](globalconcurrentexecutor.md) global executor explicitly.
+- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to calling the `addTaskUnlessCancelled` method without a preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](../globalconcurrentexecutor.md) global executor explicitly.
 - `priority`: The priority of the operation task. Omit this parameter or pass `nil` to inherit the task group’s base priority.
 - `operation`: The operation to execute as part of the task group.
 

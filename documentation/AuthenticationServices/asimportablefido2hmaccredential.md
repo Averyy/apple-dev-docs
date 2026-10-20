@@ -1,7 +1,8 @@
 # ASImportableFIDO2HMACCredential
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of FIDO2 HMAC Credentials as defined in CXF.
 
@@ -21,26 +22,26 @@ struct ASImportableFIDO2HMACCredential
 ## Topics
 
 ### Initializers
-- [init(algorithm: ASImportableFIDO2HMACCredential.Algorithm, credentialWithUV: Data, credentialWithoutUV: Data)](asimportablefido2hmaccredential/init(algorithm:credentialwithuv:credentialwithoutuv:).md)
+- [init(algorithm: ASImportableFIDO2HMACCredential.Algorithm, credentialWithUV: Data, credentialWithoutUV: Data)](./asimportablefido2hmaccredential/init%28algorithm,credentialwithuv,credentialwithoutuv%29.md)
 ### Instance Properties
-- [var algorithm: ASImportableFIDO2HMACCredential.Algorithm](asimportablefido2hmaccredential/algorithm-swift.property.md)
+- [var algorithm: ASImportableFIDO2HMACCredential.Algorithm](./asimportablefido2hmaccredential/algorithm-swift.property.md)
   Algorithm used to generate the shared secret from the credentials.
-- [var credentialWithUV: Data](asimportablefido2hmaccredential/credentialwithuv.md)
+- [var credentialWithUV: Data](./asimportablefido2hmaccredential/credentialwithuv.md)
   Credential to use when user verification is performed.
-- [var credentialWithoutUV: Data](asimportablefido2hmaccredential/credentialwithoutuv.md)
+- [var credentialWithoutUV: Data](./asimportablefido2hmaccredential/credentialwithoutuv.md)
   Credential to use when user verification is not performed.
 ### Enumerations
-- [ASImportableFIDO2HMACCredential.Algorithm](asimportablefido2hmaccredential/algorithm-swift.enum.md)
+- [ASImportableFIDO2HMACCredential.Algorithm](./asimportablefido2hmaccredential/algorithm-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CMClock.DisplayGenlockModeChangedMessage
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message delivered when the display mode changes from genlock to non-genlock or vice versa.
 
@@ -18,14 +19,14 @@ struct DisplayGenlockModeChangedMessage
 ## Topics
 
 ### Instance Properties
-- [let isAnyDisplaySynchronizedToLockedGenlockSignal: Bool](cmclock/displaygenlockmodechangedmessage/isanydisplaysynchronizedtolockedgenlocksignal.md)
+- [let isAnyDisplaySynchronizedToLockedGenlockSignal: Bool](./displaygenlockmodechangedmessage/isanydisplaysynchronizedtolockedgenlocksignal.md)
   Indicates whether at least one display is synchronized to a locked external genlock signal.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

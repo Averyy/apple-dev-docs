@@ -1,7 +1,8 @@
 # write(toFile:atomically:encoding:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the contents of the `String` to a file at a given path using a given encoding.
 

@@ -1,7 +1,8 @@
 # rtfd
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Rich text format with attachments document.
 
@@ -22,23 +23,24 @@ static let rtfd: NSAttributedString.DocumentType
 
 ## See Also
 
-- [static let docFormat: NSAttributedString.DocumentType](nsattributedstring/documenttype/docformat.md)
+### Getting keys for document types
+- [static let docFormat: NSAttributedString.DocumentType](./docformat.md)
   Microsoft Word document.
-- [static let html: NSAttributedString.DocumentType](nsattributedstring/documenttype/html.md)
+- [static let html: NSAttributedString.DocumentType](./html.md)
   Hypertext markup language (HTML) document.
-- [static let macSimpleText: NSAttributedString.DocumentType](nsattributedstring/documenttype/macsimpletext.md)
+- [static let macSimpleText: NSAttributedString.DocumentType](./macsimpletext.md)
   Macintosh SimpleText document.
-- [static let officeOpenXML: NSAttributedString.DocumentType](nsattributedstring/documenttype/officeopenxml.md)
+- [static let officeOpenXML: NSAttributedString.DocumentType](./officeopenxml.md)
   ECMA Office Open XML text document format.
-- [static let openDocument: NSAttributedString.DocumentType](nsattributedstring/documenttype/opendocument.md)
+- [static let openDocument: NSAttributedString.DocumentType](./opendocument.md)
   OASIS Open Document text document format.
-- [static let plain: NSAttributedString.DocumentType](nsattributedstring/documenttype/plain.md)
+- [static let plain: NSAttributedString.DocumentType](./plain.md)
   Plain text document.
-- [static let rtf: NSAttributedString.DocumentType](nsattributedstring/documenttype/rtf.md)
+- [static let rtf: NSAttributedString.DocumentType](./rtf.md)
   Rich text format document.
-- [static let webArchive: NSAttributedString.DocumentType](nsattributedstring/documenttype/webarchive.md)
+- [static let webArchive: NSAttributedString.DocumentType](./webarchive.md)
   WebKit WebArchive document.
-- [static let wordML: NSAttributedString.DocumentType](nsattributedstring/documenttype/wordml.md)
+- [static let wordML: NSAttributedString.DocumentType](./wordml.md)
   Microsoft Word XML (WordML schema) document.
 
 

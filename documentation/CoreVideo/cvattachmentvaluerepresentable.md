@@ -1,7 +1,8 @@
 # CVAttachmentValueRepresentable
 
 **Framework**: Core Video  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Allows Swift types to be used as buffer attachment value.
 
@@ -22,7 +23,7 @@ protocol CVAttachmentValueRepresentable
 
 #### Overview
 
-A type conforming to this protocol can be used as value for an attachment key. The [`CVAttachmentRawValue`](cvattachmentrawvalue.md) type facilitates conversion to and from raw attachment values. Conformances of standard Swift type to this protocol are provided in CoreVideo framework. Implementing this protocol for a custom struct is as simple as:
+A type conforming to this protocol can be used as value for an attachment key. The [`CVAttachmentRawValue`](./cvattachmentrawvalue.md) type facilitates conversion to and from raw attachment values. Conformances of standard Swift type to this protocol are provided in CoreVideo framework. Implementing this protocol for a custom struct is as simple as:
 
 ```swift
 struct MyStruct {
@@ -42,44 +43,45 @@ extension MyStruct: CVAttachmentValueRepresentable {
 }
 ```
 
-Default implementation is provided for `RawRepresentable` protocol where RawValue conforms to this protocol. This allow enumeration with raw values to conform to [`CVAttachmentValueRepresentable`](cvattachmentvaluerepresentable.md) protocol without a custom implementation.
+Default implementation is provided for `RawRepresentable` protocol where RawValue conforms to this protocol. This allow enumeration with raw values to conform to [`CVAttachmentValueRepresentable`](./cvattachmentvaluerepresentable.md) protocol without a custom implementation.
 
 ## Topics
 
 ### Instance Properties
-- [var rawAttachmentValueRepresentation: CVAttachmentRawValue](cvattachmentvaluerepresentable/rawattachmentvaluerepresentation.md)
+- [var rawAttachmentValueRepresentation: CVAttachmentRawValue](./cvattachmentvaluerepresentable/rawattachmentvaluerepresentation.md)
 ### Type Methods
-- [static func makeFromRawAttachmentValue(CVAttachmentRawValue) -> Self?](cvattachmentvaluerepresentable/makefromrawattachmentvalue(_:).md)
+- [static func makeFromRawAttachmentValue(CVAttachmentRawValue) -> Self?](./cvattachmentvaluerepresentable/makefromrawattachmentvalue%28_%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [CVImageAlphaChannelMode](cvimagealphachannelmode.md)
-- [CVImageChromaField](cvimagechromafield.md)
-- [CVImageChromaField.ChromaSubsampling](cvimagechromafield/chromasubsampling.md)
-- [CVImageChromaField.FieldLocation](cvimagechromafield/fieldlocation-swift.enum.md)
-- [CVImageChromaField.SampleLocation](cvimagechromafield/samplelocation.md)
-- [CVImageCleanAperture](cvimagecleanaperture.md)
-- [CVImageColorPrimaries](cvimagecolorprimaries.md)
-- [CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
-- [CVImageFieldDetail](cvimagefielddetail.md)
-- [CVImageLogTransferFunction](cvimagelogtransferfunction.md)
-- [CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
-- [CVImageStereoDisplayMaskRectangle](cvimagestereodisplaymaskrectangle.md)
-- [CVImageTransferFunction](cvimagetransferfunction.md)
-- [CVImageYCbCrMatrix](cvimageycbcrmatrix.md)
-- [CVProResRawMetadata](cvproresrawmetadata.md)
-- [CVProResRawMetadata.RecommendedCrop](cvproresrawmetadata/recommendedcrop-swift.struct.md)
-- [CVSenselArrayPattern](cvsenselarraypattern.md)
-- [CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+- [CVImageAlphaChannelMode](./cvimagealphachannelmode.md)
+- [CVImageChromaField](./cvimagechromafield.md)
+- [CVImageChromaField.ChromaSubsampling](./cvimagechromafield/chromasubsampling.md)
+- [CVImageChromaField.FieldLocation](./cvimagechromafield/fieldlocation-swift.enum.md)
+- [CVImageChromaField.SampleLocation](./cvimagechromafield/samplelocation.md)
+- [CVImageCleanAperture](./cvimagecleanaperture.md)
+- [CVImageColorPrimaries](./cvimagecolorprimaries.md)
+- [CVImageDisplayMaskRectangle](./cvimagedisplaymaskrectangle.md)
+- [CVImageFieldDetail](./cvimagefielddetail.md)
+- [CVImageLogTransferFunction](./cvimagelogtransferfunction.md)
+- [CVImagePixelAspectRatio](./cvimagepixelaspectratio.md)
+- [CVImageStereoDisplayMaskRectangle](./cvimagestereodisplaymaskrectangle.md)
+- [CVImageTransferFunction](./cvimagetransferfunction.md)
+- [CVImageYCbCrMatrix](./cvimageycbcrmatrix.md)
+- [CVProResRawMetadata](./cvproresrawmetadata.md)
+- [CVProResRawMetadata.RecommendedCrop](./cvproresrawmetadata/recommendedcrop-swift.struct.md)
+- [CVSenselArrayPattern](./cvsenselarraypattern.md)
+- [CVSenselSitingOffsets](./cvsenselsitingoffsets.md)
 
 ## See Also
 
-- [protocol CVBufferRepresentable](cvbufferrepresentable.md)
+### Protocols
+- [protocol CVBufferRepresentable](./cvbufferrepresentable.md)
   CVBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVBuffer type.
-- [protocol CVAttachmentKeyDefinitions](cvattachmentkeydefinitions.md)
+- [protocol CVAttachmentKeyDefinitions](./cvattachmentkeydefinitions.md)
   Marks a type as a collection of attachment keys for an attachment bearer.
-- [protocol CVAttachmentModePreference](cvattachmentmodepreference.md)
+- [protocol CVAttachmentModePreference](./cvattachmentmodepreference.md)
   Defines preferred mode for an attachment key.
 
 

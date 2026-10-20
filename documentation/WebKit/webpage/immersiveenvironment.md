@@ -1,7 +1,8 @@
 # WebPage.ImmersiveEnvironment
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object representing a website-provided immersive environment that is ready for presentation.
 
@@ -18,20 +19,21 @@ struct ImmersiveEnvironment
 ## Topics
 
 ### Instance Properties
-- [var sourceFrame: WebPage.FrameInfo](webpage/immersiveenvironment/sourceframe.md)
+- [var sourceFrame: WebPage.FrameInfo](./immersiveenvironment/sourceframe.md)
   The frame information of the website that provided this immersive environment.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WebViewImmersiveEnvironmentView](webviewimmersiveenvironmentview.md)
+### Immersive environments
+- [struct WebViewImmersiveEnvironmentView](../webviewimmersiveenvironmentview.md)
   A SwiftUI view that renders a specific website-provided immersive environment.
-- [var allowsImmersiveEnvironments: Bool](webpage/configuration/allowsimmersiveenvironments.md)
+- [var allowsImmersiveEnvironments: Bool](./configuration/allowsimmersiveenvironments.md)
   Indicates whether website immersive environments are allowed.
 
 

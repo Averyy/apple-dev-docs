@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a function handle for a visible function.
@@ -20,13 +21,17 @@ Creates a function handle for a visible function.
 func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?
 ```
 
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithFunction:(id<MTLFunction>) function;
+```
+
 #### Return Value
 
 A handle to the visible function. When this value is `nil`, an error occurred during handle creation.
 
 ## Parameters
 
-- `function`: An [`MTLFunction`](mtlfunction.md) instance that represents the visible function to create a handle for.
+- `function`: An [`MTLFunction`](../mtlfunction.md) instance that represents the visible function to create a handle for.
 
 
 ---

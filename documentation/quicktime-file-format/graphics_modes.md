@@ -1,6 +1,7 @@
 # Graphics modes
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 QuickTime files use graphics modes to describe how one video or graphics layer should be combined with the layers beneath it.
 
@@ -26,11 +27,12 @@ The following table lists the additional graphics modes supported by QuickTime.
 
 ## See Also
 
-- [Matrices](matrices.md)
+### Graphics and colors
+- [Matrices](./matrices.md)
   QuickTime files use matrices to describe spatial information about many objects, such as tracks within a movie.
-- [RGB colors](rgb_colors.md)
+- [RGB colors](./rgb_colors.md)
   Colors stored as three consecutive unsigned 16-bit integers in the following order: red, green, blue.
-- [Balance](balance.md)
+- [Balance](./balance.md)
   Represent balance values with 16-bit fixed-point numbers.
 
 

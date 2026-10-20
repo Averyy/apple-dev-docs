@@ -1,7 +1,8 @@
 # MTRColorControlDirection
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.2+
@@ -18,25 +19,29 @@
 enum MTRColorControlDirection
 ```
 
+```c
+enum MTRColorControlDirection : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRColorControlDirection.down](mtrcolorcontroldirection/down.md)
-- [MTRColorControlDirection.longest](mtrcolorcontroldirection/longest.md)
-- [MTRColorControlDirection.shortest](mtrcolorcontroldirection/shortest.md)
-- [MTRColorControlDirection.up](mtrcolorcontroldirection/up.md)
+- [MTRColorControlDirection.down](./mtrcolorcontroldirection/down.md)
+- [MTRColorControlDirection.longest](./mtrcolorcontroldirection/longest.md)
+- [MTRColorControlDirection.shortest](./mtrcolorcontroldirection/shortest.md)
+- [MTRColorControlDirection.up](./mtrcolorcontroldirection/up.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcolorcontroldirection/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcolorcontroldirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

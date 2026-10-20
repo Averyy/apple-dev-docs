@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate from which window it should present content to the user.
@@ -20,6 +21,10 @@ Tells the delegate from which window it should present content to the user.
 func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor
 ```
 
+```objc
+- (ASPresentationAnchor) presentationAnchorForAuthorizationController:(ASAuthorizationController *) controller;
+```
+
 #### Return Value
 
 A user interface element that can act as the anchor for the authorization presentation.
@@ -30,7 +35,8 @@ A user interface element that can act as the anchor for the authorization presen
 
 ## See Also
 
-- [typealias ASPresentationAnchor](aspresentationanchor.md)
+### Specifying the Anchor
+- [typealias ASPresentationAnchor](../aspresentationanchor.md)
   A platform-specific type that indicates the kind of user interface element to use as a presentation anchor.
 
 

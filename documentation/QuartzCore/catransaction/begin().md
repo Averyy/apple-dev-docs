@@ -1,7 +1,8 @@
 # begin()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Begin a new transaction for the current thread.
 
@@ -19,16 +20,22 @@ Begin a new transaction for the current thread.
 class func begin()
 ```
 
+```objc
++ (void) begin;
+```
+
 #### Discussion
 
 The transaction is nested within the thread’s current transaction, if there is one.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [class func commit()](catransaction/commit.md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Creating and Committing Transactions
+- [class func commit()](./commit%28%29.md)
   Commit all changes made during the current transaction.
-- [class func flush()](catransaction/flush.md)
+- [class func flush()](./flush%28%29.md)
   Flushes any extant implicit transaction.
 
 

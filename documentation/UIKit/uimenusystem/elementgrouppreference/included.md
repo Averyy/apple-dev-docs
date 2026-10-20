@@ -1,7 +1,8 @@
 # UIMenuSystem.ElementGroupPreference.included
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefer that the element group is included.
 
@@ -16,6 +17,10 @@ Prefer that the element group is included.
 
 ```swift
 case included
+```
+
+```c
+UIMenuSystemElementGroupPreferenceIncluded
 ```
 
 

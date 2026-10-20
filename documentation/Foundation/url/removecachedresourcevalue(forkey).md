@@ -1,7 +1,8 @@
 # removeCachedResourceValue(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the cached resource value identified by a given resource value key from the URL object.
 
@@ -26,17 +27,18 @@ Removing a cached resource value may remove other cached resource values because
 
 ## See Also
 
-- [func resourceValues(forKeys: Set<URLResourceKey>) throws -> URLResourceValues](url/resourcevalues(forkeys:).md)
+### Accessing resource values
+- [func resourceValues(forKeys: Set<URLResourceKey>) throws -> URLResourceValues](./resourcevalues%28forkeys%29.md)
   Returns a collection of resource values identified by the given resource keys.
-- [func setResourceValues(URLResourceValues) throws](url/setresourcevalues(_:).md)
+- [func setResourceValues(URLResourceValues) throws](./setresourcevalues%28_%29.md)
   Sets the resource value identified by a given resource key.
-- [func removeAllCachedResourceValues()](url/removeallcachedresourcevalues.md)
+- [func removeAllCachedResourceValues()](./removeallcachedresourcevalues%28%29.md)
   Removes all cached resource values and all temporary resource values from the URL object.
-- [func setTemporaryResourceValue(any Sendable, forKey: URLResourceKey)](url/settemporaryresourcevalue(_:forkey:).md)
+- [func setTemporaryResourceValue(any Sendable, forKey: URLResourceKey)](./settemporaryresourcevalue%28_,forkey%29.md)
   Sets a temporary resource value on the URL object.
-- [struct URLResourceKey](urlresourcekey.md)
+- [struct URLResourceKey](../urlresourcekey.md)
   Keys that apply to file system URLs.
-- [struct URLResourceValues](urlresourcevalues.md)
+- [struct URLResourceValues](../urlresourcevalues.md)
   The properties that the file system resources support.
 
 

@@ -1,7 +1,8 @@
 # init(products:prefersPromotionalIcon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to load and merchandise a collection of products from the App Store.
 
@@ -32,9 +33,10 @@ By default, the store view doesn’t show promotional images. If you set `prefer
 
 ## See Also
 
-- [init(products: some Collection<Product>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon)](storeview/init(products:preferspromotionalicon:icon:).md)
+### Creating store views with preloaded products
+- [init(products: some Collection<Product>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon)](./init%28products,preferspromotionalicon,icon%29.md)
   Creates a view to merchandise a collection of products using a custom icon.
-- [init(products: some Collection<Product>, icon: (Product, ProductIconPhase) -> Icon)](storeview/init(products:icon:).md)
+- [init(products: some Collection<Product>, icon: (Product, ProductIconPhase) -> Icon)](./init%28products,icon%29.md)
   Creates a view to merchandise a collection of products with promotional images.
 
 

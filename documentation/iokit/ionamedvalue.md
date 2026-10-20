@@ -1,7 +1,8 @@
 # IONamedValue
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -16,14 +17,20 @@
 struct IONamedValue
 ```
 
+```c
+typedef struct IONamedValue {
+    ...
+} IONamedValue;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](ionamedvalue/1514639-init.md)
-- [init(value: Int32, name: UnsafePointer<CChar>!)](ionamedvalue/1514633-init.md)
+- [init()](./ionamedvalue/api-1514639-init.md)
+- [init(value: Int32, name: UnsafePointer<CChar>!)](./ionamedvalue/api-1514633-init.md)
 ### Instance Properties
-- [var name: UnsafePointer<CChar>!](ionamedvalue/1514729-name.md)
-- [var value: Int32](ionamedvalue/1514501-value.md)
+- [var name: UnsafePointer<CChar>!](./ionamedvalue/api-1514729-name.md)
+- [var value: Int32](./ionamedvalue/api-1514501-value.md)
 
 
 ---

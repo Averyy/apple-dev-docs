@@ -1,7 +1,8 @@
 # VNTrackRectangleRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the rectangling tracking request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the rectangling tracking request.
 
 ```swift
 var VNTrackRectangleRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNTrackRectangleRequestRevision1;
 ```
 
 #### Discussion

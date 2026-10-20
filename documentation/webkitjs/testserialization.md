@@ -1,26 +1,27 @@
 # TestSerialization
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 interface TestSerialization
 ```
 
 ## Topics
 
 ### Instance Properties
-- [fifthLongAttribute](testserialization/2871237-fifthlongattribute.md)
-- [firstStringAttribute](testserialization/2871443-firststringattribute.md)
-- [fourthUnrestrictedDoubleAttribute](testserialization/2871214-fourthunrestricteddoubleattribut.md)
-- [secondLongAttribute](testserialization/2871421-secondlongattribute.md)
-- [serializer](testserialization/2871467-serializer.md)
-- [thirdUnserializableAttribute](testserialization/2871345-thirdunserializableattribute.md)
+- [fifthLongAttribute](./testserialization/api-2871237-fifthlongattribute.md)
+- [firstStringAttribute](./testserialization/api-2871443-firststringattribute.md)
+- [fourthUnrestrictedDoubleAttribute](./testserialization/api-2871214-fourthunrestricteddoubleattribut.md)
+- [secondLongAttribute](./testserialization/api-2871421-secondlongattribute.md)
+- [serializer](./testserialization/api-2871467-serializer.md)
+- [thirdUnserializableAttribute](./testserialization/api-2871345-thirdunserializableattribute.md)
 
 
 ---

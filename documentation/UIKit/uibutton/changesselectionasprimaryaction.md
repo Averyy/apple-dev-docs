@@ -1,7 +1,8 @@
 # changesSelectionAsPrimaryAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the button tracks a selection, either through a menu or a toggle.
 
@@ -18,23 +19,28 @@ A Boolean value that indicates whether the button tracks a selection, either thr
 var changesSelectionAsPrimaryAction: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL changesSelectionAsPrimaryAction;
+```
+
 #### Discussion
 
-This behavior of this property composes with [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) and the [`menu`](uibutton/menu.md) property.
+This behavior of this property composes with [`showsMenuAsPrimaryAction`](../uicontrol/showsmenuasprimaryaction.md) and the [`menu`](./menu.md) property.
 
-If [`menu`](uibutton/menu.md) is `nil`, setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes the button toggle its [`selected`](uicontrol/state-swift.struct/selected.md) state.
+If [`menu`](./menu.md) is `nil`, setting this property to [`true`](../../Swift/true.md) makes the button toggle its [`selected`](../uicontrol/state-swift.struct/selected.md) state.
 
-If you set a menu and [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) is [`false`](https://developer.apple.com/documentation/swift/false), setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes the button a toggle button. The menu functions as a contextual menu, which appears after a long press.
+If you set a menu and [`showsMenuAsPrimaryAction`](../uicontrol/showsmenuasprimaryaction.md) is [`false`](../../Swift/false.md), setting this property to [`true`](../../Swift/true.md) makes the button a toggle button. The menu functions as a contextual menu, which appears after a long press.
 
-If you set a menu and [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) is [`true`](https://developer.apple.com/documentation/swift/true), setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes the button function as a pop-up. The button presents the menu on touch, the menu tracks the selection in its [`selectedElements`](uimenu/selectedelements.md) property, and the button title updates to reflect the selection.
+If you set a menu and [`showsMenuAsPrimaryAction`](../uicontrol/showsmenuasprimaryaction.md) is [`true`](../../Swift/true.md), setting this property to [`true`](../../Swift/true.md) makes the button function as a pop-up. The button presents the menu on touch, the menu tracks the selection in its [`selectedElements`](../uimenu/selectedelements.md) property, and the button title updates to reflect the selection.
 
 ## See Also
 
-- [var menu: UIMenu?](uibutton/menu.md)
+### Supporting menu and toggle buttons
+- [var menu: UIMenu?](./menu.md)
   A menu that the button displays.
-- [var isHeld: Bool](uibutton/isheld.md)
+- [var isHeld: Bool](./isheld.md)
   A Boolean value that indicates whether the button menu is visible.
-- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](uibutton/preferredmenuelementorder.md)
+- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](./preferredmenuelementorder.md)
   The preferred menu-element ordering strategy for the menu.
 
 

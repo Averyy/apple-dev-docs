@@ -1,7 +1,8 @@
 # capture()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a snapshot of the racing wheel inputs.
 
@@ -13,6 +14,10 @@ Returns a snapshot of the racing wheel inputs.
 
 ```swift
 func capture() -> GCRacingWheelInputState
+```
+
+```objc
+- (GCRacingWheelInputState *) capture;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # IntentParameter.AppUnionValueComponent.value
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The associated value of the selected case
 

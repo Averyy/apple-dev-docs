@@ -1,7 +1,8 @@
 # requiredContentVersion
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of PencilKit necessary to use the drawing.
 
@@ -16,6 +17,10 @@ The version of PencilKit necessary to use the drawing.
 
 ```swift
 var requiredContentVersion: PKContentVersion { get }
+```
+
+```objc
+@property (nonatomic, readonly) PKContentVersion requiredContentVersion;
 ```
 
 

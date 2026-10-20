@@ -1,7 +1,8 @@
 # init(bounds:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new graphics renderer with the specified bounds and a default format.
 
@@ -18,13 +19,17 @@ Creates a new graphics renderer with the specified bounds and a default format.
 convenience init(bounds: CGRect)
 ```
 
+```objc
+- (instancetype) initWithBounds:(CGRect) bounds;
+```
+
 #### Return Value
 
 An initialized graphics renderer.
 
 #### Discussion
 
-Use this initializer to create a graphics renderer that operates on Core Graphics contexts with the specified bounds. This initializer uses the [`default()`](uigraphicsrendererformat/default().md) static method on [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) to create the renderer’s format, thereby selecting parameters that are the most appropriate for the current device.
+Use this initializer to create a graphics renderer that operates on Core Graphics contexts with the specified bounds. This initializer uses the [`default()`](../uigraphicsrendererformat/default%28%29.md) static method on [`UIGraphicsRendererFormat`](../uigraphicsrendererformat.md) to create the renderer’s format, thereby selecting parameters that are the most appropriate for the current device.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Use this initializer to create a graphics renderer that operates on Core Graphic
 
 ## See Also
 
-- [init(bounds: CGRect, format: UIGraphicsRendererFormat)](uigraphicsrenderer/init(bounds:format:).md)
+### Initializing a graphics renderer
+- [init(bounds: CGRect, format: UIGraphicsRendererFormat)](./init%28bounds,format%29.md)
   Creates a new graphics renderer with the given bounds and format.
 
 

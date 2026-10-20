@@ -1,12 +1,13 @@
 # NSGlyphAttributeElastic
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The glyph is elastic.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The glyph is elastic.
 var NSGlyphAttributeElastic: Int { get }
 ```
 
+```c
+NSGlyphAttributeElastic
+```
+
 ## See Also
 
-- [var NSGlyphAttributeSoft: Int](nsglyphattributesoft.md)
+### Attributes
+- [var NSGlyphAttributeSoft: Int](./nsglyphattributesoft.md)
   The glyph is soft.
-- [var NSGlyphAttributeBidiLevel: Int](nsglyphattributebidilevel.md)
+- [var NSGlyphAttributeBidiLevel: Int](./nsglyphattributebidilevel.md)
   The bidirectional level of the glyph.
-- [var NSGlyphAttributeInscribe: Int](nsglyphattributeinscribe.md)
+- [var NSGlyphAttributeInscribe: Int](./nsglyphattributeinscribe.md)
   The glyph inscription attribute.
 
 

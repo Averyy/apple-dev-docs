@@ -1,7 +1,8 @@
 # mediaSegmentRequestEvents
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,15 @@
 var mediaSegmentRequestEvents: [AVMetricHLSMediaSegmentRequestEvent] { get }
 ```
 
+```objc
+@property (readonly) NSArray<AVMetricHLSMediaSegmentRequestEvent *> * mediaSegmentRequestEvents;
+```
+
 ## See Also
 
-- [var contentKeyRequestEvents: [AVMetricContentKeyRequestEvent]](avmetricplayeriteminitiallikelytokeepupevent/contentkeyrequestevents.md)
-- [var playlistRequestEvents: [AVMetricHLSPlaylistRequestEvent]](avmetricplayeriteminitiallikelytokeepupevent/playlistrequestevents.md)
+### Inspecting the event
+- [var contentKeyRequestEvents: [AVMetricContentKeyRequestEvent]](./contentkeyrequestevents.md)
+- [var playlistRequestEvents: [AVMetricHLSPlaylistRequestEvent]](./playlistrequestevents.md)
 
 
 ---

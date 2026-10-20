@@ -1,7 +1,8 @@
 # blockSecurityStatusBit5
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -12,6 +13,10 @@
 
 ```swift
 static var blockSecurityStatusBit5: NFCISO15693ResponseFlag { get }
+```
+
+```c
+NFCISO15693ResponseFlagBlockSecurityStatusBit5
 ```
 
 

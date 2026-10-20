@@ -1,7 +1,8 @@
 # typesettingLanguage(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the language for typesetting.
 
@@ -19,6 +20,13 @@ Specifies the language for typesetting.
 ```swift
 nonisolated
 func typesettingLanguage(_ language: Locale.Language, isEnabled: Bool = true) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func typesettingLanguage(_ language: TypesettingLanguage, isEnabled: Bool = true) -> some View
 ```
 
 #### Return Value
@@ -43,13 +51,14 @@ Note: this language does not affect text localization.
 
 ## See Also
 
-- [Preparing views for localization](preparing-views-for-localization.md)
+### Localizing text
+- [Preparing views for localization](../preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
-- [struct LocalizedStringKey](localizedstringkey.md)
+- [struct LocalizedStringKey](../localizedstringkey.md)
   The key used to look up an entry in a strings file or strings dictionary file.
-- [var locale: Locale](environmentvalues/locale.md)
+- [var locale: Locale](../environmentvalues/locale.md)
   The current locale that views should use.
-- [struct TypesettingLanguage](typesettinglanguage.md)
+- [struct TypesettingLanguage](../typesettinglanguage.md)
   Defines how typesetting language is determined for text.
 
 

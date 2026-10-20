@@ -1,7 +1,8 @@
 # animatedImageNamed(_:duration:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an animated image.
 
@@ -9,7 +10,7 @@ Creates and returns an animated image.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Creates and returns an animated image.
 
 ```swift
 class func animatedImageNamed(_ name: String, duration: TimeInterval) -> UIImage?
+```
+
+```objc
++ (UIImage *) animatedImageNamed:(NSString *) name duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -34,11 +39,12 @@ This method loads a series of files by appending a series of numbers to the base
 
 ## See Also
 
-- [class func animatedImage(with: [UIImage], duration: TimeInterval) -> UIImage?](uiimage/animatedimage(with:duration:).md)
+### Creating animated images
+- [class func animatedImage(with: [UIImage], duration: TimeInterval) -> UIImage?](./animatedimage%28with,duration%29.md)
   Creates and returns an animated image from an existing set of images.
-- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, duration: TimeInterval) -> UIImage?](uiimage/animatedresizableimagenamed(_:capinsets:duration:).md)
+- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, duration: TimeInterval) -> UIImage?](./animatedresizableimagenamed%28_,capinsets,duration%29.md)
   Creates and returns an animated image with end caps.
-- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode, duration: TimeInterval) -> UIImage?](uiimage/animatedresizableimagenamed(_:capinsets:resizingmode:duration:).md)
+- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode, duration: TimeInterval) -> UIImage?](./animatedresizableimagenamed%28_,capinsets,resizingmode,duration%29.md)
   Creates and returns an animated image with end caps and a specific resizing mode.
 
 

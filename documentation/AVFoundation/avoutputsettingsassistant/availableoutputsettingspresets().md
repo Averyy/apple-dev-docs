@@ -1,7 +1,8 @@
 # availableOutputSettingsPresets()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of preset values to use to initialize an output settings assistant.
 
@@ -19,15 +20,20 @@ Returns an array of preset values to use to initialize an output settings assist
 class func availableOutputSettingsPresets() -> [AVOutputSettingsPreset]
 ```
 
+```objc
++ (NSArray<NSString *> *) availableOutputSettingsPresets;
+```
+
 #### Return Value
 
 An array of available output settings presets.
 
 ## See Also
 
-- [convenience init?(preset: AVOutputSettingsPreset)](avoutputsettingsassistant/init(preset:).md)
+### Creating an assistant
+- [convenience init?(preset: AVOutputSettingsPreset)](./init%28preset%29.md)
   Creates an output setting assistant with a preset configuration.
-- [struct AVOutputSettingsPreset](avoutputsettingspreset.md)
+- [struct AVOutputSettingsPreset](../avoutputsettingspreset.md)
   A structure that defines preset configurations for an output settings assistant.
 
 

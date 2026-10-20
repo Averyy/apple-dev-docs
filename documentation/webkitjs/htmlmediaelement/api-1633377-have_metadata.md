@@ -11,7 +11,7 @@ Enough of the media resource has been loaded to know the duration, and in the ca
 
 ## Declaration
 
-```swift
+```
 const unsigned short HAVE_METADATA;
 ```
 

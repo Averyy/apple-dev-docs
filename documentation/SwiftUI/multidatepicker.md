@@ -1,7 +1,8 @@
 # MultiDatePicker
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control for picking multiple dates.
 
@@ -53,7 +54,7 @@ var body: some View {
 }
 ```
 
-You can also specify an alternative locale, calendar and time zone through environment values. This can be useful when using a [`PreviewProvider`](previewprovider.md) to see how your multi-date picker behaves in environments that differ from your own.
+You can also specify an alternative locale, calendar and time zone through environment values. This can be useful when using a [`PreviewProvider`](./previewprovider.md) to see how your multi-date picker behaves in environments that differ from your own.
 
 The following example shows a multi-date picker with a custom locale, calendar and time zone:
 
@@ -72,30 +73,31 @@ struct ContentView_Previews: PreviewProvider {
 ## Topics
 
 ### Picking dates
-- [init(_:selection:)](multidatepicker/init(_:selection:).md)
+- [init(_:selection:)](./multidatepicker/init%28_,selection%29.md)
   Creates an instance that selects multiple dates with an unbounded range.
-- [init(selection: Binding<Set<DateComponents>>, label: () -> Label)](multidatepicker/init(selection:label:).md)
+- [init(selection: Binding<Set<DateComponents>>, label: () -> Label)](./multidatepicker/init%28selection,label%29.md)
   Creates an instance that selects multiple dates with an unbounded range.
 ### Picking dates in a range
-- [init(_:selection:in:)](multidatepicker/init(_:selection:in:).md)
+- [init(_:selection:in:)](./multidatepicker/init%28_,selection,in%29.md)
   Creates an instance that selects multiple dates on or after some start date.
-- [init(selection:in:label:)](multidatepicker/init(selection:in:label:).md)
+- [init(selection:in:label:)](./multidatepicker/init%28selection,in,label%29.md)
   Creates an instance that selects multiple dates on or after some start date.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct DatePicker](datepicker.md)
+### Choosing dates
+- [struct DatePicker](./datepicker.md)
   A control for selecting an absolute date.
-- [func datePickerStyle<S>(S) -> some View](view/datepickerstyle(_:).md)
+- [func datePickerStyle<S>(S) -> some View](./view/datepickerstyle%28_%29.md)
   Sets the style for date pickers within this view.
-- [var calendar: Calendar](environmentvalues/calendar.md)
+- [var calendar: Calendar](./environmentvalues/calendar.md)
   The current calendar that views should use when handling dates.
-- [var timeZone: TimeZone](environmentvalues/timezone.md)
+- [var timeZone: TimeZone](./environmentvalues/timezone.md)
   The current time zone that views should use when handling dates.
 
 

@@ -1,7 +1,8 @@
 # AVLegibleMediaOptionsMenuController
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 class AVLegibleMediaOptionsMenuController
 ```
 
+```objc
+@interface AVLegibleMediaOptionsMenuController : NSObject
+```
+
 #### Overview
 
 A menu controller for legible media options (subtitles/captions)
@@ -25,35 +30,36 @@ Supports both media track selection and caption appearance customization. When i
 ## Topics
 
 ### Creating a menu controller
-- [init(player: AVPlayer?)](avlegiblemediaoptionsmenucontroller/init(player:).md)
+- [init(player: AVPlayer?)](./avlegiblemediaoptionsmenucontroller/init%28player%29.md)
 ### Managing the menu
-- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](avlegiblemediaoptionsmenucontroller/menu(contents:).md)
-- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
-- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
-- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
-- [AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenucontroller/statechangereason.md)
+- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](./avlegiblemediaoptionsmenucontroller/menu%28contents%29.md)
+- [var menuState: AVLegibleMediaOptionsMenuState](./avlegiblemediaoptionsmenucontroller/menustate.md)
+- [AVLegibleMediaOptionsMenuController.MenuContents](./avlegiblemediaoptionsmenucontroller/menucontents.md)
+- [struct AVLegibleMediaOptionsMenuState](./avlegiblemediaoptionsmenustate.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason](./avlegiblemediaoptionsmenucontroller/statechangereason.md)
 ### Accessing the player
-- [var player: AVPlayer](avlegiblemediaoptionsmenucontroller/player.md)
+- [var player: AVPlayer](./avlegiblemediaoptionsmenucontroller/player.md)
 ### Configuring a delegate
-- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](avlegiblemediaoptionsmenucontroller/delegate-swift.property.md)
-- [AVLegibleMediaOptionsMenuController.Delegate](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol.md)
+- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](./avlegiblemediaoptionsmenucontroller/delegate-swift.property.md)
+- [AVLegibleMediaOptionsMenuController.Delegate](./avlegiblemediaoptionsmenucontroller/delegate-swift.protocol.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
-- [class AVContentSelectionViewController](avcontentselectionviewcontroller.md)
+### Media and content selection
+- [struct AVLegibleMediaOptionsMenuState](./avlegiblemediaoptionsmenustate.md)
+- [class AVContentSelectionViewController](./avcontentselectionviewcontroller.md)
   A view controller for providing additional UI to the multiview experience.
 
 

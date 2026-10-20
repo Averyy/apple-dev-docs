@@ -1,7 +1,8 @@
 # criticalSoundNamed(_:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom sound object for critical alerts.
 
@@ -18,6 +19,10 @@ Creates a custom sound object for critical alerts.
 class func criticalSoundNamed(_ name: UNNotificationSoundName) -> Self
 ```
 
+```objc
++ (instancetype) criticalSoundNamed:(UNNotificationSoundName) name;
+```
+
 #### Return Value
 
 A sound object representing a custom critical alert sound.
@@ -32,11 +37,12 @@ Critical alerts ignore the mute switch and Do Not Disturb. They require a specia
 
 ## See Also
 
-- [class var defaultCritical: UNNotificationSound](unnotificationsound/defaultcritical.md)
+### Getting Critical Sounds
+- [class var defaultCritical: UNNotificationSound](./defaultcritical.md)
   The default sound used for critical alerts.
-- [class func defaultCriticalSound(withAudioVolume: Float) -> Self](unnotificationsound/defaultcriticalsound(withaudiovolume:).md)
+- [class func defaultCriticalSound(withAudioVolume: Float) -> Self](./defaultcriticalsound%28withaudiovolume%29.md)
   Creates a sound object that plays the default critical alert sound at the volume you specify.
-- [class func criticalSoundNamed(UNNotificationSoundName, withAudioVolume: Float) -> Self](unnotificationsound/criticalsoundnamed(_:withaudiovolume:).md)
+- [class func criticalSoundNamed(UNNotificationSoundName, withAudioVolume: Float) -> Self](./criticalsoundnamed%28_,withaudiovolume%29.md)
   Creates a custom sound object for critical alerts with the volume you specify.
 
 

@@ -1,7 +1,8 @@
 # AVAudioSourceNodeRenderBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that supplies audio data to an audio source node.
 
@@ -20,6 +21,10 @@ A block that supplies audio data to an audio source node.
 typealias AVAudioSourceNodeRenderBlock = (UnsafeMutablePointer<ObjCBool>, UnsafePointer<AudioTimeStamp>, AVAudioFrameCount, UnsafeMutablePointer<AudioBufferList>) -> OSStatus
 ```
 
+```c
+typedef int (^)(_Bool *, const struct AudioTimeStamp *, unsigned int, struct AudioBufferList *) AVAudioSourceNodeRenderBlock;
+```
+
 #### Return Value
 
 An `OSStatus` result code. When returning an error, consider the audio data invalid.
@@ -33,9 +38,10 @@ An `OSStatus` result code. When returning an error, consider the audio data inva
 
 ## See Also
 
-- [init(renderBlock: AVAudioSourceNodeRenderBlock)](avaudiosourcenode/init(renderblock:).md)
+### Creating an audio source node
+- [init(renderBlock: AVAudioSourceNodeRenderBlock)](./avaudiosourcenode/init%28renderblock%29.md)
   Creates an audio source node with a block that supplies audio data.
-- [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](avaudiosourcenode/init(format:renderblock:).md)
+- [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](./avaudiosourcenode/init%28format,renderblock%29.md)
   Creates an audio source node with the audio format and a block that supplies audio data.
 
 

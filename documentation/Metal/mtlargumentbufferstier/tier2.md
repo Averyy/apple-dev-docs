@@ -1,7 +1,8 @@
 # MTLArgumentBuffersTier.tier2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Support for tier 2 argument buffers.
 
@@ -19,13 +20,18 @@ Support for tier 2 argument buffers.
 case tier2
 ```
 
+```c
+MTLArgumentBuffersTier2
+```
+
 #### Discussion
 
 Tier 2 argument buffers are supported on all macOS discrete GPUs.
 
 ## See Also
 
-- [MTLArgumentBuffersTier.tier1](mtlargumentbufferstier/tier1.md)
+### Enumeration cases
+- [MTLArgumentBuffersTier.tier1](./tier1.md)
   Support for tier 1 argument buffers.
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var type: HKAudiogramConductionType { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) HKAudiogramConductionType type;
 ```
 
 #### Discussion

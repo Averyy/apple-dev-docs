@@ -1,13 +1,14 @@
 # Get Subscriptions
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the subscriptions that your organization manages.
 
 ## Mentions
 
-- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Getting started with the management API](./getting-started-with-the-management-api.md)
 
 #### Discussion
 
@@ -15,7 +16,7 @@ Get the subscriptions that your organization manages.
 
 **Request**:
 
-```None
+```
 ?parentAdamId=54321&adamId=12345
 ```
 
@@ -53,12 +54,12 @@ Get the subscriptions that your organization manages.
 ## Topics
 
 ### Response
-- [object GetSubscriptionsResponse](getsubscriptionsresponse.md)
+- [object GetSubscriptionsResponse](./getsubscriptionsresponse.md)
   The response that contains the requested subscriptions.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
-- [Managing subscriptions](managing-subscriptions.md)
+- [Managing subscriptions](./managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
 
 ## Endpoint
@@ -67,27 +68,37 @@ Get the subscriptions that your organization manages.
 
 ## Parameters
 
+### Query Parameters
+
 - `parentAdamId` ([int64]): The filter for subscriptions by parent Adam ID.
 - `adamId` ([int64]): The filter for subscriptions by Adam ID.
 - `cursor` (string): The cursor for pagination to fetch the next page of results.
 
+## Responses
+
+- `200` OK (`GetSubscriptionsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
+
 ## See Also
 
-- [Enable Subscriptions](enable-subscriptions.md)
+### Subscription management
+- [Enable Subscriptions](./enable-subscriptions.md)
   Declare that your device management service supports subscription management.
-- [Disable Subscriptions](disable-subscriptions.md)
+- [Disable Subscriptions](./disable-subscriptions.md)
   Declare that your device management service doesn’t support subscription management.
-- [Get Subscription Assignments](get-subscription-assignments.md)
+- [Get Subscription Assignments](./get-subscription-assignments.md)
   Get the subscription assignments for users in your organization.
-- [Associate Subscriptions](associate-subscriptions.md)
+- [Associate Subscriptions](./associate-subscriptions.md)
   Associate subscriptions with client user IDs.
-- [Disassociate Subscriptions](disassociate-subscriptions.md)
+- [Disassociate Subscriptions](./disassociate-subscriptions.md)
   Disassociate subscriptions from client user IDs.
-- [Get Subscription Administrators](get-subscription-administrators.md)
+- [Get Subscription Administrators](./get-subscription-administrators.md)
   Get the administrators for subscriptions that your organization manages.
-- [Add Subscription Administrators](add-subscription-administrators.md)
+- [Add Subscription Administrators](./add-subscription-administrators.md)
   Add administrators for subscriptions.
-- [Remove Subscription Administrators](remove-subscription-administrators.md)
+- [Remove Subscription Administrators](./remove-subscription-administrators.md)
   Remove administrators from subscriptions.
 
 

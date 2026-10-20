@@ -1,20 +1,21 @@
 # Creating and Integrating a Model with Custom Layers
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: Article
 
 Add models with custom neural-network layers to your app.
 
 #### Overview
 
-New network layers and architectures solve problems that might be difficult or impractical with code. You can support each new layer type before Core ML directly supports it by implementing a *custom layer*. A custom layer is a class that adopts [`MLCustomLayer`](mlcustomlayer.md) and implements the methods to run a neural network layer in code.
+New network layers and architectures solve problems that might be difficult or impractical with code. You can support each new layer type before Core ML directly supports it by implementing a *custom layer*. A custom layer is a class that adopts [`MLCustomLayer`](./mlcustomlayer.md) and implements the methods to run a neural network layer in code.
 
 > **Note**:  Core ML supports models with custom layers beginning with these software releases: iOS 11.2, macOS 10.13.2, tvOS 11.2 and watchOS 4.2.
 
-##### Add a Model You Acquire or Create
+##### Add a model you acquire or create
 
 If you have a Core ML model with custom layers, add the model to your Xcode project.
 
-Otherwise, convert a third-party model and designate the new layers as custom with the [`Core ML Tools`](https://developer.apple.comhttps://coremltools.readme.io). Follow the steps on the [`Custom Operators`](https://developer.apple.comhttps://coremltools.readme.io/docs/custom-operators) page to define the new layers as custom. Give each custom layer a unique name by assigning a unique string to the operator’s class name binding.
+Otherwise, convert a third-party model and designate the new layers as custom with the [Core ML Tools](https://coremltools.readme.io). Follow the steps on the [Custom Operators](https://coremltools.readme.io/docs/custom-operators) page to define the new layers as custom. Give each custom layer a unique name by assigning a unique string to the operator’s class name binding.
 
 ```python
 bindings = {
@@ -26,37 +27,38 @@ bindings = {
 
 Save the Core ML model you converted and add it to your Xcode project.
 
-##### Integrate or Create a Class for Each Custom Layer
+##### Integrate or create a class for each custom layer
 
 If the author of the model you plan to add to your Xcode project implemented the custom layers in source-code files, add the source files into your Xcode project.
 
 Otherwise, implement each custom layer by creating a Swift or Objective-C class for each layer. Inspect the names of the model’s custom layers by opening the model in Xcode:
 
-![Screenshot of a model view in Xcode that shows three custom layers in the Dependencies section: AAPLCustomAdd, AAPLCustomInnerProduct, and AAPLCustomConvolution.](/images/com.apple.coreml/media-3744502@2x.png)
+![Screenshot of a model view in Xcode that shows three custom layers in the Dependencies section: AAPLCustomAdd, AAPLCustomInnerProduct, and AAPLCustomConvolution.](https://developer.apple.com/tutorials/images/com.apple.coreml/media-3744502@2x.png)
 
 Create a class for each custom layer that the model has in its list of dependencies and name each class to match the custom layer it implements.
 
-> ❗ **Important**:  Swift classes must subclass [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
+> ❗ **Important**:  Swift classes must subclass [`NSObject`](../ObjectiveC/nsobject-swift.class.md) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
 
-Adopt the [`MLCustomLayer`](mlcustomlayer.md) protocol by implementing the following:
+Adopt the [`MLCustomLayer`](./mlcustomlayer.md) protocol by implementing the following:
 
-- **[`init(parameters:)`](mlcustomlayer/init(parameters:).md)**: An initializer that configures the layer’s parameters that the model defines in its Core ML model file. Core ML initializes each layer once at load time.
-- **[`setWeightData(_:)`](mlcustomlayer/setweightdata(_:).md)**: A method that configures the layer’s weights that the model defines in its Core ML model file. Core ML invokes this method once at load time, after initialization.
-- **[`outputShapes(forInputShapes:)`](mlcustomlayer/outputshapes(forinputshapes:).md)**: A method that defines the layer’s output shapes based on the input shapes at runtime. Core ML invokes this method at load time, after initialization, and again each time the layer’s input shapes change.
-- **[`evaluate(inputs:outputs:)`](mlcustomlayer/evaluate(inputs:outputs:).md)**: A method that defines the computational behavior for your custom layer. Core ML invokes this method each time your model makes a prediction on the CPU.
-- **[`encode(commandBuffer:inputs:outputs:)`](mlcustomlayer/encode(commandbuffer:inputs:outputs:).md)**: An optional method that defines your layer’s computational behavior with GPU commands.
+- **[`init(parameters:)`](./mlcustomlayer/init%28parameters%29.md)**: An initializer that configures the layer’s parameters that the model defines in its Core ML model file. Core ML initializes each layer once at load time.
+- **[`setWeightData(_:)`](./mlcustomlayer/setweightdata%28_%29.md)**: A method that configures the layer’s weights that the model defines in its Core ML model file. Core ML invokes this method once at load time, after initialization.
+- **[`outputShapes(forInputShapes:)`](./mlcustomlayer/outputshapes%28forinputshapes%29.md)**: A method that defines the layer’s output shapes based on the input shapes at runtime. Core ML invokes this method at load time, after initialization, and again each time the layer’s input shapes change.
+- **[`evaluate(inputs:outputs:)`](./mlcustomlayer/evaluate%28inputs,outputs%29.md)**: A method that defines the computational behavior for your custom layer. Core ML invokes this method each time your model makes a prediction on the CPU.
+- **[`encode(commandBuffer:inputs:outputs:)`](./mlcustomlayer/encode%28commandbuffer,inputs,outputs%29.md)**: An optional method that defines your layer’s computational behavior with GPU commands.
 
-Core ML invokes the appropriate [`MLCustomLayer`](mlcustomlayer.md) methods for each custom layer at runtime when your app calls the [`prediction(from:)`](mlmodel/prediction(from:)-9y2aa.md) method.
+Core ML invokes the appropriate [`MLCustomLayer`](./mlcustomlayer.md) methods for each custom layer at runtime when your app calls the [`prediction(from:)`](./mlmodel/prediction%28from%29-9y2aa.md) method.
 
 > ⚠️ **Warning**:  Don’t change the values that Core ML provides to these methods — such as weights, inputs, or outputs — because it may cause your app to behave in unexpected ways, and possibly crash.
 
-##### Test the Custom Layers
+##### Test the custom layers
 
 If applicable, test the custom layers by using the model to make predictions with input values from one or more test cases. Confirm the model layers function correctly by comparing the model’s prediction values to the output values for each test case.
 
 ## See Also
 
-- [protocol MLCustomLayer](mlcustomlayer.md)
+### Custom model layers
+- [protocol MLCustomLayer](./mlcustomlayer.md)
   An interface that defines the behavior of a custom layer in your neural network model.
 
 

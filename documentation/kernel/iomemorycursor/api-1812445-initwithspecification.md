@@ -7,7 +7,7 @@ Primary initializer for the IOMemoryCursor class.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithSpecification(
  SegmentFunction outSegFunc, 
  IOPhysicalLength maxSegmentSize = 0, 
@@ -15,7 +15,7 @@ virtual bool initWithSpecification(
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if the inherited classes and this instance initialize successfully.
 
@@ -28,9 +28,10 @@ Returns true if the inherited classes and this instance initialize successfully.
 
 ## See Also
 
-- [genPhysicalSegments](iomemorycursor/1812441-genphysicalsegments.md)
+### Miscellaneous
+- [genPhysicalSegments](./api-1812441-genphysicalsegments.md)
   Generates a physical scatter/gather list given a memory descriptor.
-- [withSpecification](iomemorycursor/1812453-withspecification.md)
+- [withSpecification](./api-1812453-withspecification.md)
   Creates and initializes an IOMemoryCursor in one operation.
 
 

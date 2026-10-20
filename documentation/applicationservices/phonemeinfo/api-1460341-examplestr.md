@@ -1,7 +1,8 @@
 # exampleStr
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An example word that illustrates use of the phoneme.
 
@@ -12,6 +13,10 @@ An example word that illustrates use of the phoneme.
 
 ```swift
 var exampleStr: Str31
+```
+
+```c
+Str31 exampleStr;
 ```
 
 

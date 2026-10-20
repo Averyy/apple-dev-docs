@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the value wraps when it reaches the range’s minimum or maximum value.
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the value wraps when it reaches the range
 var canWrap: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canWrap;
+```
+
 #### Discussion
 
-This property is [`false`](https://developer.apple.com/documentation/swift/false) for most axis inputs.
+This property is [`false`](../../Swift/false.md) for most axis inputs.
 
 ## See Also
 
-- [var isAnalog: Bool](gcaxis2dinput/isanalog.md)
+### Getting the characteristics
+- [var isAnalog: Bool](./isanalog.md)
   A Boolean value that indicates whether the input provides analog values.
 
 

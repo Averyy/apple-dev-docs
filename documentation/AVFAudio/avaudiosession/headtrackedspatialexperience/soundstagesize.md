@@ -1,7 +1,8 @@
 # soundStageSize
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 1.0+
@@ -14,7 +15,8 @@ var soundStageSize: AVAudioSession.SoundStageSize { get }
 
 ## See Also
 
-- [var anchoringStrategy: AVAudioSession.AnchoringStrategy](avaudiosession/headtrackedspatialexperience/anchoringstrategy.md)
+### Inspecting the experience
+- [var anchoringStrategy: AVAudioSession.AnchoringStrategy](./anchoringstrategy.md)
 
 
 ---

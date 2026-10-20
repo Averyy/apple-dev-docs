@@ -1,7 +1,8 @@
 # unscaled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns metrics that match the scale of the user’s surroundings, regardless of the world scaling behavior of their scene.
 

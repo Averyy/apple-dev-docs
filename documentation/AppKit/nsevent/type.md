@@ -1,12 +1,13 @@
 # type
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event’s type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The event’s type.
 var type: NSEvent.EventType { get }
 ```
 
+```objc
+@property (readonly) NSEventType type;
+```
+
 #### Discussion
 
-For a list of possible values, see [`NSEvent.EventType`](nsevent/eventtype.md).
+For a list of possible values, see [`NSEvent.EventType`](./eventtype.md).
 
 ## See Also
 
-- [NSEvent.EventType](nsevent/eventtype.md)
+### Getting the event type
+- [NSEvent.EventType](./eventtype.md)
   Constants for the types of events that responder objects can handle.
-- [NSEvent.EventTypeMask](nsevent/eventtypemask.md)
+- [NSEvent.EventTypeMask](./eventtypemask.md)
   Constants that you use to filter out specific event types from the stream of incoming events.
-- [var subtype: NSEvent.EventSubtype](nsevent/subtype.md)
+- [var subtype: NSEvent.EventSubtype](./subtype.md)
   The event’s subtype.
-- [NSEvent.EventSubtype](nsevent/eventsubtype.md)
+- [NSEvent.EventSubtype](./eventsubtype.md)
   Subtypes for various types of events.
 
 

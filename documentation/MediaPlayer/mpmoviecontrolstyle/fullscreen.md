@@ -1,17 +1,24 @@
 # MPMovieControlStyle.fullscreen
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case fullscreen
+```
+
+```c
+MPMovieControlStyleFullscreen
 ```
 
 #### Discussion
@@ -20,9 +27,10 @@ Controls for fullscreen playback are displayed. The controls include a start/pau
 
 ## See Also
 
-- [MPMovieControlStyle.none](mpmoviecontrolstyle/none.md)
-- [MPMovieControlStyle.embedded](mpmoviecontrolstyle/embedded.md)
-- [static var `default`: MPMovieControlStyle](mpmoviecontrolstyle/default.md)
+### Constants
+- [MPMovieControlStyle.none](./none.md)
+- [MPMovieControlStyle.embedded](./embedded.md)
+- [static var `default`: MPMovieControlStyle](./default.md)
 
 
 ---

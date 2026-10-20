@@ -1,14 +1,15 @@
 # vfs_clearauthopaque
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void vfs_clearauthopaque(mount_t mp);
 ```
 

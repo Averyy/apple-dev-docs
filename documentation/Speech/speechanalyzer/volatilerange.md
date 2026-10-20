@@ -1,7 +1,8 @@
 # volatileRange
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of results that can change.
 
@@ -34,7 +35,8 @@ The volatile range is `nil` if no input has been received.
 
 ## See Also
 
-- [func setVolatileRangeChangedHandler(sending ((CMTimeRange, Bool, Bool) -> Void)?)](speechanalyzer/setvolatilerangechangedhandler(_:).md)
+### Monitoring analysis
+- [func setVolatileRangeChangedHandler(sending ((CMTimeRange, Bool, Bool) -> Void)?)](./setvolatilerangechangedhandler%28_%29.md)
   A closure that the analyzer calls when the volatile range changes.
 
 

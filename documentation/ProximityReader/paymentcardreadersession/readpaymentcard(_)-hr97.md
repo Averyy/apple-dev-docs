@@ -1,7 +1,8 @@
 # readPaymentCard(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a sheet to verify a contactless payment card, and returns the card data.
 
@@ -18,13 +19,13 @@ func readPaymentCard(_ request: PaymentCardVerificationRequest) async throws -> 
 
 #### Return Value
 
-A [`PaymentCardReadResult`](paymentcardreadresult.md) if the read operation was successful.
+A [`PaymentCardReadResult`](../paymentcardreadresult.md) if the read operation was successful.
 
 #### Discussion
 
 Call this method when you want to verify someone’s card with your payment provider. When you call this method, the system displays UI with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs.
 
-> **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
+> **Throws**: This method throws a [`PaymentCardReaderSession.ReadError`](./readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ Call this method when you want to verify someone’s card with your payment prov
 
 ## See Also
 
-- [func readPaymentCard(PaymentCardTransactionRequest) async throws -> PaymentCardReadResult](paymentcardreadersession/readpaymentcard(_:)-8jol5.md)
+### Reading a payment card
+- [func readPaymentCard(PaymentCardTransactionRequest) async throws -> PaymentCardReadResult](./readpaymentcard%28_%29-8jol5.md)
   Presents a sheet to read a contactless payment card for a purchase or a refund, and returns the encrypted card data.
 
 

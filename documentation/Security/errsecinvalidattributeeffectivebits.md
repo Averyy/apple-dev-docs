@@ -1,7 +1,8 @@
 # errSecInvalidAttributeEffectiveBits
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An effective bits attribute is not valid.
 
@@ -18,6 +19,10 @@ An effective bits attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeEffectiveBits: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeEffectiveBits
 ```
 
 

@@ -1,14 +1,15 @@
 # cinematicCapability(for:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously checks the cinematic capability of an asset. Returns CNCinematicCapability.none if a cinematic metadata track is not present. CNCinematicCapability.renderable if the cinematic asset can be used without preprocessing CNCinematicCapability.needsPreprocessing If cinematic asset needs preprocessing before it can be used For assets that need preprocessing use `CNAssetInfo.preprocessAsset(configuration:subprogress:)` before using the asset
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 - tvOS 27.0+
 

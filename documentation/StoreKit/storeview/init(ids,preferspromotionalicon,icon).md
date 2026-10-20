@@ -1,7 +1,8 @@
 # init(ids:prefersPromotionalIcon:icon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to load a collection of products from the App Store using product identifiers, and merchandise them using a custom image.
 
@@ -33,11 +34,12 @@ The store view shows a placeholder icon until all products finish loading. Then,
 
 ## See Also
 
-- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool)](storeview/init(ids:preferspromotionalicon:).md)
+### Creating store views that load products
+- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool)](./init%28ids,preferspromotionalicon%29.md)
   Creates a view to load and merchandise a collection of products from the App Store using product identifiers.
-- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon, placeholderIcon: () -> PlaceholderIcon)](storeview/init(ids:preferspromotionalicon:icon:placeholdericon:).md)
+- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28ids,preferspromotionalicon,icon,placeholdericon%29.md)
   Creates a view to load a collection of products from the App Store using product identifiers, and merchandise them using an image and a custom placeholder icon.
-- [init(ids: some Collection<String>, icon: (Product, ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](storeview/init(ids:icon:placeholdericon:).md)
+- [init(ids: some Collection<String>, icon: (Product, ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28ids,icon,placeholdericon%29.md)
   Creates a view to load a collection of products from the App Store using product identifiers, and merchandise them using their promotional images and a custom placeholder icon.
 
 

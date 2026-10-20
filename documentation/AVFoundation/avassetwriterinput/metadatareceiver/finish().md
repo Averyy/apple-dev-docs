@@ -1,7 +1,8 @@
 # finish()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to the AVAssetWriter that no more buffers will be appended to this receiver.
 
@@ -21,9 +22,10 @@ func finish()
 
 ## See Also
 
-- [func append(AVTimedMetadataGroup) async throws](avassetwriterinput/metadatareceiver/append(_:).md)
+### Appending metadata
+- [func append(AVTimedMetadataGroup) async throws](./append%28_%29.md)
   Suspends until the input is ready for more media data, then appends the timed metadata group.
-- [func appendImmediately(AVTimedMetadataGroup) throws -> Bool](avassetwriterinput/metadatareceiver/appendimmediately(_:).md)
+- [func appendImmediately(AVTimedMetadataGroup) throws -> Bool](./appendimmediately%28_%29.md)
   Appends the timed metadata group synchronously if the input is ready for more media data.
 
 

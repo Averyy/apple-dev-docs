@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from single value.
 
@@ -11,7 +12,7 @@ Creates an object from single value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,7 @@ init(floatLiteral value: Float)
 
 In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from a single value to describe the reflectiveness of the entire material. A value of 0.0 creates a *dielectric* (or non-reflective) material. Values greater than 0.0 result in an increasingly *metallic* (or reflective) materials.
 
-![An illustration showing two spheres rendered in RealityKit. The](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Metallic-swift-struct-init(floatLiteral:)-1@2x.png)
+![An illustration showing two spheres rendered in RealityKit. The](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicallyBasedMaterial-Metallic-swift-struct-init(floatLiteral:)-1@2x.png)
 
 ## Parameters
 
@@ -31,9 +32,10 @@ In PBR rendering, the `metallic` property represents the reflectiveness of an en
 
 ## See Also
 
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/metallic-swift.struct/init(scale:texture:).md)
+### Creating a metallic object
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object from a color or texture.
-- [init(CustomMaterial.Metallic)](physicallybasedmaterial/metallic-swift.struct/init(_:).md)
+- [init(CustomMaterial.Metallic)](./init%28_%29.md)
   Creates a metallic object from a custom material’s metallic property.
 
 

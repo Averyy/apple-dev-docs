@@ -1,7 +1,8 @@
 # MACaptionAppearanceDomain.videoConferencing
 
 **Framework**: Media Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case videoConferencing
+```
+
+```c
+kMACaptionAppearanceDomainVideoConferencing
 ```
 
 

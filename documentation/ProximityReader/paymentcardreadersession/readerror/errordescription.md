@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the error in plain text.
 
@@ -18,7 +19,8 @@ var errorDescription: String { get }
 
 ## See Also
 
-- [var errorName: String](paymentcardreadersession/readerror/errorname.md)
+### Describing the error
+- [var errorName: String](./errorname.md)
 
 
 ---

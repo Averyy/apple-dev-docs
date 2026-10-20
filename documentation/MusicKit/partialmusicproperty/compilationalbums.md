@@ -1,7 +1,8 @@
 # compilationAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of compilation albums that include tracks by the artist.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of compilat
 ```swift
 static let compilationAlbums: MusicRelationshipProperty<Artist, Album>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

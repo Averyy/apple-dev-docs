@@ -1,7 +1,8 @@
 # didSucceed
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,16 +19,21 @@
 var didSucceed: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL didSucceed;
+```
+
 ## See Also
 
-- [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchevent/fromvariant.md)
-- [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchevent/loadedtimeranges-5lkmg.md)
-- [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchevent/tovariant.md)
-- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/audiorendition.md)
+### Inspecting the event
+- [var fromVariant: AVAssetVariant?](./fromvariant.md)
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-5lkmg.md)
+- [var toVariant: AVAssetVariant](./tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
   Represents the currently selected video rendition’s identifiers.
-- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/videorendition.md)
+- [var videoRendition: AVMetricMediaRendition](./videorendition.md)
   Represents the currently selected video rendition’s identifiers.
-- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/subtitlerendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
   Represents the currently selected audio rendition’s identifiers.
 
 

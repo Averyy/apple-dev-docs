@@ -1,7 +1,8 @@
 # init(url:name:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a texture that loads its texel data from a file at the specified URL.
 
@@ -19,18 +20,22 @@ Initializes a texture that loads its texel data from a file at the specified URL
 init(url URL: URL, name: String?)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL name:(NSString *) name;
+```
+
 #### Return Value
 
 A new URL-backed texture.
 
 #### Discussion
 
-This initializer does not load texel data from the URL; the [`MDLURLTexture`](mdlurltexture.md) class automatically loads data and caches it for reuse when you use one of the [`MDLTexture`](mdltexture.md) methods listed in Accessing Texture Data.
+This initializer does not load texel data from the URL; the [`MDLURLTexture`](../mdlurltexture.md) class automatically loads data and caches it for reuse when you use one of the [`MDLTexture`](../mdltexture.md) methods listed in Accessing Texture Data.
 
 ## Parameters
 
 - `URL`: The URL from which to load texture data.
-- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
+- `name`: The [`name`](../mdlnamed/name.md) property for the new texture object.
 
 
 ---

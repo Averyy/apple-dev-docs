@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an array of hand-action predictions for a video.
 
@@ -24,9 +25,10 @@ func prediction(from video: URL) throws -> [MLHandActionClassifier.Prediction]
 
 ## See Also
 
-- [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](mlhandactionclassifier/predictions(from:).md)
+### Testing a hand action classifier
+- [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](./predictions%28from%29.md)
   Generates an array of hand action predictions for each video in a URL array.
-- [MLHandActionClassifier.Prediction](mlhandactionclassifier/prediction.md)
+- [MLHandActionClassifier.Prediction](./prediction.md)
   A collection of predictions, each paired with its confidence, for a range of video frames.
 
 

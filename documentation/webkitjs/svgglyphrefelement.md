@@ -1,7 +1,8 @@
 # SVGGlyphRefElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGGlyphRefElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dx](svgglyphrefelement/1632590-dx.md)
-- [dy](svgglyphrefelement/1633892-dy.md)
-- [format](svgglyphrefelement/1633554-format.md)
-- [glyphRef](svgglyphrefelement/1634308-glyphref.md)
-- [x](svgglyphrefelement/1629606-x.md)
-- [y](svgglyphrefelement/1634238-y.md)
+- [dx](./svgglyphrefelement/api-1632590-dx.md)
+- [dy](./svgglyphrefelement/api-1633892-dy.md)
+- [format](./svgglyphrefelement/api-1633554-format.md)
+- [glyphRef](./svgglyphrefelement/api-1634308-glyphref.md)
+- [x](./svgglyphrefelement/api-1629606-x.md)
+- [y](./svgglyphrefelement/api-1634238-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

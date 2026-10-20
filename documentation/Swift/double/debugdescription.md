@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the value, suitable for debugging.
 
@@ -26,11 +27,12 @@ This property has the same value as the `description` property, except that NaN 
 
 ## See Also
 
-- [var description: String](double/description.md)
+### Describing a Double
+- [var description: String](./description.md)
   A textual representation of the value.
-- [var customMirror: Mirror](double/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Double` instance.
-- [func hash(into: inout Hasher)](double/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

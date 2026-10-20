@@ -1,7 +1,8 @@
 # export(to:contentType:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Using the type’s `Transferable` conformance implementation, exports a value by writing it to a provided destination directory.
 
@@ -26,7 +27,7 @@ A URL of the created file. The file is owned by the application, and it is respo
 
 #### Discussion
 
-If the [`Transferable`](transferable.md) is not backed by a file, this will write the data to specified destination. This function uses the first representation provided for a given type in `static var transferRepresentation` requirement of the `Transferable` protocol or in the `body` of a custom `TransferRepresentation`.
+If the [`Transferable`](../transferable.md) is not backed by a file, this will write the data to specified destination. This function uses the first representation provided for a given type in `static var transferRepresentation` requirement of the `Transferable` protocol or in the `body` of a custom `TransferRepresentation`.
 
 The default implementation of this function is available to all types that conform to `Transferable` protocol.
 

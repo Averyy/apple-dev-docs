@@ -1,7 +1,8 @@
 # MDLColorSwatchTexture
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A generator of texel data that creates a gradient between two specified colors.
 
@@ -19,50 +20,55 @@ A generator of texel data that creates a gradient between two specified colors.
 class MDLColorSwatchTexture
 ```
 
+```objc
+@interface MDLColorSwatchTexture : MDLTexture
+```
+
 #### Overview
 
-A MDLColorSwatchTexture object procedurally generates texel data by creating a gradient between two colors. Like other procedural [`MDLTexture`](mdltexture.md) subclasses, the [`MDLColorSwatchTexture`](mdlcolorswatchtexture.md) class generates texel data only when that data is first referenced, and caches it for future use.
+A MDLColorSwatchTexture object procedurally generates texel data by creating a gradient between two colors. Like other procedural [`MDLTexture`](./mdltexture.md) subclasses, the [`MDLColorSwatchTexture`](./mdlcolorswatchtexture.md) class generates texel data only when that data is first referenced, and caches it for future use.
 
 ## Topics
 
 ### Creating a Color Swatch Texture
-- [init(colorGradientFrom: CGColor, to: CGColor, name: String?, textureDimensions: vector_int2)](mdlcolorswatchtexture/init(colorgradientfrom:to:name:texturedimensions:).md)
+- [init(colorGradientFrom: CGColor, to: CGColor, name: String?, textureDimensions: vector_int2)](./mdlcolorswatchtexture/init%28colorgradientfrom,to,name,texturedimensions%29.md)
   Initializes a texture that creates a vertical gradient between two colors.
-- [init(colorTemperatureGradientFrom: Float, toColorTemperature: Float, name: String?, textureDimensions: vector_int2)](mdlcolorswatchtexture/init(colortemperaturegradientfrom:tocolortemperature:name:texturedimensions:).md)
+- [init(colorTemperatureGradientFrom: Float, toColorTemperature: Float, name: String?, textureDimensions: vector_int2)](./mdlcolorswatchtexture/init%28colortemperaturegradientfrom,tocolortemperature,name,texturedimensions%29.md)
   Initializes a texture that creates a vertical gradient between two color temperatures.
 ### Initializers
-- [init(colorGradientFrom: CGColor, toColor: CGColor, name: String?, textureDimensions: vector_int2)](mdlcolorswatchtexture/init(colorgradientfrom:tocolor:name:texturedimensions:).md)
+- [init(colorGradientFrom: CGColor, toColor: CGColor, name: String?, textureDimensions: vector_int2)](./mdlcolorswatchtexture/init%28colorgradientfrom,tocolor,name,texturedimensions%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLTexture](mdltexture.md)
+- [MDLTexture](./mdltexture.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLTexture](mdltexture.md)
+### Textures
+- [class MDLTexture](./mdltexture.md)
   A source of texel data to be used in rendering material surface appearances.
-- [class MDLCheckerboardTexture](mdlcheckerboardtexture.md)
+- [class MDLCheckerboardTexture](./mdlcheckerboardtexture.md)
   A generator of texel data that creates a checkerboard pattern with two specified colors.
-- [class MDLNoiseTexture](mdlnoisetexture.md)
+- [class MDLNoiseTexture](./mdlnoisetexture.md)
   A generator of texel data that creates a field of random noise.
-- [class MDLNormalMapTexture](mdlnormalmaptexture.md)
+- [class MDLNormalMapTexture](./mdlnormalmaptexture.md)
   A generator of texel data that computes a normal map from a supplied texture.
-- [class MDLSkyCubeTexture](mdlskycubetexture.md)
+- [class MDLSkyCubeTexture](./mdlskycubetexture.md)
   A generator of texel data that creates cube textures using a physically realistic simulation of the sunlit sky.
-- [class MDLURLTexture](mdlurltexture.md)
+- [class MDLURLTexture](./mdlurltexture.md)
   A lightweight reference to a URL from which to load texture data.
-- [class MDLTextureFilter](mdltexturefilter.md)
+- [class MDLTextureFilter](./mdltexturefilter.md)
   A description of filtering modes for a renderer to use when sampling from a texture.
-- [class MDLTextureSampler](mdltexturesampler.md)
+- [class MDLTextureSampler](./mdltexturesampler.md)
   An object that pairs a source of texture data with sampling parameters to be used in rendering the texture.
 
 

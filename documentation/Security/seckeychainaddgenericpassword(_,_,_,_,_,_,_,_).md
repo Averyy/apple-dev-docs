@@ -1,12 +1,15 @@
 # SecKeychainAddGenericPassword(_:_:_:_:_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a new generic password to a keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Adds a new generic password to a keychain.
 func SecKeychainAddGenericPassword(_ keychain: SecKeychain?, _ serviceNameLength: UInt32, _ serviceName: UnsafePointer<CChar>?, _ accountNameLength: UInt32, _ accountName: UnsafePointer<CChar>?, _ passwordLength: UInt32, _ passwordData: UnsafeRawPointer, _ itemRef: UnsafeMutablePointer<SecKeychainItem?>?) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainAddGenericPassword(SecKeychainRef keychain, UInt32 serviceNameLength, const char *serviceName, UInt32 accountNameLength, const char *accountName, UInt32 passwordLength, const void *passwordData, SecKeychainItemRef*itemRef);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md). The result code [`errSecNoDefaultKeychain`](errsecnodefaultkeychain.md) indicates that no default keychain could be found. The result code [`errSecDuplicateItem`](errsecduplicateitem.md) indicates that you tried to add a password that already exists in the keychain. The result code [`errSecDataTooLarge`](errsecdatatoolarge.md) indicates that you tried to add more data than is allowed for a structure of this type.
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecNoDefaultKeychain`](./errsecnodefaultkeychain.md) indicates that no default keychain could be found. The result code [`errSecDuplicateItem`](./errsecduplicateitem.md) indicates that you tried to add a password that already exists in the keychain. The result code [`errSecDataTooLarge`](./errsecdatatoolarge.md) indicates that you tried to add more data than is allowed for a structure of this type.
 
 #### Discussion
 
@@ -26,7 +33,7 @@ You can use this function to add passwords for accounts other than the Internet.
 
 This function sets the initial access rights for the new keychain item so that the application creating the item is given trusted access.
 
-This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](seckeychainunlock(_:_:_:_:).md) to display the Unlock Keychain dialog box if the keychain is currently locked.
+This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](./seckeychainunlock%28_,_,_,_%29.md) to display the Unlock Keychain dialog box if the keychain is currently locked.
 
 ## Parameters
 

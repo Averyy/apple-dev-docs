@@ -1,7 +1,8 @@
 # handleInterruptPacket
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes an interrupt packet that originated from the device.
 
@@ -10,7 +11,7 @@ Processes an interrupt packet that originated from the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleInterruptPacket(const uint8_t *packet, uint32_t size);
 ```
 
@@ -25,11 +26,12 @@ Override this method if you want to process interrupt packets sent by the device
 
 ## See Also
 
-- [handleRxPacket](iouserusbserial/handlerxpacket.md)
+### Transmitting and Receiving Data
+- [handleRxPacket](./handlerxpacket.md)
   Processes the data received from the USB device.
-- [RxFreeSpaceAvailable](iouserusbserial/rxfreespaceavailable.md)
+- [RxFreeSpaceAvailable](./rxfreespaceavailable.md)
   Notifies your driver that buffer space is available for your device’s data.
-- [TxDataAvailable](iouserusbserial/txdataavailable.md)
+- [TxDataAvailable](./txdataavailable.md)
   Notifies your driver that the system has data for you to transmit to the device.
 
 

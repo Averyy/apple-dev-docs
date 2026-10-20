@@ -1,7 +1,8 @@
 # showsUserLocationControl
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user location control is visible.
 
@@ -10,20 +11,21 @@ A Boolean value that determines whether the user location control is visible.
 
 ## Declaration
 
-```swift
+```
 get showsUserLocationControl(): boolean;
 set showsUserLocationControl(showsUserLocationControl: boolean);
 ```
 
 ## See Also
 
-- [showsCompass](map/showscompass.md)
+### Showing the map’s controls
+- [showsCompass](./showscompass.md)
   A feature visibility setting that determines when the compass is visible.
-- [showsMapTypeControl](map/showsmaptypecontrol.md)
+- [showsMapTypeControl](./showsmaptypecontrol.md)
   A Boolean value that determines whether to display a control that lets users choose the map type.
-- [showsScale](map/showsscale.md)
+- [showsScale](./showsscale.md)
   A feature visibility setting that determines when the map displays the map’s scale indicator.
-- [showsZoomControl](map/showszoomcontrol.md)
+- [showsZoomControl](./showszoomcontrol.md)
   A Boolean value that determines whether to display a control for zooming in and zooming out on a map.
 
 

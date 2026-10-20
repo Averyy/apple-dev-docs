@@ -1,7 +1,8 @@
 # evaluationTarget
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure that converts the model’s response to a string for the model prompt.
 
@@ -26,9 +27,10 @@ When `nil`, the evaluator JSON-serializes the response automatically.
 
 ## See Also
 
-- [let instructions: String](modeljudgeprompt/instructions.md)
+### Customizing judge input
+- [let instructions: String](./instructions.md)
   The system instructions for the model judge.
-- [let reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?](modeljudgeprompt/reference.md)
+- [let reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?](./reference.md)
   An optional closure that provides labeled reference data to include in the model prompt.
 
 

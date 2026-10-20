@@ -1,23 +1,28 @@
 # SCNShadowMode.deferred
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 SceneKit renders shadows in a postprocessing pass.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 case deferred
+```
+
+```c
+SCNShadowModeDeferred
 ```
 
 #### Discussion
@@ -26,10 +31,11 @@ In the mode, SceneKit blends shadows into the final image after the main renderi
 
 ## See Also
 
-- [SCNShadowMode.forward](scnshadowmode/forward.md)
+### Constants
+- [SCNShadowMode.forward](./forward.md)
   SceneKit renders shadows during lighting computations.
-- [SCNShadowMode.modulated](scnshadowmode/modulated.md)
-  SceneKit renders shadows by projecting the light’s [`gobo`](scnlight/gobo.md) image. The light does not illuminate the scene.
+- [SCNShadowMode.modulated](./modulated.md)
+  SceneKit renders shadows by projecting the light’s [`gobo`](../scnlight/gobo.md) image. The light does not illuminate the scene.
 
 
 ---

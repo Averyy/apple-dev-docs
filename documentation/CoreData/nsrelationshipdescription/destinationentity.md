@@ -1,7 +1,8 @@
 # destinationEntity
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of object the relationship contains.
 
@@ -10,7 +11,7 @@ The type of object the relationship contains.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The type of object the relationship contains.
 unowned(unsafe) var destinationEntity: NSEntityDescription? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) NSEntityDescription * destinationEntity;
+```
+
 ## See Also
 
-- [var inverseRelationship: NSRelationshipDescription?](nsrelationshipdescription/inverserelationship.md)
+### Configuring the Destination
+- [var inverseRelationship: NSRelationshipDescription?](./inverserelationship.md)
   The relationship that represents the inverse of the current relationship.
-- [var isOrdered: Bool](nsrelationshipdescription/isordered.md)
+- [var isOrdered: Bool](./isordered.md)
   A Boolean value that determines whether the relationship preserves the order of the referenced managed objects.
 
 

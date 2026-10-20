@@ -1,7 +1,8 @@
 # sharedInfo
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns shared information typically used during the key derivation (KDF) step of a key exchange algorithm.
 
@@ -20,13 +21,18 @@ Returns shared information typically used during the key derivation (KDF) step o
 var sharedInfo: Data? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSData * sharedInfo;
+```
+
 #### Discussion
 
 This property should be ignored if shared information isn’t used by the specified key exchange algorithm.
 
 ## See Also
 
-- [var requestedSize: Int](tktokenkeyexchangeparameters/requestedsize.md)
+### Accessing Parameters
+- [var requestedSize: Int](./requestedsize.md)
   Returns the requested output size, in bytes, of key exchange result.
 
 

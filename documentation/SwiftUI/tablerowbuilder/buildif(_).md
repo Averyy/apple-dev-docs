@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a row result for conditional statements.
 
@@ -19,17 +20,20 @@ Creates a row result for conditional statements.
 static func buildIf<C>(_ content: C?) -> C? where Value == C.TableRowValue, C : TableRowContent
 ```
 
+Available when `Value` conforms to `Identifiable`.
+
 #### Discussion
 
 This method provides support for “if” statements in multi-statement closures, producing an optional value that is visible only when the condition evaluates to `true`.
 
 ## See Also
 
-- [static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F>](tablerowbuilder/buildeither(first:).md)
+### Building a row from conditionals
+- [static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F>](./buildeither%28first%29.md)
   Creates a row result for the first of two row content alternatives.
-- [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](tablerowbuilder/buildeither(second:).md)
+- [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](./buildeither%28second%29.md)
   Creates a row result for the second of two row content alternatives.
-- [static func buildExpression<Content>(Content) -> Content](tablerowbuilder/buildexpression(_:).md)
+- [static func buildExpression<Content>(Content) -> Content](./buildexpression%28_%29.md)
   Builds an expression within the builder.
 
 

@@ -1,7 +1,8 @@
 # AppEncryptionDeclarationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new app encryption declaration.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new app encryption declaration.
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationCreateRequest.Data.Attributes
 ```
 

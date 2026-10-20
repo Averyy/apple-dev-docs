@@ -1,7 +1,8 @@
 # replaceSubrange(_:moving:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the specified range of elements by moving the contents of an output span into their place. On return, the span is left empty.
 
@@ -30,7 +31,7 @@ If you pass a zero-length range as the `subrange` parameter, this method inserts
 
 Likewise, if you pass a zero-length buffer as the `newElements` parameter, this method removes the elements in the given subrange without replacement. Calling the `removeSubrange(_:)` method instead is preferred in this case.
 
-> **Note**: O(`self.count` + `items.count`)
+> **Complexity**: O(`self.count` + `items.count`)
 
 ## Parameters
 

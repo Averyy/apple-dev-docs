@@ -1,7 +1,8 @@
 # preferredSymbolConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbol configuration for the image.
 
@@ -10,7 +11,7 @@ The symbol configuration for the image.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

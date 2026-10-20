@@ -1,7 +1,8 @@
 # HMPresenceEventUserType.homeUsers
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 All users associated with a home trigger a presence event.
 
@@ -19,11 +20,16 @@ All users associated with a home trigger a presence event.
 case homeUsers
 ```
 
+```c
+HMPresenceEventUserTypeHomeUsers
+```
+
 ## See Also
 
-- [HMPresenceEventUserType.currentUser](hmpresenceeventusertype/currentuser.md)
+### Selecting users
+- [HMPresenceEventUserType.currentUser](./currentuser.md)
   The current user triggers the presence event.
-- [HMPresenceEventUserType.customUsers](hmpresenceeventusertype/customusers.md)
+- [HMPresenceEventUserType.customUsers](./customusers.md)
   A custom set of users is used to trigger a presence event.
 
 

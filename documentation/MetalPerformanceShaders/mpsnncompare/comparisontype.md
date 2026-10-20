@@ -1,7 +1,8 @@
 # comparisonType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var comparisonType: MPSNNComparisonType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSNNComparisonType comparisonType;
 ```
 
 

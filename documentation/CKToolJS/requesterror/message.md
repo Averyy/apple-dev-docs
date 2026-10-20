@@ -1,7 +1,8 @@
 # message
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the code for the error that occurred.
 
@@ -10,7 +11,7 @@ A string containing the code for the error that occurred.
 
 ## Declaration
 
-```swift
+```
 attribute string message;
 ```
 

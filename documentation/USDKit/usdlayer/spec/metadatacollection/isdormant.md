@@ -1,7 +1,8 @@
 # isDormant
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the spec is dormant (the underlying data has been removed).
 

@@ -1,7 +1,8 @@
 # nw_error_t
 
 **Framework**: Network  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The errors returned by the Network framework.
 
@@ -20,16 +21,20 @@ The errors returned by the Network framework.
 typealias nw_error_t = any OS_nw_error
 ```
 
+```c
+typedef NSObject<OS_nw_error> * nw_error_t;
+```
+
 ## Topics
 
 ### Inspecting Errors
-- [func nw_error_get_error_domain(nw_error_t) -> nw_error_domain_t](nw_error_get_error_domain(_:).md)
+- [func nw_error_get_error_domain(nw_error_t) -> nw_error_domain_t](./nw_error_get_error_domain%28_%29.md)
   Accesses the domain of the network error.
-- [struct nw_error_domain_t](nw_error_domain_t.md)
+- [struct nw_error_domain_t](./nw_error_domain_t.md)
   The error domain for errors used by the Network framework.
-- [func nw_error_get_error_code(nw_error_t) -> Int32](nw_error_get_error_code(_:).md)
+- [func nw_error_get_error_code(nw_error_t) -> Int32](./nw_error_get_error_code%28_%29.md)
   Accesses the specific code of the network error.
-- [func nw_error_copy_cf_error(nw_error_t) -> Unmanaged<CFError>](nw_error_copy_cf_error(_:).md)
+- [func nw_error_copy_cf_error(nw_error_t) -> Unmanaged<CFError>](./nw_error_copy_cf_error%28_%29.md)
   Returns a copy of a network error.
 
 

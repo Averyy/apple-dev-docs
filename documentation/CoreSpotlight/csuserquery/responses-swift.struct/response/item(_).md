@@ -1,7 +1,8 @@
 # CSUserQuery.Responses.Response.item(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +19,8 @@ case item(CSUserQuery.Item)
 
 ## See Also
 
-- [CSUserQuery.Responses.Response.suggestion(_:)](csuserquery/responses-swift.struct/response/suggestion(_:).md)
+### Enumeration Cases
+- [CSUserQuery.Responses.Response.suggestion(_:)](./suggestion%28_%29.md)
 
 
 ---

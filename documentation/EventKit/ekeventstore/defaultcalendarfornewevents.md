@@ -1,7 +1,8 @@
 # defaultCalendarForNewEvents
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar that events are added to by default, as specified by user settings.
 
@@ -19,19 +20,24 @@ The calendar that events are added to by default, as specified by user settings.
 var defaultCalendarForNewEvents: EKCalendar? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) EKCalendar * defaultCalendarForNewEvents;
+```
+
 ## See Also
 
-- [func defaultCalendarForNewReminders() -> EKCalendar?](ekeventstore/defaultcalendarfornewreminders.md)
+### Accessing calendars
+- [func defaultCalendarForNewReminders() -> EKCalendar?](./defaultcalendarfornewreminders%28%29.md)
   Identifies the default calendar for adding reminders to, as specified by user settings.
-- [func calendars(for: EKEntityType) -> [EKCalendar]](ekeventstore/calendars(for:).md)
+- [func calendars(for: EKEntityType) -> [EKCalendar]](./calendars%28for%29.md)
   Identifies the calendars that support a given entity type, such as reminders or events.
-- [func calendar(withIdentifier: String) -> EKCalendar?](ekeventstore/calendar(withidentifier:).md)
+- [func calendar(withIdentifier: String) -> EKCalendar?](./calendar%28withidentifier%29.md)
   Locates a calendar with the specified identifier.
-- [func saveCalendar(EKCalendar, commit: Bool) throws](ekeventstore/savecalendar(_:commit:).md)
+- [func saveCalendar(EKCalendar, commit: Bool) throws](./savecalendar%28_,commit%29.md)
   Saves a calendar to the event store by either committing or batching the changes.
-- [func removeCalendar(EKCalendar, commit: Bool) throws](ekeventstore/removecalendar(_:commit:).md)
+- [func removeCalendar(EKCalendar, commit: Bool) throws](./removecalendar%28_,commit%29.md)
   Removes a calendar from the event store by either committing or batching the changes.
-- [var calendars: [EKCalendar]](ekeventstore/calendars.md)
+- [var calendars: [EKCalendar]](./calendars.md)
   The calendars associated with the event store.
 
 

@@ -1,7 +1,8 @@
 # invalidateTimelineContent()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets any pre-rendered views the system has from the timeline.
 
@@ -15,6 +16,8 @@ Resets any pre-rendered views the system has from the timeline.
 ```swift
 func invalidateTimelineContent()
 ```
+
+Available when `Schedule` conforms to `TimelineSchedule`.
 
 #### Discussion
 

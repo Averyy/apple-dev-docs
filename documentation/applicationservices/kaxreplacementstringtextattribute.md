@@ -1,7 +1,8 @@
 # kAXReplacementStringTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFStringRef` value that indicates the string that will replace the text.
 
@@ -12,6 +13,10 @@ A `CFStringRef` value that indicates the string that will replace the text.
 
 ```swift
 var kAXReplacementStringTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXReplacementStringTextAttribute;
 ```
 
 #### Discussion

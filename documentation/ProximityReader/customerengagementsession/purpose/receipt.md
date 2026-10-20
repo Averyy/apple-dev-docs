@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Purpose.receipt
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating the merchant is requesting contact information for sending the receipt.
 

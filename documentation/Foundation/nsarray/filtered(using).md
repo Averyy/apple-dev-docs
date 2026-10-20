@@ -1,7 +1,8 @@
 # filtered(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates a given predicate against each object in the receiving array and returns a new array containing the objects for which the predicate returns true.
 
@@ -20,15 +21,19 @@ Evaluates a given predicate against each object in the receiving array and retur
 func filtered(using predicate: NSPredicate) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) filteredArrayUsingPredicate:(NSPredicate *) predicate;
+```
+
 #### Return Value
 
-A new array containing the objects in the receiving array for which `predicate` returns [`true`](https://developer.apple.com/documentation/swift/true).
+A new array containing the objects in the receiving array for which `predicate` returns [`true`](../../Swift/true.md).
 
 Objects in the resulting array appear in the same order as they do in the receiver.
 
 #### Discussion
 
-For more details, see [`Predicate Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
+For more details, see [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
 
 ## Parameters
 
@@ -36,11 +41,12 @@ For more details, see [`Predicate Programming Guide`](https://developer.apple.co
 
 ## See Also
 
-- [func adding(Any) -> [Any]](nsarray/adding(_:).md)
+### Deriving New Arrays
+- [func adding(Any) -> [Any]](./adding%28_%29.md)
   Returns a new array that is a copy of the receiving array with a given object added to the end.
-- [func addingObjects(from: [Any]) -> [Any]](nsarray/addingobjects(from:).md)
+- [func addingObjects(from: [Any]) -> [Any]](./addingobjects%28from%29.md)
   Returns a new array that is a copy of the receiving array with the objects contained in another array added to the end.
-- [func subarray(with: NSRange) -> [Any]](nsarray/subarray(with:).md)
+- [func subarray(with: NSRange) -> [Any]](./subarray%28with%29.md)
   Returns a new array containing the receiving array’s elements that fall within the limits specified by a given range.
 
 

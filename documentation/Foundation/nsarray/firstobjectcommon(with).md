@@ -1,7 +1,8 @@
 # firstObjectCommon(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first object contained in the receiving array that’s equal to an object in another given array.
 
@@ -20,13 +21,17 @@ Returns the first object contained in the receiving array that’s equal to an o
 func firstObjectCommon(with otherArray: [Any]) -> Any?
 ```
 
+```objc
+- (ObjectType) firstObjectCommonWithArray:(NSArray<id> *) otherArray;
+```
+
 #### Return Value
 
 Returns the first object contained in the receiving array that’s equal to an object in `otherArray`. If no such object is found, returns `nil`.
 
 #### Discussion
 
-This method uses [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) to check for object equality.
+This method uses [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) to check for object equality.
 
 ## Parameters
 
@@ -34,9 +39,11 @@ This method uses [`isEqual(_:)`](https://developer.apple.com/documentation/objec
 
 ## See Also
 
-- [func contains(Any) -> Bool](nsarray/contains(_:).md)
+### Related Documentation
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the array.
-- [func isEqual(to: [Any]) -> Bool](nsarray/isequal(to:).md)
+### Comparing Arrays
+- [func isEqual(to: [Any]) -> Bool](./isequal%28to%29.md)
   Compares the receiving array to another array.
 
 

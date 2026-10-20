@@ -1,7 +1,8 @@
 # HKAttachmentStore
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The access point for attachments associated with samples in the HealthKit store.
 
@@ -19,50 +20,55 @@ The access point for attachments associated with samples in the HealthKit store.
 class HKAttachmentStore
 ```
 
+```objc
+@interface HKAttachmentStore : NSObject
+```
+
 #### Overview
 
-Use an [`HKAttachmentStore`](hkattachmentstore.md) object to manage attachments for samples that your app has saved to the HealthKit store.
+Use an [`HKAttachmentStore`](./hkattachmentstore.md) object to manage attachments for samples that your app has saved to the HealthKit store.
 
 ## Topics
 
 ### Creating an attachment store
-- [init(healthStore: HKHealthStore)](hkattachmentstore/init(healthstore:).md)
+- [init(healthStore: HKHealthStore)](./hkattachmentstore/init%28healthstore%29.md)
   Creates an attachment store for the provided HealthKit store.
 ### Adding attachments
-- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any]) async throws -> HKAttachment](hkattachmentstore/addattachment(to:name:contenttype:url:metadata:).md)
+- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any]) async throws -> HKAttachment](./hkattachmentstore/addattachment%28to,name,contenttype,url,metadata%29.md)
   Asynchronously adds an attachment to the specified object.
-- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any], completion: (HKAttachment?, (any Error)?) -> Void)](hkattachmentstore/addattachment(to:name:contenttype:url:metadata:completion:).md)
+- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any], completion: (HKAttachment?, (any Error)?) -> Void)](./hkattachmentstore/addattachment%28to,name,contenttype,url,metadata,completion%29.md)
   Adds an attachment to the specified object.
 ### Accessing attachments
-- [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](hkattachmentstore/getattachments(for:completion:).md)
+- [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](./hkattachmentstore/getattachments%28for,completion%29.md)
   Returns all the attachments for the specified object.
-- [func dataReader(for: HKAttachment) -> HKAttachmentDataReader](hkattachmentstore/datareader(for:).md)
+- [func dataReader(for: HKAttachment) -> HKAttachmentDataReader](./hkattachmentstore/datareader%28for%29.md)
   Returns a data reader for the attachment.
-- [func getData(for: HKAttachment, completion: (Data?, (any Error)?) -> Void) -> Progress](hkattachmentstore/getdata(for:completion:).md)
+- [func getData(for: HKAttachment, completion: (Data?, (any Error)?) -> Void) -> Progress](./hkattachmentstore/getdata%28for,completion%29.md)
   Returns an attachment’s data.
-- [func streamData(for: HKAttachment, dataHandler: (Data?, (any Error)?, Bool) -> Void) -> Progress](hkattachmentstore/streamdata(for:datahandler:).md)
+- [func streamData(for: HKAttachment, dataHandler: (Data?, (any Error)?, Bool) -> Void) -> Progress](./hkattachmentstore/streamdata%28for,datahandler%29.md)
   Asynchronously returns the attachment’s data.
 ### Removing attachments
-- [func removeAttachment(HKAttachment, from: HKObject, completion: (Bool, (any Error)?) -> Void)](hkattachmentstore/removeattachment(_:from:completion:).md)
+- [func removeAttachment(HKAttachment, from: HKObject, completion: (Bool, (any Error)?) -> Void)](./hkattachmentstore/removeattachment%28_,from,completion%29.md)
   Removes the specified attachment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class HKAttachment](hkattachment.md)
+### Attachments
+- [class HKAttachment](./hkattachment.md)
   A file that is attached to a sample in the HealthKit store.
-- [class HKAttachmentDataReader](hkattachmentdatareader.md)
+- [class HKAttachmentDataReader](./hkattachmentdatareader.md)
   A reader that provides access to an attachment’s data.
 
 

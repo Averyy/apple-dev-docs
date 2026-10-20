@@ -1,17 +1,22 @@
 # disableSnapshotRestoration()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables snapshot restoration.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func disableSnapshotRestoration()
+```
+
+```objc
+- (void) disableSnapshotRestoration;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ After disabling snapshot restoration, the system doesnâ€™t snapshot the windowâ€
 
 ## See Also
 
-- [var isRestorable: Bool](nswindow/isrestorable.md)
+### Handling Window Restoration
+- [var isRestorable: Bool](./isrestorable.md)
   A Boolean value indicating whether the window configuration is preserved between application launches.
-- [var restorationClass: (any NSWindowRestoration.Type)?](nswindow/restorationclass.md)
+- [var restorationClass: (any NSWindowRestoration.Type)?](./restorationclass.md)
   The restoration class associated with the window.
-- [func enableSnapshotRestoration()](nswindow/enablesnapshotrestoration.md)
+- [func enableSnapshotRestoration()](./enablesnapshotrestoration%28%29.md)
   Enables snapshot restoration.
 
 

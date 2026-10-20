@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.bowling
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for bowling.
 
@@ -19,15 +20,20 @@ The constant for bowling.
 case bowling
 ```
 
+```c
+HKWorkoutActivityTypeBowling
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.archery](hkworkoutactivitytype/archery.md)
+### Individual sports
+- [HKWorkoutActivityType.archery](./archery.md)
   The constant for shooting archery.
-- [HKWorkoutActivityType.fencing](hkworkoutactivitytype/fencing.md)
+- [HKWorkoutActivityType.fencing](./fencing.md)
   The constant for fencing.
-- [HKWorkoutActivityType.gymnastics](hkworkoutactivitytype/gymnastics.md)
+- [HKWorkoutActivityType.gymnastics](./gymnastics.md)
   Performing gymnastics.
-- [HKWorkoutActivityType.trackAndField](hkworkoutactivitytype/trackandfield.md)
+- [HKWorkoutActivityType.trackAndField](./trackandfield.md)
   Participating in track and field events, including shot put, javelin, pole vaulting, and related sports.
 
 

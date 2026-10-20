@@ -1,7 +1,8 @@
 # init(frame:magnification:strokeColor:lineWidth:allowedInteractions:id:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new loupe markup from the specified parameters.
 

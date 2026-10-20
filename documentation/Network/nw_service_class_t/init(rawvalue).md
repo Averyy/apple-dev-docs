@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the service class structure.
 
@@ -26,7 +27,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](nw_service_class_t/init(_:).md)
+### Creating a service class instance
+- [init(UInt32)](./init%28_%29.md)
   Creates an instance of the service class structure.
 
 

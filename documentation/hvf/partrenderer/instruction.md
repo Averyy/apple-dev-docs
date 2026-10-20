@@ -1,7 +1,8 @@
 # PartRenderer.Instruction
 
 **Framework**: hvf  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of instructions passed to a render context
 
@@ -23,18 +24,18 @@ enum Instruction
 ## Topics
 
 ### Enumeration Cases
-- [case addCubic(cp1: PartRenderer.Point, cp2: PartRenderer.Point, on: PartRenderer.Point)](partrenderer/instruction/addcubic(cp1:cp2:on:).md)
-- [PartRenderer.Instruction.addLine(_:)](partrenderer/instruction/addline(_:).md)
-- [PartRenderer.Instruction.addPoint(_:)](partrenderer/instruction/addpoint(_:).md)
-- [case addQuad(off: PartRenderer.Point, on: PartRenderer.Point)](partrenderer/instruction/addquad(off:on:).md)
-- [PartRenderer.Instruction.beginPart(id:name:)](partrenderer/instruction/beginpart(id:name:).md)
+- [case addCubic(cp1: PartRenderer.Point, cp2: PartRenderer.Point, on: PartRenderer.Point)](./instruction/addcubic%28cp1,cp2,on%29.md)
+- [PartRenderer.Instruction.addLine(_:)](./instruction/addline%28_%29.md)
+- [PartRenderer.Instruction.addPoint(_:)](./instruction/addpoint%28_%29.md)
+- [case addQuad(off: PartRenderer.Point, on: PartRenderer.Point)](./instruction/addquad%28off,on%29.md)
+- [PartRenderer.Instruction.beginPart(id:name:)](./instruction/beginpart%28id,name%29.md)
   The name value is for client use and is not set by the loader or scaler
-- [PartRenderer.Instruction.beginPath](partrenderer/instruction/beginpath.md)
-- [PartRenderer.Instruction.closePath](partrenderer/instruction/closepath.md)
-- [PartRenderer.Instruction.endPart(id:name:)](partrenderer/instruction/endpart(id:name:).md)
+- [PartRenderer.Instruction.beginPath](./instruction/beginpath.md)
+- [PartRenderer.Instruction.closePath](./instruction/closepath.md)
+- [PartRenderer.Instruction.endPart(id:name:)](./instruction/endpart%28id,name%29.md)
   The name value is for client use and is not set by the loader or scaler
-- [PartRenderer.Instruction.endPath](partrenderer/instruction/endpath.md)
-- [PartRenderer.Instruction.stop](partrenderer/instruction/stop.md)
+- [PartRenderer.Instruction.endPath](./instruction/endpath.md)
+- [PartRenderer.Instruction.stop](./instruction/stop.md)
 
 
 ---

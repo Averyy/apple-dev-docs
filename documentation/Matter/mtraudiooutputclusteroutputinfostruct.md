@@ -1,7 +1,8 @@
 # MTRAudioOutputClusterOutputInfoStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,27 +19,31 @@
 class MTRAudioOutputClusterOutputInfoStruct
 ```
 
+```objc
+@interface MTRAudioOutputClusterOutputInfoStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var index: NSNumber](mtraudiooutputclusteroutputinfostruct/index.md)
-- [var name: String](mtraudiooutputclusteroutputinfostruct/name.md)
-- [var outputType: NSNumber](mtraudiooutputclusteroutputinfostruct/outputtype.md)
+- [var index: NSNumber](./mtraudiooutputclusteroutputinfostruct/index.md)
+- [var name: String](./mtraudiooutputclusteroutputinfostruct/name.md)
+- [var outputType: NSNumber](./mtraudiooutputclusteroutputinfostruct/outputtype.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRAudioOutputClusterOutputInfo](mtraudiooutputclusteroutputinfo.md)
+- [MTRAudioOutputClusterOutputInfo](./mtraudiooutputclusteroutputinfo.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

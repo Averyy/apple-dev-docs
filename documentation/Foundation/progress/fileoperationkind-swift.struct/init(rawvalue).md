@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new kind of file operation using the raw value of a string you specify.
 
@@ -26,7 +27,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](progress/fileoperationkind-swift.struct/init(_:).md)
+### Creating Kinds of File Operation
+- [init(String)](./init%28_%29.md)
   Creates a new kind of file operation using the specified string.
 
 

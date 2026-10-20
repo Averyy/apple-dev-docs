@@ -1,7 +1,8 @@
 # lenient
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether parsing allows any discrepencies in the expected format.
 
@@ -22,7 +23,8 @@ var lenient: Bool
 
 ## See Also
 
-- [var formatStyle: Format](floatingpointparsestrategy/formatstyle.md)
+### Accessing strategy properties
+- [var formatStyle: Format](./formatstyle.md)
   The format style this strategy uses when parsing strings.
 
 

@@ -1,7 +1,8 @@
 # SparseOrderMetis
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 METIS nested dissection ordering.
 
@@ -20,21 +21,26 @@ METIS nested dissection ordering.
 var SparseOrderMetis: SparseOrder_t { get }
 ```
 
+```c
+SparseOrderMetis
+```
+
 #### Discussion
 
 There’s a large overhead cost if you use this for QR-based factorization due to explicit formation of *AᵀA*.
 
 ## See Also
 
-- [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
+### Constants
+- [var SparseOrderDefault: SparseOrder_t](./sparseorderdefault.md)
   The default ordering.
-- [var SparseOrderUser: SparseOrder_t](sparseorderuser.md)
+- [var SparseOrderUser: SparseOrder_t](./sparseorderuser.md)
   The user-supplied ordering, or identity if the order parameter is null.
-- [var SparseOrderAMD: SparseOrder_t](sparseorderamd.md)
+- [var SparseOrderAMD: SparseOrder_t](./sparseorderamd.md)
   Approximate minimum degree (AMD) ordering.
-- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
+- [var SparseOrderMTMetis: SparseOrder_t](./sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
-- [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
+- [var SparseOrderCOLAMD: SparseOrder_t](./sparseordercolamd.md)
   The column AMD ordering for *AᵀA*.
 
 

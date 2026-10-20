@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVIPowerSwitchActiveMask](1644578-anonymous/kdvipowerswitchactivemask.md)
-- [kDVIPowerSwitchFeature](1644578-anonymous/kdvipowerswitchfeature.md)
-- [kDVIPowerSwitchSupportMask](1644578-anonymous/kdvipowerswitchsupportmask.md)
+- [kDVIPowerSwitchActiveMask](./api-1644578-anonymous/kdvipowerswitchactivemask.md)
+- [kDVIPowerSwitchFeature](./api-1644578-anonymous/kdvipowerswitchfeature.md)
+- [kDVIPowerSwitchSupportMask](./api-1644578-anonymous/kdvipowerswitchsupportmask.md)
 
 
 ---

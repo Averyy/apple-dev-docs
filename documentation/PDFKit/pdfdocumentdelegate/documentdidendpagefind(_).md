@@ -1,7 +1,8 @@
 # documentDidEndPageFind(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the `PDFDocumentDidEndPageFindNotification` notification is posted.
 
@@ -19,17 +20,22 @@ Called when the `PDFDocumentDidEndPageFindNotification` notification is posted.
 optional func documentDidEndPageFind(_ notification: Notification)
 ```
 
+```objc
+- (void) documentDidEndPageFind:(NSNotification *) notification;
+```
+
 ## See Also
 
-- [func didMatchString(PDFSelection)](pdfdocumentdelegate/didmatchstring(_:).md)
+### Getting Document Search Notifications
+- [func didMatchString(PDFSelection)](./didmatchstring%28_%29.md)
   Called for every match found during a find operation.
-- [func documentDidBeginDocumentFind(Notification)](pdfdocumentdelegate/documentdidbegindocumentfind(_:).md)
+- [func documentDidBeginDocumentFind(Notification)](./documentdidbegindocumentfind%28_%29.md)
   Called when the `PDFDocumentDidBeginFindNotification` notification is posted.
-- [func documentDidBeginPageFind(Notification)](pdfdocumentdelegate/documentdidbeginpagefind(_:).md)
+- [func documentDidBeginPageFind(Notification)](./documentdidbeginpagefind%28_%29.md)
   Called when the `PDFDocumentDidBeginPageFindNotification` notification is posted.
-- [func documentDidEndDocumentFind(Notification)](pdfdocumentdelegate/documentdidenddocumentfind(_:).md)
+- [func documentDidEndDocumentFind(Notification)](./documentdidenddocumentfind%28_%29.md)
   Called when the `PDFDocumentDidEndFindNotification` notification is posted.
-- [func documentDidFindMatch(Notification)](pdfdocumentdelegate/documentdidfindmatch(_:).md)
+- [func documentDidFindMatch(Notification)](./documentdidfindmatch%28_%29.md)
   Called when the `PDFDocumentDidFindMatchNotification` notification is posted.
 
 

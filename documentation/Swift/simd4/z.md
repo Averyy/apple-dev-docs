@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The third element of the vector.
 

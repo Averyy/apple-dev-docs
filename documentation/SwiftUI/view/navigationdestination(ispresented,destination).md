@@ -1,9 +1,10 @@
 # navigationDestination(isPresented:destination:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](navigationstack.md).
+Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](../navigationstack.md).
 
 **Availability**:
 - iOS 16.0+
@@ -23,11 +24,11 @@ func navigationDestination<V>(isPresented: Binding<Bool>, @ContentBuilder destin
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
 #### Discussion
 
-In general, favor binding a path to a navigation stack for programmatic navigation. Add this view modifier to a view inside a [`NavigationStack`](navigationstack.md) to programmatically push a single view onto the stack. This is useful for building components that can push an associated view. For example, you can present a `ColorDetail` view for a particular color:
+In general, favor binding a path to a navigation stack for programmatic navigation. Add this view modifier to a view inside a [`NavigationStack`](../navigationstack.md) to programmatically push a single view onto the stack. This is useful for building components that can push an associated view. For example, you can present a `ColorDetail` view for a particular color:
 
 ```swift
 @State private var showDetails = false
@@ -48,7 +49,7 @@ NavigationStack {
 }
 ```
 
-Do not put a navigation destination modifier inside a “lazy” container, like [`List`](list.md) or [`LazyVStack`](lazyvstack.md). These containers create child views only when needed to render on screen. Add the navigation destination modifier outside these containers so that the navigation stack can always see the destination.
+Do not put a navigation destination modifier inside a “lazy” container, like [`List`](../list.md) or [`LazyVStack`](../lazyvstack.md). These containers create child views only when needed to render on screen. Add the navigation destination modifier outside these containers so that the navigation stack can always see the destination.
 
 ## Parameters
 
@@ -57,13 +58,14 @@ Do not put a navigation destination modifier inside a “lazy” container, like
 
 ## See Also
 
-- [struct NavigationStack](navigationstack.md)
+### Stacking views in one column
+- [struct NavigationStack](../navigationstack.md)
   A view that displays a root view and enables you to present additional views over the root view.
-- [struct NavigationPath](navigationpath.md)
+- [struct NavigationPath](../navigationpath.md)
   A type-erased list of data representing the content of a navigation stack.
-- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](view/navigationdestination(for:destination:).md)
+- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](./navigationdestination%28for,destination%29.md)
   Associates a destination view with a presented data type for use within a navigation stack.
-- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](view/navigationdestination(item:destination:).md)
+- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](./navigationdestination%28item,destination%29.md)
   Associates a destination view with a bound value for use within a navigation stack or navigation split view
 
 

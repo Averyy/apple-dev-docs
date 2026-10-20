@@ -1,7 +1,8 @@
 # copyCommands(sourceBuffer:sourceRange:destinationBuffer:destinationIndex:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that copies commands from one indirect command buffer into another.
 
@@ -21,9 +22,9 @@ func copyCommands(sourceBuffer: any MTLIndirectCommandBuffer, sourceRange: Range
 
 ## Parameters
 
-- `sourceBuffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance the command copies from.
+- `sourceBuffer`: An [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance the command copies from.
 - `sourceRange`: The range of commands in `sourceBuffer` to copy. The source range needs to start at a valid execution point.
-- `destinationBuffer`: Another [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance the command copies to.
+- `destinationBuffer`: Another [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance the command copies to.
 - `destinationIndex`: An index in `destinationBuffer` where the command copies content to. The destination index needs to be a valid execution point with enough remaining space in `destinationBuffer` to accommodate `sourceRange.count` commands.
 
 

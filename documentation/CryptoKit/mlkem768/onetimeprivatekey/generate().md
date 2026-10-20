@@ -1,7 +1,8 @@
 # generate()
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a new, random one-time-use private key.
 

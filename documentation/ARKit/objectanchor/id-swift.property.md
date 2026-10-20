@@ -1,7 +1,8 @@
 # id
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of this anchor.
 
@@ -16,7 +17,8 @@ var id: UUID { get }
 
 ## See Also
 
-- [ObjectAnchor.ID](objectanchor/id-swift.typealias.md)
+### Inspecting and comparing anchors
+- [ObjectAnchor.ID](./id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
 
 

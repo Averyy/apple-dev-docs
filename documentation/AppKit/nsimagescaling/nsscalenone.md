@@ -1,10 +1,13 @@
 # NSScaleNone
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSImageScaleNone instead
 
 ## Declaration
 
@@ -12,14 +15,19 @@
 static var NSScaleNone: NSImageScaling { get }
 ```
 
+```c
+NSScaleNone
+```
+
 #### Discussion
 
-Use [`NSImageScaling.scaleNone`](nsimagescaling/scalenone.md).
+Use [`NSImageScaling.scaleNone`](./scalenone.md).
 
 ## See Also
 
-- [static var NSScaleProportionally: NSImageScaling](nsimagescaling/nsscaleproportionally.md)
-- [static var NSScaleToFit: NSImageScaling](nsimagescaling/nsscaletofit.md)
+### Deprecated
+- [static var NSScaleProportionally: NSImageScaling](./nsscaleproportionally.md)
+- [static var NSScaleToFit: NSImageScaling](./nsscaletofit.md)
 
 
 ---

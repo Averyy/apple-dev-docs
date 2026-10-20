@@ -1,7 +1,8 @@
 # HKAppleECGAlgorithmVersion
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Version numbers for the algorithm Apple Watch uses to generate an ECG reading.
 
@@ -19,29 +20,34 @@ Version numbers for the algorithm Apple Watch uses to generate an ECG reading.
 enum HKAppleECGAlgorithmVersion
 ```
 
+```c
+enum HKAppleECGAlgorithmVersion : NSInteger;
+```
+
 ## Topics
 
 ### Versions
-- [HKAppleECGAlgorithmVersion.version1](hkappleecgalgorithmversion/version1.md)
+- [HKAppleECGAlgorithmVersion.version1](./hkappleecgalgorithmversion/version1.md)
   The version 1 algorithm.
-- [HKAppleECGAlgorithmVersion.version2](hkappleecgalgorithmversion/version2.md)
+- [HKAppleECGAlgorithmVersion.version2](./hkappleecgalgorithmversion/version2.md)
   The version 2 algorithm.
 ### Initializers
-- [init?(rawValue: Int)](hkappleecgalgorithmversion/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkappleecgalgorithmversion/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let HKMetadataKeyAppleECGAlgorithmVersion: String](hkmetadatakeyappleecgalgorithmversion.md)
+### Specifying Metadata
+- [let HKMetadataKeyAppleECGAlgorithmVersion: String](./hkmetadatakeyappleecgalgorithmversion.md)
   A key for metadata indicating the version number of the algorithm Apple Watch uses to generate an ECG reading.
 
 

@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a slider tick with a label from a localized string key.
 
@@ -17,6 +18,18 @@ Create a slider tick with a label from a localized string key.
 
 ```swift
 init(_ titleKey: LocalizedStringKey, _ value: V)
+```
+
+Available when `V` conforms to `BinaryFloatingPoint`.
+
+**Other overloads**:
+
+```swift
+init(_ titleResource: LocalizedStringResource, _ value: V)
+```
+
+```swift
+init<S>(_ title: S, _ value: V) where S : StringProtocol
 ```
 
 

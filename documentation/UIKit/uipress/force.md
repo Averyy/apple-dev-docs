@@ -1,7 +1,8 @@
 # force
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The force of the button press.
 
@@ -18,13 +19,18 @@ The force of the button press.
 var force: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat force;
+```
+
 #### Discussion
 
 While all buttons can be “down” or “up”, some physical buttons also have a notion of a “force” with which they’re pressed. For analog buttons, force returns a value between 0 and 1, and for digital buttons it returns 0 or 1.
 
 ## See Also
 
-- [var gestureRecognizers: [UIGestureRecognizer]?](uipress/gesturerecognizers.md)
+### Getting a press object’s gesture recognizers
+- [var gestureRecognizers: [UIGestureRecognizer]?](./gesturerecognizers.md)
   The gesture recognizers that are receiving the press.
 
 

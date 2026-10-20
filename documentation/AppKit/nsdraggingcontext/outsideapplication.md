@@ -1,7 +1,8 @@
 # NSDraggingContext.outsideApplication
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates dragging terminates outside the application.
 
@@ -14,9 +15,14 @@ A constant that indicates dragging terminates outside the application.
 case outsideApplication
 ```
 
+```c
+NSDraggingContextOutsideApplication
+```
+
 ## See Also
 
-- [NSDraggingContext.withinApplication](nsdraggingcontext/withinapplication.md)
+### Constants
+- [NSDraggingContext.withinApplication](./withinapplication.md)
   A constant that indicates dragging terminates within the application.
 
 

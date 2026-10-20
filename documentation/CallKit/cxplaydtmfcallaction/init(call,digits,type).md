@@ -1,7 +1,8 @@
 # init(call:digits:type:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new action for a call identified by a given UUID, as well as a specified type and sequence of digits.
 
@@ -18,6 +19,10 @@ Initializes a new action for a call identified by a given UUID, as well as a spe
 init(call callUUID: UUID, digits: String, type: CXPlayDTMFCallAction.ActionType)
 ```
 
+```objc
+- (instancetype) initWithCallUUID:(NSUUID *) callUUID digits:(NSString *) digits type:(CXPlayDTMFCallActionType) type;
+```
+
 #### Return Value
 
 #### Discussion
@@ -26,13 +31,14 @@ A new action for the specified call UUID, type, and digits.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object.
+- `callUUID`: The unique identifier for the associated [`CXCall`](../cxcall.md) object.
 - `digits`: A sequence of digits.
-- `type`: The type of the call action. For possible values, see [`CXPlayDTMFCallAction.ActionType`](cxplaydtmfcallaction/actiontype.md).
+- `type`: The type of the call action. For possible values, see [`CXPlayDTMFCallAction.ActionType`](./actiontype.md).
 
 ## See Also
 
-- [init?(coder: NSCoder)](cxplaydtmfcallaction/init(coder:).md)
+### Creating New Actions
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new action to play dual-tone multifrequency (DTMF) tones with data in an unarchiver.
 
 

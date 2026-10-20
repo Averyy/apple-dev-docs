@@ -1,7 +1,8 @@
 # isFoveationEnabled
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates if the layer is using variable rasterization rates.
 
@@ -17,7 +18,7 @@ var isFoveationEnabled: Bool { get set }
 
 ## Mentions
 
-- [Defining layer renderer quality](defining-layer-renderer-quality.md)
+- [Defining layer renderer quality](../../defining-layer-renderer-quality.md)
 
 #### Discussion
 
@@ -27,7 +28,8 @@ When foveation is enabled, the drawable resource for each frame reduces the size
 
 ## See Also
 
-- [var generateFlippedRasterizationRateMaps: Bool](layerrenderer/configuration-swift.struct/generateflippedrasterizationratemaps.md)
+### Configuring the foveation setting
+- [var generateFlippedRasterizationRateMaps: Bool](./generateflippedrasterizationratemaps.md)
   A Boolean value that indicates whether the layer renderer provides rasterization rate maps flipped around the y-axis.
 
 

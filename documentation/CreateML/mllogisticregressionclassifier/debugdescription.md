@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the logistic regression classifier that’s suitable for output during debugging.
 
@@ -21,9 +22,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mllogisticregressionclassifier/description.md)
+### Describing a logistic regression classifier
+- [var description: String](./description.md)
   A text representation of the logistic regression classifier.
-- [var playgroundDescription: Any](mllogisticregressionclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the logistic regression classifier shown in a playground.
 
 

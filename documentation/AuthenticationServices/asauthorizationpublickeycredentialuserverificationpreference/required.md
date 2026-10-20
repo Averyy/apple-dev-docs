@@ -1,7 +1,8 @@
 # required
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The relying party requires user verification.
 
@@ -19,11 +20,16 @@ The relying party requires user verification.
 static let required: ASAuthorizationPublicKeyCredentialUserVerificationPreference
 ```
 
+```c
+extern ASAuthorizationPublicKeyCredentialUserVerificationPreference const ASAuthorizationPublicKeyCredentialUserVerificationPreferenceRequired;
+```
+
 ## See Also
 
-- [static let discouraged: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialuserverificationpreference/discouraged.md)
+### Getting preferences
+- [static let discouraged: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./discouraged.md)
   The relying party discourages user verification.
-- [static let preferred: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialuserverificationpreference/preferred.md)
+- [static let preferred: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./preferred.md)
   The relying party prefers user verification.
 
 

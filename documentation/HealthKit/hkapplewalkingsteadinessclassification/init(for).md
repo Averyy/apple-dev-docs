@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new classification for the provided percentage.
 
@@ -10,7 +11,7 @@ Creates a new classification for the provided percentage.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

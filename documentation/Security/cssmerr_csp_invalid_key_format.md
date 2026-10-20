@@ -1,7 +1,8 @@
 # CSSMERR_CSP_INVALID_KEY_FORMAT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_CSP_INVALID_KEY_FORMAT: Int { get }
+```
+
+```c
+CSSMERR_CSP_INVALID_KEY_FORMAT
 ```
 
 

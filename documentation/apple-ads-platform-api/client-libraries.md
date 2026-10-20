@@ -1,6 +1,7 @@
 # Using Client Libraries
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: Article
 
 Integrate the Apple Ads Platform API using an Apple-maintained client library instead of a custom HTTP client.
 
@@ -19,26 +20,27 @@ Choose the library that matches your application’s language:
 
 | Language | Repository |
 | --- | --- |
-| Swift | [`apple-ads-platform-api-swift`](https://developer.apple.comhttps://github.com/apple/apple-ads-platform-api-swift) |
-| Python | [`apple-ads-platform-api-python`](https://developer.apple.comhttps://github.com/apple/apple-ads-platform-api-python) |
-| Java | [`apple-ads-platform-api-java`](https://developer.apple.comhttps://github.com/apple/apple-ads-platform-api-java) |
-| Node.js | [`apple-ads-platform-api-node`](https://developer.apple.comhttps://github.com/apple/apple-ads-platform-api-node) |
+| Swift | [apple-ads-platform-api-swift](https://github.com/apple/apple-ads-platform-api-swift) |
+| Python | [apple-ads-platform-api-python](https://github.com/apple/apple-ads-platform-api-python) |
+| Java | [apple-ads-platform-api-java](https://github.com/apple/apple-ads-platform-api-java) |
+| Node.js | [apple-ads-platform-api-node](https://github.com/apple/apple-ads-platform-api-node) |
 
 #### Get Started
 
-To generate the credentials your application authenticates with, complete the setup steps in [`Implementing OAuth for the Apple Ads Platform API`](implementing-oauth-for-the-apple-ads-platform-api.md) before integrating a client library. Each repository includes a README with installation instructions, authentication setup, and usage examples specific to that language. To install the library and construct a client, refer to the README for your library’s language. For details on the underlying request and response structures the libraries wrap, see [`Calling the Apple Ads Platform API`](calling-apple-ads-platform-api.md).
+To generate the credentials your application authenticates with, complete the setup steps in [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md) before integrating a client library. Each repository includes a README with installation instructions, authentication setup, and usage examples specific to that language. To install the library and construct a client, refer to the README for your library’s language. For details on the underlying request and response structures the libraries wrap, see [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md).
 
 ## See Also
 
-- [Implementing OAuth for the Apple Ads Platform API](implementing-oauth-for-the-apple-ads-platform-api.md)
+### Essentials
+- [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md)
   Generate a key pair and request an access token to authenticate with the Apple Ads Platform API.
-- [Calling the Apple Ads Platform API](calling-apple-ads-platform-api.md)
+- [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md)
   Authenticate requests, structure endpoint calls, and interpret responses when using the Apple Ads Platform API.
-- [Applying Rate Limits](rate-limits.md)
+- [Applying Rate Limits](./rate-limits.md)
   Track your remaining quota and pace requests.
-- [Advertising Your App on the App Store](journey-app-store-ads.md)
+- [Advertising Your App on the App Store](./journey-app-store-ads.md)
   Set up and launch an App Store campaign, from account verification through keyword targeting to performance reporting.
-- [Advertising Your Business on Apple Maps](journey-apple-maps-brand-ads.md)
+- [Advertising Your Business on Apple Maps](./journey-apple-maps-brand-ads.md)
   Identify your brand, upload creative assets, build location groups, and create campaigns, ad groups, creatives, and ads to promote it on Apple Maps.
 
 

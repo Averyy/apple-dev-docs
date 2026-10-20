@@ -1,7 +1,8 @@
 # OSLogMessageComponent
 
 **Framework**: OSLog  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The message arguments for a particular entry.
 
@@ -20,6 +21,10 @@ The message arguments for a particular entry.
 class OSLogMessageComponent
 ```
 
+```objc
+@interface OSLogMessageComponent : NSObject
+```
+
 #### Overview
 
 There is one component for each placeholder in the formatString plus one component for any text after the last placeholder.
@@ -27,50 +32,51 @@ There is one component for each placeholder in the formatString plus one compone
 ## Topics
 
 ### Reading the Argument
-- [var argument: OSLogMessageComponent.Argument](oslogmessagecomponent/argument-swift.property.md)
+- [var argument: OSLogMessageComponent.Argument](./oslogmessagecomponent/argument-swift.property.md)
   The argument passed into the message component.
-- [OSLogMessageComponent.Argument](oslogmessagecomponent/argument-swift.enum.md)
+- [OSLogMessageComponent.Argument](./oslogmessagecomponent/argument-swift.enum.md)
   An object representing data that corresponds to an argument in a message payload.
-- [var argumentCategory: OSLogMessageComponent.ArgumentCategory](oslogmessagecomponent/argumentcategory-swift.property.md)
+- [var argumentCategory: OSLogMessageComponent.ArgumentCategory](./oslogmessagecomponent/argumentcategory-swift.property.md)
   The type of argument that corresponds to the placeholder.
-- [OSLogMessageComponent.ArgumentCategory](oslogmessagecomponent/argumentcategory-swift.enum.md)
+- [OSLogMessageComponent.ArgumentCategory](./oslogmessagecomponent/argumentcategory-swift.enum.md)
   The data type corresponding to the argument provided in a message payload.
 ### Reading the Message Component
-- [var formatSubstring: String](oslogmessagecomponent/formatsubstring.md)
+- [var formatSubstring: String](./oslogmessagecomponent/formatsubstring.md)
   The text immediately preceding a placeholder.
-- [var placeholder: String](oslogmessagecomponent/placeholder.md)
+- [var placeholder: String](./oslogmessagecomponent/placeholder.md)
   The placeholder text for the message component.
 ### Accessing the Argument
-- [var argumentDataValue: Data?](oslogmessagecomponent/argumentdatavalue.md)
+- [var argumentDataValue: Data?](./oslogmessagecomponent/argumentdatavalue.md)
   The argument formatted as a sequence of bytes.
-- [var argumentDoubleValue: Double](oslogmessagecomponent/argumentdoublevalue.md)
+- [var argumentDoubleValue: Double](./oslogmessagecomponent/argumentdoublevalue.md)
   The argument formatted as a double.
-- [var argumentInt64Value: Int64](oslogmessagecomponent/argumentint64value.md)
+- [var argumentInt64Value: Int64](./oslogmessagecomponent/argumentint64value.md)
   The argument formatted as a signed 64-bit integer.
-- [var argumentNumberValue: NSNumber?](oslogmessagecomponent/argumentnumbervalue.md)
+- [var argumentNumberValue: NSNumber?](./oslogmessagecomponent/argumentnumbervalue.md)
   The argument formatted as a number.
-- [var argumentStringValue: String?](oslogmessagecomponent/argumentstringvalue.md)
+- [var argumentStringValue: String?](./oslogmessagecomponent/argumentstringvalue.md)
   The argument formatted as a string.
-- [var argumentUInt64Value: UInt64](oslogmessagecomponent/argumentuint64value.md)
+- [var argumentUInt64Value: UInt64](./oslogmessagecomponent/argumentuint64value.md)
   The argument formatted as an unsigned 64-bit integer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class OSLogPosition](oslogposition.md)
+### Entry Data
+- [class OSLogPosition](./oslogposition.md)
   A representation of a point in a sequence of entries in the unified logging system.
 
 

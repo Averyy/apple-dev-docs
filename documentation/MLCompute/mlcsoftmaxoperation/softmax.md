@@ -1,14 +1,15 @@
 # MLCSoftmaxOperation.softmax
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -16,10 +17,15 @@
 case softmax
 ```
 
+```c
+MLCSoftmaxOperationSoftmax
+```
+
 ## See Also
 
-- [MLCSoftmaxOperation.logSoftmax](mlcsoftmaxoperation/logsoftmax.md)
-- [var debugDescription: String](mlcsoftmaxoperation/debugdescription.md)
+### Enumeration Cases
+- [MLCSoftmaxOperation.logSoftmax](./logsoftmax.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the softmax operation, suitable for debugging.
 
 

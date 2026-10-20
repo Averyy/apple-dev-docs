@@ -1,7 +1,8 @@
 # highlightedItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the currently highlighted item in the menu.
 
@@ -12,6 +13,10 @@ Indicates the currently highlighted item in the menu.
 
 ```swift
 var highlightedItem: NSMenuItem? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSMenuItem * highlightedItem;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # Publishers.Merge8.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publishers’ common failure type.
 
 ## See Also
 
-- [Publishers.Merge8.Output](publishers/merge8/output.md)
+### Declaring supporting types
+- [Publishers.Merge8.Output](./output.md)
   The kind of values published by this publisher.
 
 

@@ -1,7 +1,8 @@
 # ImageFlipper.Orientation.vertical
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Flip the image vertically.
 
@@ -21,7 +22,8 @@ case vertical
 
 ## See Also
 
-- [ImageFlipper.Orientation.horizontal](imageflipper/orientation-swift.enum/horizontal.md)
+### Image orientations
+- [ImageFlipper.Orientation.horizontal](./horizontal.md)
   Flip the image horizontally.
 
 

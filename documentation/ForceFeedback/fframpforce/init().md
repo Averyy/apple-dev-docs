@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(lStart: LONG, lEnd: LONG)](fframpforce/init(lstart:lend:).md)
+### Initializers
+- [init(lStart: LONG, lEnd: LONG)](./init%28lstart,lend%29.md)
 
 
 ---

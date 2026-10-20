@@ -1,7 +1,8 @@
 # typeUnknown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A file whose type is unknown.
 
@@ -20,19 +21,24 @@ A file whose type is unknown.
 static let typeUnknown: FileAttributeType
 ```
 
+```c
+extern NSFileAttributeType const NSFileTypeUnknown;
+```
+
 ## See Also
 
-- [static let typeBlockSpecial: FileAttributeType](fileattributetype/typeblockspecial.md)
+### Accessing File Type Attributes
+- [static let typeBlockSpecial: FileAttributeType](./typeblockspecial.md)
   A block special file.
-- [static let typeCharacterSpecial: FileAttributeType](fileattributetype/typecharacterspecial.md)
+- [static let typeCharacterSpecial: FileAttributeType](./typecharacterspecial.md)
   A character special file.
-- [static let typeDirectory: FileAttributeType](fileattributetype/typedirectory.md)
+- [static let typeDirectory: FileAttributeType](./typedirectory.md)
   A directory.
-- [static let typeRegular: FileAttributeType](fileattributetype/typeregular.md)
+- [static let typeRegular: FileAttributeType](./typeregular.md)
   A regular file.
-- [static let typeSocket: FileAttributeType](fileattributetype/typesocket.md)
+- [static let typeSocket: FileAttributeType](./typesocket.md)
   A socket.
-- [static let typeSymbolicLink: FileAttributeType](fileattributetype/typesymboliclink.md)
+- [static let typeSymbolicLink: FileAttributeType](./typesymboliclink.md)
   A symbolic link.
 
 

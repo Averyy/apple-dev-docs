@@ -1,17 +1,18 @@
 # ~IVarsInvalidator
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Destructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 ~IVarsInvalidator();
 ```
 

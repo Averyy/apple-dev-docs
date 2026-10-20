@@ -1,11 +1,12 @@
 # CaseIterable Implementations
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Properties
-- [static var allCases: [HKAppleWalkingSteadinessClassification]](hkapplewalkingsteadinessclassification/allcases.md)
+- [static var allCases: [HKAppleWalkingSteadinessClassification]](./allcases.md)
   A collection of all values for Apple Walking Steadiness classification
 
 

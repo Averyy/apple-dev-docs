@@ -1,7 +1,8 @@
 # clearShadow
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Turns shadows off.
 
@@ -11,7 +12,7 @@ Turns shadows off.
 
 ## Declaration
 
-```swift
+```
 void clearShadow();
 ```
 
@@ -23,13 +24,14 @@ When you set a shadow color or shadow blur, and a shadow offset, all subsequent 
 
 ## See Also
 
-- [shadowBlur](canvasrenderingcontext2d/1632236-shadowblur.md)
+### Working with Shadows
+- [shadowBlur](./api-1632236-shadowblur.md)
   A floating-point number that controls the degree of Gaussian blur applied to shadows.
-- [shadowColor](canvasrenderingcontext2d/1629275-shadowcolor.md)
+- [shadowColor](./api-1629275-shadowcolor.md)
   A string that contains the RGBa color value of shadows. 
-- [shadowOffsetX](canvasrenderingcontext2d/1632399-shadowoffsetx.md)
+- [shadowOffsetX](./api-1632399-shadowoffsetx.md)
   A floating-point number that controls the horizontal offset of shadows from the elements casting the shadows.
-- [shadowOffsetY](canvasrenderingcontext2d/1633455-shadowoffsety.md)
+- [shadowOffsetY](./api-1633455-shadowoffsety.md)
   A floating-point number that controls the vertical offset of shadows from the elements casting the shadows.
 
 

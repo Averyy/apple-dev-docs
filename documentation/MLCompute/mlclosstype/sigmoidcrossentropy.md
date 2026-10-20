@@ -1,14 +1,15 @@
 # MLCLossType.sigmoidCrossEntropy
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -16,17 +17,22 @@
 case sigmoidCrossEntropy
 ```
 
+```c
+MLCLossTypeSigmoidCrossEntropy
+```
+
 ## See Also
 
-- [MLCLossType.categoricalCrossEntropy](mlclosstype/categoricalcrossentropy.md)
-- [MLCLossType.cosineDistance](mlclosstype/cosinedistance.md)
-- [MLCLossType.hinge](mlclosstype/hinge.md)
-- [MLCLossType.huber](mlclosstype/huber.md)
-- [MLCLossType.log](mlclosstype/log.md)
-- [MLCLossType.meanAbsoluteError](mlclosstype/meanabsoluteerror.md)
-- [MLCLossType.meanSquaredError](mlclosstype/meansquarederror.md)
-- [MLCLossType.softmaxCrossEntropy](mlclosstype/softmaxcrossentropy.md)
-- [var debugDescription: String](mlclosstype/debugdescription.md)
+### Enumeration Cases
+- [MLCLossType.categoricalCrossEntropy](./categoricalcrossentropy.md)
+- [MLCLossType.cosineDistance](./cosinedistance.md)
+- [MLCLossType.hinge](./hinge.md)
+- [MLCLossType.huber](./huber.md)
+- [MLCLossType.log](./log.md)
+- [MLCLossType.meanAbsoluteError](./meanabsoluteerror.md)
+- [MLCLossType.meanSquaredError](./meansquarederror.md)
+- [MLCLossType.softmaxCrossEntropy](./softmaxcrossentropy.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the loss type, suitable for debugging.
 
 

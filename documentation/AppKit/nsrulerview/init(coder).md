@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(scrollView: NSScrollView?, orientation: NSRulerView.Orientation)](nsrulerview/init(scrollview:orientation:).md)
+### Creating a Ruler View
+- [init(scrollView: NSScrollView?, orientation: NSRulerView.Orientation)](./init%28scrollview,orientation%29.md)
   Initializes a newly allocated NSRulerView to have `orientation` (`NSHorizontalRuler` or `NSVerticalRuler`) within `aScrollView`.
 
 

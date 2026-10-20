@@ -1,7 +1,8 @@
 # init(kind:debugMessage:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an asset error.
 

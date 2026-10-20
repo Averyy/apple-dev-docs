@@ -1,7 +1,8 @@
 # AXDataPoint.Value
 
 **Framework**: Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe types of data values.
 
@@ -23,18 +24,19 @@ enum Value
 ## Topics
 
 ### Constants
-- [AXDataPoint.Value.category(_:)](axdatapoint/value/category(_:).md)
+- [AXDataPoint.Value.category(_:)](./value/category%28_%29.md)
   A categorical data value.
-- [AXDataPoint.Value.number(_:)](axdatapoint/value/number(_:).md)
+- [AXDataPoint.Value.number(_:)](./value/number%28_%29.md)
   A numeric data value.
 
 ## See Also
 
-- [var xValue: AXDataPointValue](axdatapoint/xvalue.md)
+### Specifying the data value
+- [var xValue: AXDataPointValue](./xvalue.md)
   The value of the x-axis for the data point.
-- [var yValue: AXDataPointValue?](axdatapoint/yvalue.md)
+- [var yValue: AXDataPointValue?](./yvalue.md)
   The value of the y-axis for the data point.
-- [class AXDataPointValue](axdatapointvalue.md)
+- [class AXDataPointValue](../axdatapointvalue.md)
   A single data value.
 
 

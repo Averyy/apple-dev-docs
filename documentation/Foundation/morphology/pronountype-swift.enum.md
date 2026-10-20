@@ -1,7 +1,8 @@
 # Morphology.PronounType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,22 @@ enum PronounType
 ## Topics
 
 ### Enumeration Cases
-- [Morphology.PronounType.personal](morphology/pronountype-swift.enum/personal.md)
-- [Morphology.PronounType.possessive](morphology/pronountype-swift.enum/possessive.md)
-- [Morphology.PronounType.reflexive](morphology/pronountype-swift.enum/reflexive.md)
+- [Morphology.PronounType.personal](./pronountype-swift.enum/personal.md)
+- [Morphology.PronounType.possessive](./pronountype-swift.enum/possessive.md)
+- [Morphology.PronounType.reflexive](./pronountype-swift.enum/reflexive.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

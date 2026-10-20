@@ -1,7 +1,8 @@
 # image
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A poster image URL.
 
@@ -16,9 +17,10 @@ var image: URL?
 
 ## See Also
 
-- [var title: AttributedString](journalingsuggestion/eventposter/title.md)
+### Identifying an event
+- [var title: AttributedString](./title.md)
   The title of the event.
-- [var placeName: String?](journalingsuggestion/eventposter/placename.md)
+- [var placeName: String?](./placename.md)
   Location displayed name on the poster.
 
 

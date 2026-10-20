@@ -1,7 +1,8 @@
 # TextureSamplingQuality.low
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Low sampling rates can result in higher noise in high-frequency areas and banding in low-frequency gradients.
 
@@ -19,11 +20,12 @@ case low
 
 ## See Also
 
-- [TextureSamplingQuality.normal](texturesamplingquality/normal.md)
+### Specifying the sampling quality
+- [TextureSamplingQuality.normal](./normal.md)
   Computes with regular sampling rates.
-- [TextureSamplingQuality.high](texturesamplingquality/high.md)
+- [TextureSamplingQuality.high](./high.md)
   Computes with high sampling rates, reducing texture noise in high-frequency areas.
-- [TextureSamplingQuality.veryHigh](texturesamplingquality/veryhigh.md)
+- [TextureSamplingQuality.veryHigh](./veryhigh.md)
   Computes with very high sampling rates.
 
 

@@ -1,17 +1,18 @@
 # kAudioConverterQuality_Min
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies minimum sample rate conversion quality.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ Specifies minimum sample rate conversion quality.
 var kAudioConverterQuality_Min: UInt32 { get }
 ```
 
+```c
+kAudioConverterQuality_Min
+```
+
 ## See Also
 
-- [var kAudioConverterQuality_Max: UInt32](kaudioconverterquality_max.md)
+### Constants
+- [var kAudioConverterQuality_Max: UInt32](./kaudioconverterquality_max.md)
   Specifies maximum sample-rate conversion quality.
-- [var kAudioConverterQuality_High: UInt32](kaudioconverterquality_high.md)
+- [var kAudioConverterQuality_High: UInt32](./kaudioconverterquality_high.md)
   Specifies high sample rate conversion quality.
-- [var kAudioConverterQuality_Medium: UInt32](kaudioconverterquality_medium.md)
+- [var kAudioConverterQuality_Medium: UInt32](./kaudioconverterquality_medium.md)
   Specifies medium sample rate conversion quality.
-- [var kAudioConverterQuality_Low: UInt32](kaudioconverterquality_low.md)
+- [var kAudioConverterQuality_Low: UInt32](./kaudioconverterquality_low.md)
   Specifies low sample rate conversion quality.
 
 

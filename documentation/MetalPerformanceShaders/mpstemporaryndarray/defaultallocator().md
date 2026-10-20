@@ -1,7 +1,8 @@
 # defaultAllocator()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func defaultAllocator() -> any MPSNDArrayAllocator
+```
+
+```objc
++ (id<MPSNDArrayAllocator>) defaultAllocator;
 ```
 
 

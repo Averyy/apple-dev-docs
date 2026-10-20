@@ -1,7 +1,8 @@
 # UnitPoint
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A normalized 2D point in a view’s coordinate space.
 
@@ -40,86 +41,87 @@ let projectedPoint = CGPoint(
 
 You can perform this calculation yourself if you happen to know a view’s size, or if you want to use the unit point for some custom purpose, but SwiftUI typically does this for you to carry out operations that you request, like when you:
 
-- Transform a shape using a shape modifier. For example, to rotate a shape with [`rotation(_:anchor:)`](shape/rotation(_:anchor:).md), you indicate an anchor point that you want to rotate the shape around.
-- Override the alignment of the view in a [`Grid`](grid.md) cell using the [`gridCellAnchor(_:)`](view/gridcellanchor(_:).md) view modifier. The grid aligns the projection of a unit point onto the view with the projection of the same unit point onto the cell.
-- Create a gradient that has a center, or start and stop points, relative to the shape that you are styling. See the gradient methods in [`ShapeStyle`](shapestyle.md).
+- Transform a shape using a shape modifier. For example, to rotate a shape with [`rotation(_:anchor:)`](./shape/rotation%28_,anchor%29.md), you indicate an anchor point that you want to rotate the shape around.
+- Override the alignment of the view in a [`Grid`](./grid.md) cell using the [`gridCellAnchor(_:)`](./view/gridcellanchor%28_%29.md) view modifier. The grid aligns the projection of a unit point onto the view with the projection of the same unit point onto the cell.
+- Create a gradient that has a center, or start and stop points, relative to the shape that you are styling. See the gradient methods in [`ShapeStyle`](./shapestyle.md).
 
-You can create custom unit points with explicit values, like the example above, or you can use one of the built-in unit points that SwiftUI provides, like [`zero`](unitpoint/zero.md), [`center`](unitpoint/center.md), or [`topTrailing`](unitpoint/toptrailing.md). The built-in values correspond to the alignment positions of the similarly named, built-in [`Alignment`](alignment.md) types.
+You can create custom unit points with explicit values, like the example above, or you can use one of the built-in unit points that SwiftUI provides, like [`zero`](./unitpoint/zero.md), [`center`](./unitpoint/center.md), or [`topTrailing`](./unitpoint/toptrailing.md). The built-in values correspond to the alignment positions of the similarly named, built-in [`Alignment`](./alignment.md) types.
 
 > **Note**: A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
 
-##### Layout Direction
+##### Layout direction
 
-When a person configures their device to use a left-to-right language like English, the system places the view’s origin in its top-left corner, with positive x toward the right and positive y toward the bottom of the view. In a right-to-left environment, the origin moves to the upper-right corner, and the positive x direction changes to be toward the left. You don’t typically need to do anything to handle this change, because SwiftUI applies the change to all aspects of the system. For example, see the discussion about layout direction in [`HorizontalAlignment`](horizontalalignment.md).
+When a person configures their device to use a left-to-right language like English, the system places the view’s origin in its top-left corner, with positive x toward the right and positive y toward the bottom of the view. In a right-to-left environment, the origin moves to the upper-right corner, and the positive x direction changes to be toward the left. You don’t typically need to do anything to handle this change, because SwiftUI applies the change to all aspects of the system. For example, see the discussion about layout direction in [`HorizontalAlignment`](./horizontalalignment.md).
 
-It’s important to test your app for the different locales that you distribute your app in. For more information about the localization process, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
+It’s important to test your app for the different locales that you distribute your app in. For more information about the localization process, see [Localization](../Xcode/localization.md).
 
 ## Topics
 
 ### Getting the origin
-- [static let zero: UnitPoint](unitpoint/zero.md)
+- [static let zero: UnitPoint](./unitpoint/zero.md)
   The origin of a view.
 ### Getting top points
-- [static let topLeading: UnitPoint](unitpoint/topleading.md)
+- [static let topLeading: UnitPoint](./unitpoint/topleading.md)
   A point that’s in the top, leading corner of a view.
-- [static let top: UnitPoint](unitpoint/top.md)
+- [static let top: UnitPoint](./unitpoint/top.md)
   A point that’s centered horizontally on the top edge of a view.
-- [static let topTrailing: UnitPoint](unitpoint/toptrailing.md)
+- [static let topTrailing: UnitPoint](./unitpoint/toptrailing.md)
   A point that’s in the top, trailing corner of a view.
 ### Getting middle points
-- [static let leading: UnitPoint](unitpoint/leading.md)
+- [static let leading: UnitPoint](./unitpoint/leading.md)
   A point that’s centered vertically on the leading edge of a view.
-- [static let center: UnitPoint](unitpoint/center.md)
+- [static let center: UnitPoint](./unitpoint/center.md)
   A point that’s centered in a view.
-- [static let trailing: UnitPoint](unitpoint/trailing.md)
+- [static let trailing: UnitPoint](./unitpoint/trailing.md)
   A point that’s centered vertically on the trailing edge of a view.
 ### Getting bottom points
-- [static let bottomLeading: UnitPoint](unitpoint/bottomleading.md)
+- [static let bottomLeading: UnitPoint](./unitpoint/bottomleading.md)
   A point that’s in the bottom, leading corner of a view.
-- [static let bottom: UnitPoint](unitpoint/bottom.md)
+- [static let bottom: UnitPoint](./unitpoint/bottom.md)
   A point that’s centered horizontally on the bottom edge of a view.
-- [static let bottomTrailing: UnitPoint](unitpoint/bottomtrailing.md)
+- [static let bottomTrailing: UnitPoint](./unitpoint/bottomtrailing.md)
   A point that’s in the bottom, trailing corner of a view.
 ### Creating a point
-- [init()](unitpoint/init.md)
+- [init()](./unitpoint/init%28%29.md)
   Creates a unit point at the origin.
-- [init(x: CGFloat, y: CGFloat)](unitpoint/init(x:y:).md)
+- [init(x: CGFloat, y: CGFloat)](./unitpoint/init%28x,y%29.md)
   Creates a unit point with the specified horizontal and vertical offsets.
 ### Getting the point’s coordinates
-- [var x: CGFloat](unitpoint/x.md)
+- [var x: CGFloat](./unitpoint/x.md)
   The normalized distance from the origin to the point in the horizontal direction.
-- [var y: CGFloat](unitpoint/y.md)
+- [var y: CGFloat](./unitpoint/y.md)
   The normalized distance from the origin to the point in the vertical dimension.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Animatable](./animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Axis](axis.md)
+### Accessing geometric constructs
+- [enum Axis](./axis.md)
   The horizontal or vertical dimension in a 2D coordinate system.
-- [struct Angle](angle.md)
+- [struct Angle](./angle.md)
   A geometric angle whose value you access in either radians or degrees.
-- [struct UnitPoint3D](unitpoint3d.md)
+- [struct UnitPoint3D](./unitpoint3d.md)
   A normalized 3D point in a view’s coordinate space.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   An opaque value derived from an anchor source and a particular view.
-- [protocol DepthAlignmentID](depthalignmentid.md)
+- [protocol DepthAlignmentID](./depthalignmentid.md)
   A type that defines a custom depth alignment guide.
-- [struct Alignment3D](alignment3d.md)
+- [struct Alignment3D](./alignment3d.md)
   An alignment in all three axes.
-- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+- [struct GeometryProxyCoordinateSpace3D](./geometryproxycoordinatespace3d.md)
   A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 

@@ -1,7 +1,8 @@
 # nextSpan()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a span over the next group of elements that are ready to by visited, up to the specifed maximum.
 

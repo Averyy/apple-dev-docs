@@ -1,7 +1,8 @@
 # measureText
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Determines the width of the bounding box required to render the specified text with the current font settings.
 
@@ -11,13 +12,13 @@ Determines the width of the bounding box required to render the specified text w
 
 ## Declaration
 
-```swift
+```
 TextMetrics measureText(
     DOMString text
 );
 ```
 
-#### Return_value
+#### Return Value
 
 An object whose `width` property contains the width in pixels of the bounding box needed to render the text without clipping.
 
@@ -31,15 +32,16 @@ Use this method to determine how much space is needed to render a string, or to 
 
 ## See Also
 
-- [fillText](canvasrenderingcontext2d/1634243-filltext.md)
+### Drawing Text
+- [fillText](./api-1634243-filltext.md)
   Draws a line of text at the specified x,y coordinates, optionally scaled to a specified maximum width.
-- [font](canvasrenderingcontext2d/1632249-font.md)
+- [font](./api-1632249-font.md)
   A string containing font settings, such as the font family, size, and weight.
-- [strokeText](canvasrenderingcontext2d/1630188-stroketext.md)
+- [strokeText](./api-1630188-stroketext.md)
   Draws a line of text in outline at the specified x,y coordinates, optionally limited to a specified maximum width.
-- [textAlign](canvasrenderingcontext2d/1631811-textalign.md)
+- [textAlign](./api-1631811-textalign.md)
   A string that specifies whether text is left-justified, right-justified, or centered.
-- [textBaseline](canvasrenderingcontext2d/1629692-textbaseline.md)
+- [textBaseline](./api-1629692-textbaseline.md)
   A string that specifies how the bounding box aligns vertically relative to the y-coordinate.
 
 

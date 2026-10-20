@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionErrorCode.mustBeActiveToStartOrSchedule
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The watchOS app attempted to start or schedule a session while not in an active state.
 
@@ -14,25 +15,30 @@ The watchOS app attempted to start or schedule a session while not in an active 
 case mustBeActiveToStartOrSchedule
 ```
 
+```c
+WKExtendedRuntimeSessionErrorMustBeActiveToStartOrSchedule
+```
+
 #### Discussion
 
-You can only start or schedule sessions when the watchOS app is running in the foreground. Specifically, the WatchKit extension’s [`applicationState`](wkextension/applicationstate.md) must equal [`WKApplicationState.active`](wkapplicationstate/active.md).
+You can only start or schedule sessions when the watchOS app is running in the foreground. Specifically, the WatchKit extension’s [`applicationState`](../wkextension/applicationstate.md) must equal [`WKApplicationState.active`](../wkapplicationstate/active.md).
 
 ## See Also
 
-- [WKExtendedRuntimeSessionErrorCode.unknown](wkextendedruntimesessionerrorcode/unknown.md)
+### Error Codes
+- [WKExtendedRuntimeSessionErrorCode.unknown](./unknown.md)
   An unknown error occurred.
-- [WKExtendedRuntimeSessionErrorCode.scheduledTooFarInAdvance](wkextendedruntimesessionerrorcode/scheduledtoofarinadvance.md)
+- [WKExtendedRuntimeSessionErrorCode.scheduledTooFarInAdvance](./scheduledtoofarinadvance.md)
   The app attempted to schedule a session too far in the future.
-- [WKExtendedRuntimeSessionErrorCode.notYetStarted](wkextendedruntimesessionerrorcode/notyetstarted.md)
+- [WKExtendedRuntimeSessionErrorCode.notYetStarted](./notyetstarted.md)
   The app invalidated the session before it started.
-- [WKExtendedRuntimeSessionErrorCode.exceededResourceLimits](wkextendedruntimesessionerrorcode/exceededresourcelimits.md)
+- [WKExtendedRuntimeSessionErrorCode.exceededResourceLimits](./exceededresourcelimits.md)
   The session exceeded its resource limits.
-- [WKExtendedRuntimeSessionErrorCode.barDisabled](wkextendedruntimesessionerrorcode/bardisabled.md)
+- [WKExtendedRuntimeSessionErrorCode.barDisabled](./bardisabled.md)
   The user has disabled background app refresh.
-- [WKExtendedRuntimeSessionErrorCode.notApprovedToStartSession](wkextendedruntimesessionerrorcode/notapprovedtostartsession.md)
+- [WKExtendedRuntimeSessionErrorCode.notApprovedToStartSession](./notapprovedtostartsession.md)
   The app attempted to start a session, but doesn’t have a valid session type.
-- [WKExtendedRuntimeSessionErrorCode.notApprovedToSchedule](wkextendedruntimesessionerrorcode/notapprovedtoschedule.md)
+- [WKExtendedRuntimeSessionErrorCode.notApprovedToSchedule](./notapprovedtoschedule.md)
   The app attempted to schedule a session, but the session type does not support scheduling.
 
 

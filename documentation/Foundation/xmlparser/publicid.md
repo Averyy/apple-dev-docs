@@ -1,7 +1,8 @@
 # publicID
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The public identifier of the external entity referenced in the XML document.
 
@@ -20,17 +21,22 @@ The public identifier of the external entity referenced in the XML document.
 var publicID: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * publicID;
+```
+
 #### Discussion
 
 You may access this property once a parsing operation has begun or after an error occurs.
 
 ## See Also
 
-- [var columnNumber: Int](xmlparser/columnnumber.md)
+### Obtaining Parser State
+- [var columnNumber: Int](./columnnumber.md)
   The column number of the XML document being processed by the parser.
-- [var lineNumber: Int](xmlparser/linenumber.md)
+- [var lineNumber: Int](./linenumber.md)
   The line number of the XML document being processed by the parser.
-- [var systemID: String?](xmlparser/systemid.md)
+- [var systemID: String?](./systemid.md)
   The system identifier of the external entity referenced in the XML document.
 
 

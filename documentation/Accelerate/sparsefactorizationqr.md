@@ -1,7 +1,8 @@
 # SparseFactorizationQR
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents QR factorization.
 
@@ -20,13 +21,18 @@ A constant that represents QR factorization.
 var SparseFactorizationQR: SparseFactorization_t { get }
 ```
 
+```c
+SparseFactorizationQR
+```
+
 #### Discussion
 
-[`SparseFactorizationQR`](sparsefactorizationqr.md) provides a sparse counterpart to the dense QR routines `sgeqrf()` and `dgeqrf()` from LAPACK.
+[`SparseFactorizationQR`](./sparsefactorizationqr.md) provides a sparse counterpart to the dense QR routines `sgeqrf()` and `dgeqrf()` from LAPACK.
 
 ## See Also
 
-- [var SparseFactorizationCholeskyAtA: SparseFactorization_t](sparsefactorizationcholeskyata.md)
+### Factorization types for overdetermined and underdetermined systems
+- [var SparseFactorizationCholeskyAtA: SparseFactorization_t](./sparsefactorizationcholeskyata.md)
   A constant that represents *QR* factorization without storing *Q*.
 
 

@@ -1,9 +1,10 @@
 # SectionedResults
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A `RandomAccessCollection` of [`ResultsSection`](resultssection.md) instances representing sectioned query results.
+A `RandomAccessCollection` of [`ResultsSection`](./resultssection.md) instances representing sectioned query results.
 
 **Availability**:
 - iOS 27.0+
@@ -22,7 +23,7 @@ struct SectionedResults<Element, SectionTitle> where Element : PersistentModel, 
 
 #### Overview
 
-`SectionedResults` is the result type for sectioned `@Query` properties. Iterating it yields sections; each section is itself a `RandomAccessCollection` of model elements. Use [`subscript(sectionTitle:)`](sectionedresults/subscript(sectiontitle:).md) for O(1) lookup by section title.
+`SectionedResults` is the result type for sectioned `@Query` properties. Iterating it yields sections; each section is itself a `RandomAccessCollection` of model elements. Use [`subscript(sectionTitle:)`](./sectionedresults/subscript%28sectiontitle%29.md) for O(1) lookup by section title.
 
 ```swift
 @Query(sort: \.name, sectionBy: \.category)
@@ -41,27 +42,27 @@ let workCount = items[sectionTitle: "Work"]?.count ?? 0
 ## Topics
 
 ### Instance Properties
-- [var sectionTitles: [SectionTitle]](sectionedresults/sectiontitles.md)
+- [var sectionTitles: [SectionTitle]](./sectionedresults/sectiontitles.md)
   The section titles in order.
 ### Instance Methods
-- [func contains(sectionTitle: SectionTitle) -> Bool](sectionedresults/contains(sectiontitle:).md)
+- [func contains(sectionTitle: SectionTitle) -> Bool](./sectionedresults/contains%28sectiontitle%29.md)
   Returns whether a section with the given title exists in the collection.
-- [func index(ofSectionTitled: SectionTitle) -> Int?](sectionedresults/index(ofsectiontitled:).md)
+- [func index(ofSectionTitled: SectionTitle) -> Int?](./sectionedresults/index%28ofsectiontitled%29.md)
   Returns the ordered index of the section with the given title, or `nil` if not found.
 ### Subscripts
-- [subscript(sectionTitle _: SectionTitle) -> ResultsSection<Element, SectionTitle>?](sectionedresults/subscript(sectiontitle:).md)
+- [subscript(sectionTitle _: SectionTitle) -> ResultsSection<Element, SectionTitle>?](./sectionedresults/subscript%28sectiontitle%29.md)
   Returns the section with the given title, or `nil` if no such section exists.
 ### Default Implementations
-- [Equatable Implementations](sectionedresults/equatable-implementations.md)
+- [Equatable Implementations](./sectionedresults/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Equatable](../Swift/equatable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PortalMaterial.Program
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A compiled shader program that drives the appearance of a portal’s surface and geometry.
 
@@ -22,25 +23,26 @@ struct Program
 ## Topics
 
 ### Configuring the program
-- [var descriptor: PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.property.md)
+- [var descriptor: PortalMaterial.Program.Descriptor](./program-swift.struct/descriptor-swift.property.md)
   The descriptor that produced this program.
-- [PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.struct.md)
-  Configuration used to compile a [`PortalMaterial.Program`](portalmaterial/program-swift.struct.md).
+- [PortalMaterial.Program.Descriptor](./program-swift.struct/descriptor-swift.struct.md)
+  Configuration used to compile a [`PortalMaterial.Program`](./program-swift.struct.md).
 ### Initializers
-- [init(descriptor: PortalMaterial.Program.Descriptor) async throws](portalmaterial/program-swift.struct/init(descriptor:).md)
+- [init(descriptor: PortalMaterial.Program.Descriptor) async throws](./program-swift.struct/init%28descriptor%29.md)
   Compiles a program from the given descriptor.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var program: PortalMaterial.Program](portalmaterial/program-swift.property.md)
+### Specifying the shader program
+- [var program: PortalMaterial.Program](./program-swift.property.md)
   The compiled program that drives this material’s surface and geometry shading.
 
 

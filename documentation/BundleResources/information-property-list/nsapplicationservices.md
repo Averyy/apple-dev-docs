@@ -1,7 +1,8 @@
 # NSApplicationServices
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A list of service providers and the devices that they support.
 
@@ -11,13 +12,14 @@ A list of service providers and the devices that they support.
 - tvOS 16.0+
 - watchOS 9.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `NSApplicationServices` (Application Services)
+- **Type**: dictionary
 
 #### Discussion
 
-Use this key to define which devices [`DeviceDiscoveryUI`](https://developer.apple.com/documentation/devicediscoveryui) can connect with. The application services’s [`Browses`](information-property-list/nsapplicationservices/browses.md) key takes an array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported operating systems. You can define more than one application service for your apps. Each service has its own identifier, and can connect to a different subset of devices.
+Use this key to define which devices [DeviceDiscoveryUI](../../DeviceDiscoveryUI/DeviceDiscoveryUI.md) can connect with. The application services’s [`Browses`](./nsapplicationservices/browses.md) key takes an array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported operating systems. You can define more than one application service for your apps. Each service has its own identifier, and can connect to a different subset of devices.
 
 Set these in your tvOS app target’s Info tab, or in its `Info.plist` file.
 
@@ -58,9 +60,9 @@ Set these in your tvOS app target’s Info tab, or in its `Info.plist` file.
 
 You can use the human-readable key names in Xcode’s property list editor.
 
-![A screenshot showing the Application Services settings in Xcode’s property list editor.](/images/com.apple.bundleresources/media-4030768@2x.png)
+![A screenshot showing the Application Services settings in Xcode’s property list editor.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-4030768@2x.png)
 
-In the iOS, iPadOS, or watchOS app, use the [`Advertises`](information-property-list/nsapplicationservices/advertises.md) key, and give it an array of dictionaries where each dictionary lists the application service identifier for the connection types supported on this platform.
+In the iOS, iPadOS, or watchOS app, use the [`Advertises`](./nsapplicationservices/advertises.md) key, and give it an array of dictionaries where each dictionary lists the application service identifier for the connection types supported on this platform.
 
 ```swift
 <key>NSApplicationServices</key>
@@ -78,19 +80,20 @@ In the iOS, iPadOS, or watchOS app, use the [`Advertises`](information-property-
 
 You can use the human-readable key names in Xcode’s property list editor.
 
-![A screenshot showing the application services settings in Xcode’s property list editor.](/images/com.apple.bundleresources/media-4030766@2x.png)
+![A screenshot showing the application services settings in Xcode’s property list editor.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-4030766@2x.png)
 
 ## Topics
 
 ### Property List Keys
-- [Advertises](information-property-list/nsapplicationservices/advertises.md)
+- [Advertises](./nsapplicationservices/advertises.md)
   An array of dictionaries, where each dictionary contains a unique identifier.
-- [Browses](information-property-list/nsapplicationservices/browses.md)
+- [Browses](./nsapplicationservices/browses.md)
   An array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported OSs.
 
 ## See Also
 
-- [NSPIRConfiguration](information-property-list/nspirconfiguration.md)
+### Network
+- [NSPIRConfiguration](./nspirconfiguration.md)
   The URLs used for a PIR server to support a URL filter or Live Caller ID lookup app.
 
 

@@ -1,7 +1,8 @@
 # channelLayout
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying audio channel layout.
 
@@ -20,17 +21,22 @@ The underlying audio channel layout.
 var channelLayout: AVAudioChannelLayout? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAudioChannelLayout * channelLayout;
+```
+
 #### Discussion
 
 Only formats with more than two channels require channel layouts.
 
 ## See Also
 
-- [var sampleRate: Double](avaudioformat/samplerate.md)
+### Getting audio format values
+- [var sampleRate: Double](./samplerate.md)
   The audio format sampling rate, in hertz.
-- [var channelCount: AVAudioChannelCount](avaudioformat/channelcount.md)
+- [var channelCount: AVAudioChannelCount](./channelcount.md)
   The number of channels of audio data.
-- [var formatDescription: CMAudioFormatDescription](avaudioformat/formatdescription.md)
+- [var formatDescription: CMAudioFormatDescription](./formatdescription.md)
   The audio format description to use with Core Media APIs.
 
 

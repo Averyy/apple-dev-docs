@@ -1,7 +1,8 @@
 # DockAccessory.State
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a dock accessory.
 
@@ -20,37 +21,38 @@ enum State
 ## Topics
 
 ### Getting properties
-- [DockAccessory.State.docked](dockaccessory/state/docked.md)
+- [DockAccessory.State.docked](./state/docked.md)
   The dock accessory doesn’t contain a device.
-- [DockAccessory.State.undocked](dockaccessory/state/undocked.md)
+- [DockAccessory.State.undocked](./state/undocked.md)
   The dock accessory contains a device.
-- [var debugDescription: String](dockaccessory/state/debugdescription.md)
+- [var debugDescription: String](./state/debugdescription.md)
   The text description of the dock accessory state.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var firmwareVersion: String?](dockaccessory/firmwareversion.md)
+### Getting accessory information
+- [var firmwareVersion: String?](./firmwareversion.md)
   The firmware version of the dock accessory.
-- [var hardwareModel: String?](dockaccessory/hardwaremodel.md)
+- [var hardwareModel: String?](./hardwaremodel.md)
   The model of the dock accessory.
-- [let identifier: DockAccessory.Identifier](dockaccessory/identifier-swift.property.md)
+- [let identifier: DockAccessory.Identifier](./identifier-swift.property.md)
   The name and unique identifer of the dock accessory.
-- [DockAccessory.Identifier](dockaccessory/identifier-swift.struct.md)
+- [DockAccessory.Identifier](./identifier-swift.struct.md)
   Information that uniquely identifies the dock accessory.
-- [DockAccessory.Category](dockaccessory/category.md)
+- [DockAccessory.Category](./category.md)
   Types of supported dock accesories.
-- [DockAccessory.StateChange](dockaccessory/statechange.md)
+- [DockAccessory.StateChange](./statechange.md)
   An event that indicates a change in the state of a dock accessory.
-- [DockAccessory.StateChanges](dockaccessory/statechanges.md)
+- [DockAccessory.StateChanges](./statechanges.md)
   An asynchronous sequence of dock accessory state changes.
 
 

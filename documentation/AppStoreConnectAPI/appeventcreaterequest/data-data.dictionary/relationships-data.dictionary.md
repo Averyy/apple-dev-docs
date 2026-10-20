@@ -1,7 +1,8 @@
 # AppEventCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppEventCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventCreateRequest.Data.Relationships.App](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object AppEventCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AppEventCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppEventCreateRequest.Data.Attributes](appeventcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppEventCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app event create request resource.
 
 

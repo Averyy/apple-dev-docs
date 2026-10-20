@@ -1,17 +1,18 @@
 # init(cString:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 For backwards compatibility only. This initializer is equivalent to the preferred `FilePath(platformString:)`.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 15.0 (renamed: init(platformString:))
+- iPadOS 14.0+ - Deprecated in 15.0 (renamed: init(platformString:))
+- Mac Catalyst 14.0+ - Deprecated in 15.0 (renamed: init(platformString:))
+- macOS 11.0+ - Deprecated in 12.0 (renamed: init(platformString:))
+- tvOS 14.0+ - Deprecated in 15.0 (renamed: init(platformString:))
+- watchOS 7.0+ - Deprecated in 8.0 (renamed: init(platformString:))
 
 ## Declaration
 

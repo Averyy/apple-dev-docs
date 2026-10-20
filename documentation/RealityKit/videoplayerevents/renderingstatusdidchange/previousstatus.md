@@ -1,7 +1,8 @@
 # previousStatus
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Previous rendering status
 

@@ -1,7 +1,8 @@
 # whatValues
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Subjects or topics mentioned in the text that can be used to filter photos.
 
@@ -14,6 +15,10 @@ Subjects or topics mentioned in the text that can be used to filter photos.
 
 ```swift
 var whatValues: [String] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * whatValues;
 ```
 
 #### Discussion

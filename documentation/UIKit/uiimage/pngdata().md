@@ -1,22 +1,27 @@
 # pngData()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a data object that contains the specified image in PNG format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
 
 ```swift
 func pngData() -> Data?
+```
+
+```c
+extern NSData *UIImagePNGRepresentation(UIImage *image);
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ If the image object’s underlying image data has been purged, calling this func
 
 ## See Also
 
-- [Supporting HDR images in your app](supporting-hdr-images-in-your-app.md)
+### Image creation
+- [Supporting HDR images in your app](../supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
-- [func jpegData(compressionQuality: CGFloat) -> Data?](uiimage/jpegdata(compressionquality:).md)
+- [func jpegData(compressionQuality: CGFloat) -> Data?](./jpegdata%28compressionquality%29.md)
   Returns a data object that contains the image in JPEG format.
 
 

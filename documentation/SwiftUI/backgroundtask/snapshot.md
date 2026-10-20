@@ -1,7 +1,8 @@
 # snapshot
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A background task used to update your app’s user interface in preparation for a snapshot.
 

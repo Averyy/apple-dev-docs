@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.pop
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Grows like an inflating bubble before shrinking as if popped.
 

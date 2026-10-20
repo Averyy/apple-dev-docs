@@ -1,7 +1,8 @@
 # finish(throwing:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task awaiting the next iteration point by having it return nil, which signifies the end of the iteration.
 

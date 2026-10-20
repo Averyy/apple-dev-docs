@@ -1,7 +1,8 @@
 # SHError.Code.mediaLibrarySyncFailed
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate when the system fails to add one or more media items to the user’s Shazam library.
 
@@ -20,9 +21,14 @@ The error code to indicate when the system fails to add one or more media items 
 case mediaLibrarySyncFailed
 ```
 
+```c
+SHErrorCodeMediaLibrarySyncFailed
+```
+
 ## See Also
 
-- [SHError.Code.mediaItemFetchFailed](sherror/code/mediaitemfetchfailed.md)
+### Library sync errors
+- [SHError.Code.mediaItemFetchFailed](./mediaitemfetchfailed.md)
   The error code to indicate when the system fails to fetch one or more media items.
 
 

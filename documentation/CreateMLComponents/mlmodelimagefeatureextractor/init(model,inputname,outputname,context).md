@@ -1,7 +1,8 @@
 # init(model:inputName:outputName:context:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image feature extractor from a CoreML model.
 
@@ -28,7 +29,8 @@ init(model: MLModel, inputName: String = "image", outputName: String, context: C
 
 ## See Also
 
-- [init(contentsOf: URL, configuration: MLModelConfiguration, inputName: String, outputName: String, context: CIContext) async throws](mlmodelimagefeatureextractor/init(contentsof:configuration:inputname:outputname:context:).md)
+### Creating the extractor
+- [init(contentsOf: URL, configuration: MLModelConfiguration, inputName: String, outputName: String, context: CIContext) async throws](./init%28contentsof,configuration,inputname,outputname,context%29.md)
   Creates an image feature extractor from a CoreML model URL.
 
 

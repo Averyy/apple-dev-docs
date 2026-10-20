@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.scale
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scale operation.
 

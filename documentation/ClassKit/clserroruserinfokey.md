@@ -1,7 +1,8 @@
 # CLSErrorUserInfoKey
 
 **Framework**: ClassKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Keys that appear in the user info dictionary in errors that ClassKit creates.
 
@@ -18,36 +19,41 @@ Keys that appear in the user info dictionary in errors that ClassKit creates.
 struct CLSErrorUserInfoKey
 ```
 
+```c
+typedef NSString * CLSErrorUserInfoKey;
+```
+
 ## Topics
 
 ### Keys
-- [static let objectKey: CLSErrorUserInfoKey](clserroruserinfokey/objectkey.md)
+- [static let objectKey: CLSErrorUserInfoKey](./clserroruserinfokey/objectkey.md)
   A key whose value is the object that caused the error.
-- [static let successfulObjectsKey: CLSErrorUserInfoKey](clserroruserinfokey/successfulobjectskey.md)
-- [static let underlyingErrorsKey: CLSErrorUserInfoKey](clserroruserinfokey/underlyingerrorskey.md)
+- [static let successfulObjectsKey: CLSErrorUserInfoKey](./clserroruserinfokey/successfulobjectskey.md)
+- [static let underlyingErrorsKey: CLSErrorUserInfoKey](./clserroruserinfokey/underlyingerrorskey.md)
   A key whose value is the array of errors that contributed to this error.
 ### Initializers
-- [init(String)](clserroruserinfokey/init(_:).md)
+- [init(String)](./clserroruserinfokey/init%28_%29.md)
   Initializes the key.
-- [init(rawValue: String)](clserroruserinfokey/init(rawvalue:).md)
+- [init(rawValue: String)](./clserroruserinfokey/init%28rawvalue%29.md)
   Initializes the key with a value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CLSError](clserror.md)
+### Errors
+- [struct CLSError](./clserror.md)
   Errors issued by ClassKit.
-- [let CLSErrorCodeDomain: String](clserrorcodedomain.md)
+- [let CLSErrorCodeDomain: String](./clserrorcodedomain.md)
   The error domain that ClassKit uses when issuing errors.
-- [CLSError.Code](clserror/code.md)
+- [CLSError.Code](./clserror/code.md)
   Error codes that ClassKit issues.
 
 

@@ -1,17 +1,18 @@
 # InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Offers.Download
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Offers.Download
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `anonymous`, `courseMaterial`, `podcastEpisode`
 - `url` (string) *(required)*
 
 

@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ final var attributes: Set<Schema.Attribute>
 
 ## See Also
 
-- [var attributesByName: [String : Schema.Attribute]](schema/entity/attributesbyname.md)
+### Managing attributes
+- [var attributesByName: [String : Schema.Attribute]](./attributesbyname.md)
 
 
 ---

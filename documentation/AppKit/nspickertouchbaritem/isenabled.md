@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,10 +16,15 @@
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [func isEnabled(at: Int) -> Bool](nspickertouchbaritem/isenabled(at:).md)
-- [func setEnabled(Bool, at: Int)](nspickertouchbaritem/setenabled(_:at:).md)
+### Configuring picker state
+- [func isEnabled(at: Int) -> Bool](./isenabled%28at%29.md)
+- [func setEnabled(Bool, at: Int)](./setenabled%28_,at%29.md)
 
 
 ---

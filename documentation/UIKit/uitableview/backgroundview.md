@@ -1,7 +1,8 @@
 # backgroundView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background view of the table view.
 
@@ -9,13 +10,17 @@ The background view of the table view.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var backgroundView: UIView? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIView * backgroundView;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ When you assign a view to this property, the table view automatically resizes th
 
 ## See Also
 
-- [var style: UITableView.Style](uitableview/style-swift.property.md)
+### Configuring the table’s appearance
+- [var style: UITableView.Style](./style-swift.property.md)
   The style of the table view.
-- [UITableView.Style](uitableview/style-swift.enum.md)
+- [UITableView.Style](./style-swift.enum.md)
   Constants for the table view styles.
-- [var tableHeaderView: UIView?](uitableview/tableheaderview.md)
+- [var tableHeaderView: UIView?](./tableheaderview.md)
   The view that displays above the table’s content.
-- [var tableFooterView: UIView?](uitableview/tablefooterview.md)
+- [var tableFooterView: UIView?](./tablefooterview.md)
   The view that displays below the table’s content.
 
 

@@ -1,12 +1,13 @@
 # NSRegisterServicesProvider(_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers a service provider.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Registers a service provider.
 func NSRegisterServicesProvider(_ provider: Any?, _ name: NSServiceProviderName)
 ```
 
+```c
+extern void NSRegisterServicesProvider(id provider, NSServiceProviderName name);
+```
+
 #### Discussion
 
 Use this function to register custom services not directly related to your application.
 
-You should not use this function to register the services provided by your application. For your application’s services, you should use the [`servicesProvider`](nsapplication/servicesprovider.md) method of [`NSApplication`](nsapplication.md), passing a non-`nil` argument.
+You should not use this function to register the services provided by your application. For your application’s services, you should use the [`servicesProvider`](./nsapplication/servicesprovider.md) method of [`NSApplication`](./nsapplication.md), passing a non-`nil` argument.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ You should not use this function to register the services provided by your appli
 
 ## See Also
 
-- [func NSUnregisterServicesProvider(NSServiceProviderName)](nsunregisterservicesprovider(_:).md)
+### Registering Services
+- [func NSUnregisterServicesProvider(NSServiceProviderName)](./nsunregisterservicesprovider%28_%29.md)
   Unregisters a service provider.
-- [func NSUpdateDynamicServices()](nsupdatedynamicservices().md)
+- [func NSUpdateDynamicServices()](./nsupdatedynamicservices%28%29.md)
   Causes the services information for the system to be updated.
-- [typealias NSServiceProviderName](nsserviceprovidername.md)
+- [typealias NSServiceProviderName](./nsserviceprovidername.md)
 
 
 ---

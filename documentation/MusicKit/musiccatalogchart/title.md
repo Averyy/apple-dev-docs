@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title for the catalog chart.
 

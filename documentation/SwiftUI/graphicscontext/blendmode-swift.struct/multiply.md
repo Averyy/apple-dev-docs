@@ -1,7 +1,8 @@
 # multiply
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that multiplies the source image samples with the background image samples.
 
@@ -26,11 +27,12 @@ Drawing in this mode results in colors that are at least as dark as either of th
 
 ## See Also
 
-- [static var darken: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/darken.md)
+### Darkening
+- [static var darken: GraphicsContext.BlendMode](./darken.md)
   A mode that creates composite image samples by choosing the darker samples from either the source image or the background.
-- [static var colorBurn: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/colorburn.md)
+- [static var colorBurn: GraphicsContext.BlendMode](./colorburn.md)
   A mode that darkens background image samples to reflect the source image samples.
-- [static var plusDarker: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/plusdarker.md)
+- [static var plusDarker: GraphicsContext.BlendMode](./plusdarker.md)
   A mode that adds the inverse of the color components of the source and background images, and then inverts the result, producing a darkened composite.
 
 

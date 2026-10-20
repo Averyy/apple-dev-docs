@@ -1,17 +1,22 @@
 # ABBeginLoadingImageDataForClient(_:_:_:)
 
 **Framework**: Address Book  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Starts an asynchronous fetch for image data in all locations, and returns a non-zero tag for tracking.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ABBeginLoadingImageDataForClient(_ person: ABPersonRef!, _ callback: ABImageClientCallback!, _ refcon: UnsafeMutableRawPointer!) -> CFIndex
+```
+
+```c
+extern CFIndex ABBeginLoadingImageDataForClient(ABPersonRef person, ABImageClientCallback callback, void *refcon);
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ A non-zero tag for tracking
 
 #### Discussion
 
-Use this function to begin an asynchronous fetch. Implement your callback function to receive the fetched image. Use the [`ABCancelLoadingImageDataForTag(_:)`](abcancelloadingimagedatafortag(_:).md) function to cancel an asynchronous fetch.
+Use this function to begin an asynchronous fetch. Implement your callback function to receive the fetched image. Use the [`ABCancelLoadingImageDataForTag(_:)`](./abcancelloadingimagedatafortag%28_%29.md) function to cancel an asynchronous fetch.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Use this function to begin an asynchronous fetch. Implement your callback functi
 
 ## See Also
 
-- [func ABCancelLoadingImageDataForTag(CFIndex)](abcancelloadingimagedatafortag(_:).md)
+### Images
+- [func ABCancelLoadingImageDataForTag(CFIndex)](./abcancelloadingimagedatafortag%28_%29.md)
   Cancels an asynchronous fetch of an image for the given tag.
 
 

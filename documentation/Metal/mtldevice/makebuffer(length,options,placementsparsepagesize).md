@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new placement sparse buffer of a specific length.
@@ -20,19 +21,23 @@ Creates a new placement sparse buffer of a specific length.
 func makeBuffer(length: Int, options: MTLResourceOptions = [], placementSparsePageSize: MTLSparsePageSize) -> (any MTLBuffer)?
 ```
 
+```objc
+- (id<MTLBuffer>) newBufferWithLength:(NSUInteger) length options:(MTLResourceOptions) options placementSparsePageSize:(MTLSparsePageSize) placementSparsePageSize;
+```
+
 #### Return Value
 
-A [`MTLBuffer`](mtlbuffer.md) instance, or `nil` if the function failed.
+A [`MTLBuffer`](../mtlbuffer.md) instance, or `nil` if the function failed.
 
 #### Discussion
 
-This method creates a new placement sparse [`MTLBuffer`](mtlbuffer.md) of a specific length. You assign memory to placement sparse buffers using a [`MTLHeap`](mtlheap.md) of type [`MTLHeapType.placement`](mtlheaptype/placement.md).
+This method creates a new placement sparse [`MTLBuffer`](../mtlbuffer.md) of a specific length. You assign memory to placement sparse buffers using a [`MTLHeap`](../mtlheap.md) of type [`MTLHeapType.placement`](../mtlheaptype/placement.md).
 
 ## Parameters
 
-- `length`: The size of the [`MTLBuffer`](mtlbuffer.md), in bytes.
-- `options`: A [`MTLResourceOptions`](mtlresourceoptions.md) instance that establishes the buffer’s storage modes.
-- `placementSparsePageSize`: [`MTLSparsePageSize`](mtlsparsepagesize.md) to use for the placement sparse buffer.
+- `length`: The size of the [`MTLBuffer`](../mtlbuffer.md), in bytes.
+- `options`: A [`MTLResourceOptions`](../mtlresourceoptions.md) instance that establishes the buffer’s storage modes.
+- `placementSparsePageSize`: [`MTLSparsePageSize`](../mtlsparsepagesize.md) to use for the placement sparse buffer.
 
 
 ---

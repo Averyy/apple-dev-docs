@@ -1,7 +1,8 @@
 # init(local:stable:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier with both local and stable IDs.
 

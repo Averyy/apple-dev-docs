@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance by decoding from the given decoder.
 
@@ -9,7 +10,7 @@ Creates a new instance by decoding from the given decoder.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,7 +28,8 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [init<T>(T)](anyuseridentity/init(_:).md)
+### Creating a user identity
+- [init<T>(T)](./init%28_%29.md)
   Initializes this type eraser with a user identity to wrap.
 
 

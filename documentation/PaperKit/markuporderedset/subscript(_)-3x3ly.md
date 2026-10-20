@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: PaperKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified position.
 

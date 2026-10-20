@@ -1,7 +1,8 @@
 # SubscriptionGroupLocalizationV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized custom name for a subscription group configured with the v2 API, shown to customers in a specific language.
 
@@ -10,21 +11,21 @@ The localized custom name for a subscription group configured with the v2 API, s
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationV2
 ```
 
 ## Topics
 
 ### Objects and types
-- [object SubscriptionGroupLocalizationV2.Attributes](subscriptiongrouplocalizationv2/attributes-data.dictionary.md)
+- [object SubscriptionGroupLocalizationV2.Attributes](./subscriptiongrouplocalizationv2/attributes-data.dictionary.md)
   Attributes that describe a subscription group localization resource.
-- [object SubscriptionGroupLocalizationV2.Relationships](subscriptiongrouplocalizationv2/relationships-data.dictionary.md)
+- [object SubscriptionGroupLocalizationV2.Relationships](./subscriptiongrouplocalizationv2/relationships-data.dictionary.md)
   The relationship you include in the request and the one on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroupLocalizations`
 - `id` (string) *(required)*
 - `attributes` (SubscriptionGroupLocalizationV2.Attributes)
 - `relationships` (SubscriptionGroupLocalizationV2.Relationships)
@@ -32,13 +33,14 @@ object SubscriptionGroupLocalizationV2
 
 ## See Also
 
-- [object SubscriptionGroupLocalizationV2CreateRequest](subscriptiongrouplocalizationv2createrequest.md)
+### Objects
+- [object SubscriptionGroupLocalizationV2CreateRequest](./subscriptiongrouplocalizationv2createrequest.md)
   The request body you use to create a subscription group localization with the v2 API.
-- [object SubscriptionGroupLocalizationV2Response](subscriptiongrouplocalizationv2response.md)
+- [object SubscriptionGroupLocalizationV2Response](./subscriptiongrouplocalizationv2response.md)
   The response body for endpoints that create, read, or modify a subscription group localization with the v2 API.
-- [object SubscriptionGroupLocalizationV2UpdateRequest](subscriptiongrouplocalizationv2updaterequest.md)
+- [object SubscriptionGroupLocalizationV2UpdateRequest](./subscriptiongrouplocalizationv2updaterequest.md)
   The request body you use to modify a subscription group localization.
-- [object SubscriptionGroupLocalizationsV2Response](subscriptiongrouplocalizationsv2response.md)
+- [object SubscriptionGroupLocalizationsV2Response](./subscriptiongrouplocalizationsv2response.md)
   The response body for endpoints that list subscription group localizations configured with the v2 API.
 
 

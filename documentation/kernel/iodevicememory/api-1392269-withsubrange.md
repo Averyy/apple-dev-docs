@@ -1,14 +1,15 @@
 # withSubRange
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IODeviceMemory> withSubRange(IODeviceMemory *of, IOPhysicalAddress offset, IOPhysicalLength length);
 ```
 

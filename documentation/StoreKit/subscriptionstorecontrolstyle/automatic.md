@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A subscription store control style that resolves its appearance automatically, based on the current context.
 
@@ -21,23 +22,26 @@ A subscription store control style that resolves its appearance automatically, b
 @preconcurrency static var automatic: AutomaticSubscriptionStoreControlStyle { get }
 ```
 
+Available when `Self` is `AutomaticSubscriptionStoreControlStyle`.
+
 #### Discussion
 
-You can also use [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)) with [`automatic`](subscriptionstorecontrolstyle/automatic.md) as the parameter to construct this style.
+You can also use [`subscriptionStoreControlStyle(_:)`](../../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) with [`automatic`](./automatic.md) as the parameter to construct this style.
 
 ## See Also
 
-- [static var buttons: ButtonsSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/buttons.md)
+### Getting built-in subscription store control styles
+- [static var buttons: ButtonsSubscriptionStoreControlStyle](./buttons.md)
   A subscription store control style that displays a subscribe button for each subscription plan.
-- [static var picker: PickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/picker.md)
+- [static var picker: PickerSubscriptionStoreControlStyle](./picker.md)
   A subscription store control style that displays subscription plans as a picker control, with a single button to subscribe.
-- [static var prominentPicker: ProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/prominentpicker.md)
+- [static var prominentPicker: ProminentPickerSubscriptionStoreControlStyle](./prominentpicker.md)
   A subscription store control style that displays subscription plans as a prominent picker control, with a single button to subscribe.
-- [static var pagedPicker: PagedPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedpicker.md)
+- [static var pagedPicker: PagedPickerSubscriptionStoreControlStyle](./pagedpicker.md)
   A subscription store control style that displays subscription plans as a paged picker control, with a single button to subscribe.
-- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedprominentpicker.md)
+- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](./pagedprominentpicker.md)
   A subscription store control style that displays subscription plans as a prominent paged picker control, with a single button to subscribe.
-- [static var compactPicker: CompactPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/compactpicker.md)
+- [static var compactPicker: CompactPickerSubscriptionStoreControlStyle](./compactpicker.md)
   A subscription store control style that displays subscription plans as a compact control, with a single button to subscribe.
 
 

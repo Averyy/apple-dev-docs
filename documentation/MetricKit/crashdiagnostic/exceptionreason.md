@@ -1,7 +1,8 @@
 # exceptionReason
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exception reason for an uncaught ObjC exception.
 
@@ -20,13 +21,14 @@ let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?
 
 ## See Also
 
-- [let exceptionType: Int?](crashdiagnostic/exceptiontype.md)
+### Exception details
+- [let exceptionType: Int?](./exceptiontype.md)
   The name of the Mach exception that terminated the app.
-- [let exceptionCode: UInt64?](crashdiagnostic/exceptioncode.md)
+- [let exceptionCode: UInt64?](./exceptioncode.md)
   Processor specific information about the exception.
-- [let signal: Int?](crashdiagnostic/signal.md)
+- [let signal: Int?](./signal.md)
   The signal associated with this crash.
-- [let virtualMemoryRegionInfo: String?](crashdiagnostic/virtualmemoryregioninfo.md)
+- [let virtualMemoryRegionInfo: String?](./virtualmemoryregioninfo.md)
   Details about memory that the app incorrectly accessed.
 
 

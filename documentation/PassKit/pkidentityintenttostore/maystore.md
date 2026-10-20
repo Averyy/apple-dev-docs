@@ -1,7 +1,8 @@
 # mayStore
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object that indicates your app may store a data element for an indefinite length of time.
 
@@ -17,13 +18,18 @@ An object that indicates your app may store a data element for an indefinite len
 class var mayStore: PKIdentityIntentToStore { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) PKIdentityIntentToStore * mayStoreIntent;
+```
+
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+- [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
 ## See Also
 
-- [class var willNotStore: PKIdentityIntentToStore](pkidentityintenttostore/willnotstore.md)
+### Getting default intents
+- [class var willNotStore: PKIdentityIntentToStore](./willnotstore.md)
   An object that indicates your app won’t store a data element any longer than necessary to complete a request.
 
 

@@ -1,7 +1,8 @@
 # indexBuffer(asIndexType:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -17,17 +18,22 @@
 func indexBuffer(asIndexType indexType: MDLIndexBitDepth) -> any MDLMeshBuffer
 ```
 
+```objc
+- (id<MDLMeshBuffer>) indexBufferAsIndexType:(MDLIndexBitDepth) indexType;
+```
+
 ## See Also
 
-- [var indexBuffer: any MDLMeshBuffer](mdlsubmesh/indexbuffer.md)
+### Working with a Submesh’s Index Buffer
+- [var indexBuffer: any MDLMeshBuffer](./indexbuffer.md)
   An object that provides index data for the submesh.
-- [var indexCount: Int](mdlsubmesh/indexcount.md)
+- [var indexCount: Int](./indexcount.md)
   The number of indices in the submesh’s index buffer.
-- [var indexType: MDLIndexBitDepth](mdlsubmesh/indextype.md)
+- [var indexType: MDLIndexBitDepth](./indextype.md)
   The data type for each element in the submesh’s index buffer.
-- [var geometryType: MDLGeometryType](mdlsubmesh/geometrytype.md)
+- [var geometryType: MDLGeometryType](./geometrytype.md)
   The type of geometric primitives described by the submesh’s index buffer.
-- [var topology: MDLSubmeshTopology?](mdlsubmesh/topology.md)
+- [var topology: MDLSubmeshTopology?](./topology.md)
   A description of how the non-uniform layout of the submesh’s index buffer defines the shape of the mesh.
 
 

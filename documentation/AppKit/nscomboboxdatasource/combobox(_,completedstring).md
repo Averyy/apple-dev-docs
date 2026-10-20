@@ -1,18 +1,23 @@
 # comboBox(_:completedString:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first item from the pop-up list that starts with the text the user has typed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func comboBox(_ comboBox: NSComboBox, completedString string: String) -> String?
+```
+
+```objc
+- (NSString *) comboBox:(NSComboBox *) comboBox completedString:(NSString *) string;
 ```
 
 #### Return Value
@@ -32,11 +37,12 @@ This method is optional. If you don’t implement it, the receiver does not perf
 
 ## See Also
 
-- [func comboBox(NSComboBox, indexOfItemWithStringValue: String) -> Int](nscomboboxdatasource/combobox(_:indexofitemwithstringvalue:).md)
+### Instance Methods
+- [func comboBox(NSComboBox, indexOfItemWithStringValue: String) -> Int](./combobox%28_,indexofitemwithstringvalue%29.md)
   Returns the index of the combo box item matching the specified string.
-- [func comboBox(NSComboBox, objectValueForItemAt: Int) -> Any?](nscomboboxdatasource/combobox(_:objectvalueforitemat:).md)
+- [func comboBox(NSComboBox, objectValueForItemAt: Int) -> Any?](./combobox%28_,objectvalueforitemat%29.md)
   Returns the object that corresponds to the item at the specified index in the combo box.
-- [func numberOfItems(in: NSComboBox) -> Int](nscomboboxdatasource/numberofitems(in:).md)
+- [func numberOfItems(in: NSComboBox) -> Int](./numberofitems%28in%29.md)
   Returns the number of items that the data source manages for the combo box.
 
 

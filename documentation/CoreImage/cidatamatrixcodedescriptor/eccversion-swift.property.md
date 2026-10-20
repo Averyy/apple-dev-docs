@@ -1,7 +1,8 @@
 # eccVersion
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error correction version of the Data Matrix code symbol.
 
@@ -19,17 +20,22 @@ The error correction version of the Data Matrix code symbol.
 var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion { get }
 ```
 
+```objc
+@property (readonly) CIDataMatrixCodeECCVersion eccVersion;
+```
+
 #### Discussion
 
-The possible error correction version are enumerated in [`CIDataMatrixCodeDescriptor.ECCVersion`](cidatamatrixcodedescriptor/eccversion-swift.enum.md). Any symbol with an even number of rows and columns will be ECC 200.
+The possible error correction version are enumerated in [`CIDataMatrixCodeDescriptor.ECCVersion`](./eccversion-swift.enum.md). Any symbol with an even number of rows and columns will be ECC 200.
 
 ## See Also
 
-- [var errorCorrectedPayload: Data](cidatamatrixcodedescriptor/errorcorrectedpayload-swift.property.md)
+### Examining a Descriptor
+- [var errorCorrectedPayload: Data](./errorcorrectedpayload-swift.property.md)
   The error-corrected payload containing the data encoded in the Data Matrix code symbol.
-- [var rowCount: Int](cidatamatrixcodedescriptor/rowcount-swift.property.md)
+- [var rowCount: Int](./rowcount-swift.property.md)
   The number of rows in the Data Matrix code symbol.
-- [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
+- [var columnCount: Int](./columncount-swift.property.md)
   The number of columns in the Data Matrix code symbol.
 
 

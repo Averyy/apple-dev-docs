@@ -1,7 +1,8 @@
 # attestationObject
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attestation object for this passkey.
 
@@ -18,17 +19,22 @@ The attestation object for this passkey.
 var attestationObject: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * attestationObject;
+```
+
 #### Discussion
 
 The relying party may use information in the attestation object to assess the origin of a passkey during registration.
 
 ## See Also
 
-- [var clientDataHash: Data](aspasskeyregistrationcredential/clientdatahash.md)
+### Accessing credential information
+- [var clientDataHash: Data](./clientdatahash.md)
   A hash of the client data for this credential.
-- [var credentialID: Data](aspasskeyregistrationcredential/credentialid.md)
+- [var credentialID: Data](./credentialid.md)
   The identifier for this credential.
-- [var relyingParty: String](aspasskeyregistrationcredential/relyingparty.md)
+- [var relyingParty: String](./relyingparty.md)
   The relying party associated with this passkey.
 
 

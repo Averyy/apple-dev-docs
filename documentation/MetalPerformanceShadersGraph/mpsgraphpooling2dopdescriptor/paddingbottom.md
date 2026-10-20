@@ -1,7 +1,8 @@
 # paddingBottom
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the explicit padding value for the height dimension to add after the data.
 
@@ -17,6 +18,10 @@ Defines the explicit padding value for the height dimension to add after the dat
 
 ```swift
 var paddingBottom: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingBottom;
 ```
 
 #### Discussion

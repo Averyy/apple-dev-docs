@@ -1,7 +1,8 @@
 # certificateValidator(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a closure to provide custom verification of the peer’s credentials during the DTLS handshake.
 

@@ -1,7 +1,8 @@
 # errSecOCSPSignatureError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) response has an invalid signature.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) response has an invalid signature.
 
 ```swift
 var errSecOCSPSignatureError: OSStatus { get }
+```
+
+```c
+errSecOCSPSignatureError
 ```
 
 

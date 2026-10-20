@@ -1,7 +1,8 @@
 # GameCenterScoreModerationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Game Center score moderation you update.
 
@@ -10,7 +11,7 @@ The attributes that describe a Game Center score moderation you update.
 
 ## Declaration
 
-```swift
+```
 object GameCenterScoreModerationUpdateRequest.Data.Attributes
 ```
 

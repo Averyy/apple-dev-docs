@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the input provides analog values.
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the input provides analog values.
 var isAnalog: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isAnalog) BOOL analog;
+```
+
 ## See Also
 
-- [var canWrap: Bool](gcaxisinput/canwrap.md)
+### Getting the characteristics
+- [var canWrap: Bool](./canwrap.md)
   A Boolean value that indicates whether the value wraps when it reaches the range’s minimum or maximum value.
 
 

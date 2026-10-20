@@ -1,28 +1,30 @@
 # metaPointer
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSMetaClass ** metaPointer;
 ```
 
 ## See Also
 
-- [New](osclassloadinformation/new.md)
-- [description](osclassloadinformation/description.md)
-- [instanceSize](osclassloadinformation/instancesize.md)
-- [resv2](osclassloadinformation/resv2.md)
-- [resv3](osclassloadinformation/resv3.md)
-- [version](osclassloadinformation/version.md)
+### Getting the Properties
+- [New](./new.md)
+- [description](./description.md)
+- [instanceSize](./instancesize.md)
+- [resv2](./resv2.md)
+- [resv3](./resv3.md)
+- [version](./version.md)
 
 
 ---

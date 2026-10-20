@@ -1,14 +1,15 @@
 # audit
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 audit_token_t audit;
 ```
 

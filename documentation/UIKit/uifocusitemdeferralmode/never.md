@@ -1,7 +1,8 @@
 # UIFocusItemDeferralMode.never
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Never defer focus for this item. When a programmatic focus update lands on this item, it will always be and appear focused even if focus deferral is currently enabled.
 
@@ -16,6 +17,10 @@ Never defer focus for this item. When a programmatic focus update lands on this 
 
 ```swift
 case never
+```
+
+```c
+UIFocusItemDeferralModeNever
 ```
 
 

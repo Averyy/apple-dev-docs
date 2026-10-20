@@ -1,11 +1,12 @@
 # PDFAnnotation Implementations
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(dictionary: [AnyHashable : Any], forPage: PDFPage?)](pdfannotation/init(dictionary:forpage:).md)
+- [convenience init(dictionary: [AnyHashable : Any], forPage: PDFPage?)](./init%28dictionary,forpage%29.md)
 
 
 ---

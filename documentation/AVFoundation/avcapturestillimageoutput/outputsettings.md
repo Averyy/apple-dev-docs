@@ -1,15 +1,18 @@
 # outputSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compression settings for the output.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
+- iOS 4.0+ - Deprecated in 10.0
+- iPadOS 4.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.7+ - Deprecated in 10.15
+
+> **Deprecated**: Use AVCapturePhotoOutput instead.
 
 ## Declaration
 
@@ -17,23 +20,28 @@ The compression settings for the output.
 var outputSettings: [String : Any] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSDictionary<NSString *,id> * outputSettings;
+```
+
 #### Discussion
 
-Use [`availableImageDataCVPixelFormatTypes`](avcapturestillimageoutput/availableimagedatacvpixelformattypes.md) and [`availableImageDataCodecTypes`](avcapturestillimageoutput/availableimagedatacodectypes.md) to determine what codec keys and pixel formats are supported.
+Use [`availableImageDataCVPixelFormatTypes`](./availableimagedatacvpixelformattypes.md) and [`availableImageDataCodecTypes`](./availableimagedatacodectypes.md) to determine what codec keys and pixel formats are supported.
 
-In iOS, the only currently supported keys are [`AVVideoCodecKey`](avvideocodeckey.md) and [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey). These keys are mutually exclusive—only one may be present. The recommended values are [`kCMVideoCodecType_JPEG`](https://developer.apple.com/documentation/coremedia/kcmvideocodectype_jpeg) for [`AVVideoCodecKey`](avvideocodeckey.md) and [`kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8biplanarfullrange) and [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra) for [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey).
+In iOS, the only currently supported keys are [`AVVideoCodecKey`](../avvideocodeckey.md) and [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md). These keys are mutually exclusive—only one may be present. The recommended values are [`kCMVideoCodecType_JPEG`](../../CoreMedia/kcmvideocodectype_jpeg.md) for [`AVVideoCodecKey`](../avvideocodeckey.md) and [`kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`](../../CoreVideo/kcvpixelformattype_420ypcbcr8biplanarfullrange.md) and [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md) for [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md).
 
-In iOS 6.0 and later, the [`AVVideoQualityKey`](avvideoqualitykey.md) is supported, and may only be used when [`AVVideoCodecKey`](avvideocodeckey.md) is set to [`AVVideoCodecJPEG`](avvideocodecjpeg.md).
+In iOS 6.0 and later, the [`AVVideoQualityKey`](../avvideoqualitykey.md) is supported, and may only be used when [`AVVideoCodecKey`](../avvideocodeckey.md) is set to [`AVVideoCodecJPEG`](../avvideocodecjpeg.md).
 
 ## See Also
 
-- [var isHighResolutionStillImageOutputEnabled: Bool](avcapturestillimageoutput/ishighresolutionstillimageoutputenabled.md)
+### Configuring image settings
+- [var isHighResolutionStillImageOutputEnabled: Bool](./ishighresolutionstillimageoutputenabled.md)
   A Boolean value that indicates whether the receiver should emit still images at the highest resolution supported by its source `AVCaptureDevice` objects `activeFormat` property.
-- [var availableImageDataCVPixelFormatTypes: [NSNumber]](avcapturestillimageoutput/availableimagedatacvpixelformattypes.md)
+- [var availableImageDataCVPixelFormatTypes: [NSNumber]](./availableimagedatacvpixelformattypes.md)
   The supported image pixel formats that can be specified as output settings.
-- [var availableImageDataCodecTypes: [AVVideoCodecType]](avcapturestillimageoutput/availableimagedatacodectypes.md)
+- [var availableImageDataCodecTypes: [AVVideoCodecType]](./availableimagedatacodectypes.md)
   The supported image codec formats that can be specified as output settings.
-- [Video settings](video-settings.md)
+- [Video settings](../video-settings.md)
   Configure video processing settings using standard key and value constants.
 
 

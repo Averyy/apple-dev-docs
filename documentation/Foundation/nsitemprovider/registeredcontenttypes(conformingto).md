@@ -1,7 +1,8 @@
 # registeredContentTypes(conformingTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of registered content types that conform to a specified content type.
 
@@ -20,6 +21,10 @@ Returns an array of registered content types that conform to a specified content
 func registeredContentTypes(conformingTo contentType: UTType) -> [UTType]
 ```
 
+```objc
+- (NSArray<UTType *> *) registeredContentTypesConformingToContentType:(UTType *) contentType;
+```
+
 #### Return Value
 
 An array of registered content types.
@@ -30,9 +35,10 @@ An array of registered content types.
 
 ## See Also
 
-- [var registeredContentTypes: [UTType]](nsitemprovider/registeredcontenttypes.md)
+### Registering content types
+- [var registeredContentTypes: [UTType]](./registeredcontenttypes.md)
   Registered content types in the order the app registers each type.
-- [var registeredContentTypesForOpenInPlace: [UTType]](nsitemprovider/registeredcontenttypesforopeninplace.md)
+- [var registeredContentTypesForOpenInPlace: [UTType]](./registeredcontenttypesforopeninplace.md)
   Registered content types that the system can load as open-in-place files.
 
 

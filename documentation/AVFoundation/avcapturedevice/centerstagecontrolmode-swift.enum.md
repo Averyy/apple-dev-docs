@@ -1,7 +1,8 @@
 # AVCaptureDevice.CenterStageControlMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the current Center Stage control mode.
 
@@ -18,37 +19,42 @@ Constants that indicate the current Center Stage control mode.
 enum CenterStageControlMode
 ```
 
+```c
+enum AVCaptureCenterStageControlMode : NSInteger;
+```
+
 ## Topics
 
 ### Control modes
-- [AVCaptureDevice.CenterStageControlMode.user](avcapturedevice/centerstagecontrolmode-swift.enum/user.md)
+- [AVCaptureDevice.CenterStageControlMode.user](./centerstagecontrolmode-swift.enum/user.md)
   The user controls Center Stage.
-- [AVCaptureDevice.CenterStageControlMode.app](avcapturedevice/centerstagecontrolmode-swift.enum/app.md)
+- [AVCaptureDevice.CenterStageControlMode.app](./centerstagecontrolmode-swift.enum/app.md)
   The app controls Center Stage.
-- [AVCaptureDevice.CenterStageControlMode.cooperative](avcapturedevice/centerstagecontrolmode-swift.enum/cooperative.md)
+- [AVCaptureDevice.CenterStageControlMode.cooperative](./centerstagecontrolmode-swift.enum/cooperative.md)
   A user and app cooperatively share control of Center Stage.
 ### Initializers
-- [init?(rawValue: Int)](avcapturedevice/centerstagecontrolmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./centerstagecontrolmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isCenterStageActive: Bool](avcapturedevice/iscenterstageactive.md)
+### Configuring Center Stage
+- [var isCenterStageActive: Bool](./iscenterstageactive.md)
   A Boolean value that indicates whether Center Stage is active on a device.
-- [class var isCenterStageEnabled: Bool](avcapturedevice/iscenterstageenabled.md)
+- [class var isCenterStageEnabled: Bool](./iscenterstageenabled.md)
   A Boolean value that indicates whether a user or an app enabled Center Stage on a device.
-- [var centerStageRectOfInterest: CGRect](avcapturedevice/centerstagerectofinterest.md)
+- [var centerStageRectOfInterest: CGRect](./centerstagerectofinterest.md)
   The effective region within the output pixel buffer to perform Center Stage framing.
-- [class var centerStageControlMode: AVCaptureDevice.CenterStageControlMode](avcapturedevice/centerstagecontrolmode-swift.type.property.md)
+- [class var centerStageControlMode: AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.type.property.md)
   A value that indicates the current mode of Center Stage control.
 
 

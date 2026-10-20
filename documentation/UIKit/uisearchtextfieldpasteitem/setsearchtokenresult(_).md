@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets a paste item’s search token from an item provider.
@@ -16,6 +17,10 @@ Sets a paste item’s search token from an item provider.
 
 ```swift
 func setSearchTokenResult(_ token: UISearchToken)
+```
+
+```objc
+- (void) setSearchTokenResult:(UISearchToken *) token;
 ```
 
 ## Parameters

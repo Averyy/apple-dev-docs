@@ -1,14 +1,15 @@
 # main_cpu_number
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int32_t main_cpu_number;
 ```
 

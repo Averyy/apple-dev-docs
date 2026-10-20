@@ -1,13 +1,14 @@
 # isEndpointAvailable
 
 **Framework**: Spatial Preview  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether a connected device endpoint is currently connected.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

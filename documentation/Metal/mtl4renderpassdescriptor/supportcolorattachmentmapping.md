@@ -1,7 +1,8 @@
 # supportColorAttachmentMapping
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls if the render pass supports color attachment mapping.
 
@@ -17,6 +18,10 @@ Controls if the render pass supports color attachment mapping.
 
 ```swift
 var supportColorAttachmentMapping: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL supportColorAttachmentMapping;
 ```
 
 

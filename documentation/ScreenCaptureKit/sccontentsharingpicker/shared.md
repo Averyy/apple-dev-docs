@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system-provided picker UI instance for capturing display and audio content from someone’s Mac.
 
@@ -17,6 +18,10 @@ The system-provided picker UI instance for capturing display and audio content f
 
 ```swift
 class var shared: SCContentSharingPicker { get }
+```
+
+```objc
+@property (class, readonly) SCContentSharingPicker * sharedPicker;
 ```
 
 #### Discussion

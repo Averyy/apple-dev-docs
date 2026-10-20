@@ -1,7 +1,8 @@
 # asKeyedArchive
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to read data from the pasteboard and use it to initialize the object.
 
@@ -14,17 +15,22 @@ An option to read data from the pasteboard and use it to initialize the object.
 static var asKeyedArchive: NSPasteboard.ReadingOptions { get }
 ```
 
+```c
+NSPasteboardReadingAsKeyedArchive
+```
+
 #### Discussion
 
-AppKit initializes the object using its [`init(coder:)`](https://developer.apple.com/documentation/foundation/nscoding/init(coder:)) method.
+AppKit initializes the object using its [`init(coder:)`](../../../Foundation/nscoding/init%28coder%29.md) method.
 
 ## See Also
 
-- [static var asData: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/asdata.md)
+### Options
+- [static var asData: NSPasteboard.ReadingOptions](./asdata.md)
   An option to read data from the pasteboard as-is and return it as a data object.
-- [static var asString: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/asstring.md)
+- [static var asString: NSPasteboard.ReadingOptions](./asstring.md)
   An option to read data from the pasteboard and convert it to a string object.
-- [static var asPropertyList: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/aspropertylist.md)
+- [static var asPropertyList: NSPasteboard.ReadingOptions](./aspropertylist.md)
   An option to read data from the pasteboard and unserialize it as a property list.
 
 

@@ -1,7 +1,8 @@
 # currentProductID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription product ID that the customer is subscribed to.
 

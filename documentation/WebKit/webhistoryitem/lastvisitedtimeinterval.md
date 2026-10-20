@@ -1,12 +1,13 @@
 # lastVisitedTimeInterval
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The last time and date the receiver’s page was visited.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The last time and date the receiver’s page was visited.
 var lastVisitedTimeInterval: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval lastVisitedTimeInterval;
+```
+
 #### Discussion
 
-The interval is from a reference date as determined by [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate).
+The interval is from a reference date as determined by [`NSDate`](../../Foundation/nsdate.md).
 
 ## See Also
 
-- [var icon: NSImage!](webhistoryitem/icon.md)
+### Getting other attributes
+- [var icon: NSImage!](./icon.md)
   The icon for the receiver’s page, or `nil` if none exists.
 
 

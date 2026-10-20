@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional identifier for the region.
 
@@ -9,7 +10,7 @@ An optional identifier for the region.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ An optional identifier for the region.
 
 #### Discussion
 
-Use this value to identify the [`UIPointerRegion`](uipointerregion.md) in subsequent pointer interaction delegate calls.
+Use this value to identify the [`UIPointerRegion`](../uipointerregion.md) in subsequent pointer interaction delegate calls.
 
 ## See Also
 
-- [var rect: CGRect](uipointerregion/rect.md)
+### Configuring a region
+- [var rect: CGRect](./rect.md)
   The rectangle bounds of the region.
-- [var latchingAxes: UIAxis](uipointerregion/latchingaxes.md)
+- [var latchingAxes: UIAxis](./latchingaxes.md)
   Axes along which the region latches after a primary click.
 
 

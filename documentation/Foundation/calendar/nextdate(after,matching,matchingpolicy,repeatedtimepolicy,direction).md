@@ -1,7 +1,8 @@
 # nextDate(after:matching:matchingPolicy:repeatedTimePolicy:direction:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the next date which matches (or most closely matches) a given set of components.
 
@@ -38,13 +39,14 @@ The general semantics follow those of the `enumerateDates` function. To compute 
 
 ## See Also
 
-- [func startOfDay(for: Date) -> Date](calendar/startofday(for:).md)
+### Scanning Dates
+- [func startOfDay(for: Date) -> Date](./startofday%28for%29.md)
   Returns the first moment of a given Date, as a Date.
-- [func enumerateDates(startingAfter: Date, matching: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection, using: (Date?, Bool, inout Bool) -> Void)](calendar/enumeratedates(startingafter:matching:matchingpolicy:repeatedtimepolicy:direction:using:).md)
+- [func enumerateDates(startingAfter: Date, matching: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection, using: (Date?, Bool, inout Bool) -> Void)](./enumeratedates%28startingafter,matching,matchingpolicy,repeatedtimepolicy,direction,using%29.md)
   Computes the dates which match (or most closely match) a given set of components, and calls the closure once for each of them, until the enumeration is stopped.
-- [Calendar.MatchingPolicy](calendar/matchingpolicy.md)
+- [Calendar.MatchingPolicy](./matchingpolicy.md)
   A hint to the search algorithm to control the method used for searching for dates.
-- [Calendar.RepeatedTimePolicy](calendar/repeatedtimepolicy.md)
+- [Calendar.RepeatedTimePolicy](./repeatedtimepolicy.md)
   Determines which result to use when a time is repeated on a day in a calendar (for example, during a daylight saving transition when the times between 2:00am and 3:00am may happen twice).
 
 

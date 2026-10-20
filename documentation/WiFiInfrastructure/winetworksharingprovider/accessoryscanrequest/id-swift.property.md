@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable identifier that uniquely identifies this scan request.
 
@@ -22,7 +23,8 @@ The identifier is unique per accessory and per app extension launch.
 
 ## See Also
 
-- [WINetworkSharingProvider.AccessoryScanRequest.ID](winetworksharingprovider/accessoryscanrequest/id-swift.typealias.md)
+### Identifying a scan request
+- [WINetworkSharingProvider.AccessoryScanRequest.ID](./id-swift.typealias.md)
   The type of value that uniquely identifies this scan request.
 
 

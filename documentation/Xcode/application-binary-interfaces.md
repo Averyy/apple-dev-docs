@@ -11,18 +11,19 @@ The CPUs found in Apple products define rules for how to call functions, manage 
 ## Topics
 
 ### 64-bit interfaces
-- [Writing ARM64 code for Apple platforms](writing-arm64-code-for-apple-platforms.md)
+- [Writing ARM64 code for Apple platforms](./writing-arm64-code-for-apple-platforms.md)
   Create 64-bit ARM assembly language instructions that adhere to the application binary interface (ABI) that Apple platforms support.
-- [Writing 64-bit Intel code for Apple Platforms](writing-64-bit-intel-code-for-apple-platforms.md)
+- [Writing 64-bit Intel code for Apple Platforms](./writing-64-bit-intel-code-for-apple-platforms.md)
   Create 64-bit Intel assembly language instructions that adhere to the application binary interface (ABI) that Apple platforms support.
 ### iOS interfaces
-- [Writing ARMv7 code for iOS](writing-armv7-code-for-ios.md)
+- [Writing ARMv7 code for iOS](./writing-armv7-code-for-ios.md)
   Create ARMv7 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
-- [Writing ARMv6 code for iOS](writing-armv6-code-for-ios.md)
+- [Writing ARMv6 code for iOS](./writing-armv6-code-for-ios.md)
   Create ARMv6 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
 
 ## See Also
 
+### Hardware considerations
 - [Apple silicon](../apple-silicon/apple-silicon.md)
   Get the resources you need to create software for Macs with Apple silicon.
 

@@ -1,7 +1,8 @@
 # directionality
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directionality of this stream, either bidirectional or unidirectional.
 

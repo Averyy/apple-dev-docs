@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,21 +18,21 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kCSRStateAtn](1645959-anonymous/kcsrstateatn.md)
-- [kCSRStateBusDepend](1645959-anonymous/kcsrstatebusdepend.md)
-- [kCSRStateBusDependPhase](1645959-anonymous/kcsrstatebusdependphase.md)
-- [kCSRStateDReq](1645959-anonymous/kcsrstatedreq.md)
-- [kCSRStateELog](1645959-anonymous/kcsrstateelog.md)
-- [kCSRStateLost](1645959-anonymous/kcsrstatelost.md)
-- [kCSRStateOff](1645959-anonymous/kcsrstateoff.md)
-- [kCSRStateState](1645959-anonymous/kcsrstatestate.md)
-- [kCSRStateStateDead](1645959-anonymous/kcsrstatestatedead.md)
-- [kCSRStateStateInitializing](1645959-anonymous/kcsrstatestateinitializing.md)
-- [kCSRStateStatePhase](1645959-anonymous/kcsrstatestatephase.md)
-- [kCSRStateStateRunning](1645959-anonymous/kcsrstatestaterunning.md)
-- [kCSRStateStateTesting](1645959-anonymous/kcsrstatestatetesting.md)
-- [kCSRStateUnitDepend](1645959-anonymous/kcsrstateunitdepend.md)
-- [kCSRStateUnitDependPhase](1645959-anonymous/kcsrstateunitdependphase.md)
+- [kCSRStateAtn](./api-1645959-anonymous/kcsrstateatn.md)
+- [kCSRStateBusDepend](./api-1645959-anonymous/kcsrstatebusdepend.md)
+- [kCSRStateBusDependPhase](./api-1645959-anonymous/kcsrstatebusdependphase.md)
+- [kCSRStateDReq](./api-1645959-anonymous/kcsrstatedreq.md)
+- [kCSRStateELog](./api-1645959-anonymous/kcsrstateelog.md)
+- [kCSRStateLost](./api-1645959-anonymous/kcsrstatelost.md)
+- [kCSRStateOff](./api-1645959-anonymous/kcsrstateoff.md)
+- [kCSRStateState](./api-1645959-anonymous/kcsrstatestate.md)
+- [kCSRStateStateDead](./api-1645959-anonymous/kcsrstatestatedead.md)
+- [kCSRStateStateInitializing](./api-1645959-anonymous/kcsrstatestateinitializing.md)
+- [kCSRStateStatePhase](./api-1645959-anonymous/kcsrstatestatephase.md)
+- [kCSRStateStateRunning](./api-1645959-anonymous/kcsrstatestaterunning.md)
+- [kCSRStateStateTesting](./api-1645959-anonymous/kcsrstatestatetesting.md)
+- [kCSRStateUnitDepend](./api-1645959-anonymous/kcsrstateunitdepend.md)
+- [kCSRStateUnitDependPhase](./api-1645959-anonymous/kcsrstateunitdependphase.md)
 
 
 ---

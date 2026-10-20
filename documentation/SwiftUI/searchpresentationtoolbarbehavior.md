@@ -1,7 +1,8 @@
 # SearchPresentationToolbarBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines how the toolbar behaves when presenting search.
 
@@ -22,19 +23,20 @@ struct SearchPresentationToolbarBehavior
 
 #### Overview
 
-Use this type in combination with the [`searchPresentationToolbarBehavior(_:)`](view/searchpresentationtoolbarbehavior(_:).md)
+Use this type in combination with the [`searchPresentationToolbarBehavior(_:)`](./view/searchpresentationtoolbarbehavior%28_%29.md)
 
 ## Topics
 
 ### Getting toolbar behaviors
-- [static var automatic: SearchPresentationToolbarBehavior](searchpresentationtoolbarbehavior/automatic.md)
+- [static var automatic: SearchPresentationToolbarBehavior](./searchpresentationtoolbarbehavior/automatic.md)
   The automatic behavior.
-- [static var avoidHidingContent: SearchPresentationToolbarBehavior](searchpresentationtoolbarbehavior/avoidhidingcontent.md)
+- [static var avoidHidingContent: SearchPresentationToolbarBehavior](./searchpresentationtoolbarbehavior/avoidhidingcontent.md)
   The avoid hiding content behavior.
 
 ## See Also
 
-- [func searchPresentationToolbarBehavior(SearchPresentationToolbarBehavior) -> some View](view/searchpresentationtoolbarbehavior(_:).md)
+### Displaying toolbar content during search
+- [func searchPresentationToolbarBehavior(SearchPresentationToolbarBehavior) -> some View](./view/searchpresentationtoolbarbehavior%28_%29.md)
   Configures the search toolbar presentation behavior for any searchable modifiers within this view.
 
 

@@ -1,7 +1,8 @@
 # arrayView(withShape:strides:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func arrayView(withShape shape: [NSNumber]?, strides: [NSNumber]) -> MPSNDArray?
+```
+
+```objc
+- (MPSNDArray *) arrayViewWithShape:(MPSShape *) shape strides:(MPSShape *) strides;
 ```
 
 

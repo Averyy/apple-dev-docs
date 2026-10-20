@@ -1,10 +1,11 @@
 # init(options:maxResults:deviceAttributeCount:attributeList:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

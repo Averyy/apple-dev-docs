@@ -1,17 +1,18 @@
 # EKEventAvailability
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The event’s availability setting for scheduling purposes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,35 +20,40 @@ The event’s availability setting for scheduling purposes.
 enum EKEventAvailability
 ```
 
+```c
+enum EKEventAvailability : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKEventAvailability.notSupported](ekeventavailability/notsupported.md)
+- [EKEventAvailability.notSupported](./ekeventavailability/notsupported.md)
   Availability settings are not supported by the event’s calendar.
-- [EKEventAvailability.busy](ekeventavailability/busy.md)
+- [EKEventAvailability.busy](./ekeventavailability/busy.md)
   The event has a busy availability setting.
-- [EKEventAvailability.free](ekeventavailability/free.md)
+- [EKEventAvailability.free](./ekeventavailability/free.md)
   The event has a free availability setting.
-- [EKEventAvailability.tentative](ekeventavailability/tentative.md)
+- [EKEventAvailability.tentative](./ekeventavailability/tentative.md)
   The event has a tentative availability setting.
-- [EKEventAvailability.unavailable](ekeventavailability/unavailable.md)
+- [EKEventAvailability.unavailable](./ekeventavailability/unavailable.md)
   The event has an unavailable availability setting.
 ### Initializers
-- [init?(rawValue: Int)](ekeventavailability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekeventavailability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum EKEventStatus](ekeventstatus.md)
+### Scheduling Events
+- [enum EKEventStatus](./ekeventstatus.md)
   The event’s status.
 
 

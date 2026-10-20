@@ -1,7 +1,8 @@
 # init(named:fromURL:duration:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action of the given name from an action file with a new duration.
 

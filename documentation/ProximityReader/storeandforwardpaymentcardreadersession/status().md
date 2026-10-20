@@ -1,7 +1,8 @@
 # status()
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the merchant to check the status of the Store and Forward session.
 
@@ -18,11 +19,11 @@ func status() async throws -> StoreAndForwardStatus
 
 #### Return Value
 
-[`StoreAndForwardStatus`](storeandforwardstatus.md) when successful.
+[`StoreAndForwardStatus`](../storeandforwardstatus.md) when successful.
 
 #### Discussion
 
-> **Note**: This method throws a `ReadError` if status cannot be retrieved.
+> **Throws**: This method throws a `ReadError` if status cannot be retrieved.
 
 
 ---

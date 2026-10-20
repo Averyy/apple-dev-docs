@@ -1,7 +1,8 @@
 # CSSM_ACL_AUTHORIZATION_ANY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ACL_AUTHORIZATION_ANY: Int { get }
+```
+
+```c
+CSSM_ACL_AUTHORIZATION_ANY
 ```
 
 

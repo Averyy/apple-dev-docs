@@ -1,7 +1,8 @@
 # uiView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UIKit view to host in an AppKit toolbar.
 
@@ -12,6 +13,10 @@ The UIKit view to host in an AppKit toolbar.
 
 ```swift
 var uiView: UIView { get set }
+```
+
+```objc
+@property (nonatomic, strong, setter=setUIView:) UIView * uiView;
 ```
 
 

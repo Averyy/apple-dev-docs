@@ -1,17 +1,22 @@
 # keyUp(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the receiver that the user has released a key.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func keyUp(with event: NSEvent)
+```
+
+```objc
+- (void) keyUp:(NSEvent *) event;
 ```
 
 #### Discussion
@@ -24,13 +29,14 @@ The default implementation simply passes this message to the next responder.
 
 ## See Also
 
-- [func keyDown(with: NSEvent)](nsresponder/keydown(with:).md)
+### Responding to Key Events
+- [func keyDown(with: NSEvent)](./keydown%28with%29.md)
   Informs the receiver that the user has pressed a key.
-- [func interpretKeyEvents([NSEvent])](nsresponder/interpretkeyevents(_:).md)
+- [func interpretKeyEvents([NSEvent])](./interpretkeyevents%28_%29.md)
   Handles a series of key events.
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nsresponder/performkeyequivalent(with:).md)
+- [func performKeyEquivalent(with: NSEvent) -> Bool](./performkeyequivalent%28with%29.md)
   Handle a key equivalent.
-- [func flushBufferedKeyEvents()](nsresponder/flushbufferedkeyevents.md)
+- [func flushBufferedKeyEvents()](./flushbufferedkeyevents%28%29.md)
   Clears any unprocessed key events when overridden by subclasses.
 
 

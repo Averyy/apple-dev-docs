@@ -1,7 +1,8 @@
 # AudioFormatFlags
 
 **Framework**: Core Audio Types  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type definition for audio format flags.
 
@@ -20,21 +21,26 @@ A type definition for audio format flags.
 typealias AudioFormatFlags = UInt32
 ```
 
+```c
+typedef UInt32 AudioFormatFlags;
+```
+
 ## See Also
 
-- [struct AudioStreamBasicDescription](audiostreambasicdescription.md)
+### Streams
+- [struct AudioStreamBasicDescription](./audiostreambasicdescription.md)
   A format specification for an audio stream.
-- [struct AudioStreamPacketDescription](audiostreampacketdescription.md)
+- [struct AudioStreamPacketDescription](./audiostreampacketdescription.md)
   A value that describes a packet in a buffer of audio data.
-- [Audio Format Flags](audio-format-flags.md)
+- [Audio Format Flags](./audio-format-flags.md)
   Commonly used combinations of data format flags for an audio stream description.
-- [typealias AudioFormatID](audioformatid.md)
+- [typealias AudioFormatID](./audioformatid.md)
   A type definition for audio format identifiers.
-- [Audio Format Identifiers](audio-format-identifiers.md)
+- [Audio Format Identifiers](./audio-format-identifiers.md)
   Identifiers for supported audio formats.
-- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](./kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
-- [enum MPEG4ObjectID](mpeg4objectid.md)
+- [enum MPEG4ObjectID](./mpeg4objectid.md)
   Constants that define the type of MPEG-4 audio data.
 
 

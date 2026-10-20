@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view with the specified frame rectangle.
 
@@ -9,7 +10,7 @@ Creates a progress view with the specified frame rectangle.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a progress view with the specified frame rectangle.
 init(frame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame;
+```
+
 ## See Also
 
-- [convenience init(progressViewStyle: UIProgressView.Style)](uiprogressview/init(progressviewstyle:).md)
+### Creating a progress view
+- [convenience init(progressViewStyle: UIProgressView.Style)](./init%28progressviewstyle%29.md)
   Creates a progress view with the specified style.
-- [init?(coder: NSCoder)](uiprogressview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a progress view from data in an unarchiver.
 
 

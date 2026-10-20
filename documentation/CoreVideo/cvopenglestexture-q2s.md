@@ -1,6 +1,7 @@
 # CVOpenGLESTexture
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 A texture-based image buffer that supplies source image data to OpenGL ES.
 
@@ -11,23 +12,24 @@ Core Video OpenGL ES textures are texture-based image buffers the system uses to
 ## Topics
 
 ### Inspecting Textures
-- [func CVOpenGLESTextureGetTarget(CVOpenGLESTexture) -> GLenum](cvopenglestexturegettarget(_:).md)
+- [func CVOpenGLESTextureGetTarget(CVOpenGLESTexture) -> GLenum](./cvopenglestexturegettarget%28_%29.md)
   Returns the texture target for a `CVOpenGLESTextureRef`.
-- [func CVOpenGLESTextureGetName(CVOpenGLESTexture) -> GLuint](cvopenglestexturegetname(_:).md)
+- [func CVOpenGLESTextureGetName(CVOpenGLESTexture) -> GLuint](./cvopenglestexturegetname%28_%29.md)
   Returns the texture target name for a `CVOpenGLESTextureRef`.
-- [func CVOpenGLESTextureGetCleanTexCoords(CVOpenGLESTexture, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>)](cvopenglestexturegetcleantexcoords(_:_:_:_:_:).md)
+- [func CVOpenGLESTextureGetCleanTexCoords(CVOpenGLESTexture, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>)](./cvopenglestexturegetcleantexcoords%28_,_,_,_,_%29.md)
   Returns convenient normalized texture coordinates for the part of the image that should be displayed.
-- [func CVOpenGLESTextureIsFlipped(CVOpenGLESTexture) -> Bool](cvopenglestextureisflipped(_:).md)
+- [func CVOpenGLESTextureIsFlipped(CVOpenGLESTexture) -> Bool](./cvopenglestextureisflipped%28_%29.md)
   Returns whether the image is flipped vertically or not.
-- [func CVOpenGLESTextureGetTypeID() -> CFTypeID](cvopenglestexturegettypeid().md)
+- [func CVOpenGLESTextureGetTypeID() -> CFTypeID](./cvopenglestexturegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a Core Video texture-based image buffer.
 ### Data Types
-- [typealias CVOpenGLESTexture](cvopenglestexture.md)
+- [typealias CVOpenGLESTexture](./cvopenglestexture.md)
   A reference to a Core Video texture-based image buffer.
 
 ## See Also
 
-- [CVOpenGLESTextureCache](cvopenglestexturecache-q2r.md)
+### OpenGL ES
+- [CVOpenGLESTextureCache](./cvopenglestexturecache-q2r.md)
   A cache used to create and manage OpenGL ES texture objects.
 
 

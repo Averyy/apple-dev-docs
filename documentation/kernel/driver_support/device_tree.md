@@ -1,40 +1,42 @@
 # Device Tree
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 ## Topics
 
 ### Setup and Configuration
-- [IODeviceTreeAlloc](1442109-iodevicetreealloc.md)
-- [IONDRVLibrariesInitialize](1442150-iondrvlibrariesinitialize.md)
+- [IODeviceTreeAlloc](../api-1442109-iodevicetreealloc.md)
+- [IONDRVLibrariesInitialize](../api-1442150-iondrvlibrariesinitialize.md)
 ### Device Tree
-- [DTEntry](dtentry.md)
-- [DTEntryNameBuf](dtentrynamebuf.md)
+- [DTEntry](../dtentry.md)
+- [DTEntryNameBuf](../dtentrynamebuf.md)
 ### Properties
-- [DTPropertyNameBuf](dtpropertynamebuf.md)
+- [DTPropertyNameBuf](../dtpropertynamebuf.md)
 ### Device Iterators
-- [DTEntryIterator](dtentryiterator.md)
+- [DTEntryIterator](../dtentryiterator.md)
 ### Property Iterators
-- [DTPropertyIterator](dtpropertyiterator.md)
+- [DTPropertyIterator](../dtpropertyiterator.md)
 ### Registry Utilities
-- [IODTCompareNubName](1442126-iodtcomparenubname.md)
-- [IODTFindMatchingEntries](1442113-iodtfindmatchingentries.md)
-- [IODTFindSlotName](1442138-iodtfindslotname.md)
-- [IODTGetCellCounts](1442140-iodtgetcellcounts.md)
-- [IODTInterruptControllerName](1442136-iodtinterruptcontrollername.md)
-- [IODTMakeNVDescriptor](1442146-iodtmakenvdescriptor.md)
-- [IODTMatchNubWithKeys](1442144-iodtmatchnubwithkeys.md)
-- [IODTResolveAddressCell](1442103-iodtresolveaddresscell.md)
-- [IODTResolveAddressing](1442122-iodtresolveaddressing.md)
-- [IODTSetResolving](1442142-iodtsetresolving.md)
-- [IODTGetInterruptOptions](1442172-iodtgetinterruptoptions.md)
-- [IODTMapInterrupts](1442130-iodtmapinterrupts.md)
+- [IODTCompareNubName](../api-1442126-iodtcomparenubname.md)
+- [IODTFindMatchingEntries](../api-1442113-iodtfindmatchingentries.md)
+- [IODTFindSlotName](../api-1442138-iodtfindslotname.md)
+- [IODTGetCellCounts](../api-1442140-iodtgetcellcounts.md)
+- [IODTInterruptControllerName](../api-1442136-iodtinterruptcontrollername.md)
+- [IODTMakeNVDescriptor](../api-1442146-iodtmakenvdescriptor.md)
+- [IODTMatchNubWithKeys](../api-1442144-iodtmatchnubwithkeys.md)
+- [IODTResolveAddressCell](../api-1442103-iodtresolveaddresscell.md)
+- [IODTResolveAddressing](../api-1442122-iodtresolveaddressing.md)
+- [IODTSetResolving](../api-1442142-iodtsetresolving.md)
+- [IODTGetInterruptOptions](../api-1442172-iodtgetinterruptoptions.md)
+- [IODTMapInterrupts](../api-1442130-iodtmapinterrupts.md)
 
 ## See Also
 
-- [IOPlatformExpertDevice](ioplatformexpertdevice.md)
-- [IOPlatformDevice](ioplatformdevice.md)
-- [Platform Expert](driver_support/platform_expert.md)
+### Default Devices
+- [IOPlatformExpertDevice](../ioplatformexpertdevice.md)
+- [IOPlatformDevice](../ioplatformdevice.md)
+- [Platform Expert](./platform_expert.md)
 
 
 ---

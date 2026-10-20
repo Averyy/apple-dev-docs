@@ -1,29 +1,31 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](osobject/init.md)
-- [retain](osobject/retain.md)
+### Managing the Object Lifecycle
+- [init](./init.md)
+- [retain](./retain.md)
   Retains the OSObject instance
-- [release](osobject/release.md)
+- [release](./release.md)
   Releases the OSObject instance
-- [OSObjectPtr](osobjectptr.md)
-- [OSObjectRef](osobjectref.md)
+- [OSObjectPtr](../osobjectptr.md)
+- [OSObjectRef](../osobjectref.md)
 
 
 ---

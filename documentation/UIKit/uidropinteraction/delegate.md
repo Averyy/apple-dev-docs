@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that configures and controls a drop interaction.
 
@@ -17,9 +18,14 @@ An object that configures and controls a drop interaction.
 weak var delegate: (any UIDropInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIDropInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UIDropInteractionDelegate](uidropinteractiondelegate.md)
+### Managing drop interactions
+- [protocol UIDropInteractionDelegate](../uidropinteractiondelegate.md)
   The interface for configuring and controlling a drop interaction.
 
 

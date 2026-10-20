@@ -1,6 +1,8 @@
 # Blurring an image
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [BlurringAnImage.zip](https://docs-assets.developer.apple.com/published/a8a4b9753f10/BlurringAnImage.zip)
 
 Filter an image by convolving it with custom and high-speed kernels.
 
@@ -14,29 +16,29 @@ This sample code project uses a variety of convolution techniques to blur an ima
 
 *Kernels* form the basis of convolution operations. Kernels are 1D or 2D grids of numbers that indicate the influence of a pixel’s neighbors on its final value. To calculate the value of each transformed pixel, add the products of each surrounding pixel value with the corresponding kernel value. During a convolution operation, the kernel passes over every pixel in the image, repeating this procedure, and then applies the effect to the entire image.
 
-![A diagram that shows a 3 by 3 convolution kernel centered over a source pixel, highlighting the new pixel value.](/images/com.apple.accelerate/convolution_diagram_2x.png)
+![A diagram that shows a 3 by 3 convolution kernel centered over a source pixel, highlighting the new pixel value.](https://developer.apple.com/tutorials/images/com.apple.accelerate/convolution_diagram_2x.png)
 
 Kernels don’t need to have the same height and width, and can be 1D (that is, either the height or the width is 1) or 2D (that is, both the height and the width are greater than 1). When a convolution operation transforms a pixel, both dimensions must be odd numbers to center the kernel over the pixel.
 
 The simplest kernel, known as an *identity kernel*, contains a single value: 1. The following formula shows the result when applying the kernel to the central value in a grid of nine values. It multiplies the pixel by the central value in the convolution kernel, and then multiplies the surrounding pixel values by 9. The sum of these values is 0.5.
 
-![A mathematical formula showing a 3-by-3 matrix multiplied by a 3-by-3 matrix with a result on the right.](/images/com.apple.accelerate/identity_formula_2x.png)
+![A mathematical formula showing a 3-by-3 matrix multiplied by a 3-by-3 matrix with a result on the right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/identity_formula_2x.png)
 
 An image remains unchanged when convolving it with an identity kernel.
 
-##### Run the Sample
+##### Run the sample
 
-To convolve an image, select a blur filter from the SwiftUI [`Picker`](https://developer.apple.com/documentation/swiftui/picker) control.
+To convolve an image, select a blur filter from the SwiftUI [`Picker`](../SwiftUI/picker.md) control.
 
-##### Blur an Image with a 2d Kernel
+##### Blur an image with a 2D kernel
 
 A *box blur kernel* returns the average value of the neighboring pixels. In the following example, the kernel contains nine values and the result is the sum of 1 divided by 9 multiplied by each of the pixel values:
 
-![A mathematical formula showing a 3-by-3 matrix multiplied by a 3-by-3 matrix with a result on the right.](/images/com.apple.accelerate/box_blur_formula_2x.png)
+![A mathematical formula showing a 3-by-3 matrix multiplied by a 3-by-3 matrix with a result on the right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/box_blur_formula_2x.png)
 
 Note that the sum of the values in the convolution kernel above is 1 — that is, the kernel is *normalized*. If the sum of the values is greater than 1, the resulting image is brighter than the source. If the sum is less than 1, the resulting image is darker than the source.
 
-A more complex blurring kernel varies the influence of pixels according to their distance from the center of the kernel, and yields a smoother blurring effect. The following kernel (based on a Hann window) is suitable for use with an integer format (for example, [`vImage.Interleaved8x4`](vimage/interleaved8x4.md)) convolution:
+A more complex blurring kernel varies the influence of pixels according to their distance from the center of the kernel, and yields a smoother blurring effect. The following kernel (based on a Hann window) is suitable for use with an integer format (for example, [`vImage.Interleaved8x4`](./vimage/interleaved8x4.md)) convolution:
 
 ```swift
 let kernel2D: [Int16] = [
@@ -52,7 +54,7 @@ let kernel2D: [Int16] = [
 
 The example below shows the result of blurring an image using `kernel2D`:
 
-![A blurred photograph of a waterwheel with a partly cloudy sky in the background.](/images/com.apple.accelerate/hann_kernel_2x.png)
+![A blurred photograph of a waterwheel with a partly cloudy sky in the background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/hann_kernel_2x.png)
 
 The sample passes kernels as arrays of integers to the integer format convolution filters. To normalize an integer kernel, the sample passes a divisor to the function that is the sum of the elements of the kernel.
 
@@ -60,7 +62,7 @@ The sample passes kernels as arrays of integers to the integer format convolutio
 let divisor = weights.map { Int32($0) }.reduce(0, +)
 ```
 
-The following example shows how to use [`convolve(with:divisor:bias:edgeMode:destination:)`](vimage/pixelbuffer/convolve(with:divisor:bias:edgemode:destination:)-1oul9.md) to perform a convolution and populate a destination buffer with the result:
+The following example shows how to use [`convolve(with:divisor:bias:edgeMode:destination:)`](./vimage/pixelbuffer/convolve%28with,divisor,bias,edgemode,destination%29-1oul9.md) to perform a convolution and populate a destination buffer with the result:
 
 ```swift
 sourceBuffer.convolve(with: kernel,
@@ -69,11 +71,11 @@ sourceBuffer.convolve(with: kernel,
                       destination: destinationBuffer)
 ```
 
-##### Blur an Image with a Separable Kernel
+##### Blur an image with a separable kernel
 
 The `kernel2D` kernel described in the previous section is *separable*; that is, it’s the *outer product* of a 1D horizontal kernel and a 1D vertical kernel. A separable kernel allows splitting of the 2D convolution into two 1D passes, resulting in faster processing times. The following formula shows the two vectors that form `kernel2D`:
 
-![A mathematical formula showing that the outer product of a 7-by-1 vector and a 1-by-7 vector is the 7-by-7 matrix.](/images/com.apple.accelerate/separable_formula_2x.png)
+![A mathematical formula showing that the outer product of a 7-by-1 vector and a 1-by-7 vector is the 7-by-7 matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/separable_formula_2x.png)
 
 The separable convolution functions in vImage work on planar buffers. The sample uses the following code to create planar source and destination buffers, and to convert the interleaved source image to planar:
 
@@ -84,7 +86,7 @@ let planarDestinationBuffers = vImage.PixelBuffer<vImage.Planar8x4>(size: source
 sourceBuffer.deinterleave(destination: planarSourceBuffers)
 ```
 
-To learn more about working with planar buffers, see [`Optimizing image-processing performance`](optimizing-image-processing-performance.md).
+To learn more about working with planar buffers, see [Optimizing image-processing performance](./optimizing-image-processing-performance.md).
 
 The sample declares this 1D kernel with the following code:
 
@@ -94,7 +96,7 @@ let kernel1D: [Float] = [0, 45, 136, 181, 136, 45, 0]
 
 Note that the kernel for the separable convolution uses single-precision values. This allows for increased precision compared to the 2D integer convolution functions.
 
-To apply a blur using a pair of 1D kernels, the sample calls [`separableConvolve(horizontalKernel:verticalKernel:bias:edgeMode:destination:)`](vimage/pixelbuffer/separableconvolve(horizontalkernel:verticalkernel:bias:edgemode:destination:)-2iyq6.md).
+To apply a blur using a pair of 1D kernels, the sample calls [`separableConvolve(horizontalKernel:verticalKernel:bias:edgeMode:destination:)`](./vimage/pixelbuffer/separableconvolve%28horizontalkernel,verticalkernel,bias,edgemode,destination%29-2iyq6.md).
 
 ```swift
 planarSourceBuffers.separableConvolve(horizontalKernel: kernel,
@@ -105,15 +107,15 @@ planarSourceBuffers.separableConvolve(horizontalKernel: kernel,
 
 The increase in speed from using two 1D kernels instead of a single 2D kernel is significant. For each pixel, the 2D pass requires `M * N` multiplications and additions (where `M` is the number of rows and `N` is the number of columns), but each 1D pass only requires `M + N` multiplications and additions.
 
-##### Blur an Image with High Speed Kernels
+##### Blur an image with high-speed kernels
 
 vImage provides two high-speed blurring convolutions for 8-bit images: a box filter and a tent filter. These blurs are equivalent to convolving with standard kernels, but the developer doesn’t need to supply the kernel. These functions are typically faster than performing an equivalent convolution with custom kernels.
 
 The box filter returns the average pixel value in a rectangular region that surrounds the transformed pixel.
 
-![A 9-by-9 rectangle of pixels with a red border surrounding the center 7-by-7 rectangle of pixels.](/images/com.apple.accelerate/box_2x.png)
+![A 9-by-9 rectangle of pixels with a red border surrounding the center 7-by-7 rectangle of pixels.](https://developer.apple.com/tutorials/images/com.apple.accelerate/box_2x.png)
 
-This sample calls [`boxConvolve(kernelSize:edgeMode:destination:)`](vimage/pixelbuffer/boxconvolve(kernelsize:edgemode:destination:)-2h7fy.md) to apply a box filter to an image.
+This sample calls [`boxConvolve(kernelSize:edgeMode:destination:)`](./vimage/pixelbuffer/boxconvolve%28kernelsize,edgemode,destination%29-2h7fy.md) to apply a box filter to an image.
 
 ```swift
 sourceBuffer.boxConvolve(kernelSize: .init(width: kernelLength,
@@ -124,13 +126,13 @@ sourceBuffer.boxConvolve(kernelSize: .init(width: kernelLength,
 
 Although the box filter is the fastest blur, the following example shows how it suffers from rectangular artifacts:
 
-![A very blurred photograph of a waterwheel with a partly cloudy sky in the background.](/images/com.apple.accelerate/box_filter_2x.png)
+![A very blurred photograph of a waterwheel with a partly cloudy sky in the background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/box_filter_2x.png)
 
 The tent filter returns the weighted average of pixel values in a circular region that surrounds the pixel that vImage is transforming. *Weighted average* means that the influence of pixels on the result decreases the further they are away from the transformed pixel.
 
-![A 9-by-9 rectangle of pixels with a red border surrounding the center circular region of pixels.](/images/com.apple.accelerate/tent_2x.png)
+![A 9-by-9 rectangle of pixels with a red border surrounding the center circular region of pixels.](https://developer.apple.com/tutorials/images/com.apple.accelerate/tent_2x.png)
 
-The sample calls [`tentConvolve(kernelSize:edgeMode:destination:)`](vimage/pixelbuffer/tentconvolve(kernelsize:edgemode:destination:)-150xp.md) to apply a tent filter to an image.
+The sample calls [`tentConvolve(kernelSize:edgeMode:destination:)`](./vimage/pixelbuffer/tentconvolve%28kernelsize,edgemode,destination%29-150xp.md) to apply a tent filter to an image.
 
 ```swift
 sourceBuffer.tentConvolve(kernelSize: .init(width: kernelLength,
@@ -141,15 +143,15 @@ sourceBuffer.tentConvolve(kernelSize: .init(width: kernelLength,
 
 The following example shows the result of a tent filter. The result is a smoother blur, at the expense of being slightly slower to execute than the box filter.
 
-![A blurred photograph of a waterwheel with a partly cloudy sky in the background.](/images/com.apple.accelerate/tent_filter_2x.png)
+![A blurred photograph of a waterwheel with a partly cloudy sky in the background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/tent_filter_2x.png)
 
-Note that passing the [`vImage.EdgeMode.truncateKernel`](vimage/edgemode/truncatekernel.md) flag to the high-speed kernels can significantly impact their performance. This flag is only necessary when vImage needs to restrict calculations to the portion of the kernel overlapping the image.
+Note that passing the [`vImage.EdgeMode.truncateKernel`](./vimage/edgemode/truncatekernel.md) flag to the high-speed kernels can significantly impact their performance. This flag is only necessary when vImage needs to restrict calculations to the portion of the kernel overlapping the image.
 
-##### Blur an Image with Multiple Kernels
+##### Blur an image with multiple kernels
 
-vImage can apply multiple kernels in a single convolution. The [`convolve(with:divisor:bias:edgeMode:destination:)`](vimage/pixelbuffer/convolve(with:divisor:bias:edgemode:destination:)-1oul9.md) function makes it possible to specify four separate kernels — one for each channel in the image.
+vImage can apply multiple kernels in a single convolution. The [`convolve(with:divisor:bias:edgeMode:destination:)`](./vimage/pixelbuffer/convolve%28with,divisor,bias,edgemode,destination%29-1oul9.md) function makes it possible to specify four separate kernels — one for each channel in the image.
 
-When using multiple kernels to apply image filters, vImage can operate on the red, green, blue, and alpha channels individually. For example, it can use multiple-kernel convolutions to resample the color channels of an image differently to compensate for the positioning of RGB phosphors on the screen. Because each of the four kernels can operate on a single channel, the vImage multiple-kernel convolution functions are available only to the interleaved image formats, [`vImage.Planar8x4`](vimage/planar8x4.md) and [`vImage.PlanarFx4`](vimage/planarfx4.md).
+When using multiple kernels to apply image filters, vImage can operate on the red, green, blue, and alpha channels individually. For example, it can use multiple-kernel convolutions to resample the color channels of an image differently to compensate for the positioning of RGB phosphors on the screen. Because each of the four kernels can operate on a single channel, the vImage multiple-kernel convolution functions are available only to the interleaved image formats, [`vImage.Planar8x4`](./vimage/planar8x4.md) and [`vImage.PlanarFx4`](./vimage/planarfx4.md).
 
 The four kernels for the convolution filters need to be the same size, but can accept padding with zeros to simulate smaller kernels. vImage is able to optimize individual passes, effectively cropping the zero padding.
 
@@ -183,9 +185,9 @@ let kernels: [vImage.ConvolutionKernel2D<Int16>] = (1 ... 4).map { index in
 
 For example, with a kernel length of 17, the first three kernels from the code above contain the following values:
 
-![A diagram of three boxes that each contain a 17-by-17 grid filled with 1s and 0s. The central circle in each box contains 1s and decreases in size from left to right. The area surrounding each circle contains 0s.](/images/com.apple.accelerate/multiple_kernels_2x.png)
+![A diagram of three boxes that each contain a 17-by-17 grid filled with 1s and 0s. The central circle in each box contains 1s and decreases in size from left to right. The area surrounding each circle contains 0s.](https://developer.apple.com/tutorials/images/com.apple.accelerate/multiple_kernels_2x.png)
 
-The [`convolve(with:divisor:bias:edgeMode:destination:)`](vimage/pixelbuffer/convolve(with:divisor:bias:edgemode:destination:)-1oul9.md) performs the convolution.
+The [`convolve(with:divisor:bias:edgeMode:destination:)`](./vimage/pixelbuffer/convolve%28with,divisor,bias,edgemode,destination%29-1oul9.md) performs the convolution.
 
 ```swift
 let divisors = kernels.map { return Int32($0.values.reduce(0, +)) }
@@ -198,15 +200,16 @@ sourceBuffer.convolve(with: (kernels[0], kernels[1], kernels[2], kernels[3]),
 
 The example below shows the result of the multiple-kernel convolution. Note the color-fringing effect from applying different kernels to the different color channels.
 
-![A blurred photograph of a waterwheel with a partly cloudy sky in the background.](/images/com.apple.accelerate/multi_kernel_2x.png)
+![A blurred photograph of a waterwheel with a partly cloudy sky in the background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/multi_kernel_2x.png)
 
 ## See Also
 
-- [Adding a bokeh effect to images](adding-a-bokeh-effect-to-images.md)
+### Convolution and Morphology
+- [Adding a bokeh effect to images](./adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
-- [Convolution](convolution.md)
+- [Convolution](./convolution.md)
   Apply a convolution kernel to an image.
-- [Morphology](morphology.md)
+- [Morphology](./morphology.md)
   Dilate and erode images.
 
 

@@ -1,7 +1,8 @@
 # AUReverbRoomType.reverbRoomType_OutdoorGeneral
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case reverbRoomType_OutdoorGeneral
+```
+
+```c
+kReverbRoomType_OutdoorGeneral
 ```
 
 

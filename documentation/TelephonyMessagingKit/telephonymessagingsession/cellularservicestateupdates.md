@@ -1,7 +1,8 @@
 # cellularServiceStateUpdates
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of cellular service state updates produced by this session.
 
@@ -16,7 +17,7 @@ final var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, 
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 #### Discussion
 
@@ -24,9 +25,10 @@ Use a `for`-`await`-`in` loop to iterate over this asynchronous sequence and rec
 
 ## See Also
 
-- [var cellularServices: [CellularServiceState]](telephonymessagingsession/cellularservices.md)
+### Determining service availability
+- [var cellularServices: [CellularServiceState]](./cellularservices.md)
   An array of cellular services available on the system.
-- [struct CellularServiceState](cellularservicestate.md)
+- [struct CellularServiceState](../cellularservicestate.md)
   A structure that contains information about a cellular service.
 
 

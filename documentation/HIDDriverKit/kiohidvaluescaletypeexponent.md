@@ -1,25 +1,27 @@
 # kIOHIDValueScaleTypeExponent
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option to scale the value with respect to the element’s unit exponent.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDValueScaleTypeExponent
 ```
 
 ## See Also
 
-- [kIOHIDValueScaleTypeCalibrated](kiohidvaluescaletypecalibrated.md)
+### Getting the Options
+- [kIOHIDValueScaleTypeCalibrated](./kiohidvaluescaletypecalibrated.md)
   An option to scale the value with respect to a set of calibration properties.
-- [kIOHIDValueScaleTypePhysical](kiohidvaluescaletypephysical.md)
+- [kIOHIDValueScaleTypePhysical](./kiohidvaluescaletypephysical.md)
   An option to scale the value with respect to the physical minimum and maximum values.
 
 

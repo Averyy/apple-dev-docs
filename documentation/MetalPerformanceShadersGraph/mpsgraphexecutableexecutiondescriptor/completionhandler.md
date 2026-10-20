@@ -1,7 +1,8 @@
 # completionHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A notification that appears when graph-executable execution is finished.
 
@@ -17,6 +18,10 @@ A notification that appears when graph-executable execution is finished.
 
 ```swift
 var completionHandler: MPSGraphExecutableCompletionHandler { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphExecutableCompletionHandler completionHandler;
 ```
 
 #### Discussion

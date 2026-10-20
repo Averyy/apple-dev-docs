@@ -1,7 +1,8 @@
 # errorCorrectedPayload
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error-corrected payload containing the data encoded in the Data Matrix code symbol.
 
@@ -19,6 +20,10 @@ The error-corrected payload containing the data encoded in the Data Matrix code 
 var errorCorrectedPayload: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * errorCorrectedPayload;
+```
+
 #### Discussion
 
 DataMatrix symbols are specified bn ISO/IEC 16022:2006(E). ECC 200-type symbols will always have an even number of rows and columns.
@@ -27,11 +32,12 @@ For ECC 200-type symbols, the phases of encoding data into a symbol are describe
 
 ## See Also
 
-- [var rowCount: Int](cidatamatrixcodedescriptor/rowcount-swift.property.md)
+### Examining a Descriptor
+- [var rowCount: Int](./rowcount-swift.property.md)
   The number of rows in the Data Matrix code symbol.
-- [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
+- [var columnCount: Int](./columncount-swift.property.md)
   The number of columns in the Data Matrix code symbol.
-- [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](cidatamatrixcodedescriptor/eccversion-swift.property.md)
+- [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](./eccversion-swift.property.md)
   The error correction version of the Data Matrix code symbol.
 
 

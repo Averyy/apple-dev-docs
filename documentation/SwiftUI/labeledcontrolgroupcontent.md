@@ -1,7 +1,8 @@
 # LabeledControlGroupContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the body of a control group with a specified label.
 
@@ -22,12 +23,12 @@ struct LabeledControlGroupContent<Content, Label> where Content : View, Label : 
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you build a [`ControlGroup`](controlgroup.md).
+You don’t create this type directly. SwiftUI creates it when you build a [`ControlGroup`](./controlgroup.md).
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

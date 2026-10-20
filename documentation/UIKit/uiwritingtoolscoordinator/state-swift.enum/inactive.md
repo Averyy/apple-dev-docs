@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.State.inactive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates Writing Tools isn’t currently performing any work on your view’s content.
 
@@ -17,21 +18,26 @@ A state that indicates Writing Tools isn’t currently performing any work on yo
 case inactive
 ```
 
+```c
+UIWritingToolsCoordinatorStateInactive
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
-The coordinator starts in the `inactive` state, and transitions immediately to the [`UIWritingToolsCoordinator.State.noninteractive`](uiwritingtoolscoordinator/state-swift.enum/noninteractive.md) or [`UIWritingToolsCoordinator.State.interactiveResting`](uiwritingtoolscoordinator/state-swift.enum/interactiveresting.md) state when someone chooses an option from the Writing Tools UI. The coordinator returns to the `inactive` state when the person accepts the changes or dismisses the Writing Tools UI.
+The coordinator starts in the `inactive` state, and transitions immediately to the [`UIWritingToolsCoordinator.State.noninteractive`](./noninteractive.md) or [`UIWritingToolsCoordinator.State.interactiveResting`](./interactiveresting.md) state when someone chooses an option from the Writing Tools UI. The coordinator returns to the `inactive` state when the person accepts the changes or dismisses the Writing Tools UI.
 
 ## See Also
 
-- [UIWritingToolsCoordinator.State.noninteractive](uiwritingtoolscoordinator/state-swift.enum/noninteractive.md)
+### Getting the animation types
+- [UIWritingToolsCoordinator.State.noninteractive](./noninteractive.md)
   A state that indicates Writing Tools is handling interactions in the system UI, instead of in your view.
-- [UIWritingToolsCoordinator.State.interactiveResting](uiwritingtoolscoordinator/state-swift.enum/interactiveresting.md)
+- [UIWritingToolsCoordinator.State.interactiveResting](./interactiveresting.md)
   A state that indicates Writing Tools is in the resting state for an inline editing experience.
-- [UIWritingToolsCoordinator.State.interactiveStreaming](uiwritingtoolscoordinator/state-swift.enum/interactivestreaming.md)
+- [UIWritingToolsCoordinator.State.interactiveStreaming](./interactivestreaming.md)
   A state that indicates Writing Tools is processing a request and incorporating changes interactively into your view.
 
 

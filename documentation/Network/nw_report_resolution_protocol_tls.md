@@ -1,7 +1,8 @@
 # nw_report_resolution_protocol_tls
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The connection used TLS for DNS resolution.
 
@@ -20,15 +21,20 @@ The connection used TLS for DNS resolution.
 var nw_report_resolution_protocol_tls: nw_report_resolution_protocol_t { get }
 ```
 
+```c
+nw_report_resolution_protocol_tls
+```
+
 ## See Also
 
-- [var nw_report_resolution_protocol_unknown: nw_report_resolution_protocol_t](nw_report_resolution_protocol_unknown.md)
+### Resolution Transports
+- [var nw_report_resolution_protocol_unknown: nw_report_resolution_protocol_t](./nw_report_resolution_protocol_unknown.md)
   The DNS response protocol is unknown or not applicable.
-- [var nw_report_resolution_protocol_udp: nw_report_resolution_protocol_t](nw_report_resolution_protocol_udp.md)
+- [var nw_report_resolution_protocol_udp: nw_report_resolution_protocol_t](./nw_report_resolution_protocol_udp.md)
   The connection used cleartext UDP for DNS resolution.
-- [var nw_report_resolution_protocol_tcp: nw_report_resolution_protocol_t](nw_report_resolution_protocol_tcp.md)
+- [var nw_report_resolution_protocol_tcp: nw_report_resolution_protocol_t](./nw_report_resolution_protocol_tcp.md)
   The connection used cleartext TCP for DNS resolution.
-- [var nw_report_resolution_protocol_https: nw_report_resolution_protocol_t](nw_report_resolution_protocol_https.md)
+- [var nw_report_resolution_protocol_https: nw_report_resolution_protocol_t](./nw_report_resolution_protocol_https.md)
   The connection used HTTPS for DNS resolution.
 
 

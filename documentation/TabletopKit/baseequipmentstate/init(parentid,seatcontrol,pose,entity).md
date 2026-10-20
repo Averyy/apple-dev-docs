@@ -1,7 +1,8 @@
 # init(parentID:seatControl:pose:entity:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -15,7 +16,8 @@
 
 ## See Also
 
-- [init(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D)](baseequipmentstate/init(parentid:seatcontrol:pose:boundingbox:).md)
+### Creating an equipment state
+- [init(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D)](./init%28parentid,seatcontrol,pose,boundingbox%29.md)
   Creates a base state for equipment using a parent, location, and player interactions.
 
 

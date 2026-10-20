@@ -1,7 +1,8 @@
 # buildBlock()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an empty map content block that contains no statements.
 
@@ -11,7 +12,7 @@ Creates an empty map content block that contains no statements.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static func buildBlock() -> EmptyMapContent
 
 #### Return Value
 
-Returns [`EmptyMapContent`](emptymapcontent.md).
+Returns [`EmptyMapContent`](../emptymapcontent.md).
 
 ## See Also
 
-- [static func buildBlock<C>(C) -> C](mapcontentbuilder/buildblock(_:)-5ewn9.md)
+### Map content builders
+- [static func buildBlock<C>(C) -> C](./buildblock%28_%29-5ewn9.md)
   Creates a map content block that contains a single content result.
 
 

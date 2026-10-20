@@ -1,7 +1,8 @@
 # fillColor
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fill color of the shape.
 
@@ -24,9 +25,10 @@ Defaults to black.
 
 ## See Also
 
-- [var strokeColor: CGColor?](shapeconfiguration/strokecolor.md)
+### Configuring fill and stroke
+- [var strokeColor: CGColor?](./strokecolor.md)
   The stroke color of the shape.
-- [var lineWidth: CGFloat](shapeconfiguration/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The line width of the shape.
 
 

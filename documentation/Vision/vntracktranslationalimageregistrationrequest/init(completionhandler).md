@@ -1,7 +1,8 @@
 # init(completionHandler:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new request that tracks the translational registration of two images, with a system callback on completion.
 
@@ -19,13 +20,18 @@ Creates a new request that tracks the translational registration of two images, 
 init(completionHandler: VNRequestCompletionHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithCompletionHandler:(VNRequestCompletionHandler) completionHandler;
+```
+
 ## Parameters
 
 - `completionHandler`: The callback the system invokes when it completes the request.
 
 ## See Also
 
-- [init()](vntracktranslationalimageregistrationrequest/init.md)
+### Creating a Translational Image
+- [init()](./init%28%29.md)
   Creates a new request that tracks the translational registration of two images.
 
 

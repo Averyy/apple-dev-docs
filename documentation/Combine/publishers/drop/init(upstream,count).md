@@ -1,7 +1,8 @@
 # init(upstream:count:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that omits a specified number of elements before republishing later elements.
 

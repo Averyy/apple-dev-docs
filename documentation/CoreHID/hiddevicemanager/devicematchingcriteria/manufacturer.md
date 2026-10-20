@@ -1,7 +1,8 @@
 # manufacturer
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manufacturer of the device.
 

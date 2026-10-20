@@ -1,12 +1,13 @@
 # startSpeaking(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that starts speaking the selected text or all text if there’s no selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ An action method that starts speaking the selected text or all text if there’s
 func startSpeaking(_ sender: Any?)
 ```
 
+```objc
+- (void) startSpeaking:(id) sender;
+```
+
 #### Discussion
 
-Speech continues asynchronously until the end of the text or until terminated by invoking the [`stopSpeaking(_:)`](webview-swift.class/stopspeaking(_:).md) method. This method behaves similar to the [`startSpeaking(_:)`](https://developer.apple.com/documentation/appkit/nstextview/startspeaking(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
+Speech continues asynchronously until the end of the text or until terminated by invoking the [`stopSpeaking(_:)`](./stopspeaking%28_%29.md) method. This method behaves similar to the [`startSpeaking(_:)`](../../AppKit/nstextview/startspeaking%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 
 ## Parameters
 
@@ -24,7 +29,8 @@ Speech continues asynchronously until the end of the text or until terminated by
 
 ## See Also
 
-- [func stopSpeaking(Any?)](webview-swift.class/stopspeaking(_:).md)
+### Controlling Speakable Text
+- [func stopSpeaking(Any?)](./stopspeaking%28_%29.md)
   An action method that stops speaking that is in progress.
 
 

@@ -1,7 +1,8 @@
 # lightingModel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lighting model to use when rendering this material.
 
@@ -21,13 +22,14 @@ var lightingModel: LightingModel
 
 #### Discussion
 
-Must match the type of the surface output node in [`shaderGraph`](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md).
+Must match the type of the surface output node in [`shaderGraph`](./shadergraph.md).
 
 ## See Also
 
-- [var blendMode: MaterialParameterTypes.BlendMode?](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/blendmode.md)
+### Configuring rendering
+- [var blendMode: MaterialParameterTypes.BlendMode?](./blendmode.md)
   How materials using this program blend with content behind them.
-- [var isColorDitheringEnabled: Bool](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/iscolorditheringenabled.md)
+- [var isColorDitheringEnabled: Bool](./iscolorditheringenabled.md)
   Whether to dither color values before writing to the frame buffer.
 
 

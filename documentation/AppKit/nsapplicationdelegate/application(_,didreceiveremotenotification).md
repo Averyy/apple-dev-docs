@@ -1,7 +1,8 @@
 # application(_:didReceiveRemoteNotification:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the app receives a remote notification.
 
@@ -13,6 +14,10 @@ Tells the delegate when the app receives a remote notification.
 ```swift
 @MainActor
 optional func application(_ application: NSApplication, didReceiveRemoteNotification userInfo: [String : Any])
+```
+
+```objc
+- (void) application:(NSApplication *) application didReceiveRemoteNotification:(NSDictionary<NSString *,id> *) userInfo;
 ```
 
 #### Discussion
@@ -30,18 +35,19 @@ Icon badging is the only notification type supported for non-running application
 
 The `userInfo` dictionary may also have custom data defined by the provider according to the JSON schema. The properties for custom data should be specified at the same level as the `aps` dictionary. However, custom-defined properties should not be used for mass data transport because there is a strict size limit per notification (256 bytes) and delivery is not guaranteed.
 
-If you implement [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md) and a push notification for the application has recently arrived, this method is not invoked for that push notification. In this case, you can access the JSON data in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary of the passed-in [`NSNotification`](https://developer.apple.com/documentation/foundation/nsnotification) object.
+If you implement [`applicationDidFinishLaunching(_:)`](./applicationdidfinishlaunching%28_%29.md) and a push notification for the application has recently arrived, this method is not invoked for that push notification. In this case, you can access the JSON data in the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary of the passed-in [`NSNotification`](../../Foundation/nsnotification.md) object.
 
 ## Parameters
 
 - `application`: The application that received the remote notification.
-- `userInfo`: A dictionary that contains information related to the remote notification, specifically a badge number for the application icon, a notification identifier, and possibly custom data. The provider originates it as a JSON-defined dictionary that AppKit converts to an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
+- `userInfo`: A dictionary that contains information related to the remote notification, specifically a badge number for the application icon, a notification identifier, and possibly custom data. The provider originates it as a JSON-defined dictionary that AppKit converts to an [`NSDictionary`](../../Foundation/nsdictionary.md) object; the dictionary may contain only property-list objects plus [`NSNull`](../../Foundation/nsnull.md).
 
 ## See Also
 
-- [func application(NSApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)](nsapplicationdelegate/application(_:didregisterforremotenotificationswithdevicetoken:).md)
+### Handling Push Notifications
+- [func application(NSApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)](./application%28_,didregisterforremotenotificationswithdevicetoken%29.md)
   Tells the delegate that the app registered for Apple Push Services.
-- [func application(NSApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](nsapplicationdelegate/application(_:didfailtoregisterforremotenotificationswitherror:).md)
+- [func application(NSApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](./application%28_,didfailtoregisterforremotenotificationswitherror%29.md)
   Tells the delegate that the app was unable to register for Apple Push Services.
 
 

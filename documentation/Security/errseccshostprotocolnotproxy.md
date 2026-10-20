@@ -1,7 +1,8 @@
 # errSecCSHostProtocolNotProxy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: proxy hosting not engaged.
 
@@ -13,6 +14,10 @@ Host protocol violation: proxy hosting not engaged.
 
 ```swift
 var errSecCSHostProtocolNotProxy: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolNotProxy
 ```
 
 

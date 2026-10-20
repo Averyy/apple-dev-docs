@@ -1,7 +1,8 @@
 # ASImportableEditableField.FieldType.date
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type for a date field.
 
@@ -20,15 +21,16 @@ case date
 
 ## See Also
 
-- [ASImportableEditableField.FieldType.boolean](asimportableeditablefield/fieldtype-swift.enum/boolean.md)
+### Determining field type
+- [ASImportableEditableField.FieldType.boolean](./boolean.md)
   A type for a Boolean value field.
-- [ASImportableEditableField.FieldType.concealedString](asimportableeditablefield/fieldtype-swift.enum/concealedstring.md)
+- [ASImportableEditableField.FieldType.concealedString](./concealedstring.md)
   A type for a concealed string field.
-- [ASImportableEditableField.FieldType.email](asimportableeditablefield/fieldtype-swift.enum/email.md)
+- [ASImportableEditableField.FieldType.email](./email.md)
   A type for an email field.
-- [ASImportableEditableField.FieldType.number](asimportableeditablefield/fieldtype-swift.enum/number.md)
+- [ASImportableEditableField.FieldType.number](./number.md)
   A type for a number field.
-- [ASImportableEditableField.FieldType.string](asimportableeditablefield/fieldtype-swift.enum/string.md)
+- [ASImportableEditableField.FieldType.string](./string.md)
   A type for a concealed string field.
 
 

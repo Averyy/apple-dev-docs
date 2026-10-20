@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new set containing the elements of the set that satisfy the given predicate.
 
@@ -20,6 +21,8 @@ Returns a new set containing the elements of the set that satisfy the given pred
 ```swift
 consuming func filter<E>(_ isIncluded: (Element) throws(E) -> Bool) throws(E) -> Set<Element> where E : Error
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Return Value
 
@@ -45,14 +48,15 @@ shortNames.contains("Vivien")
 
 ## See Also
 
-- [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
+### Removing Elements
+- [func remove(Element) -> Element?](./remove%28_%29-8p2tv.md)
   Removes the specified element from the set.
-- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](set/remove(_:)-4d3i1.md)
-- [func removeFirst() -> Element](set/removefirst.md)
+- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](./remove%28_%29-4d3i1.md)
+- [func removeFirst() -> Element](./removefirst%28%29.md)
   Removes the first element of the set.
-- [func remove(at: Set<Element>.Index) -> Element](set/remove(at:).md)
+- [func remove(at: Set<Element>.Index) -> Element](./remove%28at%29.md)
   Removes the element at the given index of the set.
-- [func removeAll(keepingCapacity: Bool)](set/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./removeall%28keepingcapacity%29.md)
   Removes all members from the set.
 
 

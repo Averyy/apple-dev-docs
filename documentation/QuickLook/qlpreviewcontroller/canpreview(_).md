@@ -1,7 +1,8 @@
 # canPreview(_:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the preview controller can display an item.
 
@@ -13,19 +14,31 @@ Returns a Boolean value that indicates whether the preview controller can displa
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+class func canPreview(_ item: any QLPreviewItem) -> Bool
+```
+
+*Mac Catalyst*
+
 ```swift
 class func canPreviewItem(_ item: any QLPreviewItem) -> Bool
 ```
 
+```objc
++ (BOOL) canPreviewItem:(id<QLPreviewItem>) item;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the Quick Look preview controller can display the specified preview item.
+Returns [`true`](../../Swift/true.md) if the Quick Look preview controller can display the specified preview item.
 
 #### Discussion
 
 If the system can’t display an item, but you still attempt to display it, a Quick Look preview controller displays a generic error. Always check whether you can display an item before choosing to do so.
 
-For supported file types, see [`QLPreviewController`](qlpreviewcontroller.md).
+For supported file types, see [`QLPreviewController`](../qlpreviewcontroller.md).
 
 ## Parameters
 
@@ -33,13 +46,14 @@ For supported file types, see [`QLPreviewController`](qlpreviewcontroller.md).
 
 ## See Also
 
-- [var currentPreviewItem: (any QLPreviewItem)?](qlpreviewcontroller/currentpreviewitem.md)
+### Managing item previews
+- [var currentPreviewItem: (any QLPreviewItem)?](./currentpreviewitem.md)
   The item displaying in the Quick Look preview controller.
-- [var currentPreviewItemIndex: Int](qlpreviewcontroller/currentpreviewitemindex.md)
+- [var currentPreviewItemIndex: Int](./currentpreviewitemindex.md)
   The index within the preview item navigation list of the item displaying in the Quick Look preview controller.
-- [func refreshCurrentPreviewItem()](qlpreviewcontroller/refreshcurrentpreviewitem.md)
+- [func refreshCurrentPreviewItem()](./refreshcurrentpreviewitem%28%29.md)
   Asks the Quick Look preview controller to recompute the display of the current preview item.
-- [func reloadData()](qlpreviewcontroller/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Asks the preview controller to reload its data from its data source.
 
 

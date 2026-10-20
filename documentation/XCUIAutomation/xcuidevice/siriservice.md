@@ -1,7 +1,8 @@
 # siriService
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that represents the Siri interface on the device.
 
@@ -17,9 +18,14 @@ An object that represents the Siri interface on the device.
 var siriService: XCUISiriService { get }
 ```
 
+```objc
+@property (readonly) XCUISiriService * siriService;
+```
+
 ## See Also
 
-- [class XCUISiriService](xcuisiriservice.md)
+### Related Documentation
+- [class XCUISiriService](../xcuisiriservice.md)
   A proxy that simulates a device’s Siri interface.
 
 

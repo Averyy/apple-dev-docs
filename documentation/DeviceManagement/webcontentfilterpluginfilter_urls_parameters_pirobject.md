@@ -1,7 +1,8 @@
 # WebContentFilterPluginFilter_URLs_Parameters_PIRObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary containing Private Information Retrieval server settings.
 
@@ -13,7 +14,7 @@ A dictionary containing Private Information Retrieval server settings.
 
 ## Declaration
 
-```swift
+```
 object WebContentFilterPluginFilter_URLs_Parameters_PIRObject
 ```
 

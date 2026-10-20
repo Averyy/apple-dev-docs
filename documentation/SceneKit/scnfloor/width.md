@@ -1,23 +1,28 @@
 # width
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the floor along its x-axis. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var width: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat width;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ You can animate changes to this property’s value. See `Animating SceneKit Cont
 
 ## See Also
 
-- [var length: CGFloat](scnfloor/length.md)
+### Adjusting a Floor’s Size
+- [var length: CGFloat](./length.md)
   The extent of the floor along its z-axis. Animatable.
 
 

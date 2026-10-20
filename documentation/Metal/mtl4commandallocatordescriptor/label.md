@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional label you can assign to the command allocator to aid debugging.
 
@@ -17,6 +18,10 @@ An optional label you can assign to the command allocator to aid debugging.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
 ```
 
 

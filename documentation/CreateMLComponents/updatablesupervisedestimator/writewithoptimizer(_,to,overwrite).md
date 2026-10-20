@@ -1,7 +1,8 @@
 # writeWithOptimizer(_:to:overwrite:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the encoded transformer and optimizer to a file.
 
@@ -28,7 +29,8 @@ func writeWithOptimizer(_ transformer: Self.Transformer, to url: URL, overwrite:
 
 ## See Also
 
-- [func readWithOptimizer(from: URL) throws -> Self.Transformer](updatablesupervisedestimator/readwithoptimizer(from:).md)
+### Reading and writing
+- [func readWithOptimizer(from: URL) throws -> Self.Transformer](./readwithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer from a file.
 
 

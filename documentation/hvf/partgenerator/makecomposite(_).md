@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create a new Composite, and return a CompositeWriter to fill it in

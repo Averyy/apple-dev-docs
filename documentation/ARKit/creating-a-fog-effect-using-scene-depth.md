@@ -1,6 +1,8 @@
 # Creating a fog effect using scene depth
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [CreatingAFogEffectUsingSceneDepth.zip](https://docs-assets.developer.apple.com/published/c2f0ac3e9144/CreatingAFogEffectUsingSceneDepth.zip)
 
 Apply virtual fog to the physical environment.
 
@@ -13,11 +15,11 @@ Apply virtual fog to the physical environment.
 
 Devices such as the second-generation iPad Pro 11-inch and fourth-generation iPad Pro 12.9-inch can use the LiDAR Scanner to calculate the distance of real-world objects from the user. In world-tracking experiences on iOS 14, ARKit provides a buffer that describes the objects’ distance from the device in meters.
 
-This sample app uses the depth buffer to create a virtual fog effect in real time. To draw its graphics, the sample app uses a small Metal renderer. ARKit provides precise depth values for objects in the camera feed, so the sample app applies a Gaussian blur using [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) to soften the fog effect. While drawing the camera image to the screen, the renderer checks the depth texture at every pixel, and overlays a fog color based on that pixel’s distance from the device. For more information on sampling textures and drawing with Metal, see [`Creating and sampling textures`](https://developer.apple.com/documentation/metal/creating-and-sampling-textures).
+This sample app uses the depth buffer to create a virtual fog effect in real time. To draw its graphics, the sample app uses a small Metal renderer. ARKit provides precise depth values for objects in the camera feed, so the sample app applies a Gaussian blur using [Metal Performance Shaders](../MetalPerformanceShaders/MetalPerformanceShaders.md) to soften the fog effect. While drawing the camera image to the screen, the renderer checks the depth texture at every pixel, and overlays a fog color based on that pixel’s distance from the device. For more information on sampling textures and drawing with Metal, see [Creating and sampling textures](../Metal/creating-and-sampling-textures.md).
 
-![Diagram of two versions of a scene with three armchairs in a row, increasing in distance from the viewer. In the first version, the view of the chairs is clear and unimpeded. In the second version, the two chairs in the distance appear to fade into a gray mist.](/images/com.apple.arkit/ar-depth-fog.png)
+![Diagram of two versions of a scene with three armchairs in a row, increasing in distance from the viewer. In the first version, the view of the chairs is clear and unimpeded. In the second version, the two chairs in the distance appear to fade into a gray mist.](https://developer.apple.com/tutorials/images/com.apple.arkit/ar-depth-fog.png)
 
-#### Enable Scene Depth and Run a Session
+#### Enable scene depth and run a session
 
 In order to avoid running an unsupported configuration, the sample app first checks whether the device supports scene depth.
 
@@ -33,7 +35,7 @@ if !ARWorldTrackingConfiguration.supportsFrameSemantics(.sceneDepth) ||
 
 If the device running the app doesn’t support scene depth, the sample project will stop. Optionally, the app could present the user with an error message and continue the experience without scene depth.
 
-If the device supports scene depth, the sample app creates a world-tracking configuration and enables the [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) option on the [`ARConfiguration.FrameSemantics`](arconfiguration/framesemantics-swift.struct.md)uct`` property.
+If the device supports scene depth, the sample app creates a world-tracking configuration and enables the [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) option on the [`ARConfiguration.FrameSemantics`](./arconfiguration/framesemantics-swift.struct.md)uct`` property.
 
 ```swift
 configuration.frameSemantics = .smoothedSceneDepth
@@ -45,9 +47,9 @@ Then, the sample project begins the AR experience by running the session.
 session.run(configuration)
 ```
 
-#### Access the Scenes Depth
+#### Access the scene’s depth
 
-ARKit exposes the depth buffer documentation/arkit/ardepthdata/depthmap) as a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) on the current frame’s [`sceneDepth`](arconfiguration/framesemantics-swift.struct/scenedepth.md) or [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) property, depending on the enabled frame semantics. This sample app visualizes [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) by default. The raw depth values in [`sceneDepth`](arconfiguration/framesemantics-swift.struct/scenedepth.md) can create a flicker whereas smoothing the depth differences across frames visualizes a more realistic fog effect. For debug purposes, the sample allows switching between [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) and [`sceneDepth`](arconfiguration/framesemantics-swift.struct/scenedepth.md) with an onscreen toggle.
+ARKit exposes the depth buffer documentation/arkit/ardepthdata/depthmap) as a [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) on the current frame’s [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) or [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) property, depending on the enabled frame semantics. This sample app visualizes [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) by default. The raw depth values in [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) can create a flicker whereas smoothing the depth differences across frames visualizes a more realistic fog effect. For debug purposes, the sample allows switching between [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md) and [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) with an onscreen toggle.
 
 ```swift
 guard let sceneDepth = frame.smoothedSceneDepth ?? frame.sceneDepth else {
@@ -66,7 +68,7 @@ setMTLPixelFormat(&texturePixelFormat, basedOn: pixelBuffer)
 depthTexture = createTexture(fromPixelBuffer: pixelBuffer, pixelFormat: texturePixelFormat, planeIndex: 0)
 ```
 
-To set the depth texture’s Metal pixel format, the sample project calls [`CVPixelBufferGetPixelFormatType(_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbuffergetpixelformattype(_:)) with the [`depthMap`](ardepthdata/depthmap.md) and chooses an appropriate mapping based on the result.
+To set the depth texture’s Metal pixel format, the sample project calls [`CVPixelBufferGetPixelFormatType(_:)`](../CoreVideo/cvpixelbuffergetpixelformattype%28_%29.md) with the [`depthMap`](./ardepthdata/depthmap.md) and chooses an appropriate mapping based on the result.
 
 ```swift
 fileprivate func setMTLPixelFormat(_ texturePixelFormat: inout MTLPixelFormat?, basedOn pixelBuffer: CVPixelBuffer!) {
@@ -80,7 +82,7 @@ fileprivate func setMTLPixelFormat(_ texturePixelFormat: inout MTLPixelFormat?, 
 }
 ```
 
-#### Apply a Blur to the Depth Buffer
+#### Apply a blur to the depth buffer
 
 As a benefit of rendering its graphics with Metal, this app has at its disposal the display conveniences of MPS. The sample project uses the MPS Gaussian Blur filter to make realistic fog. When instantiating the filter, the sample project passes a `sigma` of `5` to specify a 5-pixel radius blur.
 
@@ -88,7 +90,7 @@ As a benefit of rendering its graphics with Metal, this app has at its disposal 
 blurFilter = MPSImageGaussianBlur(device: device, sigma: 5)
 ```
 
-> **Note**: To gain performance at the cost of precision, the app can add [`allowReducedPrecision`](https://developer.apple.com/documentation/metalperformanceshaders/mpskerneloptions/allowreducedprecision) to the blur filter’s [`options`](https://developer.apple.com/documentation/metalperformanceshaders/mpskernel/options), which reduces computation time by using `half` instead of `float`.
+> **Note**: To gain performance at the cost of precision, the app can add [`allowReducedPrecision`](../MetalPerformanceShaders/mpskerneloptions/allowreducedprecision.md) to the blur filter’s [`options`](../MetalPerformanceShaders/mpskernel/options.md), which reduces computation time by using `half` instead of `float`.
 
 MPS requires input and output images that define the source and destination pixel data for the filter operation.
 
@@ -103,9 +105,9 @@ The sample app passes the input and output images to the blur’s `encode` funct
 blur.encode(commandBuffer: commandBuffer, sourceImage: inputImage, destinationImage: outputImage)
 ```
 
-> **Note**: In-place MPS operations can save time, memory, and power. Since in-place MPS requires fallback code for devices that don’t support it, this sample project doesn’t use it. For more information on in-place operations, see [`Image Filters`](https://developer.apple.com/documentation/metalperformanceshaders/image-filters).
+> **Note**: In-place MPS operations can save time, memory, and power. Since in-place MPS requires fallback code for devices that don’t support it, this sample project doesn’t use it. For more information on in-place operations, see [Image Filters](../MetalPerformanceShaders/image-filters.md).
 
-#### Visualize the Blurred Depth to Create Fog
+#### Visualize the blurred depth to create fog
 
 Metal renders by providing to the GPU a fragment shader that draws the app’s graphics. Since the sample project renders a camera image, it packages up the camera image for the fragment shader by calling `setFragmentTexture`.
 
@@ -162,9 +164,9 @@ half4 foggedColor = mix(cameraColor, fogColor, fogPercentage);
 
 After Metal calls the fragment shader for every pixel, the view presents the final, fogged image of the physical environment to the screen.
 
-#### Visualize Confidence Data
+#### Visualize confidence data
 
-ARKit provides the [`confidenceMap`](ardepthdata/confidencemap.md) property within [`ARDepthData`](ardepthdata.md) to measure the accuracy of the corresponding depth data [`depthMap`](ardepthdata/depthmap.md). Although this sample project doesn’t factor depth confidence into its fog effect, confidence data could filter out lower-accuracy depth values if the app’s algorithm required it.
+ARKit provides the [`confidenceMap`](./ardepthdata/confidencemap.md) property within [`ARDepthData`](./ardepthdata.md) to measure the accuracy of the corresponding depth data [`depthMap`](./ardepthdata/depthmap.md). Although this sample project doesn’t factor depth confidence into its fog effect, confidence data could filter out lower-accuracy depth values if the app’s algorithm required it.
 
 To provide a sense for depth confidence, this sample app visualizes confidence data at runtime using the `confidenceDebugVisualizationEnabled` in the `Shaders.metal` file.
 
@@ -173,7 +175,7 @@ To provide a sense for depth confidence, this sample app visualizes confidence d
 bool confidenceDebugVisualizationEnabled = false;
 ```
 
-When the renderer accesses the current frame’s scene depth, the sample project creates a Metal texture of the [`confidenceMap`](ardepthdata/confidencemap.md) to draw it on the GPU.
+When the renderer accesses the current frame’s scene depth, the sample project creates a Metal texture of the [`confidenceMap`](./ardepthdata/confidencemap.md) to draw it on the GPU.
 
 ```swift
 pixelBuffer = sceneDepth.confidenceMap
@@ -193,7 +195,7 @@ The GPU-side code fields confidence data as the fragment shader’s third textur
 texture2d<uint> arDepthConfidence [[ texture(3) ]])
 ```
 
-To access the confidence value of the current pixel’s depth, the fragment shader samples the confidence texture at `in.texCoordCamera`. Each confidence value in this texture is a `uint` equivalent of its corresponding case in the [`ARConfidenceLevel`](arconfidencelevel.md) enum.
+To access the confidence value of the current pixel’s depth, the fragment shader samples the confidence texture at `in.texCoordCamera`. Each confidence value in this texture is a `uint` equivalent of its corresponding case in the [`ARConfidenceLevel`](./arconfidencelevel.md) enum.
 
 ```cpp
 uint confidence = arDepthConfidence.sample(s, in.texCoordCamera).x;
@@ -213,19 +215,20 @@ return mix(confidenceColor, foggedColor, confidencePercentage);
 
 After Metal calls the fragment shader for every pixel, the view presents the camera image augmented with the confidence visualization.
 
-![Diagram of a scene containing real-world chairs. Confidence colorizes scene areas that contain disparate depth, such as on object edges.](/images/com.apple.arkit/ar-depth-confidence.png)
+![Diagram of a scene containing real-world chairs. Confidence colorizes scene areas that contain disparate depth, such as on object edges.](https://developer.apple.com/tutorials/images/com.apple.arkit/ar-depth-confidence.png)
 
-This sample uses the color red to identify parts of the scene in which depth confidence is less than [`ARConfidenceLevel.high`](arconfidencelevel/high.md). At low confidence depth values with a normalized percentage of `0`, the visualization renders solid red (`confidenceColor`). For high confidence depth values with a value of one, the `mix` call returns the unfiltered, fogged camera-image color (`foggedColor`). At medium-confidence areas of the scene, the `mix` call returns a blend of both colors that applies a reddish tint to the fogged camera-image.
+This sample uses the color red to identify parts of the scene in which depth confidence is less than [`ARConfidenceLevel.high`](./arconfidencelevel/high.md). At low confidence depth values with a normalized percentage of `0`, the visualization renders solid red (`confidenceColor`). For high confidence depth values with a value of one, the `mix` call returns the unfiltered, fogged camera-image color (`foggedColor`). At medium-confidence areas of the scene, the `mix` call returns a blend of both colors that applies a reddish tint to the fogged camera-image.
 
 ## See Also
 
-- [Displaying a point cloud using scene depth](displaying-a-point-cloud-using-scene-depth.md)
+### Video Frame Analysis
+- [Displaying a point cloud using scene depth](./displaying-a-point-cloud-using-scene-depth.md)
   Present a visualization of the physical environment by placing points based a scene’s depth data.
-- [class ARFrame](arframe.md)
+- [class ARFrame](./arframe.md)
   A video image captured as part of a session with position-tracking information.
-- [class ARPointCloud](arpointcloud.md)
+- [class ARPointCloud](./arpointcloud.md)
   A collection of points in the world coordinate space of the AR session.
-- [class ARDepthData](ardepthdata.md)
+- [class ARDepthData](./ardepthdata.md)
   An object that describes the distance to regions of the real world from the plane of the camera.
 
 

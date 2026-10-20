@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The contents of the command hierarchy.
@@ -26,7 +27,8 @@ For any commands that you create, provide a computed `body` property that define
 
 ## See Also
 
-- [associatedtype Body : Commands](commands/body-swift.associatedtype.md)
+### Implementing commands
+- [associatedtype Body : Commands](./body-swift.associatedtype.md)
   The type of commands that represents the body of this command hierarchy.
 
 

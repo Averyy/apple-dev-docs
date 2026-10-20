@@ -1,7 +1,8 @@
 # vmnet_start_interface_completion_handler_t
 
 **Framework**: vmnet  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the block provided in the call to vmnet_start_interface
 
@@ -15,17 +16,24 @@ The type of the block provided in the call to vmnet_start_interface
 typealias vmnet_start_interface_completion_handler_t = (vmnet_return_t, xpc_object_t?) -> Void
 ```
 
+```c
+typedef void (^)(enum vmnet_return_t, NSObject<OS_xpc_object> *) vmnet_start_interface_completion_handler_t;
+```
+
 #### Discussion
 
-- Parfameters: - status: If status is `VMNET_SUCCESS`, the framework created the interface successfully. Otherwise, the interface failed to be created.
-- interface_param: A dictionary containing interface parameters that describe the interface.
+- Parfameters:
+
+  - status: If status is `VMNET_SUCCESS`, the framework created the interface successfully. Otherwise, the interface failed to be created.
+  - interface_param: A dictionary containing interface parameters that describe the interface.
 
 ## See Also
 
-- [typealias vmnet_interface_completion_handler_t](vmnet_interface_completion_handler_t.md)
-- [typealias vmnet_interface_event_callback_t](vmnet_interface_event_callback_t.md)
-- [typealias vmnet_interface_get_ip_port_forwarding_rules_handler_t](vmnet_interface_get_ip_port_forwarding_rules_handler_t.md)
-- [typealias vmnet_interface_get_port_forwarding_rules_handler_t](vmnet_interface_get_port_forwarding_rules_handler_t.md)
+### Data types
+- [typealias vmnet_interface_completion_handler_t](./vmnet_interface_completion_handler_t.md)
+- [typealias vmnet_interface_event_callback_t](./vmnet_interface_event_callback_t.md)
+- [typealias vmnet_interface_get_ip_port_forwarding_rules_handler_t](./vmnet_interface_get_ip_port_forwarding_rules_handler_t.md)
+- [typealias vmnet_interface_get_port_forwarding_rules_handler_t](./vmnet_interface_get_port_forwarding_rules_handler_t.md)
 
 
 ---

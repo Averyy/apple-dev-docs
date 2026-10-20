@@ -1,7 +1,8 @@
 # NetService.Options
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These constants specify options for a network service.
 
@@ -19,32 +20,37 @@ These constants specify options for a network service.
 struct Options
 ```
 
+```c
+enum NSNetServiceOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var noAutoRename: NetService.Options](netservice/options/noautorename.md)
+- [static var noAutoRename: NetService.Options](./options/noautorename.md)
   Specifies that the network service should not rename itself in the event of a name collision.
-- [static var listenForConnections: NetService.Options](netservice/options/listenforconnections.md)
+- [static var listenForConnections: NetService.Options](./options/listenforconnections.md)
 ### Initializers
-- [init(rawValue: UInt)](netservice/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSNetServices Errors](nsnetservices-errors.md)
+### Constants
+- [NSNetServices Errors](../nsnetservices-errors.md)
   If an error occurs, the delegate error-handling methods return a dictionary with the following keys.
-- [NetService.ErrorCode](netservice/errorcode-swift.enum.md)
+- [NetService.ErrorCode](./errorcode-swift.enum.md)
   These constants identify errors that can occur when accessing net services.
 
 

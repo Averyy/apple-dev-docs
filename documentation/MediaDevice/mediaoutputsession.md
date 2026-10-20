@@ -1,7 +1,8 @@
 # MediaOutputSession
 
 **Framework**: Media Device  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a media output session for playing content on a remote device.
 
@@ -18,32 +19,33 @@ final class MediaOutputSession
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](./creating-a-media-device-extension.md)
 
 #### Overview
 
-Instances of this class are provided by the system when a [`MediaDeviceExtension`](mediadeviceextension.md) receives activation or playback requests. Use the session to associate device activations, playback events, and data communication with a specific media output context.
+Instances of this class are provided by the system when a [`MediaDeviceExtension`](./mediadeviceextension.md) receives activation or playback requests. Use the session to associate device activations, playback events, and data communication with a specific media output context.
 
 ## Topics
 
 ### Instance Properties
-- [let id: String](mediaoutputsession/id.md)
+- [let id: String](./mediaoutputsession/id.md)
   A unique identifier for this session.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MediaDeviceRoutingManager](mediadeviceroutingmanager.md)
-  An object used by a [`MediaDeviceExtension`](mediadeviceextension.md) to report device discovery, state changes, and playback events back to the system.
-- [protocol RealtimeSampleHandling](realtimesamplehandling.md)
+### Session and system communication
+- [class MediaDeviceRoutingManager](./mediadeviceroutingmanager.md)
+  An object used by a [`MediaDeviceExtension`](./mediadeviceextension.md) to report device discovery, state changes, and playback events back to the system.
+- [protocol RealtimeSampleHandling](./realtimesamplehandling.md)
   A protocol that extends a media device extension to support realtime sample delivery.
-- [struct MediaDeviceError](mediadeviceerror.md)
+- [struct MediaDeviceError](./mediadeviceerror.md)
   An error returned by MediaDeviceExtension operations.
 
 

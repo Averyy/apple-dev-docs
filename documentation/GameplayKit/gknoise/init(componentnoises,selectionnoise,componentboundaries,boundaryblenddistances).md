@@ -1,7 +1,8 @@
 # init(componentNoises:selectionNoise:componentBoundaries:boundaryBlendDistances:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a noise object by combining the specified noise objects, using another noise object and the specified boundaries to select which regions of the output correspond to which input noise.
 
@@ -19,13 +20,17 @@ Creates a noise object by combining the specified noise objects, using another n
 convenience init(componentNoises noises: [GKNoise], selectionNoise: GKNoise, componentBoundaries: [NSNumber], boundaryBlendDistances blendDistances: [NSNumber])
 ```
 
+```objc
++ (instancetype) noiseWithComponentNoises:(NSArray<GKNoise *> *) noises selectionNoise:(GKNoise *) selectionNoise componentBoundaries:(NSArray<NSNumber *> *) componentBoundaries boundaryBlendDistances:(NSArray<NSNumber *> *) blendDistances;
+```
+
 #### Return Value
 
 A new noise object.
 
 #### Discussion
 
-Use this method to create a composite noise map where different regions contain different kinds of noise. For example, you can generate realistic terrain textures by creating several noise objects to represent different biomes (such as ocean, grasslands, forests, and mountains), then combining them with this method. This method preserves the [`gradientColors`](gknoise/gradientcolors.md) property of each component noise object, so generating a colorized texture from the result with the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) [`init(noiseMap:)`](https://developer.apple.com/documentation/spritekit/sktexture/init(noisemap:)) method uses the color scheme for each component noise object in the regions where its content appears in the composite noise.
+Use this method to create a composite noise map where different regions contain different kinds of noise. For example, you can generate realistic terrain textures by creating several noise objects to represent different biomes (such as ocean, grasslands, forests, and mountains), then combining them with this method. This method preserves the [`gradientColors`](./gradientcolors.md) property of each component noise object, so generating a colorized texture from the result with the [`SKTexture`](../../SpriteKit/sktexture.md) [`init(noiseMap:)`](../../SpriteKit/sktexture/init%28noisemap%29.md) method uses the color scheme for each component noise object in the regions where its content appears in the composite noise.
 
 Noise values in the `selectionNoise` object determine which component noise objects “show through” in which areas of the output, and the `componentBoundaries` and `blendDistances` parameters determine which values in the selection noise correspond to which objects in the `noises` array. The `componentBoundaries` array defines boundaries between component noise fields, so the number of boundaries must be one less than the count of the `noises` array. (For example, if there are four component noise fields, there are three boundaries between them.) The `blendDistances` array defines the abruptness or smoothness of each boundary, so its count must match that of the `componentBoundaries` array.
 
@@ -33,18 +38,23 @@ For example, if you pass four noise objects for the `noises` parameter, the arra
 
 In this example, if the first value in the `blendDistances` array is `0.1`, the output noise uses values from the first noise field in areas where the selection noise value is between `-1.0` and `-0.55`, then in areas where the selection noise value is between `-0.55` and `-0.45` the output noise smoothly transitions between values from the first and second noise fields.
 
-![None](/images/com.apple.gameplaykit/media-2556367@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.gameplaykit/media-2556367@2x.png)
 
 ## Parameters
 
 - `noises`: The array of noise objects to combine.
 - `selectionNoise`: A noise object whose values determine which object from the `noises` array contributes to which region of the generated output.
-- `componentBoundaries`: An array of numbers specifying which values in the `selectionNoise` field correspond to which noise object in the `noises` array. The count of this array must be one less than the count of the `noises` array.
-- `blendDistances`: An array of numbers specifying the breadth of a smooth transition for each boundary specified in the `componentBoundaries` array. The count of this array must be one less than the count of the `noises` array (matching the count of the `componentBoundaries` array).
+- `componentBoundaries`: An array of numbers specifying which values in the `selectionNoise` field correspond to which noise object in the `noises` array.
+
+  The count of this array must be one less than the count of the `noises` array.
+- `blendDistances`: An array of numbers specifying the breadth of a smooth transition for each boundary specified in the `componentBoundaries` array.
+
+  The count of this array must be one less than the count of the `noises` array (matching the count of the `componentBoundaries` array).
 
 ## See Also
 
-- [convenience init(componentNoises: [GKNoise], selectionNoise: GKNoise)](gknoise/init(componentnoises:selectionnoise:).md)
+### Creating Noise by Combining Noise
+- [convenience init(componentNoises: [GKNoise], selectionNoise: GKNoise)](./init%28componentnoises,selectionnoise%29.md)
   Creates a noise object by combining the specified noise objects, using another noise object to select which regions of the output correspond to which input noise.
 
 

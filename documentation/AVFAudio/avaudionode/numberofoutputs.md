@@ -1,7 +1,8 @@
 # numberOfOutputs
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of output busses for the node.
 
@@ -20,11 +21,16 @@ The number of output busses for the node.
 var numberOfOutputs: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfOutputs;
+```
+
 ## See Also
 
-- [func outputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/outputformat(forbus:).md)
+### Inspecting output buses
+- [func outputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](./outputformat%28forbus%29.md)
   Retrieves the output format for the bus you specify.
-- [func name(forOutputBus: AVAudioNodeBus) -> String?](avaudionode/name(foroutputbus:).md)
+- [func name(forOutputBus: AVAudioNodeBus) -> String?](./name%28foroutputbus%29.md)
   Retrieves the name of the output bus you specify.
 
 

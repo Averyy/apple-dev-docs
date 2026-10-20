@@ -1,7 +1,8 @@
 # MapZoomStepper
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Buttons a person uses to adjust the zoom level of the map.
 
@@ -18,7 +19,7 @@ Buttons a person uses to adjust the zoom level of the map.
 
 #### Overview
 
-You typically use [`MapZoomStepper`](mapzoomstepper.md) with [`Map`](map.md) as a stand alone view, as shown in the following example:
+You typically use [`MapZoomStepper`](./mapzoomstepper.md) with [`Map`](./map.md) as a stand alone view, as shown in the following example:
 
 ```swift
     struct ZoomStepperTestView: View {
@@ -33,7 +34,7 @@ You typically use [`MapZoomStepper`](mapzoomstepper.md) with [`Map`](map.md) as 
     }
 ```
 
-You can also use a MapZoomStepper in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)) modifier, as show in here:
+You can also use a MapZoomStepper in conjunction with the [`mapControls(_:)`](../SwiftUI/view/mapcontrols%28_%29.md) modifier, as show in here:
 
 ```swift
     Map()
@@ -45,42 +46,43 @@ You can also use a MapZoomStepper in conjunction with the [`mapControls(_:)`](ht
 ## Topics
 
 ### Creating a zoom stepper
-- [init(scope: Namespace.ID?)](mapzoomstepper/init(scope:).md)
+- [init(scope: Namespace.ID?)](./mapzoomstepper/init%28scope%29.md)
   Creates a new zoom stepper with the scope you specify.
 ### Managing map control sizing and visibility
 - [func mapControlVisibility(Visibility) -> some View
-](../swiftui/view/mapcontrolvisibility(_:).md)
+](../SwiftUI/view/mapcontrolvisibility%28_%29.md)
   Configures all Map controls in the environment to have the specified visibility
 - [func mapControls(() -> some View) -> some View
-](../swiftui/view/mapcontrols(_:).md)
+](../SwiftUI/view/mapcontrols%28_%29.md)
   Configures all `Map` views in the associated environment to have standard size and position controls
-- [func controlSize(_:)](../swiftui/view/controlsize(_:).md)
+- [func controlSize(_:)](../SwiftUI/view/controlsize%28_%29.md)
   Sets the size for controls within this view.
 ### Setting the namespace identifier
 - [func mapScope(Namespace.ID) -> some View
-](../swiftui/view/mapscope(_:).md)
+](../SwiftUI/view/mapscope%28_%29.md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct MapCompass](mapcompass.md)
+### Map controls
+- [struct MapCompass](./mapcompass.md)
   A view that reflects the current orientation of the associated map.
-- [struct MapLocationCompass](maplocationcompass.md)
+- [struct MapLocationCompass](./maplocationcompass.md)
   A view that displays a combined user location button and map compass.
-- [struct MapPitchSlider](mappitchslider.md)
+- [struct MapPitchSlider](./mappitchslider.md)
   A slider control that allows a person to change the pitch of the map.
-- [struct MapPitchToggle](mappitchtoggle.md)
+- [struct MapPitchToggle](./mappitchtoggle.md)
   A button that sets the pitch of the associated map.
-- [struct MapScaleView](mapscaleview.md)
+- [struct MapScaleView](./mapscaleview.md)
   Displays a legend with distance information for the associated map.
-- [struct MapUserLocationButton](mapuserlocationbutton.md)
+- [struct MapUserLocationButton](./mapuserlocationbutton.md)
   A button that sets the framing of the associated map to the user location.
 
 

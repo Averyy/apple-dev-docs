@@ -1,16 +1,17 @@
 # init(zoneName:ownerName:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS ?+ - Deprecated
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.10+ - Deprecated in 10.12
+- tvOS 9.0+ - Deprecated in 10.0
+- visionOS - Deprecated
+- watchOS 3.0+ - Deprecated in 3.0
 
 ## Declaration
 

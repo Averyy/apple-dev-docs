@@ -1,7 +1,8 @@
 # attributeValues
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The values of each attribute associated with the node’s attached shader.
 
@@ -20,19 +21,24 @@ The values of each attribute associated with the node’s attached shader.
 var attributeValues: [String : SKAttributeValue] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nonnull) NSDictionary<NSString *,SKAttributeValue *> * attributeValues;
+```
+
 #### Discussion
 
-All nodes have their own copy of an attribute value and therefore the attribute values can be different per-node across the same [`SKShader`](skshader.md). If instead you need all nodes to share the same value, use [`SKUniform`](skuniform.md). Uniforms can change values every frame, but uniforms cannot vary per-node like attributes can.
+All nodes have their own copy of an attribute value and therefore the attribute values can be different per-node across the same [`SKShader`](../skshader.md). If instead you need all nodes to share the same value, use [`SKUniform`](../skuniform.md). Uniforms can change values every frame, but uniforms cannot vary per-node like attributes can.
 
 ## See Also
 
-- [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
+### Adding a Custom Shader to a Sprite
+- [Applying Shaders to a Sprite](../applying-shaders-to-a-sprite.md)
   Write custom GLSL code that modifies the look of your sprite.
-- [var shader: SKShader?](skspritenode/shader.md)
+- [var shader: SKShader?](./shader.md)
   A text file that defines code that does custom per-pixel drawing or colorization.
-- [func setValue(SKAttributeValue, forAttribute: String)](skspritenode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skspritenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./value%28forattributenamed%29.md)
   Sets the value of a shader attribute.
 
 

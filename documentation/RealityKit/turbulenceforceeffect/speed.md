@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The effect’s variation over time.
 

@@ -1,7 +1,8 @@
 # demands
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of the active demands of the constraint.
 

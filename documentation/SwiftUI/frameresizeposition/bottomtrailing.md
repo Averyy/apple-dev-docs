@@ -1,7 +1,8 @@
 # FrameResizePosition.bottomTrailing
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bottom trailing corner of the frame.
 

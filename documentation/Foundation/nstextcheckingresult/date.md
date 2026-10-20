@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date component of a type checking result.
 
@@ -20,15 +21,20 @@ The date component of a type checking result.
 var date: Date? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDate * date;
+```
+
 ## See Also
 
-- [class func dateCheckingResult(range: NSRange, date: Date) -> NSTextCheckingResult](nstextcheckingresult/datecheckingresult(range:date:).md)
+### Text Checking Results for Dates and Times
+- [class func dateCheckingResult(range: NSRange, date: Date) -> NSTextCheckingResult](./datecheckingresult%28range,date%29.md)
   Creates and returns a text checking result with the specified date.
-- [class func dateCheckingResult(range: NSRange, date: Date, timeZone: TimeZone, duration: TimeInterval) -> NSTextCheckingResult](nstextcheckingresult/datecheckingresult(range:date:timezone:duration:).md)
+- [class func dateCheckingResult(range: NSRange, date: Date, timeZone: TimeZone, duration: TimeInterval) -> NSTextCheckingResult](./datecheckingresult%28range,date,timezone,duration%29.md)
   Creates and returns a text checking result with the specified date, time zone, and duration.
-- [var duration: TimeInterval](nstextcheckingresult/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration component of a type checking result.
-- [var timeZone: TimeZone?](nstextcheckingresult/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone component of a type checking result.
 
 

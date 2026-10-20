@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Composes this supervised tabular estimator with another supervised tabular estimator.
 
@@ -18,6 +19,16 @@ Composes this supervised tabular estimator with another supervised tabular estim
 
 ```swift
 func appending<Other>(_ other: Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation> where Other : SupervisedTabularEstimator, Self.Annotation == Other.Annotation
+```
+
+**Other overloads**:
+
+```swift
+func appending<Other>(_ other: Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation> where Other : TabularEstimator
+```
+
+```swift
+func appending<Other>(_ other: Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>, Self.Annotation> where Other : TabularTransformer
 ```
 
 

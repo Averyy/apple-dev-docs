@@ -1,7 +1,8 @@
 # navigationBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The navigation bar of an app.
 
@@ -21,19 +22,20 @@ static var navigationBar: ToolbarPlacement { get }
 
 ## See Also
 
-- [static var automatic: ToolbarPlacement](toolbarplacement/automatic.md)
+### Getting placements
+- [static var automatic: ToolbarPlacement](./automatic.md)
   The primary toolbar.
-- [static func accessoryBar<ID>(id: ID) -> ToolbarPlacement](toolbarplacement/accessorybar(id:).md)
+- [static func accessoryBar<ID>(id: ID) -> ToolbarPlacement](./accessorybar%28id%29.md)
   Creates a unique accessory bar placement.
-- [static var bottomBar: ToolbarPlacement](toolbarplacement/bottombar.md)
+- [static var bottomBar: ToolbarPlacement](./bottombar.md)
   The bottom toolbar of an app.
-- [static var bottomOrnament: ToolbarPlacement](toolbarplacement/bottomornament.md)
+- [static var bottomOrnament: ToolbarPlacement](./bottomornament.md)
   The bottom ornament of an app.
-- [static var tabBar: ToolbarPlacement](toolbarplacement/tabbar.md)
+- [static var tabBar: ToolbarPlacement](./tabbar.md)
   The tab bar of an app.
-- [static var windowToolbar: ToolbarPlacement](toolbarplacement/windowtoolbar.md)
+- [static var windowToolbar: ToolbarPlacement](./windowtoolbar.md)
   The placement for the containing window’s toolbar, sometimes referred to as the titlebar.
-- [init<ID>(id: ID)](toolbarplacement/init(id:).md)
+- [init<ID>(id: ID)](./init%28id%29.md)
   Creates a custom accessory bar placement.
 
 

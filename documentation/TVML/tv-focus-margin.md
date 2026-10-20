@@ -1,6 +1,7 @@
 # tv-focus-margin
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the amount of space required for a custom cell element in focus.
 
@@ -8,7 +9,7 @@ Specifies the amount of space required for a custom cell element in focus.
 
 > ❗ **Important**: `tv-focus-margin` can only be used with custom cell elements created in your binary.
 
-##### Values for Tv Focus Margin
+##### Values for tv-focus-margin
 
 - **Integer**: The amount of space, in points, around each side of the cell indicating the room needed for a focusable, custom cell element.
 - **Integer, Integer**: The amount of space, in points, around each side of the cell indicating the room needed for a focusable, custom cell element. The first value controls the top and bottom. The second value controls the left and right sides.
@@ -19,13 +20,14 @@ Specifies the amount of space required for a custom cell element in focus.
 
 ## See Also
 
-- [margin](margin.md)
+### Element Spacing
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
-- [tv-line-spacing](tv-line-spacing.md)
+- [tv-line-spacing](./tv-line-spacing.md)
   Specifies the amount of space between lines of text.
 
 

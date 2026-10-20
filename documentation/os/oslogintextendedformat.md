@@ -1,7 +1,8 @@
 # OSLogIntExtendedFormat
 
 **Framework**: os  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for expanding bit rate information stored as an int during logging.
 
@@ -11,7 +12,7 @@ Options for expanding bit rate information stored as an int during logging.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,22 +24,23 @@ enum OSLogIntExtendedFormat
 ## Topics
 
 ### Expansion Options
-- [OSLogIntExtendedFormat.bitrate](oslogintextendedformat/bitrate.md)
-- [OSLogIntExtendedFormat.bitrateIEC](oslogintextendedformat/bitrateiec.md)
-- [OSLogIntExtendedFormat.byteCount](oslogintextendedformat/bytecount.md)
-- [OSLogIntExtendedFormat.byteCountIEC](oslogintextendedformat/bytecountiec.md)
+- [OSLogIntExtendedFormat.bitrate](./oslogintextendedformat/bitrate.md)
+- [OSLogIntExtendedFormat.bitrateIEC](./oslogintextendedformat/bitrateiec.md)
+- [OSLogIntExtendedFormat.byteCount](./oslogintextendedformat/bytecount.md)
+- [OSLogIntExtendedFormat.byteCountIEC](./oslogintextendedformat/bytecountiec.md)
 ### Enumeration Cases
-- [OSLogIntExtendedFormat.secondsSince1970](oslogintextendedformat/secondssince1970.md)
+- [OSLogIntExtendedFormat.secondsSince1970](./oslogintextendedformat/secondssince1970.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct OSLogInterpolation](osloginterpolation.md)
+### Value Interpolation
+- [struct OSLogInterpolation](./osloginterpolation.md)
   A container for the elements of a log message.
 
 

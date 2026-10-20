@@ -16,9 +16,9 @@ The system reports changes in your app’s execution state to your SwiftUI envir
 | Background | The system has given the watchOS app a small amount of background execution time. |
 | Suspended | The app is in memory but isn’t executing code. The system may purge suspended apps at any time to make room for other apps. |
 
-For more information, see [`Handling Common State Transitions`](handling-common-state-transitions.md).
+For more information, see [Handling Common State Transitions](./handling-common-state-transitions.md).
 
-##### Receive Background Information
+##### Receive background information
 
 When the system receives background data, it may not immediately wake the watchOS app to process that data. Instead, it may delay delivery of the data to preserve battery life.
 
@@ -27,24 +27,25 @@ If the app is currently running—either active and onscreen, or inactive and th
 ## Topics
 
 ### Responding to life cycle events
-- [Handling Common State Transitions](handling-common-state-transitions.md)
+- [Handling Common State Transitions](./handling-common-state-transitions.md)
   Detect and respond to common state transitions.
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Working with the watchOS app life cycle](./working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [Handling User Activity](handling-user-activity.md)
+- [Handling User Activity](./handling-user-activity.md)
   Detect and respond to user activity information from Handoff or a complication.
-- [Taking advantage of frontmost app state](taking-advantage-of-frontmost-app-state.md)
+- [Taking advantage of frontmost app state](./taking-advantage-of-frontmost-app-state.md)
   Understand the frontmost app state, and the features it provides to your app.
 
 ## See Also
 
-- [Background execution](background-execution.md)
+### Runtime management
+- [Background execution](./background-execution.md)
   Manage background sessions and tasks.
-- [Using extended runtime sessions](using-extended-runtime-sessions.md)
+- [Using extended runtime sessions](./using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [class WKExtendedRuntimeSession](wkextendedruntimesession.md)
+- [class WKExtendedRuntimeSession](./wkextendedruntimesession.md)
   A session that continues to run your app after the user has stopped interacting.
-- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
+- [Interacting with Bluetooth peripherals during background app refresh](./interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
   Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 

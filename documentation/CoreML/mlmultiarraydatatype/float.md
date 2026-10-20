@@ -1,7 +1,8 @@
 # float
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Designates the multiarray’s elements as floats.
 
@@ -20,18 +21,23 @@ Designates the multiarray’s elements as floats.
 static var float: MLMultiArrayDataType { get }
 ```
 
+```c
+MLMultiArrayDataTypeFloat
+```
+
 ## See Also
 
-- [MLMultiArrayDataType.int8](mlmultiarraydatatype/int8.md)
-- [MLMultiArrayDataType.int32](mlmultiarraydatatype/int32.md)
+### Multiarray data types
+- [MLMultiArrayDataType.int8](./int8.md)
+- [MLMultiArrayDataType.int32](./int32.md)
   Designates the multiarray’s elements as 32-bit integers.
-- [MLMultiArrayDataType.float16](mlmultiarraydatatype/float16.md)
+- [MLMultiArrayDataType.float16](./float16.md)
   Designates the multiarray’s elements as 16-bit floats.
-- [MLMultiArrayDataType.float32](mlmultiarraydatatype/float32.md)
+- [MLMultiArrayDataType.float32](./float32.md)
   Designates the multiarray’s elements as 32-bit floats.
-- [MLMultiArrayDataType.double](mlmultiarraydatatype/double.md)
+- [MLMultiArrayDataType.double](./double.md)
   Designates the multiarray’s elements as doubles.
-- [static var float64: MLMultiArrayDataType](mlmultiarraydatatype/float64.md)
+- [static var float64: MLMultiArrayDataType](./float64.md)
   Designates the multiarray’s elements as 64-bit floats.
 
 

@@ -1,7 +1,8 @@
 # GaussianSplatResource.SphericalHarmonicDegree.second
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 27 values: five second-order lobes plus the degree-one coefficients.
 

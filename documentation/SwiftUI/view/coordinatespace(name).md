@@ -1,18 +1,21 @@
 # coordinateSpace(name:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`coordinateSpace(_:)`](./coordinatespace%28_%29.md) instead.
 
 ## Declaration
 
@@ -54,11 +57,11 @@ struct ContentView: View {
 }
 ```
 
-Here, the [`VStack`](vstack.md) in the `ContentView` named “stack” is composed of a red frame with a custom [`Circle`](circle.md) view [`overlay(_:alignment:)`](view/overlay(_:alignment:).md) at its center.
+Here, the [`VStack`](../vstack.md) in the `ContentView` named “stack” is composed of a red frame with a custom [`Circle`](../circle.md) view [`overlay(_:alignment:)`](./overlay%28_,alignment%29.md) at its center.
 
-The `circle` view has an attached [`DragGesture`](draggesture.md) that targets the enclosing VStack’s coordinate space. As the gesture recognizer’s closure registers events inside `circle` it stores them in the shared `location` state variable and the [`VStack`](vstack.md) displays the coordinates in a [`Text`](text.md) view.
+The `circle` view has an attached [`DragGesture`](../draggesture.md) that targets the enclosing VStack’s coordinate space. As the gesture recognizer’s closure registers events inside `circle` it stores them in the shared `location` state variable and the [`VStack`](../vstack.md) displays the coordinates in a [`Text`](../text.md) view.
 
-![A screenshot showing an example of finding a named view and tracking](/images/com.apple.SwiftUI/SwiftUI-View-coordinateSpace@2x.png)
+![A screenshot showing an example of finding a named view and tracking](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-coordinateSpace@2x.png)
 
 ## Parameters
 
@@ -66,9 +69,10 @@ The `circle` view has an attached [`DragGesture`](draggesture.md) that targets t
 
 ## See Also
 
-- [func frame() -> some View](view/frame.md)
+### Layout modifiers
+- [func frame() -> some View](./frame%28%29.md)
   Positions this view within an invisible frame.
-- [func edgesIgnoringSafeArea(Edge.Set) -> some View](view/edgesignoringsafearea(_:).md)
+- [func edgesIgnoringSafeArea(Edge.Set) -> some View](./edgesignoringsafearea%28_%29.md)
   Changes the view’s proposed area to extend outside the screen’s safe areas.
 
 

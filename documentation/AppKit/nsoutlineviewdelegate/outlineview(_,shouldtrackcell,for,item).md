@@ -1,7 +1,8 @@
 # outlineView(_:shouldTrackCell:for:item:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a given cell should be tracked.
 
@@ -15,9 +16,13 @@ Returns a Boolean value that indicates whether a given cell should be tracked.
 optional func outlineView(_ outlineView: NSOutlineView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, item: Any) -> Bool
 ```
 
+```objc
+- (BOOL) outlineView:(NSOutlineView *) outlineView shouldTrackCell:(NSCell *) cell forTableColumn:(NSTableColumn *) tableColumn item:(id) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell should be tracked for the item `item` in column `tableColumn`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the cell should be tracked for the item `item` in column `tableColumn`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

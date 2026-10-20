@@ -1,7 +1,8 @@
 # infinite
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the region that encloses all points.
 
@@ -18,15 +19,20 @@ Returns the region that encloses all points.
 class var infinite: UIRegion { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIRegion * infiniteRegion;
+```
+
 #### Return Value
 
 A shared region object that encompasses an infinite area.
 
 ## See Also
 
-- [init(size: CGSize)](uiregion/init(size:).md)
+### Creating and initializing regions
+- [init(size: CGSize)](./init%28size%29.md)
   Initializes and returns a rectangular region of the specified size.
-- [init(radius: CGFloat)](uiregion/init(radius:).md)
+- [init(radius: CGFloat)](./init%28radius%29.md)
   Initializes and returns a region with a circular shape of the specified radius.
 
 

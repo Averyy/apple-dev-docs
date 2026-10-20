@@ -1,7 +1,8 @@
 # collectionView(_:shouldChangeItemsAt:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to approve the pending highlighting of the specified items.
 
@@ -15,9 +16,13 @@ Asks the delegate to approve the pending highlighting of the specified items.
 optional func collectionView(_ collectionView: NSCollectionView, shouldChangeItemsAt indexPaths: Set<IndexPath>, to highlightState: NSCollectionViewItem.HighlightState) -> Set<IndexPath>
 ```
 
+```objc
+- (NSSet<NSIndexPath *> *) collectionView:(NSCollectionView *) collectionView shouldChangeItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths toHighlightState:(NSCollectionViewItemHighlightState) highlightState;
+```
+
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the items that you want to receive the specified highlight. If you do not want any items to receive the specified highlight state, return an empty set.
+The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items that you want to receive the specified highlight. If you do not want any items to receive the specified highlight state, return an empty set.
 
 #### Discussion
 
@@ -28,12 +33,13 @@ If you do not implement this method, the collection view updates the highlight s
 ## Parameters
 
 - `collectionView`: The collection view making the request.
-- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the items being highlighted.
+- `indexPaths`: The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items being highlighted.
 - `highlightState`: The new highlight state for the items.
 
 ## See Also
 
-- [func collectionView(NSCollectionView, didChangeItemsAt: Set<IndexPath>, to: NSCollectionViewItem.HighlightState)](nscollectionviewdelegate/collectionview(_:didchangeitemsat:to:).md)
+### Managing Item Highlighting
+- [func collectionView(NSCollectionView, didChangeItemsAt: Set<IndexPath>, to: NSCollectionViewItem.HighlightState)](./collectionview%28_,didchangeitemsat,to%29.md)
   Notifies the delegate that the highlight state of the specified items changed.
 
 

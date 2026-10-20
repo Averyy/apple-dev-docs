@@ -1,7 +1,8 @@
 # init(allPass:percentagePass:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tool-call expectations evaluator.
 

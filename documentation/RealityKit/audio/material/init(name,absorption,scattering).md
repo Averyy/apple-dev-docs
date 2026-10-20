@@ -1,7 +1,8 @@
 # init(name:absorption:scattering:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio material from absorption and scattering data.
 

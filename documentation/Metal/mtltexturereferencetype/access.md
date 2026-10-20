@@ -1,7 +1,8 @@
 # access
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture’s read/write access to the argument.
 
@@ -19,17 +20,22 @@ The texture’s read/write access to the argument.
 var access: MTLBindingAccess { get }
 ```
 
+```objc
+@property (readonly) MTLBindingAccess access;
+```
+
 #### Discussion
 
-This property indicates the type of access qualifiers (read-only, write-only, or read-write) used in the Metal shading language code. For information on possible values, see [`MTLArgumentAccess`](mtlargumentaccess.md).
+This property indicates the type of access qualifiers (read-only, write-only, or read-write) used in the Metal shading language code. For information on possible values, see [`MTLArgumentAccess`](../mtlargumentaccess.md).
 
 ## See Also
 
-- [var textureType: MTLTextureType](mtltexturereferencetype/texturetype.md)
+### Describing the texture
+- [var textureType: MTLTextureType](./texturetype.md)
   The texture type of the texture.
-- [var textureDataType: MTLDataType](mtltexturereferencetype/texturedatatype.md)
+- [var textureDataType: MTLDataType](./texturedatatype.md)
   The data type of the texture.
-- [var isDepthTexture: Bool](mtltexturereferencetype/isdepthtexture.md)
+- [var isDepthTexture: Bool](./isdepthtexture.md)
   A Boolean value that indicates whether the texture is a depth texture.
 
 

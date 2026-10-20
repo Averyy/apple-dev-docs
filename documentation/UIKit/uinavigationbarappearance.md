@@ -1,7 +1,8 @@
 # UINavigationBarAppearance
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for customizing the appearance of a navigation bar.
 
@@ -19,59 +20,63 @@ An object for customizing the appearance of a navigation bar.
 class UINavigationBarAppearance
 ```
 
+```objc
+@interface UINavigationBarAppearance : UIBarAppearance
+```
+
 #### Overview
 
-After creating a [`UINavigationBarAppearance`](uinavigationbarappearance.md) object, use the methods and properties of this class to specify the appearance you want for items in the navigation bar. Use the inherited properties from [`UIBarAppearance`](uibarappearance.md) to configure the background and shadow attributes of the navigation bar itself.
+After creating a [`UINavigationBarAppearance`](./uinavigationbarappearance.md) object, use the methods and properties of this class to specify the appearance you want for items in the navigation bar. Use the inherited properties from [`UIBarAppearance`](./uibarappearance.md) to configure the background and shadow attributes of the navigation bar itself.
 
 ## Topics
 
 ### Configuring the title
-- [var titleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/titletextattributes.md)
+- [var titleTextAttributes: [NSAttributedString.Key : Any]](./uinavigationbarappearance/titletextattributes.md)
   String attributes to apply to the text of a standard-size title.
-- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/largetitletextattributes.md)
+- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]](./uinavigationbarappearance/largetitletextattributes.md)
   String attributes to apply to the text of a large-size title.
-- [var titlePositionAdjustment: UIOffset](uinavigationbarappearance/titlepositionadjustment.md)
+- [var titlePositionAdjustment: UIOffset](./uinavigationbarappearance/titlepositionadjustment.md)
   The distance, in points, by which to offset the title horizontally and vertically.
 ### Configuring the subtitle
-- [var subtitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/subtitletextattributes.md)
+- [var subtitleTextAttributes: [NSAttributedString.Key : Any]](./uinavigationbarappearance/subtitletextattributes.md)
   The default text attributes to apply to the subtitle rendered in the navigation bar.
-- [var largeSubtitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/largesubtitletextattributes.md)
+- [var largeSubtitleTextAttributes: [NSAttributedString.Key : Any]](./uinavigationbarappearance/largesubtitletextattributes.md)
   The default text attributes to apply to the subtitle when it’s rendered under the large title.
 ### Configuring bar button items
-- [var buttonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/buttonappearance.md)
+- [var buttonAppearance: UIBarButtonItemAppearance](./uinavigationbarappearance/buttonappearance.md)
   The appearance attributes for plain bar button items in the navigation bar.
 ### Configuring the Back button
-- [var backButtonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/backbuttonappearance.md)
+- [var backButtonAppearance: UIBarButtonItemAppearance](./uinavigationbarappearance/backbuttonappearance.md)
   The appearance attributes for the back button.
-- [var backIndicatorImage: UIImage](uinavigationbarappearance/backindicatorimage.md)
+- [var backIndicatorImage: UIImage](./uinavigationbarappearance/backindicatorimage.md)
   The image to display on the leading edge of the back button.
-- [var backIndicatorTransitionMaskImage: UIImage](uinavigationbarappearance/backindicatortransitionmaskimage.md)
+- [var backIndicatorTransitionMaskImage: UIImage](./uinavigationbarappearance/backindicatortransitionmaskimage.md)
   The image for masking content flowing under the back indicator image during push and pop transitions.
-- [func setBackIndicatorImage(UIImage?, transitionMaskImage: UIImage?)](uinavigationbarappearance/setbackindicatorimage(_:transitionmaskimage:).md)
+- [func setBackIndicatorImage(UIImage?, transitionMaskImage: UIImage?)](./uinavigationbarappearance/setbackindicatorimage%28_,transitionmaskimage%29.md)
   Sets the back button indicator image and its transition mask.
 ### Configuring the Done button
-- [var doneButtonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/donebuttonappearance.md)
+- [var doneButtonAppearance: UIBarButtonItemAppearance](./uinavigationbarappearance/donebuttonappearance.md)
   The appearance attributes for Done buttons.
 ### Instance Properties
-- [var prominentButtonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/prominentbuttonappearance.md)
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](./uinavigationbarappearance/prominentbuttonappearance.md)
   The appearance attributes for Prominent buttons.
 
 ## Relationships
 
 ### Inherits From
-- [UIBarAppearance](uibarappearance.md)
+- [UIBarAppearance](./uibarappearance.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

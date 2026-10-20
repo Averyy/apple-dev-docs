@@ -1,7 +1,8 @@
 # quit
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Quit menu.
 
@@ -18,15 +19,20 @@ The Quit menu.
 static let quit: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuQuit;
+```
+
 ## See Also
 
-- [static let about: UIMenu.Identifier](uimenu/identifier-swift.struct/about.md)
+### App menu commands
+- [static let about: UIMenu.Identifier](./about.md)
   The About menu.
-- [static let preferences: UIMenu.Identifier](uimenu/identifier-swift.struct/preferences.md)
+- [static let preferences: UIMenu.Identifier](./preferences.md)
   The Preferences menu.
-- [static let services: UIMenu.Identifier](uimenu/identifier-swift.struct/services.md)
+- [static let services: UIMenu.Identifier](./services.md)
   The Services menu.
-- [static let hide: UIMenu.Identifier](uimenu/identifier-swift.struct/hide.md)
+- [static let hide: UIMenu.Identifier](./hide.md)
   The Hide menu.
 
 

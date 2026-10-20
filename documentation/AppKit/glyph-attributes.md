@@ -1,35 +1,37 @@
 # Glyph Attributes
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Attributes that are used only inside the glyph generation machinery, but must also be shared between components.
 
 ## Topics
 
 ### Attributes
-- [var NSGlyphAttributeSoft: Int](nsglyphattributesoft.md)
+- [var NSGlyphAttributeSoft: Int](./nsglyphattributesoft.md)
   The glyph is soft.
-- [var NSGlyphAttributeElastic: Int](nsglyphattributeelastic.md)
+- [var NSGlyphAttributeElastic: Int](./nsglyphattributeelastic.md)
   The glyph is elastic.
-- [var NSGlyphAttributeBidiLevel: Int](nsglyphattributebidilevel.md)
+- [var NSGlyphAttributeBidiLevel: Int](./nsglyphattributebidilevel.md)
   The bidirectional level of the glyph.
-- [var NSGlyphAttributeInscribe: Int](nsglyphattributeinscribe.md)
+- [var NSGlyphAttributeInscribe: Int](./nsglyphattributeinscribe.md)
   The glyph inscription attribute.
 
 ## See Also
 
-- [enum NSMultibyteGlyphPacking](nsmultibyteglyphpacking.md)
+### Deprecated enumerations
+- [enum NSMultibyteGlyphPacking](./nsmultibyteglyphpacking.md)
   A constant for glyph packing.
-- [enum NSOpenGLGlobalOption](nsopenglglobaloption.md)
+- [enum NSOpenGLGlobalOption](./nsopenglglobaloption.md)
   Constants that specify OpenGL options.
-- [Data Entry Types](data-entry-types.md)
+- [Data Entry Types](./data-entry-types.md)
   These constants specify how a cell formats numeric data.
-- [Anonymous](nsbuttontypes-anonymous.md)
-- [Additional Writing Directions](additional-writing-directions.md)
+- [Anonymous](./nsbuttontypes-anonymous.md)
+- [Additional Writing Directions](./additional-writing-directions.md)
   Constants that specify additional options when setting the writing direction of attributed strings.
-- [Return values for modal operations](return-values-for-modal-operations.md)
-  Historical return values for [`runModal(for:)`](nsapplication/runmodal(for:).md) and [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md).
-- [Tags of Views in the FontPanel](tags-of-views-in-the-fontpanel.md)
+- [Return values for modal operations](./return-values-for-modal-operations.md)
+  Historical return values for [`runModal(for:)`](./nsapplication/runmodal%28for%29.md) and [`runModalSession(_:)`](./nsapplication/runmodalsession%28_%29.md).
+- [Tags of Views in the FontPanel](./tags-of-views-in-the-fontpanel.md)
   These constants are obsolete and should not be used.
 
 

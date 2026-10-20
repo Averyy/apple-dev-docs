@@ -1,7 +1,8 @@
 # location
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Location of the drag session in the local coordinate space.
 

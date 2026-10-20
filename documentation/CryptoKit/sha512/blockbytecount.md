@@ -1,7 +1,8 @@
 # blockByteCount
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bytes that represents the hash function’s internal state.
 
@@ -22,7 +23,8 @@ static let blockByteCount: Int
 
 ## See Also
 
-- [static let byteCount: Int](sha512/bytecount.md)
+### Inspecting hash information
+- [static let byteCount: Int](./bytecount.md)
   The number of bytes in a SHA512 digest.
 
 

@@ -1,7 +1,8 @@
 # externalIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An external identifier for the merchant.
 
@@ -18,17 +19,22 @@ An external identifier for the merchant.
 var externalIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * externalIdentifier;
+```
+
 #### Discussion
 
 An external identifier for the merchant that the app developer provides. If you request a payment token for another merchant, always use the same external identifier for that merchant in your app.
 
 ## See Also
 
-- [var merchantIdentifier: String](pkpaymenttokencontext/merchantidentifier.md)
+### Specifying the merchant
+- [var merchantIdentifier: String](./merchantidentifier.md)
   The Apply Pay merchant identifier.
-- [var merchantDomain: String?](pkpaymenttokencontext/merchantdomain.md)
+- [var merchantDomain: String?](./merchantdomain.md)
   The merchant’s top-level domain that the Apple Pay server associates with the payment token.
-- [var merchantName: String](pkpaymenttokencontext/merchantname.md)
+- [var merchantName: String](./merchantname.md)
   The merchant’s display name that the Apple Pay server associates with the payment token.
 
 

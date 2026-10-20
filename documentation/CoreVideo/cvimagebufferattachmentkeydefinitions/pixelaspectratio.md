@@ -1,7 +1,8 @@
 # pixelAspectRatio
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Pixel aspect ratio for the image buffer.
 

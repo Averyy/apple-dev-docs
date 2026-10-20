@@ -1,7 +1,8 @@
 # kQuartzFilterApplicationDomain
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -12,11 +13,16 @@
 let kQuartzFilterApplicationDomain: String
 ```
 
+```c
+extern NSString * kQuartzFilterApplicationDomain;
+```
+
 ## See Also
 
-- [var globalUpdateOK: DarwinBoolean](globalupdateok.md)
-- [let kQuartzFilterPDFWorkflowDomain: String](kquartzfilterpdfworkflowdomain.md)
-- [let kQuartzFilterPrintingDomain: String](kquartzfilterprintingdomain.md)
+### Constants
+- [var globalUpdateOK: DarwinBoolean](./globalupdateok.md)
+- [let kQuartzFilterPDFWorkflowDomain: String](./kquartzfilterpdfworkflowdomain.md)
+- [let kQuartzFilterPrintingDomain: String](./kquartzfilterprintingdomain.md)
 
 
 ---

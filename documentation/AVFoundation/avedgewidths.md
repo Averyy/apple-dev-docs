@@ -1,18 +1,19 @@
 # AVEdgeWidths
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines edge processing region widths.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,36 +21,41 @@ A structure that defines edge processing region widths.
 struct AVEdgeWidths
 ```
 
+```c
+typedef struct { ... } AVEdgeWidths;
+```
+
 ## Topics
 
 ### Edge widths
-- [var left: CGFloat](avedgewidths/left.md)
+- [var left: CGFloat](./avedgewidths/left.md)
   The left-edge width.
-- [var top: CGFloat](avedgewidths/top.md)
+- [var top: CGFloat](./avedgewidths/top.md)
   The top-edge width.
-- [var right: CGFloat](avedgewidths/right.md)
+- [var right: CGFloat](./avedgewidths/right.md)
   The right-edge width.
-- [var bottom: CGFloat](avedgewidths/bottom.md)
+- [var bottom: CGFloat](./avedgewidths/bottom.md)
   The bottom-edge width.
 ### Initializers
-- [init()](avedgewidths/init.md)
+- [init()](./avedgewidths/init%28%29.md)
   Creates an empty edge widths structure.
-- [init(left: CGFloat, top: CGFloat, right: CGFloat, bottom: CGFloat)](avedgewidths/init(left:top:right:bottom:).md)
+- [init(left: CGFloat, top: CGFloat, right: CGFloat, bottom: CGFloat)](./avedgewidths/init%28left,top,right,bottom%29.md)
   Creates an edge widths structure with floating-point values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var edgeWidths: AVEdgeWidths](avvideocompositionrendercontext/edgewidths.md)
+### Getting pixel and edge width information
+- [var edgeWidths: AVEdgeWidths](./avvideocompositionrendercontext/edgewidths.md)
   The width of the edge processing region on the left, top, right, and bottom edges, in pixels.
-- [var pixelAspectRatio: AVPixelAspectRatio](avvideocompositionrendercontext/pixelaspectratio.md)
+- [var pixelAspectRatio: AVPixelAspectRatio](./avvideocompositionrendercontext/pixelaspectratio.md)
   The pixel aspect ratio for rendered frames.
-- [struct AVPixelAspectRatio](avpixelaspectratio.md)
+- [struct AVPixelAspectRatio](./avpixelaspectratio.md)
   A structure that defines a pixel aspect ratio for a rendering context.
 
 

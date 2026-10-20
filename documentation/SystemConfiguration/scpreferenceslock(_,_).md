@@ -1,7 +1,8 @@
 # SCPreferencesLock(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Locks access to the configuration preferences.
 
@@ -14,13 +15,17 @@ Locks access to the configuration preferences.
 func SCPreferencesLock(_ prefs: SCPreferences, _ wait: Bool) -> Bool
 ```
 
+```c
+Boolean SCPreferencesLock(SCPreferencesRef prefs, Boolean wait);
+```
+
 #### Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
 
 #### Discussion
 
-This function obtains exclusive access to the configuration preferences. Clients attempting to obtain exclusive access to the preferences either receive a [`kSCStatusPrefsBusy`](kscstatusprefsbusy.md) error or they block, waiting for the lock to be released.
+This function obtains exclusive access to the configuration preferences. Clients attempting to obtain exclusive access to the preferences either receive a [`kSCStatusPrefsBusy`](./kscstatusprefsbusy.md) error or they block, waiting for the lock to be released.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ This function obtains exclusive access to the configuration preferences. Clients
 
 ## See Also
 
-- [func SCPreferencesUnlock(SCPreferences) -> Bool](scpreferencesunlock(_:).md)
+### Managing Access to a Preferences Session
+- [func SCPreferencesUnlock(SCPreferences) -> Bool](./scpreferencesunlock%28_%29.md)
   Releases exclusive access to the configuration preferences.
 
 

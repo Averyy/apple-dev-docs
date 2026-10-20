@@ -1,7 +1,8 @@
 # configurationSets
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration sets that configure the default prim or entity.
 

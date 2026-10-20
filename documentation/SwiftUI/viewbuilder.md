@@ -1,7 +1,8 @@
 # ViewBuilder
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom parameter attribute that constructs views from closures.
 
@@ -23,12 +24,12 @@ struct ViewBuilder
 
 ## Mentions
 
-- [Declaring a custom view](declaring-a-custom-view.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Declaring a custom view](./declaring-a-custom-view.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
-When you build your project in Xcode 26 and earlier, use [`ViewBuilder`](viewbuilder.md) as a parameter attribute for view-producing closure parameters, allowing those closures to provide multiple child views. For example, the following `contextMenu` function accepts a closure that produces one or more views via the view builder.
+When you build your project in Xcode 26 and earlier, use [`ViewBuilder`](./viewbuilder.md) as a parameter attribute for view-producing closure parameters, allowing those closures to provide multiple child views. For example, the following `contextMenu` function accepts a closure that produces one or more views via the view builder.
 
 ```swift
 func contextMenu<MenuItems: View>(
@@ -49,33 +50,34 @@ myView.contextMenu {
 }
 ```
 
-When you build in Xcode 27 and later for any version of SwiftUI, the system constructs type-agnostic content from `ViewBuilder` closures, and doesn’t restrict the types you use in closures to conform to [`View`](view.md). Mark closures with the type alias [`ContentBuilder`](contentbuilder.md) instead to indicate where your code expects this behavior. For more information, see [`ContentBuilder`](contentbuilder.md).
+When you build in Xcode 27 and later for any version of SwiftUI, the system constructs type-agnostic content from `ViewBuilder` closures, and doesn’t restrict the types you use in closures to conform to [`View`](./view.md). Mark closures with the type alias [`ContentBuilder`](./contentbuilder.md) instead to indicate where your code expects this behavior. For more information, see [`ContentBuilder`](./contentbuilder.md).
 
 ## Topics
 
 ### Building content
-- [static buildBlock()](viewbuilder/buildblock.md)
+- [static buildBlock()](./viewbuilder/buildblock%28%29.md)
   Builds an empty content from a block containing no statements.
-- [static buildBlock(_:)](viewbuilder/buildblock(_:).md)
+- [static buildBlock(_:)](./viewbuilder/buildblock%28_%29.md)
   Passes a single piece of content written as a child view through unmodified.
 ### Conditionally building content
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(first:).md)
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](./viewbuilder/buildeither%28first%29.md)
   Produces content for a conditional statement in a multi-statement closure when the condition is true.
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(second:).md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](./viewbuilder/buildeither%28second%29.md)
   Produces content for a conditional statement in a multi-statement closure when the condition is false.
-- [static buildIf(_:)](viewbuilder/buildif(_:).md)
+- [static buildIf(_:)](./viewbuilder/buildif%28_%29.md)
   Produces optional content for conditional statements in multi-statement closures that’s only included when the condition evaluates to true.
-- [static buildLimitedAvailability(_:)](viewbuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./viewbuilder/buildlimitedavailability%28_%29.md)
 
 ## See Also
 
-- [Declaring a custom view](declaring-a-custom-view.md)
+### Creating a view
+- [Declaring a custom view](./declaring-a-custom-view.md)
   Define views and assemble them into a view hierarchy.
-- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
+- [Wishlist: Planning travel in a SwiftUI app](./wishlist-planning-travel-in-a-swiftui-app.md)
   Build a travel planning app that organizes trips into collections and tracks activity completion.
-- [protocol View](view.md)
+- [protocol View](./view.md)
   A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
-- [typealias ContentBuilder](contentbuilder.md)
+- [typealias ContentBuilder](./contentbuilder.md)
   A custom parameter attribute that constructs views and other content types from closures.
 
 

@@ -1,7 +1,8 @@
 # NSSwappedDouble
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Opaque structure containing endian-independent `double` value.
 
@@ -20,30 +21,35 @@ Opaque structure containing endian-independent `double` value.
 struct NSSwappedDouble
 ```
 
+```c
+typedef struct { ... } NSSwappedDouble;
+```
+
 #### Overview
 
-The fields of an [`NSSwappedDouble`](nsswappeddouble.md) are private.
+The fields of an [`NSSwappedDouble`](./nsswappeddouble.md) are private.
 
 ## Topics
 
 ### Initializers
-- [init()](nsswappeddouble/init.md)
-- [init(v: UInt64)](nsswappeddouble/init(v:).md)
+- [init()](./nsswappeddouble/init%28%29.md)
+- [init(v: UInt64)](./nsswappeddouble/init%28v%29.md)
 ### Instance Properties
-- [var v: UInt64](nsswappeddouble/v.md)
+- [var v: UInt64](./nsswappeddouble/v.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NSSwappedFloat](nsswappedfloat.md)
+### Constants
+- [struct NSSwappedFloat](./nsswappedfloat.md)
   Opaque type containing an endian-independent `float` value.
-- [Byte Order](byte-order-constants.md)
+- [Byte Order](./byte-order-constants.md)
   Recognize constants that specify a byte-order format.
 
 

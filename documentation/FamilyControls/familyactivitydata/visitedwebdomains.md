@@ -1,7 +1,8 @@
 # visitedWebDomains
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Web domains someone visits on their device.
 
@@ -19,15 +20,16 @@ var visitedWebDomains: [WebDomain] { get async throws }
 
 Each web domain contains both a `domain` and a `token`.
 
-> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it will always throw an error.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](../authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it will always throw an error.
 
 ## See Also
 
-- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+### Accessing activity data
+- [static let shared: FamilyActivityData](./shared.md)
   A shared instance for accessing a person’s family activity data.
-- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+- [var activityCategories: Set<ActivityCategory>](./activitycategories.md)
   The set of all possible activity categories.
-- [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
+- [var installedApplications: [Application]](./installedapplications.md)
   Applications someone installs on a device.
 
 

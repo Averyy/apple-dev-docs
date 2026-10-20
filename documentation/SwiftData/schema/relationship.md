@@ -1,7 +1,8 @@
 # Schema.Relationship
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the configuration and behavior of a relationship between two model classes.
 
@@ -24,37 +25,37 @@ final class Relationship
 ## Topics
 
 ### Creating a relationship
-- [init(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](schema/relationship/init(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
+- [init(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](./relationship/init%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md)
 ### Managing the configuration
-- [var keypath: AnyKeyPath?](schema/relationship/keypath.md)
-- [var destination: String](schema/relationship/destination.md)
-- [var inverseName: String?](schema/relationship/inversename.md)
-- [var inverseKeyPath: AnyKeyPath?](schema/relationship/inversekeypath.md)
-- [var deleteRule: Schema.Relationship.DeleteRule](schema/relationship/deleterule-swift.property.md)
-- [Schema.Relationship.DeleteRule](schema/relationship/deleterule-swift.enum.md)
+- [var keypath: AnyKeyPath?](./relationship/keypath.md)
+- [var destination: String](./relationship/destination.md)
+- [var inverseName: String?](./relationship/inversename.md)
+- [var inverseKeyPath: AnyKeyPath?](./relationship/inversekeypath.md)
+- [var deleteRule: Schema.Relationship.DeleteRule](./relationship/deleterule-swift.property.md)
+- [Schema.Relationship.DeleteRule](./relationship/deleterule-swift.enum.md)
   Describes the rule to apply when deleting a model containing references to other models.
-- [var isToOneRelationship: Bool](schema/relationship/istoonerelationship.md)
+- [var isToOneRelationship: Bool](./relationship/istoonerelationship.md)
 ### Determining behavior
-- [var options: [Schema.Relationship.Option]](schema/relationship/options.md)
+- [var options: [Schema.Relationship.Option]](./relationship/options.md)
 ### Versioning
-- [var hashModifier: String?](schema/relationship/hashmodifier.md)
+- [var hashModifier: String?](./relationship/hashmodifier.md)
 ### Structures
-- [Schema.Relationship.Option](schema/relationship/option.md)
+- [Schema.Relationship.Option](./relationship/option.md)
 ### Instance Properties
-- [var maximumModelCount: Int?](schema/relationship/maximummodelcount.md)
-- [var minimumModelCount: Int?](schema/relationship/minimummodelcount.md)
+- [var maximumModelCount: Int?](./relationship/maximummodelcount.md)
+- [var minimumModelCount: Int?](./relationship/minimummodelcount.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [SchemaProperty](schemaproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [SchemaProperty](../schemaproperty.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

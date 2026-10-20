@@ -1,18 +1,19 @@
 # SparseIterativeStatus_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that define the status of the iterative solve.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,32 +21,36 @@ Constants that define the status of the iterative solve.
 struct SparseIterativeStatus_t
 ```
 
+```c
+typedef enum { ... } SparseIterativeStatus_t;
+```
+
 ## Topics
 
 ### Constants
-- [var SparseIterativeConverged: SparseIterativeStatus_t](sparseiterativeconverged.md)
+- [var SparseIterativeConverged: SparseIterativeStatus_t](./sparseiterativeconverged.md)
   A status that indicates the convergence of all solutions.
-- [var SparseIterativeIllConditioned: SparseIterativeStatus_t](sparseiterativeillconditioned.md)
+- [var SparseIterativeIllConditioned: SparseIterativeStatus_t](./sparseiterativeillconditioned.md)
   A status that indicates the operation determines the problem is sufficiently ill-conditioned that convergence is unlikely.
-- [var SparseIterativeInternalError: SparseIterativeStatus_t](sparseiterativeinternalerror.md)
+- [var SparseIterativeInternalError: SparseIterativeStatus_t](./sparseiterativeinternalerror.md)
   A status that indicates an internal failure.
-- [var SparseIterativeMaxIterations: SparseIterativeStatus_t](sparseiterativemaxiterations.md)
+- [var SparseIterativeMaxIterations: SparseIterativeStatus_t](./sparseiterativemaxiterations.md)
   A status that indicates a failure to converge one or more solutions in the maximum number of iterations.
-- [var SparseIterativeParameterError: SparseIterativeStatus_t](sparseiterativeparametererror.md)
+- [var SparseIterativeParameterError: SparseIterativeStatus_t](./sparseiterativeparametererror.md)
   A status that indicates an error with one or more parameters.
 ### Raw Values
-- [init(Int32)](sparseiterativestatus_t/init(_:).md)
-- [init(rawValue: Int32)](sparseiterativestatus_t/init(rawvalue:).md)
-- [var rawValue: Int32](sparseiterativestatus_t/rawvalue.md)
+- [init(Int32)](./sparseiterativestatus_t/init%28_%29.md)
+- [init(rawValue: Int32)](./sparseiterativestatus_t/init%28rawvalue%29.md)
+- [var rawValue: Int32](./sparseiterativestatus_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

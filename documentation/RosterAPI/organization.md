@@ -1,7 +1,8 @@
 # Organization
 
 **Framework**: Roster API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about an Apple School Manager organization.
 
@@ -10,7 +11,7 @@ Information about an Apple School Manager organization.
 
 ## Declaration
 
-```swift
+```
 object Organization
 ```
 
@@ -25,9 +26,10 @@ object Organization
 
 ## See Also
 
-- [Read the organization](returns-organization-infrmation.md)
+### Information about the organization
+- [Read the organization](./returns-organization-infrmation.md)
   Returns information about the Apple School Manager organization.
-- [object Domain](domain.md)
+- [object Domain](./domain.md)
   A DNS domain name associated with an Apple School Manager organization.
 
 

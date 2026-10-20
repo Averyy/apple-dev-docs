@@ -1,7 +1,8 @@
 # context
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that your game uses.
 

@@ -1,7 +1,8 @@
 # Date.AnchoredRelativeFormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
 
@@ -23,38 +24,38 @@ struct AnchoredRelativeFormatStyle
 ## Topics
 
 ### Initializers
-- [init(anchor: Date, allowedFields: Set<Date.AnchoredRelativeFormatStyle.Field>, presentation: Date.AnchoredRelativeFormatStyle.Presentation, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](date/anchoredrelativeformatstyle/init(anchor:allowedfields:presentation:unitsstyle:locale:calendar:capitalizationcontext:).md)
+- [init(anchor: Date, allowedFields: Set<Date.AnchoredRelativeFormatStyle.Field>, presentation: Date.AnchoredRelativeFormatStyle.Presentation, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](./anchoredrelativeformatstyle/init%28anchor,allowedfields,presentation,unitsstyle,locale,calendar,capitalizationcontext%29.md)
   Create a relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
-- [init(anchor: Date, presentation: Date.AnchoredRelativeFormatStyle.Presentation, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](date/anchoredrelativeformatstyle/init(anchor:presentation:unitsstyle:locale:calendar:capitalizationcontext:).md)
+- [init(anchor: Date, presentation: Date.AnchoredRelativeFormatStyle.Presentation, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](./anchoredrelativeformatstyle/init%28anchor,presentation,unitsstyle,locale,calendar,capitalizationcontext%29.md)
   Create a relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
 ### Instance Properties
-- [var allowedFields: Set<Date.AnchoredRelativeFormatStyle.Field>](date/anchoredrelativeformatstyle/allowedfields.md)
+- [var allowedFields: Set<Date.AnchoredRelativeFormatStyle.Field>](./anchoredrelativeformatstyle/allowedfields.md)
   The fields that can be used in the formatted output.
-- [var anchor: Date](date/anchoredrelativeformatstyle/anchor.md)
+- [var anchor: Date](./anchoredrelativeformatstyle/anchor.md)
   The date the formatted output refers to from the perspective of the input values.
-- [var calendar: Calendar](date/anchoredrelativeformatstyle/calendar.md)
-- [var capitalizationContext: FormatStyleCapitalizationContext](date/anchoredrelativeformatstyle/capitalizationcontext.md)
-- [var locale: Locale](date/anchoredrelativeformatstyle/locale.md)
-- [var presentation: Date.AnchoredRelativeFormatStyle.Presentation](date/anchoredrelativeformatstyle/presentation-swift.property.md)
-- [var unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle](date/anchoredrelativeformatstyle/unitsstyle-swift.property.md)
+- [var calendar: Calendar](./anchoredrelativeformatstyle/calendar.md)
+- [var capitalizationContext: FormatStyleCapitalizationContext](./anchoredrelativeformatstyle/capitalizationcontext.md)
+- [var locale: Locale](./anchoredrelativeformatstyle/locale.md)
+- [var presentation: Date.AnchoredRelativeFormatStyle.Presentation](./anchoredrelativeformatstyle/presentation-swift.property.md)
+- [var unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle](./anchoredrelativeformatstyle/unitsstyle-swift.property.md)
 ### Type Aliases
-- [Date.AnchoredRelativeFormatStyle.Field](date/anchoredrelativeformatstyle/field.md)
-- [Date.AnchoredRelativeFormatStyle.Presentation](date/anchoredrelativeformatstyle/presentation-swift.typealias.md)
-- [Date.AnchoredRelativeFormatStyle.UnitsStyle](date/anchoredrelativeformatstyle/unitsstyle-swift.typealias.md)
+- [Date.AnchoredRelativeFormatStyle.Field](./anchoredrelativeformatstyle/field.md)
+- [Date.AnchoredRelativeFormatStyle.Presentation](./anchoredrelativeformatstyle/presentation-swift.typealias.md)
+- [Date.AnchoredRelativeFormatStyle.UnitsStyle](./anchoredrelativeformatstyle/unitsstyle-swift.typealias.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

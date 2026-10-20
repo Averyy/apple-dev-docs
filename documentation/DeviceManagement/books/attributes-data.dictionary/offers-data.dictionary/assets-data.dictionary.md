@@ -1,14 +1,15 @@
 # Books.Attributes.Offers.Assets
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Books.Attributes.Offers.Assets
 ```
 
@@ -20,8 +21,9 @@ object Books.Attributes.Offers.Assets
 
 ## See Also
 
-- [object Books.Attributes.Offers.Discounts](books/attributes-data.dictionary/offers-data.dictionary/discounts-data.dictionary.md)
-- [object Books.Attributes.Offers.Download](books/attributes-data.dictionary/offers-data.dictionary/download-data.dictionary.md)
+### Related Objects
+- [object Books.Attributes.Offers.Discounts](./discounts-data.dictionary.md)
+- [object Books.Attributes.Offers.Download](./download-data.dictionary.md)
 
 
 ---

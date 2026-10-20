@@ -1,7 +1,8 @@
 # Balance
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes an account balance.
 
@@ -18,36 +19,37 @@ struct Balance
 ## Topics
 
 ### Instance Properties
-- [let amount: CurrencyAmount](balance/amount.md)
+- [let amount: CurrencyAmount](./balance/amount.md)
   The amount of the balance.
-- [let asOfDate: Date](balance/asofdate.md)
+- [let asOfDate: Date](./balance/asofdate.md)
   The date and time the system calculated the balance.
-- [let creditDebitIndicator: CreditDebitIndicator](balance/creditdebitindicator.md)
+- [let creditDebitIndicator: CreditDebitIndicator](./balance/creditdebitindicator.md)
   A value that indicates whether the balance is a credit or a debit balance.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance]](financestore/accountbalances(query:).md)
+### Balances
+- [func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance]](./financestore/accountbalances%28query%29.md)
   Returns a list of balances that meet the criteria in the provided account query.
-- [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](financestore/accountbalancehistory(foraccountid:since:ismonitoring:).md)
+- [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](./financestore/accountbalancehistory%28foraccountid,since,ismonitoring%29.md)
   Returns the account balance history since a time specified by the provided financial history token.
-- [struct AccountBalance](accountbalance.md)
+- [struct AccountBalance](./accountbalance.md)
   A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
-- [struct AccountBalanceQuery](accountbalancequery.md)
+- [struct AccountBalanceQuery](./accountbalancequery.md)
   A structure that defines an account balance query.
-- [enum CreditDebitIndicator](creditdebitindicator.md)
+- [enum CreditDebitIndicator](./creditdebitindicator.md)
   Values that the framework uses to describe transactions as credits or debits.
-- [enum CurrentBalance](currentbalance.md)
+- [enum CurrentBalance](./currentbalance.md)
   Values that describe the state of an account’s credit balance.
 
 

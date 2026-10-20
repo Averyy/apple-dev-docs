@@ -1,7 +1,8 @@
 # leftButton
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The left button on the mouse.
 
@@ -19,13 +20,18 @@ The left button on the mouse.
 var leftButton: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * leftButton;
+```
+
 ## See Also
 
-- [var rightButton: GCControllerButtonInput?](gcmouseinput/rightbutton.md)
+### Accessing Buttons
+- [var rightButton: GCControllerButtonInput?](./rightbutton.md)
   The optional right button on the mouse.
-- [var middleButton: GCControllerButtonInput?](gcmouseinput/middlebutton.md)
+- [var middleButton: GCControllerButtonInput?](./middlebutton.md)
   The optional middle button on the mouse.
-- [var auxiliaryButtons: [GCControllerButtonInput]?](gcmouseinput/auxiliarybuttons.md)
+- [var auxiliaryButtons: [GCControllerButtonInput]?](./auxiliarybuttons.md)
   The optional additional buttons on the mouse.
 
 

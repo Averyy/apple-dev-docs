@@ -1,6 +1,7 @@
 # Applying vImage operations to regions of interest
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Limit the effect of vImage operations to rectangular regions of interest.
 
@@ -10,11 +11,11 @@ You can apply vImage operations, such as blurs and color transforms, to specifie
 
 The following image is an example of the effects possible when you use the techniques in this article. The image shows a single photograph with a portrait-format ROI that the code has desaturated and a landscape-format ROI that the code has blurred.
 
-![A photograph of fruit with a blurred horizontal strip, and a grayscale vertical strip.](/images/com.apple.accelerate/media-3377260@2x.png)
+![A photograph of fruit with a blurred horizontal strip, and a grayscale vertical strip.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3377260@2x.png)
 
-##### Applying Operations to an Roi of a Pixel Buffer
+##### Applying operations to an ROI of a pixel buffer
 
-If you’re developing apps with Xcode 14.0 or later, the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structure provides the [`withUnsafeRegionOfInterest(_:_:)`](vimage/pixelbuffer/withunsaferegionofinterest(_:_:).md) function, which simplifies applying operations to ROIs. The following code creates the image above:
+If you’re developing apps with Xcode 14.0 or later, the [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure provides the [`withUnsafeRegionOfInterest(_:_:)`](./vimage/pixelbuffer/withunsaferegionofinterest%28_,_%29.md) function, which simplifies applying operations to ROIs. The following code creates the image above:
 
 ```swift
 // The `source` is a `vImage.PixelBuffer<vImage.Interleaved8x4>` that contains an ARGB8888 image.
@@ -44,9 +45,9 @@ source.withUnsafeRegionOfInterest(portraitROI) { src in
 }
 ```
 
-On return, the destination [`vImage.PixelBuffer`](vimage/pixelbuffer.md) contains the final image.
+On return, the destination [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) contains the final image.
 
-This article implements the remaining code in this article as extensions to the [`vImage_Buffer`](vimage_buffer.md) structure. The two function calls below created the image above:
+This article implements the remaining code in this article as extensions to the [`vImage_Buffer`](./vimage_buffer.md) structure. The two function calls below created the image above:
 
 ```swift
 // The `source` is a `vImage_Buffer` that contains an ARGB8888 image.
@@ -58,9 +59,9 @@ let destination = source.blurred_ARGB8888(regionOfInterest: CGRect( ... ),
 
 ```
 
-##### Apply an in Place Operation to an Roi
+##### Apply an in-place operation to an ROI
 
-For vImage routines that can operate in-place (that is, the operation mutates the source buffer’s contents), create a mutating function that applies that routine to an ROI. The following code is the function header for a desaturation function based around [`vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)`](vimagematrixmultiply_argb8888(_:_:_:_:_:_:_:).md):
+For vImage routines that can operate in-place (that is, the operation mutates the source buffer’s contents), create a mutating function that applies that routine to an ROI. The following code is the function header for a desaturation function based around [`vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)`](./vimagematrixmultiply_argb8888%28_,_,_,_,_,_,_%29.md):
 
 ```swift
 extension vImage_Buffer {
@@ -87,7 +88,7 @@ The following code calculates the first pixel in the source buffer for the ROI:
                     Int(roi.origin.x) * bytesPerPixel
 ```
 
-The `start` value defines the offset to the data pointer for a second [`vImage_Buffer`](vimage_buffer.md) structure that references the source buffer’s data with a size that equals the ROI.
+The `start` value defines the offset to the data pointer for a second [`vImage_Buffer`](./vimage_buffer.md) structure that references the source buffer’s data with a size that equals the ROI.
 
 **Swift**:
 
@@ -109,7 +110,7 @@ vImage_Buffer desaturationBuffer = {
 };
 ```
 
-On return, `desaturationBuffer` contains a reference to the data in the source buffer that the supplied ROI defines. Calling [`vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)`](vimagematrixmultiply_argb8888(_:_:_:_:_:_:_:).md) with `desaturationBuffer` as both the source and the destination performs the matrix multiplication on the pixels in the ROI:
+On return, `desaturationBuffer` contains a reference to the data in the source buffer that the supplied ROI defines. Calling [`vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)`](./vimagematrixmultiply_argb8888%28_,_,_,_,_,_,_%29.md) with `desaturationBuffer` as both the source and the destination performs the matrix multiplication on the pixels in the ROI:
 
 **Swift**:
 
@@ -167,17 +168,17 @@ if (error != kvImageNoError) {
 }
 ```
 
-To learn more about using matrix multiplication to convert color images to grayscale, see [`Converting color images to grayscale`](converting-color-images-to-grayscale.md).
+To learn more about using matrix multiplication to convert color images to grayscale, see [Converting color images to grayscale](./converting-color-images-to-grayscale.md).
 
 The following shows the result of desaturating an ROI:
 
-![A photograph of fruit with a grayscale vertical strip.](/images/com.apple.accelerate/media-3377262@2x.png)
+![A photograph of fruit with a grayscale vertical strip.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3377262@2x.png)
 
-##### Apply an Out of Place Operation to an Roi
+##### Apply an out-of-place operation to an ROI
 
-For vImage routines that don’t operate in-place, create a non-mutating function that applies that routine to an ROI and returns a new [`vImage_Buffer`](vimage_buffer.md) structure that contains the result.
+For vImage routines that don’t operate in-place, create a non-mutating function that applies that routine to an ROI and returns a new [`vImage_Buffer`](./vimage_buffer.md) structure that contains the result.
 
-The following code is the function header for a blurring function that applies [`vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)`](vimagetentconvolve_argb8888(_:_:_:_:_:_:_:_:_:).md):
+The following code is the function header for a blurring function that applies [`vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)`](./vimagetentconvolve_argb8888%28_,_,_,_,_,_,_,_,_%29.md):
 
 ```swift
 extension vImage_Buffer {
@@ -186,7 +187,7 @@ extension vImage_Buffer {
                           blurRadius: Int) -> vImage_Buffer? {
 ```
 
-The function performs the same check as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md) on the ROI size:
+The function performs the same check as [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md) on the ROI size:
 
 ```swift
         guard Int(roi.maxX) <= width && Int(roi.maxY) <= height &&
@@ -238,7 +239,7 @@ vImageCopyBuffer(self,
                  kvImageNoFlags);
 ```
 
-The out-of-place function uses the same approach as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
+The out-of-place function uses the same approach as [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
 
 **Swift**:
 
@@ -266,7 +267,7 @@ vImage_Buffer blurDestination = {
 };
 ```
 
-Finally, the [`vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)`](vimagetentconvolve_argb8888(_:_:_:_:_:_:_:_:_:).md) function applies the blur to the source and writes the result to `blurDestination`.
+Finally, the [`vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)`](./vimagetentconvolve_argb8888%28_,_,_,_,_,_,_,_,_%29.md) function applies the blur to the source and writes the result to `blurDestination`.
 
 **Swift**:
 
@@ -323,27 +324,28 @@ return destination;
 
 The following shows the result of blurring an ROI:
 
-![Photograph with a blurred horizontal strip.](/images/com.apple.accelerate/media-3377259@2x.png)
+![Photograph with a blurred horizontal strip.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3377259@2x.png)
 
 ## See Also
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+### Image Processing Essentials
+- [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
   Pass image data between Core Graphics and vImage to create and manipulate images.
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md)
   Initialize vImage buffers from Core Graphics images.
-- [Creating a Core Graphics Image from a vImage Buffer](creating-a-core-graphics-image-from-a-vimage-buffer.md)
+- [Creating a Core Graphics Image from a vImage Buffer](./creating-a-core-graphics-image-from-a-vimage-buffer.md)
   Create displayable representations of vImage buffers.
-- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md)
   Resize an image with vImage.
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
   Combine two images by using blend modes to create a single output.
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
   Improve your app’s performance by converting image buffer formats from interleaved to planar.
-- [vImage](vimage-library.md)
+- [vImage](./vimage-library.md)
   Manipulate large images using the CPU’s vector processor.
 
 

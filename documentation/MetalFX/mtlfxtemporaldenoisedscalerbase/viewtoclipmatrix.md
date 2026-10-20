@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The view-to-clip coordinates transformation matrix this scaler uses as part of its operation.
@@ -17,6 +18,10 @@ The view-to-clip coordinates transformation matrix this scaler uses as part of i
 
 ```swift
 var viewToClipMatrix: simd_float4x4 { get set }
+```
+
+```objc
+@property (nonatomic) simd_float4x4 viewToClipMatrix;
 ```
 
 

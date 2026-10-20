@@ -1,12 +1,13 @@
 # minimumLogicalFontSize
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum logical font size of the web view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The minimum logical font size of the web view.
 var minimumLogicalFontSize: Int32 { get set }
 ```
 
+```objc
+@property (nonatomic) int minimumLogicalFontSize;
+```
+
 #### Discussion
 
 The minimum logical font size is the smallest font size that will display in a web view when the content’s font size is imprecisely specified. This includes content with logical sizes (such as `small`) or with a font size specified as a percentage of the default.
 
-Most clients will not want to use this ; rather, explicitly set the minimum display font size using the [`minimumFontSize`](webpreferences/minimumfontsize.md) property.
+Most clients will not want to use this ; rather, explicitly set the minimum display font size using the [`minimumFontSize`](./minimumfontsize.md) property.
 
 The font size specified by `size` should always be greater than zero.
 
 ## See Also
 
-- [var defaultFixedFontSize: Int32](webpreferences/defaultfixedfontsize.md)
+### Getting and Setting Font Sizes
+- [var defaultFixedFontSize: Int32](./defaultfixedfontsize.md)
   The default fixed font size of the web view.
-- [var defaultFontSize: Int32](webpreferences/defaultfontsize.md)
+- [var defaultFontSize: Int32](./defaultfontsize.md)
   The default font size of the web view.
-- [var minimumFontSize: Int32](webpreferences/minimumfontsize.md)
+- [var minimumFontSize: Int32](./minimumfontsize.md)
   The minimum font size of the web view.
 
 

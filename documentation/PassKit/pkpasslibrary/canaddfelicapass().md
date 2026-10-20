@@ -1,7 +1,8 @@
 # canAddFelicaPass()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the library can add FeliCa™ passes.
 
@@ -19,17 +20,22 @@ Returns a Boolean value that indicates whether the library can add FeliCa™ pas
 func canAddFelicaPass() -> Bool
 ```
 
+```objc
+- (BOOL) canAddFelicaPass;
+```
+
 #### Discussion
 
-By default, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+By default, this method returns [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool](pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier:).md)
+### Adding passes
+- [func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool](./canaddsecureelementpass%28primaryaccountidentifier%29.md)
   Returns a Boolean value that indicates whether PassKit can add a Secure Element pass for the specified account.
-- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](pkpasslibrary/addpasses(_:withcompletionhandler:).md)
+- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](./addpasses%28_,withcompletionhandler%29.md)
   Presents a user interface for adding multiple passes at once.
-- [enum PKPassLibraryAddPassesStatus](pkpasslibraryaddpassesstatus.md)
+- [enum PKPassLibraryAddPassesStatus](../pkpasslibraryaddpassesstatus.md)
   Statuses that PassKit uses when it adds passes to the pass library.
 
 

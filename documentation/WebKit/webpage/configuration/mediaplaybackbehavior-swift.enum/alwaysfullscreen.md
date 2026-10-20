@@ -1,7 +1,8 @@
 # WebPage.Configuration.MediaPlaybackBehavior.alwaysFullscreen
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the native fullscreen controller.
 

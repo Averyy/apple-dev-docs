@@ -1,7 +1,8 @@
 # session
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AR session that manages motion tracking and camera image processing for the view’s contents.
 
@@ -15,15 +16,20 @@ The AR session that manages motion tracking and camera image processing for the 
 var session: ARSession { get set }
 ```
 
+```objc
+@property (nonatomic, strong) ARSession * session;
+```
+
 #### Discussion
 
 A view creates its own session object; use this property to access and configure the view’s session.
 
 ## See Also
 
-- [Providing 3D Virtual Content with SceneKit](providing-3d-virtual-content-with-scenekit.md)
+### Essentials
+- [Providing 3D Virtual Content with SceneKit](../providing-3d-virtual-content-with-scenekit.md)
   Use SceneKit to add realistic three-dimensional objects to your AR experience.
-- [var scene: SCNScene](arscnview/scene.md)
+- [var scene: SCNScene](./scene.md)
   The SceneKit scene to be displayed in the view.
 
 

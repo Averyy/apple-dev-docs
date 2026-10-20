@@ -1,7 +1,8 @@
 # playlist
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents a playlist.
 
@@ -26,15 +27,16 @@ The identifier for this type is `public.playlist`.
 
 ## See Also
 
-- [static var mp3: UTType](uttype-swift.struct/mp3.md)
+### Audio
+- [static var mp3: UTType](./mp3.md)
   A type that represents MP3 audio.
-- [static var aiff: UTType](uttype-swift.struct/aiff.md)
+- [static var aiff: UTType](./aiff.md)
   A type that represents data in AIFF audio format.
-- [static var wav: UTType](uttype-swift.struct/wav.md)
+- [static var wav: UTType](./wav.md)
   A type that represents data in Microsoft Waveform Audio File Format.
-- [static var midi: UTType](uttype-swift.struct/midi.md)
+- [static var midi: UTType](./midi.md)
   A type that represents data in MIDI audio format.
-- [static var m3uPlaylist: UTType](uttype-swift.struct/m3uplaylist.md)
+- [static var m3uPlaylist: UTType](./m3uplaylist.md)
   A type that represents an M3U or M3U8 playlist.
 
 

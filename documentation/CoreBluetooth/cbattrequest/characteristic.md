@@ -1,7 +1,8 @@
 # characteristic
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characteristic to read or write the value of.
 
@@ -20,13 +21,18 @@ The characteristic to read or write the value of.
 var characteristic: CBCharacteristic { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CBCharacteristic * characteristic;
+```
+
 ## See Also
 
-- [var central: CBCentral](cbattrequest/central.md)
+### Requesting to Read and Write Characteristic Values
+- [var central: CBCentral](./central.md)
   The remote central device that originated the request.
-- [var value: Data?](cbattrequest/value.md)
+- [var value: Data?](./value.md)
   The data that the central reads from or writes to the peripheral.
-- [var offset: Int](cbattrequest/offset.md)
+- [var offset: Int](./offset.md)
   The zero-based index of the first byte for the read or write request.
 
 

@@ -1,7 +1,8 @@
 # tone
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keypad tone to play.
 
@@ -20,9 +21,10 @@ final let tone: PlayToneAction.Tone
 
 ## See Also
 
-- [let digits: String](playtoneaction/digits.md)
+### Accessing action attributes
+- [let digits: String](./digits.md)
   The digits tapped by the user into the keypad or included in the dial string.
-- [PlayToneAction.Tone](playtoneaction/tone-swift.enum.md)
+- [PlayToneAction.Tone](./tone-swift.enum.md)
   Values that describe keypad tones.
 
 

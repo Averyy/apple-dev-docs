@@ -1,7 +1,8 @@
 # VSCheckAccessOption
 
 **Framework**: Video Subscriber Account  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The options your app uses when checking access status.
 
@@ -9,7 +10,7 @@ The options your app uses when checking access status.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,28 +20,33 @@ The options your app uses when checking access status.
 struct VSCheckAccessOption
 ```
 
+```c
+typedef NSString * VSCheckAccessOption;
+```
+
 ## Topics
 
 ### Options
-- [static let prompt: VSCheckAccessOption](vscheckaccessoption/prompt.md)
+- [static let prompt: VSCheckAccessOption](./vscheckaccessoption/prompt.md)
   A Boolean that indicates whether your app can prompt the user to grant access.
 ### Creating check access options
-- [init(rawValue: String)](vscheckaccessoption/init(rawvalue:).md)
+- [init(rawValue: String)](./vscheckaccessoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func checkAccessStatus(options: [VSCheckAccessOption : Any], completionHandler: (VSAccountAccessStatus, (any Error)?) -> Void)](vsaccountmanager/checkaccessstatus(options:completionhandler:).md)
+### Checking access status
+- [func checkAccessStatus(options: [VSCheckAccessOption : Any], completionHandler: (VSAccountAccessStatus, (any Error)?) -> Void)](./vsaccountmanager/checkaccessstatus%28options,completionhandler%29.md)
   Checks your app’s access to user subscription information, and requests access if needed.
-- [enum VSAccountAccessStatus](vsaccountaccessstatus.md)
+- [enum VSAccountAccessStatus](./vsaccountaccessstatus.md)
   Constants that represent your app’s access status to the user’s subscription information.
 
 

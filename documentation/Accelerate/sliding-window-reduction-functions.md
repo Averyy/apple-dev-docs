@@ -1,19 +1,20 @@
 # Sliding-window reduction functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Calculate maximum values and sums of values in a sliding window.
 
 ## Topics
 
 ### Sliding-window summation functions
-- [static func slidingWindowSum<U>(U, usingWindowLength: Int) -> [Double]](vdsp/slidingwindowsum(_:usingwindowlength:)-2t1dc.md)
+- [static func slidingWindowSum<U>(U, usingWindowLength: Int) -> [Double]](./vdsp/slidingwindowsum%28_,usingwindowlength%29-2t1dc.md)
   Returns the double-precision sliding window sum of a vector.
-- [static func slidingWindowSum<U>(U, usingWindowLength: Int) -> [Float]](vdsp/slidingwindowsum(_:usingwindowlength:)-reb8.md)
+- [static func slidingWindowSum<U>(U, usingWindowLength: Int) -> [Float]](./vdsp/slidingwindowsum%28_,usingwindowlength%29-reb8.md)
   Returns the single-precision sliding window sum of a vector.
-- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](vdsp/slidingwindowsum(_:usingwindowlength:result:)-i972.md)
+- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](./vdsp/slidingwindowsum%28_,usingwindowlength,result%29-i972.md)
   Calculates the double-precision sliding window sum of a vector.
-- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](vdsp/slidingwindowsum(_:usingwindowlength:result:)-5tg0h.md)
+- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](./vdsp/slidingwindowsum%28_,usingwindowlength,result%29-5tg0h.md)
   Calculates the single-precision sliding window sum of a vector.
 
 

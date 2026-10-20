@@ -1,7 +1,8 @@
 # kPMGraphicsContextDefault
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMGraphicsContextDefault: String { get }
+```
+
+```c
+#define kPMGraphicsContextDefault
 ```
 
 

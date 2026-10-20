@@ -1,9 +1,10 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a graph from data previously produced by [`encode()`](shadergraph/encode().md).
+Creates a graph from data previously produced by [`encode()`](./encode%28%29.md).
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,7 @@ convenience init(from data: Data) throws
 
 #### Discussion
 
-> **Note**: If the data is malformed or was produced by an incompatible version.
+> **Throws**: If the data is malformed or was produced by an incompatible version.
 
 
 ---

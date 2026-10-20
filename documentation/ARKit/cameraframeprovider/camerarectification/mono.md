@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraRectification.mono
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Mono camera rectification.
 

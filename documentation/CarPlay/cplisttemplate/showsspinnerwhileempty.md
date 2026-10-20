@@ -1,7 +1,8 @@
 # showsSpinnerWhileEmpty
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If YES, a spinning activity indicator will be displayed while the list template contains no items. The activity indicator will be displayed in addition to any @c emptyViewTitleVariants or
 
@@ -14,6 +15,10 @@ If YES, a spinning activity indicator will be displayed while the list template 
 
 ```swift
 var showsSpinnerWhileEmpty: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL showsSpinnerWhileEmpty;
 ```
 
 

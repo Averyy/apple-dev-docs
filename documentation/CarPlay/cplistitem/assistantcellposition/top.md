@@ -1,7 +1,8 @@
 # CPListItem.AssistantCellPosition.top
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Positions the assistant cell at the top of all visible cells.
 
@@ -16,9 +17,14 @@ Positions the assistant cell at the top of all visible cells.
 case top
 ```
 
+```c
+CPAssistantCellPositionTop
+```
+
 ## See Also
 
-- [CPListItem.AssistantCellPosition.bottom](cplistitem/assistantcellposition/bottom.md)
+### Controlling the Assistant Cell Position
+- [CPListItem.AssistantCellPosition.bottom](./bottom.md)
   Positions the assistant cell at the bottom of all visible cells.
 
 

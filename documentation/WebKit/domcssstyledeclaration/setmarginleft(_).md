@@ -1,7 +1,8 @@
 # setMarginLeft(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setMarginLeft(_ marginLeft: String!)
+```
+
+```objc
+- (void) setMarginLeft:(NSString *) marginLeft;
 ```
 
 

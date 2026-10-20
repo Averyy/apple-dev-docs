@@ -1,7 +1,8 @@
 # constantForce
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constant force applied to particles inside the volume.
 
@@ -18,7 +19,8 @@ var constantForce: SIMD3<Float>
 
 ## See Also
 
-- [var windForce: SIMD3<Float>](clothforcevolumecomponent/windforce.md)
+### Applying forces
+- [var windForce: SIMD3<Float>](./windforce.md)
   The wind force applied to particles inside the volume.
 
 

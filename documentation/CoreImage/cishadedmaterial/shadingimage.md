@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as the height field.
@@ -11,7 +12,7 @@ The image to use as the height field.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The image to use as the height field.
 var shadingImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * shadingImage;
+```
+
 #### Discussion
 
 The resulting image has greater heights with lighter shades, and lesser heights (lower areas) with darker shades.
 
 ## See Also
 
-- [var inputImage: CIImage?](cishadedmaterial/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var scale: Float](cishadedmaterial/scale.md)
+- [var scale: Float](./scale.md)
   The scale of the effect.
 
 

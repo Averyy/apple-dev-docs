@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Modifies an integer column by dividing each element in the column by the corresponding value in a collection.
 
@@ -27,23 +28,24 @@ static func /= <C>(lhs: inout Column<WrappedElement>, rhs: C) where WrappedEleme
 
 ## See Also
 
-- [static func += <C>(inout Column<WrappedElement>, C)](column/+=(_:_:)-2w5o4.md)
+### Modifying a Column with a Collection of Values
+- [static func += <C>(inout Column<WrappedElement>, C)](./pluseq%28_,_%29-2w5o4.md)
   Modifies a column by adding each value in a collection to the corresponding element in the column.
-- [static func += <C>(inout Column<WrappedElement>, C)](column/+=(_:_:)-2scuy.md)
+- [static func += <C>(inout Column<WrappedElement>, C)](./pluseq%28_,_%29-2scuy.md)
   Modifies a column by adding each optional value in a collection to the corresponding element in the column.
-- [static func -= <C>(inout Column<WrappedElement>, C)](column/-=(_:_:)-8rgjq.md)
+- [static func -= <C>(inout Column<WrappedElement>, C)](./minuseq%28_,_%29-8rgjq.md)
   Modifies a column by subtracting each value in a collection from the corresponding element in the column.
-- [static func -= <C>(inout Column<WrappedElement>, C)](column/-=(_:_:)-3v0hh.md)
+- [static func -= <C>(inout Column<WrappedElement>, C)](./minuseq%28_,_%29-3v0hh.md)
   Modifies a column by subtracting each optional value in a collection from the corresponding element in the column.
-- [static func *= <C>(inout Column<WrappedElement>, C)](column/*=(_:_:)-8mmnn.md)
+- [static func *= <C>(inout Column<WrappedElement>, C)](./stareq%28_,_%29-8mmnn.md)
   Modifies a column by multiplying each element in the column by the corresponding value in a collection.
-- [static func *= <C>(inout Column<WrappedElement>, C)](column/*=(_:_:)-6kp11.md)
+- [static func *= <C>(inout Column<WrappedElement>, C)](./stareq%28_,_%29-6kp11.md)
   Modifies a column by multiplying each element in the column by the corresponding optional value in a collection.
-- [static func /= <C>(inout Column<WrappedElement>, C)](column/_=(_:_:)-8xhzg.md)
+- [static func /= <C>(inout Column<WrappedElement>, C)](./opeq%28_,_%29-8xhzg.md)
   Modifies an integer column by dividing each element in the column by the corresponding optional value in a collection.
-- [static func /= <C>(inout Column<WrappedElement>, C)](column/_=(_:_:)-86t1j.md)
+- [static func /= <C>(inout Column<WrappedElement>, C)](./opeq%28_,_%29-86t1j.md)
   Modifies a floating-point column by dividing each element in the column by the corresponding value in a collection.
-- [static func /= <C>(inout Column<WrappedElement>, C)](column/_=(_:_:)-3acz8.md)
+- [static func /= <C>(inout Column<WrappedElement>, C)](./opeq%28_,_%29-3acz8.md)
   Modifies a floating-point column by dividing each element in the column by the corresponding optional value in a collection.
 
 

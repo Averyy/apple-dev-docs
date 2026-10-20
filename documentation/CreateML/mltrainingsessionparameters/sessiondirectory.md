@@ -1,7 +1,8 @@
 # sessionDirectory
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location in the file system where the session stores its progress.
 
@@ -21,11 +22,12 @@ let sessionDirectory: URL?
 
 ## See Also
 
-- [var reportInterval: Int](mltrainingsessionparameters/reportinterval.md)
+### Configuring the session’s parameters
+- [var reportInterval: Int](./reportinterval.md)
   The number of iterations the session completes before it reports its progress.
-- [var checkpointInterval: Int](mltrainingsessionparameters/checkpointinterval.md)
+- [var checkpointInterval: Int](./checkpointinterval.md)
   The number of iterations the session completes before it saves a checkpoint.
-- [var iterations: Int](mltrainingsessionparameters/iterations.md)
+- [var iterations: Int](./iterations.md)
   The maximum number of iterations for the training session.
 
 

@@ -1,7 +1,8 @@
 # effectiveAppearance
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance that will be used when the popover is displayed onscreen.
 
@@ -14,17 +15,22 @@ The appearance that will be used when the popover is displayed onscreen.
 var effectiveAppearance: NSAppearance { get }
 ```
 
+```objc
+@property (strong, readonly) NSAppearance * effectiveAppearance;
+```
+
 ## See Also
 
-- [var appearance: NSAppearance?](nspopover/appearance-swift.property.md)
+### Managing a Popover’s Appearance
+- [var appearance: NSAppearance?](./appearance-swift.property.md)
   The appearance of the popover.
-- [var animates: Bool](nspopover/animates.md)
+- [var animates: Bool](./animates.md)
   Specifies if the popover is to be animated.
-- [var contentSize: NSSize](nspopover/contentsize.md)
+- [var contentSize: NSSize](./contentsize.md)
   The content size of the popover.
-- [var isShown: Bool](nspopover/isshown.md)
+- [var isShown: Bool](./isshown.md)
   The display state of the popover.
-- [var isDetached: Bool](nspopover/isdetached.md)
+- [var isDetached: Bool](./isdetached.md)
   A Boolean value that indicates whether the window created by a popover’s detachment is automatically created.
 
 

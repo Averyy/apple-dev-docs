@@ -1,7 +1,8 @@
 # eligibleURLs
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of external purchase links for the current storefront that the app configured and from which it chooses.
 
@@ -22,25 +23,26 @@ static var eligibleURLs: [URL]? { get async }
 
 #### Discussion
 
-Use this property if your app configures the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasemultilink) property list key.
+Use this property if your app configures the [`SKExternalPurchaseMultiLink`](../../BundleResources/information-property-list/skexternalpurchasemultilink.md) property list key.
 
-Use the [`eligibleURLs`](externalpurchaselink/eligibleurls.md) to get the array of external purchase links for the current storefront that your app has configured in the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasemultilink) property list key. Your app can select from any of the eligible URLs. Call [`open(url:)`](externalpurchaselink/open(url:).md) with the URL you choose.
+Use the [`eligibleURLs`](./eligibleurls.md) to get the array of external purchase links for the current storefront that your app has configured in the [`SKExternalPurchaseMultiLink`](../../BundleResources/information-property-list/skexternalpurchasemultilink.md) property list key. Your app can select from any of the eligible URLs. Call [`open(url:)`](./open%28url%29.md) with the URL you choose.
 
-The [`eligibleURLs`](externalpurchaselink/eligibleurls.md) array is `nil` if any of the following is true:
+The [`eligibleURLs`](./eligibleurls.md) array is `nil` if any of the following is true:
 
 - The current App Store storefront doesn’t allow external purchase or the person isn’t eligible to make external purchases.
-- Your app doesn’t configure the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
-- Your app doesn’t configure any links for the current storefront in the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasemultilink) property list key
+- Your app doesn’t configure the [`com.apple.developer.storekit.external-purchase-link`](../../BundleResources/entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement.
+- Your app doesn’t configure any links for the current storefront in the [`SKExternalPurchaseMultiLink`](../../BundleResources/information-property-list/skexternalpurchasemultilink.md) property list key
 
-If this value is `nil` and your app also configures the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselink) property list key, check [`canOpen`](externalpurchaselink/canopen.md) to determine whether your app can continue to provide an external purchase link.
+If this value is `nil` and your app also configures the [`SKExternalPurchaseLink`](../../BundleResources/information-property-list/skexternalpurchaselink.md) property list key, check [`canOpen`](./canopen.md) to determine whether your app can continue to provide an external purchase link.
 
-Otherwise, if this value is `nil`, check [`canMakePayments`](appstore/canmakepayments.md) to determine whether your app can offer in-app purchases using the StoreKit [`Apple In-App Purchase`](in-app-purchase.md) APIs. For more information, see [`canMakePayments`](appstore/canmakepayments.md).
+Otherwise, if this value is `nil`, check [`canMakePayments`](../appstore/canmakepayments.md) to determine whether your app can offer in-app purchases using the StoreKit [Apple In-App Purchase](../in-app-purchase.md) APIs. For more information, see [`canMakePayments`](../appstore/canmakepayments.md).
 
 ## See Also
 
-- [SKExternalPurchaseMultiLink](../bundleresources/information-property-list/skexternalpurchasemultilink.md)
+### Getting multiple external purchase links
+- [SKExternalPurchaseMultiLink](../../BundleResources/information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
-- [static func open(url: URL) async throws](externalpurchaselink/open(url:).md)
+- [static func open(url: URL) async throws](./open%28url%29.md)
   Presents a continuation sheet that enables people to choose whether your app shows the indicated URL link for external purchases.
 
 

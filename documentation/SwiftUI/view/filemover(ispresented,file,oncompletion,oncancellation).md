@@ -1,7 +1,8 @@
 # fileMover(isPresented:file:onCompletion:onCancellation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a system dialog for allowing the user to move an existing file to a new location.
 
@@ -57,7 +58,7 @@ For example, a button that allows the user to move a file might look like this:
   }
 ```
 
-To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](view/filedialogdefaultdirectory(_:).md), [`fileDialogConfirmationLabel(_:)`](view/filedialogconfirmationlabel(_:).md), [`fileDialogMessage(_:)`](view/filedialogmessage(_:).md), [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md), [`fileDialogURLEnabled(_:)`](view/filedialogurlenabled(_:).md), [`fileDialogImportsUnresolvedAliases(_:)`](view/filedialogimportsunresolvedaliases(_:).md), and [`fileDialogCustomizationID(_:)`](view/filedialogcustomizationid(_:).md).
+To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](./filedialogdefaultdirectory%28_%29.md), [`fileDialogConfirmationLabel(_:)`](./filedialogconfirmationlabel%28_%29.md), [`fileDialogMessage(_:)`](./filedialogmessage%28_%29.md), [`fileDialogBrowserOptions(_:)`](./filedialogbrowseroptions%28_%29.md), [`fileDialogURLEnabled(_:)`](./filedialogurlenabled%28_%29.md), [`fileDialogImportsUnresolvedAliases(_:)`](./filedialogimportsunresolvedaliases%28_%29.md), and [`fileDialogCustomizationID(_:)`](./filedialogcustomizationid%28_%29.md).
 
 ## Parameters
 
@@ -68,11 +69,12 @@ To further configure the dialog’s appearance and behavior, use these view modi
 
 ## See Also
 
-- [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/filemover(ispresented:file:oncompletion:).md)
+### Moving a file
+- [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](./filemover%28ispresented,file,oncompletion%29.md)
   Presents a system dialog for allowing the user to move an existing file to a new location.
-- [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/filemover(ispresented:files:oncompletion:).md)
+- [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](./filemover%28ispresented,files,oncompletion%29.md)
   Presents a system dialog for allowing the user to move a collection of existing files to a new location.
-- [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/filemover(ispresented:files:oncompletion:oncancellation:).md)
+- [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](./filemover%28ispresented,files,oncompletion,oncancellation%29.md)
   Presents a system dialog for allowing the user to move a collection of existing files to a new location.
 
 

@@ -1,7 +1,8 @@
 # descriptionFireWire
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A device that’s directly attached to the Mac through its FireWire port.
 
@@ -18,13 +19,18 @@ A device that’s directly attached to the Mac through its FireWire port.
 static let descriptionFireWire: ICDeviceLocationOptions
 ```
 
+```c
+extern ICDeviceLocationOptions const ICDeviceLocationDescriptionFireWire;
+```
+
 ## See Also
 
-- [static let descriptionBluetooth: ICDeviceLocationOptions](icdevicelocationoptions/descriptionbluetooth.md)
+### Determining a Location
+- [static let descriptionBluetooth: ICDeviceLocationOptions](./descriptionbluetooth.md)
   A paired Bluetooth device.
-- [static let descriptionMassStorage: ICDeviceLocationOptions](icdevicelocationoptions/descriptionmassstorage.md)
+- [static let descriptionMassStorage: ICDeviceLocationOptions](./descriptionmassstorage.md)
   A mass storage device.
-- [static let descriptionUSB: ICDeviceLocationOptions](icdevicelocationoptions/descriptionusb.md)
+- [static let descriptionUSB: ICDeviceLocationOptions](./descriptionusb.md)
   A device that’s directly attached to the Mac through its USB port.
 
 

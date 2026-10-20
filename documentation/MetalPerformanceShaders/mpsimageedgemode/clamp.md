@@ -1,7 +1,8 @@
 # MPSImageEdgeMode.clamp
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Out-of-bound pixels are clamped to the nearest edge pixel.
 
@@ -19,9 +20,14 @@ Out-of-bound pixels are clamped to the nearest edge pixel.
 case clamp
 ```
 
+```c
+MPSImageEdgeModeClamp
+```
+
 ## See Also
 
-- [MPSImageEdgeMode.zero](mpsimageedgemode/zero.md)
+### Constants
+- [MPSImageEdgeMode.zero](./zero.md)
   Out-of-bound pixels are set to `(0.0, 0.0, 0.0, 1.0)` for images without an alpha channel or `(0.0, 0.0, 0.0, 0.0)` for images with an alpha channel, as defined by their pixel format.
 
 

@@ -1,7 +1,8 @@
 # isRemote
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the device is published by the Image Capture device-sharing facility.
 
@@ -14,11 +15,16 @@ A Boolean value indicating whether the device is published by the Image Capture 
 var isRemote: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRemote) BOOL remote;
+```
+
 ## See Also
 
-- [var userData: NSMutableDictionary?](icdevice/userdata.md)
+### Configuring a Device’s Characteristics
+- [var userData: NSMutableDictionary?](./userdata.md)
   A bookkeeping object for client convenience.
-- [var autolaunchApplicationPath: String?](icdevice/autolaunchapplicationpath.md)
+- [var autolaunchApplicationPath: String?](./autolaunchapplicationpath.md)
   The file system path of an application to launch automatically when this device is added.
 
 

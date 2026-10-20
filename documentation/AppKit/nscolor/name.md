@@ -1,12 +1,13 @@
 # NSColor.Name
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The name of a color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The name of a color.
 typealias Name = String
 ```
 
+```c
+typedef NSString * NSColorName;
+```
+
 ## See Also
 
-- [init?(named: NSColor.Name)](nscolor/init(named:).md)
+### Loading color objects from asset catalogs
+- [init?(named: NSColor.Name)](./init%28named%29.md)
   Creates a color object from the provided name, which corresponds to a color in the default asset catalog of the app’s main bundle.
-- [init?(named: NSColor.Name, bundle: Bundle?)](nscolor/init(named:bundle:).md)
+- [init?(named: NSColor.Name, bundle: Bundle?)](./init%28named,bundle%29.md)
   Creates a color object from the provided name, which corresponds to a color in the default asset catalog of the specified bundle.
-- [init?(catalogName: NSColorList.Name, colorName: NSColor.Name)](nscolor/init(catalogname:colorname:).md)
+- [init?(catalogName: NSColorList.Name, colorName: NSColor.Name)](./init%28catalogname,colorname%29.md)
   Creates a color object using the specified asset catalog and color names.
 
 

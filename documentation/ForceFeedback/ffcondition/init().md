@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(lOffset: LONG, lPositiveCoefficient: LONG, lNegativeCoefficient: LONG, dwPositiveSaturation: DWORD, dwNegativeSaturation: DWORD, lDeadBand: LONG)](ffcondition/init(loffset:lpositivecoefficient:lnegativecoefficient:dwpositivesaturation:dwnegativesaturation:ldeadband:).md)
+### Initializers
+- [init(lOffset: LONG, lPositiveCoefficient: LONG, lNegativeCoefficient: LONG, dwPositiveSaturation: DWORD, dwNegativeSaturation: DWORD, lDeadBand: LONG)](./init%28loffset,lpositivecoefficient,lnegativecoefficient,dwpositivesaturation,dwnegativesaturation,ldeadband%29.md)
 
 
 ---

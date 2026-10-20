@@ -1,7 +1,8 @@
 # init(roundedRect:cornerWidth:cornerHeight:transform:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an immutable path of a rounded rectangle.
 
@@ -10,7 +11,7 @@ Create an immutable path of a rounded rectangle.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Create an immutable path of a rounded rectangle.
 
 ```swift
 init(roundedRect rect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)
+```
+
+```c
+extern CGPathRefCGPathCreateWithRoundedRect(CGRect rect, CGFloat cornerWidth, CGFloat cornerHeight, const CGAffineTransform *transform);
 ```
 
 #### Return Value
@@ -39,9 +44,10 @@ Each corner of the rounded rectangle is one-quarter of an ellipse with axes equa
 
 ## See Also
 
-- [init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(rect:transform:).md)
+### Creating Graphics Paths
+- [init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)](./init%28rect,transform%29.md)
   Create an immutable path of a rectangle.
-- [init(ellipseIn: CGRect, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(ellipsein:transform:).md)
+- [init(ellipseIn: CGRect, transform: UnsafePointer<CGAffineTransform>?)](./init%28ellipsein,transform%29.md)
   Create an immutable path of an ellipse.
 
 

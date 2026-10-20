@@ -1,7 +1,8 @@
 # errSecInvalidRecord
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid record was detected.
 
@@ -18,6 +19,10 @@ An invalid record was detected.
 
 ```swift
 var errSecInvalidRecord: OSStatus { get }
+```
+
+```c
+errSecInvalidRecord
 ```
 
 

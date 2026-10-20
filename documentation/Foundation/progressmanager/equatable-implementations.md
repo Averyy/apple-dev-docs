@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (ProgressManager, ProgressManager) -> Bool](progressmanager/==(_:_:).md)
+- [static func == (ProgressManager, ProgressManager) -> Bool](./eqeq%28_,_%29.md)
   Returns `true` if pointer of `lhs` is equal to pointer of `rhs`.
 
 

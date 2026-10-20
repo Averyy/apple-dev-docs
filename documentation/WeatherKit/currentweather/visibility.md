@@ -1,7 +1,8 @@
 # visibility
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance at which terrain is visible.
 
@@ -26,9 +27,10 @@ The amount of light, and weather conditions like fog, mist, and smog affect visi
 
 ## See Also
 
-- [var isDaylight: Bool](currentweather/isdaylight.md)
+### Getting daylight and visibility
+- [var isDaylight: Bool](./isdaylight.md)
   A Boolean value indicating whether there is daylight.
-- [var uvIndex: UVIndex](currentweather/uvindex.md)
+- [var uvIndex: UVIndex](./uvindex.md)
   The level of ultraviolet radiation.
 
 

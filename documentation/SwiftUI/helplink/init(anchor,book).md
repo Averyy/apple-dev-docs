@@ -1,7 +1,8 @@
 # init(anchor:book:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a new help link with the specified anchor and book.
 
@@ -22,11 +23,12 @@ Constructs a new help link with the specified anchor and book.
 
 ## See Also
 
-- [init(action: () -> Void)](helplink/init(action:).md)
+### Creating a help link
+- [init(action: () -> Void)](./init%28action%29.md)
   Constructs a new help link with the specified action.
-- [init(destination: URL)](helplink/init(destination:).md)
+- [init(destination: URL)](./init%28destination%29.md)
   Constructs a new help link that opens the specified destination URL.
-- [init(anchor: NSHelpManager.AnchorName)](helplink/init(anchor:).md)
+- [init(anchor: NSHelpManager.AnchorName)](./init%28anchor%29.md)
   Constructs a new help link with the specified anchor in the main app bundle’s book.
 
 

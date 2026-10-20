@@ -1,7 +1,8 @@
 # invalidateIntrinsicContentSize(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the control that the intrinsic content size for its cell is no longer valid.
 
@@ -14,9 +15,13 @@ Notifies the control that the intrinsic content size for its cell is no longer v
 func invalidateIntrinsicContentSize(for cell: NSCell)
 ```
 
+```objc
+- (void) invalidateIntrinsicContentSizeForCell:(NSCell *) cell;
+```
+
 #### Discussion
 
-Controls determine their intrinsic content size based on the cell size for a given bounds returned by their cell. When the content of the cell changes in a way that would change the return value of [`cellSize(forBounds:)`](nscell/cellsize(forbounds:).md), the cell needs to call this method to notify its control that its intrinsic size is no longer valid.
+Controls determine their intrinsic content size based on the cell size for a given bounds returned by their cell. When the content of the cell changes in a way that would change the return value of [`cellSize(forBounds:)`](../nscell/cellsize%28forbounds%29.md), the cell needs to call this method to notify its control that its intrinsic size is no longer valid.
 
 ## Parameters
 

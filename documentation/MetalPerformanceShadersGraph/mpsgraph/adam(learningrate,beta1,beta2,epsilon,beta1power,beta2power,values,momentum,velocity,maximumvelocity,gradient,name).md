@@ -1,7 +1,8 @@
 # adam(learningRate:beta1:beta2:epsilon:beta1Power:beta2Power:values:momentum:velocity:maximumVelocity:gradient:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates operations to apply Adam optimization.
 
@@ -17,6 +18,10 @@ Creates operations to apply Adam optimization.
 
 ```swift
 func adam(learningRate learningRateTensor: MPSGraphTensor, beta1 beta1Tensor: MPSGraphTensor, beta2 beta2Tensor: MPSGraphTensor, epsilon epsilonTensor: MPSGraphTensor, beta1Power beta1PowerTensor: MPSGraphTensor, beta2Power beta2PowerTensor: MPSGraphTensor, values valuesTensor: MPSGraphTensor, momentum momentumTensor: MPSGraphTensor, velocity velocityTensor: MPSGraphTensor, maximumVelocity maximumVelocityTensor: MPSGraphTensor?, gradient gradientTensor: MPSGraphTensor, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) adamWithLearningRateTensor:(MPSGraphTensor *) learningRateTensor beta1Tensor:(MPSGraphTensor *) beta1Tensor beta2Tensor:(MPSGraphTensor *) beta2Tensor epsilonTensor:(MPSGraphTensor *) epsilonTensor beta1PowerTensor:(MPSGraphTensor *) beta1PowerTensor beta2PowerTensor:(MPSGraphTensor *) beta2PowerTensor valuesTensor:(MPSGraphTensor *) valuesTensor momentumTensor:(MPSGraphTensor *) momentumTensor velocityTensor:(MPSGraphTensor *) velocityTensor maximumVelocityTensor:(MPSGraphTensor *) maximumVelocityTensor gradientTensor:(MPSGraphTensor *) gradientTensor name:(NSString *) name;
 ```
 
 #### Return Value

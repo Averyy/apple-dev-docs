@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.property
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path identifies a property on a prim or relationship target.
 

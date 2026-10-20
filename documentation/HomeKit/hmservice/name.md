@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user specified name of the service.
 
@@ -19,15 +20,20 @@ The user specified name of the service.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 #### Discussion
 
-Rename services by calling the [`updateName(_:completionHandler:)`](hmservice/updatename(_:completionhandler:).md) method with a value given by the user.
+Rename services by calling the [`updateName(_:completionHandler:)`](./updatename%28_,completionhandler%29.md) method with a value given by the user.
 
 ## See Also
 
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmservice/updatename(_:completionhandler:).md)
+### Identifying the service
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the service to the specified string.
-- [var uniqueIdentifier: UUID](hmservice/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the service.
 
 

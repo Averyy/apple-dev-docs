@@ -1,12 +1,13 @@
 # sharedColorPanelExists
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns  a Boolean value indicating whether the `NSColorPanel` has been created already.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Returns  a Boolean value indicating whether the `NSColorPanel` has been created 
 class var sharedColorPanelExists: Bool { get }
 ```
 
+```objc
+@property (class, readonly) BOOL sharedColorPanelExists;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `NSColorPanel` has been created already; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the `NSColorPanel` has been created already; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class var shared: NSColorPanel](nscolorpanel/shared.md)
+### Obtaining the shared color panel
+- [class var shared: NSColorPanel](./shared.md)
   Returns the shared `NSColorPanel` instance, creating it if necessary.
 
 

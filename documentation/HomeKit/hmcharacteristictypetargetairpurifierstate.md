@@ -1,7 +1,8 @@
 # HMCharacteristicTypeTargetAirPurifierState
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The target air purifier state.
 
@@ -19,25 +20,30 @@ The target air purifier state.
 let HMCharacteristicTypeTargetAirPurifierState: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeTargetAirPurifierState;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueTargetAirPurifierState`](hmcharacteristicvaluetargetairpurifierstate.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueTargetAirPurifierState`](./hmcharacteristicvaluetargetairpurifierstate.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueTargetAirPurifierState](hmcharacteristicvaluetargetairpurifierstate.md)
+- [enum HMCharacteristicValueTargetAirPurifierState](./hmcharacteristicvaluetargetairpurifierstate.md)
   Possible values for the target air purifier state.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentAirPurifierState: String](hmcharacteristictypecurrentairpurifierstate.md)
+### Purifiers and filters
+- [let HMCharacteristicTypeCurrentAirPurifierState: String](./hmcharacteristictypecurrentairpurifierstate.md)
   The current air purifier state.
-- [let HMCharacteristicTypeFilterLifeLevel: String](hmcharacteristictypefilterlifelevel.md)
+- [let HMCharacteristicTypeFilterLifeLevel: String](./hmcharacteristictypefilterlifelevel.md)
   The amount of useful life remaining in a filter.
-- [let HMCharacteristicTypeFilterChangeIndication: String](hmcharacteristictypefilterchangeindication.md)
+- [let HMCharacteristicTypeFilterChangeIndication: String](./hmcharacteristictypefilterchangeindication.md)
   A filter’s change indicator.
-- [let HMCharacteristicTypeFilterResetChangeIndication: String](hmcharacteristictypefilterresetchangeindication.md)
+- [let HMCharacteristicTypeFilterResetChangeIndication: String](./hmcharacteristictypefilterresetchangeindication.md)
   A reset control for a filter change notification.
 
 

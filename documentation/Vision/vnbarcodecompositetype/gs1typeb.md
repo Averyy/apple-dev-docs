@@ -1,7 +1,8 @@
 # VNBarcodeCompositeType.gs1TypeB
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that represents trade items by piece.
 
@@ -19,15 +20,20 @@ A type that represents trade items by piece.
 case gs1TypeB
 ```
 
+```c
+VNBarcodeCompositeTypeGS1TypeB
+```
+
 ## See Also
 
-- [VNBarcodeCompositeType.gs1TypeA](vnbarcodecompositetype/gs1typea.md)
+### Composite Types
+- [VNBarcodeCompositeType.gs1TypeA](./gs1typea.md)
   A type that represents trade items in bulk.
-- [VNBarcodeCompositeType.gs1TypeC](vnbarcodecompositetype/gs1typec.md)
+- [VNBarcodeCompositeType.gs1TypeC](./gs1typec.md)
   A type that represents trade items in varying quantity.
-- [VNBarcodeCompositeType.linked](vnbarcodecompositetype/linked.md)
+- [VNBarcodeCompositeType.linked](./linked.md)
   A type that represents a linked composite type.
-- [VNBarcodeCompositeType.none](vnbarcodecompositetype/none.md)
+- [VNBarcodeCompositeType.none](./none.md)
   A type that represents no composite type.
 
 

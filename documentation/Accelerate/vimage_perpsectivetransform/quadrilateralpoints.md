@@ -1,7 +1,8 @@
 # vImage_PerpsectiveTransform.QuadrilateralPoints
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A tuple of four points that define a quadrilateral.
 
@@ -11,7 +12,7 @@ A tuple of four points that define a quadrilateral.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

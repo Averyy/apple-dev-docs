@@ -1,7 +1,8 @@
 # ActorsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of audit log actors who performed actions in App Store Connect.
 
@@ -10,7 +11,7 @@ A response containing a list of audit log actors who performed actions in App St
 
 ## Declaration
 
-```swift
+```
 object ActorsResponse
 ```
 
@@ -22,9 +23,10 @@ object ActorsResponse
 
 ## See Also
 
-- [object Actor](actor.md)
+### Objects
+- [object Actor](./actor.md)
   An entity in the audit log representing the person, service, or system that performed an action in App Store Connect.
-- [object ActorResponse](actorresponse.md)
+- [object ActorResponse](./actorresponse.md)
   A response containing a single audit log actor who performed a tracked action in App Store Connect.
 
 

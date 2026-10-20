@@ -1,7 +1,8 @@
 # MTLHazardTrackingMode.tracked
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that directs Metal to apply runtime safeguards that prevent memory hazards when commands access a resource.
 
@@ -19,6 +20,10 @@ An option that directs Metal to apply runtime safeguards that prevent memory haz
 case tracked
 ```
 
+```c
+MTLHazardTrackingModeTracked
+```
+
 #### Discussion
 
 Metal tracks memory dependencies for resources you create with this option. When at least one command writes to a tracked resource, the framework takes the following actions:
@@ -28,13 +33,14 @@ Metal tracks memory dependencies for resources you create with this option. When
 
 This automatic hazard tracking provides safety for your resources without requiring you to manually synchronize access with barriers, fences, or events.
 
-See [`MTLHazardTrackingMode`](mtlhazardtrackingmode.md) for more information about hazard tracking and how to enable it.
+See [`MTLHazardTrackingMode`](../mtlhazardtrackingmode.md) for more information about hazard tracking and how to enable it.
 
 ## See Also
 
-- [MTLHazardTrackingMode.default](mtlhazardtrackingmode/default.md)
+### Selecting the tracking mode
+- [MTLHazardTrackingMode.default](./default.md)
   An option that applies the default tracking behavior in Metal based on the resource or heap type you’re creating.
-- [MTLHazardTrackingMode.untracked](mtlhazardtrackingmode/untracked.md)
+- [MTLHazardTrackingMode.untracked](./untracked.md)
   An option that disables automatic memory hazard tracking in Metal for a resource at runtime.
 
 

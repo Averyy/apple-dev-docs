@@ -1,7 +1,8 @@
 # conversationID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the conversation identifier for this group.
 
@@ -16,7 +17,8 @@ let conversationID: String
 
 ## See Also
 
-- [let focus: String](rcshandle/group/focus.md)
+### Accessing group properties
+- [let focus: String](./focus.md)
   A string that represents the focus of this group, as described in RFC 4353.
 
 

@@ -1,7 +1,8 @@
 # MusicPlayer.Queue.EntryInsertionPosition.tail
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A position that allows appending entries in the playback queue, similar to the Play Later feature in the Music app.
 

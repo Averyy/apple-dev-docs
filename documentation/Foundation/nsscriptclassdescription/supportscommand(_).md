@@ -1,7 +1,8 @@
 # supportsCommand(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the receiver or any superclass supports the specified command.
 
@@ -15,9 +16,13 @@ Returns a Boolean value indicating whether the receiver or any superclass suppor
 func supportsCommand(_ commandDescription: NSScriptCommandDescription) -> Bool
 ```
 
+```objc
+- (BOOL) supportsCommand:(NSScriptCommandDescription *) commandDescription;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an the receiver or the instance of `NSScriptClassDescription` of any superclass of the receiver’s class lists the command described by `commandDesc` among its supported commands; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if an the receiver or the instance of `NSScriptClassDescription` of any superclass of the receiver’s class lists the command described by `commandDesc` among its supported commands; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ func supportsCommand(_ commandDescription: NSScriptCommandDescription) -> Bool
 
 ## See Also
 
-- [func selector(forCommand: NSScriptCommandDescription) -> Selector?](nsscriptclassdescription/selector(forcommand:).md)
+### Getting command information
+- [func selector(forCommand: NSScriptCommandDescription) -> Selector?](./selector%28forcommand%29.md)
   Returns the selector associated with the receiver for the specified command description.
 
 

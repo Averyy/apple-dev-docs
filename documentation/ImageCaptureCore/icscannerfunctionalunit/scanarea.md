@@ -1,7 +1,8 @@
 # scanArea
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,18 @@
 
 ```swift
 var scanArea: NSRect { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (readwrite) CGRect scanArea;
+```
+
+*macOS*
+
+```objc
+@property (readwrite) NSRect scanArea;
 ```
 
 

@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sent to the first responder when the user selects a color in an NSColorPanel object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Sent to the first responder when the user selects a color in an NSColorPanel obj
 func changeColor(_ sender: NSColorPanel?)
 ```
 
+```objc
+- (void) changeColor:(NSColorPanel *) sender;
+```
+
 ## Parameters
 
-- `sender`: The [`NSColorPanel`](nscolorpanel.md) sending the message.
+- `sender`: The [`NSColorPanel`](../nscolorpanel.md) sending the message.
 
 
 ---

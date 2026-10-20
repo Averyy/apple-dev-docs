@@ -1,7 +1,8 @@
 # totalFiles
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the total number of file slots in the volume,
 
@@ -12,6 +13,10 @@ A property for the total number of file slots in the volume,
 
 ```swift
 var totalFiles: UInt64 { get set }
+```
+
+```objc
+@property uint64_t totalFiles;
 ```
 
 

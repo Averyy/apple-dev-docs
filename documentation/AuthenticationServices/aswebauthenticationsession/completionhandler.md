@@ -1,7 +1,8 @@
 # ASWebAuthenticationSession.CompletionHandler
 
 **Framework**: Authentication Services  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A completion handler for the web authentication session.
 
@@ -20,11 +21,16 @@ A completion handler for the web authentication session.
 typealias CompletionHandler = (URL?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSURL *, NSError *) ASWebAuthenticationSessionCompletionHandler;
+```
+
 ## See Also
 
-- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:)-6nut7.md)
+### Creating a session
+- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](./init%28url,callback,completionhandler%29-6nut7.md)
   Creates a web authentication session instance that uses a callback to evaluate a redirection URL.
-- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+- [ASWebAuthenticationSession.Callback](./callback.md)
   An object for evaluating navigation events in an authentication session.
 
 

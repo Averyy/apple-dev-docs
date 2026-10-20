@@ -1,7 +1,8 @@
 # mapFeatures(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lazy sequence where the elements of the result are computed each time they are read by calling transform function on the feature of an annotated feature.
 
@@ -19,6 +20,8 @@ Returns a lazy sequence where the elements of the result are computed each time 
 ```swift
 func mapFeatures<Input, Output, Annotation>(_ transform: @escaping (Input) -> Output) -> LazyMapSequence<Base, AnnotatedFeature<Output, Annotation>> where Base.Element == AnnotatedFeature<Input, Annotation>
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 
 ---

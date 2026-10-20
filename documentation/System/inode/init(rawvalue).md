@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a strongly-typed `Inode` from the raw C value.
 

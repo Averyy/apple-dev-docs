@@ -1,7 +1,8 @@
 # width
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that specifies the output width in pixels.
 
@@ -13,6 +14,10 @@ An integer value that specifies the output width in pixels.
 
 ```swift
 var width: Int { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSInteger width;
 ```
 
 #### Discussion

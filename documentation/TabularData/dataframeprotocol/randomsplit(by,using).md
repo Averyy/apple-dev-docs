@@ -1,7 +1,8 @@
 # randomSplit(by:using:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates two data frame slices by randomly splitting the rows of the data table type with a random-number generator.
 
@@ -31,7 +32,8 @@ A tuple of two data frame slices.
 
 ## See Also
 
-- [func randomSplit(by: Double, seed: Int?) -> (DataFrame.Slice, DataFrame.Slice)](dataframeprotocol/randomsplit(by:seed:).md)
+### Creating Two Slices by Splitting Rows
+- [func randomSplit(by: Double, seed: Int?) -> (DataFrame.Slice, DataFrame.Slice)](./randomsplit%28by,seed%29.md)
   Generates two data frame slices by randomly splitting the rows of the data table.
 
 

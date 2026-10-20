@@ -1,7 +1,8 @@
 # usbDevices
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of USB devices.
 
@@ -14,19 +15,24 @@ The list of USB devices.
 var usbDevices: [any VZUSBDeviceConfiguration] { get set }
 ```
 
+```objc
+@property (copy, readwrite) NSArray<id<VZUSBDeviceConfiguration>> * usbDevices;
+```
+
 #### Discussion
 
-This list represents a set of USB devices that a VM starts with. For each entry in the list, the system creates a corresponding runtime object in the [`usbDevices`](vzusbcontroller/usbdevices.md) property.
+This list represents a set of USB devices that a VM starts with. For each entry in the list, the system creates a corresponding runtime object in the [`usbDevices`](../vzusbcontroller/usbdevices.md) property.
 
 The list is empty by default.
 
 ## See Also
 
-- [class VZUSBController](vzusbcontroller.md)
+### Related Documentation
+- [class VZUSBController](../vzusbcontroller.md)
   A class that represents a USB controller in a VM.
-- [protocol VZUSBDeviceConfiguration](vzusbdeviceconfiguration.md)
+- [protocol VZUSBDeviceConfiguration](../vzusbdeviceconfiguration.md)
   The protocol for configuring USB devices.
-- [class VZUSBMassStorageDeviceConfiguration](vzusbmassstoragedeviceconfiguration.md)
+- [class VZUSBMassStorageDeviceConfiguration](../vzusbmassstoragedeviceconfiguration.md)
   The configuration object that represents a USB Mass storage device.
 
 

@@ -1,7 +1,8 @@
 # MapUserLocationChangeEvent
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents a change in a person’s location.
 
@@ -10,40 +11,41 @@ An event that represents a change in a person’s location.
 
 ## Declaration
 
-```swift
+```
 class MapUserLocationChangeEvent extends Event
 ```
 
 #### Discussion
 
-MapKit JS sends this event when [`showsUserLocation`](map/showsuserlocation.md) is true and the map acquires a person’s location, or after an automatic update.
+MapKit JS sends this event when [`showsUserLocation`](./map/showsuserlocation.md) is true and the map acquires a person’s location, or after an automatic update.
 
 ## Topics
 
 ### Instance Properties
-- [coordinate](mapuserlocationchangeevent/coordinate.md)
+- [coordinate](./mapuserlocationchangeevent/coordinate.md)
   The coordinate of a person’s location.
-- [floorLevel](mapuserlocationchangeevent/floorlevel.md)
+- [floorLevel](./mapuserlocationchangeevent/floorlevel.md)
   The current floor the user is on.
-- [timestamp](mapuserlocationchangeevent/timestamp.md)
+- [timestamp](./mapuserlocationchangeevent/timestamp.md)
   The timestamp that contains the time corresponding to the location acquisition.
 
 ## Relationships
 
 ### Inherits From
-- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
+- Event
 
 ## See Also
 
-- [class MapEvent](mapevent.md)
+### Map events
+- [class MapEvent](./mapevent.md)
   An object that represents a gesture the framework recognized on the map.
-- [class MapAnnotationDragEvent](mapannotationdragevent.md)
+- [class MapAnnotationDragEvent](./mapannotationdragevent.md)
   An event object that the map object dispatches when someone drags an annotation.
-- [class MapAnnotationSelectionEvent](mapannotationselectionevent.md)
+- [class MapAnnotationSelectionEvent](./mapannotationselectionevent.md)
   An event object that the map object dispatches when someone selects or deselects an annotation.
-- [class MapOverlaySelectionEvent](mapoverlayselectionevent.md)
+- [class MapOverlaySelectionEvent](./mapoverlayselectionevent.md)
   An event object that the map view dispatches when someone selects or deselects an overlay.
-- [class MapUserLocationErrorEvent](mapuserlocationerrorevent.md)
+- [class MapUserLocationErrorEvent](./mapuserlocationerrorevent.md)
   An event that indicates that MapKit JS is unable to acquire a person’s location.
 
 

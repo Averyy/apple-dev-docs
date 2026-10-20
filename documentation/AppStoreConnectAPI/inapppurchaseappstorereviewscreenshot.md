@@ -1,7 +1,8 @@
 # InAppPurchaseAppStoreReviewScreenshot
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A screenshot of the In-App Purchase flow submitted alongside an In-App Purchase for App Store review.
 
@@ -10,16 +11,16 @@ A screenshot of the In-App Purchase flow submitted alongside an In-App Purchase 
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAppStoreReviewScreenshot
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAppStoreReviewScreenshot.Attributes](inapppurchaseappstorereviewscreenshot/attributes-data.dictionary.md)
+- [object InAppPurchaseAppStoreReviewScreenshot.Attributes](./inapppurchaseappstorereviewscreenshot/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase App Store review screenshot resource.
-- [object InAppPurchaseAppStoreReviewScreenshot.Relationships](inapppurchaseappstorereviewscreenshot/relationships-data.dictionary.md)
+- [object InAppPurchaseAppStoreReviewScreenshot.Relationships](./inapppurchaseappstorereviewscreenshot/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,15 +29,16 @@ object InAppPurchaseAppStoreReviewScreenshot
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (InAppPurchaseAppStoreReviewScreenshot.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseAppStoreReviewScreenshots`
 
 ## See Also
 
-- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest](inapppurchaseappstorereviewscreenshotcreaterequest.md)
+### Objects
+- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest](./inapppurchaseappstorereviewscreenshotcreaterequest.md)
   The request body you use to create an In-App Purchase App Store review screenshot.
-- [object InAppPurchaseAppStoreReviewScreenshotResponse](inapppurchaseappstorereviewscreenshotresponse.md)
+- [object InAppPurchaseAppStoreReviewScreenshotResponse](./inapppurchaseappstorereviewscreenshotresponse.md)
   A response containing a single App Store review screenshot for an In-App Purchase.
-- [object InAppPurchaseAppStoreReviewScreenshotUpdateRequest](inapppurchaseappstorereviewscreenshotupdaterequest.md)
+- [object InAppPurchaseAppStoreReviewScreenshotUpdateRequest](./inapppurchaseappstorereviewscreenshotupdaterequest.md)
   The request body you use to update an In-App Purchase App Store review screenshot update request.
 
 

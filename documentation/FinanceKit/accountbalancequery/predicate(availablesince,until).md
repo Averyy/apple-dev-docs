@@ -1,7 +1,8 @@
 # predicate(availableSince:until:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A predicate that returns available account balances since a specified date, and, optionally, until another date.
 
@@ -22,7 +23,8 @@ static func predicate(availableSince startDate: Date, until endDate: Date? = nil
 
 ## See Also
 
-- [static func predicate(bookedSince: Date, until: Date?) -> Predicate<AccountBalance>](accountbalancequery/predicate(bookedsince:until:).md)
+### Type Methods
+- [static func predicate(bookedSince: Date, until: Date?) -> Predicate<AccountBalance>](./predicate%28bookedsince,until%29.md)
   A predicate that returns booked account balances since a specified date until another date.
 
 

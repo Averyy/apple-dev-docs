@@ -1,15 +1,16 @@
 # AudioComponentValidationResult.unauthorizedError_Open
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 case unauthorizedError_Open
 ```
 
+```c
+kAudioComponentValidationResult_UnauthorizedError_Open
+```
+
 ## See Also
 
-- [AudioComponentValidationResult.failed](audiocomponentvalidationresult/failed.md)
-- [AudioComponentValidationResult.passed](audiocomponentvalidationresult/passed.md)
-- [AudioComponentValidationResult.timedOut](audiocomponentvalidationresult/timedout.md)
-- [AudioComponentValidationResult.unauthorizedError_Init](audiocomponentvalidationresult/unauthorizederror_init.md)
-- [AudioComponentValidationResult.unknown](audiocomponentvalidationresult/unknown.md)
+### Constants
+- [AudioComponentValidationResult.failed](./failed.md)
+- [AudioComponentValidationResult.passed](./passed.md)
+- [AudioComponentValidationResult.timedOut](./timedout.md)
+- [AudioComponentValidationResult.unauthorizedError_Init](./unauthorizederror_init.md)
+- [AudioComponentValidationResult.unknown](./unknown.md)
 
 
 ---

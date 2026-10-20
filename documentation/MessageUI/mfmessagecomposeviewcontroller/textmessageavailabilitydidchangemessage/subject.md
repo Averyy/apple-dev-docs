@@ -1,7 +1,8 @@
 # MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage.Subject
 
 **Framework**: Message UI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The notification subject type
 

@@ -1,7 +1,8 @@
 # TestScoping
 
 **Framework**: Swift Testing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that tells the test runner to run custom code before or after it runs a test suite or test function.
 
@@ -17,30 +18,31 @@ protocol TestScoping : Sendable
 
 #### Overview
 
-Provide custom scope for tests by implementing the [`scopeProvider(for:testCase:)`](trait/scopeprovider(for:testcase:).md) method, returning a type that conforms to this protocol. Create a custom scope to consolidate common set-up and tear-down logic for tests which have similar needs, which allows each test function to focus on the unique aspects of its test.
+Provide custom scope for tests by implementing the [`scopeProvider(for:testCase:)`](./trait/scopeprovider%28for,testcase%29.md) method, returning a type that conforms to this protocol. Create a custom scope to consolidate common set-up and tear-down logic for tests which have similar needs, which allows each test function to focus on the unique aspects of its test.
 
 ## Topics
 
 ### Instance Methods
-- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](testscoping/providescope(for:testcase:performing:).md)
+- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](./testscoping/providescope%28for,testcase,performing%29.md)
   Provide custom execution scope for a function call which is related to the specified test or test case.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [IssueHandlingTrait](issuehandlingtrait.md)
-- [ParallelizationTrait](parallelizationtrait.md)
+- [IssueHandlingTrait](./issuehandlingtrait.md)
+- [ParallelizationTrait](./parallelizationtrait.md)
 
 ## See Also
 
-- [protocol Trait](trait.md)
+### Creating custom traits
+- [protocol Trait](./trait.md)
   A protocol describing traits that can be added to a test function or to a test suite.
-- [protocol TestTrait](testtrait.md)
+- [protocol TestTrait](./testtrait.md)
   A protocol describing a trait that you can add to a test function.
-- [protocol SuiteTrait](suitetrait.md)
+- [protocol SuiteTrait](./suitetrait.md)
   A protocol describing a trait that you can add to a test suite.
 
 

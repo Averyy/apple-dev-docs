@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Purpose.shipping
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating the merchant is requesting shipping information.
 

@@ -1,7 +1,8 @@
 # typeCString
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 C string—Mac OS Roman characters followed by a NULL byte. Deprecated.
 

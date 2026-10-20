@@ -1,7 +1,8 @@
 # copyItem(at:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the file at the specified URL to a new location synchronously.
 
@@ -20,17 +21,23 @@ Copies the file at the specified URL to a new location synchronously.
 func copyItem(at srcURL: URL, to dstURL: URL) throws
 ```
 
+```objc
+- (BOOL) copyItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL error:(NSError **) error;
+```
+
 ## Mentions
 
-- [About Apple File System](about-apple-file-system.md)
+- [About Apple File System](../about-apple-file-system.md)
 
 #### Discussion
 
 When copying items, the current process must have permission to read the file or directory at `srcURL` and write the parent directory of `dstURL`. If the item at `srcURL` is a directory, this method copies the directory and all of its contents, including any hidden files. If a file with the same name already exists at `dstURL`, this method stops the copy attempt and returns an appropriate error. If the last component of `srcURL` is a symbolic link, only the link is copied to the new path.
 
-Prior to copying each item, the file manager asks its delegate if it should actually do so. It does this by calling the [`fileManager(_:shouldCopyItemAt:to:)`](filemanagerdelegate/filemanager(_:shouldcopyitemat:to:).md) method; if that method is not implemented (or the process is running in OS X 10.5 or earlier) it calls the [`fileManager(_:shouldCopyItemAtPath:toPath:)`](filemanagerdelegate/filemanager(_:shouldcopyitematpath:topath:).md) method instead. If the delegate method returns [`true`](https://developer.apple.com/documentation/swift/true), or if the delegate does not implement the appropriate methods, the file manager proceeds to copy the file or directory. If there is an error copying an item, the file manager may also call the delegate’s [`fileManager(_:shouldProceedAfterError:copyingItemAt:to:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:copyingitemat:to:).md) or [`fileManager(_:shouldProceedAfterError:copyingItemAtPath:toPath:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:copyingitematpath:topath:).md) method to determine how to proceed.
+Prior to copying each item, the file manager asks its delegate if it should actually do so. It does this by calling the [`fileManager(_:shouldCopyItemAt:to:)`](../filemanagerdelegate/filemanager%28_,shouldcopyitemat,to%29.md) method; if that method is not implemented (or the process is running in OS X 10.5 or earlier) it calls the [`fileManager(_:shouldCopyItemAtPath:toPath:)`](../filemanagerdelegate/filemanager%28_,shouldcopyitematpath,topath%29.md) method instead. If the delegate method returns [`true`](../../Swift/true.md), or if the delegate does not implement the appropriate methods, the file manager proceeds to copy the file or directory. If there is an error copying an item, the file manager may also call the delegate’s [`fileManager(_:shouldProceedAfterError:copyingItemAt:to:)`](../filemanagerdelegate/filemanager%28_,shouldproceedaftererror,copyingitemat,to%29.md) or [`fileManager(_:shouldProceedAfterError:copyingItemAtPath:toPath:)`](../filemanagerdelegate/filemanager%28_,shouldproceedaftererror,copyingitematpath,topath%29.md) method to determine how to proceed.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -39,11 +46,12 @@ Prior to copying each item, the file manager asks its delegate if it should actu
 
 ## See Also
 
-- [func copyItem(atPath: String, toPath: String) throws](filemanager/copyitem(atpath:topath:).md)
+### Moving and copying items
+- [func copyItem(atPath: String, toPath: String) throws](./copyitem%28atpath,topath%29.md)
   Copies the item at the specified path to a new location synchronously.
-- [func moveItem(at: URL, to: URL) throws](filemanager/moveitem(at:to:).md)
+- [func moveItem(at: URL, to: URL) throws](./moveitem%28at,to%29.md)
   Moves the file or directory at the specified URL to a new location synchronously.
-- [func moveItem(atPath: String, toPath: String) throws](filemanager/moveitem(atpath:topath:).md)
+- [func moveItem(atPath: String, toPath: String) throws](./moveitem%28atpath,topath%29.md)
   Moves the file or directory at the specified path to a new location synchronously.
 
 

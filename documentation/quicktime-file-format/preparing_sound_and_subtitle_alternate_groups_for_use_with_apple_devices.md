@@ -1,12 +1,13 @@
 # Preparing sound and subtitle alternate groups for use with Apple devices
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Create collections of tracks that all serve the same purpose, where any track in the group can be substituted for another in a movie.
 
 #### Overview
 
-Alternate groups are collections of tracks that all serve the same purpose, where any track in the group can be substituted for another in a movie. Members of the same alternate group have the same identifier value in the alternate group field in the `'tkhd'` (track header) atom; see [`Track reference atoms`](track_reference_atoms.md) for an example of alternate tracks for different languages.
+Alternate groups are collections of tracks that all serve the same purpose, where any track in the group can be substituted for another in a movie. Members of the same alternate group have the same identifier value in the alternate group field in the `'tkhd'` (track header) atom; see [Track reference atoms](./track_reference_atoms.md) for an example of alternate tracks for different languages.
 
 This section provides guidelines for the use of alternate groups in movies to be played on Apple devices.
 
@@ -19,25 +20,25 @@ For each alternate group:
 - One track in the group must be enabled; that is, the Track Enabled flag must be set (`0x0001`) in its track header (`'tkhd'`).
 - All other tracks in the group must be disabled.
 
-#### Alternate Subtitle Tracks
+#### Alternate subtitle tracks
 
 For an alternate group that contains multiple subtitle (`'sbtl'`) tracks:
 
 - The player must pick a subtitle track even when subtitle display is turned off.
 - If any of the requirements stated in the previous General section does not hold, players may act as though there is no alternate subtitle track information.
 
-As described in [`Subtitle sample data`](subtitle_sample_data.md), a subtitle track can contain any combination of forced (must be displayed) and non-forced (optionally displayed) subtitle samples, including the possibility of a track that contains only forced subtitle samples. Even if a user indicates, directly or indirectly, that no subtitles should be displayed, any available appropriate subtitle track should be enabled so that any forced subtitles in the track can be displayed. A means by which a player can make a default selection among subtitle alternates in the absence of a user selection is covered in Relationships across alternate groups below.
+As described in [`Subtitle sample data`](./subtitle_sample_data.md), a subtitle track can contain any combination of forced (must be displayed) and non-forced (optionally displayed) subtitle samples, including the possibility of a track that contains only forced subtitle samples. Even if a user indicates, directly or indirectly, that no subtitles should be displayed, any available appropriate subtitle track should be enabled so that any forced subtitles in the track can be displayed. A means by which a player can make a default selection among subtitle alternates in the absence of a user selection is covered in Relationships across alternate groups below.
 
 For each language in a subtitle alternate group, subtitle tracks can be configured in either of the following ways:
 
 - Single track: Contains any combination of forced and non-forced (regular) subtitle samples.
-- Track pairs: One track contains any combination of forced and non-forced (regular) subtitle samples and has a track reference of type `'forc'` that references the second track, which contains only forced samples, as described in [`Subtitle sample data`](subtitle_sample_data.md).
+- Track pairs: One track contains any combination of forced and non-forced (regular) subtitle samples and has a track reference of type `'forc'` that references the second track, which contains only forced samples, as described in [`Subtitle sample data`](./subtitle_sample_data.md).
 
 If the user or player picks the language of a track pair, the player application then selects the appropriate track of the pair. It must select the regular subtitle track if subtitle display is on or the forced-only subtitle track if subtitle display is off.
 
 If a track pair is present in a subtitle alternate group, a player that displays the track languages of subtitle tracks may choose to list the language only once. If a player lists both tracks of the pair, the player should display some kind of distinction between the tracks (for example, including the track names from the `'tnam'` user data in a menu).
 
-#### Alternate Sound Tracks
+#### Alternate sound tracks
 
 For an alternate group that contains multiple sound (`'soun'`) tracks:
 
@@ -45,7 +46,7 @@ For an alternate group that contains multiple sound (`'soun'`) tracks:
 - If there is more than one enabled sound track, or if there is an enabled sound track and a non-sound track inside the same alternate group, the player may act as though there is no alternate sound track information.
 - Players may ignore sound tracks that use codecs that are unavailable.
 
-#### Relationships Across Alternate Groups
+#### Relationships across alternate groups
 
 An audio alternate group and subtitle alternate group may need to use different languages because the first is the spoken language and the second is the written language and the BCP 47 language tags may differ. If there is not a need to differentiate, use the same language code and optionally extended language tag for tracks in both alternate groups.
 
@@ -62,7 +63,8 @@ All subtitle tracks found in a subtitle track alternate group are candidate trac
 
 ## See Also
 
-- [Creating an effect description](creating_an_effect_description.md)
+### Movie features
+- [Creating an effect description](./creating_an_effect_description.md)
   Tell QuickTime which effect to execute and control how the effect behaves at runtime with an effect description.
 
 

@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Environment data that describes the current state of the system.
 

@@ -1,7 +1,8 @@
 # init(name:elements:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fetch index description using the specified name and element descriptions.
 
@@ -18,6 +19,10 @@ Creates a fetch index description using the specified name and element descripti
 
 ```swift
 init(name: String, elements: [NSFetchIndexElementDescription]?)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name elements:(NSArray<NSFetchIndexElementDescription *> *) elements;
 ```
 
 ## Parameters

@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long DOM_KEY_LOCATION_LEFT;
 ```
 
 ## See Also
 
-- [DOM_KEY_LOCATION_NUMPAD](keyboardevent/1629850-dom_key_location_numpad.md)
-- [DOM_KEY_LOCATION_RIGHT](keyboardevent/1631288-dom_key_location_right.md)
-- [DOM_KEY_LOCATION_STANDARD](keyboardevent/1632377-dom_key_location_standard.md)
+### Miscellaneous
+- [DOM_KEY_LOCATION_NUMPAD](./api-1629850-dom_key_location_numpad.md)
+- [DOM_KEY_LOCATION_RIGHT](./api-1631288-dom_key_location_right.md)
+- [DOM_KEY_LOCATION_STANDARD](./api-1632377-dom_key_location_standard.md)
 
 
 ---

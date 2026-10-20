@@ -1,7 +1,8 @@
 # requestAuthorization()
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prompts a person to give FinanceKit authorization to access financial data.
 
@@ -17,19 +18,20 @@ func requestAuthorization() async throws -> AuthorizationStatus
 
 #### Return Value
 
-An [`AuthorizationStatus`](authorizationstatus.md) value that indicates the current state of authorization.
+An [`AuthorizationStatus`](../authorizationstatus.md) value that indicates the current state of authorization.
 
 #### Discussion
 
-If there are no accounts are available to display, the framework presents a “No Accounts” screen and returns a status of [`AuthorizationStatus.authorized`](authorizationstatus/authorized.md) or [`AuthorizationStatus.denied`](authorizationstatus/denied.md) depending on the state of a person’s consent.
+If there are no accounts are available to display, the framework presents a “No Accounts” screen and returns a status of [`AuthorizationStatus.authorized`](../authorizationstatus/authorized.md) or [`AuthorizationStatus.denied`](../authorizationstatus/denied.md) depending on the state of a person’s consent.
 
 It’s safe to call this method multiple times; the framework prompts a person only if necessary.
 
 ## See Also
 
-- [func authorizationStatus() async throws -> AuthorizationStatus](financestore/authorizationstatus.md)
+### Authorization
+- [func authorizationStatus() async throws -> AuthorizationStatus](./authorizationstatus%28%29.md)
   Checks the authorization status for the calling application.
-- [enum AuthorizationStatus](authorizationstatus.md)
+- [enum AuthorizationStatus](../authorizationstatus.md)
 
 
 ---

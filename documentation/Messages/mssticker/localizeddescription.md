@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sticker’s localized description.
 
@@ -16,9 +17,14 @@ The sticker’s localized description.
 var localizedDescription: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * localizedDescription;
+```
+
 ## See Also
 
-- [var imageFileURL: URL](mssticker/imagefileurl.md)
+### Reading Sticker Data
+- [var imageFileURL: URL](./imagefileurl.md)
   The file URL of the image displayed by the sticker.
 
 

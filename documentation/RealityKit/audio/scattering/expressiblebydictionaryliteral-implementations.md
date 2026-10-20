@@ -1,11 +1,12 @@
 # ExpressibleByDictionaryLiteral Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(dictionaryLiteral: (Float, Float)...)](audio/scattering/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (Float, Float)...)](./init%28dictionaryliteral%29.md)
   Creates a scattering data set from a sequence of pairs of center frequency and scattering coefficient.
 
 

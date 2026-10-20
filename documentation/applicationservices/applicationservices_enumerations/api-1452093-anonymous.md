@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSUNoSelector: Int](katsunoselector.md)
+- [var kATSUNoSelector: Int](../katsunoselector.md)
 
 
 ---

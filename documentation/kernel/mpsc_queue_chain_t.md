@@ -1,14 +1,15 @@
 # mpsc_queue_chain_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct mpsc_queue_chain {
     ...
 } mpsc_queue_chain_t;
@@ -17,7 +18,7 @@ typedef struct mpsc_queue_chain {
 ## Topics
 
 ### Instance Properties
-- [mpqc_next](mpsc_queue_chain_t/3075289-mpqc_next.md)
+- [mpqc_next](./mpsc_queue_chain_t/api-3075289-mpqc_next.md)
 
 
 ---

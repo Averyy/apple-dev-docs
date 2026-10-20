@@ -1,14 +1,15 @@
 # kdebug_register_coproc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 int kdebug_register_coproc(const char *name, kdebug_coproc_flags_t flags, kd_callback_fn callback, void *context);
 ```
 

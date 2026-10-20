@@ -1,7 +1,8 @@
 # CampaignCreate.InvoiceDetail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Invoice billing contact details supplied when creating a campaign or budget order.
 
@@ -10,7 +11,7 @@ Invoice billing contact details supplied when creating a campaign or budget orde
 
 ## Declaration
 
-```swift
+```
 object CampaignCreate.InvoiceDetail
 ```
 
@@ -20,7 +21,7 @@ Supply these contact and reference details when creating a campaign or budget or
 
 The `clientName` and `orderNumber` fields are required for agency-type accounts.
 
-See [`InvoiceDetailCreate`](invoicedetailcreate.md) for the full field reference.
+See [`InvoiceDetailCreate`](../invoicedetailcreate.md) for the full field reference.
 
 ## Properties
 

@@ -1,23 +1,30 @@
 # compoundIndexes
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compound indexes for the entity as an array of arrays.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.5+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.0+ - Deprecated in 11.0
+- iPadOS 3.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.13
+- tvOS 9.0+ - Deprecated in 11.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 4.0
+
+> **Deprecated**: Use NSEntityDescription.indexes instead
 
 ## Declaration
 
 ```swift
 var compoundIndexes: [[Any]] { get set }
+```
+
+```objc
+@property (strong) NSArray<NSArray<id> *> * compoundIndexes;
 ```
 
 #### Discussion
@@ -28,9 +35,10 @@ Compound indexes are only used by stores that natively support compound indicesâ
 
 ## See Also
 
-- [var indexes: [NSFetchIndexDescription]](nsentitydescription/indexes.md)
+### Configuring indexes and constraints
+- [var indexes: [NSFetchIndexDescription]](./indexes.md)
   An array of fetch index descriptions for the entity.
-- [var uniquenessConstraints: [[Any]]](nsentitydescription/uniquenessconstraints.md)
+- [var uniquenessConstraints: [[Any]]](./uniquenessconstraints.md)
   An array of arrays that contains one or more attributes with a value that must be unique over the instances of that entity.
 
 

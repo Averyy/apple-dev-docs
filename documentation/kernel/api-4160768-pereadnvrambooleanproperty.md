@@ -1,14 +1,15 @@
 # PEReadNVRAMBooleanProperty
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t PEReadNVRAMBooleanProperty(const char *symbol, boolean_t *value);
 ```
 

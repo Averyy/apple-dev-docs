@@ -1,7 +1,8 @@
 # currentItemIdentifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier of the current item.
 
@@ -19,9 +20,13 @@ An identifier of the current item.
 var currentItemIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * currentItemIdentifier;
+```
+
 #### Discussion
 
-The coordinator sets this value in a previous call to [`transitionToItem(withIdentifier:proposingInitialTimingBasedOn:)`](avdelegatingplaybackcoordinator/transitiontoitem(withidentifier:proposinginitialtimingbasedon:).md).
+The coordinator sets this value in a previous call to [`transitionToItem(withIdentifier:proposingInitialTimingBasedOn:)`](./transitiontoitem%28withidentifier,proposinginitialtimingbasedon%29.md).
 
 
 ---

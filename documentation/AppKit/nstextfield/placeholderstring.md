@@ -1,7 +1,8 @@
 # placeholderString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string the text field displays when empty to help the user understand the text field’s purpose.
 
@@ -14,12 +15,17 @@ The string the text field displays when empty to help the user understand the te
 var placeholderString: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * placeholderString;
+```
+
 ## See Also
 
-- [var placeholderAttributedString: NSAttributedString?](nstextfield/placeholderattributedstring.md)
+### Setting placeholder text
+- [var placeholderAttributedString: NSAttributedString?](./placeholderattributedstring.md)
   The attributed string the text field displays when empty to help the user understand the text field’s purpose.
-- [var placeholderStrings: [String]](nstextfield/placeholderstrings.md)
-- [var placeholderAttributedStrings: [NSAttributedString]](nstextfield/placeholderattributedstrings.md)
+- [var placeholderStrings: [String]](./placeholderstrings.md)
+- [var placeholderAttributedStrings: [NSAttributedString]](./placeholderattributedstrings.md)
 
 
 ---

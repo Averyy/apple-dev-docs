@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the cancellation of the request was successful.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates if the cancellation of the request was successful
 var isCancelled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+```
+
 ## See Also
 
-- [var isLoading: Bool](mkmapitemrequest/isloading.md)
+### Checking the status of a request
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates if the request is loading.
 
 

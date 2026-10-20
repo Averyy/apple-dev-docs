@@ -1,7 +1,8 @@
 # stageInSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the block.
 
@@ -17,6 +18,10 @@ The size of the block.
 
 ```swift
 var stageInSize: (UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t stageInSize[3];
 ```
 
 

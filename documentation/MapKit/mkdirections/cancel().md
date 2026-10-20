@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a pending request.
 
@@ -20,13 +21,18 @@ Cancels a pending request.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-After canceling a request, you can call the [`calculate(completionHandler:)`](mkdirections/calculate(completionhandler:).md) method again (if you want) to restart the request process.
+After canceling a request, you can call the [`calculate(completionHandler:)`](./calculate%28completionhandler%29.md) method again (if you want) to restart the request process.
 
 ## See Also
 
-- [var isCalculating: Bool](mkdirections/iscalculating.md)
+### Managing the request
+- [var isCalculating: Bool](./iscalculating.md)
   A Boolean value that indicates whether a request is in process.
 
 

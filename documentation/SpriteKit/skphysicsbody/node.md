@@ -1,18 +1,19 @@
 # node
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The node that this body is connected to.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The node that this body is connected to.
 weak var node: SKNode? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) SKNode * node;
+```
+
 #### Discussion
 
-You associate the body with a node by assigning it to the [`physicsBody`](sknode/physicsbody.md) property of the [`SKNode`](sknode.md) object. If the body is not associated with a node, the value is `nil`.
+You associate the body with a node by assigning it to the [`physicsBody`](../sknode/physicsbody.md) property of the [`SKNode`](../sknode.md) object. If the body is not associated with a node, the value is `nil`.
 
 
 ---

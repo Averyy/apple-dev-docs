@@ -1,7 +1,8 @@
 # mmioLength
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length in bytes of the memory-mapped IO section.
 
@@ -13,6 +14,10 @@ The length in bytes of the memory-mapped IO section.
 
 ```swift
 var mmioLength: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) size_t mmioLength;
 ```
 
 

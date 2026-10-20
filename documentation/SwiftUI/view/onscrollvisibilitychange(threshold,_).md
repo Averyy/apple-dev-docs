@@ -1,7 +1,8 @@
 # onScrollVisibilityChange(threshold:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to be called when the view crosses the threshold to be considered on/off screen.
 
@@ -49,17 +50,18 @@ When the view appears on-screen, the action will be called if the threshold has 
 
 ## See Also
 
-- [func onScrollGeometryChange<T>(for: T.Type, of: (ScrollGeometry) -> T, action: (T, T) -> Void) -> some View](view/onscrollgeometrychange(for:of:action:).md)
+### Responding to scroll view changes
+- [func onScrollGeometryChange<T>(for: T.Type, of: (ScrollGeometry) -> T, action: (T, T) -> Void) -> some View](./onscrollgeometrychange%28for,of,action%29.md)
   Adds an action to be performed when a value, created from a scroll geometry, changes.
-- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](view/onscrolltargetvisibilitychange(idtype:threshold:_:).md)
+- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](./onscrolltargetvisibilitychange%28idtype,threshold,_%29.md)
   Adds an action to be called with information about what views would be considered visible.
-- [func onScrollPhaseChange(_:)](view/onscrollphasechange(_:).md)
+- [func onScrollPhaseChange(_:)](./onscrollphasechange%28_%29.md)
   Adds an action to perform when the scroll phase of the first scroll view in the hierarchy changes.
-- [struct ScrollGeometry](scrollgeometry.md)
+- [struct ScrollGeometry](../scrollgeometry.md)
   A type that defines the geometry of a scroll view.
-- [enum ScrollPhase](scrollphase.md)
+- [enum ScrollPhase](../scrollphase.md)
   A type that describes the state of a scroll gesture of a scrollable view like a scroll view.
-- [struct ScrollPhaseChangeContext](scrollphasechangecontext.md)
+- [struct ScrollPhaseChangeContext](../scrollphasechangecontext.md)
   A type that provides you with more content when the phase of a scroll view changes.
 
 

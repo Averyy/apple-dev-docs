@@ -1,7 +1,8 @@
 # GCController.DidStopBeingCurrentMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a game controller stops being the most recently used controller.
 
@@ -23,7 +24,7 @@ struct DidStopBeingCurrentMessage
 
 Use the `.didStopBeingCurrent` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCController.self, for: .didStopBeingCurrent) { message in
    let controller = message.controller
 }
@@ -32,16 +33,16 @@ let observation = NotificationCenter.default.addObserver(of: GCController.self, 
 ## Topics
 
 ### Initializers
-- [init(controller: GCController)](gccontroller/didstopbeingcurrentmessage/init(controller:).md)
+- [init(controller: GCController)](./didstopbeingcurrentmessage/init%28controller%29.md)
 ### Instance Properties
-- [var controller: GCController](gccontroller/didstopbeingcurrentmessage/controller.md)
+- [var controller: GCController](./didstopbeingcurrentmessage/controller.md)
   The controller object that was previously the current controller.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

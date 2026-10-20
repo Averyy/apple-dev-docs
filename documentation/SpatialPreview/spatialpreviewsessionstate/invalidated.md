@@ -1,13 +1,14 @@
 # SpatialPreviewSessionState.invalidated
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sesion has been invalidated and is no longer available.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,7 +18,7 @@ case invalidated
 
 ## Mentions
 
-- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+- [Bridging an external USD runtime to Spatial Preview](../bridging-an-external-usd-runtime-to-spatial-preview.md)
 
 
 ---

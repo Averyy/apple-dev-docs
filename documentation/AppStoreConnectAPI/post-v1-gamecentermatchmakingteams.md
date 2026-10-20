@@ -1,7 +1,8 @@
 # Create a Team
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a game-specific team to a rule set.
 
@@ -14,7 +15,7 @@ Add a game-specific team to a rule set.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingTeams
 {
     “data”: {
@@ -62,11 +63,27 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingTeams
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingTeams`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterMatchmakingTeamCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterMatchmakingTeamResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Modify a Team](patch-v1-gamecentermatchmakingteams-_id_.md)
+### Creating, modifying, and deleting teams
+- [Modify a Team](./patch-v1-gamecentermatchmakingteams-_id_.md)
   Update a specific team in a rule set.
-- [Delete a Team](delete-v1-gamecentermatchmakingteams-_id_.md)
+- [Delete a Team](./delete-v1-gamecentermatchmakingteams-_id_.md)
   Delete a game-specific team in a rule set.
 
 

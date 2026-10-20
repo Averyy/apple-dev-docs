@@ -1,7 +1,8 @@
 # decompressionOutputCallback
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -17,9 +18,14 @@
 var decompressionOutputCallback: VTDecompressionOutputCallback?
 ```
 
+```c
+VTDecompressionOutputCallback decompressionOutputCallback;
+```
+
 ## See Also
 
-- [var decompressionOutputRefCon: UnsafeMutableRawPointer?](vtdecompressionoutputcallbackrecord/decompressionoutputrefcon.md)
+### Instance Properties
+- [var decompressionOutputRefCon: UnsafeMutableRawPointer?](./decompressionoutputrefcon.md)
 
 
 ---

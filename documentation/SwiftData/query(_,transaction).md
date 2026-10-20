@@ -1,7 +1,8 @@
 # Query(_:transaction:)
 
 **Framework**: SwiftData  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Fetches only the subset of the attached model type that satisfy the provided fetch descriptor’s criteria.
 
@@ -28,7 +29,8 @@ Fetches only the subset of the attached model type that satisfy the provided fet
 
 ## See Also
 
-- [macro Query<Element>(FetchDescriptor<Element>, animation: Animation)](query(_:animation:).md)
+### Descriptor-based queries
+- [macro Query<Element>(FetchDescriptor<Element>, animation: Animation)](./query%28_,animation%29.md)
   Fetches only the subset of the attached model type that satisfy the provided fetch descriptor’s criteria.
 
 

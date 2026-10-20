@@ -1,14 +1,15 @@
 # trace_type
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 uint32_t trace_type;
 ```
 

@@ -1,7 +1,8 @@
 # WebGLDebugShaders
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLDebugShaders
 ```
 
 ## Topics
 
 ### Instance Methods
-- [getTranslatedShaderSource](webgldebugshaders/1632756-gettranslatedshadersource.md)
+- [getTranslatedShaderSource](./webgldebugshaders/api-1632756-gettranslatedshadersource.md)
 
 
 ---

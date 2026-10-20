@@ -1,7 +1,8 @@
 # SpatialEventCollection.Event.Kind.pointer
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event representing a click-based, indirect input device describing the input sequence from click to click release.
 
@@ -20,11 +21,12 @@ case pointer
 
 ## See Also
 
-- [SpatialEventCollection.Event.Kind.directPinch](spatialeventcollection/event/kind-swift.enum/directpinch.md)
+### Getting the event type
+- [SpatialEventCollection.Event.Kind.directPinch](./directpinch.md)
   An event generated from a pinching hand in close proximity to content.
-- [SpatialEventCollection.Event.Kind.indirectPinch](spatialeventcollection/event/kind-swift.enum/indirectpinch.md)
+- [SpatialEventCollection.Event.Kind.indirectPinch](./indirectpinch.md)
   An event generated from an indirectly targeted pinching hand.
-- [SpatialEventCollection.Event.Kind.touch](spatialeventcollection/event/kind-swift.enum/touch.md)
+- [SpatialEventCollection.Event.Kind.touch](./touch.md)
   An event generated from a touch directly targeting content.
 
 

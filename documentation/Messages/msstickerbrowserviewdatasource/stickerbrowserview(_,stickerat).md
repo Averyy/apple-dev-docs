@@ -2,6 +2,7 @@
 
 **Framework**: Messages  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source for the sticker object that the browser will display at the provided index.
@@ -15,6 +16,10 @@ Asks the data source for the sticker object that the browser will display at the
 
 ```swift
 func stickerBrowserView(_ stickerBrowserView: MSStickerBrowserView, stickerAt index: Int) -> MSSticker
+```
+
+```objc
+- (MSSticker *) stickerBrowserView:(MSStickerBrowserView *) stickerBrowserView stickerAtIndex:(NSInteger) index;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ Do not perform any time-intensive activities in this method. For example, creati
 
 ## See Also
 
-- [func numberOfStickers(in: MSStickerBrowserView) -> Int](msstickerbrowserviewdatasource/numberofstickers(in:).md)
+### Providing Stickers
+- [func numberOfStickers(in: MSStickerBrowserView) -> Int](./numberofstickers%28in%29.md)
   Asks the data source for the number of stickers that the browser will display.
 
 

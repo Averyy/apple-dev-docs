@@ -1,7 +1,8 @@
 # tentConvolve(kernelSize:edgeMode:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convolves a multiple-plane 8-bit-per-channel pixel buffer with a tent filter.
 
@@ -11,7 +12,7 @@ Convolves a multiple-plane 8-bit-per-channel pixel buffer with a tent filter.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Convolves a multiple-plane 8-bit-per-channel pixel buffer with a tent filter.
 ```swift
 func tentConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `UInt8`.
 
 ## Parameters
 
@@ -28,13 +31,15 @@ func tentConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, d
 
 ## See Also
 
-- [Blurring an image](blurring-an-image.md)
+### Related Documentation
+- [Blurring an image](../../blurring-an-image.md)
   Filter an image by convolving it with custom and high-speed kernels.
-- [func tentConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/tentconvolve(kernelsize:edgemode:destination:)-1fpap.md)
+### Tent convolution
+- [func tentConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, destination: vImage.PixelBuffer<Format>)](./tentconvolve%28kernelsize,edgemode,destination%29-1fpap.md)
   Convolves an 8-bit planar pixel buffer with a tent filter.
-- [func tentConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/tentconvolve(kernelsize:edgemode:destination:)-150xp.md)
+- [func tentConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>, destination: vImage.PixelBuffer<Format>)](./tentconvolve%28kernelsize,edgemode,destination%29-150xp.md)
   Convolves an 8-bit-per-channel, 4-channel interleaved pixel buffer with a tent filter.
-- [func tentConvolved(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>) -> vImage.PixelBuffer<Format>](vimage/pixelbuffer/tentconvolved(kernelsize:edgemode:).md)
+- [func tentConvolved(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>) -> vImage.PixelBuffer<Format>](./tentconvolved%28kernelsize,edgemode%29.md)
   Returns a tent-filter convolved 8-bit-per-channel, 4-channel interleaved pixel buffer.
 
 

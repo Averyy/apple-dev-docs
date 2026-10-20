@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingInAppAction.systemDefault
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system maintains its default handling regardless of your app’s preference.
 
@@ -16,6 +17,10 @@ The system maintains its default handling regardless of your app’s preference.
 
 ```swift
 case systemDefault
+```
+
+```c
+GCControllerHomeButtonSettingInAppActionDefault
 ```
 
 

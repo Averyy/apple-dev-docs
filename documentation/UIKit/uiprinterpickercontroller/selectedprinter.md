@@ -1,7 +1,8 @@
 # selectedPrinter
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selected printer.
 
@@ -15,6 +16,10 @@ The selected printer.
 
 ```swift
 var selectedPrinter: UIPrinter? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UIPrinter * selectedPrinter;
 ```
 
 #### Discussion

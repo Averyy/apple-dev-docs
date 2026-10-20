@@ -1,7 +1,8 @@
 # AppEntityUIElementsContext
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contextual information for UI elements you make discoverable by Apple Intelligence.
 
@@ -22,28 +23,29 @@ struct AppEntityUIElementsContext
 
 #### Overview
 
-When you implement your custom app entity provider to make a custom view’s content discoverable by Apple Intelligence and Siri, you provide the system with [`AppEntityUIElement`](appentityuielement.md) objects that combine the app entity for a view’s content with additional information. The `AppEntityUIElementsContext` holds this additional information that the system uses to understand where content appears onscreen.
+When you implement your custom app entity provider to make a custom view’s content discoverable by Apple Intelligence and Siri, you provide the system with [`AppEntityUIElement`](./appentityuielement.md) objects that combine the app entity for a view’s content with additional information. The `AppEntityUIElementsContext` holds this additional information that the system uses to understand where content appears onscreen.
 
 ## Topics
 
 ### Instance Properties
-- [let bounds: CGRect](appentityuielementscontext/bounds.md)
+- [let bounds: CGRect](./appentityuielementscontext/bounds.md)
   The bounds that the system uses to understand the location of a UI element within the local coordinate space.
-- [let requests: Set<AppEntityUIElementsContext.ElementsRequest>](appentityuielementscontext/requests.md)
+- [let requests: Set<AppEntityUIElementsContext.ElementsRequest>](./appentityuielementscontext/requests.md)
   The set of requests for elements from the system.
 ### Enumerations
-- [AppEntityUIElementsContext.ElementsRequest](appentityuielementscontext/elementsrequest.md)
+- [AppEntityUIElementsContext.ElementsRequest](./appentityuielementscontext/elementsrequest.md)
   A type that describes which UI elements the system is requesting.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AppEntityUIElement](appentityuielement.md)
+### View-entity association
+- [struct AppEntityUIElement](./appentityuielement.md)
   A type that wraps your app entity and adds information to make a custom view’s content discoverable by Apple Intelligence.
 
 

@@ -1,7 +1,8 @@
 # HKPredicateKeyPathDateComponents
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing an activity summary’s date components.
 
@@ -17,6 +18,10 @@ The key path for accessing an activity summary’s date components.
 
 ```swift
 let HKPredicateKeyPathDateComponents: String
+```
+
+```c
+extern NSString * const HKPredicateKeyPathDateComponents;
 ```
 
 

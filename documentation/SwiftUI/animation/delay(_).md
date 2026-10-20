@@ -1,7 +1,8 @@
 # delay(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delays the start of the animation by the specified number of seconds.
 
@@ -26,7 +27,7 @@ An animation with a delayed start.
 
 #### Discussion
 
-Use this method to delay the start of an animation. For example, the following code animates the height change of two capsules. Animation of the first [`Capsule`](capsule.md) begins immediately. However, animation of the second one doesn’t begin until a half second later.
+Use this method to delay the start of an animation. For example, the following code animates the height change of two capsules. Animation of the first [`Capsule`](../capsule.md) begins immediately. However, animation of the second one doesn’t begin until a half second later.
 
 ```swift
 struct ContentView: View {
@@ -51,17 +52,20 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows two capsules side by side that animate using the ease-in ease-out animation. The capsule on the left is short, while the capsule on the right is tall. As they animate, the short capsule grows upwards to match the height of the tall capsule. Then the tall capsule shrinks to match the original height of the short capsule. Then the capsule on the left shrinks to its original height, followed by the capsule on the right growing to its original height.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-15-delay.mp4)
+
 ## Parameters
 
 - `delay`: The number of seconds to delay the start of the animation.
 
 ## See Also
 
-- [func repeatCount(Int, autoreverses: Bool) -> Animation](animation/repeatcount(_:autoreverses:).md)
+### Configuring an animation
+- [func repeatCount(Int, autoreverses: Bool) -> Animation](./repeatcount%28_,autoreverses%29.md)
   Repeats the animation for a specific number of times.
-- [func repeatForever(autoreverses: Bool) -> Animation](animation/repeatforever(autoreverses:).md)
+- [func repeatForever(autoreverses: Bool) -> Animation](./repeatforever%28autoreverses%29.md)
   Repeats the animation for the lifespan of the view containing the animation.
-- [func speed(Double) -> Animation](animation/speed(_:).md)
+- [func speed(Double) -> Animation](./speed%28_%29.md)
   Changes the duration of an animation by adjusting its speed.
 
 

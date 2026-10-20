@@ -1,7 +1,8 @@
 # Associate Subscriptions
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Associate subscriptions with client user IDs.
 
@@ -32,14 +33,14 @@ Associate subscriptions with client user IDs.
 ## Topics
 
 ### Request and Response
-- [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
+- [object ManageSubscriptionsRequest](./managesubscriptionsrequest.md)
   The request for subscription management.
-- [object EventResponse](eventresponse.md)
+- [object EventResponse](./eventresponse.md)
   The response that contains the event identifier.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
-- [Managing subscriptions](managing-subscriptions.md)
+- [Managing subscriptions](./managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
 
 ## Endpoint
@@ -48,25 +49,36 @@ Associate subscriptions with client user IDs.
 
 ## Request Body
 
-[`ManageSubscriptionsRequest`](managesubscriptionsrequest.md)
+**Content-Type**: `application/json`  
+**Type**: `ManageSubscriptionsRequest`
+
+[`ManageSubscriptionsRequest`](./managesubscriptionsrequest.md)
+
+## Responses
+
+- `200` OK (`EventResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
 
 ## See Also
 
-- [Enable Subscriptions](enable-subscriptions.md)
+### Subscription management
+- [Enable Subscriptions](./enable-subscriptions.md)
   Declare that your device management service supports subscription management.
-- [Disable Subscriptions](disable-subscriptions.md)
+- [Disable Subscriptions](./disable-subscriptions.md)
   Declare that your device management service doesn’t support subscription management.
-- [Get Subscriptions](get-subscriptions.md)
+- [Get Subscriptions](./get-subscriptions.md)
   Get the subscriptions that your organization manages.
-- [Get Subscription Assignments](get-subscription-assignments.md)
+- [Get Subscription Assignments](./get-subscription-assignments.md)
   Get the subscription assignments for users in your organization.
-- [Disassociate Subscriptions](disassociate-subscriptions.md)
+- [Disassociate Subscriptions](./disassociate-subscriptions.md)
   Disassociate subscriptions from client user IDs.
-- [Get Subscription Administrators](get-subscription-administrators.md)
+- [Get Subscription Administrators](./get-subscription-administrators.md)
   Get the administrators for subscriptions that your organization manages.
-- [Add Subscription Administrators](add-subscription-administrators.md)
+- [Add Subscription Administrators](./add-subscription-administrators.md)
   Add administrators for subscriptions.
-- [Remove Subscription Administrators](remove-subscription-administrators.md)
+- [Remove Subscription Administrators](./remove-subscription-administrators.md)
   Remove administrators from subscriptions.
 
 

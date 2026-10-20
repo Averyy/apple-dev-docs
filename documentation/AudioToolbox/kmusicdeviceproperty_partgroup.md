@@ -1,10 +1,11 @@
 # kMusicDeviceProperty_PartGroup
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kMusicDeviceProperty_PartGroup: AudioUnitPropertyID { get }
 ```
 
+```c
+kMusicDeviceProperty_PartGroup
+```
+
 ## See Also
 
-- [var kMusicDeviceProperty_DualSchedulingMode: AudioUnitPropertyID](kmusicdeviceproperty_dualschedulingmode.md)
-- [var kMusicDeviceProperty_MIDIXMLNames: AudioUnitPropertyID](kmusicdeviceproperty_midixmlnames.md)
-- [var kMusicDeviceProperty_SupportsStartStopNote: AudioUnitPropertyID](kmusicdeviceproperty_supportsstartstopnote.md)
+### Constants
+- [var kMusicDeviceProperty_DualSchedulingMode: AudioUnitPropertyID](./kmusicdeviceproperty_dualschedulingmode.md)
+- [var kMusicDeviceProperty_MIDIXMLNames: AudioUnitPropertyID](./kmusicdeviceproperty_midixmlnames.md)
+- [var kMusicDeviceProperty_SupportsStartStopNote: AudioUnitPropertyID](./kmusicdeviceproperty_supportsstartstopnote.md)
 
 
 ---

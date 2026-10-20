@@ -1,7 +1,8 @@
 # isGroupRowStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether this row view is a group row.
 
@@ -14,13 +15,18 @@ Specifies whether this row view is a group row.
 var isGroupRowStyle: Bool { get set }
 ```
 
+```objc
+@property (getter=isGroupRowStyle) BOOL groupRowStyle;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true) this row is a group row and will draw appropriately.
+When [`true`](../../Swift/true.md) this row is a group row and will draw appropriately.
 
 ## See Also
 
-- [var numberOfColumns: Int](nstablerowview/numberofcolumns.md)
+### Row Grouping
+- [var numberOfColumns: Int](./numberofcolumns.md)
   Returns the number of columns represented by views in the table row view.
 
 

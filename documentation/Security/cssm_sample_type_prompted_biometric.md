@@ -1,7 +1,8 @@
 # CSSM_SAMPLE_TYPE_PROMPTED_BIOMETRIC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_SAMPLE_TYPE_PROMPTED_BIOMETRIC: Int { get }
+```
+
+```c
+CSSM_SAMPLE_TYPE_PROMPTED_BIOMETRIC
 ```
 
 

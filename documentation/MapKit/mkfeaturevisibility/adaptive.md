@@ -1,7 +1,8 @@
 # MKFeatureVisibility.adaptive
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating that the feature adapts to the current map state.
 
@@ -19,15 +20,20 @@ A constant indicating that the feature adapts to the current map state.
 case adaptive
 ```
 
+```c
+MKFeatureVisibilityAdaptive
+```
+
 #### Discussion
 
 The framework displays title text and hides subtitle text for features in the normal state. When selected, the framework hides the feature’s title and subtitle text when the feature requires a callout.
 
 ## See Also
 
-- [MKFeatureVisibility.hidden](mkfeaturevisibility/hidden.md)
+### Visibility options
+- [MKFeatureVisibility.hidden](./hidden.md)
   A constant indicating that the feature is hidden.
-- [MKFeatureVisibility.visible](mkfeaturevisibility/visible.md)
+- [MKFeatureVisibility.visible](./visible.md)
   A constant indicating that the feature is visible.
 
 

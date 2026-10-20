@@ -1,7 +1,8 @@
 # FSEventStreamInvalidate(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func FSEventStreamInvalidate(_ streamRef: FSEventStreamRef)
+```
+
+```c
+void FSEventStreamInvalidate(FSEventStreamRef streamRef);
 ```
 
 #### Discussion

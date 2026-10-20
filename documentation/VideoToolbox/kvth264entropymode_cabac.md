@@ -1,7 +1,8 @@
 # kVTH264EntropyMode_CABAC
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,9 +18,14 @@
 let kVTH264EntropyMode_CABAC: CFString
 ```
 
+```c
+extern CFStringRef const kVTH264EntropyMode_CABAC;
+```
+
 ## See Also
 
-- [let kVTH264EntropyMode_CAVLC: CFString](kvth264entropymode_cavlc.md)
+### Entropy Modes
+- [let kVTH264EntropyMode_CAVLC: CFString](./kvth264entropymode_cavlc.md)
 
 
 ---

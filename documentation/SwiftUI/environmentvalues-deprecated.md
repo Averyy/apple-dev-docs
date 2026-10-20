@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,19 +12,19 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated properties
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+- [var accessibilityShowButtonShapes: Bool](./environmentvalues/accessibilityshowbuttonshapes.md)
   Whether the system preference for Show Button Shapes is enabled.
-- [var complicationRenderingMode: ComplicationRenderingMode](environmentvalues/complicationrenderingmode.md)
+- [var complicationRenderingMode: ComplicationRenderingMode](./environmentvalues/complicationrenderingmode.md)
   The complication rendering mode for the current environment.
-- [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
+- [var controlActiveState: ControlActiveState](./environmentvalues/controlactivestate.md)
   The active appearance expected of controls in a window.
-- [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
+- [var disableAutocorrection: Bool?](./environmentvalues/disableautocorrection.md)
   A Boolean value that determines whether the view hierarchy has auto-correction enabled.
-- [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
+- [var presentationMode: Binding<PresentationMode>](./environmentvalues/presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
-- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
+- [var sizeCategory: ContentSizeCategory](./environmentvalues/sizecategory.md)
   The size of content.
-- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
+- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](./environmentvalues/imageplaygroundpersonalizationpolicy.md)
 
 
 ---

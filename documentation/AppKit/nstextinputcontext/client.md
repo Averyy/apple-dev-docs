@@ -1,7 +1,8 @@
 # client
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The owner of this input context. (read-only)
 
@@ -14,13 +15,18 @@ The owner of this input context. (read-only)
 var client: any NSTextInputClient { get }
 ```
 
+```objc
+@property (readonly) id<NSTextInputClient> client;
+```
+
 #### Discussion
 
 The client (owner) of the input context, typically an `NSView` instance, retains its `NSTextInputContext` instance. The `NSTextInputContext` instance doesn’t retain its client.
 
 ## See Also
 
-- [class var current: NSTextInputContext?](nstextinputcontext/current.md)
+### Getting the Input Context and Client
+- [class var current: NSTextInputContext?](./current.md)
   Returns the current, activated, text input context object.
 
 

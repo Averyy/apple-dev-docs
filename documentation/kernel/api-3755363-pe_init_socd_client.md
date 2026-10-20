@@ -1,14 +1,15 @@
 # PE_init_socd_client
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 vm_size_t PE_init_socd_client(void);
 ```
 

@@ -1,7 +1,8 @@
 # init(view:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly initialized preview interaction for the specified view.
 
@@ -15,6 +16,10 @@ Returns a newly initialized preview interaction for the specified view.
 
 ```swift
 init(view: UIView)
+```
+
+```objc
+- (instancetype) initWithView:(UIView *) view;
 ```
 
 #### Return Value

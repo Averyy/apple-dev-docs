@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,7 +19,8 @@ static var `default`: RealityViewDynamicRange { get }
 
 ## See Also
 
-- [static var standard: RealityViewDynamicRange](realityviewdynamicrange/standard.md)
+### Setting the dynamic range
+- [static var standard: RealityViewDynamicRange](./standard.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NEOnDemandRuleInterfaceType
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 8.0+
@@ -17,41 +18,46 @@
 enum NEOnDemandRuleInterfaceType
 ```
 
+```c
+enum NEOnDemandRuleInterfaceType : NSInteger;
+```
+
 ## Topics
 
 ### Interface Types
-- [NEOnDemandRuleInterfaceType.any](neondemandruleinterfacetype/any.md)
+- [NEOnDemandRuleInterfaceType.any](./neondemandruleinterfacetype/any.md)
   Match any interface type
-- [NEOnDemandRuleInterfaceType.ethernet](neondemandruleinterfacetype/ethernet.md)
+- [NEOnDemandRuleInterfaceType.ethernet](./neondemandruleinterfacetype/ethernet.md)
   Match wired ethernet interfaces
-- [NEOnDemandRuleInterfaceType.wiFi](neondemandruleinterfacetype/wifi.md)
+- [NEOnDemandRuleInterfaceType.wiFi](./neondemandruleinterfacetype/wifi.md)
   Match Wi-Fi interfaces
-- [NEOnDemandRuleInterfaceType.cellular](neondemandruleinterfacetype/cellular.md)
+- [NEOnDemandRuleInterfaceType.cellular](./neondemandruleinterfacetype/cellular.md)
   Match cellular data interfaces
 ### Initializers
-- [init?(rawValue: Int)](neondemandruleinterfacetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./neondemandruleinterfacetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dnsSearchDomainMatch: [String]?](neondemandrule/dnssearchdomainmatch.md)
+### Accessing match parameters
+- [var dnsSearchDomainMatch: [String]?](./neondemandrule/dnssearchdomainmatch.md)
   DNS search domains that identify a network.
-- [var dnsServerAddressMatch: [String]?](neondemandrule/dnsserveraddressmatch.md)
+- [var dnsServerAddressMatch: [String]?](./neondemandrule/dnsserveraddressmatch.md)
   DNS server addresses that identify a network.
-- [var interfaceTypeMatch: NEOnDemandRuleInterfaceType](neondemandrule/interfacetypematch.md)
+- [var interfaceTypeMatch: NEOnDemandRuleInterfaceType](./neondemandrule/interfacetypematch.md)
   An interface type to identify a network.
-- [var ssidMatch: [String]?](neondemandrule/ssidmatch.md)
+- [var ssidMatch: [String]?](./neondemandrule/ssidmatch.md)
   SSIDs that identify a network.
-- [var probeURL: URL?](neondemandrule/probeurl.md)
+- [var probeURL: URL?](./neondemandrule/probeurl.md)
   A URL to probe when all other network identifiers match to validate that an expected resource is available.
 
 

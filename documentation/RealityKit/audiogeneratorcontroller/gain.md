@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gain in decibels of the audio generator controller output.
 

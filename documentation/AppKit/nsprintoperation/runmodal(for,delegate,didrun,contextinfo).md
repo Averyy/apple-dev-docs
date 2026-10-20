@@ -1,17 +1,22 @@
 # runModal(for:delegate:didRun:contextInfo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the print operation, calling your custom delegate method upon completion.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func runModal(for docWindow: NSWindow, delegate: Any?, didRun didRunSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) runOperationModalForWindow:(NSWindow *) docWindow delegate:(id) delegate didRunSelector:(SEL) didRunSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -22,9 +27,9 @@ The method specified by the  `didRunSelector` parameter must have the following 
 - (void)printOperationDidRun:(NSPrintOperation *)printOperation  success:(BOOL)success  contextInfo:(void *)contextInfo
 ```
 
-The value of `success` is [`true`](https://developer.apple.com/documentation/swift/true) if the print operation ran to completion without cancellation or error, and [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of `success` is [`true`](../../Swift/true.md) if the print operation ran to completion without cancellation or error, and [`false`](../../Swift/false.md) otherwise.
 
-If you send [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.md) to an `NSPrintOperation` object with an argument of [`true`](https://developer.apple.com/documentation/swift/true), then the delegate specified in a subsequent invocation of [`runModal(for:delegate:didRun:contextInfo:)`](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md) may be messaged in that spawned, non-main thread.
+If you send [`canSpawnSeparateThread`](./canspawnseparatethread.md) to an `NSPrintOperation` object with an argument of [`true`](../../Swift/true.md), then the delegate specified in a subsequent invocation of [`runModal(for:delegate:didRun:contextInfo:)`](./runmodal%28for,delegate,didrun,contextinfo%29.md) may be messaged in that spawned, non-main thread.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ If you send [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.m
 
 ## See Also
 
-- [func run() -> Bool](nsprintoperation/run.md)
+### Running the Print Operation
+- [func run() -> Bool](./run%28%29.md)
   Runs the print operation on the current thread.
-- [func cleanUp()](nsprintoperation/cleanup.md)
+- [func cleanUp()](./cleanup%28%29.md)
   Called at the end of a print operation to remove the print operation as the current operation.
-- [func deliverResult() -> Bool](nsprintoperation/deliverresult.md)
+- [func deliverResult() -> Bool](./deliverresult%28%29.md)
   Delivers the results of the print operation to the intended destination.
 
 

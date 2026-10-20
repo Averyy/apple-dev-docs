@@ -1,7 +1,8 @@
 # setupCommissioningSession(withDiscoveredDevice:payload:newNodeID:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func setupCommissioningSession(withDiscoveredDevice discoveredDevice: MTRCommissionableBrowserResult, payload: MTRSetupPayload, newNodeID: NSNumber) throws
+```
+
+```objc
+- (BOOL) setupCommissioningSessionWithDiscoveredDevice:(MTRCommissionableBrowserResult *) discoveredDevice payload:(MTRSetupPayload *) payload newNodeID:(NSNumber *) newNodeID error:(NSError **) error;
 ```
 
 

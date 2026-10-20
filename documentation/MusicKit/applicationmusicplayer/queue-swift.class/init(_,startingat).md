@@ -1,7 +1,8 @@
 # init(_:startingAt:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback queue with playback queue entries.
 

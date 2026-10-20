@@ -1,14 +1,17 @@
 # PayLaterViewDisplayStyle
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values you use to style an Apple Pay Later visual merchandising widget.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Apple Pay Later is deprecated.
 
 ## Declaration
 
@@ -19,21 +22,21 @@ struct PayLaterViewDisplayStyle
 ## Topics
 
 ### Payment display styles
-- [static let standard: PayLaterViewDisplayStyle](paylaterviewdisplaystyle/standard.md)
+- [static let standard: PayLaterViewDisplayStyle](./paylaterviewdisplaystyle/standard.md)
   The standard Apple Pay Later visual merchandising widget style.
-- [static let badge: PayLaterViewDisplayStyle](paylaterviewdisplaystyle/badge.md)
+- [static let badge: PayLaterViewDisplayStyle](./paylaterviewdisplaystyle/badge.md)
   Displays a simple Apple Pay badge that includes an Apple Pay Later icon.
-- [static let checkout: PayLaterViewDisplayStyle](paylaterviewdisplaystyle/checkout.md)
+- [static let checkout: PayLaterViewDisplayStyle](./paylaterviewdisplaystyle/checkout.md)
   A style that you display inside of a checkout view that presents Apple Pay and other payment options to the customer.
-- [static let price: PayLaterViewDisplayStyle](paylaterviewdisplaystyle/price.md)
+- [static let price: PayLaterViewDisplayStyle](./paylaterviewdisplaystyle/price.md)
   A style that shows the Apple Pay Later view beneath a product’s price.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

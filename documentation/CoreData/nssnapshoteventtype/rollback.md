@@ -1,18 +1,19 @@
 # rollback
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a change due to the managed object context being rolled back.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ Specifies a change due to the managed object context being rolled back.
 static var rollback: NSSnapshotEventType { get }
 ```
 
+```c
+NSSnapshotEventRollback
+```
+
 ## See Also
 
-- [static var undoInsertion: NSSnapshotEventType](nssnapshoteventtype/undoinsertion.md)
+### Event Types
+- [static var undoInsertion: NSSnapshotEventType](./undoinsertion.md)
   Specifies a change due to undo from insertion.
-- [static var undoDeletion: NSSnapshotEventType](nssnapshoteventtype/undodeletion.md)
+- [static var undoDeletion: NSSnapshotEventType](./undodeletion.md)
   Specifies a change due to undo from deletion.
-- [static var undoUpdate: NSSnapshotEventType](nssnapshoteventtype/undoupdate.md)
+- [static var undoUpdate: NSSnapshotEventType](./undoupdate.md)
   Specifies a change due to a property-level undo.
-- [static var refresh: NSSnapshotEventType](nssnapshoteventtype/refresh.md)
+- [static var refresh: NSSnapshotEventType](./refresh.md)
   Specifies a change due to the managed object being refreshed.
-- [static var mergePolicy: NSSnapshotEventType](nssnapshoteventtype/mergepolicy.md)
+- [static var mergePolicy: NSSnapshotEventType](./mergepolicy.md)
   Specifies a change due to conflict resolution during a save operation.
 
 

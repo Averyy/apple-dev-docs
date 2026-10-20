@@ -1,7 +1,8 @@
 # ErrorDomain
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain for errors while importing watch faces.
 
@@ -17,9 +18,14 @@ The domain for errors while importing watch faces.
 class let ErrorDomain: String
 ```
 
+```c
+extern NSString * const CLKWatchFaceLibraryErrorDomain;
+```
+
 ## See Also
 
-- [CLKWatchFaceLibrary.ErrorCode](clkwatchfacelibrary/errorcode.md)
+### Handling Errors
+- [CLKWatchFaceLibrary.ErrorCode](./errorcode.md)
   Error codes that the watch face library returns.
 
 

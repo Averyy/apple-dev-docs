@@ -1,17 +1,22 @@
 # setPixel(_:atX:y:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the bitmap image representation’s pixel at the specified coordinates to the specified raw pixel values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setPixel(_ p: UnsafeMutablePointer<Int>, atX x: Int, y: Int)
+```
+
+```objc
+- (void) setPixel:(NSUInteger[]) p atX:(NSInteger) x y:(NSInteger) y;
 ```
 
 ## Parameters
@@ -22,13 +27,15 @@ func setPixel(_ p: UnsafeMutablePointer<Int>, atX x: Int, y: Int)
 
 ## See Also
 
-- [var bitmapFormat: NSBitmapImageRep.Format](nsbitmapimagerep/bitmapformat.md)
+### Related Documentation
+- [var bitmapFormat: NSBitmapImageRep.Format](./bitmapformat.md)
   The format of the bitmap image representation.
-- [func setColor(NSColor, atX: Int, y: Int)](nsbitmapimagerep/setcolor(_:atx:y:).md)
+### Managing Pixel Values
+- [func setColor(NSColor, atX: Int, y: Int)](./setcolor%28_,atx,y%29.md)
   Changes the color of the pixel at the specified coordinates.
-- [func colorAt(x: Int, y: Int) -> NSColor?](nsbitmapimagerep/colorat(x:y:).md)
+- [func colorAt(x: Int, y: Int) -> NSColor?](./colorat%28x,y%29.md)
   Returns the color of the pixel at the specified coordinates.
-- [func getPixel(UnsafeMutablePointer<Int>, atX: Int, y: Int)](nsbitmapimagerep/getpixel(_:atx:y:).md)
+- [func getPixel(UnsafeMutablePointer<Int>, atX: Int, y: Int)](./getpixel%28_,atx,y%29.md)
   Returns by indirection the pixel data for the specified location in the bitmap image representation.
 
 

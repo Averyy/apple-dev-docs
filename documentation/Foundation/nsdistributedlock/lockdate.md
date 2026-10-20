@@ -1,7 +1,8 @@
 # lockDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the time the receiver was acquired by any of the `NSDistributedLock` objects using the same path.
 
@@ -13,6 +14,10 @@ Returns the time the receiver was acquired by any of the `NSDistributedLock` obj
 
 ```swift
 var lockDate: Date { get }
+```
+
+```objc
+@property (copy, readonly) NSDate * lockDate;
 ```
 
 #### Return Value

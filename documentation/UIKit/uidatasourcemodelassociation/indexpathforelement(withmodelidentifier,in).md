@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the current index of the data object with the specified identifier.
@@ -19,6 +20,10 @@ Returns the current index of the data object with the specified identifier.
 func indexPathForElement(withModelIdentifier identifier: String, in view: UIView) -> IndexPath?
 ```
 
+```objc
+- (NSIndexPath *) indexPathForElementWithModelIdentifier:(NSString *) identifier inView:(UIView *) view;
+```
+
 #### Return Value
 
 The current index of the object whose data matches the value in `identifier`, or `nil` if the object was not found.
@@ -29,12 +34,13 @@ During state restoration, `view` can call this method to locate objects that are
 
 ## Parameters
 
-- `identifier`: The identifier for the requested data object. Use this identifier to locate the matching object in your data source object. This is the same string that your app’s [`modelIdentifierForElement(at:in:)`](uidatasourcemodelassociation/modelidentifierforelement(at:in:).md) method returned when encoding the data originally.
+- `identifier`: The identifier for the requested data object. Use this identifier to locate the matching object in your data source object. This is the same string that your app’s [`modelIdentifierForElement(at:in:)`](./modelidentifierforelement%28at,in%29.md) method returned when encoding the data originally.
 - `view`: The view into which the object is being inserted.
 
 ## See Also
 
-- [func modelIdentifierForElement(at: IndexPath, in: UIView) -> String?](uidatasourcemodelassociation/modelidentifierforelement(at:in:).md)
+### Locating the data
+- [func modelIdentifierForElement(at: IndexPath, in: UIView) -> String?](./modelidentifierforelement%28at,in%29.md)
   Returns the string that uniquely identifies the data at the specified location in the view.
 
 

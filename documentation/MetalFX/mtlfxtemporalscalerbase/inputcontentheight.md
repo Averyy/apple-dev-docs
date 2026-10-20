@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The height, in pixels, of the region within the color texture the scaler uses as its input.
@@ -18,6 +19,10 @@ The height, in pixels, of the region within the color texture the scaler uses as
 
 ```swift
 var inputContentHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger inputContentHeight;
 ```
 
 

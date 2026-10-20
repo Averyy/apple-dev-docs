@@ -1,23 +1,28 @@
 # upperDistanceLimit
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest distance allowed for the sliding joint.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var upperDistanceLimit: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat upperDistanceLimit;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The default value is `0.0`.
 
 ## See Also
 
-- [var shouldEnableLimits: Bool](skphysicsjointsliding/shouldenablelimits.md)
+### Configuring a Sliding Joint
+- [var shouldEnableLimits: Bool](./shouldenablelimits.md)
   A Boolean value that indicates whether the sliding joint is restricted so that the objects may only slide a finite distance from the initial anchor point.
-- [var lowerDistanceLimit: CGFloat](skphysicsjointsliding/lowerdistancelimit.md)
+- [var lowerDistanceLimit: CGFloat](./lowerdistancelimit.md)
   The smallest distance allowed for the sliding joint.
 
 

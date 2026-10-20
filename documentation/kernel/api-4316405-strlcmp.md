@@ -1,14 +1,15 @@
 # strlcmp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 int strlcmp(const char *s1, const char *s2, size_t n);
 ```
 

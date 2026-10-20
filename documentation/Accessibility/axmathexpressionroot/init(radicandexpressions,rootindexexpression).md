@@ -1,7 +1,8 @@
 # init(radicandExpressions:rootIndexExpression:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 init(radicandExpressions: [AXMathExpression], rootIndexExpression: AXMathExpression)
+```
+
+```objc
+- (instancetype) initWithRadicandExpressions:(NSArray<AXMathExpression *> *) radicandExpressions rootIndexExpression:(AXMathExpression *) rootIndexExpression;
 ```
 
 

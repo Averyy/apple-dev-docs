@@ -1,7 +1,8 @@
 # selectedDevice
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the selected device.
 
@@ -14,9 +15,14 @@ Returns the selected device.
 var selectedDevice: ICDevice! { get }
 ```
 
+```objc
+@property (readonly) ICDevice * selectedDevice;
+```
+
 ## See Also
 
-- [func deviceBrowserView(IKDeviceBrowserView!, selectionDidChange: ICDevice!)](ikdevicebrowserviewdelegate/devicebrowserview(_:selectiondidchange:).md)
+### Related Documentation
+- [func deviceBrowserView(IKDeviceBrowserView!, selectionDidChange: ICDevice!)](../ikdevicebrowserviewdelegate/devicebrowserview%28_,selectiondidchange%29.md)
   Sent to the delegate when the selection changes in the browser view.
 
 

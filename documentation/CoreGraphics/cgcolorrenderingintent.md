@@ -1,18 +1,19 @@
 # CGColorRenderingIntent
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Handling options for colors that are not located within the destination color space of a graphics context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,32 +21,36 @@ Handling options for colors that are not located within the destination color sp
 enum CGColorRenderingIntent
 ```
 
+```c
+enum CGColorRenderingIntent : int32_t;
+```
+
 #### Overview
 
-The rendering intent specifies how Quartz should handle colors that are not located within the gamut of the destination color space of a graphics context. It determines the exact method used to map colors from one color space to another. If you do not explicitly set the rendering intent by calling the function [`setRenderingIntent(_:)`](cgcontext/setrenderingintent(_:).md), the graphics context uses the relative colorimetric rendering intent, except when drawing sampled images.
+The rendering intent specifies how Quartz should handle colors that are not located within the gamut of the destination color space of a graphics context. It determines the exact method used to map colors from one color space to another. If you do not explicitly set the rendering intent by calling the function [`setRenderingIntent(_:)`](./cgcontext/setrenderingintent%28_%29.md), the graphics context uses the relative colorimetric rendering intent, except when drawing sampled images.
 
 ## Topics
 
 ### Constants
-- [CGColorRenderingIntent.defaultIntent](cgcolorrenderingintent/defaultintent.md)
+- [CGColorRenderingIntent.defaultIntent](./cgcolorrenderingintent/defaultintent.md)
   The default rendering intent for the graphics context.
-- [CGColorRenderingIntent.absoluteColorimetric](cgcolorrenderingintent/absolutecolorimetric.md)
-- [CGColorRenderingIntent.relativeColorimetric](cgcolorrenderingintent/relativecolorimetric.md)
-- [CGColorRenderingIntent.perceptual](cgcolorrenderingintent/perceptual.md)
+- [CGColorRenderingIntent.absoluteColorimetric](./cgcolorrenderingintent/absolutecolorimetric.md)
+- [CGColorRenderingIntent.relativeColorimetric](./cgcolorrenderingintent/relativecolorimetric.md)
+- [CGColorRenderingIntent.perceptual](./cgcolorrenderingintent/perceptual.md)
   Preserve the visual relationship between colors by compressing the gamut of the graphics context to fit inside the gamut of the output device. Perceptual intent is good for photographs and other complex, detailed images.
-- [CGColorRenderingIntent.saturation](cgcolorrenderingintent/saturation.md)
+- [CGColorRenderingIntent.saturation](./cgcolorrenderingintent/saturation.md)
 ### Initializers
-- [init?(rawValue: Int32)](cgcolorrenderingintent/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./cgcolorrenderingintent/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

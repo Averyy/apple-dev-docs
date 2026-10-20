@@ -1,7 +1,8 @@
 # AIModelAsset.Metadata.CreatorDefinedValue.integer(_:)
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An integer value.
 
@@ -20,15 +21,16 @@ case integer(Int)
 
 ## See Also
 
-- [AIModelAsset.Metadata.CreatorDefinedValue.string(_:)](aimodelasset/metadata-swift.struct/creatordefinedvalue/string(_:).md)
+### Defining value types
+- [AIModelAsset.Metadata.CreatorDefinedValue.string(_:)](./string%28_%29.md)
   A string value.
-- [AIModelAsset.Metadata.CreatorDefinedValue.number(_:)](aimodelasset/metadata-swift.struct/creatordefinedvalue/number(_:).md)
+- [AIModelAsset.Metadata.CreatorDefinedValue.number(_:)](./number%28_%29.md)
   A double-precision floating-point value.
-- [AIModelAsset.Metadata.CreatorDefinedValue.bool(_:)](aimodelasset/metadata-swift.struct/creatordefinedvalue/bool(_:).md)
+- [AIModelAsset.Metadata.CreatorDefinedValue.bool(_:)](./bool%28_%29.md)
   A Boolean value.
-- [case array([AIModelAsset.Metadata.CreatorDefinedValue])](aimodelasset/metadata-swift.struct/creatordefinedvalue/array(_:).md)
+- [case array([AIModelAsset.Metadata.CreatorDefinedValue])](./array%28_%29.md)
   An array of creator-defined values.
-- [case dictionary([String : AIModelAsset.Metadata.CreatorDefinedValue])](aimodelasset/metadata-swift.struct/creatordefinedvalue/dictionary(_:).md)
+- [case dictionary([String : AIModelAsset.Metadata.CreatorDefinedValue])](./dictionary%28_%29.md)
   A dictionary of creator-defined values.
 
 

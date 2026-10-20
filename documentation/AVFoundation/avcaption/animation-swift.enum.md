@@ -1,7 +1,8 @@
 # AVCaption.Animation
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Animation options for a caption.
 
@@ -17,29 +18,34 @@ Animation options for a caption.
 enum Animation
 ```
 
+```c
+enum AVCaptionAnimation : NSInteger;
+```
+
 ## Topics
 
 ### Animations
-- [AVCaption.Animation.none](avcaption/animation-swift.enum/none.md)
+- [AVCaption.Animation.none](./animation-swift.enum/none.md)
   No animation.
-- [AVCaption.Animation.characterReveal](avcaption/animation-swift.enum/characterreveal.md)
+- [AVCaption.Animation.characterReveal](./animation-swift.enum/characterreveal.md)
   A character reveal animation.
 ### Initializers
-- [init?(rawValue: Int)](avcaption/animation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./animation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var animation: AVCaption.Animation](avcaption/animation-swift.property.md)
+### Accessing animation
+- [var animation: AVCaption.Animation](./animation-swift.property.md)
   The animation that the system applies to this caption.
 
 

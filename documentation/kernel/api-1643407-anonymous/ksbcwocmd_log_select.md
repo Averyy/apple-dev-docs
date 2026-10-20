@@ -1,7 +1,8 @@
 # kSBCWOCmd_LOG_SELECT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSBCWOCmd_LOG_SELECT = 0x4C
 ```
 

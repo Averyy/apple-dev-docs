@@ -1,7 +1,8 @@
 # kAXMenuItemRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A menu item.
 
@@ -12,6 +13,10 @@ A menu item.
 
 ```swift
 var kAXMenuItemRole: String { get }
+```
+
+```c
+#define kAXMenuItemRole
 ```
 
 

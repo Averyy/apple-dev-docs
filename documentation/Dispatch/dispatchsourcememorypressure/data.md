@@ -1,16 +1,17 @@
 # data
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var data: DispatchSource.MemoryPressureEvent { get }
 
 ## See Also
 
-- [var mask: DispatchSource.MemoryPressureEvent](dispatchsourcememorypressure/mask.md)
+### Getting the Event Data
+- [var mask: DispatchSource.MemoryPressureEvent](./mask.md)
 
 
 ---

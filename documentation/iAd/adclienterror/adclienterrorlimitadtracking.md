@@ -1,13 +1,14 @@
 # ADClientErrorLimitAdTracking
 
 **Framework**: iAd  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Limited ad tracking is in an enabled state for the device.
 
 ## Declaration
 
-```swift
+```c
 ADClientErrorLimitAdTracking
 ```
 

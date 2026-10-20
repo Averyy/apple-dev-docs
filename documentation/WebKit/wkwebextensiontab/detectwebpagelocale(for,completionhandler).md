@@ -1,7 +1,8 @@
 # detectWebpageLocale(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to detect the locale of the webpage currently loaded in the tab.
 
@@ -15,7 +16,15 @@ Called to detect the locale of the webpage currently loaded in the tab.
 ## Declaration
 
 ```swift
+optional func detectWebpageLocale(for context: WKWebExtensionContext, completionHandler: @escaping (Locale?, (any Error)?) -> Void)
+```
+
+```swift
 optional func detectWebpageLocale(for context: WKWebExtensionContext) async throws -> Locale?
+```
+
+```objc
+- (void) detectWebpageLocaleForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSLocale *locale, NSError *error)) completionHandler;
 ```
 
 #### Discussion

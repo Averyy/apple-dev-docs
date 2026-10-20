@@ -1,18 +1,19 @@
 # minusSign
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the symbol for the minus sign, a `CFString` object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ Specifies the symbol for the minus sign, a `CFString` object.
 static let minusSign: CFNumberFormatterKey!
 ```
 
+```c
+extern CFNumberFormatterKey const kCFNumberFormatterMinusSign;
+```
+
 ## See Also
 
-- [static let currencyCode: CFNumberFormatterKey!](cfnumberformatterkey/currencycode.md)
+### Constants
+- [static let currencyCode: CFNumberFormatterKey!](./currencycode.md)
   Specifies the currency code, a `CFString` object.
-- [static let decimalSeparator: CFNumberFormatterKey!](cfnumberformatterkey/decimalseparator.md)
+- [static let decimalSeparator: CFNumberFormatterKey!](./decimalseparator.md)
   Specifies the decimal separator, a `CFString` object.
-- [static let currencyDecimalSeparator: CFNumberFormatterKey!](cfnumberformatterkey/currencydecimalseparator.md)
+- [static let currencyDecimalSeparator: CFNumberFormatterKey!](./currencydecimalseparator.md)
   Specifies the currency decimal separator, a `CFString` object.
-- [static let alwaysShowDecimalSeparator: CFNumberFormatterKey!](cfnumberformatterkey/alwaysshowdecimalseparator.md)
+- [static let alwaysShowDecimalSeparator: CFNumberFormatterKey!](./alwaysshowdecimalseparator.md)
   Specifies if the result of converting a value to a string should always contain the decimal separator, even if the number is an integer.
-- [static let groupingSeparator: CFNumberFormatterKey!](cfnumberformatterkey/groupingseparator.md)
+- [static let groupingSeparator: CFNumberFormatterKey!](./groupingseparator.md)
   Specifies the grouping separator, a `CFString` object.
-- [static let useGroupingSeparator: CFNumberFormatterKey!](cfnumberformatterkey/usegroupingseparator.md)
+- [static let useGroupingSeparator: CFNumberFormatterKey!](./usegroupingseparator.md)
   Specifies if the grouping separator should be used, a `CFBoolean` object.
-- [static let percentSymbol: CFNumberFormatterKey!](cfnumberformatterkey/percentsymbol.md)
+- [static let percentSymbol: CFNumberFormatterKey!](./percentsymbol.md)
   Specifies the string that is used to represent the percent symbol, a `CFString` object.
-- [static let zeroSymbol: CFNumberFormatterKey!](cfnumberformatterkey/zerosymbol.md)
+- [static let zeroSymbol: CFNumberFormatterKey!](./zerosymbol.md)
   Specifies the string that is used to represent zero, a `CFString` object.
-- [static let naNSymbol: CFNumberFormatterKey!](cfnumberformatterkey/nansymbol.md)
+- [static let naNSymbol: CFNumberFormatterKey!](./nansymbol.md)
   Specifies the string that is used to represent NaN (“not a number”) when values are converted to strings, a `CFString` object.
-- [static let infinitySymbol: CFNumberFormatterKey!](cfnumberformatterkey/infinitysymbol.md)
+- [static let infinitySymbol: CFNumberFormatterKey!](./infinitysymbol.md)
   Specifies the string that is used to represent the symbol for infinity, a `CFString` object.
-- [static let plusSign: CFNumberFormatterKey!](cfnumberformatterkey/plussign.md)
+- [static let plusSign: CFNumberFormatterKey!](./plussign.md)
   Specifies the symbol for the plus sign, a `CFString` object.
-- [static let currencySymbol: CFNumberFormatterKey!](cfnumberformatterkey/currencysymbol.md)
+- [static let currencySymbol: CFNumberFormatterKey!](./currencysymbol.md)
   Specifies the symbol for the currency, a `CFString` object.
-- [static let exponentSymbol: CFNumberFormatterKey!](cfnumberformatterkey/exponentsymbol.md)
+- [static let exponentSymbol: CFNumberFormatterKey!](./exponentsymbol.md)
   Specifies the exponent symbol (“E” or “e”) in the scientific notation of numbers (for example, as in `1.0e+56`), a `CFString` object.
-- [static let minIntegerDigits: CFNumberFormatterKey!](cfnumberformatterkey/minintegerdigits.md)
+- [static let minIntegerDigits: CFNumberFormatterKey!](./minintegerdigits.md)
   Specifies the minimum number of integer digits before a decimal point, a `CFNumber` object.
-- [static let maxIntegerDigits: CFNumberFormatterKey!](cfnumberformatterkey/maxintegerdigits.md)
+- [static let maxIntegerDigits: CFNumberFormatterKey!](./maxintegerdigits.md)
   Specifies the maximum number of integer digits before a decimal point, a `CFNumber` object.
 
 

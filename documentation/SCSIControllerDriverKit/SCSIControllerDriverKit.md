@@ -1,7 +1,8 @@
 # SCSIControllerDriverKit
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Develop drivers for SCSI protocol-based devices.
 
@@ -12,11 +13,11 @@ Develop drivers for SCSI protocol-based devices.
 
 The SCSIControllerDriverKit framework supports the development of DriverKit extension (dext) drivers for devices that communicate using SCSI protocols.
 
-Develop your driver by subclassing [`IOUserSCSIParallelInterfaceController`](iouserscsiparallelinterfacecontroller.md), overriding all methods the framework declares as pure virtual. Then package your driver in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade the driver on a Mac.
+Develop your driver by subclassing [`IOUserSCSIParallelInterfaceController`](./iouserscsiparallelinterfacecontroller.md), overriding all methods the framework declares as pure virtual. Then package your driver in an app that uses the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install and upgrade the driver on a Mac.
 
-##### Creating a Driver
+##### Creating a driver
 
-When you subclass [`IOUserSCSIParallelInterfaceController`](iouserscsiparallelinterfacecontroller.md), update the [`IOKitPersonalities`](https://developer.apple.com/documentation/bundleresources/information-property-list/iokitpersonalities) key of your driver extension’s information property list file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table:
+When you subclass [`IOUserSCSIParallelInterfaceController`](./iouserscsiparallelinterfacecontroller.md), update the [`IOKitPersonalities`](../BundleResources/information-property-list/iokitpersonalities.md) key of your driver extension’s information property list file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table:
 
 | Key | Value |
 | --- | --- |
@@ -58,18 +59,18 @@ The following example shows a minimal entry for the `IOKitPersonalities` key in 
 ## Topics
 
 ### Entitlements
-- [com.apple.developer.driverkit](../bundleresources/entitlements/com.apple.developer.driverkit.md)
+- [com.apple.developer.driverkit](../BundleResources/entitlements/com.apple.developer.driverkit.md)
   A Boolean value that indicates whether your extension has permission to run as a user-space driver.
-- [com.apple.developer.driverkit.family.scsicontroller](../bundleresources/entitlements/com.apple.developer.driverkit.family.scsicontroller.md)
+- [com.apple.developer.driverkit.family.scsicontroller](../BundleResources/entitlements/com.apple.developer.driverkit.family.scsicontroller.md)
   A Boolean value that indicates whether to match the driver against devices with SCSI controllers.
 ### Samples
-- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
+- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 ### Driver interfaces
-- [IOUserSCSIParallelInterfaceController](iouserscsiparallelinterfacecontroller.md)
+- [IOUserSCSIParallelInterfaceController](./iouserscsiparallelinterfacecontroller.md)
   A DriverKit provider object that manages communications with SCSI-based devices.
 ### Macros
-- [Macros](scsicontrollerdriverkit-macros.md)
+- [Macros](./scsicontrollerdriverkit-macros.md)
 
 
 ---

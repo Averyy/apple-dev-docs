@@ -1,7 +1,8 @@
 # contentSize
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the content view.
 
@@ -14,15 +15,20 @@ The size of the content view.
 var contentSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGSize contentSize;
+```
+
 #### Discussion
 
-Use this property to explicitly set the size of the content view. If [`frame`](https://developer.apple.com/documentation/uikit/uiview/frame) is explicitly set, it takes precedence over `contentSize`.
+Use this property to explicitly set the size of the content view. If [`frame`](../../UIKit/uiview/frame.md) is explicitly set, it takes precedence over `contentSize`.
 
 ## See Also
 
-- [var contentViewInsets: NSDirectionalEdgeInsets](tvlockupview/contentviewinsets.md)
+### Setting view size
+- [var contentViewInsets: NSDirectionalEdgeInsets](./contentviewinsets.md)
   The spacing between the content view and its peer and containing views.
-- [var focusSizeIncrease: NSDirectionalEdgeInsets](tvlockupview/focussizeincrease.md)
+- [var focusSizeIncrease: NSDirectionalEdgeInsets](./focussizeincrease.md)
   The inset or outset values specifying your content’s size increase when in focus.
 
 

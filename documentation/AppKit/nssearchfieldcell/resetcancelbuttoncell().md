@@ -1,17 +1,22 @@
 # resetCancelButtonCell()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the cancel button cell to its default attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func resetCancelButtonCell()
+```
+
+```objc
+- (void) resetCancelButtonCell;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This method resets the target, action, regular image, and pressed image for the 
 
 ## See Also
 
-- [var searchButtonCell: NSButtonCell?](nssearchfieldcell/searchbuttoncell.md)
+### Managing buttons
+- [var searchButtonCell: NSButtonCell?](./searchbuttoncell.md)
   The button cell used to display the search-button image.
-- [func resetSearchButtonCell()](nssearchfieldcell/resetsearchbuttoncell.md)
+- [func resetSearchButtonCell()](./resetsearchbuttoncell%28%29.md)
   Resets the search button cell to its default attributes.
-- [var cancelButtonCell: NSButtonCell?](nssearchfieldcell/cancelbuttoncell.md)
+- [var cancelButtonCell: NSButtonCell?](./cancelbuttoncell.md)
   The button cell used to display the cancel-button image.
 
 

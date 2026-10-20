@@ -1,7 +1,8 @@
 # setActionUserInfoValue(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a user info value for an undo or redo action.
 
@@ -20,11 +21,15 @@ Sets a user info value for an undo or redo action.
 func setActionUserInfoValue(_ info: Any?, forKey key: UndoManager.UserInfoKey)
 ```
 
+```objc
+- (void) setActionUserInfoValue:(id) info forKey:(NSUndoManagerUserInfoKey) key;
+```
+
 #### Discussion
 
 Set user info on an undo action to provide custom information to the action beyond its action name. You can use this for things like an icon to represent the undoable action, or a timestamp of when the undo manager registers the action.
 
-Start by extending [`UndoManager.UserInfoKey`](undomanager/userinfokey.md) with key names to identify the user info values you want to associate with undo actions.
+Start by extending [`UndoManager.UserInfoKey`](./userinfokey.md) with key names to identify the user info values you want to associate with undo actions.
 
 ```swift
 extension UndoManager.UserInfoKey {
@@ -54,11 +59,12 @@ func insertLayer() {
 
 ## See Also
 
-- [func undoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](undomanager/undoactionuserinfovalue(forkey:).md)
+### Working with user info
+- [func undoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](./undoactionuserinfovalue%28forkey%29.md)
   Retrieves the undo action’s user info value for the given key.
-- [func redoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](undomanager/redoactionuserinfovalue(forkey:).md)
+- [func redoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](./redoactionuserinfovalue%28forkey%29.md)
   Retrieves the redo action’s user info value for the given key.
-- [UndoManager.UserInfoKey](undomanager/userinfokey.md)
+- [UndoManager.UserInfoKey](./userinfokey.md)
   An extensible namespace for undo and redo user info keys.
 
 

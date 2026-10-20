@@ -1,7 +1,8 @@
 # AddControlValueDescriptions
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add value descriptions to the selector control.
 
@@ -10,34 +11,35 @@ Add value descriptions to the selector control.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddControlValueDescriptions(const IOUserAudioSelectorValueDescription *in_value_descriptions, size_t in_num_value_descriptions);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
-- `in_value_descriptions`: An array of [`IOUserAudioSelectorValueDescription`](iouseraudioselectorvaluedescription.md) values to add as value descriptions for the selector.
+- `in_value_descriptions`: An array of [`IOUserAudioSelectorValueDescription`](../iouseraudioselectorvaluedescription.md) values to add as value descriptions for the selector.
 - `in_num_value_descriptions`: The number of descriptions in `in_value_descriptions`.
 
 ## See Also
 
-- [SetCurrentSelectedValues](iouseraudioselectorcontrol/setcurrentselectedvalues.md)
+### Accessing the Selected Values
+- [SetCurrentSelectedValues](./setcurrentselectedvalues.md)
   Sets the current selections of the selector.
-- [GetCurrentSelectedValues](iouseraudioselectorcontrol/getcurrentselectedvalues.md)
+- [GetCurrentSelectedValues](./getcurrentselectedvalues.md)
   Gets the current selections of the selector.
-- [GetControlValuesCount](iouseraudioselectorcontrol/getcontrolvaluescount.md)
+- [GetControlValuesCount](./getcontrolvaluescount.md)
   Gets the number of available selector values.
-- [IOUserAudioSelectorValue](iouseraudioselectorvalue.md)
+- [IOUserAudioSelectorValue](../iouseraudioselectorvalue.md)
   The type of values managed by a selector control.
-- [RemoveControlValueDescriptions](iouseraudioselectorcontrol/removecontrolvaluedescriptions.md)
+- [RemoveControlValueDescriptions](./removecontrolvaluedescriptions.md)
   Removes value descriptions from the selector control.
-- [GetControlValueDescriptions](iouseraudioselectorcontrol/getcontrolvaluedescriptions.md)
+- [GetControlValueDescriptions](./getcontrolvaluedescriptions.md)
   Gets value descriptions used by the selector control.
-- [IOUserAudioSelectorValueDescription](iouseraudioselectorvaluedescription.md)
+- [IOUserAudioSelectorValueDescription](../iouseraudioselectorvaluedescription.md)
   A type that describes a value in a selection control.
 
 

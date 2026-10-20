@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Boolean value that indicates whether a manipulation gesture is currently active.
 

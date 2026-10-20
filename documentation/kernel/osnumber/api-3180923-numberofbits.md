@@ -1,7 +1,8 @@
 # numberOfBits
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the number of bits the OSNumber was created with.
 
@@ -11,11 +12,19 @@ Returns the number of bits the OSNumber was created with.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+size_t numberOfBits(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int numberOfBits(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the number of bits the OSNumber was created with.
 

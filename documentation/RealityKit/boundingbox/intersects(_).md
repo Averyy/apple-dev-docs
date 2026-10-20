@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the bounding box intersects the specified bounds.
 
@@ -11,7 +12,7 @@ Checks whether the bounding box intersects the specified bounds.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ A Boolean that’s `true` if the box intersects the specified bounds.
 
 ## See Also
 
-- [func contains(BoundingBox) -> Bool](boundingbox/contains(_:)-5ux4h.md)
+### Checking for overlap
+- [func contains(BoundingBox) -> Bool](./contains%28_%29-5ux4h.md)
   Checks whether the bounding box contains the specified bounds.
-- [func contains(SIMD3<Float>) -> Bool](boundingbox/contains(_:)-92ap6.md)
+- [func contains(SIMD3<Float>) -> Bool](./contains%28_%29-92ap6.md)
   Checks whether the bounding box contains the specified point.
 
 

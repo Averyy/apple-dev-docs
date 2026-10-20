@@ -1,7 +1,8 @@
 # avgPooling4DGradient(_:source:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an average pooling gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates an average pooling gradient operation and returns the result tensor.
 
 ```swift
 func avgPooling4DGradient(_ gradient: MPSGraphTensor, source: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) avgPooling4DGradientWithGradientTensor:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

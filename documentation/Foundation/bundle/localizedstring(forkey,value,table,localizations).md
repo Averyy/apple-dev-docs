@@ -1,7 +1,8 @@
 # localizedString(forKey:value:table:localizations:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Look up a localized string given a list of available languages.
 

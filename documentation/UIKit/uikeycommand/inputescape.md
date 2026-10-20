@@ -1,7 +1,8 @@
 # inputEscape
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string that represents the Escape key.
 
@@ -9,7 +10,7 @@ A string that represents the Escape key.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ nonisolated
 class let inputEscape: String
 ```
 
+```c
+extern NSString * const UIKeyInputEscape;
+```
+
 ## See Also
 
-- [class let inputDelete: String](uikeycommand/inputdelete.md)
+### Control keys
+- [class let inputDelete: String](./inputdelete.md)
   A string that represents the Delete key.
 
 

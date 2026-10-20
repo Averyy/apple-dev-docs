@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsFeaturedPlaylistsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Relevant playlists associated with the artist.
 
@@ -10,7 +11,7 @@ Relevant playlists associated with the artist.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsFeaturedPlaylistsView.Attributes
 ```
 

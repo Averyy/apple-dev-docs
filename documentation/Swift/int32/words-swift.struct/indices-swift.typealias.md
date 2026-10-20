@@ -1,7 +1,8 @@
 # Int32.Words.Indices
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the indices that are valid for subscripting the collection, in ascending order.
 

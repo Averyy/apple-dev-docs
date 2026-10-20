@@ -1,7 +1,8 @@
 # shouldPrint
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether the annotation should appear when the document is printed.
 
@@ -19,9 +20,13 @@ Returns a Boolean value indicating whether the annotation should appear when the
 var shouldPrint: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldPrint;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the annotation should appear when the PDF document is printed; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the annotation should appear when the PDF document is printed; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,9 +34,10 @@ var shouldPrint: Bool { get set }
 
 ## See Also
 
-- [func draw(with: PDFDisplayBox, in: CGContext)](pdfannotation/draw(with:in:).md)
+### Managing Annotation Drawing and Output
+- [func draw(with: PDFDisplayBox, in: CGContext)](./draw%28with,in%29.md)
   Draws the annotation in a graphics context using page-space coordinates relative to the origin of the specified box.
-- [var shouldDisplay: Bool](pdfannotation/shoulddisplay.md)
+- [var shouldDisplay: Bool](./shoulddisplay.md)
   Returns a Boolean value indicating whether the annotation should be displayed.
 
 

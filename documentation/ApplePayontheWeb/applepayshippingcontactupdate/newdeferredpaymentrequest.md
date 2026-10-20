@@ -1,7 +1,8 @@
 # newDeferredPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An updated request for a deferred payment.
 
@@ -11,7 +12,7 @@ An updated request for a deferred payment.
 
 ## Declaration
 
-```swift
+```
 ApplePayDeferredPaymentRequest newDeferredPaymentRequest;
 ```
 

@@ -1,7 +1,8 @@
 # resume(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task that’s awaiting the continuation by returning or throwing the given result value.
 
@@ -19,6 +20,8 @@ Resume the task that’s awaiting the continuation by returning or throwing the 
 ```swift
 func resume(with result: sending Result<T, E>)
 ```
+
+Available when `E` conforms to `Error`.
 
 #### Discussion
 

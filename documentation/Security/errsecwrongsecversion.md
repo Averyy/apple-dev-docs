@@ -1,7 +1,8 @@
 # errSecWrongSecVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version is incorrect.
 
@@ -18,6 +19,10 @@ The version is incorrect.
 
 ```swift
 var errSecWrongSecVersion: OSStatus { get }
+```
+
+```c
+errSecWrongSecVersion
 ```
 
 

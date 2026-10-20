@@ -1,7 +1,8 @@
 # FloatingPointRoundingRule
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A rule for rounding a floating-point number.
 
@@ -23,43 +24,44 @@ enum FloatingPointRoundingRule
 ## Topics
 
 ### Operators
-- [static func == (FloatingPointRoundingRule, FloatingPointRoundingRule) -> Bool](floatingpointroundingrule/==(_:_:).md)
+- [static func == (FloatingPointRoundingRule, FloatingPointRoundingRule) -> Bool](./floatingpointroundingrule/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
-- [FloatingPointRoundingRule.awayFromZero](floatingpointroundingrule/awayfromzero.md)
+- [FloatingPointRoundingRule.awayFromZero](./floatingpointroundingrule/awayfromzero.md)
   Round to the closest allowed value whose magnitude is greater than or equal to that of the source.
-- [FloatingPointRoundingRule.down](floatingpointroundingrule/down.md)
+- [FloatingPointRoundingRule.down](./floatingpointroundingrule/down.md)
   Round to the closest allowed value that is less than or equal to the source.
-- [FloatingPointRoundingRule.toNearestOrAwayFromZero](floatingpointroundingrule/tonearestorawayfromzero.md)
+- [FloatingPointRoundingRule.toNearestOrAwayFromZero](./floatingpointroundingrule/tonearestorawayfromzero.md)
   Round to the closest allowed value; if two values are equally close, the one with greater magnitude is chosen.
-- [FloatingPointRoundingRule.toNearestOrEven](floatingpointroundingrule/tonearestoreven.md)
+- [FloatingPointRoundingRule.toNearestOrEven](./floatingpointroundingrule/tonearestoreven.md)
   Round to the closest allowed value; if two values are equally close, the even one is chosen.
-- [FloatingPointRoundingRule.towardZero](floatingpointroundingrule/towardzero.md)
+- [FloatingPointRoundingRule.towardZero](./floatingpointroundingrule/towardzero.md)
   Round to the closest allowed value whose magnitude is less than or equal to that of the source.
-- [FloatingPointRoundingRule.up](floatingpointroundingrule/up.md)
+- [FloatingPointRoundingRule.up](./floatingpointroundingrule/up.md)
   Round to the closest allowed value that is greater than or equal to the source.
 ### Instance Properties
-- [var hashValue: Int](floatingpointroundingrule/hashvalue.md)
+- [var hashValue: Int](./floatingpointroundingrule/hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func hash(into: inout Hasher)](floatingpointroundingrule/hash(into:).md)
+- [func hash(into: inout Hasher)](./floatingpointroundingrule/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](floatingpointroundingrule/equatable-implementations.md)
+- [Equatable Implementations](./floatingpointroundingrule/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [enum FloatingPointClassification](floatingpointclassification.md)
+### Floating-Point Characteristics
+- [enum FloatingPointClassification](./floatingpointclassification.md)
   The IEEE 754 floating-point classes.
-- [enum FloatingPointSign](floatingpointsign.md)
+- [enum FloatingPointSign](./floatingpointsign.md)
   The sign of a floating-point value.
 
 

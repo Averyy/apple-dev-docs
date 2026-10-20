@@ -1,7 +1,8 @@
 # dragInteraction(_:item:willAnimateCancelWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the system’s cancellation animation is about to start.
 
@@ -17,13 +18,17 @@ Tells the delegate the system’s cancellation animation is about to start.
 optional func dragInteraction(_ interaction: UIDragInteraction, item: UIDragItem, willAnimateCancelWith animator: any UIDragAnimating)
 ```
 
+```objc
+- (void) dragInteraction:(UIDragInteraction *) interaction item:(UIDragItem *) item willAnimateCancelWithAnimator:(id<UIDragAnimating>) animator;
+```
+
 #### Discussion
 
 This method is called for each drag item, whether it is visible or not.
 
-To add a custom animation block that runs during the cancellation animation, pass the block to the animator’s [`addAnimations(_:)`](uidraganimating/addanimations(_:).md) method.
+To add a custom animation block that runs during the cancellation animation, pass the block to the animator’s [`addAnimations(_:)`](../uidraganimating/addanimations%28_%29.md) method.
 
-To add a completion block that runs after the cancellation animation has finished, pass the block to the animator’s [`addCompletion(_:)`](uidraganimating/addcompletion(_:).md) method.
+To add a completion block that runs after the cancellation animation has finished, pass the block to the animator’s [`addCompletion(_:)`](../uidraganimating/addcompletion%28_%29.md) method.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ To add a completion block that runs after the cancellation animation has finishe
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, willAnimateLiftWith: any UIDragAnimating, session: any UIDragSession)](uidraginteractiondelegate/draginteraction(_:willanimateliftwith:session:).md)
+### Animating the drag behaviors
+- [func dragInteraction(UIDragInteraction, willAnimateLiftWith: any UIDragAnimating, session: any UIDragSession)](./draginteraction%28_,willanimateliftwith,session%29.md)
   Tells the delegate the system’s lift animation is about to start.
 
 

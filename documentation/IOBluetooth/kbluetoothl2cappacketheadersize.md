@@ -1,15 +1,20 @@
 # kBluetoothL2CAPPacketHeaderSize
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kBluetoothL2CAPPacketHeaderSize: Int { get }
+```
+
+```c
+kBluetoothL2CAPPacketHeaderSize
 ```
 
 

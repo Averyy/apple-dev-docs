@@ -1,7 +1,8 @@
 # MTRServerEndpoint
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,33 +19,37 @@
 class MTRServerEndpoint
 ```
 
+```objc
+@interface MTRServerEndpoint : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(endpointID: NSNumber, deviceTypes: [MTRDeviceTypeRevision])](mtrserverendpoint/init(endpointid:devicetypes:).md)
+- [init?(endpointID: NSNumber, deviceTypes: [MTRDeviceTypeRevision])](./mtrserverendpoint/init%28endpointid,devicetypes%29.md)
 ### Instance Properties
-- [var accessGrants: [MTRAccessGrant]](mtrserverendpoint/accessgrants.md)
-- [var deviceTypes: [MTRDeviceTypeRevision]](mtrserverendpoint/devicetypes.md)
-- [var endpointID: NSNumber](mtrserverendpoint/endpointid.md)
-- [var serverClusters: [MTRServerCluster]](mtrserverendpoint/serverclusters.md)
+- [var accessGrants: [MTRAccessGrant]](./mtrserverendpoint/accessgrants.md)
+- [var deviceTypes: [MTRDeviceTypeRevision]](./mtrserverendpoint/devicetypes.md)
+- [var endpointID: NSNumber](./mtrserverendpoint/endpointid.md)
+- [var serverClusters: [MTRServerCluster]](./mtrserverendpoint/serverclusters.md)
 ### Instance Methods
-- [func addAccessGrant(MTRAccessGrant)](mtrserverendpoint/addaccessgrant(_:).md)
-- [func addServerCluster(MTRServerCluster) -> Bool](mtrserverendpoint/addservercluster(_:).md)
-- [func removeAccessGrant(MTRAccessGrant)](mtrserverendpoint/removeaccessgrant(_:).md)
+- [func addAccessGrant(MTRAccessGrant)](./mtrserverendpoint/addaccessgrant%28_%29.md)
+- [func addServerCluster(MTRServerCluster) -> Bool](./mtrserverendpoint/addservercluster%28_%29.md)
+- [func removeAccessGrant(MTRAccessGrant)](./mtrserverendpoint/removeaccessgrant%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

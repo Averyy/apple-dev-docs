@@ -1,7 +1,8 @@
 # PreprocessingSupervisedTabularEstimator.Annotation
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The annotation type.
 
@@ -22,19 +23,20 @@ typealias Annotation = Estimator.Annotation
 
 ## See Also
 
-- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](preprocessingsupervisedtabularestimator/preprocessed(from:eventhandler:).md)
+### Preprocesing and fitting
+- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./preprocessed%28from,eventhandler%29.md)
   Preprocesses a data frame of examples.
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingsupervisedtabularestimator/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a data frame
-- [func fitted(toPreprocessed: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingsupervisedtabularestimator/fitted(topreprocessed:validateon:eventhandler:).md)
+- [func fitted(toPreprocessed: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./fitted%28topreprocessed,validateon,eventhandler%29.md)
   Fits a transformer to a data frame of preprocessed examples while validating.
-- [PreprocessingSupervisedTabularEstimator.Input](preprocessingsupervisedtabularestimator/input.md)
+- [PreprocessingSupervisedTabularEstimator.Input](./input.md)
   The input type.
-- [PreprocessingSupervisedTabularEstimator.Intermediate](preprocessingsupervisedtabularestimator/intermediate.md)
+- [PreprocessingSupervisedTabularEstimator.Intermediate](./intermediate.md)
   The intermediate type.
-- [PreprocessingSupervisedTabularEstimator.Output](preprocessingsupervisedtabularestimator/output.md)
+- [PreprocessingSupervisedTabularEstimator.Output](./output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

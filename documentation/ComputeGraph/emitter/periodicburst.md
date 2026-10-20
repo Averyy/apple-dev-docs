@@ -1,13 +1,14 @@
 # emitter::periodicBurst
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Emit a burst of particles periodically.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void emitter::periodicBurst(float2 intervalRange, uint burstSize)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/emitter__periodicBurst.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__periodicBurst.svg)
 
 > **Note**: Reads from emitter state `PeriodicEmitterState state`, if it exists
 

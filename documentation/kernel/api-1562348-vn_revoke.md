@@ -1,7 +1,8 @@
 # vn_revoke
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Invalidate all references to a vnode.
 
@@ -10,11 +11,11 @@ Invalidate all references to a vnode.
 
 ## Declaration
 
-```swift
+```c
 int vn_revoke(vnode_t vp, int flags, vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 0 always.
 

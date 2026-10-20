@@ -1,7 +1,8 @@
 # WebPage.Configuration.MediaPlaybackBehavior.automatic
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the default system value, which is `alwaysFullscreen` for iPhone and `allowsInlinePlayback` for iPad.
 

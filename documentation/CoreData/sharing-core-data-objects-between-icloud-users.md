@@ -1,6 +1,8 @@
 # Sharing Core Data objects between iCloud users
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Sample Code  
+**Download**: [SharingCoreDataObjectsBetweenICloudUsers.zip](https://docs-assets.developer.apple.com/published/d3e48d795efa/SharingCoreDataObjectsBetweenICloudUsers.zip)
 
 Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 
@@ -18,11 +20,11 @@ More and more people own multiple devices and use them for digital asset sharing
 
 This sample code project demonstrates how to use Core Data and CloudKit to share photos between iCloud users. People who share photos, called *owners*, can create a share, send an invitation, manage the permissions, and stop the sharing. People who accept the share, called *participants*, can view and edit the photos, or stop participating in the share.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Open the sample code project in Xcode. Before building it, perform the following steps:
 
-1. In the Signing & Capabilities pane of the `CoreDataCloudKitShare` target, set the developer team to let Xcode automatically manage the provisioning profile. See [Assign a project to a team](doc://com.apple.documentation/xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team> for details.
+1. In the Signing & Capabilities pane of the `CoreDataCloudKitShare` target, set the developer team to let Xcode automatically manage the provisioning profile. See [Assign a project to a team](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team> for details.
 2. In the iCloud section, select an empty iCloud container from the Containers list. If there isn’t an empty container, click the Add button (+), enter a container name, and click OK to let Xcode create the container and associate it with the app. An iCloud container identifier is case-sensitive, and must be unique and begin with “`iCloud.`”.
 3. Specify the same team and iCloud container for all other targets.
 4. Specify the same iCloud container for the `gCloudKitContainerIdentifier` variable in `PersistenceController.swift`.
@@ -34,21 +36,21 @@ To run the sample app on a device, configure the device as follows:
 2. For an iOS device, confirm that iCloud is on for the app at Settings > Apple ID > iCloud > Apps Using iCloud.
 3. After running the app on the device, confirm that Allow Notifications is on for the app at Settings > Notifications. For an Apple Watch, use the Apple Watch app on the paired iPhone to confirm the settings.
 
-For more information about the project configuration, see [`Setting Up Core Data with CloudKit`](setting-up-core-data-with-cloudkit.md).
+For more information about the project configuration, see [Setting Up Core Data with CloudKit](./setting-up-core-data-with-cloudkit.md).
 
-##### Create the Cloudkit Schema
+##### Create the CloudKit schema
 
-CloudKit apps require a schema to declare the data types they use. When apps create a record in the CloudKit development environment, CloudKit automatically creates the record type if it doesn’t exist. In the production environment, CloudKit doesn’t have that capability, nor does it allow removing an existing record type or field, so after finalizing the schema, developers need to deploy it to the production environment. Without this step, apps that work in the production environment, like the ones people download from the App Store or TestFlight, can’t communicate with the CloudKit server. For more information, see [`Deploying an iCloud Container’s Schema`](https://developer.apple.com/documentation/cloudkit/deploying-an-icloud-container-s-schema).
+CloudKit apps require a schema to declare the data types they use. When apps create a record in the CloudKit development environment, CloudKit automatically creates the record type if it doesn’t exist. In the production environment, CloudKit doesn’t have that capability, nor does it allow removing an existing record type or field, so after finalizing the schema, developers need to deploy it to the production environment. Without this step, apps that work in the production environment, like the ones people download from the App Store or TestFlight, can’t communicate with the CloudKit server. For more information, see [Deploying an iCloud Container’s Schema](../CloudKit/deploying-an-icloud-container-s-schema.md).
 
-Apps that use [`NSPersistentCloudKitContainer`](nspersistentcloudkitcontainer.md) can call [`initializeCloudKitSchema(options:)`](nspersistentcloudkitcontainer/initializecloudkitschema(options:).md) to create the CloudKit schema that matches their Core Data model, or keep it up to date every time their model changes. The method works by creating fake data for the record types and then deleting it, which can take some time and blocks the other CloudKit operations. Apps must not call it in the production environment or in the normal development process that doesn’t include model changes.
+Apps that use [`NSPersistentCloudKitContainer`](./nspersistentcloudkitcontainer.md) can call [`initializeCloudKitSchema(options:)`](./nspersistentcloudkitcontainer/initializecloudkitschema%28options%29.md) to create the CloudKit schema that matches their Core Data model, or keep it up to date every time their model changes. The method works by creating fake data for the record types and then deleting it, which can take some time and blocks the other CloudKit operations. Apps must not call it in the production environment or in the normal development process that doesn’t include model changes.
 
-To create the CloudKit schema for this sample app, select `InitializeCloudKitSchema` from Xcode’s target menu and run the target. Having a target dedicated on CloudKit schema creation separates the `initializeCloudKitSchema(options:)` call from the normal flow. After running the target, use [`CloudKit Console`](https://developer.apple.comhttp://icloud.developer.apple.com/dashboard/) to ensure each Core Data entity and attribute has a CloudKit counterpart. See [`Reading CloudKit Records for Core Data`](reading-cloudkit-records-for-core-data.md) for the mapping rules.
+To create the CloudKit schema for this sample app, select `InitializeCloudKitSchema` from Xcode’s target menu and run the target. Having a target dedicated on CloudKit schema creation separates the `initializeCloudKitSchema(options:)` call from the normal flow. After running the target, use [CloudKit Console](http://icloud.developer.apple.com/dashboard/) to ensure each Core Data entity and attribute has a CloudKit counterpart. See [Reading CloudKit Records for Core Data](./reading-cloudkit-records-for-core-data.md) for the mapping rules.
 
 For apps that use the CloudKit public database, use CloudKit Console to manually add the `Queryable` index for the `recordName` field, and the `Queryable` and `Sortable` indexes for the `modifiedAt` field for all record types, including the `CDMR` type that Core Data generates to manage many-to-many relationships.
 
-For more information, see [`Creating a Core Data Model for CloudKit`](creating-a-core-data-model-for-cloudkit.md).
+For more information, see [Creating a Core Data Model for CloudKit](./creating-a-core-data-model-for-cloudkit.md).
 
-##### Try Out the Sharing Flow
+##### Try out the sharing flow
 
 To create and share a photo using the sample app, follow these steps:
 
@@ -67,11 +69,11 @@ To discover more features of the sample app:
 - On device B, touch and hold the photo, tap Participants, and then tap the Remove Me icon to stop the participation. The photo disappears.
 - Tap the Manage Shares icon, and then tap a trailing icon of the share to present and use the sharing management UI.
 
-##### Set Up the Core Data Stack
+##### Set up the Core Data stack
 
-Every CloudKit container has a [`privateCloudDatabase`](https://developer.apple.com/documentation/cloudkit/ckcontainer/privateclouddatabase) and a [`sharedCloudDatabase`](https://developer.apple.com/documentation/cloudkit/ckcontainer/sharedclouddatabase). To mirror both of them, the sample app sets up a Core Data stack with two stores, sets one store’s [`databaseScope`](nspersistentcloudkitcontaineroptions/databasescope-4c72t.md) to `.private` and the other to `.shared`, and then uses [`affectedStores`](nsfetchrequest/affectedstores.md) or [`assign(_:to:)`](nsmanagedobjectcontext/assign(_:to:).md) to specify the target store for data fetching or saving.
+Every CloudKit container has a [private database](../CloudKit/ckcontainer/privateclouddatabase.md) and a [shared database](../CloudKit/ckcontainer/sharedclouddatabase.md). To mirror both of them, the sample app sets up a Core Data stack with two stores, sets one store’s [database scope](./nspersistentcloudkitcontaineroptions/databasescope-4c72t.md) to `.private` and the other to `.shared`, and then uses [`affectedStores`](./nsfetchrequest/affectedstores.md) or [`assign(_:to:)`](./nsmanagedobjectcontext/assign%28_,to%29.md) to specify the target store for data fetching or saving.
 
-When setting up the store description, the sample app enables [`Persistent history`](persistent-history.md) tracking and turns on remote change notifications by setting the `NSPersistentHistoryTrackingKey` and `NSPersistentStoreRemoteChangeNotificationPostOptionKey` options to `true`. Core Data relies on the persistent history to track the store changes, and the sample app updates its UI when remote changes occur.
+When setting up the store description, the sample app enables [persistent history](./persistent-history.md) tracking and turns on remote change notifications by setting the `NSPersistentHistoryTrackingKey` and `NSPersistentStoreRemoteChangeNotificationPostOptionKey` options to `true`. Core Data relies on the persistent history to track the store changes, and the sample app updates its UI when remote changes occur.
 
 ```swift
 privateStoreDescription.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
@@ -84,14 +86,14 @@ To synchronize data through CloudKit, apps need to use the same CloudKit contain
 let cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: gCloudKitContainerIdentifier)
 ```
 
-##### Share a Core Data Object
+##### Share a Core Data object
 
-Sharing a Core Data object between iCloud users includes creating a share ([`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare)) from the owner side, accepting the sharing invitation from the participant side, and managing the share from both sides. Owners can stop their sharing or change the share permission. Participants can stop their participation. The sample app uses the following system sharing UI to implement the flow:
+Sharing a Core Data object between iCloud users includes creating a share ([`CKShare`](../CloudKit/ckshare.md)) from the owner side, accepting the sharing invitation from the participant side, and managing the share from both sides. Owners can stop their sharing or change the share permission. Participants can stop their participation. The sample app uses the following system sharing UI to implement the flow:
 
-- It uses [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) to start a new sharing and send the invitation. (Non-SwiftUI apps use [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) or [`NSSharingServicePicker`](https://developer.apple.com/documentation/appkit/nssharingservicepicker).)
-- It uses [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) or [`NSSharingService`](https://developer.apple.com/documentation/appkit/nssharingservice) to manage a share. (Apps that use the Shared with You framework can use [`SWCollaborationView`](https://developer.apple.com/documentation/sharedwithyou/swcollaborationview) if the UI is appropriate. For more information, see [`Adding shared content collaboration to your app`](https://developer.apple.com/documentation/sharedwithyou/adding-shared-content-collaboration-to-your-app).)
+- It uses [`ShareLink`](../SwiftUI/sharelink.md) to start a new sharing and send the invitation. (Non-SwiftUI apps use [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md) or [`NSSharingServicePicker`](../AppKit/nssharingservicepicker.md).)
+- It uses [`UICloudSharingController`](../UIKit/uicloudsharingcontroller.md) or [`NSSharingService`](../AppKit/nssharingservice.md) to manage a share. (Apps that use the Shared with You framework can use [`SWCollaborationView`](../SharedWithYou/swcollaborationview.md) if the UI is appropriate. For more information, see [Adding shared content collaboration to your app](../SharedWithYou/adding-shared-content-collaboration-to-your-app.md).)
 
-`ShareLink` requires the sharing object be [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable). The `Photo` class in this sample conforms to the protocol by implementing [`transferRepresentation`](https://developer.apple.com/documentation/coretransferable/transferable/transferrepresentation) to provide a [`CKShareTransferRepresentation`](https://developer.apple.com/documentation/cloudkit/cksharetransferrepresentation) instance, which is based on a new share it creates by calling [`shareManagedObjects:toShare:completion:`](nspersistentcloudkitcontainer/sharemanagedobjects:toshare:completion:.md).
+`ShareLink` requires the sharing object be [`Transferable`](../CoreTransferable/transferable.md). The `Photo` class in this sample conforms to the protocol by implementing [`transferRepresentation`](../CoreTransferable/transferable/transferrepresentation.md) to provide a [`CKShareTransferRepresentation`](../CloudKit/cksharetransferrepresentation.md) instance, which is based on a new share it creates by calling [`share(_:to:completion:)`](./nspersistentcloudkitcontainer/sharemanagedobjects_toshare_completion_.md).
 
 `NSPersistentCloudKitContainer` uses CloudKit zone sharing to share objects. Each share has its own record zone on the CloudKit server. CloudKit has a limit on how many record zones a database can have. To avoid reaching the limit over time, the sample app provides an option for users to share an object by adding it to an existing share, as the following example shows:
 
@@ -100,19 +102,19 @@ func shareObject(_ unsharedObject: NSManagedObject, to existingShare: CKShare?,
                  completionHandler: ((_ share: CKShare?, _ error: Error?) -> Void)? = nil)
 ```
 
-The system sharing UI may change the share and save it directly to the CloudKit server. Since iOS 16.4, iPadOS 16.4, macOS 13.3, and watchOS 9.4, `NSPersistentCloudKitContainer` automatically observes the changes and updates the share it maintains. To support earlier systems that can’t upgrade to the latest versions, implement the relevant methods of [`UICloudSharingControllerDelegate`](https://developer.apple.com/documentation/uikit/uicloudsharingcontrollerdelegate) or [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentation/appkit/nscloudsharingservicedelegate) to update the share `NSPersistentCloudKitContainer` maintains.
+The system sharing UI may change the share and save it directly to the CloudKit server. Since iOS 16.4, iPadOS 16.4, macOS 13.3, and watchOS 9.4, `NSPersistentCloudKitContainer` automatically observes the changes and updates the share it maintains. To support earlier systems that can’t upgrade to the latest versions, implement the relevant methods of [`UICloudSharingControllerDelegate`](../UIKit/uicloudsharingcontrollerdelegate.md) or [`NSCloudSharingServiceDelegate`](../AppKit/nscloudsharingservicedelegate.md) to update the share `NSPersistentCloudKitContainer` maintains.
 
-The sample app doesn’t interact with the system sharing UI for other purposes. Apps that need to do so can create a [`CKSystemSharingUIObserver`](https://developer.apple.com/documentation/cloudkit/cksystemsharinguiobserver) object and provide a closure for [`systemSharingUIDidSaveShareBlock`](https://developer.apple.com/documentation/cloudkit/cksystemsharinguiobserver/systemsharinguididsaveshareblock-39zlv) and [`systemSharingUIDidStopSharingBlock`](https://developer.apple.com/documentation/cloudkit/cksystemsharinguiobserver/systemsharinguididstopsharingblock-4g5bn) to detect and react to the changes. For systems where `CKSystemSharingUIObserver` is unavailable, use `UICloudSharingControllerDelegate` or `NSCloudSharingServiceDelegate`.
+The sample app doesn’t interact with the system sharing UI for other purposes. Apps that need to do so can create a [`CKSystemSharingUIObserver`](../CloudKit/cksystemsharinguiobserver.md) object and provide a closure for [`systemSharingUIDidSaveShareBlock`](../CloudKit/cksystemsharinguiobserver/systemsharinguididsaveshareblock-39zlv.md) and [`systemSharingUIDidStopSharingBlock`](../CloudKit/cksystemsharinguiobserver/systemsharinguididstopsharingblock-4g5bn.md) to detect and react to the changes. For systems where `CKSystemSharingUIObserver` is unavailable, use `UICloudSharingControllerDelegate` or `NSCloudSharingServiceDelegate`.
 
 `NSPersistentCloudKitContainer` doesn’t support cross-share relationships. That is, it doesn’t allow relating objects associated with different shares. When sharing an object, `NSPersistentCloudKitContainer` moves the entire object graph, which includes the object and all its relationships, to the share’s record zone. When a participant stops participating in a share, `NSPersistentCloudKitContainer` deletes the object graph from the shared persistent store.
 
-> **Note**: For more information about Core Data and CloudKit sharing, see [`Build apps that share data through CloudKit and Core Data`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10015/) and [`What’s new in CloudKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10086).
+> **Note**: For more information about Core Data and CloudKit sharing, see [Build apps that share data through CloudKit and Core Data](https://developer.apple.com/videos/play/wwdc2021/10015/) and [What’s new in CloudKit](https://developer.apple.com/videos/play/wwdc2021/10086).
 
-##### Detect Relevant Changes By Consuming Store Persistent History
+##### Detect relevant changes by consuming store persistent history
 
 When importing data from CloudKit, `NSPersistentCloudKitContainer` records the changes on Core Data objects in the store’s persistent history, and triggers remote change notifications (`.NSPersistentStoreRemoteChange`) so apps can keep their state up-to-date. The sample app observes the notification and performs the following actions in the notification handler:
 
-- Gathers the relevant history transactions ([`NSPersistentHistoryTransaction`](nspersistenthistorytransaction.md)), and notifies the views when remote changes happen. The changes on shares don’t generate any transactions.
+- Gathers the relevant history transactions ([`NSPersistentHistoryTransaction`](./nspersistenthistorytransaction.md)), and notifies the views when remote changes happen. The changes on shares don’t generate any transactions.
 - Merges the transactions to the `viewContext` of the persistent container, which triggers a SwiftUI update for the views that present photos. Views relevant to shares fetch the shares from the stores, and update the UI.
 - Detects the new tags, and handles duplicates, if necessary.
 
@@ -138,13 +140,13 @@ if privatePersistentStore.identifier == storeUUID {
 }
 ```
 
-The persistent history stays on the device as a part of the Core Data store, and accumulates over time. Apps that have a large data set can purge it. To do so, observe [`eventChangedNotification`](nspersistentcloudkitcontainer/eventchangednotification.md) to determine the start date of the last successful `.export` event, and then purge the history that occurs sometime before that date. The *sometime* needs to be long enough for the history to become irrelevant, which can be several months for apps that people use on a regular basis. Apps generally only need to purge the history several times a year.
+The persistent history stays on the device as a part of the Core Data store, and accumulates over time. Apps that have a large data set can purge it. To do so, observe [`eventChangedNotification`](./nspersistentcloudkitcontainer/eventchangednotification.md) to determine the start date of the last successful `.export` event, and then purge the history that occurs sometime before that date. The *sometime* needs to be long enough for the history to become irrelevant, which can be several months for apps that people use on a regular basis. Apps generally only need to purge the history several times a year.
 
 > **Note**: `NSPersistentCloudKitContainer` relies on the persistent history to determine the data it needs to export. The history remains relevant before `NSPersistentCloudKitContainer` finishes processing it. Purging the history that is still relevant invalidates some internal state, and triggers a `reset` operation that synchronizes the store with the CloudKit server truth.
 
-For more information about persistent history processing, see [`Consuming relevant store changes`](consuming-relevant-store-changes.md).
+For more information about persistent history processing, see [Consuming Relevant Store Changes](./consuming-relevant-store-changes.md).
 
-##### Remove Duplicate Data
+##### Remove duplicate data
 
 In the CloudKit environment, duplicate data is sometimes inevitable because:
 
@@ -174,19 +176,19 @@ The following code shows how the app determines the deduplicated tags it can saf
 func containerEventChanged(_ notification: Notification)
 ```
 
-##### Implement a Custom Sharing Flow
+##### Implement a custom sharing flow
 
 Apps can implement a custom sharing flow when the system sharing UI is unavailable or doesn’t fit. The sample app performs the following tasks so users can share photos from watchOS:
 
 1. It creates a share using `share(_:to:completion:)` when an owner shares a photo.
-2. It configures the share with appropriate permissions, and adds participants for a share. A share is private if its [`publicPermission`](https://developer.apple.com/documentation/cloudkit/ckshare/publicpermission) is [`CKShare.ParticipantPermission.none`](https://developer.apple.com/documentation/cloudkit/ckshare/participantpermission/none). For shares that have a public permission more permissive than `.none` (called *public shares*), users can participate by tapping the share link, so there’s no need to add participants beforehand. The sample app looks up participants using [`fetchParticipantsMatchingLookupInfos:intoPersistentStore:completion:`](nspersistentcloudkitcontainer/fetchparticipantsmatchinglookupinfos:intopersistentstore:completion:.md), configures the participant permission using [`permission`](https://developer.apple.com/documentation/cloudkit/ckshare/participant/permission-swift.property), and adds it to the share using [`addParticipant(_:)`](https://developer.apple.com/documentation/cloudkit/ckshare/addparticipant(_:)).
-3. It allows users to deliver the share URL ([`url`](https://developer.apple.com/documentation/cloudkit/ckshare/url)) to a participant using `ShareLink`.
-4. It implements [`userDidAcceptCloudKitShare(with:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/userdidacceptcloudkitshare(with:)) to accept the share using [`acceptShareInvitationsFromMetadata:intoPersistentStore:completion:`](nspersistentcloudkitcontainer/acceptshareinvitationsfrommetadata:intopersistentstore:completion:.md). After the acceptance synchronizes, the photo and its relationships are available in the participant’s shared persistent store.
-5. It manages the participants using `addParticipant(_:)` and [`removeParticipant(_:)`](https://developer.apple.com/documentation/cloudkit/ckshare/removeparticipant(_:)) from the owner side, or stops the sharing or participation by calling `purgeObjectsAndRecordsInZone(with:in:completion:)`. (The purge API deletes the zone from CloudKit, and also the object graph from the Core Data store. Apps that need to keep the object graph can make a deep copy, ensure the new graph doesn’t connect to any share, and save it to the store.)
+2. It configures the share with appropriate permissions, and adds participants for a share. A share is private if its [`publicPermission`](../CloudKit/ckshare/publicpermission.md) is [`.none`](../CloudKit/ckshare/participantpermission/none.md). For shares that have a public permission more permissive than `.none` (called *public shares*), users can participate by tapping the share link, so there’s no need to add participants beforehand. The sample app looks up participants using [`fetchParticipants(matching:into:completion:)`](./nspersistentcloudkitcontainer/fetchparticipantsmatchinglookupinfos_intopersistentstore_completion_.md), configures the participant permission using [`CKShare.Participant.permission`](../CloudKit/ckshare/participant/permission-swift.property.md), and adds it to the share using [`addParticipant(_:)`](../CloudKit/ckshare/addparticipant%28_%29.md).
+3. It allows users to deliver the share URL ([`CKShare.url`](../CloudKit/ckshare/url.md)) to a participant using `ShareLink`.
+4. It implements [`userDidAcceptCloudKitShare(with:)`](../WatchKit/wkapplicationdelegate/userdidacceptcloudkitshare%28with%29.md) to accept the share using [`acceptShareInvitations(from:into:completion:)`](./nspersistentcloudkitcontainer/acceptshareinvitationsfrommetadata_intopersistentstore_completion_.md). After the acceptance synchronizes, the photo and its relationships are available in the participant’s shared persistent store.
+5. It manages the participants using `addParticipant(_:)` and [`removeParticipant(_:)`](../CloudKit/ckshare/removeparticipant%28_%29.md) from the owner side, or stops the sharing or participation by calling `purgeObjectsAndRecordsInZone(with:in:completion:)`. (The purge API deletes the zone from CloudKit, and also the object graph from the Core Data store. Apps that need to keep the object graph can make a deep copy, ensure the new graph doesn’t connect to any share, and save it to the store.)
 
 > **Note**: To be able to accept a share when people tap a share link, an app’s `Info.plist` file needs to contain the `CKSharingSupported` key with a value of `true`.
 
-In this process, the sample app calls [`persistUpdatedShare:inPersistentStore:completion:`](nspersistentcloudkitcontainer/persistupdatedshare:inpersistentstore:completion:.md) when it changes the share using CloudKit APIs for `NSPersistentCloudKitContainer` to update the store. The following code shows how the app adds a participant:
+In this process, the sample app calls [`persistUpdatedShare(_:in:completion:)`](./nspersistentcloudkitcontainer/persistupdatedshare_inpersistentstore_completion_.md) when it changes the share using CloudKit APIs for `NSPersistentCloudKitContainer` to update the store. The following code shows how the app adds a participant:
 
 ```swift
 participant.permission = permission
@@ -203,13 +205,14 @@ self.persistentContainer.persistUpdatedShare(share, in: persistentStore) { (shar
 
 ## See Also
 
-- [Mirroring a Core Data store with CloudKit](mirroring-a-core-data-store-with-cloudkit.md)
+### CloudKit mirroring
+- [Mirroring a Core Data store with CloudKit](./mirroring-a-core-data-store-with-cloudkit.md)
   Back user interfaces with a local replica of a CloudKit private database.
-- [Synchronizing a local store to the cloud](synchronizing-a-local-store-to-the-cloud.md)
+- [Synchronizing a local store to the cloud](./synchronizing-a-local-store-to-the-cloud.md)
   Share data between a user’s devices and other iCloud users.
-- [class NSPersistentCloudKitContainer](nspersistentcloudkitcontainer.md)
+- [class NSPersistentCloudKitContainer](./nspersistentcloudkitcontainer.md)
   A container that encapsulates the Core Data stack in your app, and mirrors select persistent stores to a CloudKit private database.
-- [class NSPersistentCloudKitContainerOptions](nspersistentcloudkitcontaineroptions.md)
+- [class NSPersistentCloudKitContainerOptions](./nspersistentcloudkitcontaineroptions.md)
   An object that customizes how a store description aligns with a CloudKit database.
 
 

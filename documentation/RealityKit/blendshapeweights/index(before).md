@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position in the sequence of the weight that preceeds the given position.
 
@@ -21,7 +22,7 @@ func index(before i: BlendShapeWeights.Index) -> BlendShapeWeights.Index
 
 #### Discussion
 
-For more on calculating indices, see [`index(before:)`](https://developer.apple.com/documentation/swift/array/index(before:)).
+For more on calculating indices, see [`index(before:)`](../../Swift/array/index%28before%29.md).
 
 
 ---

@@ -1,14 +1,15 @@
 # kHIDUsage_PID_DC_DeviceReset
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PID_DC_DeviceReset = 0x9A
 ```
 

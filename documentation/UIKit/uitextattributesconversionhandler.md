@@ -1,16 +1,17 @@
 # UITextAttributesConversionHandler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A handler for updating text with current font panel settings.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ A handler for updating text with current font panel settings.
 typealias UITextAttributesConversionHandler = ([NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any]
 ```
 
+```c
+typedef NSDictionary<NSString *,id> *(^)(NSDictionary<NSString *,id> *) UITextAttributesConversionHandler;
+```
+
 ## See Also
 
-- [class UITextFormattingCoordinator](uitextformattingcoordinator.md)
+### Text formatting
+- [class UITextFormattingCoordinator](./uitextformattingcoordinator.md)
   An object that coordinates text formatting using the standard Mac font panel.
 
 

@@ -1,7 +1,8 @@
 # isMarked
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this segment should be visually highlighted or marked in the timeline UI.
 
@@ -14,6 +15,10 @@ Indicates whether this segment should be visually highlighted or marked in the t
 
 ```swift
 var isMarked: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isMarked) BOOL marked;
 ```
 
 

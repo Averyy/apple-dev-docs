@@ -1,7 +1,8 @@
 # vImage_PerpsectiveTransform.Interpolation.nearest
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that specifies nearest-neighbor interpolation.
 
@@ -11,7 +12,7 @@ A constant that specifies nearest-neighbor interpolation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

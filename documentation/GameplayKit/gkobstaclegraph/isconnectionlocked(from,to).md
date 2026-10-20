@@ -1,7 +1,8 @@
 # isConnectionLocked(from:to:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the specified nodes are protected from disconnection due to the addition of obstacles.
 
@@ -19,13 +20,17 @@ Returns a Boolean value indicating whether the specified nodes are protected fro
 func isConnectionLocked(from startNode: NodeType, to endNode: NodeType) -> Bool
 ```
 
+```objc
+- (BOOL) isConnectionLockedFromNode:(NodeType) startNode toNode:(NodeType) endNode;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the connection between the specified nodes has been locked with the [`lockConnection(from:to:)`](gkobstaclegraph/lockconnection(from:to:).md) method; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the connection between the specified nodes has been locked with the [`lockConnection(from:to:)`](./lockconnection%28from,to%29.md) method; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-By default, adding obstacles with the [`addObstacles(_:)`](gkobstaclegraph/addobstacles(_:).md) method disconnects pairs of nodes if the direct path between them intersects an obstacle. This behavior ensures that using the findPathBetweenNodes:toNode: method does not result in a path through the graph that crosses obstacles. With certain nodes, this behavior might not be desirable—use the [`lockConnection(from:to:)`](gkobstaclegraph/lockconnection(from:to:).md) method to protect a connection between nodes from being automatically destroyed and the [`unlockConnection(from:to:)`](gkobstaclegraph/unlockconnection(from:to:).md) method to remove such protection.
+By default, adding obstacles with the [`addObstacles(_:)`](./addobstacles%28_%29.md) method disconnects pairs of nodes if the direct path between them intersects an obstacle. This behavior ensures that using the findPathBetweenNodes:toNode: method does not result in a path through the graph that crosses obstacles. With certain nodes, this behavior might not be desirable—use the [`lockConnection(from:to:)`](./lockconnection%28from,to%29.md) method to protect a connection between nodes from being automatically destroyed and the [`unlockConnection(from:to:)`](./unlockconnection%28from,to%29.md) method to remove such protection.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ By default, adding obstacles with the [`addObstacles(_:)`](gkobstaclegraph/addob
 
 ## See Also
 
-- [func lockConnection(from: NodeType, to: NodeType)](gkobstaclegraph/lockconnection(from:to:).md)
+### Locking Node Connections
+- [func lockConnection(from: NodeType, to: NodeType)](./lockconnection%28from,to%29.md)
   Prevents the specified nodes from being disconnected due to the addition of obstacles.
-- [func unlockConnection(from: NodeType, to: NodeType)](gkobstaclegraph/unlockconnection(from:to:).md)
+- [func unlockConnection(from: NodeType, to: NodeType)](./unlockconnection%28from,to%29.md)
   Allows the specified nodes to be disconnected due to the addition of obstacles.
 
 

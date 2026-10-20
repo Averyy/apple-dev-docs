@@ -1,7 +1,8 @@
 # GCInputMicroGamepadButtonA
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the micro gamepad’s primary button.
 
@@ -19,15 +20,20 @@ The name of the micro gamepad’s primary button.
 let GCInputMicroGamepadButtonA: String
 ```
 
+```c
+extern NSString * const GCInputMicroGamepadButtonA;
+```
+
 #### Discussion
 
 For the first-generation and second-generation Siri Remote and later, this represents the button on the entire touch surface.
 
 ## See Also
 
-- [let GCInputMicroGamepadButtonX: String](gcinputmicrogamepadbuttonx.md)
+### Micro gamepad button names
+- [let GCInputMicroGamepadButtonX: String](./gcinputmicrogamepadbuttonx.md)
   The name of the micro gamepad’s secondary button.
-- [let GCInputMicroGamepadButtonMenu: String](gcinputmicrogamepadbuttonmenu.md)
+- [let GCInputMicroGamepadButtonMenu: String](./gcinputmicrogamepadbuttonmenu.md)
   The name of the micro gamepad’s menu button.
 
 

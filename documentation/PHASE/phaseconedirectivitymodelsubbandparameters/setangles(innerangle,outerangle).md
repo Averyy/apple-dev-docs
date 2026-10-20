@@ -1,7 +1,8 @@
 # setAngles(innerAngle:outerAngle:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures a focus area for cone-based sound directivity.
 
@@ -19,6 +20,10 @@ Configures a focus area for cone-based sound directivity.
 func setAngles(innerAngle: Double, outerAngle: Double)
 ```
 
+```objc
+- (void) setInnerAngle:(double) innerAngle outerAngle:(double) outerAngle;
+```
+
 #### Discussion
 
 The default value for each angle is `360.0`. The outer angle needs to be greater than or equal to the inner angle.
@@ -30,11 +35,12 @@ The default value for each angle is `360.0`. The outer angle needs to be greater
 
 ## See Also
 
-- [var innerAngle: Double](phaseconedirectivitymodelsubbandparameters/innerangle.md)
+### Shaping Directivity
+- [var innerAngle: Double](./innerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area inside the cone.
-- [var outerAngle: Double](phaseconedirectivitymodelsubbandparameters/outerangle.md)
+- [var outerAngle: Double](./outerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area outside the cone.
-- [var outerGain: Double](phaseconedirectivitymodelsubbandparameters/outergain.md)
+- [var outerGain: Double](./outergain.md)
   The loudness of the audio the outside area of the cone emits.
 
 

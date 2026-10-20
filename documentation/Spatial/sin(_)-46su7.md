@@ -1,7 +1,8 @@
 # sin(_:)
 
 **Framework**: Spatial  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -20,17 +21,18 @@ func sin(_ angle: Angle2DFloat) -> Float
 
 ## See Also
 
-- [func cos(Angle2D) -> Double](cos(_:)-609v4.md)
-- [func cos(Angle2DFloat) -> Float](cos(_:)-79fxe.md)
-- [func cosh(Angle2D) -> Double](cosh(_:)-6cg6v.md)
-- [func cosh(Angle2DFloat) -> Float](cosh(_:)-9mmhn.md)
-- [func sin(Angle2D) -> Double](sin(_:)-5tddt.md)
-- [func sinh(Angle2D) -> Double](sinh(_:)-4m7ds.md)
-- [func sinh(Angle2DFloat) -> Float](sinh(_:)-8kigy.md)
-- [func tan(Angle2D) -> Double](tan(_:)-1sjgu.md)
-- [func tan(Angle2DFloat) -> Float](tan(_:)-9x99s.md)
-- [func tanh(Angle2D) -> Double](tanh(_:)-1f341.md)
-- [func tanh(Angle2DFloat) -> Float](tanh(_:)-5yozs.md)
+### Applying trigonometric functions
+- [func cos(Angle2D) -> Double](./cos%28_%29-609v4.md)
+- [func cos(Angle2DFloat) -> Float](./cos%28_%29-79fxe.md)
+- [func cosh(Angle2D) -> Double](./cosh%28_%29-6cg6v.md)
+- [func cosh(Angle2DFloat) -> Float](./cosh%28_%29-9mmhn.md)
+- [func sin(Angle2D) -> Double](./sin%28_%29-5tddt.md)
+- [func sinh(Angle2D) -> Double](./sinh%28_%29-4m7ds.md)
+- [func sinh(Angle2DFloat) -> Float](./sinh%28_%29-8kigy.md)
+- [func tan(Angle2D) -> Double](./tan%28_%29-1sjgu.md)
+- [func tan(Angle2DFloat) -> Float](./tan%28_%29-9x99s.md)
+- [func tanh(Angle2D) -> Double](./tanh%28_%29-1f341.md)
+- [func tanh(Angle2DFloat) -> Float](./tanh%28_%29-5yozs.md)
 
 
 ---

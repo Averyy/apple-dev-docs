@@ -2,18 +2,19 @@
 
 **Framework**: XCUIAutomation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The type of the element.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,11 +23,16 @@ The type of the element.
 var elementType: XCUIElement.ElementType { get }
 ```
 
+```objc
+@property (readonly) XCUIElementType elementType;
+```
+
 ## See Also
 
-- [var identifier: String](xcuielementattributes/identifier.md)
+### Identity
+- [var identifier: String](./identifier.md)
   The element’s accessibility identifier.
-- [XCUIElement.ElementType](xcuielement/elementtype.md)
+- [XCUIElement.ElementType](../xcuielement/elementtype.md)
   The types of UI elements that you find, inspect, and interact with in a UI test.
 
 

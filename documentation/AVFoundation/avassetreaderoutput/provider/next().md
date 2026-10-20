@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next piece of media data.
 
@@ -26,11 +27,12 @@ Returns the next piece of media data with the specified Payload type. If no more
 
 #### Discussion
 
-> **Note**: If the underlying reader encountered an error.
+> **Throws**: If the underlying reader encountered an error.
 
 ## See Also
 
-- [func captionsNotPresentInPreviousGroups(in: AVCaptionGroup) -> [AVCaption]](avassetreaderoutput/provider/captionsnotpresentinpreviousgroups(in:).md)
+### Reading media data
+- [func captionsNotPresentInPreviousGroups(in: AVCaptionGroup) -> [AVCaption]](./captionsnotpresentinpreviousgroups%28in%29.md)
   Returns the set of captions that are present in the given group but were not present in any group previously vended by calls to next().
 
 

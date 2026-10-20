@@ -1,7 +1,8 @@
 # methodName
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the payment method to use for the transaction.
 
@@ -11,19 +12,20 @@ The identifier for the payment method to use for the transaction.
 
 ## Declaration
 
-```swift
+```
 readonly attribute DOMString methodName;
 ```
 
 #### Discussion
 
-The [`methodName`](paymentmethodchangeevent/methodname.md) for Apple Pay transactions is the Apple Pay URL.
+The [`methodName`](./methodname.md) for Apple Pay transactions is the Apple Pay URL.
 
-For more information, see [`W3C payment method identifiers (PMIs)`](https://developer.apple.comhttps://www.w3.org/TR/payment-method-id/#dfn-pmi).
+For more information, see [W3C payment method identifiers (PMIs)](https://www.w3.org/TR/payment-method-id/#dfn-pmi).
 
 ## See Also
 
-- [methodDetails](paymentmethodchangeevent/methoddetails.md)
+### Change Information
+- [methodDetails](./methoddetails.md)
   A dictionary that contains the details of the change.
 
 

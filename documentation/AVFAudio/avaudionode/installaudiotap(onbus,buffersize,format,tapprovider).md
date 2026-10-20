@@ -1,7 +1,8 @@
 # installAudioTap(onBus:bufferSize:format:tapProvider:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Install a tap on a bus using a sendable block
 
@@ -35,11 +36,12 @@ Only one tap may be installed on any bus. Taps may be safely installed and remov
 
 ## See Also
 
-- [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](avaudionode/installtap(onbus:buffersize:format:block:).md)
+### Managing audio taps
+- [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](./installtap%28onbus,buffersize,format,block%29.md)
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
-- [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)
+- [func removeTap(onBus: AVAudioNodeBus)](./removetap%28onbus%29.md)
   Removes an audio tap on a bus you specify.
-- [typealias AVAudioNodeTapBlock](avaudionodetapblock.md)
+- [typealias AVAudioNodeTapBlock](../avaudionodetapblock.md)
   The block that receives copies of the output of an audio node.
 
 

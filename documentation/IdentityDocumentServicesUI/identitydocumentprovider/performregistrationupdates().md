@@ -2,6 +2,7 @@
 
 **Framework**: IdentityDocumentServicesUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A function that allows the current app to perform updates to document registrations to ensure consistency with documents stored in the app.
@@ -9,7 +10,7 @@ A function that allows the current app to perform updates to document registrati
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

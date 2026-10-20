@@ -1,7 +1,8 @@
 # assetListResponseStatusDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the status of an interstitial event’s asset list response changes.
 
@@ -20,23 +21,28 @@ A notification the system posts when the status of an interstitial event’s ass
 class let assetListResponseStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeNotification;
+```
+
 #### Discussion
 
-Notifications of this type provide a [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary that can contain values for the keys listed below.
+Notifications of this type provide a [`userInfo`](../../Foundation/notification/userinfo.md) dictionary that can contain values for the keys listed below.
 
 ## Topics
 
 ### User information keys
-- [class let assetListResponseStatusDidChangeEventKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangeeventkey.md)
+- [class let assetListResponseStatusDidChangeEventKey: String](./assetlistresponsestatusdidchangeeventkey.md)
   A key to retrieve the interstitial event that has an asset list response status change.
-- [class let assetListResponseStatusDidChangeStatusKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangestatuskey.md)
+- [class let assetListResponseStatusDidChangeStatusKey: String](./assetlistresponsestatusdidchangestatuskey.md)
   A key to retrieve the asset list response status.
-- [class let assetListResponseStatusDidChangeErrorKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangeerrorkey.md)
+- [class let assetListResponseStatusDidChangeErrorKey: String](./assetlistresponsestatusdidchangeerrorkey.md)
   A key to retrieve the error related to a change in an interstitial event’s asset list response.
 
 ## See Also
 
-- [enum AVPlayerInterstitialEventAssetListResponseStatus](avplayerinterstitialeventassetlistresponsestatus.md)
+### Monitoring the asset list response
+- [enum AVPlayerInterstitialEventAssetListResponseStatus](../avplayerinterstitialeventassetlistresponsestatus.md)
   Constants that describe the status of the asset list response for an interstitial event.
 
 

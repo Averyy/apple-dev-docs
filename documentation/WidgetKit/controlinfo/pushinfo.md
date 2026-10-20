@@ -1,7 +1,8 @@
 # pushInfo
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Push information about a control, if present.
 

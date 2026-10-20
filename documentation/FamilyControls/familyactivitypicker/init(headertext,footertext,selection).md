@@ -1,7 +1,8 @@
 # init(headerText:footerText:selection:)
 
 **Framework**: Family Controls  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new activity picker with optional header and footer text.
 
@@ -24,10 +25,11 @@ Creates a new activity picker with optional header and footer text.
 
 ## See Also
 
-- [init(selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(selection:).md)
+### Creating activity pickers
+- [init(selection: Binding<FamilyActivitySelection>)](./init%28selection%29.md)
   Creates a new activity picker.
 - [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
-](../swiftui/view/familyactivitypicker(title:headertext:footertext:ispresented:selection:).md)
+](../../SwiftUI/view/familyactivitypicker%28title,headertext,footertext,ispresented,selection%29.md)
   Present an activity picker sheet for selecting apps and websites to manage.
 
 

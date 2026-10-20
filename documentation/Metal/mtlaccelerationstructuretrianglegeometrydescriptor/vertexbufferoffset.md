@@ -1,7 +1,8 @@
 # vertexBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, for the first vertex in the vertex buffer.
 
@@ -19,17 +20,22 @@ The offset, in bytes, for the first vertex in the vertex buffer.
 var vertexBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger vertexBufferOffset;
+```
+
 #### Discussion
 
-The offset needs to be a multiple of the vertex stride. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions. The default value is `0`.
+The offset needs to be a multiple of the vertex stride. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions. The default value is `0`.
 
 ## See Also
 
-- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
+### Configuring vertex data
+- [var vertexFormat: MTLAttributeFormat](./vertexformat.md)
   The format of each vertex position in the vertex buffer property.
-- [var vertexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbuffer.md)
+- [var vertexBuffer: (any MTLBuffer)?](./vertexbuffer.md)
   A buffer that contains vertex data.
-- [var vertexStride: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexstride.md)
+- [var vertexStride: Int](./vertexstride.md)
   The stride, in bytes, between vertices in the vertex buffer.
 
 

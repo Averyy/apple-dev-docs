@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBPingResponseTimeNs](3166380-anonymous/kiousbpingresponsetimens.md)
+- [kIOUSBPingResponseTimeNs](./api-3166380-anonymous/kiousbpingresponsetimens.md)
 
 
 ---

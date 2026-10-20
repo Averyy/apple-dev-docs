@@ -1,7 +1,8 @@
 # text
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text displayed in the overlay.
 
@@ -14,6 +15,10 @@ The text displayed in the overlay.
 
 ```swift
 var text: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * text;
 ```
 
 

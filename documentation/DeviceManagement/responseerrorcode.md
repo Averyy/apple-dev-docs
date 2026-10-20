@@ -1,7 +1,8 @@
 # ResponseErrorCode
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error code.
 
@@ -10,13 +11,13 @@ An error code.
 
 ## Declaration
 
-```swift
+```
 object ResponseErrorCode
 ```
 
 ## Mentions
 
-- [Handling error responses](handling-error-responses.md)
+- [Handling error responses](./handling-error-responses.md)
 
 ## Properties
 
@@ -25,9 +26,10 @@ object ResponseErrorCode
 
 ## See Also
 
-- [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
+### Objects and Data Types
+- [object ServiceConfigResponse.Limits](./serviceconfigresponse/limits-data.dictionary.md)
   The set of current request limits.
-- [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
+- [object ServiceConfigResponse.Urls](./serviceconfigresponse/urls-data.dictionary.md)
   The set of current service URLs.
 
 

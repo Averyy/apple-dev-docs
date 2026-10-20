@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@
 var bottomRight: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint bottomRight;
+```
+
 ## See Also
 
-- [var bottomLeft: CGPoint](cifourcoordinategeometryfilter/bottomleft.md)
-- [var inputImage: CIImage?](cifourcoordinategeometryfilter/inputimage.md)
+### Instance Properties
+- [var bottomLeft: CGPoint](./bottomleft.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var topLeft: CGPoint](cifourcoordinategeometryfilter/topleft.md)
-- [var topRight: CGPoint](cifourcoordinategeometryfilter/topright.md)
+- [var topLeft: CGPoint](./topleft.md)
+- [var topRight: CGPoint](./topright.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # backtrace_packed
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 size_t backtrace_packed(backtrace_pack_t packing, uint8_t *bt, size_t btsize, struct backtrace_control *ctl, backtrace_info_t *info_out);
 ```
 

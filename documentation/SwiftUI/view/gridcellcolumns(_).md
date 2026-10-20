@@ -1,7 +1,8 @@
 # gridCellColumns(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells a view that acts as a cell in a grid to span the specified number of columns.
 
@@ -27,7 +28,7 @@ A view that occupies the specified number of columns in a grid row.
 
 #### Discussion
 
-By default, each view that you put into the content closure of a [`GridRow`](gridrow.md) corresponds to exactly one column of the grid. Apply the `gridCellColumns(_:)` modifier to a view that you want to span more than one column, as in the following example of a typical macOS configuration view:
+By default, each view that you put into the content closure of a [`GridRow`](../gridrow.md) corresponds to exactly one column of the grid. Apply the `gridCellColumns(_:)` modifier to a view that you want to span more than one column, as in the following example of a typical macOS configuration view:
 
 ```swift
 Grid(alignment: .leadingFirstTextBaseline) {
@@ -51,13 +52,13 @@ Grid(alignment: .leadingFirstTextBaseline) {
 }
 ```
 
-The [`Toggle`](toggle.md) in the example above spans the column that contains the font names and the column that contains the buttons:
+The [`Toggle`](../toggle.md) in the example above spans the column that contains the font names and the column that contains the buttons:
 
-![A screenshot of a configuration view, arranged in a grid. The grid](/images/com.apple.SwiftUI/View-gridCellColumns-1-macOS@2x.png)
+![A screenshot of a configuration view, arranged in a grid. The grid](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-gridCellColumns-1-macOS@2x.png)
 
-> ❗ **Important**: When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see [`gridCellAnchor(_:)`](view/gridcellanchor(_:).md).
+> ❗ **Important**: When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see [`gridCellAnchor(_:)`](./gridcellanchor%28_%29.md).
 
-As a convenience you can cause a view to span all of the [`Grid`](grid.md) columns by placing the view directly in the content closure of the [`Grid`](grid.md), outside of a [`GridRow`](gridrow.md), and omitting the modifier. To do the opposite and include more than one view in a cell, group the views using an appropriate layout container, like an [`HStack`](hstack.md), so that they act as a single view.
+As a convenience you can cause a view to span all of the [`Grid`](../grid.md) columns by placing the view directly in the content closure of the [`Grid`](../grid.md), outside of a [`GridRow`](../gridrow.md), and omitting the modifier. To do the opposite and include more than one view in a cell, group the views using an appropriate layout container, like an [`HStack`](../hstack.md), so that they act as a single view.
 
 ## Parameters
 
@@ -65,15 +66,16 @@ As a convenience you can cause a view to span all of the [`Grid`](grid.md) colum
 
 ## See Also
 
-- [struct Grid](grid.md)
+### Statically arranging views in two dimensions
+- [struct Grid](../grid.md)
   A container view that arranges other views in a two dimensional layout.
-- [struct GridRow](gridrow.md)
+- [struct GridRow](../gridrow.md)
   A horizontal row in a two dimensional grid container.
-- [func gridCellAnchor(UnitPoint) -> some View](view/gridcellanchor(_:).md)
+- [func gridCellAnchor(UnitPoint) -> some View](./gridcellanchor%28_%29.md)
   Specifies a custom alignment anchor for a view that acts as a grid cell.
-- [func gridCellUnsizedAxes(Axis.Set) -> some View](view/gridcellunsizedaxes(_:).md)
+- [func gridCellUnsizedAxes(Axis.Set) -> some View](./gridcellunsizedaxes%28_%29.md)
   Asks grid layouts not to offer the view extra size in the specified axes.
-- [func gridColumnAlignment(HorizontalAlignment) -> some View](view/gridcolumnalignment(_:).md)
+- [func gridColumnAlignment(HorizontalAlignment) -> some View](./gridcolumnalignment%28_%29.md)
   Overrides the default horizontal alignment of the grid column that the view appears in.
 
 

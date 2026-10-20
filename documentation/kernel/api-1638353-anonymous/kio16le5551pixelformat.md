@@ -1,14 +1,15 @@
 # kIO16LE5551PixelFormat
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIO16LE5551PixelFormat = IO_FOUR_CHAR_CODE('5551')
 ```
 

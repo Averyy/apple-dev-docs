@@ -1,7 +1,8 @@
 # RCSService.Business.SuggestedAction.Action.enableDisplayedNotifications
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ask the user to enable sending displayed notifications.
 
@@ -16,7 +17,8 @@ case enableDisplayedNotifications
 
 ## See Also
 
-- [RCSService.Business.SuggestedAction.Action.sendDeviceSpecifics](rcsservice/business/suggestedaction/action-swift.enum/senddevicespecifics.md)
+### Handling local behavior actions
+- [RCSService.Business.SuggestedAction.Action.sendDeviceSpecifics](./senddevicespecifics.md)
   Request specifics about the user’s device.
 
 

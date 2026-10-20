@@ -1,7 +1,8 @@
 # recordType
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record type of the deleted record.
 
@@ -11,7 +12,7 @@ The record type of the deleted record.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var recordType: CKRecord.RecordType { get }
 
 ## See Also
 
-- [var recordID: CKRecord.ID](ckdatabase/recordzonechange/deletion/recordid.md)
+### Identifying the Deleted Record
+- [var recordID: CKRecord.ID](./recordid.md)
   The identifier of the deleted record.
 
 

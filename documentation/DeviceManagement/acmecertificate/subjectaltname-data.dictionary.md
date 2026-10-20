@@ -1,7 +1,8 @@
 # ACMECertificate.SubjectAltName
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The subject’s alternative name details.
 
@@ -16,7 +17,7 @@ The subject’s alternative name details.
 
 ## Declaration
 
-```swift
+```
 object ACMECertificate.SubjectAltName
 ```
 

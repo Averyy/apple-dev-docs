@@ -1,7 +1,8 @@
 # rotated(by:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a pose with a rotation that’s rotated by the specified rotation.
 

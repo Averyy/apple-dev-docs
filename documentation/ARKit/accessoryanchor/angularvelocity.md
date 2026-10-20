@@ -1,7 +1,8 @@
 # angularVelocity
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Angular velocity of the accessory in the local coordinate system [rad/s].
 

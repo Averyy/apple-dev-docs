@@ -1,7 +1,8 @@
 # vImage.MorphologyOperation.dilate(structuringElement:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies dilation using a structuring element.
 
@@ -11,7 +12,7 @@ Applies dilation using a structuring element.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case dilate(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)
 
 ## See Also
 
-- [case erode(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)](vimage/morphologyoperation/erode(structuringelement:).md)
+### Enumeration Cases
+- [case erode(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)](./erode%28structuringelement%29.md)
   Applies erosion using a structuring element.
-- [vImage.MorphologyOperation.maximize(kernelSize:)](vimage/morphologyoperation/maximize(kernelsize:).md)
+- [vImage.MorphologyOperation.maximize(kernelSize:)](./maximize%28kernelsize%29.md)
   Maximizes using an implicit kernel of a specified size.
-- [vImage.MorphologyOperation.minimize(kernelSize:)](vimage/morphologyoperation/minimize(kernelsize:).md)
+- [vImage.MorphologyOperation.minimize(kernelSize:)](./minimize%28kernelsize%29.md)
   Minimizes using an implicit kernel of a specified size.
 
 

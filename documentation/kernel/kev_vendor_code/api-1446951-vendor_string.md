@@ -1,7 +1,8 @@
 # vendor_string
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A bundle style identifier.
 
@@ -10,13 +11,14 @@ A bundle style identifier.
 
 ## Declaration
 
-```swift
+```c
 char vendor_string[200];
 ```
 
 ## See Also
 
-- [vendor_code](kev_vendor_code/1446971-vendor_code.md)
+### Fields
+- [vendor_code](./api-1446971-vendor_code.md)
   After making the SIOCGKEVVENDOR ioctl call, this will be filled in with the vendor code if there is one.
 
 

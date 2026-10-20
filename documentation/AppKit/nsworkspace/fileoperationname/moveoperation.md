@@ -1,12 +1,15 @@
 # moveOperation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Move file to destination.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
+
+> **Deprecated**: Use -[NSFileManager moveItemAtURL:toURL:error:] instead.
 
 ## Declaration
 
@@ -14,29 +17,34 @@ Move file to destination.
 static let moveOperation: NSWorkspace.FileOperationName
 ```
 
+```c
+extern NSWorkspaceFileOperationName NSWorkspaceMoveOperation;
+```
+
 #### Discussion
 
-Behaves the same as [`moveItem(at:to:)`](https://developer.apple.com/documentation/foundation/filemanager/moveitem(at:to:)).
+Behaves the same as [`moveItem(at:to:)`](../../../Foundation/filemanager/moveitem%28at,to%29.md).
 
 ## See Also
 
-- [static let compressOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/compressoperation.md)
+### Type Properties
+- [static let compressOperation: NSWorkspace.FileOperationName](./compressoperation.md)
   Compress file. This operation always returns an error.
-- [static let copyOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/copyoperation.md)
+- [static let copyOperation: NSWorkspace.FileOperationName](./copyoperation.md)
   Copy file to destination.
-- [static let decompressOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/decompressoperation.md)
+- [static let decompressOperation: NSWorkspace.FileOperationName](./decompressoperation.md)
   Decompress file. This operation always returns an error.
-- [static let decryptOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/decryptoperation.md)
+- [static let decryptOperation: NSWorkspace.FileOperationName](./decryptoperation.md)
   Decrypt file. This operation always returns an error.
-- [static let destroyOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/destroyoperation.md)
+- [static let destroyOperation: NSWorkspace.FileOperationName](./destroyoperation.md)
   Destroy file.
-- [static let duplicateOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/duplicateoperation.md)
+- [static let duplicateOperation: NSWorkspace.FileOperationName](./duplicateoperation.md)
   Duplicate file in source directory.
-- [static let encryptOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/encryptoperation.md)
+- [static let encryptOperation: NSWorkspace.FileOperationName](./encryptoperation.md)
   Encrypt file. This operation always returns an error.
-- [static let linkOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/linkoperation.md)
+- [static let linkOperation: NSWorkspace.FileOperationName](./linkoperation.md)
   Create hard link to file in destination.
-- [static let recycleOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/recycleoperation.md)
+- [static let recycleOperation: NSWorkspace.FileOperationName](./recycleoperation.md)
   Move file to trash.
 
 

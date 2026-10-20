@@ -1,7 +1,8 @@
 # init(textureType:pixelFormat:width:height:depth:mipmapLevelCount:arrayLength:textureUsage:swizzle:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture descriptor with the specified texture type, pixel format, dimensions, mipmap count, array length, usage flags, and swizzle pattern.
 

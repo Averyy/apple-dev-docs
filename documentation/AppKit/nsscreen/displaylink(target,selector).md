@@ -1,7 +1,8 @@
 # displayLink(target:selector:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new display link whose callback will be invoked in-sync with the display the screen is on.
 
@@ -12,6 +13,10 @@ Returns a new display link whose callback will be invoked in-sync with the displ
 
 ```swift
 func displayLink(target: Any, selector: Selector) -> CADisplayLink
+```
+
+```objc
+- (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) selector;
 ```
 
 #### Discussion

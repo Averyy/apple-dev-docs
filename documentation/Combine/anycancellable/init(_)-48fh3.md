@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ init<C>(_ canceller: C) where C : Cancellable
 
 ## See Also
 
-- [init(() -> Void)](anycancellable/init(_:)-3icn3.md)
+### Creating a type-erased cancellable
+- [init(() -> Void)](./init%28_%29-3icn3.md)
   Initializes the cancellable object with the given cancel-time closure.
 
 

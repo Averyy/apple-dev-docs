@@ -1,7 +1,8 @@
 # kAXToolbarRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A toolbar.
 
@@ -12,6 +13,10 @@ A toolbar.
 
 ```swift
 var kAXToolbarRole: String { get }
+```
+
+```c
+#define kAXToolbarRole
 ```
 
 

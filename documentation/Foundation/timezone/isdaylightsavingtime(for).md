@@ -1,7 +1,8 @@
 # isDaylightSavingTime(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the receiver uses daylight saving time at a given date.
 
@@ -26,11 +27,12 @@ func isDaylightSavingTime(for date: Date = Date()) -> Bool
 
 ## See Also
 
-- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](timezone/daylightsavingtimeoffset(for:).md)
+### Working with Daylight Savings
+- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](./daylightsavingtimeoffset%28for%29.md)
   Returns the daylight saving time offset for a given date.
-- [var nextDaylightSavingTimeTransition: Date?](timezone/nextdaylightsavingtimetransition.md)
+- [var nextDaylightSavingTimeTransition: Date?](./nextdaylightsavingtimetransition.md)
   The date of the next (after the current instant) daylight saving time transition for the time zone.
-- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](timezone/nextdaylightsavingtimetransition(after:).md)
+- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](./nextdaylightsavingtimetransition%28after%29.md)
   Returns the next daylight saving time transition after a given date.
 
 

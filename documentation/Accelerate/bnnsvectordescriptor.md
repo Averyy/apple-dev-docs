@@ -1,21 +1,28 @@
 # BNNSVectorDescriptor
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 14.0
+- iPadOS 10.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- macOS 10.12+ - Deprecated in 11.0
+- tvOS 10.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 7.0
+
+> **Deprecated**: BNNS switched to new Layer Parameters data structures
 
 ## Declaration
 
 ```swift
 struct BNNSVectorDescriptor
+```
+
+```c
+typedef struct { ... } BNNSVectorDescriptor;
 ```
 
 #### Overview
@@ -31,31 +38,32 @@ Int types are converted to floating point using float Y = DATA_SCALE * (float)X 
 ## Topics
 
 ### Initializers
-- [init()](bnnsvectordescriptor/init.md)
-- [init(size: Int, data_type: BNNSDataType)](bnnsvectordescriptor/init(size:data_type:).md)
-- [init(size: Int, data_type: BNNSDataType, data_scale: Float, data_bias: Float)](bnnsvectordescriptor/init(size:data_type:data_scale:data_bias:).md)
+- [init()](./bnnsvectordescriptor/init%28%29.md)
+- [init(size: Int, data_type: BNNSDataType)](./bnnsvectordescriptor/init%28size,data_type%29.md)
+- [init(size: Int, data_type: BNNSDataType, data_scale: Float, data_bias: Float)](./bnnsvectordescriptor/init%28size,data_type,data_scale,data_bias%29.md)
 ### Instance Properties
-- [var data_bias: Float](bnnsvectordescriptor/data_bias.md)
-- [var data_scale: Float](bnnsvectordescriptor/data_scale.md)
-- [var data_type: BNNSDataType](bnnsvectordescriptor/data_type.md)
-- [var size: Int](bnnsvectordescriptor/size.md)
+- [var data_bias: Float](./bnnsvectordescriptor/data_bias.md)
+- [var data_scale: Float](./bnnsvectordescriptor/data_scale.md)
+- [var data_type: BNNSDataType](./bnnsvectordescriptor/data_type.md)
+- [var size: Int](./bnnsvectordescriptor/size.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct BNNSDataType](bnnsdatatype.md)
+### Structures
+- [struct BNNSDataType](./bnnsdatatype.md)
   BNNS Data Types.
-- [struct BNNSSparsityParameters](bnnssparsityparameters.md)
-- [struct BNNSSparsityType](bnnssparsitytype.md)
-- [struct BNNSTargetSystem](bnnstargetsystem.md)
-- [struct bnns_graph_argument_t](bnns_graph_argument_t.md)
+- [struct BNNSSparsityParameters](./bnnssparsityparameters.md)
+- [struct BNNSSparsityType](./bnnssparsitytype.md)
+- [struct BNNSTargetSystem](./bnnstargetsystem.md)
+- [struct bnns_graph_argument_t](./bnns_graph_argument_t.md)
   Describes data associated with an input or output argument
-- [struct BNNSImageStackDescriptor](bnnsimagestackdescriptor.md)
+- [struct BNNSImageStackDescriptor](./bnnsimagestackdescriptor.md)
 
 
 ---

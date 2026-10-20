@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A system symbol for the element.
@@ -18,6 +19,10 @@ A system symbol for the element.
 
 ```swift
 var sfSymbolsName: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * sfSymbolsName;
 ```
 
 

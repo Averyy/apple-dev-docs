@@ -1,7 +1,8 @@
 # textFinderCaseInsensitiveKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value indicating whether the search is case insensitive.
 
@@ -14,13 +15,18 @@ A Boolean value indicating whether the search is case insensitive.
 static let textFinderCaseInsensitiveKey: NSPasteboard.PasteboardType.TextFinderOptionKey
 ```
 
+```c
+extern NSPasteboardTypeTextFinderOptionKey const NSTextFinderCaseInsensitiveKey;
+```
+
 #### Discussion
 
-The value of this key must be an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing a Boolean value. The value [`true`](https://developer.apple.com/documentation/swift/true) indicates a case-insensitive search; [`false`](https://developer.apple.com/documentation/swift/false) indicates a case-sensitive search.
+The value of this key must be an [`NSValue`](../../../../Foundation/nsvalue.md) object containing a Boolean value. The value [`true`](../../../../Swift/true.md) indicates a case-insensitive search; [`false`](../../../../Swift/false.md) indicates a case-sensitive search.
 
 ## See Also
 
-- [static let textFinderMatchingTypeKey: NSPasteboard.PasteboardType.TextFinderOptionKey](nspasteboard/pasteboardtype/textfinderoptionkey/textfindermatchingtypekey.md)
+### Option Keys
+- [static let textFinderMatchingTypeKey: NSPasteboard.PasteboardType.TextFinderOptionKey](./textfindermatchingtypekey.md)
   A number object containing the match type to use.
 
 

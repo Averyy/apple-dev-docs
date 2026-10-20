@@ -1,7 +1,8 @@
 # toolbarTitleMenu(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure the title menu of a toolbar.
 
@@ -23,7 +24,7 @@ func toolbarTitleMenu<C>(@ContentBuilder content: () -> C) -> some View where C 
 
 #### Discussion
 
-A title menu represent common functionality that can be done on the content represented by your app’s toolbar or navigation title. This menu may be populated from your app’s commands like [`saveItem`](commandgroupplacement/saveitem.md) or [`printItem`](commandgroupplacement/printitem.md).
+A title menu represent common functionality that can be done on the content represented by your app’s toolbar or navigation title. This menu may be populated from your app’s commands like [`saveItem`](../commandgroupplacement/saveitem.md) or [`printItem`](../commandgroupplacement/printitem.md).
 
 ```swift
 ContentView()
@@ -50,7 +51,8 @@ In iOS and iPadOS, this will construct a menu that can be presented by tapping t
 
 ## See Also
 
-- [struct ToolbarTitleMenu](toolbartitlemenu.md)
+### Setting the toolbar title menu
+- [struct ToolbarTitleMenu](../toolbartitlemenu.md)
   The title menu of a toolbar.
 
 

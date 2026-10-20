@@ -1,14 +1,15 @@
 # notify_port_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef mach_port_t notify_port_t;
 ```
 

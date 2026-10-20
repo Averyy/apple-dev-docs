@@ -1,7 +1,8 @@
 # input
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input vertex data for this deformation.
 
@@ -19,15 +20,16 @@ final var input: LowLevelDeformation.Mesh { get }
 
 ## See Also
 
-- [var output: LowLevelDeformation.Mesh](lowleveldeformation/output.md)
+### Accessing mesh data
+- [var output: LowLevelDeformation.Mesh](./output.md)
   The output vertex data for this deformation.
-- [LowLevelDeformation.Mesh](lowleveldeformation/mesh.md)
-  A handle to the input or output vertex data of a [`LowLevelDeformation`](lowleveldeformation.md).
-- [var vertexCount: Int](lowleveldeformation/vertexcount.md)
+- [LowLevelDeformation.Mesh](./mesh.md)
+  A handle to the input or output vertex data of a [`LowLevelDeformation`](../lowleveldeformation.md).
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the mesh.
-- [LowLevelDeformation.VertexSemantic](lowleveldeformation/vertexsemantic.md)
+- [LowLevelDeformation.VertexSemantic](./vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
-- [LowLevelDeformation.VertexAttribute](lowleveldeformation/vertexattribute.md)
+- [LowLevelDeformation.VertexAttribute](./vertexattribute.md)
   An object that describes the format and stride of a single vertex attribute.
 
 

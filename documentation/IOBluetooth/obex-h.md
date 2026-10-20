@@ -1,6 +1,7 @@
 # OBEX.h
 
-**Framework**: IOBluetooth
+**Framework**: IOBluetooth  
+**Role**: API Collection
 
 Public OBEX technology interfaces.
 
@@ -20,118 +21,119 @@ The file also contains API that will assist in the construction and deconstructi
 ## Topics
 
 ### Miscellaneous
-- [func OBEXAddApplicationParameterHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddapplicationparameterheader(_:_:_:).md)
+- [func OBEXAddApplicationParameterHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddapplicationparameterheader%28_,_,_%29.md)
   Add bytes representing an application parameter to a dictionary of OBEX headers.
-- [func OBEXAddAuthorizationChallengeHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddauthorizationchallengeheader(_:_:_:).md)
+- [func OBEXAddAuthorizationChallengeHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddauthorizationchallengeheader%28_,_,_%29.md)
   Add an authorization challenge header to a dictionary of OBEXheaders.
-- [func OBEXAddAuthorizationResponseHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddauthorizationresponseheader(_:_:_:).md)
+- [func OBEXAddAuthorizationResponseHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddauthorizationresponseheader%28_,_,_%29.md)
   Add an authorization Response header to a dictionary of OBEXheaders.
-- [func OBEXAddBodyHeader(UnsafeRawPointer!, UInt32, Bool, CFMutableDictionary!) -> OBEXError](obexaddbodyheader(_:_:_:_:).md)
+- [func OBEXAddBodyHeader(UnsafeRawPointer!, UInt32, Bool, CFMutableDictionary!) -> OBEXError](./obexaddbodyheader%28_,_,_,_%29.md)
   Add bytes of data to a dictionary of OBEXheaders.
-- [func OBEXAddByteSequenceHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddbytesequenceheader(_:_:_:).md)
+- [func OBEXAddByteSequenceHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddbytesequenceheader%28_,_,_%29.md)
   Add a byte sequence header to a dictionary of OBEXheaders.
-- [func OBEXAddConnectionIDHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddconnectionidheader(_:_:_:).md)
+- [func OBEXAddConnectionIDHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddconnectionidheader%28_,_,_%29.md)
   Add bytes representing a connection ID to a dictionary of OBEX headers.
-- [func OBEXAddCountHeader(UInt32, CFMutableDictionary!) -> OBEXError](obexaddcountheader(_:_:).md)
+- [func OBEXAddCountHeader(UInt32, CFMutableDictionary!) -> OBEXError](./obexaddcountheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
-- [func OBEXAddDescriptionHeader(CFString!, CFMutableDictionary!) -> OBEXError](obexadddescriptionheader(_:_:).md)
+- [func OBEXAddDescriptionHeader(CFString!, CFMutableDictionary!) -> OBEXError](./obexadddescriptionheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
-- [func OBEXAddHTTPHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddhttpheader(_:_:_:).md)
+- [func OBEXAddHTTPHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddhttpheader%28_,_,_%29.md)
   Add bytes of data to a dictionary of OBEXheaders.
-- [func OBEXAddLengthHeader(UInt32, CFMutableDictionary!) -> OBEXError](obexaddlengthheader(_:_:).md)
+- [func OBEXAddLengthHeader(UInt32, CFMutableDictionary!) -> OBEXError](./obexaddlengthheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
-- [func OBEXAddNameHeader(CFString!, CFMutableDictionary!) -> OBEXError](obexaddnameheader(_:_:).md)
+- [func OBEXAddNameHeader(CFString!, CFMutableDictionary!) -> OBEXError](./obexaddnameheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
-- [func OBEXAddObjectClassHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddobjectclassheader(_:_:_:).md)
+- [func OBEXAddObjectClassHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddobjectclassheader%28_,_,_%29.md)
   Add an object class header to a dictionary of OBEXheaders.
-- [func OBEXAddTargetHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddtargetheader(_:_:_:).md)
+- [func OBEXAddTargetHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddtargetheader%28_,_,_%29.md)
   Add bytes of data to a dictionary of OBEXheaders.
-- [func OBEXAddTime4ByteHeader(UInt32, CFMutableDictionary!) -> OBEXError](obexaddtime4byteheader(_:_:).md)
+- [func OBEXAddTime4ByteHeader(UInt32, CFMutableDictionary!) -> OBEXError](./obexaddtime4byteheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
-- [func OBEXAddTimeISOHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddtimeisoheader(_:_:_:).md)
+- [func OBEXAddTimeISOHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddtimeisoheader%28_,_,_%29.md)
   Add bytes to a dictionary of OBEXheaders.
-- [func OBEXAddTypeHeader(CFString!, CFMutableDictionary!) -> OBEXError](obexaddtypeheader(_:_:).md)
+- [func OBEXAddTypeHeader(CFString!, CFMutableDictionary!) -> OBEXError](./obexaddtypeheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
-- [func OBEXAddUserDefinedHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexadduserdefinedheader(_:_:_:).md)
+- [func OBEXAddUserDefinedHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexadduserdefinedheader%28_,_,_%29.md)
   Add a user-defined custom header to a dictionary of OBEXheaders.
-- [func OBEXAddWhoHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](obexaddwhoheader(_:_:_:).md)
+- [func OBEXAddWhoHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddwhoheader%28_,_,_%29.md)
   Add bytes of data to a dictionary of OBEXheaders.
-- [func OBEXGetHeaders(UnsafeRawPointer!, Int) -> CFDictionary!](obexgetheaders(_:_:).md)
+- [func OBEXGetHeaders(UnsafeRawPointer!, Int) -> CFDictionary!](./obexgetheaders%28_,_%29.md)
   Take a data blob and looks for OBEX headers.
-- [func OBEXHeadersToBytes(CFDictionary!) -> Unmanaged<CFMutableData>!](obexheaderstobytes(_:).md)
+- [func OBEXHeadersToBytes(CFDictionary!) -> Unmanaged<CFMutableData>!](./obexheaderstobytes%28_%29.md)
   Converts a dictionary of headers to a data pointer, from which you can extract as bytes and pass to the OBEX command/response functions.
 ### Data Types
-- [struct OBEXSessionEvent](obexsessionevent.md)
-- [struct OBEXAbortCommandData](obexabortcommanddata.md)
+- [struct OBEXSessionEvent](./obexsessionevent.md)
+- [struct OBEXAbortCommandData](./obexabortcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXAbortCommandResponseData](obexabortcommandresponsedata.md)
+- [struct OBEXAbortCommandResponseData](./obexabortcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandData](obexconnectcommanddata.md)
+- [struct OBEXConnectCommandData](./obexconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandResponseData](obexconnectcommandresponsedata.md)
+- [struct OBEXConnectCommandResponseData](./obexconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandData](obexdisconnectcommanddata.md)
+- [struct OBEXDisconnectCommandData](./obexdisconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandResponseData](obexdisconnectcommandresponsedata.md)
+- [struct OBEXDisconnectCommandResponseData](./obexdisconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXErrorData](obexerrordata.md)
+- [struct OBEXErrorData](./obexerrordata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandData](obexgetcommanddata.md)
+- [struct OBEXGetCommandData](./obexgetcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandResponseData](obexgetcommandresponsedata.md)
+- [struct OBEXGetCommandResponseData](./obexgetcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandData](obexputcommanddata.md)
+- [struct OBEXPutCommandData](./obexputcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandResponseData](obexputcommandresponsedata.md)
+- [struct OBEXPutCommandResponseData](./obexputcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandData](obexsetpathcommanddata.md)
+- [struct OBEXSetPathCommandData](./obexsetpathcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandResponseData](obexsetpathcommandresponsedata.md)
+- [struct OBEXSetPathCommandResponseData](./obexsetpathcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
 ### Constants
-- [struct OBEXConnectFlagValues](obexconnectflagvalues.md)
+- [struct OBEXConnectFlagValues](./obexconnectflagvalues.md)
   Flags for Connect command.
-- [typealias OBEXError](obexerror.md)
+- [typealias OBEXError](./obexerror.md)
   Codes for OBEX errors. If the return value was not in the following range, then it is most likely resulting from kernel code/IOKit, and you should consult IOReturn.h for those codes.
-- [struct OBEXHeaderIdentifiers](obexheaderidentifiers.md)
+- [struct OBEXHeaderIdentifiers](./obexheaderidentifiers.md)
   Identifiers for OBEX Headers.
-- [struct OBEXNonceFlagValues](obexnonceflagvalues.md)
+- [struct OBEXNonceFlagValues](./obexnonceflagvalues.md)
   Flags for Nonce command during digest challenge.
-- [struct OBEXOpCodeCommandValues](obexopcodecommandvalues.md)
+- [struct OBEXOpCodeCommandValues](./obexopcodecommandvalues.md)
   Operation OpCode values for commands.
-- [struct OBEXOpCodeResponseValues](obexopcoderesponsevalues.md)
+- [struct OBEXOpCodeResponseValues](./obexopcoderesponsevalues.md)
   Response opCode values.
-- [struct OBEXOpCodeSessionValues](obexopcodesessionvalues.md)
+- [struct OBEXOpCodeSessionValues](./obexopcodesessionvalues.md)
   Operation OpCode values for sessions. From the OBEX 1.3 specification.
-- [struct OBEXPutFlagValues](obexputflagvalues.md)
-- [struct OBEXRealmValues](obexrealmvalues.md)
+- [struct OBEXPutFlagValues](./obexputflagvalues.md)
+- [struct OBEXRealmValues](./obexrealmvalues.md)
   Values for Realm during digest response.
-- [struct OBEXSessionEventTypes](obexsessioneventtypes.md)
+- [struct OBEXSessionEventTypes](./obexsessioneventtypes.md)
   Type identifiers for OBEX sessions.
-- [struct OBEXSessionParameterTags](obexsessionparametertags.md)
+- [struct OBEXSessionParameterTags](./obexsessionparametertags.md)
   Tags for SessionParameters.
-- [struct OBEXVersions](obexversions.md)
+- [struct OBEXVersions](./obexversions.md)
   The available/supported OBEX versions.
 ### Macros
-- [OBEX Convenience Macros](obex-convenience-macros.md)
+- [OBEX Convenience Macros](./obex-convenience-macros.md)
   Convenience Macros for working with OBEX Header Identifiers.
 
 ## See Also
 
-- [Bluetooth.h User-Space](bluetooth-h-user-space.md)
+### Reference
+- [Bluetooth.h User-Space](./bluetooth-h-user-space.md)
   Bluetooth wireless technology
-- [IOBluetoothUserLib.h](iobluetoothuserlib-h.md)
+- [IOBluetoothUserLib.h](./iobluetoothuserlib-h.md)
   Public Interfaces for Apple’s implementation of Bluetooth technology.
-- [IOBluetoothUtilities.h](iobluetoothutilities-h.md)
+- [IOBluetoothUtilities.h](./iobluetoothutilities-h.md)
   See the Overview section above for header-level documentation.
-- [OBEXBluetooth.h](obexbluetooth-h.md)
+- [OBEXBluetooth.h](./obexbluetooth-h.md)
   Object Exchange over Bluetooth.
-- [OBEXFileTransferServices.h](obexfiletransferservices-h.md)
-- [IOBluetooth Structures](iobluetooth-structures.md)
-- [IOBluetooth Enumerations](iobluetooth-enumerations.md)
-- [IOBluetooth Constants](iobluetooth-constants.md)
-- [IOBluetooth Functions](iobluetooth-functions.md)
-- [IOBluetooth Data Types](iobluetooth-data-types.md)
+- [OBEXFileTransferServices.h](./obexfiletransferservices-h.md)
+- [IOBluetooth Structures](./iobluetooth-structures.md)
+- [IOBluetooth Enumerations](./iobluetooth-enumerations.md)
+- [IOBluetooth Constants](./iobluetooth-constants.md)
+- [IOBluetooth Functions](./iobluetooth-functions.md)
+- [IOBluetooth Data Types](./iobluetooth-data-types.md)
 
 
 ---

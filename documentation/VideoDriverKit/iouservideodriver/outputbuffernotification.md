@@ -1,20 +1,22 @@
 # OutputBufferNotification
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t OutputBufferNotification(IOUserVideoObjectID in_device_id, uint64_t in_change_action, IOUserVideoObjectID in_stream_id);
 ```
 
 ## See Also
 
-- [BufferQueueChange](iouservideodriver/bufferqueuechange.md)
+### Working with buffers
+- [BufferQueueChange](./bufferqueuechange.md)
 
 
 ---

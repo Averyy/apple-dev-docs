@@ -1,7 +1,8 @@
 # kCMIOSelectorControlPropertyCurrentItem
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,16 @@
 var kCMIOSelectorControlPropertyCurrentItem: Int { get }
 ```
 
+```c
+kCMIOSelectorControlPropertyCurrentItem
+```
+
 ## See Also
 
-- [var kCMIOSelectorControlPropertyAvailableItems: Int](kcmioselectorcontrolpropertyavailableitems.md)
-- [var kCMIOSelectorControlPropertyItemName: Int](kcmioselectorcontrolpropertyitemname.md)
-- [var kCMIOSelectorControlPropertyAvailableItemNames: Int](kcmioselectorcontrolpropertyavailableitemnames.md)
+### Constants
+- [var kCMIOSelectorControlPropertyAvailableItems: Int](./kcmioselectorcontrolpropertyavailableitems.md)
+- [var kCMIOSelectorControlPropertyItemName: Int](./kcmioselectorcontrolpropertyitemname.md)
+- [var kCMIOSelectorControlPropertyAvailableItemNames: Int](./kcmioselectorcontrolpropertyavailableitemnames.md)
 
 
 ---

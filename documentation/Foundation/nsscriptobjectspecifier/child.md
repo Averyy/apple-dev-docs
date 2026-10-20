@@ -1,7 +1,8 @@
 # child
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the receiver’s child reference.
 
@@ -15,9 +16,13 @@ Sets the receiver’s child reference.
 unowned(unsafe) var child: NSScriptObjectSpecifier? { get set }
 ```
 
+```objc
+@property (assign, nullable) NSScriptObjectSpecifier * childSpecifier;
+```
+
 #### Discussion
 
-Do not invoke this method directly; it is automatically invoked by [`container`](nsscriptobjectspecifier/container.md).
+Do not invoke this method directly; it is automatically invoked by [`container`](./container.md).
 
 ## Parameters
 

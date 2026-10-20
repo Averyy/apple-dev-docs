@@ -1,9 +1,10 @@
 # init(for:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a target shape that is compatible with the given [`ClothBodyComponent`](clothbodycomponent.md).
+Creates a target shape that is compatible with the given [`ClothBodyComponent`](../../clothbodycomponent.md).
 
 **Availability**:
 - iOS 27.0+

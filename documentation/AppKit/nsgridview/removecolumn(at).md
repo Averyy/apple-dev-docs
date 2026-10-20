@@ -1,7 +1,8 @@
 # removeColumn(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the column from the grid view at the specified index.
 
@@ -14,13 +15,18 @@ Removes the column from the grid view at the specified index.
 func removeColumn(at index: Int)
 ```
 
+```objc
+- (void) removeColumnAtIndex:(NSInteger) index;
+```
+
 ## See Also
 
-- [func addColumn(with: [NSView]) -> NSGridColumn](nsgridview/addcolumn(with:).md)
+### Adding, Removing, and Moving Columns
+- [func addColumn(with: [NSView]) -> NSGridColumn](./addcolumn%28with%29.md)
   Adds a new column containing the array of views.
-- [func insertColumn(at: Int, with: [NSView]) -> NSGridColumn](nsgridview/insertcolumn(at:with:).md)
+- [func insertColumn(at: Int, with: [NSView]) -> NSGridColumn](./insertcolumn%28at,with%29.md)
   Inserts the array of view objects at the specified index.
-- [func moveColumn(at: Int, to: Int)](nsgridview/movecolumn(at:to:).md)
+- [func moveColumn(at: Int, to: Int)](./movecolumn%28at,to%29.md)
   Moves the specified column to a new column location.
 
 

@@ -1,7 +1,8 @@
 # init(point:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value object containing the specified Foundation point structure.
 
@@ -15,6 +16,10 @@ Creates a new value object containing the specified Foundation point structure.
 init(point: NSPoint)
 ```
 
+```objc
++ (NSValue *) valueWithPoint:(NSPoint) point;
+```
+
 #### Return Value
 
 A new value object that contains the point information.
@@ -25,17 +30,19 @@ A new value object that contains the point information.
 
 ## See Also
 
-- [typealias NSPoint](nspoint.md)
+### Related Documentation
+- [typealias NSPoint](../nspoint.md)
   A point in a Cartesian coordinate system.
-- [init(size: NSSize)](nsvalue/init(size:).md)
+### Working with Foundation Geometry Values
+- [init(size: NSSize)](./init%28size%29.md)
   Creates a new value object containing the specified Foundation size structure.
-- [init(rect: NSRect)](nsvalue/init(rect:).md)
+- [init(rect: NSRect)](./init%28rect%29.md)
   Creates a new value object containing the specified Foundation rectangle structure.
-- [var pointValue: NSPoint](nsvalue/pointvalue.md)
+- [var pointValue: NSPoint](./pointvalue.md)
   The Foundation point structure representation of the value.
-- [var sizeValue: NSSize](nsvalue/sizevalue.md)
+- [var sizeValue: NSSize](./sizevalue.md)
   The Foundation size structure representation of the value.
-- [var rectValue: NSRect](nsvalue/rectvalue.md)
+- [var rectValue: NSRect](./rectvalue.md)
   The Foundation rectangle structure representation of the value.
 
 

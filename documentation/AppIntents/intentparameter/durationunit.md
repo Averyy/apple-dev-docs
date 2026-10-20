@@ -1,7 +1,8 @@
 # IntentParameter.DurationUnit
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -18,26 +19,28 @@
 enum DurationUnit
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Duration`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.DurationUnit.hours](intentparameter/durationunit/hours.md)
-- [IntentParameter.DurationUnit.microseconds](intentparameter/durationunit/microseconds.md)
-- [IntentParameter.DurationUnit.milliseconds](intentparameter/durationunit/milliseconds.md)
-- [IntentParameter.DurationUnit.minutes](intentparameter/durationunit/minutes.md)
-- [IntentParameter.DurationUnit.nanoseconds](intentparameter/durationunit/nanoseconds.md)
-- [IntentParameter.DurationUnit.picoseconds](intentparameter/durationunit/picoseconds.md)
-- [IntentParameter.DurationUnit.seconds](intentparameter/durationunit/seconds.md)
+- [IntentParameter.DurationUnit.hours](./durationunit/hours.md)
+- [IntentParameter.DurationUnit.microseconds](./durationunit/microseconds.md)
+- [IntentParameter.DurationUnit.milliseconds](./durationunit/milliseconds.md)
+- [IntentParameter.DurationUnit.minutes](./durationunit/minutes.md)
+- [IntentParameter.DurationUnit.nanoseconds](./durationunit/nanoseconds.md)
+- [IntentParameter.DurationUnit.picoseconds](./durationunit/picoseconds.md)
+- [IntentParameter.DurationUnit.seconds](./durationunit/seconds.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

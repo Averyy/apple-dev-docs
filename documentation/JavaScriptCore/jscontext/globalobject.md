@@ -1,7 +1,8 @@
 # globalObject
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The JavaScript global object associated with the context.
 
@@ -19,21 +20,26 @@ The JavaScript global object associated with the context.
 var globalObject: JSValue! { get }
 ```
 
+```objc
+@property (strong, readonly) JSValue * globalObject;
+```
+
 #### Discussion
 
-In a web browser, the global object of a JavaScript context is the browser window (the `window` object in JavaScript). Outside of web-browser use, a context’s global object serves a similar role, separating the JavaScript namespaces of different contexts. Global variables within a script appear as fields or subscripts in the global object—you can access them either through this [`JSValue`](jsvalue.md) object or through the methods listed in the Accessing JavaScript global state with subscripts section in [`JSContext`](jscontext.md).
+In a web browser, the global object of a JavaScript context is the browser window (the `window` object in JavaScript). Outside of web-browser use, a context’s global object serves a similar role, separating the JavaScript namespaces of different contexts. Global variables within a script appear as fields or subscripts in the global object—you can access them either through this [`JSValue`](../jsvalue.md) object or through the methods listed in the Accessing JavaScript global state with subscripts section in [`JSContext`](../jscontext.md).
 
-> **Note**:  For [`JSContext`](jscontext.md) instances originating in WebKit, this method returns a reference to the `WindowProxy` object.
+> **Note**:  For [`JSContext`](../jscontext.md) instances originating in WebKit, this method returns a reference to the `WindowProxy` object.
 
 ## See Also
 
-- [var exception: JSValue!](jscontext/exception.md)
+### Working with JavaScript global state
+- [var exception: JSValue!](./exception.md)
   A JavaScript exception to be thrown in evaluation of the script.
-- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](jscontext/exceptionhandler.md)
+- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](./exceptionhandler.md)
   A block to be invoked should evaluating a script result in a JavaScript exception being thrown.
-- [var virtualMachine: JSVirtualMachine!](jscontext/virtualmachine.md)
+- [var virtualMachine: JSVirtualMachine!](./virtualmachine.md)
   The JavaScript virtual machine to which the context belongs.
-- [var name: String!](jscontext/name.md)
+- [var name: String!](./name.md)
   A descriptive name for the context.
 
 

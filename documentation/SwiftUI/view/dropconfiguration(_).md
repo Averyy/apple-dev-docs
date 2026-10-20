@@ -1,7 +1,8 @@
 # dropConfiguration(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures a drop session.
 
@@ -48,17 +49,18 @@ Below is an example of a view that accepts drop of `Image` type. The view prefer
 
 ## See Also
 
-- [func dragConfiguration(DragConfiguration) -> some View](view/dragconfiguration(_:).md)
+### Configuring drag-and-drop behavior
+- [func dragConfiguration(DragConfiguration) -> some View](./dragconfiguration%28_%29.md)
   Configures a drag session.
-- [struct DragConfiguration](dragconfiguration.md)
+- [struct DragConfiguration](../dragconfiguration.md)
   The behavior of the drag, proposed by the dragging source. A value that describes the drag operations a drag source supports.
-- [struct DropConfiguration](dropconfiguration.md)
+- [struct DropConfiguration](../dropconfiguration.md)
   Describes the behavior of the drop.
-- [func dragContainer(for:in:_:)](view/dragcontainer(for:in:_:).md)
+- [func dragContainer(for:in:_:)](./dragcontainer%28for,in,_%29.md)
   A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
-- [func dragContainer(for:itemID:in:_:)](view/dragcontainer(for:itemid:in:_:).md)
+- [func dragContainer(for:itemID:in:_:)](./dragcontainer%28for,itemid,in,_%29.md)
   A container with draggable views.
-- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](view/dragcontainerselection(_:containernamespace:).md)
+- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](./dragcontainerselection%28_,containernamespace%29.md)
   Provides multiple item selection support for drag containers.
 
 

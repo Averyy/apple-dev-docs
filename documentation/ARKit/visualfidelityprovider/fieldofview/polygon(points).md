@@ -1,7 +1,8 @@
 # polygon(points:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a polygon-based field of view.
 

@@ -1,7 +1,8 @@
 # didSelectCancel()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the compose view after the cancel animation finishes.
 
@@ -17,15 +18,20 @@ Sent to the compose view after the cancel animation finishes.
 func didSelectCancel()
 ```
 
+```objc
+- (void) didSelectCancel;
+```
+
 #### Discussion
 
-By default, this method calls the completeRequestReturningItems: method of the associated [`extensionContext`](https://developer.apple.com/documentation/uikit/uiviewcontroller/extensioncontext) property, passing the appropriate error value in the `items` array and a `nil` expiration.
+By default, this method calls the completeRequestReturningItems: method of the associated [`extensionContext`](../../UIKit/uiviewcontroller/extensioncontext.md) property, passing the appropriate error value in the `items` array and a `nil` expiration.
 
 ## See Also
 
-- [func presentationAnimationDidFinish()](slcomposeserviceviewcontroller/presentationanimationdidfinish.md)
+### Responding to Lifecycle Events
+- [func presentationAnimationDidFinish()](./presentationanimationdidfinish%28%29.md)
   Tells the compose view controller that the presentation animation is finished.
-- [func didSelectPost()](slcomposeserviceviewcontroller/didselectpost.md)
+- [func didSelectPost()](./didselectpost%28%29.md)
   Sent to the compose view after the post animation finishes.
 
 

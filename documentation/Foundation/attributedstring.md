@@ -1,7 +1,8 @@
 # AttributedString
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value type for a string with associated attributes for portions of its text.
 
@@ -29,7 +30,7 @@ Attributed strings are character strings that have attributes for individual cha
 
 You can apply an attribute to an entire string, or to a range within the string. The string represents each range with consistent attributes as a *run*.
 
-[`AttributedString`](attributedstring.md) uses subscripts and dynamic member lookup to simplify working with attributes from your call points. In its most verbose form, you set an attribute by creating an [`AttributeContainer`](attributecontainer.md) and merging it into an existing attributed string, like this:
+[`AttributedString`](./attributedstring.md) uses subscripts and dynamic member lookup to simplify working with attributes from your call points. In its most verbose form, you set an attribute by creating an [`AttributeContainer`](./attributecontainer.md) and merging it into an existing attributed string, like this:
 
 ```swift
 var attributedString = AttributedString("This is a string with empty attributes.")
@@ -38,19 +39,19 @@ container[AttributeScopes.AppKitAttributes.ForegroundColorAttribute.self] = .red
 attributedString.mergeAttributes(container, mergePolicy: .keepNew)
 ```
 
-Using the attributed string’s [`subscript(_:)`](attributedstringprotocol/subscript(_:)-4thnp.md) method, you can omit the explicit use of an [`AttributeContainer`](attributecontainer.md) and just set the attribute by its type:
+Using the attributed string’s [`subscript(_:)`](./attributedstringprotocol/subscript%28_%29-4thnp.md) method, you can omit the explicit use of an [`AttributeContainer`](./attributecontainer.md) and just set the attribute by its type:
 
 ```swift
 attributedString[AttributeScopes.AppKitAttributes.ForegroundColorAttribute.self] = .yellow
 ```
 
-Because an [`AttributedString`](attributedstring.md) supports dynamic member lookup — as described under [`Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Attributes.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) — you can access its subscripts with dot syntax instead. When combined with properties like [`foregroundColor`](attributescopes/appkitattributes/foregroundcolor.md) that return the attribute key type, this final form offers a natural way to set an attribute that applies to an entire string:
+Because an [`AttributedString`](./attributedstring.md) supports dynamic member lookup — as described under [Attributes](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) — you can access its subscripts with dot syntax instead. When combined with properties like [`foregroundColor`](./attributescopes/appkitattributes/foregroundcolor.md) that return the attribute key type, this final form offers a natural way to set an attribute that applies to an entire string:
 
 ```swift
 attributedString.foregroundColor = .green
 ```
 
-This example works because AppKit defines an [`AttributeScope`](attributescope.md), [`AttributeScopes.AppKitAttributes`](attributescopes/appkitattributes.md), in which the property [`foregroundColor`](attributescopes/appkitattributes/foregroundcolor.md) returns the type `AttributeScopes.AppKitAttributes.ForegroundColorAttribute`. Because AppKit’s attribute scope implements [`AttributeDynamicLookup`](attributedynamiclookup.md), the dot syntax resolves to an equivalent subscript expression, allowing `attributedString.foregroundColor` to replace `attributedString[AttributeScopes.AppKitAttributes.ForegroundColorAttribute.self]`.
+This example works because AppKit defines an [`AttributeScope`](./attributescope.md), [`AttributeScopes.AppKitAttributes`](./attributescopes/appkitattributes.md), in which the property [`foregroundColor`](./attributescopes/appkitattributes/foregroundcolor.md) returns the type `AttributeScopes.AppKitAttributes.ForegroundColorAttribute`. Because AppKit’s attribute scope implements [`AttributeDynamicLookup`](./attributedynamiclookup.md), the dot syntax resolves to an equivalent subscript expression, allowing `attributedString.foregroundColor` to replace `attributedString[AttributeScopes.AppKitAttributes.ForegroundColorAttribute.self]`.
 
 You can also set an attribute to apply only to part of an attributed string, by applying the attribute to a range, as seen here:
 
@@ -60,13 +61,13 @@ guard let range = attributedString.range(of: "free") else {return}
 attributedString[range].foregroundColor = .green
 ```
 
-You can access portions of the string with unique combinations of attributes by iterating over the string’s [`runs`](attributedstring/runs-swift.property.md) property.
+You can access portions of the string with unique combinations of attributes by iterating over the string’s [`runs`](./attributedstring/runs-swift.property.md) property.
 
-You can define your own custom attributes by creating types that conform to [`AttributedStringKey`](attributedstringkey.md), and collecting them in an [`AttributeScope`](attributescope.md). Custom keys should also extend [`AttributeDynamicLookup`](attributedynamiclookup.md), so callers can use dot-syntax to access the attribute.
+You can define your own custom attributes by creating types that conform to [`AttributedStringKey`](./attributedstringkey.md), and collecting them in an [`AttributeScope`](./attributescope.md). Custom keys should also extend [`AttributeDynamicLookup`](./attributedynamiclookup.md), so callers can use dot-syntax to access the attribute.
 
 ##### Creating Attributed Strings with Markdown
 
-You can create an attributed string by passing a standard [`String`](https://developer.apple.com/documentation/swift/string) or [`Data`](data.md) instance that contains Markdown to initializers like [`init(markdown:options:baseURL:)`](attributedstring/init(markdown:options:baseurl:)-52n3u.md). The attributed string creates attributes by parsing the markup in the string.
+You can create an attributed string by passing a standard [`String`](../Swift/string.md) or [`Data`](./data.md) instance that contains Markdown to initializers like [`init(markdown:options:baseURL:)`](./attributedstring/init%28markdown,options,baseurl%29-52n3u.md). The attributed string creates attributes by parsing the markup in the string.
 
 ```swift
 do {
@@ -77,285 +78,286 @@ do {
 }
 ```
 
-Localized strings that you load from strings files with initializers like [`init(localized:options:table:bundle:locale:comment:)`](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md) can also contain Markdown to add styling. In addition, these localized attributed string initializers can apply the [`replacementIndex`](attributescopes/foundationattributes/replacementindex.md) attribute, which allows you to determine the range of replacement strings, whose order may vary between languages.
+Localized strings that you load from strings files with initializers like [`init(localized:options:table:bundle:locale:comment:)`](./attributedstring/init%28localized,options,table,bundle,locale,comment%29-8dlnl.md) can also contain Markdown to add styling. In addition, these localized attributed string initializers can apply the [`replacementIndex`](./attributescopes/foundationattributes/replacementindex.md) attribute, which allows you to determine the range of replacement strings, whose order may vary between languages.
 
-By declaring new attributes that conform to [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md), you can add attributes that you invoke by using Apple’s Markdown extension syntax: `^[text](name:value, name:value, …)`. See the sample code project [`Building a Localized Food-Ordering App`](building-a-localized-food-ordering-app.md) for an example of creating custom attributes and using them with Markdown.
+By declaring new attributes that conform to [`MarkdownDecodableAttributedStringKey`](./markdowndecodableattributedstringkey.md), you can add attributes that you invoke by using Apple’s Markdown extension syntax: `^[text](name:value, name:value, …)`. See the sample code project [Building a Localized Food-Ordering App](./building-a-localized-food-ordering-app.md) for an example of creating custom attributes and using them with Markdown.
 
 Localized attributed strings can also use the extension syntax to indicate parts of the string where the system can apply automatic grammar agreement. See the initializers that take a `localized:` parameter for examples of this extension syntax, as used with automatic grammar agreement.
 
 ##### Attribute Scopes
 
-The [`AttributedString`](attributedstring.md) API defines keys for common uses, such as text styling, semantically marking up formattable types like dates and numbers, and hyperlinking. You can find these in the [`AttributeScopes`](attributescopes.md) enumeration, which contains attributes for AppKit, Foundation, SwiftUI, and UIKit.
+The [`AttributedString`](./attributedstring.md) API defines keys for common uses, such as text styling, semantically marking up formattable types like dates and numbers, and hyperlinking. You can find these in the [`AttributeScopes`](./attributescopes.md) enumeration, which contains attributes for AppKit, Foundation, SwiftUI, and UIKit.
 
-You can define your own attributes by implementing [`AttributedStringKey`](attributedstringkey.md), and reference them by name by collecting them in an [`AttributeScope`](attributescope.md).
+You can define your own attributes by implementing [`AttributedStringKey`](./attributedstringkey.md), and reference them by name by collecting them in an [`AttributeScope`](./attributescope.md).
 
 ## Topics
 
 ### Creating an Attributed String
-- [init()](attributedstring/init.md)
+- [init()](./attributedstring/init%28%29.md)
   Creates an empty attributed string.
-- [init(AttributedSubstring)](attributedstring/init(_:)-8tnoq.md)
+- [init(AttributedSubstring)](./attributedstring/init%28_%29-8tnoq.md)
   Creates an attributed string from an attributed substring.
-- [init(String, attributes: AttributeContainer)](attributedstring/init(_:attributes:)-2a45h.md)
+- [init(String, attributes: AttributeContainer)](./attributedstring/init%28_,attributes%29-2a45h.md)
   Creates an attributed string from a string and an attribute container.
-- [init(Substring, attributes: AttributeContainer)](attributedstring/init(_:attributes:)-8jqhp.md)
+- [init(Substring, attributes: AttributeContainer)](./attributedstring/init%28_,attributes%29-8jqhp.md)
   Creates an attributed string from a substring and an attribute container.
-- [init<S>(S, attributes: AttributeContainer)](attributedstring/init(_:attributes:)-8l0iq.md)
+- [init<S>(S, attributes: AttributeContainer)](./attributedstring/init%28_,attributes%29-8l0iq.md)
   Creates an attributed string from a character sequence and an attribute container.
-- [struct AttributeContainer](attributecontainer.md)
+- [struct AttributeContainer](./attributecontainer.md)
   A container for attribute keys and values.
 ### Creating an Attributed String from Literal Values
-- [init(stringLiteral: String)](attributedstring/init(stringliteral:).md)
+- [init(stringLiteral: String)](./attributedstring/init%28stringliteral%29.md)
   Creates an attributed string from the specified string literal, with no attributes.
 ### Creating a Localized Attributed String
-- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md)
+- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./attributedstring/init%28localized,options,table,bundle,locale,comment%29-8dlnl.md)
   Creates an attributed string by looking up a localized string from the app’s bundle.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8uknv.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./attributedstring/init%28localized,options,table,bundle,locale,comment,including%29-8uknv.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-5jzpg.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28localized,options,table,bundle,locale,comment,including%29-5jzpg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies.
-- [String.LocalizationValue](../swift/string/localizationvalue.md)
+- [String.LocalizationValue](../Swift/string/localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
-- [AttributedString.FormattingOptions](attributedstring/formattingoptions.md)
+- [AttributedString.FormattingOptions](./attributedstring/formattingoptions.md)
   Options that affect the handling of attributes.
-- [init(localized: LocalizedStringResource)](attributedstring/init(localized:).md)
+- [init(localized: LocalizedStringResource)](./attributedstring/init%28localized%29.md)
   Creates a localized attributed string from a localized string resource.
-- [init<S>(localized: LocalizedStringResource, including: S.Type)](attributedstring/init(localized:including:)-2xebo.md)
+- [init<S>(localized: LocalizedStringResource, including: S.Type)](./attributedstring/init%28localized,including%29-2xebo.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope.
-- [init<S>(localized: LocalizedStringResource, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:including:)-15xc5.md)
+- [init<S>(localized: LocalizedStringResource, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28localized,including%29-15xc5.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope that a key path identifies.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](./localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
 ### Creating a Localized Attributed String with a Default Value
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:)-4n8e2.md)
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./attributedstring/init%28localized,defaultvalue,options,table,bundle,locale,comment%29-4n8e2.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, using a default value if necessary.
-- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-2elmp.md)
+- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./attributedstring/init%28localized,defaultvalue,options,table,bundle,locale,comment,including%29-2elmp.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope, using a default value if necessary.
-- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-9gjtg.md)
+- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28localized,defaultvalue,options,table,bundle,locale,comment,including%29-9gjtg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies, using a default value if necessary.
 ### Creating an Attributed String from Markdown
-- [Instantiating Attributed Strings with Markdown Syntax](instantiating-attributed-strings-with-markdown-syntax.md)
+- [Instantiating Attributed Strings with Markdown Syntax](./instantiating-attributed-strings-with-markdown-syntax.md)
   Use a Markdown-syntax string to iniitalize an attributed string with standard or custom attributes.
 ### Creating an Attributed String from a Reference Type
-- [init<S>(NSAttributedString, including: S.Type) throws](attributedstring/init(_:including:)-9no47.md)
+- [init<S>(NSAttributedString, including: S.Type) throws](./attributedstring/init%28_,including%29-9no47.md)
   Creates a value-type attributed string from a reference type, including an attribute scope.
-- [init<S>(NSAttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](attributedstring/init(_:including:)-puv0.md)
+- [init<S>(NSAttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](./attributedstring/init%28_,including%29-puv0.md)
   Creates a value-type attributed string from a reference type, including an attribute scope that a key path identifies.
-- [init(NSAttributedString)](attributedstring/init(_:)-1fru0.md)
+- [init(NSAttributedString)](./attributedstring/init%28_%29-1fru0.md)
   Creates a value-type attributed string from a reference type.
 ### Creating a Duplicate Attributed String
-- [init<S, T>(T, including: S.Type)](attributedstring/init(_:including:)-6u3ho.md)
+- [init<S, T>(T, including: S.Type)](./attributedstring/init%28_,including%29-6u3ho.md)
   Creates an attributed string from another attributed string, including an attribute scope.
-- [init<S, T>(T, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(_:including:)-9ejyj.md)
+- [init<S, T>(T, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28_,including%29-9ejyj.md)
   Creates an attributed string from another attributed string, including an attribute scope that a key path identifies.
 ### Applying and Modifying Attributes
-- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+- [func setAttributes(AttributeContainer)](./attributedstring/setattributes%28_%29.md)
   Sets the attributed string’s attributes to those in a specified attribute container.
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./attributedstring/mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
+- [AttributedString.AttributeMergePolicy](./attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
-- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstring/replaceattributes(_:with:).md)
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](./attributedstring/replaceattributes%28_,with%29.md)
   Replaces occurrences of attributes in one attribute container with those in another attribute container.
-- [protocol AttributedStringAttributeMutation](attributedstringattributemutation.md)
+- [protocol AttributedStringAttributeMutation](./attributedstringattributemutation.md)
   A protocol that defines in-place mutations for attributes in an attributed string.
 ### Using Defined Attributes
-- [enum AttributeScopes](attributescopes.md)
+- [enum AttributeScopes](./attributescopes.md)
   Collections of attributes that system frameworks define.
-- [enum AttributeDynamicLookup](attributedynamiclookup.md)
+- [enum AttributeDynamicLookup](./attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
-- [struct ScopedAttributeContainer](scopedattributecontainer.md)
+- [struct ScopedAttributeContainer](./scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 ### Accessing a Range
-- [subscript(some RangeExpression<AttributedString.Index>) -> AttributedSubstring](attributedstring/subscript(_:)-2vqsz.md)
+- [subscript(some RangeExpression<AttributedString.Index>) -> AttributedSubstring](./attributedstring/subscript%28_%29-2vqsz.md)
   Returns a substring of the attributed string using a range to indicate the substring bounds.
 ### Accessing Indices
-- [Accessing Indicies Within an Attributed String](accessing-indicies-within-an-attributed-string.md)
+- [Accessing Indicies Within an Attributed String](./accessing-indicies-within-an-attributed-string.md)
   Access a position within an attributed string, offset from the beginning, or before or after another known position.
 ### Accessing Views into the Attributed String
-- [var characters: AttributedString.CharacterView](attributedstring/characters.md)
+- [var characters: AttributedString.CharacterView](./attributedstring/characters.md)
   The characters of the attributed string, as a view into the underlying string.
-- [AttributedString.CharacterView](attributedstring/characterview.md)
+- [AttributedString.CharacterView](./attributedstring/characterview.md)
   A view into the underlying storage of the attributed string, as Unicode characters.
-- [var unicodeScalars: AttributedString.UnicodeScalarView](attributedstring/unicodescalars.md)
+- [var unicodeScalars: AttributedString.UnicodeScalarView](./attributedstring/unicodescalars.md)
   The Unicode scalars of the attributed string, as a view into the underlying string.
-- [AttributedString.UnicodeScalarView](attributedstring/unicodescalarview.md)
+- [AttributedString.UnicodeScalarView](./attributedstring/unicodescalarview.md)
   A view into the underlying storage of the attributed string, as Unicode scalars.
-- [var runs: AttributedString.Runs](attributedstring/runs-swift.property.md)
+- [var runs: AttributedString.Runs](./attributedstring/runs-swift.property.md)
   The attributed runs of the attributed string, as a view into the underlying string.
-- [AttributedString.Runs](attributedstring/runs-swift.struct.md)
+- [AttributedString.Runs](./attributedstring/runs-swift.struct.md)
   An iterable view into segments of the attributed string, each of which indicates where a run of identical attributes begins or ends.
 ### Modifying an Attributed String
-- [func insert(some AttributedStringProtocol, at: AttributedString.Index)](attributedstring/insert(_:at:).md)
+- [func insert(some AttributedStringProtocol, at: AttributedString.Index)](./attributedstring/insert%28_,at%29.md)
   Inserts the specified string at a specific index in the attributed string.
-- [AttributedString.Index](attributedstring/index.md)
+- [AttributedString.Index](./attributedstring/index.md)
   A type that represents the position of a character or code unit within an attributed string.
-- [func removeSubrange(some RangeExpression<AttributedString.Index>)](attributedstring/removesubrange(_:).md)
+- [func removeSubrange(some RangeExpression<AttributedString.Index>)](./attributedstring/removesubrange%28_%29.md)
   Removes a range of characters from the attributed string.
-- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](attributedstring/replacesubrange(_:with:).md)
+- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](./attributedstring/replacesubrange%28_,with%29.md)
   Replaces the contents in a range of the attributed string.
 ### Transforming Attributes
-- [func transformingAttributes<K>(K.Type, (inout AttributedString.SingleAttributeTransformer<K>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:)-9prm2.md)
+- [func transformingAttributes<K>(K.Type, (inout AttributedString.SingleAttributeTransformer<K>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_%29-9prm2.md)
   Returns an attributed string by calling a closure that transforms one attribute of a source attributed string.
-- [func transformingAttributes<K>(KeyPath<AttributeDynamicLookup, K>, (inout AttributedString.SingleAttributeTransformer<K>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:)-64qnl.md)
+- [func transformingAttributes<K>(KeyPath<AttributeDynamicLookup, K>, (inout AttributedString.SingleAttributeTransformer<K>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_%29-64qnl.md)
   Returns an attributed string by calling a closure that transforms one attribute, which a key path identifies, of a source attributed string.
-- [func transformingAttributes<K1, K2>(K1.Type, K2.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:)-7kw1o.md)
+- [func transformingAttributes<K1, K2>(K1.Type, K2.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_%29-7kw1o.md)
   Returns an attributed string by calling a closure that transforms two attributes of a source attributed string.
-- [func transformingAttributes<K1, K2>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:)-8gt2n.md)
+- [func transformingAttributes<K1, K2>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_%29-8gt2n.md)
   Returns an attributed string created by calling a closure that transforms two attributes, which key paths identify, of a source attributed string.
-- [func transformingAttributes<K1, K2, K3>(K1.Type, K2.Type, K3.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:_:)-4owv7.md)
+- [func transformingAttributes<K1, K2, K3>(K1.Type, K2.Type, K3.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_,_%29-4owv7.md)
   Returns an attributed string by calling a closure that transforms three attributes of a source attributed string.
-- [func transformingAttributes<K1, K2, K3>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, KeyPath<AttributeDynamicLookup, K3>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:_:)-5xmlf.md)
+- [func transformingAttributes<K1, K2, K3>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, KeyPath<AttributeDynamicLookup, K3>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_,_%29-5xmlf.md)
   Returns an attributed string by calling a closure that transforms three attributes, which key paths identify, of a source attributed string.
-- [func transformingAttributes<K1, K2, K3, K4>(K1.Type, K2.Type, K3.Type, K4.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:_:_:)-9uodg.md)
+- [func transformingAttributes<K1, K2, K3, K4>(K1.Type, K2.Type, K3.Type, K4.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_,_,_%29-9uodg.md)
   Returns an attributed string by calling a closure that transforms four attributes of a source attributed string.
-- [func transformingAttributes<K1, K2, K3, K4>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, KeyPath<AttributeDynamicLookup, K3>, KeyPath<AttributeDynamicLookup, K4>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:_:_:)-all0.md)
+- [func transformingAttributes<K1, K2, K3, K4>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, KeyPath<AttributeDynamicLookup, K3>, KeyPath<AttributeDynamicLookup, K4>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_,_,_%29-all0.md)
   Returns an attributed string created by calling a closure that transforms four attributes, which key paths identify, of a source attributed string.
-- [func transformingAttributes<K1, K2, K3, K4, K5>(K1.Type, K2.Type, K3.Type, K4.Type, K5.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>, inout AttributedString.SingleAttributeTransformer<K5>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:_:_:_:)-3i7ac.md)
+- [func transformingAttributes<K1, K2, K3, K4, K5>(K1.Type, K2.Type, K3.Type, K4.Type, K5.Type, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>, inout AttributedString.SingleAttributeTransformer<K5>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_,_,_,_%29-3i7ac.md)
   Returns an attributed string created by calling a closure that transforms five attributes of a source attributed string.
-- [func transformingAttributes<K1, K2, K3, K4, K5>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, KeyPath<AttributeDynamicLookup, K3>, KeyPath<AttributeDynamicLookup, K4>, KeyPath<AttributeDynamicLookup, K5>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>, inout AttributedString.SingleAttributeTransformer<K5>) -> Void) -> AttributedString](attributedstring/transformingattributes(_:_:_:_:_:_:)-9hppo.md)
+- [func transformingAttributes<K1, K2, K3, K4, K5>(KeyPath<AttributeDynamicLookup, K1>, KeyPath<AttributeDynamicLookup, K2>, KeyPath<AttributeDynamicLookup, K3>, KeyPath<AttributeDynamicLookup, K4>, KeyPath<AttributeDynamicLookup, K5>, (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>, inout AttributedString.SingleAttributeTransformer<K5>) -> Void) -> AttributedString](./attributedstring/transformingattributes%28_,_,_,_,_,_%29-9hppo.md)
   Returns an attributed string created by calling a closure that transforms five attributes, which key paths identify, of a source attributed string.
-- [AttributedString.SingleAttributeTransformer](attributedstring/singleattributetransformer.md)
+- [AttributedString.SingleAttributeTransformer](./attributedstring/singleattributetransformer.md)
   A type that transforms an attribute by altering its range or value, or by replacing it entirely.
 ### Accessing Whole-String Attributes
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributedstring/subscript(dynamicmember:)-34zdf.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](./attributedstring/subscript%28dynamicmember%29-34zdf.md)
   Returns an attribute value that a key path indicates.
-- [enum AttributeDynamicLookup](attributedynamiclookup.md)
+- [enum AttributeDynamicLookup](./attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
-- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](attributedstring/subscript(dynamicmember:)-9modq.md)
+- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](./attributedstring/subscript%28dynamicmember%29-9modq.md)
   Returns a scoped attribute container that a key path indicates.
-- [struct ScopedAttributeContainer](scopedattributecontainer.md)
+- [struct ScopedAttributeContainer](./scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 ### Combining Attributed Strings
-- [func append(some AttributedStringProtocol)](attributedstring/append(_:).md)
+- [func append(some AttributedStringProtocol)](./attributedstring/append%28_%29.md)
   Appends a string to the attributed string.
-- [static func + (AttributedString, AttributedString) -> AttributedString](attributedstring/+(_:_:)-8sbsq.md)
+- [static func + (AttributedString, AttributedString) -> AttributedString](./attributedstring/plus%28_,_%29-8sbsq.md)
   Concatenates two attributed strings.
-- [static func + (AttributedString, some AttributedStringProtocol) -> AttributedString](attributedstring/+(_:_:)-drfc.md)
+- [static func + (AttributedString, some AttributedStringProtocol) -> AttributedString](./attributedstring/plus%28_,_%29-drfc.md)
   Concatenates two attributed strings or substrings.
-- [static func += (inout AttributedString, AttributedString)](attributedstring/+=(_:_:)-4dk88.md)
+- [static func += (inout AttributedString, AttributedString)](./attributedstring/pluseq%28_,_%29-4dk88.md)
   Appends an attributed string to another attributed string.
-- [static func += (inout AttributedString, some AttributedStringProtocol)](attributedstring/+=(_:_:)-6yimu.md)
+- [static func += (inout AttributedString, some AttributedStringProtocol)](./attributedstring/pluseq%28_,_%29-6yimu.md)
   Appends an attributed string or substring to another attributed string.
 ### Performing Automatic Grammar Agreement
-- [func inflected() -> AttributedString](attributedstring/inflected.md)
+- [func inflected() -> AttributedString](./attributedstring/inflected%28%29.md)
   Applies automatic grammar agreement inflection rules to the attributed string and returns the result.
 ### Performing String Interpolation
-- [AttributedString.InterpolationOptions](attributedstring/interpolationoptions.md)
+- [AttributedString.InterpolationOptions](./attributedstring/interpolationoptions.md)
   Options that affect the behavior of string interpolation on the attributed string.
 ### Encoding and Decoding
-- [struct AttributeScopeCodableConfiguration](attributescopecodableconfiguration.md)
+- [struct AttributeScopeCodableConfiguration](./attributescopecodableconfiguration.md)
   A configuration type for encoding and decoding attributed strings.
-- [Encoding and Decoding Attributed String Keys](encoding-and-decoding-attributed-string-keys.md)
+- [Encoding and Decoding Attributed String Keys](./encoding-and-decoding-attributed-string-keys.md)
   Protocols adopted by attribute keys to encode or decode data.
 ### Supporting types
-- [struct DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
+- [struct DiscontiguousAttributedSubstring](./discontiguousattributedsubstring.md)
   A discontiguous portion of an attributed string.
 ### Structures
-- [AttributedString.AdaptiveImageGlyph](attributedstring/adaptiveimageglyph.md)
-- [AttributedString.AttributeInvalidationCondition](attributedstring/attributeinvalidationcondition.md)
-- [AttributedString.LineHeight](attributedstring/lineheight.md)
+- [AttributedString.AdaptiveImageGlyph](./attributedstring/adaptiveimageglyph.md)
+- [AttributedString.AttributeInvalidationCondition](./attributedstring/attributeinvalidationcondition.md)
+- [AttributedString.LineHeight](./attributedstring/lineheight.md)
   The line height definition of a paragraph.
-- [AttributedString.LocalizationOptions](attributedstring/localizationoptions.md)
+- [AttributedString.LocalizationOptions](./attributedstring/localizationoptions.md)
   Configuration options for the localization of text.
-- [AttributedString.MarkdownSourcePosition](attributedstring/markdownsourceposition.md)
+- [AttributedString.MarkdownSourcePosition](./attributedstring/markdownsourceposition.md)
   The position of attributed string text in its original Markdown source string.
-- [AttributedString.UTF16View](attributedstring/utf16view.md)
+- [AttributedString.UTF16View](./attributedstring/utf16view.md)
   A view of an attributed string’s contents as a collection of UTF-16 code units.
-- [AttributedString.UTF8View](attributedstring/utf8view.md)
+- [AttributedString.UTF8View](./attributedstring/utf8view.md)
   A view of an attributed string’s contents as a collection of UTF-8 code units.
 ### Initializers
-- [init(DiscontiguousAttributedSubstring)](attributedstring/init(_:)-83wi.md)
+- [init(DiscontiguousAttributedSubstring)](./attributedstring/init%28_%29-83wi.md)
   Creates an attributed string from a discontiguous attributed substring.
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:)-2nmk8.md)
-- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-6qaoe.md)
-- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-iisj.md)
-- [init(localized: LocalizedStringResource, options: AttributedString.LocalizationOptions)](attributedstring/init(localized:options:).md)
-- [init<S>(localized: LocalizedStringResource, options: AttributedString.LocalizationOptions, including: S.Type)](attributedstring/init(localized:options:including:)-3dycp.md)
-- [init<S>(localized: LocalizedStringResource, options: AttributedString.LocalizationOptions, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:including:)-4cbfv.md)
-- [init(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-1w4s.md)
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-3zy6h.md)
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8ao6x.md)
-- [init(transferable: AttributedTextFormatting.Transferable, in: EnvironmentValues) throws](attributedstring/init(transferable:in:).md)
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./attributedstring/init%28localized,defaultvalue,options,table,bundle,locale,comment%29-2nmk8.md)
+- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./attributedstring/init%28localized,defaultvalue,options,table,bundle,locale,comment,including%29-6qaoe.md)
+- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28localized,defaultvalue,options,table,bundle,locale,comment,including%29-iisj.md)
+- [init(localized: LocalizedStringResource, options: AttributedString.LocalizationOptions)](./attributedstring/init%28localized,options%29.md)
+- [init<S>(localized: LocalizedStringResource, options: AttributedString.LocalizationOptions, including: S.Type)](./attributedstring/init%28localized,options,including%29-3dycp.md)
+- [init<S>(localized: LocalizedStringResource, options: AttributedString.LocalizationOptions, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28localized,options,including%29-4cbfv.md)
+- [init(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./attributedstring/init%28localized,options,table,bundle,locale,comment%29-1w4s.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./attributedstring/init%28localized,options,table,bundle,locale,comment,including%29-3zy6h.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./attributedstring/init%28localized,options,table,bundle,locale,comment,including%29-8ao6x.md)
+- [init(transferable: AttributedTextFormatting.Transferable, in: EnvironmentValues) throws](./attributedstring/init%28transferable,in%29.md)
   Extract an attributed string from SwiftUI’s transferable representation in a certain environment.
 ### Instance Methods
-- [func inflected(locale: Locale, userTermOfAddress: TermOfAddress?, inflectionConcepts: [InflectionConcept]) -> AttributedString](attributedstring/inflected(locale:usertermofaddress:inflectionconcepts:).md)
+- [func inflected(locale: Locale, userTermOfAddress: TermOfAddress?, inflectionConcepts: [InflectionConcept]) -> AttributedString](./attributedstring/inflected%28locale,usertermofaddress,inflectionconcepts%29.md)
   Process automatic grammar agreement and formatting attributes.
-- [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](attributedstring/rangeofaudiotimerangeattributes(intersecting:).md)
+- [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](./attributedstring/rangeofaudiotimerangeattributes%28intersecting%29.md)
   Returns the range of the attributed string that is within the given time range.
-- [func removeSubranges(RangeSet<AttributedString.Index>)](attributedstring/removesubranges(_:).md)
+- [func removeSubranges(RangeSet<AttributedString.Index>)](./attributedstring/removesubranges%28_%29.md)
   Removes the elements at the given indices.
-- [func replaceSelection(inout AttributedTextSelection, with: some AttributedStringProtocol)](attributedstring/replaceselection(_:with:).md)
+- [func replaceSelection(inout AttributedTextSelection, with: some AttributedStringProtocol)](./attributedstring/replaceselection%28_,with%29.md)
   Replace the selection with new attributed content.
-- [func replaceSelection(inout AttributedTextSelection, withCharacters: some Collection<Character>)](attributedstring/replaceselection(_:withcharacters:).md)
+- [func replaceSelection(inout AttributedTextSelection, withCharacters: some Collection<Character>)](./attributedstring/replaceselection%28_,withcharacters%29.md)
   Replace the selection with new content, attributed with the typing attributes.
-- [func transform<E>(updating: inout Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E)](attributedstring/transform(updating:body:)-1b6eb.md)
+- [func transform<E>(updating: inout Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E)](./attributedstring/transform%28updating,body%29-1b6eb.md)
   Tracks the location of the provided range throughout the mutation closure, updating the provided range to one that represents the same effective locations after the mutation.
-- [func transform<E>(updating: inout [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E)](attributedstring/transform(updating:body:)-3j625.md)
+- [func transform<E>(updating: inout [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E)](./attributedstring/transform%28updating,body%29-3j625.md)
   Tracks the location of the provided ranges throughout the mutation closure, updating them to new ranges that represent the same effective locations after the mutation.
-- [func transform<E>(updating: Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E) -> Range<AttributedString.Index>?](attributedstring/transform(updating:body:)-79te9.md)
+- [func transform<E>(updating: Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E) -> Range<AttributedString.Index>?](./attributedstring/transform%28updating,body%29-79te9.md)
   Tracks the location of the provided range throughout the mutation closure, returning a new, updated range that represents the same effective locations after the mutation.
-- [func transform<E>(updating: [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E) -> [Range<AttributedString.Index>]?](attributedstring/transform(updating:body:)-89r96.md)
+- [func transform<E>(updating: [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E) -> [Range<AttributedString.Index>]?](./attributedstring/transform%28updating,body%29-89r96.md)
   Tracks the location of the provided ranges throughout the mutation closure, returning a new, updated range that represents the same effective locations after the mutation
-- [func transform<E>(updating: inout AttributedTextSelection, body: (inout AttributedString) throws(E) -> Void) throws(E)](attributedstring/transform(updating:body:)-9wpg2.md)
+- [func transform<E>(updating: inout AttributedTextSelection, body: (inout AttributedString) throws(E) -> Void) throws(E)](./attributedstring/transform%28updating,body%29-9wpg2.md)
   Tracks the location of the selection throughout the mutation closure, updating the selection so it represents the same effective locations after the mutation.
-- [func transformAttributes<E>(in: inout AttributedTextSelection, body: (inout AttributeContainer) throws(E) -> Void) throws(E)](attributedstring/transformattributes(in:body:).md)
+- [func transformAttributes<E>(in: inout AttributedTextSelection, body: (inout AttributeContainer) throws(E) -> Void) throws(E)](./attributedstring/transformattributes%28in,body%29.md)
   Apply a change to the attributes in the entire selection.
 ### Subscripts
-- [subscript(AttributedTextSelection) -> DiscontiguousAttributedSubstring](attributedstring/subscript(_:)-2yypq.md)
+- [subscript(AttributedTextSelection) -> DiscontiguousAttributedSubstring](./attributedstring/subscript%28_%29-2yypq.md)
   Obtain the discontiguous substring of a selection.
-- [subscript(RangeSet<AttributedString.Index>) -> DiscontiguousAttributedSubstring](attributedstring/subscript(_:)-ftoi.md)
+- [subscript(RangeSet<AttributedString.Index>) -> DiscontiguousAttributedSubstring](./attributedstring/subscript%28_%29-ftoi.md)
   Returns a discontiguous substring of this discontiguous attributed string using a set of ranges to indicate the discontiguous substring bounds.
 ### Type Aliases
-- [AttributedString.Specification](attributedstring/specification.md)
-- [AttributedString.UnwrappedType](attributedstring/unwrappedtype.md)
-- [AttributedString.ValueType](attributedstring/valuetype.md)
+- [AttributedString.Specification](./attributedstring/specification.md)
+- [AttributedString.UnwrappedType](./attributedstring/unwrappedtype.md)
+- [AttributedString.ValueType](./attributedstring/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](attributedstring/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./attributedstring/defaultresolverspecification.md)
 ### Enumerations
-- [AttributedString.AttributeRunBoundaries](attributedstring/attributerunboundaries.md)
-- [AttributedString.TextAlignment](attributedstring/textalignment.md)
+- [AttributedString.AttributeRunBoundaries](./attributedstring/attributerunboundaries.md)
+- [AttributedString.TextAlignment](./attributedstring/textalignment.md)
   The explicit alignment of text within its container.
-- [AttributedString.WritingDirection](attributedstring/writingdirection.md)
+- [AttributedString.WritingDirection](./attributedstring/writingdirection.md)
   The writing direction of a piece of text.
 ### Default Implementations
-- [AttributedStringAttributeMutation Implementations](attributedstring/attributedstringattributemutation-implementations.md)
-- [AttributedStringProtocol Implementations](attributedstring/attributedstringprotocol-implementations.md)
-- [ExpressibleByStringLiteral Implementations](attributedstring/expressiblebystringliteral-implementations.md)
-- [IntentValueConvertible Implementations](attributedstring/intentvalueconvertible-implementations.md)
+- [AttributedStringAttributeMutation Implementations](./attributedstring/attributedstringattributemutation-implementations.md)
+- [AttributedStringProtocol Implementations](./attributedstring/attributedstringprotocol-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./attributedstring/expressiblebystringliteral-implementations.md)
+- [IntentValueConvertible Implementations](./attributedstring/intentvalueconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringAttributeMutation](attributedstringattributemutation.md)
-- [AttributedStringProtocol](attributedstringprotocol.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [DecodableWithConfiguration](decodablewithconfiguration.md)
-- [Encodable](../swift/encodable.md)
-- [EncodableWithConfiguration](encodablewithconfiguration.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transferable](../coretransferable/transferable.md)
+- [AttributedStringAttributeMutation](./attributedstringattributemutation.md)
+- [AttributedStringProtocol](./attributedstringprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [DecodableWithConfiguration](./decodablewithconfiguration.md)
+- [Encodable](../Swift/encodable.md)
+- [EncodableWithConfiguration](./encodablewithconfiguration.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transferable](../CoreTransferable/transferable.md)
 
 ## See Also
 
-- [struct AttributedSubstring](attributedsubstring.md)
+### Strings with Metadata
+- [struct AttributedSubstring](./attributedsubstring.md)
   A portion of an attributed string.
-- [Attributed String Supporting Types](attributed-string-supporting-types.md)
+- [Attributed String Supporting Types](./attributed-string-supporting-types.md)
   Types that the attributed string, attributed substring, and helper types extend or conform to, for sharing common functionality.
-- [class NSAttributedString](nsattributedstring.md)
+- [class NSAttributedString](./nsattributedstring.md)
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
-- [class NSMutableAttributedString](nsmutableattributedstring.md)
+- [class NSMutableAttributedString](./nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
 
 

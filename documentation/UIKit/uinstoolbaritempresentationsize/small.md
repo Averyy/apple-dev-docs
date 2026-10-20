@@ -1,16 +1,17 @@
 # UINSToolbarItemPresentationSize.small
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The smallest presentation size.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 - Mac Catalyst 16.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The smallest presentation size.
 case small
 ```
 
+```c
+UINSToolbarItemPresentationSizeSmall
+```
+
 ## See Also
 
-- [UINSToolbarItemPresentationSize.regular](uinstoolbaritempresentationsize/regular.md)
+### Constants
+- [UINSToolbarItemPresentationSize.regular](./regular.md)
   The default, regular presentation size.
-- [UINSToolbarItemPresentationSize.large](uinstoolbaritempresentationsize/large.md)
+- [UINSToolbarItemPresentationSize.large](./large.md)
   The largest presentation size.
-- [UINSToolbarItemPresentationSize.unspecified](uinstoolbaritempresentationsize/unspecified.md)
+- [UINSToolbarItemPresentationSize.unspecified](./unspecified.md)
   An unspecified presentation size.
 
 

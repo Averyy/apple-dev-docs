@@ -1,7 +1,8 @@
 # StatusPasscodeIsPresent
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports whether the device has a passcode.
 
@@ -14,13 +15,13 @@ The status item that reports whether the device has a passcode.
 
 ## Declaration
 
-```swift
+```
 object StatusPasscodeIsPresent
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +32,7 @@ object StatusPasscodeIsPresent
 | Allowed in system scope | iOS, Shared iPad, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -47,13 +48,14 @@ object StatusPasscodeIsPresent
 
 ## See Also
 
-- [object StatusPasscodeCompliance](statuspasscodecompliance.md)
+### Passcode and security items
+- [object StatusPasscodeCompliance](./statuspasscodecompliance.md)
   The status item that reports the device’s passcode compliance.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
+- [object StatusDiskManagementFileVaultEnabled](./statusdiskmanagementfilevaultenabled.md)
   The status item that reports whether FileVault is enabled.
-- [object StatusSecurityCertificateList](statussecuritycertificatelist.md)
+- [object StatusSecurityCertificateList](./statussecuritycertificatelist.md)
   The status item that lists the device’s managed certificates.
-- [object StatusSecurityLockdownMode](statussecuritylockdownmode.md)
+- [object StatusSecurityLockdownMode](./statussecuritylockdownmode.md)
   The status item that reports the device’s Lockdown Mode state.
 
 

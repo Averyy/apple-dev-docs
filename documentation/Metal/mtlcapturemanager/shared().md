@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides the shared capture manager for your Metal app.
 
@@ -17,6 +18,10 @@ Provides the shared capture manager for your Metal app.
 
 ```swift
 class func shared() -> MTLCaptureManager
+```
+
+```objc
++ (MTLCaptureManager *) sharedCaptureManager;
 ```
 
 #### Discussion

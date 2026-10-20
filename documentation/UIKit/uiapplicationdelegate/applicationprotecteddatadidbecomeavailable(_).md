@@ -1,7 +1,8 @@
 # applicationProtectedDataDidBecomeAvailable(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that protected files are available now.
 
@@ -9,7 +10,7 @@ Tells the delegate that protected files are available now.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Tells the delegate that protected files are available now.
 optional func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication)
 ```
 
+```objc
+- (void) applicationProtectedDataDidBecomeAvailable:(UIApplication *) application;
+```
+
 ## Mentions
 
-- [Encrypting Your App’s Files](encrypting-your-app-s-files.md)
+- [Encrypting Your App’s Files](../encrypting-your-app-s-files.md)
 
 #### Discussion
 
@@ -32,19 +37,20 @@ On a device that uses content protection, protected files are stored in an encry
 
 ## See Also
 
-- [func applicationProtectedDataWillBecomeUnavailable(UIApplication)](uiapplicationdelegate/applicationprotecteddatawillbecomeunavailable(_:).md)
+### Responding to environment changes
+- [func applicationProtectedDataWillBecomeUnavailable(UIApplication)](./applicationprotecteddatawillbecomeunavailable%28_%29.md)
   Tells the delegate that the protected files are about to become unavailable.
-- [func applicationDidReceiveMemoryWarning(UIApplication)](uiapplicationdelegate/applicationdidreceivememorywarning(_:).md)
+- [func applicationDidReceiveMemoryWarning(UIApplication)](./applicationdidreceivememorywarning%28_%29.md)
   Tells the delegate when the app receives a memory warning from the system.
-- [func applicationSignificantTimeChange(UIApplication)](uiapplicationdelegate/applicationsignificanttimechange(_:).md)
+- [func applicationSignificantTimeChange(UIApplication)](./applicationsignificanttimechange%28_%29.md)
   Tells the delegate when there is a significant change in the time.
-- [class let protectedDataDidBecomeAvailableNotification: NSNotification.Name](uiapplication/protecteddatadidbecomeavailablenotification.md)
+- [class let protectedDataDidBecomeAvailableNotification: NSNotification.Name](../uiapplication/protecteddatadidbecomeavailablenotification.md)
   A notification that posts when the protected files become available for your code to access.
-- [class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name](uiapplication/protecteddatawillbecomeunavailablenotification.md)
+- [class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name](../uiapplication/protecteddatawillbecomeunavailablenotification.md)
   A notification that posts shortly before protected files are locked down and become inaccessible.
-- [class let didReceiveMemoryWarningNotification: NSNotification.Name](uiapplication/didreceivememorywarningnotification.md)
+- [class let didReceiveMemoryWarningNotification: NSNotification.Name](../uiapplication/didreceivememorywarningnotification.md)
   A notification that posts when the app receives a warning from the operating system about low memory availability.
-- [class let significantTimeChangeNotification: NSNotification.Name](uiapplication/significanttimechangenotification.md)
+- [class let significantTimeChangeNotification: NSNotification.Name](../uiapplication/significanttimechangenotification.md)
   A notification that posts when there’s a significant change in time.
 
 

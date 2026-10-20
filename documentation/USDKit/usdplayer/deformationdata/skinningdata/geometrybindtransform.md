@@ -1,7 +1,8 @@
 # geometryBindTransform
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Transform from world space into bind space of the skinned mesh.
 

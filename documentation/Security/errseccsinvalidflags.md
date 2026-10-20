@@ -1,7 +1,8 @@
 # errSecCSInvalidFlags
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid or inappropriate API flags specified.
 
@@ -13,6 +14,10 @@ Invalid or inappropriate API flags specified.
 
 ```swift
 var errSecCSInvalidFlags: OSStatus { get }
+```
+
+```c
+errSecCSInvalidFlags
 ```
 
 

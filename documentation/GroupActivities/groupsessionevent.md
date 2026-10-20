@@ -1,7 +1,8 @@
 # GroupSessionEvent
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A session-related event that appears in the system UI.
 
@@ -23,26 +24,27 @@ struct GroupSessionEvent
 
 Use this structure to specify the contents of custom activity-related events. The AV Foundation framework posts media-related events to the system on your app’s behalf; create an instance of this structure if your app posts additional events that don’t route through AV Foundation.
 
-After creating an instance of this structure, post it to the system using the [`showNotice(_:)`](groupsession/shownotice(_:).md) method of [`GroupSession`](groupsession.md).
+After creating an instance of this structure, post it to the system using the [`showNotice(_:)`](./groupsession/shownotice%28_%29.md) method of [`GroupSession`](./groupsession.md).
 
 ## Topics
 
 ### Creating a group session event
-- [init(originator: Participant, action: GroupSessionEvent.Action, url: URL?)](groupsessionevent/init(originator:action:url:).md)
+- [init(originator: Participant, action: GroupSessionEvent.Action, url: URL?)](./groupsessionevent/init%28originator,action,url%29.md)
   Creates a new event with the specified participant and action details.
 ### Getting the event details
-- [let originator: Participant](groupsessionevent/originator.md)
+- [let originator: Participant](./groupsessionevent/originator.md)
   The participant that initiated the event.
-- [let url: URL?](groupsessionevent/url.md)
+- [let url: URL?](./groupsessionevent/url.md)
   The URL to open when the participant taps the event link in the system UI.
-- [let action: GroupSessionEvent.Action](groupsessionevent/action-swift.property.md)
+- [let action: GroupSessionEvent.Action](./groupsessionevent/action-swift.property.md)
   The reason for the event.
-- [GroupSessionEvent.Action](groupsessionevent/action-swift.struct.md)
+- [GroupSessionEvent.Action](./groupsessionevent/action-swift.struct.md)
   A playback-related change that occurs during the session.
 
 ## See Also
 
-- [func showNotice(GroupSessionEvent)](groupsession/shownotice(_:).md)
+### Notifying participants of playback changes
+- [func showNotice(GroupSessionEvent)](./groupsession/shownotice%28_%29.md)
   Posts an event to the system, which displays the information in the system UI.
 
 

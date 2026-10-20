@@ -1,7 +1,8 @@
 # Unicode.ParseResult.error(length:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An encoding error was detected.
 

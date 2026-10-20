@@ -1,7 +1,8 @@
 # updateMotionState(_:forObjectWithToken:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the session of an accessory’s motion state change.
 
@@ -16,9 +17,13 @@ Notifies the session of an accessory’s motion state change.
 func updateMotionState(_ motionState: NIMotionActivityState, forObjectWithToken token: NIDiscoveryToken)
 ```
 
+```objc
+- (void) updateMotionState:(NIMotionActivityState) motionState forObjectWithToken:(NIDiscoveryToken *) token;
+```
+
 #### Discussion
 
-Ranging accuracy improves when the framework knows whether the accessory is moving. Track your accessory’s motion using a method you choose and then describe the motion with the appropriate [`NIMotionActivityState`](nimotionactivitystate.md). Call this method, providing the motion state, when the accessory’s motion state changes:
+Ranging accuracy improves when the framework knows whether the accessory is moving. Track your accessory’s motion using a method you choose and then describe the motion with the appropriate [`NIMotionActivityState`](../nimotionactivitystate.md). Call this method, providing the motion state, when the accessory’s motion state changes:
 
 ```swift
 func handleMotionStateUpdate(_ state: NIMotionActivityState, session: NISession) {
@@ -29,7 +34,7 @@ func handleMotionStateUpdate(_ state: NIMotionActivityState, session: NISession)
 }
 ```
 
-This method works with [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md) sessions, and applies to Ultra Wideband and Bluetooth Channel Sounding sessions.
+This method works with [`NINearbyAccessoryConfiguration`](../ninearbyaccessoryconfiguration.md) sessions, and applies to Ultra Wideband and Bluetooth Channel Sounding sessions.
 
 ## Parameters
 
@@ -38,7 +43,8 @@ This method works with [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfi
 
 ## See Also
 
-- [enum NIMotionActivityState](nimotionactivitystate.md)
+### Providing accessory state information
+- [enum NIMotionActivityState](../nimotionactivitystate.md)
   Motion states for a nearby accessory.
 
 

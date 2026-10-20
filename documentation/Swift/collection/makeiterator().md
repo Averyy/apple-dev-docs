@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an iterator over the elements of the collection.
@@ -20,6 +21,12 @@ Returns an iterator over the elements of the collection.
 ```swift
 override func makeIterator() -> Self.Iterator
 ```
+
+## Default Implementations
+
+### Sequence Implementations
+- [func makeIterator() -> IndexingIterator<Self>](../sequence/makeiterator%28%29-85cyw.md)
+  Returns an iterator over the elements of the collection.
 
 
 ---

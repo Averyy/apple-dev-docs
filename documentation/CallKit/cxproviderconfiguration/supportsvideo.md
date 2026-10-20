@@ -1,7 +1,8 @@
 # supportsVideo
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the provider supports video in addition to audio.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the provider supports video in addition t
 var supportsVideo: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsVideo;
+```
+
 #### Discussion
 
-By default, this property is set to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, this property is set to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var maximumCallGroups: Int](cxproviderconfiguration/maximumcallgroups.md)
+### Configuring Call Capabilities
+- [var maximumCallGroups: Int](./maximumcallgroups.md)
   The maximum number of call groups.
-- [var maximumCallsPerCallGroup: Int](cxproviderconfiguration/maximumcallspercallgroup.md)
+- [var maximumCallsPerCallGroup: Int](./maximumcallspercallgroup.md)
   The maximum number of calls per call group.
-- [var supportedHandleTypes: Set<CXHandle.HandleType>](cxproviderconfiguration/supportedhandletypes-kd6i.md)
+- [var supportedHandleTypes: Set<CXHandle.HandleType>](./supportedhandletypes-kd6i.md)
   The supported handle types.
-- [var includesCallsInRecents: Bool](cxproviderconfiguration/includescallsinrecents.md)
+- [var includesCallsInRecents: Bool](./includescallsinrecents.md)
   A Boolean value that indicates whether the provider includes a call in the system’s Recents list after the call ends.
 
 

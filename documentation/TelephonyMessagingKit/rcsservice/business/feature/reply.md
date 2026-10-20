@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.reply
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reply feature.
 

@@ -1,7 +1,8 @@
 # DetectBarcodesRequest.Revision
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the algorithm or implementation that the request performs.
 
@@ -23,25 +24,26 @@ enum Revision
 ## Topics
 
 ### Getting the revision
-- [DetectBarcodesRequest.Revision.revision4](detectbarcodesrequest/revision-swift.enum/revision4.md)
+- [DetectBarcodesRequest.Revision.revision4](./revision-swift.enum/revision4.md)
   An algorithm or implementation that represents the fourth revision.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let revision: DetectBarcodesRequest.Revision](detectbarcodesrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: DetectBarcodesRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectBarcodesRequest.Revision]](detectbarcodesrequest/supportedrevisions.md)
+- [static let supportedRevisions: [DetectBarcodesRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
 
 

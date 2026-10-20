@@ -1,7 +1,8 @@
 # ResourcesImporting
 
 **Framework**: AppMigrationKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for exporting transportable resources in a streaming archive format.
 
@@ -24,21 +25,21 @@ Conform to this protocol in your app extension to import transportable resources
 ## Topics
 
 ### Importing resources
-- [func importResources(at: URL, request: ResourcesImportRequest) async throws](resourcesimporting/importresources(at:request:).md)
+- [func importResources(at: URL, request: ResourcesImportRequest) async throws](./resourcesimporting/importresources%28at,request%29.md)
   Imports resources to the app, in response to a request from the migration system.
-- [struct ResourcesImportRequest](resourcesimportrequest.md)
+- [struct ResourcesImportRequest](./resourcesimportrequest.md)
   A type that exposes properties of the resources import request.
 ### Expressing progress
-- [var resourcesImportProgress: Progress](resourcesimporting/resourcesimportprogress.md)
+- [var resourcesImportProgress: Progress](./resourcesimporting/resourcesimportprogress.md)
   A value to indicate the extension’s progress as it imports resources.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [AppMigrationExtension](appmigrationextension.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [AppMigrationExtension](./appmigrationextension.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

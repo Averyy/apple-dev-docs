@@ -1,22 +1,27 @@
 # AVAudioSession.PolarPattern
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the possible polar patterns of the data source on an iOS device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct PolarPattern
+```
+
+```c
+typedef NSString * AVAudioSessionPolarPattern;
 ```
 
 #### Overview
@@ -26,36 +31,37 @@ The direction of a polar pattern is relative to the orientation of the data sour
 ## Topics
 
 ### Creating a polar pattern
-- [init(rawValue: String)](avaudiosession/polarpattern/init(rawvalue:).md)
+- [init(rawValue: String)](./polarpattern/init%28rawvalue%29.md)
   Creates a new instance with the raw value you specify.
 ### Getting standard polar patterns
-- [static let stereo: AVAudioSession.PolarPattern](avaudiosession/polarpattern/stereo.md)
+- [static let stereo: AVAudioSession.PolarPattern](./polarpattern/stereo.md)
   A polar pattern that captures a stereo image of an audio source.
-- [static let cardioid: AVAudioSession.PolarPattern](avaudiosession/polarpattern/cardioid.md)
+- [static let cardioid: AVAudioSession.PolarPattern](./polarpattern/cardioid.md)
   A data source that’s most sensitive to sound from the direction of the data source and is nearly insensitive to sound from the opposite direction.
-- [static let subcardioid: AVAudioSession.PolarPattern](avaudiosession/polarpattern/subcardioid.md)
+- [static let subcardioid: AVAudioSession.PolarPattern](./polarpattern/subcardioid.md)
   A data source that’s most sensitive to sound from the direction of the data source and is less sensitive to sound from the opposite direction.
-- [static let omnidirectional: AVAudioSession.PolarPattern](avaudiosession/polarpattern/omnidirectional.md)
+- [static let omnidirectional: AVAudioSession.PolarPattern](./polarpattern/omnidirectional.md)
   A data source that’s equally sensitive to sound from any direction.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var selectedPolarPattern: AVAudioSession.PolarPattern?](avaudiosessiondatasourcedescription/selectedpolarpattern.md)
+### Configuring microphone directivity
+- [var selectedPolarPattern: AVAudioSession.PolarPattern?](../avaudiosessiondatasourcedescription/selectedpolarpattern.md)
   The data source’s active polar pattern.
-- [var supportedPolarPatterns: [AVAudioSession.PolarPattern]?](avaudiosessiondatasourcedescription/supportedpolarpatterns.md)
+- [var supportedPolarPatterns: [AVAudioSession.PolarPattern]?](../avaudiosessiondatasourcedescription/supportedpolarpatterns.md)
   The set of directivity configurations supported by the data source.
-- [var preferredPolarPattern: AVAudioSession.PolarPattern?](avaudiosessiondatasourcedescription/preferredpolarpattern.md)
+- [var preferredPolarPattern: AVAudioSession.PolarPattern?](../avaudiosessiondatasourcedescription/preferredpolarpattern.md)
   The preferred directivity configuration for the data source.
-- [func setPreferredPolarPattern(AVAudioSession.PolarPattern?) throws](avaudiosessiondatasourcedescription/setpreferredpolarpattern(_:).md)
+- [func setPreferredPolarPattern(AVAudioSession.PolarPattern?) throws](../avaudiosessiondatasourcedescription/setpreferredpolarpattern%28_%29.md)
   Selects the preferred directivity configuration for the data source.
 
 

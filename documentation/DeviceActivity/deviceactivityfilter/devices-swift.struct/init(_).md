@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Filters data for the provided device models.
 

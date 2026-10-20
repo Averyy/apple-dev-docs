@@ -1,18 +1,19 @@
 # fontSize
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the font used in the label.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The size of the font used in the label.
 var fontSize: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat fontSize;
+```
+
 ## Mentions
 
-- [Adding Text to a Scene](adding-text-to-a-scene.md)
+- [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
 #### Discussion
 
@@ -30,9 +35,10 @@ The default font size is 32 points.
 
 ## See Also
 
-- [var fontColor: UIColor?](sklabelnode/fontcolor.md)
+### Specifying a Label’s Font
+- [var fontColor: UIColor?](./fontcolor.md)
   The color of the label.
-- [var fontName: String?](sklabelnode/fontname.md)
+- [var fontName: String?](./fontname.md)
   The font used for the text in the label.
 
 

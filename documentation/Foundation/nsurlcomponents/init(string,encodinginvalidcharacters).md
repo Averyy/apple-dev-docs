@@ -1,7 +1,8 @@
 # init(string:encodingInvalidCharacters:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
 
@@ -20,6 +21,10 @@ Creates a URL components instance from the provided string, optionally IDNA- and
 init?(string URLString: String, encodingInvalidCharacters: Bool)
 ```
 
+```objc
+- (instancetype) initWithString:(NSString *) URLString encodingInvalidCharacters:(BOOL) encodingInvalidCharacters;
+```
+
 #### Discussion
 
 If `encodingInvalidCharacters` is `true`, this initializer tries to encode the string to create a valid URL. If the URL string is still invalid after encoding, the initializer returns `nil`.
@@ -31,11 +36,12 @@ If `encodingInvalidCharacters` is `true`, this initializer tries to encode the s
 
 ## See Also
 
-- [init()](nsurlcomponents/init.md)
+### Creating URL components
+- [init()](./init%28%29.md)
   Creates a URL components object with all components left undefined.
-- [init?(string: String)](nsurlcomponents/init(string:).md)
+- [init?(string: String)](./init%28string%29.md)
   Creates a URL components object by parsing a URL in string form.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](./init%28url,resolvingagainstbaseurl%29-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
 
 

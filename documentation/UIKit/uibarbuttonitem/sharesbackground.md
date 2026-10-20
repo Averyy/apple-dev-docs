@@ -1,7 +1,8 @@
 # sharesBackground
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value indicating whether this bar button item can share a background with other items in a navigation bar or a toolbar.
 
@@ -16,6 +17,10 @@ A boolean value indicating whether this bar button item can share a background w
 var sharesBackground: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL sharesBackground;
+```
+
 #### Discussion
 
 When `NO`, This item will not be visually grouped with any other items.
@@ -24,11 +29,12 @@ This property is ignored if the item is in a `UIBarButtonItemGroup` with more th
 
 ## See Also
 
-- [var hidesSharedBackground: Bool](uibarbuttonitem/hidessharedbackground.md)
+### Customizing placement in a toolbar
+- [var hidesSharedBackground: Bool](./hidessharedbackground.md)
   A boolean value indicating whether the background this item may share with other items in the bar should be hidden.
-- [var axisBehavior: UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.property.md)
+- [var axisBehavior: UIBarButtonItem.AxisBehavior](./axisbehavior-swift.property.md)
   The bar axis behavior of the item.
-- [UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.enum.md)
+- [UIBarButtonItem.AxisBehavior](./axisbehavior-swift.enum.md)
 
 
 ---

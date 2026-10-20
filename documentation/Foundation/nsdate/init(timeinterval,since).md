@@ -1,7 +1,8 @@
 # init(timeInterval:since:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a date object initialized relative to another given date by a given number of seconds.
 
@@ -18,6 +19,10 @@ Returns a date object initialized relative to another given date by a given numb
 
 ```swift
 convenience init(timeInterval secsToBeAdded: TimeInterval, since date: Date)
+```
+
+```objc
+- (instancetype) initWithTimeInterval:(NSTimeInterval) secsToBeAdded sinceDate:(NSDate *) date;
 ```
 
 #### Return Value

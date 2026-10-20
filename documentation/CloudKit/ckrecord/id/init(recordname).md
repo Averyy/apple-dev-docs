@@ -1,7 +1,8 @@
 # init(recordName:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new record ID with the specified name in the default zone.
 
@@ -10,7 +11,7 @@ Creates a new record ID with the specified name in the default zone.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Creates a new record ID with the specified name in the default zone.
 
 ```swift
 convenience init(recordName: String)
+```
+
+```objc
+- (instancetype) initWithRecordName:(NSString *) recordName;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ Use this method when you’re creating or searching for records in the default z
 
 ## See Also
 
-- [convenience init(recordName: String, zoneID: CKRecordZone.ID)](ckrecord/id/init(recordname:zoneid:).md)
+### Creating a Record ID
+- [convenience init(recordName: String, zoneID: CKRecordZone.ID)](./init%28recordname,zoneid%29.md)
   Creates a new record ID with the specified name and zone information.
-- [let CKRecordNameZoneWideShare: String](ckrecordnamezonewideshare.md)
+- [let CKRecordNameZoneWideShare: String](../../ckrecordnamezonewideshare.md)
   The name of a share record that manages a shared record zone.
 
 

@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the file that was received.
 
@@ -18,13 +19,18 @@ The URL of the file that was received.
 var fileURL: URL { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSURL * fileURL;
+```
+
 #### Discussion
 
-The system places downloaded files inside a temporary directory. If you intend to keep the file, it is your responsibility to move the file to a more permanent location inside your extension’s container directory. You must move the file before your session delegate’s [`session(_:didReceive:)`](wcsessiondelegate/session(_:didreceive:).md) method returns.
+The system places downloaded files inside a temporary directory. If you intend to keep the file, it is your responsibility to move the file to a more permanent location inside your extension’s container directory. You must move the file before your session delegate’s [`session(_:didReceive:)`](../wcsessiondelegate/session%28_,didreceive%29.md) method returns.
 
 ## See Also
 
-- [var metadata: [String : Any]?](wcsessionfile/metadata.md)
+### Getting the File Information
+- [var metadata: [String : Any]?](./metadata.md)
   A dictionary of additional information that was sent with the file.
 
 

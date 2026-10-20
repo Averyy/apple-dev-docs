@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that represents a joint name.
@@ -23,7 +24,8 @@ associatedtype PoseJointName : Decodable, Encodable, Hashable, RawRepresentable 
 
 ## See Also
 
-- [var availableJointNames: [Self.PoseJointName]](poseproviding/availablejointnames.md)
+### Getting the joint names
+- [var availableJointNames: [Self.PoseJointName]](./availablejointnames.md)
   The names of the available joints in the observation.
 
 

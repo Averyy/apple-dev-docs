@@ -1,17 +1,20 @@
 # delegate
 
 **Framework**: Multipeer Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that handles session-related events.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
@@ -19,17 +22,30 @@ The delegate object that handles session-related events.
 weak var delegate: (any MCSessionDelegate)? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, weak, nullable) id<MCSessionDelegate> delegate;
+```
+
+*macOS*
+
+```objc
+@property (atomic, weak, nullable) id<MCSessionDelegate> delegate;
+```
+
 ## See Also
 
-- [convenience init(peer: MCPeerID)](mcsession/init(peer:).md)
+### Creating a Session
+- [convenience init(peer: MCPeerID)](./init%28peer%29.md)
   Creates a Multipeer Connectivity session.
-- [init(peer: MCPeerID, securityIdentity: [Any]?, encryptionPreference: MCEncryptionPreference)](mcsession/init(peer:securityidentity:encryptionpreference:).md)
+- [init(peer: MCPeerID, securityIdentity: [Any]?, encryptionPreference: MCEncryptionPreference)](./init%28peer,securityidentity,encryptionpreference%29.md)
   Creates a Multipeer Connectivity session, providing security information.
-- [var encryptionPreference: MCEncryptionPreference](mcsession/encryptionpreference.md)
+- [var encryptionPreference: MCEncryptionPreference](./encryptionpreference.md)
   A value indicating whether the connection prefers encrypted connections, unencrypted connections, or has no preference.
-- [var myPeerID: MCPeerID](mcsession/mypeerid.md)
+- [var myPeerID: MCPeerID](./mypeerid.md)
   A local identifier that represents the device on which your app is currently running.
-- [var securityIdentity: [Any]?](mcsession/securityidentity.md)
+- [var securityIdentity: [Any]?](./securityidentity.md)
   The security identity of the local peer.
 
 

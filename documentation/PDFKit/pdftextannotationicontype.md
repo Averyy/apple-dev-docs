@@ -1,7 +1,8 @@
 # PDFTextAnnotationIconType
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of icons that a text annotation can use.
 
@@ -10,7 +11,7 @@ The types of icons that a text annotation can use.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,41 +20,46 @@ The types of icons that a text annotation can use.
 enum PDFTextAnnotationIconType
 ```
 
+```c
+enum PDFTextAnnotationIconType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PDFTextAnnotationIconType.comment](pdftextannotationicontype/comment.md)
+- [PDFTextAnnotationIconType.comment](./pdftextannotationicontype/comment.md)
   Comment annotation icon.
-- [PDFTextAnnotationIconType.key](pdftextannotationicontype/key.md)
+- [PDFTextAnnotationIconType.key](./pdftextannotationicontype/key.md)
   Key annotation icon.
-- [PDFTextAnnotationIconType.note](pdftextannotationicontype/note.md)
+- [PDFTextAnnotationIconType.note](./pdftextannotationicontype/note.md)
   Note annotation icon.
-- [PDFTextAnnotationIconType.help](pdftextannotationicontype/help.md)
+- [PDFTextAnnotationIconType.help](./pdftextannotationicontype/help.md)
   Help annotation icon.
-- [PDFTextAnnotationIconType.newParagraph](pdftextannotationicontype/newparagraph.md)
+- [PDFTextAnnotationIconType.newParagraph](./pdftextannotationicontype/newparagraph.md)
   New Paragraph annotation icon.
-- [PDFTextAnnotationIconType.paragraph](pdftextannotationicontype/paragraph.md)
+- [PDFTextAnnotationIconType.paragraph](./pdftextannotationicontype/paragraph.md)
   Paragraph annotation icon.
-- [PDFTextAnnotationIconType.insert](pdftextannotationicontype/insert.md)
+- [PDFTextAnnotationIconType.insert](./pdftextannotationicontype/insert.md)
   Insert annotation icon.
 ### Initializers
-- [init?(rawValue: Int)](pdftextannotationicontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdftextannotationicontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var iconType: PDFTextAnnotationIconType](pdfannotation/icontype.md)
+### Configuring Text Annotations
+- [var iconType: PDFTextAnnotationIconType](./pdfannotation/icontype.md)
   The type of icon to display for a pop-up text annotation.
-- [struct PDFAnnotationTextIconType](pdfannotationtexticontype.md)
+- [struct PDFAnnotationTextIconType](./pdfannotationtexticontype.md)
   Constants for icon type values in text annotation property dictionaries.
 
 

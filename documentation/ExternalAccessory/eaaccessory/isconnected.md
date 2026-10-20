@@ -1,7 +1,8 @@
 # isConnected
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the accessory is currently connected to the iOS-based device.
 
@@ -19,11 +20,16 @@ A Boolean value indicating whether the accessory is currently connected to the i
 var isConnected: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isConnected) BOOL connected;
+```
+
 ## See Also
 
-- [var connectionID: Int](eaaccessory/connectionid.md)
+### Getting Connection Information
+- [var connectionID: Int](./connectionid.md)
   The accessory’s unique ID for connecting to the iOS-based device.
-- [Null Connection ID](null-connection-id.md)
+- [Null Connection ID](../null-connection-id.md)
   The ID for an unconnected accessory.
 
 

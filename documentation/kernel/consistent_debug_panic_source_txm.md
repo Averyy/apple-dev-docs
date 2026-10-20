@@ -1,14 +1,15 @@
 # CONSISTENT_DEBUG_PANIC_SOURCE_TXM
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 const uint64_t CONSISTENT_DEBUG_PANIC_SOURCE_TXM;
 ```
 

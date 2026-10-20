@@ -1,7 +1,8 @@
 # rowCount
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows in the Data Matrix code symbol.
 
@@ -19,17 +20,22 @@ The number of rows in the Data Matrix code symbol.
 var rowCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger rowCount;
+```
+
 #### Discussion
 
 Refer to ISO/IEC 16022:2006(E) for valid module row and column count combinations.
 
 ## See Also
 
-- [var errorCorrectedPayload: Data](cidatamatrixcodedescriptor/errorcorrectedpayload-swift.property.md)
+### Examining a Descriptor
+- [var errorCorrectedPayload: Data](./errorcorrectedpayload-swift.property.md)
   The error-corrected payload containing the data encoded in the Data Matrix code symbol.
-- [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
+- [var columnCount: Int](./columncount-swift.property.md)
   The number of columns in the Data Matrix code symbol.
-- [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](cidatamatrixcodedescriptor/eccversion-swift.property.md)
+- [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](./eccversion-swift.property.md)
   The error correction version of the Data Matrix code symbol.
 
 

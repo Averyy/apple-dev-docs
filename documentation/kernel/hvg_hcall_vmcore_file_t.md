@@ -1,14 +1,15 @@
 # hvg_hcall_vmcore_file_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct hvg_hcall_vmcore_file {
     ...
 } hvg_hcall_vmcore_file_t;
@@ -17,7 +18,7 @@ typedef struct hvg_hcall_vmcore_file {
 ## Topics
 
 ### Instance Properties
-- [tag](hvg_hcall_vmcore_file_t/3727959-tag.md)
+- [tag](./hvg_hcall_vmcore_file_t/api-3727959-tag.md)
 
 
 ---

@@ -1,16 +1,17 @@
 # Updating controls locally and remotely
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Update and reload controls from your app or using push notifications.
 
 #### Overview
 
-A control reloads and updates when someone interacts with it, when the app asks to reload it using the shared [`ControlCenter`](controlcenter.md), or when the system receives a specific remote push notification from Apple Push Notification service (APNs). When someone interacts with a control, it’s reloaded once the assigned app intent finishes its [`perform()`](https://developer.apple.com/documentation/appintents/appintent/perform()) function. Plan for when someone interacts with your app or website and the state of a control needs to update to reflect the changes.
+A control reloads and updates when someone interacts with it, when the app asks to reload it using the shared [`ControlCenter`](./controlcenter.md), or when the system receives a specific remote push notification from Apple Push Notification service (APNs). When someone interacts with a control, it’s reloaded once the assigned app intent finishes its [`perform()`](../AppIntents/appintent/perform%28%29.md) function. Plan for when someone interacts with your app or website and the state of a control needs to update to reflect the changes.
 
-##### Request Reloading Controls From an App
+##### Request reloading controls from an app
 
-Reload controls when their state changes after someone interacts with them, such as turning a light on or off from within your app. Use the [`reloadControls(ofKind:)`](controlcenter/reloadcontrols(ofkind:).md) method on the shared `ControlCenter` to ask the system to reload a control from your app that matches a specific `kind` unique identifier.
+Reload controls when their state changes after someone interacts with them, such as turning a light on or off from within your app. Use the [`reloadControls(ofKind:)`](./controlcenter/reloadcontrols%28ofkind%29.md) method on the shared `ControlCenter` to ask the system to reload a control from your app that matches a specific `kind` unique identifier.
 
 The following code shows reloading a garage door control toggle from within the app:
 
@@ -22,19 +23,19 @@ func toggleGarageDoor() {
 }
 ```
 
-Use the [`reloadAllControls()`](controlcenter/reloadallcontrols().md) method to ask the system to reload all controls your app provides.
+Use the [`reloadAllControls()`](./controlcenter/reloadallcontrols%28%29.md) method to ask the system to reload all controls your app provides.
 
-##### Use Push Notifications to Reload Controls
+##### Use push notifications to reload controls
 
-You may need the system to reload controls when someone interacts with a web server connected to your app that affects their state. Enable a control to update its state from a push notification event by registering a [`ControlPushHandler`](controlpushhandler.md) type on the [`ControlWidgetConfiguration`](https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration). The system reloads any controls with a registered push handler in response to a push notification event. You don’t need to reload the controls manually.
+You may need the system to reload controls when someone interacts with a web server connected to your app that affects their state. Enable a control to update its state from a push notification event by registering a [`ControlPushHandler`](./controlpushhandler.md) type on the [`ControlWidgetConfiguration`](../SwiftUI/controlwidgetconfiguration.md). The system reloads any controls with a registered push handler in response to a push notification event. You don’t need to reload the controls manually.
 
-The `ControlPushHandler` requires a [`pushTokensDidChange(controls:)`](controlpushhandler/pushtokensdidchange(controls:).md) function that is called when push tokens change. The system calls this function when you add or remove controls, and may call it at other times if any push tokens change or if someone reconfigures a control.
+The `ControlPushHandler` requires a [`pushTokensDidChange(controls:)`](./controlpushhandler/pushtokensdidchange%28controls%29.md) function that is called when push tokens change. The system calls this function when you add or remove controls, and may call it at other times if any push tokens change or if someone reconfigures a control.
 
-The `controls` parameter describes all controls from your app registered with this handler type, which allows you to batch all push tokens together and send them to your server at the same time. Each [`ControlInfo`](controlinfo.md) object represents a control and includes the following:
+The `controls` parameter describes all controls from your app registered with this handler type, which allows you to batch all push tokens together and send them to your server at the same time. Each [`ControlInfo`](./controlinfo.md) object represents a control and includes the following:
 
-- The [`kind`](controlinfo/kind.md) you set when creating the control.
-- The [`configurationIntent(of:)`](controlinfo/configurationintent(of:).md) function. If your control is configurable, this function provides the custom intent containing the user-configured value.
-- The [`pushInfo`](controlinfo/pushinfo.md) containing the unique push token that’s used to deliver updates for this control, if a push handler is registered.
+- The [`kind`](./controlinfo/kind.md) you set when creating the control.
+- The [`configurationIntent(of:)`](./controlinfo/configurationintent%28of%29.md) function. If your control is configurable, this function provides the custom intent containing the user-configured value.
+- The [`pushInfo`](./controlinfo/pushinfo.md) containing the unique push token that’s used to deliver updates for this control, if a push handler is registered.
 
 The following code registers a push handler on a control that opens and closes a garage door:
 
@@ -58,7 +59,7 @@ struct MyPushHandler: ControlPushHandler {
 }
 ```
 
-Query for the current set of your controls someone placed across their system in your app by calling [`currentControls()`](controlcenter/currentcontrols().md) on the shared `ControlCenter`. Introspect the push tokens, if any, from the set of controls to sync state with your app and server.
+Query for the current set of your controls someone placed across their system in your app by calling [`currentControls()`](./controlcenter/currentcontrols%28%29.md) on the shared `ControlCenter`. Introspect the push tokens, if any, from the set of controls to sync state with your app and server.
 
 The following code queries for the current set of controls and gets any push tokens associated with them:
 
@@ -96,9 +97,10 @@ DATA
 
 ## See Also
 
-- [protocol ControlPushHandler](controlpushhandler.md)
+### Updates
+- [protocol ControlPushHandler](./controlpushhandler.md)
   A type that can receive push information about user-configured controls.
-- [struct ControlPushInfo](controlpushinfo.md)
+- [struct ControlPushInfo](./controlpushinfo.md)
   A structure that contains information about the push token of a user-configured control.
 
 

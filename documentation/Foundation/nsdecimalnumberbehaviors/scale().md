@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the number of digits allowed after the decimal separator.
@@ -21,15 +22,19 @@ Returns the number of digits allowed after the decimal separator.
 func scale() -> Int16
 ```
 
+```objc
+- (short) scale;
+```
+
 #### Return Value
 
 The number of digits allowed after the decimal separator.
 
 #### Discussion
 
-This method limits the precision of the values returned by `NSDecimalNumber`’s `decimalNumberBy...` methods. If [`scale()`](nsdecimalnumberbehaviors/scale().md) returns a negative value, it affects the digits before the decimal separator as well. If [`scale()`](nsdecimalnumberbehaviors/scale().md) returns `NSDecimalNoScale`, the number of digits is unlimited.
+This method limits the precision of the values returned by `NSDecimalNumber`’s `decimalNumberBy...` methods. If [`scale()`](./scale%28%29.md) returns a negative value, it affects the digits before the decimal separator as well. If [`scale()`](./scale%28%29.md) returns `NSDecimalNoScale`, the number of digits is unlimited.
 
-Assuming that [`roundingMode()`](nsdecimalnumberbehaviors/roundingmode().md) returns `NSRoundPlain`, different values of [`scale()`](nsdecimalnumberbehaviors/scale().md) have the following effects on the number 123.456:
+Assuming that [`roundingMode()`](./roundingmode%28%29.md) returns `NSRoundPlain`, different values of [`scale()`](./scale%28%29.md) have the following effects on the number 123.456:
 
 | Scale | Return Value |
 | --- | --- |
@@ -40,7 +45,8 @@ Assuming that [`roundingMode()`](nsdecimalnumberbehaviors/roundingmode().md) ret
 
 ## See Also
 
-- [func roundingMode() -> NSDecimalNumber.RoundingMode](nsdecimalnumberbehaviors/roundingmode.md)
+### Rounding
+- [func roundingMode() -> NSDecimalNumber.RoundingMode](./roundingmode%28%29.md)
   Returns the way that `NSDecimalNumber`’s `decimalNumberBy...` methods round their return values.
 
 

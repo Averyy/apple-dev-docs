@@ -1,23 +1,26 @@
 # App.Relationships.InAppPurchases
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`App.Relationships.InAppPurchasesV2`](./inapppurchasesv2-data.dictionary.md) instead.
 
 ## Declaration
 
-```swift
+```
 object App.Relationships.InAppPurchases
 ```
 
 ## Topics
 
 ### Objects
-- [object App.Relationships.InAppPurchases.Data](app/relationships-data.dictionary/inapppurchases-data.dictionary/data-data.dictionary.md)
+- [object App.Relationships.InAppPurchases.Data](./inapppurchases-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -28,35 +31,36 @@ object App.Relationships.InAppPurchases
 
 ## See Also
 
-- [object App](app.md)
+### Objects and data types
+- [object App](../../app.md)
   An app registered in App Store Connect, representing all versions, metadata, and configuration for your iOS, macOS, tvOS, or watchOS application.
-- [object AppWithoutIncludesResponse](appwithoutincludesresponse.md)
+- [object AppWithoutIncludesResponse](../../appwithoutincludesresponse.md)
   A response containing a single app, without including related resources.
-- [object AppsWithoutIncludesResponse](appswithoutincludesresponse.md)
+- [object AppsWithoutIncludesResponse](../../appswithoutincludesresponse.md)
   A response containing a list of apps, without including related resources.
-- [object AppUpdateRequest](appupdaterequest.md)
+- [object AppUpdateRequest](../../appupdaterequest.md)
   The request body you use to update an App Update.
-- [object AppClipsResponse](appclipsresponse.md)
+- [object AppClipsResponse](../../appclipsresponse.md)
   The response body for endpoints that list App Clips for an app.
-- [object AppResponse](appresponse.md)
+- [object AppResponse](../../appresponse.md)
   The response body for endpoints that read or modify a single app in your team.
-- [object AppsResponse](appsresponse.md)
+- [object AppsResponse](../../appsresponse.md)
   A response containing a list of apps registered in your App Store Connect team.
-- [object InAppPurchase](inapppurchase.md)
+- [object InAppPurchase](../../inapppurchase.md)
   A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
-- [object InAppPurchaseResponse](inapppurchaseresponse.md)
+- [object InAppPurchaseResponse](../../inapppurchaseresponse.md)
   The response body for endpoints that read a single In-App Purchase.
-- [object InAppPurchasesResponse](inapppurchasesresponse.md)
+- [object InAppPurchasesResponse](../../inapppurchasesresponse.md)
   The response body for endpoints that list In-App Purchases for an app.
-- [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
+- [object AppBetaTestersLinkagesRequest](../../appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
-- [object AppPricePointV3](apppricepointv3.md)
+- [object AppPricePointV3](../../apppricepointv3.md)
   A specific price tier in App Store pricing, defining the customer price and developer proceeds across territories.
-- [object AppPricePointV3Response](apppricepointv3response.md)
+- [object AppPricePointV3Response](../../apppricepointv3response.md)
   A response containing a single App Store price point with its territory-specific pricing details.
-- [object AppPricePointsV3Response](apppricepointsv3response.md)
+- [object AppPricePointsV3Response](../../apppricepointsv3response.md)
   A response containing a list of available App Store price points.
-- [object AppPriceSchedule](apppriceschedule.md)
+- [object AppPriceSchedule](../../apppriceschedule.md)
   The pricing schedule for an app, specifying base territory prices, manual prices for other territories, and scheduled price changes.
 
 

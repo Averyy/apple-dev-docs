@@ -1,7 +1,8 @@
 # WeatherAvailability.AvailabilityKind.unsupported
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data isn’t supported for the location.
 

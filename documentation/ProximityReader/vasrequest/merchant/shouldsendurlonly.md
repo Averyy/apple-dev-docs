@@ -1,14 +1,17 @@
 # shouldSendURLOnly
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to send only the merchant URL to the customer’s device without requesting data.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 17.0+
+- iOS 15.4+ - Deprecated in 16.4
+- iPadOS 15.4+ - Deprecated in 16.4
+- Mac Catalyst 17.0+ - Deprecated in 17.0
+
+> **Deprecated**: Not supported
 
 ## Declaration
 
@@ -22,7 +25,8 @@ The customer’s device can use the URL for pass provisioning.
 
 ## See Also
 
-- [let url: URL?](vasrequest/merchant/url.md)
+### Getting the merchant URL details
+- [let url: URL?](./url.md)
   The URL to display to the customer if the matching loyalty or reward ID isn’t found.
 
 

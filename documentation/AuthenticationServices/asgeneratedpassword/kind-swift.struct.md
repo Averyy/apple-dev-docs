@@ -1,7 +1,8 @@
 # ASGeneratedPassword.Kind
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.2+
@@ -15,27 +16,31 @@
 struct Kind
 ```
 
+```c
+typedef NSString * ASGeneratedPasswordKind;
+```
+
 ## Topics
 
 ### Initializers
-- [init(String)](asgeneratedpassword/kind-swift.struct/init(_:).md)
-- [init(rawValue: String)](asgeneratedpassword/kind-swift.struct/init(rawvalue:).md)
+- [init(String)](./kind-swift.struct/init%28_%29.md)
+- [init(rawValue: String)](./kind-swift.struct/init%28rawvalue%29.md)
 ### Type Properties
-- [static let alphanumeric: ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.struct/alphanumeric.md)
+- [static let alphanumeric: ASGeneratedPassword.Kind](./kind-swift.struct/alphanumeric.md)
   A password that only contains alphanumeric characters.
-- [static let passphrase: ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.struct/passphrase.md)
+- [static let passphrase: ASGeneratedPassword.Kind](./kind-swift.struct/passphrase.md)
   A password that contains multiple words or phrases.
-- [static let strong: ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.struct/strong.md)
+- [static let strong: ASGeneratedPassword.Kind](./kind-swift.struct/strong.md)
   A password that contains alphanumeric characters and special characters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

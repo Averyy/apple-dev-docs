@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.6+
@@ -14,6 +15,10 @@
 
 ```swift
 var attachment: ASAuthorizationPublicKeyCredentialAttachment { get }
+```
+
+```objc
+@property (nonatomic, readonly) ASAuthorizationPublicKeyCredentialAttachment attachment;
 ```
 
 

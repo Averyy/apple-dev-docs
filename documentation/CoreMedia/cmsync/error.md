@@ -1,7 +1,8 @@
 # CMSync.Error
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe syncing errors.
 
@@ -23,20 +24,20 @@ struct Error
 ## Topics
 
 ### Constants
-- [static let allocationFailed: NSError](cmsync/error/allocationfailed.md)
+- [static let allocationFailed: NSError](./error/allocationfailed.md)
   A sync error that indicates the memory allocation fails.
-- [static let invalidParameter: NSError](cmsync/error/invalidparameter.md)
+- [static let invalidParameter: NSError](./error/invalidparameter.md)
   A sync error that indicates a parameter isn’t valid.
-- [static let missingRequiredParameter: NSError](cmsync/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./error/missingrequiredparameter.md)
   A sync error that indicates a missing parameter.
-- [static let rateMustBeNonZero: NSError](cmsync/error/ratemustbenonzero.md)
+- [static let rateMustBeNonZero: NSError](./error/ratemustbenonzero.md)
   A sync error that indicates the rate must not be zero.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

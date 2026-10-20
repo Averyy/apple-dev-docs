@@ -1,7 +1,8 @@
 # GameCenterDetailUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a detail resource.
 
@@ -10,17 +11,18 @@ Attributes that describe a detail resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailUpdateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `challengeEnabled` (boolean): This attribute is deprecated.
+- `challengeEnabled` (boolean) *(deprecated)*: This attribute is deprecated.
 
 ## See Also
 
-- [object GameCenterDetailUpdateRequest.Data.Relationships](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterDetailUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

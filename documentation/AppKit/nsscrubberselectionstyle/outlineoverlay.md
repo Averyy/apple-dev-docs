@@ -1,7 +1,8 @@
 # outlineOverlay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A built-in selection style that draws the outline of the scrubber item.
 
@@ -14,9 +15,14 @@ A built-in selection style that draws the outline of the scrubber item.
 class var outlineOverlay: NSScrubberSelectionStyle { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSScrubberSelectionStyle * outlineOverlayStyle;
+```
+
 ## See Also
 
-- [class var roundedBackground: NSScrubberSelectionStyle](nsscrubberselectionstyle/roundedbackground.md)
+### Using built-in styles
+- [class var roundedBackground: NSScrubberSelectionStyle](./roundedbackground.md)
   A built-in selection style that draws a rounded rectangle as the background of the scrubber item.
 
 

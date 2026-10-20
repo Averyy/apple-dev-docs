@@ -1,7 +1,8 @@
 # setImage(_:imageProperties:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the image to display in an image view.
 
@@ -14,6 +15,10 @@ Sets the image to display in an image view.
 func setImage(_ image: CGImage!, imageProperties metaData: [AnyHashable : Any]!)
 ```
 
+```objc
+- (void) setImage:(CGImageRef) image imageProperties:(NSDictionary *) metaData;
+```
+
 ## Parameters
 
 - `image`: The image to set.
@@ -21,11 +26,13 @@ func setImage(_ image: CGImage!, imageProperties metaData: [AnyHashable : Any]!)
 
 ## See Also
 
-- [func imageProperties() -> [AnyHashable : Any]!](ikimageview/imageproperties.md)
+### Related Documentation
+- [func imageProperties() -> [AnyHashable : Any]!](./imageproperties%28%29.md)
   Returns the metadata for the image in the view.
-- [func image() -> Unmanaged<CGImage>!](ikimageview/image.md)
+### Getting and Setting Images
+- [func image() -> Unmanaged<CGImage>!](./image%28%29.md)
   Returns the image associated with the view, after any image corrections.
-- [func setImageWith(URL!)](ikimageview/setimagewith(_:).md)
+- [func setImageWith(URL!)](./setimagewith%28_%29.md)
   Initializes an image view with the image specified by a URL.
 
 

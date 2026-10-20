@@ -1,7 +1,8 @@
 # gss_indicate_mechs(_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the list of supported underlying security mechanisms.
 
@@ -18,26 +19,31 @@ Returns the list of supported underlying security mechanisms.
 func gss_indicate_mechs(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ mech_set: UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_indicate_mechs(OM_uint32 *minor_status, gss_OID_set*mech_set);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on completion.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on completion.
 
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `mech_set`: A pointer the function uses to output the available set of mechanism identifiers. Release the set with a call to [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) when you are done with it.
+- `mech_set`: A pointer the function uses to output the available set of mechanism identifiers. Release the set with a call to [`gss_release_oid_set(_:_:)`](./gss_release_oid_set%28_,_%29.md) when you are done with it.
 
 ## See Also
 
-- [func gss_indicate_mechs_by_attrs(UnsafeMutablePointer<OM_uint32>, gss_const_OID_set?, gss_const_OID_set?, gss_const_OID_set?, UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32](gss_indicate_mechs_by_attrs(_:_:_:_:_:).md)
+### Queries
+- [func gss_indicate_mechs_by_attrs(UnsafeMutablePointer<OM_uint32>, gss_const_OID_set?, gss_const_OID_set?, gss_const_OID_set?, UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32](./gss_indicate_mechs_by_attrs%28_,_,_,_,_%29.md)
   Returns the set of mechanisms that fulfill the given criteria.
-- [func gss_display_mech_attr(UnsafeMutablePointer<OM_uint32>, gss_const_OID, gss_buffer_t?, gss_buffer_t?, gss_buffer_t?) -> OM_uint32](gss_display_mech_attr(_:_:_:_:_:).md)
+- [func gss_display_mech_attr(UnsafeMutablePointer<OM_uint32>, gss_const_OID, gss_buffer_t?, gss_buffer_t?, gss_buffer_t?) -> OM_uint32](./gss_display_mech_attr%28_,_,_,_,_%29.md)
   Returns a human-readable name and description of a mechanism attribute.
-- [func gss_inquire_attrs_for_mech(UnsafeMutablePointer<OM_uint32>, gss_const_OID, UnsafeMutablePointer<gss_OID_set?>?, UnsafeMutablePointer<gss_OID_set?>?) -> OM_uint32](gss_inquire_attrs_for_mech(_:_:_:_:).md)
+- [func gss_inquire_attrs_for_mech(UnsafeMutablePointer<OM_uint32>, gss_const_OID, UnsafeMutablePointer<gss_OID_set?>?, UnsafeMutablePointer<gss_OID_set?>?) -> OM_uint32](./gss_inquire_attrs_for_mech%28_,_,_,_%29.md)
   Returns the supported attributes for one or all mechanisms.
-- [func gss_inquire_mech_for_saslname(UnsafeMutablePointer<OM_uint32>, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>) -> OM_uint32](gss_inquire_mech_for_saslname(_:_:_:).md)
+- [func gss_inquire_mech_for_saslname(UnsafeMutablePointer<OM_uint32>, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>) -> OM_uint32](./gss_inquire_mech_for_saslname%28_,_,_%29.md)
   Returns the GSS-API mechanism identifier for a given Simple Authentication and Security Layer (SASL) protocol name.
-- [func gss_inquire_saslname_for_mech(UnsafeMutablePointer<OM_uint32>, gss_OID, gss_buffer_t?, gss_buffer_t?, gss_buffer_t?) -> OM_uint32](gss_inquire_saslname_for_mech(_:_:_:_:_:).md)
+- [func gss_inquire_saslname_for_mech(UnsafeMutablePointer<OM_uint32>, gss_OID, gss_buffer_t?, gss_buffer_t?, gss_buffer_t?) -> OM_uint32](./gss_inquire_saslname_for_mech%28_,_,_,_,_%29.md)
   Returns the Simple Authentication and Security Layer (SASL) protocol name for a given GSS-API mechanism.
 
 

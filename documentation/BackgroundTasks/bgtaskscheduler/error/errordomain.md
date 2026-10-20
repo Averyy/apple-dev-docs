@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The background tasks error domain as a string.
 

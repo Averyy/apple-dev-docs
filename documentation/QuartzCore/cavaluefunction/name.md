@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of the value function.
 
@@ -19,9 +20,14 @@ Returns the name of the value function.
 var name: CAValueFunctionName { get }
 ```
 
+```objc
+@property (readonly) CAValueFunctionName name;
+```
+
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

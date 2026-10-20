@@ -1,7 +1,8 @@
 # fitted
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sizes a button along its primary axis to fit its inner content, compressing if necessary.
 

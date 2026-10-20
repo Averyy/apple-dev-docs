@@ -1,14 +1,15 @@
 # kHIDUsage_Sprt_5Wood
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Sprt_5Wood = 0x61
 ```
 

@@ -1,7 +1,8 @@
 # loadend
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An event signifying the request has been completed.
 
@@ -10,21 +11,22 @@ An event signifying the request has been completed.
 
 ## Declaration
 
-```swift
+```
 attribute  loadend;
 ```
 
 ## See Also
 
-- [abort](xmlhttprequest/1627402-abort.md)
+### Responding to Events
+- [abort](./api-1627402-abort.md)
   An event signifying the request has aborted.
-- [error](xmlhttprequest/1627326-error.md)
+- [error](./api-1627326-error.md)
   An event signifying an error occurred during the request.
-- [load](xmlhttprequest/1627352-load.md)
+- [load](./api-1627352-load.md)
   An event signifying the request was successfully loaded.
-- [loadstart](xmlhttprequest/1627371-loadstart.md)
+- [loadstart](./api-1627371-loadstart.md)
   An event signifying the request has begun.
-- [readystatechange](xmlhttprequest/1627304-readystatechange.md)
+- [readystatechange](./api-1627304-readystatechange.md)
   An event signifying that a state change has occurred.
 
 

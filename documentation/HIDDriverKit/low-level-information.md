@@ -1,32 +1,34 @@
 # Low-Level Information
 
-**Framework**: HIDDriverKit
+**Framework**: HIDDriverKit  
+**Role**: API Collection
 
 Understand the underlying structures that support HID drivers.
 
 ## Topics
 
 ### Internal Structures
-- [IOHIDCompletionAction](iohidcompletionaction.md)
+- [IOHIDCompletionAction](./iohidcompletionaction.md)
   A function to call when a report operation completes.
-- [IOHIDCompletion](iohidcompletion.md)
+- [IOHIDCompletion](./iohidcompletion.md)
   A structure specifying the action to perform when a set/get report completes.
-- [HIDReportCommandType](hidreportcommandtype.md)
+- [HIDReportCommandType](./hidreportcommandtype.md)
   The type of the report command for a DriverKit driver.
-- [HIDActionType](hidactiontype.md)
+- [HIDActionType](./hidactiontype.md)
 ### Version Information
-- [HIDDriverKitVersionNumber](hiddriverkitversionnumber.md)
+- [HIDDriverKitVersionNumber](./hiddriverkitversionnumber.md)
   The project version number for HIDDriverKit.
-- [HIDDriverKitVersionString](hiddriverkitversionstring.md)
+- [HIDDriverKitVersionString](./hiddriverkitversionstring.md)
   The project version string for HIDDriverKit.
 
 ## See Also
 
-- [IOHIDElement](iohidelement.md)
+### HID Device Data
+- [IOHIDElement](./iohidelement.md)
   An object that contains parsed information from a HID input report.
-- [IOHIDDigitizerCollection](iohiddigitizercollection.md)
+- [IOHIDDigitizerCollection](./iohiddigitizercollection.md)
   A collection of elements that contain digitizer-related data.
-- [com.apple.developer.hid.virtual.device](../bundleresources/entitlements/com.apple.developer.hid.virtual.device.md)
+- [com.apple.developer.hid.virtual.device](../BundleResources/entitlements/com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
 
 

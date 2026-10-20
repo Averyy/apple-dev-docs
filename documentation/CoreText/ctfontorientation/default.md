@@ -1,18 +1,19 @@
 # CTFontOrientation.default
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The native orientation of the font.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The native orientation of the font.
 case `default`
 ```
 
+```c
+kCTFontOrientationDefault
+```
+
 ## See Also
 
-- [CTFontOrientation.horizontal](ctfontorientation/horizontal.md)
+### Font Orientations
+- [CTFontOrientation.horizontal](./horizontal.md)
   The horizontal orientation.
-- [CTFontOrientation.vertical](ctfontorientation/vertical.md)
+- [CTFontOrientation.vertical](./vertical.md)
   The vertical orientation.
 
 

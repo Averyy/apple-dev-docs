@@ -1,7 +1,8 @@
 # supportsAppClipCodeTracking
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates if the device tracks App Clip Codes.
 
@@ -15,19 +16,24 @@ A flag that indicates if the device tracks App Clip Codes.
 class var supportsAppClipCodeTracking: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) BOOL supportsAppClipCodeTracking;
+```
+
 #### Discussion
 
-Devices require the Apple Neural Engine (ANE) to track App Clip Codes. The system sets this property to [`true`](https://developer.apple.com/documentation/swift/true) if the device contains the ANE chip. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+Devices require the Apple Neural Engine (ANE) to track App Clip Codes. The system sets this property to [`true`](../../Swift/true.md) if the device contains the ANE chip. The default value of this property is [`false`](../../Swift/false.md).
 
-Call this function before setting [`appClipCodeTrackingEnabled`](arworldtrackingconfiguration/appclipcodetrackingenabled.md).
+Call this function before setting [`appClipCodeTrackingEnabled`](../arworldtrackingconfiguration/appclipcodetrackingenabled.md).
 
 ## See Also
 
-- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
+### Accessing app clip codes
+- [Interacting with App Clip Codes in AR](../../AppClip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
-- [var appClipCodeTrackingEnabled: Bool](argeotrackingconfiguration/appclipcodetrackingenabled.md)
+- [var appClipCodeTrackingEnabled: Bool](./appclipcodetrackingenabled.md)
   A Boolean value that indicates if the framework searches the physical environment for App Clip Codes.
-- [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
+- [class ARAppClipCodeAnchor](../arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
 
 

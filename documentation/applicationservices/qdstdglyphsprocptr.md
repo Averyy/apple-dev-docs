@@ -1,7 +1,8 @@
 # QDStdGlyphsProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDStdGlyphsProcPtr = (UnsafeMutableRawPointer?, Int) -> OSStatus
+```
+
+```c
+typedef OSStatus (*QDStdGlyphsProcPtr)(void *dataStream, ByteCount size);
 ```
 
 

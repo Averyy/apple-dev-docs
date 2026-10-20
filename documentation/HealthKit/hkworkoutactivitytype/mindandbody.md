@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.mindAndBody
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for performing activities like walking meditation, Gyrotonic exercise, and Qigong.
 
@@ -19,17 +20,22 @@ The constant for performing activities like walking meditation, Gyrotonic exerci
 case mindAndBody
 ```
 
+```c
+HKWorkoutActivityTypeMindAndBody
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.barre](hkworkoutactivitytype/barre.md)
+### Studio activities
+- [HKWorkoutActivityType.barre](./barre.md)
   The constant for barre workout.
-- [HKWorkoutActivityType.cardioDance](hkworkoutactivitytype/cardiodance.md)
+- [HKWorkoutActivityType.cardioDance](./cardiodance.md)
   The constant for cardiovascular dance workouts.
-- [HKWorkoutActivityType.socialDance](hkworkoutactivitytype/socialdance.md)
+- [HKWorkoutActivityType.socialDance](./socialdance.md)
   The constant for dancing with a partner or partners, such as swing, salsa, or folk dances.
-- [HKWorkoutActivityType.yoga](hkworkoutactivitytype/yoga.md)
+- [HKWorkoutActivityType.yoga](./yoga.md)
   The constant for practicing yoga.
-- [HKWorkoutActivityType.pilates](hkworkoutactivitytype/pilates.md)
+- [HKWorkoutActivityType.pilates](./pilates.md)
   The constant for a pilates workout.
 
 

@@ -1,7 +1,8 @@
 # setCandidateData(_:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -12,23 +13,28 @@
 func setCandidateData(_ candidatesArray: [Any]!)
 ```
 
+```objc
+- (void) setCandidateData:(NSArray *) candidatesArray;
+```
+
 ## See Also
 
-- [func attachChild(IMKCandidates!, toCandidate: Int, type: IMKStyleType)](imkcandidates/attachchild(_:tocandidate:type:).md)
-- [func candidateFrame() -> NSRect](imkcandidates/candidateframe.md)
-- [func candidateIdentifier(atLineNumber: Int) -> Int](imkcandidates/candidateidentifier(atlinenumber:).md)
-- [func candidateStringIdentifier(Any!) -> Int](imkcandidates/candidatestringidentifier(_:).md)
-- [func clearSelection()](imkcandidates/clearselection.md)
-- [func detachChild(Int)](imkcandidates/detachchild(_:).md)
-- [func hideChild()](imkcandidates/hidechild.md)
-- [func lineNumberForCandidate(withIdentifier: Int) -> Int](imkcandidates/linenumberforcandidate(withidentifier:).md)
-- [func selectCandidate(Int)](imkcandidates/selectcandidate(_:).md)
-- [func selectCandidate(withIdentifier: Int) -> Bool](imkcandidates/selectcandidate(withidentifier:).md)
-- [func selectedCandidate() -> Int](imkcandidates/selectedcandidate.md)
-- [func selectedCandidateString() -> NSAttributedString!](imkcandidates/selectedcandidatestring.md)
-- [func setCandidateFrameTopLeft(NSPoint)](imkcandidates/setcandidateframetopleft(_:).md)
-- [func show()](imkcandidates/show.md)
-- [func showChild()](imkcandidates/showchild.md)
+### Instance Methods
+- [func attachChild(IMKCandidates!, toCandidate: Int, type: IMKStyleType)](./attachchild%28_,tocandidate,type%29.md)
+- [func candidateFrame() -> NSRect](./candidateframe%28%29.md)
+- [func candidateIdentifier(atLineNumber: Int) -> Int](./candidateidentifier%28atlinenumber%29.md)
+- [func candidateStringIdentifier(Any!) -> Int](./candidatestringidentifier%28_%29.md)
+- [func clearSelection()](./clearselection%28%29.md)
+- [func detachChild(Int)](./detachchild%28_%29.md)
+- [func hideChild()](./hidechild%28%29.md)
+- [func lineNumberForCandidate(withIdentifier: Int) -> Int](./linenumberforcandidate%28withidentifier%29.md)
+- [func selectCandidate(Int)](./selectcandidate%28_%29.md)
+- [func selectCandidate(withIdentifier: Int) -> Bool](./selectcandidate%28withidentifier%29.md)
+- [func selectedCandidate() -> Int](./selectedcandidate%28%29.md)
+- [func selectedCandidateString() -> NSAttributedString!](./selectedcandidatestring%28%29.md)
+- [func setCandidateFrameTopLeft(NSPoint)](./setcandidateframetopleft%28_%29.md)
+- [func show()](./show%28%29.md)
+- [func showChild()](./showchild%28%29.md)
 
 
 ---

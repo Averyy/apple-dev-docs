@@ -1,14 +1,15 @@
 # ia_lifetime
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct kev_in6_addrlifetime ia_lifetime;
 ```
 

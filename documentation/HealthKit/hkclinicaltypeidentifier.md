@@ -1,7 +1,8 @@
 # HKClinicalTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type identifier for the different categories of clinical records.
 
@@ -19,50 +20,54 @@ A type identifier for the different categories of clinical records.
 struct HKClinicalTypeIdentifier
 ```
 
+```c
+typedef NSString * HKClinicalTypeIdentifier;
+```
+
 ## Mentions
 
-- [Accessing Health Records](accessing-health-records.md)
-- [Authorizing access to health data](authorizing-access-to-health-data.md)
+- [Accessing Health Records](./accessing-health-records.md)
+- [Authorizing access to health data](./authorizing-access-to-health-data.md)
 
 #### Overview
 
-Clinical record samples are read-only, so you can’t request authorization to share clinical record types. You can’t create or save new [`HKClinicalRecord`](hkclinicalrecord.md) objects.
+Clinical record samples are read-only, so you can’t request authorization to share clinical record types. You can’t create or save new [`HKClinicalRecord`](./hkclinicalrecord.md) objects.
 
-For additional information, see [`Accessing Health Records`](accessing-health-records.md).
+For additional information, see [Accessing Health Records](./accessing-health-records.md).
 
 ## Topics
 
 ### Clinical Record Type Identifiers
-- [static let allergyRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/allergyrecord.md)
+- [static let allergyRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/allergyrecord.md)
   A type identifier for records of allergic or intolerant reactions.
-- [static let clinicalNoteRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/clinicalnoterecord.md)
+- [static let clinicalNoteRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/clinicalnoterecord.md)
   A type identifier for records of clinical notes.
-- [static let conditionRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/conditionrecord.md)
+- [static let conditionRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/conditionrecord.md)
   A type identifier for records of a condition, problem, diagnosis, or other event.
-- [static let immunizationRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/immunizationrecord.md)
+- [static let immunizationRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/immunizationrecord.md)
   A type identifier for records of the current or historical administration of vaccines.
-- [static let labResultRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/labresultrecord.md)
+- [static let labResultRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/labresultrecord.md)
   A type identifier for records of lab results.
-- [static let medicationRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/medicationrecord.md)
+- [static let medicationRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/medicationrecord.md)
   A type identifier for records of medication.
-- [static let procedureRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/procedurerecord.md)
+- [static let procedureRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/procedurerecord.md)
   A type identifier for records of procedures.
-- [static let vitalSignRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/vitalsignrecord.md)
+- [static let vitalSignRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/vitalsignrecord.md)
   A type identifier for records of vital signs.
-- [static let coverageRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/coveragerecord.md)
+- [static let coverageRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/coveragerecord.md)
   A type identifier for records containing information about the user’s insurance coverage.
 ### Initializers
-- [init(rawValue: String)](hkclinicaltypeidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./hkclinicaltypeidentifier/init%28rawvalue%29.md)
   Returns a new clinical record type identifier for the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

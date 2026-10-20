@@ -1,17 +1,18 @@
 # kCIAttributeTypeTime
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A parametric time for transitions, specified as a floating-point value in the range of `0.0` to `1.0`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,19 +20,24 @@ A parametric time for transitions, specified as a floating-point value in the ra
 let kCIAttributeTypeTime: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypeTime;
+```
+
 ## See Also
 
-- [let kCIAttributeTypeScalar: String](kciattributetypescalar.md)
+### Constants
+- [let kCIAttributeTypeScalar: String](./kciattributetypescalar.md)
   A scalar value.
-- [let kCIAttributeTypeDistance: String](kciattributetypedistance.md)
+- [let kCIAttributeTypeDistance: String](./kciattributetypedistance.md)
   A distance.
-- [let kCIAttributeTypeAngle: String](kciattributetypeangle.md)
+- [let kCIAttributeTypeAngle: String](./kciattributetypeangle.md)
   An angle.
-- [let kCIAttributeTypeBoolean: String](kciattributetypeboolean.md)
+- [let kCIAttributeTypeBoolean: String](./kciattributetypeboolean.md)
   A Boolean value.
-- [let kCIAttributeTypeInteger: String](kciattributetypeinteger.md)
+- [let kCIAttributeTypeInteger: String](./kciattributetypeinteger.md)
   An integer value.
-- [let kCIAttributeTypeCount: String](kciattributetypecount.md)
+- [let kCIAttributeTypeCount: String](./kciattributetypecount.md)
   A positive integer value.
 
 

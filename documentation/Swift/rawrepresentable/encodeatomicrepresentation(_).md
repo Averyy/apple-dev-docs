@@ -1,7 +1,8 @@
 # encodeAtomicRepresentation(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type to be used for atomic operations.
 
@@ -19,6 +20,8 @@ Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type t
 ```swift
 static func encodeAtomicRepresentation(_ value: consuming Self) -> Self.RawValue.AtomicRepresentation
 ```
+
+Available when `Self` conforms to `AtomicRepresentable` and `RawValue` conforms to `AtomicRepresentable`.
 
 #### Return Value
 

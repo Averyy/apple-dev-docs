@@ -1,23 +1,30 @@
 # recordFetchedBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when a record becomes available.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 15.0
+- iPadOS 8.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.10+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use recordMatchedBlock instead, which surfaces per-record errors
 
 ## Declaration
 
 ```swift
 var recordFetchedBlock: ((CKRecord) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^recordFetchedBlock)(CKRecord *record);
 ```
 
 #### Discussion
@@ -34,7 +41,8 @@ Set the property’s value before you execute the operation or submit it to a qu
 
 ## See Also
 
-- [var queryCompletionBlock: ((CKQueryOperation.Cursor?, (any Error)?) -> Void)?](ckqueryoperation/querycompletionblock.md)
+### Processing the Query Results
+- [var queryCompletionBlock: ((CKQueryOperation.Cursor?, (any Error)?) -> Void)?](./querycompletionblock.md)
   The closure to execute after CloudKit retrieves all of the records.
 
 

@@ -1,7 +1,8 @@
 # singleProjection(colorTexture:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a descriptor for single projection output.
 

@@ -1,7 +1,8 @@
 # pageOverlayViewProvider
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,12 +18,17 @@
 weak var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PDFPageOverlayViewProvider> pageOverlayViewProvider;
+```
+
 ## See Also
 
-- [var findInteraction: UIFindInteraction](pdfview/findinteraction.md)
-- [var isFindInteractionEnabled: Bool](pdfview/isfindinteractionenabled.md)
-- [var isInMarkupMode: Bool](pdfview/isinmarkupmode.md)
-- [var pageShadowsEnabled: Bool](pdfview/pageshadowsenabled.md)
+### Instance Properties
+- [var findInteraction: UIFindInteraction](./findinteraction.md)
+- [var isFindInteractionEnabled: Bool](./isfindinteractionenabled.md)
+- [var isInMarkupMode: Bool](./isinmarkupmode.md)
+- [var pageShadowsEnabled: Bool](./pageshadowsenabled.md)
 
 
 ---

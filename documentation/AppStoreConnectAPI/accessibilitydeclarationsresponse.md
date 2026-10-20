@@ -1,7 +1,8 @@
 # AccessibilityDeclarationsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of accessibility declarations.
 
@@ -10,7 +11,7 @@ A response containing a list of accessibility declarations.
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationsResponse
 ```
 
@@ -22,16 +23,17 @@ object AccessibilityDeclarationsResponse
 
 ## See Also
 
-- [object AccessibilityDeclaration](accessibilitydeclaration.md)
+### Objects
+- [object AccessibilityDeclaration](./accessibilitydeclaration.md)
   An app’s self-reported accessibility features and conformance information submitted for App Store review.
-- [object AccessibilityDeclarationCreateRequest](accessibilitydeclarationcreaterequest.md)
+- [object AccessibilityDeclarationCreateRequest](./accessibilitydeclarationcreaterequest.md)
   The request body you use to create an accessibility declaration for an app.
-- [object AccessibilityDeclarationResponse](accessibilitydeclarationresponse.md)
+- [object AccessibilityDeclarationResponse](./accessibilitydeclarationresponse.md)
   A response containing a single accessibility declaration for an app.
-- [object AccessibilityDeclarationUpdateRequest](accessibilitydeclarationupdaterequest.md)
+- [object AccessibilityDeclarationUpdateRequest](./accessibilitydeclarationupdaterequest.md)
   The request body you use to update an accessibility declaration for an app.
-- [object AppAccessibilityDeclarationsLinkagesResponse](appaccessibilitydeclarationslinkagesresponse.md)
-- [type DeviceFamily](devicefamily.md)
+- [object AppAccessibilityDeclarationsLinkagesResponse](./appaccessibilitydeclarationslinkagesresponse.md)
+- [type DeviceFamily](./devicefamily.md)
   String that represents a device family.
 
 

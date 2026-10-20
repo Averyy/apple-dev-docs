@@ -1,14 +1,15 @@
 # debug_container_malloc_size
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 size_t debug_container_malloc_size;
 ```
 

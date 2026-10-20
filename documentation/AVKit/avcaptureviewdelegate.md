@@ -1,7 +1,8 @@
 # AVCaptureViewDelegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol that defines the methods you can implement to respond to capture view events.
 
@@ -14,20 +15,25 @@ The protocol that defines the methods you can implement to respond to capture vi
 protocol AVCaptureViewDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVCaptureViewDelegate <NSObject>
+```
+
 ## Topics
 
 ### Starting a new recording
-- [func captureView(AVCaptureView, startRecordingTo: AVCaptureFileOutput)](avcaptureviewdelegate/captureview(_:startrecordingto:).md)
+- [func captureView(AVCaptureView, startRecordingTo: AVCaptureFileOutput)](./avcaptureviewdelegate/captureview%28_,startrecordingto%29.md)
   Tells the delegate that the user has made a request to start a new recording.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureView](avcaptureview.md)
+### Capture views
+- [class AVCaptureView](./avcaptureview.md)
   A view that displays standard user interface controls for capturing media data.
 
 

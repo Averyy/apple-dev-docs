@@ -1,7 +1,8 @@
 # NISession
 
 **Framework**: Nearby Interaction  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that identifies a unique connection between two peer devices.
 
@@ -17,70 +18,74 @@ An object that identifies a unique connection between two peer devices.
 class NISession
 ```
 
+```objc
+@interface NISession : NSObject
+```
+
 ## Mentions
 
-- [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Discovering peers with Multipeer Connectivity](./discovering-peers-with-multipeer-connectivity.md)
+- [Extending advanced direction finding and ranging](./extending-advanced-direction-finding-and-ranging.md)
+- [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
 #### Overview
 
-This class represents the central mechanism to interact with nearby objects, for example, a peer Apple device or third-party accessory. After creating an [`NISession`](nisession.md) for a nearby object, the app interacts with the object by receiving [`NISessionDelegate`](nisessiondelegate.md) callbacks.
+This class represents the central mechanism to interact with nearby objects, for example, a peer Apple device or third-party accessory. After creating an [`NISession`](./nisession.md) for a nearby object, the app interacts with the object by receiving [`NISessionDelegate`](./nisessiondelegate.md) callbacks.
 
 One session represents an interaction between the user and a single nearby object. To interact with multiple nearby objects, create a separate session for each.
 
-For more information, see [`Initiating and maintaining a session`](initiating-and-maintaining-a-session.md).
+For more information, see [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md).
 
 ## Topics
 
 ### Ensuring feature support
-- [class var deviceCapabilities: any NIDeviceCapability](nisession/devicecapabilities.md)
+- [class var deviceCapabilities: any NIDeviceCapability](./nisession/devicecapabilities.md)
   An object that communicates the device’s supported framework features.
-- [protocol NIDeviceCapability](nidevicecapability.md)
+- [protocol NIDeviceCapability](./nidevicecapability.md)
   An interface that adds Boolean values that indicate an interaction session feature support.
 ### Connecting to a peer device
-- [var discoveryToken: NIDiscoveryToken?](nisession/discoverytoken.md)
+- [var discoveryToken: NIDiscoveryToken?](./nisession/discoverytoken.md)
   A temporary, random identifier for a device.
-- [class NIDiscoveryToken](nidiscoverytoken.md)
+- [class NIDiscoveryToken](./nidiscoverytoken.md)
   An object that uniquely identifies a peer that participates in an interaction session.
-- [func run(NIConfiguration)](nisession/run(_:).md)
+- [func run(NIConfiguration)](./nisession/run%28_%29.md)
   Starts a session with a nearby peer.
-- [var configuration: NIConfiguration?](nisession/configuration.md)
+- [var configuration: NIConfiguration?](./nisession/configuration.md)
   The configuration run by the session.
-- [var delegateQueue: dispatch_queue_t?](nisession/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./nisession/delegatequeue.md)
   The dispatch queue on which the session invokes delegate callbacks.
 ### Managing life cycle
-- [var delegate: (any NISessionDelegate)?](nisession/delegate.md)
+- [var delegate: (any NISessionDelegate)?](./nisession/delegate.md)
   An object that the framework notifies of session events.
-- [func pause()](nisession/pause.md)
+- [func pause()](./nisession/pause%28%29.md)
   Stops sending distance and direction updates to the peer.
-- [func invalidate()](nisession/invalidate.md)
+- [func invalidate()](./nisession/invalidate%28%29.md)
   Stops a running session.
 ### Utilizing Camera Assistance
-- [func setARSession(ARSession)](nisession/setarsession(_:).md)
+- [func setARSession(ARSession)](./nisession/setarsession%28_%29.md)
   Provides the framework with an existing AR session to use for Camera Assistance.
-- [func worldTransform(for: NINearbyObject) -> simd_float4x4?](nisession/worldtransform(for:).md)
+- [func worldTransform(for: NINearbyObject) -> simd_float4x4?](./nisession/worldtransform%28for%29.md)
   Returns a world transform to integrate a nearby object in an AR experience.
 ### Providing accessory state information
-- [func updateMotionState(NIMotionActivityState, forObjectWithToken: NIDiscoveryToken)](nisession/updatemotionstate(_:forobjectwithtoken:).md)
+- [func updateMotionState(NIMotionActivityState, forObjectWithToken: NIDiscoveryToken)](./nisession/updatemotionstate%28_,forobjectwithtoken%29.md)
   Notifies the session of an accessory’s motion state change.
-- [enum NIMotionActivityState](nimotionactivitystate.md)
+- [enum NIMotionActivityState](./nimotionactivitystate.md)
   Motion states for a nearby accessory.
 ### Deprecated
-- [class var isSupported: Bool](nisession/issupported.md)
+- [class var isSupported: Bool](./nisession/issupported.md)
   A Boolean value that indicates whether the device supports basic interaction-session functionality.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

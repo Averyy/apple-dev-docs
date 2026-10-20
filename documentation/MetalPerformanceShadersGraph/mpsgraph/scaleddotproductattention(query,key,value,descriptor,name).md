@@ -1,7 +1,8 @@
 # scaledDotProductAttention(query:key:value:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a scaled dot product attention (SDPA) operation using a descriptor and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a scaled dot product attention (SDPA) operation using a descriptor and r
 
 ```swift
 func scaledDotProductAttention(query queryTensor: MPSGraphTensor, key keyTensor: MPSGraphTensor, value valueTensor: MPSGraphTensor, descriptor: MPSGraphSDPADescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) scaledDotProductAttentionWithQueryTensor:(MPSGraphTensor *) queryTensor keyTensor:(MPSGraphTensor *) keyTensor valueTensor:(MPSGraphTensor *) valueTensor descriptor:(MPSGraphSDPADescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # useSignRevocation
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key can be used to sign an OCSP (online certificate status protocol) message or CRL (certificate verification list), or to verify a signature.
 
@@ -13,6 +14,10 @@ The key can be used to sign an OCSP (online certificate status protocol) message
 
 ```swift
 static var useSignRevocation: SecTrustSettingsKeyUsage { get }
+```
+
+```c
+kSecTrustSettingsKeyUseSignRevocation
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # options
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional options to use for this request.
 

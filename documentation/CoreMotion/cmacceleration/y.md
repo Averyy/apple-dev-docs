@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Y-axis acceleration in G’s (gravitational force).
 
@@ -19,11 +20,16 @@ Y-axis acceleration in G’s (gravitational force).
 var y: Double
 ```
 
+```c
+double y;
+```
+
 ## See Also
 
-- [var x: Double](cmacceleration/x.md)
+### Getting the Acceleration Values
+- [var x: Double](./x.md)
   X-axis acceleration in G’s (gravitational force).
-- [var z: Double](cmacceleration/z.md)
+- [var z: Double](./z.md)
   Z-axis acceleration in G’s (gravitational force).
 
 

@@ -1,17 +1,22 @@
 # attributes
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C array of attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var attributes: UnsafeMutablePointer<CFXMLAttributeDeclarationInfo>!
+```
+
+```c
+CFXMLAttributeDeclarationInfo * attributes;
 ```
 
 

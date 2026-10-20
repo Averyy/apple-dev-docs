@@ -1,15 +1,16 @@
 # width
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the caption.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@ The width of the caption.
 var width: AVCaptionDimension
 ```
 
+```c
+AVCaptionDimension width;
+```
+
 ## See Also
 
-- [var height: AVCaptionDimension](avcaptionsize/height.md)
+### Inspecting the size
+- [var height: AVCaptionDimension](./height.md)
   The height of the caption.
 
 

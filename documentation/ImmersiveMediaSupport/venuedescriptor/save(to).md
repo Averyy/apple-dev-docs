@@ -1,7 +1,8 @@
 # save(to:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an AIME file at the specified location.
 
@@ -24,7 +25,8 @@ final func save(to aimeURL: URL) throws
 
 ## See Also
 
-- [var aimeData: Data?](venuedescriptor/aimedata.md)
+### Saving a venue descriptor data
+- [var aimeData: Data?](./aimedata.md)
   Property holding the complete static metadata needed for the immersive media playback.
 
 

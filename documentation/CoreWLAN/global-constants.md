@@ -1,13 +1,14 @@
 # Global Constants
 
-**Framework**: Core WLAN
+**Framework**: Core WLAN  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let CWErrorDomain: String](cwerrordomain.md)
-- [let CWLinkQualityNotificationRSSIKey: String](cwlinkqualitynotificationrssikey.md)
-- [let CWLinkQualityNotificationTransmitRateKey: String](cwlinkqualitynotificationtransmitratekey.md)
+- [let CWErrorDomain: String](./cwerrordomain.md)
+- [let CWLinkQualityNotificationRSSIKey: String](./cwlinkqualitynotificationrssikey.md)
+- [let CWLinkQualityNotificationTransmitRateKey: String](./cwlinkqualitynotificationtransmitratekey.md)
 
 
 ---

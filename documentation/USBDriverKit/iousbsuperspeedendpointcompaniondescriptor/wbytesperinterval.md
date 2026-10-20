@@ -1,7 +1,8 @@
 # wBytesPerInterval
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of bytes this endpoint transfers during each service interval.
 
@@ -10,19 +11,20 @@ The total number of bytes this endpoint transfers during each service interval.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wBytesPerInterval;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedendpointcompaniondescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The length of this descriptor in bytes.
-- [bDescriptorType](iousbsuperspeedendpointcompaniondescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bMaxBurst](iousbsuperspeedendpointcompaniondescriptor/bmaxburst.md)
+- [bMaxBurst](./bmaxburst.md)
   The maximum number of packets the endpoint can send or receive in one burst.
-- [bmAttributes](iousbsuperspeedendpointcompaniondescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   The attributes associated with the endpoint.
 
 

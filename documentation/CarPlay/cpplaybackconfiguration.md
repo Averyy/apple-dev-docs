@@ -1,7 +1,8 @@
 # CPPlaybackConfiguration
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.4+
@@ -15,6 +16,10 @@
 class CPPlaybackConfiguration
 ```
 
+```objc
+@interface CPPlaybackConfiguration : NSObject
+```
+
 #### Overview
 
 > **Note**: The preferred presentation of playback may be used to prepare the system for playback of that content.
@@ -22,39 +27,39 @@ class CPPlaybackConfiguration
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpplaybackconfiguration/init(coder:).md)
-- [init(preferredPresentation: CPPlaybackConfiguration.Presentation, playbackAction: CPPlaybackConfiguration.Action, elapsedTime: CMTime, duration: CMTime)](cpplaybackconfiguration/init(preferredpresentation:playbackaction:elapsedtime:duration:).md)
+- [init?(coder: NSCoder)](./cpplaybackconfiguration/init%28coder%29.md)
+- [init(preferredPresentation: CPPlaybackConfiguration.Presentation, playbackAction: CPPlaybackConfiguration.Action, elapsedTime: CMTime, duration: CMTime)](./cpplaybackconfiguration/init%28preferredpresentation,playbackaction,elapsedtime,duration%29.md)
   Initialize a description of the playable media content that is represented by template items.
 ### Instance Properties
-- [var duration: CMTime](cpplaybackconfiguration/duration.md)
+- [var duration: CMTime](./cpplaybackconfiguration/duration.md)
   The total duration of the media content as a CMTime value. Provide 0 if the duration of the content is unknown or unavailable, for example in live-streaming content.
-- [var elapsedTime: CMTime](cpplaybackconfiguration/elapsedtime.md)
+- [var elapsedTime: CMTime](./cpplaybackconfiguration/elapsedtime.md)
   The elapsed playback time as a CMTime value.
-- [var playbackAction: CPPlaybackConfiguration.Action](cpplaybackconfiguration/playbackaction.md)
+- [var playbackAction: CPPlaybackConfiguration.Action](./cpplaybackconfiguration/playbackaction.md)
   The playback action to perform on this item, such as play, pause, or replay.
-- [var preferredPresentation: CPPlaybackConfiguration.Presentation](cpplaybackconfiguration/preferredpresentation.md)
+- [var preferredPresentation: CPPlaybackConfiguration.Presentation](./cpplaybackconfiguration/preferredpresentation.md)
   The style of media presentation shown after selecting the item.
 ### Enumerations
-- [CPPlaybackConfiguration.Action](cpplaybackconfiguration/action.md)
+- [CPPlaybackConfiguration.Action](./cpplaybackconfiguration/action.md)
   The playback action to perform on the item.
-- [CPPlaybackConfiguration.Presentation](cpplaybackconfiguration/presentation.md)
+- [CPPlaybackConfiguration.Presentation](./cpplaybackconfiguration/presentation.md)
   The style of media presentation shown after selecting the item.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

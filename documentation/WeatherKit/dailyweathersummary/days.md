@@ -1,7 +1,8 @@
 # days
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ordered collection of day weather summaries of type `T`, for each requested day.
 

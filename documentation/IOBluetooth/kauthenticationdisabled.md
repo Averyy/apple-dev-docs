@@ -1,10 +1,11 @@
 # kAuthenticationDisabled
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAuthenticationDisabled: BluetoothHCIAuthentionEnableModes { get }
 ```
 
+```c
+kAuthenticationDisabled
+```
+
 ## See Also
 
-- [var kAuthenticationEnabled: BluetoothHCIAuthentionEnableModes](kauthenticationenabled.md)
+### Constants
+- [var kAuthenticationEnabled: BluetoothHCIAuthentionEnableModes](./kauthenticationenabled.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kAudioSession_AudioRouteChangeKey_OldRoute
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -16,23 +17,28 @@
 var kAudioSession_AudioRouteChangeKey_OldRoute: String { get }
 ```
 
+```c
+#define kAudioSession_AudioRouteChangeKey_OldRoute
+```
+
 ## See Also
 
-- [Audio Unit Attenuation Properties](1534112-audio-unit-attenuation-propertie.md)
-- [Audio Unit Instrument Errors](1584141-audio-unit-instrument-errors.md)
-- [Anonymous](1534019-anonymous.md)
-- [Anonymous](1534074-anonymous.md)
-- [Audio Graph Errors](1537630-audio-graph-errors.md)
-- [Audio Converter Property ID](1624333-audio-converter-property-id.md)
-- [Anonymous](1621044-anonymous.md)
-- [Anonymous](1618426-anonymous.md)
-- [Anonymous](1618742-anonymous.md)
-- [Anonymous](1619479-anonymous.md)
-- [Anonymous](1619504-anonymous.md)
-- [Anonymous](1533960-anonymous.md)
-- [Anonymous](1534225-anonymous.md)
-- [Music Device Properties](1534089-music-device-properties.md)
-- [3D Mixer Audio Unit Properties](1534063-3d_mixer_audio_unit_properties.md)
+### Constants
+- [Audio Unit Attenuation Properties](./api-1534112-audio-unit-attenuation-propertie.md)
+- [Audio Unit Instrument Errors](./api-1584141-audio-unit-instrument-errors.md)
+- [Anonymous](./api-1534019-anonymous.md)
+- [Anonymous](./api-1534074-anonymous.md)
+- [Audio Graph Errors](./api-1537630-audio-graph-errors.md)
+- [Audio Converter Property ID](./api-1624333-audio-converter-property-id.md)
+- [Anonymous](./api-1621044-anonymous.md)
+- [Anonymous](./api-1618426-anonymous.md)
+- [Anonymous](./api-1618742-anonymous.md)
+- [Anonymous](./api-1619479-anonymous.md)
+- [Anonymous](./api-1619504-anonymous.md)
+- [Anonymous](./api-1533960-anonymous.md)
+- [Anonymous](./api-1534225-anonymous.md)
+- [Music Device Properties](./api-1534089-music-device-properties.md)
+- [3D Mixer Audio Unit Properties](./api-1534063-3d_mixer_audio_unit_properties.md)
   Properties for the Apple 3D Mixer audio unit.
 
 

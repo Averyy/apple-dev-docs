@@ -1,7 +1,8 @@
 # interval
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The polling interval for the endpoint in milliseconds.
 
@@ -10,17 +11,18 @@ The polling interval for the endpoint in milliseconds.
 
 ## Declaration
 
-```swift
+```c
 UInt8 interval;
 ```
 
 ## See Also
 
-- [type](iousbfindendpointrequest/1546255-type.md)
+### Getting the Properties
+- [type](./api-1546255-type.md)
   The type of endpoint.
-- [direction](iousbfindendpointrequest/1546504-direction.md)
+- [direction](./api-1546504-direction.md)
   The direction of the endpoint.
-- [maxPacketSize](iousbfindendpointrequest/1546175-maxpacketsize.md)
+- [maxPacketSize](./api-1546175-maxpacketsize.md)
   The maximum packet size of the endpoint.
 
 

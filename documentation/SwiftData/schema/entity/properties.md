@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,10 +22,11 @@ final var properties: [any SchemaProperty] { get }
 
 ## See Also
 
-- [var inheritedProperties: [any SchemaProperty]](schema/entity/inheritedproperties.md)
-- [var inheritedPropertiesByName: [String : any SchemaProperty]](schema/entity/inheritedpropertiesbyname.md)
-- [var storedProperties: [any SchemaProperty]](schema/entity/storedproperties.md)
-- [var storedPropertiesByName: [String : any SchemaProperty]](schema/entity/storedpropertiesbyname.md)
+### Managing properties
+- [var inheritedProperties: [any SchemaProperty]](./inheritedproperties.md)
+- [var inheritedPropertiesByName: [String : any SchemaProperty]](./inheritedpropertiesbyname.md)
+- [var storedProperties: [any SchemaProperty]](./storedproperties.md)
+- [var storedPropertiesByName: [String : any SchemaProperty]](./storedpropertiesbyname.md)
 
 
 ---

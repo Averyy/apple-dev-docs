@@ -1,7 +1,8 @@
 # kIOUSB30TimingParameterBELTMinNs
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The BELT minimum in nanoseconds.
 
@@ -10,7 +11,7 @@ The BELT minimum in nanoseconds.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30TimingParameterBELTMinNs = 125 * 1000
 ```
 

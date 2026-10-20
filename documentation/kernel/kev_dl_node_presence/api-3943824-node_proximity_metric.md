@@ -1,14 +1,15 @@
 # node_proximity_metric
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 int node_proximity_metric;
 ```
 

@@ -1,6 +1,7 @@
 # Examining a Certificate
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Learn how to retrieve properties from a certificate.
 
@@ -15,7 +16,7 @@ In order to fulfill its purpose of verifying the identity of its owner, a certif
 - *Certificate extensions*, which contain additional information such as alternative names for the certificate holder and allowable uses for the private key associated with the certificate
 - A digital signature from the certification authority to ensure that the certificate hasn’t been altered and to indicate the identity of the issuer
 
-The certificate, key, and trust services API provides functions to examine the properties of a certificate. For example, the [`SecCertificateCopySubjectSummary(_:)`](seccertificatecopysubjectsummary(_:).md) function returns a human readable summary of the certificate:
+The certificate, key, and trust services API provides functions to examine the properties of a certificate. For example, the [`SecCertificateCopySubjectSummary(_:)`](./seccertificatecopysubjectsummary%28_%29.md) function returns a human readable summary of the certificate:
 
 **Swift**:
 
@@ -35,7 +36,7 @@ NSString* summary = (NSString*)CFBridgingRelease(  // ARC takes ownership
 NSLog(@"Cert summary: %@", summary);
 ```
 
-In macOS, there are a few additional functions that return data about a certificate. For example, to pull the public key from a certificate, you use the [`SecCertificateCopyPublicKey(_:)`](seccertificatecopypublickey(_:).md) function:
+In macOS, there are a few additional functions that return data about a certificate. For example, to pull the public key from a certificate, you use the [`SecCertificateCopyPublicKey(_:)`](./seccertificatecopypublickey%28_%29.md) function:
 
 **Swift**:
 

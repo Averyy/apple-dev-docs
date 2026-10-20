@@ -1,7 +1,8 @@
 # SparseFactor(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the specified factorization of a sparse matrix of single-precision values.
 
@@ -20,15 +21,19 @@ Returns the specified factorization of a sparse matrix of single-precision value
 func SparseFactor(_ type: SparseFactorization_t, _ Matrix: SparseMatrix_Float) -> SparseOpaqueFactorization_Float
 ```
 
+```c
+static SparseOpaqueFactorization_Float SparseFactor(SparseFactorization_t type, SparseMatrix_Float Matrix);
+```
+
 #### Return Value
 
-A [`SparseOpaqueFactorization_Float`](sparseopaquefactorization_float.md) structure that represents the matrix factorization.
+A [`SparseOpaqueFactorization_Float`](./sparseopaquefactorization_float.md) structure that represents the matrix factorization.
 
 #### Discussion
 
 Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions. The following figure shows a system of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix. ](/images/com.apple.accelerate/media-3703881@2x.png)
+![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix. ](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703881@2x.png)
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 
@@ -113,11 +118,12 @@ You can use the symbolic factorization that this function returns for multiple n
 
 ## See Also
 
-- [func SparseFactor(SparseFactorization_t, SparseMatrix_Double) -> SparseOpaqueFactorization_Double](sparsefactor(_:_:)-8gl6j.md)
+### Matrix factorization functions
+- [func SparseFactor(SparseFactorization_t, SparseMatrix_Double) -> SparseOpaqueFactorization_Double](./sparsefactor%28_,_%29-8gl6j.md)
   Returns the specified factorization of a sparse matrix of double-precision values.
-- [func SparseFactor(SparseFactorization_t, SparseMatrix_Double, SparseSymbolicFactorOptions, SparseNumericFactorOptions) -> SparseOpaqueFactorization_Double](sparsefactor(_:_:_:_:)-88xmk.md)
+- [func SparseFactor(SparseFactorization_t, SparseMatrix_Double, SparseSymbolicFactorOptions, SparseNumericFactorOptions) -> SparseOpaqueFactorization_Double](./sparsefactor%28_,_,_,_%29-88xmk.md)
   Returns the specified factorization of a sparse matrix of double-precision values using the specified options.
-- [func SparseFactor(SparseFactorization_t, SparseMatrix_Float, SparseSymbolicFactorOptions, SparseNumericFactorOptions) -> SparseOpaqueFactorization_Float](sparsefactor(_:_:_:_:)-8apyz.md)
+- [func SparseFactor(SparseFactorization_t, SparseMatrix_Float, SparseSymbolicFactorOptions, SparseNumericFactorOptions) -> SparseOpaqueFactorization_Float](./sparsefactor%28_,_,_,_%29-8apyz.md)
   Returns the specified factorization of a sparse matrix of single-precision values using the specified options.
 
 

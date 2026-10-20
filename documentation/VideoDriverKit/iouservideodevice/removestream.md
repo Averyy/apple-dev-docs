@@ -1,7 +1,8 @@
 # RemoveStream
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a video stream from the device.
 
@@ -10,7 +11,7 @@ Removes a video stream from the device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveStream(IOUserVideoStream *in_stream);
 ```
 
@@ -28,9 +29,10 @@ The stream’s reference count will be decremented if it was successfully remove
 
 ## See Also
 
-- [AddStream](iouservideodevice/addstream.md)
+### Working with video streams
+- [AddStream](./addstream.md)
   Adds an video stream to the device.
-- [IOUserVideoStream](iouservideostream.md)
+- [IOUserVideoStream](../iouservideostream.md)
   A video stream.
 
 

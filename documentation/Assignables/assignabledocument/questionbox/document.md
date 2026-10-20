@@ -1,7 +1,8 @@
 # AssignableDocument.QuestionBox.Document
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The document type this element is for.
 
@@ -9,7 +10,7 @@ The document type this element is for.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

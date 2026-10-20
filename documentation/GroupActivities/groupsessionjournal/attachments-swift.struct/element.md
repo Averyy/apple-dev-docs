@@ -1,7 +1,8 @@
 # GroupSessionJournal.Attachments.Element
 
 **Framework**: Group Activities  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 
@@ -21,9 +22,10 @@ typealias Element = [GroupSessionJournal.Attachment]
 
 ## See Also
 
-- [func makeAsyncIterator() -> GroupSessionJournal.Attachments.Iterator](groupsessionjournal/attachments-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> GroupSessionJournal.Attachments.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [GroupSessionJournal.Attachments.Iterator](groupsessionjournal/attachments-swift.struct/iterator.md)
+- [GroupSessionJournal.Attachments.Iterator](./iterator.md)
   The asynchronous iterator that produces a sequence of attachments.
 
 

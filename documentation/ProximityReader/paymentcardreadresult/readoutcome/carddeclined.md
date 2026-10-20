@@ -1,7 +1,8 @@
 # PaymentCardReadResult.ReadOutcome.cardDeclined
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card declined this transaction.
 
@@ -18,9 +19,10 @@ case cardDeclined
 
 ## See Also
 
-- [PaymentCardReadResult.ReadOutcome.success](paymentcardreadresult/readoutcome/success.md)
+### Getting the read outcome
+- [PaymentCardReadResult.ReadOutcome.success](./success.md)
   The read was successful.
-- [PaymentCardReadResult.ReadOutcome.failure](paymentcardreadresult/readoutcome/failure.md)
+- [PaymentCardReadResult.ReadOutcome.failure](./failure.md)
   The read failed somehow, the card data may not contain all requested tags.
 
 

@@ -1,7 +1,8 @@
 # glyphImage
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image to display in the marker balloon.
 
@@ -15,24 +16,46 @@ An image to display in the marker balloon.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+@NSCopying
+var glyphImage: UIImage? { get set }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var glyphImage: NSImage? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) UIImage * glyphImage;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSImage * glyphImage;
+```
+
 #### Discussion
 
-Use this property or the [`glyphText`](mkmarkerannotationview/glyphtext.md) property to specify the marker balloon content. If you specify both an image and text, MapKit displays the text.
+Use this property or the [`glyphText`](./glyphtext.md) property to specify the marker balloon content. If you specify both an image and text, MapKit displays the text.
 
-MapKit displays the glyph image when the marker is in the normal state. Create glyph images as template images so that MapKit can apply the glyph tint color to the image. Normally, you set the size of this image to 20 by 20 points on iOS and 40 by 40 points on tvOS. However, if you don’t provide a separate selected image in the [`selectedGlyphImage`](mkmarkerannotationview/selectedglyphimage.md) property, make the size of this image 40 by 40 points on iOS and 60 by 40 points on tvOS instead. MapKit scales images that are larger or smaller than those sizes.
+MapKit displays the glyph image when the marker is in the normal state. Create glyph images as template images so that MapKit can apply the glyph tint color to the image. Normally, you set the size of this image to 20 by 20 points on iOS and 40 by 40 points on tvOS. However, if you don’t provide a separate selected image in the [`selectedGlyphImage`](./selectedglyphimage.md) property, make the size of this image 40 by 40 points on iOS and 60 by 40 points on tvOS instead. MapKit scales images that are larger or smaller than those sizes.
 
 ## See Also
 
-- [var glyphText: String?](mkmarkerannotationview/glyphtext.md)
+### Setting the Marker Content
+- [var glyphText: String?](./glyphtext.md)
   The text to display in the marker balloon.
-- [var glyphTintColor: UIColor?](mkmarkerannotationview/glyphtintcolor.md)
+- [var glyphTintColor: UIColor?](./glyphtintcolor.md)
   The color to apply to the glyph text or image.
-- [var selectedGlyphImage: UIImage?](mkmarkerannotationview/selectedglyphimage.md)
+- [var selectedGlyphImage: UIImage?](./selectedglyphimage.md)
   An image to display when the user selects the marker.
 
 

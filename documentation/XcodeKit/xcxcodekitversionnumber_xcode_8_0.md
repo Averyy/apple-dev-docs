@@ -1,7 +1,8 @@
 # XCXcodeKitVersionNumber_Xcode_8_0
 
 **Framework**: XcodeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of XcodeKit included in Xcode 8.0.
 
@@ -14,9 +15,14 @@ The version of XcodeKit included in Xcode 8.0.
 var XCXcodeKitVersionNumber_Xcode_8_0: Double { get }
 ```
 
+```c
+#define XCXcodeKitVersionNumber_Xcode_8_0
+```
+
 ## See Also
 
-- [var XCXcodeKitVersionNumber: Double](xcxcodekitversionnumber.md)
+### XcodeKit Versions
+- [var XCXcodeKitVersionNumber: Double](./xcxcodekitversionnumber.md)
   The current version of XcodeKit.
 
 

@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized, human-readable name of the app extension.
 
@@ -26,9 +27,10 @@ Use this string if you need to display the name of the app extension in your app
 
 ## See Also
 
-- [var bundleIdentifier: String](appextensionidentity/bundleidentifier.md)
+### Identifying the process
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app extension.
-- [var extensionPointIdentifier: String](appextensionidentity/extensionpointidentifier.md)
+- [var extensionPointIdentifier: String](./extensionpointidentifier.md)
   The extension point of your host app that the app extension supports.
 
 

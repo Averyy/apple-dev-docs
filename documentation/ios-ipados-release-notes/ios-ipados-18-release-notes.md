@@ -1,12 +1,13 @@
 # iOS & iPadOS 18 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18. The SDK comes bundled with Xcode 16. For information on the compatibility requirements for Xcode 16, see [`Xcode 16 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16-release-notes).
+The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18. The SDK comes bundled with Xcode 16. For information on the compatibility requirements for Xcode 16, see [Xcode 16 Release Notes](../Xcode-Release-Notes/xcode-16-release-notes.md).
 
 ##### Accessibility
 
@@ -16,7 +17,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Sound Recognition and Sound Actions might not work on iPad Pro models with M4.  (128949527)
 - Fixed: Music Haptics might disappear after the first time it is entered in Accessibility Settings until Settings restarts.  (128960448)
 
-##### Accessorysetupkit
+##### AccessorySetupKit
 
 ###### Resolved Issues
 
@@ -28,11 +29,11 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Notifications for workouts completed by a friend might show incorrect text.  (128939058)
 
-##### Adattributionkit
+##### AdAttributionKit
 
 ###### New Features
 
-- [`AdAttributionKit`](https://developer.apple.comhttps://developer.apple.com/documentation/AdAttributionKit) now supports measuring re-engagement, which is click-through attribution for apps that were already installed. Re-engagement also supports deep linking into content in apps using Universal Links.  (111224069)
+- [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md) now supports measuring re-engagement, which is click-through attribution for apps that were already installed. Re-engagement also supports deep linking into content in apps using Universal Links.  (111224069)
 
 ###### Resolved Issues
 
@@ -54,7 +55,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### New Features
 
-- On-demand resources limits were increased for iOS 18, iPadOS 18, tvOS 18 and visionOS 2. See [`On-demand resources size limits`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/on-demand-resources-size-limits/) for more information.  (122163236)
+- On-demand resources limits were increased for iOS 18, iPadOS 18, tvOS 18 and visionOS 2. See [On-demand resources size limits](https://developer.apple.com/help/app-store-connect/reference/on-demand-resources-size-limits/) for more information.  (122163236)
 
 ##### Apple Cash
 
@@ -91,17 +92,21 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: When using the Document Scanning feature from Camera app on iPad, it might sometimes result in a black screen instead of a live preview from camera.  (128907349)
 - Fixed: Portrait mode preview with rear facing camera might show artifacts when pointed at objects when using Stage Light, Stage Light Mono, and High-Key Light Mono light filters. Artifacts will not affect captured assets.  (129024197)
 
-##### Carplay
+##### CarPlay
 
 ###### Resolved Issues
 
 - Fixed: Bluetooth pairing UI could become irresponsive for BMW users, which leads to failed contact transfer.   (129043855)
 
-##### Cfnetwork
+##### CFNetwork
 
 ###### Resolved Issues
 
-- Fixed: `CFNetworkExecuteProxyAutoConfigurationScript` and `CFNetworkExecuteProxyAutoConfigurationURL` have always returned a +1 retained CF type object, but the function declarations were not decorated with the `CF_RETURNS_RETAINED` attribute until iOS 18, macOS 15, tvOS 18, and visionOS 2. For C-based languages, the clang static analyzer might note if the object is leaked. No source code changes are required, but they are encouraged to fix the leak. For Swift, this changes the return type of these functions from `Unmanaged<>` to the actual CF type returned, which will require a source change to fix when compiling with newer SDKs. However, Swift programs compiled with older SDKs will continue to work on the new OSes, though the returned CF type object will continue to leak as it did prior to this change.  (126154509)
+- Fixed: `CFNetworkExecuteProxyAutoConfigurationScript` and `CFNetworkExecuteProxyAutoConfigurationURL` have always returned a +1 retained CF type object, but the function declarations were not decorated with the `CF_RETURNS_RETAINED` attribute until iOS 18, macOS 15, tvOS 18, and visionOS 2.
+
+  For C-based languages, the clang static analyzer might note if the object is leaked. No source code changes are required, but they are encouraged to fix the leak.
+
+  For Swift, this changes the return type of these functions from `Unmanaged<>` to the actual CF type returned, which will require a source change to fix when compiling with newer SDKs. However, Swift programs compiled with older SDKs will continue to work on the new OSes, though the returned CF type object will continue to leak as it did prior to this change.  (126154509)
 
 ##### Containerization
 
@@ -122,13 +127,13 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - App Icons in Control Center gallery always appear in Dark Mode.  (126721275)
 
-##### Core Ml
+##### Core ML
 
 ###### Resolved Issues
 
 - Fixed: Core ML Model Deployment API is unavailable (`MLModelCollection` and `MLModelCollectionEntry`). Consider using Background Assets or `NSURLSession` instead.  (122955353)
 
-##### Coremedia
+##### CoreMedia
 
 ###### Resolved Issues
 
@@ -140,7 +145,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Phones with Always on Display enabled might panic/reboot on exit.  (128268712)
 
-##### Facetime
+##### FaceTime
 
 ###### New Features
 
@@ -160,7 +165,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Creating local files in the Files app fails in the visionOS 2 and iOS 18 simulators if the host is not upgraded to macOS Sequoia Beta.  (132561244)
 
-##### Financekit
+##### FinanceKit
 
 ###### Resolved Issues
 
@@ -180,7 +185,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Resolved Issues
 
-- Fixed: [`Date.ComponentsFormatStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/date/componentsformatstyle) was incorrectly producing strings like `"1m"` with the `Date.ComponentsFormatStyle.Style.condensedAbbreviated` style and strings like `"1min"` with the `.narrow` style instead of the other way around. The behavior was corrected to match the behavior of [`Duration.UnitsFormatStyle.UnitWidth`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/duration/unitsformatstyle/unitwidth-swift.struct).  (125790342)
+- Fixed: [Date.ComponentsFormatStyle](../Foundation/date/componentsformatstyle.md) was incorrectly producing strings like `"1m"` with the `Date.ComponentsFormatStyle.Style.condensedAbbreviated` style and strings like `"1min"` with the `.narrow` style instead of the other way around. The behavior was corrected to match the behavior of [Duration.UnitsFormatStyle.UnitWidth](../Swift/duration/unitsformatstyle/unitwidth-swift.struct.md).  (125790342)
 
 ##### Freeform
 
@@ -214,10 +219,14 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- If a pregnancy sample is deleted on a device that is not on iOS 18, users are not prompted to remove pregnancy data from MedicalID if applicable.   (129296194) **Workaround:** Manually delete pregnancy data from Medical ID.
-- In Cycle Tracking, if a pregnancy sample is edited or created on a device different than where pregnancy onboarding was completed, Medical ID might not display pregnancy information correctly.  (130784441) **Workaround:** Edit Medical ID to add pregnancy information.
+- If a pregnancy sample is deleted on a device that is not on iOS 18, users are not prompted to remove pregnancy data from MedicalID if applicable.   (129296194)
 
-##### Healthkit
+  **Workaround:** Manually delete pregnancy data from Medical ID.
+- In Cycle Tracking, if a pregnancy sample is edited or created on a device different than where pregnancy onboarding was completed, Medical ID might not display pregnancy information correctly.  (130784441)
+
+  **Workaround:** Edit Medical ID to add pregnancy information.
+
+##### HealthKit
 
 ###### Resolved Issues
 
@@ -225,13 +234,17 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- With the introduction of Swift 6 this year, developers who update their projects to use Swift 6 might have issues with their apps, which can lead to app crashes when executing a variety of HealthKit API calls.  (131794283) **Workaround:** Annotate your callbacks in code with @sendable, NS_SWIFT_SENDABLE, or use pre-Swift 6 versions of the language.
+- With the introduction of Swift 6 this year, developers who update their projects to use Swift 6 might have issues with their apps, which can lead to app crashes when executing a variety of HealthKit API calls.  (131794283)
 
-##### Home App
+  **Workaround:** Annotate your callbacks in code with @sendable, NS_SWIFT_SENDABLE, or use pre-Swift 6 versions of the language.
+
+##### Home app
 
 ###### Known Issues
 
-- If a user has multiple devices running beta 1 or 2 and onboarded Home with a Utility account, the account might get offboarded when one device is upgraded to beta 3.  (130850945) **Workaround:** Re-onboard Home Utility account, only after upgrading all devices to beta 3.
+- If a user has multiple devices running beta 1 or 2 and onboarded Home with a Utility account, the account might get offboarded when one device is upgraded to beta 3.  (130850945)
+
+  **Workaround:** Re-onboard Home Utility account, only after upgrading all devices to beta 3.
 
 ##### Home Screen
 
@@ -240,7 +253,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: There might be a delay when switching to dark or tinted icons on the home screen.  (129069905)
 - Fixed: Icon tint slider knob might not update to selected color on the first use after boot.  (129114071)
 
-##### Homekit
+##### HomeKit
 
 ###### Resolved Issues
 
@@ -252,13 +265,13 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Carrier EAP-SIM/EAP-AKA auto-joint will fail and user will be unable to use carrier public Hotspot.  (130650425)
 
-##### Icloud Drive
+##### iCloud Drive
 
 ###### Resolved Issues
 
 - Fixed: Frequently changed files syncing over iCloud Drive will use more data than expected.  (128771010)
 
-##### Iphone Mirroring
+##### iPhone Mirroring
 
 ###### Resolved Issues
 
@@ -397,7 +410,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 ###### New Features
 
 - On Apple Silicon based devices with M3 or later, and A16 Bionic or later, the values returned by reading the CNTFRQ_EL0 and CNTVCT_EL0 registers have been updated to 1 GHz, instead of the prior value of 24 MHz. It is still recommended for apps to use libsystem APIs like `mach_absolute_time()` for timekeeping. Your app will not be impacted by this change if it uses Apple’s timekeeping APIs. For compatibility purposes, this change will only be visible when using the SDK associated with this release or later. On macOS, applications running inside a Virtualization.framework VM will continue to receive the legacy behavior.  (84639494)
-- The firmware image for iBoot will be made available in cleartext in the PCC image. To reduce the overhead imposed by firmware encryption and align policies where appropriate, firmware encryption has been disabled for iBoot on iOS, macOS, watchOS, tvOS, and visionOS. See [`Private Cloud Compute`](https://developer.apple.comhttps://security.apple.com/blog/private-cloud-compute/) for more details.  (125171074)
+- The firmware image for iBoot will be made available in cleartext in the PCC image. To reduce the overhead imposed by firmware encryption and align policies where appropriate, firmware encryption has been disabled for iBoot on iOS, macOS, watchOS, tvOS, and visionOS. See [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) for more details.  (125171074)
 
 ##### Podcasts
 
@@ -411,7 +424,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Triggering an on-device preview might fail.  (129150211)
 
-##### Realitykit
+##### RealityKit
 
 ###### New Features
 
@@ -492,33 +505,35 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Icons in Spotlight might not match icons on the Home Screen.  (134088480)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- The [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) now supports custom control styles. To create a custom control style, declare a type that conforms to [`SubscriptionStoreControlStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstorecontrolstyle) and implement `makeBody(configuration:)` method.  (106819454)
-- New standard styles are available for laying out subscription store view controls with a compact height. Use `pagedPicker` and `pagedProminentPicker` for a platform appropriate paging effect, or `compactPicker` to place options in a horizontal stack. For watchOS, the new `pagedPicker` style is available for laying out [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) controls with a compact height.  (110286601)
-- Use types such as `SubscriptionOptionGroup` and `SubscriptionPeriodGroupSet` to declare a hierarchical structure for your [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview). You can use the `subscriptionStoreOptionGroupStyle(_:)` to choose between presenting groups as a tab view or as navigation links.  (110429924) (FB12264937)
-- The subscription status [`RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/status/3822294-renewalinfo) object now supports new properties `renewalPrice` and `currency` to indicate the price at which the subscription will renew, and its currency. There is also a new `offer` property containing the information of the offer that will be applied to the next renewal, if there is any. This includes the offer ID, the offer type, and the payment mode.  (114217892)
-- Finished consumables can now be included when using the [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction) APIs. Users can enable this feature by setting `SKInAppPurchaseHistoryIncludesConsumables` to true in app’s Info.plist.  (115079880)
-- When configuring the control style for a [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview), users can specify a placement for the controls using the `subscriptionStoreControlStyle(_:placement:)` view modifier. For tvOS, by default [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) will place the controls trailing the marketing content.  (115319543)
-- When building an app with Xcode 16, [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) instances using the picker control style have an updated appearance. Use `subscriptionStorePickerItemBackground(_:in:)` to configure a different background color and shape for the picker items.  (120558960)
-- Users can now use APIs like monthly or yearly to get common [`Product.SubscriptionPeriod`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptionperiod) values when comparing subscription periods.  (122684230)
+- The [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) now supports custom control styles. To create a custom control style, declare a type that conforms to [SubscriptionStoreControlStyle](../StoreKit/subscriptionstorecontrolstyle.md) and implement `makeBody(configuration:)` method.  (106819454)
+- New standard styles are available for laying out subscription store view controls with a compact height. Use `pagedPicker` and `pagedProminentPicker` for a platform appropriate paging effect, or `compactPicker` to place options in a horizontal stack. For watchOS, the new `pagedPicker` style is available for laying out [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) controls with a compact height.  (110286601)
+- Use types such as `SubscriptionOptionGroup` and `SubscriptionPeriodGroupSet` to declare a hierarchical structure for your [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md). You can use the `subscriptionStoreOptionGroupStyle(_:)` to choose between presenting groups as a tab view or as navigation links.  (110429924) (FB12264937)
+- The subscription status [RenewalInfo](../StoreKit/product/subscriptioninfo/status/api-3822294-renewalinfo.md) object now supports new properties `renewalPrice` and `currency` to indicate the price at which the subscription will renew, and its currency. There is also a new `offer` property containing the information of the offer that will be applied to the next renewal, if there is any. This includes the offer ID, the offer type, and the payment mode.  (114217892)
+- Finished consumables can now be included when using the [Transaction](../StoreKit/transaction.md) APIs. Users can enable this feature by setting `SKInAppPurchaseHistoryIncludesConsumables` to true in app’s Info.plist.  (115079880)
+- When configuring the control style for a [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md), users can specify a placement for the controls using the `subscriptionStoreControlStyle(_:placement:)` view modifier. For tvOS, by default [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) will place the controls trailing the marketing content.  (115319543)
+- When building an app with Xcode 16, [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) instances using the picker control style have an updated appearance. Use `subscriptionStorePickerItemBackground(_:in:)` to configure a different background color and shape for the picker items.  (120558960)
+- Users can now use APIs like monthly or yearly to get common [Product.SubscriptionPeriod](../StoreKit/product/subscriptionperiod.md) values when comparing subscription periods.  (122684230)
 
 ###### Resolved Issues
 
-- Fixed: Selecting `Done` in the refund request confirmation sheet returns an error when using the [`refund request API`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/3803220-beginrefundrequest/) with StoreKit Testing in Xcode.  (123865137)
-- Fixed: VoiceOver does not read a product’s title and description in [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview) and [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview).  (124254957) (FB13679318)
-- Fixed an issue where the tab control in [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) is too wide when using [`StoreContent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storecontent) with the [`tabs`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionoptiongroupstyle/4354834-tabs) option group style.  (128567088)
-- The [`requestReview`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment variable is now compatible with Swift 6.  (129929512) (FB13922875)
+- Fixed: Selecting `Done` in the refund request confirmation sheet returns an error when using the [refund request API](../StoreKit/transaction/api-3803220-beginrefundrequest.md) with StoreKit Testing in Xcode.  (123865137)
+- Fixed: VoiceOver does not read a product’s title and description in [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md).  (124254957) (FB13679318)
+- Fixed an issue where the tab control in [`SusbcriptionStoreView`](../StoreKit/subscriptionstoreview.md) is too wide when using [StoreContent](../StoreKit/storecontent.md) with the [tabs](../StoreKit/subscriptionoptiongroupstyle/api-4354834-tabs.md) option group style.  (128567088)
+- The [requestReview](../SwiftUI/environmentvalues/requestreview.md) environment variable is now compatible with Swift 6.  (129929512) (FB13922875)
 
 ###### Known Issues
 
-- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666) **Workaround:** Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
+- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666)
+
+  **Workaround:** Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
 
 ###### Deprecations
 
-- The Original API for In-App Purchase is now deprecated, including: SKStoreReviewController, SKProduct, SKReceiptRefreshRequest, SKStorefront, SKPayment, SKRequest, SKProductsRequest, and SKProductDiscount. Please upgrade to [`StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/storekit/) for current APIs and future enhancements.  (116600524)
+- The Original API for In-App Purchase is now deprecated, including: SKStoreReviewController, SKProduct, SKReceiptRefreshRequest, SKStorefront, SKPayment, SKRequest, SKProductsRequest, and SKProductDiscount. Please upgrade to [StoreKit 2](https://developer.apple.com/storekit/) for current APIs and future enhancements.  (116600524)
 
 ##### Swift Charts
 
@@ -536,7 +551,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: For function plots, the Y domain cannot be inferred automatically.  (128877906)
 - Fixed: Animations involving charts might lead to the disappearance of marks with a `.foregroundStyle(Color)` throughout the duration of the animation, even if the color did not change.  (130023892)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
@@ -545,16 +560,22 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - If `Label` is used inside of a `List` with multiple views as its title, it will now stack them vertically and apply subtitle treatments to every view after the first.  (115528544)
 - For `ObservableObject` subclasses used with `@EnvironmentObject`, `@ObservedObject`, and `@StateObject`, SwiftUI will now only call `objectWillChange` once per property per object instance. If you use `@Published` and the default `ObservableObjectPublisher`, you do not need to change anything. If you override `objectWillChange`, ensure the lifetime of the publisher you return matches the lifetime of its enclosing `ObservableObject`.  (116197689)
 - On iPad, TabViews using the `automatic` style have a new appearance in the `regular` horizontal size class. The tab bar now appears at the top, instead of the bottom, with a more compact visual appearance.  (117029720)
-- SwiftUI sheets presented with the `.sheet` modifier now use `.automatic` sizing by default. `.automatic` resolves to `.form` or `.form.fitted(horizontal:false, vertical: true)` depending on the platform (see the symbol’s documentation for more). Platforms prior to iOS 18 and aligned releases used different, non-customizable default sheet sizing. iOS 17 and earlier used what is now called `.page` presentation sizing. macOS 14 and earlier used what is now called `.fitted` sizing. visionOS 1 used `.fitted` sizing. When linking apps against iOS 18 and aligned SDKs, audit your sheet presentations and pick the sizing best for you. Apply a `.presentationSizing` modifier to sheet contents: ```swift
- ContentView().sheet(isPresented: $present) {
-   SheetView().presentationSizing(.form)
- }
-``` (117551515)
+- SwiftUI sheets presented with the `.sheet` modifier now use `.automatic` sizing by default. `.automatic` resolves to `.form` or `.form.fitted(horizontal:false, vertical: true)` depending on the platform (see the symbol’s documentation for more). Platforms prior to iOS 18 and aligned releases used different, non-customizable default sheet sizing. iOS 17 and earlier used what is now called `.page` presentation sizing. macOS 14 and earlier used what is now called `.fitted` sizing. visionOS 1 used `.fitted` sizing. When linking apps against iOS 18 and aligned SDKs, audit your sheet presentations and pick the sizing best for you. Apply a `.presentationSizing` modifier to sheet contents:
+
+  ```swift
+   ContentView().sheet(isPresented: $present) {
+     SheetView().presentationSizing(.form)
+   }
+  ```
+
+  (117551515)
 - Improved the interaction of highPriorityGesture with ScrollView.  (119333786)
-- Document-based applications linked against iOS 18 now have a new launch screen design. Users can customize the default design by adding a `DocumentGroupLaunchScene` to the app definition. Users can change the screen title and background, replace action buttons, and add decorative accessory views. Non-document-based apps also can use the new screen via `DocumentLaunchView`.  (119843158)
+- Document-based applications linked against iOS 18 now have a new launch screen design. Users can customize the default design by adding a `DocumentGroupLaunchScene` to the app definition. Users can change the screen title and background, replace action buttons, and add decorative accessory views.
+
+  Non-document-based apps also can use the new screen via `DocumentLaunchView`.  (119843158)
 - Types conforming to the View protocol, and other similar SwiftUI protocols, are now isolated to the `@MainActor` by default. SwiftUI’s runtime behavior with respect to actor isolation has not changed: SwiftUI views and similar types have always been evaluated on the main actor at runtime; this change improves compile-time diagnostics for potential data-race safety issues. To opt out of the new default main actor isolation and restore the previous default isolation, add the nonisolated keyword to methods and properties as needed, or move the protocol conformance to an extension to opt out the entire type.  (120815051)
 - Known FormatStyles that are dependent on a FormatStyleCapitalizationContext and are embedded into a LocalizableStringResource via string interpolation now automatically infer capitalization based on sentence structure. The capitalization is only inferred automatically if it was `unknown` before.  (122688257)
-- [`Text(_:format:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(_:format:)) now automatically injects `FormatStyle` known to SwiftUI with the `TimeZone` and `Calendar` from the environment.  (123662780)
+- [Text(_:format:)](../SwiftUI/text/init%28_,format%29.md) now automatically injects `FormatStyle` known to SwiftUI with the `TimeZone` and `Calendar` from the environment.  (123662780)
 - `@Entry` macro can now be used to simplify declarations of custom `EnvironmentValues`, `FocusedValues`, `Transaction`, and `ContainerValues` properties.  (125568810)
 - Added the ability to give a gesture a name, which gets surfaced to UIGestureRecognizers when establishing dependencies.  (126527559)
 - Nesting a TabSection within a TabSection is supported in the `.sidebarAdaptable` TabViewStyle on iPadOS and visionOS.  (128237671)
@@ -566,21 +587,27 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: For apps linked on or after iOS 18, the `popover` modifier now respects the `arrowEdge` argument on iOS and iPadOS.  (66839017) (FB8350757)
 - Fixed: SwiftUI gestures no longer errantly trigger when dismissing a menu.  (69703502) (FB8751308)
 - Fixed: `ForEach` is now able to reclaim persistent state of unused child views. `@State` values created by views inside `ForEach` elements might be destroyed earlier than previously observed.  (90667238)
-- Fixed: A `DismissAction` captured in the content or detail column of a `NavigationSplitView` now pops the implicit stack. For apps linked on or after iOS 18 and aligned releases, the button in the example below will now clear any selection in the sidebar `List`. Previously, this would fail silently on iOS, and close the window on macOS. ```None
- NavigationSplitView {
-   List(…)
- } detail: {
-   DetailView()
- }
- 
- struct DetailView: View {
-   @Environment(\.dismiss) private var dismiss
- 
-   var body: some View { 
-     Button("Pop") { dismiss() }
+- Fixed: A `DismissAction` captured in the content or detail column of a `NavigationSplitView` now pops the implicit stack.
+
+  For apps linked on or after iOS 18 and aligned releases, the button in the example below will now clear any selection in the sidebar `List`. Previously, this would fail silently on iOS, and close the window on macOS.
+
+  ```
+   NavigationSplitView {
+     List(…)
+   } detail: {
+     DetailView()
    }
- }
-``` To retain the previous behavior, capture the `DismissAction` from the environment above the `NavigationSplitView`.  (92522613)
+   
+   struct DetailView: View {
+     @Environment(\.dismiss) private var dismiss
+   
+     var body: some View { 
+       Button("Pop") { dismiss() }
+     }
+   }
+  ```
+
+  To retain the previous behavior, capture the `DismissAction` from the environment above the `NavigationSplitView`.  (92522613)
 - Fixed: A `ScrollView` now propagates safe area insets on its non-scrollable edges. By default, Scroll indicator for scroll views that occupy the size of the screen have improved insets.  (102766716)
 - Fixed: Outline Lists do not animate correctly.  (106239318)
 - Fixed an issue where searchable suggestions automatically filter out completion options that have a `searchCompletion` matching the current search text. Exact matches should be explicitly elided from the suggestions if desired.  (107706241)
@@ -588,7 +615,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Using the `scrollClipDisabled()` view modifier with a `ScrollView` with a `LazyHStack` or `LazyVStack` will use the containing window to determine what content the lazy stack should render.  (111796138)
 - Fixed: SwiftUI will now assert that types conforming to the `App` protocol are value types.  (113634782)
 - Fixed: In macOS, a Toggle of the `.switch` style now animates when its `isOn` state is changed programatically, matching the existing behavior on iOS and iPadOS. The animation can be disabled in all platforms by setting the transaction’s `disablesAnimations` property when updating a Toggle’s state.  (115071023)
-- Fixed: Automatically updating `Text` created via [`Text(_:style:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(_:style:)) or [`Text(timerInterval:pauseTime:countsDown:showsHours:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(timerinterval:pausetime:countsdown:showshours:)) was causing increased battery drain when used in long running Live Activities. They now no longer animate changes in digits that signal the seconds value, keeping the power impact to a minimum.  (115906895)
+- Fixed: Automatically updating `Text` created via [Text(_:style:)](../SwiftUI/text/init%28_,style%29.md) or [Text(timerInterval:pauseTime:countsDown:showsHours:)](../SwiftUI/text/init%28timerinterval,pausetime,countsdown,showshours%29.md) was causing increased battery drain when used in long running Live Activities. They now no longer animate changes in digits that signal the seconds value, keeping the power impact to a minimum.  (115906895)
 - Fixed: SwiftUI no longer overrides a nil `scrollTargetAnchor` when using the `scrollPosition(id:anchor:)` modifier with a nil anchor. Specify a `topLeading` anchor to restore the previous behavior.  (116124988)
 - Fixed: When linking against iOS 18 SDKs, SwiftUI prevents cycles in `.sheet` presentations caused by presentations preferences (e.g. `presentationDetents` or `presentationBackground`) that depend on the size of the sheet. In some cases prior to iOS 18, these cycles might settle independently after some oscillation.  (117699610)
 - Fixed: App scenePhase now reports as active when at least one scene is active.  (117864591)
@@ -613,8 +640,8 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: `SceneBuilder`, `WidgetBundleBuilder`, `TableColumnBuilder`, `TableRowBuilder`, `CommandsBuilder`, and `ToolbarContentBuilder` now diagnose unsupported `if #available` conditions at compile time instead of crashing at run time.  (125379937)
 - Fixed: Resolved an issue where context menus with custom previews could not be interacted with.  (125517121)
 - Fixed: `UIViewRepresentable`, `NSViewRepresentable` and their view controller variants no longer create a layer with `allowsGroupOpacity` set to true.  (125561916)
-- Fixed: In certain scenarios, [`Text(_:style:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(_:style:)) produced suboptimal output, such as choosing an unnecessarily small calendar unit, showing zero values for large calendar units instead of omitting them, or showing seconds in Always On Display.  (125885307)
-- Fixed: [`Text(timerInterval:pauseTime:countsDown:showsHours:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(timerinterval:pausetime:countsdown:showshours:)) was redacting the seconds value even when the timer was paused, had not started yet, or had already reached its end.  (125885429)
+- Fixed: In certain scenarios, [`Text(_:style:)`](../SwiftUI/text/init%28_,style%29.md) produced suboptimal output, such as choosing an unnecessarily small calendar unit, showing zero values for large calendar units instead of omitting them, or showing seconds in Always On Display.  (125885307)
+- Fixed: [`Text(timerInterval:pauseTime:countsDown:showsHours:)`](../SwiftUI/text/init%28timerinterval,pausetime,countsdown,showshours%29.md) was redacting the seconds value even when the timer was paused, had not started yet, or had already reached its end.  (125885429)
 - Fixed: When applying a `searchable()` modifier to a `TabView`, the tab view will reset the search state when switching tabs.  (125926765)
 - Fixed: Resolved an issue where scroll views would not receive touches if placed near a tappable control. When rebuilt with the newer SDK, make sure that small buttons and tap targets are correctly enlarged. You can use the `contentShape` modifier.  (126232279)
 - Fixed: `DocumentGroup` scenes that do not allow document editing, created via `DocumentGroup(viewing:viewer:)`, will not render the document view.  (127076044)
@@ -626,7 +653,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: In the Swift 6 language mode, the `@Entry` macro now works with non-`Sendable` types if the type of the entry is declared explicitly.  (129073803)
 - Fixed an issue where the name passed to the `gesture` modifier would not be available when resolving UIKit dependencies.  (129590852)
 
-##### Tipkit
+##### TipKit
 
 ###### New Features
 
@@ -643,13 +670,13 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: When using `.translationPresentation()` on an iPhone, the background above the sheet blocks the presenting view instead of letting it show through.  (128504309)
 
-##### Uiapplication
+##### UIApplication
 
 ###### Resolved Issues
 
 - Fixed: Applications built with iOS 18, iPadOS 18, Mac Catalyst 18, or tvOS 18 SDKs will call to the deprecated method `UIApplication.openURL(_:)`. The specified URL will not open and will always return `false`.  (125695759)
 
-##### Uikit
+##### UIKit
 
 ###### Resolved Issues
 
@@ -678,11 +705,13 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Sharing your ID in Wallet within apps is not available when Require Face ID for Wallet is enabled.  (128775860)
 
-##### Wallet Apple Pay
+##### Wallet & Apple Pay
 
 ###### Known Issues
 
-- Users with an Apple Watch might be prompted to reauthorize Connected Accounts in Wallet on iPhone.  (129127520) **Workaround:** Wait for iPhone and Apple Watch to synchornize. If the issue persists after several minutes, try reauthorizing the connection on iPhone.
+- Users with an Apple Watch might be prompted to reauthorize Connected Accounts in Wallet on iPhone.  (129127520)
+
+  **Workaround:** Wait for iPhone and Apple Watch to synchornize. If the issue persists after several minutes, try reauthorizing the connection on iPhone.
 
 ##### Watch Faces
 
@@ -690,7 +719,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: In Apple Watch > Face Gallery on iPhone, complications for the Podcasts and Music apps are unavailable.  (131747921)
 
-##### Weatherkit
+##### WeatherKit
 
 ###### Resolved Issues
 
@@ -700,7 +729,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Some PrecipitationStatistics fields such as averagePrecipitationProbability and averageSnowfallAmount might show placeholder values.  (128008885)
 - Fixed: WeatherKit v2 is currently available only for Swift, not for the REST API.  (128024852)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -715,7 +744,9 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - For control widgets that specify both a subtitle and value, Control Center displays only the subtitle.  (127906735)
-- Images used in a ControlWidgetConfiguration that are loaded from the app extension’s bundle might glitch when using a symbol effect content transition.  (131789007) **Workaround:** Apply the .contentTransition(.identity) view modifier to the Image.
+- Images used in a ControlWidgetConfiguration that are loaded from the app extension’s bundle might glitch when using a symbol effect content transition.  (131789007)
+
+  **Workaround:** Apply the .contentTransition(.identity) view modifier to the Image.
 
 ##### Widgets
 
@@ -736,17 +767,18 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ## See Also
 
-- [iOS & iPadOS 18.6 Release Notes](ios-ipados-18_6-release-notes.md)
+### iOS & iPadOS 18
+- [iOS & iPadOS 18.6 Release Notes](./ios-ipados-18_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.5 Release Notes](ios-ipados-18_5-release-notes.md)
+- [iOS & iPadOS 18.5 Release Notes](./ios-ipados-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.4 Release Notes](ios-ipados-18_4-release-notes.md)
+- [iOS & iPadOS 18.4 Release Notes](./ios-ipados-18_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.3 Release Notes](ios-ipados-18_3-release-notes.md)
+- [iOS & iPadOS 18.3 Release Notes](./ios-ipados-18_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.2 Release Notes](ios-ipados-18_2-release-notes.md)
+- [iOS & iPadOS 18.2 Release Notes](./ios-ipados-18_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.1 Release Notes](ios-ipados-18_1-release-notes.md)
+- [iOS & iPadOS 18.1 Release Notes](./ios-ipados-18_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

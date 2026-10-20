@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer that holds the geometry data.
 
@@ -19,9 +20,14 @@ The buffer that holds the geometry data.
 var buffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> buffer;
+```
+
 ## See Also
 
-- [var offset: Int](mtlmotionkeyframedata/offset.md)
+### Specifying the keyframe data
+- [var offset: Int](./offset.md)
   The offset, in bytes, to the keyframe data.
 
 

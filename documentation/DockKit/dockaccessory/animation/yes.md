@@ -1,7 +1,8 @@
 # DockAccessory.Animation.yes
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory traces a vertical head nod.
 

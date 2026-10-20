@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object owning the receiver, which is the recipient of mouse-tracking, mouse-movement, and cursor-update messages.
 
@@ -14,13 +15,18 @@ The object owning the receiver, which is the recipient of mouse-tracking, mouse-
 weak var owner: AnyObject? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) id owner;
+```
+
 ## See Also
 
-- [var options: NSTrackingArea.Options](nstrackingarea/options-swift.property.md)
+### Getting Object Attributes
+- [var options: NSTrackingArea.Options](./options-swift.property.md)
   The options specified for the receiver.
-- [var rect: NSRect](nstrackingarea/rect.md)
+- [var rect: NSRect](./rect.md)
   The rectangle defining the area encompassed by the receiver.
-- [var userInfo: [AnyHashable : Any]?](nstrackingarea/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The dictionary containing the data associated with the receiver when it was created.
 
 

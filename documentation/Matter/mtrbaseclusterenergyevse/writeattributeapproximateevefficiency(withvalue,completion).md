@@ -1,7 +1,8 @@
 # writeAttributeApproximateEVEfficiency(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeApproximateEVEfficiency(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeApproximateEVEfficiency(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeApproximateEVEfficiencyWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

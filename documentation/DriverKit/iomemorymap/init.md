@@ -1,19 +1,20 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the memory map object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -23,11 +24,12 @@ virtual bool init();
 
 #### Discussion
 
-Don’t call this method directly. To create a memory map object, call the [`CreateMapping`](iomemorydescriptor/createmapping.md) method of [`IOMemoryDescriptor`](iomemorydescriptor.md).
+Don’t call this method directly. To create a memory map object, call the [`CreateMapping`](../iomemorydescriptor/createmapping.md) method of [`IOMemoryDescriptor`](../iomemorydescriptor.md).
 
 ## See Also
 
-- [free](iomemorymap/free.md)
+### Configuring the Memory Map
+- [free](./free.md)
   Performs any final cleanup for the memory map object.
 
 

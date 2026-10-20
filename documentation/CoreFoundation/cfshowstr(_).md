@@ -1,23 +1,28 @@
 # CFShowStr(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Prints the attributes of a string during debugging.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFShowStr(_ str: CFString!)
+```
+
+```c
+extern void CFShowStr(CFStringRef str);
 ```
 
 #### Discussion
@@ -30,7 +35,7 @@ Use this function to learn about specific attributes of a CFString object during
 - The allocator used to create it
 - The memory address of the character contents and whether those contents are in-line
 
-The information provided by this function is for debugging purposes only. The values of any of these attributes might change between different releases and on different platforms. Note in particular that this function does not show the contents of the string. If you want to display the contents of the string, use [`CFShow(_:)`](cfshow(_:).md).
+The information provided by this function is for debugging purposes only. The values of any of these attributes might change between different releases and on different platforms. Note in particular that this function does not show the contents of the string. If you want to display the contents of the string, use [`CFShow(_:)`](./cfshow%28_%29.md).
 
 ##### Special Considerations
 
@@ -56,7 +61,8 @@ You can also incorporate calls to `CFShowStr` in a test version of your code to 
 
 ## See Also
 
-- [func CFStringGetTypeID() -> CFTypeID](cfstringgettypeid().md)
+### Getting String Properties
+- [func CFStringGetTypeID() -> CFTypeID](./cfstringgettypeid%28%29.md)
   Returns the type identifier for the CFString opaque type.
 
 

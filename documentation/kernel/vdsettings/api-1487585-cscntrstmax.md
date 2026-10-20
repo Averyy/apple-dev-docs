@@ -1,14 +1,15 @@
 # csCntrstMax
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 SInt16 csCntrstMax;
 ```
 

@@ -1,7 +1,8 @@
 # minorVersion
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard’s minor version number.
 
@@ -18,13 +19,18 @@ The standard’s minor version number.
 var minorVersion: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger minorVersion;
+```
+
 ## See Also
 
-- [var majorVersion: Int](hkfhirversion/majorversion.md)
+### Accessing Version Data
+- [var majorVersion: Int](./majorversion.md)
   The standard’s major version number.
-- [var patchVersion: Int](hkfhirversion/patchversion.md)
+- [var patchVersion: Int](./patchversion.md)
   The standard’s patch version number.
-- [var stringRepresentation: String](hkfhirversion/stringrepresentation.md)
+- [var stringRepresentation: String](./stringrepresentation.md)
   A string representation of the version.
 
 

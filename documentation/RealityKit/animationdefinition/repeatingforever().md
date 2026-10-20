@@ -1,7 +1,8 @@
 # repeatingForever()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repeats the animation infinitely.
 
@@ -11,7 +12,7 @@ Repeats the animation infinitely.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ A version of the calling animation that will repeat infinitely.
 
 ## See Also
 
-- [var repeatMode: AnimationRepeatMode](animationdefinition/repeatmode.md)
+### Repeating animation playback
+- [var repeatMode: AnimationRepeatMode](./repeatmode.md)
   An option that determines how the animation repeats.
-- [var fillMode: AnimationFillMode](animationdefinition/fillmode.md)
+- [var fillMode: AnimationFillMode](./fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](animationdefinition/repeated(count:)-937w.md)
+- [func repeated(count: TimeInterval) -> Self](./repeated%28count%29-937w.md)
   Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](animationdefinition/repeated(count:)-941x8.md)
+- [func repeated(count: Int) -> Self](./repeated%28count%29-941x8.md)
   Repeats an animation the number of times specified by a whole number.
 
 

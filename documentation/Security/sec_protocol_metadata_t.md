@@ -1,7 +1,8 @@
 # sec_protocol_metadata_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `sec_protocol_metadata` instance conatins read-only properties of a connected and configured security protocol. Clients use this object to read information about a protocol instance. Properties include, for example, the negotiated TLS version, ciphersuite, and peer certificates.
 
@@ -18,6 +19,10 @@ A `sec_protocol_metadata` instance conatins read-only properties of a connected 
 
 ```swift
 typealias sec_protocol_metadata_t = any OS_sec_protocol_metadata
+```
+
+```c
+typedef NSObject<OS_sec_protocol_metadata> * sec_protocol_metadata_t;
 ```
 
 

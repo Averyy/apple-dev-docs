@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [var rawValue: UInt32](archiveheader/fieldtype-swift.struct/rawvalue.md)
+### Raw Values
+- [var rawValue: UInt32](./rawvalue.md)
 
 
 ---

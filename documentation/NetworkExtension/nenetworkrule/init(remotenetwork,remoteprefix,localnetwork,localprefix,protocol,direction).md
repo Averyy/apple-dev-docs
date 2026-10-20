@@ -1,17 +1,22 @@
 # init(remoteNetwork:remotePrefix:localNetwork:localPrefix:protocol:direction:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rule that matches traffic by remote network, local network, protocol, and direction.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 15.0
 
 ## Declaration
 
 ```swift
 init(remoteNetwork: NWHostEndpoint?, remotePrefix: Int, localNetwork: NWHostEndpoint?, localPrefix: Int, protocol: NENetworkRule.Protocol, direction: NETrafficDirection)
+```
+
+```objc
+- (instancetype) initWithRemoteNetwork:(NWHostEndpoint *) remoteNetwork remotePrefix:(NSUInteger) remotePrefix localNetwork:(NWHostEndpoint *) localNetwork localPrefix:(NSUInteger) localPrefix protocol:(NENetworkRuleProtocol) protocol direction:(NETrafficDirection) direction;
 ```
 
 #### Discussion
@@ -31,9 +36,10 @@ If the port string of `localNetwork` is `0` or the empty string, then the rule m
 
 ## See Also
 
-- [init(destinationNetwork: NWHostEndpoint, prefix: Int, protocol: NENetworkRule.Protocol)](nenetworkrule/init(destinationnetwork:prefix:protocol:).md)
+### Creating a network rule
+- [init(destinationNetwork: NWHostEndpoint, prefix: Int, protocol: NENetworkRule.Protocol)](./init%28destinationnetwork,prefix,protocol%29.md)
   Creates a rule that matches network traffic destined for a host within a specific network.
-- [init(destinationHost: NWHostEndpoint, protocol: NENetworkRule.Protocol)](nenetworkrule/init(destinationhost:protocol:).md)
+- [init(destinationHost: NWHostEndpoint, protocol: NENetworkRule.Protocol)](./init%28destinationhost,protocol%29.md)
   Creates a rule that matches network traffic destined for a host within a specific DNS domain.
 
 

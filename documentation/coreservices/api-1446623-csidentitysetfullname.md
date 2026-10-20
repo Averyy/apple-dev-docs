@@ -1,7 +1,8 @@
 # CSIdentitySetFullName(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentitySetFullName(_ identity: CSIdentity!, _ fullName: CFString!)
+```
+
+```c
+void CSIdentitySetFullName(CSIdentityRef identity, CFStringRef fullName);
 ```
 
 

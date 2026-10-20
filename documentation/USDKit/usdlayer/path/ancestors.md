@@ -1,7 +1,8 @@
 # ancestors
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All ancestor paths from leaf to root, excluding self.
 

@@ -1,15 +1,16 @@
 # kNewTimePitchParam_Pitch
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,14 +18,19 @@
 var kNewTimePitchParam_Pitch: AudioUnitParameterID { get }
 ```
 
+```c
+kNewTimePitchParam_Pitch
+```
+
 ## See Also
 
-- [var kNewTimePitchParam_EnablePeakLocking: AudioUnitParameterID](knewtimepitchparam_enablepeaklocking.md)
-- [var kNewTimePitchParam_Overlap: AudioUnitParameterID](knewtimepitchparam_overlap.md)
-- [var kNewTimePitchParam_Rate: AudioUnitParameterID](knewtimepitchparam_rate.md)
-- [var kNewTimePitchParam_EnableSpectralCoherence: AudioUnitParameterID](knewtimepitchparam_enablespectralcoherence.md)
-- [var kNewTimePitchParam_EnableTransientPreservation: AudioUnitParameterID](knewtimepitchparam_enabletransientpreservation.md)
-- [var kNewTimePitchParam_Smoothness: AudioUnitParameterID](knewtimepitchparam_smoothness.md)
+### Constants
+- [var kNewTimePitchParam_EnablePeakLocking: AudioUnitParameterID](./knewtimepitchparam_enablepeaklocking.md)
+- [var kNewTimePitchParam_Overlap: AudioUnitParameterID](./knewtimepitchparam_overlap.md)
+- [var kNewTimePitchParam_Rate: AudioUnitParameterID](./knewtimepitchparam_rate.md)
+- [var kNewTimePitchParam_EnableSpectralCoherence: AudioUnitParameterID](./knewtimepitchparam_enablespectralcoherence.md)
+- [var kNewTimePitchParam_EnableTransientPreservation: AudioUnitParameterID](./knewtimepitchparam_enabletransientpreservation.md)
+- [var kNewTimePitchParam_Smoothness: AudioUnitParameterID](./knewtimepitchparam_smoothness.md)
 
 
 ---

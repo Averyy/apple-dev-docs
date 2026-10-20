@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 var uniqueIdentifier: UUID { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUUID * uniqueIdentifier;
 ```
 
 

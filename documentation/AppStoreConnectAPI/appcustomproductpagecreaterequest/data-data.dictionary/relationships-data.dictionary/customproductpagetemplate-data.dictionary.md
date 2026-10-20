@@ -1,21 +1,22 @@
 # AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate
 ```
 
 ## Topics
 
 ### Objects
-- [object AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate.Data](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/customproductpagetemplate-data.dictionary/data-data.dictionary.md)
+- [object AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate.Data](./customproductpagetemplate-data.dictionary/data-data.dictionary.md)
   The request body you use to create an app custom product page.
 
 ## Properties
@@ -24,9 +25,10 @@ object AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTem
 
 ## See Also
 
-- [object AppCustomProductPageCreateRequest.Data.Relationships.App](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
-- [object AppCustomProductPageCreateRequest.Data.Relationships.AppCustomProductPageVersions](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpageversions-data.dictionary.md)
-- [object AppCustomProductPageCreateRequest.Data.Relationships.AppStoreVersionTemplate](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversiontemplate-data.dictionary.md)
+### Objects
+- [object AppCustomProductPageCreateRequest.Data.Relationships.App](./app-data.dictionary.md)
+- [object AppCustomProductPageCreateRequest.Data.Relationships.AppCustomProductPageVersions](./appcustomproductpageversions-data.dictionary.md)
+- [object AppCustomProductPageCreateRequest.Data.Relationships.AppStoreVersionTemplate](./appstoreversiontemplate-data.dictionary.md)
 
 
 ---

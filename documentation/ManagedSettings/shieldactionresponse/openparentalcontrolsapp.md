@@ -1,7 +1,8 @@
 # ShieldActionResponse.openParentalControlsApp
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An instruction for the system to open your parental controls app that is responsible for shielding the application or web browser
 

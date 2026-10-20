@@ -1,14 +1,15 @@
 # kIOTimingIDApple_640x400_67hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOTimingIDApple_640x400_67hz = 145
 ```
 

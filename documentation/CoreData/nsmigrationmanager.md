@@ -1,7 +1,8 @@
 # NSMigrationManager
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A migration manager instance that performs a migration of data from one persistent store to another using a given mapping model.
 
@@ -10,7 +11,7 @@ A migration manager instance that performs a migration of data from one persiste
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,80 +21,85 @@ A migration manager instance that performs a migration of data from one persiste
 class NSMigrationManager
 ```
 
+```objc
+@interface NSMigrationManager : NSObject
+```
+
 ## Topics
 
 ### Creating a Migration Manager
-- [init(sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel)](nsmigrationmanager/init(sourcemodel:destinationmodel:).md)
+- [init(sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel)](./nsmigrationmanager/init%28sourcemodel,destinationmodel%29.md)
   Initializes a migration manager instance with given source and destination models.
 ### Getting the Manager’s Configuration
-- [var destinationContext: NSManagedObjectContext](nsmigrationmanager/destinationcontext.md)
+- [var destinationContext: NSManagedObjectContext](./nsmigrationmanager/destinationcontext.md)
   The managed object context the migration manager uses for writing the destination persistent store.
-- [var destinationModel: NSManagedObjectModel](nsmigrationmanager/destinationmodel.md)
+- [var destinationModel: NSManagedObjectModel](./nsmigrationmanager/destinationmodel.md)
   The destination model for the migration manager.
-- [var mappingModel: NSMappingModel](nsmigrationmanager/mappingmodel.md)
+- [var mappingModel: NSMappingModel](./nsmigrationmanager/mappingmodel.md)
   The mapping model for the migration manager.
-- [var sourceContext: NSManagedObjectContext](nsmigrationmanager/sourcecontext.md)
+- [var sourceContext: NSManagedObjectContext](./nsmigrationmanager/sourcecontext.md)
   The managed object context the migration manager uses for reading the source persistent store.
-- [var sourceModel: NSManagedObjectModel](nsmigrationmanager/sourcemodel.md)
+- [var sourceModel: NSManagedObjectModel](./nsmigrationmanager/sourcemodel.md)
   The source model for the migration manager.
-- [func destinationEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/destinationentity(for:).md)
+- [func destinationEntity(for: NSEntityMapping) -> NSEntityDescription?](./nsmigrationmanager/destinationentity%28for%29.md)
   Returns the entity description for the destination entity of a given entity mapping.
-- [func sourceEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/sourceentity(for:).md)
+- [func sourceEntity(for: NSEntityMapping) -> NSEntityDescription?](./nsmigrationmanager/sourceentity%28for%29.md)
   Returns the entity description for the source entity of a given entity mapping.
 ### Customizing the Manager
-- [var userInfo: [AnyHashable : Any]?](nsmigrationmanager/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./nsmigrationmanager/userinfo.md)
   The user info for the migration manager.
-- [var usesStoreSpecificMigrationManager: Bool](nsmigrationmanager/usesstorespecificmigrationmanager.md)
+- [var usesStoreSpecificMigrationManager: Bool](./nsmigrationmanager/usesstorespecificmigrationmanager.md)
   A Boolean value that indicates whether the migration manager tries to use a store specific migration manager to perform the  migration.
 ### Managing Sources and Destinations
-- [func associate(sourceInstance: NSManagedObject, withDestinationInstance: NSManagedObject, for: NSEntityMapping)](nsmigrationmanager/associate(sourceinstance:withdestinationinstance:for:).md)
+- [func associate(sourceInstance: NSManagedObject, withDestinationInstance: NSManagedObject, for: NSEntityMapping)](./nsmigrationmanager/associate%28sourceinstance,withdestinationinstance,for%29.md)
   Associates a given source managed object instance with an array of destination instances for a given property mapping.
-- [func destinationInstances(forEntityMappingName: String, sourceInstances: [NSManagedObject]?) -> [NSManagedObject]](nsmigrationmanager/destinationinstances(forentitymappingname:sourceinstances:).md)
+- [func destinationInstances(forEntityMappingName: String, sourceInstances: [NSManagedObject]?) -> [NSManagedObject]](./nsmigrationmanager/destinationinstances%28forentitymappingname,sourceinstances%29.md)
   Returns the managed object instances created in the destination store for the named entity mapping for the given array of source instances.
-- [func sourceInstances(forEntityMappingName: String, destinationInstances: [NSManagedObject]?) -> [NSManagedObject]](nsmigrationmanager/sourceinstances(forentitymappingname:destinationinstances:).md)
+- [func sourceInstances(forEntityMappingName: String, destinationInstances: [NSManagedObject]?) -> [NSManagedObject]](./nsmigrationmanager/sourceinstances%28forentitymappingname,destinationinstances%29.md)
   Returns the managed object instances in the source store used to create the given destination instances for the passed in property mapping.
 ### Performing a Migration
-- [func migrateStore(from: URL, type: NSPersistentStore.StoreType, options: [AnyHashable : Any]?, mapping: NSMappingModel, to: URL, type: NSPersistentStore.StoreType, options: [AnyHashable : Any]?) throws](nsmigrationmanager/migratestore(from:type:options:mapping:to:type:options:).md)
+- [func migrateStore(from: URL, type: NSPersistentStore.StoreType, options: [AnyHashable : Any]?, mapping: NSMappingModel, to: URL, type: NSPersistentStore.StoreType, options: [AnyHashable : Any]?) throws](./nsmigrationmanager/migratestore%28from,type,options,mapping,to,type,options%29.md)
   Migrates the source store to the destination using the specified mapping model.
-- [func migrateStore(from: URL, sourceType: String, options: [AnyHashable : Any]?, with: NSMappingModel?, toDestinationURL: URL, destinationType: String, destinationOptions: [AnyHashable : Any]?) throws](nsmigrationmanager/migratestore(from:sourcetype:options:with:todestinationurl:destinationtype:destinationoptions:).md)
+- [func migrateStore(from: URL, sourceType: String, options: [AnyHashable : Any]?, with: NSMappingModel?, toDestinationURL: URL, destinationType: String, destinationOptions: [AnyHashable : Any]?) throws](./nsmigrationmanager/migratestore%28from,sourcetype,options,with,todestinationurl,destinationtype,destinationoptions%29.md)
   Migrates the store at a given source URL to the store at a given destination URL, performing all of the mappings specified in a given mapping model.
 ### Monitoring a Migration’s Progress
-- [var migrationProgress: Float](nsmigrationmanager/migrationprogress.md)
+- [var migrationProgress: Float](./nsmigrationmanager/migrationprogress.md)
   A number between `0` and `1` that indicates the proportion of completeness of the migration.
-- [var currentEntityMapping: NSEntityMapping](nsmigrationmanager/currententitymapping.md)
+- [var currentEntityMapping: NSEntityMapping](./nsmigrationmanager/currententitymapping.md)
   The entity mapping currently being processed.
 ### Aborting a Migration
-- [func cancelMigrationWithError(any Error)](nsmigrationmanager/cancelmigrationwitherror(_:).md)
+- [func cancelMigrationWithError(any Error)](./nsmigrationmanager/cancelmigrationwitherror%28_%29.md)
   Cancels the migration with a given error.
-- [func reset()](nsmigrationmanager/reset.md)
+- [func reset()](./nsmigrationmanager/reset%28%29.md)
   Resets the association tables for the migration.
 ### Deprecated
-- [Deprecated Symbols](nsmigrationmanager-deprecated-symbols.md)
+- [Deprecated Symbols](./nsmigrationmanager-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSMappingModel](nsmappingmodel.md)
+### Entity Mapping
+- [class NSMappingModel](./nsmappingmodel.md)
   A model instance that specifies how to map a model from a source to a destination managed object model.
-- [class NSEntityMapping](nsentitymapping.md)
+- [class NSEntityMapping](./nsentitymapping.md)
   A mapping instance that specifies how to map an entity from a source to a destination managed object model.
-- [class NSEntityMigrationPolicy](nsentitymigrationpolicy.md)
+- [class NSEntityMigrationPolicy](./nsentitymigrationpolicy.md)
   A policy instance that customizes the migration process for an entity mapping.
-- [enum NSEntityMappingType](nsentitymappingtype.md)
+- [enum NSEntityMappingType](./nsentitymappingtype.md)
   The types for mapping an entity between a source model and a destination model.
-- [class NSPropertyMapping](nspropertymapping.md)
+- [class NSPropertyMapping](./nspropertymapping.md)
   A mapping instance that specifies in a model how to map from a property in a source entity to a property in a destination entity.
 
 

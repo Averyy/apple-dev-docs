@@ -1,7 +1,8 @@
 # MTLIOErrorDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for input/output command queue errors.
 
@@ -19,17 +20,22 @@ The domain for input/output command queue errors.
 let MTLIOErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const MTLIOErrorDomain;
+```
+
 ## See Also
 
-- [protocol MTLIOCommandBuffer](mtliocommandbuffer.md)
+### I/O command buffers
+- [protocol MTLIOCommandBuffer](./mtliocommandbuffer.md)
   A command buffer that contains input/output commands that work with files in the file systems and Metal resources.
-- [protocol MTLIOFileHandle](mtliofilehandle.md)
+- [protocol MTLIOFileHandle](./mtliofilehandle.md)
   Represents a raw or compressed file, such as a resource asset file in your app’s bundle.
-- [typealias MTLIOCommandBufferHandler](mtliocommandbufferhandler.md)
+- [typealias MTLIOCommandBufferHandler](./mtliocommandbufferhandler.md)
   A convenience type that defines the signature of an input/output command buffer’s completion handler.
-- [enum MTLIOStatus](mtliostatus.md)
+- [enum MTLIOStatus](./mtliostatus.md)
   Represents the state of an input/output command buffer.
-- [MTLIOError.Code](mtlioerror-swift.struct/code.md)
+- [MTLIOError.Code](./mtlioerror-swift.struct/code.md)
   The error codes for creating an input/output file handle.
 
 

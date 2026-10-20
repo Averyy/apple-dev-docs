@@ -1,16 +1,17 @@
 # endEditing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the view (or one of its embedded text fields) to resign the first responder status.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,21 @@ Causes the view (or one of its embedded text fields) to resign the first respond
 func endEditing(_ force: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) endEditing:(BOOL) force;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view resigned the first responder status or [`false`](https://developer.apple.com/documentation/swift/false) if it did not.
+[`true`](../../Swift/true.md) if the view resigned the first responder status or [`false`](../../Swift/false.md) if it did not.
 
 #### Discussion
 
-This method looks at the current view and its subview hierarchy for the text field that is currently the first responder. If it finds one, it asks that text field to resign as first responder. If the `force` parameter is set to [`true`](https://developer.apple.com/documentation/swift/true), the text field is never even asked; it is forced to resign.
+This method looks at the current view and its subview hierarchy for the text field that is currently the first responder. If it finds one, it asks that text field to resign as first responder. If the `force` parameter is set to [`true`](../../Swift/true.md), the text field is never even asked; it is forced to resign.
 
 ## Parameters
 
-- `force`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to force the first responder to resign, regardless of whether it wants to do so.
+- `force`: Specify [`true`](../../Swift/true.md) to force the first responder to resign, regardless of whether it wants to do so.
 
 
 ---

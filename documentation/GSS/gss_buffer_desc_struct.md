@@ -1,7 +1,8 @@
 # gss_buffer_desc_struct
 
 **Framework**: GSS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure for a buffer descriptor that you use to exchange octet streams with many GSS-API functions.
 
@@ -18,45 +19,50 @@ The structure for a buffer descriptor that you use to exchange octet streams wit
 struct gss_buffer_desc_struct
 ```
 
+```c
+struct gss_buffer_desc_struct;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var length: Int](gss_buffer_desc_struct/length.md)
+- [var length: Int](./gss_buffer_desc_struct/length.md)
   The number of bytes held in the buffer.
-- [var value: UnsafeMutableRawPointer!](gss_buffer_desc_struct/value.md)
+- [var value: UnsafeMutableRawPointer!](./gss_buffer_desc_struct/value.md)
   A pointer to the bytes in the buffer.
 ### Initialization
-- [init()](gss_buffer_desc_struct/init.md)
+- [init()](./gss_buffer_desc_struct/init%28%29.md)
   Initialize a new, empty buffer.
-- [init(length: Int, value: UnsafeMutableRawPointer!)](gss_buffer_desc_struct/init(length:value:).md)
+- [init(length: Int, value: UnsafeMutableRawPointer!)](./gss_buffer_desc_struct/init%28length,value%29.md)
   Initialize a new buffer with the given array of elements.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [typealias gss_qop_t](gss_qop_t.md)
+### Buffer Data Structures
+- [typealias gss_qop_t](./gss_qop_t.md)
   A quality of protection setting.
-- [typealias gss_iov_buffer_t](gss_iov_buffer_t.md)
+- [typealias gss_iov_buffer_t](./gss_iov_buffer_t.md)
   The structure for a vectored I/O buffer and its defined type.
-- [typealias gss_iov_buffer_desc](gss_iov_buffer_desc.md)
+- [typealias gss_iov_buffer_desc](./gss_iov_buffer_desc.md)
   The structure for a vectored I/O buffer and its defined type.
-- [struct gss_iov_buffer_desc_struct](gss_iov_buffer_desc_struct.md)
+- [struct gss_iov_buffer_desc_struct](./gss_iov_buffer_desc_struct.md)
   The structure for a vectored I/O buffer and its defined type.
-- [typealias gss_buffer_t](gss_buffer_t.md)
+- [typealias gss_buffer_t](./gss_buffer_t.md)
   A pointer to a buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_const_buffer_t](gss_const_buffer_t.md)
+- [typealias gss_const_buffer_t](./gss_const_buffer_t.md)
   A pointer to an immutable buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_buffer_set_t](gss_buffer_set_t.md)
+- [typealias gss_buffer_set_t](./gss_buffer_set_t.md)
   A pointer to the descriptor that you use to manage an array of buffer descriptors.
-- [typealias gss_buffer_desc](gss_buffer_desc.md)
+- [typealias gss_buffer_desc](./gss_buffer_desc.md)
   The buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_buffer_set_desc](gss_buffer_set_desc.md)
+- [typealias gss_buffer_set_desc](./gss_buffer_set_desc.md)
   The descriptor that you use to manage an array of buffer descriptors.
-- [struct gss_buffer_set_desc_struct](gss_buffer_set_desc_struct.md)
+- [struct gss_buffer_set_desc_struct](./gss_buffer_set_desc_struct.md)
   The structure for a buffer set descriptor that you use to manage an array of buffer descriptors.
 
 

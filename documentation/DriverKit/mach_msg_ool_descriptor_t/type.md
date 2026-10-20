@@ -1,27 +1,29 @@
 # type
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 mach_msg_descriptor_type_t type;
 ```
 
 ## See Also
 
-- [address](mach_msg_ool_descriptor_t/address.md)
-- [copy](mach_msg_ool_descriptor_t/copy.md)
-- [deallocate](mach_msg_ool_descriptor_t/deallocate.md)
-- [pad1](mach_msg_ool_descriptor_t/pad1.md)
-- [size](mach_msg_ool_descriptor_t/size.md)
+### Getting the Properties
+- [address](./address.md)
+- [copy](./copy.md)
+- [deallocate](./deallocate.md)
+- [pad1](./pad1.md)
+- [size](./size.md)
 
 
 ---

@@ -1,19 +1,21 @@
 # Item_ID
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit integer, unique within the container.
 
 ## See Also
 
-- [Size](item_information_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](item_information_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Version](item_information_atom/version.md)
+- [Version](./version.md)
   One byte.
-- [Flags](item_information_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes.
 
 

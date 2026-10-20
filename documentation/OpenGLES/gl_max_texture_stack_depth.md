@@ -1,7 +1,8 @@
 # GL_MAX_TEXTURE_STACK_DEPTH
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_MAX_TEXTURE_STACK_DEPTH: Int32 { get }
+```
+
+```c
+#define GL_MAX_TEXTURE_STACK_DEPTH
 ```
 
 

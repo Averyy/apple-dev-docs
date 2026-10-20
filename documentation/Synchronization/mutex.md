@@ -1,7 +1,8 @@
 # Mutex
 
 **Framework**: Synchronization  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A synchronization primitive that protects shared mutable state via mutual exclusion.
 
@@ -42,19 +43,19 @@ class Manager {
 ## Topics
 
 ### Initializers
-- [init(consuming sending Value)](mutex/init(_:).md)
+- [init(consuming sending Value)](./mutex/init%28_%29.md)
   Initializes a value of this mutex with the given initial state.
 ### Instance Methods
-- [func withLock<Result, E>((inout sending Value) throws(E) -> sending Result) throws(E) -> sending Result](mutex/withlock(_:).md)
+- [func withLock<Result, E>((inout sending Value) throws(E) -> sending Result) throws(E) -> sending Result](./mutex/withlock%28_%29.md)
   Calls the given closure after acquiring the lock and then releases ownership.
-- [func withLockIfAvailable<Result, E>((inout sending Value) throws(E) -> sending Result) throws(E) -> sending Result?](mutex/withlockifavailable(_:).md)
+- [func withLockIfAvailable<Result, E>((inout sending Value) throws(E) -> sending Result) throws(E) -> sending Result?](./mutex/withlockifavailable%28_%29.md)
   Attempts to acquire the lock and then calls the given closure if successful.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

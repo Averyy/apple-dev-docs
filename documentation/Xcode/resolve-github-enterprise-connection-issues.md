@@ -1,6 +1,7 @@
 # Resolve GitHub Enterprise connection issues
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Verify that Xcode Cloud can access your GitHub Enterprise repository and fix configuration issues.
 
@@ -42,15 +43,16 @@ Required events:
 - Push
 - Repository
 
-As a last resort, you can disconnect Xcode Cloud from your GitHub Enterprise repository as described in [`Disconnect your Git repository in Xcode Cloud`](removing-your-project-from-xcode-cloud#Disconnect-your-Git-repository-in-Xcode-Cloud.md) and uninstall the app that guards access to your GitHub Enterprise repository as described in [`Remove personal access tokens or apps`](removing-your-project-from-xcode-cloud#Remove-personal-access-tokens-or-apps.md). However, you have to reconnect GitHub Enterprise to Xcode Cloud and configure access to each of your repositories on GitHub Enterprise — which may take a considerable amount of time if you have a lot of repositories and projects.
+As a last resort, you can disconnect Xcode Cloud from your GitHub Enterprise repository as described in [Disconnect your Git repository in Xcode Cloud](./removing-your-project-from-xcode-cloud.md#Disconnect-your-Git-repository-in-Xcode-Cloud) and uninstall the app that guards access to your GitHub Enterprise repository as described in [Remove personal access tokens or apps](./removing-your-project-from-xcode-cloud.md#Remove-personal-access-tokens-or-apps). However, you have to reconnect GitHub Enterprise to Xcode Cloud and configure access to each of your repositories on GitHub Enterprise — which may take a considerable amount of time if you have a lot of repositories and projects.
 
 > ❗ **Important**: Make sure you don’t delete your Xcode Cloud data and workflows. If you do this, you will lose access to your workflows and build data, and you’ll have to configure Xcode Cloud workflows for your project again.
 
 ## See Also
 
-- [Resolving common configuration and build issues](resolving-common-configuration-and-build-issues.md)
+### Troubleshooting
+- [Resolving common configuration and build issues](./resolving-common-configuration-and-build-issues.md)
   Review common configuration and build issues and learn how you can resolve them.
-- [Reporting feedback for Xcode Cloud](reporting-feedback-for-xcode-cloud.md)
+- [Reporting feedback for Xcode Cloud](./reporting-feedback-for-xcode-cloud.md)
   Provide feedback on issues you encounter when building with Xcode Cloud.
 
 

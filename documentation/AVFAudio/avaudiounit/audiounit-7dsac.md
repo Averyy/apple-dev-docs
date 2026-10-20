@@ -1,14 +1,17 @@
 # audioUnit
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Deprecated in favor of withAudioUnit
 
 ## Declaration
 
@@ -19,11 +22,12 @@ var audioUnit: AudioUnit { get }
 
 ## See Also
 
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-66uo7.md)
+### Accessing the underlying Audio Unit
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](./withaudiounit%28_%29-66uo7.md)
   Provides scoped access to the audio unit’s AudioUnit
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](./withaudiounit%28_%29-6c2ze.md)
   Provides scoped access to the audio unit’s AudioUnit
-- [var audioUnit: AudioUnit](avaudiounit/audiounit-5vuo0.md)
+- [var audioUnit: AudioUnit](./audiounit-5vuo0.md)
 
 
 ---

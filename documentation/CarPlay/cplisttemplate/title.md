@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title that the navigation bar displays when the template is visible.
 
@@ -16,13 +17,18 @@ The title that the navigation bar displays when the template is visible.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
 ## See Also
 
-- [class var maximumItemCount: Int](cplisttemplate/maximumitemcount.md)
+### Getting Supplementary Information
+- [class var maximumItemCount: Int](./maximumitemcount.md)
   The maximum number of items, across all sections, that the template can display.
-- [var itemCount: Int](cplisttemplate/itemcount.md)
+- [var itemCount: Int](./itemcount.md)
   The total number of items, across all sections, in the list.
-- [func indexPath(for: any CPListTemplateItem) -> IndexPath?](cplisttemplate/indexpath(for:).md)
+- [func indexPath(for: any CPListTemplateItem) -> IndexPath?](./indexpath%28for%29.md)
   Returns the index path for the specified item.
 
 

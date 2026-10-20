@@ -1,7 +1,8 @@
 # stratifiedSplit(proportions:seed:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an array of labeled image dictionaries by splitting the data source into strata.
 
@@ -29,7 +30,8 @@ An array of dictionaries of labeled images.
 
 ## See Also
 
-- [func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]]](mlimageclassifier/datasource/stratifiedsplit(proportions:generator:).md)
+### Splitting the data
+- [func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]]](./stratifiedsplit%28proportions,generator%29.md)
   Generates an array of labeled image dictionaries by splitting the data source into strata using the random-number generator.
 
 

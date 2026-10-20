@@ -1,7 +1,8 @@
 # sliderStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,9 +16,14 @@
 var sliderStyle: UISlider.Style { get set }
 ```
 
+```objc
+@property (nonatomic) UISliderStyle sliderStyle;
+```
+
 ## See Also
 
-- [UISlider.Style](uislider/style.md)
+### Changing the slider’s style
+- [UISlider.Style](./style.md)
 
 
 ---

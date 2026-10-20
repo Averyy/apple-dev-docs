@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,27 +12,27 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func accessibility(activationPoint:)](modifiedcontent/accessibility(activationpoint:).md)
+- [func accessibility(activationPoint:)](./modifiedcontent/accessibility%28activationpoint%29.md)
   Specifies the point where activations occur in the view.
-- [func accessibility(addTraits: AccessibilityTraits) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(addtraits:).md)
+- [func accessibility(addTraits: AccessibilityTraits) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28addtraits%29.md)
   Adds the given traits to the view.
-- [func accessibility(hidden: Bool) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(hidden:).md)
+- [func accessibility(hidden: Bool) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28hidden%29.md)
   Specifies whether to hide this view from system accessibility features.
-- [func accessibility(hint: Text) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(hint:).md)
+- [func accessibility(hint: Text) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28hint%29.md)
   Communicates to the user what happens after performing the view’s action.
-- [func accessibility(identifier: String) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(identifier:).md)
+- [func accessibility(identifier: String) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28identifier%29.md)
   Uses the specified string to identify the view.
-- [func accessibility(inputLabels: [Text]) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(inputlabels:).md)
+- [func accessibility(inputLabels: [Text]) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28inputlabels%29.md)
   Sets alternate input labels with which users identify a view.
-- [func accessibility(label: Text) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(label:).md)
+- [func accessibility(label: Text) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28label%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibility(removeTraits: AccessibilityTraits) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(removetraits:).md)
+- [func accessibility(removeTraits: AccessibilityTraits) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28removetraits%29.md)
   Removes the given traits from this view.
-- [func accessibility(selectionIdentifier: AnyHashable) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(selectionidentifier:).md)
+- [func accessibility(selectionIdentifier: AnyHashable) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28selectionidentifier%29.md)
   Sets a selection identifier for this view’s accessibility element.
-- [func accessibility(sortPriority: Double) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(sortpriority:).md)
+- [func accessibility(sortPriority: Double) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28sortpriority%29.md)
   Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
-- [func accessibility(value: Text) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibility(value:).md)
+- [func accessibility(value: Text) -> ModifiedContent<Content, Modifier>](./modifiedcontent/accessibility%28value%29.md)
   Adds a textual description of the value that the view contains.
 
 

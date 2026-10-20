@@ -1,7 +1,8 @@
 # sphere
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The correction for farsightedness.
 
@@ -20,17 +21,22 @@ The correction for farsightedness.
 var sphere: HKQuantity { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) HKQuantity * sphere;
+```
+
 #### Discussion
 
-This quantity uses [`diopter()`](hkunit/diopter().md) units. The range is -10.5 to +6.5.
+This quantity uses [`diopter()`](../hkunit/diopter%28%29.md) units. The range is -10.5 to +6.5.
 
 ## See Also
 
-- [var cylinder: HKQuantity?](hklensspecification/cylinder.md)
+### Accessing lens specification data
+- [var cylinder: HKQuantity?](./cylinder.md)
   Part of the correction for astigmatism that measures the strength of the correction.
-- [var axis: HKQuantity?](hklensspecification/axis.md)
+- [var axis: HKQuantity?](./axis.md)
   Part of the correction for astigmatism that measures the orientation fo the correction.
-- [var addPower: HKQuantity?](hklensspecification/addpower.md)
+- [var addPower: HKQuantity?](./addpower.md)
   The correction for nearsightedness.
 
 

@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Status.partial
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 More results may be yielded for this `queryToken`.
 

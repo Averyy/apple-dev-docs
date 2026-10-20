@@ -1,7 +1,8 @@
 # AsyncThrowingPublisher.Iterator
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the asynchronous publisher sequence.
 
@@ -23,17 +24,18 @@ struct Iterator
 ## Topics
 
 ### Iterating over elements
-- [func next() async throws -> P.Output?](asyncthrowingpublisher/iterator/next.md)
+- [func next() async throws -> P.Output?](./iterator/next%28%29.md)
   Produces the next element in the prefix sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AsyncThrowingPublisher<P>.Iterator](asyncthrowingpublisher/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> AsyncThrowingPublisher<P>.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

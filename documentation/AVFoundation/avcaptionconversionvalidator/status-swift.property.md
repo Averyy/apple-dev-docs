@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the status of validation.
 
@@ -17,9 +18,14 @@ A value that indicates the status of validation.
 var status: AVCaptionConversionValidator.Status { get }
 ```
 
+```objc
+@property (readonly) AVCaptionConversionValidatorStatus status;
+```
+
 ## See Also
 
-- [AVCaptionConversionValidator.Status](avcaptionconversionvalidator/status-swift.enum.md)
+### Checking the status
+- [AVCaptionConversionValidator.Status](./status-swift.enum.md)
   Constants that indicate the status of a validator.
 
 

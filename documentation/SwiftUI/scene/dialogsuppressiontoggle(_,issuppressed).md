@@ -1,7 +1,8 @@
 # dialogSuppressionToggle(_:isSuppressed:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables user suppression of an alert with a custom suppression message.
 
@@ -13,6 +14,23 @@ Enables user suppression of an alert with a custom suppression message.
 ```swift
 @export(implementation)
 nonisolated func dialogSuppressionToggle(_ titleResource: LocalizedStringResource, isSuppressed: Binding<Bool>) -> some Scene
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func dialogSuppressionToggle(_ label: Text, isSuppressed: Binding<Bool>) -> some Scene
+```
+
+```swift
+nonisolated
+func dialogSuppressionToggle(_ titleKey: LocalizedStringKey, isSuppressed: Binding<Bool>) -> some Scene
+```
+
+```swift
+nonisolated
+func dialogSuppressionToggle<S>(_ title: S, isSuppressed: Binding<Bool>) -> some Scene where S : StringProtocol
 ```
 
 #### Discussion
@@ -59,20 +77,21 @@ struct MyApp: App {
 
 ## See Also
 
-- [func dialogIcon(Image?) -> some View](view/dialogicon(_:).md)
+### Configuring a dialog
+- [func dialogIcon(Image?) -> some View](../view/dialogicon%28_%29.md)
   Configures the icon used by dialogs within this view.
-- [func dialogIcon(Image?) -> some Scene](scene/dialogicon(_:).md)
+- [func dialogIcon(Image?) -> some Scene](./dialogicon%28_%29.md)
   Configures the icon used by alerts.
-- [func dialogSeverity(DialogSeverity) -> some View](view/dialogseverity(_:).md)
-- [func dialogSeverity(DialogSeverity) -> some Scene](scene/dialogseverity(_:).md)
+- [func dialogSeverity(DialogSeverity) -> some View](../view/dialogseverity%28_%29.md)
+- [func dialogSeverity(DialogSeverity) -> some Scene](./dialogseverity%28_%29.md)
   Sets the severity for alerts.
-- [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View](view/dialogsuppressiontoggle(issuppressed:).md)
+- [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View](../view/dialogsuppressiontoggle%28issuppressed%29.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
-- [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some Scene](scene/dialogsuppressiontoggle(issuppressed:).md)
+- [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some Scene](./dialogsuppressiontoggle%28issuppressed%29.md)
   Enables user suppression of an alert with a custom suppression message.
-- [func dialogSuppressionToggle(_:isSuppressed:)](view/dialogsuppressiontoggle(_:issuppressed:).md)
+- [func dialogSuppressionToggle(_:isSuppressed:)](../view/dialogsuppressiontoggle%28_,issuppressed%29.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
-- [func dialogPreventsAppTermination(Bool?) -> some View](view/dialogpreventsapptermination(_:).md)
+- [func dialogPreventsAppTermination(Bool?) -> some View](../view/dialogpreventsapptermination%28_%29.md)
   Whether the alert or confirmation dialog prevents the app from being quit/terminated by the system or app termination menu item.
 
 

@@ -1,14 +1,15 @@
 # init()
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a web presentment controller.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

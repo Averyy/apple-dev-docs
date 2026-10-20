@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized task title displayed to a person.
 
@@ -16,13 +17,18 @@ The localized task title displayed to a person.
 var title: String { get set }
 ```
 
+```objc
+@property (copy, nonnull) NSString * title;
+```
+
 #### Discussion
 
-Define the value of this property as a parameter to the request initializer:  [`init(identifier:title:subtitle:)`](bgcontinuedprocessingtaskrequest/init(identifier:title:subtitle:).md).
+Define the value of this property as a parameter to the request initializer:  [`init(identifier:title:subtitle:)`](./init%28identifier,title,subtitle%29.md).
 
 ## See Also
 
-- [var subtitle: String](bgcontinuedprocessingtaskrequest/subtitle.md)
+### Titling the task
+- [var subtitle: String](./subtitle.md)
   The localized subtitle displayed to a person.
 
 

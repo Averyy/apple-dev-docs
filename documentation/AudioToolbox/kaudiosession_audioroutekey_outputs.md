@@ -1,13 +1,16 @@
 # kAudioSession_AudioRouteKey_Outputs
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An object containing details about the audio output used in the current audio route.
 
 **Availability**:
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: no longer supported
 
 ## Declaration
 
@@ -15,9 +18,13 @@ An object containing details about the audio output used in the current audio ro
 let kAudioSession_AudioRouteKey_Outputs: CFString!
 ```
 
+```c
+extern CFStringRef const kAudioSession_AudioRouteKey_Outputs;
+```
+
 #### Discussion
 
-If there is an audio output available, the array usually contains one [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](kaudiosession_audioroutekey_type.md), whose value is one of the constants in [`Audio Output Routes`](audio-output-routes.md).
+If there is an audio output available, the array usually contains one [`CFDictionary`](../CoreFoundation/cfdictionary.md) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](./kaudiosession_audioroutekey_type.md), whose value is one of the constants in [Audio Output Routes](./audio-output-routes.md).
 
 In certain circumstances, such as when a ringtone is being sent to the device speaker and to a connected headset, the array contains more than one dictionary.
 
@@ -25,35 +32,36 @@ If no audio output is available, the array is empty.
 
 ## See Also
 
-- [let kAudioSessionInputRoute_BluetoothHFP: CFString!](kaudiosessioninputroute_bluetoothhfp.md)
+### Constants
+- [let kAudioSessionInputRoute_BluetoothHFP: CFString!](./kaudiosessioninputroute_bluetoothhfp.md)
   A microphone that is part of a Bluetooth Hands-Free Profile (HFP) device.
-- [let kAudioSessionInputRoute_BuiltInMic: CFString!](kaudiosessioninputroute_builtinmic.md)
+- [let kAudioSessionInputRoute_BuiltInMic: CFString!](./kaudiosessioninputroute_builtinmic.md)
   A built-in microphone input.
-- [let kAudioSessionInputRoute_HeadsetMic: CFString!](kaudiosessioninputroute_headsetmic.md)
+- [let kAudioSessionInputRoute_HeadsetMic: CFString!](./kaudiosessioninputroute_headsetmic.md)
   A microphone that is part of a headset.
-- [let kAudioSessionInputRoute_LineIn: CFString!](kaudiosessioninputroute_linein.md)
+- [let kAudioSessionInputRoute_LineIn: CFString!](./kaudiosessioninputroute_linein.md)
   A line in input
-- [let kAudioSessionInputRoute_USBAudio: CFString!](kaudiosessioninputroute_usbaudio.md)
+- [let kAudioSessionInputRoute_USBAudio: CFString!](./kaudiosessioninputroute_usbaudio.md)
   A Universal Serial Bus (USB) input, accessed through the device 30-pin connector.
-- [let kAudioSessionOutputRoute_AirPlay: CFString!](kaudiosessionoutputroute_airplay.md)
+- [let kAudioSessionOutputRoute_AirPlay: CFString!](./kaudiosessionoutputroute_airplay.md)
   An output on an AirPlay device.
-- [let kAudioSessionOutputRoute_BluetoothA2DP: CFString!](kaudiosessionoutputroute_bluetootha2dp.md)
+- [let kAudioSessionOutputRoute_BluetoothA2DP: CFString!](./kaudiosessionoutputroute_bluetootha2dp.md)
   Speakers in a Bluetooth A2DP device.
-- [let kAudioSessionOutputRoute_BluetoothHFP: CFString!](kaudiosessionoutputroute_bluetoothhfp.md)
+- [let kAudioSessionOutputRoute_BluetoothHFP: CFString!](./kaudiosessionoutputroute_bluetoothhfp.md)
   Speakers that are part of a Bluetooth Hands-Free Profile (HFP) accessory.
-- [let kAudioSessionOutputRoute_BuiltInReceiver: CFString!](kaudiosessionoutputroute_builtinreceiver.md)
+- [let kAudioSessionOutputRoute_BuiltInReceiver: CFString!](./kaudiosessionoutputroute_builtinreceiver.md)
   The built-in speaker you hold to your ear when on a phone call.
-- [let kAudioSessionOutputRoute_BuiltInSpeaker: CFString!](kaudiosessionoutputroute_builtinspeaker.md)
+- [let kAudioSessionOutputRoute_BuiltInSpeaker: CFString!](./kaudiosessionoutputroute_builtinspeaker.md)
   The primary built-in speaker.
-- [let kAudioSessionOutputRoute_HDMI: CFString!](kaudiosessionoutputroute_hdmi.md)
+- [let kAudioSessionOutputRoute_HDMI: CFString!](./kaudiosessionoutputroute_hdmi.md)
   An output available through the HDMI interface.
-- [let kAudioSessionOutputRoute_Headphones: CFString!](kaudiosessionoutputroute_headphones.md)
+- [let kAudioSessionOutputRoute_Headphones: CFString!](./kaudiosessionoutputroute_headphones.md)
   Speakers in headphones or in a headset.
-- [let kAudioSessionOutputRoute_LineOut: CFString!](kaudiosessionoutputroute_lineout.md)
+- [let kAudioSessionOutputRoute_LineOut: CFString!](./kaudiosessionoutputroute_lineout.md)
   Analog line-level output.
-- [let kAudioSessionOutputRoute_USBAudio: CFString!](kaudiosessionoutputroute_usbaudio.md)
+- [let kAudioSessionOutputRoute_USBAudio: CFString!](./kaudiosessionoutputroute_usbaudio.md)
   Speaker(s) in a Universal Serial Bus (USB) accessory, accessed through the device 30-pin connector.
-- [let kAudioSession_AudioRouteChangeKey_CurrentRouteDescription: CFString!](kaudiosession_audioroutechangekey_currentroutedescription.md)
+- [let kAudioSession_AudioRouteChangeKey_CurrentRouteDescription: CFString!](./kaudiosession_audioroutechangekey_currentroutedescription.md)
   Describes the current audio route.
 
 

@@ -1,7 +1,8 @@
 # JSObjectCallAsFunctionCallback
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The callback type for calling an object as a function.
 
@@ -19,9 +20,13 @@ The callback type for calling an object as a function.
 typealias JSObjectCallAsFunctionCallback = (JSContextRef?, JSObjectRef?, JSObjectRef?, Int, UnsafePointer<JSValueRef?>?, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef?
 ```
 
+```c
+typedef const struct OpaqueJSValue *(*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSValue *, unsigned long, const struct OpaqueJSValue *const *, const struct OpaqueJSValue **) JSObjectCallAsFunctionCallback;
+```
+
 #### Return Value
 
-A [`JSValueRef`](jsvalueref.md) that is the function’s return value.
+A [`JSValueRef`](./jsvalueref.md) that is the function’s return value.
 
 #### Discussion
 
@@ -38,43 +43,44 @@ If this callback is `NULL`, calling your object as a function throws an exceptio
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `function`: A [`JSObjectRef`](jsobjectref.md) that is the function to call.
-- `thisObject`: A [`JSObjectRef`](jsobjectref.md) that is the `this` variable in the function’s scope.
+- `function`: A [`JSObjectRef`](./jsobjectref.md) that is the function to call.
+- `thisObject`: A [`JSObjectRef`](./jsobjectref.md) that is the `this` variable in the function’s scope.
 - `argumentCount`: An integer count of the number of arguments in `arguments`.
 - `arguments`: A `JSValue` array of the arguments to pass to the function.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 
-- [var initialize: JSObjectInitializeCallback!](jsclassdefinition/initialize.md)
+### Managing Callbacks
+- [var initialize: JSObjectInitializeCallback!](./jsclassdefinition/initialize.md)
   The callback for creating the object.
-- [typealias JSObjectInitializeCallback](jsobjectinitializecallback.md)
+- [typealias JSObjectInitializeCallback](./jsobjectinitializecallback.md)
   The callback type for first creating an object.
-- [var finalize: JSObjectFinalizeCallback!](jsclassdefinition/finalize.md)
+- [var finalize: JSObjectFinalizeCallback!](./jsclassdefinition/finalize.md)
   The callback for preparing the object for garbage collection.
-- [typealias JSObjectFinalizeCallback](jsobjectfinalizecallback.md)
+- [typealias JSObjectFinalizeCallback](./jsobjectfinalizecallback.md)
   The callback type for finalizing an object (preparing it for garbage collection).
-- [var hasProperty: JSObjectHasPropertyCallback!](jsclassdefinition/hasproperty.md)
+- [var hasProperty: JSObjectHasPropertyCallback!](./jsclassdefinition/hasproperty.md)
   The callback for determining whether an object has a property.
-- [typealias JSObjectHasPropertyCallback](jsobjecthaspropertycallback.md)
+- [typealias JSObjectHasPropertyCallback](./jsobjecthaspropertycallback.md)
   The callback type for determining whether an object has a property.
-- [var getProperty: JSObjectGetPropertyCallback!](jsclassdefinition/getproperty.md)
+- [var getProperty: JSObjectGetPropertyCallback!](./jsclassdefinition/getproperty.md)
   The callback for getting a property’s value.
-- [typealias JSObjectGetPropertyCallback](jsobjectgetpropertycallback.md)
+- [typealias JSObjectGetPropertyCallback](./jsobjectgetpropertycallback.md)
   The callback type for getting a property’s value.
-- [var setProperty: JSObjectSetPropertyCallback!](jsclassdefinition/setproperty.md)
+- [var setProperty: JSObjectSetPropertyCallback!](./jsclassdefinition/setproperty.md)
   The callback for setting a property’s value.
-- [typealias JSObjectSetPropertyCallback](jsobjectsetpropertycallback.md)
+- [typealias JSObjectSetPropertyCallback](./jsobjectsetpropertycallback.md)
   The callback type for setting a property’s value.
-- [var deleteProperty: JSObjectDeletePropertyCallback!](jsclassdefinition/deleteproperty.md)
+- [var deleteProperty: JSObjectDeletePropertyCallback!](./jsclassdefinition/deleteproperty.md)
   The callback for deleting a property.
-- [typealias JSObjectDeletePropertyCallback](jsobjectdeletepropertycallback.md)
+- [typealias JSObjectDeletePropertyCallback](./jsobjectdeletepropertycallback.md)
   The callback type for deleting a property.
-- [var getPropertyNames: JSObjectGetPropertyNamesCallback!](jsclassdefinition/getpropertynames.md)
+- [var getPropertyNames: JSObjectGetPropertyNamesCallback!](./jsclassdefinition/getpropertynames.md)
   The callback for collecting the names of an object’s properties.
-- [typealias JSObjectGetPropertyNamesCallback](jsobjectgetpropertynamescallback.md)
+- [typealias JSObjectGetPropertyNamesCallback](./jsobjectgetpropertynamescallback.md)
   The callback type for collecting the names of an object’s properties.
-- [var callAsFunction: JSObjectCallAsFunctionCallback!](jsclassdefinition/callasfunction.md)
+- [var callAsFunction: JSObjectCallAsFunctionCallback!](./jsclassdefinition/callasfunction.md)
   The callback for calling an object as a function.
 
 

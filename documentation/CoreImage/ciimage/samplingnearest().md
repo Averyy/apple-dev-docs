@@ -1,7 +1,8 @@
 # samplingNearest()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an image by changing the receiver’s sample mode to nearest neighbor.
 
@@ -19,13 +20,18 @@ Create an image by changing the receiver’s sample mode to nearest neighbor.
 func samplingNearest() -> CIImage
 ```
 
+```objc
+- (CIImage *) imageBySamplingNearest;
+```
+
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md) instance with a nearest sampling.
+ An autoreleased [`CIImage`](../ciimage.md) instance with a nearest sampling.
 
 ## See Also
 
-- [func samplingLinear() -> CIImage](ciimage/samplinglinear.md)
+### Sampling the Image
+- [func samplingLinear() -> CIImage](./samplinglinear%28%29.md)
   Create an image by changing the receiver’s sample mode to bilinear interpolation.
 
 

@@ -1,7 +1,8 @@
 # CKShare.ParticipantAcceptanceStatus
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the status of a participant.
 
@@ -20,35 +21,40 @@ Constants that represent the status of a participant.
 enum ParticipantAcceptanceStatus
 ```
 
+```c
+enum CKShareParticipantAcceptanceStatus : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CKShare.ParticipantAcceptanceStatus.unknown](ckshare/participantacceptancestatus/unknown.md)
+- [CKShare.ParticipantAcceptanceStatus.unknown](./participantacceptancestatus/unknown.md)
   The participant’s status is unknown.
-- [CKShare.ParticipantAcceptanceStatus.pending](ckshare/participantacceptancestatus/pending.md)
+- [CKShare.ParticipantAcceptanceStatus.pending](./participantacceptancestatus/pending.md)
   The participant’s acceptance of the share request is pending.
-- [CKShare.ParticipantAcceptanceStatus.accepted](ckshare/participantacceptancestatus/accepted.md)
+- [CKShare.ParticipantAcceptanceStatus.accepted](./participantacceptancestatus/accepted.md)
   The participant accepted the share request.
-- [CKShare.ParticipantAcceptanceStatus.removed](ckshare/participantacceptancestatus/removed.md)
+- [CKShare.ParticipantAcceptanceStatus.removed](./participantacceptancestatus/removed.md)
   The system removed the participant from the share.
 ### Initializers
-- [init?(rawValue: Int)](ckshare/participantacceptancestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./participantacceptancestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var acceptanceStatus: CKShare.ParticipantAcceptanceStatus](ckshare/participant/acceptancestatus-swift.property.md)
+### Accessing the Participant’s Status
+- [var acceptanceStatus: CKShare.ParticipantAcceptanceStatus](./participant/acceptancestatus-swift.property.md)
   The current state of the user’s acceptance of the share.
-- [CKShare.Participant.AcceptanceStatus](ckshare/participant/acceptancestatus-swift.typealias.md)
+- [CKShare.Participant.AcceptanceStatus](./participant/acceptancestatus-swift.typealias.md)
   A type that represents the acceptance status of the participant.
 
 

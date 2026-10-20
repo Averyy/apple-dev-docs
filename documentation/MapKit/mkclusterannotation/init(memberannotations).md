@@ -1,7 +1,8 @@
 # init(memberAnnotations:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cluster annotation with the specified individual annotations.
 
@@ -19,9 +20,13 @@ Creates a cluster annotation with the specified individual annotations.
 init(memberAnnotations: [any MKAnnotation])
 ```
 
+```objc
+- (instancetype) initWithMemberAnnotations:(NSArray<id<MKAnnotation>> *) memberAnnotations;
+```
+
 #### Return Value
 
-An initialized [`MKClusterAnnotation`](mkclusterannotation.md) object or `nil` if the object could not be created.
+An initialized [`MKClusterAnnotation`](../mkclusterannotation.md) object or `nil` if the object could not be created.
 
 ## Parameters
 

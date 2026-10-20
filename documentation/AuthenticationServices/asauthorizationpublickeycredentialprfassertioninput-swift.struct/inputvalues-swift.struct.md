@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The values to use as inputs to the salts for deriving the symmetric key.
 
@@ -25,15 +26,15 @@ This type is analogous to `AuthenticationExtensionsPRFValues` in the WebAuthn sp
 ## Topics
 
 ### Initializers
-- [init(saltInput1: Data, saltInput2: Data?)](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/init(saltinput1:saltinput2:).md)
+- [init(saltInput1: Data, saltInput2: Data?)](./inputvalues-swift.struct/init%28saltinput1,saltinput2%29.md)
   Initializes an input values structure with the given salts.
 ### Instance Properties
-- [var saltInput1: Data](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/saltinput1.md)
+- [var saltInput1: Data](./inputvalues-swift.struct/saltinput1.md)
   A salt for the hashing function.
-- [var saltInput2: Data?](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/saltinput2.md)
+- [var saltInput2: Data?](./inputvalues-swift.struct/saltinput2.md)
   An optional second salt for the hashing function.
 ### Type Methods
-- [static func saltInput1(Data, saltInput2: Data?) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/saltinput1(_:saltinput2:).md)
+- [static func saltInput1(Data, saltInput2: Data?) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues](./inputvalues-swift.struct/saltinput1%28_,saltinput2%29.md)
   The inputs for generating the PRF output secrets.
 
 

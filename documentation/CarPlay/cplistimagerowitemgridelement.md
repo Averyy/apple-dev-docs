@@ -1,7 +1,8 @@
 # CPListImageRowItemGridElement
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -15,26 +16,30 @@
 class CPListImageRowItemGridElement
 ```
 
+```objc
+@interface CPListImageRowItemGridElement : CPListImageRowItemElement
+```
+
 ## Topics
 
 ### Initializers
-- [init(image: UIImage)](cplistimagerowitemgridelement/init(image:).md)
+- [init(image: UIImage)](./cplistimagerowitemgridelement/init%28image%29.md)
   Initialize an element that is constituted of an image.
 
 ## Relationships
 
 ### Inherits From
-- [CPListImageRowItemElement](cplistimagerowitemelement.md)
+- [CPListImageRowItemElement](./cplistimagerowitemelement.md)
 ### Conforms To
-- [CPPlayableItem](cpplayableitem.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CPPlayableItem](./cpplayableitem.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

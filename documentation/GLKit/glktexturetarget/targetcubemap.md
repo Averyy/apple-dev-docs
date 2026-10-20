@@ -1,7 +1,8 @@
 # GLKTextureTarget.targetCubeMap
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The texture is a set of six textures that make up a cube map.
 
@@ -17,11 +18,16 @@ The texture is a set of six textures that make up a cube map.
 case targetCubeMap
 ```
 
+```c
+GLKTextureTargetCubeMap
+```
+
 ## See Also
 
-- [GLKTextureTarget.target2D](glktexturetarget/target2d.md)
+### Constants
+- [GLKTextureTarget.target2D](./target2d.md)
   The texture is a 2D texture.
-- [GLKTextureTarget.targetCt](glktexturetarget/targetct.md)
+- [GLKTextureTarget.targetCt](./targetct.md)
   The number of items in the enumeration.
 
 

@@ -1,7 +1,8 @@
 # TossableRepresentation.DecahedronFace.b
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+
@@ -14,15 +15,16 @@ case b
 
 ## See Also
 
-- [TossableRepresentation.DecahedronFace.a](tossablerepresentation/decahedronface/a.md)
-- [TossableRepresentation.DecahedronFace.c](tossablerepresentation/decahedronface/c.md)
-- [TossableRepresentation.DecahedronFace.d](tossablerepresentation/decahedronface/d.md)
-- [TossableRepresentation.DecahedronFace.e](tossablerepresentation/decahedronface/e.md)
-- [TossableRepresentation.DecahedronFace.f](tossablerepresentation/decahedronface/f.md)
-- [TossableRepresentation.DecahedronFace.g](tossablerepresentation/decahedronface/g.md)
-- [TossableRepresentation.DecahedronFace.h](tossablerepresentation/decahedronface/h.md)
-- [TossableRepresentation.DecahedronFace.i](tossablerepresentation/decahedronface/i.md)
-- [TossableRepresentation.DecahedronFace.j](tossablerepresentation/decahedronface/j.md)
+### Faces
+- [TossableRepresentation.DecahedronFace.a](./a.md)
+- [TossableRepresentation.DecahedronFace.c](./c.md)
+- [TossableRepresentation.DecahedronFace.d](./d.md)
+- [TossableRepresentation.DecahedronFace.e](./e.md)
+- [TossableRepresentation.DecahedronFace.f](./f.md)
+- [TossableRepresentation.DecahedronFace.g](./g.md)
+- [TossableRepresentation.DecahedronFace.h](./h.md)
+- [TossableRepresentation.DecahedronFace.i](./i.md)
+- [TossableRepresentation.DecahedronFace.j](./j.md)
 
 
 ---

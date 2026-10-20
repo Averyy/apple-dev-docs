@@ -1,7 +1,8 @@
 # dismissWindow
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A window dismissal action stored in a view’s environment.
 
@@ -20,7 +21,7 @@ var dismissWindow: DismissWindowAction { get }
 
 #### Discussion
 
-Use the `dismissWindow` environment value to get an [`DismissWindowAction`](dismisswindowaction.md) instance for a given [`Environment`](environment.md). Then call the instance to dismiss a window. You call the instance directly because it defines a [`callAsFunction(id:)`](dismisswindowaction/callasfunction(id:).md) method that Swift calls when you call the instance.
+Use the `dismissWindow` environment value to get an [`DismissWindowAction`](../dismisswindowaction.md) instance for a given [`Environment`](../environment.md). Then call the instance to dismiss a window. You call the instance directly because it defines a [`callAsFunction(id:)`](../dismisswindowaction/callasfunction%28id%29.md) method that Swift calls when you call the instance.
 
 For example, you can define a button that dismisses an auxiliary window:
 
@@ -50,17 +51,18 @@ struct DismissWindowButton: View {
 }
 ```
 
-If the window was opened with [`pushWindow`](environmentvalues/pushwindow.md), the presenting window will reappear when this action is performed.
+If the window was opened with [`pushWindow`](./pushwindow.md), the presenting window will reappear when this action is performed.
 
 ## See Also
 
-- [struct DismissWindowAction](dismisswindowaction.md)
+### Closing windows
+- [struct DismissWindowAction](../dismisswindowaction.md)
   An action that dismisses a window associated to a particular scene.
-- [var dismiss: DismissAction](environmentvalues/dismiss.md)
+- [var dismiss: DismissAction](./dismiss.md)
   An action that dismisses the current presentation.
-- [struct DismissAction](dismissaction.md)
+- [struct DismissAction](../dismissaction.md)
   An action that dismisses a presentation.
-- [struct DismissBehavior](dismissbehavior.md)
+- [struct DismissBehavior](../dismissbehavior.md)
   Programmatic window dismissal behaviors.
 
 

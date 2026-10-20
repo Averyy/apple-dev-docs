@@ -1,7 +1,8 @@
 # init(values:width:height:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new convolution kernel structure with the width and height you specify.
 
@@ -11,7 +12,7 @@ Returns a new convolution kernel structure with the width and height you specify
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -28,7 +29,8 @@ init(values: [ComponentType], width: Int, height: Int)
 
 ## See Also
 
-- [init(values: [ComponentType], size: vImage.Size)](vimage/convolutionkernel2d/init(values:size:).md)
+### Initializers
+- [init(values: [ComponentType], size: vImage.Size)](./init%28values,size%29.md)
   Returns a new convolution kernel structure with the size you specify.
 
 

@@ -1,7 +1,8 @@
 # UIButton.Configuration.TitleAlignment.leading
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Aligns the title and subtitle on their leading edges.
 
@@ -10,7 +11,7 @@ Aligns the title and subtitle on their leading edges.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ case leading
 
 ## See Also
 
-- [UIButton.Configuration.TitleAlignment.automatic](uibutton/configuration-swift.struct/titlealignment-swift.enum/automatic.md)
+### Title alignments
+- [UIButton.Configuration.TitleAlignment.automatic](./automatic.md)
   Aligns the title and subtitle based on other elements in the button configuration, like an image or activity indicator.
-- [UIButton.Configuration.TitleAlignment.center](uibutton/configuration-swift.struct/titlealignment-swift.enum/center.md)
+- [UIButton.Configuration.TitleAlignment.center](./center.md)
   Aligns the title and subtitle on their horizontal centers.
-- [UIButton.Configuration.TitleAlignment.trailing](uibutton/configuration-swift.struct/titlealignment-swift.enum/trailing.md)
+- [UIButton.Configuration.TitleAlignment.trailing](./trailing.md)
   Aligns the title and subtitle on their trailing edges.
 
 

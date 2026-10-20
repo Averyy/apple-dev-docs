@@ -1,7 +1,8 @@
 # AVKitMetadataIdentifierApproximateEndDate
 
 **Framework**: AVKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The approximate end date for a live event stream.
 
@@ -14,13 +15,18 @@ The approximate end date for a live event stream.
 let AVKitMetadataIdentifierApproximateEndDate: String
 ```
 
+```c
+extern NSString * const AVKitMetadataIdentifierApproximateEndDate;
+```
+
 ## See Also
 
-- [let AVKitMetadataIdentifierExactStartDate: String](avkitmetadataidentifierexactstartdate.md)
+### Displayed metadata
+- [let AVKitMetadataIdentifierExactStartDate: String](./avkitmetadataidentifierexactstartdate.md)
   The exact start date for a live event stream.
-- [let AVKitMetadataIdentifierExactEndDate: String](avkitmetadataidentifierexactenddate.md)
+- [let AVKitMetadataIdentifierExactEndDate: String](./avkitmetadataidentifierexactenddate.md)
   The exact end date for a live event stream.
-- [let AVKitMetadataIdentifierApproximateStartDate: String](avkitmetadataidentifierapproximatestartdate.md)
+- [let AVKitMetadataIdentifierApproximateStartDate: String](./avkitmetadataidentifierapproximatestartdate.md)
   The approximate start date for a live event stream.
 
 

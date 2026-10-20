@@ -1,7 +1,8 @@
 # init(of:selection:columns:rows:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a table with the given columns and rows that supports selecting multiple rows that generates its data using values of the given type.
 
@@ -19,6 +20,15 @@ Creates a table with the given columns and rows that supports selecting multiple
 nonisolated init(of valueType: Value.Type, selection: Binding<Set<Value.ID>>, @TableColumnBuilder<Value, Never> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows)
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(of valueType: Value.Type, selection: Binding<Value.ID?>, @TableColumnBuilder<Value, Never> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows)
+```
+
 ## Parameters
 
 - `valueType`: The type of value used to derive the table’s contents.
@@ -28,7 +38,8 @@ nonisolated init(of valueType: Value.Type, selection: Binding<Set<Value.ID>>, @T
 
 ## See Also
 
-- [init(of: Value.Type, columns: () -> Columns, rows: () -> Rows)](table/init(of:columns:rows:).md)
+### Creating a table from columns and rows
+- [init(of: Value.Type, columns: () -> Columns, rows: () -> Rows)](./init%28of,columns,rows%29.md)
   Creates a table with the given columns and rows that generates its contents using values of the given type.
 
 

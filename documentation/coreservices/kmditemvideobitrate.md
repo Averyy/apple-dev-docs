@@ -1,7 +1,8 @@
 # kMDItemVideoBitRate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The video bit rate. A CFNumber.
 
@@ -12,6 +13,10 @@ The video bit rate. A CFNumber.
 
 ```swift
 let kMDItemVideoBitRate: CFString!
+```
+
+```c
+const CFStringRef kMDItemVideoBitRate;
 ```
 
 

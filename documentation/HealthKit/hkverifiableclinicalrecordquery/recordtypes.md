@@ -1,16 +1,17 @@
 # recordTypes
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of records that this query returns.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The type of records that this query returns.
 var recordTypes: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * recordTypes;
+```
+
 #### Discussion
 
-For a list of the most common record types, see [`HKVerifiableClinicalRecordCredentialType`](hkverifiableclinicalrecordcredentialtype.md).
+For a list of the most common record types, see [`HKVerifiableClinicalRecordCredentialType`](../hkverifiableclinicalrecordcredentialtype.md).
 
 ## See Also
 
-- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](hkverifiableclinicalrecordquery/sourcetypes.md)
+### Accessing the Metadata
+- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](./sourcetypes.md)
   The format of the verifiable clinical record.
 
 

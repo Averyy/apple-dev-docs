@@ -1,7 +1,8 @@
 # ARRaycastQuery.TargetAlignment
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A specification that indicates a target’s alignment with respect to gravity
 
@@ -15,6 +16,10 @@ A specification that indicates a target’s alignment with respect to gravity
 enum TargetAlignment
 ```
 
+```c
+enum ARRaycastTargetAlignment : NSInteger;
+```
+
 #### Discussion
 
 A raycast ignores potential targets with an alignment different than the one you specify in the raycast query.
@@ -22,32 +27,33 @@ A raycast ignores potential targets with an alignment different than the one you
 ## Topics
 
 ### Enumeration Cases
-- [ARRaycastQuery.TargetAlignment.any](arraycastquery/targetalignment-swift.enum/any.md)
+- [ARRaycastQuery.TargetAlignment.any](./targetalignment-swift.enum/any.md)
   The case that indicates a target may be aligned in any way with respect to gravity.
-- [ARRaycastQuery.TargetAlignment.horizontal](arraycastquery/targetalignment-swift.enum/horizontal.md)
+- [ARRaycastQuery.TargetAlignment.horizontal](./targetalignment-swift.enum/horizontal.md)
   The case that indicates a target is aligned horizontally with respect to gravity.
-- [ARRaycastQuery.TargetAlignment.vertical](arraycastquery/targetalignment-swift.enum/vertical.md)
+- [ARRaycastQuery.TargetAlignment.vertical](./targetalignment-swift.enum/vertical.md)
   The case that indicates a target is aligned vertically with respect to gravity.
 ### Initializers
-- [init?(rawValue: Int)](arraycastquery/targetalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./targetalignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var target: ARRaycastQuery.Target](arraycastquery/target-swift.property.md)
+### Specifying the Target
+- [var target: ARRaycastQuery.Target](./target-swift.property.md)
   A plane type that allows the raycast to terminate if it’s encountered.
-- [ARRaycastQuery.Target](arraycastquery/target-swift.enum.md)
+- [ARRaycastQuery.Target](./target-swift.enum.md)
   The types of surface you allow a raycast to intersect with.
-- [var targetAlignment: ARRaycastQuery.TargetAlignment](arraycastquery/targetalignment-swift.property.md)
+- [var targetAlignment: ARRaycastQuery.TargetAlignment](./targetalignment-swift.property.md)
   The target’s alignment with respect to gravity.
 
 

@@ -1,7 +1,8 @@
 # MapLoadPriority
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that prioritize the visibility of specific map features during map loading.
 
@@ -10,7 +11,7 @@ Constants that prioritize the visibility of specific map features during map loa
 
 ## Declaration
 
-```swift
+```
 const MapLoadPriority: Readonly<{
     readonly LandCover: "LandCover";
     readonly PointsOfInterest: "PointsOfInterest";
@@ -22,36 +23,37 @@ type MapLoadPriority = (typeof MapLoadPriority)[keyof typeof MapLoadPriority];
 ## Topics
 
 ### Prioritizations
-- [LandCover](maploadpriority/landcover.md)
+- [LandCover](./maploadpriority/landcover.md)
   Prioritizes loading of the map land cover and borders, without POIs or labels.
-- [PointsOfInterest](maploadpriority/pointsofinterest.md)
+- [PointsOfInterest](./maploadpriority/pointsofinterest.md)
   Prioritizes loading of the full standard map, with rendered POIs.
-- [None](maploadpriority/none.md)
+- [None](./maploadpriority/none.md)
   Signifies no preference for what to prioritize when loading the map.
 
 ## See Also
 
-- [const AddressCategory](addresscategory.md)
+### Enumerations
+- [const AddressCategory](./addresscategory.md)
   The categories of address components that users can search for with an address filter.
-- [const AnnotationCollisionMode](annotationcollisionmode.md)
+- [const AnnotationCollisionMode](./annotationcollisionmode.md)
   Constants that indicate the collision mode for an annotation.
-- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+- [const AnnotationDisplayPriority](./annotationdisplaypriority.md)
   Constants that indicate the priority for displaying annotations on the map.
-- [const ColorScheme](colorscheme.md)
+- [const ColorScheme](./colorscheme.md)
   Constants that indicate the color scheme of the map or a place detail.
-- [const DistanceUnitSystem](distanceunitsystem.md)
+- [const DistanceUnitSystem](./distanceunitsystem.md)
   Constants that indicate the system of measurement that displays on the map.
-- [const FeatureVisibility](featurevisibility.md)
+- [const FeatureVisibility](./featurevisibility.md)
   Constants indicating the visibility of different adaptive map features.
-- [const MapFeatureType](mapfeaturetype.md)
+- [const MapFeatureType](./mapfeaturetype.md)
   Values that describe the feature type of a point of interest.
-- [const MapType](maptype.md)
+- [const MapType](./maptype.md)
   Constants representing the type of map to display.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
+- [const PointOfInterestCategory](./pointofinterestcategory.md)
   Point-of-interest categories.
-- [const RegionPriority](regionpriority.md)
+- [const RegionPriority](./regionpriority.md)
   A value that indicates the importance of the configured region.
-- [const TransportType](transporttype.md)
+- [const TransportType](./transporttype.md)
   The modes of transportation.
 
 

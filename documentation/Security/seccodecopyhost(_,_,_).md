@@ -1,7 +1,8 @@
 # SecCodeCopyHost(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the code object for the host of specified guest code.
 
@@ -15,9 +16,13 @@ Retrieves the code object for the host of specified guest code.
 func SecCodeCopyHost(_ guest: SecCode, _ flags: SecCSFlags, _ host: UnsafeMutablePointer<SecCode?>) -> OSStatus
 ```
 
+```c
+OSStatus SecCodeCopyHost(SecCodeRef guest, SecCSFlags flags, SecCodeRef*host);
+```
+
 #### Return Value
 
-A result code. See [`Code Signing Services Result Codes`](code-signing-services-result-codes.md).
+A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
 #### Discussion
 
@@ -26,7 +31,7 @@ Host code acts as the supervisor and controller of its guest code and is the ult
 ## Parameters
 
 - `guest`: A valid code object representing code running on the system as the guest of other code.
-- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
+- `flags`: Optional flags; see [`SecCSFlags`](./seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](./seccsflags/kseccsdefaultflags.md) for standard behavior.
 - `host`: On return, the code object of the host of the code specified in the `guest` parameter.
 
 

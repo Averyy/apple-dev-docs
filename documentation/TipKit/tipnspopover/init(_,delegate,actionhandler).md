@@ -1,7 +1,8 @@
 # init(_:delegate:actionHandler:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a popover with the specified tip.
 

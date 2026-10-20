@@ -1,7 +1,8 @@
 # readAttributeBatReplaceability(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatReplaceability(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatReplaceability() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBatReplaceabilityWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

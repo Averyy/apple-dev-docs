@@ -1,7 +1,8 @@
 # MIDINetworkNotificationContactsDidChange
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the list of contacts changed.
 
@@ -18,13 +19,18 @@ Indicates that the list of contacts changed.
 let MIDINetworkNotificationContactsDidChange: String
 ```
 
+```c
+extern NSString * const MIDINetworkNotificationContactsDidChange;
+```
+
 ## See Also
 
-- [func contacts() -> Set<MIDINetworkHost>](midinetworksession/contacts.md)
+### Managing Contacts
+- [func contacts() -> Set<MIDINetworkHost>](./midinetworksession/contacts%28%29.md)
   Returns the array of network hosts.
-- [func addContact(MIDINetworkHost) -> Bool](midinetworksession/addcontact(_:).md)
+- [func addContact(MIDINetworkHost) -> Bool](./midinetworksession/addcontact%28_%29.md)
   Adds a host as a contact.
-- [func removeContact(MIDINetworkHost) -> Bool](midinetworksession/removecontact(_:).md)
+- [func removeContact(MIDINetworkHost) -> Bool](./midinetworksession/removecontact%28_%29.md)
   Removes a host as a contact.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the item.
@@ -19,11 +20,16 @@ The name of the item.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var representedElementKind: String?](nscollectionlayoutvisibleitem/representedelementkind.md)
+### Identifying the item
+- [var representedElementKind: String?](./representedelementkind.md)
   A string that identifies the type of item.
-- [var representedElementCategory: UICollectionView.ElementCategory](nscollectionlayoutvisibleitem/representedelementcategory.md)
+- [var representedElementCategory: UICollectionView.ElementCategory](./representedelementcategory.md)
   A category that identifies the item, such as decoration or supplementary view.
 
 

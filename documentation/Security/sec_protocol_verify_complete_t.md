@@ -1,7 +1,8 @@
 # sec_protocol_verify_complete_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias sec_protocol_verify_complete_t = (Bool) -> Void
+```
+
+```c
+typedef void (^)(_Bool) sec_protocol_verify_complete_t;
 ```
 
 #### Discussion

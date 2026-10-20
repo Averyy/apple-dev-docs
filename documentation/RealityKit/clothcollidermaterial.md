@@ -1,7 +1,8 @@
 # ClothColliderMaterial
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that represents a collider’s material.
 
@@ -19,30 +20,31 @@ struct ClothColliderMaterial
 ## Topics
 
 ### Configuring friction
-- [var kineticFriction: Float](clothcollidermaterial/kineticfriction.md)
+- [var kineticFriction: Float](./clothcollidermaterial/kineticfriction.md)
   The friction the collider applies to contacting cloth body particles with relative motion.
-- [var staticFriction: Float](clothcollidermaterial/staticfriction.md)
+- [var staticFriction: Float](./clothcollidermaterial/staticfriction.md)
   The friction the collider applies to contacting cloth body particles with no relative motion.
 ### Initializers
-- [init()](clothcollidermaterial/init.md)
+- [init()](./clothcollidermaterial/init%28%29.md)
   Creates a new material for cloth colliders.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ClothColliderComponent](clothcollidercomponent.md)
+### Collision
+- [struct ClothColliderComponent](./clothcollidercomponent.md)
   A component that adds a cloth-compatible collider to an entity.
-- [enum ClothColliderShape](clothcollidershape.md)
+- [enum ClothColliderShape](./clothcollidershape.md)
   Shape suitable for use as a collider.
-- [struct ClothCollisionFilter](clothcollisionfilter.md)
+- [struct ClothCollisionFilter](./clothcollisionfilter.md)
   Defines the collision groups for a body or collider and the mask for one-way collisions.
-- [struct ClothCollisionGroupSet](clothcollisiongroupset.md)
+- [struct ClothCollisionGroupSet](./clothcollisiongroupset.md)
   `ClothCollisionGroupSet` is the basis for the `ClothCollisionFilter` and should not be used separately.
 
 

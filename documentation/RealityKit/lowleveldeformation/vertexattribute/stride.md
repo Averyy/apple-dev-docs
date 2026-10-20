@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance, in bytes, between consecutive vertices for this attribute.
 

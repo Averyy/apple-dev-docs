@@ -1,18 +1,19 @@
 # MIDIMessage_32
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A 32-bit MIDI message.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ A 32-bit MIDI message.
 typealias MIDIMessage_32 = UInt32
 ```
 
+```c
+typedef UInt32 MIDIMessage_32;
+```
+
 ## See Also
 
-- [enum MIDICVStatus](midicvstatus.md)
+### Common
+- [enum MIDICVStatus](./midicvstatus.md)
   MIDI status types.
-- [enum MIDIProtocolID](midiprotocolid.md)
+- [enum MIDIProtocolID](./midiprotocolid.md)
   Specifies a MIDI protocol variant.
-- [enum MIDISysExStatus](midisysexstatus.md)
+- [enum MIDISysExStatus](./midisysexstatus.md)
   MIDI System Exclusive (SysEx) types.
-- [enum MIDISystemStatus](midisystemstatus.md)
+- [enum MIDISystemStatus](./midisystemstatus.md)
   MIDI System status types.
-- [struct MIDIMessage_128](midimessage_128.md)
+- [struct MIDIMessage_128](./midimessage_128.md)
   A 128-bit MIDI message.
-- [struct MIDIMessage_96](midimessage_96.md)
+- [struct MIDIMessage_96](./midimessage_96.md)
   A 96-bit MIDI message.
-- [struct MIDIMessage_64](midimessage_64.md)
+- [struct MIDIMessage_64](./midimessage_64.md)
   A 64-bit MIDI message.
-- [enum MIDIMessageType](midimessagetype.md)
+- [enum MIDIMessageType](./midimessagetype.md)
   Supported MIDI message types.
 
 

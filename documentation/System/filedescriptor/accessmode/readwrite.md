@@ -1,7 +1,8 @@
 # readWrite
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Opens the file for reading and writing.
 
@@ -22,7 +23,7 @@ static var readWrite: FileDescriptor.AccessMode { get }
 
 ## Mentions
 
-- [Adopting Swift File Options](adopting-file-options.md)
+- [Adopting Swift File Options](../../adopting-file-options.md)
 
 #### Discussion
 
@@ -30,9 +31,10 @@ The corresponding C constant is `O_RDWR`.
 
 ## See Also
 
-- [static var readOnly: FileDescriptor.AccessMode](filedescriptor/accessmode/readonly.md)
+### Creating an Access Mode
+- [static var readOnly: FileDescriptor.AccessMode](./readonly.md)
   Opens the file for reading only.
-- [static var writeOnly: FileDescriptor.AccessMode](filedescriptor/accessmode/writeonly.md)
+- [static var writeOnly: FileDescriptor.AccessMode](./writeonly.md)
   Opens the file for writing only.
 
 

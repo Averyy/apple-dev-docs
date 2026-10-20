@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate the reason for invalidating a reader session.
@@ -15,6 +16,10 @@ Tells the delegate the reason for invalidating a reader session.
 
 ```swift
 func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: any Error)
+```
+
+```objc
+- (void) readerSession:(NFCNDEFReaderSession *) session didInvalidateWithError:(NSError *) error;
 ```
 
 ## Parameters

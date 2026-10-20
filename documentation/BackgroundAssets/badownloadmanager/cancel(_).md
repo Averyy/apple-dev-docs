@@ -1,7 +1,8 @@
 # cancel(_:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an asset download.
 
@@ -19,15 +20,20 @@ Cancels an asset download.
 func cancel(_ download: BADownload) throws
 ```
 
+```objc
+- (BOOL) cancelDownload:(BADownload *) download error:(NSError **) error;
+```
+
 ## Parameters
 
 - `download`: The object that identifies the scheduled or in-progress download to cancel.
 
 ## See Also
 
-- [func scheduleDownload(BADownload) throws](badownloadmanager/scheduledownload(_:).md)
+### Managing downloads
+- [func scheduleDownload(BADownload) throws](./scheduledownload%28_%29.md)
   Schedules an asset download to execute in the background at a nonspecific time in the future.
-- [func startForegroundDownload(BADownload) throws](badownloadmanager/startforegrounddownload(_:).md)
+- [func startForegroundDownload(BADownload) throws](./startforegrounddownload%28_%29.md)
   Schedules an asset download that executes immediately in the foreground.
 
 

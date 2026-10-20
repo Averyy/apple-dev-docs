@@ -1,6 +1,7 @@
 # Writing 64-bit Intel code for Apple Platforms
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Create 64-bit Intel assembly language instructions that adhere to the application binary interface (ABI) that Apple platforms support.
 
@@ -10,9 +11,9 @@ Prior to the introduction of Apple silicon, Macs used the Intel 64-bit architect
 
 > **Note**: Apple no longer supports any platforms on 32-bit Intel as of macOS Catalina.
 
-Apple platforms typically follow the data representation and procedure call rules in the standard [`System V psABI for AMD64`](https://developer.apple.comhttps://gitlab.com/x86-psABIs/x86-64-ABI), using the LP64 programming model. However, when those rules are in conflict with the longstanding behavior of the Apple LLVM compiler (Clang) on Apple platforms, then the ABI typically diverges from the standard Processor Specific Application Binary Interface (psABI) and instead follows longstanding behavior. Several such divergences are below. If you discover a divergence not described here, please [`report it to Apple`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/).
+Apple platforms typically follow the data representation and procedure call rules in the standard [System V psABI for AMD64](https://gitlab.com/x86-psABIs/x86-64-ABI), using the LP64 programming model. However, when those rules are in conflict with the longstanding behavior of the Apple LLVM compiler (Clang) on Apple platforms, then the ABI typically diverges from the standard Processor Specific Application Binary Interface (psABI) and instead follows longstanding behavior. Several such divergences are below. If you discover a divergence not described here, please [report it to Apple](https://developer.apple.com/bug-reporting/).
 
-##### Adhere to Cpu Feature Availability
+##### Adhere to CPU feature availability
 
 The Intel 64-bit architecture has been extended many times, adding new registers and instructions to the Instruction Set Architecture (ISA). You can leverage ISA extensions to make your code run more efficiently. Different ISA extensions are available on different Macs based on the processor used in that Mac. As a general rule, if your code uses an ISA extension on a processor that doesn’t support it, the processor crashes.
 
@@ -22,14 +23,14 @@ This table summarizes the ISA extensions guaranteed by different macOS releases:
 
 | macOS release | Oldest supported processor | Available CPU features |
 | --- | --- | --- |
-| All releases | [`Merom`](https://developer.apple.comhttps://en.wikipedia.org/wiki/Merom_(microprocessor)) | The x86-64 baseline, plus CMPXCHG16B, LAHF-SAHF, SSE3, SSSE3 |
-| Sierra (10.12) | [`Penryn`](https://developer.apple.comhttps://en.wikipedia.org/wiki/Penryn_(microprocessor)) | The above, plus SSE4.1 |
+| All releases | [Merom](https://en.wikipedia.org/wiki/Merom_(microprocessor)) | The x86-64 baseline, plus CMPXCHG16B, LAHF-SAHF, SSE3, SSSE3 |
+| Sierra (10.12) | [Penryn](https://en.wikipedia.org/wiki/Penryn_(microprocessor)) | The above, plus SSE4.1 |
 
 More recent 64-bit Intel Macs included a large number of additional ISA extensions, but the presence of those extensions is not guaranteed by any release of macOS, and you need to test dynamically for them.
 
 Rosetta support for 64-bit Intel processors includes all of the ISA extensions above plus the POPCNT and SSE4.2 ISA extensions.
 
-##### Adhere to Cpu Registers Intended Purposes
+##### Adhere to CPU registers’ intended purposes
 
 Register usage for ordinary functions follows the standard psABI.
 
@@ -45,30 +46,35 @@ Synchronous functions fall into three areas:
 
 Asynchronous Swift functions receive the address of their async frame in `r14`. `r14` is no longer a callee-saved register for such calls.
 
-##### Handle Data Types and Data Alignment Properly
+##### Handle data types and data alignment properly
 
 Data type representations largely follow the standard psABI. However, the Apple LLVM compiler supports several types not covered in the psABI; the rules for these types are described here.
 
 - The Apple LLVM compiler allows vectors with arbitrary element counts. The storage size (in bytes) of a vector type is always rounded up to the nearest power of two. The alignment is equal to the storage size, except that it’s capped by the maximum native vector size, as determined by the current target CPU features: 64 bytes if AVX-512 is enabled, otherwise 32 bytes if AVX is enabled, otherwise 16 bytes. Note that this means that the ABI for large vector types depends on the target CPU features, and code may not interoperate between files compiled with different CPU features; this is inherited from the standard psABI.
 - `__strong`- and `__weak`-qualified pointer types in Objective-C ARC have the same layout as the underlying reference type in non-ARC Objective-C.  However, structures that contain `__strong`- and `__weak`-qualified fields have non-trivial ownership, and when the caller passes them as arguments, the callee is responsible for destroying the fields. Furthermore, you must pass and return indirectly structures that contain `__weak`-qualified fields, just like a non-trivially-copyable C++ class type.
 
-##### Pass Arguments to Functions Correctly
+##### Pass arguments to functions correctly
 
 When passing arguments and returning results to functions, Apple platforms diverge from the standard psABI in the following ways:
 
 - Integer arguments that are smaller than `int` are required to be promoted to `int` by the caller, and the callee may assume that this has been done. (This includes enumerations whose underlying type is smaller than `int`.) For example, if the caller passes a `signed short` argument in a register, the low 32 bits of the register at the moment of call must represent a value between -32,768 and 32,767 (inclusive). Similar, if the caller passes an `unsigned char` argument in a register, the low 32 bits of the register at the moment of call must represent a value between 0 and 255 (inclusive). This rule also applies to return values and arguments passed on the stack.
 - The classification algorithm considers vectors smaller than 8 bytes to have `INTEGER` class. 8-byte vectors of `double` are classified as `MEMORY`. 8-byte vectors of 64-bit integer element type are classified as `INTEGER`. Other 8-byte vectors are classified as `SSE`.
 - For vectors larger than 8 bytes, the classification algorithm uses the rules from the standard psABI, including the rule that vectors larger than the maximum native vector size are classified as `MEMORY`. Just as with data layout, this means the calling convention for vector types larger than 16 bytes depends on the current target CPU features, and code may not interoperate between files compiled with different CPU features.
-- The classification algorithm does not perform step (b) of the post-merger cleanup. Instead, after classification is otherwise complete (not during recursive classification), `X87UP` is converted to `SSE` when it does not follow `X87`. For example: ```None
-typedef union { long double d; void *p; } odd_union;
-void f(odd_union u);
-``` The caller passes the first eight bytes of `u` in `rdi`, and passes the second eight bytes (the exponent bits of `u.d`) in the low bits of `xmm0`.
+- The classification algorithm does not perform step (b) of the post-merger cleanup. Instead, after classification is otherwise complete (not during recursive classification), `X87UP` is converted to `SSE` when it does not follow `X87`. For example:
+
+  ```
+  typedef union { long double d; void *p; } odd_union;
+  void f(odd_union u);
+  ```
+
+  The caller passes the first eight bytes of `u` in `rdi`, and passes the second eight bytes (the exponent bits of `u.d`) in the low bits of `xmm0`.
 
 The psABI rules only apply to C, C++, and Objective-C calls.  The Swift calling convention substantially differs from the psABI in ways that exceed the scope of this document to explain, beyond the register usage differences noted above.
 
 ## See Also
 
-- [Writing ARM64 code for Apple platforms](writing-arm64-code-for-apple-platforms.md)
+### 64-bit interfaces
+- [Writing ARM64 code for Apple platforms](./writing-arm64-code-for-apple-platforms.md)
   Create 64-bit ARM assembly language instructions that adhere to the application binary interface (ABI) that Apple platforms support.
 
 

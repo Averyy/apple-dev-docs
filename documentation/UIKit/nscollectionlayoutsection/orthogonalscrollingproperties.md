@@ -1,7 +1,8 @@
 # orthogonalScrollingProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The section’s orthogonal scrolling properties.
 
@@ -18,15 +19,20 @@ The section’s orthogonal scrolling properties.
 var orthogonalScrollingProperties: UICollectionLayoutSectionOrthogonalScrollingProperties { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UICollectionLayoutSectionOrthogonalScrollingProperties * orthogonalScrollingProperties;
+```
+
 #### Discussion
 
 Set this value to specify bouncing behavior and deceleration rate for an orthogonally scrolling section.
 
 ## See Also
 
-- [var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior](nscollectionlayoutsection/orthogonalscrollingbehavior.md)
+### Specifying scrolling behavior
+- [var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior](./orthogonalscrollingbehavior.md)
   The section’s scrolling behavior in relation to the main layout axis.
-- [class UICollectionLayoutSectionOrthogonalScrollingProperties](uicollectionlayoutsectionorthogonalscrollingproperties.md)
+- [class UICollectionLayoutSectionOrthogonalScrollingProperties](../uicollectionlayoutsectionorthogonalscrollingproperties.md)
   An object that specifies properties for a layout section that scrolls orthogonally in relation to the main layout axis.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns `true` if the transform is the identity transform.

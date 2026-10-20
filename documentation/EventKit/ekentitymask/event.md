@@ -1,17 +1,18 @@
 # event
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents an event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ Represents an event.
 static var event: EKEntityMask { get }
 ```
 
+```c
+EKEntityMaskEvent
+```
+
 ## See Also
 
-- [static var reminder: EKEntityMask](ekentitymask/reminder.md)
+### Constants
+- [static var reminder: EKEntityMask](./reminder.md)
   Represents a reminder.
 
 

@@ -1,11 +1,12 @@
 # Collection Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](attributedstring/characterview/count.md)
+- [var count: Int](./count.md)
   The number of elements in the collection.
 
 

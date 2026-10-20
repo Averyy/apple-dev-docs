@@ -1,7 +1,8 @@
 # init(mSubframes:mSubframeDivisor:mCounter:mType:mFlags:mHours:mMinutes:mSeconds:mFrames:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ init(mSubframes: Int16, mSubframeDivisor: Int16, mCounter: UInt32, mType: SMPTET
 
 ## See Also
 
-- [init()](smptetime/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

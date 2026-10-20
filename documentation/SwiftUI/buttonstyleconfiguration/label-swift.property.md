@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that describes the effect of pressing the button.
 
@@ -22,7 +23,8 @@ let label: ButtonStyleConfiguration.Label
 
 ## See Also
 
-- [ButtonStyleConfiguration.Label](buttonstyleconfiguration/label-swift.struct.md)
+### Configuring a button’s label
+- [ButtonStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a button.
 
 

@@ -1,7 +1,8 @@
 # musicalContextBlock
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback to the host for musical context information.
 
@@ -19,23 +20,36 @@ A callback to the host for musical context information.
 var musicalContextBlock: AUHostMusicalContextBlock? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, nullable) AUHostMusicalContextBlock musicalContextBlock;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) AUHostMusicalContextBlock musicalContextBlock;
+```
+
 #### Discussion
 
 An audio unit accessing this property should cache it in realtime-safe storage before beginning to render.
 
-This version 3 property is bridged to the version 2 [`HostCallback_GetBeatAndTempo`](hostcallback_getbeatandtempo.md) and [`HostCallback_GetMusicalTimeLocation`](hostcallback_getmusicaltimelocation.md) callback members in the `kAudioUnitProperty_HostCallbacks` API.
+This version 3 property is bridged to the version 2 [`HostCallback_GetBeatAndTempo`](../hostcallback_getbeatandtempo.md) and [`HostCallback_GetMusicalTimeLocation`](../hostcallback_getmusicaltimelocation.md) callback members in the `kAudioUnitProperty_HostCallbacks` API.
 
 ## See Also
 
-- [var transportStateBlock: AUHostTransportStateBlock?](auaudiounit/transportstateblock.md)
+### Providing Data to the Host
+- [var transportStateBlock: AUHostTransportStateBlock?](./transportstateblock.md)
   A callback to the host for transport state information.
-- [var contextName: String?](auaudiounit/contextname.md)
+- [var contextName: String?](./contextname.md)
   Information about the host context in which the audio unit is connected, for display in the audio unit’s view.
-- [var supportsMPE: Bool](auaudiounit/supportsmpe.md)
+- [var supportsMPE: Bool](./supportsmpe.md)
   A Boolean value that indicates whether the audio unit supports multi-dimensional polyphonic expression.
-- [typealias AUHostMusicalContextBlock](auhostmusicalcontextblock.md)
+- [typealias AUHostMusicalContextBlock](../auhostmusicalcontextblock.md)
   A block through which hosts provide musical tempo, time signature, and beat position.
-- [typealias AUHostTransportStateBlock](auhosttransportstateblock.md)
+- [typealias AUHostTransportStateBlock](../auhosttransportstateblock.md)
   A block through which hosts provide information about their transport state.
 
 

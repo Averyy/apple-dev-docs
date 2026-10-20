@@ -1,7 +1,8 @@
 # VppAssociation
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An association between a license and a user or device.
 
@@ -10,7 +11,7 @@ An association between a license and a user or device.
 
 ## Declaration
 
-```swift
+```
 object VppAssociation
 ```
 
@@ -24,17 +25,18 @@ object VppAssociation
 
 ## See Also
 
-- [object VppAsset](vppasset.md)
+### Objects and data types
+- [object VppAsset](./vppasset.md)
   A particular asset in the purchase program.
-- [object VppAssignment](vppassignment.md)
+- [object VppAssignment](./vppassignment.md)
   An assignment’s properties and their values.
-- [object VppLicense](vpplicense.md)
+- [object VppLicense](./vpplicense.md)
   A license for a product in the purchase program.
-- [object VppUser](vppuser.md)
+- [object VppUser](./vppuser.md)
   A user within the purchase program.
-- [object VppLocation](vpplocation.md)
+- [object VppLocation](./vpplocation.md)
   A location used for managing purchases.
-- [object VppErrorCode](vpperrorcode.md)
+- [object VppErrorCode](./vpperrorcode.md)
   An error code.
 
 

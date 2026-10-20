@@ -1,7 +1,8 @@
 # IOSurfaceSubsampling.subsampling420
 
 **Framework**: IOSurface  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 case subsampling420
 ```
 
+```c
+kIOSurfaceSubsampling420
+```
+
 ## See Also
 
-- [IOSurfaceSubsampling.subsampling411](iosurfacesubsampling/subsampling411.md)
-- [IOSurfaceSubsampling.subsampling422](iosurfacesubsampling/subsampling422.md)
-- [IOSurfaceSubsampling.subsamplingNone](iosurfacesubsampling/subsamplingnone.md)
-- [IOSurfaceSubsampling.subsamplingUnknown](iosurfacesubsampling/subsamplingunknown.md)
+### Enumeration Cases
+- [IOSurfaceSubsampling.subsampling411](./subsampling411.md)
+- [IOSurfaceSubsampling.subsampling422](./subsampling422.md)
+- [IOSurfaceSubsampling.subsamplingNone](./subsamplingnone.md)
+- [IOSurfaceSubsampling.subsamplingUnknown](./subsamplingunknown.md)
 
 
 ---

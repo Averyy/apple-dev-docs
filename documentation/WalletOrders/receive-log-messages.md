@@ -1,7 +1,8 @@
 # Receive log messages
 
 **Framework**: Wallet Orders  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Records log messages on your server.
 
@@ -16,11 +17,19 @@ Records log messages on your server.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `LogEntries`
+
 An array of log messages.
+
+## Responses
+
+- `200` OK: The request was successful.
 
 ## See Also
 
-- [object LogEntries](logentries.md)
+### Message logs
+- [object LogEntries](./logentries.md)
   An array of log messages.
 
 

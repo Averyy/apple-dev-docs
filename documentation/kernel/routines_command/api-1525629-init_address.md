@@ -1,7 +1,8 @@
 # init_address
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An integer specifying the virtual memory address of the initialization function.
 
@@ -10,7 +11,7 @@ An integer specifying the virtual memory address of the initialization function.
 
 ## Declaration
 
-```swift
+```c
 uint32_t init_address;
 ```
 

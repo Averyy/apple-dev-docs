@@ -1,7 +1,8 @@
 # setTextShadow(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setTextShadow(_ textShadow: String!)
+```
+
+```objc
+- (void) setTextShadow:(NSString *) textShadow;
 ```
 
 

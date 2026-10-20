@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the work item has been canceled.
 
@@ -10,9 +11,9 @@ A Boolean value indicating whether the work item has been canceled.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ var isCancelled: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the work item has been canceled.
+The value of this property is [`true`](../../Swift/true.md) if the work item has been canceled.
 
 ## See Also
 
-- [func cancel()](dispatchworkitem/cancel.md)
+### Canceling a Work Item
+- [func cancel()](./cancel%28%29.md)
   Cancels the current work item asynchronously.
 
 

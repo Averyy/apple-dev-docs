@@ -1,7 +1,8 @@
 # originalTransactionID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transaction identifier of the original purchase.
 

@@ -1,7 +1,8 @@
 # UserActivity
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The context for playing a media queue.
 
@@ -10,37 +11,46 @@ The context for playing a media queue.
 
 ## Declaration
 
-```swift
+```
 object UserActivity
 ```
 
 #### Discussion
 
-Create a `UserActivity` and provide it in your response to a [`Process a Play Media Intent`](playmedia-1g2o9.md). When the client receives your response, it includes this activity in its request to [`Get a Media Queue`](playmedia-1onzj.md) to define the queue it’s requesting.
+Create a `UserActivity` and provide it in your response to a [`Process a Play Media Intent`](./playmedia-1g2o9.md). When the client receives your response, it includes this activity in its request to [`Get a Media Queue`](./playmedia-1onzj.md) to define the queue it’s requesting.
 
 ## Topics
 
 ### Maintaining State
-- [object UserActivity.UserActivityUserInfo](useractivity/useractivityuserinfo.md)
+- [object UserActivity.UserActivityUserInfo](./useractivity/useractivityuserinfo.md)
   A dictionary that contains service-specific state information necessary to continue an activity in a separate request.
 
 ## Properties
 
-- `activityType` (string) *(required)*: A reverse-DNS string that uniquely identifies the activity. Provide the same activity types your app specifies in [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects.
+- `activityType` (string) *(required)*: A reverse-DNS string that uniquely identifies the activity. Provide the same activity types your app specifies in [`NSUserActivity`](../Foundation/nsuseractivity.md) objects.
+
+  **Maximum Length**: `250`
 - `persistentIdentifier` (string): An identifier for this activity.
+
+  **Maximum Length**: `250`
 - `title` (string): A short description of this activity for logging or debugging purposes.
-- `userInfo` (UserActivity.UserActivityUserInfo): Additional data your service needs to fulfill requests to [`Get a Media Queue`](playmedia-1onzj.md).
+
+  **Maximum Length**: `250`
+- `userInfo` (UserActivity.UserActivityUserInfo): Additional data your service needs to fulfill requests to [`Get a Media Queue`](./playmedia-1onzj.md).
 - `version` (string) *(required)*: The version of the `SiriKitMediaAPI` library this activity conforms to.
+
+  **Maximum Length**: `25`; **Allowed Values**: `/[0-9]+\.[0-9]+\.[0-9]+/`
 
 ## See Also
 
-- [object Intent](intent.md)
+### Intents
+- [object Intent](./intent.md)
   A user request for your service to fulfill.
-- [object IntentResponse](intentresponse.md)
+- [object IntentResponse](./intentresponse.md)
   Your service’s response to an intent.
-- [object IntentResolutionResult](intentresolutionresult.md)
+- [object IntentResolutionResult](./intentresolutionresult.md)
   An object that matches a parameter of an intent, or information about why your service can’t determine a value for the parameter.
-- [object BooleanResolutionResult](booleanresolutionresult.md)
+- [object BooleanResolutionResult](./booleanresolutionresult.md)
   A Boolean value that matches an intent parameter, or information about why your service can’t determine the value.
 
 

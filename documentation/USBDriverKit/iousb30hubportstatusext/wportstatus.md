@@ -1,21 +1,23 @@
 # wPortStatus
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wPortStatus;
 ```
 
 ## See Also
 
-- [wPortChange](iousb30hubportstatusext/wportchange.md)
-- [dwExtPortStatus](iousb30hubportstatusext/dwextportstatus.md)
+### Getting the Status Properties
+- [wPortChange](./wportchange.md)
+- [dwExtPortStatus](./dwextportstatus.md)
 
 
 ---

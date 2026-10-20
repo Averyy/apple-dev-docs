@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a customer engagement session with the specified configuration.
 

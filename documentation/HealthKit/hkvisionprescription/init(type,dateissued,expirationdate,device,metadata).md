@@ -1,7 +1,8 @@
 # init(type:dateIssued:expirationDate:device:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vision prescription sample.
 
@@ -19,15 +20,19 @@ Creates a new vision prescription sample.
 convenience init(type: HKVisionPrescriptionType, dateIssued: Date, expirationDate: Date?, device: HKDevice?, metadata: [String : Any]?)
 ```
 
+```objc
++ (instancetype) prescriptionWithType:(HKVisionPrescriptionType) type dateIssued:(NSDate *) dateIssued expirationDate:(NSDate *) expirationDate device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
+```
+
 #### Discussion
 
 Use this initializer to create an image-only prescription. Here, you attach the prescription as an image or PDF to a simple sample. The sample contains only basic information about the prescription, such as the issue and expiration dates. To see the prescription data, people must view the attached image or PDF.
 
-To create a vision prescription sample that contains the full data for the prescription, use [`HKGlassesPrescription`](hkglassesprescription.md) or [`HKContactsPrescription`](hkcontactsprescription.md) instead.
+To create a vision prescription sample that contains the full data for the prescription, use [`HKGlassesPrescription`](../hkglassesprescription.md) or [`HKContactsPrescription`](../hkcontactsprescription.md) instead.
 
 ## Parameters
 
-- `type`: A value that indicates the type of prescription. For a list of possible values, see [`HKVisionPrescriptionType`](hkvisionprescriptiontype.md).
+- `type`: A value that indicates the type of prescription. For a list of possible values, see [`HKVisionPrescriptionType`](../hkvisionprescriptiontype.md).
 - `dateIssued`: The date when the doctor issued the prescription.
 - `expirationDate`: The date when the prescription expires.
 - `device`: The device that generated the sample.
@@ -35,9 +40,10 @@ To create a vision prescription sample that contains the full data for the presc
 
 ## See Also
 
-- [class HKGlassesPrescription](hkglassesprescription.md)
+### Related Documentation
+- [class HKGlassesPrescription](../hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](../hkcontactsprescription.md)
   A sample that store a prescription for contacts.
 
 

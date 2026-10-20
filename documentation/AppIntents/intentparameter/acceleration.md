@@ -1,7 +1,8 @@
 # IntentParameter.Acceleration
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,27 +19,30 @@
 enum Acceleration
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitAcceleration>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Acceleration.gravity](intentparameter/acceleration/gravity.md)
-- [IntentParameter.Acceleration.metersPerSecondSquared](intentparameter/acceleration/meterspersecondsquared.md)
+- [IntentParameter.Acceleration.gravity](./acceleration/gravity.md)
+- [IntentParameter.Acceleration.metersPerSecondSquared](./acceleration/meterspersecondsquared.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Acceleration?](intentparameter/unit-4kgwq.md)
-- [var defaultUnit: IntentParameter<Value>.Acceleration?](intentparameter/defaultunit-6s3bu.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-8d17e.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-2jck9.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Acceleration?](./unit-4kgwq.md)
+- [var defaultUnit: IntentParameter<Value>.Acceleration?](./defaultunit-6s3bu.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-8d17e.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-2jck9.md)
 
 
 ---

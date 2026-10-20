@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new sync anchor.
 
@@ -19,7 +20,8 @@ init(_ rawValue: Data)
 
 ## See Also
 
-- [init(rawValue: Data)](nsfileprovidersyncanchor/init(rawvalue:).md)
+### Creating Sync Anchors
+- [init(rawValue: Data)](./init%28rawvalue%29.md)
   Returns a new sync anchor from the provided data object.
 
 

@@ -1,7 +1,8 @@
 # MTL4BinaryFunctionOptions
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for configuring the creation of binary functions.
 
@@ -19,49 +20,54 @@ Options for configuring the creation of binary functions.
 struct MTL4BinaryFunctionOptions
 ```
 
+```c
+enum MTL4BinaryFunctionOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mtl4binaryfunctionoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtl4binaryfunctionoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var pipelineIndependent: MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions/pipelineindependent.md)
+- [static var pipelineIndependent: MTL4BinaryFunctionOptions](./mtl4binaryfunctionoptions/pipelineindependent.md)
   Compiles the function to have its function handles return a constant MTLResourceID across all pipeline states. The function needs to be linked to the pipeline that will use this function.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Metal libraries](metal-libraries.md)
+### Shader compilation
+- [Metal libraries](./metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal dynamic libraries](metal-dynamic-libraries.md)
+- [Metal dynamic libraries](./metal-dynamic-libraries.md)
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
-- [Metal binary archives](metal-binary-archives.md)
+- [Metal binary archives](./metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
-- [protocol MTL4Compiler](mtl4compiler.md)
+- [protocol MTL4Compiler](./mtl4compiler.md)
   A abstraction for a pipeline state and shader function compiler.
-- [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
+- [class MTL4CompilerDescriptor](./mtl4compilerdescriptor.md)
   Groups together properties for creating a compiler context.
-- [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+- [class MTL4CompilerTaskOptions](./mtl4compilertaskoptions.md)
   The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
-- [enum MTL4CompilerTaskStatus](mtl4compilertaskstatus.md)
+- [enum MTL4CompilerTaskStatus](./mtl4compilertaskstatus.md)
   Represents the status of a compiler task.
-- [protocol MTL4Archive](mtl4archive.md)
+- [protocol MTL4Archive](./mtl4archive.md)
   A read-only container that stores pipeline states from a shader compiler.
-- [protocol MTL4BinaryFunction](mtl4binaryfunction.md)
+- [protocol MTL4BinaryFunction](./mtl4binaryfunction.md)
   Represents a binary function.
-- [class MTL4BinaryFunctionDescriptor](mtl4binaryfunctiondescriptor.md)
+- [class MTL4BinaryFunctionDescriptor](./mtl4binaryfunctiondescriptor.md)
   Base interface for other function-derived interfaces.
-- [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
+- [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
 
 

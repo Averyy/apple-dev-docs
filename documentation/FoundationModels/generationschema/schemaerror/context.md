@@ -1,7 +1,8 @@
 # GenerationSchema.SchemaError.Context
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context in which the error occurred.
 
@@ -22,27 +23,28 @@ struct Context
 ## Topics
 
 ### Creating a schema error context
-- [init(debugDescription: String)](generationschema/schemaerror/context/init(debugdescription:).md)
+- [init(debugDescription: String)](./context/init%28debugdescription%29.md)
   Creates a context with the debug description you provide.
 ### Getting the debug description
-- [let debugDescription: String](generationschema/schemaerror/context/debugdescription.md)
+- [let debugDescription: String](./context/debugdescription.md)
   A string representation of the debug description.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case duplicateProperty(schema: String, property: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/duplicateproperty(schema:property:context:).md)
+### Getting schema errors
+- [case duplicateProperty(schema: String, property: String, context: GenerationSchema.SchemaError.Context)](./duplicateproperty%28schema,property,context%29.md)
   An error that represents an attempt to construct a dynamic schema with properties that have conflicting names.
-- [case duplicateType(schema: String?, type: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/duplicatetype(schema:type:context:).md)
+- [case duplicateType(schema: String?, type: String, context: GenerationSchema.SchemaError.Context)](./duplicatetype%28schema,type,context%29.md)
   An error that represents an attempt to construct a schema from dynamic schemas in which two or more of the subschemas have the same type name.
-- [case emptyTypeChoices(schema: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/emptytypechoices(schema:context:).md)
+- [case emptyTypeChoices(schema: String, context: GenerationSchema.SchemaError.Context)](./emptytypechoices%28schema,context%29.md)
   An error that represents an attempt to construct an anyOf schema with an empty array of type choices.
-- [case undefinedReferences(schema: String?, references: [String], context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/undefinedreferences(schema:references:context:).md)
+- [case undefinedReferences(schema: String?, references: [String], context: GenerationSchema.SchemaError.Context)](./undefinedreferences%28schema,references,context%29.md)
   An error that represents an attempt to construct a schema from dynamic schemas in which one of those schemas references an undefined schema.
 
 

@@ -1,7 +1,8 @@
 # UITableViewDropProposal
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Your proposed solution for handling a drop in a table view.
 
@@ -18,57 +19,62 @@ Your proposed solution for handling a drop in a table view.
 class UITableViewDropProposal
 ```
 
+```objc
+@interface UITableViewDropProposal : UIDropProposal
+```
+
 ## Mentions
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting drag and drop in table views](./supporting-drag-and-drop-in-table-views.md)
 
 #### Overview
 
-Create instances of this class in the [`tableView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](uitableviewdropdelegate/tableview(_:dropsessiondidupdate:withdestinationindexpath:).md) method of your drop delegate object. You create drop proposals to let the table view know how you intend to handle a drop at the currently specified location. The table view uses that information to provide appropriate visual feedback to the user.
+Create instances of this class in the [`tableView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](./uitableviewdropdelegate/tableview%28_,dropsessiondidupdate,withdestinationindexpath%29.md) method of your drop delegate object. You create drop proposals to let the table view know how you intend to handle a drop at the currently specified location. The table view uses that information to provide appropriate visual feedback to the user.
 
 ## Topics
 
 ### Creating a drop proposal
-- [init(operation: UIDropOperation, intent: UITableViewDropProposal.Intent)](uitableviewdropproposal/init(operation:intent:).md)
+- [init(operation: UIDropOperation, intent: UITableViewDropProposal.Intent)](./uitableviewdropproposal/init%28operation,intent%29.md)
   Creates a drop proposal object that specifies how to incorporate the dropped content.
 ### Getting the proposed drop location
-- [var intent: UITableViewDropProposal.Intent](uitableviewdropproposal/intent-swift.property.md)
+- [var intent: UITableViewDropProposal.Intent](./uitableviewdropproposal/intent-swift.property.md)
   The option to use when incorporating dropped items into your content.
-- [UITableViewDropProposal.Intent](uitableviewdropproposal/intent-swift.enum.md)
+- [UITableViewDropProposal.Intent](./uitableviewdropproposal/intent-swift.enum.md)
   Constants indicating how you intend to handle a drop.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](./uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
 ### Initializers
-- [init(dropOperation: UIDropOperation, intent: UITableViewDropProposal.Intent)](uitableviewdropproposal/init(dropoperation:intent:).md)
+- [init(dropOperation: UIDropOperation, intent: UITableViewDropProposal.Intent)](./uitableviewdropproposal/init%28dropoperation,intent%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIDropProposal](uidropproposal.md)
+- [UIDropProposal](./uidropproposal.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+### Drag and drop
+- [Supporting drag and drop in table views](./supporting-drag-and-drop-in-table-views.md)
   Initiate drags and handle drops from a table view.
-- [Adopting drag and drop in a table view](adopting-drag-and-drop-in-a-table-view.md)
+- [Adopting drag and drop in a table view](./adopting-drag-and-drop-in-a-table-view.md)
   Demonstrates how to enable and implement drag and drop for a table view.
-- [protocol UITableViewDragDelegate](uitableviewdragdelegate.md)
+- [protocol UITableViewDragDelegate](./uitableviewdragdelegate.md)
   The interface for initiating drags from a table view.
-- [protocol UITableViewDropDelegate](uitableviewdropdelegate.md)
+- [protocol UITableViewDropDelegate](./uitableviewdropdelegate.md)
   The interface for handling drops in a table view.
-- [protocol UITableViewDropCoordinator](uitableviewdropcoordinator.md)
+- [protocol UITableViewDropCoordinator](./uitableviewdropcoordinator.md)
   An interface for coordinating your custom drop-related actions with the table view.
-- [protocol UITableViewDropItem](uitableviewdropitem.md)
+- [protocol UITableViewDropItem](./uitableviewdropitem.md)
   The data associated with an item being dropped into the table view.
 
 

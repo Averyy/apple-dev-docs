@@ -1,7 +1,8 @@
 # Float16.SIMDMaskScalar
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 14.0+

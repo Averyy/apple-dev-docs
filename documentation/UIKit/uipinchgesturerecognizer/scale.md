@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor relative to the points of the two touches in screen coordinates.
 
@@ -17,9 +18,13 @@ The scale factor relative to the points of the two touches in screen coordinates
 var scale: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat scale;
+```
+
 ## Mentions
 
-- [Handling pinch gestures](handling-pinch-gestures.md)
+- [Handling pinch gestures](../handling-pinch-gestures.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ The scale value is an absolute value that varies over time. It isn’t the delta
 
 ## See Also
 
-- [var velocity: CGFloat](uipinchgesturerecognizer/velocity.md)
+### Interpreting the pinching gesture
+- [var velocity: CGFloat](./velocity.md)
   The velocity of the pinch in scale factor per second.
 
 

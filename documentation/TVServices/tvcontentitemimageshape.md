@@ -1,7 +1,8 @@
 # TVContentItemImageShape
 
 **Framework**: TV Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumerated type that identifies the shape in which the content item should be displayed.
 
@@ -14,45 +15,50 @@ An enumerated type that identifies the shape in which the content item should be
 enum TVContentItemImageShape
 ```
 
+```c
+enum TVContentItemImageShape : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [TVContentItemImageShape.none](tvcontentitemimageshape/none.md)
+- [TVContentItemImageShape.none](./tvcontentitemimageshape/none.md)
   The content has no particular shape.
-- [TVContentItemImageShape.poster](tvcontentitemimageshape/poster.md)
+- [TVContentItemImageShape.poster](./tvcontentitemimageshape/poster.md)
   The content has a width:height ratio of `2:3`.
-- [TVContentItemImageShape.square](tvcontentitemimageshape/square.md)
+- [TVContentItemImageShape.square](./tvcontentitemimageshape/square.md)
   The content has a width:height ratio of `1:1`.
-- [TVContentItemImageShape.SDTV](tvcontentitemimageshape/sdtv.md)
+- [TVContentItemImageShape.SDTV](./tvcontentitemimageshape/sdtv.md)
   The content is standard-definition television content with a width:height ratio of `4:3`.
-- [TVContentItemImageShape.HDTV](tvcontentitemimageshape/hdtv.md)
+- [TVContentItemImageShape.HDTV](./tvcontentitemimageshape/hdtv.md)
   The content is high-definition television content with a width:height ratio of `16:9`.
-- [TVContentItemImageShape.wide](tvcontentitemimageshape/wide.md)
+- [TVContentItemImageShape.wide](./tvcontentitemimageshape/wide.md)
   The content has a width:height ratio of `8:3`.
-- [TVContentItemImageShape.extraWide](tvcontentitemimageshape/extrawide.md)
+- [TVContentItemImageShape.extraWide](./tvcontentitemimageshape/extrawide.md)
   The content has a width:height ratio of `80:27`.
 ### Initializers
-- [init?(rawValue: Int)](tvcontentitemimageshape/init(rawvalue:).md)
+- [init?(rawValue: Int)](./tvcontentitemimageshape/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var creationDate: Date?](tvcontentitem/creationdate.md)
+### Inspecting the Content Properties
+- [var creationDate: Date?](./tvcontentitem/creationdate.md)
   The date when the content item was created, or the date when it was first broadcast, or some other kind of origination date.
-- [var duration: NSNumber?](tvcontentitem/duration.md)
+- [var duration: NSNumber?](./tvcontentitem/duration.md)
   The amount of time required to play the media to completion.
-- [var expirationDate: Date?](tvcontentitem/expirationdate.md)
+- [var expirationDate: Date?](./tvcontentitem/expirationdate.md)
   The date when the user will no longer be able to access the item.
-- [var imageShape: TVContentItemImageShape](tvcontentitem/imageshape.md)
+- [var imageShape: TVContentItemImageShape](./tvcontentitem/imageshape.md)
   The intended aspect ratio or shape of the content image.
 
 

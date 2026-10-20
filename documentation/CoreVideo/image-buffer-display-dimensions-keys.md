@@ -1,48 +1,50 @@
 # Image Buffer Display Dimensions Keys
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 Keys that describe the display dimensions of an image buffer.
 
 #### Overview
 
-Define these key-value pairs in a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) instance and use the [`kCVImageBufferDisplayDimensionsKey`](kcvimagebufferdisplaydimensionskey.md) key to attach it to the image buffer.
+Define these key-value pairs in a [`CFDictionary`](../CoreFoundation/cfdictionary.md) instance and use the [`kCVImageBufferDisplayDimensionsKey`](./kcvimagebufferdisplaydimensionskey.md) key to attach it to the image buffer.
 
 ## Topics
 
 ### Constants
-- [let kCVImageBufferDisplayWidthKey: CFString](kcvimagebufferdisplaywidthkey.md)
+- [let kCVImageBufferDisplayWidthKey: CFString](./kcvimagebufferdisplaywidthkey.md)
   A key to the display width of the image buffer.
-- [let kCVImageBufferDisplayHeightKey: CFString](kcvimagebufferdisplayheightkey.md)
+- [let kCVImageBufferDisplayHeightKey: CFString](./kcvimagebufferdisplayheightkey.md)
   A key to the display height of the image buffer.
 
 ## See Also
 
-- [Image Buffer Attachment Keys](image-buffer-attachment-keys.md)
+### Constants
+- [Image Buffer Attachment Keys](./image-buffer-attachment-keys.md)
   Keys that describe the attachment types associated with image buffers.
-- [Image Buffer Clean Aperture Keys](image-buffer-clean-aperture-keys.md)
+- [Image Buffer Clean Aperture Keys](./image-buffer-clean-aperture-keys.md)
   Keys that describe the clean aperture of an image buffer.
-- [Image Buffer Pixel Aspect Ratio Keys](image-buffer-pixel-aspect-ratio-keys.md)
+- [Image Buffer Pixel Aspect Ratio Keys](./image-buffer-pixel-aspect-ratio-keys.md)
   Keys that describe the pixel aspect ratio of an image buffer.
-- [Image Buffer Field Detail Constants](image-buffer-field-detail-constants.md)
+- [Image Buffer Field Detail Constants](./image-buffer-field-detail-constants.md)
   Constants that indicate the field order of interlaced video in an image buffer.
-- [Image Buffer YCbCr Matrix Constants](image-buffer-ycbcr-matrix-constants.md)
+- [Image Buffer YCbCr Matrix Constants](./image-buffer-ycbcr-matrix-constants.md)
   Constants that indicate the type of conversion matrix Core Video uses when it converts image buffer data from the YCbCr color space to the RGB color space.
-- [Image Buffer Color Primaries Constants](image-buffer-color-primaries-constants.md)
+- [Image Buffer Color Primaries Constants](./image-buffer-color-primaries-constants.md)
   Constants that indicate the color primaries gamut for the image buffer.
-- [Image Buffer Transfer Function Constants](image-buffer-transfer-function-constants.md)
+- [Image Buffer Transfer Function Constants](./image-buffer-transfer-function-constants.md)
   Constants that indicate the transfer function for the image buffer.
-- [Image Buffer Chroma Location Constants](image-buffer-chroma-location-constants.md)
+- [Image Buffer Chroma Location Constants](./image-buffer-chroma-location-constants.md)
   Constants that indicate locations for chroma samples in the image buffer.
-- [Image Buffer Chroma Subsampling Constants](image-buffer-chroma-subsampling-constants.md)
+- [Image Buffer Chroma Subsampling Constants](./image-buffer-chroma-subsampling-constants.md)
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
-- [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
+- [Image Buffer Display Mask Rectangle Keys](./image-buffer-display-mask-rectangle-keys.md)
   Keys that describe the display dimensions of an image buffer mask.
-- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](./kcvimagebufferdisplaymaskrectanglekey.md)
   Specifies the rectangular display area within the image.
-- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](./kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
   Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
-- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](./kcvimagebufferdisplaymaskrectanglestereorightkey.md)
   Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 

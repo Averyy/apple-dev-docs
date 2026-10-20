@@ -1,7 +1,8 @@
 # encode(inputs:states:outputViews:to:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the inference onto the provided compute stream, returning async values for the outputs.
 
@@ -20,7 +21,7 @@ func encode(inputs: [String : InferenceFunction.AsyncValue], states: consuming I
 
 #### Return Value
 
-A dictionary mapping output name to an [`InferenceFunction.AsyncValue`](inferencefunction/asyncvalue.md) for each output not included in `outputViews`.
+A dictionary mapping output name to an [`InferenceFunction.AsyncValue`](./asyncvalue.md) for each output not included in `outputViews`.
 
 #### Discussion
 
@@ -60,14 +61,15 @@ guard let finalNDArray = try await functionTwoOutput.ndArray else {
 
 - `inputs`: The input values.
 - `states`: The `inout` arguments that the function reads and writes during inference. Note that views for states are not optional. Omitting a view for any state results in an error.
-- `outputViews`: A collection of pre-allocated output values that the inference updates during execution. The returned dictionary doesn’t contain [`InferenceFunction`](inferencefunction.md) outputs for which you provide a view, because the inference updates the mutable view in place. When you don’t provide a view, the returned dictionary includes a new async output value.
+- `outputViews`: A collection of pre-allocated output values that the inference updates during execution. The returned dictionary doesn’t contain [`InferenceFunction`](../inferencefunction.md) outputs for which you provide a view, because the inference updates the mutable view in place. When you don’t provide a view, the returned dictionary includes a new async output value.
 - `stream`: The compute stream that receives the encoded inference.
 
 ## See Also
 
-- [func run(inputs: [String : NDArray], states: consuming InferenceFunction.MutableViews, outputViews: consuming InferenceFunction.MutableViews) async throws -> InferenceFunction.Outputs](inferencefunction/run(inputs:states:outputviews:)-mqfb.md)
+### Running inference
+- [func run(inputs: [String : NDArray], states: consuming InferenceFunction.MutableViews, outputViews: consuming InferenceFunction.MutableViews) async throws -> InferenceFunction.Outputs](./run%28inputs,states,outputviews%29-mqfb.md)
   Runs the function on the provided input arrays and returns the output values.
-- [func run(inputs: borrowing InferenceFunction.Inputs, states: consuming InferenceFunction.MutableViews, outputViews: consuming InferenceFunction.MutableViews) async throws -> InferenceFunction.Outputs](inferencefunction/run(inputs:states:outputviews:)-14emi.md)
+- [func run(inputs: borrowing InferenceFunction.Inputs, states: consuming InferenceFunction.MutableViews, outputViews: consuming InferenceFunction.MutableViews) async throws -> InferenceFunction.Outputs](./run%28inputs,states,outputviews%29-14emi.md)
   Runs the function on the provided input values and returns the output values.
 
 

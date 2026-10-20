@@ -1,7 +1,8 @@
 # URLProtectionSpace
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A server or an area on a server, commonly referred to as a realm, that requires authentication.
 
@@ -20,76 +21,81 @@ A server or an area on a server, commonly referred to as a realm, that requires 
 class URLProtectionSpace
 ```
 
+```objc
+@interface NSURLProtectionSpace : NSObject
+```
+
 #### Overview
 
-A protection space defines a series of matching constraints that determine which credential should be provided. For example, if a request provides your delegate with a [`URLAuthenticationChallenge`](urlauthenticationchallenge.md) object that requests a client username and password, your app should provide the correct username and password for the particular host, port, protocol, and realm, as specified in the challenge’s protection space.
+A protection space defines a series of matching constraints that determine which credential should be provided. For example, if a request provides your delegate with a [`URLAuthenticationChallenge`](./urlauthenticationchallenge.md) object that requests a client username and password, your app should provide the correct username and password for the particular host, port, protocol, and realm, as specified in the challenge’s protection space.
 
 > **Note**:  This class has no designated initializer; its `init` method always returns `nil`. You must initialize this class by calling one of the initialization methods described in Creating a protection space.
 
 ## Topics
 
 ### Creating a protection space
-- [init(host: String, port: Int, protocol: String?, realm: String?, authenticationMethod: String?)](urlprotectionspace/init(host:port:protocol:realm:authenticationmethod:).md)
+- [init(host: String, port: Int, protocol: String?, realm: String?, authenticationMethod: String?)](./urlprotectionspace/init%28host,port,protocol,realm,authenticationmethod%29.md)
   Creates a protection space object from the given host, port, protocol, realm, and authentication method.
-- [init(proxyHost: String, port: Int, type: String?, realm: String?, authenticationMethod: String?)](urlprotectionspace/init(proxyhost:port:type:realm:authenticationmethod:).md)
+- [init(proxyHost: String, port: Int, type: String?, realm: String?, authenticationMethod: String?)](./urlprotectionspace/init%28proxyhost,port,type,realm,authenticationmethod%29.md)
   Creates a protection space object representing a proxy server.
 ### Getting protection space properties
-- [var authenticationMethod: String](urlprotectionspace/authenticationmethod.md)
+- [var authenticationMethod: String](./urlprotectionspace/authenticationmethod.md)
   The authentication method used by the receiver.
-- [var distinguishedNames: [Data]?](urlprotectionspace/distinguishednames.md)
+- [var distinguishedNames: [Data]?](./urlprotectionspace/distinguishednames.md)
   The acceptable certificate-issuing authorities for client certificate authentication.
-- [var host: String](urlprotectionspace/host.md)
+- [var host: String](./urlprotectionspace/host.md)
   The receiver’s host.
-- [var port: Int](urlprotectionspace/port.md)
+- [var port: Int](./urlprotectionspace/port.md)
   The receiver’s port.
-- [var `protocol`: String?](urlprotectionspace/protocol.md)
+- [var `protocol`: String?](./urlprotectionspace/protocol.md)
   The receiver’s protocol.
-- [var proxyType: String?](urlprotectionspace/proxytype.md)
+- [var proxyType: String?](./urlprotectionspace/proxytype.md)
   The receiver’s proxy type.
-- [var realm: String?](urlprotectionspace/realm.md)
+- [var realm: String?](./urlprotectionspace/realm.md)
   The receiver’s authentication realm
-- [var receivesCredentialSecurely: Bool](urlprotectionspace/receivescredentialsecurely.md)
+- [var receivesCredentialSecurely: Bool](./urlprotectionspace/receivescredentialsecurely.md)
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
-- [var serverTrust: SecTrust?](urlprotectionspace/servertrust.md)
+- [var serverTrust: SecTrust?](./urlprotectionspace/servertrust.md)
   A representation of the server’s SSL transaction state.
 ### Identifying protection space properties
-- [NSURLProtectionSpace protocol types](nsurlprotectionspace-protocol-types.md)
-  These constants describe the supported protocols for a protection space, as returned by [`protocol`](urlprotectionspace/protocol.md).
-- [NSURLProtectionSpace proxy types](nsurlprotectionspace-proxy-types.md)
-  These constants describe the supported proxy types used in [`init(proxyHost:port:type:realm:authenticationMethod:)`](urlprotectionspace/init(proxyhost:port:type:realm:authenticationmethod:).md) and returned by [`proxyType`](urlprotectionspace/proxytype.md).
-- [NSURLProtectionSpace authentication method constants](nsurlprotectionspace-authentication-method-constants.md)
-  Constants describing known values of the [`authenticationMethod`](urlprotectionspace/authenticationmethod.md) property of a [`URLProtectionSpace`](urlprotectionspace.md).
+- [NSURLProtectionSpace protocol types](./nsurlprotectionspace-protocol-types.md)
+  These constants describe the supported protocols for a protection space, as returned by [`protocol`](./urlprotectionspace/protocol.md).
+- [NSURLProtectionSpace proxy types](./nsurlprotectionspace-proxy-types.md)
+  These constants describe the supported proxy types used in [`init(proxyHost:port:type:realm:authenticationMethod:)`](./urlprotectionspace/init%28proxyhost,port,type,realm,authenticationmethod%29.md) and returned by [`proxyType`](./urlprotectionspace/proxytype.md).
+- [NSURLProtectionSpace authentication method constants](./nsurlprotectionspace-authentication-method-constants.md)
+  Constants describing known values of the [`authenticationMethod`](./urlprotectionspace/authenticationmethod.md) property of a [`URLProtectionSpace`](./urlprotectionspace.md).
 ### Initializers
-- [init?(coder: NSCoder)](urlprotectionspace/init(coder:).md)
+- [init?(coder: NSCoder)](./urlprotectionspace/init%28coder%29.md)
 ### Instance Methods
-- [func isProxy() -> Bool](urlprotectionspace/isproxy.md)
+- [func isProxy() -> Bool](./urlprotectionspace/isproxy%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Handling an authentication challenge](handling-an-authentication-challenge.md)
+### Authentication and credentials
+- [Handling an authentication challenge](./handling-an-authentication-challenge.md)
   Respond appropriately when a server demands authentication for a URL request.
-- [class URLAuthenticationChallenge](urlauthenticationchallenge.md)
+- [class URLAuthenticationChallenge](./urlauthenticationchallenge.md)
   A challenge from a server requiring authentication from the client.
-- [class URLCredential](urlcredential.md)
+- [class URLCredential](./urlcredential.md)
   `A`n authentication credential consisting of information specific to the type of credential and the type of persistent storage to use, if any.
-- [class URLCredentialStorage](urlcredentialstorage.md)
+- [class URLCredentialStorage](./urlcredentialstorage.md)
   The manager of a shared credentials cache.
 
 

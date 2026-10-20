@@ -1,7 +1,8 @@
 # readAttributeSelectedAreas(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSelectedAreas(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSelectedAreas() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeSelectedAreasWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

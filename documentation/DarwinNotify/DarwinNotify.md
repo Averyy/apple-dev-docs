@@ -1,7 +1,8 @@
 # Darwin Notify
 
 **Framework**: Darwin Notify  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Send and receive Darwin notifications.
 
@@ -17,10 +18,10 @@ Send and receive Darwin notifications.
 ## Topics
 
 ### Reference
-- [Darwin Notification API](darwin-notification-api.md)
-- [DarwinNotify Functions](darwinnotify-functions.md)
-- [DarwinNotify Data Types](darwinnotify-data-types.md)
-- [DarwinNotify Macros](darwinnotify-macros.md)
+- [Darwin Notification API](./darwin-notification-api.md)
+- [DarwinNotify Functions](./darwinnotify-functions.md)
+- [DarwinNotify Data Types](./darwinnotify-data-types.md)
+- [DarwinNotify Macros](./darwinnotify-macros.md)
 
 
 ---

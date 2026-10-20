@@ -1,7 +1,8 @@
 # setPosition(_:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the position of the entity relative to the given reference entity.
 
@@ -11,7 +12,7 @@ Sets the position of the entity relative to the given reference entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Sets the position of the entity relative to the given reference entity.
 
 ## See Also
 
-- [var position: SIMD3<Float>](hastransform/position.md)
+### Positioning an entity
+- [var position: SIMD3<Float>](./position.md)
   The position of the entity relative to its parent.
-- [func position(relativeTo: Entity?) -> SIMD3<Float>](hastransform/position(relativeto:).md)
+- [func position(relativeTo: Entity?) -> SIMD3<Float>](./position%28relativeto%29.md)
   Gets the position of an entity relative to the given entity.
 
 

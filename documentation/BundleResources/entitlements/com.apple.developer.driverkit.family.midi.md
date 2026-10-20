@@ -1,7 +1,8 @@
 # com.apple.developer.driverkit.family.midi
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether to match the driver against devices that support MIDI.
 
@@ -10,25 +11,27 @@ A Boolean value that indicates whether to match the driver against devices that 
 - iPadOS 18.0+
 - macOS 15.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.driverkit.family.midi`
+- **Type**: boolean
 
 ## See Also
 
-- [DriverKit Audio Family](entitlements/com.apple.developer.driverkit.family.audio.md)
+### DriverKit family entitlements
+- [DriverKit Audio Family](./com.apple.developer.driverkit.family.audio.md)
   A Boolean value that indicates whether the device supports audio functionality.
-- [com.apple.developer.driverkit.family.block-storage-device](entitlements/com.apple.developer.driverkit.family.block-storage-device.md)
+- [com.apple.developer.driverkit.family.block-storage-device](./com.apple.developer.driverkit.family.block-storage-device.md)
   A Boolean value that indicates whether to match the driver against block storage devices that use custom drivers.
-- [com.apple.developer.driverkit.family.networking](entitlements/com.apple.developer.driverkit.family.networking.md)
+- [com.apple.developer.driverkit.family.networking](./com.apple.developer.driverkit.family.networking.md)
   A Boolean value that indicates whether to match the driver against devices that communicate using networking protocols.
-- [com.apple.developer.driverkit.family.scsicontroller](entitlements/com.apple.developer.driverkit.family.scsicontroller.md)
+- [com.apple.developer.driverkit.family.scsicontroller](./com.apple.developer.driverkit.family.scsicontroller.md)
   A Boolean value that indicates whether to match the driver against devices with SCSI controllers.
-- [com.apple.developer.driverkit.family.serial](entitlements/com.apple.developer.driverkit.family.serial.md)
+- [com.apple.developer.driverkit.family.serial](./com.apple.developer.driverkit.family.serial.md)
   A Boolean value that indicates whether to match the driver against devices with serial communication interfaces.
-- [com.apple.developer.driverkit.transport.pci](entitlements/com.apple.developer.driverkit.transport.pci.md)
+- [com.apple.developer.driverkit.transport.pci](./com.apple.developer.driverkit.transport.pci.md)
   An array of PCI device descriptors that your custom driver supports.
-- [com.apple.developer.driverkit.transport.usb](entitlements/com.apple.developer.driverkit.transport.usb.md)
+- [com.apple.developer.driverkit.transport.usb](./com.apple.developer.driverkit.transport.usb.md)
   An array of dictionaries that identify the USB devices the driver supports.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an embedding key with the given string as its raw value.
 

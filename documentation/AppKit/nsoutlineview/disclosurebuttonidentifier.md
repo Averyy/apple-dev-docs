@@ -1,7 +1,8 @@
 # disclosureButtonIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The normal triangle disclosure button.
 
@@ -14,9 +15,14 @@ The normal triangle disclosure button.
 class let disclosureButtonIdentifier: NSUserInterfaceItemIdentifier
 ```
 
+```c
+extern NSUserInterfaceItemIdentifier const NSOutlineViewDisclosureButtonKey;
+```
+
 ## See Also
 
-- [class let showHideButtonIdentifier: NSUserInterfaceItemIdentifier](nsoutlineview/showhidebuttonidentifier.md)
+### Constants
+- [class let showHideButtonIdentifier: NSUserInterfaceItemIdentifier](./showhidebuttonidentifier.md)
   The Show/Hide button.
 
 

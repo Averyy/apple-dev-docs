@@ -1,18 +1,19 @@
 # kCGGlyphMax
 
 **Framework**: Core Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The maximum allowed value of a [`CGGlyph`](cgglyph.md).
+The maximum allowed value of a [`CGGlyph`](./cgglyph.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,25 +21,30 @@ The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 var kCGGlyphMax: CGFontIndex { get }
 ```
 
+```c
+static const CGFontIndex kCGGlyphMax;
+```
+
 ## See Also
 
-- [var numberOfGlyphs: Int](cgfont/numberofglyphs.md)
+### Working with Glyphs
+- [var numberOfGlyphs: Int](./cgfont/numberofglyphs.md)
   Returns the number of glyphs in a font.
-- [func name(for: CGGlyph) -> CFString?](cgfont/name(for:).md)
+- [func name(for: CGGlyph) -> CFString?](./cgfont/name%28for%29.md)
   Returns the glyph name of the specified glyph in the specified font.
-- [func getGlyphWithGlyphName(name: CFString) -> CGGlyph](cgfont/getglyphwithglyphname(name:).md)
+- [func getGlyphWithGlyphName(name: CFString) -> CGGlyph](./cgfont/getglyphwithglyphname%28name%29.md)
   Returns the glyph for the glyph name associated with the specified font object.
-- [func getGlyphBBoxes(glyphs: UnsafePointer<CGGlyph>, count: Int, bboxes: UnsafeMutablePointer<CGRect>) -> Bool](cgfont/getglyphbboxes(glyphs:count:bboxes:).md)
+- [func getGlyphBBoxes(glyphs: UnsafePointer<CGGlyph>, count: Int, bboxes: UnsafeMutablePointer<CGRect>) -> Bool](./cgfont/getglyphbboxes%28glyphs,count,bboxes%29.md)
   Get the bounding box of each glyph in an array.
-- [func getGlyphAdvances(glyphs: UnsafePointer<CGGlyph>, count: Int, advances: UnsafeMutablePointer<Int32>) -> Bool](cgfont/getglyphadvances(glyphs:count:advances:).md)
+- [func getGlyphAdvances(glyphs: UnsafePointer<CGGlyph>, count: Int, advances: UnsafeMutablePointer<Int32>) -> Bool](./cgfont/getglyphadvances%28glyphs,count,advances%29.md)
   Gets the advance width of each glyph in the provided array.
-- [typealias CGGlyph](cgglyph.md)
+- [typealias CGGlyph](./cgglyph.md)
   An index into the internal glyph table of a font.
-- [typealias CGFontIndex](cgfontindex.md)
+- [typealias CGFontIndex](./cgfontindex.md)
   An index into a font table.
-- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
-  The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexMax: CGFontIndex](./kcgfontindexmax.md)
+  The maximum allowed value of a [`CGFontIndex`](./cgfontindex.md).
+- [var kCGFontIndexInvalid: CGFontIndex](./kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
 
 

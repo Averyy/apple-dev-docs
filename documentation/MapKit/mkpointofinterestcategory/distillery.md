@@ -1,7 +1,8 @@
 # distillery
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for distilleries.
 
@@ -20,19 +21,24 @@ The point of interest category for distilleries.
 static let distillery: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryDistillery;
+```
+
 ## See Also
 
-- [static let bakery: MKPointOfInterestCategory](mkpointofinterestcategory/bakery.md)
+### Food and drink
+- [static let bakery: MKPointOfInterestCategory](./bakery.md)
   The point of interest category for bakeries.
-- [static let brewery: MKPointOfInterestCategory](mkpointofinterestcategory/brewery.md)
+- [static let brewery: MKPointOfInterestCategory](./brewery.md)
   The point of interest category for breweries.
-- [static let cafe: MKPointOfInterestCategory](mkpointofinterestcategory/cafe.md)
+- [static let cafe: MKPointOfInterestCategory](./cafe.md)
   The point of interest category for cafes.
-- [static let foodMarket: MKPointOfInterestCategory](mkpointofinterestcategory/foodmarket.md)
+- [static let foodMarket: MKPointOfInterestCategory](./foodmarket.md)
   The point of interest category for food markets, supermarkets, grocery stores, and convenience stores.
-- [static let restaurant: MKPointOfInterestCategory](mkpointofinterestcategory/restaurant.md)
+- [static let restaurant: MKPointOfInterestCategory](./restaurant.md)
   The point of interest category for restaurants.
-- [static let winery: MKPointOfInterestCategory](mkpointofinterestcategory/winery.md)
+- [static let winery: MKPointOfInterestCategory](./winery.md)
   The point of interest category for wineries.
 
 

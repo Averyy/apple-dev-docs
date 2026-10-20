@@ -1,17 +1,18 @@
 # origin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The top-left corner of the region.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The top-left corner of the region.
 var origin: MPSOrigin
 ```
 
+```c
+MPSOrigin origin;
+```
+
 ## See Also
 
-- [var size: MPSSize](mpsregion/size.md)
+### Fields
+- [var size: MPSSize](./size.md)
   The size of the region.
 
 

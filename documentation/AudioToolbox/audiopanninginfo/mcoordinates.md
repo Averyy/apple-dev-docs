@@ -1,22 +1,27 @@
 # mCoordinates
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For the available coordinate index constants, see Channel Coordinate Index Constants.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var mCoordinates: (Float32, Float32, Float32)
+```
+
+```c
+Float32 mCoordinates[3];
 ```
 
 

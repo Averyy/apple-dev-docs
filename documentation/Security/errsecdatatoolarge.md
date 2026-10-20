@@ -1,7 +1,8 @@
 # errSecDataTooLarge
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data is too large for the particular data type.
 
@@ -18,6 +19,10 @@ The data is too large for the particular data type.
 
 ```swift
 var errSecDataTooLarge: OSStatus { get }
+```
+
+```c
+errSecDataTooLarge
 ```
 
 

@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 var image: NSImage? { get set }
+```
+
+```objc
+@property (strong, nullable) NSImage * image;
 ```
 
 

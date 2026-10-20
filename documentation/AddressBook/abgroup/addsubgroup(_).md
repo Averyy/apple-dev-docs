@@ -1,12 +1,13 @@
 # addSubgroup(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a subgroup to another group.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Adds a subgroup to another group.
 func addSubgroup(_ group: ABGroup!) -> Bool
 ```
 
+```objc
+- (BOOL) addSubgroup:(ABGroup *) group;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the `group` argument is already part of the receiver, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false). If adding the group would create a recursion, this method also does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false). (For example, if the group Animal Lovers is in Dog Lovers, and you add Dog Lovers to Animal Lovers, that would create a recursion, which this method won’t allow.) If the `group` argument is `nil`, this method raises an exception.
+If the `group` argument is already part of the receiver, this method does nothing and returns [`false`](../../Swift/false.md). If adding the group would create a recursion, this method also does nothing and returns [`false`](../../Swift/false.md). (For example, if the group Animal Lovers is in Dog Lovers, and you add Dog Lovers to Animal Lovers, that would create a recursion, which this method won’t allow.) If the `group` argument is `nil`, this method raises an exception.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ If the `group` argument is already part of the receiver, this method does nothin
 
 ## See Also
 
-- [func removeSubgroup(ABGroup!) -> Bool](abgroup/removesubgroup(_:).md)
+### Managing subgroups
+- [func removeSubgroup(ABGroup!) -> Bool](./removesubgroup%28_%29.md)
   Removes a subgroup from a group.
-- [func parentGroups() -> [Any]!](abgroup/parentgroups.md)
+- [func parentGroups() -> [Any]!](./parentgroups%28%29.md)
   Returns an array containing a group’s parents—that is, the groups that a group belongs to.
-- [func subgroups() -> [Any]!](abgroup/subgroups.md)
+- [func subgroups() -> [Any]!](./subgroups%28%29.md)
   Returns an array containing a group’s subgroups.
 
 

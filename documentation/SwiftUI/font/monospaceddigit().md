@@ -1,7 +1,8 @@
 # monospacedDigit()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a modified font that uses fixed-width digits, while leaving other characters proportionally spaced.
 
@@ -28,7 +29,7 @@ A font that uses fixed-width numeric characters.
 
 This modifier only affects numeric characters, and leaves all other characters unchanged. If the base font doesn’t support fixed-width, or *monospace* digits, the font remains unchanged.
 
-The following example shows two text fields arranged in a [`VStack`](vstack.md). Both text fields specify the 12-point system font, with the second adding the `monospacedDigit()` modifier to the font. Because the text includes the digit 1, normally a narrow character in proportional fonts, the second text field becomes wider than the first.
+The following example shows two text fields arranged in a [`VStack`](../vstack.md). Both text fields specify the 12-point system font, with the second adding the `monospacedDigit()` modifier to the font. Because the text includes the digit 1, normally a narrow character in proportional fonts, the second text field becomes wider than the first.
 
 ```swift
 @State private var userText = "Effect of monospacing digits: 111,111."
@@ -45,31 +46,32 @@ var body: some View {
 }
 ```
 
-![A macOS window showing two text fields arranged vertically. Each](/images/com.apple.SwiftUI/Environment-Font-monospacedDigit-1@2x.png)
+![A macOS window showing two text fields arranged vertically. Each](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Environment-Font-monospacedDigit-1@2x.png)
 
 ## See Also
 
-- [func bold() -> Font](font/bold.md)
+### Styling a font
+- [func bold() -> Font](./bold%28%29.md)
   Adds bold or emphasized styling to the font.
-- [func italic() -> Font](font/italic.md)
+- [func italic() -> Font](./italic%28%29.md)
   Adds italics to the font.
-- [func monospaced() -> Font](font/monospaced.md)
+- [func monospaced() -> Font](./monospaced%28%29.md)
   Returns a fixed-width font from the same family as the base font.
-- [func smallCaps() -> Font](font/smallcaps.md)
+- [func smallCaps() -> Font](./smallcaps%28%29.md)
   Adjusts the font to enable all small capitals.
-- [func lowercaseSmallCaps() -> Font](font/lowercasesmallcaps.md)
+- [func lowercaseSmallCaps() -> Font](./lowercasesmallcaps%28%29.md)
   Adjusts the font to enable lowercase small capitals.
-- [func uppercaseSmallCaps() -> Font](font/uppercasesmallcaps.md)
+- [func uppercaseSmallCaps() -> Font](./uppercasesmallcaps%28%29.md)
   Adjusts the font to enable uppercase small capitals.
-- [func weight(Font.Weight) -> Font](font/weight(_:).md)
+- [func weight(Font.Weight) -> Font](./weight%28_%29.md)
   Sets the weight of the font.
-- [func width(Font.Width) -> Font](font/width(_:).md)
+- [func width(Font.Width) -> Font](./width%28_%29.md)
   Sets the width of the font.
-- [struct Width](font/width.md)
+- [struct Width](./width.md)
   A width to use for fonts that have multiple widths.
-- [func leading(Font.Leading) -> Font](font/leading(_:).md)
+- [func leading(Font.Leading) -> Font](./leading%28_%29.md)
   Adjusts the line spacing of a font.
-- [Font.Leading](font/leading.md)
+- [Font.Leading](./leading.md)
   A line spacing adjustment that you can apply to a font.
 
 

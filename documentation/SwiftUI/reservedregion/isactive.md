@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the region is active.
 
@@ -24,7 +25,7 @@ var isActive: Bool { get }
 
 A region can become active or inactive as conditions change. An active region currently affects your view. An inactive region doesn’t. For example, the fold of iPhone Duo is active when the device is partially open, and inactive when it’s fully open.
 
-By default, [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) returns only active regions. To also get inactive regions, pass [`includeInactive`](reservedregion/queryoptions/includeinactive.md).
+By default, [`reservedRegions(kind:options:layoutDirectionBehavior:)`](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md) returns only active regions. To also get inactive regions, pass [`includeInactive`](./queryoptions/includeinactive.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # motionTransformBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var motionTransformBuffer: (any MTLBuffer)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> motionTransformBuffer;
 ```
 
 

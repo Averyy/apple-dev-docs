@@ -1,7 +1,8 @@
 # safariViewControllerDidFinish(_:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user dismissed the view.
 
@@ -16,6 +17,10 @@ Tells the delegate that the user dismissed the view.
 optional func safariViewControllerDidFinish(_ controller: SFSafariViewController)
 ```
 
+```objc
+- (void) safariViewControllerDidFinish:(SFSafariViewController *) controller;
+```
+
 #### Discussion
 
 You can perform any necessary cleanup here. The view controller is dismissed afterwards.
@@ -26,11 +31,12 @@ You can perform any necessary cleanup here. The view controller is dismissed aft
 
 ## See Also
 
-- [func safariViewController(SFSafariViewController, didCompleteInitialLoad: Bool)](sfsafariviewcontrollerdelegate/safariviewcontroller(_:didcompleteinitialload:).md)
+### Working with the View Controller
+- [func safariViewController(SFSafariViewController, didCompleteInitialLoad: Bool)](./safariviewcontroller%28_,didcompleteinitialload%29.md)
   Tells the delegate that the initial URL load completed.
-- [func safariViewController(SFSafariViewController, activityItemsFor: URL, title: String?) -> [UIActivity]](sfsafariviewcontrollerdelegate/safariviewcontroller(_:activityitemsfor:title:).md)
+- [func safariViewController(SFSafariViewController, activityItemsFor: URL, title: String?) -> [UIActivity]](./safariviewcontroller%28_,activityitemsfor,title%29.md)
   Tells the delegate that the user tapped an Action button.
-- [func safariViewController(SFSafariViewController, excludedActivityTypesFor: URL, title: String?) -> [UIActivity.ActivityType]](sfsafariviewcontrollerdelegate/safariviewcontroller(_:excludedactivitytypesfor:title:).md)
+- [func safariViewController(SFSafariViewController, excludedActivityTypesFor: URL, title: String?) -> [UIActivity.ActivityType]](./safariviewcontroller%28_,excludedactivitytypesfor,title%29.md)
 
 
 ---

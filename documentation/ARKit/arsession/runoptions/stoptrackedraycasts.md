@@ -1,7 +1,8 @@
 # stopTrackedRaycasts
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to stop all active tracked raycasts.
 
@@ -15,19 +16,24 @@ An option to stop all active tracked raycasts.
 static var stopTrackedRaycasts: ARSession.RunOptions { get }
 ```
 
+```c
+ARSessionRunOptionStopTrackedRaycasts
+```
+
 #### Discussion
 
-By default, when you call the [`run(_:options:)`](arsession/run(_:options:).md) method on a session that is running or has run before, the session keeps tracking any [`ARTrackedRaycast`](artrackedraycast.md) objects that you previously added by calling [`trackedRaycast(_:updateHandler:)`](arsession/trackedraycast(_:updatehandler:).md).
+By default, when you call the [`run(_:options:)`](../run%28_,options%29.md) method on a session that is running or has run before, the session keeps tracking any [`ARTrackedRaycast`](../../artrackedraycast.md) objects that you previously added by calling [`trackedRaycast(_:updateHandler:)`](../trackedraycast%28_,updatehandler%29.md).
 
-Use [`stopTrackedRaycasts`](arsession/runoptions/stoptrackedraycasts.md) if you want to stop all active tracked raycasts. Alternatively, you can stop individual raycasts by calling [`stopTracking()`](artrackedraycast/stoptracking().md) on individual raycasts.
+Use [`stopTrackedRaycasts`](./stoptrackedraycasts.md) if you want to stop all active tracked raycasts. Alternatively, you can stop individual raycasts by calling [`stopTracking()`](../../artrackedraycast/stoptracking%28%29.md) on individual raycasts.
 
 ## See Also
 
-- [static var resetTracking: ARSession.RunOptions](arsession/runoptions/resettracking.md)
+### Run Options
+- [static var resetTracking: ARSession.RunOptions](./resettracking.md)
   An option to reset the device’s position from the session’s previous run.
-- [static var removeExistingAnchors: ARSession.RunOptions](arsession/runoptions/removeexistinganchors.md)
+- [static var removeExistingAnchors: ARSession.RunOptions](./removeexistinganchors.md)
   An option to remove any anchor objects associated with the session’s previous run.
-- [static var resetSceneReconstruction: ARSession.RunOptions](arsession/runoptions/resetscenereconstruction.md)
+- [static var resetSceneReconstruction: ARSession.RunOptions](./resetscenereconstruction.md)
   An option to reset the scene mesh.
 
 

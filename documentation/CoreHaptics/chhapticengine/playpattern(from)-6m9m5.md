@@ -1,7 +1,8 @@
 # playPattern(from:)
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays a pattern that’s defined in a file at the specified URL.
 
@@ -19,6 +20,10 @@ Plays a pattern that’s defined in a file at the specified URL.
 func playPattern(from fileURL: URL) throws
 ```
 
+```objc
+- (BOOL) playPatternFromURL:(NSURL *) fileURL error:(NSError **) outError;
+```
+
 #### Discussion
 
 Start the engine prior to calling this method to provide low-latency playback. If the engine isn’t already running when you call this method, the system starts it, which can result in a significant playback delay.
@@ -29,7 +34,8 @@ Start the engine prior to calling this method to provide low-latency playback. I
 
 ## See Also
 
-- [func playPattern(from: Data) throws](chhapticengine/playpattern(from:)-7u8se.md)
+### Playing a Pattern
+- [func playPattern(from: Data) throws](./playpattern%28from%29-7u8se.md)
   Plays a pattern from the specified data.
 
 

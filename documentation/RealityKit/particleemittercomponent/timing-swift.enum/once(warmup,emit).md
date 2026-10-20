@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.Timing.once(warmUp:emit:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Emits for the given `emit` duration and then stops, `warmUp` determines how long the simulation should appear to have run before first appearing.
 

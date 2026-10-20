@@ -1,7 +1,8 @@
 # hasPrecisionRecallCurve
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the observation contains precision and recall curves.
 
@@ -28,9 +29,10 @@ If this property is `false`, then the precision and recall-related methods donâ€
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let identifier: String](classificationobservation/identifier.md)
+- [let identifier: String](./identifier.md)
   The classification label that identifies the type of observation.
 
 

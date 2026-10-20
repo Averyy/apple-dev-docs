@@ -1,7 +1,8 @@
 # XMLHttpRequestEventTarget
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface XMLHttpRequestEventTarget
 ```
 
 ## Topics
 
 ### Instance Properties
-- [onabort](xmlhttprequesteventtarget/1777961-onabort.md)
-- [onerror](xmlhttprequesteventtarget/1777888-onerror.md)
-- [onload](xmlhttprequesteventtarget/1777839-onload.md)
-- [onloadend](xmlhttprequesteventtarget/1777982-onloadend.md)
-- [onloadstart](xmlhttprequesteventtarget/1777886-onloadstart.md)
-- [onprogress](xmlhttprequesteventtarget/1777869-onprogress.md)
-- [ontimeout](xmlhttprequesteventtarget/1777977-ontimeout.md)
+- [onabort](./xmlhttprequesteventtarget/api-1777961-onabort.md)
+- [onerror](./xmlhttprequesteventtarget/api-1777888-onerror.md)
+- [onload](./xmlhttprequesteventtarget/api-1777839-onload.md)
+- [onloadend](./xmlhttprequesteventtarget/api-1777982-onloadend.md)
+- [onloadstart](./xmlhttprequesteventtarget/api-1777886-onloadstart.md)
+- [onprogress](./xmlhttprequesteventtarget/api-1777869-onprogress.md)
+- [ontimeout](./xmlhttprequesteventtarget/api-1777977-ontimeout.md)
 
 ## Relationships
 

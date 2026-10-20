@@ -1,7 +1,8 @@
 # BNNSGraphTensorFillStrides(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the stride of the specifed tensor for compatibility with the given model’s input or output argument based on its current shape.
 
@@ -20,6 +21,10 @@ Sets the stride of the specifed tensor for compatibility with the given model’
 func BNNSGraphTensorFillStrides(_ graph: bnns_graph_t, _ function: UnsafePointer<CChar>?, _ argument: UnsafePointer<CChar>, _ tensor: UnsafeMutablePointer<BNNSTensor>) -> Int32
 ```
 
+```c
+int BNNSGraphTensorFillStrides(bnns_graph_t graph, const char *function, const char *argument, BNNSTensor *tensor);
+```
+
 #### Return Value
 
 `0` on success, nonzero on failure.
@@ -35,15 +40,16 @@ This function requires that you specify the tensor’s sizes. That is, they aren
 - `graph`: The compiled graph object.
 - `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
-- `tensor`: The tensor. On output, the first [`rank`](bnnstensor/rank.md) elements contain the strides that BNNS requires.
+- `tensor`: The tensor. On output, the first [`rank`](./bnnstensor/rank.md) elements contain the strides that BNNS requires.
 
 ## See Also
 
-- [struct BNNSTensor](bnnstensor.md)
+### Specifying and querying a tensor’s properties
+- [struct BNNSTensor](./bnnstensor.md)
   A structure that describes the shape, stride, data type, and, optionally, the memory location of an n-dimensional array.
-- [func BNNSTensorGetAllocationSize(UnsafePointer<BNNSTensor>) -> Int](bnnstensorgetallocationsize(_:).md)
+- [func BNNSTensorGetAllocationSize(UnsafePointer<BNNSTensor>) -> Int](./bnnstensorgetallocationsize%28_%29.md)
   Returns the minimum allocation size, in bytes, of the specified tensor.
-- [func BNNSGraphContextGetTensor(bnns_graph_context_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, Bool, UnsafeMutablePointer<BNNSTensor>) -> Int32](bnnsgraphcontextgettensor(_:_:_:_:_:).md)
+- [func BNNSGraphContextGetTensor(bnns_graph_context_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, Bool, UnsafeMutablePointer<BNNSTensor>) -> Int32](./bnnsgraphcontextgettensor%28_,_,_,_,_%29.md)
   Sets the properties of a tensor for the specified function argument.
 
 

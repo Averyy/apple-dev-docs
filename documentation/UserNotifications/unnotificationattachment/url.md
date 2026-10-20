@@ -1,7 +1,8 @@
 # url
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the file for this attachment.
 
@@ -19,15 +20,28 @@ The URL of the file for this attachment.
 var url: URL { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * URL;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSURL * URL;
+```
+
 #### Discussion
 
-The file at the specified URL is security scoped to your app. Before you access it, call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/startaccessingsecurityscopedresource()) method of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl).
+The file at the specified URL is security scoped to your app. Before you access it, call the [`startAccessingSecurityScopedResource()`](../../Foundation/url/startaccessingsecurityscopedresource%28%29.md) method of [`NSURL`](../../Foundation/nsurl.md).
 
 ## See Also
 
-- [var identifier: String](unnotificationattachment/identifier.md)
+### Getting the Attachment Contents
+- [var identifier: String](./identifier.md)
   The unique identifier for the attachment.
-- [var type: String](unnotificationattachment/type.md)
+- [var type: String](./type.md)
   The UTI type of the attachment.
 
 

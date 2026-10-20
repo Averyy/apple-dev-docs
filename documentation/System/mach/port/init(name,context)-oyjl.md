@@ -1,7 +1,8 @@
 # init(name:context:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Transfer ownership of an existing, unmanaged, but already guarded, Mach port right into a Mach.Port by name.
 
@@ -19,6 +20,8 @@ Transfer ownership of an existing, unmanaged, but already guarded, Mach port rig
 ```swift
 init(name: mach_port_name_t, context: mach_port_context_t)
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

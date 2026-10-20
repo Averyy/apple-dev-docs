@@ -1,7 +1,8 @@
 # notificationActions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -16,10 +17,15 @@
 var notificationActions: [UNNotificationAction] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<UNNotificationAction *> * notificationActions;
+```
+
 ## See Also
 
-- [func performNotificationDefaultAction()](nsextensioncontext/performnotificationdefaultaction.md)
-- [func dismissNotificationContentExtension()](nsextensioncontext/dismissnotificationcontentextension.md)
+### Handling notification actions
+- [func performNotificationDefaultAction()](./performnotificationdefaultaction%28%29.md)
+- [func dismissNotificationContentExtension()](./dismissnotificationcontentextension%28%29.md)
 
 
 ---

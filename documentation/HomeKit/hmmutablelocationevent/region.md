@@ -1,7 +1,8 @@
 # region
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region on which events are triggered.
 
@@ -18,9 +19,13 @@ The region on which events are triggered.
 var region: CLRegion? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) CLRegion * region;
+```
+
 #### Discussion
 
-Use this property to set the region on which the location event is triggered. The region object must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/corelocation/clregion/notifyonentry) or [`notifyOnExit`](https://developer.apple.com/documentation/corelocation/clregion/notifyonexit) set to [`true`](https://developer.apple.com/documentation/swift/true).
+Use this property to set the region on which the location event is triggered. The region object must have at least one of [`notifyOnEntry`](../../CoreLocation/clregion/notifyonentry.md) or [`notifyOnExit`](../../CoreLocation/clregion/notifyonexit.md) set to [`true`](../../Swift/true.md).
 
 This property is `nil` when an application is not authorized for location services.
 

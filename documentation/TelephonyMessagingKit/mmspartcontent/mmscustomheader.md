@@ -1,7 +1,8 @@
 # MMSPartContent.MMSCustomHeader
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines a custom header as a key-value pair.
 
@@ -21,24 +22,25 @@ TelephonyMessagingKit exposes custom headers in case a message needs to include 
 ## Topics
 
 ### Accessing header properties
-- [let key: String](mmspartcontent/mmscustomheader/key.md)
+- [let key: String](./mmscustomheader/key.md)
   The key for the custom header.
-- [let value: String](mmspartcontent/mmscustomheader/value.md)
+- [let value: String](./mmscustomheader/value.md)
   The value of the custom header.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var customHeaders: [MMSPartContent.MMSCustomHeader]](mmspartcontent/customheaders.md)
+### Working with custom headers
+- [var customHeaders: [MMSPartContent.MMSCustomHeader]](./customheaders.md)
   A dictionary of custom headers to send in the MMS message.
-- [func addCustomHeader(MMSPartContent.MMSCustomHeader)](mmspartcontent/addcustomheader(_:).md)
+- [func addCustomHeader(MMSPartContent.MMSCustomHeader)](./addcustomheader%28_%29.md)
   A helper function to add custom headers.
 
 

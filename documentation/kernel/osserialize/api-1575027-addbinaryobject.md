@@ -1,14 +1,15 @@
 # addBinaryObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 bool addBinaryObject(const OSMetaClassBase *o, uint32_t key, const void *_bits, uint32_t size, uint32_t *startCollection);
 ```
 

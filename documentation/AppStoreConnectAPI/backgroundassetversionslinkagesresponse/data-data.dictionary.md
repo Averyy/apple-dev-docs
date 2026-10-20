@@ -1,7 +1,8 @@
 # BackgroundAssetVersionsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a background asset version in a linkage response.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a background asset version in a linkage re
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `backgroundAssetVersions`
 
 
 ---

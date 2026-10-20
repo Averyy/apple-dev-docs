@@ -1,7 +1,8 @@
 # presentationFrame
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame rectangle that places the preview image directly over the matching text.
 
@@ -14,15 +15,20 @@ The frame rectangle that places the preview image directly over the matching tex
 var presentationFrame: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect presentationFrame;
+```
+
 #### Discussion
 
 You specify this value at initialization time. The system uses it to position the preview image over the text in your view. Make sure the frame rectangle is in your view’s coordinate space.
 
 ## See Also
 
-- [var previewImage: CGImage](nstextpreview/previewimage.md)
+### Getting the preview details
+- [var previewImage: CGImage](./previewimage.md)
   The image that contains the requested text from your view.
-- [var candidateRects: [NSValue]](nstextpreview/candidaterects.md)
+- [var candidateRects: [NSValue]](./candidaterects.md)
   Rectangles that define the specific portions of text to highlight.
 
 

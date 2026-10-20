@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calls the given closure with a pointer to the object’s mutable contiguous storage.
@@ -12,7 +13,7 @@ Calls the given closure with a pointer to the object’s mutable contiguous stor
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,7 +24,12 @@ mutating func withUnsafeMutableBufferPointer<R>(_ body: (inout UnsafeMutableBuff
 
 ## Parameters
 
-- `body`: A closure that receives an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/swift/unsafemutablebufferpointer) to the sequence’s contiguous storage.
+- `body`: A closure that receives an [`UnsafeMutableBufferPointer`](../../Swift/unsafemutablebufferpointer.md) to the sequence’s contiguous storage.
+
+## Default Implementations
+
+### AccelerateMutableBuffer Implementations
+- [func withUnsafeMutableBufferPointer<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R](./withunsafemutablebufferpointer%28_%29-5wvde.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # minimumTime
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var minimumTime: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval minimumTime;
 ```
 
 

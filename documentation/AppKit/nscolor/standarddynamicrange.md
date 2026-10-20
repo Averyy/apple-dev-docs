@@ -1,7 +1,8 @@
 # standardDynamicRange
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 In some cases it is useful to recover the color that was base the SDR color that was exposed to generate an HDR color. If a color’s `linearExposure` is > 1, then this will return the base SDR color. If the color is not an HDR color, this will return `self`.
 
@@ -15,11 +16,16 @@ In some cases it is useful to recover the color that was base the SDR color that
 var standardDynamicRange: NSColor { get }
 ```
 
+```objc
+@property (copy, readonly) NSColor * standardDynamicRangeColor;
+```
+
 ## See Also
 
-- [var linearExposure: CGFloat](nscolor/linearexposure.md)
+### Supporting high dynamic range (HDR) colors
+- [var linearExposure: CGFloat](./linearexposure.md)
   For HDR colors, the linear brightness multiplier that was applied when generating the color. Colors created with an exposure by NSColor create CGColors that are tagged with a contentHeadroom value. While CGColors created without a contentHeadroom tag will return 0 from CGColorGetHeadroom, NSColors generated in a similar fashion return a linearExposure of 1.0.
-- [func applyingContentHeadroom(CGFloat) -> NSColor](nscolor/applyingcontentheadroom(_:).md)
+- [func applyingContentHeadroom(CGFloat) -> NSColor](./applyingcontentheadroom%28_%29.md)
   Reinterpret the color by applying a new `contentHeadroom` without changing the color components. Changing the `contentHeadroom` redefines the color relative to a different peak white, changing its behavior under tone mapping and the result of calling `standardDynamicRangeColor`. The new color will have a `contentHeadroom` >= 1.0. If called on a color with a color space that does not support extended range, or does not have an equivalent extended range counterpart, this will return `self`.
 
 

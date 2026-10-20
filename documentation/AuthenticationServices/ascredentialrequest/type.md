@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The type of credential used for this request.
@@ -19,9 +20,14 @@ The type of credential used for this request.
 var type: ASCredentialRequestType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASCredentialRequestType type;
+```
+
 ## See Also
 
-- [enum ASCredentialRequestType](ascredentialrequesttype.md)
+### Identifying the requested credential type
+- [enum ASCredentialRequestType](../ascredentialrequesttype.md)
   An enumeration that identifies different types of credentials that apps and websites can request.
 
 

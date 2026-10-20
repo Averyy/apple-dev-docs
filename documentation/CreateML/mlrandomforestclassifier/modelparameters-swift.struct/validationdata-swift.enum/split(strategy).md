@@ -1,7 +1,8 @@
 # MLRandomForestClassifier.ModelParameters.ValidationData.split(strategy:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Generate validation data by splitting the training dataset. This is the default.
 
@@ -21,11 +22,12 @@ case split(strategy: MLSplitStrategy)
 
 ## See Also
 
-- [MLRandomForestClassifier.ModelParameters.ValidationData.table(_:)](mlrandomforestclassifier/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+### Specifying validation data
+- [MLRandomForestClassifier.ModelParameters.ValidationData.table(_:)](./table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLRandomForestClassifier.ModelParameters.ValidationData.dataFrame(_:)](mlrandomforestclassifier/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLRandomForestClassifier.ModelParameters.ValidationData.dataFrame(_:)](./dataframe%28_%29.md)
   Validation data provided in a DataFrame.
-- [MLRandomForestClassifier.ModelParameters.ValidationData.none](mlrandomforestclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLRandomForestClassifier.ModelParameters.ValidationData.none](./none.md)
   Do not set validation data.
 
 

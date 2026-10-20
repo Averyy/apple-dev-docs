@@ -1,58 +1,60 @@
 # Budget Orders
 
-**Framework**: Apple Ads
+**Framework**: Apple Ads  
+**Role**: API Collection
 
 #### Overview
 
-> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+> **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
 Manage your budgets.
 
 #### Overview
 
-Budget Orders are available to Apple Ads Advanced customers that are on [`monthly invoicing`](https://developer.apple.comhttps://ads.apple.com/help/billing/0031-monthly-invoicing). Budget Orders work in addition to your [`daily budget`](https://developer.apple.comhttps://ads.apple.com/app-store/help/bids-and-budget/0016-manage-budgets) to help you control costs. With a Budget Order, you can cap your total spend across campaigns in a campaign group set up through [`Apple Ads Advanced`](https://developer.apple.comhttps://ads.apple.com/).
+Budget Orders are available to Apple Ads Advanced customers that are on [monthly invoicing](https://ads.apple.com/help/billing/0031-monthly-invoicing). Budget Orders work in addition to your [daily budget](https://ads.apple.com/app-store/help/bids-and-budget/0016-manage-budgets) to help you control costs. With a Budget Order, you can cap your total spend across campaigns in a campaign group set up through [Apple Ads Advanced](https://ads.apple.com/).
 
-In the API, Line of Credit (`LOC`) invoicing details are in [`LOCInvoiceDetails`](locinvoicedetails.md). If you don’t have a billing model set up, campaigns will default to Pay as You Go (`PAYG`) and Budget Orders are not available.
+In the API, Line of Credit (`LOC`) invoicing details are in [`LOCInvoiceDetails`](./locinvoicedetails.md). If you don’t have a billing model set up, campaigns will default to Pay as You Go (`PAYG`) and Budget Orders are not available.
 
-To confirm your payment model, call [`Get User ACL`](get-user-acl.md) and check the [`PaymentModel`](paymentmodel.md) field in the [`UserAcl`](useracl.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
+To confirm your payment model, call [`Get User ACL`](./get-user-acl.md) and check the [`PaymentModel`](./paymentmodel.md) field in the [`UserAcl`](./useracl.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
 
 ## Topics
 
 ### Budget Order Endpoints
-- [Create a Budget Order](create-a-budget-order.md)
+- [Create a Budget Order](./create-a-budget-order.md)
   Creates a budget order in the context of your org ID.
-- [Update a Budget Order](update-a-budget-order.md)
+- [Update a Budget Order](./update-a-budget-order.md)
   Updates an existing budget order.
-- [Get a Budget Order](get-a-budget-order.md)
+- [Get a Budget Order](./get-a-budget-order.md)
   Fetches a specific budget order using a budget order identifier.
-- [Get all Budget Orders](get-all-budget-orders.md)
+- [Get all Budget Orders](./get-all-budget-orders.md)
   Fetches all assigned budget orders for an organization.
 ### Budget Order Request and Response Objects
-- [object BudgetOrder](budgetorder.md)
+- [object BudgetOrder](./budgetorder.md)
   The response to requests for budget order details.
-- [object BudgetOrderInfo](budgetorderinfo.md)
+- [object BudgetOrderInfo](./budgetorderinfo.md)
   The parent object response to a request for budget order details.
-- [object BudgetOrderCreate](budgetordercreate.md)
+- [object BudgetOrderCreate](./budgetordercreate.md)
   The parent object response to a request to create a budget order.
-- [object BudgetOrderUpdate](budgetorderupdate.md)
+- [object BudgetOrderUpdate](./budgetorderupdate.md)
   The parent object response to a request to update a budget order.
-- [object BudgetOrderInfoResponse](budgetorderinforesponse.md)
+- [object BudgetOrderInfoResponse](./budgetorderinforesponse.md)
   A container for the budget order response body.
-- [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
+- [object BudgetOrderInfoListResponse](./budgetorderinfolistresponse.md)
   The response details to budget order requests.
-- [object LOCInvoiceDetails](locinvoicedetails.md)
+- [object LOCInvoiceDetails](./locinvoicedetails.md)
   The response to a request to fetch details for `LOC` invoicing details.
-- [object Money](money.md)
+- [object Money](./money.md)
   The response to requests for budget amounts in campaigns.
 
 ## See Also
 
-- [Campaigns](campaigns.md)
+### Campaigns
+- [Campaigns](./campaigns.md)
   Create and manage Apple Ads campaigns.
-- [Ad Groups](ad-groups.md)
-- [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
+- [Ad Groups](./ad-groups.md)
+- [Targeting Keywords and Negative Keywords](./targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
-- [Search Geolocations](search-geolocations.md)
+- [Search Geolocations](./search-geolocations.md)
   Search for apps and geocriteria for your campaigns.
 
 

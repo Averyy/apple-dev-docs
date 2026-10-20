@@ -1,12 +1,13 @@
 # NSFindPanelAction.setFindString
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets the query string to the current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ Sets the query string to the current selection.
 case setFindString
 ```
 
+```c
+NSFindPanelActionSetFindString
+```
+
 ## See Also
 
-- [NSFindPanelAction.showFindPanel](nsfindpanelaction/showfindpanel.md)
+### Constants
+- [NSFindPanelAction.showFindPanel](./showfindpanel.md)
   Displays the find panel.
-- [NSFindPanelAction.next](nsfindpanelaction/next.md)
+- [NSFindPanelAction.next](./next.md)
   Finds the next instance of the queried text.
-- [NSFindPanelAction.previous](nsfindpanelaction/previous.md)
+- [NSFindPanelAction.previous](./previous.md)
   Finds the previous instance of the queried text.
-- [NSFindPanelAction.replaceAll](nsfindpanelaction/replaceall.md)
+- [NSFindPanelAction.replaceAll](./replaceall.md)
   Replaces all query instances within the text view.
-- [NSFindPanelAction.replace](nsfindpanelaction/replace.md)
+- [NSFindPanelAction.replace](./replace.md)
   Replaces a single query instance within the text view.
-- [NSFindPanelAction.replaceAndFind](nsfindpanelaction/replaceandfind.md)
+- [NSFindPanelAction.replaceAndFind](./replaceandfind.md)
   Replaces a single query instance and finds the next.
-- [NSFindPanelAction.replaceAllInSelection](nsfindpanelaction/replaceallinselection.md)
+- [NSFindPanelAction.replaceAllInSelection](./replaceallinselection.md)
   Replaces all query instances within the selection.
-- [NSFindPanelAction.selectAll](nsfindpanelaction/selectall.md)
+- [NSFindPanelAction.selectAll](./selectall.md)
   Selects all query instances in the text view.
-- [NSFindPanelAction.selectAllInSelection](nsfindpanelaction/selectallinselection.md)
+- [NSFindPanelAction.selectAllInSelection](./selectallinselection.md)
   Selects all query instances within the selection.
 
 

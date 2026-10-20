@@ -1,7 +1,8 @@
 # init(vertexCapacity:vertexAttributes:vertexLayouts:indexCapacity:indexType:instanceCapacity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mesh descriptor with the given vertex capacity, attributes, layouts, index capacity, index type, and instance capacity.
 

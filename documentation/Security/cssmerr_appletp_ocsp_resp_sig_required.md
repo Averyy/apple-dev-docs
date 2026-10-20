@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_OCSP_RESP_SIG_REQUIRED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_OCSP_RESP_SIG_REQUIRED: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_OCSP_RESP_SIG_REQUIRED
 ```
 
 

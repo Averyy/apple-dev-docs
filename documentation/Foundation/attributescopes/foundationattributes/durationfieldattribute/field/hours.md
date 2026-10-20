@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.DurationFieldAttribute.Field.hours
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+

@@ -1,7 +1,8 @@
 # new Map(parent, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a map you embed on a webpage and initializes it with the constructor options you choose.
 
@@ -10,7 +11,7 @@ Creates a map you embed on a webpage and initializes it with the constructor opt
 
 ## Declaration
 
-```swift
+```
 constructor(
     parent?: string | HTMLElement | null,
     options?: MapConstructorOptions,
@@ -19,7 +20,7 @@ constructor(
 
 #### Return Value
 
-A [`Map`](map.md) instance.
+A [`Map`](../map.md) instance.
 
 #### Discussion
 
@@ -42,11 +43,12 @@ const map = new mapkit.Map('mapContainer', { center: new mapkit.Coordinate(37.33
 ## Parameters
 
 - `parent`: A DOM element, or the ID of a DOM element, to use as your map’s container.
-- `options`: Options that [`MapConstructorOptions`](mapconstructoroptions.md) defines for initializing the properties of your map.
+- `options`: Options that [`MapConstructorOptions`](../mapconstructoroptions.md) defines for initializing the properties of your map.
 
 ## See Also
 
-- [interface MapConstructorOptions](mapconstructoroptions.md)
+### Creating a map
+- [interface MapConstructorOptions](../mapconstructoroptions.md)
   An object that contains options for creating a map’s features.
 
 

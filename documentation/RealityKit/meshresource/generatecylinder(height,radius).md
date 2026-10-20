@@ -1,7 +1,8 @@
 # generateCylinder(height:radius:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new cylinder mesh with the specified dimensions.
 
@@ -31,9 +32,10 @@ The cylinder is centered at the local origin with its axis aligned along the y-a
 
 ## See Also
 
-- [static func generateSphere(radius: Float) -> MeshResource](meshresource/generatesphere(radius:).md)
+### Creating a primitive shape
+- [static func generateSphere(radius: Float) -> MeshResource](./generatesphere%28radius%29.md)
   Creates a new sphere mesh with the specified radius.
-- [static func generateCone(height: Float, radius: Float) -> MeshResource](meshresource/generatecone(height:radius:).md)
+- [static func generateCone(height: Float, radius: Float) -> MeshResource](./generatecone%28height,radius%29.md)
   Creates a new cone mesh with the specified dimensions.
 
 

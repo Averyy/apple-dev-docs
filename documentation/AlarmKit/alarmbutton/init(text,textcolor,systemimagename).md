@@ -1,7 +1,8 @@
 # init(text:textColor:systemImageName:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alarm button.
 
@@ -24,11 +25,12 @@ init(text: LocalizedStringResource, textColor: Color, systemImageName: String)
 
 ## See Also
 
-- [var systemImageName: String](alarmbutton/systemimagename.md)
+### Creating a button
+- [var systemImageName: String](./systemimagename.md)
   The name of the icon you use on the button.
-- [var textColor: Color](alarmbutton/textcolor.md)
+- [var textColor: Color](./textcolor.md)
   The color for the text on the button.
-- [var text: LocalizedStringResource](alarmbutton/text.md)
+- [var text: LocalizedStringResource](./text.md)
   Text to show in a label on the button.
 
 

@@ -1,23 +1,28 @@
 # MIDICIInitiatiorMUID
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The unique MIDI-CI negotiation identifier to use for a responder connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias MIDICIInitiatiorMUID = NSNumber
+```
+
+```c
+typedef NSNumber * MIDICIInitiatiorMUID;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ As required by the MIDI-CI specification, this value is a randomly assigned 28-b
 
 ## See Also
 
-- [var initiators: [MIDICIInitiatiorMUID]](midiciresponder/initiators.md)
+### Inspecting a Responder
+- [var initiators: [MIDICIInitiatiorMUID]](./midiciresponder/initiators.md)
   An array of initiators.
-- [struct MIDICIDeviceIdentification](midicideviceidentification.md)
+- [struct MIDICIDeviceIdentification](./midicideviceidentification.md)
   A structure that describes a MIDI-CI device.
-- [class MIDICIDeviceInfo](midicideviceinfo.md)
+- [class MIDICIDeviceInfo](./midicideviceinfo.md)
   An object that provides basic information about a MIDI-CI device.
-- [var deviceInfo: MIDICIDeviceInfo](midiciresponder/deviceinfo.md)
+- [var deviceInfo: MIDICIDeviceInfo](./midiciresponder/deviceinfo.md)
   The MIDI-CI device’s information.
 
 

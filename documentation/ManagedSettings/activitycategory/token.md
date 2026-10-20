@@ -1,7 +1,8 @@
 # token
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque representation of a category of activities.
 
@@ -18,7 +19,8 @@ let token: ActivityCategoryToken?
 
 ## See Also
 
-- [let localizedDisplayName: String?](activitycategory/localizeddisplayname.md)
+### Accessing category identifiers
+- [let localizedDisplayName: String?](./localizeddisplayname.md)
   A localized display name for the category.
 
 

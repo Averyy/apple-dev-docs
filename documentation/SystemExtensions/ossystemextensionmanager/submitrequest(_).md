@@ -1,7 +1,8 @@
 # submitRequest(_:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Submits a system extension request to the manager.
 
@@ -14,13 +15,18 @@ Submits a system extension request to the manager.
 func submitRequest(_ request: OSSystemExtensionRequest)
 ```
 
+```objc
+- (void) submitRequest:(OSSystemExtensionRequest *) request;
+```
+
 ## Parameters
 
 - `request`: The request to process.
 
 ## See Also
 
-- [class OSSystemExtensionRequest](ossystemextensionrequest.md)
+### Submitting Requests
+- [class OSSystemExtensionRequest](../ossystemextensionrequest.md)
   A request to activate or deactivate a system extension.
 
 

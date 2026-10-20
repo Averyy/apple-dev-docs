@@ -1,7 +1,8 @@
 # initializeElement(at:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the element at `index` to the given value.
 
@@ -19,6 +20,8 @@ Initializes the element at `index` to the given value.
 ```swift
 func initializeElement<Element>(at index: Int, to value: Element) where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Discussion
 

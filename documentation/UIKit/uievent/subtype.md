@@ -1,7 +1,8 @@
 # subtype
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the subtype of the event.
 
@@ -9,7 +10,7 @@ Returns the subtype of the event.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Returns the subtype of the event.
 var subtype: UIEvent.EventSubtype { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIEventSubtype subtype;
+```
+
 #### Discussion
 
-The [`UIEvent.EventSubtype`](uievent/eventsubtype.md) constant returned by this property indicates the subtype of the event in relation to the general type, which you can retrieve from the [`type`](uievent/type.md) property.
+The [`UIEvent.EventSubtype`](./eventsubtype.md) constant returned by this property indicates the subtype of the event in relation to the general type, which you can retrieve from the [`type`](./type.md) property.
 
 ## See Also
 
-- [var type: UIEvent.EventType](uievent/type.md)
+### Getting the event type
+- [var type: UIEvent.EventType](./type.md)
   Returns the type of the event.
-- [UIEvent.EventType](uievent/eventtype.md)
+- [UIEvent.EventType](./eventtype.md)
   Constants that specify the general type of an event.
-- [UIEvent.EventSubtype](uievent/eventsubtype.md)
+- [UIEvent.EventSubtype](./eventsubtype.md)
   Constants that specify the subtype of the event in relation to its general type.
 
 

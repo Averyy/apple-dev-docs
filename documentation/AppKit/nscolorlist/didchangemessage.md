@@ -1,7 +1,8 @@
 # NSColorList.DidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct DidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(colorList: NSColorList)](nscolorlist/didchangemessage/init(colorlist:).md)
+- [init(colorList: NSColorList)](./didchangemessage/init%28colorlist%29.md)
 ### Instance Properties
-- [var colorList: NSColorList](nscolorlist/didchangemessage/colorlist.md)
+- [var colorList: NSColorList](./didchangemessage/colorlist.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

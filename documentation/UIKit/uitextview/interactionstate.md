@@ -1,7 +1,8 @@
 # interactionState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var interactionState: Any { get set }
+```
+
+```objc
+@property (nonatomic, copy) id interactionState;
 ```
 
 

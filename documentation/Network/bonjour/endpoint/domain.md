@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bonjour domain of the endpoint.
 

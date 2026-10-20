@@ -1,7 +1,8 @@
 # paddingStyle
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines what kind of padding graph applies to the operation.
 
@@ -17,6 +18,10 @@ Defines what kind of padding graph applies to the operation.
 
 ```swift
 var paddingStyle: MPSGraphPaddingStyle { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphPaddingStyle paddingStyle;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment that performs network address translation on the guest system’s network packets.
 
@@ -12,6 +13,10 @@ Creates an attachment that performs network address translation on the guest sys
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

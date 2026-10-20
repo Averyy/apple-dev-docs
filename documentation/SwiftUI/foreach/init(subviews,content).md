@@ -1,7 +1,8 @@
 # init(subviews:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 
@@ -20,6 +21,8 @@ Creates an instance that uniquely identifies and creates views across updates ba
 init<V>(subviews view: V, @ContentBuilder content: @escaping (Subview) -> Content) where Data == ForEachSubviewCollection<Content>, ID == Subview.ID, Content : View, V : View
 ```
 
+Available when `Data` conforms to `RandomAccessCollection` and `ID` conforms to `Hashable`.
+
 #### Discussion
 
 Subviews are proxies to the resolved view they represent, meaning that modifiers applied to the original view will be applied before modifiers applied to the subview, and the view is resolved using the environment of its container, *not* the environment of the its subview proxy. Additionally, because subviews must represent a single leaf view, or container, a subview may represent a view after the application of styles. As such, attempting to apply a style to it may have no effect.
@@ -31,13 +34,14 @@ Subviews are proxies to the resolved view they represent, meaning that modifiers
 
 ## See Also
 
-- [init(Data)](foreach/init(_:).md)
+### Creating a collection
+- [init(Data)](./init%28_%29.md)
   Creates an instance that uniquely identifies and creates table rows across updates based on the identity of the underlying data.
-- [init(_:content:)](foreach/init(_:content:).md)
+- [init(_:content:)](./init%28_,content%29.md)
   Creates an instance that uniquely identifies and creates map content across updates based on the identity of the underlying data.
-- [init(_:id:content:)](foreach/init(_:id:content:).md)
+- [init(_:id:content:)](./init%28_,id,content%29.md)
   Creates an instance that uniquely identifies and creates map content across updates based on the provided key path to the underlying data’s identifier.
-- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](foreach/init(sections:content:).md)
+- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](./init%28sections,content%29.md)
   Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
 
 

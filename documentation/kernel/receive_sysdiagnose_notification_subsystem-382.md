@@ -1,14 +1,15 @@
 # receive_sysdiagnose_notification_subsystem
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 const struct receive_sysdiagnose_notification_subsystem receive_sysdiagnose_notification_subsystem;
 ```
 

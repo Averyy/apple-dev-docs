@@ -1,7 +1,8 @@
 # UserMessageHandler
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface UserMessageHandler
 ```
 
 ## Topics
 
 ### Instance Methods
-- [postMessage](usermessagehandler/1631164-postmessage.md)
+- [postMessage](./usermessagehandler/api-1631164-postmessage.md)
 
 
 ---

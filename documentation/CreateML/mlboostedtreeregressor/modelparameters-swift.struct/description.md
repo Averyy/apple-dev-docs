@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the model parameters for a boosted tree regressor.
 
@@ -21,9 +22,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlboostedtreeregressor/modelparameters-swift.struct/debugdescription.md)
+### Describing parameters
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the model parameters for a boosted tree regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlboostedtreeregressor/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the model parameters for a boosted tree regressor shown in a playground.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new, reusable property list decoder.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [func decode<T>(T.Type, from: Data) throws -> T](propertylistdecoder/decode(_:from:).md)
+### Decoding
+- [func decode<T>(T.Type, from: Data) throws -> T](./decode%28_,from%29.md)
   Returns a value of the specified type by decoding a property list using the default property list format.
 
 

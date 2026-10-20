@@ -1,18 +1,21 @@
 # SKProduct.PeriodUnit.year
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interval lasting one year.
 
 **Availability**:
-- iOS 11.2+
-- iPadOS 11.2+
-- Mac Catalyst 13.1+
-- macOS 10.13.2+
-- tvOS 11.2+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 11.2+ - Deprecated in 18.0
+- iPadOS 11.2+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.13.2+ - Deprecated in 15.0
+- tvOS 11.2+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Product.SubscriptionPeriod.Unit.
 
 ## Declaration
 
@@ -20,13 +23,18 @@ An interval lasting one year.
 case year
 ```
 
+```c
+SKProductPeriodUnitYear
+```
+
 ## See Also
 
-- [SKProduct.PeriodUnit.day](skproduct/periodunit/day.md)
+### Period Units
+- [SKProduct.PeriodUnit.day](./day.md)
   An interval lasting one day.
-- [SKProduct.PeriodUnit.month](skproduct/periodunit/month.md)
+- [SKProduct.PeriodUnit.month](./month.md)
   An interval lasting one month.
-- [SKProduct.PeriodUnit.week](skproduct/periodunit/week.md)
+- [SKProduct.PeriodUnit.week](./week.md)
   An interval lasting one week.
 
 

@@ -1,7 +1,8 @@
 # init(configuration:renderContext:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a renderer, asynchronously compiling all required GPU resources.
 
@@ -20,7 +21,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if GPU resource compilation fails.
+> **Throws**: An error if GPU resource compilation fails.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ nonisolated
 
 ## See Also
 
-- [LowLevelRenderer.Configuration](lowlevelrenderer/configuration.md)
+### Creating a renderer
+- [LowLevelRenderer.Configuration](./configuration.md)
   The configuration for a renderer.
 
 

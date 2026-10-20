@@ -1,7 +1,8 @@
 # automaticallyLayoutControls(for:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Automatically lays out the provided control labels, creating them if needed.
 
@@ -16,13 +17,18 @@ Automatically lays out the provided control labels, creating them if needed.
 func automaticallyLayoutControls(for labels: [TCControlLabel])
 ```
 
+```objc
+- (void) automaticallyLayoutControlsForLabels:(NSArray<TCControlLabel *> *) labels;
+```
+
 ## Parameters
 
 - `labels`: An array of `TCControlLabel` objects to be laid out.
 
 ## See Also
 
-- [func render(using: any MTLRenderCommandEncoder)](tctouchcontroller/render(using:).md)
+### Handling layout updates
+- [func render(using: any MTLRenderCommandEncoder)](./render%28using%29.md)
   Renders the touch controls using the provided Metal render command encoder.
 
 

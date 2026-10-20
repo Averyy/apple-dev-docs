@@ -1,7 +1,8 @@
 # webView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web view that contains this frame and the containing webpage.
 
@@ -18,13 +19,18 @@ The web view that contains this frame and the containing webpage.
 weak var webView: WKWebView? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) WKWebView * webView;
+```
+
 ## See Also
 
-- [var isMainFrame: Bool](wkframeinfo/ismainframe.md)
+### Inspecting frame information
+- [var isMainFrame: Bool](./ismainframe.md)
   A Boolean value indicating whether the frame is the web site’s main frame or a subframe.
-- [var request: URLRequest](wkframeinfo/request.md)
+- [var request: URLRequest](./request.md)
   The frame’s current request.
-- [var securityOrigin: WKSecurityOrigin](wkframeinfo/securityorigin.md)
+- [var securityOrigin: WKSecurityOrigin](./securityorigin.md)
   The frame’s security origin.
 
 

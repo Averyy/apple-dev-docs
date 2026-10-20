@@ -1,7 +1,8 @@
 # trimPrefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes `prefix` from the start of the collection.
 
@@ -19,6 +20,8 @@ Removes `prefix` from the start of the collection.
 ```swift
 mutating func trimPrefix<Prefix>(_ prefix: Prefix) where Prefix : Sequence, Self.Element == Prefix.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 ## Parameters
 

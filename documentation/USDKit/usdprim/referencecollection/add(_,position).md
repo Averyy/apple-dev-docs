@@ -1,7 +1,8 @@
 # add(_:position:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an existing reference arc to the prim.
 
@@ -21,7 +22,7 @@ func add(_ reference: USDPrim.Reference, position: USDPrim.ListPosition = .backO
 
 #### Discussion
 
-> **Note**: An error if the reference cannot be added.
+> **Throws**: An error if the reference cannot be added.
 
 ## Parameters
 

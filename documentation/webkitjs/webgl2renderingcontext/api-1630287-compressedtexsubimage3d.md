@@ -1,7 +1,8 @@
 # compressedTexSubImage3D
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void compressedTexSubImage3D(
     GLenum target, 
     GLint level, 

@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The distance of each rigid body from the effect origin.
 

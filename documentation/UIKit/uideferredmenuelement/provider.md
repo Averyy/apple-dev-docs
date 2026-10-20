@@ -1,7 +1,8 @@
 # UIDeferredMenuElement.Provider
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 class Provider
 ```
 
+```objc
+@interface UIDeferredMenuElementProvider : NSObject
+```
+
 #### Overview
 
 Represents an element provider for a deferred menu element. When the containing menu for a responder-based deferred element is presented, the system asks the responder chain for one of these element providers for the deferred element.
@@ -24,42 +29,43 @@ Represents an element provider for a deferred menu element. When the containing 
 ## Topics
 
 ### Initializers
-- [convenience init((([UIMenuElement]) -> Void) -> Void)](uideferredmenuelement/provider/init(_:).md)
+- [convenience init((([UIMenuElement]) -> Void) -> Void)](./provider/init%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+### Menu elements and keyboard shortcuts
+- [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [Adopting menus and UIActions in your user interface](adopting-menus-and-uiactions-in-your-user-interface.md)
+- [Adopting menus and UIActions in your user interface](../adopting-menus-and-uiactions-in-your-user-interface.md)
   Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
-- [class UIMenuElement](uimenuelement.md)
+- [class UIMenuElement](../uimenuelement.md)
   An object representing a menu, action, or command.
-- [class UIAction](uiaction.md)
+- [class UIAction](../uiaction.md)
   A menu element that performs its action in a closure.
-- [class UICommand](uicommand.md)
+- [class UICommand](../uicommand.md)
   A menu element that performs its action in a selector.
-- [class UIKeyCommand](uikeycommand.md)
+- [class UIKeyCommand](../uikeycommand.md)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
-- [class UIDeferredMenuElement](uideferredmenuelement.md)
+- [class UIDeferredMenuElement](../uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
-- [UIMenuElement.Attributes](uimenuelement/attributes.md)
+- [UIMenuElement.Attributes](../uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
-- [UIMenuElement.State](uimenuelement/state.md)
+- [UIMenuElement.State](../uimenuelement/state.md)
   Constants that indicate the state of an action- or command-based menu element.
-- [protocol UIMenuLeaf](uimenuleaf.md)
+- [protocol UIMenuLeaf](../uimenuleaf.md)
   An interface for an object that represents a menu element without child elements.
 
 

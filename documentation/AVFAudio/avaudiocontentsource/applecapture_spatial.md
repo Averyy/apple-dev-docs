@@ -1,7 +1,8 @@
 # AVAudioContentSource.appleCapture_Spatial
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,13 +19,18 @@
 case appleCapture_Spatial
 ```
 
+```c
+AVAudioContentSource_AppleCapture_Spatial
+```
+
 ## See Also
 
-- [AVAudioContentSource.appleCapture_Spatial_Enhanced](avaudiocontentsource/applecapture_spatial_enhanced.md)
-- [AVAudioContentSource.appleCapture_Traditional](avaudiocontentsource/applecapture_traditional.md)
-- [AVAudioContentSource.capture_Spatial_Enhanced](avaudiocontentsource/capture_spatial_enhanced.md)
-- [AVAudioContentSource.capture_Spatial](avaudiocontentsource/capture_spatial.md)
-- [AVAudioContentSource.capture_Traditional](avaudiocontentsource/capture_traditional.md)
+### Identifying captured content
+- [AVAudioContentSource.appleCapture_Spatial_Enhanced](./applecapture_spatial_enhanced.md)
+- [AVAudioContentSource.appleCapture_Traditional](./applecapture_traditional.md)
+- [AVAudioContentSource.capture_Spatial_Enhanced](./capture_spatial_enhanced.md)
+- [AVAudioContentSource.capture_Spatial](./capture_spatial.md)
+- [AVAudioContentSource.capture_Traditional](./capture_traditional.md)
 
 
 ---

@@ -1,43 +1,47 @@
 # MapKitEventTarget
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that defines the interface for objects that can dispatch events.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.0+ - Deprecated in 6.0
+
+> **Deprecated**: Removed in MapKit JS 6.0.0. Use standard `EventTarget` instead.
 
 ## Declaration
 
-```swift
+```
 class MapKitEventTarget
 ```
 
 ## Mentions
 
-- [MapKit JS 6](mapkit-js-6.md)
-- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+- [MapKit JS 6](./mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
 #### Discussion
 
-[`MapKitEventTarget`](mapkiteventtarget.md) is the base class for all objects that can dispatch events. [`MapKitEventTarget`](mapkiteventtarget.md) offers an interface that’s similar to the DOM `EventTarget` interface, but with different semantics. Don’t mix them.
+[`MapKitEventTarget`](./mapkiteventtarget.md) is the base class for all objects that can dispatch events. [`MapKitEventTarget`](./mapkiteventtarget.md) offers an interface that’s similar to the DOM `EventTarget` interface, but with different semantics. Don’t mix them.
 
 ## Topics
 
 ### Instance Methods
-- [addEventListener(eventType, listener, thisObject)](mapkiteventtarget/addeventlistener.md)
+- [addEventListener(eventType, listener, thisObject)](./mapkiteventtarget/addeventlistener.md)
   Subscribes a listener function to an event type.
-- [dispatchEvent(event)](mapkiteventtarget/dispatchevent.md)
+- [dispatchEvent(event)](./mapkiteventtarget/dispatchevent.md)
   Dispatches an event to registered listeners.
-- [removeEventListener(eventType, listener, thisObject)](mapkiteventtarget/removeeventlistener.md)
+- [removeEventListener(eventType, listener, thisObject)](./mapkiteventtarget/removeeventlistener.md)
   Unsubscribes a listener function from an event type.
 
 ## See Also
 
-- [class MapKitEvent](mapkitevent.md)
+### Deprecated
+- [class MapKitEvent](./mapkitevent.md)
   A generic MapKit JS event object.
-- [type MapKitEventListener](mapkiteventlistener.md)
+- [type MapKitEventListener](./mapkiteventlistener.md)
   A type alias that represents a function or an object that receives a MapKit event.
 
 

@@ -1,7 +1,8 @@
 # TKTokenPasswordAuthOperation
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A password-based authentication operation.
 
@@ -20,35 +21,40 @@ A password-based authentication operation.
 class TKTokenPasswordAuthOperation
 ```
 
+```objc
+@interface TKTokenPasswordAuthOperation : TKTokenAuthOperation
+```
+
 ## Topics
 
 ### Managing the Password
-- [var password: String?](tktokenpasswordauthoperation/password.md)
+- [var password: String?](./tktokenpasswordauthoperation/password.md)
   The password to be filled in when the `finishWithError:` is called.
 
 ## Relationships
 
 ### Inherits From
-- [TKTokenAuthOperation](tktokenauthoperation.md)
+- [TKTokenAuthOperation](./tktokenauthoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func tokenSession(TKTokenSession, beginAuthFor: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation](tktokensessiondelegate/tokensession(_:beginauthfor:constraint:).md)
+### Authenticating
+- [func tokenSession(TKTokenSession, beginAuthFor: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation](./tktokensessiondelegate/tokensession%28_,beginauthfor,constraint%29.md)
   Tells the delegate that authentication has begun for the specified operation and constraint.
-- [typealias TKTokenOperationConstraint](tktokenoperationconstraint.md)
+- [typealias TKTokenOperationConstraint](./tktokenoperationconstraint.md)
   A token’s authentication constraint for a specific operation.
-- [class TKTokenAuthOperation](tktokenauthoperation.md)
+- [class TKTokenAuthOperation](./tktokenauthoperation.md)
   An authentication operation for a cryptographic token.
-- [class TKTokenSmartCardPINAuthOperation](tktokensmartcardpinauthoperation.md)
+- [class TKTokenSmartCardPINAuthOperation](./tktokensmartcardpinauthoperation.md)
   A Smart Card PIN authentication operation.
 
 

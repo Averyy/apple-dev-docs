@@ -1,7 +1,8 @@
 # Bool.BooleanLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a Boolean literal, such as `Bool`.
 

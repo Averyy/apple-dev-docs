@@ -1,7 +1,8 @@
 # channel_type
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOReportChannelType channel_type;
 ```
 

@@ -1,12 +1,15 @@
 # NSEvent.EventType.endGesture
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that marks the end of a gesture.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 27.0
+
+> **Deprecated**: NSEventTypeEndGesture is no longer delivered. Use the phase property on NSEvent or NSGestureRecognizer instead.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ An event that marks the end of a gesture.
 case endGesture
 ```
 
+```c
+NSEventTypeEndGesture
+```
+
 #### Discussion
 
-Note that apps that link against macOS 10.11 and later no longer receive this event type. If you need to access the phases of a specific gesture, you can implement the responder for that gesture and examine its [`phase`](nsevent/phase-swift.property.md) property instead.
+Note that apps that link against macOS 10.11 and later no longer receive this event type. If you need to access the phases of a specific gesture, you can implement the responder for that gesture and examine its [`phase`](../phase-swift.property.md) property instead.
 
 ## See Also
 
-- [NSEvent.EventType.beginGesture](nsevent/eventtype/begingesture.md)
+### Deprecated symbols
+- [NSEvent.EventType.beginGesture](./begingesture.md)
   An event marking the beginning of a gesture.
 
 

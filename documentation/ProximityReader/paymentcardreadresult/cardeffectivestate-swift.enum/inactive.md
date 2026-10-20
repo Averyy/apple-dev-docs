@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardEffectiveState.inactive
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card is inactive.
 

@@ -1,21 +1,23 @@
 # hypotl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double hypotl(long double, long double);
 ```
 
 ## See Also
 
-- [hypot](1557147-hypot.md)
-- [hypotf](1557254-hypotf.md)
+### Hypotenuse
+- [hypot](./api-1557147-hypot.md)
+- [hypotf](./api-1557254-hypotf.md)
 
 
 ---

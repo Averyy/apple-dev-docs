@@ -1,7 +1,8 @@
 # first
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first of two gestures that can happen simultaneously.
 
@@ -22,9 +23,10 @@ var first: First
 
 ## See Also
 
-- [init(First, Second)](simultaneousgesture/init(_:_:).md)
+### Creating the gesture
+- [init(First, Second)](./init%28_,_%29.md)
   Creates a gesture with two gestures that can receive updates or succeed independently of each other.
-- [var second: Second](simultaneousgesture/second.md)
+- [var second: Second](./second.md)
   The second of two gestures that can happen simultaneously.
 
 

@@ -1,10 +1,11 @@
 # CAClockPropertyID
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,41 +13,46 @@
 enum CAClockPropertyID
 ```
 
+```c
+enum CAClockPropertyID : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [CAClockPropertyID.internalTimebase](caclockpropertyid/internaltimebase.md)
-- [CAClockPropertyID.midiClockDestinations](caclockpropertyid/midiclockdestinations.md)
-- [CAClockPropertyID.mtcDestinations](caclockpropertyid/mtcdestinations.md)
-- [CAClockPropertyID.mtcFreewheelTime](caclockpropertyid/mtcfreewheeltime.md)
-- [CAClockPropertyID.meterTrack](caclockpropertyid/metertrack.md)
-- [CAClockPropertyID.name](caclockpropertyid/name.md)
-- [CAClockPropertyID.smpteFormat](caclockpropertyid/smpteformat.md)
-- [CAClockPropertyID.smpteOffset](caclockpropertyid/smpteoffset.md)
-- [CAClockPropertyID.sendMIDISPP](caclockpropertyid/sendmidispp.md)
-- [CAClockPropertyID.syncMode](caclockpropertyid/syncmode.md)
-- [CAClockPropertyID.syncSource](caclockpropertyid/syncsource.md)
-- [CAClockPropertyID.tempoMap](caclockpropertyid/tempomap.md)
-- [CAClockPropertyID.timebaseSource](caclockpropertyid/timebasesource.md)
+- [CAClockPropertyID.internalTimebase](./caclockpropertyid/internaltimebase.md)
+- [CAClockPropertyID.midiClockDestinations](./caclockpropertyid/midiclockdestinations.md)
+- [CAClockPropertyID.mtcDestinations](./caclockpropertyid/mtcdestinations.md)
+- [CAClockPropertyID.mtcFreewheelTime](./caclockpropertyid/mtcfreewheeltime.md)
+- [CAClockPropertyID.meterTrack](./caclockpropertyid/metertrack.md)
+- [CAClockPropertyID.name](./caclockpropertyid/name.md)
+- [CAClockPropertyID.smpteFormat](./caclockpropertyid/smpteformat.md)
+- [CAClockPropertyID.smpteOffset](./caclockpropertyid/smpteoffset.md)
+- [CAClockPropertyID.sendMIDISPP](./caclockpropertyid/sendmidispp.md)
+- [CAClockPropertyID.syncMode](./caclockpropertyid/syncmode.md)
+- [CAClockPropertyID.syncSource](./caclockpropertyid/syncsource.md)
+- [CAClockPropertyID.tempoMap](./caclockpropertyid/tempomap.md)
+- [CAClockPropertyID.timebaseSource](./caclockpropertyid/timebasesource.md)
 ### Initializers
-- [init?(rawValue: UInt32)](caclockpropertyid/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./caclockpropertyid/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CAClockGetProperty(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](caclockgetproperty(_:_:_:_:).md)
-- [func CAClockGetPropertyInfo(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](caclockgetpropertyinfo(_:_:_:_:).md)
-- [func CAClockSetProperty(CAClockRef, CAClockPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](caclocksetproperty(_:_:_:_:).md)
-- [enum CAClockSyncMode](caclocksyncmode.md)
+### Accessing Clock Properties
+- [func CAClockGetProperty(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./caclockgetproperty%28_,_,_,_%29.md)
+- [func CAClockGetPropertyInfo(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./caclockgetpropertyinfo%28_,_,_,_%29.md)
+- [func CAClockSetProperty(CAClockRef, CAClockPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./caclocksetproperty%28_,_,_,_%29.md)
+- [enum CAClockSyncMode](./caclocksyncmode.md)
 
 
 ---

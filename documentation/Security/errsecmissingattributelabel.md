@@ -1,7 +1,8 @@
 # errSecMissingAttributeLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A label attribute is missing.
 
@@ -18,6 +19,10 @@ A label attribute is missing.
 
 ```swift
 var errSecMissingAttributeLabel: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeLabel
 ```
 
 

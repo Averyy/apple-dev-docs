@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an evaluator with the given evaluation closure.
 
@@ -32,7 +33,7 @@ let evaluator = Evaluator<ModelSample<String>> { sample, subject in
 
 ## Parameters
 
-- `evaluate`: A closure that receives the input and subject, and returns a [`Metric`](metric.md) with a result value.
+- `evaluate`: A closure that receives the input and subject, and returns a [`Metric`](../metric.md) with a result value.
 
 
 ---

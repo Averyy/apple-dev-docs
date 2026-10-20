@@ -7,11 +7,11 @@ Specify computer platforms.
 ## Topics
 
 ### Constants
-- [var cmMacintosh: Int](cmmacintosh.md)
-- [var cmMicrosoft: Int](cmmicrosoft.md)
-- [var cmSiliconGraphics: Int](cmsilicongraphics.md)
-- [var cmSolaris: Int](cmsolaris.md)
-- [var cmTaligent: Int](cmtaligent.md)
+- [var cmMacintosh: Int](../cmmacintosh.md)
+- [var cmMicrosoft: Int](../cmmicrosoft.md)
+- [var cmSiliconGraphics: Int](../cmsilicongraphics.md)
+- [var cmSolaris: Int](../cmsolaris.md)
+- [var cmTaligent: Int](../cmtaligent.md)
 
 
 ---

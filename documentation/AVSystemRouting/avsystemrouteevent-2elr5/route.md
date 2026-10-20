@@ -1,7 +1,8 @@
 # route
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system route for the event.
 
@@ -18,7 +19,7 @@ final var route: AVSystemRoute { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 
 ---

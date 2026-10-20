@@ -1,7 +1,8 @@
 # joinContractions
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Contractions will be returned as one token.
 
@@ -20,17 +21,22 @@ Contractions will be returned as one token.
 static var joinContractions: NLTagger.Options { get }
 ```
 
+```c
+NLTaggerJoinContractions
+```
+
 ## See Also
 
-- [static var omitWords: NLTagger.Options](nltagger/options/omitwords.md)
-  Omit tokens of type [`word`](nltag/word.md) (items considered to be words).
-- [static var omitPunctuation: NLTagger.Options](nltagger/options/omitpunctuation.md)
-  Omit tokens of type [`punctuation`](nltag/punctuation.md) (all punctuation).
-- [static var omitWhitespace: NLTagger.Options](nltagger/options/omitwhitespace.md)
-  Omit tokens of type [`whitespace`](nltag/whitespace.md) (whitespace of all sorts).
-- [static var omitOther: NLTagger.Options](nltagger/options/omitother.md)
-  Omit tokens of type [`other`](nltag/other.md) (non-linguistic items, such as symbols).
-- [static var joinNames: NLTagger.Options](nltagger/options/joinnames.md)
+### Constants
+- [static var omitWords: NLTagger.Options](./omitwords.md)
+  Omit tokens of type [`word`](../../nltag/word.md) (items considered to be words).
+- [static var omitPunctuation: NLTagger.Options](./omitpunctuation.md)
+  Omit tokens of type [`punctuation`](../../nltag/punctuation.md) (all punctuation).
+- [static var omitWhitespace: NLTagger.Options](./omitwhitespace.md)
+  Omit tokens of type [`whitespace`](../../nltag/whitespace.md) (whitespace of all sorts).
+- [static var omitOther: NLTagger.Options](./omitother.md)
+  Omit tokens of type [`other`](../../nltag/other.md) (non-linguistic items, such as symbols).
+- [static var joinNames: NLTagger.Options](./joinnames.md)
   Typically, multiple-word names will be returned as multiple tokens, following the standard tokenization practice of the tagger.
 
 

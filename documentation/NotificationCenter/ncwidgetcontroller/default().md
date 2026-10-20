@@ -1,15 +1,22 @@
 # default()
 
 **Framework**: Notification Center  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
 ```swift
 class func `default`() -> NCWidgetController
+```
+
+```objc
++ (NCWidgetController *) defaultWidgetController;
 ```
 
 

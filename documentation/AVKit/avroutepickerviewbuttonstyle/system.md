@@ -1,7 +1,8 @@
 # AVRoutePickerViewButtonStyle.system
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A system-defined button style.
 
@@ -14,11 +15,16 @@ A system-defined button style.
 case system
 ```
 
+```c
+AVRoutePickerViewButtonStyleSystem
+```
+
 ## See Also
 
-- [AVRoutePickerViewButtonStyle.custom](avroutepickerviewbuttonstyle/custom.md)
+### Button styles
+- [AVRoutePickerViewButtonStyle.custom](./custom.md)
   A custom button style.
-- [AVRoutePickerViewButtonStyle.plain](avroutepickerviewbuttonstyle/plain.md)
+- [AVRoutePickerViewButtonStyle.plain](./plain.md)
   A plain button style.
 
 

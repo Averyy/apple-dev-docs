@@ -1,7 +1,8 @@
 # featureSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of features per sample.
 
@@ -22,17 +23,18 @@ var featureSize: Int { get }
 
 ## See Also
 
-- [var annotationSize: Int](lineartimeseriesforecaster/model/annotationsize.md)
+### Inspecting the model
+- [var annotationSize: Int](./annotationsize.md)
   The number of annotations per sample.
-- [var bias: MLShapedArray<Scalar>?](lineartimeseriesforecaster/model/bias.md)
+- [var bias: MLShapedArray<Scalar>?](./bias.md)
   The bias coefficients.
-- [var forecastWindowSize: Int](lineartimeseriesforecaster/model/forecastwindowsize.md)
+- [var forecastWindowSize: Int](./forecastwindowsize.md)
   The number of prediction samples.
-- [var inputWindowSize: Int](lineartimeseriesforecaster/model/inputwindowsize.md)
+- [var inputWindowSize: Int](./inputwindowsize.md)
   The number of input samples.
-- [var stride: Int](lineartimeseriesforecaster/model/stride.md)
+- [var stride: Int](./stride.md)
   The number of samples between windows.
-- [var weight: MLShapedArray<Scalar>](lineartimeseriesforecaster/model/weight.md)
+- [var weight: MLShapedArray<Scalar>](./weight.md)
   The linear coefficients.
 
 

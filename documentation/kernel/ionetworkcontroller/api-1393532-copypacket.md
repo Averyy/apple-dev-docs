@@ -1,14 +1,15 @@
 # copyPacket
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual mbuf_t copyPacket(const mbuf_t m, UInt32 size);
 ```
 

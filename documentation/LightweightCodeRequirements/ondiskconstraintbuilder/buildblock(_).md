@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds flat array from a variadic set of arrays
 

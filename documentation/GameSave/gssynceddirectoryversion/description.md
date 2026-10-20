@@ -1,7 +1,8 @@
 # description
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var description: String { get }
+```
+
+```objc
+@property (readonly, nonnull) NSString * description;
 ```
 
 

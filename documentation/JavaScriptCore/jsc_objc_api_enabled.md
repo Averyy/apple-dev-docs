@@ -1,7 +1,8 @@
 # JSC_OBJC_API_ENABLED
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var JSC_OBJC_API_ENABLED: Int32 { get }
+```
+
+```c
+#define JSC_OBJC_API_ENABLED
 ```
 
 

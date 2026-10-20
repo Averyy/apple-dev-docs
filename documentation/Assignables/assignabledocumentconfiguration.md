@@ -1,7 +1,8 @@
 # AssignableDocumentConfiguration
 
 **Framework**: Assignables  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that specifies the options for an assignable document.
 
@@ -9,7 +10,7 @@ A type that specifies the options for an assignable document.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,26 +21,27 @@ protocol AssignableDocumentConfiguration : Hashable
 ## Topics
 
 ### Configuring a document
-- [var maxScore: Double?](assignabledocumentconfiguration/maxscore.md)
+- [var maxScore: Double?](./assignabledocumentconfiguration/maxscore.md)
   An optional maximum score for this assessment. If `nil`, this value will be synthesized from the question data and associated annotations.
-- [var correctScoreMarkType: AssignableDocument.CorrectMarkType](assignabledocumentconfiguration/correctscoremarktype.md)
+- [var correctScoreMarkType: AssignableDocument.CorrectMarkType](./assignabledocumentconfiguration/correctscoremarktype.md)
   The glyph to use for a correct score mark in the assessment.
-- [var pointsPerBonusScoreMark: Double](assignabledocumentconfiguration/pointsperbonusscoremark.md)
+- [var pointsPerBonusScoreMark: Double](./assignabledocumentconfiguration/pointsperbonusscoremark.md)
   The value of each bonus score mark in the assessment.
-- [var pointsPerCorrectScoreMark: Double](assignabledocumentconfiguration/pointspercorrectscoremark.md)
+- [var pointsPerCorrectScoreMark: Double](./assignabledocumentconfiguration/pointspercorrectscoremark.md)
   The value of each correct score mark in the assessment.
-- [var pointsPerIncorrectScoreMark: Double](assignabledocumentconfiguration/pointsperincorrectscoremark.md)
+- [var pointsPerIncorrectScoreMark: Double](./assignabledocumentconfiguration/pointsperincorrectscoremark.md)
   The value of each incorrect score mark in the assessment.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol AssignedWorkDocumentConfiguration](assignedworkdocumentconfiguration.md)
+### Configuration
+- [protocol AssignedWorkDocumentConfiguration](./assignedworkdocumentconfiguration.md)
   A type that specifies the score of a document.
 
 

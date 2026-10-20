@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var offset: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger offset;
 ```
 
 

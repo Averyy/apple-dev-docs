@@ -1,18 +1,19 @@
 # mbuf_leadingspace
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 size_t mbuf_leadingspace(const mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 The number of unused bytes at the start of the mbuf.
 

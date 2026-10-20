@@ -1,18 +1,23 @@
 # SCScreenshotConfiguration.DisplayIntent.local
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the screenshot renders with local display attributes optimizing output for presentation on the capture display.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case local
+```
+
+```c
+SCScreenshotDisplayIntentLocal
 ```
 
 

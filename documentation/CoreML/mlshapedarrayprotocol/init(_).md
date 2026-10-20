@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shaped array type from a multiarray.
 
@@ -22,11 +23,12 @@ init(_ multiArray: MLMultiArray)
 
 ## Parameters
 
-- `multiArray`: An [`MLMultiArray`](mlmultiarray.md) with the same underlying type as the shaped array type.
+- `multiArray`: An [`MLMultiArray`](../mlmultiarray.md) with the same underlying type as the shaped array type.
 
 ## See Also
 
-- [init(converting:)](mlshapedarrayprotocol/init(converting:).md)
+### Creating a shaped array type from another type
+- [init(converting:)](./init%28converting%29.md)
   Initialize by converting a MLMultiArray of different scalar type.
 
 

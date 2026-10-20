@@ -1,7 +1,8 @@
 # background(withIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a session configuration object that allows HTTP and HTTPS uploads or downloads to be performed in the background.
 
@@ -20,9 +21,13 @@ Creates a session configuration object that allows HTTP and HTTPS uploads or dow
 class func background(withIdentifier identifier: String) -> URLSessionConfiguration
 ```
 
+```objc
++ (NSURLSessionConfiguration *) backgroundSessionConfigurationWithIdentifier:(NSString *) identifier;
+```
+
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files in the background](../downloading-files-in-the-background.md)
 
 #### Return Value
 
@@ -34,7 +39,7 @@ Use this method to initialize a configuration object suitable for transferring d
 
 If an iOS app is terminated by the system and relaunched, the app can use the same `identifier` to create a new configuration object and session and to retrieve the status of transfers that were in progress at the time of termination. This behavior applies only for normal termination of the app by the system. If the user terminates the app from the multitasking screen, the system cancels all of the session’s background transfers. In addition, the system does not automatically relaunch apps that were force quit by the user. The user must explicitly relaunch the app before transfers can begin again.
 
-You can configure an background session to schedule transfers at the discretion of the system for optimal performance using the [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property. When transferring large amounts of data, you are encouraged to set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true). For an example of using the background configuration, see [`Downloading files in the background`](downloading-files-in-the-background.md).
+You can configure an background session to schedule transfers at the discretion of the system for optimal performance using the [`isDiscretionary`](./isdiscretionary.md) property. When transferring large amounts of data, you are encouraged to set the value of this property to [`true`](../../Swift/true.md). For an example of using the background configuration, see [Downloading files in the background](../downloading-files-in-the-background.md).
 
 ## Parameters
 
@@ -42,13 +47,14 @@ You can configure an background session to schedule transfers at the discretion 
 
 ## See Also
 
-- [class var `default`: URLSessionConfiguration](urlsessionconfiguration/default.md)
+### Creating a session configuration object
+- [class var `default`: URLSessionConfiguration](./default.md)
   A default session configuration object.
-- [class var ephemeral: URLSessionConfiguration](urlsessionconfiguration/ephemeral.md)
+- [class var ephemeral: URLSessionConfiguration](./ephemeral.md)
   A session configuration that uses no persistent storage for caches, cookies, or credentials.
-- [init()](urlsessionconfiguration/init.md)
+- [init()](./init%28%29.md)
   Creates an empty session configuration.
-- [class func new() -> Self](urlsessionconfiguration/new.md)
+- [class func new() -> Self](./new%28%29.md)
   Creates an empty session configuration.
 
 

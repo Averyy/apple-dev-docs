@@ -1,17 +1,22 @@
 # init(incomingRFCOMMChannel:eventSelector:selectorTarget:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Bluetooth-based OBEX Session using an incoming RFCOMM channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(incomingRFCOMMChannel inChannel: IOBluetoothRFCOMMChannel!, eventSelector inEventSelector: Selector!, selectorTarget inEventSelectorTarget: Any!, refCon inUserRefCon: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (instancetype) initWithIncomingRFCOMMChannel:(IOBluetoothRFCOMMChannel *) inChannel eventSelector:(SEL) inEventSelector selectorTarget:(id) inEventSelectorTarget refCon:(void *) inUserRefCon;
 ```
 
 ## Parameters
@@ -23,9 +28,10 @@ init!(incomingRFCOMMChannel inChannel: IOBluetoothRFCOMMChannel!, eventSelector 
 
 ## See Also
 
-- [init!(device: IOBluetoothDevice!, channelID: BluetoothRFCOMMChannelID)](iobluetoothobexsession/init(device:channelid:).md)
+### Initializers
+- [init!(device: IOBluetoothDevice!, channelID: BluetoothRFCOMMChannelID)](./init%28device,channelid%29.md)
   Initializes a Bluetooth-based OBEX Session using a Bluetooth device.
-- [init!(sdpServiceRecord: IOBluetoothSDPServiceRecord!)](iobluetoothobexsession/init(sdpservicerecord:)-h1xg.md)
+- [init!(sdpServiceRecord: IOBluetoothSDPServiceRecord!)](./init%28sdpservicerecord%29-h1xg.md)
   Initializes a Bluetooth-based OBEX Session using an SDP service record.
 
 

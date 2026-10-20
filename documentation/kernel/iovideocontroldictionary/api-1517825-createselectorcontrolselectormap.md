@@ -1,14 +1,15 @@
 # createSelectorControlSelectorMapItem
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * createSelectorControlSelectorMapItem(UInt32 value, const OSString *name);
 ```
 

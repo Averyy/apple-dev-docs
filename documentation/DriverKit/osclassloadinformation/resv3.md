@@ -1,28 +1,30 @@
 # resv3
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t resv3[8];
 ```
 
 ## See Also
 
-- [New](osclassloadinformation/new.md)
-- [description](osclassloadinformation/description.md)
-- [instanceSize](osclassloadinformation/instancesize.md)
-- [metaPointer](osclassloadinformation/metapointer.md)
-- [resv2](osclassloadinformation/resv2.md)
-- [version](osclassloadinformation/version.md)
+### Getting the Properties
+- [New](./new.md)
+- [description](./description.md)
+- [instanceSize](./instancesize.md)
+- [metaPointer](./metapointer.md)
+- [resv2](./resv2.md)
+- [version](./version.md)
 
 
 ---

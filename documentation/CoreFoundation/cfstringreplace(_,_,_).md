@@ -1,18 +1,19 @@
 # CFStringReplace(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Replaces part of the character contents of a CFMutableString object with another string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Replaces part of the character contents of a CFMutableString object with another
 func CFStringReplace(_ theString: CFMutableString!, _ range: CFRange, _ replacement: CFString!)
 ```
 
+```c
+extern void CFStringReplace(CFMutableStringRef theString, CFRange range, CFStringRef replacement);
+```
+
 #### Discussion
 
-Although you can use this function to replace all characters in a CFMutableString object (by specifying a range of `(0, CFStringGetLength(theString))` ), it is more convenient to use the [`CFStringReplaceAll(_:_:)`](cfstringreplaceall(_:_:).md) function for that purpose.
+Although you can use this function to replace all characters in a CFMutableString object (by specifying a range of `(0, CFStringGetLength(theString))` ), it is more convenient to use the [`CFStringReplaceAll(_:_:)`](./cfstringreplaceall%28_,_%29.md) function for that purpose.
 
 ## Parameters
 
@@ -32,35 +37,36 @@ Although you can use this function to replace all characters in a CFMutableStrin
 
 ## See Also
 
-- [func CFStringAppend(CFMutableString!, CFString!)](cfstringappend(_:_:).md)
+### CFMutableString Miscellaneous Functions
+- [func CFStringAppend(CFMutableString!, CFString!)](./cfstringappend%28_,_%29.md)
   Appends the characters of a string to those of a CFMutableString object.
-- [func CFStringAppendCharacters(CFMutableString!, UnsafePointer<UniChar>!, CFIndex)](cfstringappendcharacters(_:_:_:).md)
+- [func CFStringAppendCharacters(CFMutableString!, UnsafePointer<UniChar>!, CFIndex)](./cfstringappendcharacters%28_,_,_%29.md)
   Appends a buffer of Unicode characters to the character contents of a CFMutableString object.
-- [func CFStringAppendCString(CFMutableString!, UnsafePointer<CChar>!, CFStringEncoding)](cfstringappendcstring(_:_:_:).md)
+- [func CFStringAppendCString(CFMutableString!, UnsafePointer<CChar>!, CFStringEncoding)](./cfstringappendcstring%28_,_,_%29.md)
   Appends a C string to the character contents of a CFMutableString object.
-- [func CFStringAppendFormatAndArguments(CFMutableString!, CFDictionary!, CFString!, CVaListPointer)](cfstringappendformatandarguments(_:_:_:_:).md)
+- [func CFStringAppendFormatAndArguments(CFMutableString!, CFDictionary!, CFString!, CVaListPointer)](./cfstringappendformatandarguments%28_,_,_,_%29.md)
   Appends a formatted string to the character contents of a CFMutableString object.
-- [func CFStringAppendPascalString(CFMutableString!, ConstStr255Param!, CFStringEncoding)](cfstringappendpascalstring(_:_:_:).md)
+- [func CFStringAppendPascalString(CFMutableString!, ConstStr255Param!, CFStringEncoding)](./cfstringappendpascalstring%28_,_,_%29.md)
   Appends a Pascal string to the character contents of a CFMutableString object.
-- [func CFStringCapitalize(CFMutableString!, CFLocale!)](cfstringcapitalize(_:_:).md)
+- [func CFStringCapitalize(CFMutableString!, CFLocale!)](./cfstringcapitalize%28_,_%29.md)
   Changes the first character in each word of a string to uppercase (if it is a lowercase alphabetical character).
-- [func CFStringCreateMutable(CFAllocator!, CFIndex) -> CFMutableString!](cfstringcreatemutable(_:_:).md)
+- [func CFStringCreateMutable(CFAllocator!, CFIndex) -> CFMutableString!](./cfstringcreatemutable%28_,_%29.md)
   Creates an empty CFMutableString object.
-- [func CFStringCreateMutableCopy(CFAllocator!, CFIndex, CFString!) -> CFMutableString!](cfstringcreatemutablecopy(_:_:_:).md)
+- [func CFStringCreateMutableCopy(CFAllocator!, CFIndex, CFString!) -> CFMutableString!](./cfstringcreatemutablecopy%28_,_,_%29.md)
   Creates a mutable copy of a string.
-- [func CFStringCreateMutableWithExternalCharactersNoCopy(CFAllocator!, UnsafeMutablePointer<UniChar>!, CFIndex, CFIndex, CFAllocator!) -> CFMutableString!](cfstringcreatemutablewithexternalcharactersnocopy(_:_:_:_:_:).md)
+- [func CFStringCreateMutableWithExternalCharactersNoCopy(CFAllocator!, UnsafeMutablePointer<UniChar>!, CFIndex, CFIndex, CFAllocator!) -> CFMutableString!](./cfstringcreatemutablewithexternalcharactersnocopy%28_,_,_,_,_%29.md)
   Creates a CFMutableString object whose Unicode character buffer is controlled externally.
-- [func CFStringDelete(CFMutableString!, CFRange)](cfstringdelete(_:_:).md)
+- [func CFStringDelete(CFMutableString!, CFRange)](./cfstringdelete%28_,_%29.md)
   Deletes a range of characters in a string.
-- [func CFStringFindAndReplace(CFMutableString!, CFString!, CFString!, CFRange, CFStringCompareFlags) -> CFIndex](cfstringfindandreplace(_:_:_:_:_:).md)
+- [func CFStringFindAndReplace(CFMutableString!, CFString!, CFString!, CFRange, CFStringCompareFlags) -> CFIndex](./cfstringfindandreplace%28_,_,_,_,_%29.md)
   Replaces all occurrences of a substring within a given range.
-- [func CFStringFold(CFMutableString!, CFStringCompareFlags, CFLocale!)](cfstringfold(_:_:_:).md)
+- [func CFStringFold(CFMutableString!, CFStringCompareFlags, CFLocale!)](./cfstringfold%28_,_,_%29.md)
   Folds a given string into the form specified by optional flags.
-- [func CFStringInsert(CFMutableString!, CFIndex, CFString!)](cfstringinsert(_:_:_:).md)
+- [func CFStringInsert(CFMutableString!, CFIndex, CFString!)](./cfstringinsert%28_,_,_%29.md)
   Inserts a string at a specified location in the character buffer of a CFMutableString object.
-- [func CFStringLowercase(CFMutableString!, CFLocale!)](cfstringlowercase(_:_:).md)
+- [func CFStringLowercase(CFMutableString!, CFLocale!)](./cfstringlowercase%28_,_%29.md)
   Changes all uppercase alphabetical characters in a CFMutableString to lowercase.
-- [func CFStringNormalize(CFMutableString!, CFStringNormalizationForm)](cfstringnormalize(_:_:).md)
+- [func CFStringNormalize(CFMutableString!, CFStringNormalizationForm)](./cfstringnormalize%28_,_%29.md)
   Normalizes the string into the specified form as described in Unicode Technical Report #15.
 
 

@@ -1,7 +1,8 @@
 # init(equirectangular:options:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously generates an environment resource from an equirectangular image.
 
@@ -18,6 +19,13 @@ Asynchronously generates an environment resource from an equirectangular image.
 ```swift
 @MainActor
 convenience init(equirectangular cgImage: CGImage, options: EnvironmentResource.CreateOptions) async throws
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+convenience init(equirectangular cgImage: CGImage, options: EnvironmentResource.CreateOptions) throws
 ```
 
 ## Parameters

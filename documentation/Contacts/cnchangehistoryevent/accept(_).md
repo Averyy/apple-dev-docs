@@ -1,7 +1,8 @@
 # accept(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forwards the event to the delegate you provide to process the change-history event.
 
@@ -17,6 +18,10 @@ Forwards the event to the delegate you provide to process the change-history eve
 
 ```swift
 func accept(_ visitor: any CNChangeHistoryEventVisitor)
+```
+
+```objc
+- (void) acceptEventVisitor:(id<CNChangeHistoryEventVisitor>) visitor;
 ```
 
 ## Parameters

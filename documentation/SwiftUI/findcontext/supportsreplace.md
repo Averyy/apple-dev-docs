@@ -1,7 +1,8 @@
 # supportsReplace
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If the find navigators in this context should support replacing.
 

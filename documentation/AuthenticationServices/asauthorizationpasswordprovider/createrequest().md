@@ -1,7 +1,8 @@
 # createRequest()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new password authorization request.
 
@@ -20,13 +21,18 @@ Creates a new password authorization request.
 func createRequest() -> ASAuthorizationPasswordRequest
 ```
 
+```objc
+- (ASAuthorizationPasswordRequest *) createRequest;
+```
+
 #### Return Value
 
-A password authorization request that you can execute with an instance of [`ASAuthorizationController`](asauthorizationcontroller.md).
+A password authorization request that you can execute with an instance of [`ASAuthorizationController`](../asauthorizationcontroller.md).
 
 ## See Also
 
-- [class ASAuthorizationPasswordRequest](asauthorizationpasswordrequest.md)
+### Creating Requests
+- [class ASAuthorizationPasswordRequest](../asauthorizationpasswordrequest.md)
   An authorization request that uses credentials stored in the keychain.
 
 

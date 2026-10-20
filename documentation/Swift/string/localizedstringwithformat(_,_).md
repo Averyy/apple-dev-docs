@@ -1,7 +1,8 @@
 # localizedStringWithFormat(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string created by using a given format string as a template into which the remaining argument values are substituted according to the user’s default locale.
 
@@ -22,13 +23,14 @@ static func localizedStringWithFormat(_ format: String, _ arguments: any CVarArg
 
 ## See Also
 
-- [init(format: String, any CVarArg...)](string/init(format:_:).md)
+### Creating a String Using Formats
+- [init(format: String, any CVarArg...)](./init%28format,_%29.md)
   Returns a `String` object initialized by using a given format string as a template into which the remaining argument values are substituted.
-- [init(format: String, arguments: [any CVarArg])](string/init(format:arguments:).md)
+- [init(format: String, arguments: [any CVarArg])](./init%28format,arguments%29.md)
   Returns a `String` object initialized by using a given format string as a template into which the remaining argument values are substituted according to the user’s default locale.
-- [init(format: String, locale: Locale?, any CVarArg...)](string/init(format:locale:_:).md)
+- [init(format: String, locale: Locale?, any CVarArg...)](./init%28format,locale,_%29.md)
   Returns a `String` object initialized by using a given format string as a template into which the remaining argument values are substituted according to given locale information.
-- [init(format: String, locale: Locale?, arguments: [any CVarArg])](string/init(format:locale:arguments:).md)
+- [init(format: String, locale: Locale?, arguments: [any CVarArg])](./init%28format,locale,arguments%29.md)
   Returns a `String` object initialized by using a given format string as a template into which the remaining argument values are substituted according to given locale information.
 
 

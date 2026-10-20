@@ -1,7 +1,8 @@
 # ImmersiveCameraCalibration.CalibrationType
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the calibration type used to generate camera calibration geometry.
 
@@ -21,22 +22,23 @@ enum CalibrationType
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveCameraCalibration.CalibrationType.immersiveCameraLensDefinition(_:)](immersivecameracalibration/calibrationtype/immersivecameralensdefinition(_:).md)
+- [ImmersiveCameraCalibration.CalibrationType.immersiveCameraLensDefinition(_:)](./calibrationtype/immersivecameralensdefinition%28_%29.md)
   A value that represents a calibration type that uses coefficients to present each camera lens.
-- [ImmersiveCameraCalibration.CalibrationType.usdzMesh(_:)](immersivecameracalibration/calibrationtype/usdzmesh(_:).md)
+- [ImmersiveCameraCalibration.CalibrationType.usdzMesh(_:)](./calibrationtype/usdzmesh%28_%29.md)
   A value that represents a calibration type that uses a calibration mesh containing the calibration for each lens represented as a mesh inside a USDZ file.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+### Calibration configuration
+- [struct ImmersiveCameraLensDefinition](../immersivecameralensdefinition.md)
   This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerEncryptionKey
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerEncryptionKey = (1 << 0L)
 ```
 

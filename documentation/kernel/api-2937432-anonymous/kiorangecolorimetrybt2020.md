@@ -1,14 +1,15 @@
 # kIORangeColorimetryBT2020
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kIORangeColorimetryBT2020 = 0x0100
 ```
 

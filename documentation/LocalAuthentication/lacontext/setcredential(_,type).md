@@ -1,7 +1,8 @@
 # setCredential(_:type:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an application-provided credential to be used when evaluating authentication.
 
@@ -19,20 +20,27 @@ Sets an application-provided credential to be used when evaluating authenticatio
 func setCredential(_ credential: Data?, type: LACredentialType) -> Bool
 ```
 
+```objc
+- (BOOL) setCredential:(NSData *) credential type:(LACredentialType) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the credential was set, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the credential was set, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `credential`: The credential to be used when evaluating the authentication context. Setting this parameter to `nil` removes any existing credential of the specified type.
-- `type`: The type of the specified credential. For possible values, see [`LACredentialType`](lacredentialtype.md).
+- `credential`: The credential to be used when evaluating the authentication context.
+
+  Setting this parameter to `nil` removes any existing credential of the specified type.
+- `type`: The type of the specified credential. For possible values, see [`LACredentialType`](../lacredentialtype.md).
 
 ## See Also
 
-- [func isCredentialSet(LACredentialType) -> Bool](lacontext/iscredentialset(_:).md)
+### Managing credentials
+- [func isCredentialSet(LACredentialType) -> Bool](./iscredentialset%28_%29.md)
   Returns a Boolean value indicating whether the specified credential type is set.
-- [enum LACredentialType](lacredentialtype.md)
+- [enum LACredentialType](../lacredentialtype.md)
   The types of credentials to be used for authentication.
 
 

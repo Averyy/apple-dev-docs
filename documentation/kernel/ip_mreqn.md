@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip_mreqn {
     ...
 };
@@ -17,9 +17,9 @@ struct ip_mreqn {
 ## Topics
 
 ### Instance Properties
-- [imr_address](ip_mreqn/1475769-imr_address.md)
-- [imr_ifindex](ip_mreqn/1475961-imr_ifindex.md)
-- [imr_multiaddr](ip_mreqn/1475465-imr_multiaddr.md)
+- [imr_address](./ip_mreqn/api-1475769-imr_address.md)
+- [imr_ifindex](./ip_mreqn/api-1475961-imr_ifindex.md)
+- [imr_multiaddr](./ip_mreqn/api-1475465-imr_multiaddr.md)
 
 
 ---

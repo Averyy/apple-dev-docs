@@ -1,12 +1,13 @@
 # NSRuleEditor.RowType.simple
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a simple row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Specifies a simple row.
 case simple
 ```
 
+```c
+NSRuleEditorRowTypeSimple
+```
+
 ## See Also
 
-- [NSRuleEditor.RowType.compound](nsruleeditor/rowtype/compound.md)
+### Enumeration Cases
+- [NSRuleEditor.RowType.compound](./compound.md)
   Specifies a compound row.
 
 

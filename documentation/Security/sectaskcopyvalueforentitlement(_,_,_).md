@@ -1,7 +1,8 @@
 # SecTaskCopyValueForEntitlement(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the value of a single entitlement for the represented task.
 
@@ -15,9 +16,13 @@ Returns the value of a single entitlement for the represented task.
 func SecTaskCopyValueForEntitlement(_ task: SecTask, _ entitlement: CFString, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFTypeRef?
 ```
 
+```c
+CFTypeRefSecTaskCopyValueForEntitlement(SecTaskRef task, CFStringRef entitlement, CFErrorRef*error);
+```
+
 #### Return Value
 
-The value of the specified entitlement for the process or `NULL` if the entitlement value could not be retrieved. The type of the returned value depends on the entitlement specified. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this object’s memory when you are done with it.
+The value of the specified entitlement for the process or `NULL` if the entitlement value could not be retrieved. The type of the returned value depends on the entitlement specified. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this object’s memory when you are done with it.
 
 #### Discussion
 

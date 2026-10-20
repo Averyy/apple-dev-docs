@@ -1,7 +1,8 @@
 # canSendAttachments()
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates whether or not messages can include attachments.
 
@@ -17,17 +18,22 @@ Indicates whether or not messages can include attachments.
 class func canSendAttachments() -> Bool
 ```
 
+```objc
++ (BOOL) canSendAttachments;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device can send attachments in MMS or iMessage messages, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the device can send attachments in MMS or iMessage messages, or [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [class func canSendText() -> Bool](mfmessagecomposeviewcontroller/cansendtext.md)
+### Determining if message composition is available
+- [class func canSendText() -> Bool](./cansendtext%28%29.md)
   Returns a Boolean value that indicates whether the current device is capable of sending text messages.
-- [class func canSendSubject() -> Bool](mfmessagecomposeviewcontroller/cansendsubject.md)
+- [class func canSendSubject() -> Bool](./cansendsubject%28%29.md)
   Indicates whether or not messages can include subject lines, according to the user’s configuration in Settings.
-- [class func isSupportedAttachmentUTI(String) -> Bool](mfmessagecomposeviewcontroller/issupportedattachmentuti(_:).md)
+- [class func isSupportedAttachmentUTI(String) -> Bool](./issupportedattachmentuti%28_%29.md)
   Indicates whether or not the message can accept a file, with the specified UTI, as an attachment.
 
 

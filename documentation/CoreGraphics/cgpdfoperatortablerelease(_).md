@@ -1,7 +1,8 @@
 # CGPDFOperatorTableRelease(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Decrements the retain count of a CGPDFOperatorTable object.
 
@@ -10,7 +11,7 @@ Decrements the retain count of a CGPDFOperatorTable object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Decrements the retain count of a CGPDFOperatorTable object.
 func CGPDFOperatorTableRelease(_ table: CGPDFOperatorTableRef)
 ```
 
+```c
+extern void CGPDFOperatorTableRelease(CGPDFOperatorTableRef table);
+```
+
 ## Parameters
 
 - `table`: A PDF operator table.
 
 ## See Also
 
-- [func CGPDFOperatorTableRetain(CGPDFOperatorTableRef) -> CGPDFOperatorTableRef](cgpdfoperatortableretain(_:).md)
+### Retaining and Releasing a PDF Operator Table
+- [func CGPDFOperatorTableRetain(CGPDFOperatorTableRef) -> CGPDFOperatorTableRef](./cgpdfoperatortableretain%28_%29.md)
   Increments the retain count of a CGPDFOperatorTable object.
 
 

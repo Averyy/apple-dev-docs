@@ -1,7 +1,8 @@
 # isReadOnly
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this disk attachment is read-only; otherwise, if the file handle allows writes, the device can write data into it.
 
@@ -14,11 +15,16 @@ A Boolean value that indicates whether this disk attachment is read-only; otherw
 var isReadOnly: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isReadOnly) BOOL readOnly;
+```
+
 ## See Also
 
-- [var fileHandle: FileHandle](vzdiskblockdevicestoragedeviceattachment/filehandle.md)
+### Getting the block storage device details
+- [var fileHandle: FileHandle](./filehandle.md)
   A file handle to a block device.
-- [var synchronizationMode: VZDiskSynchronizationMode](vzdiskblockdevicestoragedeviceattachment/synchronizationmode.md)
+- [var synchronizationMode: VZDiskSynchronizationMode](./synchronizationmode.md)
   The value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
 
 

@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boolean value that indicates whether to detect barcodes in the document.
 
@@ -25,9 +26,10 @@ The value is unavailable by default. To enable barcode detection, set the proper
 
 ## See Also
 
-- [var coalesceCompositeSymbologies: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/coalescecompositesymbologies.md)
+### Getting the symbology
+- [var coalesceCompositeSymbologies: Bool](./coalescecompositesymbologies.md)
   A Boolean value that indicates whether the request combines multiple codes.
-- [var symbologies: [BarcodeSymbology]](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/symbologies.md)
+- [var symbologies: [BarcodeSymbology]](./symbologies.md)
   The barcode symbologies that the request detects in an image.
 
 

@@ -1,7 +1,8 @@
 # earliestBeginDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The earliest date at which the network load should begin.
 
@@ -20,23 +21,28 @@ The earliest date at which the network load should begin.
 var earliestBeginDate: Date? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDate * earliestBeginDate;
+```
+
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files in the background](../downloading-files-in-the-background.md)
 
 #### Discussion
 
-For tasks created from background [`URLSession`](urlsession.md) instances, this property indicates that the network load should not begin any earlier than this date. Setting this property does not guarantee that the load will begin at the specified date, but only that it will not begin sooner. If not specified, no start delay is used.
+For tasks created from background [`URLSession`](../urlsession.md) instances, this property indicates that the network load should not begin any earlier than this date. Setting this property does not guarantee that the load will begin at the specified date, but only that it will not begin sooner. If not specified, no start delay is used.
 
 This property has no effect for tasks created from nonbackground sessions.
 
 ## See Also
 
-- [var countOfBytesClientExpectsToReceive: Int64](urlsessiontask/countofbytesclientexpectstoreceive.md)
+### Scheduling tasks
+- [var countOfBytesClientExpectsToReceive: Int64](./countofbytesclientexpectstoreceive.md)
   A best-guess upper bound on the number of bytes the client expects to receive.
-- [var countOfBytesClientExpectsToSend: Int64](urlsessiontask/countofbytesclientexpectstosend.md)
+- [var countOfBytesClientExpectsToSend: Int64](./countofbytesclientexpectstosend.md)
   A best-guess upper bound on the number of bytes the client expects to send.
-- [let NSURLSessionTransferSizeUnknown: Int64](nsurlsessiontransfersizeunknown.md)
+- [let NSURLSessionTransferSizeUnknown: Int64](../nsurlsessiontransfersizeunknown.md)
   The total size of the transfer cannot be determined.
 
 

@@ -1,7 +1,8 @@
 # buttonMaskRequired
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bit mask of the buttons the user must press for gesture recognition.
 
@@ -17,11 +18,16 @@ The bit mask of the buttons the user must press for gesture recognition.
 var buttonMaskRequired: UIEvent.ButtonMask { get set }
 ```
 
+```objc
+@property (nonatomic) UIEventButtonMask buttonMaskRequired;
+```
+
 ## See Also
 
-- [var numberOfTapsRequired: Int](uitapgesturerecognizer/numberoftapsrequired.md)
+### Configuring the gesture
+- [var numberOfTapsRequired: Int](./numberoftapsrequired.md)
   The number of taps necessary for gesture recognition.
-- [var numberOfTouchesRequired: Int](uitapgesturerecognizer/numberoftouchesrequired.md)
+- [var numberOfTouchesRequired: Int](./numberoftouchesrequired.md)
   The number of fingers that the user must tap for gesture recognition.
 
 

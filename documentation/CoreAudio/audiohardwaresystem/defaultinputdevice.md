@@ -1,12 +1,13 @@
 # defaultInputDevice
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default input audio device on the system, or nil if there is no default input device.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

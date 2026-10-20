@@ -1,7 +1,8 @@
 # kUSBHubRqGetInterface
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A request to get an interface.
 
@@ -10,7 +11,7 @@ A request to get an interface.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqGetInterface = 10
 ```
 

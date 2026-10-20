@@ -1,7 +1,8 @@
 # init(searchableObject:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an object to manage the search for the searchable object you specify.
 
@@ -17,13 +18,18 @@ Initializes an object to manage the search for the searchable object you specify
 init(searchableObject: any __UITextSearching)
 ```
 
+```objc
+- (instancetype) initWithSearchableObject:(id<UITextSearching>) searchableObject;
+```
+
 ## Parameters
 
-- `searchableObject`: An object that conforms to the [`UITextSearching`](uitextsearching-53wjq.md) protocol that the session uses to search the text of your app and decorate the found results.
+- `searchableObject`: An object that conforms to the [`UITextSearching`](../uitextsearching-53wjq.md) protocol that the session uses to search the text of your app and decorate the found results.
 
 ## See Also
 
-- [convenience init<SearchableObject>(searchableObject: SearchableObject)](uitextsearchingfindsession/init(searchableobject:)-7swl5.md)
+### Creating a text searching find session
+- [convenience init<SearchableObject>(searchableObject: SearchableObject)](./init%28searchableobject%29-7swl5.md)
   Initializes an object to manage the search for the searchable object you specify.
 
 

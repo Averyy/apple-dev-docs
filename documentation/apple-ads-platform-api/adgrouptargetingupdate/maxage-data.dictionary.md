@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.MaxAge
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Maximum age targeting, setting the upper bound of the target age range.
 
@@ -10,13 +11,13 @@ Maximum age targeting, setting the upper bound of the target age range.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.MaxAge
 ```
 
 #### Discussion
 
-Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "maxAge": {

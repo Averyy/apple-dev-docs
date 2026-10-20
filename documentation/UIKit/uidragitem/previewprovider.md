@@ -1,7 +1,8 @@
 # previewProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A visual preview of the drag item, displayed while the user drags the item across the screen.
 
@@ -17,15 +18,20 @@ A visual preview of the drag item, displayed while the user drags the item acros
 var previewProvider: (() -> UIDragPreview?)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIDragPreview * (^previewProvider)();
+```
+
 #### Discussion
 
-As the user drags an item across the screen, the system displays a preview. You can change the preview by setting [`previewProvider`](uidragitem/previewprovider.md) to a block that returns a [`UIDragPreview`](uidragpreview.md) object. The system invokes the block if and when it needs the drag item preview.
+As the user drags an item across the screen, the system displays a preview. You can change the preview by setting [`previewProvider`](./previewprovider.md) to a block that returns a [`UIDragPreview`](../uidragpreview.md) object. The system invokes the block if and when it needs the drag item preview.
 
-To use the default preview, set [`previewProvider`](uidragitem/previewprovider.md) to `nil`. To hide the preview, set [`previewProvider`](uidragitem/previewprovider.md) to a block that returns `nil`.
+To use the default preview, set [`previewProvider`](./previewprovider.md) to `nil`. To hide the preview, set [`previewProvider`](./previewprovider.md) to a block that returns `nil`.
 
 ## See Also
 
-- [func setNeedsDropPreviewUpdate()](uidragitem/setneedsdroppreviewupdate.md)
+### Changing the drag item preview
+- [func setNeedsDropPreviewUpdate()](./setneedsdroppreviewupdate%28%29.md)
   Notifies the operating system that an updated drop preview is available for the item.
 
 

@@ -1,7 +1,8 @@
 # randomSplit(by:seed:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates two mutually exclusive, randomly divided subsets of the table.
 
@@ -21,7 +22,7 @@ func randomSplit(by proportion: Double, seed: Int = 1) -> (MLDataTable, MLDataTa
 
 ## Mentions
 
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
 #### Return Value
 

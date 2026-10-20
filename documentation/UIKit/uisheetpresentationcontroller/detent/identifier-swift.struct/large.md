@@ -1,7 +1,8 @@
 # large
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for the system’s large detent.
 
@@ -16,9 +17,14 @@ The identifier for the system’s large detent.
 static let large: UISheetPresentationController.Detent.Identifier
 ```
 
+```c
+extern UISheetPresentationControllerDetentIdentifier const UISheetPresentationControllerDetentIdentifierLarge;
+```
+
 ## See Also
 
-- [static let medium: UISheetPresentationController.Detent.Identifier](uisheetpresentationcontroller/detent/identifier-swift.struct/medium.md)
+### Identifying detent size
+- [static let medium: UISheetPresentationController.Detent.Identifier](./medium.md)
   The identifier for the system’s medium detent.
 
 

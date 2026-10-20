@@ -1,14 +1,15 @@
 # MIDIPacket.ByteSequence
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,12 +20,12 @@ struct ByteSequence
 ## Topics
 
 ### Instance Properties
-- [var count: Int](midipacket/bytesequence/count.md)
+- [var count: Int](./bytesequence/count.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

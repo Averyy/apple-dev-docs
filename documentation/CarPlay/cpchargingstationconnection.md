@@ -1,7 +1,8 @@
 # CPChargingStationConnection
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -14,32 +15,36 @@
 class CPChargingStationConnection
 ```
 
+```objc
+@interface CPChargingStationConnection : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpchargingstationconnection/init(coder:).md)
-- [init(connector: CPChargingStationConnection.Connector, voltage: Measurement<UnitElectricPotentialDifference>, power: Measurement<UnitPower>)](cpchargingstationconnection/init(connector:voltage:power:).md)
+- [init?(coder: NSCoder)](./cpchargingstationconnection/init%28coder%29.md)
+- [init(connector: CPChargingStationConnection.Connector, voltage: Measurement<UnitElectricPotentialDifference>, power: Measurement<UnitPower>)](./cpchargingstationconnection/init%28connector,voltage,power%29.md)
 ### Instance Properties
-- [var connector: CPChargingStationConnection.Connector](cpchargingstationconnection/connector-swift.property.md)
-- [var power: Measurement<UnitPower>](cpchargingstationconnection/power.md)
-- [var voltage: Measurement<UnitElectricPotentialDifference>](cpchargingstationconnection/voltage.md)
+- [var connector: CPChargingStationConnection.Connector](./cpchargingstationconnection/connector-swift.property.md)
+- [var power: Measurement<UnitPower>](./cpchargingstationconnection/power.md)
+- [var voltage: Measurement<UnitElectricPotentialDifference>](./cpchargingstationconnection/voltage.md)
 ### Enumerations
-- [CPChargingStationConnection.Connector](cpchargingstationconnection/connector-swift.enum.md)
+- [CPChargingStationConnection.Connector](./cpchargingstationconnection/connector-swift.enum.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

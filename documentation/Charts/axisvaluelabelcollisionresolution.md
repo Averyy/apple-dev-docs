@@ -1,7 +1,8 @@
 # AxisValueLabelCollisionResolution
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,26 +22,27 @@ struct AxisValueLabelCollisionResolution
 ## Topics
 
 ### Type Properties
-- [static var automatic: AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution/automatic.md)
+- [static var automatic: AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution/automatic.md)
   Automatically determine the prevention method based on axis type and data.
-- [static var disabled: AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution/disabled.md)
+- [static var disabled: AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution/disabled.md)
   Do not apply collision resolution to this label. The label will always be displayed.
-- [static var greedy: AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution/greedy.md)
+- [static var greedy: AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution/greedy.md)
   Use a greedy algorithm. Display a label if it’s not overlapping with other labels.
-- [static var truncate: AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution/truncate.md)
+- [static var truncate: AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution/truncate.md)
   Truncate a label to the space available to it.
 ### Type Methods
-- [static func greedy(priority: Double, minimumSpacing: CGFloat?) -> AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution/greedy(priority:minimumspacing:).md)
+- [static func greedy(priority: Double, minimumSpacing: CGFloat?) -> AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution/greedy%28priority,minimumspacing%29.md)
   Use a greedy algorithm. Display a label if it’s not overlapping with other labels.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [struct AxisValueLabelOrientation](axisvaluelabelorientation.md)
+### Supporting types
+- [struct AxisValueLabelOrientation](./axisvaluelabelorientation.md)
   Describes the orientation of a label.
 
 

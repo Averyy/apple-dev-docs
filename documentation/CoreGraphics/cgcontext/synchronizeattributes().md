@@ -1,7 +1,8 @@
 # synchronizeAttributes()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func synchronizeAttributes()
+```
+
+```c
+extern void CGContextSynchronizeAttributes(CGContextRef c);
 ```
 
 

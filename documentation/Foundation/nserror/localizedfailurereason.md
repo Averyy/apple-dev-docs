@@ -1,7 +1,8 @@
 # localizedFailureReason
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the localized explanation of the reason for the error.
 
@@ -20,23 +21,29 @@ A string containing the localized explanation of the reason for the error.
 var localizedFailureReason: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * localizedFailureReason;
+```
+
 #### Discussion
 
-The object in the user info dictionary for the key [`NSLocalizedFailureReasonErrorKey`](nslocalizedfailurereasonerrorkey.md).
+The object in the user info dictionary for the key [`NSLocalizedFailureReasonErrorKey`](../nslocalizedfailurereasonerrorkey.md).
 
 ## See Also
 
-- [var domain: String](nserror/domain.md)
+### Related Documentation
+- [var domain: String](./domain.md)
   A string containing the error domain.
-- [var code: Int](nserror/code.md)
+- [var code: Int](./code.md)
   The error code.
-- [var userInfo: [String : Any]](nserror/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   The user info dictionary.
-- [var localizedDescription: String](nserror/localizeddescription.md)
+### Getting a Localized Error Description
+- [var localizedDescription: String](./localizeddescription.md)
   A string containing the localized description of the error.
-- [var localizedRecoveryOptions: [String]?](nserror/localizedrecoveryoptions.md)
+- [var localizedRecoveryOptions: [String]?](./localizedrecoveryoptions.md)
   An array containing the localized titles of buttons appropriate for displaying in an alert panel.
-- [var localizedRecoverySuggestion: String?](nserror/localizedrecoverysuggestion.md)
+- [var localizedRecoverySuggestion: String?](./localizedrecoverysuggestion.md)
   A string containing the localized recovery suggestion for the error.
 
 

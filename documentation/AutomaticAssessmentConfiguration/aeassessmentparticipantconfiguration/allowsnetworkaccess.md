@@ -1,7 +1,8 @@
 # allowsNetworkAccess
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether an app can access network resources during an assessment.
 
@@ -15,6 +16,10 @@ A Boolean that indicates whether an app can access network resources during an a
 
 ```swift
 var allowsNetworkAccess: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsNetworkAccess;
 ```
 
 

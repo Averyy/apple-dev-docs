@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A level of certainty in the object’s category.
 
@@ -18,13 +19,14 @@ var confidence: CapturedRoom.Confidence { get }
 
 ## See Also
 
-- [var identifier: UUID](capturedroom/object/identifier.md)
+### Identifying an object
+- [var identifier: UUID](./identifier.md)
   A unique alphanumeric value that the framework assigns the object.
-- [var parentIdentifier: UUID?](capturedroom/object/parentidentifier.md)
+- [var parentIdentifier: UUID?](./parentidentifier.md)
   A unique alphanumeric value that identifies the object’s parent object or surface.
-- [var category: CapturedRoom.Object.Category](capturedroom/object/category-swift.property.md)
+- [var category: CapturedRoom.Object.Category](./category-swift.property.md)
   A classification that the captured room assigns the object.
-- [CapturedRoom.Object.Category](capturedroom/object/category-swift.enum.md)
+- [CapturedRoom.Object.Category](./category-swift.enum.md)
   Classifications of an object in a captured room.
 
 

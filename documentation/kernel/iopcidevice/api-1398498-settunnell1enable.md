@@ -1,14 +1,15 @@
 # setTunnelL1Enable
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 IOReturn setTunnelL1Enable(IOService *client, bool l1Enable);
 ```
 

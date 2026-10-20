@@ -1,7 +1,8 @@
 # embeddingResult(for:language:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an embedding to a string and obtains the resulting embedding vectors.
 
@@ -20,6 +21,10 @@ Applies an embedding to a string and obtains the resulting embedding vectors.
 func embeddingResult(for string: String, language: NLLanguage?) throws -> NLContextualEmbeddingResult
 ```
 
+```objc
+- (NLContextualEmbeddingResult *) embeddingResultForString:(NSString *) string language:(NLLanguage) language error:(NSError **) error;
+```
+
 #### Return Value
 
 An embedding result. On failure, this method returns nil.
@@ -31,7 +36,8 @@ An embedding result. On failure, this method returns nil.
 
 ## See Also
 
-- [class NLContextualEmbeddingResult](nlcontextualembeddingresult.md)
+### Applying an embedding
+- [class NLContextualEmbeddingResult](../nlcontextualembeddingresult.md)
   An object that represents the embedding vector result from applying a contextual embedding to a string.
 
 

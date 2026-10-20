@@ -1,7 +1,8 @@
 # BackgroundAssetVersionInternalBetaRelease.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a background asset version internal beta release resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a background asset version internal beta release resour
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionInternalBetaRelease.Attributes
 ```
 
 ## Properties
 
-- `state` (string)
+- `state` (string): **Allowed Values**: `READY_FOR_TESTING`, `SUPERSEDED`
 
 
 ---

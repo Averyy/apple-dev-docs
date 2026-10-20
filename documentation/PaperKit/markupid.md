@@ -1,7 +1,8 @@
 # MarkupID
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque ID for markup elements.
 
@@ -21,28 +22,29 @@ struct MarkupID<Element>
 ## Topics
 
 ### Creating an ID
-- [init()](markupid/init.md)
+- [init()](./markupid/init%28%29.md)
   Creates a new unique ID.
 ### Converting IDs
-- [MarkupOrderedSet.ElementID](markuporderedset/elementid.md)
+- [MarkupOrderedSet.ElementID](./markuporderedset/elementid.md)
   The markup ID types supported in a markup ordered set.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PaperMarkup](papermarkup.md)
+### Data model
+- [struct PaperMarkup](./papermarkup.md)
   The data model object for storing markup data created from a `PaperViewController`.
-- [struct MarkupOrderedSet](markuporderedset.md)
+- [struct MarkupOrderedSet](./markuporderedset.md)
   An ordered set of markup elements.
 
 

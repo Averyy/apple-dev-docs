@@ -1,7 +1,8 @@
 # PassFields.AuxiliaryFields
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the fields that display additional information on the front of a pass.
 
@@ -12,15 +13,15 @@ An object that represents the fields that display additional information on the 
 
 ## Declaration
 
-```swift
+```
 object PassFields.AuxiliaryFields
 ```
 
 ## Mentions
 
-- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+- [Creating an airline boarding pass using semantic tags](../creating-an-airline-boarding-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
+- [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
 #### Discussion
 
@@ -32,18 +33,21 @@ Depending on the type of pass, you can interchange the auxiliary and secondary f
 
 - `row` (number): A number you use to add a row to the auxiliary field in an event ticket pass type. Set the value to `1` to add an auxiliary row. Each row displays up to four fields.
 
+  **Allowed Values**: `0`, `1`
+
 ## Relationships
 
 ### Inherits From
-- [PassFieldContent](passfieldcontent.md)
+- [PassFieldContent](../passfieldcontent.md)
 
 ## See Also
 
-- [object PassFields.PrimaryFields](passfields/primaryfields-data.dictionary.md)
+### Adding content to the front of a pass
+- [object PassFields.PrimaryFields](./primaryfields-data.dictionary.md)
   An object that represents the fields that display the most important information on the front of a pass.
-- [object PassFields.SecondaryFields](passfields/secondaryfields-data.dictionary.md)
+- [object PassFields.SecondaryFields](./secondaryfields-data.dictionary.md)
   An object that represents the fields that display supporting information on the front of a pass.
-- [object PassFields.HeaderFields](passfields/headerfields-data.dictionary.md)
+- [object PassFields.HeaderFields](./headerfields-data.dictionary.md)
   An object that represents the fields that display information at the top of a pass.
 
 

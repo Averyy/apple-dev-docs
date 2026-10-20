@@ -1,7 +1,8 @@
 # foundation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing the attribute scopes that Foundation defines.
 
@@ -22,7 +23,8 @@ var foundation: AttributeScopes.FoundationAttributes.Type { get }
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes](attributescopes/foundationattributes.md)
+### Foundation-Defined Attributes
+- [AttributeScopes.FoundationAttributes](./foundationattributes.md)
   Attribute scopes that Foundation defines.
 
 

@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the error-corrected data decoded into a human-readable string.
 
@@ -18,15 +19,20 @@ Returns the error-corrected data decoded into a human-readable string.
 var stringValue: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * stringValue;
+```
+
 #### Discussion
 
 The value of this property is an `NSString` created by decoding the binary payload according to the format of the machine-readable code, or `nil` if a string representation cannot be created.
 
 ## See Also
 
-- [var corners: [CGPoint]](avmetadatamachinereadablecodeobject/corners-58qbe.md)
+### Getting machine-readable code values
+- [var corners: [CGPoint]](./corners-58qbe.md)
   A Swift array of corner points.
-- [var descriptor: CIBarcodeDescriptor?](avmetadatamachinereadablecodeobject/descriptor.md)
+- [var descriptor: CIBarcodeDescriptor?](./descriptor.md)
   A barcode description for use in Core Image.
 
 

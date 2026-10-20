@@ -1,7 +1,8 @@
 # init(identifier:source:destination:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a storyboard segue object for use in performing a segue.
 
@@ -9,13 +10,19 @@ Initializes and returns a storyboard segue object for use in performing a segue.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
 ```swift
 init(identifier: String?, source: UIViewController, destination: UIViewController)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier source:(UIViewController *) source destination:(UIViewController *) destination;
 ```
 
 #### Return Value
@@ -24,7 +31,7 @@ An initialized segue object.
 
 #### Discussion
 
-This method is the designated initializer for segue objects. If you subclass [`UIStoryboardSegue`](uistoryboardsegue.md), you can override this method and perform any custom initialization in your implementation. Your implementation should call `super` first and then proceed if that method doesn’t return `nil`.
+This method is the designated initializer for segue objects. If you subclass [`UIStoryboardSegue`](../uistoryboardsegue.md), you can override this method and perform any custom initialization in your implementation. Your implementation should call `super` first and then proceed if that method doesn’t return `nil`.
 
 ## Parameters
 

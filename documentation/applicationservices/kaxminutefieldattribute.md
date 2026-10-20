@@ -1,7 +1,8 @@
 # kAXMinuteFieldAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The minute field of a time field represented by this accessibility object. This attribute is required for accessibility objects that represent time fields that display minutes.
 
@@ -12,6 +13,10 @@ The minute field of a time field represented by this accessibility object. This 
 
 ```swift
 var kAXMinuteFieldAttribute: String { get }
+```
+
+```c
+#define kAXMinuteFieldAttribute
 ```
 
 

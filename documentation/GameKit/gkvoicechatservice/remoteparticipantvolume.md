@@ -1,21 +1,28 @@
 # remoteParticipantVolume
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A float that scales the volume of all remote participants.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use SharePlay instead
 
 ## Declaration
 
 ```swift
 var remoteParticipantVolume: Float { get set }
+```
+
+```objc
+@property (nonatomic) float remoteParticipantVolume;
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ The value should be between `0.0` (muted) and `1.0` (full volume). The default i
 
 ## See Also
 
-- [var isMicrophoneMuted: Bool](gkvoicechatservice/ismicrophonemuted.md)
+### Adjusting Audio Properties
+- [var isMicrophoneMuted: Bool](./ismicrophonemuted.md)
   A Boolean value that determines whether the user’s microphone is muted.
 
 

@@ -1,7 +1,8 @@
 # Playlist.Entry.Item
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An item that corresponds to an entry in a playlist.
 
@@ -23,65 +24,65 @@ enum Item
 ## Topics
 
 ### Enumeration Cases
-- [Playlist.Entry.Item.musicVideo(_:)](playlist/entry/item-swift.enum/musicvideo(_:).md)
+- [Playlist.Entry.Item.musicVideo(_:)](./item-swift.enum/musicvideo%28_%29.md)
   An item that corresponds to a music video.
-- [Playlist.Entry.Item.song(_:)](playlist/entry/item-swift.enum/song(_:).md)
+- [Playlist.Entry.Item.song(_:)](./item-swift.enum/song%28_%29.md)
   An item that corresponds to a song.
 ### Instance Properties
-- [var albumTitle: String?](playlist/entry/item-swift.enum/albumtitle.md)
+- [var albumTitle: String?](./item-swift.enum/albumtitle.md)
   The title of the album the playlist entry’s item appears on.
-- [var artistName: String](playlist/entry/item-swift.enum/artistname.md)
+- [var artistName: String](./item-swift.enum/artistname.md)
   The artist’s name.
-- [var artistURL: URL?](playlist/entry/item-swift.enum/artisturl.md)
+- [var artistURL: URL?](./item-swift.enum/artisturl.md)
   The artist’s URL.
-- [var artwork: Artwork?](playlist/entry/item-swift.enum/artwork.md)
+- [var artwork: Artwork?](./item-swift.enum/artwork.md)
   The artwork for the playlist entry’s item.
-- [var contentRating: ContentRating?](playlist/entry/item-swift.enum/contentrating.md)
+- [var contentRating: ContentRating?](./item-swift.enum/contentrating.md)
   The rating of the content.
-- [var duration: TimeInterval?](playlist/entry/item-swift.enum/duration.md)
+- [var duration: TimeInterval?](./item-swift.enum/duration.md)
   The duration of the playlist entry’s item.
-- [var editorialNotes: EditorialNotes?](playlist/entry/item-swift.enum/editorialnotes.md)
+- [var editorialNotes: EditorialNotes?](./item-swift.enum/editorialnotes.md)
   The editorial notes for the playlist entry’s item.
-- [var genreNames: [String]](playlist/entry/item-swift.enum/genrenames.md)
+- [var genreNames: [String]](./item-swift.enum/genrenames.md)
   The names of the playlist entry’s item associated genres.
-- [var id: MusicItemID](playlist/entry/item-swift.enum/id.md)
+- [var id: MusicItemID](./item-swift.enum/id.md)
   The unique identifier for the playlist entry item.
-- [var isrc: String?](playlist/entry/item-swift.enum/isrc.md)
+- [var isrc: String?](./item-swift.enum/isrc.md)
   The International Standard Recording Code (ISRC) for the playlist entry’s item.
-- [var lastPlayedDate: Date?](playlist/entry/item-swift.enum/lastplayeddate.md)
+- [var lastPlayedDate: Date?](./item-swift.enum/lastplayeddate.md)
   The date when the user last played the playlist entry’s item on this device.
-- [var libraryAddedDate: Date?](playlist/entry/item-swift.enum/libraryaddeddate.md)
+- [var libraryAddedDate: Date?](./item-swift.enum/libraryaddeddate.md)
   The date when the user added the playlist entry’s item to the library.
-- [var playCount: Int?](playlist/entry/item-swift.enum/playcount.md)
+- [var playCount: Int?](./item-swift.enum/playcount.md)
   The number of times the user played the playlist entry’s item.
-- [var playParameters: PlayParameters?](playlist/entry/item-swift.enum/playparameters.md)
+- [var playParameters: PlayParameters?](./item-swift.enum/playparameters.md)
   The parameters to use to play the playlist entry’s item.
-- [var previewAssets: [PreviewAsset]?](playlist/entry/item-swift.enum/previewassets.md)
+- [var previewAssets: [PreviewAsset]?](./item-swift.enum/previewassets.md)
   The preview assets for the playlist entry’s item.
-- [var releaseDate: Date?](playlist/entry/item-swift.enum/releasedate.md)
+- [var releaseDate: Date?](./item-swift.enum/releasedate.md)
   The release date of the playlist entry’s item.
-- [var title: String](playlist/entry/item-swift.enum/title.md)
+- [var title: String](./item-swift.enum/title.md)
   The title of the playlist entry’s item.
-- [var url: URL?](playlist/entry/item-swift.enum/url.md)
+- [var url: URL?](./item-swift.enum/url.md)
   The URL for the playlist entry’s item.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicItem](musicitem.md)
-- [MusicPropertyContainer](musicpropertycontainer.md)
-- [PlayableMusicItem](playablemusicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Identifiable](../../../Swift/identifiable.md)
+- [MusicItem](../../musicitem.md)
+- [MusicPropertyContainer](../../musicpropertycontainer.md)
+- [PlayableMusicItem](../../playablemusicitem.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

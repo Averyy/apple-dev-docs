@@ -1,7 +1,8 @@
 # videoColorSpaceDolbyVision
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Dolby Vision video.
 
@@ -14,25 +15,30 @@ Dolby Vision video.
 static var videoColorSpaceDolbyVision: TVTopShelfCarouselItem.MediaOptions { get }
 ```
 
+```c
+TVTopShelfCarouselItemVideoColorSpaceDolbyVision
+```
+
 #### Discussion
 
-Specify this constant, or the [`videoColorSpaceHDR`](tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacehdr.md) constant, but not both.
+Specify this constant, or the [`videoColorSpaceHDR`](./videocolorspacehdr.md) constant, but not both.
 
 ## See Also
 
-- [static var videoResolutionHD: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolutionhd.md)
+### Media Options
+- [static var videoResolutionHD: TVTopShelfCarouselItem.MediaOptions](./videoresolutionhd.md)
   High-definition video resolution.
-- [static var videoResolution4K: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolution4k.md)
+- [static var videoResolution4K: TVTopShelfCarouselItem.MediaOptions](./videoresolution4k.md)
   Ultra-high-definition 4K video resolution.
-- [static var videoColorSpaceHDR: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacehdr.md)
+- [static var videoColorSpaceHDR: TVTopShelfCarouselItem.MediaOptions](./videocolorspacehdr.md)
   High-dynamic-range video.
-- [static var audioDolbyAtmos: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodolbyatmos.md)
+- [static var audioDolbyAtmos: TVTopShelfCarouselItem.MediaOptions](./audiodolbyatmos.md)
   Audio content with Dolby Atmos.
-- [static var audioTranscriptionClosedCaptioning: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionclosedcaptioning.md)
+- [static var audioTranscriptionClosedCaptioning: TVTopShelfCarouselItem.MediaOptions](./audiotranscriptionclosedcaptioning.md)
   Audio content with closed captioning.
-- [static var audioTranscriptionSDH: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionsdh.md)
+- [static var audioTranscriptionSDH: TVTopShelfCarouselItem.MediaOptions](./audiotranscriptionsdh.md)
   Audio content with subtitles for people who are deaf or hard of hearing.
-- [static var audioDescription: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodescription.md)
+- [static var audioDescription: TVTopShelfCarouselItem.MediaOptions](./audiodescription.md)
   Audio content with audio descriptions.
 
 

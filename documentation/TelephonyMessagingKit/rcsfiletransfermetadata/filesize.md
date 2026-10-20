@@ -1,7 +1,8 @@
 # fileSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the file in bytes.
 
@@ -16,15 +17,16 @@ let fileSize: Int
 
 ## See Also
 
-- [let url: URL](rcsfiletransfermetadata/url.md)
+### Accessing file metadata
+- [let url: URL](./url.md)
   The URL for the file.
-- [let fileName: String?](rcsfiletransfermetadata/filename.md)
+- [let fileName: String?](./filename.md)
   The original name of file.
-- [let contentType: UTType?](rcsfiletransfermetadata/contenttype.md)
+- [let contentType: UTType?](./contenttype.md)
   The content type of the file.
-- [let expirationDate: Date](rcsfiletransfermetadata/expirationdate.md)
+- [let expirationDate: Date](./expirationdate.md)
   The expiration date of the file.
-- [var playbackLength: Duration?](rcsfiletransfermetadata/playbacklength.md)
+- [var playbackLength: Duration?](./playbacklength.md)
   Playback length of RCS Recorded Audio Message (RRAM).
 
 

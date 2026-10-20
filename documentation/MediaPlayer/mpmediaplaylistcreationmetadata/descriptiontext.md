@@ -1,7 +1,8 @@
 # descriptionText
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptive text for the playlist.
 
@@ -17,11 +18,16 @@ The descriptive text for the playlist.
 var descriptionText: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * descriptionText;
+```
+
 ## See Also
 
-- [var authorDisplayName: String!](mpmediaplaylistcreationmetadata/authordisplayname.md)
+### Metadata for a playlist
+- [var authorDisplayName: String!](./authordisplayname.md)
   App defined display name for the playlist.
-- [var name: String](mpmediaplaylistcreationmetadata/name.md)
+- [var name: String](./name.md)
   The playlist’s displayed name.
 
 

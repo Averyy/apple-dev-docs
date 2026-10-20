@@ -1,17 +1,24 @@
 # PDFAnnotationButtonWidget
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `PDFAnnotationButtonWidget` object provides user interactivity on a page of a PDF document. There are three types of buttons available: push button, radio button, and checkbox.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
+
+> **Deprecated**: Use [`PDFAnnotationSubtype`](./pdfannotationsubtype.md) instead.
 
 ## Declaration
 
 ```swift
 class PDFAnnotationButtonWidget
+```
+
+```objc
+@interface PDFAnnotationButtonWidget : PDFAnnotation
 ```
 
 #### Overview
@@ -21,88 +28,89 @@ class PDFAnnotationButtonWidget
 ## Topics
 
 ### Getting and Setting the Control Type
-- [func controlType() -> PDFWidgetControlType](pdfannotationbuttonwidget/controltype.md)
+- [func controlType() -> PDFWidgetControlType](./pdfannotationbuttonwidget/controltype%28%29.md)
   Returns the type of the control.
-- [func setControlType(PDFWidgetControlType)](pdfannotationbuttonwidget/setcontroltype(_:).md)
+- [func setControlType(PDFWidgetControlType)](./pdfannotationbuttonwidget/setcontroltype%28_%29.md)
   Sets the type of the control.
 ### Getting and Setting the Control’s State
-- [func state() -> Int](pdfannotationbuttonwidget/state.md)
+- [func state() -> Int](./pdfannotationbuttonwidget/state%28%29.md)
   Returns the state of the control.
-- [func setState(Int)](pdfannotationbuttonwidget/setstate(_:).md)
+- [func setState(Int)](./pdfannotationbuttonwidget/setstate%28_%29.md)
   Sets the state of the control.
 ### Getting and Setting the Control’s Appearance
-- [func backgroundColor() -> NSColor!](pdfannotationbuttonwidget/backgroundcolor.md)
+- [func backgroundColor() -> NSColor!](./pdfannotationbuttonwidget/backgroundcolor%28%29.md)
   Returns the background color of the control.
-- [func setBackgroundColor(NSColor!)](pdfannotationbuttonwidget/setbackgroundcolor(_:).md)
+- [func setBackgroundColor(NSColor!)](./pdfannotationbuttonwidget/setbackgroundcolor%28_%29.md)
   Sets the control’s background color.
 ### Getting and Setting the Control Label Font Attributes
-- [func font() -> NSFont!](pdfannotationbuttonwidget/font.md)
+- [func font() -> NSFont!](./pdfannotationbuttonwidget/font%28%29.md)
   Returns the font used in the control’s label.
-- [func setFont(NSFont!)](pdfannotationbuttonwidget/setfont(_:).md)
+- [func setFont(NSFont!)](./pdfannotationbuttonwidget/setfont%28_%29.md)
   Sets the font of the control’s label.
-- [func fontColor() -> NSColor!](pdfannotationbuttonwidget/fontcolor.md)
+- [func fontColor() -> NSColor!](./pdfannotationbuttonwidget/fontcolor%28%29.md)
   Returns the font color used in the control’s label.
-- [func setFontColor(NSColor!)](pdfannotationbuttonwidget/setfontcolor(_:).md)
+- [func setFontColor(NSColor!)](./pdfannotationbuttonwidget/setfontcolor%28_%29.md)
   Sets the font color used in the control’s label.
 ### Getting and Setting the Control Label Text
-- [func caption() -> String!](pdfannotationbuttonwidget/caption.md)
+- [func caption() -> String!](./pdfannotationbuttonwidget/caption%28%29.md)
   Returns the text of the label on a push button control.
-- [func setCaption(String!)](pdfannotationbuttonwidget/setcaption(_:).md)
+- [func setCaption(String!)](./pdfannotationbuttonwidget/setcaption%28_%29.md)
   Sets the text of the label on a push button control.
 ### Managing Radio Button Behavior
-- [func allowsToggleToOff() -> Bool](pdfannotationbuttonwidget/allowstoggletooff.md)
+- [func allowsToggleToOff() -> Bool](./pdfannotationbuttonwidget/allowstoggletooff%28%29.md)
   Returns a Boolean value indicating whether a radio button behaves in a toggling manner.
 ### Managing Control State Values and Form Fields
-- [func onStateValue() -> String!](pdfannotationbuttonwidget/onstatevalue.md)
+- [func onStateValue() -> String!](./pdfannotationbuttonwidget/onstatevalue%28%29.md)
   Returns the string associated with the on state of a radio button or checkbox control.
-- [func setOnStateValue(String!)](pdfannotationbuttonwidget/setonstatevalue(_:).md)
+- [func setOnStateValue(String!)](./pdfannotationbuttonwidget/setonstatevalue%28_%29.md)
   Sets the string that is associated with the on state of a radio button or checkbox control.
-- [func fieldName() -> String!](pdfannotationbuttonwidget/fieldname.md)
+- [func fieldName() -> String!](./pdfannotationbuttonwidget/fieldname%28%29.md)
   Returns the internal name of a field (used for reset-form actions).
-- [func setFieldName(String!)](pdfannotationbuttonwidget/setfieldname(_:).md)
+- [func setFieldName(String!)](./pdfannotationbuttonwidget/setfieldname%28_%29.md)
   Sets the internal name of a field (used for reset-form actions).
 ### Constants
-- [enum PDFWidgetControlType](pdfwidgetcontroltype.md)
+- [enum PDFWidgetControlType](./pdfwidgetcontroltype.md)
   The types of annotation buttons.
 ### Instance Methods
-- [func setAllowsToggleToOff(Bool)](pdfannotationbuttonwidget/setallowstoggletooff(_:).md)
+- [func setAllowsToggleToOff(Bool)](./pdfannotationbuttonwidget/setallowstoggletooff%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [PDFAnnotation](pdfannotation.md)
+- [PDFAnnotation](./pdfannotation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PDFAnnotationChoiceWidget](pdfannotationchoicewidget.md)
+### Deprecated Annotation Types
+- [class PDFAnnotationChoiceWidget](./pdfannotationchoicewidget.md)
   A `PDFAnnotationChoiceWidget` object provides user interactivity on a page of a PDF document, in the form of pop-up menus and lists.
-- [class PDFAnnotationCircle](pdfannotationcircle.md)
-- [class PDFAnnotationFreeText](pdfannotationfreetext.md)
+- [class PDFAnnotationCircle](./pdfannotationcircle.md)
+- [class PDFAnnotationFreeText](./pdfannotationfreetext.md)
   A `PDFAnnotationFreeText` object displays text on a page.
-- [class PDFAnnotationInk](pdfannotationink.md)
-- [class PDFAnnotationLine](pdfannotationline.md)
+- [class PDFAnnotationInk](./pdfannotationink.md)
+- [class PDFAnnotationLine](./pdfannotationline.md)
   A `PDFAnnotationLine` object displays a single line on a page.
-- [class PDFAnnotationLink](pdfannotationlink.md)
-- [class PDFAnnotationMarkup](pdfannotationmarkup.md)
+- [class PDFAnnotationLink](./pdfannotationlink.md)
+- [class PDFAnnotationMarkup](./pdfannotationmarkup.md)
   A `PDFAnnotationMarkup` object appears as highlighting, underlining, or a strikethrough style applied to the text of a document.
-- [class PDFAnnotationPopup](pdfannotationpopup.md)
+- [class PDFAnnotationPopup](./pdfannotationpopup.md)
   A `PDFAnnotationPopup` object provides user interactivity on a PDF page in the form of a pop-up menu.
-- [class PDFAnnotationSquare](pdfannotationsquare.md)
+- [class PDFAnnotationSquare](./pdfannotationsquare.md)
   A rectangle annotation on a page.
-- [class PDFAnnotationStamp](pdfannotationstamp.md)
+- [class PDFAnnotationStamp](./pdfannotationstamp.md)
   A `PDFAnnotationStamp` object allows you to display a word or phrase, such as “Confidential,” in a PDF page.
-- [class PDFAnnotationText](pdfannotationtext.md)
+- [class PDFAnnotationText](./pdfannotationtext.md)
   A `PDFAnnotationText` object displays as an icon (such as a “sticky note”) attached to a specified point in the PDF document.
-- [class PDFAnnotationTextWidget](pdfannotationtextwidget.md)
+- [class PDFAnnotationTextWidget](./pdfannotationtextwidget.md)
   A `PDFAnnotationTextWidget` object allows you to manage the appearance and content of text fields.
 
 

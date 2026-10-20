@@ -1,14 +1,15 @@
 # kDefaultPageTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kDefaultPageTimeout = 0x2710
 ```
 

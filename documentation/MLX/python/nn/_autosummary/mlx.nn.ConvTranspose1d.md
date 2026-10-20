@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 
 # mlx.nn.ConvTranspose1d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.ConvTranspose1d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.ConvTranspose1d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.ConvTranspose1d
-
 **class ConvTranspose1d(*in_channels: int*, *out_channels: int*, *kernel_size: int*, *stride: int = 1*, *padding: int = 0*, *dilation: int = 1*, *output_padding: int = 0*, *bias: bool = True*)**
 : Applies a 1-dimensional transposed convolution over the multi-channel input
 sequence.
@@ -59,5 +32,3 @@ output shape. Default: `0`.
 Default: `True`
 
 Methods
-
-** Contents

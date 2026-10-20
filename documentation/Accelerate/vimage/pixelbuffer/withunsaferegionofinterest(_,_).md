@@ -1,7 +1,8 @@
 # withUnsafeRegionOfInterest(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pixel buffer that references the image data within the specified region of interest.
 
@@ -11,7 +12,7 @@ Calls the given closure with a pixel buffer that references the image data withi
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,10 +21,12 @@ Calls the given closure with a pixel buffer that references the image data withi
 func withUnsafeRegionOfInterest<R>(_ regionOfInterest: CGRect, _ body: (vImage.PixelBuffer<Format>) throws -> R) rethrows -> R
 ```
 
+Available when `Format` conforms to `StaticPixelFormat`.
+
 ## Mentions
 
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
-- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
+- [Applying vImage operations to regions of interest](../../applying-vimage-operations-to-regions-of-interest.md)
+- [Converting chroma-subsampled images](../../converting-chroma-subsampled-images.md)
 
 #### Discussion
 
@@ -62,7 +65,7 @@ src.withUnsafeRegionOfInterest(roi) {
 print(src.array)
 ```
 
-To apply an operation that doesn’t work in place to a region of interest, create a temporary buffer to receive the result and call `[`copy(to:)`](vimage/pixelbuffer/copy(to:).md)` to write the result back to the region of interest buffer. For example, the following code applies a box blur to a centered rectangle within the source buffer:
+To apply an operation that doesn’t work in place to a region of interest, create a temporary buffer to receive the result and call `[`copy(to:)`](./copy%28to%29.md)` to write the result back to the region of interest buffer. For example, the following code applies a box blur to a centered rectangle within the source buffer:
 
 ```swift
 let srcImage =  imageLiteral(resourceName: " ... ").cgImage(
@@ -103,7 +106,7 @@ buffer.withUnsafeRegionOfInterest(roi) { buf in
 ## Parameters
 
 - `regionOfInterest`: The region of interest.
-- `body`: A closure with a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) parameter that references the region of interest.
+- `body`: A closure with a [`vImage.PixelBuffer`](../pixelbuffer.md) parameter that references the region of interest.
 
 
 ---

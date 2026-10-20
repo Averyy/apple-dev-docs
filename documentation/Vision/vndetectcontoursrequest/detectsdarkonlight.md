@@ -1,7 +1,8 @@
 # detectsDarkOnLight
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request detects a dark object on a light background to aid in detection.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the request detects a dark object on a li
 var detectsDarkOnLight: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL detectsDarkOnLight;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var contrastAdjustment: Float](vndetectcontoursrequest/contrastadjustment.md)
+### Configuring the Request
+- [var contrastAdjustment: Float](./contrastadjustment.md)
   The amount by which to adjust the image contrast.
-- [var contrastPivot: NSNumber?](vndetectcontoursrequest/contrastpivot.md)
+- [var contrastPivot: NSNumber?](./contrastpivot.md)
   The pixel value to use as a pivot for the contrast.
-- [var maximumImageDimension: Int](vndetectcontoursrequest/maximumimagedimension.md)
+- [var maximumImageDimension: Int](./maximumimagedimension.md)
   The maximum image dimension to use for contour detection.
-- [var detectDarkOnLight: Bool](vndetectcontoursrequest/detectdarkonlight.md)
+- [var detectDarkOnLight: Bool](./detectdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background.
 
 

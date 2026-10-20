@@ -1,7 +1,8 @@
 # NEURLFilterManager.Error.serverSetupIncomplete
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 PIR Server or/and OHTTP Private Relay setup incomplete.
 

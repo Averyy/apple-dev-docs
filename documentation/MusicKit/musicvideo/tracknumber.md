@@ -1,7 +1,8 @@
 # trackNumber
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The music video’s number in the album’s track list.
 

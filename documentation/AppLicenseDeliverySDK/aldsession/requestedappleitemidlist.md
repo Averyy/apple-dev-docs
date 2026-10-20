@@ -1,7 +1,8 @@
 # requestedAppleItemIDList
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of identifiers for apps that iOS requests a license request for in the session.
 
@@ -13,7 +14,7 @@ var requestedAppleItemIDList: [UInt64] { get }
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
 
 ---

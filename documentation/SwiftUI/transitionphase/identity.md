@@ -1,7 +1,8 @@
 # TransitionPhase.identity
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transition is being applied to a view that is in the view hierarchy.
 
@@ -26,9 +27,10 @@ In this phase, a transition should show its steady state appearance, which will 
 
 ## See Also
 
-- [TransitionPhase.willAppear](transitionphase/willappear.md)
+### Getting the phase
+- [TransitionPhase.willAppear](./willappear.md)
   The transition is being applied to a view that is about to be inserted into the view hierarchy.
-- [TransitionPhase.didDisappear](transitionphase/diddisappear.md)
+- [TransitionPhase.didDisappear](./diddisappear.md)
   The transition is being applied to a view that has been requested to be removed from the view hierarchy.
 
 

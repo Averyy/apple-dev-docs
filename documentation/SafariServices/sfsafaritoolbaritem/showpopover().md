@@ -1,7 +1,8 @@
 # showPopover()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.14.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func showPopover()
+```
+
+```objc
+- (void) showPopover;
 ```
 
 

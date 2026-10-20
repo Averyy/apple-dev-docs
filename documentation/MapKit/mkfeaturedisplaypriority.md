@@ -1,7 +1,8 @@
 # MKFeatureDisplayPriority
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicates the display priority for annotations.
 
@@ -19,40 +20,45 @@ Constants that indicates the display priority for annotations.
 struct MKFeatureDisplayPriority
 ```
 
+```c
+typedef float MKFeatureDisplayPriority;
+```
+
 ## Topics
 
 ### Priorities
-- [static var required: MKFeatureDisplayPriority](mkfeaturedisplaypriority/required.md)
+- [static var required: MKFeatureDisplayPriority](./mkfeaturedisplaypriority/required.md)
   A constant indicating that the item is required.
-- [static var defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
+- [static var defaultHigh: MKFeatureDisplayPriority](./mkfeaturedisplaypriority/defaulthigh.md)
   A constant indicating that the item’s display priority is high.
-- [static var defaultLow: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaultlow.md)
+- [static var defaultLow: MKFeatureDisplayPriority](./mkfeaturedisplaypriority/defaultlow.md)
   A constant indicating that the item’s display priority is low.
 ### Creating Feature Display Priorities
-- [init(Float)](mkfeaturedisplaypriority/init(_:).md)
+- [init(Float)](./mkfeaturedisplaypriority/init%28_%29.md)
   Creates a feature display priority using the specified floating point value.
-- [init(rawValue: Float)](mkfeaturedisplaypriority/init(rawvalue:).md)
+- [init(rawValue: Float)](./mkfeaturedisplaypriority/init%28rawvalue%29.md)
   Creates a feature display priority using the specified raw floating point value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var displayPriority: MKFeatureDisplayPriority](mkannotationview/displaypriority.md)
+### Setting the priority for display
+- [var displayPriority: MKFeatureDisplayPriority](./mkannotationview/displaypriority.md)
   The display priority of the annotation view.
-- [var zPriority: MKAnnotationViewZPriority](mkannotationview/zpriority.md)
+- [var zPriority: MKAnnotationViewZPriority](./mkannotationview/zpriority.md)
   The relative importance of the annotation view when in an unselected state with respect to its ordering along the z-axis.
-- [var selectedZPriority: MKAnnotationViewZPriority](mkannotationview/selectedzpriority.md)
+- [var selectedZPriority: MKAnnotationViewZPriority](./mkannotationview/selectedzpriority.md)
   The relative importance of the annotation view when in a selected state with respect to its ordering along the z-axis.
-- [struct MKAnnotationViewZPriority](mkannotationviewzpriority.md)
+- [struct MKAnnotationViewZPriority](./mkannotationviewzpriority.md)
   Constants that indicates the priority for ordering overlapping annotation views.
 
 

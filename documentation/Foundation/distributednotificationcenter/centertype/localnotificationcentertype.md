@@ -1,7 +1,8 @@
 # localNotificationCenterType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Distributes notifications to all tasks on the sender’s computer.
 
@@ -13,6 +14,10 @@ Distributes notifications to all tasks on the sender’s computer.
 
 ```swift
 static let localNotificationCenterType: DistributedNotificationCenter.CenterType
+```
+
+```c
+extern NSDistributedNotificationCenterType const NSLocalNotificationCenterType;
 ```
 
 

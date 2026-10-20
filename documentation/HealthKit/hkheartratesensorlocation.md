@@ -1,7 +1,8 @@
 # HKHeartRateSensorLocation
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate where on the body the heart rate sensor is located.
 
@@ -19,35 +20,39 @@ Constants that indicate where on the body the heart rate sensor is located.
 enum HKHeartRateSensorLocation
 ```
 
+```c
+enum HKHeartRateSensorLocation : NSInteger;
+```
+
 ## Topics
 
 ### Locations
-- [HKHeartRateSensorLocation.other](hkheartratesensorlocation/other.md)
+- [HKHeartRateSensorLocation.other](./hkheartratesensorlocation/other.md)
   The heart rate sensor’s location is not otherwise on this list.
-- [HKHeartRateSensorLocation.chest](hkheartratesensorlocation/chest.md)
+- [HKHeartRateSensorLocation.chest](./hkheartratesensorlocation/chest.md)
   The heart rate sensor is located on the user’s chest.
-- [HKHeartRateSensorLocation.wrist](hkheartratesensorlocation/wrist.md)
+- [HKHeartRateSensorLocation.wrist](./hkheartratesensorlocation/wrist.md)
   The heart rate sensor is located on the user’s wrist.
-- [HKHeartRateSensorLocation.finger](hkheartratesensorlocation/finger.md)
+- [HKHeartRateSensorLocation.finger](./hkheartratesensorlocation/finger.md)
   The heart rate sensor is located on the user’s finger.
-- [HKHeartRateSensorLocation.hand](hkheartratesensorlocation/hand.md)
+- [HKHeartRateSensorLocation.hand](./hkheartratesensorlocation/hand.md)
   The heart rate sensor is located on the user’s hand.
-- [HKHeartRateSensorLocation.earLobe](hkheartratesensorlocation/earlobe.md)
+- [HKHeartRateSensorLocation.earLobe](./hkheartratesensorlocation/earlobe.md)
   The heart rate sensor is located on the user’s earlobe.
-- [HKHeartRateSensorLocation.foot](hkheartratesensorlocation/foot.md)
+- [HKHeartRateSensorLocation.foot](./hkheartratesensorlocation/foot.md)
   The heart rate sensor is located on the user’s foot.
 ### Initializers
-- [init?(rawValue: Int)](hkheartratesensorlocation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkheartratesensorlocation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

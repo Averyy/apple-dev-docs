@@ -1,7 +1,8 @@
 # MusicPlayer.PlaybackStatus.stopped
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is in a stopped state.
 

@@ -1,7 +1,8 @@
 # tossableRepresentation
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tossable representation of the equipment that was tossed.
 
@@ -16,11 +17,12 @@ var tossableRepresentation: TossableRepresentation { get }
 
 ## See Also
 
-- [var id: EquipmentIdentifier](tabletopinteraction/tossoutcome/id.md)
+### Getting the outcome properties
+- [var id: EquipmentIdentifier](./id.md)
   The identifier of the equipment that was tossed.
-- [var pose: TableVisualState.Pose2D](tabletopinteraction/tossoutcome/pose.md)
+- [var pose: TableVisualState.Pose2D](./pose.md)
   The final pose of the equipment at the end of the toss simulation, in table space.
-- [var restingOrientation: Rotation3D](tabletopinteraction/tossoutcome/restingorientation.md)
+- [var restingOrientation: Rotation3D](./restingorientation.md)
   The final resting orientation of the equipment at the end of the toss simulation.
 
 

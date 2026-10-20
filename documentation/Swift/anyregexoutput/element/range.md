@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range over which a value was captured, if there was a capture.
 

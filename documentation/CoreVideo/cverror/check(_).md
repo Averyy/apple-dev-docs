@@ -1,7 +1,8 @@
 # check(_:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Throws an instance of `CVError` if `status` is not `kCVReturnSuccess`
 

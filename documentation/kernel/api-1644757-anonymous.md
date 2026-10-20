@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStoragePriorityBackground](1644757-anonymous/kiostorageprioritybackground.md)
-- [kIOStoragePriorityDefault](1644757-anonymous/kiostorageprioritydefault.md)
-- [kIOStoragePriorityHigh](1644757-anonymous/kiostoragepriorityhigh.md)
-- [kIOStoragePriorityLow](1644757-anonymous/kiostorageprioritylow.md)
+- [kIOStoragePriorityBackground](./api-1644757-anonymous/kiostorageprioritybackground.md)
+- [kIOStoragePriorityDefault](./api-1644757-anonymous/kiostorageprioritydefault.md)
+- [kIOStoragePriorityHigh](./api-1644757-anonymous/kiostoragepriorityhigh.md)
+- [kIOStoragePriorityLow](./api-1644757-anonymous/kiostorageprioritylow.md)
 
 
 ---

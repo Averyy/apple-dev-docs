@@ -1,7 +1,8 @@
 # MemoryInfo
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface MemoryInfo
 ```
 
 ## Topics
 
 ### Instance Properties
-- [totalJSHeapSize](memoryinfo/1631695-totaljsheapsize.md)
-- [usedJSHeapSize](memoryinfo/1630769-usedjsheapsize.md)
+- [totalJSHeapSize](./memoryinfo/api-1631695-totaljsheapsize.md)
+- [usedJSHeapSize](./memoryinfo/api-1630769-usedjsheapsize.md)
 
 
 ---

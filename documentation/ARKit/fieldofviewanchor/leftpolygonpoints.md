@@ -1,7 +1,8 @@
 # leftPolygonPoints
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Left eye polygon boundary points defining the preset field of view.
 

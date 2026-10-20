@@ -1,7 +1,8 @@
 # UITableViewCell.FocusStyle.custom
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cell doesn’t alter its appearance automatically when it becomes focused.
 
@@ -18,13 +19,18 @@ The cell doesn’t alter its appearance automatically when it becomes focused.
 case custom
 ```
 
+```c
+UITableViewCellFocusStyleCustom
+```
+
 #### Discussion
 
-Specifying this style allows you to create your own custom appearance for the cell. It’s recommended that you create custom-looking cells by subclassing [`UITableViewCell`](uitableviewcell.md) and overriding [`didUpdateFocus(in:with:)`](uifocusenvironment/didupdatefocus(in:with:).md).
+Specifying this style allows you to create your own custom appearance for the cell. It’s recommended that you create custom-looking cells by subclassing [`UITableViewCell`](../../uitableviewcell.md) and overriding [`didUpdateFocus(in:with:)`](../../uifocusenvironment/didupdatefocus%28in,with%29.md).
 
 ## See Also
 
-- [UITableViewCell.FocusStyle.default](uitableviewcell/focusstyle-swift.enum/default.md)
+### Constants
+- [UITableViewCell.FocusStyle.default](./default.md)
   The cell alters its appearance in a standard, system-defined way when it becomes focused.
 
 

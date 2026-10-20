@@ -1,7 +1,8 @@
 # SCStreamDelegate
 
 **Framework**: ScreenCaptureKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate protocol your app implements to respond to stream events.
 
@@ -19,41 +20,46 @@ A delegate protocol your app implements to respond to stream events.
 protocol SCStreamDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SCStreamDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to Presenter Overlay
-- [func outputVideoEffectDidStart(for: SCStream)](scstreamdelegate/outputvideoeffectdidstart(for:).md)
+- [func outputVideoEffectDidStart(for: SCStream)](./scstreamdelegate/outputvideoeffectdidstart%28for%29.md)
   Tells the delegate that Presenter Overlay started.
-- [func outputVideoEffectDidStop(for: SCStream)](scstreamdelegate/outputvideoeffectdidstop(for:).md)
+- [func outputVideoEffectDidStop(for: SCStream)](./scstreamdelegate/outputvideoeffectdidstop%28for%29.md)
   Tells the delegate that Presenter Overlay stopped.
 ### Responding to stream stoppage
-- [func stream(SCStream, didStopWithError: any Error)](scstreamdelegate/stream(_:didstopwitherror:).md)
+- [func stream(SCStream, didStopWithError: any Error)](./scstreamdelegate/stream%28_,didstopwitherror%29.md)
   Tells the delegate that the stream stopped with an error.
 ### Instance Methods
-- [func outputVideoEffectDidFail(for: SCStream, withError: any Error)](scstreamdelegate/outputvideoeffectdidfail(for:witherror:).md)
-- [func streamDidBecomeActive(SCStream)](scstreamdelegate/streamdidbecomeactive(_:).md)
-- [func streamDidBecomeInactive(SCStream)](scstreamdelegate/streamdidbecomeinactive(_:).md)
+- [func outputVideoEffectDidFail(for: SCStream, withError: any Error)](./scstreamdelegate/outputvideoeffectdidfail%28for,witherror%29.md)
+- [func streamDidBecomeActive(SCStream)](./scstreamdelegate/streamdidbecomeactive%28_%29.md)
+- [func streamDidBecomeInactive(SCStream)](./scstreamdelegate/streamdidbecomeinactive%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCStream](scstream.md)
+### Content capture
+- [class SCStream](./scstream.md)
   An instance that represents a stream of shareable content.
-- [class SCStreamConfiguration](scstreamconfiguration.md)
+- [class SCStreamConfiguration](./scstreamconfiguration.md)
   An instance that provides the output configuration for a stream.
-- [class SCContentFilter](sccontentfilter.md)
+- [class SCContentFilter](./sccontentfilter.md)
   An instance that filters the content a stream captures.
-- [class SCScreenshotManager](scscreenshotmanager.md)
+- [class SCScreenshotManager](./scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
-- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+- [class SCScreenshotConfiguration](./scscreenshotconfiguration.md)
   An object that contains screenshot properties such as output width, height, and image quality specifications.
-- [class SCScreenshotOutput](scscreenshotoutput.md)
+- [class SCScreenshotOutput](./scscreenshotoutput.md)
   An object that contains all images requested by the client.
-- [class SCVideoEffectOutput](scvideoeffectoutput.md)
+- [class SCVideoEffectOutput](./scvideoeffectoutput.md)
 
 
 ---

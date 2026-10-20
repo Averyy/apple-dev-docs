@@ -1,7 +1,8 @@
 # TVCaptionButtonViewMotionDirection.horizontal
 
 **Framework**: TVUIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The caption button view can tilt in the horzontal direction.
 
@@ -14,13 +15,18 @@ The caption button view can tilt in the horzontal direction.
 case horizontal
 ```
 
+```c
+TVCaptionButtonViewMotionDirectionHorizontal
+```
+
 ## See Also
 
-- [TVCaptionButtonViewMotionDirection.all](tvcaptionbuttonviewmotiondirection/all.md)
+### Tilt Directions
+- [TVCaptionButtonViewMotionDirection.all](./all.md)
   The caption button view can tilt in all directions.
-- [TVCaptionButtonViewMotionDirection.none](tvcaptionbuttonviewmotiondirection/none.md)
+- [TVCaptionButtonViewMotionDirection.none](./none.md)
   The caption button view can’t tilt.
-- [TVCaptionButtonViewMotionDirection.vertical](tvcaptionbuttonviewmotiondirection/vertical.md)
+- [TVCaptionButtonViewMotionDirection.vertical](./vertical.md)
   The caption button view can tilt in the vertical direction.
 
 

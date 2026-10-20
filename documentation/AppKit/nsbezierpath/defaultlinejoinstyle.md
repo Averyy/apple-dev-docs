@@ -1,17 +1,22 @@
 # defaultLineJoinStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the default line join style for all paths.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var defaultLineJoinStyle: NSBezierPath.LineJoinStyle { get set }
+```
+
+```objc
+@property (class) NSLineJoinStyle defaultLineJoinStyle;
 ```
 
 #### Return Value
@@ -20,17 +25,19 @@ The default line join style or `NSMiterLineJoinStyle` if no other value has been
 
 ## See Also
 
-- [var lineJoinStyle: NSBezierPath.LineJoinStyle](nsbezierpath/linejoinstyle-swift.property.md)
+### Related Documentation
+- [var lineJoinStyle: NSBezierPath.LineJoinStyle](./linejoinstyle-swift.property.md)
   The line join style for the path.
-- [class var defaultWindingRule: NSBezierPath.WindingRule](nsbezierpath/defaultwindingrule.md)
+### Configuring Default Path Attributes
+- [class var defaultWindingRule: NSBezierPath.WindingRule](./defaultwindingrule.md)
   Returns the default winding rule used to fill all paths.
-- [class var defaultLineCapStyle: NSBezierPath.LineCapStyle](nsbezierpath/defaultlinecapstyle.md)
+- [class var defaultLineCapStyle: NSBezierPath.LineCapStyle](./defaultlinecapstyle.md)
   Returns the default line cap style for all paths.
-- [class var defaultLineWidth: CGFloat](nsbezierpath/defaultlinewidth.md)
+- [class var defaultLineWidth: CGFloat](./defaultlinewidth.md)
   Returns the default line width for the all paths.
-- [class var defaultMiterLimit: CGFloat](nsbezierpath/defaultmiterlimit.md)
+- [class var defaultMiterLimit: CGFloat](./defaultmiterlimit.md)
   Returns the default miter limit for all paths.
-- [class var defaultFlatness: CGFloat](nsbezierpath/defaultflatness.md)
+- [class var defaultFlatness: CGFloat](./defaultflatness.md)
   The default flatness value for all paths.
 
 

@@ -1,7 +1,8 @@
 # GCDualSenseAdaptiveTrigger
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that encapsulates the features of a DualSense adaptive trigger.
 
@@ -19,6 +20,10 @@ A class that encapsulates the features of a DualSense adaptive trigger.
 class GCDualSenseAdaptiveTrigger
 ```
 
+```objc
+@interface GCDualSenseAdaptiveTrigger : GCControllerButtonInput
+```
+
 #### Overview
 
 A `GCDualSenseAdaptiveTrigger` object allows you to specify a dynamic resistance force that the DualSense controller applies when the user pulls the trigger. For example, set the resistance to give the user the feeling of pulling back on a bow string, firing a weapon, or pulling a lever.
@@ -26,65 +31,66 @@ A `GCDualSenseAdaptiveTrigger` object allows you to specify a dynamic resistance
 ## Topics
 
 ### Getting the mode
-- [var mode: GCDualSenseAdaptiveTrigger.Mode](gcdualsenseadaptivetrigger/mode-swift.property.md)
+- [var mode: GCDualSenseAdaptiveTrigger.Mode](./gcdualsenseadaptivetrigger/mode-swift.property.md)
   The current configuration of the adaptive trigger.
-- [GCDualSenseAdaptiveTrigger.Mode](gcdualsenseadaptivetrigger/mode-swift.enum.md)
+- [GCDualSenseAdaptiveTrigger.Mode](./gcdualsenseadaptivetrigger/mode-swift.enum.md)
   The possible modes of an adaptive trigger.
-- [func setModeOff()](gcdualsenseadaptivetrigger/setmodeoff.md)
+- [func setModeOff()](./gcdualsenseadaptivetrigger/setmodeoff%28%29.md)
   Sets the mode to off and stops any trigger effect.
 ### Configuring the trigger
-- [func setModeFeedbackWithStartPosition(Float, resistiveStrength: Float)](gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition(_:resistivestrength:).md)
+- [func setModeFeedbackWithStartPosition(Float, resistiveStrength: Float)](./gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition%28_,resistivestrength%29.md)
   Sets the mode to provide feedback when the user depresses the trigger at the start position or at a greater value.
-- [GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths](gcdualsenseadaptivetrigger/positionalresistivestrengths.md)
+- [GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths](./gcdualsenseadaptivetrigger/positionalresistivestrengths.md)
   The resistive strengths for multiple positions on a trigger.
-- [func setModeFeedback(resistiveStrengths: GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths)](gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths:).md)
+- [func setModeFeedback(resistiveStrengths: GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths)](./gcdualsenseadaptivetrigger/setmodefeedback%28resistivestrengths%29.md)
   Sets the mode to provide feedback with the specified strengths for each possible trigger position.
-- [func setModeWeaponWithStartPosition(Float, endPosition: Float, resistiveStrength: Float)](gcdualsenseadaptivetrigger/setmodeweaponwithstartposition(_:endposition:resistivestrength:).md)
+- [func setModeWeaponWithStartPosition(Float, endPosition: Float, resistiveStrength: Float)](./gcdualsenseadaptivetrigger/setmodeweaponwithstartposition%28_,endposition,resistivestrength%29.md)
   Sets the mode to provide feedback when the user depresses the trigger between the start and the end positions.
-- [func setModeVibrationWithStartPosition(Float, amplitude: Float, frequency: Float)](gcdualsenseadaptivetrigger/setmodevibrationwithstartposition(_:amplitude:frequency:).md)
+- [func setModeVibrationWithStartPosition(Float, amplitude: Float, frequency: Float)](./gcdualsenseadaptivetrigger/setmodevibrationwithstartposition%28_,amplitude,frequency%29.md)
   Sets the mode to vibrate when the user depresses the trigger at the start position or at a greater value.
-- [func setModeVibration(amplitudes: GCDualSenseAdaptiveTrigger.PositionalAmplitudes, frequency: Float)](gcdualsenseadaptivetrigger/setmodevibration(amplitudes:frequency:).md)
+- [func setModeVibration(amplitudes: GCDualSenseAdaptiveTrigger.PositionalAmplitudes, frequency: Float)](./gcdualsenseadaptivetrigger/setmodevibration%28amplitudes,frequency%29.md)
   Sets the mode to vibrate with the specified amplitudes for each possible trigger position.
-- [GCDualSenseAdaptiveTrigger.PositionalAmplitudes](gcdualsenseadaptivetrigger/positionalamplitudes.md)
+- [GCDualSenseAdaptiveTrigger.PositionalAmplitudes](./gcdualsenseadaptivetrigger/positionalamplitudes.md)
   The amplitudes for multiple positions on a trigger.
-- [func setModeSlopeFeedback(startPosition: Float, endPosition: Float, startStrength: Float, endStrength: Float)](gcdualsenseadaptivetrigger/setmodeslopefeedback(startposition:endposition:startstrength:endstrength:).md)
+- [func setModeSlopeFeedback(startPosition: Float, endPosition: Float, startStrength: Float, endStrength: Float)](./gcdualsenseadaptivetrigger/setmodeslopefeedback%28startposition,endposition,startstrength,endstrength%29.md)
   Sets the mode to provide feedback when the user tilts the trigger between the start and the end positions.
 ### Getting the arm position
-- [var armPosition: Float](gcdualsenseadaptivetrigger/armposition.md)
+- [var armPosition: Float](./gcdualsenseadaptivetrigger/armposition.md)
   The position of the trigger’s arm.
-- [class var discretePositionCount: Int](gcdualsenseadaptivetrigger/discretepositioncount.md)
+- [class var discretePositionCount: Int](./gcdualsenseadaptivetrigger/discretepositioncount.md)
   The number of discrete control positions that the DualSense adaptive triggers support.
 ### Checking the status
-- [var status: GCDualSenseAdaptiveTrigger.Status](gcdualsenseadaptivetrigger/status-swift.property.md)
+- [var status: GCDualSenseAdaptiveTrigger.Status](./gcdualsenseadaptivetrigger/status-swift.property.md)
   The current status of the adaptive trigger and whether it’s applying effects.
-- [GCDualSenseAdaptiveTrigger.Status](gcdualsenseadaptivetrigger/status-swift.enum.md)
+- [GCDualSenseAdaptiveTrigger.Status](./gcdualsenseadaptivetrigger/status-swift.enum.md)
   The possible states of an adaptive trigger.
 
 ## Relationships
 
 ### Inherits From
-- [GCControllerButtonInput](gccontrollerbuttoninput.md)
+- [GCControllerButtonInput](./gccontrollerbuttoninput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCControllerElement](gccontrollerelement.md)
+### Accessing controller elements
+- [class GCControllerElement](./gccontrollerelement.md)
   An input for a physical control, such as a button or thumbstick.
-- [class GCControllerAxisInput](gccontrolleraxisinput.md)
+- [class GCControllerAxisInput](./gccontrolleraxisinput.md)
   A control element that tracks movement along an axis.
-- [class GCControllerButtonInput](gccontrollerbuttoninput.md)
+- [class GCControllerButtonInput](./gccontrollerbuttoninput.md)
   A control element that represents a button touch or press.
-- [class GCControllerTouchpad](gccontrollertouchpad.md)
+- [class GCControllerTouchpad](./gccontrollertouchpad.md)
   A control element that represents a touch event on a touchpad.
-- [class GCControllerDirectionPad](gccontrollerdirectionpad.md)
+- [class GCControllerDirectionPad](./gccontrollerdirectionpad.md)
   A control element associated with a directional pad or a thumbstick.
-- [class GCDeviceCursor](gcdevicecursor.md)
+- [class GCDeviceCursor](./gcdevicecursor.md)
   A control element for the cursor used as a directional pad.
 
 

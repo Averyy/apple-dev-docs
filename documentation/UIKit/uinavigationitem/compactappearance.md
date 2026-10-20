@@ -1,7 +1,8 @@
 # compactAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance settings for a compact-height navigation bar.
 
@@ -19,19 +20,24 @@ The appearance settings for a compact-height navigation bar.
 var compactAppearance: UINavigationBarAppearance? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * compactAppearance;
+```
+
 #### Discussion
 
-When the navigation bar displays the current navigation item, the appearance settings in this property override the settings provided by the [`compactAppearance`](uinavigationbar/compactappearance.md) property of [`UINavigationBar`](uinavigationbar.md).
+When the navigation bar displays the current navigation item, the appearance settings in this property override the settings provided by the [`compactAppearance`](../uinavigationbar/compactappearance.md) property of [`UINavigationBar`](../uinavigationbar.md).
 
-Use this property to apply appearance settings to the navigation bar based on the navigation item stored in the [`topItem`](uinavigationbar/topitem.md) property. If the top item’s [`compactAppearance`](uinavigationitem/compactappearance.md) property is `nil`, UIKit uses the navigation bar’s compact appearance settings.
+Use this property to apply appearance settings to the navigation bar based on the navigation item stored in the [`topItem`](../uinavigationbar/topitem.md) property. If the top item’s [`compactAppearance`](./compactappearance.md) property is `nil`, UIKit uses the navigation bar’s compact appearance settings.
 
 ## See Also
 
-- [var standardAppearance: UINavigationBarAppearance?](uinavigationitem/standardappearance.md)
+### Overriding the navigation bar’s appearance settings
+- [var standardAppearance: UINavigationBarAppearance?](./standardappearance.md)
   The appearance settings for a standard-height navigation bar.
-- [var scrollEdgeAppearance: UINavigationBarAppearance?](uinavigationitem/scrolledgeappearance.md)
+- [var scrollEdgeAppearance: UINavigationBarAppearance?](./scrolledgeappearance.md)
   The appearance settings for a standard-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar.
-- [var compactScrollEdgeAppearance: UINavigationBarAppearance?](uinavigationitem/compactscrolledgeappearance.md)
+- [var compactScrollEdgeAppearance: UINavigationBarAppearance?](./compactscrolledgeappearance.md)
   The appearance settings for a compact-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar.
 
 

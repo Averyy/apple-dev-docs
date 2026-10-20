@@ -1,7 +1,8 @@
 # science
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Science.
 
@@ -18,21 +19,26 @@ Science.
 static let science: CLSContextTopic
 ```
 
+```c
+extern CLSContextTopic const CLSContextTopicScience;
+```
+
 ## See Also
 
-- [static let artsAndMusic: CLSContextTopic](clscontexttopic/artsandmusic.md)
+### Context Topics
+- [static let artsAndMusic: CLSContextTopic](./artsandmusic.md)
   Arts and music.
-- [static let computerScienceAndEngineering: CLSContextTopic](clscontexttopic/computerscienceandengineering.md)
+- [static let computerScienceAndEngineering: CLSContextTopic](./computerscienceandengineering.md)
   Computer science and engineering.
-- [static let healthAndFitness: CLSContextTopic](clscontexttopic/healthandfitness.md)
+- [static let healthAndFitness: CLSContextTopic](./healthandfitness.md)
   Health and fitness.
-- [static let literacyAndWriting: CLSContextTopic](clscontexttopic/literacyandwriting.md)
+- [static let literacyAndWriting: CLSContextTopic](./literacyandwriting.md)
   Literacy and writing.
-- [static let math: CLSContextTopic](clscontexttopic/math.md)
+- [static let math: CLSContextTopic](./math.md)
   Mathematics.
-- [static let socialScience: CLSContextTopic](clscontexttopic/socialscience.md)
+- [static let socialScience: CLSContextTopic](./socialscience.md)
   Social science.
-- [static let worldLanguage: CLSContextTopic](clscontexttopic/worldlanguage.md)
+- [static let worldLanguage: CLSContextTopic](./worldlanguage.md)
   Language acquisition.
 
 

@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceVolumeControllable
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Provides volume and audio muting control for media content.
 
@@ -20,19 +21,19 @@ protocol AVPlaybackUserInterfaceVolumeControllable : AnyObject, Observable
 ## Topics
 
 ### Instance Properties
-- [var hasAudio: Bool](avplaybackuserinterfacevolumecontrollable-4vgi1/hasaudio.md)
+- [var hasAudio: Bool](./avplaybackuserinterfacevolumecontrollable-4vgi1/hasaudio.md)
   Indicates whether the media contains audio tracks.
-- [var isMuted: Bool](avplaybackuserinterfacevolumecontrollable-4vgi1/ismuted.md)
+- [var isMuted: Bool](./avplaybackuserinterfacevolumecontrollable-4vgi1/ismuted.md)
   Controls whether audio output is temporarily silenced.
-- [var volume: Float](avplaybackuserinterfacevolumecontrollable-4vgi1/volume.md)
+- [var volume: Float](./avplaybackuserinterfacevolumecontrollable-4vgi1/volume.md)
   The audio output volume as a normalized value between 0.0 and 1.0.
 
 ## Relationships
 
 ### Inherits From
-- [Observable](../observation/observable.md)
+- [Observable](../Observation/observable.md)
 ### Inherited By
-- [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
+- [AVPlaybackUserInterfaceControllable](./avplaybackuserinterfacecontrollable-92fri.md)
 
 
 ---

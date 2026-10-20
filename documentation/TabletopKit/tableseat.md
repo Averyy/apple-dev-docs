@@ -1,7 +1,8 @@
 # TableSeat
 
 **Framework**: TabletopKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for seats at the table that players occupy.
 
@@ -19,9 +20,9 @@ protocol TableSeat : Identifiable where Self.ID == TableSeatIdentifier
 To represent seats in your game, follow these steps:
 
 1. Create a structure that conforms to this protocol.
-2. Set the [`State`](tableseat/state.md) type alias to [`TableSeatState`](tableseatstate.md).
-3. Declare the `id` property as a [`TableSeatIdentifier`](tableseatidentifier.md) structure.
-4. Declare the [`initialState`](tableseat/initialstate.md) property as a [`State`](tableseat/state.md) structure.
+2. Set the [`State`](./tableseat/state.md) type alias to [`TableSeatState`](./tableseatstate.md).
+3. Declare the `id` property as a [`TableSeatIdentifier`](./tableseatidentifier.md) structure.
+4. Declare the [`initialState`](./tableseat/initialstate.md) property as a [`State`](./tableseat/state.md) structure.
 5. Implement an initializer that sets these properties.
 
 ```swift
@@ -37,39 +38,40 @@ struct Seat: TableSeat {
 }
 ```
 
-Then add the seats to the [`TableSetup`](tablesetup.md) object using one of its add methods. For example, use the [`add(seat:)`](tablesetup/add(seat:)-a9qw.md) method to specify a position for the seat.
+Then add the seats to the [`TableSetup`](./tablesetup.md) object using one of its add methods. For example, use the [`add(seat:)`](./tablesetup/add%28seat%29-a9qw.md) method to specify a position for the seat.
 
 ```swift
 var setup = TableSetup(tabletop: table)
 setup.add(seat: Seat(index: 0, position: .init(x: 0, z: -0.5)))
 ```
 
-To render seats using RealityKit, conform to the [`EntityTableSeat`](entitytableseat.md) protocol instead.
+To render seats using RealityKit, conform to the [`EntityTableSeat`](./entitytableseat.md) protocol instead.
 
 ## Topics
 
 ### Getting the seat data
-- [var initialState: Self.State](tableseat/initialstate.md)
-- [associatedtype State : SeatState](tableseat/state.md)
+- [var initialState: Self.State](./tableseat/initialstate.md)
+- [associatedtype State : SeatState](./tableseat/state.md)
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 ### Inherited By
-- [EntityTableSeat](entitytableseat.md)
+- [EntityTableSeat](./entitytableseat.md)
 
 ## See Also
 
-- [struct TableState](tablestate.md)
+### Seats
+- [struct TableState](./tablestate.md)
   The state of the table that can be queried and modified.
-- [protocol EntityTableSeat](entitytableseat.md)
+- [protocol EntityTableSeat](./entitytableseat.md)
   A protocol for seats at the table that you render using RealityKit.
-- [struct TableSeatIdentifier](tableseatidentifier.md)
+- [struct TableSeatIdentifier](./tableseatidentifier.md)
   A unique identifier for seats.
-- [struct TableSeatState](tableseatstate.md)
+- [struct TableSeatState](./tableseatstate.md)
   The data associated with a seat that a player occupies.
-- [protocol SeatState](seatstate.md)
+- [protocol SeatState](./seatstate.md)
   A protocol for seat data that TabletopKit syncs between players.
 
 

@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of this transform operation, or `nil` if the operation is not defined.
 

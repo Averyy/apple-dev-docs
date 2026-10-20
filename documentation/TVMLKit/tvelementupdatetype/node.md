@@ -1,12 +1,15 @@
 # TVElementUpdateType.node
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current node and its subtree have been modified.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,18 @@ The current node and its subtree have been modified.
 case node
 ```
 
+```c
+TVElementUpdateTypeSelf
+```
+
 ## See Also
 
-- [TVElementUpdateType.none](tvelementupdatetype/none.md)
+### Constants
+- [TVElementUpdateType.none](./none.md)
   The tree structure did not change.
-- [TVElementUpdateType.subtree](tvelementupdatetype/subtree.md)
+- [TVElementUpdateType.subtree](./subtree.md)
   A subtree element has been updated without affecting the order of any immediate children.
-- [TVElementUpdateType.children](tvelementupdatetype/children.md)
+- [TVElementUpdateType.children](./children.md)
   The order of child nodes have been updated due to the addition, removal, or replacement of child nodes.
 
 

@@ -1,7 +1,8 @@
 # scalarType
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scalar type of the ndArray.
 
@@ -20,13 +21,14 @@ var scalarType: NDArray.ScalarType { get }
 
 ## See Also
 
-- [var shape: Span<Int>](ndarray/mutablerawview/shape.md)
+### Inspecting the view
+- [var shape: Span<Int>](./shape.md)
   The shape of the ndArray.
-- [var strides: Span<Int>](ndarray/mutablerawview/strides.md)
+- [var strides: Span<Int>](./strides.md)
   The strides of the ndArray.
-- [var mutableBytes: MutableRawSpan](ndarray/mutablerawview/mutablebytes.md)
+- [var mutableBytes: MutableRawSpan](./mutablebytes.md)
   A mutable span over the backing bytes of this tensor.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/mutablerawview/interleavelayout.md)
+- [var interleaveLayout: NDArray.InterleaveLayout?](./interleavelayout.md)
   Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
 

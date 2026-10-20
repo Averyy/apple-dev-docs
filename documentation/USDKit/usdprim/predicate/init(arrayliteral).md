@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A predicate which accepts only prims with all of the specified flags.
 

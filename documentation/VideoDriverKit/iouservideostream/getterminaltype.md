@@ -1,7 +1,8 @@
 # GetTerminalType
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the terminal type of the stream.
 
@@ -10,7 +11,7 @@ Gets the terminal type of the stream.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoStreamTerminalType GetTerminalType();
 ```
 
@@ -20,9 +21,10 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetTerminalType](iouservideostream/setterminaltype.md)
+### Working with stream terminals
+- [SetTerminalType](./setterminaltype.md)
   Sets the terminal type of the stream.
-- [IOUserVideoStreamTerminalType](videodriverkit/iouservideostreamterminaltype.md)
+- [IOUserVideoStreamTerminalType](../videodriverkit-page/iouservideostreamterminaltype.md)
   The terminal type of video stream.
 
 

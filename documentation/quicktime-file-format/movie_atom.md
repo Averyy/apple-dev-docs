@@ -1,7 +1,8 @@
 # Movie atom ('moov')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that specifies the information that defines a movie.
 
@@ -17,52 +18,53 @@ The layout of movie atom is as follows.
 
 | Data | Type |
 | --- | --- |
-| [`Size`](movie_atom/size.md) | 4 bytes |
-| [`Type`](movie_atom/type.md) = `'moov'` | 4 bytes |
-| [`Profile atom`](movie_atom/profile_atom.md) | `'prfl'` |
-| [`Movie header atom`](movie_atom/movie_header_atom.md) | `'mvhd'`‡ |
-| [`Movie clipping atom`](movie_atom/movie_clipping_atom.md) | `'clip'` |
-| One or more [`Track atoms`](movie_atom/track_atoms.md) | `'trak'` |
-| [`User data atom`](movie_atom/user_data_atom.md) | `'udta'` |
-| [`Color table atom`](movie_atom/color_table_atom.md) | `'ctab'` |
-| [`Compressed movie atom`](movie_atom/compressed_movie_atom.md) | `'cmov'` |
-| [`Reference movie atom`](movie_atom/reference_movie_atom.md) | `'rmra'` |
+| [`Size`](./movie_atom/size.md) | 4 bytes |
+| [`Type`](./movie_atom/type.md) = `'moov'` | 4 bytes |
+| [`Profile atom`](./movie_atom/profile_atom.md) | `'prfl'` |
+| [`Movie header atom`](./movie_atom/movie_header_atom.md) | `'mvhd'`‡ |
+| [`Movie clipping atom`](./movie_atom/movie_clipping_atom.md) | `'clip'` |
+| One or more [`Track atoms`](./movie_atom/track_atoms.md) | `'trak'` |
+| [`User data atom`](./movie_atom/user_data_atom.md) | `'udta'` |
+| [`Color table atom`](./movie_atom/color_table_atom.md) | `'ctab'` |
+| [`Compressed movie atom`](./movie_atom/compressed_movie_atom.md) | `'cmov'` |
+| [`Reference movie atom`](./movie_atom/reference_movie_atom.md) | `'rmra'` |
 
 ‡ denotes required atom.
 
 ## Topics
 
 ### Data fields
-- [Size](movie_atom/size.md)
+- [Size](./movie_atom/size.md)
   The number of bytes in this movie atom.
-- [Type](movie_atom/type.md)
+- [Type](./movie_atom/type.md)
   The type of this movie atom.
-- [Profile atom](movie_atom/profile_atom.md)
+- [Profile atom](./movie_atom/profile_atom.md)
   An atom that summarizes the features and complexity of a movie.
-- [Movie header atom](movie_atom/movie_header_atom.md)
+- [Movie header atom](./movie_atom/movie_header_atom.md)
   An atom that specifies the characteristics of an entire QuickTime movie.
-- [Movie clipping atom](movie_atom/movie_clipping_atom.md)
+- [Movie clipping atom](./movie_atom/movie_clipping_atom.md)
   An atom that specifies the clipping regions for movies and for tracks.
-- [Track atoms](movie_atom/track_atoms.md)
+- [Track atoms](./movie_atom/track_atoms.md)
   One or more atoms that define a single track of a movie.
-- [User data atom](movie_atom/user_data_atom.md)
+- [User data atom](./movie_atom/user_data_atom.md)
   An atom where you define and store data associated with a QuickTime object.
-- [Color table atom](movie_atom/color_table_atom.md)
+- [Color table atom](./movie_atom/color_table_atom.md)
   An atom that defines a list of preferred colors for displaying the movie on devices that support only 256 colors.
-- [Compressed movie atom](movie_atom/compressed_movie_atom.md)
+- [Compressed movie atom](./movie_atom/compressed_movie_atom.md)
   An atom you use to reduce file size and startup latency by compressing movie resources.
-- [Reference movie atom](movie_atom/reference_movie_atom.md)
+- [Reference movie atom](./movie_atom/reference_movie_atom.md)
   A reference movie atom contains references to one or more movies.
 
 ## See Also
 
-- [Movie header atom ('mvhd')](movie_header_atom.md)
+### Describing movies
+- [Movie header atom ('mvhd')](./movie_header_atom.md)
   An atom that specifies the characteristics of an entire QuickTime movie.
-- [Color table atom ('ctab')](color_table_atom.md)
+- [Color table atom ('ctab')](./color_table_atom.md)
   An atom that defines a list of preferred colors for displaying the movie on devices that support only 256 colors.
-- [User data atoms](user_data_atoms.md)
+- [User data atoms](./user_data_atoms.md)
   Atoms you use to define and store data associated with a QuickTime object.
-- [Interleaving movie data](interleaving_movie_data.md)
+- [Interleaving movie data](./interleaving_movie_data.md)
   Interleave data in your movie for optimal playback.
 
 

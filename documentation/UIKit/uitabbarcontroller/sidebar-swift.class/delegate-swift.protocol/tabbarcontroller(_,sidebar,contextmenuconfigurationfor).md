@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:contextMenuConfigurationFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the sidebar is about to display a context menu for the specified `tab`. Return either a concrete `UIContextMenuConfiguration` or nil if the tab does not show context menus.
 
@@ -17,9 +18,13 @@ Called when the sidebar is about to display a context menu for the specified `ta
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, contextMenuConfigurationFor tab: UITab) -> UIContextMenuConfiguration?
 ```
 
+```objc
+- (UIContextMenuConfiguration *) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar contextMenuConfigurationForTab:(UITab *) tab;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 
 ---

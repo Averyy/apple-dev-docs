@@ -1,13 +1,14 @@
 # light
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,8 +19,9 @@ static let light: SiriTipViewStyle
 
 ## See Also
 
-- [static let automatic: SiriTipViewStyle](siritipviewstyle/automatic.md)
-- [static let dark: SiriTipViewStyle](siritipviewstyle/dark.md)
+### Getting the styles
+- [static let automatic: SiriTipViewStyle](./automatic.md)
+- [static let dark: SiriTipViewStyle](./dark.md)
 
 
 ---

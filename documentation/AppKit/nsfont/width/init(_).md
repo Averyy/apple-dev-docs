@@ -1,10 +1,11 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,7 +15,8 @@ init(_ rawValue: CGFloat)
 
 ## See Also
 
-- [init(rawValue: CGFloat)](nsfont/width/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: CGFloat)](./init%28rawvalue%29.md)
 
 
 ---

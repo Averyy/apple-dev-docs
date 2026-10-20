@@ -1,12 +1,13 @@
 # NSBezierPath.LineCapStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the shape of endpoints for an open path when it is stroked.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ Constants that specify the shape of endpoints for an open path when it is stroke
 enum LineCapStyle
 ```
 
+```c
+enum NSLineCapStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSBezierPath.LineCapStyle.butt](nsbezierpath/linecapstyle-swift.enum/butt.md)
+- [NSBezierPath.LineCapStyle.butt](./linecapstyle-swift.enum/butt.md)
   Specifies a butt line cap style for endpoints for an open path when stroked.
-- [NSBezierPath.LineCapStyle.round](nsbezierpath/linecapstyle-swift.enum/round.md)
+- [NSBezierPath.LineCapStyle.round](./linecapstyle-swift.enum/round.md)
   Specifies a round line cap style for endpoints for an open path when stroked.
-- [NSBezierPath.LineCapStyle.square](nsbezierpath/linecapstyle-swift.enum/square.md)
+- [NSBezierPath.LineCapStyle.square](./linecapstyle-swift.enum/square.md)
   Specifies a square line cap style for endpoints for an open path when stroked.
 ### Initializers
-- [init?(rawValue: UInt)](nsbezierpath/linecapstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./linecapstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSBezierPath.ElementType](nsbezierpath/elementtype.md)
+### Constants
+- [NSBezierPath.ElementType](./elementtype.md)
   Constants that specify basic path element commands.
-- [NSBezierPath.LineJoinStyle](nsbezierpath/linejoinstyle-swift.enum.md)
+- [NSBezierPath.LineJoinStyle](./linejoinstyle-swift.enum.md)
   Constants that specify the shape of the joins between connected segments of a stroked path.
-- [NSBezierPath.WindingRule](nsbezierpath/windingrule-swift.enum.md)
+- [NSBezierPath.WindingRule](./windingrule-swift.enum.md)
   Constants that specify the winding rule a Bézier path uses.
 
 

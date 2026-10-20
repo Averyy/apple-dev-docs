@@ -2,6 +2,7 @@
 
 **Framework**: ExtensionFoundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that manages configuration data for an app extension.
@@ -23,11 +24,12 @@ associatedtype Configuration : AppExtensionConfiguration
 
 #### Discussion
 
-When you create a custom app extension, Swift infers this type from your implementation of the required [`configuration`](appextension/configuration-swift.property.md) property.
+When you create a custom app extension, Swift infers this type from your implementation of the required [`configuration`](./configuration-swift.property.md) property.
 
 ## See Also
 
-- [var configuration: Self.Configuration](appextension/configuration-swift.property.md)
+### Configuring the app extension
+- [var configuration: Self.Configuration](./configuration-swift.property.md)
   The configuration details for this app extension.
 
 

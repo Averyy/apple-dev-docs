@@ -1,7 +1,8 @@
 # registerName(_:constructor:classAttributes:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Publishes a custom filter that is not packaged as an image unit.
 
@@ -19,15 +20,19 @@ Publishes a custom filter that is not packaged as an image unit.
 class func registerName(_ name: String, constructor anObject: any CIFilterConstructor, classAttributes attributes: [String : Any] = [:])
 ```
 
+```objc
++ (void) registerFilterName:(NSString *) name constructor:(id<CIFilterConstructor>) anObject classAttributes:(NSDictionary<NSString *,id> *) attributes;
+```
+
 #### Discussion
 
-In most cases you don’t need to use this method because the preferred way to register a custom filter that you write is to package it as an image unit. You do not need to use this method for a filter packaged as an image unit because you  register your filter using the `CIPlugInRegistration` protocol. (See [`Core Image Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185) for additional details.)
+In most cases you don’t need to use this method because the preferred way to register a custom filter that you write is to package it as an image unit. You do not need to use this method for a filter packaged as an image unit because you  register your filter using the `CIPlugInRegistration` protocol. (See [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185) for additional details.)
 
 ## Parameters
 
 - `name`: A string object that specifies the name of the filter you want to publish.
 - `anObject`: A constructor object that implements the `filterWithName` method.
-- `attributes`: A dictionary that contains the class display name and filter categories attributes along with the appropriate value for each attributes. That is,  the [`kCIAttributeFilterDisplayName`](kciattributefilterdisplayname.md) attribute and a string that specifies the display name, and the [`kCIAttributeFilterCategories`](kciattributefiltercategories.md) and an array that specifies the categories to which the filter belongs (such as [`kCICategoryStillImage`](kcicategorystillimage.md) and [`kCICategoryDistortionEffect`](kcicategorydistortioneffect.md)). All other attributes for the filter should be returned by the custom `attributes` method implement by the filter.
+- `attributes`: A dictionary that contains the class display name and filter categories attributes along with the appropriate value for each attributes. That is,  the [`kCIAttributeFilterDisplayName`](../kciattributefilterdisplayname.md) attribute and a string that specifies the display name, and the [`kCIAttributeFilterCategories`](../kciattributefiltercategories.md) and an array that specifies the categories to which the filter belongs (such as [`kCICategoryStillImage`](../kcicategorystillimage.md) and [`kCICategoryDistortionEffect`](../kcicategorydistortioneffect.md)). All other attributes for the filter should be returned by the custom `attributes` method implement by the filter.
 
 
 ---

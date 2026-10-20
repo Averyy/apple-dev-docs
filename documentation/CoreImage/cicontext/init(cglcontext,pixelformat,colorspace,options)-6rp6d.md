@@ -1,12 +1,15 @@
 # init(cglContext:pixelFormat:colorSpace:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Image context from a CGL context, using the specified options, color space, and pixel format object.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
+
+> **Deprecated**: Core Image OpenGL API deprecated. (Define CI_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,11 +17,15 @@ Creates a Core Image context from a CGL context, using the specified options, co
 init(cglContext cglctx: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]? = nil)
 ```
 
+```objc
++ (CIContext *) contextWithCGLContext:(CGLContextObj) cglctx pixelFormat:(CGLPixelFormatObj) pixelFormat colorSpace:(CGColorSpaceRef) colorSpace options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Discussion
 
-After calling this method, Core Image draws content into the surface (drawable object) attached to the CGL context. A CGL context is a macOS OpenGL context. For more information, see [`OpenGL Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_intro/opengl_intro.html#//apple_ref/doc/uid/TP40001987).
+After calling this method, Core Image draws content into the surface (drawable object) attached to the CGL context. A CGL context is a macOS OpenGL context. For more information, see [OpenGL Programming Guide for Mac](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_intro/opengl_intro.html#//apple_ref/doc/uid/TP40001987).
 
-When you create a [`CIContext`](cicontext.md) object using a CGL context, all OpenGL states set for the CGL context affect rendering to that context. That means that coordinate and viewport transformations set on the CGL context, as well as the vertex color, affect drawing to that context.
+When you create a [`CIContext`](../cicontext.md) object using a CGL context, all OpenGL states set for the CGL context affect rendering to that context. That means that coordinate and viewport transformations set on the CGL context, as well as the vertex color, affect drawing to that context.
 
 For best results, follow these guidelines when you use Core Image to render into an OpenGL context:
 
@@ -65,23 +72,25 @@ CIContext *myCIContext = [CIContext contextWithCGLContext: CGLGetCurrentContext(
 - `cglctx`: A CGL context obtained by calling the CGL function `CGLCreateContext(_:_:_:)`.
 - `pixelFormat`: A CGL pixel format object either obtained from the system or created by calling a CGL function such as `CGLChoosePixelFormat(_:_:_:)`. This parameter must be the same pixel format object used to create the CGL context. The pixel format object must be valid for the lifetime of the Core Image context. Don’t release the pixel format object until after you release the Core Image context.
 - `colorSpace`: A color space object encapsulating color space information that is used to specify how color values are interpreted.
-- `options`: A dictionary that contains options for creating a [`CIContext`](cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
+- `options`: A dictionary that contains options for creating a [`CIContext`](../cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](../cicontextoption.md) along with the appropriate value.
 
 ## See Also
 
-- [init(cgContext: CGContext, options: [CIContextOption : Any]?)](cicontext/init(cgcontext:options:)-6p78w.md)
+### Related Documentation
+- [init(cgContext: CGContext, options: [CIContextOption : Any]?)](./init%28cgcontext,options%29-6p78w.md)
   Creates a Core Image context from a Quartz context, using the specified options.
-- [init(eaglContext: EAGLContext)](cicontext/init(eaglcontext:)-8ajef.md)
+### Deprecated
+- [init(eaglContext: EAGLContext)](./init%28eaglcontext%29-8ajef.md)
   Creates a Core Image context from an EAGL context.
-- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:)-6uyqj.md)
+- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](./init%28eaglcontext,options%29-6uyqj.md)
   Creates a Core Image context from an EAGL context using the specified options.
-- [init?(forOfflineGPUAtIndex: UInt32)](cicontext/init(forofflinegpuatindex:).md)
+- [init?(forOfflineGPUAtIndex: UInt32)](./init%28forofflinegpuatindex%29.md)
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display.
-- [init?(forOfflineGPUAtIndex: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?, sharedContext: CGLContextObj?)](cicontext/init(forofflinegpuatindex:colorspace:options:sharedcontext:).md)
+- [init?(forOfflineGPUAtIndex: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?, sharedContext: CGLContextObj?)](./init%28forofflinegpuatindex,colorspace,options,sharedcontext%29.md)
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display, with the specified options.
-- [func createCGLayer(with: CGSize, info: CFDictionary?) -> CGLayer?](cicontext/createcglayer(with:info:).md)
+- [func createCGLayer(with: CGSize, info: CFDictionary?) -> CGLayer?](./createcglayer%28with,info%29.md)
   Creates a CGLayer object from the provided parameters.
-- [func draw(CIImage, at: CGPoint, from: CGRect)](cicontext/draw(_:at:from:).md)
+- [func draw(CIImage, at: CGPoint, from: CGRect)](./draw%28_,at,from%29.md)
   Renders a region of an image to a point in the context destination.
 
 

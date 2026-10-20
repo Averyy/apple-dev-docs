@@ -1,7 +1,8 @@
 # AppsReportingCampaign.BillingEvent
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The billing event of the campaign at report time.
 
@@ -10,9 +11,14 @@ The billing event of the campaign at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingCampaign.BillingEvent
 ```
+
+## Possible Values
+
+- `TAPS`: The campaign is charged per tap.
+- `IMPRESSIONS`: The campaign is charged per thousand impressions (CPM).
 
 #### Discussion
 
@@ -26,7 +32,7 @@ This determines which report metrics are actionable for cost analysis: `TAPS` bi
 }
 ```
 
-See [`ReportingBillingEvent`](reportingbillingevent.md) for additional context.
+See [`ReportingBillingEvent`](../reportingbillingevent.md) for additional context.
 
 
 ---

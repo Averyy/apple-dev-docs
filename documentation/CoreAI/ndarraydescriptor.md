@@ -1,7 +1,8 @@
 # NDArrayDescriptor
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of an array’s shape, scalar type, and memory layout expectations.
 
@@ -20,47 +21,48 @@ struct NDArrayDescriptor
 
 #### Overview
 
-You obtain an `NDArrayDescriptor` from an [`InferenceFunctionDescriptor`](inferencefunctiondescriptor.md) by querying the descriptor of a specific input or output:
+You obtain an `NDArrayDescriptor` from an [`InferenceFunctionDescriptor`](./inferencefunctiondescriptor.md) by querying the descriptor of a specific input or output:
 
 ```swift
 let valueDescriptor = functionDescriptor.inputDescriptor(of: "x")!
 guard case .ndArray(let ndArrayDescriptor) = valueDescriptor else { ... }
 ```
 
-The descriptor contains the expectations for an array value that you provide to an [`InferenceFunction`](inferencefunction.md). Most expectations are strict: for example, if the descriptor specifies [`scalarType`](ndarraydescriptor/scalartype.md) as `.float32`, the array you provide must use `.float32`.
+The descriptor contains the expectations for an array value that you provide to an [`InferenceFunction`](./inferencefunction.md). Most expectations are strict: for example, if the descriptor specifies [`scalarType`](./ndarraydescriptor/scalartype.md) as `.float32`, the array you provide must use `.float32`.
 
 ## Topics
 
 ### Inspecting descriptor properties
-- [var shape: [Int]](ndarraydescriptor/shape.md)
+- [var shape: [Int]](./ndarraydescriptor/shape.md)
   The length of each dimension of the array.
-- [var scalarType: NDArray.ScalarType](ndarraydescriptor/scalartype.md)
+- [var scalarType: NDArray.ScalarType](./ndarraydescriptor/scalartype.md)
   The scalar type of the array.
-- [var rank: Int](ndarraydescriptor/rank.md)
+- [var rank: Int](./ndarraydescriptor/rank.md)
   The number of dimensions in the array.
-- [var hasDynamicShape: Bool](ndarraydescriptor/hasdynamicshape.md)
+- [var hasDynamicShape: Bool](./ndarraydescriptor/hasdynamicshape.md)
   A Boolean value that indicates whether the shape has any dynamic dimensions.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarraydescriptor/interleavelayout.md)
+- [var interleaveLayout: NDArray.InterleaveLayout?](./ndarraydescriptor/interleavelayout.md)
   Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 ### Computing layout
-- [var minimumByteCount: Int](ndarraydescriptor/minimumbytecount.md)
+- [var minimumByteCount: Int](./ndarraydescriptor/minimumbytecount.md)
   The minimum number of bytes needed for storage with this descriptor’s shape and preferred strides.
-- [var preferredStrides: [Int]](ndarraydescriptor/preferredstrides.md)
+- [var preferredStrides: [Int]](./ndarraydescriptor/preferredstrides.md)
   The strides that avoid data layout transformations during inference.
 ### Resolving dynamic shapes
-- [func resolvingDynamicDimensions([Int]) -> NDArrayDescriptor](ndarraydescriptor/resolvingdynamicdimensions(_:).md)
+- [func resolvingDynamicDimensions([Int]) -> NDArrayDescriptor](./ndarraydescriptor/resolvingdynamicdimensions%28_%29.md)
   Returns a new descriptor with all dynamic dimensions replaced by concrete values.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NDArray](ndarray.md)
+### Multidimensional arrays
+- [struct NDArray](./ndarray.md)
   A multidimensional array of scalar values used for model inference.
 
 

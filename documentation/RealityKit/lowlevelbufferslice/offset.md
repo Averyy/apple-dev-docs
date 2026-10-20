@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte offset into `buffer` at which this slice begins.
 

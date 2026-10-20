@@ -1,7 +1,8 @@
 # MPSNNOptimizer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for optimization layers.
 
@@ -19,47 +20,52 @@ The base class for optimization layers.
 class MPSNNOptimizer
 ```
 
+```objc
+@interface MPSNNOptimizer : MPSKernel
+```
+
 ## Topics
 
 ### Instance Properties
-- [var applyGradientClipping: Bool](mpsnnoptimizer/applygradientclipping.md)
-- [var gradientClipMax: Float](mpsnnoptimizer/gradientclipmax.md)
-- [var gradientClipMin: Float](mpsnnoptimizer/gradientclipmin.md)
-- [var gradientRescale: Float](mpsnnoptimizer/gradientrescale.md)
-- [var learningRate: Float](mpsnnoptimizer/learningrate.md)
-- [var regularizationScale: Float](mpsnnoptimizer/regularizationscale.md)
-- [var regularizationType: MPSNNRegularizationType](mpsnnoptimizer/regularizationtype.md)
+- [var applyGradientClipping: Bool](./mpsnnoptimizer/applygradientclipping.md)
+- [var gradientClipMax: Float](./mpsnnoptimizer/gradientclipmax.md)
+- [var gradientClipMin: Float](./mpsnnoptimizer/gradientclipmin.md)
+- [var gradientRescale: Float](./mpsnnoptimizer/gradientrescale.md)
+- [var learningRate: Float](./mpsnnoptimizer/learningrate.md)
+- [var regularizationScale: Float](./mpsnnoptimizer/regularizationscale.md)
+- [var regularizationType: MPSNNRegularizationType](./mpsnnoptimizer/regularizationtype.md)
 ### Instance Methods
-- [func setLearningRate(Float)](mpsnnoptimizer/setlearningrate(_:).md)
+- [func setLearningRate(Float)](./mpsnnoptimizer/setlearningrate%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Inherited By
-- [MPSNNOptimizerAdam](mpsnnoptimizeradam.md)
-- [MPSNNOptimizerRMSProp](mpsnnoptimizerrmsprop.md)
-- [MPSNNOptimizerStochasticGradientDescent](mpsnnoptimizerstochasticgradientdescent.md)
+- [MPSNNOptimizerAdam](./mpsnnoptimizeradam.md)
+- [MPSNNOptimizerRMSProp](./mpsnnoptimizerrmsprop.md)
+- [MPSNNOptimizerStochasticGradientDescent](./mpsnnoptimizerstochasticgradientdescent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSNNOptimizerAdam](mpsnnoptimizeradam.md)
+### Optimization Layers
+- [class MPSNNOptimizerAdam](./mpsnnoptimizeradam.md)
   An optimization layer that performs an Adam pdate.
-- [class MPSNNOptimizerRMSProp](mpsnnoptimizerrmsprop.md)
+- [class MPSNNOptimizerRMSProp](./mpsnnoptimizerrmsprop.md)
   An optimization layer that performs a root mean square propagation update.
-- [class MPSNNOptimizerStochasticGradientDescent](mpsnnoptimizerstochasticgradientdescent.md)
+- [class MPSNNOptimizerStochasticGradientDescent](./mpsnnoptimizerstochasticgradientdescent.md)
   An optimization layer that performs a gradient descent with an optional momentum update.
-- [class MPSNNOptimizerDescriptor](mpsnnoptimizerdescriptor.md)
+- [class MPSNNOptimizerDescriptor](./mpsnnoptimizerdescriptor.md)
   An object that specifies properties used by an optimizer kernel.
 
 

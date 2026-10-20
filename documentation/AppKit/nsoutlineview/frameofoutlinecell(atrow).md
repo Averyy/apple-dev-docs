@@ -1,7 +1,8 @@
 # frameOfOutlineCell(atRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the frame of the outline cell for a given row.
 
@@ -14,9 +15,13 @@ Returns the frame of the outline cell for a given row.
 func frameOfOutlineCell(atRow row: Int) -> NSRect
 ```
 
+```objc
+- (NSRect) frameOfOutlineCellAtRow:(NSInteger) row;
+```
+
 #### Return Value
 
-The frame of the outline cell for the row at index `row`, considering the current indentation and the value in the [`indentationMarkerFollowsCell`](nsoutlineview/indentationmarkerfollowscell.md) property. If the row at index `row` is not an expandable row, returns `NSZeroRect`.
+The frame of the outline cell for the row at index `row`, considering the current indentation and the value in the [`indentationMarkerFollowsCell`](./indentationmarkerfollowscell.md) property. If the row at index `row` is not an expandable row, returns `NSZeroRect`.
 
 #### Discussion
 

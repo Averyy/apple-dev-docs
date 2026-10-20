@@ -1,7 +1,8 @@
 # init(racingWheel:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 26.0+

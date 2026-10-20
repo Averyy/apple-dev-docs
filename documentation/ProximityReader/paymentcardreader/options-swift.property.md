@@ -1,7 +1,8 @@
 # options
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The defined configuration settings when the reader was created.
 
@@ -18,7 +19,8 @@ final let options: PaymentCardReader.Options
 
 ## See Also
 
-- [var readerIdentifier: String](paymentcardreader/readeridentifier.md)
+### Getting the configuration details
+- [var readerIdentifier: String](./readeridentifier.md)
   The unique identifier for this card reader.
 
 

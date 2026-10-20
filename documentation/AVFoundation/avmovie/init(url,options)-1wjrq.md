@@ -1,7 +1,8 @@
 # init(url:options:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 
@@ -19,9 +20,13 @@ Creates a movie object from a movie header stored in a QuickTime movie file of I
 init(url URL: URL, options: [String : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Discussion
 
-Upon creation, the values of the [`defaultMediaDataStorage`](avmovie/defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](avmovietrack/mediadatastorage.md) properties are `nil`.
+Upon creation, the values of the [`defaultMediaDataStorage`](./defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](../avmovietrack/mediadatastorage.md) properties are `nil`.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Upon creation, the values of the [`defaultMediaDataStorage`](avmovie/defaultmedi
 
 ## See Also
 
-- [convenience init(url: URL)](avmovie/init(url:).md)
+### Creating a movie
+- [convenience init(url: URL)](./init%28url%29.md)
   Creates a movie that models the media at the specified URL.
-- [init(data: Data, options: [String : Any]?)](avmovie/init(data:options:).md)
+- [init(data: Data, options: [String : Any]?)](./init%28data,options%29.md)
   Creates a movie object from a movie file’s data.
-- [Initialization options](initialization-options.md)
+- [Initialization options](../initialization-options.md)
   Specify options to configure the initialization of a movie.
 
 

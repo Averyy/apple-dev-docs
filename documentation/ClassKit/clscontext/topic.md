@@ -1,7 +1,8 @@
 # topic
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The area of study to which a context relates.
 
@@ -18,15 +19,20 @@ The area of study to which a context relates.
 var topic: CLSContextTopic? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) CLSContextTopic topic;
+```
+
 #### Discussion
 
-Set the topic to tell teachers what kind of content a given context covers using one of the values from [`CLSContextTopic`](clscontexttopic.md). The topic set on a context applies to that context and any of its descendants for which you haven’t explicitly set a topic. If your entire app covers only a single topic, you only need to set the topic for the [`mainAppContext`](clsdatastore/mainappcontext.md).
+Set the topic to tell teachers what kind of content a given context covers using one of the values from [`CLSContextTopic`](../clscontexttopic.md). The topic set on a context applies to that context and any of its descendants for which you haven’t explicitly set a topic. If your entire app covers only a single topic, you only need to set the topic for the [`mainAppContext`](../clsdatastore/mainappcontext.md).
 
 ## See Also
 
-- [var displayOrder: Int](clscontext/displayorder.md)
+### Managing context presentation
+- [var displayOrder: Int](./displayorder.md)
   The position of a context relative to its siblings.
-- [struct CLSContextTopic](clscontexttopic.md)
+- [struct CLSContextTopic](../clscontexttopic.md)
   The areas of study to which contexts may relate.
 
 

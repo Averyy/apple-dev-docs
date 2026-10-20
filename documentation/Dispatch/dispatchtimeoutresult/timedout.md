@@ -1,18 +1,19 @@
 # DispatchTimeoutResult.timedOut
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that a dispatch operation failed to finish before the specified time elapsed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ case timedOut
 
 ## See Also
 
-- [DispatchTimeoutResult.success](dispatchtimeoutresult/success.md)
+### Enumeration Cases
+- [DispatchTimeoutResult.success](./success.md)
   Indicates that a dispatch operation successfully finished before the specified time elapsed.
 
 

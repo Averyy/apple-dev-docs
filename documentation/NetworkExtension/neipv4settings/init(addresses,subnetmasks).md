@@ -1,7 +1,8 @@
 # init(addresses:subnetMasks:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an IPv4 settings object.
 
@@ -17,6 +18,10 @@ Initializes an IPv4 settings object.
 
 ```swift
 init(addresses: [String], subnetMasks: [String])
+```
+
+```objc
+- (instancetype) initWithAddresses:(NSArray<NSString *> *) addresses subnetMasks:(NSArray<NSString *> *) subnetMasks;
 ```
 
 #### Return Value

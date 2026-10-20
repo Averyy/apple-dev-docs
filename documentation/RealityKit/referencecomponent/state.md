@@ -1,7 +1,8 @@
 # state
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A variable that indicates the loading state of the referenced entity.
 

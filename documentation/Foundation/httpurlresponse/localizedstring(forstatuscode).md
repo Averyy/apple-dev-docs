@@ -1,7 +1,8 @@
 # localizedString(forStatusCode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a localized string corresponding to a specified HTTP status code.
 
@@ -20,17 +21,22 @@ Returns a localized string corresponding to a specified HTTP status code.
 class func localizedString(forStatusCode statusCode: Int) -> String
 ```
 
+```objc
++ (NSString *) localizedStringForStatusCode:(NSInteger) statusCode;
+```
+
 #### Return Value
 
 A localized string suitable for displaying to users that describes the specified status code.
 
 ## Parameters
 
-- `statusCode`: The HTTP status code. See [`RFC 2616`](https://developer.apple.comhttp://www.ietf.org/rfc/rfc2616.txt) for details.
+- `statusCode`: The HTTP status code. See [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt) for details.
 
 ## See Also
 
-- [var statusCode: Int](httpurlresponse/statuscode.md)
+### Getting response status codes
+- [var statusCode: Int](./statuscode.md)
   The response’s HTTP status code.
 
 

@@ -1,7 +1,8 @@
 # CSSM_ATTACH_READ_ONLY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ATTACH_READ_ONLY: Int { get }
+```
+
+```c
+CSSM_ATTACH_READ_ONLY
 ```
 
 

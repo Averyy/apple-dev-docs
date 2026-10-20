@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The library’s basic type.
@@ -20,9 +21,14 @@ The library’s basic type.
 var type: MTLLibraryType { get }
 ```
 
+```objc
+@property (readonly) MTLLibraryType type;
+```
+
 ## See Also
 
-- [var installName: String?](mtllibrary/installname.md)
+### Querying basic library attributes
+- [var installName: String?](./installname.md)
   The installation name for a dynamic library.
 
 

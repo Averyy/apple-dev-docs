@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an message identifier with the given raw value.
 

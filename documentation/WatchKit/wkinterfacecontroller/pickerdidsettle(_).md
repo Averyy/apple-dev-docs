@@ -1,7 +1,8 @@
 # pickerDidSettle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to let you know when the user settles on a value in a picker.
 
@@ -12,6 +13,10 @@ Called to let you know when the user settles on a value in a picker.
 
 ```swift
 func pickerDidSettle(_ picker: WKInterfacePicker)
+```
+
+```objc
+- (void) pickerDidSettle:(WKInterfacePicker *) picker;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## See Also
 
-- [func pickerDidFocus(WKInterfacePicker)](wkinterfacecontroller/pickerdidfocus(_:).md)
+### Managing pickers
+- [func pickerDidFocus(WKInterfacePicker)](./pickerdidfocus%28_%29.md)
   Called to let you know that the specified picker is now receiving input from the Digital Crown.
-- [func pickerDidResignFocus(WKInterfacePicker)](wkinterfacecontroller/pickerdidresignfocus(_:).md)
+- [func pickerDidResignFocus(WKInterfacePicker)](./pickerdidresignfocus%28_%29.md)
   Called to let you know that the specified picker is no longer receiving input from the Digital Crown.
 
 

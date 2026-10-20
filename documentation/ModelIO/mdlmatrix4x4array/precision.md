@@ -1,7 +1,8 @@
 # precision
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var precision: MDLDataPrecision { get }
+```
+
+```objc
+@property (nonatomic, readonly) MDLDataPrecision precision;
 ```
 
 

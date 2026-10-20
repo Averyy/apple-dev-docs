@@ -1,7 +1,8 @@
 # CMErrorMotionActivityNotAuthorized
 
 **Framework**: Core Motion  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The app isn’t currently authorized to use motion activity support.
 
@@ -19,33 +20,38 @@ The app isn’t currently authorized to use motion activity support.
 var CMErrorMotionActivityNotAuthorized: CMError { get }
 ```
 
+```c
+CMErrorMotionActivityNotAuthorized
+```
+
 ## See Also
 
-- [var CMErrorDeviceRequiresMovement: CMError](cmerrordevicerequiresmovement.md)
+### Errors
+- [var CMErrorDeviceRequiresMovement: CMError](./cmerrordevicerequiresmovement.md)
   The device must move for a sampling of motion data to occur.
-- [var CMErrorInvalidAction: CMError](cmerrorinvalidaction.md)
+- [var CMErrorInvalidAction: CMError](./cmerrorinvalidaction.md)
   The specified action is invalid.
-- [var CMErrorInvalidParameter: CMError](cmerrorinvalidparameter.md)
+- [var CMErrorInvalidParameter: CMError](./cmerrorinvalidparameter.md)
   The specified parameter is invalid.
-- [var CMErrorMotionActivityNotAvailable: CMError](cmerrormotionactivitynotavailable.md)
+- [var CMErrorMotionActivityNotAvailable: CMError](./cmerrormotionactivitynotavailable.md)
   Motion activity support isn’t available on the current device.
-- [var CMErrorMotionActivityNotEntitled: CMError](cmerrormotionactivitynotentitled.md)
+- [var CMErrorMotionActivityNotEntitled: CMError](./cmerrormotionactivitynotentitled.md)
   The app is missing an entitlement for the requested activity.
-- [var CMErrorNilData: CMError](cmerrornildata.md)
+- [var CMErrorNilData: CMError](./cmerrornildata.md)
   Core Motion didn’t return any data.
-- [var CMErrorNULL: CMError](cmerrornull.md)
+- [var CMErrorNULL: CMError](./cmerrornull.md)
   No error occurred.
-- [var CMErrorNotAuthorized: CMError](cmerrornotauthorized.md)
+- [var CMErrorNotAuthorized: CMError](./cmerrornotauthorized.md)
   The app isn’t authorized to use the Core Motion framework.
-- [var CMErrorNotAvailable: CMError](cmerrornotavailable.md)
+- [var CMErrorNotAvailable: CMError](./cmerrornotavailable.md)
   The requested service isn’t available on this device.
-- [var CMErrorNotEntitled: CMError](cmerrornotentitled.md)
+- [var CMErrorNotEntitled: CMError](./cmerrornotentitled.md)
   The app is missing a required entitlement.
-- [var CMErrorSize: CMError](cmerrorsize.md)
+- [var CMErrorSize: CMError](./cmerrorsize.md)
   The data is the incorrect size.
-- [var CMErrorTrueNorthNotAvailable: CMError](cmerrortruenorthnotavailable.md)
+- [var CMErrorTrueNorthNotAvailable: CMError](./cmerrortruenorthnotavailable.md)
   True north isn’t available on this device.
-- [var CMErrorUnknown: CMError](cmerrorunknown.md)
+- [var CMErrorUnknown: CMError](./cmerrorunknown.md)
   An unknown error occurred.
 
 

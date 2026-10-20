@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in a non-empty collection.
 
@@ -20,11 +21,13 @@ The position of the first element in a non-empty collection.
 var startIndex: LazyFilterSequence<Base>.Index { get }
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Discussion
 
 In an empty collection, `startIndex == endIndex`.
 
-> **Note**: O(*n*), where *n* is the ratio between unfiltered and filtered collection counts.
+> **Complexity**: O(*n*), where *n* is the ratio between unfiltered and filtered collection counts.
 
 
 ---

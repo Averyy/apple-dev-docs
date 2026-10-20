@@ -1,7 +1,8 @@
 # frequency
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A frequency in the audio spectrum where the pattern and sharpness resonate most.
 
@@ -17,6 +18,10 @@ A frequency in the audio spectrum where the pattern and sharpness resonate most.
 
 ```swift
 var frequency: Double { get set }
+```
+
+```objc
+@property (nonatomic) double frequency;
 ```
 
 #### Discussion

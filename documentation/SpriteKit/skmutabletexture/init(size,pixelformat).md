@@ -1,7 +1,8 @@
 # init(size:pixelFormat:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an empty texture with a specific size and format.
 
@@ -20,22 +21,27 @@ Initializes an empty texture with a specific size and format.
 init(size: CGSize, pixelFormat format: Int32)
 ```
 
+```objc
+- (instancetype) initWithSize:(CGSize) size pixelFormat:(int) format;
+```
+
 #### Return Value
 
 An empty mutable texture.
 
 #### Discussion
 
-You must call the [`modifyPixelData(_:)`](skmutabletexture/modifypixeldata(_:).md) method at least once before using this texture.
+You must call the [`modifyPixelData(_:)`](./modifypixeldata%28_%29.md) method at least once before using this texture.
 
 ## Parameters
 
 - `size`: The size of the texture, in pixels.
-- `format`: A Core Video format code. Three codes are supported: [`kCVPixelFormatType_32RGBA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32rgba), [`kCVPixelFormatType_64RGBAHalf`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_64rgbahalf), and [`kCVPixelFormatType_128RGBAFloat`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_128rgbafloat) for byte, half-float, and float components respectively.
+- `format`: A Core Video format code. Three codes are supported: [`kCVPixelFormatType_32RGBA`](../../CoreVideo/kcvpixelformattype_32rgba.md), [`kCVPixelFormatType_64RGBAHalf`](../../CoreVideo/kcvpixelformattype_64rgbahalf.md), and [`kCVPixelFormatType_128RGBAFloat`](../../CoreVideo/kcvpixelformattype_128rgbafloat.md) for byte, half-float, and float components respectively.
 
 ## See Also
 
-- [init(size: CGSize)](skmutabletexture/init(size:).md)
+### Creating an Empty Mutable Texture
+- [init(size: CGSize)](./init%28size%29.md)
   Initializes an empty texture with a specific size.
 
 

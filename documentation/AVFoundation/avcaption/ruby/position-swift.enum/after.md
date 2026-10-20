@@ -1,7 +1,8 @@
 # AVCaption.Ruby.Position.after
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Display ruby text below horizontal text, or to the left of vertical text in a right-to-left block progression.
 
@@ -17,9 +18,14 @@ Display ruby text below horizontal text, or to the left of vertical text in a ri
 case after
 ```
 
+```c
+AVCaptionRubyPositionAfter
+```
+
 ## See Also
 
-- [AVCaption.Ruby.Position.before](avcaption/ruby/position-swift.enum/before.md)
+### Ruby positions
+- [AVCaption.Ruby.Position.before](./before.md)
   Display ruby text above horizontal text, or to the right of vertical text in a right-to-left block progression.
 
 

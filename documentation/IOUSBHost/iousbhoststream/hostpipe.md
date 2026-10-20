@@ -1,7 +1,8 @@
 # hostPipe
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pipe that creates the stream.
 
@@ -13,6 +14,10 @@ The pipe that creates the stream.
 
 ```swift
 var hostPipe: IOUSBHostPipe { get }
+```
+
+```objc
+@property (readonly) IOUSBHostPipe * hostPipe;
 ```
 
 

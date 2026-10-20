@@ -1,7 +1,8 @@
 # MTLStepFunction.threadPositionInGridXIndexed
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The compute function fetches data by using the thread’s `x` coordinate to look up a value in the index buffer.
 
@@ -19,27 +20,32 @@ The compute function fetches data by using the thread’s `x` coordinate to look
 case threadPositionInGridXIndexed
 ```
 
+```c
+MTLStepFunctionThreadPositionInGridXIndexed
+```
+
 #### Discussion
 
 This step function uses the `x` coordinate of the thread position in a grid as an index into the `[[stage_in]]` index buffer, which is then used to fetch data. In tessellation compute kernels, you use this step function to identify a control point in a given patch.
 
 ## See Also
 
-- [MTLStepFunction.constant](mtlstepfunction/constant.md)
+### Step options
+- [MTLStepFunction.constant](./constant.md)
   The function fetches attribute data once.
-- [MTLStepFunction.perInstance](mtlstepfunction/perinstance.md)
+- [MTLStepFunction.perInstance](./perinstance.md)
   The function fetches data based on the instance index.
-- [MTLStepFunction.perPatch](mtlstepfunction/perpatch.md)
+- [MTLStepFunction.perPatch](./perpatch.md)
   The post-tessellation function fetches data based on the patch index of the patch.
-- [MTLStepFunction.perPatchControlPoint](mtlstepfunction/perpatchcontrolpoint.md)
+- [MTLStepFunction.perPatchControlPoint](./perpatchcontrolpoint.md)
   The post-tessellation function fetches data based on the control-point indices associated with the patch.
-- [MTLStepFunction.perVertex](mtlstepfunction/pervertex.md)
+- [MTLStepFunction.perVertex](./pervertex.md)
   The vertex function fetches data for every vertex.
-- [MTLStepFunction.threadPositionInGridX](mtlstepfunction/threadpositioningridx.md)
+- [MTLStepFunction.threadPositionInGridX](./threadpositioningridx.md)
   The compute function fetches data based on the thread’s `x` coordinate.
-- [MTLStepFunction.threadPositionInGridY](mtlstepfunction/threadpositioningridy.md)
+- [MTLStepFunction.threadPositionInGridY](./threadpositioningridy.md)
   The compute function fetches data based on the thread’s `y` coordinate.
-- [MTLStepFunction.threadPositionInGridYIndexed](mtlstepfunction/threadpositioningridyindexed.md)
+- [MTLStepFunction.threadPositionInGridYIndexed](./threadpositioningridyindexed.md)
   The compute function fetches data by using the thread’s `y` coordinate to look up a value in the index buffer.
 
 

@@ -1,17 +1,22 @@
 # setSerialParameters(_:dataBits:parity:stopBits:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the parameters of the serial connection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setSerialParameters(_ speed: UInt32, dataBits nBits: UInt8, parity: BluetoothRFCOMMParityType, stopBits bitStop: UInt8) -> IOReturn
+```
+
+```objc
+- (IOReturn) setSerialParameters:(UInt32) speed dataBits:(UInt8) nBits parity:(BluetoothRFCOMMParityType) parity stopBits:(UInt8) bitStop;
 ```
 
 #### Return Value

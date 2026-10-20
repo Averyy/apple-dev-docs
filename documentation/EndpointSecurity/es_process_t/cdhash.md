@@ -1,18 +1,23 @@
 # cdhash
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The code directory hash value.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var cdhash: es_cdhash_t
+```
+
+```c
+es_cdhash_t cdhash;
 ```
 
 #### Discussion
@@ -21,11 +26,12 @@ The code directory hash identifies a specific version of a program. This allows 
 
 ## See Also
 
-- [var codesigning_flags: UInt32](es_process_t/codesigning_flags.md)
+### Inspecting Code Signing Properties
+- [var codesigning_flags: UInt32](./codesigning_flags.md)
   The flags used to sign the process.
-- [var signing_id: es_string_token_t](es_process_t/signing_id.md)
+- [var signing_id: es_string_token_t](./signing_id.md)
   The identifier used to sign the process.
-- [var team_id: es_string_token_t](es_process_t/team_id.md)
+- [var team_id: es_string_token_t](./team_id.md)
   The team identifier used to sign the process.
 
 

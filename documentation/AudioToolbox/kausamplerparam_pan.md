@@ -1,15 +1,16 @@
 # kAUSamplerParam_Pan
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kAUSamplerParam_Pan: AudioUnitParameterID { get }
 ```
 
+```c
+kAUSamplerParam_Pan
+```
+
 ## See Also
 
-- [var kAUSamplerParam_CoarseTuning: AudioUnitParameterID](kausamplerparam_coarsetuning.md)
-- [var kAUSamplerParam_FineTuning: AudioUnitParameterID](kausamplerparam_finetuning.md)
-- [var kAUSamplerParam_Gain: AudioUnitParameterID](kausamplerparam_gain.md)
+### Constants
+- [var kAUSamplerParam_CoarseTuning: AudioUnitParameterID](./kausamplerparam_coarsetuning.md)
+- [var kAUSamplerParam_FineTuning: AudioUnitParameterID](./kausamplerparam_finetuning.md)
+- [var kAUSamplerParam_Gain: AudioUnitParameterID](./kausamplerparam_gain.md)
 
 
 ---

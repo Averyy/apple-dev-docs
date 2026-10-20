@@ -1,7 +1,8 @@
 # accepted
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates a customer accepted the new subscription price.
 
@@ -22,9 +23,10 @@ static let accepted: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.I
 
 ## See Also
 
-- [static let pending: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.struct/pending.md)
+### Price increase status values
+- [static let pending: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./pending.md)
   A value that indicates the App Store is waiting for customer consent for the price increase for the subscription renewal.
-- [static let scheduled: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.struct/scheduled.md)
+- [static let scheduled: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./scheduled.md)
   A value that indicates the App Store scheduled the price increase for the subscription renewal.
 
 

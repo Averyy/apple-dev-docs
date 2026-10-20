@@ -1,7 +1,8 @@
 # fabricID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 var fabricID: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSNumber * fabricID;
 ```
 
 

@@ -1,6 +1,7 @@
 # Video on Demand playlist construction
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Understand the basic composition for a Video on Demand playlist.
 
@@ -68,11 +69,12 @@ fileSequenceD.ts
 
 ## See Also
 
-- [Live Playlist (sliding window) construction](live-playlist-sliding-window-construction.md)
+### Basic playlists
+- [Live Playlist (sliding window) construction](./live-playlist-sliding-window-construction.md)
   Understand the basic composition for a live session playlist.
-- [Event playlist construction](event-playlist-construction.md)
+- [Event playlist construction](./event-playlist-construction.md)
   Learn about the basic composition of an event session playlist.
-- [Creating a Multivariant Playlist](creating-a-multivariant-playlist.md)
+- [Creating a Multivariant Playlist](./creating-a-multivariant-playlist.md)
   Offer multiple playlist files to provide different encodings of the same content.
 
 

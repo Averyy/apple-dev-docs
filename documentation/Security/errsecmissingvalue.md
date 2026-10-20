@@ -1,7 +1,8 @@
 # errSecMissingValue
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A missing value was detected.
 
@@ -18,6 +19,10 @@ A missing value was detected.
 
 ```swift
 var errSecMissingValue: OSStatus { get }
+```
+
+```c
+errSecMissingValue
 ```
 
 

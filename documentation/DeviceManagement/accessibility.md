@@ -1,7 +1,8 @@
 # Accessibility
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the accessibility features of the device.
 
@@ -10,7 +11,7 @@ The payload that configures the accessibility features of the device.
 
 ## Declaration
 
-```swift
+```
 object Accessibility
 ```
 
@@ -18,7 +19,7 @@ object Accessibility
 
 Specify `com.apple.universalaccess` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.universalaccess` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,47 +71,88 @@ Specify `com.apple.universalaccess` as the payload type.
 
 - `closeViewFarPoint` (integer): The minimum zoom level in the Zoom options.
 - `closeViewHotkeysEnabled` (boolean): If `true`, enables “Use keyboard shortcuts” in the Zoom options.
+
+  **Default**: `false`
 - `closeViewNearPoint` (integer): The maximum zoom level in the Zoom options.
 - `closeViewScrollWheelToggle` (boolean): If `true`, enables “Use scroll gesture” in the Zoom options.
-- `closeViewShowPreview` (boolean): If `true`, enables “Show preview rectangle” in the Zoom options. Only available in macOS 10.15 and earlier. Deprecated: macOS 10.15+
+
+  **Default**: `false`
+- `closeViewShowPreview` (boolean) *(deprecated)*: If `true`, enables “Show preview rectangle” in the Zoom options. Only available in macOS 10.15 and earlier.
+
+  Deprecated: macOS 10.15+
+
+  **Default**: `false`
 - `closeViewSmoothImages` (boolean): If `true`, enables “Smooth images” in the Zoom options.
+
+  **Default**: `false`
 - `contrast` (number): The contrast value in the Display options.
+
+  **Minimum**: `0`; **Maximum**: `1`
 - `flashScreen` (boolean): If `true`, enables “Flash the screen” in the Audio options.
-- `grayscale` (boolean): If `true`, enables “Use grayscale” in the Display options. This option is deprecated in macOS 11. Deprecated: macOS 11+
+
+  **Default**: `false`
+- `grayscale` (boolean) *(deprecated)*: If `true`, enables “Use grayscale” in the Display options.
+
+  This option is deprecated in macOS 11.
+
+  Deprecated: macOS 11+
+
+  **Default**: `false`
 - `mouseDriver` (boolean): If `true`, enables Mouse Keys in the Mouse & Trackpad options.
+
+  **Default**: `false`
 - `mouseDriverCursorSize` (integer): The size of the cursor.
 - `mouseDriverIgnoreTrackpad` (boolean): If `true`, ignores the built-in trackpad.
+
+  **Default**: `false`
 - `mouseDriverInitialDelay` (integer): The initial delay before moving the mouse with Mouse Keys.
 - `mouseDriverMaxSpeed` (integer): The maximum speed for the cursor when using Mouse Keys.
 - `slowKey` (boolean): If `true`, enables “Slow Keys” in the Keyboard options.
+
+  **Default**: `false`
 - `slowKeyBeepOn` (boolean): If `true`, enables “click key sounds” for Slow Keys.
+
+  **Default**: `false`
 - `slowKeyDelay` (integer): The acceptance delay, in milliseconds, for Slow Keys.
 - `stereoAsMono` (boolean): If `true`, plays stereo audio as mono.
+
+  **Default**: `false`
 - `stickyKey` (boolean): If `true`, enables Sticky Keys in the Keyboard options.
+
+  **Default**: `false`
 - `stickyKeyBeepOnModifier` (boolean): If `true`, enables the beep when a modifier key is set for Sticky Keys.
+
+  **Default**: `false`
 - `stickyKeyShowWindow` (boolean): If `true`, enables “Display pressed keys on screen” for Sticky Keys.
+
+  **Default**: `false`
 - `voiceOverOnOffKey` (boolean): If `true`, enables Voice Over.
+
+  **Default**: `false`
 - `whiteOnBlack` (boolean): If `true`, enables Invert Colors in Display Accommodations.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object Desktop](desktop.md)
+### User experience
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

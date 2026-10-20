@@ -1,7 +1,8 @@
 # objectMinimumNormalizedRadius
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum radius of the bounding circle of the object to track.
 
@@ -22,11 +23,12 @@ final var objectMinimumNormalizedRadius: Float { get set }
 
 ## See Also
 
-- [var objectMaximumNormalizedRadius: Float](detecttrajectoriesrequest/objectmaximumnormalizedradius.md)
+### Configuring a request
+- [var objectMaximumNormalizedRadius: Float](./objectmaximumnormalizedradius.md)
   The maximum radius of the bounding circle of the object to track.
-- [var targetFrameTime: CMTime](detecttrajectoriesrequest/targetframetime.md)
+- [var targetFrameTime: CMTime](./targetframetime.md)
   The requested target frame time for processing trajectory detection.
-- [let trajectoryLength: Int](detecttrajectoriesrequest/trajectorylength.md)
+- [let trajectoryLength: Int](./trajectorylength.md)
   The number of points to detect before calculating a trajectory.
 
 

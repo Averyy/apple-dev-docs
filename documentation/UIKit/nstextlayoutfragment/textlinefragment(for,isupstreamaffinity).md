@@ -1,7 +1,8 @@
 # textLineFragment(for:isUpstreamAffinity:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a text line fragment from a specific text location in the document.
 
@@ -18,13 +19,17 @@ Returns a text line fragment from a specific text location in the document.
 func textLineFragment(for textLocation: any NSTextLocation, isUpstreamAffinity: Bool) -> NSTextLineFragment?
 ```
 
+```objc
+- (NSTextLineFragment *) textLineFragmentForTextLocation:(id<NSTextLocation>) textLocation isUpstreamAffinity:(BOOL) isUpstreamAffinity;
+```
+
 #### Return Value
 
 The text line fragment that contains or ends at the text location you provide, or `nil` if there isn’t a match.
 
 #### Discussion
 
-Set `isUpstreamAffinity` to [`true`](https://developer.apple.com/documentation/swift/true) to find a text fragment by its element range end location, such as when you enumerate over line fragments in reverse order. Set `isUpstreamAffinity` to [`false`](https://developer.apple.com/documentation/swift/false) to find a text fragment that contains `textLocation`.
+Set `isUpstreamAffinity` to [`true`](../../Swift/true.md) to find a text fragment by its element range end location, such as when you enumerate over line fragments in reverse order. Set `isUpstreamAffinity` to [`false`](../../Swift/false.md) to find a text fragment that contains `textLocation`.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ Set `isUpstreamAffinity` to [`true`](https://developer.apple.com/documentation/s
 
 ## See Also
 
-- [var textLineFragments: [NSTextLineFragment]](nstextlayoutfragment/textlinefragments.md)
+### Getting line fragments
+- [var textLineFragments: [NSTextLineFragment]](./textlinefragments.md)
   An array of text line fragments.
-- [NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions.md)
+- [NSTextLayoutFragment.EnumerationOptions](./enumerationoptions.md)
   Values that describe options for enumerating text layout fragments.
-- [func textLineFragment(forVerticalOffset: CGFloat, requiresExactMatch: Bool) -> NSTextLineFragment?](nstextlayoutfragment/textlinefragment(forverticaloffset:requiresexactmatch:).md)
+- [func textLineFragment(forVerticalOffset: CGFloat, requiresExactMatch: Bool) -> NSTextLineFragment?](./textlinefragment%28forverticaloffset,requiresexactmatch%29.md)
   Returns the text line fragment for the vertical offset you provide, or the closest text line fragment beyond the vertical offset.
 
 

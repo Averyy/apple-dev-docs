@@ -1,7 +1,8 @@
 # position
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 3D position of the point
 

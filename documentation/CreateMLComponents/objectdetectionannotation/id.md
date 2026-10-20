@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the object detection annotation
 
@@ -18,6 +19,8 @@ The identifier of the object detection annotation
 ```swift
 var id: String { get }
 ```
+
+Available when `Label` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
 
 ---

@@ -1,7 +1,8 @@
 # categoryType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category type for this sample.
 
@@ -19,13 +20,18 @@ The category type for this sample.
 var categoryType: HKCategoryType { get }
 ```
 
+```objc
+@property (strong, readonly) HKCategoryType * categoryType;
+```
+
 #### Discussion
 
-This property contains a reference to the [`sampleType`](hksample/sampletype.md) property that is cast as an [`HKCategoryType`](hkcategorytype.md) object.
+This property contains a reference to the [`sampleType`](../hksample/sampletype.md) property that is cast as an [`HKCategoryType`](../hkcategorytype.md) object.
 
 ## See Also
 
-- [var value: Int](hkcategorysample/value.md)
+### Getting Property Data
+- [var value: Int](./value.md)
   The category value for this sample.
 
 

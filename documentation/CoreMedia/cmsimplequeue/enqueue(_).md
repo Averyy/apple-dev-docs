@@ -1,7 +1,8 @@
 # enqueue(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enqueues an element in the queue.
 
@@ -26,9 +27,10 @@ func enqueue(_ element: UnsafeRawPointer) throws
 
 ## See Also
 
-- [func dequeue() -> UnsafeRawPointer?](cmsimplequeue/dequeue.md)
+### Managing Queues
+- [func dequeue() -> UnsafeRawPointer?](./dequeue%28%29.md)
   Dequeues an element from the queue.
-- [func reset() throws](cmsimplequeue/reset.md)
+- [func reset() throws](./reset%28%29.md)
   Resets the queue.
 
 

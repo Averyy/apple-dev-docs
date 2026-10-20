@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Tells you when to initialize a 3D node that has been unarchived.
 
@@ -10,7 +11,7 @@ Tells you when to initialize a 3D node that has been unarchived.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Tells you when to initialize a 3D node that has been unarchived.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 #### Discussion
 
 Do not call this function directly; it is called by the system when you should initialize a 3D node that has been unarchived.
 
 ## See Also
 
-- [init(viewportSize: CGSize)](sk3dnode/init(viewportsize:).md)
+### Creating 3D Nodes
+- [init(viewportSize: CGSize)](./init%28viewportsize%29.md)
   Initializes a new 3D node.
 
 

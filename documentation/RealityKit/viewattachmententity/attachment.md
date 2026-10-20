@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view attachment component for this entity.
 

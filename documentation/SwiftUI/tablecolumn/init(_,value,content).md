@@ -1,7 +1,8 @@
 # init(_:value:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable column for Boolean values that generates its label from a localized string resource.
 
@@ -19,9 +20,628 @@ Creates a sortable column for Boolean values that generates its label from a loc
 nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Bool>, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
+Available when `RowValue` inherits `NSObject`, `RowValue` conforms to `Identifiable`, `Sort` is `SortDescriptor<RowValue>`, `Content` conforms to `View`, and `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Bool?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Date>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Date?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Double>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Double?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Float>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Float?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int16>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int16?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int32>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int32?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int64>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int64?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int8>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int8?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, Int?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt16>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt16?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt32>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt32?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt64>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt64?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt8>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt8?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UInt?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UUID>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, UUID?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+@export(implementation)
+nonisolated init<V>(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, V>, @ContentBuilder content: @escaping (RowValue) -> Content) where V : Comparable
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Bool>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Bool?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Date>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Date?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Double>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Double?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Float>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Float?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int16>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int16?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int32>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int32?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int64>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int64?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int8>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int8?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Int?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt16>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt16?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt32>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt32?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt64>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt64?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt8>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt8?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UInt?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UUID>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, UUID?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Bool>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Bool?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Date>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Date?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Double>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Double?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Float>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Float?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int16>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int16?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int32>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int32?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int64>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int64?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int8>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int8?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, Int?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt16>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt16?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt32>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt32?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt64>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt64?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt8>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt8?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UInt?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UUID>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, UUID?>, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init<S, V>(_ title: S, value: KeyPath<RowValue, V>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol, V : Comparable
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Bool>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Bool?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Date>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Date?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Double>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Double?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Float>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Float?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int16>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int16?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int32>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int32?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int64>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int64?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int8>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int8?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, Int?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt16>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt16?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt32>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt32?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt64>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt64?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt8>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt8?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UInt?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UUID>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, UUID?>, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<V>(_ text: Text, value: KeyPath<RowValue, V>, @ContentBuilder content: @escaping (RowValue) -> Content) where V : Comparable
+```
+
+```swift
+nonisolated
+init<V>(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, V>, @ContentBuilder content: @escaping (RowValue) -> Content) where V : Comparable
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -31,11 +651,12 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 
 ## See Also
 
-- [init(_:value:comparator:)](tablecolumn/init(_:value:comparator:).md)
+### Creating a sortable column
+- [init(_:value:comparator:)](./init%28_,value,comparator%29.md)
   Creates a sortable column that displays a string property, and generates its label from a localized string resource.
-- [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
+- [init(_:value:comparator:content:)](./init%28_,value,comparator,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
-- [init(_:sortUsing:content:)](tablecolumn/init(_:sortusing:content:).md)
+- [init(_:sortUsing:content:)](./init%28_,sortusing,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
 
 

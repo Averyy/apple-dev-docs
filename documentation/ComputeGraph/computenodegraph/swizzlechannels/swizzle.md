@@ -1,7 +1,8 @@
 # ComputeNodeGraph.SwizzleChannels.Swizzle
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,7 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,23 +22,23 @@ enum Swizzle
 ## Topics
 
 ### Enumeration Cases
-- [ComputeNodeGraph.SwizzleChannels.Swizzle.alpha](computenodegraph/swizzlechannels/swizzle/alpha.md)
-- [ComputeNodeGraph.SwizzleChannels.Swizzle.blue](computenodegraph/swizzlechannels/swizzle/blue.md)
-- [ComputeNodeGraph.SwizzleChannels.Swizzle.green](computenodegraph/swizzlechannels/swizzle/green.md)
-- [ComputeNodeGraph.SwizzleChannels.Swizzle.one](computenodegraph/swizzlechannels/swizzle/one.md)
-- [ComputeNodeGraph.SwizzleChannels.Swizzle.red](computenodegraph/swizzlechannels/swizzle/red.md)
-- [ComputeNodeGraph.SwizzleChannels.Swizzle.zero](computenodegraph/swizzlechannels/swizzle/zero.md)
+- [ComputeNodeGraph.SwizzleChannels.Swizzle.alpha](./swizzle/alpha.md)
+- [ComputeNodeGraph.SwizzleChannels.Swizzle.blue](./swizzle/blue.md)
+- [ComputeNodeGraph.SwizzleChannels.Swizzle.green](./swizzle/green.md)
+- [ComputeNodeGraph.SwizzleChannels.Swizzle.one](./swizzle/one.md)
+- [ComputeNodeGraph.SwizzleChannels.Swizzle.red](./swizzle/red.md)
+- [ComputeNodeGraph.SwizzleChannels.Swizzle.zero](./swizzle/zero.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

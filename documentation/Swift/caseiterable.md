@@ -1,7 +1,8 @@
 # CaseIterable
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides a collection of all of its values.
 
@@ -39,7 +40,7 @@ let caseList = CompassDirection.allCases
 // caseList == "north, south, east, west"
 ```
 
-### Conforming to the Caseiterable Protocol
+### Conforming to the CaseIterable Protocol
 
 The compiler can automatically provide an implementation of the `CaseIterable` requirements for any enumeration without associated values or `@available` attributes on its cases. The synthesized `allCases` collection provides the cases in order of their declaration.
 
@@ -48,14 +49,15 @@ You can take advantage of this compiler support when defining your own custom en
 ## Topics
 
 ### Accessing Cases
-- [static var allCases: Self.AllCases](caseiterable/allcases-swift.type.property.md)
+- [static var allCases: Self.AllCases](./caseiterable/allcases-swift.type.property.md)
   A collection of all values of this type.
-- [associatedtype AllCases : Collection = [Self]](caseiterable/allcases-swift.associatedtype.md)
+- [associatedtype AllCases : Collection = [Self]](./caseiterable/allcases-swift.associatedtype.md)
   A type that can represent a collection of all values of this type.
 
 ## See Also
 
-- [protocol RawRepresentable](rawrepresentable.md)
+### Raw Representation
+- [protocol RawRepresentable](./rawrepresentable.md)
   A type that can be converted to and from an associated raw value.
 
 

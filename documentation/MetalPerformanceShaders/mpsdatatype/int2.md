@@ -1,7 +1,8 @@
 # MPSDataType.int2
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.4+
@@ -15,6 +16,10 @@
 
 ```swift
 case int2
+```
+
+```c
+MPSDataTypeInt2
 ```
 
 

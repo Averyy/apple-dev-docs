@@ -2,6 +2,7 @@
 
 **Framework**: Network Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

@@ -1,7 +1,8 @@
 # isAppleDigitalMaster
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the song is an Apple Digital Master.
 

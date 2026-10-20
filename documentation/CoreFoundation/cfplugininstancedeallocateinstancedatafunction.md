@@ -1,18 +1,19 @@
 # CFPlugInInstanceDeallocateInstanceDataFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Not recommended.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Not recommended.
 typealias CFPlugInInstanceDeallocateInstanceDataFunction = (UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(void *) CFPlugInInstanceDeallocateInstanceDataFunction;
+```
+
 ## See Also
 
-- [typealias CFPlugInInstanceGetInterfaceFunction](cfplugininstancegetinterfacefunction.md)
+### Callbacks
+- [typealias CFPlugInInstanceGetInterfaceFunction](./cfplugininstancegetinterfacefunction.md)
   Not recommended.
 
 

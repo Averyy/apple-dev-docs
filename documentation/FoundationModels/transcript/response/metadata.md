@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata associated with generating the response.
 
@@ -22,9 +23,10 @@ var metadata: [String : GeneratedContent] { get }
 
 ## See Also
 
-- [var segments: [Transcript.Segment]](transcript/response/segments.md)
+### Inspecting a response
+- [var segments: [Transcript.Segment]](./segments.md)
   Ordered response segments.
-- [var assetIDs: [String]](transcript/response/assetids.md)
+- [var assetIDs: [String]](./assetids.md)
   Version-aware identifiers for all assets used to generate this response.
 
 

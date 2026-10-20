@@ -1,7 +1,8 @@
 # log(epsilon:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element-wise log operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise log operation to the current graph.
 ```swift
 func log(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

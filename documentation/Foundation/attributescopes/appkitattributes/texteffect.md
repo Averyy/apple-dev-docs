@@ -1,7 +1,8 @@
 # textEffect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a text effect attribute.
 
@@ -16,23 +17,24 @@ let textEffect: AttributeScopes.AppKitAttributes.TextEffectAttribute
 
 ## See Also
 
-- [let baselineOffset: AttributeScopes.AppKitAttributes.BaselineOffsetAttribute](attributescopes/appkitattributes/baselineoffset.md)
+### Using Text Styling Attributes
+- [let baselineOffset: AttributeScopes.AppKitAttributes.BaselineOffsetAttribute](./baselineoffset.md)
   A property for accessing a baseline offset attribute.
-- [let obliqueness: AttributeScopes.AppKitAttributes.ObliquenessAttribute](attributescopes/appkitattributes/obliqueness.md)
+- [let obliqueness: AttributeScopes.AppKitAttributes.ObliquenessAttribute](./obliqueness.md)
   A property for accessing an obliqueness attribute.
-- [let shadow: AttributeScopes.AppKitAttributes.ShadowAttribute](attributescopes/appkitattributes/shadow.md)
+- [let shadow: AttributeScopes.AppKitAttributes.ShadowAttribute](./shadow.md)
   A property for accessing a shadow attribute.
-- [let strikethroughColor: AttributeScopes.AppKitAttributes.StrikethroughColorAttribute](attributescopes/appkitattributes/strikethroughcolor.md)
+- [let strikethroughColor: AttributeScopes.AppKitAttributes.StrikethroughColorAttribute](./strikethroughcolor.md)
   A property for accessing a strikethrough color attribute.
-- [let strikethroughStyle: AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](attributescopes/appkitattributes/strikethroughstyle.md)
+- [let strikethroughStyle: AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](./strikethroughstyle.md)
   A property for accessing a strikethrough style attribute.
-- [let strokeColor: AttributeScopes.AppKitAttributes.StrokeColorAttribute](attributescopes/appkitattributes/strokecolor.md)
+- [let strokeColor: AttributeScopes.AppKitAttributes.StrokeColorAttribute](./strokecolor.md)
   A property for accessing a stroke color attribute.
-- [let strokeWidth: AttributeScopes.AppKitAttributes.StrokeWidthAttribute](attributescopes/appkitattributes/strokewidth.md)
+- [let strokeWidth: AttributeScopes.AppKitAttributes.StrokeWidthAttribute](./strokewidth.md)
   A property for accessing a stroke width attribute.
-- [let underlineColor: AttributeScopes.AppKitAttributes.UnderlineColorAttribute](attributescopes/appkitattributes/underlinecolor.md)
+- [let underlineColor: AttributeScopes.AppKitAttributes.UnderlineColorAttribute](./underlinecolor.md)
   A property for accessing an underline color attribute.
-- [let underlineStyle: AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](attributescopes/appkitattributes/underlinestyle.md)
+- [let underlineStyle: AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](./underlinestyle.md)
   A property for accessing an underline style attribute.
 
 

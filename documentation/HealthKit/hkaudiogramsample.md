@@ -1,7 +1,8 @@
 # HKAudiogramSample
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sample that stores an audiogram.
 
@@ -19,6 +20,10 @@ A sample that stores an audiogram.
 class HKAudiogramSample
 ```
 
+```objc
+@interface HKAudiogramSample : HKSample
+```
+
 #### Overview
 
 This sample stores the results from a hearing test. The sample stores the audiogram data as an array of sensitivity points.
@@ -26,35 +31,36 @@ This sample stores the results from a hearing test. The sample stores the audiog
 ## Topics
 
 ### Creating Audiogram Samples
-- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start: Date, end: Date, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:start:end:metadata:).md)
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start: Date, end: Date, metadata: [String : Any]?)](./hkaudiogramsample/init%28sensitivitypoints,start,end,metadata%29.md)
   Creates a new audiogram sample.
 ### Accessing Sensitivity Point Data
-- [var sensitivityPoints: [HKAudiogramSensitivityPoint]](hkaudiogramsample/sensitivitypoints.md)
+- [var sensitivityPoints: [HKAudiogramSensitivityPoint]](./hkaudiogramsample/sensitivitypoints.md)
   An array of sensitivity point objects.
 ### Initializers
-- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:start:end:device:metadata:).md)
-- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:startdate:enddate:device:metadata:).md)
-- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:startdate:enddate:metadata:).md)
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](./hkaudiogramsample/init%28sensitivitypoints,start,end,device,metadata%29.md)
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](./hkaudiogramsample/init%28sensitivitypoints,startdate,enddate,device,metadata%29.md)
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, metadata: [String : Any]?)](./hkaudiogramsample/init%28sensitivitypoints,startdate,enddate,metadata%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKAudiogramSensitivityPoint](hkaudiogramsensitivitypoint.md)
+### Audiograms
+- [class HKAudiogramSensitivityPoint](./hkaudiogramsensitivitypoint.md)
   A hearing sensitivity reading associated with a hearing test.
 
 

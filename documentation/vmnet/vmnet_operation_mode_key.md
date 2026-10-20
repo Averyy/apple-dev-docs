@@ -1,7 +1,8 @@
 # vmnet_operation_mode_key
 
 **Framework**: vmnet  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The mode to use to configure the guest operating system network interface.
 
@@ -15,13 +16,18 @@ The mode to use to configure the guest operating system network interface.
 let vmnet_operation_mode_key: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const vmnet_operation_mode_key;
+```
+
 #### Discussion
 
-The value specified for this key should be of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/xpc/xpc_type_uint64-swift.var).
+The value specified for this key should be of type [`XPC_TYPE_UINT64`](../XPC/xpc_type_uint64-swift.var.md).
 
 ## See Also
 
-- [let vmnet_interface_id_key: UnsafePointer<CChar>](vmnet_interface_id_key.md)
+### Constants
+- [let vmnet_interface_id_key: UnsafePointer<CChar>](./vmnet_interface_id_key.md)
 
 
 ---

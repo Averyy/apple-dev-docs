@@ -1,7 +1,8 @@
 # heightDimension
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height dimension of an item in a collection view layout.
 
@@ -14,9 +15,14 @@ The height dimension of an item in a collection view layout.
 var heightDimension: NSCollectionLayoutDimension { get }
 ```
 
+```objc
+@property (readonly) NSCollectionLayoutDimension * heightDimension;
+```
+
 ## See Also
 
-- [var widthDimension: NSCollectionLayoutDimension](nscollectionlayoutsize/widthdimension.md)
+### Getting the width and height
+- [var widthDimension: NSCollectionLayoutDimension](./widthdimension.md)
   The width dimension of an item in a collection view layout.
 
 

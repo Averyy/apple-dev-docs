@@ -1,7 +1,8 @@
 # locality
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The city of the place.
 
@@ -10,13 +11,13 @@ The city of the place.
 
 ## Declaration
 
-```swift
+```
 locality: string | null;
 ```
 
 #### Discussion
 
-For example, the [`locality`](searchautocompleteresult/locality.md) for Golden Gate Park is `"San Francisco"`.
+For example, the [`locality`](./locality.md) for Golden Gate Park is `"San Francisco"`.
 
 
 ---

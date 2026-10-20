@@ -1,7 +1,8 @@
 # MKMapConfiguration
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that represents the shared elements of map configurations.
 
@@ -20,48 +21,53 @@ An abstract class that represents the shared elements of map configurations.
 class MKMapConfiguration
 ```
 
+```objc
+@interface MKMapConfiguration : NSObject
+```
+
 ## Topics
 
 ### Controlling the elevation style
-- [var elevationStyle: MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.property.md)
+- [var elevationStyle: MKMapConfiguration.ElevationStyle](./mkmapconfiguration/elevationstyle-swift.property.md)
   The value that indicates the map’s elevation style.
-- [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
+- [MKMapConfiguration.ElevationStyle](./mkmapconfiguration/elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
 ### Initializers
-- [init?(coder: NSCoder)](mkmapconfiguration/init(coder:).md)
+- [init?(coder: NSCoder)](./mkmapconfiguration/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MKHybridMapConfiguration](mkhybridmapconfiguration.md)
-- [MKImageryMapConfiguration](mkimagerymapconfiguration.md)
-- [MKStandardMapConfiguration](mkstandardmapconfiguration.md)
+- [MKHybridMapConfiguration](./mkhybridmapconfiguration.md)
+- [MKImageryMapConfiguration](./mkimagerymapconfiguration.md)
+- [MKStandardMapConfiguration](./mkstandardmapconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var preferredConfiguration: MKMapConfiguration](mkmapview/preferredconfiguration.md)
+### Configuring the map appearance
+- [var preferredConfiguration: MKMapConfiguration](./mkmapview/preferredconfiguration.md)
   The characteristics of the map view, including the map type and features the map displays.
-- [var pitchButtonVisibility: MKFeatureVisibility](mkmapview/pitchbuttonvisibility.md)
+- [var pitchButtonVisibility: MKFeatureVisibility](./mkmapview/pitchbuttonvisibility.md)
   A value that indicates whether the map’s pitch button is visible.
-- [var showsUserTrackingButton: Bool](mkmapview/showsusertrackingbutton.md)
+- [var showsUserTrackingButton: Bool](./mkmapview/showsusertrackingbutton.md)
   A Boolean value that indicates whether the map displays the user tracking button.
-- [class MKStandardMapConfiguration](mkstandardmapconfiguration.md)
+- [class MKStandardMapConfiguration](./mkstandardmapconfiguration.md)
   The class that represents the default map presentation, which is a street map that shows the position of all roads and some road names.
-- [class MKHybridMapConfiguration](mkhybridmapconfiguration.md)
+- [class MKHybridMapConfiguration](./mkhybridmapconfiguration.md)
   The class that represents a satellite image of the area with road and road name information layers on top.
-- [class MKImageryMapConfiguration](mkimagerymapconfiguration.md)
+- [class MKImageryMapConfiguration](./mkimagerymapconfiguration.md)
   The class that represents an imagery-based map presentation, such as one using satellite imagery.
 
 

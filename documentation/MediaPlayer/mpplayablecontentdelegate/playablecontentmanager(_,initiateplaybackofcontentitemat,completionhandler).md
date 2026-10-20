@@ -1,20 +1,31 @@
 # playableContentManager(_:initiatePlaybackOfContentItemAt:completionHandler:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to begin playback of the specified content item.
 
 **Availability**:
-- iOS 7.1+
-- iPadOS 7.1+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 7.1+ - Deprecated in 14.0
+- iPadOS 7.1+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use CarPlay framework
 
 ## Declaration
 
 ```swift
+optional func playableContentManager(_ contentManager: MPPlayableContentManager, initiatePlaybackOfContentItemAt indexPath: IndexPath, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 optional func playableContentManager(_ contentManager: MPPlayableContentManager, initiatePlaybackOfContentItemAt indexPath: IndexPath) async throws
+```
+
+```objc
+- (void) playableContentManager:(MPPlayableContentManager *) contentManager initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *) indexPath completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -27,7 +38,9 @@ The system calls this method when a media player interface needs to play a media
 
 - `contentManager`: The content manager that initiated the request.
 - `indexPath`: The index for the indicated item.
-- `completionHandler`: A block that the system calls after initiating a playback request. The block takes the following parameter: - **error**: Pass [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
+- `completionHandler`: A block that the system calls after initiating a playback request. The block takes the following parameter:
+
+  - **error**: Pass [`nil`](../../ObjectiveC/nil-227m0.md) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
 
 
 ---

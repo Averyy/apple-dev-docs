@@ -1,7 +1,8 @@
 # addPrintFormatter(_:startingAtPageAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a print formatter to the page renderer starting at the specified page.
 
@@ -17,20 +18,25 @@ Adds a print formatter to the page renderer starting at the specified page.
 func addPrintFormatter(_ formatter: UIPrintFormatter, startingAtPageAt pageIndex: Int)
 ```
 
+```objc
+- (void) addPrintFormatter:(UIPrintFormatter *) formatter startingAtPageAtIndex:(NSInteger) pageIndex;
+```
+
 #### Discussion
 
-You can dissociate a print formatter from its page renderer by calling the [`removeFromPrintPageRenderer()`](uiprintformatter/removefromprintpagerenderer().md) method on the print formatter.
+You can dissociate a print formatter from its page renderer by calling the [`removeFromPrintPageRenderer()`](../uiprintformatter/removefromprintpagerenderer%28%29.md) method on the print formatter.
 
 ## Parameters
 
-- `formatter`: The [`UIPrintFormatter`](uiprintformatter.md) object to add to the page renderer. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](uiviewprintformatter.md).
-- `pageIndex`: The index identifying the first page with which the print formatter should be associated with. This value overrides the [`startPage`](uiprintformatter/startpage.md) property of the print formatter.
+- `formatter`: The [`UIPrintFormatter`](../uiprintformatter.md) object to add to the page renderer. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](../uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](../uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](../uiviewprintformatter.md).
+- `pageIndex`: The index identifying the first page with which the print formatter should be associated with. This value overrides the [`startPage`](../uiprintformatter/startpage.md) property of the print formatter.
 
 ## See Also
 
-- [func printFormattersForPage(at: Int) -> [UIPrintFormatter]?](uiprintpagerenderer/printformattersforpage(at:).md)
+### Managing print formatters
+- [func printFormattersForPage(at: Int) -> [UIPrintFormatter]?](./printformattersforpage%28at%29.md)
   Returns the print formatters for a specified page.
-- [var printFormatters: [UIPrintFormatter]?](uiprintpagerenderer/printformatters.md)
+- [var printFormatters: [UIPrintFormatter]?](./printformatters.md)
   The print formatters for the page renderer.
 
 

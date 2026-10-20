@@ -1,7 +1,8 @@
 # http2RelayURL
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL identifying the relay server accessible using HTTP/2.
 
@@ -19,13 +20,18 @@ A URL identifying the relay server accessible using HTTP/2.
 var http2RelayURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * HTTP2RelayURL;
+```
+
 ## See Also
 
-- [var http3RelayURL: URL?](nerelay/http3relayurl.md)
+### Configuring server properties
+- [var http3RelayURL: URL?](./http3relayurl.md)
   A URL identifying the relay server accessible using HTTP/3.
-- [var dnsOverHTTPSURL: URL?](nerelay/dnsoverhttpsurl.md)
+- [var dnsOverHTTPSURL: URL?](./dnsoverhttpsurl.md)
   The URL of a DNS-over-HTTPS (DoH) resolver accessible from the relay.
-- [var rawPublicKeys: [Data]?](nerelay/rawpublickeys.md)
+- [var rawPublicKeys: [Data]?](./rawpublickeys.md)
   An array of TLS raw public keys that the relay server can present during the TLS handshake.
 
 

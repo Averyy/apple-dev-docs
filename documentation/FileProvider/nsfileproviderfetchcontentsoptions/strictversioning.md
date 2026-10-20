@@ -1,7 +1,8 @@
 # strictVersioning
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates the system requires an exact match of the requested item’s version.
 
@@ -14,9 +15,13 @@ An option that indicates the system requires an exact match of the requested ite
 static var strictVersioning: NSFileProviderFetchContentsOptions { get }
 ```
 
+```c
+NSFileProviderFetchContentsOptionsStrictVersioning
+```
+
 #### Discussion
 
-If the system includes this option when calling your [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).md) method, you must provide the requested version of the item. If you can’t provide the requested version, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
+If the system includes this option when calling your [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](../nsfileproviderpartialcontentfetching/fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md) method, you must provide the requested version of the item. If you can’t provide the requested version, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](../nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 
 
 ---

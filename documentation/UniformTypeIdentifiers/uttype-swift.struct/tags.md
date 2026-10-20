@@ -1,7 +1,8 @@
 # tags
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag specification dictionary of the type.
 
@@ -39,7 +40,7 @@ Normalizes to:
 }
 ```
 
-Use the tag class [`mimeType`](uttagclass/mimetype.md) or [`filenameExtension`](uttagclass/filenameextension.md) to retrieve the list of supporting MIME types or filename extensions for your type. For example, the following example retrieves a list of the filename extensions for the [`mpeg`](uttype-swift.struct/mpeg.md) type:
+Use the tag class [`mimeType`](../uttagclass/mimetype.md) or [`filenameExtension`](../uttagclass/filenameextension.md) to retrieve the list of supporting MIME types or filename extensions for your type. For example, the following example retrieves a list of the filename extensions for the [`mpeg`](./mpeg.md) type:
 
 ```swift
 let MPEGextensions = UTType.mpeg.tags[.filenameExtension]
@@ -47,13 +48,14 @@ let MPEGextensions = UTType.mpeg.tags[.filenameExtension]
 
 Types that have no tags for the requested tag class return a nil, not an empty array.
 
-To get the preferred filename extension or MIME type, use the tag class [`preferredFilenameExtension`](uttype-swift.struct/preferredfilenameextension.md) or [`preferredMIMEType`](uttype-swift.struct/preferredmimetype.md), respectively.
+To get the preferred filename extension or MIME type, use the tag class [`preferredFilenameExtension`](./preferredfilenameextension.md) or [`preferredMIMEType`](./preferredmimetype.md), respectively.
 
 ## See Also
 
-- [var preferredFilenameExtension: String?](uttype-swift.struct/preferredfilenameextension.md)
+### Obtaining tags
+- [var preferredFilenameExtension: String?](./preferredfilenameextension.md)
   The preferred filename extension for the type.
-- [var preferredMIMEType: String?](uttype-swift.struct/preferredmimetype.md)
+- [var preferredMIMEType: String?](./preferredmimetype.md)
   The preferred MIME type for the type.
 
 

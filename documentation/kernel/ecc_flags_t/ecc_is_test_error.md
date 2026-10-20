@@ -1,14 +1,15 @@
 # ECC_IS_TEST_ERROR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 ECC_IS_TEST_ERROR
 ```
 

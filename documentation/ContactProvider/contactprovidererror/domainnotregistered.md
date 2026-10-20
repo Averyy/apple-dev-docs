@@ -1,7 +1,8 @@
 # ContactProviderError.domainNotRegistered
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The domain has not been registered.
 

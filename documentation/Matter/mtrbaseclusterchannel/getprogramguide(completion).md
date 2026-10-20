@@ -1,7 +1,8 @@
 # getProgramGuide(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getProgramGuide(completion: @escaping @Sendable (MTRChannelClusterProgramGuideResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func programGuide() async throws -> MTRChannelClusterProgramGuideResponseParams
+```
+
+```objc
+- (void) getProgramGuideWithCompletion:(void (^)(MTRChannelClusterProgramGuideResponseParams *data, NSError *error)) completion;
 ```
 
 

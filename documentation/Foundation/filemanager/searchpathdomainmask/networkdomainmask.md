@@ -1,7 +1,8 @@
 # networkDomainMask
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The place to install items available on the network (`/Network`).
 
@@ -20,15 +21,20 @@ The place to install items available on the network (`/Network`).
 static var networkDomainMask: FileManager.SearchPathDomainMask { get }
 ```
 
+```c
+NSNetworkDomainMask
+```
+
 ## See Also
 
-- [static var userDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/userdomainmask.md)
+### Specifying Search Path Domains
+- [static var userDomainMask: FileManager.SearchPathDomainMask](./userdomainmask.md)
   The user’s home directory—the place to install user’s personal items (`~`).
-- [static var localDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/localdomainmask.md)
+- [static var localDomainMask: FileManager.SearchPathDomainMask](./localdomainmask.md)
   The place to install items available to everyone on this machine.
-- [static var systemDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/systemdomainmask.md)
+- [static var systemDomainMask: FileManager.SearchPathDomainMask](./systemdomainmask.md)
   A directory for system files provided by Apple (`/System`) .
-- [static var allDomainsMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/alldomainsmask.md)
+- [static var allDomainsMask: FileManager.SearchPathDomainMask](./alldomainsmask.md)
   All domains.
 
 

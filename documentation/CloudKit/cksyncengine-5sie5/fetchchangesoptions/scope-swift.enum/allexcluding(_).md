@@ -1,7 +1,8 @@
 # CKSyncEngine.FetchChangesOptions.Scope.allExcluding(_:)
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Fetch changes for all zones except the given set of zones.
 
@@ -11,7 +12,7 @@ Fetch changes for all zones except the given set of zones.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

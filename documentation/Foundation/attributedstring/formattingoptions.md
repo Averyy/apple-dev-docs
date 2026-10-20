@@ -1,7 +1,8 @@
 # AttributedString.FormattingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect the handling of attributes.
 
@@ -23,44 +24,45 @@ struct FormattingOptions
 ## Topics
 
 ### Creating Formatting Options
-- [init()](attributedstring/init.md)
+- [init()](./init%28%29.md)
   Creates an empty attributed string.
-- [init(NSAttributedString)](attributedstring/init(_:)-1fru0.md)
+- [init(NSAttributedString)](./init%28_%29-1fru0.md)
   Creates a value-type attributed string from a reference type.
-- [init(AttributedSubstring)](attributedstring/init(_:)-8tnoq.md)
+- [init(AttributedSubstring)](./init%28_%29-8tnoq.md)
   Creates an attributed string from an attributed substring.
 ### Using Defined Formatting Options
-- [static let applyReplacementIndexAttribute: AttributedString.FormattingOptions](attributedstring/formattingoptions/applyreplacementindexattribute.md)
+- [static let applyReplacementIndexAttribute: AttributedString.FormattingOptions](./formattingoptions/applyreplacementindexattribute.md)
   An option to add an attribute that marks replacements in localized strings.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md)
+### Creating a Localized Attributed String
+- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./init%28localized,options,table,bundle,locale,comment%29-8dlnl.md)
   Creates an attributed string by looking up a localized string from the app’s bundle.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8uknv.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./init%28localized,options,table,bundle,locale,comment,including%29-8uknv.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-5jzpg.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./init%28localized,options,table,bundle,locale,comment,including%29-5jzpg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies.
-- [String.LocalizationValue](../swift/string/localizationvalue.md)
+- [String.LocalizationValue](../../Swift/string/localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
-- [init(localized: LocalizedStringResource)](attributedstring/init(localized:).md)
+- [init(localized: LocalizedStringResource)](./init%28localized%29.md)
   Creates a localized attributed string from a localized string resource.
-- [init<S>(localized: LocalizedStringResource, including: S.Type)](attributedstring/init(localized:including:)-2xebo.md)
+- [init<S>(localized: LocalizedStringResource, including: S.Type)](./init%28localized,including%29-2xebo.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope.
-- [init<S>(localized: LocalizedStringResource, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:including:)-15xc5.md)
+- [init<S>(localized: LocalizedStringResource, including: KeyPath<AttributeScopes, S.Type>)](./init%28localized,including%29-15xc5.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope that a key path identifies.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](../localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
 
 

@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeOutlet
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An outlet accessory.
 
@@ -19,11 +20,16 @@ An outlet accessory.
 let HMAccessoryCategoryTypeOutlet: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeOutlet;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeProgrammableSwitch: String](hmaccessorycategorytypeprogrammableswitch.md)
+### Power and switches
+- [let HMAccessoryCategoryTypeProgrammableSwitch: String](./hmaccessorycategorytypeprogrammableswitch.md)
   A programmable switch accessory.
-- [let HMAccessoryCategoryTypeSwitch: String](hmaccessorycategorytypeswitch.md)
+- [let HMAccessoryCategoryTypeSwitch: String](./hmaccessorycategorytypeswitch.md)
   A switch accessory.
 
 

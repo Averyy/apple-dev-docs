@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of opacity specified using a UV-mapped image.
 
@@ -11,7 +12,7 @@ The amount of opacity specified using a UV-mapped image.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,10 +22,11 @@ var texture: PhysicallyBasedMaterial.Texture?
 
 ## See Also
 
-- [static var textureSemantic: TextureResource.Semantic](physicallybasedmaterial/opacity/texturesemantic.md)
+### Accessing opacity values
+- [static var textureSemantic: TextureResource.Semantic](./texturesemantic.md)
   The intended use of the object’s texture property.
-- [var scale: Float](physicallybasedmaterial/opacity/scale.md)
-- [var opacityThreshold: Float?](physicallybasedmaterial/opacitythreshold.md)
+- [var scale: Float](./scale.md)
+- [var opacityThreshold: Float?](../opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
 
 

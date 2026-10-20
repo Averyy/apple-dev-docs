@@ -1,7 +1,8 @@
 # RandomImageCropper
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Crops an image at a random location.
 
@@ -22,44 +23,45 @@ struct RandomImageCropper
 ## Topics
 
 ### Creating an image cropper
-- [init(scale: ClosedRange<Double>, aspectRatio: Double?)](randomimagecropper/init(scale:aspectratio:).md)
+- [init(scale: ClosedRange<Double>, aspectRatio: Double?)](./randomimagecropper/init%28scale,aspectratio%29.md)
   Creates an augmentation that crops an input image at a random location with a scale that indicates the lower and upper bounds to randomly scale the height and width of the image. The range must be between 0 and 1.
-- [init(targetSize: CGSize)](randomimagecropper/init(targetsize:).md)
+- [init(targetSize: CGSize)](./randomimagecropper/init%28targetsize%29.md)
   Creates an augmentation that crops an input image at a random location to the specified target size.
-- [init(targetWidth: Double, targetHeight: Double)](randomimagecropper/init(targetwidth:targetheight:).md)
+- [init(targetWidth: Double, targetHeight: Double)](./randomimagecropper/init%28targetwidth,targetheight%29.md)
   Creates an augmentation that crops an input image at a random location to the specified target width and height.
 ### Performing the augmentation
-- [func applied(to: CIImage, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> CIImage](randomimagecropper/applied(to:generator:eventhandler:).md)
+- [func applied(to: CIImage, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> CIImage](./randomimagecropper/applied%28to,generator,eventhandler%29.md)
   Randomly crops an image at a random location of a given size.
 
 ## Relationships
 
 ### Conforms To
-- [RandomTransformer](randomtransformer.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [RandomTransformer](./randomtransformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ApplyEachRandomly](applyeachrandomly.md)
+### Augmentations
+- [struct ApplyEachRandomly](./applyeachrandomly.md)
   Applies each transformer randomly given a probability.
-- [struct ApplyRandomly](applyrandomly.md)
+- [struct ApplyRandomly](./applyrandomly.md)
   Randomly applies the transformer with the given probability.
-- [struct AugmentationBuilder](augmentationbuilder.md)
+- [struct AugmentationBuilder](./augmentationbuilder.md)
   A series of augmentations.
-- [struct AugmentationSequence](augmentationsequence.md)
+- [struct AugmentationSequence](./augmentationsequence.md)
   An async sequence of augmented elements.
-- [struct Augmenter](augmenter.md)
+- [struct Augmenter](./augmenter.md)
   An augmenter.
-- [struct ChooseRandomly](chooserandomly.md)
+- [struct ChooseRandomly](./chooserandomly.md)
   Apply single transformation randomly chosen from a list of transformers.
-- [struct ShuffleRandomly](shufflerandomly.md)
+- [struct ShuffleRandomly](./shufflerandomly.md)
   Apply transformations in a random order.
-- [struct UniformRandomFloatingPointParameter](uniformrandomfloatingpointparameter.md)
+- [struct UniformRandomFloatingPointParameter](./uniformrandomfloatingpointparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [class UniformRandomIntegerParameter](uniformrandomintegerparameter.md)
+- [class UniformRandomIntegerParameter](./uniformrandomintegerparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [struct UpsampledAugmentationSequence](upsampledaugmentationsequence.md)
+- [struct UpsampledAugmentationSequence](./upsampledaugmentationsequence.md)
   An async sequence of augmented elements.
 
 

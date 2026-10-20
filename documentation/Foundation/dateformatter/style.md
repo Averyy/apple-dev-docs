@@ -1,7 +1,8 @@
 # DateFormatter.Style
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The following constants specify predefined format styles for dates and times.
 
@@ -20,6 +21,10 @@ The following constants specify predefined format styles for dates and times.
 enum Style
 ```
 
+```c
+enum NSDateFormatterStyle : NSUInteger;
+```
+
 #### Overview
 
 The format for these date and time styles is not exact because they depend on the locale, user preference settings, and the operating system version. Do not use these constants if you want an exact format.
@@ -27,27 +32,28 @@ The format for these date and time styles is not exact because they depend on th
 ## Topics
 
 ### Constants
-- [DateFormatter.Style.none](dateformatter/style/none.md)
-- [DateFormatter.Style.short](dateformatter/style/short.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.long](dateformatter/style/long.md)
-- [DateFormatter.Style.full](dateformatter/style/full.md)
+- [DateFormatter.Style.none](./style/none.md)
+- [DateFormatter.Style.short](./style/short.md)
+- [DateFormatter.Style.medium](./style/medium.md)
+- [DateFormatter.Style.long](./style/long.md)
+- [DateFormatter.Style.full](./style/full.md)
 ### Initializers
-- [init?(rawValue: UInt)](dateformatter/style/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DateFormatter.Behavior](dateformatter/behavior.md)
+### Constants
+- [DateFormatter.Behavior](./behavior.md)
   Constants that specify the behavior `NSDateFormatter` should exhibit.
 
 

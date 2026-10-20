@@ -1,7 +1,8 @@
 # queryVolumeEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that has the query volume component that this event originates from.
 
@@ -18,7 +19,8 @@ let queryVolumeEntity: Entity
 
 ## See Also
 
-- [let updateCount: UInt64](clothqueryvolumeevents/newbodyintersections/updatecount.md)
+### Identifying the query volume
+- [let updateCount: UInt64](./updatecount.md)
   The simulation update that this event originates from.
 
 

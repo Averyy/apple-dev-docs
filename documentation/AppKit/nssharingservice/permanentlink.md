@@ -1,7 +1,8 @@
 # permanentLink
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A permanent URL (permalink) that your app can use to access the post.
 
@@ -14,11 +15,16 @@ A permanent URL (permalink) that your app can use to access the post.
 var permanentLink: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * permanentLink;
+```
+
 ## See Also
 
-- [var attachmentFileURLs: [URL]?](nssharingservice/attachmentfileurls.md)
+### Getting the Shared Items
+- [var attachmentFileURLs: [URL]?](./attachmentfileurls.md)
   An array of NSURL objects representing the files that were shared.
-- [var messageBody: String?](nssharingservice/messagebody.md)
+- [var messageBody: String?](./messagebody.md)
   The message body as a string.
 
 

@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specified published service from the local GATT database.
 
@@ -20,9 +21,13 @@ Removes a specified published service from the local GATT database.
 func remove(_ service: CBMutableService)
 ```
 
+```objc
+- (void) removeService:(CBMutableService *) service;
+```
+
 #### Discussion
 
-Because apps on the local peripheral device share the GATT database, more than one instance of a service may exist in the database. As a result, this method removes only the instance of the service that your app added to the database (using the [`add(_:)`](cbperipheralmanager/add(_:).md) method). If any other services contains this service, you must first remove them.
+Because apps on the local peripheral device share the GATT database, more than one instance of a service may exist in the database. As a result, this method removes only the instance of the service that your app added to the database (using the [`add(_:)`](./add%28_%29.md) method). If any other services contains this service, you must first remove them.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ Because apps on the local peripheral device share the GATT database, more than o
 
 ## See Also
 
-- [func add(CBMutableService)](cbperipheralmanager/add(_:).md)
+### Adding and Removing Services
+- [func add(CBMutableService)](./add%28_%29.md)
   Publishes a service and any of its associated characteristics and characteristic descriptors to the local GATT database.
-- [func removeAllServices()](cbperipheralmanager/removeallservices.md)
+- [func removeAllServices()](./removeallservices%28%29.md)
   Removes all published services from the local GATT database.
 
 

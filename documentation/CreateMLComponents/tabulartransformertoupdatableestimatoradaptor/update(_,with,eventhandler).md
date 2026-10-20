@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Does nothing since this estimator uses a pre-defined transformer.
 
@@ -22,7 +23,8 @@ func update(_ transformer: inout Transformer, with input: DataFrame, eventHandle
 
 ## See Also
 
-- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Transformer](tabulartransformertoupdatableestimatoradaptor/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Transformer](./fitted%28to,eventhandler%29.md)
   Returns the pre-defined transformer.
 
 

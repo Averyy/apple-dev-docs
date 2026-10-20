@@ -1,7 +1,8 @@
 # configuration(for:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the RCS configuration for the specified cellular service.
 
@@ -16,11 +17,12 @@ final func configuration(for cellularServiceID: CellularServiceID) throws -> RCS
 
 #### Discussion
 
-You can observe changes in configuration through the [`viabilityNotifications`](rcsservice/viabilitynotifications.md) asynchronous sequence. When the service becomes viable, invoke this method to retrieve updates to the RCS configuration.
+You can observe changes in configuration through the [`viabilityNotifications`](./viabilitynotifications.md) asynchronous sequence. When the service becomes viable, invoke this method to retrieve updates to the RCS configuration.
 
 ## See Also
 
-- [RCSService.Configuration](rcsservice/configuration.md)
+### Managing RCS configuration
+- [RCSService.Configuration](./configuration.md)
   A structure that contains RCS configuration parameters, such as timing and size limits.
 
 

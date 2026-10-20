@@ -1,7 +1,8 @@
 # isSigned
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value indicating whether this type is a signed integer type.
 
@@ -26,11 +27,12 @@ This property is always `true` for signed integer types.
 
 ## See Also
 
-- [static var zero: Self](int/zero.md)
+### Accessing Numeric Constants
+- [static var zero: Self](./zero.md)
   The zero value.
-- [static var min: Self](int/min.md)
+- [static var min: Self](./min.md)
   The minimum representable integer in this type.
-- [static var max: Self](int/max.md)
+- [static var max: Self](./max.md)
   The maximum representable integer in this type.
 
 

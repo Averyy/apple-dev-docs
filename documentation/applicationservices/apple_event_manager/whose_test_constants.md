@@ -3,10 +3,24 @@
 **Framework**: Application Services  
 **Kind**: enum
 
+## Declaration
+
+```c
+enum {
+   typeWhoseDescriptor = 'whos',
+   formWhose = 'whos',
+   typeWhoseRange = 'wrng',
+   keyAEWhoseRangeStart = 'wstr',
+   keyAEWhoseRangeStop = 'wstp',
+   keyAEIndex = 'kidx',
+   keyAETest = 'ktst'
+};
+```
+
 ## Topics
 
 ### Constants
-- [var formWhose: Int](../coreservices/formwhose.md)
+- [var formWhose: Int](../../coreservices/formwhose.md)
 
 
 ---

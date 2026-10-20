@@ -1,12 +1,13 @@
 # RPPreviewViewControllerMode.share
 
 **Framework**: ReplayKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Share/AirDrop screen displayed when editing a replay.
 
 **Availability**:
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Share/AirDrop screen displayed when editing a replay.
 case share
 ```
 
+```c
+RPPreviewViewControllerModeShare
+```
+
 ## See Also
 
-- [RPPreviewViewControllerMode.preview](rppreviewviewcontrollermode/preview.md)
+### Constants
+- [RPPreviewViewControllerMode.preview](./preview.md)
   Preview screen displayed when editing a replay.
 
 

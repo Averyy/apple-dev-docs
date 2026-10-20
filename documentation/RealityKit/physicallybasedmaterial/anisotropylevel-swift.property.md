@@ -1,7 +1,8 @@
 # anisotropyLevel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The degree to which an entity reflects light to create stretched or oblong highlights.
 
@@ -11,7 +12,7 @@ The degree to which an entity reflects light to create stretched or oblong highl
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,15 @@ var anisotropyLevel: PhysicallyBasedMaterial.AnisotropyLevel { get set }
 
 ## Mentions
 
-- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
+- [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
 #### Discussion
 
-By default, PBR materials are isotropic; in other words, an entity that uses [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights, as shown in the following figure.
+By default, PBR materials are isotropic; in other words, an entity that uses [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights, as shown in the following figure.
 
-![An illustration showing 11 metallic spheres in a horizontal row. The](/images/com.apple.RealityKit/PhysicallyBasedMaterial-anisotropyLevel-swift-property-1@2x.png)
+![An illustration showing 11 metallic spheres in a horizontal row. The](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicallyBasedMaterial-anisotropyLevel-swift-property-1@2x.png)
 
-This property controls the amount of anisotropy. It works together with [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md), which defines the angle of elongation for the specular highlights.
+This property controls the amount of anisotropy. It works together with [`anisotropyAngle`](./anisotropyangle-swift.property.md), which defines the angle of elongation for the specular highlights.
 
 The following example specifies `anisotropyLevel` using single values for the entire material:
 
@@ -49,7 +50,8 @@ if let anisoLevelResource = try? TextureResource.load(named:
 
 ## See Also
 
-- [var anisotropyAngle: PhysicallyBasedMaterial.AnisotropyAngle](physicallybasedmaterial/anisotropyangle-swift.property.md)
+### Adding anisotropy
+- [var anisotropyAngle: PhysicallyBasedMaterial.AnisotropyAngle](./anisotropyangle-swift.property.md)
   The angle at which the anisotropic direction of the material is oriented, influencing the reflection and appearance of surface highlights.
 
 

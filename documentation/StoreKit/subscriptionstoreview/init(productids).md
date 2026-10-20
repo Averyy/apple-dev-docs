@@ -1,7 +1,8 @@
 # init(productIDs:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view that loads subscriptions based on a collection of product identifiers, and merchandises them with automatic marketing content.
 
@@ -27,9 +28,10 @@ init(productIDs: some Collection<String>) where Content == AutomaticSubscription
 
 ## See Also
 
-- [init(groupID: String, visibleRelationships: Product.SubscriptionRelationship)](subscriptionstoreview/init(groupid:visiblerelationships:).md)
+### Creating subscription store views with automatic marketing content
+- [init(groupID: String, visibleRelationships: Product.SubscriptionRelationship)](./init%28groupid,visiblerelationships%29.md)
   Creates a view that loads all subscriptions in a subscription group from the App Store, and merchandises them with automatic marketing content.
-- [init(subscriptions: some Collection<Product>)](subscriptionstoreview/init(subscriptions:).md)
+- [init(subscriptions: some Collection<Product>)](./init%28subscriptions%29.md)
   Creates a view that displays a collection of subscription options, and merchandises them with automatic marketing content.
 
 

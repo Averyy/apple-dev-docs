@@ -1,7 +1,8 @@
 # init(_:strategy:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL instance by parsing the provided input in accordance with a parse strategy.
 
@@ -33,12 +34,13 @@ let url = try? URL(urlString, strategy: .url
 
 ## Parameters
 
-- `value`: The value to parse, as the input type accepted by `strategy`. For [`URL.ParseStrategy`](url/parsestrategy.md), this is [`String`](https://developer.apple.com/documentation/swift/string).
+- `value`: The value to parse, as the input type accepted by `strategy`. For [`URL.ParseStrategy`](./parsestrategy.md), this is [`String`](../../Swift/string.md).
 - `strategy`: A parse strategy to apply when parsing `value`.
 
 ## See Also
 
-- [struct ParseStrategy](url/parsestrategy.md)
+### Creating a URL by parsing
+- [struct ParseStrategy](./parsestrategy.md)
   A parse strategy for creating URLs from formatted strings.
 
 

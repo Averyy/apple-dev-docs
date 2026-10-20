@@ -1,7 +1,8 @@
 # PageTransitionEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface PageTransitionEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [persisted](pagetransitionevent/1630079-persisted.md)
+- [persisted](./pagetransitionevent/api-1630079-persisted.md)
 
 ## Relationships
 

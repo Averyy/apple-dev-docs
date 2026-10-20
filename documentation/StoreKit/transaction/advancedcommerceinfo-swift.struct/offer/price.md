@@ -1,7 +1,8 @@
 # price
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The discounted price under the offer.
 
@@ -22,11 +23,12 @@ let price: Decimal
 
 ## See Also
 
-- [let period: SubscriptionPeriod](transaction/advancedcommerceinfo-swift.struct/offer/period.md)
+### Instance Properties
+- [let period: SubscriptionPeriod](./period.md)
   The duration of the offer.
-- [let periodCount: Int](transaction/advancedcommerceinfo-swift.struct/offer/periodcount.md)
+- [let periodCount: Int](./periodcount.md)
   The number of periods the system applies the offer.
-- [let reason: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.property.md)
+- [let reason: Transaction.AdvancedCommerceInfo.Offer.Reason](./reason-swift.property.md)
   The reason the offer was applied.
 
 

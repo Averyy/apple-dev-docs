@@ -1,7 +1,8 @@
 # SparseGetTranspose(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a transposed copy of the specified single-precision subfactor.
 
@@ -20,9 +21,13 @@ Returns a transposed copy of the specified single-precision subfactor.
 func SparseGetTranspose(_ Subfactor: SparseOpaqueSubfactor_Float) -> SparseOpaqueSubfactor_Float
 ```
 
+```c
+static SparseOpaqueSubfactor_Float SparseGetTranspose(SparseOpaqueSubfactor_Float Subfactor);
+```
+
 #### Return Value
 
-An object equivalent to the transpose of the one you provide. Because this is a reference-counted subfactor, the system must free it through a call to [`SparseCleanup(_:)`](sparsecleanup(_:)-1mrmc.md) when it no longer needs it.
+An object equivalent to the transpose of the one you provide. Because this is a reference-counted subfactor, the system must free it through a call to [`SparseCleanup(_:)`](./sparsecleanup%28_%29-1mrmc.md) when it no longer needs it.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ An object equivalent to the transpose of the one you provide. Because this is a 
 
 ## See Also
 
-- [func SparseGetTranspose(SparseOpaqueSubfactor_Double) -> SparseOpaqueSubfactor_Double](sparsegettranspose(_:)-9r7s5.md)
+### Subfactor transpose functions
+- [func SparseGetTranspose(SparseOpaqueSubfactor_Double) -> SparseOpaqueSubfactor_Double](./sparsegettranspose%28_%29-9r7s5.md)
   Returns a transposed copy of the specified double-precision subfactor.
 
 

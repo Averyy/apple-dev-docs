@@ -1,7 +1,8 @@
 # accessibilityInputLabels(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets alternate input labels with which users identify a tab.
 
@@ -19,6 +20,18 @@ Sets alternate input labels with which users identify a tab.
 ```swift
 nonisolated
 func accessibilityInputLabels(_ inputLabelKeys: [LocalizedStringKey], isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityInputLabels(_ inputLabels: [Text], isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+```swift
+nonisolated
+func accessibilityInputLabels<S>(_ inputLabels: [S], isEnabled: Bool = true) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
 #### Discussion
@@ -47,14 +60,15 @@ var body: some View {
 
 ## See Also
 
-- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
+### Configuring tab accessibility
+- [func accessibilityHint(_:isEnabled:)](./accessibilityhint%28_,isenabled%29.md)
   Communicates to the user what happens after selecting the tab.
 - [func accessibilityIdentifier(String, isEnabled: Bool) -> some TabContent<Self.TabValue>
-](tabcontent/accessibilityidentifier(_:isenabled:).md)
+](./accessibilityidentifier%28_,isenabled%29.md)
   Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
-- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
+- [func accessibilityLabel(_:isEnabled:)](./accessibilitylabel%28_,isenabled%29.md)
   Adds a label to the tab that describes its contents.
-- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
+- [func accessibilityValue(_:isEnabled:)](./accessibilityvalue%28_,isenabled%29.md)
   Adds a textual description of the value that the tab contains.
 
 

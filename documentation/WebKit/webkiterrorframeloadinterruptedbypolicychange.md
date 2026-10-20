@@ -1,10 +1,11 @@
 # WebKitErrorFrameLoadInterruptedByPolicyChange
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var WebKitErrorFrameLoadInterruptedByPolicyChange: Int { get }
 ```
 
+```c
+WebKitErrorFrameLoadInterruptedByPolicyChange
+```
+
 ## See Also
 
-- [var WebKitErrorCannotShowMIMEType: Int](webkiterrorcannotshowmimetype.md)
-- [var WebKitErrorCannotShowURL: Int](webkiterrorcannotshowurl.md)
+### Constants
+- [var WebKitErrorCannotShowMIMEType: Int](./webkiterrorcannotshowmimetype.md)
+- [var WebKitErrorCannotShowURL: Int](./webkiterrorcannotshowurl.md)
 
 
 ---

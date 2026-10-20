@@ -1,7 +1,8 @@
 # kAXSystemFloatingWindowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A system-generated utility window.
 
@@ -12,6 +13,10 @@ A system-generated utility window.
 
 ```swift
 var kAXSystemFloatingWindowSubrole: String { get }
+```
+
+```c
+#define kAXSystemFloatingWindowSubrole
 ```
 
 

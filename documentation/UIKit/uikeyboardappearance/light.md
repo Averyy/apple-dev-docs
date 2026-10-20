@@ -1,7 +1,8 @@
 # UIKeyboardAppearance.light
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a keyboard appearance suitable for a light UI look.
 
@@ -9,7 +10,7 @@ Specifies a keyboard appearance suitable for a light UI look.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Specifies a keyboard appearance suitable for a light UI look.
 case light
 ```
 
+```c
+UIKeyboardAppearanceLight
+```
+
 ## See Also
 
-- [UIKeyboardAppearance.default](uikeyboardappearance/default.md)
+### Constants
+- [UIKeyboardAppearance.default](./default.md)
   Specifies the default keyboard appearance for the current input method.
-- [UIKeyboardAppearance.dark](uikeyboardappearance/dark.md)
+- [UIKeyboardAppearance.dark](./dark.md)
   Specifies a keyboard appearance suitable for a dark UI look.
-- [static var alert: UIKeyboardAppearance](uikeyboardappearance/alert.md)
+- [static var alert: UIKeyboardAppearance](./alert.md)
   Specifies a keyboard appearance suitable for an alert panel.
 
 

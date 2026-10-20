@@ -1,7 +1,8 @@
 # contactPicker(_:didSelect:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after contacts have been selected by the user.
 
@@ -17,6 +18,10 @@ Called after contacts have been selected by the user.
 optional func contactPicker(_ picker: CNContactPickerViewController, didSelect contacts: [CNContact])
 ```
 
+```objc
+- (void) contactPicker:(CNContactPickerViewController *) picker didSelectContacts:(NSArray<CNContact *> *) contacts;
+```
+
 #### Discussion
 
 This delegate method is called when the user selects more than one contact. Implementing this method configures the picker for multi-selection.
@@ -28,11 +33,12 @@ This delegate method is called when the user selects more than one contact. Impl
 
 ## See Also
 
-- [func contactPicker(CNContactPickerViewController, didSelect: CNContact)](cncontactpickerdelegate/contactpicker(_:didselect:)-7vcyc.md)
+### Responding to User Selections
+- [func contactPicker(CNContactPickerViewController, didSelect: CNContact)](./contactpicker%28_,didselect%29-7vcyc.md)
   Called after a contact has been selected by the user.
-- [func contactPicker(CNContactPickerViewController, didSelect: CNContactProperty)](cncontactpickerdelegate/contactpicker(_:didselect:)-1xfpt.md)
+- [func contactPicker(CNContactPickerViewController, didSelect: CNContactProperty)](./contactpicker%28_,didselect%29-1xfpt.md)
   Called when a property of the contact has been selected by the user.
-- [func contactPicker(CNContactPickerViewController, didSelectContactProperties: [CNContactProperty])](cncontactpickerdelegate/contactpicker(_:didselectcontactproperties:).md)
+- [func contactPicker(CNContactPickerViewController, didSelectContactProperties: [CNContactProperty])](./contactpicker%28_,didselectcontactproperties%29.md)
   Called after contact properties have been selected by the user.
 
 

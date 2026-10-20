@@ -1,7 +1,8 @@
 # GKError.Code.turnBasedMatchDataTooLarge
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t complete the requested operation because the match data is too large.
 
@@ -20,15 +21,20 @@ The system can’t complete the requested operation because the match data is to
 case turnBasedMatchDataTooLarge
 ```
 
+```c
+GKErrorTurnBasedMatchDataTooLarge
+```
+
 ## See Also
 
-- [GKError.Code.turnBasedTooManySessions](gkerror/code/turnbasedtoomanysessions.md)
+### Turn-Based Game Errors
+- [GKError.Code.turnBasedTooManySessions](./turnbasedtoomanysessions.md)
   The system can’t complete the requested operation because it exceeds the maximum number of sessions.
-- [GKError.Code.turnBasedInvalidParticipant](gkerror/code/turnbasedinvalidparticipant.md)
+- [GKError.Code.turnBasedInvalidParticipant](./turnbasedinvalidparticipant.md)
   The system can’t complete the requested operation because the specified participant is invalid.
-- [GKError.Code.turnBasedInvalidTurn](gkerror/code/turnbasedinvalidturn.md)
+- [GKError.Code.turnBasedInvalidTurn](./turnbasedinvalidturn.md)
   The system can’t complete the requested operation because the participant doesn’t have the required turn state.
-- [GKError.Code.turnBasedInvalidState](gkerror/code/turnbasedinvalidstate.md)
+- [GKError.Code.turnBasedInvalidState](./turnbasedinvalidstate.md)
   The system can’t complete the requested operation because the session is in an invalid state.
 
 

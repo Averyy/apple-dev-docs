@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The big-endian representation of this integer.
@@ -24,6 +25,12 @@ var bigEndian: Self { get }
 #### Discussion
 
 If necessary, the byte order of this value is reversed from the typical byte order of this integer type. On a big-endian platform, for any integer `x`, `x == x.bigEndian`.
+
+## Default Implementations
+
+### FixedWidthInteger Implementations
+- [var bigEndian: Self](./bigendian-3he9.md)
+  The big-endian representation of this integer.
 
 
 ---

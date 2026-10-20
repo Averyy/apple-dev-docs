@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetMemberLocalizationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single localization for a leaderboard’s membership within a leaderboard set.
 
@@ -10,28 +11,29 @@ A response containing a single localization for a leaderboard’s membership wit
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetMemberLocalizationResponse
 ```
 
 ## Properties
 
 - `data` (GameCenterLeaderboardSetMemberLocalization) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `GameCenterLeaderboardSet`, `GameCenterLeaderboard`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object GameCenterLeaderboardSetMemberLocalization](gamecenterleaderboardsetmemberlocalization.md)
+### Objects
+- [object GameCenterLeaderboardSetMemberLocalization](./gamecenterleaderboardsetmemberlocalization.md)
   The data structure that represent a leaderboard set member localization.
-- [object GameCenterLeaderboardSetMemberLocalizationCreateRequest](gamecenterleaderboardsetmemberlocalizationcreaterequest.md)
+- [object GameCenterLeaderboardSetMemberLocalizationCreateRequest](./gamecenterleaderboardsetmemberlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
-- [object GameCenterLeaderboardSetMemberLocalizationUpdateRequest](gamecenterleaderboardsetmemberlocalizationupdaterequest.md)
+- [object GameCenterLeaderboardSetMemberLocalizationUpdateRequest](./gamecenterleaderboardsetmemberlocalizationupdaterequest.md)
   The request body you use to update a leaderboard localization.
-- [object GameCenterLeaderboardSetMemberLocalizationsResponse](gamecenterleaderboardsetmemberlocalizationsresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationsResponse](./gamecenterleaderboardsetmemberlocalizationsresponse.md)
   A response that contains multiple leaderboard localizations resources.
-- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponse](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardlinkageresponse.md)
-- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardsetlinkageresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponse](./gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardlinkageresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse](./gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardsetlinkageresponse.md)
 
 
 ---

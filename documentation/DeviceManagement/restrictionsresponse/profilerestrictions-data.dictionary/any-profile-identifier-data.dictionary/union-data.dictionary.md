@@ -1,7 +1,8 @@
 # RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains unioned restrictions.
 
@@ -15,14 +16,14 @@ A dictionary that contains unioned restrictions.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union
 ```
 
 ## Topics
 
 ### Objects
-- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union.ANY restriction name](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/union-data.dictionary/any-restriction-name-data.dictionary.md)
+- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union.ANY restriction name](./union-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains unioned restriction parameters.
 
 ## Properties
@@ -31,11 +32,12 @@ object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union
 
 ## See Also
 
-- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/intersection-data.dictionary.md)
+### Objects
+- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection](./intersection-data.dictionary.md)
   A dictionary that contains intersected restrictions.
-- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedbool-data.dictionary.md)
+- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool](./restrictedbool-data.dictionary.md)
   A dictionary that contains Boolean restrictions.
-- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedvalue-data.dictionary.md)
+- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue](./restrictedvalue-data.dictionary.md)
   A dictionary that contains numeric restrictions.
 
 

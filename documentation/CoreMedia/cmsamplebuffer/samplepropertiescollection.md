@@ -1,7 +1,8 @@
 # CMSampleBuffer.SamplePropertiesCollection
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Fixed size collection of sample information.
 
@@ -27,42 +28,42 @@ This collection contains one element for each sample in the sample buffer. The s
 ## Topics
 
 ### Initializers
-- [init()](cmsamplebuffer/samplepropertiescollection/init.md)
+- [init()](./samplepropertiescollection/init%28%29.md)
   Creates an empty collection.
-- [init(some Collection<CMSampleBuffer.SampleProperties>)](cmsamplebuffer/samplepropertiescollection/init(_:).md)
-- [init(sampleCount: Int, sizes: CMSampleBuffer.SizePerSample?, timings: CMSampleBuffer.TimingPerSample?, attachments: [CMSampleBuffer.SampleAttachments]?)](cmsamplebuffer/samplepropertiescollection/init(samplecount:sizes:timings:attachments:).md)
+- [init(some Collection<CMSampleBuffer.SampleProperties>)](./samplepropertiescollection/init%28_%29.md)
+- [init(sampleCount: Int, sizes: CMSampleBuffer.SizePerSample?, timings: CMSampleBuffer.TimingPerSample?, attachments: [CMSampleBuffer.SampleAttachments]?)](./samplepropertiescollection/init%28samplecount,sizes,timings,attachments%29.md)
   Create a collection with specified sample information.
 ### Instance Properties
-- [var attachments: [CMSampleBuffer.SampleAttachments]?](cmsamplebuffer/samplepropertiescollection/attachments.md)
+- [var attachments: [CMSampleBuffer.SampleAttachments]?](./samplepropertiescollection/attachments.md)
   Access sample attachments.
-- [var count: Int](cmsamplebuffer/samplepropertiescollection/count.md)
+- [var count: Int](./samplepropertiescollection/count.md)
   The number of elements in the collection.
-- [var endIndex: Int](cmsamplebuffer/samplepropertiescollection/endindex.md)
+- [var endIndex: Int](./samplepropertiescollection/endindex.md)
   The position one greater than the last valid subscript argument.
-- [var sizes: CMSampleBuffer.SizePerSample?](cmsamplebuffer/samplepropertiescollection/sizes.md)
+- [var sizes: CMSampleBuffer.SizePerSample?](./samplepropertiescollection/sizes.md)
   Access sample sizes.
-- [var startIndex: Int](cmsamplebuffer/samplepropertiescollection/startindex.md)
+- [var startIndex: Int](./samplepropertiescollection/startindex.md)
   The position of the first element.
-- [var timings: CMSampleBuffer.TimingPerSample?](cmsamplebuffer/samplepropertiescollection/timings.md)
+- [var timings: CMSampleBuffer.TimingPerSample?](./samplepropertiescollection/timings.md)
   Access sample timings.
 ### Subscripts
-- [subscript(Int) -> CMSampleBuffer.SampleProperties](cmsamplebuffer/samplepropertiescollection/subscript(_:).md)
+- [subscript(Int) -> CMSampleBuffer.SampleProperties](./samplepropertiescollection/subscript%28_%29.md)
   Accesses the element at the specified position.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

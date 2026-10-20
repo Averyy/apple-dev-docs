@@ -1,7 +1,8 @@
 # List all actors
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of actors.
 
@@ -16,7 +17,7 @@ This endpoint supports multiple id’s in the filter paramenter.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/actors?filter%5Bid%5D=USER%3A2cd2a1ef-cb74-411c-a078-0ebe119ade73,USER%3A83f7ddc0-64d6-4e4f-a5d9-51d74a8009a3
 ```
 
@@ -69,13 +70,28 @@ https://api.appstoreconnect.apple.com/v1/actors?filter%5Bid%5D=USER%3A2cd2a1ef-c
 
 ## Parameters
 
+### Query Parameters
+
 - `fields[actors]` ([string]): Additional fields to include for each actors resource returned by the response.
+
+  **Allowed Values**: `actorType`, `userFirstName`, `userLastName`, `userEmail`, `apiKeyId`
 - `filter[id]` ([string]) *(required)*: Filter the returned actors by actor ID.
 - `limit` (integer): The maximum number of actors resources to return.
 
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`ActorsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read actor information](get-v1-actors-_id_.md)
+### Reading actor information
+- [Read actor information](./get-v1-actors-_id_.md)
   Get information about a specific actor.
 
 

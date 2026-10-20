@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.storeAndForwardBatchNotFound
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The store does not have a batch.
 

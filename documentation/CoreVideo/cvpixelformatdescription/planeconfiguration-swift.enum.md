@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.PlaneConfiguration
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines how color components in the buffer are arranged.
 
@@ -23,15 +24,15 @@ enum PlaneConfiguration
 ## Topics
 
 ### Enumeration Cases
-- [CVPixelFormatDescription.PlaneConfiguration.nonPlanar(_:)](cvpixelformatdescription/planeconfiguration-swift.enum/nonplanar(_:).md)
-- [CVPixelFormatDescription.PlaneConfiguration.planar(_:)](cvpixelformatdescription/planeconfiguration-swift.enum/planar(_:).md)
+- [CVPixelFormatDescription.PlaneConfiguration.nonPlanar(_:)](./planeconfiguration-swift.enum/nonplanar%28_%29.md)
+- [CVPixelFormatDescription.PlaneConfiguration.planar(_:)](./planeconfiguration-swift.enum/planar%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # commonMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of metadata items for all common metadata keys that have a value.
 
@@ -20,19 +21,22 @@ An array of metadata items for all common metadata keys that have a value.
 static var commonMetadata: AVAsyncProperty<Root, [AVMetadataItem]> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-You can filter the array of metadata items according to language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md) method. Filter the results by identifier using the [`metadataItems(from:filteredByIdentifier:)`](avmetadataitem/metadataitems(from:filteredbyidentifier:).md) method.
+You can filter the array of metadata items according to language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md) method. Filter the results by identifier using the [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method.
 
 ## See Also
 
-- [static var metadata: AVAsyncProperty<Root, [AVMetadataItem]>](avpartialasyncproperty/metadata-6e14c.md)
+### Loading metadata
+- [static var metadata: AVAsyncProperty<Root, [AVMetadataItem]>](./metadata-6e14c.md)
   An array of metadata items for all metadata identifiers that have a value.
-- [static var availableMetadataFormats: AVAsyncProperty<Root, [AVMetadataFormat]>](avpartialasyncproperty/availablemetadataformats-5p9xg.md)
+- [static var availableMetadataFormats: AVAsyncProperty<Root, [AVMetadataFormat]>](./availablemetadataformats-5p9xg.md)
   An array of metadata formats available for the track.
-- [func loadMetadata(for: AVMetadataFormat, completionHandler: ([AVMetadataItem]?, (any Error)?) -> Void)](avassettrack/loadmetadata(for:completionhandler:).md)
+- [func loadMetadata(for: AVMetadataFormat, completionHandler: ([AVMetadataItem]?, (any Error)?) -> Void)](../avassettrack/loadmetadata%28for,completionhandler%29.md)
   Loads metadata items that a track contains for the specified format.
 
 

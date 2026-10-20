@@ -1,7 +1,8 @@
 # init(paymentDescription:regularBilling:managementURL:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a recurring payment object with a description, regular billing information, and a management URL.
 
@@ -18,9 +19,13 @@ Create a recurring payment object with a description, regular billing informatio
 init(paymentDescription: String, regularBilling: PKRecurringPaymentSummaryItem, managementURL: URL)
 ```
 
+```objc
+- (instancetype) initWithPaymentDescription:(NSString *) paymentDescription regularBilling:(PKRecurringPaymentSummaryItem *) regularBilling managementURL:(NSURL *) managementURL;
+```
+
 #### Discussion
 
-> ❗ **Important**:  You must set the [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request a recurring payment.
+> ❗ **Important**:  You must set the [`recurringPaymentRequest`](../pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](../pkpaymentrequest.md) object to use this class to request a recurring payment.
 
 ## Parameters
 

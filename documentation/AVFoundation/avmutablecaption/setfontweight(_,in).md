@@ -1,7 +1,8 @@
 # setFontWeight(_:in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the font weight for a range of text.
 
@@ -25,21 +26,22 @@ func setFontWeight(_ fontWeight: AVCaption.FontWeight, in range: NSRange)
 
 ## See Also
 
-- [AVCaption.FontStyle](avcaption/fontstyle.md)
+### Configuring font styles
+- [AVCaption.FontStyle](../avcaption/fontstyle.md)
   Font styles for caption text.
-- [func setFontStyle(AVCaption.FontStyle, in: NSRange)](avmutablecaption/setfontstyle(_:in:).md)
+- [func setFontStyle(AVCaption.FontStyle, in: NSRange)](./setfontstyle%28_,in%29.md)
   Sets the font style for a range of text.
-- [func removeFontStyle(in: NSRange)](avmutablecaption/removefontstyle(in:).md)
+- [func removeFontStyle(in: NSRange)](./removefontstyle%28in%29.md)
   Removes a font style from a range of text.
-- [AVCaption.FontWeight](avcaption/fontweight.md)
+- [AVCaption.FontWeight](../avcaption/fontweight.md)
   Font weights for a caption.
-- [func removeFontWeight(in: NSRange)](avmutablecaption/removefontweight(in:).md)
+- [func removeFontWeight(in: NSRange)](./removefontweight%28in%29.md)
   Removes a font weight from a range of text.
-- [AVCaption.Decoration](avcaption/decoration.md)
+- [AVCaption.Decoration](../avcaption/decoration.md)
   Text decorations for caption text.
-- [func setDecoration(AVCaption.Decoration, in: NSRange)](avmutablecaption/setdecoration(_:in:).md)
+- [func setDecoration(AVCaption.Decoration, in: NSRange)](./setdecoration%28_,in%29.md)
   Sets a decoration for a range of text.
-- [func removeDecoration(in: NSRange)](avmutablecaption/removedecoration(in:).md)
+- [func removeDecoration(in: NSRange)](./removedecoration%28in%29.md)
   Removes a decoration from a range of text.
 
 

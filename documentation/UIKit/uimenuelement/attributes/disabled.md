@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attribute indicating the disabled style.
 
@@ -18,17 +19,22 @@ An attribute indicating the disabled style.
 static var disabled: UIMenuElement.Attributes { get }
 ```
 
+```c
+UIMenuElementAttributesDisabled
+```
+
 #### Discussion
 
 When you use this attribute, the user can’t select the menu element.
 
 ## See Also
 
-- [static var destructive: UIMenuElement.Attributes](uimenuelement/attributes/destructive.md)
+### Attributes
+- [static var destructive: UIMenuElement.Attributes](./destructive.md)
   An attribute indicating the destructive style.
-- [static var hidden: UIMenuElement.Attributes](uimenuelement/attributes/hidden.md)
+- [static var hidden: UIMenuElement.Attributes](./hidden.md)
   An attribute indicating the hidden style.
-- [static var keepsMenuPresented: UIMenuElement.Attributes](uimenuelement/attributes/keepsmenupresented.md)
+- [static var keepsMenuPresented: UIMenuElement.Attributes](./keepsmenupresented.md)
   An attribute indicating that the menu remains presented after firing the element’s action instead of dismissing.
 
 

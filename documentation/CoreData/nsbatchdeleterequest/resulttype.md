@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of result the request provides when it executes.
 
@@ -20,13 +21,18 @@ The type of result the request provides when it executes.
 var resultType: NSBatchDeleteRequestResultType { get set }
 ```
 
+```objc
+@property NSBatchDeleteRequestResultType resultType;
+```
+
 #### Discussion
 
-Set this property before you execute the request if you require a result type other than the default of [`NSBatchDeleteRequestResultType.resultTypeStatusOnly`](nsbatchdeleterequestresulttype/resulttypestatusonly.md).
+Set this property before you execute the request if you require a result type other than the default of [`NSBatchDeleteRequestResultType.resultTypeStatusOnly`](../nsbatchdeleterequestresulttype/resulttypestatusonly.md).
 
 ## See Also
 
-- [enum NSBatchDeleteRequestResultType](nsbatchdeleterequestresulttype.md)
+### Configuring the Result Type
+- [enum NSBatchDeleteRequestResultType](../nsbatchdeleterequestresulttype.md)
   The types of result a batch delete request can provide when it executes.
 
 

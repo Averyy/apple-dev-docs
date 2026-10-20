@@ -1,7 +1,8 @@
 # VNGenerateOpticalFlowRequest.ComputationAccuracy.medium
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Medium accuracy.
 
@@ -19,13 +20,18 @@ Medium accuracy.
 case medium
 ```
 
+```c
+VNGenerateOpticalFlowRequestComputationAccuracyMedium
+```
+
 ## See Also
 
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.low](vngenerateopticalflowrequest/computationaccuracy-swift.enum/low.md)
+### Accuracy Levels
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.low](./low.md)
   Low accuracy.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.high](vngenerateopticalflowrequest/computationaccuracy-swift.enum/high.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.high](./high.md)
   High accuracy.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.veryHigh](vngenerateopticalflowrequest/computationaccuracy-swift.enum/veryhigh.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.veryHigh](./veryhigh.md)
   Very high accuracy.
 
 

@@ -1,7 +1,8 @@
 # Baseball
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for baseball parks.
 
@@ -10,7 +11,7 @@ The point-of-interest category for baseball parks.
 
 ## Declaration
 
-```swift
+```
 readonly Baseball: "Baseball";
 ```
 

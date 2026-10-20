@@ -1,7 +1,8 @@
 # AVCaptureAudioChannel
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that monitors average and peak power levels for an audio channel in a capture connection.
 
@@ -18,48 +19,53 @@ An object that monitors average and peak power levels for an audio channel in a 
 class AVCaptureAudioChannel
 ```
 
+```objc
+@interface AVCaptureAudioChannel : NSObject
+```
+
 #### Overview
 
-You don’t create instances of this class directly. Instead, an [`AVCaptureConnection`](avcaptureconnection.md) object that connects an audio input to an audio output provides an array of [`AVCaptureAudioChannel`](avcaptureaudiochannel.md) objects, one for each channel of audio available. You can poll for audio levels by iterating through these audio channel objects.
+You don’t create instances of this class directly. Instead, an [`AVCaptureConnection`](./avcaptureconnection.md) object that connects an audio input to an audio output provides an array of [`AVCaptureAudioChannel`](./avcaptureaudiochannel.md) objects, one for each channel of audio available. You can poll for audio levels by iterating through these audio channel objects.
 
 ## Topics
 
 ### Configuring a channel
-- [var isEnabled: Bool](avcaptureaudiochannel/isenabled.md)
+- [var isEnabled: Bool](./avcaptureaudiochannel/isenabled.md)
   A Boolean value that indicates whether the channel is in an enabled state.
-- [var volume: Float](avcaptureaudiochannel/volume.md)
+- [var volume: Float](./avcaptureaudiochannel/volume.md)
   The current volume (gain) of the channel.
 ### Accessing power levels
-- [var averagePowerLevel: Float](avcaptureaudiochannel/averagepowerlevel.md)
+- [var averagePowerLevel: Float](./avcaptureaudiochannel/averagepowerlevel.md)
   The instantaneous average power level in decibels.
-- [var peakHoldLevel: Float](avcaptureaudiochannel/peakholdlevel.md)
+- [var peakHoldLevel: Float](./avcaptureaudiochannel/peakholdlevel.md)
   The peak hold power level in decibels.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var connections: [AVCaptureConnection]](avcapturesession/connections.md)
+### Connecting inputs and outputs
+- [var connections: [AVCaptureConnection]](./avcapturesession/connections.md)
   The connections between inputs and outputs that a capture session contains.
-- [func addConnection(AVCaptureConnection)](avcapturesession/addconnection(_:).md)
+- [func addConnection(AVCaptureConnection)](./avcapturesession/addconnection%28_%29.md)
   Adds a connection to the capture session.
-- [func canAddConnection(AVCaptureConnection) -> Bool](avcapturesession/canaddconnection(_:).md)
+- [func canAddConnection(AVCaptureConnection) -> Bool](./avcapturesession/canaddconnection%28_%29.md)
   Determines whether a you can add a connection to a capture session.
-- [func addInputWithNoConnections(AVCaptureInput)](avcapturesession/addinputwithnoconnections(_:).md)
+- [func addInputWithNoConnections(AVCaptureInput)](./avcapturesession/addinputwithnoconnections%28_%29.md)
   Adds a capture input to a session without forming any connections.
-- [func addOutputWithNoConnections(AVCaptureOutput)](avcapturesession/addoutputwithnoconnections(_:).md)
+- [func addOutputWithNoConnections(AVCaptureOutput)](./avcapturesession/addoutputwithnoconnections%28_%29.md)
   Adds a capture output to the session without forming any connections.
-- [func removeConnection(AVCaptureConnection)](avcapturesession/removeconnection(_:).md)
+- [func removeConnection(AVCaptureConnection)](./avcapturesession/removeconnection%28_%29.md)
   Removes a capture connection from the session.
 
 

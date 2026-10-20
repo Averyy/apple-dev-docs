@@ -1,7 +1,8 @@
 # DNSServiceConstructFullName(_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Concatenates a three-part domain name (as returned by the above callbacks) into a properly-escaped full domain name.
 
@@ -20,9 +21,13 @@ Concatenates a three-part domain name (as returned by the above callbacks) into 
 func DNSServiceConstructFullName(_ fullName: UnsafeMutablePointer<CChar>!, _ service: UnsafePointer<CChar>!, _ regtype: UnsafePointer<CChar>!, _ domain: UnsafePointer<CChar>!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceConstructFullName(char * constfullName, const char * constservice, const char * constregtype, const char * constdomain);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) (0) on success, kDNSServiceErr_BadParam on error.
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) (0) on success, kDNSServiceErr_BadParam on error.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ Note that callbacks in the above functions ALREADY ESCAPE strings where necessar
 
 ## Parameters
 
-- `fullName`: A pointer to a buffer that where the resulting full domain name is to be written. The buffer must be [`kDNSServiceMaxDomainName`](kdnsservicemaxdomainname.md) (1009) bytes in length to accommodate the longest legal domain name without buffer overrun.
+- `fullName`: A pointer to a buffer that where the resulting full domain name is to be written. The buffer must be [`kDNSServiceMaxDomainName`](./kdnsservicemaxdomainname.md) (1009) bytes in length to accommodate the longest legal domain name without buffer overrun.
 - `service`: The service name - any dots or backslashes must NOT be escaped. May be NULL (to construct a PTR record name, e.g. “_ftp._tcp.apple.com.”).
 - `regtype`: The service type followed by the protocol, separated by a dot (e.g. “_ftp._tcp”).
 - `domain`: The domain name, e.g. “apple.com.”. Literal dots or backslashes, if any, must be escaped, e.g. “1st. Floor.apple.com.”

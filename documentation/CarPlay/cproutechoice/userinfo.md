@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object containing custom information associated with the route choice.
 
@@ -14,6 +15,10 @@ An object containing custom information associated with the route choice.
 
 ```swift
 var userInfo: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
 ```
 
 #### Discussion

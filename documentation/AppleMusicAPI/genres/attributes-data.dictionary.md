@@ -1,7 +1,8 @@
 # Genres.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a genre resource.
 
@@ -10,7 +11,7 @@ The attributes for a genre resource.
 
 ## Declaration
 
-```swift
+```
 object Genres.Attributes
 ```
 

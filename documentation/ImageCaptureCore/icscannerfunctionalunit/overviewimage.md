@@ -1,7 +1,8 @@
 # overviewImage
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var overviewImage: CGImage? { get }
+```
+
+```objc
+@property (readonly, nullable) CGImageRef overviewImage;
 ```
 
 

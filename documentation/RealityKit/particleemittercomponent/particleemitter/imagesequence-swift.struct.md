@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ImageSequence
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure used to define properties of the sprite sheet, used by imageSequence.
 
@@ -22,33 +23,33 @@ struct ImageSequence
 ## Topics
 
 ### Initializers
-- [init()](particleemittercomponent/particleemitter/imagesequence-swift.struct/init.md)
+- [init()](./imagesequence-swift.struct/init%28%29.md)
 ### Instance Properties
-- [var animationMode: ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode](particleemittercomponent/particleemitter/imagesequence-swift.struct/animationmode.md)
+- [var animationMode: ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode](./imagesequence-swift.struct/animationmode.md)
   How the effect timeline is played.
-- [var columnCount: Int](particleemittercomponent/particleemitter/imagesequence-swift.struct/columncount.md)
+- [var columnCount: Int](./imagesequence-swift.struct/columncount.md)
   Number of columns in the sprite sheet.
-- [var frameRate: Float](particleemittercomponent/particleemitter/imagesequence-swift.struct/framerate.md)
+- [var frameRate: Float](./imagesequence-swift.struct/framerate.md)
   Number of sprite sheet frames to play per second.
-- [var frameRateVariation: Float](particleemittercomponent/particleemitter/imagesequence-swift.struct/frameratevariation.md)
+- [var frameRateVariation: Float](./imagesequence-swift.struct/frameratevariation.md)
   Defines a plus/minus range (in frames per second) from which a value is randomly selected to offset `frameRate`.
-- [var initialFrame: Int](particleemittercomponent/particleemitter/imagesequence-swift.struct/initialframe.md)
+- [var initialFrame: Int](./imagesequence-swift.struct/initialframe.md)
   First frame of the sprite sheet animation.
-- [var initialFrameVariation: Int](particleemittercomponent/particleemitter/imagesequence-swift.struct/initialframevariation.md)
+- [var initialFrameVariation: Int](./imagesequence-swift.struct/initialframevariation.md)
   Defines a plus/minus range (in frames) from which a value is randomly selected to offset `initialFrame`.
-- [var rowCount: Int](particleemittercomponent/particleemitter/imagesequence-swift.struct/rowcount.md)
+- [var rowCount: Int](./imagesequence-swift.struct/rowcount.md)
   Number of rows in the sprite sheet.
 ### Enumerations
-- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode](particleemittercomponent/particleemitter/imagesequence-swift.struct/animationrepeatmode.md)
+- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode](./imagesequence-swift.struct/animationrepeatmode.md)
   Options for how the effect timeline is played, used by the animationMode property.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

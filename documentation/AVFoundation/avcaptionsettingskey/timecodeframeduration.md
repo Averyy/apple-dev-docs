@@ -1,7 +1,8 @@
 # timeCodeFrameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies the frame duration that the system uses for the time code.
 
@@ -17,17 +18,22 @@ A key that identifies the frame duration that the system uses for the time code.
 static let timeCodeFrameDuration: AVCaptionSettingsKey
 ```
 
+```c
+extern AVCaptionSettingsKey const AVCaptionTimeCodeFrameDurationKey;
+```
+
 #### Discussion
 
 Some formats, such as TTML, use time code notation to indicate the timing of a caption. Use this key to specify the frame rate of the time code.
 
 ## See Also
 
-- [static let mediaType: AVCaptionSettingsKey](avcaptionsettingskey/mediatype.md)
+### Keys
+- [static let mediaType: AVCaptionSettingsKey](./mediatype.md)
   A key that identifies the output media type of a caption conversion operation.
-- [static let mediaSubType: AVCaptionSettingsKey](avcaptionsettingskey/mediasubtype.md)
+- [static let mediaSubType: AVCaptionSettingsKey](./mediasubtype.md)
   A key that identifies the output media subtype of a caption conversion operation.
-- [static let useDropFrameTimeCode: AVCaptionSettingsKey](avcaptionsettingskey/usedropframetimecode.md)
+- [static let useDropFrameTimeCode: AVCaptionSettingsKey](./usedropframetimecode.md)
   A key that identifies whether the system uses drop frame time code.
 
 

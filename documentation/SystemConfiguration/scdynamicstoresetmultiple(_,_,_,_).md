@@ -1,7 +1,8 @@
 # SCDynamicStoreSetMultiple(_:_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Updates multiple values in the dynamic store.
 
@@ -12,6 +13,10 @@ Updates multiple values in the dynamic store.
 
 ```swift
 func SCDynamicStoreSetMultiple(_ store: SCDynamicStore?, _ keysToSet: CFDictionary?, _ keysToRemove: CFArray?, _ keysToNotify: CFArray?) -> Bool
+```
+
+```c
+Boolean SCDynamicStoreSetMultiple(SCDynamicStoreRef store, CFDictionaryRef keysToSet, CFArrayRef keysToRemove, CFArrayRef keysToNotify);
 ```
 
 #### Return Value
@@ -27,11 +32,12 @@ func SCDynamicStoreSetMultiple(_ store: SCDynamicStore?, _ keysToSet: CFDictiona
 
 ## See Also
 
-- [func SCDynamicStoreAddTemporaryValue(SCDynamicStore, CFString, CFPropertyList) -> Bool](scdynamicstoreaddtemporaryvalue(_:_:_:).md)
+### Adding or Updating Keys and Values
+- [func SCDynamicStoreAddTemporaryValue(SCDynamicStore, CFString, CFPropertyList) -> Bool](./scdynamicstoreaddtemporaryvalue%28_,_,_%29.md)
   Temporarily adds the specified key-value pair to the dynamic store, if no such key already exists.
-- [func SCDynamicStoreAddValue(SCDynamicStore?, CFString, CFPropertyList) -> Bool](scdynamicstoreaddvalue(_:_:_:).md)
+- [func SCDynamicStoreAddValue(SCDynamicStore?, CFString, CFPropertyList) -> Bool](./scdynamicstoreaddvalue%28_,_,_%29.md)
   Adds the specified key-value pair to the dynamic store, if no such key already exists.
-- [func SCDynamicStoreSetValue(SCDynamicStore?, CFString, CFPropertyList) -> Bool](scdynamicstoresetvalue(_:_:_:).md)
+- [func SCDynamicStoreSetValue(SCDynamicStore?, CFString, CFPropertyList) -> Bool](./scdynamicstoresetvalue%28_,_,_%29.md)
   Adds or replaces a value in the dynamic store for the specified key.
 
 

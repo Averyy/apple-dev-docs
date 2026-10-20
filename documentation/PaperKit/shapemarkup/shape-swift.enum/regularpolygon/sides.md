@@ -1,7 +1,8 @@
 # sides
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of sides.
 

@@ -1,13 +1,14 @@
 # fdtype
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file descriptor type, as a libproc type.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The file descriptor type, as a libproc type.
 var fdtype: UInt32
 ```
 
+```c
+uint32_t fdtype;
+```
+
 #### Discussion
 
-If this value is `PROX_FDTYPE_PIPE`, the [`es_fd_t`](es_fd_t.md) structure also contains a `pipe.pipe_id` field. This field represents the unique ID of the pipe for correlation with other file descriptors pointing to the same or other end of the same pipe.
+If this value is `PROX_FDTYPE_PIPE`, the [`es_fd_t`](../es_fd_t.md) structure also contains a `pipe.pipe_id` field. This field represents the unique ID of the pipe for correlation with other file descriptors pointing to the same or other end of the same pipe.
 
 ## See Also
 
-- [var fd: Int32](es_fd_t/fd.md)
+### Inspecting File Descriptor Properties
+- [var fd: Int32](./fd.md)
   The file descriptor number.
 
 

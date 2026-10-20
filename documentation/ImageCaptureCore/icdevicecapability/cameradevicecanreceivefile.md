@@ -1,7 +1,8 @@
 # cameraDeviceCanReceiveFile
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the host can upload files to the camera.
 
@@ -16,6 +17,10 @@ Indicates that the host can upload files to the camera.
 
 ```swift
 static let cameraDeviceCanReceiveFile: ICDeviceCapability
+```
+
+```c
+extern ICDeviceCapability const ICCameraDeviceCanReceiveFile;
 ```
 
 

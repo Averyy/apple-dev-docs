@@ -1,7 +1,8 @@
 # lookAroundViewControllerWillUpdateScene(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the scene is about to update.
 
@@ -18,13 +19,18 @@ Tells the delegate that the scene is about to update.
 optional func lookAroundViewControllerWillUpdateScene(_ viewController: MKLookAroundViewController)
 ```
 
+```objc
+- (void) lookAroundViewControllerWillUpdateScene:(MKLookAroundViewController *) viewController;
+```
+
 ## Parameters
 
-- `viewController`: The [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
+- `viewController`: The [`MKLookAroundViewController`](../mklookaroundviewcontroller.md).
 
 ## See Also
 
-- [func lookAroundViewControllerDidUpdateScene(MKLookAroundViewController)](mklookaroundviewcontrollerdelegate/lookaroundviewcontrollerdidupdatescene(_:).md)
+### Responding to scene changes
+- [func lookAroundViewControllerDidUpdateScene(MKLookAroundViewController)](./lookaroundviewcontrollerdidupdatescene%28_%29.md)
   Tells the delegate that the scene updated.
 
 

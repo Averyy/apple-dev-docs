@@ -1,7 +1,8 @@
 # VZVirtioSharedMemoryRegion
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a Virtio shared memory region for a custom Virtio device in a virtual machine.
 
@@ -14,46 +15,52 @@ A class that represents a Virtio shared memory region for a custom Virtio device
 class VZVirtioSharedMemoryRegion
 ```
 
+```objc
+@interface VZVirtioSharedMemoryRegion : NSObject
+```
+
 #### Overview
 
 Don’t instantiate a `VZVirtioSharedMemoryRegion` directly.
 
-Virtio shared memory regions are first configured on the [`VZCustomVirtioDeviceConfiguration`](vzcustomvirtiodeviceconfiguration.md) through [`VZVirtioSharedMemoryRegionConfiguration`](vzvirtiosharedmemoryregionconfiguration.md). When you create a [`VZCustomVirtioDevice`](vzcustomvirtiodevice.md), the shared memory region is available through the [`sharedMemoryRegions`](vzcustomvirtiodevice/sharedmemoryregions.md) property.
+Virtio shared memory regions are first configured on the [`VZCustomVirtioDeviceConfiguration`](./vzcustomvirtiodeviceconfiguration.md) through [`VZVirtioSharedMemoryRegionConfiguration`](./vzvirtiosharedmemoryregionconfiguration.md). When you create a [`VZCustomVirtioDevice`](./vzcustomvirtiodevice.md), the shared memory region is available through the [`sharedMemoryRegions`](./vzcustomvirtiodevice/sharedmemoryregions.md) property.
 
 Use this class to manage the shared memory region during virtual machine runtime to map and unmap host memory into and from the shared memory region.
 
 ## Topics
 
 ### Instance Properties
-- [var regionID: UInt8](vzvirtiosharedmemoryregion/regionid.md)
+- [var regionID: UInt8](./vzvirtiosharedmemoryregion/regionid.md)
   The shared memory region ID.
-- [var size: UInt64](vzvirtiosharedmemoryregion/size.md)
+- [var size: UInt64](./vzvirtiosharedmemoryregion/size.md)
   The size of the shared memory region.
 ### Instance Methods
-- [func mapMemory(UnsafeMutableRawPointer, atOffset: UInt64, size: UInt64, completionHandler: ((any Error)?) -> Void)](vzvirtiosharedmemoryregion/mapmemory(_:atoffset:size:completionhandler:).md)
+- [func mapMemory(UnsafeMutableRawPointer, atOffset: UInt64, size: UInt64, completionHandler: ((any Error)?) -> Void)](./vzvirtiosharedmemoryregion/mapmemory%28_,atoffset,size,completionhandler%29.md)
   Maps a chunk of host memory into the shared memory region.
-- [func unmapMemory(atOffset: UInt64, size: UInt64, completionHandler: ((any Error)?) -> Void)](vzvirtiosharedmemoryregion/unmapmemory(atoffset:size:completionhandler:).md)
+- [func unmapMemory(atOffset: UInt64, size: UInt64, completionHandler: ((any Error)?) -> Void)](./vzvirtiosharedmemoryregion/unmapmemory%28atoffset,size,completionhandler%29.md)
   Unmaps a chunk of host memory from the shared memory region.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioSharedMemoryRegionConfiguration](vzvirtiosharedmemoryregionconfiguration.md)
+### Related Documentation
+- [class VZVirtioSharedMemoryRegionConfiguration](./vzvirtiosharedmemoryregionconfiguration.md)
   The configuration of a Virtio shared memory region.
-- [class VZCustomVirtioDevice](vzcustomvirtiodevice.md)
+- [class VZCustomVirtioDevice](./vzcustomvirtiodevice.md)
   An interface that represents a custom Virtio device that you provide the implementation for.
-- [class VZVirtioSharedMemoryRegionConfiguration](vzvirtiosharedmemoryregionconfiguration.md)
+### Managing shared memory
+- [class VZVirtioSharedMemoryRegionConfiguration](./vzvirtiosharedmemoryregionconfiguration.md)
   The configuration of a Virtio shared memory region.
 
 

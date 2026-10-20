@@ -1,7 +1,8 @@
 # P521.KeyAgreement
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mechanism used to create a shared secret between two users by performing NIST P-521 elliptic curve Diffie Hellman (ECDH) key exchange.
 
@@ -23,20 +24,21 @@ enum KeyAgreement
 ## Topics
 
 ### Using keys
-- [P521.KeyAgreement.PrivateKey](p521/keyagreement/privatekey.md)
+- [P521.KeyAgreement.PrivateKey](./keyagreement/privatekey.md)
   A P-521 private key used for key agreement.
-- [P521.KeyAgreement.PublicKey](p521/keyagreement/publickey.md)
+- [P521.KeyAgreement.PublicKey](./keyagreement/publickey.md)
   A P-521 public key used for key agreement.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P521.Signing](p521/signing.md)
+### Performing operations
+- [P521.Signing](./signing.md)
   A mechanism used to create or verify a cryptographic signature using the NIST P-521 elliptic curve digital signature algorithm (ECDSA).
 
 

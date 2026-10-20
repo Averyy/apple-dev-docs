@@ -1,7 +1,8 @@
 # stickerBrowserView
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sticker browser view managed by this controller.
 
@@ -16,11 +17,16 @@ The sticker browser view managed by this controller.
 var stickerBrowserView: MSStickerBrowserView { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) MSStickerBrowserView * stickerBrowserView;
+```
+
 ## See Also
 
-- [init(stickerSize: MSStickerSize)](msstickerbrowserviewcontroller/init(stickersize:).md)
+### Working with Stickers
+- [init(stickerSize: MSStickerSize)](./init%28stickersize%29.md)
   Creates a new sticker browser view controller with stickers of the provided size.
-- [var stickerSize: MSStickerSize](msstickerbrowserviewcontroller/stickersize.md)
+- [var stickerSize: MSStickerSize](./stickersize.md)
   A constant that indicates the size of the stickers.
 
 

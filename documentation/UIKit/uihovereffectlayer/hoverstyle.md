@@ -1,7 +1,8 @@
 # hoverStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hover style to apply to the sublayers of this layer when this layer is hovered (e.g., when the user looks at this layer). Defaults to the automatic style.
 
@@ -15,9 +16,13 @@ The hover style to apply to the sublayers of this layer when this layer is hover
 var hoverStyle: UIHoverStyle { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UIHoverStyle * hoverStyle;
+```
+
 #### Discussion
 
-> **Note**: Not all [`UIHoverStyle`](uihoverstyle.md)s may be supported by [`UIHoverEffectLayer`](uihovereffectlayer.md). If the provided style is not supported, a fallback style will be selected instead.
+> **Note**: Not all [`UIHoverStyle`](../uihoverstyle.md)s may be supported by [`UIHoverEffectLayer`](../uihovereffectlayer.md). If the provided style is not supported, a fallback style will be selected instead.
 
 
 ---

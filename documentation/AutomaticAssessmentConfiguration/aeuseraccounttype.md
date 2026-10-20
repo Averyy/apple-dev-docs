@@ -1,7 +1,8 @@
 # AEUserAccountType
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the type of account required for an assessment session.
 
@@ -16,27 +17,31 @@ Specifies the type of account required for an assessment session.
 enum AEUserAccountType
 ```
 
+```c
+enum AEUserAccountType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AEUserAccountType.any](aeuseraccounttype/any.md)
+- [AEUserAccountType.any](./aeuseraccounttype/any.md)
   No specific account type is required.
-- [AEUserAccountType.guest](aeuseraccounttype/guest.md)
+- [AEUserAccountType.guest](./aeuseraccounttype/guest.md)
   Requires a guest user account.
-- [AEUserAccountType.standard](aeuseraccounttype/standard.md)
+- [AEUserAccountType.standard](./aeuseraccounttype/standard.md)
   Requires a standard user account.
 ### Initializers
-- [init?(rawValue: Int)](aeuseraccounttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./aeuseraccounttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

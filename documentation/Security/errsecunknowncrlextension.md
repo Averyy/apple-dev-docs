@@ -1,7 +1,8 @@
 # errSecUnknownCRLExtension
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unknown certificate revocation list extension was detected.
 
@@ -18,6 +19,10 @@ An unknown certificate revocation list extension was detected.
 
 ```swift
 var errSecUnknownCRLExtension: OSStatus { get }
+```
+
+```c
+errSecUnknownCRLExtension
 ```
 
 

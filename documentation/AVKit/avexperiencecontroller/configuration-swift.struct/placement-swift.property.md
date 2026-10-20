@@ -1,7 +1,8 @@
 # placement
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Supply a Placement to be used when the original container isn’t added to the view controller hierarchy; i.e. the AVPlayerViewController is off-screen.
 
@@ -20,7 +21,8 @@ Indicates the placement of where the media playback will be experienced. Setting
 
 ## See Also
 
-- [AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct.md)
+### Configuring placement
+- [AVExperienceController.Configuration.Placement](./placement-swift.struct.md)
   A struct used to set the placement for the media playback to be experienced.
 
 

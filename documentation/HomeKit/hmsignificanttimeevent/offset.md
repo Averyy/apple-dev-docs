@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset from the significant event that the event fires at.
 
@@ -19,9 +20,14 @@ The offset from the significant event that the event fires at.
 var offset: DateComponents? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSDateComponents * offset;
+```
+
 ## See Also
 
-- [var significantEvent: HMSignificantEvent](hmsignificanttimeevent/significantevent.md)
+### Inspecting a significant time event
+- [var significantEvent: HMSignificantEvent](./significantevent.md)
   The significant time-based event that is used to calculate when the event fires.
 
 

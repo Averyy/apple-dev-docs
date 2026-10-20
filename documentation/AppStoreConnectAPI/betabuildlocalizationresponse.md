@@ -1,7 +1,8 @@
 # BetaBuildLocalizationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify localized TestFlight build metadata.
 
@@ -10,7 +11,7 @@ The response body for endpoints that create, read, or modify localized TestFligh
 
 ## Declaration
 
-```swift
+```
 object BetaBuildLocalizationResponse
 ```
 
@@ -22,19 +23,21 @@ object BetaBuildLocalizationResponse
 
 ## See Also
 
-- [Create a beta build localization](post-v1-betabuildlocalizations.md)
+### Related Documentation
+- [Create a beta build localization](./post-v1-betabuildlocalizations.md)
   Create localized What’s New text for a build.
-- [object BetaBuildLocalization](betabuildlocalization.md)
+### Objects
+- [object BetaBuildLocalization](./betabuildlocalization.md)
   The localized ‘What’s New’ text shown to TestFlight testers in a specific language for a build.
-- [object BetaBuildLocalizationsWithoutIncludesResponse](betabuildlocalizationswithoutincludesresponse.md)
+- [object BetaBuildLocalizationsWithoutIncludesResponse](./betabuildlocalizationswithoutincludesresponse.md)
   A response containing a list of TestFlight build localizations, without related resources.
-- [object BetaBuildLocalizationCreateRequest](betabuildlocalizationcreaterequest.md)
+- [object BetaBuildLocalizationCreateRequest](./betabuildlocalizationcreaterequest.md)
   The request body you use to create a Beta Build Localization.
-- [object BetaBuildLocalizationUpdateRequest](betabuildlocalizationupdaterequest.md)
+- [object BetaBuildLocalizationUpdateRequest](./betabuildlocalizationupdaterequest.md)
   The request body you use to update a Beta Build Localization.
-- [object BetaBuildLocalizationsResponse](betabuildlocalizationsresponse.md)
+- [object BetaBuildLocalizationsResponse](./betabuildlocalizationsresponse.md)
   The response body for endpoints that list localized TestFlight build metadata entries.
-- [object BetaBuildLocalizationBuildLinkageResponse](betabuildlocalizationbuildlinkageresponse.md)
+- [object BetaBuildLocalizationBuildLinkageResponse](./betabuildlocalizationbuildlinkageresponse.md)
 
 
 ---

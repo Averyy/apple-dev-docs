@@ -1,7 +1,8 @@
 # distance(from:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance value parsed from the specified string.
 
@@ -20,6 +21,10 @@ Returns the distance value parsed from the specified string.
 func distance(from distance: String) -> CLLocationDistance
 ```
 
+```objc
+- (CLLocationDistance) distanceFromString:(NSString *) distance;
+```
+
 #### Return Value
 
 The distance value represented by the string or `-1.0` if the string does not contain a recognized distance value.
@@ -34,7 +39,8 @@ This method searches the provided string for a number that could represent a dis
 
 ## See Also
 
-- [func string(fromDistance: CLLocationDistance) -> String](mkdistanceformatter/string(fromdistance:).md)
+### Converting distances
+- [func string(fromDistance: CLLocationDistance) -> String](./string%28fromdistance%29.md)
   Creates a string representation of the specified distance.
 
 

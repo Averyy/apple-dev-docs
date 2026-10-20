@@ -1,6 +1,7 @@
 # Timecode media
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 Store time code data in QuickTime movies with timecode media.
 
@@ -11,18 +12,19 @@ Timecode media is used to store time code data in QuickTime movies. It has a med
 ## Topics
 
 ### Storing time code data
-- [Timecode sample description](timecode_sample_description.md)
+- [Timecode sample description](./timecode_sample_description.md)
   An atom that defines how to interpret time code media data.
-- [Timecode media information atom ('tcmi')](timecode_media_information_atom.md)
+- [Timecode media information atom ('tcmi')](./timecode_media_information_atom.md)
   An atom that governs how the timecode text is displayed.
-- [Timecode sample data](timecode_sample_data.md)
+- [Timecode sample data](./timecode_sample_data.md)
   An atom that represents timecode sample data.
-- [Creating a timecode track for 29.97 FPS video](creating_a_timecode_track_for_2997_fps_video.md)
+- [Creating a timecode track for 29.97 FPS video](./creating_a_timecode_track_for_2997_fps_video.md)
   Configure a timecode track to specify timecode information for other tracks.
 
 ## See Also
 
-- [Timed metadata media](timed_metadata_media.md)
+### Time-specific media
+- [Timed metadata media](./timed_metadata_media.md)
   Store timed metadata in QuickTime movies with a track structure.
 
 

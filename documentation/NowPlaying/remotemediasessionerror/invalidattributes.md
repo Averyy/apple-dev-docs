@@ -1,7 +1,8 @@
 # RemoteMediaSessionError.invalidAttributes
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The given attributes argument does not match the current session.
 

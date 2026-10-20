@@ -1,7 +1,8 @@
 # vmnet_mac_address_key
 
 **Framework**: vmnet  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The MAC address to configure on the virtual interface in the guest operating system.
 
@@ -15,15 +16,20 @@ The MAC address to configure on the virtual interface in the guest operating sys
 let vmnet_mac_address_key: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const vmnet_mac_address_key;
+```
+
 #### Discussion
 
-The value for this key is of type [`XPC_TYPE_STRING`](https://developer.apple.com/documentation/xpc/xpc_type_string-swift.var).
+The value for this key is of type [`XPC_TYPE_STRING`](../XPC/xpc_type_string-swift.var.md).
 
 ## See Also
 
-- [let vmnet_mtu_key: UnsafePointer<CChar>](vmnet_mtu_key.md)
+### Constants
+- [let vmnet_mtu_key: UnsafePointer<CChar>](./vmnet_mtu_key.md)
   The maximum transmission unit (MTU) to configure on the virtual interface in the guest operating system.
-- [let vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
+- [let vmnet_max_packet_size_key: UnsafePointer<CChar>](./vmnet_max_packet_size_key.md)
   The maximum size of the packet that an app can write to the interface.
 
 

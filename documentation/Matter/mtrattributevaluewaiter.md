@@ -1,7 +1,8 @@
 # MTRAttributeValueWaiter
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.3+
@@ -18,25 +19,29 @@
 class MTRAttributeValueWaiter
 ```
 
+```objc
+@interface MTRAttributeValueWaiter : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var uuid: UUID](mtrattributevaluewaiter/uuid.md)
+- [var uuid: UUID](./mtrattributevaluewaiter/uuid.md)
 ### Instance Methods
-- [func cancel()](mtrattributevaluewaiter/cancel.md)
+- [func cancel()](./mtrattributevaluewaiter/cancel%28%29.md)
   Cancel the wait for the set of attribute path/value pairs represented by this MTRAttributeValueWaiter.  If the completion has not been called yet, it will becalled with MTRErrorCodeCancelled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # WebGLContextEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLContextEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [statusMessage](webglcontextevent/1632917-statusmessage.md)
+- [statusMessage](./webglcontextevent/api-1632917-statusmessage.md)
 
 ## Relationships
 

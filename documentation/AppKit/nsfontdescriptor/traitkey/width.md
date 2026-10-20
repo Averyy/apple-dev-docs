@@ -1,12 +1,13 @@
 # width
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The relative inter-glyph spacing value as a number object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The relative inter-glyph spacing value as a number object.
 static let width: NSFontDescriptor.TraitKey
 ```
 
+```c
+extern NSFontDescriptorTraitKey NSFontWidthTrait;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to the regular glyph spacing.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to the regular glyph spacing.
 
 ## See Also
 
-- [static let symbolic: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/symbolic.md)
+### Trait Keys
+- [static let symbolic: NSFontDescriptor.TraitKey](./symbolic.md)
   The symbolic traits value as a number object.
-- [static let weight: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/weight.md)
+- [static let weight: NSFontDescriptor.TraitKey](./weight.md)
   The normalized weight value as a number object.
-- [static let slant: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/slant.md)
+- [static let slant: NSFontDescriptor.TraitKey](./slant.md)
   The relative slant angle value as a number object.
 
 

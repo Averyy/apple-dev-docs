@@ -1,7 +1,8 @@
 # pageControlTimerProgressDidChange(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the progress has changed from the time interval progress.
 
@@ -16,6 +17,10 @@ Called when the progress has changed from the time interval progress.
 
 ```swift
 optional func pageControlTimerProgressDidChange(_ progress: UIPageControlTimerProgress)
+```
+
+```objc
+- (void) pageControlTimerProgressDidChange:(UIPageControlTimerProgress *) progress;
 ```
 
 

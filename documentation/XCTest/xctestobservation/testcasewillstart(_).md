@@ -1,7 +1,8 @@
 # testCaseWillStart(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the observer immediately before a test case begins executing.
 
@@ -11,33 +12,38 @@ Notifies the observer immediately before a test case begins executing.
 optional func testCaseWillStart(_ testCase: XCTestCase)
 ```
 
+```objc
+- (void) testCaseWillStart:(XCTestCase *) testCase;
+```
+
 ## Parameters
 
-- `testCase`: The test case that is about to start. Additional information about the test case can be retrieved from the test case’s associated [`XCTestRun`](xctestrun.md).
+- `testCase`: The test case that is about to start. Additional information about the test case can be retrieved from the test case’s associated [`XCTestRun`](../xctestrun.md).
 
 ## See Also
 
-- [func testBundleWillStart(Bundle)](xctestobservation/testbundlewillstart(_:).md)
+### Observation Methods
+- [func testBundleWillStart(Bundle)](./testbundlewillstart%28_%29.md)
   Notifies the observer immediately before any tests in a test bundle begin.
-- [func testSuiteWillStart(XCTestSuite)](xctestobservation/testsuitewillstart(_:).md)
+- [func testSuiteWillStart(XCTestSuite)](./testsuitewillstart%28_%29.md)
   Notifies the observer immediately before a test suite begins executing.
-- [func testCase(XCTestCase, didRecord: XCTIssue)](xctestobservation/testcase(_:didrecord:)-4cou6.md)
+- [func testCase(XCTestCase, didRecord: XCTIssue)](./testcase%28_,didrecord%29-4cou6.md)
   Notifies the observer when a test case reports an issue.
-- [func testCase(XCTestCase, didRecord: XCTExpectedFailure)](xctestobservation/testcase(_:didrecord:)-8k955.md)
+- [func testCase(XCTestCase, didRecord: XCTExpectedFailure)](./testcase%28_,didrecord%29-8k955.md)
   Notifies the observer when a test case records an expected failure.
-- [func testCase(XCTestCase, didFailWithDescription: String, inFile: String?, atLine: Int)](xctestobservation/testcase(_:didfailwithdescription:infile:atline:).md)
+- [func testCase(XCTestCase, didFailWithDescription: String, inFile: String?, atLine: Int)](./testcase%28_,didfailwithdescription,infile,atline%29.md)
   Notifies the observer when a test case reports a failure.
-- [func testCaseDidFinish(XCTestCase)](xctestobservation/testcasedidfinish(_:).md)
+- [func testCaseDidFinish(XCTestCase)](./testcasedidfinish%28_%29.md)
   Notifies the observer immediately after a test case finishes executing.
-- [func testSuite(XCTestSuite, didRecord: XCTIssue)](xctestobservation/testsuite(_:didrecord:)-3rk9k.md)
+- [func testSuite(XCTestSuite, didRecord: XCTIssue)](./testsuite%28_,didrecord%29-3rk9k.md)
   Notifies the observer when a test suite reports an issue.
-- [func testSuite(XCTestSuite, didRecord: XCTExpectedFailure)](xctestobservation/testsuite(_:didrecord:)-1xjkv.md)
+- [func testSuite(XCTestSuite, didRecord: XCTExpectedFailure)](./testsuite%28_,didrecord%29-1xjkv.md)
   Notifies the observer when a test suite records an expected failure.
-- [func testSuite(XCTestSuite, didFailWithDescription: String, inFile: String?, atLine: Int)](xctestobservation/testsuite(_:didfailwithdescription:infile:atline:).md)
+- [func testSuite(XCTestSuite, didFailWithDescription: String, inFile: String?, atLine: Int)](./testsuite%28_,didfailwithdescription,infile,atline%29.md)
   Notifies the observer when a test suite reports a failure.
-- [func testSuiteDidFinish(XCTestSuite)](xctestobservation/testsuitedidfinish(_:).md)
+- [func testSuiteDidFinish(XCTestSuite)](./testsuitedidfinish%28_%29.md)
   Notifies the observer immediately after a test suite finishes executing.
-- [func testBundleDidFinish(Bundle)](xctestobservation/testbundledidfinish(_:).md)
+- [func testBundleDidFinish(Bundle)](./testbundledidfinish%28_%29.md)
   Notifies the observer immediately after all tests in a test bundle finish executing.
 
 

@@ -1,7 +1,8 @@
 # url(forResource:withExtension:subdirectory:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a file URL for the resource with the specified name and extension in the specified bundle.
 
@@ -20,44 +21,53 @@ Creates and returns a file URL for the resource with the specified name and exte
 class func url(forResource name: String?, withExtension ext: String?, subdirectory subpath: String?, in bundleURL: URL) -> URL?
 ```
 
+```objc
++ (NSURL *) URLForResource:(NSString *) name withExtension:(NSString *) ext subdirectory:(NSString *) subpath inBundleWithURL:(NSURL *) bundleURL;
+```
+
 #### Return Value
 
 The file URL for the resource file or `nil` if the file could not be located.
 
 ## Parameters
 
-- `name`: The name of the resource file. If you specify `nil`, the method returns the first resource file it finds that matches the remaining criteria.
-- `ext`: The filename extension of the file to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and the file URL is the first file encountered that exactly matches `name`.
+- `name`: The name of the resource file.
+
+  If you specify `nil`, the method returns the first resource file it finds that matches the remaining criteria.
+- `ext`: The filename extension of the file to locate.
+
+  If you specify an empty string or `nil`, the extension is assumed not to exist and the file URL is the first file encountered that exactly matches `name`.
 - `subpath`: The name of the bundle subdirectory to search.
 - `bundleURL`: The file URL of the bundle to search.
 
 ## See Also
 
-- [func url(forResource: String?, withExtension: String?, subdirectory: String?) -> URL?](bundle/url(forresource:withextension:subdirectory:).md)
+### Finding resource files
+- [func url(forResource: String?, withExtension: String?, subdirectory: String?) -> URL?](./url%28forresource,withextension,subdirectory%29.md)
   Returns the file URL for the resource file identified by the specified name and extension and residing in a given bundle directory.
-- [func url(forResource: String?, withExtension: String?) -> URL?](bundle/url(forresource:withextension:).md)
+- [func url(forResource: String?, withExtension: String?) -> URL?](./url%28forresource,withextension%29.md)
   Returns the file URL for the resource identified by the specified name and file extension.
-- [func urls(forResourcesWithExtension: String?, subdirectory: String?) -> [URL]?](bundle/urls(forresourceswithextension:subdirectory:).md)
+- [func urls(forResourcesWithExtension: String?, subdirectory: String?) -> [URL]?](./urls%28forresourceswithextension,subdirectory%29.md)
   Returns an array of file URLs for all resources identified by the specified file extension and located in the specified bundle subdirectory.
-- [func url(forResource: String?, withExtension: String?, subdirectory: String?, localization: String?) -> URL?](bundle/url(forresource:withextension:subdirectory:localization:).md)
+- [func url(forResource: String?, withExtension: String?, subdirectory: String?, localization: String?) -> URL?](./url%28forresource,withextension,subdirectory,localization%29.md)
   Returns the file URL for the resource identified by the specified name and file extension, located in the specified bundle subdirectory, and limited to global resources and those associated with the specified localization.
-- [func urls(forResourcesWithExtension: String?, subdirectory: String?, localization: String?) -> [URL]?](bundle/urls(forresourceswithextension:subdirectory:localization:).md)
+- [func urls(forResourcesWithExtension: String?, subdirectory: String?, localization: String?) -> [URL]?](./urls%28forresourceswithextension,subdirectory,localization%29.md)
   Returns an array containing the file URLs for all bundle resources having the specified filename extension, residing in the specified resource subdirectory, and limited to global resources and those associated with the specified localization.
-- [class func urls(forResourcesWithExtension: String?, subdirectory: String?, in: URL) -> [URL]?](bundle/urls(forresourceswithextension:subdirectory:in:).md)
+- [class func urls(forResourcesWithExtension: String?, subdirectory: String?, in: URL) -> [URL]?](./urls%28forresourceswithextension,subdirectory,in%29.md)
   Returns an array containing the file URLs for all bundle resources having the specified filename extension, residing in the specified resource subdirectory, within the specified bundle.
-- [func path(forResource: String?, ofType: String?) -> String?](bundle/path(forresource:oftype:).md)
+- [func path(forResource: String?, ofType: String?) -> String?](./path%28forresource,oftype%29.md)
   Returns the full pathname for the resource identified by the specified name and file extension.
-- [func path(forResource: String?, ofType: String?, inDirectory: String?) -> String?](bundle/path(forresource:oftype:indirectory:)-swift.method.md)
+- [func path(forResource: String?, ofType: String?, inDirectory: String?) -> String?](./path%28forresource,oftype,indirectory%29-swift.method.md)
   Returns the full pathname for the resource identified by the specified name and file extension and located in the specified bundle subdirectory.
-- [func path(forResource: String?, ofType: String?, inDirectory: String?, forLocalization: String?) -> String?](bundle/path(forresource:oftype:indirectory:forlocalization:).md)
+- [func path(forResource: String?, ofType: String?, inDirectory: String?, forLocalization: String?) -> String?](./path%28forresource,oftype,indirectory,forlocalization%29.md)
   Returns the full pathname for the resource identified by the specified name and file extension, located in the specified bundle subdirectory, and limited to global resources and those associated with the specified localization.
-- [func paths(forResourcesOfType: String?, inDirectory: String?) -> [String]](bundle/paths(forresourcesoftype:indirectory:)-swift.method.md)
+- [func paths(forResourcesOfType: String?, inDirectory: String?) -> [String]](./paths%28forresourcesoftype,indirectory%29-swift.method.md)
   Returns an array containing the pathnames for all bundle resources having the specified filename extension and residing in the resource subdirectory.
-- [func paths(forResourcesOfType: String?, inDirectory: String?, forLocalization: String?) -> [String]](bundle/paths(forresourcesoftype:indirectory:forlocalization:).md)
+- [func paths(forResourcesOfType: String?, inDirectory: String?, forLocalization: String?) -> [String]](./paths%28forresourcesoftype,indirectory,forlocalization%29.md)
   Returns an array containing the file for all bundle resources having the specified filename extension, residing in the specified resource subdirectory, and limited to global resources and those associated with the specified localization.
-- [class func path(forResource: String?, ofType: String?, inDirectory: String) -> String?](bundle/path(forresource:oftype:indirectory:)-swift.type.method.md)
+- [class func path(forResource: String?, ofType: String?, inDirectory: String) -> String?](./path%28forresource,oftype,indirectory%29-swift.type.method.md)
   Returns the full pathname for the resource file identified by the specified name and extension and residing in a given bundle directory.
-- [class func paths(forResourcesOfType: String?, inDirectory: String) -> [String]](bundle/paths(forresourcesoftype:indirectory:)-swift.type.method.md)
+- [class func paths(forResourcesOfType: String?, inDirectory: String) -> [String]](./paths%28forresourcesoftype,indirectory%29-swift.type.method.md)
   Returns an array containing the pathnames for all bundle resources having the specified extension and residing in the bundle directory at the specified path.
 
 

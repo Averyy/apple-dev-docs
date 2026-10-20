@@ -1,12 +1,15 @@
 # lightContent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard appearance that can be used by controls in light content areas (not including window-frame areas).
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.10
+
+> **Deprecated**: Use [`aqua`](./aqua.md) instead.
 
 ## Declaration
 
@@ -14,23 +17,28 @@ The standard appearance that can be used by controls in light content areas (not
 static let lightContent: NSAppearance.Name
 ```
 
+```c
+extern NSAppearanceName const NSAppearanceNameLightContent;
+```
+
 ## See Also
 
-- [static let aqua: NSAppearance.Name](nsappearance/name-swift.struct/aqua.md)
+### System Appearance Names
+- [static let aqua: NSAppearance.Name](./aqua.md)
   The standard light system appearance.
-- [static let darkAqua: NSAppearance.Name](nsappearance/name-swift.struct/darkaqua.md)
+- [static let darkAqua: NSAppearance.Name](./darkaqua.md)
   The standard dark system appearance.
-- [static let vibrantLight: NSAppearance.Name](nsappearance/name-swift.struct/vibrantlight.md)
+- [static let vibrantLight: NSAppearance.Name](./vibrantlight.md)
   The light vibrant appearance, available only in visual effect views.
-- [static let vibrantDark: NSAppearance.Name](nsappearance/name-swift.struct/vibrantdark.md)
+- [static let vibrantDark: NSAppearance.Name](./vibrantdark.md)
   A dark vibrant appearance, available only in visual effect views.
-- [static let accessibilityHighContrastAqua: NSAppearance.Name](nsappearance/name-swift.struct/accessibilityhighcontrastaqua.md)
+- [static let accessibilityHighContrastAqua: NSAppearance.Name](./accessibilityhighcontrastaqua.md)
   A high-contrast version of the standard light system appearance.
-- [static let accessibilityHighContrastDarkAqua: NSAppearance.Name](nsappearance/name-swift.struct/accessibilityhighcontrastdarkaqua.md)
+- [static let accessibilityHighContrastDarkAqua: NSAppearance.Name](./accessibilityhighcontrastdarkaqua.md)
   A high-contrast version of the standard dark system appearance.
-- [static let accessibilityHighContrastVibrantLight: NSAppearance.Name](nsappearance/name-swift.struct/accessibilityhighcontrastvibrantlight.md)
+- [static let accessibilityHighContrastVibrantLight: NSAppearance.Name](./accessibilityhighcontrastvibrantlight.md)
   A high-contrast version of the light vibrant appearance.
-- [static let accessibilityHighContrastVibrantDark: NSAppearance.Name](nsappearance/name-swift.struct/accessibilityhighcontrastvibrantdark.md)
+- [static let accessibilityHighContrastVibrantDark: NSAppearance.Name](./accessibilityhighcontrastvibrantdark.md)
   A high-contrast version of the dark vibrant appearance.
 
 

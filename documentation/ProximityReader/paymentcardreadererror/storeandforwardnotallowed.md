@@ -1,7 +1,8 @@
 # PaymentCardReaderError.storeAndForwardNotAllowed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework can’t create a Store and Forward session because:
 

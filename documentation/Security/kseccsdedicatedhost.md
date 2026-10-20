@@ -1,7 +1,8 @@
 # kSecCSDedicatedHost
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Declares dedicated hosting for the given host.
 
@@ -15,9 +16,13 @@ Declares dedicated hosting for the given host.
 var kSecCSDedicatedHost: UInt32 { get }
 ```
 
+```c
+kSecCSDedicatedHost
+```
+
 ## Mentions
 
-- [Hosting Guest Code](hosting-guest-code.md)
+- [Hosting Guest Code](./hosting-guest-code.md)
 
 #### Discussion
 

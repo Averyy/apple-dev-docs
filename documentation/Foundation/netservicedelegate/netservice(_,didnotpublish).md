@@ -1,7 +1,8 @@
 # netService(_:didNotPublish:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that a service could not be published.
 
@@ -19,9 +20,13 @@ Notifies the delegate that a service could not be published.
 optional func netService(_ sender: NetService, didNotPublish errorDict: [String : NSNumber])
 ```
 
+```objc
+- (void) netService:(NSNetService *) sender didNotPublish:(NSDictionary<NSString *,NSNumber *> *) errorDict;
+```
+
 #### Discussion
 
-This method may be called long after a [`netServiceWillPublish(_:)`](netservicedelegate/netservicewillpublish(_:).md) message has been delivered to the delegate.
+This method may be called long after a [`netServiceWillPublish(_:)`](./netservicewillpublish%28_%29.md) message has been delivered to the delegate.
 
 ## Parameters
 
@@ -30,20 +35,21 @@ This method may be called long after a [`netServiceWillPublish(_:)`](netserviced
 
 ## See Also
 
-- [func netServiceWillPublish(NetService)](netservicedelegate/netservicewillpublish(_:).md)
+### Using Network Services
+- [func netServiceWillPublish(NetService)](./netservicewillpublish%28_%29.md)
   Notifies the delegate that the network is ready to publish the service.
-- [func netServiceDidPublish(NetService)](netservicedelegate/netservicedidpublish(_:).md)
+- [func netServiceDidPublish(NetService)](./netservicedidpublish%28_%29.md)
   Notifies the delegate that a service was successfully published.
-- [func netServiceWillResolve(NetService)](netservicedelegate/netservicewillresolve(_:).md)
+- [func netServiceWillResolve(NetService)](./netservicewillresolve%28_%29.md)
   Notifies the delegate that the network is ready to resolve the service.
-- [func netService(NetService, didNotResolve: [String : NSNumber])](netservicedelegate/netservice(_:didnotresolve:).md)
+- [func netService(NetService, didNotResolve: [String : NSNumber])](./netservice%28_,didnotresolve%29.md)
   Informs the delegate that an error occurred during resolution of a given service.
-- [func netServiceDidResolveAddress(NetService)](netservicedelegate/netservicedidresolveaddress(_:).md)
+- [func netServiceDidResolveAddress(NetService)](./netservicedidresolveaddress%28_%29.md)
   Informs the delegate that the address for a given service was resolved.
-- [func netService(NetService, didUpdateTXTRecord: Data)](netservicedelegate/netservice(_:didupdatetxtrecord:).md)
+- [func netService(NetService, didUpdateTXTRecord: Data)](./netservice%28_,didupdatetxtrecord%29.md)
   Notifies the delegate that the TXT record for a given service has been updated.
-- [func netServiceDidStop(NetService)](netservicedelegate/netservicedidstop(_:).md)
-  Informs the delegate that a [`publish()`](netservice/publish().md) or [`resolve(withTimeout:)`](netservice/resolve(withtimeout:).md) request was stopped.
+- [func netServiceDidStop(NetService)](./netservicedidstop%28_%29.md)
+  Informs the delegate that a [`publish()`](../netservice/publish%28%29.md) or [`resolve(withTimeout:)`](../netservice/resolve%28withtimeout%29.md) request was stopped.
 
 
 ---

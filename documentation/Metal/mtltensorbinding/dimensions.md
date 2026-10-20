@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The array of sizes, in elements, one for each dimension of this tensor.
@@ -20,9 +21,13 @@ The array of sizes, in elements, one for each dimension of this tensor.
 var dimensions: MTLTensorExtents? { get }
 ```
 
+```objc
+@property (readonly, nullable) MTLTensorExtents * dimensions;
+```
+
 #### Discussion
 
-For shader-bound tensors with dynamic extents, the [`rank`](mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](mtltensorextents/extentatdimensionindex:.md) always returns a value of -1.
+For shader-bound tensors with dynamic extents, the [`rank`](../mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](../mtltensorextents/extentatdimensionindex_.md) always returns a value of -1.
 
 For machine learning pipelines, `dimensions` corresponds to the default shape, if you provide one. Otherwise, it’s `nil` in the case of an undefined shape.
 

@@ -1,7 +1,8 @@
 # font
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents a font.
 
@@ -24,25 +25,26 @@ static var font: UTType { get }
 
 The identifier for this type is `public.font`.
 
-This type conforms to [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var spreadsheet: UTType](uttype-swift.struct/spreadsheet.md)
+### Application base types
+- [static var spreadsheet: UTType](./spreadsheet.md)
   A base type that represents a spreadsheet document.
-- [static var presentation: UTType](uttype-swift.struct/presentation.md)
+- [static var presentation: UTType](./presentation.md)
   A base type that represents a presentation document.
-- [static var database: UTType](uttype-swift.struct/database.md)
+- [static var database: UTType](./database.md)
   A base type that represents a database store.
-- [static var message: UTType](uttype-swift.struct/message.md)
+- [static var message: UTType](./message.md)
   A base type that represents a message.
-- [static var contact: UTType](uttype-swift.struct/contact.md)
+- [static var contact: UTType](./contact.md)
   A base type that represents contact information.
-- [static var calendarEvent: UTType](uttype-swift.struct/calendarevent.md)
+- [static var calendarEvent: UTType](./calendarevent.md)
   A base type that represents a calendar event.
-- [static var toDoItem: UTType](uttype-swift.struct/todoitem.md)
+- [static var toDoItem: UTType](./todoitem.md)
   A type that represents a to-do item.
-- [static var emailMessage: UTType](uttype-swift.struct/emailmessage.md)
+- [static var emailMessage: UTType](./emailmessage.md)
   A type that represents an email message.
 
 

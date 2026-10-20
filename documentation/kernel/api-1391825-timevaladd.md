@@ -1,14 +1,15 @@
 # timevaladd
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void timevaladd(struct timeval *t1, struct timeval *t2);
 ```
 

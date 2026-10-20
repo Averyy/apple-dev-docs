@@ -7,11 +7,11 @@ Specify signatures used for video card gamma information.
 ## Topics
 
 ### Constants
-- [var cmSigPS2CRDVMSizeType: Int](cmsigps2crdvmsizetype.md)
-- [var cmSigVideoCardGammaType: Int](cmsigvideocardgammatype.md)
-- [var cmSigMakeAndModelType: Int](cmsigmakeandmodeltype.md)
-- [var cmSigNativeDisplayInfoType: Int](cmsignativedisplayinfotype.md)
-- [var cmSigMultiLocalizedUniCodeType: Int](cmsigmultilocalizedunicodetype.md)
+- [var cmSigPS2CRDVMSizeType: Int](../cmsigps2crdvmsizetype.md)
+- [var cmSigVideoCardGammaType: Int](../cmsigvideocardgammatype.md)
+- [var cmSigMakeAndModelType: Int](../cmsigmakeandmodeltype.md)
+- [var cmSigNativeDisplayInfoType: Int](../cmsignativedisplayinfotype.md)
+- [var cmSigMultiLocalizedUniCodeType: Int](../cmsigmultilocalizedunicodetype.md)
 
 
 ---

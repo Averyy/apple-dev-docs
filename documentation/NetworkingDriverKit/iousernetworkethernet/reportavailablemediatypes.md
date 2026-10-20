@@ -1,16 +1,17 @@
 # ReportAvailableMediaTypes
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system what types of networking media your driver supports.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t ReportAvailableMediaTypes(const IOUserNetworkMediaType *mediaTypes, uint32_t count);
 ```
 
@@ -20,18 +21,19 @@ virtual kern_return_t ReportAvailableMediaTypes(const IOUserNetworkMediaType *me
 
 #### Discussion
 
-Apple recommends that you include [`kIOUserNetworkMediaEthernetAuto`](kiousernetworkmediaethernetauto.md) as one of the media types you support. That media type lets the system configure the networking stack automatically on your behalf, based on the other media types you specify.
+Apple recommends that you include [`kIOUserNetworkMediaEthernetAuto`](../kiousernetworkmediaethernetauto.md) as one of the media types you support. That media type lets the system configure the networking stack automatically on your behalf, based on the other media types you specify.
 
 ## Parameters
 
-- `mediaTypes`: An array of [`IOUserNetworkMediaType`](iousernetworkmediatype.md) types. For each type, combine a [`Media Type Constants`](media-type-constants.md) constant with one or more [`Configuration Options`](configuration-options.md) constants to indicate the configurations you support.
+- `mediaTypes`: An array of [`IOUserNetworkMediaType`](../iousernetworkmediatype.md) types. For each type, combine a [Media Type Constants](../media-type-constants.md) constant with one or more [Configuration Options](../configuration-options.md) constants to indicate the configurations you support.
 - `count`: The number of items in the `mediaTypes` array.
 
 ## See Also
 
-- [SelectMediaType](iousernetworkethernet/selectmediatype.md)
+### Declaring the Supported Media Types
+- [SelectMediaType](./selectmediatype.md)
   Selects the media type to use when communicating with the network stack.
-- [IOUserNetworkMediaType](iousernetworkmediatype.md)
+- [IOUserNetworkMediaType](../iousernetworkmediatype.md)
   A structure describing a specific Ethernet type and configuration that your driver supports.
 
 

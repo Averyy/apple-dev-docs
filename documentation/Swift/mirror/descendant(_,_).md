@@ -1,7 +1,8 @@
 # descendant(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a specific descendant of the reflected subject, or `nil` if no such descendant exists.
 
@@ -61,7 +62,8 @@ This function is suitable for exploring the structure of a mirror in a REPL or p
 
 ## See Also
 
-- [protocol MirrorPath](mirrorpath.md)
+### Querying Descendants
+- [protocol MirrorPath](../mirrorpath.md)
   A protocol for legitimate arguments to `Mirror`’s `descendant` method.
 
 

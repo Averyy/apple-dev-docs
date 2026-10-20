@@ -1,7 +1,8 @@
 # kSecACLAuthorizationAny
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No restrictions. This ACL entry applies to all operations available to the caller.
 
@@ -12,6 +13,10 @@ No restrictions. This ACL entry applies to all operations available to the calle
 
 ```swift
 let kSecACLAuthorizationAny: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationAny;
 ```
 
 

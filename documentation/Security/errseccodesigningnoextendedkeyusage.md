@@ -1,7 +1,8 @@
 # errSecCodeSigningNoExtendedKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing found no extended key usage.
 
@@ -18,6 +19,10 @@ Code signing found no extended key usage.
 
 ```swift
 var errSecCodeSigningNoExtendedKeyUsage: OSStatus { get }
+```
+
+```c
+errSecCodeSigningNoExtendedKeyUsage
 ```
 
 

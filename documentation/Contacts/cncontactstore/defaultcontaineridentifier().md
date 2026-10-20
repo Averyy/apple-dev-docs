@@ -1,7 +1,8 @@
 # defaultContainerIdentifier()
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifier of the default container.
 
@@ -19,6 +20,10 @@ Returns the identifier of the default container.
 func defaultContainerIdentifier() -> String
 ```
 
+```objc
+- (NSString *) defaultContainerIdentifier;
+```
+
 #### Return Value
 
 The identifier of the default container.
@@ -29,9 +34,10 @@ This identifier can be used to fetch a default container. A default container is
 
 ## See Also
 
-- [func groups(matching: NSPredicate?) throws -> [CNGroup]](cncontactstore/groups(matching:).md)
+### Fetching groups and containers
+- [func groups(matching: NSPredicate?) throws -> [CNGroup]](./groups%28matching%29.md)
   Fetches all groups matching the specified predicate.
-- [func containers(matching: NSPredicate?) throws -> [CNContainer]](cncontactstore/containers(matching:).md)
+- [func containers(matching: NSPredicate?) throws -> [CNContainer]](./containers%28matching%29.md)
   Fetches all containers matching the specified predicate.
 
 

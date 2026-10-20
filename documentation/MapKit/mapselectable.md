@@ -1,7 +1,8 @@
 # MapSelectable
 
 **Framework**: MapKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,23 +22,24 @@ protocol MapSelectable : Hashable
 ## Topics
 
 ### Initializers
-- [init(MapFeature?)](mapselectable/init(_:).md)
+- [init(MapFeature?)](./mapselectable/init%28_%29.md)
 ### Instance Properties
-- [var feature: MapFeature?](mapselectable/feature.md)
+- [var feature: MapFeature?](./mapselectable/feature.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 ### Conforming Types
-- [MapSelection](mapselection.md)
+- [MapSelection](./mapselection.md)
 
 ## See Also
 
-- [struct MapFeature](mapfeature.md)
+### Map features
+- [struct MapFeature](./mapfeature.md)
   A tappable map feature.
-- [struct MapSelection](mapselection.md)
+- [struct MapSelection](./mapselection.md)
   A value representing a selected feature on a map.
 
 

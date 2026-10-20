@@ -1,7 +1,8 @@
 # rssi()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the RSSI device (if connected), above or below the golden range. If the RSSI is within the golden range, a value of 0 is returned. For the actual RSSI value, use getRawRSSI. For more information, see the Bluetooth 4.0 Core Specification.
 
@@ -12,6 +13,10 @@ Get the RSSI device (if connected), above or below the golden range. If the RSSI
 
 ```swift
 func rssi() -> BluetoothHCIRSSIValue
+```
+
+```objc
+- (BluetoothHCIRSSIValue) RSSI;
 ```
 
 #### Return Value

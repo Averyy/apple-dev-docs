@@ -1,7 +1,8 @@
 # ImageAnalysisOverlayViewDelegate
 
 **Framework**: VisionKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate that handles image-analysis and user-interaction callbacks for an overlay view.
 
@@ -17,60 +18,61 @@ protocol ImageAnalysisOverlayViewDelegate : AnyObject
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
 #### Overview
 
-The delegate of an [`ImageAnalysisOverlayView`](imageanalysisoverlayview.md) object implements this protocol to provide interface details and to customize the response for a person’s interaction.
+The delegate of an [`ImageAnalysisOverlayView`](./imageanalysisoverlayview.md) object implements this protocol to provide interface details and to customize the response for a person’s interaction.
 
 ## Topics
 
 ### Providing interface details
-- [func contentView(for: ImageAnalysisOverlayView) -> NSView?](imageanalysisoverlayviewdelegate/contentview(for:).md)
+- [func contentView(for: ImageAnalysisOverlayView) -> NSView?](./imageanalysisoverlayviewdelegate/contentview%28for%29.md)
   Provides the view that contains the image.
-- [func contentsRect(for: ImageAnalysisOverlayView) -> CGRect](imageanalysisoverlayviewdelegate/contentsrect(for:).md)
+- [func contentsRect(for: ImageAnalysisOverlayView) -> CGRect](./imageanalysisoverlayviewdelegate/contentsrect%28for%29.md)
   Returns the rectangle, in unit coordinate space, that contains the image within the view.
 ### Starting the interaction
-- [func overlayView(ImageAnalysisOverlayView, shouldBeginAt: CGPoint, forAnalysisType: ImageAnalysisOverlayView.InteractionTypes) -> Bool](imageanalysisoverlayviewdelegate/overlayview(_:shouldbeginat:foranalysistype:).md)
+- [func overlayView(ImageAnalysisOverlayView, shouldBeginAt: CGPoint, forAnalysisType: ImageAnalysisOverlayView.InteractionTypes) -> Bool](./imageanalysisoverlayviewdelegate/overlayview%28_,shouldbeginat,foranalysistype%29.md)
   Provides a Boolean value that indicates whether the interaction can begin at the given point.
 ### Tracking interface changes
-- [func overlayView(ImageAnalysisOverlayView, liveTextButtonDidChangeToVisible: Bool)](imageanalysisoverlayviewdelegate/overlayview(_:livetextbuttondidchangetovisible:).md)
+- [func overlayView(ImageAnalysisOverlayView, liveTextButtonDidChangeToVisible: Bool)](./imageanalysisoverlayviewdelegate/overlayview%28_,livetextbuttondidchangetovisible%29.md)
   Notifies your app when the Live Text button’s visibility changes.
-- [func overlayView(ImageAnalysisOverlayView, highlightSelectedItemsDidChange: Bool)](imageanalysisoverlayviewdelegate/overlayview(_:highlightselecteditemsdidchange:).md)
+- [func overlayView(ImageAnalysisOverlayView, highlightSelectedItemsDidChange: Bool)](./imageanalysisoverlayviewdelegate/overlayview%28_,highlightselecteditemsdidchange%29.md)
   Notifies your app when recognized items in the image appear highlighted as a result of a person clicking or tapping the Live Text button.
-- [func textSelectionDidChange(ImageAnalysisOverlayView)](imageanalysisoverlayviewdelegate/textselectiondidchange(_:).md)
+- [func textSelectionDidChange(ImageAnalysisOverlayView)](./imageanalysisoverlayviewdelegate/textselectiondidchange%28_%29.md)
   Notifies your app when the interaction’s text selection changes.
 ### Responding to key and menu events
-- [func overlayView(ImageAnalysisOverlayView, shouldHandleKeyDownEvent: NSEvent) -> Bool](imageanalysisoverlayviewdelegate/overlayview(_:shouldhandlekeydownevent:).md)
+- [func overlayView(ImageAnalysisOverlayView, shouldHandleKeyDownEvent: NSEvent) -> Bool](./imageanalysisoverlayviewdelegate/overlayview%28_,shouldhandlekeydownevent%29.md)
   Returns a Boolean value that indicates whether the overlay view consumes the given key-down event.
-- [func overlayView(ImageAnalysisOverlayView, shouldShowMenuForEvent: NSEvent, atPoint: CGPoint) -> Bool](imageanalysisoverlayviewdelegate/overlayview(_:shouldshowmenuforevent:atpoint:).md)
+- [func overlayView(ImageAnalysisOverlayView, shouldShowMenuForEvent: NSEvent, atPoint: CGPoint) -> Bool](./imageanalysisoverlayviewdelegate/overlayview%28_,shouldshowmenuforevent,atpoint%29.md)
   Provides a Boolean value that indicates whether the overlay view shows a menu for the given event.
-- [func overlayView(ImageAnalysisOverlayView, menu: NSMenu, willHighlight: NSMenuItem?)](imageanalysisoverlayviewdelegate/overlayview(_:menu:willhighlight:).md)
+- [func overlayView(ImageAnalysisOverlayView, menu: NSMenu, willHighlight: NSMenuItem?)](./imageanalysisoverlayviewdelegate/overlayview%28_,menu,willhighlight%29.md)
   Notifies your app that the given menu item is highlighted.
-- [func overlayView(ImageAnalysisOverlayView, willOpen: NSMenu)](imageanalysisoverlayviewdelegate/overlayview(_:willopen:).md)
+- [func overlayView(ImageAnalysisOverlayView, willOpen: NSMenu)](./imageanalysisoverlayviewdelegate/overlayview%28_,willopen%29.md)
   Notifies your app that a given menu is opening imminently.
-- [func overlayView(ImageAnalysisOverlayView, didClose: NSMenu)](imageanalysisoverlayviewdelegate/overlayview(_:didclose:).md)
+- [func overlayView(ImageAnalysisOverlayView, didClose: NSMenu)](./imageanalysisoverlayviewdelegate/overlayview%28_,didclose%29.md)
   Notifies your app that the given menu closed.
-- [func overlayView(ImageAnalysisOverlayView, needsUpdate: NSMenu)](imageanalysisoverlayviewdelegate/overlayview(_:needsupdate:).md)
+- [func overlayView(ImageAnalysisOverlayView, needsUpdate: NSMenu)](./imageanalysisoverlayviewdelegate/overlayview%28_,needsupdate%29.md)
   Notifies your app that the given menu needs updating.
-- [func overlayView(ImageAnalysisOverlayView, updatedMenuFor: NSMenu, for: NSEvent, at: CGPoint) -> NSMenu](imageanalysisoverlayviewdelegate/overlayview(_:updatedmenufor:for:at:).md)
+- [func overlayView(ImageAnalysisOverlayView, updatedMenuFor: NSMenu, for: NSEvent, at: CGPoint) -> NSMenu](./imageanalysisoverlayviewdelegate/overlayview%28_,updatedmenufor,for,at%29.md)
   Notifies your app before the framework presents a context menu.
 
 ## See Also
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+### Content recognition and interaction in images
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
   Add a Live Text interface that enables users to perform actions with text and QR codes that appear in images.
-- [class ImageAnalyzer](imageanalyzer.md)
+- [class ImageAnalyzer](./imageanalyzer.md)
   An object that finds items in images that people can interact with, such as subjects, text, and QR codes.
-- [class ImageAnalysis](imageanalysis.md)
+- [class ImageAnalysis](./imageanalysis.md)
   An object that represents the results of analyzing an image, and provides the input for the Live Text interface object.
-- [class ImageAnalysisInteraction](imageanalysisinteraction.md)
+- [class ImageAnalysisInteraction](./imageanalysisinteraction.md)
   An interface that enables people to interact with recognized text, barcodes, and other objects in an image.
-- [protocol ImageAnalysisInteractionDelegate](imageanalysisinteractiondelegate.md)
+- [protocol ImageAnalysisInteractionDelegate](./imageanalysisinteractiondelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an interaction object.
-- [class ImageAnalysisOverlayView](imageanalysisoverlayview.md)
+- [class ImageAnalysisOverlayView](./imageanalysisoverlayview.md)
   A view that enables people to interact with recognized text, barcodes, and other objects in an image.
-- [struct CameraRegionView](cameraregionview.md)
+- [struct CameraRegionView](./cameraregionview.md)
   This view displays a stabilized region of interest within a person’s view and provides passthrough camera feed for that selected region.
 
 

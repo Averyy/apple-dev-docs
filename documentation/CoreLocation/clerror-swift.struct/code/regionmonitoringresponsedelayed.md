@@ -1,7 +1,8 @@
 # CLError.Code.regionMonitoringResponseDelayed
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates Core Location will deliver events but they may be delayed.
 
@@ -20,17 +21,22 @@ A constant that indicates Core Location will deliver events but they may be dela
 case regionMonitoringResponseDelayed
 ```
 
+```c
+kCLErrorRegionMonitoringResponseDelayed
+```
+
 #### Discussion
 
-The user information dictionary might contain an alternate region that you can monitor instead. Use [`kCLErrorUserInfoAlternateRegionKey`](kclerroruserinfoalternateregionkey.md) to retrieve the [`CLRegion`](clregion.md) object.
+The user information dictionary might contain an alternate region that you can monitor instead. Use [`kCLErrorUserInfoAlternateRegionKey`](../../kclerroruserinfoalternateregionkey.md) to retrieve the [`CLRegion`](../../clregion.md) object.
 
 ## See Also
 
-- [CLError.Code.regionMonitoringDenied](clerror-swift.struct/code/regionmonitoringdenied.md)
+### Getting region monitoring errors
+- [CLError.Code.regionMonitoringDenied](./regionmonitoringdenied.md)
   A constant that indicates the user denied access to the region monitoring service.
-- [CLError.Code.regionMonitoringFailure](clerror-swift.struct/code/regionmonitoringfailure.md)
+- [CLError.Code.regionMonitoringFailure](./regionmonitoringfailure.md)
   A constant that indicates the location manager failed to monitor a registered region.
-- [CLError.Code.regionMonitoringSetupDelayed](clerror-swift.struct/code/regionmonitoringsetupdelayed.md)
+- [CLError.Code.regionMonitoringSetupDelayed](./regionmonitoringsetupdelayed.md)
   A constant that indicates Core Location failed to initialize the region monitoring feature.
 
 

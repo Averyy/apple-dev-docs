@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSDeletedGlyphcode: Int](katsdeletedglyphcode.md)
+- [var kATSDeletedGlyphcode: Int](../katsdeletedglyphcode.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # groupBoxStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for group boxes within this view.
 
@@ -25,7 +26,8 @@ func groupBoxStyle<S>(_ style: S) -> some View where S : GroupBoxStyle
 
 ## See Also
 
-- [struct GroupBox](groupbox.md)
+### Grouping views into a box
+- [struct GroupBox](../groupbox.md)
   A stylized view, with an optional label, that visually collects a logical grouping of content.
 
 

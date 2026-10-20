@@ -1,7 +1,8 @@
 # AssistantSchemaIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -21,29 +22,30 @@ protocol AssistantSchemaIntent : AssistantIntent
 ## Topics
 
 ### Type Properties
-- [static var isAssistantOnly: Bool](assistantschemaintent/isassistantonly.md)
+- [static var isAssistantOnly: Bool](./assistantschemaintent/isassistantonly.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [AssistantIntent](assistantintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [AssistantIntent](./assistantintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AssistantEnum](assistantenum.md)
+### Previous schema types
+- [protocol AssistantEnum](./assistantenum.md)
   A value that Apple Intelligence and Siri use to fulfill a person’s request.
-- [protocol AssistantEntity](assistantentity.md)
+- [protocol AssistantEntity](./assistantentity.md)
   An app entity that Apple Intelligence can discover to fulfill a person’s request.
-- [protocol AssistantIntent](assistantintent.md)
+- [protocol AssistantIntent](./assistantintent.md)
   An app intent that Siri performs to fulfill a person’s request.
-- [protocol AssistantSchemaEnum](assistantschemaenum.md)
-- [protocol AssistantSchemaEntity](assistantschemaentity.md)
-- [struct AssistantSchema](assistantschema.md)
-- [enum AssistantSchemas](assistantschemas.md)
+- [protocol AssistantSchemaEnum](./assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](./assistantschemaentity.md)
+- [struct AssistantSchema](./assistantschema.md)
+- [enum AssistantSchemas](./assistantschemas.md)
 
 
 ---

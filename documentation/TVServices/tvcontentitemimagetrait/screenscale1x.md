@@ -1,7 +1,8 @@
 # screenScale1x
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An image meant for a regular display.
 
@@ -14,17 +15,22 @@ An image meant for a regular display.
 static var screenScale1x: TVContentItemImageTrait { get }
 ```
 
+```c
+TVContentItemImageTraitScreenScale1x
+```
+
 #### Discussion
 
-Specify this constant, or the [`screenScale2x`](tvcontentitemimagetrait/screenscale2x.md) constant, but not both.
+Specify this constant, or the [`screenScale2x`](./screenscale2x.md) constant, but not both.
 
 ## See Also
 
-- [static var screenScale2x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale2x.md)
+### Traits
+- [static var screenScale2x: TVContentItemImageTrait](./screenscale2x.md)
   An image meant for a Retina display.
-- [static var userInterfaceStyleDark: TVContentItemImageTrait](tvcontentitemimagetrait/userinterfacestyledark.md)
+- [static var userInterfaceStyleDark: TVContentItemImageTrait](./userinterfacestyledark.md)
   An image meant for a dark user interface.
-- [static var userInterfaceStyleLight: TVContentItemImageTrait](tvcontentitemimagetrait/userinterfacestylelight.md)
+- [static var userInterfaceStyleLight: TVContentItemImageTrait](./userinterfacestylelight.md)
   An image meant for a light user interface.
 
 

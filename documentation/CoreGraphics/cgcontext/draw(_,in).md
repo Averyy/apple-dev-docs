@@ -1,7 +1,8 @@
 # draw(_:in:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the contents of a layer object into the specified rectangle.
 
@@ -31,7 +32,8 @@ The contents are scaled, if necessary, to fit into the rectangle.
 
 ## See Also
 
-- [func draw(CGLayer, at: CGPoint)](cgcontext/draw(_:at:).md)
+### Drawing Core Graphics Layers
+- [func draw(CGLayer, at: CGPoint)](./draw%28_,at%29.md)
   Draws the contents of a layer object at the specified point.
 
 

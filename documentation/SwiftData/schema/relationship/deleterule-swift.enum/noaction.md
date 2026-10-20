@@ -1,7 +1,8 @@
 # Schema.Relationship.DeleteRule.noAction
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rule that doesn’t make changes to any related models.
 
@@ -27,11 +28,12 @@ Ensure that you take the appropriate action on any related models when using thi
 
 ## See Also
 
-- [Schema.Relationship.DeleteRule.cascade](schema/relationship/deleterule-swift.enum/cascade.md)
+### Accessing delete rules
+- [Schema.Relationship.DeleteRule.cascade](./cascade.md)
   A rule that deletes any related models.
-- [Schema.Relationship.DeleteRule.deny](schema/relationship/deleterule-swift.enum/deny.md)
+- [Schema.Relationship.DeleteRule.deny](./deny.md)
   A rule that prevents the deletion of a model because it contains one or more references to other models.
-- [Schema.Relationship.DeleteRule.nullify](schema/relationship/deleterule-swift.enum/nullify.md)
+- [Schema.Relationship.DeleteRule.nullify](./nullify.md)
   A rule that nullifies the related model’s reference to the deleted model.
 
 

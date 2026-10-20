@@ -1,7 +1,8 @@
 # ApplePayLineItemType
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates whether a line item is final or pending.
 
@@ -11,7 +12,7 @@ A type that indicates whether a line item is final or pending.
 
 ## Declaration
 
-```swift
+```
 enum ApplePayLineItemType
 ```
 
@@ -25,16 +26,17 @@ The constant values are:
 ## Topics
 
 ### Enumeration Cases
-- [final](applepaylineitemtype/final.md)
-- [pending](applepaylineitemtype/pending.md)
+- [final](./applepaylineitemtype/final.md)
+- [pending](./applepaylineitemtype/pending.md)
 
 ## See Also
 
-- [total](applepaypaymentrequest/total.md)
+### Setting the total and summary line items
+- [total](./applepaypaymentrequest/total.md)
   A line item that represents the total for the payment.
-- [lineItems](applepaypaymentrequest/lineitems.md)
+- [lineItems](./applepaypaymentrequest/lineitems.md)
   A set of line items that explain recurring payments and additional charges and discounts.
-- [ApplePayLineItem](applepaylineitem.md)
+- [ApplePayLineItem](./applepaylineitem.md)
   A line item in a payment request—for example, total, tax, discount, or grand total.
 
 

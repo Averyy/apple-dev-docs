@@ -1,7 +1,8 @@
 # gainMetaParameter
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A meta parameter for dynamic loudness control.
 
@@ -19,13 +20,18 @@ A meta parameter for dynamic loudness control.
 var gainMetaParameter: PHASENumberMetaParameter? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameter * gainMetaParameter;
+```
+
 #### Discussion
 
 The framework sets this property when the app specifies a meta parameter definition at initialization.
 
 ## See Also
 
-- [var rateMetaParameter: PHASENumberMetaParameter?](phasepushstreamnode/ratemetaparameter.md)
+### Controlling Playback
+- [var rateMetaParameter: PHASENumberMetaParameter?](./ratemetaparameter.md)
   A meta parameter for dynamic rate control.
 
 

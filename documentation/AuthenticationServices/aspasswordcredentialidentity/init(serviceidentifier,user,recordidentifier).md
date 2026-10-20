@@ -1,7 +1,8 @@
 # init(serviceIdentifier:user:recordIdentifier:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a password credential identity.
 
@@ -18,6 +19,10 @@ Initializes a password credential identity.
 init(serviceIdentifier: ASCredentialServiceIdentifier, user: String, recordIdentifier: String?)
 ```
 
+```objc
+- (instancetype) initWithServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier user:(NSString *) user recordIdentifier:(NSString *) recordIdentifier;
+```
+
 ## Parameters
 
 - `serviceIdentifier`: The service identifier for the identity.
@@ -26,7 +31,8 @@ init(serviceIdentifier: ASCredentialServiceIdentifier, user: String, recordIdent
 
 ## See Also
 
-- [class ASCredentialServiceIdentifier](ascredentialserviceidentifier.md)
+### Creating a credential identity
+- [class ASCredentialServiceIdentifier](../ascredentialserviceidentifier.md)
   An identifier representing a particular service for which the user needs a credential, like a web site.
 
 

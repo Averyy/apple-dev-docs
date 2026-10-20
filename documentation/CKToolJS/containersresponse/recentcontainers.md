@@ -1,7 +1,8 @@
 # recentContainers
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of recently accessed containers.
 
@@ -10,7 +11,7 @@ The list of recently accessed containers.
 
 ## Declaration
 
-```swift
+```
 attribute Container[]? recentContainers;
 ```
 

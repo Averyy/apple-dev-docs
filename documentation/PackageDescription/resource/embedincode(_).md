@@ -1,7 +1,8 @@
 # embedInCode(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies the embed rule to a resource at the given path.
 
@@ -40,11 +41,12 @@ struct PackageResources {
 
 ## See Also
 
-- [static func process(String, localization: Resource.Localization?) -> Resource](resource/process(_:localization:).md)
+### Applying Rules
+- [static func process(String, localization: Resource.Localization?) -> Resource](./process%28_,localization%29.md)
   Applies a platform-specific rules to the resource at the given path.
-- [Resource.Localization](resource/localization.md)
+- [Resource.Localization](./localization.md)
   Defines the explicit type of localization for resources.
-- [static func copy(String) -> Resource](resource/copy(_:).md)
+- [static func copy(String) -> Resource](./copy%28_%29.md)
   Applies the copy rule to a resource at the given path.
 
 

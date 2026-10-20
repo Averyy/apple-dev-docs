@@ -1,7 +1,8 @@
 # stringUsage
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The string usage.
 
@@ -11,9 +12,10 @@ This field is unused.
 
 ## See Also
 
-- [stringLength](qtvr_string_atom/stringlength.md)
+### Data fields
+- [stringLength](./stringlength.md)
   The length, in bytes, of the string.
-- [theString](qtvr_string_atom/thestring.md)
+- [theString](./thestring.md)
   The string.
 
 

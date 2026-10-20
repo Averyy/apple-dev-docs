@@ -1,7 +1,8 @@
 # BEBrowserDataReadingListItem
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that transfers reading list data between browsers.
 
@@ -15,6 +16,10 @@ A class that transfers reading list data between browsers.
 class BEBrowserDataReadingListItem
 ```
 
+```objc
+@interface BEBrowserDataReadingListItem : BEBrowserData
+```
+
 #### Overview
 
 This class represents an article or webpage in a reading list, including a URL, a title, and the date the item was last opened.
@@ -22,41 +27,42 @@ This class represents an article or webpage in a reading list, including a URL, 
 ## Topics
 
 ### Creating a reading list item
-- [init(title: String, url: URL, dateOfLastVisit: Date?)](bebrowserdatareadinglistitem/init(title:url:dateoflastvisit:).md)
+- [init(title: String, url: URL, dateOfLastVisit: Date?)](./bebrowserdatareadinglistitem/init%28title,url,dateoflastvisit%29.md)
   Initializes a reading list item with the given content and access metadata.
 ### Accessing item properties
-- [var dateOfLastVisit: Date?](bebrowserdatareadinglistitem/dateoflastvisit.md)
+- [var dateOfLastVisit: Date?](./bebrowserdatareadinglistitem/dateoflastvisit.md)
   The date of the person’s last visit.
-- [var title: String](bebrowserdatareadinglistitem/title.md)
+- [var title: String](./bebrowserdatareadinglistitem/title.md)
   A localized title for a reading list item.
-- [var url: URL](bebrowserdatareadinglistitem/url.md)
+- [var url: URL](./bebrowserdatareadinglistitem/url.md)
   A URL for the reading list item.
 
 ## Relationships
 
 ### Inherits From
-- [BEBrowserData](bebrowserdata.md)
+- [BEBrowserData](./bebrowserdata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class BEBrowserDataHistoryVisit](bebrowserdatahistoryvisit.md)
+### Browser data
+- [class BEBrowserDataHistoryVisit](./bebrowserdatahistoryvisit.md)
   A class that transfers page visit history between browsers.
-- [class BEBrowserDataBookmark](bebrowserdatabookmark.md)
+- [class BEBrowserDataBookmark](./bebrowserdatabookmark.md)
   A class that transfers bookmark information between browsers.
-- [class BEBrowserDataExtension](bebrowserdataextension.md)
+- [class BEBrowserDataExtension](./bebrowserdataextension.md)
   A class that transfers browser extension information between browsers.
-- [class BEBrowserData](bebrowserdata.md)
+- [class BEBrowserData](./bebrowserdata.md)
   A representation of browsing data from a source browser app.
 
 

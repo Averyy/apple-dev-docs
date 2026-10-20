@@ -1,7 +1,8 @@
 # readAttributeAdminVendorId(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAdminVendorId(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAdminVendorId() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAdminVendorIdWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

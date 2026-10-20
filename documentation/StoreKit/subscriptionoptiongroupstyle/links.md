@@ -1,7 +1,8 @@
 # links
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,13 @@
 static var links: LinksSubscriptionOptionGroupStyle { get }
 ```
 
+Available when `Self` is `LinksSubscriptionOptionGroupStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/automatic.md)
-- [static var tabs: TabsSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/tabs.md)
+### Getting built-in subscription option group styles
+- [static var automatic: AutomaticSubscriptionOptionGroupStyle](./automatic.md)
+- [static var tabs: TabsSubscriptionOptionGroupStyle](./tabs.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(id:artworkProvider:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an artwork whose image data loads on demand at the requested size.
 
@@ -27,7 +28,7 @@ The provider returns artwork that matches the requested size when possible. One 
 ## Parameters
 
 - `id`: A unique identifier for this artwork.
-- `artworkProvider`: A handler the system calls to request an [`ArtworkRepresentation`](artworkrepresentation.md) for a specified size.
+- `artworkProvider`: A handler the system calls to request an [`ArtworkRepresentation`](../artworkrepresentation.md) for a specified size.
 
 
 ---

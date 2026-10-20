@@ -1,7 +1,8 @@
 # rotated(by:around:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a point that results from rotating with a quaternion around the specified point.
 
@@ -20,6 +21,10 @@ Returns a point that results from rotating with a quaternion around the specifie
 func rotated(by quaternion: simd_quatd, around pivot: Point3D) -> Point3D
 ```
 
+```c
+static SPPoint3D SPPoint3DRotateByQuaternionAroundPoint(SPPoint3D point, simd_quatd quaternion, SPPoint3D pivot);
+```
+
 #### Return Value
 
 The point that results from rotating with the specified quaternion.
@@ -31,22 +36,23 @@ The point that results from rotating with the specified quaternion.
 
 ## See Also
 
-- [func applying(ScaledPose3D) -> Point3D](point3d/applying(_:)-1f4em.md)
+### Transforming a 3D point structure
+- [func applying(ScaledPose3D) -> Point3D](./applying%28_%29-1f4em.md)
   Returns a point that’s transformed by the specified scaled pose.
-- [func applying(ScaledPose3D) -> Point3D](point3d/applying(_:)-1f4em.md)
+- [func applying(ScaledPose3D) -> Point3D](./applying%28_%29-1f4em.md)
   Returns a point that’s transformed by the specified scaled pose.
-- [func applying(Pose3D) -> Point3D](point3d/applying(_:)-7ulww.md)
+- [func applying(Pose3D) -> Point3D](./applying%28_%29-7ulww.md)
   Returns a point that results from applying the specified pose.
-- [func clamp(to: Rect3D)](point3d/clamp(to:).md)
+- [func clamp(to: Rect3D)](./clamp%28to%29.md)
   Clamps the mutable point to the specified rectangle.
-- [func scale(by: Double)](point3d/scale(by:).md)
-- [func rotated(by: Rotation3D, around: Point3D) -> Point3D](point3d/rotated(by:around:)-4tmfq.md)
+- [func scale(by: Double)](./scale%28by%29.md)
+- [func rotated(by: Rotation3D, around: Point3D) -> Point3D](./rotated%28by,around%29-4tmfq.md)
   Returns a point that results from applying a rotation around the specified point.
-- [func unapplying(Pose3D) -> Point3D](point3d/unapplying(_:)-5hk6t.md)
+- [func unapplying(Pose3D) -> Point3D](./unapplying%28_%29-5hk6t.md)
   Returns a point that results from unapplying the specified pose.
-- [func unapplying(ScaledPose3D) -> Point3D](point3d/unapplying(_:)-7wdtv.md)
+- [func unapplying(ScaledPose3D) -> Point3D](./unapplying%28_%29-7wdtv.md)
   Returns a point that’s transformed by the inverse of the specified scaled pose.
-- [func unapplying(ScaledPose3D) -> Point3D](point3d/unapplying(_:)-7wdtv.md)
+- [func unapplying(ScaledPose3D) -> Point3D](./unapplying%28_%29-7wdtv.md)
   Returns a point that’s transformed by the inverse of the specified scaled pose.
 
 

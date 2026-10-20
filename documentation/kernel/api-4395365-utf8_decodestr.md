@@ -1,14 +1,15 @@
 # utf8_decodestr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int utf8_decodestr(const u_int8_t *utf8p, size_t utf8len, u_int16_t *ucsp, size_t *ucslen, size_t buflen, u_int16_t altslash, int flags);
 ```
 

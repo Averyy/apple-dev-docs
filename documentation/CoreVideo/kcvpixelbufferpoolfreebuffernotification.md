@@ -1,7 +1,8 @@
 # kCVPixelBufferPoolFreeBufferNotification
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A notification that the system posts if a buffer becomes available after it fails to create a pixel buffer with auxiliary attributes because it exceeded the threshold you specified.
 
@@ -20,9 +21,13 @@ A notification that the system posts if a buffer becomes available after it fail
 let kCVPixelBufferPoolFreeBufferNotification: CFString
 ```
 
+```c
+extern CFStringRef const kCVPixelBufferPoolFreeBufferNotification;
+```
+
 #### Discussion
 
-The system posts this notification if a buffer becomes available after the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md) function fails because the system exceeds the threshold you set for the [`kCVPixelBufferPoolAllocationThresholdKey`](kcvpixelbufferpoolallocationthresholdkey.md) key. The system won’t post this notification if you don’t set a value for the [`kCVPixelBufferPoolAllocationThresholdKey`](kcvpixelbufferpoolallocationthresholdkey.md) key for the `auxAttributes` parameter of the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md) function.
+The system posts this notification if a buffer becomes available after the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md) function fails because the system exceeds the threshold you set for the [`kCVPixelBufferPoolAllocationThresholdKey`](./kcvpixelbufferpoolallocationthresholdkey.md) key. The system won’t post this notification if you don’t set a value for the [`kCVPixelBufferPoolAllocationThresholdKey`](./kcvpixelbufferpoolallocationthresholdkey.md) key for the `auxAttributes` parameter of the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md) function.
 
 
 ---

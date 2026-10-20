@@ -1,7 +1,8 @@
 # fallDetectionManagerDidChangeAuthorization(_:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the fall detection authorization status changed.
 
@@ -14,9 +15,13 @@ Indicates the fall detection authorization status changed.
 optional func fallDetectionManagerDidChangeAuthorization(_ fallDetectionManager: CMFallDetectionManager)
 ```
 
+```objc
+- (void) fallDetectionManagerDidChangeAuthorization:(CMFallDetectionManager *) fallDetectionManager;
+```
+
 #### Discussion
 
-The system calls this method after the fall detection authorization status changes. Check the fall detection manager’s [`authorizationStatus`](cmfalldetectionmanager/authorizationstatus.md) property to determine the current status.
+The system calls this method after the fall detection authorization status changes. Check the fall detection manager’s [`authorizationStatus`](../cmfalldetectionmanager/authorizationstatus.md) property to determine the current status.
 
 ## Parameters
 

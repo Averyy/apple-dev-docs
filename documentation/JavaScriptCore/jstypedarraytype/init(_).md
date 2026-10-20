@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a typed array.
 
@@ -21,9 +22,10 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](jstypedarraytype/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a typed array with the specified raw value.
-- [var rawValue: UInt32](jstypedarraytype/rawvalue.md)
+- [var rawValue: UInt32](./rawvalue.md)
   The raw value that represents the typed array’s type.
 
 

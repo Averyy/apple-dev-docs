@@ -1,21 +1,26 @@
 # DISPATCH_IO_RANDOM
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var DISPATCH_IO_RANDOM: Int32 { get }
+```
+
+```c
+#define DISPATCH_IO_RANDOM
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The file descriptor for a channel of this type must be seekable. If it is not, a
 
 ## See Also
 
-- [var DISPATCH_IO_STREAM: Int32](dispatch_io_stream.md)
+### Initializing the Type
+- [var DISPATCH_IO_STREAM: Int32](./dispatch_io_stream.md)
 
 
 ---

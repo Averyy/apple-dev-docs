@@ -1,7 +1,8 @@
 # WAAccessCategory.bestEffort
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A default quality-of-service (QoS) type that provides high throughput for data transfers of any size.
 
@@ -18,17 +19,18 @@ case bestEffort
 
 #### Discussion
 
-This Wi-Fi access category is the default for packets transmitted by a `NetworkConnection`, as well as if you set `serviceClass = .bestEffort` with [`NWParameters`](https://developer.apple.com/documentation/network/nwparameters). Use this category for bulk transfers that are visible to a person using your app.
+This Wi-Fi access category is the default for packets transmitted by a `NetworkConnection`, as well as if you set `serviceClass = .bestEffort` with [`NWParameters`](../../Network/nwparameters.md). Use this category for bulk transfers that are visible to a person using your app.
 
-For more information, refer to [`NWParameters.ServiceClass.bestEffort`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.enum/besteffort)
+For more information, refer to [NWParameters.ServiceClass.bestEffort](../../Network/nwparameters/serviceclass-swift.enum/besteffort.md)
 
 ## See Also
 
-- [WAAccessCategory.background](waaccesscategory/background.md)
+### Providing throughput
+- [WAAccessCategory.background](./background.md)
   A quality-of-service (QoS) type that provides high throughput for delay-tolerant, noninteractive data transfers of any size.
-- [WAAccessCategory.interactiveVideo](waaccesscategory/interactivevideo.md)
+- [WAAccessCategory.interactiveVideo](./interactivevideo.md)
   A quality-of-service (QoS) type that provides low-latency for moderate throughput flows.
-- [WAAccessCategory.interactiveVoice](waaccesscategory/interactivevoice.md)
+- [WAAccessCategory.interactiveVoice](./interactivevoice.md)
   A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
 

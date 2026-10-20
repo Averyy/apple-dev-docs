@@ -1,7 +1,8 @@
 # AVCaptureCameraLensSmudgeDetectionStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the current camera lens smudge detection status.
 
@@ -18,39 +19,44 @@ Constants indicating the current camera lens smudge detection status.
 enum AVCaptureCameraLensSmudgeDetectionStatus
 ```
 
+```c
+enum AVCaptureCameraLensSmudgeDetectionStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status values
-- [AVCaptureCameraLensSmudgeDetectionStatus.disabled](avcapturecameralenssmudgedetectionstatus/disabled.md)
+- [AVCaptureCameraLensSmudgeDetectionStatus.disabled](./avcapturecameralenssmudgedetectionstatus/disabled.md)
   Indicates that the detection is not enabled.
-- [AVCaptureCameraLensSmudgeDetectionStatus.smudgeNotDetected](avcapturecameralenssmudgedetectionstatus/smudgenotdetected.md)
+- [AVCaptureCameraLensSmudgeDetectionStatus.smudgeNotDetected](./avcapturecameralenssmudgedetectionstatus/smudgenotdetected.md)
   Indicates that the most recent detection found no smudge on the camera lens.
-- [AVCaptureCameraLensSmudgeDetectionStatus.smudged](avcapturecameralenssmudgedetectionstatus/smudged.md)
+- [AVCaptureCameraLensSmudgeDetectionStatus.smudged](./avcapturecameralenssmudgedetectionstatus/smudged.md)
   Indicates that the most recent detection found the camera lens to be smudged.
-- [AVCaptureCameraLensSmudgeDetectionStatus.unknown](avcapturecameralenssmudgedetectionstatus/unknown.md)
+- [AVCaptureCameraLensSmudgeDetectionStatus.unknown](./avcapturecameralenssmudgedetectionstatus/unknown.md)
   Indicates that the detection result has not settled, commonly caused by excessive camera movement or the content of the scene.
 ### Initializers
-- [init?(rawValue: Int)](avcapturecameralenssmudgedetectionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcapturecameralenssmudgedetectionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
+### Configuring lens smudge detection
+- [var isCameraLensSmudgeDetectionEnabled: Bool](./avcapturedevice/iscameralenssmudgedetectionenabled.md)
   Whether camera lens smudge detection is enabled.
-- [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](avcapturedevice/setcameralenssmudgedetectionenabled(_:detectioninterval:).md)
+- [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](./avcapturedevice/setcameralenssmudgedetectionenabled%28_,detectioninterval%29.md)
   Specify whether to enable camera lens smudge detection, and the interval time between each run of detections.
-- [var cameraLensSmudgeDetectionInterval: CMTime](avcapturedevice/cameralenssmudgedetectioninterval.md)
+- [var cameraLensSmudgeDetectionInterval: CMTime](./avcapturedevice/cameralenssmudgedetectioninterval.md)
   The camera lens smudge detection interval.
-- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](avcapturedevice/cameralenssmudgedetectionstatus.md)
+- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](./avcapturedevice/cameralenssmudgedetectionstatus.md)
   A value specifying the status of camera lens smudge detection.
 
 

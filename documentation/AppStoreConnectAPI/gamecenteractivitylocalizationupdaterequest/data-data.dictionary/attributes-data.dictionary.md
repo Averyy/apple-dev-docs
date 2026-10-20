@@ -1,7 +1,8 @@
 # GameCenterActivityLocalizationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an activity resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an activity resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityLocalizationUpdateRequest.Data.Attributes
 ```
 

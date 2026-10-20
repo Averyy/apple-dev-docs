@@ -1,7 +1,8 @@
 # PMDuplexMode
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Constants that specify duplex mode settings.
 
@@ -14,13 +15,17 @@ Constants that specify duplex mode settings.
 typealias PMDuplexMode = UInt32
 ```
 
+```c
+typedef UInt32 PMDuplexMode;
+```
+
 ## Topics
 
 ### Constants
-- [var kPMDuplexNone: Int](kpmduplexnone.md)
-- [var kPMDuplexNoTumble: Int](kpmduplexnotumble.md)
-- [var kPMDuplexTumble: Int](kpmduplextumble.md)
-- [var kPMSimplexTumble: Int](kpmsimplextumble.md)
+- [var kPMDuplexNone: Int](./kpmduplexnone.md)
+- [var kPMDuplexNoTumble: Int](./kpmduplexnotumble.md)
+- [var kPMDuplexTumble: Int](./kpmduplextumble.md)
+- [var kPMSimplexTumble: Int](./kpmsimplextumble.md)
 
 
 ---

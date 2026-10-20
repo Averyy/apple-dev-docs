@@ -1,7 +1,8 @@
 # init(_:mediaBox:_:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL-based PDF graphics context.
 
@@ -10,7 +11,7 @@ Creates a URL-based PDF graphics context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a URL-based PDF graphics context.
 init?(_ url: CFURL, mediaBox: UnsafePointer<CGRect>?, _ auxiliaryInfo: CFDictionary?)
 ```
 
+```c
+extern CGContextRefCGPDFContextCreateWithURL(CFURLRef url, const CGRect *mediaBox, CFDictionaryRef auxiliaryInfo);
+```
+
 #### Return Value
 
-A new PDF context, or `NULL` if a context could not be created. In Objective-C, you’re responsible for releasing this object using [`CGContextRelease`](cgcontextrelease.md).
+A new PDF context, or `NULL` if a context could not be created. In Objective-C, you’re responsible for releasing this object using [`CGContextRelease`](../cgcontextrelease.md).
 
 #### Discussion
 
@@ -36,9 +41,10 @@ When you call this function, Core Graphics creates a PDF drawing environment—t
 
 ## See Also
 
-- [init?(consumer: CGDataConsumer, mediaBox: UnsafePointer<CGRect>?, CFDictionary?)](cgcontext/init(consumer:mediabox:_:).md)
+### Creating PDF Graphics Contexts
+- [init?(consumer: CGDataConsumer, mediaBox: UnsafePointer<CGRect>?, CFDictionary?)](./init%28consumer,mediabox,_%29.md)
   Creates a PDF graphics context.
-- [Auxiliary Dictionary Keys](auxiliary-dictionary-keys.md)
+- [Auxiliary Dictionary Keys](../auxiliary-dictionary-keys.md)
   Keys for the auxiliary info dictionary you specify when creating a PDF context.
 
 

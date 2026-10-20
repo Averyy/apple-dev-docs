@@ -1,14 +1,15 @@
 # KC_ST_INT16
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 KC_ST_INT16
 ```
 

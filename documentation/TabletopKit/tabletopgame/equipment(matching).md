@@ -1,7 +1,8 @@
 # equipment(matching:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,12 +15,13 @@ func equipment(matching id: EquipmentIdentifier) -> (any Equipment)?
 
 ## See Also
 
-- [var equipment: [any Equipment]](tabletopgame/equipment.md)
-- [var equipmentIDs: [EquipmentIdentifier]](tabletopgame/equipmentids.md)
-- [func equipment<E>(of: E.Type) -> [E]](tabletopgame/equipment(of:).md)
-- [func equipment<E>(of: E.Type, forEntity: Entity) -> E?](tabletopgame/equipment(of:forentity:).md)
+### Adding equipment to the game
+- [var equipment: [any Equipment]](./equipment.md)
+- [var equipmentIDs: [EquipmentIdentifier]](./equipmentids.md)
+- [func equipment<E>(of: E.Type) -> [E]](./equipment%28of%29.md)
+- [func equipment<E>(of: E.Type, forEntity: Entity) -> E?](./equipment%28of,forentity%29.md)
   Retrieves the specified equipment type associated with an entity if it exists.
-- [func equipment<E>(of: E.Type, matching: EquipmentIdentifier) -> E?](tabletopgame/equipment(of:matching:).md)
+- [func equipment<E>(of: E.Type, matching: EquipmentIdentifier) -> E?](./equipment%28of,matching%29.md)
 
 
 ---

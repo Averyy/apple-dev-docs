@@ -1,23 +1,28 @@
 # CFMessagePortSetName(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the name of a local CFMessagePort object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFMessagePortSetName(_ ms: CFMessagePort!, _ newName: CFString!) -> Bool
+```
+
+```c
+extern Boolean CFMessagePortSetName(CFMessagePortRef ms, CFStringRef newName);
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ func CFMessagePortSetName(_ ms: CFMessagePort!, _ newName: CFString!) -> Bool
 
 #### Discussion
 
-Other threads and processes can connect to a named message port with [`CFMessagePortCreateRemote(_:_:)`](cfmessageportcreateremote(_:_:).md).
+Other threads and processes can connect to a named message port with [`CFMessagePortCreateRemote(_:_:)`](./cfmessageportcreateremote%28_,_%29.md).
 
 ## Parameters
 
@@ -35,9 +40,10 @@ Other threads and processes can connect to a named message port with [`CFMessage
 
 ## See Also
 
-- [func CFMessagePortCreateRunLoopSource(CFAllocator!, CFMessagePort!, CFIndex) -> CFRunLoopSource!](cfmessageportcreaterunloopsource(_:_:_:).md)
+### Configuring a CFMessagePort Object
+- [func CFMessagePortCreateRunLoopSource(CFAllocator!, CFMessagePort!, CFIndex) -> CFRunLoopSource!](./cfmessageportcreaterunloopsource%28_,_,_%29.md)
   Creates a CFRunLoopSource object for a CFMessagePort object.
-- [func CFMessagePortSetInvalidationCallBack(CFMessagePort!, CFMessagePortInvalidationCallBack!)](cfmessageportsetinvalidationcallback(_:_:).md)
+- [func CFMessagePortSetInvalidationCallBack(CFMessagePort!, CFMessagePortInvalidationCallBack!)](./cfmessageportsetinvalidationcallback%28_,_%29.md)
   Sets the callback function invoked when a CFMessagePort object is invalidated.
 
 

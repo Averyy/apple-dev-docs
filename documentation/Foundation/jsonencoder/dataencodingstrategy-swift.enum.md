@@ -1,7 +1,8 @@
 # JSONEncoder.DataEncodingStrategy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The strategies for encoding raw data.
 
@@ -23,24 +24,25 @@ enum DataEncodingStrategy
 ## Topics
 
 ### Base64 Encoding
-- [JSONEncoder.DataEncodingStrategy.base64](jsonencoder/dataencodingstrategy-swift.enum/base64.md)
+- [JSONEncoder.DataEncodingStrategy.base64](./dataencodingstrategy-swift.enum/base64.md)
   The strategy that encodes data using Base 64 encoding.
 ### Custom Encoding
-- [case custom((Data, any Encoder) throws -> Void)](jsonencoder/dataencodingstrategy-swift.enum/custom(_:).md)
+- [case custom((Data, any Encoder) throws -> Void)](./dataencodingstrategy-swift.enum/custom%28_%29.md)
   The strategy that encodes data using a user-defined function.
 ### Data Encoding
-- [JSONEncoder.DataEncodingStrategy.deferredToData](jsonencoder/dataencodingstrategy-swift.enum/deferredtodata.md)
+- [JSONEncoder.DataEncodingStrategy.deferredToData](./dataencodingstrategy-swift.enum/deferredtodata.md)
   The strategy that encodes data using the encoding specified by the data instance itself.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dataEncodingStrategy: JSONEncoder.DataEncodingStrategy](jsonencoder/dataencodingstrategy-swift.property.md)
+### Encoding Raw Data
+- [var dataEncodingStrategy: JSONEncoder.DataEncodingStrategy](./dataencodingstrategy-swift.property.md)
   The strategy that an encoder uses to encode raw data.
 
 

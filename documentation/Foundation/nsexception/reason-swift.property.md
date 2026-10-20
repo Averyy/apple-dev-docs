@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing a “human-readable” reason for the receiver.
 
@@ -20,13 +21,19 @@ A string containing a “human-readable” reason for the receiver.
 var reason: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * reason;
+```
+
 ## See Also
 
-- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](nsexception/init(name:reason:userinfo:).md)
+### Related Documentation
+- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](./init%28name,reason,userinfo%29.md)
   Initializes and returns a newly allocated exception object.
-- [var name: NSExceptionName](nsexception/name-swift.property.md)
+### Querying an NSException Object
+- [var name: NSExceptionName](./name-swift.property.md)
   A string used to uniquely identify the receiver.
-- [var userInfo: [AnyHashable : Any]?](nsexception/userinfo-swift.property.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo-swift.property.md)
   A dictionary containing application-specific data pertaining to the receiver.
 
 

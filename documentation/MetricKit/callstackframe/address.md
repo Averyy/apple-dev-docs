@@ -1,7 +1,8 @@
 # address
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Absolute address
 
@@ -24,11 +25,12 @@ This may be nil if the address information could not be collected.
 
 ## See Also
 
-- [let binaryUUID: UUID?](callstackframe/binaryuuid.md)
+### Frame details
+- [let binaryUUID: UUID?](./binaryuuid.md)
   Binary UUID (references CallStackTree.binaryInfo)
-- [let offsetIntoBinaryTextSegment: UInt64?](callstackframe/offsetintobinarytextsegment.md)
+- [let offsetIntoBinaryTextSegment: UInt64?](./offsetintobinarytextsegment.md)
   Offset into binary text segment
-- [let sampleCount: Int?](callstackframe/samplecount.md)
+- [let sampleCount: Int?](./samplecount.md)
   Sample count (for sampled stack traces)
 
 

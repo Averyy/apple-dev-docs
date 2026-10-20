@@ -1,7 +1,8 @@
 # init(id:time:duration:offset:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a command instance for a certain time, duration and offset.
 

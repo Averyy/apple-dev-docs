@@ -1,7 +1,8 @@
 # horizontalAccuracy
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of uncertainty for the location measured in meters.
 
@@ -10,7 +11,7 @@ The radius of uncertainty for the location measured in meters.
 
 ## Declaration
 
-```swift
+```
 attribute Double? horizontalAccuracy;
 ```
 

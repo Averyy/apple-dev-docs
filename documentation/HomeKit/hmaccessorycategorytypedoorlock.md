@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeDoorLock
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A door lock accessory.
 
@@ -19,13 +20,18 @@ A door lock accessory.
 let HMAccessoryCategoryTypeDoorLock: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeDoorLock;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeDoor: String](hmaccessorycategorytypedoor.md)
+### Locks and openers
+- [let HMAccessoryCategoryTypeDoor: String](./hmaccessorycategorytypedoor.md)
   A door accessory.
-- [let HMAccessoryCategoryTypeGarageDoorOpener: String](hmaccessorycategorytypegaragedooropener.md)
+- [let HMAccessoryCategoryTypeGarageDoorOpener: String](./hmaccessorycategorytypegaragedooropener.md)
   A garage door opener accessory.
-- [let HMAccessoryCategoryTypeVideoDoorbell: String](hmaccessorycategorytypevideodoorbell.md)
+- [let HMAccessoryCategoryTypeVideoDoorbell: String](./hmaccessorycategorytypevideodoorbell.md)
   A video doorbell accessory.
 
 

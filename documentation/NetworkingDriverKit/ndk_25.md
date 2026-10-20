@@ -1,14 +1,15 @@
 # NDK_25
 
 **Framework**: NetworkingDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 #define NDK_25
 ```
 

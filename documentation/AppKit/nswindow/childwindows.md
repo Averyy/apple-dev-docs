@@ -1,12 +1,13 @@
 # childWindows
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the window’s attached child windows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ An array of the window’s attached child windows.
 var childWindows: [NSWindow]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<__kindof NSWindow *> * childWindows;
+```
+
 ## See Also
 
-- [func addChildWindow(NSWindow, ordered: NSWindow.OrderingMode)](nswindow/addchildwindow(_:ordered:).md)
+### Managing Attached Windows
+- [func addChildWindow(NSWindow, ordered: NSWindow.OrderingMode)](./addchildwindow%28_,ordered%29.md)
   Adds a given window as a child window of the window.
-- [func removeChildWindow(NSWindow)](nswindow/removechildwindow(_:).md)
+- [func removeChildWindow(NSWindow)](./removechildwindow%28_%29.md)
   Detaches a given child window from the window.
-- [var parent: NSWindow?](nswindow/parent.md)
+- [var parent: NSWindow?](./parent.md)
   The parent window to which the window is attached as a child.
 
 

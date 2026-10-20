@@ -1,7 +1,8 @@
 # MLKEM768.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A private key you use to decapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
 
@@ -23,35 +24,36 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [static func generate() throws -> MLKEM768.PrivateKey](mlkem768/privatekey/generate.md)
+- [static func generate() throws -> MLKEM768.PrivateKey](./privatekey/generate%28%29.md)
   Generates a new, random private key.
-- [init() throws](mlkem768/privatekey/init.md)
+- [init() throws](./privatekey/init%28%29.md)
   Initializes a random private key.
-- [init<D>(integrityCheckedRepresentation: D) throws](mlkem768/privatekey/init(integritycheckedrepresentation:).md)
+- [init<D>(integrityCheckedRepresentation: D) throws](./privatekey/init%28integritycheckedrepresentation%29.md)
   Initializes a private key from an integrity-checked representation.
-- [init<D>(seedRepresentation: D, publicKey: MLKEM768.PublicKey?) throws](mlkem768/privatekey/init(seedrepresentation:publickey:).md)
+- [init<D>(seedRepresentation: D, publicKey: MLKEM768.PublicKey?) throws](./privatekey/init%28seedrepresentation,publickey%29.md)
   Initializes a private key from a seed representation and optional public key.
 ### Inspecting a private key’s properties
-- [var integrityCheckedRepresentation: Data](mlkem768/privatekey/integritycheckedrepresentation.md)
+- [var integrityCheckedRepresentation: Data](./privatekey/integritycheckedrepresentation.md)
   An integrity-checked representation of the private key.
-- [var publicKey: MLKEM768.PublicKey](mlkem768/privatekey/publickey.md)
+- [var publicKey: MLKEM768.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
-- [var seedRepresentation: Data](mlkem768/privatekey/seedrepresentation.md)
+- [var seedRepresentation: Data](./privatekey/seedrepresentation.md)
   The private key’s seed representation.
 ### Decapsulating shared secrets
-- [func decapsulate<D>(D) throws -> SymmetricKey](mlkem768/privatekey/decapsulate(_:).md)
+- [func decapsulate<D>(D) throws -> SymmetricKey](./privatekey/decapsulate%28_%29.md)
   Decapsulate a shared secret.
 
 ## Relationships
 
 ### Conforms To
-- [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [KEMPrivateKey](../kemprivatekey.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLKEM768.PublicKey](mlkem768/publickey.md)
+### Keys
+- [MLKEM768.PublicKey](./publickey.md)
   A public key you use to encapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
 
 

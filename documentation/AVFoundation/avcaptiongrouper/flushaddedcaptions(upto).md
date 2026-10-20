@@ -1,7 +1,8 @@
 # flushAddedCaptions(upTo:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates caption groups for the captions you enqueue up to the time.
 
@@ -15,6 +16,10 @@ Creates caption groups for the captions you enqueue up to the time.
 
 ```swift
 func flushAddedCaptions(upTo upToTime: CMTime) -> [AVCaptionGroup]
+```
+
+```objc
+- (NSArray<AVCaptionGroup *> *) flushAddedCaptionsIntoGroupsUpToTime:(CMTime) upToTime;
 ```
 
 #### Return Value

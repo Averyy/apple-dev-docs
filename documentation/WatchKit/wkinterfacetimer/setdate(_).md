@@ -1,7 +1,8 @@
 # setDate(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the start time for the timer.
 
@@ -14,9 +15,13 @@ Changes the start time for the timer.
 func setDate(_ date: Date)
 ```
 
+```objc
+- (void) setDate:(NSDate *) date;
+```
+
 #### Discussion
 
-This method updates the target value but does not automatically update the timer display. You must call the timer’s [`start()`](wkinterfacetimer/start().md) method to begin updating the text it displays. When you do, the timer text is updated based on the time you set using this method.
+This method updates the target value but does not automatically update the timer display. You must call the timer’s [`start()`](./start%28%29.md) method to begin updating the text it displays. When you do, the timer text is updated based on the time you set using this method.
 
 ## Parameters
 
@@ -24,10 +29,12 @@ This method updates the target value but does not automatically update the timer
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func start()](wkinterfacetimer/start.md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+- [func start()](./start%28%29.md)
   Begins updates to the timer’s display.
-- [func setTextColor(UIColor?)](wkinterfacetimer/settextcolor(_:).md)
+### Configuring the Timer Attributes
+- [func setTextColor(UIColor?)](./settextcolor%28_%29.md)
   Sets the color of the timer’s text.
 
 

@@ -1,7 +1,8 @@
 # AppPreview.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an App Previews resource.
 
@@ -10,23 +11,23 @@ Attributes that describe an App Previews resource.
 
 ## Declaration
 
-```swift
+```
 object AppPreview.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
+- [App Store Connect API 3.7 release notes](../app-store-connect-api-3-7-release-notes.md)
 
 ## Properties
 
-- `assetDeliveryState` (AppMediaAssetState): This attribute is deprecated. Use [`AppMediaVideoState`](appmediavideostate.md) instead.
+- `assetDeliveryState` (AppMediaAssetState): This attribute is deprecated. Use [`AppMediaVideoState`](../appmediavideostate.md) instead.
 - `fileName` (string)
 - `fileSize` (integer)
 - `mimeType` (string)
 - `previewFrameImage` (PreviewFrameImage)
 - `previewFrameTimeCode` (string)
-- `previewImage` (ImageAsset): This attribute is deprecated. Use [`PreviewFrameImage`](previewframeimage.md) instead.
+- `previewImage` (ImageAsset): This attribute is deprecated. Use [`PreviewFrameImage`](../previewframeimage.md) instead.
 - `sourceFileChecksum` (string)
 - `uploadOperations` ([UploadOperation])
 - `videoDeliveryState` (AppMediaVideoState)
@@ -34,7 +35,8 @@ object AppPreview.Attributes
 
 ## See Also
 
-- [object AppPreview.Relationships](apppreview/relationships-data.dictionary.md)
+### Objects
+- [object AppPreview.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

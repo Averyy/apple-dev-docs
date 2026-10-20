@@ -1,7 +1,8 @@
 # init(fileHandleItem:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message for a file handle connection acceptance.
 

@@ -1,11 +1,12 @@
 # Collection Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](columnslice/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column slice.
 
 

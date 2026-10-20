@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that handles popover-related messages.
 
@@ -17,15 +18,20 @@ The delegate that handles popover-related messages.
 weak var delegate: (any UIPopoverPresentationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPopoverPresentationControllerDelegate> delegate;
+```
+
 #### Discussion
 
-At various points during the presentation process, the popover presentation controller calls methods of its delegate to give that object a chance to respond. You might use a delegate to further configure the popover presentation controller or to respond to user-initiated actions relating to the popover. For example, immediately prior to displaying the popover, the presentation controller calls the [`prepareForPopoverPresentation(_:)`](uipopoverpresentationcontrollerdelegate/prepareforpopoverpresentation(_:).md) method of the delegate object.
+At various points during the presentation process, the popover presentation controller calls methods of its delegate to give that object a chance to respond. You might use a delegate to further configure the popover presentation controller or to respond to user-initiated actions relating to the popover. For example, immediately prior to displaying the popover, the presentation controller calls the [`prepareForPopoverPresentation(_:)`](../uipopoverpresentationcontrollerdelegate/prepareforpopoverpresentation%28_%29.md) method of the delegate object.
 
-For more information about the methods that you can implement in your delegate object, see [`UIPopoverPresentationControllerDelegate`](uipopoverpresentationcontrollerdelegate.md).
+For more information about the methods that you can implement in your delegate object, see [`UIPopoverPresentationControllerDelegate`](../uipopoverpresentationcontrollerdelegate.md).
 
 ## See Also
 
-- [protocol UIPopoverPresentationControllerDelegate](uipopoverpresentationcontrollerdelegate.md)
+### Customizing the popover behavior
+- [protocol UIPopoverPresentationControllerDelegate](../uipopoverpresentationcontrollerdelegate.md)
   The interface for a popover presentation delegate, which lets you customize the behavior of a popover-based presentation.
 
 

@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the invalidation type.
 

@@ -1,7 +1,8 @@
 # initialPreviewIndex
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the item to preview.
 
@@ -14,6 +15,10 @@ The index of the item to preview.
 
 ```swift
 var initialPreviewIndex: Int { get set }
+```
+
+```objc
+@property (assign) NSInteger initialPreviewIndex;
 ```
 
 

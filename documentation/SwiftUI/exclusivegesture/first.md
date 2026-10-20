@@ -1,7 +1,8 @@
 # first
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first of two gestures.
 
@@ -22,9 +23,10 @@ var first: First
 
 ## See Also
 
-- [init(First, Second)](exclusivegesture/init(_:_:).md)
+### Creating the gesture
+- [init(First, Second)](./init%28_,_%29.md)
   Creates a gesture from two gestures where only one of them succeeds.
-- [var second: Second](exclusivegesture/second.md)
+- [var second: Second](./second.md)
   The second of two gestures.
 
 

@@ -1,7 +1,8 @@
 # vblTime
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The time of the most recent vertical blanking.
 
@@ -10,7 +11,7 @@ The time of the most recent vertical blanking.
 
 ## Declaration
 
-```swift
+```c
 AbsoluteTime vblTime;
 ```
 

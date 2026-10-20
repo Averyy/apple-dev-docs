@@ -1,7 +1,8 @@
 # performTextFinderAction(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs all find oriented actions.
 
@@ -14,13 +15,17 @@ Performs all find oriented actions.
 func performTextFinderAction(_ sender: Any?)
 ```
 
+```objc
+- (void) performTextFinderAction:(id) sender;
+```
+
 #### Discussion
 
 When an application performs a find action, it should send this message to the responder chain.
 
 A responder of `performTextFinderAction:` is responsible for creating and owning an instance of `NSTextFinder`. Before any other messages are sent to the `NSTextFinder`, you should set its ‘client’ property to an object which implements the `NSTextFinderClient` protocol.
 
-> **Note**:  Before OS X v10.7, the default action for these menu items was [`performFindPanelAction(_:)`](nstextview/performfindpanelaction(_:).md). Whenever possible which you should update your implementation to use this new action.
+> **Note**:  Before OS X v10.7, the default action for these menu items was [`performFindPanelAction(_:)`](../nstextview/performfindpanelaction%28_%29.md). Whenever possible which you should update your implementation to use this new action.
 
 ## Parameters
 

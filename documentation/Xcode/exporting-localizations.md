@@ -1,6 +1,7 @@
 # Exporting localizations
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Provide the localizable files from your project to localizers.
 
@@ -8,13 +9,13 @@ Provide the localizable files from your project to localizers.
 
 Export localizations for the languages and regions you’re ready to support. You can export all the files that you need to localize from your Xcode project, or export the files for specific localizations. Optionally, add files to the exported folders to provide context, and then give the files to localizers.
 
-##### Export Localizations Using Xcode
+##### Export localizations using Xcode
 
 In the Project navigator, select the project, then choose Product > Export Localizations. In the dialog that appears, enter a folder name, choose a location, choose the localizations, and click Export.
 
-![Screenshot of a export localizations sheet where you enter a folder name and choose localizations.](/images/com.apple.Xcode/exporting-localizations-1@2x.png)
+![Screenshot of a export localizations sheet where you enter a folder name and choose localizations.](https://developer.apple.com/tutorials/images/com.apple.Xcode/exporting-localizations-1@2x.png)
 
-> ❗ **Important**: To include all localizable text in your export, enable the [`Use Compiler to Extract Swift Strings`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/build-settings-reference#Use-Compiler-to-Extract-Swift-Strings) build setting for your project. This setting only impacts Swift strings. Objective-C string extraction works without any additional build settings.
+> ❗ **Important**: To include all localizable text in your export, enable the [Use Compiler to Extract Swift Strings](./build-settings-reference.md#Use-Compiler-to-Extract-Swift-Strings) build setting for your project. This setting only impacts Swift strings. Objective-C string extraction works without any additional build settings.
 
 If you generate screenshots when testing your localizations, provide context for localizers by clicking “Include screenshots” to include the localization-specific screenshots in the `Notes` folder of the exported files. To filter the screenshots, click Customize, deselect the screenshots you don’t want to include, and click Done.
 
@@ -25,11 +26,11 @@ Xcode creates an Xcode Localization Catalog (a folder with a `.xcloc` file exten
 - Creates a strings file for the localizable properties in the information property list file.
 - Copies all localizable resources into the `Source Contents` folder to provide context for localizers.
 
-Xcode extracts strings that you pass to [`Text`](https://developer.apple.com/documentation/swiftui/text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, and similar APIs in your code. For example, if you pass a string with a comment to the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, Xcode includes the comment in the XLIFF file.
+Xcode extracts strings that you pass to [`Text`](../SwiftUI/text.md) structures, the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro, and similar APIs in your code. For example, if you pass a string with a comment to the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro, Xcode includes the comment in the XLIFF file.
 
 In addition, each localization folder in the catalog contains only the resources and assets that you mark as localizable. Prior to localization, the file is a copy of the development language file—a placeholder to provide context for the localizers.
 
-##### Add Files to the Xcode Localization Catalog
+##### Add files to the Xcode Localization Catalog
 
 Before you give the catalog to localizers, you can add additional files to the `Notes` folders to provide more context. An Xcode Localization Catalog folder contains:
 
@@ -40,7 +41,7 @@ Before you give the catalog to localizers, you can add additional files to the `
 | `Notes` | A folder containing additional information for localizers, such as screenshots, movies, or text files. |
 | `Source Contents` | A folder containing the assets to produce the content that provides context for localizers, such as user interface files and other resources. |
 
-##### Export Localizations Using Commands
+##### Export localizations using commands
 
 You can also export localization files with the `xcodebuild` command using the -`exportLocalizations` argument:
 
@@ -50,13 +51,14 @@ To include the screenshots you generate while testing localizations, add the  `-
 
 ## See Also
 
-- [Creating screenshots of your app for localizers](creating-screenshots-of-your-app-for-localizers.md)
+### Translation and adaptation
+- [Creating screenshots of your app for localizers](./creating-screenshots-of-your-app-for-localizers.md)
   Share screenshots of your app with localizers to provide context for translation.
-- [Editing XLIFF and string catalog files](editing-xliff-and-string-catalog-files.md)
+- [Editing XLIFF and string catalog files](./editing-xliff-and-string-catalog-files.md)
   Translate or adapt the localizable files for a language and region that you export from your project.
-- [Importing localizations](importing-localizations.md)
+- [Importing localizations](./importing-localizations.md)
   Import the files that you translate or adapt for a language and region into your project.
-- [Locking views in storyboard and XIB files](locking-views-in-storyboard-and-xib-files.md)
+- [Locking views in storyboard and XIB files](./locking-views-in-storyboard-and-xib-files.md)
   Prevent changes to your Interface Builder files while localizing human-facing strings.
 
 

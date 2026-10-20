@@ -1,7 +1,8 @@
 # fetchAllChanges
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to send repeated requests to the server.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether to send repeated requests to the server.
 var fetchAllChanges: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL fetchAllChanges;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`changeTokenUpdatedBlock`](ckfetchdatabasechangesoperation/changetokenupdatedblock.md) property with a change token after each request.
+If [`true`](../../Swift/true.md), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`changeTokenUpdatedBlock`](./changetokenupdatedblock.md) property with a change token after each request.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var previousServerChangeToken: CKServerChangeToken?](ckfetchdatabasechangesoperation/previousserverchangetoken.md)
+### Configuring the Operation
+- [var previousServerChangeToken: CKServerChangeToken?](./previousserverchangetoken.md)
   The server change token.
-- [var resultsLimit: Int](ckfetchdatabasechangesoperation/resultslimit.md)
+- [var resultsLimit: Int](./resultslimit.md)
   The maximum number of results that the operation fetches.
 
 

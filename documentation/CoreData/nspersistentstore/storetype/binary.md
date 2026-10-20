@@ -1,7 +1,8 @@
 # binary
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A store that reads from and writes to a persistent binary file.
 
@@ -11,7 +12,7 @@ A store that reads from and writes to a persistent binary file.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static let binary: NSPersistentStore.StoreType
 
 #### Discussion
 
-A binary store is atomic, which means Core Data reads and writes the file in its entirety. This behavior is different from a [`sqlite`](nspersistentstore/storetype/sqlite.md) store, which you can partially modify.
+A binary store is atomic, which means Core Data reads and writes the file in its entirety. This behavior is different from a [`sqlite`](./sqlite.md) store, which you can partially modify.
 
 ## See Also
 
-- [static let inMemory: NSPersistentStore.StoreType](nspersistentstore/storetype/inmemory.md)
+### Store Types
+- [static let inMemory: NSPersistentStore.StoreType](./inmemory.md)
   An ephemeral store that reads from and writes to memory only.
-- [static let sqlite: NSPersistentStore.StoreType](nspersistentstore/storetype/sqlite.md)
+- [static let sqlite: NSPersistentStore.StoreType](./sqlite.md)
   A store that reads from and writes to a persistent SQLite database.
-- [static let xml: NSPersistentStore.StoreType](nspersistentstore/storetype/xml.md)
+- [static let xml: NSPersistentStore.StoreType](./xml.md)
   A store that reads from and writes to a persistent XML file.
 
 

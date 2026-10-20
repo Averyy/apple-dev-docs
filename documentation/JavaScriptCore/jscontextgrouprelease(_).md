@@ -1,7 +1,8 @@
 # JSContextGroupRelease(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases a JavaScript context group.
 
@@ -19,15 +20,20 @@ Releases a JavaScript context group.
 func JSContextGroupRelease(_ group: JSContextGroupRef!)
 ```
 
+```c
+void JSContextGroupRelease(JSContextGroupRef group);
+```
+
 ## Parameters
 
-- `group`: The [`JSContextGroupRef`](jscontextgroupref.md) to release.
+- `group`: The [`JSContextGroupRef`](./jscontextgroupref.md) to release.
 
 ## See Also
 
-- [func JSContextGroupCreate() -> JSContextGroupRef!](jscontextgroupcreate().md)
+### Creating a Context Group
+- [func JSContextGroupCreate() -> JSContextGroupRef!](./jscontextgroupcreate%28%29.md)
   Creates a JavaScript context group.
-- [func JSContextGroupRetain(JSContextGroupRef!) -> JSContextGroupRef!](jscontextgroupretain(_:).md)
+- [func JSContextGroupRetain(JSContextGroupRef!) -> JSContextGroupRef!](./jscontextgroupretain%28_%29.md)
   Retains a JavaScript context group.
 
 

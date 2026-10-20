@@ -1,7 +1,8 @@
 # SearchDelegate
 
 **Framework**: MapKit JS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An object or callback function the framework calls when performing a search or an autocomplete request.
 
@@ -10,7 +11,7 @@ An object or callback function the framework calls when performing a search or a
 
 ## Declaration
 
-```swift
+```
 type SearchDelegate<
     T extends SearchResponse | SearchAutocompleteResponse =
         | SearchResponse
@@ -27,7 +28,7 @@ type SearchDelegate<
 
 #### Discussion
 
-You can also pass an object to the [`search()`](search/search.md) and [`autocomplete()`](search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
+You can also pass an object to the [`search()`](./search/search.md) and [`autocomplete()`](./search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
 
 - `searchDidComplete`. Upon successful completion of a search request, this method returns a data object that’s the same as the one that passes to the search callback function.
 - `searchDidError`. The system calls this when the search request fails.
@@ -36,11 +37,12 @@ You can also pass an object to the [`search()`](search/search.md) and [`autocomp
 
 ## See Also
 
-- [search(query, options)](search/search.md)
+### Performing a search
+- [search(query, options)](./search/search.md)
   Retrieves the results of a search query.
-- [interface SearchOptions](searchoptions.md)
+- [interface SearchOptions](./searchoptions.md)
   An object that contains options to adjust a search.
-- [interface SearchResponse](searchresponse.md)
+- [interface SearchResponse](./searchresponse.md)
   The result of a search, including the original search query, the bounding region, and a list of places that match the query.
 
 

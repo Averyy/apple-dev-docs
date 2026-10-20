@@ -1,11 +1,12 @@
 # Shearable3D Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func sheared(AxisWithFactors) -> Size3D](size3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Size3D](./sheared%28_%29.md)
   Returns a size that results from shearing over an axis by shear factors for the other two axes.
 
 

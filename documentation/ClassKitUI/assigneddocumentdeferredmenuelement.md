@@ -1,7 +1,8 @@
 # AssignedDocumentDeferredMenuElement
 
 **Framework**: ClassKit UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A deferred menu element that provides assigned document submission functionality.
 
@@ -52,30 +53,31 @@ menu.addItem(menuItem)
 ## Topics
 
 ### Initializers
-- [convenience init(documentURL: URL, willSubmit: (URL) async -> Bool, didSubmit: (URL) -> Void, willWithdraw: (URL) async -> Bool, didWithdraw: (URL) -> Void)](assigneddocumentdeferredmenuelement/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:).md)
+- [convenience init(documentURL: URL, willSubmit: (URL) async -> Bool, didSubmit: (URL) -> Void, willWithdraw: (URL) async -> Bool, didWithdraw: (URL) -> Void)](./assigneddocumentdeferredmenuelement/init%28documenturl,willsubmit,didsubmit,willwithdraw,didwithdraw%29.md)
   Creates a deferred menu element for assigned document submissions.
 
 ## Relationships
 
 ### Inherits From
-- [UIDeferredMenuElement](../uikit/uideferredmenuelement.md)
+- [UIDeferredMenuElement](../UIKit/uideferredmenuelement.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
 
 ## See Also
 
-- [struct AssignedDocumentSubmissionButton](assigneddocumentsubmissionbutton.md)
+### Submitting assigned documents
+- [struct AssignedDocumentSubmissionButton](./assigneddocumentsubmissionbutton.md)
   A button that provides submission functionality for the assigned document.
-- [class AssignedDocumentMenuItem](assigneddocumentmenuitem.md)
+- [class AssignedDocumentMenuItem](./assigneddocumentmenuitem.md)
   A menu item that provides assigned document submission functionality.
 
 

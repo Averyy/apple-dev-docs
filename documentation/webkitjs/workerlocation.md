@@ -1,7 +1,8 @@
 # WorkerLocation
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface WorkerLocation
 ```
 
 ## Topics
 
 ### Instance Properties
-- [hash](workerlocation/1633089-hash.md)
-- [host](workerlocation/1634035-host.md)
-- [hostname](workerlocation/1634381-hostname.md)
-- [href](workerlocation/1629448-href.md)
-- [origin](workerlocation/1777873-origin.md)
-- [pathname](workerlocation/1629084-pathname.md)
-- [port](workerlocation/1630777-port.md)
-- [protocol](workerlocation/1631703-protocol.md)
-- [search](workerlocation/1633762-search.md)
+- [hash](./workerlocation/api-1633089-hash.md)
+- [host](./workerlocation/api-1634035-host.md)
+- [hostname](./workerlocation/api-1634381-hostname.md)
+- [href](./workerlocation/api-1629448-href.md)
+- [origin](./workerlocation/api-1777873-origin.md)
+- [pathname](./workerlocation/api-1629084-pathname.md)
+- [port](./workerlocation/api-1630777-port.md)
+- [protocol](./workerlocation/api-1631703-protocol.md)
+- [search](./workerlocation/api-1633762-search.md)
 
 
 ---

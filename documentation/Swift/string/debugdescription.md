@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of the string that is suitable for debugging.
 
@@ -22,13 +23,14 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](string/description.md)
+### Describing a String
+- [var description: String](./description.md)
   The value of this string.
-- [var customMirror: Mirror](string/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `String` instance.
-- [var hashValue: Int](string/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
-- [func hash(into: inout Hasher)](string/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

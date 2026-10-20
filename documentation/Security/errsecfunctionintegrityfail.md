@@ -1,7 +1,8 @@
 # errSecFunctionIntegrityFail
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A function address is not within the verified module.
 
@@ -18,6 +19,10 @@ A function address is not within the verified module.
 
 ```swift
 var errSecFunctionIntegrityFail: OSStatus { get }
+```
+
+```c
+errSecFunctionIntegrityFail
 ```
 
 

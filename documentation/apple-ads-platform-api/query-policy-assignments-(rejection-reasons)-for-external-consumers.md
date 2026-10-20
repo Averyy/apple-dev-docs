@@ -1,7 +1,8 @@
 # Query Rejection Reasons for Brands
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query paginated policy assignment rejection reason details.
 
@@ -16,7 +17,7 @@ The endpoint returns results as `BrandRejectionReasonResponse` objects, each con
 
 The request supports standard `filters`, `sorting`, and `pagination` via `PolicyAssignmentQueryRequest`. Filter by `promotedObjectId` to scope results to a specific brand. The endpoint returns only non-deleted rejection reasons.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -24,7 +25,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | --- | --- | --- | --- | --- |
 | `promotedObjectId` | string | `IN` |  | Scope results to a specific brand. The only field supported by `PolicyAssignmentQueryRequest`. |
 
-The request body is a [`QueryRequest`](queryrequest.md)-shaped object composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md)-shaped object composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Request Body
 
@@ -100,17 +101,34 @@ Query rejection reasons for a specific brand, sorted by ID descending.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `PolicyAssignmentQueryRequest`
+
+## Responses
+
+- `200` OK (`PolicyAssignmentQueryResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Brands](query-brands.md)
+- [Query Brands](./query-brands.md)
   Retrieve a paginated list of brands using filters and sorting.
-- [Get Brand by ID](get-brand-by-id.md)
+- [Get Brand by ID](./get-brand-by-id.md)
   Retrieve a single brand by its unique identifier.
-- [Query Business Categories](query-categories.md)
+- [Query Business Categories](./query-categories.md)
   Retrieve a paginated list of business categories using filters and sorting.
-- [Get Business Category](get-category-by-id.md)
+- [Get Business Category](./get-category-by-id.md)
   Retrieve a single business category by its identifier.
 
 

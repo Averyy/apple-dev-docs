@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(dwSize: DWORD, dwFlags: DWORD, dwDuration: DWORD, dwSamplePeriod: DWORD, dwGain: DWORD, dwTriggerButton: DWORD, dwTriggerRepeatInterval: DWORD, cAxes: DWORD, rgdwAxes: LPDWORD!, rglDirection: LPLONG!, lpEnvelope: PFFENVELOPE!, cbTypeSpecificParams: DWORD, lpvTypeSpecificParams: UnsafeMutableRawPointer!, dwStartDelay: DWORD)](ffeffect/init(dwsize:dwflags:dwduration:dwsampleperiod:dwgain:dwtriggerbutton:dwtriggerrepeatinterval:caxes:rgdwaxes:rgldirection:lpenvelope:cbtypespecificparams:lpvtypespecificparams:dwstartdelay:).md)
+### Initializers
+- [init(dwSize: DWORD, dwFlags: DWORD, dwDuration: DWORD, dwSamplePeriod: DWORD, dwGain: DWORD, dwTriggerButton: DWORD, dwTriggerRepeatInterval: DWORD, cAxes: DWORD, rgdwAxes: LPDWORD!, rglDirection: LPLONG!, lpEnvelope: PFFENVELOPE!, cbTypeSpecificParams: DWORD, lpvTypeSpecificParams: UnsafeMutableRawPointer!, dwStartDelay: DWORD)](./init%28dwsize,dwflags,dwduration,dwsampleperiod,dwgain,dwtriggerbutton,dwtriggerrepeatinterval,caxes,rgdwaxes,rgldirection,lpenvelope,cbtypespecificparams,lpvtypespecificparams,dwstartdelay%29.md)
 
 
 ---

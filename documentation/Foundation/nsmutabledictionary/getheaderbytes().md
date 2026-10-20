@@ -1,7 +1,8 @@
 # getHeaderBytes()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func getHeaderBytes() -> NSMutableData!
+```
+
+```objc
+- (NSMutableData *) getHeaderBytes;
 ```
 
 

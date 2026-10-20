@@ -1,7 +1,8 @@
 # disconnectOnSleep
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the VPN disconnects when the device sleeps.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the VPN disconnects when the device sleep
 var disconnectOnSleep: Bool { get set }
 ```
 
+```objc
+@property BOOL disconnectOnSleep;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var serverAddress: String?](nevpnprotocol/serveraddress.md)
+### Configuring the VPN
+- [var serverAddress: String?](./serveraddress.md)
   The address of the VPN server.
-- [var proxySettings: NEProxySettings?](nevpnprotocol/proxysettings.md)
+- [var proxySettings: NEProxySettings?](./proxysettings.md)
   The proxy settings to use for HTTP and HTTPS connections that route through the VPN.
 
 

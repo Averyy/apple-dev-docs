@@ -1,7 +1,8 @@
 # CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns all the pixel format descriptions known to Core Video.
 
@@ -20,9 +21,13 @@ Returns all the pixel format descriptions known to Core Video.
 func CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(_ allocator: CFAllocator?) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(CFAllocatorRef allocator);
+```
+
 #### Return Value
 
-An array of Core Foundation dictionaries, each containing a pixel format description. See [`Pixel Format Description Keys`](pixel-format-description-keys.md) for a list of keys relevant to the format description.
+An array of Core Foundation dictionaries, each containing a pixel format description. See [Pixel Format Description Keys](./pixel-format-description-keys.md) for a list of keys relevant to the format description.
 
 ## Parameters
 

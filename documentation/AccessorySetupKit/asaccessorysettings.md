@@ -1,7 +1,8 @@
 # ASAccessorySettings
 
 **Framework**: AccessorySetupKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Properties of an accessory.
 
@@ -15,38 +16,43 @@ Properties of an accessory.
 class ASAccessorySettings
 ```
 
+```objc
+@interface ASAccessorySettings : NSObject
+```
+
 ## Topics
 
 ### Applying default settings
-- [class var `default`: ASAccessorySettings](asaccessorysettings/default.md)
+- [class var `default`: ASAccessorySettings](./asaccessorysettings/default.md)
   An empty settings object.
 ### Inspecting accessory settings
-- [var ssid: String?](asaccessorysettings/ssid.md)
+- [var ssid: String?](./asaccessorysettings/ssid.md)
   A hotspot identifier that clients can use to connect to an accessory’s hotspot.
-- [var bluetoothTransportBridgingIdentifier: Data?](asaccessorysettings/bluetoothtransportbridgingidentifier.md)
+- [var bluetoothTransportBridgingIdentifier: Data?](./asaccessorysettings/bluetoothtransportbridgingidentifier.md)
   A 6-byte identifier for bridging classic transport profiles.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func finishAuthorization(for: ASAccessory, settings: ASAccessorySettings, completionHandler: ((any Error)?) -> Void)](asaccessorysession/finishauthorization(for:settings:completionhandler:).md)
+### Managing authorization
+- [func finishAuthorization(for: ASAccessory, settings: ASAccessorySettings, completionHandler: ((any Error)?) -> Void)](./asaccessorysession/finishauthorization%28for,settings,completionhandler%29.md)
   Finish authorization of a partially-setup accessory.
-- [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](asaccessorysession/failauthorization(for:completionhandler:).md)
+- [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](./asaccessorysession/failauthorization%28for,completionhandler%29.md)
   End authorization of a partially-configured accessory as a failure.
-- [func updateAuthorization(for: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: ((any Error)?) -> Void)](asaccessorysession/updateauthorization(for:descriptor:completionhandler:).md)
+- [func updateAuthorization(for: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: ((any Error)?) -> Void)](./asaccessorysession/updateauthorization%28for,descriptor,completionhandler%29.md)
   Displays a view to upgrade an accessory with additional technology permissions.
 
 

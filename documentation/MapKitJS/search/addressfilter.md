@@ -1,7 +1,8 @@
 # addressFilter
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An filter that lists which address components to include or exclude in search results.
 
@@ -10,14 +11,14 @@ An filter that lists which address components to include or exclude in search re
 
 ## Declaration
 
-```swift
+```
 get addressFilter(): AddressFilter | null;
 set addressFilter(value: AddressFilter | null);
 ```
 
 #### Discussion
 
-For more information on address filter options, see [`AddressFilter`](mapkit/addressfilter.md).
+For more information on address filter options, see [`AddressFilter`](../mapkit/addressfilter.md).
 
 
 ---

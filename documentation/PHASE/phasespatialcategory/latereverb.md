@@ -1,17 +1,18 @@
 # lateReverb
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A spatial category that refers to the later echoes along the duration of sound resonance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A spatial category that refers to the later echoes along the duration of sound r
 static let lateReverb: PHASESpatialCategory
 ```
 
+```c
+extern PHASESpatialCategory const PHASESpatialCategoryLateReverb;
+```
+
 ## See Also
 
-- [static let directPathTransmission: PHASESpatialCategory](phasespatialcategory/directpathtransmission.md)
+### Categories
+- [static let directPathTransmission: PHASESpatialCategory](./directpathtransmission.md)
   A spatial category that refers to the unfiltered audio signal.
-- [static let earlyReflections: PHASESpatialCategory](phasespatialcategory/earlyreflections.md)
+- [static let earlyReflections: PHASESpatialCategory](./earlyreflections.md)
   A spatial category that refers to the earlier echoes along the duration of sound resonance.
 
 

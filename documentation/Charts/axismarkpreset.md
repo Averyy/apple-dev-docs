@@ -1,7 +1,8 @@
 # AxisMarkPreset
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes preset styles for axis markers.
 
@@ -23,25 +24,26 @@ struct AxisMarkPreset
 ## Topics
 
 ### Type Properties
-- [static var aligned: AxisMarkPreset](axismarkpreset/aligned.md)
+- [static var aligned: AxisMarkPreset](./axismarkpreset/aligned.md)
   The aligned axis markers style.
-- [static var automatic: AxisMarkPreset](axismarkpreset/automatic.md)
+- [static var automatic: AxisMarkPreset](./axismarkpreset/automatic.md)
   Automatically determines the marker style.
-- [static var extended: AxisMarkPreset](axismarkpreset/extended.md)
+- [static var extended: AxisMarkPreset](./axismarkpreset/extended.md)
   The extended axis markers style.
-- [static var inset: AxisMarkPreset](axismarkpreset/inset.md)
+- [static var inset: AxisMarkPreset](./axismarkpreset/inset.md)
   The inset axis markers style.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [struct AxisMarkValues](axismarkvalues.md)
+### Supporting types
+- [struct AxisMarkValues](./axismarkvalues.md)
   Describes the values the axis markers will present (one for each value).
-- [struct AxisMarkPosition](axismarkposition.md)
+- [struct AxisMarkPosition](./axismarkposition.md)
   Describes the position of axis markers.
 
 

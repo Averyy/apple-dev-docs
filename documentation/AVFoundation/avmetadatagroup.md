@@ -1,7 +1,8 @@
 # AVMetadataGroup
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of metadata items associated with a timeline segment.
 
@@ -20,46 +21,51 @@ A collection of metadata items associated with a timeline segment.
 class AVMetadataGroup
 ```
 
+```objc
+@interface AVMetadataGroup : NSObject
+```
+
 ## Topics
 
 ### Inspecting the metadata group
-- [var items: [AVMetadataItem]](avmetadatagroup/items.md)
+- [var items: [AVMetadataItem]](./avmetadatagroup/items.md)
   The array of metadata items associated with the metadata group.
-- [var uniqueID: String?](avmetadatagroup/uniqueid.md)
+- [var uniqueID: String?](./avmetadatagroup/uniqueid.md)
   The unique identifier for the metadata group.
-- [var classifyingLabel: String?](avmetadatagroup/classifyinglabel.md)
+- [var classifyingLabel: String?](./avmetadatagroup/classifyinglabel.md)
   The classifying label associated with the metadata group.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVDateRangeMetadataGroup](avdaterangemetadatagroup.md)
-- [AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [AVDateRangeMetadataGroup](./avdaterangemetadatagroup.md)
+- [AVTimedMetadataGroup](./avtimedmetadatagroup.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+### Timed metadata
+- [Presenting chapter markers](./presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
-- [class AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [class AVTimedMetadataGroup](./avtimedmetadatagroup.md)
   A collection of metadata items that are valid for use during a specific time range.
-- [class AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
+- [class AVMutableTimedMetadataGroup](./avmutabletimedmetadatagroup.md)
   A mutable collection of metadata items that are valid for use during a specific time range.
-- [class AVDateRangeMetadataGroup](avdaterangemetadatagroup.md)
+- [class AVDateRangeMetadataGroup](./avdaterangemetadatagroup.md)
   A collection of metadata items that are valid for use within a specific date range.
-- [class AVMutableDateRangeMetadataGroup](avmutabledaterangemetadatagroup.md)
+- [class AVMutableDateRangeMetadataGroup](./avmutabledaterangemetadatagroup.md)
   A mutable collection of metadata items that are valid for use within a specific range of dates.
-- [class AVPlayerItemMediaDataCollector](avplayeritemmediadatacollector.md)
+- [class AVPlayerItemMediaDataCollector](./avplayeritemmediadatacollector.md)
   The abstract base for media data collectors.
-- [class AVPlayerItemMetadataCollector](avplayeritemmetadatacollector.md)
+- [class AVPlayerItemMetadataCollector](./avplayeritemmetadatacollector.md)
   An object used to capture the date range metadata defined for an HTTP Live Streaming asset.
 
 

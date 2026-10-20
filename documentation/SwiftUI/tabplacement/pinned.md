@@ -1,7 +1,8 @@
 # pinned
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pinned tab placement location.
 

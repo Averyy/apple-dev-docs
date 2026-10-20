@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct bootp_packet {
     ...
 };
@@ -17,9 +17,9 @@ struct bootp_packet {
 ## Topics
 
 ### Instance Properties
-- [bp_bootp](bootp_packet/3753849-bp_bootp.md)
-- [bp_ip](bootp_packet/3753850-bp_ip.md)
-- [bp_udp](bootp_packet/3753851-bp_udp.md)
+- [bp_bootp](./bootp_packet/api-3753849-bp_bootp.md)
+- [bp_ip](./bootp_packet/api-3753850-bp_ip.md)
+- [bp_udp](./bootp_packet/api-3753851-bp_udp.md)
 
 
 ---

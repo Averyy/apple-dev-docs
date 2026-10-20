@@ -1,7 +1,8 @@
 # XCTAssertNotIdentical(_:_:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that two values aren’t identical.
 
@@ -17,15 +18,16 @@ Compare two optional values of types that conform to `AnyObject`. The values are
 
 ## Parameters
 
-- `expression1`: An optional expression of type [`AnyObject`](https://developer.apple.com/documentation/swift/anyobject).
-- `expression2`: A second optional expression of type [`AnyObject`](https://developer.apple.com/documentation/swift/anyobject).
+- `expression1`: An optional expression of type [`AnyObject`](../Swift/anyobject.md).
+- `expression2`: A second optional expression of type [`AnyObject`](../Swift/anyobject.md).
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.
 
 ## See Also
 
-- [func XCTAssertIdentical(@autoclosure () throws -> AnyObject?, @autoclosure () throws -> AnyObject?, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertidentical(_:_:_:file:line:).md)
+### Tests for Identical Objects
+- [func XCTAssertIdentical(@autoclosure () throws -> AnyObject?, @autoclosure () throws -> AnyObject?, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertidentical%28_,_,_,file,line%29.md)
   Asserts that two values are identical.
 
 

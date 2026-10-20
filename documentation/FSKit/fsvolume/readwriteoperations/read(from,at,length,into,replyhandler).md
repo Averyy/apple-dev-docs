@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads the contents of the given file item.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func read(from item: FSItem, at offset: off_t, length: Int, into buffer: FSMutableFileDataBuffer, replyHandler reply: @escaping @Sendable (Int, (any Error)?) -> Void)
+```
+
+```swift
 func read(from item: FSItem, at offset: off_t, length: Int, into buffer: FSMutableFileDataBuffer) async throws -> Int
+```
+
+```objc
+- (void) readFromFile:(FSItem *) item offset:(off_t) offset length:(size_t) length intoBuffer:(FSMutableFileDataBuffer *) buffer replyHandler:(void (^)(size_t actuallyRead, NSError *error)) reply;
 ```
 
 #### Discussion
@@ -21,7 +30,7 @@ If the number of bytes requested exceeds the number of bytes available before th
 
 ## Parameters
 
-- `item`: The item from which to read. FSKit guarantees this item will be of type [`FSItem.ItemType.file`](fsitem/itemtype/file.md).
+- `item`: The item from which to read. FSKit guarantees this item will be of type [`FSItem.ItemType.file`](../../fsitem/itemtype/file.md).
 - `offset`: The offset in the file from which to start reading.
 - `length`: The number of bytes to read.
 - `buffer`: A buffer to receive the bytes read from the file.
@@ -29,9 +38,10 @@ If the number of bytes requested exceeds the number of bytes available before th
 
 ## See Also
 
-- [class FSMutableFileDataBuffer](fsmutablefiledatabuffer.md)
+### Reading and writing
+- [class FSMutableFileDataBuffer](../../fsmutablefiledatabuffer.md)
   A wrapper object for a data buffer.
-- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/readwriteoperations/write(contents:to:at:replyhandler:).md)
+- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (Int, (any Error)?) -> Void)](./write%28contents,to,at,replyhandler%29.md)
   Writes contents to the given file item.
 
 

@@ -1,7 +1,8 @@
 # ComputeGraphComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that drives a compute graph–based particle simulation on an entity.
 
@@ -30,72 +31,72 @@ entity.components.set(component)
 ## Topics
 
 ### Structures
-- [ComputeGraphComponent.UniformHandle](computegraphcomponent/uniformhandle.md)
+- [ComputeGraphComponent.UniformHandle](./computegraphcomponent/uniformhandle.md)
 ### Initializers
-- [init()](computegraphcomponent/init.md)
+- [init()](./computegraphcomponent/init%28%29.md)
   Creates a `ComputeGraphComponent` with no resource attached.
-- [init(resource: ComputeGraphResource)](computegraphcomponent/init(resource:).md)
+- [init(resource: ComputeGraphResource)](./computegraphcomponent/init%28resource%29.md)
   Creates a `ComputeGraphComponent` and immediately attaches the given resource.
 ### Instance Properties
-- [var materials: [ComputeNodeGraph.NodeID : any Material]](computegraphcomponent/materials.md)
+- [var materials: [ComputeNodeGraph.NodeID : any Material]](./computegraphcomponent/materials.md)
   The material used to render each graph output, keyed by output node identifier.
-- [var models: [ComputeNodeGraph.NodeID : ModelComponent]](computegraphcomponent/models.md)
+- [var models: [ComputeNodeGraph.NodeID : ModelComponent]](./computegraphcomponent/models.md)
   The model component used to render each graph output, keyed by output node identifier.
-- [var pipelines: ComputeNodeGraph.Pipelines?](computegraphcomponent/pipelines.md)
+- [var pipelines: ComputeNodeGraph.Pipelines?](./computegraphcomponent/pipelines.md)
   The compiled pipelines used to execute the simulation.
-- [var randomSeed: UInt32?](computegraphcomponent/randomseed.md)
+- [var randomSeed: UInt32?](./computegraphcomponent/randomseed.md)
   An optional fixed random seed for the simulation.
-- [var resource: ComputeGraphResource?](computegraphcomponent/resource.md)
+- [var resource: ComputeGraphResource?](./computegraphcomponent/resource.md)
   The compute graph resource that defines the simulation.
-- [var simulationRate: ComputeGraphSimulation.SimulationRate](computegraphcomponent/simulationrate.md)
+- [var simulationRate: ComputeGraphSimulation.SimulationRate](./computegraphcomponent/simulationrate.md)
   The rate at which the simulation updates.
-- [var state: ComputeGraphComponent.SimulationState](computegraphcomponent/state.md)
+- [var state: ComputeGraphComponent.SimulationState](./computegraphcomponent/state.md)
   The current playback state of the simulation.
 ### Instance Methods
-- [func fastForward()](computegraphcomponent/fastforward.md)
+- [func fastForward()](./computegraphcomponent/fastforward%28%29.md)
   Fast-forwards the simulation using the default prewarm behavior.
-- [func fastForward(stepCount: Int, stepDeltaTime: Float)](computegraphcomponent/fastforward(stepcount:stepdeltatime:).md)
+- [func fastForward(stepCount: Int, stepDeltaTime: Float)](./computegraphcomponent/fastforward%28stepcount,stepdeltatime%29.md)
   Advances the particle simulation by multiple steps in a single operation.
-- [func findBufferIndex(port: ComputeNodeGraph.Port.Address) -> Int?](computegraphcomponent/findbufferindex(port:).md)
-- [func firstBufferIndex(type: String) -> Int?](computegraphcomponent/firstbufferindex(type:).md)
-- [func isOutputEnabled(ComputeNodeGraph.NodeID) -> Bool](computegraphcomponent/isoutputenabled(_:).md)
+- [func findBufferIndex(port: ComputeNodeGraph.Port.Address) -> Int?](./computegraphcomponent/findbufferindex%28port%29.md)
+- [func firstBufferIndex(type: String) -> Int?](./computegraphcomponent/firstbufferindex%28type%29.md)
+- [func isOutputEnabled(ComputeNodeGraph.NodeID) -> Bool](./computegraphcomponent/isoutputenabled%28_%29.md)
   Reads the enabled state of an output identified by ID
-- [func pause()](computegraphcomponent/pause.md)
+- [func pause()](./computegraphcomponent/pause%28%29.md)
   Pauses the simulation, freezing it at its current state.
-- [func play()](computegraphcomponent/play.md)
+- [func play()](./computegraphcomponent/play%28%29.md)
   Resumes the simulation from a paused or stepped state.
-- [func replaceUniforms(Data)](computegraphcomponent/replaceuniforms(_:).md)
+- [func replaceUniforms(Data)](./computegraphcomponent/replaceuniforms%28_%29.md)
   Replaces the entire uniform buffer with the given data.
-- [func setBuffer((any MTLBuffer)?, bufferOffset: Int, elementCount: Int?, at: Int)](computegraphcomponent/setbuffer(_:bufferoffset:elementcount:at:).md)
+- [func setBuffer((any MTLBuffer)?, bufferOffset: Int, elementCount: Int?, at: Int)](./computegraphcomponent/setbuffer%28_,bufferoffset,elementcount,at%29.md)
   Binds a Metal buffer to a parameter.
-- [func setOutputEnabled(ComputeNodeGraph.NodeID, enabled: Bool)](computegraphcomponent/setoutputenabled(_:enabled:).md)
+- [func setOutputEnabled(ComputeNodeGraph.NodeID, enabled: Bool)](./computegraphcomponent/setoutputenabled%28_,enabled%29.md)
   Sets the enable state of an output identified by ID
-- [func setTexture((any MTLTexture)?, at: Int)](computegraphcomponent/settexture(_:at:).md)
+- [func setTexture((any MTLTexture)?, at: Int)](./computegraphcomponent/settexture%28_,at%29.md)
   Binds a Metal texture to a parameter at the given index.
-- [func setTexture((any MTLTexture)?, port: ComputeNodeGraph.Port.Address) -> Bool](computegraphcomponent/settexture(_:port:).md)
+- [func setTexture((any MTLTexture)?, port: ComputeNodeGraph.Port.Address) -> Bool](./computegraphcomponent/settexture%28_,port%29.md)
   Binds a Metal texture to a parameter identified by its port address.
-- [func setUniformData(RawSpan, for: ComputeGraphComponent.UniformHandle)](computegraphcomponent/setuniformdata(_:for:).md)
+- [func setUniformData(RawSpan, for: ComputeGraphComponent.UniformHandle)](./computegraphcomponent/setuniformdata%28_,for%29.md)
   Sets the value of a uniform to raw bytes.
-- [func setUniformValue<V>(V, for: ComputeGraphComponent.UniformHandle)](computegraphcomponent/setuniformvalue(_:for:).md)
+- [func setUniformValue<V>(V, for: ComputeGraphComponent.UniformHandle)](./computegraphcomponent/setuniformvalue%28_,for%29.md)
   Sets the value of a uniform to a `BitwiseCopyable` typed value.
-- [func setUniformValue<V>(V, named: String) -> Bool](computegraphcomponent/setuniformvalue(_:named:).md)
+- [func setUniformValue<V>(V, named: String) -> Bool](./computegraphcomponent/setuniformvalue%28_,named%29.md)
   Sets the value of a named uniform to a `BitwiseCopyable` typed value.
-- [func spawn(element: ElementSpawnParameters, in: ComputeNodeGraph.NodeID?)](computegraphcomponent/spawn(element:in:).md)
+- [func spawn(element: ElementSpawnParameters, in: ComputeNodeGraph.NodeID?)](./computegraphcomponent/spawn%28element,in%29.md)
   Spawns a new element in the particle simulation.
-- [func spawn(elements: [ElementSpawnParameters], in: ComputeNodeGraph.NodeID?)](computegraphcomponent/spawn(elements:in:).md)
+- [func spawn(elements: [ElementSpawnParameters], in: ComputeNodeGraph.NodeID?)](./computegraphcomponent/spawn%28elements,in%29.md)
   Spawns elements into the particle simulation.
-- [func step()](computegraphcomponent/step.md)
+- [func step()](./computegraphcomponent/step%28%29.md)
   Advances the simulation by a single frame, then pauses.
-- [func uniformHandle(named: String) -> ComputeGraphComponent.UniformHandle?](computegraphcomponent/uniformhandle(named:).md)
+- [func uniformHandle(named: String) -> ComputeGraphComponent.UniformHandle?](./computegraphcomponent/uniformhandle%28named%29.md)
   Returns a handle for the named uniform.
 ### Enumerations
-- [ComputeGraphComponent.SimulationState](computegraphcomponent/simulationstate.md)
+- [ComputeGraphComponent.SimulationState](./computegraphcomponent/simulationstate.md)
   The playback state of a compute graph simulation.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 
 ---

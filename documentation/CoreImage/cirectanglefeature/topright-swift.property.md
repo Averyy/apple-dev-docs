@@ -1,7 +1,8 @@
 # topRight
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The upper-right corner of the detected rectangle, in image coordinates.
 
@@ -10,7 +11,7 @@ The upper-right corner of the detected rectangle, in image coordinates.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The upper-right corner of the detected rectangle, in image coordinates.
 var topRight: CGPoint { get }
 ```
 
+```objc
+@property (readonly) CGPoint topRight;
+```
+
 ## See Also
 
-- [var bottomLeft: CGPoint](cirectanglefeature/bottomleft-swift.property.md)
+### Identifying the Corners of a Detected Rectangle
+- [var bottomLeft: CGPoint](./bottomleft-swift.property.md)
   The lower-left corner of the detected rectangle, in image coordinates.
-- [var bottomRight: CGPoint](cirectanglefeature/bottomright-swift.property.md)
+- [var bottomRight: CGPoint](./bottomright-swift.property.md)
   The lower-right corner of the detected rectangle, in image coordinates.
-- [var topLeft: CGPoint](cirectanglefeature/topleft-swift.property.md)
+- [var topLeft: CGPoint](./topleft-swift.property.md)
   The upper-left corner of the detected rectangle, in image coordinates.
 
 

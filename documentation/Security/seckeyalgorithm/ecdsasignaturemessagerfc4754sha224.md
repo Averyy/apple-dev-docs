@@ -1,7 +1,8 @@
 # ecdsaSignatureMessageRFC4754SHA224
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An algorithm for generating message signatures by calculating and signing the SHA224 message digest.
 
@@ -18,6 +19,10 @@ An algorithm for generating message signatures by calculating and signing the SH
 
 ```swift
 static let ecdsaSignatureMessageRFC4754SHA224: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDSASignatureMessageRFC4754SHA224;
 ```
 
 

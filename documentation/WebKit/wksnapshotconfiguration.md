@@ -1,7 +1,8 @@
 # WKSnapshotConfiguration
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration data to use when generating an image from a web view’s contents.
 
@@ -19,38 +20,43 @@ The configuration data to use when generating an image from a web view’s conte
 class WKSnapshotConfiguration
 ```
 
+```objc
+@interface WKSnapshotConfiguration : NSObject
+```
+
 #### Overview
 
-Create a [`WKSnapshotConfiguration`](wksnapshotconfiguration.md) object when you want to generate an image based on your web view’s content. Use this object to specify the portion of the web view to capture and the capture behavior. To generate the snapshot, pass the configuration object to the [`takeSnapshot(with:completionHandler:)`](wkwebview/takesnapshot(with:completionhandler:).md) method of [`WKWebView`](wkwebview.md), which returns a platform-native image for you to use.
+Create a [`WKSnapshotConfiguration`](./wksnapshotconfiguration.md) object when you want to generate an image based on your web view’s content. Use this object to specify the portion of the web view to capture and the capture behavior. To generate the snapshot, pass the configuration object to the [`takeSnapshot(with:completionHandler:)`](./wkwebview/takesnapshot%28with,completionhandler%29.md) method of [`WKWebView`](./wkwebview.md), which returns a platform-native image for you to use.
 
 ## Topics
 
 ### Specifying the snapshot dimensions
-- [var rect: CGRect](wksnapshotconfiguration/rect.md)
+- [var rect: CGRect](./wksnapshotconfiguration/rect.md)
   The portion of your web view to capture, specified as a rectangle in the view’s coordinate system.
-- [var snapshotWidth: NSNumber?](wksnapshotconfiguration/snapshotwidth.md)
+- [var snapshotWidth: NSNumber?](./wksnapshotconfiguration/snapshotwidth.md)
   The width of the captured image, in points.
 ### Configuring the capture behavior
-- [var afterScreenUpdates: Bool](wksnapshotconfiguration/afterscreenupdates.md)
+- [var afterScreenUpdates: Bool](./wksnapshotconfiguration/afterscreenupdates.md)
   A Boolean value that indicates whether to take the snapshot after incorporating any pending screen updates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKPDFConfiguration](wkpdfconfiguration.md)
+### Snapshots
+- [class WKPDFConfiguration](./wkpdfconfiguration.md)
   The configuration data to use when generating a PDF representation of a web view’s contents.
 
 

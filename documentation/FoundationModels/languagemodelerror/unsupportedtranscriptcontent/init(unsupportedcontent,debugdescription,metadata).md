@@ -1,7 +1,8 @@
 # init(unsupportedContent:debugDescription:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates information describing transcript content the model can’t process.
 

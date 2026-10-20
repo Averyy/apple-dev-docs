@@ -1,7 +1,8 @@
 # attributeDeclaration(forName:elementName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the DTD node representing an attribute-list declaration for a given attribute and its element.
 
@@ -15,9 +16,13 @@ Returns the DTD node representing an attribute-list declaration for a given attr
 func attributeDeclaration(forName name: String, elementName: String) -> XMLDTDNode?
 ```
 
+```objc
+- (NSXMLDTDNode *) attributeDeclarationForName:(NSString *) name elementName:(NSString *) elementName;
+```
+
 #### Return Value
 
-An autoreleased [`XMLDTDNode`](xmldtdnode.md) object, or `nil` if there is no matching attribute-list declaration.
+An autoreleased [`XMLDTDNode`](../xmldtdnode.md) object, or `nil` if there is no matching attribute-list declaration.
 
 #### Discussion
 
@@ -36,13 +41,14 @@ For example, in the attribute-list declaration:
 
 ## See Also
 
-- [class func predefinedEntityDeclaration(forName: String) -> XMLDTDNode?](xmldtd/predefinedentitydeclaration(forname:).md)
+### Getting DTD Nodes by Name
+- [class func predefinedEntityDeclaration(forName: String) -> XMLDTDNode?](./predefinedentitydeclaration%28forname%29.md)
   Returns a DTD node representing the predefined entity declaration with the specified name.
-- [func elementDeclaration(forName: String) -> XMLDTDNode?](xmldtd/elementdeclaration(forname:).md)
+- [func elementDeclaration(forName: String) -> XMLDTDNode?](./elementdeclaration%28forname%29.md)
   Returns the DTD node representing an element declaration for a specified element.
-- [func entityDeclaration(forName: String) -> XMLDTDNode?](xmldtd/entitydeclaration(forname:).md)
+- [func entityDeclaration(forName: String) -> XMLDTDNode?](./entitydeclaration%28forname%29.md)
   Returns the DTD node representing the entity declaration for a specified entity.
-- [func notationDeclaration(forName: String) -> XMLDTDNode?](xmldtd/notationdeclaration(forname:).md)
+- [func notationDeclaration(forName: String) -> XMLDTDNode?](./notationdeclaration%28forname%29.md)
   Returns the DTD node representing the notation declaration identified by the specified notation name.
 
 

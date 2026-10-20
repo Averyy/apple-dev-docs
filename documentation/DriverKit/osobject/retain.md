@@ -1,19 +1,20 @@
 # retain
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retains the OSObject instance
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void retain() const;
 ```
 
@@ -23,12 +24,13 @@ Increases the retain count of the instance by one.
 
 ## See Also
 
-- [init](osobject/init.md)
-- [release](osobject/release.md)
+### Managing the Object Lifecycle
+- [init](./init.md)
+- [release](./release.md)
   Releases the OSObject instance
-- [free](osobject/free.md)
-- [OSObjectPtr](osobjectptr.md)
-- [OSObjectRef](osobjectref.md)
+- [free](./free.md)
+- [OSObjectPtr](../osobjectptr.md)
+- [OSObjectRef](../osobjectref.md)
 
 
 ---

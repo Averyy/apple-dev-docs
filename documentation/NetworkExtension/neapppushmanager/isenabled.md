@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property you use to toggle enabling the configuration.
 
@@ -17,15 +18,20 @@ A property you use to toggle enabling the configuration.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The framework sets this value to NO when your app saves a configuration that overlaps with this configuration. This overlap occurs when a new [`NEAppPushManager`](neapppushmanager.md) saves a configuration with a [`matchSSIDs`](neapppushmanager/matchssids.md) list that contains an SSID which is also a member of this manager’s SSID list.
+The framework sets this value to NO when your app saves a configuration that overlaps with this configuration. This overlap occurs when a new [`NEAppPushManager`](../neapppushmanager.md) saves a configuration with a [`matchSSIDs`](./matchssids.md) list that contains an SSID which is also a member of this manager’s SSID list.
 
 ## See Also
 
-- [var isActive: Bool](neapppushmanager/isactive.md)
+### Inspecting manager properties
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether a configuration is in use.
-- [var localizedDescription: String?](neapppushmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string that contains the localized description of the app push manager.
 
 

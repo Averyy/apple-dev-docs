@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:didEndDisplaying:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the sidebar has finished displaying the row representing the specified `tab`
 
@@ -15,6 +16,10 @@ Notifies the delegate when the sidebar has finished displaying the row represent
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, didEndDisplaying tab: UITab)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar didEndDisplayingTab:(UITab *) tab;
 ```
 
 

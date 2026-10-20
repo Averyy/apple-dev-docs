@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the style
 

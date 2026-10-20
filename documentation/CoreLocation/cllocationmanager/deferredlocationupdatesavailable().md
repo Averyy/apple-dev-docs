@@ -1,15 +1,18 @@
 # deferredLocationUpdatesAvailable()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether the device supports deferred location updates.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
+- iOS 6.0+ - Deprecated in 13.0
+- iPadOS 6.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.15
+
+> **Deprecated**: You can remove calls to this method
 
 ## Declaration
 
@@ -17,9 +20,13 @@ Returns a Boolean value indicating whether the device supports deferred location
 class func deferredLocationUpdatesAvailable() -> Bool
 ```
 
+```objc
++ (BOOL) deferredLocationUpdatesAvailable;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports deferred location updates or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](../../Swift/true.md) if the device supports deferred location updates or [`false`](../../Swift/false.md) if it does not.
 
 #### Discussion
 
@@ -29,27 +36,28 @@ Deferred location updates require the presence of GPS hardware and may not be su
 
 ## See Also
 
-- [func startMonitoring(for: CLRegion)](cllocationmanager/startmonitoring(for:).md)
+### Methods
+- [func startMonitoring(for: CLRegion)](./startmonitoring%28for%29.md)
   Starts monitoring the specified region.
-- [func stopMonitoring(for: CLRegion)](cllocationmanager/stopmonitoring(for:).md)
+- [func stopMonitoring(for: CLRegion)](./stopmonitoring%28for%29.md)
   Stops monitoring the specified region.
-- [class func regionMonitoringAvailable() -> Bool](cllocationmanager/regionmonitoringavailable.md)
+- [class func regionMonitoringAvailable() -> Bool](./regionmonitoringavailable%28%29.md)
   Returns a Boolean value indicating whether region monitoring is supported on the current device.
-- [class func regionMonitoringEnabled() -> Bool](cllocationmanager/regionmonitoringenabled.md)
+- [class func regionMonitoringEnabled() -> Bool](./regionmonitoringenabled%28%29.md)
   Returns a Boolean value indicating whether region monitoring is currently enabled.
-- [class func authorizationStatus() -> CLAuthorizationStatus](cllocationmanager/authorizationstatus.md)
+- [class func authorizationStatus() -> CLAuthorizationStatus](./authorizationstatus%28%29.md)
   Returns the app’s authorization status for using location services.
-- [func startMonitoring(for: CLRegion, desiredAccuracy: CLLocationAccuracy)](cllocationmanager/startmonitoring(for:desiredaccuracy:).md)
+- [func startMonitoring(for: CLRegion, desiredAccuracy: CLLocationAccuracy)](./startmonitoring%28for,desiredaccuracy%29.md)
   Starts monitoring the specified region for boundary crossings.
-- [func requestState(for: CLRegion)](cllocationmanager/requeststate(for:).md)
+- [func requestState(for: CLRegion)](./requeststate%28for%29.md)
   Retrieves the state of a region asynchronously.
-- [func startRangingBeacons(in: CLBeaconRegion)](cllocationmanager/startrangingbeacons(in:).md)
+- [func startRangingBeacons(in: CLBeaconRegion)](./startrangingbeacons%28in%29.md)
   Starts the delivery of notifications for the specified beacon region.
-- [func stopRangingBeacons(in: CLBeaconRegion)](cllocationmanager/stoprangingbeacons(in:).md)
+- [func stopRangingBeacons(in: CLBeaconRegion)](./stoprangingbeacons%28in%29.md)
   Stops the delivery of notifications for the specified beacon region.
-- [func allowDeferredLocationUpdates(untilTraveled: CLLocationDistance, timeout: TimeInterval)](cllocationmanager/allowdeferredlocationupdates(untiltraveled:timeout:).md)
+- [func allowDeferredLocationUpdates(untilTraveled: CLLocationDistance, timeout: TimeInterval)](./allowdeferredlocationupdates%28untiltraveled,timeout%29.md)
   Asks the location manager to defer the delivery of location updates until the specified criteria are met.
-- [func disallowDeferredLocationUpdates()](cllocationmanager/disallowdeferredlocationupdates.md)
+- [func disallowDeferredLocationUpdates()](./disallowdeferredlocationupdates%28%29.md)
   Cancels the deferral of location updates for this app.
 
 

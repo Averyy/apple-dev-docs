@@ -1,7 +1,8 @@
 # requiresFelicaSecureElement
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the payment pass requires the Felica Secure Element.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the payment pass requires the Felica Secu
 - iOS 10.1+
 - iPadOS 10.1+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the payment pass requires the Felica Secu
 var requiresFelicaSecureElement: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL requiresFelicaSecureElement;
+```
+
 #### Discussion
 
-This property can be used as a filter to determine which cards are shown in the [`PKAddPaymentPassViewController`](pkaddpaymentpassviewcontroller.md) class’s intro screen. The property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+This property can be used as a filter to determine which cards are shown in the [`PKAddPaymentPassViewController`](../pkaddpaymentpassviewcontroller.md) class’s intro screen. The property defaults to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var paymentNetwork: PKPaymentNetwork?](pkaddpaymentpassrequestconfiguration/paymentnetwork.md)
+### Filtering pass libraries
+- [var paymentNetwork: PKPaymentNetwork?](./paymentnetwork.md)
   The payment network.
-- [var primaryAccountIdentifier: String?](pkaddpaymentpassrequestconfiguration/primaryaccountidentifier.md)
+- [var primaryAccountIdentifier: String?](./primaryaccountidentifier.md)
   A primary account identifier, used to filter out pass libraries.
 
 

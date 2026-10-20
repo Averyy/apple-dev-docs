@@ -1,7 +1,8 @@
 # purgeConditions
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The conditions under which the system may purge specialized assets.
 

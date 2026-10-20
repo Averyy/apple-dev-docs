@@ -1,7 +1,8 @@
 # setSpeakHeader(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setSpeakHeader(_ speakHeader: String!)
+```
+
+```objc
+- (void) setSpeakHeader:(NSString *) speakHeader;
 ```
 
 

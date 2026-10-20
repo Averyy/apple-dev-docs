@@ -1,7 +1,8 @@
 # draw
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The “draw” variable value mode. Changes the drawn length of each variable layer to either based on how its range relates to the current value.
 

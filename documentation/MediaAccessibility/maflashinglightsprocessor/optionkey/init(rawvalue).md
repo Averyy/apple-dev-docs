@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Media Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an options structure with the specified raw value.
 
@@ -21,7 +22,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](maflashinglightsprocessor/optionkey/init(_:).md)
+### Creating an options structure
+- [init(String)](./init%28_%29.md)
   Creates an options structure.
 
 

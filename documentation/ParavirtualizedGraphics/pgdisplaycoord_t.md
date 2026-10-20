@@ -1,7 +1,8 @@
 # PGDisplayCoord_t
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Coordinates that describe sizes or offsets within a 2D array of pixels.
 
@@ -15,32 +16,37 @@ Coordinates that describe sizes or offsets within a 2D array of pixels.
 struct PGDisplayCoord_t
 ```
 
+```c
+typedef struct { ... } PGDisplayCoord_t;
+```
+
 ## Topics
 
 ### Creating Display Coordinates
-- [init()](pgdisplaycoord_t/init.md)
+- [init()](./pgdisplaycoord_t/init%28%29.md)
   Initializes a default display coordinate.
-- [init(x: UInt16, y: UInt16)](pgdisplaycoord_t/init(x:y:).md)
+- [init(x: UInt16, y: UInt16)](./pgdisplaycoord_t/init%28x,y%29.md)
   Initializes a coordinate.
 ### Inspecting Coordinate Values
-- [var x: UInt16](pgdisplaycoord_t/x.md)
+- [var x: UInt16](./pgdisplaycoord_t/x.md)
   The horizontal coordinate value.
-- [var y: UInt16](pgdisplaycoord_t/y.md)
+- [var y: UInt16](./pgdisplaycoord_t/y.md)
   The vertical coordinate value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class PGDisplayDescriptor](pgdisplaydescriptor.md)
+### Displays
+- [class PGDisplayDescriptor](./pgdisplaydescriptor.md)
   A descriptor for a virtual display.
-- [protocol PGDisplay](pgdisplay.md)
+- [protocol PGDisplay](./pgdisplay.md)
   An object that provides display functionality to the guest operating system in a way that the host-side virtual machine app can intercept.
-- [class PGDisplayMode](pgdisplaymode.md)
+- [class PGDisplayMode](./pgdisplaymode.md)
   A description of a supported display mode.
 
 

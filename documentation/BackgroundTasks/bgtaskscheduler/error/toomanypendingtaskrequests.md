@@ -1,7 +1,8 @@
 # tooManyPendingTaskRequests
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A task scheduling error that indicates there are too many pending tasks of the type requested.
 
@@ -24,11 +25,12 @@ Try canceling some existing task requests and then resubmit the request that fai
 
 ## See Also
 
-- [BGTaskScheduler.Error.Code](bgtaskscheduler/error/code.md)
+### Getting the error codes
+- [BGTaskScheduler.Error.Code](./code.md)
   An enumeration of the task scheduling errors.
-- [static var notPermitted: BGTaskScheduler.Error.Code](bgtaskscheduler/error/notpermitted.md)
+- [static var notPermitted: BGTaskScheduler.Error.Code](./notpermitted.md)
   A task scheduling error that indicates the app isn’t permitted to launch the task.
-- [static var unavailable: BGTaskScheduler.Error.Code](bgtaskscheduler/error/unavailable.md)
+- [static var unavailable: BGTaskScheduler.Error.Code](./unavailable.md)
   A task scheduling error that indicates the app or extension can’t schedule background work.
 
 

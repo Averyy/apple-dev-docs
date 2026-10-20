@@ -1,7 +1,8 @@
 # ASAuthorizationResult.passkeyAccountCreation(_:)
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A newly created passkey credential and associated user information resulting from an account creation request.
 

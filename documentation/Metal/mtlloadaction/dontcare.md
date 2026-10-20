@@ -1,7 +1,8 @@
 # MTLLoadAction.dontCare
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU has permission to discard the existing contents of the attachment at the start of the render pass, replacing them with arbitrary data.
 
@@ -10,7 +11,7 @@ The GPU has permission to discard the existing contents of the attachment at the
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ The GPU has permission to discard the existing contents of the attachment at the
 case dontCare
 ```
 
+```c
+MTLLoadActionDontCare
+```
+
 ## Mentions
 
-- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](../setting-load-and-store-actions.md)
 
 ## See Also
 
-- [MTLLoadAction.load](mtlloadaction/load.md)
+### Load actions
+- [MTLLoadAction.load](./load.md)
   The GPU preserves the existing contents of the attachment at the start of the render pass.
-- [MTLLoadAction.clear](mtlloadaction/clear.md)
+- [MTLLoadAction.clear](./clear.md)
   The GPU writes a value to every pixel in the attachment at the start of the render pass.
 
 

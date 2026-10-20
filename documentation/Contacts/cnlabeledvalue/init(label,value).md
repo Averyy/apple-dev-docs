@@ -1,7 +1,8 @@
 # init(label:value:)
 
 **Framework**: Contacts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new labeled value identifier.
 
@@ -19,6 +20,10 @@ Returns a new labeled value identifier.
 init(label: String?, value: ValueType)
 ```
 
+```objc
+- (instancetype) initWithLabel:(NSString *) label value:(ValueType) value;
+```
+
 #### Return Value
 
 A new labeled value object.
@@ -26,7 +31,7 @@ A new labeled value object.
 ## Parameters
 
 - `label`: A string value for the label portion of the object, or `nil` if the value doesn’t have a label.
-- `value`: A value for the labeled value object. For valid values, see [`CNContact`](cncontact.md) properties that are arrays of labeled value objects.
+- `value`: A value for the labeled value object. For valid values, see [`CNContact`](../cncontact.md) properties that are arrays of labeled value objects.
 
 
 ---

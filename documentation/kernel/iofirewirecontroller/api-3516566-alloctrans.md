@@ -1,14 +1,15 @@
 # allocTrans
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 AsyncPendingTrans * allocTrans(IOFWAsyncCommand *cmd, IOFWCommand *altcmd);
 ```
 

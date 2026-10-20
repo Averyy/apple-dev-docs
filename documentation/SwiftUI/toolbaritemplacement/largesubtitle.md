@@ -1,7 +1,8 @@
 # largeSubtitle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for items in the navigation bar’s large title subtitle area.
 

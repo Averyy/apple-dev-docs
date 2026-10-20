@@ -1,7 +1,8 @@
 # start(completion:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the sound event and runs the specified code on completion.
 
@@ -16,30 +17,43 @@ Invokes the sound event and runs the specified code on completion.
 ## Declaration
 
 ```swift
+func start(completion handler: (@Sendable (PHASESoundEvent.StartHandlerReason) -> Void)? = nil)
+```
+
+```swift
 func start() async -> PHASESoundEvent.StartHandlerReason
+```
+
+```objc
+- (void) startWithCompletion:(void (^)(PHASESoundEventStartHandlerReason reason)) handler;
 ```
 
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func start() async -> PHASESoundEvent.StartHandlerReason
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func start() async -> PHASESoundEvent.StartHandlerReason
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 This function returns immediately after instructing the engine to invoke the sound event. If a problem occurs, the function provides an error.
 
 The sound event’s audio plays immediately if the app prepares the sound event in advance. Otherwise, the sound event begins preparing and then plays after preparation completes.
 
-When the sound event plays or errors out, the framework invokes `completionHandler`, passing in a [`PHASESoundEvent.StartHandlerReason`](phasesoundevent/starthandlerreason.md) that explains the reason for the invocation.
+When the sound event plays or errors out, the framework invokes `completionHandler`, passing in a [`PHASESoundEvent.StartHandlerReason`](./starthandlerreason.md) that explains the reason for the invocation.
 
-> ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](phasesoundevent/start(completion:).md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
+> ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](./start%28completion%29.md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
 
 ## See Also
 
-- [PHASESoundEvent.StartHandlerReason](phasesoundevent/starthandlerreason.md)
+### Starting Playback
+- [PHASESoundEvent.StartHandlerReason](./starthandlerreason.md)
   Indicates the status after starting a sound event.
 
 

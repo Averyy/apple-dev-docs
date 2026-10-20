@@ -1,7 +1,8 @@
 # didEndSheet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didEndSheet: NotificationCenter.BaseMessageIdentifier<NSWindow.DidEndSheetMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidEndSheetMessage>`.
 
 
 ---

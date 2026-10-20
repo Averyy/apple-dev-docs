@@ -1,7 +1,8 @@
 # AppClipAdvancedExperience.Relationships.AppClip.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related App Clips resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related App Clips resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperience.Relationships.AppClip.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipAdvancedExperience.Relationships.AppClip.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Clips resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClips`
 
 
 ---

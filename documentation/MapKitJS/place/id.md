@@ -1,7 +1,8 @@
 # id
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Place ID referencing a feature.
 
@@ -10,17 +11,18 @@ The Place ID referencing a feature.
 
 ## Declaration
 
-```swift
+```
 id: string | null;
 ```
 
 #### Discussion
 
-For information about identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
+For information about identifiers, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 
 ## See Also
 
-- [alternateIds](place/alternateids.md)
+### Place IDs
+- [alternateIds](./alternateids.md)
   A list of alternate Place IDs referencing a feature.
 
 

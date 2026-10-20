@@ -1,12 +1,13 @@
 # browser(_:numberOfRowsInColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of rows of data in the specified column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Returns the number of rows of data in the specified column.
 optional func browser(_ sender: NSBrowser, numberOfRowsInColumn column: Int) -> Int
 ```
 
+```objc
+- (NSInteger) browser:(NSBrowser *) sender numberOfRowsInColumn:(NSInteger) column;
+```
+
 #### Return Value
 
 The number of rows of data.
 
 #### Discussion
 
-Either this method or [`browser(_:createRowsForColumn:in:)`](nsbrowserdelegate/browser(_:createrowsforcolumn:in:).md) must be implemented, but not both.
+Either this method or [`browser(_:createRowsForColumn:in:)`](./browser%28_,createrowsforcolumn,in%29.md) must be implemented, but not both.
 
 ## Parameters
 
@@ -30,13 +35,15 @@ Either this method or [`browser(_:createRowsForColumn:in:)`](nsbrowserdelegate/b
 
 ## See Also
 
-- [func browser(NSBrowser, willDisplayCell: Any, atRow: Int, column: Int)](nsbrowserdelegate/browser(_:willdisplaycell:atrow:column:).md)
+### Related Documentation
+- [func browser(NSBrowser, willDisplayCell: Any, atRow: Int, column: Int)](./browser%28_,willdisplaycell,atrow,column%29.md)
   Gives the delegate the opportunity to modify the specified cell at the given row and column location before the browser displays it.
-- [func browser(NSBrowser, isColumnValid: Int) -> Bool](nsbrowserdelegate/browser(_:iscolumnvalid:).md)
+### Getting Browser Information
+- [func browser(NSBrowser, isColumnValid: Int) -> Bool](./browser%28_,iscolumnvalid%29.md)
   Returns whether the contents of the specified column are valid.
-- [func browser(NSBrowser, numberOfChildrenOfItem: Any?) -> Int](nsbrowserdelegate/browser(_:numberofchildrenofitem:).md)
+- [func browser(NSBrowser, numberOfChildrenOfItem: Any?) -> Int](./browser%28_,numberofchildrenofitem%29.md)
   Asks the delegate for the number of children the given item has.
-- [func browser(NSBrowser, titleOfColumn: Int) -> String?](nsbrowserdelegate/browser(_:titleofcolumn:).md)
+- [func browser(NSBrowser, titleOfColumn: Int) -> String?](./browser%28_,titleofcolumn%29.md)
   Asks the delegate for the title to display above the specified column.
 
 

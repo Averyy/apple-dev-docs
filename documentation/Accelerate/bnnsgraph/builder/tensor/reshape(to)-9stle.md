@@ -1,7 +1,8 @@
 # reshape(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a reshape operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a reshape operation to the current graph.
 ```swift
 func reshape(to shape: [Int]) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # InferenceValue.Kind
 
 **Framework**: Core AI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of data an inference value contains.
 
@@ -21,22 +22,23 @@ enum Kind
 ## Topics
 
 ### Defining value kinds
-- [InferenceValue.Kind.image](inferencevalue/kind-swift.enum/image.md)
+- [InferenceValue.Kind.image](./kind-swift.enum/image.md)
   A pixel buffer image value.
-- [InferenceValue.Kind.ndArray](inferencevalue/kind-swift.enum/ndarray.md)
+- [InferenceValue.Kind.ndArray](./kind-swift.enum/ndarray.md)
   A multidimensional array value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [InferenceValue.Descriptor](inferencevalue/descriptor.md)
+### Describing values
+- [InferenceValue.Descriptor](./descriptor.md)
   A description of the type and shape of an inference value.
 
 

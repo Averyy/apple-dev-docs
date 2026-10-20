@@ -1,7 +1,8 @@
 # time
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time measurement representing the time goal.
 
@@ -20,11 +21,12 @@ var time: Measurement<UnitDuration> { get set }
 
 ## See Also
 
-- [var activity: HKWorkoutActivityType](pacerworkout/activity.md)
+### Accessing workout data
+- [var activity: HKWorkoutActivityType](./activity.md)
   The workout activity type.
-- [var location: HKWorkoutSessionLocationType](pacerworkout/location.md)
+- [var location: HKWorkoutSessionLocationType](./location.md)
   The workout location.
-- [var distance: Measurement<UnitLength>](pacerworkout/distance.md)
+- [var distance: Measurement<UnitLength>](./distance.md)
   A length measurement representing the distance goal.
 
 

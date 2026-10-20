@@ -1,7 +1,8 @@
 # subPayloads
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The individual constituent payloads, if the receiver represents a concatenated payload.
 
@@ -18,6 +19,10 @@ The individual constituent payloads, if the receiver represents a concatenated p
 
 ```swift
 var subPayloads: [MTRSetupPayload] { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSArray<MTRSetupPayload *> * subPayloads;
 ```
 
 

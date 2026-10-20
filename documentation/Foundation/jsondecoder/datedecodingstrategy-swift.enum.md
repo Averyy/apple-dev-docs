@@ -1,7 +1,8 @@
 # JSONDecoder.DateDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The strategies available for formatting dates when decoding them from JSON.
 
@@ -23,31 +24,32 @@ enum DateDecodingStrategy
 ## Topics
 
 ### Default Formats
-- [JSONDecoder.DateDecodingStrategy.deferredToDate](jsondecoder/datedecodingstrategy-swift.enum/deferredtodate.md)
+- [JSONDecoder.DateDecodingStrategy.deferredToDate](./datedecodingstrategy-swift.enum/deferredtodate.md)
   The strategy that uses formatting from the Date structure.
 ### Standard Formats
-- [JSONDecoder.DateDecodingStrategy.iso8601](jsondecoder/datedecodingstrategy-swift.enum/iso8601.md)
+- [JSONDecoder.DateDecodingStrategy.iso8601](./datedecodingstrategy-swift.enum/iso8601.md)
   The strategy that formats dates according to the ISO 8601 standard.
 ### Custom Formats
-- [JSONDecoder.DateDecodingStrategy.formatted(_:)](jsondecoder/datedecodingstrategy-swift.enum/formatted(_:).md)
+- [JSONDecoder.DateDecodingStrategy.formatted(_:)](./datedecodingstrategy-swift.enum/formatted%28_%29.md)
   The strategy that defers formatting settings to a supplied date formatter.
-- [JSONDecoder.DateDecodingStrategy.custom(_:)](jsondecoder/datedecodingstrategy-swift.enum/custom(_:).md)
+- [JSONDecoder.DateDecodingStrategy.custom(_:)](./datedecodingstrategy-swift.enum/custom%28_%29.md)
   The strategy that formats custom dates by calling a user-defined function.
 ### Epoch Formats
-- [JSONDecoder.DateDecodingStrategy.millisecondsSince1970](jsondecoder/datedecodingstrategy-swift.enum/millisecondssince1970.md)
+- [JSONDecoder.DateDecodingStrategy.millisecondsSince1970](./datedecodingstrategy-swift.enum/millisecondssince1970.md)
   The strategy that decodes dates in terms of milliseconds since midnight UTC on January 1st, 1970.
-- [JSONDecoder.DateDecodingStrategy.secondsSince1970](jsondecoder/datedecodingstrategy-swift.enum/secondssince1970.md)
+- [JSONDecoder.DateDecodingStrategy.secondsSince1970](./datedecodingstrategy-swift.enum/secondssince1970.md)
   The strategy that decodes dates in terms of seconds since midnight UTC on January 1st, 1970.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dateDecodingStrategy: JSONDecoder.DateDecodingStrategy](jsondecoder/datedecodingstrategy-swift.property.md)
+### Decoding Dates
+- [var dateDecodingStrategy: JSONDecoder.DateDecodingStrategy](./datedecodingstrategy-swift.property.md)
   The strategy used when decoding dates from part of a JSON object.
 
 

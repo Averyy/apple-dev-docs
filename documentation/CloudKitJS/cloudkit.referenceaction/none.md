@@ -1,7 +1,8 @@
 # NONE
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Deletes a source record when the target record is deleted.
 
@@ -10,17 +11,18 @@ Deletes a source record when the target record is deleted.
 
 ## Declaration
 
-```swift
+```
 const String NONE;
 ```
 
 #### Discussion
 
-See [`CKRecord.ReferenceAction`](https://developer.apple.com/documentation/cloudkit/ckrecord/referenceaction) in CloudKit Framework Reference.
+See [`CKRecord.ReferenceAction`](../../CloudKit/ckrecord/referenceaction.md) in CloudKit Framework Reference.
 
 ## See Also
 
-- [DELETE_SELF](cloudkit.referenceaction/delete_self.md)
+### Enumeration Cases
+- [DELETE_SELF](./delete_self.md)
   No action when a referenced record is deleted.
 
 

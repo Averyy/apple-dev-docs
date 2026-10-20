@@ -1,7 +1,8 @@
 # level
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall level of performance constraints on the capture system.
 
@@ -18,13 +19,18 @@ The overall level of performance constraints on the capture system.
 var level: AVCaptureDevice.SystemPressureState.Level { get }
 ```
 
+```objc
+@property (atomic, readonly) AVCaptureSystemPressureLevel level;
+```
+
 #### Discussion
 
-Several aspects of OS and hardware status affect capture system performance and availability (see [`AVCaptureDevice.SystemPressureState.Factors`](avcapturedevice/systempressurestate-swift.class/factors-swift.struct.md)). The overall system pressure level represents the most critical of underlying factors.
+Several aspects of OS and hardware status affect capture system performance and availability (see [`AVCaptureDevice.SystemPressureState.Factors`](./factors-swift.struct.md)). The overall system pressure level represents the most critical of underlying factors.
 
 ## See Also
 
-- [AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct.md)
+### Overall level
+- [AVCaptureDevice.SystemPressureState.Level](./level-swift.struct.md)
   A structure that defines system pressure state levels.
 
 

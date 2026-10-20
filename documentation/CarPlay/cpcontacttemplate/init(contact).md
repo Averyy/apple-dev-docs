@@ -1,7 +1,8 @@
 # init(contact:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contact template that displays the provided contact.
 
@@ -14,6 +15,10 @@ Creates a contact template that displays the provided contact.
 
 ```swift
 init(contact: CPContact)
+```
+
+```objc
+- (instancetype) initWithContact:(CPContact *) contact;
 ```
 
 #### Return Value

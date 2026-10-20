@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+
@@ -15,9 +16,10 @@ static func buildExpression(_ contentState: A.ContentState) -> [A.ContentState]
 
 ## See Also
 
-- [static func buildArray([[A.ContentState]]) -> [A.ContentState]](previewactivitybuilder/buildarray(_:).md)
-- [static func buildPartialBlock(accumulated: [A.ContentState], next: [A.ContentState]) -> [A.ContentState]](previewactivitybuilder/buildpartialblock(accumulated:next:).md)
-- [static func buildPartialBlock(first: [A.ContentState]) -> [A.ContentState]](previewactivitybuilder/buildpartialblock(first:).md)
+### Previewing Live Activities
+- [static func buildArray([[A.ContentState]]) -> [A.ContentState]](./buildarray%28_%29.md)
+- [static func buildPartialBlock(accumulated: [A.ContentState], next: [A.ContentState]) -> [A.ContentState]](./buildpartialblock%28accumulated,next%29.md)
+- [static func buildPartialBlock(first: [A.ContentState]) -> [A.ContentState]](./buildpartialblock%28first%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # logFeedbackAttachment(sentiment:issues:desiredOutput:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Logs and serializes a feedback attachment that can be submitted to Apple.
 
@@ -22,9 +23,9 @@ final func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, is
 
 ## Mentions
 
-- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+- [Inspecting session transcripts and reporting model feedback](../inspecting-session-transcripts-and-reporting-model-feedback.md)
+- [Improving the safety of generative model output](../improving-the-safety-of-generative-model-output.md)
+- [Prompting an on-device foundation model](../prompting-an-on-device-foundation-model.md)
 
 #### Return Value
 
@@ -32,7 +33,7 @@ A `Data` object containing the JSON-encoded feedback attachment that can be subm
 
 #### Discussion
 
-This method creates a structured feedback attachment containing the session’s transcript and any provided feedback information. The attachment can be saved to a file and submitted to Apple using [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com).
+This method creates a structured feedback attachment containing the session’s transcript and any provided feedback information. The attachment can be saved to a file and submitted to Apple using [Feedback Assistant](https://feedbackassistant.apple.com).
 
 If an error occurred during a previous response, any rejected entries that were rolled back from the transcript are included in the feedback data.
 
@@ -56,7 +57,7 @@ let feedbackData = session.logFeedbackAttachment(
 )
 ```
 
-If your `desiredOutput` is a string, use [`Transcript.Entry.response(_:)`](transcript/entry/response(_:).md) to turn your desired output into a [`Transcript`](transcript.md) entry:
+If your `desiredOutput` is a string, use [`Transcript.Entry.response(_:)`](../transcript/entry/response%28_%29.md) to turn your desired output into a [`Transcript`](../transcript.md) entry:
 
 ```swift
 let text = Transcript.TextSegment(content: "The capital of France is Paris.")
@@ -65,7 +66,7 @@ let response = Transcript.Response(segments: [segment])
 let entry = Transcript.Entry.response(response)
 ```
 
-If your `desiredOutput` is a [`Generable`](generable.md) type, turning that into a [`Transcript`](transcript.md) entry is slightly different:
+If your `desiredOutput` is a [`Generable`](../generable.md) type, turning that into a [`Transcript`](../transcript.md) entry is slightly different:
 
 ```swift
 let customType = MyCustomType(...) // A generable type.
@@ -75,7 +76,7 @@ let response = Transcript.Response(segments: [segment])
 let entry = Transcript.Entry.response(response)
 ```
 
-Finally, if you’d like to submit the feedback to Apple, write your feedback to a `.json` file and include the file as an attachment to [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com). You can include one or many feedback attachment in the same file:
+Finally, if you’d like to submit the feedback to Apple, write your feedback to a `.json` file and include the file as an attachment to [Feedback Assistant](https://feedbackassistant.apple.com). You can include one or many feedback attachment in the same file:
 
 ```swift
 let allFeedback = feedbackData + feedbackData2 + feedbackData3
@@ -91,11 +92,12 @@ try allFeedback.write(to: url)
 
 ## See Also
 
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsecontent:).md)
+### Generating feedback
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](./logfeedbackattachment%28sentiment,issues,desiredresponsecontent%29.md)
   Logs and serializes a feedback attachment that includes the content you expected.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsetext:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](./logfeedbackattachment%28sentiment,issues,desiredresponsetext%29.md)
   Logs and serializes a feedback attachment that includes the response text you expected.
-- [struct LanguageModelFeedback](languagemodelfeedback.md)
+- [struct LanguageModelFeedback](../languagemodelfeedback.md)
   Feedback appropriate for logging or attaching to Feedback Assistant.
 
 

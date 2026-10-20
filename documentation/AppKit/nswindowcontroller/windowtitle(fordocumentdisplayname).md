@@ -1,17 +1,22 @@
 # windowTitle(forDocumentDisplayName:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the window title to be used for a given document display name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func windowTitle(forDocumentDisplayName displayName: String) -> String
+```
+
+```objc
+- (NSString *) windowTitleForDocumentDisplayName:(NSString *) displayName;
 ```
 
 #### Discussion
@@ -24,15 +29,16 @@ The default implementation returns `displayName`. Subclasses can override this m
 
 ## See Also
 
-- [var shouldCascadeWindows: Bool](nswindowcontroller/shouldcascadewindows.md)
+### Accessing Window Attributes and Content
+- [var shouldCascadeWindows: Bool](./shouldcascadewindows.md)
   A Boolean value that indicates whether the window will cascade in relation to other document windows when it is displayed.
-- [var windowFrameAutosaveName: NSWindow.FrameAutosaveName](nswindowcontroller/windowframeautosavename.md)
+- [var windowFrameAutosaveName: NSWindow.FrameAutosaveName](./windowframeautosavename.md)
   The name under which the frame rectangle of the window owned by the receiver is stored in the defaults database.
-- [func synchronizeWindowTitleWithDocumentName()](nswindowcontroller/synchronizewindowtitlewithdocumentname.md)
+- [func synchronizeWindowTitleWithDocumentName()](./synchronizewindowtitlewithdocumentname%28%29.md)
   Synchronizes the displayed window title and the represented filename with the information in the associated document.
-- [var contentViewController: NSViewController?](nswindowcontroller/contentviewcontroller.md)
+- [var contentViewController: NSViewController?](./contentviewcontroller.md)
   The view controller for the window’s content view.
-- [func dismissController(Any?)](nswindowcontroller/dismisscontroller(_:).md)
+- [func dismissController(Any?)](./dismisscontroller%28_%29.md)
   Dismisses the window controller.
 
 

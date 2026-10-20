@@ -1,7 +1,8 @@
 # CHHapticAudioResourceKeyLoopEnabled
 
 **Framework**: Core Haptics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for a Boolean value that indicates whether to loop audio playback.
 
@@ -19,17 +20,22 @@ A key for a Boolean value that indicates whether to loop audio playback.
 let CHHapticAudioResourceKeyLoopEnabled: String
 ```
 
+```c
+extern CHHapticAudioResourceKey CHHapticAudioResourceKeyLoopEnabled;
+```
+
 #### Discussion
 
-Set a [`true`](https://developer.apple.com/documentation/swift/true) value for this key to loop the contents of an audio file.
+Set a [`true`](../Swift/true.md) value for this key to loop the contents of an audio file.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../Swift/false.md).
 
 ## See Also
 
-- [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](chhapticaudioresourcekeyusevolumeenvelope.md)
+### Audio Resource Keys
+- [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](./chhapticaudioresourcekeyusevolumeenvelope.md)
   A key for a Boolean value that indicates whether audio file playback fades in and out using an envelope.
-- [typealias CHHapticAudioResourceKey](chhapticaudioresourcekey.md)
+- [typealias CHHapticAudioResourceKey](./chhapticaudioresourcekey.md)
   A type alias for a key that identifies the playback behavior of an audio resource.
 
 

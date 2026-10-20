@@ -1,7 +1,8 @@
 # localizedStringResource
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A resource that helps provide a description of this instance.
 
@@ -11,7 +12,7 @@ A resource that helps provide a description of this instance.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,12 @@ A resource that helps provide a description of this instance.
 var localizedStringResource: LocalizedStringResource { get }
 ```
 
+Available when `Self` conforms to `InstanceDisplayRepresentable`.
+
 ## See Also
 
-- [var localizedStringResource: LocalizedStringResource](casedisplayrepresentable/localizedstringresource-7gj71.md)
+### Providing a localized description
+- [var localizedStringResource: LocalizedStringResource](./localizedstringresource-7gj71.md)
   A resource that helps provide a description of this instance.
 
 

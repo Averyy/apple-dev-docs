@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the function handle for a function this pipeline links at the binary level.
@@ -18,6 +19,10 @@ Gets the function handle for a function this pipeline links at the binary level.
 
 ```swift
 func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)?
+```
+
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithBinaryFunction:(id<MTL4BinaryFunction>) function;
 ```
 
 #### Return Value

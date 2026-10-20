@@ -1,7 +1,8 @@
 # URL.Template
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A template for constructing a URL from variable expansions.
 
@@ -22,9 +23,9 @@ struct Template
 
 #### Overview
 
-This is an template that can be expanded into a [`URL`](url.md) by calling `URL(template:variables:)`.
+This is an template that can be expanded into a [`URL`](../url.md) by calling `URL(template:variables:)`.
 
-Templating has a rich set of options for substituting various parts of URLs. See [`RFC 6570`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6570) for details.
+Templating has a rich set of options for substituting various parts of URLs. See [RFC 6570](https://datatracker.ietf.org/doc/html/rfc6570) for details.
 
 ##### Example 1
 
@@ -108,24 +109,24 @@ extension URL {
 ## Topics
 
 ### Structures
-- [URL.Template.Value](url/template/value.md)
+- [URL.Template.Value](./template/value.md)
   The value of a variable used for expanding a template.
-- [URL.Template.VariableName](url/template/variablename.md)
+- [URL.Template.VariableName](./template/variablename.md)
   The name of a variable used for expanding a template.
 ### Initializers
-- [init?(String)](url/template/init(_:).md)
+- [init?(String)](./template/init%28_%29.md)
   Creates a new template from its text form.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

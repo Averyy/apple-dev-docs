@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the meaningful file-metadata fields of a `Stat` struct.
 

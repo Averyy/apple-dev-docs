@@ -1,7 +1,8 @@
 # SubscriptionModifyInAppRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request data your app provides to make changes to an auto-renewable subscription.
 
@@ -10,7 +11,7 @@ The request data your app provides to make changes to an auto-renewable subscrip
 
 ## Declaration
 
-```swift
+```
 object SubscriptionModifyInAppRequest
 ```
 
@@ -18,7 +19,7 @@ object SubscriptionModifyInAppRequest
 
 You use the `SubscriptionModifyInAppRequest` in your app when the customer makes one or more changes to a subscription, such as upgrading, downgrading, or adding or removing items.
 
-##### Example Upgrade a Subscription
+##### Example: upgrade a subscription
 
 In the following request:
 
@@ -60,7 +61,7 @@ In the following request:
 }
 ```
 
-##### Example Add an Item and Retain the Billing Cycle
+##### Example: add an item and retain the billing cycle
 
 In the following request:
 
@@ -96,7 +97,7 @@ In the following request:
 }
 ```
 
-##### Example Remove an Item at the Next Renewal
+##### Example: remove an item at the next renewal
 
 In the following request:
 
@@ -124,7 +125,7 @@ In the following request:
 }
 ```
 
-##### Example Downgrade a Subscription at the Next Renewal
+##### Example: downgrade a subscription at the next renewal
 
 In the following request:
 
@@ -168,7 +169,7 @@ In the following request:
 - `changeItems` ([SubscriptionModifyChangeItem])
 - `currency` (currency)
 - `descriptors` (SubscriptionModifyDescriptors)
-- `operation` (string) *(required)*
+- `operation` (string) *(required)*: **Allowed Values**: `MODIFY_SUBSCRIPTION`
 - `periodChange` (SubscriptionModifyPeriodChange)
 - `removeItems` ([SubscriptionModifyRemoveItem])
 - `requestInfo` (RequestInfo) *(required)*
@@ -180,13 +181,14 @@ In the following request:
 
 ## See Also
 
-- [object SubscriptionModifyAddItem](subscriptionmodifyadditem.md)
+### Subscription modification in the app
+- [object SubscriptionModifyAddItem](./subscriptionmodifyadditem.md)
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
-- [object SubscriptionModifyChangeItem](subscriptionmodifychangeitem.md)
+- [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)
   The data your app provides to change an item of an auto-renewable subscription.
-- [object SubscriptionModifyRemoveItem](subscriptionmodifyremoveitem.md)
+- [object SubscriptionModifyRemoveItem](./subscriptionmodifyremoveitem.md)
   The data your app provides to remove an item from an auto-renewable subscription.
-- [object SubscriptionModifyPeriodChange](subscriptionmodifyperiodchange.md)
+- [object SubscriptionModifyPeriodChange](./subscriptionmodifyperiodchange.md)
   The data your app provides to change the period of an auto-renewable subscription.
 
 

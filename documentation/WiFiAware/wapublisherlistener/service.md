@@ -1,7 +1,8 @@
 # service
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service data for the Wi-Fi Aware publish operation.
 
@@ -18,9 +19,10 @@ var service: NWListener.Service { get }
 
 ## See Also
 
-- [func configureParameters(NWParameters)](wapublisherlistener/configureparameters(_:).md)
+### Creating publisher implementation details
+- [func configureParameters(NWParameters)](./configureparameters%28_%29.md)
   Configures the provided parameters for a Wi-Fi Aware publish operation and connection.
-- [var isApplicationService: Bool](wapublisherlistener/isapplicationservice.md)
+- [var isApplicationService: Bool](./isapplicationservice.md)
   A Boolean value that determines whether the devices are listening for an application service.
 
 

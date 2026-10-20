@@ -1,7 +1,8 @@
 # init(_:count:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -20,7 +21,8 @@ init<S>(_ sequence: S, count: Int?) where S : AsyncSequence, S.Element == Tempor
 
 ## See Also
 
-- [init<S>(S)](anytemporalsequence/init(_:).md)
+### Creating a sequence
+- [init<S>(S)](./init%28_%29.md)
 
 
 ---

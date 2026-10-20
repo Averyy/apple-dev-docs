@@ -1,7 +1,8 @@
 # MPRemoteCommandCenter
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that responds to remote control events sent by external accessories and system controls.
 
@@ -20,85 +21,90 @@ An object that responds to remote control events sent by external accessories an
 class MPRemoteCommandCenter
 ```
 
+```objc
+@interface MPRemoteCommandCenter : NSObject
+```
+
 ## Mentions
 
-- [Handling external player events notifications](handling-external-player-events-notifications.md)
+- [Handling external player events notifications](./handling-external-player-events-notifications.md)
 
 #### Overview
 
-Don’t create instances of this class yourself. Instead, use the [`shared()`](mpremotecommandcenter/shared().md) method to retrieve the shared command center object. The properties of the shared command center object contain [`MPRemoteCommand`](mpremotecommand.md) objects that respond to the various kinds of remote control events. You configure these objects to respond to the events you’re interested to handle in your app.
+Don’t create instances of this class yourself. Instead, use the [`shared()`](./mpremotecommandcenter/shared%28%29.md) method to retrieve the shared command center object. The properties of the shared command center object contain [`MPRemoteCommand`](./mpremotecommand.md) objects that respond to the various kinds of remote control events. You configure these objects to respond to the events you’re interested to handle in your app.
 
 ## Topics
 
 ### Retrieving the shared instance
-- [class func shared() -> MPRemoteCommandCenter](mpremotecommandcenter/shared.md)
+- [class func shared() -> MPRemoteCommandCenter](./mpremotecommandcenter/shared%28%29.md)
   Returns the shared object you use to access the system’s remote command objects.
 ### Playback commands
-- [var pauseCommand: MPRemoteCommand](mpremotecommandcenter/pausecommand.md)
+- [var pauseCommand: MPRemoteCommand](./mpremotecommandcenter/pausecommand.md)
   The command object for pausing playback of the current item.
-- [var playCommand: MPRemoteCommand](mpremotecommandcenter/playcommand.md)
+- [var playCommand: MPRemoteCommand](./mpremotecommandcenter/playcommand.md)
   The command object for starting playback of the current item.
-- [var stopCommand: MPRemoteCommand](mpremotecommandcenter/stopcommand.md)
+- [var stopCommand: MPRemoteCommand](./mpremotecommandcenter/stopcommand.md)
   The command object for stopping playback of the current item.
-- [var togglePlayPauseCommand: MPRemoteCommand](mpremotecommandcenter/toggleplaypausecommand.md)
+- [var togglePlayPauseCommand: MPRemoteCommand](./mpremotecommandcenter/toggleplaypausecommand.md)
   The command object for toggling between playing and pausing the current item.
 ### Navigating between tracks
-- [var nextTrackCommand: MPRemoteCommand](mpremotecommandcenter/nexttrackcommand.md)
+- [var nextTrackCommand: MPRemoteCommand](./mpremotecommandcenter/nexttrackcommand.md)
   The command object for selecting the next track.
-- [var previousTrackCommand: MPRemoteCommand](mpremotecommandcenter/previoustrackcommand.md)
+- [var previousTrackCommand: MPRemoteCommand](./mpremotecommandcenter/previoustrackcommand.md)
   The command object for selecting the previous track.
-- [var changeRepeatModeCommand: MPChangeRepeatModeCommand](mpremotecommandcenter/changerepeatmodecommand.md)
+- [var changeRepeatModeCommand: MPChangeRepeatModeCommand](./mpremotecommandcenter/changerepeatmodecommand.md)
   The command object for changing the repeat mode.
-- [var changeShuffleModeCommand: MPChangeShuffleModeCommand](mpremotecommandcenter/changeshufflemodecommand.md)
+- [var changeShuffleModeCommand: MPChangeShuffleModeCommand](./mpremotecommandcenter/changeshufflemodecommand.md)
   The command object for changing the shuffle mode.
 ### Navigating a track’s contents
-- [var changePlaybackRateCommand: MPChangePlaybackRateCommand](mpremotecommandcenter/changeplaybackratecommand.md)
+- [var changePlaybackRateCommand: MPChangePlaybackRateCommand](./mpremotecommandcenter/changeplaybackratecommand.md)
   The command object for changing the playback rate of the current media item.
-- [var seekBackwardCommand: MPRemoteCommand](mpremotecommandcenter/seekbackwardcommand.md)
+- [var seekBackwardCommand: MPRemoteCommand](./mpremotecommandcenter/seekbackwardcommand.md)
   The command object for seeking backward through a single media item.
-- [var seekForwardCommand: MPRemoteCommand](mpremotecommandcenter/seekforwardcommand.md)
+- [var seekForwardCommand: MPRemoteCommand](./mpremotecommandcenter/seekforwardcommand.md)
   The command object for seeking forward through a single media item.
-- [var skipBackwardCommand: MPSkipIntervalCommand](mpremotecommandcenter/skipbackwardcommand.md)
+- [var skipBackwardCommand: MPSkipIntervalCommand](./mpremotecommandcenter/skipbackwardcommand.md)
   The command object for playing a previous point in a media item.
-- [var skipForwardCommand: MPSkipIntervalCommand](mpremotecommandcenter/skipforwardcommand.md)
+- [var skipForwardCommand: MPSkipIntervalCommand](./mpremotecommandcenter/skipforwardcommand.md)
   The command object for playing a future point in a media item.
-- [var changePlaybackPositionCommand: MPChangePlaybackPositionCommand](mpremotecommandcenter/changeplaybackpositioncommand.md)
+- [var changePlaybackPositionCommand: MPChangePlaybackPositionCommand](./mpremotecommandcenter/changeplaybackpositioncommand.md)
   The command object for changing the playback position in a media item.
 ### Rating a media item
-- [var ratingCommand: MPRatingCommand](mpremotecommandcenter/ratingcommand.md)
+- [var ratingCommand: MPRatingCommand](./mpremotecommandcenter/ratingcommand.md)
   The command object for rating a media item.
-- [var likeCommand: MPFeedbackCommand](mpremotecommandcenter/likecommand.md)
+- [var likeCommand: MPFeedbackCommand](./mpremotecommandcenter/likecommand.md)
   The command object for indicating that a user likes what is currently playing.
-- [var dislikeCommand: MPFeedbackCommand](mpremotecommandcenter/dislikecommand.md)
+- [var dislikeCommand: MPFeedbackCommand](./mpremotecommandcenter/dislikecommand.md)
   The command object for indicating that a user dislikes what is currently playing.
 ### Bookmarking a media item
-- [var bookmarkCommand: MPFeedbackCommand](mpremotecommandcenter/bookmarkcommand.md)
+- [var bookmarkCommand: MPFeedbackCommand](./mpremotecommandcenter/bookmarkcommand.md)
   The command object for indicating that a user wants to remember a media item.
 ### Enabling language options
-- [var enableLanguageOptionCommand: MPRemoteCommand](mpremotecommandcenter/enablelanguageoptioncommand.md)
+- [var enableLanguageOptionCommand: MPRemoteCommand](./mpremotecommandcenter/enablelanguageoptioncommand.md)
   The command object for enabling a language option.
-- [var disableLanguageOptionCommand: MPRemoteCommand](mpremotecommandcenter/disablelanguageoptioncommand.md)
+- [var disableLanguageOptionCommand: MPRemoteCommand](./mpremotecommandcenter/disablelanguageoptioncommand.md)
   The command object for disabling a language option
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Becoming a now playable app](becoming-a-now-playable-app.md)
+### Setting up the remote event handler
+- [Becoming a now playable app](./becoming-a-now-playable-app.md)
   Ensure your app is eligible to become the Now Playing app by adopting best practices for providing Now Playing info and registering for remote command center actions.
-- [class MPRemoteCommand](mpremotecommand.md)
+- [class MPRemoteCommand](./mpremotecommand.md)
   An object that responds to remote command events.
-- [class MPRemoteCommandEvent](mpremotecommandevent.md)
+- [class MPRemoteCommandEvent](./mpremotecommandevent.md)
   A description of a command sent by an external media player.
 
 

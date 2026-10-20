@@ -1,7 +1,8 @@
 # kCVReturnInvalidPixelBufferAttributes
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A buffer cannot be created with the specified attributes.
 
@@ -20,15 +21,20 @@ A buffer cannot be created with the specified attributes.
 var kCVReturnInvalidPixelBufferAttributes: CVReturn { get }
 ```
 
+```c
+kCVReturnInvalidPixelBufferAttributes
+```
+
 ## See Also
 
-- [var kCVReturnInvalidPixelFormat: CVReturn](kcvreturninvalidpixelformat.md)
+### Pixel Buffer
+- [var kCVReturnInvalidPixelFormat: CVReturn](./kcvreturninvalidpixelformat.md)
   The buffer does not support the specified pixel format.
-- [var kCVReturnInvalidSize: CVReturn](kcvreturninvalidsize.md)
+- [var kCVReturnInvalidSize: CVReturn](./kcvreturninvalidsize.md)
   The buffer cannot support the requested buffer size (usually too big).
-- [var kCVReturnPixelBufferNotMetalCompatible: CVReturn](kcvreturnpixelbuffernotmetalcompatible.md)
+- [var kCVReturnPixelBufferNotMetalCompatible: CVReturn](./kcvreturnpixelbuffernotmetalcompatible.md)
   The pixel buffer is not compatible with Metal due to an unsupported buffer size, pixel format, or attribute.
-- [var kCVReturnPixelBufferNotOpenGLCompatible: CVReturn](kcvreturnpixelbuffernotopenglcompatible.md)
+- [var kCVReturnPixelBufferNotOpenGLCompatible: CVReturn](./kcvreturnpixelbuffernotopenglcompatible.md)
   The pixel buffer is not compatible with OpenGL due to an unsupported buffer size, pixel format, or attribute.
 
 

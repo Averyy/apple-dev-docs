@@ -1,7 +1,8 @@
 # track
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track from which the output reads sample references.
 
@@ -17,6 +18,10 @@ The track from which the output reads sample references.
 
 ```swift
 var track: AVAssetTrack { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAssetTrack * track;
 ```
 
 

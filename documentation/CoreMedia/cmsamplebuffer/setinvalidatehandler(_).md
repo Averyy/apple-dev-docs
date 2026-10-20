@@ -1,7 +1,8 @@
 # setInvalidateHandler(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a closure for the sample buffer to call when it’s invalidated.
 
@@ -30,9 +31,10 @@ A sample buffer can only have one invalidation handler.
 
 ## See Also
 
-- [var isValid: Bool](cmsamplebuffer/isvalid.md)
+### Invalidating Sample Buffers
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the sample buffer is valid.
-- [func invalidate() throws](cmsamplebuffer/invalidate.md)
+- [func invalidate() throws](./invalidate%28%29.md)
   Invalidates a sample buffer by calling its invalidation handler.
 
 

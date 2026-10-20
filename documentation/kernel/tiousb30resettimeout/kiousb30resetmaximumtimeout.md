@@ -1,7 +1,8 @@
 # kIOUSB30ResetMaximumTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The maximum reset timeout.
 
@@ -10,7 +11,7 @@ The maximum reset timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30ResetMaximumTimeout = 120
 ```
 

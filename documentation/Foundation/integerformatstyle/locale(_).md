@@ -1,7 +1,8 @@
 # locale(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified locale.
 
@@ -20,15 +21,17 @@ Modifies the format style to use the specified locale.
 func locale(_ locale: Locale) -> IntegerFormatStyle<Value>
 ```
 
+Available when `Value` conforms to `BinaryInteger`.
+
 #### Return Value
 
 An integer format style modified to use the provided locale.
 
 #### Discussion
 
-Use this modifier to change the locale used by an existing format style. To instead determine the locale this format style uses, use the [`locale`](integerformatstyle/locale.md) property.
+Use this modifier to change the locale used by an existing format style. To instead determine the locale this format style uses, use the [`locale`](./locale.md) property.
 
-The following example creates a default [`IntegerFormatStyle`](integerformatstyle.md) for the `en_US` locale, and applies the [`notation(_:)`](integerformatstyle/notation(_:).md) modifier to use compact name notation. Next, the sample creates a second style based on this first style, but using the German (`DE`) locale. It then applies each style to an array of integers.
+The following example creates a default [`IntegerFormatStyle`](../integerformatstyle.md) for the `en_US` locale, and applies the [`notation(_:)`](./notation%28_%29.md) modifier to use compact name notation. Next, the sample creates a second style based on this first style, but using the German (`DE`) locale. It then applies each style to an array of integers.
 
 ```swift
 let compactStyle = IntegerFormatStyle<Int>(locale: Locale(identifier: "en_US"))

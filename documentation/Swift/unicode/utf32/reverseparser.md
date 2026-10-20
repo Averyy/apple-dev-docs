@@ -1,7 +1,8 @@
 # Unicode.UTF32.ReverseParser
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that can be used to parse a reversed sequence of `CodeUnits` into `EncodedScalar`s.
 

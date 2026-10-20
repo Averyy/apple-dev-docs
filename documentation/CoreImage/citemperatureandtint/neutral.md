@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A vector containing the source white point defined by color temperature and tint.
@@ -11,7 +12,7 @@ A vector containing the source white point defined by color temperature and tint
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ A vector containing the source white point defined by color temperature and tint
 var neutral: CIVector { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIVector * neutral;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](citemperatureandtint/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var targetNeutral: CIVector](citemperatureandtint/targetneutral.md)
+- [var targetNeutral: CIVector](./targetneutral.md)
   A vector containing the desired white point defined by color temperature and tint.
 
 

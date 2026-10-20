@@ -1,17 +1,22 @@
 # originOffset
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance to the zero hash mark from the bounds origin of the NSScrollView’s document view (not of the receiver’s client view), in the document view’s coordinate system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var originOffset: CGFloat { get set }
+```
+
+```objc
+@property CGFloat originOffset;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # deletionConflicted
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value indicating a conflict for a deleted item.
 
@@ -18,13 +19,18 @@ A value indicating a conflict for a deleted item.
 static var deletionConflicted: NSFileProviderCreateItemOptions { get }
 ```
 
+```c
+NSFileProviderCreateItemDeletionConflicted
+```
+
 #### Discussion
 
-If the File Provider extension signals the deletion of an item but the deletion conflicts with local edits, the system attempts to create the modified item by calling the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) method, and passing this value as an option.
+If the File Provider extension signals the deletion of an item but the deletion conflicts with local edits, the system attempts to create the modified item by calling the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) method, and passing this value as an option.
 
 ## See Also
 
-- [static var mayAlreadyExist: NSFileProviderCreateItemOptions](nsfileprovidercreateitemoptions/mayalreadyexist.md)
+### Choosing Create Item Options
+- [static var mayAlreadyExist: NSFileProviderCreateItemOptions](./mayalreadyexist.md)
   An option indicating that the item may already exist in your remote storage.
 
 

@@ -1,7 +1,8 @@
 # HoverEffectComponent.SpotlightHoverEffectStyle
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that configures the visual aspects of a spotlight hover effect for an entity.
 
@@ -21,27 +22,27 @@ struct SpotlightHoverEffectStyle
 ## Topics
 
 ### Initializers
-- [init(color:strength:)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:).md)
+- [init(color:strength:)](./spotlighthovereffectstyle/init%28color,strength%29.md)
   Creates a new spotlight effect with a color and strength.
-- [init(color:strength:opacityFunction:)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:opacityfunction:).md)
+- [init(color:strength:opacityFunction:)](./spotlighthovereffectstyle/init%28color,strength,opacityfunction%29.md)
   Creates a new spotlight effect with a color and strength.
 ### Instance Properties
-- [var color: NSColor](hovereffectcomponent/spotlighthovereffectstyle/color-4n481.md)
+- [var color: NSColor](./spotlighthovereffectstyle/color-4n481.md)
   The color tint for the spotlight hover effect.
-- [var color: UIColor](hovereffectcomponent/spotlighthovereffectstyle/color-tdv8.md)
+- [var color: UIColor](./spotlighthovereffectstyle/color-tdv8.md)
   The color tint for the spotlight hover effect.
-- [var opacityFunction: HoverEffectComponent.OpacityFunction](hovereffectcomponent/spotlighthovereffectstyle/opacityfunction.md)
+- [var opacityFunction: HoverEffectComponent.OpacityFunction](./spotlighthovereffectstyle/opacityfunction.md)
   The blending technique the hover effect applies to the entity’s base material.
-- [var strength: Float](hovereffectcomponent/spotlighthovereffectstyle/strength.md)
+- [var strength: Float](./spotlighthovereffectstyle/strength.md)
   A floating-point value that represents the intensity of the effect.
 ### Type Properties
-- [static let `default`: HoverEffectComponent.SpotlightHoverEffectStyle](hovereffectcomponent/spotlighthovereffectstyle/default.md)
+- [static let `default`: HoverEffectComponent.SpotlightHoverEffectStyle](./spotlighthovereffectstyle/default.md)
   The default style applies a white spotlight glow at the hover location.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

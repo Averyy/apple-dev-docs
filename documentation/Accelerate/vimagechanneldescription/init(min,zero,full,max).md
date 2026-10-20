@@ -1,18 +1,19 @@
 # init(min:zero:full:max:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a structure that describes the range and clamp limits for a pixel format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -33,7 +34,8 @@ A structure that describes the range and clamp limits for a pixel format.
 
 ## See Also
 
-- [init()](vimagechanneldescription/init.md)
+### Creating a channel description
+- [init()](./init%28%29.md)
   Returns an empty structure that describes the range and clamp limits for a pixel format.
 
 

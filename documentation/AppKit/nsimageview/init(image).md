@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a non-editable image view containing the provided image. The image is scaled proportionally down to fit the view, and is centered within the view.
 
@@ -12,6 +13,10 @@ Creates a non-editable image view containing the provided image. The image is sc
 
 ```swift
 convenience init(image: NSImage)
+```
+
+```objc
++ (instancetype) imageViewWithImage:(NSImage *) image;
 ```
 
 #### Return Value

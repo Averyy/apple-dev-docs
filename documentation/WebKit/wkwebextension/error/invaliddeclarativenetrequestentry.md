@@ -1,7 +1,8 @@
 # invalidDeclarativeNetRequestEntry
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that an invalid declarative net request entry was encountered.
 

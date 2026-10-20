@@ -1,14 +1,15 @@
 # vir_max_protection
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 vm_prot_t vir_max_protection;
 ```
 

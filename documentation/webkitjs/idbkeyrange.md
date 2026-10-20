@@ -1,7 +1,8 @@
 # IDBKeyRange
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBKeyRange
 ```
 
 ## Topics
 
 ### Instance Properties
-- [lower](idbkeyrange/1631376-lower.md)
-- [lowerOpen](idbkeyrange/1630633-loweropen.md)
-- [upper](idbkeyrange/1631935-upper.md)
-- [upperOpen](idbkeyrange/1630245-upperopen.md)
+- [lower](./idbkeyrange/api-1631376-lower.md)
+- [lowerOpen](./idbkeyrange/api-1630633-loweropen.md)
+- [upper](./idbkeyrange/api-1631935-upper.md)
+- [upperOpen](./idbkeyrange/api-1630245-upperopen.md)
 ### Instance Methods
-- [includes](idbkeyrange/2871284-includes.md)
+- [includes](./idbkeyrange/api-2871284-includes.md)
 ### Type Methods
-- [bound](idbkeyrange/1632026-bound.md)
-- [lowerBound](idbkeyrange/1633367-lowerbound.md)
-- [only](idbkeyrange/1630218-only.md)
-- [upperBound](idbkeyrange/1632553-upperbound.md)
+- [bound](./idbkeyrange/api-1632026-bound.md)
+- [lowerBound](./idbkeyrange/api-1633367-lowerbound.md)
+- [only](./idbkeyrange/api-1630218-only.md)
+- [upperBound](./idbkeyrange/api-1632553-upperbound.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DonationLimit
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specify the maximum number of donations for an event.
 
@@ -23,27 +24,28 @@ struct DonationLimit
 ## Topics
 
 ### Initializers
-- [init(maximumCount: Int, maximumAge: Tips.DonationTimeRange?)](tips/donationlimit/init(maximumcount:maximumage:).md)
+- [init(maximumCount: Int, maximumAge: Tips.DonationTimeRange?)](./donationlimit/init%28maximumcount,maximumage%29.md)
   Passed to an `Event` to specify the maximum number and maximum age of donations the event will persist and query.
 ### Instance Properties
-- [let maximumAge: Tips.DonationTimeRange?](tips/donationlimit/maximumage.md)
+- [let maximumAge: Tips.DonationTimeRange?](./donationlimit/maximumage.md)
   Maximum age of donations this event will persist and query. By default events have no maximum age.
-- [let maximumCount: Int](tips/donationlimit/maximumcount.md)
+- [let maximumCount: Int](./donationlimit/maximumcount.md)
   Maximum number of donations this event will persist and query.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Event](tips/event.md)
+### Events
+- [struct Event](./event.md)
   A repeatable user-defined action.
-- [struct DonationTimeRange](tips/donationtimerange.md)
+- [struct DonationTimeRange](./donationtimerange.md)
   A duration of time for filtering event donations.
-- [struct EmptyDonation](tips/emptydonation.md)
+- [struct EmptyDonation](./emptydonation.md)
   An empty event donation.
 
 

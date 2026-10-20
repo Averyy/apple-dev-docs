@@ -1,7 +1,8 @@
 # MPSGraphResizeNearestRoundingMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The rounding mode to use when using nearest resize mode.
 
@@ -19,33 +20,37 @@ The rounding mode to use when using nearest resize mode.
 enum MPSGraphResizeNearestRoundingMode
 ```
 
+```c
+enum MPSGraphResizeNearestRoundingMode : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphResizeNearestRoundingMode.ceil](mpsgraphresizenearestroundingmode/ceil.md)
+- [MPSGraphResizeNearestRoundingMode.ceil](./mpsgraphresizenearestroundingmode/ceil.md)
   Rounds values toward +inf.
-- [MPSGraphResizeNearestRoundingMode.floor](mpsgraphresizenearestroundingmode/floor.md)
+- [MPSGraphResizeNearestRoundingMode.floor](./mpsgraphresizenearestroundingmode/floor.md)
   Rounds values toward -inf.
-- [MPSGraphResizeNearestRoundingMode.roundPreferCeil](mpsgraphresizenearestroundingmode/roundpreferceil.md)
+- [MPSGraphResizeNearestRoundingMode.roundPreferCeil](./mpsgraphresizenearestroundingmode/roundpreferceil.md)
   Rounds values to the nearest integer value, with 0.5f offset rounding toward +inf.
-- [MPSGraphResizeNearestRoundingMode.roundPreferFloor](mpsgraphresizenearestroundingmode/roundpreferfloor.md)
+- [MPSGraphResizeNearestRoundingMode.roundPreferFloor](./mpsgraphresizenearestroundingmode/roundpreferfloor.md)
   Rounds values to the nearest integer value, with 0.5f rounding toward -inf.
-- [MPSGraphResizeNearestRoundingMode.roundToEven](mpsgraphresizenearestroundingmode/roundtoeven.md)
+- [MPSGraphResizeNearestRoundingMode.roundToEven](./mpsgraphresizenearestroundingmode/roundtoeven.md)
   Rounds values to the nearest integer value, with 0.5f rounding toward the closest even value.
-- [MPSGraphResizeNearestRoundingMode.roundToOdd](mpsgraphresizenearestroundingmode/roundtoodd.md)
+- [MPSGraphResizeNearestRoundingMode.roundToOdd](./mpsgraphresizenearestroundingmode/roundtoodd.md)
   Rounds values to the nearest integer value, with 0.5f rounding toward the closest odd value.
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphresizenearestroundingmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphresizenearestroundingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

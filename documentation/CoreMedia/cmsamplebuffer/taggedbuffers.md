@@ -1,7 +1,8 @@
 # taggedBuffers
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the tagged buffers associated with this buffer.
 

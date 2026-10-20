@@ -1,11 +1,12 @@
 # ActivationLockStatusResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ActivationLockStatusResponse
 ```
 
@@ -16,7 +17,8 @@ object ActivationLockStatusResponse
 
 ## See Also
 
-- [object ActivationLockRequest](activationlockrequest.md)
+### Request and Response
+- [object ActivationLockRequest](./activationlockrequest.md)
   Request enabling activation lock for a device.
 
 

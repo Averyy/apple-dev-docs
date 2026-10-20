@@ -1,6 +1,8 @@
 # Combining 2D and 3D views in an immersive app
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [Combining2DAnd3DViewsInAnImmersiveApp.zip](https://docs-assets.developer.apple.com/published/5416127e3d80/Combining2DAnd3DViewsInAnImmersiveApp.zip)
 
 Use attachments to place 2D content relative to 3D content in your visionOS app.
 
@@ -12,26 +14,26 @@ Use attachments to place 2D content relative to 3D content in your visionOS app.
 
 To demonstrate how you can integrate any 2D content into your 3D app, this sample code project uses a variety of frameworks to create both 2D and 3D views, and places them relative to each other in an immersive space. It also illustrates how to position an attachment at the location of a tap gesture.
 
-The rainbow that appears in the sample app contains two USDZ models and four [`RealityViewAttachments`](realityviewattachments.md).
+The rainbow that appears in the sample app contains two USDZ models and four [`RealityViewAttachments`](./realityviewattachments.md).
 
 - The green arch is a USDZ file from Reality Composer Pro with a custom shader graph material.
 - The yellow arch is a USDZ file from Reality Composer Pro with a programmatically created simple material.
-- The orange arch is a reality view attachment containing a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) in a [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) with a custom 2D arc shape.
+- The orange arch is a reality view attachment containing a [`UIView`](../UIKit/uiview.md) in a [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) with a custom 2D arc shape.
 - The red arch is a reality view attachment containing a `UIView` in a `UIViewRepresentable` with a custom 2D arc shape.
-- The pink arch is a reality view attachment containing a SwiftUI [`View`](https://developer.apple.com/documentation/swiftui/view) with a custom 2D arc shape.
+- The pink arch is a reality view attachment containing a SwiftUI [`View`](../SwiftUI/view.md) with a custom 2D arc shape.
 - The blue arch is a reality view attachment containing a SwiftUI `View` with a custom 2D arc shape.
 
-The app loads the 3D assets from Reality Composer Pro as a [`ModelEntity`](modelentity.md) in a [`RealityView`](realityview.md), and creates a reality view attachment for each of the 2D arches to attach them to the view.
+The app loads the 3D assets from Reality Composer Pro as a [`ModelEntity`](./modelentity.md) in a [`RealityView`](./realityview.md), and creates a reality view attachment for each of the 2D arches to attach them to the view.
 
-The cloud attachments at the locations of tap gestures are `RealityViewAttachments` containing [`Text`](https://developer.apple.com/documentation/swiftui/text) with an SF Symbols image.
+The cloud attachments at the locations of tap gestures are `RealityViewAttachments` containing [`Text`](../SwiftUI/text.md) with an SF Symbols image.
 
-![A screenshot of a simulated Apple Vision Pro environment showing a rainbow that consists of six arches of various colors and cloud attachments within a room.](/images/com.apple.RealityKit/combining-2d-3d-views-main@2x.png)
+![A screenshot of a simulated Apple Vision Pro environment showing a rainbow that consists of six arches of various colors and cloud attachments within a room.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/combining-2d-3d-views-main@2x.png)
 
-##### Load and Configure Entities From Reality Composer Pro
+##### Load and configure entities from Reality Composer Pro
 
 This sample creates 3D assets in an asset creator and imports them into Reality Composer Pro as `.usdc` files.
 
-The app then configures the appearance of the [`ModelEntity`](modelentity.md) by setting the material of the [`ModelComponent`](modelcomponent.md), which is the [`Component`](component.md) that affects appearance. The following code example demonstrates loading a model and configuring the material:
+The app then configures the appearance of the [`ModelEntity`](./modelentity.md) by setting the material of the [`ModelComponent`](./modelcomponent.md), which is the [`Component`](./component.md) that affects appearance. The following code example demonstrates loading a model and configuring the material:
 
 ```swift
 /// Creates an entity from the data model for each Reality Composer Pro asset.
@@ -60,7 +62,7 @@ func createEntity(for item: EntityData) async -> Entity {
 }
 ```
 
-##### Create Attachments That Contain Swiftui Views
+##### Create attachments that contain SwiftUI views
 
 The sample includes the remaining four arches as reality view attachments by creating attachments of various types in the `attachments` closure of a reality view instance. These types include both SwiftUI and UIKit to exemplify how to use any framework in your visionOS app.
 
@@ -92,7 +94,7 @@ ForEach(rainbowModel.archAttachments) { entity in
 
 Attachments can contain views from other frameworks that adopt the `UIViewRepresentable` protocol.
 
-##### Add and Position Entity Attachments
+##### Add and position entity attachments
 
 The sample loads the attachments as reality view attachments in the `update` closure of the reality view. If there’s an existing attachment for an `id`, the sample adds the attachment entity as a subentity of the plane entity to display it in the scene, and then configures the scale and position.
 
@@ -150,9 +152,9 @@ func scaleAndPositionArches(yellowArchSize: BoundingBox) {
 }
 ```
 
-##### Position Attachments at the Tapped Location
+##### Position attachments at the tapped location
 
-Follow these steps to add attachments to RealityKit entities and position them at the tapped location. Ensure that your entities have both an [`InputTargetComponent`](inputtargetcomponent.md) and a [`CollisionComponent`](collisioncomponent.md).
+Follow these steps to add attachments to RealityKit entities and position them at the tapped location. Ensure that your entities have both an [`InputTargetComponent`](./inputtargetcomponent.md) and a [`CollisionComponent`](./collisioncomponent.md).
 
 ```swift
 /// Sets the components necessary for hover and tap gestures.
@@ -171,7 +173,7 @@ func configureForTapGesture(entity: Entity) async {
 }
 ```
 
-Add a [`SpatialTapGesture`](https://developer.apple.com/documentation/swiftui/spatialtapgesture) to the `RealityView` and make sure it uses [`targetedToAnyEntity()`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoanyentity()), or specify which entities to target with [`targetedToEntity(_:)`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoentity(_:)). Then use [`convert(_:from:to:)`](realitycoordinatespaceconverting/convert(_:from:to:)-6uv65.md) to convert the location of the tap gesture from the local coordinate space of the entity to the scene’s coordinate space.
+Add a [`SpatialTapGesture`](../SwiftUI/spatialtapgesture.md) to the `RealityView` and make sure it uses [`targetedToAnyEntity()`](../SwiftUI/gesture/targetedtoanyentity%28%29.md), or specify which entities to target with [`targetedToEntity(_:)`](../SwiftUI/gesture/targetedtoentity%28_%29.md). Then use [`convert(_:from:to:)`](./realitycoordinatespaceconverting/convert%28_,from,to%29-6uv65.md) to convert the location of the tap gesture from the local coordinate space of the entity to the scene’s coordinate space.
 
 ```swift
 .simultaneousGesture(
@@ -219,35 +221,36 @@ for cloud in rainbowModel.tapAttachments {
 
 ## See Also
 
-- [Hello World](../visionos/world.md)
+### Scene content
+- [Hello World](../visionOS/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
+- [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+- [Responding to gestures on an entity](./responding-to-gestures-on-an-entity.md)
   Respond to gestures performed on RealityKit entities using input target and collision components.
-- [Models and meshes](scene-content-models-and-meshes.md)
+- [Models and meshes](./scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
-- [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
+- [Materials, textures, and shaders](./scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
-- [Anchors](scene-content-anchors.md)
+- [Anchors](./scene-content-anchors.md)
   Lock virtual content to the real world.
-- [Lights and cameras](scene-content-lights-and-cameras.md)
+- [Lights and cameras](./scene-content-lights-and-cameras.md)
   Control the lighting and point of view for a scene.
-- [Content synchronization](scene-content-content-synchronization.md)
+- [Content synchronization](./scene-content-content-synchronization.md)
   Synchronize the contents of entities locally or across the network.
-- [Audio](scene-content-audio.md)
+- [Audio](./scene-content-audio.md)
   Create personalized and realistic spatial audio experiences.
-- [Videos](scene-content-videos.md)
+- [Videos](./scene-content-videos.md)
   Present videos in your RealityKit experiences.
-- [Images](scene-content-images.md)
+- [Images](./scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
-- [Mesh deformation](scene-content-mesh-deformation.md)
+- [Mesh deformation](./scene-content-mesh-deformation.md)
   Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 

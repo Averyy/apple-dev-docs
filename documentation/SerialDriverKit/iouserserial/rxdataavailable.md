@@ -1,7 +1,8 @@
 # RxDataAvailable
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that data from the device is now available.
 
@@ -10,7 +11,7 @@ Notifies the system that data from the device is now available.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void RxDataAvailable();
 ```
 
@@ -20,13 +21,14 @@ After receiving data from the device and placing it in your data buffer, call th
 
 ## See Also
 
-- [RxFreeSpaceAvailable](iouserserial/rxfreespaceavailable.md)
+### Transmitting and Receiving Data
+- [RxFreeSpaceAvailable](./rxfreespaceavailable.md)
   Notifies your driver that buffer space is available for your device’s data.
-- [TxDataAvailable](iouserserial/txdataavailable.md)
+- [TxDataAvailable](./txdataavailable.md)
   Notifies your driver that the system has data for you to transmit to the device.
-- [TxFreeSpaceAvailable](iouserserial/txfreespaceavailable.md)
+- [TxFreeSpaceAvailable](./txfreespaceavailable.md)
   Notifies the system that the device is ready to accept more data.
-- [RxError](iouserserial/rxerror.md)
+- [RxError](./rxerror.md)
   Reports errors that occurred when receiving data from the device.
 
 

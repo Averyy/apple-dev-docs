@@ -1,7 +1,8 @@
 # removePrim(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all authored data at the given path in the current edit target.
 
@@ -22,9 +23,10 @@ func removePrim(at path: USDLayer.Path) -> Bool
 
 ## See Also
 
-- [func definePrim(at: USDLayer.Path, type: USDToken) -> USDPrim](usdstage/defineprim(at:type:).md)
+### Authoring prims
+- [func definePrim(at: USDLayer.Path, type: USDToken) -> USDPrim](./defineprim%28at,type%29.md)
   Defines a prim at a given path, if none already exists.
-- [func overridePrim(at: USDLayer.Path) -> USDPrim](usdstage/overrideprim(at:).md)
+- [func overridePrim(at: USDLayer.Path) -> USDPrim](./overrideprim%28at%29.md)
   Authors an override prim at a given path, if no prim exists at that path.
 
 

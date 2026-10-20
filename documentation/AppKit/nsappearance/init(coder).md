@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.9+
@@ -12,11 +13,16 @@
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init?(named: NSAppearance.Name)](nsappearance/init(named:).md)
+### Creating an Appearance
+- [init?(named: NSAppearance.Name)](./init%28named%29.md)
   Creates an appearance object based on the name of one of the standard system appearances.
-- [init?(appearanceNamed: NSAppearance.Name, bundle: Bundle?)](nsappearance/init(appearancenamed:bundle:).md)
+- [init?(appearanceNamed: NSAppearance.Name, bundle: Bundle?)](./init%28appearancenamed,bundle%29.md)
   Creates an appearance object from the named appearance file located in the specified bundle.
 
 

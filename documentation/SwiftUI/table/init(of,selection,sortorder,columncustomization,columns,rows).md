@@ -1,7 +1,8 @@
 # init(of:selection:sortOrder:columnCustomization:columns:rows:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable table with the given columns and rows that supports selecting multiple rows and dynamically customizable columns.
 
@@ -19,9 +20,18 @@ nonisolated
 init<Sort>(of valueType: Value.Type = Value.self, selection: Binding<Set<Value.ID>>, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, @TableColumnBuilder<Value, Sort> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows) where Sort : SortComparator, Columns.TableRowValue == Sort.Compared
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<Sort>(of valueType: Value.Type = Value.self, selection: Binding<Value.ID?>, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, @TableColumnBuilder<Value, Sort> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows) where Sort : SortComparator, Columns.TableRowValue == Sort.Compared
+```
+
 #### Discussion
 
-Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](tablecolumncontent/customizationid(_:).md).
+Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](../tablecolumncontent/customizationid%28_%29.md).
 
 ## Parameters
 
@@ -34,11 +44,12 @@ Each column in the table that should participate in customization is required to
 
 ## See Also
 
-- [init(of: Value.Type, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](table/init(of:columncustomization:columns:rows:).md)
+### Creating a table with dynamically customizable columns
+- [init(of: Value.Type, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](./init%28of,columncustomization,columns,rows%29.md)
   Creates a table with the given columns and rows that generates its contents using values of the given type and has dynamically customizable columns.
-- [init(of:selection:columnCustomization:columns:rows:)](table/init(of:selection:columncustomization:columns:rows:).md)
+- [init(of:selection:columnCustomization:columns:rows:)](./init%28of,selection,columncustomization,columns,rows%29.md)
   Creates a table with the given columns and rows that supports selecting multiple rows that generates its data using values of the given type and has dynamically customizable columns.
-- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](table/init(of:sortorder:columncustomization:columns:rows:).md)
+- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](./init%28of,sortorder,columncustomization,columns,rows%29.md)
   Creates a sortable table with the given columns and rows and has dynamically customizable columns.
 
 

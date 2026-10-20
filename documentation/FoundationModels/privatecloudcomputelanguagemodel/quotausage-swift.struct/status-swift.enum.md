@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.QuotaUsage.Status
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The quota status of a language model.
 
@@ -22,26 +23,27 @@ enum Status
 ## Topics
 
 ### Quota status
-- [case belowLimit(PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit)](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/belowlimit(_:).md)
+- [case belowLimit(PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit)](./status-swift.enum/belowlimit%28_%29.md)
   The model’s usage is below its usage limit.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/belowlimit.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit](./status-swift.enum/belowlimit.md)
   Information about usage that hasn’t yet reached the usage limit.
-- [case limitReached(PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached)](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/limitreached(_:).md)
+- [case limitReached(PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached)](./status-swift.enum/limitreached%28_%29.md)
   The model’s usage has reached its usage limit.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/limitreached.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached](./status-swift.enum/limitreached.md)
   Information about usage that has reached the usage limit.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.property.md)
+### Getting the quota status
+- [var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status](./status-swift.property.md)
   The current quota status.
-- [var resetDate: Date?](privatecloudcomputelanguagemodel/quotausage-swift.struct/resetdate.md)
+- [var resetDate: Date?](./resetdate.md)
   The date at which the quota refreshes.
 
 

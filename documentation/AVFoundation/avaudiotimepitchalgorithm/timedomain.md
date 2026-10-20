@@ -1,7 +1,8 @@
 # timeDomain
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A modest quality time pitch algorithm that’s suitable for voice.
 
@@ -20,17 +21,22 @@ A modest quality time pitch algorithm that’s suitable for voice.
 static let timeDomain: AVAudioTimePitchAlgorithm
 ```
 
+```c
+extern AVAudioTimePitchAlgorithm const AVAudioTimePitchAlgorithmTimeDomain;
+```
+
 #### Discussion
 
-This is less computationally intensive than [`spectral`](avaudiotimepitchalgorithm/spectral.md), and uses a variable rate from `1/32` to `32`.
+This is less computationally intensive than [`spectral`](./spectral.md), and uses a variable rate from `1/32` to `32`.
 
 ## See Also
 
-- [static let varispeed: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/varispeed.md)
+### Constants
+- [static let varispeed: AVAudioTimePitchAlgorithm](./varispeed.md)
   A high-quality time pitch algorithm that doesn’t perform pitch correction.
-- [static let spectral: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/spectral.md)
+- [static let spectral: AVAudioTimePitchAlgorithm](./spectral.md)
   A highest-quality time pitch algorithm that’s suitable for music.
-- [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/lowqualityzerolatency.md)
+- [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](./lowqualityzerolatency.md)
   A low-quality and very low computationally intensive pitch algorithm.
 
 

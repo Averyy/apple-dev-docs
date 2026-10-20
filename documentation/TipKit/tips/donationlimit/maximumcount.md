@@ -1,7 +1,8 @@
 # maximumCount
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Maximum number of donations this event will persist and query.
 

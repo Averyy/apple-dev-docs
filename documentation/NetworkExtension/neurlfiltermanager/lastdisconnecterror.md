@@ -1,7 +1,8 @@
 # lastDisconnectError
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent error that caused the URL Filter to stop.
 
@@ -25,7 +26,8 @@ You can check this property after an unexpected status change to determine what 
 
 ## See Also
 
-- [NEURLFilterManager.Error](neurlfiltermanager/error.md)
+### Handling errors
+- [NEURLFilterManager.Error](./error.md)
   An enumeration of URL filter error codes
 
 

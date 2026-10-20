@@ -1,11 +1,12 @@
 # Request Implementations
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(contentsOfURL: URL)](mkdirections/request/init(contentsofurl:).md)
+- [init(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Creates and returns a directions request object using the specified URL.
 
 

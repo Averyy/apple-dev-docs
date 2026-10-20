@@ -1,7 +1,8 @@
 # getNonlocalVersionsOfItem(at:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously returns an array of NSFileVersions associated with the file located by the given URL, or nil if there is no such file or another error occurs.
 
@@ -17,7 +18,15 @@ Asynchronously returns an array of NSFileVersions associated with the file locat
 ## Declaration
 
 ```swift
+class func getNonlocalVersionsOfItem(at url: URL, completionHandler: @escaping @Sendable ([NSFileVersion]?, (any Error)?) -> Void)
+```
+
+```swift
 class func nonlocalVersionsOfItem(at url: URL) async throws -> [NSFileVersion]
+```
+
+```objc
++ (void) getNonlocalVersionsOfItemAtURL:(NSURL *) url completionHandler:(void (^)(NSArray<NSFileVersion *> *nonlocalFileVersions, NSError *error)) completionHandler;
 ```
 
 #### Discussion

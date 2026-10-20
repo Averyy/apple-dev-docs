@@ -1,7 +1,8 @@
 # audioSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio settings that the output uses.
 
@@ -19,15 +20,20 @@ The audio settings that the output uses.
 var audioSettings: [String : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * audioSettings;
+```
+
 #### Discussion
 
-The dictionary must contain values for the keys in [`Linear PCM format settings`](linear-pcm-format-settings.md).
+The dictionary must contain values for the keys in [Linear PCM format settings](../linear-pcm-format-settings.md).
 
 Setting the property value to `nil` indicates that the output returns audio samples in an uncompressed format.
 
 ## See Also
 
-- [var audioTracks: [AVAssetTrack]](avassetreaderaudiomixoutput/audiotracks.md)
+### Inspecting an output
+- [var audioTracks: [AVAssetTrack]](./audiotracks.md)
   The tracks from which the output reads audio.
 
 

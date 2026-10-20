@@ -1,7 +1,8 @@
 # response()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches items from the Apple Music catalog that match a specific filter.
 

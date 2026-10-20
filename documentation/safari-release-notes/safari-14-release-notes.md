@@ -1,6 +1,7 @@
 # Safari 14 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 16, 2020 — Version 14 (16610.1.28)
 
@@ -45,14 +46,16 @@ Safari 14 ships with iOS & iPadOS 14 and macOS Big Sur 11.
 
 - Added a Web Authentication platform authenticator using Face ID or Touch ID, depending on which capability is present.
 - Added support for PIN entry and account selection on external Web Authentication security keys.
-- Added notifying users when one of their saved passwords in iCloud Keychain has shown up in a data breach; requesting a password change uses the [`well-known URL for changing passwords`](https://developer.apple.comhttps://wicg.github.io/change-password-url/) (https://example.com/.well-known/change-password), enabling websites to specify the page to open for updating a password.
-- Added support to Security Code AutoFill for [`domain-bound, one-time codes sent over SMS`](https://developer.apple.comhttps://wicg.github.io/sms-one-time-codes/); in the following 2FA SMS, Safari  only offers to fill the code on example.com, and no other domain. ```None
-Your Example code is 123446.
+- Added notifying users when one of their saved passwords in iCloud Keychain has shown up in a data breach; requesting a password change uses the [well-known URL for changing passwords](https://wicg.github.io/change-password-url/) (https://example.com/.well-known/change-password), enabling websites to specify the page to open for updating a password.
+- Added support to Security Code AutoFill for [domain-bound, one-time codes sent over SMS](https://wicg.github.io/sms-one-time-codes/); in the following 2FA SMS, Safari  only offers to fill the code on example.com, and no other domain.
 
-@example.com #123446
-```
+  ```
+  Your Example code is 123446.
 
-##### Javascript
+  @example.com #123446
+  ```
+
+##### JavaScript
 
 ###### New Features
 
@@ -70,7 +73,7 @@ Your Example code is 123446.
 - Changed to derive `<img>` aspect ratio from size attributes.
 - Support for the Picture-in-Picture API is now available in iOS on iPhone.
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -91,7 +94,8 @@ Your Example code is 123446.
 
 ## See Also
 
-- [Safari 14.1 Release Notes](safari-14_1-release-notes.md)
+### Version 14
+- [Safari 14.1 Release Notes](./safari-14_1-release-notes.md)
   Released April 26, 2021 — Version 14.1 (16611.1.21)
 
 

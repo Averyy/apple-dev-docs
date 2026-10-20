@@ -1,7 +1,8 @@
 # st_atim
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time of last access, given as a C `timespec` since the Epoch.
 

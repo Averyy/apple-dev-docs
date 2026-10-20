@@ -1,9 +1,10 @@
 # shared
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Instantiates [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) as a singleton, so it can be shared.
+Instantiates [`NEHotspotConfigurationManager`](../nehotspotconfigurationmanager.md) as a singleton, so it can be shared.
 
 **Availability**:
 - iOS 11.0+
@@ -18,9 +19,14 @@ Instantiates [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md)
 class var shared: NEHotspotConfigurationManager { get }
 ```
 
+```objc
+@property (class, strong, readonly) NEHotspotConfigurationManager * sharedManager;
+```
+
 ## See Also
 
-- [func apply(NEHotspotConfiguration, completionHandler: (((any Error)?) -> Void)?)](nehotspotconfigurationmanager/apply(_:completionhandler:).md)
+### Creating configurations
+- [func apply(NEHotspotConfiguration, completionHandler: (((any Error)?) -> Void)?)](./apply%28_,completionhandler%29.md)
   Adds or updates a Wi-Fi network configuration after prompting the user for permission, and then attempts to join the network under certain conditions.
 
 

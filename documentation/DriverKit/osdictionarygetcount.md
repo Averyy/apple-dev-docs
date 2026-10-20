@@ -1,27 +1,29 @@
 # OSDictionaryGetCount
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t OSDictionaryGetCount(OSDictionaryPtr obj);
 ```
 
 ## See Also
 
-- [ensureCapacity](osdictionary/ensurecapacity.md)
+### Inspecting a Dictionary
+- [ensureCapacity](./osdictionary/ensurecapacity.md)
   Allocates capacity for members in dictionary.
-- [getCapacity](osdictionary/getcapacity.md)
+- [getCapacity](./osdictionary/getcapacity.md)
   Returns count of currently allocated capacity for members in dictionary.
-- [getCount](osdictionary/getcount.md)
+- [getCount](./osdictionary/getcount.md)
   Returns count of members in dictionary.
 
 

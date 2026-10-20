@@ -1,7 +1,8 @@
 # UIActivityViewController.CollaborationModeRestriction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that disables the sharing mode and optionally displays an alert.
 
@@ -17,58 +18,63 @@ An object that disables the sharing mode and optionally displays an alert.
 class CollaborationModeRestriction
 ```
 
+```objc
+@interface UIActivityCollaborationModeRestriction : NSObject
+```
+
 ## Mentions
 
-- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+- [Collaborating and sharing copies of your data](../collaborating-and-sharing-copies-of-your-data.md)
 
 ## Topics
 
 ### Creating a disabled mode
-- [init(disabledMode: UIActivityCollaborationMode)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:).md)
+- [init(disabledMode: UIActivityCollaborationMode)](./collaborationmoderestriction/init%28disabledmode%29.md)
   Copies the provided disabled mode.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage%29.md)
   Creates a disabled mode that displays an alert when someone tries to select that mode.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle%29.md)
   Creates a disabled mode that displays an alert with a customized dismiss button.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunch:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle,alertrecoverysuggestionbuttontitle,alertrecoverysuggestionbuttonlaunch%29.md)
   Creates a disabled mode that displays an alert with a recovery suggestion.
 ### Accessing the disabled mode’s properties
-- [var alertDismissButtonTitle: String?](uiactivityviewcontroller/collaborationmoderestriction/alertdismissbuttontitle.md)
+- [var alertDismissButtonTitle: String?](./collaborationmoderestriction/alertdismissbuttontitle.md)
   A title for the alert’s dismiss button.
-- [var alertMessage: String?](uiactivityviewcontroller/collaborationmoderestriction/alertmessage.md)
+- [var alertMessage: String?](./collaborationmoderestriction/alertmessage.md)
   A message displayed by the alert
-- [var alertRecoverySuggestionButtonLaunchURL: URL?](uiactivityviewcontroller/collaborationmoderestriction/alertrecoverysuggestionbuttonlaunchurl.md)
+- [var alertRecoverySuggestionButtonLaunchURL: URL?](./collaborationmoderestriction/alertrecoverysuggestionbuttonlaunchurl.md)
   A launch URL that the system passes to your app when someone taps the recovery suggestion button.
-- [var alertRecoverySuggestionButtonTitle: String?](uiactivityviewcontroller/collaborationmoderestriction/alertrecoverysuggestionbuttontitle.md)
+- [var alertRecoverySuggestionButtonTitle: String?](./collaborationmoderestriction/alertrecoverysuggestionbuttontitle.md)
   A title for the alert’s recovery suggestion button.
-- [var alertTitle: String?](uiactivityviewcontroller/collaborationmoderestriction/alerttitle.md)
+- [var alertTitle: String?](./collaborationmoderestriction/alerttitle.md)
   A title for the alert that the system displays when someone selects the disabled mode.
-- [var disabledMode: UIActivityCollaborationMode](uiactivityviewcontroller/collaborationmoderestriction/disabledmode.md)
+- [var disabledMode: UIActivityCollaborationMode](./collaborationmoderestriction/disabledmode.md)
   The mode that is disabled.
-- [func description() -> String](uiactivityviewcontroller/collaborationmoderestriction/description.md)
+- [func description() -> String](./collaborationmoderestriction/description%28%29.md)
   Returns a description of the disabled mode.
 ### Initializers
-- [init?(coder: NSCoder)](uiactivityviewcontroller/collaborationmoderestriction/init(coder:).md)
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunchurl:).md)
+- [init?(coder: NSCoder)](./collaborationmoderestriction/init%28coder%29.md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle,alertrecoverysuggestionbuttontitle,alertrecoverysuggestionbuttonlaunchurl%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [enum UIActivityCollaborationMode](uiactivitycollaborationmode.md)
+### Restricting the sharing mode
+- [enum UIActivityCollaborationMode](../uiactivitycollaborationmode.md)
   A value that defines how the system shares an item.
 
 

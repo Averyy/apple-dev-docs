@@ -1,7 +1,8 @@
 # luminanceWeight
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var luminanceWeight: Float { get set }
+```
+
+```objc
+@property (nonatomic) float luminanceWeight;
 ```
 
 

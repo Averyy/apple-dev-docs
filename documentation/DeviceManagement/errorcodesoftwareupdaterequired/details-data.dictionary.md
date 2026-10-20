@@ -1,7 +1,8 @@
 # ErrorCodeSoftwareUpdateRequired.Details
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains additional data about the software update required error code.
 
@@ -14,21 +15,23 @@ A dictionary that contains additional data about the software update required er
 
 ## Declaration
 
-```swift
+```
 object ErrorCodeSoftwareUpdateRequired.Details
 ```
 
 ## Topics
 
 ### Objects
-- [object ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram](errorcodesoftwareupdaterequired/details-data.dictionary/requirebetaprogram-data.dictionary.md)
+- [object ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram](./details-data.dictionary/requirebetaprogram-data.dictionary.md)
   A dictionary containing details of the beta program.
 
 ## Properties
 
 - `BuildVersion` (string): The build version that the device needs to update to, for example, “20A242. The systems uses the build version for testing during seeding periods. This identifier can include a supplemental version identifier, for example, “20A242a”. If the `BuildVersion` isn’t consistent with the `OSVersion`, `OSVersion` take precedence.
 - `OSVersion` (string) *(required)*: The OS version that the device needs to update to, for example, “16.1”. This identifier can include a supplemental version identifier, for example, “16.1 (a)”.
-- `RequireBetaProgram` (ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram): The device enrolls in the beta program, allowing enforced software updates to beta program OS versions. The device remains in the beta program after the system completes the enforced software update. Available: iOS 17.5+ | iPadOS 17.5+ | macOS 14.5+ | visionOS 26+
+- `RequireBetaProgram` (ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram): The device enrolls in the beta program, allowing enforced software updates to beta program OS versions. The device remains in the beta program after the system completes the enforced software update.
+
+  Available: iOS 17.5+ | iPadOS 17.5+ | macOS 14.5+ | visionOS 26+
 
 
 ---

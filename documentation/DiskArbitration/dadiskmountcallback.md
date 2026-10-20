@@ -1,7 +1,8 @@
 # DADiskMountCallback
 
 **Framework**: Disk Arbitration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type of the callback function used by DADiskMount().
 
@@ -15,6 +16,10 @@ Type of the callback function used by DADiskMount().
 typealias DADiskMountCallback = (DADisk, DADissenter?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __DADisk *, const struct __DADissenter *, void *) DADiskMountCallback;
+```
+
 ## Parameters
 
 - `disk`: The disk object.
@@ -23,29 +28,30 @@ typealias DADiskMountCallback = (DADisk, DADissenter?, UnsafeMutableRawPointer?)
 
 ## See Also
 
-- [typealias DADiskAppearedCallback](dadiskappearedcallback.md)
+### Callbacks
+- [typealias DADiskAppearedCallback](./dadiskappearedcallback.md)
   Type of the callback function used by DARegisterDiskAppearedCallback().
-- [typealias DADiskClaimCallback](dadiskclaimcallback.md)
+- [typealias DADiskClaimCallback](./dadiskclaimcallback.md)
   Type of the callback function used by DADiskClaim().
-- [typealias DADiskClaimReleaseCallback](dadiskclaimreleasecallback.md)
+- [typealias DADiskClaimReleaseCallback](./dadiskclaimreleasecallback.md)
   Type of the callback function used by DADiskClaim().
-- [typealias DADiskDescriptionChangedCallback](dadiskdescriptionchangedcallback.md)
+- [typealias DADiskDescriptionChangedCallback](./dadiskdescriptionchangedcallback.md)
   Type of the callback function used by DARegisterDiskDescriptionChangedCallback().
-- [typealias DADiskDisappearedCallback](dadiskdisappearedcallback.md)
+- [typealias DADiskDisappearedCallback](./dadiskdisappearedcallback.md)
   Type of the callback function used by DARegisterDiskDisappearedCallback().
-- [typealias DADiskEjectApprovalCallback](dadiskejectapprovalcallback.md)
+- [typealias DADiskEjectApprovalCallback](./dadiskejectapprovalcallback.md)
   Type of the callback function used by DARegisterDiskEjectApprovalCallback().
-- [typealias DADiskEjectCallback](dadiskejectcallback.md)
+- [typealias DADiskEjectCallback](./dadiskejectcallback.md)
   Type of the callback function used by DADiskEject().
-- [typealias DADiskMountApprovalCallback](dadiskmountapprovalcallback.md)
+- [typealias DADiskMountApprovalCallback](./dadiskmountapprovalcallback.md)
   Type of the callback function used by DARegisterDiskMountApprovalCallback().
-- [typealias DADiskPeekCallback](dadiskpeekcallback.md)
+- [typealias DADiskPeekCallback](./dadiskpeekcallback.md)
   Type of the callback function used by DARegisterDiskPeekCallback().
-- [typealias DADiskRenameCallback](dadiskrenamecallback.md)
+- [typealias DADiskRenameCallback](./dadiskrenamecallback.md)
   Type of the callback function used by DADiskRename().
-- [typealias DADiskUnmountApprovalCallback](dadiskunmountapprovalcallback.md)
+- [typealias DADiskUnmountApprovalCallback](./dadiskunmountapprovalcallback.md)
   Type of the callback function used by DARegisterDiskUnmountApprovalCallback().
-- [typealias DADiskUnmountCallback](dadiskunmountcallback.md)
+- [typealias DADiskUnmountCallback](./dadiskunmountcallback.md)
   Type of the callback function used by DADiskUnmount().
 
 

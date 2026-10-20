@@ -1,12 +1,13 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a control with data in an unarchiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Initializes a control with data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(frame: NSRect)](nscontrol/init(frame:).md)
+### Creating a Control
+- [init(frame: NSRect)](./init%28frame%29.md)
   Initializes a control with the specified frame rectangle.
 
 

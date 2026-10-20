@@ -1,7 +1,8 @@
 # locationManager(_:didExitRegion:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user left the specified region.
 
@@ -17,9 +18,13 @@ Tells the delegate that the user left the specified region.
 optional func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion)
 ```
 
+```objc
+- (void) locationManager:(CLLocationManager *) manager didExitRegion:(CLRegion *) region;
+```
+
 ## Mentions
 
-- [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
+- [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
 #### Discussion
 
@@ -34,15 +39,16 @@ The region object provided may not be the same one that was registered. As a res
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didEnterRegion: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didenterregion:).md)
+### Receiving region-related updates
+- [func locationManager(CLLocationManager, didEnterRegion: CLRegion)](./locationmanager%28_,didenterregion%29.md)
   Tells the delegate that the user entered the specified region.
-- [func locationManager(CLLocationManager, didDetermineState: CLRegionState, for: CLRegion)](cllocationmanagerdelegate/locationmanager(_:diddeterminestate:for:).md)
+- [func locationManager(CLLocationManager, didDetermineState: CLRegionState, for: CLRegion)](./locationmanager%28_,diddeterminestate,for%29.md)
   Tells the delegate about the state of the specified region.
-- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:).md)
+- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](./locationmanager%28_,monitoringdidfailfor,witherror%29.md)
   Tells the delegate that a region monitoring error occurred.
-- [func locationManager(CLLocationManager, didStartMonitoringFor: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didstartmonitoringfor:).md)
+- [func locationManager(CLLocationManager, didStartMonitoringFor: CLRegion)](./locationmanager%28_,didstartmonitoringfor%29.md)
   Tells the delegate that a new region is being monitored.
-- [enum CLRegionState](clregionstate.md)
+- [enum CLRegionState](../clregionstate.md)
   Constants that reflect the relationship of the current location to the region boundaries.
 
 

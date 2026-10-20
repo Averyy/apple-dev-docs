@@ -1,7 +1,8 @@
 # onAppear(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform before this view appears.
 
@@ -23,7 +24,7 @@ func onAppear(perform action: (() -> Void)? = nil) -> some View
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
 #### Return Value
 
@@ -39,7 +40,8 @@ The exact moment that SwiftUI calls this method depends on the specific view typ
 
 ## See Also
 
-- [func onDisappear(perform: (() -> Void)?) -> some View](view/ondisappear(perform:).md)
+### Responding to view life cycle updates
+- [func onDisappear(perform: (() -> Void)?) -> some View](./ondisappear%28perform%29.md)
   Adds an action to perform after this view disappears.
 
 

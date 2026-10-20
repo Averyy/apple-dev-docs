@@ -1,7 +1,8 @@
 # init(engine:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a listener with the given engine.
 
@@ -17,6 +18,10 @@ Creates a listener with the given engine.
 
 ```swift
 init(engine: PHASEEngine)
+```
+
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine;
 ```
 
 ## Parameters

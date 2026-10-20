@@ -1,7 +1,8 @@
 # GeocoderReverseLookupOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 An option that constrains reverse lookup results to a specific language.
 
@@ -10,31 +11,32 @@ An option that constrains reverse lookup results to a specific language.
 
 ## Declaration
 
-```swift
+```
 interface GeocoderReverseLookupOptions
 ```
 
 #### Overview
 
-Configure [`GeocoderReverseLookupOptions`](geocoderreverselookupoptions.md) when performing a reverse lookup to constrain geocoder results to return results in a specific language.
+Configure [`GeocoderReverseLookupOptions`](./geocoderreverselookupoptions.md) when performing a reverse lookup to constrain geocoder results to return results in a specific language.
 
 ## Topics
 
 ### Options
-- [language](geocoderreverselookupoptions/language.md)
+- [language](./geocoderreverselookupoptions/language.md)
   The language to use when displaying the reverse lookup results.
-- [signal](geocoderreverselookupoptions/signal.md)
+- [signal](./geocoderreverselookupoptions/signal.md)
   A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [lookup(place, options)](geocoder/lookup.md)
+### Getting geocoder results
+- [lookup(place, options)](./geocoder/lookup.md)
   Converts an address to geographic coordinates.
-- [interface GeocoderLookupOptions](geocoderlookupoptions.md)
+- [interface GeocoderLookupOptions](./geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.
-- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](./geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
-- [interface GeocoderResponse](geocoderresponse.md)
+- [interface GeocoderResponse](./geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.
 
 

@@ -1,7 +1,8 @@
 # positionedByUser
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the person specified the camera position by interacting with the map.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the person specified the camera position 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,19 +23,20 @@ var positionedByUser: Bool { get }
 
 ## See Also
 
-- [static var automatic: MapCameraPosition](mapcameraposition/automatic.md)
+### Information about camera position and framing
+- [static var automatic: MapCameraPosition](./automatic.md)
   The position that frames the map’s content.
-- [var allowsAutomaticPitch: Bool](mapcameraposition/allowsautomaticpitch.md)
+- [var allowsAutomaticPitch: Bool](./allowsautomaticpitch.md)
   The setting that allows the map’s camera to automatically set the pitch when framing the item.
-- [var camera: MapCamera?](mapcameraposition/camera.md)
+- [var camera: MapCamera?](./camera.md)
   A map camera that defines the camera positioning.
-- [var fallbackPosition: MapCameraPosition?](mapcameraposition/fallbackposition.md)
+- [var fallbackPosition: MapCameraPosition?](./fallbackposition.md)
   The position to use if the framework hasn’t resolved the person’s location.
-- [var item: MKMapItem?](mapcameraposition/item.md)
+- [var item: MKMapItem?](./item.md)
   The item the map is framing.
-- [var rect: MKMapRect?](mapcameraposition/rect.md)
+- [var rect: MKMapRect?](./rect.md)
   The position that frames the given map rectangle.
-- [var region: MKCoordinateRegion?](mapcameraposition/region.md)
+- [var region: MKCoordinateRegion?](./region.md)
   The coordinate region to frame.
 
 

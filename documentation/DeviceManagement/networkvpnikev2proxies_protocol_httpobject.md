@@ -1,7 +1,8 @@
 # NetworkVPNIKEV2Proxies_Protocol_HTTPObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to use to configure the HTTP (non-TLS) server.
 
@@ -15,19 +16,24 @@ The dictionary to use to configure the HTTP (non-TLS) server.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIKEV2Proxies_Protocol_HTTPObject
 ```
 
 ## Properties
 
 - `Enable` (boolean): If `true`, enables proxy for HTTP traffic.
+
+  **Default**: `false`
 - `HostName` (string): The host name of the HTTP proxy.
 - `Port` (integer): The port number of the HTTP proxy. This field is required if `HostName` is specified.
 
+  **Minimum**: `0`; **Maximum**: `65535`
+
 ## See Also
 
-- [object NetworkVPNIKEV2Proxies_Protocol_HTTPSObject](networkvpnikev2proxies_protocol_httpsobject.md)
+### Objects
+- [object NetworkVPNIKEV2Proxies_Protocol_HTTPSObject](./networkvpnikev2proxies_protocol_httpsobject.md)
   The dictionary to use to configure the HTTPS (TLS) server.
 
 

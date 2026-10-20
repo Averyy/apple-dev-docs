@@ -1,7 +1,8 @@
 # deletedCount
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of deleted resources.
 
@@ -10,7 +11,7 @@ The number of deleted resources.
 
 ## Declaration
 
-```swift
+```
 attribute Int32 deletedCount;
 ```
 

@@ -1,18 +1,19 @@
 # Adding supplemental content to a documentation catalog
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Include articles and extension files to extend your source documentation comments or provide supporting conceptual content.
 
 #### Overview
 
-The process of crafting great documentation is an art. Your content is unique; you know which elements, beyond source documentation comments, provide the most value to your readers. For information about adding supplemental content to a documentation catalog with DocC, see [`Adding Supplemental Content to a Documentation Catalog Swift.Org`](https://developer.apple.comhttps://www.swift.org/documentation/docc/adding-supplemental-content-to-a-documentation-catalog).
+The process of crafting great documentation is an art. Your content is unique; you know which elements, beyond source documentation comments, provide the most value to your readers. For information about adding supplemental content to a documentation catalog with DocC, see [Adding Supplemental Content to a Documentation Catalog Swift.Org](https://www.swift.org/documentation/docc/adding-supplemental-content-to-a-documentation-catalog).
 
-##### Add Articles to Explain Concepts or Describe Tasks
+##### Add articles to explain concepts or describe tasks
 
 If your documentation catalog includes an article file with the name `GettingStarted.md`, Xcode displays this article in the documentation viewer with a document icon.
 
-![A screenshot of the Xcode documentation viewer that shows the Getting started with sloths article in a selected state in the Project navigator on the left. The pane on the right displays the article page with a document icon. ](/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-1@2x.png)
+![A screenshot of the Xcode documentation viewer that shows the Getting started with sloths article in a selected state in the Project navigator on the left. The pane on the right displays the article page with a document icon. ](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-1@2x.png)
 
 The structure of an article is similar to symbol files or a top-level landing page, with the exception that the first level 1 header is regular content instead of a symbol reference. For example, the Getting Started with Sloths article contains the following title, single-sentence abstract or summary, and Overview section:
 
@@ -39,9 +40,9 @@ To add an article to your documentation catalog in Xcode, do the following:
 5. Modify the first line of the file to specify its title.
 6. Replace the summary and placeholders in the file with appropriate content.
 
-![A screenshot that shows the Xcode file template chooser with the Article File template in a selected state.](/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-2@2x.png)
+![A screenshot that shows the Xcode file template chooser with the Article File template in a selected state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-2@2x.png)
 
-##### Add Extension Files to Append to or Override Source Documentation Comments
+##### Add extension files to append to or override source documentation comments
 
 DocC supports supplementing or completely replacing source documentation comments with content in extension files. To add an extension file to your documentation catalog, do the following:
 
@@ -53,13 +54,14 @@ DocC supports supplementing or completely replacing source documentation comment
 
 In the extension file, replace the `Symbol` placeholder with the absolute path to the symbol. The absolute path is the target’s product module name followed by the symbol name.
 
-![A screenshot that shows the Xcode file template chooser with the Extension File template in a selected state.](/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-3@2x.png)
+![A screenshot that shows the Xcode file template chooser with the Extension File template in a selected state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-3@2x.png)
 
 ## See Also
 
-- [Writing symbol documentation in your source files](writing-symbol-documentation-in-your-source-files.md)
+### Documentation content
+- [Writing symbol documentation in your source files](./writing-symbol-documentation-in-your-source-files.md)
   Add reference documentation to your symbols that explains how to use them.
-- [SlothCreator: Building DocC documentation in Xcode](slothcreator-building-docc-documentation-in-xcode.md)
+- [SlothCreator: Building DocC documentation in Xcode](./slothcreator-building-docc-documentation-in-xcode.md)
   Build DocC documentation for a Swift package that contains a DocC Catalog.
 
 

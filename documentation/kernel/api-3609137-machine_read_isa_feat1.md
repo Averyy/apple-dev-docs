@@ -1,14 +1,15 @@
 # machine_read_isa_feat1
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 arm_isa_feat1_reg machine_read_isa_feat1(void);
 ```
 

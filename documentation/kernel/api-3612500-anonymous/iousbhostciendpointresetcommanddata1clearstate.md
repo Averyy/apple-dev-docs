@@ -1,14 +1,15 @@
 # IOUSBHostCIEndpointResetCommandData1ClearState
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIEndpointResetCommandData1ClearState = IOUSBBit(0)
 ```
 

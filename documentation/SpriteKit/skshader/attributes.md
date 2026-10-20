@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of attributes associated with the shader.
 
@@ -18,6 +19,10 @@ The list of attributes associated with the shader.
 
 ```swift
 var attributes: [SKAttribute] { get set }
+```
+
+```objc
+@property (nonatomic, copy, nonnull) NSArray<SKAttribute *> * attributes;
 ```
 
 #### Discussion

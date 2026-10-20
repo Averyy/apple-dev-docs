@@ -1,7 +1,8 @@
 # protocol
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manner in which the system applies your app’s device discovery extension.
 
@@ -9,7 +10,7 @@ The manner in which the system applies your app’s device discovery extension.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The manner in which the system applies your app’s device discovery extension.
 var `protocol`: DDDevice.Protocol { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) DDDeviceProtocol protocol;
+```
+
 #### Discussion
 
-The value is [`DDDevice.Protocol.dial`](dddevice/protocol-swift.enum/dial.md) for the discovery of third-party media receivers.
+The value is [`DDDevice.Protocol.dial`](./protocol-swift.enum/dial.md) for the discovery of third-party media receivers.
 
 ## See Also
 
-- [DDDevice.Protocol](dddevice/protocol-swift.enum.md)
+### Indicating the protocol
+- [DDDevice.Protocol](./protocol-swift.enum.md)
   An identifier for the manner in which an app interacts with a device.
-- [var protocolType: UTType](dddevice/protocoltype.md)
+- [var protocolType: UTType](./protocoltype.md)
   A custom universal type that describes the device’s manner of communication with the extension.
-- [var bluetoothIdentifier: UUID?](dddevice/bluetoothidentifier.md)
+- [var bluetoothIdentifier: UUID?](./bluetoothidentifier.md)
   An identifier to communicate with the device through Bluetooth wireless technology.
-- [var networkEndpoint: NWEndpoint?](dddevice/networkendpoint-3lah1.md)
+- [var networkEndpoint: NWEndpoint?](./networkendpoint-3lah1.md)
   An object that describes a local-network device.
 
 

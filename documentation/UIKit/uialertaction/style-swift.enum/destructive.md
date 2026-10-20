@@ -1,7 +1,8 @@
 # UIAlertAction.Style.destructive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apply a style that indicates the action might change or delete data.
 
@@ -9,7 +10,7 @@ Apply a style that indicates the action might change or delete data.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Apply a style that indicates the action might change or delete data.
 case destructive
 ```
 
+```c
+UIAlertActionStyleDestructive
+```
+
 ## See Also
 
-- [UIAlertAction.Style.default](uialertaction/style-swift.enum/default.md)
+### Constants
+- [UIAlertAction.Style.default](./default.md)
   Apply the default style to the action’s button.
-- [UIAlertAction.Style.cancel](uialertaction/style-swift.enum/cancel.md)
+- [UIAlertAction.Style.cancel](./cancel.md)
   Apply a style that indicates the action cancels the operation and leaves things unchanged.
 
 

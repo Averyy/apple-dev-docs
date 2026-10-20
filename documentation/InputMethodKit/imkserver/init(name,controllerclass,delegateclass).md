@@ -1,7 +1,8 @@
 # init(name:controllerClass:delegateClass:)
 
 **Framework**: InputMethodKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a server object initialized with the provided parameters.
 
@@ -12,6 +13,10 @@ Creates and returns a server object initialized with the provided parameters.
 
 ```swift
 init!(name: String!, controllerClass controllerClassID: AnyClass!, delegateClass delegateClassID: AnyClass!)
+```
+
+```objc
+- (id) initWithName:(NSString *) name controllerClass:(Class) controllerClassID delegateClass:(Class) delegateClassID;
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ An initialized server object.
 
 ## See Also
 
-- [init!(name: String!, bundleIdentifier: String!)](imkserver/init(name:bundleidentifier:).md)
+### Initializing a Server Object
+- [init!(name: String!, bundleIdentifier: String!)](./init%28name,bundleidentifier%29.md)
   Creates and returns a server object from property list information contained in the provided bundle.
 
 

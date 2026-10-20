@@ -1,7 +1,8 @@
 # IOHIDOptionsType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Options for opening a device via IOHIDLib.
 
@@ -10,27 +11,29 @@ Options for opening a device via IOHIDLib.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOHIDOptionsType;
 ```
 
 ## Topics
 
 ### Constants
-- [kIOHIDOptionsTypeNone](1644502-anonymous/kiohidoptionstypenone.md)
-- [kIOHIDOptionsTypeSeizeDevice](1644502-anonymous/kiohidoptionstypeseizedevice.md)
+- [kIOHIDOptionsTypeNone](./api-1644502-anonymous/kiohidoptionstypenone.md)
+- [kIOHIDOptionsTypeSeizeDevice](./api-1644502-anonymous/kiohidoptionstypeseizedevice.md)
 
 ## See Also
 
-- [IOHIDBiometricEventType](iohidbiometriceventtype.md)
-- [IOHIDPointerEventOptions](iohidpointereventoptions.md)
-- [IOHIDStandardType](iohidstandardtype.md)
+### Event Types
+- [IOHIDBiometricEventType](./iohidbiometriceventtype.md)
+- [IOHIDPointerEventOptions](./iohidpointereventoptions.md)
+- [IOHIDStandardType](./iohidstandardtype.md)
   Type to define what industrial standard the device is referencing.
-- [IOHIDValueScaleType](iohidvaluescaletype.md)
+- [IOHIDValueScaleType](./iohidvaluescaletype.md)
   Describes different types of scaling that can be performed on element values.
-- [IOHIDKeyboardEventOptions](iohidkeyboardeventoptions.md)
-- [IOHIDScrollEventOptions](iohidscrolleventoptions.md)
-- [IOHIDEventType](iohideventtype.md)
+- [IOHIDKeyboardEventOptions](./iohidkeyboardeventoptions.md)
+- [IOHIDScrollEventOptions](./iohidscrolleventoptions.md)
+- [IOHIDEventType](./iohideventtype.md)
+### Related Documentation
 - [IOHIDOptionsType](../iokit/iohidoptionstype.md)
   Options for opening a device via IOHIDLib.
 

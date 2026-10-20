@@ -1,7 +1,8 @@
 # AssistantSchemas.MailIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer email functionality.
 
@@ -23,34 +24,34 @@ protocol MailIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var archiveMail: some AssistantSchemas.Intent](assistantschemas/mailintent/archivemail.md)
+- [var archiveMail: some AssistantSchemas.Intent](./mailintent/archivemail.md)
   The app intent conforms to the schema for archiving an email message.
-- [var createDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/createdraft.md)
+- [var createDraft: some AssistantSchemas.Intent](./mailintent/createdraft.md)
   The app intent conforms to the schema for creating an email draft.
-- [var deleteDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/deletedraft.md)
+- [var deleteDraft: some AssistantSchemas.Intent](./mailintent/deletedraft.md)
   The app intent conforms to the schema for deleting an email draft.
-- [var deleteMail: some AssistantSchemas.Intent](assistantschemas/mailintent/deletemail.md)
+- [var deleteMail: some AssistantSchemas.Intent](./mailintent/deletemail.md)
   The app intent conforms to the schema for deleting email messages.
-- [var forwardMail: some AssistantSchemas.Intent](assistantschemas/mailintent/forwardmail.md)
+- [var forwardMail: some AssistantSchemas.Intent](./mailintent/forwardmail.md)
   The app intent conforms to the schema for forwarding an email message.
-- [var replyMail: some AssistantSchemas.Intent](assistantschemas/mailintent/replymail.md)
+- [var replyMail: some AssistantSchemas.Intent](./mailintent/replymail.md)
   The app intent conforms to the schema for replying to an email message.
-- [var saveDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/savedraft.md)
+- [var saveDraft: some AssistantSchemas.Intent](./mailintent/savedraft.md)
   The app intent conforms to the schema for saving an email draft.
-- [var sendDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/senddraft.md)
+- [var sendDraft: some AssistantSchemas.Intent](./mailintent/senddraft.md)
   The app intent conforms to the schema for sending an email draft.
-- [var updateDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/updatedraft.md)
+- [var updateDraft: some AssistantSchemas.Intent](./mailintent/updatedraft.md)
   The app intent conforms to the schema for updating an email draft.
-- [var updateMail: some AssistantSchemas.Intent](assistantschemas/mailintent/updatemail.md)
+- [var updateMail: some AssistantSchemas.Intent](./mailintent/updatemail.md)
   The app intent conforms to the schema for updating email messages.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

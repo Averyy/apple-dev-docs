@@ -1,7 +1,8 @@
 # row
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The row (offset into the part’s render transform subtree)
 

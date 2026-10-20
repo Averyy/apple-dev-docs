@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ContentTypeDidChange
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content type changed event
 
@@ -22,19 +23,19 @@ struct ContentTypeDidChange
 ## Topics
 
 ### Instance Properties
-- [let contentType: VideoPlayerEvents.ContentTypeDidChange.ContentType](videoplayerevents/contenttypedidchange/contenttype-swift.property.md)
+- [let contentType: VideoPlayerEvents.ContentTypeDidChange.ContentType](./contenttypedidchange/contenttype-swift.property.md)
   contentType type, can be same as previousType
-- [let previousType: VideoPlayerEvents.ContentTypeDidChange.ContentType](videoplayerevents/contenttypedidchange/previoustype.md)
+- [let previousType: VideoPlayerEvents.ContentTypeDidChange.ContentType](./contenttypedidchange/previoustype.md)
   previous content type
 ### Enumerations
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType](videoplayerevents/contenttypedidchange/contenttype-swift.enum.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType](./contenttypedidchange/contenttype-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSecAttrKeyType3DES
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 3DES algorithm.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kSecAttrKeyType3DES: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyType3DES;
 ```
 
 

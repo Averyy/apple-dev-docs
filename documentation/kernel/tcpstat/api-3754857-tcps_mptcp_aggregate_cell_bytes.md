@@ -1,14 +1,15 @@
 # tcps_mptcp_aggregate_cell_bytes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t tcps_mptcp_aggregate_cell_bytes;
 ```
 

@@ -1,7 +1,8 @@
 # items
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items to display in the section.
 
@@ -14,6 +15,10 @@ The items to display in the section.
 
 ```swift
 var items: [CPMapPanelItem] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<CPMapPanelItem *> * items;
 ```
 
 #### Discussion

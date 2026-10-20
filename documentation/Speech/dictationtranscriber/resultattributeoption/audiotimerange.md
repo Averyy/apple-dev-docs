@@ -1,7 +1,8 @@
 # DictationTranscriber.ResultAttributeOption.audioTimeRange
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Includes time-code attributes in a transcription’s attributed string.
 
@@ -24,7 +25,8 @@ These are `Foundation/AttributeScopes/SpeechAttributes/TimeRangeAttribute` attri
 
 ## See Also
 
-- [DictationTranscriber.ResultAttributeOption.transcriptionConfidence](dictationtranscriber/resultattributeoption/transcriptionconfidence.md)
+### Result attribute options
+- [DictationTranscriber.ResultAttributeOption.transcriptionConfidence](./transcriptionconfidence.md)
   Includes confidence attributes in a transcription’s attributed string.
 
 

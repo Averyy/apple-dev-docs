@@ -1,7 +1,8 @@
 # stop(blendOutDuration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops an animation with a fade-out time.
 

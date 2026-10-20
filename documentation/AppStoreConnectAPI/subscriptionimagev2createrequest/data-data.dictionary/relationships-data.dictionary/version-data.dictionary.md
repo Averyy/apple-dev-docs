@@ -1,21 +1,22 @@
 # SubscriptionImageV2CreateRequest.Data.Relationships.Version
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.4.1+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImageV2CreateRequest.Data.Relationships.Version
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionImageV2CreateRequest.Data.Relationships.Version.Data](subscriptionimagev2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionImageV2CreateRequest.Data.Relationships.Version.Data](./version-data.dictionary/data-data.dictionary.md)
   The resource linkage data identifying the version associated with this request.
 
 ## Properties

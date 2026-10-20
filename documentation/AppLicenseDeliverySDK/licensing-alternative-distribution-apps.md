@@ -1,28 +1,29 @@
 # Licensing alternative distribution apps
 
-**Framework**: App License Delivery SDK
+**Framework**: App License Delivery SDK  
+**Role**: Article
 
 Build a license server that supports the installation of your apps and the apps available in your marketplace.
 
 #### Overview
 
-iOS and iPadOS require each app that installs outside of the App Store to have a license issued by the developer. As the developer of an alternative app marketplace or other app that installs over the web, you use the [`App License Delivery SDK`](AppLicenseDeliverySDK.md) to generate a license for each download request for your app. Alternative app marketplaces also create a license for each download request for the apps that they distribute.
+iOS and iPadOS require each app that installs outside of the App Store to have a license issued by the developer. As the developer of an alternative app marketplace or other app that installs over the web, you use the [App License Delivery SDK](./AppLicenseDeliverySDK.md) to generate a license for each download request for your app. Alternative app marketplaces also create a license for each download request for the apps that they distribute.
 
-Before continuing, ensure you complete the steps in either [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace) or [`Distributing your app from your website`](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website).
+Before continuing, ensure you complete the steps in either [Creating an alternative app marketplace](../MarketplaceKit/creating-an-alternative-app-marketplace.md) or [Distributing your app from your website](../MarketplaceKit/distributing-your-app-from-your-website.md).
 
-The [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit) installation methods trigger the device’s operating system to request a license from your web server before installing a particular app. To support installation of your app or the apps on your marketplace, implement a license server to process the requests. Your license server consists of two endpoints that use this SDK: one that creates licenses for new installations and another that updates the licenses of existing installations.
+The [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md) installation methods trigger the device’s operating system to request a license from your web server before installing a particular app. To support installation of your app or the apps on your marketplace, implement a license server to process the requests. Your license server consists of two endpoints that use this SDK: one that creates licenses for new installations and another that updates the licenses of existing installations.
 
-> ❗ **Important**: Prepare your App License Delivery (ALD) encryption assets and development environment for use with the licensing workflow. For more information, see [`Configuring your app licensing environment`](configuring-the-app-licensing-environment.md).
+> ❗ **Important**: Prepare your App License Delivery (ALD) encryption assets and development environment for use with the licensing workflow. For more information, see [Configuring your app licensing environment](./configuring-the-app-licensing-environment.md).
 
-#### Publish Your Licensing Endpoint Details
+#### Publish your licensing endpoint details
 
 To inform the system of the details of your license server, publish a `marketplace-kit` configuration file in the standard location. The system checks for the file at the following relative path:
 
-```None
+```
 https://<fully qualified domain>/.well-known/marketplace-kit
 ```
 
-The base domain, `<fully qualified domain>`, of the above URL is from the app’s domain that you add to App Store Connect. For more information about adding and managing domains in App Store Connect, see [`Alternative Distribution Domains`](https://developer.apple.com/documentation/appstoreconnectapi/alternative-distribution-domains).
+The base domain, `<fully qualified domain>`, of the above URL is from the app’s domain that you add to App Store Connect. For more information about adding and managing domains in App Store Connect, see [Alternative Distribution Domains](../AppStoreConnectAPI/alternative-distribution-domains.md).
 
 This URL is your licensing endpoint, so your web server needs to serve a JSON configuration file that identifies your license server details:
 
@@ -45,30 +46,30 @@ The system requires that the “`license`” key specifies the following propert
 | `license` key | Property |
 | --- | --- |
 | `dynamicLicenseURL` | An endpoint that generates licenses for apps and app versions new to a device. |
-| `licenseRenewalURL` | An endpoint that generates updated licenses for apps and app versions already installed on the device. For more information, see [`Renewing and revoking app licenses`](renewing-and-revoking-app-licenses.md). |
-| `licenseResolutionURL` | A webpage that gives a person more information about an expired app license or the opportunity to renew the license. For more information, see [`Renewing and revoking app licenses`](renewing-and-revoking-app-licenses.md). |
+| `licenseRenewalURL` | An endpoint that generates updated licenses for apps and app versions already installed on the device. For more information, see [Renewing and revoking app licenses](./renewing-and-revoking-app-licenses.md). |
+| `licenseResolutionURL` | A webpage that gives a person more information about an expired app license or the opportunity to renew the license. For more information, see [Renewing and revoking app licenses](./renewing-and-revoking-app-licenses.md). |
 | `signingCertificateURL` | A certificate that signs liceneses you create. |
 | `encryptionCertificateURL` | A certificate that the system uses to encrypt license requests. |
 
-> **Note**: The “`restore`” and “`updates`” keys configuration require you to set a value. For more information, see [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website) for alternative marketplace apps, and [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace) for other apps.
+> **Note**: The “`restore`” and “`updates`” keys configuration require you to set a value. For more information, see [Installing your app from your website](../MarketplaceKit/installing-your-app-from-your-website.md) for alternative marketplace apps, and [Installing apps from an alternative marketplace](../MarketplaceKit/installing-apps-from-an-alternative-marketplace.md) for other apps.
 
-Host the file using the `https://` URL scheme with a valid certificate, and don’t use redirects. This configuration publication follows the same pattern as the `apple-app-site-association` file. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
+Host the file using the `https://` URL scheme with a valid certificate, and don’t use redirects. This configuration publication follows the same pattern as the `apple-app-site-association` file. For more information, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-For more information about the signing and encryption certificates, see [`Configuring your app licensing environment`](configuring-the-app-licensing-environment.md).
+For more information about the signing and encryption certificates, see [Configuring your app licensing environment](./configuring-the-app-licensing-environment.md).
 
-#### Handle a Dynamic License Request
+#### Handle a dynamic license request
 
 A license request consists of a single POST to your licensing endpoint. Each POST can contain a request for a license for one or more apps. Your license server sends a single response to the POST which typically includes one license for each requested app. The license request is *dynamic*, meaning that your license server provides a new license for each install request.
 
 If you limit app licenses to authenticated devices, check the POST header for an access token that links the license request to an account. The following is an example header:
 
-```None
+```
 POST /resource HTTP/1.1
 Host: server.example.com
 Authorization: Bearer mF_9.B5f-4.1JqM
 ```
 
-Your token endpoint issues the bearer token to the signed-in person at the start of the app download request and the system adds it to all further communication with your server for their account. Use your rules to decide whether to issue the licenses in the request for the account. For more information about authorization, see [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website).
+Your token endpoint issues the bearer token to the signed-in person at the start of the app download request and the system adds it to all further communication with your server for their account. Use your rules to decide whether to issue the licenses in the request for the account. For more information about authorization, see [Installing your app from your website](../MarketplaceKit/installing-your-app-from-your-website.md).
 
 The following example reflects the body of a dynamic license request the system makes to your licensing endpoint:
 
@@ -93,16 +94,16 @@ The license request payload contains the following data:
 | --- | --- |
 | `licenseRequest` | A `base64` encoded license request that’s AES CBC encrypted. |
 | `licenseKey` | An AES key/IV that’s `base64` encoded and RSA-OAEP encrypted. This key encrypts the license request. |
-| `appsById` | A set of one or more identifiers ([`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid)) that refer to an app that your marketplace distributes. |
+| `appsById` | A set of one or more identifiers ([`AppleItemID`](../MarketplaceKit/appleitemid.md)) that refer to an app that your marketplace distributes. |
 
 Each item in `appsById` describes the following data:
 
 | `appsById` key | Value |
 | --- | --- |
-| `appleVersionID` | The app version ([`AppleVersionID`](https://developer.apple.com/documentation/marketplacekit/appleversionid)) that the device requests. |
+| `appleVersionID` | The app version ([`AppleVersionID`](../MarketplaceKit/appleversionid.md)) that the device requests. |
 | `assetPublicId` | The app variant that the system chooses for the device. |
 
-To begin processing the request, parse the payload using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder):
+To begin processing the request, parse the payload using a [`JSONDecoder`](../Foundation/jsondecoder.md):
 
 ```swift
 struct LicenseRequest: Decodable {
@@ -144,9 +145,9 @@ let encryptionCertificateKey = try String(contentsOf:
     URL(fileURLWithPath: encryptionCertificateKeyPath))
 ```
 
-#### Decrypt the Request Payload
+#### Decrypt the request payload
 
-The system encrypts the payload `licenseRequest` and sends the request to your server. Then, your license server uses your App License Delivery assets in combination with the payload `licenseKey` to decrypt the `licenseRequest` payload and create a license. To assist with decryption, use [`swift-crypto`](https://developer.apple.comhttps://github.com/apple/swift-crypto):
+The system encrypts the payload `licenseRequest` and sends the request to your server. Then, your license server uses your App License Delivery assets in combination with the payload `licenseKey` to decrypt the `licenseRequest` payload and create a license. To assist with decryption, use [swift-crypto](https://github.com/apple/swift-crypto):
 
 ```swift
 import Crypto // Requires the `swift-crypto 3.2.0` package.
@@ -192,11 +193,11 @@ do {
 }
 ```
 
-#### Start a License Session
+#### Start a license session
 
 The decrypted payload includes details about the apps for which the system requests a license. To assist with creating licenses for the apps, the framework needs your ALD encryption assets.
 
-The PASK, which you can find at [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/certificates/list), is a JSON file with a `base64` encoded authorization key inside (`authorizationKey`). Extract the `authorizationKey` value to its own file on disk. The following code decodes the `base64` contents of the value for use with the framework:
+The PASK, which you can find at [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/certificates/list), is a JSON file with a `base64` encoded authorization key inside (`authorizationKey`). Extract the `authorizationKey` value to its own file on disk. The following code decodes the `base64` contents of the value for use with the framework:
 
 ```swift
 let paskPath = "path/to/<PASK-authorization-key-filename>"
@@ -224,30 +225,30 @@ let signingKey = Data(base64Encoded: try String(contentsOf:
     URL(fileURLWithPath: signingKeyPath)))!.bytes
 ```
 
-Create an [`ALDProvider`](aldprovider.md) instance by calling the [`init(encryptionCert:signingCert:PASK:signingKey:)`](aldprovider/init(encryptioncert:signingcert:pask:signingkey:).md) initializer, passing your ALD encryption assets:
+Create an [`ALDProvider`](./aldprovider.md) instance by calling the [`init(encryptionCert:signingCert:PASK:signingKey:)`](./aldprovider/init%28encryptioncert,signingcert,pask,signingkey%29.md) initializer, passing your ALD encryption assets:
 
 ```swift
 let provider = ALDProvider(encryptionCert: encryptionCert, 
     signingCert: signingCert, PASK: pask, signingKey: signingKey)
 ```
 
-Then, hand the decrypted payload to the framework through a session object. Create a session by calling the provider’s [`createSession(clientRequest:)`](aldprovider/createsession(clientrequest:).md) method, which returns an [`ALDSession`](aldsession.md) instance:
+Then, hand the decrypted payload to the framework through a session object. Create a session by calling the provider’s [`createSession(clientRequest:)`](./aldprovider/createsession%28clientrequest%29.md) method, which returns an [`ALDSession`](./aldsession.md) instance:
 
 ```swift
 let session = try provider.createSession(clientRequest: decryptedRequest.bytes)
 ```
 
-Review the session’s [`requestedAppleItemIDList`](aldsession/requestedappleitemidlist.md) list to confirm which of the requested apps you approve for download. If the device isn’t eligible for a particular app — for example, if a required subscription lapsed — you can omit a license for that app in the response.
+Review the session’s [`requestedAppleItemIDList`](./aldsession/requestedappleitemidlist.md) list to confirm which of the requested apps you approve for download. If the device isn’t eligible for a particular app — for example, if a required subscription lapsed — you can omit a license for that app in the response.
 
-#### Generate a Dynamic License
+#### Generate a dynamic license
 
 With the session object, generate a license for each app that you approve for download.
 
 1. Choose a value for the license ID. Ensure the ID is unique across all the licenses your license server distributes.
-2. Create a license attribute for the license ID by calling [`init(licenseID:)`](aldlicenseattribute/init(licenseid:).md).
-3. Set the [`issuedTime`](aldlicenseattribute/issuedtime.md) and a [`duration`](aldlicenseattribute/duration.md), in seconds, that determines when the license expires. For example, setting `duration` to `86400` prevents the licensed app from launching after a day.
-4. Set the `appKey` for the app, or *key blob*, which is unique per app variant. Refer to `appsById` in the request payload for the app ID, and `assetPublicId` for the variant that iOS needs for that app. App Store Connect provides the key blob during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package).
-5. Create the license by calling the [`generateLicense(attr:)`](aldsession/generatelicense(attr:).md) method with the license attribute.
+2. Create a license attribute for the license ID by calling [`init(licenseID:)`](./aldlicenseattribute/init%28licenseid%29.md).
+3. Set the [`issuedTime`](./aldlicenseattribute/issuedtime.md) and a [`duration`](./aldlicenseattribute/duration.md), in seconds, that determines when the license expires. For example, setting `duration` to `86400` prevents the licensed app from launching after a day.
+4. Set the `appKey` for the app, or *key blob*, which is unique per app variant. Refer to `appsById` in the request payload for the app ID, and `assetPublicId` for the variant that iOS needs for that app. App Store Connect provides the key blob during app ingestion. For more information, see [Ingesting an alternative distribution package](../MarketplaceKit/ingesting-an-alternative-distribution-package.md).
+5. Create the license by calling the [`generateLicense(attr:)`](./aldsession/generatelicense%28attr%29.md) method with the license attribute.
 
 ```swift
 let licenseID: UInt64 = 1 // Placeholder value.
@@ -263,19 +264,19 @@ try attribute.addAppKey(appKey: appKey)
 try session.generateLicense(attr: attribute)
 ```
 
-If the system requests a license for multiple apps in its POST, repeat this process for each app. Every time you call [`generateLicense(attr:)`](aldsession/generatelicense(attr:).md), the framework queues an additional license for the response.
+If the system requests a license for multiple apps in its POST, repeat this process for each app. Every time you call [`generateLicense(attr:)`](./aldsession/generatelicense%28attr%29.md), the framework queues an additional license for the response.
 
-> ❗ **Important**: In iOS 17.4, set a value less than `Int64.max`; see [`iOS & iPadOS 17.4 Release Notes`](https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-17_4-release-notes).
+> ❗ **Important**: In iOS 17.4, set a value less than `Int64.max`; see [iOS & iPadOS 17.4 Release Notes](../ios-ipados-release-notes/ios-ipados-17_4-release-notes.md).
 
-#### Respond with the Generated Licenses
+#### Respond with the generated licenses
 
-The framework assists you with preparing a response to the original POST. Call [`generateLicenseResponse()`](aldsession/generatelicenseresponse().md) begin the response:
+The framework assists you with preparing a response to the original POST. Call [`generateLicenseResponse()`](./aldsession/generatelicenseresponse%28%29.md) begin the response:
 
 ```swift
 let response = try session.generateLicenseResponse()
 ```
 
-Then, call [`finalizeLicenseResponse(licenseResponse:signature:)`](aldsession/finalizelicenseresponse(licenseresponse:signature:).md) to retrieve the response data.
+Then, call [`finalizeLicenseResponse(licenseResponse:signature:)`](./aldsession/finalizelicenseresponse%28licenseresponse,signature%29.md) to retrieve the response data.
 
 ```swift
 let staticBlob = try session.finalizeLicenseResponse(licenseResponse: response)
@@ -308,7 +309,7 @@ The format of the license response payload is:
 | License response payload key | Value |
 | --- | --- |
 | `license` | The `finalizeLicenseResponse` return result that you encode in `base64`. This value contains the license(s) that you added to the session. |
-| `unlicensedApps` | An array that contains an [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid) for each app from the request for which you choose not to provide a license. |
+| `unlicensedApps` | An array that contains an [`AppleItemID`](../MarketplaceKit/appleitemid.md) for each app from the request for which you choose not to provide a license. |
 
 > ❗ **Important**: To complete an installation, the system requires a response from your server within 60 seconds of making the request. If you use a web debugging proxy tool to test license generation, make sure it doesn’t interfere with your server’s ability to respond promptly.
 
@@ -316,28 +317,29 @@ When the system receives the `license` response, it validates the licenses conta
 
 Then, the system downloads the licensed app(s) from your app web server. For more information about serving app downloads, see:
 
-- [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website) for alternative marketplace apps or other apps that install from your website.
-- [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace) for other apps.
+- [Installing your app from your website](../MarketplaceKit/installing-your-app-from-your-website.md) for alternative marketplace apps or other apps that install from your website.
+- [Installing apps from an alternative marketplace](../MarketplaceKit/installing-apps-from-an-alternative-marketplace.md) for other apps.
 
-#### Track the Number of Simultaneous App Installs for an Account
+#### Track the number of simultaneous app installs for an account
 
 When the system sends a request to your license server, it includes the authentication token in the header. Use the token to associate the request with a specific person’s account.
 
-The [`ALDSession`](aldsession.md) object’s [`requestDeviceID`](aldsession/requestdeviceid.md) property represents a unique ID for the device on which the person requests to install the app.
+The [`ALDSession`](./aldsession.md) object’s [`requestDeviceID`](./aldsession/requestdeviceid.md) property represents a unique ID for the device on which the person requests to install the app.
 
 You can determine the number of active installs of a particular app for an account by counting the unique device IDs your license server encounters minus any unique device IDs associated with revoked or expired licenses.
 
 ## See Also
 
-- [Renewing and revoking app licenses](renewing-and-revoking-app-licenses.md)
+### App licensing
+- [Renewing and revoking app licenses](./renewing-and-revoking-app-licenses.md)
   Determine whether an app for which you issue a license launches.
-- [struct ALDAppKey](aldappkey.md)
+- [struct ALDAppKey](./aldappkey.md)
   A structure that identifies an app and a key that’s required to decrypt the app’s license request.
-- [struct ALDLicenseAttribute](aldlicenseattribute.md)
+- [struct ALDLicenseAttribute](./aldlicenseattribute.md)
   A structure that defines the requested license type for the session.
-- [class ALDProvider](aldprovider.md)
+- [class ALDProvider](./aldprovider.md)
   An object that creates a session with the alternative app marketplace’s signing assets.
-- [class ALDSession](aldsession.md)
+- [class ALDSession](./aldsession.md)
   A structure that contains the details of a license request and methods to generate license responses.
 
 

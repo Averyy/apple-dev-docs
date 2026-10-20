@@ -1,14 +1,15 @@
 # SetIOOperationHandler
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIOOperationHandler(IOOperationHandler in_io_operation_block);
 ```
 

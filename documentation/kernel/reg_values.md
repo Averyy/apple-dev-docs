@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct reg_values {
     ...
 };
@@ -17,8 +17,8 @@ struct reg_values {
 ## Topics
 
 ### Instance Properties
-- [rv_name](reg_values/1516021-rv_name.md)
-- [rv_value](reg_values/1516064-rv_value.md)
+- [rv_name](./reg_values/api-1516021-rv_name.md)
+- [rv_value](./reg_values/api-1516064-rv_value.md)
 
 
 ---

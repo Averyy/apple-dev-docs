@@ -1,7 +1,8 @@
 # QUIC
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The system definition of the QUIC protocol.
 
@@ -27,43 +28,43 @@ Conforms to MultiplexProtocol, exposing configuration for a multiplexing instanc
 ## Topics
 
 ### Classes
-- [class Datagrams](quic/datagrams.md)
-- [class Stream](quic/stream.md)
+- [class Datagrams](./quic/datagrams.md)
+- [class Stream](./quic/stream.md)
 ### Structures
-- [struct TLS](quic/tls-swift.struct.md)
+- [struct TLS](./quic/tls-swift.struct.md)
   The set of TLS options available when using QUIC.
 ### Initializers
-- [init(alpn: [String])](quic/init(alpn:).md)
+- [init(alpn: [String])](./quic/init%28alpn%29.md)
   Create a QUIC protocol for use in a protocol stack.
-- [init(alpn: [String], () -> UDP)](quic/init(alpn:_:).md)
+- [init(alpn: [String], () -> UDP)](./quic/init%28alpn,_%29.md)
 ### Instance Properties
-- [var tls: QUIC.TLS](quic/tls-swift.property.md)
+- [var tls: QUIC.TLS](./quic/tls-swift.property.md)
   Configure TLS when used within QUIC.
 ### Instance Methods
-- [func idleTimeout(Int) -> QUIC](quic/idletimeout(_:).md)
+- [func idleTimeout(Int) -> QUIC](./quic/idletimeout%28_%29.md)
   Set the idle timeout for the QUIC connection, in milliseconds.
-- [func initialMaxBidirectionalStreams(Int) -> QUIC](quic/initialmaxbidirectionalstreams(_:).md)
+- [func initialMaxBidirectionalStreams(Int) -> QUIC](./quic/initialmaxbidirectionalstreams%28_%29.md)
   Set the initial_max_streams_bidi transport parameter on a QUIC connection.
-- [func initialMaxData(Int) -> QUIC](quic/initialmaxdata(_:).md)
+- [func initialMaxData(Int) -> QUIC](./quic/initialmaxdata%28_%29.md)
   Set the initial_max_data transport parameter on a QUIC connection.
-- [func initialMaxStreamDataBidirectionalLocal(Int) -> QUIC](quic/initialmaxstreamdatabidirectionallocal(_:).md)
+- [func initialMaxStreamDataBidirectionalLocal(Int) -> QUIC](./quic/initialmaxstreamdatabidirectionallocal%28_%29.md)
   Set the initial_max_stream_data_bidi_local transport parameter on a QUIC connection.
-- [func initialMaxStreamDataBidirectionalRemote(Int) -> QUIC](quic/initialmaxstreamdatabidirectionalremote(_:).md)
+- [func initialMaxStreamDataBidirectionalRemote(Int) -> QUIC](./quic/initialmaxstreamdatabidirectionalremote%28_%29.md)
   Set the initial_max_stream_data_bidi_remote transport parameter on a QUIC connection.
-- [func initialMaxStreamDataUnidirectional(Int) -> QUIC](quic/initialmaxstreamdataunidirectional(_:).md)
+- [func initialMaxStreamDataUnidirectional(Int) -> QUIC](./quic/initialmaxstreamdataunidirectional%28_%29.md)
   Set the initial_max_stream_data_uni transport parameter on a QUIC connection.
-- [func initialMaxUnidirectionalStreams(Int) -> QUIC](quic/initialmaxunidirectionalstreams(_:).md)
+- [func initialMaxUnidirectionalStreams(Int) -> QUIC](./quic/initialmaxunidirectionalstreams%28_%29.md)
   Set the initial_max_stream_data_uni transport parameter on a QUIC connection.
-- [func maxDatagramFrameSize(Int) -> QUIC](quic/maxdatagramframesize(_:).md)
+- [func maxDatagramFrameSize(Int) -> QUIC](./quic/maxdatagramframesize%28_%29.md)
   Set the max_datagram_frame_size transport parameter on a QUIC connection.
-- [func maxUDPPayloadSize(Int) -> QUIC](quic/maxudppayloadsize(_:).md)
+- [func maxUDPPayloadSize(Int) -> QUIC](./quic/maxudppayloadsize%28_%29.md)
   Set the maximum length of a QUIC packet that you are willing to receive on a connection, in bytes.
 
 ## Relationships
 
 ### Conforms To
-- [MultiplexProtocol](multiplexprotocol.md)
-- [NetworkProtocolOptions](networkprotocoloptions.md)
+- [MultiplexProtocol](./multiplexprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
 
 
 ---

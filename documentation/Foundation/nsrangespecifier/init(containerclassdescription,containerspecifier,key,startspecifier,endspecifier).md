@@ -1,7 +1,8 @@
 # init(containerClassDescription:containerSpecifier:key:startSpecifier:endSpecifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+

@@ -1,7 +1,8 @@
 # availableSemanticSegmentationMatteTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of semantic segmentation matte types that may be captured and delivered along with the primary photo.
 
@@ -17,17 +18,22 @@ An array of semantic segmentation matte types that may be captured and delivered
 var availableSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableSemanticSegmentationMatteTypes;
+```
+
 #### Discussion
 
 This property returns the array of semantic segmentation types that’s available given the current session configuration.
 
 This property is key-value observable.
 
-> ❗ **Important**:  The value of this property may change when switching cameras or formats. When this property changes, [`enabledSemanticSegmentationMatteTypes`](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md) reverts to an empty array. If you’ve previously opted in for delivery of one or more semantic segmentation mattes, you need to set up your [`enabledSemanticSegmentationMatteTypes`](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md) again.
+> ❗ **Important**:  The value of this property may change when switching cameras or formats. When this property changes, [`enabledSemanticSegmentationMatteTypes`](./enabledsemanticsegmentationmattetypes.md) reverts to an empty array. If you’ve previously opted in for delivery of one or more semantic segmentation mattes, you need to set up your [`enabledSemanticSegmentationMatteTypes`](./enabledsemanticsegmentationmattetypes.md) again.
 
 ## See Also
 
-- [var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType]](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md)
+### Getting segmentation mattes
+- [var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType]](./enabledsemanticsegmentationmattetypes.md)
   The semantic segmentation matte types that the photo render pipeline delivers.
 
 

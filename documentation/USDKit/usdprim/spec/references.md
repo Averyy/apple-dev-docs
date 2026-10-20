@@ -1,7 +1,8 @@
 # references
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored references on this prim, or `nil` if none authored.
 

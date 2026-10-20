@@ -1,7 +1,8 @@
 # Read Game Center Achievement Localization Information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific Game Center achievement localization.
 
@@ -27,29 +28,45 @@ Get information about a specific Game Center achievement localization.
 
 ## Parameters
 
-- `fields[gameCenterAchievementImages]` ([string])
-- `fields[gameCenterAchievementLocalizations]` ([string])
-- `fields[gameCenterAchievementVersions]` ([string])
-- `include` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[gameCenterAchievementImages]` ([string]): **Allowed Values**: `fileSize`, `fileName`, `imageAsset`, `uploadOperations`, `assetDeliveryState`, `localization`
+- `fields[gameCenterAchievementLocalizations]` ([string]): **Allowed Values**: `locale`, `name`, `beforeEarnedDescription`, `afterEarnedDescription`, `version`, `image`
+- `fields[gameCenterAchievementVersions]` ([string]): **Allowed Values**: `version`, `state`, `achievement`, `localizations`
+- `include` ([string]): **Allowed Values**: `version`, `image`
+
+## Responses
+
+- `200` OK (`GameCenterAchievementLocalizationV2Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List All Images for a Game Center Achievement Localization](get-v2-gamecenterachievementlocalizations-_id_-image.md)
+### Reading achievements localizations
+- [List All Images for a Game Center Achievement Localization](./get-v2-gamecenterachievementlocalizations-_id_-image.md)
   Get a list of images for a specific Game Center achievement localization.
-- [Get All Image IDs for a Game Center Achievement Localization](get-v2-gamecenterachievementlocalizations-_id_-relationships-image.md)
+- [Get All Image IDs for a Game Center Achievement Localization](./get-v2-gamecenterachievementlocalizations-_id_-relationships-image.md)
   Get a list of image resource IDs for a specific Game Center achievement localization.
-- [List All Localizations for an Achievement](get-v1-gamecenterachievements-_id_-localizations.md)
+- [List All Localizations for an Achievement](./get-v1-gamecenterachievements-_id_-localizations.md)
   Read information about the release for specific achievement.
-- [List localization IDs for a Game Center achievement](get-v1-gamecenterachievements-_id_-relationships-localizations.md)
-- [Read Achievement Localization Information](get-v1-gamecenterachievementlocalizations-_id_.md)
+- [List localization IDs for a Game Center achievement](./get-v1-gamecenterachievements-_id_-relationships-localizations.md)
+- [Read Achievement Localization Information](./get-v1-gamecenterachievementlocalizations-_id_.md)
   Read localized information for a specific locale for a specific achievement.
-- [Read the Achievement Localization Information](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievement.md)
+- [Read the Achievement Localization Information](./get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievement.md)
   Read the achievement associated with specific localized information.
-- [Read the achievement id for a  localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
+- [Read the achievement id for a  localization](./get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
   Read the achievement ID associated with specific localized information.
-- [Read the Image for a Specific Achievement Localization](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievementimage.md)
+- [Read the Image for a Specific Achievement Localization](./get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievementimage.md)
   Read the achievement image associated with specific localized information.
-- [Get the achievement image ID for a Game Center achievement localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievementimage.md)
+- [Get the achievement image ID for a Game Center achievement localization](./get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievementimage.md)
 
 
 ---

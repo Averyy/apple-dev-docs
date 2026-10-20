@@ -1,15 +1,20 @@
 # kBluetoothHCITransportUSBClassCode
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kBluetoothHCITransportUSBClassCode: Int { get }
+```
+
+```c
+kBluetoothHCITransportUSBClassCode
 ```
 
 #### Discussion
@@ -18,8 +23,9 @@ Wireless Controller
 
 ## See Also
 
-- [var kBluetoothHCITransportUSBProtocolCode: Int](kbluetoothhcitransportusbprotocolcode.md)
-- [var kBluetoothHCITransportUSBSubClassCode: Int](kbluetoothhcitransportusbsubclasscode.md)
+### Constants
+- [var kBluetoothHCITransportUSBProtocolCode: Int](./kbluetoothhcitransportusbprotocolcode.md)
+- [var kBluetoothHCITransportUSBSubClassCode: Int](./kbluetoothhcitransportusbsubclasscode.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # USDToken
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An interned, efficiently compared string that names prims, properties, and other scene-description identifiers.
 
@@ -22,51 +23,52 @@ struct USDToken
 ## Topics
 
 ### Creating a token
-- [init()](usdtoken/init.md)
-- [init(String)](usdtoken/init(_:).md)
-- [init(namespaceComponents: [USDToken])](usdtoken/init(namespacecomponents:).md)
+- [init()](./usdtoken/init%28%29.md)
+- [init(String)](./usdtoken/init%28_%29.md)
+- [init(namespaceComponents: [USDToken])](./usdtoken/init%28namespacecomponents%29.md)
   Creates a namespaced token by joining `components` with `:`.
 ### Inspecting the token
-- [var string: String](usdtoken/string.md)
-- [var isEmpty: Bool](usdtoken/isempty.md)
-- [var namespaceComponents: [USDToken]](usdtoken/namespacecomponents.md)
+- [var string: String](./usdtoken/string.md)
+- [var isEmpty: Bool](./usdtoken/isempty.md)
+- [var namespaceComponents: [USDToken]](./usdtoken/namespacecomponents.md)
   The token split into its namespace components, separated by `:`.
 ### Stripping namespaces
-- [func strippingLeadingNamespace() -> USDToken](usdtoken/strippingleadingnamespace.md)
+- [func strippingLeadingNamespace() -> USDToken](./usdtoken/strippingleadingnamespace%28%29.md)
   Returns this token with its leading namespace component removed.
-- [func strippingNamespacePrefix(USDToken) -> USDToken?](usdtoken/strippingnamespaceprefix(_:).md)
+- [func strippingNamespacePrefix(USDToken) -> USDToken?](./usdtoken/strippingnamespaceprefix%28_%29.md)
   Returns this token with the given namespace prefix removed.
 ### Validating identifiers
-- [static func isValidIdentifier(String, namespaced: Bool) -> Bool](usdtoken/isvalididentifier(_:namespaced:).md)
+- [static func isValidIdentifier(String, namespaced: Bool) -> Bool](./usdtoken/isvalididentifier%28_,namespaced%29.md)
   Returns a Boolean value that indicates whether the given string is a valid USD identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Comparable](../Swift/comparable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](./usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](./usdstage/object/metadatavalue.md)
+- [USDValueProtocol](./usdvalueprotocol.md)
 
 ## See Also
 
-- [struct USDValue](usdvalue.md)
+### Values and tokens
+- [struct USDValue](./usdvalue.md)
   A type-erased container for a value stored in a Universal Scene Description file.
-- [protocol USDValueProtocol](usdvalueprotocol.md)
-  A type that can be wrapped in a [`USDValue`](usdvalue.md).
+- [protocol USDValueProtocol](./usdvalueprotocol.md)
+  A type that can be wrapped in a [`USDValue`](./usdvalue.md).
 
 
 ---

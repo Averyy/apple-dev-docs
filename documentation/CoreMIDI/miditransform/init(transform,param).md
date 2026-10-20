@@ -1,16 +1,17 @@
 # init(transform:param:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(transform: MIDITransformType, param: Int16)
 
 ## See Also
 
-- [init()](miditransform/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

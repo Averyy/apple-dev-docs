@@ -1,7 +1,8 @@
 # ManipulationUsingGestureStateModifier
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view modifier that applies the manipulation state from a gesture on another view.
 
@@ -17,40 +18,41 @@ struct ManipulationUsingGestureStateModifier
 
 #### Overview
 
-[`manipulable(using:)`](view/manipulable(using:).md) returns a view modified with this type. You don’t create it directly.
+[`manipulable(using:)`](./view/manipulable%28using%29.md) returns a view modified with this type. You don’t create it directly.
 
 ## Relationships
 
 ### Conforms To
-- [ViewModifier](viewmodifier.md)
+- [ViewModifier](./viewmodifier.md)
 
 ## See Also
 
-- [Configuring views](configuring-views.md)
+### Modifying a view
+- [Configuring views](./configuring-views.md)
   Adjust the characteristics of a view by applying view modifiers.
-- [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
+- [Reducing view modifier maintenance](./reducing-view-modifier-maintenance.md)
   Bundle view modifiers that you regularly reuse into a custom view modifier.
-- [func modifier<T>(T) -> ModifiedContent<Self, T>](view/modifier(_:).md)
+- [func modifier<T>(T) -> ModifiedContent<Self, T>](./view/modifier%28_%29.md)
   Applies a modifier to a view and returns a new view.
-- [protocol ViewModifier](viewmodifier.md)
+- [protocol ViewModifier](./viewmodifier.md)
   A modifier that you apply to a view or another view modifier, producing a different version of the original value.
-- [struct EmptyModifier](emptymodifier.md)
+- [struct EmptyModifier](./emptymodifier.md)
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
-- [struct ModifiedContent](modifiedcontent.md)
+- [struct ModifiedContent](./modifiedcontent.md)
   A value with a modifier applied to it.
-- [protocol EnvironmentalModifier](environmentalmodifier.md)
+- [protocol EnvironmentalModifier](./environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
-- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableModifier](./manipulablemodifier.md)
   A view modifier that lets hand gestures move, rotate, and scale a view.
-- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableResponderModifier](./manipulablerespondermodifier.md)
   A view modifier that makes a view respond to manipulation hand gestures.
-- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulableTransformBindingModifier](./manipulabletransformbindingmodifier.md)
   A view modifier that applies a 3D affine transform to a view and lets hand gestures change it.
-- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGeometryModifier](./manipulationgeometrymodifier.md)
   A view modifier that tracks the geometry a manipulation gesture acts on.
-- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationGestureModifier](./manipulationgesturemodifier.md)
   A view modifier that recognizes manipulation hand gestures and reports their state through a binding.
-- [enum Manipulable](manipulable.md)
+- [enum Manipulable](./manipulable.md)
   A namespace for various manipulable related types.
 
 

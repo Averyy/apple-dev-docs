@@ -1,7 +1,8 @@
 # stopGroupActivity()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends a SharePlay activity for the entire group, which the local player activates.
 
@@ -18,15 +19,20 @@ Ends a SharePlay activity for the entire group, which the local player activates
 func stopGroupActivity()
 ```
 
+```objc
+- (void) stopGroupActivity;
+```
+
 #### Discussion
 
 Use this method to stop showing a group activity in SharePlay that players use to join a match. This method doesn’t quit the match in your game that players previously join using SharePlay. Players can also stop a group activity using the SharePlay interface.
 
-To start showing a group activity in SharePlay, present a [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) object where the player can select SharePlay to invite players, or call the [`startGroupActivity(playerHandler:)`](gkmatchmaker/startgroupactivity(playerhandler:).md) method.
+To start showing a group activity in SharePlay, present a [`GKMatchmakerViewController`](../gkmatchmakerviewcontroller.md) object where the player can select SharePlay to invite players, or call the [`startGroupActivity(playerHandler:)`](./startgroupactivity%28playerhandler%29.md) method.
 
 ## See Also
 
-- [func startGroupActivity(playerHandler: (GKPlayer) -> Void)](gkmatchmaker/startgroupactivity(playerhandler:).md)
+### Starting matches using SharePlay
+- [func startGroupActivity(playerHandler: (GKPlayer) -> Void)](./startgroupactivity%28playerhandler%29.md)
   Begins a SharePlay activity for your game when a FaceTime call is active.
 
 

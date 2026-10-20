@@ -1,18 +1,19 @@
 # SCNTransaction
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mechanism for creating implicit animations and combining scene graph changes into atomic updates.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,17 @@ A mechanism for creating implicit animations and combining scene graph changes i
 class SCNTransaction
 ```
 
+```objc
+@interface SCNTransaction : NSObject
+```
+
 ## Mentions
 
-- [Animating SceneKit Content](animating-scenekit-content.md)
+- [Animating SceneKit Content](./animating-scenekit-content.md)
 
 #### Overview
 
-You use [`SCNTransaction`](scntransaction.md) class methods to control the animation that results from changing animatable properties in the scene graph and to combine sets of changes into nested transactions.
+You use [`SCNTransaction`](./scntransaction.md) class methods to control the animation that results from changing animatable properties in the scene graph and to combine sets of changes into nested transactions.
 
 ##### Adding Animation with Automatic Transaction
 
@@ -48,50 +53,50 @@ _lightNode.light.spotInnerAngle = 30.0;
 
 ##### Creating Advanced Animations with Custom Transactions
 
-You can also use [`SCNTransaction`](scntransaction.md) class methods to create and manage a hierarchy of your own transactions. By nesting custom transactions, you can group sets of scene graph changes, applying different animation parameters to each group. Use the [`begin()`](scntransaction/begin().md) method to create a custom transaction, nested within the current transaction if one exists. Use the [`commit()`](scntransaction/commit().md) method to end a transaction, applying all scene graph changes made within.
+You can also use [`SCNTransaction`](./scntransaction.md) class methods to create and manage a hierarchy of your own transactions. By nesting custom transactions, you can group sets of scene graph changes, applying different animation parameters to each group. Use the [`begin()`](./scntransaction/begin%28%29.md) method to create a custom transaction, nested within the current transaction if one exists. Use the [`commit()`](./scntransaction/commit%28%29.md) method to end a transaction, applying all scene graph changes made within.
 
 ## Topics
 
 ### Creating and Committing Transactions
-- [class func begin()](scntransaction/begin.md)
+- [class func begin()](./scntransaction/begin%28%29.md)
   Begins a new transaction for the current thread.
-- [class func commit()](scntransaction/commit.md)
+- [class func commit()](./scntransaction/commit%28%29.md)
   Commits all changes made during the current transaction.
-- [class func flush()](scntransaction/flush.md)
+- [class func flush()](./scntransaction/flush%28%29.md)
   Applies all changes from the current automatic transaction.
 ### Overriding Animation Duration and Timing
-- [class var animationDuration: CFTimeInterval](scntransaction/animationduration.md)
+- [class var animationDuration: CFTimeInterval](./scntransaction/animationduration.md)
   Returns the duration, in seconds, of all animations within the current transaction.
-- [class var animationTimingFunction: CAMediaTimingFunction?](scntransaction/animationtimingfunction.md)
+- [class var animationTimingFunction: CAMediaTimingFunction?](./scntransaction/animationtimingfunction.md)
   Returns the timing function that SceneKit uses for all animations within this transaction group.
 ### Temporarily Disabling Property Animations
-- [class var disableActions: Bool](scntransaction/disableactions.md)
+- [class var disableActions: Bool](./scntransaction/disableactions.md)
   Returns a Boolean value indicating whether changes to animatable properties during the transaction are implicitly animated.
 ### Getting and Setting Completion Block Objects
-- [class var completionBlock: (() -> Void)?](scntransaction/completionblock.md)
+- [class var completionBlock: (() -> Void)?](./scntransaction/completionblock.md)
   Returns the block previously associated with the current transaction.
 ### Managing Concurrency
-- [class func lock()](scntransaction/lock.md)
+- [class func lock()](./scntransaction/lock%28%29.md)
   Attempts to acquire a recursive spinlock to ensure the validity of values you retrieve during the transaction.
-- [class func unlock()](scntransaction/unlock.md)
+- [class func unlock()](./scntransaction/unlock%28%29.md)
   Relinquishes a previously acquired transaction lock.
 ### Getting and Setting Transaction Properties
-- [class func setValue(Any?, forKey: String)](scntransaction/setvalue(_:forkey:).md)
+- [class func setValue(Any?, forKey: String)](./scntransaction/setvalue%28_,forkey%29.md)
   Associates an arbitrary object with the current transaction using the specified key.
-- [class func value(forKey: String) -> Any?](scntransaction/value(forkey:).md)
+- [class func value(forKey: String) -> Any?](./scntransaction/value%28forkey%29.md)
   Returns the object previously associated with the current transaction using the specified key.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # value(forHTTPHeaderField:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value that corresponds to the given header field.
 
@@ -20,6 +21,10 @@ Returns the value that corresponds to the given header field.
 func value(forHTTPHeaderField field: String) -> String?
 ```
 
+```objc
+- (NSString *) valueForHTTPHeaderField:(NSString *) field;
+```
+
 #### Return Value
 
 The value associated with the given header field, or `nil` if no value is associated with the field.
@@ -34,7 +39,8 @@ In keeping with the HTTP RFC, HTTP header field names are case-insensitive.
 
 ## See Also
 
-- [var allHeaderFields: [AnyHashable : Any]](httpurlresponse/allheaderfields.md)
+### Getting HTTP response headers
+- [var allHeaderFields: [AnyHashable : Any]](./allheaderfields.md)
   All HTTP header fields of the response.
 
 

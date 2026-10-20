@@ -1,7 +1,8 @@
 # UITitlebarSeparatorStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles that determine the type of separator displayed between the title bar and content of a window.
 
@@ -14,39 +15,44 @@ Styles that determine the type of separator displayed between the title bar and 
 enum UITitlebarSeparatorStyle
 ```
 
+```c
+enum UITitlebarSeparatorStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [UITitlebarSeparatorStyle.automatic](uititlebarseparatorstyle/automatic.md)
+- [UITitlebarSeparatorStyle.automatic](./uititlebarseparatorstyle/automatic.md)
   A style indicating that the system determines the type of separator.
-- [UITitlebarSeparatorStyle.line](uititlebarseparatorstyle/line.md)
+- [UITitlebarSeparatorStyle.line](./uititlebarseparatorstyle/line.md)
   A style indicating that the title bar separator is a line.
-- [UITitlebarSeparatorStyle.none](uititlebarseparatorstyle/none.md)
+- [UITitlebarSeparatorStyle.none](./uititlebarseparatorstyle/none.md)
   A style indicating that there’s no title bar separator.
-- [UITitlebarSeparatorStyle.shadow](uititlebarseparatorstyle/shadow.md)
+- [UITitlebarSeparatorStyle.shadow](./uititlebarseparatorstyle/shadow.md)
   A style indicating that the title bar separator is a shadow.
 ### Initializers
-- [init?(rawValue: Int)](uititlebarseparatorstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uititlebarseparatorstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var separatorStyle: UITitlebarSeparatorStyle](uititlebar/separatorstyle.md)
+### Configuring the title bar
+- [var separatorStyle: UITitlebarSeparatorStyle](./uititlebar/separatorstyle.md)
   The type of separator that the app displays between the title bar and content of a window.
-- [var titleVisibility: UITitlebarTitleVisibility](uititlebar/titlevisibility.md)
+- [var titleVisibility: UITitlebarTitleVisibility](./uititlebar/titlevisibility.md)
   A value that indicates the visibility of the title.
-- [enum UITitlebarTitleVisibility](uititlebartitlevisibility.md)
+- [enum UITitlebarTitleVisibility](./uititlebartitlevisibility.md)
   States that determine visibility of the title in the title bar.
-- [var representedURL: URL?](uititlebar/representedurl.md)
+- [var representedURL: URL?](./uititlebar/representedurl.md)
   A URL of the file or resource represented in the window.
 
 

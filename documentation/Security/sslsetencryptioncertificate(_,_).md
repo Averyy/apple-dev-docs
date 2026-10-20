@@ -1,15 +1,18 @@
 # SSLSetEncryptionCertificate(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies the encryption certificates used for this connection.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.2+
+- iOS 5.0+ - Deprecated in 9.0
+- iPadOS 5.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.2+ - Deprecated in 10.11
+
+> **Deprecated**: Using separate RSA certificates for encryption and signing is no longer supported.
 
 ## Declaration
 
@@ -17,16 +20,20 @@ Specifies the encryption certificates used for this connection.
 func SSLSetEncryptionCertificate(_ context: SSLContext, _ certRefs: CFArray) -> OSStatus
 ```
 
+```c
+OSStatus SSLSetEncryptionCertificate(SSLContextRef context, CFArrayRef certRefs);
+```
+
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 #### Discussion
 
 Use this function in one of the following cases:
 
-- The leaf certificate specified in the [`SSLSetCertificate(_:_:)`](sslsetcertificate(_:_:).md) function is not capable of encryption.
-- The leaf certificate specified in the [`SSLSetCertificate(_:_:)`](sslsetcertificate(_:_:).md) function contains a key that is too large or strong for legal encryption in this session. In this case, a weaker certificate is specified here and is used for server-initiated key exchange.
+- The leaf certificate specified in the [`SSLSetCertificate(_:_:)`](./sslsetcertificate%28_,_%29.md) function is not capable of encryption.
+- The leaf certificate specified in the [`SSLSetCertificate(_:_:)`](./sslsetcertificate%28_,_%29.md) function contains a key that is too large or strong for legal encryption in this session. In this case, a weaker certificate is specified here and is used for server-initiated key exchange.
 
 The following assumptions are made:
 

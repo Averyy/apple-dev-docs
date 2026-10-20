@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that can receive notifications about fall detection events.
 
@@ -14,9 +15,14 @@ A delegate that can receive notifications about fall detection events.
 weak var delegate: (any CMFallDetectionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CMFallDetectionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol CMFallDetectionDelegate](cmfalldetectiondelegate.md)
+### Handling Events
+- [protocol CMFallDetectionDelegate](../cmfalldetectiondelegate.md)
   A delegate that receives information about fall detection events and authorization status changes.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mcontext32 {
     ...
 };
@@ -17,9 +17,9 @@ struct mcontext32 {
 ## Topics
 
 ### Instance Properties
-- [es](mcontext32/1577815-es.md)
-- [fs](mcontext32/1577821-fs.md)
-- [ss](mcontext32/1577822-ss.md)
+- [es](./mcontext32/api-1577815-es.md)
+- [fs](./mcontext32/api-1577821-fs.md)
+- [ss](./mcontext32/api-1577822-ss.md)
 
 
 ---

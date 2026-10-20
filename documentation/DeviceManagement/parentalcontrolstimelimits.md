@@ -1,7 +1,8 @@
 # ParentalControlsTimeLimits
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures parental control time limits.
 
@@ -10,7 +11,7 @@ The payload that configures parental control time limits.
 
 ## Declaration
 
-```swift
+```
 object ParentalControlsTimeLimits
 ```
 
@@ -18,7 +19,7 @@ object ParentalControlsTimeLimits
 
 Specify `com.apple.familycontrols.timelimits.v2` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.familycontrols.timelimits.v2` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -105,7 +106,7 @@ Specify `com.apple.familycontrols.timelimits.v2` as the payload type.
 ## Topics
 
 ### Objects
-- [object ParentalControlsTimeLimits.Time-limits](parentalcontrolstimelimits/time-limits-data.dictionary.md)
+- [object ParentalControlsTimeLimits.Time-limits](./parentalcontrolstimelimits/time-limits-data.dictionary.md)
   The time limits dictionary.
 
 ## Properties
@@ -115,13 +116,14 @@ Specify `com.apple.familycontrols.timelimits.v2` as the payload type.
 
 ## See Also
 
-- [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)
+### Parental controls
+- [object ParentalControlsApplicationRestrictions](./parentalcontrolsapplicationrestrictions.md)
   The payload that configures parental controls for apps.
-- [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)
+- [object ParentalControlsContentFilter](./parentalcontrolscontentfilter.md)
   The payload that configures the parental control web content filters.
-- [object ParentalControlsDictionary](parentalcontrolsdictionary.md)
+- [object ParentalControlsDictionary](./parentalcontrolsdictionary.md)
   The payload that configures parental control dictionary restrictions.
-- [object ParentalControlsGameCenter](parentalcontrolsgamecenter.md)
+- [object ParentalControlsGameCenter](./parentalcontrolsgamecenter.md)
   The payload that configures Game Center parental controls.
 
 

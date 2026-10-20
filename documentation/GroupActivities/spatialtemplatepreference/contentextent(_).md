@@ -1,7 +1,8 @@
 # contentExtent(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the distance between the app’s content and any participants.
 
@@ -16,7 +17,7 @@ func contentExtent(_ contentExtent: CGFloat) -> SpatialTemplatePreference
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 

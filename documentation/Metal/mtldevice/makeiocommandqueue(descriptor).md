@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an input/output command queue you use to submit commands that load assets from the file system into GPU resources or system memory.
@@ -20,13 +21,17 @@ Creates an input/output command queue you use to submit commands that load asset
 func makeIOCommandQueue(descriptor: MTLIOCommandQueueDescriptor) throws -> any MTLIOCommandQueue
 ```
 
+```objc
+- (id<MTLIOCommandQueue>) newIOCommandQueueWithDescriptor:(MTLIOCommandQueueDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MTLIOCommandQueue`](mtliocommandqueue.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLIOCommandQueue`](../mtliocommandqueue.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 #### Discussion
 
-For information about using input/output command queues and file handles, see [`Resource loading`](resource-loading.md).
+For information about using input/output command queues and file handles, see [Resource loading](../resource-loading.md).
 
 ## Parameters
 

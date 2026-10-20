@@ -1,7 +1,8 @@
 # authorizationStateForPlatformCredentials
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a value that indicates whether the browser app has access to a person’s passkeys.
 
@@ -17,15 +18,20 @@ Returns a value that indicates whether the browser app has access to a person’
 var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASAuthorizationWebBrowserPublicKeyCredentialManagerAuthorizationState authorizationStateForPlatformCredentials;
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## See Also
 
-- [func requestAuthorizationForPublicKeyCredentials((ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)](asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_:).md)
+### Requesting access to passkeys
+- [func requestAuthorizationForPublicKeyCredentials((ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)](./requestauthorizationforpublickeycredentials%28_%29.md)
   Requests a person’s permission to use their passkeys.
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](./authorizationstate.md)
   An enumeration of values that indicate whether the browser app has access to a person’s passkeys.
 
 

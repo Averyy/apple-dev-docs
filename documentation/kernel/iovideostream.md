@@ -1,7 +1,8 @@
 # IOVideoStream
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A class representing a stream of video data buffers passed from kernel to user space and back again.
 
@@ -10,7 +11,7 @@ A class representing a stream of video data buffers passed from kernel to user s
 
 ## Declaration
 
-```swift
+```cpp
 class IOVideoStream : IOStream
 ```
 
@@ -25,43 +26,44 @@ References to "output" mean "from the IOVideoStream to the user client", and "in
 ## Topics
 
 ### Miscellaneous
-- [getStreamMode](iovideostream/1809380-getstreammode.md)
+- [getStreamMode](./iovideostream/api-1809380-getstreammode.md)
   Returns the mode of the stream, either input or output.
-- [initWithBuffers](iovideostream/1809391-initwithbuffers.md)
-- [setStreamMode](iovideostream/1809395-setstreammode.md)
+- [initWithBuffers](./iovideostream/api-1809391-initwithbuffers.md)
+- [setStreamMode](./iovideostream/api-1809395-setstreammode.md)
   Sets the mode of the stream, either input or output.
-- [startStream](iovideostream/1809402-startstream.md)
+- [startStream](./iovideostream/api-1809402-startstream.md)
   Start sending data on a stream.
-- [stopStream](iovideostream/1809407-stopstream.md)
+- [stopStream](./iovideostream/api-1809407-stopstream.md)
   Stop sending data on a stream.
-- [suspendStream](iovideostream/1809411-suspendstream.md)
+- [suspendStream](./iovideostream/api-1809411-suspendstream.md)
   Temporarily suspend data flow on the stream.
-- [withBuffers](iovideostream/1809420-withbuffers.md)
+- [withBuffers](./iovideostream/api-1809420-withbuffers.md)
 ### Instance Methods
-- [- getDevice](iovideostream/1552971-getdevice.md)
-- [- getMetaClass](iovideostream/1552968-getmetaclass.md)
-- [- getStreamMode](iovideostream/1552977-getstreammode.md)
-- [- initWithBuffers](iovideostream/1552970-initwithbuffers.md)
-- [- setStreamMode](iovideostream/1552972-setstreammode.md)
-- [- startStream](iovideostream/1552976-startstream.md)
-- [- stopStream](iovideostream/1552969-stopstream.md)
-- [- suspendStream](iovideostream/1552973-suspendstream.md)
+- [- getDevice](./iovideostream/api-1552971-getdevice.md)
+- [- getMetaClass](./iovideostream/api-1552968-getmetaclass.md)
+- [- getStreamMode](./iovideostream/api-1552977-getstreammode.md)
+- [- initWithBuffers](./iovideostream/api-1552970-initwithbuffers.md)
+- [- setStreamMode](./iovideostream/api-1552972-setstreammode.md)
+- [- startStream](./iovideostream/api-1552976-startstream.md)
+- [- stopStream](./iovideostream/api-1552969-stopstream.md)
+- [- suspendStream](./iovideostream/api-1552973-suspendstream.md)
 ### Type Methods
-- [+ withBuffers](iovideostream/1552975-withbuffers.md)
+- [+ withBuffers](./iovideostream/api-1552975-withbuffers.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOStream](iostream.md)
+- [IOStream](./iostream.md)
 
 ## See Also
 
-- [IOVideoDevice](iovideodevice.md)
+### Video
+- [IOVideoDevice](./iovideodevice.md)
   A class that represents a video device.
-- [IONVRAMController](ionvramcontroller.md)
-- [IOVideoControlDictionary](iovideocontroldictionary.md)
-- [IOVideoStreamDictionary](iovideostreamdictionary.md)
-- [IOVideoStreamFormatDictionary](iovideostreamformatdictionary.md)
+- [IONVRAMController](./ionvramcontroller.md)
+- [IOVideoControlDictionary](./iovideocontroldictionary.md)
+- [IOVideoStreamDictionary](./iovideostreamdictionary.md)
+- [IOVideoStreamFormatDictionary](./iovideostreamformatdictionary.md)
 
 
 ---

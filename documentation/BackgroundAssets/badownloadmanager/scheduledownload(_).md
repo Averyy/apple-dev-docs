@@ -1,7 +1,8 @@
 # scheduleDownload(_:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules an asset download to execute in the background at a nonspecific time in the future.
 
@@ -19,15 +20,20 @@ Schedules an asset download to execute in the background at a nonspecific time i
 func scheduleDownload(_ download: BADownload) throws
 ```
 
+```objc
+- (BOOL) scheduleDownload:(BADownload *) download error:(NSError **) error;
+```
+
 ## Parameters
 
 - `download`: The object that provides the URL of the asset to download.
 
 ## See Also
 
-- [func startForegroundDownload(BADownload) throws](badownloadmanager/startforegrounddownload(_:).md)
+### Managing downloads
+- [func startForegroundDownload(BADownload) throws](./startforegrounddownload%28_%29.md)
   Schedules an asset download that executes immediately in the foreground.
-- [func cancel(BADownload) throws](badownloadmanager/cancel(_:).md)
+- [func cancel(BADownload) throws](./cancel%28_%29.md)
   Cancels an asset download.
 
 

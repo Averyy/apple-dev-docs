@@ -1,7 +1,8 @@
 # ParsedCrlFormat
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var ParsedCrlFormat: CSSM_CRL_PARSE_FORMAT
+```
+
+```c
+CSSM_CRL_PARSE_FORMAT ParsedCrlFormat;
 ```
 
 

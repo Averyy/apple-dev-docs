@@ -1,14 +1,15 @@
 # ri_interval_max_phys_footprint
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ri_interval_max_phys_footprint;
 ```
 

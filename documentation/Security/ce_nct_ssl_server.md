@@ -1,7 +1,8 @@
 # CE_NCT_SSL_Server
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CE_NCT_SSL_Server: Int32 { get }
+```
+
+```c
+#define CE_NCT_SSL_Server
 ```
 
 

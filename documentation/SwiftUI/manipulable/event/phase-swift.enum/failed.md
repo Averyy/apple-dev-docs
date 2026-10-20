@@ -1,7 +1,8 @@
 # Manipulable.Event.Phase.failed
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person started manipulating the view but failed to successfully end the manipulation gesture.
 

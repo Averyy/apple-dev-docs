@@ -1,27 +1,28 @@
 # Linking an Xcode project
 
-**Framework**: Reality Composer Pro
+**Framework**: Reality Composer Pro  
+**Role**: Article
 
 Iterate on a scene and run it as an app without leaving the editor.
 
 #### Overview
 
-Linking your Reality Composer Pro project to an [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/) project lets you switch quickly between Reality Composer Pro and Xcode to iterate, preview, simulate, and test your project. With this connection, you can build and run to devices and simulators, automatically export scene assets to Xcode as you work, and generate a ready-to-use Xcode project template.
+Linking your Reality Composer Pro project to an [Xcode](https://developer.apple.com/xcode/) project lets you switch quickly between Reality Composer Pro and Xcode to iterate, preview, simulate, and test your project. With this connection, you can build and run to devices and simulators, automatically export scene assets to Xcode as you work, and generate a ready-to-use Xcode project template.
 
-You can also iterate on your scene (models, composition, shaders, physics, animation, and game logic) and build and run your app without leaving the editor. For more information about previewing content and running simulations, see [`Previewing content and running simulations`](realitycomposerpro-essentials-previewcontentrunsimulations.md).
+You can also iterate on your scene (models, composition, shaders, physics, animation, and game logic) and build and run your app without leaving the editor. For more information about previewing content and running simulations, see [Previewing content and running simulations](./realitycomposerpro-essentials-previewcontentrunsimulations.md).
 
-![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](/images/RealityComposerPro/launchbar@2x.png)
+![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](https://developer.apple.com/tutorials/images/RealityComposerPro/launchbar@2x.png)
 
 > **Note**: Install Xcode 27 or later before linking Reality Composer Pro 3 and Xcode projects.
 
-#### Link to a New Xcode Project
+#### Link to a new Xcode project
 
 To link to a new Xcode project, do the following:
 
 1. In the Launch Control toolbar, switch from **Simulate** to **Run with Xcode**.
 2. In the toolbar, next to **Run with Xcode**, select **Link an Xcode project**.
 
-![A screenshot of the Reality Composer Pro dialog for choosing options for a new Xcode project — bundle identifier, initial entity, immersive space, and so on.](/images/RealityComposerPro/RunWithXcode-XcodeLaunchBar@2x.png)
+![A screenshot of the Reality Composer Pro dialog for choosing options for a new Xcode project — bundle identifier, initial entity, immersive space, and so on.](https://developer.apple.com/tutorials/images/RealityComposerPro/RunWithXcode-XcodeLaunchBar@2x.png)
 
 1. If you are prompted to install a helper, select **Update**.
 2. Choose the options for your Xcode project:
@@ -31,12 +32,14 @@ To link to a new Xcode project, do the following:
 - Organization Identifier
 - Bundle Identifier
 - Initial Entity (defaults to World)
-- Immersive Space - None — Your app runs in a window in the Shared Space on visionOS, or as a standard window on iOS, iPadOS, and macOS.
-- Mixed — Your content appears alongside the passthrough view of your surroundings.
-- Progressive — Lets you control how much of your surroundings remains visible.
-- Full — Shows only your app’s content (fully immersive).
+- Immersive Space
 
-![A screenshot of the Reality Composer Pro Link an Xcode Project dialog.](/images/RealityComposerPro/NewXcodeProject@2x.png)
+  - None — Your app runs in a window in the Shared Space on visionOS, or as a standard window on iOS, iPadOS, and macOS.
+  - Mixed — Your content appears alongside the passthrough view of your surroundings.
+  - Progressive — Lets you control how much of your surroundings remains visible.
+  - Full — Shows only your app’s content (fully immersive).
+
+![A screenshot of the Reality Composer Pro Link an Xcode Project dialog.](https://developer.apple.com/tutorials/images/RealityComposerPro/NewXcodeProject@2x.png)
 
 1. Click **Next**, and then choose a location for your Xcode project.
 
@@ -44,7 +47,7 @@ To link to a new Xcode project, do the following:
 
 1. **If** you selected **Include Custom Component**, Reality Composer Pro prompts you to set up your custom component. Click **Yes** to configure them now; otherwise click **Maybe Later**.
 
-#### Link to an Existing Xcode Project
+#### Link to an existing Xcode project
 
 1. In the Launch Control toolbar, switch from **Simulate** to **Run with Xcode**.
 2. In the toolbar, next to **Run with Xcode**, select **Link an Xcode project**.
@@ -54,7 +57,7 @@ To link to a new Xcode project, do the following:
 6. **If** you selected **Include Custom Component**, Reality Composer Pro prompts you to set up your custom component. Click **Yes** to configure them now; otherwise click **Maybe Later**.
 7. After the linking process completes, open your Xcode project, build it, and then restart Reality Composer Pro.
 
-#### Add Custom Components From an Xcode Project
+#### Add custom components from an Xcode project
 
 To link an Xcode project with custom plugins — including custom components, custom timeline actions, and custom Script Graph nodes — follow these steps.
 
@@ -65,21 +68,22 @@ To link an Xcode project with custom plugins — including custom components, cu
 
 ## See Also
 
-- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+### Essentials
+- [Migrating older projects to Reality Composer Pro 3](./realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
   Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
-- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+- [Updating migrated assets to Reality Composer Pro 3](./realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
   Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
-- [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
+- [Configuring the project workspace](./realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
-- [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)
+- [Navigating the Reality Composer Pro workspace](./realitycomposerpro-essentials-workspaceoverview.md)
   Explore the panes and toolbars that make up the Reality Composer Pro editing environment.
-- [Adding entities and assets to a scene](realitycomposerpro-essentials-addingentitiestoscene.md)
+- [Adding entities and assets to a scene](./realitycomposerpro-essentials-addingentitiestoscene.md)
   Import assets to design Reality Composer Pro scenes for your app.
-- [Working with the Graph Editor](realitycomposerpro-essentials-grapheditoroverview.md)
+- [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md)
   Use Reality Composer Pro’s node-based editor to build materials, animations, audio effects, and scripts without writing code.
-- [Reusing assets with prototypes and instances](realitycomposerpro-essentials-understandingprototypes.md)
+- [Reusing assets with prototypes and instances](./realitycomposerpro-essentials-understandingprototypes.md)
   Edit a prototype once and propagate the change to every placement of that asset in a scene.
-- [Previewing content and running simulations](realitycomposerpro-essentials-previewcontentrunsimulations.md)
+- [Previewing content and running simulations](./realitycomposerpro-essentials-previewcontentrunsimulations.md)
   Test and iterate on your scenes directly in Reality Composer Pro, with or without a linked Xcode project.
 
 

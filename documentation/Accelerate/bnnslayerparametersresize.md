@@ -1,18 +1,21 @@
 # BNNSLayerParametersResize
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the parameters of a resize layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,35 +23,40 @@ A structure that contains the parameters of a resize layer.
 struct BNNSLayerParametersResize
 ```
 
+```c
+typedef struct { ... } BNNSLayerParametersResize;
+```
+
 ## Topics
 
 ### Initializers
-- [init(method: BNNSInterpolationMethod, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, align_corners: Bool)](bnnslayerparametersresize/init(method:i_desc:o_desc:align_corners:).md)
+- [init(method: BNNSInterpolationMethod, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, align_corners: Bool)](./bnnslayerparametersresize/init%28method,i_desc,o_desc,align_corners%29.md)
   Returns a new resize-layer parameters structure from the specified parameters.
-- [init()](bnnslayerparametersresize/init.md)
+- [init()](./bnnslayerparametersresize/init%28%29.md)
   Returns a new resize-layer parameters structure.
 ### Instance Properties
-- [var method: BNNSInterpolationMethod](bnnslayerparametersresize/method.md)
+- [var method: BNNSInterpolationMethod](./bnnslayerparametersresize/method.md)
   The interpolation method for resizing.
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersresize/i_desc.md)
+- [var i_desc: BNNSNDArrayDescriptor](./bnnslayerparametersresize/i_desc.md)
   The descriptor of the input.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersresize/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./bnnslayerparametersresize/o_desc.md)
   The descriptor of the output.
-- [var align_corners: Bool](bnnslayerparametersresize/align_corners.md)
+- [var align_corners: Bool](./bnnslayerparametersresize/align_corners.md)
   A Boolean value that specifies whether to align the corners of the upscaling grid to the center of scaling dimensions instead of to the edges.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [class ResizeLayer](bnns/resizelayer.md)
+### Resize layers
+- [class ResizeLayer](./bnns/resizelayer.md)
   A layer object that wraps a resize filter and manages its deinitialization.
-- [struct BNNSInterpolationMethod](bnnsinterpolationmethod.md)
+- [struct BNNSInterpolationMethod](./bnnsinterpolationmethod.md)
   Constants that describe interpolation methods.
-- [func BNNSFilterCreateLayerResize(UnsafePointer<BNNSLayerParametersResize>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerresize(_:_:).md)
+- [func BNNSFilterCreateLayerResize(UnsafePointer<BNNSLayerParametersResize>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerresize%28_,_%29.md)
   Returns a new resize layer.
 
 

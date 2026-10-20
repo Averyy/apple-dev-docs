@@ -1,22 +1,27 @@
 # GKChallenge
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A challenge issued by the local player to another player.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 26.0
+- iPadOS 6.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class GKChallenge
+```
+
+```objc
+@interface GKChallenge : NSObject
 ```
 
 #### Overview
@@ -25,100 +30,101 @@ Players can use Game Center to challenge other players to beat their scores and 
 
 Game Center supports two kinds of challenges:
 
-- **score challenge ([`GKScoreChallenge`](gkscorechallenge.md))**: When a player challenges another player to beat their leaderboard score. When the player beats the score, Game Center issues a new score challenge to the player who initiated the challenge and continues issuing challenges between the players until a player refuses the challenge.
-- **achievement challenge ([`GKAchievementChallenge`](gkachievementchallenge.md))**: When a player challenges another player to earn an achievement. This challenge ends when the player earns the achievement.
+- **score challenge ([`GKScoreChallenge`](./gkscorechallenge.md))**: When a player challenges another player to beat their leaderboard score. When the player beats the score, Game Center issues a new score challenge to the player who initiated the challenge and continues issuing challenges between the players until a player refuses the challenge.
+- **achievement challenge ([`GKAchievementChallenge`](./gkachievementchallenge.md))**: When a player challenges another player to earn an achievement. This challenge ends when the player earns the achievement.
 
-You never subclass the [`GKChallenge`](gkchallenge.md) class directly. However, you can subclass [`GKScoreChallenge`](gkscorechallenge.md) or [`GKAchievementChallenge`](gkachievementchallenge.md) to create specific kinds of challenges.
+You never subclass the [`GKChallenge`](./gkchallenge.md) class directly. However, you can subclass [`GKScoreChallenge`](./gkscorechallenge.md) or [`GKAchievementChallenge`](./gkachievementchallenge.md) to create specific kinds of challenges.
 
 ##### Enable Challenges
 
-You must enable challenges for your game in App Store Connect before you can use the challenges features. For details, see [`Enable challenges`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/enable-challenges/) in App Store Connect Help.
+You must enable challenges for your game in App Store Connect before you can use the challenges features. For details, see [Enable challenges](https://developer.apple.com/help/app-store-connect/configure-game-center/enable-challenges/) in App Store Connect Help.
 
 ##### Load and Issue Challenges
 
-You can load the challenges issued by the local player using the [`loadReceivedChallenges(completionHandler:)`](gkchallenge/loadreceivedchallenges(completionhandler:).md) class method. You can issue challenges with the player’s permission using the [`challengeComposeController(withMessage:players:completion:)`](gkscore/challengecomposecontroller(withmessage:players:completion:).md) method in the [`GKLeaderboard.Entry`](gkleaderboard/entry.md), [`GKScore`](gkscore.md), or [`GKAchievement`](gkachievement.md) class.
+You can load the challenges issued by the local player using the [`loadReceivedChallenges(completionHandler:)`](./gkchallenge/loadreceivedchallenges%28completionhandler%29.md) class method. You can issue challenges with the player’s permission using the [`challengeComposeController(withMessage:players:completion:)`](./gkscore/challengecomposecontroller%28withmessage,players,completion%29.md) method in the [`GKLeaderboard.Entry`](./gkleaderboard/entry.md), [`GKScore`](./gkscore.md), or [`GKAchievement`](./gkachievement.md) class.
 
 ## Topics
 
 ### Retrieving the List of Challenges to the Local Player
-- [class func loadReceivedChallenges(completionHandler: (([GKChallenge]?, (any Error)?) -> Void)?)](gkchallenge/loadreceivedchallenges(completionhandler:).md)
+- [class func loadReceivedChallenges(completionHandler: (([GKChallenge]?, (any Error)?) -> Void)?)](./gkchallenge/loadreceivedchallenges%28completionhandler%29.md)
   Loads the list of outstanding challenges.
 ### Examining Details about a Challenge
-- [var issuingPlayer: GKPlayer?](gkchallenge/issuingplayer.md)
+- [var issuingPlayer: GKPlayer?](./gkchallenge/issuingplayer.md)
   The player who issues the challenge.
-- [var receivingPlayer: GKPlayer?](gkchallenge/receivingplayer.md)
+- [var receivingPlayer: GKPlayer?](./gkchallenge/receivingplayer.md)
   The player who receives the challenge.
-- [var message: String?](gkchallenge/message.md)
+- [var message: String?](./gkchallenge/message.md)
   A text message that describes the challenge.
-- [var state: GKChallengeState](gkchallenge/state.md)
+- [var state: GKChallengeState](./gkchallenge/state.md)
   The current state of the challenge.
-- [enum GKChallengeState](gkchallengestate.md)
+- [enum GKChallengeState](./gkchallengestate.md)
   The state of a challenge.
-- [var issueDate: Date](gkchallenge/issuedate.md)
+- [var issueDate: Date](./gkchallenge/issuedate.md)
   The date the player issued the challenge.
-- [var completionDate: Date?](gkchallenge/completiondate.md)
+- [var completionDate: Date?](./gkchallenge/completiondate.md)
   The date the challenged player completed the challenge.
 ### Declining a Challenge
-- [func decline()](gkchallenge/decline.md)
+- [func decline()](./gkchallenge/decline%28%29.md)
   Declines a challenge that another player issues to the local player.
 ### Deprecated symbols
-- [var issuingPlayerID: String?](gkchallenge/issuingplayerid.md)
+- [var issuingPlayerID: String?](./gkchallenge/issuingplayerid.md)
   The player who issues the challenge.
-- [var receivingPlayerID: String?](gkchallenge/receivingplayerid.md)
+- [var receivingPlayerID: String?](./gkchallenge/receivingplayerid.md)
   The player who receives the challenge.
-- [typealias GKChallengeComposeCompletionBlock](gkchallengecomposecompletionblock.md)
+- [typealias GKChallengeComposeCompletionBlock](./gkchallengecomposecompletionblock.md)
   A completion block that provides information about the player who issues a challenge and the players who receive it.
 ### Initializers
-- [init?(coder: NSCoder)](gkchallenge/init(coder:).md)
+- [init?(coder: NSCoder)](./gkchallenge/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [GKAchievementChallenge](gkachievementchallenge.md)
-- [GKScoreChallenge](gkscorechallenge.md)
+- [GKAchievementChallenge](./gkachievementchallenge.md)
+- [GKScoreChallenge](./gkscorechallenge.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class GKAchievementViewController](gkachievementviewcontroller.md)
-  An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
-- [class GKChallengeEventHandler](gkchallengeeventhandler.md)
+### Deprecated classes
+- [class GKAchievementViewController](./gkachievementviewcontroller.md)
+  An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) class is available, you should use it instead.
+- [class GKChallengeEventHandler](./gkchallengeeventhandler.md)
   The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
-- [class GKChallengesViewController](gkchallengesviewcontroller.md)
-- [class GKScoreChallenge](gkscorechallenge.md)
+- [class GKChallengesViewController](./gkchallengesviewcontroller.md)
+- [class GKScoreChallenge](./gkscorechallenge.md)
   A type of challenge where a player must beat the leaderboard score of another player.
-- [class GKAchievementChallenge](gkachievementchallenge.md)
+- [class GKAchievementChallenge](./gkachievementchallenge.md)
   A type of challenge where a player must earn another player’s achievement.
-- [class GKCloudPlayer](gkcloudplayer.md)
+- [class GKCloudPlayer](./gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+- [class GKGameCenterViewController](./gkgamecenterviewcontroller.md)
   The dashboard that allows players to access their Game Center data in your game.
-- [class GKGameSession](gkgamesession.md)
+- [class GKGameSession](./gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
-- [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
+- [class GKGameSessionSharingViewController](./gkgamesessionsharingviewcontroller.md)
   A user interface you can use to invite other users into a tvOS game session.
-- [class GKFriendRequestComposeViewController](gkfriendrequestcomposeviewcontroller.md)
+- [class GKFriendRequestComposeViewController](./gkfriendrequestcomposeviewcontroller.md)
   Your game uses the `GKFriendRequestComposeViewController` class to present a screen that allows the local player to send friend requests to other players.
-- [class GKLeaderboardViewController](gkleaderboardviewcontroller.md)
-  The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
-- [class GKPeerPickerController](gkpeerpickercontroller.md)
+- [class GKLeaderboardViewController](./gkleaderboardviewcontroller.md)
+  The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) class is available, you should use it instead.
+- [class GKPeerPickerController](./gkpeerpickercontroller.md)
   Provides a standard user interface to allow one iOS device to discover and connect to another.
-- [class GKScore](gkscore.md)
+- [class GKScore](./gkscore.md)
   An object containing information for a score that was earned by the player.
-- [class GKSession](gksession.md)
-  A [`GKSession`](gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
-- [class GKTurnBasedEventHandler](gkturnbasedeventhandler.md)
-  The [`GKTurnBasedEventHandler`](gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](gkturnbasedeventhandler/shared().md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
+- [class GKSession](./gksession.md)
+  A [`GKSession`](./gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
+- [class GKTurnBasedEventHandler](./gkturnbasedeventhandler.md)
+  The [`GKTurnBasedEventHandler`](./gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](./gkturnbasedeventhandler/shared%28%29.md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](./gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](./gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
 
 
 ---

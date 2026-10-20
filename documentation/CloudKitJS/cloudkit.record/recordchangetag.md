@@ -1,7 +1,8 @@
 # recordChangeTag
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the server change token for the record. Use this tag to indicate which version of the record you last fetched. This key is required if you are saving an existing record.
 
@@ -10,7 +11,7 @@ A string containing the server change token for the record. Use this tag to indi
 
 ## Declaration
 
-```swift
+```
 attribute String recordChangeTag;
 ```
 

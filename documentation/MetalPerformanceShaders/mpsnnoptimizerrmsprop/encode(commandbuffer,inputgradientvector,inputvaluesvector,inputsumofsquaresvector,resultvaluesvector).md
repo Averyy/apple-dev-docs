@@ -1,7 +1,8 @@
 # encode(commandBuffer:inputGradientVector:inputValuesVector:inputSumOfSquaresVector:resultValuesVector:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputSumOfSquaresVector: MPSVector, resultValuesVector: MPSVector)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer inputGradientVector:(MPSVector *) inputGradientVector inputValuesVector:(MPSVector *) inputValuesVector inputSumOfSquaresVector:(MPSVector *) inputSumOfSquaresVector resultValuesVector:(MPSVector *) resultValuesVector;
 ```
 
 

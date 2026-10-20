@@ -1,7 +1,8 @@
 # configuredTimeOffsetFromLive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time value that indicates the offset from the live time to start playback, or resume playback after a seek to positive infinity.
 
@@ -21,15 +22,20 @@ nonisolated
 var configuredTimeOffsetFromLive: CMTime { get set }
 ```
 
+```objc
+@property CMTime configuredTimeOffsetFromLive;
+```
+
 #### Discussion
 
-For nonlive stream content, the value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+For nonlive stream content, the value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
 ## See Also
 
-- [var automaticallyPreservesTimeOffsetFromLive: Bool](avplayeritem/automaticallypreservestimeoffsetfromlive.md)
+### Managing time offsets
+- [var automaticallyPreservesTimeOffsetFromLive: Bool](./automaticallypreservestimeoffsetfromlive.md)
   A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation.
-- [var recommendedTimeOffsetFromLive: CMTime](avplayeritem/recommendedtimeoffsetfromlive.md)
+- [var recommendedTimeOffsetFromLive: CMTime](./recommendedtimeoffsetfromlive.md)
   A recommended time offset from the live time based on observed network conditions.
 
 

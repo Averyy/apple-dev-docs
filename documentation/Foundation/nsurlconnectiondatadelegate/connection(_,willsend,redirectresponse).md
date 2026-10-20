@@ -1,7 +1,8 @@
 # connection(_:willSend:redirectResponse:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the connection determines that it must change URLs in order to continue loading a request.
 
@@ -20,13 +21,17 @@ Sent when the connection determines that it must change URLs in order to continu
 optional func connection(_ connection: NSURLConnection, willSend request: URLRequest, redirectResponse response: URLResponse?) -> URLRequest?
 ```
 
+```objc
+- (NSURLRequest *) connection:(NSURLConnection *) connection willSendRequest:(NSURLRequest *) request redirectResponse:(NSURLResponse *) response;
+```
+
 #### Return Value
 
 The actual URL request to use in light of the redirection response. The delegate may return `request` unmodified to allow the redirect, return a new request, or return `nil` to reject the redirect and continue processing the connection.
 
 #### Discussion
 
-If `redirectResponse` is `nil`, the URL was canonicalized (rewritten into its standard form) by the [`URLProtocol`](urlprotocol.md) object handling the request. Update your user interface to show the standardized form of the URL, then return the original request unmodified.
+If `redirectResponse` is `nil`, the URL was canonicalized (rewritten into its standard form) by the [`URLProtocol`](../urlprotocol.md) object handling the request. Update your user interface to show the standardized form of the URL, then return the original request unmodified.
 
 Otherwise, to cancel the redirect, call the `connection` object’s `cancel` method, then return the provided request object.
 
@@ -46,7 +51,8 @@ The delegate should be prepared to receive this message multiple times.
 
 ## See Also
 
-- [func connection(NSURLConnection, needNewBodyStream: URLRequest) -> InputStream?](nsurlconnectiondatadelegate/connection(_:neednewbodystream:).md)
+### Handling Redirects
+- [func connection(NSURLConnection, needNewBodyStream: URLRequest) -> InputStream?](./connection%28_,neednewbodystream%29.md)
   Called when an `NSURLConnection` needs to retransmit a request that has a body stream to provide a new, unopened stream.
 
 

@@ -1,7 +1,8 @@
 # MeshGradient.Locations.bezierPoints(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Vertices explicitly specifying their location and control points.
 

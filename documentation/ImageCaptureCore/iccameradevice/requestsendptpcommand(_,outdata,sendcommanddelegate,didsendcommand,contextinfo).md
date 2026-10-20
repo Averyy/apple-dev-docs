@@ -1,7 +1,8 @@
 # requestSendPTPCommand(_:outData:sendCommandDelegate:didSendCommand:contextInfo:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a Picture Transfer Protocol (PTP) command to a camera asynchronously.
 
@@ -18,25 +19,30 @@ Sends a Picture Transfer Protocol (PTP) command to a camera asynchronously.
 func requestSendPTPCommand(_ command: Data, outData data: Data?, sendCommandDelegate: Any, didSendCommand selector: Selector, contextInfo: UnsafeMutableRawPointer?)
 ```
 
+```objc
+- (void) requestSendPTPCommand:(NSData *) command outData:(NSData *) data sendCommandDelegate:(id) sendCommandDelegate didSendCommandSelector:(SEL) selector contextInfo:(void *) contextInfo;
+```
+
 #### Discussion
 
-Call this method only if the [`capabilities`](icdevice/capabilities.md) property contains [`cameraDeviceCanAcceptPTPCommands`](icdevicecapability/cameradevicecanacceptptpcommands.md). All PTP cameras have this capability.
+Call this method only if the [`capabilities`](../icdevice/capabilities.md) property contains [`cameraDeviceCanAcceptPTPCommands`](../icdevicecapability/cameradevicecanacceptptpcommands.md). All PTP cameras have this capability.
 
 The `sendCommandDelegate` must implement a function with the signature `- (void)didSendPTPCommand:(NSData*)command inData:(NSData*)data response:(NSData*)response error:(NSError*)error contextInfo:(void*)contextInfo`, to be called when the request is completed.
 
 ## See Also
 
-- [var tetheredCaptureEnabled: Bool](iccameradevice/tetheredcaptureenabled.md)
+### Taking Pictures
+- [var tetheredCaptureEnabled: Bool](./tetheredcaptureenabled.md)
   A Boolean value indicating whether tethered capture is enabled on the camera.
-- [var ptpEventHandler: (Data) -> Void](iccameradevice/ptpeventhandler.md)
+- [var ptpEventHandler: (Data) -> Void](./ptpeventhandler.md)
   A closure for handling PTP event packets.
-- [func requestEnableTethering()](iccameradevice/requestenabletethering.md)
+- [func requestEnableTethering()](./requestenabletethering%28%29.md)
   Enables tethered capture if the camera has the capability to take pictures while connected.
-- [func requestTakePicture()](iccameradevice/requesttakepicture.md)
+- [func requestTakePicture()](./requesttakepicture%28%29.md)
   Captures a new image using the camera.
-- [func requestSendPTPCommand(Data, outData: Data?, completion: (Data, Data, (any Error)?) -> Void)](iccameradevice/requestsendptpcommand(_:outdata:completion:).md)
+- [func requestSendPTPCommand(Data, outData: Data?, completion: (Data, Data, (any Error)?) -> Void)](./requestsendptpcommand%28_,outdata,completion%29.md)
   Sends a Picture Transfer Protocol (PTP) command to a camera asynchronously.
-- [func requestDisableTethering()](iccameradevice/requestdisabletethering.md)
+- [func requestDisableTethering()](./requestdisabletethering%28%29.md)
   Disables tethered capture on the camera.
 
 

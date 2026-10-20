@@ -1,7 +1,8 @@
 # TVTopShelfInsetContent
 
 **Framework**: TV Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of items to present using an inset-style interface in the top shelf.
 
@@ -14,44 +15,49 @@ A set of items to present using an inset-style interface in the top shelf.
 class TVTopShelfInsetContent
 ```
 
+```objc
+@interface TVTopShelfInsetContent : NSObject
+```
+
 #### Overview
 
-Create a [`TVTopShelfInsetContent`](tvtopshelfinsetcontent.md) object when you want to display your top shelf content using an inset interface. The layout for an inset interface shows a series of large images, each of which spans almost the entire width of the screen. The focused image appears raised above the background.
+Create a [`TVTopShelfInsetContent`](./tvtopshelfinsetcontent.md) object when you want to display your top shelf content using an inset interface. The layout for an inset interface shows a series of large images, each of which spans almost the entire width of the screen. The focused image appears raised above the background.
 
-For more information about how to configure images for an inset interface, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/tvos/icons-and-images/top-shelf-images/).
+For more information about how to configure images for an inset interface, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tvos/icons-and-images/top-shelf-images/).
 
 ## Topics
 
 ### Creating an Inset Content Object
-- [init(items: [TVTopShelfItem])](tvtopshelfinsetcontent/init(items:).md)
+- [init(items: [TVTopShelfItem])](./tvtopshelfinsetcontent/init%28items%29.md)
   Creates an inset content object and populates it with the specified set of items.
 ### Getting the Items
-- [var items: [TVTopShelfItem]](tvtopshelfinsetcontent/items.md)
+- [var items: [TVTopShelfItem]](./tvtopshelfinsetcontent/items.md)
   The items to display from the inset interface.
 ### Getting the Image Size
-- [class var imageSize: CGSize](tvtopshelfinsetcontent/imagesize.md)
+- [class var imageSize: CGSize](./tvtopshelfinsetcontent/imagesize.md)
   The standard width and height for images in an inset interface.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [TVTopShelfContent](tvtopshelfcontent.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [TVTopShelfContent](./tvtopshelfcontent.md)
 
 ## See Also
 
-- [class TVTopShelfSectionedItem](tvtopshelfsectioneditem.md)
+### Sectioned and inset content
+- [class TVTopShelfSectionedItem](./tvtopshelfsectioneditem.md)
   An item to display in a section-based interface.
-- [class TVTopShelfItemCollection](tvtopshelfitemcollection.md)
+- [class TVTopShelfItemCollection](./tvtopshelfitemcollection.md)
   A group of items that you display together in a sectioned interface in the top shelf.
-- [class TVTopShelfSectionedContent](tvtopshelfsectionedcontent.md)
+- [class TVTopShelfSectionedContent](./tvtopshelfsectionedcontent.md)
   The set of items you want to present using a section-based interface in the top shelf.
 
 

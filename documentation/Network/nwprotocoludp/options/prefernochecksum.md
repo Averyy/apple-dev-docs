@@ -1,7 +1,8 @@
 # preferNoChecksum
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that configures the connection to not send UDP checksums.
 
@@ -26,7 +27,8 @@ UDP checksums are optional when the datagrams are sent over IPv4. This option co
 
 ## See Also
 
-- [init()](nwprotocoludp/options/init.md)
+### Customizing UDP Connections
+- [init()](./init%28%29.md)
   Initializes a default set of UDP connection options.
 
 

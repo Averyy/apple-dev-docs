@@ -1,7 +1,8 @@
 # AVCapturePhotoOutput.QualityPrioritization.quality
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Photo quality is most important, even at the expense of shot-to-shot time.
 
@@ -18,11 +19,16 @@ Photo quality is most important, even at the expense of shot-to-shot time.
 case quality
 ```
 
+```c
+AVCapturePhotoQualityPrioritizationQuality
+```
+
 ## See Also
 
-- [AVCapturePhotoOutput.QualityPrioritization.speed](avcapturephotooutput/qualityprioritization/speed.md)
+### Specifying priority
+- [AVCapturePhotoOutput.QualityPrioritization.speed](./speed.md)
   Speed of photo delivery is most important, even at the expense of quality.
-- [AVCapturePhotoOutput.QualityPrioritization.balanced](avcapturephotooutput/qualityprioritization/balanced.md)
+- [AVCapturePhotoOutput.QualityPrioritization.balanced](./balanced.md)
   Priority is balanced between photo quality and speed of delivery.
 
 

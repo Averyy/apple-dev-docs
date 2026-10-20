@@ -1,7 +1,8 @@
 # SWHighlight
 
 **Framework**: Shared with You  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a universal link to share by any number of contacts in one or more conversations.
 
@@ -19,10 +20,14 @@ An object that represents a universal link to share by any number of contacts in
 class SWHighlight
 ```
 
+```objc
+@interface SWHighlight : NSObject
+```
+
 ## Mentions
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
-- [Making your app content shareable](making-your-app-content-shareable.md)
+- [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
+- [Making your app content shareable](./making-your-app-content-shareable.md)
 
 #### Overview
 
@@ -31,33 +36,34 @@ The system doesn’t expose the identities of the contacts to the app. It tracks
 ## Topics
 
 ### Viewing highlight attributes
-- [var identifier: any NSCopying & NSSecureCoding](swhighlight/identifier.md)
+- [var identifier: any NSCopying & NSSecureCoding](./swhighlight/identifier.md)
   The unique identifier for the highlight.
-- [var url: URL](swhighlight/url.md)
+- [var url: URL](./swhighlight/url.md)
   The surfaced content URL for the highlight.
 ### Initializers
-- [init?(coder: NSCoder)](swhighlight/init(coder:).md)
+- [init?(coder: NSCoder)](./swhighlight/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [SWCollaborationHighlight](swcollaborationhighlight.md)
+- [SWCollaborationHighlight](./swcollaborationhighlight.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SWHighlightCenter](swhighlightcenter.md)
+### Highlights
+- [class SWHighlightCenter](./swhighlightcenter.md)
   An object that contains a priority-ordered list of universal links to share with the current user.
 
 

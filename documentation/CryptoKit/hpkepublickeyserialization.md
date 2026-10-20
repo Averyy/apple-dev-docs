@@ -1,9 +1,10 @@
 # HPKEPublicKeySerialization
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-A type that [`HPKE`](hpke.md) uses to encode the public key.
+A type that [`HPKE`](./hpke.md) uses to encode the public key.
 
 **Availability**:
 - iOS 17.0+
@@ -24,26 +25,26 @@ protocol HPKEPublicKeySerialization : Sendable
 ## Topics
 
 ### Initializers
-- [init<D>(D, kem: HPKE.KEM) throws](hpkepublickeyserialization/init(_:kem:).md)
+- [init<D>(D, kem: HPKE.KEM) throws](./hpkepublickeyserialization/init%28_,kem%29.md)
   Creates a public key from an encoded representation.
 ### Instance Methods
-- [func hpkeRepresentation(kem: HPKE.KEM) throws -> Data](hpkepublickeyserialization/hpkerepresentation(kem:).md)
+- [func hpkeRepresentation(kem: HPKE.KEM) throws -> Data](./hpkepublickeyserialization/hpkerepresentation%28kem%29.md)
   Creates an encoded representation of the public key.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [HPKEDiffieHellmanPublicKey](hpkediffiehellmanpublickey.md)
-- [HPKEKEMPublicKey](hpkekempublickey.md)
+- [HPKEDiffieHellmanPublicKey](./hpkediffiehellmanpublickey.md)
+- [HPKEKEMPublicKey](./hpkekempublickey.md)
 ### Conforming Types
-- [Curve25519.KeyAgreement.PublicKey](curve25519/keyagreement/publickey.md)
-- [P256.KeyAgreement.PublicKey](p256/keyagreement/publickey.md)
-- [P384.KeyAgreement.PublicKey](p384/keyagreement/publickey.md)
-- [P521.KeyAgreement.PublicKey](p521/keyagreement/publickey.md)
-- [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
+- [Curve25519.KeyAgreement.PublicKey](./curve25519/keyagreement/publickey.md)
+- [P256.KeyAgreement.PublicKey](./p256/keyagreement/publickey.md)
+- [P384.KeyAgreement.PublicKey](./p384/keyagreement/publickey.md)
+- [P521.KeyAgreement.PublicKey](./p521/keyagreement/publickey.md)
+- [XWingMLKEM768X25519.PublicKey](./xwingmlkem768x25519/publickey.md)
 
 
 ---

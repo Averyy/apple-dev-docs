@@ -1,7 +1,8 @@
 # AVAudioUnitReverbPreset.outdoorGeneral
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,15 +18,20 @@
 case outdoorGeneral
 ```
 
+```c
+AVAudioUnitReverbPresetOutdoorGeneral
+```
+
 ## See Also
 
-- [AVAudioUnitReverbPreset.plate](avaudiounitreverbpreset/plate.md)
+### Choosing other presets
+- [AVAudioUnitReverbPreset.plate](./plate.md)
   A preset that represents a reverb with the acoustic characteristics of a plate environment.
-- [AVAudioUnitReverbPreset.mediumChamber](avaudiounitreverbpreset/mediumchamber.md)
+- [AVAudioUnitReverbPreset.mediumChamber](./mediumchamber.md)
   A preset that represents a reverb with the acoustic characteristics of a medium-sized chamber environment.
-- [AVAudioUnitReverbPreset.largeChamber](avaudiounitreverbpreset/largechamber.md)
+- [AVAudioUnitReverbPreset.largeChamber](./largechamber.md)
   A preset that represents a reverb with the acoustic characteristics of a large-sized chamber environment.
-- [AVAudioUnitReverbPreset.cathedral](avaudiounitreverbpreset/cathedral.md)
+- [AVAudioUnitReverbPreset.cathedral](./cathedral.md)
   A preset that represents a reverb with the acoustic characteristics of a cathedral environment.
 
 

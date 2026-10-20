@@ -1,7 +1,8 @@
 # init(engine:assetIdentifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sound event node with the given asset.
 
@@ -19,6 +20,10 @@ Creates a sound event node with the given asset.
 init(engine: PHASEEngine, assetIdentifier: String) throws
 ```
 
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine assetIdentifier:(NSString *) assetIdentifier error:(NSError **) error;
+```
+
 ## Parameters
 
 - `engine`: The object that controls this class’s associated audio output.
@@ -26,7 +31,8 @@ init(engine: PHASEEngine, assetIdentifier: String) throws
 
 ## See Also
 
-- [init(engine: PHASEEngine, assetIdentifier: String, mixerParameters: PHASEMixerParameters) throws](phasesoundevent/init(engine:assetidentifier:mixerparameters:).md)
+### Creating a Sound Event
+- [init(engine: PHASEEngine, assetIdentifier: String, mixerParameters: PHASEMixerParameters) throws](./init%28engine,assetidentifier,mixerparameters%29.md)
   Creates a sound event node with the given asset and mixer parameters.
 
 

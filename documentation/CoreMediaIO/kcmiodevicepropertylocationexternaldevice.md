@@ -1,7 +1,8 @@
 # kCMIODevicePropertyLocationExternalDevice
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,12 +14,17 @@
 var kCMIODevicePropertyLocationExternalDevice: Int { get }
 ```
 
+```c
+kCMIODevicePropertyLocationExternalDevice
+```
+
 ## See Also
 
-- [var kCMIODevicePropertyLocationBuiltInDisplay: Int](kcmiodevicepropertylocationbuiltindisplay.md)
-- [var kCMIODevicePropertyLocationExternalDisplay: Int](kcmiodevicepropertylocationexternaldisplay.md)
-- [var kCMIODevicePropertyLocationExternalWirelessDevice: Int](kcmiodevicepropertylocationexternalwirelessdevice.md)
-- [var kCMIODevicePropertyLocationUnknown: Int](kcmiodevicepropertylocationunknown.md)
+### Constants
+- [var kCMIODevicePropertyLocationBuiltInDisplay: Int](./kcmiodevicepropertylocationbuiltindisplay.md)
+- [var kCMIODevicePropertyLocationExternalDisplay: Int](./kcmiodevicepropertylocationexternaldisplay.md)
+- [var kCMIODevicePropertyLocationExternalWirelessDevice: Int](./kcmiodevicepropertylocationexternalwirelessdevice.md)
+- [var kCMIODevicePropertyLocationUnknown: Int](./kcmiodevicepropertylocationunknown.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSMergeConflict
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of conflicts that occur during an attempt to save changes in a managed object context.
 
@@ -10,7 +11,7 @@ An encapsulation of conflicts that occur during an attempt to save changes in a 
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ An encapsulation of conflicts that occur during an attempt to save changes in a 
 
 ```swift
 class NSMergeConflict
+```
+
+```objc
+@interface NSMergeConflict : NSObject
 ```
 
 #### Overview
@@ -32,41 +37,42 @@ Snapshot dictionaries include values for all attributes and to-one relationships
 ## Topics
 
 ### Initializing a Merge Conflict
-- [init(source: NSManagedObject, newVersion: Int, oldVersion: Int, cachedSnapshot: [String : Any]?, persistedSnapshot: [String : Any]?)](nsmergeconflict/init(source:newversion:oldversion:cachedsnapshot:persistedsnapshot:).md)
+- [init(source: NSManagedObject, newVersion: Int, oldVersion: Int, cachedSnapshot: [String : Any]?, persistedSnapshot: [String : Any]?)](./nsmergeconflict/init%28source,newversion,oldversion,cachedsnapshot,persistedsnapshot%29.md)
   Initializes a merge conflict.
 ### Accessing Merge Conflict Details
-- [var sourceObject: NSManagedObject](nsmergeconflict/sourceobject.md)
+- [var sourceObject: NSManagedObject](./nsmergeconflict/sourceobject.md)
   The source object for the conflict.
-- [var objectSnapshot: [String : Any]?](nsmergeconflict/objectsnapshot.md)
+- [var objectSnapshot: [String : Any]?](./nsmergeconflict/objectsnapshot.md)
   A dictionary containing the values of the source object.
-- [var cachedSnapshot: [String : Any]?](nsmergeconflict/cachedsnapshot.md)
+- [var cachedSnapshot: [String : Any]?](./nsmergeconflict/cachedsnapshot.md)
   A dictionary containing the values of the source object held in the persistent store coordinator layer.
-- [var persistedSnapshot: [String : Any]?](nsmergeconflict/persistedsnapshot.md)
+- [var persistedSnapshot: [String : Any]?](./nsmergeconflict/persistedsnapshot.md)
   A dictionary containing the values of the source object held in the persistent store.
-- [var newVersionNumber: Int](nsmergeconflict/newversionnumber.md)
+- [var newVersionNumber: Int](./nsmergeconflict/newversionnumber.md)
   The new version number for the change.
-- [var oldVersionNumber: Int](nsmergeconflict/oldversionnumber.md)
+- [var oldVersionNumber: Int](./nsmergeconflict/oldversionnumber.md)
   The old version number for the change.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSConstraintConflict](nsconstraintconflict.md)
+### Conflict Management
+- [class NSConstraintConflict](./nsconstraintconflict.md)
   An encapsulation of conflicts that occur during an attempt to save a managed object.
-- [class NSMergePolicy](nsmergepolicy.md)
+- [class NSMergePolicy](./nsmergepolicy.md)
   A policy object that you use to resolve conflicts between the persistent store and in-memory versions of managed objects.
-- [class NSQueryGenerationToken](nsquerygenerationtoken.md)
+- [class NSQueryGenerationToken](./nsquerygenerationtoken.md)
   A token that indicates which generation of the persistent store is being accessed.
 
 

@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: Visual Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel buffer that visual intelligence captures.
 
@@ -10,7 +11,7 @@ The pixel buffer that visual intelligence captures.
 - iPadOS 26.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var pixelBuffer: CVReadOnlyPixelBuffer? { get }
 
 ## Mentions
 
-- [Integrating your app with visual intelligence](integrating-your-app-with-visual-intelligence.md)
+- [Integrating your app with visual intelligence](../integrating-your-app-with-visual-intelligence.md)
 
 ## See Also
 
-- [let labels: [String]](semanticcontentdescriptor/labels.md)
+### Accessing semantic content
+- [let labels: [String]](./labels.md)
   A list of labels that visual intelligence uses to classify items onscreen or in visual intelligence camera.
 
 

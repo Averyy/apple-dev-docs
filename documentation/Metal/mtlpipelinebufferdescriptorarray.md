@@ -1,7 +1,8 @@
 # MTLPipelineBufferDescriptorArray
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An array of pipeline buffer descriptors.
 
@@ -19,37 +20,42 @@ An array of pipeline buffer descriptors.
 class MTLPipelineBufferDescriptorArray
 ```
 
+```objc
+@interface MTLPipelineBufferDescriptorArray : NSObject
+```
+
 ## Topics
 
 ### Accessing array elements
-- [subscript(Int) -> MTLPipelineBufferDescriptor!](mtlpipelinebufferdescriptorarray/subscript(_:).md)
+- [subscript(Int) -> MTLPipelineBufferDescriptor!](./mtlpipelinebufferdescriptorarray/subscript%28_%29.md)
   Returns the pipeline buffer descriptor at the specified array index.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+### Configuring a compute pipeline state
+- [class MTL4ComputePipelineDescriptor](./mtl4computepipelinedescriptor.md)
   Describes a compute pipeline state.
-- [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
+- [class MTLComputePipelineDescriptor](./mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
-- [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
+- [protocol MTLComputePipelineState](./mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
-- [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
+- [class MTLStageInputOutputDescriptor](./mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
-- [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
+- [class MTLPipelineBufferDescriptor](./mtlpipelinebufferdescriptor.md)
   The mutability options for a buffer that a render or compute pipeline uses.
-- [struct MTLPipelineOption](mtlpipelineoption.md)
+- [struct MTLPipelineOption](./mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
 
 

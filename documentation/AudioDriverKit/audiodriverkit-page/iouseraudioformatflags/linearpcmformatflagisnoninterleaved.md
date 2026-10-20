@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsNonInterleaved
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate whether PCM channels interleave their samples in the data.
 
@@ -10,17 +11,18 @@ A flag to indicate whether PCM channels interleave their samples in the data.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsNonInterleaved
 ```
 
 #### Discussion
 
-This flag is a synonym of [`FormatFlagIsNonInterleaved`](audiodriverkit/iouseraudioformatflags/formatflagisnoninterleaved.md).
+This flag is a synonym of [`FormatFlagIsNonInterleaved`](./formatflagisnoninterleaved.md).
 
 ## See Also
 
-- [FormatFlagIsNonInterleaved](audiodriverkit/iouseraudioformatflags/formatflagisnoninterleaved.md)
+### Channel Layout Flags
+- [FormatFlagIsNonInterleaved](./formatflagisnoninterleaved.md)
   A flag to indicate whether the channels interleave their samples in the data.
 
 

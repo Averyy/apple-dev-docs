@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short TYPE_RESERVED;
 ```
 
 ## See Also
 
-- [TYPE_BACK_FORWARD](performancenavigation/1632693-type_back_forward.md)
-- [TYPE_NAVIGATE](performancenavigation/1629020-type_navigate.md)
-- [TYPE_RELOAD](performancenavigation/1631558-type_reload.md)
+### Miscellaneous
+- [TYPE_BACK_FORWARD](./api-1632693-type_back_forward.md)
+- [TYPE_NAVIGATE](./api-1629020-type_navigate.md)
+- [TYPE_RELOAD](./api-1631558-type_reload.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a WatchKit interface object and configures its initial state.
@@ -22,7 +23,7 @@ Your interface object configured with the provided information.
 
 #### Discussion
 
-You must implement this method and use it to create your interface object. Configure the object using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your interface object for the first time. For all subsequent updates, the system calls the [`updateWKInterfaceObject(_:context:)`](wkinterfaceobjectrepresentable/updatewkinterfaceobject(_:context:).md) method.
+You must implement this method and use it to create your interface object. Configure the object using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your interface object for the first time. For all subsequent updates, the system calls the [`updateWKInterfaceObject(_:context:)`](./updatewkinterfaceobject%28_,context%29.md) method.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ You must implement this method and use it to create your interface object. Confi
 
 ## See Also
 
-- [func updateWKInterfaceObject(Self.WKInterfaceObjectType, context: Self.Context)](wkinterfaceobjectrepresentable/updatewkinterfaceobject(_:context:).md)
+### Creating and updating the interface object
+- [func updateWKInterfaceObject(Self.WKInterfaceObjectType, context: Self.Context)](./updatewkinterfaceobject%28_,context%29.md)
   Updates the presented WatchKit interface object (and its coordinator) to the latest configuration.
-- [WKInterfaceObjectRepresentable.Context](wkinterfaceobjectrepresentable/context.md)
+- [WKInterfaceObjectRepresentable.Context](./context.md)
 
 
 ---

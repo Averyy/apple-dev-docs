@@ -1,7 +1,8 @@
 # clear()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all authored slots, leaving an empty operation.
 

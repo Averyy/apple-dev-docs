@@ -1,7 +1,8 @@
 # kSecValueRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a reference to the item.
 
@@ -20,9 +21,13 @@ A key whose value is a reference to the item.
 let kSecValueRef: CFString
 ```
 
+```c
+extern CFStringRef const kSecValueRef;
+```
+
 #### Discussion
 
-The corresponding value, depending on the item class requested, is of type [`SecKeychainItem`](seckeychainitem.md), [`SecKey`](seckey.md), [`SecCertificate`](seccertificate.md), or [`SecIdentity`](secidentity.md).
+The corresponding value, depending on the item class requested, is of type [`SecKeychainItem`](./seckeychainitem.md), [`SecKey`](./seckey.md), [`SecCertificate`](./seccertificate.md), or [`SecIdentity`](./secidentity.md).
 
 
 ---

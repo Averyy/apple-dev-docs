@@ -1,7 +1,8 @@
 # >=(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of Booleans by testing whether the given value is greater than or equal to each element in the given column.
 
@@ -19,6 +20,18 @@ Creates a column of Booleans by testing whether the given value is greater than 
 static func >= (a: Element, b: MLDataColumn<Element>) -> MLDataColumn<Bool>
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
+**Other overloads**:
+
+```swift
+static func >= (a: MLDataColumn<Element>, b: Element) -> MLDataColumn<Bool>
+```
+
+```swift
+static func >= (a: MLDataColumn<Element>, b: MLDataColumn<Element>) -> MLDataColumn<Bool>
+```
+
 #### Return Value
 
 A new column of Booleans.
@@ -30,15 +43,16 @@ A new column of Booleans.
 
 ## See Also
 
-- [static ==(_:_:)](mldatacolumn/==(_:_:).md)
+### Comparing columns
+- [static ==(_:_:)](./eqeq%28_,_%29.md)
   Creates a column of Booleans by testing whether the given value is equal to each element in the given column.
-- [static !=(_:_:)](mldatacolumn/!=(_:_:).md)
+- [static !=(_:_:)](./noteq%28_,_%29.md)
   Creates a column of Booleans by testing whether the given value is not equal to each element in the given column.
-- [static <(_:_:)](mldatacolumn/_(_:_:)-81qel.md)
+- [static <(_:_:)](./op%28_,_%29-81qel.md)
   Creates a column of Booleans by testing whether the given value is less than each element in the given column.
-- [static <=(_:_:)](mldatacolumn/_=(_:_:)-8eq6v.md)
+- [static <=(_:_:)](./opeq%28_,_%29-8eq6v.md)
   Creates a column of Booleans by testing whether the given value is less than or equal to each element in the given column.
-- [static >(_:_:)](mldatacolumn/_(_:_:)-g252.md)
+- [static >(_:_:)](./op%28_,_%29-g252.md)
   Creates a column of Booleans by testing whether the given value is greater than each element in the given column.
 
 

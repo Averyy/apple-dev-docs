@@ -1,17 +1,22 @@
 # setStringValue(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the string for the annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setStringValue(_ value: String!)
+```
+
+```objc
+- (void) setStringValue:(NSString *) value;
 ```
 
 ## Parameters
@@ -20,11 +25,12 @@ func setStringValue(_ value: String!)
 
 ## See Also
 
-- [func stringValue() -> String!](pdfannotationtextwidget/stringvalue.md)
+### Working with Annotation Strings
+- [func stringValue() -> String!](./stringvalue%28%29.md)
   Returns the string assigned to the annotation.
-- [func maximumLength() -> Int](pdfannotationtextwidget/maximumlength.md)
+- [func maximumLength() -> Int](./maximumlength%28%29.md)
   Returns the maximum number of characters allowed in the annotation string.
-- [func setMaximumLength(Int)](pdfannotationtextwidget/setmaximumlength(_:).md)
+- [func setMaximumLength(Int)](./setmaximumlength%28_%29.md)
   Sets the maximum number of characters allowed in the annotation string.
 
 

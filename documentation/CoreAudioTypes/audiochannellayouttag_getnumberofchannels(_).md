@@ -1,7 +1,8 @@
 # AudioChannelLayoutTag_GetNumberOfChannels(_:)
 
 **Framework**: Core Audio Types  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the number of channels from an audio channel layout tag.
 
@@ -20,6 +21,10 @@ Retrieves the number of channels from an audio channel layout tag.
 func AudioChannelLayoutTag_GetNumberOfChannels(_ inLayoutTag: AudioChannelLayoutTag) -> UInt32
 ```
 
+```c
+static UInt32 AudioChannelLayoutTag_GetNumberOfChannels(AudioChannelLayoutTag inLayoutTag);
+```
+
 #### Return Value
 
 A count of audio channels.
@@ -30,19 +35,20 @@ A count of audio channels.
 
 ## See Also
 
-- [var mChannelBitmap: AudioChannelBitmap](audiochannellayout/mchannelbitmap.md)
+### Accessing the Data
+- [var mChannelBitmap: AudioChannelBitmap](./audiochannellayout/mchannelbitmap.md)
   If `mChannelLayoutTag` is set to `kAudioChannelLayoutTag_UseChannelBitmap`, this field is the channel-use bitmap.
-- [struct AudioChannelBitmap](audiochannelbitmap.md)
+- [struct AudioChannelBitmap](./audiochannelbitmap.md)
   The supported channel bitmaps to use when defining channel layouts.
-- [var mChannelDescriptions: AudioChannelDescription](audiochannellayout/mchanneldescriptions.md)
+- [var mChannelDescriptions: AudioChannelDescription](./audiochannellayout/mchanneldescriptions.md)
   A variable length array of `mNumberChannelDescription` elements that describes a layout. If the `mChannelLayoutTag` field is set to `kAudioChannelLayoutTag_UseChannelDescriptions`, use this field to describe the layout.
-- [var mChannelLayoutTag: AudioChannelLayoutTag](audiochannellayout/mchannellayouttag.md)
-  The `AudioChannelLayoutTag` value that indicates the layout. See [`Audio Channel Layout Tags`](audio-channel-layout-tags.md) for possible values.
-- [typealias AudioChannelLayoutTag](audiochannellayouttag.md)
+- [var mChannelLayoutTag: AudioChannelLayoutTag](./audiochannellayout/mchannellayouttag.md)
+  The `AudioChannelLayoutTag` value that indicates the layout. See [Audio Channel Layout Tags](./audio-channel-layout-tags.md) for possible values.
+- [typealias AudioChannelLayoutTag](./audiochannellayouttag.md)
   Identifies a previously-defined channel layout.
-- [Audio Channel Layout Tags](audio-channel-layout-tags.md)
+- [Audio Channel Layout Tags](./audio-channel-layout-tags.md)
   The identifiers that represent audio channel layouts.
-- [var mNumberChannelDescriptions: UInt32](audiochannellayout/mnumberchanneldescriptions.md)
+- [var mNumberChannelDescriptions: UInt32](./audiochannellayout/mnumberchanneldescriptions.md)
   The number of items in the `mChannelDescriptions` array.
 
 

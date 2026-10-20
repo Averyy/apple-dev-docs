@@ -1,7 +1,8 @@
 # tool
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool that produced the error.
 

@@ -1,7 +1,8 @@
 # CMPedometerHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block for processing pedometer-related data.
 
@@ -18,26 +19,31 @@ A block for processing pedometer-related data.
 typealias CMPedometerHandler = (CMPedometerData?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(CMPedometerData *, NSError *) CMPedometerHandler;
+```
+
 #### Discussion
 
 You provide a block of this type when requesting data from the `CMPedometer` object. When the data becomes available, the pedometer object delivers that data to your block for processing. If there was an error retrieving the data, the pedometer object provides an error object instead.
 
 This block has no return value and takes the following parameters:
 
-- **`pedometerData`**: A [`CMPedometerData`](cmpedometerdata.md) object containing the available data. If there was an error retrieving the data, this parameter is `nil`.
-- **`error`**: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object if there was a problem or `nil` if the pedometer data was retrieved successfully.
+- **`pedometerData`**: A [`CMPedometerData`](./cmpedometerdata.md) object containing the available data. If there was an error retrieving the data, this parameter is `nil`.
+- **`error`**: An [`NSError`](../Foundation/nserror.md) object if there was a problem or `nil` if the pedometer data was retrieved successfully.
 
 ## See Also
 
-- [func startUpdates(from: Date, withHandler: CMPedometerHandler)](cmpedometer/startupdates(from:withhandler:).md)
+### Gathering Live Pedometer Data
+- [func startUpdates(from: Date, withHandler: CMPedometerHandler)](./cmpedometer/startupdates%28from,withhandler%29.md)
   Starts the delivery of recent pedestrian-related data to your app.
-- [func stopUpdates()](cmpedometer/stopupdates.md)
+- [func stopUpdates()](./cmpedometer/stopupdates%28%29.md)
   Stops the delivery of recent pedestrian data updates to your app.
-- [func startEventUpdates(handler: CMPedometerEventHandler)](cmpedometer/starteventupdates(handler:).md)
+- [func startEventUpdates(handler: CMPedometerEventHandler)](./cmpedometer/starteventupdates%28handler%29.md)
   Starts the delivery of pedometer events to your app.
-- [func stopEventUpdates()](cmpedometer/stopeventupdates.md)
+- [func stopEventUpdates()](./cmpedometer/stopeventupdates%28%29.md)
   Stops the delivery of pedometer events to your app.
-- [typealias CMPedometerEventHandler](cmpedometereventhandler.md)
+- [typealias CMPedometerEventHandler](./cmpedometereventhandler.md)
   A block for processing pedometer events.
 
 

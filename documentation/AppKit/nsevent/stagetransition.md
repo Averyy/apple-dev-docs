@@ -1,7 +1,8 @@
 # stageTransition
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transition value for the stage of a pressure gesture event.
 
@@ -14,11 +15,15 @@ The transition value for the stage of a pressure gesture event.
 var stageTransition: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat stageTransition;
+```
+
 #### Discussion
 
 This property is specifically intended to provide a value for the transition animation between the stages of a pressure gesture event.
 
-Gesture events of type [`NSEvent.EventType.pressure`](nsevent/eventtype/pressure.md) go through stages, and transitions occur between these stages. This property indicates a transition value between the current stage and the next or prior stage.
+Gesture events of type [`NSEvent.EventType.pressure`](./eventtype/pressure.md) go through stages, and transitions occur between these stages. This property indicates a transition value between the current stage and the next or prior stage.
 
 This value is distinct from pressure. It immediately resets to `0` as soon as a stage transition occurs. However, this value does not then immediately begin to fluctuate. The value only starts to change as a new stage begins to approach. It then continues to rise or fall throughout the transition, until that new stage is reached.
 
@@ -26,17 +31,19 @@ As pressure increases for the gesture and a new stage approaches, this property 
 
 ## See Also
 
-- [NSEvent.EventType](nsevent/eventtype.md)
+### Related Documentation
+- [NSEvent.EventType](./eventtype.md)
   Constants for the types of events that responder objects can handle.
-- [NSEvent.EventType.pressure](nsevent/eventtype/pressure.md)
+- [NSEvent.EventType.pressure](./eventtype/pressure.md)
   An event that reports a change in pressure on a pressure-sensitive device.
-- [var pressure: Float](nsevent/pressure.md)
+### Getting pressure information
+- [var pressure: Float](./pressure.md)
   A normalized value that indicates the degree of pressure applied to an appropriate input device.
-- [var stage: Int](nsevent/stage.md)
+- [var stage: Int](./stage.md)
   A value that indicates the stage of a pressure gesture event.
-- [var pressureBehavior: NSEvent.PressureBehavior](nsevent/pressurebehavior-swift.property.md)
+- [var pressureBehavior: NSEvent.PressureBehavior](./pressurebehavior-swift.property.md)
   The behavior and progression for a pressure event.
-- [NSEvent.PressureBehavior](nsevent/pressurebehavior-swift.enum.md)
+- [NSEvent.PressureBehavior](./pressurebehavior-swift.enum.md)
   These constants describe the behavior and progression of a pressure gesture.
 
 

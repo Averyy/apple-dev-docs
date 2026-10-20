@@ -1,18 +1,19 @@
 # CFPreferencesRemoveSuitePreferencesFromApp(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes suite preferences from an application’s search chain.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,14 +21,19 @@ Removes suite preferences from an application’s search chain.
 func CFPreferencesRemoveSuitePreferencesFromApp(_ applicationID: CFString, _ suiteID: CFString)
 ```
 
+```c
+extern void CFPreferencesRemoveSuitePreferencesFromApp(CFStringRef applicationID, CFStringRef suiteID);
+```
+
 ## Parameters
 
-- `applicationID`: The ID of the application from which to remove suite preferences, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
+- `applicationID`: The ID of the application from which to remove suite preferences, typically [`kCFPreferencesCurrentApplication`](./kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](./kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
 - `suiteID`: The ID of the application suite preferences to remove. Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 
-- [func CFPreferencesAddSuitePreferencesToApp(CFString, CFString)](cfpreferencesaddsuitepreferencestoapp(_:_:).md)
+### Adding and Removing Suite Preferences
+- [func CFPreferencesAddSuitePreferencesToApp(CFString, CFString)](./cfpreferencesaddsuitepreferencestoapp%28_,_%29.md)
   Adds suite preferences to an application’s preference search chain.
 
 

@@ -1,7 +1,8 @@
 # Name
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A string holding the track name.
 
@@ -11,9 +12,10 @@ A `NULL`-terminated UTF-8 or UTF-16 string holding the track name. If this is a 
 
 ## See Also
 
-- [Reserved](track_name_atom/reserved.md)
+### Data fields
+- [Reserved](./reserved.md)
   A 32-bit integer.
-- [Language](track_name_atom/language.md)
+- [Language](./language.md)
   A 16-bit integer holding a packed ISO 639-2/T code.
 
 

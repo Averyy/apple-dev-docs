@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CoreAudioKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new network browser window controller.
 
@@ -12,6 +13,10 @@ Creates a new network browser window controller.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

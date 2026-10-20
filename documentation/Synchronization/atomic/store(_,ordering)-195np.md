@@ -1,7 +1,8 @@
 # store(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Atomically sets the current value to `desired`, applying the specified memory ordering.
 
@@ -19,6 +20,8 @@ Atomically sets the current value to `desired`, applying the specified memory or
 ```swift
 func store(_ desired: consuming Value, ordering: AtomicStoreOrdering)
 ```
+
+Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic64BitStorage`.
 
 ## Parameters
 

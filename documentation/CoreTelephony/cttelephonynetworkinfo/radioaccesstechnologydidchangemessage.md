@@ -1,7 +1,8 @@
 # CTTelephonyNetworkInfo.RadioAccessTechnologyDidChangeMessage
 
 **Framework**: Core Telephony  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts when the radio access technology changes for one of the services.
 
@@ -18,20 +19,20 @@ struct RadioAccessTechnologyDidChangeMessage
 
 #### Overview
 
-Use the [`serviceIdentifier`](cttelephonynetworkinfo/radioaccesstechnologydidchangemessage/serviceidentifier.md) property  as the key in [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
+Use the [`serviceIdentifier`](./radioaccesstechnologydidchangemessage/serviceidentifier.md) property  as the key in [`serviceCurrentRadioAccessTechnology`](./servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 
 ## Topics
 
 ### Instance Properties
-- [var serviceIdentifier: String](cttelephonynetworkinfo/radioaccesstechnologydidchangemessage/serviceidentifier.md)
+- [var serviceIdentifier: String](./radioaccesstechnologydidchangemessage/serviceidentifier.md)
   The service identifier for which the radio access technology changed.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # add(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an object to the tree controller’s content after the current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,15 @@ Adds an object to the tree controller’s content after the current selection.
 func add(_ sender: Any?)
 ```
 
+```objc
+- (void) add:(id) sender;
+```
+
 #### Discussion
 
 The `sender` is typically the object that invoked this method.
 
-If the receiver is in object mode, [`newObject()`](nsobjectcontroller/newobject().md) is called and the returned object is added to the collection. If the receiver is in entity mode a new object is created that is appropriate as specified by the entity, and [`newObject()`](nsobjectcontroller/newobject().md) is not used. The object is added after the current selection at the same depth. If there is no selection, the object is appended to the child nodes of the tree controller’s sorted content objects, which are represented by the value of [`arrangedObjects`](nstreecontroller/arrangedobjects.md).
+If the receiver is in object mode, [`newObject()`](../nsobjectcontroller/newobject%28%29.md) is called and the returned object is added to the collection. If the receiver is in entity mode a new object is created that is appropriate as specified by the entity, and [`newObject()`](../nsobjectcontroller/newobject%28%29.md) is not used. The object is added after the current selection at the same depth. If there is no selection, the object is appended to the child nodes of the tree controller’s sorted content objects, which are represented by the value of [`arrangedObjects`](./arrangedobjects.md).
 
 ##### Special Considerations
 
@@ -27,31 +32,32 @@ The result of this method is deferred until the next iteration of the run loop s
 
 ## See Also
 
-- [func addChild(Any?)](nstreecontroller/addchild(_:).md)
+### Adding, inserting and removing objects
+- [func addChild(Any?)](./addchild%28_%29.md)
   Adds a child object to the currently selected item.
-- [var canAddChild: Bool](nstreecontroller/canaddchild.md)
+- [var canAddChild: Bool](./canaddchild.md)
   A Boolean value that indicates if a child object can be added to the tree controller’s content.
-- [var canInsert: Bool](nstreecontroller/caninsert.md)
+- [var canInsert: Bool](./caninsert.md)
   A Boolean value that indicates if an object can be inserted into the tree controller’s content.
-- [var canInsertChild: Bool](nstreecontroller/caninsertchild.md)
+- [var canInsertChild: Bool](./caninsertchild.md)
   A Boolean value that indicates if a child object can be inserted into the tree controller’s content.
-- [func insert(Any?)](nstreecontroller/insert(_:).md)
+- [func insert(Any?)](./insert%28_%29.md)
   Creates a new object of the class specified by `objectClass` and inserts it into the tree controller’s content.
-- [func insertChild(Any?)](nstreecontroller/insertchild(_:).md)
+- [func insertChild(Any?)](./insertchild%28_%29.md)
   Creates a new object of the class specified by `objectClass` and inserts it into the tree controller’s content as a child of the current selection.
-- [func insert(Any?, atArrangedObjectIndexPath: IndexPath)](nstreecontroller/insert(_:atarrangedobjectindexpath:).md)
+- [func insert(Any?, atArrangedObjectIndexPath: IndexPath)](./insert%28_,atarrangedobjectindexpath%29.md)
   Inserts `object` into the tree controller’s arranged objects array at the location specified by `indexPath`, and adds it to the tree controller’s content.
-- [func insert([Any], atArrangedObjectIndexPaths: [IndexPath])](nstreecontroller/insert(_:atarrangedobjectindexpaths:).md)
+- [func insert([Any], atArrangedObjectIndexPaths: [IndexPath])](./insert%28_,atarrangedobjectindexpaths%29.md)
   Inserts `objects` into the tree controller’s arranged objects array at the locations specified in `indexPaths`, and adds them to the tree controller’s content.
-- [func remove(Any?)](nstreecontroller/remove(_:).md)
+- [func remove(Any?)](./remove%28_%29.md)
   Removes the tree controller’s selected objects from the content.
-- [func removeObject(atArrangedObjectIndexPath: IndexPath)](nstreecontroller/removeobject(atarrangedobjectindexpath:).md)
+- [func removeObject(atArrangedObjectIndexPath: IndexPath)](./removeobject%28atarrangedobjectindexpath%29.md)
   Removes the object at the specified `indexPath` in the tree controller’s arranged objects from the tree controller’s content.
-- [func removeObjects(atArrangedObjectIndexPaths: [IndexPath])](nstreecontroller/removeobjects(atarrangedobjectindexpaths:).md)
+- [func removeObjects(atArrangedObjectIndexPaths: [IndexPath])](./removeobjects%28atarrangedobjectindexpaths%29.md)
   Removes the objects at the specified `indexPaths` in the tree controller’s arranged objects from the tree controller’s content.
-- [func move(NSTreeNode, to: IndexPath)](nstreecontroller/move(_:to:)-s5xp.md)
+- [func move(NSTreeNode, to: IndexPath)](./move%28_,to%29-s5xp.md)
   Moves the specified tree node to the new index path.
-- [func move([NSTreeNode], to: IndexPath)](nstreecontroller/move(_:to:)-moi9.md)
+- [func move([NSTreeNode], to: IndexPath)](./move%28_,to%29-moi9.md)
   Moves the specified tree nodes to the new index path.
 
 

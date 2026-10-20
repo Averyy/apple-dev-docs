@@ -1,7 +1,8 @@
 # addTrackAssociation(withTrackOf:type:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an association between input tracks.
 
@@ -19,6 +20,10 @@ Adds an association between input tracks.
 func addTrackAssociation(withTrackOf input: AVAssetWriterInput, type trackAssociationType: String)
 ```
 
+```objc
+- (void) addTrackAssociationWithTrackOfInput:(AVAssetWriterInput *) input type:(NSString *) trackAssociationType;
+```
+
 #### Discussion
 
 The system raises an error if the association type requires tracks of a media type that doesn’t match the input’s type, or if the output file type doesn’t support track associations.
@@ -32,7 +37,8 @@ You can’t add track associations after writing starts.
 
 ## See Also
 
-- [func canAddTrackAssociation(withTrackOf: AVAssetWriterInput, type: String) -> Bool](avassetwriterinput/canaddtrackassociation(withtrackof:type:).md)
+### Configuring track associations
+- [func canAddTrackAssociation(withTrackOf: AVAssetWriterInput, type: String) -> Bool](./canaddtrackassociation%28withtrackof,type%29.md)
   Determines whether it’s valid to associate another input’s track with this input’s track.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The URL of the file that contains the shader function.
@@ -20,13 +21,18 @@ The URL of the file that contains the shader function.
 var url: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * URL;
+```
+
 ## See Also
 
-- [var functionName: String?](mtlfunctionlogdebuglocation/functionname.md)
+### Inspecting the location details
+- [var functionName: String?](./functionname.md)
   The name of the shader function.
-- [var line: Int](mtlfunctionlogdebuglocation/line.md)
+- [var line: Int](./line.md)
   The line that the log message appears on.
-- [var column: Int](mtlfunctionlogdebuglocation/column.md)
+- [var column: Int](./column.md)
   The column where the log message appears.
 
 

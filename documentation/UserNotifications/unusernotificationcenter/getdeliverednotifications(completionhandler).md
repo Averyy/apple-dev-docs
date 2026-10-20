@@ -1,7 +1,8 @@
 # getDeliveredNotifications(completionHandler:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all of your app’s delivered notifications that are still present in Notification Center.
 
@@ -16,26 +17,41 @@ Fetches all of your app’s delivered notifications that are still present in No
 ## Declaration
 
 ```swift
+func getDeliveredNotifications(completionHandler: @escaping @Sendable ([UNNotification]) -> Void)
+```
+
+```swift
 func deliveredNotifications() async -> [UNNotification]
+```
+
+```objc
+- (void) getDeliveredNotificationsWithCompletionHandler:(void (^)(NSArray<UNNotification *> *notifications)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func deliveredNotifications() async -> [UNNotification]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func deliveredNotifications() async -> [UNNotification]
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 This method executes asynchronously, returning immediately and executing the provided block on a background thread when the results become available.
 
 ## Parameters
 
-- `completionHandler`: The block to execute with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter: - **notifications**: An array of [`UNNotification`](unnotification.md) objects representing the local and remote notifications of your app that have been delivered and are still visible in Notification Center. If none of your app’s notifications are visible in Notification Center, the array is empty.
+- `completionHandler`: The block to execute with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter:
+
+  - **notifications**: An array of [`UNNotification`](../unnotification.md) objects representing the local and remote notifications of your app that have been delivered and are still visible in Notification Center. If none of your app’s notifications are visible in Notification Center, the array is empty.
 
 ## See Also
 
-- [func removeDeliveredNotifications(withIdentifiers: [String])](unusernotificationcenter/removedeliverednotifications(withidentifiers:).md)
+### Removing delivered notifications
+- [func removeDeliveredNotifications(withIdentifiers: [String])](./removedeliverednotifications%28withidentifiers%29.md)
   Removes your app’s notifications from Notification Center that match the specified identifiers.
-- [func removeAllDeliveredNotifications()](unusernotificationcenter/removealldeliverednotifications.md)
+- [func removeAllDeliveredNotifications()](./removealldeliverednotifications%28%29.md)
   Removes all of your app’s delivered notifications from Notification Center.
 
 

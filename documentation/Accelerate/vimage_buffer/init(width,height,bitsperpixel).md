@@ -1,7 +1,8 @@
 # init(width:height:bitsPerPixel:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new buffer with the specified width, height, and bits per pixel.
 
@@ -11,7 +12,7 @@ Creates a new buffer with the specified width, height, and bits per pixel.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(width: Int, height: Int, bitsPerPixel: UInt32) throws
 
 ## Mentions
 
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](../creating-and-populating-buffers-from-core-graphics-images.md)
 
 #### Discussion
 
@@ -36,9 +37,10 @@ This function allocates a buffer’s memory, but doesn’t initialize the memory
 
 ## See Also
 
-- [init(size: CGSize, bitsPerPixel: UInt32) throws](vimage_buffer/init(size:bitsperpixel:).md)
+### Creating an empty vImage buffer
+- [init(size: CGSize, bitsPerPixel: UInt32) throws](./init%28size,bitsperpixel%29.md)
   Creates a new buffer with the specified size and bits per pixel.
-- [init()](vimage_buffer/init.md)
+- [init()](./init%28%29.md)
   Creates an empty vImage buffer.
 
 

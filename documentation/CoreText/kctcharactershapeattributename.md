@@ -1,18 +1,21 @@
 # kCTCharacterShapeAttributeName
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Controls glyph selection.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- macOS 10.5+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.11
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use feature type kCharacterShapeType with the appropriate selector
 
 ## Declaration
 
@@ -20,41 +23,46 @@ Controls glyph selection.
 let kCTCharacterShapeAttributeName: CFString
 ```
 
+```c
+extern CFStringRef const kCTCharacterShapeAttributeName;
+```
+
 #### Discussion
 
-Value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. Default is value is `0` (disabled). A non-zero value is interpreted as Apple Type Services `kCharacterShapeType` selector `+ 1` (see `<ATS/SFNTLayoutTypes.h>` for selectors). For example, an attribute value of `1` corresponds to `kTraditionalCharactersSelector`.
+Value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object. Default is value is `0` (disabled). A non-zero value is interpreted as Apple Type Services `kCharacterShapeType` selector `+ 1` (see `<ATS/SFNTLayoutTypes.h>` for selectors). For example, an attribute value of `1` corresponds to `kTraditionalCharactersSelector`.
 
 ## See Also
 
-- [let kCTFontAttributeName: CFString](kctfontattributename.md)
+### Constants
+- [let kCTFontAttributeName: CFString](./kctfontattributename.md)
   The font of the text to which this attribute applies.
-- [let kCTKernAttributeName: CFString](kctkernattributename.md)
+- [let kCTKernAttributeName: CFString](./kctkernattributename.md)
   The amount to kern the next character.
-- [let kCTLigatureAttributeName: CFString](kctligatureattributename.md)
+- [let kCTLigatureAttributeName: CFString](./kctligatureattributename.md)
   The type of ligatures to use.
-- [let kCTForegroundColorAttributeName: CFString](kctforegroundcolorattributename.md)
+- [let kCTForegroundColorAttributeName: CFString](./kctforegroundcolorattributename.md)
   The foreground color of the text to which this attribute applies.
-- [let kCTForegroundColorFromContextAttributeName: CFString](kctforegroundcolorfromcontextattributename.md)
+- [let kCTForegroundColorFromContextAttributeName: CFString](./kctforegroundcolorfromcontextattributename.md)
   Sets a foreground color using the context’s fill color.
-- [let kCTParagraphStyleAttributeName: CFString](kctparagraphstyleattributename.md)
+- [let kCTParagraphStyleAttributeName: CFString](./kctparagraphstyleattributename.md)
   The paragraph style of the text to which this attribute applies.
-- [let kCTStrokeWidthAttributeName: CFString](kctstrokewidthattributename.md)
+- [let kCTStrokeWidthAttributeName: CFString](./kctstrokewidthattributename.md)
   The stroke width.
-- [let kCTStrokeColorAttributeName: CFString](kctstrokecolorattributename.md)
+- [let kCTStrokeColorAttributeName: CFString](./kctstrokecolorattributename.md)
   The stroke color.
-- [let kCTSuperscriptAttributeName: CFString](kctsuperscriptattributename.md)
+- [let kCTSuperscriptAttributeName: CFString](./kctsuperscriptattributename.md)
   Controls vertical text positioning.
-- [let kCTUnderlineColorAttributeName: CFString](kctunderlinecolorattributename.md)
+- [let kCTUnderlineColorAttributeName: CFString](./kctunderlinecolorattributename.md)
   The underline color.
-- [let kCTUnderlineStyleAttributeName: CFString](kctunderlinestyleattributename.md)
+- [let kCTUnderlineStyleAttributeName: CFString](./kctunderlinestyleattributename.md)
   The style of underlining, to be applied at render time, for the text to which this attribute applies.
-- [let kCTVerticalFormsAttributeName: CFString](kctverticalformsattributename.md)
+- [let kCTVerticalFormsAttributeName: CFString](./kctverticalformsattributename.md)
   The orientation of the glyphs in the text to which this attribute applies.
-- [let kCTGlyphInfoAttributeName: CFString](kctglyphinfoattributename.md)
+- [let kCTGlyphInfoAttributeName: CFString](./kctglyphinfoattributename.md)
   The glyph info object to apply to the text associated with this attribute.
-- [let kCTRunDelegateAttributeName: CFString](kctrundelegateattributename.md)
+- [let kCTRunDelegateAttributeName: CFString](./kctrundelegateattributename.md)
   The run-delegate object to apply to an attribute range of the string.
-- [let kCTBaselineOffsetAttributeName: CFString](kctbaselineoffsetattributename.md)
+- [let kCTBaselineOffsetAttributeName: CFString](./kctbaselineoffsetattributename.md)
   Vertical offset for text position.
 
 

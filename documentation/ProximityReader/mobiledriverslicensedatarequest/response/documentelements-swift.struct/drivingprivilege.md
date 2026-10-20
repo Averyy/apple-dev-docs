@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a driving privilege which the mobile driver’s license holder possesses.
 
@@ -19,25 +20,25 @@ struct DrivingPrivilege
 ## Topics
 
 ### Structures
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege.Code](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivilege/code.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege.Code](./drivingprivilege/code.md)
   An object representing a code of a driving privilege.
 ### Instance Properties
-- [let codes: [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege.Code]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivilege/codes.md)
+- [let codes: [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege.Code]](./drivingprivilege/codes.md)
   The codes which describe the driving privilege.
-- [let expirationDate: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivilege/expirationdate.md)
+- [let expirationDate: DateComponents?](./drivingprivilege/expirationdate.md)
   The expiration date of the driving privilege.
-- [let issueDate: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivilege/issuedate.md)
+- [let issueDate: DateComponents?](./drivingprivilege/issuedate.md)
   The issue date of the driving privilege.
-- [let vehicleCategoryCode: String](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivilege/vehiclecategorycode.md)
+- [let vehicleCategoryCode: String](./drivingprivilege/vehiclecategorycode.md)
   The vehicle category code of the driving privilege.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

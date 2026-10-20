@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes the entity from the collection.
@@ -27,6 +28,12 @@ mutating func remove(_ entity: Entity)
 ## Parameters
 
 - `entity`: The entity to remove from the collection.
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func remove(Entity)](./remove%28_%29-8nj5y.md)
+  Removes the entity from the collection.
 
 
 ---

@@ -1,13 +1,14 @@
 # Certificate.Attributes
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Certificates resource.
 
 ## Declaration
 
-```swift
+```
 object Certificate.Attributes
 ```
 
@@ -23,7 +24,8 @@ object Certificate.Attributes
 
 ## See Also
 
-- [object Certificate.Relationships](certificate/relationships-data.dictionary.md)
+### Objects
+- [object Certificate.Relationships](./relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

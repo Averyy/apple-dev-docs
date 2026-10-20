@@ -1,17 +1,22 @@
 # init(textProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template from the provided text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(textProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithTextProvider:(CLKTextProvider *) textProvider;
 ```
 
 ## Parameters

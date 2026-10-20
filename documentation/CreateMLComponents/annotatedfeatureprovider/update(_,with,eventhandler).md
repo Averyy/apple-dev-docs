@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a transformer with a new sequence of examples.
 
@@ -19,6 +20,8 @@ Updates a transformer with a new sequence of examples.
 ```swift
 func update(_ transformer: inout AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer, with input: DataFrame, eventHandler: EventHandler? = nil) async throws
 ```
+
+Available when `Base` conforms to `UpdatableSupervisedEstimator` and `Base.Transformer.Input` is `UnwrappedInput?`.
 
 ## Parameters
 

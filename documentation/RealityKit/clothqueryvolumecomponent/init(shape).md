@@ -1,7 +1,8 @@
 # init(shape:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cloth query volume component with the given shape.
 

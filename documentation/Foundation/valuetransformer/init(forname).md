@@ -1,7 +1,8 @@
 # init(forName:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the value transformer identified by a given identifier.
 
@@ -20,6 +21,10 @@ Returns the value transformer identified by a given identifier.
 init?(forName name: NSValueTransformerName)
 ```
 
+```objc
++ (NSValueTransformer *) valueTransformerForName:(NSValueTransformerName) name;
+```
+
 #### Return Value
 
 The value transformer identified by `name` in the shared registry, or `nil` if not found.
@@ -34,11 +39,12 @@ If `valueTransformerForName:` does not find a registered transformer instance fo
 
 ## See Also
 
-- [class func setValueTransformer(ValueTransformer?, forName: NSValueTransformerName)](valuetransformer/setvaluetransformer(_:forname:).md)
+### Using the Name-Based Registry
+- [class func setValueTransformer(ValueTransformer?, forName: NSValueTransformerName)](./setvaluetransformer%28_,forname%29.md)
   Registers the provided value transformer with a given identifier.
-- [class func valueTransformerNames() -> [NSValueTransformerName]](valuetransformer/valuetransformernames.md)
+- [class func valueTransformerNames() -> [NSValueTransformerName]](./valuetransformernames%28%29.md)
   Returns an array of all the registered value transformers.
-- [struct NSValueTransformerName](nsvaluetransformername.md)
+- [struct NSValueTransformerName](../nsvaluetransformername.md)
   Named value transformers defined by `NSValueTransformer`.
 
 

@@ -1,7 +1,8 @@
 # kCFURLFileResourceTypeUnknown
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The resource’s type is unknown.
 
@@ -20,21 +21,26 @@ The resource’s type is unknown.
 let kCFURLFileResourceTypeUnknown: CFString!
 ```
 
+```c
+extern CFStringRef const kCFURLFileResourceTypeUnknown;
+```
+
 ## See Also
 
-- [let kCFURLFileResourceTypeBlockSpecial: CFString!](kcfurlfileresourcetypeblockspecial.md)
+### Constants
+- [let kCFURLFileResourceTypeBlockSpecial: CFString!](./kcfurlfileresourcetypeblockspecial.md)
   The resource is a block special file.
-- [let kCFURLFileResourceTypeCharacterSpecial: CFString!](kcfurlfileresourcetypecharacterspecial.md)
+- [let kCFURLFileResourceTypeCharacterSpecial: CFString!](./kcfurlfileresourcetypecharacterspecial.md)
   The resource is a character special file.
-- [let kCFURLFileResourceTypeDirectory: CFString!](kcfurlfileresourcetypedirectory.md)
+- [let kCFURLFileResourceTypeDirectory: CFString!](./kcfurlfileresourcetypedirectory.md)
   The resource is a directory.
-- [let kCFURLFileResourceTypeNamedPipe: CFString!](kcfurlfileresourcetypenamedpipe.md)
+- [let kCFURLFileResourceTypeNamedPipe: CFString!](./kcfurlfileresourcetypenamedpipe.md)
   The resource is a named pipe.
-- [let kCFURLFileResourceTypeRegular: CFString!](kcfurlfileresourcetyperegular.md)
+- [let kCFURLFileResourceTypeRegular: CFString!](./kcfurlfileresourcetyperegular.md)
   The resource is a regular file.
-- [let kCFURLFileResourceTypeSocket: CFString!](kcfurlfileresourcetypesocket.md)
+- [let kCFURLFileResourceTypeSocket: CFString!](./kcfurlfileresourcetypesocket.md)
   The resource is a socket.
-- [let kCFURLFileResourceTypeSymbolicLink: CFString!](kcfurlfileresourcetypesymboliclink.md)
+- [let kCFURLFileResourceTypeSymbolicLink: CFString!](./kcfurlfileresourcetypesymboliclink.md)
   The resource is a symbolic link.
 
 

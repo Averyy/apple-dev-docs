@@ -1,7 +1,8 @@
 # LongRunningTaskOptions
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for configuring long-running tasks.
 
@@ -22,30 +23,31 @@ struct LongRunningTaskOptions
 
 #### Overview
 
-When performing long-running tasks, specify these options to indicate additional resource requirements for the task. Pass these options to the [`performBackgroundTask(options:operation:)`](longrunningintent/performbackgroundtask(options:operation:).md) or [`performBackgroundTask(options:operation:onCancel:)`](longrunningintent/performbackgroundtask(options:operation:oncancel:).md) methods.
+When performing long-running tasks, specify these options to indicate additional resource requirements for the task. Pass these options to the [`performBackgroundTask(options:operation:)`](./longrunningintent/performbackgroundtask%28options,operation%29.md) or [`performBackgroundTask(options:operation:onCancel:)`](./longrunningintent/performbackgroundtask%28options,operation,oncancel%29.md) methods.
 
 ## Topics
 
 ### Type Properties
-- [static let requiresGPU: LongRunningTaskOptions](longrunningtaskoptions/requiresgpu.md)
+- [static let requiresGPU: LongRunningTaskOptions](./longrunningtaskoptions/requiresgpu.md)
   An option that indicates the task requires GPU resources.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T) async throws -> T](longrunningintent/performbackgroundtask(options:operation:).md)
+### Performing background tasks
+- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T) async throws -> T](./longrunningintent/performbackgroundtask%28options,operation%29.md)
   Runs an operation in the background with an extended amount of time.
-- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void) async throws -> T](longrunningintent/performbackgroundtask(options:operation:oncancel:).md)
+- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void) async throws -> T](./longrunningintent/performbackgroundtask%28options,operation,oncancel%29.md)
   Runs an operation in the background and provides a way to cancel the operation before it finishes.
 
 

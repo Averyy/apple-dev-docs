@@ -1,7 +1,8 @@
 # defaultAdaptableTabBarPlacement(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
 
@@ -19,9 +20,9 @@ func defaultAdaptableTabBarPlacement(_ defaultPlacement: AdaptableTabBarPlacemen
 
 #### Discussion
 
-This modifier is only effective on iPadOS in the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style. In any other configuration, the system ignores it.
+This modifier is only effective on iPadOS in the [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) style. In any other configuration, the system ignores it.
 
-The following example shows a [`TabView`](tabview.md) with three tabs, where the tab view displays the sidebar representation when the app initially launches.
+The following example shows a [`TabView`](../tabview.md) with three tabs, where the tab view displays the sidebar representation when the app initially launches.
 
 ```swift
 TabView(selection: $selection) {
@@ -49,27 +50,28 @@ TabView(selection: $selection) {
 
 ## See Also
 
-- [func defaultTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaulttabbarplacement(_:).md)
-  Specifies the preferred placement for the tabs of a [`TabView`](tabview.md) in the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style on platforms where the tab bar cannot adapt between different representations, and only one representation can be shown.
-- [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](view/tabviewsidebarheader(content:).md)
+### Configuring a tab bar
+- [func defaultTabBarPlacement(AdaptableTabBarPlacement) -> some View](./defaulttabbarplacement%28_%29.md)
+  Specifies the preferred placement for the tabs of a [`TabView`](../tabview.md) in the [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) style on platforms where the tab bar cannot adapt between different representations, and only one representation can be shown.
+- [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](./tabviewsidebarheader%28content%29.md)
   Adds a custom header to the sidebar of a tab view.
-- [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](view/tabviewsidebarfooter(content:).md)
+- [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](./tabviewsidebarfooter%28content%29.md)
   Adds a custom footer to the sidebar of a tab view.
-- [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](view/tabviewsidebarbottombar(content:).md)
+- [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](./tabviewsidebarbottombar%28content%29.md)
   Adds a custom bottom bar to the sidebar of a tab view.
-- [struct AdaptableTabBarPlacement](adaptabletabbarplacement.md)
+- [struct AdaptableTabBarPlacement](../adaptabletabbarplacement.md)
   A placement for tabs in a tab view using the adaptable sidebar style.
-- [var tabBarPlacement: TabBarPlacement?](environmentvalues/tabbarplacement.md)
+- [var tabBarPlacement: TabBarPlacement?](../environmentvalues/tabbarplacement.md)
   The current placement of the tab bar.
-- [struct TabBarPlacement](tabbarplacement.md)
+- [struct TabBarPlacement](../tabbarplacement.md)
   A placement for tabs in a tab view.
-- [var isTabBarShowingSections: Bool](environmentvalues/istabbarshowingsections.md)
+- [var isTabBarShowingSections: Bool](../environmentvalues/istabbarshowingsections.md)
   A Boolean value that determines whether a tab view shows the expanded contents of a tab section.
-- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](view/tabbarminimizebehavior(_:).md)
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](./tabbarminimizebehavior%28_%29.md)
   Sets the behavior for tab bar minimization.
-- [struct TabBarMinimizeBehavior](tabbarminimizebehavior.md)
+- [struct TabBarMinimizeBehavior](../tabbarminimizebehavior.md)
   A behavior that determines when a tab bar minimizes.
-- [enum TabViewBottomAccessoryPlacement](tabviewbottomaccessoryplacement.md)
+- [enum TabViewBottomAccessoryPlacement](../tabviewbottomaccessoryplacement.md)
   A placement of the bottom accessory in a tab view. You can use this to adjust the content of the accessory view based on the placement.
 
 

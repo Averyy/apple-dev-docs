@@ -1,7 +1,8 @@
 # attribution
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The required attribution which includes a legal attribution page and Apple Weather mark.
 

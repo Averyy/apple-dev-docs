@@ -1,7 +1,8 @@
 # init(state:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view controller that presents the specified Game Center content.
 
@@ -19,9 +20,13 @@ Creates a view controller that presents the specified Game Center content.
 init(state: GKGameCenterViewControllerState)
 ```
 
+```objc
+- (instancetype) initWithState:(GKGameCenterViewControllerState) state;
+```
+
 ## Mentions
 
-- [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
+- [Displaying the Game Center dashboard](../displaying-the-game-center-dashboard.md)
 
 #### Return Value
 
@@ -33,17 +38,18 @@ The initialized view controller.
 
 ## See Also
 
-- [enum GKGameCenterViewControllerState](gkgamecenterviewcontrollerstate.md)
+### Configuring Game Center content
+- [enum GKGameCenterViewControllerState](../gkgamecenterviewcontrollerstate.md)
   The type of content for the view controller to present.
-- [init(leaderboard: GKLeaderboard, playerScope: GKLeaderboard.PlayerScope)](gkgamecenterviewcontroller/init(leaderboard:playerscope:).md)
+- [init(leaderboard: GKLeaderboard, playerScope: GKLeaderboard.PlayerScope)](./init%28leaderboard,playerscope%29.md)
   Creates a view controller that presents a leaderboard with data for the specified players.
-- [init(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope)](gkgamecenterviewcontroller/init(leaderboardid:playerscope:timescope:).md)
+- [init(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope)](./init%28leaderboardid,playerscope,timescope%29.md)
   Creates a view controller that presents a leaderboard with data from the specified players and time period.
-- [init(leaderboardSetID: String)](gkgamecenterviewcontroller/init(leaderboardsetid:).md)
+- [init(leaderboardSetID: String)](./init%28leaderboardsetid%29.md)
   Creates a view controller that presents a leaderboard set.
-- [init(achievementID: String)](gkgamecenterviewcontroller/init(achievementid:).md)
+- [init(achievementID: String)](./init%28achievementid%29.md)
   Creates a view controller that presents an achievement.
-- [init(player: GKPlayer)](gkgamecenterviewcontroller/init(player:).md)
+- [init(player: GKPlayer)](./init%28player%29.md)
   Creates a view controller that presents a player’s Game Center profile.
 
 

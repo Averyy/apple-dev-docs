@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The associated type that contains the set of music item properties your app uses as a filter for a library request.

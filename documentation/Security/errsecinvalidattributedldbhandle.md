@@ -1,7 +1,8 @@
 # errSecInvalidAttributeDLDBHandle
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A database handle attribute is not valid.
 
@@ -18,6 +19,10 @@ A database handle attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeDLDBHandle: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeDLDBHandle
 ```
 
 

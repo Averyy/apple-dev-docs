@@ -1,7 +1,8 @@
 # DeviceActivitySchedule
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A calendar-based schedule for when to monitor a device’s activity.
 
@@ -23,31 +24,32 @@ Create a new schedule using `DateComponents` that allows your app to monitor the
 ## Topics
 
 ### Creating a Schedule
-- [init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents?)](deviceactivityschedule/init(intervalstart:intervalend:repeats:warningtime:).md)
+- [init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents?)](./deviceactivityschedule/init%28intervalstart,intervalend,repeats,warningtime%29.md)
   Creates a new schedule.
-- [var intervalEnd: DateComponents](deviceactivityschedule/intervalend.md)
+- [var intervalEnd: DateComponents](./deviceactivityschedule/intervalend.md)
   The date components that represent the end time for a schedule’s interval.
-- [var intervalStart: DateComponents](deviceactivityschedule/intervalstart.md)
+- [var intervalStart: DateComponents](./deviceactivityschedule/intervalstart.md)
   The date components that represent the start time for a schedule’s interval.
-- [var nextInterval: DateInterval?](deviceactivityschedule/nextinterval.md)
+- [var nextInterval: DateInterval?](./deviceactivityschedule/nextinterval.md)
   The schedule’s next interval or the current interval if one is ongoing.
-- [var repeats: Bool](deviceactivityschedule/repeats.md)
+- [var repeats: Bool](./deviceactivityschedule/repeats.md)
   A Boolean value that indicates whether the schedule recurs.
-- [var warningTime: DateComponents?](deviceactivityschedule/warningtime.md)
+- [var warningTime: DateComponents?](./deviceactivityschedule/warningtime.md)
   Optional components that generate a warning prior to regularly scheduled events.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct DeviceActivityEvent](deviceactivityevent.md)
+### Manage activities
+- [struct DeviceActivityEvent](./deviceactivityevent.md)
   An event that represents an application, category, or website activity.
-- [struct DeviceActivityName](deviceactivityname.md)
+- [struct DeviceActivityName](./deviceactivityname.md)
   The unique name of an activity.
-- [struct DeviceActivityCenter](deviceactivitycenter.md)
+- [struct DeviceActivityCenter](./deviceactivitycenter.md)
   A class that enables an application’s extension to start monitoring scheduled device activity.
 
 

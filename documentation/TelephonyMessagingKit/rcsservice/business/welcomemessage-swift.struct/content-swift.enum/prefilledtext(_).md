@@ -1,7 +1,8 @@
 # RCSService.Business.WelcomeMessage.Content.prefilledText(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefilled text content.
 

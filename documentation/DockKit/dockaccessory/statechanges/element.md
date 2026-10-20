@@ -1,7 +1,8 @@
 # DockAccessory.StateChanges.Element
 
 **Framework**: DockKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A dock accessory state change.
 
@@ -19,9 +20,10 @@ typealias Element = DockAccessory.StateChange
 
 ## See Also
 
-- [DockAccessory.StateChanges.Iterator](dockaccessory/statechanges/iterator.md)
+### Iterating over state changes
+- [DockAccessory.StateChanges.Iterator](./iterator.md)
   An object that allows iteration over dock accessory state changes.
-- [func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator](dockaccessory/statechanges/makeasynciterator.md)
+- [func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator](./makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory state changes.
 
 

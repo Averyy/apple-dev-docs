@@ -1,7 +1,8 @@
 # isNoncharacterCodePoint
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is permanently reserved for internal use.
 
@@ -22,7 +23,7 @@ var isNoncharacterCodePoint: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Noncharacter_Code_Point” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Noncharacter_Code_Point” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

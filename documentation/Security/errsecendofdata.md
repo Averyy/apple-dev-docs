@@ -1,7 +1,8 @@
 # errSecEndOfData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An end-of-data was detected.
 
@@ -18,6 +19,10 @@ An end-of-data was detected.
 
 ```swift
 var errSecEndOfData: OSStatus { get }
+```
+
+```c
+errSecEndOfData
 ```
 
 

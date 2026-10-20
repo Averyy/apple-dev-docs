@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A disclosure group style that resolves its appearance automatically based on the current context.
 
@@ -18,6 +19,8 @@ A disclosure group style that resolves its appearance automatically based on the
 @MainActor
 @preconcurrency static var automatic: AutomaticDisclosureGroupStyle { get }
 ```
+
+Available when `Self` is `AutomaticDisclosureGroupStyle`.
 
 
 ---

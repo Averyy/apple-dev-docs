@@ -1,7 +1,8 @@
 # up
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The physical input source contains a value for the up direction.
 
@@ -19,13 +20,18 @@ The physical input source contains a value for the up direction.
 static var up: GCPhysicalInputSourceDirection { get }
 ```
 
+```c
+GCPhysicalInputSourceDirectionUp
+```
+
 ## See Also
 
-- [static var right: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/right.md)
+### Directions
+- [static var right: GCPhysicalInputSourceDirection](./right.md)
   The physical input source supports the right direction.
-- [static var down: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/down.md)
+- [static var down: GCPhysicalInputSourceDirection](./down.md)
   The physical input source supports the down direction.
-- [static var left: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/left.md)
+- [static var left: GCPhysicalInputSourceDirection](./left.md)
   The physical input source supports the left direction.
 
 

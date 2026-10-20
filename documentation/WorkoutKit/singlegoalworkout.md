@@ -1,7 +1,8 @@
 # SingleGoalWorkout
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A workout with a single goal.
 
@@ -21,35 +22,36 @@ struct SingleGoalWorkout
 ## Topics
 
 ### Creating single goal workouts
-- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, swimmingLocation: HKWorkoutSwimmingLocationType, goal: WorkoutGoal)](singlegoalworkout/init(activity:location:swimminglocation:goal:).md)
+- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, swimmingLocation: HKWorkoutSwimmingLocationType, goal: WorkoutGoal)](./singlegoalworkout/init%28activity,location,swimminglocation,goal%29.md)
   Creates a new workout with a single goal.
-- [static func supportsActivity(HKWorkoutActivityType) -> Bool](singlegoalworkout/supportsactivity(_:).md)
+- [static func supportsActivity(HKWorkoutActivityType) -> Bool](./singlegoalworkout/supportsactivity%28_%29.md)
   Returns a Boolean value that indicates whether the system supports the provided workout activity.
-- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](singlegoalworkout/supportsgoal(_:activity:location:).md)
+- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./singlegoalworkout/supportsgoal%28_,activity,location%29.md)
   Returns a Boolean value that determines whether the system supports the provided goal.
 ### Accessing workout data
-- [var activity: HKWorkoutActivityType](singlegoalworkout/activity.md)
+- [var activity: HKWorkoutActivityType](./singlegoalworkout/activity.md)
   The workout activity type.
-- [var location: HKWorkoutSessionLocationType](singlegoalworkout/location.md)
+- [var location: HKWorkoutSessionLocationType](./singlegoalworkout/location.md)
   The workout location.
-- [var swimmingLocation: HKWorkoutSwimmingLocationType](singlegoalworkout/swimminglocation.md)
+- [var swimmingLocation: HKWorkoutSwimmingLocationType](./singlegoalworkout/swimminglocation.md)
   For swimming workouts, the workout’s swimming location.
-- [var goal: WorkoutGoal](singlegoalworkout/goal.md)
+- [var goal: WorkoutGoal](./singlegoalworkout/goal.md)
   The goal for the workout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PacerWorkout](pacerworkout.md)
+### Common workouts
+- [struct PacerWorkout](./pacerworkout.md)
   A workout in which a person covers a specific distance in a given time.
-- [struct SwimBikeRunWorkout](swimbikerunworkout.md)
+- [struct SwimBikeRunWorkout](./swimbikerunworkout.md)
   A workout for multisport activities that include running, biking, and swimming.
 
 

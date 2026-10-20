@@ -1,16 +1,17 @@
 # EnqueuePacket
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a single network packet to the queue for processing.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t EnqueuePacket(IOUserNetworkPacket *packet);
 ```
 
@@ -28,11 +29,12 @@ Call this method when you are ready to submit a single packet to a completion qu
 
 ## See Also
 
-- [EnqueuePackets](iousernetworkpacketqueue/enqueuepackets-qzx.md)
+### Queueing and Dequeueing Packets
+- [EnqueuePackets](./enqueuepackets-qzx.md)
   Adds multiple network packets to the queue for processing.
-- [DequeuePacket](iousernetworkpacketqueue/dequeuepacket.md)
+- [DequeuePacket](./dequeuepacket.md)
   Retrieves a single network packet from the queue.
-- [DequeuePackets](iousernetworkpacketqueue/dequeuepackets.md)
+- [DequeuePackets](./dequeuepackets.md)
   Retrieves multiple network packets from the queue.
 
 

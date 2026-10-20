@@ -1,7 +1,8 @@
 # matrix4x4
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var matrix4x4: simd_float4x4 { get }
+```
+
+```c
+static simd_float4x4 SPAffineTransform3DFloatGet4x4Matrix(SPAffineTransform3DFloat transform);
 ```
 
 #### Discussion

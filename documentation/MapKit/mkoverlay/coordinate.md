@@ -2,6 +2,7 @@
 
 **Framework**: MapKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The approximate center point of the overlay area.
@@ -21,14 +22,20 @@ The approximate center point of the overlay area.
 var coordinate: CLLocationCoordinate2D { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+```
+
 #### Discussion
 
 This point is typically set to the center point of the map’s bounding rectangle. The overlay uses it as the anchor point for any callouts that display for the annotation.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [var boundingMapRect: MKMapRect](mkoverlay/boundingmaprect.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Describing the overlay geometry
+- [var boundingMapRect: MKMapRect](./boundingmaprect.md)
   The projected rectangle that encompasses the overlay.
 
 

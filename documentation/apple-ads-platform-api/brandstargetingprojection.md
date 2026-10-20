@@ -1,7 +1,8 @@
 # BrandsTargetingProjection
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Targeting projection for brands ad groups and campaigns.
 
@@ -10,7 +11,7 @@ Targeting projection for brands ad groups and campaigns.
 
 ## Declaration
 
-```swift
+```
 object BrandsTargetingProjection
 ```
 
@@ -42,43 +43,43 @@ The `BrandsTargetingProjection` appears in `brands` report rows, capturing the t
 
 ## Properties
 
-- `supplyPlacement` (IncludeExclude): Restricts delivery to specific placement slots within Maps supply. Supported values: `MAPS_SEARCH_RESULTS`, `MAPS_SEARCH_HOME`. See [`IncludeExclude`](includeexclude.md) for details.
-- `lifetimeStorefronts` (IncludeExclude): Controls country or region targeting over the lifetime of the campaign. See [`IncludeExclude`](includeexclude.md) for details.
-- `supplySource` (IncludeExclude): Restricts delivery to a specific supply source. Use `MAPS` for Apple Maps placements. See [`IncludeExclude`](includeexclude.md) for details.
-- `promotedLocationGroup` (IncludeExclude): Targets a specific location group. Use for campaigns targeting many locations at once. The location group ID identifies a saved set of brand locations. See [`IncludeExclude`](includeexclude.md) for details.
-- `promotedLocation` (IncludeExclude): Targets an individual brand location by location ID. Use for single-location targeting. See [`IncludeExclude`](includeexclude.md) for details.
+- `supplyPlacement` (IncludeExclude): Restricts delivery to specific placement slots within Maps supply. Supported values: `MAPS_SEARCH_RESULTS`, `MAPS_SEARCH_HOME`. See [`IncludeExclude`](./includeexclude.md) for details.
+- `lifetimeStorefronts` (IncludeExclude): Controls country or region targeting over the lifetime of the campaign. See [`IncludeExclude`](./includeexclude.md) for details.
+- `supplySource` (IncludeExclude): Restricts delivery to a specific supply source. Use `MAPS` for Apple Maps placements. See [`IncludeExclude`](./includeexclude.md) for details.
+- `promotedLocationGroup` (IncludeExclude): Targets a specific location group. Use for campaigns targeting many locations at once. The location group ID identifies a saved set of brand locations. See [`IncludeExclude`](./includeexclude.md) for details.
+- `promotedLocation` (IncludeExclude): Targets an individual brand location by location ID. Use for single-location targeting. See [`IncludeExclude`](./includeexclude.md) for details.
 
 ## See Also
 
-- [object BrandsReportingRequest](brandsreportingrequest.md)
+- [object BrandsReportingRequest](./brandsreportingrequest.md)
   Request body for brands reporting queries.
-- [object BrandsReportingCampaign](brandsreportingcampaign.md)
+- [object BrandsReportingCampaign](./brandsreportingcampaign.md)
   Campaign metadata for Apple Maps report rows.
-- [object BrandsReportingAdGroup](brandsreportingadgroup.md)
+- [object BrandsReportingAdGroup](./brandsreportingadgroup.md)
   Ad group metadata for brands report rows.
-- [object BrandsReportingAd](brandsreportingad.md)
+- [object BrandsReportingAd](./brandsreportingad.md)
   Ad metadata for brands report rows.
-- [object BrandsReportingCreative](brandsreportingcreative.md)
+- [object BrandsReportingCreative](./brandsreportingcreative.md)
   Creative metadata for brands ads.
-- [object BrandsReportingKeyword](brandsreportingkeyword.md)
+- [object BrandsReportingKeyword](./brandsreportingkeyword.md)
   Keyword metadata for brands report rows, extending the base reporting keyword with brands-only internal fields.
-- [object BrandsReportingSearchTerm](brandsreportingsearchterm.md)
+- [object BrandsReportingSearchTerm](./brandsreportingsearchterm.md)
   Search term metadata for brands report rows, extending the base reporting search term with brands-only internal fields.
-- [object BrandsCampaignReportResponse](brandscampaignreportresponse.md)
+- [object BrandsCampaignReportResponse](./brandscampaignreportresponse.md)
   The top-level response envelope for Apple Maps campaign-level reports.
-- [object BrandsCampaignReportRow](brandscampaignreportrow.md)
+- [object BrandsCampaignReportRow](./brandscampaignreportrow.md)
   A single row in an Apple Maps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object BrandsCampaignReportSummary](brandscampaignreportsummary.md)
+- [object BrandsCampaignReportSummary](./brandscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apple Maps campaign report.
-- [object BrandsCampaignResultContainer](brandscampaignresultcontainer.md)
+- [object BrandsCampaignResultContainer](./brandscampaignresultcontainer.md)
   Wraps the array of Apple Maps campaign report rows along with a grand-total summary.
-- [object BrandsAdGroupReportResponse](brandsadgroupreportresponse.md)
+- [object BrandsAdGroupReportResponse](./brandsadgroupreportresponse.md)
   The top-level response envelope for brands ad group reports.
-- [object BrandsAdGroupReportRow](brandsadgroupreportrow.md)
+- [object BrandsAdGroupReportRow](./brandsadgroupreportrow.md)
   A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata with total and granular performance metrics.
-- [object BrandsAdGroupReportSummary](brandsadgroupreportsummary.md)
+- [object BrandsAdGroupReportSummary](./brandsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in a Brands ad group report.
-- [object BrandsAdGroupResultContainer](brandsadgroupresultcontainer.md)
+- [object BrandsAdGroupResultContainer](./brandsadgroupresultcontainer.md)
   Wraps the array of Brands ad group report rows along with a grand-total summary.
 
 

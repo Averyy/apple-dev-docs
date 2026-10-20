@@ -1,7 +1,8 @@
 # merge
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Appends all members of an array to this array.
 
@@ -11,11 +12,19 @@ Appends all members of an array to this array.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool merge(const OSArray *otherArray);
+```
+
+*macOS*
+
+```cpp
 virtual bool merge(const OSArray *otherArray);
 ```
 
-#### Return_value
+#### Return Value
 
 true on success, which retains all the added objects, or false on failure which does not retain the objects.
 
@@ -29,14 +38,15 @@ Appends all members of an array to this array. The array capacity will be grown 
 
 ## See Also
 
-- [+ withArray](osarray/3180823-witharray.md)
+### Creating an Array
+- [+ withArray](./api-3180823-witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [+ withCapacity](osarray/3180824-withcapacity.md)
+- [+ withCapacity](./api-3180824-withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [+ withObjects](osarray/3180825-withobjects.md)
+- [+ withObjects](./api-3180825-withobjects.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [- free](osarray/3180811-free.md)
-- [- flushCollection](osarray/3180810-flushcollection.md)
+- [- free](./api-3180811-free.md)
+- [- flushCollection](./api-3180810-flushcollection.md)
   Removes and drops references to all members of array.
 
 

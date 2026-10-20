@@ -1,7 +1,8 @@
 # isTemplate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the image represents a template image.
 
@@ -14,6 +15,10 @@ A Boolean value that determines whether the image represents a template image.
 var isTemplate: Bool { get set }
 ```
 
+```objc
+@property (getter=isTemplate) BOOL template;
+```
+
 #### Discussion
 
 Images you mark as template images should consist of only black and clear colors. You can use the alpha channel in the image to adjust the opacity of black content, however.
@@ -22,7 +27,8 @@ Template images are not intended to be used as standalone images. They are alway
 
 ## See Also
 
-- [var size: NSSize](nsimage/size.md)
+### Setting Attributes of Images
+- [var size: NSSize](./size.md)
   The size of the image.
 
 

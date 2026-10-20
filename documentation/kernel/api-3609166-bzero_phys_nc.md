@@ -1,14 +1,15 @@
 # bzero_phys_nc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void bzero_phys_nc(addr64_t src64, vm_size_t bytes);
 ```
 

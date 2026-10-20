@@ -1,7 +1,8 @@
 # isRootPrim
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the path is a top-level prim like a child of the absolute root.
 

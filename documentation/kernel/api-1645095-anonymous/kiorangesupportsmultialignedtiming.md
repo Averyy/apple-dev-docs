@@ -1,14 +1,15 @@
 # kIORangeSupportsMultiAlignedTiming
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIORangeSupportsMultiAlignedTiming = 0x00000040
 ```
 

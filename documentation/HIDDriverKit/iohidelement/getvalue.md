@@ -1,17 +1,18 @@
 # getValue
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the logical value that the device reported.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getValue(IOOptionBits options);
 ```
 
@@ -21,31 +22,32 @@ Returns the element value.
 
 ## Parameters
 
-- `options`: Optional options to pass in. Options are defined in the IOHIDValueOptions enumerator in [`IOHIDValueOptions`](iohidvalueoptions.md).
+- `options`: Optional options to pass in. Options are defined in the IOHIDValueOptions enumerator in [`IOHIDValueOptions`](../iohidvalueoptions.md).
 
 ## See Also
 
-- [getDataValue](iohidelement/getdatavalue.md)
+### Accessing the Element’s Value
+- [getDataValue](./getdatavalue.md)
   Gets the data value.
-- [getScaledValue](iohidelement/getscaledvalue.md)
+- [getScaledValue](./getscaledvalue.md)
   Returns a scaled version of the logical value.
-- [getScaledFixedValue](iohidelement/getscaledfixedvalue.md)
+- [getScaledFixedValue](./getscaledfixedvalue.md)
   Returns a fixed number that represents the scaled version of the element’s logical value.
-- [setValue](iohidelement/setvalue.md)
+- [setValue](./setvalue.md)
   Sets the value of the element.
-- [setDataValue](iohidelement/setdatavalue.md)
+- [setDataValue](./setdatavalue.md)
   Sets the data value of the element.
-- [getUnit](iohidelement/getunit.md)
+- [getUnit](./getunit.md)
   Returns the units that you use to interpret the element’s value.
-- [getUnitExponent](iohidelement/getunitexponent.md)
+- [getUnitExponent](./getunitexponent.md)
   Returns the exponent that you use to interpret the element’s value.
-- [IOHIDValueOptions](iohidvalueoptions.md)
+- [IOHIDValueOptions](../iohidvalueoptions.md)
   A type for specifying value-related options.
-- [Value Options](value-options-enum.md)
+- [Value Options](../value-options-enum.md)
   Options for how to retrieve an element’s values.
-- [IOHIDValueScaleType](iohidvaluescaletype.md)
+- [IOHIDValueScaleType](../iohidvaluescaletype.md)
   The type of scaling to use for an element’s value.
-- [Value Scale Types](value-scale-types-enum.md)
+- [Value Scale Types](../value-scale-types-enum.md)
   The different types of scaling that you can perform on element values.
 
 

@@ -1,7 +1,8 @@
 # triangleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Declares the number of triangles in this geometry descriptor.
 
@@ -17,6 +18,10 @@ Declares the number of triangles in this geometry descriptor.
 
 ```swift
 var triangleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger triangleCount;
 ```
 
 

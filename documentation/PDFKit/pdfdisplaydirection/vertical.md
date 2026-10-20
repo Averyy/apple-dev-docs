@@ -1,7 +1,8 @@
 # PDFDisplayDirection.vertical
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 case vertical
 ```
 
+```c
+kPDFDisplayDirectionVertical
+```
+
 ## See Also
 
-- [PDFDisplayDirection.horizontal](pdfdisplaydirection/horizontal.md)
+### Enumeration Cases
+- [PDFDisplayDirection.horizontal](./horizontal.md)
 
 
 ---

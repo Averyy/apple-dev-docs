@@ -1,7 +1,8 @@
 # sensitivityPoints
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of sensitivity point objects.
 
@@ -17,6 +18,10 @@ An array of sensitivity point objects.
 
 ```swift
 var sensitivityPoints: [HKAudiogramSensitivityPoint] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<HKAudiogramSensitivityPoint *> * sensitivityPoints;
 ```
 
 #### Discussion

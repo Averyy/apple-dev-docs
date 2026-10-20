@@ -1,7 +1,8 @@
 # collection
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The enclosing element for this element.
 
@@ -17,6 +18,10 @@ The enclosing element for this element.
 
 ```swift
 weak var collection: GCControllerElement? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) GCControllerElement * collection;
 ```
 
 #### Discussion

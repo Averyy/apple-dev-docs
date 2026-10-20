@@ -1,23 +1,30 @@
 # BNNSLayerParametersActivation
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of parameters that define an activation layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 struct BNNSLayerParametersActivation
+```
+
+```c
+typedef struct { ... } BNNSLayerParametersActivation;
 ```
 
 #### Overview
@@ -73,41 +80,42 @@ print(output)
 ## Topics
 
 ### Initializers
-- [init()](bnnslayerparametersactivation/init.md)
+- [init()](./bnnslayerparametersactivation/init%28%29.md)
   Returns a new activation layer parameters structure.
-- [init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, activation: BNNSActivation, axis_flags: UInt32)](bnnslayerparametersactivation/init(i_desc:o_desc:activation:axis_flags:).md)
+- [init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, activation: BNNSActivation, axis_flags: UInt32)](./bnnslayerparametersactivation/init%28i_desc,o_desc,activation,axis_flags%29.md)
   Returns a new activation layer parameters structure from the supplied descriptors, activation function, and axis flags.
 ### Instance Properties
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersactivation/i_desc.md)
+- [var i_desc: BNNSNDArrayDescriptor](./bnnslayerparametersactivation/i_desc.md)
   The descriptor of the input.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersactivation/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./bnnslayerparametersactivation/o_desc.md)
   The descriptor of the output.
-- [var activation: BNNSActivation](bnnslayerparametersactivation/activation.md)
+- [var activation: BNNSActivation](./bnnslayerparametersactivation/activation.md)
   The activation function that the layer applies to the output.
-- [var axis_flags: UInt32](bnnslayerparametersactivation/axis_flags.md)
+- [var axis_flags: UInt32](./bnnslayerparametersactivation/axis_flags.md)
   Flags that indicate axes on which to apply certain activation functions.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func BNNSFilterCreateVectorActivationLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatevectoractivationlayer(_:_:_:_:).md)
-- [class ActivationLayer](bnns/activationlayer.md)
+### Activation layers
+- [func BNNSFilterCreateVectorActivationLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatevectoractivationlayer%28_,_,_,_%29.md)
+- [class ActivationLayer](./bnns/activationlayer.md)
   A layer object that wraps an activation filter and manages its deinitialization.
-- [struct BNNSActivationFunction](bnnsactivationfunction.md)
+- [struct BNNSActivationFunction](./bnnsactivationfunction.md)
   Constants that describe activation functions.
-- [struct BNNSActivation](bnnsactivation.md)
+- [struct BNNSActivation](./bnnsactivation.md)
   A set of parameters that describe common activation functions.
-- [func BNNSFilterCreateLayerActivation(UnsafePointer<BNNSLayerParametersActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayeractivation(_:_:).md)
+- [func BNNSFilterCreateLayerActivation(UnsafePointer<BNNSLayerParametersActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayeractivation%28_,_%29.md)
   Returns a new activation layer.
-- [func BNNSDirectApplyActivationBatch(UnsafePointer<BNNSLayerParametersActivation>, UnsafePointer<BNNSFilterParameters>?, Int, Int, Int) -> Int32](bnnsdirectapplyactivationbatch(_:_:_:_:_:).md)
+- [func BNNSDirectApplyActivationBatch(UnsafePointer<BNNSLayerParametersActivation>, UnsafePointer<BNNSFilterParameters>?, Int, Int, Int) -> Int32](./bnnsdirectapplyactivationbatch%28_,_,_,_,_%29.md)
   Applies an activation filter to a set of input objects, writing out the result to a set of output objects.
-- [static func applyActivation(activation: BNNS.ActivationFunction, axes: [Int], input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](bnns/applyactivation(activation:axes:input:output:batchsize:filterparameters:).md)
+- [static func applyActivation(activation: BNNS.ActivationFunction, axes: [Int], input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](./bnns/applyactivation%28activation,axes,input,output,batchsize,filterparameters%29.md)
   Applies an activation function on the specified axes.
-- [static func applyActivation(activation: BNNS.ActivationFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](bnns/applyactivation(activation:input:output:batchsize:filterparameters:).md)
+- [static func applyActivation(activation: BNNS.ActivationFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](./bnns/applyactivation%28activation,input,output,batchsize,filterparameters%29.md)
   Applies the specified activation function.
 
 

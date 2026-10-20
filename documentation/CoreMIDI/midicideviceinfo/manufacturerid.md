@@ -1,21 +1,28 @@
 # manufacturerID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI System Exclusive (SysEx) ID of the device manufacturer.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
-- macOS 10.14+
-- visionOS 1.0+
+- iOS 12.0+ - Deprecated in 18.0
+- iPadOS 12.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.14+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported for CoreMIDI
 
 ## Declaration
 
 ```swift
 var manufacturerID: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * manufacturerID;
 ```
 
 #### Discussion
@@ -26,13 +33,14 @@ The framework pads single-byte System Exclusive (SysEx) IDs with trailing zeros.
 
 ## See Also
 
-- [var family: Data](midicideviceinfo/family.md)
+### Inspecting a Device
+- [var family: Data](./family.md)
   The family to which the device belongs.
-- [var modelNumber: Data](midicideviceinfo/modelnumber.md)
+- [var modelNumber: Data](./modelnumber.md)
   The model number of the device.
-- [var revisionLevel: Data](midicideviceinfo/revisionlevel.md)
+- [var revisionLevel: Data](./revisionlevel.md)
   The revision number of the device model number.
-- [var midiDestination: MIDIEndpointRef](midicideviceinfo/mididestination.md)
+- [var midiDestination: MIDIEndpointRef](./mididestination.md)
   The MIDI destination the device’s MIDI entity uses for capability inquiries.
 
 

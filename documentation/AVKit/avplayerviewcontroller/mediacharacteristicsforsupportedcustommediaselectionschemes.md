@@ -1,7 +1,8 @@
 # mediaCharacteristicsForSupportedCustomMediaSelectionSchemes
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,15 +16,20 @@
 class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic] { get }
 ```
 
+```objc
+@property (class, readonly) NSArray<NSString *> * mediaCharacteristicsForSupportedCustomMediaSelectionSchemes;
+```
+
 #### Discussion
 
 Returns available AVKit supported media group types.
 
 ## See Also
 
-- [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
+### Managing subtitles
+- [var allowedSubtitleOptionLanguages: [String]?](./allowedsubtitleoptionlanguages.md)
   An array of language codes that restrict the set of subtitle languages available.
-- [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
+- [var requiresFullSubtitles: Bool](./requiresfullsubtitles.md)
   A Boolean value that indicates whether someone can disable the display of subtitles.
 
 

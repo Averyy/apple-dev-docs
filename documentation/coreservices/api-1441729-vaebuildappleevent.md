@@ -1,7 +1,8 @@
 # vAEBuildAppleEvent(_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allows you to encapsulate calls to `AEBuildAppleEvent` in a wrapper routine.
 
@@ -14,37 +15,42 @@ Allows you to encapsulate calls to `AEBuildAppleEvent` in a wrapper routine.
 func vAEBuildAppleEvent(_ theClass: AEEventClass, _ theID: AEEventID, _ addressType: DescType, _ addressData: UnsafeRawPointer!, _ addressLength: Size, _ returnID: Int16, _ transactionID: Int32, _ resultEvt: UnsafeMutablePointer<AppleEvent>!, _ error: UnsafeMutablePointer<AEBuildError>!, _ paramsFmt: UnsafePointer<CChar>!, _ args: CVaListPointer) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus vAEBuildAppleEvent(AEEventClass theClass, AEEventID theID, DescType addressType, const void *addressData, Size addressLength, SInt16 returnID, SInt32 transactionID, AppleEvent *resultEvt, AEBuildError *error, const char *paramsFmt, va_list args);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
-Passing an argument list to `vAEBuildAppleEvent` corresponds to passing a series of individual parameters to the [`AEBuildAppleEvent`](1573757-aebuildappleevent.md) function.
+Passing an argument list to `vAEBuildAppleEvent` corresponds to passing a series of individual parameters to the [`AEBuildAppleEvent`](./api-1573757-aebuildappleevent.md) function.
 
 This function and related “AEBuild” routines provide a very simple translation service for converting specially formatted strings into complex Apple event descriptors. Normally, creating complex Apple event descriptors requires a large number of calls to Apple event Manager routines to build up the descriptor piece by piece. The `vAEBuildAppleEvent` function and related routines allow you to consolidate all of the calls required to construct a complex Apple event descriptor into a single system call that creates the desired structure as directed by a format string that you provide.
 
 ## Parameters
 
-- `theClass`: The event class for the resulting Apple event. See [`AEEventClass`](aeeventclass.md).
-- `theID`: The event id for the resulting Apple event. See [`AEEventID`](aeeventid.md).
-- `addressType`: The address type for the addressing information described in the next two parameters: usually one of `typeApplSignature`, `typeProcessSerialNumber`, or `typeKernelProcessID`. See [`DescType`](desctype.md).
+- `theClass`: The event class for the resulting Apple event. See [`AEEventClass`](./aeeventclass.md).
+- `theID`: The event id for the resulting Apple event. See [`AEEventID`](./aeeventid.md).
+- `addressType`: The address type for the addressing information described in the next two parameters: usually one of `typeApplSignature`, `typeProcessSerialNumber`, or `typeKernelProcessID`. See [`DescType`](./desctype.md).
 - `addressData`: A pointer to the address information.
 - `addressLength`: The number of bytes pointed to by the `addressData` parameter.
 - `returnID`: The return ID for the created Apple event. If you pass a value of `kAutoGenerateReturnID`, the Apple Event Manager assigns the created Apple event a return ID that is unique to the current session. If you pass any other value, the Apple Event Manager assigns that value for the ID.
 - `transactionID`: The transaction ID for this Apple event. A transaction is a sequence of Apple events that are sent back and forth between the client and server applications, beginning with the client’s initial request for a service. All Apple events that are part of a transaction must have the same transaction ID. You can specify the `kAnyTransactionID` constant if the Apple event is not one of a series of interdependent Apple events.
-- `result`: A pointer to a descriptor where the resulting descriptor should be stored. See [`AppleEvent`](appleevent.md) for a description of the data type.
-- `error`: A pointer to an `AEBuildError` structure where additional information about any errors that occur will be saved. This is an optional parameter and you can pass `NULL` if this information is not required. See [`AEBuildErrorCode`](aebuilderrorcode.md) for the syntax error codes that can be returned in this structure.
-- `paramsFmt`: An AEBuild format string describing the AppleEvent record to be created. The format of these strings is described in Technical Note TN2106, [`AEBuild*, AEPrint*, and Friends`](https://developer.apple.comhttp://developer.apple.com/technotes/tn/tn2045.html). 
+- `result`: A pointer to a descriptor where the resulting descriptor should be stored. See [`AppleEvent`](./appleevent.md) for a description of the data type.
+- `error`: A pointer to an `AEBuildError` structure where additional information about any errors that occur will be saved. This is an optional parameter and you can pass `NULL` if this information is not required. See [`AEBuildErrorCode`](./aebuilderrorcode.md) for the syntax error codes that can be returned in this structure.
+- `paramsFmt`: An AEBuild format string describing the AppleEvent record to be created. The format of these strings is described in Technical Note TN2106, [AEBuild*, AEPrint*, and Friends](http://developer.apple.com/technotes/tn/tn2045.html). 
 - `args`: A variable array of arguments to be substituted into the `paramsFmt` format string. See the ANSI C Interfaces documentation for a description of the `va_list` data type.
 
 ## See Also
 
-- [func AEPrintDescToHandle(UnsafePointer<AEDesc>!, UnsafeMutablePointer<Handle?>!) -> OSStatus](1445158-aeprintdesctohandle.md)
+### Creating Apple Event Structures in Memory
+- [func AEPrintDescToHandle(UnsafePointer<AEDesc>!, UnsafeMutablePointer<Handle?>!) -> OSStatus](./api-1445158-aeprintdesctohandle.md)
   Provides a pretty printer facility for displaying the contents of Apple event descriptors.
-- [func vAEBuildDesc(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](1446775-vaebuilddesc.md)
+- [func vAEBuildDesc(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](./api-1446775-vaebuilddesc.md)
   Allows you to encapsulate calls to `AEBuildDesc` in your own wrapper routines.
-- [func vAEBuildParameters(UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](1448040-vaebuildparameters.md)
+- [func vAEBuildParameters(UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](./api-1448040-vaebuildparameters.md)
   Allows you to encapsulate calls to `AEBuildParameters` in your own `stdarg`-style wrapper routines, using techniques similar to those allowed by vsprintf.
 
 

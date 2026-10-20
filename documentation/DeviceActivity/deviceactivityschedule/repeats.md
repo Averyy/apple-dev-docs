@@ -1,7 +1,8 @@
 # repeats
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the schedule recurs.
 
@@ -22,15 +23,16 @@ Use `repeats` to create an activity schedule that repeats until the activity-mon
 
 ## See Also
 
-- [init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents?)](deviceactivityschedule/init(intervalstart:intervalend:repeats:warningtime:).md)
+### Creating a Schedule
+- [init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents?)](./init%28intervalstart,intervalend,repeats,warningtime%29.md)
   Creates a new schedule.
-- [var intervalEnd: DateComponents](deviceactivityschedule/intervalend.md)
+- [var intervalEnd: DateComponents](./intervalend.md)
   The date components that represent the end time for a schedule’s interval.
-- [var intervalStart: DateComponents](deviceactivityschedule/intervalstart.md)
+- [var intervalStart: DateComponents](./intervalstart.md)
   The date components that represent the start time for a schedule’s interval.
-- [var nextInterval: DateInterval?](deviceactivityschedule/nextinterval.md)
+- [var nextInterval: DateInterval?](./nextinterval.md)
   The schedule’s next interval or the current interval if one is ongoing.
-- [var warningTime: DateComponents?](deviceactivityschedule/warningtime.md)
+- [var warningTime: DateComponents?](./warningtime.md)
   Optional components that generate a warning prior to regularly scheduled events.
 
 

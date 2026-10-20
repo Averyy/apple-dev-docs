@@ -1,7 +1,8 @@
 # userActivity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object encapsulating a user activity supported by this document.
 
@@ -17,19 +18,24 @@ An object encapsulating a user activity supported by this document.
 var userActivity: NSUserActivity? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSUserActivity * userActivity;
+```
+
 #### Discussion
 
-[`UIDocument`](uidocument.md) automatically creates [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects. The system makes user activities eligible for Handoff if the document is iCloud-based and the app’s `Info.plist` property list file includes a [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) key of `NSUbiquitousDocumentUserActivityType`. The value of `NSUbiquitousDocumentUserActivityType` is a string that represents the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object’s activity type. The document’s URL is in the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary with the [`userActivityURLKey`](uidocument/useractivityurlkey.md).
+[`UIDocument`](../uidocument.md) automatically creates [`NSUserActivity`](../../Foundation/nsuseractivity.md) objects. The system makes user activities eligible for Handoff if the document is iCloud-based and the app’s `Info.plist` property list file includes a [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) key of `NSUbiquitousDocumentUserActivityType`. The value of `NSUbiquitousDocumentUserActivityType` is a string that represents the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s activity type. The document’s URL is in the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary with the [`userActivityURLKey`](./useractivityurlkey.md).
 
-In iOS, to make an  [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object that UIKit manages current, you must either call [`becomeCurrent()`](https://developer.apple.com/documentation/foundation/nsuseractivity/becomecurrent()) explicitly or have the document’s [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object also set on a [`UIViewController`](uiviewcontroller.md) object that’s in the view hierarchy when the app comes to the foreground.
+In iOS, to make an  [`NSUserActivity`](../../Foundation/nsuseractivity.md) object that UIKit manages current, you must either call [`becomeCurrent()`](../../Foundation/nsuseractivity/becomecurrent%28%29.md) explicitly or have the document’s [`NSUserActivity`](../../Foundation/nsuseractivity.md) object also set on a [`UIViewController`](../uiviewcontroller.md) object that’s in the view hierarchy when the app comes to the foreground.
 
-You can use this property from any thread. It’s KVO-observable in case you share the [`userActivity`](uidocument/useractivity.md) object with other objects that need to be kept in sync as the document moves into and out of iCloud.
+You can use this property from any thread. It’s KVO-observable in case you share the [`userActivity`](./useractivity.md) object with other objects that need to be kept in sync as the document moves into and out of iCloud.
 
 ## See Also
 
-- [func restoreUserActivityState(NSUserActivity)](uidocument/restoreuseractivitystate(_:).md)
+### Supporting user activities
+- [func restoreUserActivityState(NSUserActivity)](./restoreuseractivitystate%28_%29.md)
   Restores the state needed to continue the given user activity.
-- [func updateUserActivityState(NSUserActivity)](uidocument/updateuseractivitystate(_:).md)
+- [func updateUserActivityState(NSUserActivity)](./updateuseractivitystate%28_%29.md)
   Updates the state of the given user activity.
 
 

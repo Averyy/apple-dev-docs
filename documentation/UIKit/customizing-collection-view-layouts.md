@@ -1,6 +1,8 @@
 # Customizing collection view layouts
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [CustomizingCollectionViewLayouts.zip](https://docs-assets.developer.apple.com/published/ebe75d1feb4d/CustomizingCollectionViewLayouts.zip)
 
 Customize a view layout by changing the size of cells in the flow or implementing a mosaic style.
 
@@ -12,7 +14,7 @@ Customize a view layout by changing the size of cells in the flow or implementin
 
 #### Overview
 
-To lay out UICollectionView cells in a simple grid, you can use [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md) directly. For more flexibility, you can subclass [`UICollectionViewLayout`](uicollectionviewlayout.md) to create advanced layouts.
+To lay out UICollectionView cells in a simple grid, you can use [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md) directly. For more flexibility, you can subclass [`UICollectionViewLayout`](./uicollectionviewlayout.md) to create advanced layouts.
 
 This sample app demonstrates two custom layout subclasses:
 
@@ -23,13 +25,13 @@ The app opens to the Friends view controller, which uses a column flow layout to
 
 Tapping the cloud icon to the right of the navigation bar demonstrates batched animations for inserting, deleting, moving, and reloading items in the collection view. For more information, see “Perform Batch Updates,” below. Using pull-to-refresh on the collection view resets the data.
 
-##### For a Simple Grid Size Cells Dynamically
+##### For a simple grid, size cells dynamically
 
-`ColumnFlowLayout` is a subclass of [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md) that uses the size of the collection view to determine the width of its cells. If only one cell fits comfortably horizontally, the layout arranges the cells to occupy the entire width of the collection view. Otherwise, the layout displays multiple columns of cells with a fixed width.
+`ColumnFlowLayout` is a subclass of [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md) that uses the size of the collection view to determine the width of its cells. If only one cell fits comfortably horizontally, the layout arranges the cells to occupy the entire width of the collection view. Otherwise, the layout displays multiple columns of cells with a fixed width.
 
 In practice, on iPhone devices in portrait mode, `ColumnFlowLayout` displays a single vertical column of cells. In landscape mode, or on an iPad, it displays a grid layout.
 
-Use the [`prepare()`](uicollectionviewlayout/prepare().md) function to compute the available screen width of the device and set the [`itemSize`](uicollectionviewflowlayout/itemsize.md) property accordingly.
+Use the [`prepare()`](./uicollectionviewlayout/prepare%28%29.md) function to compute the available screen width of the device and set the [`itemSize`](./uicollectionviewflowlayout/itemsize.md) property accordingly.
 
 ```swift
 override func prepare() {
@@ -47,17 +49,17 @@ override func prepare() {
 }
 ```
 
-##### For a Complex Grid Define Cell Sizes Explicitly
+##### For a complex grid, define cell sizes explicitly
 
-If you need more customization than is possible with a subclass of [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md), subclass [`UICollectionViewLayout`](uicollectionviewlayout.md) instead.
+If you need more customization than is possible with a subclass of [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md), subclass [`UICollectionViewLayout`](./uicollectionviewlayout.md) instead.
 
 `MosaicLayout` is a `UICollectionViewLayout` subclass that displays an arbitrary number of cells with differing sizes and aspect ratios. The `FeedViewController` class uses a mosaic layout to display images from the user’s photo library. Cells are organized into rows in one of four styles, from a single cell to multiple cells in varying layouts.
 
-![Images showing a row of four rectangles, each representing a mosaic style. On the left, a single cell. Second from left, two equal-size cells. Third from left, one cell occupying two-thirds of the area, and two stacked cells to the left of the larger cell. Last, one cell occupying two-thirds of the area, and two stacked cells to the right of the larger cell.](/images/com.apple.uikit/CellLayouts.png)
+![Images showing a row of four rectangles, each representing a mosaic style. On the left, a single cell. Second from left, two equal-size cells. Third from left, one cell occupying two-thirds of the area, and two stacked cells to the left of the larger cell. Last, one cell occupying two-thirds of the area, and two stacked cells to the right of the larger cell.](https://developer.apple.com/tutorials/images/com.apple.uikit/CellLayouts.png)
 
 **Calculate cell dimensions**
 
-The [`prepare()`](uicollectionviewlayout/prepare().md) method is called whenever a layout is invalidated. Override this method to calculate the position and size of every cell, as well as the total dimensions for the entire layout.
+The [`prepare()`](./uicollectionviewlayout/prepare%28%29.md) method is called whenever a layout is invalidated. Override this method to calculate the position and size of every cell, as well as the total dimensions for the entire layout.
 
 ```swift
 override func prepare() {
@@ -140,7 +142,7 @@ override func prepare() {
 
 **Provide the content size**
 
-Override the [`collectionViewContentSize`](uicollectionviewlayout/collectionviewcontentsize.md) property, providing a size for the collection view.
+Override the [`collectionViewContentSize`](./uicollectionviewlayout/collectionviewcontentsize.md) property, providing a size for the collection view.
 
 ```swift
 override var collectionViewContentSize: CGSize {
@@ -150,7 +152,7 @@ override var collectionViewContentSize: CGSize {
 
 **Define the layout attributes**
 
-Override [`layoutAttributesForElements(in:)`](uicollectionviewlayout/layoutattributesforelements(in:).md), defining the layout attributes for a geometric region. The collection view calls this function periodically to display items, which is known as *querying by geometric region*.
+Override [`layoutAttributesForElements(in:)`](./uicollectionviewlayout/layoutattributesforelements%28in%29.md), defining the layout attributes for a geometric region. The collection view calls this function periodically to display items, which is known as *querying by geometric region*.
 
 ```swift
 override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -176,7 +178,7 @@ override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewL
 }
 ```
 
-Also provide the layout attributes for a specific item by implementing [`layoutAttributesForItem(at:)`](uicollectionviewlayout/layoutattributesforitem(at:).md). The collection view calls this function periodically to display one particular item, which is known as *querying by index path*.
+Also provide the layout attributes for a specific item by implementing [`layoutAttributesForItem(at:)`](./uicollectionviewlayout/layoutattributesforitem%28at%29.md). The collection view calls this function periodically to display one particular item, which is known as *querying by index path*.
 
 ```swift
 override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
@@ -188,7 +190,7 @@ Because these functions are called often, they can affect the performance of you
 
 **Handle bounds changes**
 
-The [`shouldInvalidateLayout(forBoundsChange:)`](uicollectionviewlayout/shouldinvalidatelayout(forboundschange:).md) function is called for every bounds change from the collection view, or whenever its size or origin changes. This function is also called frequently during scrolling. The default implementation returns `false`, or, if the size and origin change, it returns `true`.
+The [`shouldInvalidateLayout(forBoundsChange:)`](./uicollectionviewlayout/shouldinvalidatelayout%28forboundschange%29.md) function is called for every bounds change from the collection view, or whenever its size or origin changes. This function is also called frequently during scrolling. The default implementation returns `false`, or, if the size and origin change, it returns `true`.
 
 ```swift
 override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
@@ -197,13 +199,13 @@ override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool 
 }
 ```
 
-For optimum performance, this sample performs a binary search inside [`layoutAttributesForElements(in:)`](uicollectionviewlayout/layoutattributesforelements(in:).md) instead of a linear search of the attributes it needs for each element in a given bounds area.
+For optimum performance, this sample performs a binary search inside [`layoutAttributesForElements(in:)`](./uicollectionviewlayout/layoutattributesforelements%28in%29.md) instead of a linear search of the attributes it needs for each element in a given bounds area.
 
-##### Perform Batch Updates
+##### Perform batch updates
 
 Tapping the top-right button in the navigation bar triggers the collection view to perform a *batch update* of multiple animated operations (insert, delete, move, and reload) of its collection view cells all at the same time.
 
-Within a call to [`performBatchUpdates(_:completion:)`](uicollectionview/performbatchupdates(_:completion:).md), the system simultaneously animates all insert, delete, move, and reload operations. In this sample, the app batches updates by processing an array of `PersonUpdate` objects, each of which encapsulates one update:
+Within a call to [`performBatchUpdates(_:completion:)`](./uicollectionview/performbatchupdates%28_,completion%29.md), the system simultaneously animates all insert, delete, move, and reload operations. In this sample, the app batches updates by processing an array of `PersonUpdate` objects, each of which encapsulates one update:
 
 - `insert` with a `Person` object and insertion index.
 - `delete` with an index.
@@ -275,15 +277,16 @@ collectionView.performBatchUpdates({
 
 ## See Also
 
-- [class UICollectionViewLayout](uicollectionviewlayout.md)
+### Manual layouts
+- [class UICollectionViewLayout](./uicollectionviewlayout.md)
   An abstract base class for generating layout information for a collection view.
-- [class UICollectionViewFlowLayout](uicollectionviewflowlayout.md)
+- [class UICollectionViewFlowLayout](./uicollectionviewflowlayout.md)
   A layout object that organizes items into a grid with optional header and footer views for each section.
-- [class UICollectionViewTransitionLayout](uicollectionviewtransitionlayout.md)
+- [class UICollectionViewTransitionLayout](./uicollectionviewtransitionlayout.md)
   A special type of layout object that lets you implement behaviors when changing from one layout to another in your collection view.
-- [class UICollectionViewLayoutAttributes](uicollectionviewlayoutattributes.md)
+- [class UICollectionViewLayoutAttributes](./uicollectionviewlayoutattributes.md)
   A layout object that manages the layout-related attributes for a given item in a collection view.
-- [class UICollectionViewFlowLayoutInvalidationContext](uicollectionviewflowlayoutinvalidationcontext.md)
+- [class UICollectionViewFlowLayoutInvalidationContext](./uicollectionviewflowlayoutinvalidationcontext.md)
   A set of properties for determining whether to recompute the size of items or their position in the layout.
 
 

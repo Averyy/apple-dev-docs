@@ -1,7 +1,8 @@
 # initialize
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sets initial values for newly spawned particles.
 
@@ -12,7 +13,7 @@ Sets initial values for newly spawned particles.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

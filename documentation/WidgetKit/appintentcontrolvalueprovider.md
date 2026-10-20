@@ -1,7 +1,8 @@
 # AppIntentControlValueProvider
 
 **Framework**: WidgetKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that uses a custom intent to provide a value to a control template.
 
@@ -43,19 +44,20 @@ struct DoorValueProvider: AppIntentControlValueProvider {
 ## Topics
 
 ### Associated Types
-- [associatedtype Configuration : ControlConfigurationIntent](appintentcontrolvalueprovider/configuration.md)
+- [associatedtype Configuration : ControlConfigurationIntent](./appintentcontrolvalueprovider/configuration.md)
   The type of intent used to prepare the value.
-- [associatedtype Value](appintentcontrolvalueprovider/value.md)
+- [associatedtype Value](./appintentcontrolvalueprovider/value.md)
   The type of value provided to the template.
 ### Instance Methods
-- [func currentValue(configuration: Self.Configuration) async throws -> Self.Value](appintentcontrolvalueprovider/currentvalue(configuration:).md)
+- [func currentValue(configuration: Self.Configuration) async throws -> Self.Value](./appintentcontrolvalueprovider/currentvalue%28configuration%29.md)
   The current value of the control.
-- [func previewValue(configuration: Self.Configuration) -> Self.Value](appintentcontrolvalueprovider/previewvalue(configuration:).md)
+- [func previewValue(configuration: Self.Configuration) -> Self.Value](./appintentcontrolvalueprovider/previewvalue%28configuration%29.md)
   A value to be shown while previewing the control in the add sheet.
 
 ## See Also
 
-- [protocol ControlValueProvider](controlvalueprovider.md)
+### Previews
+- [protocol ControlValueProvider](./controlvalueprovider.md)
   A type that provides a value to a control template.
 
 

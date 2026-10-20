@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset from the start time of this command.
 

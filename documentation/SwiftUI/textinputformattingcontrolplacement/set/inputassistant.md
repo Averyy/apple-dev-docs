@@ -1,7 +1,8 @@
 # inputAssistant
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Expanded text formatting controls which appear in the shortcuts bar on iPadOS or in the bottom ornament on visionOS.
 

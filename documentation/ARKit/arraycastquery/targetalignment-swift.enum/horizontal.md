@@ -1,7 +1,8 @@
 # ARRaycastQuery.TargetAlignment.horizontal
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The case that indicates a target is aligned horizontally with respect to gravity.
 
@@ -13,6 +14,10 @@ The case that indicates a target is aligned horizontally with respect to gravity
 
 ```swift
 case horizontal
+```
+
+```c
+ARRaycastTargetAlignmentHorizontal
 ```
 
 

@@ -1,7 +1,8 @@
 # ATSCubicClosePathProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSCubicClosePathProcPtr = (UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef OSStatus (*ATSCubicClosePathProcPtr)(void *callBackDataPtr);
 ```
 
 

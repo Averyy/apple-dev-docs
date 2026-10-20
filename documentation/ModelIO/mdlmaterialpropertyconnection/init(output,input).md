@@ -1,7 +1,8 @@
 # init(output:input:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(output: MDLMaterialProperty, input: MDLMaterialProperty)
+```
+
+```objc
+- (instancetype) initWithOutput:(MDLMaterialProperty *) output input:(MDLMaterialProperty *) input;
 ```
 
 

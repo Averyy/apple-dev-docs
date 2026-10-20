@@ -1,7 +1,8 @@
 # JSContextGroupRetain(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retains a JavaScript context group.
 
@@ -19,19 +20,24 @@ Retains a JavaScript context group.
 func JSContextGroupRetain(_ group: JSContextGroupRef!) -> JSContextGroupRef!
 ```
 
+```c
+JSContextGroupRefJSContextGroupRetain(JSContextGroupRef group);
+```
+
 #### Return Value
 
-A [`JSContextGroupRef`](jscontextgroupref.md) that is the same as `group`.
+A [`JSContextGroupRef`](./jscontextgroupref.md) that is the same as `group`.
 
 ## Parameters
 
-- `group`: The [`JSContextGroupRef`](jscontextgroupref.md) to retain.
+- `group`: The [`JSContextGroupRef`](./jscontextgroupref.md) to retain.
 
 ## See Also
 
-- [func JSContextGroupCreate() -> JSContextGroupRef!](jscontextgroupcreate().md)
+### Creating a Context Group
+- [func JSContextGroupCreate() -> JSContextGroupRef!](./jscontextgroupcreate%28%29.md)
   Creates a JavaScript context group.
-- [func JSContextGroupRelease(JSContextGroupRef!)](jscontextgrouprelease(_:).md)
+- [func JSContextGroupRelease(JSContextGroupRef!)](./jscontextgrouprelease%28_%29.md)
   Releases a JavaScript context group.
 
 

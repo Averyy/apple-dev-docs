@@ -1,14 +1,15 @@
 # kern_ctl_ref
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef void *kern_ctl_ref;
 ```
 

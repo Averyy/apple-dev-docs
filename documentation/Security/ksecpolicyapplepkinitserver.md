@@ -1,7 +1,8 @@
 # kSecPolicyApplePKINITServer
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Kerberos Pkinit server certificate validation.
 
@@ -12,6 +13,10 @@ Kerberos Pkinit server certificate validation.
 
 ```swift
 let kSecPolicyApplePKINITServer: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyApplePKINITServer;
 ```
 
 

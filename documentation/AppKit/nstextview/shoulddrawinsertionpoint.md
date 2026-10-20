@@ -1,12 +1,13 @@
 # shouldDrawInsertionPoint
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the receiver should draw its insertion point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ A Boolean value that determines whether the receiver should draw its insertion p
 var shouldDrawInsertionPoint: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL shouldDrawInsertionPoint;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver should draw its insertion point, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the receiver should draw its insertion point, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func setNeedsDisplay(NSRect, avoidAdditionalLayout: Bool)](nstextview/setneedsdisplay(_:avoidadditionallayout:).md)
+### Controlling text display
+- [func setNeedsDisplay(NSRect, avoidAdditionalLayout: Bool)](./setneedsdisplay%28_,avoidadditionallayout%29.md)
   Marks the receiver as requiring display.
-- [func drawInsertionPoint(in: NSRect, color: NSColor, turnedOn: Bool)](nstextview/drawinsertionpoint(in:color:turnedon:).md)
+- [func drawInsertionPoint(in: NSRect, color: NSColor, turnedOn: Bool)](./drawinsertionpoint%28in,color,turnedon%29.md)
   Draws or erases the insertion point.
-- [func drawBackground(in: NSRect)](nstextview/drawbackground(in:).md)
+- [func drawBackground(in: NSRect)](./drawbackground%28in%29.md)
   Draws the background of the text view.
-- [func setConstrainedFrameSize(NSSize)](nstextview/setconstrainedframesize(_:).md)
+- [func setConstrainedFrameSize(NSSize)](./setconstrainedframesize%28_%29.md)
   Attempts to set the frame size as if by user action.
-- [func cleanUpAfterDragOperation()](nstextview/cleanupafterdragoperation.md)
+- [func cleanUpAfterDragOperation()](./cleanupafterdragoperation%28%29.md)
   Releases the drag information still existing after the dragging session has completed.
-- [func showFindIndicator(for: NSRange)](nstextview/showfindindicator(for:).md)
+- [func showFindIndicator(for: NSRange)](./showfindindicator%28for%29.md)
   Causes a temporary highlighting effect to appear around the visible portion (or portions) of the specified range.
-- [class func scrollableDocumentContentTextView() -> NSScrollView](nstextview/scrollabledocumentcontenttextview.md)
-- [class func scrollablePlainDocumentContentTextView() -> NSScrollView](nstextview/scrollableplaindocumentcontenttextview.md)
-- [class func scrollableTextView() -> NSScrollView](nstextview/scrollabletextview.md)
+- [class func scrollableDocumentContentTextView() -> NSScrollView](./scrollabledocumentcontenttextview%28%29.md)
+- [class func scrollablePlainDocumentContentTextView() -> NSScrollView](./scrollableplaindocumentcontenttextview%28%29.md)
+- [class func scrollableTextView() -> NSScrollView](./scrollabletextview%28%29.md)
 
 
 ---

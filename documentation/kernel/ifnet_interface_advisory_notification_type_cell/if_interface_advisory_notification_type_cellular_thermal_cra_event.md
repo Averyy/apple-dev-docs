@@ -1,14 +1,15 @@
 # IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_THERMAL_CRA_EVENT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_THERMAL_CRA_EVENT
 ```
 

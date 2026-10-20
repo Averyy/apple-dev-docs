@@ -1,7 +1,8 @@
 # MTRTimeFormatLocalizationHourFormat.format24hr
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case format24hr
+```
+
+```c
+MTRTimeFormatLocalizationHourFormat24hr
 ```
 
 

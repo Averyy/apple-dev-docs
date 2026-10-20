@@ -1,7 +1,8 @@
 # smoothness
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smoothness of the noise used to generate the forces.
 
@@ -20,17 +21,22 @@ The smoothness of the noise used to generate the forces.
 var smoothness: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float smoothness;
+```
+
 #### Discussion
 
 This parameter should be a value between `0.0` and `1.0`, where `1.0` represents a uniform smoothness.
 
 ## See Also
 
-- [var animationSpeed: Float](skfieldnode/animationspeed.md)
+### Configuring Other Field Properties
+- [var animationSpeed: Float](./animationspeed.md)
   The rate at which a noise or turbulence field node changes.
-- [var direction: vector_float3](skfieldnode/direction.md)
+- [var direction: vector_float3](./direction.md)
   The direction of a velocity field node.
-- [var texture: SKTexture?](skfieldnode/texture.md)
+- [var texture: SKTexture?](./texture.md)
   A normal texture that specifies the velocities at different points in a velocity field node.
 
 

@@ -1,10 +1,11 @@
 # kBluetoothPageScanPeriodModeP0
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothPageScanPeriodModeP0: Int { get }
 ```
 
+```c
+kBluetoothPageScanPeriodModeP0
+```
+
 ## See Also
 
-- [var kBluetoothPageScanPeriodModeP1: Int](kbluetoothpagescanperiodmodep1.md)
-- [var kBluetoothPageScanPeriodModeP2: Int](kbluetoothpagescanperiodmodep2.md)
+### Constants
+- [var kBluetoothPageScanPeriodModeP1: Int](./kbluetoothpagescanperiodmodep1.md)
+- [var kBluetoothPageScanPeriodModeP2: Int](./kbluetoothpagescanperiodmodep2.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ShieldSettings.ActivityCategoryPolicy.specific(_:except:)
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that indicates the device shields specific categories of activity, with some exceptions.
 
@@ -22,9 +23,10 @@ List categories you want to shield in the first parameter. Use the `except` para
 
 ## See Also
 
-- [ShieldSettings.ActivityCategoryPolicy.none](shieldsettings/activitycategorypolicy/none.md)
+### Shielding categories
+- [ShieldSettings.ActivityCategoryPolicy.none](./none.md)
   A policy that indicates the device doesn’t shield any content.
-- [ShieldSettings.ActivityCategoryPolicy.all(except:)](shieldsettings/activitycategorypolicy/all(except:).md)
+- [ShieldSettings.ActivityCategoryPolicy.all(except:)](./all%28except%29.md)
   A policy that indicates the device shields all apps and websites, except content that you specify.
 
 

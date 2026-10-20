@@ -1,7 +1,8 @@
 # setOutlineColor(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setOutlineColor(_ outlineColor: String!)
+```
+
+```objc
+- (void) setOutlineColor:(NSString *) outlineColor;
 ```
 
 

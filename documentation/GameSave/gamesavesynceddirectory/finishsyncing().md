@@ -1,7 +1,8 @@
 # finishSyncing()
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits for the directory sync to complete, without showing any user interface.
 
@@ -24,9 +25,10 @@ Use this method to wait if your app displays its own syncing UI.
 
 ## See Also
 
-- [func finishSyncing(statusDisplay: NSWindow) async](gamesavesynceddirectory/finishsyncing(statusdisplay:)-309nq.md)
+### Syncing a directory
+- [func finishSyncing(statusDisplay: NSWindow) async](./finishsyncing%28statusdisplay%29-309nq.md)
   Waits for the directory sync to complete, showing the sync’s progress in a modal alert.
-- [func finishSyncing(statusDisplay: UIWindow) async](gamesavesynceddirectory/finishsyncing(statusdisplay:)-500el.md)
+- [func finishSyncing(statusDisplay: UIWindow) async](./finishsyncing%28statusdisplay%29-500el.md)
   Waits for the directory sync to complete, showing the sync’s progress in a modal alert.
 
 

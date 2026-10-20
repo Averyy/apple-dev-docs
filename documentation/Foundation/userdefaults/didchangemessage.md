@@ -1,7 +1,8 @@
 # UserDefaults.DidChangeMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message the system sends when a user-defaults setting changes.
 
@@ -22,38 +23,39 @@ struct DidChangeMessage
 
 ## Mentions
 
-- [Accessing settings from your code](accessing-settings-from-your-code.md)
+- [Accessing settings from your code](../accessing-settings-from-your-code.md)
 
 #### Overview
 
 When you write a new value to a setting, or remove an existing value, the system generates this message to alert you that your app’s settings changed. Use this message in other parts of your app to incorporate updated settings. The system posts this notification on the same thread you used to make the change.
 
-If a different process changes your app’s settings, the system doesn’t generate this notification. To detect changes made by another process, register a key-value observer on the [`UserDefaults`](userdefaults.md) object. Key-value observing reports all updates to setting values, regardless of which process made the change.
+If a different process changes your app’s settings, the system doesn’t generate this notification. To detect changes made by another process, register a key-value observer on the [`UserDefaults`](../userdefaults.md) object. Key-value observing reports all updates to setting values, regardless of which process made the change.
 
-Observe this message with the identifier [`didChange`](notificationcenter/messageidentifier/didchange-187tw.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`UserDefaults`](userdefaults.md).
+Observe this message with the identifier [`didChange`](../notificationcenter/messageidentifier/didchange-187tw.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`UserDefaults`](../userdefaults.md).
 
-This message interoperates with the notification [`didChangeNotification`](userdefaults/didchangenotification.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`didChangeNotification`](./didchangenotification.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message
-- [init()](userdefaults/didchangemessage/init.md)
+- [init()](./didchangemessage/init%28%29.md)
   Creates a message for a settings change to the user defaults.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let didChangeNotification: NSNotification.Name](userdefaults/didchangenotification.md)
+### Monitoring settings changes and issues
+- [class let didChangeNotification: NSNotification.Name](./didchangenotification.md)
   Posted when the current process changes the value of a setting.
-- [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
+- [UserDefaults.SizeLimitExceededMessage](./sizelimitexceededmessage.md)
   A message the system sends when the size of the data in the defaults database exceeds the maximum.
-- [class let sizeLimitExceededNotification: NSNotification.Name](userdefaults/sizelimitexceedednotification.md)
+- [class let sizeLimitExceededNotification: NSNotification.Name](./sizelimitexceedednotification.md)
   Posted when the amount of data in the defaults database exceeds the allowed maximum.
 
 

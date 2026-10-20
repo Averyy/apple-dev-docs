@@ -1,7 +1,8 @@
 # MerchantCategoryCode
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.4+
@@ -16,29 +17,29 @@ struct MerchantCategoryCode
 ## Topics
 
 ### Initializers
-- [init(rawValue: Int16)](merchantcategorycode/init(rawvalue:).md)
+- [init(rawValue: Int16)](./merchantcategorycode/init%28rawvalue%29.md)
   Creates a merchant category code with the provided value.
 ### Instance Properties
-- [let rawValue: Int16](merchantcategorycode/rawvalue.md)
+- [let rawValue: Int16](./merchantcategorycode/rawvalue.md)
   A integer that represents the raw value of a merchant category code.
 ### Default Implementations
-- [CustomStringConvertible Implementations](merchantcategorycode/customstringconvertible-implementations.md)
-- [LosslessStringConvertible Implementations](merchantcategorycode/losslessstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./merchantcategorycode/customstringconvertible-implementations.md)
+- [LosslessStringConvertible Implementations](./merchantcategorycode/losslessstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LosslessStringConvertible](../swift/losslessstringconvertible.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [LosslessStringConvertible](../Swift/losslessstringconvertible.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

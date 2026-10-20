@@ -1,7 +1,8 @@
 # depth
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth under water.
 
@@ -18,17 +19,22 @@ The depth under water.
 var depth: Measurement<UnitLength>? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSMeasurement<NSUnitLength *> * depth;
+```
+
 ## See Also
 
-- [var date: Date](cmwatersubmersionmeasurement/date.md)
+### Accessing the data
+- [var date: Date](./date.md)
   The time and date when the system recorded the measurements.
-- [var pressure: Measurement<UnitPressure>?](cmwatersubmersionmeasurement/pressure.md)
+- [var pressure: Measurement<UnitPressure>?](./pressure.md)
   The water pressure.
-- [var surfacePressure: Measurement<UnitPressure>](cmwatersubmersionmeasurement/surfacepressure.md)
+- [var surfacePressure: Measurement<UnitPressure>](./surfacepressure.md)
   The surface air pressure.
-- [var submersionState: CMWaterSubmersionMeasurement.DepthState](cmwatersubmersionmeasurement/submersionstate.md)
+- [var submersionState: CMWaterSubmersionMeasurement.DepthState](./submersionstate.md)
   The depth state.
-- [CMWaterSubmersionMeasurement.DepthState](cmwatersubmersionmeasurement/depthstate.md)
+- [CMWaterSubmersionMeasurement.DepthState](./depthstate.md)
   A state based on the device’s depth under water.
 
 

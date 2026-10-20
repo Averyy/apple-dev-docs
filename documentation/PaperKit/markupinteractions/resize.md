@@ -1,7 +1,8 @@
 # resize
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allows resizing.
 
@@ -24,15 +25,16 @@ This only controls manual resizing through direct interaction (drag handles, ges
 
 ## See Also
 
-- [static let rotate: MarkupInteractions](markupinteractions/rotate.md)
+### Configuring interactions
+- [static let rotate: MarkupInteractions](./rotate.md)
   Allows rotation.
-- [static let move: MarkupInteractions](markupinteractions/move.md)
+- [static let move: MarkupInteractions](./move.md)
   Allows moving.
-- [static let delete: MarkupInteractions](markupinteractions/delete.md)
+- [static let delete: MarkupInteractions](./delete.md)
   Allows deletion.
-- [static let style: MarkupInteractions](markupinteractions/style.md)
+- [static let style: MarkupInteractions](./style.md)
   Allows style changes.
-- [static let select: MarkupInteractions](markupinteractions/select.md)
+- [static let select: MarkupInteractions](./select.md)
   Allows selection.
 
 

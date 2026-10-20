@@ -1,6 +1,7 @@
 # Subtracting numbers
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Return the result of subtracting two numbers.
 
@@ -18,13 +19,14 @@ number sub(number $minuend, number $subtrahend)
 
 -`minuend`: The left side of the subtraction equation. -`subtrahend`: The right side of the subtraction equation.
 
-##### Return Value
+##### Return value
 
 The result of subtracting `subtrahend` from `minuend`. If either parameter isn’t a number, `null`.
 
 ## See Also
 
-- [Dividing numbers](dividing-numbers.md)
+### Numeric functions
+- [Dividing numbers](./dividing-numbers.md)
   Return the result of dividing one number into another.
 
 

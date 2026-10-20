@@ -1,7 +1,8 @@
 # weeks
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The unit for weeks. One week is always 604800 seconds.
 

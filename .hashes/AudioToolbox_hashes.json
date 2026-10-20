@@ -2336,9 +2336,8 @@
       "hash": "d5ad6e91db34acc93118ac27bb18e9c6eef5ca0c6bb2d68581c8f2af5f0daf4c"
     },
     "https://developer.apple.com/documentation/audiotoolbox/audiocomponentgeticon(_:)": {
-      "etag": "W/\"f8b74b3a23aa57bbc0e1bd969a26a3fa\"",
       "file_path": "documentation/AudioToolbox/audiocomponentgeticon(_).md",
-      "hash": "c898339a5b25e14553f66cf49b38816be1e8c96739c13c9c65fead2e006c9321"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/audiotoolbox/audiocomponentgeticon(_:_:)": {
       "etag": "\"4422-65d55edd98c8b-df\"",
@@ -20146,9 +20145,8 @@
       "hash": "d5ad6e91db34acc93118ac27bb18e9c6eef5ca0c6bb2d68581c8f2af5f0daf4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/audiocomponentgeticon(_:).json": {
-      "etag": "W/\"f8b74b3a23aa57bbc0e1bd969a26a3fa\"",
       "file_path": "documentation/AudioToolbox/audiocomponentgeticon(_).md",
-      "hash": "c898339a5b25e14553f66cf49b38816be1e8c96739c13c9c65fead2e006c9321"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/audiocomponentgeticon(_:_:).json": {
       "etag": "\"4422-65d55edd98c8b-df\"",
@@ -35622,6 +35620,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 7124
   }
 }

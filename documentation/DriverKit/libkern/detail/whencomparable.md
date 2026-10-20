@@ -1,17 +1,18 @@
 # WhenComparable
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef void_t<decltype(declval<type-parameter-0-0>() == declval<type-parameter-0-1>()), decltype(declval<type-parameter-0-0>() != declval<type-parameter-0-1>())> WhenComparable;
 ```
 

@@ -1,7 +1,8 @@
 # Date.FormatStyle.TimeStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type that defines time styles varied in length or components included.
 
@@ -22,7 +23,7 @@ struct TimeStyle
 
 #### Overview
 
-The exact format depends on the locale. Possible time styles include [`omitted`](date/formatstyle/timestyle/omitted.md), [`shortened`](date/formatstyle/timestyle/shortened.md), [`standard`](date/formatstyle/timestyle/standard.md), and [`complete`](date/formatstyle/timestyle/complete.md).
+The exact format depends on the locale. Possible time styles include [`omitted`](./timestyle/omitted.md), [`shortened`](./timestyle/shortened.md), [`standard`](./timestyle/standard.md), and [`complete`](./timestyle/complete.md).
 
 The following code sample shows a variety of time style format results using the `en_US` locale.
 
@@ -45,44 +46,45 @@ meetingDate.formatted()
 
 ```
 
-The default time style is [`shortened`](date/formatstyle/timestyle/shortened.md).
+The default time style is [`shortened`](./timestyle/shortened.md).
 
 ## Topics
 
 ### Modifying a Time Style
-- [static let complete: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/complete.md)
+- [static let complete: Date.FormatStyle.TimeStyle](./timestyle/complete.md)
   A time style with all components represented.
-- [static let omitted: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/omitted.md)
+- [static let omitted: Date.FormatStyle.TimeStyle](./timestyle/omitted.md)
   A time style with no time-related components represented.
-- [static let shortened: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/shortened.md)
+- [static let shortened: Date.FormatStyle.TimeStyle](./timestyle/shortened.md)
   A shortened time style with only the hour, minute, and day period components represented.
-- [static let standard: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/standard.md)
+- [static let standard: Date.FormatStyle.TimeStyle](./timestyle/standard.md)
   A time style with all components except the time zone represented.
 ### Comparing Time Styles
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle](date/formatstyle/hour(_:).md)
+### Specifying the Time Format
+- [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle](./hour%28_%29.md)
   Modifies the date format style to use the specified hour format style.
-- [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle](date/formatstyle/minute(_:).md)
+- [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle](./minute%28_%29.md)
   Modifies the date format style to use the specified minute format style.
-- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](date/formatstyle/second(_:).md)
+- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](./second%28_%29.md)
   Modifies the date format style to use the specified second format style.
-- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](date/formatstyle/secondfraction(_:).md)
+- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](./secondfraction%28_%29.md)
   Modifies the date format style to use the specified second fraction format style.
-- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](date/formatstyle/timezone(_:).md)
+- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](./timezone%28_%29.md)
   Modifies the date format style to use the specified time zone format style.
 
 

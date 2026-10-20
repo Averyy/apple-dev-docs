@@ -1,17 +1,18 @@
 # EKEventAvailability.busy
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event has a busy availability setting.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The event has a busy availability setting.
 case busy
 ```
 
+```c
+EKEventAvailabilityBusy
+```
+
 ## See Also
 
-- [EKEventAvailability.notSupported](ekeventavailability/notsupported.md)
+### Constants
+- [EKEventAvailability.notSupported](./notsupported.md)
   Availability settings are not supported by the event’s calendar.
-- [EKEventAvailability.free](ekeventavailability/free.md)
+- [EKEventAvailability.free](./free.md)
   The event has a free availability setting.
-- [EKEventAvailability.tentative](ekeventavailability/tentative.md)
+- [EKEventAvailability.tentative](./tentative.md)
   The event has a tentative availability setting.
-- [EKEventAvailability.unavailable](ekeventavailability/unavailable.md)
+- [EKEventAvailability.unavailable](./unavailable.md)
   The event has an unavailable availability setting.
 
 

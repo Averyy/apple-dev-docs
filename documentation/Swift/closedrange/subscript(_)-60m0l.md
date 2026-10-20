@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at specified position.
 
@@ -19,6 +20,8 @@ Accesses the element at specified position.
 ```swift
 subscript(position: ClosedRange<Bound>.Index) -> Bound { get }
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 #### Overview
 

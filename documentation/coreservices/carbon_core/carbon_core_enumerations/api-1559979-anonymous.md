@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kIllegalClockValueErr: Int](killegalclockvalueerr.md)
-- [var kUTCOverflowErr: Int](kutcoverflowerr.md)
-- [var kUTCUnderflowErr: Int](kutcunderflowerr.md)
+- [var kIllegalClockValueErr: Int](../../killegalclockvalueerr.md)
+- [var kUTCOverflowErr: Int](../../kutcoverflowerr.md)
+- [var kUTCUnderflowErr: Int](../../kutcunderflowerr.md)
 
 
 ---

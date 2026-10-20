@@ -1,14 +1,15 @@
 # net_init_func_ptr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*net_init_func_ptr)(void);
 ```
 

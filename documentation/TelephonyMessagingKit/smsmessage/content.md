@@ -1,7 +1,8 @@
 # content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The textual content of the message.
 
@@ -16,7 +17,8 @@ let content: SMSContent
 
 ## See Also
 
-- [struct SMSContent](smscontent.md)
+### Accessing message content
+- [struct SMSContent](../smscontent.md)
   A structure that holds the content of an SMS message.
 
 

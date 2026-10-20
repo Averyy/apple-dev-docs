@@ -1,7 +1,8 @@
 # encode(encoder:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the output from upstream using a specified encoder.
 
@@ -20,15 +21,17 @@ Encodes the output from upstream using a specified encoder.
 func encode<Coder>(encoder: Coder) -> Publishers.Encode<Self, Coder> where Coder : TopLevelEncoder
 ```
 
+Available when `Output` conforms to `Encodable`.
+
 #### Return Value
 
 A publisher that encodes received elements using a specified encoder, and publishes the resulting data.
 
 #### Discussion
 
-Use [`encode(encoder:)`](publisher/encode(encoder:).md) with a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) (or a [`PropertyListDecoder`](https://developer.apple.com/documentation/foundation/propertylistdecoder) for property lists) to encode an [`Encodable`](https://developer.apple.com/documentation/swift/encodable) struct into [`Data`](https://developer.apple.com/documentation/foundation/data) that could be used to make a JSON string (or written to disk as a binary plist in the case of property lists).
+Use [`encode(encoder:)`](./encode%28encoder%29.md) with a [`JSONDecoder`](../../Foundation/jsondecoder.md) (or a [`PropertyListDecoder`](../../Foundation/propertylistdecoder.md) for property lists) to encode an [`Encodable`](../../Swift/encodable.md) struct into [`Data`](../../Foundation/data.md) that could be used to make a JSON string (or written to disk as a binary plist in the case of property lists).
 
-In this example, a [`PassthroughSubject`](passthroughsubject.md) publishes an `Article`. The [`encode(encoder:)`](publisher/encode(encoder:).md) operator encodes the properties of the `Article` struct into a new JSON string according to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol adopted by `Article`. The operator publishes the resulting JSON string to the downstream subscriber. If the encoding operation fails, which can happen in the case of complex properties that can’t be directly transformed into JSON, the stream terminates and the error is passed to the downstream subscriber.
+In this example, a [`PassthroughSubject`](../passthroughsubject.md) publishes an `Article`. The [`encode(encoder:)`](./encode%28encoder%29.md) operator encodes the properties of the `Article` struct into a new JSON string according to the [`Codable`](../../Swift/codable.md) protocol adopted by `Article`. The operator publishes the resulting JSON string to the downstream subscriber. If the encoding operation fails, which can happen in the case of complex properties that can’t be directly transformed into JSON, the stream terminates and the error is passed to the downstream subscriber.
 
 ```swift
 struct Article: Codable {
@@ -53,11 +56,12 @@ dataProvider.send(Article(title: "My First Article", author: "Gita Kumar", pubDa
 
 ## Parameters
 
-- `encoder`: An encoder that implements the [`TopLevelEncoder`](toplevelencoder.md) protocol.
+- `encoder`: An encoder that implements the [`TopLevelEncoder`](../toplevelencoder.md) protocol.
 
 ## See Also
 
-- [func decode<Item, Coder>(type: Item.Type, decoder: Coder) -> Publishers.Decode<Self, Item, Coder>](publisher/decode(type:decoder:).md)
+### Encoding and decoding
+- [func decode<Item, Coder>(type: Item.Type, decoder: Coder) -> Publishers.Decode<Self, Item, Coder>](./decode%28type,decoder%29.md)
   Decodes the output from the upstream using a specified decoder.
 
 

@@ -2,16 +2,19 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Serializes a document snapshot to a file wrapper.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Conform your type to Document instead.
 
 ## Declaration
 
@@ -21,7 +24,7 @@ func fileWrapper(configuration: Self.WriteConfiguration) throws -> FileWrapper
 
 #### Return Value
 
-The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) or an update of the one provided in the `configuration` input.
+The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](../../Foundation/filewrapper.md) or an update of the one provided in the `configuration` input.
 
 #### Discussion
 
@@ -92,9 +95,10 @@ struct NoteCollection: FileDocument {
 
 ## See Also
 
-- [static var writableContentTypes: [UTType]](filedocument/writablecontenttypes.md)
+### Writing a document
+- [static var writableContentTypes: [UTType]](./writablecontenttypes.md)
   The file types that the document supports saving or exporting to.
-- [FileDocument.WriteConfiguration](filedocument/writeconfiguration.md)
+- [FileDocument.WriteConfiguration](./writeconfiguration.md)
   The configuration for writing document contents.
 
 

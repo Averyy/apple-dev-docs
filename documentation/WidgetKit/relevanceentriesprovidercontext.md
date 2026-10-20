@@ -1,7 +1,8 @@
 # RelevanceEntriesProviderContext
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains details about how a widget is rendered, including its size.
 
@@ -17,18 +18,19 @@ struct RelevanceEntriesProviderContext
 ## Topics
 
 ### Instance Properties
-- [let displaySize: CGSize](relevanceentriesprovidercontext/displaysize.md)
+- [let displaySize: CGSize](./relevanceentriesprovidercontext/displaysize.md)
   The size, in points, of the widget.
-- [let isPreview: Bool](relevanceentriesprovidercontext/ispreview.md)
+- [let isPreview: Bool](./relevanceentriesprovidercontext/ispreview.md)
   A Boolean value that indicates when the widget appears as a preview-only.
 
 ## See Also
 
-- [func entry(configuration: Self.Configuration, context: Self.Context) async throws -> Self.Entry](relevanceentriesprovider/entry(configuration:context:).md)
+### Generating relevance entries
+- [func entry(configuration: Self.Configuration, context: Self.Context) async throws -> Self.Entry](./relevanceentriesprovider/entry%28configuration,context%29.md)
   Provides the entry used to render a widget for a specific relevance configuration.
-- [func relevance() async -> WidgetRelevance<Self.Configuration>](relevanceentriesprovider/relevance.md)
+- [func relevance() async -> WidgetRelevance<Self.Configuration>](./relevanceentriesprovider/relevance%28%29.md)
   Provides a collection of conditions under which a specific widget could be relevant.
-- [func placeholder(context: Self.Context) -> Self.Entry](relevanceentriesprovider/placeholder(context:).md)
+- [func placeholder(context: Self.Context) -> Self.Entry](./relevanceentriesprovider/placeholder%28context%29.md)
   Provides the entry representing a placeholder version of the widget.
 
 

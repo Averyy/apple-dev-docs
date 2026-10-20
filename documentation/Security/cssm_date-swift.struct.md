@@ -1,7 +1,8 @@
 # cssm_date
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,21 +14,25 @@
 struct cssm_date
 ```
 
+```c
+struct cssm_date;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_date-swift.struct/init.md)
-- [init(Year: (uint8, uint8, uint8, uint8), Month: (uint8, uint8), Day: (uint8, uint8))](cssm_date-swift.struct/init(year:month:day:).md)
+- [init()](./cssm_date-swift.struct/init%28%29.md)
+- [init(Year: (uint8, uint8, uint8, uint8), Month: (uint8, uint8), Day: (uint8, uint8))](./cssm_date-swift.struct/init%28year,month,day%29.md)
 ### Instance Properties
-- [var Day: (uint8, uint8)](cssm_date-swift.struct/day.md)
-- [var Month: (uint8, uint8)](cssm_date-swift.struct/month.md)
-- [var Year: (uint8, uint8, uint8, uint8)](cssm_date-swift.struct/year.md)
+- [var Day: (uint8, uint8)](./cssm_date-swift.struct/day.md)
+- [var Month: (uint8, uint8)](./cssm_date-swift.struct/month.md)
+- [var Year: (uint8, uint8, uint8, uint8)](./cssm_date-swift.struct/year.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

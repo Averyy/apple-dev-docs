@@ -1,12 +1,15 @@
 # line2TextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display on the bottom line of the complication.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,11 +18,16 @@ The text to display on the bottom line of the complication.
 var line2TextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * line2TextProvider;
+```
+
 ## See Also
 
-- [var highlightLine2: Bool](clkcomplicationtemplateextralargestackimage/highlightline2.md)
+### Setting the Complication Data
+- [var highlightLine2: Bool](./highlightline2.md)
   A Boolean value indicating which line should be drawn with a highlight.
-- [var line1ImageProvider: CLKImageProvider](clkcomplicationtemplateextralargestackimage/line1imageprovider.md)
+- [var line1ImageProvider: CLKImageProvider](./line1imageprovider.md)
   The image to display on the top line of the complication.
 
 

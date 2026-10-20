@@ -1,7 +1,8 @@
 # MPSCNNConvolutionTransposeGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,35 +18,39 @@
 class MPSCNNConvolutionTransposeGradient
 ```
 
+```objc
+@interface MPSCNNConvolutionTransposeGradient : MPSCNNGradientKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnconvolutiontransposegradient/init(coder:device:).md)
-- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolutiontransposegradient/init(device:weights:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnconvolutiontransposegradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](./mpscnnconvolutiontransposegradient/init%28device,weights%29.md)
 ### Instance Properties
-- [var dataSource: any MPSCNNConvolutionDataSource](mpscnnconvolutiontransposegradient/datasource.md)
-- [var gradientOption: MPSCNNConvolutionGradientOption](mpscnnconvolutiontransposegradient/gradientoption.md)
-- [var groups: Int](mpscnnconvolutiontransposegradient/groups.md)
-- [var sourceGradientFeatureChannels: Int](mpscnnconvolutiontransposegradient/sourcegradientfeaturechannels.md)
-- [var sourceImageFeatureChannels: Int](mpscnnconvolutiontransposegradient/sourceimagefeaturechannels.md)
+- [var dataSource: any MPSCNNConvolutionDataSource](./mpscnnconvolutiontransposegradient/datasource.md)
+- [var gradientOption: MPSCNNConvolutionGradientOption](./mpscnnconvolutiontransposegradient/gradientoption.md)
+- [var groups: Int](./mpscnnconvolutiontransposegradient/groups.md)
+- [var sourceGradientFeatureChannels: Int](./mpscnnconvolutiontransposegradient/sourcegradientfeaturechannels.md)
+- [var sourceImageFeatureChannels: Int](./mpscnnconvolutiontransposegradient/sourceimagefeaturechannels.md)
 ### Instance Methods
-- [func reloadWeightsAndBiases(with: any MTLCommandBuffer, state: MPSCNNConvolutionWeightsAndBiasesState)](mpscnnconvolutiontransposegradient/reloadweightsandbiases(with:state:).md)
-- [func reloadWeightsAndBiasesFromDataSource()](mpscnnconvolutiontransposegradient/reloadweightsandbiasesfromdatasource.md)
+- [func reloadWeightsAndBiases(with: any MTLCommandBuffer, state: MPSCNNConvolutionWeightsAndBiasesState)](./mpscnnconvolutiontransposegradient/reloadweightsandbiases%28with,state%29.md)
+- [func reloadWeightsAndBiasesFromDataSource()](./mpscnnconvolutiontransposegradient/reloadweightsandbiasesfromdatasource%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNGradientKernel](mpscnngradientkernel.md)
+- [MPSCNNGradientKernel](./mpscnngradientkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

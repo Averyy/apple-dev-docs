@@ -7,15 +7,16 @@ PREALLOCATE: preallocate allocation blocks. ALLOCATECONTIG: allocate contigious 
 
 ## See Also
 
-- [vp](vnop_pagein_args/1807403-vp.md)
+### Fields
+- [vp](./api-1807403-vp.md)
   The vnode for which to preallocate space.
-- [length](vnop_pagein_args/1807414-length.md)
+- [length](./api-1807414-length.md)
   Desired preallocated file length.
-- [bytesallocated](vnop_pagein_args/1807437-bytesallocated.md)
+- [bytesallocated](./api-1807437-bytesallocated.md)
   Additional bytes set aside for file. Set to 0 if none are allocated OR if the file is contracted.
-- [offset](vnop_pagein_args/1807450-offset.md)
+- [offset](./api-1807450-offset.md)
   Hint for where to find free blocks.
-- [ctx](vnop_pagein_args/1807464-ctx.md)
+- [ctx](./api-1807464-ctx.md)
   Context to authenticate for allocation request.
 
 

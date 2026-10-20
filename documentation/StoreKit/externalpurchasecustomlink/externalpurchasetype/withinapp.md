@@ -1,7 +1,8 @@
 # ExternalPurchaseCustomLink.ExternalPurchaseType.withinApp
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The external purchase happens inside the app.
 
@@ -22,7 +23,8 @@ case withinApp
 
 ## See Also
 
-- [ExternalPurchaseCustomLink.ExternalPurchaseType.outOfApp(destinationURL:)](externalpurchasecustomlink/externalpurchasetype/outofapp(destinationurl:).md)
+### External purchase types
+- [ExternalPurchaseCustomLink.ExternalPurchaseType.outOfApp(destinationURL:)](./outofapp%28destinationurl%29.md)
   The external purchase happens outside of the app.
 
 

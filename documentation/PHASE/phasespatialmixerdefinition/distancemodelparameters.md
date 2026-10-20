@@ -1,7 +1,8 @@
 # distanceModelParameters
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that changes sound as it carries over a distance.
 
@@ -19,12 +20,16 @@ An effect that changes sound as it carries over a distance.
 var distanceModelParameters: PHASEDistanceModelParameters? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PHASEDistanceModelParameters * distanceModelParameters;
+```
+
 #### Discussion
 
 Similar to a Doppler effect, this property changes how an audio source sounds as its distance between the listener increases or decreases in 3D space. The available options are:
 
-- **[`PHASEGeometricSpreadingDistanceModelParameters`](phasegeometricspreadingdistancemodelparameters.md)**: Create a realistic effect by dissipating certain frequency ranges of the audio spectrum differently with distance.
-- **[`PHASEEnvelopeDistanceModelParameters`](phaseenvelopedistancemodelparameters.md)**: Take full control of the sound’s volume by graphing its loudness using points and curves over the distance.
+- **[`PHASEGeometricSpreadingDistanceModelParameters`](../phasegeometricspreadingdistancemodelparameters.md)**: Create a realistic effect by dissipating certain frequency ranges of the audio spectrum differently with distance.
+- **[`PHASEEnvelopeDistanceModelParameters`](../phaseenvelopedistancemodelparameters.md)**: Take full control of the sound’s volume by graphing its loudness using points and curves over the distance.
 
 ##### Programmatically Check Sound Dissipation
 

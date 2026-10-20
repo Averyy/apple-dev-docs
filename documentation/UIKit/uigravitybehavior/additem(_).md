@@ -1,7 +1,8 @@
 # addItem(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates the specified dynamic item with the gravity behavior.
 
@@ -9,13 +10,17 @@ Associates the specified dynamic item with the gravity behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func addItem(_ item: any UIDynamicItem)
+```
+
+```objc
+- (void) addItem:(id<UIDynamicItem>) item;
 ```
 
 #### Discussion
@@ -30,9 +35,10 @@ If the gravity behavior has an associated dynamic animator, this method notifies
 
 ## See Also
 
-- [var items: [any UIDynamicItem]](uigravitybehavior/items.md)
+### Managing a gravity behavior’s items
+- [var items: [any UIDynamicItem]](./items.md)
   The set of dynamic items associated with the gravity behavior.
-- [func removeItem(any UIDynamicItem)](uigravitybehavior/removeitem(_:).md)
+- [func removeItem(any UIDynamicItem)](./removeitem%28_%29.md)
   Removes the specified dynamic item from the gravity behavior.
 
 

@@ -1,14 +1,17 @@
 # wantsExtendedDynamicRangeContent
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- visionOS 1.0+
+- iOS 17.0+ - Deprecated in 26.0
+- iPadOS 17.0+ - Deprecated in 26.0
+- Mac Catalyst 17.0+ - Deprecated in 26.0
+- macOS 14.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use preferredDynamicRange instead
 
 ## Declaration
 
@@ -16,10 +19,15 @@
 var wantsExtendedDynamicRangeContent: Bool { get set }
 ```
 
+```objc
+@property BOOL wantsExtendedDynamicRangeContent;
+```
+
 ## See Also
 
-- [var preferredDynamicRange: CALayer.DynamicRange](calayer/preferreddynamicrange.md)
-- [var contentsHeadroom: CGFloat](calayer/contentsheadroom.md)
+### High dynamic range
+- [var preferredDynamicRange: CALayer.DynamicRange](./preferreddynamicrange.md)
+- [var contentsHeadroom: CGFloat](./contentsheadroom.md)
 
 
 ---

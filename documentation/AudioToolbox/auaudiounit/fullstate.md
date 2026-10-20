@@ -1,7 +1,8 @@
 # fullState
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A persistable snapshot of the audio unit’s properties and parameters, suitable for saving as a user preset.
 
@@ -19,6 +20,18 @@ A persistable snapshot of the audio unit’s properties and parameters, suitable
 var fullState: [String : Any]? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * fullState;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSDictionary<NSString *,id> * fullState;
+```
+
 #### Discussion
 
 Hosts may use this property to save and restore the state of an audio unit being used in a user preset or document. The audio unit should not persist transitory properties such as stream formats, but should save and restore all other properties.
@@ -29,17 +42,18 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_ClassInf
 
 ## See Also
 
-- [var fullStateForDocument: [String : Any]?](auaudiounit/fullstatefordocument.md)
+### Managing Presets
+- [var fullStateForDocument: [String : Any]?](./fullstatefordocument.md)
   A persistable snapshot of the audio unit’s properties and parameters, suitable for saving in a user’s document.
-- [var factoryPresets: [AUAudioUnitPreset]?](auaudiounit/factorypresets.md)
+- [var factoryPresets: [AUAudioUnitPreset]?](./factorypresets.md)
   A collection of presets provided by the audio unit’s developer.
-- [var currentPreset: AUAudioUnitPreset?](auaudiounit/currentpreset.md)
+- [var currentPreset: AUAudioUnitPreset?](./currentpreset.md)
   The audio unit’s last-selected preset.
-- [var supportsUserPresets: Bool](auaudiounit/supportsuserpresets.md)
-- [var userPresets: [AUAudioUnitPreset]](auaudiounit/userpresets.md)
-- [func saveUserPreset(AUAudioUnitPreset) throws](auaudiounit/saveuserpreset(_:).md)
-- [func deleteUserPreset(AUAudioUnitPreset) throws](auaudiounit/deleteuserpreset(_:).md)
-- [func presetState(for: AUAudioUnitPreset) throws -> [String : Any]](auaudiounit/presetstate(for:).md)
+- [var supportsUserPresets: Bool](./supportsuserpresets.md)
+- [var userPresets: [AUAudioUnitPreset]](./userpresets.md)
+- [func saveUserPreset(AUAudioUnitPreset) throws](./saveuserpreset%28_%29.md)
+- [func deleteUserPreset(AUAudioUnitPreset) throws](./deleteuserpreset%28_%29.md)
+- [func presetState(for: AUAudioUnitPreset) throws -> [String : Any]](./presetstate%28for%29.md)
 
 
 ---

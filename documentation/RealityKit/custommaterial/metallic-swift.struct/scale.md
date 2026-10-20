@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reflectiveness value for the entire entity or a multiplier for the metallic texture.
 
@@ -24,7 +25,8 @@ This property is an input to your material’s surface shader. Although you can 
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/metallic-swift.struct/texture.md)
+### Accessing metallic data
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The reflectiveness as a UV-mapped image texture.
 
 

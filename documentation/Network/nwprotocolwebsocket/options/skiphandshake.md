@@ -1,7 +1,8 @@
 # skipHandshake
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the WebSocket protocol skips its handshake and begins framing data once the underlying connection is established.
 
@@ -26,9 +27,10 @@ This option should not be set when communicating with a generic WebSocket server
 
 ## See Also
 
-- [func setAdditionalHeaders([(name: String, value: String)])](nwprotocolwebsocket/options/setadditionalheaders(_:).md)
+### Configuring Client Handshakes
+- [func setAdditionalHeaders([(name: String, value: String)])](./setadditionalheaders%28_%29.md)
   Sets additional HTTP header fields to be sent by the client during the WebSocket handshake.
-- [func setSubprotocols([String])](nwprotocolwebsocket/options/setsubprotocols(_:).md)
+- [func setSubprotocols([String])](./setsubprotocols%28_%29.md)
   Adds to the list of supported application protocols that will be presented to a WebSocket server during connection establishment.
 
 

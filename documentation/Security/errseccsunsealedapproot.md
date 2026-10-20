@@ -1,7 +1,8 @@
 # errSecCSUnsealedAppRoot
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unsealed contents present in the bundle root.
 
@@ -13,6 +14,10 @@ Unsealed contents present in the bundle root.
 
 ```swift
 var errSecCSUnsealedAppRoot: OSStatus { get }
+```
+
+```c
+errSecCSUnsealedAppRoot
 ```
 
 

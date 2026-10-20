@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct DebugKeyAction {
     ...
 };
@@ -17,10 +17,10 @@ struct DebugKeyAction {
 ## Topics
 
 ### Instance Properties
-- [action](debugkeyaction/2765588-action.md)
-- [mask](debugkeyaction/2765596-mask.md)
-- [parameter](debugkeyaction/2765594-parameter.md)
-- [debugArgRequired](debugkeyaction/3869766-debugargrequired.md)
+- [action](./debugkeyaction/api-2765588-action.md)
+- [mask](./debugkeyaction/api-2765596-mask.md)
+- [parameter](./debugkeyaction/api-2765594-parameter.md)
+- [debugArgRequired](./debugkeyaction/api-3869766-debugargrequired.md)
 
 
 ---

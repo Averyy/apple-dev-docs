@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate for this interaction and responds to Scribble events for text input views.
 
@@ -14,6 +15,10 @@ The object that acts as the delegate for this interaction and responds to Scribb
 
 ```swift
 weak var delegate: (any UIScribbleInteractionDelegate)? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIScribbleInteractionDelegate> delegate;
 ```
 
 #### Discussion

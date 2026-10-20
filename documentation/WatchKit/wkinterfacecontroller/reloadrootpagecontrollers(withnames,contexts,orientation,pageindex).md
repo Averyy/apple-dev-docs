@@ -1,7 +1,8 @@
 # reloadRootPageControllers(withNames:contexts:orientation:pageIndex:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads the specified interface controllers and rebuilds the app’s page-based interface for the given scrolling orientation.
 
@@ -14,9 +15,13 @@ Loads the specified interface controllers and rebuilds the app’s page-based in
 class func reloadRootPageControllers(withNames names: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)
 ```
 
+```objc
++ (void) reloadRootPageControllersWithNames:(NSArray<NSString *> *) names contexts:(NSArray *) contexts orientation:(WKPageOrientation) orientation pageIndex:(NSInteger) pageIndex;
+```
+
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -27,18 +32,19 @@ Call this method to create or modify your app’s page-based interface:
 
 ## Parameters
 
-- `names`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains the identifier of an interface controller in your storyboard file. The order of the identifiers in the array defines the order of the corresponding interface controllers in the page-based interface.
+- `names`: An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains the identifier of an interface controller in your storyboard file. The order of the identifiers in the array defines the order of the corresponding interface controllers in the page-based interface.
 - `contexts`: An array of objects of type `id`. Use this parameter to pass context objects to each of the interface controllers loaded into the page-based interface. The first object in the array is passed to the first interface controller, the second object is passed to the second interface controller, and so on.
-- `orientation`: The scrolling orientation for the page-based interface. For a list of valid values, see [`WKPageOrientation`](wkpageorientation.md).
+- `orientation`: The scrolling orientation for the page-based interface. For a list of valid values, see [`WKPageOrientation`](../wkpageorientation.md).
 - `pageIndex`: The index of the page that the system displays in the page-based interface.
 
 ## See Also
 
-- [enum WKPageOrientation](wkpageorientation.md)
+### Navigating a page-based interface
+- [enum WKPageOrientation](../wkpageorientation.md)
   Scrolling orientations for page-based interfaces.
-- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/reloadrootcontrollers(withnamesandcontexts:).md)
+- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](./reloadrootcontrollers%28withnamesandcontexts%29.md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface.
-- [func becomeCurrentPage()](wkinterfacecontroller/becomecurrentpage.md)
+- [func becomeCurrentPage()](./becomecurrentpage%28%29.md)
   Displays the interface controller in the page-based interface.
 
 

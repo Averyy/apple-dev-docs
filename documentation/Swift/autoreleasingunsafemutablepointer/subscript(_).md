@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the `i`th element of the raw array pointed to by `self`.
 
@@ -22,11 +23,12 @@ subscript(i: Int) -> Pointee { get }
 
 #### Overview
 
-> **Note**: `self != nil`.
+> **Precondition**: `self != nil`.
 
 ## See Also
 
-- [var pointee: Pointee](autoreleasingunsafemutablepointer/pointee.md)
+### Accessing a Pointer’s Memory
+- [var pointee: Pointee](./pointee.md)
   Retrieve or set the `Pointee` instance referenced by `self`.
 
 

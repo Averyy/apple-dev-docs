@@ -1,7 +1,8 @@
 # loadPlaybackConfigurationOptions(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads playback configuration options for an asset.
 
@@ -17,12 +18,20 @@ Loads playback configuration options for an asset.
 ## Declaration
 
 ```swift
+func loadPlaybackConfigurationOptions(completionHandler: @escaping @Sendable ([AVAssetPlaybackConfigurationOption]) -> Void)
+```
+
+```swift
 var playbackConfigurationOptions: [AVAssetPlaybackConfigurationOption] { get async }
+```
+
+```objc
+- (void) loadPlaybackConfigurationOptionsWithCompletionHandler:(void (^)(NSArray<NSString *> *playbackConfigurationOptions)) completionHandler;
 ```
 
 ## Parameters
 
-- `completionHandler`: A callback the system invokes with an array of [`AVAssetPlaybackConfigurationOption`](avassetplaybackconfigurationoption.md) values that describe capabilities of the asset.
+- `completionHandler`: A callback the system invokes with an array of [`AVAssetPlaybackConfigurationOption`](../avassetplaybackconfigurationoption.md) values that describe capabilities of the asset.
 
 
 ---

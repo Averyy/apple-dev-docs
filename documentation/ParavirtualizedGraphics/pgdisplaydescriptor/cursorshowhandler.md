@@ -1,7 +1,8 @@
 # cursorShowHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that the framework calls to change the cursor’s visibility.
 
@@ -15,9 +16,14 @@ A handler that the framework calls to change the cursor’s visibility.
 var cursorShowHandler: PGDisplayCursorShowHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) PGDisplayCursorShowHandler cursorShowHandler;
+```
+
 ## See Also
 
-- [typealias PGDisplayCursorShowHandler](pgdisplaycursorshowhandler.md)
+### Managing Cursor Events
+- [typealias PGDisplayCursorShowHandler](../pgdisplaycursorshowhandler.md)
   The block signature for a routine that handles changes to the cursor’s visibility.
 
 

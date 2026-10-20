@@ -1,7 +1,8 @@
 # CodingKeyRepresentable
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be converted to and from a coding key.
 
@@ -29,29 +30,30 @@ Conforming a type to `CodingKeyRepresentable` lets you opt in to encoding and de
 ## Topics
 
 ### Initializers
-- [init?<T>(codingKey: T)](codingkeyrepresentable/init(codingkey:).md)
+- [init?<T>(codingKey: T)](./codingkeyrepresentable/init%28codingkey%29.md)
 ### Instance Properties
-- [var codingKey: any CodingKey](codingkeyrepresentable/codingkey.md)
+- [var codingKey: any CodingKey](./codingkeyrepresentable/codingkey.md)
 
 ## Relationships
 
 ### Conforming Types
-- [Int](int.md)
-- [String](string.md)
+- [Int](./int.md)
+- [String](./string.md)
 
 ## See Also
 
-- [Encoding and Decoding Custom Types](../foundation/encoding-and-decoding-custom-types.md)
+### Custom Encoding and Decoding
+- [Encoding and Decoding Custom Types](../Foundation/encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable](codable.md)
+- [typealias Codable](./codable.md)
   A type that can convert itself into and out of an external representation.
-- [protocol Encodable](encodable.md)
+- [protocol Encodable](./encodable.md)
   A type that can encode itself to an external representation.
-- [protocol Decodable](decodable.md)
+- [protocol Decodable](./decodable.md)
   A type that can decode itself from an external representation.
-- [protocol CodingKey](codingkey.md)
+- [protocol CodingKey](./codingkey.md)
   A type that can be used as a key for encoding and decoding.
-- [struct CodingUserInfoKey](codinguserinfokey.md)
+- [struct CodingUserInfoKey](./codinguserinfokey.md)
   A user-defined key for providing context during encoding and decoding.
 
 

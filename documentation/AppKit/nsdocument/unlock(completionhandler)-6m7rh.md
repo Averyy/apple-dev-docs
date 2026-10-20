@@ -1,7 +1,8 @@
 # unlock(completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the user to make modifications to the document’s file.
 
@@ -11,7 +12,15 @@ Allows the user to make modifications to the document’s file.
 ## Declaration
 
 ```swift
+func unlock(completionHandler: (((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func unlock() async throws
+```
+
+```objc
+- (void) unlockWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -24,17 +33,18 @@ By default, this method tries to clear the “user immutable” flag and, if nec
 
 ## See Also
 
-- [func lock(Any?)](nsdocument/lock(_:).md)
+### Locking the Document
+- [func lock(Any?)](./lock%28_%29.md)
   Locks the document in response to the user choosing the Lock menu item.
-- [func unlock(Any?)](nsdocument/unlock(_:).md)
+- [func unlock(Any?)](./unlock%28_%29.md)
   Unlocks the document in response to the user choosing the Unlock menu item.
-- [func lock(completionHandler: ((Bool) -> Void)?)](nsdocument/lock(completionhandler:)-6zuhh.md)
+- [func lock(completionHandler: ((Bool) -> Void)?)](./lock%28completionhandler%29-6zuhh.md)
   Prevents the user from making further changes to the document.
-- [func lock(completionHandler: (((any Error)?) -> Void)?)](nsdocument/lock(completionhandler:)-161qv.md)
+- [func lock(completionHandler: (((any Error)?) -> Void)?)](./lock%28completionhandler%29-161qv.md)
   Prevents the user from making changes to the document’s file.
-- [func unlock(completionHandler: ((Bool) -> Void)?)](nsdocument/unlock(completionhandler:)-8p8zd.md)
+- [func unlock(completionHandler: ((Bool) -> Void)?)](./unlock%28completionhandler%29-8p8zd.md)
   Allows the user to make modifications to the document.
-- [var isLocked: Bool](nsdocument/islocked.md)
+- [var isLocked: Bool](./islocked.md)
   A Boolean value that indicates whether or not the file can be written to.
 
 

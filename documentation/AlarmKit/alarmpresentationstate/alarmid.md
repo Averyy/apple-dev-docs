@@ -1,7 +1,8 @@
 # alarmID
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique ID of the alarm.
 
@@ -18,11 +19,12 @@ var alarmID: Alarm.ID
 
 ## See Also
 
-- [init(alarmID: Alarm.ID, mode: AlarmPresentationState.Mode)](alarmpresentationstate/init(alarmid:mode:).md)
+### Creating an alarm state
+- [init(alarmID: Alarm.ID, mode: AlarmPresentationState.Mode)](./init%28alarmid,mode%29.md)
   Creates an instance of an alarm state.
-- [var mode: AlarmPresentationState.Mode](alarmpresentationstate/mode-swift.property.md)
+- [var mode: AlarmPresentationState.Mode](./mode-swift.property.md)
   The specific state of the alarm, either alerting, countdown, or paused.
-- [AlarmPresentationState.Mode](alarmpresentationstate/mode-swift.enum.md)
+- [AlarmPresentationState.Mode](./mode-swift.enum.md)
   A list of all modes the alarm can be in: either alert, countdown, or paused.
 
 

@@ -1,7 +1,8 @@
 # init(color:intensity:isRealWorldProxy:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a directional light with a configuration.
 
@@ -17,6 +18,12 @@ Creates a directional light with a configuration.
 init(color: DirectionalLightComponent.Color = .white, intensity: Float = 2145.7078, isRealWorldProxy: Bool = false)
 ```
 
+**Other overloads**:
+
+```swift
+init(color: DirectionalLightComponent.Color = .white, intensity: Float = 2145.7078, isRealWorldProxy: Bool = false)
+```
+
 ## Parameters
 
 - `color`: A color for the light.
@@ -25,7 +32,8 @@ init(color: DirectionalLightComponent.Color = .white, intensity: Float = 2145.70
 
 ## See Also
 
-- [init(color: DirectionalLightComponent.Color, intensity: Float)](directionallightcomponent/init(color:intensity:).md)
+### Creating a directional light
+- [init(color: DirectionalLightComponent.Color, intensity: Float)](./init%28color,intensity%29.md)
   Creates a directional light with a configuration.
 
 

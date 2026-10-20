@@ -1,11 +1,12 @@
 # Comparable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func < (Angle2DFloat, Angle2DFloat) -> Bool](angle2dfloat/_(_:_:).md)
+- [static func < (Angle2DFloat, Angle2DFloat) -> Bool](./op%28_,_%29.md)
   Returns `true` if `lhs.radians` is less than `rhs.radians`.
 
 

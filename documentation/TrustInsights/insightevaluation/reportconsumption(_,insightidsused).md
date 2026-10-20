@@ -1,7 +1,8 @@
 # reportConsumption(_:insightIDsUsed:)
 
 **Framework**: Trust Insights  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the consumption status, and optionally provides one or more associated insight identifiers.
 
@@ -17,9 +18,9 @@ final func reportConsumption(_ status: InsightEvaluationConsumptionStatus, insig
 
 #### Discussion
 
-Before releasing an [`InsightEvaluation`](insightevaluation.md), call this to report how your app used the results. The system may present this value in transparency reporting and also helps with model improvement.
+Before releasing an [`InsightEvaluation`](../insightevaluation.md), call this to report how your app used the results. The system may present this value in transparency reporting and also helps with model improvement.
 
-> ❗ **Important**: Failure to call this method to report how your app used the insight before releasing an [`InsightEvaluation`](insightevaluation.md) may result in rate limiting or revocation of you access to the service.
+> ❗ **Important**: Failure to call this method to report how your app used the insight before releasing an [`InsightEvaluation`](../insightevaluation.md) may result in rate limiting or revocation of you access to the service.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ Before releasing an [`InsightEvaluation`](insightevaluation.md), call this to re
 
 ## See Also
 
-- [func reportConsumption(InsightEvaluationConsumptionStatus, insightsUsed: [any TrustInsight])](insightevaluation/reportconsumption(_:insightsused:).md)
+### Providing feedback
+- [func reportConsumption(InsightEvaluationConsumptionStatus, insightsUsed: [any TrustInsight])](./reportconsumption%28_,insightsused%29.md)
   Reports the consumption status, and optionally provide one or more associated insights.
 
 

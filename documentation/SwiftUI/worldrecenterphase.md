@@ -1,7 +1,8 @@
 # WorldRecenterPhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents information associated with a phase of a system recenter event. Values of this type are passed to the closure specified in View.onWorldRecenter(action:).
 
@@ -18,18 +19,18 @@ enum WorldRecenterPhase
 ## Topics
 
 ### Enumeration Cases
-- [WorldRecenterPhase.began](worldrecenterphase/began.md)
+- [WorldRecenterPhase.began](./worldrecenterphase/began.md)
   The app has begun to fade out. It is not re-positioned yet.
-- [WorldRecenterPhase.ended](worldrecenterphase/ended.md)
+- [WorldRecenterPhase.ended](./worldrecenterphase/ended.md)
   The app has begun to fade in after it has been re-positioned.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

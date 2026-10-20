@@ -1,7 +1,8 @@
 # SecAccessControlGetTypeID()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique identifier of the opaque type to which a keychain item access control object belongs.
 
@@ -18,6 +19,10 @@ Returns the unique identifier of the opaque type to which a keychain item access
 
 ```swift
 func SecAccessControlGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID SecAccessControlGetTypeID();
 ```
 
 

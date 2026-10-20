@@ -1,7 +1,8 @@
 # init(size:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init!(size: CGSize, in context: JSContext!)
+```
+
+```objc
++ (JSValue *) valueWithSize:(CGSize) size inContext:(JSContext *) context;
 ```
 
 #### Return Value

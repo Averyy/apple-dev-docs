@@ -1,7 +1,8 @@
 # SystemPackageProvider.aptItem(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Packages installable by the apt-get package manager.
 

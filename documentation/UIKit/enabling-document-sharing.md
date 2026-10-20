@@ -1,6 +1,7 @@
 # Enabling document sharing
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Give users the ability to import and export documents from your app.
 
@@ -8,11 +9,11 @@ Give users the ability to import and export documents from your app.
 
 The document browser automatically exports the user’s documents when they tap the Share button or perform a drag-and-drop action.
 
-To import documents, your app must specify all the document types that it supports. You typically specify supported document types when you set up your document browser. For additional information, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
+To import documents, your app must specify all the document types that it supports. You typically specify supported document types when you set up your document browser. For additional information, see [Set the supported document types](./setting-up-a-document-browser-app.md#Set-the-supported-document-types).
 
-##### Open a Shared Document
+##### Open a shared document
 
-If the user selects your app from the activity view, the system launches your app and calls your app delegate’s [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method. Implement this method to call your document browser’s [`revealDocument(at:importIfNeeded:completion:)`](uidocumentbrowserviewcontroller/revealdocument(at:importifneeded:completion:).md) method to reveal and import the document, as shown in this example:
+If the user selects your app from the activity view, the system launches your app and calls your app delegate’s [`application(_:open:options:)`](./uiapplicationdelegate/application%28_,open,options%29.md) method. Implement this method to call your document browser’s [`revealDocument(at:importIfNeeded:completion:)`](./uidocumentbrowserviewcontroller/revealdocument%28at,importifneeded,completion%29.md) method to reveal and import the document, as shown in this example:
 
 ```swift
 func application(_ app: UIApplication, open inputURL: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
@@ -56,13 +57,14 @@ func application(_ app: UIApplication, open inputURL: URL, options: [UIApplicati
 }    
 ```
 
-If the import is successful, the system calls your document browser delegate’s [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md) method.
+If the import is successful, the system calls your document browser delegate’s [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didimportdocumentat,todestinationurl%29.md) method.
 
 ## See Also
 
-- [Setting up a document browser app](setting-up-a-document-browser-app.md)
+### Configuration
+- [Setting up a document browser app](./setting-up-a-document-browser-app.md)
   Add a document browser view controller to your app.
-- [Presenting selected documents](presenting-selected-documents.md)
+- [Presenting selected documents](./presenting-selected-documents.md)
   Display user-selected documents over your browser view controller.
 
 

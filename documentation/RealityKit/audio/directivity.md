@@ -1,7 +1,8 @@
 # Audio.Directivity
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The radiation pattern of sound emitted from an entity.
 
@@ -22,26 +23,27 @@ enum Directivity
 ## Topics
 
 ### Enumeration Cases
-- [Audio.Directivity.beam(focus:)](audio/directivity/beam(focus:).md)
+- [Audio.Directivity.beam(focus:)](./directivity/beam%28focus%29.md)
   A parametric frequency-dependent radiation pattern, where the `focus` determines the width of a beam.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [enum Audio](audio.md)
+### Audio types
+- [enum Audio](../audio.md)
   A namespace for types that are used commonly in audio.
-- [typealias Decibel](audio/decibel.md)
+- [typealias Decibel](./decibel.md)
   The unit for measuring intensity of sound on a logarithmic scale.
-- [Audio.DistanceAttenuation](audio/distanceattenuation.md)
+- [Audio.DistanceAttenuation](./distanceattenuation.md)
   The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
 

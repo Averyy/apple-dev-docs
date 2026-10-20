@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short REMOVAL;
 ```
 
 ## See Also
 
-- [ADDITION](mutationevent/1630139-addition.md)
-- [MODIFICATION](mutationevent/1631748-modification.md)
+### Miscellaneous
+- [ADDITION](./api-1630139-addition.md)
+- [MODIFICATION](./api-1631748-modification.md)
 
 
 ---

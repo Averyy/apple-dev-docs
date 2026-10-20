@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error object that specifies the error that occurred during a speech recognition task.
 
@@ -16,6 +17,10 @@ An error object that specifies the error that occurred during a speech recogniti
 
 ```swift
 var error: (any Error)? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSError * error;
 ```
 
 #### Discussion
@@ -37,9 +42,10 @@ The system may return one of the errors listed in the table below.
 
 ## See Also
 
-- [var state: SFSpeechRecognitionTaskState](sfspeechrecognitiontask/state.md)
+### Monitoring recognition progress
+- [var state: SFSpeechRecognitionTaskState](./state.md)
   The current state of the speech recognition task.
-- [enum SFSpeechRecognitionTaskState](sfspeechrecognitiontaskstate.md)
+- [enum SFSpeechRecognitionTaskState](../sfspeechrecognitiontaskstate.md)
   The state of the task associated with the recognition request.
 
 

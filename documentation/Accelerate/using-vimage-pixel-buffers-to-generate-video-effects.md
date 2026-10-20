@@ -1,6 +1,8 @@
 # Using vImage pixel buffers to generate video effects
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [UsingVImagePixelBuffersToGenerateVideoEffects.zip](https://docs-assets.developer.apple.com/published/ae55c5290a61/UsingVImagePixelBuffersToGenerateVideoEffects.zip)
 
 Render real-time video effects with the vImage Pixel Buffer.
 
@@ -10,15 +12,15 @@ Render real-time video effects with the vImage Pixel Buffer.
 
 #### Overview
 
-![A photograph of flowers.](/images/com.apple.accelerate/passThrough.png)
+![A photograph of flowers.](https://developer.apple.com/tutorials/images/com.apple.accelerate/passThrough.png)
 
-This sample code project captures video from a macOS device’s camera and applies video effects in real time. The sample converts the 8-bit YpCbCr video frames to 32-bit RGB [`vImage.PixelBuffer`](vimage/pixelbuffer.md) images and demonstrates image-processing techniques that are available only for 32-bit data.
+This sample code project captures video from a macOS device’s camera and applies video effects in real time. The sample converts the 8-bit YpCbCr video frames to 32-bit RGB [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) images and demonstrates image-processing techniques that are available only for 32-bit data.
 
 Before exploring the code, build and run the app to familiarize yourself with the different visual results the app generates from the camera.
 
-##### Create the Any to Any Converter
+##### Create the any-to-any converter
 
-The code creates a [`vImageConverter`](vimageconverter.md) instance that converts the YpCbCr video frames to three-channel, 32-bit-per-channel, floating-point interleaved image data.
+The code creates a [`vImageConverter`](./vimageconverter.md) instance that converts the YpCbCr video frames to three-channel, 32-bit-per-channel, floating-point interleaved image data.
 
 ```swift
 let cvImageFormat = vImageCVImageFormat.make(
@@ -49,9 +51,9 @@ lazy var converter: vImageConverter = {
 }()
 ```
 
-##### Convert a Core Video Pixel Buffer to Rgb
+##### Convert a Core Video pixel buffer to RGB
 
-The code defines `destinationBuffer` as a [`vImage.InterleavedFx3`](vimage/interleavedfx3.md) pixel buffer. The conversion function creates a [`vImage.DynamicPixelFormat`](vimage/dynamicpixelformat.md) source buffer that references the locked [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) instance and passes that to the any-to-any converter.
+The code defines `destinationBuffer` as a [`vImage.InterleavedFx3`](./vimage/interleavedfx3.md) pixel buffer. The conversion function creates a [`vImage.DynamicPixelFormat`](./vimage/dynamicpixelformat.md) source buffer that references the locked [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instance and passes that to the any-to-any converter.
 
 ```swift
 func populateDestinationBuffer(pixelBuffer: CVPixelBuffer) {
@@ -73,13 +75,13 @@ func populateDestinationBuffer(pixelBuffer: CVPixelBuffer) {
 
 On return, `destinationBuffer` contains the RGB representation of the YpCbCr video frame.
 
-##### Apply the Noise Effect
+##### Apply the noise effect
 
 The sample simulates noise or film grain by adding Gaussian noise (with a mean of zero) to each frame. The image below shows an example of the noise effect:
 
-![A photograph of flowers with overlaid random noise.](/images/com.apple.accelerate/noise.png)
+![A photograph of flowers with overlaid random noise.](https://developer.apple.com/tutorials/images/com.apple.accelerate/noise.png)
 
-Accelerate’s BNNS library provides the [`BNNSRandomFillNormalFloat(_:_:_:_:)`](bnnsrandomfillnormalfloat(_:_:_:_:).md) function that fills an array descriptor with random floating-point values mapped to a normal distribution. Use the [`withUnsafeMutableBufferPointer(_:)`](vimage/pixelbuffer/withunsafemutablebufferpointer(_:).md) function to pass a pointer to the pixel buffer’s underlying data to a  [`BNNSNDArrayDescriptor`](bnnsndarraydescriptor.md).
+Accelerate’s BNNS library provides the [`BNNSRandomFillNormalFloat(_:_:_:_:)`](./bnnsrandomfillnormalfloat%28_,_,_,_%29.md) function that fills an array descriptor with random floating-point values mapped to a normal distribution. Use the [`withUnsafeMutableBufferPointer(_:)`](./vimage/pixelbuffer/withunsafemutablebufferpointer%28_%29.md) function to pass a pointer to the pixel buffer’s underlying data to a  [`BNNSNDArrayDescriptor`](./bnnsndarraydescriptor.md).
 
 The following code generates the noise effect:
 
@@ -118,15 +120,15 @@ func applyNoise() {
 }
 ```
 
-##### Apply the Temporal Blur Effect
+##### Apply the temporal blur effect
 
 The temporal blur effect blurs the image over time by calculating a weighted average of the current frame and previous frames. The effect is analogous to an exaggerated motion blur.
 
 The image below shows an example of a rotating image with the temporal blur effect:
 
-![A photograph of flowers. The photograph appears rotated and shows radial motion blur.](/images/com.apple.accelerate/temporalBlur.png)
+![A photograph of flowers. The photograph appears rotated and shows radial motion blur.](https://developer.apple.com/tutorials/images/com.apple.accelerate/temporalBlur.png)
 
-The [`linearInterpolate(bufferB:interpolationConstant:destination:)`](vimage/pixelbuffer/linearinterpolate(bufferb:interpolationconstant:destination:).md) function calls the vDSP function [`vDSP_vintb`](vdsp_vintb.md) to calculate the linear interpolation between the current frame and the previous interpolated frame.
+The [`linearInterpolate(bufferB:interpolationConstant:destination:)`](./vimage/pixelbuffer/linearinterpolate%28bufferb,interpolationconstant,destination%29.md) function calls the vDSP function [`vDSP_vintb`](./vdsp_vintb.md) to calculate the linear interpolation between the current frame and the previous interpolated frame.
 
 The following code generates the temporal blur effect:
 
@@ -144,15 +146,15 @@ func applyTemporalBlur() {
 }
 ```
 
-##### Apply the Posterization Effect
+##### Apply the posterization effect
 
 The posterization effect reduces the continuous colors of an image to fewer tones. The effect produces results with regions of solid colors. The image below shows an example of the posterization effect:
 
-![A photograph of flowers with a reduced color palette.](/images/com.apple.accelerate/posterization.png)
+![A photograph of flowers with a reduced color palette.](https://developer.apple.com/tutorials/images/com.apple.accelerate/posterization.png)
 
-The sample generates the posterization effect using histogram specification. The code achieves the reduced color count by calculating and specifying a histogram that has a low bin count. For more information about histogram specification, see [`Specifying histograms with vImage`](specifying-histograms-with-vimage.md).
+The sample generates the posterization effect using histogram specification. The code achieves the reduced color count by calculating and specifying a histogram that has a low bin count. For more information about histogram specification, see [Specifying histograms with vImage](./specifying-histograms-with-vimage.md).
 
-The code populates a multiple-plane pixel buffer from the interleaved destination buffer. The multiple-plane pixel buffer contains three discrete planar buffers, and the [`vImage.PixelBuffer.Histogram888`](vimage/pixelbuffer/histogram888.md) function returns the histogram for the individual red, green, and blue channels. Specifying a bin count of `4` returns a result that contains a maximum of `4 * 4 * 4` (`64`) colors.
+The code populates a multiple-plane pixel buffer from the interleaved destination buffer. The multiple-plane pixel buffer contains three discrete planar buffers, and the [`vImage.PixelBuffer.Histogram888`](./vimage/pixelbuffer/histogram888.md) function returns the histogram for the individual red, green, and blue channels. Specifying a bin count of `4` returns a result that contains a maximum of `4 * 4 * 4` (`64`) colors.
 
 The following code generates the posterization effect:
 
@@ -174,13 +176,13 @@ func applyPosterization() {
 }
 ```
 
-##### Apply the Color Threshold Effect
+##### Apply the color threshold effect
 
 The color threshold effect is similar to the posterization effect, but reduces each color channel to a single-bit, so each color is either `0` or `1`. The image below shows the color threshold effect:
 
-![A photograph of flowers with a palette of eight colors.](/images/com.apple.accelerate/colorThreshold.png)
+![A photograph of flowers with a palette of eight colors.](https://developer.apple.com/tutorials/images/com.apple.accelerate/colorThreshold.png)
 
-The [`colorThreshold(_:destination:)`](vimage/pixelbuffer/colorthreshold(_:destination:).md) function sets pixel values equal to or greater than the specified threshold to `1` and other pixel values to `0`. Because the function works over the individual red, green, and blue values, the result contains a maximum of `2 * 2 * 2` (`8`) colors. The effect is identical to the posterization effect with `binCount` set to `2`.
+The [`colorThreshold(_:destination:)`](./vimage/pixelbuffer/colorthreshold%28_,destination%29.md) function sets pixel values equal to or greater than the specified threshold to `1` and other pixel values to `0`. Because the function works over the individual red, green, and blue values, the result contains a maximum of `2 * 2 * 2` (`8`) colors. The effect is identical to the posterization effect with `binCount` set to `2`.
 
 The following code generates the color threshold effect:
 
@@ -197,13 +199,14 @@ func applyColorThreshold() {
 
 ## See Also
 
-- [Integrating vImage pixel buffers into a Core Image workflow](integrating-vimage-pixel-buffers-into-a-core-image-workflow.md)
+### Core Video Interoperation
+- [Integrating vImage pixel buffers into a Core Image workflow](./integrating-vimage-pixel-buffers-into-a-core-image-workflow.md)
   Share image data between Core Video pixel buffers and vImage buffers to integrate vImage operations into a Core Image workflow.
-- [Applying vImage operations to video sample buffers](applying-vimage-operations-to-video-sample-buffers.md)
+- [Applying vImage operations to video sample buffers](./applying-vimage-operations-to-video-sample-buffers.md)
   Use the vImage convert-any-to-any functionality to perform real-time image processing of video frames streamed from your device’s camera.
-- [Improving the quality of quantized images with dithering](improving-the-quality-of-quantized-images-with-dithering.md)
+- [Improving the quality of quantized images with dithering](./improving-the-quality-of-quantized-images-with-dithering.md)
   Apply dithering to simulate colors that are unavailable in reduced bit depths.
-- [Core Video interoperability](core-video-interoperability.md)
+- [Core Video interoperability](./core-video-interoperability.md)
   Pass image data between Core Video and vImage.
 
 

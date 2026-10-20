@@ -1,21 +1,22 @@
 # SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint.Data](subscriptionpriceinlinecreate/relationships-data.dictionary/subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint.Data](./subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription price inline create.
 
 ## Properties
@@ -24,8 +25,9 @@ object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint
 
 ## See Also
 
-- [object SubscriptionPriceInlineCreate.Relationships.Subscription](subscriptionpriceinlinecreate/relationships-data.dictionary/subscription-data.dictionary.md)
-- [object SubscriptionPriceInlineCreate.Relationships.Territory](subscriptionpriceinlinecreate/relationships-data.dictionary/territory-data.dictionary.md)
+### Objects
+- [object SubscriptionPriceInlineCreate.Relationships.Subscription](./subscription-data.dictionary.md)
+- [object SubscriptionPriceInlineCreate.Relationships.Territory](./territory-data.dictionary.md)
 
 
 ---

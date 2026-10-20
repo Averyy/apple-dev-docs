@@ -1,14 +1,15 @@
 # io_async_ref_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef natural_t io_async_ref_t[8];
 ```
 

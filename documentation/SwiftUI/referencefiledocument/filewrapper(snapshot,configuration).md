@@ -2,16 +2,19 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Serializes a document snapshot to a file wrapper.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
 - visionOS 1.0+
+
+> **Deprecated**: Use Document protocol instead.
 
 ## Declaration
 
@@ -21,11 +24,11 @@ func fileWrapper(snapshot: Self.Snapshot, configuration: Self.WriteConfiguration
 
 #### Return Value
 
-The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) or an update of the one provided in the `configuration` input.
+The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](../../Foundation/filewrapper.md) or an update of the one provided in the `configuration` input.
 
 #### Discussion
 
-To store a document — for example, in response to a Save command — SwiftUI begins by calling the [`snapshot(contentType:)`](referencefiledocument/snapshot(contenttype:).md) method to get a copy of the document data in its current state. Then SwiftUI passes that snapshot to this method, where you serialize it and create or modify a file wrapper with the serialized data:
+To store a document — for example, in response to a Save command — SwiftUI begins by calling the [`snapshot(contentType:)`](./snapshot%28contenttype%29.md) method to get a copy of the document data in its current state. Then SwiftUI passes that snapshot to this method, where you serialize it and create or modify a file wrapper with the serialized data:
 
 ```swift
 func fileWrapper(snapshot: Snapshot, configuration: WriteConfiguration) throws -> FileWrapper {
@@ -45,9 +48,10 @@ SwiftUI disables document edits during the snapshot to ensure that the document�
 
 ## See Also
 
-- [static var writableContentTypes: [UTType]](referencefiledocument/writablecontenttypes.md)
+### Writing a document
+- [static var writableContentTypes: [UTType]](./writablecontenttypes.md)
   The file types that the document supports saving or exporting to.
-- [ReferenceFileDocument.WriteConfiguration](referencefiledocument/writeconfiguration.md)
+- [ReferenceFileDocument.WriteConfiguration](./writeconfiguration.md)
   The configuration for writing document contents.
 
 

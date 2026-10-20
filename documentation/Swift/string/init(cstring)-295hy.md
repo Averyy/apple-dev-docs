@@ -1,7 +1,8 @@
 # init(cString:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -11,6 +12,8 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: Use String(_ scalar: Unicode.Scalar)
 
 ## Declaration
 

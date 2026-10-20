@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction from a single input.
 
@@ -18,6 +19,12 @@ Performs a prediction from a single input.
 
 ```swift
 func prediction(from input: Self.Input) async throws -> Self.Output
+```
+
+**Other overloads**:
+
+```swift
+func prediction<S>(from input: S) async throws -> [Self.Output] where S : Sequence, Self.Input == S.Element
 ```
 
 #### Return Value

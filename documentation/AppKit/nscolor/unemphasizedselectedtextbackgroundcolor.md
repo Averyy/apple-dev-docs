@@ -1,7 +1,8 @@
 # unemphasizedSelectedTextBackgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for the text background in an unemphasized context.
 
@@ -14,25 +15,30 @@ The color to use for the text background in an unemphasized context.
 class var unemphasizedSelectedTextBackgroundColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * unemphasizedSelectedTextBackgroundColor;
+```
+
 #### Discussion
 
 Use this color when the window containing the text is not key, or when the view containing the text does not have key focus.
 
 ## See Also
 
-- [class var textColor: NSColor](nscolor/textcolor.md)
+### Text colors
+- [class var textColor: NSColor](./textcolor.md)
   The color to use for text.
-- [class var placeholderTextColor: NSColor](nscolor/placeholdertextcolor.md)
+- [class var placeholderTextColor: NSColor](./placeholdertextcolor.md)
   The color to use for placeholder text in controls or text views.
-- [class var selectedTextColor: NSColor](nscolor/selectedtextcolor.md)
+- [class var selectedTextColor: NSColor](./selectedtextcolor.md)
   The color to use for selected text.
-- [class var textBackgroundColor: NSColor](nscolor/textbackgroundcolor.md)
+- [class var textBackgroundColor: NSColor](./textbackgroundcolor.md)
   The color to use for the background area behind text.
-- [class var selectedTextBackgroundColor: NSColor](nscolor/selectedtextbackgroundcolor.md)
+- [class var selectedTextBackgroundColor: NSColor](./selectedtextbackgroundcolor.md)
   The color to use for the background of selected text.
-- [class var keyboardFocusIndicatorColor: NSColor](nscolor/keyboardfocusindicatorcolor.md)
+- [class var keyboardFocusIndicatorColor: NSColor](./keyboardfocusindicatorcolor.md)
   The color to use for the keyboard focus ring around controls.
-- [class var unemphasizedSelectedTextColor: NSColor](nscolor/unemphasizedselectedtextcolor.md)
+- [class var unemphasizedSelectedTextColor: NSColor](./unemphasizedselectedtextcolor.md)
   The color to use for selected text in an unemphasized context.
 
 

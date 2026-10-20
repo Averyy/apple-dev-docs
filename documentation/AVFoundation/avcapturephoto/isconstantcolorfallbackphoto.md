@@ -1,7 +1,8 @@
 # isConstantColorFallbackPhoto
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that Indicates whether this photo is a fallback photo for a constant color capture.
 
@@ -18,11 +19,16 @@ A Boolean value that Indicates whether this photo is a fallback photo for a cons
 var isConstantColorFallbackPhoto: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isConstantColorFallbackPhoto) BOOL constantColorFallbackPhoto;
+```
+
 ## See Also
 
-- [var constantColorCenterWeightedMeanConfidenceLevel: Float](avcapturephoto/constantcolorcenterweightedmeanconfidencelevel.md)
+### Enabling constant color
+- [var constantColorCenterWeightedMeanConfidenceLevel: Float](./constantcolorcenterweightedmeanconfidencelevel.md)
   A score that summarizes the overall confidence level of a constant color photo.
-- [var constantColorConfidenceMap: CVPixelBuffer?](avcapturephoto/constantcolorconfidencemap.md)
+- [var constantColorConfidenceMap: CVPixelBuffer?](./constantcolorconfidencemap.md)
   A pixel buffer where each pixel value indicates how fully the system achieves the constant color effect in the corresponding region of the photo.
 
 

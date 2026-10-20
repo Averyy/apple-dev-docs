@@ -1,17 +1,20 @@
 # connectMIDI(_:to:format:block:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Establishes a MIDI-only connection between a source node and multiple destination nodes.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 16.0
+- iPadOS 13.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.14+ - Deprecated in 13.0
+- tvOS 12.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`connectMIDI(_:to:format:eventListBlock:)`](./connectmidi%28_,to,format,eventlistblock%29-7qtd5.md) instead.
 
 ## Declaration
 
@@ -19,30 +22,35 @@ Establishes a MIDI-only connection between a source node and multiple destinatio
 func connectMIDI(_ sourceNode: AVAudioNode, to destinationNodes: [AVAudioNode], format: AVAudioFormat?, block tapBlock: AUMIDIOutputEventBlock? = nil)
 ```
 
+```objc
+- (void) connectMIDI:(AVAudioNode *) sourceNode toNodes:(NSArray<AVAudioNode *> *) destinationNodes format:(AVAudioFormat *) format block:(AUMIDIOutputEventBlock) tapBlock;
+```
+
 ## Parameters
 
 - `sourceNode`: The source node.
-- `destinationNodes`: An array of [`AVAudioNode`](avaudionode.md) objects that specify destination nodes.
+- `destinationNodes`: An array of [`AVAudioNode`](../avaudionode.md) objects that specify destination nodes.
 - `format`: If not `NULL`, the engine uses this value for the format of the source audio node’s output bus. In all cases, the format of the source node’s output bus has to match with the destination node’s output bus format.
-- `tapBlock`: If not `NULL`, the source node’s [`AUMIDIOutputEventBlock`](https://developer.apple.com/documentation/audiotoolbox/aumidioutputeventblock) calls this block on the real-time thread. The host can tap the MIDI data of the source node through this block.
+- `tapBlock`: If not `NULL`, the source node’s [`AUMIDIOutputEventBlock`](../../AudioToolbox/aumidioutputeventblock.md) calls this block on the real-time thread. The host can tap the MIDI data of the source node through this block.
 
 ## See Also
 
-- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-8tmk8.md)
-- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-35k1c.md)
-- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-73cd1.md)
+### Managing MIDI nodes
+- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](./connectmidi%28_,to,format,eventlistprovider%29-8tmk8.md)
+- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](./connectmidi%28_,to,format,eventlistprovider%29-35k1c.md)
+- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](./connectmidi%28_,to,format,eventlistblock%29-73cd1.md)
   Establishes a MIDI connection between two nodes.
-- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-7qtd5.md)
+- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](./connectmidi%28_,to,format,eventlistblock%29-7qtd5.md)
   Establishes a MIDI connection between a source node and multiple destination nodes.
-- [func disconnectMIDI(AVAudioNode, from: AVAudioNode)](avaudioengine/disconnectmidi(_:from:)-1kssy.md)
+- [func disconnectMIDI(AVAudioNode, from: AVAudioNode)](./disconnectmidi%28_,from%29-1kssy.md)
   Removes a MIDI connection between two nodes.
-- [func disconnectMIDI(AVAudioNode, from: [AVAudioNode])](avaudioengine/disconnectmidi(_:from:)-7oaab.md)
+- [func disconnectMIDI(AVAudioNode, from: [AVAudioNode])](./disconnectmidi%28_,from%29-7oaab.md)
   Removes a MIDI connection between one source node and multiple destination nodes.
-- [func disconnectMIDIInput(AVAudioNode)](avaudioengine/disconnectmidiinput(_:).md)
+- [func disconnectMIDIInput(AVAudioNode)](./disconnectmidiinput%28_%29.md)
   Disconnects all input MIDI connections from a node.
-- [func disconnectMIDIOutput(AVAudioNode)](avaudioengine/disconnectmidioutput(_:).md)
+- [func disconnectMIDIOutput(AVAudioNode)](./disconnectmidioutput%28_%29.md)
   Disconnects all output MIDI connections from a node.
-- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, block: AUMIDIOutputEventBlock?)](avaudioengine/connectmidi(_:to:format:block:)-3bc13.md)
+- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, block: AUMIDIOutputEventBlock?)](./connectmidi%28_,to,format,block%29-3bc13.md)
   Establishes a MIDI-only connection between two nodes.
 
 

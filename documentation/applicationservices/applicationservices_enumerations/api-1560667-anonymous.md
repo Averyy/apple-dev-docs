@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var cmCameraDeviceClass: Int](cmcameradeviceclass.md)
-- [var cmDisplayDeviceClass: Int](cmdisplaydeviceclass.md)
-- [var cmPrinterDeviceClass: Int](cmprinterdeviceclass.md)
-- [var cmProofDeviceClass: Int](cmproofdeviceclass.md)
-- [var cmScannerDeviceClass: Int](cmscannerdeviceclass.md)
+- [var cmCameraDeviceClass: Int](../cmcameradeviceclass.md)
+- [var cmDisplayDeviceClass: Int](../cmdisplaydeviceclass.md)
+- [var cmPrinterDeviceClass: Int](../cmprinterdeviceclass.md)
+- [var cmProofDeviceClass: Int](../cmproofdeviceclass.md)
+- [var cmScannerDeviceClass: Int](../cmscannerdeviceclass.md)
 
 
 ---

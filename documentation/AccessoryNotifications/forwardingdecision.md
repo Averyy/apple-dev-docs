@@ -1,7 +1,8 @@
 # ForwardingDecision
 
 **Framework**: Accessory Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible decisions in response to the notification forwarding permission prompt.
 
@@ -16,34 +17,35 @@ enum ForwardingDecision
 
 #### Overview
 
-When your app calls [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(for:).md), the system prompts the person to choose which apps can forward notifications to your accessory.
+When your app calls [`requestForwarding(for:)`](./accessorynotificationcenter/requestforwarding%28for%29.md), the system prompts the person to choose which apps can forward notifications to your accessory.
 
 ## Topics
 
 ### Identifying the decision
-- [ForwardingDecision.allow](forwardingdecision/allow.md)
+- [ForwardingDecision.allow](./forwardingdecision/allow.md)
   An option that indicates the person allows notifications from all applicable apps.
-- [ForwardingDecision.deny](forwardingdecision/deny.md)
+- [ForwardingDecision.deny](./forwardingdecision/deny.md)
   An option that indicates the person doesn’t allow notification forwarding.
-- [ForwardingDecision.limited](forwardingdecision/limited.md)
+- [ForwardingDecision.limited](./forwardingdecision/limited.md)
   An option that indicates the person allows notifications from a selected subset of apps.
-- [ForwardingDecision.undetermined](forwardingdecision/undetermined.md)
+- [ForwardingDecision.undetermined](./forwardingdecision/undetermined.md)
   An option that indicates the person dismissed the prompt without responding.
 ### Accessing the decision’s description
-- [var description: String](forwardingdecision/description.md)
+- [var description: String](./forwardingdecision/description.md)
   A textual representation of the decision.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class AccessoryNotificationCenter](accessorynotificationcenter.md)
+### Authorization
+- [class AccessoryNotificationCenter](./accessorynotificationcenter.md)
   A class that asks a person for permission to forward notifications.
 
 

@@ -1,17 +1,22 @@
 # setupPanel(_:deviceCouldBeTarget:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to determine if device can be used as a target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setupPanel(_ aPanel: DRSetupPanel!, deviceCouldBeTarget device: DRDevice!) -> Bool
+```
+
+```objc
+- (BOOL) setupPanel:(DRSetupPanel *) aPanel deviceCouldBeTarget:(DRDevice *) device;
 ```
 
 #### Return Value

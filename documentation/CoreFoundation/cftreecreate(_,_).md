@@ -1,18 +1,19 @@
 # CFTreeCreate(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new CFTree object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,14 +21,18 @@ Creates a new CFTree object.
 func CFTreeCreate(_ allocator: CFAllocator!, _ context: UnsafePointer<CFTreeContext>!) -> CFTree!
 ```
 
+```c
+extern CFTreeRefCFTreeCreate(CFAllocatorRef allocator, const CFTreeContext *context);
+```
+
 #### Return Value
 
-A new CFTree object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new CFTree object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new tree. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
-- `context`: The [`CFTreeContext`](cftreecontext.md) structure to be copied and used as the context of the new tree. The information pointer will be retained by the tree if a retain function is provided. If this value is not a valid C pointer to a [`CFTreeContext`](cftreecontext.md) structure-sized block of storage, the result is undefined. If the version number of the storage is not a valid [`CFTreeContext`](cftreecontext.md) version number, the result is undefined.
+- `context`: The [`CFTreeContext`](./cftreecontext.md) structure to be copied and used as the context of the new tree. The information pointer will be retained by the tree if a retain function is provided. If this value is not a valid C pointer to a [`CFTreeContext`](./cftreecontext.md) structure-sized block of storage, the result is undefined. If the version number of the storage is not a valid [`CFTreeContext`](./cftreecontext.md) version number, the result is undefined.
 
 
 ---

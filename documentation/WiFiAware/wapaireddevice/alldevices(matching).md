@@ -1,7 +1,8 @@
 # allDevices(matching:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides a snapshot of all the paired devices known to your app.
 
@@ -18,11 +19,11 @@ static func allDevices(matching: Predicate<WAPairedDevice>) -> WAPairedDevice.De
 
 #### Return Value
 
-A new [`WAPairedDevice.DevicesSequence`](wapaireddevice/devicessequence.md) that returns [`WAPairedDevice.Devices`](wapaireddevice/devices.md) elements holding a snapshot of the currently paired devices known to your app.
+A new [`WAPairedDevice.DevicesSequence`](./devicessequence.md) that returns [`WAPairedDevice.Devices`](./devices.md) elements holding a snapshot of the currently paired devices known to your app.
 
 #### Discussion
 
-This method gets an `AsyncSequence` that provides snapshots of all [`WAPairedDevice.Devices`](wapaireddevice/devices.md) currently paired and known to your app that match the provided predicate, and provides updates when the snapshot of [`WAPairedDevice.Devices`](wapaireddevice/devices.md) matching that predicate changes. The sequence outputs an empty dictionary if there are no paired devices matching the predicate that are known to your app, or if a person removes all of your app’s matching paired devices.
+This method gets an `AsyncSequence` that provides snapshots of all [`WAPairedDevice.Devices`](./devices.md) currently paired and known to your app that match the provided predicate, and provides updates when the snapshot of [`WAPairedDevice.Devices`](./devices.md) matching that predicate changes. The sequence outputs an empty dictionary if there are no paired devices matching the predicate that are known to your app, or if a person removes all of your app’s matching paired devices.
 
 You can select the set of `Devices` matching a filter from this property using the code below:
 
@@ -44,11 +45,12 @@ for try await devices in WAPairedDevice.allDevices(matching:filter) {
 
 ## See Also
 
-- [WAPairedDevice.Devices](wapaireddevice/devices.md)
+### Selecting from your app’s paired devices
+- [WAPairedDevice.Devices](./devices.md)
   A dictionary holding a snapshot of currently paired devices accessible and known to your app.
-- [static var allDevices: WAPairedDevice.DevicesSequence](wapaireddevice/alldevices.md)
+- [static var allDevices: WAPairedDevice.DevicesSequence](./alldevices.md)
   Provides a snapshot of all the paired devices known to your app.
-- [WAPairedDevice.DevicesSequence](wapaireddevice/devicessequence.md)
+- [WAPairedDevice.DevicesSequence](./devicessequence.md)
   A sequence that vends updates to a paired device list, as the list changes.
 
 

@@ -1,15 +1,17 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The number of bytes in this quality atom.
 
 ## See Also
 
-- [Type](quality_atom/type.md)
+### Data fields
+- [Type](./type.md)
   The type of this atom.
-- [Quality](quality_atom/quality.md)
+- [Quality](./quality.md)
   The relative quality of the movie, expressed as a 32-bit integer.
 
 

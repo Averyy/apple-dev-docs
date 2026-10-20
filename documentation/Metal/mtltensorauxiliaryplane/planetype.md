@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The type of information this plane stores.
@@ -18,6 +19,10 @@ The type of information this plane stores.
 
 ```swift
 var planeType: MTLTensorPlaneType { get }
+```
+
+```objc
+@property (readonly) MTLTensorPlaneType planeType;
 ```
 
 

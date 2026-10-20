@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates the system is about to insert the final dictation result.
@@ -16,6 +17,10 @@ Indicates the system is about to insert the final dictation result.
 
 ```swift
 func willInsertFinalDictationResult()
+```
+
+```objc
+- (void) willInsertFinalDictationResult;
 ```
 
 

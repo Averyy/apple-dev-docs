@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly instantiated content type.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 

@@ -1,18 +1,19 @@
 # kCFBundleInfoDictionaryVersionKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of the information property list format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The version of the information property list format.
 let kCFBundleInfoDictionaryVersionKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFBundleInfoDictionaryVersionKey;
+```
+
 ## See Also
 
-- [let kCFBundleExecutableKey: CFString!](kcfbundleexecutablekey.md)
+### Constants
+- [let kCFBundleExecutableKey: CFString!](./kcfbundleexecutablekey.md)
   The name of the executable in this bundle (if any).
-- [let kCFBundleIdentifierKey: CFString!](kcfbundleidentifierkey.md)
+- [let kCFBundleIdentifierKey: CFString!](./kcfbundleidentifierkey.md)
   The bundle identifier.
-- [let kCFBundleVersionKey: CFString!](kcfbundleversionkey.md)
+- [let kCFBundleVersionKey: CFString!](./kcfbundleversionkey.md)
   The version number of the bundle.
-- [let kCFBundleDevelopmentRegionKey: CFString!](kcfbundledevelopmentregionkey.md)
+- [let kCFBundleDevelopmentRegionKey: CFString!](./kcfbundledevelopmentregionkey.md)
   The name of the development language of the bundle.
-- [let kCFBundleNameKey: CFString!](kcfbundlenamekey.md)
+- [let kCFBundleNameKey: CFString!](./kcfbundlenamekey.md)
   The human-readable name of the bundle.
-- [let kCFBundleLocalizationsKey: CFString!](kcfbundlelocalizationskey.md)
+- [let kCFBundleLocalizationsKey: CFString!](./kcfbundlelocalizationskey.md)
   Allows an unbundled application that handles localization itself to specify which localizations it has available.
 
 

@@ -1,7 +1,8 @@
 # kSecCSDoNotValidateResources
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Do not validate the presence and contents of all bundle resources (if any).
 
@@ -13,6 +14,10 @@ Do not validate the presence and contents of all bundle resources (if any).
 
 ```swift
 var kSecCSDoNotValidateResources: UInt32 { get }
+```
+
+```c
+kSecCSDoNotValidateResources
 ```
 
 #### Discussion

@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kIOCopybackCache: Int](kiocopybackcache.md)
-- [var kIOCopybackInnerCache: Int](kiocopybackinnercache.md)
-- [var kIODefaultCache: Int](kiodefaultcache.md)
-- [var kIOInhibitCache: Int](kioinhibitcache.md)
-- [var kIOWriteCombineCache: Int](kiowritecombinecache.md)
-- [var kIOWriteThruCache: Int](kiowritethrucache.md)
+- [var kIOCopybackCache: Int](../kiocopybackcache.md)
+- [var kIOCopybackInnerCache: Int](../kiocopybackinnercache.md)
+- [var kIODefaultCache: Int](../kiodefaultcache.md)
+- [var kIOInhibitCache: Int](../kioinhibitcache.md)
+- [var kIOWriteCombineCache: Int](../kiowritecombinecache.md)
+- [var kIOWriteThruCache: Int](../kiowritethrucache.md)
 
 
 ---

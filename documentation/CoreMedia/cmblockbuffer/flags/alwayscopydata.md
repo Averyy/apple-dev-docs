@@ -1,7 +1,8 @@
 # alwaysCopyData
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ static let alwaysCopyData: CMBlockBuffer.Flags
 
 ## See Also
 
-- [static let assureMemoryNow: CMBlockBuffer.Flags](cmblockbuffer/flags/assurememorynow.md)
-- [static let dontOptimizeDepth: CMBlockBuffer.Flags](cmblockbuffer/flags/dontoptimizedepth.md)
-- [static let permitEmptyReference: CMBlockBuffer.Flags](cmblockbuffer/flags/permitemptyreference.md)
+### Type Properties
+- [static let assureMemoryNow: CMBlockBuffer.Flags](./assurememorynow.md)
+- [static let dontOptimizeDepth: CMBlockBuffer.Flags](./dontoptimizedepth.md)
+- [static let permitEmptyReference: CMBlockBuffer.Flags](./permitemptyreference.md)
 
 
 ---

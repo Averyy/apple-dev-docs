@@ -1,23 +1,44 @@
 # write(_:withSceneDocumentURL:originalImageURL:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to export an image attached to a scene.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+optional func write(_ image: UIImage, withSceneDocumentURL documentURL: URL, originalImageURL: URL?) -> URL?
+```
+
+*macOS*
+
 ```swift
 optional func write(_ image: NSImage, withSceneDocumentURL documentURL: URL, originalImageURL: URL?) -> URL?
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (NSURL *) writeImage:(UIImage *) image withSceneDocumentURL:(NSURL *) documentURL originalImageURL:(NSURL *) originalImageURL;
+```
+
+*macOS*
+
+```objc
+- (NSURL *) writeImage:(NSImage *) image withSceneDocumentURL:(NSURL *) documentURL originalImageURL:(NSURL *) originalImageURL;
 ```
 
 #### Return Value

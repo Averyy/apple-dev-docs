@@ -1,7 +1,8 @@
 # NEURLFilterControlProvider
 
 **Framework**: Network Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines an object that’s responsible for fetching pre-filter data.
 
@@ -19,33 +20,34 @@ protocol NEURLFilterControlProvider : AppExtension
 
 #### Overview
 
-Create a class that conforms to this protocol in your app extension, then provide the extension’s bundle identifier to the [`NEURLFilterManager`](neurlfiltermanager.md) in [`setConfiguration(pirServerURL:pirPrivacyPassIssuerURL:pirAuthenticationToken:controlProviderBundleIdentifier:)`](neurlfiltermanager/setconfiguration(pirserverurl:pirprivacypassissuerurl:pirauthenticationtoken:controlproviderbundleidentifier:).md).
+Create a class that conforms to this protocol in your app extension, then provide the extension’s bundle identifier to the [`NEURLFilterManager`](./neurlfiltermanager.md) in [`setConfiguration(pirServerURL:pirPrivacyPassIssuerURL:pirAuthenticationToken:controlProviderBundleIdentifier:)`](./neurlfiltermanager/setconfiguration%28pirserverurl,pirprivacypassissuerurl,pirauthenticationtoken,controlproviderbundleidentifier%29.md).
 
 ## Topics
 
 ### Starting and stopping the provider
-- [func start() async throws](neurlfiltercontrolprovider/start.md)
+- [func start() async throws](./neurlfiltercontrolprovider/start%28%29.md)
   Prepares the filter to start, in response to a call from the framework.
-- [func stop(reason: NEProviderStopReason) async throws](neurlfiltercontrolprovider/stop(reason:).md)
+- [func stop(reason: NEProviderStopReason) async throws](./neurlfiltercontrolprovider/stop%28reason%29.md)
   Prepares the filter to stop, in response to a call from the framework.
 ### Fetching a prefilter
-- [func fetchPrefilter(existingPrefilterTag: String?) async throws -> NEURLFilterPrefilter?](neurlfiltercontrolprovider/fetchprefilter(existingprefiltertag:).md)
+- [func fetchPrefilter(existingPrefilterTag: String?) async throws -> NEURLFilterPrefilter?](./neurlfiltercontrolprovider/fetchprefilter%28existingprefiltertag%29.md)
   Fetches prefilter data, in response to a call from the framework.
-- [struct NEURLFilterPrefilter](neurlfilterprefilter.md)
+- [struct NEURLFilterPrefilter](./neurlfilterprefilter.md)
   A structure containing a prefilter returned by a filter control provider.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [class NEURLFilterManager](neurlfiltermanager.md)
+### URL filters
+- [class NEURLFilterManager](./neurlfiltermanager.md)
   A class you use to configure and control a URL filter.
-- [class NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
+- [class NEURLFilterControlProviderConfiguration](./neurlfiltercontrolproviderconfiguration.md)
   A class that defines app extension configurations for the URL Filter control provider app extension.
-- [class NEURLFilter](neurlfilter.md)
+- [class NEURLFilter](./neurlfilter.md)
   A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
 
 

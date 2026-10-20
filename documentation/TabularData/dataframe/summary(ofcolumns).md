@@ -1,7 +1,8 @@
 # summary(ofColumns:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame that summarizes the columns you select by index.
 
@@ -26,11 +27,12 @@ func summary(ofColumns columnIndices: Int...) -> DataFrame
 
 ## See Also
 
-- [func summary() -> DataFrame](dataframe/summary.md)
+### Summarizing a Data Frame
+- [func summary() -> DataFrame](./summary%28%29.md)
   Generates a data frame that summarizes the columns of the data frame.
-- [func summary(of: String...) -> DataFrame](dataframe/summary(of:).md)
+- [func summary(of: String...) -> DataFrame](./summary%28of%29.md)
   Generates a data frame that summarizes the columns you select by name.
-- [enum SummaryColumnIDs](summarycolumnids.md)
+- [enum SummaryColumnIDs](../summarycolumnids.md)
   The summary data frame column identifiers.
 
 

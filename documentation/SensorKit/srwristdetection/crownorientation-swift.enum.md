@@ -1,7 +1,8 @@
 # SRWristDetection.CrownOrientation
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Directions the Digital Crown can face with respect to the wearer.
 
@@ -16,39 +17,44 @@ Directions the Digital Crown can face with respect to the wearer.
 enum CrownOrientation
 ```
 
+```c
+enum SRCrownOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Orientations
-- [SRWristDetection.CrownOrientation.left](srwristdetection/crownorientation-swift.enum/left.md)
+- [SRWristDetection.CrownOrientation.left](./crownorientation-swift.enum/left.md)
   Indicates that the Digital Crown faces to the left with respect to the wearer.
-- [SRWristDetection.CrownOrientation.right](srwristdetection/crownorientation-swift.enum/right.md)
+- [SRWristDetection.CrownOrientation.right](./crownorientation-swift.enum/right.md)
   Indicates that the Digital Crown faces to the right with respect to the wearer.
 ### Initializers
-- [init?(rawValue: Int)](srwristdetection/crownorientation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./crownorientation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var crownOrientation: SRWristDetection.CrownOrientation](srwristdetection/crownorientation-swift.property.md)
+### Inspecting Watch Configuration
+- [var crownOrientation: SRWristDetection.CrownOrientation](./crownorientation-swift.property.md)
   A value that indicates the direction the Digital Crown faces with respect to the user.
-- [var onWrist: Bool](srwristdetection/onwrist.md)
+- [var onWrist: Bool](./onwrist.md)
   A value that indicates whether the watch is on the user’s wrist.
-- [var onWristDate: Date?](srwristdetection/onwristdate.md)
+- [var onWristDate: Date?](./onwristdate.md)
   The date and time that the user puts their Apple Watch on their wrist.
-- [var offWristDate: Date?](srwristdetection/offwristdate.md)
+- [var offWristDate: Date?](./offwristdate.md)
   The date and time that the user takes their Apple Watch off their wrist.
-- [var wristLocation: SRWristDetection.WristLocation](srwristdetection/wristlocation-swift.property.md)
+- [var wristLocation: SRWristDetection.WristLocation](./wristlocation-swift.property.md)
   A value that indicates the wrist where the user wears the watch.
-- [SRWristDetection.WristLocation](srwristdetection/wristlocation-swift.enum.md)
+- [SRWristDetection.WristLocation](./wristlocation-swift.enum.md)
   Preferences for where a user wears a watch.
 
 

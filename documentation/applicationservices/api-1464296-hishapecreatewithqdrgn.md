@@ -1,7 +1,8 @@
 # HIShapeCreateWithQDRgn(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateWithQDRgn(_ inRgn: RgnHandle!) -> Unmanaged<HIShape>!
+```
+
+```c
+HIShapeRef HIShapeCreateWithQDRgn(RgnHandle inRgn);
 ```
 
 

@@ -1,15 +1,17 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
 ## See Also
 
-- [Size](track_reference_type_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this track reference type atom.
-- [Track IDs](track_reference_type_atom/track_ids.md)
+- [Track IDs](./track_ids.md)
   A list of track ID values (32-bit integers) specifying the related tracks.
 
 

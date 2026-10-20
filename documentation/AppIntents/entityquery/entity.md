@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The entity type that this query knows how to resolve.
@@ -12,7 +13,7 @@ The entity type that this query knows how to resolve.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ associatedtype Entity : AppEntity = Self.Result.Result.ValueType where Self.Enti
 
 ## See Also
 
-- [func entities(for: [Self.Entity.ID]) async throws -> [Self.Entity]](entityquery/entities(for:).md)
+### Searching for entities
+- [func entities(for: [Self.Entity.ID]) async throws -> [Self.Entity]](./entities%28for%29.md)
   Retrieves instances by identifier.
 
 

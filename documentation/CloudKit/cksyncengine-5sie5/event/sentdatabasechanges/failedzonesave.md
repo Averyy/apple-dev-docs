@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes an unsuccessful attempt to modify a single record zone.
 
@@ -11,7 +12,7 @@ A type that describes an unsuccessful attempt to modify a single record zone.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,31 +24,32 @@ struct FailedZoneSave
 ## Topics
 
 ### Accessing the record zone
-- [let zone: CKRecordZone](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesave/zone.md)
+- [let zone: CKRecordZone](./failedzonesave/zone.md)
   The record zone that CloudKit is unable to modify.
 ### Accessing the error
-- [let error: CKError](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesave/error.md)
+- [let error: CKError](./failedzonesave/error.md)
   An error that describes the reason for the unsuccessful attempt to modify the associated record zone.
 ### Debugging the type
-- [var description: String](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesave/description.md)
+- [var description: String](./failedzonesave/description.md)
   A textual description of the type that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesave/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./failedzonesave/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../../Swift/customstringconvertible.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let failedZoneDeletes: [CKRecordZone.ID : CKError]](cksyncengine-5sie5/event/sentdatabasechanges/failedzonedeletes.md)
+### Accessing failed changes
+- [let failedZoneDeletes: [CKRecordZone.ID : CKError]](./failedzonedeletes.md)
   The unique identifiers of the record zones CloudKit is unable to delete, and the reasons why.
-- [let failedZoneSaves: [CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave]](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesaves.md)
+- [let failedZoneSaves: [CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave]](./failedzonesaves.md)
   The record zones that CloudKit is unable to modify.
 
 

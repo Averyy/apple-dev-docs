@@ -1,7 +1,8 @@
 # enqueue(_:postingStyle:coalesceMask:forModes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a notification to the notification queue with a specified posting style, criteria for coalescing, and run loop mode.
 
@@ -20,18 +21,25 @@ Adds a notification to the notification queue with a specified posting style, cr
 func enqueue(_ notification: Notification, postingStyle: NotificationQueue.PostingStyle, coalesceMask: NotificationQueue.NotificationCoalescing, forModes modes: [RunLoop.Mode]?)
 ```
 
+```objc
+- (void) enqueueNotification:(NSNotification *) notification postingStyle:(NSPostingStyle) postingStyle coalesceMask:(NSNotificationCoalescing) coalesceMask forModes:(NSArray<NSString *> *) modes;
+```
+
 ## Parameters
 
 - `notification`: The notification to add to the queue.
 - `postingStyle`: The posting style for the notification. The posting style indicates when the notification queue should post the notification to its notification center.
-- `coalesceMask`: A mask indicating what criteria to use when matching attributes of `notification` to attributes of notifications in the queue. The mask is created by combining any of the constants [`none`](notificationqueue/notificationcoalescing/none.md), [`onName`](notificationqueue/notificationcoalescing/onname.md), and [`onSender`](notificationqueue/notificationcoalescing/onsender.md).
-- `modes`: The list of modes the notification may be posted in. The notification queue will only post the notification to its notification center if the run loop is in one of the modes provided in the array. This parameter may be `nil`, in which case it defaults to [`default`](runloop/mode/default.md).
+- `coalesceMask`: A mask indicating what criteria to use when matching attributes of `notification` to attributes of notifications in the queue. The mask is created by combining any of the constants [`none`](./notificationcoalescing/none.md), [`onName`](./notificationcoalescing/onname.md), and [`onSender`](./notificationcoalescing/onsender.md).
+- `modes`: The list of modes the notification may be posted in. The notification queue will only post the notification to its notification center if the run loop is in one of the modes provided in the array.
+
+  This parameter may be `nil`, in which case it defaults to [`default`](../runloop/mode/default.md).
 
 ## See Also
 
-- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle)](notificationqueue/enqueue(_:postingstyle:).md)
+### Managing Notifications
+- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle)](./enqueue%28_,postingstyle%29.md)
   Adds a notification to the notification queue with a specified posting style.
-- [func dequeueNotifications(matching: Notification, coalesceMask: Int)](notificationqueue/dequeuenotifications(matching:coalescemask:).md)
+- [func dequeueNotifications(matching: Notification, coalesceMask: Int)](./dequeuenotifications%28matching,coalescemask%29.md)
   Removes all notifications from the queue that match a provided notification using provided matching criteria.
 
 

@@ -1,7 +1,8 @@
 # DropSession.Phase.ended(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drop has ended.
 

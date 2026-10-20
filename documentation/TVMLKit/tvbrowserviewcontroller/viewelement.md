@@ -1,7 +1,8 @@
 # viewElement
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view element that the full screen browser is constructed from.
 
@@ -14,9 +15,14 @@ The view element that the full screen browser is constructed from.
 var viewElement: TVViewElement { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) TVViewElement * viewElement;
+```
+
 ## See Also
 
-- [var centeredViewElement: TVViewElement](tvbrowserviewcontroller/centeredviewelement.md)
+### Accessing Browser Elements
+- [var centeredViewElement: TVViewElement](./centeredviewelement.md)
   The full screen browser item that is currently centered on the screen.
 
 

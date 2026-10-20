@@ -1,7 +1,8 @@
 # UIButton.Configuration.MacIdiomStyle.borderless
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The button has a borderless style.
 
@@ -10,7 +11,7 @@ The button has a borderless style.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ case borderless
 
 ## See Also
 
-- [UIButton.Configuration.MacIdiomStyle.automatic](uibutton/configuration-swift.struct/macidiomstyle-swift.enum/automatic.md)
+### Button styles
+- [UIButton.Configuration.MacIdiomStyle.automatic](./automatic.md)
   The button has a style that matches other content in the button configuration.
-- [UIButton.Configuration.MacIdiomStyle.bordered](uibutton/configuration-swift.struct/macidiomstyle-swift.enum/bordered.md)
+- [UIButton.Configuration.MacIdiomStyle.bordered](./bordered.md)
   The button has a bordered style.
-- [UIButton.Configuration.MacIdiomStyle.borderlessTinted](uibutton/configuration-swift.struct/macidiomstyle-swift.enum/borderlesstinted.md)
+- [UIButton.Configuration.MacIdiomStyle.borderlessTinted](./borderlesstinted.md)
   The button has a tinted, borderless style.
 
 

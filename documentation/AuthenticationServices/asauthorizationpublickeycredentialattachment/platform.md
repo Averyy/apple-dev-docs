@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialAttachment.platform
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.6+
@@ -16,9 +17,14 @@
 case platform
 ```
 
+```c
+ASAuthorizationPublicKeyCredentialAttachmentPlatform
+```
+
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialAttachment.crossPlatform](asauthorizationpublickeycredentialattachment/crossplatform.md)
+### Enumeration Cases
+- [ASAuthorizationPublicKeyCredentialAttachment.crossPlatform](./crossplatform.md)
 
 
 ---

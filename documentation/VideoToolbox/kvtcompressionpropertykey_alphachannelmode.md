@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_AlphaChannelMode
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -17,24 +18,29 @@
 let kVTCompressionPropertyKey_AlphaChannelMode: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_AlphaChannelMode;
+```
+
 ## Topics
 
 ### Modes
-- [let kVTAlphaChannelMode_StraightAlpha: CFString](kvtalphachannelmode_straightalpha.md)
-- [let kVTAlphaChannelMode_PremultipliedAlpha: CFString](kvtalphachannelmode_premultipliedalpha.md)
+- [let kVTAlphaChannelMode_StraightAlpha: CFString](./kvtalphachannelmode_straightalpha.md)
+- [let kVTAlphaChannelMode_PremultipliedAlpha: CFString](./kvtalphachannelmode_premultipliedalpha.md)
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_ColorPrimaries: CFString](kvtcompressionpropertykey_colorprimaries.md)
+### Color
+- [let kVTCompressionPropertyKey_ColorPrimaries: CFString](./kvtcompressionpropertykey_colorprimaries.md)
   The color primaries for compressed content.
-- [let kVTCompressionPropertyKey_ContentLightLevelInfo: CFString](kvtcompressionpropertykey_contentlightlevelinfo.md)
-- [let kVTCompressionPropertyKey_GammaLevel: CFString](kvtcompressionpropertykey_gammalevel.md)
-- [let kVTCompressionPropertyKey_ICCProfile: CFString](kvtcompressionpropertykey_iccprofile.md)
+- [let kVTCompressionPropertyKey_ContentLightLevelInfo: CFString](./kvtcompressionpropertykey_contentlightlevelinfo.md)
+- [let kVTCompressionPropertyKey_GammaLevel: CFString](./kvtcompressionpropertykey_gammalevel.md)
+- [let kVTCompressionPropertyKey_ICCProfile: CFString](./kvtcompressionpropertykey_iccprofile.md)
   The ICC profile for compressed content.
-- [let kVTCompressionPropertyKey_MasteringDisplayColorVolume: CFString](kvtcompressionpropertykey_masteringdisplaycolorvolume.md)
-- [let kVTCompressionPropertyKey_TransferFunction: CFString](kvtcompressionpropertykey_transferfunction.md)
+- [let kVTCompressionPropertyKey_MasteringDisplayColorVolume: CFString](./kvtcompressionpropertykey_masteringdisplaycolorvolume.md)
+- [let kVTCompressionPropertyKey_TransferFunction: CFString](./kvtcompressionpropertykey_transferfunction.md)
   The transfer function for compressed content.
-- [let kVTCompressionPropertyKey_YCbCrMatrix: CFString](kvtcompressionpropertykey_ycbcrmatrix.md)
+- [let kVTCompressionPropertyKey_YCbCrMatrix: CFString](./kvtcompressionpropertykey_ycbcrmatrix.md)
   The YCbCr matrix for compressed content.
 
 

@@ -1,7 +1,8 @@
 # rootNode
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The decision node at the root of the decision tree, representing the first attribute to test.
 
@@ -19,13 +20,18 @@ The decision node at the root of the decision tree, representing the first attri
 var rootNode: GKDecisionNode? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GKDecisionNode * rootNode;
+```
+
 #### Discussion
 
-To build a manually defined tree, use [`GKDecisionNode`](gkdecisionnode.md) methods on that object to create branches leading to child nodes that represent additional attributes to test or final actions.
+To build a manually defined tree, use [`GKDecisionNode`](../gkdecisionnode.md) methods on that object to create branches leading to child nodes that represent additional attributes to test or final actions.
 
 ## See Also
 
-- [init(attribute: any NSObjectProtocol)](gkdecisiontree/init(attribute:).md)
+### Creating a Manually Defined Decision Tree
+- [init(attribute: any NSObjectProtocol)](./init%28attribute%29.md)
   Creates a decision tree starting with the specified initial attribute to test.
 
 

@@ -1,7 +1,8 @@
 # ReorderDifference.Destination
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The destination value of a reordering operation.
 
@@ -23,31 +24,32 @@ struct Destination
 ## Topics
 
 ### Getting destination details
-- [var collectionID: CollectionID](reorderdifference/destination-swift.struct/collectionid.md)
+- [var collectionID: CollectionID](./destination-swift.struct/collectionid.md)
   The collection that contains the destination’s position.
-- [var position: ReorderDifference<ItemID, CollectionID>.Destination.Position](reorderdifference/destination-swift.struct/position-swift.property.md)
+- [var position: ReorderDifference<ItemID, CollectionID>.Destination.Position](./destination-swift.struct/position-swift.property.md)
   The identifier position in the collection where the sources should be moved to.
-- [ReorderDifference.Destination.Position](reorderdifference/destination-swift.struct/position-swift.enum.md)
+- [ReorderDifference.Destination.Position](./destination-swift.struct/position-swift.enum.md)
   The position within the destination collection.
 ### Initializers
-- [init(position: ReorderDifference<ItemID, CollectionID>.Destination.Position)](reorderdifference/destination-swift.struct/init(position:).md)
+- [init(position: ReorderDifference<ItemID, CollectionID>.Destination.Position)](./destination-swift.struct/init%28position%29.md)
   Initializes the destination value with the provided position and an instance of `ReorderableSingleCollectionIdentifier`.
-- [init(position: ReorderDifference<ItemID, CollectionID>.Destination.Position, collectionID: CollectionID)](reorderdifference/destination-swift.struct/init(position:collectionid:).md)
+- [init(position: ReorderDifference<ItemID, CollectionID>.Destination.Position, collectionID: CollectionID)](./destination-swift.struct/init%28position,collectionid%29.md)
   Initializes the destination value with the provided position and collectionID.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var destination: ReorderDifference<ItemID, CollectionID>.Destination](reorderdifference/destination-swift.property.md)
+### Getting changes
+- [var destination: ReorderDifference<ItemID, CollectionID>.Destination](./destination-swift.property.md)
   The end position of items to move during a reordering operation.
-- [var sources: [ItemID]](reorderdifference/sources.md)
+- [var sources: [ItemID]](./sources.md)
   The identifiers of items to move during a reordering operation.
 
 

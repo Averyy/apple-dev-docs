@@ -1,7 +1,8 @@
 # isSecureElementPassActivationAvailable
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports creating Secure Element passes.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the device supports creating Secure Eleme
 var isSecureElementPassActivationAvailable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isSecureElementPassActivationAvailable) BOOL secureElementPassActivationAvailable;
+```
+
 #### Discussion
 
-Secure Element pass activation requires a special entitlement that Apple provides. If the entitlement isn’t present, this property’s value is [`false`](https://developer.apple.com/documentation/swift/false).
+Secure Element pass activation requires a special entitlement that Apple provides. If the entitlement isn’t present, this property’s value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func activate(PKSecureElementPass, activationData: Data, completion: ((Bool, (any Error)?) -> Void)?)](pkpasslibrary/activate(_:activationdata:completion:).md)
+### Managing passes
+- [func activate(PKSecureElementPass, activationData: Data, completion: ((Bool, (any Error)?) -> Void)?)](./activate%28_,activationdata,completion%29.md)
   Activates a Secure Element pass using the specified data.
-- [func replacePass(with: PKPass) -> Bool](pkpasslibrary/replacepass(with:).md)
+- [func replacePass(with: PKPass) -> Bool](./replacepass%28with%29.md)
   Replaces a pass in the user’s pass library with the specified pass.
-- [func removePass(PKPass)](pkpasslibrary/removepass(_:).md)
+- [func removePass(PKPass)](./removepass%28_%29.md)
   Removes the pass from the user’s pass library.
 
 

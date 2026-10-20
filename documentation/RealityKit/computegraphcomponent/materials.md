@@ -1,7 +1,8 @@
 # materials
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material used to render each graph output, keyed by output node identifier.
 
@@ -20,7 +21,7 @@ var materials: [ComputeNodeGraph.NodeID : any Material] { get set }
 
 #### Discussion
 
-Assigning a [`resource`](computegraphcomponent/resource.md) initializes this dictionary from the materials the resource defines for its outputs. Assign a new value to replace them.
+Assigning a [`resource`](./resource.md) initializes this dictionary from the materials the resource defines for its outputs. Assign a new value to replace them.
 
 
 ---

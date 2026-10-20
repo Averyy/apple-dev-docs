@@ -1,7 +1,8 @@
 # contains(_:using:transform:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the specified point is interior to the path.
 
@@ -22,7 +23,7 @@ func contains(_ point: CGPoint, using rule: CGPathFillRule = .winding, transform
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point is interior to the path; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the point is interior to the path; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -31,22 +32,24 @@ A point is contained in a path if it would be inside the painted region when the
 ## Parameters
 
 - `point`: The point to check.
-- `rule`: The rule for determining which areas to treat as the interior of the path. Defaults to the [`CGPathFillRule.winding`](cgpathfillrule/winding.md) rule if not specified.
-- `transform`: An affine transform to apply to the point before checking for containment in the path. Defaults to the [`CGAffineTransformIdentity`](cgaffinetransformidentity.md) transform if not specified.
+- `rule`: The rule for determining which areas to treat as the interior of the path. Defaults to the [`CGPathFillRule.winding`](../cgpathfillrule/winding.md) rule if not specified.
+- `transform`: An affine transform to apply to the point before checking for containment in the path. Defaults to the [`CGAffineTransformIdentity`](../cgaffinetransformidentity.md) transform if not specified.
 
 ## See Also
 
-- [enum CGPathFillRule](cgpathfillrule.md)
-  Rules for determining which regions are interior to a path, used by the [`fillPath(using:)`](cgcontext/fillpath(using:).md) and [`clip(using:)`](cgcontext/clip(using:).md) methods.
-- [var boundingBox: CGRect](cgpath/boundingbox.md)
+### Related Documentation
+- [enum CGPathFillRule](../cgpathfillrule.md)
+  Rules for determining which regions are interior to a path, used by the [`fillPath(using:)`](../cgcontext/fillpath%28using%29.md) and [`clip(using:)`](../cgcontext/clip%28using%29.md) methods.
+### Examining a Graphics Path
+- [var boundingBox: CGRect](./boundingbox.md)
   Returns the bounding box containing all points in a graphics path.
-- [var boundingBoxOfPath: CGRect](cgpath/boundingboxofpath.md)
+- [var boundingBoxOfPath: CGRect](./boundingboxofpath.md)
   Returns the bounding box of a graphics path.
-- [var currentPoint: CGPoint](cgpath/currentpoint.md)
+- [var currentPoint: CGPoint](./currentpoint.md)
   Returns the current point in a graphics path.
-- [var isEmpty: Bool](cgpath/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   Indicates whether or not a graphics path is empty.
-- [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](cgpath/isrect(_:).md)
+- [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](./isrect%28_%29.md)
   Indicates whether or not a graphics path represents a rectangle.
 
 

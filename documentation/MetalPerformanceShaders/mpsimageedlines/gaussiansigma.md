@@ -1,7 +1,8 @@
 # gaussianSigma
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var gaussianSigma: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float gaussianSigma;
 ```
 
 

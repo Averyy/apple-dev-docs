@@ -1,14 +1,15 @@
 # throttle_thread_io_tier_above_metadata
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 int throttle_thread_io_tier_above_metadata(void);
 ```
 

@@ -1,7 +1,8 @@
 # paths
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of bezier paths, in annotation-space coordinates, that compose the annotation.
 
@@ -10,20 +11,41 @@ An array of bezier paths, in annotation-space coordinates, that compose the anno
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var paths: [UIBezierPath]? { get }
+```
+
+*macOS*
 
 ```swift
 var paths: [NSBezierPath]? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<UIBezierPath *> * paths;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSBezierPath *> * paths;
+```
+
 ## See Also
 
-- [func add(UIBezierPath)](pdfannotation/add(_:).md)
+### Configuring Ink Annotations
+- [func add(UIBezierPath)](./add%28_%29.md)
   Adds a bezier path to the ink annotation.
-- [func remove(UIBezierPath)](pdfannotation/remove(_:).md)
+- [func remove(UIBezierPath)](./remove%28_%29.md)
   Removes a bezier path from an ink annotation.
 
 

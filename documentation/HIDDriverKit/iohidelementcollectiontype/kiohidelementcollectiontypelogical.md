@@ -1,33 +1,35 @@
 # kIOHIDElementCollectionTypeLogical
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A collection in which the child elements form a composite data structure.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDElementCollectionTypeLogical
 ```
 
 ## See Also
 
-- [kIOHIDElementCollectionTypePhysical](iohidelementcollectiontype/kiohidelementcollectiontypephysical.md)
+### Getting the Element Collection Types
+- [kIOHIDElementCollectionTypePhysical](./kiohidelementcollectiontypephysical.md)
   A collection in which the child elements are data points collected at one geometric point.
-- [kIOHIDElementCollectionTypeApplication](iohidelementcollectiontype/kiohidelementcollectiontypeapplication.md)
+- [kIOHIDElementCollectionTypeApplication](./kiohidelementcollectiontypeapplication.md)
   A collection in which the child elements serve different purposes in a single device.
-- [kIOHIDElementCollectionTypeReport](iohidelementcollectiontype/kiohidelementcollectiontypereport.md)
+- [kIOHIDElementCollectionTypeReport](./kiohidelementcollectiontypereport.md)
   A collection that wraps all the other elements in a report.
-- [kIOHIDElementCollectionTypeNamedArray](iohidelementcollectiontype/kiohidelementcollectiontypenamedarray.md)
+- [kIOHIDElementCollectionTypeNamedArray](./kiohidelementcollectiontypenamedarray.md)
   A collection in which the elements are an array of selector usages.
-- [kIOHIDElementCollectionTypeUsageSwitch](iohidelementcollectiontype/kiohidelementcollectiontypeusageswitch.md)
+- [kIOHIDElementCollectionTypeUsageSwitch](./kiohidelementcollectiontypeusageswitch.md)
   A collection that modifies the meaning of the usage it contains.
-- [kIOHIDElementCollectionTypeUsageModifier](iohidelementcollectiontype/kiohidelementcollectiontypeusagemodifier.md)
+- [kIOHIDElementCollectionTypeUsageModifier](./kiohidelementcollectiontypeusagemodifier.md)
   A collection that modifies the meaning of the usage attached to the encompassing collection.
 
 

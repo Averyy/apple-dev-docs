@@ -1,7 +1,8 @@
 # sourceOptions
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The query source options to allow or deny Mail messages in the search.
 
@@ -14,13 +15,18 @@ The query source options to allow or deny Mail messages in the search.
 var sourceOptions: CSSearchQueryContext.SourceOptions { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CSSearchQuerySourceOptions sourceOptions;
+```
+
 ## See Also
 
-- [var fetchAttributes: [String]](cssearchquerycontext/fetchattributes.md)
+### Configuring search behavior
+- [var fetchAttributes: [String]](./fetchattributes.md)
   The attributes the system fetches for the searchable items.
-- [var keyboardLanguage: String?](cssearchquerycontext/keyboardlanguage.md)
+- [var keyboardLanguage: String?](./keyboardlanguage.md)
   The language used for the query.
-- [CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.struct.md)
+- [CSSearchQueryContext.SourceOptions](./sourceoptions-swift.struct.md)
   The query source options to allow or deny Mail messages in the search.
 
 

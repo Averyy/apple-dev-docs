@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBRel10](1643505-anonymous/kusbrel10.md)
-- [kUSBRel11](1643505-anonymous/kusbrel11.md)
-- [kUSBRel20](1643505-anonymous/kusbrel20.md)
-- [kUSBRel30](1643505-anonymous/kusbrel30.md)
+- [kUSBRel10](./api-1643505-anonymous/kusbrel10.md)
+- [kUSBRel11](./api-1643505-anonymous/kusbrel11.md)
+- [kUSBRel20](./api-1643505-anonymous/kusbrel20.md)
+- [kUSBRel30](./api-1643505-anonymous/kusbrel30.md)
 
 
 ---

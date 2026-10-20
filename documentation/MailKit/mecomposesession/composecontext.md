@@ -1,7 +1,8 @@
 # composeContext
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var composeContext: MEComposeContext { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) MEComposeContext * composeContext;
 ```
 
 

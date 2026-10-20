@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The acceleration measurement along the z-axis, in multiples of earth’s gravity.
 
@@ -19,11 +20,16 @@ The acceleration measurement along the z-axis, in multiples of earth’s gravity
 var z: Double
 ```
 
+```c
+double z;
+```
+
 ## See Also
 
-- [var x: Double](gcacceleration/x.md)
+### Getting Acceleration Values
+- [var x: Double](./x.md)
   The acceleration measurement along the x-axis, in multiples of earth’s gravity.
-- [var y: Double](gcacceleration/y.md)
+- [var y: Double](./y.md)
   The acceleration measurement along the y-axis, in multiples of earth’s gravity.
 
 

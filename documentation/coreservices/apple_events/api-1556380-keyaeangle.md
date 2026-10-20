@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var keyAEAngle: AEKeyword](keyaeangle.md)
-- [var keyAEArcAngle: AEKeyword](keyaearcangle.md)
+- [var keyAEAngle: AEKeyword](../keyaeangle.md)
+- [var keyAEArcAngle: AEKeyword](../keyaearcangle.md)
 
 
 ---

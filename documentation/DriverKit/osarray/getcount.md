@@ -1,19 +1,20 @@
 # getCount
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns count of members in array.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getCount() const;
 ```
 
@@ -23,11 +24,12 @@ Count of members in array.
 
 ## See Also
 
-- [getCapacity](osarray/getcapacity.md)
+### Inspecting an Array
+- [getCapacity](./getcapacity.md)
   Returns count of currently allocated capacity for members in array.
-- [ensureCapacity](osarray/ensurecapacity.md)
+- [ensureCapacity](./ensurecapacity.md)
   Allocates capacity for members in array.
-- [OSArrayGetCount](osarraygetcount.md)
+- [OSArrayGetCount](../osarraygetcount.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # receivedObsoleteContentKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An obsolete key response that was set on the previous content key request.
 
@@ -20,11 +21,16 @@ An obsolete key response that was set on the previous content key request.
 static let receivedObsoleteContentKey: AVContentKeyRequest.RetryReason
 ```
 
+```c
+extern AVContentKeyRequestRetryReason const AVContentKeyRequestRetryReasonReceivedObsoleteContentKey;
+```
+
 ## See Also
 
-- [static let receivedResponseWithExpiredLease: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/receivedresponsewithexpiredlease.md)
+### Reasons for content key request retry
+- [static let receivedResponseWithExpiredLease: AVContentKeyRequest.RetryReason](./receivedresponsewithexpiredlease.md)
   A key response with an expired lease that was set on the previous content key request.
-- [static let timedOut: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/timedout.md)
+- [static let timedOut: AVContentKeyRequest.RetryReason](./timedout.md)
   A key response that wasn’t set soon enough.
 
 

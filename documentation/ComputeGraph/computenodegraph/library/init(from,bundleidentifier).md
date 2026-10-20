@@ -1,7 +1,8 @@
 # init(from:bundleIdentifier:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a library by extracting node definitions from a Metal library.
 
@@ -12,7 +13,7 @@ Creates a library by extracting node definitions from a Metal library.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

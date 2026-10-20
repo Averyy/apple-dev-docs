@@ -1,7 +1,8 @@
 # init(capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSMutableString` object initialized with initial storage for a given number of characters,
 
@@ -18,6 +19,10 @@ Returns an `NSMutableString` object initialized with initial storage for a given
 
 ```swift
 init(capacity: Int)
+```
+
+```objc
+- (NSMutableString *) initWithCapacity:(NSUInteger) capacity;
 ```
 
 #### Return Value

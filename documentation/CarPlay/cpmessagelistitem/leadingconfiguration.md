@@ -1,7 +1,8 @@
 # leadingConfiguration
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration of the list item’s leading region.
 
@@ -16,17 +17,22 @@ The configuration of the list item’s leading region.
 var leadingConfiguration: CPMessageListItemLeadingConfiguration { get set }
 ```
 
+```objc
+@property (nonatomic, strong) CPMessageListItemLeadingConfiguration * leadingConfiguration;
+```
+
 #### Discussion
 
-An instance of [`CPMessageListItemLeadingConfiguration`](cpmessagelistitemleadingconfiguration.md) that describes the visual elements of the list item’s leading region. The region can show a [`CPMessageLeadingItem`](cpmessageleadingitem.md), an image, and an unread indicator.
+An instance of [`CPMessageListItemLeadingConfiguration`](../cpmessagelistitemleadingconfiguration.md) that describes the visual elements of the list item’s leading region. The region can show a [`CPMessageLeadingItem`](../cpmessageleadingitem.md), an image, and an unread indicator.
 
 ## See Also
 
-- [class CPMessageListItemLeadingConfiguration](cpmessagelistitemleadingconfiguration.md)
+### Managing Leading and Trailing Configurations
+- [class CPMessageListItemLeadingConfiguration](../cpmessagelistitemleadingconfiguration.md)
   An object that describes the appearance of a message list item’s leading region.
-- [var trailingConfiguration: CPMessageListItemTrailingConfiguration?](cpmessagelistitem/trailingconfiguration.md)
+- [var trailingConfiguration: CPMessageListItemTrailingConfiguration?](./trailingconfiguration.md)
   The configuration of the list item’s trailing region.
-- [class CPMessageListItemTrailingConfiguration](cpmessagelistitemtrailingconfiguration.md)
+- [class CPMessageListItemTrailingConfiguration](../cpmessagelistitemtrailingconfiguration.md)
   An object that describes the appearance of a message list item’s trailing region.
 
 

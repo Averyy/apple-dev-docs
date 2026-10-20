@@ -1,16 +1,17 @@
 # autoresizesSubviews
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the receiver automatically resizes its subviews when its bounds change.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,21 +19,26 @@ A Boolean value that determines whether the receiver automatically resizes its s
 var autoresizesSubviews: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL autoresizesSubviews;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the receiver adjusts the size of its subviews when its bounds change. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When set to [`true`](../../Swift/true.md), the receiver adjusts the size of its subviews when its bounds change. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var contentMode: UIView.ContentMode](uiview/contentmode-swift.property.md)
+### Configuring the resizing behavior
+- [var contentMode: UIView.ContentMode](./contentmode-swift.property.md)
   A flag used to determine how a view lays out its content when its bounds change.
-- [UIView.ContentMode](uiview/contentmode-swift.enum.md)
+- [UIView.ContentMode](./contentmode-swift.enum.md)
   Options to specify how a view adjusts its content when its size changes.
-- [func sizeThatFits(CGSize) -> CGSize](uiview/sizethatfits(_:).md)
+- [func sizeThatFits(CGSize) -> CGSize](./sizethatfits%28_%29.md)
   Asks the view to calculate and return the size that best fits the specified size.
-- [func sizeToFit()](uiview/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Resizes and moves the receiver view so it just encloses its subviews.
-- [var autoresizingMask: UIView.AutoresizingMask](uiview/autoresizingmask-swift.property.md)
+- [var autoresizingMask: UIView.AutoresizingMask](./autoresizingmask-swift.property.md)
   An integer bit mask that determines how the receiver resizes itself when its superview’s bounds change.
 
 

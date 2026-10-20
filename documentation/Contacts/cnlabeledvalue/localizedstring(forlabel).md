@@ -1,7 +1,8 @@
 # localizedString(forLabel:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a localized string for the specified label.
 
@@ -17,6 +18,10 @@ Returns a localized string for the specified label.
 
 ```swift
 class func localizedString(forLabel label: String) -> String
+```
+
+```objc
++ (NSString *) localizedStringForLabel:(NSString *) label;
 ```
 
 #### Return Value

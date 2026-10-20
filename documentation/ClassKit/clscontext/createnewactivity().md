@@ -1,7 +1,8 @@
 # createNewActivity()
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a new activity instance for the context.
 
@@ -18,9 +19,13 @@ Creates and returns a new activity instance for the context.
 func createNewActivity() -> CLSActivity
 ```
 
+```objc
+- (CLSActivity *) createNewActivity;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Return Value
 
@@ -28,13 +33,14 @@ A new activity.
 
 #### Discussion
 
-Use this method to create a new activity for a context every time a person makes a new attempt at a task. Afterward, use the returned value, or retrieve it by accessing the context’s [`currentActivity`](clscontext/currentactivity.md) property. However, don’t store a reference to the activity as a class property because the underlying object may change from time to time as the framework performs network synchronization.
+Use this method to create a new activity for a context every time a person makes a new attempt at a task. Afterward, use the returned value, or retrieve it by accessing the context’s [`currentActivity`](./currentactivity.md) property. However, don’t store a reference to the activity as a class property because the underlying object may change from time to time as the framework performs network synchronization.
 
 When you call this method on a context that already has an activity, the old activity is stopped and ceases to be accessible to your app, although its data remains in the network.
 
 ## See Also
 
-- [var currentActivity: CLSActivity?](clscontext/currentactivity.md)
+### Creating activities
+- [var currentActivity: CLSActivity?](./currentactivity.md)
   The activity available for recording progress.
 
 

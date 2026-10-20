@@ -1,7 +1,8 @@
 # histogram()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the histogram of an 8-bit-per-channel, 4-channel multiple-plane pixel buffer.
 
@@ -11,7 +12,7 @@ Calculates the histogram of an 8-bit-per-channel, 4-channel multiple-plane pixel
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,25 +21,29 @@ Calculates the histogram of an 8-bit-per-channel, 4-channel multiple-plane pixel
 func histogram() -> vImage.PixelBuffer<Format>.Histogram8888
 ```
 
+Available when `Format` is `vImage.Planar8x4`.
+
 #### Return Value
 
 The histogram of the pixel buffer.
 
 ## See Also
 
-- [func specifyHistogram(vImage.PixelBuffer<Format>.Histogram8888, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/specifyhistogram(_:destination:)-73dpr.md)
+### Related Documentation
+- [func specifyHistogram(vImage.PixelBuffer<Format>.Histogram8888, destination: vImage.PixelBuffer<Format>)](./specifyhistogram%28_,destination%29-73dpr.md)
   Performs a histogram specification operation on an 8-bit-per-channel, 4-channel multiple-plane pixel buffer.
-- [Specifying histograms with vImage](specifying-histograms-with-vimage.md)
+- [Specifying histograms with vImage](../../specifying-histograms-with-vimage.md)
   Calculate the histogram of one image, and apply it to a second image.
-- [func histogram() -> vImage.PixelBuffer<Format>.Histogram8888](vimage/pixelbuffer/histogram-14a38.md)
+### Histogram calculation
+- [func histogram() -> vImage.PixelBuffer<Format>.Histogram8888](./histogram%28%29-14a38.md)
   Calculates the histogram of an 8-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFFF](vimage/pixelbuffer/histogram(bincount:)-6pkfv.md)
+- [func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFFF](./histogram%28bincount%29-6pkfv.md)
   Calculates the histogram of a 32-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func histogram() -> vImage.PixelBuffer<Format>.Histogram888](vimage/pixelbuffer/histogram-30tsp.md)
+- [func histogram() -> vImage.PixelBuffer<Format>.Histogram888](./histogram%28%29-30tsp.md)
   Calculates the histogram of an 8-bit-per-channel, 3-channel multiple-plane pixel buffer.
-- [func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFF](vimage/pixelbuffer/histogram(bincount:)-8wymg.md)
+- [func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFF](./histogram%28bincount%29-8wymg.md)
   Calculates the histogram of a 32-bit-per-channel, 3-channel multiple-plane pixel buffer.
-- [func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFFF](vimage/pixelbuffer/histogram(bincount:)-5bqka.md)
+- [func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFFF](./histogram%28bincount%29-5bqka.md)
   Calculates the histogram of a 32-bit-per-channel, 4-channel multiple-plane pixel buffer.
 
 

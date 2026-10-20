@@ -1,7 +1,8 @@
 # onTapGesture(count:coordinateSpace:inputKinds:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 
@@ -30,11 +31,12 @@ func onTapGesture(count: Int = 1, coordinateSpace: some CoordinateSpaceProtocol 
 
 ## See Also
 
-- [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
+### Recognizing tap gestures
+- [func onTapGesture(count: Int, perform: () -> Void) -> some View](./ontapgesture%28count,perform%29.md)
   Adds an action to perform when this view recognizes a tap gesture.
-- [struct TapGesture](tapgesture.md)
+- [struct TapGesture](../tapgesture.md)
   A gesture that recognizes one or more taps.
-- [struct SpatialTapGesture](spatialtapgesture.md)
+- [struct SpatialTapGesture](../spatialtapgesture.md)
   A gesture that recognizes one or more taps and reports their location.
 
 

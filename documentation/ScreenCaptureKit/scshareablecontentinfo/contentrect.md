@@ -1,7 +1,8 @@
 # contentRect
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size and location of content for the stream.
 
@@ -15,11 +16,16 @@ The size and location of content for the stream.
 var contentRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect contentRect;
+```
+
 ## See Also
 
-- [var pointPixelScale: Float](scshareablecontentinfo/pointpixelscale.md)
+### Shared content properties
+- [var pointPixelScale: Float](./pointpixelscale.md)
   The scaling from points to output pixel resolution for the stream.
-- [var style: SCShareableContentStyle](scshareablecontentinfo/style.md)
+- [var style: SCShareableContentStyle](./style.md)
   The current presentation style of the stream.
 
 

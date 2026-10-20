@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration for the effect.
 

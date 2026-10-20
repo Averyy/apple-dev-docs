@@ -1,7 +1,8 @@
 # visitRemoveMember(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user removed a contact from a group.
 
@@ -19,6 +20,10 @@ Tells the delegate that the user removed a contact from a group.
 optional func visitRemoveMember(_ event: CNChangeHistoryRemoveMemberFromGroupEvent)
 ```
 
+```objc
+- (void) visitRemoveMemberFromGroupEvent:(CNChangeHistoryRemoveMemberFromGroupEvent *) event;
+```
+
 #### Discussion
 
 Inspect the group and contact in the event that the system provides and update your app’s cached data accordingly.
@@ -29,7 +34,8 @@ Inspect the group and contact in the event that the system provides and update y
 
 ## See Also
 
-- [func visitAddMember(CNChangeHistoryAddMemberToGroupEvent)](cnchangehistoryeventvisitor/visitaddmember(_:).md)
+### Updating contacts in groups
+- [func visitAddMember(CNChangeHistoryAddMemberToGroupEvent)](./visitaddmember%28_%29.md)
   Tells the delegate that the user added a contact to a group.
 
 

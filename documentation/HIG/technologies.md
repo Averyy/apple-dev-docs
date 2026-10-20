@@ -39,7 +39,6 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [VoiceOver](/design/human-interface-guidelines/voiceover) - VoiceOver is a screen reader that lets people experience your app’s interface without needing to see the screen.
 - [Wallet](/design/human-interface-guidelines/wallet) - Wallet helps people securely store their credit and debit cards, driver’s license or state ID, transit cards, event tickets, keys, and more on iPhone and Apple Watch.
 
-
 ## Topics
 
 - [AirPlay](airplay.md) - AirPlay lets people stream media content wirelessly from iOS, iPadOS, macOS, and tvOS devices to Apple TV, HomePod, and TVs and speakers that support AirPlay.
@@ -71,8 +70,6 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [Tap to Pay on iPhone](tap-to-pay-on-iphone.md) - Tap to Pay on iPhone lets merchants accept contactless payments using an app on their iPhone, without having to connect external hardware.
 - [VoiceOver](voiceover.md) - VoiceOver is a screen reader that lets people experience your app’s interface without needing to see the screen.
 - [Wallet](wallet.md) - Wallet helps people securely store their credit and debit cards, driver’s license or state ID, transit cards, event tickets, keys, and more on iPhone and Apple Watch.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/technologies](https://developer.apple.com/design/human-interface-guidelines/technologies)*

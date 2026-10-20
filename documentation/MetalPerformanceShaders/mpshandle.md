@@ -1,17 +1,18 @@
 # MPSHandle
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol that provides resource identification.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,23 +20,28 @@ The protocol that provides resource identification.
 protocol MPSHandle : NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol MPSHandle <NSSecureCoding, NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func label() -> String?](mpshandle/label.md)
+- [func label() -> String?](./mpshandle/label%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSNNGraph](mpsnngraph.md)
+### Neural Network Graphs
+- [class MPSNNGraph](./mpsnngraph.md)
   An optimized representation of a graph of neural network image and filter nodes.
-- [class MPSNNImageNode](mpsnnimagenode.md)
+- [class MPSNNImageNode](./mpsnnimagenode.md)
   A placeholder node denoting the position of a neural network image in a graph.
 
 

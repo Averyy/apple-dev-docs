@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The observed translational image alignment request.
 
@@ -17,6 +18,10 @@ The observed translational image alignment request.
 
 ```swift
 var results: [VNImageTranslationAlignmentObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNImageTranslationAlignmentObservation *> * results;
 ```
 
 

@@ -1,7 +1,8 @@
 # HMMutablePresenceEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that triggers based on the presence of users in the home.
 
@@ -19,37 +20,42 @@ A mutable event that triggers based on the presence of users in the home.
 class HMMutablePresenceEvent
 ```
 
+```objc
+@interface HMMutablePresenceEvent : HMPresenceEvent
+```
+
 ## Topics
 
 ### Configuring a presence event
-- [var presenceEventType: HMPresenceEventType](hmmutablepresenceevent/presenceeventtype.md)
+- [var presenceEventType: HMPresenceEventType](./hmmutablepresenceevent/presenceeventtype.md)
   The event type that triggers the presence event.
-- [var presenceUserType: HMPresenceEventUserType](hmmutablepresenceevent/presenceusertype.md)
+- [var presenceUserType: HMPresenceEventUserType](./hmmutablepresenceevent/presenceusertype.md)
   The user type whose presence triggers the event.
 
 ## Relationships
 
 ### Inherits From
-- [HMPresenceEvent](hmpresenceevent.md)
+- [HMPresenceEvent](./hmpresenceevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMPresenceEvent](hmpresenceevent.md)
+### User presence
+- [class HMPresenceEvent](./hmpresenceevent.md)
   An event that triggers based on the presence of users in the home.
-- [enum HMPresenceEventType](hmpresenceeventtype.md)
+- [enum HMPresenceEventType](./hmpresenceeventtype.md)
   The user presence type that triggers a presence event.
-- [enum HMPresenceEventUserType](hmpresenceeventusertype.md)
+- [enum HMPresenceEventUserType](./hmpresenceeventusertype.md)
   The group of users that triggers a presence event.
 
 

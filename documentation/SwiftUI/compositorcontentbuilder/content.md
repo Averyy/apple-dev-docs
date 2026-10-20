@@ -1,7 +1,8 @@
 # CompositorContentBuilder.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the content of a compositor content builder.
 
@@ -18,10 +19,10 @@ struct Content<C> where C : CompositorContent
 ## Relationships
 
 ### Conforms To
-- [CompositorContent](compositorcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ImmersiveSpaceContent](immersivespacecontent.md)
+- [CompositorContent](../compositorcontent.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ImmersiveSpaceContent](../immersivespacecontent.md)
 
 
 ---

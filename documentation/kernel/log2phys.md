@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct log2phys {
     ...
 };
@@ -17,9 +17,9 @@ struct log2phys {
 ## Topics
 
 ### Instance Properties
-- [l2p_contigbytes](log2phys/1572443-l2p_contigbytes.md)
-- [l2p_devoffset](log2phys/1572509-l2p_devoffset.md)
-- [l2p_flags](log2phys/1572519-l2p_flags.md)
+- [l2p_contigbytes](./log2phys/api-1572443-l2p_contigbytes.md)
+- [l2p_devoffset](./log2phys/api-1572509-l2p_devoffset.md)
+- [l2p_flags](./log2phys/api-1572519-l2p_flags.md)
 
 
 ---

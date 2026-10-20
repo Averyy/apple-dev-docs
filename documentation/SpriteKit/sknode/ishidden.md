@@ -1,18 +1,19 @@
 # isHidden
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether a node and its descendants are rendered.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,18 +21,23 @@ A Boolean value that determines whether a node and its descendants are rendered.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isHidden) BOOL hidden;
+```
+
 ## Mentions
 
-- [About Node Property Propagation](about-node-property-propagation.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [About Node Property Propagation](../about-node-property-propagation.md)
+- [Getting Started with Nodes](../getting-started-with-nodes.md)
 
 #### Discussion
 
-When hidden, a node and its descendants are not rendered. However, they still exist in the scene and continue to interact in other ways. For example, the node’s actions still run and the node can still be intersected with other nodes. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When hidden, a node and its descendants are not rendered. However, they still exist in the scene and continue to interact in other ways. For example, the node’s actions still run and the node can still be intersected with other nodes. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var alpha: CGFloat](sknode/alpha.md)
+### Altering Node Visibility
+- [var alpha: CGFloat](./alpha.md)
   The transparency value applied to the node’s contents.
 
 

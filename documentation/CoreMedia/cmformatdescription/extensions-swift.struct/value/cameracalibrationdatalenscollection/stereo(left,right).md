@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.stereo(left:right:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lens calibration for stereo cameras
 

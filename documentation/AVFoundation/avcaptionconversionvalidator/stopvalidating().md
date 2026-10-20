@@ -1,7 +1,8 @@
 # stopValidating()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the active validation operation.
 
@@ -17,19 +18,24 @@ Stops the active validation operation.
 func stopValidating()
 ```
 
+```objc
+- (void) stopValidating;
+```
+
 #### Discussion
 
 You can call this method at any time, even within the validator’s callback to its handler.
 
-Calling this method stops validation and changes the [`status`](avcaptionconversionvalidator/status-swift.property.md) value to [`AVCaptionConversionValidator.Status.stopped`](avcaptionconversionvalidator/status-swift.enum/stopped.md).
+Calling this method stops validation and changes the [`status`](./status-swift.property.md) value to [`AVCaptionConversionValidator.Status.stopped`](./status-swift.enum/stopped.md).
 
 ## See Also
 
-- [func validateCaptionConversion(warningHandler: (AVCaptionConversionWarning?) -> Void)](avcaptionconversionvalidator/validatecaptionconversion(warninghandler:).md)
+### Validating captions
+- [func validateCaptionConversion(warningHandler: (AVCaptionConversionWarning?) -> Void)](./validatecaptionconversion%28warninghandler%29.md)
   Validates the object’s captions.
-- [var warnings: [AVCaptionConversionWarning]](avcaptionconversionvalidator/warnings.md)
+- [var warnings: [AVCaptionConversionWarning]](./warnings.md)
   The collection of warnings the validator encountered.
-- [class AVCaptionConversionWarning](avcaptionconversionwarning.md)
+- [class AVCaptionConversionWarning](../avcaptionconversionwarning.md)
   An object that represents a conversion warning produced by a validator.
 
 

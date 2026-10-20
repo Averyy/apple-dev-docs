@@ -1,7 +1,8 @@
 # displaysDownloadsDirectoryControl
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the downloads directory control is displayed.
 
@@ -14,13 +15,18 @@ Determines whether the downloads directory control is displayed.
 var displaysDownloadsDirectoryControl: Bool { get set }
 ```
 
+```objc
+@property BOOL displaysDownloadsDirectoryControl;
+```
+
 ## See Also
 
-- [var downloadsDirectory: URL!](ikscannerdeviceview/downloadsdirectory.md)
+### Configuring Downloading
+- [var downloadsDirectory: URL!](./downloadsdirectory.md)
   The directory where scans are saved.
-- [var transferMode: IKScannerDeviceViewTransferMode](ikscannerdeviceview/transfermode.md)
+- [var transferMode: IKScannerDeviceViewTransferMode](./transfermode.md)
   Determines how the scanned content is provided to the delegate.
-- [var documentName: String!](ikscannerdeviceview/documentname.md)
+- [var documentName: String!](./documentname.md)
   Returns the document name.
 
 

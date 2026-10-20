@@ -1,16 +1,19 @@
 # init(data:width:height:bitsPerComponent:bytesPerRow:space:bitmapInfo:releaseCallback:releaseInfo:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.6+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 27.2
+- iPadOS 4.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.6+ - Deprecated in 27.2
+- tvOS - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: update space parameter to CGColorSpace?, bitmapInfo parameter to CGBitmapInfo
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # showSignificantUpdateAcknowledgment(in:updateDescription:)
 
 **Framework**: Declared Age Range  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a system-provided interface for people to acknowledge a significant app update.
 
@@ -19,11 +20,11 @@ func showSignificantUpdateAcknowledgment(in windowScene: UIWindowScene, updateDe
 
 #### Discussion
 
-Call this function to inform people that your app has undergone a significant change that requires their acknowledgment. For more information on what constitutes a significant app change, refer to [`SignificantAppUpdateTopic`](https://developer.apple.com/documentation/permissionkit/significantappupdatetopic).
+Call this function to inform people that your app has undergone a significant change that requires their acknowledgment. For more information on what constitutes a significant app change, refer to [`SignificantAppUpdateTopic`](../../PermissionKit/significantappupdatetopic.md).
 
-> ❗ **Important**: Before calling this function, check [`AgeRangeService.RegulatoryFeature`](agerangeservice/regulatoryfeature.md) to determine if a person must acknowledge your significant app change.
+> ❗ **Important**: Before calling this function, check [`AgeRangeService.RegulatoryFeature`](./regulatoryfeature.md) to determine if a person must acknowledge your significant app change.
 
-> **Note**: An error if the feature isn’t available.
+> **Throws**: An error if the feature isn’t available.
 
 ## Parameters
 

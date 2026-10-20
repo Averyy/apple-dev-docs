@@ -1,25 +1,27 @@
 # addReporterLegend
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn addReporterLegend(IOReporter *reporter, const char *groupName, const char *subGroupName);
 ```
 
 ## See Also
 
-- [addLegendEntry](ioreportlegend/addlegendentry.md)
-- [free](ioreportlegend/free.md)
-- [getLegend](ioreportlegend/getlegend.md)
+### Instance Methods
+- [addLegendEntry](./addlegendentry.md)
+- [free](./free.md)
+- [getLegend](./getlegend.md)
 
 
 ---

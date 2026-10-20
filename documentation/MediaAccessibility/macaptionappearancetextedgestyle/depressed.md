@@ -1,7 +1,8 @@
 # MACaptionAppearanceTextEdgeStyle.depressed
 
 **Framework**: Media Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An edge makes the text appear pushed in.
 
@@ -19,17 +20,22 @@ An edge makes the text appear pushed in.
 case depressed
 ```
 
+```c
+kMACaptionAppearanceTextEdgeStyleDepressed
+```
+
 ## See Also
 
-- [MACaptionAppearanceTextEdgeStyle.undefined](macaptionappearancetextedgestyle/undefined.md)
+### Constants
+- [MACaptionAppearanceTextEdgeStyle.undefined](./undefined.md)
   An edge style has not been specified.
-- [MACaptionAppearanceTextEdgeStyle.none](macaptionappearancetextedgestyle/none.md)
+- [MACaptionAppearanceTextEdgeStyle.none](./none.md)
   The text should not have a styled edge.
-- [MACaptionAppearanceTextEdgeStyle.raised](macaptionappearancetextedgestyle/raised.md)
+- [MACaptionAppearanceTextEdgeStyle.raised](./raised.md)
   An edge makes the text appear to rise above the background.
-- [MACaptionAppearanceTextEdgeStyle.uniform](macaptionappearancetextedgestyle/uniform.md)
+- [MACaptionAppearanceTextEdgeStyle.uniform](./uniform.md)
   A thin outline lies along the edge of the text.
-- [MACaptionAppearanceTextEdgeStyle.dropShadow](macaptionappearancetextedgestyle/dropshadow.md)
+- [MACaptionAppearanceTextEdgeStyle.dropShadow](./dropshadow.md)
   An edge makes the text appear to float above the background.
 
 

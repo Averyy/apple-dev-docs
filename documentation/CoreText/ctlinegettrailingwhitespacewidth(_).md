@@ -1,7 +1,8 @@
 # CTLineGetTrailingWhitespaceWidth(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the trailing whitespace width for a line.
 
@@ -20,6 +21,10 @@ Returns the trailing whitespace width for a line.
 func CTLineGetTrailingWhitespaceWidth(_ line: CTLine) -> Double
 ```
 
+```c
+extern double CTLineGetTrailingWhitespaceWidth(CTLineRef line);
+```
+
 #### Return Value
 
 The width of the line’s trailing whitespace. If the line is invalid, this function will always return zero.
@@ -34,9 +39,10 @@ Creating a line for a width can result in a line that is actually longer than th
 
 ## See Also
 
-- [func CTLineGetImageBounds(CTLine, CGContext?) -> CGRect](ctlinegetimagebounds(_:_:).md)
+### Measuring Lines
+- [func CTLineGetImageBounds(CTLine, CGContext?) -> CGRect](./ctlinegetimagebounds%28_,_%29.md)
   Calculates the image bounds for a line.
-- [func CTLineGetTypographicBounds(CTLine, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](ctlinegettypographicbounds(_:_:_:_:).md)
+- [func CTLineGetTypographicBounds(CTLine, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](./ctlinegettypographicbounds%28_,_,_,_%29.md)
   Calculates the typographic bounds of a line.
 
 

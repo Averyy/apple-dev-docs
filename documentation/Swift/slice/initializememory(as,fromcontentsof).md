@@ -1,7 +1,8 @@
 # initializeMemory(as:fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer slice’s memory with every element of the source, binding the initialized memory to the elements’ type.
 
@@ -19,6 +20,8 @@ Initializes the buffer slice’s memory with every element of the source, bindin
 ```swift
 func initializeMemory<C>(as type: C.Element.Type, fromContentsOf source: C) -> UnsafeMutableBufferPointer<C.Element> where C : Collection
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Return Value
 

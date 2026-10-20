@@ -1,7 +1,8 @@
 # deferQueryRequestToNetwork(completion:)
 
 **Framework**: SMS and Call Reporting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system to pass the current query request to the app extension’s associated network service.
 
@@ -14,16 +15,24 @@ Tells the system to pass the current query request to the app extension’s asso
 ## Declaration
 
 ```swift
+func deferQueryRequestToNetwork(completion: @escaping @Sendable (ILNetworkResponse?, (any Error)?) -> Void)
+```
+
+```swift
 func deferQueryRequestToNetwork() async throws -> ILNetworkResponse
+```
+
+```objc
+- (void) deferQueryRequestToNetworkWithCompletion:(void (^)(ILNetworkResponse *response, NSError *error)) completion;
 ```
 
 #### Discussion
 
-When your Message Filter app extension calls this method to defer a query to its associated server, the system performs an HTTPS network request to a URL specified in the app extension’s `Info.plist` file. The system returns the response to that request (or an error) asynchronously in an [`ILNetworkResponse`](ilnetworkresponse.md) object.
+When your Message Filter app extension calls this method to defer a query to its associated server, the system performs an HTTPS network request to a URL specified in the app extension’s `Info.plist` file. The system returns the response to that request (or an error) asynchronously in an [`ILNetworkResponse`](../ilnetworkresponse.md) object.
 
 To make a network request on behalf of a Message Filter app extension, the system uses an HTTP `POST` request formatted in JSON, similar to the request shown below.
 
-```None
+```
 POST /server-endpoint HTTP/1.1
 Accept: */*
 Content-Type: application/json; charset=utf-8

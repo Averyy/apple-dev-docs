@@ -1,18 +1,19 @@
 # scalingMethod
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The scaling method.
 var scalingMethod: SparseScaling_t
 ```
 
+```c
+SparseScaling_t scalingMethod;
+```
+
 ## See Also
 
-- [var control: SparseControl_t](sparsenumericfactoroptions/control.md)
+### Instance Properties
+- [var control: SparseControl_t](./control.md)
   The flags that control the computation.
-- [struct SparseControl_t](sparsecontrol_t.md)
+- [struct SparseControl_t](../sparsecontrol_t.md)
   Options that control the computation.
-- [var scaling: UnsafeMutableRawPointer?](sparsenumericfactoroptions/scaling.md)
+- [var scaling: UnsafeMutableRawPointer?](./scaling.md)
   An array that scales the matrix before factorization.
-- [struct SparseScaling_t](sparsescaling_t.md)
+- [struct SparseScaling_t](../sparsescaling_t.md)
   Options that define which scaling algorithm to use.
-- [var pivotTolerance: Double](sparsenumericfactoroptions/pivottolerance.md)
+- [var pivotTolerance: Double](./pivottolerance.md)
   The pivot tolerance that threshold partial pivoting uses.
-- [var zeroTolerance: Double](sparsenumericfactoroptions/zerotolerance.md)
+- [var zeroTolerance: Double](./zerotolerance.md)
   The zero tolerance that some pivoting modes use.
 
 

@@ -1,7 +1,8 @@
 # NSXPCConnection.Options
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that you can pass to a connection.
 
@@ -20,33 +21,38 @@ Options that you can pass to a connection.
 struct Options
 ```
 
+```c
+enum NSXPCConnectionOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var privileged: NSXPCConnection.Options](nsxpcconnection/options/privileged.md)
+- [static var privileged: NSXPCConnection.Options](./options/privileged.md)
 ### Initializers
-- [init(rawValue: UInt)](nsxpcconnection/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(listenerEndpoint: NSXPCListenerEndpoint)](nsxpcconnection/init(listenerendpoint:).md)
-  Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to an [`NSXPCListener`](nsxpclistener.md) object in another process, identified by an [`NSXPCListenerEndpoint`](nsxpclistenerendpoint.md) object.
-- [init(machServiceName: String, options: NSXPCConnection.Options)](nsxpcconnection/init(machservicename:options:).md)
-  Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to a LaunchAgent or LaunchDaemon with a name advertised in a `launchd.plist`.
-- [init(serviceName: String)](nsxpcconnection/init(servicename:).md)
-  Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to an [`NSXPCListener`](nsxpclistener.md) object in an XPC service, identified by a service name.
+### Creating a connection
+- [init(listenerEndpoint: NSXPCListenerEndpoint)](./init%28listenerendpoint%29.md)
+  Initializes an [`NSXPCConnection`](../nsxpcconnection.md) object to connect to an [`NSXPCListener`](../nsxpclistener.md) object in another process, identified by an [`NSXPCListenerEndpoint`](../nsxpclistenerendpoint.md) object.
+- [init(machServiceName: String, options: NSXPCConnection.Options)](./init%28machservicename,options%29.md)
+  Initializes an [`NSXPCConnection`](../nsxpcconnection.md) object to connect to a LaunchAgent or LaunchDaemon with a name advertised in a `launchd.plist`.
+- [init(serviceName: String)](./init%28servicename%29.md)
+  Initializes an [`NSXPCConnection`](../nsxpcconnection.md) object to connect to an [`NSXPCListener`](../nsxpclistener.md) object in an XPC service, identified by a service name.
 
 
 ---

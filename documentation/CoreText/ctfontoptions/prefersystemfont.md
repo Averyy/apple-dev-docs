@@ -1,18 +1,19 @@
 # preferSystemFont
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Font matching prefers to match Apple system fonts.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Font matching prefers to match Apple system fonts.
 static var preferSystemFont: CTFontOptions { get }
 ```
 
+```c
+kCTFontOptionsPreferSystemFont
+```
+
 ## See Also
 
-- [static var preventAutoActivation: CTFontOptions](ctfontoptions/preventautoactivation.md)
+### Constants
+- [static var preventAutoActivation: CTFontOptions](./preventautoactivation.md)
   Prevents automatic font activation.
 
 

@@ -1,7 +1,8 @@
 # CBCentralManagerScanOptionAllowDuplicatesKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that specifies whether the scan should run without duplicate filtering.
 
@@ -20,15 +21,20 @@ A Boolean value that specifies whether the scan should run without duplicate fil
 let CBCentralManagerScanOptionAllowDuplicatesKey: String
 ```
 
+```c
+extern NSString * const CBCentralManagerScanOptionAllowDuplicatesKey;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. If [`true`](https://developer.apple.com/documentation/swift/true), the central disables filtering and generates a discovery event each time it receives an advertising packet from the peripheral. If [`false`](https://developer.apple.com/documentation/swift/false) (the default), the central coalesces multiple discoveries of the same peripheral into a single discovery event.
+The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object. If [`true`](../Swift/true.md), the central disables filtering and generates a discovery event each time it receives an advertising packet from the peripheral. If [`false`](../Swift/false.md) (the default), the central coalesces multiple discoveries of the same peripheral into a single discovery event.
 
 > ❗ **Important**:  Disabling this filtering can have an adverse effect on battery life; use it only if necessary.
 
 ## See Also
 
-- [let CBCentralManagerScanOptionSolicitedServiceUUIDsKey: String](cbcentralmanagerscanoptionsolicitedserviceuuidskey.md)
+### Constants
+- [let CBCentralManagerScanOptionSolicitedServiceUUIDsKey: String](./cbcentralmanagerscanoptionsolicitedserviceuuidskey.md)
   An array of service UUIDs that you want to scan for.
 
 

@@ -1,7 +1,8 @@
 # move(to:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves an entity instantly to a new location given by a transform.
 
@@ -11,7 +12,7 @@ Moves an entity instantly to a new location given by a transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,16 @@ Moves an entity instantly to a new location given by a transform.
 @preconcurrency func move(to transform: Transform, relativeTo referenceEntity: Entity?)
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func move(to transform: float4x4, relativeTo referenceEntity: Entity?)
+```
+
 ## Parameters
 
-- `transform`: A [`Transform`](transform.md) instance that indicates the new location.
+- `transform`: A [`Transform`](../transform.md) instance that indicates the new location.
 - `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 

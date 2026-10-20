@@ -1,7 +1,8 @@
 # EquatableComparisonOperator.notEqualTo
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operator that determines if the parameter and the value aren’t equal.
 
@@ -11,7 +12,7 @@ An operator that determines if the parameter and the value aren’t equal.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case notEqualTo
 
 ## See Also
 
-- [EquatableComparisonOperator.equalTo](equatablecomparisonoperator/equalto.md)
+### Equatable operators
+- [EquatableComparisonOperator.equalTo](./equalto.md)
   An operator that determines if the parameter and the value are equal.
 
 

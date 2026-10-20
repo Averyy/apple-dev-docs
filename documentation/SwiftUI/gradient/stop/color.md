@@ -1,7 +1,8 @@
 # color
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color for the stop.
 
@@ -22,7 +23,8 @@ var color: Color
 
 ## See Also
 
-- [var location: CGFloat](gradient/stop/location.md)
+### Configuring a gradient stop
+- [var location: CGFloat](./location.md)
   The parametric location of the stop.
 
 

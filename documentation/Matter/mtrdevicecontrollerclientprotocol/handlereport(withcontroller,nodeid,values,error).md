@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func handleReport(withController controller: Any?, nodeId: UInt64, values: Any?, error: (any Error)?)
+```
+
+```objc
+- (void) handleReportWithController:(id) controller nodeId:(uint64_t) nodeId values:(id) values error:(NSError *) error;
 ```
 
 

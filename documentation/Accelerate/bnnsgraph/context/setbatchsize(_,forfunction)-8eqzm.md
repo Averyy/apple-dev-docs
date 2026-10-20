@@ -1,7 +1,8 @@
 # setBatchSize(_:forFunction:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously sets the batch size for a graph.
 
@@ -26,7 +27,7 @@ This is a special case of `setDynamicShapes(_:forFunction:)` where the only dyna
 
 This function has no effect if you pass a `batchSize` value that’s less than zero.
 
-> **Note**: `BNNSGraphContextSetBatchSize`
+> **See Also**: `BNNSGraphContextSetBatchSize`
 
 ## Parameters
 

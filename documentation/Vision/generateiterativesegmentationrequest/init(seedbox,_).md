@@ -1,7 +1,8 @@
 # init(seedBox:_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates with a seed box.
 
@@ -21,7 +22,7 @@ init(seedBox: NormalizedRect, _ revision: GenerateIterativeSegmentationRequest.R
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 #### Discussion
 
@@ -29,11 +30,12 @@ No result will be produced if the box is outside the `regionOfInterest`. By defa
 
 ## See Also
 
-- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedpoint:_:).md)
+### Creating a request
+- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedpoint,_%29.md)
   Instantiates with a seed point.
-- [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedscribblebuffer:_:).md)
+- [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedscribblebuffer,_%29.md)
   Instantiates with a scribble buffer.
-- [GenerateIterativeSegmentationRequest.Result](generateiterativesegmentationrequest/result.md)
+- [GenerateIterativeSegmentationRequest.Result](./result.md)
   The result is returned as a gray mask image. It can be nil if there is nothing to segment.
 
 

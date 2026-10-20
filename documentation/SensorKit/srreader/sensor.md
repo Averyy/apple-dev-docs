@@ -1,7 +1,8 @@
 # sensor
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sensor instance associated with this reader.
 

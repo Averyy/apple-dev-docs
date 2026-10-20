@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The host time, in seconds, when the CPU finishes scheduling the command buffer.
@@ -20,15 +21,20 @@ The host time, in seconds, when the CPU finishes scheduling the command buffer.
 var kernelEndTime: CFTimeInterval { get }
 ```
 
+```objc
+@property (readonly) CFTimeInterval kernelEndTime;
+```
+
 #### Discussion
 
-You can calculate how much time the kernel spends scheduling a command buffer by subtracting [`kernelStartTime`](mtlcommandbuffer/kernelstarttime.md) from this value.
+You can calculate how much time the kernel spends scheduling a command buffer by subtracting [`kernelStartTime`](./kernelstarttime.md) from this value.
 
-The kernel start and end times remain `0.0` until the GPU driver (on the CPU) schedules the command buffer to run on the GPU. Apps typically use these values after the [`waitUntilScheduled()`](mtlcommandbuffer/waituntilscheduled().md) method returns, or within a completion handler (see [`addScheduledHandler(_:)`](mtlcommandbuffer/addscheduledhandler(_:).md) and [`addCompletedHandler(_:)`](mtlcommandbuffer/addcompletedhandler(_:).md)).
+The kernel start and end times remain `0.0` until the GPU driver (on the CPU) schedules the command buffer to run on the GPU. Apps typically use these values after the [`waitUntilScheduled()`](./waituntilscheduled%28%29.md) method returns, or within a completion handler (see [`addScheduledHandler(_:)`](./addscheduledhandler%28_%29.md) and [`addCompletedHandler(_:)`](./addcompletedhandler%28_%29.md)).
 
 ## See Also
 
-- [var kernelStartTime: CFTimeInterval](mtlcommandbuffer/kernelstarttime.md)
+### Checking scheduling times on the CPU
+- [var kernelStartTime: CFTimeInterval](./kernelstarttime.md)
   The host time, in seconds, when the CPU begins to schedule the command buffer.
 
 

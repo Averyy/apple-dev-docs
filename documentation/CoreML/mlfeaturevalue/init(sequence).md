@@ -1,7 +1,8 @@
 # init(sequence:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value that contains a sequence.
 
@@ -20,13 +21,18 @@ Creates a feature value that contains a sequence.
 convenience init(sequence: MLSequence)
 ```
 
+```objc
++ (instancetype) featureValueWithSequence:(MLSequence *) sequence;
+```
+
 ## Parameters
 
-- `sequence`: An [`MLSequence`](mlsequence.md) instance.
+- `sequence`: An [`MLSequence`](../mlsequence.md) instance.
 
 ## See Also
 
-- [convenience init(dictionary: [AnyHashable : NSNumber]) throws](mlfeaturevalue/init(dictionary:).md)
+### Creating collection feature values
+- [convenience init(dictionary: [AnyHashable : NSNumber]) throws](./init%28dictionary%29.md)
   Creates a feature value that contains a dictionary of numbers.
 
 

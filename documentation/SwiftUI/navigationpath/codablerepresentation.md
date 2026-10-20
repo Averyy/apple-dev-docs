@@ -1,7 +1,8 @@
 # NavigationPath.CodableRepresentation
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A serializable representation of a navigation path.
 
@@ -22,18 +23,19 @@ struct CodableRepresentation
 
 #### Overview
 
-When a navigation path contains elements that conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, you can use the path’s `CodableRepresentation` to convert the path to an external representation and to convert an external representation back into a navigation path.
+When a navigation path contains elements that conform to the [`Codable`](../../Swift/codable.md) protocol, you can use the path’s `CodableRepresentation` to convert the path to an external representation and to convert an external representation back into a navigation path.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [var codable: NavigationPath.CodableRepresentation?](navigationpath/codable.md)
+### Encoding a path
+- [var codable: NavigationPath.CodableRepresentation?](./codable.md)
   A value that describes the contents of this path in a serializable format.
 
 

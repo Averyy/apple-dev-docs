@@ -1,7 +1,8 @@
 # listDirectory
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file system allows listing directory contents.
 
@@ -14,15 +15,20 @@ The file system allows listing directory contents.
 static var listDirectory: FSVolume.AccessMask { get }
 ```
 
+```c
+FSAccessListDirectory
+```
+
 ## See Also
 
-- [static var addFile: FSVolume.AccessMask](fsvolume/accessmask/addfile.md)
+### Declaring directory access
+- [static var addFile: FSVolume.AccessMask](./addfile.md)
   The file system allows adding files.
-- [static var addSubdirectory: FSVolume.AccessMask](fsvolume/accessmask/addsubdirectory.md)
+- [static var addSubdirectory: FSVolume.AccessMask](./addsubdirectory.md)
   The file system allows adding subdirectories.
-- [static var deleteChild: FSVolume.AccessMask](fsvolume/accessmask/deletechild.md)
+- [static var deleteChild: FSVolume.AccessMask](./deletechild.md)
   The file system allows deleting subdirectories.
-- [static var search: FSVolume.AccessMask](fsvolume/accessmask/search.md)
+- [static var search: FSVolume.AccessMask](./search.md)
   The file system allows searching files.
 
 

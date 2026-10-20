@@ -1,7 +1,8 @@
 # BNNS.ArithmeticBinaryFunction.pow
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that calculates the element-wise first input raised to the power of its second input.
 
@@ -11,8 +12,10 @@ An operation that calculates the element-wise first input raised to the power of
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,21 +25,22 @@ case pow
 
 ## See Also
 
-- [BNNS.ArithmeticBinaryFunction.add](bnns/arithmeticbinaryfunction/add.md)
+### Binary Arithmetic Functions
+- [BNNS.ArithmeticBinaryFunction.add](./add.md)
   An operation that calculates the element-wise sum of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.subtract](bnns/arithmeticbinaryfunction/subtract.md)
+- [BNNS.ArithmeticBinaryFunction.subtract](./subtract.md)
   An operation that calculates the element-wise difference of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.divide](bnns/arithmeticbinaryfunction/divide.md)
+- [BNNS.ArithmeticBinaryFunction.divide](./divide.md)
   An operation that calculates the element-wise division of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.divideNoNaN](bnns/arithmeticbinaryfunction/dividenonan.md)
+- [BNNS.ArithmeticBinaryFunction.divideNoNaN](./dividenonan.md)
   An operation that calculates the element-wise division of its two inputs and returns zero if the second input is zero.
-- [BNNS.ArithmeticBinaryFunction.multiply](bnns/arithmeticbinaryfunction/multiply.md)
+- [BNNS.ArithmeticBinaryFunction.multiply](./multiply.md)
   An operation that calculates the element-wise product of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.multiplyNoNaN](bnns/arithmeticbinaryfunction/multiplynonan.md)
+- [BNNS.ArithmeticBinaryFunction.multiplyNoNaN](./multiplynonan.md)
   An operation that calculates the element-wise product of its two inputs and returns zero if the second input is zero, even if the first input is NaN or infinity.
-- [BNNS.ArithmeticBinaryFunction.max](bnns/arithmeticbinaryfunction/max.md)
+- [BNNS.ArithmeticBinaryFunction.max](./max.md)
   An operation that calculates the element-wise maximum of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.min](bnns/arithmeticbinaryfunction/min.md)
+- [BNNS.ArithmeticBinaryFunction.min](./min.md)
   An operation that calculates the element-wise minimum of its two inputs.
 
 

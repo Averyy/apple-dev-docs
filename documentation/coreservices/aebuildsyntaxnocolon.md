@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoColon
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 In a descriptor, one of the keywords was not followed by a colon.
 

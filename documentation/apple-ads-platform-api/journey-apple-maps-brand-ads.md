@@ -1,6 +1,7 @@
 # Advertising Your Business on Apple Maps
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: Article
 
 Identify your brand, upload creative assets, build location groups, and create campaigns, ad groups, creatives, and ads to promote it on Apple Maps.
 
@@ -9,20 +10,20 @@ Identify your brand, upload creative assets, build location groups, and create c
 
 #### Overview
 
-You can promote ads on Apple Maps across two placements: Search results and Search home. Every Maps campaign uses `promotedObjectType: BUSINESS_BRAND`. For the full endpoint reference, see [`Ads on Apple Maps Endpoints`](brands-endpoints.md).
+You can promote ads on Apple Maps across two placements: Search results and Search home. Every Maps campaign uses `promotedObjectType: BUSINESS_BRAND`. For the full endpoint reference, see [Ads on Apple Maps Endpoints](./brands-endpoints.md).
 
 Before you begin:
 
 - Ads on Apple Maps require an Apple Ads profile and a validated brand in Apple Ads.
 - Your ad account must have `productFeatures: ["BUSINESS_BRAND_MANUAL"]` and a `BUSINESS_BRAND` delegation to create Maps campaigns.
-- All API calls require a `Bearer` token as described in [`Implementing OAuth for the Apple Ads Platform API`](implementing-oauth-for-the-apple-ads-platform-api.md) and [`Calling the Apple Ads Platform API`](calling-apple-ads-platform-api.md).
+- All API calls require a `Bearer` token as described in [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md) and [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md).
 - All ad-account-scoped calls also require the `X-AP-Context: adAccountId` header.
-- When automating campaign, creative, or location group operations at scale, watch the rate-limit headers described in [`Applying Rate Limits`](rate-limits.md) and back off before hitting a `429`.
-- For full delegation requirements, see [`ProductFeatures`](productfeatures.md).
+- When automating campaign, creative, or location group operations at scale, watch the rate-limit headers described in [Applying Rate Limits](./rate-limits.md) and back off before hitting a `429`.
+- For full delegation requirements, see [`ProductFeatures`](./productfeatures.md).
 
 #### Identify Your Brand
 
-Retrieve your brand with [`Query Brands`](query-brands.md), as shown below. The response returns the brand `id` you use as the `promotedObjectId` throughout campaign creation.
+Retrieve your brand with [`Query Brands`](./query-brands.md), as shown below. The response returns the brand `id` you use as the `promotedObjectId` throughout campaign creation.
 
 ```json
 POST /v1/business-brands/query
@@ -38,11 +39,11 @@ POST /v1/business-brands/query
 }
 ```
 
-To fetch a single brand’s full details, use [`Get Brand by ID`](get-brand-by-id.md). A brand must have `eligibility.status: ELIGIBLE` before you can use it in an active campaign.
+To fetch a single brand’s full details, use [`Get Brand by ID`](./get-brand-by-id.md). A brand must have `eligibility.status: ELIGIBLE` before you can use it in an active campaign.
 
 #### Upload Creative Assets
 
-Ads on Apple Maps can use image assets. Use [`Upload Asset`](upload-asset.md) to upload an image file. This endpoint takes `multipart/form-data`, not a JSON body: send the binary file alongside `promotedObjectId` and `promotedObjectType` as form fields. The response returns an `id` you reference as `assetId` in the ad creative, as shown here:
+Ads on Apple Maps can use image assets. Use [`Upload Asset`](./upload-asset.md) to upload an image file. This endpoint takes `multipart/form-data`, not a JSON body: send the binary file alongside `promotedObjectId` and `promotedObjectType` as form fields. The response returns an `id` you reference as `assetId` in the ad creative, as shown here:
 
 ```console
 curl -X POST https://api.ads.apple.com/v1/assets/upload \
@@ -53,11 +54,11 @@ curl -X POST https://api.ads.apple.com/v1/assets/upload \
   -F "promotedObjectType=BUSINESS_BRAND"
 ```
 
-After upload is complete, use [`Query Assets`](query-assets.md) to list and filter your asset library by status, type, or brand, and use [`Get Asset`](get-asset-by-id.md) to inspect a specific asset’s processing state. Assets must reach `ELIGIBLE` (`eligibility.status`) before you can use them in a creative.
+After upload is complete, use [`Query Assets`](./query-assets.md) to list and filter your asset library by status, type, or brand, and use [`Get Asset`](./get-asset-by-id.md) to inspect a specific asset’s processing state. Assets must reach `ELIGIBLE` (`eligibility.status`) before you can use them in a creative.
 
 #### Build Location Groups
 
-Location groups organize the business locations you want to promote together under an ad group, rather than requiring you to set each location individually. Create a location group with [`Create Location Group`](create-location-group.md) by supplying the required `adAccountId`, `brandId`, `groupType`, and a list of location IDs for `STATIC` groups, as shown here:
+Location groups organize the business locations you want to promote together under an ad group, rather than requiring you to set each location individually. Create a location group with [`Create Location Group`](./create-location-group.md) by supplying the required `adAccountId`, `brandId`, `groupType`, and a list of location IDs for `STATIC` groups, as shown here:
 
 ```json
 POST /v1/location-groups
@@ -79,15 +80,15 @@ Notes when creating location groups:
 
 - A group with a fixed, manually curated list of location IDs reaches `systemStatus: VALID` immediately.
 - `DYNAMIC` groups use rule-based criteria to automatically include matching locations and start with `systemStatus: PENDING` while Apple Ads evaluates the rules against the brand’s locations. Wait for `systemStatus: VALID` before referencing a `DYNAMIC` group in ad group targeting.
-- To find valid location IDs, query [`Query for Locations`](query-locations.md), which returns Apple Ads locations for a brand and filters by country, name, or status.
+- To find valid location IDs, query [`Query for Locations`](./query-locations.md), which returns Apple Ads locations for a brand and filters by country, name, or status.
 
-For more information, see [`Managing Location Groups`](location-groups-overview.md).
+For more information, see [Managing Location Groups](./location-groups-overview.md).
 
-- To list existing groups, use [`Query Location Groups`](query-location-groups.md). To add or remove locations over time, use [`Update Location Group`](update-location-group.md).
+- To list existing groups, use [`Query Location Groups`](./query-location-groups.md). To add or remove locations over time, use [`Update Location Group`](./update-location-group.md).
 
 #### Choose Placements and Markets
 
-Before creating the campaign, select where you want your ads to run on Apple Maps, and choose one or more markets for the campaign. These choices populate the [`CampaignTargetingCreate`](campaigntargetingcreate.md) object. Here are the fields that control placement and market:
+Before creating the campaign, select where you want your ads to run on Apple Maps, and choose one or more markets for the campaign. These choices populate the [`CampaignTargetingCreate`](./campaigntargetingcreate.md) object. Here are the fields that control placement and market:
 
 | Field | What it controls |
 | --- | --- |
@@ -99,10 +100,10 @@ Apple Maps campaigns support two placements:
 
 | Value | Placement | Notes |
 | --- | --- | --- |
-| `MAPS_SEARCH_RESULTS` | Search results | Reaches people after they search for something specific and supports radius targeting at the ad group level. See [`AdGroupTargeting`](adgrouptargeting.md). |
+| `MAPS_SEARCH_RESULTS` | Search results | Reaches people after they search for something specific and supports radius targeting at the ad group level. See [`AdGroupTargeting`](./adgrouptargeting.md). |
 | `MAPS_SEARCH_HOME` | Search home | Reaches people at the top of the Suggested Places list, before they search. |
 
-To target both placements in a single campaign, omit `supplyPlacement` from `targeting` entirely: `supplySource: MAPS` alone covers both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME`. Listing both values together in `supplyPlacement.include` is rejected. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for details. Alternatively, create separate single-placement campaigns for independent budget control and reporting. The brand you identified earlier includes a `countryOrRegion` field indicating the markets where the brand is eligible. Set `countryOrRegion.include` to the subset of those markets this campaign should target, like this:
+To target both placements in a single campaign, omit `supplyPlacement` from `targeting` entirely: `supplySource: MAPS` alone covers both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME`. Listing both values together in `supplyPlacement.include` is rejected. See [`CampaignTargetingCreate.SupplyPlacement`](./campaigntargetingcreate/supplyplacement-data.dictionary.md) for details. Alternatively, create separate single-placement campaigns for independent budget control and reporting. The brand you identified earlier includes a `countryOrRegion` field indicating the markets where the brand is eligible. Set `countryOrRegion.include` to the subset of those markets this campaign should target, like this:
 
 ```json
 "targeting":
@@ -125,11 +126,11 @@ To target both placements in a single campaign, omit `supplyPlacement` from `tar
 }
 ```
 
-After creation, `supplyPlacement` and `countryOrRegion` remain mutable and you can update them via [`CampaignTargetingUpdate`](campaigntargetingupdate.md), but `supplySource` is fixed at creation and can’t be changed afterward.
+After creation, `supplyPlacement` and `countryOrRegion` remain mutable and you can update them via [`CampaignTargetingUpdate`](./campaigntargetingupdate.md), but `supplySource` is fixed at creation and can’t be changed afterward.
 
 #### Create an Apple Maps Campaign
 
-You can create a campaign with [`Create a Campaign`](post-campaigns.md), like this:
+You can create a campaign with [`Create a Campaign`](./post-campaigns.md), like this:
 
 ```json
 POST /v1/campaigns
@@ -157,9 +158,9 @@ POST /v1/campaigns
 
 #### Create an Ad Group with Location Targeting
 
-Create an ad group under your Apple Maps campaign with [`Create an Ad Group`](post-adgroups.md). Apple Maps ad groups support admin area, locality, postal code, location group, radius, and daypart targeting. You can also add keyword phrases and keyword categories for the Search results placement with [`Create a Keyword`](post-keywords.md), though keyword bids don’t apply to ad groups that use location groups.
+Create an ad group under your Apple Maps campaign with [`Create an Ad Group`](./post-adgroups.md). Apple Maps ad groups support admin area, locality, postal code, location group, radius, and daypart targeting. You can also add keyword phrases and keyword categories for the Search results placement with [`Create a Keyword`](./post-keywords.md), though keyword bids don’t apply to ad groups that use location groups.
 
-For a full description of targeting dimensions, see [`Ad Groups Endpoints`](adgroups-endpoints.md). Reference the location group IDs from the previous step in the `targeting.locationGroup` field to restrict delivery to your chosen locations. This ad group’s `bidStrategy` matches the `MAX_ENGAGEMENTS` / `TAP` pairing you set on the campaign.
+For a full description of targeting dimensions, see [Ad Groups Endpoints](./adgroups-endpoints.md). Reference the location group IDs from the previous step in the `targeting.locationGroup` field to restrict delivery to your chosen locations. This ad group’s `bidStrategy` matches the `MAX_ENGAGEMENTS` / `TAP` pairing you set on the campaign.
 
 ```json
 POST /v1/adgroups
@@ -183,7 +184,7 @@ POST /v1/adgroups
 
 #### Create a Creative
 
-A creative ties together an asset, promotional text, and the destination (always the Apple Maps place card) into the ad unit shown in Apple Maps. You can create one with [`Create an Ad Creative`](post-creatives.md), referencing the brand and the asset IDs from the previous steps, like this:
+A creative ties together an asset, promotional text, and the destination (always the Apple Maps place card) into the ad unit shown in Apple Maps. You can create one with [`Create an Ad Creative`](./post-creatives.md), referencing the brand and the asset IDs from the previous steps, like this:
 
 ```json
 POST /v1/creatives
@@ -208,11 +209,11 @@ POST /v1/creatives
 }
 ```
 
-To audit your creative library, use [`Query Ad Creatives`](post-creatives-query.md) and [`Get an Ad Creative`](get-creatives-_id_.md). Creatives go through a review process. If Apple Ads doesn’t approve a creative, [`Query Rejection Reasons for Brands`](query-policy-assignments-(rejection-reasons)-for-external-consumers.md) returns rejection reason details.
+To audit your creative library, use [`Query Ad Creatives`](./post-creatives-query.md) and [`Get an Ad Creative`](./get-creatives-_id_.md). Creatives go through a review process. If Apple Ads doesn’t approve a creative, [`Query Rejection Reasons for Brands`](./query-policy-assignments-%28rejection-reasons%29-for-external-consumers.md) returns rejection reason details.
 
 #### Create an Ad Linking a Creative and an Ad Group
 
-With the creative and ad group ready, create the ad with [`Create an Ad`](post-ads.md) to connect them, as in the code below. Ads for Apple Maps campaigns reference the creative ID you got from the Create a Creative section above.
+With the creative and ad group ready, create the ad with [`Create an Ad`](./post-ads.md) to connect them, as in the code below. Ads for Apple Maps campaigns reference the creative ID you got from the Create a Creative section above.
 
 ```json
 POST /v1/ads
@@ -227,7 +228,7 @@ POST /v1/ads
 
 #### Pull Apple Maps Campaign Reports
 
-Apple Maps campaigns use the `business-brands` promoted object type in all report endpoints. You can retrieve campaign-level performance with [`Campaigns Report (Brands)`](get-brand-campaign-reports.md) and drill into ad group or creative performance as needed, like this:
+Apple Maps campaigns use the `business-brands` promoted object type in all report endpoints. You can retrieve campaign-level performance with [`Campaigns Report (Brands)`](./get-brand-campaign-reports.md) and drill into ad group or creative performance as needed, like this:
 
 ```json
 POST /v1/reports/business-brands/campaigns/query
@@ -245,27 +246,28 @@ POST /v1/reports/business-brands/campaigns/query
 }
 ```
 
-Apple Maps campaigns don’t have a dedicated location-level report endpoint. Instead, you can group the campaign, ad group, and ad report endpoints by `locationId` to see performance broken down by individual map location; the keyword and search term report endpoints don’t support the `locationId` dimension. For deeper funnel analysis, use [`Ad Groups Report (Brands)`](get-brand-ad-group-reports.md), [`Ads Report (Brands)`](get-brand-ad-reports.md), [`Keywords Report (Brands)`](get-brand-keyword-reports.md), and [`Search Terms Report (Brands)`](get-brand-search-term-reports.md).
+Apple Maps campaigns don’t have a dedicated location-level report endpoint. Instead, you can group the campaign, ad group, and ad report endpoints by `locationId` to see performance broken down by individual map location; the keyword and search term report endpoints don’t support the `locationId` dimension. For deeper funnel analysis, use [`Ad Groups Report (Brands)`](./get-brand-ad-group-reports.md), [`Ads Report (Brands)`](./get-brand-ad-reports.md), [`Keywords Report (Brands)`](./get-brand-keyword-reports.md), and [`Search Terms Report (Brands)`](./get-brand-search-term-reports.md).
 
 #### Optimize Campaigns
 
 With Apple Maps campaigns running, you can:
 
-- Audit your asset library over time with [`Query Assets`](query-assets.md) and replace underperforming creatives.
-- Add keywords to ad groups with [`Create a Keyword`](post-keywords.md) for the Search results placement within Maps.
-- Audit any changes made to campaigns or creatives using [`Query Change History`](query-audit-summary-_-grouped-by-transaction.md).
+- Audit your asset library over time with [`Query Assets`](./query-assets.md) and replace underperforming creatives.
+- Add keywords to ad groups with [`Create a Keyword`](./post-keywords.md) for the Search results placement within Maps.
+- Audit any changes made to campaigns or creatives using [`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md).
 
 ## See Also
 
-- [Implementing OAuth for the Apple Ads Platform API](implementing-oauth-for-the-apple-ads-platform-api.md)
+### Essentials
+- [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md)
   Generate a key pair and request an access token to authenticate with the Apple Ads Platform API.
-- [Calling the Apple Ads Platform API](calling-apple-ads-platform-api.md)
+- [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md)
   Authenticate requests, structure endpoint calls, and interpret responses when using the Apple Ads Platform API.
-- [Using Client Libraries](client-libraries.md)
+- [Using Client Libraries](./client-libraries.md)
   Integrate the Apple Ads Platform API using an Apple-maintained client library instead of a custom HTTP client.
-- [Applying Rate Limits](rate-limits.md)
+- [Applying Rate Limits](./rate-limits.md)
   Track your remaining quota and pace requests.
-- [Advertising Your App on the App Store](journey-app-store-ads.md)
+- [Advertising Your App on the App Store](./journey-app-store-ads.md)
   Set up and launch an App Store campaign, from account verification through keyword targeting to performance reporting.
 
 

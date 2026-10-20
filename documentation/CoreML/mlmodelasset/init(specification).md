@@ -1,7 +1,8 @@
 # init(specification:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model asset from an in-memory model specification.
 
@@ -19,15 +20,20 @@ Creates a model asset from an in-memory model specification.
 convenience init(specification specificationData: Data) throws
 ```
 
+```objc
++ (instancetype) modelAssetWithSpecificationData:(NSData *) specificationData error:(NSError **) error;
+```
+
 ## Parameters
 
 - `specificationData`: The contents of a `.mlmodel` as a data blob.
 
 ## See Also
 
-- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
+### Creating a model asset
+- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](./init%28specification,blobmapping%29.md)
   Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
-- [convenience init(url: URL) throws](mlmodelasset/init(url:)-43988.md)
+- [convenience init(url: URL) throws](./init%28url%29-43988.md)
   Constructs a ModelAsset from a compiled model URL.
 
 

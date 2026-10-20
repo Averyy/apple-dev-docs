@@ -1,7 +1,8 @@
 # VisionResult.calculateImageAestheticsScores(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a calculate image aesthetics scores request.
 
@@ -22,7 +23,8 @@ case calculateImageAestheticsScores(CalculateImageAestheticsScoresRequest, Image
 
 ## See Also
 
-- [case detectLensSmudge(DetectLensSmudgeRequest, SmudgeObservation)](visionresult/detectlenssmudge(_:_:).md)
+### Getting the image aesthetics and lens smudge result
+- [case detectLensSmudge(DetectLensSmudgeRequest, SmudgeObservation)](./detectlenssmudge%28_,_%29.md)
 
 
 ---

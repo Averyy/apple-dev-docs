@@ -1,7 +1,8 @@
 # AVAudioRoutingArbiter
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for configuring macOS apps to participate in AirPods Automatic Switching.
 
@@ -12,6 +13,10 @@ An object for configuring macOS apps to participate in AirPods Automatic Switchi
 
 ```swift
 class AVAudioRoutingArbiter
+```
+
+```objc
+@interface AVAudioRoutingArbiter : NSObject
 ```
 
 #### Overview
@@ -39,45 +44,46 @@ func endCall() {
 ## Topics
 
 ### Creating a routing arbiter
-- [class var shared: AVAudioRoutingArbiter](avaudioroutingarbiter/shared.md)
+- [class var shared: AVAudioRoutingArbiter](./avaudioroutingarbiter/shared.md)
   The shared routing arbiter object.
 ### Joining AirPods automatic switching
-- [func begin(category: AVAudioRoutingArbiter.Category, completionHandler: (Bool, (any Error)?) -> Void)](avaudioroutingarbiter/begin(category:completionhandler:).md)
+- [func begin(category: AVAudioRoutingArbiter.Category, completionHandler: (Bool, (any Error)?) -> Void)](./avaudioroutingarbiter/begin%28category,completionhandler%29.md)
   Begins routing arbitration to take ownership of a nearby Bluetooth audio route.
-- [AVAudioRoutingArbiter.Category](avaudioroutingarbiter/category.md)
+- [AVAudioRoutingArbiter.Category](./avaudioroutingarbiter/category.md)
   Categories that describe the general nature of your app’s audio use.
-- [func leave()](avaudioroutingarbiter/leave.md)
+- [func leave()](./avaudioroutingarbiter/leave%28%29.md)
   Stops an app’s participation in audio routing arbitration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+### System audio
+- [Handling audio interruptions](./handling-audio-interruptions.md)
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](./responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](./routing-audio-to-specific-devices-in-multidevice-sessions.md)
   Map audio channels to specific devices in multiroute sessions for recording and playback.
-- [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
+- [Adding synthesized speech to calls](./adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
-- [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)
+- [Capturing stereo audio from built-In microphones](./capturing-stereo-audio-from-built-in-microphones.md)
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
-- [class AVAudioSession](avaudiosession.md)
+- [class AVAudioSession](./avaudiosession.md)
   An object that communicates to the system how you intend to use audio in your app.
-- [class AVAudioApplication](avaudioapplication.md)
+- [class AVAudioApplication](./avaudioapplication.md)
   An object that manages one or more audio sessions that belong to an app.
 
 

@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an array slice from the passed decoder.
 
@@ -20,13 +21,16 @@ Creates an array slice from the passed decoder.
 init(from decoder: any Decoder) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `Decodable`.
+
 ## Parameters
 
 - `decoder`: The object that decodes the array slice for initialization.
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](mlshapedarrayslice/encode(to:).md)
+### Encoding and decoding an array slice
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the array slice.
 
 

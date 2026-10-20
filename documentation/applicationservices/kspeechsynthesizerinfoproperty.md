@@ -1,7 +1,8 @@
 # kSpeechSynthesizerInfoProperty
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get information about the speech synthesizer being used on the specified speech channel.
 
@@ -14,11 +15,15 @@ Get information about the speech synthesizer being used on the specified speech 
 let kSpeechSynthesizerInfoProperty: CFString
 ```
 
+```c
+const CFStringRef kSpeechSynthesizerInfoProperty;
+```
+
 #### Discussion
 
-The value associated with this property is a `CFDictionary` object that contains information about the speech synthesizer being used on the specified speech channel. See [`Speech Synthesizer Information Keys`](speech_synthesis_manager/speech_synthesizer_information_keys.md) for a description of the keys present in the dictionary.
+The value associated with this property is a `CFDictionary` object that contains information about the speech synthesizer being used on the specified speech channel. See [Speech Synthesizer Information Keys](./speech_synthesis_manager/speech_synthesizer_information_keys.md) for a description of the keys present in the dictionary.
 
-This property works with the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) function.
+This property works with the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) function.
 
 
 ---

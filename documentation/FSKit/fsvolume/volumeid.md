@@ -1,7 +1,8 @@
 # volumeID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that uniquely identifies the volume.
 
@@ -14,9 +15,14 @@ An identifier that uniquely identifies the volume.
 var volumeID: FSVolume.Identifier { get }
 ```
 
+```objc
+@property (strong, readonly) FSVolumeIdentifier * volumeID;
+```
+
 ## See Also
 
-- [var name: FSFileName](fsvolume/name.md)
+### Accessing volume properties
+- [var name: FSFileName](./name.md)
   The name of the volume.
 
 

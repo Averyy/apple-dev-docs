@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image, in pixels.
 
@@ -11,7 +12,7 @@ The size of the image, in pixels.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var size: CGSize { get }
 
 ## See Also
 
-- [var data: UnsafeMutableRawPointer!](vimage_buffer/data.md)
+### Inspecting a buffer’s properties
+- [var data: UnsafeMutableRawPointer!](./data.md)
   A pointer to the top-left pixel of the image.
-- [var height: vImagePixelCount](vimage_buffer/height.md)
+- [var height: vImagePixelCount](./height.md)
   The height of the image, in pixels.
-- [var width: vImagePixelCount](vimage_buffer/width.md)
+- [var width: vImagePixelCount](./width.md)
   The width of the image, in pixels.
-- [var rowBytes: Int](vimage_buffer/rowbytes.md)
+- [var rowBytes: Int](./rowbytes.md)
   The distance, in bytes, between the start of one pixel row and the next in an image, including any unused space between them.
 
 

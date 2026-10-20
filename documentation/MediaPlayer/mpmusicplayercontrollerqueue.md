@@ -1,7 +1,8 @@
 # MPMusicPlayerControllerQueue
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable queue containing the media items to play.
 
@@ -18,43 +19,48 @@ An immutable queue containing the media items to play.
 class MPMusicPlayerControllerQueue
 ```
 
+```objc
+@interface MPMusicPlayerControllerQueue : NSObject
+```
+
 #### Overview
 
-An `MPMusicPlayerControllerQueue` object contains the current queue for an application queue music player. To add or remove media items from a playing queue, use [`perform(queueTransaction:completionHandler:)`](mpmusicplayerapplicationcontroller/perform(queuetransaction:completionhandler:).md). The results of the method is an `MPMusicPlayerControllerQueue` object that updates the playing queue. You don’t create your own instance of this class.
+An `MPMusicPlayerControllerQueue` object contains the current queue for an application queue music player. To add or remove media items from a playing queue, use [`perform(queueTransaction:completionHandler:)`](./mpmusicplayerapplicationcontroller/perform%28queuetransaction,completionhandler%29.md). The results of the method is an `MPMusicPlayerControllerQueue` object that updates the playing queue. You don’t create your own instance of this class.
 
 ## Topics
 
 ### Inspecting queue media items
-- [var items: [MPMediaItem]](mpmusicplayercontrollerqueue/items.md)
+- [var items: [MPMediaItem]](./mpmusicplayercontrollerqueue/items.md)
   The media items in the queue.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MPMusicPlayerControllerMutableQueue](mpmusicplayercontrollermutablequeue.md)
+- [MPMusicPlayerControllerMutableQueue](./mpmusicplayercontrollermutablequeue.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPMusicPlayerControllerMutableQueue](mpmusicplayercontrollermutablequeue.md)
+### Media player queues
+- [class MPMusicPlayerControllerMutableQueue](./mpmusicplayercontrollermutablequeue.md)
   A mutable queue containing the media items to play.
-- [class MPMusicPlayerApplicationController](mpmusicplayerapplicationcontroller.md)
+- [class MPMusicPlayerApplicationController](./mpmusicplayerapplicationcontroller.md)
   A media player object that you use to revise the queue that’s currently playing.
-- [class MPMusicPlayerMediaItemQueueDescriptor](mpmusicplayermediaitemqueuedescriptor.md)
+- [class MPMusicPlayerMediaItemQueueDescriptor](./mpmusicplayermediaitemqueuedescriptor.md)
   A set of properties and methods for modifying audio media items in the player’s media queue.
-- [class MPMusicPlayerStoreQueueDescriptor](mpmusicplayerstorequeuedescriptor.md)
+- [class MPMusicPlayerStoreQueueDescriptor](./mpmusicplayerstorequeuedescriptor.md)
   A set of properties and methods for modifying items, based on their store identifier, in the player’s queue.
-- [class MPMusicPlayerPlayParametersQueueDescriptor](mpmusicplayerplayparametersqueuedescriptor.md)
+- [class MPMusicPlayerPlayParametersQueueDescriptor](./mpmusicplayerplayparametersqueuedescriptor.md)
   A set of properties and methods for modifying how to play items, based on play parameters the framework returns.
-- [class MPMusicPlayerQueueDescriptor](mpmusicplayerqueuedescriptor.md)
+- [class MPMusicPlayerQueueDescriptor](./mpmusicplayerqueuedescriptor.md)
   The abstract base class for audio media item and store queue descriptors.
 
 

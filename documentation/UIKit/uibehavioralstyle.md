@@ -1,7 +1,8 @@
 # UIBehavioralStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how a control behaves in apps built with Mac Catalyst.
 
@@ -17,11 +18,15 @@ Constants that indicate how a control behaves in apps built with Mac Catalyst.
 enum UIBehavioralStyle
 ```
 
+```c
+enum UIBehavioralStyle : NSUInteger;
+```
+
 #### Overview
 
-If you build your app with Mac Catalyst and use the Mac idiom, you can specify the preferred behavior style for a control to change its appearance and behavior. For instance, consider an iPad app that displays a slider with a custom thumb image. By default, the Mac version of the app, built with Mac Catalyst, displays a standard macOS slider when the user interface idiom of the app is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
+If you build your app with Mac Catalyst and use the Mac idiom, you can specify the preferred behavior style for a control to change its appearance and behavior. For instance, consider an iPad app that displays a slider with a custom thumb image. By default, the Mac version of the app, built with Mac Catalyst, displays a standard macOS slider when the user interface idiom of the app is [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md).
 
-To provide a consistent appearance of the slider in the iPad and Mac versions of the app, set the [`preferredBehavioralStyle`](uislider/preferredbehavioralstyle.md) of the slider to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md). This behavioral style tells the slider to behave as if the user interface idiom is [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) even though the app uses the Mac idiom.
+To provide a consistent appearance of the slider in the iPad and Mac versions of the app, set the [`preferredBehavioralStyle`](./uislider/preferredbehavioralstyle.md) of the slider to [`UIBehavioralStyle.pad`](./uibehavioralstyle/pad.md). This behavioral style tells the slider to behave as if the user interface idiom is [`UIUserInterfaceIdiom.pad`](./uiuserinterfaceidiom/pad.md) even though the app uses the Mac idiom.
 
 macOS doesn’t scale the interface of apps that use the Mac idiom, so you may need to update your app to accommodate size differences. For example, a slider with a custom thumb image may need a different image for the Mac app than the one used in the iPad app.
 
@@ -39,35 +44,36 @@ if slider.traitCollection.userInterfaceIdiom == .mac {
 }
 ```
 
-To learn more about the Mac idiom, see [`Choosing a user interface idiom for your Mac app`](choosing-a-user-interface-idiom-for-your-mac-app.md).
+To learn more about the Mac idiom, see [Choosing a user interface idiom for your Mac app](./choosing-a-user-interface-idiom-for-your-mac-app.md).
 
 ## Topics
 
 ### Styles
-- [UIBehavioralStyle.automatic](uibehavioralstyle/automatic.md)
+- [UIBehavioralStyle.automatic](./uibehavioralstyle/automatic.md)
   A style the system chooses based on the app’s targeted platform.
-- [UIBehavioralStyle.pad](uibehavioralstyle/pad.md)
+- [UIBehavioralStyle.pad](./uibehavioralstyle/pad.md)
   A style that indicates that a control appears and behaves as it does in iPadOS.
-- [UIBehavioralStyle.mac](uibehavioralstyle/mac.md)
+- [UIBehavioralStyle.mac](./uibehavioralstyle/mac.md)
   A style that indicates that a control appears and behaves as it does in macOS.
 ### Initializers
-- [init?(rawValue: UInt)](uibehavioralstyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uibehavioralstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var behavioralStyle: UIBehavioralStyle](uibutton/behavioralstyle.md)
+### Specifying the behavioral style
+- [var behavioralStyle: UIBehavioralStyle](./uibutton/behavioralstyle.md)
   The style that determines how the button behaves.
-- [var preferredBehavioralStyle: UIBehavioralStyle](uibutton/preferredbehavioralstyle.md)
+- [var preferredBehavioralStyle: UIBehavioralStyle](./uibutton/preferredbehavioralstyle.md)
   The preferred behavioral style.
 
 

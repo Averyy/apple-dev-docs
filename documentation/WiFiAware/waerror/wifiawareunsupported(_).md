@@ -1,7 +1,8 @@
 # WAError.wifiAwareUnsupported(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if Wi-Fi Aware isn’t supported on the device.
 
@@ -18,7 +19,8 @@ case wifiAwareUnsupported(WAError.WiFiAwareUnsupportedDetails)
 
 ## See Also
 
-- [WAError.WiFiAwareUnsupportedDetails](waerror/wifiawareunsupporteddetails.md)
+### Checking for unsupported host hardware
+- [WAError.WiFiAwareUnsupportedDetails](./wifiawareunsupporteddetails.md)
   The optional details describing the unavailability of Wi-Fi Aware on the device.
 
 

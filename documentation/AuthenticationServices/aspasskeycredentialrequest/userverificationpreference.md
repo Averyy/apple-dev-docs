@@ -1,7 +1,8 @@
 # userVerificationPreference
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relying party’s user verification preference.
 
@@ -18,15 +19,20 @@ The relying party’s user verification preference.
 var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference { get set }
 ```
 
+```objc
+@property (nonatomic) ASAuthorizationPublicKeyCredentialUserVerificationPreference userVerificationPreference;
+```
+
 ## See Also
 
-- [var clientDataHash: Data](aspasskeycredentialrequest/clientdatahash.md)
+### Viewing passkey challenge information
+- [var clientDataHash: Data](./clientdatahash.md)
   The hash of the client data for this assertion.
-- [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](aspasskeycredentialrequest/supportedalgorithms-74mad.md)
+- [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](./supportedalgorithms-74mad.md)
   A list of cryptographic signature algorithms that the relying party supports.
-- [var extensionInput: ASPasskeyCredentialExtensionInput](aspasskeycredentialrequest/extensioninput.md)
+- [var extensionInput: ASPasskeyCredentialExtensionInput](./extensioninput.md)
   An input for WebAuthn extensions.
-- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+- [enum ASPasskeyCredentialExtensionInput](../aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
 
 

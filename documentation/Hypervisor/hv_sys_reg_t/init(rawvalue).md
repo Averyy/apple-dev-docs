@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new system-register instance.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: UInt16)
 
 ## See Also
 
-- [init(UInt16)](hv_sys_reg_t/init(_:).md)
+### Initializers
+- [init(UInt16)](./init%28_%29.md)
   Creates a new system-register instance.
 
 

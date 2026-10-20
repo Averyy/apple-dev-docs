@@ -1,12 +1,13 @@
 # NSFontManager
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The center of activity for the font-conversion system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The center of activity for the font-conversion system.
 class NSFontManager
 ```
 
+```objc
+@interface NSFontManager : NSObject
+```
+
 #### Overview
 
-The font manager records the currently selected font, updates the Font panel and Font menu to reflect the selected font, initiates font changes, and converts fonts in response to requests from text-bearing objects. In a more prosaic role, [`NSFontManager`](nsfontmanager.md) can be queried for the fonts available to the application and for the particular attributes of a font, such as whether it’s condensed or extended.
+The font manager records the currently selected font, updates the Font panel and Font menu to reflect the selected font, initiates font changes, and converts fonts in response to requests from text-bearing objects. In a more prosaic role, [`NSFontManager`](./nsfontmanager.md) can be queried for the fonts available to the application and for the particular attributes of a font, such as whether it’s condensed or extended.
 
 You typically set up a font manager and the Font menu using Interface Builder. However, you can also do so programmatically by getting the shared font manager instance and having it create the standard Font menu at runtime:
 
@@ -27,128 +32,129 @@ NSMenu *fontMenu = [fontManager fontMenu:YES];
 
 You can then add the Font menu to your app’s main menu. After the Font menu is installed, your app automatically gains the functionality of both the Font menu and the Font panel.
 
-Font collections are managed by [`NSFontManager`](nsfontmanager.md).
+Font collections are managed by [`NSFontManager`](./nsfontmanager.md).
 
 ## Topics
 
 ### Getting the Shared Font Manager
-- [class var shared: NSFontManager](nsfontmanager/shared.md)
+- [class var shared: NSFontManager](./nsfontmanager/shared.md)
   Returns the shared instance of the font manager for the application, creating it if necessary.
 ### Changing the Default Font Conversion Classes
-- [class func setFontManagerFactory(AnyClass?)](nsfontmanager/setfontmanagerfactory(_:).md)
+- [class func setFontManagerFactory(AnyClass?)](./nsfontmanager/setfontmanagerfactory%28_%29.md)
   Sets the class that creates the shared font manager object.
-- [class func setFontPanelFactory(AnyClass?)](nsfontmanager/setfontpanelfactory(_:).md)
+- [class func setFontPanelFactory(AnyClass?)](./nsfontmanager/setfontpanelfactory%28_%29.md)
   Sets the class that creates the shared Font panel object.
 ### Getting Available Fonts
-- [var availableFonts: [String]](nsfontmanager/availablefonts.md)
-  The names of the fonts available in the system (not the [`NSFont`](nsfont.md) objects themselves).
-- [var availableFontFamilies: [String]](nsfontmanager/availablefontfamilies.md)
+- [var availableFonts: [String]](./nsfontmanager/availablefonts.md)
+  The names of the fonts available in the system (not the [`NSFont`](./nsfont.md) objects themselves).
+- [var availableFontFamilies: [String]](./nsfontmanager/availablefontfamilies.md)
   The names of the font families available in the system.
-- [func availableFontNames(with: NSFontTraitMask) -> [String]?](nsfontmanager/availablefontnames(with:).md)
+- [func availableFontNames(with: NSFontTraitMask) -> [String]?](./nsfontmanager/availablefontnames%28with%29.md)
   Returns the names of the fonts available in the system whose traits are described exactly by the given font trait mask (not the `NSFont` objects themselves).
-- [func availableMembers(ofFontFamily: String) -> [[Any]]?](nsfontmanager/availablemembers(offontfamily:).md)
+- [func availableMembers(ofFontFamily: String) -> [[Any]]?](./nsfontmanager/availablemembers%28offontfamily%29.md)
   Returns an array with one entry for each available member of a font family.
 ### Setting and Examining the Selected Font
-- [func setSelectedFont(NSFont, isMultiple: Bool)](nsfontmanager/setselectedfont(_:ismultiple:).md)
+- [func setSelectedFont(NSFont, isMultiple: Bool)](./nsfontmanager/setselectedfont%28_,ismultiple%29.md)
   Records the specified font as the currently selected font and updates the Font panel.
-- [var selectedFont: NSFont?](nsfontmanager/selectedfont.md)
+- [var selectedFont: NSFont?](./nsfontmanager/selectedfont.md)
   The currently selected font object.
-- [var isMultiple: Bool](nsfontmanager/ismultiple.md)
+- [var isMultiple: Bool](./nsfontmanager/ismultiple.md)
   A Boolean value that indicates whether the currently selected font has multiple fonts.
-- [func sendAction() -> Bool](nsfontmanager/sendaction.md)
+- [func sendAction() -> Bool](./nsfontmanager/sendaction%28%29.md)
   A Boolean value that indicates whether a responder handled the font manager’s action message.
-- [func localizedName(forFamily: String, face: String?) -> String](nsfontmanager/localizedname(forfamily:face:).md)
+- [func localizedName(forFamily: String, face: String?) -> String](./nsfontmanager/localizedname%28forfamily,face%29.md)
   Returns a localized string with the name of the specified font family and face, if one exists.
 ### Sending Action Methods
-- [func addFontTrait(Any?)](nsfontmanager/addfonttrait(_:).md)
+- [func addFontTrait(Any?)](./nsfontmanager/addfonttrait%28_%29.md)
   Adds a trait to the font.
-- [func removeFontTrait(Any?)](nsfontmanager/removefonttrait(_:).md)
+- [func removeFontTrait(Any?)](./nsfontmanager/removefonttrait%28_%29.md)
   Removes a trait from the font.
-- [func modifyFont(Any?)](nsfontmanager/modifyfont(_:).md)
+- [func modifyFont(Any?)](./nsfontmanager/modifyfont%28_%29.md)
   Modifies a trait of the font.
-- [func modifyFontViaPanel(Any?)](nsfontmanager/modifyfontviapanel(_:).md)
+- [func modifyFontViaPanel(Any?)](./nsfontmanager/modifyfontviapanel%28_%29.md)
   Modifies a font trait using input from the Font panel.
-- [func orderFrontStylesPanel(Any?)](nsfontmanager/orderfrontstylespanel(_:).md)
+- [func orderFrontStylesPanel(Any?)](./nsfontmanager/orderfrontstylespanel%28_%29.md)
   Opens the Font Styles panel.
-- [func orderFrontFontPanel(Any?)](nsfontmanager/orderfrontfontpanel(_:).md)
+- [func orderFrontFontPanel(Any?)](./nsfontmanager/orderfrontfontpanel%28_%29.md)
   Opens the Font panel, creating it if necessary, and displays that panel in front of the app’s windows.
-- [enum NSFontAction](nsfontaction.md)
+- [enum NSFontAction](./nsfontaction.md)
   Actions that modify a font.
 ### Converting Fonts Automatically
-- [func convert(NSFont) -> NSFont](nsfontmanager/convert(_:).md)
+- [func convert(NSFont) -> NSFont](./nsfontmanager/convert%28_%29.md)
   Converts the given font according to the object that initiated a font change, typically the Font panel or Font menu.
 ### Converting Fonts Manually
-- [func convert(NSFont, toFace: String) -> NSFont?](nsfontmanager/convert(_:toface:).md)
+- [func convert(NSFont, toFace: String) -> NSFont?](./nsfontmanager/convert%28_,toface%29.md)
   Returns a font whose traits are as similar as possible to those of the given font except for the typeface, which is changed to the given typeface.
-- [func convert(NSFont, toFamily: String) -> NSFont](nsfontmanager/convert(_:tofamily:).md)
+- [func convert(NSFont, toFamily: String) -> NSFont](./nsfontmanager/convert%28_,tofamily%29.md)
   Returns a font whose traits are as similar as possible to those of the given font except for the font family, which is changed to the given family.
-- [func convert(NSFont, toHaveTrait: NSFontTraitMask) -> NSFont](nsfontmanager/convert(_:tohavetrait:).md)
+- [func convert(NSFont, toHaveTrait: NSFontTraitMask) -> NSFont](./nsfontmanager/convert%28_,tohavetrait%29.md)
   Returns a new version of the font object containing a single additional trait.
-- [func convert(NSFont, toNotHaveTrait: NSFontTraitMask) -> NSFont](nsfontmanager/convert(_:tonothavetrait:).md)
+- [func convert(NSFont, toNotHaveTrait: NSFontTraitMask) -> NSFont](./nsfontmanager/convert%28_,tonothavetrait%29.md)
   Returns a new version of a font object without the specified traits.
-- [func convert(NSFont, toSize: CGFloat) -> NSFont](nsfontmanager/convert(_:tosize:).md)
+- [func convert(NSFont, toSize: CGFloat) -> NSFont](./nsfontmanager/convert%28_,tosize%29.md)
   Returns a font object whose traits are the same as those of the given font, except for the size, which is changed to the given size.
-- [func convertWeight(Bool, of: NSFont) -> NSFont](nsfontmanager/convertweight(_:of:).md)
+- [func convertWeight(Bool, of: NSFont) -> NSFont](./nsfontmanager/convertweight%28_,of%29.md)
   Returns a font object whose weight is greater or lesser than that of the given font.
-- [var currentFontAction: NSFontAction](nsfontmanager/currentfontaction.md)
+- [var currentFontAction: NSFontAction](./nsfontmanager/currentfontaction.md)
   The current font conversion action.
-- [func convertFontTraits(NSFontTraitMask) -> NSFontTraitMask](nsfontmanager/convertfonttraits(_:).md)
+- [func convertFontTraits(NSFontTraitMask) -> NSFontTraitMask](./nsfontmanager/convertfonttraits%28_%29.md)
   Converts font traits to a new traits mask value.
 ### Getting a Particular Font
-- [func font(withFamily: String, traits: NSFontTraitMask, weight: Int, size: CGFloat) -> NSFont?](nsfontmanager/font(withfamily:traits:weight:size:).md)
+- [func font(withFamily: String, traits: NSFontTraitMask, weight: Int, size: CGFloat) -> NSFont?](./nsfontmanager/font%28withfamily,traits,weight,size%29.md)
   Attempts to load a font with the specified characteristics.
 ### Examining Fonts
-- [func traits(of: NSFont) -> NSFontTraitMask](nsfontmanager/traits(of:).md)
+- [func traits(of: NSFont) -> NSFontTraitMask](./nsfontmanager/traits%28of%29.md)
   Returns the traits of the given font.
-- [func fontNamed(String, hasTraits: NSFontTraitMask) -> Bool](nsfontmanager/fontnamed(_:hastraits:).md)
+- [func fontNamed(String, hasTraits: NSFontTraitMask) -> Bool](./nsfontmanager/fontnamed%28_,hastraits%29.md)
   Indicates whether the given font has all the specified traits.
-- [struct NSFontTraitMask](nsfonttraitmask.md)
+- [struct NSFontTraitMask](./nsfonttraitmask.md)
   Constants for isolating specific traits of a font.
-- [func weight(of: NSFont) -> Int](nsfontmanager/weight(of:).md)
+- [func weight(of: NSFont) -> Int](./nsfontmanager/weight%28of%29.md)
   Returns an approximation of the specified font’s weight.
 ### Managing the Font Panel and Font Menu
-- [var isEnabled: Bool](nsfontmanager/isenabled.md)
+- [var isEnabled: Bool](./nsfontmanager/isenabled.md)
   A Boolean value that indicates whether the font conversion system’s Font panel and Font menu items are enabled.
-- [func fontPanel(Bool) -> NSFontPanel?](nsfontmanager/fontpanel(_:).md)
+- [func fontPanel(Bool) -> NSFontPanel?](./nsfontmanager/fontpanel%28_%29.md)
   Returns the application’s shared Font panel object, creating it if necessary.
-- [func setFontMenu(NSMenu)](nsfontmanager/setfontmenu(_:).md)
+- [func setFontMenu(NSMenu)](./nsfontmanager/setfontmenu%28_%29.md)
   Records the given menu as the application’s Font menu.
-- [func fontMenu(Bool) -> NSMenu?](nsfontmanager/fontmenu(_:).md)
+- [func fontMenu(Bool) -> NSMenu?](./nsfontmanager/fontmenu%28_%29.md)
   Returns the menu that’s connected to the font conversion system, creating it if necessary.
 ### Accessing the Action Property
-- [var action: Selector](nsfontmanager/action.md)
+- [var action: Selector](./nsfontmanager/action.md)
   The action sent to the first responder when the user selects a new font from the Font panel or chooses a command from the Font menu.
-- [var target: AnyObject?](nsfontmanager/target.md)
+- [var target: AnyObject?](./nsfontmanager/target.md)
   The object that receives action messages related to the font manager.
 ### Setting Attributes
-- [func setSelectedAttributes([String : Any], isMultiple: Bool)](nsfontmanager/setselectedattributes(_:ismultiple:).md)
+- [func setSelectedAttributes([String : Any], isMultiple: Bool)](./nsfontmanager/setselectedattributes%28_,ismultiple%29.md)
   Informs the Font panel that the specified font attributes changed for the selected text.
-- [func convertAttributes([String : Any]) -> [String : Any]](nsfontmanager/convertattributes(_:).md)
+- [func convertAttributes([String : Any]) -> [String : Any]](./nsfontmanager/convertattributes%28_%29.md)
   Converts attributes in response to an object initiating an attribute change, typically the Font panel or Font menu.
 ### Deprecated
-- [Deprecated symbols](nsfontmanager-deprecated-symbols.md)
+- [Deprecated symbols](./nsfontmanager-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSMenuItemValidation](./nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSFontCollection](nsfontcollection.md)
+### Management
+- [class NSFontCollection](./nsfontcollection.md)
   A font collection, which is a group of font descriptors taken together as a single object.
-- [class NSMutableFontCollection](nsmutablefontcollection.md)
+- [class NSMutableFontCollection](./nsmutablefontcollection.md)
   A mutable collection of font descriptors taken together as a single object.
-- [struct NSFontCollectionOptions](nsfontcollectionoptions.md)
+- [struct NSFontCollectionOptions](./nsfontcollectionoptions.md)
   Constants that support font collection management.
 
 

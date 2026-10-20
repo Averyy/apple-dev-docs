@@ -1,7 +1,8 @@
 # init(accessory:forProtocol:)
 
 **Framework**: External Accessory  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the session for the specified accessory and protocol.
 
@@ -19,6 +20,10 @@ Initializes the session for the specified accessory and protocol.
 init?(accessory: EAAccessory, forProtocol protocolString: String)
 ```
 
+```objc
+- (instancetype) initWithAccessory:(EAAccessory *) accessory forProtocol:(NSString *) protocolString;
+```
+
 #### Return Value
 
 The initialized session object. This method may return `nil` if the accessory does not recognize the specified protocol or there was an error communicating with the accessory.
@@ -29,7 +34,7 @@ There can be only one session object at a time for a given accessory and protoco
 
 ## Parameters
 
-- `accessory`: The accessory with which you want to communicate. You can get a list of accessory objects from the [`EAAccessoryManager`](eaaccessorymanager.md) object.
+- `accessory`: The accessory with which you want to communicate. You can get a list of accessory objects from the [`EAAccessoryManager`](../eaaccessorymanager.md) object.
 - `protocolString`: The protocol to use when communicating with the accessory. This protocol must be one that the accessory understands. All communications with the accessory are expected to use this protocol.
 
 

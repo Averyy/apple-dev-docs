@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a central manager feature instance.
 

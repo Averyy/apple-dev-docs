@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue.random(a:b:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system will choose a random color for each particle between the given two Colors.
 

@@ -1,7 +1,8 @@
 # PassFields.AdditionalInfoFields
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents fields that display in the Additional Info section below a pass.
 
@@ -12,7 +13,7 @@ An object that represents fields that display in the Additional Info section bel
 
 ## Declaration
 
-```swift
+```
 object PassFields.AdditionalInfoFields
 ```
 
@@ -23,7 +24,7 @@ Only poster event ticket passes support the Additional Info section.
 ## Relationships
 
 ### Inherits From
-- [PassFieldContent](passfieldcontent.md)
+- [PassFieldContent](../passfieldcontent.md)
 
 
 ---

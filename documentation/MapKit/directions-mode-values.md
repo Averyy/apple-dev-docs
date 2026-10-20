@@ -1,30 +1,32 @@
 # Directions mode values
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: API Collection
 
 Strings that represent the possible values of the launch options direction mode key.
 
 #### Overview
 
-For a list of possible values, see the [`MKLaunchOptionsDirectionsModeKey`](mklaunchoptionsdirectionsmodekey.md) documentation.
+For a list of possible values, see the [`MKLaunchOptionsDirectionsModeKey`](./mklaunchoptionsdirectionsmodekey.md) documentation.
 
 ## Topics
 
 ### Directions keys
-- [let MKLaunchOptionsDirectionsModeDriving: String](mklaunchoptionsdirectionsmodedriving.md)
+- [let MKLaunchOptionsDirectionsModeDriving: String](./mklaunchoptionsdirectionsmodedriving.md)
   Driving directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeWalking: String](mklaunchoptionsdirectionsmodewalking.md)
+- [let MKLaunchOptionsDirectionsModeWalking: String](./mklaunchoptionsdirectionsmodewalking.md)
   Walking directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeTransit: String](mklaunchoptionsdirectionsmodetransit.md)
+- [let MKLaunchOptionsDirectionsModeTransit: String](./mklaunchoptionsdirectionsmodetransit.md)
   Public transit directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeCycling: String](mklaunchoptionsdirectionsmodecycling.md)
+- [let MKLaunchOptionsDirectionsModeCycling: String](./mklaunchoptionsdirectionsmodecycling.md)
   Cycling directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeDefault: String](mklaunchoptionsdirectionsmodedefault.md)
+- [let MKLaunchOptionsDirectionsModeDefault: String](./mklaunchoptionsdirectionsmodedefault.md)
   Directions that match the user’s preferred transportation type.
 
 ## See Also
 
-- [Launch options dictionary keys](launch-options-dictionary-keys.md)
+### Opening items at launch time
+- [Launch options dictionary keys](./launch-options-dictionary-keys.md)
   Launch options to specify when opening map items in the Maps app.
 
 

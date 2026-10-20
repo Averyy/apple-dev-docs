@@ -1,7 +1,8 @@
 # MDLLightType.directional
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The light source illuminates a scene from a uniform direction regardless of its position.
 
@@ -19,29 +20,34 @@ The light source illuminates a scene from a uniform direction regardless of its 
 case directional
 ```
 
+```c
+MDLLightTypeDirectional
+```
+
 ## See Also
 
-- [MDLLightType.unknown](mdllighttype/unknown.md)
+### Constants
+- [MDLLightType.unknown](./unknown.md)
   The type of the light is unknown or has not been initialized.
-- [MDLLightType.ambient](mdllighttype/ambient.md)
+- [MDLLightType.ambient](./ambient.md)
   The light source should illuminate a scene evenly regardless of position or direction.
-- [MDLLightType.spot](mdllighttype/spot.md)
+- [MDLLightType.spot](./spot.md)
   The light source illuminates a scene from a specific position and direction.
-- [MDLLightType.point](mdllighttype/point.md)
+- [MDLLightType.point](./point.md)
   The light source illuminates a scene in all directions from a specific position.
-- [MDLLightType.linear](mdllighttype/linear.md)
+- [MDLLightType.linear](./linear.md)
   The light source illuminates a scene in all directions from an area in the shape of a line.
-- [MDLLightType.discArea](mdllighttype/discarea.md)
+- [MDLLightType.discArea](./discarea.md)
   The light source illuminates a scene in all directions from an area in the shape of a disc.
-- [MDLLightType.rectangularArea](mdllighttype/rectangulararea.md)
+- [MDLLightType.rectangularArea](./rectangulararea.md)
   The light source illuminates a scene in all directions from an area in the shape of a rectangle.
-- [MDLLightType.superElliptical](mdllighttype/superelliptical.md)
+- [MDLLightType.superElliptical](./superelliptical.md)
   The light source illuminates a scene in all directions from an area in the shape of a superellipse.
-- [MDLLightType.photometric](mdllighttype/photometric.md)
+- [MDLLightType.photometric](./photometric.md)
   The illumination from the light is determined by a photometric profile.
-- [MDLLightType.probe](mdllighttype/probe.md)
+- [MDLLightType.probe](./probe.md)
   The illumination from the light is determined by texture images representing a sample of a scene at a specific point.
-- [MDLLightType.environment](mdllighttype/environment.md)
+- [MDLLightType.environment](./environment.md)
   The illumination from the light is determined by texture images representing a sample of the surrounding environment for a scene.
 
 

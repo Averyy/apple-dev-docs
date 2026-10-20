@@ -1,7 +1,8 @@
 # TableColumnCustomization
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the state of the columns in a table.
 
@@ -52,7 +53,7 @@ struct BugReportTable: View {
 
 The above example creates a table with three columns. On macOS, these columns can be reordered or hidden and shown by the user of the app. Their configuration will be saved and restored with the window on relaunches of the app, using the “BugReportTableConfig” scene storage identifier.
 
-The state of a specific column is stored relative to its customization identifier, using using the value from the [`customizationID(_:)`](tablecolumncontent/customizationid(_:).md) modifier. When column customization is encoded and decoded, it relies on stable identifiers to restore the associate the saved state with a specific column. If a table column does not have a customization identifier, it will not be customizable.
+The state of a specific column is stored relative to its customization identifier, using using the value from the [`customizationID(_:)`](./tablecolumncontent/customizationid%28_%29.md) modifier. When column customization is encoded and decoded, it relies on stable identifiers to restore the associate the saved state with a specific column. If a table column does not have a customization identifier, it will not be customizable.
 
 These identifiers can also be used to programmatically change column customizations, such as programmatically hiding a column:
 
@@ -82,28 +83,29 @@ struct MyVisibilityView: View {
 ## Topics
 
 ### Creating a table column customization
-- [init()](tablecolumncustomization/init.md)
+- [init()](./tablecolumncustomization/init%28%29.md)
   Creates an empty table column customization.
 ### Managing the customization
-- [func resetOrder()](tablecolumncustomization/resetorder.md)
+- [func resetOrder()](./tablecolumncustomization/resetorder%28%29.md)
   Resets the column order back to the default, preserving the customized visibility and size.
-- [subscript(visibility _: String) -> Visibility](tablecolumncustomization/subscript(visibility:).md)
+- [subscript(visibility _: String) -> Visibility](./tablecolumncustomization/subscript%28visibility%29.md)
   The visibility of the column identified by its identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func tableColumnHeaders(Visibility) -> some View](view/tablecolumnheaders(_:).md)
+### Customizing columns
+- [func tableColumnHeaders(Visibility) -> some View](./view/tablecolumnheaders%28_%29.md)
   Controls the visibility of a `Table`’s column header views.
-- [struct TableColumnCustomizationBehavior](tablecolumncustomizationbehavior.md)
+- [struct TableColumnCustomizationBehavior](./tablecolumncustomizationbehavior.md)
   A set of customization behaviors of a column that a table can offer to a user.
 
 

@@ -1,7 +1,8 @@
 # cumulativeSum(axis:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a cumulative sum operation to the the graph.
 
@@ -19,6 +20,8 @@ Adds a cumulative sum operation to the the graph.
 ```swift
 func cumulativeSum(axis: Int) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

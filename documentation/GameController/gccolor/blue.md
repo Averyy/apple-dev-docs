@@ -1,7 +1,8 @@
 # blue
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normalized value of the blue component ranging from 0 to 1.
 
@@ -19,11 +20,16 @@ The normalized value of the blue component ranging from 0 to 1.
 var blue: Float { get }
 ```
 
+```objc
+@property (readonly) float blue;
+```
+
 ## See Also
 
-- [var red: Float](gccolor/red.md)
+### Setting color values
+- [var red: Float](./red.md)
   The normalized value of the red component ranging from 0 to 1.
-- [var green: Float](gccolor/green.md)
+- [var green: Float](./green.md)
   The normalized value of the green component ranging from 0 to 1.
 
 

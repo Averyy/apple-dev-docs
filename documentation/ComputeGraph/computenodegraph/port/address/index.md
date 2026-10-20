@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the port within the node’s input or output list.
 
@@ -12,7 +13,7 @@ The index of the port within the node’s input or output list.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # Version
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A version according to the semantic versioning specification.
 
@@ -13,7 +14,7 @@ struct Version
 
 #### Overview
 
-A package version consists of three integers separated by periods, for example `1.0.0`. It must conform to the semantic versioning standard in order to ensure that your package behaves in a predictable manner once developers update their package dependency to a newer version. To achieve predictability, the semantic versioning specification proposes a set of rules and requirements that dictate how version numbers are assigned and incremented. To learn more about the semantic versioning specification, visit [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org).
+A package version consists of three integers separated by periods, for example `1.0.0`. It must conform to the semantic versioning standard in order to ensure that your package behaves in a predictable manner once developers update their package dependency to a newer version. To achieve predictability, the semantic versioning specification proposes a set of rules and requirements that dictate how version numbers are assigned and incremented. To learn more about the semantic versioning specification, visit [Semantic Versioning 2.0.0](https://semver.org).
 
 - **The major version**: The first digit of a version, or *major version*, signifies breaking changes to the API that require updates to existing clients. For example, the semantic versioning specification considers renaming an existing type, removing a method, or changing a method’s signature breaking changes. This also includes any backward-incompatible bug fixes or behavioral changes of the existing API.
 - **The minor version**: Update the second digit of a version, or *minor version*, if you add functionality in a backward-compatible manner. For example, the semantic versioning specification considers adding a new method or type without changing any other API to be backward-compatible.
@@ -22,52 +23,53 @@ A package version consists of three integers separated by periods, for exam
 ## Topics
 
 ### Creating a new version
-- [init(Int, Int, Int, prereleaseIdentifiers: [String], buildMetadataIdentifiers: [String])](version/init(_:_:_:prereleaseidentifiers:buildmetadataidentifiers:).md)
+- [init(Int, Int, Int, prereleaseIdentifiers: [String], buildMetadataIdentifiers: [String])](./version/init%28_,_,_,prereleaseidentifiers,buildmetadataidentifiers%29.md)
   Initializes a version struct with the provided components of a semantic version.
 ### Inspecting a version
-- [let major: Int](version/major.md)
+- [let major: Int](./version/major.md)
   The major version according to the semantic versioning standard.
-- [let minor: Int](version/minor.md)
+- [let minor: Int](./version/minor.md)
   The minor version according to the semantic versioning standard.
-- [let patch: Int](version/patch.md)
+- [let patch: Int](./version/patch.md)
   The patch version according to the semantic versioning standard.
-- [let prereleaseIdentifiers: [String]](version/prereleaseidentifiers.md)
+- [let prereleaseIdentifiers: [String]](./version/prereleaseidentifiers.md)
   The pre-release identifier according to the semantic versioning standard, such as `-beta.1`.
-- [let buildMetadataIdentifiers: [String]](version/buildmetadataidentifiers.md)
+- [let buildMetadataIdentifiers: [String]](./version/buildmetadataidentifiers.md)
   The build metadata of this version according to the semantic versioning standard, such as a commit hash.
 ### Default Implementations
-- [Comparable Implementations](version/comparable-implementations.md)
-- [CustomStringConvertible Implementations](version/customstringconvertible-implementations.md)
-- [Equatable Implementations](version/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](version/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](version/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](version/expressiblebyunicodescalarliteral-implementations.md)
-- [LosslessStringConvertible Implementations](version/losslessstringconvertible-implementations.md)
+- [Comparable Implementations](./version/comparable-implementations.md)
+- [CustomStringConvertible Implementations](./version/customstringconvertible-implementations.md)
+- [Equatable Implementations](./version/equatable-implementations.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](./version/expressiblebyextendedgraphemeclusterliteral-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./version/expressiblebystringliteral-implementations.md)
+- [ExpressibleByUnicodeScalarLiteral Implementations](./version/expressiblebyunicodescalarliteral-implementations.md)
+- [LosslessStringConvertible Implementations](./version/losslessstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [LosslessStringConvertible](../swift/losslessstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../Swift/comparable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [LosslessStringConvertible](../Swift/losslessstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let kind: Package.Dependency.Kind](package/dependency/kind-swift.property.md)
+### Describing a Package Dependency
+- [let kind: Package.Dependency.Kind](./package/dependency/kind-swift.property.md)
   A description of the package dependency.
-- [Package.Dependency.Kind](package/dependency/kind-swift.enum.md)
+- [Package.Dependency.Kind](./package/dependency/kind-swift.enum.md)
   The type of dependency.
-- [var name: String?](package/dependency/name.md)
+- [var name: String?](./package/dependency/name.md)
   The name of the dependency.
-- [var url: String?](package/dependency/url.md)
+- [var url: String?](./package/dependency/url.md)
   The Git URL of the package dependency.
 
 

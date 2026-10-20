@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the boundary supplementary item relative to the section or layout it’s attached to.
 
@@ -14,11 +15,16 @@ The alignment of the boundary supplementary item relative to the section or layo
 var alignment: NSRectAlignment { get }
 ```
 
+```objc
+@property (readonly) NSRectAlignment alignment;
+```
+
 ## See Also
 
-- [var offset: NSPoint](nscollectionlayoutboundarysupplementaryitem/offset.md)
+### Specifying position
+- [var offset: NSPoint](./offset.md)
   The floating-point value of the boundary supplementary item’s offset from the section or layout it’s attached to.
-- [var extendsBoundary: Bool](nscollectionlayoutboundarysupplementaryitem/extendsboundary.md)
+- [var extendsBoundary: Bool](./extendsboundary.md)
   A Boolean value that indicates whether a boundary supplementary item extends the content area of the section or layout it’s attached to.
 
 

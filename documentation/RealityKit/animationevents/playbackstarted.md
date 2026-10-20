@@ -1,7 +1,8 @@
 # AnimationEvents.PlaybackStarted
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The event raised when an animation has been started.
 
@@ -22,23 +23,24 @@ struct PlaybackStarted
 ## Topics
 
 ### Instance Properties
-- [let playbackController: AnimationPlaybackController](animationevents/playbackstarted/playbackcontroller.md)
+- [let playbackController: AnimationPlaybackController](./playbackstarted/playbackcontroller.md)
   The animation playback controller managing the animation that triggered the event.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
+### Recognizing animation events
+- [AnimationEvents.PlaybackCompleted](./playbackcompleted.md)
   The event raised when an animation reaches the end of its duration.
-- [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
+- [AnimationEvents.PlaybackLooped](./playbacklooped.md)
   The event raised when an animation loops.
-- [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)
+- [AnimationEvents.PlaybackTerminated](./playbackterminated.md)
   The event raised when an animation has been terminated, regardless of whether it ran to completion.
 
 

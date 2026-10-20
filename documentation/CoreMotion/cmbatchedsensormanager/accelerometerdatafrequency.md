@@ -1,7 +1,8 @@
 # accelerometerDataFrequency
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 4.0+
@@ -16,9 +17,14 @@
 var accelerometerDataFrequency: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger accelerometerDataFrequency;
+```
+
 ## See Also
 
-- [var deviceMotionDataFrequency: Int](cmbatchedsensormanager/devicemotiondatafrequency.md)
+### Configuring the update frequency
+- [var deviceMotionDataFrequency: Int](./devicemotiondatafrequency.md)
 
 
 ---

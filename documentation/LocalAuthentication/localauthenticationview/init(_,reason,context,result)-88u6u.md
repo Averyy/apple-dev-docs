@@ -1,7 +1,8 @@
 # init(_:reason:context:result:)
 
 **Framework**: Local Authentication  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `LocalAuthenticationView`.
 

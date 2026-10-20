@@ -1,7 +1,8 @@
 # scene
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The coordinate space that represents ARKit world space.
 
@@ -19,13 +20,15 @@ The coordinate space that represents ARKit world space.
 static var scene: SceneRealityCoordinateSpace { get }
 ```
 
+Available when `Self` is `SceneRealityCoordinateSpace`.
+
 #### Discussion
 
-In a visionOS window or volume, or when using the [`virtual`](realityviewcamera/virtual.md) camera on any other platform, this space represents the center of the scene’s owning [`RealityView`](realityview.md).
+In a visionOS window or volume, or when using the [`virtual`](../realityviewcamera/virtual.md) camera on any other platform, this space represents the center of the scene’s owning [`RealityView`](../realityview.md).
 
-When in a visionOS Immersive Space, or using the `RealityViewCamera/worldTracking` camera in iOS, the `scene` coordinate space is the [`ARKit`](https://developer.apple.com/documentation/arkit) world origin.
+When in a visionOS Immersive Space, or using the `RealityViewCamera/worldTracking` camera in iOS, the `scene` coordinate space is the [ARKit](../../ARKit/ARKit.md) world origin.
 
-> **Note**: This static type is equivalent to a [`SceneRealityCoordinateSpace`](scenerealitycoordinatespace.md) instance.
+> **Note**: This static type is equivalent to a [`SceneRealityCoordinateSpace`](../scenerealitycoordinatespace.md) instance.
 
 
 ---

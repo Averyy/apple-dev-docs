@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTeamCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a team that you create.
 
@@ -10,7 +11,7 @@ The attributes for a team that you create.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTeamCreateRequest.Data.Attributes
 ```
 
@@ -22,7 +23,8 @@ object GameCenterMatchmakingTeamCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterMatchmakingTeamCreateRequest.Data.Relationships](gamecentermatchmakingteamcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingTeamCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships from the team to other objects.
 
 

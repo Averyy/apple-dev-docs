@@ -1,7 +1,8 @@
 # setActionQueue(_:action:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the action to perform on the specified dispatch queue when the control’s value changes.
 
@@ -21,7 +22,7 @@ func setActionQueue(_ actionQueue: DispatchQueue, action: @escaping (Int) -> ())
 
 #### Discussion
 
-If the action modifies a property of the camera system, the specified dispatch queue must represent the camera system’s same exclusive execution context (see [`isSameExclusiveExecutionContext(other:)`](https://developer.apple.com/documentation/swift/serialexecutor/issameexclusiveexecutioncontext(other:))).
+If the action modifies a property of the camera system, the specified dispatch queue must represent the camera system’s same exclusive execution context (see [`isSameExclusiveExecutionContext(other:)`](../../Swift/serialexecutor/issameexclusiveexecutioncontext%28other%29.md)).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # AVPlayerLooper.ItemOrdering.loopingItemsFollowExistingItems
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates to insert replica items after any existing items in the specified player’s queue.
 
@@ -19,9 +20,14 @@ Indicates to insert replica items after any existing items in the specified play
 case loopingItemsFollowExistingItems
 ```
 
+```c
+AVPlayerLooperItemOrderingLoopingItemsFollowExistingItems
+```
+
 ## See Also
 
-- [AVPlayerLooper.ItemOrdering.loopingItemsPrecedeExistingItems](avplayerlooper/itemordering/loopingitemsprecedeexistingitems.md)
+### Ordering
+- [AVPlayerLooper.ItemOrdering.loopingItemsPrecedeExistingItems](./loopingitemsprecedeexistingitems.md)
   Indicates to insert replica items before any existing items in the specified player’s queue.
 
 

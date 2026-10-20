@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Synchronization
+**Framework**: Synchronization  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](wordpair/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A string that represents the contents of the word pair, suitable for debugging.
 
 

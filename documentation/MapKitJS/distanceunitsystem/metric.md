@@ -1,7 +1,8 @@
 # Metric
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The metric measurement system.
 
@@ -10,19 +11,20 @@ The metric measurement system.
 
 ## Declaration
 
-```swift
+```
 readonly Metric: "metric";
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 ## See Also
 
-- [Adaptive](distanceunitsystem/adaptive.md)
+### Distance values
+- [Adaptive](./adaptive.md)
   A measurement system that adapts to the map’s language.
-- [Imperial](distanceunitsystem/imperial.md)
+- [Imperial](./imperial.md)
   The imperial measurement system.
 
 

@@ -1,7 +1,8 @@
 # setMaximumPacingRateBytesPerSecond(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the maximum pacing rate for this TCP connection, in bytes per second.
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifnet_interface_advisory_header {
     ...
 };
@@ -17,10 +17,10 @@ struct ifnet_interface_advisory_header {
 ## Topics
 
 ### Instance Properties
-- [direction](ifnet_interface_advisory_header/3944249-direction.md)
-- [interface_type](ifnet_interface_advisory_header/3944250-interface_type.md)
-- [notification_type](ifnet_interface_advisory_header/4360111-notification_type.md)
-- [version](ifnet_interface_advisory_header/3944252-version.md)
+- [direction](./ifnet_interface_advisory_header/api-3944249-direction.md)
+- [interface_type](./ifnet_interface_advisory_header/api-3944250-interface_type.md)
+- [notification_type](./ifnet_interface_advisory_header/api-4360111-notification_type.md)
+- [version](./ifnet_interface_advisory_header/api-3944252-version.md)
 
 
 ---

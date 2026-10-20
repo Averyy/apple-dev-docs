@@ -1,7 +1,8 @@
 # GLKVector4Distance(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the distance between two points.
 
@@ -17,6 +18,10 @@ Returns the distance between two points.
 func GLKVector4Distance(_ vectorStart: GLKVector4, _ vectorEnd: GLKVector4) -> Float
 ```
 
+```c
+static float GLKVector4Distance(GLKVector4 vectorStart, GLKVector4 vectorEnd);
+```
+
 #### Return Value
 
 The distance between the two points.
@@ -28,7 +33,8 @@ The distance between the two points.
 
 ## See Also
 
-- [func GLKVector4Length(GLKVector4) -> Float](glkvector4length(_:).md)
+### Retrieving Information About a Vector
+- [func GLKVector4Length(GLKVector4) -> Float](./glkvector4length%28_%29.md)
   Returns the length of a vector.
 
 

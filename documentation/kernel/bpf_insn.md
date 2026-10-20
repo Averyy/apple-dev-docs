@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct bpf_insn {
     ...
 };
@@ -17,10 +17,10 @@ struct bpf_insn {
 ## Topics
 
 ### Instance Properties
-- [code](bpf_insn/1589694-code.md)
-- [jf](bpf_insn/1589555-jf.md)
-- [jt](bpf_insn/1589550-jt.md)
-- [k](bpf_insn/1589574-k.md)
+- [code](./bpf_insn/api-1589694-code.md)
+- [jf](./bpf_insn/api-1589555-jf.md)
+- [jt](./bpf_insn/api-1589550-jt.md)
+- [k](./bpf_insn/api-1589574-k.md)
 
 
 ---

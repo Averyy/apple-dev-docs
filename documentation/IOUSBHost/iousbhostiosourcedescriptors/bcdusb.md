@@ -1,7 +1,8 @@
 # bcdUSB
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The USB version that the device supports.
 
@@ -15,17 +16,22 @@ The USB version that the device supports.
 var bcdUSB: UInt16
 ```
 
+```c
+uint16_t bcdUSB;
+```
+
 #### Discussion
 
 Initialize this descriptor to the USB version that the device supports. Acceptable values are 0x0110, 0x0200, 0x0300, 0x0310.
 
 ## See Also
 
-- [var descriptor: IOUSBEndpointDescriptor](iousbhostiosourcedescriptors/descriptor.md)
+### Descriptors
+- [var descriptor: IOUSBEndpointDescriptor](./descriptor.md)
   The descriptor for a USB endpoint.
-- [var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor](iousbhostiosourcedescriptors/sscompaniondescriptor.md)
+- [var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor](./sscompaniondescriptor.md)
   The descriptor for a SuperSpeed USB endpoint companion.
-- [var sspCompanionDescriptor: IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor](iousbhostiosourcedescriptors/sspcompaniondescriptor.md)
+- [var sspCompanionDescriptor: IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor](./sspcompaniondescriptor.md)
   The descriptor for a SuperSpeedPlus isochronous USB endpoint companion.
 
 

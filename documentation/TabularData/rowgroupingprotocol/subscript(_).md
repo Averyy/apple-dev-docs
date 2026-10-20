@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Retrieves a group slice by key.

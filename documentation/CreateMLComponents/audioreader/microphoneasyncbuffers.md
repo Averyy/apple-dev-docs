@@ -1,7 +1,8 @@
 # AudioReader.MicrophoneAsyncBuffers
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence of audio frames.
 
@@ -25,27 +26,28 @@ This sequence allows iterating through the microphone audio frames.
 ## Topics
 
 ### Getting the count
-- [var count: Int?](audioreader/microphoneasyncbuffers/count.md)
+- [var count: Int?](./microphoneasyncbuffers/count.md)
   The number of audio buffers. For this sequence count is always nil.
 ### Creating an iterator
-- [func makeAsyncIterator() -> AudioReader.MicrophoneAsyncBuffers.Iterator](audioreader/microphoneasyncbuffers/makeasynciterator.md)
+- [func makeAsyncIterator() -> AudioReader.MicrophoneAsyncBuffers.Iterator](./microphoneasyncbuffers/makeasynciterator%28%29.md)
   Constructs an iterator.
-- [AudioReader.MicrophoneAsyncBuffers.Iterator](audioreader/microphoneasyncbuffers/iterator.md)
+- [AudioReader.MicrophoneAsyncBuffers.Iterator](./microphoneasyncbuffers/iterator.md)
   An async iterator of audio frames.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [AudioReader.AsyncBuffers](audioreader/asyncbuffers.md)
+### Managing buffers
+- [AudioReader.AsyncBuffers](./asyncbuffers.md)
   An async sequence of audio buffers read from an audio file.
-- [AudioReader.Configuration](audioreader/configuration-swift.struct.md)
+- [AudioReader.Configuration](./configuration-swift.struct.md)
   The configuration of the audio reader.
 
 

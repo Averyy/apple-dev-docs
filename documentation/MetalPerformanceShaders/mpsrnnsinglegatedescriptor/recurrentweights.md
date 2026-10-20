@@ -1,7 +1,8 @@
 # recurrentWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var recurrentWeights: (any MPSCNNConvolutionDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MPSCNNConvolutionDataSource> recurrentWeights;
+```
+
 ## See Also
 
-- [var inputWeights: (any MPSCNNConvolutionDataSource)?](mpsrnnsinglegatedescriptor/inputweights.md)
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+### Instance Properties
+- [var inputWeights: (any MPSCNNConvolutionDataSource)?](./inputweights.md)
+- [protocol MPSCNNConvolutionDataSource](../mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 
 

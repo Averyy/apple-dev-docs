@@ -1,7 +1,8 @@
 # toneMapHeadroom()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,11 +18,16 @@
 class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom
 ```
 
+```objc
++ (CIFilter<CIToneMapHeadroom> *) toneMapHeadroomFilter;
+```
+
 ## See Also
 
-- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](cifilter-swift.class/areaalphaweightedhistogram.md)
-- [class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed](cifilter-swift.class/areaboundsred.md)
-- [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](cifilter-swift.class/maximumscaletransform.md)
+### Type methods
+- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](./areaalphaweightedhistogram%28%29.md)
+- [class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed](./areaboundsred%28%29.md)
+- [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](./maximumscaletransform%28%29.md)
 
 
 ---

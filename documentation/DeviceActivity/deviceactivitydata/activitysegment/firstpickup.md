@@ -1,7 +1,8 @@
 # firstPickup
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the first time the person picked up the device during the activity segment.
 
@@ -18,11 +19,12 @@ var firstPickup: Date?
 
 #### Discussion
 
-This value may be `nil` if the person never picked up the device during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+This value may be `nil` if the person never picked up the device during [`dateInterval`](./dateinterval.md).
 
 ## See Also
 
-- [var totalPickupsWithoutApplicationActivity: Int](deviceactivitydata/activitysegment/totalpickupswithoutapplicationactivity.md)
+### Tracking device usage
+- [var totalPickupsWithoutApplicationActivity: Int](./totalpickupswithoutapplicationactivity.md)
   Access the number of device pickups without application use.
 
 

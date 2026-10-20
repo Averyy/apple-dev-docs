@@ -1,7 +1,8 @@
 # GL_DECR_WRAP
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_DECR_WRAP: Int32 { get }
+```
+
+```c
+#define GL_DECR_WRAP
 ```
 
 

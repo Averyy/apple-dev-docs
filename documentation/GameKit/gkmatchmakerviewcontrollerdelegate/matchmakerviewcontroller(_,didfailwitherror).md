@@ -2,6 +2,7 @@
 
 **Framework**: GameKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles when a view controller encounters an error while finding players for a match.
@@ -20,10 +21,14 @@ Handles when a view controller encounters an error while finding players for a m
 func matchmakerViewController(_ viewController: GKMatchmakerViewController, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) matchmakerViewController:(GKMatchmakerViewController *) viewController didFailWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
 #### Discussion
 
@@ -36,7 +41,8 @@ This method needs to dismiss the view controller.
 
 ## See Also
 
-- [func matchmakerViewControllerWasCancelled(GKMatchmakerViewController)](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontrollerwascancelled(_:).md)
+### Handling cancellations and errors
+- [func matchmakerViewControllerWasCancelled(GKMatchmakerViewController)](./matchmakerviewcontrollerwascancelled%28_%29.md)
   Handles when a player cancels a request to find players for a match.
 
 

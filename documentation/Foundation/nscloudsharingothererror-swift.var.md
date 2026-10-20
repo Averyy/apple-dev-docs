@@ -1,7 +1,8 @@
 # NSCloudSharingOtherError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An otherwise unspecified cloud-sharing error occurred.
 
@@ -20,23 +21,24 @@ var NSCloudSharingOtherError: Int { get }
 
 #### Discussion
 
-For CloudKit sharing, use the [`NSUnderlyingErrorKey`](nsunderlyingerrorkey.md), whose value is a [`CKErrorDomain`](https://developer.apple.com/documentation/cloudkit/ckerrordomain) error, to discover the specific error. Refer to the [`CloudKit`](https://developer.apple.com/documentation/cloudkit) documentation for the proper response to these errors.
+For CloudKit sharing, use the [`NSUnderlyingErrorKey`](./nsunderlyingerrorkey.md), whose value is a [`CKErrorDomain`](../CloudKit/ckerrordomain.md) error, to discover the specific error. Refer to the [CloudKit](../CloudKit/CloudKit.md) documentation for the proper response to these errors.
 
 ## See Also
 
-- [var NSCloudSharingConflictError: Int](nscloudsharingconflicterror-swift.var.md)
+### iCloud Sharing Errors
+- [var NSCloudSharingConflictError: Int](./nscloudsharingconflicterror-swift.var.md)
   A conflict occurred during an attempt to save changes.
-- [var NSCloudSharingErrorMaximum: Int](nscloudsharingerrormaximum-swift.var.md)
+- [var NSCloudSharingErrorMaximum: Int](./nscloudsharingerrormaximum-swift.var.md)
   The end of the range of error codes reserved for cloud-sharing errors.
-- [var NSCloudSharingErrorMinimum: Int](nscloudsharingerrorminimum-swift.var.md)
+- [var NSCloudSharingErrorMinimum: Int](./nscloudsharingerrorminimum-swift.var.md)
   The start of the range of error codes reserved for cloud-sharing errors.
-- [var NSCloudSharingNetworkFailureError: Int](nscloudsharingnetworkfailureerror-swift.var.md)
+- [var NSCloudSharingNetworkFailureError: Int](./nscloudsharingnetworkfailureerror-swift.var.md)
   Sharing failed due to a network failure.
-- [var NSCloudSharingNoPermissionError: Int](nscloudsharingnopermissionerror-swift.var.md)
+- [var NSCloudSharingNoPermissionError: Int](./nscloudsharingnopermissionerror-swift.var.md)
   The current user doesn’t have permission to perform the requested actions.
-- [var NSCloudSharingQuotaExceededError: Int](nscloudsharingquotaexceedederror-swift.var.md)
+- [var NSCloudSharingQuotaExceededError: Int](./nscloudsharingquotaexceedederror-swift.var.md)
   The user doesn’t have enough storage space available to share the requested items.
-- [var NSCloudSharingTooManyParticipantsError: Int](nscloudsharingtoomanyparticipantserror-swift.var.md)
+- [var NSCloudSharingTooManyParticipantsError: Int](./nscloudsharingtoomanyparticipantserror-swift.var.md)
   Additional participants couldn’t be added to the share, because the limit was reached.
 
 

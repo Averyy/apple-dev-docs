@@ -1,7 +1,8 @@
 # NEURLFilter.Verdict.deny
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A verdict that indicates that accessing the URL is denied.
 
@@ -17,11 +18,16 @@ A verdict that indicates that accessing the URL is denied.
 case deny
 ```
 
+```c
+NEURLFilterVerdictDeny
+```
+
 ## See Also
 
-- [NEURLFilter.Verdict.allow](neurlfilter/verdict/allow.md)
+### Verdicts
+- [NEURLFilter.Verdict.allow](./allow.md)
   A verdict that indicates that accessing the URL is allowed.
-- [NEURLFilter.Verdict.unknown](neurlfilter/verdict/unknown.md)
+- [NEURLFilter.Verdict.unknown](./unknown.md)
   A verdict that indicates URL validation failed.
 
 

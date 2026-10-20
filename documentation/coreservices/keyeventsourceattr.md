@@ -1,7 +1,8 @@
 # keyEventSourceAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Nature of the source application. (Read-only.)
 

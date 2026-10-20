@@ -1,7 +1,8 @@
 # includeHiddenFiles
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays the files that are hidden by default.
 
@@ -20,9 +21,10 @@ static let includeHiddenFiles: FileDialogBrowserOptions
 
 ## See Also
 
-- [static let displayFileExtensions: FileDialogBrowserOptions](filedialogbrowseroptions/displayfileextensions.md)
+### Getting browser options
+- [static let displayFileExtensions: FileDialogBrowserOptions](./displayfileextensions.md)
   On iOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to show or hide file extensions. Default behavior is to hide them. On macOS, this option has no effect.
-- [static let enumeratePackages: FileDialogBrowserOptions](filedialogbrowseroptions/enumeratepackages.md)
+- [static let enumeratePackages: FileDialogBrowserOptions](./enumeratepackages.md)
   Allows enumerating packages contents in contrast to the default behavior when packages are represented flatly, similar to files.
 
 

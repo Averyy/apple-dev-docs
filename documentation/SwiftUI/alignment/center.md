@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the center of the view.
 
@@ -22,15 +23,16 @@ static let center: Alignment
 
 #### Discussion
 
-This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`center`](verticalalignment/center.md) vertical guide:
+This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`center`](../verticalalignment/center.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-center-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-center-1-iOS@2x.png)
 
 ## See Also
 
-- [static let leading: Alignment](alignment/leading.md)
+### Getting middle guides
+- [static let leading: Alignment](./leading.md)
   A guide that marks the leading edge of the view.
-- [static let trailing: Alignment](alignment/trailing.md)
+- [static let trailing: Alignment](./trailing.md)
   A guide that marks the trailing edge of the view.
 
 

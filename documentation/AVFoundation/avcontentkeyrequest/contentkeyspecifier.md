@@ -1,7 +1,8 @@
 # contentKeySpecifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested content key specifier.
 
@@ -20,13 +21,18 @@ The requested content key specifier.
 var contentKeySpecifier: AVContentKeySpecifier { get }
 ```
 
+```objc
+@property (readonly) AVContentKeySpecifier * contentKeySpecifier;
+```
+
 ## See Also
 
-- [var contentKey: AVContentKey?](avcontentkeyrequest/contentkey.md)
+### Inspecting a request
+- [var contentKey: AVContentKey?](./contentkey.md)
   The generated content key.
-- [var options: [String : any Sendable]](avcontentkeyrequest/options.md)
+- [var options: [String : any Sendable]](./options.md)
   A dictionary of options used to initialize key loading.
-- [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
+- [AVContentKeyRequest.RetryReason](./retryreason.md)
   The reason for asking the client to retry a content key request.
 
 

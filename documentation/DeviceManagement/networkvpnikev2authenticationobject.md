@@ -1,7 +1,8 @@
 # NetworkVPNIKEV2AuthenticationObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings that control authentication.
 
@@ -15,14 +16,14 @@ Settings that control authentication.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIKEV2AuthenticationObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNIKEV2Authentication_ExtendedAuthObject](networkvpnikev2authentication_extendedauthobject.md)
+- [object NetworkVPNIKEV2Authentication_ExtendedAuthObject](./networkvpnikev2authentication_extendedauthobject.md)
   Specifies details about extended authentication (EAP).
 
 ## Properties
@@ -31,23 +32,30 @@ object NetworkVPNIKEV2AuthenticationObject
 - `ExtendedAuth` (NetworkVPNIKEV2Authentication_ExtendedAuthObject): Specifies details about extended authentication (EAP).
 - `IdentityAssetReference` (string): The identifier of a credential asset declaration that contains the identity that this account requires to authenticate with the VPN server. If the value of `AuthenticationMethod` is `Certificate`, the system sends this certificate out for IKEv2 machine authentication. If extended authentication (EAP) is used, the system sends this certificate out for EAP-TLS authentication. Required when `Authentication.Method` is set to `Certificate`.
 - `IdentityCertificateType` (string): The type of key used by the identity set in the `IdentityAssetReference` to use for IKEv2 machine authentication. If this key is included, the system requires a value for `ServerCertificateIssuerCommonName`.
-- `Method` (string) *(required)*: The type of authentication method for the VPN. To enable EAP-only authentication, set this to `None` and `ExtendedAuthEnabled` to `true`. If this is `None` and the `ExtendedAuthEnabled` key isn’t set, the authentication configuration defaults to `SharedSecret`.
+
+  **Default**: `RSA`; **Allowed Values**: `RSA`, `ECDSA256`, `ECDSA384`, `ECDSA521`, `RSA-PSS`
+- `Method` (string) *(required)*: The type of authentication method for the VPN.
+
+  To enable EAP-only authentication, set this to `None` and `ExtendedAuthEnabled` to `true`. If this is `None` and the `ExtendedAuthEnabled` key isn’t set, the authentication configuration defaults to `SharedSecret`.
+
+  **Allowed Values**: `None`, `SharedSecret`, `Certificate`
 
 ## See Also
 
-- [object NetworkVPNIKEV2DNSObject](networkvpnikev2dnsobject.md)
+### Objects
+- [object NetworkVPNIKEV2DNSObject](./networkvpnikev2dnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIKEV2IdleObject](networkvpnikev2idleobject.md)
+- [object NetworkVPNIKEV2IdleObject](./networkvpnikev2idleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIKEV2NetworkRoutingObject](networkvpnikev2networkroutingobject.md)
+- [object NetworkVPNIKEV2NetworkRoutingObject](./networkvpnikev2networkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNIKEV2OnDemandObject](networkvpnikev2ondemandobject.md)
+- [object NetworkVPNIKEV2OnDemandObject](./networkvpnikev2ondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](networkvpnikev2postquantumkeyexchangeobject.md)
+- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](./networkvpnikev2postquantumkeyexchangeobject.md)
   Post Quantum Key Exchange settings.
-- [object NetworkVPNIKEV2ProxiesObject](networkvpnikev2proxiesobject.md)
+- [object NetworkVPNIKEV2ProxiesObject](./networkvpnikev2proxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNIKEV2SecurityAssociationParametersObject](networkvpnikev2securityassociationparametersobject.md)
+- [object NetworkVPNIKEV2SecurityAssociationParametersObject](./networkvpnikev2securityassociationparametersobject.md)
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 
 

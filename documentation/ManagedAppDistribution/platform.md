@@ -1,7 +1,8 @@
 # Platform
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported platform for the app.
 
@@ -21,22 +22,22 @@ struct Platform
 ## Topics
 
 ### Obtaining supported platforms
-- [static var iOS: Platform](platform/ios.md)
+- [static var iOS: Platform](./platform/ios.md)
   iOS is a supported platform.
-- [static var macOS: Platform](platform/macos.md)
+- [static var macOS: Platform](./platform/macos.md)
   macOS is a supported platform.
 ### Type Properties
-- [static var visionOS: Platform](platform/visionos.md)
+- [static var visionOS: Platform](./platform/visionos.md)
   visionOS is a supported platform.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

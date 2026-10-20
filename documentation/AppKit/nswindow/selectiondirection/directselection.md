@@ -1,12 +1,13 @@
 # NSWindow.SelectionDirection.directSelection
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The window isn’t traversing the key view loop.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The window isn’t traversing the key view loop.
 case directSelection
 ```
 
+```c
+NSDirectSelection
+```
+
 ## See Also
 
-- [NSWindow.SelectionDirection.selectingNext](nswindow/selectiondirection/selectingnext.md)
+### Constants
+- [NSWindow.SelectionDirection.selectingNext](./selectingnext.md)
   The window is proceeding to the next valid key view.
-- [NSWindow.SelectionDirection.selectingPrevious](nswindow/selectiondirection/selectingprevious.md)
+- [NSWindow.SelectionDirection.selectingPrevious](./selectingprevious.md)
   The window is proceeding to the previous valid key view.
 
 

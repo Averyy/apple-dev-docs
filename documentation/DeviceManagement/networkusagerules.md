@@ -1,7 +1,8 @@
 # NetworkUsageRules
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures network-usage rules.
 
@@ -12,7 +13,7 @@ The payload that configures network-usage rules.
 
 ## Declaration
 
-```swift
+```
 object NetworkUsageRules
 ```
 
@@ -22,7 +23,7 @@ Specify `com.apple.networkusagerules` as the payload type.
 
 Network usage rules allow enterprises to specify how devices use networks, such as cellular data networks. iOS 9-12 require the application rules. In iOS 13, application rules, SIM rules, or both must be present.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,35 +85,38 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 ## Topics
 
 ### Objects
-- [object NetworkUsageRules.ApplicationRulesItem](networkusagerules/applicationrulesitem.md)
+- [object NetworkUsageRules.ApplicationRulesItem](./networkusagerules/applicationrulesitem.md)
   The application rules dictionary.
-- [object NetworkUsageRules.SIMRulesItem](networkusagerules/simrulesitem.md)
+- [object NetworkUsageRules.SIMRulesItem](./networkusagerules/simrulesitem.md)
   The policy for individual SIM cards.
 
 ## Properties
 
 - `ApplicationRules` ([NetworkUsageRules.ApplicationRulesItem]): An array of application rules, that apply to only managed apps.
-- `SIMRules` ([NetworkUsageRules.SIMRulesItem]): An array of SIM rules, that apply to all apps. Available: iOS 13+ | iPadOS 13+
+- `SIMRules` ([NetworkUsageRules.SIMRulesItem]): An array of SIM rules, that apply to all apps.
+
+  Available: iOS 13+ | iPadOS 13+
 
 ## See Also
 
-- [object Cellular](cellular.md)
+### Networking
+- [object Cellular](./cellular.md)
   The payload that configures cellular settings.
-- [object CellularPrivateNetwork](cellularprivatenetwork.md)
+- [object CellularPrivateNetwork](./cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCachingService](contentcachingservice.md)
+- [object ContentCachingService](./contentcachingservice.md)
   The payload that configures the Content Caching service.
-- [object DNSSettings](dnssettings.md)
+- [object DNSSettings](./dnssettings.md)
   The payload that configures encrypted DNS settings.
-- [object Domains](domains.md)
+- [object Domains](./domains.md)
   The payload that configures the domains under an organization’s management.
-- [object Firewall](firewall.md)
+- [object Firewall](./firewall.md)
   The payload that configures the firewall.
-- [object Relay](relay.md)
+- [object Relay](./relay.md)
   The payload that configures relay settings.
-- [object WiFi](wifi.md)
+- [object WiFi](./wifi.md)
   The payload that configures Wi-Fi settings.
-- [object WiFiManagedSettings](wifimanagedsettings.md)
+- [object WiFiManagedSettings](./wifimanagedsettings.md)
   The payload that configures managed Wi-Fi settings.
 
 

@@ -1,7 +1,8 @@
 # control(at:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The control at the specified point, if any.
 
@@ -14,6 +15,10 @@ The control at the specified point, if any.
 
 ```swift
 func control(at point: CGPoint) -> (any TCControl)?
+```
+
+```objc
+- (id<TCControl>) controlAtPoint:(CGPoint) point;
 ```
 
 #### Return Value

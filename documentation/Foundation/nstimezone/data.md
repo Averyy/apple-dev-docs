@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data that stores the information used by the receiver.
 
@@ -20,25 +21,30 @@ The data that stores the information used by the receiver.
 var data: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * data;
+```
+
 #### Discussion
 
 Treat this data as an opaque object.
 
 ## See Also
 
-- [var name: String](nstimezone/name.md)
+### Getting Time Zone Information
+- [var name: String](./name.md)
   The geopolitical region ID that identifies the receiver.
-- [var abbreviation: String?](nstimezone/abbreviation.md)
+- [var abbreviation: String?](./abbreviation.md)
   The abbreviation for the receiver, such as “EDT” (Eastern Daylight Time).
-- [func abbreviation(for: Date) -> String?](nstimezone/abbreviation(for:).md)
+- [func abbreviation(for: Date) -> String?](./abbreviation%28for%29.md)
   Returns the abbreviation for the receiver at a given date.
-- [var secondsFromGMT: Int](nstimezone/secondsfromgmt.md)
+- [var secondsFromGMT: Int](./secondsfromgmt.md)
   The current difference in seconds between the receiver and Greenwich Mean Time.
-- [func secondsFromGMT(for: Date) -> Int](nstimezone/secondsfromgmt(for:).md)
+- [func secondsFromGMT(for: Date) -> Int](./secondsfromgmt%28for%29.md)
   Returns the difference in seconds between the receiver and Greenwich Mean Time at a given date.
-- [class var timeZoneDataVersion: String](nstimezone/timezonedataversion.md)
+- [class var timeZoneDataVersion: String](./timezonedataversion.md)
   Returns the time zone data version.
-- [NSTimeZone.NameStyle](nstimezone/namestyle.md)
+- [NSTimeZone.NameStyle](./namestyle.md)
   Constants you use to specify a style when presenting time zone names.
 
 

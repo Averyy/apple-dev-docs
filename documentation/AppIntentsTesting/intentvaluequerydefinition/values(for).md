@@ -1,7 +1,8 @@
 # values(for:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the value query with the given input and returns matching results.
 

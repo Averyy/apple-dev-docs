@@ -1,7 +1,8 @@
 # FileAttributeType
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values representing a file’s type attribute.
 
@@ -20,53 +21,58 @@ Values representing a file’s type attribute.
 struct FileAttributeType
 ```
 
+```c
+typedef NSString * NSFileAttributeType;
+```
+
 #### Discussion
 
-These strings are the possible values for the [`type`](fileattributekey/type.md) attribute key contained in the dictionary object returned by [`attributesOfItem(atPath:)`](filemanager/attributesofitem(atpath:).md).
+These strings are the possible values for the [`type`](./fileattributekey/type.md) attribute key contained in the dictionary object returned by [`attributesOfItem(atPath:)`](./filemanager/attributesofitem%28atpath%29.md).
 
 ## Topics
 
 ### Creating a File Attribute Type
-- [init(rawValue: String)](fileattributetype/init(rawvalue:).md)
+- [init(rawValue: String)](./fileattributetype/init%28rawvalue%29.md)
   Creates a file attribute type value.
 ### Accessing File Type Attributes
-- [static let typeBlockSpecial: FileAttributeType](fileattributetype/typeblockspecial.md)
+- [static let typeBlockSpecial: FileAttributeType](./fileattributetype/typeblockspecial.md)
   A block special file.
-- [static let typeCharacterSpecial: FileAttributeType](fileattributetype/typecharacterspecial.md)
+- [static let typeCharacterSpecial: FileAttributeType](./fileattributetype/typecharacterspecial.md)
   A character special file.
-- [static let typeDirectory: FileAttributeType](fileattributetype/typedirectory.md)
+- [static let typeDirectory: FileAttributeType](./fileattributetype/typedirectory.md)
   A directory.
-- [static let typeRegular: FileAttributeType](fileattributetype/typeregular.md)
+- [static let typeRegular: FileAttributeType](./fileattributetype/typeregular.md)
   A regular file.
-- [static let typeSocket: FileAttributeType](fileattributetype/typesocket.md)
+- [static let typeSocket: FileAttributeType](./fileattributetype/typesocket.md)
   A socket.
-- [static let typeSymbolicLink: FileAttributeType](fileattributetype/typesymboliclink.md)
+- [static let typeSymbolicLink: FileAttributeType](./fileattributetype/typesymboliclink.md)
   A symbolic link.
-- [static let typeUnknown: FileAttributeType](fileattributetype/typeunknown.md)
+- [static let typeUnknown: FileAttributeType](./fileattributetype/typeunknown.md)
   A file whose type is unknown.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions.md)
+### Supporting Types
+- [FileManager.DirectoryEnumerationOptions](./filemanager/directoryenumerationoptions.md)
   Options for enumerating the contents of directories.
-- [FileManager.SearchPathDirectory](filemanager/searchpathdirectory.md)
+- [FileManager.SearchPathDirectory](./filemanager/searchpathdirectory.md)
   The location of significant directories.
-- [FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask.md)
+- [FileManager.SearchPathDomainMask](./filemanager/searchpathdomainmask.md)
   Domain constants specifying base locations to use when you search for significant directories.
-- [struct FileAttributeKey](fileattributekey.md)
+- [struct FileAttributeKey](./fileattributekey.md)
   Keys in dictionaries used to get and set file attributes.
-- [struct FileProtectionType](fileprotectiontype.md)
+- [struct FileProtectionType](./fileprotectiontype.md)
   Protection level values that can be associated with a file attribute key.
-- [struct URLFileProtection](urlfileprotection.md)
+- [struct URLFileProtection](./urlfileprotection.md)
   Protection-level values for a URL resource key.
 
 

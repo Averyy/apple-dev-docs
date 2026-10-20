@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique ID for the device, if there is one.
 
@@ -20,35 +21,36 @@ This ID is software based, and isn’t associated with the device itself. It is 
 
 ## See Also
 
-- [let descriptor: Data](hiddeviceclient/descriptor.md)
+### Get device information
+- [let descriptor: Data](./descriptor.md)
   The HID specification compliant report descriptor for the associated HID device.
-- [let deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
+- [let deviceUsages: [HIDUsage]](./deviceusages.md)
   A convenient list of all the usages that the device supports.
-- [var isBuiltIn: Bool](hiddeviceclient/isbuiltin.md)
+- [var isBuiltIn: Bool](./isbuiltin.md)
   A Boolean value that determines whether the device is built-in to the system or an external peripheral.
-- [var localizationCode: HIDDeviceLocalizationCode](hiddeviceclient/localizationcode.md)
+- [var localizationCode: HIDDeviceLocalizationCode](./localizationcode.md)
   A location code that specifies the HID compliant localization code, if there is one.
-- [var locationID: UInt64?](hiddeviceclient/locationid.md)
+- [var locationID: UInt64?](./locationid.md)
   The location ID for the device, if there is one.
-- [var manufacturer: String?](hiddeviceclient/manufacturer.md)
+- [var manufacturer: String?](./manufacturer.md)
   The manufacturer of the device, if known.
-- [var modelNumber: String?](hiddeviceclient/modelnumber.md)
+- [var modelNumber: String?](./modelnumber.md)
   The model number for the device, if known.
-- [let primaryUsage: HIDUsage](hiddeviceclient/primaryusage.md)
+- [let primaryUsage: HIDUsage](./primaryusage.md)
   The HID specification compliant usage for the device.
-- [var product: String?](hiddeviceclient/product.md)
+- [var product: String?](./product.md)
   The product name for the device, if known.
-- [let productID: UInt32](hiddeviceclient/productid.md)
+- [let productID: UInt32](./productid.md)
   The product ID for the device.
-- [var serialNumber: String?](hiddeviceclient/serialnumber.md)
+- [var serialNumber: String?](./serialnumber.md)
   The serial number of the device, if known.
-- [var transport: HIDDeviceTransport?](hiddeviceclient/transport.md)
+- [var transport: HIDDeviceTransport?](./transport.md)
   The data transport for the device.
-- [let vendorID: UInt32](hiddeviceclient/vendorid.md)
+- [let vendorID: UInt32](./vendorid.md)
   The vendor ID for the device.
-- [var versionNumber: UInt64?](hiddeviceclient/versionnumber.md)
+- [var versionNumber: UInt64?](./versionnumber.md)
   The version of the device, if known.
-- [var elements: [HIDElement]](hiddeviceclient/elements.md)
+- [var elements: [HIDElement]](./elements.md)
   All HID elements associated with the device.
 
 

@@ -1,7 +1,8 @@
 # HMTrigger
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for triggering actions based on a set of conditions.
 
@@ -19,61 +20,66 @@ An abstract base class for triggering actions based on a set of conditions.
 class HMTrigger
 ```
 
+```objc
+@interface HMTrigger : NSObject
+```
+
 #### Overview
 
-This class defines the basic behavior of triggers, but does not itself specify any criteria for firing a trigger. Use instances of subclasses of [`HMTrigger`](hmtrigger.md) to set up concrete triggers for actions.
+This class defines the basic behavior of triggers, but does not itself specify any criteria for firing a trigger. Use instances of subclasses of [`HMTrigger`](./hmtrigger.md) to set up concrete triggers for actions.
 
 ## Topics
 
 ### Managing Triggers
-- [var name: String](hmtrigger/name.md)
+- [var name: String](./hmtrigger/name.md)
   The name of the trigger.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmtrigger/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./hmtrigger/updatename%28_,completionhandler%29.md)
   Updates the name of the trigger.
-- [var isEnabled: Bool](hmtrigger/isenabled.md)
+- [var isEnabled: Bool](./hmtrigger/isenabled.md)
   State of the trigger.
-- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](hmtrigger/enable(_:completionhandler:).md)
+- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](./hmtrigger/enable%28_,completionhandler%29.md)
   Changes the enabled state of the trigger.
-- [var lastFireDate: Date?](hmtrigger/lastfiredate.md)
+- [var lastFireDate: Date?](./hmtrigger/lastfiredate.md)
   The last time this trigger fired.
-- [var uniqueIdentifier: UUID](hmtrigger/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./hmtrigger/uniqueidentifier.md)
   A unique identifier for this trigger.
 ### Managing Action Sets
-- [var actionSets: [HMActionSet]](hmtrigger/actionsets.md)
+- [var actionSets: [HMActionSet]](./hmtrigger/actionsets.md)
   Array of all action sets that will be executed by the trigger.
-- [func addActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](hmtrigger/addactionset(_:completionhandler:).md)
+- [func addActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](./hmtrigger/addactionset%28_,completionhandler%29.md)
   Adds an action set to the trigger.
-- [func removeActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](hmtrigger/removeactionset(_:completionhandler:).md)
+- [func removeActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](./hmtrigger/removeactionset%28_,completionhandler%29.md)
   Removes an action set from the trigger.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HMEventTrigger](hmeventtrigger.md)
-- [HMTimerTrigger](hmtimertrigger.md)
+- [HMEventTrigger](./hmeventtrigger.md)
+- [HMTimerTrigger](./hmtimertrigger.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var triggers: [HMTrigger]](hmhome/triggers.md)
+### Triggering an action set
+- [var triggers: [HMTrigger]](./hmhome/triggers.md)
   An array of triggers defined in the home.
-- [func addTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](hmhome/addtrigger(_:completionhandler:).md)
+- [func addTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](./hmhome/addtrigger%28_,completionhandler%29.md)
   Adds a trigger to the home.
-- [func removeTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](hmhome/removetrigger(_:completionhandler:).md)
+- [func removeTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](./hmhome/removetrigger%28_,completionhandler%29.md)
   Removes a trigger from the home.
-- [class HMTimerTrigger](hmtimertrigger.md)
+- [class HMTimerTrigger](./hmtimertrigger.md)
   A trigger to activate an action set based on a periodic timer.
-- [class HMEventTrigger](hmeventtrigger.md)
+- [class HMEventTrigger](./hmeventtrigger.md)
   A trigger to activate an action set based on a set of events and optional conditions.
 
 

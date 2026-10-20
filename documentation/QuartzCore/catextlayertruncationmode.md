@@ -1,7 +1,8 @@
 # CATextLayerTruncationMode
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 3.2+
@@ -17,46 +18,51 @@
 struct CATextLayerTruncationMode
 ```
 
+```c
+typedef NSString * CATextLayerTruncationMode;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](catextlayertruncationmode/init(rawvalue:).md)
+- [init(rawValue: String)](./catextlayertruncationmode/init%28rawvalue%29.md)
 ### Type Properties
-- [static let end: CATextLayerTruncationMode](catextlayertruncationmode/end.md)
+- [static let end: CATextLayerTruncationMode](./catextlayertruncationmode/end.md)
   Each line is displayed so that the beginning fits in the container and the missing text is indicated by some kind of ellipsis glyph.
-- [static let middle: CATextLayerTruncationMode](catextlayertruncationmode/middle.md)
+- [static let middle: CATextLayerTruncationMode](./catextlayertruncationmode/middle.md)
   Each line is displayed so that the beginning and end fit in the container and the missing text is indicated by some kind of ellipsis glyph in the middle.
-- [static let none: CATextLayerTruncationMode](catextlayertruncationmode/none.md)
+- [static let none: CATextLayerTruncationMode](./catextlayertruncationmode/none.md)
   Each line is displayed so that the text is either wrapped or clipped.
-- [static let start: CATextLayerTruncationMode](catextlayertruncationmode/start.md)
+- [static let start: CATextLayerTruncationMode](./catextlayertruncationmode/start.md)
   Each line is displayed so that the end fits in the container and the missing text is indicated by some kind of ellipsis glyph.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CAAnimationCalculationMode](caanimationcalculationmode.md)
-- [struct CAAnimationRotationMode](caanimationrotationmode.md)
-- [struct CAEmitterLayerEmitterMode](caemitterlayeremittermode.md)
-- [struct CAEmitterLayerEmitterShape](caemitterlayeremittershape.md)
-- [struct CAEmitterLayerRenderMode](caemitterlayerrendermode.md)
-- [struct CAGradientLayerType](cagradientlayertype.md)
-- [struct CALayerContentsFilter](calayercontentsfilter.md)
-- [struct CALayerContentsFormat](calayercontentsformat.md)
-- [struct CALayerContentsGravity](calayercontentsgravity.md)
-- [struct CALayerCornerCurve](calayercornercurve.md)
-- [struct CAMediaTimingFillMode](camediatimingfillmode.md)
-- [struct CAMediaTimingFunctionName](camediatimingfunctionname.md)
-- [struct CAScrollLayerScrollMode](cascrolllayerscrollmode.md)
-- [struct CAShapeLayerFillRule](cashapelayerfillrule.md)
-- [struct CAShapeLayerLineCap](cashapelayerlinecap.md)
+### Data Types
+- [struct CAAnimationCalculationMode](./caanimationcalculationmode.md)
+- [struct CAAnimationRotationMode](./caanimationrotationmode.md)
+- [struct CAEmitterLayerEmitterMode](./caemitterlayeremittermode.md)
+- [struct CAEmitterLayerEmitterShape](./caemitterlayeremittershape.md)
+- [struct CAEmitterLayerRenderMode](./caemitterlayerrendermode.md)
+- [struct CAGradientLayerType](./cagradientlayertype.md)
+- [struct CALayerContentsFilter](./calayercontentsfilter.md)
+- [struct CALayerContentsFormat](./calayercontentsformat.md)
+- [struct CALayerContentsGravity](./calayercontentsgravity.md)
+- [struct CALayerCornerCurve](./calayercornercurve.md)
+- [struct CAMediaTimingFillMode](./camediatimingfillmode.md)
+- [struct CAMediaTimingFunctionName](./camediatimingfunctionname.md)
+- [struct CAScrollLayerScrollMode](./cascrolllayerscrollmode.md)
+- [struct CAShapeLayerFillRule](./cashapelayerfillrule.md)
+- [struct CAShapeLayerLineCap](./cashapelayerlinecap.md)
 
 
 ---

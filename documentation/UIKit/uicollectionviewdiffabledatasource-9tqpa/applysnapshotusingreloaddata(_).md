@@ -1,7 +1,8 @@
 # applySnapshotUsingReloadData(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes.
 
@@ -10,7 +11,7 @@ Resets the UI to reflect the state of the data in the snapshot without computing
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,13 +32,14 @@ You can safely call this method from a background queue, but you must do so cons
 
 ## See Also
 
-- [func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>](uicollectionviewdiffabledatasource-9tqpa/snapshot.md)
+### Updating data
+- [func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>](./snapshot%28%29.md)
   Returns a representation of the current state of the data in the collection view.
-- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool) async](uicollectionviewdiffabledatasource-9tqpa/apply(_:animatingdifferences:).md)
+- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool) async](./apply%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes.
-- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool, completion: (() -> Void)?)](uicollectionviewdiffabledatasource-9tqpa/apply(_:animatingdifferences:completion:).md)
+- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool, completion: (() -> Void)?)](./apply%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler.
-- [func applySnapshotUsingReloadData(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, completion: (() -> Void)?)](uicollectionviewdiffabledatasource-9tqpa/applysnapshotusingreloaddata(_:completion:).md)
+- [func applySnapshotUsingReloadData(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, completion: (() -> Void)?)](./applysnapshotusingreloaddata%28_,completion%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler.
 
 

@@ -1,7 +1,8 @@
 # CHHapticEventParameter
 
 **Framework**: Core Haptics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A static parameter value that represents a single property of the haptic pattern.
 
@@ -19,52 +20,57 @@ A static parameter value that represents a single property of the haptic pattern
 class CHHapticEventParameter
 ```
 
+```objc
+@interface CHHapticEventParameter : NSObject
+```
+
 #### Overview
 
-Event parameters specify values for haptics associated with the event. For example, an intensity event parameter determines how intense the haptic feels when it fires. Event parameters are static; they don’t change over the course of the pattern. To change a parameter value after a haptic has started playing, use a [`CHHapticDynamicParameter`](chhapticdynamicparameter.md) to make an immediate change, or a [`CHHapticParameterCurve`](chhapticparametercurve.md) to transition smoothly.
+Event parameters specify values for haptics associated with the event. For example, an intensity event parameter determines how intense the haptic feels when it fires. Event parameters are static; they don’t change over the course of the pattern. To change a parameter value after a haptic has started playing, use a [`CHHapticDynamicParameter`](./chhapticdynamicparameter.md) to make an immediate change, or a [`CHHapticParameterCurve`](./chhapticparametercurve.md) to transition smoothly.
 
-![A rising blue line represents how a parameter curve changes the parameter’s value gradually over time, while an orange line shows how dynamic parameters change the parameter’s value immediately.](/images/com.apple.corehaptics/media-3197279@2x.png)
+![A rising blue line represents how a parameter curve changes the parameter’s value gradually over time, while an orange line shows how dynamic parameters change the parameter’s value immediately.](https://developer.apple.com/tutorials/images/com.apple.corehaptics/media-3197279@2x.png)
 
 When you send a dynamic parameter to the haptic pattern, its value changes immediately, at the specified time. When you send a parameter curve instead, the value changes gradually according to the type of curve you specified.
 
 ## Topics
 
 ### Creating an Event Parameter
-- [init(parameterID: CHHapticEvent.ParameterID, value: Float)](chhapticeventparameter/init(parameterid:value:).md)
+- [init(parameterID: CHHapticEvent.ParameterID, value: Float)](./chhapticeventparameter/init%28parameterid,value%29.md)
   Creates a haptic event parameter from its ID and value.
-- [CHHapticEvent.ParameterID](chhapticevent/parameterid.md)
+- [CHHapticEvent.ParameterID](./chhapticevent/parameterid.md)
   An identifier for an event parameter.
 ### Specifying an Event Parameter’s Value
-- [var parameterID: CHHapticEvent.ParameterID](chhapticeventparameter/parameterid.md)
+- [var parameterID: CHHapticEvent.ParameterID](./chhapticeventparameter/parameterid.md)
   The haptic parameter ID indicating what type of parameter the current event represents.
-- [var value: Float](chhapticeventparameter/value.md)
+- [var value: Float](./chhapticeventparameter/value.md)
   The value of the parameter.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Delivering Rich App Experiences with Haptics](delivering-rich-app-experiences-with-haptics.md)
+### Programmatic haptics
+- [Delivering Rich App Experiences with Haptics](./delivering-rich-app-experiences-with-haptics.md)
   Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
-- [Playing Collision-Based Haptic Patterns](playing-collision-based-haptic-patterns.md)
+- [Playing Collision-Based Haptic Patterns](./playing-collision-based-haptic-patterns.md)
   Play a custom haptic pattern whose strength depends on an object’s collision speed.
-- [Updating Continuous and Transient Haptic Parameters in Real Time](updating-continuous-and-transient-haptic-parameters-in-real-time.md)
+- [Updating Continuous and Transient Haptic Parameters in Real Time](./updating-continuous-and-transient-haptic-parameters-in-real-time.md)
   Generate continuous and transient haptic patterns in response to user touch.
-- [class CHHapticEvent](chhapticevent.md)
+- [class CHHapticEvent](./chhapticevent.md)
   An object that describes a single haptic or audio event.
-- [class CHHapticDynamicParameter](chhapticdynamicparameter.md)
+- [class CHHapticDynamicParameter](./chhapticdynamicparameter.md)
   A value that you send to a haptic pattern player to alter a property value during playback.
-- [class CHHapticParameterCurve](chhapticparametercurve.md)
+- [class CHHapticParameterCurve](./chhapticparametercurve.md)
   A curve that you send to a haptic pattern player to alter a property value gradually during playback.
 
 

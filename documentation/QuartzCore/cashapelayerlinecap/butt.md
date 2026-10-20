@@ -1,7 +1,8 @@
 # butt
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a butt line cap style for endpoints for an open path when stroked.
 
@@ -19,11 +20,16 @@ Specifies a butt line cap style for endpoints for an open path when stroked.
 static let butt: CAShapeLayerLineCap
 ```
 
+```c
+extern CAShapeLayerLineCap const kCALineCapButt;
+```
+
 ## See Also
 
-- [static let round: CAShapeLayerLineCap](cashapelayerlinecap/round.md)
+### Constants
+- [static let round: CAShapeLayerLineCap](./round.md)
   Specifies a round line cap style for endpoints for an open path when stroked.
-- [static let square: CAShapeLayerLineCap](cashapelayerlinecap/square.md)
+- [static let square: CAShapeLayerLineCap](./square.md)
   Specifies a square line cap style for endpoints for an open path when stroked.
 
 

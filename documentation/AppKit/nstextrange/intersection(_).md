@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range, if any, where two text ranges intersect.
 
@@ -14,9 +15,13 @@ Returns the range, if any, where two text ranges intersect.
 func intersection(_ textRange: NSTextRange) -> Self?
 ```
 
+```objc
+- (instancetype) textRangeByIntersectingWithTextRange:(NSTextRange *) textRange;
+```
+
 #### Return Value
 
-An [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) that represents the intersection of the ranges, or `nil` if they don’t intersect.
+An [`NSRange`](../../Foundation/nsrange-c.struct.md) that represents the intersection of the ranges, or `nil` if they don’t intersect.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ An [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.st
 
 ## See Also
 
-- [func intersects(NSTextRange) -> Bool](nstextrange/intersects(_:).md)
+### Comparing text ranges
+- [func intersects(NSTextRange) -> Bool](./intersects%28_%29.md)
   Determines if two ranges intersect.
-- [func isEqual(to: NSTextRange) -> Bool](nstextrange/isequal(to:).md)
+- [func isEqual(to: NSTextRange) -> Bool](./isequal%28to%29.md)
   Compares two text ranges.
-- [func union(NSTextRange) -> Self](nstextrange/union(_:).md)
+- [func union(NSTextRange) -> Self](./union%28_%29.md)
   Returns a new text range by forming the union with the text range you provide.
 
 

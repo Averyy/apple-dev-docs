@@ -1,7 +1,8 @@
 # HKMetadataKeyWasTakenInLab
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates whether the sample was taken in a lab.
 
@@ -19,15 +20,20 @@ A key that indicates whether the sample was taken in a lab.
 let HKMetadataKeyWasTakenInLab: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyWasTakenInLab;
+```
+
 #### Discussion
 
-Set this key’s value to [`true`](https://developer.apple.com/documentation/swift/true) if the sample was taken by a lab; otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this key’s value to [`true`](../Swift/true.md) if the sample was taken by a lab; otherwise, set it to [`false`](../Swift/false.md).
 
 ## See Also
 
-- [let HKMetadataKeyReferenceRangeLowerLimit: String](hkmetadatakeyreferencerangelowerlimit.md)
+### Lab Keys
+- [let HKMetadataKeyReferenceRangeLowerLimit: String](./hkmetadatakeyreferencerangelowerlimit.md)
   A key that indicates the lower limit of the reference range for a lab result.
-- [let HKMetadataKeyReferenceRangeUpperLimit: String](hkmetadatakeyreferencerangeupperlimit.md)
+- [let HKMetadataKeyReferenceRangeUpperLimit: String](./hkmetadatakeyreferencerangeupperlimit.md)
   A key that indicates the upper limit of the reference range for a lab result.
 
 

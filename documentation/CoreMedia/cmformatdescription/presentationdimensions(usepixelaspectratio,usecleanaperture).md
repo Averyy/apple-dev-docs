@@ -1,7 +1,8 @@
 # presentationDimensions(usePixelAspectRatio:useCleanAperture:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the dimensions to take the pixel aspect ratio or clean aperture into account.
 
@@ -27,9 +28,10 @@ func presentationDimensions(usePixelAspectRatio: Bool = true, useCleanAperture: 
 
 ## See Also
 
-- [func cleanAperture(originIsAtTopLeft: Bool) -> CGRect](cmformatdescription/cleanaperture(originisattopleft:).md)
+### Working with Video Descriptions
+- [func cleanAperture(originIsAtTopLeft: Bool) -> CGRect](./cleanaperture%28originisattopleft%29.md)
   Returns the clean aperture.
-- [func matchesImageBuffer(CVImageBuffer) -> Bool](cmformatdescription/matchesimagebuffer(_:).md)
+- [func matchesImageBuffer(CVImageBuffer) -> Bool](./matchesimagebuffer%28_%29.md)
   Returns a Boolean value that indicates whether the format description matches an image buffer.
 
 

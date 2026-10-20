@@ -1,7 +1,8 @@
 # WebPage.FullscreenState.inFullscreen
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The page is currently in fullscreen.
 

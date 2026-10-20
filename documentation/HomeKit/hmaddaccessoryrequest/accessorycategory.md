@@ -1,7 +1,8 @@
 # accessoryCategory
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category of the accessory to add.
 
@@ -17,15 +18,20 @@ The category of the accessory to add.
 var accessoryCategory: HMAccessoryCategory { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HMAccessoryCategory * accessoryCategory;
+```
+
 ## See Also
 
-- [var home: HMHome](hmaddaccessoryrequest/home.md)
+### Characterizing the Request
+- [var home: HMHome](./home.md)
   The home to which to add the accessory.
-- [var accessoryName: String](hmaddaccessoryrequest/accessoryname.md)
+- [var accessoryName: String](./accessoryname.md)
   The name of the accessory to add.
-- [var requiresOwnershipToken: Bool](hmaddaccessoryrequest/requiresownershiptoken.md)
+- [var requiresOwnershipToken: Bool](./requiresownershiptoken.md)
   An indication of whether the add operation requires an ownership token.
-- [var requiresSetupPayloadURL: Bool](hmaddaccessoryrequest/requiressetuppayloadurl.md)
+- [var requiresSetupPayloadURL: Bool](./requiressetuppayloadurl.md)
   An indication of whether the add operation requires a setup payload URL.
 
 

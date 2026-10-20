@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert this [`JobPriority`](jobpriority.md) to a [`TaskPriority`](taskpriority.md).
+Convert this [`JobPriority`](../jobpriority.md) to a [`TaskPriority`](../taskpriority.md).
 
 **Availability**:
 - iOS 17.0+

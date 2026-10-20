@@ -1,7 +1,8 @@
 # kAXProgressIndicatorRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A determinate or indeterminate progress indicator.
 
@@ -12,6 +13,10 @@ A determinate or indeterminate progress indicator.
 
 ```swift
 var kAXProgressIndicatorRole: String { get }
+```
+
+```c
+#define kAXProgressIndicatorRole
 ```
 
 

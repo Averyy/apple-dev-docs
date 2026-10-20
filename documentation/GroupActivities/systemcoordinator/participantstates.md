@@ -1,7 +1,8 @@
 # SystemCoordinator.ParticipantStates
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that reports the current person’s ability to participate in a shared context.
 
@@ -17,25 +18,26 @@ struct ParticipantStates
 ## Topics
 
 ### Creating an iterator
-- [func makeAsyncIterator() -> SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/makeasynciterator.md)
+- [func makeAsyncIterator() -> SystemCoordinator.ParticipantStates.Iterator](./participantstates/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/iterator.md)
-- [SystemCoordinator.ParticipantStates.Element](systemcoordinator/participantstates/element.md)
+- [SystemCoordinator.ParticipantStates.Iterator](./participantstates/iterator.md)
+- [SystemCoordinator.ParticipantStates.Element](./participantstates/element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](systemcoordinator/remoteparticipantstates.md)
-- [var localParticipantState: SystemCoordinator.ParticipantState](systemcoordinator/localparticipantstate.md)
+### Getting the participant state
+- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](./remoteparticipantstates.md)
+- [var localParticipantState: SystemCoordinator.ParticipantState](./localparticipantstate.md)
   The current participant’s level of support for an activity that takes place in a shared simulation space.
-- [var localParticipantStates: SystemCoordinator.ParticipantStates](systemcoordinator/localparticipantstates.md)
+- [var localParticipantStates: SystemCoordinator.ParticipantStates](./localparticipantstates.md)
   An asynchronous sequence that reports changes to the local participant’s state.
 
 

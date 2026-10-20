@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The total size of the heap, in bytes.
@@ -20,13 +21,18 @@ The total size of the heap, in bytes.
 var size: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger size;
+```
+
 ## See Also
 
-- [func maxAvailableSize(alignment: Int) -> Int](mtlheap/maxavailablesize(alignment:).md)
+### Checking a heap’s size information
+- [func maxAvailableSize(alignment: Int) -> Int](./maxavailablesize%28alignment%29.md)
   The maximum size of a resource, in bytes, that can be currently allocated from the heap.
-- [var usedSize: Int](mtlheap/usedsize.md)
+- [var usedSize: Int](./usedsize.md)
   The size of all resources currently in the heap, in bytes.
-- [var currentAllocatedSize: Int](mtlheap/currentallocatedsize.md)
+- [var currentAllocatedSize: Int](./currentallocatedsize.md)
   The size, in bytes, of the current heap allocation.
 
 

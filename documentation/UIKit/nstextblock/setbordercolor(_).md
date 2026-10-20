@@ -1,7 +1,8 @@
 # setBorderColor(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 6.0+
@@ -17,16 +18,21 @@
 func setBorderColor(_ color: UIColor?)
 ```
 
+```objc
+- (void) setBorderColor:(UIColor *) color;
+```
+
 ## Mentions
 
-- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+- [Adding tables to attributed strings in UIKit](../adding-tables-to-attributed-strings.md)
 
 ## See Also
 
-- [var verticalAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.property.md)
-- [var backgroundColor: UIColor?](nstextblock/backgroundcolor.md)
-- [func setBorderColor(UIColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
-- [func borderColor(for: CGRectEdge) -> UIColor?](nstextblock/bordercolor(for:).md)
+### Configuring appearance
+- [var verticalAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.property.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
+- [func setBorderColor(UIColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
+- [func borderColor(for: CGRectEdge) -> UIColor?](./bordercolor%28for%29.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # device()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the IOBluetoothDevice being used by the object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func device() -> IOBluetoothDevice!
+```
+
+```objc
+- (IOBluetoothDevice *) device;
 ```
 
 #### Return Value

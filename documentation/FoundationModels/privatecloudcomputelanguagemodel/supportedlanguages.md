@@ -1,7 +1,8 @@
 # supportedLanguages
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Languages that the model supports.
 
@@ -22,11 +23,12 @@ nonisolated
 
 #### Discussion
 
-To check if a given locale is considered supported by the model, use [`supportsLocale(_:)`](privatecloudcomputelanguagemodel/supportslocale(_:).md), which also takes language fallbacks into consideration.
+To check if a given locale is considered supported by the model, use [`supportsLocale(_:)`](./supportslocale%28_%29.md), which also takes language fallbacks into consideration.
 
 ## See Also
 
-- [func supportsLocale(Locale) async throws -> Bool](privatecloudcomputelanguagemodel/supportslocale(_:).md)
+### Handling language and locales
+- [func supportsLocale(Locale) async throws -> Bool](./supportslocale%28_%29.md)
   Returns a Boolean value that indicates whether the given locale is supported by the model.
 
 

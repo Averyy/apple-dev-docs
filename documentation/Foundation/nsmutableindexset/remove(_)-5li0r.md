@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an index from the receiver.
 
@@ -20,17 +21,22 @@ Removes an index from the receiver.
 func remove(_ value: Int)
 ```
 
+```objc
+- (void) removeIndex:(NSUInteger) value;
+```
+
 ## Parameters
 
 - `value`: Index to remove.
 
 ## See Also
 
-- [func remove(IndexSet)](nsmutableindexset/remove(_:)-196u2.md)
+### Removing Indexes
+- [func remove(IndexSet)](./remove%28_%29-196u2.md)
   Removes the indexes in an index set from the receiver.
-- [func removeAllIndexes()](nsmutableindexset/removeallindexes.md)
+- [func removeAllIndexes()](./removeallindexes%28%29.md)
   Removes the receiver’s indexes.
-- [func remove(in: NSRange)](nsmutableindexset/remove(in:).md)
+- [func remove(in: NSRange)](./remove%28in%29.md)
   Removes the indexes in an index range from the receiver.
 
 

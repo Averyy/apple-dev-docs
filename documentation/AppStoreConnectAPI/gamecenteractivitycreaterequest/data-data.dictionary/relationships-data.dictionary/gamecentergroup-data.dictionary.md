@@ -1,21 +1,22 @@
 # GameCenterActivityCreateRequest.Data.Relationships.GameCenterGroup
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityCreateRequest.Data.Relationships.GameCenterGroup
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityCreateRequest.Data.Relationships.GameCenterGroup.Data](gamecenteractivitycreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
+- [object GameCenterActivityCreateRequest.Data.Relationships.GameCenterGroup.Data](./gamecentergroup-data.dictionary/data-data.dictionary.md)
   The request body you use to create a Game Center activity.
 
 ## Properties

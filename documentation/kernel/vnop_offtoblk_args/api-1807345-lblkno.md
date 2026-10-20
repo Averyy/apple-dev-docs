@@ -7,9 +7,10 @@ Logical block number to turn into offset.
 
 ## See Also
 
-- [vp](vnop_offtoblk_args/1807337-vp.md)
+### Fields
+- [vp](./api-1807337-vp.md)
   The vnode for which to convert a logical block to an offset.
-- [offset](vnop_offtoblk_args/1807353-offset.md)
+- [offset](./api-1807353-offset.md)
   Destination for file offset.
 
 

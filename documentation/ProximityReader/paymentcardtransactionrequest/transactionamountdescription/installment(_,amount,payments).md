@@ -1,9 +1,10 @@
 # PaymentCardTransactionRequest.TransactionAmountDescription.installment(_:amount:payments:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The total amount authorized upfront. The customer pays the specified amount on each payment cycle. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](paymentcardtransactionrequest/transactiontype/purchase.md)
+The total amount authorized upfront. The customer pays the specified amount on each payment cycle. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](../transactiontype/purchase.md)
 
 **Availability**:
 - iOS 18.0+

@@ -1,14 +1,15 @@
 # IFNET_NPM_THRESH_FAR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_NPM_THRESH_FAR = 100
 ```
 

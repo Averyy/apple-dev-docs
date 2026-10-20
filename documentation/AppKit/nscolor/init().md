@@ -1,17 +1,22 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the color object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ Do not call this method directly. Instead, retrieve one of the predefined color 
 
 ## See Also
 
-- [init?(coder: NSCoder)](nscolor/init(coder:).md)
+### Creating color objects
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a color object from data in an unarchiver.
-- [convenience init(resource: ColorResource)](nscolor/init(resource:).md)
+- [convenience init(resource: ColorResource)](./init%28resource%29.md)
   Initialize a `NSColor` with a color resource.
 
 

@@ -1,7 +1,8 @@
 # isLookToScrollEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var isLookToScrollEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL isLookToScrollEnabled;
 ```
 
 #### Discussion

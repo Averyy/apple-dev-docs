@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,11 +19,16 @@
 var url: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * url;
+```
+
 ## See Also
 
-- [var isMultivariantPlaylist: Bool](avmetrichlsplaylistrequestevent/ismultivariantplaylist.md)
-- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](avmetrichlsplaylistrequestevent/mediaresourcerequestevent.md)
-- [var mediaType: AVMediaType](avmetrichlsplaylistrequestevent/mediatype.md)
+### Inspecting the event
+- [var isMultivariantPlaylist: Bool](./ismultivariantplaylist.md)
+- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](./mediaresourcerequestevent.md)
+- [var mediaType: AVMediaType](./mediatype.md)
 
 
 ---

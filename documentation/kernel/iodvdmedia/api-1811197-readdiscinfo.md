@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn readDiscInfo(
  IOMemoryDescriptor *buffer, 
  UInt16 *actualByteCount );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the data transfer.
 
@@ -26,12 +26,13 @@ Issue an MMC READ DISC INFORMATION command.
 
 ## See Also
 
-- [getSpeed](iodvdmedia/1811144-getspeed.md)
-- [readRZoneInfo](iodvdmedia/1811250-readrzoneinfo.md)
-- [readStructure](iodvdmedia/1811277-readstructure.md)
-- [reportKey](iodvdmedia/1811294-reportkey.md)
-- [sendKey](iodvdmedia/1811314-sendkey.md)
-- [setSpeed](iodvdmedia/1811329-setspeed.md)
+### Miscellaneous
+- [getSpeed](./api-1811144-getspeed.md)
+- [readRZoneInfo](./api-1811250-readrzoneinfo.md)
+- [readStructure](./api-1811277-readstructure.md)
+- [reportKey](./api-1811294-reportkey.md)
+- [sendKey](./api-1811314-sendkey.md)
+- [setSpeed](./api-1811329-setspeed.md)
 
 
 ---

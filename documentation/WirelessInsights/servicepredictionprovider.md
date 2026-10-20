@@ -1,7 +1,8 @@
 # ServicePredictionProvider
 
 **Framework**: WirelessInsights  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that provices cellular service predictions about upcoming events and anomalies.
 
@@ -17,13 +18,13 @@ final class ServicePredictionProvider
 
 #### Overview
 
-To receive predictions about changing cellular conditions, start by initializing and retaining an instance of this class. Next, iterate over the [`servicePredictions`](servicepredictionprovider/servicepredictions.md) asynchronous sequence with a `for`-`await`-`in` loop.
+To receive predictions about changing cellular conditions, start by initializing and retaining an instance of this class. Next, iterate over the [`servicePredictions`](./servicepredictionprovider/servicepredictions.md) asynchronous sequence with a `for`-`await`-`in` loop.
 
-Each time your loop receives updated [`ServicePrediction`](serviceprediction.md) instances, you can inspect their [`predictedStartTime`](serviceprediction/predictedstarttime.md), [`predictedInterval`](serviceprediction/predictedinterval.md), and [`impact`](serviceprediction/impact-swift.property.md) properties to determine if your app needs to take action in advance of a potentially disruptive event.
+Each time your loop receives updated [`ServicePrediction`](./serviceprediction.md) instances, you can inspect their [`predictedStartTime`](./serviceprediction/predictedstarttime.md), [`predictedInterval`](./serviceprediction/predictedinterval.md), and [`impact`](./serviceprediction/impact-swift.property.md) properties to determine if your app needs to take action in advance of a potentially disruptive event.
 
-While processing predictions from the [`servicePredictions`](servicepredictionprovider/servicepredictions.md) sequence, gracefully handle any errors that it throws. The [`ServicePredictionError.unsupportedDevice`](servicepredictionerror/unsupporteddevice.md) error indicates that WirelessInsights won’t provide any predictions on this device. However, other errors indicate recoverable failures, such as [`ServicePredictionError.connectionError`](servicepredictionerror/connectionerror.md).
+While processing predictions from the [`servicePredictions`](./servicepredictionprovider/servicepredictions.md) sequence, gracefully handle any errors that it throws. The [`ServicePredictionError.unsupportedDevice`](./servicepredictionerror/unsupporteddevice.md) error indicates that WirelessInsights won’t provide any predictions on this device. However, other errors indicate recoverable failures, such as [`ServicePredictionError.connectionError`](./servicepredictionerror/connectionerror.md).
 
-The following example shows a class that creates a [`Task`](https://developer.apple.com/documentation/swift/task) to receive service predictions and call a private helper method when it receives a sufficiently important prediction.
+The following example shows a class that creates a [`Task`](../Swift/task.md) to receive service predictions and call a private helper method when it receives a sufficiently important prediction.
 
 ```swift
 class PredictionHandler {
@@ -70,19 +71,20 @@ class PredictionHandler {
 ## Topics
 
 ### Creating a service prediction provider
-- [init()](servicepredictionprovider/init.md)
+- [init()](./servicepredictionprovider/init%28%29.md)
   Creates a service prediction provider.
 ### Receiving service predictions
-- [var servicePredictions: any AsyncSequence<[ServicePrediction], any Error>](servicepredictionprovider/servicepredictions.md)
+- [var servicePredictions: any AsyncSequence<[ServicePrediction], any Error>](./servicepredictionprovider/servicepredictions.md)
   An asychronous sequence of current predictions.
-- [struct ServicePrediction](serviceprediction.md)
+- [struct ServicePrediction](./serviceprediction.md)
   An individual prediction of anticipated cellular network availability.
-- [enum ServicePredictionError](servicepredictionerror.md)
+- [enum ServicePredictionError](./servicepredictionerror.md)
   A type that represents errors encountered while using the WirelessInsights framework.
 
 ## See Also
 
-- [Wireless Insights Service Predictions](../bundleresources/entitlements/com.apple.developer.wireless-insights.service-predictions.md)
+### Essentials
+- [Wireless Insights Service Predictions](../BundleResources/entitlements/com.apple.developer.wireless-insights.service-predictions.md)
   A Boolean value that indicates whether the app can use the WirelessInsights framework to obtain wireless service predictions.
 
 

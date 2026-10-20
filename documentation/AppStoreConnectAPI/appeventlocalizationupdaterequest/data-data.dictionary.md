@@ -1,7 +1,8 @@
 # AppEventLocalizationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app event localization update request.
 
@@ -10,21 +11,21 @@ The request body you use to update an app event localization update request.
 
 ## Declaration
 
-```swift
+```
 object AppEventLocalizationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventLocalizationUpdateRequest.Data.Attributes](appeventlocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppEventLocalizationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app event localization update request resource.
 
 ## Properties
 
 - `attributes` (AppEventLocalizationUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appEventLocalizations`
 
 
 ---

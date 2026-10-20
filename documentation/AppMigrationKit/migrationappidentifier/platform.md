@@ -1,7 +1,8 @@
 # platform
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The platform in which the app resides.
 
@@ -17,13 +18,14 @@ let platform: MigrationPlatform
 
 ## See Also
 
-- [let storeIdentifier: MigrationAppIdentifier.StoreIdentifier](migrationappidentifier/storeidentifier-swift.property.md)
+### Working with identifier properties
+- [let storeIdentifier: MigrationAppIdentifier.StoreIdentifier](./storeidentifier-swift.property.md)
   An identifier that indicates the store in which the app resides.
-- [MigrationAppIdentifier.StoreIdentifier](migrationappidentifier/storeidentifier-swift.struct.md)
+- [MigrationAppIdentifier.StoreIdentifier](./storeidentifier-swift.struct.md)
   A type that indicates an app store in which an app resides.
-- [let bundleIdentifier: String](migrationappidentifier/bundleidentifier.md)
+- [let bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app within the store.
-- [struct MigrationPlatform](migrationplatform.md)
+- [struct MigrationPlatform](../migrationplatform.md)
   A type that identifies the platform used by the other device in a migration.
 
 

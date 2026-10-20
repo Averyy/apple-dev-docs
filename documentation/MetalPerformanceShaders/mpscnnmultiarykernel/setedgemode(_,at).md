@@ -1,7 +1,8 @@
 # setEdgeMode(_:at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setEdgeMode(_ edgeMode: MPSImageEdgeMode, at index: Int)
+```
+
+```objc
+- (void) setEdgeMode:(MPSImageEdgeMode) edgeMode atIndex:(NSUInteger) index;
 ```
 
 

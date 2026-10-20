@@ -1,7 +1,8 @@
 # init(_:coordinate:anchor:accessoryAnchor:content:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotation that displays a view at a coordinate on the map.
 

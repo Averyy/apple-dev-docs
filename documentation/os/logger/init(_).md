@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logger that writes to the specified log.
 
@@ -11,7 +12,7 @@ Creates a logger that writes to the specified log.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ init(_ logObj: OSLog)
 
 ## See Also
 
-- [init()](logger/init.md)
+### Creating a Logger
+- [init()](./init%28%29.md)
   Creates a logger that writes to the default subsystem.
-- [init(subsystem: String, category: String)](logger/init(subsystem:category:).md)
+- [init(subsystem: String, category: String)](./init%28subsystem,category%29.md)
   Creates a logger using the specified subsystem and category.
-- [class OSLog](oslog.md)
+- [class OSLog](../oslog.md)
   A container of related log messages.
 
 

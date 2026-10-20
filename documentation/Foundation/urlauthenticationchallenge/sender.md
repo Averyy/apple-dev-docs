@@ -1,7 +1,8 @@
 # sender
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sender of the challenge.
 
@@ -20,13 +21,17 @@ The sender of the challenge.
 var sender: (any URLAuthenticationChallengeSender)? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) id<NSURLAuthenticationChallengeSender> sender;
+```
+
 #### Discussion
 
-If you are using the [`URLSession`](urlsession.md) API, this value is purely informational, because you *must* respond to authentication challenges in your [`URLSessionDelegate`](urlsessiondelegate.md) or [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) implementations, by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
+If you are using the [`URLSession`](../urlsession.md) API, this value is purely informational, because you *must* respond to authentication challenges in your [`URLSessionDelegate`](../urlsessiondelegate.md) or [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md) implementations, by passing [`URLSession.AuthChallengeDisposition`](../urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
 
-However, if you are using the legacy `NSURLConnection` or `NSURLDownload` API, you use this object directly in your authentication handler delegate method. With these APIs, after you finish processing the authentication challenge, you respond by calling methods defined in the [`URLAuthenticationChallengeSender`](urlauthenticationchallengesender.md) protocol on this sender.
+However, if you are using the legacy `NSURLConnection` or `NSURLDownload` API, you use this object directly in your authentication handler delegate method. With these APIs, after you finish processing the authentication challenge, you respond by calling methods defined in the [`URLAuthenticationChallengeSender`](../urlauthenticationchallengesender.md) protocol on this sender.
 
-> ⚠️ **Warning**:  Do not call methods directly on this object if you are using the [`URLSession`](urlsession.md) API.
+> ⚠️ **Warning**:  Do not call methods directly on this object if you are using the [`URLSession`](../urlsession.md) API.
 
 
 ---

@@ -1,7 +1,8 @@
 # dragInteraction(_:sessionForAddingItems:withTouchAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate which drag session to add drag items to when there is more than one in-progress session.
 
@@ -15,6 +16,10 @@ Asks the delegate which drag session to add drag items to when there is more tha
 
 ```swift
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionForAddingItems sessions: [any UIDragSession], withTouchAt point: CGPoint) -> (any UIDragSession)?
+```
+
+```objc
+- (id<UIDragSession>) dragInteraction:(UIDragInteraction *) interaction sessionForAddingItems:(NSArray<id<UIDragSession>> *) sessions withTouchAtPoint:(CGPoint) point;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ If more than one drag session exists, the session used to add drag items may not
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, itemsForBeginning: any UIDragSession) -> [UIDragItem]](uidraginteractiondelegate/draginteraction(_:itemsforbeginning:).md)
+### Performing the drag
+- [func dragInteraction(UIDragInteraction, itemsForBeginning: any UIDragSession) -> [UIDragItem]](./draginteraction%28_,itemsforbeginning%29.md)
   Asks the delegate for the array of drag items for an impending drag interaction.
-- [func dragInteraction(UIDragInteraction, itemsForAddingTo: any UIDragSession, withTouchAt: CGPoint) -> [UIDragItem]](uidraginteractiondelegate/draginteraction(_:itemsforaddingto:withtouchat:).md)
+- [func dragInteraction(UIDragInteraction, itemsForAddingTo: any UIDragSession, withTouchAt: CGPoint) -> [UIDragItem]](./draginteraction%28_,itemsforaddingto,withtouchat%29.md)
   Asks the delegate for the drag items to add to an in-progress drag session, in response to a user gesture to add the items.
 
 

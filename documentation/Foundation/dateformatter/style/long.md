@@ -1,7 +1,8 @@
 # DateFormatter.Style.long
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,6 +19,10 @@
 case long
 ```
 
+```c
+NSDateFormatterLongStyle
+```
+
 #### Discussion
 
 Specifies a long style, typically with full text, such as “November 23, 1937” or “3:30:32 PM PST”.
@@ -26,10 +31,11 @@ Equal to `kCFDateFormatterLongStyle`.
 
 ## See Also
 
-- [DateFormatter.Style.none](dateformatter/style/none.md)
-- [DateFormatter.Style.short](dateformatter/style/short.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.full](dateformatter/style/full.md)
+### Constants
+- [DateFormatter.Style.none](./none.md)
+- [DateFormatter.Style.short](./short.md)
+- [DateFormatter.Style.medium](./medium.md)
+- [DateFormatter.Style.full](./full.md)
 
 
 ---

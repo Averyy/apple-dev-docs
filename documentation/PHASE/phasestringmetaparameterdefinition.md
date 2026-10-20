@@ -1,7 +1,8 @@
 # PHASEStringMetaParameterDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specification for a metaparameter defined by text.
 
@@ -19,38 +20,43 @@ A specification for a metaparameter defined by text.
 class PHASEStringMetaParameterDefinition
 ```
 
+```objc
+@interface PHASEStringMetaParameterDefinition : PHASEMetaParameterDefinition
+```
+
 #### Overview
 
-Use this class to spawn discrete instances of [`PHASENumberMetaParameter`](phasenumbermetaparameter.md), for example, a “player speed” metaparameter that the app changes gradually from `0.0` to `1.0`.
+Use this class to spawn discrete instances of [`PHASENumberMetaParameter`](./phasenumbermetaparameter.md), for example, a “player speed” metaparameter that the app changes gradually from `0.0` to `1.0`.
 
 To use a number metaparameter, create an instance of this class and:
 
-- Register it with the engine by calling [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md), then access the instance of this class in the engine’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
-- Pass it to the [`PHASEBlendNodeDefinition`](phaseblendnodedefinition.md) initializer, [`init(blendMetaParameterDefinition:identifier:)`](phaseblendnodedefinition/init(blendmetaparameterdefinition:identifier:).md), and then access the instance of this class in a sound event’s [`metaParameters`](phasesoundevent/metaparameters.md) dictionary.
+- Register it with the engine by calling [`registerGlobalMetaParameter(metaParameterDefinition:)`](./phaseassetregistry/registerglobalmetaparameter%28metaparameterdefinition%29.md), then access the instance of this class in the engine’s [`globalMetaParameters`](./phaseassetregistry/globalmetaparameters.md) dictionary.
+- Pass it to the [`PHASEBlendNodeDefinition`](./phaseblendnodedefinition.md) initializer, [`init(blendMetaParameterDefinition:identifier:)`](./phaseblendnodedefinition/init%28blendmetaparameterdefinition,identifier%29.md), and then access the instance of this class in a sound event’s [`metaParameters`](./phasesoundevent/metaparameters.md) dictionary.
 
 ## Topics
 
 ### Creating a Parameter Definition
-- [init(value: String)](phasestringmetaparameterdefinition/init(value:).md)
+- [init(value: String)](./phasestringmetaparameterdefinition/init%28value%29.md)
   Creates a specification for a textual metaparameter with the given value.
-- [convenience init(value: String, identifier: String)](phasestringmetaparameterdefinition/init(value:identifier:).md)
+- [convenience init(value: String, identifier: String)](./phasestringmetaparameterdefinition/init%28value,identifier%29.md)
   Creates a specification for a named textual metaparameter with the given value.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEMetaParameterDefinition](phasemetaparameterdefinition.md)
+- [PHASEMetaParameterDefinition](./phasemetaparameterdefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEStringMetaParameter](phasestringmetaparameter.md)
+### Textual Metaparameters
+- [class PHASEStringMetaParameter](./phasestringmetaparameter.md)
   A metaparameter with a text definition that can change over time.
 
 

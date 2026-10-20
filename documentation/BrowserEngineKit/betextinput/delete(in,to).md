@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Deletes the specified amount of text.
@@ -18,9 +19,13 @@ Deletes the specified amount of text.
 func delete(in direction: UITextStorageDirection, to granularity: UITextGranularity)
 ```
 
+```objc
+- (void) deleteInDirection:(UITextStorageDirection) direction toGranularity:(UITextGranularity) granularity;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 

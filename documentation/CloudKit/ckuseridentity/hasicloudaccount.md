@@ -1,7 +1,8 @@
 # hasiCloudAccount
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user has an iCloud account.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the user has an iCloud account.
 var hasiCloudAccount: Bool { get }
 ```
 
+```objc
+@property (assign, readonly) BOOL hasiCloudAccount;
+```
+
 #### Discussion
 
 `true` if the user identity has an iCloud account; otherwise, `false`.
 
 ## See Also
 
-- [var lookupInfo: CKUserIdentity.LookupInfo?](ckuseridentity/lookupinfo-swift.property.md)
+### Accessing iCloud Information
+- [var lookupInfo: CKUserIdentity.LookupInfo?](./lookupinfo-swift.property.md)
   The lookup info for retrieving the user identity.
-- [CKUserIdentity.LookupInfo](ckuseridentity/lookupinfo-swift.class.md)
+- [CKUserIdentity.LookupInfo](./lookupinfo-swift.class.md)
   The criteria to use when searching for discoverable iCloud users.
 
 

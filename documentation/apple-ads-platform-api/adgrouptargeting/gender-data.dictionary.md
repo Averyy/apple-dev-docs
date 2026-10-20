@@ -1,7 +1,8 @@
 # AdGroupTargeting.Gender
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Gender targeting for the audience.
 
@@ -10,13 +11,13 @@ Gender targeting for the audience.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargeting.Gender
 ```
 
 #### Discussion
 
-Used with App Store campaigns. Uses the [`TargetingData`](targetingdata.md) `include`/`exclude` shape.
+Used with App Store campaigns. Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 
 ```json
 "gender": {

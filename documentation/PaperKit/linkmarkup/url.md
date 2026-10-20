@@ -1,7 +1,8 @@
 # url
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that the link navigates to when activated.
 

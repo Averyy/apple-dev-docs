@@ -1,7 +1,8 @@
 # NewSpeechChannel(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new speech channel.
 
@@ -14,9 +15,13 @@ Creates a new speech channel.
 func NewSpeechChannel(_ voice: UnsafeMutablePointer<VoiceSpec>?, _ chan: UnsafeMutablePointer<SpeechChannel?>) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr NewSpeechChannel(VoiceSpec *voice, SpeechChannel  _Nullable *chan);
+```
 
-A result code. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -28,12 +33,15 @@ Your application should not attempt to manipulate the datapointed to by a variab
 
 ## Parameters
 
-- `voice`: A pointer to the voice specification structure corresponding to the voice to be used for the new speech channel. Pass `NULL` to create a speech channel using the system default voice. Specifying a voice means the initial speaking rate is determined by the synthesizer’s default speaking rate; passing `NULL` means the speaking rate is automatically set to the rate the user specifies in Speech preferences.
+- `voice`: A pointer to the voice specification structure corresponding to the voice to be used for the new speech channel. Pass `NULL` to create a speech channel using the system default voice.
+
+  Specifying a voice means the initial speaking rate is determined by the synthesizer’s default speaking rate; passing `NULL` means the speaking rate is automatically set to the rate the user specifies in Speech preferences.
 - `chan`: On return, a pointer to a valid speech channel.
 
 ## See Also
 
-- [func DisposeSpeechChannel(SpeechChannel) -> OSErr](1462081-disposespeechchannel.md)
+### Managing Speech Channels
+- [func DisposeSpeechChannel(SpeechChannel) -> OSErr](./api-1462081-disposespeechchannel.md)
   Disposes of an existing speech channel.
 
 

@@ -1,7 +1,8 @@
 # kCTTypesetterOptionAllowUnboundedLayout
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that specifies whether the text system lays out text that requires unreasonable effort.
 
@@ -20,17 +21,22 @@ A key that specifies whether the text system lays out text that requires unreaso
 let kCTTypesetterOptionAllowUnboundedLayout: CFString
 ```
 
+```c
+extern CFStringRef const kCTTypesetterOptionAllowUnboundedLayout;
+```
+
 #### Discussion
 
-Proper Unicode layout of some text requires unreasonable effort. By default, the text system avoids expending this effort. To create a typesetter that always typesets the text, regardless of the amount of work needed, call [`CTTypesetterCreateWithAttributedStringAndOptions(_:_:)`](cttypesettercreatewithattributedstringandoptions(_:_:).md) and set this option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue).
+Proper Unicode layout of some text requires unreasonable effort. By default, the text system avoids expending this effort. To create a typesetter that always typesets the text, regardless of the amount of work needed, call [`CTTypesetterCreateWithAttributedStringAndOptions(_:_:)`](./cttypesettercreatewithattributedstringandoptions%28_,_%29.md) and set this option to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md).
 
-The value for this key must be a `CFBooleanRef`. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
+The value for this key must be a `CFBooleanRef`. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md).
 
 ## See Also
 
-- [let kCTTypesetterOptionForcedEmbeddingLevel: CFString](kcttypesetteroptionforcedembeddinglevel.md)
+### Constants
+- [let kCTTypesetterOptionForcedEmbeddingLevel: CFString](./kcttypesetteroptionforcedembeddinglevel.md)
   A key that specifies the embedding level of the typesetter’s text.
-- [let kCTTypesetterOptionDisableBidiProcessing: CFString](kcttypesetteroptiondisablebidiprocessing.md)
+- [let kCTTypesetterOptionDisableBidiProcessing: CFString](./kcttypesetteroptiondisablebidiprocessing.md)
 
 
 ---

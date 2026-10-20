@@ -1,7 +1,8 @@
 # Tips.Rule.CompoundOperation
 
 **Framework**: TipKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,18 +22,18 @@ enum CompoundOperation
 ## Topics
 
 ### Enumeration Cases
-- [Tips.Rule.CompoundOperation.conjunction](tips/rule/compoundoperation/conjunction.md)
+- [Tips.Rule.CompoundOperation.conjunction](./compoundoperation/conjunction.md)
   Type used for `and` rules.
-- [Tips.Rule.CompoundOperation.disjunction](tips/rule/compoundoperation/disjunction.md)
+- [Tips.Rule.CompoundOperation.disjunction](./compoundoperation/disjunction.md)
   Type used for `or` rules.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

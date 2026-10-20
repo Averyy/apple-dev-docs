@@ -1,14 +1,15 @@
 # createInputClockSelector
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```c
 static IOAudioSelectorControl * createInputClockSelector(SInt32 initialValue, UInt32 channelID, UInt32 clockSource, const char *channelName, UInt32 cntrlID);
 ```
 

@@ -1,7 +1,8 @@
 # preferredInterfaceOrientationForPresentation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interface orientation to use when presenting the view controller.
 
@@ -17,6 +18,10 @@ The interface orientation to use when presenting the view controller.
 var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+```
+
 #### Return Value
 
 The interface orientation with which to present the view controller.
@@ -29,15 +34,16 @@ If your view controller implements this method, your view controller’s view is
 
 ## See Also
 
-- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](uiviewcontroller/supportedinterfaceorientations.md)
+### Configuring the view rotation settings
+- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](./supportedinterfaceorientations.md)
   The interface orientations that the view controller supports.
-- [func setNeedsUpdateOfSupportedInterfaceOrientations()](uiviewcontroller/setneedsupdateofsupportedinterfaceorientations.md)
+- [func setNeedsUpdateOfSupportedInterfaceOrientations()](./setneedsupdateofsupportedinterfaceorientations%28%29.md)
   Notifies the view controller about a change in supported interface orientations or preferred interface orientation for presentation.
-- [var prefersInterfaceOrientationLocked: Bool](uiviewcontroller/prefersinterfaceorientationlocked.md)
+- [var prefersInterfaceOrientationLocked: Bool](./prefersinterfaceorientationlocked.md)
   A Boolean value that indicates whether the view controller prefers to lock the scene’s interface orientation when the scene is visible.
-- [func setNeedsUpdateOfPrefersInterfaceOrientationLocked()](uiviewcontroller/setneedsupdateofprefersinterfaceorientationlocked.md)
+- [func setNeedsUpdateOfPrefersInterfaceOrientationLocked()](./setneedsupdateofprefersinterfaceorientationlocked%28%29.md)
   Indicates that the view controller changed the interface orientation lock preference.
-- [var childForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childforinterfaceorientationlock.md)
+- [var childForInterfaceOrientationLock: UIViewController?](./childforinterfaceorientationlock.md)
   A child view controller to query for the interface orientation lock preference.
 
 

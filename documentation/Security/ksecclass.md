@@ -1,7 +1,8 @@
 # kSecClass
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary key whose value is the item’s class.
 
@@ -20,15 +21,19 @@ A dictionary key whose value is the item’s class.
 let kSecClass: CFString
 ```
 
+```c
+extern CFStringRef const kSecClass;
+```
+
 ## Mentions
 
-- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
-- [Storing an Identity in the Keychain](storing-an-identity-in-the-keychain.md)
-- [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
+- [Storing a Certificate in the Keychain](./storing-a-certificate-in-the-keychain.md)
+- [Storing an Identity in the Keychain](./storing-an-identity-in-the-keychain.md)
+- [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
 #### Discussion
 
-Possible values for this key are listed in [`Item class values`](item-class-keys-and-values#Item-class-values.md).
+Possible values for this key are listed in [Item class values](./item-class-keys-and-values.md#Item-class-values).
 
 
 ---

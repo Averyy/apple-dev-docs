@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified list of entity as children to this entity.
 

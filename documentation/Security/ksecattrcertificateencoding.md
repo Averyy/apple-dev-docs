@@ -1,7 +1,8 @@
 # kSecAttrCertificateEncoding
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s certificate encoding.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s certificate encoding.
 let kSecAttrCertificateEncoding: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrCertificateEncoding;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and denotes the certificate encoding (see the `CSSM_CERT_ENCODING` enumeration in cssmtype.h). Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and denotes the certificate encoding (see the `CSSM_CERT_ENCODING` enumeration in cssmtype.h). Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

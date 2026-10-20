@@ -1,7 +1,8 @@
 # focusItemDeferralMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If this property is present and returns `UIFocusItemDeferralModeNever`, the focus deferral will not be enabled again after the user engagement timeout has expired if this item is currently focused and programmatic focus updates pointing to this item will be executed immediatly. If it returns `UIFocusItemDeferralModeAlways` focus will always be deferred when this item is supposed to be focused. Does nothing when focus deferral is not supported on the platform.
 
@@ -16,6 +17,10 @@ If this property is present and returns `UIFocusItemDeferralModeNever`, the focu
 
 ```swift
 optional var focusItemDeferralMode: UIFocusItemDeferralMode { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIFocusItemDeferralMode focusItemDeferralMode;
 ```
 
 

@@ -1,7 +1,8 @@
 # Cancel a Subscription
 
 **Framework**: Advanced Commerce API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
 
@@ -10,20 +11,20 @@ Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
 
 ## Mentions
 
-- [Authorizing API requests from your server](authorizing-server-calls.md)
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+- [Authorizing API requests from your server](./authorizing-server-calls.md)
+- [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
 #### Discussion
 
 When this endpoint succeeds, the system sets the subscription’s auto-renew status to `false` and the subscription doesn’t renew at the next renewal period. The customer continues to have access to the subscription until the end of the current period.
 
-To immediately cancel a subscription instead, see [`Revoke Subscription`](revoke-subscription.md).
+To immediately cancel a subscription instead, see [`Revoke Subscription`](./revoke-subscription.md).
 
-> **Note**: To use the `Cancel a Subscription` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
+> **Note**: To use the `Cancel a Subscription` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
 
-Refer to the Advanced Commerce API Addendum to learn the use cases for the `Cancel a Subscription`, [`Revoke Subscription`](revoke-subscription.md), and [`Request Transaction Refund`](request-transaction-refund.md) APIs.
+Refer to the Advanced Commerce API Addendum to learn the use cases for the `Cancel a Subscription`, [`Revoke Subscription`](./revoke-subscription.md), and [`Request Transaction Refund`](./request-transaction-refund.md) APIs.
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -149,17 +150,33 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the `Canc
 
 ## Parameters
 
+### Path Parameters
+
 - `transactionId` (string) *(required)*: The transaction identifier of the auto-renewable subscription to cancel.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionCancelRequest`
+
 The request body that includes information about the subscription to cancel.
+
+## Responses
+
+- `200` OK (`SubscriptionCancelResponse`, `application/json`): Success
+- `400` Bad Request (`(NullRequestInfoError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | MismatchedStorefrontError | OperationNotAllowedError | MalformedPayloadError)`, `application/json`)
+- `401` Unauthorized
+- `403` Forbidden (`(SubscriptionDoesNotExistError | SubscriptionNotEligibleError | ProductNotOwnedError)`, `application/json`)
+- `404` Not Found (`TransactionIdNotFoundError`, `application/json`)
+- `429` (`RateLimitExceededError`, `application/json`)
+- `500` Internal Server Error (`(GeneralInternalError | GeneralInternalRetryableError)`, `application/json`)
 
 ## See Also
 
-- [object SubscriptionCancelRequest](subscriptioncancelrequest.md)
+### Subscription cancellation from the server
+- [object SubscriptionCancelRequest](./subscriptioncancelrequest.md)
   The request body for turning off automatic renewal of a subscription.
-- [object SubscriptionCancelResponse](subscriptioncancelresponse.md)
+- [object SubscriptionCancelResponse](./subscriptioncancelresponse.md)
   The response body for a successful subscription cancellation.
 
 

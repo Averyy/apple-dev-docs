@@ -1,7 +1,8 @@
 # isPictureInPictureSuspended
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system suspends the controller’s Picture in Picture window.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the system suspends the controller’s Pi
 var isPictureInPictureSuspended: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPictureInPictureSuspended) BOOL pictureInPictureSuspended;
+```
+
 #### Discussion
 
 The system suspends your app’s Picture in Picture session when another app, typically FaceTime, is using the feature. In this state, your video playback is active but paused and offscreen. Picture in Picture resumes automatically when the other app finishes using PiP.
 
 ## See Also
 
-- [class func isPictureInPictureSupported() -> Bool](avpictureinpicturecontroller/ispictureinpicturesupported.md)
+### Accessing Picture in Picture state
+- [class func isPictureInPictureSupported() -> Bool](./ispictureinpicturesupported%28%29.md)
   Returns a Boolean value that indicates whether the current device supports Picture in Picture.
-- [var isPictureInPicturePossible: Bool](avpictureinpicturecontroller/ispictureinpicturepossible.md)
+- [var isPictureInPicturePossible: Bool](./ispictureinpicturepossible.md)
   A Boolean value that indicates whether Picture in Picture playback is currently possible.
-- [var isPictureInPictureActive: Bool](avpictureinpicturecontroller/ispictureinpictureactive.md)
+- [var isPictureInPictureActive: Bool](./ispictureinpictureactive.md)
   A Boolean value that indicates whether the Picture in Picture window is onscreen.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Selects the accessibility element.
@@ -15,9 +16,13 @@ Selects the accessibility element.
 func accessibilityPerformPick() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformPick;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully triggered; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
+[`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
 #### Discussion
 
@@ -25,7 +30,8 @@ Use this method on selectable elements, such as a menu item.
 
 ## See Also
 
-- [func accessibilityPerformPress() -> Bool](nsaccessibilityprotocol/accessibilityperformpress.md)
+### Selecting elements
+- [func accessibilityPerformPress() -> Bool](./accessibilityperformpress%28%29.md)
   Simulates clicking the accessibility element.
 
 

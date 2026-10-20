@@ -1,14 +1,15 @@
 # au_expire_after_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 typedef struct au_expire_after {
     ...
 } au_expire_after_t;
@@ -17,9 +18,9 @@ typedef struct au_expire_after {
 ## Topics
 
 ### Instance Properties
-- [age](au_expire_after_t/2967319-age.md)
-- [op_type](au_expire_after_t/2977280-op_type.md)
-- [size](au_expire_after_t/2967320-size.md)
+- [age](./au_expire_after_t/api-2967319-age.md)
+- [op_type](./au_expire_after_t/api-2977280-op_type.md)
+- [size](./au_expire_after_t/api-2967320-size.md)
 
 
 ---

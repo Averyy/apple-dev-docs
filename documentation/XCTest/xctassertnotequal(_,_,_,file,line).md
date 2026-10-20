@@ -1,7 +1,8 @@
 # XCTAssertNotEqual(_:_:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that two values are not equal.
 
@@ -21,7 +22,8 @@ func XCTAssertNotEqual<T>(_ expression1: @autoclosure () throws -> T, _ expressi
 
 ## See Also
 
-- [func XCTAssertEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertequal(_:_:_:file:line:).md)
+### Tests for Equality and Inequality
+- [func XCTAssertEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertequal%28_,_,_,file,line%29.md)
   Asserts that two values are equal.
 
 

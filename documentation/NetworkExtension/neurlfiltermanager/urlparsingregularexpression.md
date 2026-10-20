@@ -1,7 +1,8 @@
 # urlParsingRegularExpression
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A regular expression used for advanced URL parsing.
 
@@ -19,7 +20,7 @@ var urlParsingRegularExpression: String? { get }
 
 #### Discussion
 
-This property is read-only. To set a regular expression for use in parsing, call [`setURLParsingRegularExpression(_:)`](neurlfiltermanager/seturlparsingregularexpression(_:).md), which validates the pattern.
+This property is read-only. To set a regular expression for use in parsing, call [`setURLParsingRegularExpression(_:)`](./seturlparsingregularexpression%28_%29.md), which validates the pattern.
 
 Setting a regular expression allows you to perform custom URL parsing patterns beyond the standard parsing options. The filter uses the regular expression to parse the URL before matching against the specified data set.
 
@@ -27,11 +28,12 @@ URL parsing with a regular expression is case insensitive.
 
 ## See Also
 
-- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/urlparsingconfiguration.md)
+### Customizing filter parsing behavior
+- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](./urlparsingconfiguration.md)
   A property to configure the filter’s parser behavior.
-- [NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/parsingconfiguration.md)
+- [NEURLFilterManager.ParsingConfiguration](./parsingconfiguration.md)
   A type to configure the filter’s parser behavior.
-- [func setURLParsingRegularExpression(String?) throws](neurlfiltermanager/seturlparsingregularexpression(_:).md)
+- [func setURLParsingRegularExpression(String?) throws](./seturlparsingregularexpression%28_%29.md)
   Sets a regular expression for use in URL parsing.
 
 

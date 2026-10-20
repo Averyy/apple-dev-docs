@@ -1,7 +1,8 @@
 # requestedAudioFormat
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the audio format in which the client prefers to receive the output sample buffers.
 
@@ -18,6 +19,10 @@ Indicates the audio format in which the client prefers to receive the output sam
 
 ```swift
 var requestedAudioFormat: CMFormatDescription? { get set }
+```
+
+```objc
+@property (nonatomic, nullable) CMFormatDescriptionRef requestedAudioFormat;
 ```
 
 #### Discussion

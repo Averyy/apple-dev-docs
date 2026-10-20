@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures how subsequent draw commands rasterize triangle and triangle strip primitives.
@@ -20,15 +21,20 @@ Configures how subsequent draw commands rasterize triangle and triangle strip pr
 func setTriangleFillMode(_ fillMode: MTLTriangleFillMode)
 ```
 
+```objc
+- (void) setTriangleFillMode:(MTLTriangleFillMode) fillMode;
+```
+
 ## Parameters
 
-- `fillMode`: [`MTLTriangleFillMode`](mtltrianglefillmode.md) the render pass applies to draw commands that rasterize triangles or triangle strips.
+- `fillMode`: [`MTLTriangleFillMode`](../mtltrianglefillmode.md) the render pass applies to draw commands that rasterize triangles or triangle strips.
 
 ## See Also
 
-- [func setFrontFacing(MTLWinding)](mtl4rendercommandencoder/setfrontfacing(_:).md)
+### Configuring rendering behavior
+- [func setFrontFacing(MTLWinding)](./setfrontfacing%28_%29.md)
   Configures the vertex winding order that determines which face of a geometric primitive is the front one.
-- [func setCullMode(MTLCullMode)](mtl4rendercommandencoder/setcullmode(_:).md)
+- [func setCullMode(MTLCullMode)](./setcullmode%28_%29.md)
   Controls whether Metal culls front facing primitives, back facing primitives, or culls no primitives at all.
 
 

@@ -1,12 +1,13 @@
 # setData(_:forType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the data as the representation for the specified type for the first item on the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,28 +15,34 @@ Sets the data as the representation for the specified type for the first item on
 func setData(_ data: Data?, forType dataType: NSPasteboard.PasteboardType) -> Bool
 ```
 
+```objc
+- (BOOL) setData:(NSData *) data forType:(NSPasteboardType) dataType;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data was written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
+[`true`](../../Swift/true.md) if the data was written successfully, otherwise [`false`](../../Swift/false.md) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
 
 ## Parameters
 
 - `data`: The data to write to the pasteboard.
-- `dataType`: The type of data in the `data` parameter. The type must have been declared by a previous [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) message.
+- `dataType`: The type of data in the `data` parameter. The type must have been declared by a previous [`declareTypes(_:owner:)`](./declaretypes%28_,owner%29.md) message.
 
 ## See Also
 
-- [func data(forType: NSPasteboard.PasteboardType) -> Data?](nspasteboard/data(fortype:).md)
+### Related Documentation
+- [func data(forType: NSPasteboard.PasteboardType) -> Data?](./data%28fortype%29.md)
   Returns the data for the specified type from the first item in the receiver that contains the type.
-- [func clearContents() -> Int](nspasteboard/clearcontents.md)
+### Writing data
+- [func clearContents() -> Int](./clearcontents%28%29.md)
   Clears the existing contents of the pasteboard.
-- [func writeObjects([any NSPasteboardWriting]) -> Bool](nspasteboard/writeobjects(_:).md)
+- [func writeObjects([any NSPasteboardWriting]) -> Bool](./writeobjects%28_%29.md)
   Writes an array of objects to the receiver.
-- [func setPropertyList(Any, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboard/setpropertylist(_:fortype:).md)
+- [func setPropertyList(Any, forType: NSPasteboard.PasteboardType) -> Bool](./setpropertylist%28_,fortype%29.md)
   Sets the given property list as the representation for the specified type for the first item on the receiver.
-- [func setString(String, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboard/setstring(_:fortype:).md)
+- [func setString(String, forType: NSPasteboard.PasteboardType) -> Bool](./setstring%28_,fortype%29.md)
   Sets the given string as the representation for the specified type for the first item on the receiver.
-- [NSPasteboard.PasteboardType](nspasteboard/pasteboardtype.md)
+- [NSPasteboard.PasteboardType](./pasteboardtype.md)
   The supported pasteboard types.
 
 

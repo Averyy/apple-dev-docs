@@ -1,7 +1,8 @@
 # loadBackgroundContent(completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the background content if needed for the extension.
 
@@ -15,7 +16,15 @@ Loads the background content if needed for the extension.
 ## Declaration
 
 ```swift
+func loadBackgroundContent(completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func loadBackgroundContent() async throws
+```
+
+```objc
+- (void) loadBackgroundContentWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # textDroppableView(_:willPerformDrop:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the drop operation is about to happen.
 
@@ -17,9 +18,13 @@ Tells the delegate that the drop operation is about to happen.
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, willPerformDrop drop: any UITextDropRequest)
 ```
 
+```objc
+- (void) textDroppableView:(UIView<UITextDroppable> *) textDroppableView willPerformDrop:(id<UITextDropRequest>) drop;
+```
+
 #### Discussion
 
-If you need to modify the drag items before the drop operation happens, provide the text view a [`pasteDelegate`](uitextpasteconfigurationsupporting/pastedelegate.md) object that implements the [`paste(itemProviders:)`](uipasteconfigurationsupporting/paste(itemproviders:).md) method. In the implementation, do the item conversion and paste the text.
+If you need to modify the drag items before the drop operation happens, provide the text view a [`pasteDelegate`](../uitextpasteconfigurationsupporting/pastedelegate.md) object that implements the [`paste(itemProviders:)`](../uipasteconfigurationsupporting/paste%28itemproviders%29.md) method. In the implementation, do the item conversion and paste the text.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # anchored(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a modified `CoordinateSpace3D` offset to match the provided `anchorPoint` in the original coordinate space.
 

@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.PeersItem.Alert
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes a peer content cache alert.
 
@@ -10,7 +11,7 @@ A dictionary that describes a peer content cache alert.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.PeersItem.Alert
 ```
 
@@ -18,12 +19,15 @@ object ContentCachingInformationResponse.StatusResponse.PeersItem.Alert
 
 - `addresses` ([string]): An array of local IP addresses of peer content caches.
 - `className` (string) *(required)*: The type of the alert.
+
+  **Allowed Values**: `AssetCachePeerCycleAlert`, `AssetCacheUnfriendlyPeerAlert`
 - `peerAddress` (string): The local IP address of a peer content cache.
 - `postDate` (date) *(required)*: The date of the alert.
 
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details](./details-data.dictionary.md)
   A dictionary that contains additional details about the peer content cache.
 
 

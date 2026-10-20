@@ -1,7 +1,8 @@
 # CWChannelBand
 
 **Framework**: Core WLAN  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 CoreWLAN channel bands.
 
@@ -14,48 +15,53 @@ CoreWLAN channel bands.
 enum CWChannelBand
 ```
 
+```c
+enum CWChannelBand : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CWChannelBand.bandUnknown](cwchannelband/bandunknown.md)
+- [CWChannelBand.bandUnknown](./cwchannelband/bandunknown.md)
   Unknown channel band.
-- [CWChannelBand.band2GHz](cwchannelband/band2ghz.md)
+- [CWChannelBand.band2GHz](./cwchannelband/band2ghz.md)
   2.4GHz channel band.
-- [CWChannelBand.band5GHz](cwchannelband/band5ghz.md)
+- [CWChannelBand.band5GHz](./cwchannelband/band5ghz.md)
   5GHz channel band.
 ### Enumeration Cases
-- [CWChannelBand.band6GHz](cwchannelband/band6ghz.md)
+- [CWChannelBand.band6GHz](./cwchannelband/band6ghz.md)
 ### Initializers
-- [init?(rawValue: Int)](cwchannelband/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cwchannelband/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CWChannelWidth](cwchannelwidth.md)
+### Enumerations
+- [enum CWChannelWidth](./cwchannelwidth.md)
   CoreWLAN channel widths.
-- [struct CWCipherKeyFlags](cwcipherkeyflags.md)
+- [struct CWCipherKeyFlags](./cwcipherkeyflags.md)
   Cipher key flags.
-- [enum CWErr](cwerr.md)
-- [enum CWEventType](cweventtype.md)
+- [enum CWErr](./cwerr.md)
+- [enum CWEventType](./cweventtype.md)
   Wi-Fi event types.
-- [enum CWIBSSModeSecurity](cwibssmodesecurity.md)
+- [enum CWIBSSModeSecurity](./cwibssmodesecurity.md)
   IBSS mode security types.
-- [enum CWInterfaceMode](cwinterfacemode.md)
+- [enum CWInterfaceMode](./cwinterfacemode.md)
   Wi-Fi interface operating modes.
-- [enum CWKeychainDomain](cwkeychaindomain.md)
+- [enum CWKeychainDomain](./cwkeychaindomain.md)
   Keychain domain types that CoreWLAN keychain methods use.
-- [enum CWPHYMode](cwphymode.md)
+- [enum CWPHYMode](./cwphymode.md)
   CoreWLAN physical layer modes.
-- [enum CWSecurity](cwsecurity.md)
+- [enum CWSecurity](./cwsecurity.md)
   CoreWLAN security types.
 
 

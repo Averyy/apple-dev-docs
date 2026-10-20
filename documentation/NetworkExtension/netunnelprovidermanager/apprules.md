@@ -1,7 +1,8 @@
 # appRules
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rules for specific apps in a per-app VPN.
 
@@ -14,9 +15,13 @@ The rules for specific apps in a per-app VPN.
 var appRules: [NEAppRule] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NEAppRule *> * appRules;
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
 #### Discussion
 
@@ -24,19 +29,20 @@ For per-app VPNs only, the system routes network traffic originating from an app
 
 ## See Also
 
-- [class func forPerAppVPN() -> Self](netunnelprovidermanager/forperappvpn.md)
+### Configuring a per-app VPN
+- [class func forPerAppVPN() -> Self](./forperappvpn%28%29.md)
   Returns a tunnel provider manager for managing a per-app VPN configuration.
-- [var excludedDomains: [String]](netunnelprovidermanager/excludeddomains.md)
+- [var excludedDomains: [String]](./excludeddomains.md)
   The domains that the system excludes from a per-app VPN.
-- [var associatedDomains: [String]](netunnelprovidermanager/associateddomains.md)
+- [var associatedDomains: [String]](./associateddomains.md)
   The domains that the system routes network traffic through for a per-app VPN.
-- [var calendarDomains: [String]](netunnelprovidermanager/calendardomains.md)
+- [var calendarDomains: [String]](./calendardomains.md)
   The calendar servers that the system routes connections from the Calendar app through for a per-app VPN.
-- [var contactsDomains: [String]](netunnelprovidermanager/contactsdomains.md)
+- [var contactsDomains: [String]](./contactsdomains.md)
   The contacts servers that the system routes connections from the Contacts app through for a per-app VPN.
-- [var mailDomains: [String]](netunnelprovidermanager/maildomains.md)
+- [var mailDomains: [String]](./maildomains.md)
   The mail servers that the system routes connections from the Mail app through for a per-app VPN.
-- [var safariDomains: [String]](netunnelprovidermanager/safaridomains.md)
+- [var safariDomains: [String]](./safaridomains.md)
   The website domains that the system routes connections from the Safari app through a per-app VPN.
 
 

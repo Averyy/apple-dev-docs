@@ -1,7 +1,8 @@
 # CALayerDelegate
 
 **Framework**: Core Animation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods your app can implement to respond to layer-related events.
 
@@ -19,42 +20,47 @@ Methods your app can implement to respond to layer-related events.
 protocol CALayerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CALayerDelegate <NSObject>
+```
+
 #### Overview
 
-You can implement the methods of this protocol to provide the layer’s content, handle the layout of sublayers, and provide custom animation actions to perform. The object that implements this protocol must be assigned to the [`delegate`](calayer/delegate.md) property of the layer object.
+You can implement the methods of this protocol to provide the layer’s content, handle the layout of sublayers, and provide custom animation actions to perform. The object that implements this protocol must be assigned to the [`delegate`](./calayer/delegate.md) property of the layer object.
 
 ## Topics
 
 ### Providing the Layer’s Content
-- [func display(CALayer)](calayerdelegate/display(_:).md)
+- [func display(CALayer)](./calayerdelegate/display%28_%29.md)
   Tells the delegate to implement the display process.
-- [func draw(CALayer, in: CGContext)](calayerdelegate/draw(_:in:).md)
+- [func draw(CALayer, in: CGContext)](./calayerdelegate/draw%28_,in%29.md)
   Tells the delegate to implement the display process using the layer’s context.
-- [func layerWillDraw(CALayer)](calayerdelegate/layerwilldraw(_:).md)
+- [func layerWillDraw(CALayer)](./calayerdelegate/layerwilldraw%28_%29.md)
   Notifies the delegate of an imminent draw.
 ### Laying Out Sublayers
-- [func layoutSublayers(of: CALayer)](calayerdelegate/layoutsublayers(of:).md)
+- [func layoutSublayers(of: CALayer)](./calayerdelegate/layoutsublayers%28of%29.md)
   Tells the delegate a layer’s bounds have changed.
 ### Providing a Layer’s Actions
-- [func action(for: CALayer, forKey: String) -> (any CAAction)?](calayerdelegate/action(for:forkey:).md)
-  Returns the default action of the [`action(forKey:)`](calayer/action(forkey:).md) method.
+- [func action(for: CALayer, forKey: String) -> (any CAAction)?](./calayerdelegate/action%28for,forkey%29.md)
+  Returns the default action of the [`action(forKey:)`](./calayer/action%28forkey%29.md) method.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CALayer](calayer.md)
+### Layer Basics
+- [class CALayer](./calayer.md)
   An object that manages image-based content and allows you to perform animations on that content.
-- [class CAConstraint](caconstraint.md)
+- [class CAConstraint](./caconstraint.md)
   A representation of a single layout constraint between two layers.
-- [protocol CALayoutManager](calayoutmanager.md)
+- [protocol CALayoutManager](./calayoutmanager.md)
   Methods that allow an object to manage the layout of a layer and its sublayers.
-- [class CAConstraintLayoutManager](caconstraintlayoutmanager.md)
+- [class CAConstraintLayoutManager](./caconstraintlayoutmanager.md)
   An object that provides a constraint-based layout manager.
-- [protocol CAAction](caaction.md)
+- [protocol CAAction](./caaction.md)
   An interface that allows instances to respond to actions triggered by a Core Animation layer change.
 
 

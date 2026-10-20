@@ -1,7 +1,8 @@
 # NSManagedObjectContext.DidSaveObjectIDsMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted after a main queue context saves, containing object IDs rather than full objects.
 
@@ -27,27 +28,27 @@ Only use this message type for contexts with `NSMainQueueConcurrencyType`.
 ## Topics
 
 ### Instance Properties
-- [let context: NSManagedObjectContext](nsmanagedobjectcontext/didsaveobjectidsmessage/context.md)
-- [let deletedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsmessage/deletedids.md)
+- [let context: NSManagedObjectContext](./didsaveobjectidsmessage/context.md)
+- [let deletedIDs: Set<NSManagedObjectID>](./didsaveobjectidsmessage/deletedids.md)
   Object IDs of objects that were deleted during this save.
-- [let historyToken: NSPersistentHistoryToken?](nsmanagedobjectcontext/didsaveobjectidsmessage/historytoken.md)
+- [let historyToken: NSPersistentHistoryToken?](./didsaveobjectidsmessage/historytoken.md)
   The persistent history token representing the state after the save.
-- [let insertedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsmessage/insertedids.md)
+- [let insertedIDs: Set<NSManagedObjectID>](./didsaveobjectidsmessage/insertedids.md)
   Object IDs of objects that were inserted during this save.
-- [let invalidatedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsmessage/invalidatedids.md)
+- [let invalidatedIDs: Set<NSManagedObjectID>](./didsaveobjectidsmessage/invalidatedids.md)
   Object IDs of objects that were invalidated during this save.
-- [let queryGeneration: NSQueryGenerationToken?](nsmanagedobjectcontext/didsaveobjectidsmessage/querygeneration.md)
+- [let queryGeneration: NSQueryGenerationToken?](./didsaveobjectidsmessage/querygeneration.md)
   Query generation token after the save.
-- [let refreshedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsmessage/refreshedids.md)
+- [let refreshedIDs: Set<NSManagedObjectID>](./didsaveobjectidsmessage/refreshedids.md)
   Object IDs of objects that were refreshed during this save.
-- [let updatedIDs: Set<NSManagedObjectID>](nsmanagedobjectcontext/didsaveobjectidsmessage/updatedids.md)
+- [let updatedIDs: Set<NSManagedObjectID>](./didsaveobjectidsmessage/updatedids.md)
   Object IDs of objects that were updated during this save.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

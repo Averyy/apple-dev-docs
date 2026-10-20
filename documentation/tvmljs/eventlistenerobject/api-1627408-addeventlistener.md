@@ -1,7 +1,8 @@
 # addEventListener
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates an event listener.
 
@@ -10,7 +11,7 @@ Creates an event listener.
 
 ## Declaration
 
-```swift
+```
 void addEventListener(
     in String type, 
     in Object listener, 
@@ -30,7 +31,8 @@ Use the `extraInfo` parameter to handle information for different types of event
 
 ## See Also
 
-- [removeEventListener](eventlistenerobject/1627423-removeeventlistener.md)
+### Adding and Removing Event Listeners
+- [removeEventListener](./api-1627423-removeeventlistener.md)
   Removes the designated event listener.
 
 

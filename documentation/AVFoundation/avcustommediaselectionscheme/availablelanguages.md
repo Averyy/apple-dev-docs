@@ -1,7 +1,8 @@
 # availableLanguages
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides available language choices.
 
@@ -20,17 +21,22 @@ Provides available language choices.
 var availableLanguages: [String] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSString *> * availableLanguages;
+```
+
 #### Discussion
 
 Each string in the array is intended to be interpreted as a BCP 47 language tag.
 
 ## See Also
 
-- [var selectors: [AVMediaPresentationSelector]](avcustommediaselectionscheme/selectors.md)
+### Inspecting the scheme
+- [var selectors: [AVMediaPresentationSelector]](./selectors.md)
   Provides custom settings.
-- [var shouldOfferLanguageSelection: Bool](avcustommediaselectionscheme/shouldofferlanguageselection.md)
+- [var shouldOfferLanguageSelection: Bool](./shouldofferlanguageselection.md)
   Indicates whether an alternative selection interface should provide a menu of language choices.
-- [func mediaPresentationSettings(for: AVMediaPresentationSelector, complementaryToLanguage: String?, settings: [AVMediaPresentationSetting]) -> [AVMediaPresentationSetting]](avcustommediaselectionscheme/mediapresentationsettings(for:complementarytolanguage:settings:).md)
+- [func mediaPresentationSettings(for: AVMediaPresentationSelector, complementaryToLanguage: String?, settings: [AVMediaPresentationSetting]) -> [AVMediaPresentationSetting]](./mediapresentationsettings%28for,complementarytolanguage,settings%29.md)
   Provides an array of media presentation settings that can be effective at the same time as the specified language and settings for other selectors of the receiver.
 
 

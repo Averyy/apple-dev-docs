@@ -1,7 +1,8 @@
 # cpuAndGPU
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Execute ML workloads using the GPU if available, otherwise falling back to the CPU.
 
@@ -22,7 +23,8 @@ static var cpuAndGPU: MLComputePolicy { get }
 
 ## See Also
 
-- [static var cpuOnly: MLComputePolicy](mlcomputepolicy/cpuonly.md)
+### Compute policies
+- [static var cpuOnly: MLComputePolicy](./cpuonly.md)
   Execute ML workloads using the CPU.
 
 

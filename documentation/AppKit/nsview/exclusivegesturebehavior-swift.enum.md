@@ -1,7 +1,8 @@
 # NSView.ExclusiveGestureBehavior
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Exclusive gesture behavior
 
@@ -14,6 +15,10 @@ Exclusive gesture behavior
 enum ExclusiveGestureBehavior
 ```
 
+```c
+enum NSViewExclusiveGestureBehavior : NSInteger;
+```
+
 #### Overview
 
 See the `exclusiveGestureBehavior` property of `NSView` more information.
@@ -21,28 +26,29 @@ See the `exclusiveGestureBehavior` property of `NSView` more information.
 ## Topics
 
 ### Getting exclusivity values
-- [NSView.ExclusiveGestureBehavior.exclusive](nsview/exclusivegesturebehavior-swift.enum/exclusive.md)
+- [NSView.ExclusiveGestureBehavior.exclusive](./exclusivegesturebehavior-swift.enum/exclusive.md)
   This view and its subviews have exclusive gestures
-- [NSView.ExclusiveGestureBehavior.inherit](nsview/exclusivegesturebehavior-swift.enum/inherit.md)
+- [NSView.ExclusiveGestureBehavior.inherit](./exclusivegesturebehavior-swift.enum/inherit.md)
   Inherit from superview
-- [NSView.ExclusiveGestureBehavior.notExclusive](nsview/exclusivegesturebehavior-swift.enum/notexclusive.md)
+- [NSView.ExclusiveGestureBehavior.notExclusive](./exclusivegesturebehavior-swift.enum/notexclusive.md)
   This view and its subviews do not have exclusive gestures
 ### Initializers
-- [init?(rawValue: Int)](nsview/exclusivegesturebehavior-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./exclusivegesturebehavior-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+### Managing gesture exclusivity
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](./exclusivegesturebehavior-swift.property.md)
   Declares whether gesture recognizers should be exclusive in this view and its subviews.
 
 

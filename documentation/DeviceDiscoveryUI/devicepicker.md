@@ -1,7 +1,8 @@
 # DevicePicker
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 
@@ -20,7 +21,7 @@ A SwiftUI view that displays other devices on the network, and creates an encryp
 
 ## Mentions
 
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+- [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
 
 #### Overview
 
@@ -65,25 +66,26 @@ struct SettingsView: View {
 ## Topics
 
 ### Creating a device picker
-- [init(NWBrowser.Descriptor, onSelect: (NWEndpoint) -> Void, label: () -> Label, fallback: () -> Fallback, parameters: (() -> NWParameters)?)](devicepicker/init(_:onselect:label:fallback:parameters:).md)
+- [init(NWBrowser.Descriptor, onSelect: (NWEndpoint) -> Void, label: () -> Label, fallback: () -> Fallback, parameters: (() -> NWParameters)?)](./devicepicker/init%28_,onselect,label,fallback,parameters%29.md)
   Creates a view that displays available devices.
-- [init<Provider>(Provider, access: DDDevicePairingAccess, onSelect: (Provider.Endpoint) -> Void, label: () -> Label, fallback: () -> Fallback, parameters: (() -> NWParameters)?)](devicepicker/init(_:access:onselect:label:fallback:parameters:).md)
+- [init<Provider>(Provider, access: DDDevicePairingAccess, onSelect: (Provider.Endpoint) -> Void, label: () -> Label, fallback: () -> Fallback, parameters: (() -> NWParameters)?)](./devicepicker/init%28_,access,onselect,label,fallback,parameters%29.md)
   Creates a view that displays the available devices with the access level, section handler, and other parameters you supply.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class DDDevicePickerViewController](dddevicepickerviewcontroller.md)
+### Pairing with nearby devices
+- [class DDDevicePickerViewController](./dddevicepickerviewcontroller.md)
   A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [struct DevicePickerSupportedAction](devicepickersupportedaction.md)
+- [struct DevicePickerSupportedAction](./devicepickersupportedaction.md)
   An environment value that indicates whether the current device supports device discovery.
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+- [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
   Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
 

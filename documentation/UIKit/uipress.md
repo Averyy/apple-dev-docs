@@ -1,7 +1,8 @@
 # UIPress
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the presence or movement of a button press on the screen for a particular event.
 
@@ -18,53 +19,58 @@ An object that represents the presence or movement of a button press on the scre
 class UIPress
 ```
 
+```objc
+@interface UIPress : NSObject
+```
+
 #### Overview
 
-The press specifically encapsulates the pressing of some physically actuated button. All of the press types represent actual physical buttons on one of a variety of remotes. You access [`UIPress`](uipress.md) objects through [`UIEvent`](uievent.md) objects passed into responder objects for event handling. The [`gestureRecognizers`](uipress/gesturerecognizers.md) property returns the gesture recognizers — instances of a concrete subclass of [`UIGestureRecognizer`](uigesturerecognizer.md) — that are currently handling the given button press.
+The press specifically encapsulates the pressing of some physically actuated button. All of the press types represent actual physical buttons on one of a variety of remotes. You access [`UIPress`](./uipress.md) objects through [`UIEvent`](./uievent.md) objects passed into responder objects for event handling. The [`gestureRecognizers`](./uipress/gesturerecognizers.md) property returns the gesture recognizers — instances of a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md) — that are currently handling the given button press.
 
 ## Topics
 
 ### Getting a press object’s gesture recognizers
-- [var force: CGFloat](uipress/force.md)
+- [var force: CGFloat](./uipress/force.md)
   The force of the button press.
-- [var gestureRecognizers: [UIGestureRecognizer]?](uipress/gesturerecognizers.md)
+- [var gestureRecognizers: [UIGestureRecognizer]?](./uipress/gesturerecognizers.md)
   The gesture recognizers that are receiving the press.
 ### Responding to press events
-- [var responder: UIResponder?](uipress/responder.md)
+- [var responder: UIResponder?](./uipress/responder.md)
   A responder object.
 ### Getting the press’s location
-- [var window: UIWindow?](uipress/window.md)
+- [var window: UIWindow?](./uipress/window.md)
   The window in which the press initially occurred.
 ### Getting press attributes
-- [var key: UIKey?](uipress/key.md)
+- [var key: UIKey?](./uipress/key.md)
   The key pressed or released on a physical keyboard.
-- [var type: UIPress.PressType](uipress/type.md)
+- [var type: UIPress.PressType](./uipress/type.md)
   The type of the specified press.
-- [var phase: UIPress.Phase](uipress/phase-swift.property.md)
+- [var phase: UIPress.Phase](./uipress/phase-swift.property.md)
   The current press phase of the object.
-- [var timestamp: TimeInterval](uipress/timestamp.md)
+- [var timestamp: TimeInterval](./uipress/timestamp.md)
   The time when the press occurred or when it was last mutated.
 ### Constants
-- [UIPress.Phase](uipress/phase-swift.enum.md)
+- [UIPress.Phase](./uipress/phase-swift.enum.md)
   Constants that represent the phases of a button press.
-- [UIPress.PressType](uipress/presstype.md)
+- [UIPress.PressType](./uipress/presstype.md)
   Constants that represent buttons that a person can press.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIPressesEvent](uipressesevent.md)
+### Button presses
+- [class UIPressesEvent](./uipressesevent.md)
   An event that describes the state of a set of physical buttons that are available to the device, such as those on an associated remote or game controller.
 
 

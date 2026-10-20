@@ -1,7 +1,8 @@
 # globalAlpha
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A floating-point number controlling the degree of opacity for all drawing operations.
 
@@ -11,7 +12,7 @@ A floating-point number controlling the degree of opacity for all drawing operat
 
 ## Declaration
 
-```swift
+```
 attribute unrestricted float globalAlpha;
 ```
 
@@ -21,7 +22,8 @@ Set the `globalAlpha` to any value between 0 and 1, inclusive, to set the degree
 
 ## See Also
 
-- [globalCompositeOperation](canvasrenderingcontext2d/1632770-globalcompositeoperation.md)
+### Compositing
+- [globalCompositeOperation](./api-1632770-globalcompositeoperation.md)
   A string representing the compositing method for drawing operations.
 
 

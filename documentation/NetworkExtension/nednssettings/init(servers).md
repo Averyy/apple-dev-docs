@@ -1,7 +1,8 @@
 # init(servers:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the `NEDNSSetting` object.
 
@@ -17,6 +18,10 @@ Initialize the `NEDNSSetting` object.
 
 ```swift
 init(servers: [String])
+```
+
+```objc
+- (instancetype) initWithServers:(NSArray<NSString *> *) servers;
 ```
 
 #### Return Value

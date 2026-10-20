@@ -1,7 +1,8 @@
 # kJSPropertyAttributeNone
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute that specifies that a property has no special attributes.
 
@@ -19,13 +20,18 @@ An attribute that specifies that a property has no special attributes.
 var kJSPropertyAttributeNone: Int { get }
 ```
 
+```c
+kJSPropertyAttributeNone
+```
+
 ## See Also
 
-- [var kJSPropertyAttributeReadOnly: Int](kjspropertyattributereadonly.md)
+### Constants
+- [var kJSPropertyAttributeReadOnly: Int](./kjspropertyattributereadonly.md)
   An attribute that specifies that a property is read-only.
-- [var kJSPropertyAttributeDontEnum: Int](kjspropertyattributedontenum.md)
+- [var kJSPropertyAttributeDontEnum: Int](./kjspropertyattributedontenum.md)
   An attribute that specifies that property enumerators and JavaScript for-in loops don’t enumerate a property.
-- [var kJSPropertyAttributeDontDelete: Int](kjspropertyattributedontdelete.md)
+- [var kJSPropertyAttributeDontDelete: Int](./kjspropertyattributedontdelete.md)
   An attribute that specifies that the delete operation fails on a property.
 
 

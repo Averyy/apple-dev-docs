@@ -1,7 +1,8 @@
 # Update a Campaign
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update a campaign’s name, status, budget, targeting, or bid strategy.
 
@@ -12,7 +13,7 @@ Update a campaign’s name, status, budget, targeting, or bid strategy.
 
 This endpoint updates an existing campaign. It changes only the fields included in the request body. Omitted fields retain their current values. The `promotedObjectType` and `promotedObjectId` fields are **not** part of the `CampaignUpdate` schema. They’re immutable after campaign creation, so this endpoint can’t change them.
 
-For Apple Maps campaigns, `targeting.supplyPlacement` follows the same omit-to-leave-unchanged rule as every other update field. Omitting it doesn’t expand targeting to every placement. A campaign created with a single Maps placement (`MAPS_SEARCH_RESULTS` or `MAPS_SEARCH_HOME`) can’t be widened to target both placements through this endpoint. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for how to set up both placements at create time instead.
+For Apple Maps campaigns, `targeting.supplyPlacement` follows the same omit-to-leave-unchanged rule as every other update field. Omitting it doesn’t expand targeting to every placement. A campaign created with a single Maps placement (`MAPS_SEARCH_RESULTS` or `MAPS_SEARCH_HOME`) can’t be widened to target both placements through this endpoint. See [`CampaignTargetingCreate.SupplyPlacement`](./campaigntargetingcreate/supplyplacement-data.dictionary.md) for how to set up both placements at create time instead.
 
 #### Payload Examples
 
@@ -233,19 +234,40 @@ PUT /v1/campaigns/999999999
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `CampaignUpdate`
+
+## Responses
+
+- `200` OK (`CampaignResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Campaign](post-campaigns.md)
+- [Create a Campaign](./post-campaigns.md)
   Create a new advertising campaign with a promoted object, budget, targeting, and bid strategy configuration.
-- [Query Campaigns](post-campaigns-query.md)
+- [Query Campaigns](./post-campaigns-query.md)
   Query campaigns using filters, sorting, and pagination.
-- [Get a Campaign](get-campaigns-_id_.md)
+- [Get a Campaign](./get-campaigns-_id_.md)
   Retrieve a single campaign by its unique identifier.
-- [Delete a Campaign](delete-campaigns-_id_.md)
+- [Delete a Campaign](./delete-campaigns-_id_.md)
   Soft-delete a campaign by its unique identifier, cascading to its ad groups, keywords, and ads.
-- [Get Legacy App Limited Status Reason Details](get-campaigns-_id_-legacy-app-limited-status-reason-details.md)
+- [Get Legacy App Limited Status Reason Details](./get-campaigns-_id_-legacy-app-limited-status-reason-details.md)
   Return a map of country or region codes to their associated limited-status reason for legacy app campaigns.
 
 

@@ -1,7 +1,8 @@
 # subtype
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies an optional subtype that indicates the direction for the predefined motion-based transitions.
 
@@ -19,15 +20,20 @@ Specifies an optional subtype that indicates the direction for the predefined mo
 var subtype: CATransitionSubtype? { get set }
 ```
 
+```objc
+@property (copy, nullable) CATransitionSubtype subtype;
+```
+
 #### Discussion
 
-The possible values are shown in  [`Common Transition Subtypes`](common-transition-subtypes.md). The default is `nil`.
+The possible values are shown in  [Common Transition Subtypes](../common-transition-subtypes.md). The default is `nil`.
 
-This property is ignored if a custom transition is specified in the [`filter`](catransition/filter.md) property.
+This property is ignored if a custom transition is specified in the [`filter`](./filter.md) property.
 
 ## See Also
 
-- [var type: CATransitionType](catransition/type.md)
+### Transition Properties
+- [var type: CATransitionType](./type.md)
   Specifies the predefined transition type.
 
 

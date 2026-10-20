@@ -1,16 +1,17 @@
 # UIScrollViewAccessibilityDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods you can implement to provide accessibility information for a scroll view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,30 @@ A set of methods you can implement to provide accessibility information for a sc
 protocol UIScrollViewAccessibilityDelegate : UIScrollViewDelegate
 ```
 
+```objc
+@protocol UIScrollViewAccessibilityDelegate <UIScrollViewDelegate>
+```
+
 ## Topics
 
 ### Providing descriptive information
-- [func accessibilityScrollStatus(for: UIScrollView) -> String?](uiscrollviewaccessibilitydelegate/accessibilityscrollstatus(for:).md)
+- [func accessibilityScrollStatus(for: UIScrollView) -> String?](./uiscrollviewaccessibilitydelegate/accessibilityscrollstatus%28for%29.md)
   Returns a string describing the content at the current offset in the scroll view.
-- [func accessibilityAttributedScrollStatus(for: UIScrollView) -> NSAttributedString?](uiscrollviewaccessibilitydelegate/accessibilityattributedscrollstatus(for:).md)
+- [func accessibilityAttributedScrollStatus(for: UIScrollView) -> NSAttributedString?](./uiscrollviewaccessibilitydelegate/accessibilityattributedscrollstatus%28for%29.md)
   Returns an attributed string describing the content at the current offset in the scroll view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIScrollViewDelegate](uiscrollviewdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIScrollViewDelegate](./uiscrollviewdelegate.md)
 
 ## See Also
 
-- [class UIAccessibilityElement](uiaccessibilityelement.md)
+### Elements
+- [class UIAccessibilityElement](./uiaccessibilityelement.md)
   An element that should be accessible to users with disabilities, but that isn’t accessible by default.
-- [protocol UIPickerViewAccessibilityDelegate](uipickerviewaccessibilitydelegate.md)
+- [protocol UIPickerViewAccessibilityDelegate](./uipickerviewaccessibilitydelegate.md)
   A set of methods you can implement to provide accessibility information for individual components of a picker view.
 
 

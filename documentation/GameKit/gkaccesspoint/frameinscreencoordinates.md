@@ -1,7 +1,8 @@
 # frameInScreenCoordinates
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame of the access point in screen coordinates.
 
@@ -15,13 +16,33 @@ The frame of the access point in screen coordinates.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var frameInScreenCoordinates: CGRect { get }
+```
+
+*macOS*
+
 ```swift
 var frameInScreenCoordinates: NSRect { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) CGRect frameInScreenCoordinates;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSRect frameInScreenCoordinates;
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
 #### Discussion
 
@@ -29,11 +50,12 @@ This is an observable property.
 
 ## See Also
 
-- [var location: GKAccessPoint.Location](gkaccesspoint/location-swift.property.md)
+### Managing the location
+- [var location: GKAccessPoint.Location](./location-swift.property.md)
   The corner of the screen to display the access point.
-- [GKAccessPoint.Location](gkaccesspoint/location-swift.enum.md)
+- [GKAccessPoint.Location](./location-swift.enum.md)
   Specifies the corner of the screen to display the access point.
-- [var parentWindow: UIWindow?](gkaccesspoint/parentwindow.md)
+- [var parentWindow: UIWindow?](./parentwindow.md)
   The window that contains the access point.
 
 

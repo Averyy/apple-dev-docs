@@ -1,7 +1,8 @@
 # requestId
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The identifier of the performance test request.
 
@@ -10,27 +11,28 @@ The identifier of the performance test request.
 
 ## Declaration
 
-```swift
+```
 uuid requestId
 ```
 
 ## See Also
 
-- [object PerformanceTestConfig](performancetestconfig.md)
+### Performance testing
+- [object PerformanceTestConfig](./performancetestconfig.md)
   An object that enumerates the test configuration parameters.
-- [object PerformanceTestRequest](performancetestrequest.md)
+- [object PerformanceTestRequest](./performancetestrequest.md)
   The request object you provide for a performance test that contains an original transaction identifier.
-- [object PerformanceTestResponse](performancetestresponse.md)
+- [object PerformanceTestResponse](./performancetestresponse.md)
   The performance test response object.
-- [object PerformanceTestResponseTimes](performancetestresponsetimes.md)
+- [object PerformanceTestResponseTimes](./performancetestresponsetimes.md)
   An object that describes test response times.
-- [object PerformanceTestResultResponse](performancetestresultresponse.md)
+- [object PerformanceTestResultResponse](./performancetestresultresponse.md)
   An object the API returns that describes the performance test results.
-- [type PerformanceTestStatus](performanceteststatus.md)
+- [type PerformanceTestStatus](./performanceteststatus.md)
   The status of the performance test.
-- [object Failures](failures.md)
+- [object Failures](./failures.md)
   A map of server-to-server notification failure reasons and counts that represent the number of failures during a performance test.
-- [type sendAttemptResult](sendattemptresult.md)
+- [type sendAttemptResult](./sendattemptresult.md)
   The success or error information the App Store server records when it attempts to send an App Store server notification to your server.
 
 

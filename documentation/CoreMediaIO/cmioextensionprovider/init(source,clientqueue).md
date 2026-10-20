@@ -1,7 +1,8 @@
 # init(source:clientQueue:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an extension provider with the specified source and dispatch queue.
 
@@ -15,9 +16,13 @@ Creates an extension provider with the specified source and dispatch queue.
 init(source: any CMIOExtensionProviderSource, clientQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (instancetype) initWithSource:(id<CMIOExtensionProviderSource>) source clientQueue:(dispatch_queue_t) clientQueue;
+```
+
 ## Parameters
 
-- `source`: An extension-specific object that conforms to the [`CMIOExtensionProviderSource`](cmioextensionprovidersource.md) protocol.
+- `source`: An extension-specific object that conforms to the [`CMIOExtensionProviderSource`](../cmioextensionprovidersource.md) protocol.
 - `clientQueue`: A client dispatch queue, or `nil` to use the default queue.
 
 

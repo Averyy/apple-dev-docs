@@ -1,7 +1,8 @@
 # kdfHash256
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Derive a shared secret using the KDF-HASH-256 method defined in the WiFi Aware 5.0 draft standard.
 

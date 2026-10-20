@@ -1,14 +1,15 @@
 # wait_timeout_urgency_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef int wait_timeout_urgency_t;
 ```
 

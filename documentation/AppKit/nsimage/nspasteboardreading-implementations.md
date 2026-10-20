@@ -1,11 +1,12 @@
 # NSPasteboardReading Implementations
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsimage/init(pasteboardpropertylist:oftype:).md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./init%28pasteboardpropertylist,oftype%29.md)
 
 
 ---

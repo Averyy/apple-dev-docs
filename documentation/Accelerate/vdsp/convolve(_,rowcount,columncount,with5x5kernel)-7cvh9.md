@@ -1,7 +1,8 @@
 # convolve(_:rowCount:columnCount:with5x5Kernel:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the 2D convolution of a double-precision vector with a 5 x 5 kernel.
 
@@ -11,7 +12,7 @@ Returns the 2D convolution of a double-precision vector with a 5 x 5 kernel.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,19 +23,20 @@ static func convolve<T, U>(_ vector: T, rowCount: Int, columnCount: Int, with5x5
 
 ## See Also
 
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Double]](vdsp/convolve(_:rowcount:columncount:with3x3kernel:)-1r5oa.md)
+### Fixed-Size Kernel
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Double]](./convolve%28_,rowcount,columncount,with3x3kernel%29-1r5oa.md)
   Returns the 2D convolution of a double-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Float]](vdsp/convolve(_:rowcount:columncount:with3x3kernel:)-7qjgw.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Float]](./convolve%28_,rowcount,columncount,with3x3kernel%29-7qjgw.md)
   Returns the 2D convolution of a single-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with3x3kernel:result:)-34k76.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](./convolve%28_,rowcount,columncount,with3x3kernel,result%29-34k76.md)
   Calculates the 2D convolution of a double-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with3x3kernel:result:)-2worq.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](./convolve%28_,rowcount,columncount,with3x3kernel,result%29-2worq.md)
   Calculates the 2D convolution of a single-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U) -> [Float]](vdsp/convolve(_:rowcount:columncount:with5x5kernel:)-101d6.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U) -> [Float]](./convolve%28_,rowcount,columncount,with5x5kernel%29-101d6.md)
   Returns the 2D convolution of a single-precision vector with a 5 x 5 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with5x5kernel:result:)-g68r.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](./convolve%28_,rowcount,columncount,with5x5kernel,result%29-g68r.md)
   Calculates the 2D convolution of a double-precision vector with a 5 x 5 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with5x5kernel:result:)-76h85.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](./convolve%28_,rowcount,columncount,with5x5kernel,result%29-76h85.md)
   Calculates the 2D convolution of a single-precision vector with a 5 x 5 kernel.
 
 

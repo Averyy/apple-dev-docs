@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/tensorflow-2.html
 
 # TensorFlow 2 Workflow
 
-**
-
-- [.md](../_sources/source/tensorflow-2.md)
-- **
-
-.pdf
-
-**
-
-# TensorFlow 2 Workflow
-
- Table of contents 
-
-## Contents
-
-# TensorFlow 2 Workflow
-
 To convert a [TensorFlow 2](https://www.tensorflow.org/api_docs) model, provide one of following formats to the converter:
 
 - [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras)
@@ -92,7 +75,7 @@ import coremltools as ct
 mlmodel = ct.convert(model, convert_to="mlprogram")
 ```
 
-1. Since the model operates on images, convert with the image input type before saving the model as a [Core ML model package](convert-to-ml-program.html#save-ml-programs-as-model-packages):
+1. Since the model operates on images, convert with the image input type before saving the model as a [Core ML model package](convert-to-ml-program.md#save-ml-programs-as-model-packages):
 
 ```
 coreml_out_dict = mlmodel.predict({"image":x})
@@ -209,5 +192,3 @@ mlmodel = ct.convert([conc_func], convert_to="mlprogram")
 Converting a BERT Transformer Model
 
 To learn how to convert an object of the [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras) class, and a [SavedModel](https://www.tensorflow.org/hub/tf2_saved_model) in the TensorFlow 2 format, see [Converting TensorFlow 2 BERT Transformer Models](convert-tensorflow-2-bert-transformer-models.md).
-
-** Contents

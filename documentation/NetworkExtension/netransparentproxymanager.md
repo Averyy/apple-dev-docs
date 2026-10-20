@@ -1,7 +1,8 @@
 # NETransparentProxyManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that configures and controls transparent proxies.
 
@@ -14,31 +15,36 @@ An object that configures and controls transparent proxies.
 class NETransparentProxyManager
 ```
 
+```objc
+@interface NETransparentProxyManager : NEVPNManager
+```
+
 ## Topics
 
 ### Loading proxy configurations
-- [class func loadAllFromPreferences(completionHandler: ([NETransparentProxyManager]?, (any Error)?) -> Void)](netransparentproxymanager/loadallfrompreferences(completionhandler:).md)
+- [class func loadAllFromPreferences(completionHandler: ([NETransparentProxyManager]?, (any Error)?) -> Void)](./netransparentproxymanager/loadallfrompreferences%28completionhandler%29.md)
   Loads all previously-saved transparent proxy configurations.
 
 ## Relationships
 
 ### Inherits From
-- [NEVPNManager](nevpnmanager.md)
+- [NEVPNManager](./nevpnmanager.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NETransparentProxyProvider](netransparentproxyprovider.md)
+### Transparent proxy configuration
+- [class NETransparentProxyProvider](./netransparentproxyprovider.md)
   An object that implements the client side of a custom transparent network proxy solution.
-- [class NETransparentProxyNetworkSettings](netransparentproxynetworksettings.md)
+- [class NETransparentProxyNetworkSettings](./netransparentproxynetworksettings.md)
   A specification of what traffic to route through a transparent proxy.
-- [class NENetworkRule](nenetworkrule.md)
+- [class NENetworkRule](./nenetworkrule.md)
   A rule to match attributes of network traffic.
 
 

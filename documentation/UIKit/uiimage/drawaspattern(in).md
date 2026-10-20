@@ -1,7 +1,8 @@
 # drawAsPattern(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a tiled Quartz pattern using the receiver’s contents as the tile pattern.
 
@@ -9,7 +10,7 @@ Draws a tiled Quartz pattern using the receiver’s contents as the tile pattern
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Draws a tiled Quartz pattern using the receiver’s contents as the tile pattern
 
 ```swift
 func drawAsPattern(in rect: CGRect)
+```
+
+```objc
+- (void) drawAsPatternInRect:(CGRect) rect;
 ```
 
 #### Discussion
@@ -29,13 +34,14 @@ This method uses a Quartz pattern to tile the image in the specified rectangle. 
 
 ## See Also
 
-- [func draw(at: CGPoint)](uiimage/draw(at:).md)
+### Drawing images
+- [func draw(at: CGPoint)](./draw%28at%29.md)
   Draws the image at the specified point in the current context.
-- [func draw(at: CGPoint, blendMode: CGBlendMode, alpha: CGFloat)](uiimage/draw(at:blendmode:alpha:).md)
+- [func draw(at: CGPoint, blendMode: CGBlendMode, alpha: CGFloat)](./draw%28at,blendmode,alpha%29.md)
   Draws the entire image at the specified point using the custom compositing options.
-- [func draw(in: CGRect)](uiimage/draw(in:).md)
+- [func draw(in: CGRect)](./draw%28in%29.md)
   Draws the entire image in the specified rectangle, scaling it as necessary to fit.
-- [func draw(in: CGRect, blendMode: CGBlendMode, alpha: CGFloat)](uiimage/draw(in:blendmode:alpha:).md)
+- [func draw(in: CGRect, blendMode: CGBlendMode, alpha: CGFloat)](./draw%28in,blendmode,alpha%29.md)
   Draws the entire image in the specified rectangle using the specified compositing options.
 
 

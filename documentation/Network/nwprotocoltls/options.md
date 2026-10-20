@@ -1,7 +1,8 @@
 # NWProtocolTLS.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container of options for configuring how TLS is used on a connection.
 
@@ -23,22 +24,23 @@ class Options
 ## Topics
 
 ### Customizing TLS Connections
-- [init()](nwprotocoltls/options/init.md)
+- [init()](./options/init%28%29.md)
   Initializes a default set of TLS connection options.
-- [var securityProtocolOptions: sec_protocol_options_t](nwprotocoltls/options/securityprotocoloptions.md)
+- [var securityProtocolOptions: sec_protocol_options_t](./options/securityprotocoloptions.md)
   The handshake security options TLS uses.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let definition: NWProtocolDefinition](nwprotocoltls/definition.md)
+### Creating TLS Connections
+- [static let definition: NWProtocolDefinition](./definition.md)
   The system definition of the Transport Layer Security protocol.
 
 

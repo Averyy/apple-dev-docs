@@ -1,7 +1,8 @@
 # absolute(_:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the absolute value of each element in the supplied single-precision complex vector.
 
@@ -11,7 +12,7 @@ Calculates the absolute value of each element in the supplied single-precision c
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -58,7 +59,8 @@ For example, the following code calculates the absolute values of four complex n
 
 ## See Also
 
-- [static func absolute<V>(DSPDoubleSplitComplex, result: inout V)](vdsp/absolute(_:result:)-1wu9x.md)
+### Complex vector absolute functions
+- [static func absolute<V>(DSPDoubleSplitComplex, result: inout V)](./absolute%28_,result%29-1wu9x.md)
   Calculates the absolute value of each element in the supplied double-precision complex vector.
 
 

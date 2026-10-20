@@ -1,7 +1,8 @@
 # modifierFlags
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modifier keys pressed and held while the user presses the key.
 
@@ -18,13 +19,18 @@ The modifier keys pressed and held while the user presses the key.
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIKeyModifierFlags modifierFlags;
+```
+
 #### Discussion
 
-For a list of modifier flags, see [`UIKeyModifierFlags`](uikeymodifierflags.md).
+For a list of modifier flags, see [`UIKeyModifierFlags`](../uikeymodifierflags.md).
 
 ## See Also
 
-- [var keyCode: UIKeyboardHIDUsage](uikey/keycode.md)
+### Determining key type
+- [var keyCode: UIKeyboardHIDUsage](./keycode.md)
   The HID usage code of the key.
 
 

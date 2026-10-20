@@ -1,7 +1,8 @@
 # symbolRenderingMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the rendering mode for symbol images within this view.
 
@@ -31,13 +32,14 @@ A view that uses the rendering mode you supply.
 
 ## See Also
 
-- [var symbolRenderingMode: SymbolRenderingMode?](environmentvalues/symbolrenderingmode.md)
+### Setting symbol rendering modes
+- [var symbolRenderingMode: SymbolRenderingMode?](../environmentvalues/symbolrenderingmode.md)
   The current symbol rendering mode, or `nil` denoting that the mode is picked automatically using the current image and foreground style as parameters.
-- [struct SymbolRenderingMode](symbolrenderingmode.md)
+- [struct SymbolRenderingMode](../symbolrenderingmode.md)
   A symbol rendering mode.
-- [struct SymbolColorRenderingMode](symbolcolorrenderingmode.md)
+- [struct SymbolColorRenderingMode](../symbolcolorrenderingmode.md)
   A method of filling a layer in a symbol image.
-- [struct SymbolVariableValueMode](symbolvariablevaluemode.md)
+- [struct SymbolVariableValueMode](../symbolvariablevaluemode.md)
   A method of rendering the variable value of a symbol image.
 
 

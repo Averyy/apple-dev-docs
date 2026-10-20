@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that handles communication between players in a match.
 
@@ -19,13 +20,18 @@ The delegate that handles communication between players in a match.
 weak var delegate: (any GKMatchDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<GKMatchDelegate> delegate;
+```
+
 #### Discussion
 
 To receive voice or data from other players, you must set the delegate.
 
 ## See Also
 
-- [protocol GKMatchDelegate](gkmatchdelegate.md)
+### Setting the delegate
+- [protocol GKMatchDelegate](../gkmatchdelegate.md)
   An object that receives connection status and data transmitted in a multiplayer game.
 
 

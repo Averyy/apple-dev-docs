@@ -1,7 +1,8 @@
 # init(source:target:orientation:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request handler that performs requests on an image contained within a sample buffer.
 
@@ -22,15 +23,16 @@ convenience init(source: CMSampleBuffer, target: CMSampleBuffer, orientation: CG
 
 ## See Also
 
-- [convenience init(sourceURL: URL, targetURL: URL, orientation: CGImagePropertyOrientation?)](targetedimagerequesthandler/init(sourceurl:targeturl:orientation:).md)
+### Creating a request handler
+- [convenience init(sourceURL: URL, targetURL: URL, orientation: CGImagePropertyOrientation?)](./init%28sourceurl,targeturl,orientation%29.md)
   Creates a handler for performing requests on an image at the specified URL.
-- [convenience init(source: Data, target: Data, orientation: CGImagePropertyOrientation?)](targetedimagerequesthandler/init(source:target:orientation:)-4wr1c.md)
+- [convenience init(source: Data, target: Data, orientation: CGImagePropertyOrientation?)](./init%28source,target,orientation%29-4wr1c.md)
   Creates a handler for performing requests on an image contained in a data object.
-- [convenience init(source: CGImage, target: CGImage, orientation: CGImagePropertyOrientation?)](targetedimagerequesthandler/init(source:target:orientation:)-66ft9.md)
+- [convenience init(source: CGImage, target: CGImage, orientation: CGImagePropertyOrientation?)](./init%28source,target,orientation%29-66ft9.md)
   Creates a handler for performing requests on Core Graphics images.
-- [convenience init(source: CVPixelBuffer, target: CVPixelBuffer, orientation: CGImagePropertyOrientation?)](targetedimagerequesthandler/init(source:target:orientation:)-64lxw.md)
+- [convenience init(source: CVPixelBuffer, target: CVPixelBuffer, orientation: CGImagePropertyOrientation?)](./init%28source,target,orientation%29-64lxw.md)
   Creates a handler for performing requests on a Core Video pixel buffer.
-- [convenience init(source: CIImage, target: CIImage, orientation: CGImagePropertyOrientation?)](targetedimagerequesthandler/init(source:target:orientation:)-1nk14.md)
+- [convenience init(source: CIImage, target: CIImage, orientation: CGImagePropertyOrientation?)](./init%28source,target,orientation%29-1nk14.md)
   Creates a handler for performing requests on Core Image images.
 
 

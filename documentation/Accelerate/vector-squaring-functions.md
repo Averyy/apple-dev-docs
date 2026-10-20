@@ -1,50 +1,52 @@
 # Vector squaring functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Compute the square, signed square, or squared magnitude of the elements in a vector.
 
 ## Topics
 
 ### Single-Vector Squaring
-- [static func square<U>(U) -> [Double]](vdsp/square(_:)-1dz7.md)
+- [static func square<U>(U) -> [Double]](./vdsp/square%28_%29-1dz7.md)
   Returns a double-precision array containing the square of each element in the supplied vector.
-- [static func square<U>(U) -> [Float]](vdsp/square(_:)-30jok.md)
+- [static func square<U>(U) -> [Float]](./vdsp/square%28_%29-30jok.md)
   Returns a single-precision array containing the square of each element in the supplied vector.
-- [static func square<U, V>(U, result: inout V)](vdsp/square(_:result:)-9e5hu.md)
+- [static func square<U, V>(U, result: inout V)](./vdsp/square%28_,result%29-9e5hu.md)
   Calculates the square of each element in the supplied double-precision vector.
-- [static func square<U, V>(U, result: inout V)](vdsp/square(_:result:)-3kja7.md)
+- [static func square<U, V>(U, result: inout V)](./vdsp/square%28_,result%29-3kja7.md)
   Calculates the square of each element in the supplied single-precision vector.
-- [static func signedSquare<U>(U) -> [Double]](vdsp/signedsquare(_:)-8y09t.md)
+- [static func signedSquare<U>(U) -> [Double]](./vdsp/signedsquare%28_%29-8y09t.md)
   Returns a double-precision array containing the signed square of each element in the supplied vector.
-- [static func signedSquare<U>(U) -> [Float]](vdsp/signedsquare(_:)-9v7ec.md)
+- [static func signedSquare<U>(U) -> [Float]](./vdsp/signedsquare%28_%29-9v7ec.md)
   Returns a single-precision array containing the signed square of each element in the supplied vector.
-- [static func signedSquare<U, V>(U, result: inout V)](vdsp/signedsquare(_:result:)-56omf.md)
+- [static func signedSquare<U, V>(U, result: inout V)](./vdsp/signedsquare%28_,result%29-56omf.md)
   Calculates the signed square of each element in the supplied double-precision vector.
-- [static func signedSquare<U, V>(U, result: inout V)](vdsp/signedsquare(_:result:)-2771f.md)
+- [static func signedSquare<U, V>(U, result: inout V)](./vdsp/signedsquare%28_,result%29-2771f.md)
   Calculates the signed square of each element in the supplied single-precision vector.
-- [static func squareMagnitudes<V>(DSPSplitComplex, result: inout V)](vdsp/squaremagnitudes(_:result:)-22k5h.md)
+- [static func squareMagnitudes<V>(DSPSplitComplex, result: inout V)](./vdsp/squaremagnitudes%28_,result%29-22k5h.md)
   Calculates the square magnitude of each element in the supplied single-precision complex vector.
-- [static func squareMagnitudes<V>(DSPDoubleSplitComplex, result: inout V)](vdsp/squaremagnitudes(_:result:)-14oiw.md)
+- [static func squareMagnitudes<V>(DSPDoubleSplitComplex, result: inout V)](./vdsp/squaremagnitudes%28_,result%29-14oiw.md)
   Calculates the square magnitude of each element in the supplied double-precision complex vector.
 
 ## See Also
 
-- [Absolute and negation functions](absolute-and-negation-functions.md)
+### Single-vector arithmetic functions
+- [Absolute and negation functions](./absolute-and-negation-functions.md)
   Compute the absolute or negated value of each element in a vector.
-- [Integration functions](integration-functions.md)
+- [Integration functions](./integration-functions.md)
   Compute the running sum, Simpson, or trapezoidal integration of a vector.
-- [Clipping, limit, and threshold operations](clipping-limit-and-threshold-operations.md)
+- [Clipping, limit, and threshold operations](./clipping-limit-and-threshold-operations.md)
   Apply clipping, limit, or threshold rules to the elements in a vector.
-- [Normalization functions](normalization-functions.md)
+- [Normalization functions](./normalization-functions.md)
   Compute the mean and standard deviation of a vector and calculate new elements to have a zero mean and a unit standard deviation.
-- [Phase computation functions](phase-computation-functions.md)
+- [Phase computation functions](./phase-computation-functions.md)
   Calculate the element-wise phase values, in radians, of a complex vector.
-- [Complex conjugation functions](complex-conjugation-functions.md)
+- [Complex conjugation functions](./complex-conjugation-functions.md)
   Calculate the complex conjugate of the elements in a vector.
-- [Fractional part extraction](fractional-part-extraction.md)
+- [Fractional part extraction](./fractional-part-extraction.md)
   Truncate the elements of a vector to a fraction.
-- [Zero crossing search](zero-crossing-search.md)
+- [Zero crossing search](./zero-crossing-search.md)
   Count and find the zero crossings in a vector.
 
 

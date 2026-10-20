@@ -1,12 +1,15 @@
 # NSImageView.FrameStyle.button
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A convex bezel that makes the image stand out in relief, like a button.
 
 **Availability**:
-- macOS ?+
+- macOS
+
+> **Deprecated**: This constant is stylistically obsolete and should be considered deprecated.
 
 ## Declaration
 
@@ -14,15 +17,20 @@ A convex bezel that makes the image stand out in relief, like a button.
 case button
 ```
 
+```c
+NSImageFrameButton
+```
+
 ## See Also
 
-- [NSImageView.FrameStyle.none](nsimageview/framestyle/none.md)
+### Constants
+- [NSImageView.FrameStyle.none](./none.md)
   An invisible frame
-- [NSImageView.FrameStyle.photo](nsimageview/framestyle/photo.md)
+- [NSImageView.FrameStyle.photo](./photo.md)
   A thin black outline and a dropped shadow.
-- [NSImageView.FrameStyle.grayBezel](nsimageview/framestyle/graybezel.md)
+- [NSImageView.FrameStyle.grayBezel](./graybezel.md)
   A gray, concave bezel that makes the image look sunken.
-- [NSImageView.FrameStyle.groove](nsimageview/framestyle/groove.md)
+- [NSImageView.FrameStyle.groove](./groove.md)
   A thin groove that looks etched around the image.
 
 

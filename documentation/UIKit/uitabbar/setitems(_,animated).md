@@ -1,7 +1,8 @@
 # setItems(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the items on the tab bar, optionally animating any changes into position.
 
@@ -9,7 +10,7 @@ Sets the items on the tab bar, optionally animating any changes into position.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,20 +19,25 @@ Sets the items on the tab bar, optionally animating any changes into position.
 func setItems(_ items: [UITabBarItem]?, animated: Bool)
 ```
 
+```objc
+- (void) setItems:(NSArray<UITabBarItem *> *) items animated:(BOOL) animated;
+```
+
 #### Discussion
 
-Use this method to make changes to the currently visible items at runtime. Calling this method on a tab bar that is managed by a [`UITabBarController`](uitabbarcontroller.md) object raises an exception. When the tab bar is owned by a tab bar controller, use the tab bar controller’s methods to make changes to items.
+Use this method to make changes to the currently visible items at runtime. Calling this method on a tab bar that is managed by a [`UITabBarController`](../uitabbarcontroller.md) object raises an exception. When the tab bar is owned by a tab bar controller, use the tab bar controller’s methods to make changes to items.
 
 ## Parameters
 
-- `items`: The array of [`UITabBarItem`](uitabbaritem.md) objects to display.
-- `animated`: A Boolean indicating whether changes should be animated. Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate changes or [`false`](https://developer.apple.com/documentation/swift/false) to display the new items without animations. When animations are enabled, the tab bar fades out removed items and fades in new items, adjusting the spacing between items as needed.
+- `items`: The array of [`UITabBarItem`](../uitabbaritem.md) objects to display.
+- `animated`: A Boolean indicating whether changes should be animated. Specify [`true`](../../Swift/true.md) to animate changes or [`false`](../../Swift/false.md) to display the new items without animations. When animations are enabled, the tab bar fades out removed items and fades in new items, adjusting the spacing between items as needed.
 
 ## See Also
 
-- [var items: [UITabBarItem]?](uitabbar/items.md)
+### Configuring tab bar items
+- [var items: [UITabBarItem]?](./items.md)
   The items displayed by the tab bar.
-- [var selectedItem: UITabBarItem?](uitabbar/selecteditem.md)
+- [var selectedItem: UITabBarItem?](./selecteditem.md)
   The currently selected item on the tab bar.
 
 

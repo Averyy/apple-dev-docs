@@ -1,7 +1,8 @@
 # MDLProbePlacement.irradianceDistribution
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to examine the lighting conditions at various positions in the scene being evaluated, then place light probes only at the locations where each contributes optimally to scene lighting.
 
@@ -19,13 +20,18 @@ An option to examine the lighting conditions at various positions in the scene b
 case irradianceDistribution
 ```
 
+```c
+MDLProbePlacementIrradianceDistribution
+```
+
 #### Discussion
 
-If you use this heuristic, your data source must implement the [`sphericalHarmonicsCoefficients(atPosition:)`](mdllightprobeirradiancedatasource/sphericalharmonicscoefficients(atposition:).md) method.
+If you use this heuristic, your data source must implement the [`sphericalHarmonicsCoefficients(atPosition:)`](../mdllightprobeirradiancedatasource/sphericalharmonicscoefficients%28atposition%29.md) method.
 
 ## See Also
 
-- [MDLProbePlacement.uniformGrid](mdlprobeplacement/uniformgrid.md)
+### Constants
+- [MDLProbePlacement.uniformGrid](./uniformgrid.md)
   An option to place light probes at each unit coordinate in a three-dimensional grid that evenly divides the region being evaluated.
 
 

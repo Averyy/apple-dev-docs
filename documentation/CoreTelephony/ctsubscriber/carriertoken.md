@@ -1,7 +1,8 @@
 # carrierToken
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data object containing authorization information about the subscriber.
 
@@ -16,6 +17,10 @@ A data object containing authorization information about the subscriber.
 var carrierToken: Data? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) NSData * carrierToken;
+```
+
 #### Discussion
 
 May contain `nil` if no token is available.
@@ -24,9 +29,10 @@ The carrier API obtains this token from a carrier-provided server. The token aut
 
 ## See Also
 
-- [func refreshCarrierToken() -> Bool](ctsubscriber/refreshcarriertoken.md)
+### Managing the carrier token
+- [func refreshCarrierToken() -> Bool](./refreshcarriertoken%28%29.md)
   Attempts to refresh the carrier token.
-- [let CTSubscriberTokenRefreshed: String](ctsubscribertokenrefreshed.md)
+- [let CTSubscriberTokenRefreshed: String](../ctsubscribertokenrefreshed.md)
   The name of the notification indicating that the carrier token is available.
 
 

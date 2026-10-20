@@ -1,7 +1,8 @@
 # platformCode
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var platformCode: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * platformCode;
 ```
 
 

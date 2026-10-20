@@ -1,7 +1,8 @@
 # applications
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional set of applications to include in a report.
 

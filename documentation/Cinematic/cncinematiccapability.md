@@ -1,7 +1,8 @@
 # CNCinematicCapability
 
 **Framework**: Cinematic  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -16,27 +17,31 @@
 enum CNCinematicCapability
 ```
 
+```c
+enum CNCinematicCapability : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CNCinematicCapability.needsPreprocessing](cncinematiccapability/needspreprocessing.md)
+- [CNCinematicCapability.needsPreprocessing](./cncinematiccapability/needspreprocessing.md)
   The cinematic asset needs preprocessing before it can be used
-- [CNCinematicCapability.none](cncinematiccapability/none.md)
+- [CNCinematicCapability.none](./cncinematiccapability/none.md)
   No cinematic capabilities
-- [CNCinematicCapability.renderable](cncinematiccapability/renderable.md)
+- [CNCinematicCapability.renderable](./cncinematiccapability/renderable.md)
   The cinematic asset can be used without preprocessing
 ### Initializers
-- [init?(rawValue: Int)](cncinematiccapability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cncinematiccapability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

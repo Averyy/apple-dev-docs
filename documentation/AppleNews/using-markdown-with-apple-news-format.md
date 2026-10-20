@@ -1,6 +1,7 @@
 # Using Markdown with Apple News Format
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Use Markdown formatting for text components.
 
@@ -32,13 +33,13 @@ In addition to the components above, you can also use Markdown to format text in
 }
 ```
 
-To learn more about Markdown, visit the [`Markdown`](https://developer.apple.comhttps://commonmark.org) website.
+To learn more about Markdown, visit the [Markdown](https://commonmark.org) website.
 
-##### Text Level Markdown Syntax
+##### Text-Level Markdown Syntax
 
 Apple News Format supports these Markdown features within text paragraphs.
 
-###### Emphasis Italics
+###### Emphasis (Italics)
 
 Use single asterisks (`*`) or single underscores (`_`).
 
@@ -62,7 +63,7 @@ This _sentence_'s Markdown formatting is (_more_) in_volved_.
 
 This *sentence*’s Markdown formatting is (*more*) in*volved*.
 
-###### Strong Emphasis Bold
+###### Strong Emphasis (Bold)
 
 To make text bold, use double asterisks (`**`) or double underscores (`__`).
 
@@ -86,7 +87,7 @@ This __sentence__'s Markdown formatting is (__more__) in__volved__.
 
 This **sentence**’s Markdown formatting is (**more**) in**volved**.
 
-###### Combined Emphasis Italics and Strong Bold
+###### Combined Emphasis (Italics) and Strong (Bold)
 
 You can nest emphasis and strong emphasis to use bold-italic font faces by using underscores with double asterisks (or double underscores with single asterisks).
 
@@ -151,7 +152,7 @@ The third example italicizes just the link.
 
 > **Note**: Apple News Format doesn’t support Markdown reference links, which use a second set of square brackets that contain a label that’s defined elsewhere in the article.
 
-##### Block Level Markdown
+##### Block-Level Markdown
 
 ###### Headings
 
@@ -289,7 +290,7 @@ Apple's main campus occupies 172 acres at [Apple Park](https://maps.apple.com?sl
 
 Apple’s main campus occupies 172 acres at Apple Park.
 
-![Screenshot of a full-screen map showing the location of Apple Park in Cupertino.](/images/com.apple.applenews/media-3591443@2x.png)
+![Screenshot of a full-screen map showing the location of Apple Park in Cupertino.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3591443@2x.png)
 
 ##### Escaping Markdown
 
@@ -338,31 +339,32 @@ This is an underscore: _
 
 ## See Also
 
-- [Using HTML with Apple News Format](using-html-with-apple-news-format.md)
+### Text
+- [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.
-- [object Body](../applenewsformat/body.md)
+- [object Body](https://developer.apple.com/documentation/applenewsformat/body)
   The component for adding body text.
-- [object Title](../applenewsformat/title.md)
+- [object Title](https://developer.apple.com/documentation/applenewsformat/title)
   The component for adding an article title.
-- [object Heading](../applenewsformat/heading.md)
+- [object Heading](https://developer.apple.com/documentation/applenewsformat/heading)
   The text component for adding a heading.
-- [object Intro](../applenewsformat/intro.md)
+- [object Intro](https://developer.apple.com/documentation/applenewsformat/intro)
   The component for adding introductory text.
-- [object Caption](../applenewsformat/caption.md)
+- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
   The component for adding caption text.
-- [object Author](../applenewsformat/author.md)
+- [object Author](https://developer.apple.com/documentation/applenewsformat/author)
   The component for adding the name of the author.
-- [object Byline](../applenewsformat/byline.md)
+- [object Byline](https://developer.apple.com/documentation/applenewsformat/byline)
   The component for adding the publication date or contributor credits, especially for articles with multiple contributors.
-- [object Illustrator](../applenewsformat/illustrator.md)
+- [object Illustrator](https://developer.apple.com/documentation/applenewsformat/illustrator)
   The component for adding illustrator credit.
-- [object Photographer](../applenewsformat/photographer.md)
+- [object Photographer](https://developer.apple.com/documentation/applenewsformat/photographer)
   The component for adding a photographer credit.
-- [object Quote](../applenewsformat/quote.md)
+- [object Quote](https://developer.apple.com/documentation/applenewsformat/quote)
   The component for including a quote.
-- [object PullQuote](../applenewsformat/pullquote.md)
+- [object PullQuote](https://developer.apple.com/documentation/applenewsformat/pullquote)
   The component for including a pull quote.
-- [object Text](../applenewsformat/text.md)
+- [object Text](https://developer.apple.com/documentation/applenewsformat/text)
   Properties shared by all text component types.
 
 

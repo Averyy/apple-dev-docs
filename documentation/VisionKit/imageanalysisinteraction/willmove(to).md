@@ -1,7 +1,8 @@
 # willMove(to:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an action before the view adds or removes the interaction from its interaction array.
 
@@ -24,7 +25,8 @@ Performs an action before the view adds or removes the interaction from its inte
 
 ## See Also
 
-- [func didMove(to: UIView?)](imageanalysisinteraction/didmove(to:).md)
+### Responding to view events
+- [func didMove(to: UIView?)](./didmove%28to%29.md)
   Performs an action after the view adds or removes the interaction from its interaction array.
 
 

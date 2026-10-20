@@ -1,7 +1,8 @@
 # numOfAddressBits
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits used to address blocks on the device.
 
@@ -10,27 +11,28 @@ The number of bits used to address blocks on the device.
 
 ## Declaration
 
-```swift
+```c
 uint8_t numOfAddressBits;
 ```
 
 ## See Also
 
-- [numOfBlocks](deviceparams/numofblocks.md)
+### Accessing Device Parameters
+- [numOfBlocks](./numofblocks.md)
   The number of blocks on the device.
-- [blockSize](deviceparams/blocksize.md)
+- [blockSize](./blocksize.md)
   The size of a block on the device.
-- [maxIOSize](deviceparams/maxiosize.md)
+- [maxIOSize](./maxiosize.md)
   The maximum amount of data per I/O call.
-- [numOfOutstandingIOs](deviceparams/numofoutstandingios.md)
+- [numOfOutstandingIOs](./numofoutstandingios.md)
   The upper limit to the number of requests sent to the device.
-- [maxNumOfUnmapRegions](deviceparams/maxnumofunmapregions.md)
+- [maxNumOfUnmapRegions](./maxnumofunmapregions.md)
   The maximum number of regions supported by an unmap call.
-- [minSegmentAlignment](deviceparams/minsegmentalignment.md)
+- [minSegmentAlignment](./minsegmentalignment.md)
   The minimum alignment of the data buffer sent to read-write calls.
-- [isUnmapSupported](deviceparams/isunmapsupported.md)
+- [isUnmapSupported](./isunmapsupported.md)
   A Boolean value that indicates whether the device supports unmapping to reclaim storage.
-- [isFUASupported](deviceparams/isfuasupported.md)
+- [isFUASupported](./isfuasupported.md)
   A Boolean value that indicates whether the device supports forced unit access (FUA).
 
 

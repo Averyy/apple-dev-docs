@@ -1,23 +1,33 @@
 # init(count:coordinateSpace:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.2
+- macOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 9.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`init(count:coordinateSpace:)`](./init%28count,coordinatespace%29-75s7q.md) instead.
 
 ## Declaration
 
 ```swift
 nonisolated
 init(count: Int = 1, coordinateSpace: CoordinateSpace = .local)
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(count: Int = 1, coordinateSpace: some CoordinateSpaceProtocol = .local)
 ```
 
 ## Parameters
@@ -27,17 +37,18 @@ init(count: Int = 1, coordinateSpace: CoordinateSpace = .local)
 
 ## See Also
 
-- [init(count: Int, coordinateSpace3D: some CoordinateSpace3D)](spatialtapgesture/init(count:coordinatespace3d:).md)
+### Creating a spatial tap gesture
+- [init(count: Int, coordinateSpace3D: some CoordinateSpace3D)](./init%28count,coordinatespace3d%29.md)
   Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
-- [init(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds)](spatialtapgesture/init(count:coordinatespace:inputkinds:).md)
+- [init(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds)](./init%28count,coordinatespace,inputkinds%29.md)
   Creates a tap gesture with the number of required taps, the coordinate space of the gesture’s location, and the input kinds the gesture recognizes.
-- [var coordinateSpace: CoordinateSpace](spatialtapgesture/coordinatespace.md)
+- [var coordinateSpace: CoordinateSpace](./coordinatespace.md)
   The coordinate space in which to receive location values.
-- [var count: Int](spatialtapgesture/count.md)
+- [var count: Int](./count.md)
   The required number of tap events.
-- [init(count: Int, coordinateSpace: some CoordinateSpaceProtocol)](spatialtapgesture/init(count:coordinatespace:)-75s7q.md)
+- [init(count: Int, coordinateSpace: some CoordinateSpaceProtocol)](./init%28count,coordinatespace%29-75s7q.md)
   Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
-- [init(count:coordinateSpace:)](spatialtapgesture/init(count:coordinatespace:).md)
+- [init(count:coordinateSpace:)](./init%28count,coordinatespace%29.md)
   Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 
 

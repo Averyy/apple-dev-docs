@@ -1,14 +1,15 @@
 # ICReturnMetadataError.Code
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -16,47 +17,52 @@
 enum Code
 ```
 
+```c
+enum ICReturnMetadataErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Cases
-- [ICReturnMetadataError.Code.alreadyFetching](icreturnmetadataerror/code/alreadyfetching.md)
+- [ICReturnMetadataError.Code.alreadyFetching](./code/alreadyfetching.md)
   Item metadata request is being serviced.
-- [ICReturnMetadataError.Code.canceled](icreturnmetadataerror/code/canceled.md)
+- [ICReturnMetadataError.Code.canceled](./code/canceled.md)
   Item metadata request has been canceled.
-- [ICReturnMetadataError.Code.invalid](icreturnmetadataerror/code/invalid.md)
+- [ICReturnMetadataError.Code.invalid](./code/invalid.md)
   Item metadata request completed with invalid result.
-- [ICReturnMetadataError.Code.notAvailable](icreturnmetadataerror/code/notavailable.md)
+- [ICReturnMetadataError.Code.notAvailable](./code/notavailable.md)
   Item does not have metadata available.
-- [ICReturnMetadataError.Code.alreadyFetching](icreturnmetadataerror/code/alreadyfetching.md)
+- [ICReturnMetadataError.Code.alreadyFetching](./code/alreadyfetching.md)
   Item metadata request is being serviced.
-- [ICReturnMetadataError.Code.canceled](icreturnmetadataerror/code/canceled.md)
+- [ICReturnMetadataError.Code.canceled](./code/canceled.md)
   Item metadata request has been canceled.
-- [ICReturnMetadataError.Code.invalid](icreturnmetadataerror/code/invalid.md)
+- [ICReturnMetadataError.Code.invalid](./code/invalid.md)
   Item metadata request completed with invalid result.
-- [ICReturnMetadataError.Code.notAvailable](icreturnmetadataerror/code/notavailable.md)
+- [ICReturnMetadataError.Code.notAvailable](./code/notavailable.md)
   Item does not have metadata available.
 ### Initializers
-- [init?(rawValue: Int)](icreturnmetadataerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var alreadyFetching: ICReturnMetadataError.Code](icreturnmetadataerror/alreadyfetching.md)
+### Error Codes
+- [static var alreadyFetching: ICReturnMetadataError.Code](./alreadyfetching.md)
   Item metadata request is being serviced.
-- [static var canceled: ICReturnMetadataError.Code](icreturnmetadataerror/canceled.md)
+- [static var canceled: ICReturnMetadataError.Code](./canceled.md)
   Item metadata request has been canceled.
-- [static var invalid: ICReturnMetadataError.Code](icreturnmetadataerror/invalid.md)
+- [static var invalid: ICReturnMetadataError.Code](./invalid.md)
   Item metadata request completed with invalid result.
-- [static var notAvailable: ICReturnMetadataError.Code](icreturnmetadataerror/notavailable.md)
+- [static var notAvailable: ICReturnMetadataError.Code](./notavailable.md)
   Item does not have metadata available.
 
 

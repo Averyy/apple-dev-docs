@@ -1,7 +1,8 @@
 # NSDecimalIsNotANumber(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean that indicates whether a given decimal contains a valid number.
 
@@ -20,13 +21,17 @@ Returns a Boolean that indicates whether a given decimal contains a valid number
 func NSDecimalIsNotANumber(_ dcm: UnsafePointer<Decimal>) -> Bool
 ```
 
+```c
+static BOOL NSDecimalIsNotANumber(const NSDecimal *dcm);
+```
+
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the value in `dcm` represents a valid number, otherwise [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](../Swift/false.md) if the value in `dcm` represents a valid number, otherwise [`true`](../Swift/true.md).
 
 #### Discussion
 
-For more information, see [`Number and Value Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i).
+For more information, see [Number and Value Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i).
 
 
 ---

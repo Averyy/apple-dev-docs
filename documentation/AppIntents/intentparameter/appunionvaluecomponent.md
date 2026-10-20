@@ -1,7 +1,8 @@
 # IntentParameter.AppUnionValueComponent
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The components of a union value parameter available for use in parameter summaries.
 
@@ -20,19 +21,21 @@ The components of a union value parameter available for use in parameter summari
 enum AppUnionValueComponent
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` conforms to `AppUnionValue`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.AppUnionValueComponent.type](intentparameter/appunionvaluecomponent/type.md)
+- [IntentParameter.AppUnionValueComponent.type](./appunionvaluecomponent/type.md)
   The case name component of this union value parameter.
-- [IntentParameter.AppUnionValueComponent.value](intentparameter/appunionvaluecomponent/value.md)
+- [IntentParameter.AppUnionValueComponent.value](./appunionvaluecomponent/value.md)
   The associated value of the selected case
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # StreamFormatChanged
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void StreamFormatChanged(IOUserVideoObjectID stream_id);
 ```
 

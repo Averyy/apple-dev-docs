@@ -1,7 +1,8 @@
 # largeContentTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the view in the large content viewer.
 
@@ -17,23 +18,28 @@ A string that describes the view in the large content viewer.
 var largeContentTitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * largeContentTitle;
+```
+
 #### Discussion
 
-To present content in the large content viewer, you can provide either [`largeContentTitle`](uilargecontentvieweritem/largecontenttitle.md) or [`largeContentImage`](uilargecontentvieweritem/largecontentimage.md), or both.
+To present content in the large content viewer, you can provide either [`largeContentTitle`](../uilargecontentvieweritem/largecontenttitle.md) or [`largeContentImage`](../uilargecontentvieweritem/largecontentimage.md), or both.
 
 This property defaults to an appropriate value for UIKit classes; otherwise, it’s `nil`.
 
 ## See Also
 
-- [var accessibilityIgnoresInvertColors: Bool](uiview/accessibilityignoresinvertcolors.md)
+### Modifying the accessibility behavior
+- [var accessibilityIgnoresInvertColors: Bool](./accessibilityignoresinvertcolors.md)
   A Boolean value indicating whether the view ignores an accessibility request to invert its colors.
-- [var largeContentImage: UIImage?](uiview/largecontentimage.md)
+- [var largeContentImage: UIImage?](./largecontentimage.md)
   An image that represents the view in the large content viewer.
-- [var largeContentImageInsets: UIEdgeInsets](uiview/largecontentimageinsets.md)
+- [var largeContentImageInsets: UIEdgeInsets](./largecontentimageinsets.md)
   Insets to adjust the position of the view’s image so it appears centered in the large content viewer.
-- [var scalesLargeContentImage: Bool](uiview/scaleslargecontentimage.md)
+- [var scalesLargeContentImage: Bool](./scaleslargecontentimage.md)
   A Boolean value that indicates whether the large content viewer scales the item’s image to a larger size.
-- [var showsLargeContentViewer: Bool](uiview/showslargecontentviewer.md)
+- [var showsLargeContentViewer: Bool](./showslargecontentviewer.md)
   A Boolean value that indicates whether to show the view in the large content viewer.
 
 

@@ -1,17 +1,22 @@
 # getID()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the attribute ID for the target service attribute.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getID() -> BluetoothSDPServiceAttributeID
+```
+
+```objc
+- (BluetoothSDPServiceAttributeID) getAttributeID;
 ```
 
 #### Return Value

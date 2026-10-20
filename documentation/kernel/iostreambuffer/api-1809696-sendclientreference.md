@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual SInt32 sendClientReference(
  IOByteCount offset = 0,
  IOByteCount length = 0 );
 ```
 
-#### Return_value
+#### Return Value
 
 The new client reference count.
 
@@ -22,20 +22,21 @@ The new client reference count.
 
 ## See Also
 
-- [getBufferID](iostreambuffer/1809634-getbufferid.md)
+### Miscellaneous
+- [getBufferID](./api-1809634-getbufferid.md)
   Gets the buffer identifier for the IOStreamBuffer object.
-- [getClientReferenceCount](iostreambuffer/1809644-getclientreferencecount.md)
-- [getControlBuffer](iostreambuffer/1809652-getcontrolbuffer.md)
-- [getDataBuffer](iostreambuffer/1809666-getdatabuffer.md)
-- [initWithMemoryDescriptors](iostreambuffer/1809676-initwithmemorydescriptors.md)
-- [receiveClientReference](iostreambuffer/1809687-receiveclientreference.md)
-- [setBufferID](iostreambuffer/1809706-setbufferid.md)
+- [getClientReferenceCount](./api-1809644-getclientreferencecount.md)
+- [getControlBuffer](./api-1809652-getcontrolbuffer.md)
+- [getDataBuffer](./api-1809666-getdatabuffer.md)
+- [initWithMemoryDescriptors](./api-1809676-initwithmemorydescriptors.md)
+- [receiveClientReference](./api-1809687-receiveclientreference.md)
+- [setBufferID](./api-1809706-setbufferid.md)
   Sets the buffer identifier for the IOStreamBuffer object.
-- [setControlBuffer](iostreambuffer/1809716-setcontrolbuffer.md)
+- [setControlBuffer](./api-1809716-setcontrolbuffer.md)
   Sets the control buffer for the IOStreamBuffer object.
-- [setDataBuffer](iostreambuffer/1809732-setdatabuffer.md)
+- [setDataBuffer](./api-1809732-setdatabuffer.md)
   Sets the data buffer for the IOStreamBuffer object.
-- [withMemoryDescriptors](iostreambuffer/1809743-withmemorydescriptors.md)
+- [withMemoryDescriptors](./api-1809743-withmemorydescriptors.md)
 
 
 ---

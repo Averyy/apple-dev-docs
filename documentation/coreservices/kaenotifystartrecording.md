@@ -1,7 +1,8 @@
 # kAENotifyStartRecording
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An event that notifies an application that recording has been turned on.
 

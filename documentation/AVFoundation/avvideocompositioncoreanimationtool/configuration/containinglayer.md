@@ -1,7 +1,8 @@
 # containingLayer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Containing layer to be rendered into, producing the final frame.
 
@@ -21,7 +22,8 @@ var containingLayer: CALayer
 
 ## See Also
 
-- [var layers: [CALayer]](avvideocompositioncoreanimationtool/configuration/layers.md)
+### Inspecting the configuration
+- [var layers: [CALayer]](./layers.md)
   Layer(s) to contain the composited video frames. Frames are duplicated if there is more than one layer.
 
 

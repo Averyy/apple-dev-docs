@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the transformer and optimizer to an encoder.
 
@@ -27,7 +28,8 @@ func encodeWithOptimizer(_ transformer: TreeRegressorModel, to encoder: inout an
 
 ## See Also
 
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](boostedtreeregressor/decodewithoptimizer(from:).md)
+### Encoding and decoding a regressor
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](./decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 
 

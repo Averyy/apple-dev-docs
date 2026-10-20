@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Computes metrics for the given subject, given the input sample.

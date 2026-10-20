@@ -1,7 +1,8 @@
 # String.IntentInputOptions.CapitalizationType
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the capitalization modes to apply to text.
 
@@ -23,20 +24,20 @@ enum CapitalizationType
 ## Topics
 
 ### Enumeration Cases
-- [String.IntentInputOptions.CapitalizationType.allCharacters](string/intentinputoptions/capitalizationtype-swift.enum/allcharacters.md)
+- [String.IntentInputOptions.CapitalizationType.allCharacters](./capitalizationtype-swift.enum/allcharacters.md)
   A mode that capitalizes all characters.
-- [String.IntentInputOptions.CapitalizationType.none](string/intentinputoptions/capitalizationtype-swift.enum/none.md)
+- [String.IntentInputOptions.CapitalizationType.none](./capitalizationtype-swift.enum/none.md)
   A mode that applies no automatic capitalization.
-- [String.IntentInputOptions.CapitalizationType.sentences](string/intentinputoptions/capitalizationtype-swift.enum/sentences.md)
+- [String.IntentInputOptions.CapitalizationType.sentences](./capitalizationtype-swift.enum/sentences.md)
   A mode that capitalizes the first letter of each sentence.
-- [String.IntentInputOptions.CapitalizationType.words](string/intentinputoptions/capitalizationtype-swift.enum/words.md)
+- [String.IntentInputOptions.CapitalizationType.words](./capitalizationtype-swift.enum/words.md)
   A mode that capitalizes the first letter of each word.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
+- [Equatable](../../equatable.md)
+- [Hashable](../../hashable.md)
 
 
 ---

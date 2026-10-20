@@ -1,7 +1,8 @@
 # removeTrackingArea(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a given tracking area from the view.
 
@@ -14,19 +15,24 @@ Removes a given tracking area from the view.
 func removeTrackingArea(_ trackingArea: NSTrackingArea)
 ```
 
+```objc
+- (void) removeTrackingArea:(NSTrackingArea *) trackingArea;
+```
+
 ## Parameters
 
 - `trackingArea`: The tracking area to remove from the view.
 
 ## See Also
 
-- [func addTrackingArea(NSTrackingArea)](nsview/addtrackingarea(_:).md)
+### Managing Tracking Areas
+- [func addTrackingArea(NSTrackingArea)](./addtrackingarea%28_%29.md)
   Adds a given tracking area to the view.
-- [var trackingAreas: [NSTrackingArea]](nsview/trackingareas.md)
+- [var trackingAreas: [NSTrackingArea]](./trackingareas.md)
   An array of the view’s tracking areas.
-- [func updateTrackingAreas()](nsview/updatetrackingareas.md)
+- [func updateTrackingAreas()](./updatetrackingareas%28%29.md)
   Invoked automatically when the view’s geometry changes such that its tracking areas need to be recalculated.
-- [class let didUpdateTrackingAreasNotification: NSNotification.Name](nsview/didupdatetrackingareasnotification.md)
+- [class let didUpdateTrackingAreasNotification: NSNotification.Name](./didupdatetrackingareasnotification.md)
   Posted whenever a view recalculates its tracking areas.
 
 

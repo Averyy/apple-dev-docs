@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identity transition specifying no changes.
 

@@ -1,7 +1,8 @@
 # removeSession(_:)
 
 **Framework**: AVSystemRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a session from the active route.
 
@@ -18,7 +19,7 @@ final func removeSession(_ session: AVSystemRouteSession)
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 #### Discussion
 
@@ -26,7 +27,7 @@ Call this function to unregister a session from the route when playback ends or 
 
 If the session is currently active, this function stops the session before removing it.
 
-> ❗ **Important**: Always remove sessions when they are no longer needed to ensure proper cleanup of system resources and network connections. To start new playback after removing a session, create a new [`AVSystemRouteSession`](avsystemroutesession-gp78.md) instance.
+> ❗ **Important**: Always remove sessions when they are no longer needed to ensure proper cleanup of system resources and network connections. To start new playback after removing a session, create a new [`AVSystemRouteSession`](../avsystemroutesession-gp78.md) instance.
 
 ## Parameters
 

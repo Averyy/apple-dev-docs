@@ -1,9 +1,10 @@
 # cmVideoCardGammaTableType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The video card gamma data is stored in a table format. See [`CMVideoCardGammaTable`](cmvideocardgammatable.md) for a description of the table format.
+The video card gamma data is stored in a table format. See [`CMVideoCardGammaTable`](./cmvideocardgammatable.md) for a description of the table format.
 
 **Availability**:
 - macOS 10.0+

@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.diagonal
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.diagonal.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.diagonal
-
- Table of contents 
-
-## Contents
-
-# mlx.core.diagonal
-
-**diagonal(*a: array*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**diagonal(*a: array*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Return specified diagonals.
 If `a` is 2-D, then a 1-D array containing the diagonal at the given
 `offset` is returned.
@@ -44,7 +17,7 @@ new dimension inserted at the end corresponding to the diagonal.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
 **offset** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Offset of the diagonal from the main diagonal.
 Can be positive or negative. Default: `0`.
 **axis1** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The first axis of the 2-D sub-arrays from which
@@ -56,6 +29,4 @@ Returns:
 The diagonals of the array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

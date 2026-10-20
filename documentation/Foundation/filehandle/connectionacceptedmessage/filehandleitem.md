@@ -1,7 +1,8 @@
 # fileHandleItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A result instance that contains either the file handle representing the “near” end of a socket connection, or an error.
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the action sheet.
 
@@ -16,11 +17,16 @@ The title of the action sheet.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var message: String?](cpactionsheettemplate/message.md)
+### Getting Action Sheet Template Information
+- [var message: String?](./message.md)
   The descriptive message providing details about the reason for displaying the action sheet.
-- [var actions: [CPAlertAction]](cpactionsheettemplate/actions.md)
+- [var actions: [CPAlertAction]](./actions.md)
   The list of actions available on the action sheet.
 
 

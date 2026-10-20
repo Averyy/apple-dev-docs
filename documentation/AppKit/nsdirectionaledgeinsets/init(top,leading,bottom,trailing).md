@@ -1,7 +1,8 @@
 # init(top:leading:bottom:trailing:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a directional edge insets structure that contains the specified values.
 
@@ -27,7 +28,8 @@ An initialized inset structure.
 
 ## See Also
 
-- [init()](nsdirectionaledgeinsets/init.md)
+### Creating directional edge insets
+- [init()](./init%28%29.md)
   Creates a directional edge insets structure that contains default values.
 
 

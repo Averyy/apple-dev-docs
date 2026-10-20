@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](anyhashable/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (AnyHashable, AnyHashable) -> Bool](anyhashable/==(_:_:).md)
+- [static func == (AnyHashable, AnyHashable) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two type-erased hashable instances wrap the same value.
 
 

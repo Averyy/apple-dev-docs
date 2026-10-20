@@ -1,7 +1,8 @@
 # CPInterfaceController
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller that manages the templates for constructing a scene’s user interface.
 
@@ -17,76 +18,81 @@ A controller that manages the templates for constructing a scene’s user interf
 class CPInterfaceController
 ```
 
+```objc
+@interface CPInterfaceController : NSObject
+```
+
 #### Overview
 
-An interface controller manages one or more templates in the navigation hierarchy. You don’t create the interface controller. Instead, CarPlay creates one for you and passes it to the delegate of [`CPTemplateApplicationScene`](cptemplateapplicationscene.md) when the scene connects.
+An interface controller manages one or more templates in the navigation hierarchy. You don’t create the interface controller. Instead, CarPlay creates one for you and passes it to the delegate of [`CPTemplateApplicationScene`](./cptemplateapplicationscene.md) when the scene connects.
 
-After receiving the controller, store a reference to it in your app. Then set the root template by calling the [`setRootTemplate(_:animated:completion:)`](cpinterfacecontroller/setroottemplate(_:animated:completion:).md) method. To display another template in the navigation hierarchy, call [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md), and use [`popTemplate(animated:completion:)`](cpinterfacecontroller/poptemplate(animated:completion:).md) to remove the top-most template.
+After receiving the controller, store a reference to it in your app. Then set the root template by calling the [`setRootTemplate(_:animated:completion:)`](./cpinterfacecontroller/setroottemplate%28_,animated,completion%29.md) method. To display another template in the navigation hierarchy, call [`pushTemplate(_:animated:completion:)`](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md), and use [`popTemplate(animated:completion:)`](./cpinterfacecontroller/poptemplate%28animated,completion%29.md) to remove the top-most template.
 
-You also use the interface controller to display a single template modally. Call [`presentTemplate(_:animated:completion:)`](cpinterfacecontroller/presenttemplate(_:animated:completion:).md) to display the modal template, and call [`dismissTemplate(animated:completion:)`](cpinterfacecontroller/dismisstemplate(animated:completion:).md) to dismiss it.
+You also use the interface controller to display a single template modally. Call [`presentTemplate(_:animated:completion:)`](./cpinterfacecontroller/presenttemplate%28_,animated,completion%29.md) to display the modal template, and call [`dismissTemplate(animated:completion:)`](./cpinterfacecontroller/dismisstemplate%28animated,completion%29.md) to dismiss it.
 
 ## Topics
 
 ### Configuring the Interface Controller
-- [var delegate: (any CPInterfaceControllerDelegate)?](cpinterfacecontroller/delegate.md)
+- [var delegate: (any CPInterfaceControllerDelegate)?](./cpinterfacecontroller/delegate.md)
   An object that serves as the delegate to the interface controller.
-- [protocol CPInterfaceControllerDelegate](cpinterfacecontrollerdelegate.md)
+- [protocol CPInterfaceControllerDelegate](./cpinterfacecontrollerdelegate.md)
   The interface that an object implements to serve as a delegate to an interface controller.
-- [var prefersDarkUserInterfaceStyle: Bool](cpinterfacecontroller/prefersdarkuserinterfacestyle.md)
+- [var prefersDarkUserInterfaceStyle: Bool](./cpinterfacecontroller/prefersdarkuserinterfacestyle.md)
   A Boolean value that determines whether the system draws the user interface in Dark Mode.
-- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/setroottemplate(_:animated:completion:).md)
+- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/setroottemplate%28_,animated,completion%29.md)
   Sets the root template of the navigation hierarchy.
 ### Accessing the Trait Collection
-- [var carTraitCollection: UITraitCollection](cpinterfacecontroller/cartraitcollection.md)
+- [var carTraitCollection: UITraitCollection](./cpinterfacecontroller/cartraitcollection.md)
   The trait collection of the vehicle’s primary screen.
 ### Accessing Templates
-- [var rootTemplate: CPTemplate](cpinterfacecontroller/roottemplate.md)
+- [var rootTemplate: CPTemplate](./cpinterfacecontroller/roottemplate.md)
   The root template in the navigation hierarchy.
-- [var topTemplate: CPTemplate?](cpinterfacecontroller/toptemplate.md)
+- [var topTemplate: CPTemplate?](./cpinterfacecontroller/toptemplate.md)
   The top-most template in the navigation hierarchy.
-- [var templates: [CPTemplate]](cpinterfacecontroller/templates.md)
+- [var templates: [CPTemplate]](./cpinterfacecontroller/templates.md)
   The contents of the navigation hierarchy.
 ### Adding and Removing Templates
-- [func pushTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/pushtemplate(_:animated:completion:).md)
+- [func pushTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md)
   Adds the specified template to the navigation hierarchy and displays it.
-- [func popTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/poptemplate(animated:completion:).md)
+- [func popTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/poptemplate%28animated,completion%29.md)
   Removes the top-most template from the navigation hierarchy.
-- [func popToRootTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/poptoroottemplate(animated:completion:).md)
+- [func popToRootTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/poptoroottemplate%28animated,completion%29.md)
   Removes all of the templates from the navigation hierarchy except the root template.
-- [func pop(to: CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/pop(to:animated:completion:).md)
+- [func pop(to: CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/pop%28to,animated,completion%29.md)
   Removes each template from the navigation hierarchy until the specified template becomes visible.
 ### Displaying Templates Modally
-- [func presentTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/presenttemplate(_:animated:completion:).md)
+- [func presentTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/presenttemplate%28_,animated,completion%29.md)
   Presents a template modally.
-- [func dismissTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/dismisstemplate(animated:completion:).md)
+- [func dismissTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/dismisstemplate%28animated,completion%29.md)
   Dismisses a modal template.
-- [var presentedTemplate: CPTemplate?](cpinterfacecontroller/presentedtemplate.md)
+- [var presentedTemplate: CPTemplate?](./cpinterfacecontroller/presentedtemplate.md)
   The interface controller’s current modal template.
 ### Deprecated
-- [Deprecated Symbols](cpinterfacecontroller-deprecated-symbols.md)
+- [Deprecated Symbols](./cpinterfacecontroller-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Methods
-- [func hideOverlayTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/hideoverlaytemplate(animated:completion:).md)
+- [func hideOverlayTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/hideoverlaytemplate%28animated,completion%29.md)
   Dismiss the current overlay template, optionally animating the dismissal.
-- [func showOverlayTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/showoverlaytemplate(_:animated:completion:).md)
+- [func showOverlayTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/showoverlaytemplate%28_,animated,completion%29.md)
   Show a template as an overlay over the current template hierarchy. Only one overlay template may be shown at a time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var interfaceController: CPInterfaceController](cptemplateapplicationscene/interfacecontroller.md)
+### Accessing the Interface Controller
+- [var interfaceController: CPInterfaceController](./cptemplateapplicationscene/interfacecontroller.md)
   The controller that manages the scene’s user interface.
 
 

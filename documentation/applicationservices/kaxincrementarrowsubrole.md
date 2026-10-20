@@ -1,7 +1,8 @@
 # kAXIncrementArrowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The up arrow of a scroll bar. 
 
@@ -12,6 +13,10 @@ The up arrow of a scroll bar.
 
 ```swift
 var kAXIncrementArrowSubrole: String { get }
+```
+
+```c
+#define kAXIncrementArrowSubrole
 ```
 
 

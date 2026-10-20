@@ -1,6 +1,7 @@
 # Grouping notifications
 
-**Framework**: watchOS apps
+**Framework**: watchOS apps  
+**Role**: Article
 
 Organize notifications into threads.
 
@@ -8,9 +9,9 @@ Organize notifications into threads.
 
 The system groups related notifications together in the Notification Center. You can control how watchOS groups your app’s notifications by adding a thread identifier.
 
-##### Set the Thread Identifier
+##### Set the thread identifier
 
-The system automatically groups notifications with the same category and thread ID as they arrive. For local notifications, set the content’s [`threadIdentifier`](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent/threadidentifier) property. For remote notifications, use the `thread-id` key.
+The system automatically groups notifications with the same category and thread ID as they arrive. For local notifications, set the content’s [`threadIdentifier`](../UserNotifications/unmutablenotificationcontent/threadidentifier.md) property. For remote notifications, use the `thread-id` key.
 
 ```swift
 let myPOICategory = "NearbyPlaceOfInterestCategoryIdentifier"
@@ -29,17 +30,18 @@ let request = UNNotificationRequest(identifier: myPOICategory,
                                     content: content)
 ```
 
-##### Display Groups in Custom Interfaces
+##### Display groups in custom interfaces
 
-Additionally, if you provide a custom long-look interface, it can respond to grouped notifications, displaying content from multiple notifications within a single interface. If a custom notification interface is on screen and a new notification with a matching category and thread ID arrives, the system calls your notification controller’s [`didReceive(_:)`](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:)) method again. Your implementation must be prepared to append the incoming content to the existing interface. For example, if your custom interface displays the content in a table view, you can add a new row for the incoming content.
+Additionally, if you provide a custom long-look interface, it can respond to grouped notifications, displaying content from multiple notifications within a single interface. If a custom notification interface is on screen and a new notification with a matching category and thread ID arrives, the system calls your notification controller’s [`didReceive(_:)`](../WatchKit/wkusernotificationinterfacecontroller/didreceive%28_%29.md) method again. Your implementation must be prepared to append the incoming content to the existing interface. For example, if your custom interface displays the content in a table view, you can add a new row for the incoming content.
 
 ## See Also
 
-- [Taking advantage of notification forwarding](taking-advantage-of-notification-forwarding.md)
+### Customizing the user experience
+- [Taking advantage of notification forwarding](./taking-advantage-of-notification-forwarding.md)
   Deliver notifications to the user’s iPhone or Apple Watch.
-- [Customizing your long-look interface](customizing-your-long-look-interface.md)
+- [Customizing your long-look interface](./customizing-your-long-look-interface.md)
   Create custom interfaces for your watchOS app’s notifications.
-- [Adding actions to notifications on watchOS](adding-actions-to-notifications-on-watchos.md)
+- [Adding actions to notifications on watchOS](./adding-actions-to-notifications-on-watchos.md)
   Provide a set of responses to a notification.
 
 

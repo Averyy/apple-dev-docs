@@ -1,7 +1,8 @@
 # operationTimedOut
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Some thread-oriented operation (semaphore_wait) timed out.
 

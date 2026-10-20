@@ -1,14 +1,15 @@
 # SecureDTGetProperty
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int SecureDTGetProperty(const DTEntry entry, const char *propertyName, const void **propertyValue, unsigned int *propertySize);
 ```
 

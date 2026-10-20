@@ -1,7 +1,8 @@
 # merge
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool merge(const OSArray *otherArray);
+```
+
+*macOS*
+
+```cpp
 virtual bool merge(const OSArray *array);
 ```
 

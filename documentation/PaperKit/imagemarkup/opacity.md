@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of the image.
 
@@ -24,7 +25,8 @@ Ranges from `0.0` (fully transparent) to `1.0` (fully opaque). Defaults to `1.0`
 
 ## See Also
 
-- [var accessibilityDescription: String?](imagemarkup/accessibilitydescription.md)
+### Configuring appearance
+- [var accessibilityDescription: String?](./accessibilitydescription.md)
   The accessibility description of the image for assistive technologies.
 
 

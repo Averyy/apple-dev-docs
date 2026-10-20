@@ -1,7 +1,8 @@
 # NFCPresentmentIntentAssertion.Error.systemEligibilityFailed
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current system isn’t eligible to use this service.
 
@@ -18,7 +19,8 @@ case systemEligibilityFailed
 
 ## See Also
 
-- [NFCPresentmentIntentAssertion.Error.systemNotAvailable](nfcpresentmentintentassertion/error/systemnotavailable.md)
+### Presentment intent assertion errors
+- [NFCPresentmentIntentAssertion.Error.systemNotAvailable](./systemnotavailable.md)
   The system is unavailable because it’s in the cool-down period.
 
 

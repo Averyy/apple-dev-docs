@@ -1,7 +1,8 @@
 # ARKitSession.Event.dataProviderStateChanged(dataProviders:newState:error:)
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that represents a state change of one or more of the data providers associated with a session.
 

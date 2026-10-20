@@ -1,7 +1,8 @@
 # sourceOptions
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options you use to specify access to restricted content.
 
@@ -20,9 +21,10 @@ Use this property to specify access to sensitive items like email.
 
 ## See Also
 
-- [var fetchAttributes: [SearchableItemAttribute]](corespotlightsource/fetchattributes.md)
+### Configuring the search options
+- [var fetchAttributes: [SearchableItemAttribute]](./fetchattributes.md)
   The attributes to fetch for each item and provide to the model.
-- [var maximumResultCount: Int?](corespotlightsource/maximumresultcount.md)
+- [var maximumResultCount: Int?](./maximumresultcount.md)
   The maximum number of results to retrieve from this source.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Loads assets into memory or pre-fills caches ahead of a request.
@@ -24,9 +25,16 @@ func prewarm(model: Self.Model, transcript: Transcript)
 
 > **Note**: The default implementation is a no-op.
 
+## Default Implementations
+
+### LanguageModelExecutor Implementations
+- [func prewarm(model: Self.Model, transcript: Transcript)](./prewarm%28model,transcript%29-9bd8h.md)
+  Loads assets into memory or pre-fills caches ahead of a request.
+
 ## See Also
 
-- [associatedtype Model : LanguageModel](languagemodelexecutor/model.md)
+### Prewarming the model
+- [associatedtype Model : LanguageModel](./model.md)
   The model type this executor processes requests for.
 
 

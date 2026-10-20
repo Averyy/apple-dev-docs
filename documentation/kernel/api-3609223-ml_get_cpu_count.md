@@ -1,14 +1,15 @@
 # ml_get_cpu_count
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_get_cpu_count(void);
 ```
 

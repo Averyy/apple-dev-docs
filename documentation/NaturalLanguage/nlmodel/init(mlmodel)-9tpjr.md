@@ -1,7 +1,8 @@
 # init(mlModel:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new natural language model based on the given Core ML model instance.
 
@@ -20,13 +21,18 @@ Creates a new natural language model based on the given Core ML model instance.
 convenience init(mlModel: MLModel) throws
 ```
 
+```objc
++ (instancetype) modelWithMLModel:(MLModel *) mlModel error:(NSError **) error;
+```
+
 ## Parameters
 
 - `mlModel`: A Core ML model instance that’s the basis for this natural language model.
 
 ## See Also
 
-- [convenience init(contentsOf: URL) throws](nlmodel/init(contentsof:).md)
+### Creating a model
+- [convenience init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a new natural language model based on a compiled Core ML model at the given URL.
 
 

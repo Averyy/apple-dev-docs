@@ -1,7 +1,8 @@
 # MeshDeformerExecutionMode.gpu
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 specifies calling `MeshDeformer.deform(parameter: MeshDeformParameterGPU, encoder: any MTLComputeCommandEncoder)`
 
@@ -21,7 +22,8 @@ case gpu
 
 ## See Also
 
-- [MeshDeformerExecutionMode.cpu](meshdeformerexecutionmode/cpu.md)
+### Choosing an execution mode
+- [MeshDeformerExecutionMode.cpu](./cpu.md)
   specifies calling `MeshDeformer.deform(parameter: MeshDeformParameterCPU)`
 
 

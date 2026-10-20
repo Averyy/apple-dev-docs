@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the action’s button.
 
@@ -9,7 +10,7 @@ The title of the action’s button.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The title of the action’s button.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * title;
+```
+
 #### Discussion
 
-This property is set to the value you specified in the [`init(title:style:handler:)`](uialertaction/init(title:style:handler:).md) method.
+This property is set to the value you specified in the [`init(title:style:handler:)`](./init%28title,style,handler%29.md) method.
 
 ## See Also
 
-- [var style: UIAlertAction.Style](uialertaction/style-swift.property.md)
+### Getting the action’s attributes
+- [var style: UIAlertAction.Style](./style-swift.property.md)
   The style that applies to the action’s button.
-- [var isEnabled: Bool](uialertaction/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the action is currently enabled.
 
 

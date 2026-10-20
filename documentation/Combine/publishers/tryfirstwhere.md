@@ -1,7 +1,8 @@
 # Publishers.TryFirstWhere
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that only publishes the first element of a stream to satisfy a throwing predicate closure.
 
@@ -23,36 +24,37 @@ struct TryFirstWhere<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a try-first-where publisher
-- [init(upstream: Upstream, predicate: (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool)](publishers/tryfirstwhere/init(upstream:predicate:).md)
+- [init(upstream: Upstream, predicate: (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool)](./tryfirstwhere/init%28upstream,predicate%29.md)
 ### Declaring supporting types
-- [Publishers.TryFirstWhere.Output](publishers/tryfirstwhere/output.md)
+- [Publishers.TryFirstWhere.Output](./tryfirstwhere/output.md)
   The kind of values published by this publisher.
-- [Publishers.TryFirstWhere.Failure](publishers/tryfirstwhere/failure.md)
+- [Publishers.TryFirstWhere.Failure](./tryfirstwhere/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/tryfirstwhere/upstream.md)
+- [let upstream: Upstream](./tryfirstwhere/upstream.md)
   The publisher from which this publisher receives elements.
-- [let predicate: (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool](publishers/tryfirstwhere/predicate.md)
+- [let predicate: (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool](./tryfirstwhere/predicate.md)
   The error-throwing closure that determines whether to publish an element.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.First](publishers/first.md)
+### Selecting specific elements
+- [Publishers.First](./first.md)
   A publisher that publishes the first element of a stream, then finishes.
-- [Publishers.FirstWhere](publishers/firstwhere.md)
+- [Publishers.FirstWhere](./firstwhere.md)
   A publisher that only publishes the first element of a stream to satisfy a predicate closure.
-- [Publishers.Last](publishers/last.md)
+- [Publishers.Last](./last.md)
   A publisher that waits until after the stream finishes, and then publishes the last element of the stream.
-- [Publishers.LastWhere](publishers/lastwhere.md)
+- [Publishers.LastWhere](./lastwhere.md)
   A publisher that waits until after the stream finishes and then publishes the last element of the stream that satisfies a predicate closure.
-- [Publishers.TryLastWhere](publishers/trylastwhere.md)
+- [Publishers.TryLastWhere](./trylastwhere.md)
   A publisher that waits until after the stream finishes and then publishes the last element of the stream that satisfies an error-throwing predicate closure.
-- [Publishers.Output](publishers/output.md)
+- [Publishers.Output](./output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 
 

@@ -1,7 +1,8 @@
 # init(request:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sidebar item from the specified request. The sidebar item will be preconfigured with the appropriate defaults for its content.
 
@@ -15,6 +16,10 @@ Creates a sidebar item from the specified request. The sidebar item will be prec
 
 ```swift
 convenience init(request: UITabSidebarItem.Request)
+```
+
+```objc
++ (instancetype) itemFromRequest:(UITabSidebarItemRequest *) request;
 ```
 
 

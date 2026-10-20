@@ -1,7 +1,8 @@
 # textInput
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that implements the UITextInput protocol, used to query for geometry information regarding cursor placement.
 
@@ -16,6 +17,10 @@ The object that implements the UITextInput protocol, used to query for geometry 
 
 ```swift
 var textInput: (any UIView & UITextInput)! { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIView<UITextInput> * textInput;
 ```
 
 

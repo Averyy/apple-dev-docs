@@ -1,7 +1,8 @@
 # AEGetSpecialHandler(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets a specified handler from a special handler dispatch table.
 
@@ -14,15 +15,19 @@ Gets a specified handler from a special handler dispatch table.
 func AEGetSpecialHandler(_ functionClass: AEKeyword, _ handler: UnsafeMutablePointer<AEEventHandlerUPP?>!, _ isSysHandler: Bool) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AEGetSpecialHandler(AEKeyword functionClass, AEEventHandlerUPP *handler, Boolean isSysHandler);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
-See also [`AEInstallSpecialHandler(_:_:_:)`](1445532-aeinstallspecialhandler.md) and [`AERemoveSpecialHandler(_:_:_:)`](1447960-aeremovespecialhandler.md). 
+See also [`AEInstallSpecialHandler(_:_:_:)`](./api-1445532-aeinstallspecialhandler.md) and [`AERemoveSpecialHandler(_:_:_:)`](./api-1447960-aeremovespecialhandler.md). 
 
-##### 1770209
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
@@ -30,15 +35,16 @@ In macOS, you should generally install all handlers in the application dispatch 
 
 ## Parameters
 
-- `functionClass`: The keyword for the special handler to get. You can specify any of the constants described in [`Special Handler Callback Constants`](apple_events/1572726-special_handler_callback_constan.md). See [`AEKeyword`](aekeyword.md).
-- `handler`: A universal procedure pointer. On return, a pointer to the specified special handler, if one exists that matches the value supplied in the `functionClass` parameter. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `functionClass`: The keyword for the special handler to get. You can specify any of the constants described in [Special Handler Callback Constants](./apple_events/api-1572726-special_handler_callback_constan.md). See [`AEKeyword`](./aekeyword.md).
+- `handler`: A universal procedure pointer. On return, a pointer to the specified special handler, if one exists that matches the value supplied in the `functionClass` parameter. See [`AEEventHandlerUPP`](./aeeventhandlerupp.md).
 - `isSysHandler`: Specifies the special handler dispatch table to get the handler from. Pass `TRUE` to get the handler from the system special handler dispatch table or `FALSE` to get the handler from your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
 
 ## See Also
 
-- [func AEInstallSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](1445532-aeinstallspecialhandler.md)
+### Managing Special Handler Dispatch Tables
+- [func AEInstallSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](./api-1445532-aeinstallspecialhandler.md)
   Installs a callback function in a special handler dispatch table.
-- [func AERemoveSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](1447960-aeremovespecialhandler.md)
+- [func AERemoveSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](./api-1447960-aeremovespecialhandler.md)
   Removes a handler from a special handler dispatch table.
 
 

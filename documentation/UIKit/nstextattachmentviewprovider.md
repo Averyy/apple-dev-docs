@@ -1,7 +1,8 @@
 # NSTextAttachmentViewProvider
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container object that associates a text attachment at a particular document location with a view object.
 
@@ -18,54 +19,59 @@ A container object that associates a text attachment at a particular document lo
 class NSTextAttachmentViewProvider
 ```
 
+```objc
+@interface NSTextAttachmentViewProvider : NSObject
+```
+
 #### Overview
 
-Use `NSTextAttachmentViewProvider` when you need to represent document locations in terms of an [`NSTextLocation`](nstextlocation.md) or an [`NSTextRange`](nstextrange.md) or you want to support view-based text attachments. The view provider controls the view placement and layout without requiring view classes to be aware of the text attachment coordination using a [`NSTextLayoutManager`](nstextlayoutmanager.md) in macOS 12 or iOS 15 and later.
+Use `NSTextAttachmentViewProvider` when you need to represent document locations in terms of an [`NSTextLocation`](./nstextlocation.md) or an [`NSTextRange`](./nstextrange.md) or you want to support view-based text attachments. The view provider controls the view placement and layout without requiring view classes to be aware of the text attachment coordination using a [`NSTextLayoutManager`](./nstextlayoutmanager.md) in macOS 12 or iOS 15 and later.
 
 ## Topics
 
 ### Initializing a text attachment view
-- [init(textAttachment: NSTextAttachment, parentView: UIView?, textLayoutManager: NSTextLayoutManager?, location: any NSTextLocation)](nstextattachmentviewprovider/init(textattachment:parentview:textlayoutmanager:location:).md)
+- [init(textAttachment: NSTextAttachment, parentView: UIView?, textLayoutManager: NSTextLayoutManager?, location: any NSTextLocation)](./nstextattachmentviewprovider/init%28textattachment,parentview,textlayoutmanager,location%29.md)
   Creates a new text attachment view whose content starts at the location you provide.
 ### Defining the contents
-- [var location: any NSTextLocation](nstextattachmentviewprovider/location.md)
+- [var location: any NSTextLocation](./nstextattachmentviewprovider/location.md)
   The location that indicates the start of the text attachment.
-- [var textAttachment: NSTextAttachment?](nstextattachmentviewprovider/textattachment.md)
+- [var textAttachment: NSTextAttachment?](./nstextattachmentviewprovider/textattachment.md)
   The text attachment for this view.
-- [var textLayoutManager: NSTextLayoutManager?](nstextattachmentviewprovider/textlayoutmanager.md)
+- [var textLayoutManager: NSTextLayoutManager?](./nstextattachmentviewprovider/textlayoutmanager.md)
   The text layout manager for this view.
-- [var tracksTextAttachmentViewBounds: Bool](nstextattachmentviewprovider/trackstextattachmentviewbounds.md)
+- [var tracksTextAttachmentViewBounds: Bool](./nstextattachmentviewprovider/trackstextattachmentviewbounds.md)
   A Boolean value that determines the text attachment’s bounds policy.
-- [var view: UIView?](nstextattachmentviewprovider/view.md)
+- [var view: UIView?](./nstextattachmentviewprovider/view.md)
   The text attachment’s view.
 ### Defining a custom view hierarchy
-- [func loadView()](nstextattachmentviewprovider/loadview.md)
+- [func loadView()](./nstextattachmentviewprovider/loadview%28%29.md)
   Draws the custom view hierarchy that text attachment view subclasses implement.
 ### Determining the Attachment’s Bounds
-- [func attachmentBounds(for: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?, proposedLineFragment: CGRect, position: CGPoint) -> CGRect](nstextattachmentviewprovider/attachmentbounds(for:location:textcontainer:proposedlinefragment:position:).md)
+- [func attachmentBounds(for: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?, proposedLineFragment: CGRect, position: CGPoint) -> CGRect](./nstextattachmentviewprovider/attachmentbounds%28for,location,textcontainer,proposedlinefragment,position%29.md)
   Returns the layout bounds for an attachment at a specific text location that contains the text attributes you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSTextAttachment](nstextattachment.md)
+### Attachments
+- [class NSTextAttachment](./nstextattachment.md)
   The values for the attachment characteristics of attributed strings and related objects.
-- [class NSAdaptiveImageGlyph](nsadaptiveimageglyph.md)
+- [class NSAdaptiveImageGlyph](./nsadaptiveimageglyph.md)
   A data object for an emoji-like image that can appear in attributed text.
-- [protocol NSTextAttachmentContainer](nstextattachmentcontainer.md)
+- [protocol NSTextAttachmentContainer](./nstextattachmentcontainer.md)
   A set of methods that defines the interface to text attachment objects from a layout manager.
-- [protocol NSTextAttachmentLayout](nstextattachmentlayout.md)
+- [protocol NSTextAttachmentLayout](./nstextattachmentlayout.md)
   A set of methods that defines the interface to attachment objects from a text layout manager.
 
 

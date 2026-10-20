@@ -1,7 +1,8 @@
 # errSSLPeerExportRestriction
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An export restriction occurred.
 
@@ -18,6 +19,10 @@ An export restriction occurred.
 
 ```swift
 var errSSLPeerExportRestriction: OSStatus { get }
+```
+
+```c
+errSSLPeerExportRestriction
 ```
 
 

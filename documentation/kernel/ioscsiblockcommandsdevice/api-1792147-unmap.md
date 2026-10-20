@@ -1,14 +1,15 @@
 # Unmap
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn Unmap(IOBlockStorageDeviceExtent *extents, UInt32 ExtentsCount);
 ```
 

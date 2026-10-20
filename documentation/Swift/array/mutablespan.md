@@ -1,7 +1,8 @@
 # mutableSpan
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable span over the elements of this array.
 
@@ -26,7 +27,7 @@ A `MutableSpan` over the elements of this array.
 
 #### Discussion
 
-> **Note**: O(1) when the array’s storage is uniquely referenced, O(*n*) otherwise.
+> **Complexity**: O(1) when the array’s storage is uniquely referenced, O(*n*) otherwise.
 
 
 ---

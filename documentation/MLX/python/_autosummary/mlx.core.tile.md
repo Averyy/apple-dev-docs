@@ -6,45 +6,16 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ti
 
 # mlx.core.tile
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.tile.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.tile
-
- Table of contents 
-
-## Contents
-
-# mlx.core.tile
-
-**tile(*a: array*, *reps: int | Sequence[int]*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**tile(*a: array*, *reps: int | Sequence[int]*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Construct an array by repeating `a` the number of times given by `reps`.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
 **reps** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The number of times to repeat `a` along each axis.
 
 Returns:
 The tiled array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

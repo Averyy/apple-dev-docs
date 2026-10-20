@@ -1,7 +1,8 @@
 # uploadTaskResumeData
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque data blob to resume a failed upload task.
 
@@ -22,7 +23,7 @@ var uploadTaskResumeData: Data? { get }
 
 ## Mentions
 
-- [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
+- [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Known issues
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: API Collection
 
 Mark issues as known when running tests.
 
@@ -8,7 +9,7 @@ Mark issues as known when running tests.
 
 The testing library provides several functions named `withKnownIssue()` that you can use to mark issues as known. Use them to inform the testing library that a test should not be marked as failing if only known issues are recorded.
 
-##### Mark an Expectation Failure As Known
+##### Mark an expectation failure as known
 
 Consider a test function with a single expectation:
 
@@ -34,7 +35,7 @@ If the value of the `isHeating` property is `false`, `#expect` will record an is
 
 The issue recorded by `#expect` will then be considered “known” and the test will not be marked as a failure. You may include an optional comment to explain the problem or provide context.
 
-##### Mark a Thrown Error As Known
+##### Mark a thrown error as known
 
 If an `Error` is caught by the closure passed to `withKnownIssue()`, the issue representing that caught error will be marked as known. Continuing the previous example, suppose the problem is that the `startGrill()` function is throwing an error. You can apply `withKnownIssue()` to this situation as well:
 
@@ -52,7 +53,7 @@ Because all errors thrown from the closure are caught and interpreted as known i
 
 > **Note**: `withKnownIssue()` is recommended instead of `#expect(throws:)` for any error which is considered a known issue so that the test status and results will reflect the situation more accurately.
 
-##### Match a Specific Issue
+##### Match a specific issue
 
 By default, `withKnownIssue()` considers all issues recorded while invoking the body closure known. If multiple issues may be recorded, you can pass a trailing closure labeled `matching:` which will be called once for each recorded issue to determine whether it should be treated as known:
 
@@ -71,11 +72,11 @@ By default, `withKnownIssue()` considers all issues recorded while invoking the 
 }
 ```
 
-##### Resolve a Known Issue
+##### Resolve a known issue
 
 If there are no issues recorded while calling `function`, `withKnownIssue()` will record a distinct issue about the lack of any issues having been recorded. This notifies you that the underlying problem may have been resolved so that you can investigate and consider removing `withKnownIssue()` if it’s no longer necessary.
 
-##### Handle a Nondeterministic Failure
+##### Handle a nondeterministic failure
 
 If `withKnownIssue()` sometimes succeeds but other times records an issue indicating there were no known issues, this may indicate a nondeterministic failure or a “flaky” test.
 
@@ -111,23 +112,24 @@ If the underlying problem is unpredictable and fails at random, you can pass `is
 ## Topics
 
 ### Recording known issues in tests
-- [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void)](withknownissue(_:isintermittent:sourcelocation:_:).md)
+- [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void)](./withknownissue%28_,isintermittent,sourcelocation,_%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void) async](withknownissue(_:isintermittent:isolation:sourcelocation:_:).md)
+- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void) async](./withknownissue%28_,isintermittent,isolation,sourcelocation,_%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void, when: () -> Bool, matching: KnownIssueMatcher) rethrows](withknownissue(_:isintermittent:sourcelocation:_:when:matching:).md)
+- [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void, when: () -> Bool, matching: KnownIssueMatcher) rethrows](./withknownissue%28_,isintermittent,sourcelocation,_,when,matching%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void, when: () async -> Bool, matching: KnownIssueMatcher) async rethrows](withknownissue(_:isintermittent:isolation:sourcelocation:_:when:matching:).md)
+- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void, when: () async -> Bool, matching: KnownIssueMatcher) async rethrows](./withknownissue%28_,isintermittent,isolation,sourcelocation,_,when,matching%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [typealias KnownIssueMatcher](knownissuematcher.md)
+- [typealias KnownIssueMatcher](./knownissuematcher.md)
   A function that is used to match known issues.
 ### Describing a failure or warning
-- [struct Issue](issue.md)
+- [struct Issue](./issue.md)
   A type describing a failure or warning which occurred during a test.
 
 ## See Also
 
-- [Expectations and confirmations](expectations.md)
+### Behavior validation
+- [Expectations and confirmations](./expectations.md)
   Check for expected values, outcomes, and asynchronous events in tests.
 
 

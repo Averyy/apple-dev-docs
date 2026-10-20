@@ -1,12 +1,13 @@
 # element
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An AudioObjectPropertyElement that indicates which element of the owning device the control applies to.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration

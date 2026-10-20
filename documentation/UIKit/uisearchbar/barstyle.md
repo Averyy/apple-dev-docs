@@ -1,7 +1,8 @@
 # barStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bar style that specifies the search bar’s appearance.
 
@@ -17,27 +18,32 @@ A bar style that specifies the search bar’s appearance.
 var barStyle: UIBarStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIBarStyle barStyle;
+```
+
 #### Discussion
 
-This property can be used together with [`searchBarStyle`](uisearchbar/searchbarstyle.md).
+This property can be used together with [`searchBarStyle`](./searchbarstyle.md).
 
-See [`UIBarStyle`](uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](uibarstyle/default.md).
+See [`UIBarStyle`](../uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](../uibarstyle/default.md).
 
 ## See Also
 
-- [var isEnabled: Bool](uisearchbar/isenabled.md)
+### Configuring the search bar
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the search bar is in the enabled state.
-- [var barTintColor: UIColor?](uisearchbar/bartintcolor.md)
+- [var barTintColor: UIColor?](./bartintcolor.md)
   The tint color to apply to the search bar background.
-- [var searchBarStyle: UISearchBar.Style](uisearchbar/searchbarstyle.md)
+- [var searchBarStyle: UISearchBar.Style](./searchbarstyle.md)
   A search bar style that specifies the search bar’s appearance.
-- [UISearchBar.Style](uisearchbar/style.md)
+- [UISearchBar.Style](./style.md)
   Specifies whether the search bar has a background.
-- [var tintColor: UIColor!](uisearchbar/tintcolor.md)
+- [var tintColor: UIColor!](./tintcolor.md)
   The tint color to apply to key elements in the search bar.
-- [var isTranslucent: Bool](uisearchbar/istranslucent.md)
+- [var isTranslucent: Bool](./istranslucent.md)
   A Boolean value that indicates whether the search bar is translucent (true) or not (false).
-- [enum UIBarStyle](uibarstyle.md)
+- [enum UIBarStyle](../uibarstyle.md)
   Defines the stylistic appearance of different types of views.
 
 

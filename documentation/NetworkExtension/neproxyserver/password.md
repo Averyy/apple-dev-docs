@@ -1,7 +1,8 @@
 # password
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password portion of the authentication credential to be used to authenticate with the proxy server.
 
@@ -19,15 +20,20 @@ The password portion of the authentication credential to be used to authenticate
 var password: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * password;
+```
+
 ## See Also
 
-- [var address: String](neproxyserver/address.md)
+### Accessing Proxy Server Properties
+- [var address: String](./address.md)
   The address of the proxy server.
-- [var port: Int](neproxyserver/port.md)
+- [var port: Int](./port.md)
   The TCP port on which the proxy server is listening for connections.
-- [var authenticationRequired: Bool](neproxyserver/authenticationrequired.md)
+- [var authenticationRequired: Bool](./authenticationrequired.md)
   A Boolean indicating if the server requires authentication credentials.
-- [var username: String?](neproxyserver/username.md)
+- [var username: String?](./username.md)
   The username portion of the authentication credential to be used to authenticate with the proxy server.
 
 

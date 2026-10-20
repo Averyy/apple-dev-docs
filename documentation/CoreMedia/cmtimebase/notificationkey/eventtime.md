@@ -1,7 +1,8 @@
 # eventTime
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts by a timebase after a discontinuous time jump.
 

@@ -1,7 +1,8 @@
 # equalizeHistogram(binCount:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Equalizes the histogram of a 32-bit-per-channel, 4-channel interleaved pixel buffer.
 
@@ -11,7 +12,7 @@ Equalizes the histogram of a 32-bit-per-channel, 4-channel interleaved pixel buf
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Equalizes the histogram of a 32-bit-per-channel, 4-channel interleaved pixel buf
 ```swift
 func equalizeHistogram(binCount: Int, destination: vImage.PixelBuffer<vImage.InterleavedFx4>)
 ```
+
+Available when `Format` is `vImage.InterleavedFx4`.
 
 #### Discussion
 
@@ -58,17 +61,19 @@ let outputImage = buffer.makeCGImage(cgImageFormat: cgImageFormat)
 
 ## See Also
 
-- [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
+### Related Documentation
+- [Enhancing image contrast with histogram manipulation](../../enhancing-image-contrast-with-histogram-manipulation.md)
   Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
-- [func equalizeHistogram(destination: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/equalizehistogram(destination:)-7temg.md)
+### Equalization
+- [func equalizeHistogram(destination: vImage.PixelBuffer<vImage.Planar8>)](./equalizehistogram%28destination%29-7temg.md)
   Equalizes the histogram of an 8-bit planar pixel buffer.
-- [func equalizeHistogram(binCount: Int, destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/equalizehistogram(bincount:destination:)-5iv0q.md)
+- [func equalizeHistogram(binCount: Int, destination: vImage.PixelBuffer<vImage.PlanarF>)](./equalizehistogram%28bincount,destination%29-5iv0q.md)
   Equalizes the histogram of a 32-bit planar pixel buffer.
-- [func equalizeHistogram(destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/equalizehistogram(destination:)-2gbmf.md)
+- [func equalizeHistogram(destination: vImage.PixelBuffer<Format>)](./equalizehistogram%28destination%29-2gbmf.md)
   Equalizes the histogram of an 8-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func equalizeHistogram(destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/equalizehistogram(destination:)-939xn.md)
+- [func equalizeHistogram(destination: vImage.PixelBuffer<Format>)](./equalizehistogram%28destination%29-939xn.md)
   Equalizes the histogram of a multiple-plane 8-bit pixel buffer.
-- [func equalizeHistogram(binCount: Int, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/equalizehistogram(bincount:destination:)-59li2.md)
+- [func equalizeHistogram(binCount: Int, destination: vImage.PixelBuffer<Format>)](./equalizehistogram%28bincount,destination%29-59li2.md)
   Equalizes the histogram of a multiple-plane 32-bit pixel buffer.
 
 

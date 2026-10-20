@@ -1,7 +1,8 @@
 # clearForcesAndTorques()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all forces previously added to the physics body.
 
@@ -11,7 +12,7 @@ Clears all forces previously added to the physics body.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ Clears all forces previously added to the physics body.
 
 ## See Also
 
-- [func addForce(SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/addforce(_:relativeto:).md)
+### Adding and clearing forces
+- [func addForce(SIMD3<Float>, relativeTo: Entity?)](./addforce%28_,relativeto%29.md)
   Applies a force to the physics body at its center of mass.
-- [func addForce(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/addforce(_:at:relativeto:).md)
+- [func addForce(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](./addforce%28_,at,relativeto%29.md)
   Applies a force to the physics body at the specified position.
-- [func addTorque(SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/addtorque(_:relativeto:).md)
+- [func addTorque(SIMD3<Float>, relativeTo: Entity?)](./addtorque%28_,relativeto%29.md)
   Applies a torque to the physics body at its center of mass.
 
 

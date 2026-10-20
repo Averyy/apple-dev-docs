@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The function used to respond to action paused events.
@@ -23,6 +24,13 @@ mutating func actionPaused(event: Self.EventType)
 #### Discussion
 
 Action paused is raised when the animation is paused.
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [func actionPaused(event: Self.EventType)](./actionpaused%28event%29-4491b.md)
+  The function used to respond to action paused events.
+- [func actionPaused(event: Self.EventType)](./actionpaused%28event%29-7t4y8.md)
 
 
 ---

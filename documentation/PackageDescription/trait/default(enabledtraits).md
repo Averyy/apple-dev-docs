@@ -1,7 +1,8 @@
 # default(enabledTraits:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Declares the default traits for this package.
 

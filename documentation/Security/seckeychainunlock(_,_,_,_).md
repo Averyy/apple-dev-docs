@@ -1,12 +1,15 @@
 # SecKeychainUnlock(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unlocks a keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Unlocks a keychain.
 func SecKeychainUnlock(_ keychain: SecKeychain?, _ passwordLength: UInt32, _ password: UnsafeRawPointer?, _ usePassword: Bool) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainUnlock(SecKeychainRef keychain, UInt32 passwordLength, const void *password, Boolean usePassword);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md). The result code [`errSecUserCanceled`](errsecusercanceled.md) indicates that the user pressed the Cancel button in the Unlock Keychain dialog box. The result code [`errSecAuthFailed`](errsecauthfailed.md) indicates that authentication failed because of too many unsuccessful retries. The result code [`errSecInteractionRequired`](errsecinteractionrequired.md) indicates that user interaction is required to unlock the keychain.
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecUserCanceled`](./errsecusercanceled.md) indicates that the user pressed the Cancel button in the Unlock Keychain dialog box. The result code [`errSecAuthFailed`](./errsecauthfailed.md) indicates that authentication failed because of too many unsuccessful retries. The result code [`errSecInteractionRequired`](./errsecinteractionrequired.md) indicates that user interaction is required to unlock the keychain.
 
 #### Discussion
 
-In most cases, your application does not need to call this function directly, since most Keychain Services functions that require an unlocked keychain do so for you. If your application needs to verify that a keychain is unlocked, call the function [`SecKeychainGetStatus(_:_:)`](seckeychaingetstatus(_:_:).md).
+In most cases, your application does not need to call this function directly, since most Keychain Services functions that require an unlocked keychain do so for you. If your application needs to verify that a keychain is unlocked, call the function [`SecKeychainGetStatus(_:_:)`](./seckeychaingetstatus%28_,_%29.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile driver’s license holder’s name.
 

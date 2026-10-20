@@ -1,7 +1,8 @@
 # withUnsafeMutableBytes(of:_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Invokes the given closure with a mutable buffer pointer covering the raw bytes of the given argument.
 
@@ -35,15 +36,16 @@ The buffer pointer argument to the `body` closure provides a collection interfac
 
 ## See Also
 
-- [func withUnsafePointer<T, E, Result>(to: inout T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafepointer(to:_:)-9fjn6.md)
+### Pointers to Values
+- [func withUnsafePointer<T, E, Result>(to: inout T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](./withunsafepointer%28to,_%29-9fjn6.md)
   Invokes the given closure with a pointer to the given argument.
-- [func withUnsafePointer<T, E, Result>(to: borrowing T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafepointer(to:_:)-35wrn.md)
+- [func withUnsafePointer<T, E, Result>(to: borrowing T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](./withunsafepointer%28to,_%29-35wrn.md)
   Invokes the given closure with a pointer to the given argument.
-- [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
+- [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](./withunsafemutablepointer%28to,_%29.md)
   Calls the given closure with a mutable pointer to the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./withunsafebytes%28of,_%29-3ywhh.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5gesg.md)
+- [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./withunsafebytes%28of,_%29-5gesg.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 
 

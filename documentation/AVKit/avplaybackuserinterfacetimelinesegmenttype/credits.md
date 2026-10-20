@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.credits
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains end credits.
 
@@ -14,6 +15,10 @@ The segment contains end credits.
 
 ```swift
 case credits
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeCredits
 ```
 
 

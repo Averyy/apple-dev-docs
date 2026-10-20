@@ -1,14 +1,15 @@
 # mcache_flush_function
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 typedef kern_return_t (*mcache_flush_function)(void *service);
 ```
 

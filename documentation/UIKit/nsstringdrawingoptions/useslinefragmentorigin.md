@@ -1,7 +1,8 @@
 # usesLineFragmentOrigin
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Uses the line fragment origin instead of the baseline origin.
 
@@ -19,13 +20,18 @@ Uses the line fragment origin instead of the baseline origin.
 static var usesLineFragmentOrigin: NSStringDrawingOptions { get }
 ```
 
+```c
+NSStringDrawingUsesLineFragmentOrigin
+```
+
 ## See Also
 
-- [static var usesFontLeading: NSStringDrawingOptions](nsstringdrawingoptions/usesfontleading.md)
+### Constants
+- [static var usesFontLeading: NSStringDrawingOptions](./usesfontleading.md)
   Uses the font leading for calculating line heights.
-- [static var usesDeviceMetrics: NSStringDrawingOptions](nsstringdrawingoptions/usesdevicemetrics.md)
+- [static var usesDeviceMetrics: NSStringDrawingOptions](./usesdevicemetrics.md)
   Uses image glyph bounds instead of typographic bounds.
-- [static var truncatesLastVisibleLine: NSStringDrawingOptions](nsstringdrawingoptions/truncateslastvisibleline.md)
+- [static var truncatesLastVisibleLine: NSStringDrawingOptions](./truncateslastvisibleline.md)
   Truncates and adds the ellipsis character to the last visible line if the text doesn’t fit into the specified bounds.
 
 

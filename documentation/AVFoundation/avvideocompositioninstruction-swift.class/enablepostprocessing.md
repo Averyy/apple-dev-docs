@@ -1,7 +1,8 @@
 # enablePostProcessing
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the instruction requires post processing.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the instruction requires post processing.
 var enablePostProcessing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL enablePostProcessing;
+```
+
 #### Discussion
 
-A value of [`false`](https://developer.apple.com/documentation/swift/false) indicates that no post processing is required for the whole duration of the video composition instruction. The composition process is more efficient if the value is [`false`](https://developer.apple.com/documentation/swift/false).
+A value of [`false`](../../Swift/false.md) indicates that no post processing is required for the whole duration of the video composition instruction. The composition process is more efficient if the value is [`false`](../../Swift/false.md).
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) by default.
+The value is [`true`](../../Swift/true.md) by default.
 
 ## See Also
 
-- [var backgroundColor: CGColor?](avvideocompositioninstruction-swift.class/backgroundcolor.md)
+### Inspecting the instruction
+- [var backgroundColor: CGColor?](./backgroundcolor.md)
   The background color of the composition.
-- [var layerInstructions: [AVVideoCompositionLayerInstruction]](avvideocompositioninstruction-swift.class/layerinstructions.md)
+- [var layerInstructions: [AVVideoCompositionLayerInstruction]](./layerinstructions.md)
   Instructions that specify how to layer and compose video frames from source tracks.
-- [var timeRange: CMTimeRange](avvideocompositioninstruction-swift.class/timerange.md)
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range to which the instruction applies.
 
 

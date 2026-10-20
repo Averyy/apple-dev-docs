@@ -1,14 +1,15 @@
 # phy_read_panic
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t phy_read_panic;
 ```
 

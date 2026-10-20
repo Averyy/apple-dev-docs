@@ -1,7 +1,8 @@
 # highDynamicRangeCompression
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Two parameters that determine the brightness compression curve for colors in the texture image.
 
@@ -19,21 +20,26 @@ Two parameters that determine the brightness compression curve for colors in the
 var highDynamicRangeCompression: vector_float2 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) vector_float2 highDynamicRangeCompression;
+```
+
 #### Discussion
 
 To render a sky texture, Model I/O first simulates the colors visible in the sky at different directions and then applies tone mapping to fit the resulting colors into the range of displayable values. In tone mapping, Model I/O ignores values below the x component of this vector, clamps color values at or above the y component to the maximum display brightness, and smoothly scales color values in between those points.
 
 ## See Also
 
-- [var gamma: Float](mdlskycubetexture/gamma.md)
+### Working with Tone Mapping Parameters
+- [var gamma: Float](./gamma.md)
   The amount of gamma correction to apply during tone mapping.
-- [var exposure: Float](mdlskycubetexture/exposure.md)
+- [var exposure: Float](./exposure.md)
   The amount of exposure compensation to apply during tone mapping.
-- [var brightness: Float](mdlskycubetexture/brightness.md)
+- [var brightness: Float](./brightness.md)
   The amount of brightness enhancement to apply during tone mapping.
-- [var contrast: Float](mdlskycubetexture/contrast.md)
+- [var contrast: Float](./contrast.md)
   The amount of contrast enhancement to apply during tone mapping.
-- [var saturation: Float](mdlskycubetexture/saturation.md)
+- [var saturation: Float](./saturation.md)
   The amount of saturation enhancement to apply during tone mapping.
 
 

@@ -1,7 +1,8 @@
 # Upload Message
 
 **Framework**: Retention Messaging API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Uploads a message to use for retention messaging.
 
@@ -10,42 +11,42 @@ Uploads a message to use for retention messaging.
 
 ## Mentions
 
-- [Setting up retention messages](setting-up-retention-messages.md)
-- [Identifying rate limits](identifying-rate-limits.md)
+- [Setting up retention messages](./setting-up-retention-messages.md)
+- [Identifying rate limits](./identifying-rate-limits.md)
 
 #### Discussion
 
 Call this endpoint to upload the text for retention messages. You provide a unique `messageIdentifier` to identify each message you upload. You can optionally include an image and bullet points with the message.
 
-You define a message by providing the following strings and objects in the [`UploadMessageRequestBody`](uploadmessagerequestbody.md):
+You define a message by providing the following strings and objects in the [`UploadMessageRequestBody`](./uploadmessagerequestbody.md):
 
 - The body, which contains the main text of the message.
 - A header, which contains text to display above the message body or above the image.
-- An optional [`UploadMessageImage`](uploadmessageimage.md) that represents an image you upload with alternative text.
-- An optional array of [`BulletPoint`](bulletpoint.md) text, along with images to use as the bullet point icons.
+- An optional [`UploadMessageImage`](./uploadmessageimage.md) that represents an image you upload with alternative text.
+- An optional array of [`BulletPoint`](./bulletpoint.md) text, along with images to use as the bullet point icons.
 
 > ❗ **Important**: Only text-based retention messages can include images. If you’re uploading text for a promotional-offer message or a switch-plan message, don’t include an image.
 
-To change the position of the header text in a retention message, use [`headerPosition`](headerposition.md) to indicate whether to place the header above the message body or above the image.
+To change the position of the header text in a retention message, use [`headerPosition`](./headerposition.md) to indicate whether to place the header above the message body or above the image.
 
 Each string needs to be a UTF-8-encoded value with a maximum length as indicated below:
 
 | Field | Maximum length | Related error code |
 | --- | --- | --- |
-| [`header`](header.md) | 66 | [`HeaderTooLongError`](headertoolongerror.md) |
-| [`body`](body.md) | 144 | [`BodyTooLongError`](bodytoolongerror.md) |
-| [`altText`](alttext.md) | 150 | [`AltTextTooLongError`](alttexttoolongerror.md) |
-| [`bulletPointText`](bulletpointtext.md) | 66 | [`BadRequestBulletPointTextTooLongError`](badrequestbulletpointtexttoolongerror.md) |
+| [`header`](./header.md) | 66 | [`HeaderTooLongError`](./headertoolongerror.md) |
+| [`body`](./body.md) | 144 | [`BodyTooLongError`](./bodytoolongerror.md) |
+| [`altText`](./alttext.md) | 150 | [`AltTextTooLongError`](./alttexttoolongerror.md) |
+| [`bulletPointText`](./bulletpointtext.md) | 66 | [`BadRequestBulletPointTextTooLongError`](./badrequestbulletpointtexttoolongerror.md) |
 
-The maximum number of messages you can configure for each app is 2000. For example, you may choose to upload a message for a product identifier for each locale your app supports. The endpoint returns a `MaximumNumberOfMessagesReachedError` response if you exceed the maximum limit. Call [`Delete Message`](delete-message.md) to delete messages.
+The maximum number of messages you can configure for each app is 2000. For example, you may choose to upload a message for a product identifier for each locale your app supports. The endpoint returns a `MaximumNumberOfMessagesReachedError` response if you exceed the maximum limit. Call [`Delete Message`](./delete-message.md) to delete messages.
 
 > 💡 **Tip**: Keep a record of the message and image contents on your system.
 
-This endpoint isn’t idempotent. If you have a previously configured message with the same `messageIdentifier`, the endpoint returns [`MessageAlreadyExistsError`](messagealreadyexistserror.md).
+This endpoint isn’t idempotent. If you have a previously configured message with the same `messageIdentifier`, the endpoint returns [`MessageAlreadyExistsError`](./messagealreadyexistserror.md).
 
-##### Determine Whether a Message Is Ready to Display
+##### Determine whether a message is ready to display
 
-Immediately after you upload an message, its [`messageState`](messagestate.md) is `PENDING`. Apple checks the message, and sets the message state to `APPROVED` to indicate the system can display it in retention messaging. Call the [`Get Message List`](get-message-list.md) endpoint to check the current state of all messages. If a message includes an image, call [`Get Image List`](get-image-list.md) to check the current state of the image separately. Both the message and its image, if any, need to be in an `APPROVED` state before the system can display a message.
+Immediately after you upload an message, its [`messageState`](./messagestate.md) is `PENDING`. Apple checks the message, and sets the message state to `APPROVED` to indicate the system can display it in retention messaging. Call the [`Get Message List`](./get-message-list.md) endpoint to check the current state of all messages. If a message includes an image, call [`Get Image List`](./get-image-list.md) to check the current state of the image separately. Both the message and its image, if any, need to be in an `APPROVED` state before the system can display a message.
 
 In the sandbox testing environment, the system automatically sets message and image states to `APPROVED`.
 
@@ -55,25 +56,41 @@ In the sandbox testing environment, the system automatically sets message and im
 
 ## Parameters
 
+### Path Parameters
+
 - `messageIdentifier` (messageIdentifier) *(required)*: A UUID you provide to uniquely identify the message you upload.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `UploadMessageRequestBody`
+
 The message text to upload.
+
+## Responses
+
+- `200` OK: Request succeeded.
+- `400` Bad Request (`(BodyTooLongError | HeaderTooLongError | AltTextTooLongError | BadRequestImageSizeError | BadRequestTooManyBulletPointsError | BadRequestBulletPointTextTooLongError | BadRequestAboveImageRequiresAnImageError)`, `application/json`): The request is invalid and unacceptable.
+- `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md).
+- `403` Forbidden (`MaximumNumberOfMessagesReachedError`, `application/json`): The request is forbidden because the system reached the maximum number of uploaded messages.
+- `409` Conflict (`MessageAlreadyExistsError`, `application/json`): The message identifier already exists.
+- `429` (`RateLimitExceededError`, `application/json`): The request exceeded the rate limit. For more information, see [Identifying rate limits](./identifying-rate-limits.md).
+- `500` Internal Server Error (`GeneralInternalError`, `application/json`): Server error. Try again later.
 
 ## See Also
 
-- [Delete Message](delete-message.md)
+### Message configuration
+- [Delete Message](./delete-message.md)
   Deletes a previously uploaded message.
-- [Get Message List](get-message-list.md)
+- [Get Message List](./get-message-list.md)
   Gets the message identifier and state of all uploaded messages.
-- [object UploadMessageRequestBody](uploadmessagerequestbody.md)
+- [object UploadMessageRequestBody](./uploadmessagerequestbody.md)
   The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
-- [object UploadMessageImage](uploadmessageimage.md)
+- [object UploadMessageImage](./uploadmessageimage.md)
   The definition of an image with its alternative text.
-- [object GetMessageListResponse](getmessagelistresponse.md)
+- [object GetMessageListResponse](./getmessagelistresponse.md)
   A response that contains status information for all messages.
-- [object GetMessageListResponseItem](getmessagelistresponseitem.md)
+- [object GetMessageListResponseItem](./getmessagelistresponseitem.md)
   A message identifier and status information for a message.
 
 

@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Developer-specific custom data.
 
@@ -17,6 +18,10 @@ Developer-specific custom data.
 
 ```swift
 var userInfo: [AnyHashable : Any]? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDictionary * userInfo;
 ```
 
 

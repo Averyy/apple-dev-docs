@@ -1,7 +1,8 @@
 # borderColor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The border color for clamped texture values.
 
@@ -19,22 +20,27 @@ The border color for clamped texture values.
 var borderColor: MTLSamplerBorderColor { get set }
 ```
 
+```objc
+@property (nonatomic) MTLSamplerBorderColor borderColor;
+```
+
 #### Discussion
 
-This value is only used when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](mtlsampleraddressmode/clamptobordercolor.md).
+This value is only used when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](../mtlsampleraddressmode/clamptobordercolor.md).
 
 ## See Also
 
-- [var rAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/raddressmode.md)
+### Declaring addressing modes
+- [var rAddressMode: MTLSamplerAddressMode](./raddressmode.md)
   The address mode for the texture depth (r) coordinate.
-- [var sAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/saddressmode.md)
+- [var sAddressMode: MTLSamplerAddressMode](./saddressmode.md)
   The address mode for the texture width (s) coordinate.
-- [var tAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/taddressmode.md)
+- [var tAddressMode: MTLSamplerAddressMode](./taddressmode.md)
   The address mode for the texture height (t) coordinate.
-- [enum MTLSamplerAddressMode](mtlsampleraddressmode.md)
+- [enum MTLSamplerAddressMode](../mtlsampleraddressmode.md)
   Modes that determine the texture coordinate at each pixel when a fetch falls outside the bounds of a texture.
-- [enum MTLSamplerBorderColor](mtlsamplerbordercolor.md)
-  Values that determine the border color for clamped texture values when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](mtlsampleraddressmode/clamptobordercolor.md).
+- [enum MTLSamplerBorderColor](../mtlsamplerbordercolor.md)
+  Values that determine the border color for clamped texture values when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](../mtlsampleraddressmode/clamptobordercolor.md).
 
 
 ---

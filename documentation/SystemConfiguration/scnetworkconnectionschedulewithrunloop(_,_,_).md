@@ -1,7 +1,8 @@
 # SCNetworkConnectionScheduleWithRunLoop(_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Schedules the specified connection with the specified run loop.
 
@@ -14,9 +15,13 @@ Schedules the specified connection with the specified run loop.
 func SCNetworkConnectionScheduleWithRunLoop(_ connection: SCNetworkConnection, _ runLoop: CFRunLoop, _ runLoopMode: CFString) -> Bool
 ```
 
+```c
+Boolean SCNetworkConnectionScheduleWithRunLoop(SCNetworkConnectionRef connection, CFRunLoopRef runLoop, CFStringRef runLoopMode);
+```
+
 #### Return Value
 
-`TRUE` if the connection is scheduled successfully; `FALSE` (use the [`SCError()`](scerror().md) function to retrieve the specific error).
+`TRUE` if the connection is scheduled successfully; `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
 ## Parameters
 
@@ -26,7 +31,8 @@ func SCNetworkConnectionScheduleWithRunLoop(_ connection: SCNetworkConnection, _
 
 ## See Also
 
-- [func SCNetworkConnectionUnscheduleFromRunLoop(SCNetworkConnection, CFRunLoop, CFString) -> Bool](scnetworkconnectionunschedulefromrunloop(_:_:_:).md)
+### Scheduling a Connection Reference on a Run Loop
+- [func SCNetworkConnectionUnscheduleFromRunLoop(SCNetworkConnection, CFRunLoop, CFString) -> Bool](./scnetworkconnectionunschedulefromrunloop%28_,_,_%29.md)
   Unschedules the specified connection from the specified run loop.
 
 

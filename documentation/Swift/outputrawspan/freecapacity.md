@@ -1,7 +1,8 @@
 # freeCapacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of additional bytes that can be appended to this span.
 

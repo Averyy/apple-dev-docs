@@ -1,7 +1,8 @@
 # init(radius:inclination:azimuth:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(radius: Float, inclination: Angle2DFloat, azimuth: Angle2DFloat)
+```
+
+```c
+static SPSphericalCoordinates3DFloat SPSphericalCoordinates3DFloatMake(float radius, SPAngleFloat inclination, SPAngleFloat azimuth);
 ```
 
 #### Return Value

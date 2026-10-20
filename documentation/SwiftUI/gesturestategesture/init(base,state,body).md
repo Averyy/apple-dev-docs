@@ -1,7 +1,8 @@
 # init(base:state:body:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new gesture that’s the result of an ongoing gesture.
 
@@ -24,14 +25,15 @@ init(base: Base, state: GestureState<State>, body: @escaping (GestureStateGestur
 ## Parameters
 
 - `base`: The originating gesture.
-- `state`: The wrapped value of a [`GestureState`](gesturestate.md) property.
+- `state`: The wrapped value of a [`GestureState`](../gesturestate.md) property.
 - `body`: The callback that SwiftUI invokes as the gesture’s value changes.
 
 ## See Also
 
-- [var base: Base](gesturestategesture/base.md)
+### Creating an in-progress gesture
+- [var base: Base](./base.md)
   The originating gesture.
-- [var state: GestureState<State>](gesturestategesture/state.md)
+- [var state: GestureState<State>](./state.md)
   A value that changes as the user performs the gesture.
 
 

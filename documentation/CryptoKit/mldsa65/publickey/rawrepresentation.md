@@ -1,7 +1,8 @@
 # rawRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A serialized representation of the public key.
 

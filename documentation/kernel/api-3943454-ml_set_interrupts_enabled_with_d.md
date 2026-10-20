@@ -1,14 +1,15 @@
 # ml_set_interrupts_enabled_with_debug
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t ml_set_interrupts_enabled_with_debug(boolean_t enable, boolean_t debug);
 ```
 

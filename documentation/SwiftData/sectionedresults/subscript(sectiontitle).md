@@ -1,7 +1,8 @@
 # subscript(sectionTitle:)
 
 **Framework**: SwiftData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the section with the given title, or `nil` if no such section exists.
 
@@ -22,7 +23,7 @@ subscript(sectionTitle title: SectionTitle) -> ResultsSection<Element, SectionTi
 
 #### Overview
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

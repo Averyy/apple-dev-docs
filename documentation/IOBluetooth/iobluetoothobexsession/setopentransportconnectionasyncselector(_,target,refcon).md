@@ -1,17 +1,22 @@
 # setOpenTransportConnectionAsyncSelector(_:target:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows you to set the selector to be used when a transport connection is opened, or fails to open.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setOpenTransportConnectionAsyncSelector(_ inSelector: Selector!, target inSelectorTarget: Any!, refCon inUserRefCon: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) setOpenTransportConnectionAsyncSelector:(SEL) inSelector target:(id) inSelectorTarget refCon:(void *) inUserRefCon;
 ```
 
 #### Discussion

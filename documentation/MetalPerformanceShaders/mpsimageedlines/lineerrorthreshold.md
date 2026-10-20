@@ -1,7 +1,8 @@
 # lineErrorThreshold
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var lineErrorThreshold: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float lineErrorThreshold;
 ```
 
 

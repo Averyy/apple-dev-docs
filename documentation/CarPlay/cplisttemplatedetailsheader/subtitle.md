@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The secondary subtitle text displayed below the title.
 
@@ -14,6 +15,10 @@ The secondary subtitle text displayed below the title.
 
 ```swift
 var subtitle: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
 #### Discussion

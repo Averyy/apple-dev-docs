@@ -1,7 +1,8 @@
 # default
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Display this representation in the default style.
 
@@ -11,7 +12,7 @@ Display this representation in the default style.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

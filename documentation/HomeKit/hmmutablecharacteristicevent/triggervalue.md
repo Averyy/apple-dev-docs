@@ -1,7 +1,8 @@
 # triggerValue
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the characteristic that triggers the event.
 
@@ -20,6 +21,10 @@ The value of the characteristic that triggers the event.
 var triggerValue: TriggerValueType? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) TriggerValueType triggerValue;
+```
+
 #### Discussion
 
 Use this property to adjust the value that triggers the event.
@@ -28,7 +33,8 @@ Set this property to `nil` to trigger the event whenever the value of the charac
 
 ## See Also
 
-- [var characteristic: HMCharacteristic](hmmutablecharacteristicevent/characteristic.md)
+### Configuring the event
+- [var characteristic: HMCharacteristic](./characteristic.md)
   The characteristic associated with the event.
 
 

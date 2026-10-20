@@ -1,7 +1,8 @@
 # aeBuildSyntaxMissingQuote
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A string was not terminated by a closing quotation mark.
 

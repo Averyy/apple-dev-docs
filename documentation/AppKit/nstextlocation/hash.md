@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Must be consistent with results from `isEqual:` while also avoiding hash collisions.
@@ -13,6 +14,10 @@ Must be consistent with results from `isEqual:` while also avoiding hash collisi
 
 ```swift
 var hash: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger hash;
 ```
 
 

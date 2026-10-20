@@ -1,15 +1,20 @@
 # NSCollectionView.DecorationElementKind
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias DecorationElementKind = String
+```
+
+```c
+typedef NSString * NSCollectionViewDecorationElementKind;
 ```
 
 

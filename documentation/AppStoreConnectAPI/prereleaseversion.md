@@ -1,7 +1,8 @@
 # PrereleaseVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A pre-release version associated with a build, representing a development or beta software version before App Store submission.
 
@@ -10,16 +11,16 @@ A pre-release version associated with a build, representing a development or bet
 
 ## Declaration
 
-```swift
+```
 object PrereleaseVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object PrereleaseVersion.Attributes](prereleaseversion/attributes-data.dictionary.md)
+- [object PrereleaseVersion.Attributes](./prereleaseversion/attributes-data.dictionary.md)
   Attributes that describe a Prerelease Versions resource.
-- [object PrereleaseVersion.Relationships](prereleaseversion/relationships-data.dictionary.md)
+- [object PrereleaseVersion.Relationships](./prereleaseversion/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -30,19 +31,22 @@ object PrereleaseVersion
 - `relationships` (PrereleaseVersion.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `preReleaseVersions`
+
 ## See Also
 
-- [object PrereleaseVersionResponse](prereleaseversionresponse.md)
+### Objects
+- [object PrereleaseVersionResponse](./prereleaseversionresponse.md)
   The response body for endpoints that read a single prerelease version of an app.
-- [object PreReleaseVersionsResponse](prereleaseversionsresponse.md)
+- [object PreReleaseVersionsResponse](./prereleaseversionsresponse.md)
   A response containing a list of pre-release versions for an app.
-- [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
+- [object PrereleaseVersionWithoutIncludesResponse](./prereleaseversionwithoutincludesresponse.md)
   A response containing a single pre-release version, without related resources.
-- [object PreReleaseVersionsWithoutIncludesResponse](prereleaseversionswithoutincludesresponse.md)
+- [object PreReleaseVersionsWithoutIncludesResponse](./prereleaseversionswithoutincludesresponse.md)
   A response containing a list of pre-release versions, without related resources.
-- [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
-- [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
-- [object PrereleaseVersionBuildsLinkagesResponse](prereleaseversionbuildslinkagesresponse.md)
+- [object AppPreReleaseVersionsLinkagesResponse](./appprereleaseversionslinkagesresponse.md)
+- [object PrereleaseVersionAppLinkageResponse](./prereleaseversionapplinkageresponse.md)
+- [object PrereleaseVersionBuildsLinkagesResponse](./prereleaseversionbuildslinkagesresponse.md)
 
 
 ---

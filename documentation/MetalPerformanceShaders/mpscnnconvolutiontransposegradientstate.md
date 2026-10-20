@@ -1,7 +1,8 @@
 # MPSCNNConvolutionTransposeGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,23 +18,27 @@
 class MPSCNNConvolutionTransposeGradientState
 ```
 
+```objc
+@interface MPSCNNConvolutionTransposeGradientState : MPSCNNConvolutionGradientState
+```
+
 ## Topics
 
 ### Instance Properties
-- [var convolutionTranspose: MPSCNNConvolutionTranspose](mpscnnconvolutiontransposegradientstate/convolutiontranspose.md)
+- [var convolutionTranspose: MPSCNNConvolutionTranspose](./mpscnnconvolutiontransposegradientstate/convolutiontranspose.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
+- [MPSCNNConvolutionGradientState](./mpscnnconvolutiongradientstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSImageSizeEncodingState](./mpsimagesizeencodingstate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

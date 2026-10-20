@@ -1,7 +1,8 @@
 # mass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mass in kilograms.
 
@@ -11,7 +12,7 @@ The mass in kilograms.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ var mass: Float
 
 #### Discussion
 
-For a mass of `0` or infinity, the simulation treats the object as [`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md). That is, the object doesn’t respond to forces.
+For a mass of `0` or infinity, the simulation treats the object as [`PhysicsBodyMode.kinematic`](../physicsbodymode/kinematic.md). That is, the object doesn’t respond to forces.
 
 ## See Also
 
-- [var inertia: SIMD3<Float>](physicsmassproperties/inertia.md)
+### Getting mass properties
+- [var inertia: SIMD3<Float>](./inertia.md)
   The inertia in kilograms per square meter.
-- [var centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf)](physicsmassproperties/centerofmass.md)
+- [var centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf)](./centerofmass.md)
   The position of the center of mass and the orientation of the principal axes.
 
 

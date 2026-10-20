@@ -1,7 +1,8 @@
 # CMTimebaseGetRate(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current rate of a timebase.
 
@@ -20,17 +21,22 @@ Returns the current rate of a timebase.
 func CMTimebaseGetRate(_ timebase: CMTimebase) -> Float64
 ```
 
+```c
+extern Float64 CMTimebaseGetRate(CMTimebaseRef timebase);
+```
+
 #### Discussion
 
 This is the rate relative to its immediate host clock or timebase. For example, if a timebase is running at twice the rate of its host, its rate is 2.0.
 
 ## See Also
 
-- [func CMTimebaseGetEffectiveRate(CMTimebase) -> Float64](cmtimebasegeteffectiverate(_:).md)
+### Getting and Setting the Time Rate
+- [func CMTimebaseGetEffectiveRate(CMTimebase) -> Float64](./cmtimebasegeteffectiverate%28_%29.md)
   Returns the effective rate of a timebase, which combines its rate with the rates of all its host timebases.
-- [func CMTimebaseSetRate(CMTimebase, rate: Float64) -> OSStatus](cmtimebasesetrate(_:rate:).md)
+- [func CMTimebaseSetRate(CMTimebase, rate: Float64) -> OSStatus](./cmtimebasesetrate%28_,rate%29.md)
   Sets the rate of a timebase.
-- [func CMTimebaseSetRateAndAnchorTime(CMTimebase, rate: Float64, anchorTime: CMTime, immediateSourceTime: CMTime) -> OSStatus](cmtimebasesetrateandanchortime(_:rate:anchortime:immediatesourcetime:).md)
+- [func CMTimebaseSetRateAndAnchorTime(CMTimebase, rate: Float64, anchorTime: CMTime, immediateSourceTime: CMTime) -> OSStatus](./cmtimebasesetrateandanchortime%28_,rate,anchortime,immediatesourcetime%29.md)
   Sets the time of a timebase at a particular host time, and changes the rate at exactly that time.
 
 

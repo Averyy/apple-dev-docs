@@ -1,7 +1,8 @@
 # UVIndex.ExposureCategory
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that indicates risk of harm from unprotected sun exposure.
 
@@ -24,46 +25,47 @@ enum ExposureCategory
 ## Topics
 
 ### Enumeration Cases
-- [UVIndex.ExposureCategory.extreme](uvindex/exposurecategory/extreme.md)
+- [UVIndex.ExposureCategory.extreme](./exposurecategory/extreme.md)
   The UV index is extreme.
-- [UVIndex.ExposureCategory.high](uvindex/exposurecategory/high.md)
+- [UVIndex.ExposureCategory.high](./exposurecategory/high.md)
   The UV index is high.
-- [UVIndex.ExposureCategory.low](uvindex/exposurecategory/low.md)
+- [UVIndex.ExposureCategory.low](./exposurecategory/low.md)
   The UV index is low.
-- [UVIndex.ExposureCategory.moderate](uvindex/exposurecategory/moderate.md)
+- [UVIndex.ExposureCategory.moderate](./exposurecategory/moderate.md)
   The UV index is moderate.
-- [UVIndex.ExposureCategory.veryHigh](uvindex/exposurecategory/veryhigh.md)
+- [UVIndex.ExposureCategory.veryHigh](./exposurecategory/veryhigh.md)
   The UV index is very high.
 ### Instance Properties
-- [var accessibilityDescription: String](uvindex/exposurecategory/accessibilitydescription.md)
+- [var accessibilityDescription: String](./exposurecategory/accessibilitydescription.md)
   A localized accessibility description describing the UV Index Exposure Category.
-- [var description: String](uvindex/exposurecategory/description.md)
+- [var description: String](./exposurecategory/description.md)
   A localized string describing the risk of harm from unprotected sun exposure.
-- [var rangeValue: ClosedRange<Int>](uvindex/exposurecategory/rangevalue.md)
+- [var rangeValue: ClosedRange<Int>](./exposurecategory/rangevalue.md)
   The range of UV index values that falls into this category.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var category: UVIndex.ExposureCategory](uvindex/category.md)
+### Getting the UV index
+- [var category: UVIndex.ExposureCategory](./category.md)
   The UV Index exposure category.
-- [var value: Int](uvindex/value.md)
+- [var value: Int](./value.md)
   The UV Index value.
 
 

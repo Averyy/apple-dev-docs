@@ -1,7 +1,8 @@
 # read(length:from:completionHandler:)
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads bytes from a byte source into a data object.
 
@@ -11,7 +12,15 @@ Reads bytes from a byte source into a data object.
 ## Declaration
 
 ```swift
+func read(length: Int, from offset: Int64, completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func read(length: Int, from offset: Int64) async throws -> Data
+```
+
+```objc
+- (void) readDataOfLength:(size_t) length fromOffset:(int64_t) offset completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
 ## Parameters
@@ -22,9 +31,10 @@ func read(length: Int, from offset: Int64) async throws -> Data
 
 ## See Also
 
-- [func availableLength(at: Int64) -> Int64](mebytesource/availablelength(at:).md)
+### Performing operations on a byte source
+- [func availableLength(at: Int64) -> Int64](./availablelength%28at%29.md)
   Gets the number of available bytes from the offset within the byte source.
-- [func byteSourceForRelatedFileName(String) throws -> MEByteSource](mebytesource/bytesourceforrelatedfilename(_:).md)
+- [func byteSourceForRelatedFileName(String) throws -> MEByteSource](./bytesourceforrelatedfilename%28_%29.md)
   Creates a new byte source for a related file.
 
 

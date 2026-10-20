@@ -1,7 +1,8 @@
 # CMBufferQueue.Handlers
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,34 +22,35 @@ struct Handlers
 ## Topics
 
 ### Initializers
-- [init(withHandlers: (inout CMBufferQueue.Handlers.Builder) -> Void)](cmbufferqueue/handlers/init(withhandlers:).md)
+- [init(withHandlers: (inout CMBufferQueue.Handlers.Builder) -> Void)](./handlers/init%28withhandlers%29.md)
 ### Instance Properties
-- [let compare: CMBufferCompareHandler?](cmbufferqueue/handlers/compare.md)
-- [let dataBecameReadyNotification: String?](cmbufferqueue/handlers/databecamereadynotification.md)
-- [let getDecodeTimeStamp: CMBufferGetTimeHandler?](cmbufferqueue/handlers/getdecodetimestamp.md)
-- [let getDuration: CMBufferGetTimeHandler](cmbufferqueue/handlers/getduration.md)
-- [let getPresentationTimeStamp: CMBufferGetTimeHandler?](cmbufferqueue/handlers/getpresentationtimestamp.md)
-- [let getSize: CMBufferGetSizeHandler?](cmbufferqueue/handlers/getsize.md)
-- [let isDataReady: CMBufferGetBooleanHandler?](cmbufferqueue/handlers/isdataready.md)
+- [let compare: CMBufferCompareHandler?](./handlers/compare.md)
+- [let dataBecameReadyNotification: String?](./handlers/databecamereadynotification.md)
+- [let getDecodeTimeStamp: CMBufferGetTimeHandler?](./handlers/getdecodetimestamp.md)
+- [let getDuration: CMBufferGetTimeHandler](./handlers/getduration.md)
+- [let getPresentationTimeStamp: CMBufferGetTimeHandler?](./handlers/getpresentationtimestamp.md)
+- [let getSize: CMBufferGetSizeHandler?](./handlers/getsize.md)
+- [let isDataReady: CMBufferGetBooleanHandler?](./handlers/isdataready.md)
 ### Type Properties
-- [static let outputPTSSortedSampleBuffers: CMBufferQueue.Handlers](cmbufferqueue/handlers/outputptssortedsamplebuffers.md)
-- [static let unsortedSampleBuffers: CMBufferQueue.Handlers](cmbufferqueue/handlers/unsortedsamplebuffers.md)
+- [static let outputPTSSortedSampleBuffers: CMBufferQueue.Handlers](./handlers/outputptssortedsamplebuffers.md)
+- [static let unsortedSampleBuffers: CMBufferQueue.Handlers](./handlers/unsortedsamplebuffers.md)
 ### Instance Methods
-- [func withHandlers((inout CMBufferQueue.Handlers.Builder) -> Void) -> CMBufferQueue.Handlers](cmbufferqueue/handlers/withhandlers(_:).md)
+- [func withHandlers((inout CMBufferQueue.Handlers.Builder) -> Void) -> CMBufferQueue.Handlers](./handlers/withhandlers%28_%29.md)
 ### Structures
-- [CMBufferQueue.Handlers.Builder](cmbufferqueue/handlers/builder.md)
+- [CMBufferQueue.Handlers.Builder](./handlers/builder.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMBufferQueue.Buffers](cmbufferqueue/buffers-swift.struct.md)
+### Data Types
+- [CMBufferQueue.Buffers](./buffers-swift.struct.md)
   A sequence of `CMBuffer`s.
-- [CMBufferQueue.Error](cmbufferqueue/error.md)
+- [CMBufferQueue.Error](./error.md)
 
 
 ---

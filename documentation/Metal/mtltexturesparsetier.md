@@ -1,7 +1,8 @@
 # MTLTextureSparseTier
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumerates the different support levels for sparse textures.
 
@@ -19,39 +20,44 @@ Enumerates the different support levels for sparse textures.
 enum MTLTextureSparseTier
 ```
 
+```c
+enum MTLTextureSparseTier : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLTextureSparseTier.tier1](mtltexturesparsetier/tier1.md)
+- [MTLTextureSparseTier.tier1](./mtltexturesparsetier/tier1.md)
   Indicates support for sparse textures tier 1.
-- [MTLTextureSparseTier.tier2](mtltexturesparsetier/tier2.md)
+- [MTLTextureSparseTier.tier2](./mtltexturesparsetier/tier2.md)
   Indicates support for sparse textures tier 2.
-- [MTLTextureSparseTier.tierNone](mtltexturesparsetier/tiernone.md)
+- [MTLTextureSparseTier.tierNone](./mtltexturesparsetier/tiernone.md)
   Indicates that the texture is not sparse.
 ### Initializers
-- [init?(rawValue: Int)](mtltexturesparsetier/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtltexturesparsetier/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MTLBufferSparseTier](mtlbuffersparsetier.md)
+### Sparse resources
+- [enum MTLBufferSparseTier](./mtlbuffersparsetier.md)
   Enumerates the different support levels for sparse buffers.
-- [struct MTL4CopySparseBufferMappingOperation](mtl4copysparsebuffermappingoperation.md)
+- [struct MTL4CopySparseBufferMappingOperation](./mtl4copysparsebuffermappingoperation.md)
   Groups together arguments for an operation to copy a sparse buffer mapping.
-- [struct MTL4UpdateSparseBufferMappingOperation](mtl4updatesparsebuffermappingoperation.md)
+- [struct MTL4UpdateSparseBufferMappingOperation](./mtl4updatesparsebuffermappingoperation.md)
   Groups together arguments for an operation to update a sparse buffer mapping.
-- [struct MTL4CopySparseTextureMappingOperation](mtl4copysparsetexturemappingoperation.md)
+- [struct MTL4CopySparseTextureMappingOperation](./mtl4copysparsetexturemappingoperation.md)
   Groups together arguments for an operation to copy a sparse texture mapping.
-- [struct MTL4UpdateSparseTextureMappingOperation](mtl4updatesparsetexturemappingoperation.md)
+- [struct MTL4UpdateSparseTextureMappingOperation](./mtl4updatesparsetexturemappingoperation.md)
   Groups together arguments for an operation to update a sparse texture mapping.
 
 

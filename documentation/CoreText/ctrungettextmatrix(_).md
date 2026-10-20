@@ -1,7 +1,8 @@
 # CTRunGetTextMatrix(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the text matrix needed to draw this run.
 
@@ -20,13 +21,17 @@ Returns the text matrix needed to draw this run.
 func CTRunGetTextMatrix(_ run: CTRun) -> CGAffineTransform
 ```
 
+```c
+extern CGAffineTransform CTRunGetTextMatrix(CTRunRef run);
+```
+
 #### Return Value
 
-A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) structure.
+A [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) structure.
 
 #### Discussion
 
-To properly draw the glyphs in a run, the fields `tx` and `ty` of the [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) returned by this function should be set to the current text position.
+To properly draw the glyphs in a run, the fields `tx` and `ty` of the [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) returned by this function should be set to the current text position.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ To properly draw the glyphs in a run, the fields `tx` and `ty` of the [`CGAffine
 
 ## See Also
 
-- [func CTRunDraw(CTRun, CGContext, CFRange)](ctrundraw(_:_:_:).md)
+### Drawing the Glyph Run
+- [func CTRunDraw(CTRun, CGContext, CFRange)](./ctrundraw%28_,_,_%29.md)
   Draws a complete run or part of one.
 
 

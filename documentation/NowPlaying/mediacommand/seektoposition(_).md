@@ -1,7 +1,8 @@
 # seekToPosition(_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a command that seeks to a specific position in the media.
 
@@ -26,9 +27,10 @@ static func seekToPosition(_ action: @escaping (TimeInterval) async throws -> Vo
 
 ## See Also
 
-- [static func seekForward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](mediacommand/seekforward(beginaction:endaction:).md)
+### Seeking
+- [static func seekForward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](./seekforward%28beginaction,endaction%29.md)
   Creates a command that fast-forwards through the media.
-- [static func seekBackward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](mediacommand/seekbackward(beginaction:endaction:).md)
+- [static func seekBackward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](./seekbackward%28beginaction,endaction%29.md)
   Creates a command that rewinds through the media.
 
 

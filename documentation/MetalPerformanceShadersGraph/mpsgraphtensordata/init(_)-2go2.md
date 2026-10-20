@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a tensor data with an MPS matrix.
 
@@ -17,6 +18,10 @@ Initializes a tensor data with an MPS matrix.
 
 ```swift
 init(_ matrix: MPSMatrix)
+```
+
+```objc
+- (instancetype) initWithMPSMatrix:(MPSMatrix *) matrix;
 ```
 
 #### Return Value

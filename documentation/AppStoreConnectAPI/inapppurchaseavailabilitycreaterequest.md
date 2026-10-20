@@ -1,7 +1,8 @@
 # InAppPurchaseAvailabilityCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase availability.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase availability.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAvailabilityCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAvailabilityCreateRequest.Data](inapppurchaseavailabilitycreaterequest/data-data.dictionary.md)
+- [object InAppPurchaseAvailabilityCreateRequest.Data](./inapppurchaseavailabilitycreaterequest/data-data.dictionary.md)
   The request body you use to create an In-App Purchase availability.
 
 ## Properties
@@ -26,11 +27,12 @@ object InAppPurchaseAvailabilityCreateRequest
 
 ## See Also
 
-- [object InAppPurchaseAvailability](inapppurchaseavailability.md)
+### Objects
+- [object InAppPurchaseAvailability](./inapppurchaseavailability.md)
   The territory availability configuration for an In-App Purchase, specifying which App Store regions it’s offered in.
-- [object InAppPurchaseAvailabilityResponse](inapppurchaseavailabilityresponse.md)
+- [object InAppPurchaseAvailabilityResponse](./inapppurchaseavailabilityresponse.md)
   A response containing a single territory availability configuration for an In-App Purchase.
-- [object InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse](inapppurchaseavailabilityavailableterritorieslinkagesresponse.md)
+- [object InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse](./inapppurchaseavailabilityavailableterritorieslinkagesresponse.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # lz4_hash_table_size
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 const size_t lz4_hash_table_size;
 ```
 

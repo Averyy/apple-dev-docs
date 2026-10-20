@@ -1,12 +1,13 @@
 # cancelButtonCell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button cell used to display the cancel-button image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The button cell used to display the cancel-button image.
 var cancelButtonCell: NSButtonCell? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSButtonCell * cancelButtonCell;
+```
+
 ## See Also
 
-- [var searchButtonCell: NSButtonCell?](nssearchfieldcell/searchbuttoncell.md)
+### Managing buttons
+- [var searchButtonCell: NSButtonCell?](./searchbuttoncell.md)
   The button cell used to display the search-button image.
-- [func resetSearchButtonCell()](nssearchfieldcell/resetsearchbuttoncell.md)
+- [func resetSearchButtonCell()](./resetsearchbuttoncell%28%29.md)
   Resets the search button cell to its default attributes.
-- [func resetCancelButtonCell()](nssearchfieldcell/resetcancelbuttoncell.md)
+- [func resetCancelButtonCell()](./resetcancelbuttoncell%28%29.md)
   Resets the cancel button cell to its default attributes.
 
 

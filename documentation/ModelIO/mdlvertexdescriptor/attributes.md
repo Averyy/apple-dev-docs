@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of vertex attributes described by the vertex descriptor.
 
@@ -19,19 +20,24 @@ The list of vertex attributes described by the vertex descriptor.
 var attributes: NSMutableArray { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSMutableArray<MDLVertexAttribute *> * attributes;
+```
+
 #### Discussion
 
-A [`MDLVertexAttribute`](mdlvertexattribute.md) object describes the data for one semantic attribute of a vertex, such as position, normal, color, or texture coordinates. Each object names the semantic attribute it is used for, and describes the format of the data for that attribute and its location in the vertex buffers of a [`MDLMesh`](mdlmesh.md) object.
+A [`MDLVertexAttribute`](../mdlvertexattribute.md) object describes the data for one semantic attribute of a vertex, such as position, normal, color, or texture coordinates. Each object names the semantic attribute it is used for, and describes the format of the data for that attribute and its location in the vertex buffers of a [`MDLMesh`](../mdlmesh.md) object.
 
-The order of objects in this array reflects the order of vertex attribute data in the vertex buffer(s) of the mesh described by this vertex descriptor. For example, if this array contains a vertex attribute whose name is [`MDLVertexAttributePosition`](mdlvertexattributeposition.md), followed by an attribute named [`MDLVertexAttributeNormal`](mdlvertexattributenormal.md), followed by an attribute named [`MDLVertexAttributeTextureCoordinate`](mdlvertexattributetexturecoordinate.md), and the mesh contains a single vertex buffer, each entry in that vertex buffer consists of position data, then normal data, then texture coordinate data.
+The order of objects in this array reflects the order of vertex attribute data in the vertex buffer(s) of the mesh described by this vertex descriptor. For example, if this array contains a vertex attribute whose name is [`MDLVertexAttributePosition`](../mdlvertexattributeposition.md), followed by an attribute named [`MDLVertexAttributeNormal`](../mdlvertexattributenormal.md), followed by an attribute named [`MDLVertexAttributeTextureCoordinate`](../mdlvertexattributetexturecoordinate.md), and the mesh contains a single vertex buffer, each entry in that vertex buffer consists of position data, then normal data, then texture coordinate data.
 
 ## See Also
 
-- [func attributeNamed(String) -> MDLVertexAttribute?](mdlvertexdescriptor/attributenamed(_:).md)
+### Working with Vertex Attributes
+- [func attributeNamed(String) -> MDLVertexAttribute?](./attributenamed%28_%29.md)
   Returns the vertex attribute with the specified name in the vertex descriptor.
-- [func addOrReplaceAttribute(MDLVertexAttribute)](mdlvertexdescriptor/addorreplaceattribute(_:).md)
+- [func addOrReplaceAttribute(MDLVertexAttribute)](./addorreplaceattribute%28_%29.md)
   Adds the specified vertex attribute to the vertex descriptor, replacing any existing attribute with the same name.
-- [func setPackedOffsets()](mdlvertexdescriptor/setpackedoffsets.md)
+- [func setPackedOffsets()](./setpackedoffsets%28%29.md)
   Sets the offset for each vertex attribute to the minimum value to pack vertex data together in a single buffer.
 
 

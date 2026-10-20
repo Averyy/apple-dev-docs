@@ -1,7 +1,8 @@
 # inputChannelLayout
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel layout of the mixer’s input audio.
 
@@ -17,6 +18,10 @@ The channel layout of the mixer’s input audio.
 
 ```swift
 var inputChannelLayout: AVAudioChannelLayout { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) AVAudioChannelLayout * inputChannelLayout;
 ```
 
 

@@ -1,7 +1,8 @@
 # privateCloudDatabase
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The database containing the user’s private data.
 
@@ -10,17 +11,18 @@ The database containing the user’s private data.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.Database privateCloudDatabase;
 ```
 
 ## See Also
 
-- [publicCloudDatabase](cloudkit.container/publicclouddatabase.md)
+### Getting the Public and Private Databases
+- [publicCloudDatabase](./publicclouddatabase.md)
   The database containing the data shared by all users.
-- [sharedCloudDatabase](cloudkit.container/sharedclouddatabase.md)
+- [sharedCloudDatabase](./sharedclouddatabase.md)
   The database containing shared records accepted by the current user.
-- [getDatabaseWithDatabaseScope](cloudkit.container/getdatabasewithdatabasescope.md)
+- [getDatabaseWithDatabaseScope](./getdatabasewithdatabasescope.md)
   Returns the specified (public, private, or shared) database.
 
 

@@ -1,18 +1,19 @@
 # rightToLeft
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The run proceeds from right to left.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The run proceeds from right to left.
 static var rightToLeft: CTRunStatus { get }
 ```
 
+```c
+kCTRunStatusRightToLeft
+```
+
 ## See Also
 
-- [static var nonMonotonic: CTRunStatus](ctrunstatus/nonmonotonic.md)
+### Constants
+- [static var nonMonotonic: CTRunStatus](./nonmonotonic.md)
   The run isn’t in strictly increasing or decreasing order.
-- [static var hasNonIdentityMatrix: CTRunStatus](ctrunstatus/hasnonidentitymatrix.md)
+- [static var hasNonIdentityMatrix: CTRunStatus](./hasnonidentitymatrix.md)
   The run requires a specific text matrix to be set in the current Core Graphics context for proper drawing.
 
 

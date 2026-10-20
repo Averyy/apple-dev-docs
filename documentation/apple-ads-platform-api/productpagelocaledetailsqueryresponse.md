@@ -1,7 +1,8 @@
 # ProductPageLocaleDetailsQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Paginated response object for the product page locale details query.
 
@@ -10,13 +11,13 @@ Paginated response object for the product page locale details query.
 
 ## Declaration
 
-```swift
+```
 object ProductPageLocaleDetailsQueryResponse
 ```
 
 #### Discussion
 
-The `ProductPageLocaleDetailsQueryResponse` object is the top-level envelope returned by [`Query Product Page Locale Details`](query-product-page-locale-details.md). The `pagination` object describes the current page position.
+The `ProductPageLocaleDetailsQueryResponse` object is the top-level envelope returned by [`Query Product Page Locale Details`](./query-product-page-locale-details.md). The `pagination` object describes the current page position.
 
 ##### Example
 
@@ -61,21 +62,21 @@ The `ProductPageLocaleDetailsQueryResponse` object is the top-level envelope ret
 
 ## Properties
 
-- `result` ([ProductPageLocaleDetails]): Array of product page locale details objects, one per product page and locale combination. See [`ProductPageLocaleDetails`](productpagelocaledetails.md). Read-only.
+- `result` ([ProductPageLocaleDetails]): Array of product page locale details objects, one per product page and locale combination. See [`ProductPageLocaleDetails`](./productpagelocaledetails.md). Read-only.
 - `pagination` (QueryPaginationResult): Pagination metadata for the result set, including `pageSize` (number of results per page), `offset` (zero-based offset of the first result), and `totalCount` (total number of matching records, only populated when the request sends `fetchTotalCount: true`). Read-only.
-- `error` (Error): Error details if the request failed. Omitted entirely on success. See [`Error`](error.md). Read-only.
+- `error` (Error): Error details if the request failed. Omitted entirely on success. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object ProductPageDetails](productpagedetails.md)
+- [object ProductPageDetails](./productpagedetails.md)
   Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
-- [object ProductPageDetailsResponse](productpagedetailsresponse.md)
+- [object ProductPageDetailsResponse](./productpagedetailsresponse.md)
   Response object for a single product page retrieval.
-- [object ProductPageDetailsQueryResponse](productpagedetailsqueryresponse.md)
+- [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
-- [object ProductPageLocaleDetails](productpagelocaledetails.md)
+- [object ProductPageLocaleDetails](./productpagelocaledetails.md)
   Locale-specific metadata for an App Store product page.
-- [object DeviceAssetGroup](deviceassetgroup.md)
+- [object DeviceAssetGroup](./deviceassetgroup.md)
   Represents assets organized by device type with fallback device information.
 
 

@@ -1,7 +1,8 @@
 # GameCenterPlayerAchievementSubmission
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A batch operation submitting achievement completions for a specific player in Game Center.
 
@@ -10,14 +11,14 @@ A batch operation submitting achievement completions for a specific player in Ga
 
 ## Declaration
 
-```swift
+```
 object GameCenterPlayerAchievementSubmission
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterPlayerAchievementSubmission.Attributes](gamecenterplayerachievementsubmission/attributes-data.dictionary.md)
+- [object GameCenterPlayerAchievementSubmission.Attributes](./gamecenterplayerachievementsubmission/attributes-data.dictionary.md)
   Attributes that describe a player resource.
 
 ## Properties
@@ -25,13 +26,14 @@ object GameCenterPlayerAchievementSubmission
 - `attributes` (GameCenterPlayerAchievementSubmission.Attributes)
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterPlayerAchievementSubmissions`
 
 ## See Also
 
-- [object GameCenterPlayerAchievementSubmissionCreateRequest](gamecenterplayerachievementsubmissioncreaterequest.md)
+### Objects
+- [object GameCenterPlayerAchievementSubmissionCreateRequest](./gamecenterplayerachievementsubmissioncreaterequest.md)
   The request body you use to create a Game Center player achievement.
-- [object GameCenterPlayerAchievementSubmissionResponse](gamecenterplayerachievementsubmissionresponse.md)
+- [object GameCenterPlayerAchievementSubmissionResponse](./gamecenterplayerachievementsubmissionresponse.md)
   A response confirming a Game Center player achievement submission was processed.
 
 

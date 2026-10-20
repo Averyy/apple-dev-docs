@@ -1,7 +1,8 @@
 # temperature
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The white balance color correlated temperature in kelvin.
 
@@ -17,9 +18,14 @@ The white balance color correlated temperature in kelvin.
 var temperature: Float
 ```
 
+```c
+float temperature;
+```
+
 ## See Also
 
-- [var tint: Float](avcapturedevice/whitebalancetemperatureandtintvalues/tint.md)
+### Inspecting the values
+- [var tint: Float](./tint.md)
   The white balance tint value in the range of `-150.0` through `+150.0`.
 
 

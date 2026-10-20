@@ -1,7 +1,8 @@
 # isTranslating
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether to start or stop translation.
 
@@ -17,9 +18,10 @@ final let isTranslating: Bool
 
 ## See Also
 
-- [let localLanguage: Locale.Language](settranslatingaction/locallanguage.md)
+### Accessing action attributes
+- [let localLanguage: Locale.Language](./locallanguage.md)
   The local participant’s language.
-- [let remoteLanguage: Locale.Language](settranslatingaction/remotelanguage.md)
+- [let remoteLanguage: Locale.Language](./remotelanguage.md)
   The remote participant’s language.
 
 

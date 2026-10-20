@@ -1,7 +1,8 @@
 # roundedBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A built-in selection style that draws a rounded rectangle as the background of the scrubber item.
 
@@ -14,9 +15,14 @@ A built-in selection style that draws a rounded rectangle as the background of t
 class var roundedBackground: NSScrubberSelectionStyle { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSScrubberSelectionStyle * roundedBackgroundStyle;
+```
+
 ## See Also
 
-- [class var outlineOverlay: NSScrubberSelectionStyle](nsscrubberselectionstyle/outlineoverlay.md)
+### Using built-in styles
+- [class var outlineOverlay: NSScrubberSelectionStyle](./outlineoverlay.md)
   A built-in selection style that draws the outline of the scrubber item.
 
 

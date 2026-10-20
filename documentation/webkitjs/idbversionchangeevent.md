@@ -1,7 +1,8 @@
 # IDBVersionChangeEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBVersionChangeEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [newVersion](idbversionchangeevent/1630615-newversion.md)
-- [oldVersion](idbversionchangeevent/1633345-oldversion.md)
+- [newVersion](./idbversionchangeevent/api-1630615-newversion.md)
+- [oldVersion](./idbversionchangeevent/api-1633345-oldversion.md)
 
 ## Relationships
 

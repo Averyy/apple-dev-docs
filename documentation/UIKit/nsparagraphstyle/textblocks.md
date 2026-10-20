@@ -1,7 +1,8 @@
 # textBlocks
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text blocks that contain the paragraph, nested from outermost to innermost.
 
@@ -19,13 +20,18 @@ The text blocks that contain the paragraph, nested from outermost to innermost.
 var textBlocks: [NSTextBlock] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<__kindof NSTextBlock *> * textBlocks;
+```
+
 ## Mentions
 
-- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+- [Adding tables to attributed strings in UIKit](../adding-tables-to-attributed-strings.md)
 
 ## See Also
 
-- [var textLists: [NSTextList]](nsparagraphstyle/textlists.md)
+### Getting text block and list information
+- [var textLists: [NSTextList]](./textlists.md)
   The text lists that contain the paragraph.
 
 

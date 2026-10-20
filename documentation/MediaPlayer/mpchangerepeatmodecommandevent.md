@@ -1,7 +1,8 @@
 # MPChangeRepeatModeCommandEvent
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event requesting a change in the repeat mode.
 
@@ -20,43 +21,48 @@ An event requesting a change in the repeat mode.
 class MPChangeRepeatModeCommandEvent
 ```
 
+```objc
+@interface MPChangeRepeatModeCommandEvent : MPRemoteCommandEvent
+```
+
 ## Topics
 
 ### Changing the repeat type
-- [var repeatType: MPRepeatType](mpchangerepeatmodecommandevent/repeattype.md)
+- [var repeatType: MPRepeatType](./mpchangerepeatmodecommandevent/repeattype.md)
   The repeat type used when fulfilling the event request.
-- [var preservesRepeatMode: Bool](mpchangerepeatmodecommandevent/preservesrepeatmode.md)
+- [var preservesRepeatMode: Bool](./mpchangerepeatmodecommandevent/preservesrepeatmode.md)
   A Boolean value that indicates whether the chosen repeat mode is preserved between playback sessions.
 
 ## Relationships
 
 ### Inherits From
-- [MPRemoteCommandEvent](mpremotecommandevent.md)
+- [MPRemoteCommandEvent](./mpremotecommandevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPChangePlaybackRateCommand](mpchangeplaybackratecommand.md)
+### Responding to changes to media playback mode events
+- [class MPChangePlaybackRateCommand](./mpchangeplaybackratecommand.md)
   An object that responds to requests to change the playback rate of the playing item.
-- [class MPChangePlaybackRateCommandEvent](mpchangeplaybackratecommandevent.md)
+- [class MPChangePlaybackRateCommandEvent](./mpchangeplaybackratecommandevent.md)
   An event requesting a change in the playback rate.
-- [class MPChangeLanguageOptionCommandEvent](mpchangelanguageoptioncommandevent.md)
+- [class MPChangeLanguageOptionCommandEvent](./mpchangelanguageoptioncommandevent.md)
   An event requesting a change in the language option.
-- [class MPChangeRepeatModeCommand](mpchangerepeatmodecommand.md)
+- [class MPChangeRepeatModeCommand](./mpchangerepeatmodecommand.md)
   An object that responds to requests to change the current repeat mode used during playback.
-- [class MPChangeShuffleModeCommand](mpchangeshufflemodecommand.md)
+- [class MPChangeShuffleModeCommand](./mpchangeshufflemodecommand.md)
   An object that responds to requests to change the current shuffle mode used during playback.
-- [class MPChangeShuffleModeCommandEvent](mpchangeshufflemodecommandevent.md)
+- [class MPChangeShuffleModeCommandEvent](./mpchangeshufflemodecommandevent.md)
   An event requesting a change in the shuffle mode.
-- [enum MPRepeatType](mprepeattype.md)
+- [enum MPRepeatType](./mprepeattype.md)
   Indicates which items to play repeatedly.
-- [enum MPShuffleType](mpshuffletype.md)
+- [enum MPShuffleType](./mpshuffletype.md)
   Indicates which item types to shuffle.
 
 

@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.AnchoringStrategy
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The center of a head-tracked spatial experience.
 
@@ -21,22 +22,22 @@ For mono sounds, this defines the sound’s single location. For multi-channel s
 ## Topics
 
 ### Enumeration Cases
-- [SpatialAudioExperiences.AnchoringStrategy.automatic](spatialaudioexperiences/anchoringstrategy/automatic.md)
+- [SpatialAudioExperiences.AnchoringStrategy.automatic](./anchoringstrategy/automatic.md)
   A system-defined anchoring strategy.
-- [SpatialAudioExperiences.AnchoringStrategy.front](spatialaudioexperiences/anchoringstrategy/front.md)
+- [SpatialAudioExperiences.AnchoringStrategy.front](./anchoringstrategy/front.md)
   Anchor to the front of the user’s space.
-- [SpatialAudioExperiences.AnchoringStrategy.scene(identifier:)](spatialaudioexperiences/anchoringstrategy/scene(identifier:).md)
+- [SpatialAudioExperiences.AnchoringStrategy.scene(identifier:)](./anchoringstrategy/scene%28identifier%29.md)
   Anchor to the visual center of a particular UIScene.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

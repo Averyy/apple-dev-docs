@@ -1,14 +1,15 @@
 # CursorRemoveProc
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*CursorRemoveProc)(IOFramebuffer *inst, void *shmem, volatile unsigned char *vramPtr, unsigned int vramRow, int width, int height);
 ```
 

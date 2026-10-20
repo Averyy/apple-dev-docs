@@ -1,7 +1,8 @@
 # set()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the pressure configuration of the trackpad to the initialized pressure configuration.
 
@@ -14,6 +15,10 @@ Changes the pressure configuration of the trackpad to the initialized pressure c
 func set()
 ```
 
+```objc
+- (void) set;
+```
+
 #### Discussion
 
 During a mouse drag or pressure event sequence, this method may be called to change the pressure configuration of the trackpad to the initialized pressure configuration. The trackpad’s pressure configuration is automatically reset when the user releases the mouse or ends the gesture. If called outside of a mouse drag or pressure event sequence, this method has no effect on the trackpad.
@@ -22,9 +27,11 @@ Ideally, pressure behavior should be configured by adjusting the `pressureConfig
 
 ## See Also
 
-- [class NSView](nsview.md)
+### Related Documentation
+- [class NSView](../nsview.md)
   The infrastructure for drawing, printing, and handling events in an app.
-- [init(pressureBehavior: NSEvent.PressureBehavior)](nspressureconfiguration/init(pressurebehavior:).md)
+### Creating a Pressure Configuration Object
+- [init(pressureBehavior: NSEvent.PressureBehavior)](./init%28pressurebehavior%29.md)
   Initializes a pressure configuration object with a specified pressure behavior.
 
 

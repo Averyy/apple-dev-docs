@@ -1,24 +1,25 @@
 # BundledParallelTaskCompletion
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to the system that the extension completed a bundled asynchronous request.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void BundledParallelTaskCompletion(OSAction *action, const uint16_t parallelResponseSlotIndices[32], uint16_t parallelResponseSlotIndicesCount);
 ```
 
 #### Discussion
 
-Use this method to complete one or more requests previously received by the [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) method. For each request to complete:
+Use this method to complete one or more requests previously received by the [`UserProcessBundledParallelTasks`](./userprocessbundledparalleltasks.md) method. For each request to complete:
 
-1. Populate a [`SCSIUserParallelResponse`](scsiuserparallelresponse.md).
+1. Populate a [`SCSIUserParallelResponse`](../scsiuserparallelresponse.md).
 2. Make the response available in the shared response buffers.
 3. Pass the response buffer slot in `parallelResponseSlotIndices`.
 
@@ -26,17 +27,18 @@ The command and response buffers have a one-to-one mapping; use the same slot nu
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the asynchronous request that the system specifies in a [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) call.
-- `parallelResponseSlotIndices`: The indices of the shared response buffer slots containing a [`SCSIUserParallelResponse`](scsiuserparallelresponse.md) for each task to complete.
+- `action`: A pointer to the [`OSAction`](../../DriverKit/osaction.md) object of the asynchronous request that the system specifies in a [`UserProcessBundledParallelTasks`](./userprocessbundledparalleltasks.md) call.
+- `parallelResponseSlotIndices`: The indices of the shared response buffer slots containing a [`SCSIUserParallelResponse`](../scsiuserparallelresponse.md) for each task to complete.
 - `parallelResponseSlotIndicesCount`: The number of tasks to complete. Ensure that entries from zero to `(parallelResponseSlotIndicesCount - 1)` have valid indicies.
 
 ## See Also
 
-- [UserProcessBundledParallelTasks](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md)
+### Managing bundled parallel tasks
+- [UserProcessBundledParallelTasks](./userprocessbundledparalleltasks.md)
   Processes one or more parallel tasks in response to a call from the framework.
-- [UserMapBundledParallelTaskCommandAndResponseBuffers](iouserscsiparallelinterfacecontroller/usermapbundledparalleltaskcommandandresponsebuffers.md)
+- [UserMapBundledParallelTaskCommandAndResponseBuffers](./usermapbundledparalleltaskcommandandresponsebuffers.md)
   Maps the shared command and response buffers in the dext address space in response to a call from the framework.
-- [kMaxBundledParallelTasks](kmaxbundledparalleltasks.md)
+- [kMaxBundledParallelTasks](../kmaxbundledparalleltasks.md)
 
 
 ---

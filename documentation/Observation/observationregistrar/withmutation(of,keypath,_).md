@@ -1,7 +1,8 @@
 # withMutation(of:keyPath:_:)
 
 **Framework**: Observation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Identifies mutations to the transactions registered for observers.
 
@@ -22,7 +23,7 @@ func withMutation<Subject, Member, T>(of subject: Subject, keyPath: KeyPath<Subj
 
 #### Discussion
 
-This method calls [`willSet(_:keyPath:)`](observationregistrar/willset(_:keypath:).md) before the mutation. Then it calls [`didSet(_:keyPath:)`](observationregistrar/didset(_:keypath:).md) after the mutation.
+This method calls [`willSet(_:keyPath:)`](./willset%28_,keypath%29.md) before the mutation. Then it calls [`didSet(_:keyPath:)`](./didset%28_,keypath%29.md) after the mutation.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ This method calls [`willSet(_:keyPath:)`](observationregistrar/willset(_:keypath
 
 ## See Also
 
-- [func access<Subject, Member>(Subject, keyPath: KeyPath<Subject, Member>)](observationregistrar/access(_:keypath:).md)
+### Identifying transactional access
+- [func access<Subject, Member>(Subject, keyPath: KeyPath<Subject, Member>)](./access%28_,keypath%29.md)
   Registers access to a specific property for observation.
 
 

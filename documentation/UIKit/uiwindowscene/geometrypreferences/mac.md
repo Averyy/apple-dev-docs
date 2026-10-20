@@ -1,16 +1,17 @@
 # UIWindowScene.GeometryPreferences.Mac
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 - Mac Catalyst 16.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,53 +19,59 @@ An object that represents the geometry preferences for a window scene in an app 
 class Mac
 ```
 
+```objc
+@interface UIWindowSceneGeometryPreferencesMac : UIWindowSceneGeometryPreferences
+```
+
 #### Overview
 
-Use this class to express macOS-specific geometry preferences when you call [`requestGeometryUpdate(_:errorHandler:)`](uiwindowscene/requestgeometryupdate(_:errorhandler:).md).
+Use this class to express macOS-specific geometry preferences when you call [`requestGeometryUpdate(_:errorHandler:)`](../requestgeometryupdate%28_,errorhandler%29.md).
 
 ## Topics
 
 ### Creating a geometry preferences object
-- [convenience init(systemFrame: CGRect)](uiwindowscene/geometrypreferences/mac/init(systemframe:).md)
+- [convenience init(systemFrame: CGRect)](./mac/init%28systemframe%29.md)
   Initializes a new window scene geometry preferences object with the specified window frame.
-- [init()](uiwindowscene/geometrypreferences/mac/init.md)
+- [init()](./mac/init%28%29.md)
   Initializes a new window scene geometry preferences object.
 ### Accessing geometry information
-- [var systemFrame: CGRect?](uiwindowscene/geometrypreferences/mac/systemframe.md)
+- [var systemFrame: CGRect?](./mac/systemframe.md)
   The preferred frame of the scene, in system coordinates.
 
 ## Relationships
 
 ### Inherits From
-- [UIWindowScene.GeometryPreferences](uiwindowscene/geometrypreferences.md)
+- [UIWindowScene.GeometryPreferences](../geometrypreferences.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var effectiveGeometry: UIWindowScene.Geometry](uiwindowscene/effectivegeometry.md)
+### Related Documentation
+- [var effectiveGeometry: UIWindowScene.Geometry](../effectivegeometry.md)
   The current values for the window scene’s geometry in system space.
-- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](uiwindowscene/requestgeometryupdate(_:errorhandler:).md)
+- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](../requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
-- [var effectiveGeometry: UIWindowScene.Geometry](uiwindowscene/effectivegeometry.md)
+### Working with window geometry
+- [var effectiveGeometry: UIWindowScene.Geometry](../effectivegeometry.md)
   The current values for the window scene’s geometry in system space.
-- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](uiwindowscene/requestgeometryupdate(_:errorhandler:).md)
+- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](../requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
-- [UIWindowScene.Geometry](uiwindowscene/geometry.md)
+- [UIWindowScene.Geometry](../geometry.md)
   An object that provides geometry information about the window scene.
-- [UIWindowScene.GeometryPreferences](uiwindowscene/geometrypreferences.md)
+- [UIWindowScene.GeometryPreferences](../geometrypreferences.md)
   An abstract superclass for representing window scene geometry preferences.
-- [UIWindowScene.GeometryPreferences.iOS](uiwindowscene/geometrypreferences/ios.md)
+- [UIWindowScene.GeometryPreferences.iOS](./ios.md)
   An object that represents the geometry preferences for a window scene in an iOS app.
-- [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
-- [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+- [UIWindowScene.GeometryPreferences.Vision](./vision.md)
+- [let UIProposedSceneSizeNoPreference: CGFloat](../../uiproposedscenesizenopreference.md)
   Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 

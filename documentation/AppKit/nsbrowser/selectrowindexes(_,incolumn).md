@@ -1,7 +1,8 @@
 # selectRowIndexes(_:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the selected rows in a given column of the browser.
 
@@ -14,6 +15,10 @@ Specifies the selected rows in a given column of the browser.
 func selectRowIndexes(_ indexes: IndexSet, inColumn column: Int)
 ```
 
+```objc
+- (void) selectRowIndexes:(NSIndexSet *) indexes inColumn:(NSInteger) column;
+```
+
 ## Parameters
 
 - `indexes`: Rows to be selected in column `columnIndex`.
@@ -21,15 +26,16 @@ func selectRowIndexes(_ indexes: IndexSet, inColumn column: Int)
 
 ## See Also
 
-- [var allowsBranchSelection: Bool](nsbrowser/allowsbranchselection.md)
+### Managing Selection Behavior
+- [var allowsBranchSelection: Bool](./allowsbranchselection.md)
   A Boolean that indicates whether the user can select branch items.
-- [var allowsEmptySelection: Bool](nsbrowser/allowsemptyselection.md)
+- [var allowsEmptySelection: Bool](./allowsemptyselection.md)
   A Boolean that indicates whether there can be nothing selected.
-- [var allowsMultipleSelection: Bool](nsbrowser/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean that indicates whether the user can select multiple items.
-- [func selectedRowIndexes(inColumn: Int) -> IndexSet?](nsbrowser/selectedrowindexes(incolumn:).md)
+- [func selectedRowIndexes(inColumn: Int) -> IndexSet?](./selectedrowindexes%28incolumn%29.md)
   Provides the indexes of the selected rows in a given column of the browser.
-- [var allowsTypeSelect: Bool](nsbrowser/allowstypeselect.md)
+- [var allowsTypeSelect: Bool](./allowstypeselect.md)
   A Boolean that indicates whether the browser allows keystroke-based selection (type select).
 
 

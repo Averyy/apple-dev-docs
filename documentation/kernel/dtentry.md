@@ -1,20 +1,22 @@
 # DTEntry
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef const struct OpaqueDTEntry *DTEntry;
 ```
 
 ## See Also
 
-- [DTEntryNameBuf](dtentrynamebuf.md)
+### Device Tree
+- [DTEntryNameBuf](./dtentrynamebuf.md)
 
 
 ---

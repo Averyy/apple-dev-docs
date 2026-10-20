@@ -1,7 +1,8 @@
 # SFSafariViewController.DismissButtonStyle.done
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -14,10 +15,15 @@
 case done
 ```
 
+```c
+SFSafariViewControllerDismissButtonStyleDone
+```
+
 ## See Also
 
-- [SFSafariViewController.DismissButtonStyle.close](sfsafariviewcontroller/dismissbuttonstyle-swift.enum/close.md)
-- [SFSafariViewController.DismissButtonStyle.cancel](sfsafariviewcontroller/dismissbuttonstyle-swift.enum/cancel.md)
+### Enumeration Cases
+- [SFSafariViewController.DismissButtonStyle.close](./close.md)
+- [SFSafariViewController.DismissButtonStyle.cancel](./cancel.md)
 
 
 ---

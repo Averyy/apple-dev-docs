@@ -1,7 +1,8 @@
 # SecPreferencesDomain.user
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the user preference domain preferences.
 
@@ -13,6 +14,10 @@ Indicates the user preference domain preferences.
 
 ```swift
 case user
+```
+
+```c
+kSecPreferencesDomainUser
 ```
 
 

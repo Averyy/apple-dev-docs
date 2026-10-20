@@ -1,7 +1,8 @@
 # supportsIncrementalUpdates
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the credential identity store supports incremental updates.
 
@@ -18,13 +19,18 @@ A Boolean value indicating whether the credential identity store supports increm
 var supportsIncrementalUpdates: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsIncrementalUpdates;
+```
+
 #### Discussion
 
 Examine the value returned by this property to find out if the credential identity store can accept incremental updates. If incremental updates are supported, you can update the credential identity store with only the new changes since the last time it was updated. Otherwise, update the credential identity store by adding all credential identities.
 
 ## See Also
 
-- [var isEnabled: Bool](ascredentialidentitystorestate/isenabled.md)
+### Checking the state
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the credential identity store is enabled.
 
 

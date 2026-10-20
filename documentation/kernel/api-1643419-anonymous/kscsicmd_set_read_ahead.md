@@ -1,7 +1,8 @@
 # kSCSICmd_SET_READ_AHEAD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_SET_READ_AHEAD = 0xA7
 ```
 

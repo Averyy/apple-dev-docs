@@ -1,17 +1,18 @@
 # kSCSITaskState_NEW_TASK
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskState_NEW_TASK
 ```
 
@@ -21,10 +22,11 @@ The task state is new task.
 
 ## See Also
 
-- [kSCSITaskState_ENABLED](scsitaskstate/kscsitaskstate_enabled.md)
-- [kSCSITaskState_BLOCKED](scsitaskstate/kscsitaskstate_blocked.md)
-- [kSCSITaskState_DORMANT](scsitaskstate/kscsitaskstate_dormant.md)
-- [kSCSITaskState_ENDED](scsitaskstate/kscsitaskstate_ended.md)
+### Constants
+- [kSCSITaskState_ENABLED](./kscsitaskstate_enabled.md)
+- [kSCSITaskState_BLOCKED](./kscsitaskstate_blocked.md)
+- [kSCSITaskState_DORMANT](./kscsitaskstate_dormant.md)
+- [kSCSITaskState_ENDED](./kscsitaskstate_ended.md)
 
 
 ---

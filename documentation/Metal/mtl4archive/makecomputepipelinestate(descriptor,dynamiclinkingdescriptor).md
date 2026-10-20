@@ -1,7 +1,8 @@
 # makeComputePipelineState(descriptor:dynamicLinkingDescriptor:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a compute pipeline state from the archive with a compute descriptor and a dynamic linking descriptor.
 

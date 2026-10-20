@@ -1,7 +1,8 @@
 # littleFingerKnuckle
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the knuckle  of the little finger.
 

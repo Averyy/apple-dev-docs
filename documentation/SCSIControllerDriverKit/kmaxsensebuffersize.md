@@ -1,24 +1,26 @@
 # kMaxSenseBufferSize
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 The maximum size of the SCSI sense data buffer in a response.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 #define kMaxSenseBufferSize
 ```
 
 ## See Also
 
-- [kIOHierarchicalLogicalUnitSupportKey](kiohierarchicallogicalunitsupportkey.md)
-- [kIOMinimumHBADataAlignmentMaskKey](kiominimumhbadataalignmentmaskkey.md)
-- [kIOServicePowerCapabilityPause](kioservicepowercapabilitypause.md)
+### Macros
+- [kIOHierarchicalLogicalUnitSupportKey](./kiohierarchicallogicalunitsupportkey.md)
+- [kIOMinimumHBADataAlignmentMaskKey](./kiominimumhbadataalignmentmaskkey.md)
+- [kIOServicePowerCapabilityPause](./kioservicepowercapabilitypause.md)
   A PCIe-specific power state for halting transactions while reallocating resources.
 
 

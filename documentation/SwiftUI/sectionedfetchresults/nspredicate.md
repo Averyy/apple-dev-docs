@@ -1,7 +1,8 @@
 # nsPredicate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s predicate.
 
@@ -23,17 +24,18 @@ The request’s predicate.
 
 #### Discussion
 
-Set this value to cause the associated [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new predicate, producing an updated collection of results.
+Set this value to cause the associated [`SectionedFetchRequest`](../sectionedfetchrequest.md) to execute a fetch with a new predicate, producing an updated collection of results.
 
 ## See Also
 
-- [var sortDescriptors: [SortDescriptor<Result>]](sectionedfetchresults/sortdescriptors.md)
+### Configuring the associated sectioned fetch request
+- [var sortDescriptors: [SortDescriptor<Result>]](./sortdescriptors.md)
   The request’s sort descriptors, accessed as value types.
-- [var nsSortDescriptors: [NSSortDescriptor]](sectionedfetchresults/nssortdescriptors.md)
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
-- [var sectionIdentifier: KeyPath<Result, SectionIdentifier>](sectionedfetchresults/sectionidentifier.md)
+- [var sectionIdentifier: KeyPath<Result, SectionIdentifier>](./sectionidentifier.md)
   The key path that the system uses to group fetched results into sections.
-- [SectionedFetchResults.Section](sectionedfetchresults/section.md)
+- [SectionedFetchResults.Section](./section.md)
   A collection of fetched results that share a specified identifier.
 
 

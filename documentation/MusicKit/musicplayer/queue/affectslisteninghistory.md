@@ -1,7 +1,8 @@
 # affectsListeningHistory
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this playing this queue will affect the user’s listening history. Defaults to `true`.
 

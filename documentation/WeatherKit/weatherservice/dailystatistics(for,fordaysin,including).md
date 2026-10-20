@@ -1,7 +1,8 @@
 # dailyStatistics(for:forDaysIn:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns daily weather statistics for the requested location, for each day within the specified date interval.
 
@@ -26,13 +27,13 @@ The requested daily weather statistics.
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 The statistics returned for each day are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular day of the year, in UTC. For example, if December 31, UTC time, is within the span, the statistics returned for that particular day will be taken from data recorded over the years for day 365 of the year, or 366 if December 31 of the span falls on a leap year.
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. Here’s an example:
 
-```None
+```
 let (dailyPrecipitationStatistics, dailyTemperatureStatistics) = try await service.dailyStatistics(for: newYork, forDaysIn: timeInterval, including: .precipitation, .temperature)
 ```
 

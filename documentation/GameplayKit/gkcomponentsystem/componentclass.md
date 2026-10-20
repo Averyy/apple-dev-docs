@@ -1,7 +1,8 @@
 # componentClass
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The class of components managed by the component system.
 
@@ -19,21 +20,26 @@ The class of components managed by the component system.
 var componentClass: AnyClass { get }
 ```
 
+```objc
+@property (nonatomic, readonly) Class componentClass;
+```
+
 #### Discussion
 
-Each [`GKComponentSystem`](gkcomponentsystem.md) object manages components of a specific [`GKComponent`](gkcomponent.md) subclass. You specify the component class to be used by a system when creating it with the [`init(componentClass:)`](gkcomponentsystem/init(componentclass:).md) initializer. Afterward, you may add components to the system only if their type matches the system’s component class.
+Each [`GKComponentSystem`](../gkcomponentsystem.md) object manages components of a specific [`GKComponent`](../gkcomponent.md) subclass. You specify the component class to be used by a system when creating it with the [`init(componentClass:)`](./init%28componentclass%29.md) initializer. Afterward, you may add components to the system only if their type matches the system’s component class.
 
 ## See Also
 
-- [var components: [ComponentType]](gkcomponentsystem/components.md)
+### Managing a List of Components
+- [var components: [ComponentType]](./components.md)
   The component system’s list of components.
-- [func addComponent(ComponentType)](gkcomponentsystem/addcomponent(_:).md)
+- [func addComponent(ComponentType)](./addcomponent%28_%29.md)
   Adds a component instance to the component system.
-- [func addComponent(foundIn: GKEntity)](gkcomponentsystem/addcomponent(foundin:).md)
+- [func addComponent(foundIn: GKEntity)](./addcomponent%28foundin%29.md)
   Adds any instances of the component system’s component class in the specified entity to the component system.
-- [func removeComponent(ComponentType)](gkcomponentsystem/removecomponent(_:).md)
+- [func removeComponent(ComponentType)](./removecomponent%28_%29.md)
   Removes the specified component instance from the component system.
-- [func removeComponent(foundIn: GKEntity)](gkcomponentsystem/removecomponent(foundin:).md)
+- [func removeComponent(foundIn: GKEntity)](./removecomponent%28foundin%29.md)
   Removes any instances of the component system’s component class in the specified entity from the component system.
 
 

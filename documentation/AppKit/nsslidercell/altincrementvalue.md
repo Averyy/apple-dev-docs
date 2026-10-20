@@ -1,17 +1,22 @@
 # altIncrementValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which the slider changes its value when the user Option-drags the knob.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var altIncrementValue: Double { get set }
+```
+
+```objc
+@property double altIncrementValue;
 ```
 
 #### Discussion
@@ -20,10 +25,12 @@ By default, the value of this property is -1.0, and the slider behaves no differ
 
 ## See Also
 
-- [Slider Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Slider/Slider.html#//apple_ref/doc/uid/10000025i)
-- [class var prefersTrackingUntilMouseUp: Bool](nsslidercell/preferstrackinguntilmouseup.md)
+### Related Documentation
+- [Slider Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Slider/Slider.html#//apple_ref/doc/uid/10000025i)
+### Managing Cell Behavior
+- [class var prefersTrackingUntilMouseUp: Bool](./preferstrackinguntilmouseup.md)
   Returns a Boolean value indicating whether the `NSSliderCell` continues to track the pointer until the next mouse up.
-- [var trackRect: NSRect](nsslidercell/trackrect.md)
+- [var trackRect: NSRect](./trackrect.md)
   The rectangle within which the cell tracks the pointer while the mouse button is down.
 
 

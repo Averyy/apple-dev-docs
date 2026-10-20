@@ -1,7 +1,8 @@
 # init(make:update:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reality view for iOS and macOS, with an optional update closure.
 
@@ -17,6 +18,15 @@ Creates a reality view for iOS and macOS, with an optional update closure.
 ```swift
 nonisolated
 init(make: @escaping @MainActor @Sendable (inout RealityViewCameraContent) async -> Void, update: (@MainActor (inout RealityViewCameraContent) -> Void)? = nil) where Content == RealityViewCameraContent.Body<RealityViewDefaultPlaceholder>
+```
+
+Available when `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void, update: (@MainActor (inout RealityViewContent) -> Void)? = nil) where Content == RealityViewContent.Body<RealityViewDefaultPlaceholder>
 ```
 
 #### Discussion
@@ -38,7 +48,8 @@ RealityView { content in
 
 ## See Also
 
-- [init<P>(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?, placeholder: () -> P)](realityview/init(make:update:placeholder:)-4x7ds.md)
+### Creating a reality view for iOS and macOS
+- [init<P>(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?, placeholder: () -> P)](./init%28make,update,placeholder%29-4x7ds.md)
   Creates a reality view for iOS and macOS, with an optional update closure and placeholder view.
 
 

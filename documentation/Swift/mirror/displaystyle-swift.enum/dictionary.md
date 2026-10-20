@@ -1,7 +1,8 @@
 # Mirror.DisplayStyle.dictionary
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+

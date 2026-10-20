@@ -1,6 +1,7 @@
 # Requesting a feed export
 
-**Framework**: Apple Music Feed
+**Framework**: Apple Music Feed  
+**Role**: Article
 
 Create requests for Apple Music Catalog metadata.
 
@@ -8,25 +9,25 @@ Create requests for Apple Music Catalog metadata.
 
 To get the data for an Apple Music Feed data set, request information about the latest feed export, use that information to request links to parts of the feed, and then use those links to download the data.
 
-#### Compose a Request
+#### Compose a request
 
 To compose a request, first specify the root path, `https://api.media.apple.com/v1`.
 
 Follow the root path with `/feed/` and the required information for the specific request.
 
-#### Request Metadata for the Latest Feed Export
+#### Request metadata for the latest feed export
 
 To request metadata about the latest available export for an Apple Music Feed data set, construct a URL that includes the `feedId` followed by `/latest`.
 
 The possible values for `feedId` are: `album`, `song`, `artist`, `popularityTopChartAlbums`, and `popularityTopChartSongs`.
 
-```None
+```
 GET https://api.media.apple.com/v1/feed/album/latest
 ```
 
 The response returns metadata about the most recent export for the specified `feedId`, including an `id` that you can use to request the data from that export.
 
-```None
+```
 "data": [
   {
     "id": "album_2024-02-13T16-01",
@@ -36,17 +37,17 @@ The response returns metadata about the most recent export for the specified `fe
 ],
 ```
 
-#### Request Feed Data Links
+#### Request feed data links
 
-To request links to parts of the data for a feed export, construct a URL that includes the `id` of a specific feed export, which you can get from the response above, followed by `/parts`. You can use the `limit` and `offset` parameters to paginate the returned results. For more information, see [`Fetching Resources by Page`](https://developer.apple.comhttps://developer.apple.com/documentation/applemusicapi/fetching_resources_by_page).
+To request links to parts of the data for a feed export, construct a URL that includes the `id` of a specific feed export, which you can get from the response above, followed by `/parts`. You can use the `limit` and `offset` parameters to paginate the returned results. For more information, see [Fetching Resources by Page](../AppleMusicAPI/fetching_resources_by_page.md).
 
-```None
+```
 GET https://api.media.apple.com/v1/feed/exports/{id}/parts?limit=100&offset=0
 ```
 
 The response returns `parts` objects as `resources`, each of which includes an `exportLocation` for the data in that part of the feed export.
 
-```None
+```
 {
   "data": [
     {
@@ -82,15 +83,15 @@ The response returns `parts` objects as `resources`, each of which includes an `
   },
 ```
 
-#### Download the Feed Data
+#### Download the feed data
 
 Use the links that the `parts` response provides to download the feed data. Note that access to these links expires after a specified time.
 
-#### Data Example
+#### Data example
 
 The feed exports are in Parquet format. The following data example is in JSON format for illustrative purposes:
 
-```None
+```
 {
   "id": "1440935467",
   "name": {
@@ -252,9 +253,10 @@ The feed exports are in Parquet format. The following data example is in JSON fo
 
 ## See Also
 
-- [Generating developer tokens](generating-developer-tokens.md)
+### Essentials
+- [Generating developer tokens](./generating-developer-tokens.md)
   Create a JSON Web Token to authorize your requests to Apple Media Feed API.
-- [Interpreting responses](interpreting-responses.md)
+- [Interpreting responses](./interpreting-responses.md)
   Learn about responses from Apple Media Feed API to your Apple Music Feed requests.
 
 

@@ -1,7 +1,8 @@
 # ARAppClipCodeAnchor.URLDecodingState.failed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the failure to decode an App Clip Code’s URL.
 
@@ -15,6 +16,10 @@ A state that indicates the failure to decode an App Clip Code’s URL.
 case failed
 ```
 
+```c
+ARAppClipCodeURLDecodingStateFailed
+```
+
 #### Discussion
 
 The decoding of an App Clip Code URL fails under these circumstances:
@@ -24,13 +29,14 @@ The decoding of an App Clip Code URL fails under these circumstances:
 - The AASA file hosted at the App Clip Code URL’s domain lacks the App Clip’s fully-qualified application identifier.
 - The App Clip Code is not associated to the App Clip in an App Clip experience in App Store Connect.
 
-For more information, see [`Configuring App Clip experiences`](https://developer.apple.com/documentation/appclip/configuring-the-launch-experience-of-your-app-clip).
+For more information, see [Configuring App Clip experiences](../../../AppClip/configuring-the-launch-experience-of-your-app-clip.md).
 
 ## See Also
 
-- [ARAppClipCodeAnchor.URLDecodingState.decoded](arappclipcodeanchor/urldecodingstate-swift.enum/decoded.md)
+### States
+- [ARAppClipCodeAnchor.URLDecodingState.decoded](./decoded.md)
   A state that indicates the completed decoding of an App Clip Code URL.
-- [ARAppClipCodeAnchor.URLDecodingState.decoding](arappclipcodeanchor/urldecodingstate-swift.enum/decoding.md)
+- [ARAppClipCodeAnchor.URLDecodingState.decoding](./decoding.md)
   A state that indicates the continuing process of decoding an App Clip Code’s URL.
 
 

@@ -1,7 +1,8 @@
 # selectionDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var selectionDidChange: NotificationCenter.BaseMessageIdentifier<NSOutlineView.SelectionDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSOutlineView.SelectionDidChangeMessage>`.
 
 
 ---

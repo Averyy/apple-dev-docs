@@ -1,7 +1,8 @@
 # kSecTrustRevocationValidUntilDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the earliest date at which revocation information becomes stale.
 
@@ -20,9 +21,13 @@ A key whose value indicates the earliest date at which revocation information be
 let kSecTrustRevocationValidUntilDate: CFString
 ```
 
+```c
+extern CFStringRef const kSecTrustRevocationValidUntilDate;
+```
+
 #### Discussion
 
-This key is only present if the [`kSecTrustRevocationChecked`](ksectrustrevocationchecked.md) key has a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue). The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) representing the earliest date at which the revocation information for one of the certificates in this chain might change.
+This key is only present if the [`kSecTrustRevocationChecked`](./ksectrustrevocationchecked.md) key has a value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md). The value is a [`CFDate`](../CoreFoundation/cfdate.md) representing the earliest date at which the revocation information for one of the certificates in this chain might change.
 
 
 ---

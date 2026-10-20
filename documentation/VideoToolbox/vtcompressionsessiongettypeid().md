@@ -1,7 +1,8 @@
 # VTCompressionSessionGetTypeID()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the Core Foundation type identifier for the compression session.
 
@@ -19,9 +20,13 @@ Retrieves the Core Foundation type identifier for the compression session.
 func VTCompressionSessionGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID VTCompressionSessionGetTypeID();
+```
+
 #### Return Value
 
-The [`CFTypeID`](https://developer.apple.com/documentation/corefoundation/cftypeid) of the compression session object.
+The [`CFTypeID`](../CoreFoundation/cftypeid.md) of the compression session object.
 
 
 ---

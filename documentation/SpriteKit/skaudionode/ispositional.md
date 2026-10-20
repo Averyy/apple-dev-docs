@@ -1,7 +1,8 @@
 # isPositional
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the node’s audio is altered based on the position of the node.
 
@@ -20,15 +21,20 @@ A Boolean property that indicates whether the node’s audio is altered based on
 var isPositional: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isPositional) BOOL positional;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the audio mixer considers the position and velocity of the [`SKAudioNode`](skaudionode.md) relative to scene’s current [`listener`](skscene/listener.md) node. The mixer applies distance attenuation, doppler shift, and pan effects to the sound. If [`false`](https://developer.apple.com/documentation/swift/false), then the sound is played normally. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](../../Swift/true.md), the audio mixer considers the position and velocity of the [`SKAudioNode`](../skaudionode.md) relative to scene’s current [`listener`](../skscene/listener.md) node. The mixer applies distance attenuation, doppler shift, and pan effects to the sound. If [`false`](../../Swift/false.md), then the sound is played normally. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var avAudioNode: AVAudioNode?](skaudionode/avaudionode.md)
+### Configuring Audio Nodes
+- [var avAudioNode: AVAudioNode?](./avaudionode.md)
   The audio node’s current audio asset.
-- [var autoplayLooped: Bool](skaudionode/autoplaylooped.md)
+- [var autoplayLooped: Bool](./autoplaylooped.md)
   A Boolean value that indicates whether the audio should play in a loop when the node is added to the scene.
 
 

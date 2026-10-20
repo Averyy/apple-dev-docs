@@ -1,7 +1,8 @@
 # init(videoDisplay:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rendered legible output object.
 
@@ -17,11 +18,15 @@ Creates a rendered legible output object.
 init(videoDisplay videoDisplaySize: CGSize)
 ```
 
+```objc
+- (instancetype) initWithVideoDisplaySize:(CGSize) videoDisplaySize;
+```
+
 #### Discussion
 
-You can also choose to reset the [`videoDisplaySize`](avplayeritemrenderedlegibleoutput/videodisplaysize.md) value after initialization or during playback.
+You can also choose to reset the [`videoDisplaySize`](./videodisplaysize.md) value after initialization or during playback.
 
-> ❗ **Important**:  Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero) results in the system throwing an exception.
+> ❗ **Important**:  Attempting to set a video display size of [`zero`](../../CoreFoundation/cgsize/zero.md) results in the system throwing an exception.
 
 ## Parameters
 

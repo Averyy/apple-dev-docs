@@ -1,7 +1,8 @@
 # autorelease()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an unbalanced autorelease of the object.
 

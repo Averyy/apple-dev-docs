@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the type of data that the heap contains.
 
@@ -17,6 +18,10 @@ Assigns the type of data that the heap contains.
 
 ```swift
 var type: MTL4CounterHeapType { get set }
+```
+
+```objc
+@property (nonatomic) MTL4CounterHeapType type;
 ```
 
 

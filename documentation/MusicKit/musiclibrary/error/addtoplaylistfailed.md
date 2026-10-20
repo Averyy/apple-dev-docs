@@ -1,7 +1,8 @@
 # MusicLibrary.Error.addToPlaylistFailed
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure in the process of adding an item to a playlist.
 

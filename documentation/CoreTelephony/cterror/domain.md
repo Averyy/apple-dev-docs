@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A numeric indication of the error domain.
 
@@ -17,13 +18,18 @@ A numeric indication of the error domain.
 var domain: Int32
 ```
 
+```c
+SInt32 domain;
+```
+
 #### Discussion
 
 See Error Domains for possible values of this property.
 
 ## See Also
 
-- [var error: Int32](cterror/error.md)
+### Getting Error Properties
+- [var error: Int32](./error.md)
   A code indicating the specific error.
 
 

@@ -1,7 +1,8 @@
 # init(size:flipped:drawingHandler:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a representation of an image of the specified size and flipped status, using a block to draw its content.
 
@@ -14,9 +15,13 @@ Initializes a representation of an image of the specified size and flipped statu
 init(size: NSSize, flipped drawingHandlerShouldBeCalledWithFlippedContext: Bool, drawingHandler: @escaping (NSRect) -> Bool)
 ```
 
+```objc
+- (instancetype) initWithSize:(NSSize) size flipped:(BOOL) drawingHandlerShouldBeCalledWithFlippedContext drawingHandler:(BOOL (^)(NSRect dstRect)) drawingHandler;
+```
+
 #### Return Value
 
-An initialized [`NSCustomImageRep`](nscustomimagerep.md) object, or `nil` if the object could not be initialized.
+An initialized [`NSCustomImageRep`](../nscustomimagerep.md) object, or `nil` if the object could not be initialized.
 
 #### Discussion
 
@@ -27,14 +32,20 @@ Like other non-bitmap image rep types, drawing is cached as appropriate for the 
 ## Parameters
 
 - `size`: The size of the image.
-- `drawingHandlerShouldBeCalledWithFlippedContext`: [`true`](https://developer.apple.com/documentation/swift/true) if the drawing handler should be called with a flipped graphics context; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
-- `drawingHandler`: A block that draws the image representation content in the provided graphics context. The block may be invoked whenever and on whatever thread the image itself is drawn on. Care should be taken to ensure that all state accessed within the drawingHandler block is done so in a thread safe manner. This Block replaces the [`lockFocus()`](nsimage/lockfocus().md) and [`unlockFocus()`](nsimage/unlockfocus().md) technique of creating drawing content. The block is invoked at draw time, the drawing can be adjusted to suit the destination’s pixel density, color space, and other properties.
+- `drawingHandlerShouldBeCalledWithFlippedContext`: [`true`](../../Swift/true.md) if the drawing handler should be called with a flipped graphics context; otherwise [`false`](../../Swift/false.md).
+- `drawingHandler`: A block that draws the image representation content in the provided graphics context.
+
+  The block may be invoked whenever and on whatever thread the image itself is drawn on. Care should be taken to ensure that all state accessed within the drawingHandler block is done so in a thread safe manner.
+
+  This Block replaces the [`lockFocus()`](../nsimage/lockfocus%28%29.md) and [`unlockFocus()`](../nsimage/unlockfocus%28%29.md) technique of creating drawing content. The block is invoked at draw time, the drawing can be adjusted to suit the destination’s pixel density, color space, and other properties.
 
 ## See Also
 
-- [var drawingHandler: ((NSRect) -> Bool)?](nscustomimagerep/drawinghandler.md)
+### Related Documentation
+- [var drawingHandler: ((NSRect) -> Bool)?](./drawinghandler.md)
   The destination rectangle of the drawing handler block.
-- [init(draw: Selector, delegate: Any)](nscustomimagerep/init(draw:delegate:).md)
+### Creating Representations of Images in Custom Formats
+- [init(draw: Selector, delegate: Any)](./init%28draw,delegate%29.md)
   Returns a representation of an image initialized with the specified delegate information.
 
 

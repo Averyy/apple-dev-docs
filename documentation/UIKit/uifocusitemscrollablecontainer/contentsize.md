@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The total size of the content contained by this container.
@@ -19,15 +20,20 @@ The total size of the content contained by this container.
 var contentSize: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize contentSize;
+```
+
 #### Discussion
 
-If the value of this property is larger than [`visibleSize`](uifocusitemscrollablecontainer/visiblesize.md) then the content is scrollable.
+If the value of this property is larger than [`visibleSize`](./visiblesize.md) then the content is scrollable.
 
 ## See Also
 
-- [var contentOffset: CGPoint](uifocusitemscrollablecontainer/contentoffset.md)
+### Retrieving the content size
+- [var contentOffset: CGPoint](./contentoffset.md)
   The current content offset for the scrollable container.
-- [var visibleSize: CGSize](uifocusitemscrollablecontainer/visiblesize.md)
+- [var visibleSize: CGSize](./visiblesize.md)
   The visible size of the scrollable container.
 
 

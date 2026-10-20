@@ -1,7 +1,8 @@
 # init(existingItemIdentifier:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a location with the item identifier of a folder that already exists on the server.
 
@@ -12,6 +13,10 @@ Initialize a location with the item identifier of a folder that already exists o
 
 ```swift
 init(existingItemIdentifier: NSFileProviderItemIdentifier)
+```
+
+```objc
+- (instancetype) initWithExistingItemIdentifier:(NSFileProviderItemIdentifier) existingItemIdentifier;
 ```
 
 #### Discussion

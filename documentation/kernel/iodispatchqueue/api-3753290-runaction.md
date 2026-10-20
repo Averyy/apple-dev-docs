@@ -1,7 +1,8 @@
 # RunAction
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RunAction(IODispatchAction action);
 ```
 

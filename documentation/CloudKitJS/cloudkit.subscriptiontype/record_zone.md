@@ -1,7 +1,8 @@
 # RECORD_ZONE
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A record zone subscription.
 
@@ -10,15 +11,16 @@ A record zone subscription.
 
 ## Declaration
 
-```swift
+```
 const String RECORD_ZONE;
 ```
 
 ## See Also
 
-- [DATABASE](cloudkit.subscriptiontype/database.md)
+### Enumeration Cases
+- [DATABASE](./database.md)
   A database subscription.
-- [QUERY](cloudkit.subscriptiontype/query.md)
+- [QUERY](./query.md)
   A query subscription.
 
 

@@ -1,7 +1,8 @@
 # prefixMatch(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Matches part of the regex, starting at the beginning, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Matches part of the regex, starting at the beginning, where the regex is created
 ```swift
 func prefixMatch<Output>(@RegexComponentBuilder of content: () -> some RegexComponent) -> Regex<Output>.Match?
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

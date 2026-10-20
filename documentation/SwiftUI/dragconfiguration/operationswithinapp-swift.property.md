@@ -1,7 +1,8 @@
 # operationsWithinApp
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operations suggested by the drag source for drags within the application.
 

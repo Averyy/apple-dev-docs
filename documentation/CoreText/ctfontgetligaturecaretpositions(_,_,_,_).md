@@ -1,7 +1,8 @@
 # CTFontGetLigatureCaretPositions(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns caret positions within a glyph.
 
@@ -18,6 +19,10 @@ Returns caret positions within a glyph.
 
 ```swift
 func CTFontGetLigatureCaretPositions(_ font: CTFont, _ glyph: CGGlyph, _ positions: UnsafeMutablePointer<CGFloat>?, _ maxPositions: CFIndex) -> CFIndex
+```
+
+```c
+extern CFIndex CTFontGetLigatureCaretPositions(CTFontRef font, CGGlyph glyph, CGFloat positions[], CFIndex maxPositions);
 ```
 
 #### Return Value
@@ -37,9 +42,10 @@ This function is used to obtain caret positions for a specific glyph. The return
 
 ## See Also
 
-- [func CTFontGetGlyphsForCharacters(CTFont, UnsafePointer<UniChar>, UnsafeMutablePointer<CGGlyph>, CFIndex) -> Bool](ctfontgetglyphsforcharacters(_:_:_:_:).md)
+### Working with Glyphs
+- [func CTFontGetGlyphsForCharacters(CTFont, UnsafePointer<UniChar>, UnsafeMutablePointer<CGGlyph>, CFIndex) -> Bool](./ctfontgetglyphsforcharacters%28_,_,_,_%29.md)
   Performs basic character-to-glyph mapping.
-- [func CTFontDrawGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafePointer<CGPoint>, Int, CGContext)](ctfontdrawglyphs(_:_:_:_:_:).md)
+- [func CTFontDrawGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafePointer<CGPoint>, Int, CGContext)](./ctfontdrawglyphs%28_,_,_,_,_%29.md)
   Renders the given glyphs of a font at the specified positions in the supplied graphics context.
 
 

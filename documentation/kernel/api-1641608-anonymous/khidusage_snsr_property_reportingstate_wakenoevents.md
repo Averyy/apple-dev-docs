@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Property_ReportingState_WakeNoEvents
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Property_ReportingState_WakeNoEvents = 0x0843
 ```
 

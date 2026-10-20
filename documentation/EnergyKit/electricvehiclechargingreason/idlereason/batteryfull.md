@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.IdleReason.batteryFull
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates charging stops because the battery is full.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,9 +19,10 @@ case batteryFull
 
 ## See Also
 
-- [ElectricVehicleChargingReason.IdleReason.targetStateOfChargeReached](electricvehiclechargingreason/idlereason/targetstateofchargereached.md)
+### Charging targets reached
+- [ElectricVehicleChargingReason.IdleReason.targetStateOfChargeReached](./targetstateofchargereached.md)
   A reason that indicates charging stops because the vehicle reaches its target state of charge.
-- [ElectricVehicleChargingReason.IdleReason.targetAlreadyReached](electricvehiclechargingreason/idlereason/targetalreadyreached.md)
+- [ElectricVehicleChargingReason.IdleReason.targetAlreadyReached](./targetalreadyreached.md)
   A reason that indicates charging doesn’t start because the vehicle is already charged to the target state.
 
 

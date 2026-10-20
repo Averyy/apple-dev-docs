@@ -1,7 +1,8 @@
 # sequence(first:next:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a sequence formed from `first` and repeated lazy applications of `next`.
 
@@ -51,7 +52,8 @@ for value in sequence(first: 1, next: { $0 * 2 }) {
 
 ## See Also
 
-- [func sequence<T, State>(state: State, next: (inout State) -> T?) -> UnfoldSequence<T, State>](sequence(state:next:).md)
+### Dynamic Sequences
+- [func sequence<T, State>(state: State, next: (inout State) -> T?) -> UnfoldSequence<T, State>](./sequence%28state,next%29.md)
   Returns a sequence formed from repeated lazy applications of `next` to a mutable `state`.
 
 

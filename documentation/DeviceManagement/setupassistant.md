@@ -1,7 +1,8 @@
 # SetupAssistant
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Setup Assistant settings.
 
@@ -13,7 +14,7 @@ The payload that configures Setup Assistant settings.
 
 ## Declaration
 
-```swift
+```
 object SetupAssistant
 ```
 
@@ -21,7 +22,7 @@ object SetupAssistant
 
 Specify `com.apple.SetupAssistant.managed` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ Specify `com.apple.SetupAssistant.managed` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,49 +88,96 @@ Specify `com.apple.SetupAssistant.managed` as the payload type.
 
 ## Properties
 
-- `SkipAccessibility` (boolean): If `true`, the system skips the Accessibility pane. Available: macOS 11+
-Deprecated: macOS 15+
-- `SkipAppearance` (boolean): If `true`, the system skips the Choose Your Look pane. Available: macOS 10.14+
-Deprecated: macOS 15+
-- `SkipCloudSetup` (boolean): If `true`, the system skips the Apple Account setup pane. Available: macOS 10.12+
-Deprecated: macOS 15+
-- `SkipiCloudStorageSetup` (boolean): If `true`, the system skips the iCloud Storage pane. Available: macOS 10.13.4+
-Deprecated: macOS 15+
-- `SkipPrivacySetup` (boolean): If `true`, the system skips the Privacy consent pane. Available: macOS 10.13.4+
-Deprecated: macOS 15+
-- `SkipScreenTime` (boolean): If `true`, the system skips the Screen Time pane. Available: macOS 10.15+
-Deprecated: macOS 15+
-- `SkipSetupItems` ([string]): An array of strings that describe the setup items to skip. [`SkipKeys`](skipkeys.md) provides a list of valid strings and their meanings. Available: iOS 14+ | iPadOS 14+ | macOS 15+
-- `SkipSiriSetup` (boolean): If `true`, the system skips the Siri setup pane. Available: macOS 10.12+
-Deprecated: macOS 15+
-- `SkipTouchIDSetup` (boolean): If `true`, the system skips the Touch ID setup pane. Available: macOS 10.15+
-Deprecated: macOS 15+
-- `SkipTrueTone` (boolean): If `true`, the system skips the True Tone Display pane. Available: macOS 10.13.6+
-Deprecated: macOS 15+
-- `SkipUnlockWithWatch` (boolean): If `true`, the system skips the Unlock With Apple Watch pane. Available: macOS 12+
-Deprecated: macOS 15+
-- `SkipWallpaper` (boolean): If ‘true’, the system skips the Wallpaper selection window. Available: macOS 14.1+
-Deprecated: macOS 15+
+- `SkipAccessibility` (boolean) *(deprecated)*: If `true`, the system skips the Accessibility pane.
+
+  Available: macOS 11+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipAppearance` (boolean) *(deprecated)*: If `true`, the system skips the Choose Your Look pane.
+
+  Available: macOS 10.14+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipCloudSetup` (boolean) *(deprecated)*: If `true`, the system skips the Apple Account setup pane.
+
+  Available: macOS 10.12+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipiCloudStorageSetup` (boolean) *(deprecated)*: If `true`, the system skips the iCloud Storage pane.
+
+  Available: macOS 10.13.4+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipPrivacySetup` (boolean) *(deprecated)*: If `true`, the system skips the Privacy consent pane.
+
+  Available: macOS 10.13.4+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipScreenTime` (boolean) *(deprecated)*: If `true`, the system skips the Screen Time pane.
+
+  Available: macOS 10.15+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipSetupItems` ([string]): An array of strings that describe the setup items to skip. [`SkipKeys`](./skipkeys.md) provides a list of valid strings and their meanings.
+
+  Available: iOS 14+ | iPadOS 14+ | macOS 15+
+- `SkipSiriSetup` (boolean) *(deprecated)*: If `true`, the system skips the Siri setup pane.
+
+  Available: macOS 10.12+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipTouchIDSetup` (boolean) *(deprecated)*: If `true`, the system skips the Touch ID setup pane.
+
+  Available: macOS 10.15+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipTrueTone` (boolean) *(deprecated)*: If `true`, the system skips the True Tone Display pane.
+
+  Available: macOS 10.13.6+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipUnlockWithWatch` (boolean) *(deprecated)*: If `true`, the system skips the Unlock With Apple Watch pane.
+
+  Available: macOS 12+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
+- `SkipWallpaper` (boolean) *(deprecated)*: If ‘true’, the system skips the Wallpaper selection window.
+
+  Available: macOS 14.1+
+  Deprecated: macOS 15+
+
+  **Default**: `false`
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Desktop](desktop.md)
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

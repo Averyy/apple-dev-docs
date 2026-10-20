@@ -1,7 +1,8 @@
 # init(from:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new from to by action to animate from a specified value, towards the defaultSource value.
 

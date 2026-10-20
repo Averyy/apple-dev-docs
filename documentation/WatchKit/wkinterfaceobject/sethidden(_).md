@@ -1,7 +1,8 @@
 # setHidden(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides or shows the interface object in your user interface.
 
@@ -14,9 +15,13 @@ Hides or shows the interface object in your user interface.
 func setHidden(_ hidden: Bool)
 ```
 
+```objc
+- (void) setHidden:(BOOL) hidden;
+```
+
 ## Mentions
 
-- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md)
+- [Connecting Your User Interface to Your Code](../connecting-your-user-interface-to-your-code.md)
 
 #### Discussion
 
@@ -24,12 +29,14 @@ When you hide or show an object in your interface, WatchKit makes a note to upda
 
 ## Parameters
 
-- `hidden`: A Boolean value indicating the visibility of the object. Specify [`true`](https://developer.apple.com/documentation/swift/true) to hide the object. Specify [`false`](https://developer.apple.com/documentation/swift/false) to show it.
+- `hidden`: A Boolean value indicating the visibility of the object. Specify [`true`](../../Swift/true.md) to hide the object. Specify [`false`](../../Swift/false.md) to show it.
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setAlpha(CGFloat)](wkinterfaceobject/setalpha(_:).md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Hiding and Showing an Object
+- [func setAlpha(CGFloat)](./setalpha%28_%29.md)
   Sets the opacity of the interface object.
 
 

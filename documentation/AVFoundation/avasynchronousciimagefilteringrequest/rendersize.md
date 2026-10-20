@@ -1,22 +1,29 @@
 # renderSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width and height, in pixels, of the frame being processed.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 27.0
+- iPadOS 9.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.11+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVCIImageFilteringParameters instead
 
 ## Declaration
 
 ```swift
 var renderSize: CGSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGSize renderSize;
 ```
 
 #### Discussion
@@ -25,7 +32,8 @@ You can use this property if you need to work with Core Image filters that apply
 
 ## See Also
 
-- [var compositionTime: CMTime](avasynchronousciimagefilteringrequest/compositiontime.md)
+### Getting contextual information for filtering
+- [var compositionTime: CMTime](./compositiontime.md)
   The time in the video composition corresponding to the frame being processed.
 
 

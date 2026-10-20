@@ -1,7 +1,8 @@
 # blendedValue(axis:)
 
 **Framework**: hvf  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The final axis values applied to this subpart after the part has been rendered This is useful for detecting axes going out of range (-1.0…1.0)
 

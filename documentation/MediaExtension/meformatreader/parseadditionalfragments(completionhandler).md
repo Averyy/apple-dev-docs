@@ -1,7 +1,8 @@
 # parseAdditionalFragments(completionHandler:)
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Incorporates additional fragments that the file received after the last time the format reader parsed it.
 
@@ -11,12 +12,20 @@ Incorporates additional fragments that the file received after the last time the
 ## Declaration
 
 ```swift
+optional func parseAdditionalFragments(completionHandler: @escaping @Sendable (MEFormatReaderParseAdditionalFragmentsStatus, (any Error)?) -> Void)
+```
+
+```swift
 optional func parseAdditionalFragments() async throws -> MEFormatReaderParseAdditionalFragmentsStatus
+```
+
+```objc
+- (void) parseAdditionalFragmentsWithCompletionHandler:(void (^)(MEFormatReaderParseAdditionalFragmentsStatus fragmentStatus, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-This method additional fragments of the media asset if they exist. Media asset formats that don’t support incremental fragments don’t need implement this method. Create the [`MEFormatReader`](meformatreader.md) object with the [`MEFormatReaderInstantiationOptions`](meformatreaderinstantiationoptions.md) property [`allowIncrementalFragmentParsing`](meformatreaderinstantiationoptions/allowincrementalfragmentparsing.md) set to [`true`](https://developer.apple.com/documentation/swift/true). This method does nothing if the value for [`MEFileInfo.FragmentsStatus`](mefileinfo/fragmentsstatus-swift.enum.md) is [`MEFileInfo.FragmentsStatus.containsFragments`](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md). Once this method returns an error, additional calls fail.
+This method additional fragments of the media asset if they exist. Media asset formats that don’t support incremental fragments don’t need implement this method. Create the [`MEFormatReader`](../meformatreader.md) object with the [`MEFormatReaderInstantiationOptions`](../meformatreaderinstantiationoptions.md) property [`allowIncrementalFragmentParsing`](../meformatreaderinstantiationoptions/allowincrementalfragmentparsing.md) set to [`true`](../../Swift/true.md). This method does nothing if the value for [`MEFileInfo.FragmentsStatus`](../mefileinfo/fragmentsstatus-swift.enum.md) is [`MEFileInfo.FragmentsStatus.containsFragments`](../mefileinfo/fragmentsstatus-swift.enum/containsfragments.md). Once this method returns an error, additional calls fail.
 
 ## Parameters
 
@@ -24,13 +33,14 @@ This method additional fragments of the media asset if they exist. Media asset f
 
 ## See Also
 
-- [func loadFileInfo(completionHandler: (MEFileInfo?, (any Error)?) -> Void)](meformatreader/loadfileinfo(completionhandler:).md)
+### Reading and parsing media assets
+- [func loadFileInfo(completionHandler: (MEFileInfo?, (any Error)?) -> Void)](./loadfileinfo%28completionhandler%29.md)
   Loads the file info object with the properties of the media asset.
-- [func loadMetadata(completionHandler: ([AVMetadataItem]?, (any Error)?) -> Void)](meformatreader/loadmetadata(completionhandler:).md)
+- [func loadMetadata(completionHandler: ([AVMetadataItem]?, (any Error)?) -> Void)](./loadmetadata%28completionhandler%29.md)
   Loads the array of metadata items from the media asset.
-- [func loadTrackReaders(completionHandler: ([any METrackReader]?, (any Error)?) -> Void)](meformatreader/loadtrackreaders(completionhandler:).md)
+- [func loadTrackReaders(completionHandler: ([any METrackReader]?, (any Error)?) -> Void)](./loadtrackreaders%28completionhandler%29.md)
   Loads the array of track readers that represent the tracks in the media asset.
-- [struct MEFormatReaderParseAdditionalFragmentsStatus](meformatreaderparseadditionalfragmentsstatus.md)
+- [struct MEFormatReaderParseAdditionalFragmentsStatus](../meformatreaderparseadditionalfragmentsstatus.md)
   Informational status flags that the format reader returns after parsing additional fragments.
 
 

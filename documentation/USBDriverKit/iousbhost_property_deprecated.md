@@ -1,14 +1,15 @@
 # IOUSBHOST_PROPERTY_DEPRECATED
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define IOUSBHOST_PROPERTY_DEPRECATED
 ```
 

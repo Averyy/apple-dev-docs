@@ -1,7 +1,8 @@
 # nw_framer_output_handler_t
 
 **Framework**: Network  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A handler that notifies your protocol about a new outbound message.
 
@@ -20,9 +21,13 @@ A handler that notifies your protocol about a new outbound message.
 typealias nw_framer_output_handler_t = (nw_framer_t, nw_framer_message_t, Int, Bool) -> Void
 ```
 
+```c
+typedef void (^)(NSObject<OS_nw_framer> *, NSObject<OS_nw_protocol_metadata> *, unsigned long, _Bool) nw_framer_output_handler_t;
+```
+
 #### Discussion
 
-The output handler is your opportunity to encapsulate or encode a signle application message. You should write any output using [`nw_framer_write_output(_:_:_:)`](nw_framer_write_output(_:_:_:).md), [`nw_framer_write_output_data(_:_:)`](nw_framer_write_output_data(_:_:).md), or [`nw_framer_write_output_no_copy(_:_:)`](nw_framer_write_output_no_copy(_:_:).md) before returning from the output handler. If you do not write a message, the application message will be discarded.
+The output handler is your opportunity to encapsulate or encode a signle application message. You should write any output using [`nw_framer_write_output(_:_:_:)`](./nw_framer_write_output%28_,_,_%29.md), [`nw_framer_write_output_data(_:_:)`](./nw_framer_write_output_data%28_,_%29.md), or [`nw_framer_write_output_no_copy(_:_:)`](./nw_framer_write_output_no_copy%28_,_%29.md) before returning from the output handler. If you do not write a message, the application message will be discarded.
 
 ## Parameters
 
@@ -33,19 +38,20 @@ The output handler is your opportunity to encapsulate or encode a signle applica
 
 ## See Also
 
-- [func nw_framer_set_output_handler(nw_framer_t, nw_framer_output_handler_t)](nw_framer_set_output_handler(_:_:).md)
+### Handling Output Data
+- [func nw_framer_set_output_handler(nw_framer_t, nw_framer_output_handler_t)](./nw_framer_set_output_handler%28_,_%29.md)
   Sets a block to handle new outbound messages.
-- [func nw_framer_parse_output(nw_framer_t, Int, Int, UnsafeMutablePointer<UInt8>?, (UnsafeMutablePointer<UInt8>?, Int, Bool) -> Int) -> Bool](nw_framer_parse_output(_:_:_:_:_:).md)
+- [func nw_framer_parse_output(nw_framer_t, Int, Int, UnsafeMutablePointer<UInt8>?, (UnsafeMutablePointer<UInt8>?, Int, Bool) -> Int) -> Bool](./nw_framer_parse_output%28_,_,_,_,_%29.md)
   Examines the content of output data while inside your output handler.
-- [typealias nw_framer_parse_completion_t](nw_framer_parse_completion_t.md)
+- [typealias nw_framer_parse_completion_t](./nw_framer_parse_completion_t.md)
   A handler that examines a range of data being sent or received.
-- [func nw_framer_write_output(nw_framer_t, UnsafePointer<UInt8>, Int)](nw_framer_write_output(_:_:_:).md)
+- [func nw_framer_write_output(nw_framer_t, UnsafePointer<UInt8>, Int)](./nw_framer_write_output%28_,_,_%29.md)
   Sends arbitrary output data in a buffer from your protocol to the next protocol.
-- [func nw_framer_write_output_data(nw_framer_t, dispatch_data_t)](nw_framer_write_output_data(_:_:).md)
+- [func nw_framer_write_output_data(nw_framer_t, dispatch_data_t)](./nw_framer_write_output_data%28_,_%29.md)
   Sends arbitrary output data from your protocol to the next protocol.
-- [func nw_framer_write_output_no_copy(nw_framer_t, Int) -> Bool](nw_framer_write_output_no_copy(_:_:).md)
+- [func nw_framer_write_output_no_copy(nw_framer_t, Int) -> Bool](./nw_framer_write_output_no_copy%28_,_%29.md)
   Sends a specific number of bytes from a message while inside your output handler.
-- [func nw_framer_pass_through_output(nw_framer_t)](nw_framer_pass_through_output(_:).md)
+- [func nw_framer_pass_through_output(nw_framer_t)](./nw_framer_pass_through_output%28_%29.md)
   Indicates that your protocol no longer needs to handle output data.
 
 

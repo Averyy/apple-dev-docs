@@ -1,15 +1,18 @@
 # isAtEnd
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver has reached the end of the encoded data while decoding.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 11.0
+- iPadOS 2.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Use NSKeyedUnarchiver instead
 
 ## Declaration
 
@@ -17,15 +20,20 @@ A Boolean value that indicates whether the receiver has reached the end of the e
 var isAtEnd: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isAtEnd) BOOL atEnd;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has reached the end of the encoded data while decoding, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver has reached the end of the encoded data while decoding, otherwise [`false`](../../Swift/false.md).
 
 You can invoke this method after invoking `decodeObject` to discover whether the archive contains extra data following the encoded object graph. If it does, you can either ignore this anomaly or consider it an error.
 
 ## See Also
 
-- [var systemVersion: UInt32](nsunarchiver/systemversion-swift.property.md)
+### Managing an NSUnarchiver
+- [var systemVersion: UInt32](./systemversion-swift.property.md)
   The system version number in effect when the archive was created.
 
 

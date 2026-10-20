@@ -1,7 +1,8 @@
 # SecTrustSetOptions(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets option flags for customizing evaluation of a trust object.
 
@@ -14,14 +15,18 @@ Sets option flags for customizing evaluation of a trust object.
 func SecTrustSetOptions(_ trustRef: SecTrust, _ options: SecTrustOptionFlags) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSetOptions(SecTrustRef trustRef, SecTrustOptionFlags options);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
 - `trustRef`: The trust object to modify.
-- `options`: The new set of option flags. For a list of options, see [`SecTrustOptionFlags`](sectrustoptionflags.md).
+- `options`: The new set of option flags. For a list of options, see [`SecTrustOptionFlags`](./sectrustoptionflags.md).
 
 
 ---

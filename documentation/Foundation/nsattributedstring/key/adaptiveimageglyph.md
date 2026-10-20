@@ -1,7 +1,8 @@
 # adaptiveImageGlyph
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The adaptive image glyph for the text.
 
@@ -22,11 +23,12 @@ static let adaptiveImageGlyph: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSAdaptiveImageGlyph`](https://developer.apple.com/documentation/appkit/nsadaptiveimageglyph) object. The default value of this property is `nil`, which indicates there is no adaptive image glyph.
+The value of this attribute is an [`NSAdaptiveImageGlyph`](../../../AppKit/nsadaptiveimageglyph.md) object. The default value of this property is `nil`, which indicates there is no adaptive image glyph.
 
 ## See Also
 
-- [static let attachment: NSAttributedString.Key](nsattributedstring/key/attachment.md)
+### Getting attachment attribute keys
+- [static let attachment: NSAttributedString.Key](./attachment.md)
   The attachment for the text.
 
 

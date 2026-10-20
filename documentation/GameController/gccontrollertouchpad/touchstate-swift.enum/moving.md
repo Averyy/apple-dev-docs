@@ -1,7 +1,8 @@
 # GCControllerTouchpad.TouchState.moving
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user continues touching the surface.
 
@@ -19,11 +20,16 @@ The user continues touching the surface.
 case moving
 ```
 
+```c
+GCTouchStateMoving
+```
+
 ## See Also
 
-- [GCControllerTouchpad.TouchState.up](gccontrollertouchpad/touchstate-swift.enum/up.md)
+### States
+- [GCControllerTouchpad.TouchState.up](./up.md)
   The user stops or isn’t touching the surface.
-- [GCControllerTouchpad.TouchState.down](gccontrollertouchpad/touchstate-swift.enum/down.md)
+- [GCControllerTouchpad.TouchState.down](./down.md)
   The user starts touching the surface.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A custom attribute set that you include with your entity to improve search accuracy.
@@ -21,15 +22,22 @@ var attributeSet: CSSearchableItemAttributeSet { get }
 
 ## Mentions
 
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
+- [Making app entities available in Spotlight](../making-app-entities-available-in-spotlight.md)
 
 #### Discussion
 
 Use this property to include additional metadata in the index for your app entity. This property augments the set of declared properties in your entity that have an indexing key. The default implementation of this property provides an attribute set with the title, subtitle, and image values from the entity’s display representation.
 
+## Default Implementations
+
+### IndexedEntity Implementations
+- [var attributeSet: CSSearchableItemAttributeSet](./attributeset-15ddg.md)
+  A custom attribute set that you include with your entity to improve search accuracy.
+
 ## See Also
 
-- [var defaultAttributeSet: CSSearchableItemAttributeSet](indexedentity/defaultattributeset.md)
+### Specifying entity-related attributes
+- [var defaultAttributeSet: CSSearchableItemAttributeSet](./defaultattributeset.md)
   The default set of attributes to include with your app entity in the Spotlight index.
 
 

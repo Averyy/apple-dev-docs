@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies a provider.
 
@@ -9,7 +10,7 @@ A string that identifies a provider.
 - iOS 14.2+
 - iPadOS 14.2+
 - Mac Catalyst 14.2+
-- macOS ?+
+- macOS
 - tvOS 14.2+
 - visionOS 1.0+
 
@@ -19,9 +20,14 @@ A string that identifies a provider.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var localizedDisplayName: String](vsaccountapplicationprovider/localizeddisplayname.md)
+### Application provider details
+- [var localizedDisplayName: String](./localizeddisplayname.md)
   The display name of the provider as it will appear in the list of providers.
 
 

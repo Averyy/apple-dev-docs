@@ -1,7 +1,8 @@
 # CustomerEngagement.Status.paymentFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A screen indicating a payment failure.
 
@@ -18,9 +19,10 @@ case paymentFailed
 
 ## See Also
 
-- [CustomerEngagement.Status.paymentCompleted](customerengagement/status/paymentcompleted.md)
+### Getting the status
+- [CustomerEngagement.Status.paymentCompleted](./paymentcompleted.md)
   A screen indicating a payment is complete.
-- [CustomerEngagement.Status.ready](customerengagement/status/ready.md)
+- [CustomerEngagement.Status.ready](./ready.md)
   A screen indicating the session is ready for customer interaction.
 
 

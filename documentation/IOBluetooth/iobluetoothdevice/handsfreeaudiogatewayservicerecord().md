@@ -1,7 +1,8 @@
 # handsFreeAudioGatewayServiceRecord()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func handsFreeAudioGatewayServiceRecord() -> IOBluetoothSDPServiceRecord!
+```
+
+```objc
+- (IOBluetoothSDPServiceRecord *) handsFreeAudioGatewayServiceRecord;
 ```
 
 

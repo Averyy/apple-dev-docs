@@ -1,7 +1,8 @@
 # init(seedScribbleBuffer:_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates with a scribble buffer.
 
@@ -21,15 +22,16 @@ init(seedScribbleBuffer: CVReadOnlyPixelBuffer, _ revision: GenerateIterativeSeg
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 ## See Also
 
-- [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedbox:_:).md)
+### Creating a request
+- [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedbox,_%29.md)
   Instantiates with a seed box.
-- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedpoint:_:).md)
+- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedpoint,_%29.md)
   Instantiates with a seed point.
-- [GenerateIterativeSegmentationRequest.Result](generateiterativesegmentationrequest/result.md)
+- [GenerateIterativeSegmentationRequest.Result](./result.md)
   The result is returned as a gray mask image. It can be nil if there is nothing to segment.
 
 

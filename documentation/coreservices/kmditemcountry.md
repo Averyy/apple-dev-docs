@@ -1,7 +1,8 @@
 # kMDItemCountry
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The full, publishable name of the country or region where the intellectual property of the item was created, according to guidelines of the provider.
 
@@ -12,6 +13,10 @@ The full, publishable name of the country or region where the intellectual prope
 
 ```swift
 let kMDItemCountry: CFString!
+```
+
+```c
+const CFStringRef kMDItemCountry;
 ```
 
 

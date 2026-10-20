@@ -1,15 +1,20 @@
 # userStyleSheetLocation
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var userStyleSheetLocation: URL! { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSURL * userStyleSheetLocation;
 ```
 
 

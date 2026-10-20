@@ -1,12 +1,13 @@
 # Adopting Common Protocols
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Make your custom types easier to use by ensuring that they conform to Swift protocols.
 
 #### Overview
 
-When using custom types to model data in your programs, you may frequently need to check whether two values are the same or different, or whether a particular value is included in a list of values. This capability, as well as the ability to store values in a set or use them as keys in a dictionary, are governed by two related standard library protocols, [`Equatable`](equatable.md) and [`Hashable`](hashable.md).
+When using custom types to model data in your programs, you may frequently need to check whether two values are the same or different, or whether a particular value is included in a list of values. This capability, as well as the ability to store values in a set or use them as keys in a dictionary, are governed by two related standard library protocols, [`Equatable`](./equatable.md) and [`Hashable`](./hashable.md).
 
 - You can compare instances of an *equatable* type by using the equal-to (`==`) and not-equal-to (`!=`) operators.
 - An instance of a *hashable* type can reduce its value mathematically to a single integer, which is used internally by sets and dictionaries to make lookups consistently fast.
@@ -132,9 +133,9 @@ If your type contains properties that don’t affect whether two instances are c
 
 > ❗ **Important**: Always use the same properties in both your `==` and `hash(into:)` methods. Using different groups of properties in the two methods can lead to unexpected behavior or performance when using your custom type in sets and dictionaries.
 
-##### Customize Nsobject Subclass Behavior
+##### Customize NSObject Subclass Behavior
 
-`NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols, with equality based on instance identity. If you need to customize this behavior, override the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method and [`hash`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/hash) property instead of the `==` operator method and `hashValue` property.
+`NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols, with equality based on instance identity. If you need to customize this behavior, override the [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method and [`hash`](../ObjectiveC/nsobjectprotocol/hash.md) property instead of the `==` operator method and `hashValue` property.
 
 ```swift
 extension MyNSObjectSubclass {
@@ -158,7 +159,8 @@ As noted in the previous section, two instances that are considered equal must h
 
 ## See Also
 
-- [Choosing Between Structures and Classes](choosing-between-structures-and-classes.md)
+### Data Modeling
+- [Choosing Between Structures and Classes](./choosing-between-structures-and-classes.md)
   Decide how to store data and model behavior.
 
 

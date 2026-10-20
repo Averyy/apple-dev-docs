@@ -1,7 +1,8 @@
 # UIButton.Configuration.Indicator
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that determine the style of the indicator that appears on a button.
 
@@ -10,7 +11,7 @@ Constants that determine the style of the indicator that appears on a button.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,29 +21,30 @@ enum Indicator
 
 #### Overview
 
-Use these constants to set the value of the [`indicator`](uibutton/configuration-swift.struct/indicator-swift.property.md) property.
+Use these constants to set the value of the [`indicator`](./indicator-swift.property.md) property.
 
 ## Topics
 
 ### Indicator styles
-- [UIButton.Configuration.Indicator.automatic](uibutton/configuration-swift.struct/indicator-swift.enum/automatic.md)
+- [UIButton.Configuration.Indicator.automatic](./indicator-swift.enum/automatic.md)
   A constant that automatically determines an indicator style according to the button’s properties.
-- [UIButton.Configuration.Indicator.none](uibutton/configuration-swift.struct/indicator-swift.enum/none.md)
+- [UIButton.Configuration.Indicator.none](./indicator-swift.enum/none.md)
   A constant that doesn’t show an indicator.
-- [UIButton.Configuration.Indicator.popup](uibutton/configuration-swift.struct/indicator-swift.enum/popup.md)
+- [UIButton.Configuration.Indicator.popup](./indicator-swift.enum/popup.md)
   A constant that shows a popup-style indicator.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var indicator: UIButton.Configuration.Indicator](uibutton/configuration-swift.struct/indicator-swift.property.md)
+### Configuring the indicator
+- [var indicator: UIButton.Configuration.Indicator](./indicator-swift.property.md)
   The style of the indicator that appears on the button.
-- [var indicatorColorTransformer: UIConfigurationColorTransformer?](uibutton/configuration-swift.struct/indicatorcolortransformer.md)
+- [var indicatorColorTransformer: UIConfigurationColorTransformer?](./indicatorcolortransformer.md)
   The color transformer for resolving the indicator color.
 
 

@@ -1,7 +1,8 @@
 # PHASERandomNodeDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sound event node that invokes one of its child nodes at random.
 
@@ -19,15 +20,19 @@ A sound event node that invokes one of its child nodes at random.
 class PHASERandomNodeDefinition
 ```
 
+```objc
+@interface PHASERandomNodeDefinition : PHASESoundEventNodeDefinition
+```
+
 #### Overview
 
-When the framework invokes a random node, it passes the invocation on to one of its children at random. The weight you choose for a child node in the [`addSubtree(_:weight:)`](phaserandomnodedefinition/addsubtree(_:weight:).md) argument skews the node’s selection chances.
+When the framework invokes a random node, it passes the invocation on to one of its children at random. The weight you choose for a child node in the [`addSubtree(_:weight:)`](./phaserandomnodedefinition/addsubtree%28_,weight%29.md) argument skews the node’s selection chances.
 
-##### Choose From Alternate Sounds
+##### Choose from Alternate Sounds
 
 This class can model real-world cases where an event varies slightly, such as when footsteps sound slightly different because of the unique ground composition at each step.
 
-![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Random Node extends an arrow, which points to a box in the upper right that’s labeled Sampler Node Footstep Variation One. The box labeled Random Node extends another arrow, which points to a box in the lower right that’s labeled Sampler Node Footstep Variation Two. ](/images/com.apple.phase/media-3918860@2x.png)
+![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Random Node extends an arrow, which points to a box in the upper right that’s labeled Sampler Node Footstep Variation One. The box labeled Random Node extends another arrow, which points to a box in the lower right that’s labeled Sampler Node Footstep Variation Two. ](https://developer.apple.com/tutorials/images/com.apple.phase/media-3918860@2x.png)
 
 The following code creates an instance of this class that selects from three different footstep sounds. The weights determine that an uncommon footstep noise plays half as frequently as the common footstep. And a third footstep noise plays 10% of the time.
 
@@ -84,36 +89,37 @@ PHASERandomNodeDefinition* randomNode =
 ## Topics
 
 ### Creating a Node
-- [init()](phaserandomnodedefinition/init.md)
+- [init()](./phaserandomnodedefinition/init%28%29.md)
   Creates a random node.
-- [convenience init(identifier: String)](phaserandomnodedefinition/init(identifier:).md)
+- [convenience init(identifier: String)](./phaserandomnodedefinition/init%28identifier%29.md)
   Creates a random node with the name you specify.
 ### Adding Descendent Nodes
-- [func addSubtree(PHASESoundEventNodeDefinition, weight: NSNumber)](phaserandomnodedefinition/addsubtree(_:weight:).md)
+- [func addSubtree(PHASESoundEventNodeDefinition, weight: NSNumber)](./phaserandomnodedefinition/addsubtree%28_,weight%29.md)
   Adds a node tree that’s one of the random-selection options.
 ### Defining Selection Queue Length
-- [var uniqueSelectionQueueLength: Int](phaserandomnodedefinition/uniqueselectionqueuelength.md)
+- [var uniqueSelectionQueueLength: Int](./phaserandomnodedefinition/uniqueselectionqueuelength.md)
   The length of the unique selection queue.
 
 ## Relationships
 
 ### Inherits From
-- [PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESwitchNodeDefinition](phaseswitchnodedefinition.md)
+### Control Nodes
+- [class PHASESwitchNodeDefinition](./phaseswitchnodedefinition.md)
   A node that passes invocation to only one of its child nodes.
-- [class PHASEBlendNodeDefinition](phaseblendnodedefinition.md)
+- [class PHASEBlendNodeDefinition](./phaseblendnodedefinition.md)
   A node that smoothly fades between the audio of its child nodes.
-- [class PHASEContainerNodeDefinition](phasecontainernodedefinition.md)
+- [class PHASEContainerNodeDefinition](./phasecontainernodedefinition.md)
   A node that plays all its children at the same time.
 
 

@@ -1,7 +1,8 @@
 # PassFields.HeaderFields
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the fields that display information at the top of a pass.
 
@@ -12,13 +13,13 @@ An object that represents the fields that display information at the top of a pa
 
 ## Declaration
 
-```swift
+```
 object PassFields.HeaderFields
 ```
 
 ## Mentions
 
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+- [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
 #### Discussion
 
@@ -27,15 +28,16 @@ Use this field for essential information that must remain visible when Wallet co
 ## Relationships
 
 ### Inherits From
-- [PassFieldContent](passfieldcontent.md)
+- [PassFieldContent](../passfieldcontent.md)
 
 ## See Also
 
-- [object PassFields.PrimaryFields](passfields/primaryfields-data.dictionary.md)
+### Adding content to the front of a pass
+- [object PassFields.PrimaryFields](./primaryfields-data.dictionary.md)
   An object that represents the fields that display the most important information on the front of a pass.
-- [object PassFields.SecondaryFields](passfields/secondaryfields-data.dictionary.md)
+- [object PassFields.SecondaryFields](./secondaryfields-data.dictionary.md)
   An object that represents the fields that display supporting information on the front of a pass.
-- [object PassFields.AuxiliaryFields](passfields/auxiliaryfields-data.dictionary.md)
+- [object PassFields.AuxiliaryFields](./auxiliaryfields-data.dictionary.md)
   An object that represents the fields that display additional information on the front of a pass.
 
 

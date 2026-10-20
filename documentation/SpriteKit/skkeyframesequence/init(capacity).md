@@ -1,23 +1,28 @@
 # init(capacity:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new keyframe sequence.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 convenience init(capacity numItems: Int)
+```
+
+```objc
+- (instancetype) initWithCapacity:(NSUInteger) numItems;
 ```
 
 #### Return Value
@@ -32,11 +37,12 @@ A newly initialized empty sequence.
 
 ## See Also
 
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
+### First Steps
+- [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
   See a few examples of what keyframe sequence can do.
-- [init(keyframeValues: [Any], times: [NSNumber])](skkeyframesequence/init(keyframevalues:times:).md)
+- [init(keyframeValues: [Any], times: [NSNumber])](./init%28keyframevalues,times%29.md)
   Initializes a keyframe sequence with an initial set of values and times.
-- [init?(coder: NSCoder)](skkeyframesequence/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

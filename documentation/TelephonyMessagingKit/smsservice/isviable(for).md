@@ -1,7 +1,8 @@
 # isViable(for:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries whether the device can perform SMS operations at this time.
 
@@ -24,9 +25,10 @@ final func isViable(for cellularServiceID: CellularServiceID) -> Bool
 
 ## See Also
 
-- [var viabilityNotifications: some AsyncSequence<SMSService.ViabilityNotification, Never>](smsservice/viabilitynotifications.md)
+### Determining service viabililty
+- [var viabilityNotifications: some AsyncSequence<SMSService.ViabilityNotification, Never>](./viabilitynotifications.md)
   An asynchronous sequence of service viability notifications produced by this service.
-- [SMSService.ViabilityNotification](smsservice/viabilitynotification.md)
+- [SMSService.ViabilityNotification](./viabilitynotification.md)
   A notification that indicates whether SMS is viable for a given cellular service.
 
 

@@ -1,29 +1,32 @@
 # bConfigurationValue
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: string
+- **Name**: `bConfigurationValue`
+- **Type**: string
 
 ## See Also
 
-- [bDeviceClass](entitlements/com.apple.developer.driverkit.transport.usb/bdeviceclass.md)
-- [bDeviceProtocol](entitlements/com.apple.developer.driverkit.transport.usb/bdeviceprotocol.md)
-- [bDeviceSubClass](entitlements/com.apple.developer.driverkit.transport.usb/bdevicesubclass.md)
-- [bInterfaceClass](entitlements/com.apple.developer.driverkit.transport.usb/binterfaceclass.md)
-- [bInterfaceNumber](entitlements/com.apple.developer.driverkit.transport.usb/binterfacenumber.md)
-- [bInterfaceProtocol](entitlements/com.apple.developer.driverkit.transport.usb/binterfaceprotocol.md)
-- [bInterfaceSubClass](entitlements/com.apple.developer.driverkit.transport.usb/binterfacesubclass.md)
-- [bcdDevice](entitlements/com.apple.developer.driverkit.transport.usb/bcddevice.md)
-- [idProduct](entitlements/com.apple.developer.driverkit.transport.usb/idproduct.md)
-- [idProductArray](entitlements/com.apple.developer.driverkit.transport.usb/idproductarray.md)
-- [idProductMask](entitlements/com.apple.developer.driverkit.transport.usb/idproductmask.md)
-- [idVendor](entitlements/com.apple.developer.driverkit.transport.usb/idvendor.md)
+### Property List Keys
+- [bDeviceClass](./bdeviceclass.md)
+- [bDeviceProtocol](./bdeviceprotocol.md)
+- [bDeviceSubClass](./bdevicesubclass.md)
+- [bInterfaceClass](./binterfaceclass.md)
+- [bInterfaceNumber](./binterfacenumber.md)
+- [bInterfaceProtocol](./binterfaceprotocol.md)
+- [bInterfaceSubClass](./binterfacesubclass.md)
+- [bcdDevice](./bcddevice.md)
+- [idProduct](./idproduct.md)
+- [idProductArray](./idproductarray.md)
+- [idProductMask](./idproductmask.md)
+- [idVendor](./idvendor.md)
 
 
 ---

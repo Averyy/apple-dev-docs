@@ -2,6 +2,7 @@
 
 **Framework**: Apple Archive  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads the next entry header.
@@ -12,7 +13,7 @@ Reads the next entry header.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,7 +28,8 @@ A new header instance, or `nil` if the operation reaches the end of the archive 
 
 ## See Also
 
-- [func writeHeader(ArchiveHeader) throws](archivestreamprotocol/writeheader(_:).md)
+### Reading and Writing Headers
+- [func writeHeader(ArchiveHeader) throws](./writeheader%28_%29.md)
   Writes an entry header.
 
 

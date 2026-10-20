@@ -1,7 +1,8 @@
 # services
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of the services in the service group.
 
@@ -19,17 +20,22 @@ Array of the services in the service group.
 var services: [HMService] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMService *> * services;
+```
+
 ## See Also
 
-- [var name: String](hmservicegroup/name.md)
+### Managing Service Groups
+- [var name: String](./name.md)
   The name of the service group.
-- [var uniqueIdentifier: UUID](hmservicegroup/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   The unique identifier for the service group.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmservicegroup/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the service group.
-- [func addService(HMService, completionHandler: ((any Error)?) -> Void)](hmservicegroup/addservice(_:completionhandler:).md)
+- [func addService(HMService, completionHandler: ((any Error)?) -> Void)](./addservice%28_,completionhandler%29.md)
   Adds a new service to the service group.
-- [func removeService(HMService, completionHandler: ((any Error)?) -> Void)](hmservicegroup/removeservice(_:completionhandler:).md)
+- [func removeService(HMService, completionHandler: ((any Error)?) -> Void)](./removeservice%28_,completionhandler%29.md)
   Removes a service from the service group.
 
 

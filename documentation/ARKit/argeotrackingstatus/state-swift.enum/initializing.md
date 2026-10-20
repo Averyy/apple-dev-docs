@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.State.initializing
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is initializing geo tracking.
 
@@ -15,23 +16,28 @@ The session is initializing geo tracking.
 case initializing
 ```
 
+```c
+ARGeoTrackingStateInitializing
+```
+
 #### Discussion
 
-In this state, the session is preparing tracking and an app has the opportunity to onboard users to the experience. The app watches for changes in [`stateReason`](argeotrackingstatus/statereason-swift.property.md) and coaches the user accordingly to expedite initialization.
+In this state, the session is preparing tracking and an app has the opportunity to onboard users to the experience. The app watches for changes in [`stateReason`](../statereason-swift.property.md) and coaches the user accordingly to expedite initialization.
 
 ## See Also
 
-- [ARGeoTrackingStatus.State.localized](argeotrackingstatus/state-swift.enum/localized.md)
+### States
+- [ARGeoTrackingStatus.State.localized](./localized.md)
   Geo tracking is localized.
-- [ARGeoTrackingStatus.State.localizing](argeotrackingstatus/state-swift.enum/localizing.md)
+- [ARGeoTrackingStatus.State.localizing](./localizing.md)
   Geo tracking is attempting to localize against a map.
-- [ARGeoTrackingStatus.State.notAvailable](argeotrackingstatus/state-swift.enum/notavailable.md)
+- [ARGeoTrackingStatus.State.notAvailable](./notavailable.md)
   Geo tracking is not available.
-- [ARGeoTrackingStatus.State.localized](argeotrackingstatus/state-swift.enum/localized.md)
+- [ARGeoTrackingStatus.State.localized](./localized.md)
   Geo tracking is localized.
-- [ARGeoTrackingStatus.State.localizing](argeotrackingstatus/state-swift.enum/localizing.md)
+- [ARGeoTrackingStatus.State.localizing](./localizing.md)
   Geo tracking is attempting to localize against a map.
-- [ARGeoTrackingStatus.State.notAvailable](argeotrackingstatus/state-swift.enum/notavailable.md)
+- [ARGeoTrackingStatus.State.notAvailable](./notavailable.md)
   Geo tracking is not available.
 
 

@@ -1,7 +1,8 @@
 # BGProcessingTaskRequest
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to launch your app in the background to execute a processing task that can take minutes to complete.
 
@@ -18,41 +19,46 @@ A request to launch your app in the background to execute a processing task that
 class BGProcessingTaskRequest
 ```
 
+```objc
+@interface BGProcessingTaskRequest : BGTaskRequest
+```
+
 ## Topics
 
 ### Initializing a Processing Task Request
-- [init(identifier: String)](bgprocessingtaskrequest/init(identifier:).md)
+- [init(identifier: String)](./bgprocessingtaskrequest/init%28identifier%29.md)
   Return a new processing task request for the specified identifier.
 ### Setting Task Request Options
-- [var requiresExternalPower: Bool](bgprocessingtaskrequest/requiresexternalpower.md)
+- [var requiresExternalPower: Bool](./bgprocessingtaskrequest/requiresexternalpower.md)
   A Boolean specifying if the processing task requires a device connected to power.
-- [var requiresNetworkConnectivity: Bool](bgprocessingtaskrequest/requiresnetworkconnectivity.md)
+- [var requiresNetworkConnectivity: Bool](./bgprocessingtaskrequest/requiresnetworkconnectivity.md)
   A Boolean specifying if the processing task requires network connectivity.
 
 ## Relationships
 
 ### Inherits From
-- [BGTaskRequest](bgtaskrequest.md)
+- [BGTaskRequest](./bgtaskrequest.md)
 ### Inherited By
-- [BGHealthResearchTaskRequest](bghealthresearchtaskrequest.md)
+- [BGHealthResearchTaskRequest](./bghealthresearchtaskrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class BGAppRefreshTaskRequest](bgapprefreshtaskrequest.md)
+### Task requests
+- [class BGAppRefreshTaskRequest](./bgapprefreshtaskrequest.md)
   A request to launch your app in the background to execute a short refresh task.
-- [class BGTaskRequest](bgtaskrequest.md)
+- [class BGTaskRequest](./bgtaskrequest.md)
   An abstract class for representing task requests.
-- [class BGHealthResearchTaskRequest](bghealthresearchtaskrequest.md)
+- [class BGHealthResearchTaskRequest](./bghealthresearchtaskrequest.md)
   A request to launch your app in the background to execute processing for a health research study in which a user participates.
-- [class BGContinuedProcessingTaskRequest](bgcontinuedprocessingtaskrequest.md)
+- [class BGContinuedProcessingTaskRequest](./bgcontinuedprocessingtaskrequest.md)
   A request for a workload that the system continues processing even if a person backgrounds the app.
 
 

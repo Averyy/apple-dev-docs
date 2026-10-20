@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a compute command encoder.
@@ -20,9 +21,13 @@ Creates a compute command encoder.
 func makeComputeCommandEncoder() -> (any MTL4ComputeCommandEncoder)?
 ```
 
+```objc
+- (id<MTL4ComputeCommandEncoder>) computeCommandEncoder;
+```
+
 #### Return Value
 
-The created [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) instance, or `nil` if the function fails.
+The created [`MTL4ComputeCommandEncoder`](../mtl4computecommandencoder.md) instance, or `nil` if the function fails.
 
 
 ---

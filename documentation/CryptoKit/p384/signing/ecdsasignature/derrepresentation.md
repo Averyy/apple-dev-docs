@@ -1,7 +1,8 @@
 # derRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Distinguished Encoding Rules (DER) encoded representation of a P-384 digital signature.
 
@@ -22,7 +23,8 @@ var derRepresentation: Data { get }
 
 ## See Also
 
-- [var rawRepresentation: Data](p384/signing/ecdsasignature/rawrepresentation.md)
+### Representing the signature
+- [var rawRepresentation: Data](./rawrepresentation.md)
   A raw data representation of a P-384 digital signature.
 
 

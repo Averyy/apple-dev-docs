@@ -1,7 +1,8 @@
 # JPKIPassContents.UserIdentity.AuthenticationType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines valid authentication types associated with the user identity.
 
@@ -17,21 +18,22 @@ enum AuthenticationType
 
 #### Overview
 
-Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsfaceidusagedescription) usage description.
+Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](../../../BundleResources/information-property-list/nsfaceidusagedescription.md) usage description.
 
 ## Topics
 
 ### Types of authentication
-- [JPKIPassContents.UserIdentity.AuthenticationType.pin(_:)](jpkipasscontents/useridentity-swift.struct/authenticationtype/pin(_:).md)
+- [JPKIPassContents.UserIdentity.AuthenticationType.pin(_:)](./authenticationtype/pin%28_%29.md)
   The PIN associated with the user identity.
-- [JPKIPassContents.UserIdentity.AuthenticationType.systemBiometric](jpkipasscontents/useridentity-swift.struct/authenticationtype/systembiometric.md)
+- [JPKIPassContents.UserIdentity.AuthenticationType.systemBiometric](./authenticationtype/systembiometric.md)
   Authentication using biometric information.
 
 ## See Also
 
-- [let userIdentity: JPKIPassContents.UserIdentity?](jpkipasscontents/useridentity-swift.property.md)
+### Identifying the pass user
+- [let userIdentity: JPKIPassContents.UserIdentity?](../useridentity-swift.property.md)
   Allows for access to the user identity, if present in the JPKI applet.
-- [func changePIN(from: String, to: String) async throws](jpkipasscontents/useridentity-swift.struct/changepin(from:to:).md)
+- [func changePIN(from: String, to: String) async throws](./changepin%28from,to%29.md)
   A function that allows for the change of the PIN associated with the user identity.
 
 

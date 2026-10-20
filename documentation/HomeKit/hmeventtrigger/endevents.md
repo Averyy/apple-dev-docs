@@ -1,7 +1,8 @@
 # endEvents
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The events associated with the end of scene represented by this trigger.
 
@@ -19,15 +20,20 @@ The events associated with the end of scene represented by this trigger.
 var endEvents: [HMEvent] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMEvent *> * endEvents;
+```
+
 #### Discussion
 
-HomeKit restores the previously active scene when the events in this array trigger. For example, you can use end events to execute a scene for 10 minutes by specifying an [`HMDurationEvent`](hmdurationevent.md) in the list of [`endEvents`](hmeventtrigger/endevents.md). This restores the previous scene when the duration event triggers.
+HomeKit restores the previously active scene when the events in this array trigger. For example, you can use end events to execute a scene for 10 minutes by specifying an [`HMDurationEvent`](../hmdurationevent.md) in the list of [`endEvents`](./endevents.md). This restores the previous scene when the duration event triggers.
 
-You can also use [`HMCharacteristicEvent`](hmcharacteristicevent.md) and [`HMCharacteristicThresholdRangeEvent`](hmcharacteristicthresholdrangeevent.md) objects as end events.
+You can also use [`HMCharacteristicEvent`](../hmcharacteristicevent.md) and [`HMCharacteristicThresholdRangeEvent`](../hmcharacteristicthresholdrangeevent.md) objects as end events.
 
 ## See Also
 
-- [func updateEndEvents([HMEvent], completionHandler: ((any Error)?) -> Void)](hmeventtrigger/updateendevents(_:completionhandler:).md)
+### Restoring the previous scene after an event
+- [func updateEndEvents([HMEvent], completionHandler: ((any Error)?) -> Void)](./updateendevents%28_,completionhandler%29.md)
   Updates the set of end events associated with the event trigger.
 
 

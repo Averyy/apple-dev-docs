@@ -1,7 +1,8 @@
 # init(contentType:encodingQuality:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance of this type with the given content type and encoding quality.
 
@@ -19,7 +20,7 @@ init(contentType: UTType, encodingQuality: Float = 1.0)
 
 If the target image format does not support variable-quality encoding, the value of the `encodingQuality` argument is ignored.
 
-If `contentType` does not conform to [`UTType.image`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/image), the result is undefined.
+If `contentType` does not conform to [UTType.image](../../UniformTypeIdentifiers/uttype-swift.struct/image.md), the result is undefined.
 
 ## Parameters
 

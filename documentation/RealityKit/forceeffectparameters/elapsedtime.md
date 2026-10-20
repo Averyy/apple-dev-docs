@@ -1,7 +1,8 @@
 # elapsedTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time that has elapsed since the force effect was started.
 

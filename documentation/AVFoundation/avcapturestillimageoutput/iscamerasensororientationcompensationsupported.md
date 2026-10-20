@@ -1,17 +1,22 @@
 # isCameraSensorOrientationCompensationSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
+- iOS 26.0+ - Deprecated in 10.0
+- iPadOS 26.0+ - Deprecated in 10.0
+- Mac Catalyst 26.0+ - Deprecated in 10.0
 
 ## Declaration
 
 ```swift
 var isCameraSensorOrientationCompensationSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isCameraSensorOrientationCompensationSupported) BOOL cameraSensorOrientationCompensationSupported;
 ```
 
 #### Discussion
@@ -22,7 +27,8 @@ Value is YES for camera configurations which support compensation for the sensor
 
 ## See Also
 
-- [var isCameraSensorOrientationCompensationEnabled: Bool](avcapturestillimageoutput/iscamerasensororientationcompensationenabled.md)
+### Configuring orientation compensation
+- [var isCameraSensorOrientationCompensationEnabled: Bool](./iscamerasensororientationcompensationenabled.md)
 
 
 ---

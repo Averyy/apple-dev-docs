@@ -1,24 +1,26 @@
 # modff
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float modff(float, float *);
 ```
 
 ## See Also
 
-- [modf](1557173-modf.md)
-- [modfl](1557161-modfl.md)
-- [fmod](1557253-fmod.md)
-- [fmodf](1557354-fmodf.md)
-- [fmodl](1557237-fmodl.md)
+### Modulo
+- [modf](./api-1557173-modf.md)
+- [modfl](./api-1557161-modfl.md)
+- [fmod](./api-1557253-fmod.md)
+- [fmodf](./api-1557354-fmodf.md)
+- [fmodl](./api-1557237-fmodl.md)
 
 
 ---

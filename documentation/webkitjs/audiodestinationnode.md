@@ -1,7 +1,8 @@
 # AudioDestinationNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioDestinationNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [maxChannelCount](audiodestinationnode/1634225-maxchannelcount.md)
+- [maxChannelCount](./audiodestinationnode/api-1634225-maxchannelcount.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isRampingVideoZoom
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a zoom transition is in progress.
 
@@ -15,6 +16,10 @@ A Boolean value that indicates whether a zoom transition is in progress.
 
 ```swift
 var isRampingVideoZoom: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isRampingVideoZoom) BOOL rampingVideoZoom;
 ```
 
 #### Discussion

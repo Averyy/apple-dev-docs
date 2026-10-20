@@ -1,7 +1,8 @@
 # define(className:values:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Define a class of tokens to be used in template strings.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The position of the switch.
@@ -20,13 +21,18 @@ The position of the switch.
 var position: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger position;
+```
+
 ## See Also
 
-- [var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPositionInput, Int) -> Void)?](gcswitchpositioninput/positiondidchangehandler.md)
+### Getting the position
+- [var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPositionInput, Int) -> Void)?](./positiondidchangehandler.md)
   The block that the profile calls when the value of the switch changes.
-- [var lastPositionTimestamp: TimeInterval](gcswitchpositioninput/lastpositiontimestamp.md)
+- [var lastPositionTimestamp: TimeInterval](./lastpositiontimestamp.md)
   A timestamp for when the profile reports the last position.
-- [var lastPositionLatency: TimeInterval](gcswitchpositioninput/lastpositionlatency.md)
+- [var lastPositionLatency: TimeInterval](./lastpositionlatency.md)
   The time in seconds between the current and previous positions.
 
 

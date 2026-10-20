@@ -1,7 +1,8 @@
 # AVAudioSession.DeactivationResult
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Type-safe representation of audio session deactivation results.
 
@@ -21,7 +22,7 @@ enum DeactivationResult
 
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../handling-audio-interruptions.md)
 
 #### Overview
 
@@ -30,22 +31,23 @@ This enum provides a Swift-idiomatic way to handle deactivation scenarios with a
 ## Topics
 
 ### Getting the deactivation result
-- [AVAudioSession.DeactivationResult.appDeactivated](avaudiosession/deactivationresult/appdeactivated.md)
+- [AVAudioSession.DeactivationResult.appDeactivated](./deactivationresult/appdeactivated.md)
   Session was successfully deactivated by the app.
-- [case systemInterruption(AVAudioSession.InterruptionContext)](avaudiosession/deactivationresult/systeminterruption(_:).md)
+- [case systemInterruption(AVAudioSession.InterruptionContext)](./deactivationresult/systeminterruption%28_%29.md)
   Session was deactivated due to a system interruption.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVAudioSession.DidBecomeActiveMessage](avaudiosession/didbecomeactivemessage.md)
-- [AVAudioSession.DidBecomeInactiveMessage](avaudiosession/didbecomeinactivemessage.md)
-- [AVAudioSession.ResumptionRecommendationMessage](avaudiosession/resumptionrecommendationmessage.md)
+### Handling activation messages
+- [AVAudioSession.DidBecomeActiveMessage](./didbecomeactivemessage.md)
+- [AVAudioSession.DidBecomeInactiveMessage](./didbecomeinactivemessage.md)
+- [AVAudioSession.ResumptionRecommendationMessage](./resumptionrecommendationmessage.md)
 
 
 ---

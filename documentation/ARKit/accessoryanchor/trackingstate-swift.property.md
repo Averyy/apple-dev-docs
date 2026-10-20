@@ -1,7 +1,8 @@
 # trackingState
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tracking state of this anchor.
 

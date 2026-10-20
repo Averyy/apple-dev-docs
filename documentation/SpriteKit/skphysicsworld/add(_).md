@@ -1,18 +1,19 @@
 # add(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a joint to the physics world.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Adds a joint to the physics world.
 func add(_ joint: SKPhysicsJoint)
 ```
 
+```objc
+- (void) addJoint:(SKPhysicsJoint *) joint;
+```
+
 ## Mentions
 
-- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
+- [Connecting Bodies with Joints](../connecting-bodies-with-joints.md)
 
 #### Discussion
 
@@ -34,9 +39,10 @@ For a joint to take effect, it must be added to the physics world.
 
 ## See Also
 
-- [func removeAllJoints()](skphysicsworld/removealljoints.md)
+### Joining Physics Bodies with Joints
+- [func removeAllJoints()](./removealljoints%28%29.md)
   Removes all joints from the physics world.
-- [func remove(SKPhysicsJoint)](skphysicsworld/remove(_:).md)
+- [func remove(SKPhysicsJoint)](./remove%28_%29.md)
   Removes a specific joint from the physics world.
 
 

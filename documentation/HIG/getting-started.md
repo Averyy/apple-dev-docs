@@ -19,7 +19,6 @@ Create an app or game that feels at home on every platform you support.
 - [Designing for games](/design/human-interface-guidelines/designing-for-games) - When people play your game on an Apple device, they dive into the world you designed while relying on the platform features they love.
 - [Designing for iPhone Duo](/design/human-interface-guidelines/designing-for-iphone-duo) - An app designed for iPhone Duo adapts seamlessly to both displays, providing a continuous experience as the device opens and closes.
 
-
 ## Topics
 
 - [Design principles](design-principles.md) - Explore fundamental principles that guide design across Apple platforms.
@@ -31,8 +30,6 @@ Create an app or game that feels at home on every platform you support.
 - [Designing for watchOS](designing-for-watchos.md) - When people glance at their Apple Watch, they know they can access essential information and perform simple, timely tasks whether they’re stationary or in motion.
 - [Designing for games](designing-for-games.md) - When people play your game on an Apple device, they dive into the world you designed while relying on the platform features they love.
 - [Designing for iPhone Duo](designing-for-iphone-duo.md) - An app designed for iPhone Duo adapts seamlessly to both displays, providing a continuous experience as the device opens and closes.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/getting-started](https://developer.apple.com/design/human-interface-guidelines/getting-started)*

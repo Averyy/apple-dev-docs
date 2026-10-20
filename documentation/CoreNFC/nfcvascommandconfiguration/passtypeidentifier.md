@@ -1,7 +1,8 @@
 # passTypeIdentifier
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type identifier for the Wallet Pass.
 
@@ -16,17 +17,22 @@ A type identifier for the Wallet Pass.
 var passTypeIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSString * passTypeIdentifier;
+```
+
 #### Discussion
 
 The reader session uses the string value to calculate the merchant ID value for the `GET VAS DATA` command.
 
 ## See Also
 
-- [var mode: NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.property.md)
+### Setting Configuration Items
+- [var mode: NFCVASCommandConfiguration.Mode](./mode-swift.property.md)
   A VAS protocol mode.
-- [typealias VASMode](vasmode.md)
+- [typealias VASMode](../vasmode.md)
   Constants that indicate the VAS protocol mode.
-- [var url: URL?](nfcvascommandconfiguration/url.md)
+- [var url: URL?](./url.md)
   A merchant URL.
 
 

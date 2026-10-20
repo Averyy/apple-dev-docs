@@ -1,18 +1,21 @@
 # revocationTypeStringRepresentation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The string representation of the [`revocationType`](transaction/revocationtype-swift.property.md), or `nil` if the transaction was not revoked.
+The string representation of the [`revocationType`](./revocationtype-swift.property.md), or `nil` if the transaction was not revoked.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 26.4
+- iPadOS 15.0+ - Deprecated in 26.4
+- Mac Catalyst 15.0+ - Deprecated in 26.4
+- macOS 12.0+ - Deprecated in 26.4
+- tvOS 15.0+ - Deprecated in 26.4
+- visionOS 1.0+ - Deprecated in 26.4
+- watchOS 8.0+ - Deprecated in 26.4
+
+> **Deprecated**: Use the [`revocationType`](./revocationtype-swift.property.md) property instead.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # logFileHandle
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object to interact with the test log file.
 
@@ -11,9 +12,14 @@ An object to interact with the test log file.
 var logFileHandle: FileHandle! { get }
 ```
 
+```objc
+@property (strong, readonly) NSFileHandle * logFileHandle;
+```
+
 ## See Also
 
-- [func testLog(withFormat: String!, arguments: CVaListPointer)](xctestlog/testlog(withformat:arguments:).md)
+### Logging Test Results
+- [func testLog(withFormat: String!, arguments: CVaListPointer)](./testlog%28withformat,arguments%29.md)
   Logs test results to the test log.
 
 

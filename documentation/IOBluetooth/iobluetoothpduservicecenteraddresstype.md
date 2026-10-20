@@ -1,12 +1,13 @@
 # IOBluetoothPDUServiceCenterAddressType
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The format of the phone number for the service center.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The format of the phone number for the service center.
 let IOBluetoothPDUServiceCenterAddressType: String
 ```
 
+```c
+extern NSString * const IOBluetoothPDUServiceCenterAddressType;
+```
+
 ## See Also
 
-- [let IOBluetoothPDUOriginatingAddress: String](iobluetoothpduoriginatingaddress.md)
+### Sender Information
+- [let IOBluetoothPDUOriginatingAddress: String](./iobluetoothpduoriginatingaddress.md)
   The phone number for the sender of the text message.
-- [let IOBluetoothPDUOriginatingAddressType: String](iobluetoothpduoriginatingaddresstype.md)
+- [let IOBluetoothPDUOriginatingAddressType: String](./iobluetoothpduoriginatingaddresstype.md)
   The format of the phone number for the sender of the text message.
-- [let IOBluetoothPDUServicCenterAddress: String](iobluetoothpduserviccenteraddress.md)
+- [let IOBluetoothPDUServicCenterAddress: String](./iobluetoothpduserviccenteraddress.md)
   The phone number for the service center that stored and then delivered the message.
 
 

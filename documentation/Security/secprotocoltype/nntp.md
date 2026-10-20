@@ -1,7 +1,8 @@
 # SecProtocolType.NNTP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates NNTP.
 
@@ -13,6 +14,10 @@ Indicates NNTP.
 
 ```swift
 case NNTP
+```
+
+```c
+kSecProtocolTypeNNTP
 ```
 
 

@@ -1,7 +1,8 @@
 # SRAcousticSettings.SampleLifetime
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -14,23 +15,27 @@
 enum SampleLifetime
 ```
 
+```c
+enum SRAcousticSettingsSampleLifetime : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SRAcousticSettings.SampleLifetime.eightDays](sracousticsettings/samplelifetime/eightdays.md)
-- [SRAcousticSettings.SampleLifetime.untilUserDeletes](sracousticsettings/samplelifetime/untiluserdeletes.md)
+- [SRAcousticSettings.SampleLifetime.eightDays](./samplelifetime/eightdays.md)
+- [SRAcousticSettings.SampleLifetime.untilUserDeletes](./samplelifetime/untiluserdeletes.md)
 ### Initializers
-- [init?(rawValue: Int)](sracousticsettings/samplelifetime/init(rawvalue:).md)
+- [init?(rawValue: Int)](./samplelifetime/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

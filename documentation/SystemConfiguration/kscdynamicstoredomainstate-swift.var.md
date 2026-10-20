@@ -1,7 +1,8 @@
 # kSCDynamicStoreDomainState
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The `State:` prefix.
 
@@ -14,15 +15,20 @@ The `State:` prefix.
 let kSCDynamicStoreDomainState: CFString
 ```
 
+```c
+extern CFStringRef const kSCDynamicStoreDomainState;
+```
+
 ## See Also
 
-- [let kSCDynamicStoreDomainFile: CFString](kscdynamicstoredomainfile-swift.var.md)
+### Constants
+- [let kSCDynamicStoreDomainFile: CFString](./kscdynamicstoredomainfile-swift.var.md)
   The `File:` prefix.
-- [let kSCDynamicStoreDomainPlugin: CFString](kscdynamicstoredomainplugin-swift.var.md)
+- [let kSCDynamicStoreDomainPlugin: CFString](./kscdynamicstoredomainplugin-swift.var.md)
   The `Plugin:` prefix.
-- [let kSCDynamicStoreDomainSetup: CFString](kscdynamicstoredomainsetup-swift.var.md)
+- [let kSCDynamicStoreDomainSetup: CFString](./kscdynamicstoredomainsetup-swift.var.md)
   The `Setup:` prefix.
-- [let kSCDynamicStoreDomainPrefs: CFString](kscdynamicstoredomainprefs-swift.var.md)
+- [let kSCDynamicStoreDomainPrefs: CFString](./kscdynamicstoredomainprefs-swift.var.md)
   The `Prefs:` prefix.
 
 

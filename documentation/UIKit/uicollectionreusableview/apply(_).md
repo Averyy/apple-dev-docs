@@ -1,7 +1,8 @@
 # apply(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the specified layout attributes to the view.
 
@@ -9,7 +10,7 @@ Applies the specified layout attributes to the view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Applies the specified layout attributes to the view.
 func apply(_ layoutAttributes: UICollectionViewLayoutAttributes)
 ```
 
+```objc
+- (void) applyLayoutAttributes:(UICollectionViewLayoutAttributes *) layoutAttributes;
+```
+
 #### Discussion
 
 The default implementation of this method does nothing.
 
-If the layout object supports custom layout attributes, you can use this method to apply those attributes to the view. In such a case, the `layoutAttributes` parameter should contain an instance of a subclass of [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md). You do not need to override this method to support the standard layout attributes of the [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) class. The collection view applies those attributes automatically.
+If the layout object supports custom layout attributes, you can use this method to apply those attributes to the view. In such a case, the `layoutAttributes` parameter should contain an instance of a subclass of [`UICollectionViewLayoutAttributes`](../uicollectionviewlayoutattributes.md). You do not need to override this method to support the standard layout attributes of the [`UICollectionViewLayoutAttributes`](../uicollectionviewlayoutattributes.md) class. The collection view applies those attributes automatically.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ If the layout object supports custom layout attributes, you can use this method 
 
 ## See Also
 
-- [func preferredLayoutAttributesFitting(UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes](uicollectionreusableview/preferredlayoutattributesfitting(_:).md)
+### Managing layout changes
+- [func preferredLayoutAttributesFitting(UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes](./preferredlayoutattributesfitting%28_%29.md)
   Gives the cell a chance to modify the attributes provided by the layout object.
-- [func willTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](uicollectionreusableview/willtransition(from:to:).md)
+- [func willTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](./willtransition%28from,to%29.md)
   Tells your view that the layout object of the collection view is about to change.
-- [func didTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](uicollectionreusableview/didtransition(from:to:).md)
+- [func didTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](./didtransition%28from,to%29.md)
   Tells your view that the layout object of the collection view changed.
 
 

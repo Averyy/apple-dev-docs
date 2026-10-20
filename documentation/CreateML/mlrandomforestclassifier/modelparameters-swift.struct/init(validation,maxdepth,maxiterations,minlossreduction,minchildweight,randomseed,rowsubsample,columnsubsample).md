@@ -1,7 +1,8 @@
 # init(validation:maxDepth:maxIterations:minLossReduction:minChildWeight:randomSeed:rowSubsample:columnSubsample:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -19,9 +20,10 @@ init(validation: MLRandomForestClassifier.ModelParameters.ValidationData = .spli
 
 ## See Also
 
-- [init(validationData: MLDataTable?, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, rowSubsample: Double, columnSubsample: Double)](mlrandomforestclassifier/modelparameters-swift.struct/init(validationdata:maxdepth:maxiterations:minlossreduction:minchildweight:randomseed:rowsubsample:columnsubsample:).md)
+### Creating parameters
+- [init(validationData: MLDataTable?, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, rowSubsample: Double, columnSubsample: Double)](./init%28validationdata,maxdepth,maxiterations,minlossreduction,minchildweight,randomseed,rowsubsample,columnsubsample%29.md)
   Creates a new set of parameters.
-- [MLRandomForestClassifier.ModelParameters.ValidationData](mlrandomforestclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLRandomForestClassifier.ModelParameters.ValidationData](./validationdata-swift.enum.md)
   Values for specifying validation data.
 
 

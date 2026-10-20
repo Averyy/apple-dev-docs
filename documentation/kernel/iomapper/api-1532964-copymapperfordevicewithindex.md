@@ -1,23 +1,25 @@
 # copyMapperForDeviceWithIndex
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOMapper> copyMapperForDeviceWithIndex(IOService *device, unsigned int index);
 ```
 
 ## See Also
 
-- [+ copyMapperForDevice](iomapper/1532972-copymapperfordevice.md)
-- [- initHardware](iomapper/1532965-inithardware.md)
-- [- start](iomapper/1532981-start.md)
-- [- free](iomapper/1532982-free.md)
+### Creating a Mapper Object
+- [+ copyMapperForDevice](./api-1532972-copymapperfordevice.md)
+- [- initHardware](./api-1532965-inithardware.md)
+- [- start](./api-1532981-start.md)
+- [- free](./api-1532982-free.md)
 
 
 ---

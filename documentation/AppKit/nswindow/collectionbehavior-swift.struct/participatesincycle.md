@@ -1,7 +1,8 @@
 # participatesInCycle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The window participates in the window cycle for use with the Cycle Through Windows menu item.
 
@@ -14,9 +15,14 @@ The window participates in the window cycle for use with the Cycle Through Windo
 static var participatesInCycle: NSWindow.CollectionBehavior { get }
 ```
 
+```c
+NSWindowCollectionBehaviorParticipatesInCycle
+```
+
 ## See Also
 
-- [static var ignoresCycle: NSWindow.CollectionBehavior](nswindow/collectionbehavior-swift.struct/ignorescycle.md)
+### Window cycling
+- [static var ignoresCycle: NSWindow.CollectionBehavior](./ignorescycle.md)
   The window isn’t part of the window cycle for use with the Cycle Through Windows menu item.
 
 

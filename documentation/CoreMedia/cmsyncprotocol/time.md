@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current time.

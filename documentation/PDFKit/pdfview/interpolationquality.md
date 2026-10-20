@@ -1,7 +1,8 @@
 # interpolationQuality
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interpolation quality for images drawn into the `PDFView` context.
 
@@ -19,11 +20,16 @@ The interpolation quality for images drawn into the `PDFView` context.
 var interpolationQuality: PDFInterpolationQuality { get set }
 ```
 
+```objc
+@property (nonatomic) PDFInterpolationQuality interpolationQuality;
+```
+
 ## See Also
 
-- [var shouldAntiAlias: Bool](pdfview/shouldantialias.md)
+### Antialiasing
+- [var shouldAntiAlias: Bool](./shouldantialias.md)
   A Boolean value indicating whether the view is antialiased.
-- [enum PDFInterpolationQuality](pdfinterpolationquality.md)
+- [enum PDFInterpolationQuality](../pdfinterpolationquality.md)
   A wrapper for the specified interpolation quality.
 
 

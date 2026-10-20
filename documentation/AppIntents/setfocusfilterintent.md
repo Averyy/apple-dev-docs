@@ -1,7 +1,8 @@
 # SetFocusFilterIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for providing an app intent that you use to adapt your app’s behavior when Focus changes.
 
@@ -11,7 +12,7 @@ An interface for providing an app intent that you use to adapt your app’s beha
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,36 +23,37 @@ protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 
 #### Overview
 
-> **Note**:  Session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10121).
+> **Related sessions from WWDC22**:  Session 10121: [Meet Focus filters](https://developer.apple.com/videos/play/wwdc2022/10121).
 
 ## Topics
 
 ### Getting the current app configuration
-- [static var current: Self](setfocusfilterintent/current.md)
-- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](setfocusfilterintent/suggestedfocusfilters(for:).md)
+- [static var current: Self](./setfocusfilterintent/current.md)
+- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](./setfocusfilterintent/suggestedfocusfilters%28for%29.md)
   You can implement this method to return a list of suggested focus configurations. This is useful when the suggested focus configurations are different from the configuration when the focus is turned off.
 ### Configuring app context for the Focus
-- [var appContext: FocusFilterAppContext](setfocusfilterintent/appcontext.md)
+- [var appContext: FocusFilterAppContext](./setfocusfilterintent/appcontext.md)
   An app context that is associated with the focus configuration. The system will retrieve this app context and adapt the system behavior based on the context provided.
-- [static func invalidateFocusFilterAppContext()](setfocusfilterintent/invalidatefocusfilterappcontext.md)
+- [static func invalidateFocusFilterAppContext()](./setfocusfilterintent/invalidatefocusfilterappcontext%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Defining your app’s Focus filter](defining-your-app-s-focus-filter.md)
+### Focus filters
+- [Defining your app’s Focus filter](./defining-your-app-s-focus-filter.md)
   Customize your app’s behavior to reflect the device’s current Focus.
-- [struct FocusFilterAppContext](focusfilterappcontext.md)
+- [struct FocusFilterAppContext](./focusfilterappcontext.md)
   A type that contains app-specific contextual information for a particular Focus, such as the notification filter criteria to apply.
-- [struct FocusFilterSuggestionContext](focusfiltersuggestioncontext.md)
+- [struct FocusFilterSuggestionContext](./focusfiltersuggestioncontext.md)
   A type you use to suggest app configurations for a given Focus.
 
 

@@ -1,7 +1,8 @@
 # annotationKeyValues
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains a deep copy of the widget’s properties.
 
@@ -19,19 +20,24 @@ A dictionary that contains a deep copy of the widget’s properties.
 var annotationKeyValues: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary * annotationKeyValues;
+```
+
 ## See Also
 
-- [func value(forAnnotationKey: PDFAnnotationKey) -> Any?](pdfannotation/value(forannotationkey:).md)
+### Modifying Annotation Attributes
+- [func value(forAnnotationKey: PDFAnnotationKey) -> Any?](./value%28forannotationkey%29.md)
   Returns a deep copy of the key-value pairs of properties for the specified key.
-- [func setValue(Any, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setvalue(_:forannotationkey:).md)
+- [func setValue(Any, forAnnotationKey: PDFAnnotationKey) -> Bool](./setvalue%28_,forannotationkey%29.md)
   Sets a value in the annotation’s dictionary.
-- [func setBoolean(Bool, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setboolean(_:forannotationkey:).md)
+- [func setBoolean(Bool, forAnnotationKey: PDFAnnotationKey) -> Bool](./setboolean%28_,forannotationkey%29.md)
   Sets a Boolean value in the annotation’s dictionary.
-- [func setRect(CGRect, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setrect(_:forannotationkey:).md)
+- [func setRect(CGRect, forAnnotationKey: PDFAnnotationKey) -> Bool](./setrect%28_,forannotationkey%29.md)
   Sets a rectangle value in the annotation’s dictionary.
-- [func removeValue(forAnnotationKey: PDFAnnotationKey)](pdfannotation/removevalue(forannotationkey:).md)
+- [func removeValue(forAnnotationKey: PDFAnnotationKey)](./removevalue%28forannotationkey%29.md)
   Removes a value from the annotation’s dictionary.
-- [struct PDFAnnotationKey](pdfannotationkey.md)
+- [struct PDFAnnotationKey](../pdfannotationkey.md)
   Keys for setting properties of annotations.
 
 

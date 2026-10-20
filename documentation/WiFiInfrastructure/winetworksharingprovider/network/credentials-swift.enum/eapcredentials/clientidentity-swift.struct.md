@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the client’s identity.
 
@@ -19,22 +20,22 @@ struct ClientIdentity
 ## Topics
 
 ### Instance Properties
-- [let certificate: Data](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/clientidentity-swift.struct/certificate.md)
+- [let certificate: Data](./clientidentity-swift.struct/certificate.md)
   The client’s certificate.
-- [let certificateChain: [Data]](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/clientidentity-swift.struct/certificatechain.md)
+- [let certificateChain: [Data]](./clientidentity-swift.struct/certificatechain.md)
   The certificate chain of the client.
-- [let privateKey: Data](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/clientidentity-swift.struct/privatekey.md)
+- [let privateKey: Data](./clientidentity-swift.struct/privatekey.md)
   The private key of the client.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the remainder after dividing this value by the given value, along with a Boolean value indicating whether overflow occurred during division.

@@ -1,7 +1,8 @@
 # HIDDeviceError.busy
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is busy.
 

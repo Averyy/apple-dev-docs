@@ -1,7 +1,8 @@
 # assetInfo
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of asset information authored on this object.
 

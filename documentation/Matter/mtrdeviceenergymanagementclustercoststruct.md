@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementClusterCostStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,26 +19,30 @@
 class MTRDeviceEnergyManagementClusterCostStruct
 ```
 
+```objc
+@interface MTRDeviceEnergyManagementClusterCostStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var costType: NSNumber](mtrdeviceenergymanagementclustercoststruct/costtype.md)
-- [var currency: NSNumber?](mtrdeviceenergymanagementclustercoststruct/currency.md)
-- [var decimalPoints: NSNumber](mtrdeviceenergymanagementclustercoststruct/decimalpoints.md)
-- [var value: NSNumber](mtrdeviceenergymanagementclustercoststruct/value.md)
+- [var costType: NSNumber](./mtrdeviceenergymanagementclustercoststruct/costtype.md)
+- [var currency: NSNumber?](./mtrdeviceenergymanagementclustercoststruct/currency.md)
+- [var decimalPoints: NSNumber](./mtrdeviceenergymanagementclustercoststruct/decimalpoints.md)
+- [var value: NSNumber](./mtrdeviceenergymanagementclustercoststruct/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

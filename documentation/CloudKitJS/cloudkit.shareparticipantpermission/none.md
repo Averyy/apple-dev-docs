@@ -1,7 +1,8 @@
 # NONE
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 No permissions.
 
@@ -10,17 +11,18 @@ No permissions.
 
 ## Declaration
 
-```swift
+```
 const String NONE;
 ```
 
 ## See Also
 
-- [READ_ONLY](cloudkit.shareparticipantpermission/read_only.md)
+### Enumeration Cases
+- [READ_ONLY](./read_only.md)
   Read-only permissions.
-- [READ_WRITE](cloudkit.shareparticipantpermission/read_write.md)
+- [READ_WRITE](./read_write.md)
   Read-write permissions.
-- [UNKNOWN](cloudkit.shareparticipantpermission/unknown.md)
+- [UNKNOWN](./unknown.md)
   Unknown permissions.
 
 

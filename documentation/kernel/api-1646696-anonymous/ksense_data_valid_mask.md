@@ -1,14 +1,15 @@
 # kSENSE_DATA_VALID_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_DATA_VALID_Mask = 0x80
 ```
 

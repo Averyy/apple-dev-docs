@@ -1,7 +1,8 @@
 # selection(from:to:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text between the two specified points in page space.
 
@@ -15,8 +16,28 @@ Returns the text between the two specified points in page space.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func selection(from startPoint: CGPoint, to endPoint: CGPoint) -> PDFSelection?
+```
+
+*macOS*
+
 ```swift
 func selection(from startPoint: NSPoint, to endPoint: NSPoint) -> PDFSelection?
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (PDFSelection *) selectionFromPoint:(CGPoint) startPoint toPoint:(CGPoint) endPoint;
+```
+
+*macOS*
+
+```objc
+- (PDFSelection *) selectionFromPoint:(NSPoint) startPoint toPoint:(NSPoint) endPoint;
 ```
 
 #### Discussion
@@ -29,13 +50,14 @@ To visualize the selection, picture the rectangle defined by `startPoint` and `e
 
 ## See Also
 
-- [func selection(for: CGRect) -> PDFSelection?](pdfpage/selection(for:)-2ckpi.md)
+### Working with Selections
+- [func selection(for: CGRect) -> PDFSelection?](./selection%28for%29-2ckpi.md)
   Returns the text enclosed within the specified rectangle, expressed in page (user) coordinates.
-- [func selectionForWord(at: CGPoint) -> PDFSelection?](pdfpage/selectionforword(at:).md)
+- [func selectionForWord(at: CGPoint) -> PDFSelection?](./selectionforword%28at%29.md)
   Returns the whole word that includes the specified point.
-- [func selectionForLine(at: CGPoint) -> PDFSelection?](pdfpage/selectionforline(at:).md)
+- [func selectionForLine(at: CGPoint) -> PDFSelection?](./selectionforline%28at%29.md)
   Returns the whole line of text that includes the specified point.
-- [func selection(for: NSRange) -> PDFSelection?](pdfpage/selection(for:)-20y9d.md)
+- [func selection(for: NSRange) -> PDFSelection?](./selection%28for%29-20y9d.md)
   Returns the text contained within the specified range.
 
 

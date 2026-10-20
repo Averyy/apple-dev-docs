@@ -1,7 +1,8 @@
 # signedDistanceGradientFromRedMask()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func signedDistanceGradientFromRedMask() -> any CIFilter & CISignedDistanceGradientFromRedMask
+```
+
+```objc
++ (CIFilter<CISignedDistanceGradientFromRedMask> *) signedDistanceGradientFromRedMaskFilter;
 ```
 
 

@@ -1,7 +1,8 @@
 # gad7Assessment(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,8 @@
 ```swift
 static func gad7Assessment(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKGAD7Assessment>
 ```
+
+Available when `Sample` inherits `HKSample`.
 
 
 ---

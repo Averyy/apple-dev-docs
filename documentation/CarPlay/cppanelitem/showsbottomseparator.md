@@ -1,7 +1,8 @@
 # showsBottomSeparator
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a separator line appears at the bottom edge of the item.
 
@@ -14,6 +15,10 @@ A Boolean value that indicates whether a separator line appears at the bottom ed
 
 ```swift
 var showsBottomSeparator: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL showsBottomSeparator;
 ```
 
 #### Discussion

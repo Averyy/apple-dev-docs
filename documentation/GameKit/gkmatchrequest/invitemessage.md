@@ -1,7 +1,8 @@
 # inviteMessage
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message sent to other players when the local player invites them to join a match.
 
@@ -20,13 +21,18 @@ The message sent to other players when the local player invites them to join a m
 var inviteMessage: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * inviteMessage;
+```
+
 ## See Also
 
-- [var recipients: [GKPlayer]?](gkmatchrequest/recipients.md)
+### Inviting players
+- [var recipients: [GKPlayer]?](./recipients.md)
   The players to invite to the match.
-- [var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)?](gkmatchrequest/recipientresponsehandler.md)
+- [var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)?](./recipientresponsehandler.md)
   A method that handles when a player responds to an invitation to join a match.
-- [enum GKInviteRecipientResponse](gkinviterecipientresponse.md)
+- [enum GKInviteRecipientResponse](../gkinviterecipientresponse.md)
   A player’s response to an invitation to join a match.
 
 

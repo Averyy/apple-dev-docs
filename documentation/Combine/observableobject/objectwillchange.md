@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A publisher that emits before the object has changed.
@@ -21,9 +22,15 @@ A publisher that emits before the object has changed.
 var objectWillChange: Self.ObjectWillChangePublisher { get }
 ```
 
+## Default Implementations
+
+### ObservableObject Implementations
+- [var objectWillChange: ObservableObjectPublisher](./objectwillchange-5gopl.md)
+
 ## See Also
 
-- [associatedtype ObjectWillChangePublisher : Publisher = ObservableObjectPublisher](observableobject/objectwillchangepublisher.md)
+### Publishing changes
+- [associatedtype ObjectWillChangePublisher : Publisher = ObservableObjectPublisher](./objectwillchangepublisher.md)
   The type of publisher that emits before the object has changed.
 
 

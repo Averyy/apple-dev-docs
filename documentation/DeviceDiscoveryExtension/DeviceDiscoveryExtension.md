@@ -1,7 +1,8 @@
 # DeviceDiscoveryExtension
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Stream media to a third-party device that a user selects in a system menu.
 
@@ -15,9 +16,9 @@ Stream media to a third-party device that a user selects in a system menu.
 
 Use DeviceDiscoveryExtension (DDE) to discover third-party media receivers to which your app can stream AV content.
 
-When a user invokes your app’s media-streaming UI, you can offer a third-party, local-network, or Bluetooth device as a streaming destination in a route picker view ([`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview)). The figure below illustrates actors in the discovery process. As depicted in the System section, your app’s device discovery extension loads when the view displays.
+When a user invokes your app’s media-streaming UI, you can offer a third-party, local-network, or Bluetooth device as a streaming destination in a route picker view ([`AVRoutePickerView`](../AVKit/avroutepickerview.md)). The figure below illustrates actors in the discovery process. As depicted in the System section, your app’s device discovery extension loads when the view displays.
 
-![A flowchart with four boxes in a horizontal row from left to right, each labeled respectively: user, app, system, and third-party device. Lines that represent channels extend downward from each box. At the top of the user channel is the start of a continuous arrow that traces a path with switchbacks through all the channels. Multiple steps of the device discovery process are shown in this path with arrows that indicate the order in which they occur, from the user invoking it until the third-party device plays the media.](/images/com.apple.devicediscoveryextension/media-4056835@2x.png)
+![A flowchart with four boxes in a horizontal row from left to right, each labeled respectively: user, app, system, and third-party device. Lines that represent channels extend downward from each box. At the top of the user channel is the start of a continuous arrow that traces a path with switchbacks through all the channels. Multiple steps of the device discovery process are shown in this path with arrows that indicate the order in which they occur, from the user invoking it until the third-party device plays the media.](https://developer.apple.com/tutorials/images/com.apple.devicediscoveryextension/media-4056835@2x.png)
 
 Once the extension loads:
 
@@ -32,58 +33,58 @@ Because DDE runs in a system sandbox, the extension doesn’t need to ask the us
 ## Topics
 
 ### Essentials
-- [Discovering a third-party media-streaming device](discovering-a-third-party-media-streaming-device.md)
+- [Discovering a third-party media-streaming device](./discovering-a-third-party-media-streaming-device.md)
   Build an extension that streams media to a server app in iOS or macOS.
-- [Media Device Discovery Extension](../bundleresources/entitlements/com.apple.developer.media-device-discovery-extension.md)
+- [Media Device Discovery Extension](../BundleResources/entitlements/com.apple.developer.media-device-discovery-extension.md)
   An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 ### Extension
-- [protocol DDDiscoveryExtension](dddiscoveryextension.md)
+- [protocol DDDiscoveryExtension](./dddiscoveryextension.md)
   A specification that enables the framework to start and stop the extension’s discovery process.
-- [class DDDiscoverySession](dddiscoverysession.md)
+- [class DDDiscoverySession](./dddiscoverysession.md)
   An object that relays device discovery events from the extension to the system.
-- [protocol DDDiscoveryExtensionConfigurationProtocol](dddiscoveryextensionconfigurationprotocol.md)
+- [protocol DDDiscoveryExtensionConfigurationProtocol](./dddiscoveryextensionconfigurationprotocol.md)
   A specification that provides a communication channel between the extension and the framework.
 ### Life cycle
-- [class DDDeviceEvent](dddeviceevent.md)
+- [class DDDeviceEvent](./dddeviceevent.md)
   An object that provides a device or communicates its change in status.
-- [DDDeviceEvent.EventType](dddeviceevent/eventtype-swift.enum.md)
+- [DDDeviceEvent.EventType](./dddeviceevent/eventtype-swift.enum.md)
   Identifiers for the types of events that occur in the device discovery life cycle.
-- [func DDEventTypeToString(DDDeviceEvent.EventType) -> String](ddeventtypetostring(_:).md)
+- [func DDEventTypeToString(DDDeviceEvent.EventType) -> String](./ddeventtypetostring%28_%29.md)
   Returns human-readable text for the specified event identifier.
-- [typealias DDEventHandler](ddeventhandler.md)
+- [typealias DDEventHandler](./ddeventhandler.md)
   A function that the extension invokes to signal an event.
 ### Device information
-- [class DDDevice](dddevice.md)
+- [class DDDevice](./dddevice.md)
   An object that describes a discovered device of interest.
-- [DDDevice.Category](dddevice/category-swift.enum.md)
+- [DDDevice.Category](./dddevice/category-swift.enum.md)
   An option that determines the icon for the device in the picker UI.
-- [enum DDDeviceState](dddevicestate.md)
+- [enum DDDeviceState](./dddevicestate.md)
   A state that represents the level of user interaction with the device.
-- [func DDDeviceCategoryToString(DDDevice.Category) -> String](dddevicecategorytostring(_:).md)
+- [func DDDeviceCategoryToString(DDDevice.Category) -> String](./dddevicecategorytostring%28_%29.md)
   Returns human-readable text for the specified identifier that describes a device’s category.
-- [func DDDeviceStateToString(DDDeviceState) -> String](dddevicestatetostring(_:).md)
+- [func DDDeviceStateToString(DDDeviceState) -> String](./dddevicestatetostring%28_%29.md)
   Returns human-readable text for the specified identifier that describes a device’s status.
-- [DDDevice.Protocol](dddevice/protocol-swift.enum.md)
+- [DDDevice.Protocol](./dddevice/protocol-swift.enum.md)
   An identifier for the manner in which an app interacts with a device.
-- [func DDDeviceProtocolToString(DDDevice.Protocol) -> String](dddeviceprotocoltostring(_:).md)
+- [func DDDeviceProtocolToString(DDDevice.Protocol) -> String](./dddeviceprotocoltostring%28_%29.md)
   Returns human-readable text for the specified protocol identifier.
-- [struct DDDeviceProtocolString](dddeviceprotocolstring.md)
+- [struct DDDeviceProtocolString](./dddeviceprotocolstring.md)
   String values for the manner in which an app interacts with a device.
-- [func DDDeviceMediaPlaybackStateToString(DDDevice.MediaPlaybackState) -> String](dddevicemediaplaybackstatetostring(_:).md)
+- [func DDDeviceMediaPlaybackStateToString(DDDevice.MediaPlaybackState) -> String](./dddevicemediaplaybackstatetostring%28_%29.md)
   Returns human-readable text for the specified media playback state.
 ### Errors
-- [struct DDError](dderror.md)
+- [struct DDError](./dderror.md)
   An error that the framework reports.
-- [DDError.Code](dderror/code.md)
+- [DDError.Code](./dderror/code.md)
   Codes that identify errors that can occur during the framework’s use.
-- [typealias DDErrorHandler](dderrorhandler.md)
+- [typealias DDErrorHandler](./dderrorhandler.md)
   A function that executes code you provide when an operation returns an error or completes successfully.
-- [typealias DDErrorOutType](dderrorouttype.md)
+- [typealias DDErrorOutType](./dderrorouttype.md)
   A type for framework functions that return error references.
-- [let DDErrorDomain: String](dderrordomain.md)
+- [let DDErrorDomain: String](./dderrordomain.md)
   A unique error domain for the framework.
 ### Reference
-- [DeviceDiscoveryExtension Enumerations](devicediscoveryextension-enumerations.md)
+- [DeviceDiscoveryExtension Enumerations](./devicediscoveryextension-enumerations.md)
 
 
 ---

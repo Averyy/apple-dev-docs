@@ -1,7 +1,8 @@
 # XCUIVoiceOverService
 
 **Framework**: XCUIAutomation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -20,6 +21,10 @@
 class XCUIVoiceOverService
 ```
 
+```objc
+@interface XCUIVoiceOverService : NSObject
+```
+
 #### Overview
 
 Provides programmatic control of VoiceOver for UI testing.
@@ -29,42 +34,42 @@ Access this service through the @c voiceOverService property on @c XCUIDevice.
 ## Topics
 
 ### Classes
-- [XCUIVoiceOverService.Output](xcuivoiceoverservice/output.md)
+- [XCUIVoiceOverService.Output](./xcuivoiceoverservice/output.md)
 ### Structures
-- [XCUIVoiceOverService.Error](xcuivoiceoverservice/error.md)
+- [XCUIVoiceOverService.Error](./xcuivoiceoverservice/error.md)
 ### Instance Properties
-- [var debugDescription: String](xcuivoiceoverservice/debugdescription.md)
+- [var debugDescription: String](./xcuivoiceoverservice/debugdescription.md)
   Provides debugging information about the service.
-- [var isEnabled: Bool](xcuivoiceoverservice/isenabled.md)
+- [var isEnabled: Bool](./xcuivoiceoverservice/isenabled.md)
   Whether VoiceOver is currently enabled.
 ### Instance Methods
-- [func currentSpeech() throws -> XCUIVoiceOverService.Output](xcuivoiceoverservice/currentspeech.md)
+- [func currentSpeech() throws -> XCUIVoiceOverService.Output](./xcuivoiceoverservice/currentspeech%28%29.md)
   Return the speech for the currently focused element.
-- [func disable() throws](xcuivoiceoverservice/disable.md)
+- [func disable() throws](./xcuivoiceoverservice/disable%28%29.md)
   Disable VoiceOver.
-- [func enable() throws](xcuivoiceoverservice/enable.md)
+- [func enable() throws](./xcuivoiceoverservice/enable%28%29.md)
   Enable VoiceOver.
-- [func moveBackward() throws -> XCUIVoiceOverService.Output](xcuivoiceoverservice/movebackward.md)
+- [func moveBackward() throws -> XCUIVoiceOverService.Output](./xcuivoiceoverservice/movebackward%28%29.md)
   Move VoiceOver to the previous element and return its speech.
-- [func moveForward() throws -> XCUIVoiceOverService.Output](xcuivoiceoverservice/moveforward.md)
+- [func moveForward() throws -> XCUIVoiceOverService.Output](./xcuivoiceoverservice/moveforward%28%29.md)
   Move VoiceOver to the next element and return its speech.
-- [func moveIn() throws -> XCUIVoiceOverService.Output](xcuivoiceoverservice/movein.md)
+- [func moveIn() throws -> XCUIVoiceOverService.Output](./xcuivoiceoverservice/movein%28%29.md)
   Move VoiceOver into the current container and return its speech.
-- [func moveOut() throws -> XCUIVoiceOverService.Output](xcuivoiceoverservice/moveout.md)
+- [func moveOut() throws -> XCUIVoiceOverService.Output](./xcuivoiceoverservice/moveout%28%29.md)
   Move VoiceOver out of the current container and return its speech.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

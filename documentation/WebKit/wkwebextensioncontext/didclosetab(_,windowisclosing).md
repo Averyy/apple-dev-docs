@@ -1,7 +1,8 @@
 # didCloseTab(_:windowIsClosing:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the app when a tab is closed to fire appropriate events with only this extension.
 
@@ -30,9 +31,10 @@ This method informs only the specific extension of the closure of a tab. If the 
 
 ## See Also
 
-- [func didOpenTab(any WKWebExtensionTab)](wkwebextensioncontext/didopentab(_:).md)
+### Related Documentation
+- [func didOpenTab(any WKWebExtensionTab)](./didopentab%28_%29.md)
   Called by the app when a new tab is opened to fire appropriate events with only this extension.
-- [var openTabs: Set<AnyHashable>](wkwebextensioncontext/opentabs.md)
+- [var openTabs: Set<AnyHashable>](./opentabs.md)
   A set of open tabs in all open windows that are exposed to this extension.
 
 

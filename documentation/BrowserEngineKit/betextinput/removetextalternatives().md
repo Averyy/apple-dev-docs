@@ -1,7 +1,8 @@
 # removeTextAlternatives()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes text alternatives from the text input object for the current selection
 
@@ -17,9 +18,13 @@ Removes text alternatives from the text input object for the current selection
 optional func removeTextAlternatives()
 ```
 
+```objc
+- (void) removeTextAlternatives;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # preview
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional targeted preview that the system uses to animate the transition to the new scene.
 
@@ -17,13 +18,18 @@ An optional targeted preview that the system uses to animate the transition to t
 var preview: UITargetedPreview? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UITargetedPreview * preview;
+```
+
 ## See Also
 
-- [var userActivity: NSUserActivity](uiwindowscene/activationconfiguration/useractivity.md)
+### Getting information about the activation configuration
+- [var userActivity: NSUserActivity](./useractivity.md)
   The user activity used to request a scene.
-- [var options: UIWindowScene.ActivationRequestOptions?](uiwindowscene/activationconfiguration/options.md)
+- [var options: UIWindowScene.ActivationRequestOptions?](./options.md)
   Options for customizing the scene request.
-- [UIWindowScene.ActivationRequestOptions](uiwindowscene/activationrequestoptions.md)
+- [UIWindowScene.ActivationRequestOptions](../activationrequestoptions.md)
   An object that contains information you want the system to use when activating a new window scene.
 
 

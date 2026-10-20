@@ -1,19 +1,26 @@
 # mapView(_:viewFor:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the overlay view to use when displaying the specified overlay object.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+ - Deprecated in 13.0
+- iPadOS 4.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Implement the [`mapView(_:rendererFor:)`](./mapview%28_,rendererfor%29.md) method instead.
 
 ## Declaration
 
 ```swift
 optional func mapView(_ mapView: MKMapView, viewFor overlay: any MKOverlay) -> MKOverlayView
+```
+
+```objc
+- (MKOverlayView *) mapView:(MKMapView *) mapView viewForOverlay:(id<MKOverlay>) overlay;
 ```
 
 #### Return Value
@@ -27,9 +34,10 @@ The view to use when presenting the specified overlay on the map. If you return 
 
 ## See Also
 
-- [func view(for: any MKOverlay) -> MKOverlayView](mkmapview/view(for:)-38z60.md)
+### Methods
+- [func view(for: any MKOverlay) -> MKOverlayView](../mkmapview/view%28for%29-38z60.md)
   Returns the view associated with the overlay object, if any.
-- [func mapView(MKMapView, didAddOverlayViews: [Any])](mkmapviewdelegate/mapview(_:didaddoverlayviews:).md)
+- [func mapView(MKMapView, didAddOverlayViews: [Any])](./mapview%28_,didaddoverlayviews%29.md)
   Tells the delegate when the map adds one or more overlay views to the map.
 
 

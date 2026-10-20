@@ -1,17 +1,22 @@
 # weight(of:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an approximation of the specified font’s weight.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func weight(of fontObj: NSFont) -> Int
+```
+
+```objc
+- (NSInteger) weightOfFont:(NSFont *) fontObj;
 ```
 
 #### Return Value
@@ -24,11 +29,12 @@ An approximation of the weight of the given font, where 0 indicates the lightest
 
 ## See Also
 
-- [func traits(of: NSFont) -> NSFontTraitMask](nsfontmanager/traits(of:).md)
+### Examining Fonts
+- [func traits(of: NSFont) -> NSFontTraitMask](./traits%28of%29.md)
   Returns the traits of the given font.
-- [func fontNamed(String, hasTraits: NSFontTraitMask) -> Bool](nsfontmanager/fontnamed(_:hastraits:).md)
+- [func fontNamed(String, hasTraits: NSFontTraitMask) -> Bool](./fontnamed%28_,hastraits%29.md)
   Indicates whether the given font has all the specified traits.
-- [struct NSFontTraitMask](nsfonttraitmask.md)
+- [struct NSFontTraitMask](../nsfonttraitmask.md)
   Constants for isolating specific traits of a font.
 
 

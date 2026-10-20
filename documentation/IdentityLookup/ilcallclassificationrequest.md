@@ -1,7 +1,8 @@
 # ILCallClassificationRequest
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A classification request for phone calls.
 
@@ -17,31 +18,36 @@ A classification request for phone calls.
 class ILCallClassificationRequest
 ```
 
+```objc
+@interface ILCallClassificationRequest : ILClassificationRequest
+```
+
 ## Topics
 
 ### Accessing Calls
-- [var callCommunications: [ILCallCommunication]](ilcallclassificationrequest/callcommunications.md)
+- [var callCommunications: [ILCallCommunication]](./ilcallclassificationrequest/callcommunications.md)
   The calls the user selected to report.
 
 ## Relationships
 
 ### Inherits From
-- [ILClassificationRequest](ilclassificationrequest.md)
+- [ILClassificationRequest](./ilclassificationrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class ILClassificationRequest](ilclassificationrequest.md)
+### Requests
+- [class ILClassificationRequest](./ilclassificationrequest.md)
   The abstract superclass for classification requests.
-- [class ILMessageClassificationRequest](ilmessageclassificationrequest.md)
+- [class ILMessageClassificationRequest](./ilmessageclassificationrequest.md)
   A classification request for SMS messages.
 
 

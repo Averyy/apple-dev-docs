@@ -1,7 +1,8 @@
 # setTimeZoneWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetTimeZone
 
@@ -17,7 +18,15 @@ Command SetTimeZone
 ## Declaration
 
 ```swift
+func setTimeZoneWith(_ params: MTRTimeSynchronizationClusterSetTimeZoneParams, completion: @escaping @Sendable (MTRTimeSynchronizationClusterSetTimeZoneResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func setTimeZoneWith(_ params: MTRTimeSynchronizationClusterSetTimeZoneParams) async throws -> MTRTimeSynchronizationClusterSetTimeZoneResponseParams
+```
+
+```objc
+- (void) setTimeZoneWithParams:(MTRTimeSynchronizationClusterSetTimeZoneParams *) params completion:(void (^)(MTRTimeSynchronizationClusterSetTimeZoneResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

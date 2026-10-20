@@ -1,7 +1,8 @@
 # Swift Testing
 
 **Framework**: Swift Testing  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Create and run tests for your Swift packages and Xcode projects.
 
@@ -11,7 +12,7 @@ Create and run tests for your Swift packages and Xcode projects.
 
 #### Overview
 
-![The Swift logo on a blue gradient background that contains function, number, tag, and checkmark diamond symbols.](/images/org.swift.testing/swift-testing-hero@2x.png)
+![The Swift logo on a blue gradient background that contains function, number, tag, and checkmark diamond symbols.](https://developer.apple.com/tutorials/images/org.swift.testing/swift-testing-hero@2x.png)
 
 With Swift Testing you leverage powerful and expressive capabilities of the Swift programming language to develop tests with more confidence and less code. The library integrates seamlessly with Swift Package Manager testing workflow, supports flexible test organization, customizable metadata, and scalable test execution.
 
@@ -24,56 +25,56 @@ With Swift Testing you leverage powerful and expressive capabilities of the Swif
 - Categorize tests using tags.
 - Associate bugs directly with the tests that verify their fixes or reproduce their problems.
 
-###### Related Videos
+###### Related videos
 
-- [`Meet Swift Testing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10179)
-- [`Go further with Swift Testing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10195)
+- [Meet Swift Testing](https://developer.apple.com/videos/play/wwdc2024/10179)
+- [Go further with Swift Testing](https://developer.apple.com/videos/play/wwdc2024/10195)
 
 ## Topics
 
 ### Essentials
-- [Defining test functions](definingtests.md)
+- [Defining test functions](./definingtests.md)
   Define a test function to validate that code is working correctly.
-- [Organizing test functions with suite types](organizingtests.md)
+- [Organizing test functions with suite types](./organizingtests.md)
   Organize tests into test suites.
-- [Migrating a test from XCTest](migratingfromxctest.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
   Migrate an existing test method or test class written using XCTest.
-- [macro Test(String?, any TestTrait...)](test(_:_:).md)
+- [macro Test(String?, any TestTrait...)](./test%28_,_%29.md)
   Declare a test.
-- [struct Test](test.md)
+- [struct Test](./test.md)
   A type representing a test or suite.
-- [macro Suite(String?, any SuiteTrait...)](suite(_:_:).md)
+- [macro Suite(String?, any SuiteTrait...)](./suite%28_,_%29.md)
   Declare a test suite.
 ### Test parameterization
-- [Implementing parameterized tests](parameterizedtesting.md)
+- [Implementing parameterized tests](./parameterizedtesting.md)
   Specify different input parameters to generate multiple test cases from a test function.
-- [macro Test<C>(String?, any TestTrait..., arguments: C)](test(_:_:arguments:)-8kn7a.md)
+- [macro Test<C>(String?, any TestTrait..., arguments: C)](./test%28_,_,arguments%29-8kn7a.md)
   Declare a test parameterized over a collection of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: C1, C2)](test(_:_:arguments:_:).md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: C1, C2)](./test%28_,_,arguments,_%29.md)
   Declare a test parameterized over two collections of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](test(_:_:arguments:)-3rzok.md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](./test%28_,_,arguments%29-3rzok.md)
   Declare a test parameterized over two zipped collections of values.
-- [protocol CustomTestArgumentEncodable](customtestargumentencodable.md)
+- [protocol CustomTestArgumentEncodable](./customtestargumentencodable.md)
   A protocol for customizing how arguments passed to parameterized tests are encoded, which is used to match against when running specific arguments.
-- [struct Case](test/case.md)
-  A single test case from a parameterized [`Test`](test.md).
+- [struct Case](./test/case.md)
+  A single test case from a parameterized [`Test`](./test.md).
 ### Behavior validation
-- [Expectations and confirmations](expectations.md)
+- [Expectations and confirmations](./expectations.md)
   Check for expected values, outcomes, and asynchronous events in tests.
-- [Known issues](known-issues.md)
+- [Known issues](./known-issues.md)
   Mark issues as known when running tests.
 ### Test customization
-- [Traits](traits.md)
+- [Traits](./traits.md)
   Annotate test functions and suites, and customize their behavior.
 ### Value description and reflection
-- [Describing and reflecting values](describing-values.md)
+- [Describing and reflecting values](./describing-values.md)
   Add custom descriptions and mirrors to values you use in your tests.
-- [protocol CustomTestReflectable](customtestreflectable.md)
+- [protocol CustomTestReflectable](./customtestreflectable.md)
   A protocol describing types with a custom reflection when presented as part of a test’s output.
-- [protocol CustomTestStringConvertible](customteststringconvertible.md)
+- [protocol CustomTestStringConvertible](./customteststringconvertible.md)
   A protocol describing types with a custom string representation when presented as part of a test’s output.
 ### Data collection
-- [Attachments](attachments.md)
+- [Attachments](./attachments.md)
   Attach values to tests to help diagnose issues and gather feedback.
 
 

@@ -1,7 +1,8 @@
 # FSClient
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface for apps and daemons to interact with FSKit.
 
@@ -14,6 +15,10 @@ An interface for apps and daemons to interact with FSKit.
 class FSClient
 ```
 
+```objc
+@interface FSClient : NSObject
+```
+
 #### Overview
 
 FSClient is the primary management interface for FSKit. Use this class to discover FSKit extensions installed on the system, including your own.
@@ -23,33 +28,33 @@ FSClient is the primary management interface for FSKit. Use this class to discov
 ## Topics
 
 ### Obtaining the shared instance
-- [class var shared: FSClient](fsclient/shared.md)
+- [class var shared: FSClient](./fsclient/shared.md)
   The shared instance of the FSKit client class.
 ### Discovering installed extensions
-- [func fetchInstalledExtensions(completionHandler: ([FSModuleIdentity]?, (any Error)?) -> Void)](fsclient/fetchinstalledextensions(completionhandler:).md)
+- [func fetchInstalledExtensions(completionHandler: ([FSModuleIdentity]?, (any Error)?) -> Void)](./fsclient/fetchinstalledextensions%28completionhandler%29.md)
   Asynchronously retrieves an list of installed file system modules.
-- [class FSModuleIdentity](fsmoduleidentity.md)
+- [class FSModuleIdentity](./fsmoduleidentity.md)
   An installed file system module.
 ### Performing single-volume mounting
-- [func mountSingleVolume(resource: FSResource, bundleID: String, options: [String], completionHandler: (URL?, (any Error)?) -> Void)](fsclient/mountsinglevolume(resource:bundleid:options:completionhandler:).md)
+- [func mountSingleVolume(resource: FSResource, bundleID: String, options: [String], completionHandler: (URL?, (any Error)?) -> Void)](./fsclient/mountsinglevolume%28resource,bundleid,options,completionhandler%29.md)
   Asynchronously mounts a single volume file system with a given resource.
-- [class FSResource](fsresource.md)
+- [class FSResource](./fsresource.md)
   An abstract resource a file system uses to provide data for a volume.
 ### Accessing file system extension settings
-- [func openFileSystemExtensionsSettings() -> Bool](fsclient/openfilesystemextensionssettings.md)
+- [func openFileSystemExtensionsSettings() -> Bool](./fsclient/openfilesystemextensionssettings%28%29.md)
   Opens the File System Extensions settings in System Settings.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

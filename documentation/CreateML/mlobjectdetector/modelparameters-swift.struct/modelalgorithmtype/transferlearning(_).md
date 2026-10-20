@@ -1,7 +1,8 @@
 # MLObjectDetector.ModelParameters.ModelAlgorithmType.transferLearning(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm that leverages the knowledge of a general purpose model built into the operating system.
 
@@ -23,9 +24,10 @@ You typically use this transfer-learning algorithm to train an object detector i
 
 ## See Also
 
-- [MLObjectDetector.ModelParameters.ModelAlgorithmType.darknetYolo](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/darknetyolo.md)
+### Designating an algorithm
+- [MLObjectDetector.ModelParameters.ModelAlgorithmType.darknetYolo](./darknetyolo.md)
   An algorithm that trains a full neural network with your training data.
-- [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
+- [MLObjectDetector.ModelParameters.FeatureExtractorType](../featureextractortype.md)
   The underlying base model that extracts image features for an object-detector training session.
 
 

@@ -1,7 +1,8 @@
 # clientIdentifier
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier matching the client identifier set in the translation request.
 
@@ -23,9 +24,10 @@ Use this identifier to associate a translation request with its response. If you
 
 ## See Also
 
-- [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
+### Getting translation details
+- [let sourceLanguage: Locale.Language](./sourcelanguage.md)
   The language that the framework translated the text from.
-- [let targetLanguage: Locale.Language](translationsession/response/targetlanguage.md)
+- [let targetLanguage: Locale.Language](./targetlanguage.md)
   The language that the framework translated the text into.
 
 

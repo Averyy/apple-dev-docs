@@ -1,17 +1,18 @@
 # Close
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the session to the PCI device.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void Close(IOService *forClient, IOOptionBits options);
 ```
 
@@ -26,11 +27,12 @@ This method closes the session previously opened by the object in the `forClient
 
 ## See Also
 
-- [init](iopcidevice/init.md)
+### Running the Service
+- [init](./init.md)
   Initializes the device.
-- [Open](iopcidevice/open.md)
+- [Open](./open.md)
   Opens a session to the PCI device.
-- [free](iopcidevice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the object.
 
 

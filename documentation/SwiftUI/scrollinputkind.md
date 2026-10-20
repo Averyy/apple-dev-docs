@@ -1,7 +1,8 @@
 # ScrollInputKind
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Inputs used to scroll views.
 
@@ -23,26 +24,27 @@ struct ScrollInputKind
 ## Topics
 
 ### Type Properties
-- [static let handGestureShortcut: ScrollInputKind](scrollinputkind/handgestureshortcut.md)
+- [static let handGestureShortcut: ScrollInputKind](./scrollinputkind/handgestureshortcut.md)
   A finger or wrist movement that the user can perform in order to scroll a view.
-- [static let look: ScrollInputKind](scrollinputkind/look.md)
+- [static let look: ScrollInputKind](./scrollinputkind/look.md)
   On visionOS, by looking at the edge of a scroll view the content can automatically scroll. The axes will be determined automatically.
 ### Type Methods
-- [static func look(axes: Axis.Set) -> ScrollInputKind](scrollinputkind/look(axes:).md)
+- [static func look(axes: Axis.Set) -> ScrollInputKind](./scrollinputkind/look%28axes%29.md)
   On visionOS, by looking at the edge of a scroll view the content can automatically scroll. This contructor method takes a set of the scrollable axes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](view/scrollinputbehavior(_:for:).md)
+### Managing scrolling for different inputs
+- [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](./view/scrollinputbehavior%28_,for%29.md)
   Enables or disables scrolling in scrollable views when using particular inputs.
-- [struct ScrollInputBehavior](scrollinputbehavior.md)
+- [struct ScrollInputBehavior](./scrollinputbehavior.md)
   A type that defines whether input should scroll a view.
 
 

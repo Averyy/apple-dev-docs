@@ -1,7 +1,8 @@
 # AppClipHeaderImageCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppClipHeaderImageCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization](appclipheaderimagecreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperiencelocalization-data.dictionary.md)
+- [object AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization](./relationships-data.dictionary/appclipdefaultexperiencelocalization-data.dictionary.md)
   The relationship to the Default App Clip Experience Localizations resource you set with the request that creates an App Clip Header Images resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppClipHeaderImageCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppClipHeaderImageCreateRequest.Data.Attributes](appclipheaderimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppClipHeaderImageCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the new App Clip Header Images resource.
 
 

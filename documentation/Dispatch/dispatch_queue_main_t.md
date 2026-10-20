@@ -1,18 +1,19 @@
 # dispatch_queue_main_t
 
 **Framework**: Dispatch  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A dispatch queue that is bound to the app’s main thread and executes tasks serially on that thread.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ A dispatch queue that is bound to the app’s main thread and executes tasks ser
 typealias dispatch_queue_main_t = OS_dispatch_queue_main
 ```
 
+```c
+typedef NSObject<OS_dispatch_queue_main> * dispatch_queue_main_t;
+```
+
 ## See Also
 
-- [class var main: DispatchQueue](dispatchqueue/main.md)
+### Creating a Dispatch Queue
+- [class var main: DispatchQueue](./dispatchqueue/main.md)
   The dispatch queue associated with the main thread of the current process.
-- [class func global(qos: DispatchQoS.QoSClass) -> DispatchQueue](dispatchqueue/global(qos:).md)
+- [class func global(qos: DispatchQoS.QoSClass) -> DispatchQueue](./dispatchqueue/global%28qos%29.md)
   Returns the global system queue with the specified quality-of-service class.
-- [convenience init(label: String, qos: DispatchQoS, attributes: DispatchQueue.Attributes, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency, target: DispatchQueue?)](dispatchqueue/init(label:qos:attributes:autoreleasefrequency:target:).md)
+- [convenience init(label: String, qos: DispatchQoS, attributes: DispatchQueue.Attributes, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency, target: DispatchQueue?)](./dispatchqueue/init%28label,qos,attributes,autoreleasefrequency,target%29.md)
   Creates a new dispatch queue to which you can submit blocks.
-- [DispatchQoS.QoSClass](dispatchqos/qosclass-swift.enum.md)
+- [DispatchQoS.QoSClass](./dispatchqos/qosclass-swift.enum.md)
   Quality-of-service classes that specify the priorities for executing tasks.
-- [DispatchQueue.Attributes](dispatchqueue/attributes.md)
+- [DispatchQueue.Attributes](./dispatchqueue/attributes.md)
   Attributes that define the behavior of a dispatch queue.
-- [DispatchQueue.AutoreleaseFrequency](dispatchqueue/autoreleasefrequency.md)
+- [DispatchQueue.AutoreleaseFrequency](./dispatchqueue/autoreleasefrequency.md)
   Constants indicating the frequency with which a dispatch queue autoreleases objects.
-- [class OS_dispatch_queue_main](os_dispatch_queue_main-swift.class.md)
+- [class OS_dispatch_queue_main](./os_dispatch_queue_main-swift.class.md)
   A system-provided dispatch queue that schedules tasks for serial execution on the app’s main thread.
-- [class OS_dispatch_queue_global](os_dispatch_queue_global-swift.class.md)
+- [class OS_dispatch_queue_global](./os_dispatch_queue_global-swift.class.md)
   A system-provided dispatch queue that schedules tasks for concurrent execution.
-- [class DispatchSerialQueue](dispatchserialqueue.md)
+- [class DispatchSerialQueue](./dispatchserialqueue.md)
   A custom dispatch queue that schedules tasks for serial execution on an arbitrary thread.
-- [class DispatchConcurrentQueue](dispatchconcurrentqueue.md)
+- [class DispatchConcurrentQueue](./dispatchconcurrentqueue.md)
   A custom dispatch queue that schedules tasks for concurrent execution.
-- [typealias dispatch_queue_global_t](dispatch_queue_global_t.md)
+- [typealias dispatch_queue_global_t](./dispatch_queue_global_t.md)
   A dispatch queue that executes tasks concurrently using threads from the global thread pool.
-- [typealias dispatch_queue_serial_t](dispatch_queue_serial_t.md)
+- [typealias dispatch_queue_serial_t](./dispatch_queue_serial_t.md)
   A dispatch queue that executes tasks serially in first-in, first-out (FIFO) order.
-- [typealias dispatch_queue_concurrent_t](dispatch_queue_concurrent_t.md)
+- [typealias dispatch_queue_concurrent_t](./dispatch_queue_concurrent_t.md)
   A dispatch queue that executes tasks concurrently and in any order, respecting any barriers that may be in place.
 
 

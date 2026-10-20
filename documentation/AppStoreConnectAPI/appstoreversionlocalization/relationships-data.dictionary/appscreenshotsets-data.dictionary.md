@@ -1,7 +1,8 @@
 # AppStoreVersionLocalization.Relationships.AppScreenshotSets
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalization.Relationships.AppScreenshotSets
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionLocalization.Relationships.AppScreenshotSets.Data](appstoreversionlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.AppScreenshotSets.Data](./appscreenshotsets-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -28,9 +29,10 @@ object AppStoreVersionLocalization.Relationships.AppScreenshotSets
 
 ## See Also
 
-- [object AppStoreVersionLocalization.Relationships.AppPreviewSets](appstoreversionlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)
+### Objects
+- [object AppStoreVersionLocalization.Relationships.AppPreviewSets](./apppreviewsets-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersionLocalization.Relationships.AppStoreVersion](appstoreversionlocalization/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.AppStoreVersion](./appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

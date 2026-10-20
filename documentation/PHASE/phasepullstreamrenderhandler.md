@@ -1,20 +1,25 @@
 # PHASEPullStreamRenderHandler
 
 **Framework**: PHASE  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias PHASEPullStreamRenderHandler = (UnsafeMutablePointer<ObjCBool>, UnsafePointer<AudioTimeStamp>, AVAudioFrameCount, UnsafeMutablePointer<AudioBufferList>) -> OSStatus
+```
+
+```c
+typedef int (^)(_Bool *, const struct AudioTimeStamp *, unsigned int, struct AudioBufferList *) PHASEPullStreamRenderBlock;
 ```
 
 #### Return Value
@@ -25,7 +30,7 @@ An OSStatus result code. If an error is returned, the audio data should be assum
 
 Block to supply audio data to PHASEPullStreamNode
 
-```None
+```
 The caller must supply valid buffers in outputData's mBuffers' mData and mDataByteSize.
 mDataByteSize must be consistent with frameCount. This block may provide output in those
 specified buffers, or it may replace the mData pointers with pointers to memory which it

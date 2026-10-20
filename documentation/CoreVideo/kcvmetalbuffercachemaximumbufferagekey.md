@@ -1,7 +1,8 @@
 # kCVMetalBufferCacheMaximumBufferAgeKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let kCVMetalBufferCacheMaximumBufferAgeKey: CFString
+```
+
+```c
+extern CFStringRef const kCVMetalBufferCacheMaximumBufferAgeKey;
 ```
 
 

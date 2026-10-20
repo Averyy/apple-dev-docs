@@ -1,7 +1,8 @@
 # fixed(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A rounded corner style where the corner’s radius is the value you provide.
 

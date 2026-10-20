@@ -1,7 +1,8 @@
 # CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBlockBuffer(allocator:closedCaptionFormatDescription:flavor:blockBufferOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the contents of a closed caption format description to a buffer in big-endian byte order.
 
@@ -20,6 +21,10 @@ Copies the contents of a closed caption format description to a buffer in big-en
 func CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBlockBuffer(allocator: CFAllocator?, closedCaptionFormatDescription: CMClosedCaptionFormatDescription, flavor: CMClosedCaptionDescriptionFlavor?, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBlockBuffer(CFAllocatorRef allocator, CMClosedCaptionFormatDescriptionRef closedCaptionFormatDescription, CMClosedCaptionDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
+```
+
 #### Discussion
 
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
@@ -35,15 +40,16 @@ On return, the caller owns the returned CMBlockBuffer, and must release it when 
 
 ## See Also
 
-- [struct CMClosedCaptionDescriptionFlavor](cmclosedcaptiondescriptionflavor.md)
+### Working with Closed Captioning Descriptions
+- [struct CMClosedCaptionDescriptionFlavor](./cmclosedcaptiondescriptionflavor.md)
   Types that represent closed caption format descriptions.
-- [func CMClosedCaptionFormatDescriptionCreateFromBigEndianClosedCaptionDescriptionBlockBuffer(allocator: CFAllocator?, bigEndianClosedCaptionDescriptionBlockBuffer: CMBlockBuffer, flavor: CMClosedCaptionDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMClosedCaptionFormatDescription?>) -> OSStatus](cmclosedcaptionformatdescriptioncreatefrombigendianclosedcaptiondescriptionblockbuffer(allocator:bigendianclosedcaptiondescriptionblockbuffer:flavor:formatdescriptionout:).md)
+- [func CMClosedCaptionFormatDescriptionCreateFromBigEndianClosedCaptionDescriptionBlockBuffer(allocator: CFAllocator?, bigEndianClosedCaptionDescriptionBlockBuffer: CMBlockBuffer, flavor: CMClosedCaptionDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMClosedCaptionFormatDescription?>) -> OSStatus](./cmclosedcaptionformatdescriptioncreatefrombigendianclosedcaptiondescriptionblockbuffer%28allocator,bigendianclosedcaptiondescriptionblockbuffer,flavor,formatdescriptionout%29.md)
   Creates a closed caption format description from a big-endian closed caption description structure in a buffer.
-- [func CMClosedCaptionFormatDescriptionCreateFromBigEndianClosedCaptionDescriptionData(allocator: CFAllocator?, bigEndianClosedCaptionDescriptionData: UnsafePointer<UInt8>, size: Int, flavor: CMClosedCaptionDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMClosedCaptionFormatDescription?>) -> OSStatus](cmclosedcaptionformatdescriptioncreatefrombigendianclosedcaptiondescriptiondata(allocator:bigendianclosedcaptiondescriptiondata:size:flavor:formatdescriptionout:).md)
+- [func CMClosedCaptionFormatDescriptionCreateFromBigEndianClosedCaptionDescriptionData(allocator: CFAllocator?, bigEndianClosedCaptionDescriptionData: UnsafePointer<UInt8>, size: Int, flavor: CMClosedCaptionDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMClosedCaptionFormatDescription?>) -> OSStatus](./cmclosedcaptionformatdescriptioncreatefrombigendianclosedcaptiondescriptiondata%28allocator,bigendianclosedcaptiondescriptiondata,size,flavor,formatdescriptionout%29.md)
   Creates a closed caption format description from a big-endian closed caption description structure.
-- [func CMSwapHostEndianClosedCaptionDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](cmswaphostendianclosedcaptiondescriptiontobig(_:_:).md)
+- [func CMSwapHostEndianClosedCaptionDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswaphostendianclosedcaptiondescriptiontobig%28_,_%29.md)
   Converts a closed caption description structure from host-endian to big-endian, in place.
-- [func CMSwapBigEndianClosedCaptionDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](cmswapbigendianclosedcaptiondescriptiontohost(_:_:).md)
+- [func CMSwapBigEndianClosedCaptionDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswapbigendianclosedcaptiondescriptiontohost%28_,_%29.md)
   Converts a closed caption description structure from big-endian to host-endian, in place.
 
 

@@ -1,7 +1,8 @@
 # AVRoutePickerViewButtonStyle.plain
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A plain button style.
 
@@ -14,15 +15,20 @@ A plain button style.
 case plain
 ```
 
+```c
+AVRoutePickerViewButtonStylePlain
+```
+
 #### Discussion
 
 Use this style to set the button to match the system style, except without a blurred background view.
 
 ## See Also
 
-- [AVRoutePickerViewButtonStyle.custom](avroutepickerviewbuttonstyle/custom.md)
+### Button styles
+- [AVRoutePickerViewButtonStyle.custom](./custom.md)
   A custom button style.
-- [AVRoutePickerViewButtonStyle.system](avroutepickerviewbuttonstyle/system.md)
+- [AVRoutePickerViewButtonStyle.system](./system.md)
   A system-defined button style.
 
 

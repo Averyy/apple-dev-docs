@@ -1,7 +1,8 @@
 # otherExecute
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that other users have execute-only permission.
 
@@ -22,17 +23,18 @@ static var otherExecute: FilePermissions { get }
 
 ## See Also
 
-- [static var otherRead: FilePermissions](filepermissions/otherread.md)
+### Other Permissions
+- [static var otherRead: FilePermissions](./otherread.md)
   Indicates that other users have read-only permission.
-- [static var otherWrite: FilePermissions](filepermissions/otherwrite.md)
+- [static var otherWrite: FilePermissions](./otherwrite.md)
   Indicates that other users have write-only permission.
-- [static var otherReadWrite: FilePermissions](filepermissions/otherreadwrite.md)
+- [static var otherReadWrite: FilePermissions](./otherreadwrite.md)
   Indicates that other users have read-write permission.
-- [static var otherReadExecute: FilePermissions](filepermissions/otherreadexecute.md)
+- [static var otherReadExecute: FilePermissions](./otherreadexecute.md)
   Indicates that other users have read-execute permission.
-- [static var otherWriteExecute: FilePermissions](filepermissions/otherwriteexecute.md)
+- [static var otherWriteExecute: FilePermissions](./otherwriteexecute.md)
   Indicates that other users have write-execute permission.
-- [static var otherReadWriteExecute: FilePermissions](filepermissions/otherreadwriteexecute.md)
+- [static var otherReadWriteExecute: FilePermissions](./otherreadwriteexecute.md)
   Indicates that other users have read, write, and execute permission.
 
 

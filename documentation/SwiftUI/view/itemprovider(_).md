@@ -1,7 +1,8 @@
 # itemProvider(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a closure that vends the drag representation to be used for a particular data element.
 
@@ -23,21 +24,22 @@ func itemProvider(_ action: Optional<() -> NSItemProvider?>) -> some View
 
 ## See Also
 
-- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](view/ondrag(_:preview:).md)
+### Moving items using item providers
+- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](./ondrag%28_,preview%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrag(() -> NSItemProvider) -> some View](view/ondrag(_:).md)
+- [func onDrag(() -> NSItemProvider) -> some View](./ondrag%28_%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrop(of:isTargeted:perform:)](view/ondrop(of:istargeted:perform:).md)
+- [func onDrop(of:isTargeted:perform:)](./ondrop%28of,istargeted,perform%29.md)
   Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
-- [func onDrop(of:delegate:)](view/ondrop(of:delegate:).md)
+- [func onDrop(of:delegate:)](./ondrop%28of,delegate%29.md)
   Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
-- [protocol DropDelegate](dropdelegate.md)
+- [protocol DropDelegate](../dropdelegate.md)
   An interface that you implement to interact with a drop operation in a view modified to accept drops.
-- [struct DropProposal](dropproposal.md)
+- [struct DropProposal](../dropproposal.md)
   The behavior of a drop.
-- [enum DropOperation](dropoperation.md)
+- [enum DropOperation](../dropoperation.md)
   Operation types that determine how a drag and drop session resolves when the user drops a drag item.
-- [struct DropInfo](dropinfo.md)
+- [struct DropInfo](../dropinfo.md)
   The current state of a drop.
 
 

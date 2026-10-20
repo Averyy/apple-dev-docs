@@ -1,14 +1,15 @@
 # CSTYPE_INDEX_ENTITLEMENTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 CSTYPE_INDEX_ENTITLEMENTS = 0x00000005
 ```
 

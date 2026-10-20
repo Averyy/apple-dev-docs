@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementCostType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRDeviceEnergyManagementCostType
 ```
 
+```c
+enum MTRDeviceEnergyManagementCostType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDeviceEnergyManagementCostType.comfort](mtrdeviceenergymanagementcosttype/comfort.md)
-- [MTRDeviceEnergyManagementCostType.financial](mtrdeviceenergymanagementcosttype/financial.md)
-- [MTRDeviceEnergyManagementCostType.ghgEmissions](mtrdeviceenergymanagementcosttype/ghgemissions.md)
-- [MTRDeviceEnergyManagementCostType.temperature](mtrdeviceenergymanagementcosttype/temperature.md)
+- [MTRDeviceEnergyManagementCostType.comfort](./mtrdeviceenergymanagementcosttype/comfort.md)
+- [MTRDeviceEnergyManagementCostType.financial](./mtrdeviceenergymanagementcosttype/financial.md)
+- [MTRDeviceEnergyManagementCostType.ghgEmissions](./mtrdeviceenergymanagementcosttype/ghgemissions.md)
+- [MTRDeviceEnergyManagementCostType.temperature](./mtrdeviceenergymanagementcosttype/temperature.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdeviceenergymanagementcosttype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdeviceenergymanagementcosttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # LATouchIDAuthenticationMaximumAllowableReuseDuration
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum allowable reuse duration.
 
@@ -18,9 +19,14 @@ The maximum allowable reuse duration.
 let LATouchIDAuthenticationMaximumAllowableReuseDuration: TimeInterval
 ```
 
+```c
+extern const NSTimeInterval LATouchIDAuthenticationMaximumAllowableReuseDuration;
+```
+
 ## See Also
 
-- [var touchIDAuthenticationAllowableReuseDuration: TimeInterval](lacontext/touchidauthenticationallowablereuseduration.md)
+### Reusing device unlock state
+- [var touchIDAuthenticationAllowableReuseDuration: TimeInterval](./lacontext/touchidauthenticationallowablereuseduration.md)
   The duration for which Touch ID authentication reuse is allowable.
 
 

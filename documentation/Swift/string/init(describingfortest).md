@@ -1,7 +1,8 @@
 # init(describingForTest:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize this instance so that it can be presented in a test’s output.
 

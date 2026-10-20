@@ -1,7 +1,8 @@
 # blendWeights
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend shape weights in the model entity.
 

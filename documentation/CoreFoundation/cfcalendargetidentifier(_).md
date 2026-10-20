@@ -1,18 +1,19 @@
 # CFCalendarGetIdentifier(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the given calendar’s identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the given calendar’s identifier.
 func CFCalendarGetIdentifier(_ calendar: CFCalendar!) -> CFCalendarIdentifier!
 ```
 
+```c
+extern CFCalendarIdentifierCFCalendarGetIdentifier(CFCalendarRef calendar);
+```
+
 #### Return Value
 
-A string representation of `calendar`’s identifier. Calendar identifier constants can be found in [`CFLocale`](cflocale.md). Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+A string representation of `calendar`’s identifier. Calendar identifier constants can be found in [`CFLocale`](./cflocale.md). Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## Parameters
 

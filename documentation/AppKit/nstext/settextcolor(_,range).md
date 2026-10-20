@@ -1,12 +1,13 @@
 # setTextColor(_:range:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the text color of characters within the specified range to the specified color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Sets the text color of characters within the specified range to the specified co
 func setTextColor(_ color: NSColor?, range: NSRange)
 ```
 
+```objc
+- (void) setTextColor:(NSColor *) color range:(NSRange) range;
+```
+
 #### Discussion
 
 Removes the text color attribute if `color` is `nil`. This method applies only to rich text objects.
 
-This method does not include undo support by default. Clients must invoke [`shouldChangeText(inRanges:replacementStrings:)`](nstextview/shouldchangetext(inranges:replacementstrings:).md) or [`shouldChangeText(in:replacementString:)`](nstextview/shouldchangetext(in:replacementstring:).md) to include this method in an undoable action.
+This method does not include undo support by default. Clients must invoke [`shouldChangeText(inRanges:replacementStrings:)`](../nstextview/shouldchangetext%28inranges,replacementstrings%29.md) or [`shouldChangeText(in:replacementString:)`](../nstextview/shouldchangetext%28in,replacementstring%29.md) to include this method in an undoable action.
 
 ## See Also
 
-- [var textColor: NSColor?](nstext/textcolor.md)
+### Setting text color
+- [var textColor: NSColor?](./textcolor.md)
   The text color of all characters in the receiver.
 
 

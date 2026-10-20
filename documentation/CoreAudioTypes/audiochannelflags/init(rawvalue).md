@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a audio channel flags structure with a unsigned integer value.
 

@@ -1,7 +1,8 @@
 # SCWindow
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance that represents an onscreen window.
 
@@ -15,53 +16,58 @@ An instance that represents an onscreen window.
 class SCWindow
 ```
 
+```objc
+@interface SCWindow : NSObject
+```
+
 #### Overview
 
-Retrieve the available windows from an instance of [`SCShareableContent`](scshareablecontent.md). Select one or more windows to capture and use them to create an instance of [`SCContentFilter`](sccontentfilter.md). Apply the filter to an instance of [`SCStream`](scstream.md) to limit its output to content matching your criteria.
+Retrieve the available windows from an instance of [`SCShareableContent`](./scshareablecontent.md). Select one or more windows to capture and use them to create an instance of [`SCContentFilter`](./sccontentfilter.md). Apply the filter to an instance of [`SCStream`](./scstream.md) to limit its output to content matching your criteria.
 
 ## Topics
 
 ### Identifying windows
-- [var windowID: CGWindowID](scwindow/windowid.md)
+- [var windowID: CGWindowID](./scwindow/windowid.md)
   The Core Graphics window identifier.
-- [var title: String?](scwindow/title.md)
+- [var title: String?](./scwindow/title.md)
   The string that displays in a window’s title bar.
-- [var owningApplication: SCRunningApplication?](scwindow/owningapplication.md)
+- [var owningApplication: SCRunningApplication?](./scwindow/owningapplication.md)
   The app that owns the window.
-- [var windowLayer: Int](scwindow/windowlayer.md)
+- [var windowLayer: Int](./scwindow/windowlayer.md)
   The layer of the window relative to other windows.
 ### Accessing dimensions
-- [var frame: CGRect](scwindow/frame.md)
+- [var frame: CGRect](./scwindow/frame.md)
   A rectangle the represents the frame of the window within a display.
 ### Determining visibility
-- [var isOnScreen: Bool](scwindow/isonscreen.md)
+- [var isOnScreen: Bool](./scwindow/isonscreen.md)
   A Boolean value that indicates whether the window is on screen.
-- [var isActive: Bool](scwindow/isactive.md)
+- [var isActive: Bool](./scwindow/isactive.md)
   A Boolean value that indicates if the window is currently streaming.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCShareableContent](scshareablecontent.md)
+### Shareable content
+- [class SCShareableContent](./scshareablecontent.md)
   An instance that represents a set of displays, apps, and windows that your app can capture.
-- [class SCShareableContentInfo](scshareablecontentinfo.md)
+- [class SCShareableContentInfo](./scshareablecontentinfo.md)
   An instance that provides information for the content in a given stream.
-- [enum SCShareableContentStyle](scshareablecontentstyle.md)
+- [enum SCShareableContentStyle](./scshareablecontentstyle.md)
   The style of content presented in a stream.
-- [class SCDisplay](scdisplay.md)
+- [class SCDisplay](./scdisplay.md)
   An instance that represents a display device.
-- [class SCRunningApplication](scrunningapplication.md)
+- [class SCRunningApplication](./scrunningapplication.md)
   An instance that represents an app running on a device.
 
 

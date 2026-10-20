@@ -1,7 +1,8 @@
 # predictions(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,12 @@
 
 ```swift
 func predictions(from data: DataFrame) throws -> AnyColumn
+```
+
+**Other overloads**:
+
+```swift
+func predictions(from data: MLDataTable) throws -> MLUntypedColumn
 ```
 
 

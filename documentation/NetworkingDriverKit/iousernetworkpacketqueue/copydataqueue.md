@@ -1,16 +1,17 @@
 # CopyDataQueue
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the dispatch queue that this object uses to execute tasks.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CopyDataQueue(IODataQueueDispatchSource **dataQueue);
 ```
 
@@ -24,7 +25,8 @@ virtual kern_return_t CopyDataQueue(IODataQueueDispatchSource **dataQueue);
 
 ## See Also
 
-- [SetDataQueue](iousernetworkpacketqueue/setdataqueue.md)
+### Managing the Data Queue
+- [SetDataQueue](./setdataqueue.md)
   Assigns the specified dispatch source to this object.
 
 

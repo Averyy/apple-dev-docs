@@ -1,7 +1,8 @@
 # init(directInfo:size:callbacks:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a direct-access data provider.
 
@@ -10,7 +11,7 @@ Creates a direct-access data provider.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a direct-access data provider.
 init?(directInfo info: UnsafeMutableRawPointer?, size: off_t, callbacks: UnsafePointer<CGDataProviderDirectCallbacks>)
 ```
 
+```c
+extern CGDataProviderRefCGDataProviderCreateDirect(void *info, off_t size, const CGDataProviderDirectCallbacks *callbacks);
+```
+
 #### Return Value
 
-A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](cgdataproviderrelease.md).
+A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](../cgdataproviderrelease.md).
 
 #### Discussion
 
@@ -32,30 +37,31 @@ You use this function to create a direct-access data provider that uses callback
 
 - `info`: A pointer to data of any type or `NULL`. When Core Graphics calls the functions specified in the `callbacks` parameter, it sends each of the functions this pointer.
 - `size`: The number of bytes of data to provide.
-- `callbacks`: A pointer to a [`CGDataProviderDirectCallbacks`](cgdataproviderdirectcallbacks.md) structure that specifies the callback functions you implement to handle the data provider’s basic memory management.
+- `callbacks`: A pointer to a [`CGDataProviderDirectCallbacks`](../cgdataproviderdirectcallbacks.md) structure that specifies the callback functions you implement to handle the data provider’s basic memory management.
 
 ## See Also
 
-- [init?(data: CFData)](cgdataprovider/init(data:).md)
+### Creating Direct-Access Data Providers
+- [init?(data: CFData)](./init%28data%29.md)
   Creates a data provider that reads from a CFData object.
-- [init?(url: CFURL)](cgdataprovider/init(url:).md)
+- [init?(url: CFURL)](./init%28url%29.md)
   Creates a direct-access data provider that uses a URL to supply data.
-- [init?(dataInfo: UnsafeMutableRawPointer?, data: UnsafeRawPointer, size: Int, releaseData: CGDataProviderReleaseDataCallback)](cgdataprovider/init(datainfo:data:size:releasedata:).md)
+- [init?(dataInfo: UnsafeMutableRawPointer?, data: UnsafeRawPointer, size: Int, releaseData: CGDataProviderReleaseDataCallback)](./init%28datainfo,data,size,releasedata%29.md)
   Creates a direct-access data provider that uses data your program supplies.
-- [init?(filename: UnsafePointer<CChar>)](cgdataprovider/init(filename:).md)
+- [init?(filename: UnsafePointer<CChar>)](./init%28filename%29.md)
   Creates a direct-access data provider that uses a file to supply data.
-- [struct CGDataProviderDirectCallbacks](cgdataproviderdirectcallbacks.md)
+- [struct CGDataProviderDirectCallbacks](../cgdataproviderdirectcallbacks.md)
   Defines pointers to client-defined callback functions that manage the sending of data for a direct-access data provider.
-- [typealias CGDataProviderGetBytePointerCallback](cgdataprovidergetbytepointercallback.md)
+- [typealias CGDataProviderGetBytePointerCallback](../cgdataprovidergetbytepointercallback.md)
   A callback function that returns a generic pointer to the provider data.
-- [typealias CGDataProviderGetBytesAtPositionCallback](cgdataprovidergetbytesatpositioncallback.md)
+- [typealias CGDataProviderGetBytesAtPositionCallback](../cgdataprovidergetbytesatpositioncallback.md)
   A callback function that copies data from the provider into a Core Graphics buffer.
-- [typealias CGDataProviderReleaseBytePointerCallback](cgdataproviderreleasebytepointercallback.md)
-  A callback function that releases the pointer Core Graphics obtained by calling [`CGDataProviderGetBytePointerCallback`](cgdataprovidergetbytepointercallback.md).
-- [typealias CGDataProviderReleaseInfoCallback](cgdataproviderreleaseinfocallback.md)
+- [typealias CGDataProviderReleaseBytePointerCallback](../cgdataproviderreleasebytepointercallback.md)
+  A callback function that releases the pointer Core Graphics obtained by calling [`CGDataProviderGetBytePointerCallback`](../cgdataprovidergetbytepointercallback.md).
+- [typealias CGDataProviderReleaseInfoCallback](../cgdataproviderreleaseinfocallback.md)
   A callback function that releases any private data or resources associated with the data provider.
-- [typealias CGDataProviderReleaseDataCallback](cgdataproviderreleasedatacallback.md)
-  A callback function that releases data you supply to the function [`init(dataInfo:data:size:releaseData:)`](cgdataprovider/init(datainfo:data:size:releasedata:).md).
+- [typealias CGDataProviderReleaseDataCallback](../cgdataproviderreleasedatacallback.md)
+  A callback function that releases data you supply to the function [`init(dataInfo:data:size:releaseData:)`](./init%28datainfo,data,size,releasedata%29.md).
 
 
 ---

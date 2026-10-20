@@ -1,7 +1,8 @@
 # CFStringTokenizerSetString(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the string for a tokenizer.
 
@@ -18,6 +19,10 @@ Sets the string for a tokenizer.
 
 ```swift
 func CFStringTokenizerSetString(_ tokenizer: CFStringTokenizer!, _ string: CFString!, _ range: CFRange)
+```
+
+```c
+extern void CFStringTokenizerSetString(CFStringTokenizerRef tokenizer, CFStringRef string, CFRange range);
 ```
 
 ## Parameters

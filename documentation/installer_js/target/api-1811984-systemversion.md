@@ -7,9 +7,10 @@ The version of the host’s operating system, as a String.
 
 ## See Also
 
-- [mountpoint](target/1811965-mountpoint.md)
+### Accessing Target Properties
+- [mountpoint](./api-1811965-mountpoint.md)
   The installation volume’s mountpoint, as a String.
-- [availableKilobytes](target/1811975-availablekilobytes.md)
+- [availableKilobytes](./api-1811975-availablekilobytes.md)
   Available space in the installation volume, in kilobytes.
 
 

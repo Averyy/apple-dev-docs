@@ -1,7 +1,8 @@
 # AppManagedAppConfigDictionaryObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary of app config data and credentials.
 
@@ -14,18 +15,18 @@ A dictionary of app config data and credentials.
 
 ## Declaration
 
-```swift
+```
 object AppManagedAppConfigDictionaryObject
 ```
 
 ## Mentions
 
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
+- [Configuring managed apps and extensions](./configuring-managed-apps-and-extensions.md)
 
 ## Topics
 
 ### Objects
-- [object AppManagedCredentialConfigObject](appmanagedcredentialconfigobject.md)
+- [object AppManagedCredentialConfigObject](./appmanagedcredentialconfigobject.md)
   A dictionary of values associated with a credential config.
 
 ## Properties
@@ -37,13 +38,14 @@ object AppManagedAppConfigDictionaryObject
 
 ## See Also
 
-- [object AppManagedAttributesObject](appmanagedattributesobject.md)
+### Objects
+- [object AppManagedAttributesObject](./appmanagedattributesobject.md)
   A dictionary of values to associate with the app.
-- [object AppManagedExtensionConfigsObject](appmanagedextensionconfigsobject.md)
+- [object AppManagedExtensionConfigsObject](./appmanagedextensionconfigsobject.md)
   A dictionary of extension config data and credentials.
-- [object AppManagedInstallBehaviorObject](appmanagedinstallbehaviorobject.md)
+- [object AppManagedInstallBehaviorObject](./appmanagedinstallbehaviorobject.md)
   A dictionary that describes how and when to install the app.
-- [object AppManagedUpdateBehaviorObject](appmanagedupdatebehaviorobject.md)
+- [object AppManagedUpdateBehaviorObject](./appmanagedupdatebehaviorobject.md)
   A dictionary that specifies how the device updates apps.
 
 

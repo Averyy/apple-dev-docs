@@ -1,7 +1,8 @@
 # AVPartialAsyncProperty
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An asynchronous property that constrains its type.
 
@@ -22,58 +23,59 @@ class AVPartialAsyncProperty<Root>
 
 #### Overview
 
-This class defines the [`AVAsyncProperty`](avasyncproperty.md) constants for various AVFoundation types, including [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md).
+This class defines the [`AVAsyncProperty`](./avasyncproperty.md) constants for various AVFoundation types, including [`AVAsset`](./avasset.md), [`AVAssetTrack`](./avassettrack.md), and [`AVMetadataItem`](./avmetadataitem.md).
 
 ## Topics
 
 ### Loading properties
-- [AVAsset](avasset-async-properties.md)
+- [AVAsset](./avasset-async-properties.md)
   Asynchronous properties for assets.
-- [AVAssetTrack](avassettrack-async-properties.md)
+- [AVAssetTrack](./avassettrack-async-properties.md)
   Asynchronous properties for asset tracks.
-- [AVURLAsset](avurlasset-async-properties.md)
+- [AVURLAsset](./avurlasset-async-properties.md)
   Asynchronous properties for URL assets.
-- [AVFragmentedAsset](avfragmentedasset-async-properties.md)
+- [AVFragmentedAsset](./avfragmentedasset-async-properties.md)
   Asynchronous properties for fragmented assets.
-- [AVMetadataItem](avmetadataitem-async-properties.md)
+- [AVMetadataItem](./avmetadataitem-async-properties.md)
   Asynchronous properties for metadata items.
-- [AVComposition](avcomposition-async-properties.md)
+- [AVComposition](./avcomposition-async-properties.md)
   Asynchronous properties for compositions.
-- [AVMutableComposition](avmutablecomposition-async-properties.md)
+- [AVMutableComposition](./avmutablecomposition-async-properties.md)
   Asynchronous properties for mutable compositions.
-- [AVMovie](avmovie-async-properties.md)
+- [AVMovie](./avmovie-async-properties.md)
   Asynchronous properties for movies.
-- [AVMutableMovie](avmutablemovie-async-properties.md)
+- [AVMutableMovie](./avmutablemovie-async-properties.md)
   Asynchronous properties for mutable movies.
-- [AVFragmentedMovie](avfragmentedmovie-async-properties.md)
+- [AVFragmentedMovie](./avfragmentedmovie-async-properties.md)
   Asynchronous properties for fragmented movies.
 ### Describing a property
-- [var description: String](avpartialasyncproperty/description.md)
+- [var description: String](./avpartialasyncproperty/description.md)
   A description of the object.
-- [static var sidecarURL: AVAsyncProperty<Root, URL?>](avpartialasyncproperty/sidecarurl.md)
+- [static var sidecarURL: AVAsyncProperty<Root, URL?>](./avpartialasyncproperty/sidecarurl.md)
   The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
 ### Type Properties
-- [static var constituentFileURLs: AVAsyncProperty<Root, [URL]>](avpartialasyncproperty/constituentfileurls.md)
+- [static var constituentFileURLs: AVAsyncProperty<Root, [URL]>](./avpartialasyncproperty/constituentfileurls.md)
   The list of file URLs used by the MediaExtension that constitute the asset. The list of file URLs that constitute the asset are returned only for QuickTime reference movies, or if the MediaExtension format reader implements this property [MEFileInfo setConstituentFileNames:].
 
 ## Relationships
 
 ### Inherits From
-- [AVAnyAsyncProperty](avanyasyncproperty.md)
+- [AVAnyAsyncProperty](./avanyasyncproperty.md)
 ### Inherited By
-- [AVAsyncProperty](avasyncproperty.md)
+- [AVAsyncProperty](./avasyncproperty.md)
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
+### Property loading
+- [protocol AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
   A protocol that defines the interface to load media data asynchronously.
-- [class AVAsyncProperty](avasyncproperty.md)
+- [class AVAsyncProperty](./avasyncproperty.md)
   An asynchronous property that constrains its type and value.
-- [class AVAnyAsyncProperty](avanyasyncproperty.md)
+- [class AVAnyAsyncProperty](./avanyasyncproperty.md)
   A base class for asynchronous properties.
 
 

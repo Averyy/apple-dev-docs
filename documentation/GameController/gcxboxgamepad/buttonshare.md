@@ -1,7 +1,8 @@
 # buttonShare
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The share button on an Xbox Series X|S controller or later.
 
@@ -19,19 +20,24 @@ The share button on an Xbox Series X|S controller or later.
 var buttonShare: GCControllerButtonInput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GCControllerButtonInput * buttonShare;
+```
+
 #### Discussion
 
-The system reserves the Share button for screenshot and video recording gestures. If you want to disable these gestures in your app, set the button’s [`preferredSystemGestureState`](gccontrollerelement/preferredsystemgesturestate.md) to [`GCControllerElement.SystemGestureState.disabled`](gccontrollerelement/systemgesturestate/disabled.md).
+The system reserves the Share button for screenshot and video recording gestures. If you want to disable these gestures in your app, set the button’s [`preferredSystemGestureState`](../gccontrollerelement/preferredsystemgesturestate.md) to [`GCControllerElement.SystemGestureState.disabled`](../gccontrollerelement/systemgesturestate/disabled.md).
 
 ## See Also
 
-- [var paddleButton1: GCControllerButtonInput?](gcxboxgamepad/paddlebutton1.md)
+### Getting button inputs
+- [var paddleButton1: GCControllerButtonInput?](./paddlebutton1.md)
   The controller’s paddle 1 button element, which has a P1 label on the back of the controller.
-- [var paddleButton2: GCControllerButtonInput?](gcxboxgamepad/paddlebutton2.md)
+- [var paddleButton2: GCControllerButtonInput?](./paddlebutton2.md)
   The paddle 2 button element, which has a P2 label on the back of the controller.
-- [var paddleButton3: GCControllerButtonInput?](gcxboxgamepad/paddlebutton3.md)
+- [var paddleButton3: GCControllerButtonInput?](./paddlebutton3.md)
   The paddle 3 button element, which has a P3 label on the back of the controller.
-- [var paddleButton4: GCControllerButtonInput?](gcxboxgamepad/paddlebutton4.md)
+- [var paddleButton4: GCControllerButtonInput?](./paddlebutton4.md)
   The paddle 4 button element, which has a P4 label on the back of the controller.
 
 

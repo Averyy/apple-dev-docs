@@ -1,7 +1,8 @@
 # NWProtocolFramer.Instance.WakeupTime
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Times at which to schedule a protocol wakeup.
 
@@ -23,17 +24,18 @@ enum WakeupTime
 ## Topics
 
 ### Time Values
-- [NWProtocolFramer.Instance.WakeupTime.milliseconds(_:)](nwprotocolframer/instance/wakeuptime/milliseconds(_:).md)
+- [NWProtocolFramer.Instance.WakeupTime.milliseconds(_:)](./wakeuptime/milliseconds%28_%29.md)
   A specific number of milliseconds from now.
-- [NWProtocolFramer.Instance.WakeupTime.forever](nwprotocolframer/instance/wakeuptime/forever.md)
+- [NWProtocolFramer.Instance.WakeupTime.forever](./wakeuptime/forever.md)
   A sentinel value to indicate that no wakeup should be delivered.
 
 ## See Also
 
-- [func async(execute: () -> Void)](nwprotocolframer/instance/async(execute:).md)
+### Handling Asynchronous Events
+- [func async(execute: () -> Void)](./async%28execute%29.md)
   Requests that a block be executed on the connection’s internal scheduling context.
-- [func scheduleWakeup(wakeupTime: NWProtocolFramer.Instance.WakeupTime)](nwprotocolframer/instance/schedulewakeup(wakeuptime:).md)
-  Requests that [`wakeup(framer:)`](nwprotocolframerimplementation/wakeup(framer:).md) be called on your protocol at a specific time in the future.
+- [func scheduleWakeup(wakeupTime: NWProtocolFramer.Instance.WakeupTime)](./schedulewakeup%28wakeuptime%29.md)
+  Requests that [`wakeup(framer:)`](../../nwprotocolframerimplementation/wakeup%28framer%29.md) be called on your protocol at a specific time in the future.
 
 
 ---

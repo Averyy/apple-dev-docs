@@ -1,7 +1,8 @@
 # softMaxGradient(withIncomingGradient:sourceTensor:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the gradient of the softmax function along the specified axis using the incoming gradient tensor.
 
@@ -19,9 +20,13 @@ Computes the gradient of the softmax function along the specified axis using the
 func softMaxGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTensor source: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) softMaxGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source axis:(NSInteger) axis name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
 ## Parameters
 

@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.de
 
 # mlx.core.default_device
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.default_device.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.default_device
-
- Table of contents 
-
-## Contents
-
-# mlx.core.default_device
-
-**default_device() → [Device](mlx.core.Device.html#mlx.core.Device)**
+**default_device() → [Device](mlx.core.Device.md#mlx.core.Device)**
 : Get the default device.
-
-** Contents

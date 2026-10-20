@@ -1,7 +1,8 @@
 # init(predicate:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new history descriptor with the provided predicate.
 
@@ -23,7 +24,8 @@ init(predicate: Predicate<TransactionType>? = nil)
 
 ## See Also
 
-- [init(predicate: Predicate<TransactionType>?, sortBy: [SortDescriptor<TransactionType>])](historydescriptor/init(predicate:sortby:).md)
+### Creating a descriptor
+- [init(predicate: Predicate<TransactionType>?, sortBy: [SortDescriptor<TransactionType>])](./init%28predicate,sortby%29.md)
   Initializes a new history descriptor with the provided predicate and sort descriptor.
 
 

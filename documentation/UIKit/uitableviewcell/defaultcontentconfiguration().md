@@ -1,7 +1,8 @@
 # defaultContentConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a default list content configuration for the cell’s style.
 
@@ -10,7 +11,7 @@ Retrieves a default list content configuration for the cell’s style.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,7 @@ A default list content configuration. The system determines default values for t
 
 #### Discussion
 
-The default content configuration has preconfigured default styling, but doesn’t contain any content. After you get the default configuration, you assign your content to it, customize any other properties, and assign it to the cell as the current [`contentConfiguration`](uitableviewcell/contentconfiguration-9ktox.md).
+The default content configuration has preconfigured default styling, but doesn’t contain any content. After you get the default configuration, you assign your content to it, customize any other properties, and assign it to the cell as the current [`contentConfiguration`](./contentconfiguration-9ktox.md).
 
 ```swift
 var content = cell.defaultContentConfiguration()
@@ -42,11 +43,12 @@ cell.contentConfiguration = content
 
 ## See Also
 
-- [var contentConfiguration: (any UIContentConfiguration)?](uitableviewcell/contentconfiguration-9ktox.md)
+### Managing the content
+- [var contentConfiguration: (any UIContentConfiguration)?](./contentconfiguration-9ktox.md)
   The current content configuration of the cell.
-- [var automaticallyUpdatesContentConfiguration: Bool](uitableviewcell/automaticallyupdatescontentconfiguration.md)
+- [var automaticallyUpdatesContentConfiguration: Bool](./automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
-- [var contentView: UIView](uitableviewcell/contentview.md)
+- [var contentView: UIView](./contentview.md)
   The content view of the cell object.
 
 

@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.VerbatimHour.HourCycle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies the start of a clock representation for the format of a hour.
 
@@ -23,27 +24,28 @@ struct HourCycle
 ## Topics
 
 ### Modifying a Verbatim Hour HourCycle
-- [static let oneBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](date/formatstyle/symbol/verbatimhour/hourcycle/onebased.md)
+- [static let oneBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](./hourcycle/onebased.md)
   A hour cycle that indicates a clock that starts at one.
-- [static let zeroBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](date/formatstyle/symbol/verbatimhour/hourcycle/zerobased.md)
+- [static let zeroBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](./hourcycle/zerobased.md)
   A hour cycle that indicates a clock that starts at zero.
 ### Comparing Verbatim Hour Clock HourCycles
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.VerbatimHour.Clock](date/formatstyle/symbol/verbatimhour/clock.md)
+### Supporting Structures
+- [Date.FormatStyle.Symbol.VerbatimHour.Clock](./clock.md)
   A type that specifies a clock representation for the format of an hour.
 
 

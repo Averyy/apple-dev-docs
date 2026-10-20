@@ -1,7 +1,8 @@
 # pinMessageIndices
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of message indices referring to a predefined message table, used to specify the type and number of messages displayed during the PIN operation. `nil` by default.
 
@@ -20,13 +21,18 @@ A list of message indices referring to a predefined message table, used to speci
 var pinMessageIndices: [NSNumber]? { get set }
 ```
 
+```objc
+@property (nullable) NSArray<NSNumber *> * PINMessageIndices;
+```
+
 #### Discussion
 
 If `nil`, the reader does not display any message (reader specific). Typically, PIN verification takes 1 message; PIN modification takes 1 – 3 messages.
 
 ## See Also
 
-- [var locale: Locale!](tksmartcarduserinteractionforpinoperation/locale.md)
+### Configuring Messages
+- [var locale: Locale!](./locale.md)
   The locale for the displayed messages. If `nil`, the user’s current locale is used. By default, this value is the current locale of the system.
 
 

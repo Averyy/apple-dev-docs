@@ -1,7 +1,8 @@
 # AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCustomProductPageVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app custom product page localization.
 
@@ -10,14 +11,14 @@ The request body you use to create an app custom product page localization.
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCustomProductPageVersion.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPageVersions`
 
 
 ---

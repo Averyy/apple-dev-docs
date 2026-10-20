@@ -1,7 +1,8 @@
 # kSecAttrKeyType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s algorithm.
 
@@ -20,13 +21,17 @@ A key whose value indicates the item’s algorithm.
 let kSecAttrKeyType: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrKeyType;
+```
+
 ## Mentions
 
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and indicates the algorithm associated with this cryptographic key. See [`Key Type Values`](item-attribute-keys-and-values#Key-Type-Values.md) for a list of valid values.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the algorithm associated with this cryptographic key. See [Key Type Values](./item-attribute-keys-and-values.md#Key-Type-Values) for a list of valid values.
 
 
 ---

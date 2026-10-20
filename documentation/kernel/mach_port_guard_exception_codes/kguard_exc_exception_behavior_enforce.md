@@ -1,14 +1,15 @@
 # kGUARD_EXC_EXCEPTION_BEHAVIOR_ENFORCE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_EXCEPTION_BEHAVIOR_ENFORCE = 6
 ```
 

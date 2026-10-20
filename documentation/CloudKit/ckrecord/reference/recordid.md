@@ -1,7 +1,8 @@
 # recordID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the referenced record.
 
@@ -10,7 +11,7 @@ The ID of the referenced record.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -21,15 +22,20 @@ The ID of the referenced record.
 var recordID: CKRecord.ID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) CKRecordID * recordID;
+```
+
 #### Discussion
 
 Use the ID in this property to fetch the record on the other end of the link.
 
 ## See Also
 
-- [var action: CKRecord.ReferenceAction](ckrecord/reference/action-swift.property.md)
+### Getting the Reference Attributes
+- [var action: CKRecord.ReferenceAction](./action-swift.property.md)
   The ownership behavior for the records.
-- [CKRecord.ReferenceAction](ckrecord/referenceaction.md)
+- [CKRecord.ReferenceAction](../referenceaction.md)
   Constants that indicate the behavior when deleting a referenced record.
 
 

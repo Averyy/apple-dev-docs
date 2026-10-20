@@ -1,7 +1,8 @@
 # multipleWindows
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mode allowing the selection of multiple windows through the presented picker.
 
@@ -15,15 +16,20 @@ The mode allowing the selection of multiple windows through the presented picker
 static var multipleWindows: SCContentSharingPickerMode { get }
 ```
 
+```c
+SCContentSharingPickerModeMultipleWindows
+```
+
 ## See Also
 
-- [static var multipleApplications: SCContentSharingPickerMode](sccontentsharingpickermode/multipleapplications.md)
+### Picker selection modes
+- [static var multipleApplications: SCContentSharingPickerMode](./multipleapplications.md)
   The mode allowing the selection of multiple applications through the presented picker.
-- [static var singleApplication: SCContentSharingPickerMode](sccontentsharingpickermode/singleapplication.md)
+- [static var singleApplication: SCContentSharingPickerMode](./singleapplication.md)
   The mode allowing the selection of a single application through the presented picker.
-- [static var singleDisplay: SCContentSharingPickerMode](sccontentsharingpickermode/singledisplay.md)
+- [static var singleDisplay: SCContentSharingPickerMode](./singledisplay.md)
   The mode allowing the selection of a single display through the presented picker.
-- [static var singleWindow: SCContentSharingPickerMode](sccontentsharingpickermode/singlewindow.md)
+- [static var singleWindow: SCContentSharingPickerMode](./singlewindow.md)
   The mode allowing the selection of a single window through the presented picker.
 
 

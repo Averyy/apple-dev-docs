@@ -1,14 +1,15 @@
 # kIOPCIExpressL1PMSubstatesCapability
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOPCIExpressL1PMSubstatesCapability = kIOPCIExpressCapabilityIDL1PMSubstates
 ```
 

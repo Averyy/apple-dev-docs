@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentType.markerOnly
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Marker sample buffers have neither data nor format description. These buffers are used for signaling events via the attachments when sample buffer content is not available.
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the handle.
 
@@ -20,7 +21,8 @@ var value: String
 
 ## See Also
 
-- [var displayName: String](handle/displayname.md)
+### Attributes
+- [var displayName: String](./displayname.md)
   The name for a participant in a conversation that appears in the conversation UI.
 
 

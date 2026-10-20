@@ -1,18 +1,19 @@
 # AVAudioChannelCount
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The number of audio channels.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The number of audio channels.
 typealias AVAudioChannelCount = UInt32
 ```
 
+```c
+typedef uint32_t AVAudioChannelCount;
+```
+
 ## See Also
 
-- [var channelCount: AVAudioChannelCount](avaudiochannellayout/channelcount.md)
+### Getting audio channel layout properties
+- [var channelCount: AVAudioChannelCount](./avaudiochannellayout/channelcount.md)
   The number of channels of audio data.
-- [var layout: UnsafePointer<AudioChannelLayout>](avaudiochannellayout/layout.md)
+- [var layout: UnsafePointer<AudioChannelLayout>](./avaudiochannellayout/layout.md)
   The underlying audio channel layout.
-- [var layoutTag: AudioChannelLayoutTag](avaudiochannellayout/layouttag.md)
+- [var layoutTag: AudioChannelLayoutTag](./avaudiochannellayout/layouttag.md)
   The audio channel’s underlying layout tag.
-- [func isEqual(Any) -> Bool](avaudiochannellayout/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./avaudiochannellayout/isequal%28_%29.md)
   Indicates whether another audio channel layout is exactly equal to the current layout.
 
 

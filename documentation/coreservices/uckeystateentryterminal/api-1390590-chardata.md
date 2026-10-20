@@ -1,7 +1,8 @@
 # charData
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A value of type `UCKeyCharSeq` specifying the Unicode character(s) produced when a given character key is pressed. 
 
@@ -13,6 +14,10 @@ A value of type `UCKeyCharSeq` specifying the Unicode character(s) produced when
 
 ```swift
 var charData: UCKeyCharSeq
+```
+
+```c
+UCKeyCharSeq charData;
 ```
 
 

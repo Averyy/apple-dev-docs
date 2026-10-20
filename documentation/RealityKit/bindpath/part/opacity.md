@@ -1,7 +1,8 @@
 # BindPath.Part.opacity
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An path component to animate an opacity. Requires that the entity has an OpacityComponent
 

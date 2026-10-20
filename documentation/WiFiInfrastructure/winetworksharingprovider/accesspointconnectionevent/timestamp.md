@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when this event occurred.
 

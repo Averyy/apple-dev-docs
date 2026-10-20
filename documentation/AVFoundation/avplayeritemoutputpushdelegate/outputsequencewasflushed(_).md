@@ -1,7 +1,8 @@
 # outputSequenceWasFlushed(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the output is starting a new sequence of media data.
 
@@ -20,13 +21,17 @@ Tells the delegate that the output is starting a new sequence of media data.
 optional func outputSequenceWasFlushed(_ output: AVPlayerItemOutput)
 ```
 
+```objc
+- (void) outputSequenceWasFlushed:(AVPlayerItemOutput *) output;
+```
+
 #### Discussion
 
 This method is invoked after any seeking and change in playback direction. If you are maintaining any queued future media data, you may want to discard those objects after receiving this message.
 
 ## Parameters
 
-- `output`: The [`AVPlayerItemOutput`](avplayeritemoutput.md) object.
+- `output`: The [`AVPlayerItemOutput`](../avplayeritemoutput.md) object.
 
 
 ---

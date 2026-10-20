@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,15 +19,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCISlotStatusAttentionButtonPressed](../pcidriverkit/kiopcislotstatusattentionbuttonpressed.md)
-- [kIOPCISlotStatusCommandCompleted](../pcidriverkit/kiopcislotstatuscommandcompleted.md)
-- [kIOPCISlotStatusDataLinkLayerStateChanged](../pcidriverkit/kiopcislotstatusdatalinklayerstatechanged.md)
-- [kIOPCISlotStatusElectromechanicalInterlockState](../pcidriverkit/kiopcislotstatuselectromechanicalinterlockstate.md)
-- [kIOPCISlotStatusMRLSensorChanged](../pcidriverkit/kiopcislotstatusmrlsensorchanged.md)
-- [kIOPCISlotStatusMRLSensorState](../pcidriverkit/kiopcislotstatusmrlsensorstate.md)
-- [kIOPCISlotStatusPowerFaultDetected](../pcidriverkit/kiopcislotstatuspowerfaultdetected.md)
-- [kIOPCISlotStatusPresenceDetectChanged](../pcidriverkit/kiopcislotstatuspresencedetectchanged.md)
-- [kIOPCISlotStatusPresenceDetectState](../pcidriverkit/kiopcislotstatuspresencedetectstate.md)
+- [kIOPCISlotStatusAttentionButtonPressed](../PCIDriverKit/kiopcislotstatusattentionbuttonpressed.md)
+- [kIOPCISlotStatusCommandCompleted](../PCIDriverKit/kiopcislotstatuscommandcompleted.md)
+- [kIOPCISlotStatusDataLinkLayerStateChanged](../PCIDriverKit/kiopcislotstatusdatalinklayerstatechanged.md)
+- [kIOPCISlotStatusElectromechanicalInterlockState](../PCIDriverKit/kiopcislotstatuselectromechanicalinterlockstate.md)
+- [kIOPCISlotStatusMRLSensorChanged](../PCIDriverKit/kiopcislotstatusmrlsensorchanged.md)
+- [kIOPCISlotStatusMRLSensorState](../PCIDriverKit/kiopcislotstatusmrlsensorstate.md)
+- [kIOPCISlotStatusPowerFaultDetected](../PCIDriverKit/kiopcislotstatuspowerfaultdetected.md)
+- [kIOPCISlotStatusPresenceDetectChanged](../PCIDriverKit/kiopcislotstatuspresencedetectchanged.md)
+- [kIOPCISlotStatusPresenceDetectState](../PCIDriverKit/kiopcislotstatuspresencedetectstate.md)
 
 
 ---

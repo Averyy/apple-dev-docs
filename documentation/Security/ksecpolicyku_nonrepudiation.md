@@ -1,7 +1,8 @@
 # kSecPolicyKU_NonRepudiation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used for non-repudiation.
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used for non-repudiat
 
 ```swift
 let kSecPolicyKU_NonRepudiation: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_NonRepudiation;
 ```
 
 

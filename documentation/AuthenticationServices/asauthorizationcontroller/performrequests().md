@@ -1,7 +1,8 @@
 # performRequests()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the specified authorization flows during controller initialization.
 
@@ -20,26 +21,31 @@ Starts the specified authorization flows during controller initialization.
 func performRequests()
 ```
 
+```objc
+- (void) performRequests;
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
-- [Supporting passkeys](supporting-passkeys.md)
+- [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Supporting passkeys](../supporting-passkeys.md)
 
 #### Discussion
 
-When authorization succeeds, the system relays that information to the controller’s [`delegate`](asauthorizationcontroller/delegate.md) by calling the [`authorizationController(controller:didCompleteWithAuthorization:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewithauthorization:).md) method with an authorization instance. If authorization fails, the system calls the [`authorizationController(controller:didCompleteWithError:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md) method instead.
+When authorization succeeds, the system relays that information to the controller’s [`delegate`](./delegate.md) by calling the [`authorizationController(controller:didCompleteWithAuthorization:)`](../asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md) method with an authorization instance. If authorization fails, the system calls the [`authorizationController(controller:didCompleteWithError:)`](../asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) method instead.
 
 Some authorization flows require a presentation context to ask the user for information or consent. Adopt the `ASAuthorizationControllerPresenting` protocol in one of your app’s classes, and set an instance of that class as the authorization controller’s `presentationController`.
 
 ## See Also
 
-- [func performRequests(options: ASAuthorizationController.RequestOptions)](asauthorizationcontroller/performrequests(options:).md)
+### Executing requests
+- [func performRequests(options: ASAuthorizationController.RequestOptions)](./performrequests%28options%29.md)
   Starts the specified authorization flows during controller initialization.
-- [func performAutoFillAssistedRequests()](asauthorizationcontroller/performautofillassistedrequests.md)
+- [func performAutoFillAssistedRequests()](./performautofillassistedrequests%28%29.md)
   Initiates the authorization flows for requests that support AutoFill presentation.
-- [func cancel()](asauthorizationcontroller/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels any active authorization requests.
-- [ASAuthorizationController.RequestOptions](asauthorizationcontroller/requestoptions.md)
+- [ASAuthorizationController.RequestOptions](./requestoptions.md)
   Options that modify how a controller performs authorization requests.
 
 

@@ -1,7 +1,8 @@
 # NSExceptionRequiresForwardSecrecy
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether to override the perfect forward secrecy requirement.
 
@@ -11,27 +12,31 @@ A Boolean value indicating whether to override the perfect forward secrecy requi
 - macOS 10.11+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `NSExceptionRequiresForwardSecrecy`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `YES`
 
 #### Discussion
 
-Set the value for this key to `NO` to override the requirement that a server support perfect forward secrecy (PFS) for the given domain. Disabling this requirement also removes the key length check described in `Ensure the Network Server Meets Minimum Requirements`. However, it doesn’t impact the TLS version requirement. To control that, use [`NSExceptionMinimumTLSVersion`](information-property-list/nsexceptionminimumtlsversion.md).
+Set the value for this key to `NO` to override the requirement that a server support perfect forward secrecy (PFS) for the given domain. Disabling this requirement also removes the key length check described in `Ensure the Network Server Meets Minimum Requirements`. However, it doesn’t impact the TLS version requirement. To control that, use [`NSExceptionMinimumTLSVersion`](./nsexceptionminimumtlsversion.md).
 
 This key is optional. The default value is YES, which limits the accepted ciphers to those that support PFS through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange.
 
 ## See Also
 
-- [NSExceptionAllowsInsecureHTTPLoads](information-property-list/nsexceptionallowsinsecurehttploads.md)
+### Exceptions
+- [NSExceptionAllowsInsecureHTTPLoads](./nsexceptionallowsinsecurehttploads.md)
   A Boolean value indicating whether to allow insecure HTTP loads.
-- [NSExceptionMinimumTLSVersion](information-property-list/nsexceptionminimumtlsversion.md)
+- [NSExceptionMinimumTLSVersion](./nsexceptionminimumtlsversion.md)
   The minimum Transport Layer Security (TLS) version for network connections.
-- [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
+- [NSRequiresCertificateTransparency](./nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
-- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+- [NSExceptionRequiresNIAPTLSPackageVersion](./nsexceptionrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 

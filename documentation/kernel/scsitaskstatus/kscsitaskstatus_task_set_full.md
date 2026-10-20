@@ -1,14 +1,15 @@
 # kSCSITaskStatus_TASK_SET_FULL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskStatus_TASK_SET_FULL = 0x28
 ```
 

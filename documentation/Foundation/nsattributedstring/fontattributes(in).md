@@ -1,7 +1,8 @@
 # fontAttributes(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the font attributes in effect for the character at the specified location.
 
@@ -14,13 +15,17 @@ Returns the font attributes in effect for the character at the specified locatio
 func fontAttributes(in range: NSRange) -> [NSAttributedString.Key : Any]
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) fontAttributesInRange:(NSRange) range;
+```
+
 #### Return Value
 
 A dictionary containing the font attributes for the range.
 
 #### Discussion
 
-The dictionary attributes are all those listed in `Character Attributes`, except [`link`](nsattributedstring/key/link.md), [`paragraphStyle`](nsattributedstring/key/paragraphstyle.md), and [`attachment`](nsattributedstring/key/attachment.md).
+The dictionary attributes are all those listed in `Character Attributes`, except [`link`](./key/link.md), [`paragraphStyle`](./key/paragraphstyle.md), and [`attachment`](./key/attachment.md).
 
 Use this method to obtain font attributes that are to be copied or pasted with “copy font” operations.
 
@@ -32,7 +37,8 @@ Raises an `NSRangeException` if any part of `aRange` lies beyond the end of the 
 
 ## See Also
 
-- [func rulerAttributes(in: NSRange) -> [NSAttributedString.Key : Any]](nsattributedstring/rulerattributes(in:).md)
+### Getting font attribute information
+- [func rulerAttributes(in: NSRange) -> [NSAttributedString.Key : Any]](./rulerattributes%28in%29.md)
   Returns the ruler (paragraph) attributes in effect for the characters within the specified range.
 
 

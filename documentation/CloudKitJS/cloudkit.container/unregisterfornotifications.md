@@ -1,7 +1,8 @@
 # unregisterForNotifications
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters to receive push notifications.
 
@@ -10,19 +11,20 @@ Unregisters to receive push notifications.
 
 ## Declaration
 
-```swift
+```
 void unregisterForNotifications();
 ```
 
 ## See Also
 
-- [addNotificationListener](cloudkit.container/addnotificationlistener.md)
+### Receiving Notifications
+- [addNotificationListener](./addnotificationlistener.md)
   Adds a function to call when a push notification occurs.
-- [removeNotificationListener](cloudkit.container/removenotificationlistener.md)
+- [removeNotificationListener](./removenotificationlistener.md)
   Removes a function to call when a push notification occurs.
-- [registerForNotifications](cloudkit.container/registerfornotifications.md)
+- [registerForNotifications](./registerfornotifications.md)
   Registers to receive push notifications.
-- [isRegisteredForNotifications](cloudkit.container/isregisteredfornotifications.md)
+- [isRegisteredForNotifications](./isregisteredfornotifications.md)
   Boolean value indicating whether this container is registered to receive push notifications.
 
 

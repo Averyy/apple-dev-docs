@@ -1,7 +1,8 @@
 # relative
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style displaying a date as relative to now.
 
@@ -30,13 +31,14 @@ Example output: 2 hours, 23 minutes 1 year, 1 month
 
 ## See Also
 
-- [static let date: Text.DateStyle](text/datestyle/date.md)
+### Getting text date styles
+- [static let date: Text.DateStyle](./date.md)
   A style displaying a date.
-- [static let offset: Text.DateStyle](text/datestyle/offset.md)
+- [static let offset: Text.DateStyle](./offset.md)
   A style displaying a date as offset from now.
-- [static let time: Text.DateStyle](text/datestyle/time.md)
+- [static let time: Text.DateStyle](./time.md)
   A style displaying only the time component for a date.
-- [static let timer: Text.DateStyle](text/datestyle/timer.md)
+- [static let timer: Text.DateStyle](./timer.md)
   A style displaying a date as timer counting from now.
 
 

@@ -1,7 +1,8 @@
 # withFractionalSeconds
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The date representation uses the colon separator (`:`) in the time zone.
 
@@ -18,6 +19,10 @@ The date representation uses the colon separator (`:`) in the time zone.
 
 ```swift
 static var withFractionalSeconds: ISO8601DateFormatter.Options { get }
+```
+
+```c
+NSISO8601DateFormatWithFractionalSeconds
 ```
 
 

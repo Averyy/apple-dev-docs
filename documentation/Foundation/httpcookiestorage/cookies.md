@@ -1,7 +1,8 @@
 # cookies
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie storage’s cookies.
 
@@ -20,17 +21,22 @@ The cookie storage’s cookies.
 var cookies: [HTTPCookie]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSHTTPCookie *> * cookies;
+```
+
 #### Discussion
 
-If you want to sort the cookie storage’s cookies, you should use the [`sortedCookies(using:)`](httpcookiestorage/sortedcookies(using:).md) method instead of sorting the result of this method.
+If you want to sort the cookie storage’s cookies, you should use the [`sortedCookies(using:)`](./sortedcookies%28using%29.md) method instead of sorting the result of this method.
 
 ## See Also
 
-- [func getCookiesFor(URLSessionTask, completionHandler: ([HTTPCookie]?) -> Void)](httpcookiestorage/getcookiesfor(_:completionhandler:).md)
+### Retrieving cookies
+- [func getCookiesFor(URLSessionTask, completionHandler: ([HTTPCookie]?) -> Void)](./getcookiesfor%28_,completionhandler%29.md)
   Fetches cookies relevant to the specified task and passes them to the completion handler.
-- [func cookies(for: URL) -> [HTTPCookie]?](httpcookiestorage/cookies(for:).md)
+- [func cookies(for: URL) -> [HTTPCookie]?](./cookies%28for%29.md)
   Returns all the cookie storage’s cookies that are sent to a specified URL.
-- [func sortedCookies(using: [NSSortDescriptor]) -> [HTTPCookie]](httpcookiestorage/sortedcookies(using:).md)
+- [func sortedCookies(using: [NSSortDescriptor]) -> [HTTPCookie]](./sortedcookies%28using%29.md)
   Returns all of the cookie storage’s cookies, sorted according to a given set of sort descriptors.
 
 

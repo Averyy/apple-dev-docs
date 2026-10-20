@@ -1,7 +1,8 @@
 # encipherOnly
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `EncipherOnly` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `EncipherOnly` bit is set in KeyUsage extension.
 
 ```swift
 static var encipherOnly: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageEncipherOnly
 ```
 
 

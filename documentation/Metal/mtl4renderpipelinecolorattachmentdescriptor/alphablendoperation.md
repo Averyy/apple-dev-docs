@@ -1,7 +1,8 @@
 # alphaBlendOperation
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the alpha blending operation.
 
@@ -19,9 +20,13 @@ Configures the alpha blending operation.
 var alphaBlendOperation: MTLBlendOperation { get set }
 ```
 
+```objc
+@property (nonatomic) MTLBlendOperation alphaBlendOperation;
+```
+
 #### Discussion
 
-This property defaults to [`MTLBlendOperation.add`](mtlblendoperation/add.md).
+This property defaults to [`MTLBlendOperation.add`](../mtlblendoperation/add.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # requestedInputCapabilities
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of input capabilities the host app has requested for this session.
 

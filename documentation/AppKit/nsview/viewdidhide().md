@@ -1,7 +1,8 @@
 # viewDidHide()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the view is hidden, either directly, or in response to an ancestor being hidden.
 
@@ -14,17 +15,22 @@ Invoked when the view is hidden, either directly, or in response to an ancestor 
 func viewDidHide()
 ```
 
+```objc
+- (void) viewDidHide;
+```
+
 #### Discussion
 
-The view receives this message when its [`isHiddenOrHasHiddenAncestor`](nsview/ishiddenorhashiddenancestor.md) property changes from [`false`](https://developer.apple.com/documentation/swift/false) to [`true`](https://developer.apple.com/documentation/swift/true). This happens when the view or an ancestor is marked as hidden, or when the view or an ancestor is inserted into a new view hierarchy.
+The view receives this message when its [`isHiddenOrHasHiddenAncestor`](./ishiddenorhashiddenancestor.md) property changes from [`false`](../../Swift/false.md) to [`true`](../../Swift/true.md). This happens when the view or an ancestor is marked as hidden, or when the view or an ancestor is inserted into a new view hierarchy.
 
 ## See Also
 
-- [var isHidden: Bool](nsview/ishidden.md)
+### Showing and Hiding the View
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value indicating whether the view is hidden.
-- [var isHiddenOrHasHiddenAncestor: Bool](nsview/ishiddenorhashiddenancestor.md)
+- [var isHiddenOrHasHiddenAncestor: Bool](./ishiddenorhashiddenancestor.md)
   A Boolean value indicating whether the view is hidden from sight because it, or one of its ancestors, is marked as hidden.
-- [func viewDidUnhide()](nsview/viewdidunhide.md)
+- [func viewDidUnhide()](./viewdidunhide%28%29.md)
   Invoked when the view is unhidden, either directly, or in response to an ancestor being unhidden
 
 

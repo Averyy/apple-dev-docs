@@ -1,7 +1,8 @@
 # Insecure.MD5
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An implementation of MD5 hashing.
 
@@ -22,45 +23,46 @@ struct MD5
 
 #### Overview
 
-The [`Insecure.MD5`](insecure/md5.md) hash implements the [`HashFunction`](hashfunction.md) protocol to produce an MD5 digest ([`Insecure.MD5Digest`](insecure/md5digest.md)).
+The [`Insecure.MD5`](./md5.md) hash implements the [`HashFunction`](../hashfunction.md) protocol to produce an MD5 digest ([`Insecure.MD5Digest`](./md5digest.md)).
 
-You can compute the digest by calling the static `hash(data:)` method once. Alternatively, if the data that you want to hash is too large to fit in memory, you can compute the digest iteratively by creating a new hash instance, calling the `update(data:)` method repeatedly with blocks of data, and then calling the [`finalize()`](insecure/md5/finalize().md) method to get the result.
+You can compute the digest by calling the static `hash(data:)` method once. Alternatively, if the data that you want to hash is too large to fit in memory, you can compute the digest iteratively by creating a new hash instance, calling the `update(data:)` method repeatedly with blocks of data, and then calling the [`finalize()`](./md5/finalize%28%29.md) method to get the result.
 
-> ❗ **Important**: This hash algorithm isn’t considered cryptographically secure, but is provided for backward compatibility with older services that require it. For new services, prefer one of the secure hashes, like [`SHA512`](sha512.md).
+> ❗ **Important**: This hash algorithm isn’t considered cryptographically secure, but is provided for backward compatibility with older services that require it. For new services, prefer one of the secure hashes, like [`SHA512`](../sha512.md).
 
 ## Topics
 
 ### Specifying the output type
-- [Insecure.MD5.Digest](insecure/md5/digest.md)
+- [Insecure.MD5.Digest](./md5/digest.md)
   The digest type for a MD5 hash function.
-- [Insecure.MD5Digest](insecure/md5digest.md)
+- [Insecure.MD5Digest](./md5digest.md)
   The output of a MD5 hash.
 ### Reporting the hash length
-- [static let byteCount: Int](insecure/md5/bytecount.md)
+- [static let byteCount: Int](./md5/bytecount.md)
   The number of bytes in an MD5 digest.
 ### Computing a hash iteratively
-- [init()](insecure/md5/init.md)
+- [init()](./md5/init%28%29.md)
   Creates a MD5 hash function.
-- [func update(bufferPointer: UnsafeRawBufferPointer)](insecure/md5/update(bufferpointer:).md)
+- [func update(bufferPointer: UnsafeRawBufferPointer)](./md5/update%28bufferpointer%29.md)
   Incrementally updates the hash function with the contents of the buffer.
-- [func finalize() -> Insecure.MD5.Digest](insecure/md5/finalize.md)
+- [func finalize() -> Insecure.MD5.Digest](./md5/finalize%28%29.md)
   Finalizes the hash function and returns the computed digest.
 ### Reporting hash function information
-- [static let blockByteCount: Int](insecure/md5/blockbytecount.md)
+- [static let blockByteCount: Int](./md5/blockbytecount.md)
   The number of bytes that represents the hash function’s internal state.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HashFunction](hashfunction.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [HashFunction](../hashfunction.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Insecure.SHA1](insecure/sha1.md)
+### Hashes
+- [Insecure.SHA1](./sha1.md)
   An implementation of SHA1 hashing.
 
 

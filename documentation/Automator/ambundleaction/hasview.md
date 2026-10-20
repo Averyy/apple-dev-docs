@@ -1,7 +1,8 @@
 # hasView
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the action has a view associated with it.
 
@@ -15,13 +16,18 @@ A Boolean value that indicates whether the action has a view associated with it.
 var hasView: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasView;
+```
+
 ## See Also
 
-- [var bundle: Bundle](ambundleaction/bundle.md)
+### Managing Action Properties
+- [var bundle: Bundle](./bundle.md)
   The action’s bundle object.
-- [var view: NSView?](ambundleaction/view.md)
+- [var view: NSView?](./view.md)
   The action’s view object.
-- [var parameters: NSMutableDictionary?](ambundleaction/parameters.md)
+- [var parameters: NSMutableDictionary?](./parameters.md)
   The action’s parameters.
 
 

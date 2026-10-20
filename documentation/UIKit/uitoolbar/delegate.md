@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The toolbar’s delegate object.
 
@@ -17,13 +18,18 @@ The toolbar’s delegate object.
 weak var delegate: (any UIToolbarDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIToolbarDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate should conform to the `UIToolbarDelegate` protocol. You may not set the delegate when the toolbar is managed by a navigation controller. The default value is `nil`.
 
 ## See Also
 
-- [protocol UIToolbarDelegate](uitoolbardelegate.md)
+### Managing toolbar changes
+- [protocol UIToolbarDelegate](../uitoolbardelegate.md)
   The interface that toolbar delegate objects implement to manage the toolbar behavior.
 
 

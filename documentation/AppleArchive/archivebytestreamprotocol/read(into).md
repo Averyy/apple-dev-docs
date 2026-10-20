@@ -2,6 +2,7 @@
 
 **Framework**: Apple Archive  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads data to the specified buffer, not exceeding the buffer’s previously allocated size.
@@ -12,7 +13,7 @@ Reads data to the specified buffer, not exceeding the buffer’s previously allo
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -35,11 +36,12 @@ This function increments the internal stream position by the number of bytes rea
 
 ## See Also
 
-- [func read(into: UnsafeMutableRawBufferPointer, atOffset: Int64) throws -> Int](archivebytestreamprotocol/read(into:atoffset:).md)
+### Reading and Writing Data
+- [func read(into: UnsafeMutableRawBufferPointer, atOffset: Int64) throws -> Int](./read%28into,atoffset%29.md)
   Reads data at the supplied offset to the specified buffer, not exceeding the buffer’s previously allocated size.
-- [func write(from: UnsafeRawBufferPointer) throws -> Int](archivebytestreamprotocol/write(from:).md)
+- [func write(from: UnsafeRawBufferPointer) throws -> Int](./write%28from%29.md)
   Writes data from the specified buffer, not exceeding the buffer’s allocated size.
-- [func write(from: UnsafeRawBufferPointer, atOffset: Int64) throws -> Int](archivebytestreamprotocol/write(from:atoffset:).md)
+- [func write(from: UnsafeRawBufferPointer, atOffset: Int64) throws -> Int](./write%28from,atoffset%29.md)
   Writes data at the supplied offset from the specified buffer, not exceeding the buffer’s allocated size.
 
 

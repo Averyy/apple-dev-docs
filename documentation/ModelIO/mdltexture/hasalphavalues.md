@@ -1,7 +1,8 @@
 # hasAlphaValues
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var hasAlphaValues: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL hasAlphaValues;
 ```
 
 

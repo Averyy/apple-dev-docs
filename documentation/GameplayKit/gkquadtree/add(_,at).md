@@ -1,7 +1,8 @@
 # add(_:at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an object to the tree corresponding to the specified point in 2D space.
 
@@ -19,13 +20,17 @@ Adds an object to the tree corresponding to the specified point in 2D space.
 func add(_ element: ElementType, at point: vector_float2) -> GKQuadtreeNode
 ```
 
+```objc
+- (GKQuadtreeNode *) addElement:(ElementType) element withPoint:(vector_float2) point;
+```
+
 #### Return Value
 
 The tree node containing the newly added object.
 
 #### Discussion
 
-The [`GKQuadtree`](gkquadtree.md) class automatically creates nodes to manage the objects you add to the tree. If you expect to remove an element you’ve added, keep a reference to the node this method returns so you can use the [`remove(_:using:)`](gkquadtree/remove(_:using:).md) method to remove that object quickly.
+The [`GKQuadtree`](../gkquadtree.md) class automatically creates nodes to manage the objects you add to the tree. If you expect to remove an element you’ve added, keep a reference to the node this method returns so you can use the [`remove(_:using:)`](./remove%28_,using%29.md) method to remove that object quickly.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ The [`GKQuadtree`](gkquadtree.md) class automatically creates nodes to manage th
 
 ## See Also
 
-- [func add(ElementType, in: GKQuad) -> GKQuadtreeNode](gkquadtree/add(_:in:).md)
+### Adding and Removing Elements
+- [func add(ElementType, in: GKQuad) -> GKQuadtreeNode](./add%28_,in%29.md)
   Adds an object to the tree corresponding to the specified region of 2D space.
-- [func remove(ElementType, using: GKQuadtreeNode) -> Bool](gkquadtree/remove(_:using:).md)
+- [func remove(ElementType, using: GKQuadtreeNode) -> Bool](./remove%28_,using%29.md)
   Removes the specified object from the tree, using a reference to its containing node.
-- [func remove(ElementType) -> Bool](gkquadtree/remove(_:).md)
+- [func remove(ElementType) -> Bool](./remove%28_%29.md)
   Searches for the specified object and removes it from the tree.
 
 

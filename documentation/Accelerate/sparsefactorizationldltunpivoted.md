@@ -1,7 +1,8 @@
 # SparseFactorizationLDLTUnpivoted
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents Cholesky-like *LDLᵀ* factorization with only one-by-one pivots and no pivoting.
 
@@ -20,15 +21,20 @@ A constant that represents Cholesky-like *LDLᵀ* factorization with only one-by
 var SparseFactorizationLDLTUnpivoted: SparseFactorization_t { get }
 ```
 
+```c
+SparseFactorizationLDLTUnpivoted
+```
+
 ## See Also
 
-- [var SparseFactorizationCholesky: SparseFactorization_t](sparsefactorizationcholesky.md)
+### Factorization types for symmetric coefficient matrices
+- [var SparseFactorizationCholesky: SparseFactorization_t](./sparsefactorizationcholesky.md)
   A constant that represents Cholesky (*LLᵀ*) factorization.
-- [var SparseFactorizationLDLT: SparseFactorization_t](sparsefactorizationldlt.md)
+- [var SparseFactorizationLDLT: SparseFactorization_t](./sparsefactorizationldlt.md)
   A constant that represents the default *LDLᵀ* factorization.
-- [var SparseFactorizationLDLTSBK: SparseFactorization_t](sparsefactorizationldltsbk.md)
+- [var SparseFactorizationLDLTSBK: SparseFactorization_t](./sparsefactorizationldltsbk.md)
   A constant that represents *LDLᵀ* factorization with Supernode-Bunch-Kaufman and static pivoting.
-- [var SparseFactorizationLDLTTPP: SparseFactorization_t](sparsefactorizationldlttpp.md)
+- [var SparseFactorizationLDLTTPP: SparseFactorization_t](./sparsefactorizationldlttpp.md)
   A constant that represents *LDLᵀ* factorization with full-threshold partial pivoting.
 
 

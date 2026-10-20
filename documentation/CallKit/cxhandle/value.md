@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the handle.
 
@@ -18,13 +19,18 @@ The value of the handle.
 var value: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * value;
+```
+
 #### Discussion
 
-A handle’s value corresponds to its type. For example, a handle with [`type`](cxhandle/type.md) equal to [`CXHandle.HandleType.phoneNumber`](cxhandle/handletype/phonenumber.md) should have a [`value`](cxhandle/value.md) consisting of a sequence of digits.
+A handle’s value corresponds to its type. For example, a handle with [`type`](./type.md) equal to [`CXHandle.HandleType.phoneNumber`](./handletype/phonenumber.md) should have a [`value`](./value.md) consisting of a sequence of digits.
 
 ## See Also
 
-- [var type: CXHandle.HandleType](cxhandle/type.md)
+### Accessing Handle Attributes
+- [var type: CXHandle.HandleType](./type.md)
   The type of the handle.
 
 

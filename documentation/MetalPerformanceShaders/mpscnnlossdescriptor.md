@@ -1,7 +1,8 @@
 # MPSCNNLossDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies properties used by a loss kernel.
 
@@ -19,44 +20,49 @@ An object that specifies properties used by a loss kernel.
 class MPSCNNLossDescriptor
 ```
 
+```objc
+@interface MPSCNNLossDescriptor : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(type: MPSCNNLossType, reductionType: MPSCNNReductionType)](mpscnnlossdescriptor/init(type:reductiontype:).md)
+- [init(type: MPSCNNLossType, reductionType: MPSCNNReductionType)](./mpscnnlossdescriptor/init%28type,reductiontype%29.md)
 ### Instance Properties
-- [var delta: Float](mpscnnlossdescriptor/delta.md)
-- [var epsilon: Float](mpscnnlossdescriptor/epsilon.md)
-- [var labelSmoothing: Float](mpscnnlossdescriptor/labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpscnnlossdescriptor/losstype.md)
-- [var numberOfClasses: Int](mpscnnlossdescriptor/numberofclasses.md)
-- [var reduceAcrossBatch: Bool](mpscnnlossdescriptor/reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpscnnlossdescriptor/reductiontype.md)
-- [var weight: Float](mpscnnlossdescriptor/weight.md)
+- [var delta: Float](./mpscnnlossdescriptor/delta.md)
+- [var epsilon: Float](./mpscnnlossdescriptor/epsilon.md)
+- [var labelSmoothing: Float](./mpscnnlossdescriptor/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](./mpscnnlossdescriptor/losstype.md)
+- [var numberOfClasses: Int](./mpscnnlossdescriptor/numberofclasses.md)
+- [var reduceAcrossBatch: Bool](./mpscnnlossdescriptor/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](./mpscnnlossdescriptor/reductiontype.md)
+- [var weight: Float](./mpscnnlossdescriptor/weight.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNLoss](mpscnnloss.md)
+### Loss Layers
+- [class MPSCNNLoss](./mpscnnloss.md)
   A kernel that computes the loss and loss gradient between specified predictions and labels.
-- [class MPSCNNLossDataDescriptor](mpscnnlossdatadescriptor.md)
+- [class MPSCNNLossDataDescriptor](./mpscnnlossdatadescriptor.md)
   An object that specifies properties used by a loss data descriptor.
-- [class MPSCNNLossLabels](mpscnnlosslabels.md)
+- [class MPSCNNLossLabels](./mpscnnlosslabels.md)
   A class that stores the per-element weight buffer used by loss and gradient loss kernels.
-- [class MPSCNNYOLOLoss](mpscnnyololoss.md)
+- [class MPSCNNYOLOLoss](./mpscnnyololoss.md)
   A kernel that computes the YOLO loss and loss gradient between specified predictions and labels.
-- [class MPSCNNYOLOLossDescriptor](mpscnnyololossdescriptor.md)
+- [class MPSCNNYOLOLossDescriptor](./mpscnnyololossdescriptor.md)
   An object that specifies properties used by a YOLO loss kernel.
 
 

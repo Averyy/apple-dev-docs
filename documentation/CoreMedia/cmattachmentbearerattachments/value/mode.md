@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attachment mode.
 
@@ -22,7 +23,8 @@ var mode: CMAttachmentBearerAttachments.Mode { get }
 
 ## See Also
 
-- [var value: Any](cmattachmentbearerattachments/value/value.md)
+### Properties
+- [var value: Any](./value.md)
   An attachment value.
 
 

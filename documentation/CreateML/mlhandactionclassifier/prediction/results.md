@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of prediction labels and their confidences for a hand action.
 
@@ -20,7 +21,8 @@ var results: [(label: String, confidence: Double)]
 
 ## See Also
 
-- [var frameRange: Range<Int>](mlhandactionclassifier/prediction/framerange.md)
+### Inspecting a prediction
+- [var frameRange: Range<Int>](./framerange.md)
   The range of frame rates the hand action classifier used to make its prediction.
 
 

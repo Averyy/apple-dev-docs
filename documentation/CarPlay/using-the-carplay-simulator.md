@@ -1,6 +1,7 @@
 # Using the CarPlay Simulator
 
-**Framework**: CarPlay
+**Framework**: CarPlay  
+**Role**: Article
 
 Configure Simulator to run and debug your CarPlay-enabled app.
 
@@ -10,9 +11,9 @@ Simulator provides the ability to run your CarPlay-enabled app in a second windo
 
 Don’t use Simulator as your sole method of testing. Apple recommends that you also test in a vehicle or aftermarket system. If possible, use a device that supports wireless CarPlay. This allows you to use Xcode to debug your app while it’s running in a physical CarPlay environment.
 
-##### Open the Carplay Simulator
+##### Open the CarPlay Simulator
 
-Simulator doesn’t open the CarPlay window by default, but does keep it open for the rest of the session after you activate it. Simulator can’t display your CarPlay-enabled app unless it has the necessary entitlements. See [`Requesting CarPlay Entitlements`](requesting-carplay-entitlements.md) for more information.
+Simulator doesn’t open the CarPlay window by default, but does keep it open for the rest of the session after you activate it. Simulator can’t display your CarPlay-enabled app unless it has the necessary entitlements. See [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md) for more information.
 
 To open the CarPlay window:
 
@@ -52,17 +53,18 @@ For example, you can’t use Simulator to test:
 
 ## See Also
 
-- [Requesting CarPlay Entitlements](requesting-carplay-entitlements.md)
+### CarPlay Integration
+- [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md)
   Configure your CarPlay-enabled app with the entitlements it requires.
-- [Displaying Content in CarPlay](displaying-content-in-carplay.md)
+- [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
   Use scenes to present your app’s content on the vehicle’s built-in screen.
-- [Supporting Previous Versions of iOS](supporting-previous-versions-of-ios.md)
+- [Supporting Previous Versions of iOS](./supporting-previous-versions-of-ios.md)
   Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
-- [class CPTemplateApplicationScene](cptemplateapplicationscene.md)
+- [class CPTemplateApplicationScene](./cptemplateapplicationscene.md)
   A CarPlay scene that controls your app’s user interface.
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
-- [class CPSessionConfiguration](cpsessionconfiguration.md)
+- [class CPSessionConfiguration](./cpsessionconfiguration.md)
   An object that provides vehicle properties and configuration for the CarPlay environment.
 
 

@@ -1,7 +1,8 @@
 # requireAutomaticDateAndTime
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from changing their device’s date and time.
 
@@ -22,7 +23,8 @@ If your app doesn’t configure this setting, the value is `nil`.
 
 ## See Also
 
-- [static let requireAutomaticDateAndTime: SettingMetadata<Bool>](dateandtimesettings/requireautomaticdateandtime-swift.type.property.md)
+### Requiring automatic date and time
+- [static let requireAutomaticDateAndTime: SettingMetadata<Bool>](./requireautomaticdateandtime-swift.type.property.md)
   The metadata for the constraint that configures the date and time setting.
 
 

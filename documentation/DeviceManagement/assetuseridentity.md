@@ -1,7 +1,8 @@
 # AssetUserIdentity
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The user-identity data.
 
@@ -16,7 +17,7 @@ The user-identity data.
 
 ## Declaration
 
-```swift
+```
 object AssetUserIdentity
 ```
 
@@ -24,7 +25,7 @@ object AssetUserIdentity
 
 Specify `com.apple.asset.useridentity` as the declaration type.
 
-##### Asset Example
+##### Asset example
 
 ```json
 {
@@ -45,17 +46,18 @@ Specify `com.apple.asset.useridentity` as the declaration type.
 
 ## See Also
 
-- [object AssetCredentialACME](assetcredentialacme.md)
+### Assets
+- [object AssetCredentialACME](./assetcredentialacme.md)
   A reference to an ACME identity.
-- [object AssetCredentialCertificate](assetcredentialcertificate.md)
+- [object AssetCredentialCertificate](./assetcredentialcertificate.md)
   A reference to one PKCS #1 or PEM encoded certificate.
-- [object AssetCredentialIdentity](assetcredentialidentity.md)
+- [object AssetCredentialIdentity](./assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
-- [object AssetCredentialSCEP](assetcredentialscep.md)
+- [object AssetCredentialSCEP](./assetcredentialscep.md)
   A reference to a SCEP identity.
-- [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
+- [object AssetCredentialUserNameAndPassword](./assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
-- [object AssetData](assetdata.md)
+- [object AssetData](./assetdata.md)
   A reference to arbitrary data with a specific media type.
 
 

@@ -1,7 +1,8 @@
 # maximumAngles
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The positive delta from the rest pose per-axis in radians.
 

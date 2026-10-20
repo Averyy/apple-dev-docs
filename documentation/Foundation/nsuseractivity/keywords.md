@@ -1,7 +1,8 @@
 # keywords
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of localized keywords that can help users find the activity in search results.
 
@@ -20,9 +21,13 @@ A set of localized keywords that can help users find the activity in search resu
 var keywords: Set<String> { get set }
 ```
 
+```objc
+@property (copy) NSSet<NSString *> * keywords;
+```
+
 ## Mentions
 
-- [Creating a user activity object](creating-a-user-activity-object.md)
+- [Creating a user activity object](../creating-a-user-activity-object.md)
 
 #### Discussion
 
@@ -30,15 +35,16 @@ The default value of this property is `nil`. The system indexes the keywords you
 
 ## See Also
 
-- [var activityType: String](nsuseractivity/activitytype.md)
+### Describing the activity
+- [var activityType: String](./activitytype.md)
   The user activity object’s activity type.
-- [var title: String?](nsuseractivity/title.md)
+- [var title: String?](./title.md)
   An optional, user-visible title for this activity, such as a document name or web page title.
-- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](nsuseractivity/persistentidentifier.md)
+- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](./persistentidentifier.md)
   A unique and persistent value you use to identify the activity.
-- [typealias NSUserActivityPersistentIdentifier](nsuseractivitypersistentidentifier.md)
+- [typealias NSUserActivityPersistentIdentifier](../nsuseractivitypersistentidentifier.md)
   The type that defines a persistent identifier value for an activity.
-- [var contentAttributeSet: CSSearchableItemAttributeSet?](nsuseractivity/contentattributeset.md)
+- [var contentAttributeSet: CSSearchableItemAttributeSet?](./contentattributeset.md)
   A set of properties that describe the activity.
 
 

@@ -1,17 +1,18 @@
 # MPSCNNConvolutionGradientOption
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that control which gradient to compute during backward propagation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,26 +20,30 @@ Options that control which gradient to compute during backward propagation.
 struct MPSCNNConvolutionGradientOption
 ```
 
+```c
+enum MPSCNNConvolutionGradientOption : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpscnnconvolutiongradientoption/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mpscnnconvolutiongradientoption/init%28rawvalue%29.md)
 ### Type Properties
-- [static var all: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/all.md)
-- [static var gradientWithData: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/gradientwithdata.md)
-- [static var gradientWithWeightsAndBias: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/gradientwithweightsandbias.md)
+- [static var all: MPSCNNConvolutionGradientOption](./mpscnnconvolutiongradientoption/all.md)
+- [static var gradientWithData: MPSCNNConvolutionGradientOption](./mpscnnconvolutiongradientoption/gradientwithdata.md)
+- [static var gradientWithWeightsAndBias: MPSCNNConvolutionGradientOption](./mpscnnconvolutiongradientoption/gradientwithweightsandbias.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Append a single byte to this span.
 

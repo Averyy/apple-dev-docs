@@ -1,7 +1,8 @@
 # isSuperset(of:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Matches when the code signing flags on the file/slice are a superset of the specified flags.
 

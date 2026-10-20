@@ -1,7 +1,8 @@
 # errSecSMIMEKeyUsageNotCritical
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key usage extension is not marked as critical.
 
@@ -18,6 +19,10 @@ The key usage extension is not marked as critical.
 
 ```swift
 var errSecSMIMEKeyUsageNotCritical: OSStatus { get }
+```
+
+```c
+errSecSMIMEKeyUsageNotCritical
 ```
 
 

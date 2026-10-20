@@ -1,7 +1,8 @@
 # CSSM_WORDID__NLU_
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_WORDID__NLU_: Int { get }
+```
+
+```c
+CSSM_WORDID__NLU_
 ```
 
 

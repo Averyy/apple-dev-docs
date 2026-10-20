@@ -1,7 +1,8 @@
 # init(key:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message authentication code generator.
 
@@ -26,9 +27,10 @@ init(key: SymmetricKey)
 
 ## See Also
 
-- [func update<D>(data: D)](hmac/update(data:).md)
+### Creating an authentication code iteratively
+- [func update<D>(data: D)](./update%28data%29.md)
   Updates the message authentication code computation with a block of data.
-- [func finalize() -> HMAC<H>.MAC](hmac/finalize.md)
+- [func finalize() -> HMAC<H>.MAC](./finalize%28%29.md)
   Finalizes the message authentication computation and returns the computed code.
 
 

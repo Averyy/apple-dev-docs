@@ -1,7 +1,8 @@
 # IOSurfaceComponentRange.unknown
 
 **Framework**: IOSurface  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 case unknown
 ```
 
+```c
+kIOSurfaceComponentRangeUnknown
+```
+
 ## See Also
 
-- [IOSurfaceComponentRange.fullRange](iosurfacecomponentrange/fullrange.md)
-- [IOSurfaceComponentRange.videoRange](iosurfacecomponentrange/videorange.md)
-- [IOSurfaceComponentRange.wideRange](iosurfacecomponentrange/widerange.md)
+### Enumeration Cases
+- [IOSurfaceComponentRange.fullRange](./fullrange.md)
+- [IOSurfaceComponentRange.videoRange](./videorange.md)
+- [IOSurfaceComponentRange.wideRange](./widerange.md)
 
 
 ---

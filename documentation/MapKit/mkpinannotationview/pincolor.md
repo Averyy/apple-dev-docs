@@ -1,15 +1,18 @@
 # pinColor
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the pin head.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
+- iOS 3.0+ - Deprecated in 9.0
+- iPadOS 3.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.11
+
+> **Deprecated**: Use [`pinTintColor`](./pintintcolor.md) instead.
 
 ## Declaration
 
@@ -17,19 +20,24 @@ The color of the pin head.
 var pinColor: MKPinAnnotationColor { get set }
 ```
 
+```objc
+@property (nonatomic) MKPinAnnotationColor pinColor;
+```
+
 #### Discussion
 
-The Maps application uses different pin colors for different types of map annotations. Your own map annotation should use the available pin colors in the same way. For a description of when to use each type of pin, see the constants of [`MKPinAnnotationColor`](mkpinannotationcolor.md).
+The Maps application uses different pin colors for different types of map annotations. Your own map annotation should use the available pin colors in the same way. For a description of when to use each type of pin, see the constants of [`MKPinAnnotationColor`](../mkpinannotationcolor.md).
 
 ## See Also
 
-- [var filterType: MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.property.md)
+### Properties
+- [var filterType: MKLocalSearchCompleter.FilterType](../mklocalsearchcompleter/filtertype-swift.property.md)
   The filter options for the search results.
-- [var showsPointsOfInterest: Bool](mkmapview/showspointsofinterest.md)
+- [var showsPointsOfInterest: Bool](../mkmapview/showspointsofinterest.md)
   A Boolean value that indicates whether the map displays point-of-interest information.
-- [var showsPointsOfInterest: Bool](mkmapsnapshotter/options/showspointsofinterest.md)
+- [var showsPointsOfInterest: Bool](../mkmapsnapshotter/options/showspointsofinterest.md)
   A Boolean value that indicates whether the map displays point-of-interest information.
-- [var mapType: MKMapType](mkmapsnapshotter/options/maptype.md)
+- [var mapType: MKMapType](../mkmapsnapshotter/options/maptype.md)
   The map’s visual style.
 
 

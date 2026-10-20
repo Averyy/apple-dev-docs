@@ -1,7 +1,8 @@
 # init(from:appGroupID:)
 
 **Framework**: Background Assets  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a manifest in memory given JSON-encoded data.
 
@@ -26,7 +27,8 @@ init(from data: Data, appGroupID: String) throws
 
 ## See Also
 
-- [init(contentsOf: URL, appGroupID: String) throws](assetpackmanifest/init(contentsof:appgroupid:).md)
+### Creating an asset pack manifest
+- [init(contentsOf: URL, appGroupID: String) throws](./init%28contentsof,appgroupid%29.md)
   Creates a manifest in memory given a URL to the manifest’s representation as a JSON file on disk.
 
 

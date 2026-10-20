@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -19,13 +20,14 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(x: Double, y: Double)](vnpoint/init(x:y:).md)
+### Creating a Point
+- [init(x: Double, y: Double)](./init%28x,y%29.md)
   Creates a point object with the specified coordinates.
-- [convenience init(location: CGPoint)](vnpoint/init(location:).md)
+- [convenience init(location: CGPoint)](./init%28location%29.md)
   Creates a point object from the specified Core Graphics point.
-- [class func apply(VNVector, to: VNPoint) -> VNPoint](vnpoint/apply(_:to:).md)
+- [class func apply(VNVector, to: VNPoint) -> VNPoint](./apply%28_,to%29.md)
   Creates a point object that’s shifted by the X and Y offsets of the specified vector.
-- [class var zero: VNPoint](vnpoint/zero.md)
+- [class var zero: VNPoint](./zero.md)
   A point object that represents the origin.
 
 

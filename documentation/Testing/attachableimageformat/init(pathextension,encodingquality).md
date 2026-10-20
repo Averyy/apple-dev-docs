@@ -1,7 +1,8 @@
 # init(pathExtension:encodingQuality:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct an instance of this type with the given path extension and encoding quality.
 
@@ -21,8 +22,8 @@ If the target image format does not support variable-quality encoding, the value
 
 If `pathExtension` does not correspond to a recognized image format, this initializer returns `nil`:
 
-- On Apple platforms, the content type corresponding to `pathExtension` must conform to [`UTType.image`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/image).
-- On Windows, there must be a corresponding subclass of [`IWICBitmapEncoder`](https://developer.apple.comhttps://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapencoder) registered with Windows Imaging Component.
+- On Apple platforms, the content type corresponding to `pathExtension` must conform to [UTType.image](../../UniformTypeIdentifiers/uttype-swift.struct/image.md).
+- On Windows, there must be a corresponding subclass of [IWICBitmapEncoder](https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapencoder) registered with Windows Imaging Component.
 
 ## Parameters
 

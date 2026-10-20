@@ -1,7 +1,8 @@
 # init(normalizedRect:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle from the specified Core Graphics rectangle.
 
@@ -26,13 +27,14 @@ init(normalizedRect: CGRect)
 
 ## See Also
 
-- [init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)](normalizedrect/init(x:y:width:height:).md)
+### Creating a normalized rectangle
+- [init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)](./init%28x,y,width,height%29.md)
   Creates a rectangle with the specified coordinates.
-- [init(imageRect: CGRect, in: CGSize)](normalizedrect/init(imagerect:in:).md)
+- [init(imageRect: CGRect, in: CGSize)](./init%28imagerect,in%29.md)
   Creates a normalized rectangle from a rectangle in an image coordinate space.
-- [init(imageRect: CGRect, in: CGSize, normalizedTo: NormalizedRect)](normalizedrect/init(imagerect:in:normalizedto:).md)
+- [init(imageRect: CGRect, in: CGSize, normalizedTo: NormalizedRect)](./init%28imagerect,in,normalizedto%29.md)
   Creates a rectangle normalized to a region of interest in an image from a rectangle in an image coordinate space.
-- [static var fullImage: NormalizedRect](normalizedrect/fullimage.md)
+- [static var fullImage: NormalizedRect](./fullimage.md)
   A normalized rectangle with an origin at zero and a width and height of one.
 
 

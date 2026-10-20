@@ -1,16 +1,19 @@
 # stride
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride vector.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -20,9 +23,10 @@ var stride: [Int]? { get }
 
 ## See Also
 
-- [var start: [Int]](mlcslicelayer/start-6wsh6.md)
+### Inspecting Slice Layers
+- [var start: [Int]](./start-6wsh6.md)
   The start vector.
-- [var end: [Int]](mlcslicelayer/end-9xw91.md)
+- [var end: [Int]](./end-9xw91.md)
   The end vector.
 
 

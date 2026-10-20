@@ -1,7 +1,8 @@
 # init(end:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a date-based recurrence end with a given end date.
 
@@ -19,6 +20,10 @@ Initializes and returns a date-based recurrence end with a given end date.
 convenience init(end endDate: Date)
 ```
 
+```objc
++ (instancetype) recurrenceEndWithEndDate:(NSDate *) endDate;
+```
+
 #### Return Value
 
 The initialized recurrence end.
@@ -33,8 +38,10 @@ The end date argument must be a valid `NSDate` and not `nil`; otherwise an excep
 
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [convenience init(occurrenceCount: Int)](ekrecurrenceend/init(occurrencecount:).md)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Creating a Recurrence End
+- [convenience init(occurrenceCount: Int)](./init%28occurrencecount%29.md)
   Initializes and returns a count-based recurrence end with a given maximum occurrence count.
 
 

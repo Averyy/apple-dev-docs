@@ -2,6 +2,7 @@
 
 **Framework**: Create ML  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new default instance of the conforming type when a data value is missing or invalid.
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init?(from: MLDataValue)](mldatavalueconvertible/init(from:).md)
+### Converting from a data value to a type’s instance
+- [init?(from: MLDataValue)](./init%28from%29.md)
   Creates an instance of the conforming type from a data value.
 
 

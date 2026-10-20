@@ -1,7 +1,8 @@
 # init(version:refcon:getDecodeTimeStamp:getPresentationTimeStamp:getDuration:isDataReady:compare:dataBecameReadyNotification:getSize:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+

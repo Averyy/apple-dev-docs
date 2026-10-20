@@ -1,7 +1,8 @@
 # ICSessionOptions
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Session options for altering the delivery of the device contents.
 
@@ -18,25 +19,30 @@ Session options for altering the delivery of the device contents.
 struct ICSessionOptions
 ```
 
+```c
+typedef NSString * ICSessionOptions;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](icsessionoptions/init(rawvalue:).md)
+- [init(rawValue: String)](./icsessionoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var capabilities: [String]](icdevice/capabilities.md)
+### Inspecting a Device’s Capabilities
+- [var capabilities: [String]](./icdevice/capabilities.md)
   The capabilities of the device as reported by the device module.
-- [struct ICDeviceCapability](icdevicecapability.md)
+- [struct ICDeviceCapability](./icdevicecapability.md)
   Constants that describe the capabilities of a camera.
 
 

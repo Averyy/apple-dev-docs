@@ -1,14 +1,15 @@
 # kIONetworkFeatureLRO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 kIONetworkFeatureLRO = 0x200
 ```
 

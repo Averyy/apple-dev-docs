@@ -1,7 +1,8 @@
 # mipmapsMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the texture resource automatically generates mipmaps.
 
@@ -11,7 +12,7 @@ Whether the texture resource automatically generates mipmaps.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var mipmapsMode: TextureResource.MipmapsMode
 
 ## See Also
 
-- [var semantic: TextureResource.Semantic?](textureresource/createoptions/semantic.md)
+### Texture resource creation options
+- [var semantic: TextureResource.Semantic?](./semantic.md)
   The intended use of the texture.
 
 

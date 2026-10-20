@@ -1,7 +1,8 @@
 # NEDNSProtocol
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 14.0+
@@ -17,41 +18,46 @@
 enum NEDNSProtocol
 ```
 
+```c
+enum NEDNSProtocol : NSInteger;
+```
+
 ## Topics
 
 ### DNS protocols
-- [NEDNSProtocol.cleartext](nednsprotocol/cleartext.md)
+- [NEDNSProtocol.cleartext](./nednsprotocol/cleartext.md)
   The DNS server uses cleartext UDP or TCP over port 53.
-- [NEDNSProtocol.TLS](nednsprotocol/tls.md)
+- [NEDNSProtocol.TLS](./nednsprotocol/tls.md)
   The DNS server uses DNS-over-TLS.
-- [NEDNSProtocol.HTTPS](nednsprotocol/https.md)
+- [NEDNSProtocol.HTTPS](./nednsprotocol/https.md)
   The DNS server uses DNS-over-HTTPS.
 ### Initializers
-- [init?(rawValue: Int)](nednsprotocol/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nednsprotocol/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var servers: [String]](nednssettings/servers.md)
+### Accessing DNS properties
+- [var servers: [String]](./nednssettings/servers.md)
   The DNS server IP addresses.
-- [var searchDomains: [String]?](nednssettings/searchdomains.md)
+- [var searchDomains: [String]?](./nednssettings/searchdomains.md)
   A list of domain strings used to fully qualify single-label host names.
-- [var domainName: String?](nednssettings/domainname.md)
+- [var domainName: String?](./nednssettings/domainname.md)
   The primary domain of the tunnel.
-- [var matchDomains: [String]?](nednssettings/matchdomains.md)
+- [var matchDomains: [String]?](./nednssettings/matchdomains.md)
   A list of domain strings used to determine which DNS queries will use the DNS resolver settings contained in this object.
-- [var matchDomainsNoSearch: Bool](nednssettings/matchdomainsnosearch.md)
+- [var matchDomainsNoSearch: Bool](./nednssettings/matchdomainsnosearch.md)
   A Boolean that specifies if the domains in the `matchDomains` list should not be appended to the resolver’s list of search domains.
-- [var dnsProtocol: NEDNSProtocol](nednssettings/dnsprotocol.md)
+- [var dnsProtocol: NEDNSProtocol](./nednssettings/dnsprotocol.md)
   The DNS protocol used by the server, such as HTTPS or TLS.
 
 

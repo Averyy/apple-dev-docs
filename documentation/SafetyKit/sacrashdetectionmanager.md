@@ -1,7 +1,8 @@
 # SACrashDetectionManager
 
 **Framework**: SafetyKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides registration and management of Crash Detection events.
 
@@ -18,46 +19,51 @@ Provides registration and management of Crash Detection events.
 class SACrashDetectionManager
 ```
 
+```objc
+@interface SACrashDetectionManager : NSObject
+```
+
 #### Overview
 
-Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](sacrashdetectionmanager/isavailable.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](./sacrashdetectionmanager/isavailable.md) returns [`true`](../Swift/true.md).
 
-Check the value of [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) to determine if the person designates this app on their iPhone to receive Crash Detection events. If the value is not [`SAAuthorizationStatus.authorized`](saauthorizationstatus/authorized.md), set [`delegate`](sacrashdetectionmanager/delegate.md) and call [`requestAuthorization(completionHandler:)`](sacrashdetectionmanager/requestauthorization(completionhandler:).md) to request authorization.
+Check the value of [`authorizationStatus`](./sacrashdetectionmanager/authorizationstatus.md) to determine if the person designates this app on their iPhone to receive Crash Detection events. If the value is not [`SAAuthorizationStatus.authorized`](./saauthorizationstatus/authorized.md), set [`delegate`](./sacrashdetectionmanager/delegate.md) and call [`requestAuthorization(completionHandler:)`](./sacrashdetectionmanager/requestauthorization%28completionhandler%29.md) to request authorization.
 
-After your app has authorization to receive Crash Detection events, adopt [`SACrashDetectionDelegate`](sacrashdetectiondelegate.md) and implement [`crashDetectionManager(_:didDetect:)`](sacrashdetectiondelegate/crashdetectionmanager(_:diddetect:).md). If a vehicular crash occurs, the system calls the method with the Crash Detection event.
+After your app has authorization to receive Crash Detection events, adopt [`SACrashDetectionDelegate`](./sacrashdetectiondelegate.md) and implement [`crashDetectionManager(_:didDetect:)`](./sacrashdetectiondelegate/crashdetectionmanager%28_,diddetect%29.md). If a vehicular crash occurs, the system calls the method with the Crash Detection event.
 
 ## Topics
 
 ### Determining availability
-- [class var isAvailable: Bool](sacrashdetectionmanager/isavailable.md)
+- [class var isAvailable: Bool](./sacrashdetectionmanager/isavailable.md)
   A Boolean value that indicates if Crash Detection is available.
-- [var authorizationStatus: SAAuthorizationStatus](sacrashdetectionmanager/authorizationstatus.md)
+- [var authorizationStatus: SAAuthorizationStatus](./sacrashdetectionmanager/authorizationstatus.md)
   A value that indicates if the person authorized the app to receive Crash Detection events.
 ### Requesting authorization
-- [var delegate: (any SACrashDetectionDelegate)?](sacrashdetectionmanager/delegate.md)
+- [var delegate: (any SACrashDetectionDelegate)?](./sacrashdetectionmanager/delegate.md)
   The object that receives Crash Detection events.
-- [func requestAuthorization(completionHandler: (SAAuthorizationStatus, (any Error)?) -> Void)](sacrashdetectionmanager/requestauthorization(completionhandler:).md)
+- [func requestAuthorization(completionHandler: (SAAuthorizationStatus, (any Error)?) -> Void)](./sacrashdetectionmanager/requestauthorization%28completionhandler%29.md)
   Requests permission to access Crash Detection information.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum SAAuthorizationStatus](saauthorizationstatus.md)
+### Detecting a crash
+- [enum SAAuthorizationStatus](./saauthorizationstatus.md)
   An enumeration that represents the current Crash Detection event authorization state.
-- [class SACrashDetectionEvent](sacrashdetectionevent.md)
+- [class SACrashDetectionEvent](./sacrashdetectionevent.md)
   Describes the information about a vehicular crash.
-- [protocol SACrashDetectionDelegate](sacrashdetectiondelegate.md)
+- [protocol SACrashDetectionDelegate](./sacrashdetectiondelegate.md)
   The protocol that an object adopts to receive Crash Detection events and changes to the authorization status.
 
 

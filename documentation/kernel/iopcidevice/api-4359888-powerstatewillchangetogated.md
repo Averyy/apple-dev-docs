@@ -1,14 +1,15 @@
 # powerStateWillChangeToGated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+ - Deprecated in 15.0
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn powerStateWillChangeToGated(IOPMPowerFlags *capabilities, unsigned long *stateNumber, IOService *whatDevice);
 ```
 

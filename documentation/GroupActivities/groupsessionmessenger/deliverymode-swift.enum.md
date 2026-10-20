@@ -1,7 +1,8 @@
 # GroupSessionMessenger.DeliveryMode
 
 **Framework**: Group Activities  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The transmission characteristics to apply to the delivery of messages.
 
@@ -22,18 +23,18 @@ enum DeliveryMode
 ## Topics
 
 ### Getting the delivery mode options
-- [GroupSessionMessenger.DeliveryMode.reliable](groupsessionmessenger/deliverymode-swift.enum/reliable.md)
+- [GroupSessionMessenger.DeliveryMode.reliable](./deliverymode-swift.enum/reliable.md)
   An attempt to ensure the delivery of messages to known participants.
-- [GroupSessionMessenger.DeliveryMode.unreliable](groupsessionmessenger/deliverymode-swift.enum/unreliable.md)
+- [GroupSessionMessenger.DeliveryMode.unreliable](./deliverymode-swift.enum/unreliable.md)
   A best-effort attempt to deliver the message to known participants.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

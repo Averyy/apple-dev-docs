@@ -1,7 +1,8 @@
 # init(device:dataSource:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(device: any MTLDevice, dataSource: any MPSCNNBatchNormalizationDataSource)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device dataSource:(id<MPSCNNBatchNormalizationDataSource>) dataSource;
 ```
 
 

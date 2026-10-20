@@ -1,6 +1,8 @@
 # Building a document-based app with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [BuildingADocumentBasedAppWithSwiftUI.zip](https://docs-assets.developer.apple.com/published/c3cf22d725e5/BuildingADocumentBasedAppWithSwiftUI.zip)
 
 Create, save, and open documents in a multiplatform app.
 
@@ -19,13 +21,13 @@ With this sample app, people can create, save, and open checklist documents on i
 - Select and deselect items to mark them complete.
 - Undo and redo their changes.
 
-The app uses SwiftUI’s [`DocumentGroup`](documentgroup.md) scene and [`Document`](document.md) protocol to open, save, and manage checklist files, and registers its own custom document type so the system knows to open checklist files with this app.
+The app uses SwiftUI’s [`DocumentGroup`](./documentgroup.md) scene and [`Document`](./document.md) protocol to open, save, and manage checklist files, and registers its own custom document type so the system knows to open checklist files with this app.
 
-![A screenshot displaying the document launch experience on iPad with a robot and plant accessory to the left and right of the title view, respectively.](/images/com.apple.SwiftUI/writing-app-ipad@2x.png)
+![A screenshot displaying the document launch experience on iPad with a robot and plant accessory to the left and right of the title view, respectively.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/writing-app-ipad@2x.png)
 
-> **Note**: This sample targets the [`Document`](document.md) protocol described in [`Creating a document-based app`](creating-a-document-based-app.md) and [`Updating your document-based app`](updating-your-document-based-app.md).
+> **Note**: This sample targets the [`Document`](./document.md) protocol described in [Creating a document-based app](./creating-a-document-based-app.md) and [Updating your document-based app](./updating-your-document-based-app.md).
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 To build and run this sample on your device, select your development team for the project’s target using these steps:
 
@@ -33,9 +35,9 @@ To build and run this sample on your device, select your development team for th
 2. Select the top-level project.
 3. For the project’s target, choose your team from the Team pop-up menu in the Signing & Capabilities pane to let Xcode automatically manage your provisioning profile.
 
-#### Create the Data Model
+#### Create the data model
 
-This sample has a data model that defines a checklist as a collection of items. Each item has a title and a Boolean value that tracks whether someone checked it off. `ChecklistItem` and `Checklist` conform to [`Codable`](https://developer.apple.com/documentation/swift/codable) for serialization, and to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) for unique identification during enumeration. `ChecklistItem` also conforms to [`Equatable`](https://developer.apple.com/documentation/swift/equatable) so SwiftUI can detect when an item’s content changes, as shown here:
+This sample has a data model that defines a checklist as a collection of items. Each item has a title and a Boolean value that tracks whether someone checked it off. `ChecklistItem` and `Checklist` conform to [`Codable`](../Swift/codable.md) for serialization, and to [`Identifiable`](../Swift/identifiable.md) for unique identification during enumeration. `ChecklistItem` also conforms to [`Equatable`](../Swift/equatable.md) so SwiftUI can detect when an item’s content changes, as shown here:
 
 ```swift
 struct ChecklistItem: Identifiable, Codable, Equatable {
@@ -50,9 +52,9 @@ struct Checklist: Identifiable, Codable {
 }
 ```
 
-#### Define the Apps Scene
+#### Define the app’s scene
 
-An app becomes document-based when its first scene in the `App` declaration is either a `DocumentGroup` or a `DocumentGroupLaunchScene`. In this sample, the document type conforms to the [`Document`](document.md) protocol. The `editor` closure of the initializer returns a view that renders the document’s contents, and the `makeDocument` closure creates a new document instance, like this:
+An app becomes document-based when its first scene in the `App` declaration is either a `DocumentGroup` or a `DocumentGroupLaunchScene`. In this sample, the document type conforms to the [`Document`](./document.md) protocol. The `editor` closure of the initializer returns a view that renders the document’s contents, and the `makeDocument` closure creates a new document instance, like this:
 
 ```swift
 @main
@@ -67,9 +69,9 @@ struct DocumentBasedApp: App {
 }
 ```
 
-#### Customize the Ios and Ipados Launch Experience
+#### Customize the iOS and iPadOS launch experience
 
-You can update the default launch experience on iOS and iPadOS with a custom title, action buttons, and a screen background. To add an action button with a custom label, use `Button`. For a button that creates new documents, use a [`NewDocumentButton`](newdocumentbutton.md) with a custom title. You can customize the background, such as adding a view or a `backgroundStyle` with an initializer, for example, [`init(_:backgroundStyle:_:backgroundAccessoryView:overlayAccessoryView:)`](documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:)-2d13c.md). This sample customizes the background of the title view using a [`init(_:_:background:overlayAccessoryView:)`](documentgrouplaunchscene/init(_:_:background:overlayaccessoryview:).md) initializer of [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md), and places a robot and a plant on either side of the title as an overlay accessory view, as shown here:
+You can update the default launch experience on iOS and iPadOS with a custom title, action buttons, and a screen background. To add an action button with a custom label, use `Button`. For a button that creates new documents, use a [`NewDocumentButton`](./newdocumentbutton.md) with a custom title. You can customize the background, such as adding a view or a `backgroundStyle` with an initializer, for example, [`init(_:backgroundStyle:_:backgroundAccessoryView:overlayAccessoryView:)`](./documentgrouplaunchscene/init%28_,backgroundstyle,_,backgroundaccessoryview,overlayaccessoryview%29-2d13c.md). This sample customizes the background of the title view using a [`init(_:_:background:overlayAccessoryView:)`](./documentgrouplaunchscene/init%28_,_,background,overlayaccessoryview%29.md) initializer of [`DocumentGroupLaunchScene`](./documentgrouplaunchscene.md), and places a robot and a plant on either side of the title as an overlay accessory view, as shown here:
 
 ```swift
 DocumentGroupLaunchScene("Checklist") {
@@ -83,17 +85,17 @@ DocumentGroupLaunchScene("Checklist") {
 }
 ```
 
-Because [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md) isn’t available in macOS, add this scene alongside the sample’s [`DocumentGroup`](documentgroup.md) scene within an `#if os(iOS)` conditional compilation block.
+Because [`DocumentGroupLaunchScene`](./documentgrouplaunchscene.md) isn’t available in macOS, add this scene alongside the sample’s [`DocumentGroup`](./documentgroup.md) scene within an `#if os(iOS)` conditional compilation block.
 
-#### Adopt the Document Protocol
+#### Adopt the document protocol
 
-The `ChecklistDocument` class adopts the [`Document`](document.md) protocol to read and write checklists from and to files. Because [`Document`](document.md) requires a reference type, `ChecklistDocument` is a `final class` marked with [`Observable()`](https://developer.apple.com/documentation/observation/observable()), rather than a structure. The [`readableContentTypes`](readabledocument/readablecontenttypes.md) property defines the types that the sample can read, specifically, the `.checklistDocument` type, like this:
+The `ChecklistDocument` class adopts the [`Document`](./document.md) protocol to read and write checklists from and to files. Because [`Document`](./document.md) requires a reference type, `ChecklistDocument` is a `final class` marked with [`Observable()`](../Observation/observable%28%29.md), rather than a structure. The [`readableContentTypes`](./readabledocument/readablecontenttypes.md) property defines the types that the sample can read, specifically, the `.checklistDocument` type, like this:
 
 ```swift
 static let readableContentTypes: [UTType] = [.checklistDocument]
 ```
 
-The sample reads a checklist from a file using a [`DocumentReader`](documentreader.md) that its [`reader(configuration:)`](readabledocument/reader(configuration:).md) method returns. This sample uses [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) with a closure that decodes a file wrapper’s contents using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder), as shown here:
+The sample reads a checklist from a file using a [`DocumentReader`](./documentreader.md) that its [`reader(configuration:)`](./readabledocument/reader%28configuration%29.md) method returns. This sample uses [`FileWrapperDocumentReader`](./filewrapperdocumentreader.md) with a closure that decodes a file wrapper’s contents using a [`JSONDecoder`](../Foundation/jsondecoder.md), as shown here:
 
 ```swift
 func reader(configuration: sending ReadConfiguration) -> sending FileWrapperDocumentReader<Checklist> {
@@ -106,7 +108,7 @@ func reader(configuration: sending ReadConfiguration) -> sending FileWrapperDocu
 }
 ```
 
-After SwiftUI reads a checklist in the background, it delivers the result to the document’s [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md) method on the main actor, which updates the document’s observable state, like this:
+After SwiftUI reads a checklist in the background, it delivers the result to the document’s [`apply(snapshot:previous:)`](./readabledocument/apply%28snapshot,previous%29.md) method on the main actor, which updates the document’s observable state, like this:
 
 ```swift
 @MainActor
@@ -115,7 +117,7 @@ func apply(snapshot: sending Checklist, previous: sending Checklist?) async thro
 }
 ```
 
-When someone saves the document, the sample returns a snapshot of its data from [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md), which also runs on the main actor as follows:
+When someone saves the document, the sample returns a snapshot of its data from [`snapshot(contentType:)`](./writabledocument/snapshot%28contenttype%29.md), which also runs on the main actor as follows:
 
 ```swift
 @MainActor
@@ -124,7 +126,7 @@ func snapshot(contentType: UTType) async throws -> sending Checklist {
 }
 ```
 
-Conversely, the [`writer(configuration:)`](writabledocument/writer(configuration:).md) method returns a [`DocumentWriter`](documentwriter.md) that encodes the snapshot and writes it to disk. This sample uses [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) with a closure that serializes the snapshot into a file wrapper using a [`JSONEncoder`](https://developer.apple.com/documentation/foundation/jsonencoder) instance, like this:
+Conversely, the [`writer(configuration:)`](./writabledocument/writer%28configuration%29.md) method returns a [`DocumentWriter`](./documentwriter.md) that encodes the snapshot and writes it to disk. This sample uses [`FileWrapperDocumentWriter`](./filewrapperdocumentwriter.md) with a closure that serializes the snapshot into a file wrapper using a [`JSONEncoder`](../Foundation/jsonencoder.md) instance, like this:
 
 ```swift
 func writer(configuration: sending WriteConfiguration) -> sending FileWrapperDocumentWriter<Checklist> {
@@ -135,9 +137,9 @@ func writer(configuration: sending WriteConfiguration) -> sending FileWrapperDoc
 }
 ```
 
-#### Register Undo and Redo Actions
+#### Register undo and redo actions
 
-With the [`Document`](document.md) protocol, undo management is mandatory to enable autosave. Read the active [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) from the environment and update the document through methods that register an undo action. Calling the same method again from the undo closure also registers the redo action, so most operations only need one method, as shown here:
+With the [`Document`](./document.md) protocol, undo management is mandatory to enable autosave. Read the active [`UndoManager`](../Foundation/undomanager.md) from the environment and update the document through methods that register an undo action. Calling the same method again from the undo closure also registers the redo action, so most operations only need one method, as shown here:
 
 ```swift
 @MainActor
@@ -150,9 +152,9 @@ func toggleItem(_ item: Binding<ChecklistItem>, undoManager: UndoManager? = nil)
 }
 ```
 
-#### Export a Custom Document Type
+#### Export a custom document type
 
-The app defines and exports a custom content type for the documents it creates. It declares this custom type in the project’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file under the [`UTExportedTypeDeclarations`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations) key. This sample uses `com.example.checklist` as the identifier in the information property list file, as the following code demonstrates:
+The app defines and exports a custom content type for the documents it creates. It declares this custom type in the project’s [`Information Property List`](../BundleResources/information-property-list.md) file under the [`UTExportedTypeDeclarations`](../BundleResources/information-property-list/utexportedtypedeclarations.md) key. This sample uses `com.example.checklist` as the identifier in the information property list file, as the following code demonstrates:
 
 ```swift
 <key>CFBundleDocumentTypes</key>
@@ -203,13 +205,28 @@ extension UTType {
 }
 ```
 
-Specify a file extension for every custom format you declare to make sure the operating system opens files with the given extension using your app. For more information about custom file and data types, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
+Specify a file extension for every custom format you declare to make sure the operating system opens files with the given extension using your app. For more information about custom file and data types, see [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md).
 
-###### Related Samples
+#### See Also
 
-###### Related Articles
+###### Related samples
 
-###### Related Videos
+- [Building a document-based app using SwiftData](./building-a-document-based-app-using-swiftdata.md)
+  Code along with the WWDC presenter to transform an app with SwiftData.
+
+###### Related articles
+
+- [Creating a document-based app](./creating-a-document-based-app.md)
+  Build apps that people can use to open, edit, and save files using coordinated file access.
+- [Updating your document-based app](./updating-your-document-based-app.md)
+  Migrate an existing app to adopt URL-based document reading and writing with Swift concurrency.
+- [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md)
+  Declare uniform type identifiers to support your app’s proprietary data formats.
+
+###### Related videos
+
+- [What’s new in SwiftUI](https://developer.apple.com/videos/play/wwdc2026/269)
+  Explore the latest additions to SwiftUI and discover how they can improve your apps. We’ll introduce a new Document protocol with direct disk access and snapshot-based diffing for building high-performance apps; new APIs for reordering content in lists, grids, and sections; and toolbar enhancements including visibility priority and auto-minimizing behavior. We’ll also cover expanded presentation APIs — including swipe actions on any view — plus AsyncImage caching improvements and lazy state initialization for Observable types.
 
 
 ---

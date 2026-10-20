@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDiscStatusComplete](1645938-anonymous/kdiscstatuscomplete.md)
-- [kDiscStatusEmpty](1645938-anonymous/kdiscstatusempty.md)
-- [kDiscStatusErasableMask](1645938-anonymous/kdiscstatuserasablemask.md)
-- [kDiscStatusIncomplete](1645938-anonymous/kdiscstatusincomplete.md)
-- [kDiscStatusMask](1645938-anonymous/kdiscstatusmask.md)
-- [kDiscStatusOther](1645938-anonymous/kdiscstatusother.md)
+- [kDiscStatusComplete](./api-1645938-anonymous/kdiscstatuscomplete.md)
+- [kDiscStatusEmpty](./api-1645938-anonymous/kdiscstatusempty.md)
+- [kDiscStatusErasableMask](./api-1645938-anonymous/kdiscstatuserasablemask.md)
+- [kDiscStatusIncomplete](./api-1645938-anonymous/kdiscstatusincomplete.md)
+- [kDiscStatusMask](./api-1645938-anonymous/kdiscstatusmask.md)
+- [kDiscStatusOther](./api-1645938-anonymous/kdiscstatusother.md)
 
 
 ---

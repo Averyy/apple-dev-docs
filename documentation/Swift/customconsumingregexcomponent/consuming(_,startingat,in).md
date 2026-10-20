@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.

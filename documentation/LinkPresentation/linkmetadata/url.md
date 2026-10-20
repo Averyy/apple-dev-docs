@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that returned the metadata, taking server-side redirects into account.
 
@@ -23,7 +24,7 @@ var url: URL { get set }
 
 #### Discussion
 
-The URL that returns the metadata may differ from the [`originalURL`](linkmetadata/originalurl.md) to which you sent the metadata request. This can happen if the server redirects the request, for example, when a resource has moved, or when the original URL is a domain alias.
+The URL that returns the metadata may differ from the [`originalURL`](./originalurl.md) to which you sent the metadata request. This can happen if the server redirects the request, for example, when a resource has moved, or when the original URL is a domain alias.
 
 
 ---

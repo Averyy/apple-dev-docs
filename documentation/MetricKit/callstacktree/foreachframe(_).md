@@ -1,7 +1,8 @@
 # forEachFrame(_:)
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Iterates all frames efficiently.
 
@@ -20,7 +21,7 @@ func forEachFrame(_ body: (CallStackFrame) throws -> Void) rethrows
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ Use this method for optimized traversal of the entire call stack tree.
 
 ## See Also
 
-- [let callStackThreads: ContiguousArray<CallStackThread>](callstacktree/callstackthreads.md)
+### Threads and frames
+- [let callStackThreads: ContiguousArray<CallStackThread>](./callstackthreads.md)
   Array of call stack threads
-- [let callStackPerThread: Bool](callstacktree/callstackperthread.md)
+- [let callStackPerThread: Bool](./callstackperthread.md)
   Whether call stacks are organized per-thread
 
 

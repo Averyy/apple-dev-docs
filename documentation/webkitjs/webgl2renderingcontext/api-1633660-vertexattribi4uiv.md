@@ -1,7 +1,8 @@
 # vertexAttribI4uiv
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void vertexAttribI4uiv(
     GLuint index, 
     Uint32Array? v

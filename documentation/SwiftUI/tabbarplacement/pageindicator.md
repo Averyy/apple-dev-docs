@@ -1,7 +1,8 @@
 # pageIndicator
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Tab view displaying as an indicator that shows the position within the pages.
 

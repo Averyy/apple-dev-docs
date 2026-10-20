@@ -1,7 +1,8 @@
 # LOMDeviceRequestCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to send requests to a device using lights-out management (LOM).
 
@@ -10,14 +11,14 @@ The command to send requests to a device using lights-out management (LOM).
 
 ## Declaration
 
-```swift
+```
 object LOMDeviceRequestCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object LOMDeviceRequestCommand.Command](lomdevicerequestcommand/command-data.dictionary.md)
+- [object LOMDeviceRequestCommand.Command](./lomdevicerequestcommand/command-data.dictionary.md)
   The command to send requests to a device using lights-out management (LOM).
 
 ## Properties
@@ -27,7 +28,8 @@ object LOMDeviceRequestCommand
 
 ## See Also
 
-- [object LOMDeviceRequestResponse](lomdevicerequestresponse.md)
+### Commands and responses
+- [object LOMDeviceRequestResponse](./lomdevicerequestresponse.md)
   A response from the device after it processes the command to send requests to a device using lights-out management (LOM).
 
 

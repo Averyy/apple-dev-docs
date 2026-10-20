@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this value into the given encoder, when the type’s `RawValue` is `UInt8`.
 
@@ -19,6 +20,8 @@ Encodes this value into the given encoder, when the type’s `RawValue` is `UInt
 ```swift
 func encode(to encoder: any Encoder) throws
 ```
+
+Available when `Self` conforms to `Encodable` and `RawValue` is `UInt8`.
 
 #### Discussion
 

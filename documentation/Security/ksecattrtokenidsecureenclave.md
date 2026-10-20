@@ -1,7 +1,8 @@
 # kSecAttrTokenIDSecureEnclave
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies an item should be protected by the device’s Secure Enclave.
 
@@ -20,13 +21,17 @@ Specifies an item should be protected by the device’s Secure Enclave.
 let kSecAttrTokenIDSecureEnclave: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrTokenIDSecureEnclave;
+```
+
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
 #### Discussion
 
-To generate a new key that’s protected by the Secure Enclave, call [`SecKeyGeneratePair(_:_:_:)`](seckeygeneratepair(_:_:_:).md), setting the [`kSecAttrTokenID`](ksecattrtokenid.md) key in the parameters dictionary to [`kSecAttrTokenIDSecureEnclave`](ksecattrtokenidsecureenclave.md). For an example, see [`Protecting keys with the Secure Enclave`](protecting-keys-with-the-secure-enclave.md).
+To generate a new key that’s protected by the Secure Enclave, call [`SecKeyGeneratePair(_:_:_:)`](./seckeygeneratepair%28_,_,_%29.md), setting the [`kSecAttrTokenID`](./ksecattrtokenid.md) key in the parameters dictionary to [`kSecAttrTokenIDSecureEnclave`](./ksecattrtokenidsecureenclave.md). For an example, see [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md).
 
 
 ---

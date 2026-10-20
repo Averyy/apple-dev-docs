@@ -1,7 +1,8 @@
 # init(presentation:metadata:tintColor:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of an alarm UI.
 
@@ -24,13 +25,14 @@ init(presentation: AlarmPresentation, metadata: Metadata? = nil, tintColor: Colo
 
 ## See Also
 
-- [var tintColor: Color](alarmattributes/tintcolor.md)
+### Creating an alarm attribute
+- [var tintColor: Color](./tintcolor.md)
   The tint color applied to the templated UI.
-- [var presentation: AlarmPresentation](alarmattributes/presentation.md)
+- [var presentation: AlarmPresentation](./presentation.md)
   The content required for the various states of the UI.
-- [var metadata: Metadata?](alarmattributes/metadata.md)
+- [var metadata: Metadata?](./metadata.md)
   The additional data you can include in your attributes.
-- [AlarmAttributes.ContentState](alarmattributes/contentstate.md)
+- [AlarmAttributes.ContentState](./contentstate.md)
   The type alias for the structure that describes the content of an alarm.
 
 

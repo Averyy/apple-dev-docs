@@ -1,7 +1,8 @@
 # SharedCoordinateSpaceProvider.Event
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events that can occur in a shared coordinate space.
 
@@ -17,20 +18,20 @@ enum Event
 ## Topics
 
 ### Enumeration Cases
-- [SharedCoordinateSpaceProvider.Event.connectedParticipantIdentifiers(participants:)](sharedcoordinatespaceprovider/event/connectedparticipantidentifiers(participants:).md)
+- [SharedCoordinateSpaceProvider.Event.connectedParticipantIdentifiers(participants:)](./event/connectedparticipantidentifiers%28participants%29.md)
   Participants changed.
-- [SharedCoordinateSpaceProvider.Event.sharingDisabled](sharedcoordinatespaceprovider/event/sharingdisabled.md)
-- [SharedCoordinateSpaceProvider.Event.sharingEnabled](sharedcoordinatespaceprovider/event/sharingenabled.md)
+- [SharedCoordinateSpaceProvider.Event.sharingDisabled](./event/sharingdisabled.md)
+- [SharedCoordinateSpaceProvider.Event.sharingEnabled](./event/sharingenabled.md)
 ### Instance Properties
-- [var description: String](sharedcoordinatespaceprovider/event/description.md)
+- [var description: String](./event/description.md)
   A textual representation of this Event.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

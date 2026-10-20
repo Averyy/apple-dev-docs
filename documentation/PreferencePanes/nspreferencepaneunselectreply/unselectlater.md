@@ -1,9 +1,10 @@
 # NSPreferencePaneUnselectReply.unselectLater
 
 **Framework**: Preference Panes  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Delay the deselection until the preference pane invokes [`reply(toShouldUnselect:)`](nspreferencepane/reply(toshouldunselect:).md).
+Delay the deselection until the preference pane invokes [`reply(toShouldUnselect:)`](../nspreferencepane/reply%28toshouldunselect%29.md).
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,11 +16,16 @@ Delay the deselection until the preference pane invokes [`reply(toShouldUnselect
 case unselectLater
 ```
 
+```c
+NSUnselectLater
+```
+
 ## See Also
 
-- [NSPreferencePaneUnselectReply.unselectCancel](nspreferencepaneunselectreply/unselectcancel.md)
+### Replies
+- [NSPreferencePaneUnselectReply.unselectCancel](./unselectcancel.md)
   Cancel the deselection.
-- [NSPreferencePaneUnselectReply.unselectNow](nspreferencepaneunselectreply/unselectnow.md)
+- [NSPreferencePaneUnselectReply.unselectNow](./unselectnow.md)
   Continue the deselection.
 
 

@@ -1,7 +1,8 @@
 # whiteLevel
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sensel level corresponding to sensor (or camera A-to-D converter) saturation.
 

@@ -1,6 +1,7 @@
 # Set Up and Tear Down State in Your Tests
 
-**Framework**: XCTest
+**Framework**: XCTest  
+**Role**: Article
 
 Prepare initial state before tests run, and clean up resources after tests complete.
 
@@ -10,7 +11,7 @@ To consistently and reliably check that your code produces the correct results, 
 
 After each test method or test class completes, you might want to delete files that you don’t need, such as temporary files or screenshots. Or, to assist in failure diagnosis, you might want to capture the final state after a test.
 
-Prepare your known state for tests, and clean up temporary files after tests using the methods on [`XCTest`](xctest.md) and [`XCTestCase`](xctestcase.md).
+Prepare your known state for tests, and clean up temporary files after tests using the methods on [`XCTest`](./xctest-page.md) and [`XCTestCase`](./xctestcase.md).
 
 ##### Decide When to Set Up and Tear Down State in Your Test Class
 
@@ -29,7 +30,7 @@ When XCTest finishes running all the test methods and the test class completes, 
 
 ##### Prepare and Tear Down State for a Test Class
 
-For state that’s common to all the test methods in your test class and that doesn’t need a reset for each test method, use the [`setUp()`](xctestcase/setup().md) class method on [`XCTestCase`](xctestcase.md).
+For state that’s common to all the test methods in your test class and that doesn’t need a reset for each test method, use the [`setUp()`](./xctestcase/setup%28%29.md) class method on [`XCTestCase`](./xctestcase.md).
 
 **Swift**:
 
@@ -53,7 +54,7 @@ override class func setUp() {
 
 XCTest runs `setUp()` once before the test class begins.
 
-If you need to clean up temporary files or capture any data that you want to analyze after the test class is complete, use the [`tearDown()`](xctestcase/teardown().md) class method on `XCTestCase`.
+If you need to clean up temporary files or capture any data that you want to analyze after the test class is complete, use the [`tearDown()`](./xctestcase/teardown%28%29.md) class method on `XCTestCase`.
 
 **Swift**:
 
@@ -77,11 +78,11 @@ override class func tearDown() {
 
 ##### Prepare and Tear Down State for Each Test Method
 
-For state that you need in each test method, choose one setup method from [`XCTest`](xctest.md) that fits best with your setup requirements:
+For state that you need in each test method, choose one setup method from [`XCTest`](./xctest-page.md) that fits best with your setup requirements:
 
-- If your setup needs to prepare any state asynchronously, override [`setUp(completion:)`](xctest/setup(completion:).md).
-- If your setup prepares all state synchronously and might throw errors, override [`setUpWithError()`](xctest/setupwitherror().md). This method catches thrown errors and records them as test failures.
-- For tests that prepare state synchronously and don’t need to handle errors, override [`setUp()`](xctest/setup().md).
+- If your setup needs to prepare any state asynchronously, override [`setUp(completion:)`](./xctest-page/setup%28completion%29.md).
+- If your setup prepares all state synchronously and might throw errors, override [`setUpWithError()`](./xctest-page/setupwitherror%28%29.md). This method catches thrown errors and records them as test failures.
+- For tests that prepare state synchronously and don’t need to handle errors, override [`setUp()`](./xctest-page/setup%28%29.md).
 
 **Swift**:
 
@@ -245,13 +246,14 @@ Avoid preparing state for subsequent tests in teardown blocks. XCTest doesn’t 
 
 ## See Also
 
-- [class func setUp()](xctestcase/setup.md)
+### Customizing Test Setup and Teardown
+- [class func setUp()](./xctestcase/setup%28%29.md)
   Provides an opportunity to customize initial state before a test case begins.
-- [func addTeardownBlock(() async throws -> Void)](xctestcase/addteardownblock(_:)-2guon.md)
+- [func addTeardownBlock(() async throws -> Void)](./xctestcase/addteardownblock%28_%29-2guon.md)
   Registers a block of teardown code to run after the current test method ends.
-- [func addTeardownBlock(() throws -> Void)](xctestcase/addteardownblock(_:)-5zw6c.md)
+- [func addTeardownBlock(() throws -> Void)](./xctestcase/addteardownblock%28_%29-5zw6c.md)
   Registers a block of teardown code to run after the current test method ends.
-- [class func tearDown()](xctestcase/teardown.md)
+- [class func tearDown()](./xctestcase/teardown%28%29.md)
   Provides an opportunity to perform cleanup after a test case ends.
 
 

@@ -1,18 +1,25 @@
 # glVertexAttribIPointer(_:_:_:_:_:)
 
 **Framework**: OpenGL ES  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 7.0+
-- tvOS 9.0+
+- iOS 7.0+ - Deprecated in 12.0
+- iPadOS 7.0+ - Deprecated in 12.0
+- Mac Catalyst 7.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func glVertexAttribIPointer(_ index: GLuint, _ size: GLint, _ type: GLenum, _ stride: GLsizei, _ pointer: UnsafeRawPointer!)
+```
+
+```c
+extern void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
 ```
 
 

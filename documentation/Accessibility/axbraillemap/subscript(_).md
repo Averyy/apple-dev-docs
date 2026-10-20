@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Accessibility  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the height of an individual pin on the braille display.
 
@@ -22,13 +23,14 @@ subscript(point: CGPoint) -> Float { get set }
 
 #### Overview
 
-Use this subscript to set or get the height of an individual pin. This subscript provides the same capabilities as using [`setHeight(_:at:)`](axbraillemap/setheight(_:at:).md) and [`height(at:)`](axbraillemap/height(at:).md).
+Use this subscript to set or get the height of an individual pin. This subscript provides the same capabilities as using [`setHeight(_:at:)`](./setheight%28_,at%29.md) and [`height(at:)`](./height%28at%29.md).
 
 ## See Also
 
-- [func setHeight(Float, at: CGPoint)](axbraillemap/setheight(_:at:).md)
+### Accessing dots
+- [func setHeight(Float, at: CGPoint)](./setheight%28_,at%29.md)
   Sets the height of an individual pin on the braille display.
-- [func height(at: CGPoint) -> Float](axbraillemap/height(at:).md)
+- [func height(at: CGPoint) -> Float](./height%28at%29.md)
   Retrieves the height of an individual pin on the braille display.
 
 

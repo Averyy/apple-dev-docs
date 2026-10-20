@@ -1,25 +1,27 @@
 # CompleteDMA
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CompleteDMA(uint64_t options);
 ```
 
 ## See Also
 
-- [GetPreparation](iodmacommand/getpreparation.md)
-- [PerformOperation](iodmacommand/performoperation.md)
-- [PrepareForDMA](iodmacommand/preparefordma.md)
+### Performing Internal Operations
+- [GetPreparation](./getpreparation.md)
+- [PerformOperation](./performoperation.md)
+- [PrepareForDMA](./preparefordma.md)
 
 
 ---

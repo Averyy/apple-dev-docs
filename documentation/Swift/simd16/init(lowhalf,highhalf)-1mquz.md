@@ -1,7 +1,8 @@
 # init(lowHalf:highHalf:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A vector formed by concatenating lowHalf and highHalf.
 
@@ -19,6 +20,8 @@ A vector formed by concatenating lowHalf and highHalf.
 ```swift
 init(lowHalf: SIMD8<Int8>, highHalf: SIMD8<Int8>)
 ```
+
+Available when `Scalar` is `Int8`.
 
 #### Discussion
 

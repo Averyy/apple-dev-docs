@@ -1,7 +1,8 @@
 # preferredWindowClippingMargins(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests additional margins for drawing beyond the bounds of the window.
 
@@ -15,9 +16,16 @@ Requests additional margins for drawing beyond the bounds of the window.
 @preconcurrency func preferredWindowClippingMargins(_ edges: Edge3D.Set = .all, _ length: CGFloat?) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func preferredWindowClippingMargins(_ edges: Edge3D.Set, _ margins: EdgeInsets3D) -> some View
+```
+
 #### Discussion
 
-This modifier will only have an effect on windows with a [`volumetric`](windowstyle/volumetric.md) window style.
+This modifier will only have an effect on windows with a [`volumetric`](../windowstyle/volumetric.md) window style.
 
 A window’s bounds are based on its content, and resizable by dragging the corners. By default, the system clips any content that draws beyond the bounds. This modifier requests additional space for drawing outside the window’s bounds. Use this space to render extra visual effects that enhance the impact of your app. This content does not receive events, and may be clipped by the system at any time.
 
@@ -32,17 +40,18 @@ If multiple views request margins, the scene’s preferred margins will be the m
 
 ## See Also
 
-- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](view/windowdismissbehavior(_:).md)
+### Window behaviors
+- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](./windowdismissbehavior%28_%29.md)
   Configures the dismiss functionality for the window enclosing `self`.
-- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](view/windowfullscreenbehavior(_:).md)
+- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](./windowfullscreenbehavior%28_%29.md)
   Configures the full screen functionality for the window enclosing `self`.
-- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](./windowtoolbarfullscreenvisibility%28_%29.md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
-- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](view/windowminimizebehavior(_:).md)
+- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](./windowminimizebehavior%28_%29.md)
   Configures the minimize functionality for the window enclosing `self`.
-- [func windowResizeAnchor(UnitPoint?) -> some View](view/windowresizeanchor(_:).md)
+- [func windowResizeAnchor(UnitPoint?) -> some View](./windowresizeanchor%28_%29.md)
   Sets the window anchor point used when the size of the view changes such that the window must resize.
-- [func windowResizeBehavior(WindowInteractionBehavior) -> some View](view/windowresizebehavior(_:).md)
+- [func windowResizeBehavior(WindowInteractionBehavior) -> some View](./windowresizebehavior%28_%29.md)
   Configures the resize functionality for the window enclosing `self`.
 
 

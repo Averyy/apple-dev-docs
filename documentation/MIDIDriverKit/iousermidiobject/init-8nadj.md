@@ -1,34 +1,36 @@
 # init
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## See Also
 
-- [CopyProperty](iousermidiobject/copyproperty-1stjj.md)
-- [CopyProperty](iousermidiobject/copyproperty-27g8l.md)
-- [GetBaseClassID](iousermidiobject/getbaseclassid.md)
-- [GetClassID](iousermidiobject/getclassid.md)
-- [GetName](iousermidiobject/getname.md)
-- [GetObjectID](iousermidiobject/getobjectid.md)
-- [GetOwnerObjectID](iousermidiobject/getownerobjectid.md)
-- [GetProperties](iousermidiobject/getproperties.md)
-- [GetPropertyType](iousermidiobject/getpropertytype.md)
-- [GetWorkQueue](iousermidiobject/getworkqueue.md)
-- [SetName](iousermidiobject/setname.md)
-- [SetProperties](iousermidiobject/setproperties.md)
-- [SetProperty](iousermidiobject/setproperty-24d9k.md)
-- [SetProperty](iousermidiobject/setproperty-9rf3g.md)
-- [free](iousermidiobject/free.md)
+### Instance Methods
+- [CopyProperty](./copyproperty-1stjj.md)
+- [CopyProperty](./copyproperty-27g8l.md)
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [GetName](./getname.md)
+- [GetObjectID](./getobjectid.md)
+- [GetOwnerObjectID](./getownerobjectid.md)
+- [GetProperties](./getproperties.md)
+- [GetPropertyType](./getpropertytype.md)
+- [GetWorkQueue](./getworkqueue.md)
+- [SetName](./setname.md)
+- [SetProperties](./setproperties.md)
+- [SetProperty](./setproperty-24d9k.md)
+- [SetProperty](./setproperty-9rf3g.md)
+- [free](./free.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOFireWireAVCTargetSpace
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 object to centralize the AVC Target mode support
 
@@ -10,7 +11,7 @@ object to centralize the AVC Target mode support
 
 ## Declaration
 
-```swift
+```cpp
 class IOFireWireAVCTargetSpace : IOFWPseudoAddressSpace
 ```
 
@@ -19,68 +20,69 @@ class IOFireWireAVCTargetSpace : IOFWPseudoAddressSpace
 ## Topics
 
 ### Miscellaneous
-- [getAVCTargetSpace](iofirewireavctargetspace/1813826-getavctargetspace.md)
+- [getAVCTargetSpace](./iofirewireavctargetspace/api-1813826-getavctargetspace.md)
   returns the IOFireWireAVCTargetSpace object for the given FireWire bus
-- [init](iofirewireavctargetspace/1813830-init.md)
+- [init](./iofirewireavctargetspace/api-1813830-init.md)
   initializes the IOFireWireAVCTargetSpace object
-- [publishAVCUnitDirectory](iofirewireavctargetspace/1813834-publishavcunitdirectory.md)
+- [publishAVCUnitDirectory](./iofirewireavctargetspace/api-1813834-publishavcunitdirectory.md)
   Creates a local AVC Unit directory if it doesn't already exist
 ### DataTypes
-- [ExpansionData](ioservice/expansiondata.md)
+- [ExpansionData](./ioservice/expansiondata.md)
 ### Instance Variables
-- [reserved](iofirewireavctargetspace/reserved.md)
+- [reserved](./iofirewireavctargetspace/reserved.md)
 ### Instance Methods
-- [- activateWithUserClient](iofirewireavctargetspace/1571597-activatewithuserclient.md)
-- [- addSubunit](iofirewireavctargetspace/1571586-addsubunit.md)
-- [- canConnectDestPlug](iofirewireavctargetspace/1571631-canconnectdestplug.md)
-- [- connectTargetPlugs](iofirewireavctargetspace/1571629-connecttargetplugs.md)
-- [- deactivateWithUserClient](iofirewireavctargetspace/1571613-deactivatewithuserclient.md)
-- [- disconnectTargetPlugs](iofirewireavctargetspace/1571625-disconnecttargetplugs.md)
-- [- doWrite](iofirewireavctargetspace/1571609-dowrite.md)
-- [- findAVCRequestHandler](iofirewireavctargetspace/1571598-findavcrequesthandler.md)
-- [- getMetaClass](iofirewireavctargetspace/1571595-getmetaclass.md)
-- [- getSubunitInfo](iofirewireavctargetspace/1571601-getsubunitinfo.md)
-- [- getSubunitPlugSignalFormat](iofirewireavctargetspace/1571599-getsubunitplugsignalformat.md)
-- [- getTargetPlugConnection](iofirewireavctargetspace/1571600-gettargetplugconnection.md)
-- [- handleConnectCommand](iofirewireavctargetspace/1571604-handleconnectcommand.md)
-- [- handleConnectionsCommand](iofirewireavctargetspace/1571591-handleconnectionscommand.md)
-- [- handleDisconnectCommand](iofirewireavctargetspace/1571634-handledisconnectcommand.md)
-- [- handleInputPlugSignalFormatCommand](iofirewireavctargetspace/1571626-handleinputplugsignalformatcomma.md)
-- [- handleOutputPlugSignalFormatCommand](iofirewireavctargetspace/1571616-handleoutputplugsignalformatcomm.md)
-- [- handlePlugInfoCommand](iofirewireavctargetspace/1571618-handlepluginfocommand.md)
-- [- handlePowerCommand](iofirewireavctargetspace/1571632-handlepowercommand.md)
-- [- handleSignalSourceCommand](iofirewireavctargetspace/1571617-handlesignalsourcecommand.md)
-- [- handleSubUnitInfoCommand](iofirewireavctargetspace/1571638-handlesubunitinfocommand.md)
-- [- handleUnitInfoCommand](iofirewireavctargetspace/1571641-handleunitinfocommand.md)
-- [- init](iofirewireavctargetspace/1571614-init.md)
-- [- installAVCCommandHandler](iofirewireavctargetspace/1571622-installavccommandhandler.md)
-- [- pcrModified](iofirewireavctargetspace/1571636-pcrmodified.md)
-- [- publishAVCUnitDirectory](iofirewireavctargetspace/1571592-publishavcunitdirectory.md)
-- [- setSubunitPlugSignalFormat](iofirewireavctargetspace/1571583-setsubunitplugsignalformat.md)
-- [- subUnitOfTypeCount](iofirewireavctargetspace/1571587-subunitoftypecount.md)
-- [- targetSendAVCResponse](iofirewireavctargetspace/1571588-targetsendavcresponse.md)
+- [- activateWithUserClient](./iofirewireavctargetspace/api-1571597-activatewithuserclient.md)
+- [- addSubunit](./iofirewireavctargetspace/api-1571586-addsubunit.md)
+- [- canConnectDestPlug](./iofirewireavctargetspace/api-1571631-canconnectdestplug.md)
+- [- connectTargetPlugs](./iofirewireavctargetspace/api-1571629-connecttargetplugs.md)
+- [- deactivateWithUserClient](./iofirewireavctargetspace/api-1571613-deactivatewithuserclient.md)
+- [- disconnectTargetPlugs](./iofirewireavctargetspace/api-1571625-disconnecttargetplugs.md)
+- [- doWrite](./iofirewireavctargetspace/api-1571609-dowrite.md)
+- [- findAVCRequestHandler](./iofirewireavctargetspace/api-1571598-findavcrequesthandler.md)
+- [- getMetaClass](./iofirewireavctargetspace/api-1571595-getmetaclass.md)
+- [- getSubunitInfo](./iofirewireavctargetspace/api-1571601-getsubunitinfo.md)
+- [- getSubunitPlugSignalFormat](./iofirewireavctargetspace/api-1571599-getsubunitplugsignalformat.md)
+- [- getTargetPlugConnection](./iofirewireavctargetspace/api-1571600-gettargetplugconnection.md)
+- [- handleConnectCommand](./iofirewireavctargetspace/api-1571604-handleconnectcommand.md)
+- [- handleConnectionsCommand](./iofirewireavctargetspace/api-1571591-handleconnectionscommand.md)
+- [- handleDisconnectCommand](./iofirewireavctargetspace/api-1571634-handledisconnectcommand.md)
+- [- handleInputPlugSignalFormatCommand](./iofirewireavctargetspace/api-1571626-handleinputplugsignalformatcomma.md)
+- [- handleOutputPlugSignalFormatCommand](./iofirewireavctargetspace/api-1571616-handleoutputplugsignalformatcomm.md)
+- [- handlePlugInfoCommand](./iofirewireavctargetspace/api-1571618-handlepluginfocommand.md)
+- [- handlePowerCommand](./iofirewireavctargetspace/api-1571632-handlepowercommand.md)
+- [- handleSignalSourceCommand](./iofirewireavctargetspace/api-1571617-handlesignalsourcecommand.md)
+- [- handleSubUnitInfoCommand](./iofirewireavctargetspace/api-1571638-handlesubunitinfocommand.md)
+- [- handleUnitInfoCommand](./iofirewireavctargetspace/api-1571641-handleunitinfocommand.md)
+- [- init](./iofirewireavctargetspace/api-1571614-init.md)
+- [- installAVCCommandHandler](./iofirewireavctargetspace/api-1571622-installavccommandhandler.md)
+- [- pcrModified](./iofirewireavctargetspace/api-1571636-pcrmodified.md)
+- [- publishAVCUnitDirectory](./iofirewireavctargetspace/api-1571592-publishavcunitdirectory.md)
+- [- setSubunitPlugSignalFormat](./iofirewireavctargetspace/api-1571583-setsubunitplugsignalformat.md)
+- [- subUnitOfTypeCount](./iofirewireavctargetspace/api-1571587-subunitoftypecount.md)
+- [- targetSendAVCResponse](./iofirewireavctargetspace/api-1571588-targetsendavcresponse.md)
 ### Type Methods
-- [+ getAVCTargetSpace](iofirewireavctargetspace/1571633-getavctargetspace.md)
+- [+ getAVCTargetSpace](./iofirewireavctargetspace/api-1571633-getavctargetspace.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOFWPseudoAddressSpace](iofwpseudoaddressspace.md)
+- [IOFWPseudoAddressSpace](./iofwpseudoaddressspace.md)
 
 ## See Also
 
-- [IOFireWireAVCAsynchronousCommand](iofirewireavcasynchronouscommand.md)
-- [IOFireWireAVCCommand](iofirewireavccommand.md)
-- [AVCCommandHandlerInfo](avccommandhandlerinfo.md)
-- [AVCConnectionRecord](avcconnectionrecord.md)
-- [AVCSubunitInfo](avcsubunitinfo.md)
-- [AVCConnectTargetPlugsInParams](avcconnecttargetplugsinparams.md)
-- [AVCConnectTargetPlugsOutParams](avcconnecttargetplugsoutparams.md)
-- [AVCGetTargetPlugConnectionInParams](avcgettargetplugconnectioninparams.md)
-- [AVCGetTargetPlugConnectionOutParams](avcgettargetplugconnectionoutparams.md)
-- [AVCSubunitPlugRecord](avcsubunitplugrecord.md)
-- [AVCUnitPlugRecord](avcunitplugrecord.md)
-- [AVCUnitPlugs](avcunitplugs.md)
+### AVC Support
+- [IOFireWireAVCAsynchronousCommand](./iofirewireavcasynchronouscommand.md)
+- [IOFireWireAVCCommand](./iofirewireavccommand.md)
+- [AVCCommandHandlerInfo](./avccommandhandlerinfo.md)
+- [AVCConnectionRecord](./avcconnectionrecord.md)
+- [AVCSubunitInfo](./avcsubunitinfo.md)
+- [AVCConnectTargetPlugsInParams](./avcconnecttargetplugsinparams.md)
+- [AVCConnectTargetPlugsOutParams](./avcconnecttargetplugsoutparams.md)
+- [AVCGetTargetPlugConnectionInParams](./avcgettargetplugconnectioninparams.md)
+- [AVCGetTargetPlugConnectionOutParams](./avcgettargetplugconnectionoutparams.md)
+- [AVCSubunitPlugRecord](./avcsubunitplugrecord.md)
+- [AVCUnitPlugRecord](./avcunitplugrecord.md)
+- [AVCUnitPlugs](./avcunitplugs.md)
 
 
 ---

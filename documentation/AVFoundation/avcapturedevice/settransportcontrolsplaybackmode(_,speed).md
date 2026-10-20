@@ -1,7 +1,8 @@
 # setTransportControlsPlaybackMode(_:speed:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the transport control’s playback mode and speed.
 
@@ -14,9 +15,13 @@ Sets the transport control’s playback mode and speed.
 func setTransportControlsPlaybackMode(_ mode: AVCaptureDevice.TransportControlsPlaybackMode, speed: AVCaptureDevice.TransportControlsSpeed)
 ```
 
+```objc
+- (void) setTransportControlsPlaybackMode:(AVCaptureDeviceTransportControlsPlaybackMode) mode speed:(AVCaptureDeviceTransportControlsSpeed) speed;
+```
+
 #### Discussion
 
-Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, calling this method raises an exception. When you’re finished configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock and allow other devices to configure the settings.
+Before changing the value of this property, you must call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) to acquire exclusive access to the device’s configuration properties. Otherwise, calling this method raises an exception. When you’re finished configuring the device, call [`unlockForConfiguration()`](./unlockforconfiguration%28%29.md) to release the lock and allow other devices to configure the settings.
 
 ## Parameters
 
@@ -25,15 +30,16 @@ Before changing the value of this property, you must call [`lockForConfiguration
 
 ## See Also
 
-- [var transportControlsSupported: Bool](avcapturedevice/transportcontrolssupported.md)
+### Controlling transport behavior
+- [var transportControlsSupported: Bool](./transportcontrolssupported.md)
   A Boolean value that indicates whether the device supports transport control commands.
-- [var transportControlsPlaybackMode: AVCaptureDevice.TransportControlsPlaybackMode](avcapturedevice/transportcontrolsplaybackmode-swift.property.md)
+- [var transportControlsPlaybackMode: AVCaptureDevice.TransportControlsPlaybackMode](./transportcontrolsplaybackmode-swift.property.md)
   The current playback mode.
-- [AVCaptureDevice.TransportControlsPlaybackMode](avcapturedevice/transportcontrolsplaybackmode-swift.enum.md)
+- [AVCaptureDevice.TransportControlsPlaybackMode](./transportcontrolsplaybackmode-swift.enum.md)
   Constants that indicate the transport control’s current mode of playback, if it has one.
-- [var transportControlsSpeed: AVCaptureDevice.TransportControlsSpeed](avcapturedevice/transportcontrolsspeed-swift.property.md)
+- [var transportControlsSpeed: AVCaptureDevice.TransportControlsSpeed](./transportcontrolsspeed-swift.property.md)
   The current playback speed.
-- [AVCaptureDevice.TransportControlsSpeed](avcapturedevice/transportcontrolsspeed-swift.typealias.md)
+- [AVCaptureDevice.TransportControlsSpeed](./transportcontrolsspeed-swift.typealias.md)
   A constant that specifies speed of transport controls.
 
 

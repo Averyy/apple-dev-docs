@@ -1,7 +1,8 @@
 # shouldExpandItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler that determines whether a particular item is expandable.
 
@@ -10,7 +11,7 @@ The handler that determines whether a particular item is expandable.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var shouldExpandItem: ((ItemIdentifierType) -> Bool)? { get set }
 
 ## See Also
 
-- [var shouldCollapseItem: ((ItemIdentifierType) -> Bool)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/shouldcollapseitem.md)
+### Expanding and collapsing items
+- [var shouldCollapseItem: ((ItemIdentifierType) -> Bool)?](./shouldcollapseitem.md)
   The handler that determines whether a particular item is collapsable.
-- [var willCollapseItem: ((ItemIdentifierType) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/willcollapseitem.md)
+- [var willCollapseItem: ((ItemIdentifierType) -> Void)?](./willcollapseitem.md)
   The handler that prepares the diffable data source for collapsing an item.
-- [var willExpandItem: ((ItemIdentifierType) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/willexpanditem.md)
+- [var willExpandItem: ((ItemIdentifierType) -> Void)?](./willexpanditem.md)
   The handler that prepares the diffable data source for expanding an item.
-- [var snapshotForExpandingParent: ((ItemIdentifierType, NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/snapshotforexpandingparent.md)
+- [var snapshotForExpandingParent: ((ItemIdentifierType, NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>)?](./snapshotforexpandingparent.md)
   The handler that provides the section snapshot for expanding the parent item.
 
 

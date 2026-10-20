@@ -1,7 +1,8 @@
 # IOByteCount
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOByteCount = IOByteCount64
+```
+
+```c
+typedef IOByteCount64 IOByteCount;
 ```
 
 

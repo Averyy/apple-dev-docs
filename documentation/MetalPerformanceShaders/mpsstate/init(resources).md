@@ -1,7 +1,8 @@
 # init(resources:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(resources: [any MTLResource]?)
+```
+
+```objc
+- (instancetype) initWithResources:(NSArray<id<MTLResource>> *) resources;
 ```
 
 

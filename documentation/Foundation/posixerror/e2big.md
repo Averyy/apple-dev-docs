@@ -1,7 +1,8 @@
 # E2BIG
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Argument list too long.
 

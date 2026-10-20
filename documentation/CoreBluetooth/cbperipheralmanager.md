@@ -1,7 +1,8 @@
 # CBPeripheralManager
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages and advertises peripheral services exposed by this app.
 
@@ -20,89 +21,94 @@ An object that manages and advertises peripheral services exposed by this app.
 class CBPeripheralManager
 ```
 
+```objc
+@interface CBPeripheralManager : CBManager
+```
+
 #### Overview
 
-Core Bluetooth uses [`CBPeripheralManager`](cbperipheralmanager.md) objects to manage published services within the local peripheral’s Generic Attribute Profile (GATT) database and to advertise these services to central devices (represented by [`CBCentral`](cbcentral.md) objects). While a service is in the database, any connected central can see and connect to it. That said, if your app hasn’t specified the `bluetooth-peripheral` background mode, the contents of its services become disabled when it’s in the background or in a suspended state. In this scenario, any remote central trying to access the service’s characteristic value or characteristic descriptors receives an error.
+Core Bluetooth uses [`CBPeripheralManager`](./cbperipheralmanager.md) objects to manage published services within the local peripheral’s Generic Attribute Profile (GATT) database and to advertise these services to central devices (represented by [`CBCentral`](./cbcentral.md) objects). While a service is in the database, any connected central can see and connect to it. That said, if your app hasn’t specified the `bluetooth-peripheral` background mode, the contents of its services become disabled when it’s in the background or in a suspended state. In this scenario, any remote central trying to access the service’s characteristic value or characteristic descriptors receives an error.
 
-Before you call [`CBPeripheralManager`](cbperipheralmanager.md) methods, the peripheral manager object must be in the powered-on state, as indicated by the [`CBPeripheralManagerState.poweredOn`](cbperipheralmanagerstate/poweredon.md). This state indicates that the device (your iPhone or iPad, for instance) supports Bluetooth low energy and that its Bluetooth is on and available for use.
+Before you call [`CBPeripheralManager`](./cbperipheralmanager.md) methods, the peripheral manager object must be in the powered-on state, as indicated by the [`CBPeripheralManagerState.poweredOn`](./cbperipheralmanagerstate/poweredon.md). This state indicates that the device (your iPhone or iPad, for instance) supports Bluetooth low energy and that its Bluetooth is on and available for use.
 
-In watchOS, tvOS, and visionOS, you can’t advertise services using a [`CBPeripheralManager`](cbperipheralmanager.md) object because support for doing so is unavailable.
+In watchOS, tvOS, and visionOS, you can’t advertise services using a [`CBPeripheralManager`](./cbperipheralmanager.md) object because support for doing so is unavailable.
 
 ## Topics
 
 ### Initializing a Peripheral Manager
-- [convenience init()](cbperipheralmanager/init.md)
+- [convenience init()](./cbperipheralmanager/init%28%29.md)
   Initializes the peripheral manager without a delegate.
-- [convenience init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?)](cbperipheralmanager/init(delegate:queue:).md)
+- [convenience init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?)](./cbperipheralmanager/init%28delegate,queue%29.md)
   Initializes the peripheral manager with a specified delegate and dispatch queue.
-- [init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](cbperipheralmanager/init(delegate:queue:options:).md)
+- [init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](./cbperipheralmanager/init%28delegate,queue,options%29.md)
   Initializes the peripheral manager with a specified delegate, dispatch queue, and initialization options.
-- [var delegate: (any CBPeripheralManagerDelegate)?](cbperipheralmanager/delegate.md)
+- [var delegate: (any CBPeripheralManagerDelegate)?](./cbperipheralmanager/delegate.md)
   The delegate object specified to receive peripheral events.
-- [Peripheral Manager Initialization Options](peripheral-manager-initialization-options.md)
+- [Peripheral Manager Initialization Options](./peripheral-manager-initialization-options.md)
   Keys used to specify options when creating a peripheral manager.
 ### Monitoring the State of a Peripheral Manager
-- [class func authorizationStatus() -> CBPeripheralManagerAuthorizationStatus](cbperipheralmanager/authorizationstatus.md)
+- [class func authorizationStatus() -> CBPeripheralManagerAuthorizationStatus](./cbperipheralmanager/authorizationstatus%28%29.md)
   Returns the app’s authorization status for sharing data while in the background.
-- [enum CBPeripheralManagerAuthorizationStatus](cbperipheralmanagerauthorizationstatus.md)
+- [enum CBPeripheralManagerAuthorizationStatus](./cbperipheralmanagerauthorizationstatus.md)
   Values representing the current authorization state of the peripheral manager.
-- [enum CBPeripheralManagerState](cbperipheralmanagerstate.md)
+- [enum CBPeripheralManagerState](./cbperipheralmanagerstate.md)
   Values that represent the current state of the peripheral manager.
 ### Adding and Removing Services
-- [func add(CBMutableService)](cbperipheralmanager/add(_:).md)
+- [func add(CBMutableService)](./cbperipheralmanager/add%28_%29.md)
   Publishes a service and any of its associated characteristics and characteristic descriptors to the local GATT database.
-- [func remove(CBMutableService)](cbperipheralmanager/remove(_:).md)
+- [func remove(CBMutableService)](./cbperipheralmanager/remove%28_%29.md)
   Removes a specified published service from the local GATT database.
-- [func removeAllServices()](cbperipheralmanager/removeallservices.md)
+- [func removeAllServices()](./cbperipheralmanager/removeallservices%28%29.md)
   Removes all published services from the local GATT database.
 ### Managing Advertising
-- [func startAdvertising([String : Any]?)](cbperipheralmanager/startadvertising(_:).md)
+- [func startAdvertising([String : Any]?)](./cbperipheralmanager/startadvertising%28_%29.md)
   Advertises peripheral manager data.
-- [Advertising Data](advertising-data.md)
-- [func stopAdvertising()](cbperipheralmanager/stopadvertising.md)
+- [Advertising Data](./advertising-data.md)
+- [func stopAdvertising()](./cbperipheralmanager/stopadvertising%28%29.md)
   Stops advertising peripheral manager data.
-- [var isAdvertising: Bool](cbperipheralmanager/isadvertising.md)
+- [var isAdvertising: Bool](./cbperipheralmanager/isadvertising.md)
   A Boolean value that indicates whether the peripheral is advertising data.
 ### Sending Updates of a Characteristic’s Value
-- [func updateValue(Data, for: CBMutableCharacteristic, onSubscribedCentrals: [CBCentral]?) -> Bool](cbperipheralmanager/updatevalue(_:for:onsubscribedcentrals:).md)
+- [func updateValue(Data, for: CBMutableCharacteristic, onSubscribedCentrals: [CBCentral]?) -> Bool](./cbperipheralmanager/updatevalue%28_,for,onsubscribedcentrals%29.md)
   Send an updated characteristic value to one or more subscribed centrals, using a notification or indication.
 ### Responding to Read and Write Requests
-- [func respond(to: CBATTRequest, withResult: CBATTError.Code)](cbperipheralmanager/respond(to:withresult:).md)
+- [func respond(to: CBATTRequest, withResult: CBATTError.Code)](./cbperipheralmanager/respond%28to,withresult%29.md)
   Responds to a read or write request from a connected central.
 ### Setting Connection Latency
-- [func setDesiredConnectionLatency(CBPeripheralManagerConnectionLatency, for: CBCentral)](cbperipheralmanager/setdesiredconnectionlatency(_:for:).md)
+- [func setDesiredConnectionLatency(CBPeripheralManagerConnectionLatency, for: CBCentral)](./cbperipheralmanager/setdesiredconnectionlatency%28_,for%29.md)
   Sets the desired connection latency for an existing connection to a central device.
-- [enum CBPeripheralManagerConnectionLatency](cbperipheralmanagerconnectionlatency.md)
+- [enum CBPeripheralManagerConnectionLatency](./cbperipheralmanagerconnectionlatency.md)
   Values representing the connection latency of the peripheral manager.
 ### Using L2CAP Channels
-- [func publishL2CAPChannel(withEncryption: Bool)](cbperipheralmanager/publishl2capchannel(withencryption:).md)
+- [func publishL2CAPChannel(withEncryption: Bool)](./cbperipheralmanager/publishl2capchannel%28withencryption%29.md)
   Creates a listener for incoming L2CAP channel connections.
-- [func unpublishL2CAPChannel(CBL2CAPPSM)](cbperipheralmanager/unpublishl2capchannel(_:).md)
+- [func unpublishL2CAPChannel(CBL2CAPPSM)](./cbperipheralmanager/unpublishl2capchannel%28_%29.md)
   Removes a published service from the local system.
 
 ## Relationships
 
 ### Inherits From
-- [CBManager](cbmanager.md)
+- [CBManager](./cbmanager.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBPeripheral](cbperipheral.md)
+### Peripherals
+- [class CBPeripheral](./cbperipheral.md)
   A remote peripheral device.
-- [protocol CBPeripheralDelegate](cbperipheraldelegate.md)
+- [protocol CBPeripheralDelegate](./cbperipheraldelegate.md)
   A protocol that provides updates on the use of a peripheral’s services.
-- [protocol CBPeripheralManagerDelegate](cbperipheralmanagerdelegate.md)
+- [protocol CBPeripheralManagerDelegate](./cbperipheralmanagerdelegate.md)
   A protocol that provides updates for local peripheral state and interactions with remote central devices.
-- [class CBAttribute](cbattribute.md)
+- [class CBAttribute](./cbattribute.md)
   A representation of common aspects of services offered by a peripheral.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](./cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
 
 

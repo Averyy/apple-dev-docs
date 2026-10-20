@@ -1,7 +1,8 @@
 # MPNowPlayingInfoMediaType
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of media currently playing.
 
@@ -20,35 +21,40 @@ The type of media currently playing.
 enum MPNowPlayingInfoMediaType
 ```
 
+```c
+enum MPNowPlayingInfoMediaType : NSUInteger;
+```
+
 ## Topics
 
 ### Media types
-- [MPNowPlayingInfoMediaType.none](mpnowplayinginfomediatype/none.md)
+- [MPNowPlayingInfoMediaType.none](./mpnowplayinginfomediatype/none.md)
   There is no now playing media item.
-- [MPNowPlayingInfoMediaType.audio](mpnowplayinginfomediatype/audio.md)
+- [MPNowPlayingInfoMediaType.audio](./mpnowplayinginfomediatype/audio.md)
   The now playing media item is an audio item.
-- [MPNowPlayingInfoMediaType.video](mpnowplayinginfomediatype/video.md)
+- [MPNowPlayingInfoMediaType.video](./mpnowplayinginfomediatype/video.md)
   The now playing media item is a video item.
 ### Initializers
-- [init?(rawValue: UInt)](mpnowplayinginfomediatype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpnowplayinginfomediatype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func `default`() -> MPNowPlayingInfoCenter](mpnowplayinginfocenter/default.md)
+### Working with the default Now Playing info center
+- [class func `default`() -> MPNowPlayingInfoCenter](./mpnowplayinginfocenter/default%28%29.md)
   Returns the singleton Now Playing info center.
-- [var nowPlayingInfo: [String : Any]?](mpnowplayinginfocenter/nowplayinginfo.md)
+- [var nowPlayingInfo: [String : Any]?](./mpnowplayinginfocenter/nowplayinginfo.md)
   The current Now Playing information for the default Now Playing info center.
-- [class var supportedAnimatedArtworkKeys: [String]](mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
+- [class var supportedAnimatedArtworkKeys: [String]](./mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
   Keys related to animated artwork that are supported by the current platform.
 
 

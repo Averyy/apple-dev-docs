@@ -1,7 +1,8 @@
 # SubscriptionStorePickerOption
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A subscription option within a subscription picker control.
 
@@ -23,24 +24,25 @@ A subscription option within a subscription picker control.
 ## Topics
 
 ### Creating a subscription picker option
-- [init(SubscriptionStoreControlStyleConfiguration.Option)](subscriptionstorepickeroption/init(_:)-4cb3l.md)
-- [init(SubscriptionStoreControlStyleConfiguration.PickerOption)](subscriptionstorepickeroption/init(_:)-3iu97.md)
-- [init(SubscriptionStoreControlStyleConfiguration.Option, label: (SubscriptionStoreControlStyleConfiguration.PickerOption) -> Label)](subscriptionstorepickeroption/init(_:label:).md)
+- [init(SubscriptionStoreControlStyleConfiguration.Option)](./subscriptionstorepickeroption/init%28_%29-4cb3l.md)
+- [init(SubscriptionStoreControlStyleConfiguration.PickerOption)](./subscriptionstorepickeroption/init%28_%29-3iu97.md)
+- [init(SubscriptionStoreControlStyleConfiguration.Option, label: (SubscriptionStoreControlStyleConfiguration.PickerOption) -> Label)](./subscriptionstorepickeroption/init%28_,label%29.md)
 ### Supporting types
-- [struct AutomaticSubscriptionStorePickerOptionLabel](automaticsubscriptionstorepickeroptionlabel.md)
+- [struct AutomaticSubscriptionStorePickerOptionLabel](./automaticsubscriptionstorepickeroptionlabel.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct SubscriptionStoreButton](subscriptionstorebutton.md)
+### Creating custom subscription store control styles
+- [struct SubscriptionStoreButton](./subscriptionstorebutton.md)
   A button for subscribing to an in-app subscription with a localized label and optional caption.
-- [struct SubscriptionStorePicker](subscriptionstorepicker.md)
+- [struct SubscriptionStorePicker](./subscriptionstorepicker.md)
   A composite control with a picker for selecting a subscription option and a button for confirming the subscription.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct shared_region_range_np {
     ...
 };
@@ -17,8 +17,8 @@ struct shared_region_range_np {
 ## Topics
 
 ### Instance Properties
-- [srr_address](shared_region_range_np/1391721-srr_address.md)
-- [srr_size](shared_region_range_np/1391760-srr_size.md)
+- [srr_address](./shared_region_range_np/api-1391721-srr_address.md)
+- [srr_size](./shared_region_range_np/api-1391760-srr_size.md)
 
 
 ---

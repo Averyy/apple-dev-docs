@@ -1,7 +1,8 @@
 # windowType
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the window type for the window.
 
@@ -16,6 +17,10 @@ Indicates the window type for the window.
 
 ```swift
 var windowType: WKWebExtension.WindowType { get }
+```
+
+```objc
+@property (nonatomic, readonly) WKWebExtensionWindowType windowType;
 ```
 
 

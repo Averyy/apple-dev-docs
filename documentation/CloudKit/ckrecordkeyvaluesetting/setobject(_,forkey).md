@@ -2,6 +2,7 @@
 
 **Framework**: CloudKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stores an object in the record using the specified key.
@@ -21,20 +22,25 @@ Stores an object in the record using the specified key.
 func setObject(_ object: (any __CKRecordObjCValue)?, forKey key: String)
 ```
 
+```objc
+- (void) setObject:(id<CKRecordValue>) object forKey:(CKRecordFieldKey) key;
+```
+
 ## Parameters
 
-- `object`: The object to store using the specified key. It must be one of the data types in [`Supported Data Types`](ckrecord#Supported-Data-Types.md). You receive an error if you use a data type that CloudKit doesn’t support. If you specify `nil`, CloudKit removes any object that the record associates with the key.
+- `object`: The object to store using the specified key. It must be one of the data types in [Supported Data Types](../ckrecord.md#Supported-Data-Types). You receive an error if you use a data type that CloudKit doesn’t support. If you specify `nil`, CloudKit removes any object that the record associates with the key.
 - `key`: The key to associate with `object`. Use this key to retrieve the value later. A key must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces. Avoid using a key that matches the name of any property of `CKRecord`.
 
 ## See Also
 
-- [func object(forKey: String) -> (any __CKRecordObjCValue)?](ckrecordkeyvaluesetting/object(forkey:).md)
+### Accessing a Record’s Fields
+- [func object(forKey: String) -> (any __CKRecordObjCValue)?](./object%28forkey%29.md)
   Returns the object that the record stores for the specified key.
-- [subscript(String) -> (any __CKRecordObjCValue)?](ckrecordkeyvaluesetting/subscript(_:).md)
+- [subscript(String) -> (any __CKRecordObjCValue)?](./subscript%28_%29.md)
   Returns the object that the record stores for the specified key.
-- [func allKeys() -> [String]](ckrecordkeyvaluesetting/allkeys.md)
+- [func allKeys() -> [String]](./allkeys%28%29.md)
   Returns an array of the record’s keys.
-- [func changedKeys() -> [String]](ckrecordkeyvaluesetting/changedkeys.md)
+- [func changedKeys() -> [String]](./changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
 
 

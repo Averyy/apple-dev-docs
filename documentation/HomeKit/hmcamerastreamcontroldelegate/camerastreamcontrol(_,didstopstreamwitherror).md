@@ -1,7 +1,8 @@
 # cameraStreamControl(_:didStopStreamWithError:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the camera stream has stopped.
 
@@ -19,6 +20,10 @@ Tells the delegate that the camera stream has stopped.
 optional func cameraStreamControl(_ cameraStreamControl: HMCameraStreamControl, didStopStreamWithError error: (any Error)?)
 ```
 
+```objc
+- (void) cameraStreamControl:(HMCameraStreamControl *) cameraStreamControl didStopStreamWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `cameraStreamControl`: The stream control responsible for the camera stream.
@@ -26,7 +31,8 @@ optional func cameraStreamControl(_ cameraStreamControl: HMCameraStreamControl, 
 
 ## See Also
 
-- [func cameraStreamControlDidStartStream(HMCameraStreamControl)](hmcamerastreamcontroldelegate/camerastreamcontroldidstartstream(_:).md)
+### Observing stream activity
+- [func cameraStreamControlDidStartStream(HMCameraStreamControl)](./camerastreamcontroldidstartstream%28_%29.md)
   Tells the delegate that the camera stream has started.
 
 

@@ -1,7 +1,8 @@
 # teamIdentifier
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Team identifier the running executable’s signature must match, or `nil` to skip the team check.
 
@@ -13,6 +14,10 @@ Team identifier the running executable’s signature must match, or `nil` to ski
 
 ```swift
 var teamIdentifier: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * teamIdentifier;
 ```
 
 

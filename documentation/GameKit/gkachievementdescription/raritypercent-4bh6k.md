@@ -1,7 +1,8 @@
 # rarityPercent
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of players of this game that earned the achievement.
 
@@ -11,7 +12,7 @@ The percentage of players of this game that earned the achievement.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,21 +27,22 @@ The rarity percentage ranges between `0.0` and `100.0`, inclusive, where `0.0` i
 
 ## See Also
 
-- [var identifier: String](gkachievementdescription/identifier.md)
+### Reading and Writing Achievement Properties
+- [var identifier: String](./identifier.md)
   The string you enter in App Store Connect that uniquely identifies the achievement.
-- [var title: String](gkachievementdescription/title.md)
+- [var title: String](./title.md)
   A localized title for the achievement.
-- [var unachievedDescription: String](gkachievementdescription/unachieveddescription.md)
+- [var unachievedDescription: String](./unachieveddescription.md)
   A localized description of the achievement that you display when the player hasn’t completed the achievement.
-- [var achievedDescription: String](gkachievementdescription/achieveddescription.md)
+- [var achievedDescription: String](./achieveddescription.md)
   A localized description of the achievement that you display when the player completes the achievement.
-- [var maximumPoints: Int](gkachievementdescription/maximumpoints.md)
+- [var maximumPoints: Int](./maximumpoints.md)
   The number of points that the player earns when completing the achievement.
-- [var image: NSImage?](gkachievementdescription/image.md)
+- [var image: NSImage?](./image.md)
   The achievement’s artwork that you display when the player completes the achievement.
-- [var isHidden: Bool](gkachievementdescription/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that states whether the achievement is initially visible to players.
-- [var isReplayable: Bool](gkachievementdescription/isreplayable.md)
+- [var isReplayable: Bool](./isreplayable.md)
   A Boolean value that states whether the player can earn the achievement multiple times.
 
 

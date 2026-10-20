@@ -1,7 +1,8 @@
 # peerDiscoveryToken
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that uniquely identifies the other peer in the interaction session.
 
@@ -18,9 +19,13 @@ A value that uniquely identifies the other peer in the interaction session.
 var peerDiscoveryToken: NIDiscoveryToken { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NIDiscoveryToken * peerDiscoveryToken;
+```
+
 #### Discussion
 
-NI sets this property to the value of the peer discovery token you pass to the [`init(peerToken:)`](ninearbypeerconfiguration/init(peertoken:).md) initializer.
+NI sets this property to the value of the peer discovery token you pass to the [`init(peerToken:)`](./init%28peertoken%29.md) initializer.
 
 
 ---

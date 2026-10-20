@@ -1,7 +1,8 @@
 # pkgConfig
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the package configuration file, without extension, for the system library target.
 
@@ -17,9 +18,10 @@ If present, the Swift Package Manager tries every package configuration name sep
 
 ## See Also
 
-- [static func systemLibrary(name: String, path: String?, pkgConfig: String?, providers: [SystemPackageProvider]?) -> Target](target/systemlibrary(name:path:pkgconfig:providers:).md)
+### Creating a System Library Target
+- [static func systemLibrary(name: String, path: String?, pkgConfig: String?, providers: [SystemPackageProvider]?) -> Target](./systemlibrary%28name,path,pkgconfig,providers%29.md)
   Creates a system library target.
-- [let providers: [SystemPackageProvider]?](target/providers.md)
+- [let providers: [SystemPackageProvider]?](./providers.md)
   The providers array for a system library target.
 
 

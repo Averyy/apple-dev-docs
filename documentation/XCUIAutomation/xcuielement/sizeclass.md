@@ -1,18 +1,19 @@
 # XCUIElement.SizeClass
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The user interface size classes you can inspect in a UI test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,33 +22,38 @@ The user interface size classes you can inspect in a UI test.
 enum SizeClass
 ```
 
+```c
+enum XCUIUserInterfaceSizeClass : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration cases
-- [XCUIElement.SizeClass.regular](xcuielement/sizeclass/regular.md)
+- [XCUIElement.SizeClass.regular](./sizeclass/regular.md)
   A constant that represents an element for the regular size class.
-- [XCUIElement.SizeClass.compact](xcuielement/sizeclass/compact.md)
+- [XCUIElement.SizeClass.compact](./sizeclass/compact.md)
   A constant that represents an element for the compact size class.
-- [XCUIElement.SizeClass.unspecified](xcuielement/sizeclass/unspecified.md)
+- [XCUIElement.SizeClass.unspecified](./sizeclass/unspecified.md)
   A constant that represents an element for the unspecified size class.
 ### Initializers
-- [init?(rawValue: Int)](xcuielement/sizeclass/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sizeclass/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [XCUIElement.ElementType](xcuielement/elementtype.md)
+### Supporting types
+- [XCUIElement.ElementType](./elementtype.md)
   The types of UI elements that you find, inspect, and interact with in a UI test.
-- [XCUIElement.AttributeName](xcuielement/attributename.md)
+- [XCUIElement.AttributeName](./attributename.md)
   A set of string constants that serve as keys for storing element attributes in a dictionary.
 
 

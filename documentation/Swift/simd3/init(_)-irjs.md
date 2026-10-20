@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new vector from a Spatial rotation axis.
 
@@ -19,6 +20,8 @@ Returns a new vector from a Spatial rotation axis.
 ```swift
 init(_ rotationAxis: RotationAxis3DFloat)
 ```
+
+Available when `Scalar` is `Double`.
 
 #### Discussion
 

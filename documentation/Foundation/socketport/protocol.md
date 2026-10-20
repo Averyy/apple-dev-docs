@@ -1,7 +1,8 @@
 # protocol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol that the receiver uses for communication.
 
@@ -14,15 +15,20 @@ The protocol that the receiver uses for communication.
 var `protocol`: Int32 { get }
 ```
 
+```objc
+@property (readonly) int protocol;
+```
+
 ## See Also
 
-- [var address: Data](socketport/address.md)
-  The receiver’s socket address structure stored inside an [`NSData`](nsdata.md) object.
-- [var protocolFamily: Int32](socketport/protocolfamily.md)
+### Getting Information
+- [var address: Data](./address.md)
+  The receiver’s socket address structure stored inside an [`NSData`](../nsdata.md) object.
+- [var protocolFamily: Int32](./protocolfamily.md)
   The protocol family that the receiver uses for communication.
-- [var socket: SocketNativeHandle](socketport/socket.md)
+- [var socket: SocketNativeHandle](./socket.md)
   The receiver’s native socket identifier on the platform.
-- [var socketType: Int32](socketport/sockettype.md)
+- [var socketType: Int32](./sockettype.md)
   The receiver’s socket type.
 
 

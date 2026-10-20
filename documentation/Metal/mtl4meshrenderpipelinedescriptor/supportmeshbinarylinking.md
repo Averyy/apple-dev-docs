@@ -1,7 +1,8 @@
 # supportMeshBinaryLinking
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether you can use the render pipeline to create new pipelines by adding binary functions to the mesh shader function’s callable functions list.
 
@@ -17,6 +18,10 @@ Indicates whether you can use the render pipeline to create new pipelines by add
 
 ```swift
 var supportMeshBinaryLinking: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL supportMeshBinaryLinking;
 ```
 
 

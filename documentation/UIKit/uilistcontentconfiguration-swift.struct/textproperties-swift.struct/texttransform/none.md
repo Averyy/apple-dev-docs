@@ -1,7 +1,8 @@
 # UIListContentConfiguration.TextProperties.TextTransform.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The text doesn’t have a transform.
 
@@ -10,7 +11,7 @@ The text doesn’t have a transform.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ case none
 
 ## See Also
 
-- [UIListContentConfiguration.TextProperties.TextTransform.capitalized](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.md)
+### Text transforms
+- [UIListContentConfiguration.TextProperties.TextTransform.capitalized](./capitalized.md)
   Displays the text with the first character capitalized.
-- [UIListContentConfiguration.TextProperties.TextTransform.lowercase](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.md)
+- [UIListContentConfiguration.TextProperties.TextTransform.lowercase](./lowercase.md)
   Displays the text in all lowercase characters.
-- [UIListContentConfiguration.TextProperties.TextTransform.uppercase](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.md)
+- [UIListContentConfiguration.TextProperties.TextTransform.uppercase](./uppercase.md)
   Displays the text in all uppercase characters.
 
 

@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer.PresentationTimeExpectation.minimumUpcoming(_:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -19,8 +20,9 @@ case minimumUpcoming(CMTime)
 
 ## See Also
 
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.monotonicallyIncreasing](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum/monotonicallyincreasing.md)
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.none](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum/none.md)
+### Expectations
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.monotonicallyIncreasing](./monotonicallyincreasing.md)
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.none](./none.md)
 
 
 ---

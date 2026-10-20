@@ -1,7 +1,8 @@
 # imageAlignment()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position of the cell’s image in the frame.
 
@@ -14,9 +15,13 @@ Returns the position of the cell’s image in the frame.
 func imageAlignment() -> NSImageAlignment
 ```
 
+```objc
+- (NSImageAlignment) imageAlignment;
+```
+
 #### Return Value
 
-The alignment of the image. See [`NSImageAlignment`](https://developer.apple.com/documentation/appkit/nsimagealignment) for possible values.
+The alignment of the image. See [`NSImageAlignment`](../../AppKit/nsimagealignment.md) for possible values.
 
 #### Discussion
 
@@ -26,7 +31,8 @@ The image frame will be computed automatically from the image container frame by
 
 ## See Also
 
-- [func opacity() -> CGFloat](ikimagebrowsercell/opacity.md)
+### Cell Content Display
+- [func opacity() -> CGFloat](./opacity%28%29.md)
   Returns the opacity of the receiver.
 
 

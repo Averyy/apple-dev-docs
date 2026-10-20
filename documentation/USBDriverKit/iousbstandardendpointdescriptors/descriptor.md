@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A valid endpoint descriptor.
 
@@ -10,17 +11,18 @@ A valid endpoint descriptor.
 
 ## Declaration
 
-```swift
+```c
 IOUSBEndpointDescriptor descriptor;
 ```
 
 ## See Also
 
-- [bcdUSB](iousbstandardendpointdescriptors/bcdusb.md)
+### Getting the Descriptors
+- [bcdUSB](./bcdusb.md)
   The USB version supported by the device, specified as a binary-coded decimal value.
-- [ssCompanionDescriptor](iousbstandardendpointdescriptors/sscompaniondescriptor.md)
+- [ssCompanionDescriptor](./sscompaniondescriptor.md)
   The companion descriptor for super-speed devices.
-- [sspCompanionDescriptor](iousbstandardendpointdescriptors/sspcompaniondescriptor.md)
+- [sspCompanionDescriptor](./sspcompaniondescriptor.md)
   The companion descriptor for super-speed plus devices.
 
 

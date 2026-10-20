@@ -1,7 +1,8 @@
 # bestAccuracy
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total time spent tracking the current location at the best accuracy.
 
@@ -17,15 +18,16 @@ let bestAccuracy: Measurement<UnitDuration>
 
 ## See Also
 
-- [let bestAccuracyForNavigation: Measurement<UnitDuration>](locationactivitytimemetric/bestaccuracyfornavigation.md)
+### Accuracy levels
+- [let bestAccuracyForNavigation: Measurement<UnitDuration>](./bestaccuracyfornavigation.md)
   The total time spent tracking the current location at the best accuracy for navigation.
-- [let tenMeters: Measurement<UnitDuration>](locationactivitytimemetric/tenmeters.md)
+- [let tenMeters: Measurement<UnitDuration>](./tenmeters.md)
   The total time spent tracking the current location to an accuracy of 10 meters.
-- [let oneHundredMeter: Measurement<UnitDuration>](locationactivitytimemetric/onehundredmeter.md)
+- [let oneHundredMeter: Measurement<UnitDuration>](./onehundredmeter.md)
   The total time spent tracking the current location to an accuracy of 100 meters.
-- [let oneKilometer: Measurement<UnitDuration>](locationactivitytimemetric/onekilometer.md)
+- [let oneKilometer: Measurement<UnitDuration>](./onekilometer.md)
   The total time spent tracking the current location to an accuracy of 1 kilometer.
-- [let threeKilometers: Measurement<UnitDuration>](locationactivitytimemetric/threekilometers.md)
+- [let threeKilometers: Measurement<UnitDuration>](./threekilometers.md)
   The total time spent tracking the current location to an accuracy of 3 kilometers.
 
 

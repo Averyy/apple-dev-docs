@@ -1,7 +1,8 @@
 # animation(_:value:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given animation to this view when the specified value changes.
 
@@ -23,7 +24,7 @@ func animation<V>(_ animation: Animation?, value: V) -> some View where V : Equa
 
 ## Mentions
 
-- [Managing user interface state](managing-user-interface-state.md)
+- [Managing user interface state](../managing-user-interface-state.md)
 
 #### Return Value
 
@@ -36,9 +37,10 @@ A view that applies `animation` to this view whenever `value` changes.
 
 ## See Also
 
-- [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](view/animation(_:body:).md)
+### Adding state-based animation to a view
+- [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](./animation%28_,body%29.md)
   Applies the given animation to all animatable values within the `body` closure.
-- [func animation(_:)](view/animation(_:).md)
+- [func animation(_:)](./animation%28_%29.md)
   Applies the given animation to this view when this view changes.
 
 

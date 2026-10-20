@@ -1,7 +1,8 @@
 # isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether locking to a particular primary constituent device is supported.
 
@@ -18,9 +19,13 @@ Whether locking to a particular primary constituent device is supported.
 var isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported) BOOL primaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported;
+```
+
 #### Discussion
 
-This property returns `true` if [`setPrimaryConstituentDeviceSwitchingBehaviorLockedWith(_:)`](avcapturedevice/setprimaryconstituentdeviceswitchingbehaviorlockedwith(_:).md) is supported.
+This property returns `true` if [`setPrimaryConstituentDeviceSwitchingBehaviorLockedWith(_:)`](./setprimaryconstituentdeviceswitchingbehaviorlockedwith%28_%29.md) is supported.
 
 
 ---

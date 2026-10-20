@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that the button displays.
 
@@ -16,9 +17,13 @@ The image that the button displays.
 var image: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIImage * image;
+```
+
 #### Discussion
 
-The button displays images no larger than [`CPNowPlayingButtonMaximumImageSize`](cpnowplayingbuttonmaximumimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
+The button displays images no larger than [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
 
 
 ---

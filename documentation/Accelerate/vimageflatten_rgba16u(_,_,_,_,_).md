@@ -1,7 +1,8 @@
 # vImageFlatten_RGBA16U(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs an alpha composite of an unsigned 16-bit-per-channel, 4-channel RGBA buffer over a solid background color.
 
@@ -20,9 +21,13 @@ Performs an alpha composite of an unsigned 16-bit-per-channel, 4-channel RGBA bu
 func vImageFlatten_RGBA16U(_ rgbaSrc: UnsafePointer<vImage_Buffer>, _ rgbaDst: UnsafePointer<vImage_Buffer>, _ rgbaBackgroundColorPtr: UnsafePointer<UInt16>, _ isImagePremultiplied: Bool, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageFlatten_RGBA16U(const vImage_Buffer *rgbaSrc, const vImage_Buffer *rgbaDst, const Pixel_ARGB_16U rgbaBackgroundColorPtr, bool isImagePremultiplied, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -40,18 +45,19 @@ The function uses the following calculation to flatten the source image:
 ## Parameters
 
 - `rgbaSrc`: The source vImage buffer.
-- `rgbaDst`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `rgbaDst`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `rgbaBackgroundColorPtr`: A pixel value that defines the solid background color.
 - `isImagePremultiplied`: A Boolean value that specifes whether the source image has premultiplied alpha.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageFlatten_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, Bool, vImage_Flags) -> vImage_Error](vimageflatten_argb16u(_:_:_:_:_:).md)
+### Flattening 4-channel,16-bit images
+- [func vImageFlatten_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, Bool, vImage_Flags) -> vImage_Error](./vimageflatten_argb16u%28_,_,_,_,_%29.md)
   Performs an alpha composite of an unsigned 16-bit-per-channel, 4-channel ARGB buffer over a solid background color.
-- [func vImageFlatten_RGBA16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, Bool, vImage_Flags) -> vImage_Error](vimageflatten_rgba16q12(_:_:_:_:_:).md)
+- [func vImageFlatten_RGBA16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, Bool, vImage_Flags) -> vImage_Error](./vimageflatten_rgba16q12%28_,_,_,_,_%29.md)
   Performs an alpha composite of a fixed-point 16-bit-per-channel, 4-channel RGBA buffer over a solid background color.
-- [func vImageFlatten_ARGB16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, Bool, vImage_Flags) -> vImage_Error](vimageflatten_argb16q12(_:_:_:_:_:).md)
+- [func vImageFlatten_ARGB16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, Bool, vImage_Flags) -> vImage_Error](./vimageflatten_argb16q12%28_,_,_,_,_%29.md)
   Performs an alpha composite of a fixed-point 16-bit-per-channel, 4-channel ARGB buffer over a solid background color.
 
 

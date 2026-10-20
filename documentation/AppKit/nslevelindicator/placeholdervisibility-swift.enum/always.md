@@ -1,10 +1,11 @@
 # NSLevelIndicator.PlaceholderVisibility.always
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case always
 ```
 
+```c
+NSLevelIndicatorPlaceholderVisibilityAlways
+```
+
 ## See Also
 
-- [NSLevelIndicator.PlaceholderVisibility.automatic](nslevelindicator/placeholdervisibility-swift.enum/automatic.md)
-- [NSLevelIndicator.PlaceholderVisibility.whileEditing](nslevelindicator/placeholdervisibility-swift.enum/whileediting.md)
+### Visibility
+- [NSLevelIndicator.PlaceholderVisibility.automatic](./automatic.md)
+- [NSLevelIndicator.PlaceholderVisibility.whileEditing](./whileediting.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # userActivityType
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that identifies the launch activity for data export requests.
 
@@ -15,19 +16,24 @@ A constant that identifies the launch activity for data export requests.
 class let userActivityType: String
 ```
 
+```c
+extern NSString * const BEBrowserDataExchangeExportActivity;
+```
+
 #### Discussion
 
-The system launches your browser app with this activity when someone initiates a data import request ([`requestImport(for:completionHandler:)`](bebrowserdataimportmanager/requestimport(for:completionhandler:).md)) from within another browser, and chooses your app in the sheet as the browser to provide the exported data.
+The system launches your browser app with this activity when someone initiates a data import request ([`requestImport(for:completionHandler:)`](../bebrowserdataimportmanager/requestimport%28for,completionhandler%29.md)) from within another browser, and chooses your app in the sheet as the browser to provide the exported data.
 
-For more information, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
+For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 
 ## See Also
 
-- [static var exportTokenUserInfoKey: String](bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md)
+### Managing export tokens
+- [static var exportTokenUserInfoKey: String](./exporttokenuserinfokey-1y5l1.md)
   A key for accessing the data transfer token in the export launch activity’s info dictionary.
-- [class let exportTokenUserInfoKey: String](bebrowserdataexportmanager/exporttokenuserinfokey-7e56u.md)
+- [class let exportTokenUserInfoKey: String](./exporttokenuserinfokey-7e56u.md)
   A key for accessing the data transfer token in the export launch activity’s info dictionary.
-- [static var userActivityType: String](bebrowserdataexportmanager/useractivitytype-4ar5j.md)
+- [static var userActivityType: String](./useractivitytype-4ar5j.md)
   A constant that identifies the launch activity for data export requests.
 
 

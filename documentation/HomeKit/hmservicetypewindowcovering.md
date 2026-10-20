@@ -1,7 +1,8 @@
 # HMServiceTypeWindowCovering
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A window covering service.
 
@@ -19,11 +20,16 @@ A window covering service.
 let HMServiceTypeWindowCovering: String
 ```
 
+```c
+extern NSString * const HMServiceTypeWindowCovering;
+```
+
 ## See Also
 
-- [let HMServiceTypeWindow: String](hmservicetypewindow.md)
+### Windows
+- [let HMServiceTypeWindow: String](./hmservicetypewindow.md)
   A window service.
-- [let HMServiceTypeSlats: String](hmservicetypeslats.md)
+- [let HMServiceTypeSlats: String](./hmservicetypeslats.md)
   A slats service.
 
 

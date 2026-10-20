@@ -1,14 +1,15 @@
 # kIOUSBUSB20ExtensionCapabilityBESLPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBUSB20ExtensionCapabilityBESLPhase = IOUSBBitRangePhase(8, 11)
 ```
 

@@ -1,18 +1,19 @@
 # CFCalendarCopyCurrent()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a copy of the logical calendar for the current user.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a copy of the logical calendar for the current user.
 func CFCalendarCopyCurrent() -> CFCalendar!
 ```
 
+```c
+extern CFCalendarRefCFCalendarCopyCurrent();
+```
+
 #### Return Value
 
-The logical calendar for the current user that is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified in System Preferences. This function may return a retained cached object, not a new object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The logical calendar for the current user that is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified in System Preferences. This function may return a retained cached object, not a new object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -32,7 +37,8 @@ Typically you perform some operations on the returned object and then release it
 
 ## See Also
 
-- [func CFCalendarCreateWithIdentifier(CFAllocator!, CFCalendarIdentifier!) -> CFCalendar!](cfcalendarcreatewithidentifier(_:_:).md)
+### Creating a Calendar
+- [func CFCalendarCreateWithIdentifier(CFAllocator!, CFCalendarIdentifier!) -> CFCalendar!](./cfcalendarcreatewithidentifier%28_,_%29.md)
   Returns a calendar object for the calendar identified by a calendar identifier.
 
 

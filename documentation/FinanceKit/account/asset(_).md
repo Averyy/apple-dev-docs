@@ -1,7 +1,8 @@
 # Account.asset(_:)
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An asset account.
 
@@ -17,7 +18,8 @@ case asset(AssetAccount)
 
 ## See Also
 
-- [case liability(LiabilityAccount)](account/liability(_:).md)
+### Enumeration Casess
+- [case liability(LiabilityAccount)](./liability%28_%29.md)
   A liability account.
 
 

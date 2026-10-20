@@ -1,7 +1,8 @@
 # PersonNameComponentsFormatter.Style.abbreviated
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case abbreviated
 ```
 
+```c
+NSPersonNameComponentsFormatterStyleAbbreviated
+```
+
 #### Discussion
 
-The maximally abbreviated form of a name. See “[`Abbreviated`](personnamecomponentsformatter#Abbreviated.md)” for details about its specific behavior.
+The maximally abbreviated form of a name. See “[Abbreviated](../../personnamecomponentsformatter.md#Abbreviated)” for details about its specific behavior.
 
 ## See Also
 
-- [PersonNameComponentsFormatter.Style.default](personnamecomponentsformatter/style-swift.enum/default.md)
-- [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
-- [PersonNameComponentsFormatter.Style.medium](personnamecomponentsformatter/style-swift.enum/medium.md)
-- [PersonNameComponentsFormatter.Style.long](personnamecomponentsformatter/style-swift.enum/long.md)
+### Constants
+- [PersonNameComponentsFormatter.Style.default](./default.md)
+- [PersonNameComponentsFormatter.Style.short](./short.md)
+- [PersonNameComponentsFormatter.Style.medium](./medium.md)
+- [PersonNameComponentsFormatter.Style.long](./long.md)
 
 
 ---

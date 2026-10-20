@@ -1,14 +1,15 @@
 # smr_seq_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 typedef unsigned long smr_seq_t;
 ```
 

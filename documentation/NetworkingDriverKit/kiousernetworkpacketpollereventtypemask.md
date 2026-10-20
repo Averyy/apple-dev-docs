@@ -1,21 +1,23 @@
 # kIOUserNetworkPacketPollerEventTypeMask
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkPacketPollerEventTypeMask
 ```
 
 ## See Also
 
-- [kIOUserNetworkPacketPollerEventPollStart](kiousernetworkpacketpollereventpollstart.md)
-- [kIOUserNetworkPacketPollerEventPollStop](kiousernetworkpacketpollereventpollstop.md)
+### Network packet polling events
+- [kIOUserNetworkPacketPollerEventPollStart](./kiousernetworkpacketpollereventpollstart.md)
+- [kIOUserNetworkPacketPollerEventPollStop](./kiousernetworkpacketpollereventpollstop.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # selectedMenuItemTextColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for the text in menu items.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The color to use for the text in menu items.
 class var selectedMenuItemTextColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * selectedMenuItemTextColor;
+```
+
 #### Return Value
 
-The system color used for text in selected menu items. For more information, see [`NSColor`](nscolor.md).
+The system color used for text in selected menu items. For more information, see [`NSColor`](../nscolor.md).
 
 ## See Also
 
-- [class var selectedMenuItemColor: NSColor](nscolor/selectedmenuitemcolor.md)
+### Related Documentation
+- [class var selectedMenuItemColor: NSColor](./selectedmenuitemcolor.md)
   The color to use for the face of selected menu items.
 
 

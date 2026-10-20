@@ -1,7 +1,8 @@
 # writeAttributeInt24u(withValue:params:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeInt24u(withValue value: NSNumber, params: MTRWriteParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeInt24u(withValue value: NSNumber, params: MTRWriteParams?) async throws
+```
+
+```objc
+- (void) writeAttributeInt24uWithValue:(NSNumber *) value params:(MTRWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # setRequestHeader
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Appends a header to the list of request headers.
 
@@ -12,7 +13,18 @@ Appends a header to the list of request headers.
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+void setRequestHeader(
+    in String header, 
+    in String value
+);
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 void setRequestHeader(
     DOMString header, 
     DOMString value
@@ -30,9 +42,10 @@ If the header already exists in the list of request headers, the specified value
 
 ## See Also
 
-- [getAllResponseHeaders](xmlhttprequest/1627343-getallresponseheaders.md)
+### Manipulating the Header List
+- [getAllResponseHeaders](./api-1627343-getallresponseheaders.md)
   Returns all of the response headers.
-- [getResponseHeader](xmlhttprequest/1627438-getresponseheader.md)
+- [getResponseHeader](./api-1627438-getresponseheader.md)
   Retrieves the field value from the response that is contained in the specified header.
 
 

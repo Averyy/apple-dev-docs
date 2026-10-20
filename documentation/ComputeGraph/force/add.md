@@ -1,13 +1,14 @@
 # force::add
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a constant force vector to the current element.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void force::add(float3 force)
 
 This function applies a specified force to the element by adding it to the force accumulator. Multiple forces can be combined by calling this function (or other force functions) multiple times during simulation.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/force__add.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__add.svg)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # invalidateSessionContent(at:)
 
 **Framework**: LockedCameraCapture  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that the app no longer needs the directory at the URL and it can be deleted.
 
@@ -21,7 +22,7 @@ The directory at the `URL` contains captured content for a session. Store the ca
 
 ## Parameters
 
-- `url`: A URL from [`sessionContentURLs`](lockedcameracapturemanager/sessioncontenturls.md). The system ignores other URLs.
+- `url`: A URL from [`sessionContentURLs`](./sessioncontenturls.md). The system ignores other URLs.
 
 
 ---

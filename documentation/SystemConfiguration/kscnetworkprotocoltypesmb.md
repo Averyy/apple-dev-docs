@@ -1,7 +1,8 @@
 # kSCNetworkProtocolTypeSMB
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The SMB procotol.
 
@@ -14,15 +15,20 @@ The SMB procotol.
 let kSCNetworkProtocolTypeSMB: CFString
 ```
 
+```c
+extern CFStringRef const kSCNetworkProtocolTypeSMB;
+```
+
 ## See Also
 
-- [let kSCNetworkProtocolTypeDNS: CFString](kscnetworkprotocoltypedns.md)
+### Constants
+- [let kSCNetworkProtocolTypeDNS: CFString](./kscnetworkprotocoltypedns.md)
   The DNS protocol.
-- [let kSCNetworkProtocolTypeIPv4: CFString](kscnetworkprotocoltypeipv4.md)
+- [let kSCNetworkProtocolTypeIPv4: CFString](./kscnetworkprotocoltypeipv4.md)
   The IPv4 protocol.
-- [let kSCNetworkProtocolTypeIPv6: CFString](kscnetworkprotocoltypeipv6.md)
+- [let kSCNetworkProtocolTypeIPv6: CFString](./kscnetworkprotocoltypeipv6.md)
   The IPv6 protocol.
-- [let kSCNetworkProtocolTypeProxies: CFString](kscnetworkprotocoltypeproxies.md)
+- [let kSCNetworkProtocolTypeProxies: CFString](./kscnetworkprotocoltypeproxies.md)
   Protocol proxies.
 
 

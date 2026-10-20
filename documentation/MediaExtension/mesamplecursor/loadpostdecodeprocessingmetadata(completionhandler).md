@@ -1,7 +1,8 @@
 # loadPostDecodeProcessingMetadata(completionHandler:)
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously loads a dictionary that represents frame level metadata for post decode processing.
 
@@ -11,7 +12,15 @@ Asynchronously loads a dictionary that represents frame level metadata for post 
 ## Declaration
 
 ```swift
+optional func loadPostDecodeProcessingMetadata(completionHandler: @escaping @Sendable ([String : any Sendable]?, (any Error)?) -> Void)
+```
+
+```swift
 optional func postDecodeProcessingMetadata() async throws -> [String : any Sendable]
+```
+
+```objc
+- (void) loadPostDecodeProcessingMetadataWithCompletionHandler:(void (^)(NSDictionary<NSString *,id> *postDecodeProcessingMetadata, NSError *error)) completionHandler;
 ```
 
 #### Discussion

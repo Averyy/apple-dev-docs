@@ -1,7 +1,8 @@
 # handleRemediation(for:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a remediation request.
 
@@ -17,9 +18,13 @@ Handle a remediation request.
 func handleRemediation(for flow: NEFilterFlow) -> NEFilterRemediationVerdict
 ```
 
+```objc
+- (NEFilterRemediationVerdict *) handleRemediationForFlow:(NEFilterFlow *) flow;
+```
+
 #### Return Value
 
-An [`NEFilterRemediationVerdict`](nefilterremediationverdict.md) object indicating how the system should handle the flow of network content.
+An [`NEFilterRemediationVerdict`](../nefilterremediationverdict.md) object indicating how the system should handle the flow of network content.
 
 #### Discussion
 
@@ -29,7 +34,7 @@ The system calls this method when the user taps or clicks on the remediation lin
 
 ## Parameters
 
-- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the flow.
+- `flow`: An [`NEFilterFlow`](../nefilterflow.md) object containing information about the flow.
 
 
 ---

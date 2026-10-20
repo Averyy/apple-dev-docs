@@ -1,7 +1,8 @@
 # cancelReading()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels any background work and stops the reader’s outputs from reading more samples.
 
@@ -19,15 +20,20 @@ Cancels any background work and stops the reader’s outputs from reading more s
 func cancelReading()
 ```
 
+```objc
+- (void) cancelReading;
+```
+
 #### Discussion
 
 To stop reading samples before reaching the end of the time range, call this method to stop any in-progress background read operations.
 
 ## See Also
 
-- [func start() throws](avassetreader/start.md)
+### Controlling reading
+- [func start() throws](./start%28%29.md)
   Prepares the reader to read media data from the asset.
-- [func startReading() -> Bool](avassetreader/startreading.md)
+- [func startReading() -> Bool](./startreading%28%29.md)
   Prepares the asset reader to start reading sample buffers from the asset.
 
 

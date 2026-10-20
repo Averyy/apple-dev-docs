@@ -1,7 +1,8 @@
 # init(bezierPath:creationDate:pointProvider:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
 
@@ -16,6 +17,10 @@ Creates a stroke path recreating the specified Bézier path as a cubic uniform B
 
 ```swift
 convenience init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKConvertedBezierPointReference) -> PKStrokePoint)
+```
+
+```objc
+- (instancetype) initWithBezierPath:(CGPathRef) bezierPath creationDate:(NSDate *) creationDate pointProvider:(PKStrokePoint * (^)(PKConvertedBezierPoint *convertedPoint)) pointProvider;
 ```
 
 #### Discussion

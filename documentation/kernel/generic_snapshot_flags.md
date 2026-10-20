@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum generic_snapshot_flags : unsigned int {
     ...
 };
@@ -17,8 +17,8 @@ enum generic_snapshot_flags : unsigned int {
 ## Topics
 
 ### Constants
-- [kKernel64_p](generic_snapshot_flags/kkernel64_p.md)
-- [kUser64_p](generic_snapshot_flags/kuser64_p.md)
+- [kKernel64_p](./generic_snapshot_flags/kkernel64_p.md)
+- [kUser64_p](./generic_snapshot_flags/kuser64_p.md)
 
 
 ---

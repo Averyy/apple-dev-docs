@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language for which this asset pack is localized.
 
@@ -25,7 +26,8 @@ This property is `nil` if the asset pack isn’t localized and therefore isn’t
 
 ## See Also
 
-- [Locale.Language](../foundation/locale/language-swift.struct.md)
+### Accessing asset language
+- [Locale.Language](../../Foundation/locale/language-swift.struct.md)
   A type that represents a language, as used in a locale.
 
 

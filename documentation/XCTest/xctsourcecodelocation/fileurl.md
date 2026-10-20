@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A file URL that represents the file-system location of the source code file.
 
@@ -11,9 +12,14 @@ A file URL that represents the file-system location of the source code file.
 var fileURL: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * fileURL;
+```
+
 ## See Also
 
-- [var lineNumber: Int](xctsourcecodelocation/linenumber.md)
+### Source Location Information
+- [var lineNumber: Int](./linenumber.md)
   An integer that represents a line of code in a source code file.
 
 

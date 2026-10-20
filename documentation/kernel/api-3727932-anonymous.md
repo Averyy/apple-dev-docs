@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHV_ION_ANY_SIZE](3727932-anonymous/khv_ion_any_size.md)
-- [kHV_ION_ANY_VALUE](3727932-anonymous/khv_ion_any_value.md)
-- [kHV_ION_EXIT_FULL](3727932-anonymous/khv_ion_exit_full.md)
-- [kHV_ION_NONE](3727932-anonymous/khv_ion_none.md)
+- [kHV_ION_ANY_SIZE](./api-3727932-anonymous/khv_ion_any_size.md)
+- [kHV_ION_ANY_VALUE](./api-3727932-anonymous/khv_ion_any_value.md)
+- [kHV_ION_EXIT_FULL](./api-3727932-anonymous/khv_ion_exit_full.md)
+- [kHV_ION_NONE](./api-3727932-anonymous/khv_ion_none.md)
 
 
 ---

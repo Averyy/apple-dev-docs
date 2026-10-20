@@ -1,7 +1,8 @@
 # result(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a one-shot query that asynchronously reads matching clinical records.
 
@@ -10,7 +11,7 @@ Runs a one-shot query that asynchronously reads matching clinical records.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

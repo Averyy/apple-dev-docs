@@ -1,7 +1,8 @@
 # channelNumber
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var channelNumber: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSNumber * channelNumber;
 ```
 
 

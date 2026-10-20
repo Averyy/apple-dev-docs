@@ -1,7 +1,8 @@
 # GameCenterScoreModeration
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A score submitted to a Game Center leaderboard that you review and choose to block or unblock.
 
@@ -10,16 +11,16 @@ A score submitted to a Game Center leaderboard that you review and choose to blo
 
 ## Declaration
 
-```swift
+```
 object GameCenterScoreModeration
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterScoreModeration.Attributes](gamecenterscoremoderation/attributes-data.dictionary.md)
+- [object GameCenterScoreModeration.Attributes](./gamecenterscoremoderation/attributes-data.dictionary.md)
   The attributes that describe a Game Center score moderation.
-- [object GameCenterScoreModeration.Relationships](gamecenterscoremoderation/relationships-data.dictionary.md)
+- [object GameCenterScoreModeration.Relationships](./gamecenterscoremoderation/relationships-data.dictionary.md)
   The relationships between a Game Center score moderation and other resources.
 
 ## Properties
@@ -30,15 +31,18 @@ object GameCenterScoreModeration
 - `relationships` (GameCenterScoreModeration.Relationships): The relationships between this resource and other resources.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `gameCenterScoreModerations`
+
 ## See Also
 
-- [object GameCenterScoreModerationResponse](gamecenterscoremoderationresponse.md)
+### Objects
+- [object GameCenterScoreModerationResponse](./gamecenterscoremoderationresponse.md)
   The response body for endpoints that modify a single Game Center score moderation.
-- [object GameCenterScoreModerationUpdateRequest](gamecenterscoremoderationupdaterequest.md)
+- [object GameCenterScoreModerationUpdateRequest](./gamecenterscoremoderationupdaterequest.md)
   The request body you use to update a Game Center score moderation.
-- [object GameCenterScoreModerationsResponse](gamecenterscoremoderationsresponse.md)
+- [object GameCenterScoreModerationsResponse](./gamecenterscoremoderationsresponse.md)
   The response body for endpoints that list Game Center score moderations.
-- [object GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse](gamecenterleaderboardv2gamecenterscoremoderationslinkagesresponse.md)
+- [object GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse](./gamecenterleaderboardv2gamecenterscoremoderationslinkagesresponse.md)
   The response body for endpoints that list the score moderation linkages for a Game Center leaderboard.
 
 

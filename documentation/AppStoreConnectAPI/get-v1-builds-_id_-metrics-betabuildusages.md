@@ -1,7 +1,8 @@
 # Read Usage Metrics for a Beta Build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get usage metrics for a specific build.
 
@@ -14,7 +15,7 @@ Get usage metrics for a specific build.
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/builds/ace4f47a-60ae-4ed6-954f-c4e61c7baab0/metrics/betaBuildUsages
 ```
 
@@ -59,24 +60,40 @@ GET https://api.appstoreconnect.apple.com/v1/builds/ace4f47a-60ae-4ed6-954f-c4e6
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the build resource ID from the [`List builds`](./get-v1-builds.md) response.
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`BetaBuildUsagesV1MetricResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List builds](get-v1-builds.md)
+### Getting Build Information
+- [List builds](./get-v1-builds.md)
   Find and list builds for all apps in App Store Connect.
-- [Read build information](get-v1-builds-_id_.md)
+- [Read build information](./get-v1-builds-_id_.md)
   Get information about a specific build.
-- [Read the app information of a build](get-v1-builds-_id_-app.md)
+- [Read the app information of a build](./get-v1-builds-_id_-app.md)
   Get the app information for a specific build.
-- [Read the app id of a build](get-v1-builds-_id_-relationships-app.md)
+- [Read the app id of a build](./get-v1-builds-_id_-relationships-app.md)
   Get the app ID for a specific build.
-- [Read the app store version information of a build](get-v1-builds-_id_-appstoreversion.md)
+- [Read the app store version information of a build](./get-v1-builds-_id_-appstoreversion.md)
   Get the App Store version of a specific build.
-- [Get the App Store version ID for a build](get-v1-builds-_id_-relationships-appstoreversion.md)
-- [Read the prerelease version of a build](get-v1-builds-_id_-prereleaseversion.md)
+- [Get the App Store version ID for a build](./get-v1-builds-_id_-relationships-appstoreversion.md)
+- [Read the prerelease version of a build](./get-v1-builds-_id_-prereleaseversion.md)
   Get the prerelease version for a specific build.
-- [Get the prerelease version ID for a build](get-v1-builds-_id_-relationships-prereleaseversion.md)
+- [Get the prerelease version ID for a build](./get-v1-builds-_id_-relationships-prereleaseversion.md)
 
 
 ---

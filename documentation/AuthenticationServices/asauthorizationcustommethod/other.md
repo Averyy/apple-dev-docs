@@ -1,7 +1,8 @@
 # other
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type of authorization that uses a custom sign-in method.
 
@@ -14,15 +15,20 @@ A type of authorization that uses a custom sign-in method.
 static let other: ASAuthorizationCustomMethod
 ```
 
+```c
+extern ASAuthorizationCustomMethod const ASAuthorizationCustomMethodOther;
+```
+
 #### Discussion
 
 This kind of authorization method displays a Sign in Manually button.
 
 ## See Also
 
-- [static let videoSubscriberAccount: ASAuthorizationCustomMethod](asauthorizationcustommethod/videosubscriberaccount.md)
+### Getting the Properties
+- [static let videoSubscriberAccount: ASAuthorizationCustomMethod](./videosubscriberaccount.md)
   A type of authorization that uses a TV provider account to sign in.
-- [static let restorePurchase: ASAuthorizationCustomMethod](asauthorizationcustommethod/restorepurchase.md)
+- [static let restorePurchase: ASAuthorizationCustomMethod](./restorepurchase.md)
   A type of authorization that restores an in-app purchase to sign in.
 
 

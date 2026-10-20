@@ -1,7 +1,8 @@
 # InflectionRule.explicit(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inflection rule that uses a morphology instance to determine how to inflect attribued strings.
 
@@ -22,11 +23,12 @@ case explicit(Morphology)
 
 ## Parameters
 
-- `Morphology`: The [`Morphology`](morphology.md) instance to use when applying this rule.
+- `Morphology`: The [`Morphology`](../morphology.md) instance to use when applying this rule.
 
 ## See Also
 
-- [InflectionRule.automatic](inflectionrule/automatic.md)
+### Inflection Rule Behaviors
+- [InflectionRule.automatic](./automatic.md)
   An inflection rule that performs automatic grammar agreement with default transformations.
 
 

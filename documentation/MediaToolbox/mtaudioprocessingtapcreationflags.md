@@ -1,7 +1,8 @@
 # MTAudioProcessingTapCreationFlags
 
 **Framework**: Media Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Flags to use when creating audio processing taps.
 
@@ -19,6 +20,10 @@ Flags to use when creating audio processing taps.
 typealias MTAudioProcessingTapCreationFlags = UInt32
 ```
 
+```c
+typedef uint32_t MTAudioProcessingTapCreationFlags;
+```
+
 #### Discussion
 
 You must set the pre or post flag, but not both.
@@ -26,9 +31,9 @@ You must set the pre or post flag, but not both.
 ## Topics
 
 ### Flags
-- [var kMTAudioProcessingTapCreationFlag_PreEffects: MTAudioProcessingTapCreationFlags](kmtaudioprocessingtapcreationflag_preeffects.md)
+- [var kMTAudioProcessingTapCreationFlag_PreEffects: MTAudioProcessingTapCreationFlags](./kmtaudioprocessingtapcreationflag_preeffects.md)
   Signifies that the processing tap is inserted before any effects.
-- [var kMTAudioProcessingTapCreationFlag_PostEffects: MTAudioProcessingTapCreationFlags](kmtaudioprocessingtapcreationflag_posteffects.md)
+- [var kMTAudioProcessingTapCreationFlag_PostEffects: MTAudioProcessingTapCreationFlags](./kmtaudioprocessingtapcreationflag_posteffects.md)
   Signifies that the processing tap is inserted before any effects.
 
 

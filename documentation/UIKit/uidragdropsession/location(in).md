@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the geometrical location of the user’s drag activity within the specified view.
@@ -16,6 +17,10 @@ Returns the geometrical location of the user’s drag activity within the specif
 
 ```swift
 func location(in view: UIView) -> CGPoint
+```
+
+```objc
+- (CGPoint) locationInView:(UIView *) view;
 ```
 
 #### Return Value

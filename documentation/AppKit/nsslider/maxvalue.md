@@ -1,17 +1,22 @@
 # maxValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value the slider can send to its target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maxValue: Double { get set }
+```
+
+```objc
+@property double maxValue;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The slider’s maximum value. A horizontal slider sends the maximum value when t
 
 ## See Also
 
-- [var minValue: Double](nsslider/minvalue.md)
+### Asking about the value limits
+- [var minValue: Double](./minvalue.md)
   The minimum value the slider can send to its target.
 
 

@@ -1,7 +1,8 @@
 # AMR_WB
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The AMR Wide Band speech codec.
 
@@ -10,13 +11,14 @@ The AMR Wide Band speech codec.
 
 ## Declaration
 
-```swift
+```c
 AMR_WB
 ```
 
 ## See Also
 
-- [AMR](audiodriverkit/iouseraudioformatid/amr.md)
+### AMR Speech Formats
+- [AMR](./amr.md)
   The AMR Narrow Band speech codec.
 
 

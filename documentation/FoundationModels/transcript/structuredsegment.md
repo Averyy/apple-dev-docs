@@ -1,7 +1,8 @@
 # Transcript.StructuredSegment
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A segment containing structured content.
 
@@ -22,35 +23,36 @@ struct StructuredSegment
 ## Topics
 
 ### Creating a structured segment
-- [init(id: String, source: String, content: GeneratedContent)](transcript/structuredsegment/init(id:source:content:).md)
-- [init(id: String, schemaName: String, content: GeneratedContent)](transcript/structuredsegment/init(id:schemaname:content:).md)
+- [init(id: String, source: String, content: GeneratedContent)](./structuredsegment/init%28id,source,content%29.md)
+- [init(id: String, schemaName: String, content: GeneratedContent)](./structuredsegment/init%28id,schemaname,content%29.md)
   Creates a structured segment that contains the generated content you provide.
 ### Inspecting a structured segment
-- [var content: GeneratedContent](transcript/structuredsegment/content.md)
+- [var content: GeneratedContent](./structuredsegment/content.md)
   The content of the segment.
-- [var source: String](transcript/structuredsegment/source.md)
+- [var source: String](./structuredsegment/source.md)
   A source that can be used to understand which type the content represents.
-- [var schemaName: String](transcript/structuredsegment/schemaname.md)
+- [var schemaName: String](./structuredsegment/schemaname.md)
   A name that can be used to understand which type the content represents.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.Segment](transcript/segment.md)
+### Segments
+- [Transcript.Segment](./segment.md)
   The types of segments that may be included in a transcript entry.
-- [Transcript.TextSegment](transcript/textsegment.md)
+- [Transcript.TextSegment](./textsegment.md)
   A segment containing text.
-- [Transcript.AttachmentSegment](transcript/attachmentsegment.md)
+- [Transcript.AttachmentSegment](./attachmentsegment.md)
   A segment containing attached files or images.
 
 

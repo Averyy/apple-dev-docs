@@ -1,7 +1,8 @@
 # Alarm.State.alerting
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm is currently firing.
 
@@ -18,11 +19,12 @@ case alerting
 
 ## See Also
 
-- [Alarm.State.countdown](alarm/state-swift.enum/countdown.md)
+### Setting alarm states
+- [Alarm.State.countdown](./countdown.md)
   The alarm is counting down to its alert time.
-- [Alarm.State.paused](alarm/state-swift.enum/paused.md)
+- [Alarm.State.paused](./paused.md)
   A person paused the countdown.
-- [Alarm.State.scheduled](alarm/state-swift.enum/scheduled.md)
+- [Alarm.State.scheduled](./scheduled.md)
   The alarm is scheduled and ready to alert at the appropriate time.
 
 

@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the extension.
 
@@ -17,15 +18,20 @@ The bundle identifier of the extension.
 var bundleIdentifier: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * bundleIdentifier;
+```
+
 #### Discussion
 
-This is the [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) of the extension bundle.
+This is the [`CFBundleIdentifier`](../../BundleResources/information-property-list/cfbundleidentifier.md) of the extension bundle.
 
 ## See Also
 
-- [var bundleVersion: String](ossystemextensionproperties/bundleversion.md)
+### Identifying the Extension
+- [var bundleVersion: String](./bundleversion.md)
   The bundle version of the extension.
-- [var bundleShortVersion: String](ossystemextensionproperties/bundleshortversion.md)
+- [var bundleShortVersion: String](./bundleshortversion.md)
   The bundle short version string of the extension.
 
 

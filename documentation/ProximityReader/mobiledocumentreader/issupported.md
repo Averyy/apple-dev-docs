@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the device supports mobile document reading.
 

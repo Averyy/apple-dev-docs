@@ -1,7 +1,8 @@
 # PKEraserTool.EraserType.fixedWidthBitmap
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.4+
@@ -19,9 +20,10 @@ case fixedWidthBitmap
 
 ## See Also
 
-- [PKEraserTool.EraserType.vector](pkerasertool-swift.struct/erasertype-swift.enum/vector.md)
+### Eraser types
+- [PKEraserTool.EraserType.vector](./vector.md)
   An eraser that removes an entire drawn line.
-- [PKEraserTool.EraserType.bitmap](pkerasertool-swift.struct/erasertype-swift.enum/bitmap.md)
+- [PKEraserTool.EraserType.bitmap](./bitmap.md)
   An eraser that removes only those portions of the drawing it touches.
 
 

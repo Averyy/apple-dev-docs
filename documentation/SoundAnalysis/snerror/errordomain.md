@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A statically accessible string that identifies the Sound Analysis error domain.
 
@@ -22,7 +23,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let SNErrorDomain: String](snerrordomain.md)
+### Error Domain
+- [let SNErrorDomain: String](../snerrordomain.md)
   A string that identifies the Sound Analysis error domain.
 
 

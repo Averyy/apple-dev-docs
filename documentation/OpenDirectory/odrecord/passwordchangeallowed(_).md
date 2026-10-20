@@ -1,16 +1,21 @@
 # passwordChangeAllowed(_:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.10+
 
 ## Declaration
 
 ```swift
 func passwordChangeAllowed(_ newPassword: String!) throws
+```
+
+```objc
+- (BOOL) passwordChangeAllowed:(NSString *) newPassword error:(NSError **) error;
 ```
 
 

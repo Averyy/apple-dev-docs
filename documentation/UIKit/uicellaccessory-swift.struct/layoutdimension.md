@@ -1,7 +1,8 @@
 # UICellAccessory.LayoutDimension
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the layout dimension for the accessory.
 
@@ -10,7 +11,7 @@ Constants that describe the layout dimension for the accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,18 +22,19 @@ enum LayoutDimension
 ## Topics
 
 ### Constants
-- [UICellAccessory.LayoutDimension.actual](uicellaccessory-swift.struct/layoutdimension/actual.md)
+- [UICellAccessory.LayoutDimension.actual](./layoutdimension/actual.md)
   The accessory layout uses its actual dimension.
-- [UICellAccessory.LayoutDimension.standard](uicellaccessory-swift.struct/layoutdimension/standard.md)
+- [UICellAccessory.LayoutDimension.standard](./layoutdimension/standard.md)
   The accessory layout uses the system standard layout dimension for accessories.
-- [UICellAccessory.LayoutDimension.custom(_:)](uicellaccessory-swift.struct/layoutdimension/custom(_:).md)
+- [UICellAccessory.LayoutDimension.custom(_:)](./layoutdimension/custom%28_%29.md)
   The accessory layout uses the specified custom value.
 
 ## See Also
 
-- [UICellAccessory.Placement](uicellaccessory-swift.struct/placement.md)
+### Customizing appearance and placement
+- [UICellAccessory.Placement](./placement.md)
   Constants that describe the placement of the accessory within the cell.
-- [UICellAccessory.DisplayedState](uicellaccessory-swift.struct/displayedstate.md)
+- [UICellAccessory.DisplayedState](./displayedstate.md)
   Constants that describe the cell-editing states that the accessory appears in.
 
 

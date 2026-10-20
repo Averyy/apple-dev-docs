@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ContentTypeDidChange.ContentType.mono
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 2D videos
 

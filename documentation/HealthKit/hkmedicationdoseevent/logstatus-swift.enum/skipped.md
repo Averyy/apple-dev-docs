@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus.skipped
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person logs that they skipped the medication dose.
 
@@ -17,6 +18,10 @@ The person logs that they skipped the medication dose.
 
 ```swift
 case skipped
+```
+
+```c
+HKMedicationDoseEventLogStatusSkipped
 ```
 
 

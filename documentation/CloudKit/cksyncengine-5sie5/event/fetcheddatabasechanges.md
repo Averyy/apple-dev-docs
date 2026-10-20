@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.FetchedDatabaseChanges
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides information about fetched database changes.
 
@@ -11,7 +12,7 @@ A type that provides information about fetched database changes.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,38 +28,39 @@ struct FetchedDatabaseChanges
 ## Topics
 
 ### Accessing changes
-- [let deletions: [CKDatabase.DatabaseChange.Deletion]](cksyncengine-5sie5/event/fetcheddatabasechanges/deletions.md)
+- [let deletions: [CKDatabase.DatabaseChange.Deletion]](./fetcheddatabasechanges/deletions.md)
   The fetched record zone deletions.
-- [enum CKSyncEngineZoneDeletionReason](cksyncenginezonedeletionreason.md)
+- [enum CKSyncEngineZoneDeletionReason](../../cksyncenginezonedeletionreason.md)
   Describes the reason for a record zone deletion.
-- [let modifications: [CKDatabase.DatabaseChange.Modification]](cksyncengine-5sie5/event/fetcheddatabasechanges/modifications.md)
+- [let modifications: [CKDatabase.DatabaseChange.Modification]](./fetcheddatabasechanges/modifications.md)
   The fetched record zone modifications.
 ### Debugging the event
-- [var description: String](cksyncengine-5sie5/event/fetcheddatabasechanges/description.md)
+- [var description: String](./fetcheddatabasechanges/description.md)
   The textual description of the event that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/fetcheddatabasechanges/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./fetcheddatabasechanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case willFetchChanges(CKSyncEngine.Event.WillFetchChanges)](cksyncengine-5sie5/event/willfetchchanges(_:).md)
+### Remote database changes
+- [case willFetchChanges(CKSyncEngine.Event.WillFetchChanges)](./willfetchchanges%28_%29.md)
   The sync engine is about to fetch changes from the server.
-- [CKSyncEngine.Event.WillFetchChanges](cksyncengine-5sie5/event/willfetchchanges.md)
+- [CKSyncEngine.Event.WillFetchChanges](./willfetchchanges.md)
   The sync engine is about to fetch changes from the server.
-- [case fetchedDatabaseChanges(CKSyncEngine.Event.FetchedDatabaseChanges)](cksyncengine-5sie5/event/fetcheddatabasechanges(_:).md)
+- [case fetchedDatabaseChanges(CKSyncEngine.Event.FetchedDatabaseChanges)](./fetcheddatabasechanges%28_%29.md)
   The sync engine has fetched new database changes from the server.
-- [case didFetchChanges(CKSyncEngine.Event.DidFetchChanges)](cksyncengine-5sie5/event/didfetchchanges(_:).md)
+- [case didFetchChanges(CKSyncEngine.Event.DidFetchChanges)](./didfetchchanges%28_%29.md)
   The sync engine finished fetching changes from the server.
-- [CKSyncEngine.Event.DidFetchChanges](cksyncengine-5sie5/event/didfetchchanges.md)
+- [CKSyncEngine.Event.DidFetchChanges](./didfetchchanges.md)
   A type that provides information about a finished database fetch.
 
 

@@ -1,7 +1,8 @@
 # otherItemsProxy
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the special “other items proxy”, which is used to nest bars up the responder chain.
 
@@ -17,11 +18,15 @@ The identifier of the special “other items proxy”, which is used to nest bar
 static let otherItemsProxy: NSTouchBarItem.Identifier
 ```
 
+```c
+extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierOtherItemsProxy;
+```
+
 #### Discussion
 
-Use this identifier in the [`itemIdentifiers`](nstouchbar/itemidentifiers.md) array of an [`NSTouchBar`](nstouchbar.md) object, and a special proxy item will be instantiated for you.
+Use this identifier in the [`itemIdentifiers`](../../nstouchbar/itemidentifiers.md) array of an [`NSTouchBar`](../../nstouchbar.md) object, and a special proxy item will be instantiated for you.
 
-When the [`NSTouchBar`](nstouchbar.md) containing this item is visible, bars provided by objects closer to the first responder will be nested inside the space denoted for this item.Note that a touch bar lacking this item identifier will be replaced in its entirety by touch bars closer to the first responder in the responder chain.
+When the [`NSTouchBar`](../../nstouchbar.md) containing this item is visible, bars provided by objects closer to the first responder will be nested inside the space denoted for this item.Note that a touch bar lacking this item identifier will be replaced in its entirety by touch bars closer to the first responder in the responder chain.
 
 
 ---

@@ -1,7 +1,8 @@
 # CameraFrameProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides camera streams.
 
@@ -21,44 +22,45 @@ You use `CameraFrameProvider` to receive camera images for selected video format
 ## Topics
 
 ### Creating a camera frame provider
-- [init()](cameraframeprovider/init.md)
+- [init()](./cameraframeprovider/init%28%29.md)
   Creates a camera frame provider.
 ### Getting information about the camera frame provider
-- [var description: String](cameraframeprovider/description.md)
+- [var description: String](./cameraframeprovider/description.md)
   A textual representation of this camera frame provider.
-- [var state: DataProviderState](cameraframeprovider/state.md)
+- [var state: DataProviderState](./cameraframeprovider/state.md)
   The state of a camera frame provider.
 ### Getting camera frame updates
-- [func cameraFrameUpdates(for: CameraVideoFormat) -> CameraFrameProvider.CameraFrameUpdates?](cameraframeprovider/cameraframeupdates(for:).md)
+- [func cameraFrameUpdates(for: CameraVideoFormat) -> CameraFrameProvider.CameraFrameUpdates?](./cameraframeprovider/cameraframeupdates%28for%29.md)
   Gets a sequence of camera frame updates for a given video format.
-- [CameraFrameProvider.CameraFrameUpdates](cameraframeprovider/cameraframeupdates.md)
+- [CameraFrameProvider.CameraFrameUpdates](./cameraframeprovider/cameraframeupdates.md)
   A sequence of camera frames.
 ### Enumerations
-- [CameraFrameProvider.CameraPosition](cameraframeprovider/cameraposition.md)
+- [CameraFrameProvider.CameraPosition](./cameraframeprovider/cameraposition.md)
   Values that describe possible camera positions.
-- [CameraFrameProvider.CameraType](cameraframeprovider/cameratype.md)
+- [CameraFrameProvider.CameraType](./cameraframeprovider/cameratype.md)
   Values that describe possible camera types.
-- [CameraFrameProvider.CameraRectification](cameraframeprovider/camerarectification.md)
+- [CameraFrameProvider.CameraRectification](./cameraframeprovider/camerarectification.md)
   Enumeration of possible camera rectification types.
 ### Type Properties
-- [static var isSupported: Bool](cameraframeprovider/issupported.md)
+- [static var isSupported: Bool](./cameraframeprovider/issupported.md)
   A Boolean value that indicates whether this device supports the camera frame provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](cameraframeprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./cameraframeprovider/requiredauthorizations.md)
   The authorization types you need to use the camera frame provider.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CameraFrame](cameraframe.md)
+### Camera sampling
+- [struct CameraFrame](./cameraframe.md)
   The representation of a camera frame.
-- [struct CameraVideoFormat](cameravideoformat.md)
+- [struct CameraVideoFormat](./cameravideoformat.md)
   A structure that represents a camera video format.
 
 

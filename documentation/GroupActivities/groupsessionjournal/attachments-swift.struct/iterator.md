@@ -1,7 +1,8 @@
 # GroupSessionJournal.Attachments.Iterator
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The asynchronous iterator that produces a sequence of attachments.
 
@@ -22,15 +23,16 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> GroupSessionJournal.Attachments.Iterator](groupsessionjournal/attachments-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> GroupSessionJournal.Attachments.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [GroupSessionJournal.Attachments.Element](groupsessionjournal/attachments-swift.struct/element.md)
+- [GroupSessionJournal.Attachments.Element](./element.md)
   The type of element this asynchronous sequence produces.
 
 

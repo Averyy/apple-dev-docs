@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional label you to the resource view pool for debugging purposes.
 
@@ -17,6 +18,10 @@ Assigns an optional label you to the resource view pool for debugging purposes.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
 ```
 
 

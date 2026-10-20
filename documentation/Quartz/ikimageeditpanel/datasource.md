@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the edit panel’s dataSource.
 
@@ -14,9 +15,14 @@ Specifies the edit panel’s dataSource.
 unowned(unsafe) var dataSource: (any IKImageEditPanelDataSource)! { get set }
 ```
 
+```objc
+@property (assign) id<IKImageEditPanelDataSource> dataSource;
+```
+
 ## See Also
 
-- [func reloadData()](ikimageeditpanel/reloaddata.md)
+### Getting, Setting, and Reloading Data
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads the data from the data associated with an image editing panel.
 
 

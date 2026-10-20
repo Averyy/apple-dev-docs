@@ -1,7 +1,8 @@
 # ElementGrouping
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of how elements are grouped.
 
@@ -12,7 +13,7 @@ An enumeration of how elements are grouped.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,33 +24,34 @@ enum ElementGrouping
 ## Topics
 
 ### Enumeration Cases
-- [ElementGrouping.grouped](elementgrouping/grouped.md)
-- [ElementGrouping.strips](elementgrouping/strips.md)
-- [ElementGrouping.ungrouped](elementgrouping/ungrouped.md)
+- [ElementGrouping.grouped](./elementgrouping/grouped.md)
+- [ElementGrouping.strips](./elementgrouping/strips.md)
+- [ElementGrouping.ungrouped](./elementgrouping/ungrouped.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ComputeGraphSimulation](computegraphsimulation.md)
+### Running a simulation
+- [class ComputeGraphSimulation](./computegraphsimulation.md)
   A simulation of particles, which use a single pipeline.
-- [struct ElementSpawnParameters](elementspawnparameters.md)
+- [struct ElementSpawnParameters](./elementspawnparameters.md)
   Parameters used to configure the initial state of a particle when it’s spawned in the simulation.
-- [ComputeGraphSimulation.SimulationRate](computegraphsimulation/simulationrate-swift.struct.md)
+- [ComputeGraphSimulation.SimulationRate](./computegraphsimulation/simulationrate-swift.struct.md)
   Specifies the rate and mode for simulation.
-- [enum Sorting](sorting.md)
+- [enum Sorting](./sorting.md)
   An enumeration of sorting modes.
 
 

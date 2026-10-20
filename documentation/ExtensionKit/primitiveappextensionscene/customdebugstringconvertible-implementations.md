@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: ExtensionKit
+**Framework**: ExtensionKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](primitiveappextensionscene/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A string that provides information about the scene.
 
 

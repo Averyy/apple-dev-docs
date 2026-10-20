@@ -1,7 +1,8 @@
 # resume(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func resume(with params: MTRRVCOperationalStateClusterResumeParams?, completion: @escaping @Sendable (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func resume(with params: MTRRVCOperationalStateClusterResumeParams?) async throws -> MTRRVCOperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) resumeWithParams:(MTRRVCOperationalStateClusterResumeParams *) params completion:(void (^)(MTRRVCOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 

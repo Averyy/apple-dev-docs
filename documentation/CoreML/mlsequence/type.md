@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying type of the sequence’s elements.
 
@@ -20,9 +21,13 @@ The underlying type of the sequence’s elements.
 var type: MLFeatureType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLFeatureType type;
+```
+
 #### Discussion
 
-The sequence’s underlying element type can only be either [`MLFeatureType.string`](mlfeaturetype/string.md) or [`MLFeatureType.int64`](mlfeaturetype/int64.md). Use this value to determine whether to access [`stringValues`](mlsequence/stringvalues.md) or [`int64Values`](mlsequence/int64values.md) at runtime.
+The sequence’s underlying element type can only be either [`MLFeatureType.string`](../mlfeaturetype/string.md) or [`MLFeatureType.int64`](../mlfeaturetype/int64.md). Use this value to determine whether to access [`stringValues`](./stringvalues.md) or [`int64Values`](./int64values.md) at runtime.
 
 
 ---

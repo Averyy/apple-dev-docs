@@ -1,7 +1,8 @@
 # withUnsafeMutableIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the index buffer synchronously on the CPU.
 
@@ -26,15 +27,16 @@ The buffer is only valid for the lifetime of the callback.
 
 ## See Also
 
-- [func withUnsafeBytes(bufferIndex: Int, (UnsafeRawBufferPointer) -> Void)](lowlevelmesh/withunsafebytes(bufferindex:_:).md)
+### Accessing mesh data on the CPU with Swift
+- [func withUnsafeBytes(bufferIndex: Int, (UnsafeRawBufferPointer) -> Void)](./withunsafebytes%28bufferindex,_%29.md)
   Reads a Metal vertex buffer synchronously on the CPU.
-- [func withUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/withunsafemutablebytes(bufferindex:_:).md)
+- [func withUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](./withunsafemutablebytes%28bufferindex,_%29.md)
   Updates a Metal vertex buffer synchronously on the CPU.
-- [func withUnsafeIndices((UnsafeRawBufferPointer) -> Void)](lowlevelmesh/withunsafeindices(_:).md)
+- [func withUnsafeIndices((UnsafeRawBufferPointer) -> Void)](./withunsafeindices%28_%29.md)
   Reads the index buffer synchronously on the CPU.
-- [func replaceUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/replaceunsafemutablebytes(bufferindex:_:).md)
+- [func replaceUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](./replaceunsafemutablebytes%28bufferindex,_%29.md)
   Replaces a Metal vertex buffer synchronously on the CPU.
-- [func replaceUnsafeMutableIndices((UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/replaceunsafemutableindices(_:).md)
+- [func replaceUnsafeMutableIndices((UnsafeMutableRawBufferPointer) -> Void)](./replaceunsafemutableindices%28_%29.md)
   Replaces the index buffer synchronously on the CPU.
 
 

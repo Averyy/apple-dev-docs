@@ -1,7 +1,8 @@
 # onWristState
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,8 @@
 ```swift
 static var onWristState: SROnWristStateSensor { get }
 ```
+
+Available when `Self` is `SROnWristStateSensor`.
 
 
 ---

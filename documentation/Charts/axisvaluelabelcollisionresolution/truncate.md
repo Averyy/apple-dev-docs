@@ -1,7 +1,8 @@
 # truncate
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Truncate a label to the space available to it.
 

@@ -1,7 +1,8 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target object that receives action messages from the stepper.
 
@@ -17,9 +18,14 @@ The target object that receives action messages from the stepper.
 weak var target: AnyObject? { get set }
 ```
 
+```objc
+@property (weak, nullable) id target;
+```
+
 ## See Also
 
-- [var action: Selector?](nssteppertouchbaritem/action.md)
+### Handling stepper interaction
+- [var action: Selector?](./action.md)
   The action-message selector associated with the stepper.
 
 

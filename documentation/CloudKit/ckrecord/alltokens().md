@@ -1,7 +1,8 @@
 # allTokens()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of strings to use for full-text searches of the field’s string-based values.
 
@@ -10,7 +11,7 @@ Returns an array of strings to use for full-text searches of the field’s strin
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Returns an array of strings to use for full-text searches of the field’s strin
 
 ```swift
 func allTokens() -> [String]
+```
+
+```objc
+- (NSArray<NSString *> *) allTokens;
 ```
 
 #### Return Value

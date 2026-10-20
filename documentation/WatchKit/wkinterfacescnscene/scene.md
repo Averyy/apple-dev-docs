@@ -1,7 +1,8 @@
 # scene
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene to be displayed.
 
@@ -14,13 +15,18 @@ The scene to be displayed.
 var scene: SCNScene? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SCNScene * scene;
+```
+
 ## See Also
 
-- [var antialiasingMode: SCNAntialiasingMode](wkinterfacescnscene/antialiasingmode.md)
+### Managing the SceneKit Scene
+- [var antialiasingMode: SCNAntialiasingMode](./antialiasingmode.md)
   The antialiasing mode used for rendering the scene.
-- [var preferredFramesPerSecond: Int](wkinterfacescnscene/preferredframespersecond.md)
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
-- [func snapshot() -> UIImage](wkinterfacescnscene/snapshot.md)
+- [func snapshot() -> UIImage](./snapshot%28%29.md)
   Renders the scene to a new image object.
 
 

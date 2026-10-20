@@ -1,7 +1,8 @@
 # accessPermissions
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var accessPermissions: PDFAccessPermissions { get }
+```
+
+```objc
+@property (nonatomic, readonly) PDFAccessPermissions accessPermissions;
 ```
 
 

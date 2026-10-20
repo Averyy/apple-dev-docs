@@ -1,7 +1,8 @@
 # selectedWeekOfYear
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current week-of-year selection in the calendar view.
 
@@ -17,13 +18,18 @@ The current week-of-year selection in the calendar view.
 var selectedWeekOfYear: DateComponents? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDateComponents * selectedWeekOfYear;
+```
+
 #### Discussion
 
 The components need to include `[.yearForWeekOfYear, .weekOfYear]`.
 
 ## See Also
 
-- [func setSelected(DateComponents?, animated: Bool)](uicalendarselectionweekofyear/setselected(_:animated:).md)
+### Updating the selected week
+- [func setSelected(DateComponents?, animated: Bool)](./setselected%28_,animated%29.md)
   Updates the date component object that represents a selected week in a calendar view, with an option to animate the change.
 
 

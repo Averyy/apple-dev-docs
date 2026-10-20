@@ -1,7 +1,8 @@
 # init(format:lenient:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a parse strategy instance using the specified floating-point percentage format style.
 
@@ -20,16 +21,19 @@ Creates a parse strategy instance using the specified floating-point percentage 
 init<Value>(format: Format, lenient: Bool = true) where Format == FloatingPointFormatStyle<Value>.Percent, Value : BinaryFloatingPoint
 ```
 
+Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` conforms to `BinaryFloatingPoint`.
+
 ## Parameters
 
-- `format`: A configured [`FloatingPointFormatStyle.Percent`](floatingpointformatstyle/percent.md) that describes the percent string format to parse.
+- `format`: A configured [`FloatingPointFormatStyle.Percent`](../floatingpointformatstyle/percent.md) that describes the percent string format to parse.
 - `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to `true`.
 
 ## See Also
 
-- [init<Value>(format: Format, lenient: Bool)](floatingpointparsestrategy/init(format:lenient:)-5nxey.md)
+### Creating a floating-point parse strategy
+- [init<Value>(format: Format, lenient: Bool)](./init%28format,lenient%29-5nxey.md)
   Creates a parse strategy instance using the specified floating-point format style.
-- [init<Value>(format: Format, lenient: Bool)](floatingpointparsestrategy/init(format:lenient:)-9g6wm.md)
+- [init<Value>(format: Format, lenient: Bool)](./init%28format,lenient%29-9g6wm.md)
   Creates a parse strategy instance using the specified floating-point currency format style.
 
 

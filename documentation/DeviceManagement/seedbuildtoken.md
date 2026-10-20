@@ -1,7 +1,8 @@
 # SeedBuildToken
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Describes a beta enrollment token available for the given organization.
 
@@ -10,7 +11,7 @@ Describes a beta enrollment token available for the given organization.
 
 ## Declaration
 
-```swift
+```
 object SeedBuildToken
 ```
 
@@ -22,7 +23,8 @@ object SeedBuildToken
 
 ## See Also
 
-- [object GetSeedBuildTokenResponse](getseedbuildtokenresponse.md)
+### Response
+- [object GetSeedBuildTokenResponse](./getseedbuildtokenresponse.md)
   Provides a list of beta enrollment tokens available for the given organization.
 
 

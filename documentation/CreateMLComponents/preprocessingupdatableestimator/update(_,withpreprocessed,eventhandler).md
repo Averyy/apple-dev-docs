@@ -1,7 +1,8 @@
 # update(_:withPreprocessed:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a transformer with a new sequence of preprocessed features.
 
@@ -28,23 +29,24 @@ func update<InputSequence>(_ transformer: inout PreprocessingUpdatableEstimator<
 
 ## See Also
 
-- [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](preprocessingupdatableestimator/preprocessed(from:eventhandler:).md)
+### Preprocesing and fitting
+- [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](./preprocessed%28from,eventhandler%29.md)
   Preprocesses a sequence of examples.
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a composed transformer to a sequence of examples.
-- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/fitted(topreprocessed:eventhandler:).md)
+- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./fitted%28topreprocessed,eventhandler%29.md)
   Fits a transformer to a sequence of preprocessed features.
-- [func makeTransformer() -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/maketransformer.md)
+- [func makeTransformer() -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](preprocessingupdatableestimator/update(_:with:eventhandler:).md)
+- [func update<InputSequence>(inout PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
-- [PreprocessingUpdatableEstimator.Input](preprocessingupdatableestimator/input.md)
+- [PreprocessingUpdatableEstimator.Input](./input.md)
   The input type.
-- [PreprocessingUpdatableEstimator.Intermediate](preprocessingupdatableestimator/intermediate.md)
+- [PreprocessingUpdatableEstimator.Intermediate](./intermediate.md)
   The intermediate type.
-- [PreprocessingUpdatableEstimator.Output](preprocessingupdatableestimator/output.md)
+- [PreprocessingUpdatableEstimator.Output](./output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

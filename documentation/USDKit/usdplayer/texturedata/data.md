@@ -1,7 +1,8 @@
 # data
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Packed texture data.
 
@@ -21,7 +22,7 @@ let data: Data
 
 #### Discussion
 
-Use [`layout`](usdplayer/texturedata/layout.md) to locate each mip level.
+Use [`layout`](./layout.md) to locate each mip level.
 
 
 ---

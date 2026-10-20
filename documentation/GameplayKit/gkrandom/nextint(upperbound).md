@@ -2,6 +2,7 @@
 
 **Framework**: GameplayKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates and returns a new random integer less than the specified limit.
@@ -20,6 +21,10 @@ Generates and returns a new random integer less than the specified limit.
 func nextInt(upperBound: Int) -> Int
 ```
 
+```objc
+- (NSUInteger) nextIntWithUpperBound:(NSUInteger) upperBound;
+```
+
 #### Return Value
 
 A new random integer greater than or equal to zero and less than the value of the `upperBound` parameter.
@@ -30,11 +35,12 @@ A new random integer greater than or equal to zero and less than the value of th
 
 ## See Also
 
-- [func nextInt() -> Int](gkrandom/nextint.md)
+### Generating Random Numbers
+- [func nextInt() -> Int](./nextint%28%29.md)
   Generates and returns a new random integer.
-- [func nextUniform() -> Float](gkrandom/nextuniform.md)
+- [func nextUniform() -> Float](./nextuniform%28%29.md)
   Generates and returns a new random floating-point value.
-- [func nextBool() -> Bool](gkrandom/nextbool.md)
+- [func nextBool() -> Bool](./nextbool%28%29.md)
   Generates and returns a new random Boolean value.
 
 

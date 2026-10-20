@@ -1,13 +1,14 @@
 # DeviceCreateRequest.Data.Attributes
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object DeviceCreateRequest.Data.Attributes
 ```
 

@@ -1,17 +1,22 @@
 # compare(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the string values of the receiver another cell, disregarding case.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func compare(_ otherCell: Any) -> ComparisonResult
+```
+
+```objc
+- (NSComparisonResult) compare:(id) otherCell;
 ```
 
 #### Return Value
@@ -20,7 +25,9 @@ func compare(_ otherCell: Any) -> ComparisonResult
 
 ## Parameters
 
-- `otherCell`: The cell to compare against the receiver. This parameter must be of type `NSCell`; if it is not, this method raises `NSBadComparisonException`. This value must not be `nil`. If the value is `nil`, the behavior is undefined and may change in future versions of macOS.
+- `otherCell`: The cell to compare against the receiver. This parameter must be of type `NSCell`; if it is not, this method raises `NSBadComparisonException`.
+
+  This value must not be `nil`. If the value is `nil`, the behavior is undefined and may change in future versions of macOS.
 
 
 ---

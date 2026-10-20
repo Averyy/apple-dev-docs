@@ -1,12 +1,13 @@
 # arrangedObjects
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tree controller’s sorted content objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The tree controller’s sorted content objects.
 var arrangedObjects: NSTreeNode { get }
 ```
 
+```objc
+@property (strong, readonly) NSTreeNode * arrangedObjects;
+```
+
 #### Discussion
 
-The value of this property represents a proxy root tree node containing the tree controller’s sorted content objects. The proxy object responds to [`children`](nstreenode/children.md) and [`descendant(at:)`](nstreenode/descendant(at:).md) messages. This property is observable using key-value observing.
+The value of this property represents a proxy root tree node containing the tree controller’s sorted content objects. The proxy object responds to [`children`](../nstreenode/children.md) and [`descendant(at:)`](../nstreenode/descendant%28at%29.md) messages. This property is observable using key-value observing.
 
 ## See Also
 
-- [func rearrangeObjects()](nstreecontroller/rearrangeobjects.md)
+### Arranging Objects
+- [func rearrangeObjects()](./rearrangeobjects%28%29.md)
   Use this method to trigger reordering of the tree controller’s content.
 
 

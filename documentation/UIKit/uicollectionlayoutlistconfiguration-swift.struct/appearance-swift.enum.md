@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.Appearance
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the appearance of the list.
 
@@ -10,7 +11,7 @@ Constants that describe the appearance of the list.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,28 +22,29 @@ enum Appearance
 ## Topics
 
 ### List appearances
-- [UICollectionLayoutListConfiguration.Appearance.plain](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md)
+- [UICollectionLayoutListConfiguration.Appearance.plain](./appearance-swift.enum/plain.md)
   The plain list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.grouped](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/grouped.md)
+- [UICollectionLayoutListConfiguration.Appearance.grouped](./appearance-swift.enum/grouped.md)
   The grouped list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.insetGrouped](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/insetgrouped.md)
+- [UICollectionLayoutListConfiguration.Appearance.insetGrouped](./appearance-swift.enum/insetgrouped.md)
   The inset grouped list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.sidebar](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md)
+- [UICollectionLayoutListConfiguration.Appearance.sidebar](./appearance-swift.enum/sidebar.md)
   The sidebar list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.sidebarPlain](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md)
+- [UICollectionLayoutListConfiguration.Appearance.sidebarPlain](./appearance-swift.enum/sidebarplain.md)
   The plain sidebar list appearance.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var appearance: UICollectionLayoutListConfiguration.Appearance](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.property.md)
+### Configuring appearance
+- [var appearance: UICollectionLayoutListConfiguration.Appearance](./appearance-swift.property.md)
   The overall appearance of the list.
-- [var backgroundColor: UIColor?](uicollectionlayoutlistconfiguration-swift.struct/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the list.
 
 

@@ -1,7 +1,8 @@
 # randomSource
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The randomizer to be used when evaluating parts of the tree that branch randomly.
 
@@ -20,13 +21,18 @@ The randomizer to be used when evaluating parts of the tree that branch randomly
 var randomSource: GKRandomSource { get set }
 ```
 
+```objc
+@property (nonatomic, copy) GKRandomSource * randomSource;
+```
+
 #### Discussion
 
-Some of the branches in a decision tree may not depend on an external input; instead, when evaluating the tree with the [`findAction(forAnswers:)`](gkdecisiontree/findaction(foranswers:).md) method, the tree automatically chooses an answer at random. (In a manually created decision tree, you can create random branches with the [`createBranch(weight:attribute:)`](gkdecisionnode/createbranch(weight:attribute:).md) method.) The tree uses this random source when randomly choosing answers.
+Some of the branches in a decision tree may not depend on an external input; instead, when evaluating the tree with the [`findAction(forAnswers:)`](./findaction%28foranswers%29.md) method, the tree automatically chooses an answer at random. (In a manually created decision tree, you can create random branches with the [`createBranch(weight:attribute:)`](../gkdecisionnode/createbranch%28weight,attribute%29.md) method.) The tree uses this random source when randomly choosing answers.
 
 ## See Also
 
-- [func findAction(forAnswers: [AnyHashable : any NSObjectProtocol]) -> (any NSObjectProtocol)?](gkdecisiontree/findaction(foranswers:).md)
+### Evaluating a Tree to Make Decisions
+- [func findAction(forAnswers: [AnyHashable : any NSObjectProtocol]) -> (any NSObjectProtocol)?](./findaction%28foranswers%29.md)
   Searches the decision tree, following the branches corresponding to each of the specified answers, and returns the resulting action object.
 
 

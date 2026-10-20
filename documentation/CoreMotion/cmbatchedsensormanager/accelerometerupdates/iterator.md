@@ -1,7 +1,8 @@
 # CMBatchedSensorManager.AccelerometerUpdates.Iterator
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - watchOS 10.0+
@@ -15,7 +16,7 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

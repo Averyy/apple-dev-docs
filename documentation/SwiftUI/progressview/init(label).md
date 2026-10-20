@@ -1,7 +1,8 @@
 # init(label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view for showing indeterminate progress that displays a custom label.
 
@@ -21,17 +22,20 @@ nonisolated
 init(@ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View` and `CurrentValueLabel` is `EmptyView`.
+
 ## Parameters
 
 - `label`: A content builder that creates a view that describes the task in progress.
 
 ## See Also
 
-- [init()](progressview/init.md)
+### Creating an indeterminate progress view
+- [init()](./init%28%29.md)
   Creates a progress view for showing indeterminate progress, without a label.
-- [init(LocalizedStringKey)](progressview/init(_:)-6k5se.md)
+- [init(LocalizedStringKey)](./init%28_%29-6k5se.md)
   Creates a progress view for showing indeterminate progress that generates its label from a localized string.
-- [init<S>(S)](progressview/init(_:)-3q5nf.md)
+- [init<S>(S)](./init%28_%29-3q5nf.md)
   Creates a progress view for showing indeterminate progress that generates its label from a string.
 
 

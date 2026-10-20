@@ -1,7 +1,8 @@
 # removeTarget(_:action:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a target and an action from a gesture-recognizer object.
 
@@ -9,13 +10,17 @@ Removes a target and an action from a gesture-recognizer object.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func removeTarget(_ target: Any?, action: Selector?)
+```
+
+```objc
+- (void) removeTarget:(id) target action:(SEL) action;
 ```
 
 #### Discussion
@@ -29,9 +34,11 @@ Calling this method removes the specified target-action pair. Passing `nil` for 
 
 ## See Also
 
-- [init(target: Any?, action: Selector?)](uigesturerecognizer/init(target:action:).md)
+### Related Documentation
+- [init(target: Any?, action: Selector?)](./init%28target,action%29.md)
   Creates a gesture recognizer with a target and an action selector.
-- [func addTarget(Any, action: Selector)](uigesturerecognizer/addtarget(_:action:).md)
+### Adding and removing targets and actions
+- [func addTarget(Any, action: Selector)](./addtarget%28_,action%29.md)
   Adds a target and an action to a gesture-recognizer object.
 
 

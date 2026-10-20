@@ -1,7 +1,8 @@
 # reducedResolution
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A request to decode at a lower resolution than full-size.
 
@@ -14,25 +15,30 @@ A request to decode at a lower resolution than full-size.
 optional var reducedResolution: CGSize { get set }
 ```
 
+```objc
+@property (readwrite) CGSize reducedResolution;
+```
+
 #### Discussion
 
-This optional property conveys a request for reduced resolution for decoding. Decoders that only support a fixed set of resolutions should pick the smallest resolution greater than or equal to the requested width and height. If the output [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) is not in a format where reduced resolution decoding is supported, this setting should be disregarded. This property is set on the extension when a Video Toolbox client sets the [`kVTDecompressionPropertyKey_ReducedResolutionDecode`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_reducedresolutiondecode) property on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
+This optional property conveys a request for reduced resolution for decoding. Decoders that only support a fixed set of resolutions should pick the smallest resolution greater than or equal to the requested width and height. If the output [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) is not in a format where reduced resolution decoding is supported, this setting should be disregarded. This property is set on the extension when a Video Toolbox client sets the [`kVTDecompressionPropertyKey_ReducedResolutionDecode`](../../VideoToolbox/kvtdecompressionpropertykey_reducedresolutiondecode.md) property on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 
 ## See Also
 
-- [var contentHasInterframeDependencies: Bool](mevideodecoder/contenthasinterframedependencies.md)
+### Inspecting a video decoder
+- [var contentHasInterframeDependencies: Bool](./contenthasinterframedependencies.md)
   A Boolean that specifies whether the content has interframe dependencies, if the decoder knows.
-- [var recommendedThreadCount: Int](mevideodecoder/recommendedthreadcount.md)
+- [var recommendedThreadCount: Int](./recommendedthreadcount.md)
   The recommended number of threads for the decoder to use.
-- [var actualThreadCount: Int](mevideodecoder/actualthreadcount.md)
+- [var actualThreadCount: Int](./actualthreadcount.md)
   The actual number of threads the decoder uses.
-- [var supportedPixelFormatsOrderedByQuality: [NSNumber]](mevideodecoder/supportedpixelformatsorderedbyquality.md)
+- [var supportedPixelFormatsOrderedByQuality: [NSNumber]](./supportedpixelformatsorderedbyquality.md)
   Provides hints about quality tradeoffs between pixel formats.
-- [var pixelFormatsWithReducedResolutionDecodeSupport: [NSNumber]](mevideodecoder/pixelformatswithreducedresolutiondecodesupport.md)
+- [var pixelFormatsWithReducedResolutionDecodeSupport: [NSNumber]](./pixelformatswithreducedresolutiondecodesupport.md)
   Provides a list of output pixel formats where the decoder supports reduced resolution decoding.
-- [var producesRAWOutput: Bool](mevideodecoder/producesrawoutput.md)
+- [var producesRAWOutput: Bool](./producesrawoutput.md)
   Indicates whether the decoder produces RAW output which requires the use of a RAW processor.
-- [var isReadyForMoreMediaData: Bool](mevideodecoder/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   A Boolean value that indicates the readiness of the decoder to accept more sample buffers.
 
 

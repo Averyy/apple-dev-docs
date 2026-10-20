@@ -1,13 +1,14 @@
 # force::drag
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies linear drag to slow down the current element over time.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,7 +22,7 @@ This function simulates air resistance or fluid drag by reducing the element’s
 
 The drag force is calculated as: `velocity -= velocity * min(1.0, deltaTime * linearDragFactor)`
 
-> **Note**: ![Graph](/images/com.apple.computegraph/force__drag.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__drag.svg)
 
 > **Note**: Reads and writes to element state `float3 velocity`
 

@@ -1,12 +1,15 @@
 # didValue(forInputKeyChange:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the input port value changed since the last execution of the custom patch.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns whether the input port value changed since the last execution of the cus
 func didValue(forInputKeyChange key: String!) -> Bool
 ```
 
+```objc
+- (BOOL) didValueForInputKeyChange:(NSString *) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value on the input port changed since the last time the [`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md) method was called; always returns [`false`](https://developer.apple.com/documentation/swift/false) if called outside of the `execute:atTime:withArguments:` method.
+[`true`](../../Swift/true.md) if the value on the input port changed since the last time the [`execute(_:atTime:withArguments:)`](./execute%28_,attime,witharguments%29.md) method was called; always returns [`false`](../../Swift/false.md) if called outside of the `execute:atTime:withArguments:` method.
 
 ## Parameters
 
@@ -24,9 +31,10 @@ func didValue(forInputKeyChange key: String!) -> Bool
 
 ## See Also
 
-- [func value(forInputKey: String!) -> Any!](qcplugin/value(forinputkey:).md)
+### Getting and Setting Port Values
+- [func value(forInputKey: String!) -> Any!](./value%28forinputkey%29.md)
   Returns the current value for an input port.
-- [func setValue(Any!, forOutputKey: String!) -> Bool](qcplugin/setvalue(_:foroutputkey:).md)
+- [func setValue(Any!, forOutputKey: String!) -> Bool](./setvalue%28_,foroutputkey%29.md)
   Sets the value of an output port.
 
 

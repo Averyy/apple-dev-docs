@@ -1,7 +1,8 @@
 # toolbarItemPresentationSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation size of a toolbar item in an AppKit toolbar.
 
@@ -9,7 +10,7 @@ The presentation size of a toolbar item in an AppKit toolbar.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 16.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,46 +19,51 @@ The presentation size of a toolbar item in an AppKit toolbar.
 var toolbarItemPresentationSize: UINSToolbarItemPresentationSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UINSToolbarItemPresentationSize toolbarItemPresentationSize;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
-[`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) supports various display modes that affect the amount of space available for displaying toolbar items. If you use [`NSUIViewToolbarItem`](nsuiviewtoolbaritem.md) to host a [`UIView`](uiview.md) in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) when you build your app with Mac Catalyst, that view receives information about its expected size through this trait. Use this trait to make any necessary adjustments to your custom view when the trait collection changes, such as when the toolbar switches to a new display mode.
+[`NSToolbar`](../../AppKit/nstoolbar.md) supports various display modes that affect the amount of space available for displaying toolbar items. If you use [`NSUIViewToolbarItem`](../nsuiviewtoolbaritem.md) to host a [`UIView`](../uiview.md) in an [`NSToolbar`](../../AppKit/nstoolbar.md) when you build your app with Mac Catalyst, that view receives information about its expected size through this trait. Use this trait to make any necessary adjustments to your custom view when the trait collection changes, such as when the toolbar switches to a new display mode.
 
-The default value of this trait is [`UINSToolbarItemPresentationSize.unspecified`](uinstoolbaritempresentationsize/unspecified.md) when an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) doesn’t host the view.
+The default value of this trait is [`UINSToolbarItemPresentationSize.unspecified`](../uinstoolbaritempresentationsize/unspecified.md) when an [`NSToolbar`](../../AppKit/nstoolbar.md) doesn’t host the view.
 
 ## See Also
 
-- [var userInterfaceStyle: UIUserInterfaceStyle](uitraitcollection/userinterfacestyle.md)
+### Retrieving interface-related traits
+- [var userInterfaceStyle: UIUserInterfaceStyle](./userinterfacestyle.md)
   The style associated with the user interface.
-- [enum UIUserInterfaceStyle](uiuserinterfacestyle.md)
+- [enum UIUserInterfaceStyle](../uiuserinterfacestyle.md)
   Constants that indicate the interface style for the app.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uitraitcollection/userinterfaceidiom.md)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](./userinterfaceidiom.md)
   The user interface idiom of the trait collection.
-- [enum UIUserInterfaceIdiom](uiuserinterfaceidiom.md)
+- [enum UIUserInterfaceIdiom](../uiuserinterfaceidiom.md)
   Constants that indicate the interface type for the device or an object that has a trait environment, such as a view and view controller.
-- [var userInterfaceLevel: UIUserInterfaceLevel](uitraitcollection/userinterfacelevel.md)
+- [var userInterfaceLevel: UIUserInterfaceLevel](./userinterfacelevel.md)
   The elevation level of the interface.
-- [enum UIUserInterfaceLevel](uiuserinterfacelevel.md)
+- [enum UIUserInterfaceLevel](../uiuserinterfacelevel.md)
   Constants that indicate the visual level for content in the window.
-- [var layoutDirection: UITraitEnvironmentLayoutDirection](uitraitcollection/layoutdirection.md)
+- [var layoutDirection: UITraitEnvironmentLayoutDirection](./layoutdirection.md)
   The layout direction associated with the current environment.
-- [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
+- [enum UITraitEnvironmentLayoutDirection](../uitraitenvironmentlayoutdirection.md)
   Constants that indicate the layout direction associated with the current environment.
-- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
-- [var accessibilityContrast: UIAccessibilityContrast](uitraitcollection/accessibilitycontrast.md)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](./resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
+- [var accessibilityContrast: UIAccessibilityContrast](./accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
-- [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
+- [enum UIAccessibilityContrast](../uiaccessibilitycontrast.md)
   Constants that indicate the accessibility contrast setting.
-- [var legibilityWeight: UILegibilityWeight](uitraitcollection/legibilityweight.md)
+- [var legibilityWeight: UILegibilityWeight](./legibilityweight.md)
   The font weight to apply to text.
-- [enum UILegibilityWeight](uilegibilityweight.md)
+- [enum UILegibilityWeight](../uilegibilityweight.md)
   Constants that indicate the weight to apply to text in your interface.
-- [var activeAppearance: UIUserInterfaceActiveAppearance](uitraitcollection/activeappearance.md)
+- [var activeAppearance: UIUserInterfaceActiveAppearance](./activeappearance.md)
   A property that indicates whether a scene has an active appearance.
-- [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
+- [enum UIUserInterfaceActiveAppearance](../uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
 
 

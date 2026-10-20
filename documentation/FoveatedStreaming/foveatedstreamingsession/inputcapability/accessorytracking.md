@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.InputCapability.accessoryTracking
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Accessory tracking input.
 

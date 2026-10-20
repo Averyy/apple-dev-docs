@@ -1,7 +1,8 @@
 # MTRLogCallback
 
 **Framework**: Matter  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias MTRLogCallback = (MTRLogType, String, String) -> Void
+```
+
+```c
+typedef void (^)(enum MTRLogType, NSString *, NSString *) MTRLogCallback;
 ```
 
 

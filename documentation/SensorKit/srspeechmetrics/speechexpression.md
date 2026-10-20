@@ -1,7 +1,8 @@
 # speechExpression
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metrics and voice analytics for the range of speech.
 
@@ -16,15 +17,20 @@ The metrics and voice analytics for the range of speech.
 var speechExpression: SRSpeechExpression? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) SRSpeechExpression * speechExpression;
+```
+
 ## See Also
 
-- [var audioLevel: SRAudioLevel?](srspeechmetrics/audiolevel.md)
+### Getting speech metrics and analytics
+- [var audioLevel: SRAudioLevel?](./audiolevel.md)
   The audio level of the speech.
-- [class SRAudioLevel](sraudiolevel.md)
+- [class SRAudioLevel](../sraudiolevel.md)
   An object that represents the audio level for a range of speech.
-- [var speechRecognition: SFSpeechRecognitionResult?](srspeechmetrics/speechrecognition.md)
+- [var speechRecognition: SFSpeechRecognitionResult?](./speechrecognition.md)
   The partial or final results of the speech recognition request.
-- [var soundClassification: SNClassificationResult?](srspeechmetrics/soundclassification.md)
+- [var soundClassification: SNClassificationResult?](./soundclassification.md)
   The highest-ranking classifications in the time range.
 
 

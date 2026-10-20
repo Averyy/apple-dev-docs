@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The child accessibility element with the current focus.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The child accessibility element with the current focus.
 var accessibilityFocusedUIElement: Any { get }
 ```
 
+```objc
+@property (strong, readonly) id accessibilityFocusedUIElement;
+```
+
 ## See Also
 
-- [func accessibilityChildren() -> [Any]?](nsaccessibilitylayoutarea/accessibilitychildren.md)
+### Supporting Accessibility
+- [func accessibilityChildren() -> [Any]?](./accessibilitychildren%28%29.md)
   Returns the accessibility element’s children in the accessibility hierarchy.
-- [func accessibilityLabel() -> String](nsaccessibilitylayoutarea/accessibilitylabel.md)
+- [func accessibilityLabel() -> String](./accessibilitylabel%28%29.md)
   Returns a short description of the layout area.
-- [func accessibilitySelectedChildren() -> [Any]?](nsaccessibilitylayoutarea/accessibilityselectedchildren.md)
+- [func accessibilitySelectedChildren() -> [Any]?](./accessibilityselectedchildren%28%29.md)
   Returns the layout area’s currently selected children.
 
 

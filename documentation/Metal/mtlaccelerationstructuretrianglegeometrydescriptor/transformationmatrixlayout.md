@@ -1,7 +1,8 @@
 # transformationMatrixLayout
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -17,10 +18,15 @@
 var transformationMatrixLayout: MTLMatrixLayout { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMatrixLayout transformationMatrixLayout;
+```
+
 ## See Also
 
-- [var transformationMatrixBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbuffer.md)
-- [var transformationMatrixBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbufferoffset.md)
+### Configuring transformation data
+- [var transformationMatrixBuffer: (any MTLBuffer)?](./transformationmatrixbuffer.md)
+- [var transformationMatrixBufferOffset: Int](./transformationmatrixbufferoffset.md)
 
 
 ---

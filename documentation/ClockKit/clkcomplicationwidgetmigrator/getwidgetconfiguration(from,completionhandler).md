@@ -1,7 +1,8 @@
 # getWidgetConfiguration(from:completionHandler:)
 
 **Framework**: ClockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a configuration object that defines the WidgetKit replacement for the provided ClockKit complication.
 
@@ -11,7 +12,15 @@ Returns a configuration object that defines the WidgetKit replacement for the pr
 ## Declaration
 
 ```swift
+optional func getWidgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor, completionHandler: @escaping @Sendable (CLKComplicationWidgetMigrationConfiguration?) -> Void)
+```
+
+```swift
 optional func widgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor) async -> CLKComplicationWidgetMigrationConfiguration?
+```
+
+```objc
+- (void) getWidgetConfigurationFrom:(CLKComplicationDescriptor *) complicationDescriptor completionHandler:(void (^)(CLKComplicationWidgetMigrationConfiguration *)) completionHandler;
 ```
 
 #### Discussion
@@ -48,9 +57,9 @@ func getWidgetConfiguration(from complicationDescriptor: CLKComplicationDescript
 }
 ```
 
-> ❗ **Important**:  After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](clkcomplicationdatasource.md) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](clkcomplicationwidgetmigrator/getwidgetconfiguration(from:completionhandler:).md) while migrating complications from ClockKit to WidgetKit.
+> ❗ **Important**:  After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](../clkcomplicationdatasource.md) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](./getwidgetconfiguration%28from,completionhandler%29.md) while migrating complications from ClockKit to WidgetKit.
 
-For more information, see [`Migrating ClockKit complications to WidgetKit`](https://developer.apple.com/documentation/widgetkit/converting-a-clockkit-app).
+For more information, see [Migrating ClockKit complications to WidgetKit](../../WidgetKit/converting-a-clockkit-app.md).
 
 ## Parameters
 

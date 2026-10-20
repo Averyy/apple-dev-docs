@@ -1,7 +1,8 @@
 # locationManager(_:didStartMonitoringFor:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new region is being monitored.
 
@@ -17,6 +18,10 @@ Tells the delegate that a new region is being monitored.
 optional func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion)
 ```
 
+```objc
+- (void) locationManager:(CLLocationManager *) manager didStartMonitoringForRegion:(CLRegion *) region;
+```
+
 ## Parameters
 
 - `manager`: The location manager object reporting the event.
@@ -24,15 +29,16 @@ optional func locationManager(_ manager: CLLocationManager, didStartMonitoringFo
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didEnterRegion: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didenterregion:).md)
+### Receiving region-related updates
+- [func locationManager(CLLocationManager, didEnterRegion: CLRegion)](./locationmanager%28_,didenterregion%29.md)
   Tells the delegate that the user entered the specified region.
-- [func locationManager(CLLocationManager, didExitRegion: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didexitregion:).md)
+- [func locationManager(CLLocationManager, didExitRegion: CLRegion)](./locationmanager%28_,didexitregion%29.md)
   Tells the delegate that the user left the specified region.
-- [func locationManager(CLLocationManager, didDetermineState: CLRegionState, for: CLRegion)](cllocationmanagerdelegate/locationmanager(_:diddeterminestate:for:).md)
+- [func locationManager(CLLocationManager, didDetermineState: CLRegionState, for: CLRegion)](./locationmanager%28_,diddeterminestate,for%29.md)
   Tells the delegate about the state of the specified region.
-- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:).md)
+- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](./locationmanager%28_,monitoringdidfailfor,witherror%29.md)
   Tells the delegate that a region monitoring error occurred.
-- [enum CLRegionState](clregionstate.md)
+- [enum CLRegionState](../clregionstate.md)
   Constants that reflect the relationship of the current location to the region boundaries.
 
 

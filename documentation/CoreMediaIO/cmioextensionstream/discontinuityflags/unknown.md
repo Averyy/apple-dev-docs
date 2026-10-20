@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates a stream discontinuity due to an unknown reason.
 
@@ -15,11 +16,16 @@ A flag that indicates a stream discontinuity due to an unknown reason.
 static var unknown: CMIOExtensionStream.DiscontinuityFlags { get }
 ```
 
+```c
+CMIOExtensionStreamDiscontinuityFlagUnknown
+```
+
 ## See Also
 
-- [static var time: CMIOExtensionStream.DiscontinuityFlags](cmioextensionstream/discontinuityflags/time.md)
+### Discontinuity Flags
+- [static var time: CMIOExtensionStream.DiscontinuityFlags](./time.md)
   A flag that indicates a time discontinuity in the stream.
-- [static var sampleDropped: CMIOExtensionStream.DiscontinuityFlags](cmioextensionstream/discontinuityflags/sampledropped.md)
+- [static var sampleDropped: CMIOExtensionStream.DiscontinuityFlags](./sampledropped.md)
   A flag that indicates a discontinuity in the stream due to a dropped frame.
 
 

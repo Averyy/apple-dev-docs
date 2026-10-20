@@ -1,7 +1,8 @@
 # alertLocalizationArgs
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of strings to appear as variables if `alertLocalizationKey` is a format specifier.
 
@@ -10,13 +11,13 @@ Array of strings to appear as variables if `alertLocalizationKey` is a format sp
 
 ## Declaration
 
-```swift
+```
 attribute String[] alertLocalizationArgs;
 ```
 
 #### Discussion
 
-For details, read [`Apple Push Notification Service`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100) in [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
+For details, read [Apple Push Notification Service](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100) in [Local and Remote Notification Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
 
 
 ---

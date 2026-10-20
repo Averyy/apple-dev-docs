@@ -1,7 +1,8 @@
 # closeString
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 var closeString: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * closeString;
 ```
 
 

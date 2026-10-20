@@ -1,7 +1,8 @@
 # clearWeekDaySchedule(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func clearWeekDaySchedule(with params: MTRDoorLockClusterClearWeekDayScheduleParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func clearWeekDaySchedule(with params: MTRDoorLockClusterClearWeekDayScheduleParams) async throws
+```
+
+```objc
+- (void) clearWeekDayScheduleWithParams:(MTRDoorLockClusterClearWeekDayScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

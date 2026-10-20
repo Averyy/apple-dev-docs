@@ -1,7 +1,8 @@
 # getElementById
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 5.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 Element getElementById(
     DOMString elementId
 );

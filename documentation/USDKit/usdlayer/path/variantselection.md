@@ -1,7 +1,8 @@
 # variantSelection
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variant set and value if the path’s leaf is a variant selection, otherwise `nil`.
 

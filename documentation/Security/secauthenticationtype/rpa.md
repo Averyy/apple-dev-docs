@@ -1,7 +1,8 @@
 # SecAuthenticationType.RPA
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies Remote Password authentication.
 
@@ -13,6 +14,10 @@ Specifies Remote Password authentication.
 
 ```swift
 case RPA
+```
+
+```c
+kSecAuthenticationTypeRPA
 ```
 
 

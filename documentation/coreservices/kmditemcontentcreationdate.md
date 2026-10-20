@@ -1,7 +1,8 @@
 # kMDItemContentCreationDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The creation date of an edited or optimized version of the song or composition.
 
@@ -14,9 +15,13 @@ The creation date of an edited or optimized version of the song or composition.
 let kMDItemContentCreationDate: CFString!
 ```
 
+```c
+const CFStringRef kMDItemContentCreationDate;
+```
+
 #### Discussion
 
-This value is supplementary to [`kMDItemRecordingDate`](kmditemrecordingdate.md), which indicates the original recording date of the song or composition. 
+This value is supplementary to [`kMDItemRecordingDate`](./kmditemrecordingdate.md), which indicates the original recording date of the song or composition. 
 
 
 ---

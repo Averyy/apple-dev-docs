@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a string representation from a person name components value.
 
@@ -26,7 +27,7 @@ A string representation of the person name components.
 
 #### Discussion
 
-The [`format(_:)`](personnamecomponents/formatstyle/format(_:).md) instance method applies the style to an instance of `PersonNameComponent`. After creating a style, you can use it to format multiple instances of person name components. For example:
+The [`format(_:)`](./format%28_%29.md) instance method applies the style to an instance of `PersonNameComponent`. After creating a style, you can use it to format multiple instances of person name components. For example:
 
 ```swift
 let customPersonFormatStyle = PersonNameComponents.FormatStyle(style: .medium, locale: Locale(identifier: "us_EN"))

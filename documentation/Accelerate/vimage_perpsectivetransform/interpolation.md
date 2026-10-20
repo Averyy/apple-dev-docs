@@ -1,7 +1,8 @@
 # vImage_PerpsectiveTransform.Interpolation
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the projective-transformation interpolation method.
 
@@ -11,7 +12,7 @@ Constants that describe the projective-transformation interpolation method.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,16 +24,16 @@ enum Interpolation
 ## Topics
 
 ### Enumeration Cases
-- [vImage_PerpsectiveTransform.Interpolation.linear](vimage_perpsectivetransform/interpolation/linear.md)
+- [vImage_PerpsectiveTransform.Interpolation.linear](./interpolation/linear.md)
   A constant that specifies linear interpolation.
-- [vImage_PerpsectiveTransform.Interpolation.nearest](vimage_perpsectivetransform/interpolation/nearest.md)
+- [vImage_PerpsectiveTransform.Interpolation.nearest](./interpolation/nearest.md)
   A constant that specifies nearest-neighbor interpolation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

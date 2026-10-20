@@ -1,12 +1,13 @@
 # foreverDuration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The longest time duration possible.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The longest time duration possible.
 class var foreverDuration: TimeInterval { get }
 ```
 
+```c
+static const NSTimeInterval NSEventDurationForever;
+```
+
 ## See Also
 
-- [var locationInWindow: NSPoint](nsevent/locationinwindow.md)
+### Getting general event information
+- [var locationInWindow: NSPoint](./locationinwindow.md)
   The event location in the base coordinate system of the associated window.
-- [var timestamp: TimeInterval](nsevent/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the event occurred in seconds since system startup.
-- [var window: NSWindow?](nsevent/window.md)
+- [var window: NSWindow?](./window.md)
   The window object associated with the event.
-- [var windowNumber: Int](nsevent/windownumber.md)
+- [var windowNumber: Int](./windownumber.md)
   The identifier for the window device associated with the event.
-- [var eventRef: UnsafeRawPointer?](nsevent/eventref.md)
+- [var eventRef: UnsafeRawPointer?](./eventref.md)
   An opaque Carbon type associated with this event.
-- [var cgEvent: CGEvent?](nsevent/cgevent.md)
+- [var cgEvent: CGEvent?](./cgevent.md)
   The Core Graphics event object corresponding to this event.
-- [var context: NSGraphicsContext?](nsevent/context.md)
+- [var context: NSGraphicsContext?](./context.md)
   The display graphics context for this event.
 
 

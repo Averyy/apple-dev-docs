@@ -1,7 +1,8 @@
 # minimumWidth
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum width of the menu in screen coordinates.
 
@@ -14,6 +15,10 @@ The minimum width of the menu in screen coordinates.
 var minimumWidth: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat minimumWidth;
+```
+
 #### Discussion
 
 This property contains a value of type `CGFloat`, indicating the minimum width of the menu in screen coordinates.
@@ -22,7 +27,8 @@ The menu will not draw smaller than its minimum width, but may draw larger if it
 
 ## See Also
 
-- [var size: NSSize](nsmenu/size.md)
+### Configuring Menu Size
+- [var size: NSSize](./size.md)
   The size of the menu in screen coordinates
 
 

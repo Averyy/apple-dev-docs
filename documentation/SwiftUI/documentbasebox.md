@@ -1,7 +1,8 @@
 # DocumentBaseBox
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 
@@ -21,23 +22,24 @@ protocol DocumentBaseBox<Document> : AnyObject
 ## Topics
 
 ### Specifying the document type
-- [associatedtype Document](documentbasebox/document.md)
+- [associatedtype Document](./documentbasebox/document.md)
   The underlying document type.
 ### Accessing the document
-- [var base: Self.Document?](documentbasebox/base.md)
+- [var base: Self.Document?](./documentbasebox/base.md)
   Updates the underlying document to a new value.
 
 ## See Also
 
-- [protocol Document](document.md)
+### Storing document data in a reference type instance
+- [protocol Document](./document.md)
   A document that supports both reading and writing.
-- [protocol ReadableDocument](readabledocument.md)
+- [protocol ReadableDocument](./readabledocument.md)
   A document type that supports reading from file.
-- [protocol WritableDocument](writabledocument.md)
+- [protocol WritableDocument](./writabledocument.md)
   A document type that supports writing to file.
-- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+- [class URLDocumentConfiguration](./urldocumentconfiguration.md)
   The configuration of an open document that stores its file URL, last modification date, and related metadata.
-- [struct DocumentCreationContext](documentcreationcontext.md)
+- [struct DocumentCreationContext](./documentcreationcontext.md)
   Context about how a document was created.
 
 

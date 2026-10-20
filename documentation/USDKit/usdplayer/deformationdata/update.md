@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData.Update
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Delta update carrying only the deformation fields that changed since the last frame.
 
@@ -22,20 +23,20 @@ struct Update
 ## Topics
 
 ### Instance Properties
-- [let blendShapes: USDPlayer.DeformationData.BlendShapeData.Update?](usdplayer/deformationdata/update/blendshapes.md)
+- [let blendShapes: USDPlayer.DeformationData.BlendShapeData.Update?](./update/blendshapes.md)
   Changed blend shape data.
-- [let id: USDPlayer.DeformationID](usdplayer/deformationdata/update/id.md)
+- [let id: USDPlayer.DeformationID](./update/id.md)
   Unique identifier for the deformation resource being updated.
-- [let renormalization: USDPlayer.DeformationData.RenormalizationData.Update?](usdplayer/deformationdata/update/renormalization.md)
+- [let renormalization: USDPlayer.DeformationData.RenormalizationData.Update?](./update/renormalization.md)
   Changed renormalization data.
-- [let skinning: USDPlayer.DeformationData.SkinningData.Update?](usdplayer/deformationdata/update/skinning.md)
+- [let skinning: USDPlayer.DeformationData.SkinningData.Update?](./update/skinning.md)
   Changed skinning data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

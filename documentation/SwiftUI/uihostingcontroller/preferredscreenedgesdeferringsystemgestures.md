@@ -1,7 +1,8 @@
 # preferredScreenEdgesDeferringSystemGestures
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the screen edge from which you want your gesture to take precedence over the system gesture.
 
@@ -20,9 +21,10 @@ Sets the screen edge from which you want your gesture to take precedence over th
 
 ## See Also
 
-- [var preferredUserInterfaceStyle: UIUserInterfaceStyle](uihostingcontroller/preferreduserinterfacestyle.md)
+### Configuring the interface appearance
+- [var preferredUserInterfaceStyle: UIUserInterfaceStyle](./preferreduserinterfacestyle.md)
   The preferred interface style for this view controller.
-- [var childForScreenEdgesDeferringSystemGestures: UIViewController?](uihostingcontroller/childforscreenedgesdeferringsystemgestures.md)
+- [var childForScreenEdgesDeferringSystemGestures: UIViewController?](./childforscreenedgesdeferringsystemgestures.md)
 
 
 ---

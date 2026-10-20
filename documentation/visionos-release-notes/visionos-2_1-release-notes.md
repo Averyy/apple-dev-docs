@@ -1,12 +1,13 @@
 # visionOS 2.1 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 2.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [`Xcode 16.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_1-release-notes).
+The visionOS 2.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [Xcode 16.1 Release Notes](../Xcode-Release-Notes/xcode-16_1-release-notes.md).
 
 ##### Apple Music
 
@@ -18,15 +19,19 @@ The visionOS 2.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Presenter controls are inaccessible or difficult to access while presenting. This issue impacts the ability to bring up the Light Table to navigate to a different slide, bring up the Drawing Tools and Presenter Display, access the Live Video source, access the presenters list when using Multi-Presenter, enable/disable Auto Dimming, access the Slideshow Tips and advance the presentation/go back a slide.  (134967350) **Workaround:** Tap to advance the presentation. Long press then swipe to the right to go back a slide. Access the Slideshow Tips using Keynote Help via the Help menu in the app toolbar.
+- Presenter controls are inaccessible or difficult to access while presenting. This issue impacts the ability to bring up the Light Table to navigate to a different slide, bring up the Drawing Tools and Presenter Display, access the Live Video source, access the presenters list when using Multi-Presenter, enable/disable Auto Dimming, access the Slideshow Tips and advance the presentation/go back a slide.  (134967350)
 
-##### Realitykit Graphics
+  **Workaround:** Tap to advance the presentation. Long press then swipe to the right to go back a slide. Access the Slideshow Tips using Keynote Help via the Help menu in the app toolbar.
+
+##### RealityKit Graphics
 
 ###### Known Issues
 
-- When a translucent SwiftUI view and translucent `ModelEntity` are positioned at the same point in space using `RealityViewAttachment`, a visual flickering may occur.  (135906908) **Workaround:** Add a `ModelSortGroupComponent` to the ModelEntity and set its `group` using [`ModelSortGroup.PlanarUIPlacement`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/modelsortgroup/planaruiplacement-swift.enum?changes=_9)
+- When a translucent SwiftUI view and translucent `ModelEntity` are positioned at the same point in space using `RealityViewAttachment`, a visual flickering may occur.  (135906908)
 
-##### Storekit
+  **Workaround:** Add a `ModelSortGroupComponent` to the ModelEntity and set its `group` using [ModelSortGroup.PlanarUIPlacement](../RealityKit/modelsortgroup/planaruiplacement-swift.enum.md)
+
+##### StoreKit
 
 ###### Resolved Issues
 
@@ -38,7 +43,7 @@ The visionOS 2.1 SDK provides support for developing apps for Apple Vision Pro d
 
 - Fixed: Any project that utilizes Swift Charts fails to build when targeting iOS, macOS, or visionOS.  (135905498)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
@@ -54,17 +59,18 @@ The visionOS 2.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ## See Also
 
-- [visionOS 2.6 Release Notes](visionos-2_6-release-notes.md)
+### visionOS 2
+- [visionOS 2.6 Release Notes](./visionos-2_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.5 Release Notes](visionos-2_5-release-notes.md)
+- [visionOS 2.5 Release Notes](./visionos-2_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.4 Release Notes](visionos-2_4-release-notes.md)
+- [visionOS 2.4 Release Notes](./visionos-2_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.3 Release Notes](visionos-2_3-release-notes.md)
+- [visionOS 2.3 Release Notes](./visionos-2_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.2 Release Notes](visionos-2_2-release-notes.md)
+- [visionOS 2.2 Release Notes](./visionos-2_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2 Release Notes](visionos-2-release-notes.md)
+- [visionOS 2 Release Notes](./visionos-2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

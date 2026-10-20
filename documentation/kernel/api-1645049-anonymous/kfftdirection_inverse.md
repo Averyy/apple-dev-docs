@@ -1,7 +1,8 @@
 # kFFTDirection_Inverse
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 Specifies an inverse transform.
 
@@ -10,7 +11,7 @@ Specifies an inverse transform.
 
 ## Declaration
 
-```swift
+```c
 kFFTDirection_Inverse = -1
 ```
 

@@ -1,7 +1,8 @@
 # stroke(_:style:antialiased:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Traces the outline of this shape with a color or gradient.
 
@@ -52,13 +53,14 @@ Capsule()
 
 ## See Also
 
-- [func fill<S>(S, style: FillStyle) -> FillShapeView<Self.Content, S, Self>](shapeview/fill(_:style:).md)
+### Modify the shape
+- [func fill<S>(S, style: FillStyle) -> FillShapeView<Self.Content, S, Self>](./fill%28_,style%29.md)
   Fills this shape with a color or gradient.
-- [func stroke<S>(S, lineWidth: CGFloat, antialiased: Bool) -> StrokeShapeView<Self.Content, S, Self>](shapeview/stroke(_:linewidth:antialiased:).md)
+- [func stroke<S>(S, lineWidth: CGFloat, antialiased: Bool) -> StrokeShapeView<Self.Content, S, Self>](./stroke%28_,linewidth,antialiased%29.md)
   Traces the outline of this shape with a color or gradient.
-- [func strokeBorder<S>(S, style: StrokeStyle, antialiased: Bool) -> StrokeBorderShapeView<Self.Content, S, Self>](shapeview/strokeborder(_:style:antialiased:).md)
+- [func strokeBorder<S>(S, style: StrokeStyle, antialiased: Bool) -> StrokeBorderShapeView<Self.Content, S, Self>](./strokeborder%28_,style,antialiased%29.md)
   Returns a view that’s the result of insetting this view by half of its style’s line width.
-- [func strokeBorder<S>(S, lineWidth: CGFloat, antialiased: Bool) -> StrokeBorderShapeView<Self.Content, S, Self>](shapeview/strokeborder(_:linewidth:antialiased:).md)
+- [func strokeBorder<S>(S, lineWidth: CGFloat, antialiased: Bool) -> StrokeBorderShapeView<Self.Content, S, Self>](./strokeborder%28_,linewidth,antialiased%29.md)
   Returns a view that’s the result of filling an inner stroke of this view with the content you supply.
 
 

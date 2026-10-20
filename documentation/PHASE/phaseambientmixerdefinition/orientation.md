@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A quaternion that describes the orientation of the speaker layout relative to the scene origin.
 
@@ -19,13 +20,18 @@ A quaternion that describes the orientation of the speaker layout relative to th
 var orientation: simd_quatf { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_quatf orientation;
+```
+
 #### Discussion
 
-The framework sets the value to the `orientation` initializer argument. See [`init(channelLayout:orientation:)`](phaseambientmixerdefinition/init(channellayout:orientation:).md).
+The framework sets the value to the `orientation` initializer argument. See [`init(channelLayout:orientation:)`](./init%28channellayout,orientation%29.md).
 
 ## See Also
 
-- [var inputChannelLayout: AVAudioChannelLayout](phaseambientmixerdefinition/inputchannellayout.md)
+### Inspecting the Mixer
+- [var inputChannelLayout: AVAudioChannelLayout](./inputchannellayout.md)
   The channel layout of input audio.
 
 

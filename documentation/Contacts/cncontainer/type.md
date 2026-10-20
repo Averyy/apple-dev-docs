@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the container.
 
@@ -19,17 +20,30 @@ The type of the container.
 var type: CNContainerType { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) CNContainerType type;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) CNContainerType type;
+```
+
 #### Discussion
 
-To learn more about different container types, see [`CNContainerType`](cncontainertype.md).
+To learn more about different container types, see [`CNContainerType`](../cncontainertype.md).
 
 ## See Also
 
-- [var name: String](cncontainer/name.md)
+### Getting the Container Information
+- [var name: String](./name.md)
   The name of the container.
-- [var identifier: String](cncontainer/identifier.md)
+- [var identifier: String](./identifier.md)
   The unique identifier for a contacts container on the device.
-- [enum CNContainerType](cncontainertype.md)
+- [enum CNContainerType](../cncontainertype.md)
   The container may be local on the device or associated with a server account that has contacts.
 
 

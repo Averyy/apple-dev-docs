@@ -1,7 +1,8 @@
 # expectedTravelTime
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected travel time, in seconds.
 
@@ -20,23 +21,28 @@ The expected travel time, in seconds.
 var expectedTravelTime: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval expectedTravelTime;
+```
+
 #### Discussion
 
 This expected travel time reflects the time it takes to traverse the route under ideal conditions. The actual amount of time may vary based on conditions.
 
 ## See Also
 
-- [var name: String](mkroute/name.md)
+### Getting additional route details
+- [var name: String](./name.md)
   The assigned name for the route.
-- [var hasHighways: Bool](mkroute/hashighways.md)
+- [var hasHighways: Bool](./hashighways.md)
   A Boolean value that indicates whether the route contains highways.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var advisoryNotices: [String]](mkroute/advisorynotices.md)
+- [var advisoryNotices: [String]](./advisorynotices.md)
   An array of advisory notice strings for the route.
-- [var distance: CLLocationDistance](mkroute/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The route distance, in meters.
-- [var transportType: MKDirectionsTransportType](mkroute/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The overall route transport type.
 
 

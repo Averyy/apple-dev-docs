@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Error.invalidImages(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that represents a problem with the image directory URL.
 

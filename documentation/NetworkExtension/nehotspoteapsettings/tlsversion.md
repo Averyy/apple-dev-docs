@@ -1,9 +1,10 @@
 # NEHotspotEAPSettings.TLSVersion
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](nehotspoteapsettings/preferredtlsversion.md).
+The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](./preferredtlsversion.md).
 
 **Availability**:
 - iOS 11.0+
@@ -17,43 +18,48 @@ The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](
 enum TLSVersion
 ```
 
+```c
+enum NEHotspotConfigurationEAPTLSVersion : NSInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init?(rawValue: Int)](nehotspoteapsettings/tlsversion/init(rawvalue:).md)
+- [init?(rawValue: Int)](./tlsversion/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isTLSClientCertificateRequired: Bool](nehotspoteapsettings/istlsclientcertificaterequired.md)
+### Accessing EAP properties
+- [var isTLSClientCertificateRequired: Bool](./istlsclientcertificaterequired.md)
   A Boolean value indicating whether a network requires two-factor authentication or allows zero-factor authentication.
-- [var trustedServerNames: [String]](nehotspoteapsettings/trustedservernames.md)
+- [var trustedServerNames: [String]](./trustedservernames.md)
   An array of server certificate common name strings used to verify a server’s certificate.
-- [var supportedEAPTypes: [NSNumber]](nehotspoteapsettings/supportedeaptypes.md)
+- [var supportedEAPTypes: [NSNumber]](./supportedeaptypes.md)
   An array of supported EAP types.
-- [NEHotspotEAPSettings.EAPType](nehotspoteapsettings/eaptype.md)
-  The EAP types that may be specified in [`supportedEAPTypes`](nehotspoteapsettings/supportedeaptypes.md).
-- [var username: String](nehotspoteapsettings/username.md)
+- [NEHotspotEAPSettings.EAPType](./eaptype.md)
+  The EAP types that may be specified in [`supportedEAPTypes`](./supportedeaptypes.md).
+- [var username: String](./username.md)
   The user name string for EAP authentication, encoded as UTF-8.
-- [var password: String](nehotspoteapsettings/password.md)
+- [var password: String](./password.md)
   The password component of the IEEE 802.1X authentication credential.
-- [var preferredTLSVersion: NEHotspotEAPSettings.TLSVersion](nehotspoteapsettings/preferredtlsversion.md)
+- [var preferredTLSVersion: NEHotspotEAPSettings.TLSVersion](./preferredtlsversion.md)
   The Transport Layer Security (TLS) version to use during a TLS authentication handshake.
-- [var outerIdentity: String](nehotspoteapsettings/outeridentity.md)
+- [var outerIdentity: String](./outeridentity.md)
   The identity string to be used in the EAP-Identity/Response packet during outer EAP authentication.
-- [var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationType](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.property.md)
+- [var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationType](./ttlsinnerauthenticationtype-swift.property.md)
   The inner-layer authentication protocol used by a TTLS module.
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md)
-  The TTLS Inner Authentication Types that may be specified by [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md).
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType](./ttlsinnerauthenticationtype-swift.enum.md)
+  The TTLS Inner Authentication Types that may be specified by [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](./ttlsinnerauthenticationtype-swift.enum.md).
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMessageDeterminingMediaPresence](1645936-anonymous/kmessagedeterminingmediapresence.md)
-- [kMessageFoundMedia](1645936-anonymous/kmessagefoundmedia.md)
-- [kMessageMediaTypeDetermined](1645936-anonymous/kmessagemediatypedetermined.md)
+- [kMessageDeterminingMediaPresence](./api-1645936-anonymous/kmessagedeterminingmediapresence.md)
+- [kMessageFoundMedia](./api-1645936-anonymous/kmessagefoundmedia.md)
+- [kMessageMediaTypeDetermined](./api-1645936-anonymous/kmessagemediatypedetermined.md)
 
 
 ---

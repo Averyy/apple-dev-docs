@@ -1,7 +1,8 @@
 # viewWillAppear()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after the view controller’s view has been loaded into memory is about to be added to the view hierarchy in the window.
 
@@ -12,6 +13,10 @@ Called after the view controller’s view has been loaded into memory is about t
 
 ```swift
 func viewWillAppear()
+```
+
+```objc
+- (void) viewWillAppear;
 ```
 
 #### Discussion
@@ -27,17 +32,18 @@ The default implementation of this method does nothing.
 
 ## See Also
 
-- [func viewDidLoad()](nsviewcontroller/viewdidload.md)
+### Responding to View Events
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Called after the view controller’s view has been loaded into memory.
-- [func loadViewIfNeeded()](nsviewcontroller/loadviewifneeded.md)
-- [var isViewLoaded: Bool](nsviewcontroller/isviewloaded.md)
+- [func loadViewIfNeeded()](./loadviewifneeded%28%29.md)
+- [var isViewLoaded: Bool](./isviewloaded.md)
   A Boolean value indicating whether the view controller’s view is loaded into memory.
-- [var viewIfLoaded: NSView?](nsviewcontroller/viewifloaded.md)
-- [func viewDidAppear()](nsviewcontroller/viewdidappear.md)
+- [var viewIfLoaded: NSView?](./viewifloaded.md)
+- [func viewDidAppear()](./viewdidappear%28%29.md)
   Called when the view controller’s view is fully transitioned onto the screen.
-- [func viewWillDisappear()](nsviewcontroller/viewwilldisappear.md)
+- [func viewWillDisappear()](./viewwilldisappear%28%29.md)
   Called when the view controller’s view is about to be removed from the view hierarchy in the window.
-- [func viewDidDisappear()](nsviewcontroller/viewdiddisappear.md)
+- [func viewDidDisappear()](./viewdiddisappear%28%29.md)
   Called after the view controller’s view is removed from the view hierarchy in a window.
 
 

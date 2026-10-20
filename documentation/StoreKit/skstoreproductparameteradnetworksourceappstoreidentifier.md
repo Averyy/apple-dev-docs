@@ -1,7 +1,8 @@
 # SKStoreProductParameterAdNetworkSourceAppStoreIdentifier
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key that represents the App Store ID of the app that displays the ad.
 
@@ -17,21 +18,26 @@ The key that represents the App Store ID of the app that displays the ad.
 let SKStoreProductParameterAdNetworkSourceAppStoreIdentifier: String
 ```
 
+```c
+extern NSString * const SKStoreProductParameterAdNetworkSourceAppStoreIdentifier;
+```
+
 ## Mentions
 
-- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
-- [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
-- [Verifying an install-validation postback](verifying-an-install-validation-postback.md)
+- [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
+- [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md)
+- [Verifying an install-validation postback](./verifying-an-install-validation-postback.md)
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). Provide the App Store item identifier of the app that’s displaying the ad.
+The value for this key is an [`NSNumber`](../Foundation/nsnumber.md). Provide the App Store item identifier of the app that’s displaying the ad.
 
 During testing, if you’re using a development-signed build to display the ads and not an app from App Store, use `0` as the item identifier.
 
 ## See Also
 
-- [let SKStoreProductParameterAdNetworkVersion: String](skstoreproductparameteradnetworkversion.md)
+### Required keys for SKAdNetwork 2 and later
+- [let SKStoreProductParameterAdNetworkVersion: String](./skstoreproductparameteradnetworkversion.md)
   The key that represents the version of the ad network API.
 
 

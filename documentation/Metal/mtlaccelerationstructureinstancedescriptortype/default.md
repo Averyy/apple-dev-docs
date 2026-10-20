@@ -1,7 +1,8 @@
 # MTLAccelerationStructureInstanceDescriptorType.default
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option specifying that the instance uses the default characteristics.
 
@@ -19,19 +20,24 @@ An option specifying that the instance uses the default characteristics.
 case `default`
 ```
 
+```c
+MTLAccelerationStructureInstanceDescriptorTypeDefault
+```
+
 #### Discussion
 
-This instance type corresponds to the [`MTLAccelerationStructureInstanceDescriptor`](mtlaccelerationstructureinstancedescriptor.md)  structure memory layout.
+This instance type corresponds to the [`MTLAccelerationStructureInstanceDescriptor`](../mtlaccelerationstructureinstancedescriptor.md)  structure memory layout.
 
 ## See Also
 
-- [MTLAccelerationStructureInstanceDescriptorType.userID](mtlaccelerationstructureinstancedescriptortype/userid.md)
+### Specifying the instance descriptor type
+- [MTLAccelerationStructureInstanceDescriptorType.userID](./userid.md)
   An option specifying that the instance contains a user identifier.
-- [MTLAccelerationStructureInstanceDescriptorType.motion](mtlaccelerationstructureinstancedescriptortype/motion.md)
+- [MTLAccelerationStructureInstanceDescriptorType.motion](./motion.md)
   An option specifying that the instance contains motion data.
-- [MTLAccelerationStructureInstanceDescriptorType.indirect](mtlaccelerationstructureinstancedescriptortype/indirect.md)
+- [MTLAccelerationStructureInstanceDescriptorType.indirect](./indirect.md)
   An option that enables an instance descriptor memory layout the GPU can populate.
-- [MTLAccelerationStructureInstanceDescriptorType.indirectMotion](mtlaccelerationstructureinstancedescriptortype/indirectmotion.md)
+- [MTLAccelerationStructureInstanceDescriptorType.indirectMotion](./indirectmotion.md)
   An option specifying that the instance contains motion data, and enables using an instance descriptor memory layout that the GPU can populate.
 
 

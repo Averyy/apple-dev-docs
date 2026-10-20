@@ -1,12 +1,13 @@
 # setCellClass(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the class of the cell to be used by the matrices in the columns of the browser.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Sets the class of the cell to be used by the matrices in the columns of the brow
 func setCellClass(_ factoryId: AnyClass)
 ```
 
+```objc
+- (void) setCellClass:(Class) factoryId;
+```
+
 ## Parameters
 
-- `factoryId`: The class of `NSCell` used by the matrices in the columns of the browser. This method creates an instance of the class and sets [`cellPrototype`](nsbrowser/cellprototype.md).
+- `factoryId`: The class of `NSCell` used by the matrices in the columns of the browser. This method creates an instance of the class and sets [`cellPrototype`](./cellprototype.md).
 
 ## See Also
 
-- [class var cellClass: AnyClass](nsbrowser/cellclass.md)
+### Managing Component Types
+- [class var cellClass: AnyClass](./cellclass.md)
   Returns the `NSBrowserCell` class.
-- [var cellPrototype: Any!](nsbrowser/cellprototype.md)
+- [var cellPrototype: Any!](./cellprototype.md)
   The prototype `NSCell` for displaying items in the matrices in the columns of the browser.
 
 

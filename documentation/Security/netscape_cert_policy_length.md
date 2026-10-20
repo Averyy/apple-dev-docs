@@ -1,7 +1,8 @@
 # NETSCAPE_CERT_POLICY_LENGTH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var NETSCAPE_CERT_POLICY_LENGTH: Int32 { get }
+```
+
+```c
+#define NETSCAPE_CERT_POLICY_LENGTH
 ```
 
 

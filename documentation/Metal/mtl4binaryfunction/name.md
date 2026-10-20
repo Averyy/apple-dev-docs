@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Obtains the optional name of this binary function.
@@ -18,6 +19,10 @@ Obtains the optional name of this binary function.
 
 ```swift
 var name: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * name;
 ```
 
 

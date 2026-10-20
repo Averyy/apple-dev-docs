@@ -1,7 +1,8 @@
 # captureSession
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that notifies a delegate of particular events in the room-scanning life cycle.
 
@@ -19,11 +20,12 @@ An object that notifies a delegate of particular events in the room-scanning lif
 
 ## Mentions
 
-- [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
+- [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
 ## See Also
 
-- [var delegate: (any RoomCaptureViewDelegate)?](roomcaptureview/delegate.md)
+### Reacting to scan events
+- [var delegate: (any RoomCaptureViewDelegate)?](./delegate.md)
   An object that determines whether to post-process the results of a scan.
 
 

@@ -1,7 +1,8 @@
 # StatusAccountListMailIncomingAccountObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An incoming Mail account.
 
@@ -14,13 +15,15 @@ An incoming Mail account.
 
 ## Declaration
 
-```swift
+```
 object StatusAccountListMailIncomingAccountObject
 ```
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the device removed the account and the status item object only contains this key and the `identifier` key.
+
+  **Default**: `false`
 - `are-notes-enabled` (boolean): A Boolean value that indicates whether the Notes app displays notes for this account.
 - `declaration-identifier` (string): The identifier of the declaration that installed the account. Only present if a declaration installed the account.
 - `hostname` (string): The server host name for the account.

@@ -1,17 +1,18 @@
 # XCUIDevice.Button
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A physical button on an iOS device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -20,41 +21,46 @@ A physical button on an iOS device.
 enum Button
 ```
 
+```c
+enum XCUIDeviceButton : NSInteger;
+```
+
 ## Topics
 
 ### Device buttons
-- [XCUIDevice.Button.home](xcuidevice/button/home.md)
+- [XCUIDevice.Button.home](./button/home.md)
   The device’s home button.
-- [XCUIDevice.Button.volumeUp](xcuidevice/button/volumeup.md)
+- [XCUIDevice.Button.volumeUp](./button/volumeup.md)
   The device’s volume up button.
-- [XCUIDevice.Button.volumeDown](xcuidevice/button/volumedown.md)
+- [XCUIDevice.Button.volumeDown](./button/volumedown.md)
   The device’s volume down button.
-- [XCUIDevice.Button.action](xcuidevice/button/action.md)
+- [XCUIDevice.Button.action](./button/action.md)
   The device’s action button.
-- [XCUIDevice.Button.camera](xcuidevice/button/camera.md)
+- [XCUIDevice.Button.camera](./button/camera.md)
   The device’s camera button.
 ### Initializers
-- [init?(rawValue: Int)](xcuidevice/button/init(rawvalue:).md)
+- [init?(rawValue: Int)](./button/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func press(XCUIDevice.Button)](xcuidevice/press(_:).md)
+### Interacting with buttons and the Digital Crown
+- [func press(XCUIDevice.Button)](./press%28_%29.md)
   Simulates the user pressing a physical button.
-- [func hasHardwareButton(XCUIDevice.Button) -> Bool](xcuidevice/hashardwarebutton(_:).md)
+- [func hasHardwareButton(XCUIDevice.Button) -> Bool](./hashardwarebutton%28_%29.md)
   Determines whether the device supports the button type you provide.
-- [func rotateDigitalCrown(delta: CGFloat)](xcuidevice/rotatedigitalcrown(delta:).md)
+- [func rotateDigitalCrown(delta: CGFloat)](./rotatedigitalcrown%28delta%29.md)
   Simulates the user rotating the Digital Crown on an Apple Watch by the delta amount.
-- [func rotateDigitalCrown(delta: CGFloat, velocity: XCUIGestureVelocity)](xcuidevice/rotatedigitalcrown(delta:velocity:).md)
+- [func rotateDigitalCrown(delta: CGFloat, velocity: XCUIGestureVelocity)](./rotatedigitalcrown%28delta,velocity%29.md)
   Simulates the user rotating the Digital Crown on an Apple Watch by the delta amount and speed you provide.
 
 

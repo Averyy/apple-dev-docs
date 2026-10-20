@@ -1,7 +1,8 @@
 # UITraitNavigationTitleAlignment
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.2+
@@ -19,11 +20,12 @@ struct UITraitNavigationTitleAlignment
 ## Relationships
 
 ### Conforms To
-- [UITraitDefinition](uitraitdefinition-64c15.md)
+- [UITraitDefinition](./uitraitdefinition-64c15.md)
 
 ## See Also
 
-- [struct UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
+### System traits
+- [struct UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-swift.struct.md)
 
 
 ---

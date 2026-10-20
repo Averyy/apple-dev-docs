@@ -1,7 +1,8 @@
 # songs
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier of the relationship property that returns the associated songs for the music video.
 
@@ -19,6 +20,8 @@ An identifier of the relationship property that returns the associated songs for
 ```swift
 static let songs: MusicRelationshipProperty<MusicVideo, Song>
 ```
+
+Available when `Root` is `MusicVideo`.
 
 
 ---

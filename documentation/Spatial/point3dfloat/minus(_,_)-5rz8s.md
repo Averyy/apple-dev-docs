@@ -1,7 +1,8 @@
 # -(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a point that’s the element-wise difference of a point’s `x`, `y`, and `z` and a size’s `width`, `height`, and `depth`.
 

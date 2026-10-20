@@ -1,7 +1,8 @@
 # displayName(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string suitable for display using the specified locale.
 
@@ -20,6 +21,10 @@ Returns a string suitable for display using the specified locale.
 func displayName(with locale: Locale) -> String
 ```
 
+```objc
+- (NSString *) displayNameWithLocale:(NSLocale *) locale;
+```
+
 #### Return Value
 
 A string containing the localized display name.
@@ -34,11 +39,12 @@ The string takes into account this option’s common metadata, media characteris
 
 ## See Also
 
-- [var displayName: String](avmediaselectionoption/displayname.md)
+### Getting the language and locale settings
+- [var displayName: String](./displayname.md)
   A string suitable for display using the current system locale.
-- [var locale: Locale?](avmediaselectionoption/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale for which the media option was authored.
-- [var extendedLanguageTag: String?](avmediaselectionoption/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The IETF BCP 47 language tag associated with the option
 
 

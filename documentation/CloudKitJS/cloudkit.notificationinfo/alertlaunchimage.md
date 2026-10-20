@@ -1,7 +1,8 @@
 # alertLaunchImage
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filename of an image file in the app bundle used as a launch image.
 
@@ -10,7 +11,7 @@ The filename of an image file in the app bundle used as a launch image.
 
 ## Declaration
 
-```swift
+```
 attribute String alertLaunchImage;
 ```
 

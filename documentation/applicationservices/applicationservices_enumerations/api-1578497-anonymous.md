@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kICMapBinaryBit: Int](kicmapbinarybit.md)
-- [var kICMapDataForkBit: Int](kicmapdataforkbit.md)
-- [var kICMapNotIncomingBit: Int](kicmapnotincomingbit.md)
-- [var kICMapNotOutgoingBit: Int](kicmapnotoutgoingbit.md)
-- [var kICMapPostBit: Int](kicmappostbit.md)
-- [var kICMapResourceForkBit: Int](kicmapresourceforkbit.md)
+- [var kICMapBinaryBit: Int](../kicmapbinarybit.md)
+- [var kICMapDataForkBit: Int](../kicmapdataforkbit.md)
+- [var kICMapNotIncomingBit: Int](../kicmapnotincomingbit.md)
+- [var kICMapNotOutgoingBit: Int](../kicmapnotoutgoingbit.md)
+- [var kICMapPostBit: Int](../kicmappostbit.md)
+- [var kICMapResourceForkBit: Int](../kicmapresourceforkbit.md)
 
 
 ---

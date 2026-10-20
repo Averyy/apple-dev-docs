@@ -1,7 +1,8 @@
 # evaluate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the receiver to evaluate its position.
 
@@ -15,9 +16,13 @@ Causes the receiver to evaluate its position.
 func evaluate()
 ```
 
+```objc
+- (void) evaluate;
+```
+
 #### Discussion
 
-Calling [`insertionContainer`](nspositionalspecifier/insertioncontainer.md), [`insertionKey`](nspositionalspecifier/insertionkey.md), [`insertionIndex`](nspositionalspecifier/insertionindex.md), or [`insertionReplaces`](nspositionalspecifier/insertionreplaces.md) also causes the receiver to be evaluated, if it hasn’t already been evaluated.
+Calling [`insertionContainer`](./insertioncontainer.md), [`insertionKey`](./insertionkey.md), [`insertionIndex`](./insertionindex.md), or [`insertionReplaces`](./insertionreplaces.md) also causes the receiver to be evaluated, if it hasn’t already been evaluated.
 
 
 ---

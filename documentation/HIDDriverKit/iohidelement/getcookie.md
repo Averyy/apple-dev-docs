@@ -1,15 +1,16 @@
 # getCookie
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOHIDElementCookie getCookie();
 ```
 
@@ -19,7 +20,8 @@ Returns the element cookie. The cookie is a unique identifier of the element.
 
 ## See Also
 
-- [IOHIDElementCookie](iohidelementcookie.md)
+### Identifying the Element
+- [IOHIDElementCookie](../iohidelementcookie.md)
   A type that an element uses to distinguish itself from other elements.
 
 

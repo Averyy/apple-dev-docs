@@ -1,7 +1,8 @@
 # textureCoordinates1
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,12 +20,13 @@ static let textureCoordinates1: MeshBuffers.Identifier
 
 ## See Also
 
-- [static let textureCoordinates2: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates2.md)
-- [static let textureCoordinates3: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates3.md)
-- [static let textureCoordinates4: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates4.md)
-- [static let textureCoordinates5: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates5.md)
-- [static let textureCoordinates6: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates6.md)
-- [static let textureCoordinates7: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates7.md)
+### Accessing texture coordinates
+- [static let textureCoordinates2: MeshBuffers.Identifier](./texturecoordinates2.md)
+- [static let textureCoordinates3: MeshBuffers.Identifier](./texturecoordinates3.md)
+- [static let textureCoordinates4: MeshBuffers.Identifier](./texturecoordinates4.md)
+- [static let textureCoordinates5: MeshBuffers.Identifier](./texturecoordinates5.md)
+- [static let textureCoordinates6: MeshBuffers.Identifier](./texturecoordinates6.md)
+- [static let textureCoordinates7: MeshBuffers.Identifier](./texturecoordinates7.md)
 
 
 ---

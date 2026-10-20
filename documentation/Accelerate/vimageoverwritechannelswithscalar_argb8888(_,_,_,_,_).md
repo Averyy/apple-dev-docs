@@ -1,7 +1,8 @@
 # vImageOverwriteChannelsWithScalar_ARGB8888(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Overwrites the selected channels of an 8-bit-per-channel, 4-channel interleaved buffer with the specified scalar value.
 
@@ -20,9 +21,13 @@ Overwrites the selected channels of an 8-bit-per-channel, 4-channel interleaved 
 func vImageOverwriteChannelsWithScalar_ARGB8888(_ scalar: Pixel_8, _ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ copyMask: UInt8, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageOverwriteChannelsWithScalar_ARGB8888(Pixel_8 scalar, const vImage_Buffer *src, const vImage_Buffer *dest, uint8_t copyMask, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -82,23 +87,24 @@ printf("[%d, %d, %d, %d, %d, %d, %d, %d]\n",
 
 - `scalar`: The scalar value that provides the new channel values.
 - `src`: The source vImage buffer that provides the original pixel values.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `copyMask`: A bitmask that specifies the channel or channels that the function overwrites with the scalar value. The value `0x8` represents channel `0`, the value `0x4` represents channel `1`, the value `0x2` represents channel `2`, and the value `0x1` represents channel `3`.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageOverwriteChannelsWithScalar_Planar8(Pixel_8, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageoverwritechannelswithscalar_planar8(_:_:_:).md)
+### Overwriting with scalar values
+- [func vImageOverwriteChannelsWithScalar_Planar8(Pixel_8, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageoverwritechannelswithscalar_planar8%28_,_,_%29.md)
   Overwrites an 8-bit planar buffer with the specified scalar value in place.
-- [func vImageOverwriteChannelsWithScalar_Planar16U(Pixel_16U, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageoverwritechannelswithscalar_planar16u(_:_:_:).md)
+- [func vImageOverwriteChannelsWithScalar_Planar16U(Pixel_16U, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageoverwritechannelswithscalar_planar16u%28_,_,_%29.md)
   Overwrites an unsigned 16-bit planar buffer with the specified scalar value in place.
-- [func vImageOverwriteChannelsWithScalar_Planar16S(Pixel_16S, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageoverwritechannelswithscalar_planar16s(_:_:_:).md)
+- [func vImageOverwriteChannelsWithScalar_Planar16S(Pixel_16S, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageoverwritechannelswithscalar_planar16s%28_,_,_%29.md)
   Overwrites a signed 16-bit planar buffer with the specified scalar value in place.
-- [func vImageOverwriteChannelsWithScalar_Planar16F(Pixel_16F, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageoverwritechannelswithscalar_planar16f(_:_:_:).md)
+- [func vImageOverwriteChannelsWithScalar_Planar16F(Pixel_16F, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageoverwritechannelswithscalar_planar16f%28_,_,_%29.md)
   Overwrites a floating-point 16-bit planar buffer with the specified scalar value in place.
-- [func vImageOverwriteChannelsWithScalar_PlanarF(Pixel_F, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageoverwritechannelswithscalar_planarf(_:_:_:).md)
+- [func vImageOverwriteChannelsWithScalar_PlanarF(Pixel_F, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageoverwritechannelswithscalar_planarf%28_,_,_%29.md)
   Overwrites a floating-point 32-bit planar buffer with the specified scalar value in place.
-- [func vImageOverwriteChannelsWithScalar_ARGBFFFF(Pixel_F, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UInt8, vImage_Flags) -> vImage_Error](vimageoverwritechannelswithscalar_argbffff(_:_:_:_:_:).md)
+- [func vImageOverwriteChannelsWithScalar_ARGBFFFF(Pixel_F, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UInt8, vImage_Flags) -> vImage_Error](./vimageoverwritechannelswithscalar_argbffff%28_,_,_,_,_%29.md)
   Overwrites the selected channels of a 32-bit-per-channel, 4-channel interleaved buffer with the specified scalar value.
 
 

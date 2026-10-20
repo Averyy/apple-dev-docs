@@ -1,7 +1,8 @@
 # color
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of a device’s light.
 
@@ -20,9 +21,14 @@ The color of a device’s light.
 var color: GCColor { get set }
 ```
 
+```objc
+@property (nonatomic, copy) GCColor * color;
+```
+
 ## See Also
 
-- [class GCColor](gccolor.md)
+### Getting the light’s color
+- [class GCColor](../gccolor.md)
   The color of a device light.
 
 

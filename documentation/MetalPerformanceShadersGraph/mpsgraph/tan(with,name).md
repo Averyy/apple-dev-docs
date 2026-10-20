@@ -1,7 +1,8 @@
 # tan(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the tangent operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the tangent operation to the input tensor elements.
 
 ```swift
 func tan(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) tanWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

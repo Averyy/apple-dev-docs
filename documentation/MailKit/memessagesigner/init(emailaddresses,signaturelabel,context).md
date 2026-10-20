@@ -1,7 +1,8 @@
 # init(emailAddresses:signatureLabel:context:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new message signer object that contains the email addresses of the signers, a label, and context data.
 
@@ -14,6 +15,10 @@ Creates a new message signer object that contains the email addresses of the sig
 init(emailAddresses: [MEEmailAddress], signatureLabel label: String, context: Data?)
 ```
 
+```objc
+- (instancetype) initWithEmailAddresses:(NSArray<MEEmailAddress *> *) emailAddresses signatureLabel:(NSString *) label context:(NSData *) context;
+```
+
 ## Parameters
 
 - `emailAddresses`: An array of email addresses associated with the signature.
@@ -22,11 +27,12 @@ init(emailAddresses: [MEEmailAddress], signatureLabel label: String, context: Da
 
 ## See Also
 
-- [var emailAddresses: [MEEmailAddress]](memessagesigner/emailaddresses.md)
+### Describing Message Signers
+- [var emailAddresses: [MEEmailAddress]](./emailaddresses.md)
   An array of email addresses associated with the signature.
-- [var label: String](memessagesigner/label.md)
+- [var label: String](./label.md)
   A string that the message’s headers use to display the message signer.
-- [var context: Data](memessagesigner/context.md)
+- [var context: Data](./context.md)
   Data related to the message signature, such as the signing certificate.
 
 

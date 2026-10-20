@@ -1,12 +1,13 @@
 # webView(_:validate:defaultValidation:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the specified user interface item is valid.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,23 +15,28 @@ Returns a Boolean value that indicates whether the specified user interface item
 optional func webView(_ webView: WebView!, validate item: (any NSValidatedUserInterfaceItem)!, defaultValidation: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) webView:(WebView *) webView validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item defaultValidation:(BOOL) defaultValidation;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the specified user interface item is valid; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-See [`NSUserInterfaceValidations`](https://developer.apple.com/documentation/appkit/nsuserinterfacevalidations) and [`NSValidatedUserInterfaceItem`](https://developer.apple.com/documentation/appkit/nsvalidateduserinterfaceitem) for more information about user interface validation. If you do not implement this method, the value of `defaultValidation` is used.
+See [`NSUserInterfaceValidations`](../../AppKit/nsuserinterfacevalidations.md) and [`NSValidatedUserInterfaceItem`](../../AppKit/nsvalidateduserinterfaceitem.md) for more information about user interface validation. If you do not implement this method, the value of `defaultValidation` is used.
 
 ## Parameters
 
 - `webView`: The web view that sent the message.
 - `item`: The user interface item being validated.
-- `defaultValidation`: [`true`](https://developer.apple.com/documentation/swift/true) if the web view believes the user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `defaultValidation`: [`true`](../../Swift/true.md) if the web view believes the user interface item is valid; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func webView(WebView!, shouldPerformAction: Selector!, fromSender: Any!) -> Bool](webuidelegate/webview(_:shouldperformaction:fromsender:).md)
+### Controlling Other Behaviors
+- [func webView(WebView!, shouldPerformAction: Selector!, fromSender: Any!) -> Bool](./webview%28_,shouldperformaction,fromsender%29.md)
   Returns a Boolean value that indicates whether the action sent by the specified object should be performed.
 
 

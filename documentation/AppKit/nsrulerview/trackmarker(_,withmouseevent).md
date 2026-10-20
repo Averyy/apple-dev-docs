@@ -1,12 +1,13 @@
 # trackMarker(_:withMouseEvent:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tracks the mouse to add `aMarker` based on the initial mouse-down or mouse-dragged event `theEvent`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ Tracks the mouse to add `aMarker` based on the initial mouse-down or mouse-dragg
 func trackMarker(_ marker: NSRulerMarker, withMouseEvent event: NSEvent) -> Bool
 ```
 
+```objc
+- (BOOL) trackMarker:(NSRulerMarker *) marker withMouseEvent:(NSEvent *) event;
+```
+
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the receiver adds `aMarker`, [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t. This method works by sending [`trackMouse(with:adding:)`](nsrulermarker/trackmouse(with:adding:).md) to `aMarker` with `theEvent` and [`true`](https://developer.apple.com/documentation/swift/true) as arguments.
+Returns [`true`](../../Swift/true.md) if the receiver adds `aMarker`, [`false`](../../Swift/false.md) if it doesn’t. This method works by sending [`trackMouse(with:adding:)`](../nsrulermarker/trackmouse%28with,adding%29.md) to `aMarker` with `theEvent` and [`true`](../../Swift/true.md) as arguments.
 
-An application typically invokes this method in one of two cases. In the simpler case, the client view can implement [`NSRulerView`](nsrulerview.md) to invoke this method when the user presses the mouse button while the cursor is in the NSRulerView’s ruler area. This technique is appropriate when it’s clear what kind of marker will be added by clicking the ruler area. The second, more general, case involves the application providing a palette of different kinds of markers that can be dragged onto the ruler, from the ruler’s accessory view or from some other place. With this technique the palette tracks the cursor until it enters the ruler view, at which time it hands over control to the ruler view by invoking [`trackMarker(_:withMouseEvent:)`](nsrulerview/trackmarker(_:withmouseevent:).md).
+An application typically invokes this method in one of two cases. In the simpler case, the client view can implement [`NSRulerView`](../nsrulerview.md) to invoke this method when the user presses the mouse button while the cursor is in the NSRulerView’s ruler area. This technique is appropriate when it’s clear what kind of marker will be added by clicking the ruler area. The second, more general, case involves the application providing a palette of different kinds of markers that can be dragged onto the ruler, from the ruler’s accessory view or from some other place. With this technique the palette tracks the cursor until it enters the ruler view, at which time it hands over control to the ruler view by invoking [`trackMarker(_:withMouseEvent:)`](./trackmarker%28_,withmouseevent%29.md).
 
 ## See Also
 
-- [var markers: [NSRulerMarker]?](nsrulerview/markers.md)
+### Adding and removing markers
+- [var markers: [NSRulerMarker]?](./markers.md)
   The receiver’s ruler markers to `markers`, removing any existing ruler markers and not consulting with the client view about the new markers.
-- [func addMarker(NSRulerMarker)](nsrulerview/addmarker(_:).md)
+- [func addMarker(NSRulerMarker)](./addmarker%28_%29.md)
   Adds `aMarker` to the receiver, without consulting the client view for approval.
-- [func removeMarker(NSRulerMarker)](nsrulerview/removemarker(_:).md)
+- [func removeMarker(NSRulerMarker)](./removemarker%28_%29.md)
   Removes `aMarker` from the receiver, without consulting the client view for approval.
 
 

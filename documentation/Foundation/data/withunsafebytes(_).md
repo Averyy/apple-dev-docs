@@ -1,7 +1,8 @@
 # withUnsafeBytes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accesses the raw bytes in the data’s buffer.
 
@@ -13,7 +14,9 @@ Accesses the raw bytes in the data’s buffer.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 5.0
+
+> **Deprecated**: use `withUnsafeBytes<R>(_: (UnsafeRawBufferPointer) throws -> R) rethrows -> R` instead
 
 ## Declaration
 
@@ -27,13 +30,14 @@ func withUnsafeBytes<ResultType, ContentType>(_ body: (UnsafePointer<ContentType
 
 ## See Also
 
-- [func withUnsafeMutableBytes<ResultType, ContentType>((UnsafeMutablePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](data/withunsafemutablebytes(_:)-7ac1g.md)
+### Accessing Underlying Memory
+- [func withUnsafeMutableBytes<ResultType, ContentType>((UnsafeMutablePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](./withunsafemutablebytes%28_%29-7ac1g.md)
   Mutates the raw bytes in the data’s buffer.
-- [func copyBytes(to: UnsafeMutablePointer<UInt8>, count: Int)](data/copybytes(to:count:).md)
+- [func copyBytes(to: UnsafeMutablePointer<UInt8>, count: Int)](./copybytes%28to,count%29.md)
   Copies the contents of the data to memory.
-- [func copyBytes(to: UnsafeMutablePointer<UInt8>, from: Range<Data.Index>)](data/copybytes(to:from:)-8qk4r.md)
+- [func copyBytes(to: UnsafeMutablePointer<UInt8>, from: Range<Data.Index>)](./copybytes%28to,from%29-8qk4r.md)
   Copies a subset of the contents of the data to memory.
-- [func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>, from: Range<Data.Index>?) -> Int](data/copybytes(to:from:)-4o6zj.md)
+- [func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>, from: Range<Data.Index>?) -> Int](./copybytes%28to,from%29-4o6zj.md)
   Copies the bytes in a range from the data into a buffer.
 
 

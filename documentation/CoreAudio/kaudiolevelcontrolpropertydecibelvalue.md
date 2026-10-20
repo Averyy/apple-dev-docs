@@ -1,11 +1,12 @@
 # kAudioLevelControlPropertyDecibelValue
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,12 +14,17 @@
 var kAudioLevelControlPropertyDecibelValue: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioLevelControlPropertyDecibelValue
+```
+
 ## See Also
 
-- [var kAudioLevelControlPropertyConvertDecibelsToScalar: AudioObjectPropertySelector](kaudiolevelcontrolpropertyconvertdecibelstoscalar.md)
-- [var kAudioLevelControlPropertyConvertScalarToDecibels: AudioObjectPropertySelector](kaudiolevelcontrolpropertyconvertscalartodecibels.md)
-- [var kAudioLevelControlPropertyDecibelRange: AudioObjectPropertySelector](kaudiolevelcontrolpropertydecibelrange.md)
-- [var kAudioLevelControlPropertyScalarValue: AudioObjectPropertySelector](kaudiolevelcontrolpropertyscalarvalue.md)
+### Constants
+- [var kAudioLevelControlPropertyConvertDecibelsToScalar: AudioObjectPropertySelector](./kaudiolevelcontrolpropertyconvertdecibelstoscalar.md)
+- [var kAudioLevelControlPropertyConvertScalarToDecibels: AudioObjectPropertySelector](./kaudiolevelcontrolpropertyconvertscalartodecibels.md)
+- [var kAudioLevelControlPropertyDecibelRange: AudioObjectPropertySelector](./kaudiolevelcontrolpropertydecibelrange.md)
+- [var kAudioLevelControlPropertyScalarValue: AudioObjectPropertySelector](./kaudiolevelcontrolpropertyscalarvalue.md)
 
 
 ---

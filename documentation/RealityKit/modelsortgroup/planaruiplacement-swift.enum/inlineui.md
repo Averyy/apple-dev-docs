@@ -1,7 +1,8 @@
 # ModelSortGroup.PlanarUIPlacement.inlineUI
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Instructs the renderer to draw a model’s mesh along with a SwiftUI layer that’s coincident with the mesh.
 

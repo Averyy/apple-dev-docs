@@ -1,12 +1,13 @@
 # color
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected color for the color well.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,23 @@ The currently selected color for the color well.
 var color: NSColor { get set }
 ```
 
+```objc
+@property (copy) NSColor * color;
+```
+
 #### Discussion
 
 Use this property to get the currently selected color, or to set the current color programmatically.
 
 ## See Also
 
-- [var color: NSColor](nscolorpanel/color.md)
+### Related Documentation
+- [var color: NSColor](../nscolorpanel/color.md)
   The color of the receiver.
-- [func takeColorFrom(Any?)](nscolorwell/takecolorfrom(_:).md)
+### Managing the selected color
+- [func takeColorFrom(Any?)](./takecolorfrom%28_%29.md)
   Changes the currently selected color to the color of the specified object.
-- [var supportsAlpha: Bool](nscolorwell/supportsalpha.md)
+- [var supportsAlpha: Bool](./supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
 
 

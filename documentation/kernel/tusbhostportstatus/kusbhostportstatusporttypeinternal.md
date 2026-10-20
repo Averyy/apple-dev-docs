@@ -1,7 +1,8 @@
 # kUSBHostPortStatusPortTypeInternal
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The internal port type.
 
@@ -10,7 +11,7 @@ The internal port type.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusPortTypeInternal = kIOUSBHostPortStatusPortTypeInternal
 ```
 

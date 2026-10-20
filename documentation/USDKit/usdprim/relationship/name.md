@@ -1,7 +1,8 @@
 # name
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this relationship.
 
@@ -21,7 +22,7 @@ var name: USDToken { get }
 
 #### Discussion
 
-A relationship’s name is the last component of its [`path`](usdprim/relationship/path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
+A relationship’s name is the last component of its [`path`](./path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 
 
 ---

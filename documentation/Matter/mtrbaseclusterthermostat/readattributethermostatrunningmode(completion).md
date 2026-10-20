@@ -1,7 +1,8 @@
 # readAttributeThermostatRunningMode(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeThermostatRunningMode(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeThermostatRunningMode() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeThermostatRunningModeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

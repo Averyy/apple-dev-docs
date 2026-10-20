@@ -1,7 +1,8 @@
 # label(extendPastBy:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Describes a tick that extends to its associated label, with the given additional length.
 

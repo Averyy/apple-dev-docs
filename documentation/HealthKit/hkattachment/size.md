@@ -1,7 +1,8 @@
 # size
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attachment’s size (in bytes).
 
@@ -19,19 +20,24 @@ The attachment’s size (in bytes).
 var size: Int { get }
 ```
 
+```objc
+@property (assign, readonly) NSInteger size;
+```
+
 ## See Also
 
-- [var name: String](hkattachment/name.md)
+### Accessing attachment data
+- [var name: String](./name.md)
   The name of the attached file.
-- [var identifier: UUID](hkattachment/identifier.md)
+- [var identifier: UUID](./identifier.md)
   The universally unique identifier for the attached file.
-- [var contentType: UTType](hkattachment/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The type of data stored in the attached file.
-- [var creationDate: Date](hkattachment/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The attachment’s creation date.
-- [var metadata: [String : Any]?](hkattachment/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   Additional data associated with the attachment in the HealthKit store.
-- [HKAttachment.AsyncBytes](hkattachment/asyncbytes.md)
+- [HKAttachment.AsyncBytes](./asyncbytes.md)
   An asynchronous sequence that returns the attached file as a series of bytes.
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An int64 value.
 
@@ -10,7 +11,7 @@ An int64 value.
 
 ## Declaration
 
-```swift
+```
 attribute Int64? value;
 ```
 

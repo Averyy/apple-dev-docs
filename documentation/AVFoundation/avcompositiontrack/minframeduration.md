@@ -1,7 +1,8 @@
 # minFrameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum duration of the track’s frames.
 
@@ -24,13 +25,14 @@ var minFrameDuration: CMTime { get }
 
 A track’s minimum frame duration is the reciprocal of its maximum frame rate. For example, a video track with a maximum frame rate of 30 frames per second has a minimum frame duration of 1/30, or 0.033 seconds.
 
-The value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) if the track can’t calculate its minimum frame duration, or if it’s unknown.
+The value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md) if the track can’t calculate its minimum frame duration, or if it’s unknown.
 
 ## See Also
 
-- [var nominalFrameRate: Float](avcompositiontrack/nominalframerate.md)
+### Accessing frame-based characteristics
+- [var nominalFrameRate: Float](./nominalframerate.md)
   The frame rate of the track, in frames per second.
-- [var requiresFrameReordering: Bool](avcompositiontrack/requiresframereordering.md)
+- [var requiresFrameReordering: Bool](./requiresframereordering.md)
   A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
 
 

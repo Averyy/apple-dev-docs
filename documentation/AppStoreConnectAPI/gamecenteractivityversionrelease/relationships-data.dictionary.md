@@ -1,7 +1,8 @@
 # GameCenterActivityVersionRelease.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityVersionRelease.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityVersionRelease.Relationships.Version](gamecenteractivityversionrelease/relationships-data.dictionary/version-data.dictionary.md)
+- [object GameCenterActivityVersionRelease.Relationships.Version](./relationships-data.dictionary/version-data.dictionary.md)
 
 ## Properties
 

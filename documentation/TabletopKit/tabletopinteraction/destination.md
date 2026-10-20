@@ -1,7 +1,8 @@
 # TabletopInteraction.Destination
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the destination position and orientation of equipment in an interaction.
 
@@ -21,26 +22,27 @@ The position and orientation can be relative to either a piece of equipment or t
 ## Topics
 
 ### Getting the destination equipment
-- [let equipmentID: EquipmentIdentifier](tabletopinteraction/destination/equipmentid.md)
+- [let equipmentID: EquipmentIdentifier](./destination/equipmentid.md)
   The interaction’s destination equipment.
 ### Getting the interaction pose
-- [let pose: TableVisualState.Pose2D](tabletopinteraction/destination/pose.md)
+- [let pose: TableVisualState.Pose2D](./destination/pose.md)
   The 2D position and orientation of the interaction.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
+### Managing the interaction destination
+- [func setConfiguration(TabletopInteraction.Configuration)](./setconfiguration%28_%29.md)
   Sets the configuration of this interaction.
-- [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
-- [TabletopInteraction.AllowedDestinations](tabletopinteraction/alloweddestinations.md)
+- [TabletopInteraction.Configuration](./configuration.md)
+- [TabletopInteraction.AllowedDestinations](./alloweddestinations.md)
   The possible destinations of equipment in an interaction.
-- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
+- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](./setalloweddestinations%28_%29.md)
   Sets which equipment the interaction can target.
 
 

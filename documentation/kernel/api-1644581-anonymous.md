@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kActivateConnection](1644581-anonymous/kactivateconnection.md)
-- [kDeactivateConnection](1644581-anonymous/kdeactivateconnection.md)
-- [kGetConnectionCount](1644581-anonymous/kgetconnectioncount.md)
+- [kActivateConnection](./api-1644581-anonymous/kactivateconnection.md)
+- [kDeactivateConnection](./api-1644581-anonymous/kdeactivateconnection.md)
+- [kGetConnectionCount](./api-1644581-anonymous/kgetconnectioncount.md)
 
 
 ---

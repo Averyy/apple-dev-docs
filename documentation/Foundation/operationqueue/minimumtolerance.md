@@ -1,7 +1,8 @@
 # minimumTolerance
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum tolerance the dispatch queue scheduler allows.
 
@@ -22,17 +23,18 @@ var minimumTolerance: OperationQueue.SchedulerTimeType.Stride { get }
 
 ## See Also
 
-- [func schedule(after: OperationQueue.SchedulerTimeType, tolerance: OperationQueue.SchedulerTimeType.Stride, options: OperationQueue.SchedulerOptions?, () -> Void)](operationqueue/schedule(after:tolerance:options:_:).md)
+### Scheduling Operations
+- [func schedule(after: OperationQueue.SchedulerTimeType, tolerance: OperationQueue.SchedulerTimeType.Stride, options: OperationQueue.SchedulerOptions?, () -> Void)](./schedule%28after,tolerance,options,_%29.md)
   Performs the action at some time after the specified date, optionally taking into account tolerance if possible.
-- [func schedule(after: OperationQueue.SchedulerTimeType, interval: OperationQueue.SchedulerTimeType.Stride, tolerance: OperationQueue.SchedulerTimeType.Stride, options: OperationQueue.SchedulerOptions?, () -> Void) -> any Cancellable](operationqueue/schedule(after:interval:tolerance:options:_:).md)
+- [func schedule(after: OperationQueue.SchedulerTimeType, interval: OperationQueue.SchedulerTimeType.Stride, tolerance: OperationQueue.SchedulerTimeType.Stride, options: OperationQueue.SchedulerOptions?, () -> Void) -> any Cancellable](./schedule%28after,interval,tolerance,options,_%29.md)
   Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible.
-- [func schedule(options: OperationQueue.SchedulerOptions?, () -> Void)](operationqueue/schedule(options:_:).md)
+- [func schedule(options: OperationQueue.SchedulerOptions?, () -> Void)](./schedule%28options,_%29.md)
   Performs the action at the next possible opportunity.
-- [var now: OperationQueue.SchedulerTimeType](operationqueue/now.md)
+- [var now: OperationQueue.SchedulerTimeType](./now.md)
   The operation queue’s definition of the current moment in time.
-- [OperationQueue.SchedulerTimeType](operationqueue/schedulertimetype.md)
+- [OperationQueue.SchedulerTimeType](./schedulertimetype.md)
   The scheduler time type the operation queue uses.
-- [OperationQueue.SchedulerOptions](operationqueue/scheduleroptions.md)
+- [OperationQueue.SchedulerOptions](./scheduleroptions.md)
   A type that defines options the operation queue accepts.
 
 

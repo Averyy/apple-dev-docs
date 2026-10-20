@@ -1,7 +1,8 @@
 # NotificationQueue.PostingStyle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The constants that specify when notifications are posted.
 
@@ -20,35 +21,40 @@ The constants that specify when notifications are posted.
 enum PostingStyle
 ```
 
+```c
+enum NSPostingStyle : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by the [`enqueue(_:postingStyle:)`](notificationqueue/enqueue(_:postingstyle:).md) and [`enqueue(_:postingStyle:coalesceMask:forModes:)`](notificationqueue/enqueue(_:postingstyle:coalescemask:formodes:).md) methods.
+These constants are used by the [`enqueue(_:postingStyle:)`](./enqueue%28_,postingstyle%29.md) and [`enqueue(_:postingStyle:coalesceMask:forModes:)`](./enqueue%28_,postingstyle,coalescemask,formodes%29.md) methods.
 
 ## Topics
 
 ### Constants
-- [NotificationQueue.PostingStyle.asap](notificationqueue/postingstyle/asap.md)
+- [NotificationQueue.PostingStyle.asap](./postingstyle/asap.md)
   The notification is posted at the end of the current notification callout or timer.
-- [NotificationQueue.PostingStyle.whenIdle](notificationqueue/postingstyle/whenidle.md)
+- [NotificationQueue.PostingStyle.whenIdle](./postingstyle/whenidle.md)
   The notification is posted when the run loop is idle.
-- [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
+- [NotificationQueue.PostingStyle.now](./postingstyle/now.md)
   The notification is posted immediately after coalescing.
 ### Initializers
-- [init?(rawValue: UInt)](notificationqueue/postingstyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./postingstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing.md)
+### Constants
+- [NotificationQueue.NotificationCoalescing](./notificationcoalescing.md)
   The constants that specify how notifications are coalesced.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: XPC  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get or set a value in this array as an XPCArray.
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 
 # mlx.nn.LSTM
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.LSTM.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.LSTM
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.LSTM
-
 **class LSTM(*input_size: int*, *hidden_size: int*, *bias: bool = True*)**
 : An LSTM recurrent layer.
 The input has shape `NLD` or `LD` where:
@@ -63,5 +36,3 @@ Parameters:
 **bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to use biases or not. Default: `True`.
 
 Methods
-
-** Contents

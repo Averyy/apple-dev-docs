@@ -1,7 +1,8 @@
 # isHostTimeValid
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the host time value is valid.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the host time value is valid.
 var isHostTimeValid: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isHostTimeValid) BOOL hostTimeValid;
+```
+
 #### Discussion
 
-This property returns [`true`](https://developer.apple.com/documentation/swift/true) if the [`hostTime`](avaudiotime/hosttime.md) property is valid; otherwise, it returns [`false`](https://developer.apple.com/documentation/swift/false).
+This property returns [`true`](../../Swift/true.md) if the [`hostTime`](./hosttime.md) property is valid; otherwise, it returns [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var hostTime: UInt64](avaudiotime/hosttime.md)
+### Manipulating host time
+- [var hostTime: UInt64](./hosttime.md)
   The host time.
-- [class func hostTime(forSeconds: TimeInterval) -> UInt64](avaudiotime/hosttime(forseconds:).md)
+- [class func hostTime(forSeconds: TimeInterval) -> UInt64](./hosttime%28forseconds%29.md)
   Converts seconds to host time.
-- [class func seconds(forHostTime: UInt64) -> TimeInterval](avaudiotime/seconds(forhosttime:).md)
+- [class func seconds(forHostTime: UInt64) -> TimeInterval](./seconds%28forhosttime%29.md)
   Converts host time to seconds.
 
 

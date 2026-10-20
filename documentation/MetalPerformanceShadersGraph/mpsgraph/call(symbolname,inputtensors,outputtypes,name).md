@@ -1,7 +1,8 @@
 # call(symbolName:inputTensors:outputTypes:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an operation which invokes another executable.
 
@@ -19,9 +20,13 @@ Creates an operation which invokes another executable.
 func call(symbolName: String, inputTensors: [MPSGraphTensor], outputTypes: [MPSGraphType], name: String?) -> [MPSGraphTensor]
 ```
 
+```objc
+- (NSArray<MPSGraphTensor *> *) callSymbolName:(NSString *) symbolName inputTensors:(NSArray<MPSGraphTensor *> *) inputTensors outputTypes:(NSArray<MPSGraphType *> *) outputTypes name:(NSString *) name;
+```
+
 #### Return Value
 
-An array of valid [`MPSGraphTensor`](mpsgraphtensor.md) objects representing the return tensors of the invoked executable.
+An array of valid [`MPSGraphTensor`](../mpsgraphtensor.md) objects representing the return tensors of the invoked executable.
 
 ## Parameters
 

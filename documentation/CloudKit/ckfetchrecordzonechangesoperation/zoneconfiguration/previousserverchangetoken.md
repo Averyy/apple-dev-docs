@@ -1,7 +1,8 @@
 # previousServerChangeToken
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token that identifies the starting point for retrieving changes.
 
@@ -21,15 +22,20 @@ The token that identifies the starting point for retrieving changes.
 var previousServerChangeToken: CKServerChangeToken? { get set }
 ```
 
+```objc
+@property (copy, nullable) CKServerChangeToken * previousServerChangeToken;
+```
+
 #### Discussion
 
-Each fetch request returns a unique token in addition to any changes. CloudKit passes the token to your [`recordZoneFetchResultBlock`](ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md) handler. During a subsequent fetch request, providing the previous token causes the server to return only the changes since the previous fetch request. Tokens are opaque values that you can write to disk safely and reuse later.
+Each fetch request returns a unique token in addition to any changes. CloudKit passes the token to your [`recordZoneFetchResultBlock`](../recordzonefetchresultblock.md) handler. During a subsequent fetch request, providing the previous token causes the server to return only the changes since the previous fetch request. Tokens are opaque values that you can write to disk safely and reuse later.
 
 ## See Also
 
-- [var resultsLimit: Int](ckfetchrecordzonechangesoperation/zoneconfiguration/resultslimit.md)
+### Accessing a Zone Change Configuration
+- [var resultsLimit: Int](./resultslimit.md)
   The maximum number of records to fetch from the record zone.
-- [var desiredKeys: [CKRecord.FieldKey]?](ckfetchrecordzonechangesoperation/zoneconfiguration/desiredkeys.md)
+- [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys.md)
   The fields to fetch for the requested records.
 
 

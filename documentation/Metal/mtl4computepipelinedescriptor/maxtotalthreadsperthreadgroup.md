@@ -1,7 +1,8 @@
 # maxTotalThreadsPerThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum total number of threads that Metal can execute in a single threadgroup for the compute function.
 
@@ -17,6 +18,10 @@ The maximum total number of threads that Metal can execute in a single threadgro
 
 ```swift
 var maxTotalThreadsPerThreadgroup: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerThreadgroup;
 ```
 
 

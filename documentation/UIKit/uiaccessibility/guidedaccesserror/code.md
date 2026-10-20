@@ -1,7 +1,8 @@
 # UIAccessibility.GuidedAccessError.Code
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for Guided Access.
 
@@ -17,31 +18,36 @@ Error codes for Guided Access.
 enum Code
 ```
 
+```c
+enum UIGuidedAccessErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [UIAccessibility.GuidedAccessError.Code.permissionDenied](uiaccessibility/guidedaccesserror/code/permissiondenied.md)
+- [UIAccessibility.GuidedAccessError.Code.permissionDenied](./code/permissiondenied.md)
   An error that indicates the app isn’t authorized to perform the requested action.
-- [UIAccessibility.GuidedAccessError.Code.failed](uiaccessibility/guidedaccesserror/code/failed.md)
+- [UIAccessibility.GuidedAccessError.Code.failed](./code/failed.md)
   An error that indicates a failure for an unspecified reason.
 ### Initializers
-- [init?(rawValue: Int)](uiaccessibility/guidedaccesserror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func configureForGuidedAccess(features: UIGuidedAccessAccessibilityFeature, enabled: Bool, completionHandler: (Bool, (any Error)?) -> Void)](uiaccessibility/configureforguidedaccess(features:enabled:completionhandler:).md)
+### Guided Access
+- [static func configureForGuidedAccess(features: UIGuidedAccessAccessibilityFeature, enabled: Bool, completionHandler: (Bool, (any Error)?) -> Void)](../configureforguidedaccess%28features,enabled,completionhandler%29.md)
   Enables or disables the specified accessibility features while using Guided Access.
-- [struct UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature.md)
+- [struct UIGuidedAccessAccessibilityFeature](../../uiguidedaccessaccessibilityfeature.md)
   Constants that describe accessibility features for Guided Access.
 
 

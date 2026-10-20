@@ -1,7 +1,8 @@
 # ScmPullRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A pull request in a source code repository connected to Xcode Cloud, which can automatically trigger workflow builds.
 
@@ -10,16 +11,16 @@ A pull request in a source code repository connected to Xcode Cloud, which can a
 
 ## Declaration
 
-```swift
+```
 object ScmPullRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object ScmPullRequest.Attributes](scmpullrequest/attributes-data.dictionary.md)
+- [object ScmPullRequest.Attributes](./scmpullrequest/attributes-data.dictionary.md)
   The attributes that describe a Pull Requests resource.
-- [object ScmPullRequest.Relationships](scmpullrequest/relationships-data.dictionary.md)
+- [object ScmPullRequest.Relationships](./scmpullrequest/relationships-data.dictionary.md)
   The relationships of the Pull Requests resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,11 +31,14 @@ object ScmPullRequest
 - `relationships` (ScmPullRequest.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `scmPullRequests`
+
 ## See Also
 
-- [object ScmPullRequestResponse](scmpullrequestresponse.md)
+### Objects
+- [object ScmPullRequestResponse](./scmpullrequestresponse.md)
   The response body for endpoints that read a single SCM pull request linked to Xcode Cloud.
-- [object ScmPullRequestsResponse](scmpullrequestsresponse.md)
+- [object ScmPullRequestsResponse](./scmpullrequestsresponse.md)
   The response body for endpoints that list SCM pull requests linked to Xcode Cloud.
 
 

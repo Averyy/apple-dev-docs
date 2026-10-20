@@ -1,7 +1,8 @@
 # VSError.Code
 
 **Framework**: Video Subscriber Account  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes in the framework error domain.
 
@@ -9,7 +10,7 @@ Error codes in the framework error domain.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,51 +20,56 @@ Error codes in the framework error domain.
 enum Code
 ```
 
+```c
+enum VSErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [VSError.Code.accessNotGranted](vserror/code/accessnotgranted.md)
+- [VSError.Code.accessNotGranted](./code/accessnotgranted.md)
   The user hasn’t granted access to their subscription information.
-- [VSError.Code.invalidVerificationToken](vserror/code/invalidverificationtoken.md)
+- [VSError.Code.invalidVerificationToken](./code/invalidverificationtoken.md)
   The user’s subscription provider rejected the verification token that the app sent with the request.
-- [VSError.Code.providerRejected](vserror/code/providerrejected.md)
+- [VSError.Code.providerRejected](./code/providerrejected.md)
   The user’s subscription provider didn’t allow the request to proceed.
-- [VSError.Code.rejected](vserror/code/rejected.md)
+- [VSError.Code.rejected](./code/rejected.md)
   The system rejected the request.
-- [VSError.Code.serviceTemporarilyUnavailable](vserror/code/servicetemporarilyunavailable.md)
+- [VSError.Code.serviceTemporarilyUnavailable](./code/servicetemporarilyunavailable.md)
   The request failed due to a timeout or unreachable host, but a subsequent attempt might succeed.
-- [VSError.Code.unsupported](vserror/code/unsupported.md)
+- [VSError.Code.unsupported](./code/unsupported.md)
   The provider doesn’t support the feature the user requested in the device’s current region.
-- [VSError.Code.unsupportedProvider](vserror/code/unsupportedprovider.md)
+- [VSError.Code.unsupportedProvider](./code/unsupportedprovider.md)
   The system doesn’t support the user’s subscription provider.
-- [VSError.Code.userCancelled](vserror/code/usercancelled.md)
+- [VSError.Code.userCancelled](./code/usercancelled.md)
   The user canceled the request.
 ### Initializers
-- [init?(rawValue: Int)](vserror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let VSErrorDomain: String](vserrordomain.md)
+### Errors
+- [let VSErrorDomain: String](../vserrordomain.md)
   The domain for all errors in the framework.
-- [let VSErrorInfoKeySAMLResponse: String](vserrorinfokeysamlresponse.md)
+- [let VSErrorInfoKeySAMLResponse: String](../vserrorinfokeysamlresponse.md)
   The subscription provider’s SAML error response.
-- [let VSErrorInfoKeySAMLResponseStatus: String](vserrorinfokeysamlresponsestatus.md)
+- [let VSErrorInfoKeySAMLResponseStatus: String](../vserrorinfokeysamlresponsestatus.md)
   The subscription provider’s SAML error-response status code.
-- [let VSErrorInfoKeyAccountProviderResponse: String](vserrorinfokeyaccountproviderresponse.md)
+- [let VSErrorInfoKeyAccountProviderResponse: String](../vserrorinfokeyaccountproviderresponse.md)
   The account provider’s error-response object.
-- [let VSErrorInfoKeyUnsupportedProviderIdentifier: String](vserrorinfokeyunsupportedprovideridentifier.md)
+- [let VSErrorInfoKeyUnsupportedProviderIdentifier: String](../vserrorinfokeyunsupportedprovideridentifier.md)
   The identifier of the unsupported subscription provider.
-- [struct VSError](vserror.md)
+- [struct VSError](../vserror.md)
   Error information in the framework error domain.
 
 

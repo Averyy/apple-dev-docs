@@ -1,7 +1,8 @@
 # transform(using:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the specified transform to the contents of this drawing.
 
@@ -20,15 +21,16 @@ mutating func transform(using transform: CGAffineTransform)
 
 ## Parameters
 
-- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply when transforming the contents of this drawing.
+- `transform`: The [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) to apply when transforming the contents of this drawing.
 
 ## See Also
 
-- [func transformed(using: CGAffineTransform) -> PKDrawing](pkdrawing-swift.struct/transformed(using:).md)
+### Modifying the drawing
+- [func transformed(using: CGAffineTransform) -> PKDrawing](./transformed%28using%29.md)
   Applies the specified transform and returns a new drawing.
-- [func append(PKDrawing)](pkdrawing-swift.struct/append(_:).md)
+- [func append(PKDrawing)](./append%28_%29.md)
   Appends the contents of the specified drawing object to an existing drawing object that you provide.
-- [func appending(PKDrawing) -> PKDrawing](pkdrawing-swift.struct/appending(_:).md)
+- [func appending(PKDrawing) -> PKDrawing](./appending%28_%29.md)
   Returns a new drawing created by appending the current drawing with another drawing you provide.
 
 

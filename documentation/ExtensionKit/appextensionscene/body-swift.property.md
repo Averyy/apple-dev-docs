@@ -2,6 +2,7 @@
 
 **Framework**: ExtensionKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the scene’s interface.
@@ -24,11 +25,12 @@ The content and behavior of the scene’s interface.
 
 #### Discussion
 
-For the body of your scene, specify a [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) structure with the contents you want to display. You can also use that structure to configure an XPC connection for handling any interface-related data exchanges.
+For the body of your scene, specify a [`PrimitiveAppExtensionScene`](../primitiveappextensionscene.md) structure with the contents you want to display. You can also use that structure to configure an XPC connection for handling any interface-related data exchanges.
 
 ## See Also
 
-- [associatedtype Body : AppExtensionScene](appextensionscene/body-swift.associatedtype.md)
+### Configuring the app extension
+- [associatedtype Body : AppExtensionScene](./body-swift.associatedtype.md)
   The type for this scene’s body.
 
 

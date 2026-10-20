@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfacePlaybackState.normal
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the source is in a normal state.
 
@@ -14,6 +15,10 @@ Indicates the source is in a normal state.
 
 ```swift
 case normal
+```
+
+```c
+AVPlaybackUserInterfacePlaybackStateNormal
 ```
 
 

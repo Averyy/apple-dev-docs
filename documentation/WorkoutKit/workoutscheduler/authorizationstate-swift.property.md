@@ -1,7 +1,8 @@
 # authorizationState
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout scheduler’s authorization status.
 
@@ -20,13 +21,14 @@ final var authorizationState: WorkoutScheduler.AuthorizationState { get async }
 
 ## See Also
 
-- [static let shared: WorkoutScheduler](workoutscheduler/shared.md)
+### Accessing the scheduler
+- [static let shared: WorkoutScheduler](./shared.md)
   A shared instance of the workout scheduler.
-- [static var isSupported: Bool](workoutscheduler/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current device supports scheduled workouts.
-- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](workoutscheduler/requestauthorization.md)
+- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](./requestauthorization%28%29.md)
   Requests authorization to schedule workouts.
-- [WorkoutScheduler.AuthorizationState](workoutscheduler/authorizationstate-swift.enum.md)
+- [WorkoutScheduler.AuthorizationState](./authorizationstate-swift.enum.md)
   The workout scheduler’s authorization status.
 
 

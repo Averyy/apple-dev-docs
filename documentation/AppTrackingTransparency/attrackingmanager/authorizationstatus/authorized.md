@@ -1,7 +1,8 @@
 # ATTrackingManager.AuthorizationStatus.authorized
 
 **Framework**: App Tracking Transparency  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates someone grants your app permission to access data your app can use to track a person or device.
 
@@ -19,13 +20,18 @@ A value that indicates someone grants your app permission to access data your ap
 case authorized
 ```
 
+```c
+ATTrackingManagerAuthorizationStatusAuthorized
+```
+
 ## See Also
 
-- [ATTrackingManager.AuthorizationStatus.denied](attrackingmanager/authorizationstatus/denied.md)
+### Determining the status
+- [ATTrackingManager.AuthorizationStatus.denied](./denied.md)
   A value that indicates someone denies your app permission to access data your app can use to track a person or device.
-- [ATTrackingManager.AuthorizationStatus.notDetermined](attrackingmanager/authorizationstatus/notdetermined.md)
+- [ATTrackingManager.AuthorizationStatus.notDetermined](./notdetermined.md)
   A value that indicates the person hasn’t responded to a tracking authorization request.
-- [ATTrackingManager.AuthorizationStatus.restricted](attrackingmanager/authorizationstatus/restricted.md)
+- [ATTrackingManager.AuthorizationStatus.restricted](./restricted.md)
   A value that indicates the system restricts tracking authorization.
 
 

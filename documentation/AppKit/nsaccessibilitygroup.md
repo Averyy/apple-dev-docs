@@ -1,12 +1,13 @@
 # NSAccessibilityGroup
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A role-based protocol that declares the minimum interface necessary to act as a container for other user interface elements.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,36 @@ A role-based protocol that declares the minimum interface necessary to act as a 
 protocol NSAccessibilityGroup : NSAccessibilityElementProtocol
 ```
 
+```objc
+@protocol NSAccessibilityGroup <NSAccessibilityElement>
+```
+
 #### Overview
 
 Visual users often know that sets of controls go together due to their proximity on the screen. However, you must explicitly define these relationships before assistive apps can use them as well. Use this protocol when you want to logically group a collection of accessibility elements. A view that adopts this protocol indicates that an assistive app should treat its content as a group of controls.
 
-You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol declares.
+You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol declares.
 
-> **Note**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
+> **Explicit Implementation Required**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
 
 ## Relationships
 
 ### Inherits From
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [NSAccessibilityLayoutArea](nsaccessibilitylayoutarea.md)
-- [NSAccessibilityLayoutItem](nsaccessibilitylayoutitem.md)
-- [NSAccessibilityList](nsaccessibilitylist.md)
-- [NSAccessibilityOutline](nsaccessibilityoutline.md)
-- [NSAccessibilityProgressIndicator](nsaccessibilityprogressindicator.md)
-- [NSAccessibilityRow](nsaccessibilityrow.md)
-- [NSAccessibilityTable](nsaccessibilitytable.md)
+- [NSAccessibilityLayoutArea](./nsaccessibilitylayoutarea.md)
+- [NSAccessibilityLayoutItem](./nsaccessibilitylayoutitem.md)
+- [NSAccessibilityList](./nsaccessibilitylist.md)
+- [NSAccessibilityOutline](./nsaccessibilityoutline.md)
+- [NSAccessibilityProgressIndicator](./nsaccessibilityprogressindicator.md)
+- [NSAccessibilityRow](./nsaccessibilityrow.md)
+- [NSAccessibilityTable](./nsaccessibilitytable.md)
 ### Conforming Types
-- [NSOutlineView](nsoutlineview.md)
-- [NSProgressIndicator](nsprogressindicator.md)
-- [NSTableRowView](nstablerowview.md)
-- [NSTableView](nstableview.md)
+- [NSOutlineView](./nsoutlineview.md)
+- [NSProgressIndicator](./nsprogressindicator.md)
+- [NSTableRowView](./nstablerowview.md)
+- [NSTableView](./nstableview.md)
 
 
 ---

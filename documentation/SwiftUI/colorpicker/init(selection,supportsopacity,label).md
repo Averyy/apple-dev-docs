@@ -1,7 +1,8 @@
 # init(selection:supportsOpacity:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects a color.
 
@@ -19,15 +20,23 @@ nonisolated
 init(selection: Binding<CGColor>, supportsOpacity: Bool = true, @ContentBuilder label: () -> Label)
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init(selection: Binding<Color>, supportsOpacity: Bool = true, @ContentBuilder label: () -> Label)
+```
+
 ## Parameters
 
-- `selection`: A [`Binding`](binding.md) to the variable that displays the selected `CGColor`.
+- `selection`: A [`Binding`](../binding.md) to the variable that displays the selected `CGColor`.
 - `supportsOpacity`: A Boolean value that indicates whether the color picker allows adjusting the selected color’s opacity; the default is `true`.
 - `label`: A view that describes the use of the selected color. The system color picker UI sets it’s title using the text from this view.
 
 ## See Also
 
-- [init(_:selection:supportsOpacity:)](colorpicker/init(_:selection:supportsopacity:).md)
+### Creating a color picker
+- [init(_:selection:supportsOpacity:)](./init%28_,selection,supportsopacity%29.md)
   Creates a color picker with a text label generated from a title string resource.
 
 

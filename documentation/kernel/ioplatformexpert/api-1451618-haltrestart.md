@@ -1,14 +1,15 @@
 # haltRestart
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual int haltRestart(unsigned int type);
 ```
 

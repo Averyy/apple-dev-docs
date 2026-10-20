@@ -1,7 +1,8 @@
 # VNCircle
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable 2D circle represented by its center point and radius.
 
@@ -19,46 +20,51 @@ An immutable 2D circle represented by its center point and radius.
 class VNCircle
 ```
 
+```objc
+@interface VNCircle : NSObject
+```
+
 ## Topics
 
 ### Creating a Circle
-- [init(center: VNPoint, radius: Double)](vncircle/init(center:radius:).md)
+- [init(center: VNPoint, radius: Double)](./vncircle/init%28center,radius%29.md)
   Creates a circle with the specified center and radius.
-- [convenience init(center: VNPoint, diameter: Double)](vncircle/init(center:diameter:).md)
+- [convenience init(center: VNPoint, diameter: Double)](./vncircle/init%28center,diameter%29.md)
   Creates a circle with the specified center and diameter.
-- [init?(coder: NSCoder)](vncircle/init(coder:).md)
-- [class var zero: VNCircle](vncircle/zero.md)
+- [init?(coder: NSCoder)](./vncircle/init%28coder%29.md)
+- [class var zero: VNCircle](./vncircle/zero.md)
   A circle object centered at the origin, with a radius of zero.
 ### Inspecting a Circle
-- [var center: VNPoint](vncircle/center.md)
+- [var center: VNPoint](./vncircle/center.md)
   The circle’s center point.
-- [var diameter: Double](vncircle/diameter.md)
+- [var diameter: Double](./vncircle/diameter.md)
   The circle’s diameter.
-- [var radius: Double](vncircle/radius.md)
+- [var radius: Double](./vncircle/radius.md)
   The circle’s radius.
-- [func contains(VNPoint) -> Bool](vncircle/contains(_:).md)
+- [func contains(VNPoint) -> Bool](./vncircle/contains%28_%29.md)
   Determines if this circle, including its boundary, contains the specified point.
-- [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](vncircle/contains(_:incircumferentialringofwidth:).md)
+- [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](./vncircle/contains%28_,incircumferentialringofwidth%29.md)
   Determines if a ring around this circle’s circumference contains the specified point.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class VNVector](vnvector.md)
+### Common data types
+- [class VNVector](./vnvector.md)
   An immutable 2D vector represented by its x-axis and y-axis projections.
 
 

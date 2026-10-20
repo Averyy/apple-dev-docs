@@ -1,7 +1,8 @@
 # setMeshInstances(_:at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a mesh instance array to the given slot index.
 
@@ -19,7 +20,7 @@ final func setMeshInstances(_ meshInstances: LowLevelMeshInstanceArray?, at inde
 
 #### Discussion
 
-> **Note**: [`LowLevelRendererError`](lowlevelrenderererror.md) if the renderer’s render target descriptor is not contained in the array’s descriptor set.
+> **Throws**: [`LowLevelRendererError`](../lowlevelrenderererror.md) if the renderer’s render target descriptor is not contained in the array’s descriptor set.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ final func setMeshInstances(_ meshInstances: LowLevelMeshInstanceArray?, at inde
 
 ## See Also
 
-- [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](lowlevelrenderer/meshinstances(at:).md)
+### Managing mesh instances
+- [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](./meshinstances%28at%29.md)
   Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
-- [var meshInstancesArrayCount: Int](lowlevelrenderer/meshinstancesarraycount.md)
+- [var meshInstancesArrayCount: Int](./meshinstancesarraycount.md)
   The number of mesh instance array slots.
 
 

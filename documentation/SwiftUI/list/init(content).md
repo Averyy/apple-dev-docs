@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list with the given content.
 
@@ -21,13 +22,16 @@ nonisolated
 init(@ContentBuilder content: () -> Content)
 ```
 
+Available when `SelectionValue` is `Never` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `content`: The content of the list.
 
 ## See Also
 
-- [init(selection:content:)](list/init(selection:content:).md)
+### Creating a list from a set of views
+- [init(selection:content:)](./init%28selection,content%29.md)
   Creates a list with the given content that supports selecting a single row that cannot be deselected.
 
 

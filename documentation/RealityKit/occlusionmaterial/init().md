@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 1.0+
@@ -14,7 +15,8 @@ init()
 
 ## See Also
 
-- [init(receivesDynamicLighting: Bool)](occlusionmaterial/init(receivesdynamiclighting:).md)
+### Creating an occlusion material
+- [init(receivesDynamicLighting: Bool)](./init%28receivesdynamiclighting%29.md)
   Creates an occlusion material.
 
 

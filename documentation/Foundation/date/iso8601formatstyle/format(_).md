@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a locale-aware ISO 8601 string representation from a date value.
 
@@ -26,7 +27,7 @@ A string ISO 8601 representation of the date.
 
 #### Discussion
 
-The [`format(_:)`](date/iso8601formatstyle/format(_:).md) instance method generates a ISO 8601 formatted string from the provided date. Once you create a style, you can use it to format dates multiple times.
+The [`format(_:)`](./format%28_%29.md) instance method generates a ISO 8601 formatted string from the provided date. Once you create a style, you can use it to format dates multiple times.
 
 In the following example, a format style is created to guide parsing a set of string representations of dates. Another format style is created and applied repeatedly to produce customized ISO 8601 string representations of those dates for a different locale.
 

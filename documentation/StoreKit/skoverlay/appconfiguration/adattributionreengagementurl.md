@@ -1,7 +1,8 @@
 # adAttributionReengagementURL
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,7 +17,8 @@ var adAttributionReengagementURL: URL? { get set }
 
 ## See Also
 
-- [var appImpression: AppImpression?](skoverlay/appconfiguration/appimpression.md)
+### Instance Properties
+- [var appImpression: AppImpression?](./appimpression.md)
 
 
 ---

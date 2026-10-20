@@ -1,7 +1,8 @@
 # init(currentLayout:nextLayout:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a transition layout object.
 
@@ -9,13 +10,17 @@ Initializes and returns a transition layout object.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(currentLayout: UICollectionViewLayout, nextLayout newLayout: UICollectionViewLayout)
+```
+
+```objc
+- (instancetype) initWithCurrentLayout:(UICollectionViewLayout *) currentLayout nextLayout:(UICollectionViewLayout *) newLayout;
 ```
 
 #### Return Value
@@ -33,7 +38,8 @@ This method initializes the transition layout object and saves references to the
 
 ## See Also
 
-- [init?(coder: NSCoder)](uicollectionviewtransitionlayout/init(coder:).md)
+### Initializing the transition layout object
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a transition layout object from data in an unarchiver.
 
 

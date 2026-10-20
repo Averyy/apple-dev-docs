@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Translation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidate the current translation session and re-run it with new content.
 
@@ -19,7 +20,7 @@ mutating func invalidate()
 
 #### Discussion
 
-Call this method when you want to translate new content using the same source and target languages. When you do, it causes the [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) function to call its `action` closure and translate the content again.
+Call this method when you want to translate new content using the same source and target languages. When you do, it causes the [`translationTask(_:action:)`](../../../SwiftUI/view/translationtask%28_,action%29.md) function to call its `action` closure and translate the content again.
 
 
 ---

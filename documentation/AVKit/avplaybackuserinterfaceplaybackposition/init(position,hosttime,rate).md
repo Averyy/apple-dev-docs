@@ -1,7 +1,8 @@
 # init(position:hostTime:rate:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new playback position snapshot.
 
@@ -14,6 +15,10 @@ Creates a new playback position snapshot.
 
 ```swift
 init(position: CMTime, hostTime: CMTime, rate: Float)
+```
+
+```objc
+- (instancetype) initWithPosition:(CMTime) position hostTime:(CMTime) hostTime rate:(float) rate;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the reasoning entry.
 
@@ -20,11 +21,12 @@ var description: String { get }
 
 ## See Also
 
-- [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
+### Inspecting the reasoning
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata produced by the model while generating this reasoning entry.
-- [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)
+- [var segments: [Transcript.Segment]](./segments.md)
   Ordered reasoning segments.
-- [var signature: Data?](transcript/reasoning/signature.md)
+- [var signature: Data?](./signature.md)
   Opaque producer-supplied signature for this reasoning entry.
 
 

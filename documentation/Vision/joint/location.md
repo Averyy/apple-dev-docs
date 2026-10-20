@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the joint in normalized coordinates.
 
@@ -22,9 +23,10 @@ let location: NormalizedPoint
 
 ## See Also
 
-- [let confidence: Float](joint/confidence.md)
+### Inspecting a joint
+- [let confidence: Float](./confidence.md)
   A confidence score that indicates the detected joint’s accuracy.
-- [let jointName: String](joint/jointname.md)
+- [let jointName: String](./jointname.md)
   The joint’s identifier label.
 
 

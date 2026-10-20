@@ -1,7 +1,8 @@
 # errSecUnsupportedAddressType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The address type is not supported.
 
@@ -18,6 +19,10 @@ The address type is not supported.
 
 ```swift
 var errSecUnsupportedAddressType: OSStatus { get }
+```
+
+```c
+errSecUnsupportedAddressType
 ```
 
 

@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.Reason.relocalizing
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is attempting to resume tracking after an interruption, such as the app being paused.
 

@@ -1,7 +1,8 @@
 # itemIdentifiersInSection(withIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifiers of all of the items in the specified section of the snapshot.
 
@@ -18,6 +19,10 @@ Returns the identifiers of all of the items in the specified section of the snap
 func itemIdentifiersInSection(withIdentifier sectionIdentifier: Any) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) itemIdentifiersInSectionWithIdentifier:(SectionIdentifierType) sectionIdentifier;
+```
+
 #### Return Value
 
 An array of identifiers of the items contained in the section.
@@ -28,15 +33,16 @@ An array of identifiers of the items contained in the section.
 
 ## See Also
 
-- [var itemIdentifiers: [Any]](nsdiffabledatasourcesnapshotreference/itemidentifiers.md)
+### Identifying items and sections
+- [var itemIdentifiers: [Any]](./itemidentifiers.md)
   The identifiers of all of the items in the snapshot.
-- [var sectionIdentifiers: [Any]](nsdiffabledatasourcesnapshotreference/sectionidentifiers.md)
+- [var sectionIdentifiers: [Any]](./sectionidentifiers.md)
   The identifiers of all of the sections in the snapshot.
-- [func index(ofItemIdentifier: Any) -> Int](nsdiffabledatasourcesnapshotreference/index(ofitemidentifier:).md)
+- [func index(ofItemIdentifier: Any) -> Int](./index%28ofitemidentifier%29.md)
   Returns the index of the item in the snapshot with the specified identifier.
-- [func index(ofSectionIdentifier: Any) -> Int](nsdiffabledatasourcesnapshotreference/index(ofsectionidentifier:).md)
+- [func index(ofSectionIdentifier: Any) -> Int](./index%28ofsectionidentifier%29.md)
   Returns the index of the section of the snapshot with the specified identifier.
-- [func sectionIdentifier(forSectionContainingItemIdentifier: Any) -> Any?](nsdiffabledatasourcesnapshotreference/sectionidentifier(forsectioncontainingitemidentifier:).md)
+- [func sectionIdentifier(forSectionContainingItemIdentifier: Any) -> Any?](./sectionidentifier%28forsectioncontainingitemidentifier%29.md)
   Returns the identifier of the section containing the specified item in the snapshot.
 
 

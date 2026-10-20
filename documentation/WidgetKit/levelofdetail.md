@@ -1,7 +1,8 @@
 # LevelOfDetail
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The level of detail the view is recommended to have.
 
@@ -26,29 +27,30 @@ The system can update the levelOfDetail value based on user proximity or other s
 ## Topics
 
 ### Type Properties
-- [static let `default`: LevelOfDetail](levelofdetail/default.md)
+- [static let `default`: LevelOfDetail](./levelofdetail/default.md)
   The default level of details.
-- [static let simplified: LevelOfDetail](levelofdetail/simplified.md)
+- [static let simplified: LevelOfDetail](./levelofdetail/simplified.md)
   The level of detail should be simplified.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+### visionOS widgets
+- [Updating your widgets for visionOS](./updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
 - [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/widgettexture(_:).md)
+](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md)
   Specifies the widget texture for this widget.
-- [struct WidgetTexture](widgettexture.md)
+- [struct WidgetTexture](./widgettexture.md)
   Values that define the texture of the widget’s coating layer.
 - [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
+](../SwiftUI/widgetconfiguration/supportedmountingstyles%28_%29.md)
   Specifies the mounting style for this widget.
-- [struct WidgetMountingStyle](widgetmountingstyle.md)
+- [struct WidgetMountingStyle](./widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.
 
 

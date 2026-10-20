@@ -1,7 +1,8 @@
 # CNSpatialAudioRenderingStyle.inFrameBackgroundStem
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Isolates background plus foreground sounds outside the camera field of view in a stem.
 
@@ -16,6 +17,10 @@ Isolates background plus foreground sounds outside the camera field of view in a
 
 ```swift
 case inFrameBackgroundStem
+```
+
+```c
+CNSpatialAudioRenderingStyleInFrameBackgroundStem
 ```
 
 

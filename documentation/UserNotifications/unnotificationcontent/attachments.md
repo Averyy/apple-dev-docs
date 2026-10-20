@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual and audio attachments to display alongside the notification’s main content.
 
@@ -19,13 +20,26 @@ The visual and audio attachments to display alongside the notification’s main 
 var attachments: [UNNotificationAttachment] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<UNNotificationAttachment *> * attachments;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<UNNotificationAttachment *> * attachments;
+```
+
 #### Discussion
 
 Use this property to retrieve the images, movies, and audio files associated with your notification’s content. A notification content app extension might use these values to add the associated content to its view controller.
 
 ## See Also
 
-- [var userInfo: [AnyHashable : Any]](unnotificationcontent/userinfo.md)
+### Accessing supplementary content
+- [var userInfo: [AnyHashable : Any]](./userinfo.md)
   The custom data to associate with the notification.
 
 

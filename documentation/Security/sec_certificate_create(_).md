@@ -1,7 +1,8 @@
 # sec_certificate_create(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_certificate_create(_ certificate: SecCertificate) -> sec_certificate_t?
+```
+
+```c
+sec_certificate_tsec_certificate_create(SecCertificateRef certificate);
 ```
 
 #### Return Value

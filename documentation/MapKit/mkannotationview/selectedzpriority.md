@@ -1,7 +1,8 @@
 # selectedZPriority
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relative importance of the annotation view when in a selected state with respect to its ordering along the z-axis.
 
@@ -19,19 +20,24 @@ The relative importance of the annotation view when in a selected state with res
 var selectedZPriority: MKAnnotationViewZPriority { get set }
 ```
 
+```objc
+@property (nonatomic) MKAnnotationViewZPriority selectedZPriority;
+```
+
 #### Discussion
 
-The constant [`defaultSelected`](mkannotationviewzpriority/defaultselected.md) is the default value for [`selectedZPriority`](mkannotationview/selectedzpriority.md).
+The constant [`defaultSelected`](../mkannotationviewzpriority/defaultselected.md) is the default value for [`selectedZPriority`](./selectedzpriority.md).
 
 ## See Also
 
-- [var displayPriority: MKFeatureDisplayPriority](mkannotationview/displaypriority.md)
+### Setting the priority for display
+- [var displayPriority: MKFeatureDisplayPriority](./displaypriority.md)
   The display priority of the annotation view.
-- [struct MKFeatureDisplayPriority](mkfeaturedisplaypriority.md)
+- [struct MKFeatureDisplayPriority](../mkfeaturedisplaypriority.md)
   Constants that indicates the display priority for annotations.
-- [var zPriority: MKAnnotationViewZPriority](mkannotationview/zpriority.md)
+- [var zPriority: MKAnnotationViewZPriority](./zpriority.md)
   The relative importance of the annotation view when in an unselected state with respect to its ordering along the z-axis.
-- [struct MKAnnotationViewZPriority](mkannotationviewzpriority.md)
+- [struct MKAnnotationViewZPriority](../mkannotationviewzpriority.md)
   Constants that indicates the priority for ordering overlapping annotation views.
 
 

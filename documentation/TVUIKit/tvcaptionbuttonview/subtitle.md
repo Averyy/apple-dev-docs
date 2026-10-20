@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle of the caption button.
 
@@ -14,17 +15,22 @@ The subtitle of the caption button.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
 The subtitle appears below the title of the caption button.
 
 ## See Also
 
-- [var contentImage: UIImage?](tvcaptionbuttonview/contentimage.md)
+### Configuring the Caption Button
+- [var contentImage: UIImage?](./contentimage.md)
   The image displayed in the main content view.
-- [var contentText: String?](tvcaptionbuttonview/contenttext.md)
+- [var contentText: String?](./contenttext.md)
   The text displayed in the main content view.
-- [var title: String?](tvcaptionbuttonview/title.md)
+- [var title: String?](./title.md)
   The title for the caption button.
 
 

@@ -1,27 +1,28 @@
 # Image Filters
 
-**Framework**: Metal Performance Shaders
+**Framework**: Metal Performance Shaders  
+**Role**: API Collection
 
 Apply high-performance filters to, and extract statistical and histogram data from images.
 
 #### Overview
 
-The [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) and [`MPSBinaryImageKernel`](mpsbinaryimagekernel.md) base classes define several properties common to all image kernels:
+The [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) and [`MPSBinaryImageKernel`](./mpsbinaryimagekernel.md) base classes define several properties common to all image kernels:
 
-| [`clipRect`](mpsunaryimagekernel/cliprect.md) and [`clipRect`](mpsbinaryimagekernel/cliprect.md) | A clip rectangle is available to all image kernels that write to a destination texture. It describes the sub-rectangle of the destination texture overwritten by the filter. If the clip rectangle is larger than the destination texture, then the intersection between the clip rectangle and the destination texture bounds is used instead. A clip rectangle may be used to avoid doing work to obscured regions of the destination image, or to manage tiling and limit operations to parts of an image—for example, if a user draws a rectangle on the screen and asks your app to just apply the filter there. |
+| [`clipRect`](./mpsunaryimagekernel/cliprect.md) and [`clipRect`](./mpsbinaryimagekernel/cliprect.md) | A clip rectangle is available to all image kernels that write to a destination texture. It describes the sub-rectangle of the destination texture overwritten by the filter. If the clip rectangle is larger than the destination texture, then the intersection between the clip rectangle and the destination texture bounds is used instead. A clip rectangle may be used to avoid doing work to obscured regions of the destination image, or to manage tiling and limit operations to parts of an image—for example, if a user draws a rectangle on the screen and asks your app to just apply the filter there. |
 | --- | --- |
-| [`offset`](mpsunaryimagekernel/offset.md), [`primaryOffset`](mpsbinaryimagekernel/primaryoffset.md), and [`secondaryOffset`](mpsbinaryimagekernel/secondaryoffset.md) | An offset is available to all image kernels that use a source texture from which pixel data is read. It describes the positioning of the source image relative to the result texture. An offset of `{0, 0, 0}` indicates that the top left pixel of the source texture is the center pixel used to create the top left corner of the destination texture clip rectangle (as a further example, an offset of `{1, 2, 0}` positions the top left corner of the clip rectangle at position `x=1`, `y=2`, and `z=0` of the source image). The offset is the position of the top left corner of the clip rectangle in the source coordinate frame. It can be used for tiling and for translating an image up, down, left, or right by pixel increments. If there is no clip rectangle, then the offset is the top left corner of the region read by the filter. If there are multiple source textures, then the primary offset describes the top left corner of the region read in the primary source texture and the secondary offset describes the top left corner of the region read in the secondary source texture. |
-| [`edgeMode`](mpsunaryimagekernel/edgemode.md), [`primaryEdgeMode`](mpsbinaryimagekernel/primaryedgemode.md), and [`secondaryEdgeMode`](mpsbinaryimagekernel/secondaryedgemode.md) | An edge mode describes the behavior of texture reads that stray off the edge of the source image. This can happen if the offset is negative, meaning a read off the top or left edge of the image. This can also happen if the sum of the clip rectangle size and the offset is larger than the source image, meaning a read off the bottom or right edge of the image. Furthermore, it is also possible for image filters to have a kernel window that stretches to examine neighboring pixels beyond the image bounds (such as convolution, morphology, and resampling filters). If there are multiple source textures, then the primary edge mode describes the mode to use with the primary source texture and the secondary edge mode  describes the mode to use with the secondary source texture. |
+| [`offset`](./mpsunaryimagekernel/offset.md), [`primaryOffset`](./mpsbinaryimagekernel/primaryoffset.md), and [`secondaryOffset`](./mpsbinaryimagekernel/secondaryoffset.md) | An offset is available to all image kernels that use a source texture from which pixel data is read. It describes the positioning of the source image relative to the result texture. An offset of `{0, 0, 0}` indicates that the top left pixel of the source texture is the center pixel used to create the top left corner of the destination texture clip rectangle (as a further example, an offset of `{1, 2, 0}` positions the top left corner of the clip rectangle at position `x=1`, `y=2`, and `z=0` of the source image). The offset is the position of the top left corner of the clip rectangle in the source coordinate frame. It can be used for tiling and for translating an image up, down, left, or right by pixel increments. If there is no clip rectangle, then the offset is the top left corner of the region read by the filter. If there are multiple source textures, then the primary offset describes the top left corner of the region read in the primary source texture and the secondary offset describes the top left corner of the region read in the secondary source texture. |
+| [`edgeMode`](./mpsunaryimagekernel/edgemode.md), [`primaryEdgeMode`](./mpsbinaryimagekernel/primaryedgemode.md), and [`secondaryEdgeMode`](./mpsbinaryimagekernel/secondaryedgemode.md) | An edge mode describes the behavior of texture reads that stray off the edge of the source image. This can happen if the offset is negative, meaning a read off the top or left edge of the image. This can also happen if the sum of the clip rectangle size and the offset is larger than the source image, meaning a read off the bottom or right edge of the image. Furthermore, it is also possible for image filters to have a kernel window that stretches to examine neighboring pixels beyond the image bounds (such as convolution, morphology, and resampling filters). If there are multiple source textures, then the primary edge mode describes the mode to use with the primary source texture and the secondary edge mode  describes the mode to use with the secondary source texture. |
 
-##### In Place Operation
+##### In-Place Operation
 
-Some kernels can operate in place. This means that the same texture is used to hold both the input image and the result image. Operating in place is a great way to save memory, time, and energy. You can perform an in-place operation by using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method.
+Some kernels can operate in place. This means that the same texture is used to hold both the input image and the result image. Operating in place is a great way to save memory, time, and energy. You can perform an in-place operation by using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md) method.
 
 Unfortunately, it is not always possible for kernels to run in place. Whether a particular kernel can operate in place can vary according to the hardware it is running on, the OS version, and the parameters and properties passed to it. You may not assume that because a kernel works in place today on a particular device that it will do so in the future.
 
-To simplify error handling with failed in-place operation, the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method takes an optional [`MPSCopyAllocator`](mpscopyallocator.md) object. It is used to create a new texture when in-place operation is not possible so as to allow the operation to proceed out of place in a reliable fashion instead. When this happens, the input texture is released and replaced with a new texture. To make use of the feature, you will need to write a copy allocator block.
+To simplify error handling with failed in-place operation, the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md) method takes an optional [`MPSCopyAllocator`](./mpscopyallocator.md) object. It is used to create a new texture when in-place operation is not possible so as to allow the operation to proceed out of place in a reliable fashion instead. When this happens, the input texture is released and replaced with a new texture. To make use of the feature, you will need to write a copy allocator block.
 
-The following code listing shows a minimal copy allocator implementation. For more information, see the [`MPSCopyAllocator`](mpscopyallocator.md) reference.
+The following code listing shows a minimal copy allocator implementation. For more information, see the [`MPSCopyAllocator`](./mpscopyallocator.md) reference.
 
 Listing 1. Minimal MPSCopyAllocator Implementation
 
@@ -60,15 +61,15 @@ MPSCopyAllocator myAllocator = ^id <MTLTexture>(MPSKernel * __nonnull filter, __
 
 All Metal Performance Shaders image kernels support source and destination textures with the following ordinary and packed pixel formats:
 
-- **[`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8unorm), [`MTLPixelFormat.r8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8unorm_srgb)**: Ordinary formats with one 8-bit normalized unsigned integer component.
-- **[`MTLPixelFormat.rg8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg8unorm), [`MTLPixelFormat.rg8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg8unorm_srgb)**: Ordinary formats with two 8-bit normalized unsigned integer components.
-- **[`MTLPixelFormat.rgba8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba8unorm), [`MTLPixelFormat.rgba8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba8unorm_srgb), [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm), [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm_srgb)**: Ordinary formats with four 8-bit normalized unsigned integer components.
-- **[`MTLPixelFormat.r16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/r16float), [`MTLPixelFormat.rg16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg16float), [`MTLPixelFormat.rgba16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16float)**: Ordinary format with 16-bit floating-point components.
-- **[`MTLPixelFormat.r32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/r32float), [`MTLPixelFormat.rg32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg32float), [`MTLPixelFormat.rgba32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba32float)**: Ordinary format with 32-bit floating-point components.
-- **[`MTLPixelFormat.r16Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/r16unorm), [`MTLPixelFormat.rg16Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg16unorm), [`MTLPixelFormat.rgba16Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16unorm)**: Ordinary format with 16-bit normalized unsigned integer components.
-- **[`MTLPixelFormat.b5g6r5Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/b5g6r5unorm), [`MTLPixelFormat.a1bgr5Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/a1bgr5unorm), [`MTLPixelFormat.abgr4Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/abgr4unorm), [`MTLPixelFormat.bgr5A1Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgr5a1unorm)**: Packed 16-bit format with normalized unsigned integer color components.
-- **[`MTLPixelFormat.rgb10a2Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgb10a2unorm)**: Packed 32-bit format with normalized unsigned integer color components.
-- **[`MTLPixelFormat.rg11b10Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg11b10float), [`MTLPixelFormat.rgb9e5Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgb9e5float)**: Packed 32-bit format with floating-point color components.
+- **[`MTLPixelFormat.r8Unorm`](../Metal/mtlpixelformat/r8unorm.md), [`MTLPixelFormat.r8Unorm_srgb`](../Metal/mtlpixelformat/r8unorm_srgb.md)**: Ordinary formats with one 8-bit normalized unsigned integer component.
+- **[`MTLPixelFormat.rg8Unorm`](../Metal/mtlpixelformat/rg8unorm.md), [`MTLPixelFormat.rg8Unorm_srgb`](../Metal/mtlpixelformat/rg8unorm_srgb.md)**: Ordinary formats with two 8-bit normalized unsigned integer components.
+- **[`MTLPixelFormat.rgba8Unorm`](../Metal/mtlpixelformat/rgba8unorm.md), [`MTLPixelFormat.rgba8Unorm_srgb`](../Metal/mtlpixelformat/rgba8unorm_srgb.md), [`MTLPixelFormat.bgra8Unorm`](../Metal/mtlpixelformat/bgra8unorm.md), [`MTLPixelFormat.bgra8Unorm_srgb`](../Metal/mtlpixelformat/bgra8unorm_srgb.md)**: Ordinary formats with four 8-bit normalized unsigned integer components.
+- **[`MTLPixelFormat.r16Float`](../Metal/mtlpixelformat/r16float.md), [`MTLPixelFormat.rg16Float`](../Metal/mtlpixelformat/rg16float.md), [`MTLPixelFormat.rgba16Float`](../Metal/mtlpixelformat/rgba16float.md)**: Ordinary format with 16-bit floating-point components.
+- **[`MTLPixelFormat.r32Float`](../Metal/mtlpixelformat/r32float.md), [`MTLPixelFormat.rg32Float`](../Metal/mtlpixelformat/rg32float.md), [`MTLPixelFormat.rgba32Float`](../Metal/mtlpixelformat/rgba32float.md)**: Ordinary format with 32-bit floating-point components.
+- **[`MTLPixelFormat.r16Unorm`](../Metal/mtlpixelformat/r16unorm.md), [`MTLPixelFormat.rg16Unorm`](../Metal/mtlpixelformat/rg16unorm.md), [`MTLPixelFormat.rgba16Unorm`](../Metal/mtlpixelformat/rgba16unorm.md)**: Ordinary format with 16-bit normalized unsigned integer components.
+- **[`MTLPixelFormat.b5g6r5Unorm`](../Metal/mtlpixelformat/b5g6r5unorm.md), [`MTLPixelFormat.a1bgr5Unorm`](../Metal/mtlpixelformat/a1bgr5unorm.md), [`MTLPixelFormat.abgr4Unorm`](../Metal/mtlpixelformat/abgr4unorm.md), [`MTLPixelFormat.bgr5A1Unorm`](../Metal/mtlpixelformat/bgr5a1unorm.md)**: Packed 16-bit format with normalized unsigned integer color components.
+- **[`MTLPixelFormat.rgb10a2Unorm`](../Metal/mtlpixelformat/rgb10a2unorm.md)**: Packed 32-bit format with normalized unsigned integer color components.
+- **[`MTLPixelFormat.rg11b10Float`](../Metal/mtlpixelformat/rg11b10float.md), [`MTLPixelFormat.rgb9e5Float`](../Metal/mtlpixelformat/rgb9e5float.md)**: Packed 32-bit format with floating-point color components.
 
 Some compressed pixel formats can be used as source textures. They cannot be used as destination textures because they cannot be written to. Metal Performance Shaders image kernels support the following compression families:
 
@@ -78,20 +79,20 @@ Some compressed pixel formats can be used as source textures. They cannot be use
 
 The following Metal Performance Shaders image kernels also support source and destination textures with ordinary signed and unsigned integer pixel formats:
 
-- [`MPSImageTranspose`](mpsimagetranspose.md)
-- [`MPSImageIntegral`](mpsimageintegral.md)
-- [`MPSImageIntegralOfSquares`](mpsimageintegralofsquares.md)
+- [`MPSImageTranspose`](./mpsimagetranspose.md)
+- [`MPSImageIntegral`](./mpsimageintegral.md)
+- [`MPSImageIntegralOfSquares`](./mpsimageintegralofsquares.md)
 
 The ordinary signed and unsigned integer pixel formats supported by these image kernels:
 
-- **[`MTLPixelFormat.r8Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8sint), [`MTLPixelFormat.rg8Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg8sint), [`MTLPixelFormat.rgba8Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba8sint)**: Ordinary format with 8-bit signed integer components.
-- **[`MTLPixelFormat.r8Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8uint), [`MTLPixelFormat.rg8Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg8uint), [`MTLPixelFormat.rgba8Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba8uint)**: Ordinary format with 8-bit unsigned integer components.
-- **[`MTLPixelFormat.r16Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/r16sint), [`MTLPixelFormat.rg16Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg16sint), [`MTLPixelFormat.rgba16Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16sint)**: Ordinary format with 16-bit signed integer components.
-- **[`MTLPixelFormat.r16Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/r16uint), [`MTLPixelFormat.rg16Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg16uint), [`MTLPixelFormat.rgba16Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16uint)**: Ordinary format with 16-bit unsigned integer components.
-- **[`MTLPixelFormat.r32Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/r32sint), [`MTLPixelFormat.rg32Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg32sint), [`MTLPixelFormat.rgba32Sint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba32sint)**: Ordinary format with 32-bit signed integer components.
-- **[`MTLPixelFormat.r32Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/r32uint), [`MTLPixelFormat.rg32Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg32uint), [`MTLPixelFormat.rgba32Uint`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba32uint)**: Ordinary format four 32-bit unsigned integer components.
+- **[`MTLPixelFormat.r8Sint`](../Metal/mtlpixelformat/r8sint.md), [`MTLPixelFormat.rg8Sint`](../Metal/mtlpixelformat/rg8sint.md), [`MTLPixelFormat.rgba8Sint`](../Metal/mtlpixelformat/rgba8sint.md)**: Ordinary format with 8-bit signed integer components.
+- **[`MTLPixelFormat.r8Uint`](../Metal/mtlpixelformat/r8uint.md), [`MTLPixelFormat.rg8Uint`](../Metal/mtlpixelformat/rg8uint.md), [`MTLPixelFormat.rgba8Uint`](../Metal/mtlpixelformat/rgba8uint.md)**: Ordinary format with 8-bit unsigned integer components.
+- **[`MTLPixelFormat.r16Sint`](../Metal/mtlpixelformat/r16sint.md), [`MTLPixelFormat.rg16Sint`](../Metal/mtlpixelformat/rg16sint.md), [`MTLPixelFormat.rgba16Sint`](../Metal/mtlpixelformat/rgba16sint.md)**: Ordinary format with 16-bit signed integer components.
+- **[`MTLPixelFormat.r16Uint`](../Metal/mtlpixelformat/r16uint.md), [`MTLPixelFormat.rg16Uint`](../Metal/mtlpixelformat/rg16uint.md), [`MTLPixelFormat.rgba16Uint`](../Metal/mtlpixelformat/rgba16uint.md)**: Ordinary format with 16-bit unsigned integer components.
+- **[`MTLPixelFormat.r32Sint`](../Metal/mtlpixelformat/r32sint.md), [`MTLPixelFormat.rg32Sint`](../Metal/mtlpixelformat/rg32sint.md), [`MTLPixelFormat.rgba32Sint`](../Metal/mtlpixelformat/rgba32sint.md)**: Ordinary format with 32-bit signed integer components.
+- **[`MTLPixelFormat.r32Uint`](../Metal/mtlpixelformat/r32uint.md), [`MTLPixelFormat.rg32Uint`](../Metal/mtlpixelformat/rg32uint.md), [`MTLPixelFormat.rgba32Uint`](../Metal/mtlpixelformat/rgba32uint.md)**: Ordinary format four 32-bit unsigned integer components.
 
-For more information on pixel formats, see [`MTLPixelFormat`](https://developer.apple.com/documentation/metal/mtlpixelformat) and [`Pixel Format Capabilities`](https://developer.apple.comhttps://developer.apple.com/metal/capabilities/).
+For more information on pixel formats, see [`MTLPixelFormat`](../Metal/mtlpixelformat.md) and [Pixel Format Capabilities](https://developer.apple.com/metal/capabilities/).
 
 ##### Sample Code
 
@@ -139,127 +140,127 @@ void  MyBlurTextureInPlace(id <MTLTexture> __strong *inTexture, float blurRadius
 ## Topics
 
 ### Morphological Image Filters
-- [class MPSImageAreaMax](mpsimageareamax.md)
+- [class MPSImageAreaMax](./mpsimageareamax.md)
   A filter that finds the maximum pixel value in a rectangular region centered around each pixel in the source image.
-- [class MPSImageDilate](mpsimagedilate.md)
+- [class MPSImageDilate](./mpsimagedilate.md)
   A filter that finds the maximum pixel value in a rectangular region by applying a dilation function.
-- [class MPSImageAreaMin](mpsimageareamin.md)
+- [class MPSImageAreaMin](./mpsimageareamin.md)
   A filter that finds the minimum pixel value in a rectangular region centered around each pixel in the source image.
-- [class MPSImageErode](mpsimageerode.md)
+- [class MPSImageErode](./mpsimageerode.md)
   A filter that finds the minimum pixel value in a rectangular region by applying an erosion function.
 ### Convolution Image Filters
-- [class MPSImageConvolution](mpsimageconvolution.md)
+- [class MPSImageConvolution](./mpsimageconvolution.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageMedian](mpsimagemedian.md)
+- [class MPSImageMedian](./mpsimagemedian.md)
   A filter that applies a median filter in a square region centered around each pixel in the source image.
-- [class MPSImageBox](mpsimagebox.md)
+- [class MPSImageBox](./mpsimagebox.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageTent](mpsimagetent.md)
+- [class MPSImageTent](./mpsimagetent.md)
   A filter that convolves an image with a tent filter.
-- [class MPSImageGaussianBlur](mpsimagegaussianblur.md)
+- [class MPSImageGaussianBlur](./mpsimagegaussianblur.md)
   A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.
-- [class MPSImageGaussianPyramid](mpsimagegaussianpyramid.md)
+- [class MPSImageGaussianPyramid](./mpsimagegaussianpyramid.md)
   A filter that convolves an image with a Gaussian pyramid.
-- [class MPSImageSobel](mpsimagesobel.md)
+- [class MPSImageSobel](./mpsimagesobel.md)
   A filter that convolves an image with the Sobel operator.
-- [class MPSImageLaplacian](mpsimagelaplacian.md)
+- [class MPSImageLaplacian](./mpsimagelaplacian.md)
   An optimized Laplacian filter, provided for ease of use.
-- [class MPSImageLaplacianPyramid](mpsimagelaplacianpyramid.md)
+- [class MPSImageLaplacianPyramid](./mpsimagelaplacianpyramid.md)
   A filter that convolves an image with a Laplacian filter.
-- [class MPSImageLaplacianPyramidAdd](mpsimagelaplacianpyramidadd.md)
+- [class MPSImageLaplacianPyramidAdd](./mpsimagelaplacianpyramidadd.md)
   A filter that convolves an image with an additive Laplacian pyramid.
-- [class MPSImageLaplacianPyramidSubtract](mpsimagelaplacianpyramidsubtract.md)
+- [class MPSImageLaplacianPyramidSubtract](./mpsimagelaplacianpyramidsubtract.md)
   A filter that convolves an image with a subtractive Laplacian pyramid.
-- [class MPSImagePyramid](mpsimagepyramid.md)
+- [class MPSImagePyramid](./mpsimagepyramid.md)
   A base class for creating different kinds of pyramid images.
 ### Histogram Image Filters
-- [class MPSImageHistogram](mpsimagehistogram.md)
+- [class MPSImageHistogram](./mpsimagehistogram.md)
   A filter that computes the histogram of an image.
-- [class MPSImageHistogramEqualization](mpsimagehistogramequalization.md)
+- [class MPSImageHistogramEqualization](./mpsimagehistogramequalization.md)
   A filter that equalizes the histogram of an image.
-- [class MPSImageHistogramSpecification](mpsimagehistogramspecification.md)
+- [class MPSImageHistogramSpecification](./mpsimagehistogramspecification.md)
   A filter that performs a histogram specification operation on an image.
 ### Image Threshold Filters
-- [class MPSImageThresholdBinary](mpsimagethresholdbinary.md)
+- [class MPSImageThresholdBinary](./mpsimagethresholdbinary.md)
   A filter that returns a specified value for each pixel with a value greater than a specified threshold or 0 otherwise.
-- [class MPSImageThresholdBinaryInverse](mpsimagethresholdbinaryinverse.md)
+- [class MPSImageThresholdBinaryInverse](./mpsimagethresholdbinaryinverse.md)
   A filter that returns 0 for each pixel with a value greater than a specified threshold or a specified value otherwise.
-- [class MPSImageThresholdToZero](mpsimagethresholdtozero.md)
+- [class MPSImageThresholdToZero](./mpsimagethresholdtozero.md)
   A filter that returns the original value for each pixel with a value greater than a specified threshold or 0 otherwise.
-- [class MPSImageThresholdToZeroInverse](mpsimagethresholdtozeroinverse.md)
+- [class MPSImageThresholdToZeroInverse](./mpsimagethresholdtozeroinverse.md)
   A filter that returns 0 for each pixel with a value greater than a specified threshold or the original value otherwise.
-- [class MPSImageThresholdTruncate](mpsimagethresholdtruncate.md)
+- [class MPSImageThresholdTruncate](./mpsimagethresholdtruncate.md)
   A filter that clamps the return value to an upper specified value.
 ### Image Integral Filters
-- [class MPSImageIntegral](mpsimageintegral.md)
+- [class MPSImageIntegral](./mpsimageintegral.md)
   A filter that calculates the sum of pixels over a specified region in an image.
-- [class MPSImageIntegralOfSquares](mpsimageintegralofsquares.md)
+- [class MPSImageIntegralOfSquares](./mpsimageintegralofsquares.md)
   A filter that calculates the sum of squared pixels over a specified region in an image.
 ### Image Manipulation Filters
-- [class MPSImageConversion](mpsimageconversion.md)
+- [class MPSImageConversion](./mpsimageconversion.md)
   A filter that performs a conversion of color space, alpha, or pixel format.
-- [class MPSImageScale](mpsimagescale.md)
+- [class MPSImageScale](./mpsimagescale.md)
   A filter that resizes and changes the aspect ratio of an image.
-- [class MPSImageLanczosScale](mpsimagelanczosscale.md)
+- [class MPSImageLanczosScale](./mpsimagelanczosscale.md)
   A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
-- [class MPSImageBilinearScale](mpsimagebilinearscale.md)
+- [class MPSImageBilinearScale](./mpsimagebilinearscale.md)
   A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
-- [class MPSImageTranspose](mpsimagetranspose.md)
+- [class MPSImageTranspose](./mpsimagetranspose.md)
   A filter that transposes an image.
 ### Image Statistics Filters
-- [class MPSImageStatisticsMean](mpsimagestatisticsmean.md)
+- [class MPSImageStatisticsMean](./mpsimagestatisticsmean.md)
   A kernel that computes the mean for a given region of an image.
-- [class MPSImageStatisticsMeanAndVariance](mpsimagestatisticsmeanandvariance.md)
+- [class MPSImageStatisticsMeanAndVariance](./mpsimagestatisticsmeanandvariance.md)
   A kernel that computes the mean and variance for a given region of an image.
-- [class MPSImageStatisticsMinAndMax](mpsimagestatisticsminandmax.md)
+- [class MPSImageStatisticsMinAndMax](./mpsimagestatisticsminandmax.md)
   A kernel that computes the minimum and maximum pixel values for a given region of an image.
 ### Image Reduction Filters
-- [class MPSImageReduceRowMax](mpsimagereducerowmax.md)
+- [class MPSImageReduceRowMax](./mpsimagereducerowmax.md)
   A filter that returns the maximum value for each row in an image.
-- [class MPSImageReduceRowMin](mpsimagereducerowmin.md)
+- [class MPSImageReduceRowMin](./mpsimagereducerowmin.md)
   A filter that returns the minimum value for each row in an image.
-- [class MPSImageReduceRowSum](mpsimagereducerowsum.md)
+- [class MPSImageReduceRowSum](./mpsimagereducerowsum.md)
   A filter that returns the sum of all values for a row in an image.
-- [class MPSImageReduceRowMean](mpsimagereducerowmean.md)
+- [class MPSImageReduceRowMean](./mpsimagereducerowmean.md)
   A filter that returns the mean value for each row in an image.
-- [class MPSImageReduceColumnMax](mpsimagereducecolumnmax.md)
+- [class MPSImageReduceColumnMax](./mpsimagereducecolumnmax.md)
   A filter that returns the maximum value for each column in an image.
-- [class MPSImageReduceColumnMin](mpsimagereducecolumnmin.md)
+- [class MPSImageReduceColumnMin](./mpsimagereducecolumnmin.md)
   A filter that returns the minimum value for each column in an image.
-- [class MPSImageReduceColumnSum](mpsimagereducecolumnsum.md)
+- [class MPSImageReduceColumnSum](./mpsimagereducecolumnsum.md)
   A filter that returns the sum of all values for a column in an image.
-- [class MPSImageReduceColumnMean](mpsimagereducecolumnmean.md)
+- [class MPSImageReduceColumnMean](./mpsimagereducecolumnmean.md)
   A filter that returns the mean value for each column in an image.
-- [class MPSImageReduceUnary](mpsimagereduceunary.md)
+- [class MPSImageReduceUnary](./mpsimagereduceunary.md)
   The base class for reduction filters that take a single source as input.
 ### Image Arithmetic Filters
-- [class MPSImageAdd](mpsimageadd.md)
+- [class MPSImageAdd](./mpsimageadd.md)
   A filter that returns the element-wise sum of its two input images.
-- [class MPSImageSubtract](mpsimagesubtract.md)
+- [class MPSImageSubtract](./mpsimagesubtract.md)
   A filter that returns the element-wise difference of its two input images.
-- [class MPSImageMultiply](mpsimagemultiply.md)
+- [class MPSImageMultiply](./mpsimagemultiply.md)
   A filter that returns the element-wise product of its two input images.
-- [class MPSImageDivide](mpsimagedivide.md)
+- [class MPSImageDivide](./mpsimagedivide.md)
   A filter that returns the element-wise quotient of its two input images.
-- [class MPSImageArithmetic](mpsimagearithmetic.md)
+- [class MPSImageArithmetic](./mpsimagearithmetic.md)
   Base class for basic arithmetic nodes
 ### Euclidean Distance Transform Filter
-- [class MPSImageEuclideanDistanceTransform](mpsimageeuclideandistancetransform.md)
+- [class MPSImageEuclideanDistanceTransform](./mpsimageeuclideandistancetransform.md)
   A filter that performs a Euclidean distance transform on an image.
 ### Fast Guided Filter
-- [class MPSImageGuidedFilter](mpsimageguidedfilter.md)
+- [class MPSImageGuidedFilter](./mpsimageguidedfilter.md)
   A filter that performs edge-aware filtering on an image.
 ### Keypoints
-- [class MPSImageFindKeypoints](mpsimagefindkeypoints.md)
+- [class MPSImageFindKeypoints](./mpsimagefindkeypoints.md)
   A kernel that is used to find a list of keypoints.
-- [struct MPSImageKeypointData](mpsimagekeypointdata.md)
+- [struct MPSImageKeypointData](./mpsimagekeypointdata.md)
   A structure that specifies keypoint information.
-- [struct MPSImageKeypointRangeInfo](mpsimagekeypointrangeinfo.md)
+- [struct MPSImageKeypointRangeInfo](./mpsimagekeypointrangeinfo.md)
   A structure that specifies information to find the keypoints in an image.
 ### Image Filter Base Classes
-- [class MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [class MPSUnaryImageKernel](./mpsunaryimagekernel.md)
   A kernel that consumes one texture and produces one texture.
-- [class MPSBinaryImageKernel](mpsbinaryimagekernel.md)
+- [class MPSBinaryImageKernel](./mpsbinaryimagekernel.md)
   A kernel that consumes two textures and produces one texture.
 
 

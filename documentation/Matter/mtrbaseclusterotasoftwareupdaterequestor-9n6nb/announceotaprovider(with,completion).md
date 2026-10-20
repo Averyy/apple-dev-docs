@@ -1,7 +1,8 @@
 # announceOTAProvider(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func announceOTAProvider(with params: MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func announceOTAProvider(with params: MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams) async throws
+```
+
+```objc
+- (void) announceOTAProviderWithParams:(MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

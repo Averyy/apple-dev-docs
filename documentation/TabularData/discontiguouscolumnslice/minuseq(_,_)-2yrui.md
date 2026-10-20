@@ -1,7 +1,8 @@
 # -=(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Modifies a column slice by subtracting a value from each element.
 
@@ -27,13 +28,14 @@ static func -= (lhs: inout DiscontiguousColumnSlice<WrappedElement>, rhs: Wrappe
 
 ## See Also
 
-- [static func += (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](discontiguouscolumnslice/+=(_:_:)-1mzz0.md)
+### Modifying a Column Slice with a Value
+- [static func += (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](./pluseq%28_,_%29-1mzz0.md)
   Modifies a column slice by adding a value to each element.
-- [static func *= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](discontiguouscolumnslice/*=(_:_:)-7gcqc.md)
+- [static func *= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](./stareq%28_,_%29-7gcqc.md)
   Modifies a column slice by multiplying each element by a value.
-- [static func /= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](discontiguouscolumnslice/_=(_:_:)-1g0yb.md)
+- [static func /= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](./opeq%28_,_%29-1g0yb.md)
   Modifies an integer column slice by dividing each element by a value.
-- [static func /= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](discontiguouscolumnslice/_=(_:_:)-6i7hx.md)
+- [static func /= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](./opeq%28_,_%29-6i7hx.md)
   Modifies a floating-point column slice by dividing each element by a value.
 
 

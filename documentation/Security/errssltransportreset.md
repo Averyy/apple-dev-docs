@@ -1,7 +1,8 @@
 # errSSLTransportReset
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Transport (socket) shutdown, for example, TCP RST or FIN.
 
@@ -18,6 +19,10 @@ Transport (socket) shutdown, for example, TCP RST or FIN.
 
 ```swift
 var errSSLTransportReset: OSStatus { get }
+```
+
+```c
+errSSLTransportReset
 ```
 
 

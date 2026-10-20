@@ -1,7 +1,8 @@
 # collisionFilter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the collision groups that the collider belongs to, and the mask used to determine which groups this collider affects.
 

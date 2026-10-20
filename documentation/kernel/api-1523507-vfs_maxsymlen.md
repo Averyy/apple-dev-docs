@@ -1,7 +1,8 @@
 # vfs_maxsymlen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get the maximum length of a symbolic link on a filesystem.
 
@@ -10,11 +11,11 @@ Get the maximum length of a symbolic link on a filesystem.
 
 ## Declaration
 
-```swift
+```c
 uint32_t vfs_maxsymlen(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Max symlink length.
 

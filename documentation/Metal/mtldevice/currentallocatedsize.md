@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The total amount of memory, in bytes, the GPU device is using for all of its resources.
@@ -20,13 +21,18 @@ The total amount of memory, in bytes, the GPU device is using for all of its res
 var currentAllocatedSize: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger currentAllocatedSize;
+```
+
 ## See Also
 
-- [var recommendedMaxWorkingSetSize: UInt64](mtldevice/recommendedmaxworkingsetsize.md)
+### Checking a GPU device’s memory
+- [var recommendedMaxWorkingSetSize: UInt64](./recommendedmaxworkingsetsize.md)
   An approximation of how much memory, in bytes, this GPU device can allocate without affecting its runtime performance.
-- [var hasUnifiedMemory: Bool](mtldevice/hasunifiedmemory.md)
+- [var hasUnifiedMemory: Bool](./hasunifiedmemory.md)
   A Boolean value that indicates whether the GPU shares all of its memory with the CPU.
-- [var maxTransferRate: UInt64](mtldevice/maxtransferrate.md)
+- [var maxTransferRate: UInt64](./maxtransferrate.md)
   The highest theoretical rate, in bytes per second, the system can copy between system memory and the GPU’s dedicated memory (VRAM).
 
 

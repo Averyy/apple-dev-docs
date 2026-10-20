@@ -1,7 +1,8 @@
 # write(toFile:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports a Core ML model file for use in your app.
 
@@ -21,7 +22,8 @@ func write(toFile path: String, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlboostedtreeregressor/write(to:metadata:).md)
+### Saving a boosted tree regressor
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./write%28to,metadata%29.md)
   Exports a Core ML model file for use in your app.
 
 

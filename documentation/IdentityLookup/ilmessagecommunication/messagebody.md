@@ -1,7 +1,8 @@
 # messageBody
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the SMS message.
 
@@ -15,6 +16,10 @@ The content of the SMS message.
 
 ```swift
 var messageBody: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * messageBody;
 ```
 
 

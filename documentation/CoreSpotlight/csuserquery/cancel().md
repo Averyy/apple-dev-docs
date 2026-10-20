@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the current query operation.
 
@@ -18,17 +19,22 @@ Cancels the current query operation.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-Cancel a query operation when you no longer need the results. You can use this method to cancel queries started using either the [`start()`](csuserquery/start().md) method or by accessing the [`responses`](csuserquery/responses-swift.property.md) property.  After you cancel a query operation, you can’t restart it. To perform a new query, create a new query object. For example, you might cancel one query and start a new one when the text in your app’s search control changes.
+Cancel a query operation when you no longer need the results. You can use this method to cancel queries started using either the [`start()`](./start%28%29.md) method or by accessing the [`responses`](./responses-swift.property.md) property.  After you cancel a query operation, you can’t restart it. To perform a new query, create a new query object. For example, you might cancel one query and start a new one when the text in your app’s search control changes.
 
 ## See Also
 
-- [func start()](csuserquery/start.md)
+### Executing the query with handler blocks
+- [func start()](./start%28%29.md)
   Starts searching the index for items that match the current query string and parameters.
-- [var foundSuggestionsHandler: (([CSSuggestion]) -> Void)?](csuserquery/foundsuggestionshandler.md)
+- [var foundSuggestionsHandler: (([CSSuggestion]) -> Void)?](./foundsuggestionshandler.md)
   The block to execute when the query delivers a new batch of suggested items.
-- [var foundSuggestionCount: Int](csuserquery/foundsuggestioncount.md)
+- [var foundSuggestionCount: Int](./foundsuggestioncount.md)
   The number of suggested items the query found so far.
 
 

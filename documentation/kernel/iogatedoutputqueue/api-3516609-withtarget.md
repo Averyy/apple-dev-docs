@@ -1,14 +1,15 @@
 # withTarget
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static IOGatedOutputQueue * withTarget(IONetworkController *target, IOWorkLoop *workloop, UInt32 capacity, UInt32 priorities);
 ```
 

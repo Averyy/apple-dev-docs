@@ -1,7 +1,8 @@
 # appCategory
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An application category associated with this network slice.
 
@@ -22,9 +23,10 @@ This property identifies which type of application traffic the slice optimizes f
 
 ## See Also
 
-- [let trafficClass: CTSlicingManager.TrafficClass?](ctslicingmanager/slice/trafficclass.md)
+### Representing slice properties
+- [let trafficClass: CTSlicingManager.TrafficClass?](./trafficclass.md)
   A traffic class that routes traffic through this network slice.
-- [let networkInterfaceName: String](ctslicingmanager/slice/networkinterfacename.md)
+- [let networkInterfaceName: String](./networkinterfacename.md)
   A network interface name associated with the slice.
 
 

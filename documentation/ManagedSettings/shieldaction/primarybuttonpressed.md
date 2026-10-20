@@ -1,7 +1,8 @@
 # ShieldAction.primaryButtonPressed
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user pressed the top button of the buttons on a shield.
 

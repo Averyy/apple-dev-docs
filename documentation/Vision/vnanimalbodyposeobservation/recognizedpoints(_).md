@@ -1,7 +1,8 @@
 # recognizedPoints(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the points for a joint group name the observation recognizes.
 
@@ -19,6 +20,10 @@ Returns the points for a joint group name the observation recognizes.
 func recognizedPoints(_ jointsGroupName: VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]
 ```
 
+```objc
+- (NSDictionary<NSString *,VNRecognizedPoint *> *) recognizedPointsForJointsGroupName:(VNAnimalBodyPoseObservationJointsGroupName) jointsGroupName error:(NSError **) error;
+```
+
 #### Return Value
 
 The dictionary of points the observation associates with the group name.
@@ -29,15 +34,16 @@ The dictionary of points the observation associates with the group name.
 
 ## See Also
 
-- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](vnanimalbodyposeobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname.md)
+- [VNAnimalBodyPoseObservation.JointName](./jointname.md)
   The joint names for an animal body pose.
-- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](vnanimalbodyposeobservation/availablejointgroupnames.md)
+- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](./availablejointgroupnames.md)
   The available joint group names in the observation.
-- [VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname.md)
+- [VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname.md)
   The joint group names for an animal body pose.
-- [func recognizedPoint(VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint](vnanimalbodyposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Returns the point for a joint name the observation recognizes.
 
 

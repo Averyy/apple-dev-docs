@@ -1,7 +1,8 @@
 # dropInteraction(_:concludeDrop:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the drop activity and its related animations have finished.
 
@@ -17,6 +18,10 @@ Tells the delegate the drop activity and its related animations have finished.
 optional func dropInteraction(_ interaction: UIDropInteraction, concludeDrop session: any UIDropSession)
 ```
 
+```objc
+- (void) dropInteraction:(UIDropInteraction *) interaction concludeDrop:(id<UIDropSession>) session;
+```
+
 #### Discussion
 
 When the interaction calls this method, update the interaction’s view with its post-drop appearance.
@@ -28,9 +33,10 @@ When the interaction calls this method, update the interaction’s view with its
 
 ## See Also
 
-- [func dropInteraction(UIDropInteraction, item: UIDragItem, willAnimateDropWith: any UIDragAnimating)](uidropinteractiondelegate/dropinteraction(_:item:willanimatedropwith:).md)
+### Animating the drop
+- [func dropInteraction(UIDropInteraction, item: UIDragItem, willAnimateDropWith: any UIDragAnimating)](./dropinteraction%28_,item,willanimatedropwith%29.md)
   Tells the delegate the system’s drop animation is about to start.
-- [func dropInteraction(UIDropInteraction, previewForDropping: UIDragItem, withDefault: UITargetedDragPreview) -> UITargetedDragPreview?](uidropinteractiondelegate/dropinteraction(_:previewfordropping:withdefault:).md)
+- [func dropInteraction(UIDropInteraction, previewForDropping: UIDragItem, withDefault: UITargetedDragPreview) -> UITargetedDragPreview?](./dropinteraction%28_,previewfordropping,withdefault%29.md)
   Asks the delegate for the targeted drag item preview to show during the drop animation.
 
 

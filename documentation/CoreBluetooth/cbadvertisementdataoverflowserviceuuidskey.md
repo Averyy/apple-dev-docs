@@ -1,7 +1,8 @@
 # CBAdvertisementDataOverflowServiceUUIDsKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of UUIDs found in the overflow area of the advertisement data.
 
@@ -20,27 +21,32 @@ An array of UUIDs found in the overflow area of the advertisement data.
 let CBAdvertisementDataOverflowServiceUUIDsKey: String
 ```
 
+```c
+extern NSString * const CBAdvertisementDataOverflowServiceUUIDsKey;
+```
+
 #### Discussion
 
-The value associated with this key is an array of one or more [`CBUUID`](cbuuid.md) objects, representing [`CBService`](cbservice.md) UUIDs.
+The value associated with this key is an array of one or more [`CBUUID`](./cbuuid.md) objects, representing [`CBService`](./cbservice.md) UUIDs.
 
-Because data stored in this area results from not fitting in the main advertisement, UUIDs listed here are “best effort” and may not always be accurate. For details about the overflow area of advertisement data, see the [`startAdvertising(_:)`](cbperipheralmanager/startadvertising(_:).md) method in [`CBPeripheralManager`](cbperipheralmanager.md).
+Because data stored in this area results from not fitting in the main advertisement, UUIDs listed here are “best effort” and may not always be accurate. For details about the overflow area of advertisement data, see the [`startAdvertising(_:)`](./cbperipheralmanager/startadvertising%28_%29.md) method in [`CBPeripheralManager`](./cbperipheralmanager.md).
 
 ## See Also
 
-- [let CBAdvertisementDataLocalNameKey: String](cbadvertisementdatalocalnamekey.md)
+### Advertisement Keys
+- [let CBAdvertisementDataLocalNameKey: String](./cbadvertisementdatalocalnamekey.md)
   The local name of a peripheral.
-- [let CBAdvertisementDataManufacturerDataKey: String](cbadvertisementdatamanufacturerdatakey.md)
+- [let CBAdvertisementDataManufacturerDataKey: String](./cbadvertisementdatamanufacturerdatakey.md)
   The manufacturer data of a peripheral.
-- [let CBAdvertisementDataServiceDataKey: String](cbadvertisementdataservicedatakey.md)
+- [let CBAdvertisementDataServiceDataKey: String](./cbadvertisementdataservicedatakey.md)
   A dictionary that contains service-specific advertisement data.
-- [let CBAdvertisementDataServiceUUIDsKey: String](cbadvertisementdataserviceuuidskey.md)
+- [let CBAdvertisementDataServiceUUIDsKey: String](./cbadvertisementdataserviceuuidskey.md)
   An array of service UUIDs.
-- [let CBAdvertisementDataTxPowerLevelKey: String](cbadvertisementdatatxpowerlevelkey.md)
+- [let CBAdvertisementDataTxPowerLevelKey: String](./cbadvertisementdatatxpowerlevelkey.md)
   The transmit power of a peripheral.
-- [let CBAdvertisementDataIsConnectable: String](cbadvertisementdataisconnectable.md)
+- [let CBAdvertisementDataIsConnectable: String](./cbadvertisementdataisconnectable.md)
   A Boolean value that indicates whether the advertising event type is connectable.
-- [let CBAdvertisementDataSolicitedServiceUUIDsKey: String](cbadvertisementdatasolicitedserviceuuidskey.md)
+- [let CBAdvertisementDataSolicitedServiceUUIDsKey: String](./cbadvertisementdatasolicitedserviceuuidskey.md)
   An array of solicited service UUIDs.
 
 

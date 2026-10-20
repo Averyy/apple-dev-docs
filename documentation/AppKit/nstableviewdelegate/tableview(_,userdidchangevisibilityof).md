@@ -1,7 +1,8 @@
 # tableView(_:userDidChangeVisibilityOf:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user changed the visibility of one or more table columns.
 
@@ -14,6 +15,10 @@ Tells the delegate that the user changed the visibility of one or more table col
 optional func tableView(_ tableView: NSTableView, userDidChangeVisibilityOf columns: [NSTableColumn])
 ```
 
+```objc
+- (void) tableView:(NSTableView *) tableView userDidChangeVisibilityOfTableColumns:(NSArray<NSTableColumn *> *) columns;
+```
+
 ## Parameters
 
 - `tableView`: The table view object requesting this information.
@@ -21,7 +26,8 @@ optional func tableView(_ tableView: NSTableView, userDidChangeVisibilityOf colu
 
 ## See Also
 
-- [func tableView(NSTableView, userCanChangeVisibilityOf: NSTableColumn) -> Bool](nstableviewdelegate/tableview(_:usercanchangevisibilityof:).md)
+### Showing and hiding columns
+- [func tableView(NSTableView, userCanChangeVisibilityOf: NSTableColumn) -> Bool](./tableview%28_,usercanchangevisibilityof%29.md)
   Asks the delegate to verify that the user can change the given column’s visibility.
 
 

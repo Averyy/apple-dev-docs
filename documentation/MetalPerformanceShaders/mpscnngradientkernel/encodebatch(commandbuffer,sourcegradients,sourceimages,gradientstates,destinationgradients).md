@@ -1,7 +1,8 @@
 # encodeBatch(commandBuffer:sourceGradients:sourceImages:gradientStates:destinationGradients:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], gradientStates: [MPSState], destinationGradients: [MPSImage])
+```
+
+```objc
+- (void) encodeBatchToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceGradients:(MPSImageBatch *) sourceGradients sourceImages:(MPSImageBatch *) sourceImages gradientStates:(MPSStateBatch *) gradientStates destinationGradients:(MPSImageBatch *) destinationGradients;
 ```
 
 

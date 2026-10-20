@@ -1,7 +1,8 @@
 # outputPixelFormat
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output buffer’s pixel format.
 
@@ -19,13 +20,18 @@ The output buffer’s pixel format.
 var outputPixelFormat: OSType { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) OSType outputPixelFormat;
+```
+
 ## See Also
 
-- [var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy](vngenerateopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring the Request
+- [var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The accuracy level for computing optical flow.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy](vngenerateopticalflowrequest/computationaccuracy-swift.enum.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   The supported optical flow accuracy levels.
-- [var keepNetworkOutput: Bool](vngenerateopticalflowrequest/keepnetworkoutput.md)
+- [var keepNetworkOutput: Bool](./keepnetworkoutput.md)
   A Boolean value that indicates whether to keep the raw pixel buffer coming from the machine learning network.
 
 

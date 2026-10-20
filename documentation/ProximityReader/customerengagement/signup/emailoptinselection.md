@@ -1,7 +1,8 @@
 # emailOptInSelection
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the customer opted-in to email marketing.
 
@@ -18,13 +19,14 @@ let emailOptInSelection: Bool
 
 ## See Also
 
-- [let emailAddress: String?](customerengagement/signup/emailaddress.md)
+### Getting sign-up details
+- [let emailAddress: String?](./emailaddress.md)
   The customer’s email address
-- [let name: PersonNameComponents?](customerengagement/signup/name.md)
+- [let name: PersonNameComponents?](./name.md)
   The customer’s full name.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/signup/phonenumber.md)
+- [let phoneNumber: CNPhoneNumber?](./phonenumber.md)
   The customer’s phone number.
-- [let smsOptInSelection: Bool](customerengagement/signup/smsoptinselection.md)
+- [let smsOptInSelection: Bool](./smsoptinselection.md)
   A Boolean value that indicates if the customer opted-in to SMS marketing.
 
 

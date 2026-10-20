@@ -1,7 +1,8 @@
 # home
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 weak var home: HMHome? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) HMHome * home;
 ```
 
 #### Discussion

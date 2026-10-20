@@ -1,7 +1,8 @@
 # candidateListTouchBarItem(_:beginSelectingCandidateAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user has started touching one of the candidates in the candidate list item.
 
@@ -15,6 +16,10 @@ Tells the delegate that the user has started touching one of the candidates in t
 optional func candidateListTouchBarItem(_ anItem: NSCandidateListTouchBarItem<AnyObject>, beginSelectingCandidateAt index: Int)
 ```
 
+```objc
+- (void) candidateListTouchBarItem:(NSCandidateListTouchBarItem *) anItem beginSelectingCandidateAtIndex:(NSInteger) index;
+```
+
 ## Parameters
 
 - `anItem`: The candidate list bar item that the user is interacting with.
@@ -22,9 +27,10 @@ optional func candidateListTouchBarItem(_ anItem: NSCandidateListTouchBarItem<An
 
 ## See Also
 
-- [func candidateListTouchBarItem(NSCandidateListTouchBarItem<AnyObject>, changeSelectionFromCandidateAt: Int, to: Int)](nscandidatelisttouchbaritemdelegate/candidatelisttouchbaritem(_:changeselectionfromcandidateat:to:).md)
+### Handling selection changes
+- [func candidateListTouchBarItem(NSCandidateListTouchBarItem<AnyObject>, changeSelectionFromCandidateAt: Int, to: Int)](./candidatelisttouchbaritem%28_,changeselectionfromcandidateat,to%29.md)
   Tells the delegate that user has moved from touching one candidate in the candidate list item to another.
-- [func candidateListTouchBarItem(NSCandidateListTouchBarItem<AnyObject>, endSelectingCandidateAt: Int)](nscandidatelisttouchbaritemdelegate/candidatelisttouchbaritem(_:endselectingcandidateat:).md)
+- [func candidateListTouchBarItem(NSCandidateListTouchBarItem<AnyObject>, endSelectingCandidateAt: Int)](./candidatelisttouchbaritem%28_,endselectingcandidateat%29.md)
   Tells the delegate that a user has stopped touching candidates in the candidate list item.
 
 

@@ -1,7 +1,8 @@
 # accept(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts the specified share metadata and returns the accepted share to an awaiting caller.
 
@@ -11,7 +12,7 @@ Accepts the specified share metadata and returns the accepted share to an awaiti
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

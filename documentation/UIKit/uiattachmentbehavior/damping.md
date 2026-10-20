@@ -1,7 +1,8 @@
 # damping
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of damping to apply to the attachment behavior.
 
@@ -9,7 +10,7 @@ The amount of damping to apply to the attachment behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The amount of damping to apply to the attachment behavior.
 var damping: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CGFloat damping;
+```
+
 ## See Also
 
-- [var anchorPoint: CGPoint](uiattachmentbehavior/anchorpoint.md)
+### Configuring an attachment behavior
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   The anchor point for the attachment behavior, if any.
-- [var attachedBehaviorType: UIAttachmentBehavior.AttachmentType](uiattachmentbehavior/attachedbehaviortype.md)
+- [var attachedBehaviorType: UIAttachmentBehavior.AttachmentType](./attachedbehaviortype.md)
   The type of the attachment behavior.
-- [var frequency: CGFloat](uiattachmentbehavior/frequency.md)
+- [var frequency: CGFloat](./frequency.md)
   The frequency of oscillation for the attachment behavior.
-- [var length: CGFloat](uiattachmentbehavior/length.md)
+- [var length: CGFloat](./length.md)
   The distance, in points, between the two attachment points of the attachment behavior.
-- [var frictionTorque: CGFloat](uiattachmentbehavior/frictiontorque.md)
+- [var frictionTorque: CGFloat](./frictiontorque.md)
   The amount of force needed to overcome rotational forces around an anchor point.
-- [var attachmentRange: UIFloatRange](uiattachmentbehavior/attachmentrange.md)
+- [var attachmentRange: UIFloatRange](./attachmentrange.md)
   The range of motion for the attachment behavior.
 
 

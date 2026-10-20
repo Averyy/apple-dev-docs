@@ -1,18 +1,19 @@
 # kCTFontPriorityProcess
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Priority of fonts registered for the process.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Priority of fonts registered for the process.
 var kCTFontPriorityProcess: Int { get }
 ```
 
+```c
+kCTFontPriorityProcess
+```
+
 #### Discussion
 
-Fonts registered for the process are in [`CTFontManagerScope.process`](ctfontmanagerscope/process.md).
+Fonts registered for the process are in [`CTFontManagerScope.process`](./ctfontmanagerscope/process.md).
 
 ## See Also
 
-- [var kCTFontPrioritySystem: Int](kctfontprioritysystem.md)
+### Font Priority
+- [var kCTFontPrioritySystem: Int](./kctfontprioritysystem.md)
   Priority of system fonts.
-- [var kCTFontPriorityNetwork: Int](kctfontprioritynetwork.md)
+- [var kCTFontPriorityNetwork: Int](./kctfontprioritynetwork.md)
   Priority of network fonts.
-- [var kCTFontPriorityComputer: Int](kctfontprioritycomputer.md)
+- [var kCTFontPriorityComputer: Int](./kctfontprioritycomputer.md)
   Priority of computer local fonts.
-- [var kCTFontPriorityUser: Int](kctfontpriorityuser.md)
+- [var kCTFontPriorityUser: Int](./kctfontpriorityuser.md)
   Priority of local fonts.
-- [var kCTFontPriorityDynamic: Int](kctfontprioritydynamic.md)
+- [var kCTFontPriorityDynamic: Int](./kctfontprioritydynamic.md)
   Priority of fonts registered dynamically, not located in a standard location.
 
 

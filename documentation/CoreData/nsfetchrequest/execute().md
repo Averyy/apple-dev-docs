@@ -1,7 +1,8 @@
 # execute()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the fetch request against the managed object context that is associated with the current queue.
 
@@ -20,9 +21,13 @@ Executes the fetch request against the managed object context that is associated
 func execute() throws -> [ResultType]
 ```
 
+```objc
+- (NSArray<id<NSFetchRequestResult>> *) execute:(NSError **) error;
+```
+
 #### Discussion
 
-Calling `execute` on an [`NSFetchRequest`](nsfetchrequest.md) will cause the [`NSFetchRequest`](nsfetchrequest.md) to run against the managed object context ([`NSManagedObjectContext`](nsmanagedobjectcontext.md)) that is associated with the queue on which the `execute` is called.
+Calling `execute` on an [`NSFetchRequest`](../nsfetchrequest.md) will cause the [`NSFetchRequest`](../nsfetchrequest.md) to run against the managed object context ([`NSManagedObjectContext`](../nsmanagedobjectcontext.md)) that is associated with the queue on which the `execute` is called.
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ManagedApp  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an identities provider.
 

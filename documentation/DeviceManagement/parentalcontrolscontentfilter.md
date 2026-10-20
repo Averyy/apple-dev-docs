@@ -1,7 +1,8 @@
 # ParentalControlsContentFilter
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the parental control web content filters.
 
@@ -10,7 +11,7 @@ The payload that configures the parental control web content filters.
 
 ## Declaration
 
-```swift
+```
 object ParentalControlsContentFilter
 ```
 
@@ -18,7 +19,7 @@ object ParentalControlsContentFilter
 
 Specify `com.apple.familycontrols.contentfilter` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -92,33 +93,58 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 ## Topics
 
 ### Objects
-- [object ParentalControlsContentFilter.SiteAllowListItem](parentalcontrolscontentfilter/siteallowlistitem.md)
+- [object ParentalControlsContentFilter.SiteAllowListItem](./parentalcontrolscontentfilter/siteallowlistitem.md)
   A dictionary defining a site for the allow list.
-- [object ParentalControlsContentFilter.SiteWhitelistItem](parentalcontrolscontentfilter/sitewhitelistitem.md)
+- [object ParentalControlsContentFilter.SiteWhitelistItem](./parentalcontrolscontentfilter/sitewhitelistitem.md)
   A dictionary defining a site for the allow list.
 
 ## Properties
 
-- `allowListEnabled` (boolean): If `true`, enables web content filters. Available: macOS 15.2+
-- `filterAllowList` ([string]): The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user. Available: macOS 15.2+
-- `filterBlacklist` ([string]): Use `filterDenyList` instead. Deprecated: macOS 15.2+
-- `filterDenyList` ([string]): The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user. Available: macOS 15.2+
-- `filterWhitelist` ([string]): Use `filterAllowList` instead. Deprecated: macOS 15.2+
+- `allowListEnabled` (boolean): If `true`, enables web content filters.
+
+  Available: macOS 15.2+
+
+  **Default**: `false`
+- `filterAllowList` ([string]): The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user.
+
+  Available: macOS 15.2+
+- `filterBlacklist` ([string]) *(deprecated)*: Use `filterDenyList` instead.
+
+  Deprecated: macOS 15.2+
+- `filterDenyList` ([string]): The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.
+
+  Available: macOS 15.2+
+- `filterWhitelist` ([string]) *(deprecated)*: Use `filterAllowList` instead.
+
+  Deprecated: macOS 15.2+
 - `restrictWeb` (boolean) *(required)*: If `true`, enables web content filters.
-- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites. The device requires this key if `allowListEnabled` is `true`. Available: macOS 15.2+
-- `siteWhitelist` ([ParentalControlsContentFilter.SiteWhitelistItem]): Use `siteAllowList` instead. Deprecated: macOS 15.2+
+- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites.
+
+  The device requires this key if `allowListEnabled` is `true`.
+
+  Available: macOS 15.2+
+- `siteWhitelist` ([ParentalControlsContentFilter.SiteWhitelistItem]) *(deprecated)*: Use `siteAllowList` instead.
+
+  Deprecated: macOS 15.2+
 - `useContentFilter` (boolean): If `true`, filters content automatically.
-- `whitelistEnabled` (boolean): Use `allowListEnabled` instead. Deprecated: macOS 15.2+
+
+  **Default**: `false`
+- `whitelistEnabled` (boolean) *(deprecated)*: Use `allowListEnabled` instead.
+
+  Deprecated: macOS 15.2+
+
+  **Default**: `false`
 
 ## See Also
 
-- [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)
+### Parental controls
+- [object ParentalControlsApplicationRestrictions](./parentalcontrolsapplicationrestrictions.md)
   The payload that configures parental controls for apps.
-- [object ParentalControlsDictionary](parentalcontrolsdictionary.md)
+- [object ParentalControlsDictionary](./parentalcontrolsdictionary.md)
   The payload that configures parental control dictionary restrictions.
-- [object ParentalControlsGameCenter](parentalcontrolsgamecenter.md)
+- [object ParentalControlsGameCenter](./parentalcontrolsgamecenter.md)
   The payload that configures Game Center parental controls.
-- [object ParentalControlsTimeLimits](parentalcontrolstimelimits.md)
+- [object ParentalControlsTimeLimits](./parentalcontrolstimelimits.md)
   The payload that configures parental control time limits.
 
 

@@ -1,7 +1,8 @@
 # errSecMobileMeServerServiceErr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A MobileMe service error occurred.
 
@@ -18,6 +19,10 @@ A MobileMe service error occurred.
 
 ```swift
 var errSecMobileMeServerServiceErr: OSStatus { get }
+```
+
+```c
+errSecMobileMeServerServiceErr
 ```
 
 

@@ -1,7 +1,8 @@
 # skipsPackageDescendants
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to treat packages like files and not descend into their contents.
 
@@ -20,11 +21,16 @@ An option to treat packages like files and not descend into their contents.
 static var skipsPackageDescendants: FileManager.DirectoryEnumerationOptions { get }
 ```
 
+```c
+NSDirectoryEnumerationSkipsPackageDescendants
+```
+
 ## See Also
 
-- [static var skipsSubdirectoryDescendants: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/skipssubdirectorydescendants.md)
+### Directory Enumeration Options
+- [static var skipsSubdirectoryDescendants: FileManager.DirectoryEnumerationOptions](./skipssubdirectorydescendants.md)
   An option to perform a shallow enumeration that doesn’t descend into directories.
-- [static var skipsHiddenFiles: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/skipshiddenfiles.md)
+- [static var skipsHiddenFiles: FileManager.DirectoryEnumerationOptions](./skipshiddenfiles.md)
   An option to skip hidden files.
 
 

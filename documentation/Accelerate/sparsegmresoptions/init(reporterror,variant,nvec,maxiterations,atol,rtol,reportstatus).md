@@ -1,18 +1,19 @@
 # init(reportError:variant:nvec:maxIterations:atol:rtol:reportStatus:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new GMRES options structure using the specified parameters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ init(reportError: ((UnsafePointer<CChar>) -> Void)?, variant: SparseGMRESVariant
 
 ## See Also
 
-- [init()](sparsegmresoptions/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(id:rig:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a solver definition for with a unique solver identifier and a rig.
 

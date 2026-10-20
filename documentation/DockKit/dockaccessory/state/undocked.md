@@ -1,7 +1,8 @@
 # DockAccessory.State.undocked
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory contains a device.
 
@@ -19,9 +20,10 @@ case undocked
 
 ## See Also
 
-- [DockAccessory.State.docked](dockaccessory/state/docked.md)
+### Getting properties
+- [DockAccessory.State.docked](./docked.md)
   The dock accessory doesn’t contain a device.
-- [var debugDescription: String](dockaccessory/state/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   The text description of the dock accessory state.
 
 

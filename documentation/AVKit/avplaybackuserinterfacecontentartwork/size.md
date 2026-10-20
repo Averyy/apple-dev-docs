@@ -1,7 +1,8 @@
 # size
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel dimensions of the artwork image.
 
@@ -14,6 +15,10 @@ The pixel dimensions of the artwork image.
 
 ```swift
 var size: CGSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGSize size;
 ```
 
 

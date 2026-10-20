@@ -1,14 +1,15 @@
 # IFNET_VLAN_MTU
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IFNET_VLAN_MTU = 0x00020000
 ```
 

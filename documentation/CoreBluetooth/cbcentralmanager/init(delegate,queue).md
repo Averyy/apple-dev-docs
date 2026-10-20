@@ -1,7 +1,8 @@
 # init(delegate:queue:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the central manager with a specified delegate and dispatch queue.
 
@@ -20,13 +21,17 @@ Initializes the central manager with a specified delegate and dispatch queue.
 convenience init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<CBCentralManagerDelegate>) delegate queue:(dispatch_queue_t) queue;
+```
+
 #### Return Value
 
 Returns a newly initialized central manager.
 
 #### Discussion
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 ## Parameters
 
@@ -35,13 +40,14 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 
 ## See Also
 
-- [convenience init()](cbcentralmanager/init.md)
+### Initializing a Central Manager
+- [convenience init()](./init%28%29.md)
   Initializes the central manager without a delegate.
-- [init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](cbcentralmanager/init(delegate:queue:options:).md)
+- [init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](./init%28delegate,queue,options%29.md)
   Initializes the central manager with specified delegate, dispatch queue, and initialization options.
-- [Central Manager Initialization Options](central-manager-initialization-options.md)
+- [Central Manager Initialization Options](../central-manager-initialization-options.md)
   Keys used to pass options when initializing a central manager.
-- [Central Manager State Restoration Options](central-manager-state-restoration-options.md)
+- [Central Manager State Restoration Options](../central-manager-state-restoration-options.md)
   Restore central manager state in scene-based apps.
 
 

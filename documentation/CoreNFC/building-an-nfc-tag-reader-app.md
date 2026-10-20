@@ -1,6 +1,8 @@
 # Building an NFC Tag-Reader App
 
-**Framework**: Core NFC
+**Framework**: Core NFC  
+**Role**: Sample Code  
+**Download**: [BuildingAnNFCTagReaderApp.zip](https://docs-assets.developer.apple.com/published/14275bb79e91/BuildingAnNFCTagReaderApp.zip)
 
 Read NFC tags with NDEF messages in your app.
 
@@ -16,24 +18,24 @@ This sample code project shows how to use Core NFC in an app to read Near Field 
 
 To read a tag, the sample app creates an NFC NDEF reader session and provides a delegate. The running reader session polls for NFC tags and calls the delegate when it finds tags that contain NDEF messages, passing the messages to the delegate. The delegate then stores the messages so the user can view them later.
 
-##### Configure the App to Detect Nfc Tags
+##### Configure the App to Detect NFC Tags
 
-Begin building your tag reader by configuring your app to detect NFC tags. Turn on Near Field Communication Tag Reading under the Capabilities tab for the project’s target (see [`Add a capability to a target`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev88ff319e7)). This step:
+Begin building your tag reader by configuring your app to detect NFC tags. Turn on Near Field Communication Tag Reading under the Capabilities tab for the project’s target (see [Add a capability to a target](https://help.apple.com/xcode/mac/current/#/dev88ff319e7)). This step:
 
 - Adds the NFC tag-reading feature to the App ID.
-- Adds the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.formats) to the entitlements file.
+- Adds the [`Near Field Communication Tag Reader Session Formats Entitlement`](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md) to the entitlements file.
 
-Next, add the [`NFCReaderUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nfcreaderusagedescription) key as a string item to the `Info.plist` file. For the value, enter a string that describes the reason the app needs access to the device’s NFC reader. If the app attempts to read a tag without providing this key and string, the app exits.
+Next, add the [`NFCReaderUsageDescription`](../BundleResources/information-property-list/nfcreaderusagedescription.md) key as a string item to the `Info.plist` file. For the value, enter a string that describes the reason the app needs access to the device’s NFC reader. If the app attempts to read a tag without providing this key and string, the app exits.
 
 ##### Start a Reader Session
 
-Create an [`NFCNDEFReaderSession`](nfcndefreadersession.md) object by calling the [`init(delegate:queue:invalidateAfterFirstRead:)`](nfcndefreadersession/init(delegate:queue:invalidateafterfirstread:).md) initializer method and passing in:
+Create an [`NFCNDEFReaderSession`](./nfcndefreadersession.md) object by calling the [`init(delegate:queue:invalidateAfterFirstRead:)`](./nfcndefreadersession/init%28delegate,queue,invalidateafterfirstread%29.md) initializer method and passing in:
 
 - The reader session delegate object.
 - The dispatch queue to use when calling methods on the delegate.
 - The `invalidateAfterFirstRead` flag to determine whether the reader session reads only a single tag or multiple tags.
 
-After creating the reader session, give instructions to the user by setting the [`alertMessage`](nfcreadersessionprotocol/alertmessage.md) property. For example, you might tell users, “Hold your iPhone near the item to learn more about it.” The system displays this message to the user while the phone is scanning for NFC tags. Finally, call [`begin()`](nfcreadersessionprotocol/begin().md) to start the reader session. This enables radio-frequency polling on the phone, and the phone begins scanning for tags.
+After creating the reader session, give instructions to the user by setting the [`alertMessage`](./nfcreadersessionprotocol/alertmessage.md) property. For example, you might tell users, “Hold your iPhone near the item to learn more about it.” The system displays this message to the user while the phone is scanning for NFC tags. Finally, call [`begin()`](./nfcreadersessionprotocol/begin%28%29.md) to start the reader session. This enables radio-frequency polling on the phone, and the phone begins scanning for tags.
 
 The sample app starts a reader session when the user taps the Scan button. The app configures the reader session to invalidate the session after reading the first tag. To read additional tags, the user taps the Scan button again.
 
@@ -58,7 +60,7 @@ The sample app starts a reader session when the user taps the Scan button. The a
 
 ##### Adopt the Reader Session Delegate Protocol
 
-The reader session requires a delegate object that conforms to the [`NFCNDEFReaderSessionDelegate`](nfcndefreadersessiondelegate.md) protocol. Adopting this protocol allows the delegate to receive notifications from the reader session when it:
+The reader session requires a delegate object that conforms to the [`NFCNDEFReaderSessionDelegate`](./nfcndefreadersessiondelegate.md) protocol. Adopting this protocol allows the delegate to receive notifications from the reader session when it:
 
 - Reads an NDEF message
 - Becomes invalid due to ending the session or encountering an error
@@ -67,9 +69,9 @@ The reader session requires a delegate object that conforms to the [`NFCNDEFRead
 class MessagesTableViewController: UITableViewController, NFCNDEFReaderSessionDelegate {
 ```
 
-##### Read an Ndef Message
+##### Read an NDEF Message
 
-Each time the reader session retrieves a new NDEF message, the session sends the message to the delegate by calling the [`readerSession(_:didDetectNDEFs:)`](nfcndefreadersessiondelegate/readersession(_:diddetectndefs:).md) method. This is the app’s opportunity to do something useful with the data. For instance, the sample app stores the message so the user can view it later.
+Each time the reader session retrieves a new NDEF message, the session sends the message to the delegate by calling the [`readerSession(_:didDetectNDEFs:)`](./nfcndefreadersessiondelegate/readersession%28_,diddetectndefs%29.md) method. This is the app’s opportunity to do something useful with the data. For instance, the sample app stores the message so the user can view it later.
 
 ```swift
 func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
@@ -83,11 +85,11 @@ func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NF
 
 ##### Handle an Invalid Reader Session
 
-When a reader session ends, it calls the delegate method [`readerSession(_:didInvalidateWithError:)`](nfcndefreadersessiondelegate/readersession(_:didinvalidatewitherror:).md) and passes in an error object that gives the reason for ending the session. Possible reasons include:
+When a reader session ends, it calls the delegate method [`readerSession(_:didInvalidateWithError:)`](./nfcndefreadersessiondelegate/readersession%28_,didinvalidatewitherror%29.md) and passes in an error object that gives the reason for ending the session. Possible reasons include:
 
-- The phone successfully read an NFC tag with a reader session configured to invalidate the session after reading the first tag. The error code is [`NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead`](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md).
-- The user canceled the session, or the app called [`invalidate()`](nfcreadersessionprotocol/invalidate().md) to end the session. The error code is [`NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled`](nfcreadererror-swift.struct/code/readersessioninvalidationerrorusercanceled.md).
-- An error occurred during the reader session. See [`NFCReaderError.Code`](nfcreadererror-swift.struct/code.md) for the complete list of error codes.
+- The phone successfully read an NFC tag with a reader session configured to invalidate the session after reading the first tag. The error code is [`NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead`](./nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md).
+- The user canceled the session, or the app called [`invalidate()`](./nfcreadersessionprotocol/invalidate%28%29.md) to end the session. The error code is [`NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled`](./nfcreadererror-swift.struct/code/readersessioninvalidationerrorusercanceled.md).
+- An error occurred during the reader session. See [`NFCReaderError.Code`](./nfcreadererror-swift.struct/code.md) for the complete list of error codes.
 
 In the sample app, the delegate displays an alert when the reader session ends for any reason other than reading the first tag during a single-tag reader session, or the user canceling the session. Also, you cannot reuse an invalidated reader session, so the sample app sets `self.session` to `nil`.
 
@@ -118,7 +120,7 @@ func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error
 }
 ```
 
-##### Write an Ndef Message
+##### Write an NDEF Message
 
 To write to a tag, the sample app starts a new reader session. This session must be active to write an NDEF message to the tag, so this time, `invalidateAfterFirstRead` is set to `false`, preventing the session from becoming invalid after reading the tag.
 
@@ -130,7 +132,7 @@ To write to a tag, the sample app starts a new reader session. This session must
 }
 ```
 
-When the reader session detects a tag, it calls the [`readerSession(_:didDetectNDEFs:)`](nfcndefreadersessiondelegate/readersession(_:diddetectndefs:).md) delegate method. However, because the session doesn’t become invalid after reading the first tag, it’s possible for the session to detect more than one tag. The sample app writes to one tag only, so it checks that the session detected only one tag. If the session detected more than one, the app asks the user to remove the tags, and then restarts polling to scan for a new tag.
+When the reader session detects a tag, it calls the [`readerSession(_:didDetectNDEFs:)`](./nfcndefreadersessiondelegate/readersession%28_,diddetectndefs%29.md) delegate method. However, because the session doesn’t become invalid after reading the first tag, it’s possible for the session to detect more than one tag. The sample app writes to one tag only, so it checks that the session detected only one tag. If the session detected more than one, the app asks the user to remove the tags, and then restarts polling to scan for a new tag.
 
 After the app confirms that it has only one tag, it connects to the tag and verifies that it’s writable. The app then writes the NDEF message it read earlier to the tag.
 
@@ -189,13 +191,14 @@ func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [NFCNDEFTag]
 
 ##### Support Background Tag Reading
 
-To learn how to set up your app to process tags that iOS reads in the background, see [`Adding Support for Background Tag Reading`](adding-support-for-background-tag-reading.md).
+To learn how to set up your app to process tags that iOS reads in the background, see [Adding Support for Background Tag Reading](./adding-support-for-background-tag-reading.md).
 
 ## See Also
 
-- [Adding Support for Background Tag Reading](adding-support-for-background-tag-reading.md)
+### Essentials
+- [Adding Support for Background Tag Reading](./adding-support-for-background-tag-reading.md)
   Allow users to scan NFC tags without an app using background tag reading.
-- [NFCReaderUsageDescription](../bundleresources/information-property-list/nfcreaderusagedescription.md)
+- [NFCReaderUsageDescription](../BundleResources/information-property-list/nfcreaderusagedescription.md)
   A message that tells people why the app is requesting access to the device’s NFC hardware.
 
 

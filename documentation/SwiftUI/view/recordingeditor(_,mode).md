@@ -1,7 +1,8 @@
 # recordingEditor(_:mode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the recording editor for the given recording URL with a specific mode.
 
@@ -22,7 +23,8 @@ Presents the recording editor for the given recording URL with a specific mode.
 
 ## See Also
 
-- [func recordingEditor(Binding<URL?>) -> some View](view/recordingeditor(_:).md)
+### Screen capture
+- [func recordingEditor(Binding<URL?>) -> some View](./recordingeditor%28_%29.md)
   Presents the recording editor for the given recording URL.
 
 

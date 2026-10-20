@@ -1,7 +1,8 @@
 # isCinematicVideoMetadataCaptureSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the format supports Cinematic Video Metadata capture.
 
@@ -16,6 +17,10 @@ Indicates whether the format supports Cinematic Video Metadata capture.
 
 ```swift
 var isCinematicVideoMetadataCaptureSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isCinematicVideoMetadataCaptureSupported) BOOL cinematicVideoMetadataCaptureSupported;
 ```
 
 #### Discussion

@@ -1,14 +1,15 @@
 # cpuid_microcode_version
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 uint32_t cpuid_microcode_version;
 ```
 

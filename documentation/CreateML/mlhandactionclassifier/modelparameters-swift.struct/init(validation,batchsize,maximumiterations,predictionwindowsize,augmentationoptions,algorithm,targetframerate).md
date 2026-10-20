@@ -1,7 +1,8 @@
 # init(validation:batchSize:maximumIterations:predictionWindowSize:augmentationOptions:algorithm:targetFrameRate:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of training session parameters for a hand action classifier task.
 
@@ -20,7 +21,7 @@ init(validation: MLHandActionClassifier.ModelParameters.ValidationData = .split(
 
 #### Discussion
 
-- validation: An [`MLHandActionClassifier.ModelParameters.ValidationData`](mlhandactionclassifier/modelparameters-swift.struct/validationdata.md) instance.
+- validation: An [`MLHandActionClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - batchSize: The number of videos the training session uses for each of its training iterations.
 - maximumIterations: The largest number of training iterations the training session can use.
 - predictionWindowSize: The number of frames the training session uses to train a hand action classifier. For example, set to 60 to capture hand actions that take 2 seconds from videos that have a frame rate of 30 frames per second.

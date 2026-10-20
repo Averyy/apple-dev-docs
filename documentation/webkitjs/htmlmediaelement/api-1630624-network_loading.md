@@ -11,7 +11,7 @@ The media resource is loading.
 
 ## Declaration
 
-```swift
+```
 const unsigned short NETWORK_LOADING;
 ```
 

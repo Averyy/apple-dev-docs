@@ -1,7 +1,8 @@
 # recordingEditorDidDismiss(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func recordingEditorDidDismiss(_ editor: SCRecordingEditor)
+```
+
+```objc
+- (void) recordingEditorDidDismiss:(SCRecordingEditor *) editor;
 ```
 
 #### Discussion

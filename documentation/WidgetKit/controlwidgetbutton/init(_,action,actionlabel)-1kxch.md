@@ -1,7 +1,8 @@
 # init(_:action:actionLabel:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button template for a control.
 
@@ -18,6 +19,8 @@ Creates a button template for a control.
 @MainActor
 @preconcurrency init(_ titleResource: LocalizedStringResource, action: Action, @ViewBuilder actionLabel: @escaping (Bool) -> ActionLabel) where Action : AppIntent
 ```
+
+Available when `Label` is `Text` and `ActionLabel` conforms to `View`.
 
 #### Discussion
 

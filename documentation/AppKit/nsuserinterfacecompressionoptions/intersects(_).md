@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the supplied compression options intersect with the current instance’s options.
 
@@ -14,9 +15,13 @@ Determines whether the supplied compression options intersect with the current i
 func intersects(_ options: NSUserInterfaceCompressionOptions) -> Bool
 ```
 
+```objc
+- (BOOL) intersectsOptions:(NSUserInterfaceCompressionOptions *) options;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if at least one of the supplied options is present in the instance’s options, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](../../Swift/true.md) if at least one of the supplied options is present in the instance’s options, or [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if at lea
 
 ## See Also
 
-- [var isEmpty: Bool](nsuserinterfacecompressionoptions/isempty.md)
+### Comparing compression options
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that denotes whether the option is empty.
-- [func contains(NSUserInterfaceCompressionOptions) -> Bool](nsuserinterfacecompressionoptions/contains(_:).md)
+- [func contains(NSUserInterfaceCompressionOptions) -> Bool](./contains%28_%29.md)
   Determines whether the supplied compression options are all present in the current instance.
 
 

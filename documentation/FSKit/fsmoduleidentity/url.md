@@ -1,7 +1,8 @@
 # url
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The module’s URL.
 
@@ -14,11 +15,16 @@ The module’s URL.
 var url: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * url;
+```
+
 ## See Also
 
-- [var bundleIdentifier: String](fsmoduleidentity/bundleidentifier.md)
+### Accessing module properties
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The module’s bundle identifier.
-- [var isEnabled: Bool](fsmoduleidentity/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates if the module is enabled.
 
 

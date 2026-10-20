@@ -1,17 +1,22 @@
 # withDevice(_:channelID:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a Bluetooth-based OBEX Session using a Bluetooth device and a Bluetooth RFCOMM channel ID.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withDevice(_ inDevice: IOBluetoothDevice!, channelID inRFCOMMChannelID: BluetoothRFCOMMChannelID) -> Self!
+```
+
+```objc
++ (instancetype) withDevice:(IOBluetoothDevice *) inDevice channelID:(BluetoothRFCOMMChannelID) inRFCOMMChannelID;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # render(in:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders the layer and its sublayers into the specified context.
 
@@ -19,11 +20,15 @@ Renders the layer and its sublayers into the specified context.
 func render(in ctx: CGContext)
 ```
 
+```objc
+- (void) renderInContext:(CGContextRef) ctx;
+```
+
 #### Discussion
 
 This method renders directly from the layer tree, ignoring any animations added to the render tree. Renders in the coordinate space of the layer.
 
-The following code shows how you can use [`render(in:)`](calayer/render(in:).md) to create a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) from a [`CAShapeLayer`](cashapelayer.md) with a [`path`](cashapelayer/path.md) that describes a circle. After creating the layer, the code creates a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) into which the circle is rendered. After rendering, [`UIGraphicsGetImageFromCurrentImageContext()`](https://developer.apple.com/documentation/uikit/uigraphicsgetimagefromcurrentimagecontext()) generates the image.
+The following code shows how you can use [`render(in:)`](./render%28in%29.md) to create a [`UIImage`](../../UIKit/uiimage.md) from a [`CAShapeLayer`](../cashapelayer.md) with a [`path`](../cashapelayer/path.md) that describes a circle. After creating the layer, the code creates a [`CGContext`](../../CoreGraphics/cgcontext.md) into which the circle is rendered. After rendering, [`UIGraphicsGetImageFromCurrentImageContext()`](../../UIKit/uigraphicsgetimagefromcurrentimagecontext%28%29.md) generates the image.
 
 ```swift
 let diameter: CGFloat = 100
@@ -46,7 +51,7 @@ let image = renderer.image {
 
 ```
 
-> ❗ **Important**:  The OS X v10.5 implementation of this method does not support the entire Core Animation composition model. `QCCompositionLayer`, `CAOpenGLLayer`, and `QTMovieLayer` layers are not rendered. Additionally, layers that use 3D transforms are not rendered, nor are layers that specify [`backgroundFilters`](calayer/backgroundfilters.md), [`filters`](calayer/filters.md), [`compositingFilter`](calayer/compositingfilter.md), or a [`mask`](calayer/mask.md) values. Future versions of macOS may add support for rendering these layers and properties.
+> ❗ **Important**:  The OS X v10.5 implementation of this method does not support the entire Core Animation composition model. `QCCompositionLayer`, `CAOpenGLLayer`, and `QTMovieLayer` layers are not rendered. Additionally, layers that use 3D transforms are not rendered, nor are layers that specify [`backgroundFilters`](./backgroundfilters.md), [`filters`](./filters.md), [`compositingFilter`](./compositingfilter.md), or a [`mask`](./mask.md) values. Future versions of macOS may add support for rendering these layers and properties.
 
 ## Parameters
 
@@ -54,21 +59,22 @@ let image = renderer.image {
 
 ## See Also
 
-- [var isOpaque: Bool](calayer/isopaque.md)
+### Configuring the layer’s rendering behavior
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value indicating whether the layer contains completely opaque content.
-- [var edgeAntialiasingMask: CAEdgeAntialiasingMask](calayer/edgeantialiasingmask.md)
+- [var edgeAntialiasingMask: CAEdgeAntialiasingMask](./edgeantialiasingmask.md)
   A bitmask defining how the edges of the receiver are rasterized.
-- [func contentsAreFlipped() -> Bool](calayer/contentsareflipped.md)
+- [func contentsAreFlipped() -> Bool](./contentsareflipped%28%29.md)
   Returns a Boolean indicating whether the layer content is implicitly flipped when rendered.
-- [var isGeometryFlipped: Bool](calayer/isgeometryflipped.md)
+- [var isGeometryFlipped: Bool](./isgeometryflipped.md)
   A Boolean that indicates whether the geometry of the layer and its sublayers is flipped vertically.
-- [var drawsAsynchronously: Bool](calayer/drawsasynchronously.md)
+- [var drawsAsynchronously: Bool](./drawsasynchronously.md)
   A Boolean indicating whether drawing commands are deferred and processed asynchronously in a background thread.
-- [var shouldRasterize: Bool](calayer/shouldrasterize.md)
+- [var shouldRasterize: Bool](./shouldrasterize.md)
   A Boolean that indicates whether the layer is rendered as a bitmap before compositing. Animatable
-- [var rasterizationScale: CGFloat](calayer/rasterizationscale.md)
+- [var rasterizationScale: CGFloat](./rasterizationscale.md)
   The scale at which to rasterize content, relative to the coordinate space of the layer. Animatable
-- [var contentsFormat: CALayerContentsFormat](calayer/contentsformat.md)
+- [var contentsFormat: CALayerContentsFormat](./contentsformat.md)
   A hint for the desired storage format of the layer contents.
 
 

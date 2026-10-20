@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Journaling Suggestions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty configuration object.
 

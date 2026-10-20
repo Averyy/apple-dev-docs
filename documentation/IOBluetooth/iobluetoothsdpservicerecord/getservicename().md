@@ -1,17 +1,22 @@
 # getServiceName()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the name of the service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getServiceName() -> String!
+```
+
+```objc
+- (NSString *) getServiceName;
 ```
 
 #### Return Value

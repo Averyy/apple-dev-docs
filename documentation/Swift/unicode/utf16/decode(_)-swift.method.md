@@ -1,7 +1,8 @@
 # decode(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts or continues decoding a UTF-16 sequence.
 

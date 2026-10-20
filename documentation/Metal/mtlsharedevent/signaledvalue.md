@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current signal value for the shareable event.
@@ -20,9 +21,13 @@ The current signal value for the shareable event.
 var signaledValue: UInt64 { get set }
 ```
 
+```objc
+@property (readwrite) uint64_t signaledValue;
+```
+
 ## Mentions
 
-- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](../synchronizing-events-between-a-gpu-and-the-cpu.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ When you set the value of a shared event, its value is changed only if you provi
 
 ## See Also
 
-- [func notify(MTLSharedEventListener, atValue: UInt64, block: MTLSharedEventNotificationBlock)](mtlsharedevent/notify(_:atvalue:block:).md)
+### Synchronizing a shareable event
+- [func notify(MTLSharedEventListener, atValue: UInt64, block: MTLSharedEventNotificationBlock)](./notify%28_,atvalue,block%29.md)
   Schedules a notification handler to be called after the shareable event’s signal value equals or exceeds a given value.
 
 

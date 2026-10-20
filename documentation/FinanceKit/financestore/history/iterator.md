@@ -1,7 +1,8 @@
 # FinanceStore.History.Iterator
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type that allows iteration over an array’s elements.
 
@@ -18,13 +19,13 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async throws -> FinanceStore.Changes<Model>?](financestore/history/iterator/next.md)
+- [func next() async throws -> FinanceStore.Changes<Model>?](./iterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

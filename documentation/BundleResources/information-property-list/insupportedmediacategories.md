@@ -1,7 +1,8 @@
 # INSupportedMediaCategories
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Types of media supported by your app’s media-playing intents.
 
@@ -11,9 +12,18 @@ Types of media supported by your app’s media-playing intents.
 - tvOS 14.0+
 - visionOS 1.0+
 
+## Details
 
+- **Name**: `INSupportedMediaCategories` (Supported intent media categories)
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `INMediaCategoryAudiobooks`: Audiobooks
+- `INMediaCategoryMusic`: Music
+- `INMediaCategoryGeneral`: General
+- `INMediaCategoryPodcasts`: Podcasts
+- `INMediaCategoryRadio`: Radio
 
 #### Discussion
 
@@ -23,13 +33,14 @@ To specify this information in Xcode, add [`INPlayMediaIntent`](https://develope
 
 ## See Also
 
-- [INIntentsSupported](information-property-list/inintentssupported.md)
+### Intents
+- [INIntentsSupported](./inintentssupported.md)
   The names of the intent classes your app handles directly.
-- [INIntentsRestrictedWhileLocked](information-property-list/inintentsrestrictedwhilelocked.md)
+- [INIntentsRestrictedWhileLocked](./inintentsrestrictedwhilelocked.md)
   The names of the intent classes your app can’t handle when the user locks the device.
-- [INIntentsRestrictedWhileProtectedDataUnavailable](information-property-list/inintentsrestrictedwhileprotecteddataunavailable.md)
+- [INIntentsRestrictedWhileProtectedDataUnavailable](./inintentsrestrictedwhileprotecteddataunavailable.md)
   The names of the intent classes your app can’t handle when the user locks the device or the system blocks access to protected data.
-- [NSFocusStatusUsageDescription](information-property-list/nsfocusstatususagedescription.md)
+- [NSFocusStatusUsageDescription](./nsfocusstatususagedescription.md)
   A message that tells people why your app requests access to a person’s focus status.
 
 

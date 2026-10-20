@@ -1,7 +1,8 @@
 # withUnsafePointer(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the given closure with a pointer to the given argument.
 

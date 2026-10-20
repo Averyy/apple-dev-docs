@@ -1,7 +1,8 @@
 # init(dwSize:dwAttackLevel:dwAttackTime:dwFadeLevel:dwFadeTime:)
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init(dwSize: DWORD, dwAttackLevel: DWORD, dwAttackTime: DWORD, dwFadeLevel: DWOR
 
 ## See Also
 
-- [init()](ffenvelope/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ShazamKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property key for the specified property.
 
@@ -26,7 +27,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](shmediaitemproperty/init(_:).md)
+### Creating a property key
+- [init(String)](./init%28_%29.md)
   Creates a property key for the specified property.
 
 

@@ -1,7 +1,8 @@
 # MLModelDescription
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about a model, primarily the input and output format for each feature the model expects, and optional metadata.
 
@@ -20,66 +21,71 @@ Information about a model, primarily the input and output format for each featur
 class MLModelDescription
 ```
 
+```objc
+@interface MLModelDescription : NSObject
+```
+
 ## Topics
 
 ### Accessing feature descriptions
-- [var stateDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/statedescriptionsbyname.md)
+- [var stateDescriptionsByName: [String : MLFeatureDescription]](./mlmodeldescription/statedescriptionsbyname.md)
   Description of the state features.
-- [var inputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/inputdescriptionsbyname.md)
+- [var inputDescriptionsByName: [String : MLFeatureDescription]](./mlmodeldescription/inputdescriptionsbyname.md)
   A dictionary of input feature descriptions, which the model keys by the input’s name.
-- [var outputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/outputdescriptionsbyname.md)
+- [var outputDescriptionsByName: [String : MLFeatureDescription]](./mlmodeldescription/outputdescriptionsbyname.md)
   A dictionary of output feature descriptions, which the model keys by the output’s name.
-- [class MLFeatureDescription](mlfeaturedescription.md)
+- [class MLFeatureDescription](./mlfeaturedescription.md)
   The name, type, and constraints of an input or output feature.
 ### Accessing metadata
-- [var classLabels: [Any]?](mlmodeldescription/classlabels.md)
+- [var classLabels: [Any]?](./mlmodeldescription/classlabels.md)
   An array of labels, which can be either strings or a numbers, for classifier models.
-- [var metadata: [MLModelMetadataKey : Any]](mlmodeldescription/metadata.md)
+- [var metadata: [MLModelMetadataKey : Any]](./mlmodeldescription/metadata.md)
   A dictionary of the model’s creation information, such as its description, author, version, and license.
-- [struct MLModelMetadataKey](mlmodelmetadatakey.md)
+- [struct MLModelMetadataKey](./mlmodelmetadatakey.md)
   The set of keys the model uses to store values in its metadata dictionary.
 ### Accessing prediction names
-- [var predictedFeatureName: String?](mlmodeldescription/predictedfeaturename.md)
+- [var predictedFeatureName: String?](./mlmodeldescription/predictedfeaturename.md)
   The name of the primary prediction feature output description.
-- [var predictedProbabilitiesName: String?](mlmodeldescription/predictedprobabilitiesname.md)
+- [var predictedProbabilitiesName: String?](./mlmodeldescription/predictedprobabilitiesname.md)
   The name of the feature output description for all probabilities of a prediction.
 ### Accessing update descriptions
-- [var isUpdatable: Bool](mlmodeldescription/isupdatable.md)
+- [var isUpdatable: Bool](./mlmodeldescription/isupdatable.md)
   A Boolean value that indicates whether you can update the model with additional training.
-- [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/traininginputdescriptionsbyname.md)
+- [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](./mlmodeldescription/traininginputdescriptionsbyname.md)
   A dictionary of the training input feature descriptions, which the model keys by the input’s name.
-- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](mlmodeldescription/parameterdescriptionsbykey.md)
+- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](./mlmodeldescription/parameterdescriptionsbykey.md)
   A dictionary of the descriptions for the model’s parameters.
-- [class MLParameterDescription](mlparameterdescription.md)
+- [class MLParameterDescription](./mlparameterdescription.md)
   A description of a model parameter that includes a default value and a constraint, if applicable.
 ### Initializers
-- [init?(coder: NSCoder)](mlmodeldescription/init(coder:).md)
+- [init?(coder: NSCoder)](./mlmodeldescription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [static var availableComputeDevices: [MLComputeDevice]](mlmodel/availablecomputedevices-6klyt.md)
+### Inspecting a model
+- [static var availableComputeDevices: [MLComputeDevice]](./mlmodel/availablecomputedevices-6klyt.md)
   The list of available compute devices that the model’s prediction methods use.
-- [var configuration: MLModelConfiguration](mlmodel/configuration.md)
+- [var configuration: MLModelConfiguration](./mlmodel/configuration.md)
   The configuration of the model set during initialization.
-- [var modelDescription: MLModelDescription](mlmodel/modeldescription.md)
+- [var modelDescription: MLModelDescription](./mlmodel/modeldescription.md)
   Model information you use at runtime during development, which Xcode also displays in its Core ML model editor view.
-- [func parameterValue(for: MLParameterKey) throws -> Any](mlmodel/parametervalue(for:).md)
+- [func parameterValue(for: MLParameterKey) throws -> Any](./mlmodel/parametervalue%28for%29.md)
   Returns a model parameter value for a key.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](./mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

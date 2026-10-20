@@ -1,7 +1,8 @@
 # kMDItemFonts
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Fonts used in this item. You should store the font's full name, the postscript name, or the font family name, based on the available information. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Fonts used in this item. You should store the font's full name, the postscript n
 
 ```swift
 let kMDItemFonts: CFString!
+```
+
+```c
+const CFStringRef kMDItemFonts;
 ```
 
 

@@ -1,7 +1,8 @@
 # NEAppExtensionConfiguration
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that defines configuration options for use in NetworkExtension app extensions.
 
@@ -21,24 +22,24 @@ A class that defines configuration options for use in NetworkExtension app exten
 
 #### Overview
 
-This class conforms to `NEAppExtensionConfigurationProtocol` and [`AppExtensionConfiguration`](https://developer.apple.com/documentation/extensionfoundation/appextensionconfiguration) from the [`ExtensionFoundation`](https://developer.apple.com/documentation/extensionfoundation) framework. It exists only for use by the framework; you don’t need to use its methods and properties directly.
+This class conforms to `NEAppExtensionConfigurationProtocol` and [`AppExtensionConfiguration`](../ExtensionFoundation/appextensionconfiguration.md) from the [ExtensionFoundation](../ExtensionFoundation/ExtensionFoundation.md) framework. It exists only for use by the framework; you don’t need to use its methods and properties directly.
 
 ## Topics
 
 ### Communicating over XPC
-- [func accept(connection: NSXPCConnection) -> Bool](neappextensionconfiguration/accept(connection:).md)
+- [func accept(connection: NSXPCConnection) -> Bool](./neappextensionconfiguration/accept%28connection%29.md)
   Accepts incoming XPC connections from the host process.
 
 ## Relationships
 
 ### Inherited By
-- [NEHotspotAuthenticationProviderConfiguration](nehotspotauthenticationproviderconfiguration.md)
-- [NEHotspotEvaluationProviderConfiguration](nehotspotevaluationproviderconfiguration.md)
-- [NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
+- [NEHotspotAuthenticationProviderConfiguration](./nehotspotauthenticationproviderconfiguration.md)
+- [NEHotspotEvaluationProviderConfiguration](./nehotspotevaluationproviderconfiguration.md)
+- [NEURLFilterControlProviderConfiguration](./neurlfiltercontrolproviderconfiguration.md)
 ### Conforms To
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

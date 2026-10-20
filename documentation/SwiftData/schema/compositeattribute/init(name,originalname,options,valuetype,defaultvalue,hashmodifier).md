@@ -1,7 +1,8 @@
 # init(name:originalName:options:valueType:defaultValue:hashModifier:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

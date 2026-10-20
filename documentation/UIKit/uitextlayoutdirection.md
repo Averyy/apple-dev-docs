@@ -1,16 +1,17 @@
 # UITextLayoutDirection
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The direction of text layout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,39 +19,44 @@ The direction of text layout.
 enum UITextLayoutDirection
 ```
 
+```c
+enum UITextLayoutDirection : NSInteger;
+```
+
 #### Overview
 
-Constants of this type are used as arguments in the [`position(from:in:offset:)`](uitextinput/position(from:in:offset:).md), [`position(within:farthestIn:)`](uitextinput/position(within:farthestin:).md), and [`characterRange(byExtending:in:)`](uitextinput/characterrange(byextending:in:).md) methods.
+Constants of this type are used as arguments in the [`position(from:in:offset:)`](./uitextinput/position%28from,in,offset%29.md), [`position(within:farthestIn:)`](./uitextinput/position%28within,farthestin%29.md), and [`characterRange(byExtending:in:)`](./uitextinput/characterrange%28byextending,in%29.md) methods.
 
 ## Topics
 
 ### Constants
-- [UITextLayoutDirection.right](uitextlayoutdirection/right.md)
+- [UITextLayoutDirection.right](./uitextlayoutdirection/right.md)
   Layout of the text to the right.
-- [UITextLayoutDirection.left](uitextlayoutdirection/left.md)
+- [UITextLayoutDirection.left](./uitextlayoutdirection/left.md)
   Layout of the text to the left.
-- [UITextLayoutDirection.up](uitextlayoutdirection/up.md)
+- [UITextLayoutDirection.up](./uitextlayoutdirection/up.md)
   Layout of the text in an upward direction.
-- [UITextLayoutDirection.down](uitextlayoutdirection/down.md)
+- [UITextLayoutDirection.down](./uitextlayoutdirection/down.md)
   Layout of the text in a downward direction.
 ### Initializers
-- [init?(rawValue: Int)](uitextlayoutdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uitextlayoutdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UITextDirection](uitextdirection.md)
+### Constants
+- [struct UITextDirection](./uitextdirection.md)
   The direction of the text.
-- [enum UITextStorageDirection](uitextstoragedirection.md)
+- [enum UITextStorageDirection](./uitextstoragedirection.md)
   The direction of text storage.
 
 

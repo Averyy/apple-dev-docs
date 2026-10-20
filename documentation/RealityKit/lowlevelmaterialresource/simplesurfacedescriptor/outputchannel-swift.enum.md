@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The output channel that the simple surface shader writes to.
 
@@ -20,24 +21,25 @@ enum OutputChannel
 ## Topics
 
 ### Specifying output channels
-- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.baseColor](lowlevelmaterialresource/simplesurfacedescriptor/outputchannel-swift.enum/basecolor.md)
+- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.baseColor](./outputchannel-swift.enum/basecolor.md)
   The base color output channel for the shader result.
-- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.emissiveColor](lowlevelmaterialresource/simplesurfacedescriptor/outputchannel-swift.enum/emissivecolor.md)
+- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.emissiveColor](./outputchannel-swift.enum/emissivecolor.md)
   The emissive color output channel for the shader result.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var outputChannel: LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel](lowlevelmaterialresource/simplesurfacedescriptor/outputchannel-swift.property.md)
+### Configuring the output
+- [var outputChannel: LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel](./outputchannel-swift.property.md)
   The surface output channel the shader writes to.
-- [var outputOpacity: Bool](lowlevelmaterialresource/simplesurfacedescriptor/outputopacity.md)
+- [var outputOpacity: Bool](./outputopacity.md)
   A Boolean value that indicates whether the shader also writes the computed alpha to the surface opacity output.
 
 

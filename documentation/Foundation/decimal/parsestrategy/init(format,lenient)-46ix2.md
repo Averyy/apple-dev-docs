@@ -1,7 +1,8 @@
 # init(format:lenient:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a parse strategy instance using the specified decimal format style.
 
@@ -20,16 +21,19 @@ Creates a parse strategy instance using the specified decimal format style.
 init(format: Format, lenient: Bool = true)
 ```
 
+Available when `Format` is `Decimal.FormatStyle`.
+
 ## Parameters
 
-- `format`: A configured [`Decimal.FormatStyle`](decimal/formatstyle.md) that describes the string format to parse.
+- `format`: A configured [`Decimal.FormatStyle`](../formatstyle.md) that describes the string format to parse.
 - `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to `true`.
 
 ## See Also
 
-- [init(format: Format, lenient: Bool)](decimal/parsestrategy/init(format:lenient:)-22h06.md)
+### Creating a decimal parse strategy
+- [init(format: Format, lenient: Bool)](./init%28format,lenient%29-22h06.md)
   Creates a parse strategy instance using the specified decimal currency format style.
-- [init(format: Format, lenient: Bool)](decimal/parsestrategy/init(format:lenient:)-36ja3.md)
+- [init(format: Format, lenient: Bool)](./init%28format,lenient%29-36ja3.md)
   Creates a parse strategy instance using the specified decimal percentage format style.
 
 

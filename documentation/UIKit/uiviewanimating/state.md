@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current state of the animation.
@@ -19,19 +20,24 @@ The current state of the animation.
 var state: UIViewAnimatingState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIViewAnimatingState state;
+```
+
 #### Discussion
 
-This property reflects the current state of the animation. An animator object starts in the [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) state. Calling the [`startAnimation()`](uiviewanimating/startanimation().md) or [`pauseAnimation()`](uiviewanimating/pauseanimation().md) method changes the state to [`UIViewAnimatingState.active`](uiviewanimatingstate/active.md). Changing the [`fractionComplete`](uiviewanimating/fractioncomplete.md) property also moves the animator to the active state. The animator remains in the active state until its animations finish, at which point it moves back to the inactive state.
+This property reflects the current state of the animation. An animator object starts in the [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) state. Calling the [`startAnimation()`](./startanimation%28%29.md) or [`pauseAnimation()`](./pauseanimation%28%29.md) method changes the state to [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md). Changing the [`fractionComplete`](./fractioncomplete.md) property also moves the animator to the active state. The animator remains in the active state until its animations finish, at which point it moves back to the inactive state.
 
-Calling the [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) method changes the state of the animator to [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md). When in this state, the animations are stopped and cannot be restarted until you call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method, which returns the animator to the inactive state.
+Calling the [`stopAnimation(_:)`](./stopanimation%28_%29.md) method changes the state of the animator to [`UIViewAnimatingState.stopped`](../uiviewanimatingstate/stopped.md). When in this state, the animations are stopped and cannot be restarted until you call the [`finishAnimation(at:)`](./finishanimation%28at%29.md) method, which returns the animator to the inactive state.
 
 ## See Also
 
-- [var fractionComplete: CGFloat](uiviewanimating/fractioncomplete.md)
+### Getting the animator’s state
+- [var fractionComplete: CGFloat](./fractioncomplete.md)
   The completion percentage of the animation.
-- [var isReversed: Bool](uiviewanimating/isreversed.md)
+- [var isReversed: Bool](./isreversed.md)
   A Boolean value indicating whether the animation is running in the reverse direction.
-- [var isRunning: Bool](uiviewanimating/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value indicating whether the animation is currently running.
 
 

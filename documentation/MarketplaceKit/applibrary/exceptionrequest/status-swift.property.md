@@ -1,7 +1,8 @@
 # status
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A status that indicates the parent or guardian’s decision for the request.
 
@@ -17,7 +18,8 @@ let status: AppLibrary.ExceptionRequest.Status
 
 ## See Also
 
-- [AppLibrary.ExceptionRequest.Status](applibrary/exceptionrequest/status-swift.enum.md)
+### Inspecting the request status
+- [AppLibrary.ExceptionRequest.Status](./status-swift.enum.md)
   The possible statuses of an exception request for an app.
 
 

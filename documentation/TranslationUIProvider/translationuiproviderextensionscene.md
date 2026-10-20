@@ -1,7 +1,8 @@
 # TranslationUIProviderExtensionScene
 
 **Framework**: TranslationUIProvider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol this extension’s scene need to implement.
 
@@ -19,15 +20,16 @@ protocol TranslationUIProviderExtensionScene : AppExtensionScene
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
 ### Conforming Types
-- [TranslationUIProviderSelectedTextScene](translationuiproviderselectedtextscene.md)
+- [TranslationUIProviderSelectedTextScene](./translationuiproviderselectedtextscene.md)
 
 ## See Also
 
-- [protocol TranslationUIProviderContext](translationuiprovidercontext.md)
+### Creating translation app extensions
+- [protocol TranslationUIProviderContext](./translationuiprovidercontext.md)
   An object that encapsulates the XPC communication between the host process and the third-party extension implementation.
-- [protocol TranslationUIProviderExtension](translationuiproviderextension.md)
+- [protocol TranslationUIProviderExtension](./translationuiproviderextension.md)
   A protocol that translation apps implement to provide a text-selection view.
 
 

@@ -1,7 +1,8 @@
 # synthFlags
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A set of flags indicating which synthesizer features are activated. Specific constants define the bits in this field whose meanings are defined for all synthesizers.
 
@@ -12,6 +13,10 @@ A set of flags indicating which synthesizer features are activated. Specific con
 
 ```swift
 var synthFlags: Int32
+```
+
+```c
+SInt32 synthFlags;
 ```
 
 

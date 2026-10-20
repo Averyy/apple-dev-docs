@@ -1,7 +1,8 @@
 # absolute(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a dimension with an absolute point value.
 
@@ -18,15 +19,20 @@ Creates a dimension with an absolute point value.
 class func absolute(_ absoluteDimension: CGFloat) -> Self
 ```
 
+```objc
++ (instancetype) absoluteDimension:(CGFloat) absoluteDimension;
+```
+
 ## See Also
 
-- [class func estimated(CGFloat) -> Self](nscollectionlayoutdimension/estimated(_:).md)
+### Creating a dimension
+- [class func estimated(CGFloat) -> Self](./estimated%28_%29.md)
   Creates a dimension with an estimated point value.
-- [class func fractionalHeight(CGFloat) -> Self](nscollectionlayoutdimension/fractionalheight(_:).md)
+- [class func fractionalHeight(CGFloat) -> Self](./fractionalheight%28_%29.md)
   Creates a dimension that is computed as a fraction of the height of the containing group.
-- [class func fractionalWidth(CGFloat) -> Self](nscollectionlayoutdimension/fractionalwidth(_:).md)
+- [class func fractionalWidth(CGFloat) -> Self](./fractionalwidth%28_%29.md)
   Creates a dimension that is computed as a fraction of the width of the containing group.
-- [class func uniformAcrossSiblings(estimate: CGFloat) -> Self](nscollectionlayoutdimension/uniformacrosssiblings(estimate:).md)
+- [class func uniformAcrossSiblings(estimate: CGFloat) -> Self](./uniformacrosssiblings%28estimate%29.md)
   Creates a dimension in which each item receives as much room as it requires and grows to match the dimension of its largest sibling.
 
 

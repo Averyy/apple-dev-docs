@@ -1,7 +1,8 @@
 # SystemLanguageModel.Executor.Model
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The model type this executor processes requests for.
 

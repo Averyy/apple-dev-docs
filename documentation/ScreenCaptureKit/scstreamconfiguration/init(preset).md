@@ -1,7 +1,8 @@
 # init(preset:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 
 ```swift
 convenience init(preset: SCStreamConfiguration.Preset)
+```
+
+```objc
++ (instancetype) streamConfigurationWithPreset:(SCStreamConfigurationPreset) preset;
 ```
 
 

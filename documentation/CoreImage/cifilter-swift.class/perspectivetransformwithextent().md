@@ -1,7 +1,8 @@
 # perspectiveTransformWithExtent()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Alters an image’s geometry to adjust the perspective while applying constraints.
 
@@ -19,6 +20,10 @@ Alters an image’s geometry to adjust the perspective while applying constraint
 class func perspectiveTransformWithExtent() -> any CIFilter & CIPerspectiveTransformWithExtent
 ```
 
+```objc
++ (CIFilter<CIPerspectiveTransformWithExtent> *) perspectiveTransformWithExtentFilter;
+```
+
 #### Return Value
 
 The adjusted image.
@@ -29,12 +34,12 @@ This method applies the perspective transform with extent filter to an image. Th
 
 The perspective transform with extent filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-left corner of the output image.
-- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-right corner of the output image.
-- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-left corner of the output image.
-- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-right corner of the output image.
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the dimensions of the output image.
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`topLeft`**: A [`CGPoint`](../../CoreFoundation/cgpoint.md) in the input image mapped to the top-left corner of the output image.
+- **`topRight`**: A [`CGPoint`](../../CoreFoundation/cgpoint.md) in the input image mapped to the top-right corner of the output image.
+- **`bottomLeft`**: A [`CGPoint`](../../CoreFoundation/cgpoint.md) in the input image mapped to the bottom-left corner of the output image.
+- **`bottomRight`**: A [`CGPoint`](../../CoreFoundation/cgpoint.md) in the input image mapped to the bottom-right corner of the output image.
+- **`extent`**: A [`CGRect`](../../CoreFoundation/cgrect.md) representing the dimensions of the output image.
 
 The following code creates a filter that changes the perspective of the input image:
 
@@ -51,29 +56,30 @@ func perspectiveTransformWithExtent(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective transform is applied, resulting in it appearing as though the photograph was taken from a different angle.](/images/com.apple.coreimage/media-3582226@2x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective transform is applied, resulting in it appearing as though the photograph was taken from a different angle.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3582226@2x.png)
 
 ## See Also
 
-- [class func bicubicScaleTransform() -> any CIFilter & CIBicubicScaleTransform](cifilter-swift.class/bicubicscaletransform.md)
+### Filters
+- [class func bicubicScaleTransform() -> any CIFilter & CIBicubicScaleTransform](./bicubicscaletransform%28%29.md)
   Produces a high-quality scaled version of an image.
-- [class func edgePreserveUpsample() -> any CIFilter & CIEdgePreserveUpsample](cifilter-swift.class/edgepreserveupsample.md)
+- [class func edgePreserveUpsample() -> any CIFilter & CIEdgePreserveUpsample](./edgepreserveupsample%28%29.md)
   Creates a high-quality upscaled image.
-- [class func keystoneCorrectionCombined() -> any CIFilter & CIKeystoneCorrectionCombined](cifilter-swift.class/keystonecorrectioncombined.md)
+- [class func keystoneCorrectionCombined() -> any CIFilter & CIKeystoneCorrectionCombined](./keystonecorrectioncombined%28%29.md)
   Adjusts the image vertically and horizontally to remove distortion.
-- [class func keystoneCorrectionHorizontal() -> any CIFilter & CIKeystoneCorrectionHorizontal](cifilter-swift.class/keystonecorrectionhorizontal.md)
+- [class func keystoneCorrectionHorizontal() -> any CIFilter & CIKeystoneCorrectionHorizontal](./keystonecorrectionhorizontal%28%29.md)
   Horizontally adjusts an image to remove distortion.
-- [class func keystoneCorrectionVertical() -> any CIFilter & CIKeystoneCorrectionVertical](cifilter-swift.class/keystonecorrectionvertical.md)
+- [class func keystoneCorrectionVertical() -> any CIFilter & CIKeystoneCorrectionVertical](./keystonecorrectionvertical%28%29.md)
   Vertically adjusts an image to remove distortion.
-- [class func lanczosScaleTransform() -> any CIFilter & CILanczosScaleTransform](cifilter-swift.class/lanczosscaletransform.md)
+- [class func lanczosScaleTransform() -> any CIFilter & CILanczosScaleTransform](./lanczosscaletransform%28%29.md)
   Creates a high-quality, scaled version of a source image.
-- [class func perspectiveCorrection() -> any CIFilter & CIPerspectiveCorrection](cifilter-swift.class/perspectivecorrection.md)
+- [class func perspectiveCorrection() -> any CIFilter & CIPerspectiveCorrection](./perspectivecorrection%28%29.md)
   Transforms an image’s perspective.
-- [class func perspectiveRotate() -> any CIFilter & CIPerspectiveRotate](cifilter-swift.class/perspectiverotate.md)
+- [class func perspectiveRotate() -> any CIFilter & CIPerspectiveRotate](./perspectiverotate%28%29.md)
   Rotates an image in a 3D space.
-- [class func perspectiveTransform() -> any CIFilter & CIPerspectiveTransform](cifilter-swift.class/perspectivetransform.md)
+- [class func perspectiveTransform() -> any CIFilter & CIPerspectiveTransform](./perspectivetransform%28%29.md)
   Alters an image’s geometry to adjust the perspective.
-- [class func straighten() -> any CIFilter & CIStraighten](cifilter-swift.class/straighten.md)
+- [class func straighten() -> any CIFilter & CIStraighten](./straighten%28%29.md)
   Rotates and crops an image.
 
 

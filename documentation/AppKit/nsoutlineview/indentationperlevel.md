@@ -1,12 +1,13 @@
 # indentationPerLevel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-level indentation, measured in points.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The per-level indentation, measured in points.
 var indentationPerLevel: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat indentationPerLevel;
+```
+
 ## See Also
 
-- [func level(forItem: Any?) -> Int](nsoutlineview/level(foritem:).md)
+### Working with Indentation
+- [func level(forItem: Any?) -> Int](./level%28foritem%29.md)
   Returns the indentation level for a given item.
-- [func level(forRow: Int) -> Int](nsoutlineview/level(forrow:).md)
+- [func level(forRow: Int) -> Int](./level%28forrow%29.md)
   Returns the indentation level for a given row.
-- [var indentationMarkerFollowsCell: Bool](nsoutlineview/indentationmarkerfollowscell.md)
+- [var indentationMarkerFollowsCell: Bool](./indentationmarkerfollowscell.md)
   A Boolean value indicating whether the indentation marker symbol displayed in the outline column should be indented along with the cell contents.
 
 

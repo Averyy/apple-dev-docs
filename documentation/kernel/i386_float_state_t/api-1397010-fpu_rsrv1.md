@@ -1,14 +1,15 @@
 # fpu_rsrv1
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 __uint8_t fpu_rsrv1;
 ```
 

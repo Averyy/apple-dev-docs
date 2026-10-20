@@ -1,7 +1,8 @@
 # vfs_clearauthcache_ttl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Remove time-to-live controls for cached credentials on a filesytem. Filesystems with remote authorization decisions (opaque) will still have KAUTH_VNODE_SEARCH rights cached for a default of CACHED_LOOKUP_RIGHT_TTL seconds.
 
@@ -10,11 +11,11 @@ Remove time-to-live controls for cached credentials on a filesytem. Filesystems 
 
 ## Declaration
 
-```swift
+```c
 void vfs_clearauthcache_ttl(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

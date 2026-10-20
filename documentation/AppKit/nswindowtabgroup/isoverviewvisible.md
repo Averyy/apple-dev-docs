@@ -1,7 +1,8 @@
 # isOverviewVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if the tab overview is currently displayed.
 
@@ -14,6 +15,10 @@ A Boolean value indicating if the tab overview is currently displayed.
 var isOverviewVisible: Bool { get set }
 ```
 
+```objc
+@property (getter=isOverviewVisible) BOOL overviewVisible;
+```
+
 #### Discussion
 
 The tab overview provides a visual overview of the windows that make up a tabbing group. This property indicates whether the tab overview is currently displayed. Setting the property either shows or hides the overview.
@@ -22,9 +27,11 @@ You can monitor this property for changes using key-value observing.
 
 ## See Also
 
-- [func toggleTabOverview(Any?)](nswindow/toggletaboverview(_:).md)
+### Related Documentation
+- [func toggleTabOverview(Any?)](../nswindow/toggletaboverview%28_%29.md)
   Shows or hides the tab overview.
-- [var isTabBarVisible: Bool](nswindowtabgroup/istabbarvisible.md)
+### Configuring the Tab User Interface
+- [var isTabBarVisible: Bool](./istabbarvisible.md)
   A Boolean value indicating whether the tabbed window group currently displays a tab bar.
 
 

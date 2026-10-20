@@ -1,7 +1,8 @@
 # location
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of this point.
 
@@ -20,7 +21,8 @@ var location: CGPoint { get }
 
 ## See Also
 
-- [var timeOffset: TimeInterval](pkstrokepoint-swift.struct/timeoffset.md)
+### Getting the point’s location
+- [var timeOffset: TimeInterval](./timeoffset.md)
   The time offset since the start of the stroke path in seconds.
 
 

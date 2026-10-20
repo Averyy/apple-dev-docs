@@ -1,23 +1,30 @@
 # CKFetchRecordChangesOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation that reports on the changed and deleted records in the specified record zone.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 10.0 (renamed: CKFetchRecordZoneChangesOperation)
+- iPadOS 8.0+ - Deprecated in 10.0 (renamed: CKFetchRecordZoneChangesOperation)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: CKFetchRecordZoneChangesOperation)
+- macOS 10.10+ - Deprecated in 10.12 (renamed: CKFetchRecordZoneChangesOperation)
+- tvOS 9.0+ - Deprecated in 10.0 (renamed: CKFetchRecordZoneChangesOperation)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: CKFetchRecordZoneChangesOperation)
+- watchOS 3.0+ - Deprecated in 3.0 (renamed: CKFetchRecordZoneChangesOperation)
+
+> **Deprecated**: Use [`CKFetchRecordZoneChangesOperation`](./ckfetchrecordzonechangesoperation.md) instead.
 
 ## Declaration
 
 ```swift
 class CKFetchRecordChangesOperation
+```
+
+```objc
+@interface CKFetchRecordChangesOperation : CKDatabaseOperation
 ```
 
 #### Overview
@@ -28,53 +35,54 @@ To get the most benefit out of a `CKFetchRecordChangesOperation` object, you mus
 
 The blocks you assign to process the fetched records execute serially on an internal queue that the operation manages. You must provide blocks capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
 
-If you assign a completion block to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/completionblock) property of the operation object, the system calls the completion block after the operation executes and returns its results to you. You can use a completion block to perform housekeeping tasks for the operation, but don’t use it to process the results of the operation. Any completion block you specify should handle the failure of the operation to complete its task, whether due to an error or an explicit cancellation.
+If you assign a completion block to the [`completionBlock`](../Foundation/operation/completionblock.md) property of the operation object, the system calls the completion block after the operation executes and returns its results to you. You can use a completion block to perform housekeeping tasks for the operation, but don’t use it to process the results of the operation. Any completion block you specify should handle the failure of the operation to complete its task, whether due to an error or an explicit cancellation.
 
 ## Topics
 
 ### Creating the Fetch Record Changes Operation
-- [convenience init(recordZoneID: CKRecordZone.ID, previousServerChangeToken: CKServerChangeToken?)](ckfetchrecordchangesoperation/init(recordzoneid:previousserverchangetoken:).md)
+- [convenience init(recordZoneID: CKRecordZone.ID, previousServerChangeToken: CKServerChangeToken?)](./ckfetchrecordchangesoperation/init%28recordzoneid,previousserverchangetoken%29.md)
   Creates an operation for fetching changes in the specified record zone.
-- [init()](ckfetchrecordchangesoperation/init.md)
+- [init()](./ckfetchrecordchangesoperation/init%28%29.md)
   Creates an empty fetch record changes operation.
 ### Configuring the Fetch Record Changes Operation
-- [var recordZoneID: CKRecordZone.ID?](ckfetchrecordchangesoperation/recordzoneid.md)
+- [var recordZoneID: CKRecordZone.ID?](./ckfetchrecordchangesoperation/recordzoneid.md)
   The ID of the record zone with the records you want to fetch.
-- [var previousServerChangeToken: CKServerChangeToken?](ckfetchrecordchangesoperation/previousserverchangetoken.md)
+- [var previousServerChangeToken: CKServerChangeToken?](./ckfetchrecordchangesoperation/previousserverchangetoken.md)
   The token that identifies the starting point for retrieving changes.
-- [var desiredKeys: [String]?](ckfetchrecordchangesoperation/desiredkeys.md)
+- [var desiredKeys: [String]?](./ckfetchrecordchangesoperation/desiredkeys.md)
   The fields to fetch for the requested records.
-- [var resultsLimit: Int](ckfetchrecordchangesoperation/resultslimit.md)
+- [var resultsLimit: Int](./ckfetchrecordchangesoperation/resultslimit.md)
   The maximum number of changed records to report with this operation object.
-- [var moreComing: Bool](ckfetchrecordchangesoperation/morecoming.md)
+- [var moreComing: Bool](./ckfetchrecordchangesoperation/morecoming.md)
   A Boolean value that indicates whether more results are available.
 ### Processing the Fetch Record Changes Results
-- [var recordChangedBlock: ((CKRecord) -> Void)?](ckfetchrecordchangesoperation/recordchangedblock.md)
+- [var recordChangedBlock: ((CKRecord) -> Void)?](./ckfetchrecordchangesoperation/recordchangedblock.md)
   The block to execute with the contents of a changed record.
-- [var recordWithIDWasDeletedBlock: ((CKRecord.ID) -> Void)?](ckfetchrecordchangesoperation/recordwithidwasdeletedblock.md)
+- [var recordWithIDWasDeletedBlock: ((CKRecord.ID) -> Void)?](./ckfetchrecordchangesoperation/recordwithidwasdeletedblock.md)
   The block to execute with the ID of a deleted record.
-- [var fetchRecordChangesCompletionBlock: ((CKServerChangeToken?, Data?, (any Error)?) -> Void)?](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md)
+- [var fetchRecordChangesCompletionBlock: ((CKServerChangeToken?, Data?, (any Error)?) -> Void)?](./ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md)
   The block to execute when the system finishes processing all changes.
 
 ## Relationships
 
 ### Inherits From
-- [CKDatabaseOperation](ckdatabaseoperation.md)
+- [CKDatabaseOperation](./ckdatabaseoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKDiscoverAllUserIdentitiesOperation](ckdiscoveralluseridentitiesoperation.md)
+### Deprecated classes
+- [class CKDiscoverAllUserIdentitiesOperation](./ckdiscoveralluseridentitiesoperation.md)
   An operation that uses the device’s contacts to search for discoverable iCloud users.
-- [class CKDiscoverUserIdentitiesOperation](ckdiscoveruseridentitiesoperation.md)
+- [class CKDiscoverUserIdentitiesOperation](./ckdiscoveruseridentitiesoperation.md)
   An operation that uses the provided criteria to search for discoverable iCloud users.
 
 

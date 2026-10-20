@@ -1,14 +1,15 @@
 # ElectricityFlowDirection.exported
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The utility receives electricity.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ For example, if a person sells their excess solar energy.
 
 ## See Also
 
-- [ElectricityFlowDirection.imported](electricityflowdirection/imported.md)
+### Specifying electricity flow
+- [ElectricityFlowDirection.imported](./imported.md)
   The utility delivers the electricity from the grid.
 
 

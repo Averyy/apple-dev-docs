@@ -1,15 +1,20 @@
 # kAudioUnitProperty_SpeakerConfiguration
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioUnitProperty_SpeakerConfiguration: AudioUnitPropertyID { get }
+```
+
+```c
+kAudioUnitProperty_SpeakerConfiguration
 ```
 
 

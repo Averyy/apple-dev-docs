@@ -1,7 +1,8 @@
 # SMPTETimeType
 
 **Framework**: Core Audio Types  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define SMPTE time types.
 
@@ -20,39 +21,44 @@ Constants that define SMPTE time types.
 enum SMPTETimeType
 ```
 
+```c
+enum SMPTETimeType : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [SMPTETimeType.type2398](smptetimetype/type2398.md)
-- [SMPTETimeType.type24](smptetimetype/type24.md)
-- [SMPTETimeType.type25](smptetimetype/type25.md)
-- [SMPTETimeType.type2997](smptetimetype/type2997.md)
-- [SMPTETimeType.type2997Drop](smptetimetype/type2997drop.md)
-- [SMPTETimeType.type30](smptetimetype/type30.md)
-- [SMPTETimeType.type30Drop](smptetimetype/type30drop.md)
-- [SMPTETimeType.type50](smptetimetype/type50.md)
-- [SMPTETimeType.type5994](smptetimetype/type5994.md)
-- [SMPTETimeType.type5994Drop](smptetimetype/type5994drop.md)
-- [SMPTETimeType.type60](smptetimetype/type60.md)
-- [SMPTETimeType.type60Drop](smptetimetype/type60drop.md)
+- [SMPTETimeType.type2398](./smptetimetype/type2398.md)
+- [SMPTETimeType.type24](./smptetimetype/type24.md)
+- [SMPTETimeType.type25](./smptetimetype/type25.md)
+- [SMPTETimeType.type2997](./smptetimetype/type2997.md)
+- [SMPTETimeType.type2997Drop](./smptetimetype/type2997drop.md)
+- [SMPTETimeType.type30](./smptetimetype/type30.md)
+- [SMPTETimeType.type30Drop](./smptetimetype/type30drop.md)
+- [SMPTETimeType.type50](./smptetimetype/type50.md)
+- [SMPTETimeType.type5994](./smptetimetype/type5994.md)
+- [SMPTETimeType.type5994Drop](./smptetimetype/type5994drop.md)
+- [SMPTETimeType.type60](./smptetimetype/type60.md)
+- [SMPTETimeType.type60Drop](./smptetimetype/type60drop.md)
 ### Initializers
-- [init?(rawValue: UInt32)](smptetimetype/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./smptetimetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SMPTETime](smptetime.md)
+### SMPTE Time
+- [struct SMPTETime](./smptetime.md)
   A structure that defines an SMPTE time value.
-- [struct SMPTETimeFlags](smptetimeflags.md)
+- [struct SMPTETimeFlags](./smptetimeflags.md)
   A structure that defines SMPTE time flags.
 
 

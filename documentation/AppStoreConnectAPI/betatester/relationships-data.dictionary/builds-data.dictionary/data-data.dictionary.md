@@ -1,7 +1,8 @@
 # BetaTester.Relationships.Builds.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object BetaTester.Relationships.Builds.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `builds`
 
 
 ---

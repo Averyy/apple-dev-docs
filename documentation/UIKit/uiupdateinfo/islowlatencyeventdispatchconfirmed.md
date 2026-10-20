@@ -1,7 +1,8 @@
 # isLowLatencyEventDispatchConfirmed
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system runs low-latency phases for the UI update.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether the system runs low-latency phases for th
 var isLowLatencyEventDispatchConfirmed: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLowLatencyEventDispatchConfirmed) BOOL lowLatencyEventDispatchConfirmed;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the system runs low-latency event dispatch during the UI update. Use this information to determine whether to avoid doing the same work more than once. For example, when considering whether to render a pencil-drawing stroke in [`afterEventDispatch`](uiupdateactionphase/aftereventdispatch.md), if this property is `true`, but [`isPerformingLowLatencyPhases`](uiupdateinfo/isperforminglowlatencyphases.md) is `false`, you might consider waiting until after low-latency event dispatch to render the stroke.
+The value of this property is [`true`](../../Swift/true.md) when the system runs low-latency event dispatch during the UI update. Use this information to determine whether to avoid doing the same work more than once. For example, when considering whether to render a pencil-drawing stroke in [`afterEventDispatch`](../uiupdateactionphase/aftereventdispatch.md), if this property is `true`, but [`isPerformingLowLatencyPhases`](./isperforminglowlatencyphases.md) is `false`, you might consider waiting until after low-latency event dispatch to render the stroke.
 
 This value can change from `false` to `true` during the UI update, but not from `true` to `false`.
 
@@ -28,9 +33,10 @@ This value can change from `false` to `true` during the UI update, but not from 
 
 ## See Also
 
-- [var isImmediatePresentationExpected: Bool](uiupdateinfo/isimmediatepresentationexpected.md)
+### Working with low-latency updates
+- [var isImmediatePresentationExpected: Bool](./isimmediatepresentationexpected.md)
   A Boolean value that indicates whether the system presents UI updates immediately upon completion.
-- [var isPerformingLowLatencyPhases: Bool](uiupdateinfo/isperforminglowlatencyphases.md)
+- [var isPerformingLowLatencyPhases: Bool](./isperforminglowlatencyphases.md)
   A Boolean value that indicates whether the UI update is in the low-latency phases.
 
 

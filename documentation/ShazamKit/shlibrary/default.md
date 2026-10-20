@@ -1,7 +1,8 @@
 # default
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An instance of the default Shazam library.
 
@@ -22,11 +23,12 @@ static let `default`: SHLibrary
 
 ## See Also
 
-- [func addItems([SHMediaItem]) async throws](shlibrary/additems(_:).md)
+### Managing the items in the library
+- [func addItems([SHMediaItem]) async throws](./additems%28_%29.md)
   Adds an array of media items to the user’s Shazam library.
-- [func removeItems([SHMediaItem]) async throws](shlibrary/removeitems(_:).md)
+- [func removeItems([SHMediaItem]) async throws](./removeitems%28_%29.md)
   Removes an array of media items from the user’s Shazam library.
-- [var items: [SHMediaItem]](shlibrary/items.md)
+- [var items: [SHMediaItem]](./items.md)
   The list of synced items in the Media Library.
 
 

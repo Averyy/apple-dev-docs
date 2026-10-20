@@ -1,7 +1,8 @@
 # MTRMessagesMessagePriority
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRMessagesMessagePriority
 ```
 
+```c
+enum MTRMessagesMessagePriority : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRMessagesMessagePriority.critical](mtrmessagesmessagepriority/critical.md)
-- [MTRMessagesMessagePriority.high](mtrmessagesmessagepriority/high.md)
-- [MTRMessagesMessagePriority.low](mtrmessagesmessagepriority/low.md)
-- [MTRMessagesMessagePriority.medium](mtrmessagesmessagepriority/medium.md)
+- [MTRMessagesMessagePriority.critical](./mtrmessagesmessagepriority/critical.md)
+- [MTRMessagesMessagePriority.high](./mtrmessagesmessagepriority/high.md)
+- [MTRMessagesMessagePriority.low](./mtrmessagesmessagepriority/low.md)
+- [MTRMessagesMessagePriority.medium](./mtrmessagesmessagepriority/medium.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrmessagesmessagepriority/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrmessagesmessagepriority/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

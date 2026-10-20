@@ -1,7 +1,8 @@
 # SecExternalFormat.formatBSAFE
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format for asymmetric keys. BSAFE is a standard from RSA Security for encryption, digital signatures, and privacy.
 
@@ -12,6 +13,10 @@ Format for asymmetric keys. BSAFE is a standard from RSA Security for encryption
 
 ```swift
 case formatBSAFE
+```
+
+```c
+kSecFormatBSAFE
 ```
 
 

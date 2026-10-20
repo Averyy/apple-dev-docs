@@ -1,16 +1,17 @@
 # UIPageViewController.NavigationOrientation.vertical
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Vertical orientation, with pages turning up and down.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ Vertical orientation, with pages turning up and down.
 case vertical
 ```
 
+```c
+UIPageViewControllerNavigationOrientationVertical
+```
+
 ## See Also
 
-- [UIPageViewController.NavigationOrientation.horizontal](uipageviewcontroller/navigationorientation-swift.enum/horizontal.md)
+### Constants
+- [UIPageViewController.NavigationOrientation.horizontal](./horizontal.md)
   Horizontal orientation, with pages turning left and right.
 
 

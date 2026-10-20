@@ -1,7 +1,8 @@
 # targetTensors
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tensors targeted by the graph, can be used to order the outputs when executable was created with a graph.
 
@@ -17,6 +18,10 @@ Tensors targeted by the graph, can be used to order the outputs when executable 
 
 ```swift
 var targetTensors: [MPSGraphTensor]? { get }
+```
+
+```objc
+@property (atomic, readonly, nullable) NSArray<MPSGraphTensor *> * targetTensors;
 ```
 
 

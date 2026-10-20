@@ -1,17 +1,22 @@
 # init(descriptor:size:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a font object for the specified font descriptor and font size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(descriptor fontDescriptor: NSFontDescriptor, size fontSize: CGFloat)
+```
+
+```objc
++ (NSFont *) fontWithDescriptor:(NSFontDescriptor *) fontDescriptor size:(CGFloat) fontSize;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ A font object for the specified descriptor and size.
 
 #### Discussion
 
-In most cases, you can simply use [`init(name:size:)`](nsfont/init(name:size:).md) to create standard scaled fonts.
+In most cases, you can simply use [`init(name:size:)`](./init%28name,size%29.md) to create standard scaled fonts.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ In most cases, you can simply use [`init(name:size:)`](nsfont/init(name:size:).m
 
 ## See Also
 
-- [init?(name: String, size: CGFloat)](nsfont/init(name:size:).md)
+### Creating Arbitrary Fonts
+- [init?(name: String, size: CGFloat)](./init%28name,size%29.md)
   Creates a font object for the specified font name and font size.
-- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](nsfont/init(descriptor:texttransform:).md)
+- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](./init%28descriptor,texttransform%29.md)
   Returns a font object for the specified font descriptor and text transform.
-- [init?(name: String, matrix: UnsafePointer<CGFloat>)](nsfont/init(name:matrix:).md)
+- [init?(name: String, matrix: UnsafePointer<CGFloat>)](./init%28name,matrix%29.md)
   Returns a font object for the specified font name and matrix.
 
 

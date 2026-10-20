@@ -1,7 +1,8 @@
 # removeSuite(named:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified domain from the search list of the current object.
 
@@ -20,13 +21,18 @@ Removes the specified domain from the search list of the current object.
 func removeSuite(named suiteName: String)
 ```
 
+```objc
+- (void) removeSuiteNamed:(NSString *) suiteName;
+```
+
 ## Parameters
 
 - `suiteName`: The bundle identifier for the domain you want to remove. Specify the same string you used when you added the domain.
 
 ## See Also
 
-- [func addSuite(named: String)](userdefaults/addsuite(named:).md)
+### Adding and removing search domains
+- [func addSuite(named: String)](./addsuite%28named%29.md)
   Inserts settings for the specified domain into the search list of the current object.
 
 

@@ -1,7 +1,8 @@
 # MPSCNNGroupNormalizationGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,26 +18,30 @@
 class MPSCNNGroupNormalizationGradientState
 ```
 
+```objc
+@interface MPSCNNGroupNormalizationGradientState : MPSNNGradientState
+```
+
 ## Topics
 
 ### Instance Properties
-- [var beta: (any MTLBuffer)?](mpscnngroupnormalizationgradientstate/beta.md)
-- [var gamma: (any MTLBuffer)?](mpscnngroupnormalizationgradientstate/gamma.md)
-- [var gradientForBeta: any MTLBuffer](mpscnngroupnormalizationgradientstate/gradientforbeta.md)
-- [var gradientForGamma: any MTLBuffer](mpscnngroupnormalizationgradientstate/gradientforgamma.md)
-- [var groupNormalization: MPSCNNGroupNormalization](mpscnngroupnormalizationgradientstate/groupnormalization.md)
+- [var beta: (any MTLBuffer)?](./mpscnngroupnormalizationgradientstate/beta.md)
+- [var gamma: (any MTLBuffer)?](./mpscnngroupnormalizationgradientstate/gamma.md)
+- [var gradientForBeta: any MTLBuffer](./mpscnngroupnormalizationgradientstate/gradientforbeta.md)
+- [var gradientForGamma: any MTLBuffer](./mpscnngroupnormalizationgradientstate/gradientforgamma.md)
+- [var groupNormalization: MPSCNNGroupNormalization](./mpscnngroupnormalizationgradientstate/groupnormalization.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientState](mpsnngradientstate.md)
+- [MPSNNGradientState](./mpsnngradientstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

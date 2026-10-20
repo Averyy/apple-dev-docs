@@ -1,7 +1,8 @@
 # systemID
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the system identifier associated with the receiver.
 
@@ -15,17 +16,22 @@ Returns the system identifier associated with the receiver.
 var systemID: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * systemID;
+```
+
 #### Return Value
 
 The system identifier associated with the receiver.
 
 ## See Also
 
-- [var isExternal: Bool](xmldtdnode/isexternal.md)
+### Managing DTD Identifiers
+- [var isExternal: Bool](./isexternal.md)
   True if the system id is set. Valid for entities and notations.
-- [var notationName: String?](xmldtdnode/notationname.md)
+- [var notationName: String?](./notationname.md)
   Returns the name of the notation associated with the receiver.
-- [var publicID: String?](xmldtdnode/publicid.md)
+- [var publicID: String?](./publicid.md)
   Returns the public identifier associated with the receiver.
 
 

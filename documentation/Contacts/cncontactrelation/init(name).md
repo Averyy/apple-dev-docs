@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Contacts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object with the name of the related contact.
 
@@ -17,6 +18,10 @@ Creates an object with the name of the related contact.
 
 ```swift
 init(name: String)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # ARSkeleton.JointName
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A name identifier for a joint.
 
@@ -15,55 +16,60 @@ A name identifier for a joint.
 struct JointName
 ```
 
+```c
+typedef NSString * ARSkeletonJointName;
+```
+
 #### Discussion
 
 Use this class to access information about a named joint, such as its index in a skeleton’s array of joints, or its position on the screen or in the physical environment.
 
-When you’re tracking a body in 2D space, you get the screen-space position of a named joint by using the [`landmark(for:)`](arskeleton2d/landmark(for:).md) function.
+When you’re tracking a body in 2D space, you get the screen-space position of a named joint by using the [`landmark(for:)`](../arskeleton2d/landmark%28for%29.md) function.
 
-When you’re tracking a body in 3D space, you get a named joint’s position in either local or model space by using the [`localTransform(for:)`](arskeleton3d/localtransform(for:).md) or [`modelTransform(for:)`](arskeleton3d/modeltransform(for:).md) functions, respectively.
+When you’re tracking a body in 3D space, you get a named joint’s position in either local or model space by using the [`localTransform(for:)`](../arskeleton3d/localtransform%28for%29.md) or [`modelTransform(for:)`](../arskeleton3d/modeltransform%28for%29.md) functions, respectively.
 
 ## Topics
 
 ### Creating a Joint Name
-- [init(rawValue: String)](arskeleton/jointname/init(rawvalue:).md)
+- [init(rawValue: String)](./jointname/init%28rawvalue%29.md)
   Creates a new joint name.
-- [init?(VNRecognizedPointKey)](arskeleton/jointname/init(_:).md)
+- [init?(VNRecognizedPointKey)](./jointname/init%28_%29.md)
   Returns a joint name that corresponds to a key point defined in a human body pose.
-- [struct VNRecognizedPointKey](../vision/vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](../../Vision/vnrecognizedpointkey.md)
   The data type for all recognized point keys.
 ### Identifying Joints
-- [static let root: ARSkeleton.JointName](arskeleton/jointname/root.md)
+- [static let root: ARSkeleton.JointName](./jointname/root.md)
   A skeletal joint that’s the root of all other joints.
-- [static let head: ARSkeleton.JointName](arskeleton/jointname/head.md)
+- [static let head: ARSkeleton.JointName](./jointname/head.md)
   A skeletal joint that ARKit tracks representing the head.
-- [static let leftFoot: ARSkeleton.JointName](arskeleton/jointname/leftfoot.md)
+- [static let leftFoot: ARSkeleton.JointName](./jointname/leftfoot.md)
   A skeletal joint that ARKit tracks representing the left foot.
-- [static let leftHand: ARSkeleton.JointName](arskeleton/jointname/lefthand.md)
+- [static let leftHand: ARSkeleton.JointName](./jointname/lefthand.md)
   A skeletal joint that ARKit tracks representing the left hand.
-- [static let leftShoulder: ARSkeleton.JointName](arskeleton/jointname/leftshoulder.md)
+- [static let leftShoulder: ARSkeleton.JointName](./jointname/leftshoulder.md)
   A skeletal joint that ARKit tracks representing the left shoulder.
-- [static let rightFoot: ARSkeleton.JointName](arskeleton/jointname/rightfoot.md)
+- [static let rightFoot: ARSkeleton.JointName](./jointname/rightfoot.md)
   A skeletal joint that ARKit tracks representing the right foot.
-- [static let rightHand: ARSkeleton.JointName](arskeleton/jointname/righthand.md)
+- [static let rightHand: ARSkeleton.JointName](./jointname/righthand.md)
   A skeletal joint that ARKit tracks representing the right hand.
-- [static let rightShoulder: ARSkeleton.JointName](arskeleton/jointname/rightshoulder.md)
+- [static let rightShoulder: ARSkeleton.JointName](./jointname/rightshoulder.md)
   A skeletal joint that ARKit tracks representing the right shoulder.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var definition: ARSkeletonDefinition](arskeleton/definition.md)
+### Getting Joint Information
+- [var definition: ARSkeletonDefinition](./definition.md)
   The particular configuration of joints that define a body’s current state.
-- [func isJointTracked(Int) -> Bool](arskeleton/isjointtracked(_:).md)
+- [func isJointTracked(Int) -> Bool](./isjointtracked%28_%29.md)
   Tells you whether ARKit tracks a joint at a particular index.
 
 

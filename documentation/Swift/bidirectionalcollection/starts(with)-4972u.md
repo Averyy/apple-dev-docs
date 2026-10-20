@@ -1,7 +1,8 @@
 # starts(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in the specified regex.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the initial elements of the sequence 
 ```swift
 func starts(with regex: some RegexComponent) -> Bool
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

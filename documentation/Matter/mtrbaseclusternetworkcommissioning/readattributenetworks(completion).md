@@ -1,7 +1,8 @@
 # readAttributeNetworks(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNetworks(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNetworks() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeNetworksWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

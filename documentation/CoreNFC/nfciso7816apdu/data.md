@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data to transmit.
 
@@ -14,6 +15,10 @@ The data to transmit.
 
 ```swift
 var data: Data? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * data;
 ```
 
 

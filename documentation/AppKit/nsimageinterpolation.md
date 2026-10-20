@@ -1,12 +1,13 @@
 # NSImageInterpolation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the interpolation, or image smoothing, behavior used by the image interpolation property.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,47 +15,52 @@ Constants that specify the interpolation, or image smoothing, behavior used by t
 enum NSImageInterpolation
 ```
 
+```c
+enum NSImageInterpolation : NSUInteger;
+```
+
 #### Overview
 
-Use these constants with the [`imageInterpolation`](nsgraphicscontext/imageinterpolation.md) property.
+Use these constants with the [`imageInterpolation`](./nsgraphicscontext/imageinterpolation.md) property.
 
 ## Topics
 
 ### Constants
-- [NSImageInterpolation.default](nsimageinterpolation/default.md)
+- [NSImageInterpolation.default](./nsimageinterpolation/default.md)
   Use the context’s default interpolation.
-- [NSImageInterpolation.none](nsimageinterpolation/none.md)
+- [NSImageInterpolation.none](./nsimageinterpolation/none.md)
   No interpolation.
-- [NSImageInterpolation.low](nsimageinterpolation/low.md)
+- [NSImageInterpolation.low](./nsimageinterpolation/low.md)
   Fast, low-quality interpolation.
-- [NSImageInterpolation.medium](nsimageinterpolation/medium.md)
+- [NSImageInterpolation.medium](./nsimageinterpolation/medium.md)
   Medium quality, slower than the low interpolation option.
-- [NSImageInterpolation.high](nsimageinterpolation/high.md)
+- [NSImageInterpolation.high](./nsimageinterpolation/high.md)
   Highest quality, slower than the medium interpolation option.
 ### Initializers
-- [init?(rawValue: UInt)](nsimageinterpolation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsimageinterpolation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var compositingOperation: NSCompositingOperation](nsgraphicscontext/compositingoperation.md)
+### Configuring Rendering Options
+- [var compositingOperation: NSCompositingOperation](./nsgraphicscontext/compositingoperation.md)
   The graphics context’s global compositing operation setting.
-- [enum NSCompositingOperation](nscompositingoperation.md)
+- [enum NSCompositingOperation](./nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
-- [var imageInterpolation: NSImageInterpolation](nsgraphicscontext/imageinterpolation.md)
+- [var imageInterpolation: NSImageInterpolation](./nsgraphicscontext/imageinterpolation.md)
   A constant that specifies the graphics context’s interpolation, or image smoothing, behavior.
-- [var shouldAntialias: Bool](nsgraphicscontext/shouldantialias.md)
+- [var shouldAntialias: Bool](./nsgraphicscontext/shouldantialias.md)
   A Boolean value that indicates whether the graphics context uses antialiasing.
-- [var patternPhase: NSPoint](nsgraphicscontext/patternphase.md)
+- [var patternPhase: NSPoint](./nsgraphicscontext/patternphase.md)
   The amount to offset the pattern color when filling the graphics context.
 
 

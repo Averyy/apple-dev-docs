@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Executes a closure on the sequence’s contiguous storage.
@@ -38,6 +39,12 @@ A `Collection` that provides its own implementation of this method must provide 
 ## Parameters
 
 - `body`: A closure that receives an `UnsafeBufferPointer` to the sequence’s contiguous storage.
+
+## Default Implementations
+
+### Sequence Implementations
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29-2gxj0.md)
+  Executes a closure on the sequence’s contiguous storage.
 
 
 ---

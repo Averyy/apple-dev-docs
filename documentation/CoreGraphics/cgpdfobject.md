@@ -1,6 +1,7 @@
 # CGPDFObject
 
-**Framework**: Core Graphics
+**Framework**: Core Graphics  
+**Role**: API Collection
 
 An object representing content within a PDF document.
 
@@ -13,26 +14,27 @@ This object is not derived from CFType and therefore there are no functions for 
 ## Topics
 
 ### Getting Object Types and Values
-- [func CGPDFObjectGetType(CGPDFObjectRef) -> CGPDFObjectType](cgpdfobjectgettype(_:).md)
+- [func CGPDFObjectGetType(CGPDFObjectRef) -> CGPDFObjectType](./cgpdfobjectgettype%28_%29.md)
   Returns the PDF type identifier of an object.
-- [func CGPDFObjectGetValue(CGPDFObjectRef, CGPDFObjectType, UnsafeMutableRawPointer?) -> Bool](cgpdfobjectgetvalue(_:_:_:).md)
+- [func CGPDFObjectGetValue(CGPDFObjectRef, CGPDFObjectType, UnsafeMutableRawPointer?) -> Bool](./cgpdfobjectgetvalue%28_,_,_%29.md)
   Returns whether an object is of a given type and if it is, retrieves its value.
 ### Data Types
-- [struct CGPDFObjectRef](cgpdfobjectref.md)
+- [struct CGPDFObjectRef](./cgpdfobjectref.md)
   A type that contains information about a PDF object.
-- [typealias CGPDFBoolean](cgpdfboolean.md)
+- [typealias CGPDFBoolean](./cgpdfboolean.md)
   A PDF Boolean value.
-- [typealias CGPDFInteger](cgpdfinteger.md)
+- [typealias CGPDFInteger](./cgpdfinteger.md)
   A PDF integer value.
-- [typealias CGPDFReal](cgpdfreal.md)
+- [typealias CGPDFReal](./cgpdfreal.md)
   A PDF real value.
 ### Constants
-- [enum CGPDFObjectType](cgpdfobjecttype.md)
+- [enum CGPDFObjectType](./cgpdfobjecttype.md)
   Types of PDF object.
 
 ## See Also
 
-- [Quartz 2D Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
+### Related Documentation
+- [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
 
 
 ---

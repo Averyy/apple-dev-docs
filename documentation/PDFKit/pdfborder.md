@@ -1,7 +1,8 @@
 # PDFBorder
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An optional border for an annotation that lies completely within the annotation rectangle.
 
@@ -19,59 +20,64 @@ An optional border for an annotation that lies completely within the annotation 
 class PDFBorder
 ```
 
+```objc
+@interface PDFBorder : NSObject
+```
+
 ## Topics
 
 ### Working with Border Styles and Characteristics
-- [var style: PDFBorderStyle](pdfborder/style.md)
+- [var style: PDFBorderStyle](./pdfborder/style.md)
   Sets the border style.
-- [enum PDFBorderStyle](pdfborderstyle.md)
+- [enum PDFBorderStyle](./pdfborderstyle.md)
   PDF Kit annotation borders may have the following styles.
-- [var lineWidth: CGFloat](pdfborder/linewidth.md)
+- [var lineWidth: CGFloat](./pdfborder/linewidth.md)
   Sets the line width (in points) for the border.
-- [var dashPattern: [Any]?](pdfborder/dashpattern.md)
+- [var dashPattern: [Any]?](./pdfborder/dashpattern.md)
   Gets the dash pattern for the border as an array of NSNumber objects.
-- [var borderKeyValues: [AnyHashable : Any]](pdfborder/borderkeyvalues.md)
+- [var borderKeyValues: [AnyHashable : Any]](./pdfborder/borderkeyvalues.md)
   A dictionary that contains a deep copy of all border properties.
-- [struct PDFBorderKey](pdfborderkey.md)
+- [struct PDFBorderKey](./pdfborderkey.md)
 ### Drawing Borders
-- [func draw(in: CGRect)](pdfborder/draw(in:).md)
+- [func draw(in: CGRect)](./pdfborder/draw%28in%29.md)
   Draws the border.
 ### Initializers
-- [init?(coder: NSCoder)](pdfborder/init(coder:).md)
+- [init?(coder: NSCoder)](./pdfborder/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var alignment: NSTextAlignment](pdfannotation/alignment.md)
+### Managing Annotation Display Characteristics
+- [var alignment: NSTextAlignment](./pdfannotation/alignment.md)
   The alignment of the free text and text widget annotation’s text content.
-- [var bounds: CGRect](pdfannotation/bounds.md)
+- [var bounds: CGRect](./pdfannotation/bounds.md)
   Returns the bounding box for the annotation in page space.
-- [var contents: String?](pdfannotation/contents.md)
+- [var contents: String?](./pdfannotation/contents.md)
   Returns the textual content (if any) associated with the annotation.
-- [var font: UIFont?](pdfannotation/font.md)
+- [var font: UIFont?](./pdfannotation/font.md)
   The font the annotation uses to display text.
-- [var fontColor: UIColor?](pdfannotation/fontcolor.md)
+- [var fontColor: UIColor?](./pdfannotation/fontcolor.md)
   The font color the annotation uses to display text.
-- [var border: PDFBorder?](pdfannotation/border.md)
+- [var border: PDFBorder?](./pdfannotation/border.md)
   Sets the border style for the annotation.
-- [var isHighlighted: Bool](pdfannotation/ishighlighted.md)
+- [var isHighlighted: Bool](./pdfannotation/ishighlighted.md)
   A Boolean value that indicates whether the annotation is in a highlighted state, such as when the mouse is down on a link annotation.
-- [var color: UIColor](pdfannotation/color.md)
+- [var color: UIColor](./pdfannotation/color.md)
   Sets the stroke color for the annotation.
-- [var hasAppearanceStream: Bool](pdfannotation/hasappearancestream.md)
+- [var hasAppearanceStream: Bool](./pdfannotation/hasappearancestream.md)
   Returns a Boolean value that indicates whether the annotation has an appearance stream associated with it.
 
 

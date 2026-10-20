@@ -1,7 +1,8 @@
 # journalingSuggestionsPicker(isPresented:journalingSuggestionToken:onCompletion:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 
@@ -28,7 +29,8 @@ For more information about the Journaling Suggestions picker, see: doc:presentin
 
 ## See Also
 
-- [func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: (JournalingSuggestion) async -> Void) -> some View](view/journalingsuggestionspicker(ispresented:oncompletion:).md)
+### Presenting journaling suggestions
+- [func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: (JournalingSuggestion) async -> Void) -> some View](./journalingsuggestionspicker%28ispresented,oncompletion%29.md)
   Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 
 

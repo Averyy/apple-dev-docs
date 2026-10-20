@@ -1,7 +1,8 @@
 # includesSubentities
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to update subentities.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether to update subentities.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether to update subentities.
 var includesSubentities: Bool { get set }
 ```
 
+```objc
+@property BOOL includesSubentities;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var entity: NSEntityDescription](nsbatchupdaterequest/entity.md)
+### Configuring a Request
+- [var entity: NSEntityDescription](./entity.md)
   The managed entity to update data for.
-- [var entityName: String](nsbatchupdaterequest/entityname.md)
+- [var entityName: String](./entityname.md)
   The name of the managed entity to update data for.
-- [var predicate: NSPredicate?](nsbatchupdaterequest/predicate.md)
+- [var predicate: NSPredicate?](./predicate.md)
   A predicate that identifies the objects to update.
-- [var propertiesToUpdate: [AnyHashable : Any]?](nsbatchupdaterequest/propertiestoupdate.md)
+- [var propertiesToUpdate: [AnyHashable : Any]?](./propertiestoupdate.md)
   A dictionary of property description pairs that describe the updates.
-- [var resultType: NSBatchUpdateRequestResultType](nsbatchupdaterequest/resulttype.md)
+- [var resultType: NSBatchUpdateRequestResultType](./resulttype.md)
   The type of result that Core Data returns from the request.
 
 

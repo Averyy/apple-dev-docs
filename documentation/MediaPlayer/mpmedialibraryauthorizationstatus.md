@@ -1,7 +1,8 @@
 # MPMediaLibraryAuthorizationStatus
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The list of possible states for authorization to access to the user’s media library.
 
@@ -17,37 +18,42 @@ The list of possible states for authorization to access to the user’s media li
 enum MPMediaLibraryAuthorizationStatus
 ```
 
+```c
+enum MPMediaLibraryAuthorizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Authorization statuses
-- [MPMediaLibraryAuthorizationStatus.notDetermined](mpmedialibraryauthorizationstatus/notdetermined.md)
+- [MPMediaLibraryAuthorizationStatus.notDetermined](./mpmedialibraryauthorizationstatus/notdetermined.md)
   The user hasn’t determined whether to authorize the use of their media library.
-- [MPMediaLibraryAuthorizationStatus.denied](mpmedialibraryauthorizationstatus/denied.md)
+- [MPMediaLibraryAuthorizationStatus.denied](./mpmedialibraryauthorizationstatus/denied.md)
   The app may not access the items in the user’s media library.
-- [MPMediaLibraryAuthorizationStatus.restricted](mpmedialibraryauthorizationstatus/restricted.md)
+- [MPMediaLibraryAuthorizationStatus.restricted](./mpmedialibraryauthorizationstatus/restricted.md)
   The app may access some of the content in the user’s media library.
-- [MPMediaLibraryAuthorizationStatus.authorized](mpmedialibraryauthorizationstatus/authorized.md)
+- [MPMediaLibraryAuthorizationStatus.authorized](./mpmedialibraryauthorizationstatus/authorized.md)
   Your app may access items in the user’s media library.
 ### Initializers
-- [init?(rawValue: Int)](mpmedialibraryauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mpmedialibraryauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func requestAuthorization((MPMediaLibraryAuthorizationStatus) -> Void)](mpmedialibrary/requestauthorization(_:).md)
+### Getting the default media library
+- [class func requestAuthorization((MPMediaLibraryAuthorizationStatus) -> Void)](./mpmedialibrary/requestauthorization%28_%29.md)
   Displays a user interface so that the user can authorize whether your app may view the media library’s contents.
-- [class func authorizationStatus() -> MPMediaLibraryAuthorizationStatus](mpmedialibrary/authorizationstatus.md)
+- [class func authorizationStatus() -> MPMediaLibraryAuthorizationStatus](./mpmedialibrary/authorizationstatus%28%29.md)
   Returns whether the app can access the user’s media library.
-- [class func `default`() -> MPMediaLibrary](mpmedialibrary/default.md)
+- [class func `default`() -> MPMediaLibrary](./mpmedialibrary/default%28%29.md)
   Returns an instance of the default media library.
 
 

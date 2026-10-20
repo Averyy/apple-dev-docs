@@ -1,9 +1,10 @@
 # kCIAttributeTypeOpaqueColor
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A Core Image color ([`CIColor`](cicolor.md) object) that specifies red, green, and blue component values. Use this key for colors with no alpha component. If the key is not present, Core Image assumes color with alpha.
+A Core Image color ([`CIColor`](./cicolor.md) object) that specifies red, green, and blue component values. Use this key for colors with no alpha component. If the key is not present, Core Image assumes color with alpha.
 
 **Availability**:
 - iOS 9.0+
@@ -19,12 +20,17 @@ A Core Image color ([`CIColor`](cicolor.md) object) that specifies red, green, a
 let kCIAttributeTypeOpaqueColor: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypeOpaqueColor;
+```
+
 ## See Also
 
-- [let kCIAttributeTypeGradient: String](kciattributetypegradient.md)
+### Constants
+- [let kCIAttributeTypeGradient: String](./kciattributetypegradient.md)
   An n-by-1 gradient image used to describe a color ramp.
-- [let kCIAttributeTypeColor: String](kciattributetypecolor.md)
-  A Core Image color ([`CIColor`](cicolor.md) object) that specifies red, green, and blue component values.
+- [let kCIAttributeTypeColor: String](./kciattributetypecolor.md)
+  A Core Image color ([`CIColor`](./cicolor.md) object) that specifies red, green, and blue component values.
 
 
 ---

@@ -1,7 +1,8 @@
 # ResourcesExporting
 
 **Framework**: AppMigrationKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for exporting transportable resources in a streaming archive format when the destination platform doesn’t require special migration options.
 
@@ -17,22 +18,23 @@ protocol ResourcesExporting : ResourcesExportingWithOptions where Self.OptionsTy
 
 #### Overview
 
-This protocol extends [`ResourcesExportingWithOptions`](resourcesexportingwithoptions.md) and sets its [`OptionsType`](resourcesexportingwithoptions/optionstype.md) to [`MigrationDefaultSupportedOptions`](migrationdefaultsupportedoptions.md), which indicates the destination platform doesn’t require any special options. If you know your export to the other platform doesn’t need these options, conform to this protocol in your app exension and implement the methods and properties defined by [`ResourcesExportingWithOptions`](resourcesexportingwithoptions.md).
+This protocol extends [`ResourcesExportingWithOptions`](./resourcesexportingwithoptions.md) and sets its [`OptionsType`](./resourcesexportingwithoptions/optionstype.md) to [`MigrationDefaultSupportedOptions`](./migrationdefaultsupportedoptions.md), which indicates the destination platform doesn’t require any special options. If you know your export to the other platform doesn’t need these options, conform to this protocol in your app exension and implement the methods and properties defined by [`ResourcesExportingWithOptions`](./resourcesexportingwithoptions.md).
 
-As with [`ResourcesExportingWithOptions`](resourcesexportingwithoptions.md), this protocol is only appropriate for transportable resources, those that you can copy as-is from the current file system to the destination device.
+As with [`ResourcesExportingWithOptions`](./resourcesexportingwithoptions.md), this protocol is only appropriate for transportable resources, those that you can copy as-is from the current file system to the destination device.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [AppMigrationExtension](appmigrationextension.md)
-- [ResourcesExportingWithOptions](resourcesexportingwithoptions.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [AppMigrationExtension](./appmigrationextension.md)
+- [ResourcesExportingWithOptions](./resourcesexportingwithoptions.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ResourcesExportingWithOptions](resourcesexportingwithoptions.md)
+### Export operations
+- [protocol ResourcesExportingWithOptions](./resourcesexportingwithoptions.md)
   A protocol for exporting transportable resources in an archive format.
 
 

@@ -1,7 +1,8 @@
 # chirality
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chirality of the accessory, if applicable.
 

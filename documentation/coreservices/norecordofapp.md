@@ -1,7 +1,8 @@
 # noRecordOfApp
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A replica of the movieToolboxUninitialized error. 
 

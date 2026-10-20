@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a rect representing the bounds of the first line of marked text, if marked text is set.
@@ -16,6 +17,10 @@ Returns a rect representing the bounds of the first line of marked text, if mark
 
 ```swift
 var textFirstRect: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect textFirstRect;
 ```
 
 #### Discussion

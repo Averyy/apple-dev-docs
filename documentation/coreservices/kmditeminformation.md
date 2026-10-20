@@ -1,7 +1,8 @@
 # kMDItemInformation
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Information about the item. A CFString.
 
@@ -12,6 +13,10 @@ Information about the item. A CFString.
 
 ```swift
 let kMDItemInformation: CFString!
+```
+
+```c
+const CFStringRef kMDItemInformation;
 ```
 
 

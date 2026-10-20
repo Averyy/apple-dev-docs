@@ -1,7 +1,8 @@
 # captionPreview(forProfileID:extendedLanguageTag:renderSize:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generate a caption preview attributed string for the specified profile ID.
 
@@ -17,6 +18,10 @@ Generate a caption preview attributed string for the specified profile ID.
 
 ```swift
 class func captionPreview(forProfileID profileID: String, extendedLanguageTag: String?, renderSize: CGSize) -> NSAttributedString
+```
+
+```objc
++ (NSAttributedString *) captionPreviewForProfileID:(NSString *) profileID extendedLanguageTag:(NSString *) extendedLanguageTag renderSize:(CGSize) renderSize;
 ```
 
 #### Return Value

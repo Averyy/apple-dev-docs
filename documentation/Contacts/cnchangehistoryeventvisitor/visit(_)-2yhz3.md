@@ -2,6 +2,7 @@
 
 **Framework**: Contacts  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate to drop all contacts and groups before handling more events.
@@ -18,6 +19,10 @@ Tells the delegate to drop all contacts and groups before handling more events.
 
 ```swift
 func visit(_ event: CNChangeHistoryDropEverythingEvent)
+```
+
+```objc
+- (void) visitDropEverythingEvent:(CNChangeHistoryDropEverythingEvent *) event;
 ```
 
 #### Discussion

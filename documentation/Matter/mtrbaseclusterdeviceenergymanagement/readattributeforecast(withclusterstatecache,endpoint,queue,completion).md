@@ -1,7 +1,8 @@
 # readAttributeForecast(withClusterStateCache:endpoint:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+class func readAttributeForecast(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: @escaping @Sendable (MTRDeviceEnergyManagementClusterForecastStruct?, (any Error)?) -> Void)
+```
+
+```swift
 class func readAttributeForecast(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t) async throws -> MTRDeviceEnergyManagementClusterForecastStruct
+```
+
+```objc
++ (void) readAttributeForecastWithClusterStateCache:(MTRClusterStateCacheContainer *) clusterStateCacheContainer endpoint:(NSNumber *) endpoint queue:(dispatch_queue_t) queue completion:(void (^)(MTRDeviceEnergyManagementClusterForecastStruct *value, NSError *error)) completion;
 ```
 
 

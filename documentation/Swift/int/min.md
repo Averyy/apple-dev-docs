@@ -1,7 +1,8 @@
 # min
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The minimum representable integer in this type.
 
@@ -20,17 +21,20 @@ The minimum representable integer in this type.
 static var min: Self { get }
 ```
 
+Available when `Self` conforms to `FixedWidthInteger`.
+
 #### Discussion
 
 For signed integer types, this value is `-(2 ** (bitWidth - 1))`, where `**` is exponentiation.
 
 ## See Also
 
-- [static var zero: Self](int/zero.md)
+### Accessing Numeric Constants
+- [static var zero: Self](./zero.md)
   The zero value.
-- [static var max: Self](int/max.md)
+- [static var max: Self](./max.md)
   The maximum representable integer in this type.
-- [static var isSigned: Bool](int/issigned.md)
+- [static var isSigned: Bool](./issigned.md)
   A Boolean value indicating whether this type is a signed integer type.
 
 

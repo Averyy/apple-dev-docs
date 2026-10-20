@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The active drag session.
@@ -16,6 +17,10 @@ The active drag session.
 
 ```swift
 var dragSession: any UIDragSession { get }
+```
+
+```objc
+@property (nonatomic, readonly) id<UIDragSession> dragSession;
 ```
 
 

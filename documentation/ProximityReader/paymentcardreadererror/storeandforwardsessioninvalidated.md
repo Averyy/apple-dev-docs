@@ -1,7 +1,8 @@
 # PaymentCardReaderError.storeAndForwardSessionInvalidated
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework invalidated the current Store and Forward session, and it can’t execute additional reads.
 

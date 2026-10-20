@@ -1,7 +1,8 @@
 # errSecInvalidSubjectKeyID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The subject key ID is not valid.
 
@@ -18,6 +19,10 @@ The subject key ID is not valid.
 
 ```swift
 var errSecInvalidSubjectKeyID: OSStatus { get }
+```
+
+```c
+errSecInvalidSubjectKeyID
 ```
 
 

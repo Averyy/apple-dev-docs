@@ -1,18 +1,19 @@
 # CFURLEnumeratorResult.success
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The enumerator was advanced successfully and returned a valid URL.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The enumerator was advanced successfully and returned a valid URL.
 case success
 ```
 
+```c
+kCFURLEnumeratorSuccess
+```
+
 ## See Also
 
-- [CFURLEnumeratorResult.end](cfurlenumeratorresult/end.md)
+### Constants
+- [CFURLEnumeratorResult.end](./end.md)
   The enumeration is complete.
-- [CFURLEnumeratorResult.error](cfurlenumeratorresult/error.md)
+- [CFURLEnumeratorResult.error](./error.md)
   An error occurred during enumeration. The `error` parameter of the function is populated with error information.
-- [CFURLEnumeratorResult.directoryPostOrderSuccess](cfurlenumeratorresult/directorypostordersuccess.md)
+- [CFURLEnumeratorResult.directoryPostOrderSuccess](./directorypostordersuccess.md)
   The recursive post-order enumerator returned the URL for a directory after having returned the URLs for all of the directory’s descendents.
 
 

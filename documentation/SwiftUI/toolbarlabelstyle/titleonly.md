@@ -1,7 +1,8 @@
 # titleOnly
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The title only label style. The toolbar contents will only display the title
 

@@ -1,7 +1,8 @@
 # intersectionFunctionTableOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index into the intersection table for determining which intersection function Metal calls when it intersects a ray with the acceleration structure.
 
@@ -19,13 +20,18 @@ An index into the intersection table for determining which intersection function
 var intersectionFunctionTableOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger intersectionFunctionTableOffset;
+```
+
 ## See Also
 
-- [var label: String?](mtlaccelerationstructuregeometrydescriptor/label.md)
+### Specifying base geometry properties
+- [var label: String?](./label.md)
   A label for the geometry structure, suitable for debugging.
-- [var opaque: Bool](mtlaccelerationstructuregeometrydescriptor/opaque.md)
+- [var opaque: Bool](./opaque.md)
   A Boolean value that determines whether the geometry data in the acceleration structure needs to skip triangle-intersection tests.
-- [var allowDuplicateIntersectionFunctionInvocation: Bool](mtlaccelerationstructuregeometrydescriptor/allowduplicateintersectionfunctioninvocation.md)
+- [var allowDuplicateIntersectionFunctionInvocation: Bool](./allowduplicateintersectionfunctioninvocation.md)
   A Boolean value that indicates whether Metal calls the ray-intersection test more than once per primitive on the structure.
 
 

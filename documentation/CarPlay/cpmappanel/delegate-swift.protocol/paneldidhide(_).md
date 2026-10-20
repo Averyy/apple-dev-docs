@@ -1,7 +1,8 @@
 # panelDidHide(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system hid the specified map panel.
 
@@ -14,6 +15,10 @@ Tells the delegate that the system hid the specified map panel.
 
 ```swift
 optional func panelDidHide(_ panel: CPMapPanel)
+```
+
+```objc
+- (void) panelDidHide:(CPMapPanel *) panel;
 ```
 
 #### Discussion

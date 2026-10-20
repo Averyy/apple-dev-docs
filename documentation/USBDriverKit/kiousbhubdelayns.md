@@ -1,20 +1,22 @@
 # kIOUSBHubDelayNs
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHubDelayNs
 ```
 
 ## See Also
 
-- [kIOUSBHubPort2PortExitLatencyNs](kiousbhubport2portexitlatencyns.md)
+### Getting the Parameters
+- [kIOUSBHubPort2PortExitLatencyNs](./kiousbhubport2portexitlatencyns.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # shouldProcessNamespaces
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the parser reports the namespaces and qualified names of elements.
 
@@ -20,17 +21,22 @@ A Boolean value that determines whether the parser reports the namespaces and qu
 var shouldProcessNamespaces: Bool { get set }
 ```
 
+```objc
+@property BOOL shouldProcessNamespaces;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parser reports namespace and qualified name, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the parser reports namespace and qualified name, [`false`](../../Swift/false.md) otherwise.
 
-The parser reports element names with the delegate methods [`parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)`](xmlparserdelegate/parser(_:didstartelement:namespaceuri:qualifiedname:attributes:).md) and [`parser(_:didEndElement:namespaceURI:qualifiedName:)`](xmlparserdelegate/parser(_:didendelement:namespaceuri:qualifiedname:).md).
+The parser reports element names with the delegate methods [`parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)`](../xmlparserdelegate/parser%28_,didstartelement,namespaceuri,qualifiedname,attributes%29.md) and [`parser(_:didEndElement:namespaceURI:qualifiedName:)`](../xmlparserdelegate/parser%28_,didendelement,namespaceuri,qualifiedname%29.md).
 
 ## See Also
 
-- [var shouldReportNamespacePrefixes: Bool](xmlparser/shouldreportnamespaceprefixes.md)
+### Managing Parser Behavior
+- [var shouldReportNamespacePrefixes: Bool](./shouldreportnamespaceprefixes.md)
   A Boolean value that determines whether the parser reports the prefixes indicating the scope of namespace declarations.
-- [var shouldResolveExternalEntities: Bool](xmlparser/shouldresolveexternalentities.md)
+- [var shouldResolveExternalEntities: Bool](./shouldresolveexternalentities.md)
   A Boolean value that determines whether the parser reports declarations of external entities.
 
 

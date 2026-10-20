@@ -1,7 +1,8 @@
 # allowsVibrancy
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether the current appearance allows vibrancy.
 
@@ -14,9 +15,14 @@ Specifies whether the current appearance allows vibrancy.
 var allowsVibrancy: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL allowsVibrancy;
+```
+
 ## See Also
 
-- [class NSVisualEffectView](nsvisualeffectview.md)
+### Related Documentation
+- [class NSVisualEffectView](../nsvisualeffectview.md)
   A view that adds translucency and vibrancy effects to the views in your interface.
 
 

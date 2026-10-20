@@ -1,7 +1,8 @@
 # elementKindSectionFooter
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A supplementary view that identifies the footer for a given section.
 
@@ -9,7 +10,7 @@ A supplementary view that identifies the footer for a given section.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A supplementary view that identifies the footer for a given section.
 class let elementKindSectionFooter: String
 ```
 
+```c
+extern NSString * const UICollectionElementKindSectionFooter;
+```
+
 ## See Also
 
-- [UICollectionView.ElementCategory](uicollectionview/elementcategory.md)
+### Identifying collection view elements
+- [UICollectionView.ElementCategory](./elementcategory.md)
   Constants specifying the type of view.
-- [class let elementKindSectionHeader: String](uicollectionview/elementkindsectionheader.md)
+- [class let elementKindSectionHeader: String](./elementkindsectionheader.md)
   A supplementary view that identifies the header for a given section.
 
 

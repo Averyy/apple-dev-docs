@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the characteristic.
 
@@ -20,21 +21,26 @@ The value of the characteristic.
 var value: Data? { get set }
 ```
 
+```objc
+@property (retain, readwrite, nullable) NSData * value;
+```
+
 #### Discussion
 
 This property contains the value of the characteristic. For example, a temperature measurement characteristic of a health thermometer service may have a value that indicates a temperature in Celsius.
 
 ## See Also
 
-- [var descriptors: [CBDescriptor]?](cbmutablecharacteristic/descriptors.md)
+### Managing a Mutable Characteristic
+- [var descriptors: [CBDescriptor]?](./descriptors.md)
   An array of the characteristic’s descriptors.
-- [var properties: CBCharacteristicProperties](cbmutablecharacteristic/properties.md)
+- [var properties: CBCharacteristicProperties](./properties.md)
   The properties of the characteristic.
-- [var permissions: CBAttributePermissions](cbmutablecharacteristic/permissions.md)
+- [var permissions: CBAttributePermissions](./permissions.md)
   The permissions of the characteristic value.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](../cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
-- [var subscribedCentrals: [CBCentral]?](cbmutablecharacteristic/subscribedcentrals.md)
+- [var subscribedCentrals: [CBCentral]?](./subscribedcentrals.md)
   A list of centrals that are currently subscribed to the characteristic’s value.
 
 

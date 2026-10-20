@@ -1,17 +1,22 @@
 # WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unresponsive delegate error.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
 ```swift
 case applicationDelegateWatchKitRequestReplyNotCalled
+```
+
+```c
+WatchKitApplicationDelegateWatchKitRequestReplyNotCalledError
 ```
 
 #### Discussion
@@ -20,25 +25,26 @@ WatchKit no longer uses this error code.
 
 ## See Also
 
-- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
+### Error Codes
+- [WatchKitError.Code.downloadFailed](./downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
+- [WatchKitError.Code.invalidArgument](./invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.mediaPlayerFailed](watchkiterror/code/mediaplayerfailed.md)
+- [WatchKitError.Code.mediaPlayerFailed](./mediaplayerfailed.md)
   A media player error.
-- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
+- [WatchKitError.Code.recordingFailed](./recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
+- [WatchKitError.Code.unknown](./unknown.md)
   An unknown error.
-- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
+- [WatchKitError.Code.downloadFailed](./downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
+- [WatchKitError.Code.invalidArgument](./invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.mediaPlayerFailed](watchkiterror/code/mediaplayerfailed.md)
+- [WatchKitError.Code.mediaPlayerFailed](./mediaplayerfailed.md)
   A media player error.
-- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
+- [WatchKitError.Code.recordingFailed](./recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
+- [WatchKitError.Code.unknown](./unknown.md)
   An unknown error.
 
 

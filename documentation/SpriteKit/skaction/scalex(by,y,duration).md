@@ -1,23 +1,28 @@
 # scaleX(by:y:duration:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that adds relative values to the x and y scale values of a node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func scaleX(by xScale: CGFloat, y yScale: CGFloat, duration: TimeInterval) -> SKAction
+```
+
+```objc
++ (SKAction *) scaleXBy:(CGFloat) xScale y:(CGFloat) yScale duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`xScale`](sknode/xscale.md) and [`yScale`](sknode/yscale.md) properties are animated to the new value.
+When the action executes, the node’s [`xScale`](../sknode/xscale.md) and [`yScale`](../sknode/yscale.md) properties are animated to the new value.
 
 This action is reversible; the reverse is created as if the following code is executed:
 
@@ -50,17 +55,18 @@ let action = SKAction.scaleX(by: -scaleX, y: -scaleY, duration: sec)
 
 ## See Also
 
-- [class func scale(by: CGFloat, duration: TimeInterval) -> SKAction](skaction/scale(by:duration:).md)
+### Animating the Scaling of a Node
+- [class func scale(by: CGFloat, duration: TimeInterval) -> SKAction](./scale%28by,duration%29.md)
   Creates an action that changes the x and y scale values of a node by a relative value.
-- [class func scale(to: CGSize, duration: TimeInterval) -> SKAction](skaction/scale(to:duration:)-43bz6.md)
+- [class func scale(to: CGSize, duration: TimeInterval) -> SKAction](./scale%28to,duration%29-43bz6.md)
   Creates an action that changes the x and y scale values of a node to achieve
-- [class func scale(to: CGFloat, duration: TimeInterval) -> SKAction](skaction/scale(to:duration:)-1xyzs.md)
+- [class func scale(to: CGFloat, duration: TimeInterval) -> SKAction](./scale%28to,duration%29-1xyzs.md)
   Creates an action that changes the x and y scale values of a node.
-- [class func scaleX(to: CGFloat, y: CGFloat, duration: TimeInterval) -> SKAction](skaction/scalex(to:y:duration:).md)
+- [class func scaleX(to: CGFloat, y: CGFloat, duration: TimeInterval) -> SKAction](./scalex%28to,y,duration%29.md)
   Creates an action that changes the x and y scale values of a node.
-- [class func scaleX(to: CGFloat, duration: TimeInterval) -> SKAction](skaction/scalex(to:duration:).md)
+- [class func scaleX(to: CGFloat, duration: TimeInterval) -> SKAction](./scalex%28to,duration%29.md)
   Creates an action that changes the x scale value of a node to a new value.
-- [class func scaleY(to: CGFloat, duration: TimeInterval) -> SKAction](skaction/scaley(to:duration:).md)
+- [class func scaleY(to: CGFloat, duration: TimeInterval) -> SKAction](./scaley%28to,duration%29.md)
   Creates an action that changes the y scale value of a node to a new value.
 
 

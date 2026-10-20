@@ -1,11 +1,12 @@
 # TemporalTransformer Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func applied(to: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<ClassificationDistribution<Label>>](timeseriesclassifier/model/applied(to:eventhandler:)-3hpop.md)
+- [func applied(to: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<ClassificationDistribution<Label>>](./applied%28to,eventhandler%29-3hpop.md)
   Performs the transformation on an input sequence.
 
 

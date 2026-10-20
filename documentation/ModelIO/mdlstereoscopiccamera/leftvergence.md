@@ -1,7 +1,8 @@
 # leftVergence
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle, in degrees, at which the camera’s left viewpoint faces toward a central focal point.
 
@@ -19,22 +20,27 @@ The angle, in degrees, at which the camera’s left viewpoint faces toward a cen
 var leftVergence: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float leftVergence;
+```
+
 #### Discussion
 
 A stereoscopic camera simulates binocular vision by looking toward a central point in a scene from two slightly different viewpoints. Vergence measures the difference between the camera’s forward axis and the angle from each viewpoint toward that central point, called the *vergence point*. There are two common ways to model a stereoscopic camera:
 
-- In a toed-in camera, each simulated lens and imaging surface is rotated (by the [`leftVergence`](mdlstereoscopiccamera/leftvergence.md) and [`rightVergence`](mdlstereoscopiccamera/rightvergence.md) angles) to face toward the focal point. That is, a line from the focal point through the center of the lens reaches the center of the imaging surface and is perpendicular to the image plane.
+- In a toed-in camera, each simulated lens and imaging surface is rotated (by the [`leftVergence`](./leftvergence.md) and [`rightVergence`](./rightvergence.md) angles) to face toward the focal point. That is, a line from the focal point through the center of the lens reaches the center of the imaging surface and is perpendicular to the image plane.
 - In a parallel stereoscopic camera, the imaging surfaces are perpendicular to the camera’s forward axis and are shifted horizontally relative to the center of each lens. The distance by which each imaging surface shifts is given by the following formula:
 
 `shift = (focalLength * interPupillaryDistance) / distanceToVergencePoint`
 
 ## See Also
 
-- [var interPupillaryDistance: Float](mdlstereoscopiccamera/interpupillarydistance.md)
+### Modeling Stereoscopic Imaging
+- [var interPupillaryDistance: Float](./interpupillarydistance.md)
   The distance, in millimeters, between the stereoscopic camera’s two viewpoints.
-- [var overlap: Float](mdlstereoscopiccamera/overlap.md)
+- [var overlap: Float](./overlap.md)
   The amount, as a fraction of image width, by which the images from the camera’s two viewpoints overlap.
-- [var rightVergence: Float](mdlstereoscopiccamera/rightvergence.md)
+- [var rightVergence: Float](./rightvergence.md)
   The angle, in degrees, at which the camera’s right viewpoint faces toward a central focal point.
 
 

@@ -1,7 +1,8 @@
 # kMDItemMaxAperture
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The smallest f-number of the lens. Ordinarily it is given in the range of 00.00 to 99.99. A CFNumber.
 
@@ -12,6 +13,10 @@ The smallest f-number of the lens. Ordinarily it is given in the range of 00.00 
 
 ```swift
 let kMDItemMaxAperture: CFString!
+```
+
+```c
+const CFStringRef kMDItemMaxAperture;
 ```
 
 

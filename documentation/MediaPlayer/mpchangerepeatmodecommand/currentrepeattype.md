@@ -1,7 +1,8 @@
 # currentRepeatType
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current repeat option for a media item.
 
@@ -18,6 +19,10 @@ The current repeat option for a media item.
 
 ```swift
 var currentRepeatType: MPRepeatType { get set }
+```
+
+```objc
+@property (nonatomic, assign) MPRepeatType currentRepeatType;
 ```
 
 

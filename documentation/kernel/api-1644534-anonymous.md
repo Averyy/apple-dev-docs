@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSyncPositivePolarityBit](1644534-anonymous/ksyncpositivepolaritybit.md)
-- [kSyncPositivePolarityMask](1644534-anonymous/ksyncpositivepolaritymask.md)
+- [kSyncPositivePolarityBit](./api-1644534-anonymous/ksyncpositivepolaritybit.md)
+- [kSyncPositivePolarityMask](./api-1644534-anonymous/ksyncpositivepolaritymask.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # assistiveTouchStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that indicates a change in the status of AssistiveTouch.
 
@@ -19,19 +20,24 @@ nonisolated
 static let assistiveTouchStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityAssistiveTouchStatusDidChangeNotification;
+```
+
 #### Discussion
 
 The user must enable Guided Access for this notification to post.
 
 ## See Also
 
-- [static let guidedAccessStatusDidChangeNotification: NSNotification.Name](uiaccessibility/guidedaccessstatusdidchangenotification.md)
+### Assistive apps
+- [static let guidedAccessStatusDidChangeNotification: NSNotification.Name](./guidedaccessstatusdidchangenotification.md)
   A notification that indicates when a Guided Access session starts or ends.
-- [static let pauseAssistiveTechnology: UIAccessibility.Notification](uiaccessibility/notification/pauseassistivetechnology.md)
+- [static let pauseAssistiveTechnology: UIAccessibility.Notification](./notification/pauseassistivetechnology.md)
   A notification that pauses an assistive app’s operations temporarily.
-- [static let resumeAssistiveTechnology: UIAccessibility.Notification](uiaccessibility/notification/resumeassistivetechnology.md)
+- [static let resumeAssistiveTechnology: UIAccessibility.Notification](./notification/resumeassistivetechnology.md)
   A notification that resumes an assistive app’s operations temporarily.
-- [UIAccessibility.AssistiveTechnologyIdentifier](uiaccessibility/assistivetechnologyidentifier.md)
+- [UIAccessibility.AssistiveTechnologyIdentifier](./assistivetechnologyidentifier.md)
   Identifiers for assistive apps.
 
 

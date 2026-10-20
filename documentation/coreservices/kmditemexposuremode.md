@@ -1,7 +1,8 @@
 # kMDItemExposureMode
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The exposure mode used to acquire the document contents. A CFNumber.
 
@@ -12,6 +13,10 @@ The exposure mode used to acquire the document contents. A CFNumber.
 
 ```swift
 let kMDItemExposureMode: CFString!
+```
+
+```c
+const CFStringRef kMDItemExposureMode;
 ```
 
 #### Discussion

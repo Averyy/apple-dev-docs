@@ -1,7 +1,8 @@
 # runs
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributed runs of the discontiguous attributed string, as a view into the underlying string.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a barrier to ensure that commands executed prior to this command are complete before this command executes.
@@ -20,13 +21,18 @@ Adds a barrier to ensure that commands executed prior to this command are comple
 func setBarrier()
 ```
 
+```objc
+- (void) setBarrier;
+```
+
 #### Discussion
 
 Set or clear barriers (as needed) before encoding the command.
 
 ## See Also
 
-- [func clearBarrier()](mtlindirectcomputecommand/clearbarrier.md)
+### Synchronizing command execution
+- [func clearBarrier()](./clearbarrier%28%29.md)
   Removes any barrier set on the command.
 
 

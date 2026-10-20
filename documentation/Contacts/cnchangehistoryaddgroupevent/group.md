@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group the user added.
 
@@ -19,9 +20,14 @@ The group the user added.
 var group: CNGroup { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CNGroup * group;
+```
+
 ## See Also
 
-- [var containerIdentifier: String](cnchangehistoryaddgroupevent/containeridentifier.md)
+### Getting event details
+- [var containerIdentifier: String](./containeridentifier.md)
   A string that uniquely identifies the container where the user added the group.
 
 

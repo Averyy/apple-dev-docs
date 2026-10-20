@@ -1,7 +1,8 @@
 # readAttributeTargetsPerAccessControlEntry(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeTargetsPerAccessControlEntry(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeTargetsPerAccessControlEntryWithParams:(MTRReadParams *) params;
 ```
 
 

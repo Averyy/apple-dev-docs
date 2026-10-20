@@ -1,7 +1,8 @@
 # clearAliroReaderConfig(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ClearAliroReaderConfig
 
@@ -17,7 +18,15 @@ Command ClearAliroReaderConfig
 ## Declaration
 
 ```swift
+func clearAliroReaderConfig(with params: MTRDoorLockClusterClearAliroReaderConfigParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func clearAliroReaderConfig(with params: MTRDoorLockClusterClearAliroReaderConfigParams?) async throws
+```
+
+```objc
+- (void) clearAliroReaderConfigWithParams:(MTRDoorLockClusterClearAliroReaderConfigParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

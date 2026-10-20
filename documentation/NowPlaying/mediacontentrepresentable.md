@@ -1,7 +1,8 @@
 # MediaContentRepresentable
 
 **Framework**: Now Playing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that describes media content being played.
 
@@ -22,61 +23,62 @@ protocol MediaContentRepresentable : Identifiable
 
 #### Overview
 
-Content types like [`MusicContent`](musiccontent.md), [`PodcastContent`](podcastcontent.md), [`MovieContent`](moviecontent.md), [`TVShowContent`](tvshowcontent.md), [`BookContent`](bookcontent.md), [`RadioContent`](radiocontent.md), [`HomeMediaContent`](homemediacontent.md), and [`GenericContent`](genericcontent.md) conform to this protocol. Each content type provides structured metadata appropriate for its media type.
+Content types like [`MusicContent`](./musiccontent.md), [`PodcastContent`](./podcastcontent.md), [`MovieContent`](./moviecontent.md), [`TVShowContent`](./tvshowcontent.md), [`BookContent`](./bookcontent.md), [`RadioContent`](./radiocontent.md), [`HomeMediaContent`](./homemediacontent.md), and [`GenericContent`](./genericcontent.md) conform to this protocol. Each content type provides structured metadata appropriate for its media type.
 
 ## Topics
 
 ### Instance Properties
-- [var animatedArtwork: AnimatedArtwork?](mediacontentrepresentable/animatedartwork.md)
+- [var animatedArtwork: AnimatedArtwork?](./mediacontentrepresentable/animatedartwork.md)
   Animated artwork for this content.
-- [var appEntityIdentifiers: [EntityIdentifier]](mediacontentrepresentable/appentityidentifiers.md)
+- [var appEntityIdentifiers: [EntityIdentifier]](./mediacontentrepresentable/appentityidentifiers.md)
   The entities that represent this content, making them available to Siri and Apple Intelligence.
-- [var artwork: Artwork?](mediacontentrepresentable/artwork.md)
+- [var artwork: Artwork?](./mediacontentrepresentable/artwork.md)
   Artwork for this content.
-- [var duration: MediaDuration?](mediacontentrepresentable/duration.md)
+- [var duration: MediaDuration?](./mediacontentrepresentable/duration.md)
   The duration of this content.
-- [var genre: String?](mediacontentrepresentable/genre.md)
+- [var genre: String?](./mediacontentrepresentable/genre.md)
   The genre of this content.
-- [var id: String](mediacontentrepresentable/id.md)
+- [var id: String](./mediacontentrepresentable/id.md)
   The unique identifier for this content.
-- [var isExcludedFromSuggestions: Bool?](mediacontentrepresentable/isexcludedfromsuggestions.md)
+- [var isExcludedFromSuggestions: Bool?](./mediacontentrepresentable/isexcludedfromsuggestions.md)
   A Boolean value that indicates whether to exclude this content from media suggestions.
-- [var isExplicit: Bool?](mediacontentrepresentable/isexplicit.md)
+- [var isExplicit: Bool?](./mediacontentrepresentable/isexplicit.md)
   A Boolean value that indicates whether this content is explicit.
-- [var type: MediaType](mediacontentrepresentable/type.md)
+- [var type: MediaType](./mediacontentrepresentable/type.md)
   The media type (audio or video).
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 ### Conforming Types
-- [BookContent](bookcontent.md)
-- [GenericContent](genericcontent.md)
-- [HomeMediaContent](homemediacontent.md)
-- [MovieContent](moviecontent.md)
-- [MusicContent](musiccontent.md)
-- [PodcastContent](podcastcontent.md)
-- [RadioContent](radiocontent.md)
-- [TVShowContent](tvshowcontent.md)
+- [BookContent](./bookcontent.md)
+- [GenericContent](./genericcontent.md)
+- [HomeMediaContent](./homemediacontent.md)
+- [MovieContent](./moviecontent.md)
+- [MusicContent](./musiccontent.md)
+- [PodcastContent](./podcastcontent.md)
+- [RadioContent](./radiocontent.md)
+- [TVShowContent](./tvshowcontent.md)
 
 ## See Also
 
-- [struct MusicContent](musiccontent.md)
+### Presenting content
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 
 

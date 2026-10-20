@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new marker that you can apply to an item in a text list using the string you provide.
 
@@ -25,7 +26,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nstextlist/markerformat-swift.struct/init(_:).md)
+### Initializing a marker format
+- [init(String)](./init%28_%29.md)
   Creates a new marker that you can apply to an item in a text list with the raw value you provide.
 
 

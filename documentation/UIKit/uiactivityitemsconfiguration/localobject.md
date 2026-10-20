@@ -1,7 +1,8 @@
 # localObject
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A local object that represents the configuration.
 
@@ -17,15 +18,20 @@ A local object that represents the configuration.
 var localObject: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id localObject;
+```
+
 ## See Also
 
-- [var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)?](uiactivityitemsconfiguration/metadataprovider.md)
+### Managing the configuration
+- [var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)?](./metadataprovider.md)
   A closure that provides metadata for the activity items.
-- [var perItemMetadataProvider: ((Int, UIActivityItemsConfigurationMetadataKey) -> Any?)?](uiactivityitemsconfiguration/peritemmetadataprovider.md)
+- [var perItemMetadataProvider: ((Int, UIActivityItemsConfigurationMetadataKey) -> Any?)?](./peritemmetadataprovider.md)
   A closure that provides metadata for each activity item.
-- [var applicationActivitiesProvider: (() -> [UIActivity])?](uiactivityitemsconfiguration/applicationactivitiesprovider.md)
+- [var applicationActivitiesProvider: (() -> [UIActivity])?](./applicationactivitiesprovider.md)
   A closure that provides application acitivites for the activity items.
-- [struct UIActivityItemsConfigurationMetadataKey](uiactivityitemsconfigurationmetadatakey.md)
+- [struct UIActivityItemsConfigurationMetadataKey](../uiactivityitemsconfigurationmetadatakey.md)
   A structure that defines keys for the metadata associated with an activity items configuration.
 
 

@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error associated with the event, if any.
 
@@ -13,6 +14,10 @@ The error associated with the event, if any.
 
 ```swift
 var error: (any Error)? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSError * error;
 ```
 
 

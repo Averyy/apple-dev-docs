@@ -1,14 +1,15 @@
 # STACKSHOT_ACTIVE_KERNEL_THREADS_ONLY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_ACTIVE_KERNEL_THREADS_ONLY
 ```
 

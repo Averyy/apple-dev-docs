@@ -1,7 +1,8 @@
 # HeadphonesLeft
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The left headphone channel.
 
@@ -10,13 +11,14 @@ The left headphone channel.
 
 ## Declaration
 
-```swift
+```c
 HeadphonesLeft
 ```
 
 ## See Also
 
-- [HeadphonesRight](audiodriverkit/iouseraudiochannellabel/headphonesright.md)
+### Headphone Channels
+- [HeadphonesRight](./headphonesright.md)
   The right headphone channel.
 
 

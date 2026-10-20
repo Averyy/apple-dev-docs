@@ -1,7 +1,8 @@
 # vDSP.WindowSequence.hamming
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Hamming window, used to reduce spectral leakage prior to discrete Fourier transform.
 
@@ -11,7 +12,7 @@ The Hamming window, used to reduce spectral leakage prior to discrete Fourier tr
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,21 +23,23 @@ case hamming
 
 ## Mentions
 
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+- [Reducing spectral leakage with windowing](../../reducing-spectral-leakage-with-windowing.md)
 
 ## See Also
 
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+### Related Documentation
+- [Reducing spectral leakage with windowing](../../reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [vDSP_hamm_window](vdsp_hamm_window.md)
+- [vDSP_hamm_window](../../vdsp_hamm_window.md)
   Creates a single-precision Hamming window.
-- [vDSP_hamm_windowD](vdsp_hamm_windowd.md)
+- [vDSP_hamm_windowD](../../vdsp_hamm_windowd.md)
   Creates a double-precision Hamming window.
-- [vDSP.WindowSequence.blackman](vdsp/windowsequence/blackman.md)
+### Enumeration Cases
+- [vDSP.WindowSequence.blackman](./blackman.md)
   The Blackman window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hanningDenormalized](vdsp/windowsequence/hanningdenormalized.md)
+- [vDSP.WindowSequence.hanningDenormalized](./hanningdenormalized.md)
   The denormalized-Hann window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hanningNormalized](vdsp/windowsequence/hanningnormalized.md)
+- [vDSP.WindowSequence.hanningNormalized](./hanningnormalized.md)
   The normalized-Hann window, used to reduce spectral leakage prior to discrete Fourier transform.
 
 

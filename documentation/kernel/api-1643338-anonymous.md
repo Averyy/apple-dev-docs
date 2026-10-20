@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,25 +18,25 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMemoryUseReserve](1643338-anonymous/kiomemoryusereserve.md)
-- [kIOMemoryAsReference](1643338-anonymous/kiomemoryasreference.md)
-- [kIOMemoryBufferPageable](1643338-anonymous/kiomemorybufferpageable.md)
-- [kIOMemoryClearEncrypt](1643338-anonymous/kiomemoryclearencrypt.md)
-- [kIOMemoryDirectionMask](1643338-anonymous/kiomemorydirectionmask.md)
-- [kIOMemoryHostOnly](1643338-anonymous/kiomemoryhostonly.md)
-- [kIOMemoryMapperNone](1643338-anonymous/kiomemorymappernone.md)
-- [kIOMemoryPersistent](1643338-anonymous/kiomemorypersistent.md)
-- [kIOMemoryThreadSafe](1643338-anonymous/kiomemorythreadsafe.md)
-- [kIOMemoryTypeMask](1643338-anonymous/kiomemorytypemask.md)
-- [kIOMemoryTypePersistentMD](1643338-anonymous/kiomemorytypepersistentmd.md)
-- [kIOMemoryTypePhysical](1643338-anonymous/kiomemorytypephysical.md)
-- [kIOMemoryTypePhysical64](1643338-anonymous/kiomemorytypephysical64.md)
-- [kIOMemoryTypeUIO](1643338-anonymous/kiomemorytypeuio.md)
-- [kIOMemoryTypeUPL](1643338-anonymous/kiomemorytypeupl.md)
-- [kIOMemoryTypeVirtual](1643338-anonymous/kiomemorytypevirtual.md)
-- [kIOMemoryTypeVirtual64](1643338-anonymous/kiomemorytypevirtual64.md)
-- [kIOMemoryMapCopyOnWrite](1643338-anonymous/kiomemorymapcopyonwrite.md)
-- [kIOMemoryRemote](1643338-anonymous/kiomemoryremote.md)
+- [kIOMemoryUseReserve](./api-1643338-anonymous/kiomemoryusereserve.md)
+- [kIOMemoryAsReference](./api-1643338-anonymous/kiomemoryasreference.md)
+- [kIOMemoryBufferPageable](./api-1643338-anonymous/kiomemorybufferpageable.md)
+- [kIOMemoryClearEncrypt](./api-1643338-anonymous/kiomemoryclearencrypt.md)
+- [kIOMemoryDirectionMask](./api-1643338-anonymous/kiomemorydirectionmask.md)
+- [kIOMemoryHostOnly](./api-1643338-anonymous/kiomemoryhostonly.md)
+- [kIOMemoryMapperNone](./api-1643338-anonymous/kiomemorymappernone.md)
+- [kIOMemoryPersistent](./api-1643338-anonymous/kiomemorypersistent.md)
+- [kIOMemoryThreadSafe](./api-1643338-anonymous/kiomemorythreadsafe.md)
+- [kIOMemoryTypeMask](./api-1643338-anonymous/kiomemorytypemask.md)
+- [kIOMemoryTypePersistentMD](./api-1643338-anonymous/kiomemorytypepersistentmd.md)
+- [kIOMemoryTypePhysical](./api-1643338-anonymous/kiomemorytypephysical.md)
+- [kIOMemoryTypePhysical64](./api-1643338-anonymous/kiomemorytypephysical64.md)
+- [kIOMemoryTypeUIO](./api-1643338-anonymous/kiomemorytypeuio.md)
+- [kIOMemoryTypeUPL](./api-1643338-anonymous/kiomemorytypeupl.md)
+- [kIOMemoryTypeVirtual](./api-1643338-anonymous/kiomemorytypevirtual.md)
+- [kIOMemoryTypeVirtual64](./api-1643338-anonymous/kiomemorytypevirtual64.md)
+- [kIOMemoryMapCopyOnWrite](./api-1643338-anonymous/kiomemorymapcopyonwrite.md)
+- [kIOMemoryRemote](./api-1643338-anonymous/kiomemoryremote.md)
 
 
 ---

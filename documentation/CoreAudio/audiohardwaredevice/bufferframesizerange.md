@@ -1,12 +1,13 @@
 # bufferFrameSizeRange
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An AudioValueRange indicating the minimum and maximum values, inclusive, for bufferFrameSize.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

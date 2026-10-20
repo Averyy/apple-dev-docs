@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the ray.
 
@@ -18,6 +19,10 @@ The direction of the ray.
 
 ```swift
 var direction: Vector3DFloat
+```
+
+```c
+SPVector3DFloat direction;
 ```
 
 

@@ -1,7 +1,8 @@
 # enableSecureBoot(platformKey:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables Secure Boot with a custom Platform Key.
 
@@ -12,6 +13,10 @@ Enables Secure Boot with a custom Platform Key.
 
 ```swift
 func enableSecureBoot(platformKey: SecCertificate) throws
+```
+
+```objc
+- (BOOL) enableSecureBootWithPlatformKey:(SecCertificateRef) platformKey error:(NSError **) error;
 ```
 
 ## Parameters

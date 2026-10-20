@@ -1,7 +1,8 @@
 # publicPermission
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The permission for anyone with access to the share’s URL.
 
@@ -20,19 +21,24 @@ The permission for anyone with access to the share’s URL.
 var publicPermission: CKShare.ParticipantPermission { get set }
 ```
 
+```objc
+@property (assign) CKShareParticipantPermission publicPermission;
+```
+
 #### Discussion
 
-Setting this property’s value to be more permissive than [`CKShare.ParticipantPermission.none`](ckshare/participantpermission/none.md) allows any user with the share’s URL to join. CloudKit removes all public participants when you save the share if you set the property’s value to [`CKShare.ParticipantPermission.none`](ckshare/participantpermission/none.md).
+Setting this property’s value to be more permissive than [`CKShare.ParticipantPermission.none`](./participantpermission/none.md) allows any user with the share’s URL to join. CloudKit removes all public participants when you save the share if you set the property’s value to [`CKShare.ParticipantPermission.none`](./participantpermission/none.md).
 
-The default value is [`CKShare.ParticipantPermission.none`](ckshare/participantpermission/none.md)
+The default value is [`CKShare.ParticipantPermission.none`](./participantpermission/none.md)
 
 ## See Also
 
-- [func addParticipant(CKShare.Participant)](ckshare/addparticipant(_:).md)
+### Configuring the Share
+- [func addParticipant(CKShare.Participant)](./addparticipant%28_%29.md)
   Adds a participant to the share.
-- [func removeParticipant(CKShare.Participant)](ckshare/removeparticipant(_:).md)
+- [func removeParticipant(CKShare.Participant)](./removeparticipant%28_%29.md)
   Removes a participant from the share.
-- [CKShare.Participant](ckshare/participant.md)
+- [CKShare.Participant](./participant.md)
   An object that describes a user’s participation in a share.
 
 

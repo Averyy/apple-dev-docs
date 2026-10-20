@@ -1,7 +1,8 @@
 # streamingClients
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of clients of the stream.
 
@@ -13,6 +14,10 @@ An array of clients of the stream.
 
 ```swift
 var streamingClients: [CMIOExtensionClient] { get }
+```
+
+```objc
+@property (atomic, copy, readonly) NSArray<CMIOExtensionClient *> * streamingClients;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # HKMetadataKeyTimeZone
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user’s time zone when the HealthKit object was created.
 
@@ -19,18 +20,23 @@ The user’s time zone when the HealthKit object was created.
 let HKMetadataKeyTimeZone: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyTimeZone;
+```
+
 #### Discussion
 
-This key takes a string value compatible with the [`NSTimeZone`](https://developer.apple.com/documentation/foundation/nstimezone) class’s [`timeZoneWithName:`](https://developer.apple.com/documentation/foundation/nstimezone/timezonewithname:) method. For best results when analyzing sleep samples, it’s recommended that you store time zone metadata with your sleep sample data.
+This key takes a string value compatible with the [`NSTimeZone`](../Foundation/nstimezone.md) class’s [`timeZoneWithName:`](../Foundation/nstimezone/timezonewithname_.md) method. For best results when analyzing sleep samples, it’s recommended that you store time zone metadata with your sleep sample data.
 
 ## See Also
 
-- [let HKMetadataKeyExternalUUID: String](hkmetadatakeyexternaluuid.md)
+### General Keys
+- [let HKMetadataKeyExternalUUID: String](./hkmetadatakeyexternaluuid.md)
   A unique identifier for an HKObject that is set by its source.
-- [let HKMetadataKeyWasUserEntered: String](hkmetadatakeywasuserentered.md)
+- [let HKMetadataKeyWasUserEntered: String](./hkmetadatakeywasuserentered.md)
   A key that indicates whether the sample was entered by the user.
-- [let HKMetadataKeyQuantityClampedToLowerBound: String](hkmetadatakeyquantityclampedtolowerbound.md)
-- [let HKMetadataKeyQuantityClampedToUpperBound: String](hkmetadatakeyquantityclampedtoupperbound.md)
+- [let HKMetadataKeyQuantityClampedToLowerBound: String](./hkmetadatakeyquantityclampedtolowerbound.md)
+- [let HKMetadataKeyQuantityClampedToUpperBound: String](./hkmetadatakeyquantityclampedtoupperbound.md)
 
 
 ---

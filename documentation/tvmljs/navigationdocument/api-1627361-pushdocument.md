@@ -1,7 +1,8 @@
 # pushDocument
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Pushes the specified document onto the stack.
 
@@ -10,7 +11,7 @@ Pushes the specified document onto the stack.
 
 ## Declaration
 
-```swift
+```
 void pushDocument(
     in Document document
 );
@@ -26,9 +27,10 @@ The document being pushed onto the stack must be a valid parsed DOM object.
 
 ## See Also
 
-- [insertBeforeDocument](navigationdocument/1627340-insertbeforedocument.md)
+### Adding Documents to the Stack
+- [insertBeforeDocument](./api-1627340-insertbeforedocument.md)
   Inserts a new document directly before a document currently on the stack.
-- [replaceDocument](navigationdocument/1627430-replacedocument.md)
+- [replaceDocument](./api-1627430-replacedocument.md)
   Replaces a document on the stack with a new document.
 
 

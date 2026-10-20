@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly allocated toolbar with the specified identifier.
 
@@ -9,12 +10,16 @@ Creates a newly allocated toolbar with the specified identifier.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(identifier: NSToolbar.Identifier)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSToolbarIdentifier) identifier;
 ```
 
 #### Return Value
@@ -23,7 +28,7 @@ The initialized toolbar object.
 
 #### Discussion
 
-`identifier` is never seen by users and should not be localized. See the [`identifier`](nstoolbar/identifier-swift.property.md) property for important information.
+`identifier` is never seen by users and should not be localized. See the [`identifier`](./identifier-swift.property.md) property for important information.
 
 ## Parameters
 
@@ -31,9 +36,11 @@ The initialized toolbar object.
 
 ## See Also
 
-- [var identifier: NSToolbar.Identifier](nstoolbar/identifier-swift.property.md)
+### Related Documentation
+- [var identifier: NSToolbar.Identifier](./identifier-swift.property.md)
   The value you use to identify the toolbar in your app.
-- [convenience init()](nstoolbar/init.md)
+### Creating an toolbar object
+- [convenience init()](./init%28%29.md)
   Creates a new toolbar with an empty identifier string.
 
 

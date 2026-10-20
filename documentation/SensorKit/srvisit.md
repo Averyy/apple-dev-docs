@@ -1,7 +1,8 @@
 # SRVisit
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The user’s progress in their daily travel routine.
 
@@ -16,56 +17,61 @@ The user’s progress in their daily travel routine.
 class SRVisit
 ```
 
+```objc
+@interface SRVisit : NSObject
+```
+
 #### Overview
 
-The [`visits`](srsensor/visits.md) sensor provides this class as its [`sample`](srfetchresult/sample.md) type.
+The [`visits`](./srsensor/visits.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Identifying a Visit
-- [var identifier: UUID](srvisit/identifier.md)
+- [var identifier: UUID](./srvisit/identifier.md)
   A value that maps to a unique geographic location.
 ### Accessing Visit Information
-- [var arrivalDateInterval: DateInterval](srvisit/arrivaldateinterval.md)
+- [var arrivalDateInterval: DateInterval](./srvisit/arrivaldateinterval.md)
   A range of time within which the user arrives at a location of interest.
-- [var departureDateInterval: DateInterval](srvisit/departuredateinterval.md)
+- [var departureDateInterval: DateInterval](./srvisit/departuredateinterval.md)
   A range of time within which the user departs from a location of interest.
-- [var distanceFromHome: CLLocationDistance](srvisit/distancefromhome.md)
+- [var distanceFromHome: CLLocationDistance](./srvisit/distancefromhome.md)
   The location’s distance from the home-category location.
-- [var locationCategory: SRVisit.LocationCategory](srvisit/locationcategory-swift.property.md)
+- [var locationCategory: SRVisit.LocationCategory](./srvisit/locationcategory-swift.property.md)
   The location’s type.
-- [SRVisit.LocationCategory](srvisit/locationcategory-swift.enum.md)
+- [SRVisit.LocationCategory](./srvisit/locationcategory-swift.enum.md)
   Types of locations.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SRAmbientLightSample](srambientlightsample.md)
+### Interpreting data
+- [class SRAmbientLightSample](./srambientlightsample.md)
   The amount of ambient light in the user’s environment.
-- [class SRDeviceUsageReport](srdeviceusagereport.md)
+- [class SRDeviceUsageReport](./srdeviceusagereport.md)
   The frequency and relative duration that the user uses their device, particular Apple apps, or websites.
-- [class SRKeyboardMetrics](srkeyboardmetrics.md)
+- [class SRKeyboardMetrics](./srkeyboardmetrics.md)
   The configuration of a device’s keyboard and its usage patterns.
-- [class SRMediaEvent](srmediaevent.md)
+- [class SRMediaEvent](./srmediaevent.md)
   A user interaction with a media object, such as an image or a video.
-- [class SRMessagesUsageReport](srmessagesusagereport.md)
+- [class SRMessagesUsageReport](./srmessagesusagereport.md)
   An object that describes the user’s Messages app activity over a period of time.
-- [class SRPhoneUsageReport](srphoneusagereport.md)
+- [class SRPhoneUsageReport](./srphoneusagereport.md)
   An object that describes the user’s phone activity over a period of time.
-- [class SRWristDetection](srwristdetection.md)
+- [class SRWristDetection](./srwristdetection.md)
   The configuration of a watch on the wearer’s wrist.
 
 

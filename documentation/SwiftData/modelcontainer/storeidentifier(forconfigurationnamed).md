@@ -1,7 +1,8 @@
 # storeIdentifier(forConfigurationNamed:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the on-disk store identifier for the given configuration name.
 

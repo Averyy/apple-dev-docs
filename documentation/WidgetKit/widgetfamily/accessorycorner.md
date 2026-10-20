@@ -1,7 +1,8 @@
 # WidgetFamily.accessoryCorner
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A widget-based complication in the corner of a watch face in watchOS.
 
@@ -16,16 +17,17 @@ case accessoryCorner
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
 ## See Also
 
-- [WidgetFamily.accessoryCircular](widgetfamily/accessorycircular.md)
+### Accessing accessory families
+- [WidgetFamily.accessoryCircular](./accessorycircular.md)
   A circular widget.
-- [WidgetFamily.accessoryRectangular](widgetfamily/accessoryrectangular.md)
+- [WidgetFamily.accessoryRectangular](./accessoryrectangular.md)
   A rectangular widget.
-- [WidgetFamily.accessoryInline](widgetfamily/accessoryinline.md)
+- [WidgetFamily.accessoryInline](./accessoryinline.md)
   A flat widget that contains a single row of text and an optional image.
 
 

@@ -1,7 +1,8 @@
 # CMTimeMultiplyByRatio(_:multiplier:divisor:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the result of multiplying a time by an integer multiplier, and then dividing the result by the divisor.
 
@@ -20,6 +21,10 @@ Returns the result of multiplying a time by an integer multiplier, and then divi
 func CMTimeMultiplyByRatio(_ time: CMTime, multiplier: Int32, divisor: Int32) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeMultiplyByRatio(CMTime time, int32_t multiplier, int32_t divisor);
+```
+
 #### Return Value
 
 A value equal to `(time * multiplier) / divisor`.
@@ -28,11 +33,11 @@ A value equal to `(time * multiplier) / divisor`.
 
 This method preserves the exact rational value, unless it causes an overflow. If an overflow occurs, the system chooses a new timescale to minimize the rounding error and applies the default rounding method when converting the result to this timescale. If the result’s value still overflows when its timescale is `1`, the system sets the result to positive or negative infinity, depending on the direction of the overflow.
 
-If rounding occurs for any reason, the system sets the result’s [`hasBeenRounded`](cmtimeflags/hasbeenrounded.md) flag. It also sets this flag if the time argument has its [`hasBeenRounded`](cmtimeflags/hasbeenrounded.md) flag set.
+If rounding occurs for any reason, the system sets the result’s [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) flag. It also sets this flag if the time argument has its [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) flag set.
 
-If the time value or timescale is zero, the result is [`invalid`](cmtime/invalid.md). If only the timescale is zero, the result is positive or negative infinity, depending on the signs of the other arguments.
+If the time value or timescale is zero, the result is [`invalid`](./cmtime/invalid.md). If only the timescale is zero, the result is positive or negative infinity, depending on the signs of the other arguments.
 
-If time is invalid, the result is [`invalid`](cmtime/invalid.md). If time is infinite, the result is similarly infinite. If time is indefinite, the result is indefinite.
+If time is invalid, the result is [`invalid`](./cmtime/invalid.md). If time is infinite, the result is similarly infinite. If time is indefinite, the result is indefinite.
 
 ## Parameters
 
@@ -42,13 +47,14 @@ If time is invalid, the result is [`invalid`](cmtime/invalid.md). If time is inf
 
 ## See Also
 
-- [func CMTimeAdd(CMTime, CMTime) -> CMTime](cmtimeadd(_:_:).md)
+### Performing Time Calculations
+- [func CMTimeAdd(CMTime, CMTime) -> CMTime](./cmtimeadd%28_,_%29.md)
   Returns the sum of two times.
-- [func CMTimeSubtract(CMTime, CMTime) -> CMTime](cmtimesubtract(_:_:).md)
+- [func CMTimeSubtract(CMTime, CMTime) -> CMTime](./cmtimesubtract%28_,_%29.md)
   Returns the difference between two times.
-- [func CMTimeMultiply(CMTime, multiplier: Int32) -> CMTime](cmtimemultiply(_:multiplier:).md)
+- [func CMTimeMultiply(CMTime, multiplier: Int32) -> CMTime](./cmtimemultiply%28_,multiplier%29.md)
   Returns the result of multiplying a time by an integer multiplier.
-- [func CMTimeMultiplyByFloat64(CMTime, multiplier: Float64) -> CMTime](cmtimemultiplybyfloat64(_:multiplier:).md)
+- [func CMTimeMultiplyByFloat64(CMTime, multiplier: Float64) -> CMTime](./cmtimemultiplybyfloat64%28_,multiplier%29.md)
   Returns the result of multiplying a time by a floating-point multiplier.
 
 

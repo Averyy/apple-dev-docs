@@ -1,7 +1,8 @@
 # EPError.Code
 
 **Framework**: Execution Policy  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,23 +14,27 @@
 enum Code
 ```
 
+```c
+enum EPError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [EPError.Code.generic](eperror-swift.struct/code/generic.md)
-- [EPError.Code.notADeveloperTool](eperror-swift.struct/code/notadevelopertool.md)
+- [EPError.Code.generic](./code/generic.md)
+- [EPError.Code.notADeveloperTool](./code/notadevelopertool.md)
 ### Initializers
-- [init?(rawValue: Int)](eperror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

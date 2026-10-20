@@ -1,15 +1,16 @@
 # playBackward
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 static var playBackward: CAFRegionFlags { get }
 ```
 
+```c
+kCAFRegionFlag_PlayBackward
+```
+
 ## See Also
 
-- [static var loopEnable: CAFRegionFlags](cafregionflags/loopenable.md)
-- [static var playForward: CAFRegionFlags](cafregionflags/playforward.md)
+### Constants
+- [static var loopEnable: CAFRegionFlags](./loopenable.md)
+- [static var playForward: CAFRegionFlags](./playforward.md)
 
 
 ---

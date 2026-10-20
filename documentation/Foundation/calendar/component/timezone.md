@@ -1,7 +1,8 @@
 # Calendar.Component.timeZone
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifier for the time zone unit.
 
@@ -22,7 +23,8 @@ case timeZone
 
 ## See Also
 
-- [Calendar.Component.calendar](calendar/component/calendar.md)
+### Specifying Calendars and Time Zones
+- [Calendar.Component.calendar](./calendar.md)
   Identifier for the calendar unit.
 
 

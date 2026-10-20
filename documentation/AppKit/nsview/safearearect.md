@@ -1,7 +1,8 @@
 # safeAreaRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle in the view’s coordinate system that contains the unobscured portion of the view.
 
@@ -14,17 +15,22 @@ A rectangle in the view’s coordinate system that contains the unobscured porti
 var safeAreaRect: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect safeAreaRect;
+```
+
 #### Discussion
 
 The safe area of a view reflects the area not covered by navigation bars, tab bars, toolbars, and other ancestor views that might obscure the current view. Draw content inside this rectangle to ensure it isn’t covered by other content.
 
 ## See Also
 
-- [var safeAreaInsets: NSEdgeInsets](nsview/safeareainsets.md)
+### Respecting the View’s Safe Area
+- [var safeAreaInsets: NSEdgeInsets](./safeareainsets.md)
   The distances from the edges of your view that define the safe area.
-- [var additionalSafeAreaInsets: NSEdgeInsets](nsview/additionalsafeareainsets.md)
+- [var additionalSafeAreaInsets: NSEdgeInsets](./additionalsafeareainsets.md)
   Custom insets that you specify to modify your view’s safe area
-- [var safeAreaLayoutGuide: NSLayoutGuide](nsview/safearealayoutguide.md)
+- [var safeAreaLayoutGuide: NSLayoutGuide](./safearealayoutguide.md)
   The layout guide you use to position content inside your view’s safe area.
 
 

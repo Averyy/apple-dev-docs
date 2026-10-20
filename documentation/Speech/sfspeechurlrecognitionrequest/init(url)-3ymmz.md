@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a speech recognition request, initialized with the specified URL.
 
@@ -18,9 +19,13 @@ Creates a speech recognition request, initialized with the specified URL.
 init(url URL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
+```
+
 #### Discussion
 
-Use this method to create a request to recognize speech in a recorded audio file that resides at the specified URL. Pass the request to the recognizer’s [`recognitionTask(with:delegate:)`](sfspeechrecognizer/recognitiontask(with:delegate:).md) method to start recognition.
+Use this method to create a request to recognize speech in a recorded audio file that resides at the specified URL. Pass the request to the recognizer’s [`recognitionTask(with:delegate:)`](../sfspeechrecognizer/recognitiontask%28with,delegate%29.md) method to start recognition.
 
 
 ---

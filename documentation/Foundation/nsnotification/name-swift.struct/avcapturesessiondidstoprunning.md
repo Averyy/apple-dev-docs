@@ -1,15 +1,16 @@
 # AVCaptureSessionDidStopRunning
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.7+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.didStopRunningNotification)
+- iPadOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.didStopRunningNotification)
+- Mac Catalyst 14.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.didStopRunningNotification)
+- macOS 10.7+ - Deprecated in 15.0 (renamed: AVCaptureSession.didStopRunningNotification)
+- tvOS 17.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.didStopRunningNotification)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: AVCaptureSession.didStopRunningNotification)
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(origin:direction:allowing:alignment:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new raycast query.
 
@@ -15,9 +16,13 @@ Creates a new raycast query.
 init(origin: simd_float3, direction: simd_float3, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment)
 ```
 
+```objc
+- (instancetype) initWithOrigin:(simd_float3) origin direction:(simd_float3) direction allowingTarget:(ARRaycastTarget) target alignment:(ARRaycastTargetAlignment) alignment;
+```
+
 #### Discussion
 
-This creates a query by supplying a 3D starting place and vector. To acquire a raycast query using a screen point and vector that points outward from the user, call [`raycastQuery(from:allowing:alignment:)`](arscnview/raycastquery(from:allowing:alignment:).md) on [`ARSCNView`](arscnview.md).
+This creates a query by supplying a 3D starting place and vector. To acquire a raycast query using a screen point and vector that points outward from the user, call [`raycastQuery(from:allowing:alignment:)`](../arscnview/raycastquery%28from,allowing,alignment%29.md) on [`ARSCNView`](../arscnview.md).
 
 ## Parameters
 

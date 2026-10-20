@@ -1,7 +1,8 @@
 # add(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the indexes in an index range to the receiver.
 
@@ -20,9 +21,13 @@ Adds the indexes in an index range to the receiver.
 func add(in range: NSRange)
 ```
 
+```objc
+- (void) addIndexesInRange:(NSRange) range;
+```
+
 #### Discussion
 
-This method raises an [`rangeException`](nsexceptionname/rangeexception.md) when `range` would add an index that exceeds the maximum allowed value for unsigned integers.
+This method raises an [`rangeException`](../nsexceptionname/rangeexception.md) when `range` would add an index that exceeds the maximum allowed value for unsigned integers.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ This method raises an [`rangeException`](nsexceptionname/rangeexception.md) when
 
 ## See Also
 
-- [func add(Int)](nsmutableindexset/add(_:)-6dtkj.md)
+### Adding Indexes
+- [func add(Int)](./add%28_%29-6dtkj.md)
   Adds an index  to the receiver.
-- [func add(IndexSet)](nsmutableindexset/add(_:)-6zmti.md)
+- [func add(IndexSet)](./add%28_%29-6zmti.md)
   Adds the indexes in an index set to the receiver.
 
 

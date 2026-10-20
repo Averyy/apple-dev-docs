@@ -1,12 +1,13 @@
 # canPrintHeadersAndFooters
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver can print headers and footers.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean value indicating whether the receiver can print headers and footers.
 var canPrintHeadersAndFooters: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canPrintHeadersAndFooters;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver can print headers and footers; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver can print headers and footers; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func printOperation(with: NSPrintInfo!) -> NSPrintOperation!](webframeview/printoperation(with:).md)
+### Printing Views
+- [func printOperation(with: NSPrintInfo!) -> NSPrintOperation!](./printoperation%28with%29.md)
   Returns a print operation object to print this frame.
-- [var documentViewShouldHandlePrint: Bool](webframeview/documentviewshouldhandleprint.md)
+- [var documentViewShouldHandlePrint: Bool](./documentviewshouldhandleprint.md)
   A Boolean value indicating whether the document view should handle a print operation.
-- [func printDocumentView()](webframeview/printdocumentview.md)
+- [func printDocumentView()](./printdocumentview%28%29.md)
   Prints the receiver.
 
 

@@ -1,7 +1,8 @@
 # requiredMetadataObjectTypesForCinematicVideoCapture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The required metadata object types when Cinematic Video capture is enabled.
 
@@ -18,17 +19,22 @@ The required metadata object types when Cinematic Video capture is enabled.
 var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * requiredMetadataObjectTypesForCinematicVideoCapture;
+```
+
 #### Discussion
 
-Since the Cinematic Video algorithm requires a particular set of metadata objects to function optimally, you must set your [`metadataObjectTypes`](avcapturemetadataoutput/metadataobjecttypes.md) property to this property’s returned value if you’ve set [`isCinematicVideoCaptureEnabled`](avcapturedeviceinput/iscinematicvideocaptureenabled.md) to `true` on the connected device input, otherwise an `NSInvalidArgumentException` is thrown.
+Since the Cinematic Video algorithm requires a particular set of metadata objects to function optimally, you must set your [`metadataObjectTypes`](./metadataobjecttypes.md) property to this property’s returned value if you’ve set [`isCinematicVideoCaptureEnabled`](../avcapturedeviceinput/iscinematicvideocaptureenabled.md) to `true` on the connected device input, otherwise an `NSInvalidArgumentException` is thrown.
 
 ## See Also
 
-- [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/availablemetadataobjecttypes.md)
+### Configuring metadata capture
+- [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](./availablemetadataobjecttypes.md)
   An array of strings identifying the types of metadata objects that can be captured.
-- [var metadataObjectTypes: [AVMetadataObject.ObjectType]!](avcapturemetadataoutput/metadataobjecttypes.md)
+- [var metadataObjectTypes: [AVMetadataObject.ObjectType]!](./metadataobjecttypes.md)
   An array of strings identifying the types of metadata objects  to process.
-- [var rectOfInterest: CGRect](avcapturemetadataoutput/rectofinterest.md)
+- [var rectOfInterest: CGRect](./rectofinterest.md)
   A rectangle of interest for limiting the search area for visual metadata.
 
 

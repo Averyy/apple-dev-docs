@@ -1,7 +1,8 @@
 # telephoneNumber
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a telephone number.
 
@@ -14,9 +15,14 @@ A property that defines the content in a text input area as a telephone number.
 static let telephoneNumber: NSTextContentType
 ```
 
+```c
+extern NSTextContentType const NSTextContentTypeTelephoneNumber;
+```
+
 ## See Also
 
-- [static let emailAddress: NSTextContentType](nstextcontenttype/emailaddress.md)
+### Setting communication details
+- [static let emailAddress: NSTextContentType](./emailaddress.md)
   A property that defines the content in a text input area as an email address.
 
 

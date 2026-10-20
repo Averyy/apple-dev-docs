@@ -1,7 +1,8 @@
 # Publishers.DropWhile.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.DropWhile.Failure](publishers/dropwhile/failure.md)
+### Declaring supporting types
+- [Publishers.DropWhile.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

@@ -1,7 +1,8 @@
 # modifiers(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines a gesture with keyboard modifiers.
 

@@ -1,7 +1,8 @@
 # GKMatchedPlayers
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents matchmaking results, including the players that join the match and their properties that matchmaking rules uses.
 
@@ -19,48 +20,53 @@ An object that represents matchmaking results, including the players that join t
 class GKMatchedPlayers
 ```
 
+```objc
+@interface GKMatchedPlayers : NSObject
+```
+
 #### Overview
 
-If the [`properties`](gkmatchedplayers/properties.md) and `playersProperties` properties are `nil`, Game Center didn’t use matchmaking rules to find the players. For more information, see [`Matchmaking rules`](matchmaking-rules.md).
+If the [`properties`](./gkmatchedplayers/properties.md) and `playersProperties` properties are `nil`, Game Center didn’t use matchmaking rules to find the players. For more information, see [Matchmaking rules](./matchmaking-rules.md).
 
 ## Topics
 
 ### Getting players
-- [var players: [GKPlayer]](gkmatchedplayers/players.md)
+- [var players: [GKPlayer]](./gkmatchedplayers/players.md)
   The players that join the match.
 ### Matchmaking using rules
-- [var properties: [String : Any]?](gkmatchedplayers/properties.md)
+- [var properties: [String : Any]?](./gkmatchedplayers/properties.md)
   The local player’s properties that matchmaking rules uses to find the players, with some additions.
-- [var playerProperties: [GKPlayer : [String : Any]]?](gkmatchedplayers/playerproperties.md)
+- [var playerProperties: [GKPlayer : [String : Any]]?](./gkmatchedplayers/playerproperties.md)
   The properties for other players that matchmaking rules uses to find players, with some additions.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func findMatch(for: GKMatchRequest, withCompletionHandler: ((GKMatch?, (any Error)?) -> Void)?)](gkmatchmaker/findmatch(for:withcompletionhandler:).md)
+### Matching players
+- [func findMatch(for: GKMatchRequest, withCompletionHandler: ((GKMatch?, (any Error)?) -> Void)?)](./gkmatchmaker/findmatch%28for,withcompletionhandler%29.md)
   Initiates a request to find players for a peer-to-peer match.
-- [func findPlayers(forHostedRequest: GKMatchRequest, withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gkmatchmaker/findplayers(forhostedrequest:withcompletionhandler:).md)
+- [func findPlayers(forHostedRequest: GKMatchRequest, withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./gkmatchmaker/findplayers%28forhostedrequest,withcompletionhandler%29.md)
   Initiates a request to find players for a hosted match.
-- [func findMatchedPlayers(GKMatchRequest, withCompletionHandler: (GKMatchedPlayers?, (any Error)?) -> Void)](gkmatchmaker/findmatchedplayers(_:withcompletionhandler:).md)
+- [func findMatchedPlayers(GKMatchRequest, withCompletionHandler: (GKMatchedPlayers?, (any Error)?) -> Void)](./gkmatchmaker/findmatchedplayers%28_,withcompletionhandler%29.md)
   Initiates a request to find players for a hosted match that uses matchmaking rules.
-- [func addPlayers(to: GKMatch, matchRequest: GKMatchRequest, completionHandler: (((any Error)?) -> Void)?)](gkmatchmaker/addplayers(to:matchrequest:completionhandler:).md)
+- [func addPlayers(to: GKMatch, matchRequest: GKMatchRequest, completionHandler: (((any Error)?) -> Void)?)](./gkmatchmaker/addplayers%28to,matchrequest,completionhandler%29.md)
   Invites additional players to an existing match.
-- [func finishMatchmaking(for: GKMatch)](gkmatchmaker/finishmatchmaking(for:).md)
+- [func finishMatchmaking(for: GKMatch)](./gkmatchmaker/finishmatchmaking%28for%29.md)
   Informs the server when programmatic matchmaking finishes.
-- [func cancel()](gkmatchmaker/cancel.md)
+- [func cancel()](./gkmatchmaker/cancel%28%29.md)
   Cancels a matchmaking request.
-- [func cancelPendingInvite(to: GKPlayer)](gkmatchmaker/cancelpendinginvite(to:).md)
+- [func cancelPendingInvite(to: GKPlayer)](./gkmatchmaker/cancelpendinginvite%28to%29.md)
   Cancels a pending invitation to another player.
 
 

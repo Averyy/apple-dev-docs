@@ -1,7 +1,8 @@
 # AVMakeRect(aspectRatio:insideRect:)
 
 **Framework**: AVFoundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a scaled rectangle that maintains the specified aspect ratio within a bounding rectangle.
 
@@ -19,13 +20,17 @@ Returns a scaled rectangle that maintains the specified aspect ratio within a bo
 func AVMakeRect(aspectRatio: CGSize, insideRect boundingRect: CGRect) -> CGRect
 ```
 
+```c
+extern CGRect AVMakeRectWithAspectRatioInsideRect(CGSize aspectRatio, CGRect boundingRect);
+```
+
 #### Return Value
 
 Returns a scaled `CGRect` that maintains the aspect ratio specified by `aspectRatio` that fits within `boundingRect`.
 
 #### Discussion
 
-Use this function when attempting to fit the presentation size of a player item object’s content within the bounds of another [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer). Use the returned [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) as the player layer’s [`frame`](https://developer.apple.com/documentation/quartzcore/calayer/frame) property value. For example:
+Use this function when attempting to fit the presentation size of a player item object’s content within the bounds of another [`CALayer`](../QuartzCore/calayer.md). Use the returned [`CGRect`](../CoreFoundation/cgrect.md) as the player layer’s [`frame`](../QuartzCore/calayer/frame.md) property value. For example:
 
 **Swift**:
 

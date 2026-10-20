@@ -1,7 +1,8 @@
 # init(validating:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a path from its string representation, validating that `path` is well-formed.
 

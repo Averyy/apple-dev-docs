@@ -1,7 +1,8 @@
 # primeInfo
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of priming frames the converter uses.
 
@@ -20,13 +21,18 @@ The number of priming frames the converter uses.
 var primeInfo: AVAudioConverterPrimeInfo { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudioConverterPrimeInfo primeInfo;
+```
+
 ## See Also
 
-- [var primeMethod: AVAudioConverterPrimeMethod](avaudioconverter/primemethod.md)
+### Getting priming information
+- [var primeMethod: AVAudioConverterPrimeMethod](./primemethod.md)
   The priming method the sample rate converter or decoder uses.
-- [struct AVAudioConverterPrimeInfo](avaudioconverterprimeinfo.md)
+- [struct AVAudioConverterPrimeInfo](../avaudioconverterprimeinfo.md)
   Priming information for audio conversion.
-- [enum AVAudioConverterPrimeMethod](avaudioconverterprimemethod.md)
+- [enum AVAudioConverterPrimeMethod](../avaudioconverterprimemethod.md)
   Options for the prime method property.
 
 

@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.formatTwoComponent8
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit, two-component pixel format with black equal to zero.
 
@@ -11,7 +12,7 @@ An 8-bit, two-component pixel format with black equal to zero.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case formatTwoComponent8
 
 ## See Also
 
-- [vImageCVImageFormat.Format.formatTwoComponent16Half](vimagecvimageformat/format/formattwocomponent16half.md)
+### Two-component format constants
+- [vImageCVImageFormat.Format.formatTwoComponent16Half](./formattwocomponent16half.md)
   A little-endian 16-bit, two-component pixel format.
-- [vImageCVImageFormat.Format.formatTwoComponent32Float](vimagecvimageformat/format/formattwocomponent32float.md)
+- [vImageCVImageFormat.Format.formatTwoComponent32Float](./formattwocomponent32float.md)
   A little-endian 32-bit, two-component pixel format.
 
 

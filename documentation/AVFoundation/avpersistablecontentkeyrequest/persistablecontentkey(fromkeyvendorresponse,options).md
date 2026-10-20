@@ -1,7 +1,8 @@
 # persistableContentKey(fromKeyVendorResponse:options:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a persistable content key from the content key context data.
 
@@ -18,6 +19,10 @@ Creates a persistable content key from the content key context data.
 
 ```swift
 func persistableContentKey(fromKeyVendorResponse keyVendorResponse: Data, options: [String : Any]? = nil) throws -> Data
+```
+
+```objc
+- (NSData *) persistableContentKeyFromKeyVendorResponse:(NSData *) keyVendorResponse options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
 ```
 
 #### Return Value

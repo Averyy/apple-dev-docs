@@ -1,7 +1,8 @@
 # USDValue.Matrix4d.VectorType
 
 **Framework**: USDKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+

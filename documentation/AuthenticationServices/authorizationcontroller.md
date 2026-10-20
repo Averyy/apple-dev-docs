@@ -1,7 +1,8 @@
 # AuthorizationController
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI environment value that views use to perform authorization requests.
 
@@ -23,7 +24,7 @@ struct AuthorizationController
 
 #### Overview
 
-To access an instance of this type, use the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) property wrapper and specify [`authorizationController`](https://developer.apple.com/documentation/swiftui/environmentvalues/authorizationcontroller) as the environment value, as the following example shows:
+To access an instance of this type, use the SwiftUI [`Environment`](../SwiftUI/environment.md) property wrapper and specify [`authorizationController`](../SwiftUI/environmentvalues/authorizationcontroller.md) as the environment value, as the following example shows:
 
 ```swift
 struct AuthorizationControllerExample: View {
@@ -55,35 +56,36 @@ struct AuthorizationControllerExample: View {
 ## Topics
 
 ### Performing requests
-- [func performRequest(ASAuthorizationRequest) async throws -> ASAuthorizationResult](authorizationcontroller/performrequest(_:).md)
+- [func performRequest(ASAuthorizationRequest) async throws -> ASAuthorizationResult](./authorizationcontroller/performrequest%28_%29.md)
   Performs the specified authorization request.
-- [func performRequests([ASAuthorizationRequest]) async throws -> ASAuthorizationResult](authorizationcontroller/performrequests(_:).md)
+- [func performRequests([ASAuthorizationRequest]) async throws -> ASAuthorizationResult](./authorizationcontroller/performrequests%28_%29.md)
   Performs an authorization request from the provided array.
-- [func performRequest(ASAuthorizationRequest, options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](authorizationcontroller/performrequest(_:options:).md)
+- [func performRequest(ASAuthorizationRequest, options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](./authorizationcontroller/performrequest%28_,options%29.md)
   Performs the specified authorization request with explicit options.
-- [func performRequests([ASAuthorizationRequest], options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](authorizationcontroller/performrequests(_:options:).md)
+- [func performRequests([ASAuthorizationRequest], options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](./authorizationcontroller/performrequests%28_,options%29.md)
   Performs an authorization request, with explicit options, from the provided array.
-- [func performRequest(ASAuthorizationRequest, customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult](authorizationcontroller/performrequest(_:custommethods:).md)
+- [func performRequest(ASAuthorizationRequest, customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult](./authorizationcontroller/performrequest%28_,custommethods%29.md)
   Performs the authorization request using a custom authorization method.
-- [func performRequests([ASAuthorizationRequest], customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult](authorizationcontroller/performrequests(_:custommethods:).md)
+- [func performRequests([ASAuthorizationRequest], customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult](./authorizationcontroller/performrequests%28_,custommethods%29.md)
   Performs an authorization request from the provided array using a custom authorization method.
 ### Performing assisted requests
-- [func performAutoFillAssistedRequest(ASAuthorizationRequest) async throws -> ASAuthorizationResult](authorizationcontroller/performautofillassistedrequest(_:).md)
+- [func performAutoFillAssistedRequest(ASAuthorizationRequest) async throws -> ASAuthorizationResult](./authorizationcontroller/performautofillassistedrequest%28_%29.md)
   Performs an AutoFill-assisted authorization request.
-- [func performAutoFillAssistedRequests([ASAuthorizationRequest]) async throws -> ASAuthorizationResult](authorizationcontroller/performautofillassistedrequests(_:).md)
+- [func performAutoFillAssistedRequests([ASAuthorizationRequest]) async throws -> ASAuthorizationResult](./authorizationcontroller/performautofillassistedrequests%28_%29.md)
   Performs an AutoFill-assisted authorization request from the provided array.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ASAuthorizationController](asauthorizationcontroller.md)
+### Authorization requests
+- [class ASAuthorizationController](./asauthorizationcontroller.md)
   A controller that manages authorization requests that a provider creates.
-- [enum ASAuthorizationResult](asauthorizationresult.md)
+- [enum ASAuthorizationResult](./asauthorizationresult.md)
   Describes the outcome of a successful authorization request.
 
 

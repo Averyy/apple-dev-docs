@@ -1,7 +1,8 @@
 # underlyingError
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error with additional diagnostic details.
 

@@ -1,9 +1,10 @@
 # init(data:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an [`ArtworkRepresentation`](artworkrepresentation.md) from image data.
+Creates an [`ArtworkRepresentation`](../artworkrepresentation.md) from image data.
 
 **Availability**:
 - iOS 27.0+
@@ -22,7 +23,7 @@ init(data: Data) throws
 
 #### Discussion
 
-> **Note**: [`ArtworkRepresentation.ArtworkRepresentationError.noRepresentationAvailable`](artworkrepresentation/artworkrepresentationerror/norepresentationavailable.md) if the data doesn’t represent a valid image or uses an unsupported format.
+> **Throws**: [`ArtworkRepresentation.ArtworkRepresentationError.noRepresentationAvailable`](./artworkrepresentationerror/norepresentationavailable.md) if the data doesn’t represent a valid image or uses an unsupported format.
 
 ## Parameters
 

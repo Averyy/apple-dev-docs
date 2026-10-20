@@ -1,7 +1,8 @@
 # SHError.Code.signatureInvalid
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate that the system is unable to generate a signature from the audio.
 
@@ -20,13 +21,18 @@ The error code to indicate that the system is unable to generate a signature fro
 case signatureInvalid
 ```
 
+```c
+SHErrorCodeSignatureInvalid
+```
+
 #### Discussion
 
 The most common cause of this error is silent audio input.
 
 ## See Also
 
-- [SHError.Code.signatureDurationInvalid](sherror/code/signaturedurationinvalid.md)
+### Signature errors
+- [SHError.Code.signatureDurationInvalid](./signaturedurationinvalid.md)
   The error code to indicate that the length of the generated signature is too long or too short to make a match in the catalog.
 
 

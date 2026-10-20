@@ -1,7 +1,8 @@
 # jpeg(withEncodingQuality:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The JPEG image format.
 

@@ -1,7 +1,8 @@
 # normalizedPosition
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the distance of the current cell from the collection view’s center cell.
 
@@ -12,6 +13,10 @@ A value that indicates the distance of the current cell from the collection view
 
 ```swift
 var normalizedPosition: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGFloat normalizedPosition;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(_:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a labeled slider tick at a specific value.
 

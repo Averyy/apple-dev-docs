@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 
 ```swift
 var preferredPresentationSizeForItemProvider: CGSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGSize preferredPresentationSizeForItemProvider;
 ```
 
 

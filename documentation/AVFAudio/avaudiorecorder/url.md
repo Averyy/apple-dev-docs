@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to which the recorder writes its data.
 
@@ -20,11 +21,16 @@ The URL to which the recorder writes its data.
 var url: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * url;
+```
+
 ## See Also
 
-- [var format: AVAudioFormat](avaudiorecorder/format.md)
+### Inspecting the audio data
+- [var format: AVAudioFormat](./format.md)
   The format of the recorded audio.
-- [var settings: [String : Any]](avaudiorecorder/settings.md)
+- [var settings: [String : Any]](./settings.md)
   The settings that describe the format of the recorded audio.
 
 

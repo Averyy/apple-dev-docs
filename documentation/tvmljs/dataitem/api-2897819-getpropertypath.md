@@ -1,7 +1,8 @@
 # getPropertyPath
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Retrieves the value associated with a property path.
 
@@ -10,13 +11,13 @@ Retrieves the value associated with a property path.
 
 ## Declaration
 
-```swift
+```
 Object getPropertyPath(
     in String path
 );
 ```
 
-#### Return_value
+#### Return Value
 
 The data item object contained in the path.
 
@@ -26,9 +27,10 @@ The data item object contained in the path.
 
 ## See Also
 
-- [setPropertyPath](dataitem/2897832-setpropertypath.md)
+### Working with Property Paths
+- [setPropertyPath](./api-2897832-setpropertypath.md)
   Sets the value associated with a property path.
-- [touchPropertyPath](dataitem/2897830-touchpropertypath.md)
+- [touchPropertyPath](./api-2897830-touchpropertypath.md)
   Updates the property path.
 
 

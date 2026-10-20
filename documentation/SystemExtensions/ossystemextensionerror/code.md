@@ -1,7 +1,8 @@
 # OSSystemExtensionError.Code
 
 **Framework**: System Extensions  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for system extensions.
 
@@ -17,53 +18,58 @@ Error codes for system extensions.
 enum Code
 ```
 
+```c
+enum OSSystemExtensionErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [OSSystemExtensionError.Code.unknown](ossystemextensionerror/code/unknown.md)
+- [OSSystemExtensionError.Code.unknown](./code/unknown.md)
   An error code that indicates an unknown error occurred.
-- [OSSystemExtensionError.Code.missingEntitlement](ossystemextensionerror/code/missingentitlement.md)
+- [OSSystemExtensionError.Code.missingEntitlement](./code/missingentitlement.md)
   An error code that indicates the system extension lacks a required entitlement.
-- [OSSystemExtensionError.Code.unsupportedParentBundleLocation](ossystemextensionerror/code/unsupportedparentbundlelocation.md)
+- [OSSystemExtensionError.Code.unsupportedParentBundleLocation](./code/unsupportedparentbundlelocation.md)
   An error code that indicates the extension’s parent app isn’t in a valid location for activation.
-- [OSSystemExtensionError.Code.extensionNotFound](ossystemextensionerror/code/extensionnotfound.md)
+- [OSSystemExtensionError.Code.extensionNotFound](./code/extensionnotfound.md)
   An error code that indicates the manager can’t find the system extension.
-- [OSSystemExtensionError.Code.extensionMissingIdentifier](ossystemextensionerror/code/extensionmissingidentifier.md)
+- [OSSystemExtensionError.Code.extensionMissingIdentifier](./code/extensionmissingidentifier.md)
   An error code that indicates the extension identifier is missing.
-- [OSSystemExtensionError.Code.duplicateExtensionIdentifer](ossystemextensionerror/code/duplicateextensionidentifer.md)
+- [OSSystemExtensionError.Code.duplicateExtensionIdentifer](./code/duplicateextensionidentifer.md)
   An error code that indicates the extension identifier duplicates an existing identifier.
-- [OSSystemExtensionError.Code.unknownExtensionCategory](ossystemextensionerror/code/unknownextensioncategory.md)
+- [OSSystemExtensionError.Code.unknownExtensionCategory](./code/unknownextensioncategory.md)
   An error code that indicates the extension manager can’t recognize the extension’s category identifier.
-- [OSSystemExtensionError.Code.codeSignatureInvalid](ossystemextensionerror/code/codesignatureinvalid.md)
+- [OSSystemExtensionError.Code.codeSignatureInvalid](./code/codesignatureinvalid.md)
   An error code that indicates the extension’s signature is invalid.
-- [OSSystemExtensionError.Code.validationFailed](ossystemextensionerror/code/validationfailed.md)
+- [OSSystemExtensionError.Code.validationFailed](./code/validationfailed.md)
   An error code that indicates the manager can’t validate the extension.
-- [OSSystemExtensionError.Code.forbiddenBySystemPolicy](ossystemextensionerror/code/forbiddenbysystempolicy.md)
+- [OSSystemExtensionError.Code.forbiddenBySystemPolicy](./code/forbiddenbysystempolicy.md)
   An error code that indicates the system policy prohibits activating the system extension.
-- [OSSystemExtensionError.Code.requestCanceled](ossystemextensionerror/code/requestcanceled.md)
+- [OSSystemExtensionError.Code.requestCanceled](./code/requestcanceled.md)
   An error code that indicates the system extension manager request was canceled.
-- [OSSystemExtensionError.Code.requestSuperseded](ossystemextensionerror/code/requestsuperseded.md)
+- [OSSystemExtensionError.Code.requestSuperseded](./code/requestsuperseded.md)
   An error code that indicates the system extension request failed because the system already has a pending request for the same identifier.
-- [OSSystemExtensionError.Code.authorizationRequired](ossystemextensionerror/code/authorizationrequired.md)
+- [OSSystemExtensionError.Code.authorizationRequired](./code/authorizationrequired.md)
   An error code that indicates the system was unable to obtain the proper authorization.
 ### Initializers
-- [init?(rawValue: Int)](ossystemextensionerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct OSSystemExtensionError](ossystemextensionerror.md)
+### Errors
+- [struct OSSystemExtensionError](../ossystemextensionerror.md)
   An error that describes a failed extension manager request.
-- [let OSSystemExtensionErrorDomain: String](ossystemextensionerrordomain.md)
+- [let OSSystemExtensionErrorDomain: String](../ossystemextensionerrordomain.md)
   The error domain identifying system extension errors.
 
 

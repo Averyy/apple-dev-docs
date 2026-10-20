@@ -1,7 +1,8 @@
 # persistentIdentifierForItem(at:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a unique identifier for the given URL.
 
@@ -17,6 +18,10 @@ Returns a unique identifier for the given URL.
 func persistentIdentifierForItem(at url: URL) -> NSFileProviderItemIdentifier?
 ```
 
+```objc
+- (NSFileProviderItemIdentifier) persistentIdentifierForItemAtURL:(NSURL *) url;
+```
+
 #### Return Value
 
 A unique identifier for the item specified by the URL, or `nil` if the document is not in the File Provider’s shared container.
@@ -27,7 +32,7 @@ Override this method to define a static mapping between URLs and their persisten
 
 For example, if you already have a unique key for the document in your cloud database, you can use that key as the document’s identifier.
 
-Always return `nil` if the URL is not inside in the directory referred to by the [`NSFileProviderManager`](nsfileprovidermanager.md) object’s [`documentStorageURL`](nsfileprovidermanager/documentstorageurl.md) property.
+Always return `nil` if the URL is not inside in the directory referred to by the [`NSFileProviderManager`](../nsfileprovidermanager.md) object’s [`documentStorageURL`](../nsfileprovidermanager/documentstorageurl.md) property.
 
 ## Parameters
 
@@ -35,13 +40,14 @@ Always return `nil` if the URL is not inside in the directory referred to by the
 
 ## See Also
 
-- [func urlForItem(withPersistentIdentifier: NSFileProviderItemIdentifier) -> URL?](nsfileproviderextension/urlforitem(withpersistentidentifier:).md)
+### Working with items and persistent identifiers
+- [func urlForItem(withPersistentIdentifier: NSFileProviderItemIdentifier) -> URL?](./urlforitem%28withpersistentidentifier%29.md)
   Returns the URL for a given persistent identifier.
-- [func item(for: NSFileProviderItemIdentifier) throws -> NSFileProviderItem](nsfileproviderextension/item(for:).md)
+- [func item(for: NSFileProviderItemIdentifier) throws -> NSFileProviderItem](./item%28for%29.md)
   Returns a description of the item associated with the persistent identifier.
-- [func enumerator(for: NSFileProviderItemIdentifier) throws -> any NSFileProviderEnumerator](nsfileproviderextension/enumerator(for:).md)
+- [func enumerator(for: NSFileProviderItemIdentifier) throws -> any NSFileProviderEnumerator](./enumerator%28for%29.md)
   Returns an enumerator for the specified item.
-- [struct NSFileProviderItemIdentifier](nsfileprovideritemidentifier.md)
+- [struct NSFileProviderItemIdentifier](../nsfileprovideritemidentifier.md)
   A unique identifier for an item managed by the File Provider extension.
 
 

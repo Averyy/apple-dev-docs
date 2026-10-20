@@ -1,12 +1,15 @@
 # CLKTimeIntervalTextProvider
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatted time range.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A formatted time range.
 class CLKTimeIntervalTextProvider
 ```
 
+```objc
+@interface CLKTimeIntervalTextProvider : CLKTextProvider
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
@@ -34,45 +41,46 @@ When formatting the time interval, the time text provider drops the morning/even
 ## Topics
 
 ### Creating the Text Provider
-- [convenience init(start: Date, end: Date)](clktimeintervaltextprovider/init(start:end:).md)
+- [convenience init(start: Date, end: Date)](./clktimeintervaltextprovider/init%28start,end%29.md)
   Creates and returns a text provider with the specified start and end dates.
-- [convenience init(start: Date, end: Date, timeZone: TimeZone?)](clktimeintervaltextprovider/init(start:end:timezone:).md)
+- [convenience init(start: Date, end: Date, timeZone: TimeZone?)](./clktimeintervaltextprovider/init%28start,end,timezone%29.md)
   Creates and returns a text provider with the specified dates and time zone information.
 ### Getting the Time Information
-- [var startDate: Date](clktimeintervaltextprovider/startdate.md)
+- [var startDate: Date](./clktimeintervaltextprovider/startdate.md)
   The start date for the time interval.
-- [var endDate: Date](clktimeintervaltextprovider/enddate.md)
+- [var endDate: Date](./clktimeintervaltextprovider/enddate.md)
   The end date for the time interval.
-- [var timeZone: TimeZone?](clktimeintervaltextprovider/timezone.md)
+- [var timeZone: TimeZone?](./clktimeintervaltextprovider/timezone.md)
   The time zone used to format time values.
 ### Initializers
-- [convenience init(startDate: Date, endDate: Date)](clktimeintervaltextprovider/init(startdate:enddate:).md)
-- [convenience init(startDate: Date, endDate: Date, timeZone: TimeZone?)](clktimeintervaltextprovider/init(startdate:enddate:timezone:).md)
+- [convenience init(startDate: Date, endDate: Date)](./clktimeintervaltextprovider/init%28startdate,enddate%29.md)
+- [convenience init(startDate: Date, endDate: Date, timeZone: TimeZone?)](./clktimeintervaltextprovider/init%28startdate,enddate,timezone%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CLKTextProvider](clktextprovider.md)
+- [CLKTextProvider](./clktextprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKSimpleTextProvider](clksimpletextprovider.md)
+### Text providers
+- [class CLKSimpleTextProvider](./clksimpletextprovider.md)
   A single line of text to display in your complication interface.
-- [class CLKDateTextProvider](clkdatetextprovider.md)
+- [class CLKDateTextProvider](./clkdatetextprovider.md)
   A formatted string that conveys a date without any time information.
-- [class CLKRelativeDateTextProvider](clkrelativedatetextprovider.md)
+- [class CLKRelativeDateTextProvider](./clkrelativedatetextprovider.md)
   A formatted string that conveys the difference in time between the current date and a date that you specify.
-- [class CLKTimeTextProvider](clktimetextprovider.md)
+- [class CLKTimeTextProvider](./clktimetextprovider.md)
   A formatted time value.
-- [class CLKTextProvider](clktextprovider.md)
+- [class CLKTextProvider](./clktextprovider.md)
   The common behavior for displaying text-based data in a complication.
 
 

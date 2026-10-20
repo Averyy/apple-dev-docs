@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bounds rectangle, which describes the item’s location and size in its own coordinate system.
@@ -15,11 +16,16 @@ The bounds rectangle, which describes the item’s location and size in its own 
 var bounds: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect bounds;
+```
+
 ## See Also
 
-- [var frame: NSRect](nscollectionlayoutvisibleitem/frame.md)
+### Configuring position
+- [var frame: NSRect](./frame.md)
   The frame rectangle, which describes the item’s location and size in its section’s coordinate system.
-- [var center: NSPoint](nscollectionlayoutvisibleitem/center.md)
+- [var center: NSPoint](./center.md)
   The center point of the item’s frame rectangle.
 
 

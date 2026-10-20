@@ -1,7 +1,8 @@
 # vmnet_start_interface(_:_:_:)
 
 **Framework**: vmnet  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Starts a new virtual interface instance.
 
@@ -13,6 +14,10 @@ Starts a new virtual interface instance.
 
 ```swift
 func vmnet_start_interface(_ interface_desc: xpc_object_t, _ queue: dispatch_queue_t, _ handler: @escaping vmnet_start_interface_completion_handler_t) -> interface_ref?
+```
+
+```c
+interface_refvmnet_start_interface(xpc_object_t interface_desc, dispatch_queue_t queue, vmnet_start_interface_completion_handler_t handler);
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ Attributes of the virtual interface are specified using the interface_desc dicti
 
 ## See Also
 
-- [func vmnet_interface_start_with_network(vmnet_network_ref, xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](vmnet_interface_start_with_network(_:_:_:_:).md)
+### Starting and stopping interfaces
+- [func vmnet_interface_start_with_network(vmnet_network_ref, xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](./vmnet_interface_start_with_network%28_,_,_,_%29.md)
   Starts a new virtual interface instance on a network.
-- [func vmnet_interface_set_event_callback(interface_ref, interface_event_t, dispatch_queue_t?, vmnet_interface_event_callback_t?) -> vmnet_return_t](vmnet_interface_set_event_callback(_:_:_:_:).md)
+- [func vmnet_interface_set_event_callback(interface_ref, interface_event_t, dispatch_queue_t?, vmnet_interface_event_callback_t?) -> vmnet_return_t](./vmnet_interface_set_event_callback%28_,_,_,_%29.md)
   Schedules a callback to be executed when events for the specified interface are received.
-- [func vmnet_stop_interface(interface_ref, dispatch_queue_t, vmnet_interface_completion_handler_t) -> vmnet_return_t](vmnet_stop_interface(_:_:_:).md)
+- [func vmnet_stop_interface(interface_ref, dispatch_queue_t, vmnet_interface_completion_handler_t) -> vmnet_return_t](./vmnet_stop_interface%28_,_,_%29.md)
   Stops I/O on the virtual interface.
 
 

@@ -1,7 +1,8 @@
 # timeInterval
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of this time interval, in seconds.
 
@@ -22,7 +23,8 @@ var timeInterval: TimeInterval { get }
 
 ## See Also
 
-- [var magnitude: TimeInterval](operationqueue/schedulertimetype/stride/magnitude.md)
+### Managing Stride Properties
+- [var magnitude: TimeInterval](./magnitude.md)
   The value of this time interval, in seconds.
 
 

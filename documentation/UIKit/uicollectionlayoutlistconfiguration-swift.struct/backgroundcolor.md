@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the list.
 
@@ -10,7 +11,7 @@ The background color of the list.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,9 +25,10 @@ The default vaue is `nil`, which means that the configuration uses the system ba
 
 ## See Also
 
-- [var appearance: UICollectionLayoutListConfiguration.Appearance](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.property.md)
+### Configuring appearance
+- [var appearance: UICollectionLayoutListConfiguration.Appearance](./appearance-swift.property.md)
   The overall appearance of the list.
-- [UICollectionLayoutListConfiguration.Appearance](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum.md)
+- [UICollectionLayoutListConfiguration.Appearance](./appearance-swift.enum.md)
   Constants that describe the appearance of the list.
 
 

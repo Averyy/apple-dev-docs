@@ -1,7 +1,8 @@
 # SortOrder.reverse
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ordering that places the first item after the second when comparing two items using an ascending order.
 
@@ -22,11 +23,12 @@ case reverse
 
 #### Discussion
 
-The ordering places the first item after the second when a [`ComparisonResult`](comparisonresult.md) of two items is [`ComparisonResult.orderedAscending`](comparisonresult/orderedascending.md).
+The ordering places the first item after the second when a [`ComparisonResult`](../comparisonresult.md) of two items is [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md).
 
 ## See Also
 
-- [SortOrder.forward](sortorder/forward.md)
+### Using Sort Orders
+- [SortOrder.forward](./forward.md)
   The ordering that places the first item before the second when comparing two items using an ascending order.
 
 

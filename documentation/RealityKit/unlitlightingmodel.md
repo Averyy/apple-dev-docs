@@ -1,7 +1,8 @@
 # UnlitLightingModel
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration for an unlit lighting model, which renders without any light interaction.
 
@@ -22,26 +23,27 @@ struct UnlitLightingModel
 ## Topics
 
 ### Configuring tone mapping
-- [var isTonemappingEnabled: Bool](unlitlightingmodel/istonemappingenabled.md)
+- [var isTonemappingEnabled: Bool](./unlitlightingmodel/istonemappingenabled.md)
   Whether to apply tonemapping to this material’s output.
 ### Initializers
-- [init()](unlitlightingmodel/init.md)
+- [init()](./unlitlightingmodel/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum LightingModel](lightingmodel.md)
-  The lighting model used by a [`ShaderGraphMaterial.Program`](shadergraphmaterial/program-swift.struct.md).
-- [struct LitLightingModel](litlightingmodel.md)
+### Lighting models
+- [enum LightingModel](./lightingmodel.md)
+  The lighting model used by a [`ShaderGraphMaterial.Program`](./shadergraphmaterial/program-swift.struct.md).
+- [struct LitLightingModel](./litlightingmodel.md)
   Configuration for RealityKit’s physically based lighting model.
-- [struct HairLightingModel](hairlightingmodel.md)
+- [struct HairLightingModel](./hairlightingmodel.md)
   Configuration for RealityKit’s hair lighting model.
 
 

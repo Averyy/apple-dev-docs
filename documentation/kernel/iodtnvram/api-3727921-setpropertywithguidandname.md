@@ -1,14 +1,15 @@
 # setPropertyWithGUIDAndName
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 IOReturn setPropertyWithGUIDAndName(const uuid_t guid, const char *name, OSObject *anObject);
 ```
 

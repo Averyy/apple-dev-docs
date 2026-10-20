@@ -1,27 +1,28 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeThrough<Self>](collectiondifference/index/'...(_:)-26k07.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-26k07.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self) -> PartialRangeFrom<Self>](collectiondifference/index/'...(_:)-53ydx.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-53ydx.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](collectiondifference/index/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](collectiondifference/index/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](collectiondifference/index/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (CollectionDifference<ChangeElement>.Index, CollectionDifference<ChangeElement>.Index) -> Bool](collectiondifference/index/_(_:_:).md)
+- [static func < (CollectionDifference<ChangeElement>.Index, CollectionDifference<ChangeElement>.Index) -> Bool](./op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](collectiondifference/index/_(_:_:)-8ex7m.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-8ex7m.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](collectiondifference/index/_=(_:_:)-2ady7.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-2ady7.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](collectiondifference/index/_=(_:_:)-6a17u.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-6a17u.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

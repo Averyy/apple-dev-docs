@@ -1,7 +1,8 @@
 # availableMediaCharacteristicsWithMediaSelectionOptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The media characteristics that provide media selection options.
 
@@ -20,17 +21,20 @@ The media characteristics that provide media selection options.
 static var availableMediaCharacteristicsWithMediaSelectionOptions: AVAsyncProperty<Root, [AVMediaCharacteristic]> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [static var allMediaSelections: AVAsyncProperty<Root, [AVMediaSelection]>](avpartialasyncproperty/allmediaselections.md)
+### Loading media selections
+- [static var allMediaSelections: AVAsyncProperty<Root, [AVMediaSelection]>](./allmediaselections.md)
   The available media selections for an asset.
-- [static var preferredMediaSelection: AVAsyncProperty<Root, AVMediaSelection>](avpartialasyncproperty/preferredmediaselection.md)
+- [static var preferredMediaSelection: AVAsyncProperty<Root, AVMediaSelection>](./preferredmediaselection.md)
   The default media selections for the media selection groups of an asset.
-- [func loadMediaSelectionGroup(for: AVMediaCharacteristic, completionHandler: (AVMediaSelectionGroup?, (any Error)?) -> Void)](avasset/loadmediaselectiongroup(for:completionhandler:).md)
+- [func loadMediaSelectionGroup(for: AVMediaCharacteristic, completionHandler: (AVMediaSelectionGroup?, (any Error)?) -> Void)](../avasset/loadmediaselectiongroup%28for,completionhandler%29.md)
   Loads a media selection group that contains one or more options with the specified media characteristic.
 
 

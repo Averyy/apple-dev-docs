@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Automator  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a workflow based on the contents of the specified file.
 
@@ -15,13 +16,19 @@ Creates and initializes a workflow based on the contents of the specified file.
 convenience init(contentsOf fileURL: URL) throws
 ```
 
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) fileURL error:(NSError **) outError;
+```
+
 #### Return Value
 
 The initialized workflow object. On error, returns nil.
 
 #### Discussion
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -29,7 +36,8 @@ The initialized workflow object. On error, returns nil.
 
 ## See Also
 
-- [init()](amworkflow/init.md)
+### Creating a Workflow
+- [init()](./init%28%29.md)
   Creates and initializes a workflow.
 
 

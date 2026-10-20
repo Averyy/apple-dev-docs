@@ -1,7 +1,8 @@
 # SubscriptionPlanAvailabilityCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription plan availability.
 
@@ -10,23 +11,23 @@ The request body you use to create a subscription plan availability.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPlanAvailabilityCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object SubscriptionPlanAvailabilityCreateRequest.Data.Attributes](subscriptionplanavailabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionPlanAvailabilityCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription plan availability create request resource.
-- [object SubscriptionPlanAvailabilityCreateRequest.Data.Relationships](subscriptionplanavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object SubscriptionPlanAvailabilityCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (SubscriptionPlanAvailabilityCreateRequest.Data.Attributes) *(required)*
 - `relationships` (SubscriptionPlanAvailabilityCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionPlanAvailabilities`
 
 
 ---

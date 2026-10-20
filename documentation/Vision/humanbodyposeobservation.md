@@ -1,7 +1,8 @@
 # HumanBodyPoseObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that provides the body points the analysis recognizes.
 
@@ -22,39 +23,39 @@ struct HumanBodyPoseObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNHumanBodyPoseObservation)](humanbodyposeobservation/init(_:).md)
+- [init(VNHumanBodyPoseObservation)](./humanbodyposeobservation/init%28_%29.md)
   Creates a human body pose observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let leftHand: HumanHandPoseObservation?](humanbodyposeobservation/lefthand.md)
+- [let leftHand: HumanHandPoseObservation?](./humanbodyposeobservation/lefthand.md)
   The observed left hand.
-- [let rightHand: HumanHandPoseObservation?](humanbodyposeobservation/righthand.md)
+- [let rightHand: HumanHandPoseObservation?](./humanbodyposeobservation/righthand.md)
   The observed right hand.
-- [struct HumanHandPoseObservation](humanhandposeobservation.md)
+- [struct HumanHandPoseObservation](./humanhandposeobservation.md)
   An observation that provides the hand points the analysis recognizes.
-- [var keypoints: MLMultiArray](humanbodyposeobservation/keypoints.md)
+- [var keypoints: MLMultiArray](./humanbodyposeobservation/keypoints.md)
   A multi-array compatible with Core ML that contains normalized point coordinates and confidence scores.
 ### Getting the joints
-- [HumanBodyPoseObservation.JointsGroupName](humanbodyposeobservation/jointsgroupname.md)
+- [HumanBodyPoseObservation.JointsGroupName](./humanbodyposeobservation/jointsgroupname.md)
   The joint group names available in the observation.
-- [HumanBodyPoseObservation.JointName](humanbodyposeobservation/jointname.md)
+- [HumanBodyPoseObservation.JointName](./humanbodyposeobservation/jointname.md)
   The supported joint names for the body pose.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [PoseProviding](poseproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [PoseProviding](./poseproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

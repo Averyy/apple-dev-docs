@@ -1,12 +1,13 @@
 # init(data:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a representation of an image from the specified data in the PICT file format.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a representation of an image from the specified data in the PICT file fo
 init?(data pictData: Data)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) pictData;
+```
+
 #### Return Value
 
-An initialized [`NSPICTImageRep`](nspictimagerep.md), or `nil` if the object could not be initialized. Initialization may fail if the data does not conform to the PICT file format.
+An initialized [`NSPICTImageRep`](../nspictimagerep.md), or `nil` if the object could not be initialized. Initialization may fail if the data does not conform to the PICT file format.
 
 #### Discussion
 
@@ -28,7 +33,8 @@ If the PICT data is obtained directly from a PICT file or document, this method 
 
 ## See Also
 
-- [var pictRepresentation: Data](nspictimagerep/pictrepresentation.md)
+### Related Documentation
+- [var pictRepresentation: Data](./pictrepresentation.md)
   The image representation’s PICT data.
 
 

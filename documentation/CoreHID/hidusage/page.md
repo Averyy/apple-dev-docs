@@ -1,7 +1,8 @@
 # page
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The usage page value.
 

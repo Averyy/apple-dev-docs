@@ -1,7 +1,8 @@
 # UIButton.Configuration.Indicator.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that doesn’t show an indicator.
 
@@ -10,7 +11,7 @@ A constant that doesn’t show an indicator.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ case none
 
 ## See Also
 
-- [UIButton.Configuration.Indicator.automatic](uibutton/configuration-swift.struct/indicator-swift.enum/automatic.md)
+### Indicator styles
+- [UIButton.Configuration.Indicator.automatic](./automatic.md)
   A constant that automatically determines an indicator style according to the button’s properties.
-- [UIButton.Configuration.Indicator.popup](uibutton/configuration-swift.struct/indicator-swift.enum/popup.md)
+- [UIButton.Configuration.Indicator.popup](./popup.md)
   A constant that shows a popup-style indicator.
 
 

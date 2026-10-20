@@ -1,7 +1,8 @@
 # captureObject
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instance whose contents should be captured.
 
@@ -19,21 +20,26 @@ The instance whose contents should be captured.
 var captureObject: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id captureObject;
+```
+
 #### Discussion
 
 The default value is `nil`, but you need to set an instance before using this descriptor to start a capture session.
 
 The behavior of the capture session depends on the kind of instance being captured:
 
-- Specify an [`MTLDevice`](mtldevice.md) instance to capture commands in command buffers created on any command queues created by the device instance.
-- Specify an [`MTLCommandQueue`](mtlcommandqueue.md) instance to capture commands in command buffers created by a specific command queue.
-- Specify an [`MTLCaptureScope`](mtlcapturescope.md) instance to indirectly define which commands are captured.
+- Specify an [`MTLDevice`](../mtldevice.md) instance to capture commands in command buffers created on any command queues created by the device instance.
+- Specify an [`MTLCommandQueue`](../mtlcommandqueue.md) instance to capture commands in command buffers created by a specific command queue.
+- Specify an [`MTLCaptureScope`](../mtlcapturescope.md) instance to indirectly define which commands are captured.
 
 ## See Also
 
-- [var destination: MTLCaptureDestination](mtlcapturedescriptor/destination.md)
+### Setting capture parameters
+- [var destination: MTLCaptureDestination](./destination.md)
   The destination for any captured command data.
-- [var outputURL: URL?](mtlcapturedescriptor/outputurl.md)
+- [var outputURL: URL?](./outputurl.md)
   A URL for a file to write the capture data into.
 
 

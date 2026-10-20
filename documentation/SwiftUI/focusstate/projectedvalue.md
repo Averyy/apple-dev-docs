@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the focus state value that returns a binding.
 
@@ -46,9 +47,10 @@ struct Sidebar: View {
 
 ## See Also
 
-- [FocusState.Binding](focusstate/binding.md)
+### Inspecting the focus state
+- [FocusState.Binding](./binding.md)
   A property wrapper type that can read and write a value that indicates the current focus location.
-- [var wrappedValue: Value](focusstate/wrappedvalue.md)
+- [var wrappedValue: Value](./wrappedvalue.md)
   The current state value, taking into account whatever bindings might be in effect due to the current location of focus.
 
 

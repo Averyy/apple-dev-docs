@@ -1,7 +1,8 @@
 # sectionIdentifier(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an identifier for the section at the index you specify in the table view.
 
@@ -18,9 +19,14 @@ Returns an identifier for the section at the index you specify in the table view
 func sectionIdentifier(for index: Int) -> Any?
 ```
 
+```objc
+- (SectionIdentifierType) sectionIdentifierForIndex:(NSInteger) index;
+```
+
 ## See Also
 
-- [func index(forSectionIdentifier: Any) -> Int](uitableviewdiffabledatasourcereference/index(forsectionidentifier:).md)
+### Identifying sections
+- [func index(forSectionIdentifier: Any) -> Int](./index%28forsectionidentifier%29.md)
   Returns an index for the section with the identifier you specify in the table view.
 
 

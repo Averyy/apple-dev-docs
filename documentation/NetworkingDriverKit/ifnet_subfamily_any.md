@@ -1,24 +1,26 @@
 # IFNET_SUBFAMILY_ANY
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 IFNET_SUBFAMILY_ANY
 ```
 
 ## See Also
 
-- [IFNET_FAMILY_ANY](ifnet_family_any.md)
-- [IFNET_FAMILY_ETHERNET](ifnet_family_ethernet.md)
-- [IONetworkPacketTypeNetwork](ionetworkpackettypenetwork.md)
-- [rr_length_mask](rr_length_mask.md)
-- [rr_ptr_mask](rr_ptr_mask.md)
+### Enumeration cases
+- [IFNET_FAMILY_ANY](./ifnet_family_any.md)
+- [IFNET_FAMILY_ETHERNET](./ifnet_family_ethernet.md)
+- [IONetworkPacketTypeNetwork](./ionetworkpackettypenetwork.md)
+- [rr_length_mask](./rr_length_mask.md)
+- [rr_ptr_mask](./rr_ptr_mask.md)
 
 
 ---

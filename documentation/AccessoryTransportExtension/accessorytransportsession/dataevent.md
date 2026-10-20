@@ -1,12 +1,15 @@
 # AccessoryTransportSession.DataEvent
 
 **Framework**: Accessory Transport Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of data events that the transport extension receives.
 
 **Availability**:
-- iOS 26.4+
+- iOS 26.4+ - Deprecated in 26.5
+
+> **Deprecated**: TransportMessage
 
 ## Declaration
 
@@ -16,11 +19,12 @@ enum DataEvent
 
 #### Overview
 
-The [`AccessoryTransportSession.EventHandler`](accessorytransportsession/eventhandler.md) protocol’s [`dataEventHandler(event:)`](accessorytransportsession/eventhandler/dataeventhandler(event:).md) method receives events of this type.
+The [`AccessoryTransportSession.EventHandler`](./eventhandler.md) protocol’s [`dataEventHandler(event:)`](./eventhandler/dataeventhandler%28event%29.md) method receives events of this type.
 
 ## See Also
 
-- [AccessoryTransportSession.EventHandler](accessorytransportsession/eventhandler.md)
+### Handling session events
+- [AccessoryTransportSession.EventHandler](./eventhandler.md)
   A protocol that defines methods for handling transport session events.
 
 

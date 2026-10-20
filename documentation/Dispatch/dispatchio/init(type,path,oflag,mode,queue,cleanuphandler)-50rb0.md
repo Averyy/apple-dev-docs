@@ -1,18 +1,19 @@
 # init(type:path:oflag:mode:queue:cleanupHandler:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new I/O channel that accesses the file at the specified path, potentially creating that file in the process.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 4.0+
 
 ## Declaration
@@ -27,20 +28,23 @@ This method opens the channel by passing the `path`, `oflag`, and mode parameter
 
 ## Parameters
 
-- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](dispatchio/streamtype.md).
+- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](./streamtype.md).
 - `path`: The absolute path of the file you want to open.
 - `oflag`: The flags to pass to `open(2)` when opening the file at the specified path.
 - `mode`: The mode flags to pass to `open(2)`. Specify `O_CREAT` to create the file at the specified path; otherwise, specify 0.
 - `queue`: The dispatch queue on which to perform work.
-- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter: - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
+- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter:
+
+  - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
 
 ## See Also
 
-- [convenience init(type: DispatchIO.StreamType, fileDescriptor: Int32, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](dispatchio/init(type:filedescriptor:queue:cleanuphandler:).md)
+### Creating a Dispatch I/O Object
+- [convenience init(type: DispatchIO.StreamType, fileDescriptor: Int32, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](./init%28type,filedescriptor,queue,cleanuphandler%29.md)
   Creates a new I/O channel that accesses the specified file descriptor.
-- [convenience init(type: DispatchIO.StreamType, io: DispatchIO, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](dispatchio/init(type:io:queue:cleanuphandler:).md)
+- [convenience init(type: DispatchIO.StreamType, io: DispatchIO, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](./init%28type,io,queue,cleanuphandler%29.md)
   Creates a new I/O channel from an existing I/O channel.
-- [DispatchIO.StreamType](dispatchio/streamtype.md)
+- [DispatchIO.StreamType](./streamtype.md)
   The semantics for accessing the contents of a file descriptor.
 
 

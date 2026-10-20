@@ -1,7 +1,8 @@
 # MTLTransformType.packedFloat4x3
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case packedFloat4x3
+```
+
+```c
+MTLTransformTypePackedFloat4x3
 ```
 
 

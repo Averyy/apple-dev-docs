@@ -1,7 +1,8 @@
 # metrics
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of custom metrics values.
 
@@ -22,11 +23,12 @@ var metrics: [MetricsKey : any Sendable]
 
 ## See Also
 
-- [var itemCount: Int](event/itemcount.md)
+### Getting the properties
+- [var itemCount: Int](./itemcount.md)
   The number of items processed so far.
-- [var origin: String](event/origin.md)
+- [var origin: String](./origin.md)
   A description of the event’s origin.
-- [var totalItemCount: Int?](event/totalitemcount.md)
+- [var totalItemCount: Int?](./totalitemcount.md)
   The total number of items being processed.
 
 

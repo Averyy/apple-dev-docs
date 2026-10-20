@@ -1,12 +1,13 @@
 # add(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Bezier path to an annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,11 +15,17 @@ Adds a Bezier path to an annotation.
 func add(_ path: NSBezierPath!)
 ```
 
+```objc
+- (void) addBezierPath:(NSBezierPath *) path;
+```
+
 ## See Also
 
-- [func paths() -> [Any]!](pdfannotationink/paths.md)
+### Related Documentation
+- [func paths() -> [Any]!](./paths%28%29.md)
   Returns an array containing the Bezier paths that make up an annotation.
-- [func remove(NSBezierPath!)](pdfannotationink/remove(_:).md)
+### Working with Bezier paths
+- [func remove(NSBezierPath!)](./remove%28_%29.md)
   Removes a Bezier path from an annotation.
 
 

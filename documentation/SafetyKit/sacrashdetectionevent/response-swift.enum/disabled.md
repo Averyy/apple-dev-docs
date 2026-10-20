@@ -1,7 +1,8 @@
 # SACrashDetectionEvent.Response.disabled
 
 **Framework**: SafetyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system couldn’t contact the Emergency SOS - Call After Severe Crash provider because the feature is off in the Settings app.
 
@@ -18,9 +19,14 @@ The system couldn’t contact the Emergency SOS - Call After Severe Crash provid
 case disabled
 ```
 
+```c
+SACrashDetectionEventResponseDisabled
+```
+
 ## See Also
 
-- [SACrashDetectionEvent.Response.attempted](sacrashdetectionevent/response-swift.enum/attempted.md)
+### Determining responses
+- [SACrashDetectionEvent.Response.attempted](./attempted.md)
   The system attempted to dial the Emergency SOS - Call After Severe Crash provider.
 
 

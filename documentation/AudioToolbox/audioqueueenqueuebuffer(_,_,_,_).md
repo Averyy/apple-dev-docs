@@ -1,7 +1,8 @@
 # AudioQueueEnqueueBuffer(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a buffer to the buffer queue of a recording or playback audio queue.
 
@@ -19,6 +20,10 @@ Adds a buffer to the buffer queue of a recording or playback audio queue.
 func AudioQueueEnqueueBuffer(_ inAQ: AudioQueueRef, _ inBuffer: AudioQueueBufferRef, _ inNumPacketDescs: UInt32, _ inPacketDescs: UnsafePointer<AudioStreamPacketDescription>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueEnqueueBuffer(AudioQueueRef inAQ, AudioQueueBufferRef inBuffer, UInt32 inNumPacketDescs, const AudioStreamPacketDescription *inPacketDescs);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -31,22 +36,27 @@ Audio queue callbacks use this function to reenqueue buffers—placing them “l
 
 - `inAQ`: The audio queue that owns the audio queue buffer.
 - `inBuffer`: The audio queue buffer to add to the buffer queue.
-- `inNumPacketDescs`: The number of packets of audio data in the `inBuffer` parameter. Use a value of `0` for any of the following situations: - When playing a constant bit rate (CBR) format.
-- When the audio queue is a recording (input) audio queue.
-- When the buffer you are reenqueuing was allocated with the [`AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)`](audioqueueallocatebufferwithpacketdescriptions(_:_:_:_:).md) function. In this case, your callback should describe the buffer’s packets in the buffer’s `mPacketDescriptions` and `mPacketDescriptionCount` fields.
-- `inPacketDescs`: An array of packet descriptions. Use a value of `NULL` for any of the following situations: - When playing a constant bit rate (CBR) format.
-- When the audio queue is an input (recording) audio queue.
-- When the buffer you are reenqueuing was allocated with the [`AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)`](audioqueueallocatebufferwithpacketdescriptions(_:_:_:_:).md) function. In this case, your callback should describe the buffer’s packets in the buffer’s `mPacketDescriptions` and `mPacketDescriptionCount` fields.
+- `inNumPacketDescs`: The number of packets of audio data in the `inBuffer` parameter. Use a value of `0` for any of the following situations:
+
+  - When playing a constant bit rate (CBR) format.
+  - When the audio queue is a recording (input) audio queue.
+  - When the buffer you are reenqueuing was allocated with the [`AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)`](./audioqueueallocatebufferwithpacketdescriptions%28_,_,_,_%29.md) function. In this case, your callback should describe the buffer’s packets in the buffer’s `mPacketDescriptions` and `mPacketDescriptionCount` fields.
+- `inPacketDescs`: An array of packet descriptions. Use a value of `NULL` for any of the following situations:
+
+  - When playing a constant bit rate (CBR) format.
+  - When the audio queue is an input (recording) audio queue.
+  - When the buffer you are reenqueuing was allocated with the [`AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)`](./audioqueueallocatebufferwithpacketdescriptions%28_,_,_,_%29.md) function. In this case, your callback should describe the buffer’s packets in the buffer’s `mPacketDescriptions` and `mPacketDescriptionCount` fields.
 
 ## See Also
 
-- [func AudioQueueAllocateBuffer(AudioQueueRef, UInt32, UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus](audioqueueallocatebuffer(_:_:_:).md)
+### Handling Audio Queue Buffers
+- [func AudioQueueAllocateBuffer(AudioQueueRef, UInt32, UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus](./audioqueueallocatebuffer%28_,_,_%29.md)
   Asks an audio queue object to allocate an audio queue buffer.
-- [func AudioQueueAllocateBufferWithPacketDescriptions(AudioQueueRef, UInt32, UInt32, UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus](audioqueueallocatebufferwithpacketdescriptions(_:_:_:_:).md)
+- [func AudioQueueAllocateBufferWithPacketDescriptions(AudioQueueRef, UInt32, UInt32, UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus](./audioqueueallocatebufferwithpacketdescriptions%28_,_,_,_%29.md)
   Asks an audio queue object to allocate an audio queue buffer with space for packet descriptions.
-- [func AudioQueueFreeBuffer(AudioQueueRef, AudioQueueBufferRef) -> OSStatus](audioqueuefreebuffer(_:_:).md)
+- [func AudioQueueFreeBuffer(AudioQueueRef, AudioQueueBufferRef) -> OSStatus](./audioqueuefreebuffer%28_,_%29.md)
   Asks an audio queue to dispose of an audio queue buffer.
-- [func AudioQueueEnqueueBufferWithParameters(AudioQueueRef, AudioQueueBufferRef, UInt32, UnsafePointer<AudioStreamPacketDescription>?, UInt32, UInt32, UInt32, UnsafePointer<AudioQueueParameterEvent>?, UnsafePointer<AudioTimeStamp>?, UnsafeMutablePointer<AudioTimeStamp>?) -> OSStatus](audioqueueenqueuebufferwithparameters(_:_:_:_:_:_:_:_:_:_:).md)
+- [func AudioQueueEnqueueBufferWithParameters(AudioQueueRef, AudioQueueBufferRef, UInt32, UnsafePointer<AudioStreamPacketDescription>?, UInt32, UInt32, UInt32, UnsafePointer<AudioQueueParameterEvent>?, UnsafePointer<AudioTimeStamp>?, UnsafeMutablePointer<AudioTimeStamp>?) -> OSStatus](./audioqueueenqueuebufferwithparameters%28_,_,_,_,_,_,_,_,_,_%29.md)
   Adds a buffer to the buffer queue of a playback audio queue object, specifying start time and other settings.
 
 

@@ -1,14 +1,15 @@
 # upl_control_flags_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t upl_control_flags_t;
 ```
 

@@ -1,7 +1,8 @@
 # DispatchQueue.SchedulerOptions
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of options that affect the operation of the dispatch queue scheduler.
 
@@ -11,7 +12,7 @@ A set of options that affect the operation of the dispatch queue scheduler.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,25 +24,26 @@ struct SchedulerOptions
 ## Topics
 
 ### Creating Dispatch Queue Scheduler Options
-- [init(qos: DispatchQoS, flags: DispatchWorkItemFlags, group: DispatchGroup?)](dispatchqueue/scheduleroptions/init(qos:flags:group:).md)
+- [init(qos: DispatchQoS, flags: DispatchWorkItemFlags, group: DispatchGroup?)](./scheduleroptions/init%28qos,flags,group%29.md)
   Creates a dispatch queue scheduler options instance with the given options.
 ### Inspecting Scheduler Options
-- [var qos: DispatchQoS](dispatchqueue/scheduleroptions/qos.md)
+- [var qos: DispatchQoS](./scheduleroptions/qos.md)
   The dispatch queue quality of service.
-- [var flags: DispatchWorkItemFlags](dispatchqueue/scheduleroptions/flags.md)
+- [var flags: DispatchWorkItemFlags](./scheduleroptions/flags.md)
   The dispatch queue work item flags.
-- [var group: DispatchGroup?](dispatchqueue/scheduleroptions/group.md)
+- [var group: DispatchGroup?](./scheduleroptions/group.md)
   The dispatch group, if any, to use when performing actions.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DispatchQueue.SchedulerTimeType](dispatchqueue/schedulertimetype.md)
+### Scheduling Combine Publishers
+- [DispatchQueue.SchedulerTimeType](./schedulertimetype.md)
   The scheduler time type used by the dispatch queue.
 
 

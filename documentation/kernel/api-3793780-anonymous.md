@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kDeviceFeatureSelectorLTMEnable](3793780-anonymous/standardusb_kdevicefeatureselectorltmenable.md)
-- [StandardUSB::kDeviceFeatureSelectorRemoteWakeup](3793780-anonymous/standardusb_kdevicefeatureselectorremotewakeup.md)
-- [StandardUSB::kDeviceFeatureSelectorTestMode](3793780-anonymous/standardusb_kdevicefeatureselectortestmode.md)
-- [StandardUSB::kDeviceFeatureSelectorU1Enable](3793780-anonymous/standardusb_kdevicefeatureselectoru1enable.md)
-- [StandardUSB::kDeviceFeatureSelectorU2Enable](3793780-anonymous/standardusb_kdevicefeatureselectoru2enable.md)
-- [StandardUSB::kEndpointFeatureSelectorStall](3793780-anonymous/standardusb_kendpointfeatureselectorstall.md)
-- [StandardUSB::kInterfaceFeatureSelectorSuspend](3793780-anonymous/standardusb_kinterfacefeatureselectorsuspend.md)
+- [StandardUSB::kDeviceFeatureSelectorLTMEnable](./api-3793780-anonymous/standardusb_kdevicefeatureselectorltmenable.md)
+- [StandardUSB::kDeviceFeatureSelectorRemoteWakeup](./api-3793780-anonymous/standardusb_kdevicefeatureselectorremotewakeup.md)
+- [StandardUSB::kDeviceFeatureSelectorTestMode](./api-3793780-anonymous/standardusb_kdevicefeatureselectortestmode.md)
+- [StandardUSB::kDeviceFeatureSelectorU1Enable](./api-3793780-anonymous/standardusb_kdevicefeatureselectoru1enable.md)
+- [StandardUSB::kDeviceFeatureSelectorU2Enable](./api-3793780-anonymous/standardusb_kdevicefeatureselectoru2enable.md)
+- [StandardUSB::kEndpointFeatureSelectorStall](./api-3793780-anonymous/standardusb_kendpointfeatureselectorstall.md)
+- [StandardUSB::kInterfaceFeatureSelectorSuspend](./api-3793780-anonymous/standardusb_kinterfacefeatureselectorsuspend.md)
 
 
 ---

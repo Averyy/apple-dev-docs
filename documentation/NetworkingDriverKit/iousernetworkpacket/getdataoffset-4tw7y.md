@@ -1,16 +1,17 @@
 # GetDataOffset
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the offset to the beginning of the packet’s data.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetDataOffset(uint16_t *offset) const;
 ```
 
@@ -24,13 +25,14 @@ virtual kern_return_t GetDataOffset(uint16_t *offset) const;
 
 ## See Also
 
-- [GetHeadroom](iousernetworkpacket/getheadroom.md)
+### Getting the Packet Information
+- [GetHeadroom](./getheadroom.md)
   Gets the number of bytes reserved at the front of the packet’s buffer.
-- [GetLinkHeaderLength](iousernetworkpacket/getlinkheaderlength-8dlhu.md)
+- [GetLinkHeaderLength](./getlinkheaderlength-8dlhu.md)
   Gets the number of bytes to use for the link header.
-- [GetDataLength](iousernetworkpacket/getdatalength-8km3n.md)
+- [GetDataLength](./getdatalength-8km3n.md)
   Gets the number of bytes of data in the packet.
-- [GetMemorySegmentOffset](iousernetworkpacket/getmemorysegmentoffset-39e4c.md)
+- [GetMemorySegmentOffset](./getmemorysegmentoffset-39e4c.md)
   Gets the offset to the beginning of the packet in the corresponding memory buffer.
 
 

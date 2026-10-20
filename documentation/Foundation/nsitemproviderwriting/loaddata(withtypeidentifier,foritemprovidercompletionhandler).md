@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Loads data of a particular type, identified by the given UTI.
@@ -19,6 +20,10 @@ Loads data of a particular type, identified by the given UTI.
 
 ```swift
 func loadData(withTypeIdentifier typeIdentifier: String, forItemProviderCompletionHandler completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void) -> Progress?
+```
+
+```objc
+- (NSProgress *) loadDataWithTypeIdentifier:(NSString *) typeIdentifier forItemProviderCompletionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
 #### Return Value

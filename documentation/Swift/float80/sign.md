@@ -1,7 +1,8 @@
 # sign
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sign of the floating-point value.
 

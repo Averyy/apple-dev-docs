@@ -1,7 +1,8 @@
 # UIHinge.Status.partiallyOpen
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The hinge is partially open
 
@@ -18,13 +19,18 @@ The hinge is partially open
 case partiallyOpen
 ```
 
+```c
+UIHingeStatusPartiallyOpen
+```
+
 ## See Also
 
-- [UIHinge.Status.closed](uihinge/status-swift.enum/closed.md)
+### Getting the hinge status
+- [UIHinge.Status.closed](./closed.md)
   The hinge is closed
-- [UIHinge.Status.fullyOpen](uihinge/status-swift.enum/fullyopen.md)
+- [UIHinge.Status.fullyOpen](./fullyopen.md)
   The hinge is open as far as the device allows
-- [UIHinge.Status.unknown](uihinge/status-swift.enum/unknown.md)
+- [UIHinge.Status.unknown](./unknown.md)
   The status of the hinge is unknown
 
 

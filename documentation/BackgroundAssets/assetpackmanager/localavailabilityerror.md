@@ -1,7 +1,8 @@
 # AssetPackManager.LocalAvailabilityError
 
 **Framework**: Background Assets  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that provides information about local asset pack availability, distinguishing between successes and failures.
 
@@ -21,35 +22,36 @@ struct LocalAvailabilityError
 
 ## Mentions
 
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 #### Overview
 
-Inspect the [`successes`](assetpackmanager/localavailabilityerror/successes.md) property to determine the asset packs for which the system successfully ensured availability. The [`failures`](assetpackmanager/localavailabilityerror/failures.md) property provides a dictionary that maps from asset packs to errors that detail why the system couldn’t ensure their local availability.
+Inspect the [`successes`](./localavailabilityerror/successes.md) property to determine the asset packs for which the system successfully ensured availability. The [`failures`](./localavailabilityerror/failures.md) property provides a dictionary that maps from asset packs to errors that detail why the system couldn’t ensure their local availability.
 
 ## Topics
 
 ### Accessing availability status
-- [let successes: Set<AssetPack>](assetpackmanager/localavailabilityerror/successes.md)
+- [let successes: Set<AssetPack>](./localavailabilityerror/successes.md)
   A set of asset packs for which the system successfully ensured local availability.
-- [let failures: [AssetPack : any Error]](assetpackmanager/localavailabilityerror/failures.md)
+- [let failures: [AssetPack : any Error]](./localavailabilityerror/failures.md)
   A dictionary that maps asset packs to errors describing why the system couldn’t ensure their local availability.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
+### Errors
+- [enum ManagedBackgroundAssetsError](../managedbackgroundassetserror.md)
   An error for a managed asset pack.
-- [let BAErrorDomain: String](baerrordomain.md)
-- [enum BAErrorCode](baerrorcode.md)
+- [let BAErrorDomain: String](../baerrordomain.md)
+- [enum BAErrorCode](../baerrorcode.md)
 
 
 ---

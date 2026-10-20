@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all attachments from this object.
 
@@ -22,9 +23,10 @@ func removeAll()
 
 ## See Also
 
-- [func merge([String : Any], mode: CMAttachmentBearerAttachments.Mode)](cmattachmentbearerattachments/merge(_:mode:).md)
+### Managing Attachments
+- [func merge([String : Any], mode: CMAttachmentBearerAttachments.Mode)](./merge%28_,mode%29.md)
   Sets a collection of attachments on the object.
-- [CMAttachmentBearerAttachments.Mode](cmattachmentbearerattachments/mode.md)
+- [CMAttachmentBearerAttachments.Mode](./mode.md)
   An enumeration that defines the available attachment modes.
 
 

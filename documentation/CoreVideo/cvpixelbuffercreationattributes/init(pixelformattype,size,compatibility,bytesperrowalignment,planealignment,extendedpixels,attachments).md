@@ -1,7 +1,8 @@
 # init(pixelFormatType:size:compatibility:bytesPerRowAlignment:planeAlignment:extendedPixels:attachments:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

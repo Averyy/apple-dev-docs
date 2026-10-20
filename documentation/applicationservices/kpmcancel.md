@@ -1,7 +1,8 @@
 # kPMCancel
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the user clicked the Cancel button in a Print or Page Setup dialog.
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+

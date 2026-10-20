@@ -1,7 +1,8 @@
 # certificate
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the public authentication certificate associated with a user identity.
 
@@ -12,6 +13,10 @@ Returns the public authentication certificate associated with a user identity.
 
 ```swift
 var certificate: SecCertificate? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) SecCertificateRef certificate;
 ```
 
 #### Return Value
@@ -26,9 +31,10 @@ When a .Mac account is associated with a user identity, the authentication certi
 
 ## See Also
 
-- [func authenticate(withPassword: String) -> Bool](cbuseridentity/authenticate(withpassword:).md)
+### Password Authentication
+- [func authenticate(withPassword: String) -> Bool](./authenticate%28withpassword%29.md)
   Returns a Boolean value indicating whether the given password is correct for the identity.
-- [var isEnabled: Bool](cbuseridentity/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   Returns a Boolean value indicating whether the identity is allowed to authenticate.
 
 

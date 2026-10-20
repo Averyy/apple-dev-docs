@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty numeric summary with default values.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](numericsummary/init(somecount:nonecount:mean:standarddeviation:min:max:median:firstquartile:thirdquartile:).md)
+### Creating a Summary
+- [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](./init%28somecount,nonecount,mean,standarddeviation,min,max,median,firstquartile,thirdquartile%29.md)
   Creates an empty numeric summary.
 
 

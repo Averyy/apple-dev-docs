@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the value object and another value object are equal.
 
@@ -20,13 +21,17 @@ Returns a Boolean value that indicates whether the value object and another valu
 func isEqual(to value: NSValue) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToValue:(NSValue *) value;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if both value objects are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if both value objects are equal; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The [`NSValue`](nsvalue.md) class compares the type and contents of each value object to determine equality.
+The [`NSValue`](../nsvalue.md) class compares the type and contents of each value object to determine equality.
 
 ## Parameters
 

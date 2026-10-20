@@ -1,7 +1,8 @@
 # SKTerminateForInvalidReceipt()
 
 **Framework**: StoreKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Terminates an app if the license to use the app has expired.
 
@@ -19,15 +20,20 @@ Terminates an app if the license to use the app has expired.
 func SKTerminateForInvalidReceipt()
 ```
 
+```c
+extern void SKTerminateForInvalidReceipt();
+```
+
 ## See Also
 
-- [Restoring purchased products](restoring-purchased-products.md)
+### Providing access to previously purchased products
+- [Restoring purchased products](./restoring-purchased-products.md)
   Give customers functionality that restores their purchases in your app to maintain access to purchased content.
-- [class SKReceiptRefreshRequest](skreceiptrefreshrequest.md)
+- [class SKReceiptRefreshRequest](./skreceiptrefreshrequest.md)
   A request to the App Store to get the app receipt, which represents the customer’s transactions with your app.
-- [class SKRequest](skrequest.md)
+- [class SKRequest](./skrequest.md)
   An abstract class that represents a request to the App Store.
-- [class SKPaymentTransaction](skpaymenttransaction.md)
+- [class SKPaymentTransaction](./skpaymenttransaction.md)
   An object in the payment queue.
 
 

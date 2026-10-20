@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a local search request.
 
@@ -20,9 +21,14 @@ Creates a local search request.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(completion: MKLocalSearchCompletion)](mklocalsearch/request/init(completion:).md)
+### Creating a local search request
+- [init(completion: MKLocalSearchCompletion)](./init%28completion%29.md)
   Creates and returns a search request based on the specified search completion data.
 
 

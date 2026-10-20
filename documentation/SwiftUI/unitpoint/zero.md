@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The origin of a view.
 

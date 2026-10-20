@@ -1,7 +1,8 @@
 # EmptyDynamicInstructions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An empty dynamic instructions type.
 
@@ -22,25 +23,26 @@ struct EmptyDynamicInstructions
 ## Topics
 
 ### Creating an instance
-- [init()](emptydynamicinstructions/init.md)
+- [init()](./emptydynamicinstructions/init%28%29.md)
   Creates an empty instance.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicInstructions](dynamicinstructions.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicInstructions](./dynamicinstructions.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+### Building dynamic instructions
+- [struct DynamicInstructionsBuilder](./dynamicinstructionsbuilder.md)
   A result builder that combines tools and other content into dynamic instructions.
-- [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
+- [struct ConditionalDynamicInstructions](./conditionaldynamicinstructions.md)
   A dynamic instructions type that conditionally selects between two conditions.
-- [struct AnyDynamicInstructions](anydynamicinstructions.md)
+- [struct AnyDynamicInstructions](./anydynamicinstructions.md)
   A dynamic instructions type that’s type-erased.
-- [struct TupleDynamicInstructions](tupledynamicinstructions.md)
+- [struct TupleDynamicInstructions](./tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
 
 

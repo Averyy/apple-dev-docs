@@ -1,7 +1,8 @@
 # init(videoCodecType:encoderSpecification:mediaType:segmentConfigurations:assemblyTrackID:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of AVAssetVideoTrackPlan.
 

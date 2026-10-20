@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The constraints of the formatting definition.
@@ -24,7 +25,7 @@ The constraints of the formatting definition.
 
 #### Discussion
 
-When you implement a custom definition, you must implement a computed `body` property to provide the constraints of your definition. Return a definition that’s composed of built-in definitions that SwiftUI provides, such as [`AttributedTextFormattingDefinition.ValueConstraint`](attributedtextformattingdefinition/valueconstraint.md) and [`AttributedTextValueConstraint`](attributedtextvalueconstraint.md)s, plus other composite [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md)s that you’ve already defined:
+When you implement a custom definition, you must implement a computed `body` property to provide the constraints of your definition. Return a definition that’s composed of built-in definitions that SwiftUI provides, such as [`AttributedTextFormattingDefinition.ValueConstraint`](./valueconstraint.md) and [`AttributedTextValueConstraint`](../attributedtextvalueconstraint.md)s, plus other composite [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md)s that you’ve already defined:
 
 ```swift
 struct MyTextFormattingDefinition: AttributedTextFormattingDefinition {
@@ -41,6 +42,11 @@ struct MyTextFormattingDefinition: AttributedTextFormattingDefinition {
 ```
 
 Note that the order of the constraints in the result builder matters as constraints are applied in order. For details, see `AttributedTextValueConstraint/constrain(_:)-(Attributes)`.
+
+## Default Implementations
+
+### AttributedTextFormattingDefinition Implementations
+- [var body: Self](./body-48m9l.md)
 
 
 ---

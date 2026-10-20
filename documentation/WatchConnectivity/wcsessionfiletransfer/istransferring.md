@@ -1,7 +1,8 @@
 # isTransferring
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the file is still being transferred.
 
@@ -18,15 +19,20 @@ A Boolean value indicating whether the file is still being transferred.
 var isTransferring: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTransferring) BOOL transferring;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the file transfer is not yet complete or [`false`](https://developer.apple.com/documentation/swift/false) if the transfer is complete.
+The value of this property is [`true`](../../Swift/true.md) if the file transfer is not yet complete or [`false`](../../Swift/false.md) if the transfer is complete.
 
 ## See Also
 
-- [var progress: Progress](wcsessionfiletransfer/progress.md)
+### Managing the File Transfer
+- [var progress: Progress](./progress.md)
   An object that tracks the progress of the file transfer.
-- [func cancel()](wcsessionfiletransfer/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the file transfer.
 
 

@@ -1,7 +1,8 @@
 # WeatherChange.Direction
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum that specifies the direction in which a measurable aspect of the weather is expected to change.
 
@@ -24,25 +25,25 @@ enum Direction
 ## Topics
 
 ### Enumeration Cases
-- [WeatherChange.Direction.decrease](weatherchange/direction/decrease.md)
+- [WeatherChange.Direction.decrease](./direction/decrease.md)
   The value will be significantly lower than before.
-- [WeatherChange.Direction.increase](weatherchange/direction/increase.md)
+- [WeatherChange.Direction.increase](./direction/increase.md)
   The value will be significantly higher than before.
-- [WeatherChange.Direction.steady](weatherchange/direction/steady.md)
+- [WeatherChange.Direction.steady](./direction/steady.md)
   The value will remain similar to before.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

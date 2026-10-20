@@ -1,7 +1,8 @@
 # MKGradientPolylineRenderer
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A visual representation of any polyline overlay object with a gradient.
 
@@ -19,47 +20,52 @@ A visual representation of any polyline overlay object with a gradient.
 class MKGradientPolylineRenderer
 ```
 
+```objc
+@interface MKGradientPolylineRenderer : MKPolylineRenderer
+```
+
 #### Overview
 
-This renderer only applies a stroke to the line; it doesn’t fill it. Set the gradients with [`setColors:atLocations:`](mkgradientpolylinerenderer/setcolors:atlocations:.md) and pair colors to locations that MapKit represents as unit distance values along the distance of the polyline. Don’t subclass `MKGradientPolylineRenderer`. Use the class as-is.
+This renderer only applies a stroke to the line; it doesn’t fill it. Set the gradients with [`setColors:atLocations:`](./mkgradientpolylinerenderer/setcolors_atlocations_.md) and pair colors to locations that MapKit represents as unit distance values along the distance of the polyline. Don’t subclass `MKGradientPolylineRenderer`. Use the class as-is.
 
 The gradient displays itself along the direction of the line.
 
 ## Topics
 
 ### Accessing the gradient colors
-- [func setColors([UIColor], locations: [CGFloat])](mkgradientpolylinerenderer/setcolors(_:locations:)-3xrou.md)
+- [func setColors([UIColor], locations: [CGFloat])](./mkgradientpolylinerenderer/setcolors%28_,locations%29-3xrou.md)
   Sets the iOS colors and corresponding unit distance values to create gradients.
-- [func setColors([NSColor], locations: [CGFloat])](mkgradientpolylinerenderer/setcolors(_:locations:)-1tuft.md)
+- [func setColors([NSColor], locations: [CGFloat])](./mkgradientpolylinerenderer/setcolors%28_,locations%29-1tuft.md)
   Sets the macOS colors and corresponding unit distance values to create gradients.
-- [var colors: [UIColor]](mkgradientpolylinerenderer/colors.md)
+- [var colors: [UIColor]](./mkgradientpolylinerenderer/colors.md)
   An array that represents the gradient’s color transition points.
-- [var locations: [CGFloat]](mkgradientpolylinerenderer/locations-7k6qz.md)
+- [var locations: [CGFloat]](./mkgradientpolylinerenderer/locations-7k6qz.md)
   An array of location indexes that correspond to their respective colors.
 
 ## Relationships
 
 ### Inherits From
-- [MKPolylineRenderer](mkpolylinerenderer.md)
+- [MKPolylineRenderer](./mkpolylinerenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKPolyline](mkpolyline.md)
+### Multiple segment lines
+- [class MKPolyline](./mkpolyline.md)
   An open polygon overlay consisting of one or more connected line segments.
-- [class MKGeodesicPolyline](mkgeodesicpolyline.md)
+- [class MKGeodesicPolyline](./mkgeodesicpolyline.md)
   An open polygon overlay consisting of line segments that follow the contours of the Earth to create the shortest path between the specified points.
-- [class MKMultiPolyline](mkmultipolyline.md)
+- [class MKMultiPolyline](./mkmultipolyline.md)
   A collection of multipolyline shapes, each consisting of one or more connected line segments.
-- [class MKPolylineRenderer](mkpolylinerenderer.md)
+- [class MKPolylineRenderer](./mkpolylinerenderer.md)
   A visual representation of any polyline overlay object.
-- [class MKMultiPolylineRenderer](mkmultipolylinerenderer.md)
+- [class MKMultiPolylineRenderer](./mkmultipolylinerenderer.md)
   A visual representation of multiple polyline overlay objects.
 
 

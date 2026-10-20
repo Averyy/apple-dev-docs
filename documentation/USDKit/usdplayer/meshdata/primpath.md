@@ -1,7 +1,8 @@
 # primPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 USD prim path this mesh corresponds to.
 

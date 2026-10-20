@@ -1,7 +1,8 @@
 # init(systemItem:primaryAction:menu:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item using the specified system item, primary action, and context menu.
 
@@ -10,7 +11,7 @@ Creates an item using the specified system item, primary action, and context men
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ Creates an item using the specified system item, primary action, and context men
 
 #### Return Value
 
-A newly initialized [`UIBarButtonItem`](uibarbuttonitem.md).
+A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 
 ## Parameters
 
-- `systemItem`: The system item to use as the first item on the bar. For possible values, see [`UIBarButtonItem.SystemItem`](uibarbuttonitem/systemitem.md).
-- `primaryAction`: A [`UIAction`](uiaction.md) to associate with the item. The system item doesn’t use the action to configure its title and image.
+- `systemItem`: The system item to use as the first item on the bar. For possible values, see [`UIBarButtonItem.SystemItem`](./systemitem.md).
+- `primaryAction`: A [`UIAction`](../uiaction.md) to associate with the item. The system item doesn’t use the action to configure its title and image.
 - `menu`: The menu to present. The context menu displays in response to a person tapping the item.
 
 ## See Also
 
-- [convenience init(barButtonSystemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?)](uibarbuttonitem/init(barbuttonsystemitem:target:action:).md)
+### Creating system items
+- [convenience init(barButtonSystemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?)](./init%28barbuttonsystemitem,target,action%29.md)
   Creates an item using the specified system item, target, and action.
-- [UIBarButtonItem.SystemItem](uibarbuttonitem/systemitem.md)
+- [UIBarButtonItem.SystemItem](./systemitem.md)
   Constants that define system-supplied images for bar button items.
 
 

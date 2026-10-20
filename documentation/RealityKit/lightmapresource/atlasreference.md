@@ -1,7 +1,8 @@
 # LightmapResource.AtlasReference
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies an area in a lightmap atlas to fetch data from.
 
@@ -22,23 +23,23 @@ struct AtlasReference
 ## Topics
 
 ### Locating the atlas texture
-- [var atlasTextureIndex: Int](lightmapresource/atlasreference/atlastextureindex.md)
+- [var atlasTextureIndex: Int](./atlasreference/atlastextureindex.md)
   Index of the atlas within the LightmapResource.
-- [var atlasTextureSlice: Int](lightmapresource/atlasreference/atlastextureslice.md)
+- [var atlasTextureSlice: Int](./atlasreference/atlastextureslice.md)
   Index of the slice within the atlas.
 ### Mapping texture coordinates
-- [var uvScale: SIMD2<Float>](lightmapresource/atlasreference/uvscale.md)
+- [var uvScale: SIMD2<Float>](./atlasreference/uvscale.md)
   A scale to apply to lightmap UV attribute before sampling from the slice of the atlas. Note that lightmap textures use the Metal convention: UV (0,0) corresponds to the top-left corner of the image, while UV (1,1) corresponds to the bottom-right.
-- [var uvOffset: SIMD2<Float>](lightmapresource/atlasreference/uvoffset.md)
+- [var uvOffset: SIMD2<Float>](./atlasreference/uvoffset.md)
   An offset to apply to lightmap UV attribute before sampling from the slice of the atlas. Note that lightmap textures use the Metal convention: UV (0,0) corresponds to the top-left corner of the image, while UV (1,1) corresponds to the bottom-right.
 ### Initializers
-- [init()](lightmapresource/atlasreference/init.md)
+- [init()](./atlasreference/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

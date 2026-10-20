@@ -1,7 +1,8 @@
 # AccessoryAnchor.TrackingState.orientationTracked
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Orientation is tracked.
 

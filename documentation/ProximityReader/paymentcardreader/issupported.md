@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether this device model supports Tap to Pay on iPhone.
 
@@ -18,7 +19,7 @@ static let isSupported: Bool
 
 ## Mentions
 
-- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
+- [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
 #### Discussion
 

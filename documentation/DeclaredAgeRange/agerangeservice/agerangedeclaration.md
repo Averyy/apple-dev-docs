@@ -1,7 +1,8 @@
 # AgeRangeService.AgeRangeDeclaration
 
 **Framework**: Declared Age Range  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe how an adult, parent, or guardian set the age range.
 
@@ -24,45 +25,46 @@ The system provides this information to help you understand the reliability and 
 ## Topics
 
 ### Determining the age set method
-- [AgeRangeService.AgeRangeDeclaration.selfDeclared](agerangeservice/agerangedeclaration/selfdeclared.md)
+- [AgeRangeService.AgeRangeDeclaration.selfDeclared](./agerangedeclaration/selfdeclared.md)
   Indicates the person signed in to iCloud to set their own age range.
-- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
+- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](./agerangedeclaration/guardiandeclared.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
-- [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
+- [AgeRangeService.AgeRangeDeclaration.confirmed](./agerangedeclaration/confirmed.md)
   A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
 ### Deprecated
-- [AgeRangeService.AgeRangeDeclaration.paymentChecked](agerangeservice/agerangedeclaration/paymentchecked.md)
+- [AgeRangeService.AgeRangeDeclaration.paymentChecked](./agerangedeclaration/paymentchecked.md)
   Indicates the person set their own age range using a payment method, like a credit card.
-- [AgeRangeService.AgeRangeDeclaration.governmentIDChecked](agerangeservice/agerangedeclaration/governmentidchecked.md)
+- [AgeRangeService.AgeRangeDeclaration.governmentIDChecked](./agerangedeclaration/governmentidchecked.md)
   Indicates the person set their own age range using a government ID.
-- [AgeRangeService.AgeRangeDeclaration.checkedByOtherMethod](agerangeservice/agerangedeclaration/checkedbyothermethod.md)
+- [AgeRangeService.AgeRangeDeclaration.checkedByOtherMethod](./agerangedeclaration/checkedbyothermethod.md)
   Indicates the person set their own age range using an unspecified method.
-- [AgeRangeService.AgeRangeDeclaration.guardianPaymentChecked](agerangeservice/agerangedeclaration/guardianpaymentchecked.md)
+- [AgeRangeService.AgeRangeDeclaration.guardianPaymentChecked](./agerangedeclaration/guardianpaymentchecked.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a payment method, like a credit card.
-- [AgeRangeService.AgeRangeDeclaration.guardianGovernmentIDChecked](agerangeservice/agerangedeclaration/guardiangovernmentidchecked.md)
+- [AgeRangeService.AgeRangeDeclaration.guardianGovernmentIDChecked](./agerangedeclaration/guardiangovernmentidchecked.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a government ID.
-- [AgeRangeService.AgeRangeDeclaration.guardianCheckedByOtherMethod](agerangeservice/agerangedeclaration/guardiancheckedbyothermethod.md)
+- [AgeRangeService.AgeRangeDeclaration.guardianCheckedByOtherMethod](./agerangedeclaration/guardiancheckedbyothermethod.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using an unspecified method.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AgeRangeService.AgeRange](agerangeservice/agerange.md)
+### Getting the age range
+- [AgeRangeService.AgeRange](./agerange.md)
   Information about a person’s age range based on their response to an age range request.
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](./requestagerange%28agegates,_,_,in%29-2go8c.md)
   Requests an age range for the person signed in to iCloud on the device.
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](./requestagerange%28agegates,_,_,in%29-4yo3r.md)
   Requests an age range for the person logged onto iCloud on the device.
-- [AgeRangeService.Response](agerangeservice/response.md)
+- [AgeRangeService.Response](./response.md)
   A response indicating whether a person shared their age range or declined to share it.
-- [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)
+- [AgeRangeService.ParentalControls](./parentalcontrols.md)
   An option set to define parental controls enabled and shared as a part of age range declaration.
 
 

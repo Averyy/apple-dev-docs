@@ -1,7 +1,8 @@
 # Configuration
 
 **Framework**: CKTool JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Internal use only.
 
@@ -10,7 +11,7 @@ Internal use only.
 
 ## Declaration
 
-```swift
+```
 new Configuration();
 ```
 

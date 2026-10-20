@@ -1,7 +1,8 @@
 # groupContainer(identifier:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 DatastoreLocation for persisting tips in a group container.
 

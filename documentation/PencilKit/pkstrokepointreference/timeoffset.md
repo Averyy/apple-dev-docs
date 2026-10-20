@@ -1,7 +1,8 @@
 # timeOffset
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time offset since the start of the stroke path in seconds.
 
@@ -18,9 +19,14 @@ The time offset since the start of the stroke path in seconds.
 var timeOffset: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timeOffset;
+```
+
 ## See Also
 
-- [var location: CGPoint](pkstrokepointreference/location.md)
+### Getting the point’s location
+- [var location: CGPoint](./location.md)
   The location of this point.
 
 

@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:willBeginDisplaying:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the sidebar is about to display the row representing the specified `tab`
 
@@ -15,6 +16,10 @@ Notifies the delegate when the sidebar is about to display the row representing 
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, willBeginDisplaying tab: UITab)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar willBeginDisplayingTab:(UITab *) tab;
 ```
 
 

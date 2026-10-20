@@ -1,7 +1,8 @@
 # passwordRulesDescriptor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representing a set of password rules.
 
@@ -18,9 +19,13 @@ A string representing a set of password rules.
 var passwordRulesDescriptor: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * passwordRulesDescriptor;
+```
+
 #### Overview
 
-To learn more about the syntax of password rules, see [`Customizing Password AutoFill rules`](https://developer.apple.com/documentation/security/customizing-password-autofill-rules).
+To learn more about the syntax of password rules, see [Customizing Password AutoFill rules](../../Security/customizing-password-autofill-rules.md).
 
 
 ---

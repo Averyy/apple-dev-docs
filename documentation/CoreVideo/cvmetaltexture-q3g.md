@@ -1,6 +1,7 @@
 # CVMetalTexture
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 A texture-based image buffer that supplies source image data for use with the Metal framework.
 
@@ -11,23 +12,24 @@ A Core Video Metal Texture is a texture-based image buffer that supplies source 
 ## Topics
 
 ### Inspecting Textures
-- [func CVMetalTextureGetTexture(CVMetalTexture) -> (any MTLTexture)?](cvmetaltexturegettexture(_:).md)
+- [func CVMetalTextureGetTexture(CVMetalTexture) -> (any MTLTexture)?](./cvmetaltexturegettexture%28_%29.md)
   Returns the Metal texture object for the image buffer.
-- [func CVMetalTextureGetCleanTexCoords(CVMetalTexture, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>)](cvmetaltexturegetcleantexcoords(_:_:_:_:_:).md)
+- [func CVMetalTextureGetCleanTexCoords(CVMetalTexture, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>)](./cvmetaltexturegetcleantexcoords%28_,_,_,_,_%29.md)
   Returns convenient normalized texture coordinates for the part of the image that should be displayed.
-- [func CVMetalTextureIsFlipped(CVMetalTexture) -> Bool](cvmetaltextureisflipped(_:).md)
+- [func CVMetalTextureIsFlipped(CVMetalTexture) -> Bool](./cvmetaltextureisflipped%28_%29.md)
   Returns a Boolean value indicating whether the texture image is vertically flipped.
-- [func CVMetalTextureGetTypeID() -> CFTypeID](cvmetaltexturegettypeid().md)
+- [func CVMetalTextureGetTypeID() -> CFTypeID](./cvmetaltexturegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a CoreVideo Metal texture-based image buffer.
 ### Data Types
-- [typealias CVMetalTexture](cvmetaltexture.md)
+- [typealias CVMetalTexture](./cvmetaltexture.md)
   A reference to a CoreVideo Metal texture-based image buffer.
 
 ## See Also
 
-- [CVMetalTextureCache](cvmetaltexturecache-q3j.md)
+### Metal
+- [CVMetalTextureCache](./cvmetaltexturecache-q3j.md)
   A cache used to create and manage Metal texture objects.
-- [class CVMetalBufferCache](cvmetalbuffercache.md)
+- [class CVMetalBufferCache](./cvmetalbuffercache.md)
   A cache used to create and manage Metal buffer objects.
 
 

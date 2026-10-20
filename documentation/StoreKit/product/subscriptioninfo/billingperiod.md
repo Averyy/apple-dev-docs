@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.BillingPeriod
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.4+

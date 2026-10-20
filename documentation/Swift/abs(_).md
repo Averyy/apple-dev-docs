@@ -1,7 +1,8 @@
 # abs(_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the absolute value of the given number.
 
@@ -41,11 +42,12 @@ let y = abs(x)
 
 ## See Also
 
-- [var magnitude: UInt](int/magnitude-swift.property.md)
+### Finding the Sign and Magnitude
+- [var magnitude: UInt](./int/magnitude-swift.property.md)
   The magnitude of this value.
-- [typealias Magnitude](int/magnitude-swift.typealias.md)
+- [typealias Magnitude](./int/magnitude-swift.typealias.md)
   A type that can represent the absolute value of any possible value of this type.
-- [func signum() -> Int](int/signum.md)
+- [func signum() -> Int](./int/signum%28%29.md)
   Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
 
 

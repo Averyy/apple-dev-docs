@@ -1,7 +1,8 @@
 # size(ofValue:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the contiguous memory footprint of the given instance.
 
@@ -48,9 +49,10 @@ let t = MemoryLayout<Int>.size
 
 ## See Also
 
-- [static func stride(ofValue: borrowing T) -> Int](memorylayout/stride(ofvalue:).md)
+### Accessing the Layout of a Value
+- [static func stride(ofValue: borrowing T) -> Int](./stride%28ofvalue%29.md)
   Returns the number of bytes from the start of one instance of `T` to the start of the next when stored in contiguous memory or in an `Array<T>`.
-- [static func alignment(ofValue: borrowing T) -> Int](memorylayout/alignment(ofvalue:).md)
+- [static func alignment(ofValue: borrowing T) -> Int](./alignment%28ofvalue%29.md)
   Returns the default memory alignment of `T`.
 
 

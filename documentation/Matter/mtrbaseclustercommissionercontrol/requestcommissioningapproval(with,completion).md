@@ -1,7 +1,8 @@
 # requestCommissioningApproval(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command RequestCommissioningApproval
 
@@ -17,7 +18,15 @@ Command RequestCommissioningApproval
 ## Declaration
 
 ```swift
+func requestCommissioningApproval(with params: MTRCommissionerControlClusterRequestCommissioningApprovalParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func requestCommissioningApproval(with params: MTRCommissionerControlClusterRequestCommissioningApprovalParams) async throws
+```
+
+```objc
+- (void) requestCommissioningApprovalWithParams:(MTRCommissionerControlClusterRequestCommissioningApprovalParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # onWithTimedOff(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func onWithTimedOff(with params: MTROnOffClusterOnWithTimedOffParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func onWithTimedOff(with params: MTROnOffClusterOnWithTimedOffParams) async throws
+```
+
+```objc
+- (void) onWithTimedOffWithParams:(MTROnOffClusterOnWithTimedOffParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

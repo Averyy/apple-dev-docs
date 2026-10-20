@@ -1,7 +1,8 @@
 # init(device:endpointID:queue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 
@@ -18,6 +19,10 @@ For all instance methods that take a completion (i.e. command invocations), the 
 
 ```swift
 init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)
+```
+
+```objc
+- (instancetype) initWithDevice:(MTRDevice *) device endpointID:(NSNumber *) endpointID queue:(dispatch_queue_t) queue;
 ```
 
 

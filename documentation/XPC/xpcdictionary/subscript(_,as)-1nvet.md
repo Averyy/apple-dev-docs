@@ -1,7 +1,8 @@
 # subscript(_:as:)
 
 **Framework**: XPC  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get a value in this dictionary as data.
 

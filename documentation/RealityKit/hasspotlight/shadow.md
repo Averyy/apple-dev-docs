@@ -1,7 +1,8 @@
 # shadow
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shadow for the spotlight.
 
@@ -22,7 +23,7 @@ The shadow for the spotlight.
 
 #### Discussion
 
-Set this property to `nil` to remove shadows for the light. Set it to an instance of [`SpotLightComponent.Shadow`](spotlightcomponent/shadow.md) to create shadows.
+Set this property to `nil` to remove shadows for the light. Set it to an instance of [`SpotLightComponent.Shadow`](../spotlightcomponent/shadow.md) to create shadows.
 
 
 ---

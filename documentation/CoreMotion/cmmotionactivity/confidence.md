@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The confidence in the assessment of the motion type.
 
@@ -18,11 +19,16 @@ The confidence in the assessment of the motion type.
 var confidence: CMMotionActivityConfidence { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMMotionActivityConfidence confidence;
+```
+
 ## See Also
 
-- [var startDate: Date](cmmotionactivity/startdate.md)
+### Getting Metadata for the Motion
+- [var startDate: Date](./startdate.md)
   The time at which the change in motion occurred.
-- [enum CMMotionActivityConfidence](cmmotionactivityconfidence.md)
+- [enum CMMotionActivityConfidence](../cmmotionactivityconfidence.md)
   The confidence that the motion data is accurate.
 
 

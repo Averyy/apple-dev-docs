@@ -1,7 +1,8 @@
 # init(after:addition:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A value describing the addition of the given views to the end of the indicated group.
 
@@ -21,9 +22,10 @@ init(after group: CommandGroupPlacement, @ContentBuilder addition: () -> Content
 
 ## See Also
 
-- [init(before: CommandGroupPlacement, addition: () -> Content)](commandgroup/init(before:addition:).md)
+### Creating a command group
+- [init(before: CommandGroupPlacement, addition: () -> Content)](./init%28before,addition%29.md)
   A value describing the addition of the given views to the beginning of the indicated group.
-- [init(replacing: CommandGroupPlacement, addition: () -> Content)](commandgroup/init(replacing:addition:).md)
+- [init(replacing: CommandGroupPlacement, addition: () -> Content)](./init%28replacing,addition%29.md)
   A value describing the complete replacement of the contents of the indicated group with the given views.
 
 

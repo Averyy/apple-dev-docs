@@ -1,7 +1,8 @@
 # barStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab bar style that specifies its appearance.
 
@@ -17,13 +18,18 @@ The tab bar style that specifies its appearance.
 var barStyle: UIBarStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIBarStyle barStyle;
+```
+
 #### Discussion
 
-This property determines whether the tab bar uses a dark or light visual style when no background image or tint color is specified. Together with the [`isTranslucent`](uitabbar/istranslucent.md) property, this property defines the default visual style of the tab bar. Set this property to the value that best matches the style of your interface. For a list of possible values, see [`UIBarStyle`](uibarstyle.md). The default value of this property is [`UIBarStyle.default`](uibarstyle/default.md).
+This property determines whether the tab bar uses a dark or light visual style when no background image or tint color is specified. Together with the [`isTranslucent`](./istranslucent.md) property, this property defines the default visual style of the tab bar. Set this property to the value that best matches the style of your interface. For a list of possible values, see [`UIBarStyle`](../uibarstyle.md). The default value of this property is [`UIBarStyle.default`](../uibarstyle/default.md).
 
 ## See Also
 
-- [enum UIBarStyle](uibarstyle.md)
+### Setting the bar’s style
+- [enum UIBarStyle](../uibarstyle.md)
   Defines the stylistic appearance of different types of views.
 
 

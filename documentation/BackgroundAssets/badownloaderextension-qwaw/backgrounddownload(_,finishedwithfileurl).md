@@ -2,6 +2,7 @@
 
 **Framework**: Background Assets  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,10 +19,19 @@
 func backgroundDownload(_ finishedDownload: BADownload, finishedWithFileURL fileURL: URL)
 ```
 
+## Default Implementations
+
+### BADownloaderExtension Implementations
+- [func backgroundDownload(BADownload, finishedWithFileURL: URL)](./backgrounddownload%28_,finishedwithfileurl%29-4s70i.md)
+  Handles a finished download
+- [func backgroundDownload(BADownload, finishedWithFileURL: URL)](./backgrounddownload%28_,finishedwithfileurl%29-5cjqw.md)
+  This method is called when a download has finished but there is no `BADownloadManager` delegate to handle the completion event.
+
 ## See Also
 
-- [func backgroundDownload(BADownload, didReceive: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)](badownloaderextension-qwaw/backgrounddownload(_:didreceive:).md)
-- [func backgroundDownload(BADownload, failedWithError: any Error)](badownloaderextension-qwaw/backgrounddownload(_:failedwitherror:).md)
+### Processing downloads
+- [func backgroundDownload(BADownload, didReceive: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)](./backgrounddownload%28_,didreceive%29.md)
+- [func backgroundDownload(BADownload, failedWithError: any Error)](./backgrounddownload%28_,failedwitherror%29.md)
 
 
 ---

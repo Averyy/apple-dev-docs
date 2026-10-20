@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Transport Extension  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A string identifier for the feature.

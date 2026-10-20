@@ -1,7 +1,8 @@
 # UIBlurEffect.Style.systemChromeMaterialLight
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A blur effect that creates the appearance of the system chrome and is always light.
 
@@ -17,15 +18,20 @@ A blur effect that creates the appearance of the system chrome and is always lig
 case systemChromeMaterialLight
 ```
 
+```c
+UIBlurEffectStyleSystemChromeMaterialLight
+```
+
 ## See Also
 
-- [UIBlurEffect.Style.systemUltraThinMaterialLight](uiblureffect/style/systemultrathinmateriallight.md)
+### Light styles
+- [UIBlurEffect.Style.systemUltraThinMaterialLight](./systemultrathinmateriallight.md)
   A blur effect that creates the appearance of an ultra-thin material and is always light.
-- [UIBlurEffect.Style.systemThinMaterialLight](uiblureffect/style/systemthinmateriallight.md)
+- [UIBlurEffect.Style.systemThinMaterialLight](./systemthinmateriallight.md)
   A blur effect that creates the appearance of a thin material and is always light.
-- [UIBlurEffect.Style.systemMaterialLight](uiblureffect/style/systemmateriallight.md)
+- [UIBlurEffect.Style.systemMaterialLight](./systemmateriallight.md)
   A blur effect that creates the appearance of a material with normal thickness and is always light.
-- [UIBlurEffect.Style.systemThickMaterialLight](uiblureffect/style/systemthickmateriallight.md)
+- [UIBlurEffect.Style.systemThickMaterialLight](./systemthickmateriallight.md)
   A blur effect that creates the appearance of a material that’s thicker than normal and is always light.
 
 

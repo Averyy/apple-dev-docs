@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Error.invalidOutput(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that represents an invalid output location.
 

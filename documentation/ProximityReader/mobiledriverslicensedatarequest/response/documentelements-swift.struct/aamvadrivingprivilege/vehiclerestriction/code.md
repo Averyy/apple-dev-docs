@@ -1,7 +1,8 @@
 # code
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The code of the vehicle restriction.
 

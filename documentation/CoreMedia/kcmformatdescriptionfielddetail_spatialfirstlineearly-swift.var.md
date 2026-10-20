@@ -1,7 +1,8 @@
 # kCMFormatDescriptionFieldDetail_SpatialFirstLineEarly
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -18,11 +19,16 @@
 let kCMFormatDescriptionFieldDetail_SpatialFirstLineEarly: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionFieldDetail_SpatialFirstLineEarly;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionFieldDetail_SpatialFirstLineLate: CFString](kcmformatdescriptionfielddetail_spatialfirstlinelate-swift.var.md)
-- [let kCMFormatDescriptionFieldDetail_TemporalTopFirst: CFString](kcmformatdescriptionfielddetail_temporaltopfirst-swift.var.md)
-- [let kCMFormatDescriptionFieldDetail_TemporalBottomFirst: CFString](kcmformatdescriptionfielddetail_temporalbottomfirst-swift.var.md)
+### Constants
+- [let kCMFormatDescriptionFieldDetail_SpatialFirstLineLate: CFString](./kcmformatdescriptionfielddetail_spatialfirstlinelate-swift.var.md)
+- [let kCMFormatDescriptionFieldDetail_TemporalTopFirst: CFString](./kcmformatdescriptionfielddetail_temporaltopfirst-swift.var.md)
+- [let kCMFormatDescriptionFieldDetail_TemporalBottomFirst: CFString](./kcmformatdescriptionfielddetail_temporalbottomfirst-swift.var.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date at which a segment starts.
 
@@ -20,17 +21,22 @@ The date at which a segment starts.
 var startDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * startDate;
+```
+
 #### Discussion
 
 This value is `nil` if the primary item doesn’t contain dates.
 
 ## See Also
 
-- [var timeMapping: CMTimeMapping](avplayeritemsegment/timemapping.md)
+### Inspecting the segment
+- [var timeMapping: CMTimeMapping](./timemapping.md)
   The time mapping for this segment.
-- [var loadedTimeRanges: [CMTimeRange]](avplayeritemsegment/loadedtimeranges-879hc.md)
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-879hc.md)
   The time ranges for the segment that have media data is readily available.
-- [var interstitialEvent: AVPlayerInterstitialEvent?](avplayeritemsegment/interstitialevent.md)
+- [var interstitialEvent: AVPlayerInterstitialEvent?](./interstitialevent.md)
   The associated interstitial event for this segment.
 
 

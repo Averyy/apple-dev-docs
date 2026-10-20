@@ -1,7 +1,8 @@
 # AUViewController
 
 **Framework**: CoreAudioKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class to extend when creating a custom user interface for an audio unit.
 
@@ -18,58 +19,71 @@ The base class to extend when creating a custom user interface for an audio unit
 class AUViewController
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@interface AUViewController : UIViewController
+```
+
+*macOS*
+
+```objc
+@interface AUViewController : NSViewController
+```
+
 #### Overview
 
-This class doesn’t add any new methods or properties to its superclass, but it does conform to the [`NSExtensionRequestHandling`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling) protocol.
+This class doesn’t add any new methods or properties to its superclass, but it does conform to the [`NSExtensionRequestHandling`](../Foundation/nsextensionrequesthandling.md) protocol.
 
-A host app can access the view controller by calling the [`requestViewController(completionHandler:)`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/requestviewcontroller(completionhandler:)) method on the corresponding [`AUAudioUnit`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit) object.
+A host app can access the view controller by calling the [`requestViewController(completionHandler:)`](../AudioToolbox/auaudiounit/requestviewcontroller%28completionhandler%29.md) method on the corresponding [`AUAudioUnit`](../AudioToolbox/auaudiounit.md) object.
 
 ##### Subclassing Notes
 
-If an audio unit provides a custom view controller, the UI Audio Unit extension must implement a subclass of `AUViewController` and implement the [`AUAudioUnitFactory`](https://developer.apple.com/documentation/audiotoolbox/auaudiounitfactory) protocol inside the subclass.
+If an audio unit provides a custom view controller, the UI Audio Unit extension must implement a subclass of `AUViewController` and implement the [`AUAudioUnitFactory`](../AudioToolbox/auaudiounitfactory.md) protocol inside the subclass.
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class AUAudioUnitViewConfiguration](auaudiounitviewconfiguration.md)
+### Audio Units
+- [class AUAudioUnitViewConfiguration](./auaudiounitviewconfiguration.md)
   A configuration object that describes how to present the audio unit’s user interface.
-- [class AUGenericView](augenericview.md)
+- [class AUGenericView](./augenericview.md)
   A view that provides a generic user interface for a Cocoa audio unit.
-- [class AUPannerView](aupannerview.md)
+- [class AUPannerView](./aupannerview.md)
   A view that provides a specialized user interface for a Cocoa-based panner audio unit.
-- [protocol AUCustomViewPersistentData](aucustomviewpersistentdata.md)
+- [protocol AUCustomViewPersistentData](./aucustomviewpersistentdata.md)
   A protocol that defines the methods an Audio Unit host calls to manage view data.
 
 

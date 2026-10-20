@@ -1,7 +1,8 @@
 # enabledStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when it enables or disables the large content viewer.
 
@@ -18,13 +19,18 @@ nonisolated
 class let enabledStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UILargeContentViewerInteractionEnabledStatusDidChangeNotification;
+```
+
 #### Discussion
 
 Observe this notification to know whether to enable or disable your custom interaction behaviors. For example, if you add an interaction to a button that needs to cooperate with other gesture recognizers when the large content viewer settings are enabled. This notification lets you enable or disable the interaction accordingly.
 
 ## See Also
 
-- [class var isEnabled: Bool](uilargecontentviewerinteraction/isenabled.md)
+### Detecting the large content viewer
+- [class var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the large content viewer is enabled on the device.
 
 

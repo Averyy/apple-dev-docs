@@ -1,14 +1,15 @@
 # ml_phys_read_double
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long long ml_phys_read_double(vm_offset_t paddr);
 ```
 

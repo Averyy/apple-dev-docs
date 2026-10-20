@@ -1,7 +1,8 @@
 # messageConfiguration
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var messageConfiguration: CPMessageGridItemConfiguration? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) CPMessageGridItemConfiguration * messageConfiguration;
 ```
 
 

@@ -1,7 +1,8 @@
 # DTLS.PeerAuthentication
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 PeerAuthentication specifies how to authenticate the peer end of the connection.
 
@@ -27,18 +28,18 @@ For clients, the default is `none`. For servers, the default is `required`.
 ## Topics
 
 ### Enumeration Cases
-- [DTLS.PeerAuthentication.none](dtls/peerauthentication/none.md)
+- [DTLS.PeerAuthentication.none](./peerauthentication/none.md)
   Do not authenticate the peer.
-- [DTLS.PeerAuthentication.optional](dtls/peerauthentication/optional.md)
+- [DTLS.PeerAuthentication.optional](./peerauthentication/optional.md)
   Requests the peer certificate, but if none is provided, proceed with the connection.
-- [DTLS.PeerAuthentication.required](dtls/peerauthentication/required.md)
+- [DTLS.PeerAuthentication.required](./peerauthentication/required.md)
   Always authenticate the peer.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

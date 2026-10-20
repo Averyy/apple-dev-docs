@@ -1,7 +1,8 @@
 # xpc_fd_dup(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a file descriptor that is equivalent to the one that the specified file descriptor object boxes.
 
@@ -10,7 +11,7 @@ Returns a file descriptor that is equivalent to the one that the specified file 
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Returns a file descriptor that is equivalent to the one that the specified file 
 func xpc_fd_dup(_ xfd: xpc_object_t) -> Int32
 ```
 
+```c
+extern int xpc_fd_dup(xpc_object_t xfd);
+```
+
 #### Return Value
 
-A file descriptor that is equivalent to the one originally given to [`xpc_fd_create(_:)`](xpc_fd_create(_:).md). If the descriptor could not be created, -1 is returned.
+A file descriptor that is equivalent to the one originally given to [`xpc_fd_create(_:)`](./xpc_fd_create%28_%29.md). If the descriptor could not be created, -1 is returned.
 
 #### Discussion
 
-Multiple invocations of [`xpc_fd_dup(_:)`](xpc_fd_dup(_:).md) will not return the same file descriptor number, but they will return descriptors that are equivalent, as though they had been created by `dup(2)`.
+Multiple invocations of [`xpc_fd_dup(_:)`](./xpc_fd_dup%28_%29.md) will not return the same file descriptor number, but they will return descriptors that are equivalent, as though they had been created by `dup(2)`.
 
 The caller is responsible for calling `close(2)` on the returned descriptor.
 
@@ -36,7 +41,8 @@ The caller is responsible for calling `close(2)` on the returned descriptor.
 
 ## See Also
 
-- [func xpc_fd_create(Int32) -> xpc_object_t?](xpc_fd_create(_:).md)
+### File Descriptor objects
+- [func xpc_fd_create(Int32) -> xpc_object_t?](./xpc_fd_create%28_%29.md)
   Creates an XPC object that represents a POSIX file descriptor.
 
 

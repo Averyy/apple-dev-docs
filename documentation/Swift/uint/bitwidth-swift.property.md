@@ -1,7 +1,8 @@
 # bitWidth
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits in the current binary representation of this value.
 

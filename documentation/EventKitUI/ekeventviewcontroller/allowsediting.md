@@ -1,7 +1,8 @@
 # allowsEditing
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that determines whether the user may edit the event.
 
@@ -17,13 +18,18 @@ A Boolean that determines whether the user may edit the event.
 var allowsEditing: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsEditing;
+```
+
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false) (the default), the event is not editable. If [`true`](https://developer.apple.com/documentation/swift/true), an Edit button appears, allowing the user to change properties of the event. This property applies only to events in calendars created by the user. For example, it doesn’t apply to invitations sent by another user.
+If [`false`](../../Swift/false.md) (the default), the event is not editable. If [`true`](../../Swift/true.md), an Edit button appears, allowing the user to change properties of the event. This property applies only to events in calendars created by the user. For example, it doesn’t apply to invitations sent by another user.
 
 ## See Also
 
-- [var allowsCalendarPreview: Bool](ekeventviewcontroller/allowscalendarpreview.md)
+### Displaying and Editing Event Previews
+- [var allowsCalendarPreview: Bool](./allowscalendarpreview.md)
   A Boolean that determines whether the user can preview the event in a calendar day.
 
 

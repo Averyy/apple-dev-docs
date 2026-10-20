@@ -1,7 +1,8 @@
 # es_retain_message(_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retains the given message, extending its lifetime until released.
 
@@ -14,9 +15,13 @@ Retains the given message, extending its lifetime until released.
 func es_retain_message(_ msg: UnsafePointer<es_message_t>)
 ```
 
+```c
+extern void es_retain_message(const es_message_t *msg);
+```
+
 #### Discussion
 
-If you asynchronously process the message provided to the event-handler block of [`es_new_client(_:_:)`](es_new_client(_:_:).md), you must retain the message.
+If you asynchronously process the message provided to the event-handler block of [`es_new_client(_:_:)`](./es_new_client%28_,_%29.md), you must retain the message.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ If you asynchronously process the message provided to the event-handler block of
 
 ## See Also
 
-- [func es_release_message(UnsafePointer<es_message_t>)](es_release_message(_:).md)
+### Retaining and Releasing Messages
+- [func es_release_message(UnsafePointer<es_message_t>)](./es_release_message%28_%29.md)
   Releases a previously-retained message.
 
 

@@ -1,12 +1,13 @@
 # indexOfItem(withObjectValue:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the receiver’s internal item list for the specified object and returns the lowest matching index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,21 @@ Searches the receiver’s internal item list for the specified object and return
 func indexOfItem(withObjectValue object: Any) -> Int
 ```
 
+```objc
+- (NSInteger) indexOfItemWithObjectValue:(id) object;
+```
+
 #### Return Value
 
-The lowest index in the internal item list whose corresponding value is equal to that of the specified object. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/swift/true).
+The lowest index in the internal item list whose corresponding value is equal to that of the specified object. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](../../Swift/true.md).
 
 #### Discussion
 
-If none of the objects in the receiver’s internal item list are equal to `anObject`, [`indexOfItem(withObjectValue:)`](nscombobox/indexofitem(withobjectvalue:).md) returns `NSNotFound`.
+If none of the objects in the receiver’s internal item list are equal to `anObject`, [`indexOfItem(withObjectValue:)`](./indexofitem%28withobjectvalue%29.md) returns `NSNotFound`.
 
 #### Discussion
 
-This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+This method logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -32,17 +37,19 @@ This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.m
 
 ## See Also
 
-- [func selectItem(withObjectValue: Any?)](nscombobox/selectitem(withobjectvalue:).md)
+### Related Documentation
+- [func selectItem(withObjectValue: Any?)](./selectitem%28withobjectvalue%29.md)
   Selects the first pop-up list item that corresponds to the given object.
-- [func itemObjectValue(at: Int) -> Any](nscombobox/itemobjectvalue(at:).md)
+### Manipulating the Displayed List
+- [func itemObjectValue(at: Int) -> Any](./itemobjectvalue%28at%29.md)
   Returns the object located at the given index within the receiver’s internal item list.
-- [func noteNumberOfItemsChanged()](nscombobox/notenumberofitemschanged.md)
+- [func noteNumberOfItemsChanged()](./notenumberofitemschanged%28%29.md)
   Informs the receiver that the number of items in its data source has changed.
-- [func reloadData()](nscombobox/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Marks the receiver as needing redisplay, so that it will reload the data for visible pop-up items and draw the new values.
-- [func scrollItemAtIndexToTop(Int)](nscombobox/scrollitematindextotop(_:).md)
+- [func scrollItemAtIndexToTop(Int)](./scrollitematindextotop%28_%29.md)
   Scrolls the receiver’s pop-up list vertically so that the item at the specified index is as close to the top as possible.
-- [func scrollItemAtIndexToVisible(Int)](nscombobox/scrollitematindextovisible(_:).md)
+- [func scrollItemAtIndexToVisible(Int)](./scrollitematindextovisible%28_%29.md)
   Scrolls the receiver’s pop-up list vertically so that the item at the specified index is visible.
 
 

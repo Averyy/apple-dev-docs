@@ -1,7 +1,8 @@
 # mattingImage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The semantic segmentation matte’s internal image.
 
@@ -20,17 +21,22 @@ The semantic segmentation matte’s internal image.
 var mattingImage: CVPixelBuffer { get }
 ```
 
+```objc
+@property (readonly) CVPixelBufferRef mattingImage;
+```
+
 #### Discussion
 
-You can determine the pixel buffer’s format type using the [`pixelFormatType`](avsemanticsegmentationmatte/pixelformattype.md) property.
+You can determine the pixel buffer’s format type using the [`pixelFormatType`](./pixelformattype.md) property.
 
 ## See Also
 
-- [var matteType: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.property.md)
+### Inspecting a segmentation matte
+- [var matteType: AVSemanticSegmentationMatte.MatteType](./mattetype-swift.property.md)
   The semantic segmentation matte image type.
-- [AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct.md)
+- [AVSemanticSegmentationMatte.MatteType](./mattetype-swift.struct.md)
   A structure that defines the types of segmentation matte images that you can capture along with the primary image.
-- [var pixelFormatType: OSType](avsemanticsegmentationmatte/pixelformattype.md)
+- [var pixelFormatType: OSType](./pixelformattype.md)
   The pixel format type for this object’s internal matting image.
 
 

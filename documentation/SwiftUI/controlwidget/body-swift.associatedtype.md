@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of configuration representing the content of this control.
@@ -21,7 +22,7 @@ associatedtype Body : ControlWidgetConfiguration
 
 #### Discussion
 
-When you create a custom control, Swift infers this type from your implementation of the required [`body`](controlwidget/body-swift.property.md) property.
+When you create a custom control, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # setInputMuted(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a Boolean value that indicates whether the app’s audio input is in a muted state.
 
@@ -20,9 +21,13 @@ Sets a Boolean value that indicates whether the app’s audio input is in a mute
 func setInputMuted(_ muted: Bool) throws
 ```
 
+```objc
+- (BOOL) setInputMuted:(BOOL) muted error:(NSError **) outError;
+```
+
 #### Discussion
 
-In platforms that use [`AVAudioSession`](avaudiosession.md), setting the value to [`true`](https://developer.apple.com/documentation/swift/true) mutes all sources of audio input in the app. In macOS, the system instead invokes the callback that you register by calling [`setInputMuteStateChangeHandler(_:)`](avaudioapplication/setinputmutestatechangehandler(_:).md) to handle input muting.
+In platforms that use [`AVAudioSession`](../avaudiosession.md), setting the value to [`true`](../../Swift/true.md) mutes all sources of audio input in the app. In macOS, the system instead invokes the callback that you register by calling [`setInputMuteStateChangeHandler(_:)`](./setinputmutestatechangehandler%28_%29.md) to handle input muting.
 
 > **Note**:  This setting is specific to your app and doesn’t affect hardware mute state.
 
@@ -32,11 +37,12 @@ In platforms that use [`AVAudioSession`](avaudiosession.md), setting the value t
 
 ## See Also
 
-- [var isInputMuted: Bool](avaudioapplication/isinputmuted.md)
+### Managing audio input mute state
+- [var isInputMuted: Bool](./isinputmuted.md)
   A Boolean value that indicates whether the app’s audio input is in a muted state.
-- [class let inputMuteStateChangeNotification: NSNotification.Name](avaudioapplication/inputmutestatechangenotification.md)
+- [class let inputMuteStateChangeNotification: NSNotification.Name](./inputmutestatechangenotification.md)
   A notification the system posts when the app’s audio input mute state changes.
-- [func setInputMuteStateChangeHandler(((Bool) -> Bool)?) throws](avaudioapplication/setinputmutestatechangehandler(_:).md)
+- [func setInputMuteStateChangeHandler(((Bool) -> Bool)?) throws](./setinputmutestatechangehandler%28_%29.md)
   Sets a callback to handle changes to application-level audio muting states.
 
 

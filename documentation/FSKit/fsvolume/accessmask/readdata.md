@@ -1,7 +1,8 @@
 # readData
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file system allows reading data.
 
@@ -14,9 +15,14 @@ The file system allows reading data.
 static var readData: FSVolume.AccessMask { get }
 ```
 
+```c
+FSAccessReadData
+```
+
 ## See Also
 
-- [static var writeData: FSVolume.AccessMask](fsvolume/accessmask/writedata.md)
+### Declaring read and write access
+- [static var writeData: FSVolume.AccessMask](./writedata.md)
   The file system allows writing data.
 
 

@@ -1,7 +1,8 @@
 # PaperMarkupViewController.ScrollConfiguration
 
 **Framework**: PaperKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A cross-platform type that provides access to scroll view functionality.
 
@@ -21,62 +22,63 @@ final class ScrollConfiguration
 ## Topics
 
 ### Configuring scroll indicators
-- [var visibleScrollIndicators: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/visiblescrollindicators.md)
+- [var visibleScrollIndicators: PaperMarkupViewController.ScrollConfiguration.Axis](./scrollconfiguration-swift.class/visiblescrollindicators.md)
   The axes for which scroll indicators are visible.
-- [PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/axis.md)
+- [PaperMarkupViewController.ScrollConfiguration.Axis](./scrollconfiguration-swift.class/axis.md)
   The axes you use to specify scroll view behavior.
 ### Configuring bouncing behavior
-- [var bounces: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/bounces.md)
+- [var bounces: PaperMarkupViewController.ScrollConfiguration.Axis](./scrollconfiguration-swift.class/bounces.md)
   The axes for which the scroll view bounces past the edge of content and back again.
-- [var alwaysBounces: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/alwaysbounces.md)
+- [var alwaysBounces: PaperMarkupViewController.ScrollConfiguration.Axis](./scrollconfiguration-swift.class/alwaysbounces.md)
   The axes for which bouncing always occurs when scrolling reaches the end of the content.
-- [var bouncesZoom: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/bounceszoom.md)
+- [var bouncesZoom: Bool](./scrollconfiguration-swift.class/bounceszoom.md)
   A Boolean value that controls whether the scroll view animates the content scaling when the scaling exceeds the maximum or minimum limits.
 ### Configuring content insets
-- [var contentInset: NSEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinset-1ktjn.md)
+- [var contentInset: NSEdgeInsets](./scrollconfiguration-swift.class/contentinset-1ktjn.md)
   The custom distance to inset the content view from the scroll view edges.
-- [var contentInset: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinset-3vn4v.md)
+- [var contentInset: UIEdgeInsets](./scrollconfiguration-swift.class/contentinset-3vn4v.md)
   The custom distance to inset the content view from the safe area or scroll view edges.
-- [var adjustedContentInset: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/adjustedcontentinset.md)
+- [var adjustedContentInset: UIEdgeInsets](./scrollconfiguration-swift.class/adjustedcontentinset.md)
   The insets that the system derives from the content insets and safe area insets.
-- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinsetadjustmentbehavior.md)
+- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](./scrollconfiguration-swift.class/contentinsetadjustmentbehavior.md)
   The behavior for determining the adjusted content inset.
 ### Configuring scroll state
-- [var isScrollEnabled: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/isscrollenabled.md)
+- [var isScrollEnabled: Bool](./scrollconfiguration-swift.class/isscrollenabled.md)
   A Boolean value that determines whether scrolling is enabled.
-- [var isDirectionalLockEnabled: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/isdirectionallockenabled.md)
+- [var isDirectionalLockEnabled: Bool](./scrollconfiguration-swift.class/isdirectionallockenabled.md)
   A Boolean value that determines whether scrolling is disabled in a particular direction.
-- [var scrollsToTop: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/scrollstotop.md)
+- [var scrollsToTop: Bool](./scrollconfiguration-swift.class/scrollstotop.md)
   A Boolean value that controls whether the scroll-to-top gesture is enabled.
 ### Configuring scroll indicator insets
-- [var verticalScrollIndicatorInsets: NSEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/verticalscrollindicatorinsets-4gy4y.md)
+- [var verticalScrollIndicatorInsets: NSEdgeInsets](./scrollconfiguration-swift.class/verticalscrollindicatorinsets-4gy4y.md)
   The vertical scroll indicator’s insets.
-- [var verticalScrollIndicatorInsets: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/verticalscrollindicatorinsets-79jxb.md)
+- [var verticalScrollIndicatorInsets: UIEdgeInsets](./scrollconfiguration-swift.class/verticalscrollindicatorinsets-79jxb.md)
   The vertical scroll indicator’s insets.
-- [var horizontalScrollIndicatorInsets: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/horizontalscrollindicatorinsets-5nzvz.md)
+- [var horizontalScrollIndicatorInsets: UIEdgeInsets](./scrollconfiguration-swift.class/horizontalscrollindicatorinsets-5nzvz.md)
   The horizontal scroll indicator’s insets.
-- [var horizontalScrollIndicatorInsets: NSEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/horizontalscrollindicatorinsets-6inpv.md)
+- [var horizontalScrollIndicatorInsets: NSEdgeInsets](./scrollconfiguration-swift.class/horizontalscrollindicatorinsets-6inpv.md)
   The horizontal scroll indicator’s insets.
 ### Configuring zoom scale
-- [var zoomScale: CGFloat](papermarkupviewcontroller/scrollconfiguration-swift.class/zoomscale.md)
+- [var zoomScale: CGFloat](./scrollconfiguration-swift.class/zoomscale.md)
   The current scale factor applied to the scroll view’s content.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Observable](../../Observation/observable.md)
 
 ## See Also
 
-- [var scrollConfiguration: PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.property.md)
+### Scrolling and zooming
+- [var scrollConfiguration: PaperMarkupViewController.ScrollConfiguration](./scrollconfiguration-swift.property.md)
   The configuration object that provides access to scroll view functionality.
-- [var contentVisibleFrame: CGRect](papermarkupviewcontroller/contentvisibleframe.md)
+- [var contentVisibleFrame: CGRect](./contentvisibleframe.md)
   The visible area of content in the scroll view.
-- [func setContentVisibleFrame(CGRect, animated: Bool)](papermarkupviewcontroller/setcontentvisibleframe(_:animated:).md)
+- [func setContentVisibleFrame(CGRect, animated: Bool)](./setcontentvisibleframe%28_,animated%29.md)
   Zooms to a specific area of the content so that it’s visible in the scroll view.
-- [var zoomRange: ClosedRange<CGFloat>](papermarkupviewcontroller/zoomrange.md)
+- [var zoomRange: ClosedRange<CGFloat>](./zoomrange.md)
   A floating-point range that specifies the minimum and maximum scale factor that can apply to the canvas’ content.
 
 

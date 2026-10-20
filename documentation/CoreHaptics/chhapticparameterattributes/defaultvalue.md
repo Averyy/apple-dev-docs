@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The default value of the parameter value.
@@ -20,15 +21,20 @@ The default value of the parameter value.
 var defaultValue: Float { get }
 ```
 
+```objc
+@property (readonly) float defaultValue;
+```
+
 #### Discussion
 
 The parameter assumes this default value when initialized.
 
 ## See Also
 
-- [var minValue: Float](chhapticparameterattributes/minvalue.md)
+### Parameter Attributes
+- [var minValue: Float](./minvalue.md)
   The minimum value the parameter can take.
-- [var maxValue: Float](chhapticparameterattributes/maxvalue.md)
+- [var maxValue: Float](./maxvalue.md)
   The maximum value the parameter can take.
 
 

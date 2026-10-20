@@ -1,18 +1,23 @@
 # tabView(_:didSelect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that `tabView` has selected `tabViewItem`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func tabView(_ tabView: NSTabView, didSelect tabViewItem: NSTabViewItem?)
+```
+
+```objc
+- (void) tabView:(NSTabView *) tabView didSelectTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
 ## Parameters
@@ -22,9 +27,10 @@ optional func tabView(_ tabView: NSTabView, didSelect tabViewItem: NSTabViewItem
 
 ## See Also
 
-- [func tabView(NSTabView, shouldSelect: NSTabViewItem?) -> Bool](nstabviewdelegate/tabview(_:shouldselect:).md)
+### Selecting a Tab
+- [func tabView(NSTabView, shouldSelect: NSTabViewItem?) -> Bool](./tabview%28_,shouldselect%29.md)
   Invoked just before `tabViewItem` in `tabView` is selected.
-- [func tabView(NSTabView, willSelect: NSTabViewItem?)](nstabviewdelegate/tabview(_:willselect:).md)
+- [func tabView(NSTabView, willSelect: NSTabViewItem?)](./tabview%28_,willselect%29.md)
   Informs the delegate that `tabView` is about to select `tabViewItem`.
 
 

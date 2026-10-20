@@ -1,7 +1,8 @@
 # AVAudioApplication
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages one or more audio sessions that belong to an app.
 
@@ -20,6 +21,10 @@ An object that manages one or more audio sessions that belong to an app.
 class AVAudioApplication
 ```
 
+```objc
+@interface AVAudioApplication : NSObject
+```
+
 #### Overview
 
 Access the shared audio application instance to control app-level audio operations, such as requesting microphone permission and controlling audio input muting.
@@ -27,61 +32,62 @@ Access the shared audio application instance to control app-level audio operatio
 ## Topics
 
 ### Accessing the shared instance
-- [class var shared: AVAudioApplication](avaudioapplication/shared.md)
+- [class var shared: AVAudioApplication](./avaudioapplication/shared.md)
   Accesses the shared audio application instance.
 ### Requesting audio recording permission
-- [class func requestRecordPermission(completionHandler: (Bool) -> Void)](avaudioapplication/requestrecordpermission(completionhandler:).md)
+- [class func requestRecordPermission(completionHandler: (Bool) -> Void)](./avaudioapplication/requestrecordpermission%28completionhandler%29.md)
   Determines whether the app has permission to record audio.
-- [var recordPermission: AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.property.md)
+- [var recordPermission: AVAudioApplication.recordPermission](./avaudioapplication/recordpermission-swift.property.md)
   The app’s permission to record audio.
-- [AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.enum.md)
+- [AVAudioApplication.recordPermission](./avaudioapplication/recordpermission-swift.enum.md)
   Constants that indicate the app’s permission to record audio.
 ### Managing microphone injection permission
-- [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](avaudioapplication/requestmicrophoneinjectionpermission(completionhandler:).md)
+- [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](./avaudioapplication/requestmicrophoneinjectionpermission%28completionhandler%29.md)
   Requests the app’s permission to add audio to calls.
-- [var microphoneInjectionPermission: AVAudioApplication.MicrophoneInjectionPermission](avaudioapplication/microphoneinjectionpermission-swift.property.md)
+- [var microphoneInjectionPermission: AVAudioApplication.MicrophoneInjectionPermission](./avaudioapplication/microphoneinjectionpermission-swift.property.md)
   A value that indicates an app’s permission to add audio to calls.
-- [AVAudioApplication.MicrophoneInjectionPermission](avaudioapplication/microphoneinjectionpermission-swift.enum.md)
+- [AVAudioApplication.MicrophoneInjectionPermission](./avaudioapplication/microphoneinjectionpermission-swift.enum.md)
   Constants that indicate an app’s permission to add audio to calls.
 ### Managing audio input mute state
-- [var isInputMuted: Bool](avaudioapplication/isinputmuted.md)
+- [var isInputMuted: Bool](./avaudioapplication/isinputmuted.md)
   A Boolean value that indicates whether the app’s audio input is in a muted state.
-- [func setInputMuted(Bool) throws](avaudioapplication/setinputmuted(_:).md)
+- [func setInputMuted(Bool) throws](./avaudioapplication/setinputmuted%28_%29.md)
   Sets a Boolean value that indicates whether the app’s audio input is in a muted state.
-- [class let inputMuteStateChangeNotification: NSNotification.Name](avaudioapplication/inputmutestatechangenotification.md)
+- [class let inputMuteStateChangeNotification: NSNotification.Name](./avaudioapplication/inputmutestatechangenotification.md)
   A notification the system posts when the app’s audio input mute state changes.
-- [func setInputMuteStateChangeHandler(((Bool) -> Bool)?) throws](avaudioapplication/setinputmutestatechangehandler(_:).md)
+- [func setInputMuteStateChangeHandler(((Bool) -> Bool)?) throws](./avaudioapplication/setinputmutestatechangehandler%28_%29.md)
   Sets a callback to handle changes to application-level audio muting states.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+### System audio
+- [Handling audio interruptions](./handling-audio-interruptions.md)
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](./responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](./routing-audio-to-specific-devices-in-multidevice-sessions.md)
   Map audio channels to specific devices in multiroute sessions for recording and playback.
-- [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
+- [Adding synthesized speech to calls](./adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
-- [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)
+- [Capturing stereo audio from built-In microphones](./capturing-stereo-audio-from-built-in-microphones.md)
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
-- [class AVAudioSession](avaudiosession.md)
+- [class AVAudioSession](./avaudiosession.md)
   An object that communicates to the system how you intend to use audio in your app.
-- [class AVAudioRoutingArbiter](avaudioroutingarbiter.md)
+- [class AVAudioRoutingArbiter](./avaudioroutingarbiter.md)
   An object for configuring macOS apps to participate in AirPods Automatic Switching.
 
 

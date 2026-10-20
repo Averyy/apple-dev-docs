@@ -1,7 +1,8 @@
 # init(importedContentType:shouldAttemptToOpenInPlace:importing:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transfer representation for importing transferable items as files.
 
@@ -28,9 +29,10 @@ init(importedContentType: UTType, shouldAttemptToOpenInPlace: Bool = false, impo
 
 ## See Also
 
-- [init(contentType: UTType, shouldAttemptToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile, importing: (ReceivedTransferredFile) async throws -> Item)](filerepresentation/init(contenttype:shouldattempttoopeninplace:exporting:importing:).md)
+### Creating a transfer representation
+- [init(contentType: UTType, shouldAttemptToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile, importing: (ReceivedTransferredFile) async throws -> Item)](./init%28contenttype,shouldattempttoopeninplace,exporting,importing%29.md)
   Creates a transfer representation for importing and exporting transferable items as files.
-- [init(exportedContentType: UTType, shouldAllowToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile)](filerepresentation/init(exportedcontenttype:shouldallowtoopeninplace:exporting:).md)
+- [init(exportedContentType: UTType, shouldAllowToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile)](./init%28exportedcontenttype,shouldallowtoopeninplace,exporting%29.md)
   Creates a transfer representation for exporting transferable items as files.
 
 

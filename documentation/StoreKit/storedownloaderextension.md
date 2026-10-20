@@ -1,7 +1,8 @@
 # StoreDownloaderExtension
 
 **Framework**: StoreKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An app extension that uses the system implementation to schedule Apple-hosted asset-pack downloads automatically.
 
@@ -21,14 +22,14 @@ protocol StoreDownloaderExtension : ManagedDownloaderExtension
 
 #### Overview
 
-You can optionally implement the inherited `ManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements for which this protocol provides a default implementation. For more information, see [`Background Assets`](https://developer.apple.com/documentation/backgroundassets).
+You can optionally implement the inherited `ManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements for which this protocol provides a default implementation. For more information, see [Background Assets](../BackgroundAssets/BackgroundAssets.md).
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [BADownloaderExtension](../backgroundassets/badownloaderextension-qwaw.md)
-- [ManagedDownloaderExtension](../backgroundassets/manageddownloaderextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [BADownloaderExtension](../BackgroundAssets/badownloaderextension-qwaw.md)
+- [ManagedDownloaderExtension](../BackgroundAssets/manageddownloaderextension.md)
 
 
 ---

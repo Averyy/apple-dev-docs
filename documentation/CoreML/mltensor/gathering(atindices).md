@@ -1,7 +1,8 @@
 # gathering(atIndices:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tensor by gathering slices at the specified indices.
 
@@ -64,7 +65,8 @@ let y = x.gathering(atIndices: i)
 
 ## See Also
 
-- [func gathering(atIndices: MLTensor, alongAxis: Int) -> MLTensor](mltensor/gathering(atindices:alongaxis:).md)
+### Gathering slices
+- [func gathering(atIndices: MLTensor, alongAxis: Int) -> MLTensor](./gathering%28atindices,alongaxis%29.md)
   Returns a tensor by gathering slices along the given axis at the specified indices.
 
 

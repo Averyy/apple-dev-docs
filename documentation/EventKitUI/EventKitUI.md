@@ -1,7 +1,8 @@
 # EventKit UI
 
 **Framework**: EventKit UI  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Display an interface for viewing, selecting, and editing calendar events and reminders.
 
@@ -17,32 +18,32 @@ On iOS, use the EventKitUI framework to show calendar and reminder information t
 
 The view controllers you’ll use on iOS are:
 
-- [`EKEventViewController`](ekeventviewcontroller.md), for displaying existing events.
-- [`EKEventEditViewController`](ekeventeditviewcontroller.md), for creating, editing, or deleting events.
-- [`EKCalendarChooser`](ekcalendarchooser.md), for selecting one or more calendars, and to determine whether a calendar has read-only or read-write access.
+- [`EKEventViewController`](./ekeventviewcontroller.md), for displaying existing events.
+- [`EKEventEditViewController`](./ekeventeditviewcontroller.md), for creating, editing, or deleting events.
+- [`EKCalendarChooser`](./ekcalendarchooser.md), for selecting one or more calendars, and to determine whether a calendar has read-only or read-write access.
 
 You present these interfaces from within your app. Upon presentation, the system manages all interactions with the user, notifying you when the interfaces are dismissed.
 
 EventKitUI also provides several configurable classes for selecting a default calendar, displaying buttons, or to enabling the user to select one or more calendars.
 
-> **Note**: To access the event store, which contains calendar and reminder data, use EventKit. For more information, see [`Accessing the event store`](https://developer.apple.com/documentation/eventkit/accessing-the-event-store).
+> **Note**: To access the event store, which contains calendar and reminder data, use EventKit. For more information, see [Accessing the event store](../EventKit/accessing-the-event-store.md).
 
 ## Topics
 
 ### Calendar Views
-- [class EKEventViewController](ekeventviewcontroller.md)
+- [class EKEventViewController](./ekeventviewcontroller.md)
   A view controller for displaying existing calendar and reminder events, and for optionally editing those events.
 ### Calendar Edits
-- [class EKEventEditViewController](ekeventeditviewcontroller.md)
+- [class EKEventEditViewController](./ekeventeditviewcontroller.md)
   A view controller for creating, editing, and deleting calendar events.
 ### Calendar Selection
-- [class EKCalendarChooser](ekcalendarchooser.md)
+- [class EKCalendarChooser](./ekcalendarchooser.md)
   A view controller for determining whether a user may select one or more calendars.
 ### EventKit Bundle Access
-- [func EventKitUIBundle() -> Bundle!](eventkituibundle().md)
+- [func EventKitUIBundle() -> Bundle!](./eventkituibundle%28%29.md)
   Use to access resources within the app bundle.
 ### Reference
-- [EventKitUI Constants](eventkitui-constants.md)
+- [EventKitUI Constants](./eventkitui-constants.md)
 
 
 ---

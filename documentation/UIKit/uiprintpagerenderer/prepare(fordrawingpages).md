@@ -1,7 +1,8 @@
 # prepare(forDrawingPages:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the renderer for drawing a range of pages.
 
@@ -15,6 +16,10 @@ Prepares the renderer for drawing a range of pages.
 
 ```swift
 func prepare(forDrawingPages range: NSRange)
+```
+
+```objc
+- (void) prepareForDrawingPages:(NSRange) range;
 ```
 
 #### Discussion

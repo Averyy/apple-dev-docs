@@ -1,7 +1,8 @@
 # init(to:by:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new from to by action to animate towards a final value. The starting value is determined by adding the inverse of `by` to the specified final value.
 

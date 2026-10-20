@@ -1,7 +1,8 @@
 # init(_:as:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regular expression from the given string, using the specified capture type.
 

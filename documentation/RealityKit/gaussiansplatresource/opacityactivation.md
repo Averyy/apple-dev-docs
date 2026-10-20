@@ -1,7 +1,8 @@
 # opacityActivation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transformation the framework applies to the opacity values before rendering.
 

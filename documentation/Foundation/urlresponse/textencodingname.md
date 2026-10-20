@@ -1,7 +1,8 @@
 # textEncodingName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the text encoding provided by the response’s originating source.
 
@@ -20,21 +21,26 @@ The name of the text encoding provided by the response’s originating source.
 var textEncodingName: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * textEncodingName;
+```
+
 #### Discussion
 
 If no text encoding was provided by the protocol, this property’s value is `nil`.
 
-You can convert this string to a `CFStringEncoding` value by calling [`CFStringConvertIANACharSetNameToEncoding(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringconvertianacharsetnametoencoding(_:)). You can subsequently convert that value to an `NSStringEncoding` value by calling [`CFStringConvertEncodingToNSStringEncoding(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringconvertencodingtonsstringencoding(_:)).
+You can convert this string to a `CFStringEncoding` value by calling [`CFStringConvertIANACharSetNameToEncoding(_:)`](../../CoreFoundation/cfstringconvertianacharsetnametoencoding%28_%29.md). You can subsequently convert that value to an `NSStringEncoding` value by calling [`CFStringConvertEncodingToNSStringEncoding(_:)`](../../CoreFoundation/cfstringconvertencodingtonsstringencoding%28_%29.md).
 
 ## See Also
 
-- [var expectedContentLength: Int64](urlresponse/expectedcontentlength.md)
+### Getting the response properties
+- [var expectedContentLength: Int64](./expectedcontentlength.md)
   The expected length of the response’s content.
-- [var suggestedFilename: String?](urlresponse/suggestedfilename.md)
+- [var suggestedFilename: String?](./suggestedfilename.md)
   A suggested filename for the response data.
-- [var mimeType: String?](urlresponse/mimetype.md)
+- [var mimeType: String?](./mimetype.md)
   The MIME type of the response.
-- [var url: URL?](urlresponse/url.md)
+- [var url: URL?](./url.md)
   The URL for the response.
 
 

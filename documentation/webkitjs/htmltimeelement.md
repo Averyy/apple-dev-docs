@@ -1,7 +1,8 @@
 # HTMLTimeElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLTimeElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dateTime](htmltimeelement/1777959-datetime.md)
+- [dateTime](./htmltimeelement/api-1777959-datetime.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

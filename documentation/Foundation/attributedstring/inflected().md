@@ -1,7 +1,8 @@
 # inflected()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies automatic grammar agreement inflection rules to the attributed string and returns the result.
 

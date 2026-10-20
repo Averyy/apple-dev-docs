@@ -1,7 +1,8 @@
 # NLModel
 
 **Framework**: Natural Language  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A custom model trained to classify or tag natural language text.
 
@@ -20,11 +21,15 @@ A custom model trained to classify or tag natural language text.
 class NLModel
 ```
 
+```objc
+@interface NLModel : NSObject
+```
+
 #### Overview
 
-With [`Natural Language`](NaturalLanguage.md), you can create text classifier ([`MLTextClassifier`](https://developer.apple.com/documentation/createml/mltextclassifier)) or word tagger ([`MLWordTagger`](https://developer.apple.com/documentation/createml/mlwordtagger)) models. Use [`NLModel`](nlmodel.md) to integrate those models into your app. This integration ensures that your tokenization and tagger configurations are identical when you train your model and use it in your app.
+With [Natural Language](./NaturalLanguage.md), you can create text classifier ([`MLTextClassifier`](../CreateML/mltextclassifier.md)) or word tagger ([`MLWordTagger`](../CreateML/mlwordtagger.md)) models. Use [`NLModel`](./nlmodel.md) to integrate those models into your app. This integration ensures that your tokenization and tagger configurations are identical when you train your model and use it in your app.
 
-If you create a text classifier as described in [`Creating a text classifier model`](https://developer.apple.com/documentation/createml/creating-a-text-classifier-model), you can integrate that model into your app and use it to make predictions like this:
+If you create a text classifier as described in [Creating a text classifier model](../CreateML/creating-a-text-classifier-model.md), you can integrate that model into your app and use it to make predictions like this:
 
 ```swift
 let text = "I am very happy."
@@ -48,7 +53,7 @@ do {
 }
 ```
 
-If you create a custom word tagger as described in [`Creating a word tagger model`](https://developer.apple.com/documentation/createml/creating-a-word-tagger-model), you can integrate that model into your app and generate tags for new text input like this:
+If you create a custom word tagger as described in [Creating a word tagger model](../CreateML/creating-a-word-tagger-model.md), you can integrate that model into your app and generate tags for new text input like this:
 
 ```swift
 let text = "The iPad is my favorite Apple product."
@@ -78,50 +83,51 @@ do {
 ## Topics
 
 ### Creating a model
-- [convenience init(mlModel: MLModel) throws](nlmodel/init(mlmodel:)-9tpjr.md)
+- [convenience init(mlModel: MLModel) throws](./nlmodel/init%28mlmodel%29-9tpjr.md)
   Creates a new natural language model based on the given Core ML model instance.
-- [convenience init(contentsOf: URL) throws](nlmodel/init(contentsof:).md)
+- [convenience init(contentsOf: URL) throws](./nlmodel/init%28contentsof%29.md)
   Creates a new natural language model based on a compiled Core ML model at the given URL.
 ### Making predictions
-- [func predictedLabel(for: String) -> String?](nlmodel/predictedlabel(for:).md)
+- [func predictedLabel(for: String) -> String?](./nlmodel/predictedlabel%28for%29.md)
   Predicts a label for the given input string.
-- [func predictedLabels(forTokens: [String]) -> [String]](nlmodel/predictedlabels(fortokens:).md)
+- [func predictedLabels(forTokens: [String]) -> [String]](./nlmodel/predictedlabels%28fortokens%29.md)
   Predicts a label for each string in the given array.
-- [func predictedLabelHypotheses(for: String, maximumCount: Int) -> [String : Double]](nlmodel/predictedlabelhypotheses(for:maximumcount:).md)
+- [func predictedLabelHypotheses(for: String, maximumCount: Int) -> [String : Double]](./nlmodel/predictedlabelhypotheses%28for,maximumcount%29.md)
   Predicts multiple possible labels for the given input string.
-- [func predictedLabelHypotheses(forTokens: [String], maximumCount: Int) -> [[String : Double]]](nlmodel/predictedlabelhypotheses(fortokens:maximumcount:).md)
+- [func predictedLabelHypotheses(forTokens: [String], maximumCount: Int) -> [[String : Double]]](./nlmodel/predictedlabelhypotheses%28fortokens,maximumcount%29.md)
   Predicts multiple possible labels for each string in the given array.
 ### Inspecting a model
-- [var configuration: NLModelConfiguration](nlmodel/configuration.md)
+- [var configuration: NLModelConfiguration](./nlmodel/configuration.md)
   A configuration describing the natural language model.
-- [class NLModelConfiguration](nlmodelconfiguration.md)
+- [class NLModelConfiguration](./nlmodelconfiguration.md)
   The configuration parameters of a natural language model.
 ### Related Documentation
-- [struct MLTextClassifier](../createml/mltextclassifier.md)
+- [struct MLTextClassifier](../CreateML/mltextclassifier.md)
   A model you train to classify natural language text.
-- [struct MLWordTagger](../createml/mlwordtagger.md)
+- [struct MLWordTagger](../CreateML/mlwordtagger.md)
   A word-tagging model you train to classify natural language text at the word level.
 ### Initializers
-- [convenience init(MLModel: MLModel) throws](nlmodel/init(mlmodel:)-4o6g8.md)
-- [convenience init(contentsOfURL: URL) throws](nlmodel/init(contentsofurl:).md)
+- [convenience init(MLModel: MLModel) throws](./nlmodel/init%28mlmodel%29-4o6g8.md)
+- [convenience init(contentsOfURL: URL) throws](./nlmodel/init%28contentsofurl%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating a text classifier model](../createml/creating-a-text-classifier-model.md)
+### Natural language models
+- [Creating a text classifier model](../CreateML/creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](../createml/creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../CreateML/creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 
 

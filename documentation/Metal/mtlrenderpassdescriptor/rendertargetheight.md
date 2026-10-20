@@ -1,7 +1,8 @@
 # renderTargetHeight
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height, in pixels, to constrain the render target to.
 
@@ -19,11 +20,16 @@ The height, in pixels, to constrain the render target to.
 var renderTargetHeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger renderTargetHeight;
+```
+
 ## See Also
 
-- [var renderTargetArrayLength: Int](mtlrenderpassdescriptor/rendertargetarraylength.md)
+### Layered rendering
+- [var renderTargetArrayLength: Int](./rendertargetarraylength.md)
   The number of active layers that all attachments need to have for layered rendering.
-- [var renderTargetWidth: Int](mtlrenderpassdescriptor/rendertargetwidth.md)
+- [var renderTargetWidth: Int](./rendertargetwidth.md)
   The width, in pixels, to constrain the render target to.
 
 

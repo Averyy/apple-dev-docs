@@ -1,7 +1,8 @@
 # vfs_flags
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieve mount flags.
 
@@ -10,11 +11,11 @@ Retrieve mount flags.
 
 ## Declaration
 
-```swift
+```c
 uint64_t vfs_flags(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Flags.
 

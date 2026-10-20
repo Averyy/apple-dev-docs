@@ -1,17 +1,22 @@
 # jobStyleHint
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of settings that the print panel displays.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var jobStyleHint: NSPrintPanel.JobStyleHint? { get set }
+```
+
+```objc
+@property (copy, nullable) NSPrintPanelJobStyleHint jobStyleHint;
 ```
 
 #### Discussion
@@ -20,17 +25,18 @@ This property controls the set of items that appear in the Presets menu of the s
 
 ## See Also
 
-- [NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct.md)
+### Customizing the Panel
+- [NSPrintPanel.JobStyleHint](./jobstylehint-swift.struct.md)
   Constants that specify job style hints for activating the simplified Print panel interface and setting the options to display.
-- [var options: NSPrintPanel.Options](nsprintpanel/options-swift.property.md)
+- [var options: NSPrintPanel.Options](./options-swift.property.md)
   The current configuration options for the Print panel.
-- [NSPrintPanel.Options](nsprintpanel/options-swift.struct.md)
+- [NSPrintPanel.Options](./options-swift.struct.md)
   Constants that specify options for configuring the contents of the main Print panel.
-- [func defaultButtonTitle() -> String?](nsprintpanel/defaultbuttontitle.md)
+- [func defaultButtonTitle() -> String?](./defaultbuttontitle%28%29.md)
   Returns the title of the Print panel’s default button.
-- [func setDefaultButtonTitle(String?)](nsprintpanel/setdefaultbuttontitle(_:).md)
+- [func setDefaultButtonTitle(String?)](./setdefaultbuttontitle%28_%29.md)
   Sets the title of the Print panel’s default button.
-- [var helpAnchor: NSHelpManager.AnchorName?](nsprintpanel/helpanchor.md)
+- [var helpAnchor: NSHelpManager.AnchorName?](./helpanchor.md)
   The HTML help anchor associated with the Print panel.
 
 

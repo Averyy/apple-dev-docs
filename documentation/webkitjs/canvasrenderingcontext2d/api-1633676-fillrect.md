@@ -1,7 +1,8 @@
 # fillRect
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Fills a specified rectangle in the current fill color, gradient, or pattern.
 
@@ -11,7 +12,7 @@ Fills a specified rectangle in the current fill color, gradient, or pattern.
 
 ## Declaration
 
-```swift
+```
 void fillRect(
     unrestricted float x, 
     unrestricted float y, 
@@ -33,9 +34,10 @@ All parameter values are in the canvas’s current coordinate system, subject to
 
 ## See Also
 
-- [clearRect](canvasrenderingcontext2d/1632646-clearrect.md)
+### Drawing Rectangles
+- [clearRect](./api-1632646-clearrect.md)
   Clears the specified rectangle to transparent black—RGBa(0,0,0,0).
-- [strokeRect](canvasrenderingcontext2d/1632379-strokerect.md)
+- [strokeRect](./api-1632379-strokerect.md)
   Draws a rectangle using the current stroke color, pattern, or gradient.
 
 

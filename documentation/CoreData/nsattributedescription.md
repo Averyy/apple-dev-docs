@@ -1,7 +1,8 @@
 # NSAttributeDescription
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a single attribute belonging to an entity.
 
@@ -10,7 +11,7 @@ A description of a single attribute belonging to an entity.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ A description of a single attribute belonging to an entity.
 class NSAttributeDescription
 ```
 
+```objc
+@interface NSAttributeDescription : NSPropertyDescription
+```
+
 #### Overview
 
-`NSAttributeDescription` inherits from [`NSPropertyDescription`](nspropertydescription.md), which provides most of the basic behavior. Instances of `NSAttributeDescription` are used to describe attributes, as distinct from relationships. The class adds the ability to specify the attribute type, and to specify a default value. In a managed object model, you must specify the type of all attributes—you can only use the undefined attribute type (`NSUndefinedAttributeType`) for transient attributes.
+`NSAttributeDescription` inherits from [`NSPropertyDescription`](./nspropertydescription.md), which provides most of the basic behavior. Instances of `NSAttributeDescription` are used to describe attributes, as distinct from relationships. The class adds the ability to specify the attribute type, and to specify a default value. In a managed object model, you must specify the type of all attributes—you can only use the undefined attribute type (`NSUndefinedAttributeType`) for transient attributes.
 
 ##### Editing Attribute Descriptions
 
@@ -33,58 +38,59 @@ Attribute descriptions are editable until they are used by an object graph manag
 ## Topics
 
 ### Managing the type
-- [var attributeValueClassName: String?](nsattributedescription/attributevalueclassname.md)
+- [var attributeValueClassName: String?](./nsattributedescription/attributevalueclassname.md)
   The class name that represents the attribute’s value.
-- [var type: NSAttributeDescription.AttributeType](nsattributedescription/type.md)
+- [var type: NSAttributeDescription.AttributeType](./nsattributedescription/type.md)
   The attribute’s type.
-- [NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct.md)
+- [NSAttributeDescription.AttributeType](./nsattributedescription/attributetype-swift.struct.md)
   The types of attributes that Core Data supports.
-- [var attributeType: NSAttributeType](nsattributedescription/attributetype-swift.property.md)
+- [var attributeType: NSAttributeType](./nsattributedescription/attributetype-swift.property.md)
   The attribute’s type.
-- [enum NSAttributeType](nsattributetype.md)
+- [enum NSAttributeType](./nsattributetype.md)
   The types of attribute that Core Data supports.
 ### Configuring the behavior
-- [var allowsCloudEncryption: Bool](nsattributedescription/allowscloudencryption.md)
+- [var allowsCloudEncryption: Bool](./nsattributedescription/allowscloudencryption.md)
   A Boolean value that determines whether to encrypt the attribute’s value.
-- [var allowsExternalBinaryDataStorage: Bool](nsattributedescription/allowsexternalbinarydatastorage.md)
+- [var allowsExternalBinaryDataStorage: Bool](./nsattributedescription/allowsexternalbinarydatastorage.md)
   A Boolean value that indicates whether the attribute allows external binary storage.
-- [var defaultValue: Any?](nsattributedescription/defaultvalue.md)
+- [var defaultValue: Any?](./nsattributedescription/defaultvalue.md)
   The default value of the attribute.
-- [var preservesValueInHistoryOnDeletion: Bool](nsattributedescription/preservesvalueinhistoryondeletion.md)
+- [var preservesValueInHistoryOnDeletion: Bool](./nsattributedescription/preservesvalueinhistoryondeletion.md)
   A Boolean value that indicates whether the attribute records its value in the persistent history transaction for a managed object’s deletion.
-- [var valueTransformerName: String?](nsattributedescription/valuetransformername.md)
+- [var valueTransformerName: String?](./nsattributedescription/valuetransformername.md)
   The name of the transformer to use for the attribute value.
 ### Getting version information
-- [var versionHash: Data](nsattributedescription/versionhash.md)
+- [var versionHash: Data](./nsattributedescription/versionhash.md)
   The version hash for the attribute.
 ### Deprecated
-- [Deprecated symbols](nsattributedescription-deprecated-symbols.md)
+- [Deprecated symbols](./nsattributedescription-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSPropertyDescription](nspropertydescription.md)
+- [NSPropertyDescription](./nspropertydescription.md)
 ### Inherited By
-- [NSCompositeAttributeDescription](nscompositeattributedescription.md)
-- [NSDerivedAttributeDescription](nsderivedattributedescription.md)
+- [NSCompositeAttributeDescription](./nscompositeattributedescription.md)
+- [NSDerivedAttributeDescription](./nsderivedattributedescription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPropertyDescription](nspropertydescription.md)
+### Standard attributes
+- [class NSPropertyDescription](./nspropertydescription.md)
   A description of a single property belonging to an entity.
-- [enum NSAttributeType](nsattributetype.md)
+- [enum NSAttributeType](./nsattributetype.md)
   The types of attribute that Core Data supports.
-- [class NSRelationshipDescription](nsrelationshipdescription.md)
+- [class NSRelationshipDescription](./nsrelationshipdescription.md)
   A description of a relationship between two entities.
 
 

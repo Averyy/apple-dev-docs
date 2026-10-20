@@ -1,7 +1,8 @@
 # itemString
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transcript of the list item, excluding the list marker.
 
@@ -21,11 +22,12 @@ var itemString: String { get }
 
 ## See Also
 
-- [var content: DocumentObservation.Container](documentobservation/container/list/item/content.md)
+### Inspecting an item
+- [var content: DocumentObservation.Container](./content.md)
   The content of the list item.
-- [var markerString: String](documentobservation/container/list/item/markerstring.md)
+- [var markerString: String](./markerstring.md)
   The list marker as a string.
-- [var markerType: DocumentObservation.Container.List.Marker?](documentobservation/container/list/item/markertype.md)
+- [var markerType: DocumentObservation.Container.List.Marker?](./markertype.md)
   The style of the list marker.
 
 

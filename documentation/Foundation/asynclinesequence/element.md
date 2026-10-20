@@ -1,7 +1,8 @@
 # AsyncLineSequence.Element
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of elements produced by this asynchronous sequence.
 
@@ -22,7 +23,7 @@ typealias Element = String
 
 #### Discussion
 
-[`AsyncLineSequence`](asynclinesequence.md) produces elements of type `String`.
+[`AsyncLineSequence`](../asynclinesequence.md) produces elements of type `String`.
 
 
 ---

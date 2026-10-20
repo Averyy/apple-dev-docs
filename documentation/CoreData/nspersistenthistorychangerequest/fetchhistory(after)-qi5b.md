@@ -1,7 +1,8 @@
 # fetchHistory(after:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves history since a given date.
 
@@ -20,13 +21,17 @@ Retrieves history since a given date.
 class func fetchHistory(after date: Date) -> Self
 ```
 
+```objc
++ (instancetype) fetchHistoryAfterDate:(NSDate *) date;
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
 #### Return Value
 
-A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](nspersistenthistorychangerequest.md)) with an initial date boundary.
+A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) with an initial date boundary.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](nspersi
 
 ## See Also
 
-- [class func fetchHistory(after: NSPersistentHistoryToken?) -> Self](nspersistenthistorychangerequest/fetchhistory(after:)-3rmfm.md)
+### Fetching History
+- [class func fetchHistory(after: NSPersistentHistoryToken?) -> Self](./fetchhistory%28after%29-3rmfm.md)
   Retrieves the request history after a given token.
-- [class func fetchHistory(after: NSPersistentHistoryTransaction?) -> Self](nspersistenthistorychangerequest/fetchhistory(after:)-9cuj5.md)
+- [class func fetchHistory(after: NSPersistentHistoryTransaction?) -> Self](./fetchhistory%28after%29-9cuj5.md)
   Retrieves history since a given transaction.
-- [class func fetchHistory(withFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](nspersistenthistorychangerequest/fetchhistory(withfetch:).md)
+- [class func fetchHistory(withFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](./fetchhistory%28withfetch%29.md)
   Retrieves history based on a fetch request.
 
 

@@ -1,7 +1,8 @@
 # pattern
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies the beginning of a haptic pattern definition.
 
@@ -19,35 +20,40 @@ A key that identifies the beginning of a haptic pattern definition.
 static let pattern: CHHapticPattern.Key
 ```
 
+```c
+extern CHHapticPatternKey CHHapticPatternKeyPattern;
+```
+
 ## See Also
 
-- [static let event: CHHapticPattern.Key](chhapticpattern/key/event.md)
+### Haptic Pattern Keys
+- [static let event: CHHapticPattern.Key](./event.md)
   A key that identifies the beginning of a haptic event definition.
-- [static let eventDuration: CHHapticPattern.Key](chhapticpattern/key/eventduration.md)
+- [static let eventDuration: CHHapticPattern.Key](./eventduration.md)
   A key that identifies the duration of an event.
-- [static let eventParameters: CHHapticPattern.Key](chhapticpattern/key/eventparameters.md)
+- [static let eventParameters: CHHapticPattern.Key](./eventparameters.md)
   A key that identifies the beginning of an array of fixed parameter definitions.
-- [static let eventType: CHHapticPattern.Key](chhapticpattern/key/eventtype.md)
+- [static let eventType: CHHapticPattern.Key](./eventtype.md)
   A key that identifies the type of event.
-- [static let eventWaveformLoopEnabled: CHHapticPattern.Key](chhapticpattern/key/eventwaveformloopenabled.md)
+- [static let eventWaveformLoopEnabled: CHHapticPattern.Key](./eventwaveformloopenabled.md)
   A key for a Boolean value that indicates whether to loop custom audio events.
-- [static let eventWaveformPath: CHHapticPattern.Key](chhapticpattern/key/eventwaveformpath.md)
+- [static let eventWaveformPath: CHHapticPattern.Key](./eventwaveformpath.md)
   A key that identifies the path to the local file that contains the audio waveform.
-- [static let eventWaveformUseVolumeEnvelope: CHHapticPattern.Key](chhapticpattern/key/eventwaveformusevolumeenvelope.md)
+- [static let eventWaveformUseVolumeEnvelope: CHHapticPattern.Key](./eventwaveformusevolumeenvelope.md)
   A key that identifies whether audio file playback fades in and out using an envelope.
-- [static let parameter: CHHapticPattern.Key](chhapticpattern/key/parameter.md)
+- [static let parameter: CHHapticPattern.Key](./parameter.md)
   A key that identifies the beginning of a parameter definition.
-- [static let parameterCurve: CHHapticPattern.Key](chhapticpattern/key/parametercurve.md)
+- [static let parameterCurve: CHHapticPattern.Key](./parametercurve.md)
   A key that identifies the beginning of a parameter curve definition.
-- [static let parameterCurveControlPoints: CHHapticPattern.Key](chhapticpattern/key/parametercurvecontrolpoints.md)
+- [static let parameterCurveControlPoints: CHHapticPattern.Key](./parametercurvecontrolpoints.md)
   A key that identifies the control points of a parameter curve.
-- [static let parameterID: CHHapticPattern.Key](chhapticpattern/key/parameterid.md)
+- [static let parameterID: CHHapticPattern.Key](./parameterid.md)
   A key that identifies the parameter ID.
-- [static let parameterValue: CHHapticPattern.Key](chhapticpattern/key/parametervalue.md)
+- [static let parameterValue: CHHapticPattern.Key](./parametervalue.md)
   A key that identifies the value of a parameter.
-- [static let time: CHHapticPattern.Key](chhapticpattern/key/time.md)
+- [static let time: CHHapticPattern.Key](./time.md)
   A key that identifies the relative time for an event or parameter, in seconds.
-- [static let version: CHHapticPattern.Key](chhapticpattern/key/version.md)
+- [static let version: CHHapticPattern.Key](./version.md)
   A key that identifies rhe version number of a haptic pattern dictionary.
 
 

@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `PDFDocument` object with the passed-in data.
 
@@ -19,6 +20,10 @@ Initializes a `PDFDocument` object with the passed-in data.
 init?(data: Data)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data;
+```
+
 #### Return Value
 
 A `PDFDocument` instance initialized with the passed-in PDF data, or `NULL` if the object could not be initialized.
@@ -29,9 +34,10 @@ The data must be PDF data encapsulated in an `NSData` object; otherwise this met
 
 ## See Also
 
-- [init?(url: URL)](pdfdocument/init(url:)-98jte.md)
+### Initializing Documents
+- [init?(url: URL)](./init%28url%29-98jte.md)
   Initializes a `PDFDocument` object with the contents at the specified URL (if the URL is invalid, this method returns `NULL`).
-- [init()](pdfdocument/init.md)
+- [init()](./init%28%29.md)
   Initializes a `PDFDocument` object.
 
 

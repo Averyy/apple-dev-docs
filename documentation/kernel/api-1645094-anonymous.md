@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,8 +18,8 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kIODisplayModeIDBootProgrammable](1645094-anonymous/kiodisplaymodeidbootprogrammable.md)
-- [kIODisplayModeIDReservedBase](1645094-anonymous/kiodisplaymodeidreservedbase.md)
+- [kIODisplayModeIDBootProgrammable](./api-1645094-anonymous/kiodisplaymodeidbootprogrammable.md)
+- [kIODisplayModeIDReservedBase](./api-1645094-anonymous/kiodisplaymodeidreservedbase.md)
 
 
 ---

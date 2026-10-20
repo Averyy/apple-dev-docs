@@ -1,7 +1,8 @@
 # ApplePayMerchantCapability
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The payment capabilities the merchant supports.
 
@@ -11,7 +12,7 @@ The payment capabilities the merchant supports.
 
 ## Declaration
 
-```swift
+```
 enum ApplePayMerchantCapability
 ```
 
@@ -28,30 +29,31 @@ Values for merchant capability are:
 ## Topics
 
 ### Enumeration Cases
-- [supports](applepaymerchantcapability/supports.md)
-- [supportsCredit](applepaymerchantcapability/supportscredit.md)
-- [supportsDebit](applepaymerchantcapability/supportsdebit.md)
-- [supportsEMV](applepaymerchantcapability/supportsemv.md)
+- [supports](./applepaymerchantcapability/supports.md)
+- [supportsCredit](./applepaymerchantcapability/supportscredit.md)
+- [supportsDebit](./applepaymerchantcapability/supportsdebit.md)
+- [supportsEMV](./applepaymerchantcapability/supportsemv.md)
 
 ## See Also
 
-- [countryCode](applepaypaymentrequest/countrycode.md)
+### Working with transaction information
+- [countryCode](./applepaypaymentrequest/countrycode.md)
   The merchant’s two-letter ISO 3166 country code.
-- [currencyCode](applepaypaymentrequest/currencycode.md)
+- [currencyCode](./applepaypaymentrequest/currencycode.md)
   The three-letter ISO 4217 currency code for the payment.
-- [merchantCapabilities](applepaypaymentrequest/merchantcapabilities.md)
+- [merchantCapabilities](./applepaypaymentrequest/merchantcapabilities.md)
   An array of the payment capabilities that the merchant supports, such as credit or debit.
-- [shippingMethods](applepaypaymentrequest/shippingmethods.md)
+- [shippingMethods](./applepaypaymentrequest/shippingmethods.md)
   The list of shipping methods available for a payment request.
-- [shippingType](applepaypaymentrequest/shippingtype.md)
+- [shippingType](./applepaypaymentrequest/shippingtype.md)
   An optional value that indicates how to ship purchased items.
-- [supportedCountries](applepaypaymentrequest/supportedcountries.md)
+- [supportedCountries](./applepaypaymentrequest/supportedcountries.md)
   A list of two-letter country codes for limiting payment to cards from specific countries or regions.
-- [supportedNetworks](applepaypaymentrequest/supportednetworks.md)
+- [supportedNetworks](./applepaypaymentrequest/supportednetworks.md)
   The payment networks the merchant supports.
-- [ApplePayShippingMethod](applepayshippingmethod.md)
+- [ApplePayShippingMethod](./applepayshippingmethod.md)
   A dictionary that describes the shipping method for delivering physical goods.
-- [ApplePayShippingType](applepayshippingtype.md)
+- [ApplePayShippingType](./applepayshippingtype.md)
   A type that indicates how to ship purchased items.
 
 

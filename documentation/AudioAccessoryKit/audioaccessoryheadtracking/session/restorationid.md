@@ -1,7 +1,8 @@
 # restorationID
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable identifier the system uses to bring this extension out of suspension when sensor traffic arrives for this accessory.
 

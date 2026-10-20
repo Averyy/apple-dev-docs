@@ -1,7 +1,8 @@
 # homeHubState
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the home hub.
 
@@ -19,9 +20,14 @@ The state of the home hub.
 var homeHubState: HMHomeHubState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) HMHomeHubState homeHubState;
+```
+
 ## See Also
 
-- [enum HMHomeHubState](hmhomehubstate.md)
+### Querying the state of a home hub
+- [enum HMHomeHubState](../hmhomehubstate.md)
   The possible states of the home hub.
 
 

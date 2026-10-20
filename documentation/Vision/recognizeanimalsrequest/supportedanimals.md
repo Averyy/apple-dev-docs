@@ -1,7 +1,8 @@
 # supportedAnimals
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of animals that the request can detect.
 
@@ -22,7 +23,8 @@ var supportedAnimals: [RecognizeAnimalsRequest.Animal] { get }
 
 ## See Also
 
-- [RecognizeAnimalsRequest.Animal](recognizeanimalsrequest/animal.md)
+### Configuring a request
+- [RecognizeAnimalsRequest.Animal](./animal.md)
   An identifier for a recognizable animal.
 
 

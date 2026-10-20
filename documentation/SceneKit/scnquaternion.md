@@ -1,18 +1,19 @@
 # SCNQuaternion
 
 **Framework**: SceneKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of a quaternion.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A representation of a quaternion.
 typealias SCNQuaternion = SCNVector4
 ```
 
+```c
+typedef SCNVector4 SCNQuaternion;
+```
+
 #### Discussion
 
 A quaternion is a mathematical construct useful for describing rotations in three-dimensional space. Although its implementation differs from that of a 4-component vector, you specify a quaternion value using the same fields as an `SCNVector4` structure.
 
-SceneKit uses unit quaternions (those whose components satisfy the equation `x*x + y*y + z*z + w*w == 1`) for the [`orientation`](scnnode/orientation.md) property of nodes.
+SceneKit uses unit quaternions (those whose components satisfy the equation `x*x + y*y + z*z + w*w == 1`) for the [`orientation`](./scnnode/orientation.md) property of nodes.
 
 ## See Also
 
-- [struct SCNMatrix4](scnmatrix4-swift.struct.md)
+### Transforms and Rotations
+- [struct SCNMatrix4](./scnmatrix4-swift.struct.md)
   A representation of a 4 x 4 matrix.
-- [typealias SCNMatrix4](scnmatrix4-swift.typealias.md)
+- [typealias SCNMatrix4](./scnmatrix4-swift.typealias.md)
   A representation of a 4 x 4 matrix.
 
 

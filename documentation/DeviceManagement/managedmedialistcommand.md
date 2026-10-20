@@ -1,7 +1,8 @@
 # ManagedMediaListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of the managed books on a device.
 
@@ -12,14 +13,14 @@ The command to get a list of the managed books on a device.
 
 ## Declaration
 
-```swift
+```
 object ManagedMediaListCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedMediaListCommand.Command](managedmedialistcommand/command-data.dictionary.md)
+- [object ManagedMediaListCommand.Command](./managedmedialistcommand/command-data.dictionary.md)
   The command to get a list of the managed books on a device.
 
 ## Properties
@@ -29,7 +30,8 @@ object ManagedMediaListCommand
 
 ## See Also
 
-- [object ManagedMediaListResponse](managedmedialistresponse.md)
+### Commands and responses
+- [object ManagedMediaListResponse](./managedmedialistresponse.md)
   A response from the device after it processes the command to get a list of the managed books on a device.
 
 

@@ -1,7 +1,8 @@
 # indexCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of indices in the mesh.
 

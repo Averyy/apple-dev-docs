@@ -1,7 +1,8 @@
 # VZMacOSVirtualMachineStartOptions
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that describes start options for macOS VMs.
 
@@ -14,50 +15,55 @@ A class that describes start options for macOS VMs.
 class VZMacOSVirtualMachineStartOptions
 ```
 
+```objc
+@interface VZMacOSVirtualMachineStartOptions : VZVirtualMachineStartOptions
+```
+
 ## Topics
 
 ### Setting recovery mode
-- [var startUpFromMacOSRecovery: Bool](vzmacosvirtualmachinestartoptions/startupfrommacosrecovery.md)
+- [var startUpFromMacOSRecovery: Bool](./vzmacosvirtualmachinestartoptions/startupfrommacosrecovery.md)
   A Boolean value that indicates whether the macOS guest should start in recovery mode.
 ### Provisioning options
-- [class VZMacGuestProvisioningOptions](vzmacguestprovisioningoptions.md)
+- [class VZMacGuestProvisioningOptions](./vzmacguestprovisioningoptions.md)
   The configuration for guest setup during macOS virtual machine startup.
-- [class VZGuestProvisioningOptions](vzguestprovisioningoptions.md)
+- [class VZGuestProvisioningOptions](./vzguestprovisioningoptions.md)
   The base class for guest provisioning options.
-- [class VZGuestMemoryMapping](vzguestmemorymapping.md)
+- [class VZGuestMemoryMapping](./vzguestmemorymapping.md)
   An object that represents a chunk of the guest operating system’s dynamic random access memory (DRAM).
 ### Instance Properties
-- [var guestProvisioningOptions: VZMacGuestProvisioningOptions?](vzmacosvirtualmachinestartoptions/guestprovisioningoptions.md)
+- [var guestProvisioningOptions: VZMacGuestProvisioningOptions?](./vzmacosvirtualmachinestartoptions/guestprovisioningoptions.md)
   A value that controls provisioning a macOS guest.
 ### Instance Methods
-- [func setGuestProvisioning(VZMacGuestProvisioningOptions?) throws](vzmacosvirtualmachinestartoptions/setguestprovisioning(_:).md)
+- [func setGuestProvisioning(VZMacGuestProvisioningOptions?) throws](./vzmacosvirtualmachinestartoptions/setguestprovisioning%28_%29.md)
   Sets guest provisioning options with validation.
 
 ## Relationships
 
 ### Inherits From
-- [VZVirtualMachineStartOptions](vzvirtualmachinestartoptions.md)
+- [VZVirtualMachineStartOptions](./vzvirtualmachinestartoptions.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtualMachineConfiguration](vzvirtualmachineconfiguration.md)
+### Platform components
+- [class VZVirtualMachineConfiguration](./vzvirtualmachineconfiguration.md)
   The environment attributes and list of devices to use during the configuration of macOS or Linux VMs.
-- [class VZMacPlatformConfiguration](vzmacplatformconfiguration.md)
+- [class VZMacPlatformConfiguration](./vzmacplatformconfiguration.md)
   The platform configuration for booting macOS on Apple silicon.
-- [class VZPlatformConfiguration](vzplatformconfiguration.md)
+- [class VZPlatformConfiguration](./vzplatformconfiguration.md)
   The base class for a platform configuration.
-- [class VZMacHardwareModel](vzmachardwaremodel.md)
+- [class VZMacHardwareModel](./vzmachardwaremodel.md)
   A specification for the hardware elements and configurations present in a particular Mac hardware model.
-- [class VZMacMachineIdentifier](vzmacmachineidentifier.md)
+- [class VZMacMachineIdentifier](./vzmacmachineidentifier.md)
   A unique identifier for a VM.
-- [class VZMacAuxiliaryStorage](vzmacauxiliarystorage.md)
+- [class VZMacAuxiliaryStorage](./vzmacauxiliarystorage.md)
   An object that contains information the boot loader needs for booting macOS as a guest operating system.
 
 

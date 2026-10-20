@@ -1,7 +1,8 @@
 # localizationCode
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localization code that specifies the HID compliant localization code.
 
@@ -16,7 +17,7 @@ var localizationCode: HIDDeviceLocalizationCode?
 
 #### Discussion
 
-The localization code can specify for which specific format the device is localized. For example, a Japanese (JIS) keyboard declares the [`HIDDeviceLocalizationCode.japan`](hiddevicelocalizationcode/japan.md) localization code.
+The localization code can specify for which specific format the device is localized. For example, a Japanese (JIS) keyboard declares the [`HIDDeviceLocalizationCode.japan`](../../hiddevicelocalizationcode/japan.md) localization code.
 
 
 ---

@@ -1,7 +1,8 @@
 # zoneConfiguration(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the zone configuration for the specified quantity type.
 
@@ -33,9 +34,10 @@ This method throws an error if the framework can’t retrieve a zone configurati
 
 ## See Also
 
-- [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md)
+### Configuring zone data
+- [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](./setcustomzoneconfiguration%28_,for%29.md)
   Overrides the preferred zone configuration with a custom zone for the current workout.
-- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutbuilder/zonegroup(for:).md)
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](./zonegroup%28for%29.md)
   Returns the current zone group for the specified quantity type.
 
 

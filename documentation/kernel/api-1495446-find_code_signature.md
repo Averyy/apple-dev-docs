@@ -1,14 +1,15 @@
 # find_code_signature
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t find_code_signature(mach_port_t task_access_port, int32_t new_pid);
 ```
 

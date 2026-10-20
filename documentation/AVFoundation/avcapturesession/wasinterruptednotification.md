@@ -1,7 +1,8 @@
 # wasInterruptedNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when it interrupts a capture session.
 
@@ -19,33 +20,38 @@ A notification the system posts when it interrupts a capture session.
 class let wasInterruptedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCaptureSessionWasInterruptedNotification;
+```
+
 #### Discussion
 
-Retrieve the underlying error from the notification’s user information dictionary using the key [`AVCaptureSessionInterruptionReasonKey`](avcapturesessioninterruptionreasonkey.md).
+Retrieve the underlying error from the notification’s user information dictionary using the key [`AVCaptureSessionInterruptionReasonKey`](../avcapturesessioninterruptionreasonkey.md).
 
 ## Topics
 
 ### User-infomation keys
-- [let AVCaptureSessionInterruptionSystemPressureStateKey: String](avcapturesessioninterruptionsystempressurestatekey.md)
+- [let AVCaptureSessionInterruptionSystemPressureStateKey: String](../avcapturesessioninterruptionsystempressurestatekey.md)
   A key to retrieve a state value that indicates the system pressure level and contributing factors that caused the interruption.
-- [let AVCaptureSessionInterruptionReasonKey: String](avcapturesessioninterruptionreasonkey.md)
-  Key to retrieve information about a capture interruption from a [`wasInterruptedNotification`](avcapturesession/wasinterruptednotification.md) user info dictionary.
-- [AVCaptureSession.InterruptionReason](avcapturesession/interruptionreason.md)
-  Constants identifying the reason a capture session was interrupted, found in an [`wasInterruptedNotification`](avcapturesession/wasinterruptednotification.md) user info dictionary.
+- [let AVCaptureSessionInterruptionReasonKey: String](../avcapturesessioninterruptionreasonkey.md)
+  Key to retrieve information about a capture interruption from a [`wasInterruptedNotification`](./wasinterruptednotification.md) user info dictionary.
+- [AVCaptureSession.InterruptionReason](./interruptionreason.md)
+  Constants identifying the reason a capture session was interrupted, found in an [`wasInterruptedNotification`](./wasinterruptednotification.md) user info dictionary.
 
 ## See Also
 
-- [var isRunning: Bool](avcapturesession/isrunning.md)
+### Observing session state
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the capture session is in a running state.
-- [var isInterrupted: Bool](avcapturesession/isinterrupted.md)
+- [var isInterrupted: Bool](./isinterrupted.md)
   A Boolean value that indicates whether the capture session is in an interrupted state.
-- [class let didStartRunningNotification: NSNotification.Name](avcapturesession/didstartrunningnotification.md)
+- [class let didStartRunningNotification: NSNotification.Name](./didstartrunningnotification.md)
   A notification the system posts when a capture session starts.
-- [class let didStopRunningNotification: NSNotification.Name](avcapturesession/didstoprunningnotification.md)
+- [class let didStopRunningNotification: NSNotification.Name](./didstoprunningnotification.md)
   A notification the system posts when a capture session stops.
-- [class let interruptionEndedNotification: NSNotification.Name](avcapturesession/interruptionendednotification.md)
+- [class let interruptionEndedNotification: NSNotification.Name](./interruptionendednotification.md)
   A notification the system posts when an interruption to a capture session finishes.
-- [class let runtimeErrorNotification: NSNotification.Name](avcapturesession/runtimeerrornotification.md)
+- [class let runtimeErrorNotification: NSNotification.Name](./runtimeerrornotification.md)
   A notification the system posts when an error occurs during a capture session.
 
 

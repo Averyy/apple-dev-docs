@@ -1,7 +1,8 @@
 # play(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays the MIDI sequence.
 
@@ -16,7 +17,15 @@ Plays the MIDI sequence.
 ## Declaration
 
 ```swift
+func play(_ completionHandler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func play() async
+```
+
+```objc
+- (void) play:(AVMIDIPlayerCompletionHandler) completionHandler;
 ```
 
 ## Parameters
@@ -26,18 +35,19 @@ func play() async
 ## Topics
 
 ### Completion handler
-- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+- [typealias AVMIDIPlayerCompletionHandler](../avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
 
 ## See Also
 
-- [func prepareToPlay()](avmidiplayer/preparetoplay.md)
+### Controlling playback
+- [func prepareToPlay()](./preparetoplay%28%29.md)
   Prepares the player to play the sequence by prerolling all events.
-- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+- [typealias AVMIDIPlayerCompletionHandler](../avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
-- [func stop()](avmidiplayer/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playing the sequence.
-- [var isPlaying: Bool](avmidiplayer/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether the sequence is playing.
 
 

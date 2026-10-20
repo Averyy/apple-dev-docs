@@ -1,7 +1,8 @@
 # extensionIdentifier
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var extensionIdentifier: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * extensionIdentifier;
 ```
 
 

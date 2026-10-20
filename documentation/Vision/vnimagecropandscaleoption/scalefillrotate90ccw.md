@@ -1,7 +1,8 @@
 # VNImageCropAndScaleOption.scaleFillRotate90CCW
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that rotates the image 90 degrees counterclockwise and then scales it to fill the input dimensions.
 
@@ -11,19 +12,24 @@ An option that rotates the image 90 degrees counterclockwise and then scales it 
 case scaleFillRotate90CCW
 ```
 
+```c
+VNImageCropAndScaleOptionScaleFillRotate90CCW
+```
+
 #### Discussion
 
 This option optimizes portrait images to fill into landscape buffers for algorithms that are rotation agnostic.
 
 ## See Also
 
-- [VNImageCropAndScaleOption.centerCrop](vnimagecropandscaleoption/centercrop.md)
+### Crop and Scale Options
+- [VNImageCropAndScaleOption.centerCrop](./centercrop.md)
   An option that scales the image to fit its shorter side within the input dimensions, while preserving its aspect ratio, and center-crops the image.
-- [VNImageCropAndScaleOption.scaleFit](vnimagecropandscaleoption/scalefit.md)
+- [VNImageCropAndScaleOption.scaleFit](./scalefit.md)
   An option that scales the image to fit its longer side within the input dimensions, while preserving its aspect ratio, and center-crops the image.
-- [VNImageCropAndScaleOption.scaleFill](vnimagecropandscaleoption/scalefill.md)
+- [VNImageCropAndScaleOption.scaleFill](./scalefill.md)
   An option that scales the image to fill the input dimensions, resizing it if necessary.
-- [VNImageCropAndScaleOption.scaleFitRotate90CCW](vnimagecropandscaleoption/scalefitrotate90ccw.md)
+- [VNImageCropAndScaleOption.scaleFitRotate90CCW](./scalefitrotate90ccw.md)
   An option that rotates the image 90 degrees counterclockwise and then scales it, while preserving its aspect ratio, to fit on the long side.
 
 

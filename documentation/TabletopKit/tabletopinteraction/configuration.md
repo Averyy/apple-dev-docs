@@ -1,7 +1,8 @@
 # TabletopInteraction.Configuration
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 2.2+
@@ -15,32 +16,33 @@ struct Configuration
 ## Topics
 
 ### Creating a configuration
-- [init()](tabletopinteraction/configuration/init.md)
-- [init(allowedDestinations: TabletopInteraction.AllowedDestinations)](tabletopinteraction/configuration/init(alloweddestinations:).md)
-- [init(allowedDestinations: TabletopInteraction.AllowedDestinations, hoverAlignment: TabletopInteraction.HoverAlignmentBehavior)](tabletopinteraction/configuration/init(alloweddestinations:hoveralignment:).md)
+- [init()](./configuration/init%28%29.md)
+- [init(allowedDestinations: TabletopInteraction.AllowedDestinations)](./configuration/init%28alloweddestinations%29.md)
+- [init(allowedDestinations: TabletopInteraction.AllowedDestinations, hoverAlignment: TabletopInteraction.HoverAlignmentBehavior)](./configuration/init%28alloweddestinations,hoveralignment%29.md)
 ### Getting the allowed destinations
-- [var allowedDestinations: TabletopInteraction.AllowedDestinations](tabletopinteraction/configuration/alloweddestinations.md)
+- [var allowedDestinations: TabletopInteraction.AllowedDestinations](./configuration/alloweddestinations.md)
   The set of equipment that are allowed to be proposed as potential parents of the one being controlled.
 ### Getting the hover alignment
-- [var hoverAlignment: TabletopInteraction.HoverAlignmentBehavior](tabletopinteraction/configuration/hoveralignment.md)
+- [var hoverAlignment: TabletopInteraction.HoverAlignmentBehavior](./configuration/hoveralignment.md)
   Hover alignment describes how the equipment should behave when hovering a target.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
+### Managing the interaction destination
+- [func setConfiguration(TabletopInteraction.Configuration)](./setconfiguration%28_%29.md)
   Sets the configuration of this interaction.
-- [TabletopInteraction.AllowedDestinations](tabletopinteraction/alloweddestinations.md)
+- [TabletopInteraction.AllowedDestinations](./alloweddestinations.md)
   The possible destinations of equipment in an interaction.
-- [TabletopInteraction.Destination](tabletopinteraction/destination.md)
+- [TabletopInteraction.Destination](./destination.md)
   An object that represents the destination position and orientation of equipment in an interaction.
-- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
+- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](./setalloweddestinations%28_%29.md)
   Sets which equipment the interaction can target.
 
 

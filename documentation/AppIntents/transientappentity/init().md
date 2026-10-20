@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Transient entities must be initializable so they can be initialized and populated by the system.
@@ -12,7 +13,7 @@ Transient entities must be initializable so they can be initialized and populate
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

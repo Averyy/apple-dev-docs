@@ -1,7 +1,8 @@
 # scale(_:toDuration:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the duration of a time range in a movie.
 
@@ -19,6 +20,10 @@ Changes the duration of a time range in a movie.
 func scale(_ timeRange: CMTimeRange, toDuration duration: CMTime)
 ```
 
+```objc
+- (void) scaleTimeRange:(CMTimeRange) timeRange toDuration:(CMTime) duration;
+```
+
 ## Parameters
 
 - `timeRange`: The time range to be changed.
@@ -26,11 +31,12 @@ func scale(_ timeRange: CMTimeRange, toDuration duration: CMTime)
 
 ## See Also
 
-- [func insertEmptyTimeRange(CMTimeRange)](avmutablemovie/insertemptytimerange(_:).md)
+### Managing time ranges
+- [func insertEmptyTimeRange(CMTimeRange)](./insertemptytimerange%28_%29.md)
   Adds an empty time range to a movie.
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, copySampleData: Bool) throws](avmutablemovie/inserttimerange(_:of:at:copysampledata:).md)
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, copySampleData: Bool) throws](./inserttimerange%28_,of,at,copysampledata%29.md)
   Inserts all of the tracks in a specified time range of an asset into a movie.
-- [func removeTimeRange(CMTimeRange)](avmutablemovie/removetimerange(_:).md)
+- [func removeTimeRange(CMTimeRange)](./removetimerange%28_%29.md)
   Removes the specified time range from a movie.
 
 

@@ -1,7 +1,8 @@
 # addNode(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a node to the graph and returns its name.
 
@@ -24,7 +25,7 @@ The name used to reference this node in subsequent calls.
 
 #### Discussion
 
-> **Note**: If the node is invalid for this graph.
+> **Throws**: If the node is invalid for this graph.
 
 
 ---

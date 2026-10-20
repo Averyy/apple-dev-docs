@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var mmInternalError: Int](mminternalerror.md)
+- [var mmInternalError: Int](../../mminternalerror.md)
 
 
 ---

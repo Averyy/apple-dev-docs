@@ -1,14 +1,15 @@
 # setHardwareAssists
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 22.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setHardwareAssists(uint32_t hardwareAssists, uint32_t hardwareAssistsMask);
 ```
 

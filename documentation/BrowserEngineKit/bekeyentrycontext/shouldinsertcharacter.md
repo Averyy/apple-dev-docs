@@ -1,7 +1,8 @@
 # shouldInsertCharacter
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents whether a character should be inserted.
 
@@ -17,11 +18,16 @@ Represents whether a character should be inserted.
 var shouldInsertCharacter: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL shouldInsertCharacter;
+```
+
 ## See Also
 
-- [var keyEntry: BEKeyEntry](bekeyentrycontext/keyentry.md)
+### Getting the information about the key event
+- [var keyEntry: BEKeyEntry](./keyentry.md)
   BEKeyEntry for which this context is representing.
-- [var shouldEvaluateForInputSystemHandling: Bool](bekeyentrycontext/shouldevaluateforinputsystemhandling.md)
+- [var shouldEvaluateForInputSystemHandling: Bool](./shouldevaluateforinputsystemhandling.md)
   Represents whether the key event should be evaluated within the context of a composed input mode.
 
 

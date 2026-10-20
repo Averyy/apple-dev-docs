@@ -1,7 +1,8 @@
 # depthStencilAttachmentTextureUsage
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture usage characteristics that the view uses when creating the depth and stencil textures.
 
@@ -19,17 +20,22 @@ The texture usage characteristics that the view uses when creating the depth and
 var depthStencilAttachmentTextureUsage: MTLTextureUsage { get set }
 ```
 
+```objc
+@property (nonatomic) MTLTextureUsage depthStencilAttachmentTextureUsage;
+```
+
 #### Discussion
 
-The default value is [`renderTarget`](https://developer.apple.com/documentation/metal/mtltextureusage/rendertarget).
+The default value is [`renderTarget`](../../Metal/mtltextureusage/rendertarget.md).
 
 ## See Also
 
-- [var depthStencilPixelFormat: MTLPixelFormat](mtkview/depthstencilpixelformat.md)
-  The format used to generate the [`depthStencilTexture`](mtkview/depthstenciltexture.md) object.
-- [var clearDepth: Double](mtkview/cleardepth.md)
+### Configuring the Render Target Properties
+- [var depthStencilPixelFormat: MTLPixelFormat](./depthstencilpixelformat.md)
+  The format used to generate the [`depthStencilTexture`](./depthstenciltexture.md) object.
+- [var clearDepth: Double](./cleardepth.md)
   The depth value to use to clear the depth target when creating a render pass descriptor.
-- [var clearStencil: UInt32](mtkview/clearstencil.md)
+- [var clearStencil: UInt32](./clearstencil.md)
   The stencil value to use to clear the stencil target when creating a render pass descriptor.
 
 

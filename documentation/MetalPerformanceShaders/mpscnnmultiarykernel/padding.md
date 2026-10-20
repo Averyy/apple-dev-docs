@@ -1,7 +1,8 @@
 # padding
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var padding: any MPSNNPadding { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nonnull) id<MPSNNPadding> padding;
 ```
 
 

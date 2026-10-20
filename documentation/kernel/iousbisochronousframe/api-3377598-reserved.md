@@ -1,7 +1,8 @@
 # reserved
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved for future use.
 
@@ -10,19 +11,20 @@ Reserved for future use.
 
 ## Declaration
 
-```swift
+```c
 uint32_t reserved;
 ```
 
 ## See Also
 
-- [status](iousbisochronousframe/3294856-status.md)
+### Getting the Frame Properties
+- [status](./api-3294856-status.md)
   The completion status for this individual frame.
-- [requestCount](iousbisochronousframe/3294855-requestcount.md)
+- [requestCount](./api-3294855-requestcount.md)
   The number of bytes to transfer for this frame.
-- [completeCount](iousbisochronousframe/3294854-completecount.md)
+- [completeCount](./api-3294854-completecount.md)
   The number of bytes that the system actually transferred for this frame.
-- [timeStamp](iousbisochronousframe/3294857-timestamp.md)
+- [timeStamp](./api-3294857-timestamp.md)
   The frame’s observed completion time.
 
 

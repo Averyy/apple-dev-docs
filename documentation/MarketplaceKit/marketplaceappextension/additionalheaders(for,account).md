@@ -2,6 +2,7 @@
 
 **Framework**: MarketplaceKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds information to the request header for communications from the operating system to your marketplace endpoints.
@@ -18,14 +19,14 @@ func additionalHeaders(for request: URLRequest, account: String) async -> [Strin
 
 ## Mentions
 
-- [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
+- [Reauthenticating a person to manage apps](../reauthenticating-a-person-to-manage-apps.md)
+- [Installing apps from an alternative marketplace](../installing-apps-from-an-alternative-marketplace.md)
 
 #### Discussion
 
-The operating system invokes your implementation of this callback before sending a request to your marketplace endpoints. In this method, use [`addValue(_:forHTTPHeaderField:)`](https://developer.apple.com/documentation/foundation/urlrequest/addvalue(_:forhttpheaderfield:)) to add to the header. The additions detail information that your marketplace server needs to authorize the request.
+The operating system invokes your implementation of this callback before sending a request to your marketplace endpoints. In this method, use [`addValue(_:forHTTPHeaderField:)`](../../Foundation/urlrequest/addvalue%28_,forhttpheaderfield%29.md) to add to the header. The additions detail information that your marketplace server needs to authorize the request.
 
-For more information, see [`Installing apps from an alternative marketplace`](installing-apps-from-an-alternative-marketplace.md).
+For more information, see [Installing apps from an alternative marketplace](../installing-apps-from-an-alternative-marketplace.md).
 
 ## Parameters
 

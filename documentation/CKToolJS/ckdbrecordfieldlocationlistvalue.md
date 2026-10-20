@@ -1,7 +1,8 @@
 # CKDBRecordFieldLocationListValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the field of type location list.
 
@@ -10,7 +11,7 @@ The value of the field of type location list.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldLocationListValue {
 	string type;
 	CKDBLocation[]? value;
@@ -30,18 +31,19 @@ import type { CKDBRecordFieldLocationListValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldlocationlistvalue/type.md)
+- [type](./ckdbrecordfieldlocationlistvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldlocationlistvalue/value.md)
+- [value](./ckdbrecordfieldlocationlistvalue/value.md)
   An array of values, each containing a location coordinates.
 
 ## See Also
 
-- [CKDBRecordFieldLocationValue](ckdbrecordfieldlocationvalue.md)
+### Locations
+- [CKDBRecordFieldLocationValue](./ckdbrecordfieldlocationvalue.md)
   The value of the field of type location.
-- [CKDBRecordFieldEncryptedLocationValue](ckdbrecordfieldencryptedlocationvalue.md)
+- [CKDBRecordFieldEncryptedLocationValue](./ckdbrecordfieldencryptedlocationvalue.md)
   The value of the encrypted field of type location.
-- [CKDBRecordFieldEncryptedLocationListValue](ckdbrecordfieldencryptedlocationlistvalue.md)
+- [CKDBRecordFieldEncryptedLocationListValue](./ckdbrecordfieldencryptedlocationlistvalue.md)
   The value of the encrypted field of type location list.
 
 

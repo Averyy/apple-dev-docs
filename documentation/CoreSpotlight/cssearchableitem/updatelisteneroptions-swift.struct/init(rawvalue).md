@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 An unsigned integer that describes the listener options.
 

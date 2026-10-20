@@ -1,7 +1,8 @@
 # MLHandActionClassifier.ModelParameters.ValidationData.dataSource(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a validation dataset from a data source.
 
@@ -20,13 +21,14 @@ case dataSource(MLHandActionClassifier.DataSource)
 
 #### Discussion
 
-- dataSource: An [`MLHandActionClassifier.DataSource`](mlhandactionclassifier/datasource.md) instance.
+- dataSource: An [`MLHandActionClassifier.DataSource`](../../datasource.md) instance.
 
 ## See Also
 
-- [MLHandActionClassifier.ModelParameters.ValidationData.split(strategy:)](mlhandactionclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+### Designating validation data
+- [MLHandActionClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   Creates a validation dataset by randomly selecting a portion of the hand action classifier task’s training dataset with a split strategy.
-- [MLHandActionClassifier.ModelParameters.ValidationData.none](mlhandactionclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLHandActionClassifier.ModelParameters.ValidationData.none](./none.md)
   Creates an empty validation dataset, which tells the task to skip the model validation phase in a training session.
 
 

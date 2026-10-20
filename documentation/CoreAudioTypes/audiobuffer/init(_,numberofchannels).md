@@ -1,7 +1,8 @@
 # init(_:numberOfChannels:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an `AudioBuffer` from an `UnsafeMutableBufferPointer<Element>`.
 

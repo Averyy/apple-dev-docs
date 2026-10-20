@@ -1,7 +1,8 @@
 # RCSService.GroupChatEvent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing an RCS group chat event.
 
@@ -17,59 +18,60 @@ enum GroupChatEvent
 ## Topics
 
 ### Chat life cycle events
-- [case started(RCSService.GroupChatStartedEvent)](rcsservice/groupchatevent/started(_:).md)
+- [case started(RCSService.GroupChatStartedEvent)](./groupchatevent/started%28_%29.md)
   Group chat started.
-- [RCSService.GroupChatStartedEvent](rcsservice/groupchatstartedevent.md)
+- [RCSService.GroupChatStartedEvent](./groupchatstartedevent.md)
   Event triggered when group chat is started.
-- [case ended(RCSService.GroupChatEndedEvent)](rcsservice/groupchatevent/ended(_:).md)
+- [case ended(RCSService.GroupChatEndedEvent)](./groupchatevent/ended%28_%29.md)
   Group chat ended.
-- [RCSService.GroupChatEndedEvent](rcsservice/groupchatendedevent.md)
+- [RCSService.GroupChatEndedEvent](./groupchatendedevent.md)
   Event triggered when a group chat is ended.
-- [case subjectUpdated(RCSService.GroupChatSubjectUpdatedEvent)](rcsservice/groupchatevent/subjectupdated(_:).md)
+- [case subjectUpdated(RCSService.GroupChatSubjectUpdatedEvent)](./groupchatevent/subjectupdated%28_%29.md)
   Group chat’s subject was updated.
-- [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
+- [RCSService.GroupChatSubjectUpdatedEvent](./groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
 ### Participant events
-- [case participantsAdded(RCSService.GroupChatParticipantsAddedEvent)](rcsservice/groupchatevent/participantsadded(_:).md)
+- [case participantsAdded(RCSService.GroupChatParticipantsAddedEvent)](./groupchatevent/participantsadded%28_%29.md)
   Participants have been added to a group chat.
-- [RCSService.GroupChatParticipantsAddedEvent](rcsservice/groupchatparticipantsaddedevent.md)
+- [RCSService.GroupChatParticipantsAddedEvent](./groupchatparticipantsaddedevent.md)
   Event triggered when participants are added to a group.
-- [case participantsRemoved(RCSService.GroupChatParticipantsRemovedEvent)](rcsservice/groupchatevent/participantsremoved(_:).md)
+- [case participantsRemoved(RCSService.GroupChatParticipantsRemovedEvent)](./groupchatevent/participantsremoved%28_%29.md)
   Participants have been removed from a group chat.
-- [RCSService.GroupChatParticipantsRemovedEvent](rcsservice/groupchatparticipantsremovedevent.md)
+- [RCSService.GroupChatParticipantsRemovedEvent](./groupchatparticipantsremovedevent.md)
   Event triggered when participants are removed from a group.
 ### Enumeration Cases
-- [case subjectInvalidated(RCSService.GroupChatSubjectInvalidatedEvent)](rcsservice/groupchatevent/subjectinvalidated(_:).md)
+- [case subjectInvalidated(RCSService.GroupChatSubjectInvalidatedEvent)](./groupchatevent/subjectinvalidated%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func createGroupChat(RCSService.CreateGroupChatRequest) async throws -> RCSService.CreateGroupChatRequest.Result](rcsservice/creategroupchat(_:).md)
+### Managing group chats
+- [func createGroupChat(RCSService.CreateGroupChatRequest) async throws -> RCSService.CreateGroupChatRequest.Result](./creategroupchat%28_%29.md)
   Creates a group with a list of participants and a specified subject.
-- [RCSService.CreateGroupChatRequest](rcsservice/creategroupchatrequest.md)
+- [RCSService.CreateGroupChatRequest](./creategroupchatrequest.md)
   Structure representing a request for creating a group chat.
-- [func leaveGroupChat(RCSService.LeaveGroupChatRequest) async throws](rcsservice/leavegroupchat(_:).md)
+- [func leaveGroupChat(RCSService.LeaveGroupChatRequest) async throws](./leavegroupchat%28_%29.md)
   Leave a group chat.
-- [RCSService.LeaveGroupChatRequest](rcsservice/leavegroupchatrequest.md)
+- [RCSService.LeaveGroupChatRequest](./leavegroupchatrequest.md)
   Structure representing a request to leave a group chat.
-- [func addGroupChatParticipants(RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result](rcsservice/addgroupchatparticipants(_:).md)
+- [func addGroupChatParticipants(RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result](./addgroupchatparticipants%28_%29.md)
   Adds participants to a group chat.
-- [RCSService.AddGroupChatParticipantsRequest](rcsservice/addgroupchatparticipantsrequest.md)
+- [RCSService.AddGroupChatParticipantsRequest](./addgroupchatparticipantsrequest.md)
   Structure representing a request for adding participants to a group chat.
-- [func removeGroupChatParticipants(RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result](rcsservice/removegroupchatparticipants(_:).md)
+- [func removeGroupChatParticipants(RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result](./removegroupchatparticipants%28_%29.md)
   Removes participants from a group chat.
-- [RCSService.RemoveGroupChatParticipantsRequest](rcsservice/removegroupchatparticipantsrequest.md)
+- [RCSService.RemoveGroupChatParticipantsRequest](./removegroupchatparticipantsrequest.md)
   Structure representing a request for removing participants from a group chat.
-- [func changeGroupChatSubject(RCSService.ChangeGroupChatSubjectRequest) async throws](rcsservice/changegroupchatsubject(_:).md)
+- [func changeGroupChatSubject(RCSService.ChangeGroupChatSubjectRequest) async throws](./changegroupchatsubject%28_%29.md)
   Changes subject of a group.
-- [RCSService.ChangeGroupChatSubjectRequest](rcsservice/changegroupchatsubjectrequest.md)
+- [RCSService.ChangeGroupChatSubjectRequest](./changegroupchatsubjectrequest.md)
   Structure representing a request for changing a group chat’s subject.
-- [var groupChatEvents: some AsyncSequence<RCSService.GroupChatEvent, Never>](rcsservice/groupchatevents.md)
+- [var groupChatEvents: some AsyncSequence<RCSService.GroupChatEvent, Never>](./groupchatevents.md)
   Returns an asynchronous sequence of incoming group chat notifications produced by this service.
 
 

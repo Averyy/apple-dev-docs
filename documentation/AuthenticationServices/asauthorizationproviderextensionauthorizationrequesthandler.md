@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionAuthorizationRequestHandler
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface through which a single sign-on (SSO) authentication provider extension handles authentication requests.
 
@@ -19,30 +20,35 @@ An interface through which a single sign-on (SSO) authentication provider extens
 protocol ASAuthorizationProviderExtensionAuthorizationRequestHandler : NSObjectProtocol
 ```
 
+```objc
+@protocol ASAuthorizationProviderExtensionAuthorizationRequestHandler <NSObject>
+```
+
 ## Topics
 
 ### Starting or Canceling a Request
-- [func beginAuthorization(with: ASAuthorizationProviderExtensionAuthorizationRequest)](asauthorizationproviderextensionauthorizationrequesthandler/beginauthorization(with:).md)
+- [func beginAuthorization(with: ASAuthorizationProviderExtensionAuthorizationRequest)](./asauthorizationproviderextensionauthorizationrequesthandler/beginauthorization%28with%29.md)
   Tells your request handler to authorize the given request.
-- [func cancelAuthorization(with: ASAuthorizationProviderExtensionAuthorizationRequest)](asauthorizationproviderextensionauthorizationrequesthandler/cancelauthorization(with:).md)
+- [func cancelAuthorization(with: ASAuthorizationProviderExtensionAuthorizationRequest)](./asauthorizationproviderextensionauthorizationrequesthandler/cancelauthorization%28with%29.md)
   Tells your request handler to cancel the authorization of the given request.
-- [class ASAuthorizationProviderExtensionAuthorizationRequest](asauthorizationproviderextensionauthorizationrequest.md)
+- [class ASAuthorizationProviderExtensionAuthorizationRequest](./asauthorizationproviderextensionauthorizationrequest.md)
   An authorization request that your provider extension handles.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ASAuthorizationSingleSignOnProvider](asauthorizationsinglesignonprovider.md)
+### Performing enterprise single sign-on
+- [class ASAuthorizationSingleSignOnProvider](./asauthorizationsinglesignonprovider.md)
   A mechanism for generating requests to authenticate users with third-party providers.
-- [class ASAuthorizationSingleSignOnCredential](asauthorizationsinglesignoncredential.md)
+- [class ASAuthorizationSingleSignOnCredential](./asauthorizationsinglesignoncredential.md)
   A credential that results from a successful single sign-on (SSO) authentication.
-- [class ASAuthorizationProviderExtensionAuthorizationResult](asauthorizationproviderextensionauthorizationresult.md)
+- [class ASAuthorizationProviderExtensionAuthorizationResult](./asauthorizationproviderextensionauthorizationresult.md)
   The result of an authorization request.
-- [ASAuthorizationController.RequestOptions](asauthorizationcontroller/requestoptions.md)
+- [ASAuthorizationController.RequestOptions](./asauthorizationcontroller/requestoptions.md)
   Options that modify how a controller performs authorization requests.
 
 

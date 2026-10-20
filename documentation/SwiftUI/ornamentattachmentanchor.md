@@ -1,7 +1,8 @@
 # OrnamentAttachmentAnchor
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An attachment anchor for an ornament.
 
@@ -17,21 +18,22 @@ struct OrnamentAttachmentAnchor
 ## Topics
 
 ### Getting an anchor
-- [static scene(_:)](ornamentattachmentanchor/scene(_:).md)
+- [static scene(_:)](./ornamentattachmentanchor/scene%28_%29.md)
   The anchor point for the ornament expressed as a unit point relative to the scene.
 ### Type Methods
-- [static func parent(UnitPoint3D) -> OrnamentAttachmentAnchor](ornamentattachmentanchor/parent(_:).md)
+- [static func parent(UnitPoint3D) -> OrnamentAttachmentAnchor](./ornamentattachmentanchor/parent%28_%29.md)
   The anchor point for the ornament expressed as a 3D unit point relative to its parent.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+### Creating an ornament
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](./view/ornament%28visibility,attachmentanchor,contentalignment,ornament%29.md)
   Presents an ornament.
 
 

@@ -1,7 +1,8 @@
 # numPoints
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of vertices in the path.
 
@@ -19,17 +20,22 @@ The number of vertices in the path.
 var numPoints: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger numPoints;
+```
+
 #### Discussion
 
-You define a path’s vertices when creating it, either directly with the [`initWithPoints:count:radius:cyclical:`](gkpath/initwithpoints:count:radius:cyclical:.md) initializer or indirectly with the [`init(graphNodes:radius:)`](gkpath/init(graphnodes:radius:).md) initializer.
+You define a path’s vertices when creating it, either directly with the [`initWithPoints:count:radius:cyclical:`](./initwithpoints_count_radius_cyclical_.md) initializer or indirectly with the [`init(graphNodes:radius:)`](./init%28graphnodes,radius%29.md) initializer.
 
 ## See Also
 
-- [func float2(at: Int) -> vector_float2](gkpath/float2(at:).md)
+### Inspecting a Path’s Shape
+- [func float2(at: Int) -> vector_float2](./float2%28at%29.md)
   Returns the 2D point at the specified index in the path’s list of vertices.
-- [func float3(at: Int) -> vector_float3](gkpath/float3(at:).md)
+- [func float3(at: Int) -> vector_float3](./float3%28at%29.md)
   Returns the 3D point at the specified index in the path’s list of vertices.
-- [func point(at: Int) -> vector_float2](gkpath/point(at:).md)
+- [func point(at: Int) -> vector_float2](./point%28at%29.md)
   Returns the 2D point at the specified index in the path’s list of vertices.
 
 

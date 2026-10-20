@@ -1,7 +1,8 @@
 # KEM.Errors.invalidSeed
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The seed value supplied for deriving a key isn’t valid.
 

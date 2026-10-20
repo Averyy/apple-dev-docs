@@ -1,7 +1,8 @@
 # CKContainer.Application
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A collection of types for app permissions.
 
@@ -11,7 +12,7 @@ A collection of types for app permissions.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -24,24 +25,25 @@ enum Application
 ## Topics
 
 ### Container Application Types
-- [CKContainer.Application.Permissions](ckcontainer/application/permissions.md)
+- [CKContainer.Application.Permissions](./application/permissions.md)
   A type that represents the permissions that a user grants.
-- [CKContainer.Application.PermissionBlock](ckcontainer/application/permissionblock.md)
+- [CKContainer.Application.PermissionBlock](./application/permissionblock.md)
   A type that represents a handler that processes the outcome of a permission’s request.
-- [CKContainer.Application.PermissionStatus](ckcontainer/application/permissionstatus.md)
+- [CKContainer.Application.PermissionStatus](./application/permissionstatus.md)
   A type that represents the status of a permission.
 
 ## See Also
 
-- [func requestApplicationPermission(CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](ckcontainer/requestapplicationpermission(_:completionhandler:).md)
+### Requesting and Determining App Permissions
+- [func requestApplicationPermission(CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](./requestapplicationpermission%28_,completionhandler%29.md)
   Prompts the user to authorize the specified permission.
-- [func status(forApplicationPermission: CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](ckcontainer/status(forapplicationpermission:completionhandler:).md)
+- [func status(forApplicationPermission: CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](./status%28forapplicationpermission,completionhandler%29.md)
   Determines the authorization status of the specified permission.
-- [CKContainer.ApplicationPermissions](ckcontainer/applicationpermissions.md)
+- [CKContainer.ApplicationPermissions](./applicationpermissions.md)
   Constants that represent the permissions that a user grants.
-- [CKContainer.ApplicationPermissionBlock](ckcontainer/applicationpermissionblock.md)
+- [CKContainer.ApplicationPermissionBlock](./applicationpermissionblock.md)
   A closure that processes the outcome of a permissions request.
-- [CKContainer.ApplicationPermissionStatus](ckcontainer/applicationpermissionstatus.md)
+- [CKContainer.ApplicationPermissionStatus](./applicationpermissionstatus.md)
   Constants that represent the status of a permission.
 
 

@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.ScheduleType.asNeeded
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person logged this dose event ad-hoc, outside of any scheduled reminder.
 
@@ -17,6 +18,10 @@ The person logged this dose event ad-hoc, outside of any scheduled reminder.
 
 ```swift
 case asNeeded
+```
+
+```c
+HKMedicationDoseEventScheduleTypeAsNeeded
 ```
 
 

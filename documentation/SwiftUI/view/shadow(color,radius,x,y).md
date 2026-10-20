@@ -1,7 +1,8 @@
 # shadow(color:radius:x:y:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a shadow to this view.
 
@@ -59,9 +60,9 @@ struct Shadow: View {
 }
 ```
 
-![A three by three grid of blue boxes with shadows.](/images/com.apple.SwiftUI/View-shadow-1-iOS@2x.png)
+![A three by three grid of blue boxes with shadows.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-shadow-1-iOS@2x.png)
 
-The example above uses [`primary`](color/primary.md) as the color to make the shadow easy to see for the purpose of illustration. In practice, you might prefer something more subtle, like [`gray`](color/gray.md). If you don’t specify a color, the method uses a semi-transparent black.
+The example above uses [`primary`](../color/primary.md) as the color to make the shadow easy to see for the purpose of illustration. In practice, you might prefer something more subtle, like [`gray`](../color/gray.md). If you don’t specify a color, the method uses a semi-transparent black.
 
 ## Parameters
 
@@ -72,9 +73,10 @@ The example above uses [`primary`](color/primary.md) as the color to make the sh
 
 ## See Also
 
-- [func blur(radius: CGFloat, opaque: Bool) -> some View](view/blur(radius:opaque:).md)
+### Applying blur and shadows
+- [func blur(radius: CGFloat, opaque: Bool) -> some View](./blur%28radius,opaque%29.md)
   Applies a Gaussian blur to this view.
-- [struct ColorMatrix](colormatrix.md)
+- [struct ColorMatrix](../colormatrix.md)
   A matrix to use in an RGBA color transformation.
 
 

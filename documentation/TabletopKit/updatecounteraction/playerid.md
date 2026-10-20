@@ -1,7 +1,8 @@
 # playerID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the player who is updating the counter.
 

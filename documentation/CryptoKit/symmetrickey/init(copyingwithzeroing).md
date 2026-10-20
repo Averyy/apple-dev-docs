@@ -1,7 +1,8 @@
 # init(copyingWithZeroing:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a key from the given data, zeroing out the bytes afterward.
 

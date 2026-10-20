@@ -1,7 +1,8 @@
 # SecProtocolType.telnetS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates Telnet over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates Telnet over TLS/SSL.
 
 ```swift
 case telnetS
+```
+
+```c
+kSecProtocolTypeTelnetS
 ```
 
 

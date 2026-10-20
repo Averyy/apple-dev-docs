@@ -1,7 +1,8 @@
 # transformationMatrix
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform for placing and orienting the instance in the scene.
 
@@ -17,6 +18,10 @@ The transform for placing and orienting the instance in the scene.
 
 ```swift
 var transformationMatrix: MTLPackedFloat4x3
+```
+
+```c
+MTLPackedFloat4x3 transformationMatrix;
 ```
 
 

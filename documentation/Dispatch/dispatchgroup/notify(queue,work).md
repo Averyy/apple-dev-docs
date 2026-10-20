@@ -1,7 +1,8 @@
 # notify(queue:work:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the submission of a block to a queue when all tasks in the current group have finished executing.
 
@@ -10,9 +11,9 @@ Schedules the submission of a block to a queue when all tasks in the current gro
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ This function schedules a notification block to be submitted to the specified qu
 
 ## See Also
 
-- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](dispatchgroup/notify(qos:flags:queue:execute:).md)
+### Adding a Completion Handler
+- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](./notify%28qos,flags,queue,execute%29.md)
   Schedules the submission of a block with the specified attributes to a queue when all tasks in the current group have finished executing.
 
 

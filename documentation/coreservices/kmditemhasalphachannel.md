@@ -1,7 +1,8 @@
 # kMDItemHasAlphaChannel
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates if this image file has an alpha channel.  A CFBoolean.
 
@@ -12,6 +13,10 @@ Indicates if this image file has an alpha channel.  A CFBoolean.
 
 ```swift
 let kMDItemHasAlphaChannel: CFString!
+```
+
+```c
+const CFStringRef kMDItemHasAlphaChannel;
 ```
 
 

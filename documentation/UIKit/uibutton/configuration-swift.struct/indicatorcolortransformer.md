@@ -1,7 +1,8 @@
 # indicatorColorTransformer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color transformer for resolving the indicator color.
 
@@ -10,7 +11,7 @@ The color transformer for resolving the indicator color.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var indicatorColorTransformer: UIConfigurationColorTransformer? { get set }
 
 #### Discussion
 
-Use this color transformer to set a custom color for [`indicator`](uibuttonconfiguration/indicator.md). For example, the following code uses a grayscale color for the indicator instead of the default color.
+Use this color transformer to set a custom color for [`indicator`](../../uibuttonconfiguration/indicator.md). For example, the following code uses a grayscale color for the indicator instead of the default color.
 
 ```swift
 var config = UIButton.Configuration.filled()
@@ -29,9 +30,10 @@ config.indicatorColorTransformer = UIConfigurationColorTransformer.grayscale
 
 ## See Also
 
-- [var indicator: UIButton.Configuration.Indicator](uibutton/configuration-swift.struct/indicator-swift.property.md)
+### Configuring the indicator
+- [var indicator: UIButton.Configuration.Indicator](./indicator-swift.property.md)
   The style of the indicator that appears on the button.
-- [UIButton.Configuration.Indicator](uibutton/configuration-swift.struct/indicator-swift.enum.md)
+- [UIButton.Configuration.Indicator](./indicator-swift.enum.md)
   Constants that determine the style of the indicator that appears on a button.
 
 

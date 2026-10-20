@@ -1,7 +1,8 @@
 # setConfiguration(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the configuration of this interaction.
 
@@ -16,12 +17,13 @@ func setConfiguration(_ configuration: TabletopInteraction.Configuration)
 
 ## See Also
 
-- [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
-- [TabletopInteraction.AllowedDestinations](tabletopinteraction/alloweddestinations.md)
+### Managing the interaction destination
+- [TabletopInteraction.Configuration](./configuration.md)
+- [TabletopInteraction.AllowedDestinations](./alloweddestinations.md)
   The possible destinations of equipment in an interaction.
-- [TabletopInteraction.Destination](tabletopinteraction/destination.md)
+- [TabletopInteraction.Destination](./destination.md)
   An object that represents the destination position and orientation of equipment in an interaction.
-- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
+- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](./setalloweddestinations%28_%29.md)
   Sets which equipment the interaction can target.
 
 

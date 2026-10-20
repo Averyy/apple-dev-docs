@@ -1,7 +1,8 @@
 # UIMenuElement.ImageVisibility.visible
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element prefers its image to be visible, even in contexts where images are not shown by default.
 
@@ -16,6 +17,10 @@ The element prefers its image to be visible, even in contexts where images are n
 
 ```swift
 case visible
+```
+
+```c
+UIMenuElementImageVisibilityVisible
 ```
 
 

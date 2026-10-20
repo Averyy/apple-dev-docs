@@ -1,14 +1,15 @@
 # debug_header_entry
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void *debug_header_entry;
 ```
 

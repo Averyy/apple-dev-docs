@@ -1,7 +1,8 @@
 # NSRelationshipDescription
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a relationship between two entities.
 
@@ -10,7 +11,7 @@ A description of a relationship between two entities.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,63 +21,68 @@ A description of a relationship between two entities.
 class NSRelationshipDescription
 ```
 
+```objc
+@interface NSRelationshipDescription : NSPropertyDescription
+```
+
 #### Overview
 
-[`NSRelationshipDescription`](nsrelationshipdescription.md) provides additional attributes that are specific to modeling a relationship between two entities. For the common attributes of all property types, see [`NSPropertyDescription`](nspropertydescription.md).
+[`NSRelationshipDescription`](./nsrelationshipdescription.md) provides additional attributes that are specific to modeling a relationship between two entities. For the common attributes of all property types, see [`NSPropertyDescription`](./nspropertydescription.md).
 
 For example, use this class to define a relationship’s *cardinality* — the number of managed objects the relationship can reference.
 
-- For a to-one relationship, set [`maxCount`](nsrelationshipdescription/maxcount.md) to `1`.
-- For a to-many relationship, set [`maxCount`](nsrelationshipdescription/maxcount.md) to a number greater than `1` to impose an upper limit; otherwise, use `0` to allow an unlimited number of referenced objects.
+- For a to-one relationship, set [`maxCount`](./nsrelationshipdescription/maxcount.md) to `1`.
+- For a to-many relationship, set [`maxCount`](./nsrelationshipdescription/maxcount.md) to a number greater than `1` to impose an upper limit; otherwise, use `0` to allow an unlimited number of referenced objects.
 
 At runtime, you can modify a relationship description until you associate its owning managed object model with a persistent store coordinator.  If you attempt to modify the model after you associate it, Core Data throws an exception. To modify a model that’s in use, create and modify a copy and then discard any objects that belong to the original model.
 
 ## Topics
 
 ### Configuring the Destination
-- [var inverseRelationship: NSRelationshipDescription?](nsrelationshipdescription/inverserelationship.md)
+- [var inverseRelationship: NSRelationshipDescription?](./nsrelationshipdescription/inverserelationship.md)
   The relationship that represents the inverse of the current relationship.
-- [var destinationEntity: NSEntityDescription?](nsrelationshipdescription/destinationentity.md)
+- [var destinationEntity: NSEntityDescription?](./nsrelationshipdescription/destinationentity.md)
   The type of object the relationship contains.
-- [var isOrdered: Bool](nsrelationshipdescription/isordered.md)
+- [var isOrdered: Bool](./nsrelationshipdescription/isordered.md)
   A Boolean value that determines whether the relationship preserves the order of the referenced managed objects.
 ### Configuring Cardinality
-- [var isToMany: Bool](nsrelationshipdescription/istomany.md)
+- [var isToMany: Bool](./nsrelationshipdescription/istomany.md)
   Returns a Boolean value that indicates whether the relationship can contain many managed objects.
-- [var minCount: Int](nsrelationshipdescription/mincount.md)
+- [var minCount: Int](./nsrelationshipdescription/mincount.md)
   The minimum number of managed objects the relationship can reference.
-- [var maxCount: Int](nsrelationshipdescription/maxcount.md)
+- [var maxCount: Int](./nsrelationshipdescription/maxcount.md)
   The maximum number of managed objects the relationship can reference.
 ### Configuring Delete Behavior
-- [var deleteRule: NSDeleteRule](nsrelationshipdescription/deleterule.md)
+- [var deleteRule: NSDeleteRule](./nsrelationshipdescription/deleterule.md)
   The rule to apply when you delete the relationship’s owning managed object.
-- [enum NSDeleteRule](nsdeleterule.md)
+- [enum NSDeleteRule](./nsdeleterule.md)
   Constants that determine what happens when you delete a relationship’s owning managed object.
 ### Getting Version Data
-- [var versionHash: Data](nsrelationshipdescription/versionhash.md)
+- [var versionHash: Data](./nsrelationshipdescription/versionhash.md)
   The relationship’s unique identity.
 
 ## Relationships
 
 ### Inherits From
-- [NSPropertyDescription](nspropertydescription.md)
+- [NSPropertyDescription](./nspropertydescription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPropertyDescription](nspropertydescription.md)
+### Standard attributes
+- [class NSPropertyDescription](./nspropertydescription.md)
   A description of a single property belonging to an entity.
-- [class NSAttributeDescription](nsattributedescription.md)
+- [class NSAttributeDescription](./nsattributedescription.md)
   A description of a single attribute belonging to an entity.
-- [enum NSAttributeType](nsattributetype.md)
+- [enum NSAttributeType](./nsattributetype.md)
   The types of attribute that Core Data supports.
 
 

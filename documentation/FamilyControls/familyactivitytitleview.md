@@ -1,7 +1,8 @@
 # FamilyActivityTitleView
 
 **Framework**: Family Controls  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased view representing the title of the family activity.
 
@@ -18,18 +19,19 @@ A type-erased view representing the title of the family activity.
 
 #### Overview
 
-Family Controls uses this type as a generic constraint for the `Title` of the [`Label`](https://developer.apple.com/documentation/swiftui/label) instances it creates.
+Family Controls uses this type as a generic constraint for the `Title` of the [`Label`](../SwiftUI/label.md) instances it creates.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct FamilyActivityIconView](familyactivityiconview.md)
+### Label constraints
+- [struct FamilyActivityIconView](./familyactivityiconview.md)
   A type-erased view representing the icon of the family activity.
 
 

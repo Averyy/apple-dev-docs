@@ -1,7 +1,8 @@
 # BNNSGraph.Error.unableToCreateContext
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The call to the underlying context-creation function failed.
 
@@ -11,7 +12,7 @@ The call to the underlying context-creation function failed.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case unableToCreateContext
 
 ## See Also
 
-- [BNNSGraph.Error.unableToCreateGraph](bnnsgraph/error/unabletocreategraph.md)
+### Error codes
+- [BNNSGraph.Error.unableToCreateGraph](./unabletocreategraph.md)
   The call to the underlying graph-creation function failed.
-- [BNNSGraph.Error.unableToExecute](bnnsgraph/error/unabletoexecute.md)
+- [BNNSGraph.Error.unableToExecute](./unabletoexecute.md)
   The call to the underlying graph-execute function failed.
-- [BNNSGraph.Error.unableToSetDynamicShapes](bnnsgraph/error/unabletosetdynamicshapes.md)
+- [BNNSGraph.Error.unableToSetDynamicShapes](./unabletosetdynamicshapes.md)
   The call to the underlying set dynamic shapes function failed.
 
 

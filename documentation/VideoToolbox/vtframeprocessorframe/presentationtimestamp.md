@@ -1,7 +1,8 @@
 # presentationTimeStamp
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation timestamp specified when the object was created.
 
@@ -19,9 +20,14 @@ The presentation timestamp specified when the object was created.
 var presentationTimeStamp: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime presentationTimeStamp;
+```
+
 ## See Also
 
-- [var buffer: CVPixelBuffer](vtframeprocessorframe/buffer.md)
+### Inspecting the frame
+- [var buffer: CVPixelBuffer](./buffer.md)
   The pixel buffer specified when the object was created.
 
 

@@ -1,7 +1,8 @@
 # USDPrim
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single node in a stage’s scene hierarchy that holds attributes, relationships, metadata, and child prims.
 
@@ -22,196 +23,197 @@ struct USDPrim
 ## Topics
 
 ### Creating a prim
-- [init()](usdprim/init.md)
+- [init()](./usdprim/init%28%29.md)
   An invalid prim handle.
-- [init?(USDStage.Object)](usdprim/init(_:).md)
+- [init?(USDStage.Object)](./usdprim/init%28_%29.md)
   Casts an object handle to a prim handle.
 ### Identifying the prim
-- [var path: USDLayer.Path](usdprim/path.md)
+- [var path: USDLayer.Path](./usdprim/path.md)
   The complete scene path to this prim, relative to its stage.
-- [var primPath: USDLayer.Path](usdprim/primpath.md)
+- [var primPath: USDLayer.Path](./usdprim/primpath.md)
   The complete scene path to this prim, relative to its stage.
-- [var isValid: Bool](usdprim/isvalid.md)
+- [var isValid: Bool](./usdprim/isvalid.md)
   A Boolean value indicating whether this prim is valid.
-- [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+- [var specifier: USDPrim.Specifier](./usdprim/specifier-swift.property.md)
   The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
-- [var stage: USDStage](usdprim/stage.md)
+- [var stage: USDStage](./usdprim/stage.md)
   The stage that owns this prim.
-- [var parent: USDPrim?](usdprim/parent.md)
+- [var parent: USDPrim?](./usdprim/parent.md)
   The immediate parent prim of this prim.
-- [var description: String](usdprim/description.md)
+- [var description: String](./usdprim/description.md)
   A summary description of this prim.
-- [USDPrim.Specifier](usdprim/specifier-swift.enum.md)
+- [USDPrim.Specifier](./usdprim/specifier-swift.enum.md)
   How a prim definition behaves in composition.
 ### Traversing the hierarchy
-- [var children: [USDPrim]](usdprim/children.md)
+- [var children: [USDPrim]](./usdprim/children.md)
   The active, loaded, defined, non-abstract child prims of this prim.
-- [var allChildren: [USDPrim]](usdprim/allchildren.md)
+- [var allChildren: [USDPrim]](./usdprim/allchildren.md)
   The child prims of this prim.
-- [var descendants: [USDPrim]](usdprim/descendants.md)
+- [var descendants: [USDPrim]](./usdprim/descendants.md)
   The active, loaded, defined, non-abstract descendant prims of this prim, in depth-first order.
-- [var allDescendants: [USDPrim]](usdprim/alldescendants.md)
+- [var allDescendants: [USDPrim]](./usdprim/alldescendants.md)
   The descendant prims of this prim.
-- [var nextSibling: USDPrim?](usdprim/nextsibling.md)
+- [var nextSibling: USDPrim?](./usdprim/nextsibling.md)
   The active, loaded, defined, non-abstract successor of this prim in its parent’s list of children.
-- [func children(where: USDPrim.Predicate) -> [USDPrim]](usdprim/children(where:).md)
+- [func children(where: USDPrim.Predicate) -> [USDPrim]](./usdprim/children%28where%29.md)
   Returns the child prims of this prim that satisfy the given predicate.
-- [func descendants(where: USDPrim.Predicate) -> [USDPrim]](usdprim/descendants(where:).md)
+- [func descendants(where: USDPrim.Predicate) -> [USDPrim]](./usdprim/descendants%28where%29.md)
   Returns the descendant prims of this prim that satisfy the given predicate.
-- [func nextSibling(where: USDPrim.Predicate) -> USDPrim](usdprim/nextsibling(where:).md)
+- [func nextSibling(where: USDPrim.Predicate) -> USDPrim](./usdprim/nextsibling%28where%29.md)
   The successor of this prim in its parent’s list of children that satisfies the given predicate.
-- [func prim(at: USDLayer.Path) -> USDPrim](usdprim/prim(at:).md)
+- [func prim(at: USDLayer.Path) -> USDPrim](./usdprim/prim%28at%29.md)
   Returns the prim at a given path, relative to this prim.
-- [USDPrim.Predicate](usdprim/predicate.md)
+- [USDPrim.Predicate](./usdprim/predicate.md)
   A filter which returns true or false for prims based on their flags.
 ### Accessing properties
-- [var properties: [USDPrim.Property]](usdprim/properties.md)
+- [var properties: [USDPrim.Property]](./usdprim/properties.md)
   The properties of this prim, including those provided by its schemas.
-- [var authoredProperties: [USDPrim.Property]](usdprim/authoredproperties.md)
+- [var authoredProperties: [USDPrim.Property]](./usdprim/authoredproperties.md)
   The properties of this prim that have an authored opinion.
-- [var propertyNames: [USDToken]](usdprim/propertynames.md)
+- [var propertyNames: [USDToken]](./usdprim/propertynames.md)
   The names of this prim’s properties, including those provided by its schemas.
-- [var authoredPropertyNames: [USDToken]](usdprim/authoredpropertynames.md)
+- [var authoredPropertyNames: [USDToken]](./usdprim/authoredpropertynames.md)
   The names of this prim’s properties that have an authored opinion.
-- [func property(named: USDToken) -> USDPrim.Property](usdprim/property(named:).md)
+- [func property(named: USDToken) -> USDPrim.Property](./usdprim/property%28named%29.md)
   Returns the property with a given name on this prim.
-- [func hasProperty(named: USDToken) -> Bool](usdprim/hasproperty(named:).md)
+- [func hasProperty(named: USDToken) -> Bool](./usdprim/hasproperty%28named%29.md)
   Returns true if an attribute or relationship with a given name exists.
-- [func object(at: USDLayer.Path) -> USDStage.Object](usdprim/object(at:).md)
+- [func object(at: USDLayer.Path) -> USDStage.Object](./usdprim/object%28at%29.md)
   Returns the object at a given path, relative to this prim.
-- [USDPrim.Property](usdprim/property.md)
+- [USDPrim.Property](./usdprim/property.md)
   A named property on a prim, which is either an attribute or a relationship.
 ### Accessing attributes
-- [var attributes: [USDPrim.Attribute]](usdprim/attributes.md)
+- [var attributes: [USDPrim.Attribute]](./usdprim/attributes.md)
   The attributes of this prim, including those provided by its schemas.
-- [var authoredAttributes: [USDPrim.Attribute]](usdprim/authoredattributes.md)
+- [var authoredAttributes: [USDPrim.Attribute]](./usdprim/authoredattributes.md)
   The attributes of this prim that have an authored opinion.
-- [func attribute(named: USDToken) -> USDPrim.Attribute](usdprim/attribute(named:).md)
+- [func attribute(named: USDToken) -> USDPrim.Attribute](./usdprim/attribute%28named%29.md)
   Returns the attribute with a given name on this prim.
-- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdprim/attribute(at:).md)
+- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](./usdprim/attribute%28at%29.md)
   Returns the attribute at a given path, relative to this prim.
-- [func hasAttribute(named: USDToken) -> Bool](usdprim/hasattribute(named:).md)
+- [func hasAttribute(named: USDToken) -> Bool](./usdprim/hasattribute%28named%29.md)
   Returns true if an attribute with a given name exists on this prim.
-- [func makeAttribute(named: USDToken, as: USDPrim.Attribute.ValueType, custom: Bool, variability: USDPrim.Property.Variability) -> USDPrim.Attribute](usdprim/makeattribute(named:as:custom:variability:).md)
+- [func makeAttribute(named: USDToken, as: USDPrim.Attribute.ValueType, custom: Bool, variability: USDPrim.Property.Variability) -> USDPrim.Attribute](./usdprim/makeattribute%28named,as,custom,variability%29.md)
   Creates an attribute with the given name on this prim, or returns the existing attribute if one already exists.
-- [USDPrim.Attribute](usdprim/attribute.md)
+- [USDPrim.Attribute](./usdprim/attribute.md)
 ### Accessing relationships
-- [func relationship(named: USDToken) -> USDPrim.Relationship](usdprim/relationship(named:).md)
+- [func relationship(named: USDToken) -> USDPrim.Relationship](./usdprim/relationship%28named%29.md)
   Returns the relationship with a given name on this prim.
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdprim/relationship(at:).md)
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](./usdprim/relationship%28at%29.md)
   Returns the relationship at a given path, relative to this prim.
-- [func hasRelationship(named: USDToken) -> Bool](usdprim/hasrelationship(named:).md)
+- [func hasRelationship(named: USDToken) -> Bool](./usdprim/hasrelationship%28named%29.md)
   Returns true if a relationship with a given name exists on this prim.
-- [USDPrim.Relationship](usdprim/relationship.md)
+- [USDPrim.Relationship](./usdprim/relationship.md)
   A property that connects a prim to one or more other objects in the stage by their paths.
 ### Composing references and payloads
-- [var references: USDPrim.ReferenceCollection](usdprim/references.md)
+- [var references: USDPrim.ReferenceCollection](./usdprim/references.md)
   The reference composition arcs on this prim.
-- [USDPrim.Reference](usdprim/reference.md)
+- [USDPrim.Reference](./usdprim/reference.md)
   A reference to an external layer or asset.
-- [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+- [USDPrim.ReferenceCollection](./usdprim/referencecollection.md)
   Manages reference composition arcs on a prim.
-- [USDPrim.Payload](usdprim/payload.md)
+- [USDPrim.Payload](./usdprim/payload.md)
   A payload to an external asset.
-- [USDPrim.ListPosition](usdprim/listposition.md)
+- [USDPrim.ListPosition](./usdprim/listposition.md)
   Where a new composition arc should be inserted relative to existing arcs.
 ### Authoring variants
-- [USDPrim.VariantSpec](usdprim/variantspec.md)
+- [USDPrim.VariantSpec](./usdprim/variantspec.md)
   A handle to a single variant option within a variant set.
-- [USDPrim.VariantSetSpec](usdprim/variantsetspec.md)
+- [USDPrim.VariantSetSpec](./usdprim/variantsetspec.md)
   A handle to a variant set — a named group of variant options.
-- [typealias VariantsMap](usdprim/variantsmap.md)
+- [typealias VariantsMap](./usdprim/variantsmap.md)
   Maps variant set names to lists of available variant names.
-- [typealias VariantSelectionMap](usdprim/variantselectionmap.md)
+- [typealias VariantSelectionMap](./usdprim/variantselectionmap.md)
   Maps variant set names to selected variant names.
 ### Applying schemas and transforms
-- [func applyAPISchema(USDToken) throws](usdprim/applyapischema(_:).md)
+- [func applyAPISchema(USDToken) throws](./usdprim/applyapischema%28_%29.md)
   Applies a single-apply API schema to this prim.
-- [func applyAPISchema(USDToken, instanceName: USDToken) throws](usdprim/applyapischema(_:instancename:).md)
+- [func applyAPISchema(USDToken, instanceName: USDToken) throws](./usdprim/applyapischema%28_,instancename%29.md)
   Applies a multi-apply API schema to this prim with the given instance name.
-- [func addTransformOperation(type: USDTransformOperation.Kind)](usdprim/addtransformoperation(type:).md)
+- [func addTransformOperation(type: USDTransformOperation.Kind)](./usdprim/addtransformoperation%28type%29.md)
   Adds a transform operation of the given kind to this prim’s transform stack.
 ### Working with scene-description specs
-- [USDPrim.Spec](usdprim/spec.md)
+- [USDPrim.Spec](./usdprim/spec.md)
   A handle to a prim definition stored in a layer.
-- [USDPrim.PseudoRootSpec](usdprim/pseudorootspec.md)
+- [USDPrim.PseudoRootSpec](./usdprim/pseudorootspec.md)
   A handle to a layer’s pseudo-root — the implicit parent of all top-level prims in a layer.
 ### Structures
-- [USDPrim.InheritCollection](usdprim/inheritcollection.md)
+- [USDPrim.InheritCollection](./usdprim/inheritcollection.md)
   Manages inherit composition arcs on a prim.
-- [USDPrim.PayloadCollection](usdprim/payloadcollection.md)
+- [USDPrim.PayloadCollection](./usdprim/payloadcollection.md)
   Manages payload composition arcs on a prim.
-- [USDPrim.SpecializeCollection](usdprim/specializecollection.md)
+- [USDPrim.SpecializeCollection](./usdprim/specializecollection.md)
   Manages specializes composition arcs on a prim.
-- [USDPrim.VariantSet](usdprim/variantset.md)
+- [USDPrim.VariantSet](./usdprim/variantset.md)
   Represents a single variant set on a prim.
-- [USDPrim.VariantSetCollection](usdprim/variantsetcollection.md)
+- [USDPrim.VariantSetCollection](./usdprim/variantsetcollection.md)
   Manages variant sets on a prim.
 ### Instance Properties
-- [var hasAuthoredInherits: Bool](usdprim/hasauthoredinherits.md)
+- [var hasAuthoredInherits: Bool](./usdprim/hasauthoredinherits.md)
   A Boolean value indicating whether the prim has authored inherit arcs.
-- [var hasAuthoredPayloads: Bool](usdprim/hasauthoredpayloads.md)
+- [var hasAuthoredPayloads: Bool](./usdprim/hasauthoredpayloads.md)
   A Boolean value indicating whether the prim has authored payload arcs.
-- [var hasAuthoredReferences: Bool](usdprim/hasauthoredreferences.md)
+- [var hasAuthoredReferences: Bool](./usdprim/hasauthoredreferences.md)
   A Boolean value indicating whether the prim has authored reference arcs.
-- [var hasAuthoredSpecializes: Bool](usdprim/hasauthoredspecializes.md)
+- [var hasAuthoredSpecializes: Bool](./usdprim/hasauthoredspecializes.md)
   A Boolean value indicating whether the prim has authored specializes arcs.
-- [var inherits: USDPrim.InheritCollection](usdprim/inherits.md)
+- [var inherits: USDPrim.InheritCollection](./usdprim/inherits.md)
   The inherit composition arcs on this prim.
-- [var isPrototype: Bool](usdprim/isprototype.md)
+- [var isPrototype: Bool](./usdprim/isprototype.md)
   A Boolean value indicating whether this prim is a prototype that instances share.
-- [var payloads: USDPrim.PayloadCollection](usdprim/payloads.md)
+- [var payloads: USDPrim.PayloadCollection](./usdprim/payloads.md)
   The payload composition arcs on this prim.
-- [var prototype: USDPrim](usdprim/prototype.md)
+- [var prototype: USDPrim](./usdprim/prototype.md)
   The prototype that this instance shares, or an invalid prim if this prim is not an instance.
-- [var specializes: USDPrim.SpecializeCollection](usdprim/specializes.md)
+- [var specializes: USDPrim.SpecializeCollection](./usdprim/specializes.md)
   The specializes composition arcs on this prim.
-- [var transformOperations: [USDTransformOperation]](usdprim/transformoperations.md)
+- [var transformOperations: [USDTransformOperation]](./usdprim/transformoperations.md)
   The transform operations on this prim, in evaluation order.
-- [var variantSets: USDPrim.VariantSetCollection](usdprim/variantsets.md)
+- [var variantSets: USDPrim.VariantSetCollection](./usdprim/variantsets.md)
   The variant sets on this prim.
 ### Instance Methods
-- [func clearTransformOperations()](usdprim/cleartransformoperations.md)
+- [func clearTransformOperations()](./usdprim/cleartransformoperations%28%29.md)
   Removes all transform operations from the prim’s transform stack.
-- [func hasAPISchema(USDToken) -> Bool](usdprim/hasapischema(_:).md)
+- [func hasAPISchema(USDToken) -> Bool](./usdprim/hasapischema%28_%29.md)
   Returns `true` if this prim has a particular API schema applied.
-- [func isSchema(USDToken) -> Bool](usdprim/isschema(_:).md)
+- [func isSchema(USDToken) -> Bool](./usdprim/isschema%28_%29.md)
   Returns `true` if this prim has the given type or a more derived type.
-- [func makeRelationship(named: USDToken, custom: Bool) -> USDPrim.Relationship](usdprim/makerelationship(named:custom:).md)
+- [func makeRelationship(named: USDToken, custom: Bool) -> USDPrim.Relationship](./usdprim/makerelationship%28named,custom%29.md)
   Creates a relationship with the given name on this prim, or returns the existing relationship if one already exists.
-- [func property(at: USDLayer.Path) -> USDPrim.Property](usdprim/property(at:).md)
+- [func property(at: USDLayer.Path) -> USDPrim.Property](./usdprim/property%28at%29.md)
   Returns the property at a given path, relative to this prim.
-- [func removeAPISchema(USDToken) throws](usdprim/removeapischema(_:).md)
+- [func removeAPISchema(USDToken) throws](./usdprim/removeapischema%28_%29.md)
   Removes a single-apply API schema from this prim.
-- [func removeAPISchema(USDToken, instanceName: USDToken) throws](usdprim/removeapischema(_:instancename:).md)
+- [func removeAPISchema(USDToken, instanceName: USDToken) throws](./usdprim/removeapischema%28_,instancename%29.md)
   Removes a multi-apply API schema from this prim with the given instance name.
-- [func transform(at: USDStage.TimeCode) -> USDValue.Matrix4d?](usdprim/transform(at:).md)
+- [func transform(at: USDStage.TimeCode) -> USDValue.Matrix4d?](./usdprim/transform%28at%29.md)
   Computes the prim’s composed local transform at the specified time.
 ### Subscripts
-- [subscript(USDToken, as _: Int.Type) -> Int?](usdprim/subscript(_:as:)-127jz.md)
-- [subscript<T>(USDToken, as _: T.Type) -> T?](usdprim/subscript(_:as:)-1frls.md)
+- [subscript(USDToken, as _: Int.Type) -> Int?](./usdprim/subscript%28_,as%29-127jz.md)
+- [subscript<T>(USDToken, as _: T.Type) -> T?](./usdprim/subscript%28_,as%29-1frls.md)
   Access or modify the value of a named attribute on this prim.
-- [subscript(USDToken, as _: USDArray<UInt>.Type) -> USDArray<UInt>?](usdprim/subscript(_:as:)-2pr71.md)
-- [subscript(USDToken, as _: USDArray<Int>.Type) -> USDArray<Int>?](usdprim/subscript(_:as:)-7uc7b.md)
-- [subscript(USDToken, as _: UInt.Type) -> UInt?](usdprim/subscript(_:as:)-okns.md)
+- [subscript(USDToken, as _: USDArray<UInt>.Type) -> USDArray<UInt>?](./usdprim/subscript%28_,as%29-2pr71.md)
+- [subscript(USDToken, as _: USDArray<Int>.Type) -> USDArray<Int>?](./usdprim/subscript%28_,as%29-7uc7b.md)
+- [subscript(USDToken, as _: UInt.Type) -> UInt?](./usdprim/subscript%28_,as%29-okns.md)
 ### Default Implementations
-- [CustomStringConvertible Implementations](usdprim/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./usdprim/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [USDStage.Object.MetadataCollection](./usdstage/object/metadatacollection.md)
 
 ## See Also
 
-- [struct USDStage](usdstage.md)
+### Essentials
+- [struct USDStage](./usdstage.md)
   A 3D scene composed from one or more Universal Scene Description (USD) documents.
-- [struct USDLayer](usdlayer.md)
+- [struct USDLayer](./usdlayer.md)
   A single USD document that stores scene description in a file or in memory.
 
 

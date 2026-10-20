@@ -1,22 +1,23 @@
 # UserReportHBAConstraints
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the I/O constraints for this controller.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserReportHBAConstraints(OSDictionary *constraints);
 ```
 
 #### Return Value
 
-A value that indicates the result of reporting the HBA constraints. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of reporting the HBA constraints. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
@@ -24,20 +25,20 @@ The valid keys for the `constraints` dictionary are as follows:
 
 | Key name | Required? |
 | --- | --- |
-| [`kIOMaximumSegmentCountReadKey`](https://developer.apple.com/documentation/iokit/kiomaximumsegmentcountreadkey) | Yes |
-| [`kIOMaximumSegmentCountWriteKey`](https://developer.apple.com/documentation/iokit/kiomaximumsegmentcountwritekey) | Yes |
-| [`kIOMaximumSegmentByteCountReadKey`](https://developer.apple.com/documentation/iokit/kiomaximumsegmentbytecountreadkey) | Yes |
-| [`kIOMaximumSegmentByteCountWriteKey`](https://developer.apple.com/documentation/iokit/kiomaximumsegmentbytecountwritekey) | Yes |
-| [`kIOMinimumSegmentAlignmentByteCountKey`](https://developer.apple.com/documentation/iokit/kiominimumsegmentalignmentbytecountkey) | Yes |
-| [`kIOMaximumSegmentAddressableBitCountKey`](https://developer.apple.com/documentation/iokit/kiomaximumsegmentaddressablebitcountkey) | Yes |
+| [`kIOMaximumSegmentCountReadKey`](../../iokit/kiomaximumsegmentcountreadkey.md) | Yes |
+| [`kIOMaximumSegmentCountWriteKey`](../../iokit/kiomaximumsegmentcountwritekey.md) | Yes |
+| [`kIOMaximumSegmentByteCountReadKey`](../../iokit/kiomaximumsegmentbytecountreadkey.md) | Yes |
+| [`kIOMaximumSegmentByteCountWriteKey`](../../iokit/kiomaximumsegmentbytecountwritekey.md) | Yes |
+| [`kIOMinimumSegmentAlignmentByteCountKey`](../../iokit/kiominimumsegmentalignmentbytecountkey.md) | Yes |
+| [`kIOMaximumSegmentAddressableBitCountKey`](../../iokit/kiomaximumsegmentaddressablebitcountkey.md) | Yes |
 | `kIOMinimumHBADataAlignmentMaskKey` | Yes |
 | `kIOHierarchicalLogicalUnitSupportKey` | No |
 
 Make sure your dext reports these constraints accurately — particularly all mandatory keys — during initialization. This helps prevent intermittent failures, such as controller firmware buffer overflows.
 
-Subclasses must call this method from the dext before [`UserInitializeController`](iouserscsiparallelinterfacecontroller/userinitializecontroller.md) returns.
+Subclasses must call this method from the dext before [`UserInitializeController`](./userinitializecontroller.md) returns.
 
-If the controller has global transfer limits, set the properties [`kIOMaximumByteCountReadKey`](https://developer.apple.com/documentation/driverkit/kiomaximumbytecountreadkey) and [`kIOMaximumByteCountWriteKey`](https://developer.apple.com/documentation/driverkit/kiomaximumbytecountwritekey) on the dext, using the [`SetProperties`](https://developer.apple.com/documentation/driverkit/ioservice/setproperties) method inherited from [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice). The `UserReportHBAConstraints` method doesn’t currently support these properties.
+If the controller has global transfer limits, set the properties [`kIOMaximumByteCountReadKey`](../../DriverKit/kiomaximumbytecountreadkey.md) and [`kIOMaximumByteCountWriteKey`](../../DriverKit/kiomaximumbytecountwritekey.md) on the dext, using the [`SetProperties`](../../DriverKit/ioservice/setproperties.md) method inherited from [`IOService`](../../DriverKit/ioservice.md). The `UserReportHBAConstraints` method doesn’t currently support these properties.
 
 ## Parameters
 
@@ -45,29 +46,30 @@ If the controller has global transfer limits, set the properties [`kIOMaximumByt
 
 ## See Also
 
-- [UserReportInitiatorIdentifier](iouserscsiparallelinterfacecontroller/userreportinitiatoridentifier.md)
+### Managing host bus adapters
+- [UserReportInitiatorIdentifier](./userreportinitiatoridentifier.md)
   Gets the SCSI device identifier for the host bus adapter (HBA) in response to a call from the framework.
-- [UserReportHighestSupportedDeviceID](iouserscsiparallelinterfacecontroller/userreporthighestsupporteddeviceid.md)
+- [UserReportHighestSupportedDeviceID](./userreporthighestsupporteddeviceid.md)
   Gets the highest supported SCSI device identifier in response to a call from the framework.
-- [UserReportMaximumTaskCount](iouserscsiparallelinterfacecontroller/userreportmaximumtaskcount.md)
+- [UserReportMaximumTaskCount](./userreportmaximumtaskcount.md)
   Gets the maximum number of outstanding tasks the HBA can process in response to a call from the framework.
-- [UserDoesHBAPerformDeviceManagement](iouserscsiparallelinterfacecontroller/userdoeshbaperformdevicemanagement.md)
+- [UserDoesHBAPerformDeviceManagement](./userdoeshbaperformdevicemanagement.md)
   Determines if the host bus adapter (HBA) manages devices in response to a call from the framework.
-- [UserReportHBAHighestLogicalUnitNumber](iouserscsiparallelinterfacecontroller/userreporthbahighestlogicalunitnumber.md)
+- [UserReportHBAHighestLogicalUnitNumber](./userreporthbahighestlogicalunitnumber.md)
   Gets the highest logical unit number (LUN) in response to a call from the framework.
-- [UserDoesHBAPerformAutoSense](iouserscsiparallelinterfacecontroller/userdoeshbaperformautosense.md)
+- [UserDoesHBAPerformAutoSense](./userdoeshbaperformautosense.md)
   Determines if the driver extension class automatically performs autosense and provides autosense data for each I/O in response to a call from the framework.
-- [UserDoesHBASupportMultiPathing](iouserscsiparallelinterfacecontroller/userdoeshbasupportmultipathing.md)
+- [UserDoesHBASupportMultiPathing](./userdoeshbasupportmultipathing.md)
   Queries the HBA child class to determine if it supports multipathing in response to a call from the framework.
-- [UserDoesHBASupportSCSIParallelFeature](iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.md)
+- [UserDoesHBASupportSCSIParallelFeature](./userdoeshbasupportscsiparallelfeature.md)
   Determines whether the driver extension class supports a specific feature in response to a call from the framework.
-- [SCSIParallelFeature](scsiparallelfeature.md)
+- [SCSIParallelFeature](../scsiparallelfeature.md)
   A feature that the driver extension supports.
-- [UserMapHBAData](iouserscsiparallelinterfacecontroller/usermaphbadata.md)
+- [UserMapHBAData](./usermaphbadata.md)
   Maps any host bus adapter (HBA)-specific task data in response to a call from the framework.
-- [UserSetHBAProperties](iouserscsiparallelinterfacecontroller/usersethbaproperties.md)
+- [UserSetHBAProperties](./usersethbaproperties.md)
   Sets multiple properties for a host bus adapter.
-- [UserRemoveHBAProperties](iouserscsiparallelinterfacecontroller/userremovehbaproperties.md)
+- [UserRemoveHBAProperties](./userremovehbaproperties.md)
   Removes properties from a host bus adapter in response to a call from the framework.
 
 

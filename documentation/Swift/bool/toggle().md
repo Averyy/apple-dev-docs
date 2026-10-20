@@ -1,7 +1,8 @@
 # toggle()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Toggles the Boolean variable’s value.
 
@@ -33,11 +34,12 @@ bools[0].toggle()
 
 ## See Also
 
-- [static func ! (Bool) -> Bool](bool/!(_:).md)
+### Transforming a Boolean
+- [static func ! (Bool) -> Bool](./not%28_%29.md)
   Performs a logical NOT operation on a Boolean value.
-- [static func || (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](bool/__(_:_:).md)
+- [static func || (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](./opop%28_,_%29.md)
   Performs a logical OR operation on two Boolean values.
-- [static func && (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](bool/&&(_:_:).md)
+- [static func && (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](./ampamp%28_,_%29.md)
   Performs a logical AND operation on two Boolean values.
 
 

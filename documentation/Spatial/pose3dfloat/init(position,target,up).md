@@ -1,7 +1,8 @@
 # init(position:target:up:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose at the specified position that’s oriented towards a look at target.
 

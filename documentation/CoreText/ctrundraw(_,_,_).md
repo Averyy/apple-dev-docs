@@ -1,7 +1,8 @@
 # CTRunDraw(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws a complete run or part of one.
 
@@ -20,6 +21,10 @@ Draws a complete run or part of one.
 func CTRunDraw(_ run: CTRun, _ context: CGContext, _ range: CFRange)
 ```
 
+```c
+extern void CTRunDraw(CTRunRef run, CGContextRef context, CFRange range);
+```
+
 #### Discussion
 
 This is a convenience call, because the run could be drawn by accessing the glyphs. This call can leave the graphics context in any state and does not flush the context after the draw operation.
@@ -32,7 +37,8 @@ This is a convenience call, because the run could be drawn by accessing the glyp
 
 ## See Also
 
-- [func CTRunGetTextMatrix(CTRun) -> CGAffineTransform](ctrungettextmatrix(_:).md)
+### Drawing the Glyph Run
+- [func CTRunGetTextMatrix(CTRun) -> CGAffineTransform](./ctrungettextmatrix%28_%29.md)
   Returns the text matrix needed to draw this run.
 
 

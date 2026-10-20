@@ -1,7 +1,8 @@
 # srAbsoluteTime
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var srAbsoluteTime: SRAbsoluteTime { get }
+```
+
+```objc
+@property (readonly) SRAbsoluteTime srAbsoluteTime;
 ```
 
 

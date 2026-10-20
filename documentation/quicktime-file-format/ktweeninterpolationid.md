@@ -1,9 +1,12 @@
 # kTweenInterpolationID
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that specifies an interpolation tween atom to use for a specified tween data atom.
+
+> **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
 #### Overview
 
@@ -19,9 +22,10 @@ This atom is required for an interpolation tween atom.
 
 ## See Also
 
-- [kTweenOutputMax](ktweenoutputmax.md)
+### Interpolation Tween Atoms
+- [kTweenOutputMax](./ktweenoutputmax.md)
   An atom that specifies the maximum output value of an interpolation tween atom.
-- [kTweenOutputMin](ktweenoutputmin.md)
+- [kTweenOutputMin](./ktweenoutputmin.md)
   An atom that specifies the minimum output value of an interpolation tween atom.
 
 

@@ -1,7 +1,8 @@
 # OS_sec_object
 
 **Framework**: Security  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A `sec_object` is a generic, ARC-able type wrapper for common CoreFoundation Security types.
 
@@ -20,10 +21,14 @@ A `sec_object` is a generic, ARC-able type wrapper for common CoreFoundation Sec
 protocol OS_sec_object : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_sec_object <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

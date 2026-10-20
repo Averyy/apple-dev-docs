@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action method to call when someone clicks on the toolbar item.
 
@@ -9,12 +10,16 @@ The action method to call when someone clicks on the toolbar item.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var action: Selector? { get set }
+```
+
+```objc
+@property (nullable) SEL action;
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ If you assign a custom view to the toolbar item, modifying this property updates
 
 ## See Also
 
-- [var target: AnyObject?](nstoolbaritem/target.md)
+### Performing the item’s action
+- [var target: AnyObject?](./target.md)
   The object that defines the action method the toolbar item calls when clicked.
 
 

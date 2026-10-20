@@ -1,7 +1,8 @@
 # MPSCNNBinaryConvolutionType.XNOR
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A convolution type that uses input image binarization and the XNOR-operation.
 
@@ -19,11 +20,16 @@ A convolution type that uses input image binarization and the XNOR-operation.
 case XNOR
 ```
 
+```c
+MPSCNNBinaryConvolutionTypeXNOR
+```
+
 ## See Also
 
-- [MPSCNNBinaryConvolutionType.AND](mpscnnbinaryconvolutiontype/and.md)
+### Enumeration Cases
+- [MPSCNNBinaryConvolutionType.AND](./and.md)
   A convolution type that uses input image binarization and the AND-operation.
-- [MPSCNNBinaryConvolutionType.binaryWeights](mpscnnbinaryconvolutiontype/binaryweights.md)
+- [MPSCNNBinaryConvolutionType.binaryWeights](./binaryweights.md)
   A convolution type that operates as a normal convolution, except that the weights are binary values.
 
 

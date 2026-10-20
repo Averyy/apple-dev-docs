@@ -1,7 +1,8 @@
 # VTFrameProcessorParameters
 
 **Framework**: Video Toolbox  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The base protocol for input and output processing parameters for a frame processor implementation.
 
@@ -19,42 +20,47 @@ The base protocol for input and output processing parameters for a frame process
 protocol VTFrameProcessorParameters : NSObjectProtocol
 ```
 
+```objc
+@protocol VTFrameProcessorParameters <NSObject>
+```
+
 #### Overview
 
-An instance of a class corresponding to this protocol is passed to [`processWithParameters:error:`](vtframeprocessor/processwithparameters:error:.md) calls and for asynchronous versions of those calls, the same instance is returned in the completion.
+An instance of a class corresponding to this protocol is passed to [`processWithParameters:error:`](./vtframeprocessor/processwithparameters_error_.md) calls and for asynchronous versions of those calls, the same instance is returned in the completion.
 
 ## Topics
 
 ### Inspecting the parameters
-- [var sourceFrame: VTFrameProcessorFrame](vtframeprocessorparameters/sourceframe.md)
+- [var sourceFrame: VTFrameProcessorFrame](./vtframeprocessorparameters/sourceframe.md)
   A processor frame that contains the current source frame to use for all processing features.
-- [var destinationFrame: VTFrameProcessorFrame?](vtframeprocessorparameters/destinationframe-5suam.md)
-  [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
-- [var destinationFrames: [VTFrameProcessorFrame]?](vtframeprocessorparameters/destinationframes-46ken.md)
-  Array of [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
+- [var destinationFrame: VTFrameProcessorFrame?](./vtframeprocessorparameters/destinationframe-5suam.md)
+  [`VTFrameProcessorFrame`](./vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
+- [var destinationFrames: [VTFrameProcessorFrame]?](./vtframeprocessorparameters/destinationframes-46ken.md)
+  Array of [`VTFrameProcessorFrame`](./vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [VTFrameRateConversionParameters](vtframerateconversionparameters.md)
-- [VTLowLatencyFrameInterpolationParameters](vtlowlatencyframeinterpolationparameters.md)
-- [VTLowLatencySuperResolutionScalerParameters](vtlowlatencysuperresolutionscalerparameters.md)
-- [VTMotionBlurParameters](vtmotionblurparameters.md)
-- [VTOpticalFlowParameters](vtopticalflowparameters.md)
-- [VTSuperResolutionScalerParameters](vtsuperresolutionscalerparameters.md)
-- [VTTemporalNoiseFilterParameters](vttemporalnoisefilterparameters.md)
+- [VTFrameRateConversionParameters](./vtframerateconversionparameters.md)
+- [VTLowLatencyFrameInterpolationParameters](./vtlowlatencyframeinterpolationparameters.md)
+- [VTLowLatencySuperResolutionScalerParameters](./vtlowlatencysuperresolutionscalerparameters.md)
+- [VTMotionBlurParameters](./vtmotionblurparameters.md)
+- [VTOpticalFlowParameters](./vtopticalflowparameters.md)
+- [VTSuperResolutionScalerParameters](./vtsuperresolutionscalerparameters.md)
+- [VTTemporalNoiseFilterParameters](./vttemporalnoisefilterparameters.md)
 
 ## See Also
 
-- [Enhancing your app with machine learning-based video effects](enhancing-your-app-with-machine-learning-based-video-effects.md)
+### Frame processor
+- [Enhancing your app with machine learning-based video effects](./enhancing-your-app-with-machine-learning-based-video-effects.md)
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
-- [class VTFrameProcessor](vtframeprocessor.md)
+- [class VTFrameProcessor](./vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
-- [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [protocol VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
   A protocol that describes the configuration of a processor to use during a video processing session.
-- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
+- [class VTFrameProcessorFrame](./vtframeprocessorframe.md)
   An object that wraps video frames to send to the processor, as source, reference, or output frames.
 
 

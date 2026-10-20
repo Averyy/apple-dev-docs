@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: FinanceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a merchant category code with the provided value.
 

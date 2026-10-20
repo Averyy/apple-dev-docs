@@ -1,7 +1,8 @@
 # CameraView
 
 **Framework**: HomeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI view into which a video stream or an image snapshot is rendered.
 
@@ -23,25 +24,26 @@ A SwiftUI view into which a video stream or an image snapshot is rendered.
 ## Topics
 
 ### Creating a camera view
-- [init(source: HMCameraSource)](cameraview/init(source:).md)
+- [init(source: HMCameraSource)](./cameraview/init%28source%29.md)
   Creates a new camera view using the given source.
-- [class HMCameraSource](hmcamerasource.md)
+- [class HMCameraSource](./hmcamerasource.md)
   An abstract class for a camera’s data source.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [var cameraProfiles: [HMCameraProfile]?](hmaccessory/cameraprofiles.md)
+### Managing camera profiles
+- [var cameraProfiles: [HMCameraProfile]?](./hmaccessory/cameraprofiles.md)
   An array of camera profiles implemented by the accessory.
-- [class HMCameraProfile](hmcameraprofile.md)
+- [class HMCameraProfile](./hmcameraprofile.md)
   A camera profile that interacts with an accessory’s camera.
-- [class HMCameraView](hmcameraview.md)
+- [class HMCameraView](./hmcameraview.md)
   The view into which a video stream or an image snapshot is rendered.
 
 

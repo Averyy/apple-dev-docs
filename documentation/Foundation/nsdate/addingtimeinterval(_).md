@@ -1,7 +1,8 @@
 # addingTimeInterval(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new date object that is set to a given number of seconds relative to the receiver.
 
@@ -20,6 +21,10 @@ Returns a new date object that is set to a given number of seconds relative to t
 func addingTimeInterval(_ ti: TimeInterval) -> Self
 ```
 
+```objc
+- (instancetype) dateByAddingTimeInterval:(NSTimeInterval) ti;
+```
+
 #### Return Value
 
 A new `NSDate` object that is set to `seconds` seconds relative to the receiver. The date returned might have a representation different from the receiver’s.
@@ -30,7 +35,8 @@ A new `NSDate` object that is set to `seconds` seconds relative to the receiver.
 
 ## See Also
 
-- [func timeIntervalSince(Date) -> TimeInterval](nsdate/timeintervalsince(_:).md)
+### Related Documentation
+- [func timeIntervalSince(Date) -> TimeInterval](./timeintervalsince%28_%29.md)
   Returns the interval between the receiver and another given date.
 
 

@@ -1,7 +1,8 @@
 # init(clusterID:revision:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(clusterID: NSNumber, revision: NSNumber)
+```
+
+```objc
+- (instancetype) initWithClusterID:(NSNumber *) clusterID revision:(NSNumber *) revision;
 ```
 
 

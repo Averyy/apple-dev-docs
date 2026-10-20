@@ -1,7 +1,8 @@
 # UITableView.SelfSizingInvalidation.disabled
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that disables self-sizing invalidation.
 
@@ -18,15 +19,20 @@ A mode that disables self-sizing invalidation.
 case disabled
 ```
 
+```c
+UITableViewSelfSizingInvalidationDisabled
+```
+
 #### Discussion
 
-If you use this self-sizing invalidation mode, no sizing updates occur after calling [`invalidateIntrinsicContentSize()`](uiview/invalidateintrinsiccontentsize().md) on a self-sizing cell or its [`contentView`](uitableviewcell/contentview.md).
+If you use this self-sizing invalidation mode, no sizing updates occur after calling [`invalidateIntrinsicContentSize()`](../../uiview/invalidateintrinsiccontentsize%28%29.md) on a self-sizing cell or its [`contentView`](../../uitableviewcell/contentview.md).
 
 ## See Also
 
-- [UITableView.SelfSizingInvalidation.enabled](uitableview/selfsizinginvalidation-swift.enum/enabled.md)
+### Constants
+- [UITableView.SelfSizingInvalidation.enabled](./enabled.md)
   A mode that enables manual self-sizing invalidation.
-- [UITableView.SelfSizingInvalidation.enabledIncludingConstraints](uitableview/selfsizinginvalidation-swift.enum/enabledincludingconstraints.md)
+- [UITableView.SelfSizingInvalidation.enabledIncludingConstraints](./enabledincludingconstraints.md)
   A mode that enables automatic self-sizing invalidation after Auto Layout changes.
 
 

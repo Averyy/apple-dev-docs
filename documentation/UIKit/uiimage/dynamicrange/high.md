@@ -1,7 +1,8 @@
 # UIImage.DynamicRange.high
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow image content to use unrestricted extended range.
 
@@ -16,6 +17,10 @@ Allow image content to use unrestricted extended range.
 
 ```swift
 case high
+```
+
+```c
+UIImageDynamicRangeHigh
 ```
 
 

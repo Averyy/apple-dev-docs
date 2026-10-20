@@ -1,7 +1,8 @@
 # ScrollTargetBehavior.TargetContext
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The context in which a scroll behavior updates the scroll target.
 
@@ -22,7 +23,8 @@ typealias TargetContext = ScrollTargetBehaviorContext
 
 ## See Also
 
-- [func updateTarget(inout ScrollTarget, context: Self.TargetContext)](scrolltargetbehavior/updatetarget(_:context:).md)
+### Updating the proposed target
+- [func updateTarget(inout ScrollTarget, context: Self.TargetContext)](./updatetarget%28_,context%29.md)
   Updates the proposed target that a scrollable view should scroll to.
 
 

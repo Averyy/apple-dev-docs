@@ -1,12 +1,13 @@
 # printDocumentView()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prints the receiver.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Prints the receiver.
 func printDocumentView()
 ```
 
+```objc
+- (void) printDocumentView;
+```
+
 #### Discussion
 
-This method is invoked if the [`documentViewShouldHandlePrint`](webframeview/documentviewshouldhandleprint.md) method returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method is invoked if the [`documentViewShouldHandlePrint`](./documentviewshouldhandleprint.md) method returns [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var canPrintHeadersAndFooters: Bool](webframeview/canprintheadersandfooters.md)
+### Printing Views
+- [var canPrintHeadersAndFooters: Bool](./canprintheadersandfooters.md)
   A Boolean value indicating whether the receiver can print headers and footers.
-- [func printOperation(with: NSPrintInfo!) -> NSPrintOperation!](webframeview/printoperation(with:).md)
+- [func printOperation(with: NSPrintInfo!) -> NSPrintOperation!](./printoperation%28with%29.md)
   Returns a print operation object to print this frame.
-- [var documentViewShouldHandlePrint: Bool](webframeview/documentviewshouldhandleprint.md)
+- [var documentViewShouldHandlePrint: Bool](./documentviewshouldhandleprint.md)
   A Boolean value indicating whether the document view should handle a print operation.
 
 

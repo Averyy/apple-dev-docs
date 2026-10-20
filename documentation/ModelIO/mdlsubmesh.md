@@ -1,7 +1,8 @@
 # MDLSubmesh
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for index buffer data and material information to be used in rendering all or part of a 3D object.
 
@@ -19,73 +20,78 @@ A container for index buffer data and material information to be used in renderi
 class MDLSubmesh
 ```
 
+```objc
+@interface MDLSubmesh : NSObject
+```
+
 #### Overview
 
-Submeshes are contained in [`MDLMesh`](mdlmesh.md) objects, which provide vertex buffer data that a submesh’s index data refers to. Together, the vertex and index data describe the geometric form of a portion of the mesh, and the submesh’s [`material`](mdlsubmesh/material.md) property determines its intended surface appearance for rendering.
+Submeshes are contained in [`MDLMesh`](./mdlmesh.md) objects, which provide vertex buffer data that a submesh’s index data refers to. Together, the vertex and index data describe the geometric form of a portion of the mesh, and the submesh’s [`material`](./mdlsubmesh/material.md) property determines its intended surface appearance for rendering.
 
 ## Topics
 
 ### Creating a Submesh
-- [init(indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](mdlsubmesh/init(indexbuffer:indexcount:indextype:geometrytype:material:).md)
+- [init(indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](./mdlsubmesh/init%28indexbuffer,indexcount,indextype,geometrytype,material%29.md)
   Initializes a submesh with an index buffer and the specified properties.
-- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:).md)
+- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](./mdlsubmesh/init%28name,indexbuffer,indexcount,indextype,geometrytype,material%29.md)
   Initializes a named submesh with an index buffer and the specified properties.
-- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?, topology: MDLSubmeshTopology?)](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:topology:).md)
+- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?, topology: MDLSubmeshTopology?)](./mdlsubmesh/init%28name,indexbuffer,indexcount,indextype,geometrytype,material,topology%29.md)
   Initializes a named submesh with a specific topology.
-- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:)-4czyc.md)
+- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](./mdlsubmesh/init%28mdlsubmesh,indextype,geometrytype%29-4czyc.md)
   Initializes a submesh by copying or converting another submesh.
 ### Working with a Submesh’s Index Buffer
-- [var indexBuffer: any MDLMeshBuffer](mdlsubmesh/indexbuffer.md)
+- [var indexBuffer: any MDLMeshBuffer](./mdlsubmesh/indexbuffer.md)
   An object that provides index data for the submesh.
-- [var indexCount: Int](mdlsubmesh/indexcount.md)
+- [var indexCount: Int](./mdlsubmesh/indexcount.md)
   The number of indices in the submesh’s index buffer.
-- [var indexType: MDLIndexBitDepth](mdlsubmesh/indextype.md)
+- [var indexType: MDLIndexBitDepth](./mdlsubmesh/indextype.md)
   The data type for each element in the submesh’s index buffer.
-- [var geometryType: MDLGeometryType](mdlsubmesh/geometrytype.md)
+- [var geometryType: MDLGeometryType](./mdlsubmesh/geometrytype.md)
   The type of geometric primitives described by the submesh’s index buffer.
-- [var topology: MDLSubmeshTopology?](mdlsubmesh/topology.md)
+- [var topology: MDLSubmeshTopology?](./mdlsubmesh/topology.md)
   A description of how the non-uniform layout of the submesh’s index buffer defines the shape of the mesh.
-- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](mdlsubmesh/indexbuffer(asindextype:).md)
+- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](./mdlsubmesh/indexbuffer%28asindextype%29.md)
 ### Associating Materials with a Submesh
-- [var material: MDLMaterial?](mdlsubmesh/material.md)
+- [var material: MDLMaterial?](./mdlsubmesh/material.md)
   An object that describes the intended surface appearance of the submesh for rendering.
 ### Identifying a Submesh
-- [var name: String](mdlsubmesh/name.md)
+- [var name: String](./mdlsubmesh/name.md)
   A descriptive name for the submesh.
 ### Constants
-- [enum MDLIndexBitDepth](mdlindexbitdepth.md)
-  Options for the size of integer data in a submesh’s index buffer, used by the [`indexType`](mdlsubmesh/indextype.md) property.
-- [enum MDLGeometryType](mdlgeometrytype.md)
-  Types of geometric primitives for rendering a submesh, used by the [`geometryType`](mdlsubmesh/geometrytype.md) property.
+- [enum MDLIndexBitDepth](./mdlindexbitdepth.md)
+  Options for the size of integer data in a submesh’s index buffer, used by the [`indexType`](./mdlsubmesh/indextype.md) property.
+- [enum MDLGeometryType](./mdlgeometrytype.md)
+  Types of geometric primitives for rendering a submesh, used by the [`geometryType`](./mdlsubmesh/geometrytype.md) property.
 ### Initializers
-- [init?(MDLSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:)-6b9cm.md)
+- [init?(MDLSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](./mdlsubmesh/init%28mdlsubmesh,indextype,geometrytype%29-6b9cm.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLAsset](mdlasset.md)
+### 3D Asset Basics
+- [class MDLAsset](./mdlasset.md)
   An indexed container for 3D objects and associated information, such as transform hierarchies, meshes, cameras, and lights.
-- [class MDLObject](mdlobject.md)
+- [class MDLObject](./mdlobject.md)
   The base class for objects that are part of a 3D asset, including meshes, cameras, and lights.
-- [class MDLTransform](mdltransform.md)
+- [class MDLTransform](./mdltransform.md)
   A description of the local coordinate space transformations for a 3D object.
-- [class MDLMesh](mdlmesh.md)
+- [class MDLMesh](./mdlmesh.md)
   A container for vertex buffer data to be used in rendering a 3D object.
-- [class MDLSubmeshTopology](mdlsubmeshtopology.md)
+- [class MDLSubmeshTopology](./mdlsubmeshtopology.md)
   A description of how a submesh’s index buffer data is arranged and how that arrangement should be used to produce the submesh’s intended 3D shape.
-- [protocol MDLNamed](mdlnamed.md)
+- [protocol MDLNamed](./mdlnamed.md)
   The common interface for Model I/O objects that expose a human-readable name.
 
 

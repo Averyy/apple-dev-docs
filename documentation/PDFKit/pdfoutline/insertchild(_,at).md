@@ -1,7 +1,8 @@
 # insertChild(_:at:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the specified outline object at the specified index.
 
@@ -19,15 +20,21 @@ Inserts the specified outline object at the specified index.
 func insertChild(_ child: PDFOutline, at index: Int)
 ```
 
+```objc
+- (void) insertChild:(PDFOutline *) child atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
-To build a PDF outline hierarchy, use this method to add child outline objects. Before you call this method on a `PDFOutline` object that already has a parent, you should retain the object and call [`removeFromParent()`](pdfoutline/removefromparent().md) on it first.
+To build a PDF outline hierarchy, use this method to add child outline objects. Before you call this method on a `PDFOutline` object that already has a parent, you should retain the object and call [`removeFromParent()`](./removefromparent%28%29.md) on it first.
 
 ## See Also
 
-- [func child(at: Int) -> PDFOutline?](pdfoutline/child(at:).md)
+### Related Documentation
+- [func child(at: Int) -> PDFOutline?](./child%28at%29.md)
   Returns the child outline object at the specified index.
-- [func removeFromParent()](pdfoutline/removefromparent.md)
+### Changing an Outline Hierarchy
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the outline object from its parent (does nothing if outline object is the root outline object).
 
 

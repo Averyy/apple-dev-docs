@@ -1,7 +1,8 @@
 # init(labels:configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time series classifier.
 

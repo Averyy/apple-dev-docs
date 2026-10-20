@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(offset: Int32, rowBytes: UInt32)](cvplanarcomponentinfo/init(offset:rowbytes:).md)
+### Initializers
+- [init(offset: Int32, rowBytes: UInt32)](./init%28offset,rowbytes%29.md)
 
 
 ---

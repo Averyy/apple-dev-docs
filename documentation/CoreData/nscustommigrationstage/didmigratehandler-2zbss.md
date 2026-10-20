@@ -1,7 +1,8 @@
 # didMigrateHandler
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler to execute after the stage runs.
 
@@ -11,7 +12,7 @@ The handler to execute after the stage runs.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 - Swift 5.8+
 
@@ -23,11 +24,12 @@ var didMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throw
 
 #### Discussion
 
-Use this handler to perform any cleanup tasks on the persistent store’s data after the migration has run. Access the store using the [`container`](nsstagedmigrationmanager/container.md) property of the handler’s `migrationManager` parameter.
+Use this handler to perform any cleanup tasks on the persistent store’s data after the migration has run. Access the store using the [`container`](../nsstagedmigrationmanager/container.md) property of the handler’s `migrationManager` parameter.
 
 ## See Also
 
-- [var willMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)?](nscustommigrationstage/willmigratehandler-5wead.md)
+### Assigning event handlers
+- [var willMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)?](./willmigratehandler-5wead.md)
   The handler to execute before the stage runs.
 
 

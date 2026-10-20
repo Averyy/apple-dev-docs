@@ -1,7 +1,8 @@
 # ITLibDistinguishedPlaylistKind
 
 **Framework**: iTunes Library  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify the possible kinds of distinguished playlists.
 
@@ -15,85 +16,90 @@ These constants specify the possible kinds of distinguished playlists.
 enum ITLibDistinguishedPlaylistKind
 ```
 
+```c
+enum ITLibDistinguishedPlaylistKind : NSUInteger;
+```
+
 ## Topics
 
 ### Distinguished Playlist Kinds
-- [ITLibDistinguishedPlaylistKind.kindNone](itlibdistinguishedplaylistkind/kindnone.md)
+- [ITLibDistinguishedPlaylistKind.kindNone](./itlibdistinguishedplaylistkind/kindnone.md)
   The playlist isn’t a distinguished playlist.
-- [ITLibDistinguishedPlaylistKind.kindMovies](itlibdistinguishedplaylistkind/kindmovies.md)
+- [ITLibDistinguishedPlaylistKind.kindMovies](./itlibdistinguishedplaylistkind/kindmovies.md)
   The playlist contains all the movies in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindTVShows](itlibdistinguishedplaylistkind/kindtvshows.md)
+- [ITLibDistinguishedPlaylistKind.kindTVShows](./itlibdistinguishedplaylistkind/kindtvshows.md)
   The playlist contains all the TV shows in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindMusic](itlibdistinguishedplaylistkind/kindmusic.md)
+- [ITLibDistinguishedPlaylistKind.kindMusic](./itlibdistinguishedplaylistkind/kindmusic.md)
   The playlist contains all the music items in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindAudiobooks](itlibdistinguishedplaylistkind/kindaudiobooks.md)
+- [ITLibDistinguishedPlaylistKind.kindAudiobooks](./itlibdistinguishedplaylistkind/kindaudiobooks.md)
   The playlist contains all the audiobooks in the iTunes library.
-- [static var kindBooks: ITLibDistinguishedPlaylistKind](itlibdistinguishedplaylistkind/kindbooks.md)
+- [static var kindBooks: ITLibDistinguishedPlaylistKind](./itlibdistinguishedplaylistkind/kindbooks.md)
   The playlist contains all the audiobooks in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindRingtones](itlibdistinguishedplaylistkind/kindringtones.md)
+- [ITLibDistinguishedPlaylistKind.kindRingtones](./itlibdistinguishedplaylistkind/kindringtones.md)
   The playlist contains all the iOS ringtones in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindPodcasts](itlibdistinguishedplaylistkind/kindpodcasts.md)
+- [ITLibDistinguishedPlaylistKind.kindPodcasts](./itlibdistinguishedplaylistkind/kindpodcasts.md)
   The playlist contains all the podcasts in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindVoiceMemos](itlibdistinguishedplaylistkind/kindvoicememos.md)
+- [ITLibDistinguishedPlaylistKind.kindVoiceMemos](./itlibdistinguishedplaylistkind/kindvoicememos.md)
   The playlist contains all the voice memos in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindPurchases](itlibdistinguishedplaylistkind/kindpurchases.md)
+- [ITLibDistinguishedPlaylistKind.kindPurchases](./itlibdistinguishedplaylistkind/kindpurchases.md)
   The playlist contains all the user’s purchases from the iTunes Store.
-- [ITLibDistinguishedPlaylistKind.kindiTunesU](itlibdistinguishedplaylistkind/kinditunesu.md)
+- [ITLibDistinguishedPlaylistKind.kindiTunesU](./itlibdistinguishedplaylistkind/kinditunesu.md)
   The playlist contains all the user’s iTunes U items.
-- [ITLibDistinguishedPlaylistKind.kind90sMusic](itlibdistinguishedplaylistkind/kind90smusic.md)
+- [ITLibDistinguishedPlaylistKind.kind90sMusic](./itlibdistinguishedplaylistkind/kind90smusic.md)
   The default Smart Playlist that iTunes creates of the user’s music from the 1990s.
-- [ITLibDistinguishedPlaylistKind.kindMyTopRated](itlibdistinguishedplaylistkind/kindmytoprated.md)
+- [ITLibDistinguishedPlaylistKind.kindMyTopRated](./itlibdistinguishedplaylistkind/kindmytoprated.md)
   The default Smart Playlist that iTunes creates of the user’s top rated media items.
-- [ITLibDistinguishedPlaylistKind.kindTop25MostPlayed](itlibdistinguishedplaylistkind/kindtop25mostplayed.md)
+- [ITLibDistinguishedPlaylistKind.kindTop25MostPlayed](./itlibdistinguishedplaylistkind/kindtop25mostplayed.md)
   The default Smart Playlist that iTunes creates of the user’s 25 most played media items.
-- [ITLibDistinguishedPlaylistKind.kindRecentlyPlayed](itlibdistinguishedplaylistkind/kindrecentlyplayed.md)
+- [ITLibDistinguishedPlaylistKind.kindRecentlyPlayed](./itlibdistinguishedplaylistkind/kindrecentlyplayed.md)
   The default Smart Playlist that iTunes creates of the user’s most recently played media items.
-- [ITLibDistinguishedPlaylistKind.kindRecentlyAdded](itlibdistinguishedplaylistkind/kindrecentlyadded.md)
+- [ITLibDistinguishedPlaylistKind.kindRecentlyAdded](./itlibdistinguishedplaylistkind/kindrecentlyadded.md)
   The default Smart Playlist that iTunes creates of the user’s most recently added media items.
-- [ITLibDistinguishedPlaylistKind.kindMusicVideos](itlibdistinguishedplaylistkind/kindmusicvideos.md)
+- [ITLibDistinguishedPlaylistKind.kindMusicVideos](./itlibdistinguishedplaylistkind/kindmusicvideos.md)
   The default Smart Playlist that iTunes creates of the user’s music videos.
-- [ITLibDistinguishedPlaylistKind.kindClassicalMusic](itlibdistinguishedplaylistkind/kindclassicalmusic.md)
+- [ITLibDistinguishedPlaylistKind.kindClassicalMusic](./itlibdistinguishedplaylistkind/kindclassicalmusic.md)
   The default Smart Playlist that iTunes creates of the user’s classical music.
-- [ITLibDistinguishedPlaylistKind.kindLibraryMusicVideos](itlibdistinguishedplaylistkind/kindlibrarymusicvideos.md)
+- [ITLibDistinguishedPlaylistKind.kindLibraryMusicVideos](./itlibdistinguishedplaylistkind/kindlibrarymusicvideos.md)
   The playlist contains all the music videos in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindHomeVideos](itlibdistinguishedplaylistkind/kindhomevideos.md)
+- [ITLibDistinguishedPlaylistKind.kindHomeVideos](./itlibdistinguishedplaylistkind/kindhomevideos.md)
   The playlist contains all the user’s home videos in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindApplications](itlibdistinguishedplaylistkind/kindapplications.md)
+- [ITLibDistinguishedPlaylistKind.kindApplications](./itlibdistinguishedplaylistkind/kindapplications.md)
   The playlist contains all the user’s iOS apps in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindLovedSongs](itlibdistinguishedplaylistkind/kindlovedsongs.md)
+- [ITLibDistinguishedPlaylistKind.kindLovedSongs](./itlibdistinguishedplaylistkind/kindlovedsongs.md)
   The playlist contains all the user’s loved music.
-- [ITLibDistinguishedPlaylistKind.kindMusicShowsAndMovies](itlibdistinguishedplaylistkind/kindmusicshowsandmovies.md)
+- [ITLibDistinguishedPlaylistKind.kindMusicShowsAndMovies](./itlibdistinguishedplaylistkind/kindmusicshowsandmovies.md)
   The default Smart Playlist that iTunes creates of the user’s music shows and movies.
 ### Initializers
-- [init?(rawValue: UInt)](itlibdistinguishedplaylistkind/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./itlibdistinguishedplaylistkind/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var name: String](itlibplaylist/name.md)
+### Getting Playlist Info
+- [var name: String](./itlibplaylist/name.md)
   The name or title of the playlist.
-- [var items: [ITLibMediaItem]](itlibplaylist/items.md)
+- [var items: [ITLibMediaItem]](./itlibplaylist/items.md)
   The media items (tracks) in the playlist.
-- [var parentID: NSNumber?](itlibplaylist/parentid.md)
+- [var parentID: NSNumber?](./itlibplaylist/parentid.md)
   The unique persistent identifier of the playlist’s parent playlist.
-- [var isPrimary: Bool](itlibplaylist/isprimary.md)
+- [var isPrimary: Bool](./itlibplaylist/isprimary.md)
   A Boolean value that indicates whether the playlist is the primary playlist.
-- [var isVisible: Bool](itlibplaylist/isvisible.md)
+- [var isVisible: Bool](./itlibplaylist/isvisible.md)
   A Boolean value that indicates whether the playlist is visible to the user in iTunes.
-- [var distinguishedKind: ITLibDistinguishedPlaylistKind](itlibplaylist/distinguishedkind.md)
+- [var distinguishedKind: ITLibDistinguishedPlaylistKind](./itlibplaylist/distinguishedkind.md)
   An indication of whether the playlist has a special distinction.
-- [var kind: ITLibPlaylistKind](itlibplaylist/kind.md)
+- [var kind: ITLibPlaylistKind](./itlibplaylist/kind.md)
   An indication of the type of playlist.
-- [enum ITLibPlaylistKind](itlibplaylistkind.md)
+- [enum ITLibPlaylistKind](./itlibplaylistkind.md)
   These constants specify the possible kinds of playlists.
 
 

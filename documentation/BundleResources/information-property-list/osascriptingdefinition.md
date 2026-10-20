@@ -1,14 +1,16 @@
 # OSAScriptingDefinition
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `OSAScriptingDefinition` (Scripting definition file name)
+- **Type**: string
 
 
 ---

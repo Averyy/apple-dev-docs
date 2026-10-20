@@ -1,7 +1,8 @@
 # prediction
 
 **Framework**: WirelessInsights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Confidence that the predicted event will occur.
 
@@ -17,11 +18,12 @@ let prediction: ServicePrediction.Confidence
 
 ## See Also
 
-- [let startTime: ServicePrediction.Confidence](serviceprediction/confidencescore-swift.struct/starttime.md)
+### Accessing prediction confidence scores
+- [let startTime: ServicePrediction.Confidence](./starttime.md)
   Confidence of the start time if the predicted event occurs.
-- [let duration: ServicePrediction.Confidence](serviceprediction/confidencescore-swift.struct/duration.md)
+- [let duration: ServicePrediction.Confidence](./duration.md)
   Confidence of the duration if the predicted event occurs.
-- [ServicePrediction.Confidence](serviceprediction/confidence.md)
+- [ServicePrediction.Confidence](../confidence.md)
   An enumeration of levels of confidence for a prediction or one of its properties.
 
 

@@ -1,7 +1,8 @@
 # Repeated.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a valid position in the collection.
 

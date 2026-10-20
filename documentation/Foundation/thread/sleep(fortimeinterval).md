@@ -1,7 +1,8 @@
 # sleep(forTimeInterval:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sleeps the thread for a given time interval.
 
@@ -20,6 +21,10 @@ Sleeps the thread for a given time interval.
 class func sleep(forTimeInterval ti: TimeInterval)
 ```
 
+```objc
++ (void) sleepForTimeInterval:(NSTimeInterval) ti;
+```
+
 #### Discussion
 
 No run loop processing occurs while the thread is blocked.
@@ -30,11 +35,12 @@ No run loop processing occurs while the thread is blocked.
 
 ## See Also
 
-- [class func sleep(until: Date)](thread/sleep(until:).md)
+### Stopping a Thread
+- [class func sleep(until: Date)](./sleep%28until%29.md)
   Blocks the current thread until the time specified.
-- [class func exit()](thread/exit.md)
+- [class func exit()](./exit%28%29.md)
   Terminates the current thread.
-- [func cancel()](thread/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Changes the cancelled state of the receiver to indicate that it should exit.
 
 

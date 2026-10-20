@@ -7,11 +7,11 @@ Indicates whether the given path identifies an existent file.
 
 ## Declaration
 
-```swift
+```
 fileExistsAtPath(filePath)
 ```
 
-#### Return_value
+#### Return Value
 
 `true` when `filePath` identifies an existent file; `false` otherwise.
 
@@ -21,11 +21,13 @@ fileExistsAtPath(filePath)
 
 ## See Also
 
-- [plistAtPath](files/1812182-plistatpath.md)
+### Accessing Files
+- [plistAtPath](./api-1812182-plistatpath.md)
   Provides the contents of a given plist file.
-- [bundleAtPath](files/1812190-bundleatpath.md)
+- [bundleAtPath](./api-1812190-bundleatpath.md)
   Provides the contents of the info plist file of the identified bundle.
-- [Installer JS](installer_js.md)
+### Related Documentation
+- [Installer JS](../installer_js.md)
   Manage and customize the installation and distribution experience.
 
 

@@ -1,7 +1,8 @@
 # isCinematicVideoMetadataCaptureSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether capturing cinematic video metadata to the movie file is supported in the current session configuration.
 
@@ -16,6 +17,10 @@ Returns whether capturing cinematic video metadata to the movie file is supporte
 
 ```swift
 var isCinematicVideoMetadataCaptureSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isCinematicVideoMetadataCaptureSupported) BOOL cinematicVideoMetadataCaptureSupported;
 ```
 
 #### Discussion

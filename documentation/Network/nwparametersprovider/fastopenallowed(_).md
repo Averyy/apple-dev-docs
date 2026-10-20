@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Allow fast open to be used on a connection.
@@ -32,6 +33,12 @@ As a side effect, this may implicitly enable fast open or early data for protoco
 ## Parameters
 
 - `allowed`: True if fast open should be used, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func fastOpenAllowed(Bool) -> Self](./fastopenallowed%28_%29-29iom.md)
+  Allow fast open to be used on a connection.
 
 
 ---

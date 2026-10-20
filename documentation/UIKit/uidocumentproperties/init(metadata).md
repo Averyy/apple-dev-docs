@@ -1,7 +1,8 @@
 # init(metadata:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document properties object from the metadata object you specify.
 
@@ -17,6 +18,10 @@ Creates a document properties object from the metadata object you specify.
 init(metadata: LPLinkMetadata)
 ```
 
+```objc
+- (instancetype) initWithMetadata:(LPLinkMetadata *) metadata;
+```
+
 #### Discussion
 
 If you don’t have a URL backing your document, create a metadata object manually to initialize a document properties object.
@@ -27,9 +32,10 @@ If you don’t have a URL backing your document, create a metadata object manual
 
 ## See Also
 
-- [init(url: URL)](uidocumentproperties/init(url:)-zeio.md)
+### Creating a document header
+- [init(url: URL)](./init%28url%29-zeio.md)
   Creates a document properties object from document data at the URL you specify.
-- [var metadata: LPLinkMetadata](uidocumentproperties/metadata.md)
+- [var metadata: LPLinkMetadata](./metadata.md)
   The document’s metadata.
 
 

@@ -1,7 +1,8 @@
 # Animatable
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface Animatable
 ```
 
 ## Topics
 
 ### Instance Methods
-- [getAnimations](animatable/2871390-getanimations.md)
+- [getAnimations](./animatable/api-2871390-getanimations.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # delegateQueue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue the session uses to invoke delegate callbacks.
 
@@ -20,11 +21,16 @@ The dispatch queue the session uses to invoke delegate callbacks.
 var delegateQueue: dispatch_queue_t? { get }
 ```
 
+```objc
+@property (readonly, nullable) dispatch_queue_t delegateQueue;
+```
+
 ## See Also
 
-- [func setDelegate((any AVContentKeySessionDelegate)?, queue: dispatch_queue_t?)](avcontentkeysession/setdelegate(_:queue:).md)
+### Managing the delegate object
+- [func setDelegate((any AVContentKeySessionDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Sets the session’s delegate object and the dispatch queue on which to call the delegate’s methods.
-- [var delegate: (any AVContentKeySessionDelegate)?](avcontentkeysession/delegate.md)
+- [var delegate: (any AVContentKeySessionDelegate)?](./delegate.md)
   The content key session’s delegate object.
 
 

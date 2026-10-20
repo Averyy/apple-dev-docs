@@ -1,7 +1,8 @@
 # isOptional
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this feature is optional.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether this feature is optional.
 var isOptional: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isOptional) BOOL optional;
+```
+
 #### Discussion
 
 Optional values can be `nil`, for models that have inputs related to features being present or not.
 
 ## See Also
 
-- [var name: String](mlfeaturedescription/name.md)
+### Inspecting a feature
+- [var name: String](./name.md)
   The name of this feature.
-- [var type: MLFeatureType](mlfeaturedescription/type.md)
+- [var type: MLFeatureType](./type.md)
   The type of this feature.
-- [enum MLFeatureType](mlfeaturetype.md)
+- [enum MLFeatureType](../mlfeaturetype.md)
   The possible types for feature values, input features, and output features.
 
 

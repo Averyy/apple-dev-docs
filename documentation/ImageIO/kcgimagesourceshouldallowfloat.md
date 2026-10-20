@@ -1,7 +1,8 @@
 # kCGImageSourceShouldAllowFloat
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean that indicates whether to use floating-point values in returned images.
 
@@ -20,31 +21,36 @@ A Boolean that indicates whether to use floating-point values in returned images
 let kCGImageSourceShouldAllowFloat: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageSourceShouldAllowFloat;
+```
+
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which tells the image source not to use floating-point values.
+The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which tells the image source not to use floating-point values.
 
-If the image format supports floating-point values, this key tells the image source to format [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) types using those values. The use of extended-range floating-point values may require additional processing to render in a pleasing manner.
+If the image format supports floating-point values, this key tells the image source to format [`CGImage`](../CoreGraphics/cgimage.md) types using those values. The use of extended-range floating-point values may require additional processing to render in a pleasing manner.
 
 ## See Also
 
-- [let kCGImageSourceTypeIdentifierHint: CFString](kcgimagesourcetypeidentifierhint.md)
+### Specifying the Read Options
+- [let kCGImageSourceTypeIdentifierHint: CFString](./kcgimagesourcetypeidentifierhint.md)
   The uniform type identifier that represents your best guess for the image’s type.
-- [let kCGImageSourceShouldCache: CFString](kcgimagesourceshouldcache.md)
+- [let kCGImageSourceShouldCache: CFString](./kcgimagesourceshouldcache.md)
   A Boolean value that indicates whether to cache the decoded image.
-- [let kCGImageSourceShouldCacheImmediately: CFString](kcgimagesourceshouldcacheimmediately.md)
+- [let kCGImageSourceShouldCacheImmediately: CFString](./kcgimagesourceshouldcacheimmediately.md)
   A Boolean value that indicates whether image decoding and caching happens at image creation time.
-- [let kCGImageSourceCreateThumbnailFromImageIfAbsent: CFString](kcgimagesourcecreatethumbnailfromimageifabsent.md)
+- [let kCGImageSourceCreateThumbnailFromImageIfAbsent: CFString](./kcgimagesourcecreatethumbnailfromimageifabsent.md)
   A Boolean value that indicates whether to create a thumbnail image automatically if the data source doesn’t contain one.
-- [let kCGImageSourceCreateThumbnailFromImageAlways: CFString](kcgimagesourcecreatethumbnailfromimagealways.md)
+- [let kCGImageSourceCreateThumbnailFromImageAlways: CFString](./kcgimagesourcecreatethumbnailfromimagealways.md)
   A Boolean value that indicates whether to always create a thumbnail image.
-- [let kCGImageSourceThumbnailMaxPixelSize: CFString](kcgimagesourcethumbnailmaxpixelsize.md)
+- [let kCGImageSourceThumbnailMaxPixelSize: CFString](./kcgimagesourcethumbnailmaxpixelsize.md)
   The maximum width and height of a thumbnail image, specified in pixels.
-- [let kCGImageSourceCreateThumbnailWithTransform: CFString](kcgimagesourcecreatethumbnailwithtransform.md)
+- [let kCGImageSourceCreateThumbnailWithTransform: CFString](./kcgimagesourcecreatethumbnailwithtransform.md)
   A Boolean value that indicates whether to rotate and scale the thumbnail image to match the image’s orientation and aspect ratio.
-- [let kCGImageSourceSubsampleFactor: CFString](kcgimagesourcesubsamplefactor.md)
+- [let kCGImageSourceSubsampleFactor: CFString](./kcgimagesourcesubsamplefactor.md)
   The factor by which to scale down any returned images.
-- [let kCGImageSourceAllowableTypes: CFString](kcgimagesourceallowabletypes.md)
+- [let kCGImageSourceAllowableTypes: CFString](./kcgimagesourceallowabletypes.md)
   Option key for restricting which image formats can be decoded.
 
 

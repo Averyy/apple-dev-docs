@@ -1,7 +1,8 @@
 # didEndLiveMagnify
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didEndLiveMagnify: NotificationCenter.BaseMessageIdentifier<NSScrollView.DidEndLiveMagnifyMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSScrollView.DidEndLiveMagnifyMessage>`.
 
 
 ---

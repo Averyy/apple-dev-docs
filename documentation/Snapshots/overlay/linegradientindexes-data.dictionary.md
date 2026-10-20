@@ -1,7 +1,8 @@
 # Overlay.LineGradientIndexes
 
 **Framework**: Maps Web Snapshots  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A property that sets the color stops for the gradient, positioned by indexes of points on the polyline.
 
@@ -10,13 +11,14 @@ A property that sets the color stops for the gradient, positioned by indexes of 
 
 ## Declaration
 
-```swift
+```
 object Overlay.LineGradientIndexes
 ```
 
 ## See Also
 
-- [object Overlay.LineGradient](overlay/linegradient-data.dictionary.md)
+### Objects
+- [object Overlay.LineGradient](./linegradient-data.dictionary.md)
   A property that sets the color stops for the gradient, positioned by offsets between 0 and 1.
 
 

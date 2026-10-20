@@ -1,7 +1,8 @@
 # target
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target range.
 
@@ -20,9 +21,10 @@ var target: ClosedRange<Measurement<UnitPower>>
 
 ## See Also
 
-- [var targetQuantityLowerBound: HKQuantity](powerrangealert/targetquantitylowerbound.md)
+### Accessing the alert value
+- [var targetQuantityLowerBound: HKQuantity](./targetquantitylowerbound.md)
   The target’s lower bound.
-- [var targetQuantityUpperBound: HKQuantity](powerrangealert/targetquantityupperbound.md)
+- [var targetQuantityUpperBound: HKQuantity](./targetquantityupperbound.md)
   The target’s upper bound.
 
 

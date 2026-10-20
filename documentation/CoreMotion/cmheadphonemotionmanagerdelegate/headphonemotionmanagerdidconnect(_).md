@@ -1,7 +1,8 @@
 # headphoneMotionManagerDidConnect(_:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a callback to the delegate after you connect headphones.
 
@@ -18,15 +19,20 @@ Performs a callback to the delegate after you connect headphones.
 optional func headphoneMotionManagerDidConnect(_ manager: CMHeadphoneMotionManager)
 ```
 
+```objc
+- (void) headphoneMotionManagerDidConnect:(CMHeadphoneMotionManager *) manager;
+```
+
 ## Parameters
 
 - `manager`: The manager for the connected headphones.
 
 ## See Also
 
-- [func headphoneMotionManagerDidDisconnect(CMHeadphoneMotionManager)](cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect(_:).md)
+### Connecting and Disconnecting Headphones
+- [func headphoneMotionManagerDidDisconnect(CMHeadphoneMotionManager)](./headphonemotionmanagerdiddisconnect%28_%29.md)
   Performs a callback to the delegate after you disconnect headphones.
-- [CMHeadphoneMotionManager.DeviceMotionHandler](cmheadphonemotionmanager/devicemotionhandler.md)
+- [CMHeadphoneMotionManager.DeviceMotionHandler](../cmheadphonemotionmanager/devicemotionhandler.md)
   The type of block callback for handling headphone-motion data.
 
 

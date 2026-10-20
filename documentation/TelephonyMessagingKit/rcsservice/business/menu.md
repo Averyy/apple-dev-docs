@@ -1,7 +1,8 @@
 # RCSService.Business.Menu
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A menu provided by business.
 
@@ -17,31 +18,32 @@ struct Menu
 ## Topics
 
 ### Accessing menu properties
-- [let title: String?](rcsservice/business/menu/title.md)
+- [let title: String?](./menu/title.md)
   Title for menu.
-- [let contents: [RCSService.Business.Menu.Content]](rcsservice/business/menu/contents.md)
+- [let contents: [RCSService.Business.Menu.Content]](./menu/contents.md)
   Array of menu contents.
-- [RCSService.Business.Menu.Content](rcsservice/business/menu/content.md)
+- [RCSService.Business.Menu.Content](./menu/content.md)
   Enumeration defining the contents of menu.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var themeColor: CGColor?](rcsservice/business/themecolor.md)
+### Accessing display information
+- [var themeColor: CGColor?](./themecolor.md)
   Theme color to apply to conversation view.
-- [let backgroundImageURL: URL?](rcsservice/business/backgroundimageurl.md)
+- [let backgroundImageURL: URL?](./backgroundimageurl.md)
   Background image to apply to business information page.
-- [let styleSheetTemplateURL: URL?](rcsservice/business/stylesheettemplateurl.md)
+- [let styleSheetTemplateURL: URL?](./stylesheettemplateurl.md)
   URL referring to a CSS template to be used in rich cards sent by business.
-- [let persistentMenu: RCSService.Business.Menu?](rcsservice/business/persistentmenu.md)
+- [let persistentMenu: RCSService.Business.Menu?](./persistentmenu.md)
   Persistent menu with a nested collection of suggested replies and suggested actions.
 
 

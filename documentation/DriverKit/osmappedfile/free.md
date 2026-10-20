@@ -1,25 +1,27 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [data](osmappedfile/data.md)
-- [init](osmappedfile/init.md)
-- [size](osmappedfile/size.md)
+### Instance Methods
+- [data](./data.md)
+- [init](./init.md)
+- [size](./size.md)
 
 
 ---

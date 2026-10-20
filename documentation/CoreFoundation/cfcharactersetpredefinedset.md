@@ -1,18 +1,19 @@
 # CFCharacterSetPredefinedSet
 
 **Framework**: Core Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines a predefined character set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,55 +21,59 @@ Defines a predefined character set.
 enum CFCharacterSetPredefinedSet
 ```
 
+```c
+enum CFCharacterSetPredefinedSet : CFIndex;
+```
+
 #### Overview
 
-See [`Predefined CFCharacterSet Selector Values`](predefined_cfcharacterset_selector_values.md) for values.
+See [Predefined CFCharacterSet Selector Values](./predefined_cfcharacterset_selector_values.md) for values.
 
 ## Topics
 
 ### Enumeration Cases
-- [CFCharacterSetPredefinedSet.alphaNumeric](cfcharactersetpredefinedset/alphanumeric.md)
+- [CFCharacterSetPredefinedSet.alphaNumeric](./cfcharactersetpredefinedset/alphanumeric.md)
   Alpha Numeric character set (Unicode General Category L*, M*, & N*).
-- [CFCharacterSetPredefinedSet.capitalizedLetter](cfcharactersetpredefinedset/capitalizedletter.md)
+- [CFCharacterSetPredefinedSet.capitalizedLetter](./cfcharactersetpredefinedset/capitalizedletter.md)
   Titlecase character set (Unicode General Category Lt).
-- [CFCharacterSetPredefinedSet.control](cfcharactersetpredefinedset/control.md)
+- [CFCharacterSetPredefinedSet.control](./cfcharactersetpredefinedset/control.md)
   Control character set (Unicode General Category Cc and Cf).
-- [CFCharacterSetPredefinedSet.decimalDigit](cfcharactersetpredefinedset/decimaldigit.md)
+- [CFCharacterSetPredefinedSet.decimalDigit](./cfcharactersetpredefinedset/decimaldigit.md)
   Decimal digit character set.
-- [CFCharacterSetPredefinedSet.decomposable](cfcharactersetpredefinedset/decomposable.md)
+- [CFCharacterSetPredefinedSet.decomposable](./cfcharactersetpredefinedset/decomposable.md)
   Canonically decomposable character set.
-- [CFCharacterSetPredefinedSet.illegal](cfcharactersetpredefinedset/illegal.md)
+- [CFCharacterSetPredefinedSet.illegal](./cfcharactersetpredefinedset/illegal.md)
   Illegal character set.
-- [CFCharacterSetPredefinedSet.letter](cfcharactersetpredefinedset/letter.md)
+- [CFCharacterSetPredefinedSet.letter](./cfcharactersetpredefinedset/letter.md)
   Letter character set (Unicode General Category L* & M*).
-- [CFCharacterSetPredefinedSet.lowercaseLetter](cfcharactersetpredefinedset/lowercaseletter.md)
+- [CFCharacterSetPredefinedSet.lowercaseLetter](./cfcharactersetpredefinedset/lowercaseletter.md)
   Lowercase character set (Unicode General Category Ll).
-- [CFCharacterSetPredefinedSet.newline](cfcharactersetpredefinedset/newline.md)
+- [CFCharacterSetPredefinedSet.newline](./cfcharactersetpredefinedset/newline.md)
   Newline character set (`U000A ~ U000D`, `U0085`, `U2028`, and `U2029`).
-- [CFCharacterSetPredefinedSet.nonBase](cfcharactersetpredefinedset/nonbase.md)
+- [CFCharacterSetPredefinedSet.nonBase](./cfcharactersetpredefinedset/nonbase.md)
   Non-base character set (Unicode General Category M*).
-- [CFCharacterSetPredefinedSet.punctuation](cfcharactersetpredefinedset/punctuation.md)
+- [CFCharacterSetPredefinedSet.punctuation](./cfcharactersetpredefinedset/punctuation.md)
   Punctuation character set (Unicode General Category P*).
-- [CFCharacterSetPredefinedSet.symbol](cfcharactersetpredefinedset/symbol.md)
+- [CFCharacterSetPredefinedSet.symbol](./cfcharactersetpredefinedset/symbol.md)
   Symbol character set (Unicode General Category S*).
-- [CFCharacterSetPredefinedSet.uppercaseLetter](cfcharactersetpredefinedset/uppercaseletter.md)
+- [CFCharacterSetPredefinedSet.uppercaseLetter](./cfcharactersetpredefinedset/uppercaseletter.md)
   Uppercase character set (Unicode General Category Lu and Lt).
-- [CFCharacterSetPredefinedSet.whitespace](cfcharactersetpredefinedset/whitespace.md)
+- [CFCharacterSetPredefinedSet.whitespace](./cfcharactersetpredefinedset/whitespace.md)
   Whitespace character set (Unicode General Category Zs and U0009 CHARACTER TABULATION).
-- [CFCharacterSetPredefinedSet.whitespaceAndNewline](cfcharactersetpredefinedset/whitespaceandnewline.md)
+- [CFCharacterSetPredefinedSet.whitespaceAndNewline](./cfcharactersetpredefinedset/whitespaceandnewline.md)
   Whitespace and Newline character set (Unicode General Category Z*, `U000A ~ U000D`, and `U0085`).
 ### Initializers
-- [init?(rawValue: CFIndex)](cfcharactersetpredefinedset/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./cfcharactersetpredefinedset/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # start(completionHandler:)
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously starts the haptic engine.
 
@@ -16,14 +17,26 @@ Asynchronously starts the haptic engine.
 ## Declaration
 
 ```swift
+func start(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func start() async throws
+```
+
+```objc
+- (void) startWithCompletionHandler:(CHHapticCompletionHandler) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func start() async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func start() async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
@@ -31,11 +44,12 @@ func start() async throws
 
 ## See Also
 
-- [func start() throws](chhapticengine/start.md)
+### Starting and Stopping the Haptic Engine
+- [func start() throws](./start%28%29.md)
   Synchronously starts the haptic engine.
-- [func stop(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/stop(completionhandler:).md)
+- [func stop(completionHandler: (((any Error)?) -> Void)?)](./stop%28completionhandler%29.md)
   Asynchronously stops the haptic engine and executes the completion handler once the engine has stopped.
-- [CHHapticEngine.CompletionHandler](chhapticengine/completionhandler.md)
+- [CHHapticEngine.CompletionHandler](./completionhandler.md)
   A typealias for a completion handler that the engine calls after starting or stopping.
 
 

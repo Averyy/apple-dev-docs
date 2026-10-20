@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature extractor revision number.
 
@@ -29,9 +30,10 @@ In iOS 17 or later, tvOS 17 or later, and macOS 14 or later, revision 2 takes im
 
 ## See Also
 
-- [let cropAndScale: VNImageCropAndScaleOption](imagefeatureprint/cropandscale.md)
+### Getting the properties
+- [let cropAndScale: VNImageCropAndScaleOption](./cropandscale.md)
   The crop and scale options.
-- [static let latestRevision: Int](imagefeatureprint/latestrevision.md)
+- [static let latestRevision: Int](./latestrevision.md)
   The latest feature extractor revision.
 
 

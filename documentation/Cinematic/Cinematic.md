@@ -1,7 +1,8 @@
 # Cinematic
 
 **Framework**: Cinematic  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Integrate playback and editing of assets captured in Cinematic mode into your app.
 
@@ -18,56 +19,56 @@ The Cinematic framework enables you to add professional-level editing and playba
 ## Topics
 
 ### Essentials
-- [Playing and editing Cinematic mode video](playing-and-editing-cinematic-mode-video.md)
+- [Playing and editing Cinematic mode video](./playing-and-editing-cinematic-mode-video.md)
   Play and edit Cinematic mode video with an adjustable depth of field and focus points.
-- [class CNScript](cnscript-1ispe.md)
+- [class CNScript](./cnscript-1ispe.md)
   A collection of focus decisions, focus transitions, detections, and detection tracks associated with a movie captured in Cinematic mode and methods to change them.
 ### Reading and rendering
-- [class CNAssetInfo](cnassetinfo-2ata2.md)
+- [class CNAssetInfo](./cnassetinfo-2ata2.md)
   An object that provides Cinematic-specific information about an asset, including its tracks.
-- [class CNCompositionInfo](cncompositioninfo-7eunn.md)
+- [class CNCompositionInfo](./cncompositioninfo-7eunn.md)
   An object that enables you to add the appropriate number of tracks for a Cinematic asset.
-- [class CNRenderingSession](cnrenderingsession-1hzh8.md)
+- [class CNRenderingSession](./cnrenderingsession-1hzh8.md)
   An object representing the context in which rendering occurs.
 ### Editing
-- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+- [Editing Spatial Audio with an audio mix](./editing-spatial-audio-with-an-audio-mix.md)
   Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
-- [struct CNDetection](cndetection-swift.struct.md)
+- [struct CNDetection](./cndetection-swift.struct.md)
   A structure that represents a detected subject, face, torso or pet at a particular time.
-- [struct CNDecision](cndecision-swift.struct.md)
+- [struct CNDecision](./cndecision-swift.struct.md)
   An object that represents a decision to focus on a particular detection, or group of detections, at a particular time.
-- [class CNDetectionTrack](cndetectiontrack-2bxtd.md)
+- [class CNDetectionTrack](./cndetectiontrack-2bxtd.md)
   An object representing a series of detections of the same subject over time.
-- [class CNFixedDetectionTrack](cnfixeddetectiontrack-93rrw.md)
+- [class CNFixedDetectionTrack](./cnfixeddetectiontrack-93rrw.md)
   An object representing the fixed detection track.
-- [class CNCustomDetectionTrack](cncustomdetectiontrack-9a2zo.md)
+- [class CNCustomDetectionTrack](./cncustomdetectiontrack-9a2zo.md)
   An object representing a discrete detection track composed of individual detections.
-- [enum CNDetectionType](cndetectiontype.md)
+- [enum CNDetectionType](./cndetectiontype.md)
   The type of object detected, such as face, torso, cat, dog and so on.
 ### Custom Object Tracking
-- [struct CNBoundsPrediction](cnboundsprediction-swift.struct.md)
+- [struct CNBoundsPrediction](./cnboundsprediction-swift.struct.md)
   A structure representing the bounds of the predicted subject.
-- [class CNObjectTracker](cnobjecttracker-1n598.md)
+- [class CNObjectTracker](./cnobjecttracker-1n598.md)
   An object that converts a normalized point or rectangle into a detection track that tracks an object over time.
 ### Structures
-- [struct CNCinematicError](cncinematicerror.md)
+- [struct CNCinematicError](./cncinematicerror.md)
 ### Reference
-- [Cinematic Enumerations](cinematic-enumerations.md)
-- [Cinematic Constants](cinematic-constants.md)
-- [Cinematic Data Types](cinematic-data-types.md)
+- [Cinematic Enumerations](./cinematic-enumerations.md)
+- [Cinematic Constants](./cinematic-constants.md)
+- [Cinematic Data Types](./cinematic-data-types.md)
 ### Classes
-- [class CNAssetPreprocessConfiguration](cnassetpreprocessconfiguration-5u7dk.md)
-- [class CNAssetSpatialAudioInfo](cnassetspatialaudioinfo-7hdev.md)
-- [class CNImageRenderingSession](cnimagerenderingsession.md)
+- [class CNAssetPreprocessConfiguration](./cnassetpreprocessconfiguration-5u7dk.md)
+- [class CNAssetSpatialAudioInfo](./cnassetspatialaudioinfo-7hdev.md)
+- [class CNImageRenderingSession](./cnimagerenderingsession.md)
   A session for rendering a shallow depth-of-field (SDoF) effect onto still images using Metal.
-- [class CNImageRenderingSessionConfiguration](cnimagerenderingsessionconfiguration.md)
+- [class CNImageRenderingSessionConfiguration](./cnimagerenderingsessionconfiguration.md)
   Configuration for a CNImageRenderingSession, specifying the rendering quality and algorithm version.
 ### Enumerations
-- [enum CNCinematicCapability](cncinematiccapability.md)
-- [enum CNCinematicResourceVersion](cncinematicresourceversion.md)
-- [enum CNResourceStatus](cnresourcestatus.md)
-- [enum CNSpatialAudioContentType](cnspatialaudiocontenttype.md)
-- [enum CNSpatialAudioRenderingStyle](cnspatialaudiorenderingstyle.md)
+- [enum CNCinematicCapability](./cncinematiccapability.md)
+- [enum CNCinematicResourceVersion](./cncinematicresourceversion.md)
+- [enum CNResourceStatus](./cnresourcestatus.md)
+- [enum CNSpatialAudioContentType](./cnspatialaudiocontenttype.md)
+- [enum CNSpatialAudioRenderingStyle](./cnspatialaudiorenderingstyle.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SWCollaborationMetadataTypeIdentifier
 
 **Framework**: Shared with You  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string constant for the metadata type identifier.
 
@@ -18,15 +19,20 @@ A string constant for the metadata type identifier.
 let SWCollaborationMetadataTypeIdentifier: String
 ```
 
+```c
+extern NSString * const SWCollaborationMetadataTypeIdentifier;
+```
+
 ## See Also
 
-- [class SWCollaborationHighlight](swcollaborationhighlight.md)
+### Collaboration attributes
+- [class SWCollaborationHighlight](./swcollaborationhighlight.md)
   A highlight object that represents an active collaboration.
-- [class SWCollaborationMetadata](../sharedwithyoucore/swcollaborationmetadata.md)
+- [class SWCollaborationMetadata](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata)
   A model object for conveying data during a collaboration.
-- [struct SWCollaborationIdentifier](../sharedwithyoucore/swcollaborationidentifier.md)
+- [struct SWCollaborationIdentifier](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationidentifier)
   A unique identifier for a collaboration.
-- [struct SWLocalCollaborationIdentifier](../sharedwithyoucore/swlocalcollaborationidentifier.md)
+- [struct SWLocalCollaborationIdentifier](https://developer.apple.com/documentation/sharedwithyoucore/swlocalcollaborationidentifier)
   A local identifier for a collaboration.
 
 

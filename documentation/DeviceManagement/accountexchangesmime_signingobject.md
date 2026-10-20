@@ -1,7 +1,8 @@
 # AccountExchangeSMIME_SigningObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings for S/MIME signing. Applicable for “EAS” only.
 
@@ -13,7 +14,7 @@ Settings for S/MIME signing. Applicable for “EAS” only.
 
 ## Declaration
 
-```swift
+```
 object AccountExchangeSMIME_SigningObject
 ```
 
@@ -22,11 +23,16 @@ object AccountExchangeSMIME_SigningObject
 - `Enabled` (boolean) *(required)*: If `true`, the system enables S/MIME signing. Applicable for “EAS” only.
 - `IdentityAssetReference` (string): The identifier of an asset declaration containing the identity required for S/MIME signing of messages sent from this account. Applicable for “EAS” only.
 - `IdentityUserOverrideable` (boolean): If `true`, the user can select an S/MIME signing identity in Settings. Applicable for “EAS” only.
+
+  **Default**: `false`
 - `UserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings. Applicable for “EAS” only.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object AccountExchangeSMIME_EncryptionObject](accountexchangesmime_encryptionobject.md)
+### Objects
+- [object AccountExchangeSMIME_EncryptionObject](./accountexchangesmime_encryptionobject.md)
   Settings for S/MIME encryption. Applicable for “EAS” only.
 
 

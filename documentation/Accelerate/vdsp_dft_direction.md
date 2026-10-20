@@ -1,18 +1,19 @@
 # vDSP_DFT_Direction
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that specifies whether to perform a forward or inverse DFT.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,25 +21,29 @@ An enumeration that specifies whether to perform a forward or inverse DFT.
 enum vDSP_DFT_Direction
 ```
 
+```c
+enum vDSP_DFT_Direction : int;
+```
+
 ## Topics
 
 ### Constants
-- [vDSP_DFT_Direction.FORWARD](vdsp_dft_direction/forward.md)
+- [vDSP_DFT_Direction.FORWARD](./vdsp_dft_direction/forward.md)
   A constant that specifies a forward transform.
-- [vDSP_DFT_Direction.INVERSE](vdsp_dft_direction/inverse.md)
+- [vDSP_DFT_Direction.INVERSE](./vdsp_dft_direction/inverse.md)
   A constant that specifies an inverse transform.
 ### Initializers
-- [init?(rawValue: Int32)](vdsp_dft_direction/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./vdsp_dft_direction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

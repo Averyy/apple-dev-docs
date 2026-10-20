@@ -1,7 +1,8 @@
 # noDelay(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disable Nagle’s algorithm.
 

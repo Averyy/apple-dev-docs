@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 struct os_detail::IOKit_allocator;
 ```
 

@@ -1,7 +1,8 @@
 # ToolbarMinimizationBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The minimization behavior of a toolbar.
 
@@ -22,9 +23,9 @@ struct ToolbarMinimizationBehavior
 
 #### Overview
 
-Use this type with the [`toolbarMinimizationBehavior(_:for:)`](view/toolbarminimizationbehavior(_:for:).md) modifier to control how toolbars minimize in response to scrolling.
+Use this type with the [`toolbarMinimizationBehavior(_:for:)`](./view/toolbarminimizationbehavior%28_,for%29.md) modifier to control how toolbars minimize in response to scrolling.
 
-On iOS, you can minimize the navigation bar using [`onScrollDown`](toolbarminimizationbehavior/onscrolldown.md) or [`onScrollUp`](toolbarminimizationbehavior/onscrollup.md):
+On iOS, you can minimize the navigation bar using [`onScrollDown`](./toolbarminimizationbehavior/onscrolldown.md) or [`onScrollUp`](./toolbarminimizationbehavior/onscrollup.md):
 
 ```swift
 NavigationStack {
@@ -39,34 +40,35 @@ NavigationStack {
 ## Topics
 
 ### Getting behaviors
-- [static var automatic: ToolbarMinimizationBehavior](toolbarminimizationbehavior/automatic.md)
-  The system determines the minimize behavior. By default, navigation bars on iOS will minimize when the view has a searchable using the [`toolbarPrincipal`](searchfieldplacement/toolbarprincipal.md) placement.
-- [static let never: ToolbarMinimizationBehavior](toolbarminimizationbehavior/never.md)
+- [static var automatic: ToolbarMinimizationBehavior](./toolbarminimizationbehavior/automatic.md)
+  The system determines the minimize behavior. By default, navigation bars on iOS will minimize when the view has a searchable using the [`toolbarPrincipal`](./searchfieldplacement/toolbarprincipal.md) placement.
+- [static let never: ToolbarMinimizationBehavior](./toolbarminimizationbehavior/never.md)
   The toolbar cannot be minimized.
-- [static let onScrollDown: ToolbarMinimizationBehavior](toolbarminimizationbehavior/onscrolldown.md)
+- [static let onScrollDown: ToolbarMinimizationBehavior](./toolbarminimizationbehavior/onscrolldown.md)
   Minimize when scrolling down.
-- [static let onScrollUp: ToolbarMinimizationBehavior](toolbarminimizationbehavior/onscrollup.md)
+- [static let onScrollUp: ToolbarMinimizationBehavior](./toolbarminimizationbehavior/onscrollup.md)
   Minimize when scrolling up.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+### Minimizing a toolbar
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationbehavior%28_,for%29.md)
   Sets the minimize behavior for the specified bars.
-- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationrestoration%28_,for%29.md)
   Sets the restoration behavior for the specified bars during minimization.
-- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+- [struct ToolbarMinimizationRestoration](./toolbarminimizationrestoration.md)
   The restoration behavior during toolbar minimization.
-- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+- [struct ToolbarMinimizationSafeAreaAdjustment](./toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
 
 

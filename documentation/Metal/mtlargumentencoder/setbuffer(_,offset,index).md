@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a reference to a buffer into the argument buffer.
@@ -20,15 +21,20 @@ Encodes a reference to a buffer into the argument buffer.
 func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 ```
 
+```objc
+- (void) setBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `buffer`: A buffer the method encodes.
 - `offset`: A byte offset for `buffer`.
-- `index`: The index of a buffer within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of a buffer within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 ## See Also
 
-- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlargumentencoder/setbuffers(_:offsets:range:).md)
+### Encoding buffers
+- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setbuffers%28_,offsets,range%29.md)
   Encodes references to an array of buffers into the argument buffer.
 
 

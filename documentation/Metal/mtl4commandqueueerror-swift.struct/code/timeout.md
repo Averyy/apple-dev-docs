@@ -1,7 +1,8 @@
 # MTL4CommandQueueError.Code.timeout
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the workload takes longer to execute than the system allows.
 
@@ -17,6 +18,10 @@ Indicates the workload takes longer to execute than the system allows.
 
 ```swift
 case timeout
+```
+
+```c
+MTL4CommandQueueErrorTimeout
 ```
 
 

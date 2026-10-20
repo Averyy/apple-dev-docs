@@ -1,12 +1,13 @@
 # actualTrackingAdjustment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actual tracking value that the system applied during drawing.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The actual tracking value that the system applied during drawing.
 var actualTrackingAdjustment: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat actualTrackingAdjustment;
+```
+
 #### Discussion
 
-If you specified a custom value in the [`minimumTrackingAdjustment`](nsstringdrawingcontext/minimumtrackingadjustment.md) property, when drawing is complete, this property contains the actual tracking value that was used.
+If you specified a custom value in the [`minimumTrackingAdjustment`](./minimumtrackingadjustment.md) property, when drawing is complete, this property contains the actual tracking value that was used.
 
 ## See Also
 
-- [var minimumScaleFactor: CGFloat](nsstringdrawingcontext/minimumscalefactor.md)
+### Accessing the scale factors
+- [var minimumScaleFactor: CGFloat](./minimumscalefactor.md)
   The scale factor that determines the smallest font size to use during drawing.
-- [var actualScaleFactor: CGFloat](nsstringdrawingcontext/actualscalefactor.md)
+- [var actualScaleFactor: CGFloat](./actualscalefactor.md)
   The actual scale factor that the system applied to the font during drawing.
-- [var minimumTrackingAdjustment: CGFloat](nsstringdrawingcontext/minimumtrackingadjustment.md)
+- [var minimumTrackingAdjustment: CGFloat](./minimumtrackingadjustment.md)
   The smallest amount of space, in points, to maintain between characters.
 
 

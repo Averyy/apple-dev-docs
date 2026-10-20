@@ -1,78 +1,79 @@
 # Collection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [LazyPrefixWhileSequence.Index](lazyprefixwhilesequence/index.md)
+- [LazyPrefixWhileSequence.Index](./index.md)
   A position in a `LazyPrefixWhileCollection` or `LazyPrefixWhileBidirectionalCollection` instance.
 ### Instance Properties
-- [var count: Int](lazyprefixwhilesequence/count.md)
+- [var count: Int](./count.md)
   The number of elements in the collection.
-- [var endIndex: LazyPrefixWhileSequence<Base>.Index](lazyprefixwhilesequence/endindex.md)
+- [var endIndex: LazyPrefixWhileSequence<Base>.Index](./endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: DefaultIndices<Self>](lazyprefixwhilesequence/indices-swift.property.md)
+- [var indices: DefaultIndices<Self>](./indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var isEmpty: Bool](lazyprefixwhilesequence/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var startIndex: LazyPrefixWhileSequence<Base>.Index](lazyprefixwhilesequence/startindex.md)
+- [var startIndex: LazyPrefixWhileSequence<Base>.Index](./startindex.md)
   The position of the first element in a nonempty collection.
 ### Instance Methods
-- [func distance(from: Self.Index, to: Self.Index) -> Int](lazyprefixwhilesequence/distance(from:to:)-5ytzv.md)
+- [func distance(from: Self.Index, to: Self.Index) -> Int](./distance%28from,to%29-5ytzv.md)
   Returns the distance between two indices.
-- [func firstIndex(of: Self.Element) -> Self.Index?](lazyprefixwhilesequence/firstindex(of:).md)
+- [func firstIndex(of: Self.Element) -> Self.Index?](./firstindex%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](lazyprefixwhilesequence/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func formIndex(inout Self.Index, offsetBy: Int)](lazyprefixwhilesequence/formindex(_:offsetby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](lazyprefixwhilesequence/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func formIndex(after: inout Self.Index)](lazyprefixwhilesequence/formindex(after:).md)
+- [func formIndex(after: inout Self.Index)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(Self.Index, offsetBy: Int) -> Self.Index](lazyprefixwhilesequence/index(_:offsetby:)-2y8r8.md)
+- [func index(Self.Index, offsetBy: Int) -> Self.Index](./index%28_,offsetby%29-2y8r8.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](lazyprefixwhilesequence/index(_:offsetby:limitedby:)-279cj.md)
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](./index%28_,offsetby,limitedby%29-279cj.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(after: LazyPrefixWhileSequence<Base>.Index) -> LazyPrefixWhileSequence<Base>.Index](lazyprefixwhilesequence/index(after:).md)
+- [func index(after: LazyPrefixWhileSequence<Base>.Index) -> LazyPrefixWhileSequence<Base>.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(of: Self.Element) -> Self.Index?](lazyprefixwhilesequence/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func indices(of: Self.Element) -> RangeSet<Self.Index>](lazyprefixwhilesequence/indices(of:).md)
+- [func indices(of: Self.Element) -> RangeSet<Self.Index>](./indices%28of%29.md)
   Returns the indices of all the elements that are equal to the given element.
-- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](lazyprefixwhilesequence/indices(where:).md)
+- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](./indices%28where%29.md)
   Returns the indices of all the elements that match the given predicate.
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](lazyprefixwhilesequence/map(_:)-69szl.md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./map%28_%29-69szl.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func prefix(through: Self.Index) -> Self.SubSequence](lazyprefixwhilesequence/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(upTo: Self.Index) -> Self.SubSequence](lazyprefixwhilesequence/prefix(upto:).md)
+- [func prefix(upTo: Self.Index) -> Self.SubSequence](./prefix%28upto%29.md)
   Returns a subsequence from the start of the collection up to, but not including, the specified position.
-- [func randomElement() -> Self.Element?](lazyprefixwhilesequence/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](lazyprefixwhilesequence/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
-- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](lazyprefixwhilesequence/removingsubranges(_:).md)
+- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./removingsubranges%28_%29.md)
   Returns a collection of the elements in this collection that are not represented by the given range set.
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](lazyprefixwhilesequence/split(separator:maxsplits:omittingemptysubsequences:)-1na6p.md)
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./split%28separator,maxsplits,omittingemptysubsequences%29-1na6p.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func suffix(from: Self.Index) -> Self.SubSequence](lazyprefixwhilesequence/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
-- [subscript(LazyPrefixWhileSequence<Base>.Index) -> LazyPrefixWhileSequence<Base>.Element](lazyprefixwhilesequence/subscript(_:).md)
+- [subscript(LazyPrefixWhileSequence<Base>.Index) -> LazyPrefixWhileSequence<Base>.Element](./subscript%28_%29.md)
   Accesses the element at the specified position.
-- [subscript(UnboundedRange) -> Self.SubSequence](lazyprefixwhilesequence/subscript(_:)-1oo1v.md)
-- [subscript(Range<Self.Index>) -> Slice<Self>](lazyprefixwhilesequence/subscript(_:)-59k49.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-1oo1v.md)
+- [subscript(Range<Self.Index>) -> Slice<Self>](./subscript%28_%29-59k49.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](lazyprefixwhilesequence/subscript(_:)-75yeo.md)
+- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./subscript%28_%29-75yeo.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript<R>(R) -> Self.SubSequence](lazyprefixwhilesequence/subscript(_:)-9tkrc.md)
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-9tkrc.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 ### Type Aliases
-- [LazyPrefixWhileSequence.Indices](lazyprefixwhilesequence/indices.md)
+- [LazyPrefixWhileSequence.Indices](./indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [LazyPrefixWhileSequence.SubSequence](lazyprefixwhilesequence/subsequence.md)
+- [LazyPrefixWhileSequence.SubSequence](./subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
 

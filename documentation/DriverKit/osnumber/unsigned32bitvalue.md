@@ -1,19 +1,20 @@
 # unsigned32BitValue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of the OSNumber as a uint32_t value.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t unsigned32BitValue() const;
 ```
 
@@ -23,13 +24,14 @@ Returns the value of the OSNumber as a uint32_t value.
 
 ## See Also
 
-- [unsigned8BitValue](osnumber/unsigned8bitvalue.md)
+### Getting Integer Values
+- [unsigned8BitValue](./unsigned8bitvalue.md)
   Returns the value of the OSNumber as a uint8_t value.
-- [unsigned16BitValue](osnumber/unsigned16bitvalue.md)
+- [unsigned16BitValue](./unsigned16bitvalue.md)
   Returns the value of the OSNumber as a uint16_t value.
-- [unsigned64BitValue](osnumber/unsigned64bitvalue.md)
+- [unsigned64BitValue](./unsigned64bitvalue.md)
   Returns the value of the OSNumber as a uint64_t value.
-- [OSNumberGetUInt64Value](osnumbergetuint64value.md)
+- [OSNumberGetUInt64Value](../osnumbergetuint64value.md)
 
 
 ---

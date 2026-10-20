@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index that’s one greater than the last valid subscript argument.
 
@@ -23,7 +24,8 @@ The index that’s one greater than the last valid subscript argument.
 
 ## See Also
 
-- [var startIndex: Int](fetchedresults/startindex.md)
+### Getting indices
+- [var startIndex: Int](./startindex.md)
   The index of the first entity in the results collection.
 
 

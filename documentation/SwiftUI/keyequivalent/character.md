@@ -1,7 +1,8 @@
 # character
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character value that the key equivalent represents.
 
@@ -21,7 +22,8 @@ var character: Character
 
 ## See Also
 
-- [init(Character)](keyequivalent/init(_:).md)
+### Creating a key equivalent
+- [init(Character)](./init%28_%29.md)
   Creates a new key equivalent from the given character value.
 
 

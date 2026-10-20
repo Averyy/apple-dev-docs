@@ -1,7 +1,8 @@
 # ContoursObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the detected contours in an image.
 
@@ -23,36 +24,36 @@ struct ContoursObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNContoursObservation)](contoursobservation/init(_:).md)
+- [init(VNContoursObservation)](./contoursobservation/init%28_%29.md)
   Creates a contours observation.
 ### Inspecting an observation
-- [var contourCount: Int](contoursobservation/contourcount.md)
+- [var contourCount: Int](./contoursobservation/contourcount.md)
   The total number of detected contours.
-- [var normalizedPath: CGPath](contoursobservation/normalizedpath.md)
+- [var normalizedPath: CGPath](./contoursobservation/normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
-- [var topLevelContours: [ContoursObservation.Contour]](contoursobservation/toplevelcontours.md)
+- [var topLevelContours: [ContoursObservation.Contour]](./contoursobservation/toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
 ### Getting the contours
-- [ContoursObservation.Contour](contoursobservation/contour.md)
+- [ContoursObservation.Contour](./contoursobservation/contour.md)
   An object that represents a detected contour in an image.
-- [func contourAtIndex(Int) -> ContoursObservation.Contour?](contoursobservation/contouratindex(_:).md)
+- [func contourAtIndex(Int) -> ContoursObservation.Contour?](./contoursobservation/contouratindex%28_%29.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
-- [func countourAtIndexPath(IndexPath) -> ContoursObservation.Contour?](contoursobservation/countouratindexpath(_:).md)
+- [func countourAtIndexPath(IndexPath) -> ContoursObservation.Contour?](./contoursobservation/countouratindexpath%28_%29.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

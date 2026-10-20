@@ -1,14 +1,15 @@
 # doMap
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn doMap(vm_map_t addressMap, IOVirtualAddress *atAddress, IOOptionBits options, IOByteCount sourceOffset, IOByteCount length);
 ```
 

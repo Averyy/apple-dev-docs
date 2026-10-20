@@ -1,7 +1,8 @@
 # chart3DCameraProjection(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -18,9 +19,10 @@ func chart3DCameraProjection(_ projection: Chart3DCameraProjection = .automatic)
 
 ## See Also
 
-- [func chart3DPose(_:)](view/chart3dpose(_:).md)
+### 3D configuration
+- [func chart3DPose(_:)](./chart3dpose%28_%29.md)
   Associates a binding to be updated when the 3D chart’s pose is changed by an interaction.
-- [func chart3DRenderingStyle(Chart3DRenderingStyle) -> some View](view/chart3drenderingstyle(_:).md)
+- [func chart3DRenderingStyle(Chart3DRenderingStyle) -> some View](./chart3drenderingstyle%28_%29.md)
 
 
 ---

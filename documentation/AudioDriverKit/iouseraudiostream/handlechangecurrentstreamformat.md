@@ -1,7 +1,8 @@
 # HandleChangeCurrentStreamFormat
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the stream the format is changing.
 
@@ -10,17 +11,17 @@ Tells the stream the format is changing.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeCurrentStreamFormat(const IOUserAudioStreamBasicDescription *in_format);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation calls [`SetCurrentStreamFormat`](iouseraudiostream/setcurrentstreamformat.md) and returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) upon success.
+The default implementation calls [`SetCurrentStreamFormat`](./setcurrentstreamformat.md) and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ The default implementation calls [`SetCurrentStreamFormat`](iouseraudiostream/se
 
 ## See Also
 
-- [HandleChangeStreamIsActive](iouseraudiostream/handlechangestreamisactive.md)
+### Managing Stream Changes
+- [HandleChangeStreamIsActive](./handlechangestreamisactive.md)
   Tells the stream the activity state is changing.
-- [DeviceSampleRateChanged](iouseraudiostream/devicesampleratechanged.md)
+- [DeviceSampleRateChanged](./devicesampleratechanged.md)
   Updates stream formats, in response to the owning audio device changing its sample rate.
 
 

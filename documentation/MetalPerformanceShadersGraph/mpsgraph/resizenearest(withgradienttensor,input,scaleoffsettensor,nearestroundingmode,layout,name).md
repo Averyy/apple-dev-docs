@@ -1,7 +1,8 @@
 # resizeNearest(withGradientTensor:input:scaleOffsetTensor:nearestRoundingMode:layout:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Resize gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Resize gradient operation and returns the result tensor.
 
 ```swift
 func resizeNearest(withGradientTensor gradient: MPSGraphTensor, input: MPSGraphTensor, scaleOffsetTensor scaleOffset: MPSGraphTensor, nearestRoundingMode: MPSGraphResizeNearestRoundingMode, layout: MPSGraphTensorNamedDataLayout, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeNearestWithGradientTensor:(MPSGraphTensor *) gradient input:(MPSGraphTensor *) input scaleOffsetTensor:(MPSGraphTensor *) scaleOffset nearestRoundingMode:(MPSGraphResizeNearestRoundingMode) nearestRoundingMode layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
 #### Return Value

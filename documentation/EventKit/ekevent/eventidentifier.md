@@ -1,7 +1,8 @@
 # eventIdentifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the event.
 
@@ -19,41 +20,46 @@ A unique identifier for the event.
 var eventIdentifier: String! { get }
 ```
 
+```objc
+@property (nonatomic, readonly, null_unspecified) NSString * eventIdentifier;
+```
+
 ## Mentions
 
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
 #### Discussion
 
-You can use this identifier to look up an event with the EKEventStore method [`event(withIdentifier:)`](ekeventstore/event(withidentifier:).md).
+You can use this identifier to look up an event with the EKEventStore method [`event(withIdentifier:)`](../ekeventstore/event%28withidentifier%29.md).
 
 If the calendar of an event changes, its identifier most likely changes as well.
 
 ## See Also
 
-- [var availability: EKEventAvailability](ekevent/availability.md)
+### Accessing Event Properties
+- [var availability: EKEventAvailability](./availability.md)
   The availability setting for the event.
-- [var startDate: Date!](ekevent/startdate.md)
+- [var startDate: Date!](./startdate.md)
   The start date of the event.
-- [var endDate: Date!](ekevent/enddate.md)
+- [var endDate: Date!](./enddate.md)
   The end date for the event.
-- [var isAllDay: Bool](ekevent/isallday.md)
+- [var isAllDay: Bool](./isallday.md)
   A Boolean value that indicates whether the event is an all-day event.
-- [var occurrenceDate: Date!](ekevent/occurrencedate.md)
+- [var occurrenceDate: Date!](./occurrencedate.md)
   The original occurrence date of an event if it is part of a recurring series.
-- [var isDetached: Bool](ekevent/isdetached.md)
+- [var isDetached: Bool](./isdetached.md)
   A Boolean value that indicates whether an event is a detached instance of a repeating event.
-- [var organizer: EKParticipant?](ekevent/organizer.md)
+- [var organizer: EKParticipant?](./organizer.md)
   The organizer associated with the event.
-- [var status: EKEventStatus](ekevent/status.md)
+- [var status: EKEventStatus](./status.md)
   The status of the event.
-- [var birthdayContactIdentifier: String?](ekevent/birthdaycontactidentifier.md)
+- [var birthdayContactIdentifier: String?](./birthdaycontactidentifier.md)
   The contact identifier of the person for this birthday event.
-- [var structuredLocation: EKStructuredLocation?](ekevent/structuredlocation.md)
+- [var structuredLocation: EKStructuredLocation?](./structuredlocation.md)
   The event’s location with a potential geocoordinate.
-- [var birthdayPersonID: Int](ekevent/birthdaypersonid.md)
+- [var birthdayPersonID: Int](./birthdaypersonid.md)
   The Address Book framework record identifier of the person for this birthday event.
-- [var birthdayPersonUniqueID: String?](ekevent/birthdaypersonuniqueid.md)
+- [var birthdayPersonUniqueID: String?](./birthdaypersonuniqueid.md)
   The Address Book framework record identifier of the person for this birthday event.
 
 

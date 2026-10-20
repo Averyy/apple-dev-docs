@@ -1,10 +1,11 @@
 # kMusicDeviceParam_Volume
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kMusicDeviceParam_Volume: AudioUnitParameterID { get }
 ```
 
+```c
+kMusicDeviceParam_Volume
+```
+
 ## See Also
 
-- [var kMusicDeviceParam_ReverbVolume: AudioUnitParameterID](kmusicdeviceparam_reverbvolume.md)
-- [var kMusicDeviceParam_Tuning: AudioUnitParameterID](kmusicdeviceparam_tuning.md)
+### Constants
+- [var kMusicDeviceParam_ReverbVolume: AudioUnitParameterID](./kmusicdeviceparam_reverbvolume.md)
+- [var kMusicDeviceParam_Tuning: AudioUnitParameterID](./kmusicdeviceparam_tuning.md)
 
 
 ---

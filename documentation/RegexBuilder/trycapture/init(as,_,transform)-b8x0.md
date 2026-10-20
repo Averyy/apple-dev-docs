@@ -1,7 +1,8 @@
 # init(as:_:transform:)
 
 **Framework**: RegexBuilder  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
 
@@ -11,7 +12,7 @@ Creates a capture for the given component using the specified reference, attempt
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

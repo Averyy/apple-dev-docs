@@ -1,7 +1,8 @@
 # ErrorUnrecognizedDevice
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error response that indicates a device needs to unenroll.
 
@@ -16,7 +17,7 @@ An error response that indicates a device needs to unenroll.
 
 ## Declaration
 
-```swift
+```
 object ErrorUnrecognizedDevice
 ```
 
@@ -29,18 +30,21 @@ The MDM server returns this response when it doesn’t recognize the device maki
 ## Properties
 
 - `code` (string) *(required)*: Indicates that the device isn’t recognized by the server. This causes the device to unenroll from MDM.
+
+  **Allowed Values**: `com.apple.unrecognized.device`
 - `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
 - `message` (string): A description of the error to display to the user.
 
 ## See Also
 
-- [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
+### Enrollment errors
+- [object ErrorCodePairingTokenMissing](./errorcodepairingtokenmissing.md)
   An error response that indicates a missing pairing token.
-- [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)
+- [object ErrorCodePlatformSSORequired](./errorcodeplatformssorequired.md)
   An error response that indicates Platform SSO is required.
-- [object ErrorCodeSoftwareUpdateRequired](errorcodesoftwareupdaterequired.md)
+- [object ErrorCodeSoftwareUpdateRequired](./errorcodesoftwareupdaterequired.md)
   An error response that indicates the system requires a software update.
-- [object ErrorWellKnownFailed](errorwellknownfailed.md)
+- [object ErrorWellKnownFailed](./errorwellknownfailed.md)
   An error response that indicates a well-known service discovery request failed.
 
 

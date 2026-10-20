@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct entry_point_command {
     ...
 };
@@ -17,10 +17,10 @@ struct entry_point_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](entry_point_command/1525356-cmd.md)
-- [cmdsize](entry_point_command/1525574-cmdsize.md)
-- [entryoff](entry_point_command/1525899-entryoff.md)
-- [stacksize](entry_point_command/1525330-stacksize.md)
+- [cmd](./entry_point_command/api-1525356-cmd.md)
+- [cmdsize](./entry_point_command/api-1525574-cmdsize.md)
+- [entryoff](./entry_point_command/api-1525899-entryoff.md)
+- [stacksize](./entry_point_command/api-1525330-stacksize.md)
 
 
 ---

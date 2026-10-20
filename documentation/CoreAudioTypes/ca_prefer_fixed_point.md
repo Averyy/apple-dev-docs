@@ -1,7 +1,8 @@
 # CA_PREFER_FIXED_POINT
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var CA_PREFER_FIXED_POINT: Int32 { get }
+```
+
+```c
+#define CA_PREFER_FIXED_POINT
 ```
 
 

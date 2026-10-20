@@ -1,7 +1,8 @@
 # MDLMaterialTextureWrapMode.clamp
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sampling at any texture coordinate outside the `0.0` to `1.0` range returns the texel color from the nearest edge.
 
@@ -19,11 +20,16 @@ Sampling at any texture coordinate outside the `0.0` to `1.0` range returns the 
 case clamp
 ```
 
+```c
+MDLMaterialTextureWrapModeClamp
+```
+
 ## See Also
 
-- [MDLMaterialTextureWrapMode.repeat](mdlmaterialtexturewrapmode/repeat.md)
+### Constants
+- [MDLMaterialTextureWrapMode.repeat](./repeat.md)
   Sampling at texture coordinates outside the `0.0` to `1.0` range results in a repeated tiling effect.
-- [MDLMaterialTextureWrapMode.mirror](mdlmaterialtexturewrapmode/mirror.md)
+- [MDLMaterialTextureWrapMode.mirror](./mirror.md)
   Sampling at texture coordinates outside the `0.0` to `1.0` range results in a mirrored tiling effect.
 
 

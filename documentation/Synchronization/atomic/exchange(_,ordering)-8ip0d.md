@@ -1,7 +1,8 @@
 # exchange(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Atomically sets the current value to `desired` and returns the original value, applying the specified memory ordering.
 
@@ -19,6 +20,8 @@ Atomically sets the current value to `desired` and returns the original value, a
 ```swift
 func exchange(_ desired: consuming Value, ordering: AtomicUpdateOrdering) -> Value
 ```
+
+Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic8BitStorage`.
 
 #### Return Value
 

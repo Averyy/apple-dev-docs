@@ -1,7 +1,8 @@
 # direct
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All forms of input that target content by querying proximity from the input device to the content.
 

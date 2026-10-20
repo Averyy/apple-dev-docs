@@ -1,7 +1,8 @@
 # location
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the cubic uniform B-Spline control point.
 
@@ -20,15 +21,16 @@ let location: CGPoint
 
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](../../importing-external-drawing-data-into-pencilkit.md)
 
 ## See Also
 
-- [let index: Int](pkstrokepath-swift.struct/convertedbezierpoint/index.md)
+### Getting the point data
+- [let index: Int](./index.md)
   The index of the point along the path.
-- [let pointCount: Int](pkstrokepath-swift.struct/convertedbezierpoint/pointcount.md)
+- [let pointCount: Int](./pointcount.md)
   The total number of B-Spline control points in the path.
-- [let bezierSegmentIndex: Int](pkstrokepath-swift.struct/convertedbezierpoint/beziersegmentindex.md)
+- [let bezierSegmentIndex: Int](./beziersegmentindex.md)
   The index of the Bézier segment the point originates from, not including `move to` elements.
 
 

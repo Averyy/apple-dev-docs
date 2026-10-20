@@ -1,7 +1,8 @@
 # blockSpecial
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Block special device
 

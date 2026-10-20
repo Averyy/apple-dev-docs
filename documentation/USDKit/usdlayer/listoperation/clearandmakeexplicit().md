@@ -1,7 +1,8 @@
 # clearAndMakeExplicit()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all authored slots and switches to explicit mode with no items.
 

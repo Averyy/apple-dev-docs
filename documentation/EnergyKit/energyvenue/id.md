@@ -1,14 +1,15 @@
 # id
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the venue.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ let id: UUID
 
 #### Discussion
 
-Use this identifier to submit `ElectricalLoadEvent`s for [`ElectricityGuidance`](electricityguidance.md).
+Use this identifier to submit `ElectricalLoadEvent`s for [`ElectricityGuidance`](../electricityguidance.md).
 
 ## See Also
 
-- [let name: String](energyvenue/name.md)
+### Identifying the location
+- [let name: String](./name.md)
   The name of the Home to which the venue corresponds.
 
 

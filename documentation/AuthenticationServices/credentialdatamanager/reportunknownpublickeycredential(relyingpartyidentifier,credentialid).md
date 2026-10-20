@@ -1,7 +1,8 @@
 # reportUnknownPublicKeyCredential(relyingPartyIdentifier:credentialID:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Report that a specific credential is unknown or no longer accepted. The credential may be removed or hidden by a password manager. This information is shared with all password managers enabled in the system.
 
@@ -21,7 +22,7 @@ func reportUnknownPublicKeyCredential(relyingPartyIdentifier: String, credential
 
 #### Discussion
 
-> **Note**: `ASAuthorizationError` if the system failed to accept the update.
+> **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 
 ## Parameters
 

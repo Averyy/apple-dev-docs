@@ -1,21 +1,26 @@
 # init(descriptor:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a loss layer with the descriptor you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init(descriptor lossDescriptor: MLCLossDescriptor)
+```
+
+```objc
++ (instancetype) layerWithDescriptor:(MLCLossDescriptor *) lossDescriptor;
 ```
 
 ## Parameters
@@ -24,11 +29,12 @@ convenience init(descriptor lossDescriptor: MLCLossDescriptor)
 
 ## See Also
 
-- [convenience init(descriptor: MLCLossDescriptor, weights: MLCTensor)](mlclosslayer/init(descriptor:weights:).md)
+### Creating Loss Layers with Descriptors
+- [convenience init(descriptor: MLCLossDescriptor, weights: MLCTensor)](./init%28descriptor,weights%29.md)
   Creates a loss layer with the descriptor and weights you specify.
-- [class MLCLossDescriptor](mlclossdescriptor.md)
+- [class MLCLossDescriptor](../mlclossdescriptor.md)
   A configuration object you use to create a loss layer.
-- [enum MLCLossType](mlclosstype.md)
+- [enum MLCLossType](../mlclosstype.md)
   A loss function.
 
 

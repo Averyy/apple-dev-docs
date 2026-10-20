@@ -1,7 +1,8 @@
 # AccessoryNotification.Action.ActionType.dismiss
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action type that dismisses a notification.
 
@@ -16,13 +17,14 @@ case dismiss
 
 ## Mentions
 
-- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+- [Responding to forwarded notifications](../../../responding-to-forwarded-notifications.md)
 
 ## See Also
 
-- [AccessoryNotification.Action.ActionType.background](accessorynotification/action/actiontype/background.md)
+### Determining the type of action
+- [AccessoryNotification.Action.ActionType.background](./background.md)
   An action type that handles background interactions with a notification.
-- [AccessoryNotification.Action.ActionType.textInput(placeholder:)](accessorynotification/action/actiontype/textinput(placeholder:).md)
+- [AccessoryNotification.Action.ActionType.textInput(placeholder:)](./textinput%28placeholder%29.md)
   An action type that captures text provided by a person in response to a notification.
 
 

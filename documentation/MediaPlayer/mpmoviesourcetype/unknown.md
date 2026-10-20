@@ -1,17 +1,24 @@
 # MPMovieSourceType.unknown
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case unknown
+```
+
+```c
+MPMovieSourceTypeUnknown
 ```
 
 #### Discussion
@@ -20,8 +27,9 @@ The movie type is not yet known.
 
 ## See Also
 
-- [MPMovieSourceType.file](mpmoviesourcetype/file.md)
-- [MPMovieSourceType.streaming](mpmoviesourcetype/streaming.md)
+### Constants
+- [MPMovieSourceType.file](./file.md)
+- [MPMovieSourceType.streaming](./streaming.md)
 
 
 ---

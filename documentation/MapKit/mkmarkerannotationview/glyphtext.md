@@ -1,7 +1,8 @@
 # glyphText
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display in the marker balloon.
 
@@ -19,19 +20,24 @@ The text to display in the marker balloon.
 var glyphText: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * glyphText;
+```
+
 #### Discussion
 
-Use this property or the [`glyphText`](mkmarkerannotationview/glyphtext.md) property to specify the marker balloon content. If you specify both an image and text, MapKit displays the text.
+Use this property or the [`glyphText`](./glyphtext.md) property to specify the marker balloon content. If you specify both an image and text, MapKit displays the text.
 
 MapKit limits the amount of space available for displaying your glyph text. Specify no more than two or three characters for any strings you assign to this property.
 
 ## See Also
 
-- [var glyphImage: UIImage?](mkmarkerannotationview/glyphimage.md)
+### Setting the Marker Content
+- [var glyphImage: UIImage?](./glyphimage.md)
   An image to display in the marker balloon.
-- [var glyphTintColor: UIColor?](mkmarkerannotationview/glyphtintcolor.md)
+- [var glyphTintColor: UIColor?](./glyphtintcolor.md)
   The color to apply to the glyph text or image.
-- [var selectedGlyphImage: UIImage?](mkmarkerannotationview/selectedglyphimage.md)
+- [var selectedGlyphImage: UIImage?](./selectedglyphimage.md)
   An image to display when the user selects the marker.
 
 

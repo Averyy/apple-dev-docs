@@ -1,7 +1,8 @@
 # preferredAlignmentAndRowBytes(width:height:bitsPerPixel:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the preferred alignment and row bytes for a specified size and bits per pixel.
 
@@ -11,7 +12,7 @@ Returns the preferred alignment and row bytes for a specified size and bits per 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ A tuple that contains the alignment and row bytes.
 
 #### Discussion
 
-If you provide your own buffer storage, call [`preferredAlignmentAndRowBytes(width:height:bitsPerPixel:)`](vimage_buffer/preferredalignmentandrowbytes(width:height:bitsperpixel:).md) to get the row stride that ensures your buffer achieves the best performance.
+If you provide your own buffer storage, call [`preferredAlignmentAndRowBytes(width:height:bitsPerPixel:)`](./preferredalignmentandrowbytes%28width,height,bitsperpixel%29.md) to get the row stride that ensures your buffer achieves the best performance.
 
 ```swift
 let width = 10
@@ -58,7 +59,8 @@ let buffer = vImage_Buffer(data: data,
 
 ## See Also
 
-- [init(data: UnsafeMutableRawPointer!, height: vImagePixelCount, width: vImagePixelCount, rowBytes: Int)](vimage_buffer/init(data:height:width:rowbytes:).md)
+### Creating a buffer that references existing data
+- [init(data: UnsafeMutableRawPointer!, height: vImagePixelCount, width: vImagePixelCount, rowBytes: Int)](./init%28data,height,width,rowbytes%29.md)
   Creates a new buffer with the specified size that references existing data.
 
 

@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_MESSAGE_PARITY_ERROR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_MESSAGE_PARITY_ERROR = 0x09
 ```
 

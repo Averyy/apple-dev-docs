@@ -1,7 +1,8 @@
 # CGContentToneMappingInfo.DefaultOptions
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,17 +22,17 @@ struct DefaultOptions
 ## Topics
 
 ### Initializers
-- [init()](cgcontenttonemappinginfo-swift.enum/defaultoptions/init.md)
-- [init(contentAverageLightLevel: CGContentToneMappingInfo.LightLevel, preferredDynamicRange: CGContentToneMappingInfo.DynamicRange)](cgcontenttonemappinginfo-swift.enum/defaultoptions/init(contentaveragelightlevel:preferreddynamicrange:).md)
+- [init()](./defaultoptions/init%28%29.md)
+- [init(contentAverageLightLevel: CGContentToneMappingInfo.LightLevel, preferredDynamicRange: CGContentToneMappingInfo.DynamicRange)](./defaultoptions/init%28contentaveragelightlevel,preferreddynamicrange%29.md)
 ### Instance Properties
-- [var contentAverageLightLevel: CGContentToneMappingInfo.LightLevel](cgcontenttonemappinginfo-swift.enum/defaultoptions/contentaveragelightlevel.md)
-- [var preferredDynamicRange: CGContentToneMappingInfo.DynamicRange](cgcontenttonemappinginfo-swift.enum/defaultoptions/preferreddynamicrange.md)
+- [var contentAverageLightLevel: CGContentToneMappingInfo.LightLevel](./defaultoptions/contentaveragelightlevel.md)
+- [var preferredDynamicRange: CGContentToneMappingInfo.DynamicRange](./defaultoptions/preferreddynamicrange.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

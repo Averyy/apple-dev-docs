@@ -1,6 +1,7 @@
 # URL filters
 
-**Framework**: Network Extension
+**Framework**: Network Extension  
+**Role**: API Collection
 
 Create a filter that analyzes full URLs, while preserving privacy.
 
@@ -8,31 +9,31 @@ Create a filter that analyzes full URLs, while preserving privacy.
 
 URL filters allow you to filter URL requests by analyzing the full URL against your URL data set (containing URLs you want to block) and determining whether to allow or block access to the URL. The URL filter API is highly performant and supports filtering millions of URLs, which wouldn’t be practical by simply loading a list of disallowed URLs into memory.
 
-Network Extension URL Filter examines all URL requests sent via WebKit and the [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) API. You create and manage a URL filter by using the [`NEURLFilterManager`](neurlfiltermanager.md) API and implementing the [`NEURLFilterControlProvider`](neurlfiltercontrolprovider.md) protocol in your app extension to fetch a Bloom filter onto the device. Network Extension performs URL filtering on your behalf with your URL data set, using both the Bloom filter on the device as well as an off-device database hosted on your Private Information Retrieval (PIR) server. The system first consults the Bloom filter to allow URLs that it can quickly determine aren’t in the filter list, then performs off-device database lookups with your PIR server if necessary. With this appoach, Network Extension URL Filter provides a performant yet privacy-preserving solution for both consumer and managed deployments.
+Network Extension URL Filter examines all URL requests sent via WebKit and the [`URLSession`](../Foundation/urlsession.md) API. You create and manage a URL filter by using the [`NEURLFilterManager`](./neurlfiltermanager.md) API and implementing the [`NEURLFilterControlProvider`](./neurlfiltercontrolprovider.md) protocol in your app extension to fetch a Bloom filter onto the device. Network Extension performs URL filtering on your behalf with your URL data set, using both the Bloom filter on the device as well as an off-device database hosted on your Private Information Retrieval (PIR) server. The system first consults the Bloom filter to allow URLs that it can quickly determine aren’t in the filter list, then performs off-device database lookups with your PIR server if necessary. With this appoach, Network Extension URL Filter provides a performant yet privacy-preserving solution for both consumer and managed deployments.
 
-For an example of writing and configuring a URL filter extension, see the [`Filtering traffic by URL`](filtering-traffic-by-url.md) sample code project.
+For an example of writing and configuring a URL filter extension, see the [Filtering traffic by URL](./filtering-traffic-by-url.md) sample code project.
 
-Register your Network Extension URL Filter configuration on the [`Identity & Trust`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/identity) page in the [`CloudKit Console`](https://developer.apple.comhttps://icloud.developer.apple.com/).
+Register your Network Extension URL Filter configuration on the [Identity & Trust](https://icloud.developer.apple.com/dashboard/identity) page in the [CloudKit Console](https://icloud.developer.apple.com/).
 
-For browsers or any app that doesn’t use WebKit or [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession), use the [`NEURLFilter`](neurlfilter.md) Participation API to voluntarily check URLs. Call the [`verdict(for:)`](neurlfilter/verdict(for:).md) method to check all URL requests and honor the returned verdict by failing the URL requests for blocked URLs.
+For browsers or any app that doesn’t use WebKit or [`URLSession`](../Foundation/urlsession.md), use the [`NEURLFilter`](./neurlfilter.md) Participation API to voluntarily check URLs. Call the [`verdict(for:)`](./neurlfilter/verdict%28for%29.md) method to check all URL requests and honor the returned verdict by failing the URL requests for blocked URLs.
 
 ## Topics
 
 ### URL filters
-- [class NEURLFilterManager](neurlfiltermanager.md)
+- [class NEURLFilterManager](./neurlfiltermanager.md)
   A class you use to configure and control a URL filter.
-- [protocol NEURLFilterControlProvider](neurlfiltercontrolprovider.md)
+- [protocol NEURLFilterControlProvider](./neurlfiltercontrolprovider.md)
   A protocol that defines an object that’s responsible for fetching pre-filter data.
-- [class NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
+- [class NEURLFilterControlProviderConfiguration](./neurlfiltercontrolproviderconfiguration.md)
   A class that defines app extension configurations for the URL Filter control provider app extension.
-- [class NEURLFilter](neurlfilter.md)
+- [class NEURLFilter](./neurlfilter.md)
   A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
 ### Sample code projects
-- [Filtering traffic by URL](filtering-traffic-by-url.md)
+- [Filtering traffic by URL](./filtering-traffic-by-url.md)
   Perform fast and robust filtering of full URLs by managing URL filtering configurations.
-- [Setting up a PIR server for URL filtering](setting-up-a-pir-server-for-url-filtering.md)
+- [Setting up a PIR server for URL filtering](./setting-up-a-pir-server-for-url-filtering.md)
   Configure and run a PIR server to support a URL filter using Apple’s open source container tool.
-- [Using the Bloom filter tool to configure a URL filter](using-the-bloom-filter-tool.md)
+- [Using the Bloom filter tool to configure a URL filter](./using-the-bloom-filter-tool.md)
   Create the files a URL filter needs for its Bloom prefilter.
 
 

@@ -1,7 +1,8 @@
 # FFPROP_AUTOCENTER
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var FFPROP_AUTOCENTER: Int { get }
 ```
 
+```c
+FFPROP_AUTOCENTER
+```
+
 ## See Also
 
-- [var FFPROP_FFGAIN: Int](ffprop_ffgain.md)
+### Constants
+- [var FFPROP_FFGAIN: Int](./ffprop_ffgain.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AssistantSchemas.FilesIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer file management functionality.
 
@@ -23,24 +24,24 @@ protocol FilesIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var createFolder: some AssistantSchemas.Intent](assistantschemas/filesintent/createfolder.md)
+- [var createFolder: some AssistantSchemas.Intent](./filesintent/createfolder.md)
   The app intent conforms to the schema for creating a folder.
-- [var deleteFiles: some AssistantSchemas.Intent](assistantschemas/filesintent/deletefiles.md)
+- [var deleteFiles: some AssistantSchemas.Intent](./filesintent/deletefiles.md)
   The app intent conforms to the schema for deleting files.
-- [var moveFiles: some AssistantSchemas.Intent](assistantschemas/filesintent/movefiles.md)
+- [var moveFiles: some AssistantSchemas.Intent](./filesintent/movefiles.md)
   The app intent conforms to the schema for moving a file.
-- [var openFile: some AssistantSchemas.Intent](assistantschemas/filesintent/openfile.md)
+- [var openFile: some AssistantSchemas.Intent](./filesintent/openfile.md)
   The app intent conforms to the schema for opening a file.
-- [var renameFile: some AssistantSchemas.Intent](assistantschemas/filesintent/renamefile.md)
+- [var renameFile: some AssistantSchemas.Intent](./filesintent/renamefile.md)
   The app intent conforms to the schema for renaming a file.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

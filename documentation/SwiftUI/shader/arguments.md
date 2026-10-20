@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uniform argument values passed to the shader function.
 
@@ -21,7 +22,8 @@ var arguments: [Shader.Argument]
 
 ## See Also
 
-- [var function: ShaderFunction](shader/function.md)
+### Getting the shader function
+- [var function: ShaderFunction](./function.md)
   The shader function called by the shader.
 
 

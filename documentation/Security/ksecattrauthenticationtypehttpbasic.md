@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeHTTPBasic
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 HTTP Basic authentication.
 
@@ -18,6 +19,10 @@ HTTP Basic authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeHTTPBasic: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeHTTPBasic;
 ```
 
 

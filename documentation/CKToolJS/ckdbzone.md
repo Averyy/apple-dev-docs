@@ -1,7 +1,8 @@
 # CKDBZone
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a CloudKit database zone.
 
@@ -10,7 +11,7 @@ An object that represents a CloudKit database zone.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBZone {
 	string zoneName;
 	string canonicalName;
@@ -40,58 +41,59 @@ import type { CKDBZone } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [atomic](ckdbzone/atomic.md)
+- [atomic](./ckdbzone/atomic.md)
   A Boolean value that indicates whether a zone allows atomic changes of multiple records.
-- [canonicalName](ckdbzone/canonicalname.md)
+- [canonicalName](./ckdbzone/canonicalname.md)
   The unique identifier for a zone within a database.
-- [changeToken](ckdbzone/changetoken.md)
+- [changeToken](./ckdbzone/changetoken.md)
   The client change token for the zone.
-- [isDefaultZone](ckdbzone/isdefaultzone.md)
+- [isDefaultZone](./ckdbzone/isdefaultzone.md)
   A Boolean value that indicates whether the zone is a default zone.
-- [isEligibleForHierarchicalShare](ckdbzone/iseligibleforhierarchicalshare.md)
+- [isEligibleForHierarchicalShare](./ckdbzone/iseligibleforhierarchicalshare.md)
   A Boolean value that indicates whether zone is eligible for Hierarchical Share.
-- [isEligibleForZoneShare](ckdbzone/iseligibleforzoneshare.md)
+- [isEligibleForZoneShare](./ckdbzone/iseligibleforzoneshare.md)
   A Boolean value that indicates whether zone is eligible for Zone Share.
-- [isSharable](ckdbzone/issharable.md)
+- [isSharable](./ckdbzone/issharable.md)
   A Boolean value that indicates whether records in this zone can be shared.
-- [ownerRecordName](ckdbzone/ownerrecordname.md)
+- [ownerRecordName](./ckdbzone/ownerrecordname.md)
   The owner of the zone.
-- [zoneName](ckdbzone/zonename.md)
+- [zoneName](./ckdbzone/zonename.md)
   The name that identifies the record zone.
-- [zoneType](ckdbzone/zonetype.md)
+- [zoneType](./ckdbzone/zonetype.md)
   The type for the zone.
 
 ## See Also
 
-- [CKDBAsset](ckdbasset.md)
+### Structures
+- [CKDBAsset](./ckdbasset.md)
   An object that represents an asset uploaded to CloudKit.
-- [CKDBAssetUploadUrlResponse](ckdbassetuploadurlresponse.md)
+- [CKDBAssetUploadUrlResponse](./ckdbassetuploadurlresponse.md)
   An object that represents the results of creating an asset upload URL.
-- [CKDBChangeMetadata](ckdbchangemetadata.md)
+- [CKDBChangeMetadata](./ckdbchangemetadata.md)
   An object that represents metadata about a record change via creation or modification.
-- [CKDBCreateAssetUploadUrlRequestBody](ckdbcreateassetuploadurlrequestbody.md)
+- [CKDBCreateAssetUploadUrlRequestBody](./ckdbcreateassetuploadurlrequestbody.md)
   An object that represents the request for creating an asset upload URL.
-- [CKDBCreateRecordRequestBody](ckdbcreaterecordrequestbody.md)
+- [CKDBCreateRecordRequestBody](./ckdbcreaterecordrequestbody.md)
   An object that represents the request to create a new record.
-- [CKDBCreateZoneRequestBody](ckdbcreatezonerequestbody.md)
+- [CKDBCreateZoneRequestBody](./ckdbcreatezonerequestbody.md)
   An object that represents the request to create a new zone.
-- [CKDBDeleteRecordsByQueryRequestBody](ckdbdeleterecordsbyqueryrequestbody.md)
+- [CKDBDeleteRecordsByQueryRequestBody](./ckdbdeleterecordsbyqueryrequestbody.md)
   An object that represents the request to delete multiple records that match a query.
-- [CKDBDeletedRecordResult](ckdbdeletedrecordresult.md)
+- [CKDBDeletedRecordResult](./ckdbdeletedrecordresult.md)
   An object that represents a deleted record result.
-- [CKDBErrorRecordResult](ckdberrorrecordresult.md)
+- [CKDBErrorRecordResult](./ckdberrorrecordresult.md)
   An object that represents a record lookup failure.
-- [CKDBExistingRecordResult](ckdbexistingrecordresult.md)
+- [CKDBExistingRecordResult](./ckdbexistingrecordresult.md)
   An object that represents a successful record result.
-- [CKDBForRecord](ckdbforrecord.md)
+- [CKDBForRecord](./ckdbforrecord.md)
   An object that represents a record that is being shared.
-- [CKDBLocation](ckdblocation.md)
+- [CKDBLocation](./ckdblocation.md)
   An object that represents a location field value.
-- [CKDBLookupRecordsRequestBody](ckdblookuprecordsrequestbody.md)
+- [CKDBLookupRecordsRequestBody](./ckdblookuprecordsrequestbody.md)
   An object that represents the request for looking up multiple records by record name.
-- [CKDBLookupRecordsResponse](ckdblookuprecordsresponse.md)
+- [CKDBLookupRecordsResponse](./ckdblookuprecordsresponse.md)
   An object that represents the results of a batch record lookup operation.
-- [CKDBModifyRecordRequestBody](ckdbmodifyrecordrequestbody.md)
+- [CKDBModifyRecordRequestBody](./ckdbmodifyrecordrequestbody.md)
   An object that represents the request for updating an existing record.
 
 

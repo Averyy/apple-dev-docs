@@ -1,7 +1,8 @@
 # deriveKey(inputKeyMaterial:info:outputByteCount:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Derives a symmetric encryption key from a main key or passcode using HKDF key derivation with information you specify.
 
@@ -32,11 +33,12 @@ The derived symmetric key.
 
 ## See Also
 
-- [static func deriveKey(inputKeyMaterial: SymmetricKey, outputByteCount: Int) -> SymmetricKey](hkdf/derivekey(inputkeymaterial:outputbytecount:).md)
+### Deriving a key
+- [static func deriveKey(inputKeyMaterial: SymmetricKey, outputByteCount: Int) -> SymmetricKey](./derivekey%28inputkeymaterial,outputbytecount%29.md)
   Derives a symmetric encryption key from a main key or passcode using HKDF key derivation.
-- [static func deriveKey<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt, outputByteCount: Int) -> SymmetricKey](hkdf/derivekey(inputkeymaterial:salt:outputbytecount:).md)
+- [static func deriveKey<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt, outputByteCount: Int) -> SymmetricKey](./derivekey%28inputkeymaterial,salt,outputbytecount%29.md)
   Derives a symmetric encryption key from a main key or passcode using HKDF key derivation with salt that you specify.
-- [static func deriveKey<Salt, Info>(inputKeyMaterial: SymmetricKey, salt: Salt, info: Info, outputByteCount: Int) -> SymmetricKey](hkdf/derivekey(inputkeymaterial:salt:info:outputbytecount:).md)
+- [static func deriveKey<Salt, Info>(inputKeyMaterial: SymmetricKey, salt: Salt, info: Info, outputByteCount: Int) -> SymmetricKey](./derivekey%28inputkeymaterial,salt,info,outputbytecount%29.md)
   Derives a symmetric encryption key from a main key or passcode using HKDF key derivation with information and salt you specify.
 
 

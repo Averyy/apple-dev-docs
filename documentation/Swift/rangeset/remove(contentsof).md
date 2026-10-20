@@ -1,7 +1,8 @@
 # remove(contentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the given range from the range set.
 
@@ -22,7 +23,7 @@ mutating func remove(contentsOf range: Range<Bound>)
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the number of ranges in the range set.
+> **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

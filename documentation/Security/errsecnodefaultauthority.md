@@ -1,7 +1,8 @@
 # errSecNoDefaultAuthority
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No default authority was detected.
 
@@ -18,6 +19,10 @@ No default authority was detected.
 
 ```swift
 var errSecNoDefaultAuthority: OSStatus { get }
+```
+
+```c
+errSecNoDefaultAuthority
 ```
 
 

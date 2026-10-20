@@ -1,12 +1,13 @@
 # readRTFD(fromFile:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to read the RTFD file at the specified path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Attempts to read the RTFD file at the specified path.
 func readRTFD(fromFile path: String) -> Bool
 ```
 
+```objc
+- (BOOL) readRTFDFromFile:(NSString *) path;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -24,11 +29,12 @@ func readRTFD(fromFile path: String) -> Bool
 
 ## See Also
 
-- [func writeRTFD(toFile: String, atomically: Bool) -> Bool](nstext/writertfd(tofile:atomically:).md)
+### Reading and writing RTF files
+- [func writeRTFD(toFile: String, atomically: Bool) -> Bool](./writertfd%28tofile,atomically%29.md)
   Writes the receiver’s text as RTF with attachments to a file or directory at `path`.
-- [func rtfd(from: NSRange) -> Data?](nstext/rtfd(from:).md)
+- [func rtfd(from: NSRange) -> Data?](./rtfd%28from%29.md)
   Returns an NSData object that contains an RTFD stream corresponding to the characters and attributes within `aRange`.
-- [func rtf(from: NSRange) -> Data?](nstext/rtf(from:).md)
+- [func rtf(from: NSRange) -> Data?](./rtf%28from%29.md)
   Returns an NSData object that contains an RTF stream corresponding to the characters and attributes within `aRange`, omitting any attachment characters and attributes.
 
 

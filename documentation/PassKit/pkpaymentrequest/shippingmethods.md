@@ -1,7 +1,8 @@
 # shippingMethods
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of shipping method objects that describe the supported shipping methods.
 
@@ -17,6 +18,10 @@ An array of shipping method objects that describe the supported shipping methods
 
 ```swift
 var shippingMethods: [PKShippingMethod]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<PKShippingMethod *> * shippingMethods;
 ```
 
 #### Discussion
@@ -46,17 +51,18 @@ paymentRequest.shippingMethods = @[freeShipping, standardShipping, expressShippi
 
 ## See Also
 
-- [Displaying a Read-Only Pickup Address](displaying-a-read-only-pickup-address.md)
+### Setting the shipping methods and types
+- [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
   Configure a payment request to display a read-only pickup address on the payment sheet.
-- [class PKShippingMethod](pkshippingmethod.md)
+- [class PKShippingMethod](../pkshippingmethod.md)
   An object that defines a shipping method for delivering physical goods.
-- [var shippingType: PKShippingType](pkpaymentrequest/shippingtype.md)
+- [var shippingType: PKShippingType](./shippingtype.md)
   The type of shipping the request uses.
-- [var shippingContactEditingMode: PKShippingContactEditingMode](pkpaymentrequest/shippingcontacteditingmode.md)
+- [var shippingContactEditingMode: PKShippingContactEditingMode](./shippingcontacteditingmode.md)
   A value that indicates whether the shipping mode prevents the user from editing the shipping address.
-- [enum PKShippingType](pkshippingtype.md)
+- [enum PKShippingType](../pkshippingtype.md)
   A complete list of valid shipping types.
-- [enum PKShippingContactEditingMode](pkshippingcontacteditingmode.md)
+- [enum PKShippingContactEditingMode](../pkshippingcontacteditingmode.md)
   Constants that indicate whether the shipping mode prevents the user from editing fields of the shipping address.
 
 

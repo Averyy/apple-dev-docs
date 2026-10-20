@@ -1,7 +1,8 @@
 # firmwareVersion
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An arbitrary string representing the current version of the firmware running on the device.
 
@@ -19,21 +20,26 @@ An arbitrary string representing the current version of the firmware running on 
 var firmwareVersion: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * firmwareVersion;
+```
+
 ## See Also
 
-- [var udiDeviceIdentifier: String?](hkdevice/udideviceidentifier.md)
+### Accessing Data About a Device
+- [var udiDeviceIdentifier: String?](./udideviceidentifier.md)
   The device identifier portion of the US Food and Drug Administration’s Unique Device Identifier (UDI).
-- [var hardwareVersion: String?](hkdevice/hardwareversion.md)
+- [var hardwareVersion: String?](./hardwareversion.md)
   An arbitrary string representing the hardware version of the device.
-- [var localIdentifier: String?](hkdevice/localidentifier.md)
+- [var localIdentifier: String?](./localidentifier.md)
   An identifier that uniquely identifies the device object on the hardware running this code.
-- [var manufacturer: String?](hkdevice/manufacturer.md)
+- [var manufacturer: String?](./manufacturer.md)
   A string representing the device’s manufacturer.
-- [var model: String?](hkdevice/model.md)
+- [var model: String?](./model.md)
   A string representing the device’s model.
-- [var name: String?](hkdevice/name.md)
+- [var name: String?](./name.md)
   The user-facing name for the device.
-- [var softwareVersion: String?](hkdevice/softwareversion.md)
+- [var softwareVersion: String?](./softwareversion.md)
   An arbitrary string representing the version of the software running on the device.
 
 

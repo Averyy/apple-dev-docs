@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object the system notifies to respond to quick switch events.
 
@@ -16,11 +17,16 @@ An object the system notifies to respond to quick switch events.
 weak var delegate: (any CTQuickSwitchManager.Delegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CTQuickSwitchManagerDelegate> delegate;
+```
+
 ## See Also
 
-- [class CTQuickSwitchManager](ctquickswitchmanager.md)
+### Adopting iPhone quick switch
+- [class CTQuickSwitchManager](../ctquickswitchmanager.md)
   An object that enables an app to register and query a device’s quick switch state.
-- [CTQuickSwitchManager.Delegate](ctquickswitchmanager/delegate-swift.protocol.md)
+- [CTQuickSwitchManager.Delegate](./delegate-swift.protocol.md)
   Methods you implement to respond to changes in a device’s quick switch state.
 
 

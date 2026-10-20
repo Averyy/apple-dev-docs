@@ -1,7 +1,8 @@
 # setSharedObservers(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func setSharedObservers(_ sharedObservers: NSKeyValueSharedObserversSnapshot?)
+```
+
+```objc
+- (void) setSharedObservers:(NSKeyValueSharedObserversSnapshot *) sharedObservers;
 ```
 
 

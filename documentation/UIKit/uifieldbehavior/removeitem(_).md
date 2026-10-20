@@ -1,7 +1,8 @@
 # removeItem(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the field behavior from the specified dynamic item.
 
@@ -18,6 +19,10 @@ Removes the field behavior from the specified dynamic item.
 func removeItem(_ item: any UIDynamicItem)
 ```
 
+```objc
+- (void) removeItem:(id<UIDynamicItem>) item;
+```
+
 #### Discussion
 
 Use this method to remove a field from a dynamic item in your interface. This method removes the specified dynamic item from the field behavior’s list of dynamic item.
@@ -28,9 +33,10 @@ Use this method to remove a field from a dynamic item in your interface. This me
 
 ## See Also
 
-- [func addItem(any UIDynamicItem)](uifieldbehavior/additem(_:).md)
+### Managing the associated dynamic items
+- [func addItem(any UIDynamicItem)](./additem%28_%29.md)
   Associates the field behavior with the specified dynamic item.
-- [var items: [any UIDynamicItem]](uifieldbehavior/items.md)
+- [var items: [any UIDynamicItem]](./items.md)
   The dynamic items associated with the current field behavior.
 
 

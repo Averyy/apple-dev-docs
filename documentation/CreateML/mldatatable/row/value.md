@@ -1,7 +1,8 @@
 # MLDataTable.Row.Value
 
 **Framework**: Create ML  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 15.0+
@@ -19,11 +20,12 @@ typealias Value = MLDataTable.Row.Values.Element
 
 ## See Also
 
-- [var keys: MLDataTable.Row.Keys](mldatatable/row/keys-swift.property.md)
-- [var values: MLDataTable.Row.Values](mldatatable/row/values-swift.property.md)
-- [MLDataTable.Row.Key](mldatatable/row/key.md)
-- [MLDataTable.Row.Keys](mldatatable/row/keys-swift.typealias.md)
-- [MLDataTable.Row.Values](mldatatable/row/values-swift.struct.md)
+### Accessing parameters
+- [var keys: MLDataTable.Row.Keys](./keys-swift.property.md)
+- [var values: MLDataTable.Row.Values](./values-swift.property.md)
+- [MLDataTable.Row.Key](./key.md)
+- [MLDataTable.Row.Keys](./keys-swift.typealias.md)
+- [MLDataTable.Row.Values](./values-swift.struct.md)
 
 
 ---

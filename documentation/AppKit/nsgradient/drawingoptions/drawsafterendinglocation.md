@@ -1,12 +1,13 @@
 # drawsAfterEndingLocation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Drawing extends beyond the gradient end point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Drawing extends beyond the gradient end point.
 static var drawsAfterEndingLocation: NSGradient.DrawingOptions { get }
 ```
 
+```c
+NSGradientDrawsAfterEndingLocation
+```
+
 ## See Also
 
-- [static var drawsBeforeStartingLocation: NSGradient.DrawingOptions](nsgradient/drawingoptions/drawsbeforestartinglocation.md)
+### Constants
+- [static var drawsBeforeStartingLocation: NSGradient.DrawingOptions](./drawsbeforestartinglocation.md)
   Drawing extends before the gradient starting point.
 
 

@@ -1,7 +1,8 @@
 # healthDataAccessRequest(store:readTypes:trigger:completion:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests permission to read the specified HealthKit data types.
 
@@ -107,7 +108,7 @@ struct MyApp: App {
 
 Customize the messages displayed on the permissions sheet by setting the following key:
 
-- [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) customizes the message for reading data.
+- [`NSHealthShareUsageDescription`](../../BundleResources/information-property-list/nshealthshareusagedescription.md) customizes the message for reading data.
 
 > ⚠️ **Warning**: You must set the usage key, or your app crashes when you request authorization.
 
@@ -118,17 +119,18 @@ After users set the permissions for your app, they can always change them using 
 ## Parameters
 
 - `store`: The HealthKit store where you’re requesting authorization.
-- `readTypes`: An optional set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](https://developer.apple.com/documentation/healthkit/hkobjecttype) class (any of the [`HKCharacteristicType`](https://developer.apple.com/documentation/healthkit/hkcharacteristictype), [`HKQuantityType`](https://developer.apple.com/documentation/healthkit/hkquantitytype), [`HKCategoryType`](https://developer.apple.com/documentation/healthkit/hkcategorytype), [`HKWorkoutType`](https://developer.apple.com/documentation/healthkit/hkworkouttype), or [`HKCorrelationType`](https://developer.apple.com/documentation/healthkit/hkcorrelationtype) classes ). If the user grants permission, your app can read these data types from the HealthKit store.
-- `trigger`: A value used to trigger the request. This value must be a [`State`](state.md) variable. Any change to the variable triggers a request.
+- `readTypes`: An optional set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](../../HealthKit/hkobjecttype.md) class (any of the [`HKCharacteristicType`](../../HealthKit/hkcharacteristictype.md), [`HKQuantityType`](../../HealthKit/hkquantitytype.md), [`HKCategoryType`](../../HealthKit/hkcategorytype.md), [`HKWorkoutType`](../../HealthKit/hkworkouttype.md), or [`HKCorrelationType`](../../HealthKit/hkcorrelationtype.md) classes ). If the user grants permission, your app can read these data types from the HealthKit store.
+- `trigger`: A value used to trigger the request. This value must be a [`State`](../state.md) variable. Any change to the variable triggers a request.
 - `completion`: A block that the system calls after the request is complete. The system passes the result parameter.
 
 ## See Also
 
-- [func healthDataAccessRequest(store: HKHealthStore, objectType: HKObjectType, predicate: NSPredicate?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion:).md)
+### Accessing health data
+- [func healthDataAccessRequest(store: HKHealthStore, objectType: HKObjectType, predicate: NSPredicate?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](./healthdataaccessrequest%28store,objecttype,predicate,trigger,completion%29.md)
   Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
-- [func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:).md)
+- [func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](./healthdataaccessrequest%28store,sharetypes,readtypes,trigger,completion%29.md)
   Requests permission to save and read the specified HealthKit data types.
-- [func workoutPreview(WorkoutPlan, isPresented: Binding<Bool>) -> some View](view/workoutpreview(_:ispresented:).md)
+- [func workoutPreview(WorkoutPlan, isPresented: Binding<Bool>) -> some View](./workoutpreview%28_,ispresented%29.md)
   Presents a preview of the workout contents as a modal sheet
 
 

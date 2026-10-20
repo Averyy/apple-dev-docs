@@ -1,14 +1,15 @@
 # data_owner
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 char data_owner[16];
 ```
 

@@ -1,7 +1,8 @@
 # Modify an introductory offer
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update a specific introductory offer for an auto-renewable subscription.
 
@@ -18,13 +19,32 @@ Update a specific introductory offer for an auto-renewable subscription.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionIntroductoryOfferUpdateRequest`
+
+## Responses
+
+- `200` OK (`SubscriptionIntroductoryOfferResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an introductory offer](post-v1-subscriptionintroductoryoffers.md)
+### Endpoints
+- [Create an introductory offer](./post-v1-subscriptionintroductoryoffers.md)
   Create an introductory offer for an auto-renewable subscription.
-- [Delete an introductory offer for a subscription](delete-v1-subscriptionintroductoryoffers-_id_.md)
+- [Delete an introductory offer for a subscription](./delete-v1-subscriptionintroductoryoffers-_id_.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 
 

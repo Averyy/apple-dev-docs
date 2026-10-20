@@ -1,7 +1,8 @@
 # init(influences:influencesPerVertex:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Associates every vertex in the mesh with a fixed number of influences per vertex.
 

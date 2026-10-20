@@ -1,7 +1,8 @@
 # data
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the file. If the file was created with a URL, accessing this property will memory map the file contents.
 
@@ -11,7 +12,7 @@ The contents of the file. If the file was created with a URL, accessing this pro
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var data: Data { get }
 
 ## See Also
 
-- [var filename: String](intentfile/filename.md)
+### Getting the file information
+- [var filename: String](./filename.md)
   The human-readable name of the file, which will be displayed to the user.
-- [var fileURL: URL?](intentfile/fileurl.md)
+- [var fileURL: URL?](./fileurl.md)
   URL to the file on disk, if any. If the file isn’t stored on disk, access the contents using the `data` property.
-- [var type: UTType?](intentfile/type.md)
+- [var type: UTType?](./type.md)
   The uniform type identifier of the file. (i.e. “public.json”, “public.png”, or any custom type) More information about uniform type identifiers can be found in <CoreServices/UTCoreTypes.h>
-- [var removedOnCompletion: Bool](intentfile/removedoncompletion.md)
+- [var removedOnCompletion: Bool](./removedoncompletion.md)
   Indicates whether the file should be automatically deleted from disk when the Shortcut is done running. `false` by default.
 
 

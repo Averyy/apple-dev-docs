@@ -1,7 +1,8 @@
 # shouldEnterBillingRetryOnRenewal
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the testing environment enters a billing retry state when an auto-renewable subscription renews.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the testing environment enters a billing 
 var shouldEnterBillingRetryOnRenewal: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL billingRetryOnRenewalEnabled;
+```
+
 #### Discussion
 
 The default value is `false`.
 
-While this property is enabled, all renewals of auto-renewable subscriptions in the test environment fail due to a simulated billing issue and enter a billing retry state. To resolve the simulated billing issue, call [`resolveIssueForTransaction(identifier:)`](sktestsession/resolveissuefortransaction(identifier:).md) for the affected auto-renewable subscription.
+While this property is enabled, all renewals of auto-renewable subscriptions in the test environment fail due to a simulated billing issue and enter a billing retry state. To resolve the simulated billing issue, call [`resolveIssueForTransaction(identifier:)`](./resolveissuefortransaction%28identifier%29.md) for the affected auto-renewable subscription.
 
-The [`timeRate`](sktestsession/timerate-swift.property.md) value determines the length of the billing retry period in the testing environment.
+The [`timeRate`](./timerate-swift.property.md) value determines the length of the billing retry period in the testing environment.
 
 ## See Also
 
-- [var billingGracePeriodIsEnabled: Bool](sktestsession/billinggraceperiodisenabled.md)
+### Testing billing retry and grace period
+- [var billingGracePeriodIsEnabled: Bool](./billinggraceperiodisenabled.md)
   A Boolean value that indicates whether the test environment simulates a billing grace period for auto-renewable subscriptions.
-- [func resolveIssueForTransaction(identifier: Int) throws](sktestsession/resolveissuefortransaction(identifier:).md)
+- [func resolveIssueForTransaction(identifier: Int) throws](./resolveissuefortransaction%28identifier%29.md)
   Simulates resolving an issue when you test interrupted purchases or billing retry scenarios.
 
 

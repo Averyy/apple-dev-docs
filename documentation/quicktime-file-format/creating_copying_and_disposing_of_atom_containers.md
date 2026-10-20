@@ -25,24 +25,25 @@ if (spriteData)
 ## Topics
 
 ### Managing atoms
-- [Creating new atoms](creating_new_atoms.md)
+- [Creating new atoms](./creating_new_atoms.md)
   Create new atoms and insert them in a QT atom container.
-- [Copying existing atoms](copying_existing_atoms.md)
+- [Copying existing atoms](./copying_existing_atoms.md)
   Copy existing atoms within an atom container.
-- [Retrieving atoms from an atom container](retrieving_atoms_from_an_atom_container.md)
+- [Retrieving atoms from an atom container](./retrieving_atoms_from_an_atom_container.md)
   Retrieve information about the types of a parent atom’s children, search for a specific atom, and retrieve a leaf atom’s data.
-- [Modifying atoms](modifying_atoms.md)
+- [Modifying atoms](./modifying_atoms.md)
   Modify attributes or data associated with an atom in an atom container.
-- [Removing atoms from an atom container](removing_atoms_from_an_atom_container.md)
+- [Removing atoms from an atom container](./removing_atoms_from_an_atom_container.md)
   Remove atoms from an atom container.
 
 ## See Also
 
-- [Atoms](atoms.md)
+### Building in QuickTime
+- [Atoms](./atoms.md)
   The basic data unit in a QuickTime file is the atom.
-- [QT atoms and atom containers](qt_atoms_and_atom_containers.md)
+- [QT atoms and atom containers](./qt_atoms_and_atom_containers.md)
   An enhanced data structure that provide a more general-purpose storage format.
-- [QuickTime movie files](quicktime_movie_files.md)
+- [QuickTime movie files](./quicktime_movie_files.md)
   The QuickTime file format describes the characteristics of QuickTime movie files.
 
 

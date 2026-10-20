@@ -1,7 +1,8 @@
 # recordingOutputDidFinishRecording(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func recordingOutputDidFinishRecording(_ recordingOutput: SCRecordingOutput)
+```
+
+```objc
+- (void) recordingOutputDidFinishRecording:(SCRecordingOutput *) recordingOutput;
 ```
 
 

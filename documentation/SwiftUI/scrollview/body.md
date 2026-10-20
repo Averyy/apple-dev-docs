@@ -1,7 +1,8 @@
 # body
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content and behavior of the scroll view.
 

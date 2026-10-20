@@ -1,7 +1,8 @@
 # init(amount:currencyCode:for:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new transaction request for the specified amount in the designated currency.
 

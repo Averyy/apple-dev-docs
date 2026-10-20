@@ -1,14 +1,15 @@
 # crypto_random_kmem_ctx_size_fn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.1+
 
 ## Declaration
 
-```swift
+```c
 typedef size_t (*crypto_random_kmem_ctx_size_fn_t)(void);
 ```
 

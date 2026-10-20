@@ -1,14 +1,15 @@
 # IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_WIFI_UNDEFINED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_WIFI_UNDEFINED = 0
 ```
 

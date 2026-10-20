@@ -1,7 +1,8 @@
 # inlinePredictionType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior of inline text predictions for a text-entry area.
 
@@ -18,11 +19,15 @@ The behavior of inline text predictions for a text-entry area.
 optional var inlinePredictionType: UITextInlinePredictionType { get set }
 ```
 
+```objc
+@property (nonatomic) UITextInlinePredictionType inlinePredictionType;
+```
+
 #### Discussion
 
-This property controls whether system-provided text suggestions appear inline during typing. The default value is [`UITextInlinePredictionType.default`](uitextinlinepredictiontype/default.md).
+This property controls whether system-provided text suggestions appear inline during typing. The default value is [`UITextInlinePredictionType.default`](../uitextinlinepredictiontype/default.md).
 
-If you use a [`UITextView`](uitextview.md) or [`UITextField`](uitextfield.md), set this property if you want to change the inline text prediction behavior. For example, you might want to turn off inline text predictions if your app provides its own text suggestions.
+If you use a [`UITextView`](../uitextview.md) or [`UITextField`](../uitextfield.md), set this property if you want to change the inline text prediction behavior. For example, you might want to turn off inline text predictions if your app provides its own text suggestions.
 
 The following code turns off inline text predictions in a text view:
 
@@ -33,19 +38,20 @@ textView.inlinePredictionType = .no
 
 ## See Also
 
-- [var autocapitalizationType: UITextAutocapitalizationType](uitextinputtraits/autocapitalizationtype.md)
+### Managing spelling and autocorrection
+- [var autocapitalizationType: UITextAutocapitalizationType](./autocapitalizationtype.md)
   The autocapitalization style for the text object.
-- [enum UITextAutocapitalizationType](uitextautocapitalizationtype.md)
+- [enum UITextAutocapitalizationType](../uitextautocapitalizationtype.md)
   The autocapitalization behavior of a text-based view.
-- [var autocorrectionType: UITextAutocorrectionType](uitextinputtraits/autocorrectiontype.md)
+- [var autocorrectionType: UITextAutocorrectionType](./autocorrectiontype.md)
   The autocorrection style for the text object.
-- [enum UITextAutocorrectionType](uitextautocorrectiontype.md)
+- [enum UITextAutocorrectionType](../uitextautocorrectiontype.md)
   The autocorrection behavior of a text-based view.
-- [var spellCheckingType: UITextSpellCheckingType](uitextinputtraits/spellcheckingtype.md)
+- [var spellCheckingType: UITextSpellCheckingType](./spellcheckingtype.md)
   The spell-checking style for the text object.
-- [enum UITextSpellCheckingType](uitextspellcheckingtype.md)
+- [enum UITextSpellCheckingType](../uitextspellcheckingtype.md)
   The spell-checking behavior of a text-based view.
-- [enum UITextInlinePredictionType](uitextinlinepredictiontype.md)
+- [enum UITextInlinePredictionType](../uitextinlinepredictiontype.md)
   Constants that identify the behavior of inline text predictions for a text-entry area.
 
 

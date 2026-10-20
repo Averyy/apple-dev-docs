@@ -1,12 +1,13 @@
 # NSTabViewItem.State
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants describe the current display state of a tab:
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,31 @@ These constants describe the current display state of a tab:
 enum State
 ```
 
+```c
+enum NSTabState : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTabViewItem.State.backgroundTab](nstabviewitem/state/backgroundtab.md)
+- [NSTabViewItem.State.backgroundTab](./state/backgroundtab.md)
   A tab that’s not being displayed.
-- [NSTabViewItem.State.pressedTab](nstabviewitem/state/pressedtab.md)
+- [NSTabViewItem.State.pressedTab](./state/pressedtab.md)
   A tab that the user is in the process of clicking. That is, the user has pressed the mouse button while the cursor is over the tab but has not released the mouse button.
-- [NSTabViewItem.State.selectedTab](nstabviewitem/state/selectedtab.md)
+- [NSTabViewItem.State.selectedTab](./state/selectedtab.md)
   The tab that’s being displayed.
 ### Initializers
-- [init?(rawValue: UInt)](nstabviewitem/state/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./state/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

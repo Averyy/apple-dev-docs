@@ -1,7 +1,8 @@
 # PointCoordinate
 
 **Framework**: hvf  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Which coordinate within a point
 
@@ -23,17 +24,17 @@ enum PointCoordinate
 ## Topics
 
 ### Enumeration Cases
-- [PointCoordinate.xOrParallel](pointcoordinate/xorparallel.md)
-- [PointCoordinate.yOrZero](pointcoordinate/yorzero.md)
+- [PointCoordinate.xOrParallel](./pointcoordinate/xorparallel.md)
+- [PointCoordinate.yOrZero](./pointcoordinate/yorzero.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

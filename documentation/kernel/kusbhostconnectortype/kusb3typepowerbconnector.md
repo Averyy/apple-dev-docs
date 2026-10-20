@@ -1,14 +1,15 @@
 # kUSB3TypePowerBConnector
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kUSB3TypePowerBConnector = 0x07
 ```
 

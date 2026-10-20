@@ -1,7 +1,8 @@
 # popup
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the pop-up annotation associated with an annotation.
 
@@ -19,6 +20,10 @@ Returns the pop-up annotation associated with an annotation.
 var popup: PDFAnnotation? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PDFAnnotation * popup;
+```
+
 #### Return Value
 
 The pop-up annotation associated with the annotation, or `NULL` if no pop-up exists.
@@ -29,9 +34,11 @@ Pop-up annotations are not used with links or widgets. The bounds and open state
 
 ## See Also
 
-- [class PDFAnnotation](pdfannotation.md)
+### Related Documentation
+- [class PDFAnnotation](../pdfannotation.md)
   An annotation in a PDF document.
-- [var isOpen: Bool](pdfannotation/isopen.md)
+### Configuring Pop-Up Annotations
+- [var isOpen: Bool](./isopen.md)
   A Boolean value that indicates whether the pop-up annotation is in an opened state, displaying its text content, or in a closed state, displaying an icon.
 
 

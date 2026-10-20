@@ -1,7 +1,8 @@
 # NLTokenUnit.word
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An individual word.
 
@@ -20,9 +21,13 @@ An individual word.
 case word
 ```
 
+```c
+NLTokenUnitWord
+```
+
 ## Mentions
 
-- [Tokenizing natural language text](tokenizing-natural-language-text.md)
+- [Tokenizing natural language text](../tokenizing-natural-language-text.md)
 
 #### Discussion
 
@@ -45,15 +50,16 @@ tokenizer.enumerateTokens(in: range) { tokenRange, _ in
 }
 ```
 
-For more information, see [`Tokenizing natural language text`](tokenizing-natural-language-text.md).
+For more information, see [Tokenizing natural language text](../tokenizing-natural-language-text.md).
 
 ## See Also
 
-- [NLTokenUnit.sentence](nltokenunit/sentence.md)
+### Constants
+- [NLTokenUnit.sentence](./sentence.md)
   An individual sentence.
-- [NLTokenUnit.paragraph](nltokenunit/paragraph.md)
+- [NLTokenUnit.paragraph](./paragraph.md)
   An individual paragraph.
-- [NLTokenUnit.document](nltokenunit/document.md)
+- [NLTokenUnit.document](./document.md)
   The document in its entirety.
 
 

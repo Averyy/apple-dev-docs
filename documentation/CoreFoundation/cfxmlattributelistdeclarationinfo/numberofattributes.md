@@ -1,17 +1,22 @@
 # numberOfAttributes
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of attributes in the array.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numberOfAttributes: CFIndex
+```
+
+```c
+CFIndex numberOfAttributes;
 ```
 
 

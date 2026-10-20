@@ -1,7 +1,8 @@
 # viewportRange
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the text range of the current viewport layout.
 
@@ -14,15 +15,20 @@ Returns the text range of the current viewport layout.
 var viewportRange: NSTextRange? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSTextRange * viewportRange;
+```
+
 ## See Also
 
-- [var viewportBounds: CGRect](nstextviewportlayoutcontroller/viewportbounds.md)
+### Accessing the viewport characteristics
+- [var viewportBounds: CGRect](./viewportbounds.md)
   Returns the visible bounds of the view, plus the overdraw area.
-- [func adjustViewport(byVerticalOffset: CGFloat)](nstextviewportlayoutcontroller/adjustviewport(byverticaloffset:).md)
+- [func adjustViewport(byVerticalOffset: CGFloat)](./adjustviewport%28byverticaloffset%29.md)
   Adjusts the viewport rect by the specified offset if needed.
-- [func layoutViewport()](nstextviewportlayoutcontroller/layoutviewport.md)
+- [func layoutViewport()](./layoutviewport%28%29.md)
   Performs layout in the viewport.
-- [func relocateViewport(to: any NSTextLocation) -> CGFloat](nstextviewportlayoutcontroller/relocateviewport(to:).md)
+- [func relocateViewport(to: any NSTextLocation) -> CGFloat](./relocateviewport%28to%29.md)
   Relocates the viewport to the location you specify.
 
 

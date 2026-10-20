@@ -1,7 +1,8 @@
 # UIWindow.DidBecomeVisibleMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct DidBecomeVisibleMessage
 ## Topics
 
 ### Initializers
-- [init(window: UIWindow)](uiwindow/didbecomevisiblemessage/init(window:).md)
+- [init(window: UIWindow)](./didbecomevisiblemessage/init%28window%29.md)
 ### Instance Properties
-- [var window: UIWindow](uiwindow/didbecomevisiblemessage/window.md)
+- [var window: UIWindow](./didbecomevisiblemessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

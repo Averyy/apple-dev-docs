@@ -1,16 +1,19 @@
 # updateCurrentPageDisplay()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the page indicator to the current page.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 14.0
+- iPadOS 2.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- tvOS - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: The system no longer supports this method.
 
 ## Declaration
 
@@ -18,19 +21,24 @@ Updates the page indicator to the current page.
 func updateCurrentPageDisplay()
 ```
 
+```objc
+- (void) updateCurrentPageDisplay;
+```
+
 #### Discussion
 
-This method updates the page indicator so that the current page (the white dot) matches the value returned from [`currentPage`](uipagecontrol/currentpage.md). The class ignores this method if the value of [`defersCurrentPageDisplay`](uipagecontrol/deferscurrentpagedisplay.md) is [`false`](https://developer.apple.com/documentation/swift/false). Setting the [`currentPage`](uipagecontrol/currentpage.md) value directly updates the indicator immediately.
+This method updates the page indicator so that the current page (the white dot) matches the value returned from [`currentPage`](./currentpage.md). The class ignores this method if the value of [`defersCurrentPageDisplay`](./deferscurrentpagedisplay.md) is [`false`](../../Swift/false.md). Setting the [`currentPage`](./currentpage.md) value directly updates the indicator immediately.
 
 ## See Also
 
-- [var currentPage: Int](uipagecontrol/currentpage.md)
+### Managing pages
+- [var currentPage: Int](./currentpage.md)
   The current page, shown by the page control as a white dot.
-- [var numberOfPages: Int](uipagecontrol/numberofpages.md)
+- [var numberOfPages: Int](./numberofpages.md)
   The number of pages the receiver shows (as dots).
-- [var hidesForSinglePage: Bool](uipagecontrol/hidesforsinglepage.md)
+- [var hidesForSinglePage: Bool](./hidesforsinglepage.md)
   A Boolean value that controls whether the page control is hidden when there is only one page.
-- [var defersCurrentPageDisplay: Bool](uipagecontrol/deferscurrentpagedisplay.md)
+- [var defersCurrentPageDisplay: Bool](./deferscurrentpagedisplay.md)
   A Boolean value that controls when the current page is displayed.
 
 

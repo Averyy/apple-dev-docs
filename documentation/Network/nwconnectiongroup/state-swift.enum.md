@@ -1,7 +1,8 @@
 # NWConnectionGroup.State
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 States that indicate whether you can use a connection group to send and receive messages.
 
@@ -23,31 +24,32 @@ enum State
 ## Topics
 
 ### States
-- [NWConnectionGroup.State.setup](nwconnectiongroup/state-swift.enum/setup.md)
+- [NWConnectionGroup.State.setup](./state-swift.enum/setup.md)
   You have not yet started the connection group.
-- [NWConnectionGroup.State.waiting(_:)](nwconnectiongroup/state-swift.enum/waiting(_:).md)
+- [NWConnectionGroup.State.waiting(_:)](./state-swift.enum/waiting%28_%29.md)
   The connection group is waiting for a network path change.
-- [NWConnectionGroup.State.ready](nwconnectiongroup/state-swift.enum/ready.md)
+- [NWConnectionGroup.State.ready](./state-swift.enum/ready.md)
   The connection group is joined, and ready to send and receive data.
-- [NWConnectionGroup.State.failed(_:)](nwconnectiongroup/state-swift.enum/failed(_:).md)
+- [NWConnectionGroup.State.failed(_:)](./state-swift.enum/failed%28_%29.md)
   The connection group encountered a fatal error.
-- [NWConnectionGroup.State.cancelled](nwconnectiongroup/state-swift.enum/cancelled.md)
+- [NWConnectionGroup.State.cancelled](./state-swift.enum/cancelled.md)
   The connection group has been canceled.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var stateUpdateHandler: ((NWConnectionGroup.State) -> Void)?](nwconnectiongroup/stateupdatehandler.md)
+### Managing Groups
+- [var stateUpdateHandler: ((NWConnectionGroup.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives connection group state updates.
-- [var state: NWConnectionGroup.State](nwconnectiongroup/state-swift.property.md)
+- [var state: NWConnectionGroup.State](./state-swift.property.md)
   The current state of the connection group.
-- [func cancel()](nwconnectiongroup/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the connection group object and leaves the network group.
 
 

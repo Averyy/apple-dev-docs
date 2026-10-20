@@ -1,7 +1,8 @@
 # EndAppAvailabilityPreOrderCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships.TerritoryAvailabilities](endappavailabilitypreordercreaterequest/data-data.dictionary/relationships-data.dictionary/territoryavailabilities-data.dictionary.md)
+- [object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships.TerritoryAvailabilities](./relationships-data.dictionary/territoryavailabilities-data.dictionary.md)
 
 ## Properties
 

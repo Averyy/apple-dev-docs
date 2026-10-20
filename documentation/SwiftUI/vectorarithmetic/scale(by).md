@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Multiplies each component of this value by the given value.
@@ -21,15 +22,22 @@ Multiplies each component of this value by the given value.
 mutating func scale(by rhs: Double)
 ```
 
+## Default Implementations
+
+### VectorArithmetic Implementations
+- [func scale(by: Double)](./scale%28by%29-1ojq4.md)
+  Multiplies each component of this value by the given value.
+
 ## See Also
 
-- [var magnitudeSquared: Double](vectorarithmetic/magnitudesquared.md)
+### Manipulating values
+- [var magnitudeSquared: Double](./magnitudesquared.md)
   Returns the dot-product of this vector arithmetic instance with itself.
-- [func scaled(by: Double) -> Self](vectorarithmetic/scaled(by:).md)
+- [func scaled(by: Double) -> Self](./scaled%28by%29.md)
   Returns a value with each component of this value multiplied by the given value.
-- [func interpolate(towards: Self, amount: Double)](vectorarithmetic/interpolate(towards:amount:).md)
+- [func interpolate(towards: Self, amount: Double)](./interpolate%28towards,amount%29.md)
   Interpolates this value with `other` by the specified `amount`.
-- [func interpolated(towards: Self, amount: Double) -> Self](vectorarithmetic/interpolated(towards:amount:).md)
+- [func interpolated(towards: Self, amount: Double) -> Self](./interpolated%28towards,amount%29.md)
   Returns this value interpolated with `other` by the specified `amount`.
 
 

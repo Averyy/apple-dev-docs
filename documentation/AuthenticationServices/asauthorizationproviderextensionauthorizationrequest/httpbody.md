@@ -1,7 +1,8 @@
 # httpBody
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP body of the request.
 
@@ -18,19 +19,24 @@ The HTTP body of the request.
 var httpBody: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * httpBody;
+```
+
 ## See Also
 
-- [var url: URL](asauthorizationproviderextensionauthorizationrequest/url.md)
+### Parsing the Request
+- [var url: URL](./url.md)
   The complete URL of the request, including all components.
-- [var httpHeaders: [String : String]](asauthorizationproviderextensionauthorizationrequest/httpheaders.md)
+- [var httpHeaders: [String : String]](./httpheaders.md)
   The HTTP headers of the request.
-- [var realm: String](asauthorizationproviderextensionauthorizationrequest/realm.md)
+- [var realm: String](./realm.md)
   The realm to which the request applies.
-- [var requestedOperation: ASAuthorizationProviderAuthorizationOperation](asauthorizationproviderextensionauthorizationrequest/requestedoperation.md)
+- [var requestedOperation: ASAuthorizationProviderAuthorizationOperation](./requestedoperation.md)
   The operation for the extension to execute.
-- [struct ASAuthorizationProviderAuthorizationOperation](asauthorizationproviderauthorizationoperation.md)
+- [struct ASAuthorizationProviderAuthorizationOperation](../asauthorizationproviderauthorizationoperation.md)
   A type that represents an authorization operation.
-- [var authorizationOptions: [AnyHashable : Any]](asauthorizationproviderextensionauthorizationrequest/authorizationoptions.md)
+- [var authorizationOptions: [AnyHashable : Any]](./authorizationoptions.md)
   A collection of options associated with the request.
 
 

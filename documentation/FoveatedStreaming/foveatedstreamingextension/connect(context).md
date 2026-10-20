@@ -2,6 +2,7 @@
 
 **Framework**: Foveated Streaming  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Connect to the provided endpoint.
@@ -20,7 +21,7 @@ func connect(context: Self.Context) async throws
 
 This is called when the session begins. Your extension should begin connecting to `context.endpoint` immediately.
 
-> **Note**: If the connection fails.  The error will be presented to the host app.
+> **Throws**: If the connection fails.  The error will be presented to the host app.
 
 ## Parameters
 

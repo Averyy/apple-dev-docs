@@ -1,7 +1,8 @@
 # details
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A more detailed description of the game activity.
 
@@ -19,13 +20,18 @@ A more detailed description of the game activity.
 var details: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * details;
+```
+
 ## See Also
 
-- [var title: String](gkgameactivitydefinition/title.md)
+### Getting the display properties and image
+- [var title: String](./title.md)
   A short title for the game activity.
-- [var defaultProperties: [String : String]](gkgameactivitydefinition/defaultproperties.md)
+- [var defaultProperties: [String : String]](./defaultproperties.md)
   Default properties defined by the developer for this type of game activity.
-- [func loadImage(completionHandler: (UIImage?, (any Error)?) -> Void)](gkgameactivitydefinition/loadimage(completionhandler:).md)
+- [func loadImage(completionHandler: (UIImage?, (any Error)?) -> Void)](./loadimage%28completionhandler%29.md)
   Asynchronously load the image. Error will be nil on success.
 
 

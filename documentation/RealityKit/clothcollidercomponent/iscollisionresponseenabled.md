@@ -1,7 +1,8 @@
 # isCollisionResponseEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this collider pushes away intersecting cloth body particles.
 
@@ -18,9 +19,10 @@ var isCollisionResponseEnabled: Bool
 
 ## See Also
 
-- [func enableCollisions(towards: ClothCollisionGroupSet)](clothcollidercomponent/enablecollisions(towards:).md)
+### Managing collision response
+- [func enableCollisions(towards: ClothCollisionGroupSet)](./enablecollisions%28towards%29.md)
   Enables one-way collisions towards the selected groups.
-- [func disableCollisions(towards: ClothCollisionGroupSet)](clothcollidercomponent/disablecollisions(towards:).md)
+- [func disableCollisions(towards: ClothCollisionGroupSet)](./disablecollisions%28towards%29.md)
   Disables one-way collisions towards the selected groups.
 
 

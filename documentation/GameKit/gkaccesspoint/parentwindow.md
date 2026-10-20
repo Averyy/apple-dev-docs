@@ -1,7 +1,8 @@
 # parentWindow
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window that contains the access point.
 
@@ -15,27 +16,48 @@ The window that contains the access point.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+weak var parentWindow: UIWindow? { get set }
+```
+
+*macOS*
+
 ```swift
 weak var parentWindow: NSWindow? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, weak, nullable) UIWindow * parentWindow;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, weak, nullable) NSWindow * parentWindow;
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
 #### Discussion
 
 For Mac games, use this property to specify the parent window of the access point. If you don’t specify a parent widow, GameKit tries to add the access point to the app’s main window. For iPadOS and iOS games, and for compatible iPad or iPhone games running in visionOS, GameKit adds the access point to the main window.
 
-If this property is `nil` for a volumetric visionOS game, the access point doesn’t appear. For an immersive game, it appears below the HUD in front of the person and tracks their head position. If this property is non-`nil` for a volumetric or immersive game, the access point appears outside of the window in the specified location. For more information, see [`Configure the access point on visionOS`](adding-an-access-point-to-your-game#Configure-the-access-point-on-visionOS.md).
+If this property is `nil` for a volumetric visionOS game, the access point doesn’t appear. For an immersive game, it appears below the HUD in front of the person and tracks their head position. If this property is non-`nil` for a volumetric or immersive game, the access point appears outside of the window in the specified location. For more information, see [Configure the access point on visionOS](../adding-an-access-point-to-your-game.md#Configure-the-access-point-on-visionOS).
 
 ## See Also
 
-- [var location: GKAccessPoint.Location](gkaccesspoint/location-swift.property.md)
+### Managing the location
+- [var location: GKAccessPoint.Location](./location-swift.property.md)
   The corner of the screen to display the access point.
-- [GKAccessPoint.Location](gkaccesspoint/location-swift.enum.md)
+- [GKAccessPoint.Location](./location-swift.enum.md)
   Specifies the corner of the screen to display the access point.
-- [var frameInScreenCoordinates: CGRect](gkaccesspoint/frameinscreencoordinates.md)
+- [var frameInScreenCoordinates: CGRect](./frameinscreencoordinates.md)
   The frame of the access point in screen coordinates.
 
 

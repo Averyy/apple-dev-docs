@@ -1,20 +1,23 @@
 # DNSProxy
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures DNS proxies.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS 10.15+
-- visionOS 1.1+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 11.0+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- visionOS 1.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use the declarative management `com.apple.configuration.network.dns-proxy` configuration.
 
 ## Declaration
 
-```swift
+```
 object DNSProxy
 ```
 
@@ -24,7 +27,7 @@ Specify `com.apple.dnsProxy.managed` as the payload type.
 
 Beginning with iOS 15, this profile is unsupervised and needs to be installed through MDM.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +39,7 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,24 +88,35 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 ## Topics
 
 ### Objects
-- [object DNSProxy.ProviderConfiguration](dnsproxy/providerconfiguration-data.dictionary.md)
+- [object DNSProxy.ProviderConfiguration](./dnsproxy/providerconfiguration-data.dictionary.md)
   The dictionary of vendor-specific configuration items.
 
 ## Properties
 
-- `AppBundleIdentifier` (string) *(required)*: The bundle identifier of the app containing the DNS proxy network extension. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment. Available: iOS 16+ | iPadOS 16+ | visionOS 1.1+
-Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `ProviderBundleIdentifier` (string): The bundle identifier of the DNS proxy network extension to use. Declaring the bundle identifier is useful for apps that contain more than one DNS proxy extension. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `ProviderConfiguration` (DNSProxy.ProviderConfiguration): The dictionary of vendor-specific configuration items. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `ProviderDesignatedRequirement` (string): The designated requirement string that the system embeds in the code signature of the DNS proxy network extension. Use this to correctly identify the DNS proxy extension when `ProviderBundleIdentifier` is present. Available: macOS 10.15+
-Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `AppBundleIdentifier` (string) *(required)* *(deprecated)*: The bundle identifier of the app containing the DNS proxy network extension.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `DNSProxyUUID` (string) *(deprecated)*: A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment.
+
+  Available: iOS 16+ | iPadOS 16+ | visionOS 1.1+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `ProviderBundleIdentifier` (string) *(deprecated)*: The bundle identifier of the DNS proxy network extension to use. Declaring the bundle identifier is useful for apps that contain more than one DNS proxy extension.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `ProviderConfiguration` (DNSProxy.ProviderConfiguration) *(deprecated)*: The dictionary of vendor-specific configuration items.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `ProviderDesignatedRequirement` (string) *(deprecated)*: The designated requirement string that the system embeds in the code signature of the DNS proxy network extension. Use this to correctly identify the DNS proxy extension when `ProviderBundleIdentifier` is present.
+
+  Available: macOS 10.15+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ## See Also
 
-- [object GlobalHTTPProxy](globalhttpproxy.md)
+### Proxies
+- [object GlobalHTTPProxy](./globalhttpproxy.md)
   The payload that configures a global HTTP proxy.
-- [object NetworkProxyConfiguration](networkproxyconfiguration.md)
+- [object NetworkProxyConfiguration](./networkproxyconfiguration.md)
   The payload that configures network proxies for a device.
 
 

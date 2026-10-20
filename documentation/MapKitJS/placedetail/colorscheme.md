@@ -1,7 +1,8 @@
 # colorScheme
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color scheme when displaying a place detail.
 
@@ -10,20 +11,21 @@ The color scheme when displaying a place detail.
 
 ## Declaration
 
-```swift
+```
 get colorScheme(): ColorScheme;
 set colorScheme(colorScheme: ColorScheme);
 ```
 
 ## See Also
 
-- [displaysMap](placedetail/displaysmap.md)
+### Working with place detail settings
+- [displaysMap](./displaysmap.md)
   A Boolean value that indicates whether to display the map in the place detail.
-- [element](placedetail/element.md)
+- [element](./element.md)
   The place detail’s DOM element.
-- [place](placedetail/place.md)
+- [place](./place.md)
   The place that the place detail displays.
-- [ColorSchemes](placedetail/colorschemes.md)
+- [ColorSchemes](./colorschemes.md)
   A static property that allows you to access the Look Around color scheme enumeration.
 
 

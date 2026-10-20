@@ -1,7 +1,8 @@
 # errSSLPeerInternalError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An internal error occurred.
 
@@ -18,6 +19,10 @@ An internal error occurred.
 
 ```swift
 var errSSLPeerInternalError: OSStatus { get }
+```
+
+```c
+errSSLPeerInternalError
 ```
 
 

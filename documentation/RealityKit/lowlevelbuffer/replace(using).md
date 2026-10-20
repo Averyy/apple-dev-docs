@@ -1,7 +1,8 @@
 # replace(using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieve an MTLBuffer that can be used to replace the contents of the buffer on GPU using Metal.
 

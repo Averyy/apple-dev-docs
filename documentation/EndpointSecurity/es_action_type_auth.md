@@ -1,13 +1,14 @@
 # ES_ACTION_TYPE_AUTH
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authentication action type.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The authentication action type.
 var ES_ACTION_TYPE_AUTH: es_action_type_t { get }
 ```
 
+```c
+ES_ACTION_TYPE_AUTH
+```
+
 ## See Also
 
-- [var ES_ACTION_TYPE_NOTIFY: es_action_type_t](es_action_type_notify.md)
+### Action Types
+- [var ES_ACTION_TYPE_NOTIFY: es_action_type_t](./es_action_type_notify.md)
   The notification action type.
 
 

@@ -1,7 +1,8 @@
 # colors
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of `CGColorRef` objects defining the color of each gradient stop. Animatable.
 
@@ -19,19 +20,24 @@ An array of `CGColorRef` objects defining the color of each gradient stop. Anima
 var colors: [Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray * colors;
+```
+
 #### Discussion
 
 Defaults to `nil`.
 
 ## See Also
 
-- [var locations: [NSNumber]?](cagradientlayer/locations.md)
+### Gradient Style Properties
+- [var locations: [NSNumber]?](./locations.md)
   An optional array of NSNumber objects defining the location of each gradient stop. Animatable.
-- [var endPoint: CGPoint](cagradientlayer/endpoint.md)
+- [var endPoint: CGPoint](./endpoint.md)
   The end point of the gradient when drawn in the layer’s coordinate space. Animatable.
-- [var startPoint: CGPoint](cagradientlayer/startpoint.md)
+- [var startPoint: CGPoint](./startpoint.md)
   The start point of the gradient when drawn in the layer’s coordinate space. Animatable.
-- [var type: CAGradientLayerType](cagradientlayer/type.md)
+- [var type: CAGradientLayerType](./type.md)
   Style of gradient drawn by the layer.
 
 

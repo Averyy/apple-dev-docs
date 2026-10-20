@@ -1,7 +1,8 @@
 # vImage.ChannelOrdering.ARGB
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The first channel is the alpha channel.
 
@@ -11,7 +12,7 @@ The first channel is the alpha channel.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case ARGB
 
 ## See Also
 
-- [vImage.ChannelOrdering.RGBA](vimage/channelordering/rgba.md)
+### Enumeration Cases
+- [vImage.ChannelOrdering.RGBA](./rgba.md)
   The last channel is the alpha channel.
 
 

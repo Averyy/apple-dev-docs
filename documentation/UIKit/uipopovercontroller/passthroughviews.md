@@ -1,20 +1,27 @@
 # passthroughViews
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of views that the user can interact with while the popover is visible.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: For more information, see [`UIPopoverController`](../uipopovercontroller.md).
 
 ## Declaration
 
 ```swift
 var passthroughViews: [UIView]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<__kindof UIView *> * passthroughViews;
 ```
 
 #### Discussion
@@ -23,13 +30,14 @@ When a popover is active, interactions with other views are normally disabled un
 
 ## See Also
 
-- [var contentViewController: UIViewController](uipopovercontroller/contentviewcontroller.md)
+### Configuring the popover content
+- [var contentViewController: UIViewController](./contentviewcontroller.md)
   The view controller responsible for the content portion of the popover.
-- [func setContentView(UIViewController, animated: Bool)](uipopovercontroller/setcontentview(_:animated:).md)
+- [func setContentView(UIViewController, animated: Bool)](./setcontentview%28_,animated%29.md)
   Sets the view controller responsible for the content portion of the popover.
-- [var contentSize: CGSize](uipopovercontroller/contentsize.md)
+- [var contentSize: CGSize](./contentsize.md)
   The size of the popover’s content view.
-- [func setContentSize(CGSize, animated: Bool)](uipopovercontroller/setcontentsize(_:animated:).md)
+- [func setContentSize(CGSize, animated: Bool)](./setcontentsize%28_,animated%29.md)
   Changes the size of the popover’s content view.
 
 

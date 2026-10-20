@@ -1,7 +1,8 @@
 # level
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logical floor of the building.
 
@@ -18,6 +19,10 @@ The logical floor of the building.
 
 ```swift
 var level: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSInteger level;
 ```
 
 #### Discussion

@@ -1,11 +1,12 @@
 # Estimator Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [NormalizationScaler.Transformer](normalizationscaler/transformer.md)
+- [NormalizationScaler.Transformer](./transformer.md)
   A transformer that scales the input using a normalization strategy.
 
 

@@ -1,17 +1,22 @@
 # uuid16(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new 16-bit IOBluetoothSDPUUID with the given UUID16
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func uuid16(_ uuid16: BluetoothSDPUUID16) -> Self!
+```
+
+```objc
++ (instancetype) uuid16:(BluetoothSDPUUID16) uuid16;
 ```
 
 #### Return Value

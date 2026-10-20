@@ -1,7 +1,8 @@
 # VideoPlayerComponent.SpatialVideoMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Spatial Videos’s rendering mode.
 
@@ -17,18 +18,18 @@ enum SpatialVideoMode
 ## Topics
 
 ### Enumeration Cases
-- [VideoPlayerComponent.SpatialVideoMode.screen](videoplayercomponent/spatialvideomode-swift.enum/screen.md)
+- [VideoPlayerComponent.SpatialVideoMode.screen](./spatialvideomode-swift.enum/screen.md)
   Video Screen mode - spatial video rending of video as mono/stereo on screen without portal rendering or treatment.
-- [VideoPlayerComponent.SpatialVideoMode.spatial](videoplayercomponent/spatialvideomode-swift.enum/spatial.md)
+- [VideoPlayerComponent.SpatialVideoMode.spatial](./spatialvideomode-swift.enum/spatial.md)
   Spatial rendering mode - head-pose based treatments in portal or in full immersive mode set by the immersiveViewingMode.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

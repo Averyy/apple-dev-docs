@@ -1,72 +1,85 @@
 # Videos
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 Present videos in your RealityKit experiences.
 
 #### Overview
 
+- [Destination Video](../visionOS/destination-video.md)
+  Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Docking a video player in an immersive scene](./docking-a-video-player-in-an-immersive-scene.md)
+  Secure a video player in an immersive scene with a docking region you can specify.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
+- [Playing immersive media with RealityKit](../visionOS/playing-immersive-media-with-realitykit.md)
+  Create an immersive video playback experience with RealityKit.
+- [Rendering stereoscopic video with RealityKit](./rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
+
 ## Topics
 
 ### Video player configurations
-- [struct VideoPlayerComponent](videoplayercomponent.md)
+- [struct VideoPlayerComponent](./videoplayercomponent.md)
   A component that supports general video-playback experience with an AV player.
-- [VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/immersiveviewingmode-swift.enum.md)
+- [VideoPlayerComponent.ImmersiveViewingMode](./videoplayercomponent/immersiveviewingmode-swift.enum.md)
   Options for viewing the video during immersive-media playback.
-- [struct VideoMaterial](videomaterial.md)
+- [struct VideoMaterial](./videomaterial.md)
   A material that supports animated textures.
-- [class VideoPlaybackController](videoplaybackcontroller.md)
+- [class VideoPlaybackController](./videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+- [VideoPlaybackController.ViewingMode](./videoplaybackcontroller/viewingmode.md)
   Options for viewing video playback.
 ### Content placement
-- [struct DockingRegionComponent](dockingregioncomponent.md)
+- [struct DockingRegionComponent](./dockingregioncomponent.md)
   A component that docks a scene within a region of an immersive space.
 ### Playback notifications
-- [enum VideoPlayerEvents](videoplayerevents.md)
+- [enum VideoPlayerEvents](./videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
 ### SwiftUI video content
-- [Destination Video](../visionos/destination-video.md)
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
+- [Docking a video player in an immersive scene](./docking-a-video-player-in-an-immersive-scene.md)
   Secure a video player in an immersive scene with a docking region you can specify.
-- [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
+- [Rendering stereoscopic video with RealityKit](./rendering-stereoscopic-video-with-realitykit.md)
   Render stereoscopic video in visionOS with RealityKit.
 ### Connected camera video
-- [Displaying low-latency connected video](displaying-low-latency-connected-video.md)
+- [Displaying low-latency connected video](./displaying-low-latency-connected-video.md)
   Render connected camera feeds in visionOS with minimal latency.
 
 ## See Also
 
-- [Hello World](../visionos/world.md)
+### Scene content
+- [Hello World](../visionOS/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
+- [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.
-- [Combining 2D and 3D views in an immersive app](combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](./combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+- [Responding to gestures on an entity](./responding-to-gestures-on-an-entity.md)
   Respond to gestures performed on RealityKit entities using input target and collision components.
-- [Models and meshes](scene-content-models-and-meshes.md)
+- [Models and meshes](./scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
-- [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
+- [Materials, textures, and shaders](./scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
-- [Anchors](scene-content-anchors.md)
+- [Anchors](./scene-content-anchors.md)
   Lock virtual content to the real world.
-- [Lights and cameras](scene-content-lights-and-cameras.md)
+- [Lights and cameras](./scene-content-lights-and-cameras.md)
   Control the lighting and point of view for a scene.
-- [Content synchronization](scene-content-content-synchronization.md)
+- [Content synchronization](./scene-content-content-synchronization.md)
   Synchronize the contents of entities locally or across the network.
-- [Audio](scene-content-audio.md)
+- [Audio](./scene-content-audio.md)
   Create personalized and realistic spatial audio experiences.
-- [Images](scene-content-images.md)
+- [Images](./scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
-- [Mesh deformation](scene-content-mesh-deformation.md)
+- [Mesh deformation](./scene-content-mesh-deformation.md)
   Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 

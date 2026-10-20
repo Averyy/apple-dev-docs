@@ -1,7 +1,8 @@
 # willEnterForeground
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a host app preparing to run in the foreground.
 
@@ -20,17 +21,20 @@ An identifier for a message about a host app preparing to run in the foreground.
 static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillEnterForegroundMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillEnterForegroundMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSExtensionContext.WillEnterForegroundMessage`](nsextensioncontext/willenterforegroundmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSExtensionContext.WillEnterForegroundMessage`](../../nsextensioncontext/willenterforegroundmessage.md).
 
 ## See Also
 
-- [static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidBecomeActiveMessage>](notificationcenter/messageidentifier/didbecomeactive-79dvm.md)
+### Identifying extension messages
+- [static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidBecomeActiveMessage>](./didbecomeactive-79dvm.md)
   An identifier for a message about a host app moving from the inactive to the active state.
-- [static var willResignActive: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillResignActiveMessage>](notificationcenter/messageidentifier/willresignactive-9z4xc.md)
+- [static var willResignActive: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillResignActiveMessage>](./willresignactive-9z4xc.md)
   An identifier for a message about a host app moving from the active to the inactive state.
-- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidEnterBackgroundMessage>](notificationcenter/messageidentifier/didenterbackground-5gdtk.md)
+- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidEnterBackgroundMessage>](./didenterbackground-5gdtk.md)
   An identifier for a message about a host app beginning to run in the background.
 
 

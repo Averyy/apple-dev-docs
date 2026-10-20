@@ -1,7 +1,8 @@
 # deviceAddress
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device’s bus address.
 
@@ -13,6 +14,10 @@ The device’s bus address.
 
 ```swift
 var deviceAddress: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger deviceAddress;
 ```
 
 #### Return Value

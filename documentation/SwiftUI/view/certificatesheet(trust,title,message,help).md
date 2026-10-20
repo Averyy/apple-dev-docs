@@ -1,7 +1,8 @@
 # certificateSheet(trust:title:message:help:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a certificate sheet using the provided certificate trust.
 

@@ -1,7 +1,8 @@
 # preferredPlacement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred placement for the tab bar controller when the sidebar and tab bar are mutually exclusive, and only one placement can be displayed.
 
@@ -15,6 +16,10 @@ The preferred placement for the tab bar controller when the sidebar and tab bar 
 
 ```swift
 var preferredPlacement: UITabBarController.Sidebar.Placement { get set }
+```
+
+```objc
+@property (nonatomic, assign) UITabBarControllerSidebarPlacement preferredPlacement;
 ```
 
 #### Discussion

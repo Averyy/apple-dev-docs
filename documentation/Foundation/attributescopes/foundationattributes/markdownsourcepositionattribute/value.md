@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute.Value
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The value type of a Markdown source position attribute.
 
@@ -22,11 +23,12 @@ typealias Value = AttributedString.MarkdownSourcePosition
 
 #### Discussion
 
-Attributes of this type have [`AttributedString.MarkdownSourcePosition`](attributedstring/markdownsourceposition.md) values.
+Attributes of this type have [`AttributedString.MarkdownSourcePosition`](../../../attributedstring/markdownsourceposition.md) values.
 
 ## See Also
 
-- [static let name: String](attributescopes/foundationattributes/markdownsourcepositionattribute/name.md)
+### Encoding and Decoding
+- [static let name: String](./name.md)
   The name of the attribute, for use in encoding and decoding.
 
 

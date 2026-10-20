@@ -1,7 +1,8 @@
 # vImageErode_ARGBFFFF(_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Erodes a 32-bit-per-channel, 4-channel interleaved buffer.
 
@@ -20,9 +21,13 @@ Erodes a 32-bit-per-channel, 4-channel interleaved buffer.
 func vImageErode_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ kernel: UnsafePointer<Float>, _ kernel_height: vImagePixelCount, _ kernel_width: vImagePixelCount, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageErode_ARGBFFFF(const vImage_Buffer *src, const vImage_Buffer *dest, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const float *kernel, vImagePixelCount kernel_height, vImagePixelCount kernel_width, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -31,23 +36,27 @@ Use the erode operation to enlarge dark structural elements in an image. In the 
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `kernel`: The kernel data that contains `kernel_height * kernel_width` elements.
 - `kernel_height`: The height of the kernel in pixels. This value needs to be odd.
 - `kernel_width`: The width of the kernel in pixels. This value needs to be odd.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To specify that the function doesn’t apply the operation to the alpha channel, set the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  To specify that the function doesn’t apply the operation to the alpha channel, set the [`kvImageLeaveAlphaUnchanged`](./kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 
-- [Adding a bokeh effect to images](adding-a-bokeh-effect-to-images.md)
+### Related Documentation
+- [Adding a bokeh effect to images](./adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
-- [func vImageErode_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, UnsafePointer<UInt8>, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](vimageerode_planar8(_:_:_:_:_:_:_:_:).md)
+### Eroding an object
+- [func vImageErode_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, UnsafePointer<UInt8>, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](./vimageerode_planar8%28_,_,_,_,_,_,_,_%29.md)
   Erodes an 8-bit planar buffer.
-- [func vImageErode_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](vimageerode_planarf(_:_:_:_:_:_:_:_:).md)
+- [func vImageErode_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](./vimageerode_planarf%28_,_,_,_,_,_,_,_%29.md)
   Erodes a 32-bit planar buffer.
-- [func vImageErode_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, UnsafePointer<UInt8>, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](vimageerode_argb8888(_:_:_:_:_:_:_:_:).md)
+- [func vImageErode_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, UnsafePointer<UInt8>, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](./vimageerode_argb8888%28_,_,_,_,_,_,_,_%29.md)
   Erodes an 8-bit-per-channel, 4-channel interleaved buffer.
 
 

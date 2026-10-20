@@ -1,7 +1,8 @@
 # errorEvent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the error event if any. If no value is available, returns nil.
 
@@ -20,17 +21,22 @@ Returns the error event if any. If no value is available, returns nil.
 var errorEvent: AVMetricErrorEvent? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVMetricErrorEvent * errorEvent;
+```
+
 ## See Also
 
-- [var downloadDuration: TimeInterval](avmetricdownloadsummaryevent/downloadduration.md)
+### Inspecting the download summary
+- [var downloadDuration: TimeInterval](./downloadduration.md)
   Returns the total duration of the download in seconds.
-- [var bytesDownloadedCount: Int](avmetricdownloadsummaryevent/bytesdownloadedcount.md)
+- [var bytesDownloadedCount: Int](./bytesdownloadedcount.md)
   Returns the total number of bytes downloaded by the download task.
-- [var mediaResourceRequestCount: Int](avmetricdownloadsummaryevent/mediaresourcerequestcount.md)
+- [var mediaResourceRequestCount: Int](./mediaresourcerequestcount.md)
   Returns the total number of media requests performed by the download task. This includes playlist requests, media segment requests, and content key requests.
-- [var recoverableErrorCount: Int](avmetricdownloadsummaryevent/recoverableerrorcount.md)
+- [var recoverableErrorCount: Int](./recoverableerrorcount.md)
   Returns the total count of recoverable errors encountered during the download. If no errors were encountered, returns 0.
-- [var variants: [AVAssetVariant]](avmetricdownloadsummaryevent/variants.md)
+- [var variants: [AVAssetVariant]](./variants.md)
   Returns the variants that were downloaded.
 
 

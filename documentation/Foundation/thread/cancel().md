@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the cancelled state of the receiver to indicate that it should exit.
 
@@ -20,21 +21,27 @@ Changes the cancelled state of the receiver to indicate that it should exit.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-The semantics of this method are the same as those used for [`Operation`](operation.md). This method sets state information in the receiver that is then reflected by the [`isCancelled`](thread/iscancelled.md) property. Threads that support cancellation should periodically call the [`isCancelled`](thread/iscancelled.md) method to determine if the thread has in fact been cancelled, and exit if it has been.
+The semantics of this method are the same as those used for [`Operation`](../operation.md). This method sets state information in the receiver that is then reflected by the [`isCancelled`](./iscancelled.md) property. Threads that support cancellation should periodically call the [`isCancelled`](./iscancelled.md) method to determine if the thread has in fact been cancelled, and exit if it has been.
 
-For more information about cancellation and operation objects, see [`Operation`](operation.md).
+For more information about cancellation and operation objects, see [`Operation`](../operation.md).
 
 ## See Also
 
-- [var isCancelled: Bool](thread/iscancelled.md)
+### Related Documentation
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the receiver is cancelled.
-- [class func sleep(until: Date)](thread/sleep(until:).md)
+### Stopping a Thread
+- [class func sleep(until: Date)](./sleep%28until%29.md)
   Blocks the current thread until the time specified.
-- [class func sleep(forTimeInterval: TimeInterval)](thread/sleep(fortimeinterval:).md)
+- [class func sleep(forTimeInterval: TimeInterval)](./sleep%28fortimeinterval%29.md)
   Sleeps the thread for a given time interval.
-- [class func exit()](thread/exit.md)
+- [class func exit()](./exit%28%29.md)
   Terminates the current thread.
 
 

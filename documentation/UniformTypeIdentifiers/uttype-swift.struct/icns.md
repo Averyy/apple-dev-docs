@@ -1,7 +1,8 @@
 # icns
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents Apple icon data.
 
@@ -24,11 +25,12 @@ static var icns: UTType { get }
 
 The identifier for this type is `com.apple.icns`.
 
-This type conforms to [`UTTypeImage`](uttypeimage.md).
+This type conforms to [`UTTypeImage`](../uttypeimage.md).
 
 ## See Also
 
-- [static var ico: UTType](uttype-swift.struct/ico.md)
+### Icon images
+- [static var ico: UTType](./ico.md)
   A type that represents Windows icon data.
 
 

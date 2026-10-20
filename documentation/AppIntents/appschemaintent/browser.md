@@ -1,7 +1,8 @@
 # browser
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the browser domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the browser domain.
 ```swift
 static var browser: some AppSchema.BrowserIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

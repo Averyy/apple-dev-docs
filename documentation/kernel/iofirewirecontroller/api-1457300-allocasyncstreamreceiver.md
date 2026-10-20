@@ -1,14 +1,15 @@
 # allocAsyncStreamReceiver
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOFWAsyncStreamReceiver * allocAsyncStreamReceiver(UInt32 channel, FWAsyncStreamReceiveCallback proc, void *refcon);
 ```
 

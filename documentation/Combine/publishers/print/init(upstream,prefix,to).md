@@ -1,7 +1,8 @@
 # init(upstream:prefix:to:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that prints log messages for all publishing events.
 

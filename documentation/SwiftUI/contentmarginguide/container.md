@@ -1,7 +1,8 @@
 # container
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The margins of the container the view is in.
 

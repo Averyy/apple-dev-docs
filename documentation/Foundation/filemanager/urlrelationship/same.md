@@ -1,9 +1,10 @@
 # FileManager.URLRelationship.same
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The directory and the item are the same. This relationship occurs when the value of the [`fileResourceIdentifierKey`](urlresourcekey/fileresourceidentifierkey.md) is the same for the directory and item.
+The directory and the item are the same. This relationship occurs when the value of the [`fileResourceIdentifierKey`](../../urlresourcekey/fileresourceidentifierkey.md) is the same for the directory and item.
 
 **Availability**:
 - iOS 8.0+
@@ -20,11 +21,16 @@ The directory and the item are the same. This relationship occurs when the value
 case same
 ```
 
+```c
+NSURLRelationshipSame
+```
+
 ## See Also
 
-- [FileManager.URLRelationship.contains](filemanager/urlrelationship/contains.md)
+### URL Relationships
+- [FileManager.URLRelationship.contains](./contains.md)
   The directory contains the specified item.
-- [FileManager.URLRelationship.other](filemanager/urlrelationship/other.md)
+- [FileManager.URLRelationship.other](./other.md)
   The directory does not contain the item and is not the same as the item.
 
 

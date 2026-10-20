@@ -1,7 +1,8 @@
 # inputDescriptionsByName
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of input feature descriptions, which the model keys by the input’s name.
 
@@ -20,13 +21,18 @@ A dictionary of input feature descriptions, which the model keys by the input’
 var inputDescriptionsByName: [String : MLFeatureDescription] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,MLFeatureDescription *> * inputDescriptionsByName;
+```
+
 ## See Also
 
-- [var stateDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/statedescriptionsbyname.md)
+### Accessing feature descriptions
+- [var stateDescriptionsByName: [String : MLFeatureDescription]](./statedescriptionsbyname.md)
   Description of the state features.
-- [var outputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/outputdescriptionsbyname.md)
+- [var outputDescriptionsByName: [String : MLFeatureDescription]](./outputdescriptionsbyname.md)
   A dictionary of output feature descriptions, which the model keys by the output’s name.
-- [class MLFeatureDescription](mlfeaturedescription.md)
+- [class MLFeatureDescription](../mlfeaturedescription.md)
   The name, type, and constraints of an input or output feature.
 
 

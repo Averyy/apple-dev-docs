@@ -1,6 +1,7 @@
 # TN3214: Validating the fonts you ship in your app
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Understand the App Store’s font validation, reproduce the check, and fix any issues it reports.
 
@@ -12,13 +13,13 @@ This happens because a font file stores its outlines, metrics, character mapping
 
 A font parser that never touches the broken data can still render the font without issue. But the same file can fail elsewhere: it can cause visible failures in your app, or make the font parser read past the end of the table, which can crash your app or expose unrelated memory.
 
-macOS includes `FontValidator`, the tool [`Font Book`](https://developer.apple.comhttps://support.apple.com/guide/font-book/install-and-validate-fonts-fntbk1000/mac) and the App Store’s validation both use to read a font file and report what it finds.
+macOS includes `FontValidator`, the tool [Font Book](https://support.apple.com/guide/font-book/install-and-validate-fonts-fntbk1000/mac) and the App Store’s validation both use to read a font file and report what it finds.
 
 This technote covers what it checks, how to run the same check on your Mac, and how to resolve each kind of failure it reports.
 
-#### Understand What the App Store Checks
+#### Understand what the App Store checks
 
-During app ingestion, the App Store validates every font in your app’s payload at one of two levels, based on how your app uses its fonts. If your app only uses a font to display text, it just needs to be readable, so validation uses `minimum`, which allows a font file format that the target OS (macOS, iOS, tvOS, visionOS, or watchOS) can’t install. If your app requests the [`Configuring custom fonts`](https://developer.apple.com/documentation/xcode/configuring-custom-fonts), each font needs to be in a file format the OS can install, so validation uses `strict`.
+During app ingestion, the App Store validates every font in your app’s payload at one of two levels, based on how your app uses its fonts. If your app only uses a font to display text, it just needs to be readable, so validation uses `minimum`, which allows a font file format that the target OS (macOS, iOS, tvOS, visionOS, or watchOS) can’t install. If your app requests the [Install fonts capability](../Xcode/configuring-custom-fonts.md), each font needs to be in a file format the OS can install, so validation uses `strict`.
 
 > **Note**: If your app bundles or redistributes a font licensed to Apple, the font will fail validation even at `minimum`.
 
@@ -37,11 +38,13 @@ Here are the font file formats each platform can and can’t install:
 
 `.woff` and `.woff2` are web-delivery containers, and `.pfa`/`.pfb` are PostScript Type 1 files. None of these are installable font formats on any Apple platform.
 
-> ❗ **Important**: - Starting October 1, 2026, the App Store will reject asset pack uploads that bundle or redistribute a font Apple designs or licenses.
-- Starting October 1, 2027, the App Store will reject app uploads that bundle or redistribute a font Apple designs or licenses.
-- The App Store will reject font provider or WidgetKit apps that contain a font that fails `strict` validation.
+> ❗ **Important**:
+>
+> - Starting October 1, 2026, the App Store will reject asset pack uploads that bundle or redistribute a font Apple designs or licenses.
+> - Starting October 1, 2027, the App Store will reject app uploads that bundle or redistribute a font Apple designs or licenses.
+> - The App Store will reject font provider or WidgetKit apps that contain a font that fails `strict` validation.
 
-#### Reproduce the Check on Your Mac
+#### Reproduce the check on your Mac
 
 This technote describes `FontValidator` 3.5 or later, which ships with macOS 27.2 and later. Run the tool with `-version` to see which one you have. Earlier versions don’t accept these options, lack some of the capabilities this technote describes, and might report more findings than the App Store acts on. If you have an earlier version, update to macOS 27.2 or later.
 
@@ -56,9 +59,11 @@ The command above is similar to the one the App Store runs. You can adjust the f
 
 - `-platform`: The platform your app targets. For example: `macOS`, `iOS`, `tvOS`, `visionOS`, or `watchOS`.
 - `-level`: Use `strict` if your app requests the Fonts capability, or `minimum` if it doesn’t.
-- `-reportType`: Controls how much detail the report includes: - `summary`: Includes the result, the `max_code`, and whether the format is installable.
-- `detailed`: Adds each finding’s code and messages.
-- `full`: Adds the warnings and the font’s format.
+- `-reportType`: Controls how much detail the report includes:
+
+  - `summary`: Includes the result, the `max_code`, and whether the format is installable.
+  - `detailed`: Adds each finding’s code and messages.
+  - `full`: Adds the warnings and the font’s format.
 
 Use the `full` report type when you’re diagnosing why the App Store rejected a font.
 
@@ -74,7 +79,7 @@ For the last argument, give `FontValidator` one or more paths to scan — the `.
 - Its exit status tells you the outcome: `0` for success, `255` when one or more files failed, and `252` if you mistyped an option.
 - For the full list of options and codes, run `-help`.
 
-#### Read the Report
+#### Read the report
 
 `FontValidator` writes its findings as JSON. Here’s an example, with what each key means explained below:
 
@@ -131,11 +136,11 @@ For the last argument, give `FontValidator` one or more paths to scan — the `.
 | `-202` | A failure this level relaxed. It’s a specification violation with no memory-safety concern. |
 | `-301` | A warning. |
 
-#### Fix the Issue
+#### Fix the issue
 
 Each finding names one of the codes above. Look up the one that matches your report below.
 
-##### 101 the Font Violates the Specification
+##### -101: The font violates the specification
 
 Fonts that reach this are almost always the output of a tool that rewrote part of the file without updating the rest. The most common shapes are:
 
@@ -155,7 +160,7 @@ Most of these are bookkeeping errors that a font tool recomputes for you. To fix
 
 Re-run the validator on the result. If the same finding still appears after re-saving, the defect is in the font’s actual content rather than its layout. Regenerate the font from source with a current version of your font editor, or go back to your font vendor with the message text from the report.
 
-##### 102 the Target Platform Doesnt Accept This Font
+##### -102: The target platform doesn’t accept this font
 
 This code has two distinct causes, and the message in the report tells you which one applies.
 
@@ -170,9 +175,9 @@ macOS stores a resource fork as the `com.apple.ResourceFork` extended attribute.
 
 To fix this, re-save the font as an ordinary data-fork `.ttf` or `.otf` file.
 
-##### 103 and 104 the App Redistributes a Font Apple Designs or Licenses
+##### -103 and -104: The app redistributes a font Apple designs or licenses
 
-Your app can’t redistribute fonts Apple designs, such as the San Francisco and New York families, or fonts Apple licenses from a third party. They’re already present on the device or available for download. Remove the bundled copies and access these fonts directly through the system font APIs. For more information, see [`Fonts`](https://developer.apple.com/documentation/technologyoverviews/fonts) in the Technology Overviews.
+Your app can’t redistribute fonts Apple designs, such as the San Francisco and New York families, or fonts Apple licenses from a third party. They’re already present on the device or available for download. Remove the bundled copies and access these fonts directly through the system font APIs. For more information, see [Fonts](../TechnologyOverviews/fonts.md) in the Technology Overviews.
 
 `FontValidator` identifies a font Apple designs or fonts licensed to Apple by content markers in the file. Sharing a name with one of these fonts, such as your own build of a face you licensed independently, doesn’t trigger this error.
 

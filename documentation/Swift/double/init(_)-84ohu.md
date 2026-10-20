@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value, rounded to the closest possible representation.
 
@@ -26,7 +27,8 @@ If two representable values are equally close, the result is the value with more
 
 ## See Also
 
-- [init<Source>(Source)](double/init(_:)-5blrp.md)
+### Converting Integers
+- [init<Source>(Source)](./init%28_%29-5blrp.md)
   Creates a new value, rounded to the closest possible representation.
 
 

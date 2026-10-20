@@ -1,7 +1,8 @@
 # progressive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An immersion style that displays unbounded content that partially replaces passthrough video.
 
@@ -16,13 +17,15 @@ An immersion style that displays unbounded content that partially replaces passt
 static var progressive: ProgressiveImmersionStyle { get }
 ```
 
+Available when `Self` is `ProgressiveImmersionStyle`.
+
 #### Discussion
 
-The system initially uses a radial portal effect that replaces passthrough in a portion of the field of view. People can interactively adjust the size of the portal by turning the Digital Crown, including down to a minimum amount of immersion defined by the system and up to the point where the portal fully covers passthrough. If someone tries to reduce the portal size below the minimum value, the portal smoothly bounces back to the minimum size. The portal’s behavior at the maximum size matches the behavior of the [`full`](immersionstyle/full.md) immersion style, including the configurable visibility of the viewer’s upper limbs.
+The system initially uses a radial portal effect that replaces passthrough in a portion of the field of view. People can interactively adjust the size of the portal by turning the Digital Crown, including down to a minimum amount of immersion defined by the system and up to the point where the portal fully covers passthrough. If someone tries to reduce the portal size below the minimum value, the portal smoothly bounces back to the minimum size. The portal’s behavior at the maximum size matches the behavior of the [`full`](./full.md) immersion style, including the configurable visibility of the viewer’s upper limbs.
 
-When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](view/onimmersionchange(initial:_:).md) is within the range of the immersion that this style uses.
+When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](../view/onimmersionchange%28initial,_%29.md) is within the range of the immersion that this style uses.
 
-Use the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier to specify this style for an [`ImmersiveSpace`](immersivespace.md):
+Use the [`immersionStyle(selection:in:)`](../scene/immersionstyle%28selection,in%29.md) scene modifier to specify this style for an [`ImmersiveSpace`](../immersivespace.md):
 
 ```swift
 @main
@@ -39,11 +42,12 @@ The immersion style affects how windows interact with virtual objects in the env
 
 ## See Also
 
-- [static var automatic: AutomaticImmersionStyle](immersionstyle/automatic.md)
+### Getting built-in styles
+- [static var automatic: AutomaticImmersionStyle](./automatic.md)
   The default immersion style.
-- [static var full: FullImmersionStyle](immersionstyle/full.md)
+- [static var full: FullImmersionStyle](./full.md)
   An immersion style that displays unbounded content that completely replaces passthrough video.
-- [static var mixed: MixedImmersionStyle](immersionstyle/mixed.md)
+- [static var mixed: MixedImmersionStyle](./mixed.md)
   An immersion style that displays unbounded content intermixed with other app content, along with passthrough video.
 
 

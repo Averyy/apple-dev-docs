@@ -1,20 +1,22 @@
 # LFE2
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 LFE2
 ```
 
 ## See Also
 
-- [LFEScreen](videodriverkit/iouservideochannellabel/lfescreen.md)
+### Low-Frequency Effects channels
+- [LFEScreen](./lfescreen.md)
 
 
 ---

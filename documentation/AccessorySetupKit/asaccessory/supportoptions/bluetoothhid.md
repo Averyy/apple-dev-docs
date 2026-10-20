@@ -1,7 +1,8 @@
 # bluetoothHID
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The accessory supports Bluetooth Low Energy HID service.
 
@@ -15,11 +16,16 @@ The accessory supports Bluetooth Low Energy HID service.
 static var bluetoothHID: ASAccessory.SupportOptions { get }
 ```
 
+```c
+ASAccessorySupportBluetoothHID
+```
+
 ## See Also
 
-- [static var bluetoothPairingLE: ASAccessory.SupportOptions](asaccessory/supportoptions/bluetoothpairingle.md)
+### Bluetooth options
+- [static var bluetoothPairingLE: ASAccessory.SupportOptions](./bluetoothpairingle.md)
   The accessory supports Bluetooth Low Energy pairing.
-- [static var bluetoothTransportBridging: ASAccessory.SupportOptions](asaccessory/supportoptions/bluetoothtransportbridging.md)
+- [static var bluetoothTransportBridging: ASAccessory.SupportOptions](./bluetoothtransportbridging.md)
   The accessory supports bridging to Bluetooth classic transport.
 
 

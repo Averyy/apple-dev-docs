@@ -1,7 +1,8 @@
 # minGroupingDigits
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,37 +19,42 @@
 static let minGroupingDigits: CFNumberFormatterKey!
 ```
 
+```c
+extern CFNumberFormatterKey const kCFNumberFormatterMinGroupingDigits;
+```
+
 ## See Also
 
-- [static let alwaysShowDecimalSeparator: CFNumberFormatterKey!](cfnumberformatterkey/alwaysshowdecimalseparator.md)
+### Type Properties
+- [static let alwaysShowDecimalSeparator: CFNumberFormatterKey!](./alwaysshowdecimalseparator.md)
   Specifies if the result of converting a value to a string should always contain the decimal separator, even if the number is an integer.
-- [static let currencyCode: CFNumberFormatterKey!](cfnumberformatterkey/currencycode.md)
+- [static let currencyCode: CFNumberFormatterKey!](./currencycode.md)
   Specifies the currency code, a `CFString` object.
-- [static let currencyDecimalSeparator: CFNumberFormatterKey!](cfnumberformatterkey/currencydecimalseparator.md)
+- [static let currencyDecimalSeparator: CFNumberFormatterKey!](./currencydecimalseparator.md)
   Specifies the currency decimal separator, a `CFString` object.
-- [static let currencyGroupingSeparator: CFNumberFormatterKey!](cfnumberformatterkey/currencygroupingseparator.md)
+- [static let currencyGroupingSeparator: CFNumberFormatterKey!](./currencygroupingseparator.md)
   Specifies the grouping symbol to use when placing a currency value within a string, a `CFString` object.
-- [static let currencySymbol: CFNumberFormatterKey!](cfnumberformatterkey/currencysymbol.md)
+- [static let currencySymbol: CFNumberFormatterKey!](./currencysymbol.md)
   Specifies the symbol for the currency, a `CFString` object.
-- [static let decimalSeparator: CFNumberFormatterKey!](cfnumberformatterkey/decimalseparator.md)
+- [static let decimalSeparator: CFNumberFormatterKey!](./decimalseparator.md)
   Specifies the decimal separator, a `CFString` object.
-- [static let defaultFormat: CFNumberFormatterKey!](cfnumberformatterkey/defaultformat.md)
+- [static let defaultFormat: CFNumberFormatterKey!](./defaultformat.md)
   The original format string for the formatter (given the date and time style and locale specified at creation), a `CFString` object.
-- [static let exponentSymbol: CFNumberFormatterKey!](cfnumberformatterkey/exponentsymbol.md)
+- [static let exponentSymbol: CFNumberFormatterKey!](./exponentsymbol.md)
   Specifies the exponent symbol (“E” or “e”) in the scientific notation of numbers (for example, as in `1.0e+56`), a `CFString` object.
-- [static let formatWidth: CFNumberFormatterKey!](cfnumberformatterkey/formatwidth.md)
-  Specifies the width of a formatted number within a string that is either left justified or right justified based on the value of [`paddingPosition`](cfnumberformatterkey/paddingposition.md), a `CFNumber` object.
-- [static let groupingSeparator: CFNumberFormatterKey!](cfnumberformatterkey/groupingseparator.md)
+- [static let formatWidth: CFNumberFormatterKey!](./formatwidth.md)
+  Specifies the width of a formatted number within a string that is either left justified or right justified based on the value of [`paddingPosition`](./paddingposition.md), a `CFNumber` object.
+- [static let groupingSeparator: CFNumberFormatterKey!](./groupingseparator.md)
   Specifies the grouping separator, a `CFString` object.
-- [static let groupingSize: CFNumberFormatterKey!](cfnumberformatterkey/groupingsize.md)
+- [static let groupingSize: CFNumberFormatterKey!](./groupingsize.md)
   Specifies how often the “thousands” or grouping separator appears, as in “10,000,000”, a `CFNumber` object.
-- [static let infinitySymbol: CFNumberFormatterKey!](cfnumberformatterkey/infinitysymbol.md)
+- [static let infinitySymbol: CFNumberFormatterKey!](./infinitysymbol.md)
   Specifies the string that is used to represent the symbol for infinity, a `CFString` object.
-- [static let internationalCurrencySymbol: CFNumberFormatterKey!](cfnumberformatterkey/internationalcurrencysymbol.md)
+- [static let internationalCurrencySymbol: CFNumberFormatterKey!](./internationalcurrencysymbol.md)
   Specifies the international currency symbol to use when placing a formatted number within a string, a `CFString` object.
-- [static let isLenient: CFNumberFormatterKey!](cfnumberformatterkey/islenient.md)
+- [static let isLenient: CFNumberFormatterKey!](./islenient.md)
   Specifies whether the formatter is lenient, a`CFBoolean` object.
-- [static let maxFractionDigits: CFNumberFormatterKey!](cfnumberformatterkey/maxfractiondigits.md)
+- [static let maxFractionDigits: CFNumberFormatterKey!](./maxfractiondigits.md)
   Specifies the maximum number of digits after a decimal point, a `CFNumber` object.
 
 

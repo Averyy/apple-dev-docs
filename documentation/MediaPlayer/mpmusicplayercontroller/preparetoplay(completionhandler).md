@@ -1,7 +1,8 @@
 # prepareToPlay(completionHandler:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares a music player for playback.
 
@@ -15,7 +16,15 @@ Prepares a music player for playback.
 ## Declaration
 
 ```swift
+func prepareToPlay(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func prepareToPlay() async throws
+```
+
+```objc
+- (void) prepareToPlayWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -24,7 +33,9 @@ Call this function to ensure that the system buffers the first item in the queue
 
 ## Parameters
 
-- `completionHandler`: A block that the system call after it buffers the first item in the queue and it’s ready to play. - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+- `completionHandler`: A block that the system call after it buffers the first item in the queue and it’s ready to play.
+
+  - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 
 ---

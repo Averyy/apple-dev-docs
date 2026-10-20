@@ -1,6 +1,7 @@
 # Adding images to your Xcode project
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Import images into your project, manage their appearances and variations, and load them at runtime.
 
@@ -8,7 +9,7 @@ Import images into your project, manage their appearances and variations, and lo
 
 Xcode projects often contain many images, and need to manage multiple variations of each image to create a great visual experience for all the devices and platforms on which your app runs. For example, your app might display a different version of an image depending on the device screen size, resolution, language, appearance, gamut, and many other factors. If your app uses images, you can use asset catalogs to simplify managing those images through image sets.
 
-##### Create a New Image Set
+##### Create a new image set
 
 An *image set* represents one image that you intend to load at runtime. Each image set contains multiple variations of a single image that you customize to support different device characteristics. If you have multiple images in your app, you need to create an image set for each image.
 
@@ -18,9 +19,9 @@ To create an image set, generate an image asset outside of Xcode, then import it
 2. Drag an image from the Finder to the outline view. A new image set appears in the outline view, and the image asset appears in a well in the detail area.
 3. Double-click the image set name in the outline view to rename the image set with a descriptive name, and press the Return key.
 
-![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](/images/com.apple.Xcode/adding-images-to-your-xcode-project-1@2x.png)
+![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-images-to-your-xcode-project-1@2x.png)
 
-##### Select Supported Appearances and Variations for Images
+##### Select supported appearances and variations for images
 
 By default, Xcode creates each image set with wells for @1x, @2x, and @3x resolutions. If the filename of the image you import ends in `@2x` or `@3x`, Xcode automatically places the image into the well with the corresponding resolution. Supply high-resolution images for all images in your app, for all devices your app supports.
 
@@ -31,11 +32,11 @@ In addition to resolution, your image assets might vary based on other device ch
 3. In the inspector area, select the Attributes inspector.
 4. In the Attributes inspector, add, remove, and edit the device characteristic settings to show additional image wells for the variations you want to customize.
 
-![Screenshot of the Attributes inspector with the default Universal option selected.](/images/com.apple.Xcode/adding-images-to-your-xcode-project-2@2x.png)
+![Screenshot of the Attributes inspector with the default Universal option selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-images-to-your-xcode-project-2@2x.png)
 
-For more information about image size and resolution, see [`Image Size and Resolution`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution) in the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios).
+For more information about image size and resolution, see [Image Size and Resolution](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution) in the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios).
 
-##### Drag Images to the Variant Wells
+##### Drag images to the variant wells
 
 After you select the desired characteristic settings for your image set, provide image variations by dragging additional images into the corresponding wells in the image set.
 
@@ -43,7 +44,7 @@ After you select the desired characteristic settings for your image set, provide
 2. In the outline view, select the image set.
 3. In the Finder, drag other variations of the image to the wells in the detail area that match their resolutions or other characteristics.
 
-##### Load the Image Asset From Your Code
+##### Load the image asset from your code
 
 To use the image from code, initialize an image with the name of the image set. Don’t include the file extension.
 
@@ -60,7 +61,8 @@ let image = NSImage(named: "ImageName")
 
 ## See Also
 
-- [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md)
+### Images
+- [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md)
   Design a symbol image with the same behavior as system-provided symbols.
 
 

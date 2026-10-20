@@ -1,7 +1,8 @@
 # userEnteredFormValues
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-entered form values to complete captive portal login.
 
@@ -25,7 +26,7 @@ The dictionary content depends on the available data:
 
 When present, the key-value pairs contain:
 
-- **Key**: A [`CSS selector`](https://developer.apple.comhttps://www.w3.org/TR/selectors-4/) that locates the HTML element within the document, using `querySelector()` or `querySelectorAll()` functions.
+- **Key**: A [CSS selector](https://www.w3.org/TR/selectors-4/) that locates the HTML element within the document, using `querySelector()` or `querySelectorAll()` functions.
 - **Value**: The corresponding HTML element value.
 
 

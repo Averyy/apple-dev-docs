@@ -1,7 +1,8 @@
 # scroll(to:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the view to the specified point.
 
@@ -14,13 +15,18 @@ Scrolls the view to the specified point.
 func scroll(to point: NSPoint)
 ```
 
+```objc
+- (void) scrollToPoint:(NSPoint) point;
+```
+
 ## Parameters
 
 - `point`: The point to scroll to.
 
 ## See Also
 
-- [func scroll(to: NSRect)](ikimageview/scroll(to:)-535q6.md)
+### Scrolling
+- [func scroll(to: NSRect)](./scroll%28to%29-535q6.md)
   Scrolls the view so that it includes the provided rectangular area.
 
 

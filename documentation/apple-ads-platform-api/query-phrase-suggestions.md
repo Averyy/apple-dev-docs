@@ -1,7 +1,8 @@
 # Query Phrase Suggestions
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query phrase suggestions using either a discovery or search route based on the query type.
 
@@ -10,11 +11,11 @@ Query phrase suggestions using either a discovery or search route based on the q
 
 #### Discussion
 
-Each result is a [`PhraseSuggestion`](phrasesuggestion.md) object. Sort by `popularity DESC` and use `pagination` to page through results.
+Each result is a [`PhraseSuggestion`](./phrasesuggestion.md) object. Sort by `popularity DESC` and use `pagination` to page through results.
 
 Use `SUGGESTION` to discover new candidate phrases for an app or brand. It requires `promotedObjectId` and `promotedObjectType`, and works well when building a phrase list from scratch. Use `SEARCH` to look up or match specific phrases you already have in mind, using `phrase` with `IN` for an exact popularity lookup or `LIKE` for a partial match. The `SEARCH` route doesn’t require `promotedObjectId`.
 
-See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -258,19 +259,34 @@ POST /v1/suggestions/phrases/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-See [`RecommendationQueryRequest`](recommendationqueryrequest.md). This endpoint supports two query routes selected by the `queryType` filter: `SUGGESTION` discovers phrases for an app or Apple Maps brand, and `SEARCH` looks up or searches specific phrases.
+**Content-Type**: `application/json`  
+**Type**: `RecommendationQueryRequest`
+
+See [`RecommendationQueryRequest`](./recommendationqueryrequest.md). This endpoint supports two query routes selected by the `queryType` filter: `SUGGESTION` discovers phrases for an app or Apple Maps brand, and `SEARCH` looks up or searches specific phrases.
+
+## Responses
+
+- `200` OK (`RecommendationQueryPhraseSuggestionResponse`, `application/json`)
+- `400` Bad Request (`RecommendationResponseBody`, `application/json`)
+- `401` Unauthorized (`RecommendationResponseBody`, `application/json`)
+- `403` Forbidden (`RecommendationResponseBody`, `application/json`)
+- `404` Not Found (`RecommendationResponseBody`, `application/json`)
+- `429` Too Many Requests (`RecommendationResponseBody`, `application/json`)
+- `500` Internal Server Error (`RecommendationResponseBody`, `application/json`)
 
 ## See Also
 
-- [Query Keyword Suggestions](query-keyword-suggestions.md)
+- [Query Keyword Suggestions](./query-keyword-suggestions.md)
   Query keyword suggestions based on search terms and App Store countries or regions using structured filters.
-- [Query Category Suggestions](query-category-suggestions.md)
+- [Query Category Suggestions](./query-category-suggestions.md)
   Query category suggestions for apps or brands using either a discovery or search route based on the query type.
-- [Query Target CPA Suggestion](query-target-cpa-suggestion.md)
+- [Query Target CPA Suggestion](./query-target-cpa-suggestion.md)
   Retrieve the recommended target CPA for a new Maximize Conversions campaign on the App Store.
 
 

@@ -1,7 +1,8 @@
 # homeVideo
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The media item contains a home video.
 
@@ -20,31 +21,36 @@ The media item contains a home video.
 static var homeVideo: MPMediaType { get }
 ```
 
+```c
+MPMediaTypeHomeVideo
+```
+
 ## See Also
 
-- [static var music: MPMediaType](mpmediatype/music.md)
+### Constants
+- [static var music: MPMediaType](./music.md)
   The media item contains music.
-- [static var podcast: MPMediaType](mpmediatype/podcast.md)
+- [static var podcast: MPMediaType](./podcast.md)
   The media item contains a podcast.
-- [static var audioBook: MPMediaType](mpmediatype/audiobook.md)
+- [static var audioBook: MPMediaType](./audiobook.md)
   The media item contains an audio book.
-- [static var audioITunesU: MPMediaType](mpmediatype/audioitunesu.md)
+- [static var audioITunesU: MPMediaType](./audioitunesu.md)
   The media item contains an iTunes U audio lesson.
-- [static var anyAudio: MPMediaType](mpmediatype/anyaudio.md)
+- [static var anyAudio: MPMediaType](./anyaudio.md)
   The media item contains an unspecified type of audio content.
-- [static var movie: MPMediaType](mpmediatype/movie.md)
+- [static var movie: MPMediaType](./movie.md)
   The media item contains a movie.
-- [static var tvShow: MPMediaType](mpmediatype/tvshow.md)
+- [static var tvShow: MPMediaType](./tvshow.md)
   The media item contains a TV show.
-- [static var videoPodcast: MPMediaType](mpmediatype/videopodcast.md)
+- [static var videoPodcast: MPMediaType](./videopodcast.md)
   The media item contains a video podcast.
-- [static var musicVideo: MPMediaType](mpmediatype/musicvideo.md)
+- [static var musicVideo: MPMediaType](./musicvideo.md)
   The media item contains a music video.
-- [static var videoITunesU: MPMediaType](mpmediatype/videoitunesu.md)
+- [static var videoITunesU: MPMediaType](./videoitunesu.md)
   The media item contains an iTunes U video.
-- [static var anyVideo: MPMediaType](mpmediatype/anyvideo.md)
+- [static var anyVideo: MPMediaType](./anyvideo.md)
   The media item contains an unspecified type of video content.
-- [static var any: MPMediaType](mpmediatype/any.md)
+- [static var any: MPMediaType](./any.md)
   The media item contains an unspecified type of media content.
 
 

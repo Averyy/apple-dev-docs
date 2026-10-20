@@ -1,7 +1,8 @@
 # insert(displayed:options:actionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an insert system accessory with the specified display state, configuration options, and optional action handler.
 
@@ -10,7 +11,7 @@ Creates an insert system accessory with the specified display state, configurati
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ A configured insert cell accessory. This accessory is a plus sign inside of a ci
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the insert accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
-- `options`: Configuration options for the insert accessory. See [`UICellAccessory.InsertOptions`](uicellaccessory-swift.struct/insertoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the insert accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](./displayedstate/whenediting.md).
+- `options`: Configuration options for the insert accessory. See [`UICellAccessory.InsertOptions`](./insertoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the insert accessory.
 
 ## See Also
 
-- [UICellAccessory.InsertOptions](uicellaccessory-swift.struct/insertoptions.md)
+### Creating an insert accessory
+- [UICellAccessory.InsertOptions](./insertoptions.md)
   Configuration options for an insert accessory.
 
 

@@ -1,7 +1,8 @@
 # chartXScale(domain:range:type:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the x scale for charts.
 
@@ -29,25 +30,26 @@ func chartXScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType? =
 
 ## See Also
 
-- [func chartXScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartxscale(domain:type:).md)
+### Axis scales
+- [func chartXScale<Domain>(domain: Domain, type: ScaleType?) -> some View](./chartxscale%28domain,type%29.md)
   Configures the x scale for charts.
-- [func chartXScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartxscale(range:type:).md)
+- [func chartXScale<Range>(range: Range, type: ScaleType?) -> some View](./chartxscale%28range,type%29.md)
   Configures the x scale for charts.
-- [func chartXScale(type: ScaleType?) -> some View](view/chartxscale(type:).md)
+- [func chartXScale(type: ScaleType?) -> some View](./chartxscale%28type%29.md)
   Configures the x scale for charts.
-- [func chartYScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartyscale(domain:range:type:).md)
+- [func chartYScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](./chartyscale%28domain,range,type%29.md)
   Configures the y scale for charts.
-- [func chartYScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartyscale(domain:type:).md)
+- [func chartYScale<Domain>(domain: Domain, type: ScaleType?) -> some View](./chartyscale%28domain,type%29.md)
   Configures the y scale for charts.
-- [func chartYScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartyscale(range:type:).md)
+- [func chartYScale<Range>(range: Range, type: ScaleType?) -> some View](./chartyscale%28range,type%29.md)
   Configures the y scale for charts.
-- [func chartYScale(type: ScaleType?) -> some View](view/chartyscale(type:).md)
+- [func chartYScale(type: ScaleType?) -> some View](./chartyscale%28type%29.md)
   Configures the y scale for charts.
-- [func chartZScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartzscale(domain:range:type:).md)
+- [func chartZScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](./chartzscale%28domain,range,type%29.md)
   Configures the z scale for 3D charts.
-- [func chartZScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartzscale(domain:type:).md)
+- [func chartZScale<Domain>(domain: Domain, type: ScaleType?) -> some View](./chartzscale%28domain,type%29.md)
   Configures the z scale for 3D charts.
-- [func chartZScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartzscale(range:type:).md)
+- [func chartZScale<Range>(range: Range, type: ScaleType?) -> some View](./chartzscale%28range,type%29.md)
   Configures the z scale for 3D charts.
 
 

@@ -1,7 +1,8 @@
 # errSecCSResourcesInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The sealed resource directory is invalid.
 
@@ -13,6 +14,10 @@ The sealed resource directory is invalid.
 
 ```swift
 var errSecCSResourcesInvalid: OSStatus { get }
+```
+
+```c
+errSecCSResourcesInvalid
 ```
 
 

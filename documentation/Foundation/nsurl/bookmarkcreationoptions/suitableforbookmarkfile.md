@@ -1,7 +1,8 @@
 # suitableForBookmarkFile
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the bookmark data includes the required properties for creating Finder alias files.
 
@@ -20,17 +21,22 @@ Specifies that the bookmark data includes the required properties for creating F
 static var suitableForBookmarkFile: NSURL.BookmarkCreationOptions { get }
 ```
 
+```c
+NSURLBookmarkCreationSuitableForBookmarkFile
+```
+
 ## See Also
 
-- [static var minimalBookmark: NSURL.BookmarkCreationOptions](nsurl/bookmarkcreationoptions/minimalbookmark.md)
+### Options
+- [static var minimalBookmark: NSURL.BookmarkCreationOptions](./minimalbookmark.md)
   Specifies that when creating a bookmark, it includes minimal information.
-- [static var withSecurityScope: NSURL.BookmarkCreationOptions](nsurl/bookmarkcreationoptions/withsecurityscope.md)
+- [static var withSecurityScope: NSURL.BookmarkCreationOptions](./withsecurityscope.md)
   Specifies that when creating a security-scoped bookmark, upon resolution, it provides a security-scoped URL allowing read/write access to a file-system resource.
-- [static var securityScopeAllowOnlyReadAccess: NSURL.BookmarkCreationOptions](nsurl/bookmarkcreationoptions/securityscopeallowonlyreadaccess.md)
+- [static var securityScopeAllowOnlyReadAccess: NSURL.BookmarkCreationOptions](./securityscopeallowonlyreadaccess.md)
   Specifies that when creating a security-scoped bookmark, upon resolution, it provides a security-scoped URL allowing read-only access to a file-system resource.
-- [static var withoutImplicitSecurityScope: NSURL.BookmarkCreationOptions](nsurl/bookmarkcreationoptions/withoutimplicitsecurityscope.md)
+- [static var withoutImplicitSecurityScope: NSURL.BookmarkCreationOptions](./withoutimplicitsecurityscope.md)
   Prevents inclusion of a bookmark’s implicit ephemeral security scope, when creating one without security scope.
-- [static var preferFileIDResolution: NSURL.BookmarkCreationOptions](nsurl/bookmarkcreationoptions/preferfileidresolution.md)
+- [static var preferFileIDResolution: NSURL.BookmarkCreationOptions](./preferfileidresolution.md)
   Specifies that when creating a bookmark, upon resolution, its embedded file ID takes precedence over other sources of information (file system path, for example) when there’s a conflict.
 
 

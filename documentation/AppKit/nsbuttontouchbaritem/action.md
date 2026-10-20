@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,9 +16,14 @@
 var action: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL action;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nsbuttontouchbaritem/target.md)
+### Handling button interaction
+- [var target: AnyObject?](./target.md)
 
 
 ---

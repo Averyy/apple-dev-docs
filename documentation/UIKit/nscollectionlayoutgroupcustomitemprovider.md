@@ -1,16 +1,17 @@
 # NSCollectionLayoutGroupCustomItemProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that creates and returns each of the custom group’s items.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ A closure that creates and returns each of the custom group’s items.
 typealias NSCollectionLayoutGroupCustomItemProvider = (any NSCollectionLayoutEnvironment) -> [NSCollectionLayoutGroupCustomItem]
 ```
 
+```c
+typedef NSArray<NSCollectionLayoutGroupCustomItem *> *(^)(id<NSCollectionLayoutEnvironment>) NSCollectionLayoutGroupCustomItemProvider;
+```
+
 #### Discussion
 
-You use a custom item provider to supply the item arrangement when creating a group using the [`custom(layoutSize:itemProvider:)`](nscollectionlayoutgroup/custom(layoutsize:itemprovider:).md) initializer.
+You use a custom item provider to supply the item arrangement when creating a group using the [`custom(layoutSize:itemProvider:)`](./nscollectionlayoutgroup/custom%28layoutsize,itemprovider%29.md) initializer.
 
 ## See Also
 
-- [class NSCollectionLayoutGroupCustomItem](nscollectionlayoutgroupcustomitem.md)
+### Advanced layouts
+- [class NSCollectionLayoutGroupCustomItem](./nscollectionlayoutgroupcustomitem.md)
   An item used in a group with a custom layout arrangement.
 
 

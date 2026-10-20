@@ -1,7 +1,8 @@
 # isVariationSelector
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a variation selector.
 
@@ -24,7 +25,7 @@ var isVariationSelector: Bool { get }
 
 Variation selectors allow rendering engines that support them to choose different glyphs to display for a particular code point.
 
-This property corresponds to the “Variation_Selector” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Variation_Selector” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

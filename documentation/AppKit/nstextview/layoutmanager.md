@@ -1,12 +1,13 @@
 # layoutManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout manager that lays out text for the receiver’s text container.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,30 +15,36 @@ The layout manager that lays out text for the receiver’s text container.
 unowned(unsafe) var layoutManager: NSLayoutManager? { get }
 ```
 
+```objc
+@property (assign, readonly, nullable) NSLayoutManager * layoutManager;
+```
+
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nstextcontainer/layoutmanager.md)
+### Related Documentation
+- [var layoutManager: NSLayoutManager?](../nstextcontainer/layoutmanager.md)
   The text container’s layout manager.
-- [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
+- [func replaceLayoutManager(NSLayoutManager)](../nstextcontainer/replacelayoutmanager%28_%29.md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+### Accessing text system objects
+- [class var stronglyReferencesTextStorage: Bool](./stronglyreferencestextstorage.md)
   A Boolean value that indicates whether instances of the class operate in the object ownership policy.
-- [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
-- [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
+- [class func fieldEditor() -> Self](./fieldeditor%28%29.md)
+- [var textContainer: NSTextContainer?](./textcontainer.md)
   The receiver’s text container.
-- [func replaceTextContainer(NSTextContainer)](nstextview/replacetextcontainer(_:).md)
+- [func replaceTextContainer(NSTextContainer)](./replacetextcontainer%28_%29.md)
   Replaces the text container for the group of text system objects containing the receiver, keeping the association between the receiver and its layout manager intact.
-- [var textContainerInset: NSSize](nstextview/textcontainerinset.md)
+- [var textContainerInset: NSSize](./textcontainerinset.md)
   The empty space the receiver leaves around its associated text container.
-- [var textContainerOrigin: NSPoint](nstextview/textcontainerorigin.md)
+- [var textContainerOrigin: NSPoint](./textcontainerorigin.md)
   The origin of the receiver’s text container.
-- [func invalidateTextContainerOrigin()](nstextview/invalidatetextcontainerorigin.md)
+- [func invalidateTextContainerOrigin()](./invalidatetextcontainerorigin%28%29.md)
   Invalidates the calculated origin of the text container.
-- [var textLayoutManager: NSTextLayoutManager?](nstextview/textlayoutmanager.md)
+- [var textLayoutManager: NSTextLayoutManager?](./textlayoutmanager.md)
   The manager that lays out text for the receiver’s text container.
-- [var textContentStorage: NSTextContentStorage?](nstextview/textcontentstorage.md)
+- [var textContentStorage: NSTextContentStorage?](./textcontentstorage.md)
   The receiver’s text storage object.
-- [var textStorage: NSTextStorage?](nstextview/textstorage.md)
+- [var textStorage: NSTextStorage?](./textstorage.md)
   The receiver’s text storage object.
 
 

@@ -1,7 +1,8 @@
 # settingsUpdates
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asynchronous sequence of update notifications for the Home button settings.
 

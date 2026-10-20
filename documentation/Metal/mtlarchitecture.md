@@ -1,7 +1,8 @@
 # MTLArchitecture
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that contains the architectural details of a GPU device.
 
@@ -19,50 +20,55 @@ A class that contains the architectural details of a GPU device.
 class MTLArchitecture
 ```
 
+```objc
+@interface MTLArchitecture : NSObject
+```
+
 ## Topics
 
 ### Inspecting a GPU device’s architecture details
-- [var name: String](mtlarchitecture/name.md)
+- [var name: String](./mtlarchitecture/name.md)
   The name of a GPU device’s architecture.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var name: String](mtldevice/name.md)
+### Identifying a GPU device
+- [var name: String](./mtldevice/name.md)
   The full name of the GPU device.
-- [var architecture: MTLArchitecture](mtldevice/architecture.md)
+- [var architecture: MTLArchitecture](./mtldevice/architecture.md)
   The architectural details of the GPU device.
-- [var registryID: UInt64](mtldevice/registryid.md)
+- [var registryID: UInt64](./mtldevice/registryid.md)
   The GPU device’s registry identifier.
-- [var location: MTLDeviceLocation](mtldevice/location.md)
+- [var location: MTLDeviceLocation](./mtldevice/location.md)
   The physical location of the GPU relative to the system.
-- [enum MTLDeviceLocation](mtldevicelocation.md)
+- [enum MTLDeviceLocation](./mtldevicelocation.md)
   Indicates the location of the GPU relative to the system it’s connect to.
-- [var locationNumber: Int](mtldevice/locationnumber.md)
+- [var locationNumber: Int](./mtldevice/locationnumber.md)
   A specific GPU position based on its general location.
-- [var isLowPower: Bool](mtldevice/islowpower.md)
+- [var isLowPower: Bool](./mtldevice/islowpower.md)
   A Boolean value that indicates whether the GPU lowers its performance to conserve energy.
-- [var isRemovable: Bool](mtldevice/isremovable.md)
+- [var isRemovable: Bool](./mtldevice/isremovable.md)
   A Boolean value that indicates whether the GPU is removable.
-- [var isHeadless: Bool](mtldevice/isheadless.md)
+- [var isHeadless: Bool](./mtldevice/isheadless.md)
   A Boolean value that indicates whether a GPU device doesn’t have a connection to a display.
-- [var peerGroupID: UInt64](mtldevice/peergroupid.md)
+- [var peerGroupID: UInt64](./mtldevice/peergroupid.md)
   The peer group ID the GPU belongs to, if applicable.
-- [var peerCount: UInt32](mtldevice/peercount.md)
+- [var peerCount: UInt32](./mtldevice/peercount.md)
   The total number of GPUs in the peer group, if applicable.
-- [var peerIndex: UInt32](mtldevice/peerindex.md)
+- [var peerIndex: UInt32](./mtldevice/peerindex.md)
   The unique identifier for a GPU in a peer group.
 
 

@@ -1,23 +1,28 @@
 # subtitle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string containing the annotation’s subtitle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 optional var subtitle: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * subtitle;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ This is the string the annotation displays in the callout for the annotation vie
 
 ## See Also
 
-- [var title: String?](mkannotation/title.md)
+### Title attributes
+- [var title: String?](./title.md)
   The string containing the annotation’s title.
 
 

@@ -1,7 +1,8 @@
 # kAXRoleAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The role, or type, of this accessibility object (for example, `AXButton`). This string is for identification purposes only and does not need to be localized. All accessibility objects must include this attribute.
 
@@ -12,6 +13,10 @@ The role, or type, of this accessibility object (for example, `AXButton`). This 
 
 ```swift
 var kAXRoleAttribute: String { get }
+```
+
+```c
+#define kAXRoleAttribute
 ```
 
 

@@ -1,7 +1,8 @@
 # colorUsage
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture usage value to apply to the layer’s color textures.
 
@@ -17,11 +18,12 @@ var colorUsage: MTLTextureUsage { get set }
 
 #### Discussion
 
-Metal optimizes texture-related operations based on the value in this property. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](https://developer.apple.com/documentation/metal/mtltextureusage).
+Metal optimizes texture-related operations based on the value in this property. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](../../../Metal/mtltextureusage.md).
 
 ## See Also
 
-- [var colorFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/colorformat.md)
+### Configuring the color textures
+- [var colorFormat: MTLPixelFormat](./colorformat.md)
   The pixel format to use for color textures.
 
 

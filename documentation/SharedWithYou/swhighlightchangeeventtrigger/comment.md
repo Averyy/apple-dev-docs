@@ -1,7 +1,8 @@
 # SWHighlightChangeEventTrigger.comment
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signifies a highlight comment.
 
@@ -18,9 +19,14 @@ Signifies a highlight comment.
 case comment
 ```
 
+```c
+SWHighlightChangeEventTriggerComment
+```
+
 ## See Also
 
-- [SWHighlightChangeEventTrigger.edit](swhighlightchangeeventtrigger/edit.md)
+### Change actions
+- [SWHighlightChangeEventTrigger.edit](./edit.md)
   Signifies a highlight edit.
 
 

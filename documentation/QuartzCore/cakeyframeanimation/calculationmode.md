@@ -1,7 +1,8 @@
 # calculationMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies how intermediate keyframe values are calculated by the receiver.
 
@@ -19,15 +20,20 @@ Specifies how intermediate keyframe values are calculated by the receiver.
 var calculationMode: CAAnimationCalculationMode { get set }
 ```
 
+```objc
+@property (copy) CAAnimationCalculationMode calculationMode;
+```
+
 #### Discussion
 
-The possible values are described in [`Value calculation modes`](value-calculation-modes.md). The default value of this property is [`linear`](caanimationcalculationmode/linear.md).
+The possible values are described in [Value calculation modes](../value-calculation-modes.md). The default value of this property is [`linear`](../caanimationcalculationmode/linear.md).
 
 ## See Also
 
-- [var keyTimes: [NSNumber]?](cakeyframeanimation/keytimes.md)
+### Keyframe timing
+- [var keyTimes: [NSNumber]?](./keytimes.md)
   An optional array of `NSNumber` objects that define the time at which to apply a given keyframe segment.
-- [var timingFunctions: [CAMediaTimingFunction]?](cakeyframeanimation/timingfunctions.md)
+- [var timingFunctions: [CAMediaTimingFunction]?](./timingfunctions.md)
   An optional array of `CAMediaTimingFunction` objects that define the pacing for each keyframe segment.
 
 

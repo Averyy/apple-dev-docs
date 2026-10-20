@@ -1,7 +1,8 @@
 # init(session:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new message that is part of the provided session.
 
@@ -14,6 +15,10 @@ Initializes a new message that is part of the provided session.
 
 ```swift
 init(session: MSSession)
+```
+
+```objc
+- (instancetype) initWithSession:(MSSession *) session;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Use this initializer to create an updatable message. Messages that are part of a
 
 ## See Also
 
-- [init()](msmessage/init.md)
+### Creating Messages
+- [init()](./init%28%29.md)
   Initializes a new message that is not part of a session.
 
 

@@ -1,7 +1,8 @@
 # hearingAssistance
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var hearingAssistance: SRHeadphoneSettings.HearingAssistance? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) SRHeadphoneSettingsHearingAssistance * hearingAssistance;
 ```
 
 #### Discussion

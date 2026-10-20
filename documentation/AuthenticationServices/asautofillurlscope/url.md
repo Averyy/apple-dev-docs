@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL created from the components.
 

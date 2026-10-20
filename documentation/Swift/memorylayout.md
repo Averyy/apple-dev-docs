@@ -1,7 +1,8 @@
 # MemoryLayout
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The memory layout of a type, describing its size, stride, and alignment.
 
@@ -53,28 +54,28 @@ let pointPointer = UnsafeMutableRawPointer.allocate(
 ## Topics
 
 ### Accessing the Layout of a Type
-- [static var size: Int](memorylayout/size.md)
+- [static var size: Int](./memorylayout/size.md)
   The contiguous memory footprint of `T`, in bytes.
-- [static var alignment: Int](memorylayout/alignment.md)
+- [static var alignment: Int](./memorylayout/alignment.md)
   The default memory alignment of `T`, in bytes.
-- [static var stride: Int](memorylayout/stride.md)
+- [static var stride: Int](./memorylayout/stride.md)
   The number of bytes from the start of one instance of `T` to the start of the next when stored in contiguous memory or in an `Array<T>`.
 ### Accessing the Layout of a Value
-- [static func stride(ofValue: borrowing T) -> Int](memorylayout/stride(ofvalue:).md)
+- [static func stride(ofValue: borrowing T) -> Int](./memorylayout/stride%28ofvalue%29.md)
   Returns the number of bytes from the start of one instance of `T` to the start of the next when stored in contiguous memory or in an `Array<T>`.
-- [static func size(ofValue: borrowing T) -> Int](memorylayout/size(ofvalue:).md)
+- [static func size(ofValue: borrowing T) -> Int](./memorylayout/size%28ofvalue%29.md)
   Returns the contiguous memory footprint of the given instance.
-- [static func alignment(ofValue: borrowing T) -> Int](memorylayout/alignment(ofvalue:).md)
+- [static func alignment(ofValue: borrowing T) -> Int](./memorylayout/alignment%28ofvalue%29.md)
   Returns the default memory alignment of `T`.
 ### Querying Type Properties
-- [static func offset(of: PartialKeyPath<T>) -> Int?](memorylayout/offset(of:).md)
+- [static func offset(of: PartialKeyPath<T>) -> Int?](./memorylayout/offset%28of%29.md)
   Returns the offset of an inline stored property within a type’s in-memory representation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 
 ---

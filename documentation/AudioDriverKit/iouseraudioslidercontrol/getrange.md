@@ -1,7 +1,8 @@
 # GetRange
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the range of possible values for the slider.
 
@@ -10,7 +11,7 @@ Gets the range of possible values for the slider.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioSliderRange GetRange();
 ```
 
@@ -24,13 +25,14 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetControlValue](iouseraudioslidercontrol/setcontrolvalue.md)
+### Accessing the Value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the value of the slider control.
-- [GetControlValue](iouseraudioslidercontrol/getcontrolvalue.md)
+- [GetControlValue](./getcontrolvalue.md)
   Gets the value of the slider control.
-- [SetRange](iouseraudioslidercontrol/setrange.md)
+- [SetRange](./setrange.md)
   Sets the range of possible values for the slider.
-- [IOUserAudioSliderRange](iouseraudiosliderrange.md)
+- [IOUserAudioSliderRange](../iouseraudiosliderrange.md)
   A type that indicates minimum and maximum values for slider controls.
 
 

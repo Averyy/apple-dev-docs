@@ -1,7 +1,8 @@
 # cluster
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var cluster: NSNumber? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * cluster;
 ```
 
 

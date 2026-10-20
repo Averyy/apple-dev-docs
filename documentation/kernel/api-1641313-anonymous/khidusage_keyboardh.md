@@ -1,14 +1,15 @@
 # kHIDUsage_KeyboardH
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_KeyboardH = 0x0B
 ```
 

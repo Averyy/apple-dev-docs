@@ -1,7 +1,8 @@
 # evaluateURL(_:completionHandler:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether to block a URL.
 
@@ -12,7 +13,15 @@ Determines whether to block a URL.
 ## Declaration
 
 ```swift
+func evaluateURL(_ url: URL, completionHandler: @escaping @Sendable (Bool, Data?) -> Void)
+```
+
+```swift
 func evaluateURL(_ url: URL) async -> (Bool, Data?)
+```
+
+```objc
+- (void) evaluateURL:(NSURL *) url completionHandler:(void (^)(BOOL shouldBlock, NSData *blockPageRepresentation)) completionHandler;
 ```
 
 #### Discussion
@@ -28,7 +37,8 @@ This method performs a lazy initialization of some objects, so the first call ca
 
 ## See Also
 
-- [class var shouldEvaluateURLs: Bool](bewebcontentfilter/shouldevaluateurls.md)
+### Evaluating URLs
+- [class var shouldEvaluateURLs: Bool](./shouldevaluateurls.md)
   Determines whether the built-in web content filter is active.
 
 

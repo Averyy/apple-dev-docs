@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of encoding error
 

@@ -1,7 +1,8 @@
 # SEC_OS_OSX_INCLUDES
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,8 +15,20 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS, watchOS*
+
+```swift
+var SEC_OS_OSX_INCLUDES: Bool { get }
+```
+
+*Mac Catalyst*
+
 ```swift
 var SEC_OS_OSX_INCLUDES: Int32 { get }
+```
+
+```c
+#define SEC_OS_OSX_INCLUDES
 ```
 
 

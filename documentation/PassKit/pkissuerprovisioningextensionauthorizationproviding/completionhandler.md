@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A completion handler the system calls to find the result of authorizing the addition of the payment card.
@@ -18,15 +19,20 @@ A completion handler the system calls to find the result of authorizing the addi
 var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^completionHandler)(PKIssuerProvisioningExtensionAuthorizationResult result);
+```
+
 #### Discussion
 
 The completion handler takes the following parameter:
 
-- **`result`**: A [`PKIssuerProvisioningExtensionAuthorizationResult`](pkissuerprovisioningextensionauthorizationresult.md) case that indicates the result of authorizing the addition of the payment card.
+- **`result`**: A [`PKIssuerProvisioningExtensionAuthorizationResult`](../pkissuerprovisioningextensionauthorizationresult.md) case that indicates the result of authorizing the addition of the payment card.
 
 ## See Also
 
-- [enum PKIssuerProvisioningExtensionAuthorizationResult](pkissuerprovisioningextensionauthorizationresult.md)
+### Providing the result of authorization
+- [enum PKIssuerProvisioningExtensionAuthorizationResult](../pkissuerprovisioningextensionauthorizationresult.md)
   A value that indicates the result of authorizing the addition of a payment card.
 
 

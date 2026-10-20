@@ -1,6 +1,8 @@
 # Applying mesh to real-world surroundings
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [ApplyingMeshToRealWorldSurroundings.zip](https://docs-assets.developer.apple.com/published/f97546eebe73/ApplyingMeshToRealWorldSurroundings.zip)
 
 Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 
@@ -10,11 +12,13 @@ Add a layer of mesh to objects in the real world, using scene reconstruction in 
 
 #### Overview
 
-With [`ARKit`](https://developer.apple.com/documentation/arkit) in visionOS, you can create immersive experiences that integrate with real-world environments. This sample demonstrates how to use ARKit’s scene-reconstruction capability to construct and display a layer of mesh on real-world objects, like the scene in the following video:
+With [ARKit](../ARKit/ARKit.md) in visionOS, you can create immersive experiences that integrate with real-world environments. This sample demonstrates how to use ARKit’s scene-reconstruction capability to construct and display a layer of mesh on real-world objects, like the scene in the following video:
 
-##### Capture the Anchors From the Scene
+[Video: A four-second video of a visionOS app in Simulator, displaying a translucent window labeled 'Scene Reconstruction Example'. The camera pans arounds to showcase a light cyan color covering the walls and ceiling of a room.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-scene-reconstruction-1-main-view.mov)
 
-The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
+##### Capture the anchors from the scene
+
+The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
 
 ```swift
 import SwiftUI
@@ -36,7 +40,7 @@ class MeshAnchorGenerator {
 }
 ```
 
-The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
+The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
 
 ```swift
 @MainActor
@@ -98,9 +102,9 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 
 > ❗ **Important**: To use the `SceneReconstructionProvider`, you must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
 
-##### Add Scene Reconstruction to the View
+##### Add scene reconstruction to the view
 
-To track the anchors, the app must start an `ARKitSession`. The app creates the `root` to store all the entities, the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) instance, and the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider) instance to perform scene reconstruction:
+To track the anchors, the app must start an `ARKitSession`. The app creates the `root` to store all the entities, the [`ARKitSession`](../ARKit/arkitsession.md) instance, and the [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md) instance to perform scene reconstruction:
 
 ```swift
 import SwiftUI
@@ -168,7 +172,7 @@ struct SceneReconstructionView: View {
 }
 ```
 
-##### Set Up the Immersive Space
+##### Set up the immersive space
 
 For `ARKit` and `SceneReconstructionProvider` to work, the app requires an immersive space. The sample creates an immersive scene in the app’s entry point:
 
@@ -189,7 +193,7 @@ struct EntryPoint: App {
 }
 ```
 
-The `MainView` launches the immersive space with [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) after it appears:
+The `MainView` launches the immersive space with [`openImmersiveSpace`](../SwiftUI/environmentvalues/openimmersivespace.md) after it appears:
 
 ```swift
 import SwiftUI
@@ -210,15 +214,16 @@ struct MainView: View {
 
 ## See Also
 
-- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+### Integrating ARKit
+- [Animating hand models in visionOS](./animating-hand-models-in-visionos.md)
   Substitute a person’s hands with custom models in a fully immersive space.
-- [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](./creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](./tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Displaying an entity that follows a person’s view](displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.md)
+- [Displaying an entity that follows a person’s view](./displaying-a-3d-object-that-moves-to-stay-in-a-persons-view.md)
   Create an entity that tracks and follows head movement in an immersive scene.
-- [Obscuring virtual items in a scene behind real-world items](obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](./obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 
 

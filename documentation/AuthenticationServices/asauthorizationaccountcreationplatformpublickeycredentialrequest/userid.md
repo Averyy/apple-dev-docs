@@ -1,7 +1,8 @@
 # userID
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable, opaque identifier for the created account. This will be saved as the userID for the created passkey.
 

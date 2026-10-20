@@ -1,7 +1,8 @@
 # currencySymbol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string used by the receiver as a local currency symbol.
 
@@ -20,17 +21,22 @@ The string used by the receiver as a local currency symbol.
 var currencySymbol: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * currencySymbol;
+```
+
 #### Discussion
 
 A region typically has a local currency symbol and an international currency symbol. The local symbol is used within the region, while the international currency symbol is used in international contexts to specify that region’s currency unambiguously. The local currency symbol is often represented by a Unicode code point.
 
 ## See Also
 
-- [var currencyCode: String!](numberformatter/currencycode.md)
+### Configuring the Format of Currency
+- [var currencyCode: String!](./currencycode.md)
   The receiver’s currency code.
-- [var internationalCurrencySymbol: String!](numberformatter/internationalcurrencysymbol.md)
+- [var internationalCurrencySymbol: String!](./internationalcurrencysymbol.md)
   The international currency symbol used by the receiver.
-- [var currencyGroupingSeparator: String!](numberformatter/currencygroupingseparator.md)
+- [var currencyGroupingSeparator: String!](./currencygroupingseparator.md)
   The currency grouping separator for the receiver.
 
 

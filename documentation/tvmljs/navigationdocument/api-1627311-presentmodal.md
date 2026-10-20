@@ -1,7 +1,8 @@
 # presentModal
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Displays the passed document on top of the current document.
 
@@ -10,7 +11,7 @@ Displays the passed document on top of the current document.
 
 ## Declaration
 
-```swift
+```
 void presentModal(
     in Document document
 );
@@ -26,7 +27,8 @@ The passed document is presented on top of the current document. The current doc
 
 ## See Also
 
-- [dismissModal](navigationdocument/1627446-dismissmodal.md)
+### Overlaying Document
+- [dismissModal](./api-1627446-dismissmodal.md)
   Dismisses the document displayed in modal view.
 
 

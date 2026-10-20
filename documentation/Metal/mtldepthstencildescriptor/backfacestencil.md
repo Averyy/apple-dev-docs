@@ -1,7 +1,8 @@
 # backFaceStencil
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stencil descriptor for back-facing primitives.
 
@@ -10,7 +11,7 @@ The stencil descriptor for back-facing primitives.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The stencil descriptor for back-facing primitives.
 var backFaceStencil: MTLStencilDescriptor! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) MTLStencilDescriptor * backFaceStencil;
+```
+
 #### Discussion
 
-The default value is `nil`, which indicates the stencil test is disabled for the back-facing primitives. For more information, see [`MTLStencilDescriptor`](mtlstencildescriptor.md).
+The default value is `nil`, which indicates the stencil test is disabled for the back-facing primitives. For more information, see [`MTLStencilDescriptor`](../mtlstencildescriptor.md).
 
 ## See Also
 
-- [var frontFaceStencil: MTLStencilDescriptor!](mtldepthstencildescriptor/frontfacestencil.md)
+### Specifying stencil descriptors for primitives
+- [var frontFaceStencil: MTLStencilDescriptor!](./frontfacestencil.md)
   The stencil descriptor for front-facing primitives.
 
 

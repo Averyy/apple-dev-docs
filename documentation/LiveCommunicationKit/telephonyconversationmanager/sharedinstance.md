@@ -1,7 +1,8 @@
 # sharedInstance
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared object that manages cellular conversations.
 
@@ -18,7 +19,8 @@ static let sharedInstance: TelephonyConversationManager
 
 ## See Also
 
-- [func startCellularConversation(StartCellularConversationAction) async throws](telephonyconversationmanager/startcellularconversation(_:).md)
+### Starting a conversation
+- [func startCellularConversation(StartCellularConversationAction) async throws](./startcellularconversation%28_%29.md)
   Starts a cellular conversation using the provided action.
 
 

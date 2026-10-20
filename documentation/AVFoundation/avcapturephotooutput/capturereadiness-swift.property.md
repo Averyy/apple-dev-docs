@@ -1,7 +1,8 @@
 # captureReadiness
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies whether the photo output is ready to respond to new capture requests in a timely manner.
 
@@ -18,25 +19,30 @@ A value that specifies whether the photo output is ready to respond to new captu
 var captureReadiness: AVCapturePhotoOutput.CaptureReadiness { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCapturePhotoOutputCaptureReadiness captureReadiness;
+```
+
 ## See Also
 
-- [AVCapturePhotoOutput.CaptureReadiness](avcapturephotooutput/capturereadiness-swift.enum.md)
+### Managing responsive capture
+- [AVCapturePhotoOutput.CaptureReadiness](./capturereadiness-swift.enum.md)
   Constants that indicate whether the output is ready to receive capture requests.
-- [var isAutoDeferredPhotoDeliveryEnabled: Bool](avcapturephotooutput/isautodeferredphotodeliveryenabled.md)
+- [var isAutoDeferredPhotoDeliveryEnabled: Bool](./isautodeferredphotodeliveryenabled.md)
   A Boolean value that indicates the enabled state of automatic deferred photo delivery.
-- [var isAutoDeferredPhotoDeliverySupported: Bool](avcapturephotooutput/isautodeferredphotodeliverysupported.md)
+- [var isAutoDeferredPhotoDeliverySupported: Bool](./isautodeferredphotodeliverysupported.md)
   A Boolean value that indicates whether the photo output supports deferred photo delivery.
-- [var isFastCapturePrioritizationSupported: Bool](avcapturephotooutput/isfastcaptureprioritizationsupported.md)
+- [var isFastCapturePrioritizationSupported: Bool](./isfastcaptureprioritizationsupported.md)
   A Boolean value that indicates whether the photo output supports fast capture prioritization.
-- [var isFastCapturePrioritizationEnabled: Bool](avcapturephotooutput/isfastcaptureprioritizationenabled.md)
+- [var isFastCapturePrioritizationEnabled: Bool](./isfastcaptureprioritizationenabled.md)
   A Boolean value that indicates whether the output enables fast capture prioritization.
-- [var isResponsiveCaptureSupported: Bool](avcapturephotooutput/isresponsivecapturesupported.md)
+- [var isResponsiveCaptureSupported: Bool](./isresponsivecapturesupported.md)
   A Boolean value that indicates whether the photo output supports responsive capture.
-- [var isResponsiveCaptureEnabled: Bool](avcapturephotooutput/isresponsivecaptureenabled.md)
+- [var isResponsiveCaptureEnabled: Bool](./isresponsivecaptureenabled.md)
   A Boolean value that indicates whether the photo output configuration enables responsive capture.
-- [var isZeroShutterLagSupported: Bool](avcapturephotooutput/iszeroshutterlagsupported.md)
+- [var isZeroShutterLagSupported: Bool](./iszeroshutterlagsupported.md)
   A Boolean value that indicates whether the photo output supports zero shutter lag.
-- [var isZeroShutterLagEnabled: Bool](avcapturephotooutput/iszeroshutterlagenabled.md)
+- [var isZeroShutterLagEnabled: Bool](./iszeroshutterlagenabled.md)
   A Boolean value that indicates whether the photo output configuration enables zero shutter lag.
 
 

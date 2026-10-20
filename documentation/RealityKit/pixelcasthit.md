@@ -1,7 +1,8 @@
 # PixelCastHit
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -19,31 +20,32 @@ struct PixelCastHit
 ## Topics
 
 ### Instance Properties
-- [var barycentric: SIMD3<Float>?](pixelcasthit/barycentric.md)
+- [var barycentric: SIMD3<Float>?](./pixelcasthit/barycentric.md)
   The barycentric coordinate of the primitive. See the discussion of [[barycentric_coord]] in Section “5.2.3.4 Fragment Function Input Attributes” of Metal Shading Language Specification
-- [var entity: Entity](pixelcasthit/entity.md)
+- [var entity: Entity](./pixelcasthit/entity.md)
   The entity that was hit.
-- [var instance: UInt32](pixelcasthit/instance.md)
+- [var instance: UInt32](./pixelcasthit/instance.md)
   The instance within the MeshResource of the intersection. This can be used to index into MeshResource.contents.instances
-- [var meshPart: UInt64](pixelcasthit/meshpart.md)
+- [var meshPart: UInt64](./pixelcasthit/meshpart.md)
   The mesh part id of the entity that was selected by the hit.
-- [var normal: SIMD3<Float>](pixelcasthit/normal.md)
+- [var normal: SIMD3<Float>](./pixelcasthit/normal.md)
   The surface normal at the point of intersection, in scene space.
-- [var position: SIMD3<Float>](pixelcasthit/position.md)
+- [var position: SIMD3<Float>](./pixelcasthit/position.md)
   The surface position at the point of intersection, in scene space.
-- [var primitive: UInt32](pixelcasthit/primitive.md)
+- [var primitive: UInt32](./pixelcasthit/primitive.md)
   The per-primitive identifier used with barycentric coordinates.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct QueryPredicate](querypredicate.md)
+### Entity searches
+- [struct QueryPredicate](./querypredicate.md)
   An object that defines the criteria for an entity query.
 
 

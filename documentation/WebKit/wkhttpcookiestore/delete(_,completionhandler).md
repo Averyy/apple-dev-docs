@@ -1,7 +1,8 @@
 # delete(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the specified cookie.
 
@@ -15,7 +16,15 @@ Deletes the specified cookie.
 ## Declaration
 
 ```swift
+func delete(_ cookie: HTTPCookie, completionHandler: (@MainActor @Sendable () -> Void)? = nil)
+```
+
+```swift
 func deleteCookie(_ cookie: HTTPCookie) async
+```
+
+```objc
+- (void) deleteCookie:(NSHTTPCookie *) cookie completionHandler:(void (^)(void)) completionHandler;
 ```
 
 ## Parameters
@@ -25,9 +34,10 @@ func deleteCookie(_ cookie: HTTPCookie) async
 
 ## See Also
 
-- [func getAllCookies(([HTTPCookie]) -> Void)](wkhttpcookiestore/getallcookies(_:).md)
+### Managing cookies
+- [func getAllCookies(([HTTPCookie]) -> Void)](./getallcookies%28_%29.md)
   Fetches all stored cookies asynchronously and delivers them to the specified completion handler.
-- [func setCookie(HTTPCookie, completionHandler: (() -> Void)?)](wkhttpcookiestore/setcookie(_:completionhandler:).md)
+- [func setCookie(HTTPCookie, completionHandler: (() -> Void)?)](./setcookie%28_,completionhandler%29.md)
   Adds a cookie to the cookie store.
 
 

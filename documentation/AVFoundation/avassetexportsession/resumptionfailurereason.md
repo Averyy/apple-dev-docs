@@ -1,7 +1,8 @@
 # AVAssetExportSession.ResumptionFailureReason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The reason that configuring the export session for resumption failed.
 
@@ -19,35 +20,40 @@ The reason that configuring the export session for resumption failed.
 struct ResumptionFailureReason
 ```
 
+```c
+typedef NSString * AVAssetExportSessionResumptionFailureReason;
+```
+
 ## Topics
 
 ### Creating a failure reason
-- [init(String)](avassetexportsession/resumptionfailurereason/init(_:).md)
-- [init(rawValue: String)](avassetexportsession/resumptionfailurereason/init(rawvalue:).md)
+- [init(String)](./resumptionfailurereason/init%28_%29.md)
+- [init(rawValue: String)](./resumptionfailurereason/init%28rawvalue%29.md)
 ### Failure reasons
-- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblesessionsettings.md)
+- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](./resumptionfailurereason/incompatiblesessionsettings.md)
   Indicates the export session settings are incompatible with resumable export.
-- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatibletemporarydirectorycontents.md)
+- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](./resumptionfailurereason/incompatibletemporarydirectorycontents.md)
   Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
-- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/temporarydirectorydoesnotexist.md)
+- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](./resumptionfailurereason/temporarydirectorydoesnotexist.md)
   Indicates that the specified temporary files directory doesn’t exist.
-- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/unsupportedforpresetonplatform.md)
+- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](./resumptionfailurereason/unsupportedforpresetonplatform.md)
   Indicates that resumption isn’t supported for this preset and platform combination.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
+### Configuring resumable export
+- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](./configureforresumableexport%28%29.md)
   Configures the export session for resumable export.
-- [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
+- [AVAssetExportSession.ResumptionState](./resumptionstate.md)
   Represents the resumption state of the export session.
 
 

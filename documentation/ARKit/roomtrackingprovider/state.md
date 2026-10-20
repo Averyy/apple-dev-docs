@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of a room-tracking provider.
 
@@ -16,13 +17,14 @@ final var state: DataProviderState { get }
 
 ## See Also
 
-- [var allAnchors: [RoomAnchor]](roomtrackingprovider/allanchors.md)
+### Inspecting a room-tracking provider
+- [var allAnchors: [RoomAnchor]](./allanchors.md)
   An array of the room anchors the room-tracking provider is tracking.
-- [var anchorUpdates: AnchorUpdateSequence<RoomAnchor>](roomtrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<RoomAnchor>](./anchorupdates.md)
   An asynchronous sequence of room anchor updates.
-- [var currentRoomAnchor: RoomAnchor?](roomtrackingprovider/currentroomanchor.md)
+- [var currentRoomAnchor: RoomAnchor?](./currentroomanchor.md)
   The room a person is in currently, if any.
-- [var description: String](roomtrackingprovider/description.md)
+- [var description: String](./description.md)
   A textual representation of this room tracking provider.
 
 

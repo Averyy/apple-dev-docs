@@ -1,7 +1,8 @@
 # init(virtualMachine:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an adaptor for a virtual machine.
 

@@ -1,16 +1,19 @@
 # Sorting
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The order of grouped results.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object Sorting
 ```
 
@@ -20,15 +23,18 @@ object Sorting
 - `ignoreCase` (boolean)
 - `sortOrder` (string): The order of grouped results.
 
+  **Allowed Values**: `ASCENDING`, `DESCENDING`
+
 ## See Also
 
-- [object Condition](condition.md)
+### API Usability
+- [object Condition](./condition.md)
   The list of condition objects that allow users to filter a list of records.
-- [object PageDetail](pagedetail.md)
+- [object PageDetail](./pagedetail.md)
   The number of items that return in the page.
-- [object Pagination](pagination.md)
+- [object Pagination](./pagination.md)
   The procedure to refine returned results using limit and offset parameters.
-- [object Selector](selector.md)
+- [object Selector](./selector.md)
   The selector objects available to filter returned data.
 
 

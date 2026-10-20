@@ -1,17 +1,18 @@
 # init(device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an absolute neuron filter.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
-- macOS 10.13+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 10.0+ - Deprecated in 12.0
+- macOS 10.13+ - Deprecated in 10.14
+- tvOS 10.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Initializes an absolute neuron filter.
 init(device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
-A valid [`MPSCNNNeuronAbsolute`](mpscnnneuronabsolute.md) object or `nil`, if failure.
+A valid [`MPSCNNNeuronAbsolute`](../mpscnnneuronabsolute.md) object or `nil`, if failure.
 
 ## Parameters
 

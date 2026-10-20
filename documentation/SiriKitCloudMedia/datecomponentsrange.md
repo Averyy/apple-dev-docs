@@ -1,7 +1,8 @@
 # DateComponentsRange
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A period of time from a specified start date to a specified end date.
 
@@ -10,7 +11,7 @@ A period of time from a specified start date to a specified end date.
 
 ## Declaration
 
-```swift
+```
 object DateComponentsRange
 ```
 
@@ -21,9 +22,10 @@ object DateComponentsRange
 
 ## See Also
 
-- [type DateComponents](datecomponents.md)
+### Filtering by Release Date
+- [type DateComponents](./datecomponents.md)
   A full or partial date and time.
-- [object ExplicitDateComponents](explicitdatecomponents.md)
+- [object ExplicitDateComponents](./explicitdatecomponents.md)
   A date or time in specified of units (such as year, month, day, hour, and minute) for evaluation in a calendar system and time zone.
 
 

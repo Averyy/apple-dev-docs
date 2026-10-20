@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status code for the authorization result.
 
@@ -11,17 +12,18 @@ The status code for the authorization result.
 
 ## Declaration
 
-```swift
+```
 required short status;
 ```
 
 #### Discussion
 
-For status values, see [`Apple Pay Status Codes`](apple-pay-status-codes.md).
+For status values, see [Apple Pay Status Codes](../apple-pay-status-codes.md).
 
 ## See Also
 
-- [errors](applepaypaymentauthorizationresult/errors.md)
+### Providing authorization results
+- [errors](./errors.md)
   A list of custom errors to display on the payment sheet.
 
 

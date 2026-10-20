@@ -1,7 +1,8 @@
 # updateValue(_:forAnimatedKey:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of a key whose value you use during the animation.
 
@@ -12,6 +13,10 @@ Sets the value of a key whose value you use during the animation.
 
 ```swift
 func updateValue(_ value: CGFloat, forAnimatedKey key: NSCollectionViewTransitionLayout.AnimatedKey)
+```
+
+```objc
+- (void) updateValue:(CGFloat) value forAnimatedKey:(NSCollectionViewTransitionLayoutAnimatedKey) key;
 ```
 
 #### Discussion
@@ -25,11 +30,12 @@ Use this method to update the value of a specific key that you use in your custo
 
 ## See Also
 
-- [var transitionProgress: CGFloat](nscollectionviewtransitionlayout/transitionprogress.md)
+### Updating the Transition Information
+- [var transitionProgress: CGFloat](./transitionprogress.md)
   The completion percentage of the transition.
-- [func value(forAnimatedKey: NSCollectionViewTransitionLayout.AnimatedKey) -> CGFloat](nscollectionviewtransitionlayout/value(foranimatedkey:).md)
+- [func value(forAnimatedKey: NSCollectionViewTransitionLayout.AnimatedKey) -> CGFloat](./value%28foranimatedkey%29.md)
   Returns the most recently set value for the specified key.
-- [NSCollectionViewTransitionLayout.AnimatedKey](nscollectionviewtransitionlayout/animatedkey.md)
+- [NSCollectionViewTransitionLayout.AnimatedKey](./animatedkey.md)
 
 
 ---

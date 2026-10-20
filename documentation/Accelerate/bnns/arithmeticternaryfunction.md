@@ -1,7 +1,8 @@
 # BNNS.ArithmeticTernaryFunction
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe ternary arithmetic functions.
 
@@ -11,8 +12,10 @@ Constants that describe ternary arithmetic functions.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,17 +26,17 @@ enum ArithmeticTernaryFunction
 ## Topics
 
 ### Ternary Arithmetic Functions
-- [BNNS.ArithmeticTernaryFunction.multiplyAdd](bnns/arithmeticternaryfunction/multiplyadd.md)
+- [BNNS.ArithmeticTernaryFunction.multiplyAdd](./arithmeticternaryfunction/multiplyadd.md)
   An operation that calculates the element-wise fused multiply-add of its three inputs.
 ### Instance Properties
-- [var bnnsArithmeticFunction: BNNSArithmeticFunction](bnns/arithmeticternaryfunction/bnnsarithmeticfunction.md)
+- [var bnnsArithmeticFunction: BNNSArithmeticFunction](./arithmeticternaryfunction/bnnsarithmeticfunction.md)
   The underlying BNNS arithmetic function.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

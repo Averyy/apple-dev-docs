@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a layer hierarchy.
 
@@ -15,13 +16,18 @@ Initializes a layer hierarchy.
 init() throws
 ```
 
+```objc
++ (BELayerHierarchy *) layerHierarchyWithError:(NSError **) error;
+```
+
 #### Discussion
 
 This initializer can fail and throw an error if your extension can’t establish a connection to the rendering server.
 
 ## See Also
 
-- [func invalidate()](layerhierarchy/invalidate.md)
+### Creating and invalidating a layer hierarchy
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates a layer hierarchy.
 
 

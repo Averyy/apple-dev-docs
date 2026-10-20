@@ -1,7 +1,8 @@
 # critical
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A severity that indicates extra attention should be given to the dialog, for example when unexpected data loss may occur as a result of the action taken.
 
@@ -26,9 +27,10 @@ On macOS, a dialog with critical severity will display a large caution symbol wi
 
 ## See Also
 
-- [static let automatic: DialogSeverity](dialogseverity/automatic.md)
+### Getting severities
+- [static let automatic: DialogSeverity](./automatic.md)
   The default dialog severity. Alerts that present an error will use `.critical` and all others will use `.standard`.
-- [static let standard: DialogSeverity](dialogseverity/standard.md)
+- [static let standard: DialogSeverity](./standard.md)
   A severity that indicates the dialog is being displayed for the purpose of presenting information to the user.
 
 

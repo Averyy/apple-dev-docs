@@ -1,18 +1,19 @@
 # CFArrayApplierFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Prototype of a callback function that may be applied to every value in an array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Prototype of a callback function that may be applied to every value in an array.
 typealias CFArrayApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const void *, void *) CFArrayApplierFunction;
+```
+
 #### Discussion
 
-This callback is passed to the [`CFArrayApplyFunction(_:_:_:_:)`](cfarrayapplyfunction(_:_:_:_:).md) function, which iterates over the values in an array and applies the behavior defined in the applier function to each value in an array.
+This callback is passed to the [`CFArrayApplyFunction(_:_:_:_:)`](./cfarrayapplyfunction%28_,_,_,_%29.md) function, which iterates over the values in an array and applies the behavior defined in the applier function to each value in an array.
 
 ## Parameters
 
@@ -31,13 +36,14 @@ This callback is passed to the [`CFArrayApplyFunction(_:_:_:_:)`](cfarrayapplyfu
 
 ## See Also
 
-- [typealias CFArrayCopyDescriptionCallBack](cfarraycopydescriptioncallback.md)
+### Callbacks
+- [typealias CFArrayCopyDescriptionCallBack](./cfarraycopydescriptioncallback.md)
   Prototype of a callback function used to get a description of a value in an array.
-- [typealias CFArrayEqualCallBack](cfarrayequalcallback.md)
+- [typealias CFArrayEqualCallBack](./cfarrayequalcallback.md)
   Prototype of a callback function used to determine if two values in an array are equal.
-- [typealias CFArrayReleaseCallBack](cfarrayreleasecallback.md)
+- [typealias CFArrayReleaseCallBack](./cfarrayreleasecallback.md)
   Prototype of a callback function used to release a value before it’s removed from an array.
-- [typealias CFArrayRetainCallBack](cfarrayretaincallback.md)
+- [typealias CFArrayRetainCallBack](./cfarrayretaincallback.md)
   Prototype of a callback function used to retain a value being added to an array.
 
 

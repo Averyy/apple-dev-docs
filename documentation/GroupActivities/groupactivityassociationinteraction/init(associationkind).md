@@ -1,7 +1,8 @@
 # init(associationKind:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group activity association interaction.
 

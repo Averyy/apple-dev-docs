@@ -1,7 +1,8 @@
 # VZVirtualMachine.State.stopped
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The VM isn’t running.
 
@@ -14,9 +15,13 @@ The VM isn’t running.
 case stopped
 ```
 
+```c
+VZVirtualMachineStateStopped
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../../installing-macos-on-a-virtual-machine.md)
 
 #### Discussion
 
@@ -24,35 +29,36 @@ This state is the initial state of the virtual machine.
 
 ## See Also
 
-- [VZVirtualMachine.State.running](vzvirtualmachine/state-swift.enum/running.md)
+### States
+- [VZVirtualMachine.State.running](./running.md)
   The VM is running.
-- [VZVirtualMachine.State.paused](vzvirtualmachine/state-swift.enum/paused.md)
+- [VZVirtualMachine.State.paused](./paused.md)
   The framework has paused a started VM.
-- [VZVirtualMachine.State.error](vzvirtualmachine/state-swift.enum/error.md)
+- [VZVirtualMachine.State.error](./error.md)
   The VM encountered an unrecoverable error.
-- [VZVirtualMachine.State.starting](vzvirtualmachine/state-swift.enum/starting.md)
+- [VZVirtualMachine.State.starting](./starting.md)
   The VM is configuring the hardware preparing to run.
-- [VZVirtualMachine.State.pausing](vzvirtualmachine/state-swift.enum/pausing.md)
+- [VZVirtualMachine.State.pausing](./pausing.md)
   The VM is pausing.
-- [VZVirtualMachine.State.stopping](vzvirtualmachine/state-swift.enum/stopping.md)
+- [VZVirtualMachine.State.stopping](./stopping.md)
   The VM is stopping.
-- [VZVirtualMachine.State.resuming](vzvirtualmachine/state-swift.enum/resuming.md)
+- [VZVirtualMachine.State.resuming](./resuming.md)
   The VM is resuming from a paused state.
-- [VZVirtualMachine.State.restoring](vzvirtualmachine/state-swift.enum/restoring.md)
+- [VZVirtualMachine.State.restoring](./restoring.md)
   The VM is restoring from a saved state.
-- [VZVirtualMachine.State.saving](vzvirtualmachine/state-swift.enum/saving.md)
+- [VZVirtualMachine.State.saving](./saving.md)
   The VM is saving its state.
-- [VZVirtualMachine.State.running](vzvirtualmachine/state-swift.enum/running.md)
+- [VZVirtualMachine.State.running](./running.md)
   The VM is running.
-- [VZVirtualMachine.State.paused](vzvirtualmachine/state-swift.enum/paused.md)
+- [VZVirtualMachine.State.paused](./paused.md)
   The framework has paused a started VM.
-- [VZVirtualMachine.State.error](vzvirtualmachine/state-swift.enum/error.md)
+- [VZVirtualMachine.State.error](./error.md)
   The VM encountered an unrecoverable error.
-- [VZVirtualMachine.State.starting](vzvirtualmachine/state-swift.enum/starting.md)
+- [VZVirtualMachine.State.starting](./starting.md)
   The VM is configuring the hardware preparing to run.
-- [VZVirtualMachine.State.pausing](vzvirtualmachine/state-swift.enum/pausing.md)
+- [VZVirtualMachine.State.pausing](./pausing.md)
   The VM is pausing.
-- [VZVirtualMachine.State.stopping](vzvirtualmachine/state-swift.enum/stopping.md)
+- [VZVirtualMachine.State.stopping](./stopping.md)
   The VM is stopping.
 
 

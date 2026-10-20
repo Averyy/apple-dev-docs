@@ -1,7 +1,8 @@
 # bridgedAccessories
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var bridgedAccessories: [HMAccessory] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMAccessory *> * bridgedAccessories;
 ```
 
 #### Discussion

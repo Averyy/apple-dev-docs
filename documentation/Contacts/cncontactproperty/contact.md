@@ -1,7 +1,8 @@
 # contact
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated contact.
 
@@ -18,6 +19,18 @@ The associated contact.
 ```swift
 @NSCopying
 var contact: CNContact { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) CNContact * contact;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) CNContact * contact;
 ```
 
 #### Discussion

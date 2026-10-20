@@ -1,7 +1,8 @@
 # GCDualSenseAdaptiveTrigger.Status.feedbackNoLoad
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The trigger is in feedback mode, but isn’t applying the resistive load.
 
@@ -19,27 +20,32 @@ The trigger is in feedback mode, but isn’t applying the resistive load.
 case feedbackNoLoad
 ```
 
+```c
+GCDualSenseAdaptiveTriggerStatusFeedbackNoLoad
+```
+
 ## See Also
 
-- [GCDualSenseAdaptiveTrigger.Status.unknown](gcdualsenseadaptivetrigger/status-swift.enum/unknown.md)
+### Statuses
+- [GCDualSenseAdaptiveTrigger.Status.unknown](./unknown.md)
   The trigger status is unknown.
-- [GCDualSenseAdaptiveTrigger.Status.feedbackLoadApplied](gcdualsenseadaptivetrigger/status-swift.enum/feedbackloadapplied.md)
+- [GCDualSenseAdaptiveTrigger.Status.feedbackLoadApplied](./feedbackloadapplied.md)
   The trigger is in feedback mode and is applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.weaponReady](gcdualsenseadaptivetrigger/status-swift.enum/weaponready.md)
+- [GCDualSenseAdaptiveTrigger.Status.weaponReady](./weaponready.md)
   The trigger is in weapon mode and ready to fire, but isn’t applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.weaponFiring](gcdualsenseadaptivetrigger/status-swift.enum/weaponfiring.md)
+- [GCDualSenseAdaptiveTrigger.Status.weaponFiring](./weaponfiring.md)
   The trigger is in weapon mode, firing, and is applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.weaponFired](gcdualsenseadaptivetrigger/status-swift.enum/weaponfired.md)
+- [GCDualSenseAdaptiveTrigger.Status.weaponFired](./weaponfired.md)
   The trigger is in weapon mode, has fired, and has stopped applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.vibrationNotVibrating](gcdualsenseadaptivetrigger/status-swift.enum/vibrationnotvibrating.md)
+- [GCDualSenseAdaptiveTrigger.Status.vibrationNotVibrating](./vibrationnotvibrating.md)
   The trigger is in vibration mode, but isn’t vibrating.
-- [GCDualSenseAdaptiveTrigger.Status.vibrationIsVibrating](gcdualsenseadaptivetrigger/status-swift.enum/vibrationisvibrating.md)
+- [GCDualSenseAdaptiveTrigger.Status.vibrationIsVibrating](./vibrationisvibrating.md)
   The trigger is in vibration mode and is vibrating.
-- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackReady](gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackready.md)
+- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackReady](./slopefeedbackready.md)
   The trigger is in slope mode, but isn’t applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackApplyingLoad](gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackapplyingload.md)
+- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackApplyingLoad](./slopefeedbackapplyingload.md)
   The trigger is in slope mode, and is applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackFinished](gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackfinished.md)
+- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackFinished](./slopefeedbackfinished.md)
   The trigger is in slope mode, and stopped applying the resistive load.
 
 

@@ -1,7 +1,8 @@
 # MKScaleView.Alignment.center
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scale measurements appear horizontally centered within the view.
 
@@ -18,15 +19,20 @@ Scale measurements appear horizontally centered within the view.
 case center
 ```
 
+```c
+MKScaleViewAlignmentCenter
+```
+
 #### Discussion
 
 The framework depicts the scale view distance using a legend that grows and shrinks around its horizontal center point.
 
 ## See Also
 
-- [MKScaleView.Alignment.leading](mkscaleview/alignment/leading.md)
+### Alignment options
+- [MKScaleView.Alignment.leading](./leading.md)
   Scale measurements begin at the leading edge of the view.
-- [MKScaleView.Alignment.trailing](mkscaleview/alignment/trailing.md)
+- [MKScaleView.Alignment.trailing](./trailing.md)
   Scale measurements begin at the trailing edge of the view.
 
 

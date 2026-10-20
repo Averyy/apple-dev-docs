@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default width for slider accessories.
 
@@ -17,9 +18,14 @@ The default width for slider accessories.
 static let `default`: NSSliderAccessory.Width
 ```
 
+```c
+extern const NSSliderAccessoryWidth NSSliderAccessoryWidthDefault;
+```
+
 ## See Also
 
-- [static let wide: NSSliderAccessory.Width](nsslideraccessory/width/wide.md)
+### Type Properties
+- [static let wide: NSSliderAccessory.Width](./wide.md)
   The standard “wide” width for slider accessories.
 
 

@@ -1,7 +1,8 @@
 # setCaptionPreviewProfileID(_:position:text:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts displaying a caption preview with the specified accessibility profile.
 
@@ -19,11 +20,15 @@ Starts displaying a caption preview with the specified accessibility profile.
 func setCaptionPreviewProfileID(_ profileID: String, position: CGPoint, text: String?)
 ```
 
+```objc
+- (void) setCaptionPreviewProfileID:(NSString *) profileID position:(CGPoint) position text:(NSString *) text;
+```
+
 #### Discussion
 
 This method enables a preview mode that displays sample caption text using the visual appearance settings from the specified accessibility profile. The preview replaces any currently active subtitles and/or closed captions while active. The sample caption text position can be specified to avoid UI controls.
 
-> **Note**: You must call [`stopShowingCaptionPreview()`](avplayerlayer/stopshowingcaptionpreview().md) to exit the preview.
+> **Note**: You must call [`stopShowingCaptionPreview()`](./stopshowingcaptionpreview%28%29.md) to exit the preview.
 
 ## Parameters
 

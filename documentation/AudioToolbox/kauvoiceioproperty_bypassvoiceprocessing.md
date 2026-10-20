@@ -1,17 +1,18 @@
 # kAUVoiceIOProperty_BypassVoiceProcessing
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A property that bypasses all processing for microphone uplink done by the voice processing unit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A property that bypasses all processing for microphone uplink done by the voice 
 var kAUVoiceIOProperty_BypassVoiceProcessing: AudioUnitPropertyID { get }
 ```
 
+```c
+kAUVoiceIOProperty_BypassVoiceProcessing
+```
+
 ## See Also
 
-- [var kAUVoiceIOProperty_VoiceProcessingEnableAGC: AudioUnitPropertyID](kauvoiceioproperty_voiceprocessingenableagc.md)
+### Configuring voice processing
+- [var kAUVoiceIOProperty_VoiceProcessingEnableAGC: AudioUnitPropertyID](./kauvoiceioproperty_voiceprocessingenableagc.md)
   A property to enable automatic gain control on the processed microphone uplink.
-- [var kAUVoiceIOProperty_MuteOutput: AudioUnitPropertyID](kauvoiceioproperty_muteoutput.md)
+- [var kAUVoiceIOProperty_MuteOutput: AudioUnitPropertyID](./kauvoiceioproperty_muteoutput.md)
   A property to mute the output of the processed microphone uplink.
 
 

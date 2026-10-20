@@ -1,7 +1,8 @@
 # SCStreamOutput
 
 **Framework**: ScreenCaptureKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate protocol your app implements to receive capture stream output events.
 
@@ -19,32 +20,37 @@ A delegate protocol your app implements to receive capture stream output events.
 protocol SCStreamOutput : NSObjectProtocol
 ```
 
+```objc
+@protocol SCStreamOutput <NSObject>
+```
+
 #### Overview
 
-The [`SCStreamOutput`](scstreamoutput.md) protocol provides a way to retrieve output from an [`SCStream`](scstream.md).
+The [`SCStreamOutput`](./scstreamoutput.md) protocol provides a way to retrieve output from an [`SCStream`](./scstream.md).
 
-After you call [`startCapture(completionHandler:)`](scstream/startcapture(completionhandler:).md), the system provides frame data through the [`stream(_:didOutputSampleBuffer:of:)`](scstreamoutput/stream(_:didoutputsamplebuffer:of:).md) method. You can inspect the [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) to retrieve image data, and inspect the sample buffer for metadata about the frame.
+After you call [`startCapture(completionHandler:)`](./scstream/startcapture%28completionhandler%29.md), the system provides frame data through the [`stream(_:didOutputSampleBuffer:of:)`](./scstreamoutput/stream%28_,didoutputsamplebuffer,of%29.md) method. You can inspect the [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) to retrieve image data, and inspect the sample buffer for metadata about the frame.
 
 ## Topics
 
 ### Receiving stream output
-- [func stream(SCStream, didOutputSampleBuffer: CMSampleBuffer, of: SCStreamOutputType)](scstreamoutput/stream(_:didoutputsamplebuffer:of:).md)
+- [func stream(SCStream, didOutputSampleBuffer: CMSampleBuffer, of: SCStreamOutputType)](./scstreamoutput/stream%28_,didoutputsamplebuffer,of%29.md)
   Tells the delegate that a capture stream produced a frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum SCStreamOutputType](scstreamoutputtype.md)
+### Output processing
+- [enum SCStreamOutputType](./scstreamoutputtype.md)
   Constants that represent output types for a stream frame.
-- [struct SCStreamFrameInfo](scstreamframeinfo.md)
+- [struct SCStreamFrameInfo](./scstreamframeinfo.md)
   An instance that defines metadata keys for a stream frame.
-- [enum SCFrameStatus](scframestatus.md)
+- [enum SCFrameStatus](./scframestatus.md)
   Status values for a frame from a stream.
-- [class SCClipBufferingOutput](scclipbufferingoutput.md)
+- [class SCClipBufferingOutput](./scclipbufferingoutput.md)
 
 
 ---

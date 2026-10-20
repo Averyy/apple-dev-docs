@@ -1,7 +1,8 @@
 # attributeValues
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The values of each attribute associated with the node’s attached shader.
 
@@ -20,17 +21,22 @@ The values of each attribute associated with the node’s attached shader.
 var attributeValues: [String : SKAttributeValue] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nonnull) NSDictionary<NSString *,SKAttributeValue *> * attributeValues;
+```
+
 #### Discussion
 
-All nodes have their own copy of an attribute value and therefore the attribute values can be different per-node across the same [`SKShader`](skshader.md). If instead you need all nodes to share the same value, use [`SKUniform`](skuniform.md). Uniforms can change values every frame, but uniforms cannot vary per-node like attributes can.
+All nodes have their own copy of an attribute value and therefore the attribute values can be different per-node across the same [`SKShader`](../skshader.md). If instead you need all nodes to share the same value, use [`SKUniform`](../skuniform.md). Uniforms can change values every frame, but uniforms cannot vary per-node like attributes can.
 
 ## See Also
 
-- [var shader: SKShader?](skeffectnode/shader.md)
+### Applying a Shader with an Effect Node
+- [var shader: SKShader?](./shader.md)
   A custom shader that is called when the effect node is blended into the parent’s framebuffer.
-- [func setValue(SKAttributeValue, forAttribute: String)](skeffectnode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skeffectnode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./value%28forattributenamed%29.md)
   Gets the value of a shader attribute.
 
 

@@ -1,7 +1,8 @@
 # DisableLostModeCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to take the device out of Lost Mode.
 
@@ -12,14 +13,14 @@ The command to take the device out of Lost Mode.
 
 ## Declaration
 
-```swift
+```
 object DisableLostModeCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object DisableLostModeCommand.Command](disablelostmodecommand/command-data.dictionary.md)
+- [object DisableLostModeCommand.Command](./disablelostmodecommand/command-data.dictionary.md)
   The command to take the device out of Lost Mode.
 
 ## Properties
@@ -29,7 +30,8 @@ object DisableLostModeCommand
 
 ## See Also
 
-- [object DisableLostModeResponse](disablelostmoderesponse.md)
+### Commands and responses
+- [object DisableLostModeResponse](./disablelostmoderesponse.md)
   A response from the device after it processes the command to take the device out of Lost Mode.
 
 

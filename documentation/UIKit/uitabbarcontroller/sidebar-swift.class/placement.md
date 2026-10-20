@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Placement
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,27 +16,31 @@
 enum Placement
 ```
 
+```c
+enum UITabBarControllerSidebarPlacement : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UITabBarController.Sidebar.Placement.automatic](uitabbarcontroller/sidebar-swift.class/placement/automatic.md)
+- [UITabBarController.Sidebar.Placement.automatic](./placement/automatic.md)
   The system determines the appropriate placement.
-- [UITabBarController.Sidebar.Placement.sidebar](uitabbarcontroller/sidebar-swift.class/placement/sidebar.md)
+- [UITabBarController.Sidebar.Placement.sidebar](./placement/sidebar.md)
   Display the sidebar when it is supported.
-- [UITabBarController.Sidebar.Placement.tabBar](uitabbarcontroller/sidebar-swift.class/placement/tabbar.md)
+- [UITabBarController.Sidebar.Placement.tabBar](./placement/tabbar.md)
   Display the tab bar.
 ### Initializers
-- [init?(rawValue: Int)](uitabbarcontroller/sidebar-swift.class/placement/init(rawvalue:).md)
+- [init?(rawValue: Int)](./placement/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

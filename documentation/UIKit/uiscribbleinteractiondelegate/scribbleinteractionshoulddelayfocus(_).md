@@ -1,7 +1,8 @@
 # scribbleInteractionShouldDelayFocus(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to delay focusing the text input view.
 
@@ -14,6 +15,10 @@ Tells the delegate to delay focusing the text input view.
 
 ```swift
 optional func scribbleInteractionShouldDelayFocus(_ interaction: UIScribbleInteraction) -> Bool
+```
+
+```objc
+- (BOOL) scribbleInteractionShouldDelayFocus:(UIScribbleInteraction *) interaction;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ It’s preferable to adjust the UI behavior and minimize these kinds transformat
 
 ## See Also
 
-- [func scribbleInteraction(UIScribbleInteraction, shouldBeginAt: CGPoint) -> Bool](uiscribbleinteractiondelegate/scribbleinteraction(_:shouldbeginat:).md)
+### Allowing and controlling Scribble interactions
+- [func scribbleInteraction(UIScribbleInteraction, shouldBeginAt: CGPoint) -> Bool](./scribbleinteraction%28_,shouldbeginat%29.md)
   Returns a Boolean value that indicates whether the delegate should allow writing at a specific location in the view.
 
 

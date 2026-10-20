@@ -1,7 +1,8 @@
 # sourceMetric
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the source metric.
 

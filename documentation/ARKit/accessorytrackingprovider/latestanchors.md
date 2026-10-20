@@ -1,7 +1,8 @@
 # latestAnchors
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest accessory anchors updated with the most recent inertial data.
 

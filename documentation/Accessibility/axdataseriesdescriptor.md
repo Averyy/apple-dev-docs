@@ -1,7 +1,8 @@
 # AXDataSeriesDescriptor
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a series of data points.
 
@@ -20,42 +21,47 @@ An object that represents a series of data points.
 class AXDataSeriesDescriptor
 ```
 
+```objc
+@interface AXDataSeriesDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating a data series
-- [init(name: String, isContinuous: Bool, dataPoints: [AXDataPoint])](axdataseriesdescriptor/init(name:iscontinuous:datapoints:).md)
+- [init(name: String, isContinuous: Bool, dataPoints: [AXDataPoint])](./axdataseriesdescriptor/init%28name,iscontinuous,datapoints%29.md)
   Creates a data series with the specified name, a Boolean value that indicates whether the series is continuous, and data points.
-- [init(attributedName: NSAttributedString, isContinuous: Bool, dataPoints: [AXDataPoint])](axdataseriesdescriptor/init(attributedname:iscontinuous:datapoints:).md)
+- [init(attributedName: NSAttributedString, isContinuous: Bool, dataPoints: [AXDataPoint])](./axdataseriesdescriptor/init%28attributedname,iscontinuous,datapoints%29.md)
   Creates a data series with the specified attributed name, a Boolean value that indicates whether the series is continuous, and data points.
 ### Naming the series
-- [var name: String?](axdataseriesdescriptor/name.md)
+- [var name: String?](./axdataseriesdescriptor/name.md)
   The name of the data series.
-- [var attributedName: NSAttributedString](axdataseriesdescriptor/attributedname.md)
+- [var attributedName: NSAttributedString](./axdataseriesdescriptor/attributedname.md)
   An attributed version of the data series name.
 ### Configuring the data points
-- [var isContinuous: Bool](axdataseriesdescriptor/iscontinuous.md)
+- [var isContinuous: Bool](./axdataseriesdescriptor/iscontinuous.md)
   A Boolean value that determines whether the data series is continuous.
-- [var dataPoints: [AXDataPoint]](axdataseriesdescriptor/datapoints.md)
+- [var dataPoints: [AXDataPoint]](./axdataseriesdescriptor/datapoints.md)
   The data points that the series contains.
-- [class AXDataPoint](axdatapoint.md)
+- [class AXDataPoint](./axdatapoint.md)
   An object that represents a single data point in a chart.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AXDataPoint](axdatapoint.md)
+### Data representation
+- [class AXDataPoint](./axdatapoint.md)
   An object that represents a single data point in a chart.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty fetch record zone changes operation.
 
@@ -20,9 +21,14 @@ Creates an empty fetch record zone changes operation.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(recordZoneIDs: [CKRecordZone.ID]?, configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?)](ckfetchrecordzonechangesoperation/init(recordzoneids:configurationsbyrecordzoneid:).md)
+### Creating a Zone Change Operation
+- [convenience init(recordZoneIDs: [CKRecordZone.ID]?, configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?)](./init%28recordzoneids,configurationsbyrecordzoneid%29.md)
   Creates an operation for fetching record zone changes.
 
 

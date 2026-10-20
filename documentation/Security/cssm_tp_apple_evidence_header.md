@@ -1,7 +1,8 @@
 # CSSM_TP_APPLE_EVIDENCE_HEADER
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,19 +13,23 @@
 struct CSSM_TP_APPLE_EVIDENCE_HEADER
 ```
 
+```c
+typedef struct { ... } CSSM_TP_APPLE_EVIDENCE_HEADER;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_tp_apple_evidence_header/init.md)
-- [init(Version: uint32)](cssm_tp_apple_evidence_header/init(version:).md)
+- [init()](./cssm_tp_apple_evidence_header/init%28%29.md)
+- [init(Version: uint32)](./cssm_tp_apple_evidence_header/init%28version%29.md)
 ### Instance Properties
-- [var Version: uint32](cssm_tp_apple_evidence_header/version.md)
+- [var Version: uint32](./cssm_tp_apple_evidence_header/version.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # latestTransaction
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent transaction for the product.
 
@@ -36,9 +37,9 @@ guard case .verified(let transaction) = resultingTransaction else {
 // Update your app based on the details from the most recent transaction.
 ```
 
-By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, this value excludes finished consumable Apple In-App Purchases unless they are refunded or revoked.
+By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md) property list key is `false`, this value excludes finished consumable Apple In-App Purchases unless they are refunded or revoked.
 
-If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`, this value returns all transactions, including consumable Apple In-App Purchases that your app marked as finished ([`finish()`](transaction/finish().md)).
+If you set the [`SKIncludeConsumableInAppPurchaseHistory`](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md) property list key to `true`, this value returns all transactions, including consumable Apple In-App Purchases that your app marked as finished ([`finish()`](../transaction/finish%28%29.md)).
 
 
 ---

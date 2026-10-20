@@ -1,17 +1,18 @@
 # AVAudioSession.RouteChangeReason.newDeviceAvailable
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a user action, such as plugging in a headset, has made a preferred audio route available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,25 +20,30 @@ A value that indicates a user action, such as plugging in a headset, has made a 
 case newDeviceAvailable
 ```
 
+```c
+AVAudioSessionRouteChangeReasonNewDeviceAvailable
+```
+
 ## Mentions
 
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](../../responding-to-audio-route-changes.md)
 
 ## See Also
 
-- [AVAudioSession.RouteChangeReason.unknown](avaudiosession/routechangereason/unknown.md)
+### Identifying route change reasons
+- [AVAudioSession.RouteChangeReason.unknown](./unknown.md)
   A value that indicates the reason for the change is unknown.
-- [AVAudioSession.RouteChangeReason.oldDeviceUnavailable](avaudiosession/routechangereason/olddeviceunavailable.md)
+- [AVAudioSession.RouteChangeReason.oldDeviceUnavailable](./olddeviceunavailable.md)
   A value that indicates that the previous audio output path is no longer available.
-- [AVAudioSession.RouteChangeReason.categoryChange](avaudiosession/routechangereason/categorychange.md)
+- [AVAudioSession.RouteChangeReason.categoryChange](./categorychange.md)
   A value that indicates that the category of the session object changed.
-- [AVAudioSession.RouteChangeReason.override](avaudiosession/routechangereason/override.md)
+- [AVAudioSession.RouteChangeReason.override](./override.md)
   A value that indicates that the output route was overridden by the app.
-- [AVAudioSession.RouteChangeReason.wakeFromSleep](avaudiosession/routechangereason/wakefromsleep.md)
+- [AVAudioSession.RouteChangeReason.wakeFromSleep](./wakefromsleep.md)
   A value that indicates that the route changed when the device woke up from sleep.
-- [AVAudioSession.RouteChangeReason.noSuitableRouteForCategory](avaudiosession/routechangereason/nosuitablerouteforcategory.md)
+- [AVAudioSession.RouteChangeReason.noSuitableRouteForCategory](./nosuitablerouteforcategory.md)
   A value that indicates that the route changed because no suitable route is now available for the specified category.
-- [AVAudioSession.RouteChangeReason.routeConfigurationChange](avaudiosession/routechangereason/routeconfigurationchange.md)
+- [AVAudioSession.RouteChangeReason.routeConfigurationChange](./routeconfigurationchange.md)
   A value that indicates that the configuration for a set of I/O ports has changed.
 
 

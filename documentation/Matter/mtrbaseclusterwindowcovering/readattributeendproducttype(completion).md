@@ -1,7 +1,8 @@
 # readAttributeEndProductType(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeEndProductType(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeEndProductType() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeEndProductTypeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

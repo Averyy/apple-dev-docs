@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier assigned to the Vision observation.
 
@@ -17,6 +18,10 @@ A unique identifier assigned to the Vision observation.
 
 ```swift
 var uuid: UUID { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSUUID * uuid;
 ```
 
 

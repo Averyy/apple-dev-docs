@@ -1,7 +1,8 @@
 # frameOfPresentedViewInContainerView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame rectangle to assign to the presented view at the end of the animations.
 
@@ -9,13 +10,17 @@ The frame rectangle to assign to the presented view at the end of the animations
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var frameOfPresentedViewInContainerView: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect frameOfPresentedViewInContainerView;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ UIKit calls this method multiple times during the course of a presentation, so y
 
 ## See Also
 
-- [func containerViewWillLayoutSubviews()](uipresentationcontroller/containerviewwilllayoutsubviews.md)
+### Adjusting the size and layout of the presentation
+- [func containerViewWillLayoutSubviews()](./containerviewwilllayoutsubviews%28%29.md)
   Notifies the presentation controller that layout is about to begin on the views of the container view.
-- [func containerViewDidLayoutSubviews()](uipresentationcontroller/containerviewdidlayoutsubviews.md)
+- [func containerViewDidLayoutSubviews()](./containerviewdidlayoutsubviews%28%29.md)
   Notifies the presentation controller when layout ends on the views of the container view.
 
 

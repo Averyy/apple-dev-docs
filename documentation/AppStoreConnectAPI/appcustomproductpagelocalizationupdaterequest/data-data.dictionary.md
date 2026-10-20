@@ -1,7 +1,8 @@
 # AppCustomProductPageLocalizationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app custom product page localization update request.
 
@@ -10,21 +11,21 @@ The request body you use to update an app custom product page localization updat
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppCustomProductPageLocalizationUpdateRequest.Data.Attributes](appcustomproductpagelocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppCustomProductPageLocalizationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app custom product page localization update request resource.
 
 ## Properties
 
 - `attributes` (AppCustomProductPageLocalizationUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPageLocalizations`
 
 
 ---

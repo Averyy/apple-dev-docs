@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the inverse of the bits set in the argument.
@@ -36,13 +37,20 @@ Performing a bitwise NOT operation on 0 returns a value with every bit set to `1
 let allOnes = ~UInt8.min   // 0b11111111
 ```
 
-> **Note**: O(1).
+> **Complexity**: O(1).
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [static func ~ (Self) -> Self](./tilde%28_%29-6mr7y.md)
+  Returns the inverse of the bits set in the argument.
 
 ## See Also
 
-- [static func & (Self, Self) -> Self](binaryinteger/&(_:_:).md)
+### Bitwise Operations
+- [static func & (Self, Self) -> Self](./amp%28_,_%29.md)
   Returns the result of performing a bitwise AND operation on the two given values.
-- [static func &= (inout Self, Self)](binaryinteger/&=(_:_:).md)
+- [static func &= (inout Self, Self)](./ampeq%28_,_%29.md)
   Stores the result of performing a bitwise AND operation on the two given values in the left-hand-side variable.
 
 

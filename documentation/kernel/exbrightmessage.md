@@ -1,14 +1,15 @@
 # EXBrightMessage
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct EXBrightMessage {
     ...
 } EXBrightMessage;
@@ -17,9 +18,9 @@ typedef struct EXBrightMessage {
 ## Topics
 
 ### Instance Properties
-- [arg0](exbrightmessage/4460315-arg0.md)
-- [arg1](exbrightmessage/4460316-arg1.md)
-- [type](exbrightmessage/4460317-type.md)
+- [arg0](./exbrightmessage/api-4460315-arg0.md)
+- [arg1](./exbrightmessage/api-4460316-arg1.md)
+- [type](./exbrightmessage/api-4460317-type.md)
 
 
 ---

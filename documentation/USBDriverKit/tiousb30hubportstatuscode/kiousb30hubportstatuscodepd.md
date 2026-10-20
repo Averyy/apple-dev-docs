@@ -1,22 +1,24 @@
 # kIOUSB30HubPortStatusCodePD
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubPortStatusCodePD
 ```
 
 ## See Also
 
-- [kIOUSB30HubPortStatusCodeStandard](tiousb30hubportstatuscode/kiousb30hubportstatuscodestandard.md)
-- [kIOUSB30HubPortStatusCodeExt](tiousb30hubportstatuscode/kiousb30hubportstatuscodeext.md)
-- [kIOUSB30HubPortStatusCodeCount](tiousb30hubportstatuscode/kiousb30hubportstatuscodecount.md)
+### Getting the Status Codes
+- [kIOUSB30HubPortStatusCodeStandard](./kiousb30hubportstatuscodestandard.md)
+- [kIOUSB30HubPortStatusCodeExt](./kiousb30hubportstatuscodeext.md)
+- [kIOUSB30HubPortStatusCodeCount](./kiousb30hubportstatuscodecount.md)
 
 
 ---

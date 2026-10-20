@@ -1,7 +1,8 @@
 # PHASEMixerDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object to initialize a mixer with a given configuration.
 
@@ -19,17 +20,21 @@ An object to initialize a mixer with a given configuration.
 class PHASEMixerDefinition
 ```
 
+```objc
+@interface PHASEMixerDefinition : PHASEDefinition
+```
+
 #### Overview
 
 A mixer combines multiple layers of audio to a single signal for transmission to the output device. The framework creates a mixer when you provide a mixer definition. Instead of creating an instance of this class, instantiate one of the mixer definition subclasses instead:
 
-- **[`PHASEChannelMixerDefinition`](phasechannelmixerdefinition.md)**: When your app outputs sound through a channel mixer, the framework maintains the channel configuration of the source audio. For example, the left and right channels of a stereo input file play on the left and right speakers, respectively.
-- **[`PHASEAmbientMixerDefinition`](phaseambientmixerdefinition.md)**: When your app outputs sound through an ambient mixer, the framework overrides the output channels to give the mixer an orientation, which creates the effect of pointing in a specific direction in 3D space.
-- **[`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md)**: Audio that your app outputs through a spatial mixer specifies a position and orientation in 3D space. Spatial mixers require the app to define sources that emit audio, and a listener that hears audio. Sound playback changes depending on the relative positions of the listener and sources.
+- **[`PHASEChannelMixerDefinition`](./phasechannelmixerdefinition.md)**: When your app outputs sound through a channel mixer, the framework maintains the channel configuration of the source audio. For example, the left and right channels of a stereo input file play on the left and right speakers, respectively.
+- **[`PHASEAmbientMixerDefinition`](./phaseambientmixerdefinition.md)**: When your app outputs sound through an ambient mixer, the framework overrides the output channels to give the mixer an orientation, which creates the effect of pointing in a specific direction in 3D space.
+- **[`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md)**: Audio that your app outputs through a spatial mixer specifies a position and orientation in 3D space. Spatial mixers require the app to define sources that emit audio, and a listener that hears audio. Sound playback changes depending on the relative positions of the listener and sources.
 
 ##### Play a Sound Using a Mixer
 
-To play a sound using a mixer, create a mixer definition and pass it to a sound event. The following code creates a [`PHASEChannelMixerDefinition`](phasechannelmixerdefinition.md) and passes it into a node definition the app can invoke to play the channel-based audio file `drumloopSoundAsset`:
+To play a sound using a mixer, create a mixer definition and pass it to a sound event. The following code creates a [`PHASEChannelMixerDefinition`](./phasechannelmixerdefinition.md) and passes it into a node definition the app can invoke to play the channel-based audio file `drumloopSoundAsset`:
 
 ```swift
 // Create a channel mixer definition.
@@ -42,38 +47,39 @@ let drumloopSamplerNode = PHASESamplerNodeDefinition(soundAssetIdentifier:drumlo
 ## Topics
 
 ### Controlling Volume
-- [var gain: Double](phasemixerdefinition/gain.md)
+- [var gain: Double](./phasemixerdefinition/gain.md)
   The mixer’s volume.
-- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasemixerdefinition/gainmetaparameterdefinition.md)
+- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./phasemixerdefinition/gainmetaparameterdefinition.md)
   A template for a parameter that changes the mixer’s volume gradually over a period of time.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEDefinition](phasedefinition.md)
+- [PHASEDefinition](./phasedefinition.md)
 ### Inherited By
-- [PHASEAmbientMixerDefinition](phaseambientmixerdefinition.md)
-- [PHASEChannelMixerDefinition](phasechannelmixerdefinition.md)
-- [PHASESpatialMixerDefinition](phasespatialmixerdefinition.md)
+- [PHASEAmbientMixerDefinition](./phaseambientmixerdefinition.md)
+- [PHASEChannelMixerDefinition](./phasechannelmixerdefinition.md)
+- [PHASESpatialMixerDefinition](./phasespatialmixerdefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEChannelMixerDefinition](phasechannelmixerdefinition.md)
+### Audio Layering and Effects
+- [class PHASEChannelMixerDefinition](./phasechannelmixerdefinition.md)
   An audio-layering object that routes sound directly to the device’s output.
-- [class PHASEAmbientMixerDefinition](phaseambientmixerdefinition.md)
+- [class PHASEAmbientMixerDefinition](./phaseambientmixerdefinition.md)
   An audio-layering object that outputs sound in a particular direction in 3D space.
-- [class PHASEMixer](phasemixer.md)
+- [class PHASEMixer](./phasemixer.md)
   An object that combines multiple audio signals into a single signal.
-- [class PHASEDefinition](phasedefinition.md)
+- [class PHASEDefinition](./phasedefinition.md)
   A base class that adds a name to framework definitions.
-- [Spatial Mixing](spatial-mixing.md)
+- [Spatial Mixing](./spatial-mixing.md)
   Define environmental characteristics that determine how sound plays in your app’s 3D soundscape.
 
 

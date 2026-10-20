@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes an instance of fade environment command.
 

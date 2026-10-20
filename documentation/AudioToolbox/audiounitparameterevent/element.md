@@ -1,17 +1,18 @@
 # element
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element for this parameter event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The element for this parameter event.
 var element: AudioUnitElement
 ```
 
+```c
+AudioUnitElement element;
+```
+
 ## See Also
 
-- [var scope: AudioUnitScope](audiounitparameterevent/scope.md)
+### Fields
+- [var scope: AudioUnitScope](./scope.md)
   The scope for this parameter event.
-- [var parameter: AudioUnitParameterID](audiounitparameterevent/parameter.md)
+- [var parameter: AudioUnitParameterID](./parameter.md)
   An identifier for this parameter event.
-- [var eventType: AUParameterEventType](audiounitparameterevent/eventtype.md)
+- [var eventType: AUParameterEventType](./eventtype.md)
   The type for this parameter event.
-- [var eventValues: AudioUnitParameterEvent.__Unnamed_union_eventValues](audiounitparameterevent/eventvalues.md)
+- [var eventValues: AudioUnitParameterEvent.__Unnamed_union_eventValues](./eventvalues.md)
   The values for this parameter event.
 
 

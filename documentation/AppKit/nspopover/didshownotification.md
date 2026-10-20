@@ -1,7 +1,8 @@
 # didShowNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sent after the popover has finished animating onscreen.
 
@@ -14,17 +15,22 @@ Sent after the popover has finished animating onscreen.
 class let didShowNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSPopoverDidShowNotification;
+```
+
 #### Discussion
 
-To observe this notification using Swift concurrency, use [`NSPopover.DidShowMessage`](nspopover/didshowmessage.md).
+To observe this notification using Swift concurrency, use [`NSPopover.DidShowMessage`](./didshowmessage.md).
 
 ## See Also
 
-- [class let willShowNotification: NSNotification.Name](nspopover/willshownotification.md)
+### Notifications
+- [class let willShowNotification: NSNotification.Name](./willshownotification.md)
   Sent before the popover is shown.
-- [class let willCloseNotification: NSNotification.Name](nspopover/willclosenotification.md)
+- [class let willCloseNotification: NSNotification.Name](./willclosenotification.md)
   Sent before the popover is closed.
-- [class let didCloseNotification: NSNotification.Name](nspopover/didclosenotification.md)
+- [class let didCloseNotification: NSNotification.Name](./didclosenotification.md)
   Sent after the popover has finished animating offscreen.
 
 

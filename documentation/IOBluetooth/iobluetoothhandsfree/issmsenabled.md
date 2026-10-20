@@ -1,7 +1,8 @@
 # isSMSEnabled
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return YES if the device has SMS enabled.
 
@@ -12,6 +13,10 @@ Return YES if the device has SMS enabled.
 
 ```swift
 var isSMSEnabled: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSMSEnabled) BOOL SMSEnabled;
 ```
 
 #### Discussion

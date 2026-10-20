@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates and initializes an instance of the audio clock device class.
 
@@ -10,32 +11,33 @@ Allocates and initializes an instance of the audio clock device class.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserAudioClockDevice> Create(IOUserAudioDriver *in_driver, bool in_supports_prewarming, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid, uint32_t in_zero_timestamp_period);
 ```
 
 #### Return Value
 
-An poiner to an [`IOUserAudioClockDevice`](iouseraudioclockdevice.md), if allocation and initialization succeeded.
+An poiner to an [`IOUserAudioClockDevice`](../iouseraudioclockdevice.md), if allocation and initialization succeeded.
 
 #### Discussion
 
-If you subclass [`IOUserAudioClockDevice`](iouseraudioclockdevice.md) to override this class’ behavior, don’t use [`Create`](iouseraudioclockdevice/create.md) to allocate and initialize the custom subclass.
+If you subclass [`IOUserAudioClockDevice`](../iouseraudioclockdevice.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 
 ## Parameters
 
-- `in_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
+- `in_driver`: The [`IOUserAudioDriver`](../iouseraudiodriver.md) that owns this object.
 - `in_supports_prewarming`: A Boolean value that specifies if the device supports prewarming I/O.
-- `in_device_uid`: A pointer to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the device UID.
-- `in_model_uid`: A pointer to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the model UID.
-- `in_manufacturer_uid`: A pointer to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the manufacturer UID.
-- `in_zero_timestamp_period`: A [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t) whose value indicates the number of sample frames the host can expect between successive timestamps returned from [`GetZeroTimestampPeriod`](iouseraudioclockdevice/getzerotimestampperiod.md). In other words, if [`GetZeroTimestampPeriod`](iouseraudioclockdevice/getzerotimestampperiod.md) returns a sample time of `x`, the host can expect that the next valid timestamp it receives will be `x + in_zero_timestamp_period`.
+- `in_device_uid`: A pointer to an [`OSString`](../../DriverKit/osstring.md) containing the device UID.
+- `in_model_uid`: A pointer to an [`OSString`](../../DriverKit/osstring.md) containing the model UID.
+- `in_manufacturer_uid`: A pointer to an [`OSString`](../../DriverKit/osstring.md) containing the manufacturer UID.
+- `in_zero_timestamp_period`: A [`uint32_t`](../../kernel/uint32_t.md) whose value indicates the number of sample frames the host can expect between successive timestamps returned from [`GetZeroTimestampPeriod`](./getzerotimestampperiod.md). In other words, if [`GetZeroTimestampPeriod`](./getzerotimestampperiod.md) returns a sample time of `x`, the host can expect that the next valid timestamp it receives will be `x + in_zero_timestamp_period`.
 
 ## See Also
 
-- [init](iouseraudioclockdevice/init.md)
+### Creating a Clock Device
+- [init](./init.md)
   Initializes an instance of the audio clock device class.
-- [IOUserAudioDriver](iouseraudiodriver.md)
+- [IOUserAudioDriver](../iouseraudiodriver.md)
   A DriverKit provider object that manages communications with an audio device.
 
 

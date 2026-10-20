@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a disclosure group, using a provided localized string resource to create a text view for the label.
 
@@ -19,6 +20,20 @@ Creates a disclosure group, using a provided localized string resource to create
 nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder content: @escaping () -> Content)
 ```
 
+Available when `Label` is `Text` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: @escaping () -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ label: S, @ContentBuilder content: @escaping () -> Content) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: The localized label of `self` that describes the content of the disclosure group.
@@ -26,11 +41,12 @@ nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder conte
 
 ## See Also
 
-- [init(content: () -> Content, label: () -> Label)](disclosuregroup/init(content:label:).md)
+### Creating a disclosure group
+- [init(content: () -> Content, label: () -> Label)](./init%28content,label%29.md)
   Creates a disclosure group with the given label and content views.
-- [init(_:isExpanded:content:)](disclosuregroup/init(_:isexpanded:content:).md)
+- [init(_:isExpanded:content:)](./init%28_,isexpanded,content%29.md)
   Creates a disclosure group, using a provided localized string resource to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
-- [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](disclosuregroup/init(isexpanded:content:label:).md)
+- [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](./init%28isexpanded,content,label%29.md)
   Creates a disclosure group with the given label and content views, and a binding to the expansion state (expanded or collapsed).
 
 

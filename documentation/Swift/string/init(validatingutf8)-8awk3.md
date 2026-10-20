@@ -1,7 +1,8 @@
 # init(validatingUTF8:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -11,6 +12,8 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: Use a copy of the String argument
 
 ## Declaration
 

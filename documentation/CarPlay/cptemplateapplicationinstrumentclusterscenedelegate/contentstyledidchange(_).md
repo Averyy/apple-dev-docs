@@ -1,7 +1,8 @@
 # contentStyleDidChange(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.4+
@@ -14,10 +15,15 @@
 optional func contentStyleDidChange(_ contentStyle: UIUserInterfaceStyle)
 ```
 
+```objc
+- (void) contentStyleDidChange:(UIUserInterfaceStyle) contentStyle;
+```
+
 ## See Also
 
-- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didConnect: CPInstrumentClusterController)](cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene(_:didconnect:).md)
-- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didDisconnectInstrumentClusterController: CPInstrumentClusterController)](cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene(_:diddisconnectinstrumentclustercontroller:).md)
+### Instance Methods
+- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didConnect: CPInstrumentClusterController)](./templateapplicationinstrumentclusterscene%28_,didconnect%29.md)
+- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didDisconnectInstrumentClusterController: CPInstrumentClusterController)](./templateapplicationinstrumentclusterscene%28_,diddisconnectinstrumentclustercontroller%29.md)
 
 
 ---

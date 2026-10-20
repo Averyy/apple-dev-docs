@@ -1,14 +1,15 @@
 # user32_msgqnum_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef user32_ulong_t user32_msgqnum_t;
 ```
 

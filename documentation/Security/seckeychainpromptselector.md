@@ -1,7 +1,8 @@
 # SecKeychainPromptSelector
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Bits that define when a keychain should require a passphrase.
 
@@ -14,34 +15,38 @@ Bits that define when a keychain should require a passphrase.
 struct SecKeychainPromptSelector
 ```
 
+```c
+enum SecKeychainPromptSelector : uint16;
+```
+
 ## Topics
 
 ### Constants
-- [static var requirePassphase: SecKeychainPromptSelector](seckeychainpromptselector/requirepassphase.md)
+- [static var requirePassphase: SecKeychainPromptSelector](./seckeychainpromptselector/requirepassphase.md)
   Indicates that a passphrase should be required for every access.
-- [static var unsigned: SecKeychainPromptSelector](seckeychainpromptselector/unsigned.md)
+- [static var unsigned: SecKeychainPromptSelector](./seckeychainpromptselector/unsigned.md)
   Indicates that a passphrase should be required when an unsigned application attempts to use the keychain, overriding the system default.
-- [static var unsignedAct: SecKeychainPromptSelector](seckeychainpromptselector/unsignedact.md)
+- [static var unsignedAct: SecKeychainPromptSelector](./seckeychainpromptselector/unsignedact.md)
   Indicates that a passphrase should be required when an unsigned application attempts to use the keychain.
-- [static var invalid: SecKeychainPromptSelector](seckeychainpromptselector/invalid.md)
+- [static var invalid: SecKeychainPromptSelector](./seckeychainpromptselector/invalid.md)
   Indicates that a passphrase should be required when an application with an invalid signature attempts to use the keychain, overriding the system default.
-- [static var invalidAct: SecKeychainPromptSelector](seckeychainpromptselector/invalidact.md)
+- [static var invalidAct: SecKeychainPromptSelector](./seckeychainpromptselector/invalidact.md)
   Indicates that a passphrase should be required when an application with an invalid signature attempts to use the keychain.
 ### Initializers
-- [init(rawValue: uint16)](seckeychainpromptselector/init(rawvalue:).md)
+- [init(rawValue: uint16)](./seckeychainpromptselector/init%28rawvalue%29.md)
   Initializes a keychain prompt selector.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

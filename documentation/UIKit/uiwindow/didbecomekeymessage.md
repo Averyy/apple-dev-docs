@@ -1,7 +1,8 @@
 # UIWindow.DidBecomeKeyMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct DidBecomeKeyMessage
 ## Topics
 
 ### Initializers
-- [init(window: UIWindow)](uiwindow/didbecomekeymessage/init(window:).md)
+- [init(window: UIWindow)](./didbecomekeymessage/init%28window%29.md)
 ### Instance Properties
-- [var window: UIWindow](uiwindow/didbecomekeymessage/window.md)
+- [var window: UIWindow](./didbecomekeymessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

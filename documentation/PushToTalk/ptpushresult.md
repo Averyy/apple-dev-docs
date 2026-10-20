@@ -1,7 +1,8 @@
 # PTPushResult
 
 **Framework**: Push to Talk  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a push result.
 
@@ -16,13 +17,17 @@ An object that represents a push result.
 class PTPushResult
 ```
 
+```objc
+@interface PTPushResult : NSObject
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](./creating-a-push-to-talk-app.md)
 
 #### Overview
 
-When an app receives an Apple Push Notification service payload, return a [`PTPushResult`](ptpushresult.md) object as part of the delegate method. Use [`activeRemoteParticipant(_:)`](ptpushresult/activeremoteparticipant(_:).md) to show the latest participant information in the system user interface. Create a push result with [`leaveChannel`](ptpushresult/leavechannel.md) to remove a user from the channel.
+When an app receives an Apple Push Notification service payload, return a [`PTPushResult`](./ptpushresult.md) object as part of the delegate method. Use [`activeRemoteParticipant(_:)`](./ptpushresult/activeremoteparticipant%28_%29.md) to show the latest participant information in the system user interface. Create a push result with [`leaveChannel`](./ptpushresult/leavechannel.md) to remove a user from the channel.
 
 ```swift
 func incomingPushResult(channelManager: PTChannelManager,
@@ -44,25 +49,25 @@ func incomingPushResult(channelManager: PTChannelManager,
 ## Topics
 
 ### Updating the active participant
-- [class func activeRemoteParticipant(PTParticipant) -> PTPushResult](ptpushresult/activeremoteparticipant(_:).md)
+- [class func activeRemoteParticipant(PTParticipant) -> PTPushResult](./ptpushresult/activeremoteparticipant%28_%29.md)
   Creates a push result for reporting that a remote participant started to speak.
 ### Leaving the channel
-- [class var leaveChannel: PTPushResult](ptpushresult/leavechannel.md)
+- [class var leaveChannel: PTPushResult](./ptpushresult/leavechannel.md)
   Creates a push result for leaving a channel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

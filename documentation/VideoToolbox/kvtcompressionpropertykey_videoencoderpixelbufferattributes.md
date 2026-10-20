@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The video encoder’s pixel buffer attributes for the compression session.
 
@@ -19,15 +20,20 @@ The video encoder’s pixel buffer attributes for the compression session.
 let kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes;
+```
+
 #### Discussion
 
 You can use these attributes to create a pixel buffer pool for source pixel buffers.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_NumberOfPendingFrames: CFString](kvtcompressionpropertykey_numberofpendingframes.md)
+### Buffers
+- [let kVTCompressionPropertyKey_NumberOfPendingFrames: CFString](./kvtcompressionpropertykey_numberofpendingframes.md)
   The number of pending frames in the compression session.
-- [let kVTCompressionPropertyKey_PixelBufferPoolIsShared: CFString](kvtcompressionpropertykey_pixelbufferpoolisshared.md)
+- [let kVTCompressionPropertyKey_PixelBufferPoolIsShared: CFString](./kvtcompressionpropertykey_pixelbufferpoolisshared.md)
   A Boolean value indicating whether the common pixel buffer pool is shared between the video encoder and the session client.
 
 

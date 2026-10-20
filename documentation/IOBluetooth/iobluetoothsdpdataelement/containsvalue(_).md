@@ -1,17 +1,22 @@
 # containsValue(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks to see if the target data element’s value is the same as the value parameter or if it contains the value parameter.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func containsValue(_ cmpValue: NSObject!) -> Bool
+```
+
+```objc
+- (BOOL) containsValue:(NSObject *) cmpValue;
 ```
 
 #### Return Value

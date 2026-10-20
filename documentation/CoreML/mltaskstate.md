@@ -1,7 +1,8 @@
 # MLTaskState
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a machine learning task.
 
@@ -20,38 +21,43 @@ The state of a machine learning task.
 enum MLTaskState
 ```
 
+```c
+enum MLTaskState : NSInteger;
+```
+
 ## Topics
 
 ### Transient states
-- [MLTaskState.running](mltaskstate/running.md)
+- [MLTaskState.running](./mltaskstate/running.md)
   The state of a machine learning task that’s executing.
-- [MLTaskState.suspended](mltaskstate/suspended.md)
+- [MLTaskState.suspended](./mltaskstate/suspended.md)
   The state of a machine learning task that’s paused.
-- [MLTaskState.cancelling](mltaskstate/cancelling.md)
+- [MLTaskState.cancelling](./mltaskstate/cancelling.md)
   The state of a machine learning task that’s in mid-termination, before it could finish successfully.
 ### Final states
-- [MLTaskState.completed](mltaskstate/completed.md)
+- [MLTaskState.completed](./mltaskstate/completed.md)
   The state of a machine learning task that has finished successfully.
-- [MLTaskState.failed](mltaskstate/failed.md)
+- [MLTaskState.failed](./mltaskstate/failed.md)
   The state of a machine learning task that has terminated due to an error.
 ### Creating a task state
-- [init?(rawValue: Int)](mltaskstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mltaskstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: MLTaskState](mltask/state.md)
+### Checking the state of a task
+- [var state: MLTaskState](./mltask/state.md)
   The current state of the machine learning task.
-- [var error: (any Error)?](mltask/error.md)
+- [var error: (any Error)?](./mltask/error.md)
   The underlying error if the task is in a failed state.
 
 

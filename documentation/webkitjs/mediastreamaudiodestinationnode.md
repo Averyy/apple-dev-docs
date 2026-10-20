@@ -1,7 +1,8 @@
 # MediaStreamAudioDestinationNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface MediaStreamAudioDestinationNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [stream](mediastreamaudiodestinationnode/1633151-stream.md)
+- [stream](./mediastreamaudiodestinationnode/api-1633151-stream.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

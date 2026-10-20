@@ -1,7 +1,8 @@
 # MDLTextureChannelEncoding.uInt24
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each channel value per texel is a 24-bit unsigned integer.
 
@@ -19,17 +20,22 @@ Each channel value per texel is a 24-bit unsigned integer.
 case uInt24
 ```
 
+```c
+MDLTextureChannelEncodingUInt24
+```
+
 ## See Also
 
-- [MDLTextureChannelEncoding.uInt8](mdltexturechannelencoding/uint8-swift.enum.case.md)
+### Constants
+- [MDLTextureChannelEncoding.uInt8](./uint8-swift.enum.case.md)
   Each channel value per texel is an 8-bit unsigned integer.
-- [MDLTextureChannelEncoding.uInt16](mdltexturechannelencoding/uint16-swift.enum.case.md)
+- [MDLTextureChannelEncoding.uInt16](./uint16-swift.enum.case.md)
   Each channel value per texel is a 16-bit unsigned integer.
-- [MDLTextureChannelEncoding.uInt32](mdltexturechannelencoding/uint32-swift.enum.case.md)
+- [MDLTextureChannelEncoding.uInt32](./uint32-swift.enum.case.md)
   Each channel value per texel is a 32-bit unsigned integer.
-- [MDLTextureChannelEncoding.float16](mdltexturechannelencoding/float16.md)
+- [MDLTextureChannelEncoding.float16](./float16.md)
   Each channel value per texel is a 16-bit floating-point value.
-- [MDLTextureChannelEncoding.float32](mdltexturechannelencoding/float32.md)
+- [MDLTextureChannelEncoding.float32](./float32.md)
   Each channel value per texel is a 32-bit floating-point value.
 
 

@@ -1,12 +1,13 @@
 # fontSetChangedNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted after the currently-set font changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Posted after the currently-set font changes.
 class let fontSetChangedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSFontSetChangedNotification;
+```
+
 #### Discussion
 
-To observe this notification using Swift concurrency, use [`NSFont.FontSetChangedMessage`](nsfont/fontsetchangedmessage.md).
+To observe this notification using Swift concurrency, use [`NSFont.FontSetChangedMessage`](./fontsetchangedmessage.md).
 
 ## See Also
 
-- [class let antialiasThresholdChangedNotification: NSNotification.Name](nsfont/antialiasthresholdchangednotification.md)
+### Responding to Font-Related Notifications
+- [class let antialiasThresholdChangedNotification: NSNotification.Name](./antialiasthresholdchangednotification.md)
   Posted after the threshold for antialiasing changes.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -17,10 +18,15 @@
 static let automatic: CALayer.ToneMapMode
 ```
 
+```c
+extern CAToneMapMode const CAToneMapModeAutomatic;
+```
+
 ## See Also
 
-- [static let ifSupported: CALayer.ToneMapMode](calayer/tonemapmode-swift.struct/ifsupported.md)
-- [static let never: CALayer.ToneMapMode](calayer/tonemapmode-swift.struct/never.md)
+### Variables
+- [static let ifSupported: CALayer.ToneMapMode](./ifsupported.md)
+- [static let never: CALayer.ToneMapMode](./never.md)
 
 
 ---

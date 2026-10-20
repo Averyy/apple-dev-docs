@@ -1,7 +1,8 @@
 # blendShapeWeights()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A bind target for the entity’s blend shape weights.
 

@@ -1,7 +1,8 @@
 # errSecPolicyNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified policy cannot be found.
 
@@ -18,6 +19,10 @@ The specified policy cannot be found.
 
 ```swift
 var errSecPolicyNotFound: OSStatus { get }
+```
+
+```c
+errSecPolicyNotFound
 ```
 
 

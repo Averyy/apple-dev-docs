@@ -1,7 +1,8 @@
 # SKTestError
 
 **Framework**: StoreKit Test  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an error that the testing environment returns.
 
@@ -23,41 +24,42 @@ struct SKTestError
 ## Topics
 
 ### Error Domain
-- [static var errorDomain: String](sktesterror/errordomain.md)
+- [static var errorDomain: String](./sktesterror/errordomain.md)
   The domain of the error.
 ### Error Codes
-- [static var fileNotFound: SKTestError.Code](sktesterror/filenotfound.md)
+- [static var fileNotFound: SKTestError.Code](./sktesterror/filenotfound.md)
   The initializer can’t find the file.
-- [static var invalidAction: SKTestError.Code](sktesterror/invalidaction.md)
+- [static var invalidAction: SKTestError.Code](./sktesterror/invalidaction.md)
   The action is invalid.
-- [static var invalidProductIdentifier: SKTestError.Code](sktesterror/invalidproductidentifier.md)
+- [static var invalidProductIdentifier: SKTestError.Code](./sktesterror/invalidproductidentifier.md)
   The product identifier is invalid.
-- [static var invalidProductType: SKTestError.Code](sktesterror/invalidproducttype.md)
+- [static var invalidProductType: SKTestError.Code](./sktesterror/invalidproducttype.md)
   The product type is invalid.
-- [static var invalidURL: SKTestError.Code](sktesterror/invalidurl.md)
+- [static var invalidURL: SKTestError.Code](./sktesterror/invalidurl.md)
   The URL is invalid.
-- [static var noSubscriptionFound: SKTestError.Code](sktesterror/nosubscriptionfound.md)
+- [static var noSubscriptionFound: SKTestError.Code](./sktesterror/nosubscriptionfound.md)
   The test environment didn’t find a subscription.
-- [static var noTransactionFound: SKTestError.Code](sktesterror/notransactionfound.md)
+- [static var noTransactionFound: SKTestError.Code](./sktesterror/notransactionfound.md)
   The test environment didn’t find a transaction.
-- [static var serviceUnavailable: SKTestError.Code](sktesterror/serviceunavailable.md)
+- [static var serviceUnavailable: SKTestError.Code](./sktesterror/serviceunavailable.md)
   The service isn’t available.
-- [SKTestError.Code](sktesterror/code.md)
+- [SKTestError.Code](./sktesterror/code.md)
   Error codes in the testing environment.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SKTestErrorDomain: String](sktesterrordomain.md)
+### StoreKit transaction testing errors
+- [let SKTestErrorDomain: String](./sktesterrordomain.md)
   A constant that represents the domain for error codes in the testing environment.
 
 

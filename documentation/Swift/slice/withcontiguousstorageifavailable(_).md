@@ -1,7 +1,8 @@
 # withContiguousStorageIfAvailable(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a closure on the sequence’s contiguous storage.
 
@@ -19,6 +20,8 @@ Executes a closure on the sequence’s contiguous storage.
 ```swift
 func withContiguousStorageIfAvailable<R>(_ body: (UnsafeBufferPointer<Slice<Base>.Element>) throws -> R) rethrows -> R?
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Return Value
 

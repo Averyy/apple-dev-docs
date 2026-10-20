@@ -1,7 +1,8 @@
 # DocumentOrShadowRoot
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DocumentOrShadowRoot
 ```
 
 ## Topics
 
 ### Instance Properties
-- [activeElement](documentorshadowroot/2871072-activeelement.md)
-- [pointerLockElement](documentorshadowroot/2871491-pointerlockelement.md)
+- [activeElement](./documentorshadowroot/api-2871072-activeelement.md)
+- [pointerLockElement](./documentorshadowroot/api-2871491-pointerlockelement.md)
 ### Instance Methods
-- [elementFromPoint](documentorshadowroot/2871074-elementfrompoint.md)
+- [elementFromPoint](./documentorshadowroot/api-2871074-elementfrompoint.md)
 
 
 ---

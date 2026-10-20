@@ -1,7 +1,8 @@
 # coefficient
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coefficient to use in the linear unit conversion calculation.
 
@@ -20,9 +21,14 @@ The coefficient to use in the linear unit conversion calculation.
 var coefficient: Double { get }
 ```
 
+```objc
+@property (readonly) double coefficient;
+```
+
 ## See Also
 
-- [var constant: Double](unitconverterlinear/constant.md)
+### Accessing Linear Parameters
+- [var constant: Double](./constant.md)
   The constant to use in the linear unit conversion calculation.
 
 

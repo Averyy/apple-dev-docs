@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct tsegqe_head {
     ...
 };
@@ -17,7 +17,7 @@ struct tsegqe_head {
 ## Topics
 
 ### Instance Properties
-- [lh_first](tsegqe_head/3755026-lh_first.md)
+- [lh_first](./tsegqe_head/api-3755026-lh_first.md)
 
 
 ---

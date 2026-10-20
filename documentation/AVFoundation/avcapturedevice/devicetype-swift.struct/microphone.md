@@ -1,7 +1,8 @@
 # microphone
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A microphone device type.
 
@@ -18,13 +19,18 @@ A microphone device type.
 static let microphone: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeMicrophone;
+```
+
 #### Discussion
 
-In iOS and tvOS, the system only exposes one capture device of this type. The audio routing subsystem decides which physical microphone to use, be it a built-in microphone, a wired headset, or an external microphone. The microphone device’s [`localizedName`](avcapturedevice/localizedname.md) changes as the audio subsystem switches to a different physical device.
+In iOS and tvOS, the system only exposes one capture device of this type. The audio routing subsystem decides which physical microphone to use, be it a built-in microphone, a wired headset, or an external microphone. The microphone device’s [`localizedName`](../localizedname.md) changes as the audio subsystem switches to a different physical device.
 
 ## See Also
 
-- [static let builtInMicrophone: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinmicrophone.md)
+### Microphones
+- [static let builtInMicrophone: AVCaptureDevice.DeviceType](./builtinmicrophone.md)
   A built-in microphone.
 
 

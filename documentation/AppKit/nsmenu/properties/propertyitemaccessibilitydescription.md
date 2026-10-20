@@ -1,12 +1,13 @@
 # propertyItemAccessibilityDescription
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The menu item’s accessibility description.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The menu item’s accessibility description.
 static var propertyItemAccessibilityDescription: NSMenu.Properties { get }
 ```
 
+```c
+NSMenuPropertyItemAccessibilityDescription
+```
+
 ## See Also
 
-- [static var propertyItemTitle: NSMenu.Properties](nsmenu/properties/propertyitemtitle.md)
+### Constants
+- [static var propertyItemTitle: NSMenu.Properties](./propertyitemtitle.md)
   The menu item’s title.
-- [static var propertyItemAttributedTitle: NSMenu.Properties](nsmenu/properties/propertyitemattributedtitle.md)
+- [static var propertyItemAttributedTitle: NSMenu.Properties](./propertyitemattributedtitle.md)
   The menu item’s attributed string title.
-- [static var propertyItemKeyEquivalent: NSMenu.Properties](nsmenu/properties/propertyitemkeyequivalent.md)
+- [static var propertyItemKeyEquivalent: NSMenu.Properties](./propertyitemkeyequivalent.md)
   The menu item’s key equivalent.
-- [static var propertyItemImage: NSMenu.Properties](nsmenu/properties/propertyitemimage.md)
+- [static var propertyItemImage: NSMenu.Properties](./propertyitemimage.md)
   The menu image.
-- [static var propertyItemEnabled: NSMenu.Properties](nsmenu/properties/propertyitemenabled.md)
+- [static var propertyItemEnabled: NSMenu.Properties](./propertyitemenabled.md)
   Whether the menu item is enabled or disabled.
 
 

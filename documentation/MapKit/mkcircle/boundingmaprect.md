@@ -1,7 +1,8 @@
 # boundingMapRect
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding rectangle of the circular area.
 
@@ -20,15 +21,20 @@ The bounding rectangle of the circular area.
 var boundingMapRect: MKMapRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKMapRect boundingMapRect;
+```
+
 #### Discussion
 
 As latitude values move away from the equator and toward the poles, the physical distance between map points gets smaller. This means that the map needs more map points to represent the same distance. As a result, the bounding rectangle of a circle overlay gets larger as the center point of that circle moves away from the equator and toward the poles.
 
 ## See Also
 
-- [var coordinate: CLLocationCoordinate2D](mkcircle/coordinate.md)
+### Accessing the overlay’s attributes
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   The center point of the circular area, specified as a latitude and longitude.
-- [var radius: CLLocationDistance](mkcircle/radius.md)
+- [var radius: CLLocationDistance](./radius.md)
   The radius of the circular area, in meters.
 
 

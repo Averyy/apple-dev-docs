@@ -1,7 +1,8 @@
 # animationPlaybackController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Reference to the animation playback controller instance that corresponds to the active animation on the entity.
 

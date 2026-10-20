@@ -1,7 +1,8 @@
 # init(trailingItem:trailingImage:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trailing configuration that contains an item and an image.
 
@@ -16,20 +17,25 @@ Creates a trailing configuration that contains an item and an image.
 init(trailingItem: CPMessageTrailingItem, trailingImage: UIImage?)
 ```
 
+```objc
+- (instancetype) initWithTrailingItem:(CPMessageTrailingItem) trailingItem trailingImage:(UIImage *) trailingImage;
+```
+
 #### Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property. Make sure that the image isn’t larger than [`CPMaximumMessageItemImageSize`](cpmaximummessageitemimagesize.md).
+Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. Make sure that the image isn’t larger than [`CPMaximumMessageItemImageSize`](../cpmaximummessageitemimagesize.md).
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 
 ## Parameters
 
-- `trailingItem`: The item to show in the trailing region of the message list item. See [`CPMessageTrailingItem`](cpmessagetrailingitem.md) for the available options.
+- `trailingItem`: The item to show in the trailing region of the message list item. See [`CPMessageTrailingItem`](../cpmessagetrailingitem.md) for the available options.
 - `trailingImage`: The image to show in the trailing region of the message list item.
 
 ## See Also
 
-- [let CPMaximumMessageItemImageSize: CGSize](cpmaximummessageitemimagesize.md)
+### Creating a Configuration
+- [let CPMaximumMessageItemImageSize: CGSize](../cpmaximummessageitemimagesize.md)
   The maximum size of a message list item’s image.
 
 

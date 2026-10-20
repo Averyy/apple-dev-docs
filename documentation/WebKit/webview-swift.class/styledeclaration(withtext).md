@@ -1,17 +1,22 @@
 # styleDeclaration(withText:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the CSS style declaration for the specified text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func styleDeclaration(withText text: String!) -> DOMCSSStyleDeclaration!
+```
+
+```objc
+- (DOMCSSStyleDeclaration *) styleDeclarationWithText:(NSString *) text;
 ```
 
 #### Return Value
@@ -24,13 +29,14 @@ The style declaration for `text`.
 
 ## See Also
 
-- [func computedStyle(for: DOMElement!, pseudoElement: String!) -> DOMCSSStyleDeclaration!](webview-swift.class/computedstyle(for:pseudoelement:).md)
+### Getting and Setting CSS Properties
+- [func computedStyle(for: DOMElement!, pseudoElement: String!) -> DOMCSSStyleDeclaration!](./computedstyle%28for,pseudoelement%29.md)
   Returns the computed style of an element and its pseudo element.
-- [var mediaStyle: String!](webview-swift.class/mediastyle.md)
+- [var mediaStyle: String!](./mediastyle.md)
   The receiver’s CSS media property.
-- [var typingStyle: DOMCSSStyleDeclaration!](webview-swift.class/typingstyle.md)
+- [var typingStyle: DOMCSSStyleDeclaration!](./typingstyle.md)
   The receiver’s CSS typing style.
-- [func applyStyle(DOMCSSStyleDeclaration!)](webview-swift.class/applystyle(_:).md)
+- [func applyStyle(DOMCSSStyleDeclaration!)](./applystyle%28_%29.md)
   Applies the CSS typing style to the current selection.
 
 

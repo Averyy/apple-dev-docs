@@ -1,7 +1,8 @@
 # maskInset
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The insets from the edges of the full screen layout.
 
@@ -10,15 +11,16 @@ The insets from the edges of the full screen layout.
 
 ## Declaration
 
-```swift
+```
 attribute double Object maskInset;
 ```
 
 ## See Also
 
-- [interitemSpacing](browser/3192098-interitemspacing.md)
+### Modifying a Browser
+- [interitemSpacing](./api-3192098-interitemspacing.md)
   The spacing between full screen browser items.
-- [cornerRadius](browser/3192097-cornerradius.md)
+- [cornerRadius](./api-3192097-cornerradius.md)
   The corner radius of each full screen browser item.
 
 

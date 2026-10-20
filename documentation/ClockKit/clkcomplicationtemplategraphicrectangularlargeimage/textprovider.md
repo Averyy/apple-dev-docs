@@ -1,18 +1,25 @@
 # textProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The header text to display in the complication.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 @NSCopying
 var textProvider: CLKTextProvider { get set }
+```
+
+```objc
+@property (nonatomic, copy) CLKTextProvider * textProvider;
 ```
 
 #### Discussion
@@ -23,7 +30,8 @@ In watchOS 5 and earlier, the system converts the text to uppercase before displ
 
 ## See Also
 
-- [var imageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphicrectangularlargeimage/imageprovider.md)
+### Setting the Complication Data
+- [var imageProvider: CLKFullColorImageProvider](./imageprovider.md)
   The image to display.
 
 

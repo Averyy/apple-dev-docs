@@ -1,7 +1,8 @@
 # disposition
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The disposition of a message.
 
@@ -16,9 +17,10 @@ let disposition: RCSMessage.Disposition
 
 ## See Also
 
-- [RCSMessage.Disposition](rcsmessage/disposition.md)
+### Accessing disposition notification properties
+- [RCSMessage.Disposition](../disposition.md)
   An enumeration that represents the disposition of an RCS message, such as whether delivery succeeded or failed.
-- [let disposedMessageID: RCSMessageID](rcsmessage/dispositionnotification/disposedmessageid.md)
+- [let disposedMessageID: RCSMessageID](./disposedmessageid.md)
   The message identifier of the message.
 
 

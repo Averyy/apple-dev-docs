@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -14,8 +15,9 @@ var description: String { get }
 
 ## See Also
 
-- [var isEnabled: Bool](vtrawprocessingsession/parameter/details/isenabled.md)
-- [var name: String](vtrawprocessingsession/parameter/details/name.md)
+### Instance Properties
+- [var isEnabled: Bool](./isenabled.md)
+- [var name: String](./name.md)
 
 
 ---

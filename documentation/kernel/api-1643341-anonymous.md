@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPreparationIDAlwaysPrepared](1643341-anonymous/kiopreparationidalwaysprepared.md)
-- [kIOPreparationIDUnprepared](1643341-anonymous/kiopreparationidunprepared.md)
-- [kIOPreparationIDUnsupported](1643341-anonymous/kiopreparationidunsupported.md)
+- [kIOPreparationIDAlwaysPrepared](./api-1643341-anonymous/kiopreparationidalwaysprepared.md)
+- [kIOPreparationIDUnprepared](./api-1643341-anonymous/kiopreparationidunprepared.md)
+- [kIOPreparationIDUnsupported](./api-1643341-anonymous/kiopreparationidunsupported.md)
 
 
 ---

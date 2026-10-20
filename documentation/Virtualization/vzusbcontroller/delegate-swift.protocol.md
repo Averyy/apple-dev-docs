@@ -1,7 +1,8 @@
 # VZUSBController.Delegate
 
 **Framework**: Virtualization  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 protocol Delegate : NSObjectProtocol
+```
+
+```objc
+@protocol VZUSBControllerDelegate <NSObject>
 ```
 
 #### Overview
@@ -21,12 +26,12 @@ A class conforming to the VZUSBControllerDelegate protocol can provide methods t
 ## Topics
 
 ### Instance Methods
-- [func usbController(VZUSBController, usbPassthroughDeviceDidDisconnect: VZUSBPassthroughDevice)](vzusbcontroller/delegate-swift.protocol/usbcontroller(_:usbpassthroughdevicediddisconnect:).md)
+- [func usbController(VZUSBController, usbPassthroughDeviceDidDisconnect: VZUSBPassthroughDevice)](./delegate-swift.protocol/usbcontroller%28_,usbpassthroughdevicediddisconnect%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # init(headerTextProvider:bodyTextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a template that has a header and a row of tall body text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(headerTextProvider: CLKTextProvider, bodyTextProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithHeaderTextProvider:(CLKTextProvider *) headerTextProvider bodyTextProvider:(CLKTextProvider *) bodyTextProvider;
 ```
 
 ## Parameters

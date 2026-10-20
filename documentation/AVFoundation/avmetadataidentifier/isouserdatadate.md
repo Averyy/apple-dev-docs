@@ -1,7 +1,8 @@
 # isoUserDataDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier that represents the date for the media content.
 
@@ -20,13 +21,18 @@ An identifier that represents the date for the media content.
 static let isoUserDataDate: AVMetadataIdentifier
 ```
 
+```c
+extern AVMetadataIdentifier const AVMetadataIdentifierISOUserDataDate;
+```
+
 ## See Also
 
-- [static let isoUserDataAccessibilityDescription: AVMetadataIdentifier](avmetadataidentifier/isouserdataaccessibilitydescription.md)
+### ISO metadata identifiers
+- [static let isoUserDataAccessibilityDescription: AVMetadataIdentifier](./isouserdataaccessibilitydescription.md)
   An identifier that represents the accessibility description for the media content.
-- [static let isoUserDataCopyright: AVMetadataIdentifier](avmetadataidentifier/isouserdatacopyright.md)
+- [static let isoUserDataCopyright: AVMetadataIdentifier](./isouserdatacopyright.md)
   An identifier that represents the copyright statement.
-- [static let isoUserDataTaggedCharacteristic: AVMetadataIdentifier](avmetadataidentifier/isouserdatataggedcharacteristic.md)
+- [static let isoUserDataTaggedCharacteristic: AVMetadataIdentifier](./isouserdatataggedcharacteristic.md)
   An identifier that represents the tagged media characteristic used for identifying accessibility features.
 
 

@@ -1,7 +1,8 @@
 # fBufSize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The buffer size.
 
@@ -10,21 +11,22 @@ The buffer size.
 
 ## Declaration
 
-```swift
+```c
 UInt32 fBufSize;
 ```
 
 ## See Also
 
-- [fBuffer](iousbisocstruct/1546499-fbuffer.md)
+### Getting the Properties
+- [fBuffer](./api-1546499-fbuffer.md)
   The buffer pointer.
-- [fFrameCounts](iousbisocstruct/1546241-fframecounts.md)
+- [fFrameCounts](./api-1546241-fframecounts.md)
   The frame counts.
-- [fNumFrames](iousbisocstruct/1545923-fnumframes.md)
+- [fNumFrames](./api-1545923-fnumframes.md)
   The number of frames.
-- [fPipe](iousbisocstruct/1546217-fpipe.md)
+- [fPipe](./api-1546217-fpipe.md)
   The pipe value.
-- [fStartFrame](iousbisocstruct/1546384-fstartframe.md)
+- [fStartFrame](./api-1546384-fstartframe.md)
   The starting frame.
 
 

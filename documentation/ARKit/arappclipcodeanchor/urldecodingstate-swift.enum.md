@@ -1,7 +1,8 @@
 # ARAppClipCodeAnchor.URLDecodingState
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states in the process of decoding an App Clip code URL.
 
@@ -15,37 +16,42 @@ The states in the process of decoding an App Clip code URL.
 enum URLDecodingState
 ```
 
+```c
+enum ARAppClipCodeURLDecodingState : NSInteger;
+```
+
 #### Overview
 
-The possible states of decoding the [`url`](arappclipcodeanchor/url.md) of an App Clip Code.
+The possible states of decoding the [`url`](./url.md) of an App Clip Code.
 
 ## Topics
 
 ### States
-- [ARAppClipCodeAnchor.URLDecodingState.decoded](arappclipcodeanchor/urldecodingstate-swift.enum/decoded.md)
+- [ARAppClipCodeAnchor.URLDecodingState.decoded](./urldecodingstate-swift.enum/decoded.md)
   A state that indicates the completed decoding of an App Clip Code URL.
-- [ARAppClipCodeAnchor.URLDecodingState.decoding](arappclipcodeanchor/urldecodingstate-swift.enum/decoding.md)
+- [ARAppClipCodeAnchor.URLDecodingState.decoding](./urldecodingstate-swift.enum/decoding.md)
   A state that indicates the continuing process of decoding an App Clip Code’s URL.
-- [ARAppClipCodeAnchor.URLDecodingState.failed](arappclipcodeanchor/urldecodingstate-swift.enum/failed.md)
+- [ARAppClipCodeAnchor.URLDecodingState.failed](./urldecodingstate-swift.enum/failed.md)
   A state that indicates the failure to decode an App Clip Code’s URL.
 ### Initializers
-- [init?(rawValue: Int)](arappclipcodeanchor/urldecodingstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./urldecodingstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var url: URL?](arappclipcodeanchor/url.md)
+### Decoding the URL
+- [var url: URL?](./url.md)
   The URL encoded in an App Clip Code.
-- [var urlDecodingState: ARAppClipCodeAnchor.URLDecodingState](arappclipcodeanchor/urldecodingstate-swift.property.md)
+- [var urlDecodingState: ARAppClipCodeAnchor.URLDecodingState](./urldecodingstate-swift.property.md)
   A state that indicates the process of decoding an App Clip Code URL.
 
 

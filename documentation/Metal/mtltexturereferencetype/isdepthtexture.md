@@ -1,7 +1,8 @@
 # isDepthTexture
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the texture is a depth texture.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the texture is a depth texture.
 var isDepthTexture: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isDepthTexture;
+```
+
 ## See Also
 
-- [var textureType: MTLTextureType](mtltexturereferencetype/texturetype.md)
+### Describing the texture
+- [var textureType: MTLTextureType](./texturetype.md)
   The texture type of the texture.
-- [var textureDataType: MTLDataType](mtltexturereferencetype/texturedatatype.md)
+- [var textureDataType: MTLDataType](./texturedatatype.md)
   The data type of the texture.
-- [var access: MTLBindingAccess](mtltexturereferencetype/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The texture’s read/write access to the argument.
 
 

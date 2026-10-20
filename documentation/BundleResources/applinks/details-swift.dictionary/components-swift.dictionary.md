@@ -1,7 +1,8 @@
 # applinks.Details.Components
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Patterns that define the universal links an app can open.
 
@@ -68,14 +69,14 @@ This example code shows another components object in an association file:
 ## Topics
 
 ### Query dictionaries
-- [object applinks.Details.Components.Query](applinks/details-swift.dictionary/components-swift.dictionary/query.md)
+- [object applinks.Details.Components.Query](./components-swift.dictionary/query.md)
   A dictionary of names and values to match with query items in a URL.
 
 ## Properties
 
 - `#` (string)
 - `/` (string)
-- `?` ((string | applinks.Details.Components.Query))
+- `?` ((string | applinks.Details.Components.Query)): **Allowed Types**: `string`, `applinks.Details.Components.Query`
 - `caseSensitive` (boolean)
 - `comment` (string)
 - `exclude` (boolean)

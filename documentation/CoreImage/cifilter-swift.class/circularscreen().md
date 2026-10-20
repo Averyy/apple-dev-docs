@@ -1,7 +1,8 @@
 # circularScreen()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds a circular overlay to an image.
 
@@ -19,6 +20,10 @@ Adds a circular overlay to an image.
 class func circularScreen() -> any CIFilter & CICircularScreen
 ```
 
+```objc
++ (CIFilter<CICircularScreen> *) circularScreenFilter;
+```
+
 #### Return Value
 
 The modified image.
@@ -29,10 +34,10 @@ This method applies a circular screen filter to an image. The effect generates a
 
 The circular screen filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
-- **`width`**: A `float` representing the distance between each circle in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`sharpness`**: A `float` representing the sharpness of the circles in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](../../CoreFoundation/cgpoint.md).
+- **`width`**: A `float` representing the distance between each circle in the pattern as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`sharpness`**: A `float` representing the sharpness of the circles in the pattern as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that results in a monochrome image with a large circular pattern overlaying the image:
 
@@ -47,17 +52,18 @@ func circular(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, a circular screen filter is applied, resulting in the image becoming monochrome with an overlay of circular lines radiating from the center of the image out to the periphery.](/images/com.apple.coreimage/media-3595914@2x.png)
+![Two photographs of wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, a circular screen filter is applied, resulting in the image becoming monochrome with an overlay of circular lines radiating from the center of the image out to the periphery.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3595914@2x.png)
 
 ## See Also
 
-- [class func cmykHalftone() -> any CIFilter & CICMYKHalftone](cifilter-swift.class/cmykhalftone.md)
+### Filters
+- [class func cmykHalftone() -> any CIFilter & CICMYKHalftone](./cmykhalftone%28%29.md)
   Adds a series of colorful dots to an image.
-- [class func dotScreen() -> any CIFilter & CIDotScreen](cifilter-swift.class/dotscreen.md)
+- [class func dotScreen() -> any CIFilter & CIDotScreen](./dotscreen%28%29.md)
   Creates a monochrome image with a series of dots to add detail.
-- [class func hatchedScreen() -> any CIFilter & CIHatchedScreen](cifilter-swift.class/hatchedscreen.md)
+- [class func hatchedScreen() -> any CIFilter & CIHatchedScreen](./hatchedscreen%28%29.md)
   Creates a monochrome image with a series of lines to add detail.
-- [class func lineScreen() -> any CIFilter & CILineScreen](cifilter-swift.class/linescreen.md)
+- [class func lineScreen() -> any CIFilter & CILineScreen](./linescreen%28%29.md)
   Creates a monochrome image with a series of small lines to add detail.
 
 

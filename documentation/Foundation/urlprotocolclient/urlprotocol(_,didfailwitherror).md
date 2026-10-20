@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the load request failed due to an error.
@@ -21,6 +22,10 @@ Tells the client that the load request failed due to an error.
 func urlProtocol(_ protocol: URLProtocol, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol didFailWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `protocol`: The URL protocol object sending the message.
@@ -28,9 +33,10 @@ func urlProtocol(_ protocol: URLProtocol, didFailWithError error: any Error)
 
 ## See Also
 
-- [func urlProtocol(URLProtocol, didLoad: Data)](urlprotocolclient/urlprotocol(_:didload:).md)
+### Indicating loading progress or failure
+- [func urlProtocol(URLProtocol, didLoad: Data)](./urlprotocol%28_,didload%29.md)
   Tells the client that the protocol implementation has loaded some data.
-- [func urlProtocolDidFinishLoading(URLProtocol)](urlprotocolclient/urlprotocoldidfinishloading(_:).md)
+- [func urlProtocolDidFinishLoading(URLProtocol)](./urlprotocoldidfinishloading%28_%29.md)
   Tells the client that the protocol implementation has finished loading.
 
 

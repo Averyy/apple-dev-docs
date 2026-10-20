@@ -1,7 +1,8 @@
 # kDNSServiceType_SINK
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceType_SINK: Int { get }
+```
+
+```c
+kDNSServiceType_SINK
 ```
 
 #### Discussion

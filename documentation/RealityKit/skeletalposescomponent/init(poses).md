@@ -1,7 +1,8 @@
 # init(poses:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a component value with the provided poses.
 

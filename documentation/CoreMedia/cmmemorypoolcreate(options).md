@@ -1,7 +1,8 @@
 # CMMemoryPoolCreate(options:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a memory pool.
 
@@ -20,6 +21,10 @@ Creates a memory pool.
 func CMMemoryPoolCreate(options: CFDictionary?) -> CMMemoryPool
 ```
 
+```c
+extern CMMemoryPoolRefCMMemoryPoolCreate(CFDictionaryRef options);
+```
+
 #### Return Value
 
 A new memory pool.
@@ -31,7 +36,7 @@ A new memory pool.
 ## Topics
 
 ### Creation Options
-- [let kCMMemoryPoolOption_AgeOutPeriod: CFString](kcmmemorypooloption_ageoutperiod.md)
+- [let kCMMemoryPoolOption_AgeOutPeriod: CFString](./kcmmemorypooloption_ageoutperiod.md)
   The period of time before the pool recycles its memory.
 
 

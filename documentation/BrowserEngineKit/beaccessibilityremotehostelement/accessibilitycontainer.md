@@ -1,7 +1,8 @@
 # accessibilityContainer
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote host’s parent Accessibility element.
 
@@ -14,6 +15,10 @@ The remote host’s parent Accessibility element.
 
 ```swift
 weak var accessibilityContainer: AnyObject? { get set }
+```
+
+```objc
+@property (nonatomic, weak) id accessibilityContainer;
 ```
 
 #### Discussion

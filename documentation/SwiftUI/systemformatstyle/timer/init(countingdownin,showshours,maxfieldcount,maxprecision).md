@@ -1,7 +1,8 @@
 # init(countingDownIn:showsHours:maxFieldCount:maxPrecision:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a timer format style that counts down within the interval you provide.
 

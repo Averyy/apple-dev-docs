@@ -1,11 +1,12 @@
 # CustomPlaygroundDisplayConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var playgroundDescription: Any](mlboostedtreeclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the model parameters for a boosted tree classifier shown in a playground.
 
 

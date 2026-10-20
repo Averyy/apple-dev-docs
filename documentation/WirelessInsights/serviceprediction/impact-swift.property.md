@@ -1,7 +1,8 @@
 # impact
 
 **Framework**: WirelessInsights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected impact of the predicted event.
 
@@ -17,7 +18,8 @@ let impact: ServicePrediction.Impact
 
 ## See Also
 
-- [ServicePrediction.Impact](serviceprediction/impact-swift.enum.md)
+### Accessing prediction impact
+- [ServicePrediction.Impact](./impact-swift.enum.md)
   An enumeration of levels of impact for a predicted event.
 
 

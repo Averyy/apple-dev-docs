@@ -1,7 +1,8 @@
 # isPaddingRemoved
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the standard padding around the item should be removed. Default: NO
 
@@ -16,6 +17,10 @@ Whether the standard padding around the item should be removed. Default: NO
 
 ```swift
 var isPaddingRemoved: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isPaddingRemoved, setter=setPaddingRemoved:) BOOL paddingRemoved;
 ```
 
 

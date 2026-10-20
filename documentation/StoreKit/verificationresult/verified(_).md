@@ -1,7 +1,8 @@
 # VerificationResult.verified(_:)
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The associated value passed StoreKit automatic verification checks.
 
@@ -22,8 +23,8 @@ case verified(SignedType)
 
 ## Mentions
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
+- [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion
 
@@ -31,13 +32,14 @@ The associated value in this case is the App Store-signed value.
 
 ## See Also
 
-- [case unverified(SignedType, VerificationResult<SignedType>.VerificationError)](verificationresult/unverified(_:_:).md)
+### Getting the verification results
+- [case unverified(SignedType, VerificationResult<SignedType>.VerificationError)](./unverified%28_,_%29.md)
   The associated value failed StoreKit automatic verification checks.
-- [var payloadValue: SignedType](verificationresult/payloadvalue.md)
+- [var payloadValue: SignedType](./payloadvalue.md)
   The verified value of the signed type that StoreKit confirms as verified.
-- [var unsafePayloadValue: SignedType](verificationresult/unsafepayloadvalue.md)
+- [var unsafePayloadValue: SignedType](./unsafepayloadvalue.md)
   The associated value of the verification result that StoreKit doesn’t confirm as verified.
-- [VerificationResult.VerificationError](verificationresult/verificationerror.md)
+- [VerificationResult.VerificationError](./verificationerror.md)
   Error cases for StoreKit JWS verification.
 
 

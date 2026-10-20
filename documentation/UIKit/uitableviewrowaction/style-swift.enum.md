@@ -1,14 +1,17 @@
 # UITableViewRowAction.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the appearance of action buttons.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 13.0
+- iPadOS 8.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UITableViewRowAction`](../uitableviewrowaction.md).
 
 ## Declaration
 
@@ -16,37 +19,42 @@ Constants that specify the appearance of action buttons.
 enum Style
 ```
 
+```c
+enum UITableViewRowActionStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [UITableViewRowAction.Style.default](uitableviewrowaction/style-swift.enum/default.md)
+- [UITableViewRowAction.Style.default](./style-swift.enum/default.md)
   Apply the default style to the button.
-- [static var destructive: UITableViewRowAction.Style](uitableviewrowaction/style-swift.enum/destructive.md)
+- [static var destructive: UITableViewRowAction.Style](./style-swift.enum/destructive.md)
   Equal to the default style.
-- [UITableViewRowAction.Style.normal](uitableviewrowaction/style-swift.enum/normal.md)
+- [UITableViewRowAction.Style.normal](./style-swift.enum/normal.md)
   Apply a style that reflects standard non-destructive actions.
 ### Initializers
-- [init?(rawValue: Int)](uitableviewrowaction/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: UITableViewRowAction.Style](uitableviewrowaction/style-swift.property.md)
+### Configuring the action’s appearance
+- [var style: UITableViewRowAction.Style](./style-swift.property.md)
   The style applied to the action button.
-- [var title: String?](uitableviewrowaction/title.md)
+- [var title: String?](./title.md)
   The title of the action button.
-- [var backgroundColor: UIColor?](uitableviewrowaction/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the action button.
-- [var backgroundEffect: UIVisualEffect?](uitableviewrowaction/backgroundeffect.md)
+- [var backgroundEffect: UIVisualEffect?](./backgroundeffect.md)
   The visual effect to apply to the button.
 
 

@@ -1,7 +1,8 @@
 # kAXPickAction
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXPickAction: String { get }
+```
+
+```c
+#define kAXPickAction
 ```
 
 #### Discussion

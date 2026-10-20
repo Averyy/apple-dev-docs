@@ -7,7 +7,7 @@ Create an IOMultiMemoryDescriptor to describe a memory area made up of several o
 
 ## Declaration
 
-```swift
+```c
 static IOMultiMemoryDescriptor * withDescriptors( 
  IOMemoryDescriptor **descriptors, 
  UInt32 withCount, 
@@ -15,7 +15,7 @@ static IOMultiMemoryDescriptor * withDescriptors(
  bool asReference = false );
 ```
 
-#### Return_value
+#### Return Value
 
 The created IOMultiMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
@@ -32,15 +32,16 @@ This method creates and initializes an IOMultiMemoryDescriptor for memory consis
 
 ## See Also
 
-- [complete](iomultimemorydescriptor/1812588-complete.md)
+### Miscellaneous
+- [complete](./api-1812588-complete.md)
   Complete processing of the memory after an I/O transfer finishes.
-- [getPhysicalSegment](iomultimemorydescriptor/1812610-getphysicalsegment.md)
+- [getPhysicalSegment](./api-1812610-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
-- [initWithDescriptors](iomultimemorydescriptor/1812635-initwithdescriptors.md)
+- [initWithDescriptors](./api-1812635-initwithdescriptors.md)
   Initialize an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
-- [prepare](iomultimemorydescriptor/1812660-prepare.md)
+- [prepare](./api-1812660-prepare.md)
   Prepare the memory for an I/O transfer.
-- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](iomultimemorydescriptor/1812714-withdescriptors.md)
+- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](./api-1812714-withdescriptors.md)
   Initialize an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
 
 

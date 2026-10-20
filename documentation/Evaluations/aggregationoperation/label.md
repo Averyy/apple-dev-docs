@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display label this operation produces.
 

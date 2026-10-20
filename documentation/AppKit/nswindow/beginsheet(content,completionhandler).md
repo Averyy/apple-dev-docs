@@ -1,7 +1,8 @@
 # beginSheet(content:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a SwiftUI view as a sheet on the receiving NSWindow.
 
@@ -17,18 +18,18 @@ Presents a SwiftUI view as a sheet on the receiving NSWindow.
 
 #### Return Value
 
-A discardable [`NSWindow.HostingSheetRepresentation`](nswindow/hostingsheetrepresentation.md) instance.
+A discardable [`NSWindow.HostingSheetRepresentation`](./hostingsheetrepresentation.md) instance.
 
 #### Discussion
 
-The presented view supports the same features as when used in the [`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)) or [`sheet(item:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)) view modifier, such as:
+The presented view supports the same features as when used in the [`sheet(isPresented:onDismiss:content:)`](../../SwiftUI/view/sheet%28ispresented,ondismiss,content%29.md) or [`sheet(item:onDismiss:content:)`](../../SwiftUI/view/sheet%28item,ondismiss,content%29.md) view modifier, such as:
 
-- Automatic dismissal with the Escape key and disabling interactive dismissal with [`interactiveDismissDisabled(_:)`](https://developer.apple.com/documentation/swiftui/view/interactivedismissdisabled(_:))
-- Use of [`dismiss`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss) to dismiss the sheet
-- Sheet sizing using [`presentationSizing(_:)`](https://developer.apple.com/documentation/swiftui/view/presentationsizing(_:))
-- Standard sheet toolbars using [`toolbar(content:)`](https://developer.apple.com/documentation/swiftui/view/toolbar(content:)).
+- Automatic dismissal with the Escape key and disabling interactive dismissal with [`interactiveDismissDisabled(_:)`](../../SwiftUI/view/interactivedismissdisabled%28_%29.md)
+- Use of [`@Environment(\.dismiss)`](../../SwiftUI/environmentvalues/dismiss.md) to dismiss the sheet
+- Sheet sizing using [`presentationSizing(_:)`](../../SwiftUI/view/presentationsizing%28_%29.md)
+- Standard sheet toolbars using [`toolbar(content:)`](../../SwiftUI/view/toolbar%28content%29.md).
 
-```None
+```
 parentWindow.beginSheet {
     NameADogSheet(dog: observableDog)
 }
@@ -61,7 +62,7 @@ struct NameADogSheet: View {
 }
 ```
 
-The returned [`NSWindow.HostingSheetRepresentation`](nswindow/hostingsheetrepresentation.md) can be ignored unless the sheet needs to be manipulated from an AppKit context, such as changing the root view or programmatically changing the sheet.
+The returned [`NSWindow.HostingSheetRepresentation`](./hostingsheetrepresentation.md) can be ignored unless the sheet needs to be manipulated from an AppKit context, such as changing the root view or programmatically changing the sheet.
 
 ## Parameters
 

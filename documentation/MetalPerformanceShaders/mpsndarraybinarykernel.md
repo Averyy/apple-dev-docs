@@ -1,7 +1,8 @@
 # MPSNDArrayBinaryKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,44 +18,48 @@
 class MPSNDArrayBinaryKernel
 ```
 
+```objc
+@interface MPSNDArrayBinaryKernel : MPSNDArrayMultiaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraybinarykernel/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsndarraybinarykernel/init(device:).md)
+- [init(coder: NSCoder, device: any MTLDevice)](./mpsndarraybinarykernel/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsndarraybinarykernel/init%28device%29.md)
 ### Instance Properties
-- [var primaryDilationRates: MPSNDArraySizes](mpsndarraybinarykernel/primarydilationrates.md)
-- [var primaryEdgeMode: MPSImageEdgeMode](mpsndarraybinarykernel/primaryedgemode.md)
-- [var primaryKernelSizes: MPSNDArraySizes](mpsndarraybinarykernel/primarykernelsizes.md)
-- [var primaryOffsets: MPSNDArrayOffsets](mpsndarraybinarykernel/primaryoffsets.md)
-- [var primaryStrides: MPSNDArrayOffsets](mpsndarraybinarykernel/primarystrides.md)
-- [var secondaryDilationRates: MPSNDArraySizes](mpsndarraybinarykernel/secondarydilationrates.md)
-- [var secondaryEdgeMode: MPSImageEdgeMode](mpsndarraybinarykernel/secondaryedgemode.md)
-- [var secondaryKernelSizes: MPSNDArraySizes](mpsndarraybinarykernel/secondarykernelsizes.md)
-- [var secondaryOffsets: MPSNDArrayOffsets](mpsndarraybinarykernel/secondaryoffsets.md)
-- [var secondaryStrides: MPSNDArrayOffsets](mpsndarraybinarykernel/secondarystrides.md)
+- [var primaryDilationRates: MPSNDArraySizes](./mpsndarraybinarykernel/primarydilationrates.md)
+- [var primaryEdgeMode: MPSImageEdgeMode](./mpsndarraybinarykernel/primaryedgemode.md)
+- [var primaryKernelSizes: MPSNDArraySizes](./mpsndarraybinarykernel/primarykernelsizes.md)
+- [var primaryOffsets: MPSNDArrayOffsets](./mpsndarraybinarykernel/primaryoffsets.md)
+- [var primaryStrides: MPSNDArrayOffsets](./mpsndarraybinarykernel/primarystrides.md)
+- [var secondaryDilationRates: MPSNDArraySizes](./mpsndarraybinarykernel/secondarydilationrates.md)
+- [var secondaryEdgeMode: MPSImageEdgeMode](./mpsndarraybinarykernel/secondaryedgemode.md)
+- [var secondaryKernelSizes: MPSNDArraySizes](./mpsndarraybinarykernel/secondarykernelsizes.md)
+- [var secondaryOffsets: MPSNDArrayOffsets](./mpsndarraybinarykernel/secondaryoffsets.md)
+- [var secondaryStrides: MPSNDArrayOffsets](./mpsndarraybinarykernel/secondarystrides.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray) -> MPSNDArray](mpsndarraybinarykernel/encode(to:primarysourcearray:secondarysourcearray:).md)
-- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, destinationArray: MPSNDArray)](mpsndarraybinarykernel/encode(to:primarysourcearray:secondarysourcearray:destinationarray:).md)
-- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, resultState: MPSState?, destinationArray: MPSNDArray)](mpsndarraybinarykernel/encode(to:primarysourcearray:secondarysourcearray:resultstate:destinationarray:).md)
-- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, resultState: AutoreleasingUnsafeMutablePointer<MPSState?>?, outputStateIsTemporary: Bool) -> MPSNDArray](mpsndarraybinarykernel/encode(to:primarysourcearray:secondarysourcearray:resultstate:outputstateistemporary:).md)
+- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray) -> MPSNDArray](./mpsndarraybinarykernel/encode%28to,primarysourcearray,secondarysourcearray%29.md)
+- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, destinationArray: MPSNDArray)](./mpsndarraybinarykernel/encode%28to,primarysourcearray,secondarysourcearray,destinationarray%29.md)
+- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, resultState: MPSState?, destinationArray: MPSNDArray)](./mpsndarraybinarykernel/encode%28to,primarysourcearray,secondarysourcearray,resultstate,destinationarray%29.md)
+- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, resultState: AutoreleasingUnsafeMutablePointer<MPSState?>?, outputStateIsTemporary: Bool) -> MPSNDArray](./mpsndarraybinarykernel/encode%28to,primarysourcearray,secondarysourcearray,resultstate,outputstateistemporary%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayMultiaryKernel](mpsndarraymultiarykernel.md)
+- [MPSNDArrayMultiaryKernel](./mpsndarraymultiarykernel.md)
 ### Inherited By
-- [MPSNDArrayGather](mpsndarraygather.md)
+- [MPSNDArrayGather](./mpsndarraygather.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

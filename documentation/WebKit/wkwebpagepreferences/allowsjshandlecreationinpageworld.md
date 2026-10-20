@@ -1,7 +1,8 @@
 # allowsJSHandleCreationInPageWorld
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var allowsJSHandleCreationInPageWorld: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL allowsJSHandleCreationInPageWorld;
 ```
 
 #### Discussion

@@ -1,14 +1,15 @@
 # mach_vm_range_recipes_raw_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t *mach_vm_range_recipes_raw_t;
 ```
 

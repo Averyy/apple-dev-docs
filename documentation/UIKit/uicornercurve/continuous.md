@@ -1,7 +1,8 @@
 # UICornerCurve.continuous
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Always uses a continuous corner style.
 
@@ -17,11 +18,16 @@ Always uses a continuous corner style.
 case continuous
 ```
 
+```c
+UICornerCurveContinuous
+```
+
 ## See Also
 
-- [UICornerCurve.automatic](uicornercurve/automatic.md)
+### Choosing a corner style
+- [UICornerCurve.automatic](./automatic.md)
   Selects the corner style automatically.
-- [UICornerCurve.circular](uicornercurve/circular.md)
+- [UICornerCurve.circular](./circular.md)
   Always uses a circular corner style.
 
 

@@ -1,7 +1,8 @@
 # AdSupport
 
 **Framework**: AdSupport  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Provide apps with access to an advertising identifier.
 
@@ -14,16 +15,16 @@ Provide apps with access to an advertising identifier.
 
 #### Overview
 
-Use the AdSupport framework to obtain an advertising identifier. The [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) is an alphanumeric string that’s unique to each device, and which you only use for advertising. On devices running iOS 14.5 and later and iPadOS 14.5 and later, your app must support [`App Tracking Transparency`](https://developer.apple.com/documentation/apptrackingtransparency) and define the purpose string [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) before it can get the [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) property.
+Use the AdSupport framework to obtain an advertising identifier. The [`advertisingIdentifier`](./asidentifiermanager/advertisingidentifier.md) is an alphanumeric string that’s unique to each device, and which you only use for advertising. On devices running iOS 14.5 and later and iPadOS 14.5 and later, your app must support [App Tracking Transparency](../AppTrackingTransparency/AppTrackingTransparency.md) and define the purpose string [`NSUserTrackingUsageDescription`](../BundleResources/information-property-list/nsusertrackingusagedescription.md) before it can get the [`advertisingIdentifier`](./asidentifiermanager/advertisingidentifier.md) property.
 
 ##### Get an Advertising Identifier
 
-Before requesting the advertising identifier for the first time, your app must make a one-time call to doc://com.apple.documentation/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith. That method presents the app-tracking authorization request to the user. The user chooses whether to allow tracking, but can change your app’s authorization at any time in Settings > Privacy > Tracking. You can determine the user’s intent by checking your app’s authorization status with doc://com.apple.documentation/documentation/apptrackingtransparency/attrackingmanager/3547038-trackingauthorizationstatus.
+Before requesting the advertising identifier for the first time, your app must make a one-time call to https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith. That method presents the app-tracking authorization request to the user. The user chooses whether to allow tracking, but can change your app’s authorization at any time in Settings > Privacy > Tracking. You can determine the user’s intent by checking your app’s authorization status with https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547038-trackingauthorizationstatus.
 
 To get the advertising identifier, follow these steps:
 
-1. Use the AdSupport framework to call the [`shared()`](asidentifiermanager/shared().md) class method to retrieve an instance of [`ASIdentifierManager`](asidentifiermanager.md).
-2. Use the [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) property to obtain the UUID.
+1. Use the AdSupport framework to call the [`shared()`](./asidentifiermanager/shared%28%29.md) class method to retrieve an instance of [`ASIdentifierManager`](./asidentifiermanager.md).
+2. Use the [`advertisingIdentifier`](./asidentifiermanager/advertisingidentifier.md) property to obtain the UUID.
 
 The code below shows how to retrieve the advertising identifier.
 
@@ -35,14 +36,14 @@ var adID = sharedASIdentifierManager.advertisingIdentifier
 
 ```
 
-The advertising identifier returns either a unique UUID, or all zeros. For more information on the returned value, see [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md).
+The advertising identifier returns either a unique UUID, or all zeros. For more information on the returned value, see [`advertisingIdentifier`](./asidentifiermanager/advertisingidentifier.md).
 
-For more information about asking users for permission to track, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
+For more information about asking users for permission to track, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/).
 
 ## Topics
 
 ### Essentials
-- [class ASIdentifierManager](asidentifiermanager.md)
+- [class ASIdentifierManager](./asidentifiermanager.md)
   The object that contains the advertising identifier.
 
 

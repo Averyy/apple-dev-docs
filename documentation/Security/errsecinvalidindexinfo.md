@@ -1,7 +1,8 @@
 # errSecInvalidIndexInfo
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The index information is not valid.
 
@@ -18,6 +19,10 @@ The index information is not valid.
 
 ```swift
 var errSecInvalidIndexInfo: OSStatus { get }
+```
+
+```c
+errSecInvalidIndexInfo
 ```
 
 

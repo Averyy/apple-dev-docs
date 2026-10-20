@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text-formatting coordinator for the specified window scene.
 
@@ -18,9 +19,14 @@ Creates a text-formatting coordinator for the specified window scene.
 convenience init(for windowScene: UIWindowScene)
 ```
 
+```objc
++ (instancetype) textFormattingCoordinatorForWindowScene:(UIWindowScene *) windowScene;
+```
+
 ## See Also
 
-- [init(windowScene: UIWindowScene)](uitextformattingcoordinator/init(windowscene:).md)
+### Creating a Text-Formatting Coordinator
+- [init(windowScene: UIWindowScene)](./init%28windowscene%29.md)
   Initializes and returns a new text-formatting coordinator for the specified window scene.
 
 

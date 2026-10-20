@@ -1,7 +1,8 @@
 # ENOMEM
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cannot allocate memory.
 

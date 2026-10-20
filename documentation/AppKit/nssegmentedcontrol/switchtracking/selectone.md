@@ -1,17 +1,22 @@
 # NSSegmentedControl.SwitchTracking.selectOne
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Only one segment in the control can be selected at a time.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case selectOne
+```
+
+```c
+NSSegmentSwitchTrackingSelectOne
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This mode functions as a radio button and is illustrated by the view selection c
 
 ## See Also
 
-- [NSSegmentedControl.SwitchTracking.selectAny](nssegmentedcontrol/switchtracking/selectany.md)
+### Constants
+- [NSSegmentedControl.SwitchTracking.selectAny](./selectany.md)
   One or more segment cells in the control can be selected at a time.
-- [NSSegmentedControl.SwitchTracking.momentary](nssegmentedcontrol/switchtracking/momentary.md)
+- [NSSegmentedControl.SwitchTracking.momentary](./momentary.md)
   A tracking mode that selects a segment when a person clicks within the bounds of the segment.
-- [NSSegmentedControl.SwitchTracking.momentaryAccelerator](nssegmentedcontrol/switchtracking/momentaryaccelerator.md)
+- [NSSegmentedControl.SwitchTracking.momentaryAccelerator](./momentaryaccelerator.md)
   A tracking mode that sends repeating actions as pressure changes on Force Touch systems, stopping when someone releases the segment.
 
 

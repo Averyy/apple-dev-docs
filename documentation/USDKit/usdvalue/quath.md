@@ -1,7 +1,8 @@
 # USDValue.Quath
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A half-precision quaternion.
 
@@ -22,35 +23,35 @@ struct Quath
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/quath/init.md)
+- [init()](./quath/init%28%29.md)
   Creates a zero quaternion.
-- [init(real: Float16, imaginary: USDValue.Vec3h)](usdvalue/quath/init(real:imaginary:).md)
+- [init(real: Float16, imaginary: USDValue.Vec3h)](./quath/init%28real,imaginary%29.md)
   Creates a quaternion from real and imaginary components.
 ### Instance Properties
-- [var imaginary: USDValue.Vec3h](usdvalue/quath/imaginary.md)
+- [var imaginary: USDValue.Vec3h](./quath/imaginary.md)
   The imaginary (vector) component.
-- [var real: Float16](usdvalue/quath/real.md)
+- [var real: Float16](./quath/real.md)
   The real (scalar) component.
 ### Type Properties
-- [static var identity: USDValue.Quath](usdvalue/quath/identity.md)
+- [static var identity: USDValue.Quath](./quath/identity.md)
   The identity quaternion `(real: 1, imaginary: (0, 0, 0))`.
-- [static var zero: USDValue.Quath](usdvalue/quath/zero.md)
+- [static var zero: USDValue.Quath](./quath/zero.md)
   The zero quaternion `(0, 0, 0, 0)`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

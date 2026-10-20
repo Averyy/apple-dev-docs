@@ -1,7 +1,8 @@
 # buildEither(first:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a builder with the first component.
 
@@ -22,11 +23,12 @@ static func buildEither<TrueContent, FalseContent>(first content: TrueContent) -
 
 ## See Also
 
-- [static func buildBlock<T>(T) -> T](languagemodelsession/dynamicprofilebuilder/buildblock(_:).md)
+### Building a dynamic profile
+- [static func buildBlock<T>(T) -> T](./buildblock%28_%29.md)
   Creates a builder with a block.
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent>](languagemodelsession/dynamicprofilebuilder/buildeither(second:).md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent>](./buildeither%28second%29.md)
   Creates a builder with the second component.
-- [static func buildLimitedAvailability(some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile](languagemodelsession/dynamicprofilebuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile](./buildlimitedavailability%28_%29.md)
   Creates a builder with a limited availability dynamic profile.
 
 

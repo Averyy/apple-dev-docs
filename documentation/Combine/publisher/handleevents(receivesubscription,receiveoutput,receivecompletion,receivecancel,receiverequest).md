@@ -1,7 +1,8 @@
 # handleEvents(receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the specified closures when publisher events occur.
 
@@ -26,7 +27,7 @@ A publisher that performs the specified closures when publisher events occur.
 
 #### Discussion
 
-Use [`handleEvents(receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)`](publisher/handleevents(receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:).md) when you want to examine elements as they progress through the stages of the publisher’s lifecycle.
+Use [`handleEvents(receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)`](./handleevents%28receivesubscription,receiveoutput,receivecompletion,receivecancel,receiverequest%29.md) when you want to examine elements as they progress through the stages of the publisher’s lifecycle.
 
 In the example below, a publisher of integers shows the effect of printing debugging information at each stage of the element-processing lifecycle:
 
@@ -65,11 +66,12 @@ cancellable = integers.publisher
 
 ## See Also
 
-- [func breakpoint(receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Self.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)?) -> Publishers.Breakpoint<Self>](publisher/breakpoint(receivesubscription:receiveoutput:receivecompletion:).md)
+### Debugging
+- [func breakpoint(receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Self.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)?) -> Publishers.Breakpoint<Self>](./breakpoint%28receivesubscription,receiveoutput,receivecompletion%29.md)
   Raises a debugger signal when a provided closure needs to stop the process in the debugger.
-- [func breakpointOnError() -> Publishers.Breakpoint<Self>](publisher/breakpointonerror.md)
+- [func breakpointOnError() -> Publishers.Breakpoint<Self>](./breakpointonerror%28%29.md)
   Raises a debugger signal upon receiving a failure.
-- [func print(String, to: (any TextOutputStream)?) -> Publishers.Print<Self>](publisher/print(_:to:).md)
+- [func print(String, to: (any TextOutputStream)?) -> Publishers.Print<Self>](./print%28_,to%29.md)
   Prints log messages for all publishing events.
 
 

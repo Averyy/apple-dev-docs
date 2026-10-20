@@ -1,7 +1,8 @@
 # HPKE.Errors.outOfRangeSequenceNumber
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sequence number for encrypting or decrypting the message is out of range.
 

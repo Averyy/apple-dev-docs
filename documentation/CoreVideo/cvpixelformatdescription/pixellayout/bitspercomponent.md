@@ -1,7 +1,8 @@
 # bitsPerComponent
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logical bit depth of each component of the plane.
 

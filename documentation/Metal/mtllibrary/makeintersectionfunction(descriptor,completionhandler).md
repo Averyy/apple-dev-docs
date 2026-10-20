@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asynchronously creates an object representing a ray-tracing intersection function, using the specified descriptor.
@@ -17,12 +18,21 @@ Asynchronously creates an object representing a ray-tracing intersection functio
 ## Declaration
 
 ```swift
+func makeIntersectionFunction(descriptor: MTLIntersectionFunctionDescriptor, completionHandler: @escaping @Sendable ((any MTLFunction)?, (any Error)?) -> Void)
+```
+
+```swift
 func makeIntersectionFunction(descriptor: MTLIntersectionFunctionDescriptor) async throws -> any MTLFunction
+```
+
+```objc
+- (void) newIntersectionFunctionWithDescriptor:(MTLIntersectionFunctionDescriptor *) descriptor completionHandler:(void (^)(id<MTLFunction>function, NSError *error)) completionHandler;
 ```
 
 ## See Also
 
-- [func makeIntersectionFunction(descriptor: MTLIntersectionFunctionDescriptor) throws -> any MTLFunction](mtllibrary/makeintersectionfunction(descriptor:).md)
+### Creating intersection function instances
+- [func makeIntersectionFunction(descriptor: MTLIntersectionFunctionDescriptor) throws -> any MTLFunction](./makeintersectionfunction%28descriptor%29.md)
   Synchronously creates an object representing a ray-tracing intersection function, using the specified descriptor.
 
 

@@ -1,7 +1,8 @@
 # null
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The null map rectangle.
 
@@ -20,13 +21,18 @@ The null map rectangle.
 static let null: MKMapRect
 ```
 
+```c
+extern const MKMapRect MKMapRectNull;
+```
+
 #### Discussion
 
 You can use this constant when you want to specify an invalid map rectangle.
 
 ## See Also
 
-- [static let world: MKMapRect](mkmaprect/world.md)
+### Getting standard map rectangles
+- [static let world: MKMapRect](./world.md)
   The map rectangle that represents the world in the two-dimensional map projection.
 
 

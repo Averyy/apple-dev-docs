@@ -1,7 +1,8 @@
 # BEWebContentFilter.PermissionDecision
 
 **Framework**: BrowserEngineKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 enum PermissionDecision
 ```
 
+```c
+enum BEWebContentFilterPermissionDecision : NSInteger;
+```
+
 #### Overview
 
 The outcome of a Permission Request to add URL to allow-list
@@ -20,22 +25,22 @@ The outcome of a Permission Request to add URL to allow-list
 ## Topics
 
 ### Enumeration Cases
-- [BEWebContentFilter.PermissionDecision.allowed](bewebcontentfilter/permissiondecision/allowed.md)
-- [BEWebContentFilter.PermissionDecision.denied](bewebcontentfilter/permissiondecision/denied.md)
-- [BEWebContentFilter.PermissionDecision.error](bewebcontentfilter/permissiondecision/error.md)
-- [BEWebContentFilter.PermissionDecision.pending](bewebcontentfilter/permissiondecision/pending.md)
+- [BEWebContentFilter.PermissionDecision.allowed](./permissiondecision/allowed.md)
+- [BEWebContentFilter.PermissionDecision.denied](./permissiondecision/denied.md)
+- [BEWebContentFilter.PermissionDecision.error](./permissiondecision/error.md)
+- [BEWebContentFilter.PermissionDecision.pending](./permissiondecision/pending.md)
 ### Initializers
-- [init?(rawValue: Int)](bewebcontentfilter/permissiondecision/init(rawvalue:).md)
+- [init?(rawValue: Int)](./permissiondecision/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

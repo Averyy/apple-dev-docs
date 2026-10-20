@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of this endpoint to be used for logging and debugging purposes.
 

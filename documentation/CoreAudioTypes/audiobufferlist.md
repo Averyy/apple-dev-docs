@@ -1,7 +1,8 @@
 # AudioBufferList
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that stores a variable-length array of audio buffers.
 
@@ -20,31 +21,36 @@ A structure that stores a variable-length array of audio buffers.
 struct AudioBufferList
 ```
 
+```c
+struct AudioBufferList;
+```
+
 ## Topics
 
 ### Creating a Buffer List
-- [init()](audiobufferlist/init.md)
+- [init()](./audiobufferlist/init%28%29.md)
   Creates an empty audio buffer list.
-- [init(mNumberBuffers: UInt32, mBuffers: AudioBuffer)](audiobufferlist/init(mnumberbuffers:mbuffers:).md)
+- [init(mNumberBuffers: UInt32, mBuffers: AudioBuffer)](./audiobufferlist/init%28mnumberbuffers,mbuffers%29.md)
   Creates an audio buffer list with audio buffers.
 ### Accessing the Data
-- [var mNumberBuffers: UInt32](audiobufferlist/mnumberbuffers.md)
+- [var mNumberBuffers: UInt32](./audiobufferlist/mnumberbuffers.md)
   The number of audio buffers in the list.
-- [var mBuffers: AudioBuffer](audiobufferlist/mbuffers.md)
+- [var mBuffers: AudioBuffer](./audiobufferlist/mbuffers.md)
   A variable-length array of audio buffers.
 ### Type Methods
-- [static func allocate(maximumBuffers: Int) -> UnsafeMutableAudioBufferListPointer](audiobufferlist/allocate(maximumbuffers:).md)
+- [static func allocate(maximumBuffers: Int) -> UnsafeMutableAudioBufferListPointer](./audiobufferlist/allocate%28maximumbuffers%29.md)
   Allocate an `AudioBufferList` with a capacity for the specified number of `AudioBuffer`s.
-- [static func sizeInBytes(maximumBuffers: Int) -> Int](audiobufferlist/sizeinbytes(maximumbuffers:).md)
+- [static func sizeInBytes(maximumBuffers: Int) -> Int](./audiobufferlist/sizeinbytes%28maximumbuffers%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct AudioBuffer](audiobuffer.md)
+### Buffers
+- [struct AudioBuffer](./audiobuffer.md)
   A structure that holds a buffer of audio data.
 
 

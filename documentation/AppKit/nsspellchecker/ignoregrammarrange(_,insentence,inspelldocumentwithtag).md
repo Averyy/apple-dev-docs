@@ -1,7 +1,8 @@
 # ignoreGrammarRange(_:inSentence:inSpellDocumentWithTag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func ignoreGrammarRange(_ grammarRange: NSRange, inSentence sentence: String, inSpellDocumentWithTag tag: Int)
+```
+
+```objc
+- (void) ignoreGrammarRange:(NSRange) grammarRange inSentence:(NSString *) sentence inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
 

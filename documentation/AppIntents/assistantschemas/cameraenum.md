@@ -1,7 +1,8 @@
 # AssistantSchemas.CameraEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for types you use for camera functionality.
 
@@ -23,20 +24,20 @@ protocol CameraEnum : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var captureDevice: some AssistantSchemas.Enum](assistantschemas/cameraenum/capturedevice.md)
+- [var captureDevice: some AssistantSchemas.Enum](./cameraenum/capturedevice.md)
   The device or camera for capturing a photo or video.
-- [var captureDuration: some AssistantSchemas.Enum](assistantschemas/cameraenum/captureduration.md)
+- [var captureDuration: some AssistantSchemas.Enum](./cameraenum/captureduration.md)
   The capture duration for a photo or video.
-- [var captureMode: some AssistantSchemas.Enum](assistantschemas/cameraenum/capturemode.md)
+- [var captureMode: some AssistantSchemas.Enum](./cameraenum/capturemode.md)
   The capture mode for taking a photo or video.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
+- [AssistantSchema.EnumSchema](../assistantschema/enumschema.md)
+- [AssistantSchemas.EnumSchema](./enumschema.md)
 
 
 ---

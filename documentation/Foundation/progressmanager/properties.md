@@ -1,7 +1,8 @@
 # ProgressManager.Properties
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -22,33 +23,33 @@ enum Properties
 ## Topics
 
 ### Instance Properties
-- [var completedByteCount: ProgressManager.Properties.CompletedByteCount.Type](progressmanager/properties/completedbytecount-swift.property.md)
+- [var completedByteCount: ProgressManager.Properties.CompletedByteCount.Type](./properties/completedbytecount-swift.property.md)
   The number of completed bytes.
-- [var completedFileCount: ProgressManager.Properties.CompletedFileCount.Type](progressmanager/properties/completedfilecount-swift.property.md)
+- [var completedFileCount: ProgressManager.Properties.CompletedFileCount.Type](./properties/completedfilecount-swift.property.md)
   The number of completed files.
-- [var estimatedTimeRemaining: ProgressManager.Properties.EstimatedTimeRemaining.Type](progressmanager/properties/estimatedtimeremaining-swift.property.md)
+- [var estimatedTimeRemaining: ProgressManager.Properties.EstimatedTimeRemaining.Type](./properties/estimatedtimeremaining-swift.property.md)
   The amount of time remaining in the processing of files.
-- [var throughput: ProgressManager.Properties.Throughput.Type](progressmanager/properties/throughput-swift.property.md)
+- [var throughput: ProgressManager.Properties.Throughput.Type](./properties/throughput-swift.property.md)
   The throughput, in bytes per second.
-- [var totalByteCount: ProgressManager.Properties.TotalByteCount.Type](progressmanager/properties/totalbytecount-swift.property.md)
+- [var totalByteCount: ProgressManager.Properties.TotalByteCount.Type](./properties/totalbytecount-swift.property.md)
   The total number of bytes.
-- [var totalFileCount: ProgressManager.Properties.TotalFileCount.Type](progressmanager/properties/totalfilecount-swift.property.md)
+- [var totalFileCount: ProgressManager.Properties.TotalFileCount.Type](./properties/totalfilecount-swift.property.md)
   The total number of files.
 ### Enumerations
-- [ProgressManager.Properties.CompletedByteCount](progressmanager/properties/completedbytecount-swift.enum.md)
-- [ProgressManager.Properties.CompletedFileCount](progressmanager/properties/completedfilecount-swift.enum.md)
-- [ProgressManager.Properties.EstimatedTimeRemaining](progressmanager/properties/estimatedtimeremaining-swift.enum.md)
-- [ProgressManager.Properties.Throughput](progressmanager/properties/throughput-swift.enum.md)
-- [ProgressManager.Properties.TotalByteCount](progressmanager/properties/totalbytecount-swift.enum.md)
-- [ProgressManager.Properties.TotalFileCount](progressmanager/properties/totalfilecount-swift.enum.md)
+- [ProgressManager.Properties.CompletedByteCount](./properties/completedbytecount-swift.enum.md)
+- [ProgressManager.Properties.CompletedFileCount](./properties/completedfilecount-swift.enum.md)
+- [ProgressManager.Properties.EstimatedTimeRemaining](./properties/estimatedtimeremaining-swift.enum.md)
+- [ProgressManager.Properties.Throughput](./properties/throughput-swift.enum.md)
+- [ProgressManager.Properties.TotalByteCount](./properties/totalbytecount-swift.enum.md)
+- [ProgressManager.Properties.TotalFileCount](./properties/totalfilecount-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

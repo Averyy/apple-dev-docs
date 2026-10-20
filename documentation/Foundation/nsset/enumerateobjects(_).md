@@ -1,7 +1,8 @@
 # enumerateObjects(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a given block using each object in the set.
 
@@ -20,30 +21,39 @@ Executes a given block using each object in the set.
 func enumerateObjects(_ block: (Any, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateObjectsUsingBlock:(void (^)(ObjectType obj, BOOL *stop)) block;
+```
+
 ## Parameters
 
-- `block`: The block to apply to elements in the set. The block takes two arguments: - **obj**: The element in the set.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/swift/true) within the block.
+- `block`: The block to apply to elements in the set.
+
+  The block takes two arguments:
+
+  - **obj**: The element in the set.
+  - **stop**: A reference to a Boolean value. The block can set the value to [`true`](../../Swift/true.md) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](../../Swift/true.md) within the block.
 
 ## See Also
 
-- [var allObjects: [Any]](nsset/allobjects.md)
+### Accessing Set Members
+- [var allObjects: [Any]](./allobjects.md)
   An array containing the set’s members, or an empty array if the set has no members.
-- [func anyObject() -> Any?](nsset/anyobject.md)
+- [func anyObject() -> Any?](./anyobject%28%29.md)
   Returns one of the objects in the set, or `nil` if the set contains no objects.
-- [func contains(Any) -> Bool](nsset/contains(_:).md)
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the set.
-- [func filtered(using: NSPredicate) -> Set<AnyHashable>](nsset/filtered(using:).md)
+- [func filtered(using: NSPredicate) -> Set<AnyHashable>](./filtered%28using%29.md)
   Evaluates a given predicate against each object in the receiving set and returns a new set containing the objects for which the predicate returns true.
-- [func member(Any) -> Any?](nsset/member(_:).md)
+- [func member(Any) -> Any?](./member%28_%29.md)
   Determines whether a given object is present in the set, and returns that object if it is.
-- [func objectEnumerator() -> NSEnumerator](nsset/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the set.
-- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsset/enumerateobjects(options:using:).md)
+- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28options,using%29.md)
   Executes a given block using each object in the set, using the specified enumeration options.
-- [func objects(passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsset/objects(passingtest:).md)
+- [func objects(passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./objects%28passingtest%29.md)
   Returns a set of objects that pass a test in a given block.
-- [func objects(options: NSEnumerationOptions, passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsset/objects(options:passingtest:).md)
+- [func objects(options: NSEnumerationOptions, passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./objects%28options,passingtest%29.md)
   Returns a set of objects that pass a test in a given block, using the specified enumeration options.
 
 

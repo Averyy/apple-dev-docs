@@ -1,7 +1,8 @@
 # XCSourceEditorCommand
 
 **Framework**: XcodeKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol you implement to handle command invocations in a source editor extension.
 
@@ -14,9 +15,13 @@ The protocol you implement to handle command invocations in a source editor exte
 protocol XCSourceEditorCommand : NSObjectProtocol
 ```
 
+```objc
+@protocol XCSourceEditorCommand <NSObject>
+```
+
 ## Mentions
 
-- [Creating a Source Editor Extension](creating-a-source-editor-extension.md)
+- [Creating a Source Editor Extension](./creating-a-source-editor-extension.md)
 
 #### Overview
 
@@ -25,20 +30,21 @@ A one-to-one mapping between command classes and commands is not required—mult
 ## Topics
 
 ### Defining Editor Commands
-- [struct XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey.md)
+- [struct XCSourceEditorCommandDefinitionKey](./xcsourceeditorcommanddefinitionkey.md)
   A key in the dictionary that defines a source editor command.
 ### Handling Editor Commands
-- [func perform(with: XCSourceEditorCommandInvocation, completionHandler: ((any Error)?) -> Void)](xcsourceeditorcommand/perform(with:completionhandler:).md)
+- [func perform(with: XCSourceEditorCommandInvocation, completionHandler: ((any Error)?) -> Void)](./xcsourceeditorcommand/perform%28with,completionhandler%29.md)
   Performs the action associated with the command using the information in an invocation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCSourceEditorCommandInvocation](xcsourceeditorcommandinvocation.md)
+### Editor Commands
+- [class XCSourceEditorCommandInvocation](./xcsourceeditorcommandinvocation.md)
   An object that identifies the command issued to your extension and provides the contents of the active source editor.
 
 

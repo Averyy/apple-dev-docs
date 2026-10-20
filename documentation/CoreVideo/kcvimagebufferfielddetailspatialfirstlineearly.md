@@ -1,7 +1,8 @@
 # kCVImageBufferFieldDetailSpatialFirstLineEarly
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to the spatial first line early detail field of the image buffer.
 
@@ -20,17 +21,22 @@ A key to the spatial first line early detail field of the image buffer.
 let kCVImageBufferFieldDetailSpatialFirstLineEarly: CFString
 ```
 
+```c
+extern CFStringRef const kCVImageBufferFieldDetailSpatialFirstLineEarly;
+```
+
 #### Discussion
 
-The spatial first line early detail field value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). The image buffer contains interleaved fields. The first line of image data corresponds to the first top, odd-numbered, field.
+The spatial first line early detail field value is of type [`CFString`](../CoreFoundation/cfstring.md). The image buffer contains interleaved fields. The first line of image data corresponds to the first top, odd-numbered, field.
 
 ## See Also
 
-- [let kCVImageBufferFieldDetailTemporalTopFirst: CFString](kcvimagebufferfielddetailtemporaltopfirst.md)
+### Constants
+- [let kCVImageBufferFieldDetailTemporalTopFirst: CFString](./kcvimagebufferfielddetailtemporaltopfirst.md)
   A key to the temporal top first detail field of the image buffer.
-- [let kCVImageBufferFieldDetailTemporalBottomFirst: CFString](kcvimagebufferfielddetailtemporalbottomfirst.md)
+- [let kCVImageBufferFieldDetailTemporalBottomFirst: CFString](./kcvimagebufferfielddetailtemporalbottomfirst.md)
   A key to the temporal bottom first detail field of the image buffer.
-- [let kCVImageBufferFieldDetailSpatialFirstLineLate: CFString](kcvimagebufferfielddetailspatialfirstlinelate.md)
+- [let kCVImageBufferFieldDetailSpatialFirstLineLate: CFString](./kcvimagebufferfielddetailspatialfirstlinelate.md)
   A key to the spatial first line late detail field of the image buffer.
 
 

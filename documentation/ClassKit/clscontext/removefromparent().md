@@ -1,7 +1,8 @@
 # removeFromParent()
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the context from its parent.
 
@@ -18,19 +19,24 @@ Removes the context from its parent.
 func removeFromParent()
 ```
 
+```objc
+- (void) removeFromParent;
+```
+
 #### Discussion
 
-If you remove a context from its parent and don’t add it as the child of another context before you call [`save(completion:)`](clsdatastore/save(completion:).md), then the framework deletes the context entirely.
+If you remove a context from its parent and don’t add it as the child of another context before you call [`save(completion:)`](../clsdatastore/save%28completion%29.md), then the framework deletes the context entirely.
 
 ## See Also
 
-- [var identifierPath: [String]](clscontext/identifierpath.md)
+### Managing context hierarchy
+- [var identifierPath: [String]](./identifierpath.md)
   The identifier path that locates the context within the data store’s context hierarchy.
-- [var parent: CLSContext?](clscontext/parent.md)
+- [var parent: CLSContext?](./parent.md)
   The direct ancestor of this context.
-- [func addChildContext(CLSContext)](clscontext/addchildcontext(_:).md)
+- [func addChildContext(CLSContext)](./addchildcontext%28_%29.md)
   Adds the specifed context as a child of the context receiving the method call.
-- [func descendant(matchingIdentifierPath: [String], completion: (CLSContext?, (any Error)?) -> Void)](clscontext/descendant(matchingidentifierpath:completion:).md)
+- [func descendant(matchingIdentifierPath: [String], completion: (CLSContext?, (any Error)?) -> Void)](./descendant%28matchingidentifierpath,completion%29.md)
   Finds the context with the given identifier path relative to this context.
 
 

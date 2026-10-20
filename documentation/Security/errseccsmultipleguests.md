@@ -1,7 +1,8 @@
 # errSecCSMultipleGuests
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing host has more than one block of guest code with this attribute value.
 
@@ -13,6 +14,10 @@ Code signing host has more than one block of guest code with this attribute valu
 
 ```swift
 var errSecCSMultipleGuests: OSStatus { get }
+```
+
+```c
+errSecCSMultipleGuests
 ```
 
 

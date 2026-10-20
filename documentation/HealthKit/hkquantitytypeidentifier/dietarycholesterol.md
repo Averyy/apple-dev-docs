@@ -1,7 +1,8 @@
 # dietaryCholesterol
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the amount of cholesterol consumed.
 
@@ -19,35 +20,41 @@ A quantity sample type that measures the amount of cholesterol consumed.
 static let dietaryCholesterol: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryCholesterol;
+```
+
 #### Discussion
 
-These samples use mass units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
-- [static let dietaryEnergyConsumed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryenergyconsumed.md)
+### Macronutrients
+- [static let dietaryEnergyConsumed: HKQuantityTypeIdentifier](./dietaryenergyconsumed.md)
   A quantity sample type that measures the amount of energy consumed.
-- [static let dietaryCarbohydrates: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarycarbohydrates.md)
+- [static let dietaryCarbohydrates: HKQuantityTypeIdentifier](./dietarycarbohydrates.md)
   A quantity sample type that measures the amount of carbohydrates consumed.
-- [static let dietaryFiber: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryfiber.md)
+- [static let dietaryFiber: HKQuantityTypeIdentifier](./dietaryfiber.md)
   A quantity sample type that measures the amount of fiber consumed.
-- [static let dietarySugar: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarysugar.md)
+- [static let dietarySugar: HKQuantityTypeIdentifier](./dietarysugar.md)
   A quantity sample type that measures the amount of sugar consumed.
-- [static let dietaryFatTotal: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryfattotal.md)
+- [static let dietaryFatTotal: HKQuantityTypeIdentifier](./dietaryfattotal.md)
   A quantity sample type that measures the total amount of fat consumed.
-- [static let dietaryFatMonounsaturated: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryfatmonounsaturated.md)
+- [static let dietaryFatMonounsaturated: HKQuantityTypeIdentifier](./dietaryfatmonounsaturated.md)
   A quantity sample type that measures the amount of monounsaturated fat consumed.
-- [static let dietaryFatPolyunsaturated: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryfatpolyunsaturated.md)
+- [static let dietaryFatPolyunsaturated: HKQuantityTypeIdentifier](./dietaryfatpolyunsaturated.md)
   A quantity sample type that measures the amount of polyunsaturated fat consumed.
-- [static let dietaryFatSaturated: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryfatsaturated.md)
+- [static let dietaryFatSaturated: HKQuantityTypeIdentifier](./dietaryfatsaturated.md)
   A quantity sample type that measures the amount of saturated fat consumed.
-- [static let dietaryProtein: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryprotein.md)
+- [static let dietaryProtein: HKQuantityTypeIdentifier](./dietaryprotein.md)
   A quantity sample type that measures the amount of protein consumed.
 
 

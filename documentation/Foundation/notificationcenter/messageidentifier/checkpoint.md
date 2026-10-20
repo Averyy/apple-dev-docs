@@ -1,7 +1,8 @@
 # checkpoint
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about an undo manager reaching a checkpoint.
 
@@ -20,25 +21,28 @@ An identifier for a message about an undo manager reaching a checkpoint.
 static var checkpoint: NotificationCenter.BaseMessageIdentifier<UndoManager.CheckpointMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UndoManager.CheckpointMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UndoManager.CheckpointMessage`](undomanager/checkpointmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UndoManager.CheckpointMessage`](../../undomanager/checkpointmessage.md).
 
 ## See Also
 
-- [static var willUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.WillUndoChangeMessage>](notificationcenter/messageidentifier/willundochange.md)
+### Identifying undo manager messages
+- [static var willUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.WillUndoChangeMessage>](./willundochange.md)
   An identifier for a message about an undo manager preparing to perform an undo.
-- [static var didUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.DidUndoChangeMessage>](notificationcenter/messageidentifier/didundochange.md)
+- [static var didUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.DidUndoChangeMessage>](./didundochange.md)
   An identifier for a message about an undo manager having performed an undo.
-- [static var willRedoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.WillRedoChangeMessage>](notificationcenter/messageidentifier/willredochange.md)
+- [static var willRedoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.WillRedoChangeMessage>](./willredochange.md)
   An identifier for a message about an undo manager preparing to perform a redo.
-- [static var didRedoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.DidRedoChangeMessage>](notificationcenter/messageidentifier/didredochange.md)
+- [static var didRedoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.DidRedoChangeMessage>](./didredochange.md)
   An identifier for a message about an undo manager having performed a redo.
-- [static var didOpenUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidOpenUndoGroupMessage>](notificationcenter/messageidentifier/didopenundogroup.md)
+- [static var didOpenUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidOpenUndoGroupMessage>](./didopenundogroup.md)
   An identifier for a message about an undo manager having opened an undo group.
-- [static var willCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.WillCloseUndoGroupMessage>](notificationcenter/messageidentifier/willcloseundogroup.md)
+- [static var willCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.WillCloseUndoGroupMessage>](./willcloseundogroup.md)
   An identifier for a message about an undo manager preparing to close an undo group.
-- [static var didCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidCloseUndoGroupMessage>](notificationcenter/messageidentifier/didcloseundogroup.md)
+- [static var didCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidCloseUndoGroupMessage>](./didcloseundogroup.md)
   An identifier for a message about an undo manager having closed an undo group.
 
 

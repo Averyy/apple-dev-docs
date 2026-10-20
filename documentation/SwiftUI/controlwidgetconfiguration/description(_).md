@@ -1,7 +1,8 @@
 # description(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the description shown for the control when a user adds or edits it, using the specified string.
 

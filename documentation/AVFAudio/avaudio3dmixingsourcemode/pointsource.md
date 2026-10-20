@@ -1,7 +1,8 @@
 # AVAudio3DMixingSourceMode.pointSource
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 All channels of the bus render as a single source at the location of the source node.
 
@@ -19,13 +20,18 @@ All channels of the bus render as a single source at the location of the source 
 case pointSource
 ```
 
+```c
+AVAudio3DMixingSourceModePointSource
+```
+
 ## See Also
 
-- [AVAudio3DMixingSourceMode.spatializeIfMono](avaudio3dmixingsourcemode/spatializeifmono.md)
+### Choosing a source mode
+- [AVAudio3DMixingSourceMode.spatializeIfMono](./spatializeifmono.md)
   A mono input bus that renders as a point source at the location of the source node.
-- [AVAudio3DMixingSourceMode.bypass](avaudio3dmixingsourcemode/bypass.md)
+- [AVAudio3DMixingSourceMode.bypass](./bypass.md)
   A mode that does no spatial rendering.
-- [AVAudio3DMixingSourceMode.ambienceBed](avaudio3dmixingsourcemode/ambiencebed.md)
+- [AVAudio3DMixingSourceMode.ambienceBed](./ambiencebed.md)
   The input channels spread around the listener as far-field sources that anchor to global space.
 
 

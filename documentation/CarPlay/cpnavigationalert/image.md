@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image displayed in the navigation alert.
 
@@ -17,13 +18,18 @@ An image displayed in the navigation alert.
 var image: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * image;
+```
+
 #### Discussion
 
 The navigation alert doesn’t support animated images. If `image` references an animated image, the alert displays first image in the animation sequence.
 
 ## See Also
 
-- [var imageSet: CPImageSet?](cpnavigationalert/imageset.md)
+### Getting the Alert Image
+- [var imageSet: CPImageSet?](./imageset.md)
   An image set displayed in the navigation alert.
 
 

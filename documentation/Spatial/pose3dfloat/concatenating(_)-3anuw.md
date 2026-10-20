@@ -1,7 +1,8 @@
 # concatenating(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a transform that’s constructed by concatenating two a pose and a scaled pose.
 

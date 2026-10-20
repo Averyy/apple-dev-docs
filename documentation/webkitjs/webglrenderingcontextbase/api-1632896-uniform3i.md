@@ -1,7 +1,8 @@
 # uniform3i
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void uniform3i(
     WebGLUniformLocation? location, 
     GLint x, 

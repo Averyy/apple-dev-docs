@@ -1,21 +1,22 @@
 # GameCenterDetail.Relationships.ActivityReleases
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API - Deprecated
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetail.Relationships.ActivityReleases
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterDetail.Relationships.ActivityReleases.Data](gamecenterdetail/relationships-data.dictionary/activityreleases-data.dictionary/data-data.dictionary.md)
+- [object GameCenterDetail.Relationships.ActivityReleases.Data](./activityreleases-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

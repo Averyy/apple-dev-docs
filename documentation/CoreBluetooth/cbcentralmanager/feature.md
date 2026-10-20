@@ -1,7 +1,8 @@
 # CBCentralManager.Feature
 
 **Framework**: Core Bluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An option set of device-specific features.
 
@@ -20,32 +21,37 @@ An option set of device-specific features.
 struct Feature
 ```
 
+```c
+enum CBCentralManagerFeature : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a Central Manager Feature Instance
-- [init(rawValue: UInt)](cbcentralmanager/feature/init(rawvalue:).md)
+- [init(rawValue: UInt)](./feature/init%28rawvalue%29.md)
   Creates a central manager feature instance.
 ### Extended Scan Features
-- [static var extendedScanAndConnect: CBCentralManager.Feature](cbcentralmanager/feature/extendedscanandconnect.md)
+- [static var extendedScanAndConnect: CBCentralManager.Feature](./feature/extendedscanandconnect.md)
   The hardware supports extended scans and enhanced connection creation.
 ### Type Properties
-- [static var channelSounding: CBCentralManager.Feature](cbcentralmanager/feature/channelsounding.md)
+- [static var channelSounding: CBCentralManager.Feature](./feature/channelsounding.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [class func supports(CBCentralManager.Feature) -> Bool](cbcentralmanager/supports(_:).md)
+### Inspecting Feature Support
+- [class func supports(CBCentralManager.Feature) -> Bool](./supports%28_%29.md)
   Returns a Boolean that indicates whether the device supports a specific set of features.
 
 

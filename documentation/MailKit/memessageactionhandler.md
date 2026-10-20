@@ -1,7 +1,8 @@
 # MEMessageActionHandler
 
 **Framework**: MailKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that performs actions on messages as the system downloads them.
 
@@ -14,11 +15,15 @@ An object that performs actions on messages as the system downloads them.
 protocol MEMessageActionHandler : NSObjectProtocol
 ```
 
+```objc
+@protocol MEMessageActionHandler <NSObject>
+```
+
 #### Overview
 
-As MailKit downloads messages, it invokes the [`decideAction(for:completionHandler:)`](memessageactionhandler/decideaction(for:completionhandler:).md) method on your handler. You indicate the action to take for each message, such as marking it as read or unread, flagging it, or archiving it.
+As MailKit downloads messages, it invokes the [`decideAction(for:completionHandler:)`](./memessageactionhandler/decideaction%28for,completionhandler%29.md) method on your handler. You indicate the action to take for each message, such as marking it as read or unread, flagging it, or archiving it.
 
-To indicate that your extension contains a message action handler, add `MEMessageActionHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities) array in the extension’s `Info.plist` file:
+To indicate that your extension contains a message action handler, add `MEMessageActionHandler` to the [`MEExtensionCapabilities`](../BundleResources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities.md) array in the extension’s `Info.plist` file:
 
 ```plist
 <key>NSExtensionAttributes</key>
@@ -33,21 +38,21 @@ To indicate that your extension contains a message action handler, add `MEMessag
 ## Topics
 
 ### Performing Actions on Messages
-- [func decideAction(for: MEMessage, completionHandler: (MEMessageActionDecision?) -> Void)](memessageactionhandler/decideaction(for:completionhandler:).md)
+- [func decideAction(for: MEMessage, completionHandler: (MEMessageActionDecision?) -> Void)](./memessageactionhandler/decideaction%28for,completionhandler%29.md)
   Determines the action that the system takes when it downloads a message.
-- [class MEMessageAction](memessageaction.md)
+- [class MEMessageAction](./memessageaction.md)
   An action the system performs on a message, such as setting a color or archiving it.
-- [class MEMessageActionDecision](memessageactiondecision.md)
+- [class MEMessageActionDecision](./memessageactiondecision.md)
   The action that the system performs on a message, or a request to ask the action handler again later when the message content is available.
-- [MEMessageAction.MessageColor](memessageaction/messagecolor.md)
+- [MEMessageAction.MessageColor](./memessageaction/messagecolor.md)
   A color that the system uses to display a message in the message list.
 ### Instance Properties
-- [var requiredHeaders: [String]](memessageactionhandler/requiredheaders.md)
+- [var requiredHeaders: [String]](./memessageactionhandler/requiredheaders.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,15 +1,16 @@
 # kAudioUnitProperty_ScheduledFileRegion
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kAudioUnitProperty_ScheduledFileRegion: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_ScheduledFileRegion
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_ScheduledFileBufferSizeFrames: AudioUnitPropertyID](kaudiounitproperty_scheduledfilebuffersizeframes.md)
-- [var kAudioUnitProperty_ScheduledFileIDs: AudioUnitPropertyID](kaudiounitproperty_scheduledfileids.md)
-- [var kAudioUnitProperty_ScheduledFileNumberBuffers: AudioUnitPropertyID](kaudiounitproperty_scheduledfilenumberbuffers.md)
-- [var kAudioUnitProperty_ScheduledFilePrime: AudioUnitPropertyID](kaudiounitproperty_scheduledfileprime.md)
+### Constants
+- [var kAudioUnitProperty_ScheduledFileBufferSizeFrames: AudioUnitPropertyID](./kaudiounitproperty_scheduledfilebuffersizeframes.md)
+- [var kAudioUnitProperty_ScheduledFileIDs: AudioUnitPropertyID](./kaudiounitproperty_scheduledfileids.md)
+- [var kAudioUnitProperty_ScheduledFileNumberBuffers: AudioUnitPropertyID](./kaudiounitproperty_scheduledfilenumberbuffers.md)
+- [var kAudioUnitProperty_ScheduledFilePrime: AudioUnitPropertyID](./kaudiounitproperty_scheduledfileprime.md)
 
 
 ---

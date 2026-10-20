@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor point that the thumbstick’s offset is relative to.
 
@@ -16,13 +17,18 @@ The anchor point that the thumbstick’s offset is relative to.
 var anchor: TCControlLayoutAnchor { get set }
 ```
 
+```objc
+@property (nonatomic, assign) TCControlLayoutAnchor anchor;
+```
+
 ## See Also
 
-- [enum TCControlLayoutAnchor](tccontrollayoutanchor.md)
+### Accessing the anchor
+- [enum TCControlLayoutAnchor](../tccontrollayoutanchor.md)
   Defines the anchor point for a control.
-- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](tcthumbstickdescriptor/anchorcoordinatesystem.md)
+- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](./anchorcoordinatesystem.md)
   The coordinate system for the control’s anchor point.
-- [enum TCControlLayoutAnchorCoordinateSystem](tccontrollayoutanchorcoordinatesystem.md)
+- [enum TCControlLayoutAnchorCoordinateSystem](../tccontrollayoutanchorcoordinatesystem.md)
   Defines the coodinate system for an anchor point.
 
 

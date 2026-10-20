@@ -1,7 +1,8 @@
 # Publishers.ReplaceError.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,9 +27,10 @@ This publisher never fails.
 
 ## See Also
 
-- [Publishers.ReplaceError.Output](publishers/replaceerror/output-swift.typealias.md)
+### Declaring supporting types
+- [Publishers.ReplaceError.Output](./output-swift.typealias.md)
   The kind of values published by this publisher.
-- [Publishers.ReplaceError.Output](publishers/replaceerror/output-swift.typealias.md)
+- [Publishers.ReplaceError.Output](./output-swift.typealias.md)
   The kind of values published by this publisher.
 
 

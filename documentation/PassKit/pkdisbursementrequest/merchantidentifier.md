@@ -1,7 +1,8 @@
 # merchantIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the merchant.
 
@@ -18,15 +19,20 @@ A string that identifies the merchant.
 var merchantIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * merchantIdentifier;
+```
+
 #### Discussion
 
-This string needs to match one of the merchant IDs you registered with the Developer Portal or in Xcode, which the [`Merchant IDs Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.in-app-payments) specifies in the app’s entitlements. For more information on adding merchant IDs, see [`Configure Apple Pay (iOS, watchOS)`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deva43983eb7?sub=dev171483d6e).
+This string needs to match one of the merchant IDs you registered with the Developer Portal or in Xcode, which the [`Merchant IDs Entitlement`](../../BundleResources/entitlements/com.apple.developer.in-app-payments.md) specifies in the app’s entitlements. For more information on adding merchant IDs, see [Configure Apple Pay (iOS, watchOS)](https://help.apple.com/xcode/mac/current/#/deva43983eb7?sub=dev171483d6e).
 
 ## See Also
 
-- [var merchantCapabilities: PKMerchantCapability](pkdisbursementrequest/merchantcapabilities.md)
+### Setting the merchant information
+- [var merchantCapabilities: PKMerchantCapability](./merchantcapabilities.md)
   A value that represents the payment-processing capabilities of the merchant.
-- [var supportedNetworks: [PKPaymentNetwork]](pkdisbursementrequest/supportednetworks.md)
+- [var supportedNetworks: [PKPaymentNetwork]](./supportednetworks.md)
   An array of payment networks the merchant supports.
 
 

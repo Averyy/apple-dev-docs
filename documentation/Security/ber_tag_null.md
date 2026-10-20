@@ -1,7 +1,8 @@
 # BER_TAG_NULL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var BER_TAG_NULL: Int32 { get }
+```
+
+```c
+#define BER_TAG_NULL
 ```
 
 

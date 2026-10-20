@@ -1,7 +1,8 @@
 # transformedValueClass()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the class of the value returned by the receiver for a forward transformation.
 
@@ -20,6 +21,10 @@ Returns the class of the value returned by the receiver for a forward transforma
 class func transformedValueClass() -> AnyClass
 ```
 
+```objc
++ (Class) transformedValueClass;
+```
+
 #### Return Value
 
 The class of the value returned by the receiver for a forward transformation.
@@ -30,7 +35,8 @@ A subclass should override this method to return the appropriate class.
 
 ## See Also
 
-- [class func allowsReverseTransformation() -> Bool](valuetransformer/allowsreversetransformation.md)
+### Getting Information About a Transformer
+- [class func allowsReverseTransformation() -> Bool](./allowsreversetransformation%28%29.md)
   Returns a Boolean value that indicates whether the receiver can reverse a transformation.
 
 

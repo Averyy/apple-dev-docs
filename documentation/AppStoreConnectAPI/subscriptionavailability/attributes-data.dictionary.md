@@ -1,7 +1,8 @@
 # SubscriptionAvailability.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription availability resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription availability resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAvailability.Attributes
 ```
 
@@ -20,7 +21,8 @@ object SubscriptionAvailability.Attributes
 
 ## See Also
 
-- [object SubscriptionAvailability.Relationships](subscriptionavailability/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionAvailability.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

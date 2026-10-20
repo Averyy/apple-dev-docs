@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom texture from a texture resource.
 
@@ -18,13 +19,20 @@ Creates a custom texture from a texture resource.
 init(_ resource: TextureResource)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ texture: MaterialParameters.Texture)
+```
+
 ## Parameters
 
 - `resource`: The texture resource.
 
 ## See Also
 
-- [init(MaterialParameters.Texture)](custommaterial/custommaterialtexture/init(_:)-71hfh.md)
+### Creating a custom texture
+- [init(MaterialParameters.Texture)](./init%28_%29-71hfh.md)
   Creates a custom texture by copying values from a material parameters texture.
 
 

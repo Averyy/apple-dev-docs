@@ -1,7 +1,8 @@
 # errSecUnknownFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The item you are trying to import has an unknown format.
 
@@ -18,6 +19,10 @@ The item you are trying to import has an unknown format.
 
 ```swift
 var errSecUnknownFormat: OSStatus { get }
+```
+
+```c
+errSecUnknownFormat
 ```
 
 

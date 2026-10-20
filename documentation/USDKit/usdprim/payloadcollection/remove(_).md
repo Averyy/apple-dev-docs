@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specific payload arc from the prim.
 
@@ -21,7 +22,7 @@ func remove(_ payload: USDPrim.Payload) throws
 
 #### Discussion
 
-> **Note**: An error if the payload cannot be removed.
+> **Throws**: An error if the payload cannot be removed.
 
 ## Parameters
 

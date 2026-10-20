@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve
 
 **Framework**: ColorSync  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alternate gain curve that targets a specific display headroom level.
 
@@ -23,20 +24,20 @@ struct AlternateCurve
 ## Topics
 
 ### Structures
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints](./alternatecurve/controlpoints-swift.struct.md)
   The spline control points that define a gain curve.
 ### Initializers
-- [init(headroomStops: Float, componentMix: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix, controlPoints: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints) throws](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init(headroomstops:componentmix:controlpoints:).md)
+- [init(headroomStops: Float, componentMix: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix, controlPoints: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints) throws](./alternatecurve/init%28headroomstops,componentmix,controlpoints%29.md)
   Creates an alternate gain curve.
 ### Instance Properties
-- [var componentMix: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.property.md)
+- [var componentMix: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix](./alternatecurve/componentmix-swift.property.md)
   How the framework derives the scalar driving signal from each RGB pixel.
-- [var controlPoints: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.property.md)
+- [var controlPoints: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints](./alternatecurve/controlpoints-swift.property.md)
   Spline control points defining a gain curve.
-- [var headroomStops: Float](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/headroomstops.md)
+- [var headroomStops: Float](./alternatecurve/headroomstops.md)
   Alternate headroom in stops above reference white.
 ### Enumerations
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix](./alternatecurve/componentmix-swift.enum.md)
   How the framework derives the scalar driving signal for a gain curve from an RGB pixel.
 
 

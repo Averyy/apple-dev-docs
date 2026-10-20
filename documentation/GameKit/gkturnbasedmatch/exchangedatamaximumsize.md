@@ -1,7 +1,8 @@
 # exchangeDataMaximumSize
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of the exchange data.
 
@@ -20,21 +21,34 @@ The maximum size of the exchange data.
 var exchangeDataMaximumSize: Int { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) NSUInteger exchangeDataMaximumSize;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSUInteger exchangeDataMaximumSize;
+```
+
 ## See Also
 
-- [func sendExchange(to: [GKTurnBasedParticipant], data: Data, localizableMessageKey: String, arguments: [String], timeout: TimeInterval, completionHandler: ((GKTurnBasedExchange?, (any Error)?) -> Void)?)](gkturnbasedmatch/sendexchange(to:data:localizablemessagekey:arguments:timeout:completionhandler:).md)
+### Exchanging Data Between Participants
+- [func sendExchange(to: [GKTurnBasedParticipant], data: Data, localizableMessageKey: String, arguments: [String], timeout: TimeInterval, completionHandler: ((GKTurnBasedExchange?, (any Error)?) -> Void)?)](./sendexchange%28to,data,localizablemessagekey,arguments,timeout,completionhandler%29.md)
   Sends an exchange request that contains your game data to one or more participants.
-- [Exchange Timeouts](exchange-timeouts.md)
+- [Exchange Timeouts](../exchange-timeouts.md)
   The amount of time that passes before an exchange times out.
-- [var exchangeMaxInitiatedExchangesPerPlayer: Int](gkturnbasedmatch/exchangemaxinitiatedexchangesperplayer.md)
+- [var exchangeMaxInitiatedExchangesPerPlayer: Int](./exchangemaxinitiatedexchangesperplayer.md)
   The maximum number of exchanges the local player can initiate.
-- [var activeExchanges: [GKTurnBasedExchange]?](gkturnbasedmatch/activeexchanges.md)
+- [var activeExchanges: [GKTurnBasedExchange]?](./activeexchanges.md)
   The exchanges that the local player needs to accept or reject.
-- [var completedExchanges: [GKTurnBasedExchange]?](gkturnbasedmatch/completedexchanges.md)
+- [var completedExchanges: [GKTurnBasedExchange]?](./completedexchanges.md)
   The exchange requests that all recipients replied to and the current participant needs to save.
-- [var exchanges: [GKTurnBasedExchange]?](gkturnbasedmatch/exchanges.md)
+- [var exchanges: [GKTurnBasedExchange]?](./exchanges.md)
   The exchange requests that are active or complete.
-- [func saveMergedMatch(Data, withResolvedExchanges: [GKTurnBasedExchange], completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/savemergedmatch(_:withresolvedexchanges:completionhandler:).md)
+- [func saveMergedMatch(Data, withResolvedExchanges: [GKTurnBasedExchange], completionHandler: (((any Error)?) -> Void)?)](./savemergedmatch%28_,withresolvedexchanges,completionhandler%29.md)
   Saves match data for completed exchanges without ending the turn.
 
 

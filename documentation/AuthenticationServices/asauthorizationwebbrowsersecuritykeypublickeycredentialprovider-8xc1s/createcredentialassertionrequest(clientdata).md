@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a credential assertion request for authenticating to the relying party.
@@ -24,7 +25,8 @@ func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientDat
 
 ## See Also
 
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialregistrationrequest(clientdata:displayname:name:userid:).md)
+### Creating credential assertion requests
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28clientdata,displayname,name,userid%29.md)
   Creates a credential registration request for registering a new password with the relying party.
 
 

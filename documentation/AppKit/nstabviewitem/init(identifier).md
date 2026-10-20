@@ -1,17 +1,22 @@
 # init(identifier:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Performs default initialization for the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(identifier: Any?)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(id) identifier;
 ```
 
 #### Discussion
@@ -20,8 +25,9 @@ Sets the receiver’s identifier object to `identifier`, if it is not `nil`. Use
 
 ## See Also
 
-- [Tab View Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TabView/TabView.html#//apple_ref/doc/uid/10000074i)
-- [var identifier: Any?](nstabviewitem/identifier.md)
+### Related Documentation
+- [Tab View Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TabView/TabView.html#//apple_ref/doc/uid/10000074i)
+- [var identifier: Any?](./identifier.md)
   Sets the receiver’s optional identifier object to `identifier`.
 
 

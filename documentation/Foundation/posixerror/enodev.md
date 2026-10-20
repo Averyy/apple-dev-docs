@@ -1,7 +1,8 @@
 # ENODEV
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation not supported by device.
 

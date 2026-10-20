@@ -1,7 +1,8 @@
 # kVTHeroEye_Right
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,9 +17,14 @@
 let kVTHeroEye_Right: CFString
 ```
 
+```c
+extern CFStringRef const kVTHeroEye_Right;
+```
+
 ## See Also
 
-- [let kVTHeroEye_Left: CFString](kvtheroeye_left.md)
+### Hero Eye Values
+- [let kVTHeroEye_Left: CFString](./kvtheroeye_left.md)
 
 
 ---

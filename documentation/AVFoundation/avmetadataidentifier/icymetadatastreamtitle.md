@@ -1,7 +1,8 @@
 # icyMetadataStreamTitle
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier that represents the title of a stream.
 
@@ -20,9 +21,14 @@ An identifier that represents the title of a stream.
 static let icyMetadataStreamTitle: AVMetadataIdentifier
 ```
 
+```c
+extern AVMetadataIdentifier const AVMetadataIdentifierIcyMetadataStreamTitle;
+```
+
 ## See Also
 
-- [static let icyMetadataStreamURL: AVMetadataIdentifier](avmetadataidentifier/icymetadatastreamurl.md)
+### ICY metadata identifiers
+- [static let icyMetadataStreamURL: AVMetadataIdentifier](./icymetadatastreamurl.md)
   An identifier that represents the web address of a stream.
 
 

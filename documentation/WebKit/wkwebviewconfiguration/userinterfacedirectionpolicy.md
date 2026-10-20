@@ -1,7 +1,8 @@
 # userInterfaceDirectionPolicy
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directionality of user interface elements.
 
@@ -14,13 +15,18 @@ The directionality of user interface elements.
 var userInterfaceDirectionPolicy: WKUserInterfaceDirectionPolicy { get set }
 ```
 
+```objc
+@property (nonatomic) WKUserInterfaceDirectionPolicy userInterfaceDirectionPolicy;
+```
+
 #### Discussion
 
-The default value is [`WKUserInterfaceDirectionPolicy.content`](wkuserinterfacedirectionpolicy/content.md). For other possible values, see [`WKUserInterfaceDirectionPolicy`](wkuserinterfacedirectionpolicy.md).
+The default value is [`WKUserInterfaceDirectionPolicy.content`](../wkuserinterfacedirectionpolicy/content.md). For other possible values, see [`WKUserInterfaceDirectionPolicy`](../wkuserinterfacedirectionpolicy.md).
 
 ## See Also
 
-- [enum WKUserInterfaceDirectionPolicy](wkuserinterfacedirectionpolicy.md)
+### Selecting user interface directionality
+- [enum WKUserInterfaceDirectionPolicy](../wkuserinterfacedirectionpolicy.md)
   The policy that determines the directionality of user interface elements in a web view.
 
 

@@ -1,7 +1,8 @@
 # darkContentImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image the system displays when the user interface style is dark.
 
@@ -16,9 +17,14 @@ The image the system displays when the user interface style is dark.
 var darkContentImage: UIImage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIImage * darkContentImage;
+```
+
 ## See Also
 
-- [var lightContentImage: UIImage](cpimageset/lightcontentimage.md)
+### Getting Content Images
+- [var lightContentImage: UIImage](./lightcontentimage.md)
   The image the system displays when the user interface style is light.
 
 

@@ -1,7 +1,8 @@
 # signature(for:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the data you provide over the P-384 elliptic curve, using SHA-384 as the hash function.
 
@@ -30,9 +31,10 @@ The signature corresponding to the data. The signing algorithm employs randomiza
 
 ## See Also
 
-- [func signature<D>(for: D) throws -> P384.Signing.ECDSASignature](p384/signing/privatekey/signature(for:)-wrsj.md)
+### Creating a signature
+- [func signature<D>(for: D) throws -> P384.Signing.ECDSASignature](./signature%28for%29-wrsj.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the digest you provide over the P-384 elliptic curve.
-- [P384.Signing.ECDSASignature](p384/signing/ecdsasignature.md)
+- [P384.Signing.ECDSASignature](../ecdsasignature.md)
   A P-384 elliptic curve digital signature algorithm (ECDSA) signature.
 
 

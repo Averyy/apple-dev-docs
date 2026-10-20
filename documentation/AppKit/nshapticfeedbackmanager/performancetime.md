@@ -1,7 +1,8 @@
 # NSHapticFeedbackManager.PerformanceTime
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A time at which to provide haptic feedback to the user.
 
@@ -14,31 +15,36 @@ A time at which to provide haptic feedback to the user.
 enum PerformanceTime
 ```
 
+```c
+enum NSHapticFeedbackPerformanceTime : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSHapticFeedbackManager.PerformanceTime.default](nshapticfeedbackmanager/performancetime/default.md)
+- [NSHapticFeedbackManager.PerformanceTime.default](./performancetime/default.md)
   Allows the system to choose the most appropriate time for feedback to be provided. Currently, this is the next time the screen is updated.
-- [NSHapticFeedbackManager.PerformanceTime.now](nshapticfeedbackmanager/performancetime/now.md)
+- [NSHapticFeedbackManager.PerformanceTime.now](./performancetime/now.md)
   Instructs the system to provide immediate haptic feedback to the user, rather than waiting for synchronization to occur with something visual occurring on screen.
-- [NSHapticFeedbackManager.PerformanceTime.drawCompleted](nshapticfeedbackmanager/performancetime/drawcompleted.md)
+- [NSHapticFeedbackManager.PerformanceTime.drawCompleted](./performancetime/drawcompleted.md)
   Instructs the system to provide haptic feedback to the user the next time the screen is updated.
 ### Initializers
-- [init?(rawValue: UInt)](nshapticfeedbackmanager/performancetime/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./performancetime/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSHapticFeedbackManager.FeedbackPattern](nshapticfeedbackmanager/feedbackpattern.md)
+### Enumerations
+- [NSHapticFeedbackManager.FeedbackPattern](./feedbackpattern.md)
   A pattern of haptic feedback to be provided to the user.
 
 

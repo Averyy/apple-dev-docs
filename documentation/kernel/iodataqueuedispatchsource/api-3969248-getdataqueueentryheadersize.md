@@ -1,7 +1,8 @@
 # GetDataQueueEntryHeaderSize
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 static size_t GetDataQueueEntryHeaderSize(void);
 ```
 

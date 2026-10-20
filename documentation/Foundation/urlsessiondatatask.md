@@ -1,7 +1,8 @@
 # URLSessionDataTask
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A URL session task that returns downloaded data directly to the app in memory.
 
@@ -20,59 +21,64 @@ A URL session task that returns downloaded data directly to the app in memory.
 class URLSessionDataTask
 ```
 
+```objc
+@interface NSURLSessionDataTask : NSURLSessionTask
+```
+
 ## Mentions
 
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
+- [Fetching website data into memory](./fetching-website-data-into-memory.md)
 
 #### Overview
 
-A [`URLSessionDataTask`](urlsessiondatatask.md) is a concrete subclass of [`URLSessionTask`](urlsessiontask.md). The methods in the [`URLSessionDataTask`](urlsessiondatatask.md) class are documented in [`URLSessionTask`](urlsessiontask.md).
+A [`URLSessionDataTask`](./urlsessiondatatask.md) is a concrete subclass of [`URLSessionTask`](./urlsessiontask.md). The methods in the [`URLSessionDataTask`](./urlsessiondatatask.md) class are documented in [`URLSessionTask`](./urlsessiontask.md).
 
 A data task returns data directly to the app (in memory) as one or more `NSData` objects. When you use a data task:
 
-- During upload of the body data (if your app provides any), the session periodically calls its delegate’s [`urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)`](urlsessiontaskdelegate/urlsession(_:task:didsendbodydata:totalbytessent:totalbytesexpectedtosend:).md) method with status information.
-- After receiving an initial response, the session calls its delegate’s [`urlSession(_:dataTask:didReceive:completionHandler:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:completionhandler:).md) method to let you examine the status code and headers, and optionally convert the data task into a download task.
-- During the transfer, the session calls its delegate’s [`urlSession(_:dataTask:didReceive:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:).md) method to provide your app with the content as it arrives.
-- Upon completion, the session calls its delegate’s [`urlSession(_:dataTask:willCacheResponse:completionHandler:)`](urlsessiondatadelegate/urlsession(_:datatask:willcacheresponse:completionhandler:).md) method to let you determine whether the response should be cached.
+- During upload of the body data (if your app provides any), the session periodically calls its delegate’s [`urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)`](./urlsessiontaskdelegate/urlsession%28_,task,didsendbodydata,totalbytessent,totalbytesexpectedtosend%29.md) method with status information.
+- After receiving an initial response, the session calls its delegate’s [`urlSession(_:dataTask:didReceive:completionHandler:)`](./urlsessiondatadelegate/urlsession%28_,datatask,didreceive,completionhandler%29.md) method to let you examine the status code and headers, and optionally convert the data task into a download task.
+- During the transfer, the session calls its delegate’s [`urlSession(_:dataTask:didReceive:)`](./urlsessiondatadelegate/urlsession%28_,datatask,didreceive%29.md) method to provide your app with the content as it arrives.
+- Upon completion, the session calls its delegate’s [`urlSession(_:dataTask:willCacheResponse:completionHandler:)`](./urlsessiondatadelegate/urlsession%28_,datatask,willcacheresponse,completionhandler%29.md) method to let you determine whether the response should be cached.
 
-For examples of using data tasks for fetching and uploading data, see [`Fetching website data into memory`](fetching-website-data-into-memory.md) and [`Uploading data to a website`](uploading-data-to-a-website.md).
+For examples of using data tasks for fetching and uploading data, see [Fetching website data into memory](./fetching-website-data-into-memory.md) and [Uploading data to a website](./uploading-data-to-a-website.md).
 
 ## Topics
 
 ### Initializers
-- [init()](urlsessiondatatask/init.md)
+- [init()](./urlsessiondatatask/init%28%29.md)
 ### Type Methods
-- [class func new() -> Self](urlsessiondatatask/new.md)
+- [class func new() -> Self](./urlsessiondatatask/new%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [URLSessionTask](urlsessiontask.md)
+- [URLSessionTask](./urlsessiontask.md)
 ### Inherited By
-- [URLSessionUploadTask](urlsessionuploadtask.md)
+- [URLSessionUploadTask](./urlsessionuploadtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [ProgressReporting](progressreporting.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [ProgressReporting](./progressreporting.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func dataTask(with: URL) -> URLSessionDataTask](urlsession/datatask(with:)-10dy7.md)
+### Adding data tasks to a session
+- [func dataTask(with: URL) -> URLSessionDataTask](./urlsession/datatask%28with%29-10dy7.md)
   Creates a task that retrieves the contents of the specified URL.
-- [func dataTask(with: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](urlsession/datatask(with:completionhandler:)-52wk8.md)
+- [func dataTask(with: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](./urlsession/datatask%28with,completionhandler%29-52wk8.md)
   Creates a task that retrieves the contents of the specified URL, then calls a handler upon completion.
-- [func dataTask(with: URLRequest) -> URLSessionDataTask](urlsession/datatask(with:)-7jpys.md)
+- [func dataTask(with: URLRequest) -> URLSessionDataTask](./urlsession/datatask%28with%29-7jpys.md)
   Creates a task that retrieves the contents of a URL based on the specified URL request object.
-- [func dataTask(with: URLRequest, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](urlsession/datatask(with:completionhandler:)-e6xv.md)
+- [func dataTask(with: URLRequest, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](./urlsession/datatask%28with,completionhandler%29-e6xv.md)
   Creates a task that retrieves the contents of a URL based on the specified URL request object, and calls a handler upon completion.
-- [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)
+- [protocol URLSessionDataDelegate](./urlsessiondatadelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 
 

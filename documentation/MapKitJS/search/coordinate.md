@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A map coordinate that provides a hint for the geographic area to search.
 
@@ -10,7 +11,7 @@ A map coordinate that provides a hint for the geographic area to search.
 
 ## Declaration
 
-```swift
+```
 get coordinate(): Coordinate | null;
 set coordinate(value: CoordinateData | null);
 ```

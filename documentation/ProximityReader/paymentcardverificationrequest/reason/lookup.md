@@ -1,7 +1,8 @@
 # PaymentCardVerificationRequest.Reason.lookUp
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Verify the payment card to look up a past transaction.
 
@@ -18,11 +19,12 @@ case lookUp
 
 ## See Also
 
-- [PaymentCardVerificationRequest.Reason.openTab](paymentcardverificationrequest/reason/opentab.md)
+### Getting the verification reason
+- [PaymentCardVerificationRequest.Reason.openTab](./opentab.md)
   Check if the card is valid.
-- [PaymentCardVerificationRequest.Reason.saveCard](paymentcardverificationrequest/reason/savecard.md)
+- [PaymentCardVerificationRequest.Reason.saveCard](./savecard.md)
   Save the card information for later.
-- [PaymentCardVerificationRequest.Reason.other](paymentcardverificationrequest/reason/other.md)
+- [PaymentCardVerificationRequest.Reason.other](./other.md)
   Verify the card information.
 
 

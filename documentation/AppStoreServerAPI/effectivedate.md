@@ -1,7 +1,8 @@
 # effectiveDate
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The new subscription expiration date for a subscription-renewal extension.
 
@@ -10,17 +11,18 @@ The new subscription expiration date for a subscription-renewal extension.
 
 ## Declaration
 
-```swift
+```
 timestamp effectiveDate
 ```
 
 ## See Also
 
-- [type originalTransactionId](originaltransactionid.md)
+### Response data types
+- [type originalTransactionId](./originaltransactionid.md)
   The original transaction identifier of a purchase.
-- [type success](success.md)
+- [type success](./success.md)
   A Boolean value that indicates whether the subscription-renewal-date extension succeeded.
-- [type webOrderLineItemId](weborderlineitemid.md)
+- [type webOrderLineItemId](./weborderlineitemid.md)
   The unique identifier of subscription-purchase events across devices, including renewals.
 
 

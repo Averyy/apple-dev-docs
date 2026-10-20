@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared routing arbiter object.
 
@@ -12,6 +13,10 @@ The shared routing arbiter object.
 
 ```swift
 class var shared: AVAudioRoutingArbiter { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) AVAudioRoutingArbiter * sharedRoutingArbiter;
 ```
 
 

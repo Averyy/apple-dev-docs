@@ -1,7 +1,8 @@
 # init(referencing:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `Data` by adopting a reference type.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A representation of partially generated content
@@ -20,9 +21,16 @@ A representation of partially generated content
 associatedtype PartiallyGenerated : ConvertibleFromGeneratedContent = Self
 ```
 
+## Default Implementations
+
+### Generable Implementations
+- [Generable.PartiallyGenerated](./partiallygenerated-swift.typealias.md)
+  A representation of partially generated content, which defaults to the conforming type itself.
+
 ## See Also
 
-- [func asPartiallyGenerated() -> Self.PartiallyGenerated](generable/aspartiallygenerated.md)
+### Converting to partially generated
+- [func asPartiallyGenerated() -> Self.PartiallyGenerated](./aspartiallygenerated%28%29.md)
   Returns the partially generated representation of the current instance.
 
 

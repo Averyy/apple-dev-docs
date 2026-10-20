@@ -1,7 +1,8 @@
 # init(debugDescription:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context.
 

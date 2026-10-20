@@ -1,7 +1,8 @@
 # init(identifier:title:getter:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 
@@ -19,6 +20,8 @@ Creates an app intent entity property.  Do not call this directly, use @Computed
 ```swift
 convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>) where Entity : AppEntity
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `IntentFile`.
 
 ## Parameters
 

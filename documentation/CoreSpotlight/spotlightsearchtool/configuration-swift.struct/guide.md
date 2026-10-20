@@ -1,7 +1,8 @@
 # guide
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options you use to guide the search process that the tool uses to retrieve results.
 
@@ -20,7 +21,7 @@ var guide: SpotlightSearchTool.Guide?
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 #### Discussion
 
@@ -28,7 +29,8 @@ The Spotlight search tool employs many techniques to look for results, but some 
 
 ## See Also
 
-- [var customStages: [any CustomStage]](spotlightsearchtool/configuration-swift.struct/customstages.md)
+### Customizing the output
+- [var customStages: [any CustomStage]](./customstages.md)
   Custom pipeline stages you use to help the Spotlight search tool generate results.
 
 

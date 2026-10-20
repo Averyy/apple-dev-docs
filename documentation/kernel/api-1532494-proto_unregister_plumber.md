@@ -1,14 +1,15 @@
 # proto_unregister_plumber
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void proto_unregister_plumber(protocol_family_t proto_fam, ifnet_family_t if_fam);
 ```
 

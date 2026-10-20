@@ -1,7 +1,8 @@
 # alignedUp(for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtain the next pointer properly aligned to store a value of type `T`.
 

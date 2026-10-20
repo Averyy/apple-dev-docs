@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the text attachment view provider corresponding to the file type.
@@ -19,25 +20,30 @@ Returns the text attachment view provider corresponding to the file type.
 func viewProvider(for parentView: UIView?, location: any NSTextLocation, textContainer: NSTextContainer?) -> NSTextAttachmentViewProvider?
 ```
 
+```objc
+- (NSTextAttachmentViewProvider *) viewProviderForParentView:(UIView *) parentView location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer;
+```
+
 #### Return Value
 
-An [`NSTextAttachmentViewProvider`](nstextattachmentviewprovider.md).
+An [`NSTextAttachmentViewProvider`](../nstextattachmentviewprovider.md).
 
 #### Discussion
 
-The default implementation queries the text attachment view provider class using the [`textAttachmentViewProviderClass(forFileType:)`](nstextattachment/textattachmentviewproviderclass(forfiletype:).md) method of [`NSTextAttachment`](nstextattachment.md). When non-`nil`, it instantiates a view, then, fills properties declared in `NSTextAttachmentViewProvider` if implemented.
+The default implementation queries the text attachment view provider class using the [`textAttachmentViewProviderClass(forFileType:)`](../nstextattachment/textattachmentviewproviderclass%28forfiletype%29.md) method of [`NSTextAttachment`](../nstextattachment.md). When non-`nil`, it instantiates a view, then, fills properties declared in `NSTextAttachmentViewProvider` if implemented.
 
 ## Parameters
 
 - `parentView`: The parent view.
-- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
-- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source text.
+- `location`: An [`NSTextLocation`](../nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](../nstextcontainer.md) that contains the source text.
 
 ## See Also
 
-- [func attachmentBounds(for: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?, proposedLineFragment: CGRect, position: CGPoint) -> CGRect](nstextattachmentlayout/attachmentbounds(for:location:textcontainer:proposedlinefragment:position:).md)
+### Determining the characteristics of an attachment
+- [func attachmentBounds(for: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?, proposedLineFragment: CGRect, position: CGPoint) -> CGRect](./attachmentbounds%28for,location,textcontainer,proposedlinefragment,position%29.md)
   Returns the layout bounds of the attachment you specify.
-- [func image(for: CGRect, attributes: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?) -> UIImage?](nstextattachmentlayout/image(for:attributes:location:textcontainer:).md)
+- [func image(for: CGRect, attributes: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?) -> UIImage?](./image%28for,attributes,location,textcontainer%29.md)
   Returns the image object rendered at the bounds and inside the text container you specify.
 
 

@@ -1,7 +1,8 @@
 # CiXcodeVersion.Attributes.TestDestinations.AvailableRuntimes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An available simulator runtime for this Xcode Cloud version, specifying the platform and OS version it can simulate.
 
@@ -10,7 +11,7 @@ An available simulator runtime for this Xcode Cloud version, specifying the plat
 
 ## Declaration
 
-```swift
+```
 object CiXcodeVersion.Attributes.TestDestinations.AvailableRuntimes
 ```
 

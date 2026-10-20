@@ -1,7 +1,8 @@
 # domainIdentifier
 
 **Framework**: File Provider UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the domain managed by the current file provider.
 
@@ -18,9 +19,14 @@ The identifier for the domain managed by the current file provider.
 var domainIdentifier: NSFileProviderDomainIdentifier? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSFileProviderDomainIdentifier domainIdentifier;
+```
+
 ## See Also
 
-- [struct NSFileProviderDomainIdentifier](../fileprovider/nsfileproviderdomainidentifier.md)
+### Identifying the Domain
+- [struct NSFileProviderDomainIdentifier](../../FileProvider/nsfileproviderdomainidentifier.md)
   A unique identifier for a file provider’s domain.
 
 

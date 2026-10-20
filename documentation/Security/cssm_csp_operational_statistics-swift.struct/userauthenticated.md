@@ -1,7 +1,8 @@
 # UserAuthenticated
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var UserAuthenticated: CSSM_BOOL
+```
+
+```c
+CSSM_BOOL UserAuthenticated;
 ```
 
 

@@ -1,7 +1,8 @@
 # twentyFourHour
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A clock that portrays the hour using a 24-hour clock.
 
@@ -22,7 +23,8 @@ static let twentyFourHour: Date.FormatStyle.Symbol.VerbatimHour.Clock
 
 ## See Also
 
-- [static let twelveHour: Date.FormatStyle.Symbol.VerbatimHour.Clock](date/formatstyle/symbol/verbatimhour/clock/twelvehour.md)
+### Modifying a Verbatim Hour Clock
+- [static let twelveHour: Date.FormatStyle.Symbol.VerbatimHour.Clock](./twelvehour.md)
   A clock that portrays the hour using a 12-hour clock.
 
 

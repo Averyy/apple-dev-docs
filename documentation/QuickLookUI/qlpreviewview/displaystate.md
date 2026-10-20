@@ -1,9 +1,10 @@
 # displayState
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The current display state of the [`previewItem`](qlpreviewview/previewitem.md).
+The current display state of the [`previewItem`](./previewitem.md).
 
 **Availability**:
 - macOS 10.6+
@@ -14,6 +15,10 @@ The current display state of the [`previewItem`](qlpreviewview/previewitem.md).
 var displayState: Any! { get set }
 ```
 
+```objc
+@property (retain) id displayState;
+```
+
 #### Discussion
 
 This property is an opaque object that Quick Look uses to get and set the current display state of the preview. The display state could be, for example, the currently displayed page, the zoom factor on an image, or the position in a movie.
@@ -22,11 +27,12 @@ You can use this property to get and save the current display state of the previ
 
 ## See Also
 
-- [var previewItem: (any QLPreviewItem)!](qlpreviewview/previewitem.md)
+### Displaying a Preview
+- [var previewItem: (any QLPreviewItem)!](./previewitem.md)
   The item to preview.
-- [func refreshPreviewItem()](qlpreviewview/refreshpreviewitem.md)
+- [func refreshPreviewItem()](./refreshpreviewitem%28%29.md)
   Updates the preview to display the currently previewed item.
-- [var autostarts: Bool](qlpreviewview/autostarts.md)
+- [var autostarts: Bool](./autostarts.md)
   A Boolean value that determines whether the preview starts automatically.
 
 

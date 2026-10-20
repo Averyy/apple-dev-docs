@@ -1,7 +1,8 @@
 # kIMKLocateCandidatesAboveHint
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,15 +13,20 @@
 var kIMKLocateCandidatesAboveHint: Int { get }
 ```
 
+```c
+kIMKLocateCandidatesAboveHint
+```
+
 #### Discussion
 
 Place the candidates window above the start of the current text selection.
 
 ## See Also
 
-- [var kIMKLocateCandidatesBelowHint: Int](kimklocatecandidatesbelowhint.md)
-- [var kIMKLocateCandidatesLeftHint: Int](kimklocatecandidateslefthint.md)
-- [var kIMKLocateCandidatesRightHint: Int](kimklocatecandidatesrighthint.md)
+### Constants
+- [var kIMKLocateCandidatesBelowHint: Int](./kimklocatecandidatesbelowhint.md)
+- [var kIMKLocateCandidatesLeftHint: Int](./kimklocatecandidateslefthint.md)
+- [var kIMKLocateCandidatesRightHint: Int](./kimklocatecandidatesrighthint.md)
 
 
 ---

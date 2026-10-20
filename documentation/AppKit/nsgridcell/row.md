@@ -1,7 +1,8 @@
 # row
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,11 +13,16 @@
 weak var row: NSGridRow? { get }
 ```
 
+```objc
+@property (weak, readonly) NSGridRow * row;
+```
+
 ## See Also
 
-- [var column: NSGridColumn?](nsgridcell/column.md)
-- [var contentView: NSView?](nsgridcell/contentview.md)
-- [class var emptyContentView: NSView](nsgridcell/emptycontentview.md)
+### Getting the Cell Containers
+- [var column: NSGridColumn?](./column.md)
+- [var contentView: NSView?](./contentview.md)
+- [class var emptyContentView: NSView](./emptycontentview.md)
 
 
 ---

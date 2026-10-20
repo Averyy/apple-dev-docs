@@ -1,7 +1,8 @@
 # target
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A speed measurement that represents the target threshold.
 
@@ -20,7 +21,8 @@ var target: Measurement<UnitSpeed>
 
 ## See Also
 
-- [var targetQuantity: HKQuantity](speedthresholdalert/targetquantity.md)
+### Accessing alert data
+- [var targetQuantity: HKQuantity](./targetquantity.md)
   A HealthKit quantity that represents the target speed threshold.
 
 

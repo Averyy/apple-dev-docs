@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this offset has no effect (`offset == 0`, `scale == 1`).
 

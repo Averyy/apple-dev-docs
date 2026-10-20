@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a region of bytes in the data with new bytes from a collection.
 
@@ -24,7 +25,7 @@ mutating func replaceSubrange(_ subrange: Range<Data.Index>, with newElements: s
 
 This will resize the data if required, to fit the entire contents of `newElements`.
 
-> **Note**: The bounds of `subrange` must be valid indices of the collection.
+> **Precondition**: The bounds of `subrange` must be valid indices of the collection.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # applyMorphology(operation:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a morphology operation to the buffer.
 
@@ -11,7 +12,7 @@ Applies a morphology operation to the buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,15 +21,17 @@ Applies a morphology operation to the buffer.
 func applyMorphology(operation: vImage.MorphologyOperation<Format.ComponentType>, destination: vImage.PixelBuffer<Format>)
 ```
 
+Available when `Format` conforms to `MultiplePlanePixelFormat`, `Format.ComponentType` is `Float`, and `Format.PlanarPixelFormat.ComponentType` is `Float`.
+
 #### Discussion
 
-> **Note**: Source and destination buffer must be the same size.
+> **Precondition**: Source and destination buffer must be the same size.
 
-> **Note**: The kernel size width and height must be positive, odd integers in the range
+> **Precondition**: The kernel size width and height must be positive, odd integers in the range
 
-> **Note**: `dilate` and `erode` user defined kernels must contain `width * height` elements.
+> **Precondition**: `dilate` and `erode` user defined kernels must contain `width * height` elements.
 
-> **Note**: Source and destination buffers must point to different underlying memory.
+> **Precondition**: Source and destination buffers must point to different underlying memory.
 
 ## Parameters
 

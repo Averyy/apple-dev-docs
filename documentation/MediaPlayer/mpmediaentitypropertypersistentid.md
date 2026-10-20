@@ -1,7 +1,8 @@
 # MPMediaEntityPropertyPersistentID
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The persistent identifier for a media entity.
 
@@ -19,9 +20,13 @@ The persistent identifier for a media entity.
 let MPMediaEntityPropertyPersistentID: String
 ```
 
+```c
+extern NSString * const MPMediaEntityPropertyPersistentID;
+```
+
 #### Discussion
 
-This value contains a [`uint64_t`](https://developer.apple.com/documentation/kernel/uint64_t) (unsigned long long) which you can use to build a media property predicate, as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
+This value contains a [`uint64_t`](../kernel/uint64_t.md) (unsigned long long) which you can use to build a media property predicate, as described in [`MPMediaPropertyPredicate`](./mpmediapropertypredicate.md).
 
 
 ---

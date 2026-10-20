@@ -1,7 +1,8 @@
 # MLWordTagger.FeatureExtractorType.elmoEmbedding
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor that provides ELMo contextual word embeddings.
 
@@ -20,9 +21,10 @@ ELMo embeddings requires certain downloadable assets to be present on device at 
 
 ## See Also
 
-- [MLWordTagger.FeatureExtractorType.bertEmbedding](mlwordtagger/featureextractortype/bertembedding.md)
+### Selecting a feature extractor type
+- [MLWordTagger.FeatureExtractorType.bertEmbedding](./bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLWordTagger.FeatureExtractorType.dynamicEmbedding](mlwordtagger/featureextractortype/dynamicembedding.md)
+- [MLWordTagger.FeatureExtractorType.dynamicEmbedding](./dynamicembedding.md)
   A feature extractor that provides embeddings for words, based on their in-context use.
 
 

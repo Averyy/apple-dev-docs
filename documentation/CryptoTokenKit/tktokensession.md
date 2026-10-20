@@ -1,7 +1,8 @@
 # TKTokenSession
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A token session that manages the authentication state of a token.
 
@@ -20,49 +21,54 @@ A token session that manages the authentication state of a token.
 class TKTokenSession
 ```
 
+```objc
+@interface TKTokenSession : NSObject
+```
+
 #### Overview
 
 A token session communicates with its delegate to perform operations with its token that are bound to the authentication state.
 
-A session is always instantiated by a [`TKToken`](tktoken.md) instance through the token’s delegate when the framework detects access to the token from a new authentication session.
+A session is always instantiated by a [`TKToken`](./tktoken.md) instance through the token’s delegate when the framework detects access to the token from a new authentication session.
 
 > ❗ **Important**:  Never share the authentication status of a token, such as the PIN entered to unlock a smart card, with other token sessions.
 
 ## Topics
 
 ### Creating Token Sessions
-- [init(token: TKToken)](tktokensession/init(token:).md)
+- [init(token: TKToken)](./tktokensession/init%28token%29.md)
   Initializes a token session with the specified token.
 ### Responding to Authentication Events
-- [var delegate: (any TKTokenSessionDelegate)?](tktokensession/delegate.md)
+- [var delegate: (any TKTokenSessionDelegate)?](./tktokensession/delegate.md)
   The token session delegate.
-- [protocol TKTokenSessionDelegate](tktokensessiondelegate.md)
+- [protocol TKTokenSessionDelegate](./tktokensessiondelegate.md)
   The interface that a session instance delegate implements to respond to token session authentication events.
 ### Accessing the Token
-- [var token: TKToken](tktokensession/token.md)
+- [var token: TKToken](./tktokensession/token.md)
   The token to which the session is bound.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [TKSmartCardTokenSession](tksmartcardtokensession.md)
+- [TKSmartCardTokenSession](./tksmartcardtokensession.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TKTokenWatcher](tktokenwatcher.md)
+### Tokens
+- [class TKTokenWatcher](./tktokenwatcher.md)
   An object that tracks the tokens available in the system.
-- [class TKTokenDriver](tktokendriver.md)
+- [class TKTokenDriver](./tktokendriver.md)
   A base class for building token drivers.
-- [class TKToken](tktoken.md)
+- [class TKToken](./tktoken.md)
   A representation of a hardware-based cryptographic token.
 
 

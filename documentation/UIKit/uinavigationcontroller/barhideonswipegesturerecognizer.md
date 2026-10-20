@@ -1,7 +1,8 @@
 # barHideOnSwipeGestureRecognizer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gesture recognizer used to hide the navigation bar and toolbar.
 
@@ -17,25 +18,30 @@ The gesture recognizer used to hide the navigation bar and toolbar.
 var barHideOnSwipeGestureRecognizer: UIPanGestureRecognizer { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIPanGestureRecognizer * barHideOnSwipeGestureRecognizer;
+```
+
 #### Discussion
 
-This property contains the gesture recognizer used to hide and show the navigation bar and toolbar. The gesture recognizer is inactive unless the [`hidesBarsOnSwipe`](uinavigationcontroller/hidesbarsonswipe.md) property is [`true`](https://developer.apple.com/documentation/swift/true). You can make changes to the gesture recognizer as needed but must not change its delegate and you must not remove the default target object and action that come configured with it. Do not try to replace this gesture recognizer by overriding the property.
+This property contains the gesture recognizer used to hide and show the navigation bar and toolbar. The gesture recognizer is inactive unless the [`hidesBarsOnSwipe`](./hidesbarsonswipe.md) property is [`true`](../../Swift/true.md). You can make changes to the gesture recognizer as needed but must not change its delegate and you must not remove the default target object and action that come configured with it. Do not try to replace this gesture recognizer by overriding the property.
 
 If you tie this gesture recognizer to one of your own, make sure both recognize their gestures simultaneously to ensure that each has a chance to handle the event.
 
 ## See Also
 
-- [var hidesBarsOnTap: Bool](uinavigationcontroller/hidesbarsontap.md)
+### Hiding the navigation bar
+- [var hidesBarsOnTap: Bool](./hidesbarsontap.md)
   A Boolean value indicating whether the navigation controller allows hiding of its bars using a tap gesture.
-- [var hidesBarsOnSwipe: Bool](uinavigationcontroller/hidesbarsonswipe.md)
+- [var hidesBarsOnSwipe: Bool](./hidesbarsonswipe.md)
   A Boolean value indicating whether the navigation bar hides its bars in response to a swipe gesture.
-- [var hidesBarsWhenVerticallyCompact: Bool](uinavigationcontroller/hidesbarswhenverticallycompact.md)
+- [var hidesBarsWhenVerticallyCompact: Bool](./hidesbarswhenverticallycompact.md)
   A Boolean value indicating whether the navigation controller hides its bars in a vertically compact environment.
-- [var hidesBarsWhenKeyboardAppears: Bool](uinavigationcontroller/hidesbarswhenkeyboardappears.md)
+- [var hidesBarsWhenKeyboardAppears: Bool](./hidesbarswhenkeyboardappears.md)
   A Boolean value indicating whether the navigation controller hides its bars when the keyboard appears.
-- [var isNavigationBarHidden: Bool](uinavigationcontroller/isnavigationbarhidden.md)
+- [var isNavigationBarHidden: Bool](./isnavigationbarhidden.md)
   A Boolean value that indicates whether the navigation bar is hidden.
-- [var barHideOnTapGestureRecognizer: UITapGestureRecognizer](uinavigationcontroller/barhideontapgesturerecognizer.md)
+- [var barHideOnTapGestureRecognizer: UITapGestureRecognizer](./barhideontapgesturerecognizer.md)
   The gesture recognizer used to hide and show the navigation and toolbar.
 
 

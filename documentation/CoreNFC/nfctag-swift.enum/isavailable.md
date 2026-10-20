@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a detected tag is available.
 
@@ -18,7 +19,7 @@ var isAvailable: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the tag is available in the current reader session. When a tag is removed from an RF field, it becomes unavailable.
+The value of this property is [`true`](../../Swift/true.md) when the tag is available in the current reader session. When a tag is removed from an RF field, it becomes unavailable.
 
 
 ---

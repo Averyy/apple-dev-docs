@@ -1,7 +1,8 @@
 # PreprocessingUpdatableSupervisedTabularEstimator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
 
@@ -23,73 +24,74 @@ struct PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>
 ## Topics
 
 ### Creating an estimator
-- [init(Preprocessor, Estimator)](preprocessingupdatablesupervisedtabularestimator/init(_:_:).md)
+- [init(Preprocessor, Estimator)](./preprocessingupdatablesupervisedtabularestimator/init%28_,_%29.md)
   Creates a composed supervised estimator from a preprocessing transformer and a supervised estimator.
 ### Getting the properties
-- [var annotationColumnID: ColumnID<Estimator.Annotation>](preprocessingupdatablesupervisedtabularestimator/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<Estimator.Annotation>](./preprocessingupdatablesupervisedtabularestimator/annotationcolumnid.md)
   The annotation column identifier.
-- [var estimator: Estimator](preprocessingupdatablesupervisedtabularestimator/estimator.md)
+- [var estimator: Estimator](./preprocessingupdatablesupervisedtabularestimator/estimator.md)
   The estimator.
-- [var preprocessor: Preprocessor](preprocessingupdatablesupervisedtabularestimator/preprocessor.md)
+- [var preprocessor: Preprocessor](./preprocessingupdatablesupervisedtabularestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encodeWithOptimizer(PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedtabularestimator/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](./preprocessingupdatablesupervisedtabularestimator/encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtabularestimator/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatablesupervisedtabularestimator/decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 ### Preprocesing and fitting
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtabularestimator/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatablesupervisedtabularestimator/fitted%28to,validateon,eventhandler%29.md)
   Fits a composed transformer to a data frame of examples.
-- [func fitted(toPreprocessed: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtabularestimator/fitted(topreprocessed:validateon:eventhandler:).md)
+- [func fitted(toPreprocessed: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatablesupervisedtabularestimator/fitted%28topreprocessed,validateon,eventhandler%29.md)
   Fits a composed transformer to a data frame of examples.
-- [func makeTransformer() -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtabularestimator/maketransformer.md)
+- [func makeTransformer() -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatablesupervisedtabularestimator/maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](preprocessingupdatablesupervisedtabularestimator/preprocessed(from:eventhandler:).md)
+- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./preprocessingupdatablesupervisedtabularestimator/preprocessed%28from,eventhandler%29.md)
   Preprocesses a data frame.
-- [func update(inout PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](preprocessingupdatablesupervisedtabularestimator/update(_:with:eventhandler:).md)
+- [func update(inout PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](./preprocessingupdatablesupervisedtabularestimator/update%28_,with,eventhandler%29.md)
   Updates a transformer with a new data frame of examples.
-- [func update(inout PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, withPreprocessed: DataFrame, eventHandler: EventHandler?) async throws](preprocessingupdatablesupervisedtabularestimator/update(_:withpreprocessed:eventhandler:).md)
+- [func update(inout PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, withPreprocessed: DataFrame, eventHandler: EventHandler?) async throws](./preprocessingupdatablesupervisedtabularestimator/update%28_,withpreprocessed,eventhandler%29.md)
   Updates a transformer with a new data frame of preprocessed features.
-- [PreprocessingUpdatableSupervisedTabularEstimator.Annotation](preprocessingupdatablesupervisedtabularestimator/annotation.md)
+- [PreprocessingUpdatableSupervisedTabularEstimator.Annotation](./preprocessingupdatablesupervisedtabularestimator/annotation.md)
   The annotation type.
-- [PreprocessingUpdatableSupervisedTabularEstimator.Input](preprocessingupdatablesupervisedtabularestimator/input.md)
+- [PreprocessingUpdatableSupervisedTabularEstimator.Input](./preprocessingupdatablesupervisedtabularestimator/input.md)
   The input type.
-- [PreprocessingUpdatableSupervisedTabularEstimator.Intermediate](preprocessingupdatablesupervisedtabularestimator/intermediate.md)
+- [PreprocessingUpdatableSupervisedTabularEstimator.Intermediate](./preprocessingupdatablesupervisedtabularestimator/intermediate.md)
   The intermediate type.
-- [PreprocessingUpdatableSupervisedTabularEstimator.Output](preprocessingupdatablesupervisedtabularestimator/output.md)
+- [PreprocessingUpdatableSupervisedTabularEstimator.Output](./preprocessingupdatablesupervisedtabularestimator/output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedTabularEstimator](supervisedtabularestimator.md)
-- [UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedTabularEstimator](./supervisedtabularestimator.md)
+- [UpdatableSupervisedTabularEstimator](./updatablesupervisedtabularestimator.md)
 
 ## See Also
 
-- [protocol TabularTransformer](tabulartransformer.md)
+### Tabular components
+- [protocol TabularTransformer](./tabulartransformer.md)
   A tabular transformer that transforms a data frame.
-- [protocol TabularEstimator](tabularestimator.md)
+- [protocol TabularEstimator](./tabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [protocol SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [protocol SupervisedTabularEstimator](./supervisedtabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [struct ColumnSelector](columnselector.md)
+- [struct ColumnSelector](./columnselector.md)
   An operation that applies an estimator to a selection of columns.
-- [struct ColumnSelectorTransformer](columnselectortransformer.md)
+- [struct ColumnSelectorTransformer](./columnselectortransformer.md)
   A transformer that applies a base transformer to specific columns in a data frame.
-- [enum ColumnSelection](columnselection.md)
+- [enum ColumnSelection](./columnselection.md)
   A selection of columns from a data frame.
-- [struct ColumnConcatenator](columnconcatenator.md)
+- [struct ColumnConcatenator](./columnconcatenator.md)
   A transformer that concatenates every numerical column in a dataframe into to a shaped array for each row.
-- [struct PreprocessingSupervisedTabularEstimator](preprocessingsupervisedtabularestimator.md)
+- [struct PreprocessingSupervisedTabularEstimator](./preprocessingsupervisedtabularestimator.md)
   A supervised tabular estimator that composes a preprocessing transformer and a supervised tabular estimator.
-- [struct PreprocessingTabularEstimator](preprocessingtabularestimator.md)
+- [struct PreprocessingTabularEstimator](./preprocessingtabularestimator.md)
   An estimator that composes a preprocessing transformer and an estimator.
-- [struct PreprocessingUpdatableTabularEstimator](preprocessingupdatabletabularestimator.md)
+- [struct PreprocessingUpdatableTabularEstimator](./preprocessingupdatabletabularestimator.md)
   An updatable estimator that composes a preprocessing transformer and an updatable estimator.
 
 

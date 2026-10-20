@@ -1,7 +1,8 @@
 # AccessoryError.invalidNotificationResponse
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the system failed to handle a notification response.
 
@@ -16,7 +17,8 @@ case invalidNotificationResponse
 
 ## See Also
 
-- [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
+### Response errors
+- [AccessoryError.coordinationTimeout](./coordinationtimeout.md)
   An error that indicates alert coordination timed out.
 
 

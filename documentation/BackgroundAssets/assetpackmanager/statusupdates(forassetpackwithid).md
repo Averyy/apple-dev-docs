@@ -1,7 +1,8 @@
 # statusUpdates(forAssetPackWithID:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 
@@ -22,8 +23,8 @@ func statusUpdates(forAssetPackWithID assetPackID: String) -> some Sendable & As
 
 ## Mentions
 
-- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 #### Return Value
 
@@ -31,7 +32,7 @@ An asynchronous sequence of download-status updates.
 
 #### Discussion
 
-The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.finished(_:)`](assetpackmanager/downloadstatusupdate/finished(_:).md) or [`AssetPackManager.DownloadStatusUpdate.failed(_:_:)`](assetpackmanager/downloadstatusupdate/failed(_:_:).md).
+The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.finished(_:)`](./downloadstatusupdate/finished%28_%29.md) or [`AssetPackManager.DownloadStatusUpdate.failed(_:_:)`](./downloadstatusupdate/failed%28_,_%29.md).
 
 ## Parameters
 
@@ -39,9 +40,10 @@ The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.fin
 
 ## See Also
 
-- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](assetpackmanager/statusupdates.md)
+### Tracking downloads
+- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](./statusupdates.md)
   An asynchronous sequence of download-status updates for all asset packs.
-- [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
+- [AssetPackManager.DownloadStatusUpdate](./downloadstatusupdate.md)
   Statuses of an asset-pack download.
 
 

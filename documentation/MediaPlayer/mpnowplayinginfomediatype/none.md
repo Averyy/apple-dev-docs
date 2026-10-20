@@ -1,7 +1,8 @@
 # MPNowPlayingInfoMediaType.none
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There is no now playing media item.
 
@@ -20,11 +21,16 @@ There is no now playing media item.
 case none
 ```
 
+```c
+MPNowPlayingInfoMediaTypeNone
+```
+
 ## See Also
 
-- [MPNowPlayingInfoMediaType.audio](mpnowplayinginfomediatype/audio.md)
+### Media types
+- [MPNowPlayingInfoMediaType.audio](./audio.md)
   The now playing media item is an audio item.
-- [MPNowPlayingInfoMediaType.video](mpnowplayinginfomediatype/video.md)
+- [MPNowPlayingInfoMediaType.video](./video.md)
   The now playing media item is a video item.
 
 

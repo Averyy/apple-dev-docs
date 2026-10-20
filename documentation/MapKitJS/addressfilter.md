@@ -1,7 +1,8 @@
 # AddressFilter
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that filters which address options to include or exclude in search results.
 
@@ -10,34 +11,35 @@ An object that filters which address options to include or exclude in search res
 
 ## Declaration
 
-```swift
+```
 class AddressFilter
 ```
 
 #### Overview
 
-Use this object to filter search results by criteria, such as country, region, and municipality. See [`AddressCategory`](addresscategory.md) for more information.
+Use this object to filter search results by criteria, such as country, region, and municipality. See [`AddressCategory`](./addresscategory.md) for more information.
 
 ## Topics
 
 ### Creating filters
-- [excluding(categories)](addressfilter/excluding.md)
+- [excluding(categories)](./addressfilter/excluding.md)
   A list of categories to exclude from a search.
-- [including(categories)](addressfilter/including.md)
+- [including(categories)](./addressfilter/including.md)
   A list of categories to include in a search.
-- [excludingAllCategories](addressfilter/excludingallcategories.md)
+- [excludingAllCategories](./addressfilter/excludingallcategories.md)
   A value that excludes all address categories.
-- [includingAllCategories](addressfilter/includingallcategories.md)
+- [includingAllCategories](./addressfilter/includingallcategories.md)
   A value that includes all address categories.
 ### Querying filter behavior
-- [excludesCategory(category)](addressfilter/excludescategory.md)
+- [excludesCategory(category)](./addressfilter/excludescategory.md)
   A Boolean value that indicates whether to exclude a category from a search.
-- [includesCategory(category)](addressfilter/includescategory.md)
+- [includesCategory(category)](./addressfilter/includescategory.md)
   A Boolean value that indicates whether to include a category from a search.
 
 ## See Also
 
-- [class Search](search.md)
+### Search
+- [class Search](./search.md)
   An object that retrieves map-based search results for a user-entered query.
 
 

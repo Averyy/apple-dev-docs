@@ -1,9 +1,10 @@
 # init(apiVersion:)
 
 **Framework**: iTunes Library  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes an instance of [`ITLibrary`](itlibrary.md) that can retrieve media entities.
+Initializes an instance of [`ITLibrary`](../itlibrary.md) that can retrieve media entities.
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,13 +16,17 @@ Initializes an instance of [`ITLibrary`](itlibrary.md) that can retrieve media e
 convenience init(apiVersion requestedAPIVersion: String) throws
 ```
 
+```objc
+- (instancetype) initWithAPIVersion:(NSString *) requestedAPIVersion error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`ITLibrary`](itlibrary.md) instance that can retrieve media entities, or `nil` if the method fails.
+An [`ITLibrary`](../itlibrary.md) instance that can retrieve media entities, or `nil` if the method fails.
 
 #### Discussion
 
-During initialization of the [`ITLibrary`](itlibrary.md) class, the system reads and parses the default iTunes database for the current user. All media entities cache in memory until deallocation of the object occurs.
+During initialization of the [`ITLibrary`](../itlibrary.md) class, the system reads and parses the default iTunes database for the current user. All media entities cache in memory until deallocation of the object occurs.
 
 Listing 1.
 
@@ -43,9 +48,10 @@ if (library)
 
 ## See Also
 
-- [init(apiVersion: String, options: ITLibInitOptions) throws](itlibrary/init(apiversion:options:)-9eorg.md)
+### Essentials
+- [init(apiVersion: String, options: ITLibInitOptions) throws](./init%28apiversion,options%29-9eorg.md)
   Initializes an instance of `ITLibrary` that can retrieve media entities.
-- [enum ITLibInitOptions](itlibinitoptions.md)
+- [enum ITLibInitOptions](../itlibinitoptions.md)
   These constants describe initialization options for an iTunes library.
 
 

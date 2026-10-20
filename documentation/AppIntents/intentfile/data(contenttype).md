@@ -1,7 +1,8 @@
 # data(contentType:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests an `IntentFile` representation as binary data of the requested content type if possible.
 

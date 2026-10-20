@@ -1,7 +1,8 @@
 # sumQuantity()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sum of all the samples that match the query.
 
@@ -19,37 +20,43 @@ Returns the sum of all the samples that match the query.
 func sumQuantity() -> HKQuantity?
 ```
 
+```objc
+- (HKQuantity *) sumQuantity;
+```
+
 ## Mentions
 
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
+- [Executing Statistics Collection Queries](../executing-statistics-collection-queries.md)
 
 #### Return Value
 
-If the [`cumulativeSum`](hkstatisticsoptions/cumulativesum.md) option was set, this method returns a quantity object containing the sum of all the samples matching the query; otherwise, it returns `nil`.
+If the [`cumulativeSum`](../hkstatisticsoptions/cumulativesum.md) option was set, this method returns a quantity object containing the sum of all the samples matching the query; otherwise, it returns `nil`.
 
 ## See Also
 
-- [var endDate: Date](hkstatistics/enddate.md)
+### Related Documentation
+- [var endDate: Date](./enddate.md)
   The end of the time period included in these statistics.
-- [var startDate: Date](hkstatistics/startdate.md)
+- [var startDate: Date](./startdate.md)
   The start of the time period included in these statistics.
-- [func averageQuantity() -> HKQuantity?](hkstatistics/averagequantity.md)
+### Getting Statistics Data
+- [func averageQuantity() -> HKQuantity?](./averagequantity%28%29.md)
   Returns the average value from all the samples that match the query.
-- [func averageQuantity(for: HKSource) -> HKQuantity?](hkstatistics/averagequantity(for:).md)
+- [func averageQuantity(for: HKSource) -> HKQuantity?](./averagequantity%28for%29.md)
   Returns the average value from all the samples that match the query and that were created by the specified source.
-- [func maximumQuantity() -> HKQuantity?](hkstatistics/maximumquantity.md)
+- [func maximumQuantity() -> HKQuantity?](./maximumquantity%28%29.md)
   Returns the maximum value from all the samples that match the query.
-- [func maximumQuantity(for: HKSource) -> HKQuantity?](hkstatistics/maximumquantity(for:).md)
+- [func maximumQuantity(for: HKSource) -> HKQuantity?](./maximumquantity%28for%29.md)
   Returns the maximum value from all the samples that match the query and that were created by the specified source.
-- [func minimumQuantity() -> HKQuantity?](hkstatistics/minimumquantity.md)
+- [func minimumQuantity() -> HKQuantity?](./minimumquantity%28%29.md)
   Returns the minimum value from all the samples that match the query.
-- [func minimumQuantity(for: HKSource) -> HKQuantity?](hkstatistics/minimumquantity(for:).md)
+- [func minimumQuantity(for: HKSource) -> HKQuantity?](./minimumquantity%28for%29.md)
   Returns the minimum value from all the samples that match the query and that were created by the specified source.
-- [func sumQuantity(for: HKSource) -> HKQuantity?](hkstatistics/sumquantity(for:).md)
+- [func sumQuantity(for: HKSource) -> HKQuantity?](./sumquantity%28for%29.md)
   Returns the sum of all the samples that match the query and that were created by the specified source.
-- [func duration() -> HKQuantity?](hkstatistics/duration.md)
+- [func duration() -> HKQuantity?](./duration%28%29.md)
   Returns the total duration covering all the samples that match the query.
-- [func duration(for: HKSource) -> HKQuantity?](hkstatistics/duration(for:).md)
+- [func duration(for: HKSource) -> HKQuantity?](./duration%28for%29.md)
   Returns the total duration covering all the samples created by the specified source that also match the query.
 
 

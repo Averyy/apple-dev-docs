@@ -1,7 +1,8 @@
 # VTSuperResolutionScalerConfiguration.Revision
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Available algorithm revisions.
 
@@ -17,34 +18,39 @@ Available algorithm revisions.
 enum Revision
 ```
 
+```c
+enum VTSuperResolutionScalerConfigurationRevision : NSInteger;
+```
+
 #### Overview
 
-A new enum case with a higher revision number is added when the processing algorithm is updated. The [`defaultRevision`](vtsuperresolutionscalerconfiguration/defaultrevision.md) property provides the default algorithm revision.
+A new enum case with a higher revision number is added when the processing algorithm is updated. The [`defaultRevision`](./defaultrevision.md) property provides the default algorithm revision.
 
 ## Topics
 
 ### Enumeration Cases
-- [VTSuperResolutionScalerConfiguration.Revision.revision1](vtsuperresolutionscalerconfiguration/revision-swift.enum/revision1.md)
+- [VTSuperResolutionScalerConfiguration.Revision.revision1](./revision-swift.enum/revision1.md)
 ### Initializers
-- [init?(rawValue: Int)](vtsuperresolutionscalerconfiguration/revision-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./revision-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var revision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.property.md)
+### Inspecting revision information
+- [var revision: VTSuperResolutionScalerConfiguration.Revision](./revision-swift.property.md)
   The specific algorithm or configuration revision you use to perform the request.
-- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](./defaultrevision.md)
   Provides the default revision of a specific algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtsuperresolutionscalerconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./supportedrevisions.md)
   Provides the collection of currently supported algorithms or configuration revisions for the class of configuration.
 
 

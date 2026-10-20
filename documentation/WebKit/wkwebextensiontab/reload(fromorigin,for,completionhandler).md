@@ -1,7 +1,8 @@
 # reload(fromOrigin:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to reload the current page in the tab.
 
@@ -15,12 +16,20 @@ Called to reload the current page in the tab.
 ## Declaration
 
 ```swift
+optional func reload(fromOrigin: Bool, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func reload(fromOrigin: Bool, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) reloadFromOrigin:(BOOL) fromOrigin forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Reloads the tab’s web view via [`reload()`](wkwebview/reload().md) or [`reloadFromOrigin()`](wkwebview/reloadfromorigin().md) if not implemented.
+Reloads the tab’s web view via [`reload()`](../wkwebview/reload%28%29.md) or [`reloadFromOrigin()`](../wkwebview/reloadfromorigin%28%29.md) if not implemented.
 
 ## Parameters
 

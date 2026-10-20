@@ -1,7 +1,8 @@
 # configurationState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration state of the cell.
 
@@ -10,7 +11,7 @@ The current configuration state of the cell.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,21 +22,22 @@ The current configuration state of the cell.
 
 #### Discussion
 
-To add your own custom state, see [`UIConfigurationStateCustomKey`](uiconfigurationstatecustomkey.md).
+To add your own custom state, see [`UIConfigurationStateCustomKey`](../uiconfigurationstatecustomkey.md).
 
 ## See Also
 
-- [func setNeedsUpdateConfiguration()](uicollectionviewcell/setneedsupdateconfiguration.md)
+### Managing the state
+- [func setNeedsUpdateConfiguration()](./setneedsupdateconfiguration%28%29.md)
   Informs the cell to update its configuration for its current state.
-- [func updateConfiguration(using: UICellConfigurationState)](uicollectionviewcell/updateconfiguration(using:).md)
+- [func updateConfiguration(using: UICellConfigurationState)](./updateconfiguration%28using%29.md)
   Updates the cell’s configuration using the current state.
-- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](uicollectionviewcell/configurationupdatehandler-7rqbu.md)
+- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](./configurationupdatehandler-7rqbu.md)
   A block for handling updates to the cell’s configuration using the current state.
-- [UICollectionViewCell.ConfigurationUpdateHandler](uicollectionviewcell/configurationupdatehandler-swift.typealias.md)
+- [UICollectionViewCell.ConfigurationUpdateHandler](./configurationupdatehandler-swift.typealias.md)
   The type of block for handling updates to the cell’s configuration using the current state.
-- [var isSelected: Bool](uicollectionviewcell/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   The selection state of the cell.
-- [var isHighlighted: Bool](uicollectionviewcell/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   The highlight state of the cell.
 
 

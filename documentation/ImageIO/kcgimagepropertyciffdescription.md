@@ -1,7 +1,8 @@
 # kCGImagePropertyCIFFDescription
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The camera description.
 
@@ -20,13 +21,18 @@ The camera description.
 let kCGImagePropertyCIFFDescription: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyCIFFDescription;
+```
+
 ## See Also
 
-- [let kCGImagePropertyCIFFImageName: CFString](kcgimagepropertyciffimagename.md)
+### Image Details
+- [let kCGImagePropertyCIFFImageName: CFString](./kcgimagepropertyciffimagename.md)
   The image name.
-- [let kCGImagePropertyCIFFImageFileName: CFString](kcgimagepropertyciffimagefilename.md)
+- [let kCGImagePropertyCIFFImageFileName: CFString](./kcgimagepropertyciffimagefilename.md)
   The image file name.
-- [let kCGImagePropertyCIFFImageSerialNumber: CFString](kcgimagepropertyciffimageserialnumber.md)
+- [let kCGImagePropertyCIFFImageSerialNumber: CFString](./kcgimagepropertyciffimageserialnumber.md)
   The image serial number.
 
 

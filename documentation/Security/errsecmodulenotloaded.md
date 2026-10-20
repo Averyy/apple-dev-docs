@@ -1,7 +1,8 @@
 # errSecModuleNotLoaded
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A module was not loaded.
 
@@ -18,6 +19,10 @@ A module was not loaded.
 
 ```swift
 var errSecModuleNotLoaded: OSStatus { get }
+```
+
+```c
+errSecModuleNotLoaded
 ```
 
 

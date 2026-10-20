@@ -1,17 +1,24 @@
 # CLKComplicationServer
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the active complications for an app.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
 ```swift
 class CLKComplicationServer
+```
+
+```objc
+@interface CLKComplicationServer : NSObject
 ```
 
 #### Overview
@@ -21,42 +28,43 @@ Don’t create instances of this class directly. Instead, use the shared object 
 ## Topics
 
 ### Getting the Complication Server
-- [class func sharedInstance() -> Self](clkcomplicationserver/sharedinstance.md)
+- [class func sharedInstance() -> Self](./clkcomplicationserver/sharedinstance%28%29.md)
   Returns the shared complication server.
 ### Getting the Active Complications
-- [var activeComplications: [CLKComplication]?](clkcomplicationserver/activecomplications.md)
+- [var activeComplications: [CLKComplication]?](./clkcomplicationserver/activecomplications.md)
   The active complications for the current app.
 ### Updating Your Timeline Data
-- [func reloadTimeline(for: CLKComplication)](clkcomplicationserver/reloadtimeline(for:).md)
+- [func reloadTimeline(for: CLKComplication)](./clkcomplicationserver/reloadtimeline%28for%29.md)
   Invalidates your existing timeline data and triggers an update session to reload it.
-- [func extendTimeline(for: CLKComplication)](clkcomplicationserver/extendtimeline(for:).md)
+- [func extendTimeline(for: CLKComplication)](./clkcomplicationserver/extendtimeline%28for%29.md)
   Asks the system to extend the data in your complication’s timeline.
 ### Updating Complication Types
-- [func reloadComplicationDescriptors()](clkcomplicationserver/reloadcomplicationdescriptors.md)
+- [func reloadComplicationDescriptors()](./clkcomplicationserver/reloadcomplicationdescriptors%28%29.md)
   Reloads the complication descriptors from the complication data source.
 ### Getting the Time Travel Boundaries
-- [var earliestTimeTravelDate: Date](clkcomplicationserver/earliesttimetraveldate.md)
+- [var earliestTimeTravelDate: Date](./clkcomplicationserver/earliesttimetraveldate.md)
   The earliest Time Travel date for which you should provide data.
-- [var latestTimeTravelDate: Date](clkcomplicationserver/latesttimetraveldate.md)
+- [var latestTimeTravelDate: Date](./clkcomplicationserver/latesttimetraveldate.md)
   The latest date supported by Time Travel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplication](clkcomplication.md)
+### Other Symbols
+- [class CLKComplication](./clkcomplication.md)
   Metadata about a custom complication.
-- [class CLKComplicationTimelineEntry](clkcomplicationtimelineentry.md)
+- [class CLKComplicationTimelineEntry](./clkcomplicationtimelineentry.md)
   A container for the complication template object to display and the time to display it.
 
 

@@ -1,7 +1,8 @@
 # DisclosureGroupStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a disclosure group instance.
 
@@ -20,11 +21,12 @@ typealias Configuration = DisclosureGroupStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](disclosuregroupstyle/makebody(configuration:).md)
+### Creating custom disclosure group styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a disclosure group.
-- [struct DisclosureGroupStyleConfiguration](disclosuregroupstyleconfiguration.md)
+- [struct DisclosureGroupStyleConfiguration](../disclosuregroupstyleconfiguration.md)
   The properties of a disclosure group instance.
-- [associatedtype Body : View](disclosuregroupstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a disclosure group.
 
 

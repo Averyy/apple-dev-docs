@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of strides, in elements, one for each dimension of this tensor, if applicable.
@@ -18,6 +19,10 @@ An array of strides, in elements, one for each dimension of this tensor, if appl
 
 ```swift
 var strides: MTLTensorExtents? { get }
+```
+
+```objc
+@property (readonly, nullable) MTLTensorExtents * strides;
 ```
 
 #### Discussion

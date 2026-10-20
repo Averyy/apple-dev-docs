@@ -1,7 +1,8 @@
 # userAcceleration
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The acceleration that the user applies to the controller.
 
@@ -19,13 +20,18 @@ The acceleration that the user applies to the controller.
 var userAcceleration: GCAcceleration { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCAcceleration userAcceleration;
+```
+
 ## See Also
 
-- [var acceleration: GCAcceleration](gcmotion/acceleration.md)
+### Accessing Gravity and Acceleration Data
+- [var acceleration: GCAcceleration](./acceleration.md)
   The total acceleration of the controller that includes gravity and the acceleration the user applies to the controller.
-- [var gravity: GCAcceleration](gcmotion/gravity.md)
+- [var gravity: GCAcceleration](./gravity.md)
   The gravity acceleration vector from the controller’s reference frame.
-- [struct GCAcceleration](gcacceleration.md)
+- [struct GCAcceleration](../gcacceleration.md)
   A three-dimensional acceleration vector.
 
 

@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of environment variables to set in a new app instance.
 
@@ -14,6 +15,10 @@ The set of environment variables to set in a new app instance.
 var environment: [String : String] { get set }
 ```
 
+```objc
+@property (copy) NSDictionary<NSString *,NSString *> * environment;
+```
+
 #### Discussion
 
 The default value of this property is an empty dictionary. When launching a new instance of an app, use this property to specify the key/value pairs for any environment variables.
@@ -22,11 +27,12 @@ If the calling process is sandboxed, the system ignores the value of this proper
 
 ## See Also
 
-- [var appleEvent: NSAppleEventDescriptor?](nsworkspace/openconfiguration/appleevent.md)
+### Specifying launch attributes
+- [var appleEvent: NSAppleEventDescriptor?](./appleevent.md)
   The first Apple event to send to the new app.
-- [var arguments: [String]](nsworkspace/openconfiguration/arguments.md)
+- [var arguments: [String]](./arguments.md)
   The set of command-line arguments to pass to a new app instance at launch time.
-- [var architecture: cpu_type_t](nsworkspace/openconfiguration/architecture.md)
+- [var architecture: cpu_type_t](./architecture.md)
   The architecture version of the app to launch.
 
 

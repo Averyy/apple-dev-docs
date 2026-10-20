@@ -1,7 +1,8 @@
 # hour
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hour of the year, in UTC.
 

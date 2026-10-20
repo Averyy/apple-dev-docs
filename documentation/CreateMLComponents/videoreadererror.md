@@ -1,7 +1,8 @@
 # VideoReaderError
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Video loader errors.
 
@@ -22,61 +23,62 @@ enum VideoReaderError
 ## Topics
 
 ### Analyzing the error
-- [VideoReaderError.cameraAuthorizationDenied](videoreadererror/cameraauthorizationdenied.md)
+- [VideoReaderError.cameraAuthorizationDenied](./videoreadererror/cameraauthorizationdenied.md)
   An error that indicates that the camera authorization status is denied. The user has explicitly denied permission for media capture.
-- [VideoReaderError.cameraAuthorizationRestricted](videoreadererror/cameraauthorizationrestricted.md)
+- [VideoReaderError.cameraAuthorizationRestricted](./videoreadererror/cameraauthorizationrestricted.md)
   An error that indicates that the camera authorization status is restricted. The user is not allowed to access media capture devices.
-- [VideoReaderError.frameRateNotSupported(_:)](videoreadererror/frameratenotsupported(_:).md)
+- [VideoReaderError.frameRateNotSupported(_:)](./videoreadererror/frameratenotsupported%28_%29.md)
   An error that indicates that the frame rate is not supported by the input camera.
-- [VideoReaderError.missingVideoTrack(_:)](videoreadererror/missingvideotrack(_:).md)
+- [VideoReaderError.missingVideoTrack(_:)](./videoreadererror/missingvideotrack%28_%29.md)
   An error that indicates that the VideoReader cannot find a video track.
-- [VideoReaderError.sourceCameraNotAvailable](videoreadererror/sourcecameranotavailable.md)
+- [VideoReaderError.sourceCameraNotAvailable](./videoreadererror/sourcecameranotavailable.md)
   An error that indicates that no cameras are available.
-- [VideoReaderError.captureSessionStopped](videoreadererror/capturesessionstopped.md)
+- [VideoReaderError.captureSessionStopped](./videoreadererror/capturesessionstopped.md)
   An error that indicates that the capture session stopped.
 ### Getting the debug description
-- [var debugDescription: String](videoreadererror/debugdescription.md)
+- [var debugDescription: String](./videoreadererror/debugdescription.md)
   A text representation of the error.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](videoreadererror/customdebugstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./videoreadererror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum AudioPreprocessingError](audiopreprocessingerror.md)
+### Errors
+- [enum AudioPreprocessingError](./audiopreprocessingerror.md)
   Audio preprocessing errors.
-- [enum AudioReaderError](audioreadererror.md)
+- [enum AudioReaderError](./audioreadererror.md)
   Audio reader errors.
-- [enum CompatibilityError](compatibilityerror.md)
+- [enum CompatibilityError](./compatibilityerror.md)
   A compatibility error.
-- [enum ConcatenationError](concatenationerror.md)
+- [enum ConcatenationError](./concatenationerror.md)
   Errors thrown when concatenating numeric values.
-- [enum DatasetError](dataseterror.md)
+- [enum DatasetError](./dataseterror.md)
   Dataset processing errors.
-- [enum EstimatorEncodingError](estimatorencodingerror.md)
+- [enum EstimatorEncodingError](./estimatorencodingerror.md)
   An estimator encoding error.
-- [enum ModelCompatibilityError](modelcompatibilityerror.md)
+- [enum ModelCompatibilityError](./modelcompatibilityerror.md)
   Errors related to CoreML model compatibility.
-- [enum ModelUpdateError](modelupdateerror.md)
+- [enum ModelUpdateError](./modelupdateerror.md)
   An updatable model error.
-- [enum OptimizationError](optimizationerror.md)
+- [enum OptimizationError](./optimizationerror.md)
   An optimization error.
-- [enum PipelineDataError](pipelinedataerror.md)
+- [enum PipelineDataError](./pipelinedataerror.md)
   Errors related to pipeline data affinity problems.
-- [enum SerializationError](serializationerror.md)
+- [enum SerializationError](./serializationerror.md)
   A serialization error.
-- [enum TabularPipelineDataError](tabularpipelinedataerror.md)
+- [enum TabularPipelineDataError](./tabularpipelinedataerror.md)
   Errors related to tabular pipeline data affinity problems.
 
 

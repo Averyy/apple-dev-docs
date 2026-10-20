@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency of the subscription’s renewal price.
 
@@ -23,17 +24,18 @@ var currency: Locale.Currency? { get }
 
 #### Discussion
 
-The [`currency`](product/subscriptioninfo/renewalinfo/currency.md) value applies to the product’s [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) instance.
+The [`currency`](./currency.md) value applies to the product’s [`renewalPrice`](./renewalprice.md) instance.
 
-> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
+> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
-Don’t use [`currency`](product/subscriptioninfo/renewalinfo/currency.md) to infer the storefront. Use the [`storefront`](transaction/storefront.md) value in the transaction instead.
+Don’t use [`currency`](./currency.md) to infer the storefront. Use the [`storefront`](../../../transaction/storefront.md) value in the transaction instead.
 
-To access the renewal price currency on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9, use [`currencyCode`](product/subscriptioninfo/renewalinfo/currencycode.md).
+To access the renewal price currency on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9, use [`currencyCode`](./currencycode.md).
 
 ## See Also
 
-- [var renewalPrice: Decimal?](product/subscriptioninfo/renewalinfo/renewalprice.md)
+### Getting the renewal price and currency
+- [var renewalPrice: Decimal?](./renewalprice.md)
   The renewal price of the auto-renewable subscription that renews at the next billing period.
 
 

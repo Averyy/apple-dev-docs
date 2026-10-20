@@ -1,7 +1,8 @@
 # isCanonical
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the instance’s representation is in its canonical form.
 
@@ -22,7 +23,7 @@ var isCanonical: Bool { get }
 
 #### Discussion
 
-The [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933) defines a *canonical*, or preferred, encoding of a floating-point value. On platforms that fully support IEEE 754, every `Float` or `Double` value is canonical, but non-canonical values can exist on other platforms or for other types. Some examples:
+The [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933) defines a *canonical*, or preferred, encoding of a floating-point value. On platforms that fully support IEEE 754, every `Float` or `Double` value is canonical, but non-canonical values can exist on other platforms or for other types. Some examples:
 
 - On platforms that flush subnormal numbers to zero (such as armv7 with the default floating-point environment), Swift interprets subnormal `Float` and `Double` values as non-canonical zeros. (In Swift 5.1 and earlier, `isCanonical` is `true` for these values, which is the incorrect value.)
 - On i386 and x86_64, `Float80` has a number of non-canonical encodings. “Pseudo-NaNs”, “pseudo-infinities”, and “unnormals” are interpreted as non-canonical NaN encodings. “Pseudo-denormals” are interpreted as non-canonical encodings of subnormal values.
@@ -30,21 +31,22 @@ The [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee
 
 ## See Also
 
-- [var isZero: Bool](float/iszero.md)
+### Querying a Float’s State
+- [var isZero: Bool](./iszero.md)
   A Boolean value indicating whether the instance is equal to zero.
-- [var isFinite: Bool](float/isfinite.md)
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value indicating whether this instance is finite.
-- [var isInfinite: Bool](float/isinfinite.md)
+- [var isInfinite: Bool](./isinfinite.md)
   A Boolean value indicating whether the instance is infinite.
-- [var isNaN: Bool](float/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value indicating whether the instance is NaN (“not a number”).
-- [var isSignalingNaN: Bool](float/issignalingnan.md)
+- [var isSignalingNaN: Bool](./issignalingnan.md)
   A Boolean value indicating whether the instance is a signaling NaN.
-- [var isNormal: Bool](float/isnormal.md)
+- [var isNormal: Bool](./isnormal.md)
   A Boolean value indicating whether this instance is normal.
-- [var isSubnormal: Bool](float/issubnormal.md)
+- [var isSubnormal: Bool](./issubnormal.md)
   A Boolean value indicating whether the instance is subnormal.
-- [var floatingPointClass: FloatingPointClassification](float/floatingpointclass.md)
+- [var floatingPointClass: FloatingPointClassification](./floatingpointclass.md)
   The classification of this value.
 
 

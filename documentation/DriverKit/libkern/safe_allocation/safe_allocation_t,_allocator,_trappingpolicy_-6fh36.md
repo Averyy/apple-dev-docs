@@ -1,17 +1,18 @@
 # safe_allocation<T, Allocator, TrappingPolicy>
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 explicit safe_allocation<T, Allocator, TrappingPolicy>(T * *data, size_t n, adopt_memory_t );
 ```
 

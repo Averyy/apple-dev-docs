@@ -1,6 +1,7 @@
 # Privacy manifest files
 
-**Framework**: Bundle Resources
+**Framework**: Bundle Resources  
+**Role**: API Collection
 
 Describe the data your app or third-party SDK collects and the required reasons APIs it uses.
 
@@ -13,11 +14,11 @@ Apps and third-party SDKs — distributed as XCFrameworks, Swift packages, or Xc
 
 For each type of data your app or third-party SDK collects and category of required reasons API it uses, the app or third-party SDK needs to record the reasons in its bundled privacy manifest file.
 
-> ❗ **Important**:  You need to include a privacy manifest file in your third-party SDK if it’s listed in “SDKs that require a privacy manifest and signature,” in [`Upcoming third-party SDK requirements`](https://developer.apple.comhttps://developer.apple.com/support/third-party-SDK-requirements/). Otherwise, include a privacy manifest file in your third-party SDK if it uses a required reasons API, collects data about the person using apps that include the third-party SDK, enables the app to collect data about people using the app, or contacts tracking domains. Providing a privacy manifest file helps app developers understand the API use and data-collection practices of your third-party SDK.
+> ❗ **Important**:  You need to include a privacy manifest file in your third-party SDK if it’s listed in “SDKs that require a privacy manifest and signature,” in [Upcoming third-party SDK requirements](https://developer.apple.com/support/third-party-SDK-requirements/). Otherwise, include a privacy manifest file in your third-party SDK if it uses a required reasons API, collects data about the person using apps that include the third-party SDK, enables the app to collect data about people using the app, or contacts tracking domains. Providing a privacy manifest file helps app developers understand the API use and data-collection practices of your third-party SDK.
 
-For information on editing the privacy manifest file, see [`Editing property list files`](https://developer.apple.com/documentation/xcode/editing-property-list-files).
+For information on editing the privacy manifest file, see [Editing property list files](../Xcode/editing-property-list-files.md).
 
-##### Create a Privacy Manifest
+##### Create a privacy manifest
 
 To add the privacy manifest to your app or third-party SDK in Xcode, follow these steps:
 
@@ -33,30 +34,31 @@ By default, the file is named `PrivacyInfo.xcprivacy`; this is the required file
 
 At the top level of this property list file, add the following keys to the dictionary:
 
-- **[`NSPrivacyTracking`](app-privacy-configuration/nsprivacytracking.md)**: A Boolean that indicates whether your app or third-party SDK uses data for tracking as defined under the App Tracking Transparency framework. When set to `true` you need to provide a list of internet domains in `NSPrivacyTrackingDomains`. For more information, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
-- **[`NSPrivacyTrackingDomains`](app-privacy-configuration/nsprivacytrackingdomains.md)**: An array of strings that lists the internet domains your app or third-party SDK connects to that engage in tracking. If the user has not granted tracking permission through the App Tracking Transparency framework, network requests to these domains fail and your app receives an error. To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPrivacyTracking` to `true`.
-- **[`NSPrivacyCollectedDataTypes`](app-privacy-configuration/nsprivacycollecteddatatypes.md)**: An array of dictionaries that describes the data types your app or third-party SDK collects. For information on the keys and values to use in the dictionaries, see [`Describing data use in privacy manifests`](describing-data-use-in-privacy-manifests.md).
-- **[`NSPrivacyAccessedAPITypes`](app-privacy-configuration/nsprivacyaccessedapitypes.md)**: An array of dictionaries that describe the API types your app or third-party SDK accesses that have been designated as APIs that require reasons to access. For information on the keys and values to use in the dictionaries, see [`Describing use of required reason API`](describing-use-of-required-reason-api.md).
+- **[`NSPrivacyTracking`](./app-privacy-configuration/nsprivacytracking.md)**: A Boolean that indicates whether your app or third-party SDK uses data for tracking as defined under the App Tracking Transparency framework. When set to `true` you need to provide a list of internet domains in `NSPrivacyTrackingDomains`. For more information, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/).
+- **[`NSPrivacyTrackingDomains`](./app-privacy-configuration/nsprivacytrackingdomains.md)**: An array of strings that lists the internet domains your app or third-party SDK connects to that engage in tracking. If the user has not granted tracking permission through the App Tracking Transparency framework, network requests to these domains fail and your app receives an error. To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPrivacyTracking` to `true`.
+- **[`NSPrivacyCollectedDataTypes`](./app-privacy-configuration/nsprivacycollecteddatatypes.md)**: An array of dictionaries that describes the data types your app or third-party SDK collects. For information on the keys and values to use in the dictionaries, see [Describing data use in privacy manifests](./describing-data-use-in-privacy-manifests.md).
+- **[`NSPrivacyAccessedAPITypes`](./app-privacy-configuration/nsprivacyaccessedapitypes.md)**: An array of dictionaries that describe the API types your app or third-party SDK accesses that have been designated as APIs that require reasons to access. For information on the keys and values to use in the dictionaries, see [Describing use of required reason API](./describing-use-of-required-reason-api.md).
 
 ## Topics
 
 ### Essentials
-- [Adding a privacy manifest to your app or third-party SDK](adding-a-privacy-manifest-to-your-app-or-third-party-sdk.md)
+- [Adding a privacy manifest to your app or third-party SDK](./adding-a-privacy-manifest-to-your-app-or-third-party-sdk.md)
   Report the data you collect and the required reasons API you use in your app or third-party SDK.
-- [Describing data use in privacy manifests](describing-data-use-in-privacy-manifests.md)
+- [Describing data use in privacy manifests](./describing-data-use-in-privacy-manifests.md)
   Declare the data collected by your app or by third-party SDKs.
-- [Describing use of required reason API](describing-use-of-required-reason-api.md)
+- [Describing use of required reason API](./describing-use-of-required-reason-api.md)
   Ensure your use of covered API is consistent with policy.
-- [Editing property list files](../xcode/editing-property-list-files.md)
+- [Editing property list files](../Xcode/editing-property-list-files.md)
   Add, remove, and change keys and values in a structured file.
-- [App Privacy Configuration](app-privacy-configuration.md)
+- [App Privacy Configuration](./app-privacy-configuration.md)
   A data structure that represents the root object in a privacy manifest file.
 
 ## See Also
 
-- [Entitlements](entitlements.md)
+### Property Lists
+- [Entitlements](./entitlements.md)
   Key-value pairs that grant an executable permission to use a service or technology.
-- [Information Property List](information-property-list.md)
+- [Information Property List](./information-property-list.md)
   A resource containing key-value pairs that identify and configure a bundle.
 
 

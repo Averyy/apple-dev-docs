@@ -1,7 +1,8 @@
 # contentMargins(for:edges:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The insets of a content margin guide for the given edges.
 

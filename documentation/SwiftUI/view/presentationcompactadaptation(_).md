@@ -1,7 +1,8 @@
 # presentationCompactAdaptation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies how to adapt a presentation to compact size classes.
 
@@ -23,7 +24,7 @@ func presentationCompactAdaptation(_ adaptation: PresentationAdaptation) -> some
 
 #### Discussion
 
-Some presentations adapt their appearance depending on the context. For example, a sheet presentation over a vertically-compact view uses a full-screen-cover appearance by default. Use this modifier to indicate a custom adaptation preference. For example, the following code uses a presentation adaptation value of [`none`](presentationadaptation/none.md) to request that the system not adapt the sheet in compact size classes:
+Some presentations adapt their appearance depending on the context. For example, a sheet presentation over a vertically-compact view uses a full-screen-cover appearance by default. Use this modifier to indicate a custom adaptation preference. For example, the following code uses a presentation adaptation value of [`none`](../presentationadaptation/none.md) to request that the system not adapt the sheet in compact size classes:
 
 ```swift
 struct ContentView: View {
@@ -42,7 +43,7 @@ struct ContentView: View {
 }
 ```
 
-If you want to specify different adaptations for each dimension, use the [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) method instead.
+If you want to specify different adaptations for each dimension, use the [`presentationCompactAdaptation(horizontal:vertical:)`](./presentationcompactadaptation%28horizontal,vertical%29.md) method instead.
 
 ## Parameters
 
@@ -50,17 +51,18 @@ If you want to specify different adaptations for each dimension, use the [`prese
 
 ## See Also
 
-- [func presentationCompactAdaptation(horizontal: PresentationAdaptation, vertical: PresentationAdaptation) -> some View](view/presentationcompactadaptation(horizontal:vertical:).md)
+### Adapting a presentation size
+- [func presentationCompactAdaptation(horizontal: PresentationAdaptation, vertical: PresentationAdaptation) -> some View](./presentationcompactadaptation%28horizontal,vertical%29.md)
   Specifies how to adapt a presentation to horizontally and vertically compact size classes.
-- [struct PresentationAdaptation](presentationadaptation.md)
+- [struct PresentationAdaptation](../presentationadaptation.md)
   Strategies for adapting a presentation to a different size class.
-- [func presentationSizing(some PresentationSizing) -> some View](view/presentationsizing(_:).md)
+- [func presentationSizing(some PresentationSizing) -> some View](./presentationsizing%28_%29.md)
   Sets the sizing of the containing presentation.
-- [protocol PresentationSizing](presentationsizing.md)
+- [protocol PresentationSizing](../presentationsizing.md)
   A type that defines the size of the presentation content and how the presentation size adjusts to its content’s size changing.
-- [struct PresentationSizingRoot](presentationsizingroot.md)
+- [struct PresentationSizingRoot](../presentationsizingroot.md)
   A proxy to a view provided to the presentation with a defined presentation size.
-- [struct PresentationSizingContext](presentationsizingcontext.md)
+- [struct PresentationSizingContext](../presentationsizingcontext.md)
   Contextual information about a presentation.
 
 

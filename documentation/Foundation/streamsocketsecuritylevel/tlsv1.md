@@ -1,7 +1,8 @@
 # tlSv1
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that TLS version 1 be set as the security protocol for a socket stream.
 
@@ -20,15 +21,20 @@ Specifies that TLS version 1 be set as the security protocol for a socket stream
 static let tlSv1: StreamSocketSecurityLevel
 ```
 
+```c
+extern NSStreamSocketSecurityLevel const NSStreamSocketSecurityLevelTLSv1;
+```
+
 ## See Also
 
-- [static let negotiatedSSL: StreamSocketSecurityLevel](streamsocketsecuritylevel/negotiatedssl.md)
+### Type Properties
+- [static let negotiatedSSL: StreamSocketSecurityLevel](./negotiatedssl.md)
   Specifies that the highest level security protocol that can be negotiated be set as the security protocol for a socket stream.
-- [static let none: StreamSocketSecurityLevel](streamsocketsecuritylevel/none.md)
+- [static let none: StreamSocketSecurityLevel](./none.md)
   Specifies that no security level be set for a socket stream.
-- [static let ssLv2: StreamSocketSecurityLevel](streamsocketsecuritylevel/sslv2.md)
+- [static let ssLv2: StreamSocketSecurityLevel](./sslv2.md)
   Specifies that SSL version 2 be set as the security protocol for a socket stream.
-- [static let ssLv3: StreamSocketSecurityLevel](streamsocketsecuritylevel/sslv3.md)
+- [static let ssLv3: StreamSocketSecurityLevel](./sslv3.md)
   Specifies that SSL version 3 be set as the security protocol for a socket stream.
 
 

@@ -1,7 +1,8 @@
 # AppSchema.SystemIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the system domain.
 
@@ -21,25 +22,26 @@ protocol SystemIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var open: some AppSchemaIntent](appschema/systemintent/open.md)
+- [var open: some AppSchemaIntent](./systemintent/open.md)
   An intent schema that opens an item in the application.
-- [var search: some AppSchemaIntent](appschema/systemintent/search.md)
+- [var search: some AppSchemaIntent](./systemintent/search.md)
   An intent schema that navigates to search results.
-- [var searchInApp: some AppSchemaIntent](appschema/systemintent/searchinapp.md)
+- [var searchInApp: some AppSchemaIntent](./systemintent/searchinapp.md)
   An intent schema that navigates to search results.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var open: some AppSchemaIntent](appschema/systemintent/open.md)
+### Actions
+- [var open: some AppSchemaIntent](./systemintent/open.md)
   An intent schema that opens an item in the application.
-- [var searchInApp: some AppSchemaIntent](appschema/systemintent/searchinapp.md)
+- [var searchInApp: some AppSchemaIntent](./systemintent/searchinapp.md)
   An intent schema that navigates to search results.
 
 

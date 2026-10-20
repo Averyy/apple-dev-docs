@@ -1,7 +1,8 @@
 # meshCollidersUpdateInterval
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of time steps between updates to the mesh colliders in the simulation.
 
@@ -22,7 +23,7 @@ In this context, a mesh collider update is referring to when the collider applie
 
 The mesh colliders are guaranteed to update on the last time step of each update. This ensures that all collisions have been applied right before the next frame is rendered. As example, the mesh colliders will update on the following steps if the interval is `2` and the update is advancing `8` time steps.
 
-```None
+```
 Step 1: Mesh colliders update.
 Step 2:
 Step 3:
@@ -37,15 +38,16 @@ Must be non-negative; negative values are clamped to zero. If zero, the mesh col
 
 ## See Also
 
-- [var timeStep: Float](clothsimulationcomponent/timestep.md)
+### Controlling simulation timing
+- [var timeStep: Float](./timestep.md)
   The amount of time the simulation advances each time step, in seconds.
-- [var maximumStepsPerUpdate: ClothSimulationComponent.MaximumStepsPerUpdate](clothsimulationcomponent/maximumstepsperupdate-swift.property.md)
+- [var maximumStepsPerUpdate: ClothSimulationComponent.MaximumStepsPerUpdate](./maximumstepsperupdate-swift.property.md)
   The maximum number of time steps that the simulation can advance each update.
-- [ClothSimulationComponent.MaximumStepsPerUpdate](clothsimulationcomponent/maximumstepsperupdate-swift.struct.md)
+- [ClothSimulationComponent.MaximumStepsPerUpdate](./maximumstepsperupdate-swift.struct.md)
   The maximum number of time steps that can be processed per simulation update.
-- [var speedLimit: ClothSimulationComponent.SpeedLimit](clothsimulationcomponent/speedlimit-swift.property.md)
+- [var speedLimit: ClothSimulationComponent.SpeedLimit](./speedlimit-swift.property.md)
   The speed limit configuration of the simulation.
-- [ClothSimulationComponent.SpeedLimit](clothsimulationcomponent/speedlimit-swift.struct.md)
+- [ClothSimulationComponent.SpeedLimit](./speedlimit-swift.struct.md)
   Whether the speed of cloth bodies should be limited to improve self-collision robustness.
 
 

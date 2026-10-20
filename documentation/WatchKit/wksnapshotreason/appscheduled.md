@@ -1,7 +1,8 @@
 # WKSnapshotReason.appScheduled
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app scheduled this snapshot.
 
@@ -14,21 +15,26 @@ The app scheduled this snapshot.
 case appScheduled
 ```
 
+```c
+WKSnapshotReasonAppScheduled
+```
+
 #### Discussion
 
-You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkextension/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method and passing [`true`](https://developer.apple.com/documentation/swift/true).
+You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](../wkextension/schedulesnapshotrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](../wkrefreshbackgroundtask/settaskcompletedwithsnapshot%28_%29.md) method and passing [`true`](../../Swift/true.md).
 
 These snapshot refresh tasks are only triggered when the watchOS app is in the dock.
 
 ## See Also
 
-- [WKSnapshotReason.appBackgrounded](wksnapshotreason/appbackgrounded.md)
+### Enumeration Cases
+- [WKSnapshotReason.appBackgrounded](./appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [WKSnapshotReason.complicationUpdate](wksnapshotreason/complicationupdate.md)
+- [WKSnapshotReason.complicationUpdate](./complicationupdate.md)
   The app updated the complication timeline.
-- [WKSnapshotReason.prelaunch](wksnapshotreason/prelaunch.md)
+- [WKSnapshotReason.prelaunch](./prelaunch.md)
   The system needs a snapshot for the dock, but the app has not been launched yet.
-- [WKSnapshotReason.returnToDefaultState](wksnapshotreason/returntodefaultstate.md)
+- [WKSnapshotReason.returnToDefaultState](./returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

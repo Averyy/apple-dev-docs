@@ -1,7 +1,8 @@
 # HMCharacteristicValueVolumeControlType.none
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t have volume control functionality.
 
@@ -19,13 +20,18 @@ The device doesn’t have volume control functionality.
 case none
 ```
 
+```c
+HMCharacteristicValueVolumeControlTypeNone
+```
+
 ## See Also
 
-- [HMCharacteristicValueVolumeControlType.absolute](hmcharacteristicvaluevolumecontroltype/absolute.md)
+### Volume types
+- [HMCharacteristicValueVolumeControlType.absolute](./absolute.md)
   The volume sets to a specific level.
-- [HMCharacteristicValueVolumeControlType.relative](hmcharacteristicvaluevolumecontroltype/relative.md)
+- [HMCharacteristicValueVolumeControlType.relative](./relative.md)
   The volume adjusts incrementally, without taking the current level into consideration.
-- [HMCharacteristicValueVolumeControlType.relativeWithCurrent](hmcharacteristicvaluevolumecontroltype/relativewithcurrent.md)
+- [HMCharacteristicValueVolumeControlType.relativeWithCurrent](./relativewithcurrent.md)
   The volume adjusts incrementally, relative to current level.
 
 

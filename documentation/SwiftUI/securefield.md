@@ -1,7 +1,8 @@
 # SecureField
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control into which people securely enter private text.
 
@@ -23,15 +24,15 @@ struct SecureField<Label> where Label : View
 
 #### Overview
 
-Use a secure field when you want the behavior of a [`TextField`](textfield.md), but you want to hide the field’s text. Typically, you use this for entering passwords and other sensitive information, as the second field in the following screenshot demonstrates:
+Use a secure field when you want the behavior of a [`TextField`](./textfield.md), but you want to hide the field’s text. Typically, you use this for entering passwords and other sensitive information, as the second field in the following screenshot demonstrates:
 
 **macOS**:
 
-![Two vertically arranged wide rectangles filled with text. The first displays the email address mruiz2@icloud.com, and the second displays eight heavey dots in place of characters.](/images/com.apple.SwiftUI/SecureField-1-macOS@2x.png)
+![Two vertically arranged wide rectangles filled with text. The first displays the email address mruiz2@icloud.com, and the second displays eight heavey dots in place of characters.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SecureField-1-macOS@2x.png)
 
 **iOS**:
 
-![Two vertically arranged wide rectangles filled with text. The first displays the email address mruiz2@icloud.com, and the second displays eight heavey dots in place of characters.](/images/com.apple.SwiftUI/SecureField-1-iOS@2x.png)
+![Two vertically arranged wide rectangles filled with text. The first displays the email address mruiz2@icloud.com, and the second displays eight heavey dots in place of characters.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SecureField-1-iOS@2x.png)
 
 The field:
 
@@ -40,7 +41,7 @@ The field:
 - Prevents anyone from cutting or copying the field’s contents.
 - Displays an indicator when Caps Lock is enabled.
 
-##### Bind to a String
+##### Bind to a string
 
 A secure field binds to a string value and updates the string on every keystroke or other edit, so you can read its value at any time from elsewhere in your code. The following code shows how to create the above interface, with the secure field bound to a `password` string:
 
@@ -65,11 +66,11 @@ var body: some View {
 }
 ```
 
-The field in the above example has an [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier that sends the `username` and `password` strings to a custom `handleLogin(username:password:)` method if someone presses the Return key while the secure field has focus. You can alternatively provide another mechanism — like a button — to do the same thing.
+The field in the above example has an [`onSubmit(of:_:)`](./view/onsubmit%28of,_%29.md) modifier that sends the `username` and `password` strings to a custom `handleLogin(username:password:)` method if someone presses the Return key while the secure field has focus. You can alternatively provide another mechanism — like a button — to do the same thing.
 
-##### Guide People with a Prompt
+##### Guide people with a prompt
 
-In addition to the string or view that you provide as a label, you can also provide a [`Text`](text.md) view prompt to help guide someone who uses the field, as the following [`Form`](form.md) does:
+In addition to the string or view that you provide as a label, you can also provide a [`Text`](./text.md) view prompt to help guide someone who uses the field, as the following [`Form`](./form.md) does:
 
 ```swift
 Form {
@@ -91,48 +92,49 @@ The system uses the label and prompt in different ways depending on the context.
 
 **macOS**:
 
-![Two vertically wide rectangles filled with the string Required. The string appears in a secondary color. The word Username appear to the left of the top rectangle, and the word Password appears to the left of the bottom rectangle. The two words are right aligned with each other.](/images/com.apple.SwiftUI/SecureField-2-macOS@2x.png)
+![Two vertically wide rectangles filled with the string Required. The string appears in a secondary color. The word Username appear to the left of the top rectangle, and the word Password appears to the left of the bottom rectangle. The two words are right aligned with each other.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SecureField-2-macOS@2x.png)
 
 **iOS**:
 
-![A wide rectangle that's divided in half vertically by a horizontal dividing line. The two halves of the rectangle, both top and bottom, have the word Required in them. The words are aligned with each other, and appear near the left side of the rectangle. The words and the dividing line appear in a light gray color.](/images/com.apple.SwiftUI/SecureField-2-iOS@2x.png)
+![A wide rectangle that's divided in half vertically by a horizontal dividing line. The two halves of the rectangle, both top and bottom, have the word Required in them. The words are aligned with each other, and appear near the left side of the rectangle. The words and the dividing line appear in a light gray color.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SecureField-2-iOS@2x.png)
 
 If you remove the prompt from the previous example, the field keeps the label on the leading edge and omits the placeholder text in macOS, but displays the label as a placeholder in iOS:
 
 **macOS**:
 
-![Two vertically wide, empty rectangles. The word Username appear to the left of the top rectangle, and the word Password appears to the left of the bottom rectangle. The two words are right aligned with each other.](/images/com.apple.SwiftUI/SecureField-3-macOS@2x.png)
+![Two vertically wide, empty rectangles. The word Username appear to the left of the top rectangle, and the word Password appears to the left of the bottom rectangle. The two words are right aligned with each other.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SecureField-3-macOS@2x.png)
 
 **iOS**:
 
-![A wide rectangle that's divided in half vertically by a horizontal dividing line. The two halves of the rectangle, both top and bottom, have a word in them. The top half has the word Username, and the bottom half has the word Password. The words are aligned with each other, and appear near the left side of the rectangle. The words and the dividing line appear in a light gray color.](/images/com.apple.SwiftUI/SecureField-3-iOS@2x.png)
+![A wide rectangle that's divided in half vertically by a horizontal dividing line. The two halves of the rectangle, both top and bottom, have a word in them. The top half has the word Username, and the bottom half has the word Password. The words are aligned with each other, and appear near the left side of the rectangle. The words and the dividing line appear in a light gray color.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SecureField-3-iOS@2x.png)
 
 ## Topics
 
 ### Creating a secure text field
-- [init(_:text:)](securefield/init(_:text:).md)
+- [init(_:text:)](./securefield/init%28_,text%29.md)
   Creates a secure field with a prompt generated from a `Text`.
-- [init(_:text:prompt:)](securefield/init(_:text:prompt:).md)
+- [init(_:text:prompt:)](./securefield/init%28_,text,prompt%29.md)
   Creates a secure field with a prompt generated from a `Text`.
-- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](securefield/init(text:prompt:label:).md)
+- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](./securefield/init%28text,prompt,label%29.md)
   Creates a secure field with a prompt generated from a `Text`.
-- [init(_:text:onCommit:)](securefield/init(_:text:oncommit:).md)
+- [init(_:text:onCommit:)](./securefield/init%28_,text,oncommit%29.md)
   Creates an instance.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+### Getting text input
+- [Building rich SwiftUI text experiences](./building-rich-swiftui-text-experiences.md)
   Build an editor for formatted text using SwiftUI text editor views and attributed strings.
-- [struct TextField](textfield.md)
+- [struct TextField](./textfield.md)
   A control that displays an editable text interface.
-- [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
   Sets the style for text fields within this view.
-- [struct TextEditor](texteditor.md)
+- [struct TextEditor](./texteditor.md)
   A view that can display and edit long-form text.
 
 

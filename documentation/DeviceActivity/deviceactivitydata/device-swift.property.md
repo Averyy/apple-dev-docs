@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the device associated with the activity report.
 
@@ -18,11 +19,12 @@ var device: DeviceActivityData.Device
 
 ## See Also
 
-- [var user: DeviceActivityData.User](deviceactivitydata/user-swift.property.md)
+### Accessing device and user information
+- [var user: DeviceActivityData.User](./user-swift.property.md)
   Access the person associated with the activity report.
-- [DeviceActivityData.User](deviceactivitydata/user-swift.struct.md)
+- [DeviceActivityData.User](./user-swift.struct.md)
   Information about a person associated with an activity report.
-- [DeviceActivityData.Device](deviceactivitydata/device-swift.struct.md)
+- [DeviceActivityData.Device](./device-swift.struct.md)
   Device information for activity reporting.
 
 

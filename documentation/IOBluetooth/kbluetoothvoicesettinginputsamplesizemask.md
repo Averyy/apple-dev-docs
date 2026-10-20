@@ -1,10 +1,11 @@
 # kBluetoothVoiceSettingInputSampleSizeMask
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothVoiceSettingInputSampleSizeMask: Int { get }
 ```
 
+```c
+kBluetoothVoiceSettingInputSampleSizeMask
+```
+
 ## See Also
 
-- [var kBluetoothVoiceSettingInputSampleSize16Bit: Int](kbluetoothvoicesettinginputsamplesize16bit.md)
-- [var kBluetoothVoiceSettingInputSampleSize8Bit: Int](kbluetoothvoicesettinginputsamplesize8bit.md)
+### Constants
+- [var kBluetoothVoiceSettingInputSampleSize16Bit: Int](./kbluetoothvoicesettinginputsamplesize16bit.md)
+- [var kBluetoothVoiceSettingInputSampleSize8Bit: Int](./kbluetoothvoicesettinginputsamplesize8bit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether two values are equal.
 ```swift
 static func == (lhs: AsyncThrowingStream<Element, Failure>.Continuation, rhs: AsyncThrowingStream<Element, Failure>.Continuation) -> Bool
 ```
+
+Available when `Failure` conforms to `Error`.
 
 #### Discussion
 

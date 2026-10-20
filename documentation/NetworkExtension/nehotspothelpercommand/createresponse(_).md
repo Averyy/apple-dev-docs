@@ -1,7 +1,8 @@
 # createResponse(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a response to the command.
 
@@ -17,6 +18,10 @@ Create a response to the command.
 func createResponse(_ result: NEHotspotHelperResult) -> NEHotspotHelperResponse
 ```
 
+```objc
+- (NEHotspotHelperResponse *) createResponse:(NEHotspotHelperResult) result;
+```
+
 #### Return Value
 
 A NEHotspostHelperResponse object.
@@ -27,7 +32,8 @@ A NEHotspostHelperResponse object.
 
 ## See Also
 
-- [enum NEHotspotHelperResult](nehotspothelperresult.md)
+### Response creation
+- [enum NEHotspotHelperResult](../nehotspothelperresult.md)
   The result of handling a hotspot command.
 
 

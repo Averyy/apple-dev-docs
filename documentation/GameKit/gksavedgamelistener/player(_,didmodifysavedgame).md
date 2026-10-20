@@ -1,7 +1,8 @@
 # player(_:didModifySavedGame:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when data changes in a saved game file.
 
@@ -16,6 +17,10 @@ Handles when data changes in a saved game file.
 
 ```swift
 optional func player(_ player: GKPlayer, didModifySavedGame savedGame: GKSavedGame)
+```
+
+```objc
+- (void) player:(GKPlayer *) player didModifySavedGame:(GKSavedGame *) savedGame;
 ```
 
 #### Discussion

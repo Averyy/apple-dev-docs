@@ -1,7 +1,8 @@
 # status(of:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that indicates the loaded status of a property.
 
@@ -22,7 +23,7 @@ func status<T>(of property: AVAsyncProperty<Self, T>) -> AVAsyncProperty<Self, T
 
 ## Mentions
 
-- [Loading media data asynchronously](loading-media-data-asynchronously.md)
+- [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 
 #### Return Value
 
@@ -30,7 +31,7 @@ A status value.
 
 #### Discussion
 
-A status of [`AVAsyncProperty.Status.loaded(_:)`](avasyncproperty/status/loaded(_:).md) provides the property value, and a status of [`AVAsyncProperty.Status.failed(_:)`](avasyncproperty/status/failed(_:).md) provides an error that describes the failure.
+A status of [`AVAsyncProperty.Status.loaded(_:)`](../avasyncproperty/status/loaded%28_%29.md) provides the property value, and a status of [`AVAsyncProperty.Status.failed(_:)`](../avasyncproperty/status/failed%28_%29.md) provides an error that describes the failure.
 
 ## Parameters
 

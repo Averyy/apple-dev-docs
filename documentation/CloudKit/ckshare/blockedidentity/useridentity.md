@@ -1,7 +1,8 @@
 # userIdentity
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identity of the user who has been blocked from requesting access to the share.
 
@@ -19,6 +20,10 @@ The identity of the user who has been blocked from requesting access to the shar
 ```swift
 @NSCopying
 var userIdentity: CKUserIdentity { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CKUserIdentity * userIdentity;
 ```
 
 

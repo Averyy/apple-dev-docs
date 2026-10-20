@@ -1,7 +1,8 @@
 # viewportArrayIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index into the output viewports and scissor rects arrays for this camera.
 
@@ -23,7 +24,8 @@ Corresponds to the vertex amplification viewport array index in `MTLRenderComman
 
 ## See Also
 
-- [var renderTargetArrayIndex: Int](lowlevelrenderer/camera/rendertargetarrayindex.md)
+### Specifying render targets
+- [var renderTargetArrayIndex: Int](./rendertargetarrayindex.md)
   The index into the render target texture array slice for this camera.
 
 

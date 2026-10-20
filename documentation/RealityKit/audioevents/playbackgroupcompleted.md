@@ -1,7 +1,8 @@
 # AudioEvents.PlaybackGroupCompleted
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Group audio playback completed.
 
@@ -22,15 +23,15 @@ struct PlaybackGroupCompleted
 ## Topics
 
 ### Accessing the playback controller
-- [var playbackController: AudioPlaybackGroupController](audioevents/playbackgroupcompleted/playbackcontroller.md)
+- [var playbackController: AudioPlaybackGroupController](./playbackgroupcompleted/playbackcontroller.md)
   The audio playback group controller that triggered the event.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

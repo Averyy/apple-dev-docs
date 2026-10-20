@@ -1,7 +1,8 @@
 # littleEndian
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The little-endian representation of this integer.
 

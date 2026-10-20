@@ -1,7 +1,8 @@
 # name
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive name for the context.
 
@@ -19,19 +20,24 @@ A descriptive name for the context.
 var name: String! { get set }
 ```
 
+```objc
+@property (copy) NSString * name;
+```
+
 #### Discussion
 
 This name appears when using remote debugging to examine the context.
 
 ## See Also
 
-- [var globalObject: JSValue!](jscontext/globalobject.md)
+### Working with JavaScript global state
+- [var globalObject: JSValue!](./globalobject.md)
   The JavaScript global object associated with the context.
-- [var exception: JSValue!](jscontext/exception.md)
+- [var exception: JSValue!](./exception.md)
   A JavaScript exception to be thrown in evaluation of the script.
-- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](jscontext/exceptionhandler.md)
+- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](./exceptionhandler.md)
   A block to be invoked should evaluating a script result in a JavaScript exception being thrown.
-- [var virtualMachine: JSVirtualMachine!](jscontext/virtualmachine.md)
+- [var virtualMachine: JSVirtualMachine!](./virtualmachine.md)
   The JavaScript virtual machine to which the context belongs.
 
 

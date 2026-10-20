@@ -1,7 +1,8 @@
 # kIONVRAMDeletePropertyKeyWRet
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIONVRAMDeletePropertyKeyWRet: String { get }
+```
+
+```c
+#define kIONVRAMDeletePropertyKeyWRet
 ```
 
 

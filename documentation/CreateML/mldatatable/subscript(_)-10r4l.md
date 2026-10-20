@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Creates a subset of the table by masking the rows with the given untyped column.
 
@@ -19,6 +20,32 @@ Creates a subset of the table by masking the rows with the given untyped column.
 subscript(mask: MLUntypedColumn) -> MLDataTable { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(columnName: String) -> MLUntypedColumn { get set }
+```
+
+```swift
+subscript(mask: MLDataColumn<Bool>) -> MLDataTable { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLDataTable { get }
+```
+
+```swift
+subscript<Element>(columnName: String) -> MLDataColumn<Element> where Element : MLDataValueConvertible { get set }
+```
+
+```swift
+subscript<R>(slice: R) -> MLDataTable where R : RangeExpression, R.Bound == Int { get }
+```
+
+```swift
+subscript<S>(columnNames: S) -> MLDataTable where S : Sequence, S.Element == String { get }
+```
+
 #### Return Value
 
 A new data table.
@@ -33,7 +60,7 @@ Use this untyped column–based subscript to create a new table by masking a sub
 
 The derived data table includes rows where the masking column has any other (nondefault) value.
 
-![A table of book information on the left with columns named “Title”,](/images/com.apple.createml/MLDataTable-subscript(_:)-10r4l-1@2x.png)
+![A table of book information on the left with columns named “Title”,](https://developer.apple.com/tutorials/images/com.apple.createml/MLDataTable-subscript(_:)-10r4l-1@2x.png)
 
 For example, to filter the values in a data table as shown above, begin by creating a table with the original data.
 
@@ -49,7 +76,7 @@ guard let table = try? MLDataTable(dictionary: data) else {
 }
 ```
 
-After you create the table, use the `String`-based [`subscript(_:)`](mldatatable/subscript(_:)-3wjk.md) to extract a column.
+After you create the table, use the `String`-based [`subscript(_:)`](./subscript%28_%29-3wjk.md) to extract a column.
 
 ```swift
 // Create a new untyped column "pagesColumn" copied from the table’s "Pages" column

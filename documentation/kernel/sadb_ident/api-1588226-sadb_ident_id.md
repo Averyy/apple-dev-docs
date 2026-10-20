@@ -1,14 +1,15 @@
 # sadb_ident_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t sadb_ident_id;
 ```
 

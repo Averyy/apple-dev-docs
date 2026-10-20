@@ -1,7 +1,8 @@
 # emptyMedia
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Marks an intentionally empty interval in the sequence of samples.
 

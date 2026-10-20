@@ -1,7 +1,8 @@
 # WellKnown.AvailableServer
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The configuration details for an authentication server.
 
@@ -12,7 +13,7 @@ The configuration details for an authentication server.
 
 ## Declaration
 
-```swift
+```
 object WellKnown.AvailableServer
 ```
 
@@ -20,6 +21,8 @@ object WellKnown.AvailableServer
 
 - `BaseURL` (string) *(required)*: The URL where the service resides. This is the base path for subsequent requests.
 - `Version` (string) *(required)*: The server’s version string.
+
+  **Allowed Values**: `mdm-byod`, `mdm-adde`
 
 
 ---

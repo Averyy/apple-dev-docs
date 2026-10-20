@@ -1,7 +1,8 @@
 # RemoteCallTarget
 
 **Framework**: Distributed  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a ‘target’ of a distributed call, such as a `distributed func` or `distributed` computed property. Identification schemes may vary between systems, and are subject to evolution.
 
@@ -11,7 +12,7 @@ Represents a ‘target’ of a distributed call, such as a `distributed func` or
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -29,29 +30,30 @@ The string representation will attempt to pretty print the target identifier, ho
 ## Topics
 
 ### Initializers
-- [init(String)](remotecalltarget/init(_:).md)
+- [init(String)](./remotecalltarget/init%28_%29.md)
 ### Instance Properties
-- [var description: String](remotecalltarget/description.md)
+- [var description: String](./remotecalltarget/description.md)
   Attempts to pretty format the underlying target identifier. If unable to, returns the raw underlying identifier.
-- [var identifier: String](remotecalltarget/identifier.md)
+- [var identifier: String](./remotecalltarget/identifier.md)
   The underlying identifier of the target, returned as-is.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct RemoteCallArgument](remotecallargument.md)
+### Remote Calls
+- [struct RemoteCallArgument](./remotecallargument.md)
   Represents an argument passed to a distributed call target.
-- [protocol DistributedTargetInvocationEncoder](distributedtargetinvocationencoder.md)
+- [protocol DistributedTargetInvocationEncoder](./distributedtargetinvocationencoder.md)
   Used to encode an invocation of a distributed target (method or computed property).
-- [protocol DistributedTargetInvocationDecoder](distributedtargetinvocationdecoder.md)
+- [protocol DistributedTargetInvocationDecoder](./distributedtargetinvocationdecoder.md)
   Decoder that must be provided to `executeDistributedTarget` and is used by the Swift runtime to decode arguments of the invocation.
-- [protocol DistributedTargetInvocationResultHandler](distributedtargetinvocationresulthandler.md)
+- [protocol DistributedTargetInvocationResultHandler](./distributedtargetinvocationresulthandler.md)
   Protocol a distributed invocation execution’s result handler.
 
 

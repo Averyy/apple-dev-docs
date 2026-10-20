@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsTopSongsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Songs associated with the artist based on popularity in the current storefront.
 
@@ -10,7 +11,7 @@ Songs associated with the artist based on popularity in the current storefront.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsTopSongsView.Attributes
 ```
 

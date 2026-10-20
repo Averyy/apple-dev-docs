@@ -1,18 +1,19 @@
 # SCNBox
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A six-sided polyhedron geometry whose faces are all rectangles, optionally with rounded edges and corners.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,78 +21,83 @@ A six-sided polyhedron geometry whose faces are all rectangles, optionally with 
 class SCNBox
 ```
 
+```objc
+@interface SCNBox : SCNGeometry
+```
+
 #### Overview
 
-![None](/images/com.apple.scenekit/media-2929807@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929807@2x.png)
 
-Define the shape of the box in the x-, y-, and z-axis dimensions of its local coordinate space by setting its [`width`](scnbox/width.md), [`height`](scnbox/height.md), and [`length`](scnbox/length.md) properties. Add rounded edges and corners to a box with its [`chamferRadius`](scnbox/chamferradius.md) property. To position and orient a box in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
+Define the shape of the box in the x-, y-, and z-axis dimensions of its local coordinate space by setting its [`width`](./scnbox/width.md), [`height`](./scnbox/height.md), and [`length`](./scnbox/length.md) properties. Add rounded edges and corners to a box with its [`chamferRadius`](./scnbox/chamferradius.md) property. To position and orient a box in a scene, attach it to the [`geometry`](./scnnode/geometry.md) property of an [`SCNNode`](./scnnode.md) object.
 
-Control the level of detail with the [`widthSegmentCount`](scnbox/widthsegmentcount.md), [`heightSegmentCount`](scnbox/heightsegmentcount.md), [`lengthSegmentCount`](scnbox/lengthsegmentcount.md), and [`chamferSegmentCount`](scnbox/chamfersegmentcount.md) properties. A higher segment count produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
+Control the level of detail with the [`widthSegmentCount`](./scnbox/widthsegmentcount.md), [`heightSegmentCount`](./scnbox/heightsegmentcount.md), [`lengthSegmentCount`](./scnbox/lengthsegmentcount.md), and [`chamferSegmentCount`](./scnbox/chamfersegmentcount.md) properties. A higher segment count produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
 
-You can assign up to six [`SCNMaterial`](scnmaterial.md) instances to a box—one for each side—with its [`materials`](scngeometry/materials.md) property. The [`SCNBox`](scnbox.md) class automatically creates [`SCNGeometryElement`](scngeometryelement.md) objects as needed to handle the number of materials.
+You can assign up to six [`SCNMaterial`](./scnmaterial.md) instances to a box—one for each side—with its [`materials`](./scngeometry/materials.md) property. The [`SCNBox`](./scnbox.md) class automatically creates [`SCNGeometryElement`](./scngeometryelement.md) objects as needed to handle the number of materials.
 
 ## Topics
 
 ### Creating a Box
-- [convenience init(width: CGFloat, height: CGFloat, length: CGFloat, chamferRadius: CGFloat)](scnbox/init(width:height:length:chamferradius:).md)
+- [convenience init(width: CGFloat, height: CGFloat, length: CGFloat, chamferRadius: CGFloat)](./scnbox/init%28width,height,length,chamferradius%29.md)
   Creates a box geometry with the specified width, height, length, and chamfer radius.
 ### Adjusting a Box’s Dimensions
-- [var width: CGFloat](scnbox/width.md)
+- [var width: CGFloat](./scnbox/width.md)
   The extent of the box along its x-axis. Animatable.
-- [var height: CGFloat](scnbox/height.md)
+- [var height: CGFloat](./scnbox/height.md)
   The extent of the box along its y-axis. Animatable.
-- [var length: CGFloat](scnbox/length.md)
+- [var length: CGFloat](./scnbox/length.md)
   The extent of the box along its z-axis. Animatable.
 ### Configuring Box Properties
-- [var widthSegmentCount: Int](scnbox/widthsegmentcount.md)
+- [var widthSegmentCount: Int](./scnbox/widthsegmentcount.md)
   The number of subdivisions in each face of the box along its x-axis. Animatable.
-- [var heightSegmentCount: Int](scnbox/heightsegmentcount.md)
+- [var heightSegmentCount: Int](./scnbox/heightsegmentcount.md)
   The number of subdivisions in each face of the box along its y-axis. Animatable.
-- [var lengthSegmentCount: Int](scnbox/lengthsegmentcount.md)
+- [var lengthSegmentCount: Int](./scnbox/lengthsegmentcount.md)
   The number of subdivisions in each face of the box along its z-axis. Animatable.
 ### Adding Rounded Edges and Corners
-- [var chamferRadius: CGFloat](scnbox/chamferradius.md)
+- [var chamferRadius: CGFloat](./scnbox/chamferradius.md)
   The radius of curvature for the edges and corners of the box. Animatable.
-- [var chamferSegmentCount: Int](scnbox/chamfersegmentcount.md)
+- [var chamferSegmentCount: Int](./scnbox/chamfersegmentcount.md)
   The number of line segments used to create each rounded edge of the box. Animatable.
 
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](scngeometry.md)
+- [SCNGeometry](./scngeometry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SCNAnimatable](scnanimatable.md)
-- [SCNBoundingVolume](scnboundingvolume.md)
-- [SCNShadable](scnshadable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SCNAnimatable](./scnanimatable.md)
+- [SCNBoundingVolume](./scnboundingvolume.md)
+- [SCNShadable](./scnshadable.md)
 
 ## See Also
 
-- [class SCNFloor](scnfloor.md)
+### Basic Shapes
+- [class SCNFloor](./scnfloor.md)
   A plane that can optionally display a reflection of the scene above it.
-- [class SCNCapsule](scncapsule.md)
+- [class SCNCapsule](./scncapsule.md)
   A right circular cylinder geometry whose ends are capped with hemispheres.
-- [class SCNCone](scncone.md)
+- [class SCNCone](./scncone.md)
   A right circular cone or frustum geometry.
-- [class SCNCylinder](scncylinder.md)
+- [class SCNCylinder](./scncylinder.md)
   A right circular cylinder geometry.
-- [class SCNPlane](scnplane.md)
+- [class SCNPlane](./scnplane.md)
   A rectangular, one-sided plane geometry of specified width and height.
-- [class SCNPyramid](scnpyramid.md)
+- [class SCNPyramid](./scnpyramid.md)
   A right rectangular pyramid geometry.
-- [class SCNSphere](scnsphere.md)
+- [class SCNSphere](./scnsphere.md)
   A sphere (or ball or globe) geometry.
-- [class SCNTorus](scntorus.md)
+- [class SCNTorus](./scntorus.md)
   A torus, or ring-shaped geometry.
-- [class SCNTube](scntube.md)
+- [class SCNTube](./scntube.md)
   A tube or pipe geometry—a right circular cylinder with a circular hole along its central axis.
 
 

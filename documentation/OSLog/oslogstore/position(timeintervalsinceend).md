@@ -1,7 +1,8 @@
 # position(timeIntervalSinceEnd:)
 
 **Framework**: OSLog  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a position representing time since the end of the time range that the entries span.
 
@@ -20,11 +21,16 @@ Returns a position representing time since the end of the time range that the en
 func position(timeIntervalSinceEnd seconds: TimeInterval) -> OSLogPosition
 ```
 
+```objc
+- (OSLogPosition *) positionWithTimeIntervalSinceEnd:(NSTimeInterval) seconds;
+```
+
 ## See Also
 
-- [func position(date: Date) -> OSLogPosition](oslogstore/position(date:).md)
+### Accessing Position
+- [func position(date: Date) -> OSLogPosition](./position%28date%29.md)
   Returns a position representing the time specified.
-- [func position(timeIntervalSinceLatestBoot: TimeInterval) -> OSLogPosition](oslogstore/position(timeintervalsincelatestboot:).md)
+- [func position(timeIntervalSinceLatestBoot: TimeInterval) -> OSLogPosition](./position%28timeintervalsincelatestboot%29.md)
   Returns a position representing time since the last boot in the series of entries.
 
 

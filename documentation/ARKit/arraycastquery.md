@@ -1,7 +1,8 @@
 # ARRaycastQuery
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mathematical ray you use to find 3D positions on real-world surfaces.
 
@@ -15,55 +16,60 @@ A mathematical ray you use to find 3D positions on real-world surfaces.
 class ARRaycastQuery
 ```
 
+```objc
+@interface ARRaycastQuery : NSObject
+```
+
 #### Overview
 
 You create a raycast query by providing a 3D vector and starting place.
 
-To create a raycast query using a 2D screen location and default vector that casts outward in the z-direction from the user, use the convenience functions, [`makeRaycastQuery(from:allowing:alignment:)`](https://developer.apple.com/documentation/realitykit/arview/makeraycastquery(from:allowing:alignment:)) on [`ARView`](https://developer.apple.com/documentation/realitykit/arview), or [`raycastQuery(from:allowing:alignment:)`](arscnview/raycastquery(from:allowing:alignment:).md) on [`ARSCNView`](arscnview.md).
+To create a raycast query using a 2D screen location and default vector that casts outward in the z-direction from the user, use the convenience functions, [`makeRaycastQuery(from:allowing:alignment:)`](../RealityKit/arview/makeraycastquery%28from,allowing,alignment%29.md) on [`ARView`](../RealityKit/arview.md), or [`raycastQuery(from:allowing:alignment:)`](./arscnview/raycastquery%28from,allowing,alignment%29.md) on [`ARSCNView`](./arscnview.md).
 
-Raycasts can intersect with planes (flat surfaces) or meshes (uneven surfaces). To intersect with planes, see [`ARRaycastQuery.Target`](arraycastquery/target-swift.enum.md). To intersect with meshes, see [`ARRaycastQuery.Target.estimatedPlane`](arraycastquery/target-swift.enum/estimatedplane.md).
+Raycasts can intersect with planes (flat surfaces) or meshes (uneven surfaces). To intersect with planes, see [`ARRaycastQuery.Target`](./arraycastquery/target-swift.enum.md). To intersect with meshes, see [`ARRaycastQuery.Target.estimatedPlane`](./arraycastquery/target-swift.enum/estimatedplane.md).
 
 ## Topics
 
 ### Creating a Raycast Query
-- [init(origin: simd_float3, direction: simd_float3, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment)](arraycastquery/init(origin:direction:allowing:alignment:).md)
+- [init(origin: simd_float3, direction: simd_float3, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment)](./arraycastquery/init%28origin,direction,allowing,alignment%29.md)
   Creates a new raycast query.
 ### Specifying the Target
-- [var target: ARRaycastQuery.Target](arraycastquery/target-swift.property.md)
+- [var target: ARRaycastQuery.Target](./arraycastquery/target-swift.property.md)
   A plane type that allows the raycast to terminate if it’s encountered.
-- [ARRaycastQuery.Target](arraycastquery/target-swift.enum.md)
+- [ARRaycastQuery.Target](./arraycastquery/target-swift.enum.md)
   The types of surface you allow a raycast to intersect with.
-- [var targetAlignment: ARRaycastQuery.TargetAlignment](arraycastquery/targetalignment-swift.property.md)
+- [var targetAlignment: ARRaycastQuery.TargetAlignment](./arraycastquery/targetalignment-swift.property.md)
   The target’s alignment with respect to gravity.
-- [ARRaycastQuery.TargetAlignment](arraycastquery/targetalignment-swift.enum.md)
+- [ARRaycastQuery.TargetAlignment](./arraycastquery/targetalignment-swift.enum.md)
   A specification that indicates a target’s alignment with respect to gravity
 ### Interpreting the Ray
-- [var direction: simd_float3](arraycastquery/direction.md)
+- [var direction: simd_float3](./arraycastquery/direction.md)
   A vector that describes the ray’s trajectory in 3D space.
-- [var origin: simd_float3](arraycastquery/origin.md)
+- [var origin: simd_float3](./arraycastquery/origin.md)
   A 3D coordinate that defines the ray’s starting place.
 ### Initializers
-- [init(origin: simd_float3, direction: simd_float3, allowingTarget: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment)](arraycastquery/init(origin:direction:allowingtarget:alignment:).md)
+- [init(origin: simd_float3, direction: simd_float3, allowingTarget: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment)](./arraycastquery/init%28origin,direction,allowingtarget,alignment%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Placing objects and handling 3D interaction](placing-objects-and-handling-3d-interaction.md)
+### Raycasting
+- [Placing objects and handling 3D interaction](./placing-objects-and-handling-3d-interaction.md)
   Place virtual content at tracked, real-world locations, and enable the user to interact with virtual content by using gestures.
-- [class ARTrackedRaycast](artrackedraycast.md)
+- [class ARTrackedRaycast](./artrackedraycast.md)
   A raycast query that ARKit repeats in succession to give you refined results over time.
-- [class ARRaycastResult](arraycastresult.md)
+- [class ARRaycastResult](./arraycastresult.md)
   Information about a real-world surface found by examining a point on the screen.
 
 

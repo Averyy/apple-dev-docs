@@ -1,7 +1,8 @@
 # restoreData(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -13,13 +14,22 @@
 ## Declaration
 
 ```swift
+func restoreData(_ data: Data, completionHandler: @escaping @MainActor @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func restoreData(_ data: Data) async throws
+```
+
+```objc
+- (void) restoreData:(NSData *) data completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 ## See Also
 
-- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
-- [struct WKWebViewDataType](wkwebviewdatatype.md)
+### Saving and restoring data
+- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](./fetchdata%28of,completionhandler%29.md)
+- [struct WKWebViewDataType](../wkwebviewdatatype.md)
 
 
 ---

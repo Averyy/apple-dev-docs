@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins the audio stream from the generator render handler.
 
@@ -22,7 +23,7 @@ func play()
 
 #### Discussion
 
-When you play the controller, the render handler starts receiving callbacks. The controller ignores calls to [`play()`](audiogeneratorcontroller/play().md) when audio is already playing.
+When you play the controller, the render handler starts receiving callbacks. The controller ignores calls to [`play()`](./play%28%29.md) when audio is already playing.
 
 
 ---

@@ -1,7 +1,8 @@
 # requestAppInstallation(_:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the installation of the given app distribution package for the given account.
 
@@ -18,13 +19,14 @@ final func requestAppInstallation(_ request: AppLibrary.InstallationRequest) asy
 
 ## See Also
 
-- [AppLibrary.App](applibrary/app.md)
+### Installing apps as a marketplace
+- [AppLibrary.App](./app.md)
   Information about an app that someone installs from a marketplace, including its ID and installation status.
-- [AppLibrary.InstallationRequest](applibrary/installationrequest.md)
+- [AppLibrary.InstallationRequest](./installationrequest.md)
   A request to install an app distribution package for a given account.
-- [var installingApps: Set<AppLibrary.App>](applibrary/installingapps.md)
+- [var installingApps: Set<AppLibrary.App>](./installingapps.md)
   The set of apps that are pending installation completion.
-- [var isLoading: Bool](applibrary/isloading.md)
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the library is currently loading apps.
 
 

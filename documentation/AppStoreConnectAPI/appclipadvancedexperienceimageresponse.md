@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceImageResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single image for an App Clip advanced experience card.
 
@@ -10,7 +11,7 @@ A response containing a single image for an App Clip advanced experience card.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceImageResponse
 ```
 
@@ -21,11 +22,12 @@ object AppClipAdvancedExperienceImageResponse
 
 ## See Also
 
-- [object AppClipAdvancedExperienceImage](appclipadvancedexperienceimage.md)
+### Objects
+- [object AppClipAdvancedExperienceImage](./appclipadvancedexperienceimage.md)
   The image displayed on the App Clip card for an advanced App Clip experience, shown when a user scans an NFC tag, QR code, or location-based trigger.
-- [object AppClipAdvancedExperienceImageCreateRequest](appclipadvancedexperienceimagecreaterequest.md)
+- [object AppClipAdvancedExperienceImageCreateRequest](./appclipadvancedexperienceimagecreaterequest.md)
   The request body you use to reserve an image asset for an advanced App Clip experience.
-- [object AppClipAdvancedExperienceImageUpdateRequest](appclipadvancedexperienceimageupdaterequest.md)
+- [object AppClipAdvancedExperienceImageUpdateRequest](./appclipadvancedexperienceimageupdaterequest.md)
   The request body you use to commit the image asset for an advanced App Clip experience.
 
 

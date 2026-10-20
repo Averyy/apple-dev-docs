@@ -1,14 +1,15 @@
 # btc_user_thread
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void *btc_user_thread;
 ```
 

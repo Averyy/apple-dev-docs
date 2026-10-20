@@ -1,7 +1,8 @@
 # trimmingPrefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new collection of the same type by removing `prefix` from the start of the collection.
 
@@ -19,6 +20,8 @@ Returns a new collection of the same type by removing `prefix` from the start of
 ```swift
 func trimmingPrefix<Prefix>(_ prefix: Prefix) -> Self.SubSequence where Prefix : Sequence, Self.Element == Prefix.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 

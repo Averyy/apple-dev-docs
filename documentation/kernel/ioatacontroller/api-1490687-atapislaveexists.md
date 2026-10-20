@@ -1,14 +1,15 @@
 # ATAPISlaveExists
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+ - Deprecated in 12.3
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool ATAPISlaveExists(void);
 ```
 

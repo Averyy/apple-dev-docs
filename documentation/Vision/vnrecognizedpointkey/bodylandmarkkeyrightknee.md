@@ -1,17 +1,18 @@
 # bodyLandmarkKeyRightKnee
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right knee.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightKnee)
+- iPadOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightKnee)
+- Mac Catalyst 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightKnee)
+- macOS 11.0+ - Deprecated in 11.0 (renamed: VNHumanBodyPoseObservation.JointName.rightKnee)
+- tvOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightKnee)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: VNHumanBodyPoseObservation.JointName.rightKnee)
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The right knee.
 static let bodyLandmarkKeyRightKnee: VNRecognizedPointKey
 ```
 
+```c
+extern VNRecognizedPointKey const VNBodyLandmarkKeyRightKnee;
+```
+
 ## See Also
 
-- [static let bodyLandmarkKeyRightAnkle: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyrightankle.md)
+### Legs
+- [static let bodyLandmarkKeyRightAnkle: VNRecognizedPointKey](./bodylandmarkkeyrightankle.md)
   The right ankle.
-- [static let bodyLandmarkRegionKeyRightLeg: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyrightleg.md)
+- [static let bodyLandmarkRegionKeyRightLeg: VNRecognizedPointGroupKey](../vnrecognizedpointgroupkey/bodylandmarkregionkeyrightleg.md)
   A group key identifying the landmarks of the right leg.
-- [static let bodyLandmarkKeyLeftKnee: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyleftknee.md)
+- [static let bodyLandmarkKeyLeftKnee: VNRecognizedPointKey](./bodylandmarkkeyleftknee.md)
   The left knee.
-- [static let bodyLandmarkKeyLeftAnkle: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyleftankle.md)
+- [static let bodyLandmarkKeyLeftAnkle: VNRecognizedPointKey](./bodylandmarkkeyleftankle.md)
   The left ankle.
-- [static let bodyLandmarkRegionKeyLeftLeg: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyleftleg.md)
+- [static let bodyLandmarkRegionKeyLeftLeg: VNRecognizedPointGroupKey](../vnrecognizedpointgroupkey/bodylandmarkregionkeyleftleg.md)
   A group key identifying the landmarks of the left leg.
 
 

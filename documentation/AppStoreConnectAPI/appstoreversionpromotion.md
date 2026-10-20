@@ -1,7 +1,8 @@
 # AppStoreVersionPromotion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A promoted feature badge for an App Store version, highlighting it as new or updated in the App Store.
 
@@ -10,7 +11,7 @@ A promoted feature badge for an App Store version, highlighting it as new or upd
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPromotion
 ```
 
@@ -18,11 +19,12 @@ object AppStoreVersionPromotion
 
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionPromotions`
 
 ## See Also
 
-- [object AppStoreVersionPromotionCreateRequest](appstoreversionpromotioncreaterequest.md)
+### Objects
+- [object AppStoreVersionPromotionCreateRequest](./appstoreversionpromotioncreaterequest.md)
   The request body you use to create an App Store version promotion.
 
 

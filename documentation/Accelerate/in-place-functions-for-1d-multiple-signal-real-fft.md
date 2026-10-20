@@ -1,6 +1,7 @@
 # In-Place Functions for 1D Multiple-Signal Real FFT
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform fast Fourier transforms in place on multiple-signal 1D real data.
 
@@ -83,7 +84,8 @@ The temporary buffer versions perform the same operation but use a temporary buf
 
 ## See Also
 
-- [Out-of-Place Functions for 1D Multiple-Signal Real FFT](out-of-place-functions-for-1d-multiple-signal-real-fft.md)
+### Functions for 1D Multiple-Signal Real FFT
+- [Out-of-Place Functions for 1D Multiple-Signal Real FFT](./out-of-place-functions-for-1d-multiple-signal-real-fft.md)
   Perform fast Fourier transforms out of place on multiple-signal 1D real data.
 
 

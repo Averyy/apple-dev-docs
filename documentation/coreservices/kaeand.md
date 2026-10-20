@@ -1,7 +1,8 @@
 # kAEAND
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a logical `AND` operation.
 

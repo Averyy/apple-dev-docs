@@ -1,7 +1,8 @@
 # deltaTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elapsed time since the last update.
 

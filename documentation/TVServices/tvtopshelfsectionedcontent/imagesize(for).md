@@ -1,7 +1,8 @@
 # imageSize(for:)
 
 **Framework**: TV Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the dimensions to use for images of the specified shape.
 
@@ -14,6 +15,10 @@ Returns the dimensions to use for images of the specified shape.
 class func imageSize(for shape: TVTopShelfSectionedItem.ImageShape) -> CGSize
 ```
 
+```objc
++ (CGSize) imageSizeForImageShape:(TVTopShelfSectionedItemImageShape) shape;
+```
+
 #### Return Value
 
 The recommended size of the image, in points.
@@ -24,7 +29,8 @@ The recommended size of the image, in points.
 
 ## See Also
 
-- [TVTopShelfSectionedItem.ImageShape](tvtopshelfsectioneditem/imageshape-swift.enum.md)
+### Getting the Image Size Information
+- [TVTopShelfSectionedItem.ImageShape](../tvtopshelfsectioneditem/imageshape-swift.enum.md)
   Constants indicating the aspect ratio of an image.
 
 

@@ -1,7 +1,8 @@
 # NEURLFilterManager.Error.configurationCannotBeRemoved
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t remove the filter configuration.
 
@@ -19,19 +20,20 @@ case configurationCannotBeRemoved
 
 ## See Also
 
-- [NEURLFilterManager.Error.configurationUnchanged](neurlfiltermanager/error/configurationunchanged.md)
+### Configuration errors
+- [NEURLFilterManager.Error.configurationUnchanged](./configurationunchanged.md)
   The filter configuration is unchanged.
-- [NEURLFilterManager.Error.configurationInvalid](neurlfiltermanager/error/configurationinvalid.md)
+- [NEURLFilterManager.Error.configurationInvalid](./configurationinvalid.md)
   The filter configuration is invalid.
-- [NEURLFilterManager.Error.configurationDisabled](neurlfiltermanager/error/configurationdisabled.md)
+- [NEURLFilterManager.Error.configurationDisabled](./configurationdisabled.md)
   The filter configuration is disabled.
-- [NEURLFilterManager.Error.configurationStale](neurlfiltermanager/error/configurationstale.md)
+- [NEURLFilterManager.Error.configurationStale](./configurationstale.md)
   The system needs to load the filter configuration.
-- [NEURLFilterManager.Error.configurationPermissionDenied](neurlfiltermanager/error/configurationpermissiondenied.md)
+- [NEURLFilterManager.Error.configurationPermissionDenied](./configurationpermissiondenied.md)
   Operation permission denied.
-- [NEURLFilterManager.Error.configurationInternalError](neurlfiltermanager/error/configurationinternalerror.md)
+- [NEURLFilterManager.Error.configurationInternalError](./configurationinternalerror.md)
   An internal configuration error occurred.
-- [NEURLFilterManager.Error.configurationNotLoaded](neurlfiltermanager/error/configurationnotloaded.md)
+- [NEURLFilterManager.Error.configurationNotLoaded](./configurationnotloaded.md)
   The configuration hasn’t been loaded.
 
 

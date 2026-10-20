@@ -1,7 +1,8 @@
 # init(charactersIn:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with the characters in the given string.
 

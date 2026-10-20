@@ -1,16 +1,17 @@
 # AnchorPointTable
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,38 +19,43 @@
 struct AnchorPointTable
 ```
 
+```c
+struct AnchorPointTable;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](anchorpointtable/init.md)
-- [init(nPoints: UInt32, points: AnchorPoint)](anchorpointtable/init(npoints:points:).md)
+- [init()](./anchorpointtable/init%28%29.md)
+- [init(nPoints: UInt32, points: AnchorPoint)](./anchorpointtable/init%28npoints,points%29.md)
 ### Instance Properties
-- [var nPoints: UInt32](anchorpointtable/npoints.md)
-- [var points: AnchorPoint](anchorpointtable/points.md)
+- [var nPoints: UInt32](./anchorpointtable/npoints.md)
+- [var points: AnchorPoint](./anchorpointtable/points.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
-- [struct JustPCDuctilityAction](justpcductilityaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
+- [struct JustPCDuctilityAction](./justpcductilityaction.md)
 
 
 ---

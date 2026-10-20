@@ -1,7 +1,8 @@
 # &(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the result of performing a bitwise AND operation on the two given values.
 

@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,28 +12,28 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated properties
-- [var cell: NSCell?](nscontrol/cell.md)
+- [var cell: NSCell?](./nscontrol/cell.md)
   The receiver’s cell object.
-- [class var cellClass: AnyClass?](nscontrol/cellclass.md)
+- [class var cellClass: AnyClass?](./nscontrol/cellclass.md)
   Returns the type of cell used by the receiver.
 ### Deprecated methods
-- [func selectedCell() -> NSCell?](nscontrol/selectedcell.md)
+- [func selectedCell() -> NSCell?](./nscontrol/selectedcell%28%29.md)
   Returns the receiver’s selected cell.
-- [func selectedTag() -> Int](nscontrol/selectedtag.md)
+- [func selectedTag() -> Int](./nscontrol/selectedtag%28%29.md)
   Returns the tag of the receiver’s selected cell.
-- [func setNeedsDisplay()](nscontrol/setneedsdisplay.md)
+- [func setNeedsDisplay()](./nscontrol/setneedsdisplay%28%29.md)
   Marks the receiver as needing redisplay (assuming automatic display is enabled).
-- [func calcSize()](nscontrol/calcsize.md)
+- [func calcSize()](./nscontrol/calcsize%28%29.md)
   Recomputes any internal sizing information for the receiver, if necessary.
-- [func selectCell(NSCell)](nscontrol/selectcell(_:).md)
+- [func selectCell(NSCell)](./nscontrol/selectcell%28_%29.md)
   Selects the specified cell and redraws the control as needed.
-- [func drawCell(NSCell)](nscontrol/drawcell(_:).md)
+- [func drawCell(NSCell)](./nscontrol/drawcell%28_%29.md)
   Draws the specified cell, as long as it belongs to the receiver.
-- [func drawCellInside(NSCell)](nscontrol/drawcellinside(_:).md)
+- [func drawCellInside(NSCell)](./nscontrol/drawcellinside%28_%29.md)
   Draws the inside of the receiver’s cell (the area within the bezel or border)
-- [func updateCell(NSCell)](nscontrol/updatecell(_:).md)
+- [func updateCell(NSCell)](./nscontrol/updatecell%28_%29.md)
   Marks the specified cell as in need of redrawing.
-- [func updateCellInside(NSCell)](nscontrol/updatecellinside(_:).md)
+- [func updateCellInside(NSCell)](./nscontrol/updatecellinside%28_%29.md)
   Marks the inside of the specified cell as in need of redrawing.
 
 

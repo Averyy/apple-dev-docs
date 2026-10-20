@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Coordinates for constraining the lookup results.
 
@@ -10,7 +11,7 @@ Coordinates for constraining the lookup results.
 
 ## Declaration
 
-```swift
+```
 coordinate?: CoordinateData;
 ```
 
@@ -20,13 +21,14 @@ Tell the geocoder to return results around this coordinate. For example, constra
 
 ## See Also
 
-- [language](geocoderlookupoptions/language.md)
+### Options
+- [language](./language.md)
   The language to use when displaying the lookup results.
-- [limitToCountries](geocoderlookupoptions/limittocountries.md)
+- [limitToCountries](./limittocountries.md)
   A list of countries for constraining the lookup results.
-- [region](geocoderlookupoptions/region.md)
+- [region](./region.md)
   A region for constraining lookup results.
-- [signal](geocoderlookupoptions/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

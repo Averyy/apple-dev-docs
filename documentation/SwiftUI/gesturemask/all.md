@@ -1,7 +1,8 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enable both the added gesture as well as all other gestures on the view and its subviews.
 
@@ -22,11 +23,12 @@ static let all: GestureMask
 
 ## See Also
 
-- [static let gesture: GestureMask](gesturemask/gesture.md)
+### Getting gesture options
+- [static let gesture: GestureMask](./gesture.md)
   Enable the added gesture but disable all gestures in the subview hierarchy.
-- [static let subviews: GestureMask](gesturemask/subviews.md)
+- [static let subviews: GestureMask](./subviews.md)
   Enable all gestures in the subview hierarchy but disable the added gesture.
-- [static let none: GestureMask](gesturemask/none.md)
+- [static let none: GestureMask](./none.md)
   Disable all gestures in the subview hierarchy, including the added gesture.
 
 

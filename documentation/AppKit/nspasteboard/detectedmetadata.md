@@ -1,7 +1,8 @@
 # NSPasteboard.DetectedMetadata
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains common types of metadata that the data detection system matches for a pasteboard.
 
@@ -17,24 +18,25 @@ struct DetectedMetadata
 ## Topics
 
 ### Accessing metadata
-- [var metadataTypes: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>](nspasteboard/detectedmetadata/metadatatypes.md)
+- [var metadataTypes: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>](./detectedmetadata/metadatatypes.md)
   A set of key paths that represent metadata types that the data detection system identifies.
-- [var contentType: UTType?](nspasteboard/detectedmetadata/contenttype.md)
+- [var contentType: UTType?](./detectedmetadata/contenttype.md)
   The content type of a file that the data detection system identifies when the pasteboard contains a file URL.
 
 ## See Also
 
-- [func detectedPatterns(for: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboard.DetectedValues>>](nspasteboard/detectedpatterns(for:).md)
+### Detecting patterns and metadata in pasteboard items
+- [func detectedPatterns(for: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboard.DetectedValues>>](./detectedpatterns%28for%29.md)
   Determines whether the first pasteboard item matches the specified patterns, without notifying the person using the app.
-- [func detectedValues(for: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> NSPasteboard.DetectedValues](nspasteboard/detectedvalues(for:).md)
+- [func detectedValues(for: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> NSPasteboard.DetectedValues](./detectedvalues%28for%29.md)
   Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
-- [NSPasteboard.DetectedValues](nspasteboard/detectedvalues.md)
+- [NSPasteboard.DetectedValues](./detectedvalues.md)
   A type that contains common types of data that the data detection system matches for a pasteboard.
-- [Pasteboard detection patterns](nspasteboard-detection-patterns.md)
+- [Pasteboard detection patterns](../nspasteboard-detection-patterns.md)
   Common types of data that the data detection system matches for a pasteboard.
-- [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>) async throws -> NSPasteboard.DetectedMetadata](nspasteboard/detectedmetadata(for:).md)
+- [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>) async throws -> NSPasteboard.DetectedMetadata](./detectedmetadata%28for%29.md)
   Determines available metadata from the specified metadata types for the first pasteboard item, without notifying the person using the app.
-- [Pasteboard detection metadata types](nspasteboard-detection-metadata-types.md)
+- [Pasteboard detection metadata types](../nspasteboard-detection-metadata-types.md)
   Common types of metadata that the data detection system matches for a pasteboard.
 
 

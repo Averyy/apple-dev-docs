@@ -1,7 +1,8 @@
 # PKIdentityButton.Style
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates the available appearances for an identity button.
 
@@ -17,31 +18,36 @@ A type that indicates the available appearances for an identity button.
 enum Style
 ```
 
+```c
+enum PKIdentityButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [PKIdentityButton.Style.black](pkidentitybutton/style/black.md)
+- [PKIdentityButton.Style.black](./style/black.md)
   A style that represents a black button with white lettering.
-- [PKIdentityButton.Style.blackOutline](pkidentitybutton/style/blackoutline.md)
+- [PKIdentityButton.Style.blackOutline](./style/blackoutline.md)
   A style that represents a black button with a light outline.
 ### Initializers
-- [init?(rawValue: Int)](pkidentitybutton/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PKIdentityButton.Label](pkidentitybutton/label.md)
+### Configuring the appearance
+- [PKIdentityButton.Label](./label.md)
   A type that indicates the available labels for an identity button.
-- [var cornerRadius: CGFloat](pkidentitybutton/cornerradius.md)
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius for the rounded corners on the button, in points.
 
 

@@ -1,7 +1,8 @@
 # NSTextBlock.VerticalAlignment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 6.0+
@@ -17,31 +18,36 @@
 enum VerticalAlignment
 ```
 
+```c
+enum NSTextBlockVerticalAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSTextBlock.VerticalAlignment.baseline](nstextblock/verticalalignment-swift.enum/baseline.md)
-- [NSTextBlock.VerticalAlignment.bottom](nstextblock/verticalalignment-swift.enum/bottom.md)
-- [NSTextBlock.VerticalAlignment.middle](nstextblock/verticalalignment-swift.enum/middle.md)
-- [NSTextBlock.VerticalAlignment.top](nstextblock/verticalalignment-swift.enum/top.md)
+- [NSTextBlock.VerticalAlignment.baseline](./verticalalignment-swift.enum/baseline.md)
+- [NSTextBlock.VerticalAlignment.bottom](./verticalalignment-swift.enum/bottom.md)
+- [NSTextBlock.VerticalAlignment.middle](./verticalalignment-swift.enum/middle.md)
+- [NSTextBlock.VerticalAlignment.top](./verticalalignment-swift.enum/top.md)
 ### Initializers
-- [init?(rawValue: Int)](nstextblock/verticalalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./verticalalignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSTextBlock.ValueType](nstextblock/valuetype.md)
-- [NSTextBlock.Dimension](nstextblock/dimension.md)
-- [NSTextBlock.Layer](nstextblock/layer.md)
+### Supporting types
+- [NSTextBlock.ValueType](./valuetype.md)
+- [NSTextBlock.Dimension](./dimension.md)
+- [NSTextBlock.Layer](./layer.md)
 
 
 ---

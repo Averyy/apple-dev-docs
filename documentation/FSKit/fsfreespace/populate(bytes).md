@@ -1,7 +1,8 @@
 # populate(bytes:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Populates this instance with the given free space value and atomically assigns a sequence number.
 
@@ -12,6 +13,10 @@ Populates this instance with the given free space value and atomically assigns a
 
 ```swift
 func populate(bytes freeSpaceBytes: UInt64)
+```
+
+```objc
+- (void) populateWithBytes:(uint64_t) freeSpaceBytes;
 ```
 
 #### Discussion

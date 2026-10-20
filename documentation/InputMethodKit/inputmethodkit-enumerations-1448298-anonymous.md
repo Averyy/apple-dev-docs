@@ -1,19 +1,21 @@
 # Anonymous
 
-**Framework**: InputMethodKit
+**Framework**: InputMethodKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kIMKLocateCandidatesAboveHint: Int](kimklocatecandidatesabovehint.md)
-- [var kIMKLocateCandidatesBelowHint: Int](kimklocatecandidatesbelowhint.md)
-- [var kIMKLocateCandidatesLeftHint: Int](kimklocatecandidateslefthint.md)
-- [var kIMKLocateCandidatesRightHint: Int](kimklocatecandidatesrighthint.md)
+- [var kIMKLocateCandidatesAboveHint: Int](./kimklocatecandidatesabovehint.md)
+- [var kIMKLocateCandidatesBelowHint: Int](./kimklocatecandidatesbelowhint.md)
+- [var kIMKLocateCandidatesLeftHint: Int](./kimklocatecandidateslefthint.md)
+- [var kIMKLocateCandidatesRightHint: Int](./kimklocatecandidatesrighthint.md)
 
 ## See Also
 
-- [Anonymous](inputmethodkit-enumerations-1448307-anonymous.md)
-- [Anonymous](inputmethodkit-enumerations-1448301-anonymous.md)
+### Enumerations
+- [Anonymous](./inputmethodkit-enumerations-1448307-anonymous.md)
+- [Anonymous](./inputmethodkit-enumerations-1448301-anonymous.md)
 
 
 ---

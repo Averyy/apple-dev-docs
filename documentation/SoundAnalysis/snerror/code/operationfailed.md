@@ -1,7 +1,8 @@
 # SNError.Code.operationFailed
 
 **Framework**: Sound Analysis  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when the framework fails to analyze audio.
 
@@ -20,15 +21,20 @@ An error that occurs when the framework fails to analyze audio.
 case operationFailed
 ```
 
+```c
+SNErrorCodeOperationFailed
+```
+
 ## See Also
 
-- [SNError.Code.invalidModel](snerror/code/invalidmodel.md)
+### Errors
+- [SNError.Code.invalidModel](./invalidmodel.md)
   An error that indicates the sound classifier’s underlying Core ML model is an invalid model type.
-- [SNError.Code.invalidFormat](snerror/code/invalidformat.md)
+- [SNError.Code.invalidFormat](./invalidformat.md)
   An error that indicates the audio data’s format isn’t valid.
-- [SNError.Code.invalidFile](snerror/code/invalidfile.md)
+- [SNError.Code.invalidFile](./invalidfile.md)
   An error that indicates an audio file is invalid.
-- [SNError.Code.unknownError](snerror/code/unknownerror.md)
+- [SNError.Code.unknownError](./unknownerror.md)
   An error that represents a failure that no other error handles.
 
 

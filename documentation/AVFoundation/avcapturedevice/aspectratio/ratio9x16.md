@@ -1,7 +1,8 @@
 # ratio9x16
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An aspect ratio of 9x16.
 
@@ -16,19 +17,24 @@ An aspect ratio of 9x16.
 static let ratio9x16: AVCaptureDevice.AspectRatio
 ```
 
+```c
+extern AVCaptureAspectRatio const AVCaptureAspectRatio9x16;
+```
+
 ## Mentions
 
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](../../adopting-smart-framing-in-your-camera-app.md)
 
 ## See Also
 
-- [static let ratio16x9: AVCaptureDevice.AspectRatio](avcapturedevice/aspectratio/ratio16x9.md)
+### Aspect ratios
+- [static let ratio16x9: AVCaptureDevice.AspectRatio](./ratio16x9.md)
   An aspect ratio of 16x9.
-- [static let ratio1x1: AVCaptureDevice.AspectRatio](avcapturedevice/aspectratio/ratio1x1.md)
+- [static let ratio1x1: AVCaptureDevice.AspectRatio](./ratio1x1.md)
   An aspect ratio of 1x1.
-- [static let ratio3x4: AVCaptureDevice.AspectRatio](avcapturedevice/aspectratio/ratio3x4.md)
+- [static let ratio3x4: AVCaptureDevice.AspectRatio](./ratio3x4.md)
   An aspect ratio of 3x4.
-- [static let ratio4x3: AVCaptureDevice.AspectRatio](avcapturedevice/aspectratio/ratio4x3.md)
+- [static let ratio4x3: AVCaptureDevice.AspectRatio](./ratio4x3.md)
   An aspect ratio of 4x3.
 
 

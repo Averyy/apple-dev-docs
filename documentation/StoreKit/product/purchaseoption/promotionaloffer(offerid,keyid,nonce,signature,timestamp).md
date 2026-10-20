@@ -1,18 +1,21 @@
 # promotionalOffer(offerID:keyID:nonce:signature:timestamp:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies a promotional offer for an auto-renewable subscription.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 26.0
+- iPadOS 15.0+ - Deprecated in 26.0
+- Mac Catalyst 15.0+ - Deprecated in 26.0
+- macOS 12.0+ - Deprecated in 26.0
+- tvOS 15.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 8.0+ - Deprecated in 26.0
+
+> **Deprecated**: Sign promotional offers with JWS and use promotionalOffer(_:compactJWS:) instead
 
 ## Declaration
 
@@ -22,17 +25,17 @@ static func promotionalOffer(offerID: String, keyID: String, nonce: UUID, signat
 
 #### Return Value
 
-An instance of [`Product.PurchaseOption`](product/purchaseoption.md) to use in [`purchase(options:)`](product/purchase(options:).md).
+An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
 #### Discussion
 
-For information about `keyID`, `nonce`, `signature`, and `timestamp`, see [`Generating a signature for promotional offers`](generating-a-signature-for-promotional-offers.md). If you’re providing an [`appAccountToken(_:)`](product/purchaseoption/appaccounttoken(_:).md) in the purchase options, you must include that value when you generate the `signature`. Use lowercase for the UUID string representations of the app account token and the `nonce` in the signature.
+For information about `keyID`, `nonce`, `signature`, and `timestamp`, see [Generating a signature for promotional offers](../../generating-a-signature-for-promotional-offers.md). If you’re providing an [`appAccountToken(_:)`](./appaccounttoken%28_%29.md) in the purchase options, you must include that value when you generate the `signature`. Use lowercase for the UUID string representations of the app account token and the `nonce` in the signature.
 
-You can offer a discounted or free period of service for auto-renewable subscriptions on iOS, iPadOS, macOS, and tvOS using promotional offers. Before you can provide promotional offers in your app, you must set up the offers in your App Store Connect account. To configure your offer, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions).
+You can offer a discounted or free period of service for auto-renewable subscriptions on iOS, iPadOS, macOS, and tvOS using promotional offers. Before you can provide promotional offers in your app, you must set up the offers in your App Store Connect account. To configure your offer, see [Set up promotional offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions).
 
 ## Parameters
 
-- `offerID`: The subscription-offer identifier, [`id`](product/subscriptionoffer/id.md).
+- `offerID`: The subscription-offer identifier, [`id`](../subscriptionoffer/id.md).
 - `keyID`: The key ID of the subscription key.
 - `nonce`: The antireplay value used in the signature. Use lowercase.
 - `signature`: The cryptographic signature of the offer parameters, which you generate on your server.
@@ -40,12 +43,13 @@ You can offer a discounted or free period of service for auto-renewable subscrip
 
 ## See Also
 
-- [static func appAccountToken(UUID) -> Product.PurchaseOption](product/purchaseoption/appaccounttoken(_:).md)
+### Setting the purchase options
+- [static func appAccountToken(UUID) -> Product.PurchaseOption](./appaccounttoken%28_%29.md)
   Sets a UUID to associate the purchase with an account in your system.
-- [static func winBackOffer(Product.SubscriptionOffer) -> Product.PurchaseOption](product/purchaseoption/winbackoffer(_:).md)
+- [static func winBackOffer(Product.SubscriptionOffer) -> Product.PurchaseOption](./winbackoffer%28_%29.md)
   Sets a win-back offer to apply to the purchase.
-- [static func promotionalOffer(offerID: String, signature: Product.SubscriptionOffer.Signature) -> Product.PurchaseOption](product/purchaseoption/promotionaloffer(offerid:signature:).md)
-- [static func quantity(Int) -> Product.PurchaseOption](product/purchaseoption/quantity(_:).md)
+- [static func promotionalOffer(offerID: String, signature: Product.SubscriptionOffer.Signature) -> Product.PurchaseOption](./promotionaloffer%28offerid,signature%29.md)
+- [static func quantity(Int) -> Product.PurchaseOption](./quantity%28_%29.md)
   Indicates the quantity of items the customer is purchasing.
 
 

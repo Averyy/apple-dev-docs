@@ -1,14 +1,15 @@
 # withDescriptors
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 static IOUSBHostInterface * withDescriptors(const StandardUSB::ConfigurationDescriptor *configurationDescriptor, const StandardUSB::InterfaceDescriptor *interfaceDescriptor);
 ```
 

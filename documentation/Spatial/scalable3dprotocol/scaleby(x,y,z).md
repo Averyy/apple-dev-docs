@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Scales the entity by the specified values.
@@ -26,6 +27,12 @@ mutating func scaleBy(x: Self.Scalar, y: Self.Scalar, z: Self.Scalar)
 - `x`: The scale factor on the `x` dimension.
 - `y`: The scale factor on the `y` dimension.
 - `z`: The scale factor on the `z` dimension.
+
+## Default Implementations
+
+### Scalable3DProtocol Implementations
+- [func scaleBy(x: Self.Scalar, y: Self.Scalar, z: Self.Scalar)](./scaleby%28x,y,z%29-5s9j8.md)
+  Scales the entity by the specified values.
 
 
 ---

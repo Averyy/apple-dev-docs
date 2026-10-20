@@ -1,7 +1,8 @@
 # init(role:action:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that displays a default label.
 
@@ -20,6 +21,8 @@ Creates a button that displays a default label.
 @preconcurrency
 nonisolated init(role: ButtonRole, action: @escaping @MainActor () -> Void)
 ```
+
+Available when `Label` is `DefaultButtonLabel`.
 
 #### Discussion
 

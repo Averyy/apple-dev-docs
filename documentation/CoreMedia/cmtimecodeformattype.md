@@ -1,7 +1,8 @@
 # CMTimeCodeFormatType
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A time code format type.
 
@@ -20,37 +21,42 @@ A time code format type.
 typealias CMTimeCodeFormatType = FourCharCode
 ```
 
+```c
+typedef FourCharCode CMTimeCodeFormatType;
+```
+
 ## Topics
 
 ### Constants
-- [var kCMTimeCodeFormatType_TimeCode32: CMTimeCodeFormatType](kcmtimecodeformattype_timecode32.md)
+- [var kCMTimeCodeFormatType_TimeCode32: CMTimeCodeFormatType](./kcmtimecodeformattype_timecode32.md)
   32-bit time code sample.
-- [var kCMTimeCodeFormatType_TimeCode64: CMTimeCodeFormatType](kcmtimecodeformattype_timecode64.md)
+- [var kCMTimeCodeFormatType_TimeCode64: CMTimeCodeFormatType](./kcmtimecodeformattype_timecode64.md)
   64-bit time code sample.
-- [var kCMTimeCodeFormatType_Counter32: CMTimeCodeFormatType](kcmtimecodeformattype_counter32.md)
+- [var kCMTimeCodeFormatType_Counter32: CMTimeCodeFormatType](./kcmtimecodeformattype_counter32.md)
   32-bit counter-mode sample.
-- [var kCMTimeCodeFormatType_Counter64: CMTimeCodeFormatType](kcmtimecodeformattype_counter64.md)
+- [var kCMTimeCodeFormatType_Counter64: CMTimeCodeFormatType](./kcmtimecodeformattype_counter64.md)
   64-bit counter-mode sample.
 
 ## See Also
 
-- [typealias CMClosedCaptionFormatType](cmclosedcaptionformattype.md)
+### Format Types
+- [typealias CMClosedCaptionFormatType](./cmclosedcaptionformattype.md)
   A closed caption format type.
-- [typealias CMMetadataFormatType](cmmetadataformattype.md)
+- [typealias CMMetadataFormatType](./cmmetadataformattype.md)
   A metadata format type.
-- [Metadata Format Types](metadata-format-types.md)
+- [Metadata Format Types](./metadata-format-types.md)
   Constants that represent media format types.
-- [typealias CMSubtitleFormatType](cmsubtitleformattype.md)
+- [typealias CMSubtitleFormatType](./cmsubtitleformattype.md)
   A type that represents a text subtitle format.
-- [Subtitle Format Types](subtitle-format-types.md)
+- [Subtitle Format Types](./subtitle-format-types.md)
   Constants that represent subtitle format types.
-- [Time Code Formats](time-code-formats.md)
+- [Time Code Formats](./time-code-formats.md)
   Constants that represent time code format types.
-- [typealias CMTextFormatType](cmtextformattype.md)
+- [typealias CMTextFormatType](./cmtextformattype.md)
   A text format type.
-- [typealias CMPixelFormatType](cmpixelformattype.md)
+- [typealias CMPixelFormatType](./cmpixelformattype.md)
   A pixel format type.
-- [Tagged Buffer Group Format Types](tagged-buffergroup-format-types.md)
+- [Tagged Buffer Group Format Types](./tagged-buffergroup-format-types.md)
 
 
 ---

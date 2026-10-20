@@ -1,7 +1,8 @@
 # init(chargingStationConnection:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map panel item with charging connection details.
 
@@ -14,6 +15,10 @@ Creates a map panel item with charging connection details.
 
 ```swift
 init(chargingStationConnection: CPChargingStationConnection, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithChargingStationConnection:(CPChargingStationConnection *) chargingStationConnection handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
 #### Return Value

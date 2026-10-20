@@ -1,7 +1,8 @@
 # kCTLanguageAttributeName
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the text language.
 
@@ -20,27 +21,32 @@ The name of the text language.
 let kCTLanguageAttributeName: CFString
 ```
 
+```c
+extern CFStringRef const kCTLanguageAttributeName;
+```
+
 #### Discussion
 
-The value of this attribute must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) containing a language identifier conforming to [`UTS #35`](https://developer.apple.comhttp://unicode.org/reports/tr35/). The default is unset. When this attribute is set to a valid identifier, it will be used to select localized glyphs (if supported by the font), and locale-specific line-breaking rules.
+The value of this attribute must be a [`CFString`](../CoreFoundation/cfstring.md) containing a language identifier conforming to [UTS #35](http://unicode.org/reports/tr35/). The default is unset. When this attribute is set to a valid identifier, it will be used to select localized glyphs (if supported by the font), and locale-specific line-breaking rules.
 
 ## See Also
 
-- [var ATSFONTREF_DEFINED: Int32](atsfontref_defined.md)
-- [var kBSLNIdeographicHighBaseline: Int](kbslnideographichighbaseline.md)
-- [let kCTAdaptiveImageProviderAttributeName: CFString](kctadaptiveimageproviderattributename.md)
-- [let kCTBackgroundColorAttributeName: CFString](kctbackgroundcolorattributename.md)
-- [let kCTBaselineClassAttributeName: CFString](kctbaselineclassattributename.md)
-- [let kCTBaselineClassHanging: CFString](kctbaselineclasshanging.md)
-- [let kCTBaselineClassIdeographicCentered: CFString](kctbaselineclassideographiccentered.md)
-- [let kCTBaselineClassIdeographicHigh: CFString](kctbaselineclassideographichigh.md)
-- [let kCTBaselineClassIdeographicLow: CFString](kctbaselineclassideographiclow.md)
-- [let kCTBaselineClassMath: CFString](kctbaselineclassmath.md)
-- [let kCTBaselineClassRoman: CFString](kctbaselineclassroman.md)
-- [let kCTBaselineInfoAttributeName: CFString](kctbaselineinfoattributename.md)
-- [let kCTBaselineOriginalFont: CFString](kctbaselineoriginalfont.md)
-- [let kCTBaselineReferenceFont: CFString](kctbaselinereferencefont.md)
-- [let kCTBaselineReferenceInfoAttributeName: CFString](kctbaselinereferenceinfoattributename.md)
+### Constants
+- [var ATSFONTREF_DEFINED: Int32](./atsfontref_defined.md)
+- [var kBSLNIdeographicHighBaseline: Int](./kbslnideographichighbaseline.md)
+- [let kCTAdaptiveImageProviderAttributeName: CFString](./kctadaptiveimageproviderattributename.md)
+- [let kCTBackgroundColorAttributeName: CFString](./kctbackgroundcolorattributename.md)
+- [let kCTBaselineClassAttributeName: CFString](./kctbaselineclassattributename.md)
+- [let kCTBaselineClassHanging: CFString](./kctbaselineclasshanging.md)
+- [let kCTBaselineClassIdeographicCentered: CFString](./kctbaselineclassideographiccentered.md)
+- [let kCTBaselineClassIdeographicHigh: CFString](./kctbaselineclassideographichigh.md)
+- [let kCTBaselineClassIdeographicLow: CFString](./kctbaselineclassideographiclow.md)
+- [let kCTBaselineClassMath: CFString](./kctbaselineclassmath.md)
+- [let kCTBaselineClassRoman: CFString](./kctbaselineclassroman.md)
+- [let kCTBaselineInfoAttributeName: CFString](./kctbaselineinfoattributename.md)
+- [let kCTBaselineOriginalFont: CFString](./kctbaselineoriginalfont.md)
+- [let kCTBaselineReferenceFont: CFString](./kctbaselinereferencefont.md)
+- [let kCTBaselineReferenceInfoAttributeName: CFString](./kctbaselinereferenceinfoattributename.md)
 
 
 ---

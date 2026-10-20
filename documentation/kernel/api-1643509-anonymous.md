@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,18 +18,18 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBApplicationSpecificClass](1643509-anonymous/kusbapplicationspecificclass.md)
-- [kUSBBillBoardClass](1643509-anonymous/kusbbillboardclass.md)
-- [kUSBCommClass](1643509-anonymous/kusbcommclass.md)
-- [kUSBCommunicationClass](1643509-anonymous/kusbcommunicationclass.md)
-- [kUSBCompositeClass](1643509-anonymous/kusbcompositeclass.md)
-- [kUSBDataClass](1643509-anonymous/kusbdataclass.md)
-- [kUSBDiagnosticClass](1643509-anonymous/kusbdiagnosticclass.md)
-- [kUSBHubClass](1643509-anonymous/kusbhubclass.md)
-- [kUSBMiscellaneousClass](1643509-anonymous/kusbmiscellaneousclass.md)
-- [kUSBPersonalHealthcareClass](1643509-anonymous/kusbpersonalhealthcareclass.md)
-- [kUSBVendorSpecificClass](1643509-anonymous/kusbvendorspecificclass.md)
-- [kUSBWirelessControllerClass](1643509-anonymous/kusbwirelesscontrollerclass.md)
+- [kUSBApplicationSpecificClass](./api-1643509-anonymous/kusbapplicationspecificclass.md)
+- [kUSBBillBoardClass](./api-1643509-anonymous/kusbbillboardclass.md)
+- [kUSBCommClass](./api-1643509-anonymous/kusbcommclass.md)
+- [kUSBCommunicationClass](./api-1643509-anonymous/kusbcommunicationclass.md)
+- [kUSBCompositeClass](./api-1643509-anonymous/kusbcompositeclass.md)
+- [kUSBDataClass](./api-1643509-anonymous/kusbdataclass.md)
+- [kUSBDiagnosticClass](./api-1643509-anonymous/kusbdiagnosticclass.md)
+- [kUSBHubClass](./api-1643509-anonymous/kusbhubclass.md)
+- [kUSBMiscellaneousClass](./api-1643509-anonymous/kusbmiscellaneousclass.md)
+- [kUSBPersonalHealthcareClass](./api-1643509-anonymous/kusbpersonalhealthcareclass.md)
+- [kUSBVendorSpecificClass](./api-1643509-anonymous/kusbvendorspecificclass.md)
+- [kUSBWirelessControllerClass](./api-1643509-anonymous/kusbwirelesscontrollerclass.md)
 
 
 ---

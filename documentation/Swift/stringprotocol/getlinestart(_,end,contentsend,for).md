@@ -1,7 +1,8 @@
 # getLineStart(_:end:contentsEnd:for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by reference the beginning of the first line and the end of the last line touched by the given range.
 

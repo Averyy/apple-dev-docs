@@ -1,7 +1,8 @@
 # PrimitiveButtonStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that applies custom interaction behavior and a custom appearance to all buttons within a view hierarchy.
 
@@ -23,7 +24,7 @@ A type that applies custom interaction behavior and a custom appearance to all b
 
 #### Overview
 
-To configure the current button style for a view hierarchy, use the [`buttonStyle(_:)`](view/buttonstyle(_:).md) modifier. Specify a style that conforms to `PrimitiveButtonStyle` to create a button with custom interaction behavior. To create a button with the standard button interaction behavior defined for each platform, use [`ButtonStyle`](buttonstyle.md) instead.
+To configure the current button style for a view hierarchy, use the [`buttonStyle(_:)`](./view/buttonstyle%28_%29.md) modifier. Specify a style that conforms to `PrimitiveButtonStyle` to create a button with custom interaction behavior. To create a button with the standard button interaction behavior defined for each platform, use [`ButtonStyle`](./buttonstyle.md) instead.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -44,87 +45,88 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in button styles
-- [static var automatic: DefaultButtonStyle](primitivebuttonstyle/automatic.md)
+- [static var automatic: DefaultButtonStyle](./primitivebuttonstyle/automatic.md)
   The default button style, based on the button’s context.
-- [static var accessoryBar: AccessoryBarButtonStyle](primitivebuttonstyle/accessorybar.md)
+- [static var accessoryBar: AccessoryBarButtonStyle](./primitivebuttonstyle/accessorybar.md)
   A button style that is typically used in the context of an accessory toolbar (sometimes refererred to as a “scope bar”), for buttons that narrow the focus of a search or other operation.
-- [static var accessoryBarAction: AccessoryBarActionButtonStyle](primitivebuttonstyle/accessorybaraction.md)
+- [static var accessoryBarAction: AccessoryBarActionButtonStyle](./primitivebuttonstyle/accessorybaraction.md)
   A button style that you use for extra actions in an accessory toolbar.
-- [static var bordered: BorderedButtonStyle](primitivebuttonstyle/bordered.md)
+- [static var bordered: BorderedButtonStyle](./primitivebuttonstyle/bordered.md)
   A button style that applies the standard border style based on the button’s context.
-- [static var borderedProminent: BorderedProminentButtonStyle](primitivebuttonstyle/borderedprominent.md)
+- [static var borderedProminent: BorderedProminentButtonStyle](./primitivebuttonstyle/borderedprominent.md)
   A button style that applies the standard bordered prominent style based on the button’s context.
-- [static var borderless: BorderlessButtonStyle](primitivebuttonstyle/borderless.md)
+- [static var borderless: BorderlessButtonStyle](./primitivebuttonstyle/borderless.md)
   A button style that doesn’t apply a border.
-- [static var card: CardButtonStyle](primitivebuttonstyle/card.md)
+- [static var card: CardButtonStyle](./primitivebuttonstyle/card.md)
   A button style that doesn’t pad the content, and applies a Liquid Glass effect when the button has focus.
-- [static var glass: GlassButtonStyle](primitivebuttonstyle/glass.md)
+- [static var glass: GlassButtonStyle](./primitivebuttonstyle/glass.md)
   A button style that applies a Liquid Glass effect based on the button’s context.
-- [static var glassProminent: GlassProminentButtonStyle](primitivebuttonstyle/glassprominent.md)
+- [static var glassProminent: GlassProminentButtonStyle](./primitivebuttonstyle/glassprominent.md)
   A button style that applies a prominent Liquid Glass effect based on the button’s context.
-- [static func glass(Glass) -> Self](primitivebuttonstyle/glass(_:).md)
+- [static func glass(Glass) -> Self](./primitivebuttonstyle/glass%28_%29.md)
   A button style that applies a configurable Liquid Glass effect based on the button’s context.
-- [static var link: LinkButtonStyle](primitivebuttonstyle/link.md)
+- [static var link: LinkButtonStyle](./primitivebuttonstyle/link.md)
   A button style for buttons that emulate links.
-- [static var plain: PlainButtonStyle](primitivebuttonstyle/plain.md)
+- [static var plain: PlainButtonStyle](./primitivebuttonstyle/plain.md)
   A button style that doesn’t style or decorate its content while idle, but may apply a visual effect to indicate the pressed, focused, or enabled state of the button.
 ### Creating custom button styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](primitivebuttonstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./primitivebuttonstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a button.
-- [PrimitiveButtonStyle.Configuration](primitivebuttonstyle/configuration.md)
+- [PrimitiveButtonStyle.Configuration](./primitivebuttonstyle/configuration.md)
   The properties of a button.
-- [associatedtype Body : View](primitivebuttonstyle/body.md)
+- [associatedtype Body : View](./primitivebuttonstyle/body.md)
   A view that represents the body of a button.
 ### Supporting types
-- [struct DefaultButtonStyle](defaultbuttonstyle.md)
+- [struct DefaultButtonStyle](./defaultbuttonstyle.md)
   The default button style, based on the button’s context.
-- [struct AccessoryBarButtonStyle](accessorybarbuttonstyle.md)
+- [struct AccessoryBarButtonStyle](./accessorybarbuttonstyle.md)
   A button style that you use for actions in an accessory toolbar that narrow the focus of a search or other operation.
-- [struct AccessoryBarActionButtonStyle](accessorybaractionbuttonstyle.md)
+- [struct AccessoryBarActionButtonStyle](./accessorybaractionbuttonstyle.md)
   A button style that you use for extra actions in an accessory toolbar.
-- [struct BorderedButtonStyle](borderedbuttonstyle.md)
+- [struct BorderedButtonStyle](./borderedbuttonstyle.md)
   A button style that applies standard border artwork based on the button’s context.
-- [struct BorderedProminentButtonStyle](borderedprominentbuttonstyle.md)
+- [struct BorderedProminentButtonStyle](./borderedprominentbuttonstyle.md)
   A button style that applies standard border prominent artwork based on the button’s context.
-- [struct BorderlessButtonStyle](borderlessbuttonstyle.md)
+- [struct BorderlessButtonStyle](./borderlessbuttonstyle.md)
   A button style that doesn’t apply a border.
-- [struct CardButtonStyle](cardbuttonstyle.md)
+- [struct CardButtonStyle](./cardbuttonstyle.md)
   A button style that doesn’t pad the content, and applies a motion effect when a button has focus.
-- [struct LinkButtonStyle](linkbuttonstyle.md)
+- [struct LinkButtonStyle](./linkbuttonstyle.md)
   A button style for buttons that emulate links.
-- [struct PlainButtonStyle](plainbuttonstyle.md)
+- [struct PlainButtonStyle](./plainbuttonstyle.md)
   A button style that doesn’t style or decorate its content while idle, but may apply a visual effect to indicate the pressed, focused, or enabled state of the button.
 
 ## Relationships
 
 ### Conforming Types
-- [AccessoryBarActionButtonStyle](accessorybaractionbuttonstyle.md)
-- [AccessoryBarButtonStyle](accessorybarbuttonstyle.md)
-- [BorderedButtonStyle](borderedbuttonstyle.md)
-- [BorderedProminentButtonStyle](borderedprominentbuttonstyle.md)
-- [BorderlessButtonStyle](borderlessbuttonstyle.md)
-- [CardButtonStyle](cardbuttonstyle.md)
-- [DefaultButtonStyle](defaultbuttonstyle.md)
-- [GlassButtonStyle](glassbuttonstyle.md)
-- [GlassProminentButtonStyle](glassprominentbuttonstyle.md)
-- [LinkButtonStyle](linkbuttonstyle.md)
-- [PlainButtonStyle](plainbuttonstyle.md)
+- [AccessoryBarActionButtonStyle](./accessorybaractionbuttonstyle.md)
+- [AccessoryBarButtonStyle](./accessorybarbuttonstyle.md)
+- [BorderedButtonStyle](./borderedbuttonstyle.md)
+- [BorderedProminentButtonStyle](./borderedprominentbuttonstyle.md)
+- [BorderlessButtonStyle](./borderlessbuttonstyle.md)
+- [CardButtonStyle](./cardbuttonstyle.md)
+- [DefaultButtonStyle](./defaultbuttonstyle.md)
+- [GlassButtonStyle](./glassbuttonstyle.md)
+- [GlassProminentButtonStyle](./glassprominentbuttonstyle.md)
+- [LinkButtonStyle](./linkbuttonstyle.md)
+- [PlainButtonStyle](./plainbuttonstyle.md)
 
 ## See Also
 
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+### Styling buttons
+- [func buttonStyle(_:)](./view/buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [protocol ButtonStyle](buttonstyle.md)
+- [protocol ButtonStyle](./buttonstyle.md)
   A type that applies standard interaction behavior and a custom appearance to all buttons within a view hierarchy.
-- [struct ButtonStyleConfiguration](buttonstyleconfiguration.md)
+- [struct ButtonStyleConfiguration](./buttonstyleconfiguration.md)
   The properties of a button.
-- [struct PrimitiveButtonStyleConfiguration](primitivebuttonstyleconfiguration.md)
+- [struct PrimitiveButtonStyleConfiguration](./primitivebuttonstyleconfiguration.md)
   The properties of a button.
-- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
+- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](./view/signinwithapplebuttonstyle%28_%29.md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./view/buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](./buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
 
 

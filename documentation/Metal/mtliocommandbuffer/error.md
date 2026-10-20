@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Stores the details of an error when the GPU experienced a problem with the input/output command buffer.
@@ -20,9 +21,14 @@ Stores the details of an error when the GPU experienced a problem with the input
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 ## See Also
 
-- [var status: MTLIOStatus](mtliocommandbuffer/status.md)
+### Checking the state of a command buffer
+- [var status: MTLIOStatus](./status.md)
   Represents the state of the input/output command buffer.
 
 

@@ -1,7 +1,8 @@
 # universalLinkURL
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The context’s universal URL link.
 
@@ -18,17 +19,22 @@ The context’s universal URL link.
 static let universalLinkURL: CLSPredicateKeyPath
 ```
 
+```c
+extern CLSPredicateKeyPath const CLSPredicateKeyPathUniversalLinkURL;
+```
+
 ## See Also
 
-- [static let dateCreated: CLSPredicateKeyPath](clspredicatekeypath/datecreated.md)
+### Predicate key paths
+- [static let dateCreated: CLSPredicateKeyPath](./datecreated.md)
   The date on which the context was created.
-- [static let identifier: CLSPredicateKeyPath](clspredicatekeypath/identifier.md)
+- [static let identifier: CLSPredicateKeyPath](./identifier.md)
   The context’s identifier.
-- [static let parent: CLSPredicateKeyPath](clspredicatekeypath/parent.md)
+- [static let parent: CLSPredicateKeyPath](./parent.md)
   The context’s direct ancestor in the context hierarchy.
-- [static let title: CLSPredicateKeyPath](clspredicatekeypath/title.md)
+- [static let title: CLSPredicateKeyPath](./title.md)
   The human readable name of the context.
-- [static let topic: CLSPredicateKeyPath](clspredicatekeypath/topic.md)
+- [static let topic: CLSPredicateKeyPath](./topic.md)
   The context’s topic.
 
 

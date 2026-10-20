@@ -1,7 +1,8 @@
 # prepareState
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of sound-event preparation.
 
@@ -19,13 +20,18 @@ The status of sound-event preparation.
 var prepareState: PHASESoundEvent.PrepareState { get }
 ```
 
+```objc
+@property (readonly) PHASESoundEventPrepareState prepareState;
+```
+
 ## See Also
 
-- [func prepare(completion: ((PHASESoundEvent.PrepareHandlerReason) -> Void)?)](phasesoundevent/prepare(completion:).md)
+### Preparing Playback
+- [func prepare(completion: ((PHASESoundEvent.PrepareHandlerReason) -> Void)?)](./prepare%28completion%29.md)
   Enables a sound event to play and runs the argument code when the sound event plays back.
-- [PHASESoundEvent.PrepareHandlerReason](phasesoundevent/preparehandlerreason.md)
+- [PHASESoundEvent.PrepareHandlerReason](./preparehandlerreason.md)
   Indicates the results of sound-event preparation.
-- [PHASESoundEvent.PrepareState](phasesoundevent/preparestate-swift.enum.md)
+- [PHASESoundEvent.PrepareState](./preparestate-swift.enum.md)
   Indicates the state of sound-event preparation.
 
 

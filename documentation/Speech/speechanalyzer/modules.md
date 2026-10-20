@@ -1,7 +1,8 @@
 # modules
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modules performing analysis on the audio input.
 
@@ -21,7 +22,8 @@ final var modules: [any SpeechModule] { get }
 
 ## See Also
 
-- [func setModules([any SpeechModule]) async throws](speechanalyzer/setmodules(_:).md)
+### Managing modules
+- [func setModules([any SpeechModule]) async throws](./setmodules%28_%29.md)
   Adds or removes modules.
 
 

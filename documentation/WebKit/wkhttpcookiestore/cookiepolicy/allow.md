@@ -1,7 +1,8 @@
 # WKHTTPCookieStore.CookiePolicy.allow
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A case that indicates the cookie store allows cookie storage.
 
@@ -18,9 +19,14 @@ A case that indicates the cookie store allows cookie storage.
 case allow
 ```
 
+```c
+WKCookiePolicyAllow
+```
+
 ## See Also
 
-- [WKHTTPCookieStore.CookiePolicy.disallow](wkhttpcookiestore/cookiepolicy/disallow.md)
+### Specifying a cookie policy
+- [WKHTTPCookieStore.CookiePolicy.disallow](./disallow.md)
   A case that indicates the cookie store does not allow cookie storage.
 
 

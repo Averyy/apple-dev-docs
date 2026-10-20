@@ -1,7 +1,8 @@
 # LabelStyleConfiguration.Icon
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased icon view of a label.
 
@@ -23,13 +24,14 @@ struct Icon
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [View](view.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [View](../view.md)
 
 ## See Also
 
-- [var icon: LabelStyleConfiguration.Icon](labelstyleconfiguration/icon-swift.property.md)
+### Setting the icon
+- [var icon: LabelStyleConfiguration.Icon](./icon-swift.property.md)
   A symbolic representation of the labeled item.
 
 

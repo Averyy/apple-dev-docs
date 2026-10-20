@@ -1,7 +1,8 @@
 # init(defaultInitiatorRole:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the configuration structure for a spatial template.
 

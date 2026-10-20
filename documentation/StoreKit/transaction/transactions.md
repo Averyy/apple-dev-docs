@@ -1,7 +1,8 @@
 # Transaction.Transactions
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of transactions.
 
@@ -22,18 +23,19 @@ struct Transactions
 
 #### Overview
 
-You don’t create a [`Transaction.Transactions`](transaction/transactions.md) sequence directly. Use methods such as [`all`](transaction/all.md), [`updates`](transaction/updates.md), or [`currentEntitlements`](transaction/currententitlements.md) to get transactions.
+You don’t create a [`Transaction.Transactions`](./transactions.md) sequence directly. Use methods such as [`all`](./all.md), [`updates`](./updates.md), or [`currentEntitlements`](./currententitlements.md) to get transactions.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var updates: Transaction.Transactions](transaction/updates.md)
+### Monitoring transaction-related changes
+- [static var updates: Transaction.Transactions](./updates.md)
   The asynchronous sequence that emits a transaction when the system creates or updates transactions that occur outside the app or on other devices.
 
 

@@ -1,7 +1,8 @@
 # NSColorPanel.Mode.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No color panel mode.
 
@@ -14,23 +15,28 @@ No color panel mode.
 case none
 ```
 
+```c
+NSColorPanelModeNone
+```
+
 ## See Also
 
-- [NSColorPanel.Mode.gray](nscolorpanel/mode-swift.enum/gray.md)
+### Color Panel Modes
+- [NSColorPanel.Mode.gray](./gray.md)
   The grayscale-alpha color mode.
-- [NSColorPanel.Mode.RGB](nscolorpanel/mode-swift.enum/rgb.md)
+- [NSColorPanel.Mode.RGB](./rgb.md)
   The red-green-blue color mode.
-- [NSColorPanel.Mode.CMYK](nscolorpanel/mode-swift.enum/cmyk.md)
+- [NSColorPanel.Mode.CMYK](./cmyk.md)
   The cyan-magenta-yellow-black color mode.
-- [NSColorPanel.Mode.HSB](nscolorpanel/mode-swift.enum/hsb.md)
+- [NSColorPanel.Mode.HSB](./hsb.md)
   The hue-saturation-brightness color mode.
-- [NSColorPanel.Mode.customPalette](nscolorpanel/mode-swift.enum/custompalette.md)
+- [NSColorPanel.Mode.customPalette](./custompalette.md)
   The custom palette color mode.
-- [NSColorPanel.Mode.colorList](nscolorpanel/mode-swift.enum/colorlist.md)
+- [NSColorPanel.Mode.colorList](./colorlist.md)
   The custom color list mode.
-- [NSColorPanel.Mode.wheel](nscolorpanel/mode-swift.enum/wheel.md)
+- [NSColorPanel.Mode.wheel](./wheel.md)
   The color wheel mode.
-- [NSColorPanel.Mode.crayon](nscolorpanel/mode-swift.enum/crayon.md)
+- [NSColorPanel.Mode.crayon](./crayon.md)
   The crayon picker mode.
 
 

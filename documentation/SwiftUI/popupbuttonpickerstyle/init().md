@@ -1,12 +1,15 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pop-up button picker style.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MenuPickerStyle`](../menupickerstyle.md) instead.
 
 ## Declaration
 

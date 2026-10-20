@@ -1,7 +1,8 @@
 # init(insertionPoint:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a selection at a given insertion point.
 

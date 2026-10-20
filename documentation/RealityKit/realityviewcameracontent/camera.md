@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active camera for the RealityKit scene.
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothL2CAPFlushTimeoutEnd](1640072-anonymous/kbluetoothl2capflushtimeoutend.md)
-- [kBluetoothL2CAPFlushTimeoutForever](1640072-anonymous/kbluetoothl2capflushtimeoutforever.md)
-- [kBluetoothL2CAPFlushTimeoutImmediate](1640072-anonymous/kbluetoothl2capflushtimeoutimmediate.md)
-- [kBluetoothL2CAPFlushTimeoutUseExisting](1640072-anonymous/kbluetoothl2capflushtimeoutuseexisting.md)
+- [kBluetoothL2CAPFlushTimeoutEnd](./api-1640072-anonymous/kbluetoothl2capflushtimeoutend.md)
+- [kBluetoothL2CAPFlushTimeoutForever](./api-1640072-anonymous/kbluetoothl2capflushtimeoutforever.md)
+- [kBluetoothL2CAPFlushTimeoutImmediate](./api-1640072-anonymous/kbluetoothl2capflushtimeoutimmediate.md)
+- [kBluetoothL2CAPFlushTimeoutUseExisting](./api-1640072-anonymous/kbluetoothl2capflushtimeoutuseexisting.md)
 
 
 ---

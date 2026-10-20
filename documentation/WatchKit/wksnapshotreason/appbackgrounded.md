@@ -1,7 +1,8 @@
 # WKSnapshotReason.appBackgrounded
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app transitioned from the foreground to the background.
 
@@ -14,15 +15,20 @@ The app transitioned from the foreground to the background.
 case appBackgrounded
 ```
 
+```c
+WKSnapshotReasonAppBackgrounded
+```
+
 ## See Also
 
-- [WKSnapshotReason.appScheduled](wksnapshotreason/appscheduled.md)
+### Enumeration Cases
+- [WKSnapshotReason.appScheduled](./appscheduled.md)
   The app scheduled this snapshot.
-- [WKSnapshotReason.complicationUpdate](wksnapshotreason/complicationupdate.md)
+- [WKSnapshotReason.complicationUpdate](./complicationupdate.md)
   The app updated the complication timeline.
-- [WKSnapshotReason.prelaunch](wksnapshotreason/prelaunch.md)
+- [WKSnapshotReason.prelaunch](./prelaunch.md)
   The system needs a snapshot for the dock, but the app has not been launched yet.
-- [WKSnapshotReason.returnToDefaultState](wksnapshotreason/returntodefaultstate.md)
+- [WKSnapshotReason.returnToDefaultState](./returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

@@ -1,7 +1,8 @@
 # chartYVisibleDomain(length:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the length of the visible domain in the Y dimension.
 
@@ -42,7 +43,8 @@ Chart(data) {
 
 ## See Also
 
-- [func chartXVisibleDomain<P>(length: P) -> some View](view/chartxvisibledomain(length:).md)
+### Visible domain
+- [func chartXVisibleDomain<P>(length: P) -> some View](./chartxvisibledomain%28length%29.md)
   Sets the length of the visible domain in the X dimension.
 
 

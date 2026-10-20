@@ -1,17 +1,18 @@
 # legendWith
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOReportLegendEntry> legendWith(OSArray *channelIDs, OSArray *channelNames, IOReportChannelType channelType, IOReportUnit unit);
 ```
 
@@ -29,10 +30,18 @@ Locking: SAFE to call concurrently (no static globals), MAY BLOCK
 
 ## Parameters
 
-- `channelIDs`: - OSArray of OSNumber(uint64_t) channels IDs.
-- `channelNames`: - parrallel OSArray of OSSymbol(rich names)
-- `channelType`: - the type of all channels in this legend
-- `unit`: - The unit for the quantity recorded by this reporter object
+- `channelIDs`:
+
+  - OSArray of OSNumber(uint64_t) channels IDs.
+- `channelNames`:
+
+  - parrallel OSArray of OSSymbol(rich names)
+- `channelType`:
+
+  - the type of all channels in this legend
+- `unit`:
+
+  - The unit for the quantity recorded by this reporter object
 
 
 ---

@@ -1,7 +1,8 @@
 # SSLCiphersuiteGroup
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mechanism for grouping related cipher suites.
 
@@ -20,27 +21,31 @@ A mechanism for grouping related cipher suites.
 enum SSLCiphersuiteGroup
 ```
 
+```c
+enum SSLCiphersuiteGroup : int;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SSLCiphersuiteGroup.default](sslciphersuitegroup/default.md)
-- [SSLCiphersuiteGroup.compatibility](sslciphersuitegroup/compatibility.md)
-- [SSLCiphersuiteGroup.legacy](sslciphersuitegroup/legacy.md)
-- [SSLCiphersuiteGroup.ATS](sslciphersuitegroup/ats.md)
-- [SSLCiphersuiteGroup.atsCompatibility](sslciphersuitegroup/atscompatibility.md)
-- [SSLCiphersuiteGroup.atsfcp_v2_1](sslciphersuitegroup/atsfcp_v2_1.md)
+- [SSLCiphersuiteGroup.default](./sslciphersuitegroup/default.md)
+- [SSLCiphersuiteGroup.compatibility](./sslciphersuitegroup/compatibility.md)
+- [SSLCiphersuiteGroup.legacy](./sslciphersuitegroup/legacy.md)
+- [SSLCiphersuiteGroup.ATS](./sslciphersuitegroup/ats.md)
+- [SSLCiphersuiteGroup.atsCompatibility](./sslciphersuitegroup/atscompatibility.md)
+- [SSLCiphersuiteGroup.atsfcp_v2_1](./sslciphersuitegroup/atsfcp_v2_1.md)
 ### Initializers
-- [init?(rawValue: Int32)](sslciphersuitegroup/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./sslciphersuitegroup/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

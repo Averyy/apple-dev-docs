@@ -1,7 +1,8 @@
 # sampleBufferAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of sample buffers that the resource state pass can access.
 
@@ -17,6 +18,10 @@ The array of sample buffers that the resource state pass can access.
 
 ```swift
 var sampleBufferAttachments: MTLResourceStatePassSampleBufferAttachmentDescriptorArray { get }
+```
+
+```objc
+@property (readonly) MTLResourceStatePassSampleBufferAttachmentDescriptorArray * sampleBufferAttachments;
 ```
 
 

@@ -1,7 +1,8 @@
 # auxiliarySemanticSegmentationHairMatte
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,31 +18,36 @@
 static let auxiliarySemanticSegmentationHairMatte: CIImageOption
 ```
 
+```c
+extern CIImageOption const kCIImageAuxiliarySemanticSegmentationHairMatte;
+```
+
 ## See Also
 
-- [static let applyOrientationProperty: CIImageOption](ciimageoption/applyorientationproperty.md)
+### Type Properties
+- [static let applyOrientationProperty: CIImageOption](./applyorientationproperty.md)
   The key for transforming an image according to orientation metadata.
-- [static let auxiliaryDepth: CIImageOption](ciimageoption/auxiliarydepth.md)
+- [static let auxiliaryDepth: CIImageOption](./auxiliarydepth.md)
   The key into the properties dictionary indicating whether to return an auxiliary depth image.
-- [static let auxiliaryDisparity: CIImageOption](ciimageoption/auxiliarydisparity.md)
+- [static let auxiliaryDisparity: CIImageOption](./auxiliarydisparity.md)
   The key into the properties dictionary indicating whether to return an auxiliary disparity image.
-- [static let auxiliaryHDRGainMap: CIImageOption](ciimageoption/auxiliaryhdrgainmap.md)
-- [static let auxiliaryPortraitEffectsMatte: CIImageOption](ciimageoption/auxiliaryportraiteffectsmatte.md)
+- [static let auxiliaryHDRGainMap: CIImageOption](./auxiliaryhdrgainmap.md)
+- [static let auxiliaryPortraitEffectsMatte: CIImageOption](./auxiliaryportraiteffectsmatte.md)
   The key into the properties dictionary indicating whether to return auxiliary portrait effects matte.
-- [static let auxiliarySemanticSegmentationGlassesMatte: CIImageOption](ciimageoption/auxiliarysemanticsegmentationglassesmatte.md)
-- [static let auxiliarySemanticSegmentationSkinMatte: CIImageOption](ciimageoption/auxiliarysemanticsegmentationskinmatte.md)
-- [static let auxiliarySemanticSegmentationSkyMatte: CIImageOption](ciimageoption/auxiliarysemanticsegmentationskymatte.md)
-- [static let auxiliarySemanticSegmentationTeethMatte: CIImageOption](ciimageoption/auxiliarysemanticsegmentationteethmatte.md)
-- [static let cacheImmediately: CIImageOption](ciimageoption/cacheimmediately.md)
-- [static let colorSpace: CIImageOption](ciimageoption/colorspace.md)
+- [static let auxiliarySemanticSegmentationGlassesMatte: CIImageOption](./auxiliarysemanticsegmentationglassesmatte.md)
+- [static let auxiliarySemanticSegmentationSkinMatte: CIImageOption](./auxiliarysemanticsegmentationskinmatte.md)
+- [static let auxiliarySemanticSegmentationSkyMatte: CIImageOption](./auxiliarysemanticsegmentationskymatte.md)
+- [static let auxiliarySemanticSegmentationTeethMatte: CIImageOption](./auxiliarysemanticsegmentationteethmatte.md)
+- [static let cacheImmediately: CIImageOption](./cacheimmediately.md)
+- [static let colorSpace: CIImageOption](./colorspace.md)
   The key for a color space.
-- [static let expandToHDR: CIImageOption](ciimageoption/expandtohdr.md)
+- [static let expandToHDR: CIImageOption](./expandtohdr.md)
   A Boolean value that indicates whether to read Gain Map HDR images as HDR.
-- [static let nearestSampling: CIImageOption](ciimageoption/nearestsampling.md)
+- [static let nearestSampling: CIImageOption](./nearestsampling.md)
   The key into the properties dictionary to indicate whether to use nearest-neighbor sampling.
-- [static let properties: CIImageOption](ciimageoption/properties.md)
+- [static let properties: CIImageOption](./properties.md)
   The key for image metadata properties.
-- [static let providerTileSize: CIImageOption](ciimageoption/providertilesize.md)
+- [static let providerTileSize: CIImageOption](./providertilesize.md)
   A key for the image tiles size. The associated value is an `NSArray` that contains`NSNumber` objects for the dimensions of the image tiles requested from the image provider.
 
 

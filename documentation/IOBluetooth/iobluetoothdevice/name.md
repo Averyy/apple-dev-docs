@@ -1,17 +1,22 @@
 # name
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the human readable name of the remote device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var name: String! { get }
+```
+
+```objc
+@property (copy, readonly) NSString * name;
 ```
 
 #### Discussion

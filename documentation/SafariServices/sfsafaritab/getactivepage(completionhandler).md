@@ -1,7 +1,8 @@
 # getActivePage(completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the completion handler passing the active page in the tab.
 
@@ -11,14 +12,26 @@ Calls the completion handler passing the active page in the tab.
 ## Declaration
 
 ```swift
+func getActivePage(completionHandler: @escaping @Sendable (SFSafariPage?) -> Void)
+```
+
+```swift
 func activePage() async -> SFSafariPage?
+```
+
+```objc
+- (void) getActivePageWithCompletionHandler:(void (^)(SFSafariPage *activePage)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func activePage() async -> SFSafariPage?
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func activePage() async -> SFSafariPage?
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
@@ -26,7 +39,8 @@ func activePage() async -> SFSafariPage?
 
 ## See Also
 
-- [func getPagesWithCompletionHandler(([SFSafariPage]?) -> Void)](sfsafaritab/getpageswithcompletionhandler(_:).md)
+### Accessing Pages
+- [func getPagesWithCompletionHandler(([SFSafariPage]?) -> Void)](./getpageswithcompletionhandler%28_%29.md)
   Calls the completion handler with all of the tab’s active and preloading pages.
 
 

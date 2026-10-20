@@ -1,7 +1,8 @@
 # postProcess
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback function for implementing postprocess effects.
 
@@ -20,13 +21,13 @@ var postProcess: ((ARView.PostProcessContext) -> Void)?
 
 ## Mentions
 
-- [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
-- [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
-- [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
+- [Implementing postprocess effects using Metal compute functions](../../implementing-postprocess-effects-using-metal-compute-functions.md)
+- [Applying core image filters as a postprocess effect](../../applying-core-image-filters-as-a-postprocess-effect.md)
+- [Using Metal performance shaders to create custom postprocess effects](../../using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
 #### Discussion
 
-Assign a function or closure to this property to implement postprocessing effects for a RealityKit scene. If this value is non-`nil`, RealityKit calls the assigned function or closure once every frame before it displays the scene. If you register a postprocess render callback, the callback function needs to encode the modified frame buffer to the context’s [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md), or nothing renders.
+Assign a function or closure to this property to implement postprocessing effects for a RealityKit scene. If this value is non-`nil`, RealityKit calls the assigned function or closure once every frame before it displays the scene. If you register a postprocess render callback, the callback function needs to encode the modified frame buffer to the context’s [`targetColorTexture`](../postprocesscontext/targetcolortexture.md), or nothing renders.
 
 A postprocess callback looks like this:
 
@@ -36,7 +37,7 @@ func myPostProcessCallback(context:ARView.PostProcessContext) {
 }
 ```
 
-To register the function so RealityKit begins calling it, assign it to the [`postProcess`](arview/rendercallbacks-swift.struct/postprocess.md) property of the view’s [`renderCallbacks`](arview/rendercallbacks-swift.property.md) property.
+To register the function so RealityKit begins calling it, assign it to the [`postProcess`](./postprocess.md) property of the view’s [`renderCallbacks`](../rendercallbacks-swift.property.md) property.
 
 ```swift
 arView.renderCallbacks.postProcess = myPostProcessCallback
@@ -48,7 +49,7 @@ To stop RealityKit from calling your function, assign `nil`:
 arView.renderCallbacks.postProcess = nil
 ```
 
-If your app turns postprocessing on and off frequently, another option for disabling postprocess effects is to keep your callback registered, but use an [`MTLBlitCommandEncoder`](https://developer.apple.com/documentation/metal/mtlblitcommandencoder) to encode the unmodified frame directly to the output texture whenever postprocess effects aren’t active.
+If your app turns postprocessing on and off frequently, another option for disabling postprocess effects is to keep your callback registered, but use an [`MTLBlitCommandEncoder`](../../../Metal/mtlblitcommandencoder.md) to encode the unmodified frame directly to the output texture whenever postprocess effects aren’t active.
 
 ```swift
 func myPostProcessCallback(context:ARView.PostProcessContext) {
@@ -67,7 +68,8 @@ func myPostProcessCallback(context:ARView.PostProcessContext) {
 
 ## See Also
 
-- [var prepareWithDevice: ((any MTLDevice) -> Void)?](arview/rendercallbacks-swift.struct/preparewithdevice.md)
+### Register callback closures
+- [var prepareWithDevice: ((any MTLDevice) -> Void)?](./preparewithdevice.md)
   A callback function for doing initial setup work.
 
 

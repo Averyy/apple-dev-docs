@@ -1,12 +1,15 @@
 # headerLabel
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SwiftUI view displayed by the template.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -17,11 +20,12 @@ The SwiftUI view displayed by the template.
 
 ## See Also
 
-- [var headerTextProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangularstandardbodyview/headertextprovider.md)
+### Accessing the Content
+- [var headerTextProvider: CLKTextProvider](./headertextprovider.md)
   The text provider for the header text.
-- [var body1TextProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangularstandardbodyview/body1textprovider.md)
+- [var body1TextProvider: CLKTextProvider](./body1textprovider.md)
   The text provider for the first row of body text.
-- [var body2TextProvider: CLKTextProvider?](clkcomplicationtemplategraphicrectangularstandardbodyview/body2textprovider.md)
+- [var body2TextProvider: CLKTextProvider?](./body2textprovider.md)
   The text provider for the second row of body text.
 
 

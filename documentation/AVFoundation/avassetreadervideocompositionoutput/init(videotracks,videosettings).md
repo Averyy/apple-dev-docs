@@ -1,7 +1,8 @@
 # init(videoTracks:videoSettings:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that reads composited video frames from the specified video tracks.
 
@@ -19,9 +20,13 @@ Creates an object that reads composited video frames from the specified video tr
 init(videoTracks: [AVAssetTrack], videoSettings: [String : Any]?)
 ```
 
+```objc
+- (instancetype) initWithVideoTracks:(NSArray<AVAssetTrack *> *) videoTracks videoSettings:(NSDictionary<NSString *,id> *) videoSettings;
+```
+
 ## Parameters
 
-- `videoTracks`: An array of asset tracks from which to read video frames for compositing. The media type of each track must be [`video`](avmediatype/video.md).
+- `videoTracks`: An array of asset tracks from which to read video frames for compositing. The media type of each track must be [`video`](../avmediatype/video.md).
 - `videoSettings`: Specifying a `nil` value configures the output to return samples in an uncompressed format.
 
 

@@ -1,7 +1,8 @@
 # init(cornerRadius:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new rectangle with optionally rounded corners.
 
@@ -20,7 +21,9 @@ init(cornerRadius: CGFloat? = nil)
 
 ## Parameters
 
-- `cornerRadius`: The corner radius in unit coordinate space (0.0 to 1.0). A value of `0.1` represents 10% of the minimum dimension of the shape. If `nil` then this is a plain rectangle.
+- `cornerRadius`: The corner radius in unit coordinate space (0.0 to 1.0). A value of `0.1` represents 10% of the minimum dimension of the shape.
+
+  If `nil` then this is a plain rectangle.
 
 
 ---

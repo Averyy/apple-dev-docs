@@ -1,7 +1,8 @@
 # init(platform:)
 
 **Framework**: AppMigrationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tester instance for migrating to or from the specified platform.
 

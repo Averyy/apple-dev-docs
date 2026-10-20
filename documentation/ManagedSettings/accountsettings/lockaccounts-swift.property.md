@@ -1,7 +1,8 @@
 # lockAccounts
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from changing their account information.
 
@@ -22,7 +23,8 @@ Your app can enable or disable changes to the user’s account settings. The def
 
 ## See Also
 
-- [static let lockAccounts: SettingMetadata<Bool>](accountsettings/lockaccounts-swift.type.property.md)
+### Constraining accounts
+- [static let lockAccounts: SettingMetadata<Bool>](./lockaccounts-swift.type.property.md)
   A description of the setting that controls whether a user can modify their account information.
 
 

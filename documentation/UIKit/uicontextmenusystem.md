@@ -1,7 +1,8 @@
 # UIContextMenuSystem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The context menu system.
 
@@ -19,37 +20,42 @@ The context menu system.
 class UIContextMenuSystem
 ```
 
+```objc
+@interface UIContextMenuSystem : UIMenuSystem
+```
+
 ## Topics
 
 ### Type Properties
-- [class var shared: UIContextMenuSystem](uicontextmenusystem/shared.md)
+- [class var shared: UIContextMenuSystem](./uicontextmenusystem/shared.md)
   The shared context menu system.
 
 ## Relationships
 
 ### Inherits From
-- [UIMenuSystem](uimenusystem.md)
+- [UIMenuSystem](./uimenusystem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIContextMenuInteraction](uicontextmenuinteraction.md)
+### Contextual menus
+- [class UIContextMenuInteraction](./uicontextmenuinteraction.md)
   An interaction object that you use to display relevant actions for your content.
-- [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
+- [protocol UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
   The methods for providing the set of actions to perform on your content, and for customizing the preview of that content.
-- [class UITargetedPreview](uitargetedpreview.md)
+- [class UITargetedPreview](./uitargetedpreview.md)
   An object describing the view to use during preview-related animations.
-- [class UIPreviewTarget](uipreviewtarget.md)
+- [class UIPreviewTarget](./uipreviewtarget.md)
   An object that specifies the container view to use for animations.
-- [class UIPreviewParameters](uipreviewparameters.md)
+- [class UIPreviewParameters](./uipreviewparameters.md)
   Additional parameters to use when animating a preview interface.
 
 

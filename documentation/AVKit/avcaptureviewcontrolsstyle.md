@@ -1,7 +1,8 @@
 # AVCaptureViewControlsStyle
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the capture view’s supported controls styles.
 
@@ -14,35 +15,40 @@ Constants that describe the capture view’s supported controls styles.
 enum AVCaptureViewControlsStyle
 ```
 
+```c
+enum AVCaptureViewControlsStyle : NSInteger;
+```
+
 ## Topics
 
 ### Creating a controls style
-- [init?(rawValue: Int)](avcaptureviewcontrolsstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcaptureviewcontrolsstyle/init%28rawvalue%29.md)
 ### Controls styles
-- [AVCaptureViewControlsStyle.inline](avcaptureviewcontrolsstyle/inline.md)
+- [AVCaptureViewControlsStyle.inline](./avcaptureviewcontrolsstyle/inline.md)
   The view’s inline controls style.
-- [AVCaptureViewControlsStyle.floating](avcaptureviewcontrolsstyle/floating.md)
+- [AVCaptureViewControlsStyle.floating](./avcaptureviewcontrolsstyle/floating.md)
   The view’s floating controls style, which matches the user interface of QuickTime Player.
-- [AVCaptureViewControlsStyle.inlineDeviceSelection](avcaptureviewcontrolsstyle/inlinedeviceselection.md)
+- [AVCaptureViewControlsStyle.inlineDeviceSelection](./avcaptureviewcontrolsstyle/inlinedeviceselection.md)
   The view’s inline device selection style.
-- [static var `default`: AVCaptureViewControlsStyle](avcaptureviewcontrolsstyle/default.md)
+- [static var `default`: AVCaptureViewControlsStyle](./avcaptureviewcontrolsstyle/default.md)
   The view’s default controls style.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var controlsStyle: AVCaptureViewControlsStyle](avcaptureview/controlsstyle.md)
+### Customizing the view
+- [var controlsStyle: AVCaptureViewControlsStyle](./avcaptureview/controlsstyle.md)
   The style of the capture controls presented by the view.
-- [var videoGravity: AVLayerVideoGravity](avcaptureview/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./avcaptureview/videogravity.md)
   A string value that defines how the capture view displays video within its bounds.
 
 

@@ -1,11 +1,12 @@
 # RegexComponent Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [Date.ParseStrategy.RegexOutput](date/parsestrategy/regexoutput.md)
+- [Date.ParseStrategy.RegexOutput](./regexoutput.md)
 
 
 ---

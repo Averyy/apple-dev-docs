@@ -1,7 +1,8 @@
 # transient
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The window floats in Spaces and hides in Mission Control.
 
@@ -14,13 +15,18 @@ The window floats in Spaces and hides in Mission Control.
 static var transient: NSWindow.CollectionBehavior { get }
 ```
 
+```c
+NSWindowCollectionBehaviorTransient
+```
+
 #### Discussion
 
-This is the default behavior if `windowLevel` isn’t equal to [`normal`](nswindow/level-swift.struct/normal.md).
+This is the default behavior if `windowLevel` isn’t equal to [`normal`](../level-swift.struct/normal.md).
 
 ## See Also
 
-- [static var managed: NSWindow.CollectionBehavior](nswindow/collectionbehavior-swift.struct/managed.md)
+### Spaces and Mission Control
+- [static var managed: NSWindow.CollectionBehavior](./managed.md)
   The window participates in Mission Control and Spaces.
 
 

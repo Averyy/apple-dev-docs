@@ -1,7 +1,8 @@
 # changedPaths
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The paths whose fields changed.
 

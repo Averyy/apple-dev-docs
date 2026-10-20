@@ -1,7 +1,8 @@
 # dataPoints
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data points that the series contains.
 
@@ -20,11 +21,16 @@ The data points that the series contains.
 var dataPoints: [AXDataPoint] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AXDataPoint *> * dataPoints;
+```
+
 ## See Also
 
-- [var isContinuous: Bool](axdataseriesdescriptor/iscontinuous.md)
+### Configuring the data points
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value that determines whether the data series is continuous.
-- [class AXDataPoint](axdatapoint.md)
+- [class AXDataPoint](../axdatapoint.md)
   An object that represents a single data point in a chart.
 
 

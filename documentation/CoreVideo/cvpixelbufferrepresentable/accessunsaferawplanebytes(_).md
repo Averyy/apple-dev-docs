@@ -1,7 +1,8 @@
 # accessUnsafeRawPlaneBytes(_:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access the pixels in the planes contained within this buffer. The base address is locked for reading during the execution of the block.
 

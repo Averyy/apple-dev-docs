@@ -1,7 +1,8 @@
 # SHSignature.Slices.Iterator
 
 **Framework**: ShazamKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for asynchronously accessing signature slices.
 
@@ -23,7 +24,7 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

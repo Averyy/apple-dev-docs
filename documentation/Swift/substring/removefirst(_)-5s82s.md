@@ -1,7 +1,8 @@
 # removeFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified number of elements from the beginning of the collection.
 
@@ -31,7 +32,7 @@ print(bugs)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

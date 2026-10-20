@@ -1,7 +1,8 @@
 # UIMenuElement.RepeatBehavior
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible repeat behaviors for a menu element.
 
@@ -18,33 +19,38 @@ Possible repeat behaviors for a menu element.
 enum RepeatBehavior
 ```
 
+```c
+enum UIMenuElementRepeatBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIMenuElement.RepeatBehavior.automatic](uimenuelement/repeatbehavior/automatic.md)
+- [UIMenuElement.RepeatBehavior.automatic](./repeatbehavior/automatic.md)
   Automatically uses the appropriate repeat behavior for this element.
-- [UIMenuElement.RepeatBehavior.nonRepeatable](uimenuelement/repeatbehavior/nonrepeatable.md)
+- [UIMenuElement.RepeatBehavior.nonRepeatable](./repeatbehavior/nonrepeatable.md)
   The element should not be repeatable.
-- [UIMenuElement.RepeatBehavior.repeatable](uimenuelement/repeatbehavior/repeatable.md)
+- [UIMenuElement.RepeatBehavior.repeatable](./repeatbehavior/repeatable.md)
   The element should be allowed to repeat.
 ### Initializers
-- [init?(rawValue: Int)](uimenuelement/repeatbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./repeatbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIMenuElement.Attributes](uimenuelement/attributes.md)
+### Constants
+- [UIMenuElement.Attributes](./attributes.md)
   Attributes that determine the style of the menu element.
-- [UIMenuElement.State](uimenuelement/state.md)
+- [UIMenuElement.State](./state.md)
   Constants that indicate the state of an action- or command-based menu element.
 
 

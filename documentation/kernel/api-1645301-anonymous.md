@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSPCModePageAllPagesCode](1645301-anonymous/kspcmodepageallpagescode.md)
-- [kSPCModePagePowerConditionCode](1645301-anonymous/kspcmodepagepowerconditioncode.md)
+- [kSPCModePageAllPagesCode](./api-1645301-anonymous/kspcmodepageallpagescode.md)
+- [kSPCModePagePowerConditionCode](./api-1645301-anonymous/kspcmodepagepowerconditioncode.md)
 
 
 ---

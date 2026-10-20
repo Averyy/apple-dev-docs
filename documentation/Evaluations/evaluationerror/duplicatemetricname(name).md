@@ -1,7 +1,8 @@
 # EvaluationError.duplicateMetricName(name:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Two evaluators — or a single evaluator returning multiple metrics — produced a metric with the same name for the same sample.
 

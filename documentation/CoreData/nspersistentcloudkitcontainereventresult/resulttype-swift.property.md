@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of result that the CloudKit container event fetch request returns.
 
@@ -20,11 +21,16 @@ The type of result that the CloudKit container event fetch request returns.
 var resultType: NSPersistentCloudKitContainerEventResult.ResultType { get }
 ```
 
+```objc
+@property (readonly) NSPersistentCloudKitContainerEventResultType resultType;
+```
+
 ## See Also
 
-- [var result: Any?](nspersistentcloudkitcontainereventresult/result.md)
+### Handling Event Results
+- [var result: Any?](./result.md)
   The result of the persistent CloudKit container event request, which the result type determines.
-- [NSPersistentCloudKitContainerEventResult.ResultType](nspersistentcloudkitcontainereventresult/resulttype-swift.enum.md)
+- [NSPersistentCloudKitContainerEventResult.ResultType](./resulttype-swift.enum.md)
   The types of results from a persistent CloudKit container event fetch request.
 
 

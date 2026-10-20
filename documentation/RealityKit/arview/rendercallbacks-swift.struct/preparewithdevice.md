@@ -1,7 +1,8 @@
 # prepareWithDevice
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback function for doing initial setup work.
 
@@ -20,12 +21,12 @@ var prepareWithDevice: ((any MTLDevice) -> Void)?
 
 ## Mentions
 
-- [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
-- [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
+- [Applying core image filters as a postprocess effect](../../applying-core-image-filters-as-a-postprocess-effect.md)
+- [Implementing postprocess effects using Metal compute functions](../../implementing-postprocess-effects-using-metal-compute-functions.md)
 
 #### Discussion
 
-If you assign a function to [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md), RealityKit calls that function once, after it does its setup work, but before it renders the next frame. If you register a [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) callback during app startup, RealityKit calls it before it renders the first frame. A callback function looks like this:
+If you assign a function to [`prepareWithDevice`](./preparewithdevice.md), RealityKit calls that function once, after it does its setup work, but before it renders the next frame. If you register a [`prepareWithDevice`](./preparewithdevice.md) callback during app startup, RealityKit calls it before it renders the first frame. A callback function looks like this:
 
 ```swift
     func myPostProcessSetupCallback(device: MTLDevice) {
@@ -33,7 +34,7 @@ If you assign a function to [`prepareWithDevice`](arview/rendercallbacks-swift.s
     }
 ```
 
-To register the function so RealityKit calls it, assign it to the [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) property of the view’s [`renderCallbacks`](arview/rendercallbacks-swift.property.md) property.
+To register the function so RealityKit calls it, assign it to the [`prepareWithDevice`](./preparewithdevice.md) property of the view’s [`renderCallbacks`](../rendercallbacks-swift.property.md) property.
 
 ```swift
 arView.renderCallbacks.prepareWithDevice = myPostProcessSetupCallback
@@ -49,7 +50,8 @@ If you assign a new closure or function to the property after setting it to `nil
 
 ## See Also
 
-- [var postProcess: ((ARView.PostProcessContext) -> Void)?](arview/rendercallbacks-swift.struct/postprocess.md)
+### Register callback closures
+- [var postProcess: ((ARView.PostProcessContext) -> Void)?](./postprocess.md)
   A callback function for implementing postprocess effects.
 
 

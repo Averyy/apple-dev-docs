@@ -1,7 +1,8 @@
 # resolved(from:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves an entity from a system intent value type through the entity type’s transferable conformance.
 
@@ -26,7 +27,7 @@ The resolved entity.
 
 #### Discussion
 
-> **Note**: If the entity type does not support the given value type.
+> **Throws**: If the entity type does not support the given value type.
 
 ## Parameters
 

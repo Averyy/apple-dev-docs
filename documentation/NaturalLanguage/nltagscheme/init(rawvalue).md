@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tag scheme with the specified raw value.
 
@@ -22,7 +23,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nltagscheme/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a tag scheme.
 
 

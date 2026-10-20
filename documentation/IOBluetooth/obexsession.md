@@ -1,17 +1,22 @@
 # OBEXSession
 
 **Framework**: IOBluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Object representing an OBEX connection to a remote target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class OBEXSession
+```
+
+```objc
+@interface OBEXSession : NSObject
 ```
 
 #### Overview
@@ -29,102 +34,103 @@ No timeout mechanism has been implemented so far for an OBEXSessions. If you nee
 ## Topics
 
 ### DataTypes
-- [struct OBEXTransportEvent](obextransportevent.md)
-- [typealias OBEXTransportEventType](obextransporteventtype.md)
+- [struct OBEXTransportEvent](./obextransportevent.md)
+- [typealias OBEXTransportEventType](./obextransporteventtype.md)
 ### Instance Methods
-- [func clientHandleIncomingData(UnsafeMutablePointer<OBEXTransportEvent>!)](obexsession/clienthandleincomingdata(_:).md)
+- [func clientHandleIncomingData(UnsafeMutablePointer<OBEXTransportEvent>!)](./obexsession/clienthandleincomingdata%28_%29.md)
   Tranport subclasses need to invoke this from their own data-receive handlers. For example, when data is received over a Bluetooth RFCOMM channel in the IOBluetoothOBEXSession, it in turn calls this to dispatch the data. If you do not handle this case, your server session will not work, guaranteed.
-- [func closeTransportConnection() -> OBEXError](obexsession/closetransportconnection.md)
+- [func closeTransportConnection() -> OBEXError](./obexsession/closetransportconnection%28%29.md)
   You must override this - it will be called when the transport connection should be shutdown.
-- [func getAvailableCommandPayloadLength(OBEXOpCode) -> OBEXMaxPacketLength](obexsession/getavailablecommandpayloadlength(_:).md)
+- [func getAvailableCommandPayloadLength(OBEXOpCode) -> OBEXMaxPacketLength](./obexsession/getavailablecommandpayloadlength%28_%29.md)
   Determine the maximum amount of data you can send in a particular command as an OBEX client session.
-- [func getAvailableCommandResponsePayloadLength(OBEXOpCode) -> OBEXMaxPacketLength](obexsession/getavailablecommandresponsepayloadlength(_:).md)
+- [func getAvailableCommandResponsePayloadLength(OBEXOpCode) -> OBEXMaxPacketLength](./obexsession/getavailablecommandresponsepayloadlength%28_%29.md)
   Determine the maximum amount of data you can send in a particular command response as an OBEX server session.
-- [func getMaxPacketLength() -> OBEXMaxPacketLength](obexsession/getmaxpacketlength.md)
+- [func getMaxPacketLength() -> OBEXMaxPacketLength](./obexsession/getmaxpacketlength%28%29.md)
   Gets current max packet length.
-- [func hasOpenOBEXConnection() -> Bool](obexsession/hasopenobexconnection.md)
+- [func hasOpenOBEXConnection() -> Bool](./obexsession/hasopenobexconnection%28%29.md)
   Has a successful connect packet been sent and received? This API tells you so.
-- [func hasOpenTransportConnection() -> Bool](obexsession/hasopentransportconnection.md)
+- [func hasOpenTransportConnection() -> Bool](./obexsession/hasopentransportconnection%28%29.md)
   You must override this - it will be called periodically to determine if a transport connection is open or not.
-- [func obexAbort(UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexabort(_:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexAbort(UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexabort%28_,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send an OBEX Abort command to the session’s target.
-- [func obexAbortResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexabortresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexAbortResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexabortresponse%28_,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send an abort response to a session’s target.
-- [func obexConnect(OBEXFlags, maxPacketLength: OBEXMaxPacketLength, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexconnect(_:maxpacketlength:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexConnect(OBEXFlags, maxPacketLength: OBEXMaxPacketLength, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexconnect%28_,maxpacketlength,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Initiate an OBEX connection to a device. Causes underlying transport (Bluetooth, et al) to attempt to connect to a remote device. After success, an OBEX connect packet is sent to establish the OBEX Connection.
-- [func obexConnectResponse(OBEXOpCode, flags: OBEXFlags, maxPacketLength: OBEXMaxPacketLength, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexconnectresponse(_:flags:maxpacketlength:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexConnectResponse(OBEXOpCode, flags: OBEXFlags, maxPacketLength: OBEXMaxPacketLength, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexconnectresponse%28_,flags,maxpacketlength,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send a connect response to a session’s target.
-- [func obexDisconnect(UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexdisconnect(_:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexDisconnect(UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexdisconnect%28_,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send an OBEX Disconnect command to the session’s target. THIS DOES NOT necessarily close the underlying transport connection. Deleting the session will ensure that closure.
-- [func obexDisconnectResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexdisconnectresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexDisconnectResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexdisconnectresponse%28_,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send a disconnect response to a session’s target.
-- [func obexGet(Bool, headers: UnsafeMutableRawPointer!, headersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexget(_:headers:headerslength:eventselector:selectortarget:refcon:).md)
+- [func obexGet(Bool, headers: UnsafeMutableRawPointer!, headersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexget%28_,headers,headerslength,eventselector,selectortarget,refcon%29.md)
   Send an OBEX Get command to the session’s target.
-- [func obexGetResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexgetresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexGetResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexgetresponse%28_,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send a get response to a session’s target.
-- [func obexPut(Bool, headersData: UnsafeMutableRawPointer!, headersDataLength: Int, bodyData: UnsafeMutableRawPointer!, bodyDataLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexput(_:headersdata:headersdatalength:bodydata:bodydatalength:eventselector:selectortarget:refcon:).md)
+- [func obexPut(Bool, headersData: UnsafeMutableRawPointer!, headersDataLength: Int, bodyData: UnsafeMutableRawPointer!, bodyDataLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexput%28_,headersdata,headersdatalength,bodydata,bodydatalength,eventselector,selectortarget,refcon%29.md)
   Send an OBEX Put command to the session’s target.
-- [func obexPutResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexputresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexPutResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexputresponse%28_,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send a put response to a session’s target.
-- [func obexSetPath(OBEXFlags, constants: OBEXConstants, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexsetpath(_:constants:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexSetPath(OBEXFlags, constants: OBEXConstants, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexsetpath%28_,constants,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send an OBEX SetPath command to the session’s target.
-- [func obexSetPathResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/obexsetpathresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).md)
+- [func obexSetPathResponse(OBEXOpCode, optionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLength: Int, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/obexsetpathresponse%28_,optionalheaders,optionalheaderslength,eventselector,selectortarget,refcon%29.md)
   Send a set path response to a session’s target.
-- [func openTransportConnection(Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](obexsession/opentransportconnection(_:selectortarget:refcon:).md)
+- [func openTransportConnection(Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!) -> OBEXError](./obexsession/opentransportconnection%28_,selectortarget,refcon%29.md)
   Opens a transport connection to a device. A Bluetooth connection is one example of a transport.
-- [func sendData(toTransport: UnsafeMutableRawPointer!, dataLength: Int) -> OBEXError](obexsession/senddata(totransport:datalength:).md)
+- [func sendData(toTransport: UnsafeMutableRawPointer!, dataLength: Int) -> OBEXError](./obexsession/senddata%28totransport,datalength%29.md)
   You must override this to send data over your transport. This does nothing by default, it will return a kOBEXUnsupportedError.
-- [func serverHandleIncomingData(UnsafeMutablePointer<OBEXTransportEvent>!)](obexsession/serverhandleincomingdata(_:).md)
+- [func serverHandleIncomingData(UnsafeMutablePointer<OBEXTransportEvent>!)](./obexsession/serverhandleincomingdata%28_%29.md)
   Tranport subclasses need to invoke this from their own data-receive handlers. For example, when data is received over a Bluetooth RFCOMM channel in the IOBluetoothOBEXSession, it in turn calls this to dispatch the data. If you do not handle this case, your server session will not work, guaranteed.
-- [func setEventCallback(OBEXSessionEventCallback!)](obexsession/seteventcallback(_:).md)
+- [func setEventCallback(OBEXSessionEventCallback!)](./obexsession/seteventcallback%28_%29.md)
   Sets the C-API callback used when the session recieves data.
-- [func setEventRefCon(UnsafeMutableRawPointer!)](obexsession/seteventrefcon(_:).md)
+- [func setEventRefCon(UnsafeMutableRawPointer!)](./obexsession/seteventrefcon%28_%29.md)
   Sets the C-API callback refCon used when the session recieves data.
-- [func setEventSelector(Selector!, target: Any!, refCon: UnsafeMutableRawPointer!)](obexsession/seteventselector(_:target:refcon:).md)
+- [func setEventSelector(Selector!, target: Any!, refCon: UnsafeMutableRawPointer!)](./obexsession/seteventselector%28_,target,refcon%29.md)
   Allow you to set a selector to be called when events occur on the OBEX session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [IOBluetoothOBEXSession](iobluetoothobexsession.md)
+- [IOBluetoothOBEXSession](./iobluetoothobexsession.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOBluetoothDevice](iobluetoothdevice.md)
+### Classes
+- [class IOBluetoothDevice](./iobluetoothdevice.md)
   An instance of IOBluetoothDevice represents a single remote Bluetooth device.
-- [class IOBluetoothDeviceInquiry](iobluetoothdeviceinquiry.md)
+- [class IOBluetoothDeviceInquiry](./iobluetoothdeviceinquiry.md)
   Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.
-- [class IOBluetoothDevicePair](iobluetoothdevicepair.md)
+- [class IOBluetoothDevicePair](./iobluetoothdevicepair.md)
   An instance of IOBluetoothDevicePair represents a pairing attempt to a remote Bluetooth device.
-- [class IOBluetoothDeviceRef](iobluetoothdeviceref.md)
+- [class IOBluetoothDeviceRef](./iobluetoothdeviceref.md)
   An object that represents a Bluetooth I/O device.
-- [class IOBluetoothHandsFree](iobluetoothhandsfree.md)
+- [class IOBluetoothHandsFree](./iobluetoothhandsfree.md)
   Hands free profile class.
-- [class IOBluetoothHandsFreeAudioGateway](iobluetoothhandsfreeaudiogateway.md)
+- [class IOBluetoothHandsFreeAudioGateway](./iobluetoothhandsfreeaudiogateway.md)
   An object that sends data to a connected Bluetooth hands-free phone or headset and processes commands from it.
-- [class IOBluetoothHandsFreeDevice](iobluetoothhandsfreedevice.md)
+- [class IOBluetoothHandsFreeDevice](./iobluetoothhandsfreedevice.md)
   An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset.
-- [class IOBluetoothHostController](iobluetoothhostcontroller.md)
+- [class IOBluetoothHostController](./iobluetoothhostcontroller.md)
   This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally).
-- [class IOBluetoothL2CAPChannel](iobluetoothl2capchannel.md)
+- [class IOBluetoothL2CAPChannel](./iobluetoothl2capchannel.md)
   An instance of IOBluetoothL2CAPChannel represents a single open L2CAP channel.
-- [class IOBluetoothL2CAPChannelRef](iobluetoothl2capchannelref.md)
-- [class IOBluetoothOBEXSession](iobluetoothobexsession.md)
+- [class IOBluetoothL2CAPChannelRef](./iobluetoothl2capchannelref.md)
+- [class IOBluetoothOBEXSession](./iobluetoothobexsession.md)
   An OBEX Session with a Bluetooth RFCOMM channel as the transport.
-- [class IOBluetoothObject](iobluetoothobject.md)
-- [class IOBluetoothObjectRef](iobluetoothobjectref.md)
-- [class IOBluetoothRFCOMMChannel](iobluetoothrfcommchannel.md)
+- [class IOBluetoothObject](./iobluetoothobject.md)
+- [class IOBluetoothObjectRef](./iobluetoothobjectref.md)
+- [class IOBluetoothRFCOMMChannel](./iobluetoothrfcommchannel.md)
   An instance of this class represents an RFCOMM channel as defined by the Bluetooth SDP spec..
-- [class IOBluetoothRFCOMMChannelRef](iobluetoothrfcommchannelref.md)
+- [class IOBluetoothRFCOMMChannelRef](./iobluetoothrfcommchannelref.md)
 
 
 ---

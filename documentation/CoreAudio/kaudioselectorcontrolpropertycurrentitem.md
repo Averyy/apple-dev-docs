@@ -1,11 +1,12 @@
 # kAudioSelectorControlPropertyCurrentItem
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,11 +14,16 @@
 var kAudioSelectorControlPropertyCurrentItem: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioSelectorControlPropertyCurrentItem
+```
+
 ## See Also
 
-- [var kAudioSelectorControlPropertyAvailableItems: AudioObjectPropertySelector](kaudioselectorcontrolpropertyavailableitems.md)
-- [var kAudioSelectorControlPropertyItemKind: AudioObjectPropertySelector](kaudioselectorcontrolpropertyitemkind.md)
-- [var kAudioSelectorControlPropertyItemName: AudioObjectPropertySelector](kaudioselectorcontrolpropertyitemname.md)
+### Constants
+- [var kAudioSelectorControlPropertyAvailableItems: AudioObjectPropertySelector](./kaudioselectorcontrolpropertyavailableitems.md)
+- [var kAudioSelectorControlPropertyItemKind: AudioObjectPropertySelector](./kaudioselectorcontrolpropertyitemkind.md)
+- [var kAudioSelectorControlPropertyItemName: AudioObjectPropertySelector](./kaudioselectorcontrolpropertyitemname.md)
 
 
 ---

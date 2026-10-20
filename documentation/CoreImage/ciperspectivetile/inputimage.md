@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var bottomLeft: CGPoint](ciperspectivetile/bottomleft.md)
+### Instance Properties
+- [var bottomLeft: CGPoint](./bottomleft.md)
   The bottom-left coordinate of a tile.
-- [var bottomRight: CGPoint](ciperspectivetile/bottomright.md)
+- [var bottomRight: CGPoint](./bottomright.md)
   The bottom-right coordinate of a tile.
-- [var topLeft: CGPoint](ciperspectivetile/topleft.md)
+- [var topLeft: CGPoint](./topleft.md)
   The top-left coordinate of a tile.
-- [var topRight: CGPoint](ciperspectivetile/topright.md)
+- [var topRight: CGPoint](./topright.md)
   The top-right coordinate of a tile.
 
 

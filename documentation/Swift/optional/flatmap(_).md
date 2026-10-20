@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates the given closure when this `Optional` instance is not `nil`, passing the unwrapped value as a parameter.
 
@@ -44,7 +45,8 @@ print(nonOverflowingSquare)
 
 ## See Also
 
-- [func map<E, U>((Wrapped) throws(E) -> U) throws(E) -> U?](optional/map(_:).md)
+### Transforming an Optional Value
+- [func map<E, U>((Wrapped) throws(E) -> U) throws(E) -> U?](./map%28_%29.md)
   Evaluates the given closure when this `Optional` instance is not `nil`, passing the unwrapped value as a parameter.
 
 

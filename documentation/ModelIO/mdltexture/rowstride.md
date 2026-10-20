@@ -1,7 +1,8 @@
 # rowStride
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes between the first texel in a row of image data and the first texel in the next row.
 
@@ -19,21 +20,26 @@ The number of bytes between the first texel in a row of image data and the first
 var rowStride: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger rowStride;
+```
+
 #### Discussion
 
 If this value is zero, the texture does not support direct addressing of texels—this is the case for some compressed texture formats.
 
 ## See Also
 
-- [var dimensions: vector_int2](mdltexture/dimensions.md)
+### Examining Texture Attributes
+- [var dimensions: vector_int2](./dimensions.md)
   The width and height, in texels, of the texture image.
-- [var channelCount: Int](mdltexture/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   The number of channels per texel.
-- [var channelEncoding: MDLTextureChannelEncoding](mdltexture/channelencoding.md)
+- [var channelEncoding: MDLTextureChannelEncoding](./channelencoding.md)
   The data format for each channel value per texel.
-- [var isCube: Bool](mdltexture/iscube.md)
+- [var isCube: Bool](./iscube.md)
   A Boolean value that indicates whether the texture is a cube textures.
-- [var mipLevelCount: Int](mdltexture/miplevelcount.md)
+- [var mipLevelCount: Int](./miplevelcount.md)
   The number of mipmap levels contained in the texture image data.
 
 

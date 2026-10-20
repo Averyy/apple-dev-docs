@@ -1,14 +1,15 @@
 # EXDisplayPipeIndicator
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum EXDisplayPipeIndicator : unsigned int {
     ...
 } EXDisplayPipeIndicator;
@@ -17,10 +18,10 @@ typedef enum EXDisplayPipeIndicator : unsigned int {
 ## Topics
 
 ### Constants
-- [INDICATOR_CAM](exdisplaypipeindicator/indicator_cam.md)
-- [INDICATOR_COUNT](exdisplaypipeindicator/indicator_count.md)
-- [INDICATOR_MIC](exdisplaypipeindicator/indicator_mic.md)
-- [INDICATOR_MIC_ALT_ACCESSIBILITY](exdisplaypipeindicator/indicator_mic_alt_accessibility.md)
+- [INDICATOR_CAM](./exdisplaypipeindicator/indicator_cam.md)
+- [INDICATOR_COUNT](./exdisplaypipeindicator/indicator_count.md)
+- [INDICATOR_MIC](./exdisplaypipeindicator/indicator_mic.md)
+- [INDICATOR_MIC_ALT_ACCESSIBILITY](./exdisplaypipeindicator/indicator_mic_alt_accessibility.md)
 
 
 ---

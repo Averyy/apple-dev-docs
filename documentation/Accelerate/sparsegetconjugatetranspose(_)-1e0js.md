@@ -1,7 +1,8 @@
 # SparseGetConjugateTranspose(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a conjugate transposed copy of the specified matrix of complex float values.
 
@@ -20,6 +21,10 @@ Returns a conjugate transposed copy of the specified matrix of complex float val
 func SparseGetConjugateTranspose(_ Matrix: SparseMatrix_Complex_Float) -> SparseMatrix_Complex_Float
 ```
 
+```c
+static SparseMatrix_Complex_Float SparseGetConjugateTranspose(SparseMatrix_Complex_Float Matrix);
+```
+
 #### Return Value
 
 A copy of matrix with `matrix.structure.attributes.transpose` bit flipped and `matrix.structure.attributes.conjugate_transpose` bit set.
@@ -34,17 +39,18 @@ Note that the underlying storage is *not* reference counted, so users must ensur
 
 ## See Also
 
-- [func SparseGetConjugateTranspose(SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](sparsegetconjugatetranspose(_:)-4hysc.md)
+### Complex conjugate transpose functions
+- [func SparseGetConjugateTranspose(SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](./sparsegetconjugatetranspose%28_%29-4hysc.md)
   Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Float`.
-- [func SparseGetConjugateTranspose(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparsegetconjugatetranspose(_:)-675y1.md)
+- [func SparseGetConjugateTranspose(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](./sparsegetconjugatetranspose%28_%29-675y1.md)
   Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Double`.
-- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](sparsegetconjugatetranspose(_:)-9o30w.md)
+- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](./sparsegetconjugatetranspose%28_%29-9o30w.md)
   Returns a conjugate transposed copy of the specified specified matrix of complex double values.
-- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](sparsegetconjugatetranspose(_:)-9o30w.md)
+- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](./sparsegetconjugatetranspose%28_%29-9o30w.md)
   Returns a conjugate transposed copy of the specified specified matrix of complex double values.
-- [func SparseGetConjugateTranspose(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](sparsegetconjugatetranspose(_:)-a56p.md)
+- [func SparseGetConjugateTranspose(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](./sparsegetconjugatetranspose%28_%29-a56p.md)
   Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Float`.
-- [func SparseGetConjugateTranspose(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](sparsegetconjugatetranspose(_:)-5hc5a.md)
+- [func SparseGetConjugateTranspose(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](./sparsegetconjugatetranspose%28_%29-5hc5a.md)
   Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Double`.
 
 

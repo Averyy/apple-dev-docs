@@ -1,23 +1,28 @@
 # CTRunDelegate
 
 **Framework**: Core Text  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A run delegate.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class CTRunDelegate
+```
+
+```c
+typedef const struct __CTRunDelegate * CTRunDelegateRef;
 ```
 
 #### Overview
@@ -29,58 +34,59 @@ The callbacks defined for `CTRunDelegate` objects are provided by the owner of a
 ## Topics
 
 ### Creating a Run Delegate
-- [func CTRunDelegateCreate(UnsafePointer<CTRunDelegateCallbacks>, UnsafeMutableRawPointer?) -> CTRunDelegate?](ctrundelegatecreate(_:_:).md)
+- [func CTRunDelegateCreate(UnsafePointer<CTRunDelegateCallbacks>, UnsafeMutableRawPointer?) -> CTRunDelegate?](./ctrundelegatecreate%28_,_%29.md)
   Creates an immutable instance of a run delegate.
 ### Getting Information About a Run Delegate
-- [func CTRunDelegateGetRefCon(CTRunDelegate) -> UnsafeMutableRawPointer](ctrundelegategetrefcon(_:).md)
+- [func CTRunDelegateGetRefCon(CTRunDelegate) -> UnsafeMutableRawPointer](./ctrundelegategetrefcon%28_%29.md)
   Returns a run delegate’s “refCon” value.
-- [func CTRunDelegateGetTypeID() -> CFTypeID](ctrundelegategettypeid().md)
+- [func CTRunDelegateGetTypeID() -> CFTypeID](./ctrundelegategettypeid%28%29.md)
   Returns the type of CTRunDelegate objects.
 ### Callbacks
-- [typealias CTRunDelegateGetAscentCallback](ctrundelegategetascentcallback.md)
+- [typealias CTRunDelegateGetAscentCallback](./ctrundelegategetascentcallback.md)
   Defines a pointer to a function that determines typographic ascent of glyphs in the run.
-- [typealias CTRunDelegateGetDescentCallback](ctrundelegategetdescentcallback.md)
+- [typealias CTRunDelegateGetDescentCallback](./ctrundelegategetdescentcallback.md)
   Defines a pointer to a function that determines typographic descent of glyphs in the run.
-- [typealias CTRunDelegateGetWidthCallback](ctrundelegategetwidthcallback.md)
+- [typealias CTRunDelegateGetWidthCallback](./ctrundelegategetwidthcallback.md)
   Defines a pointer to a function that determines the typographic width of glyphs in the run.
-- [typealias CTRunDelegateDeallocateCallback](ctrundelegatedeallocatecallback.md)
+- [typealias CTRunDelegateDeallocateCallback](./ctrundelegatedeallocatecallback.md)
   Defines a pointer to a function that is invoked when a CTRunDelegate object is deallocated.
 ### Data Types
-- [struct CTRunDelegateCallbacks](ctrundelegatecallbacks.md)
+- [struct CTRunDelegateCallbacks](./ctrundelegatecallbacks.md)
   A structure holding pointers to callbacks implemented by the run delegate.
 ### Constants
-- [Run Delegate Versions](1498177-run-delegate-versions.md)
+- [Run Delegate Versions](./api-1498177-run-delegate-versions.md)
   The version of the run delegate.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class CTFont](ctfont.md)
+### Opaque Types
+- [class CTFont](./ctfont.md)
   A font object.
-- [class CTFontCollection](ctfontcollection.md)
+- [class CTFontCollection](./ctfontcollection.md)
   A font collection.
-- [class CTFontDescriptor](ctfontdescriptor.md)
+- [class CTFontDescriptor](./ctfontdescriptor.md)
   A font descriptor.
-- [class CTFrame](ctframe.md)
+- [class CTFrame](./ctframe.md)
   A frame.
-- [class CTFramesetter](ctframesetter.md)
+- [class CTFramesetter](./ctframesetter.md)
   Generate text frames.
-- [class CTGlyphInfo](ctglyphinfo.md)
+- [class CTGlyphInfo](./ctglyphinfo.md)
   Override a font’s specified mapping from Unicode to the glyph ID.
-- [class CTLine](ctline.md)
+- [class CTLine](./ctline.md)
   A line of text.
-- [class CTParagraphStyle](ctparagraphstyle.md)
+- [class CTParagraphStyle](./ctparagraphstyle.md)
   Paragraph or ruler attributes in an attributed string.
-- [class CTRun](ctrun.md)
+- [class CTRun](./ctrun.md)
   A glyph run.
-- [class CTTextTab](cttexttab.md)
+- [class CTTextTab](./cttexttab.md)
   A tab in a paragraph style, storing an alignment type and location.
-- [class CTTypesetter](cttypesetter.md)
+- [class CTTypesetter](./cttypesetter.md)
   A typesetter which performs line layout.
 
 

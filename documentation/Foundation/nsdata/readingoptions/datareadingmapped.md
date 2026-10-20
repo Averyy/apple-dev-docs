@@ -1,18 +1,19 @@
 # dataReadingMapped
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
+Deprecated name for [`mappedIfSafe`](./mappedifsafe.md).
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- iPadOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- macOS 10.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- tvOS 9.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- watchOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
 
 ## Declaration
 
@@ -20,12 +21,17 @@ Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
 static var dataReadingMapped: NSData.ReadingOptions { get }
 ```
 
+```c
+NSDataReadingMapped
+```
+
 ## See Also
 
-- [static var mappedRead: NSData.ReadingOptions](nsdata/readingoptions/mappedread.md)
-  Deprecated name for [`dataReadingMapped`](nsdata/readingoptions/datareadingmapped.md).
-- [static var uncachedRead: NSData.ReadingOptions](nsdata/readingoptions/uncachedread.md)
-  Deprecated name for [`uncached`](nsdata/readingoptions/uncached.md).
+### Legacy Constants
+- [static var mappedRead: NSData.ReadingOptions](./mappedread.md)
+  Deprecated name for [`dataReadingMapped`](./datareadingmapped.md).
+- [static var uncachedRead: NSData.ReadingOptions](./uncachedread.md)
+  Deprecated name for [`uncached`](./uncached.md).
 
 
 ---

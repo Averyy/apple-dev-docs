@@ -1,7 +1,8 @@
 # precision(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified precision.
 
@@ -26,7 +27,7 @@ A decimal format style modified to use the specified precision.
 
 #### Discussion
 
-The [`NumberFormatStyleConfiguration.Precision`](numberformatstyleconfiguration/precision.md) type lets you specify a fixed number of digits to show for a number’s integer and fractional part. You can also set a fixed number of significant digits.
+The [`NumberFormatStyleConfiguration.Precision`](../../../numberformatstyleconfiguration/precision.md) type lets you specify a fixed number of digits to show for a number’s integer and fractional part. You can also set a fixed number of significant digits.
 
 ## Parameters
 
@@ -34,23 +35,24 @@ The [`NumberFormatStyleConfiguration.Precision`](numberformatstyleconfiguration/
 
 ## See Also
 
-- [func decimalSeparator(strategy: Decimal.FormatStyle.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: Decimal.FormatStyle.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Currency](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(Decimal.FormatStyle.Currency.Configuration.Grouping) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/grouping(_:).md)
+- [func grouping(Decimal.FormatStyle.Currency.Configuration.Grouping) -> Decimal.FormatStyle.Currency](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/locale(_:).md)
+- [func locale(Locale) -> Decimal.FormatStyle.Currency](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/presentation(_:).md)
+- [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](./presentation%28_%29.md)
   Modifies the format style to use the specified presentation.
-- [func rounded(rule: Decimal.FormatStyle.Currency.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/rounded(rule:increment:).md)
+- [func rounded(rule: Decimal.FormatStyle.Currency.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Currency](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/scale(_:).md)
+- [func scale(Double) -> Decimal.FormatStyle.Currency](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: Decimal.FormatStyle.Currency.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/sign(strategy:).md)
+- [func sign(strategy: Decimal.FormatStyle.Currency.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Currency](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [Decimal.FormatStyle.Currency.Configuration](decimal/formatstyle/currency/configuration.md)
+- [Decimal.FormatStyle.Currency.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
+- [enum CurrencyFormatStyleConfiguration](../../../currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
 
 

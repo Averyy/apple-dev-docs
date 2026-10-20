@@ -1,15 +1,16 @@
 # RestoreDeviceState
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t RestoreDeviceState(IOOptionBits options);
 ```
 

@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver’s delegate and a dispatch queue on which the delegate is called.
 
@@ -19,24 +20,29 @@ Sets the receiver’s delegate and a dispatch queue on which the delegate is cal
 func setDelegate(_ delegate: (any AVPlayerItemLegibleOutputPushDelegate)?, queue delegateQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVPlayerItemLegibleOutputPushDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
+```
+
 #### Discussion
 
 Because the delegate is held using a zeroing-weak reference, it is safe to deallocate the delegate while the receiver still has a reference to it.
 
 ## Parameters
 
-- `delegate`: An object conforming to the [`AVPlayerItemLegibleOutputPushDelegate`](avplayeritemlegibleoutputpushdelegate.md) protocol.
+- `delegate`: An object conforming to the [`AVPlayerItemLegibleOutputPushDelegate`](../avplayeritemlegibleoutputpushdelegate.md) protocol.
 - `delegateQueue`: A dispatch queue on which all delegate methods will be called.
 
 ## See Also
 
-- [var delegate: (any AVPlayerItemLegibleOutputPushDelegate)?](avplayeritemlegibleoutput/delegate.md)
+### Configuring the delegate
+- [var delegate: (any AVPlayerItemLegibleOutputPushDelegate)?](./delegate.md)
   The delegate of the output class.
-- [protocol AVPlayerItemLegibleOutputPushDelegate](avplayeritemlegibleoutputpushdelegate.md)
+- [protocol AVPlayerItemLegibleOutputPushDelegate](../avplayeritemlegibleoutputpushdelegate.md)
   Methods you can implement to provide alternative attributed-string output.
-- [var advanceIntervalForDelegateInvocation: TimeInterval](avplayeritemlegibleoutput/advanceintervalfordelegateinvocation.md)
+- [var advanceIntervalForDelegateInvocation: TimeInterval](./advanceintervalfordelegateinvocation.md)
   The time interval, in seconds, that a player item legible output object messages its delegate earlier than normal.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemlegibleoutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which the delegate is called.
 
 

@@ -1,7 +1,8 @@
 # DockAccessory.TrackingStates
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of tracking session states.
 
@@ -20,19 +21,19 @@ struct TrackingStates
 ## Topics
 
 ### Structures
-- [DockAccessory.TrackingStates.Iterator](dockaccessory/trackingstates-swift.struct/iterator.md)
+- [DockAccessory.TrackingStates.Iterator](./trackingstates-swift.struct/iterator.md)
   An object that allows iteration over tracking states.
 ### Instance Methods
-- [func makeAsyncIterator() -> DockAccessory.TrackingStates.Iterator](dockaccessory/trackingstates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> DockAccessory.TrackingStates.Iterator](./trackingstates-swift.struct/makeasynciterator%28%29.md)
   Create and return an iterator that traverses the list of tracking session states.
 ### Type Aliases
-- [DockAccessory.TrackingStates.Element](dockaccessory/trackingstates-swift.struct/element.md)
+- [DockAccessory.TrackingStates.Element](./trackingstates-swift.struct/element.md)
   A tracking session state.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

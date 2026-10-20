@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds a partial result that’s conditionally present.
 
@@ -30,9 +31,10 @@ This method provides support for `if` statements. It produces optional chart con
 
 ## See Also
 
-- [static func buildEither<T1, T2>(first: T1) -> BuilderConditional<T1, T2>](chartcontentbuilder/buildeither(first:).md)
+### Building conditionally
+- [static func buildEither<T1, T2>(first: T1) -> BuilderConditional<T1, T2>](./buildeither%28first%29.md)
   Builds a partial result from a condition that’s true.
-- [static func buildEither<T1, T2>(second: T2) -> BuilderConditional<T1, T2>](chartcontentbuilder/buildeither(second:).md)
+- [static func buildEither<T1, T2>(second: T2) -> BuilderConditional<T1, T2>](./buildeither%28second%29.md)
   Builds a partial result from a condition that’s false.
 
 

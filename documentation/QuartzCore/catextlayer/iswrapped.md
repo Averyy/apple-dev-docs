@@ -1,7 +1,8 @@
 # isWrapped
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the text is wrapped to fit within the receiver’s bounds.
 
@@ -19,15 +20,20 @@ Determines whether the text is wrapped to fit within the receiver’s bounds.
 var isWrapped: Bool { get set }
 ```
 
+```objc
+@property (getter=isWrapped) BOOL wrapped;
+```
+
 #### Discussion
 
-Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+Defaults to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var alignmentMode: CATextLayerAlignmentMode](catextlayer/alignmentmode.md)
+### Text Alignment and Truncation
+- [var alignmentMode: CATextLayerAlignmentMode](./alignmentmode.md)
   Determines how individual lines of text are horizontally aligned within the receiver’s bounds.
-- [var truncationMode: CATextLayerTruncationMode](catextlayer/truncationmode.md)
+- [var truncationMode: CATextLayerTruncationMode](./truncationmode.md)
   Determines how the text is truncated to fit within the receiver’s bounds.
 
 

@@ -1,7 +1,8 @@
 # TKSmartCardToken
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a smart card based cryptographic token.
 
@@ -20,54 +21,59 @@ A representation of a smart card based cryptographic token.
 class TKSmartCardToken
 ```
 
+```objc
+@interface TKSmartCardToken : TKToken
+```
+
 ## Mentions
 
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
 
 ## Topics
 
 ### Creating Smart Card Tokens
-- [init(smartCard: TKSmartCard, aid: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:)-38ak2.md)
+- [init(smartCard: TKSmartCard, aid: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](./tksmartcardtoken/init%28smartcard,aid,instanceid,tokendriver%29-38ak2.md)
   Initializes a smart card token with the specified smart card, application identifier, and token driver.
 ### Accessing the Application Identifier
-- [var aid: Data?](tksmartcardtoken/aid.md)
+- [var aid: Data?](./tksmartcardtoken/aid.md)
   The ISO 7816-4 application identifiers of the Smart Card.
 ### Accessing Smart Cards
-- [class TKSmartCard](tksmartcard.md)
+- [class TKSmartCard](./tksmartcard.md)
   A representation of a smart card.
 ### Working with Tag-Length-Value Records
-- [class TKTLVRecord](tktlvrecord.md)
+- [class TKTLVRecord](./tktlvrecord.md)
   The base class encapsulating a Tag-Length-Value record.
-- [class TKBERTLVRecord](tkbertlvrecord.md)
+- [class TKBERTLVRecord](./tkbertlvrecord.md)
   An object that parses BER-encoded data and produces DER-encoded data for TLV records.
-- [class TKCompactTLVRecord](tkcompacttlvrecord.md)
+- [class TKCompactTLVRecord](./tkcompacttlvrecord.md)
   An object that implements encoding using Compact-TLV encoding according to ISO 7816-4.
-- [class TKSimpleTLVRecord](tksimpletlvrecord.md)
+- [class TKSimpleTLVRecord](./tksimpletlvrecord.md)
   An object that implements encoding using Simple-TLV encoding according to ISO 7816-4.
 ### Initializers
-- [init(smartCard: TKSmartCard, AID: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:)-90hza.md)
+- [init(smartCard: TKSmartCard, AID: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](./tksmartcardtoken/init%28smartcard,aid,instanceid,tokendriver%29-90hza.md)
 
 ## Relationships
 
 ### Inherits From
-- [TKToken](tktoken.md)
+- [TKToken](./tktoken.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+### Smart Card App Extensions
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
   Grant access to user accounts and the keychain by creating a smart card app extension.
-- [Configuring Smart Card Authentication](configuring-smart-card-authentication.md)
+- [Configuring Smart Card Authentication](./configuring-smart-card-authentication.md)
   Set preferences for smart card authentication operations, including those on managed devices.
-- [class TKSmartCardTokenDriver](tksmartcardtokendriver.md)
+- [class TKSmartCardTokenDriver](./tksmartcardtokendriver.md)
   The driver that acts as an entry point for smart card app extensions.
-- [class TKSmartCardTokenSession](tksmartcardtokensession.md)
+- [class TKSmartCardTokenSession](./tksmartcardtokensession.md)
   A token session that is based on a smart card token.
 
 

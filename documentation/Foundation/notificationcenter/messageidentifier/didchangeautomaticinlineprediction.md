@@ -1,7 +1,8 @@
 # didChangeAutomaticInlinePrediction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeAutomaticInlinePrediction: NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticInlinePredictionMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticInlinePredictionMessage>`.
 
 
 ---

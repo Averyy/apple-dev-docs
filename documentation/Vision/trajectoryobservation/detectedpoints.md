@@ -1,7 +1,8 @@
 # detectedPoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The centroid points of the detected contour along the trajectory.
 
@@ -26,11 +27,12 @@ The detected points may differ slightly from the ideal trajectory because they f
 
 ## See Also
 
-- [let projectedPoints: [NormalizedPoint]](trajectoryobservation/projectedpoints.md)
+### Inspecting an observation
+- [let projectedPoints: [NormalizedPoint]](./projectedpoints.md)
   The centroids of the calculated trajectory from the detected points.
-- [let equationCoefficients: simd_float3](trajectoryobservation/equationcoefficients.md)
+- [let equationCoefficients: simd_float3](./equationcoefficients.md)
   The coefficients of the parabolic equation.
-- [let movingAverageRadius: CGFloat](trajectoryobservation/movingaverageradius.md)
+- [let movingAverageRadius: CGFloat](./movingaverageradius.md)
   The moving average radius of the object the request is tracking.
 
 

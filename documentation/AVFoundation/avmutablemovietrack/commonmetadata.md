@@ -1,7 +1,8 @@
 # commonMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata items for all common metadata keys that have a value.
 
@@ -21,11 +22,12 @@ var commonMetadata: [AVMetadataItem] { get }
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avmutablemovietrack/metadata.md)
+### Accessing metadata
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata stored by the track.
-- [var availableMetadataFormats: [AVMetadataFormat]](avmutablemovietrack/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   An array of metadata formats available for the track.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avmutablemovietrack/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns metadata items that a track contains for the specified format.
 
 

@@ -1,7 +1,8 @@
 # communications
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Email, messaging, and other person-to-person communication.
 
@@ -20,9 +21,10 @@ static var communications: SpotlightSearchTool.ContentDomain { get }
 
 ## See Also
 
-- [static func communications(SpotlightSearchTool.ContentDomain.Communications) -> SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/communications(_:).md)
+### Getting the communications domain
+- [static func communications(SpotlightSearchTool.ContentDomain.Communications) -> SpotlightSearchTool.ContentDomain](./communications%28_%29.md)
   Email, messaging, and other person-to-person communication with custom attribute mapping.
-- [SpotlightSearchTool.ContentDomain.Communications](spotlightsearchtool/contentdomain/communications-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.Communications](./communications-swift.struct.md)
   Attribute mapping for the communications domain.
 
 

@@ -1,18 +1,19 @@
 # commonKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The common key of the metadata item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The common key of the metadata item.
 var commonKey: AVMetadataKey? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) AVMetadataKey commonKey;
+```
+
 #### Discussion
 
-This value contains the key that most closely corresponds to the [`key`](avmetadataitem/key.md) property, but that belongs to the common key space. You can use this key to locate metadata items irrespective of the underlying media format.
+This value contains the key that most closely corresponds to the [`key`](./key.md) property, but that belongs to the common key space. You can use this key to locate metadata items irrespective of the underlying media format.
 
-If the value of the [`keySpace`](avmetadataitem/keyspace.md) property is [`common`](avmetadatakeyspace/common.md), this property value contains the same key as the [`key`](avmetadataitem/key.md) property.
+If the value of the [`keySpace`](./keyspace.md) property is [`common`](../avmetadatakeyspace/common.md), this property value contains the same key as the [`key`](./key.md) property.
 
 ## See Also
 
-- [var key: (any NSCopying & NSObjectProtocol)?](avmetadataitem/key.md)
+### Accessing keys and key spaces
+- [var key: (any NSCopying & NSObjectProtocol)?](./key.md)
   The key of the metadata item.
-- [var keySpace: AVMetadataKeySpace?](avmetadataitem/keyspace.md)
+- [var keySpace: AVMetadataKeySpace?](./keyspace.md)
   The key space for the metadata item’s key.
 
 

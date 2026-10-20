@@ -1,7 +1,8 @@
 # PDFMarkupType
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The styles available for markup annotations in PDFKit.
 
@@ -10,7 +11,7 @@ The styles available for markup annotations in PDFKit.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,35 +20,40 @@ The styles available for markup annotations in PDFKit.
 enum PDFMarkupType
 ```
 
+```c
+enum PDFMarkupType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PDFMarkupType.highlight](pdfmarkuptype/highlight.md)
+- [PDFMarkupType.highlight](./pdfmarkuptype/highlight.md)
   Highlight style for the markup.
-- [PDFMarkupType.strikeOut](pdfmarkuptype/strikeout.md)
+- [PDFMarkupType.strikeOut](./pdfmarkuptype/strikeout.md)
   Strikethrough style for the markup.
-- [PDFMarkupType.underline](pdfmarkuptype/underline.md)
+- [PDFMarkupType.underline](./pdfmarkuptype/underline.md)
   Underline style for the markup.
-- [PDFMarkupType.redact](pdfmarkuptype/redact.md)
+- [PDFMarkupType.redact](./pdfmarkuptype/redact.md)
   The redaction style for markup.
 ### Initializers
-- [init?(rawValue: Int)](pdfmarkuptype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfmarkuptype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var markupType: PDFMarkupType](pdfannotation/markuptype.md)
+### Configuring Text Markup Annotations
+- [var markupType: PDFMarkupType](./pdfannotation/markuptype.md)
   The markup type that the annotation displays, either highlight, strikethrough, underline, or redact.
-- [var quadrilateralPoints: [NSValue]?](pdfannotation/quadrilateralpoints.md)
+- [var quadrilateralPoints: [NSValue]?](./pdfannotation/quadrilateralpoints.md)
   An array of values that represents the points bounding the marked-up text.
 
 

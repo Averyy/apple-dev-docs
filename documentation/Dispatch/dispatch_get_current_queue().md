@@ -1,22 +1,29 @@
 # dispatch_get_current_queue()
 
 **Framework**: Dispatch  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the queue on which the currently executing block is running.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 4.0+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 6.0
+- iPadOS 4.0+ - Deprecated in 6.0
+- Mac Catalyst 4.0+ - Deprecated in 6.0
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: unsupported interface
 
 ## Declaration
 
 ```swift
 func dispatch_get_current_queue() -> dispatch_queue_t
+```
+
+```c
+extern dispatch_queue_tdispatch_get_current_queue();
 ```
 
 #### Return Value
@@ -31,7 +38,8 @@ When called from outside of the context of a submitted block, this function retu
 
 ## See Also
 
-- [func dispatch_debugv(dispatch_object_t, UnsafePointer<CChar>, CVaListPointer)](dispatch_debugv(_:_:_:).md)
+### Functions
+- [func dispatch_debugv(dispatch_object_t, UnsafePointer<CChar>, CVaListPointer)](./dispatch_debugv%28_,_,_%29.md)
 
 
 ---

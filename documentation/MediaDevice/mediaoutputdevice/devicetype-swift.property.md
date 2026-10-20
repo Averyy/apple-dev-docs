@@ -1,7 +1,8 @@
 # deviceType
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of device, used for display in user interfaces.
 

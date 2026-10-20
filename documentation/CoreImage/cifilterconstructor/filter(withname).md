@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a filter object specified by name.
@@ -11,7 +12,7 @@ Returns a filter object specified by name.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,17 @@ Returns a filter object specified by name.
 func filter(withName name: String) -> CIFilter?
 ```
 
+```objc
+- (CIFilter *) filterWithName:(NSString *) name;
+```
+
 #### Return Value
 
-A [`CIFilter`](cifilter-swift.class.md) object implementing the custom filter.
+A [`CIFilter`](../cifilter-swift.class.md) object implementing the custom filter.
 
 #### Discussion
 
-Core Image calls this method when a filter is requested by name using the [`CIFilter`](cifilter-swift.class.md) class method [`init(name:)`](cifilter-swift.class/init(name:).md) method (or related methods). Your implementation of this method should provide a new instance of the [`CIFilter`](cifilter-swift.class.md) subclass for your custom filter.
+Core Image calls this method when a filter is requested by name using the [`CIFilter`](../cifilter-swift.class.md) class method [`init(name:)`](../cifilter-swift.class/init%28name%29.md) method (or related methods). Your implementation of this method should provide a new instance of the [`CIFilter`](../cifilter-swift.class.md) subclass for your custom filter.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Core Image calls this method when a filter is requested by name using the [`CIFi
 
 ## See Also
 
-- [Core Image Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+### Related Documentation
+- [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
 
 
 ---

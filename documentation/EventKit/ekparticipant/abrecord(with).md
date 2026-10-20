@@ -1,7 +1,8 @@
 # abRecord(with:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the address book record that represents the participant.
 
@@ -16,6 +17,10 @@ Returns the address book record that represents the participant.
 func abRecord(with addressBook: ABAddressBook) -> ABRecord?
 ```
 
+```objc
+- (ABRecordRef) ABRecordWithAddressBook:(ABAddressBookRef) addressBook;
+```
+
 #### Return Value
 
 The address book record for the participant, or `nil` if the record is not found.
@@ -26,7 +31,7 @@ This method searches for a record match based on the participant’s email addre
 
 ##### Special Considerations
 
-> **Note**:  This instance method is only available on iOS. For macOS, see the [`abPerson(in:)`](ekparticipant/abperson(in:).md) instance method.
+> **Note**:  This instance method is only available on iOS. For macOS, see the [`abPerson(in:)`](./abperson%28in%29.md) instance method.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ This method searches for a record match based on the participant’s email addre
 
 ## See Also
 
-- [func abPerson(in: ABAddressBook) -> ABPerson?](ekparticipant/abperson(in:).md)
+### Finding Participant Address Book Records
+- [func abPerson(in: ABAddressBook) -> ABPerson?](./abperson%28in%29.md)
   Returns the address book record that represents the participant.
-- [typealias ABAddressBook](abaddressbook.md)
+- [typealias ABAddressBook](../abaddressbook.md)
   A reference to an ABAddressBook object.
-- [typealias ABRecord](abrecord.md)
+- [typealias ABRecord](../abrecord.md)
   A reference to an ABRecord object or any of its derivedopaque types.
 
 

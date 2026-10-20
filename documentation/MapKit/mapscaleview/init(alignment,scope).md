@@ -1,7 +1,8 @@
 # init(alignment:scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scale view with the provided alignment and scope.
 
@@ -26,12 +27,13 @@ An initialized scale view.
 
 ## Parameters
 
-- `alignment`: The alignment that describes the positioning of the scale view. The default is [`leading`](https://developer.apple.com/documentation/swiftui/horizontalalignment/leading).
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies this namespace and that you can use to associate this control with a map instance.
+- `alignment`: The alignment that describes the positioning of the scale view. The default is [`leading`](../../SwiftUI/horizontalalignment/leading.md).
+- `scope`: A [`Namespace.ID`](../../SwiftUI/namespace/id.md) value that identifies this namespace and that you can use to associate this control with a map instance.
 
 ## See Also
 
-- [init(anchorEdge: HorizontalEdge, scope: Namespace.ID?)](mapscaleview/init(anchoredge:scope:).md)
+### Creating a map scale view
+- [init(anchorEdge: HorizontalEdge, scope: Namespace.ID?)](./init%28anchoredge,scope%29.md)
   Creates a map scale view.
 
 

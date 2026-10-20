@@ -1,7 +1,8 @@
 # detach()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detaches the receiver from its parent node.
 
@@ -15,29 +16,34 @@ Detaches the receiver from its parent node.
 func detach()
 ```
 
+```objc
+- (void) detach;
+```
+
 #### Discussion
 
 This method is applicable to `NSXMLNode` objects representing elements, text, comments, processing instructions, attributes, and namespaces. Once the node object is detached, you can add it as a child node of another parent.
 
 ## See Also
 
-- [var rootDocument: XMLDocument?](xmlnode/rootdocument.md)
-  Returns the [`XMLDocument`](xmldocument.md) object containing the root element and representing the XML document as a whole.
-- [var parent: XMLNode?](xmlnode/parent.md)
+### Navigating the Tree of Nodes
+- [var rootDocument: XMLDocument?](./rootdocument.md)
+  Returns the [`XMLDocument`](../xmldocument.md) object containing the root element and representing the XML document as a whole.
+- [var parent: XMLNode?](./parent.md)
   Returns the parent node of the receiver.
-- [func child(at: Int) -> XMLNode?](xmlnode/child(at:).md)
+- [func child(at: Int) -> XMLNode?](./child%28at%29.md)
   Returns the child node of the receiver at the specified location.
-- [var childCount: Int](xmlnode/childcount.md)
+- [var childCount: Int](./childcount.md)
   Returns the number of child nodes the receiver has.
-- [var children: [XMLNode]?](xmlnode/children.md)
+- [var children: [XMLNode]?](./children.md)
   Returns an immutable array containing the child nodes of the receiver (as `NSXMLNode` objects).
-- [var next: XMLNode?](xmlnode/next.md)
+- [var next: XMLNode?](./next.md)
   Returns the next `NSXMLNode` object in document order.
-- [var nextSibling: XMLNode?](xmlnode/nextsibling.md)
+- [var nextSibling: XMLNode?](./nextsibling.md)
   Returns the next `NSXMLNode` object that is a sibling node to the receiver.
-- [var previous: XMLNode?](xmlnode/previous.md)
+- [var previous: XMLNode?](./previous.md)
   Returns the previous `NSXMLNode` object in document order.
-- [var previousSibling: XMLNode?](xmlnode/previoussibling.md)
+- [var previousSibling: XMLNode?](./previoussibling.md)
   Returns the previous `NSXMLNode` object that is a sibling node to the receiver.
 
 

@@ -1,26 +1,28 @@
 # txqlogsz
 
 **Framework**: SerialDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t txqlogsz;
 ```
 
 ## See Also
 
-- [rxCI](driverkit/serial/serialportinterface/rxci.md)
-- [rxPI](driverkit/serial/serialportinterface/rxpi.md)
-- [rxqlogsz](driverkit/serial/serialportinterface/rxqlogsz.md)
-- [rxqoffset](driverkit/serial/serialportinterface/rxqoffset.md)
-- [txCI](driverkit/serial/serialportinterface/txci.md)
-- [txPI](driverkit/serial/serialportinterface/txpi.md)
-- [txqoffset](driverkit/serial/serialportinterface/txqoffset.md)
+### Instance Properties
+- [rxCI](./rxci.md)
+- [rxPI](./rxpi.md)
+- [rxqlogsz](./rxqlogsz.md)
+- [rxqoffset](./rxqoffset.md)
+- [txCI](./txci.md)
+- [txPI](./txpi.md)
+- [txqoffset](./txqoffset.md)
 
 
 ---

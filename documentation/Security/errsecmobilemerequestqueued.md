@@ -1,7 +1,8 @@
 # errSecMobileMeRequestQueued
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The MobileMe request will be sent during the next connection.
 
@@ -18,6 +19,10 @@ The MobileMe request will be sent during the next connection.
 
 ```swift
 var errSecMobileMeRequestQueued: OSStatus { get }
+```
+
+```c
+errSecMobileMeRequestQueued
 ```
 
 

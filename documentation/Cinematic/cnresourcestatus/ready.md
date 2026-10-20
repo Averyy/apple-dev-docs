@@ -1,7 +1,8 @@
 # CNResourceStatus.ready
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Configuration is supported
 
@@ -16,6 +17,10 @@ Configuration is supported
 
 ```swift
 case ready
+```
+
+```c
+CNResourceStatusReady
 ```
 
 

@@ -1,7 +1,8 @@
 # Issue.Severity.error
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The severity level for an issue which represents an error in a test.
 

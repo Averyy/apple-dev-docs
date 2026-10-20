@@ -1,7 +1,8 @@
 # activeSlices
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about currently active network slices on the device.
 
@@ -18,11 +19,11 @@ final var activeSlices: [CTSlicingManager.Slice] { get async throws }
 
 #### Return Value
 
-An array of [`CTSlicingManager.Slice`](ctslicingmanager/slice.md) structures, each containing `appCategory`, `trafficClass`, and `networkInterfaceName`.
+An array of [`CTSlicingManager.Slice`](./slice.md) structures, each containing `appCategory`, `trafficClass`, and `networkInterfaceName`.
 
 #### Discussion
 
-This property returns an array of [`CTSlicingManager.Slice`](ctslicingmanager/slice.md) structures containing detailed information about each active network slice, including the app category, traffic class, and network interface name.
+This property returns an array of [`CTSlicingManager.Slice`](./slice.md) structures containing detailed information about each active network slice, including the app category, traffic class, and network interface name.
 
 Use this property to monitor which network slices currently run, and to validate that your preferred slice activates successfully.
 
@@ -43,8 +44,10 @@ do {
 }
 ```
 
-> **Note**: - `POSIXError.ENOTSUP` if network slicing is not currently available.
-- `POSIXError.EINVAL` if an invalid parameter or system error occurs.
+> **Throws**:
+>
+> - `POSIXError.ENOTSUP` if network slicing is not currently available.
+> - `POSIXError.EINVAL` if an invalid parameter or system error occurs.
 
 
 ---

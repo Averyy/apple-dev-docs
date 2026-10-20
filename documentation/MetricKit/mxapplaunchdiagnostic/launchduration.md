@@ -1,15 +1,18 @@
 # launchDuration
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total app launch duration.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`launchDuration`](../applaunchdiagnostic/launchduration.md) instead.
 
 ## Declaration
 
@@ -17,9 +20,14 @@ The total app launch duration.
 var launchDuration: Measurement<UnitDuration> { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) NSMeasurement<NSUnitDuration *> * launchDuration;
+```
+
 ## See Also
 
-- [var callStackTree: MXCallStackTree](mxapplaunchdiagnostic/callstacktree.md)
+### Reading app launch metrics
+- [var callStackTree: MXCallStackTree](./callstacktree.md)
   The call stack tree associated with the app launch.
 
 

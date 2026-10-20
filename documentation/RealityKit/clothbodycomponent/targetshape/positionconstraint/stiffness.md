@@ -1,7 +1,8 @@
 # stiffness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stiffness by which the particle is pulled towards the position.
 

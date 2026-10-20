@@ -1,7 +1,8 @@
 # stratifiedSplit(proportions:seed:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an array of labeled audio dictionaries by splitting the data source into strata.
 
@@ -29,7 +30,8 @@ An array of dictionaries of labeled audio files. Each dictionary key is a label 
 
 ## See Also
 
-- [func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]]](mlsoundclassifier/datasource/stratifiedsplit(proportions:generator:).md)
+### Partitioning the data
+- [func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]]](./stratifiedsplit%28proportions,generator%29.md)
   Generates an array of labeled audio dictionaries by splitting the data source into strata using the random-number generator.
 
 

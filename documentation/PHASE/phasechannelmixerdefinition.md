@@ -1,7 +1,8 @@
 # PHASEChannelMixerDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An audio-layering object that routes sound directly to the device’s output.
 
@@ -19,11 +20,15 @@ An audio-layering object that routes sound directly to the device’s output.
 class PHASEChannelMixerDefinition
 ```
 
+```objc
+@interface PHASEChannelMixerDefinition : PHASEMixerDefinition
+```
+
 #### Overview
 
 Use this class to play one-time sounds such as menu clicks.
 
-> **Note**:  If your audio playback requires 3D orienting or positioning, use [`PHASEAmbientMixerDefinition`](phaseambientmixerdefinition.md) or [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md), respectively. For more information, see [`Spatial Mixing`](spatial-mixing.md).
+> **Note**:  If your audio playback requires 3D orienting or positioning, use [`PHASEAmbientMixerDefinition`](./phaseambientmixerdefinition.md) or [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md), respectively. For more information, see [Spatial Mixing](./spatial-mixing.md).
 
 This class defines the *channel routing*, which is the strategy the framework uses to send source mono or multichannel assets to the output for playback. The asset’s audio channels route to the output for playback according to the channel layout and runtime output conditions the app designates on an instance of this class.
 
@@ -32,37 +37,38 @@ This class minimizes *up mixing* and *down mixing* — that is, source audio cha
 ## Topics
 
 ### Creating a Channel Mixer
-- [init(channelLayout: AVAudioChannelLayout)](phasechannelmixerdefinition/init(channellayout:).md)
+- [init(channelLayout: AVAudioChannelLayout)](./phasechannelmixerdefinition/init%28channellayout%29.md)
   Creates a channel mixer with the given channel layout.
-- [convenience init(channelLayout: AVAudioChannelLayout, identifier: String)](phasechannelmixerdefinition/init(channellayout:identifier:).md)
+- [convenience init(channelLayout: AVAudioChannelLayout, identifier: String)](./phasechannelmixerdefinition/init%28channellayout,identifier%29.md)
   Creates a named channel mixer with the given channel layout.
 ### Inspecting Channel Layout
-- [var inputChannelLayout: AVAudioChannelLayout](phasechannelmixerdefinition/inputchannellayout.md)
+- [var inputChannelLayout: AVAudioChannelLayout](./phasechannelmixerdefinition/inputchannellayout.md)
   The channel layout of the mixer’s input audio.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEMixerDefinition](phasemixerdefinition.md)
+- [PHASEMixerDefinition](./phasemixerdefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEAmbientMixerDefinition](phaseambientmixerdefinition.md)
+### Audio Layering and Effects
+- [class PHASEAmbientMixerDefinition](./phaseambientmixerdefinition.md)
   An audio-layering object that outputs sound in a particular direction in 3D space.
-- [class PHASEMixerDefinition](phasemixerdefinition.md)
+- [class PHASEMixerDefinition](./phasemixerdefinition.md)
   An object to initialize a mixer with a given configuration.
-- [class PHASEMixer](phasemixer.md)
+- [class PHASEMixer](./phasemixer.md)
   An object that combines multiple audio signals into a single signal.
-- [class PHASEDefinition](phasedefinition.md)
+- [class PHASEDefinition](./phasedefinition.md)
   A base class that adds a name to framework definitions.
-- [Spatial Mixing](spatial-mixing.md)
+- [Spatial Mixing](./spatial-mixing.md)
   Define environmental characteristics that determine how sound plays in your app’s 3D soundscape.
 
 

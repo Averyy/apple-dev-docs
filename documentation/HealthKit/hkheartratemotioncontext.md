@@ -1,7 +1,8 @@
 # HKHeartRateMotionContext
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the user’s level of activity when the heart rate sample was measured.
 
@@ -19,31 +20,36 @@ Values that indicate the user’s level of activity when the heart rate sample w
 enum HKHeartRateMotionContext
 ```
 
+```c
+enum HKHeartRateMotionContext : NSInteger;
+```
+
 ## Topics
 
 ### Motion Contextes
-- [HKHeartRateMotionContext.active](hkheartratemotioncontext/active.md)
+- [HKHeartRateMotionContext.active](./hkheartratemotioncontext/active.md)
   A value indicating that the user was in motion during the heart rate sample.
-- [HKHeartRateMotionContext.notSet](hkheartratemotioncontext/notset.md)
+- [HKHeartRateMotionContext.notSet](./hkheartratemotioncontext/notset.md)
   A value indicating that the user’s activity level could not be determined.
-- [HKHeartRateMotionContext.sedentary](hkheartratemotioncontext/sedentary.md)
+- [HKHeartRateMotionContext.sedentary](./hkheartratemotioncontext/sedentary.md)
   A value indicating that the user has been still for at least 5 minutes prior to the heart rate sample.
 ### Initializers
-- [init?(rawValue: Int)](hkheartratemotioncontext/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkheartratemotioncontext/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let heartRate: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartrate.md)
+### Related Documentation
+- [static let heartRate: HKQuantityTypeIdentifier](./hkquantitytypeidentifier/heartrate.md)
   A quantity sample type that measures the user’s heart rate.
 
 

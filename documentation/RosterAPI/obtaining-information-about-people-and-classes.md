@@ -1,6 +1,7 @@
 # Obtaining information about people and classes
 
-**Framework**: Roster API
+**Framework**: Roster API  
+**Role**: Article
 
 Prepare your app to request organizational information from a server.
 
@@ -8,63 +9,63 @@ Prepare your app to request organizational information from a server.
 
 Roster API gives you access to information about the people and classes within an Apple School Manager (ASM) organization. To accomplish this, register for access, then perform queries to obtain the users and classes in that organization.
 
-##### Plan Your Integration Design
+##### Plan your integration design
 
 When planning the design for the integration, create roles that allow specific accounts to perform the steps for integrating your app with Roster API. Provide only those roles with the privileges to perform create, read, update, and delete operations for the integration. For example, in ASM, only accounts that have administrator or site-manager roles can authorize an app to use Roster API.
 
 Consider that there’s only one configuration at the organizational level. Accounts belonging to the roles with privileges work with this single configuration. This means that any changes that one privileged account makes are visible to other privileged accounts.
 
-##### Select the Primary App Id
+##### Select the primary App ID
 
-Use your credentials to log in to the [`Apple Developer website`](https://developer.apple.comhttp://developer.apple.com/), then choose Certificates, IDs & Profiles > Services, and click the Configure button in the Account & Organizational Data Sharing section.
+Use your credentials to log in to the [Apple Developer website](http://developer.apple.com/), then choose Certificates, IDs & Profiles > Services, and click the Configure button in the Account & Organizational Data Sharing section.
 
-![A screenshot of the Certificates, Identifiers and Profiles page with an outline around the Account and Organizational Data Sharing section.](/images/com.apple.rosterapi/media-4113871@2x.png)
+![A screenshot of the Certificates, Identifiers and Profiles page with an outline around the Account and Organizational Data Sharing section.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113871@2x.png)
 
 Click the Add button (+) to the right of Configurations, or click the Configure button in the Get Started with Account & Organizational Data Sharing section.
 
-![A screenshot of the Certificates, Identifiers and Profiles  page with an outline around Configurations in the Get Started with Account and Organizational Data Sharing section.](/images/com.apple.rosterapi/media-4113870@2x.png)
+![A screenshot of the Certificates, Identifiers and Profiles  page with an outline around Configurations in the Get Started with Account and Organizational Data Sharing section.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113870@2x.png)
 
 Choose the primary App ID from the drop-down menu, then click Continue.
 
-![A screenshot showing the Primary App ID drop-down menu in the Account and Organizational Data Sharing: Configuration section of the Certificates, Identifiers and Profiles page.](/images/com.apple.rosterapi/media-4113867@2x.png)
+![A screenshot showing the Primary App ID drop-down menu in the Account and Organizational Data Sharing: Configuration section of the Certificates, Identifiers and Profiles page.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113867@2x.png)
 
-##### Set the Return Urls
+##### Set the return URLs
 
-Return URLs receive the grant code after successfully authorizing with Apple. From the Organizational Data Sharing Scopes options, select Roster API: User access, Roster API: Class access, and Roster API: Test Data access.  For more information about the test data access scope, see [`Validating with the Roster API test scope`](validating-with-the-roster-api-test-scope.md).
+Return URLs receive the grant code after successfully authorizing with Apple. From the Organizational Data Sharing Scopes options, select Roster API: User access, Roster API: Class access, and Roster API: Test Data access.  For more information about the test data access scope, see [Validating with the Roster API test scope](./validating-with-the-roster-api-test-scope.md).
 
 Add your return URLs in the Return URLs section, then enter a URL for the Server to Server Notification Endpoint so you can receive updates about people and accounts.
 
-![A screenshot showing the Organizational Data Sharing Scopes and Return URLs areas of the Provide additional configuration details section for the Account and Organizational Data Sharing: Configuration section on the Certificates, Identifiers and Profiles page. In the Organizational Data Sharing Scopes area, the Roster API: User access, Roster API: Class access, and Roster API: Test Data access options are selected. In the Return URLs area, there is an example URL selected for placement in the text field.](/images/com.apple.rosterapi/media-4113869@2x.png)
+![A screenshot showing the Organizational Data Sharing Scopes and Return URLs areas of the Provide additional configuration details section for the Account and Organizational Data Sharing: Configuration section on the Certificates, Identifiers and Profiles page. In the Organizational Data Sharing Scopes area, the Roster API: User access, Roster API: Class access, and Roster API: Test Data access options are selected. In the Return URLs area, there is an example URL selected for placement in the text field.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113869@2x.png)
 
 Review your configuration and click Confirm.
 
-![A screenshot of a confirmation screen with a summary of the primary bundle ID, Server to Server Notification Endpoint URL, and Return URLs. There is an outline around the Confirm button.](/images/com.apple.rosterapi/media-4113872@2x.png)
+![A screenshot of a confirmation screen with a summary of the primary bundle ID, Server to Server Notification Endpoint URL, and Return URLs. There is an outline around the Confirm button.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113872@2x.png)
 
-##### Generate the Client Secret
+##### Generate the client secret
 
-Before you can generate the access token, you’ll first need to generate the client secret, which you’ll need to create the token. See [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
+Before you can generate the access token, you’ll first need to generate the client secret, which you’ll need to create the token. See [Creating a client secret](../AccountOrganizationalDataSharing/creating-a-client-secret.md).
 
 Next, choose an existing key, or create a new key by clicking the Add button (+).
 
-![A screenshot showing the Certificates, Identifiers and Profiles page with the Keys item highlighted and two keys named TestKey1 and TestKey2.](/images/com.apple.rosterapi/media-4113874@2x.png)
+![A screenshot showing the Certificates, Identifiers and Profiles page with the Keys item highlighted and two keys named TestKey1 and TestKey2.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113874@2x.png)
 
 Enter a key name if you’re creating a new key, select Account & Organizational Data Sharing, and click Continue.
 
-![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles page. There are outlines around the Key Name field, which has an entry of Organizational Data Sharing Key, and the Account and Organizational Data Sharing option, which is selected.](/images/com.apple.rosterapi/media-4113866@2x.png)
+![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles page. There are outlines around the Key Name field, which has an entry of Organizational Data Sharing Key, and the Account and Organizational Data Sharing option, which is selected.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113866@2x.png)
 
 Review the information and then click Register to register the key.
 
-![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles  page. The selected key is enabled and there’s an outline around the Register button.](/images/com.apple.rosterapi/media-4113868@2x.png)
+![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles  page. The selected key is enabled and there’s an outline around the Register button.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113868@2x.png)
 
-Click Download, then set up a client secret. See [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
+Click Download, then set up a client secret. See [Creating a client secret](../AccountOrganizationalDataSharing/creating-a-client-secret.md).
 
-![A screenshot showing the Download Your Key section of the Certificates, Identifiers and Profiles page. The key is available to download and there’s an outline around the Download button. A warning says “After downloading your key, it cannot be re-downloaded as the server copy is removed. If you are not prepared to download your key at this time, click Done and download it at a later time. Be sure to save a backup of your key in a secure place”.](/images/com.apple.rosterapi/media-4113873@2x.png)
+![A screenshot showing the Download Your Key section of the Certificates, Identifiers and Profiles page. The key is available to download and there’s an outline around the Download button. A warning says “After downloading your key, it cannot be re-downloaded as the server copy is removed. If you are not prepared to download your key at this time, click Done and download it at a later time. Be sure to save a backup of your key in a secure place”.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4113873@2x.png)
 
-##### Validate Using the Test Scope
+##### Validate using the test scope
 
-To ensure your integration works correctly, test it before providing it to users. See [`Validating with the Roster API test scope`](validating-with-the-roster-api-test-scope.md).
+To ensure your integration works correctly, test it before providing it to users. See [Validating with the Roster API test scope](./validating-with-the-roster-api-test-scope.md).
 
-##### Receive Revocation Notifications
+##### Receive revocation notifications
 
 ASM organizations can set up integration with the supported apps to import information about people and classes.
 
@@ -107,15 +108,16 @@ Use the `/rosterapi/v1/organization` endpoint to determine the `org_id` when obt
 
 Use `id` as the identifier to associate records to a certain organization. When the revocation notification arrives, delete those records associated with the organization that matches `org_id`.
 
-##### Synchronize Data with Apple School Manager
+##### Synchronize data with Apple School Manager
 
 Apple synchronizes data in ASM with authorized student information systems every 24 hours. Fetch data using Roster API once every 24 hours to have the most up to date data in your app. If you need to reduce your resource usage, consider fetching data less frequently, for example once every 48 hours or once every week.
 
-Design your synchronization to handle class and roster updates. When someone removes a student from a class in ASM, or deletes a class, subsequent requests to [`List users in a class`](returns-a-users-for-an-apple-school-manager-class.md) and [`List classes`](returns-a-list-of-classes-for-an-apple-school-manager-organization.md) don’t include the removed items. Consider whether to show teachers existing data and give them the option to remove it manually, or automatically remove the deleted records.
+Design your synchronization to handle class and roster updates. When someone removes a student from a class in ASM, or deletes a class, subsequent requests to [`List users in a class`](./returns-a-users-for-an-apple-school-manager-class.md) and [`List classes`](./returns-a-list-of-classes-for-an-apple-school-manager-organization.md) don’t include the removed items. Consider whether to show teachers existing data and give them the option to remove it manually, or automatically remove the deleted records.
 
 ## See Also
 
-- [Validating with the Roster API test scope](validating-with-the-roster-api-test-scope.md)
+### Essentials
+- [Validating with the Roster API test scope](./validating-with-the-roster-api-test-scope.md)
   Use test data to ensure your integration with the Roster API works correctly.
 
 

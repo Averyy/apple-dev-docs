@@ -1,10 +1,11 @@
 # kAudioUnitOfflineProperty_StartOffset
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kAudioUnitOfflineProperty_StartOffset: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitOfflineProperty_StartOffset
+```
+
 ## See Also
 
-- [var kAudioUnitOfflineProperty_InputSize: AudioUnitPropertyID](kaudiounitofflineproperty_inputsize.md)
-- [var kAudioUnitOfflineProperty_OutputSize: AudioUnitPropertyID](kaudiounitofflineproperty_outputsize.md)
-- [var kAudioUnitOfflineProperty_PreflightName: AudioUnitPropertyID](kaudiounitofflineproperty_preflightname.md)
-- [var kAudioUnitOfflineProperty_PreflightRequirements: AudioUnitPropertyID](kaudiounitofflineproperty_preflightrequirements.md)
+### Constants
+- [var kAudioUnitOfflineProperty_InputSize: AudioUnitPropertyID](./kaudiounitofflineproperty_inputsize.md)
+- [var kAudioUnitOfflineProperty_OutputSize: AudioUnitPropertyID](./kaudiounitofflineproperty_outputsize.md)
+- [var kAudioUnitOfflineProperty_PreflightName: AudioUnitPropertyID](./kaudiounitofflineproperty_preflightname.md)
+- [var kAudioUnitOfflineProperty_PreflightRequirements: AudioUnitPropertyID](./kaudiounitofflineproperty_preflightrequirements.md)
 
 
 ---

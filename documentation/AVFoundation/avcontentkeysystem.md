@@ -1,7 +1,8 @@
 # AVContentKeySystem
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A key-delivery method for a content key session.
 
@@ -20,33 +21,38 @@ A key-delivery method for a content key session.
 struct AVContentKeySystem
 ```
 
+```c
+typedef NSString * AVContentKeySystem;
+```
+
 ## Topics
 
 ### Key-delivery methods
-- [static let fairPlayStreaming: AVContentKeySystem](avcontentkeysystem/fairplaystreaming.md)
+- [static let fairPlayStreaming: AVContentKeySystem](./avcontentkeysystem/fairplaystreaming.md)
   A method of key delivery that uses FairPlay Streaming.
-- [static let clearKey: AVContentKeySystem](avcontentkeysystem/clearkey.md)
+- [static let clearKey: AVContentKeySystem](./avcontentkeysystem/clearkey.md)
   A method of key delivery that uses a clear key system.
-- [static let authorizationToken: AVContentKeySystem](avcontentkeysystem/authorizationtoken.md)
+- [static let authorizationToken: AVContentKeySystem](./avcontentkeysystem/authorizationtoken.md)
   A method of key delivery that uses a token to authorize playback.
 ### Initializers
-- [init(rawValue: String)](avcontentkeysystem/init(rawvalue:).md)
+- [init(rawValue: String)](./avcontentkeysystem/init%28rawvalue%29.md)
   Creates a content key system with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var keySystem: AVContentKeySystem](avcontentkeysession/keysystem.md)
+### Inspecting the session
+- [var keySystem: AVContentKeySystem](./avcontentkeysession/keysystem.md)
   The type of key system used to retrieve keys.
-- [var storageURL: URL?](avcontentkeysession/storageurl.md)
+- [var storageURL: URL?](./avcontentkeysession/storageurl.md)
   A URL that points to a writable storage directory.
 
 

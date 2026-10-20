@@ -1,7 +1,8 @@
 # RelevantContext
 
 **Framework**: RelevanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.
 
@@ -22,51 +23,52 @@ struct RelevantContext
 
 #### Overview
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information about widgets in Smart Stacks, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information about widgets in Smart Stacks, refer to [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md).
 
 ## Topics
 
 ### Fitness clues
-- [static func fitness(RelevantContext.FitnessCondition) -> RelevantContext](relevantcontext/fitness(_:).md)
+- [static func fitness(RelevantContext.FitnessCondition) -> RelevantContext](./relevantcontext/fitness%28_%29.md)
   Tells the system a widget is relevant because of a person’s fitness activity.
-- [RelevantContext.FitnessCondition](relevantcontext/fitnesscondition.md)
+- [RelevantContext.FitnessCondition](./relevantcontext/fitnesscondition.md)
   Values that represent a person’s fitness activity.
 ### Hardware clues
-- [static func hardware(headphones: RelevantContext.HeadphonesCondition) -> RelevantContext](relevantcontext/hardware(headphones:).md)
+- [static func hardware(headphones: RelevantContext.HeadphonesCondition) -> RelevantContext](./relevantcontext/hardware%28headphones%29.md)
   Tells the system a widget is relevant when a person’s headphones are connected.
-- [RelevantContext.HeadphonesCondition](relevantcontext/headphonescondition.md)
+- [RelevantContext.HeadphonesCondition](./relevantcontext/headphonescondition.md)
   A structure that indicates whether a person’s headphones are connected.
 ### Location clues
-- [static func location(category: MKPointOfInterestCategory) -> RelevantContext?](relevantcontext/location(category:).md)
+- [static func location(category: MKPointOfInterestCategory) -> RelevantContext?](./relevantcontext/location%28category%29.md)
   Tells the system a widget is relevant close to points of interest of a specific category.
-- [static func location(CLRegion) -> RelevantContext](relevantcontext/location(_:).md)
+- [static func location(CLRegion) -> RelevantContext](./relevantcontext/location%28_%29.md)
   Tells the system a widget is relevant at a specific location.
-- [static func location(inferred: RelevantContext.InferredLocation) -> RelevantContext](relevantcontext/location(inferred:).md)
+- [static func location(inferred: RelevantContext.InferredLocation) -> RelevantContext](./relevantcontext/location%28inferred%29.md)
   Tells the system a widget is relevant at a person’s inferred location.
-- [RelevantContext.InferredLocation](relevantcontext/inferredlocation.md)
+- [RelevantContext.InferredLocation](./relevantcontext/inferredlocation.md)
   A structure with values for a person’s inferred home, work, school, and commute locations.
 ### Sleep clues
-- [static func sleep(RelevantContext.SleepCondition) -> RelevantContext](relevantcontext/sleep(_:).md)
+- [static func sleep(RelevantContext.SleepCondition) -> RelevantContext](./relevantcontext/sleep%28_%29.md)
   Tells the system a widget is relevant because of a person’s sleep schedule.
-- [RelevantContext.SleepCondition](relevantcontext/sleepcondition.md)
+- [RelevantContext.SleepCondition](./relevantcontext/sleepcondition.md)
   Values that represent a person’s typical bedtime or wakeup time.
 ### Time clues
-- [static func date(Date) -> RelevantContext](relevantcontext/date(_:).md)
+- [static func date(Date) -> RelevantContext](./relevantcontext/date%28_%29.md)
   Tells the system a widget is relevant at a specific date.
-- [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(_:kind:).md)
+- [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](./relevantcontext/date%28_,kind%29.md)
   Tells the system a widget is relevant at a specific date and provides an additional contextual hint.
-- [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(interval:kind:).md)
+- [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](./relevantcontext/date%28interval,kind%29.md)
   Tells the system a widget is relevant for a time interval and provides an additional contextual hint.
-- [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(range:kind:).md)
+- [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](./relevantcontext/date%28range,kind%29.md)
   Tells the system a widget is relevant for a known date range and provides an additional contextual hint.
-- [RelevantContext.DateKind](relevantcontext/datekind.md)
+- [RelevantContext.DateKind](./relevantcontext/datekind.md)
   Values the system uses as additional context for time-based relevance clues.
-- [static func date(from: Date, to: Date) -> RelevantContext](relevantcontext/date(from:to:).md)
+- [static func date(from: Date, to: Date) -> RelevantContext](./relevantcontext/date%28from,to%29.md)
   Tells the system a widget is relevant between two dates.
 
 ## See Also
 
-- [Increasing the visibility of widgets in Smart Stacks](../widgetkit/widget-suggestions-in-smart-stacks.md)
+### Providing relevance information
+- [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
 
 

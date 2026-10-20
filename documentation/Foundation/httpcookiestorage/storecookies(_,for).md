@@ -1,7 +1,8 @@
 # storeCookies(_:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores an array of cookies in the cookie storage, on behalf of the provided task, if the cookie accept policy permits.
 
@@ -20,6 +21,10 @@ Stores an array of cookies in the cookie storage, on behalf of the provided task
 func storeCookies(_ cookies: [HTTPCookie], for task: URLSessionTask)
 ```
 
+```objc
+- (void) storeCookies:(NSArray<NSHTTPCookie *> *) cookies forTask:(NSURLSessionTask *) task;
+```
+
 ## Parameters
 
 - `cookies`: The cookies to add.
@@ -27,13 +32,14 @@ func storeCookies(_ cookies: [HTTPCookie], for task: URLSessionTask)
 
 ## See Also
 
-- [func removeCookies(since: Date)](httpcookiestorage/removecookies(since:).md)
+### Adding and removing cookies
+- [func removeCookies(since: Date)](./removecookies%28since%29.md)
   Removes cookies that were stored after a given date.
-- [func deleteCookie(HTTPCookie)](httpcookiestorage/deletecookie(_:).md)
+- [func deleteCookie(HTTPCookie)](./deletecookie%28_%29.md)
   Deletes the specified cookie from the cookie storage.
-- [func setCookie(HTTPCookie)](httpcookiestorage/setcookie(_:).md)
+- [func setCookie(HTTPCookie)](./setcookie%28_%29.md)
   Stores a specified cookie in the cookie storage if the cookie accept policy permits.
-- [func setCookies([HTTPCookie], for: URL?, mainDocumentURL: URL?)](httpcookiestorage/setcookies(_:for:maindocumenturl:).md)
+- [func setCookies([HTTPCookie], for: URL?, mainDocumentURL: URL?)](./setcookies%28_,for,maindocumenturl%29.md)
   Adds an array of cookies to the cookie storage if the storage’s cookie acceptance policy permits.
 
 

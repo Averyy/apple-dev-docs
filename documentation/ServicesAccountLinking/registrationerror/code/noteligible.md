@@ -1,7 +1,8 @@
 # RegistrationError.Code.notEligible
 
 **Framework**: ServicesAccountLinking  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The application is not registered as an authorized partner.
 
@@ -14,6 +15,10 @@ The application is not registered as an authorized partner.
 
 ```swift
 case notEligible
+```
+
+```c
+SALRegistrationErrorNotEligible
 ```
 
 #### Discussion

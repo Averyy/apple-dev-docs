@@ -1,7 +1,8 @@
 # showGrammarPresentation(for:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
 
@@ -14,9 +15,13 @@ Used to support the presentation of grammar issues in text. When the user intera
 func showGrammarPresentation(for range: NSRange, in context: NSWritingToolsCoordinator.Context) -> Bool
 ```
 
+```objc
+- (BOOL) showGrammarPresentationForRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context;
+```
+
 #### Discussion
 
-Pass in context and range to identify the issue the user selected. The context must match one of the contexts returned from [`writingToolsCoordinator(_:requestsContextsFor:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestscontextsfor:completion:).md) and the range must match the range in the context of one of the grammar details returned for that context from [`writingToolsCoordinator(_:requestsGrammarResultsFor:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsgrammarresultsfor:completion:).md) Returns NO if the UI cannot be brought up.
+Pass in context and range to identify the issue the user selected. The context must match one of the contexts returned from [`writingToolsCoordinator(_:requestsContextsFor:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestscontextsfor,completion%29.md) and the range must match the range in the context of one of the grammar details returned for that context from [`writingToolsCoordinator(_:requestsGrammarResultsFor:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestsgrammarresultsfor,completion%29.md) Returns NO if the UI cannot be brought up.
 
 
 ---

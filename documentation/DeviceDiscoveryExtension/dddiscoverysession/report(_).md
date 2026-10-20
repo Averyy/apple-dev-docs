@@ -1,21 +1,26 @@
 # report(_:)
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports an event to the system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func report(_ inEvent: DDDeviceEvent)
+```
+
+```objc
+- (void) reportEvent:(DDDeviceEvent *) inEvent;
 ```
 
 #### Discussion

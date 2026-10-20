@@ -1,7 +1,8 @@
 # USDPrim.VariantSelectionMap
 
 **Framework**: USDKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Maps variant set names to selected variant names.
 
@@ -21,11 +22,12 @@ typealias VariantSelectionMap = Dictionary<USDToken, USDToken>
 
 ## See Also
 
-- [USDPrim.VariantSpec](usdprim/variantspec.md)
+### Authoring variants
+- [USDPrim.VariantSpec](./variantspec.md)
   A handle to a single variant option within a variant set.
-- [USDPrim.VariantSetSpec](usdprim/variantsetspec.md)
+- [USDPrim.VariantSetSpec](./variantsetspec.md)
   A handle to a variant set — a named group of variant options.
-- [typealias VariantsMap](usdprim/variantsmap.md)
+- [typealias VariantsMap](./variantsmap.md)
   Maps variant set names to lists of available variant names.
 
 

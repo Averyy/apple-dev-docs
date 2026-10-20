@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a paste button with the specified size and position.
 
@@ -17,15 +18,20 @@ Creates a paste button with the specified size and position.
 init(frame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame;
+```
+
 ## Parameters
 
 - `frame`: A structure that determines the paste button’s size and position within the parent view’s frame.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uipastecontrol/init(coder:).md)
+### Creating a paste button
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a paste button by deserializing the specified coder.
-- [init(configuration: UIPasteControl.Configuration)](uipastecontrol/init(configuration:).md)
+- [init(configuration: UIPasteControl.Configuration)](./init%28configuration%29.md)
   Creates a paste button that conforms to the specified configuration.
 
 

@@ -1,7 +1,8 @@
 # shouldBadge
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether an app’s icon badge increments its value.
 
@@ -20,9 +21,13 @@ A Boolean value that determines whether an app’s icon badge increments its val
 var shouldBadge: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL shouldBadge;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Set it to [`true`](https://developer.apple.com/documentation/swift/true) to cause the system to increment the badge value whenever it receives the corresponding push notification.
+The default value of this property is [`false`](../../../Swift/false.md). Set it to [`true`](../../../Swift/true.md) to cause the system to increment the badge value whenever it receives the corresponding push notification.
 
 
 ---

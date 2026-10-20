@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages interactions between Writing Tools and your custom text view.
 
@@ -18,105 +19,110 @@ An object that manages interactions between Writing Tools and your custom text v
 class UIWritingToolsCoordinator
 ```
 
+```objc
+@interface UIWritingToolsCoordinator : NSObject
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Overview
 
 Add a `UIWritingToolsCoordinator` object to a custom view when you want to add Writing Tools support to that view. The coordinator manages interactions between your view and the Writing Tools UI and back-end capabilities. When creating a coordinator, you supply a delegate object to respond to requests from the system and provide needed information. Your delegate delivers your view’s text to Writing Tools, incorporates suggested changes back into your text storage, and supports the animations that Writing Tools creates to show the state of an operation.
 
-Create the `UIWritingToolsCoordinator` object when setting up your UI, and initialize it with a custom object that adopts the [`UIWritingToolsCoordinator.Delegate`](uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol. Add the coordinator to your view using the [`addInteraction(_:)`](uiview/addinteraction(_:).md) method. When a coordinator is present on a view, the system adds UI elements to initiate Writing Tools operations.
+Create the `UIWritingToolsCoordinator` object when setting up your UI, and initialize it with a custom object that adopts the [`UIWritingToolsCoordinator.Delegate`](./uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol. Add the coordinator to your view using the [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md) method. When a coordinator is present on a view, the system adds UI elements to initiate Writing Tools operations.
 
-When defining the delegate, choose an object from your app that has access to your view and its text storage. You can adopt the [`UIWritingToolsCoordinator.Delegate`](uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol in the view itself, or in another type that your view uses to manage content. During the interactions with Writing Tools, the delegate gets and sets the contents of the view’s text storage and supports Writing Tools behaviors.
+When defining the delegate, choose an object from your app that has access to your view and its text storage. You can adopt the [`UIWritingToolsCoordinator.Delegate`](./uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol in the view itself, or in another type that your view uses to manage content. During the interactions with Writing Tools, the delegate gets and sets the contents of the view’s text storage and supports Writing Tools behaviors.
 
-> **Note**: You don’t need to create an `UIWritingToolsCoordinator`  object if you display text using a [`UITextView`](uitextview.md), [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview), [`Text`](https://developer.apple.com/documentation/swiftui/text), [`TextField`](https://developer.apple.com/documentation/swiftui/textfield), or [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor) view. Those views already include the required support to handle Writing Tools interactions.
+> **Note**: You don’t need to create an `UIWritingToolsCoordinator`  object if you display text using a [`UITextView`](./uitextview.md), [`NSTextView`](../AppKit/nstextview.md), [`Text`](../SwiftUI/text.md), [`TextField`](../SwiftUI/textfield.md), or [`TextEditor`](../SwiftUI/texteditor.md) view. Those views already include the required support to handle Writing Tools interactions.
 
 ## Topics
 
 ### Creating a coordinator object
-- [init(delegate: (any UIWritingToolsCoordinator.Delegate)?)](uiwritingtoolscoordinator/init(delegate:).md)
+- [init(delegate: (any UIWritingToolsCoordinator.Delegate)?)](./uiwritingtoolscoordinator/init%28delegate%29.md)
   Creates a writing tools coordinator and assigns the specified delegate object to it.
 ### Checking the availability of Writing Tools
-- [class var isWritingToolsAvailable: Bool](uiwritingtoolscoordinator/iswritingtoolsavailable.md)
+- [class var isWritingToolsAvailable: Bool](./uiwritingtoolscoordinator/iswritingtoolsavailable.md)
   A Boolean value that indicates whether Writing Tools features are available to enable.
 ### Managing Writing Tools interactions
-- [var delegate: (any UIWritingToolsCoordinator.Delegate)?](uiwritingtoolscoordinator/delegate-swift.property.md)
+- [var delegate: (any UIWritingToolsCoordinator.Delegate)?](./uiwritingtoolscoordinator/delegate-swift.property.md)
   The object that handles Writing Tools interactions for your view.
-- [UIWritingToolsCoordinator.Delegate](uiwritingtoolscoordinator/delegate-swift.protocol.md)
+- [UIWritingToolsCoordinator.Delegate](./uiwritingtoolscoordinator/delegate-swift.protocol.md)
   An interface that you use to manage interactions between Writing Tools and your custom text view.
 ### Getting the host views for effects
-- [var effectContainerView: UIView?](uiwritingtoolscoordinator/effectcontainerview.md)
+- [var effectContainerView: UIView?](./uiwritingtoolscoordinator/effectcontainerview.md)
   The view that Writing Tools uses to display visual effects during the text-rewriting process.
-- [var decorationContainerView: UIView?](uiwritingtoolscoordinator/decorationcontainerview.md)
+- [var decorationContainerView: UIView?](./uiwritingtoolscoordinator/decorationcontainerview.md)
   The view that Writing Tools uses to display background decorations such as proofreading marks.
 ### Configuring the experience
-- [var preferredBehavior: UIWritingToolsBehavior](uiwritingtoolscoordinator/preferredbehavior.md)
+- [var preferredBehavior: UIWritingToolsBehavior](./uiwritingtoolscoordinator/preferredbehavior.md)
   The level of Writing Tools support you want the system to provide for your view.
-- [var behavior: UIWritingToolsBehavior](uiwritingtoolscoordinator/behavior.md)
+- [var behavior: UIWritingToolsBehavior](./uiwritingtoolscoordinator/behavior.md)
   The actual level of Writing Tools support the system provides for your view.
-- [var preferredResultOptions: UIWritingToolsResultOptions](uiwritingtoolscoordinator/preferredresultoptions.md)
+- [var preferredResultOptions: UIWritingToolsResultOptions](./uiwritingtoolscoordinator/preferredresultoptions.md)
   The type of content you allow Writing Tools to generate for your custom text view.
-- [var resultOptions: UIWritingToolsResultOptions](uiwritingtoolscoordinator/resultoptions.md)
+- [var resultOptions: UIWritingToolsResultOptions](./uiwritingtoolscoordinator/resultoptions.md)
   The type of content the system generates for your custom text view.
 ### Reporting changes to Writing Tools
-- [func updateRange(NSRange, with: NSAttributedString, reason: UIWritingToolsCoordinator.TextUpdateReason, forContextWithIdentifier: UUID)](uiwritingtoolscoordinator/updaterange(_:with:reason:forcontextwithidentifier:).md)
+- [func updateRange(NSRange, with: NSAttributedString, reason: UIWritingToolsCoordinator.TextUpdateReason, forContextWithIdentifier: UUID)](./uiwritingtoolscoordinator/updaterange%28_,with,reason,forcontextwithidentifier%29.md)
   Informs the coordinator about changes your app made to the text in the specified context object.
-- [func updateForReflowedTextInContextWithIdentifier(UUID)](uiwritingtoolscoordinator/updateforreflowedtextincontextwithidentifier(_:).md)
+- [func updateForReflowedTextInContextWithIdentifier(UUID)](./uiwritingtoolscoordinator/updateforreflowedtextincontextwithidentifier%28_%29.md)
   Informs the coordinator that a change occurred to the view or its text that requires a layout update.
-- [UIWritingToolsCoordinator.TextUpdateReason](uiwritingtoolscoordinator/textupdatereason.md)
+- [UIWritingToolsCoordinator.TextUpdateReason](./uiwritingtoolscoordinator/textupdatereason.md)
   Constants that specify the reason you updated your view’s content outside of the Writing Tools workflow.
 ### Managing the current state
-- [func stopWritingTools()](uiwritingtoolscoordinator/stopwritingtools.md)
+- [func stopWritingTools()](./uiwritingtoolscoordinator/stopwritingtools%28%29.md)
   Stops the current Writing Tools operation and dismisses the system UI.
-- [var state: UIWritingToolsCoordinator.State](uiwritingtoolscoordinator/state-swift.property.md)
+- [var state: UIWritingToolsCoordinator.State](./uiwritingtoolscoordinator/state-swift.property.md)
   The current level of Writing Tools activity in your view.
-- [UIWritingToolsCoordinator.State](uiwritingtoolscoordinator/state-swift.enum.md)
+- [UIWritingToolsCoordinator.State](./uiwritingtoolscoordinator/state-swift.enum.md)
   The states that indicate the current activity, if any, Writing Tools is performing in your view.
 ### Getting the supporting types
-- [UIWritingToolsCoordinator.ContextScope](uiwritingtoolscoordinator/contextscope.md)
+- [UIWritingToolsCoordinator.ContextScope](./uiwritingtoolscoordinator/contextscope.md)
   Options that indicate how much of your content Writing Tools requested.
-- [UIWritingToolsCoordinator.TextReplacementReason](uiwritingtoolscoordinator/textreplacementreason.md)
+- [UIWritingToolsCoordinator.TextReplacementReason](./uiwritingtoolscoordinator/textreplacementreason.md)
   Options that indicate whether Writing Tools is animating changes to your view’s text.
-- [UIWritingToolsCoordinator.TextAnimation](uiwritingtoolscoordinator/textanimation.md)
+- [UIWritingToolsCoordinator.TextAnimation](./uiwritingtoolscoordinator/textanimation.md)
   The types of animations that Writing Tools performs during an interactive update of your view.
 ### Working with markers
-- [var includesTextListMarkers: Bool](uiwritingtoolscoordinator/includestextlistmarkers.md)
+- [var includesTextListMarkers: Bool](./uiwritingtoolscoordinator/includestextlistmarkers.md)
   A Boolean value that indicates whether Writing Tools includes text list markers in the text list paragraph content.
 ### Instance Methods
-- [func cancelTextAnimations(identifiers: [UUID])](uiwritingtoolscoordinator/canceltextanimations(identifiers:).md)
+- [func cancelTextAnimations(identifiers: [UUID])](./uiwritingtoolscoordinator/canceltextanimations%28identifiers%29.md)
   Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
-- [func showGrammarPresentation(for: NSRange, in: UIWritingToolsCoordinator.Context) -> Bool](uiwritingtoolscoordinator/showgrammarpresentation(for:in:).md)
+- [func showGrammarPresentation(for: NSRange, in: UIWritingToolsCoordinator.Context) -> Bool](./uiwritingtoolscoordinator/showgrammarpresentation%28for,in%29.md)
   Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
-- [func startTextAnimation(UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](uiwritingtoolscoordinator/starttextanimation(_:for:in:writingdirection:).md)
+- [func startTextAnimation(UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](./uiwritingtoolscoordinator/starttextanimation%28_,for,in,writingdirection%29.md)
   Used to support the presentation of grammar issues in text. When an issue is first identified and indicated, call this to have it animated.
 ### Enumerations
-- [UIWritingToolsCoordinator.TextDecoration](uiwritingtoolscoordinator/textdecoration.md)
-  Use the `UIWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:textdecoration:completion:).md) to provide both forms of previews, based on the specified decoration.
+- [UIWritingToolsCoordinator.TextDecoration](./uiwritingtoolscoordinator/textdecoration.md)
+  Use the `UIWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](./uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,requestspreviewfor,of,in,textdecoration,completion%29.md) to provide both forms of previews, based on the specified decoration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+### Writing Tools for custom views
+- [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
   Add Writing Tools support, including support for inline replacement animations, to your custom iOS views that contain text.
-- [UIWritingToolsCoordinator.Delegate](uiwritingtoolscoordinator/delegate-swift.protocol.md)
+- [UIWritingToolsCoordinator.Delegate](./uiwritingtoolscoordinator/delegate-swift.protocol.md)
   An interface that you use to manage interactions between Writing Tools and your custom text view.
-- [UIWritingToolsCoordinator.Context](uiwritingtoolscoordinator/context.md)
+- [UIWritingToolsCoordinator.Context](./uiwritingtoolscoordinator/context.md)
   A data object that you use to share your custom view’s text with Writing Tools.
-- [UIWritingToolsCoordinator.AnimationParameters](uiwritingtoolscoordinator/animationparameters.md)
+- [UIWritingToolsCoordinator.AnimationParameters](./uiwritingtoolscoordinator/animationparameters.md)
   An object you use to configure additional tasks or animations to run alongside the Writing Tools animations.
 
 

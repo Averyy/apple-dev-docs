@@ -1,7 +1,8 @@
 # WKSecurityRestrictionMode.lockdown
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 
 ```swift
 case lockdown
+```
+
+```c
+WKSecurityRestrictionModeLockdown
 ```
 
 

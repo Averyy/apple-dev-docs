@@ -1,7 +1,8 @@
 # read(_:configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reads a sequence of annotated files as a lazy sequence of results each containing an audio buffers or an error.
 
@@ -19,6 +20,12 @@ Reads a sequence of annotated files as a lazy sequence of results each containin
 static func read<S, Annotation>(_ annotatedFiles: S, configuration: AudioReader.Configuration = .init()) throws -> [AnnotatedFeature<AudioReader.AsyncBuffers, Annotation>] where S : Sequence, Annotation : Equatable, Annotation : Sendable, S.Element == AnnotatedFeature<URL, Annotation>
 ```
 
+**Other overloads**:
+
+```swift
+static func read<S>(_ files: S, configuration: AudioReader.Configuration = .init()) throws -> [AudioReader.AsyncBuffers] where S : Sequence, S.Element == URL
+```
+
 #### Return Value
 
 An array of annotated async sequences.
@@ -30,9 +37,10 @@ An array of annotated async sequences.
 
 ## See Also
 
-- [static func read(contentsOf: URL, configuration: AudioReader.Configuration) throws -> AudioReader.AsyncBuffers](audioreader/read(contentsof:configuration:).md)
+### Reading audio
+- [static func read(contentsOf: URL, configuration: AudioReader.Configuration) throws -> AudioReader.AsyncBuffers](./read%28contentsof,configuration%29.md)
   Reads an audio file as an async sequence of audio buffers.
-- [static func readMicrophone(configuration: AudioReader.Configuration) async throws -> AudioReader.MicrophoneAsyncBuffers](audioreader/readmicrophone(configuration:).md)
+- [static func readMicrophone(configuration: AudioReader.Configuration) async throws -> AudioReader.MicrophoneAsyncBuffers](./readmicrophone%28configuration%29.md)
   Reads an async sequence of audio frames captured with a microphone.
 
 

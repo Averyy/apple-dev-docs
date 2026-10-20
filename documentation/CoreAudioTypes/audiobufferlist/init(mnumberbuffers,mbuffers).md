@@ -1,7 +1,8 @@
 # init(mNumberBuffers:mBuffers:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio buffer list with audio buffers.
 
@@ -27,7 +28,8 @@ init(mNumberBuffers: UInt32, mBuffers: AudioBuffer)
 
 ## See Also
 
-- [init()](audiobufferlist/init.md)
+### Creating a Buffer List
+- [init()](./init%28%29.md)
   Creates an empty audio buffer list.
 
 

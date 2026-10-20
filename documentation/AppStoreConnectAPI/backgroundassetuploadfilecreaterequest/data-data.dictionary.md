@@ -1,7 +1,8 @@
 # BackgroundAssetUploadFileCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for a background asset upload file create request.
 
@@ -10,23 +11,23 @@ The data wrapper for a background asset upload file create request.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUploadFileCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetUploadFileCreateRequest.Data.Attributes](backgroundassetuploadfilecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BackgroundAssetUploadFileCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a background asset upload file create request resource.
-- [object BackgroundAssetUploadFileCreateRequest.Data.Relationships](backgroundassetuploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BackgroundAssetUploadFileCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (BackgroundAssetUploadFileCreateRequest.Data.Attributes) *(required)*
 - `relationships` (BackgroundAssetUploadFileCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `backgroundAssetUploadFiles`
 
 
 ---

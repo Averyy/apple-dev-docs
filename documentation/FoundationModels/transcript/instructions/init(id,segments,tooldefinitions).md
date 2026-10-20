@@ -1,7 +1,8 @@
 # init(id:segments:toolDefinitions:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates instructions that describe how you want the model to behave, in natural language.
 

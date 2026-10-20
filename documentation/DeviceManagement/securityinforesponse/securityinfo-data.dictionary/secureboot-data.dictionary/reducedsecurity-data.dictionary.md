@@ -1,7 +1,8 @@
 # SecurityInfoResponse.SecurityInfo.SecureBoot.ReducedSecurity
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 Reports which security features the user disables in `recoveryOS`. This property is only present for a Mac with Apple silicon when `SecureBootLevel` is `medium`.
 
@@ -10,7 +11,7 @@ Reports which security features the user disables in `recoveryOS`. This property
 
 ## Declaration
 
-```swift
+```
 object SecurityInfoResponse.SecurityInfo.SecureBoot.ReducedSecurity
 ```
 

@@ -1,7 +1,8 @@
 # ContentCachingInformationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get the status of the content caches on a device.
 
@@ -10,14 +11,14 @@ The command to get the status of the content caches on a device.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ContentCachingInformationCommand.Command](contentcachinginformationcommand/command-data.dictionary.md)
+- [object ContentCachingInformationCommand.Command](./contentcachinginformationcommand/command-data.dictionary.md)
   The command to get the status of the content caches on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object ContentCachingInformationCommand
 
 ## See Also
 
-- [object ContentCachingInformationResponse](contentcachinginformationresponse.md)
+### Commands and responses
+- [object ContentCachingInformationResponse](./contentcachinginformationresponse.md)
   A response from the device after it processes the command to get the status of the content caches on a device.
 
 

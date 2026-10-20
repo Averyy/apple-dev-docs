@@ -1,7 +1,8 @@
 # ClockKit
 
 **Framework**: ClockKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Display app-specific data on the clock face.
 
@@ -13,17 +14,17 @@ Display app-specific data on the clock face.
 
 #### Overview
 
-> ❗ **Important**:  ClockKit-based complications are deprecated in watchOS 10 and later. Use [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) to create complications. For more information, see [`Migrating to WidgetKit`](clkcomplicationdatasource#Migrating-to-WidgetKit.md).
+> ❗ **Important**:  ClockKit-based complications are deprecated in watchOS 10 and later. Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications. For more information, see [Migrating to WidgetKit](./clkcomplicationdatasource.md#Migrating-to-WidgetKit).
 
 Use the ClockKit framework to implement complications for your app. *Complications* are small interface elements that appear on a watch face and provide quick access to data that people frequently use. Your app defines complications using timeline entries that provide a template for the complication’s appearance and the date ClockKit displays it. The system updates the appearance of your complication based on the timeline.
 
 ClockKit defines the size and placement of the complications on each watch face. The following image depicts the layout of the Modular watch face, which has space for five different complications: one large and four small.
 
-![An illustration showing the space for one large and four small complications on the Modular watch face.](/images/com.apple.clockkit/media-3571054@2x.png)
+![An illustration showing the space for one large and four small complications on the Modular watch face.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3571054@2x.png)
 
 ClockKit organizes complications into families based on their size and style, and provides a variety of templates for each family. Use the templates to display text, images, and graphical gauges.
 
-##### Improve Your App with Complications
+##### Improve your app with complications
 
 Complications provide a unique way to interact with your users. Consider creating complications, even if they only act as a launcher for your watchOS app. A complication on the active watch face provides:
 
@@ -38,21 +39,21 @@ The system also gives apps with active complications more opportunities for back
 ## Topics
 
 ### Migration Support
-- [Migrating ClockKit complications to WidgetKit](../widgetkit/converting-a-clockkit-app.md)
+- [Migrating ClockKit complications to WidgetKit](../WidgetKit/converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
-- [protocol CLKComplicationDataSource](clkcomplicationdatasource.md)
+- [protocol CLKComplicationDataSource](./clkcomplicationdatasource.md)
   A protocol that provides ClockKit with information about your complication.
-- [let CLKDefaultComplicationIdentifier: String](clkdefaultcomplicationidentifier.md)
+- [let CLKDefaultComplicationIdentifier: String](./clkdefaultcomplicationidentifier.md)
   An identifier representing a default complication.
-- [class CLKComplicationDescriptor](clkcomplicationdescriptor.md)
+- [class CLKComplicationDescriptor](./clkcomplicationdescriptor.md)
   A descriptor that defines a complication and the families that it supports.
 ### Face Sharing
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
+- [Sharing an Apple Watch face](./sharing-an-apple-watch-face.md)
   Distribute a customized watch face to Apple Watch users.
-- [class CLKWatchFaceLibrary](clkwatchfacelibrary.md)
+- [class CLKWatchFaceLibrary](./clkwatchfacelibrary.md)
   An object for importing watch faces that the app provides.
 ### Deprecated
-- [Deprecated articles and symbols](deprecated-articles-and-symbols.md)
+- [Deprecated articles and symbols](./deprecated-articles-and-symbols.md)
 
 
 ---

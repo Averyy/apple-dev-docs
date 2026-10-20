@@ -1,6 +1,7 @@
 # Xcode 26 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -30,7 +31,11 @@ Also in Xcode 26:
 ###### New Features
 
 - Hang and Launch diagnostics are enhanced with trending insights, calling attention to issues that have increased in impact over the last 4 app versions and providing additional context on the general change in impact to better highlight the prevalence. Leverage these insights, called out with a flame icon in the source list, to understand when an issue may have been introduced and to prioritize performance optimizations in new versions of your app. (135376723)
-- Added a new setting that dictates how function names are displayed in C++ frames: plugin.cplusplus.display.function-name-format By default this displays the entirety of a function name, but can be customized to drop various parts of a function signature (e.g., return type, scope qualifiers, etc.). See https://lldb.llvm.org/use/formatting.html#function-name-formats for more details. By default LLDB will now highlight the function basename when displayed in C++ frames (e.g., in the backtrace).  (150174227)
+- Added a new setting that dictates how function names are displayed in C++ frames: plugin.cplusplus.display.function-name-format
+
+  By default this displays the entirety of a function name, but can be customized to drop various parts of a function signature (e.g., return type, scope qualifiers, etc.). See https://lldb.llvm.org/use/formatting.html#function-name-formats for more details.
+
+  By default LLDB will now highlight the function basename when displayed in C++ frames (e.g., in the backtrace).  (150174227)
 
 ###### Resolved Issues
 
@@ -46,16 +51,24 @@ Also in Xcode 26:
 
 - The Related Items menu has been simplified to items to improve editor load times. Assistant Categories like Callers are still available in the Assistant Editor. There is also similar functionality available via editor context menus or in the Find Navigator.  (147335052)
 - Simulators may fail to boot during the first build after upgrading macOS; rebuilding after a short wait typically resolves the issue.  (152328794)
-- Sometimes the “Cancel” button in the Coding Assistant status bar fails to stop the currently executing message.  (152546155) **Workaround:** Use the Coding Assistant navigator directly, and click “Cancel”.
-- Users updating from earlier Xcode 26 betas may experience an error such as “fatal error: ‘iostream’ file not found” when using C++ standard headers.  (152924178) (FB17859821) **Workaround:** In Terminal, execute the command: ```None
- sudo rm -rf /Library/Developer/CommandLineTools/usr/include/c++/v1
-```
+- Sometimes the “Cancel” button in the Coding Assistant status bar fails to stop the currently executing message.  (152546155)
+
+  **Workaround:** Use the Coding Assistant navigator directly, and click “Cancel”.
+- Users updating from earlier Xcode 26 betas may experience an error such as “fatal error: ‘iostream’ file not found” when using C++ standard headers.  (152924178) (FB17859821)
+
+  **Workaround:** In Terminal, execute the command:
+
+  ```
+   sudo rm -rf /Library/Developer/CommandLineTools/usr/include/c++/v1
+  ```
 
 ##### Address Sanitizer
 
 ###### Known Issues
 
-- Address Sanitizer C++ container overflow checks are no longer disabled by default and cannot be disabled at compile time from Xcode build settings.  (157770563) **Workaround:** Disable the checks at run time by setting the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0` or adding it to your existing `ASAN_OPTIONS`. Add this setting to the Environment Variables list in the Arguments tab of the Run scheme in the scheme editor and in the Configurations tab of any Test Plan that uses Address Sanitizer.
+- Address Sanitizer C++ container overflow checks are no longer disabled by default and cannot be disabled at compile time from Xcode build settings.  (157770563)
+
+  **Workaround:** Disable the checks at run time by setting the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0` or adding it to your existing `ASAN_OPTIONS`. Add this setting to the Environment Variables list in the Arguments tab of the Run scheme in the scheme editor and in the Configurations tab of any Test Plan that uses Address Sanitizer.
 
 ##### App Intents
 
@@ -67,7 +80,7 @@ Also in Xcode 26:
 
 - UISceneAppIntent.performNavigation(forScene:) not always called.  (152254774)
 
-##### Apple Tv
+##### Apple TV
 
 ###### Resolved Issues
 
@@ -83,7 +96,7 @@ Also in Xcode 26:
 
 - Some developers may get an incorrect build warning from actool: “Failed to generate flattened icon stack for icon named…” This can be safely ignored.  (158698677)
 
-##### Assistantschemas
+##### AssistantSchemas
 
 ###### Resolved Issues
 
@@ -97,13 +110,17 @@ Also in Xcode 26:
 
 ###### Known Issues
 
-- When running the mock server (`ba-serve`), the Choose Identity panel might appear behind all other windows and be absent in Mission Control.  (152256482) **Workaround:** Move all other windows out of the way to reveal the panel.
+- When running the mock server (`ba-serve`), the Choose Identity panel might appear behind all other windows and be absent in Mission Control.  (152256482)
+
+  **Workaround:** Move all other windows out of the way to reveal the panel.
 
 ##### Build System
 
 ###### New Features
 
-- Compilation caching has been introduced as an opt-in feature, which speeds-up iterative build/test cycles for Swift and C-family languages. The compilation caching feature caches the results of compilations that were produced for a set of source file inputs and, when it detects that the same set of source files are getting re-compiled, it speeds-up the build by providing the prior compilation results directly from the cache. The workflows that will benefit the most from compilation caching are when switching between branches (which ends up re-compiling the same source files again) or when doing clean builds. Compilation caching can be enabled via “Enable Compilation Caching” build setting or via the per-user project settings.  (149700201)
+- Compilation caching has been introduced as an opt-in feature, which speeds-up iterative build/test cycles for Swift and C-family languages. The compilation caching feature caches the results of compilations that were produced for a set of source file inputs and, when it detects that the same set of source files are getting re-compiled, it speeds-up the build by providing the prior compilation results directly from the cache. The workflows that will benefit the most from compilation caching are when switching between branches (which ends up re-compiling the same source files again) or when doing clean builds.
+
+  Compilation caching can be enabled via “Enable Compilation Caching” build setting or via the per-user project settings.  (149700201)
 
 ###### Resolved Issues
 
@@ -115,45 +132,77 @@ Also in Xcode 26:
 
 ###### New Features
 
-- The following C++26 features have been implemented: - `constexpr` placement new ([`P2747R2`](https://developer.apple.comhttps://wg21.link/P2747R2)) ([`Github`](https://developer.apple.comhttps://github.com/llvm/llvm-project/issues/105427))
-- A type trait for detecting virtual base classes ([`P2985R0`](https://developer.apple.comhttps://wg21.link/P2985R0)) ([`Github`](https://developer.apple.comhttps://github.com/llvm/llvm-project/issues/105432)) The following C++23 features have been implemented: - Relaxing Ranges Just A Smidge ([`P2609R3`](https://developer.apple.comhttps://wg21.link/P2609R3)) ([`Github`](https://developer.apple.comhttps://github.com/llvm/llvm-project/issues/105253))
-- A trait for implicit lifetime types ([`P2674R1`](https://developer.apple.comhttps://wg21.link/P2674R1)) ([`Github`](https://developer.apple.comhttps://github.com/llvm/llvm-project/issues/105259))
-- A Standard `flat_map` ([`P0429R9`](https://developer.apple.comhttps://wg21.link/P0429R9)) ([`Github`](https://developer.apple.comhttps://github.com/llvm/llvm-project/issues/105190)) The following C++20 features have been implemented: - Reviewing Deprecated Facilities of C++17 for C++20 ([`P0619R4`](https://developer.apple.comhttps://wg21.link/P0619R4)) ([`Github`](https://developer.apple.comhttps://github.com/llvm/llvm-project/issues/99985)) Performance and memory improvements: - The `lexicographical_compare` and `ranges::lexicographical_compare` algorithms have been optimized for trivially equality comparable types, resulting in a performance improvement of up to 40x.
-- The internal structure `__compressed_pair` has been replaced with `[[no_unique_address]]`, resulting in reduced compile times and smaller debug information as well as better code generation if optimizations are disabled.
-- The `input_iterator`-pair overload of `void assign(InputIt, InputIt)` has been optimized for `std::vector`, resulting in a performance improvement of up to 2x for trivial element types (e.g., `std::vector<int>`), and up to 3.4x for non-trivial element types (e.g., `std::vector<std::vector<int>>`).
-- The `input_iterator`-pair overload of `iterator insert(const_iterator, InputIt, InputIt)` has been optimized for `std::vector`, resulting in a performance improvement of up to 10x for `std::vector<int>`, and up to 2.3x for `std::vector<std::vector<int>>`.
-- `std::stable_sort` uses radix sort for integral types now, which can improve the performance up to 10 times, depending on type of sorted elements and the initial state of the sorted array.
-- Reduced the amount of debug information generated for internal typedefs. This reduces the size of debug builds. Hardened libc++ related improvements: - The `_LIBCPP_ABI_BOUNDED_ITERATORS_IN_STD_ARRAY` ABI configuration was added, which allows storing valid bounds in `std::array::iterator` and detecting OOB accesses when the appropriate hardening mode is enabled.
-- The `_LIBCPP_ABI_BOUNDED_UNIQUE_PTR` ABI configuration was added, which allows `std::unique_ptr<T[]>` to detect out-of-bounds accesses in certain circumstances. `std::unique_ptr<T[]>` can now also detect out-of-bounds accesses for a limited set of types (non-trivially destructible types) when the ABI configuration is disabled.
-- Added ([`hardening mode`](https://developer.apple.comhttps://libcxx.llvm.org/Hardening.html#hardening)) support for `forward_list` and `bitset`. General Improvements: - `std::jthread` and `<stop_token>` are not guarded behind `-fexperimental-library` anymore
-- The `_LIBCPP_ENABLE_CXX20_REMOVED_TEMPORARY_BUFFER` macro has been added to make `std::get_temporary_buffer` and `std::return_temporary_buffer` available.
-- The `std::uncaught_exception` function was marked as deprecated since C++17 and removed since C++20. The `_LIBCPP_ENABLE_CXX20_REMOVED_UNCAUGHT_EXCEPTION` macro has been added to make `std::uncaught_exception` available in C++20 and later modes. ABI Affecting Changes: - The ABI breaks for removing undefined behavior in `std::forward_list`, `std::list`, `std::map`, `std::set`, `std::multimap`, `std::multiset`, `std::unordered_map`, `std::unordered_set`, `std::unordered_multimap` and `std::unordered_multiset` are now applied unconditionally. This only affects fancy pointers which have a different value representation when pointing at the base of an internal node type instead of the type itself. A size or alignment difference is diagnosed, but more subtle ABI breaks may result in unexpected behavior.
-- The internal structure `__compressed_pair` has been replaced with `[[no_unique_address]]`. The ABI impact is:
-- When using the Itanium ABI (most non-MSVC platforms), empty types are now placed at the beginning of the enclosing object instead of where the beginning of the `__compressed_pair` subobject was. This is only observable by checking the address of the empty allocator, equality comparator or hasher.
-- Additionally, using an overaligned empty type as an allocator, comparator or hasher in the associative containers (and only those containers) may result in the container’s object size and data layout changing beyond only the address of the empty member. - The changes for `ranges::zip_view` from ([`P2165R4`](https://developer.apple.comhttps://wg21.link/P2165R4)) have been implemented. This changes the element type of `zip_view` from a `std::pair` to a `std::tuple` in some cases. This is technically an ABI break, however since `zip_view` is generally not an ABI sensitive type, we don’t expect users to encounter any issues and we don’t provide a way to change this behavior, which would make libc++ non-conforming.  (151879824)
+- The following C++26 features have been implemented:
+
+  - `constexpr` placement new ([P2747R2](https://wg21.link/P2747R2)) ([Github](https://github.com/llvm/llvm-project/issues/105427))
+  - A type trait for detecting virtual base classes ([P2985R0](https://wg21.link/P2985R0)) ([Github](https://github.com/llvm/llvm-project/issues/105432))
+
+  The following C++23 features have been implemented:
+
+  - Relaxing Ranges Just A Smidge ([P2609R3](https://wg21.link/P2609R3)) ([Github](https://github.com/llvm/llvm-project/issues/105253))
+  - A trait for implicit lifetime types ([P2674R1](https://wg21.link/P2674R1)) ([Github](https://github.com/llvm/llvm-project/issues/105259))
+  - A Standard `flat_map` ([P0429R9](https://wg21.link/P0429R9)) ([Github](https://github.com/llvm/llvm-project/issues/105190))
+
+  The following C++20 features have been implemented:
+
+  - Reviewing Deprecated Facilities of C++17 for C++20 ([P0619R4](https://wg21.link/P0619R4)) ([Github](https://github.com/llvm/llvm-project/issues/99985))
+
+  Performance and memory improvements:
+
+  - The `lexicographical_compare` and `ranges::lexicographical_compare` algorithms have been optimized for trivially equality comparable types, resulting in a performance improvement of up to 40x.
+  - The internal structure `__compressed_pair` has been replaced with `[[no_unique_address]]`, resulting in reduced compile times and smaller debug information as well as better code generation if optimizations are disabled.
+  - The `input_iterator`-pair overload of `void assign(InputIt, InputIt)` has been optimized for `std::vector`, resulting in a performance improvement of up to 2x for trivial element types (e.g., `std::vector<int>`), and up to 3.4x for non-trivial element types (e.g., `std::vector<std::vector<int>>`).
+  - The `input_iterator`-pair overload of `iterator insert(const_iterator, InputIt, InputIt)` has been optimized for `std::vector`, resulting in a performance improvement of up to 10x for `std::vector<int>`, and up to 2.3x for `std::vector<std::vector<int>>`.
+  - `std::stable_sort` uses radix sort for integral types now, which can improve the performance up to 10 times, depending on type of sorted elements and the initial state of the sorted array.
+  - Reduced the amount of debug information generated for internal typedefs. This reduces the size of debug builds.
+
+  Hardened libc++ related improvements:
+
+  - The `_LIBCPP_ABI_BOUNDED_ITERATORS_IN_STD_ARRAY` ABI configuration was added, which allows storing valid bounds in `std::array::iterator` and detecting OOB accesses when the appropriate hardening mode is enabled.
+  - The `_LIBCPP_ABI_BOUNDED_UNIQUE_PTR` ABI configuration was added, which allows `std::unique_ptr<T[]>` to detect out-of-bounds accesses in certain circumstances. `std::unique_ptr<T[]>` can now also detect out-of-bounds accesses for a limited set of types (non-trivially destructible types) when the ABI configuration is disabled.
+  - Added ([hardening mode](https://libcxx.llvm.org/Hardening.html#hardening)) support for `forward_list` and `bitset`.
+
+  General Improvements:
+
+  - `std::jthread` and `<stop_token>` are not guarded behind `-fexperimental-library` anymore
+  - The `_LIBCPP_ENABLE_CXX20_REMOVED_TEMPORARY_BUFFER` macro has been added to make `std::get_temporary_buffer` and `std::return_temporary_buffer` available.
+  - The `std::uncaught_exception` function was marked as deprecated since C++17 and removed since C++20. The `_LIBCPP_ENABLE_CXX20_REMOVED_UNCAUGHT_EXCEPTION` macro has been added to make `std::uncaught_exception` available in C++20 and later modes.
+
+  ABI Affecting Changes:
+
+  - The ABI breaks for removing undefined behavior in `std::forward_list`, `std::list`, `std::map`, `std::set`, `std::multimap`, `std::multiset`, `std::unordered_map`, `std::unordered_set`, `std::unordered_multimap` and `std::unordered_multiset` are now applied unconditionally. This only affects fancy pointers which have a different value representation when pointing at the base of an internal node type instead of the type itself. A size or alignment difference is diagnosed, but more subtle ABI breaks may result in unexpected behavior.
+  - The internal structure `__compressed_pair` has been replaced with `[[no_unique_address]]`. The ABI impact is:
+  - When using the Itanium ABI (most non-MSVC platforms), empty types are now placed at the beginning of the enclosing object instead of where the beginning of the `__compressed_pair` subobject was. This is only observable by checking the address of the empty allocator, equality comparator or hasher.
+  - Additionally, using an overaligned empty type as an allocator, comparator or hasher in the associative containers (and only those containers) may result in the container’s object size and data layout changing beyond only the address of the empty member.
+
+    - The changes for `ranges::zip_view` from ([P2165R4](https://wg21.link/P2165R4)) have been implemented. This changes the element type of `zip_view` from a `std::pair` to a `std::tuple` in some cases. This is technically an ABI break, however since `zip_view` is generally not an ABI sensitive type, we don’t expect users to encounter any issues and we don’t provide a way to change this behavior, which would make libc++ non-conforming.  (151879824)
 
 ###### Known Issues
 
 - You may notice an ABI break of several Standard Library containers under very specific circumstances. Specifically, there are two ways to notice this ABI break:
 
 1. The size of std::unordered_{map,set,multimap,multiset} and std::deque changes when instantiated with an allocator type that is empty and contains a base class that is the same across rebound allocator instantiations (e.g. Allocator and Allocator are both empty and contain the same base class).
-2. The size of any user-defined type (say Foo) that has all of the following properties changes: - Foo contains a member of type std::unordered_{map,set,multimap,multiset}, std::deque, std::map, std::set, std::multimap, std::multiset, std::list or std::vector, and
-- Foo passes an empty allocator, comparator or hasher type to that container, and
-- Foo has a member of that same empty allocator, comparator or hasher type inside the enclosing type Foo, and
-- that member is either marked with [[no_unique_address]] or optimized out via the EBO (empty base optimization) technique. You can read more details about this issue here: https://github.com/llvm/llvm-project/issues/154985  (159096032)
+2. The size of any user-defined type (say Foo) that has all of the following properties changes:
+
+   - Foo contains a member of type std::unordered_{map,set,multimap,multiset}, std::deque, std::map, std::set, std::multimap, std::multiset, std::list or std::vector, and
+   - Foo passes an empty allocator, comparator or hasher type to that container, and
+   - Foo has a member of that same empty allocator, comparator or hasher type inside the enclosing type Foo, and
+   - that member is either marked with [[no_unique_address]] or optimized out via the EBO (empty base optimization) technique. You can read more details about this issue here: https://github.com/llvm/llvm-project/issues/154985  (159096032)
 
 ###### Deprecations
 
-- The following items have been deprecated or removed: - The `_LIBCPP_ENABLE_ASSERTIONS` macro that was used to enable the safe mode has been removed in LLVM 20. Please use ([`hardening mode`](https://developer.apple.comhttps://libcxx.llvm.org/Hardening.html#hardening)) instead.
-- Support for the C++20 synchronization library (`<barrier>`, `<latch>`, `atomic::wait`, etc.) has been removed in language modes prior to C++20. If you are using these features prior to C++20, you will need to update to `-std=c++20`.
-- The relational operators for `std::chrono::weekday` have been removed entirely, and the `_LIBCPP_ENABLE_REMOVED_WEEKDAY_RELATIONAL_OPERATORS` macro is now ignored.
-- The `_LIBCPP_ENABLE_REMOVED_ALLOCATOR_CONST` macro no longer has any effect. `std::allocator<const T>` is not supported as an extension anymore, please migrate any code that uses e.g. `std::vector<const T>` to be standards conforming.
-- Non-conforming member typedefs `base`, `iterator`, `const_iterator`, `size_type`, `difference_type`, and `const_reference` of `std::bitset`, and member typedef `base` of `std::forward_list` and `std::list` are removed. Previously, these member typedefs (except `const_reference`) were private but could cause ambiguity in name lookup. Code that expects such ambiguity will possibly not compile in LLVM 20.
-- The function `__libcpp_verbose_abort()` is now `noexcept`, to match `std::terminate()`. (The combination of `noexcept` and `[[noreturn]]` has special significance for function effects analysis.) For backwards compatibility, the `_LIBCPP_VERBOSE_ABORT_NOT_NOEXCEPT` macro can be defined to make the function non-`noexcept`. That macro will be removed in LLVM 21.
-- `<ccomplex>`, `<cstdalign>` (previously missing), `<cstdbool>`, and `<ctgmath>` are deprecated since C++17 as specified by the standard. They, together with `<ciso646>`, are removed in C++20, but libc++ still provides these headers as an extension and only deprecates them. The `_LIBCPP_DISABLE_DEPRECATION_WARNINGS` macro can be defined to suppress deprecation for these headers.
-- The pointer safety functions `declare_reachable`, `declare_no_pointers`, `undeclare_no_pointers` and `__undeclare_reachable` have been removed from the library. These functions were never implemented in a non-trivial way, making it very unlikely that any binary depends on them.
-- Non-conforming extension `packaged_task::result_type` is deprecated. It will be removed in LLVM 21.
-- The changes for `ranges::zip_view` from ([`P2165R4`](https://developer.apple.comhttps://wg21.link/P2165R4)) have been implemented. This can lead to code assuming that `zip_view` produces `std::pair` to stop compiling now that it produces `std::tuple`. The cases are rare since `tuple` and `pair` are compatible for the most part, but this can lead to code that was previously accepted now being rejected. This is necessary for libc++ to be conforming, so we don’t provide any way to opt-out of that behavior.  (151880074)
+- The following items have been deprecated or removed:
+
+  - The `_LIBCPP_ENABLE_ASSERTIONS` macro that was used to enable the safe mode has been removed in LLVM 20. Please use ([support for hardening](https://libcxx.llvm.org/Hardening.html#hardening)) instead.
+  - Support for the C++20 synchronization library (`<barrier>`, `<latch>`, `atomic::wait`, etc.) has been removed in language modes prior to C++20. If you are using these features prior to C++20, you will need to update to `-std=c++20`.
+  - The relational operators for `std::chrono::weekday` have been removed entirely, and the `_LIBCPP_ENABLE_REMOVED_WEEKDAY_RELATIONAL_OPERATORS` macro is now ignored.
+  - The `_LIBCPP_ENABLE_REMOVED_ALLOCATOR_CONST` macro no longer has any effect. `std::allocator<const T>` is not supported as an extension anymore, please migrate any code that uses e.g. `std::vector<const T>` to be standards conforming.
+  - Non-conforming member typedefs `base`, `iterator`, `const_iterator`, `size_type`, `difference_type`, and `const_reference` of `std::bitset`, and member typedef `base` of `std::forward_list` and `std::list` are removed. Previously, these member typedefs (except `const_reference`) were private but could cause ambiguity in name lookup. Code that expects such ambiguity will possibly not compile in LLVM 20.
+  - The function `__libcpp_verbose_abort()` is now `noexcept`, to match `std::terminate()`. (The combination of `noexcept` and `[[noreturn]]` has special significance for function effects analysis.) For backwards compatibility, the `_LIBCPP_VERBOSE_ABORT_NOT_NOEXCEPT` macro can be defined to make the function non-`noexcept`. That macro will be removed in LLVM 21.
+  - `<ccomplex>`, `<cstdalign>` (previously missing), `<cstdbool>`, and `<ctgmath>` are deprecated since C++17 as specified by the standard. They, together with `<ciso646>`, are removed in C++20, but libc++ still provides these headers as an extension and only deprecates them. The `_LIBCPP_DISABLE_DEPRECATION_WARNINGS` macro can be defined to suppress deprecation for these headers.
+  - The pointer safety functions `declare_reachable`, `declare_no_pointers`, `undeclare_no_pointers` and `__undeclare_reachable` have been removed from the library. These functions were never implemented in a non-trivial way, making it very unlikely that any binary depends on them.
+  - Non-conforming extension `packaged_task::result_type` is deprecated. It will be removed in LLVM 21.
+  - The changes for `ranges::zip_view` from ([P2165R4](https://wg21.link/P2165R4)) have been implemented. This can lead to code assuming that `zip_view` produces `std::pair` to stop compiling now that it produces `std::tuple`. The cases are rare since `tuple` and `pair` are compatible for the most part, but this can lead to code that was previously accepted now being rejected. This is necessary for libc++ to be conforming, so we don’t provide any way to opt-out of that behavior.  (151880074)
 
 ##### Code Assistant
 
@@ -167,7 +216,9 @@ Also in Xcode 26:
 
 - Claude in Xcode is now available in the Intelligence settings panel, allowing users to seamlessly add their existing paid Claude account to Xcode and start using Claude Sonnet 4.  (155826755)
 - When using ChatGPT in Xcode, users can now start a new conversation with either GPT-4.1 or GPT-5, with GPT-5 set as the default.  (158342780)
-- ChatGPT in Xcode provides two model choices. “GPT-5” is optimized for quick, high-quality results, and should work well for most coding tasks. For difficult tasks, choose “GPT-5 (Reasoning)“, which spends more time thinking before responding, and can provide more accurate results for complex coding tasks. In the OpenAI API, “GPT-5” corresponds to the “minimal” reasoning level, and “GPT-5 (Reasoning)” corresponds to the “low” reasoning level.  (159135374)
+- ChatGPT in Xcode provides two model choices. “GPT-5” is optimized for quick, high-quality results, and should work well for most coding tasks. For difficult tasks, choose “GPT-5 (Reasoning)“, which spends more time thinking before responding, and can provide more accurate results for complex coding tasks.
+
+  In the OpenAI API, “GPT-5” corresponds to the “minimal” reasoning level, and “GPT-5 (Reasoning)” corresponds to the “low” reasoning level.  (159135374)
 
 ###### Resolved Issues
 
@@ -190,9 +241,11 @@ Also in Xcode 26:
 - When using coding intelligence, the model is unable to view or modify files with identical names simultaneously.   (147450585)
 - Previously deleted files may appear in the modification history as having been deleted by a recent coding assistant conversation.  (152545638)
 - Coding intelligence provides inconsistent results when modifying files that contain thousands of lines.   (152590014)
-- Users interacting with Claude in Xcode might receive an error message about their OAuth token being expired.  (159566701) (FB20014334) **Workaround:** Go to Settings → Intelligence → Claude in Xcode. Sign out. Restart Xcode. Sign back in.
+- Users interacting with Claude in Xcode might receive an error message about their OAuth token being expired.  (159566701) (FB20014334)
 
-##### Create Ml App
+  **Workaround:** Go to Settings → Intelligence → Claude in Xcode. Sign out. Restart Xcode. Sign back in.
+
+##### Create ML App
 
 ###### Deprecations
 
@@ -230,7 +283,7 @@ Also in Xcode 26:
 
 - Fixed: `#bundle` does not refer to the correct resource bundle when used from a mergeable library.  (150698070)
 
-##### Gamekit
+##### GameKit
 
 ###### New Features
 
@@ -246,7 +299,9 @@ Also in Xcode 26:
 
 ###### Known Issues
 
-- The DestinationVideo sample code doesn’t compile.  (147074640) **Workaround:** Replace `import GroupActivities` with `@preconcurrency import GroupActivities`.
+- The DestinationVideo sample code doesn’t compile.  (147074640)
+
+  **Workaround:** Replace `import GroupActivities` with `@preconcurrency import GroupActivities`.
 
 ##### Icon Composer
 
@@ -261,13 +316,21 @@ Also in Xcode 26:
 
 ###### New Features
 
-- Target chooser has been redesigned from the ground up to improve the device and process selection experience. Changes include: - Move of the control from the toolbar to the Next Recording section, unifying all the settings relevant for the next run in one place.
-- Ability to filter available set of processes to launch or attach, including apps, launch agents and daemons.
-- Quick access to modify the environment or arguments for a process being launched by Instruments.  (79987176)
-- CPU Counters have been reworked to support a performance optimization methodology called Bottleneck Analysis, which uses preset modes that provide a “guided” path to using counters. The CPU Bottlenecks template configures the counters to initially break down sustainable CPU bandwidth into four broad categories: - Useful: CPU resources were used to make forward progress in your code
-- Instruction Delivery: the CPU could not provide enough instructions for processing
-- Instruction Processing: instructions are not executing quickly due to their relative cost or data not being ready
-- Discarded: incorrect speculative execution wasted bandwidth. Each category aside from Useful has one or more further recommended modes to narrow in on instruction sequences that are preventing the CPU from executing efficiently. There are also traditional modes that measure the characteristics of executed instructions or metrics about their execution, like the number of L1 Data Cache misses. Manual mode for configuring Counters is still available and can be accessed from the instrument recording options.   (86470694)
+- Target chooser has been redesigned from the ground up to improve the device and process selection experience. Changes include:
+
+  - Move of the control from the toolbar to the Next Recording section, unifying all the settings relevant for the next run in one place.
+  - Ability to filter available set of processes to launch or attach, including apps, launch agents and daemons.
+  - Quick access to modify the environment or arguments for a process being launched by Instruments.  (79987176)
+- CPU Counters have been reworked to support a performance optimization methodology called Bottleneck Analysis, which uses preset modes that provide a “guided” path to using counters. The CPU Bottlenecks template configures the counters to initially break down sustainable CPU bandwidth into four broad categories:
+
+  - Useful: CPU resources were used to make forward progress in your code
+  - Instruction Delivery: the CPU could not provide enough instructions for processing
+  - Instruction Processing: instructions are not executing quickly due to their relative cost or data not being ready
+  - Discarded: incorrect speculative execution wasted bandwidth.
+
+    Each category aside from Useful has one or more further recommended modes to narrow in on instruction sequences that are preventing the CPU from executing efficiently. There are also traditional modes that measure the characteristics of executed instructions or metrics about their execution, like the number of L1 Data Cache misses.
+
+    Manual mode for configuring Counters is still available and can be accessed from the instrument recording options.   (86470694)
 - Power Profiler is a new instrument designed to visualize system power usage and the power impact of an application on different subsystems like CPU, GPU or networking. To use the tool, drag it from the instruments library and record a trace on an iOS or iPadOS device. Process metrics are only present when using “Launch” or “Attach” recording modes in Instruments. Instruments also supports analysis of traces taken on-device using the Power Profiler feature in the Developer settings. To visualize captured trace, open the resulting .atrc file in Instruments, which will present both power data and CPU samples captured alongside.  (135759149)
 - The SwiftUI template has been updated with a next-generation SwiftUI instrument. The new instrument captures the duration of all of the updates SwiftUI performs, making it easy to identify long updates that may be negatively impacting app performance. It also tracks the causes of each update, allowing you to understand why view bodies are running, using the new Cause & Effect Graph.  (137637030)
 - Timeline content tooltips are now rendered in multiple lines when applicable.  (139212962)
@@ -362,7 +425,7 @@ Also in Xcode 26:
 - Metal 4 Sparse resources are not supported in Metal Debugger.  (136326816)
 - Shader Debugging in Metal Debugger is not available for Metal 4.  (136626557)
 
-##### Objective C Runtime
+##### Objective-C Runtime
 
 ###### New Features
 
@@ -430,7 +493,7 @@ Also in Xcode 26:
 - Fixed: The Send to Device toolbar item down arrow does not draw correctly.   (147957053)
 - Fixed: For new Reality Composer Pro projects, in the issue navigator you may see an error such as “Package realitykitcontent is using Swift tools version 6.2.0 but the installed version is 6.0.0.”  (152502442)
 
-##### Realitykit
+##### RealityKit
 
 ###### New Features
 
@@ -441,7 +504,7 @@ Also in Xcode 26:
 
 - Fixed: `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
 
-##### Scenekit
+##### SceneKit
 
 ###### New Features
 
@@ -455,8 +518,8 @@ Also in Xcode 26:
 
 ###### New Features
 
-- Xcode now provides an “Enhanced Security” extension template, which you can use to separate sensitive calculations, such as handling data from untrusted sources, into an extension that the system runs as a separate process from your app. For more information see [`Creating enhanced security helper extensions`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/creating-enhanced-security-helper-extensions).  (141308470)
-- Xcode now provides an “Enhanced Security” capability, which enables additional runtime and compile-time protections for your application and builds it with pointer authentication enabled. For more information see [`Enabling enhanced security for your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).  (143278278)
+- Xcode now provides an “Enhanced Security” extension template, which you can use to separate sensitive calculations, such as handling data from untrusted sources, into an extension that the system runs as a separate process from your app. For more information see [Creating enhanced security helper extensions](../Xcode/creating-enhanced-security-helper-extensions.md).  (141308470)
+- Xcode now provides an “Enhanced Security” capability, which enables additional runtime and compile-time protections for your application and builds it with pointer authentication enabled. For more information see [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md).  (143278278)
 - Clang now supports a language extension for C, `-fbounds-safety`,  that guarantees bounds safety. The extension also provides bounds annotations that you can use to specify bounds information for pointers and arrays. The compiler informs you where to add bounds annotations through errors and warnings and automatically inserts guaranteed bounds checks at run time. To enable this extension, set the `ENABLE_CLANG_BOUNDS_SAFETY` build setting to `YES`. For more information see -fbounds-safety: Enforcing bounds safety for C﻿.  (149099879)
 - Clang now supports a strict programming model that guarantees bounds safety in C++ by rejecting raw pointer arithmetic and requiring the use of hardened C++ Standard Library APIs for buffer manipulation. To enable this mode set the `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` build setting to `YES`.  (150517840)
 
@@ -519,46 +582,64 @@ Also in Xcode 26:
 - Fixed: Some incorrect uses of Span and MutableSpan do not produce compile errors. This may result in unexpected program behavior.  (150275147)
 - Fixed: Some incorrect uses of Span and MutableSpan do not produce compile errors. This may result in unexpected program behavior.  (150403948)
 
-##### Swift Interoperability with Cc++
+##### Swift Interoperability with C/C++
 
 ###### New Features
 
 - Swift compiler now automatically infers `SWIFT_SHARED_REFERENCE` annotation for C++ types inheriting from a base that is annotated with  `SWIFT_SHARED_REFERENCE`. The derived type is imported as a Swift class or reference-counted type with the same `retain` and `release` operations as the base type.  (97914474)
-- You can now annotate C and C++ functions with bounds and lifetime annotations that enable Swift to import them without the need for unsafe boilerplate. This feature is currently experimental. To enable it, add the `-enable-experimental-feature SafeInteropWrappers` to your `OTHER_SWIFT_FLAGS` build setting. Add `__noescape` to a C or C++ function parameter to indicate that the parameter doesn’t escape the function. If you annotate a parameter of `std::span` type with `__noescape`, the compiler generates a safe overload that directly takes a Span in Swift. Add `__lifetimebound` on a C or C++ function parameter to indicate that the return value of the function does not outlive the objects referred to by that parameter. If you annotate a parameter with `__lifetimebound` and the return value is of `std::span` type, the compiler will generate a safe overload that directly returns a Span. You can annotate raw C and C++ pointers with these lifetime annotation and also with bounds annotations, such as `__counted_by(N)`, which indicate that the raw pointer points to memory containing at least `N` elements. If you add both a lifetime annotation and a bounds annotation to a raw pointer in a function parameter, Swift will import it as a Span. Here is an example: ```None
-  // C/C++
-  #include <lifetimebound.h>
-  #include <ptrcheck.h>
-  void initializeBuffer(int * __counted_by(len) p __noescape, size_t len);
-         
-  // Unsafe overload in Swift
-  func initializeBuffer(_ p: UnsafeMutablePointer<CInt>, _ len: Int)
-         
-  // Safe overload in Swift
-  func initializeBuffer(_ p: inout MutableSpan<CInt>)
-``` Note that the safe overload of initializeBuffer doesn’t contain a separate len parameter because MutableSpan already contains its count. Similarly, if you annotate a parameter with  `__lifetimebound` and annotate a function return type with a bounds annotation, Swift will import the return type as a Span. For `void *` or pointers to type with an unknown size, you can use the `__sized_by(N)`  bounds annotation which indicates that the pointer points to memory of at least `N` bytes.  (97942270)
+- You can now annotate C and C++ functions with bounds and lifetime annotations that enable Swift to import them without the need for unsafe boilerplate. This feature is currently experimental. To enable it, add the `-enable-experimental-feature SafeInteropWrappers` to your `OTHER_SWIFT_FLAGS` build setting.
+
+  Add `__noescape` to a C or C++ function parameter to indicate that the parameter doesn’t escape the function. If you annotate a parameter of `std::span` type with `__noescape`, the compiler generates a safe overload that directly takes a Span in Swift.
+
+  Add `__lifetimebound` on a C or C++ function parameter to indicate that the return value of the function does not outlive the objects referred to by that parameter. If you annotate a parameter with `__lifetimebound` and the return value is of `std::span` type, the compiler will generate a safe overload that directly returns a Span.
+
+  You can annotate raw C and C++ pointers with these lifetime annotation and also with bounds annotations, such as `__counted_by(N)`, which indicate that the raw pointer points to memory containing at least `N` elements. If you add both a lifetime annotation and a bounds annotation to a raw pointer in a function parameter, Swift will import it as a Span. Here is an example:
+
+  ```
+    // C/C++
+    #include <lifetimebound.h>
+    #include <ptrcheck.h>
+    void initializeBuffer(int * __counted_by(len) p __noescape, size_t len);
+           
+    // Unsafe overload in Swift
+    func initializeBuffer(_ p: UnsafeMutablePointer<CInt>, _ len: Int)
+           
+    // Safe overload in Swift
+    func initializeBuffer(_ p: inout MutableSpan<CInt>)
+  ```
+
+  Note that the safe overload of initializeBuffer doesn’t contain a separate len parameter because MutableSpan already contains its count.
+
+  Similarly, if you annotate a parameter with  `__lifetimebound` and annotate a function return type with a bounds annotation, Swift will import the return type as a Span.
+
+  For `void *` or pointers to type with an unknown size, you can use the `__sized_by(N)`  bounds annotation which indicates that the pointer points to memory of at least `N` bytes.  (97942270)
 - Constructors of C++ `SWIFT_SHARED_REFERENCE` types are now callable from Swift as initializers, allowing these types to be constructed directly from Swift.  (131557219)
 - Objective-C and Objective-C++ APIs that return C++ `SWIFT_SHARED_REFERENCE` types can now be annotated with `SWIFT_RETURNS_RETAINED` or `SWIFT_RETURNS_UNRETAINED` annotations.  (135360972)
 - C++ classes can be annotated with `SWIFT_PRIVATE_FILEID` to allow Swift extensions of those classes to access their `private` and `protected` members. This annotation is defined in the `swift/bridging` header and takes a fileID as its argument (e.g., `SWIFT_PRIVATE_FILEID("MyModule/MyFile.swift")`). For C++ classes with this annotation, non-`public` members are treated as if they were defined as `private` in the Swift source file designated by the fileID.  (137764620)
 - Objective-C and Objective-C++ functions and methods that return C++ `SWIFT_SHARED_REFERENCE` types can now use the new `SwiftReturnOwnership:` API Notes attribute to specify ownership. Set the value to `retained` or `unretained` to apply the corresponding `SWIFT_RETURNS_RETAINED` or `SWIFT_RETURNS_UNRETAINED` annotation.  (142504115)
-- You can now annotate function parameters and return values of clang modules with bounds attributes using APINotes. This lets you create safe Swift interfaces when using the SafeInteropWrappers feature without modifying the headers of external modules. Example: ```None
- // C header
- void foo(int * p, size_t len);
- void * bar(size_t size, size_t count);
- 
- // APINotes
- Name: MyBoundsModule
- Functions:
-   - Name: foo
-     Parameters:
-       - Position: 0
-         BoundsSafety:
-           Kind: counted_by
-           BoundedBy: "len"
-   - Name: bar
-     BoundsSafety:
-       Kind: sized_by
-       BoundedBy: "size * count"
-``` (143701027)
+- You can now annotate function parameters and return values of clang modules with bounds attributes using APINotes. This lets you create safe Swift interfaces when using the SafeInteropWrappers feature without modifying the headers of external modules. Example:
+
+  ```
+   // C header
+   void foo(int * p, size_t len);
+   void * bar(size_t size, size_t count);
+   
+   // APINotes
+   Name: MyBoundsModule
+   Functions:
+     - Name: foo
+       Parameters:
+         - Position: 0
+           BoundsSafety:
+             Kind: counted_by
+             BoundedBy: "len"
+     - Name: bar
+       BoundsSafety:
+         Kind: sized_by
+         BoundedBy: "size * count"
+  ```
+
+  (143701027)
 - The `SWIFT_RETURNS_RETAINED` and `SWIFT_RETURNS_UNRETAINED` annotations can now be applied to C++ APIs with templated return types.  (143732201)
 - C++ `std::string` now conforms to Swift `ExpressibleByStringInterpolation`  (147249169)
 - The Swift compiler no longer emits a warning for C++ functions and methods that return `SWIFT_SHARED_REFERENCE` types without an explicit `SWIFT_RETURNS_RETAINED` or `SWIFT_RETURNS_UNRETAINED` annotation.  (150937617)
@@ -586,7 +667,7 @@ Also in Xcode 26:
 
 ###### New Features
 
-- `swift test` now accepts an `--attachments-path` argument for specifying a directory where attachments should be saved when using Swift Testing. See [`ST-0009: Attachments`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0009-attachments.md).  (147753584)
+- `swift test` now accepts an `--attachments-path` argument for specifying a directory where attachments should be saved when using Swift Testing. See [ST-0009: Attachments](https://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0009-attachments.md).  (147753584)
 
 ###### Resolved Issues
 
@@ -623,14 +704,14 @@ Also in Xcode 26:
 
 - Swift Testing now supports exit tests which allow you to test code that calls `precondition()` or `fatalError()` or might otherwise terminate the test process.  (126206192)
 - New UI Test Recording experience. To start recording UI interactions, navigate to the test case function and click the record button at the edge of the editor.  (135593667)
-- Swift Testing now supports attaching files or data to help diagnose test failures. Attachments are shown in Xcode’s Test Report and included in .xcresult bundles. ([`ST-0009: Attachments`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0009-attachments.md))  (139098583)
+- Swift Testing now supports attaching files or data to help diagnose test failures. Attachments are shown in Xcode’s Test Report and included in .xcresult bundles. ([ST-0009](https://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0009-attachments.md))  (139098583)
 - Runtime issue detection in Swift Testing and XCTest.  When running tests through Xcode and xcodebuild users will be notified of runtime issues that occur during their tests.  This detection can be configured in the Test Plan by either promoting the runtime issues to failures or turning them off.  (141704793)
 - Swift Testing’s `ConditionTrait` type now includes an `evaluate()` method which evaluates its underlying condition, allowing these traits to be composed more easily. (ST-0010)  (142690932)
 - The total number of arguments passed to a parameterized Swift Testing test function is now shown in its console output message when it finishes.  (144250498)
 - The `xcodebuild build-for-testing` command now includes information about disabled test plan configurations in generated `.xctestrun` files. Disabled test plan configurations are not run by default, but may be run selectively by passing the `-only-test-configuration <name>` flag one or more times to `xcodebuild test-without-building`.  (144809893)
 - When verbose output is enabled, a console message will be printed each time an invocation of a parameterized Swift Testing test function finishes including its pass/fail status and the total number of issues it recorded.  (146863942)
 - API added to XCTest for creating non failing issues.  Test Authors can create a `XCTIssue` with a severity level as warning in order to record a non failing issue.  In order to handle these non failing issues we also added API on `XCTIssue` to determine if the issue `isFailure`.  (148547346)
-- Swift Testing includes a new trait for customizing how recorded issues are handled. To transform or observe the issues recorded by a test or suite, apply `.compactMapIssues { … }`, or to conditionally suppress issues, apply `.filterIssues { … }`. ([`ST-0011`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0011-issue-handling-traits.md))  (150057037)
+- Swift Testing includes a new trait for customizing how recorded issues are handled. To transform or observe the issues recorded by a test or suite, apply `.compactMapIssues { … }`, or to conditionally suppress issues, apply `.filterIssues { … }`. ([ST-0011](https://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0011-issue-handling-traits.md))  (150057037)
 
 ###### Resolved Issues
 
@@ -646,7 +727,7 @@ Also in Xcode 26:
 - Fixed: Using a Swift.org toolchain in Xcode may cause build errors in targets that use Swift Testing due to an incompatible macro plugin being selected.  (151799859)
 - Fixed: When an expectation such as `#expect(...)` has `try` or `await` keywords before it, code comments on the preceding lines are now collected.  (151825393)
 - Fixed: The `@Test` macro no longer produces a compilation error in contexts where there is a concrete type named `Actor`.  (152039067)
-- Fixed: Swift Testing tests and suites whose names use raw identifiers (introduced in [`SE-0451: Raw identifiers`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/0451-escaped-identifiers.md)) can now be run selectively via Xcode’s Test navigator or source editor diamonds, as well as included or excluded in test plans.  (152524780)
+- Fixed: Swift Testing tests and suites whose names use raw identifiers (introduced in [SE-0451: Raw identifiers](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0451-escaped-identifiers.md)) can now be run selectively via Xcode’s Test navigator or source editor diamonds, as well as included or excluded in test plans.  (152524780)
 - Fixed: When observing the standard output or standard error stream of an exit test, the `standardOutputContent` and `standardErrorContent` properties of `ExitTest.Result`, respectively, no longer contain unrelated logging from XCTest.  (153326967) (FB18033664)
 - Fixed: When applying the `.serialized` trait to a parameterized Swift Testing `@Test` function directly, its cases will be executed serially.  (154529146)
 
@@ -668,21 +749,22 @@ Also in Xcode 26:
 
 ## See Also
 
-- [Xcode 26.6 Release Notes](xcode-26_6-release-notes.md)
+### Xcode 26
+- [Xcode 26.6 Release Notes](./xcode-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.5 Release Notes](xcode-26_5-release-notes.md)
+- [Xcode 26.5 Release Notes](./xcode-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.4.1 Release Notes](xcode-26_4_1-release-notes.md)
+- [Xcode 26.4.1 Release Notes](./xcode-26_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.4 Release Notes](xcode-26_4-release-notes.md)
+- [Xcode 26.4 Release Notes](./xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.3 Release Notes](xcode-26_3-release-notes.md)
+- [Xcode 26.3 Release Notes](./xcode-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
+- [Xcode 26.2 Release Notes](./xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.1.1 Release Notes](xcode-26_1-release-notes.md)
+- [Xcode 26.1.1 Release Notes](./xcode-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.0.1 Release Notes](xcode-26_0_1-release-notes.md)
+- [Xcode 26.0.1 Release Notes](./xcode-26_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

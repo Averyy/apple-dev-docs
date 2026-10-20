@@ -1,7 +1,8 @@
 # init(persistentStoreCoordinator:configurationName:at:options:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a store initialized with the given arguments.
 
@@ -10,7 +11,7 @@ Returns a store initialized with the given arguments.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Returns a store initialized with the given arguments.
 init(persistentStoreCoordinator root: NSPersistentStoreCoordinator?, configurationName name: String?, at url: URL, options: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithPersistentStoreCoordinator:(NSPersistentStoreCoordinator *) root configurationName:(NSString *) name URL:(NSURL *) url options:(NSDictionary *) options;
+```
+
 #### Return Value
 
 A new store object, associated with `coordinator`, that represents a persistent store at url using the options in `options` and—if it is not `nil`—the managed object model configuration `configurationName`.
 
 #### Discussion
 
-You must ensure that you load metadata during initialization and set it using [`metadata`](nspersistentstore/metadata.md).
+You must ensure that you load metadata during initialization and set it using [`metadata`](./metadata.md).
 
 ##### Special Considerations
 
@@ -37,15 +42,16 @@ This is the designated initializer for persistent stores.
 - `root`: A persistent store coordinator.
 - `name`: The name of the managed object model configuration to use. Pass `nil` if you do not want to specify a configuration.
 - `url`: The URL of the store to load.
-- `options`: A dictionary containing configuration options. See [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) for a list of key names for options in this dictionary.
+- `options`: A dictionary containing configuration options. See [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md) for a list of key names for options in this dictionary.
 
 ## See Also
 
-- [var metadata: [String : Any]!](nspersistentstore/metadata.md)
+### Related Documentation
+- [var metadata: [String : Any]!](./metadata.md)
   The metadata for the persistent store.
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [Atomic Store Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AtomicStore_Concepts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004521)
-- [Incremental Store Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/IncrementalStorePG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010706)
+- [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
+- [Atomic Store Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AtomicStore_Concepts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004521)
+- [Incremental Store Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/IncrementalStorePG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010706)
 
 
 ---

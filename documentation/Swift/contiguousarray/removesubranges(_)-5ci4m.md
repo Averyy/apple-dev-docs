@@ -1,7 +1,8 @@
 # removeSubranges(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the elements at the given indices.
 
@@ -20,6 +21,8 @@ Removes the elements at the given indices.
 mutating func removeSubranges(_ subranges: RangeSet<Self.Index>)
 ```
 
+Available when `Self` conforms to `RangeReplaceableCollection`.
+
 #### Discussion
 
 For example, this code sample finds the indices of all the negative numbers in the array, and then removes those values.
@@ -32,7 +35,7 @@ numbers.removeSubranges(negativeIndices)
 // numbers == [5, 7, 11, 2, 6]
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

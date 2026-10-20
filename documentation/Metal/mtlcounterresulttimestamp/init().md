@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default timestamp result.
 
@@ -21,11 +22,12 @@ init()
 
 #### Discussion
 
-Metal creates [`MTLCounterResultTimestamp`](mtlcounterresulttimestamp.md) instances for you when you resolve the counter set’s data (see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
+Metal creates [`MTLCounterResultTimestamp`](../mtlcounterresulttimestamp.md) instances for you when you resolve the counter set’s data (see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
 
 ## See Also
 
-- [init(timestamp: UInt64)](mtlcounterresulttimestamp/init(timestamp:).md)
+### Swift support
+- [init(timestamp: UInt64)](./init%28timestamp%29.md)
   Creates a timestamp result from a value.
 
 

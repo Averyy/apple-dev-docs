@@ -1,7 +1,8 @@
 # kSKDocumentStateNotIndexed
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the document is not indexed.
 

@@ -1,7 +1,8 @@
 # Core Transferable
 
 **Framework**: Core Transferable  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Declare a transfer representation for your model types to participate in system sharing and data transfer operations.
 
@@ -18,7 +19,7 @@ Declare a transfer representation for your model types to participate in system 
 
 Core Transferable provides a modern, Swift-focused approach to make your types available in data transfer and sharing contexts. Use transferable types for system interactions that move or share data, like the Share button, drag and drop, and copy and paste.
 
-Core Transferable defines a core protocol, [`Transferable`](transferable.md), that you adopt in your app’s model types. Provide a transfer representation by composing one or more of the framework’s built-in [`TransferRepresentation`](transferrepresentation.md) types. Use `Transferable` types together with system frameworks like SwiftUI — that include types such as [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) and [`PasteButton`](https://developer.apple.com/documentation/swiftui/pastebutton) — to share and paste transferable data. SwiftUI also includes view modifiers like [`draggable(_:)`](https://developer.apple.com/documentation/swiftui/view/draggable(_:)) and [`dropDestination(for:action:isTargeted:)`](https://developer.apple.com/documentation/swiftui/view/dropdestination(for:action:istargeted:)) that support drag-and-drop interactions using `Transferable`. System types like [`String`](https://developer.apple.com/documentation/swift/string), [`Data`](https://developer.apple.com/documentation/foundation/data), [`URL`](https://developer.apple.com/documentation/foundation/url), and [`Image`](https://developer.apple.com/documentation/swiftui/image) already conform to `Transferable`.
+Core Transferable defines a core protocol, [`Transferable`](./transferable.md), that you adopt in your app’s model types. Provide a transfer representation by composing one or more of the framework’s built-in [`TransferRepresentation`](./transferrepresentation.md) types. Use `Transferable` types together with system frameworks like SwiftUI — that include types such as [`ShareLink`](../SwiftUI/sharelink.md) and [`PasteButton`](../SwiftUI/pastebutton.md) — to share and paste transferable data. SwiftUI also includes view modifiers like [`draggable(_:)`](../SwiftUI/view/draggable%28_%29.md) and [`dropDestination(for:action:isTargeted:)`](../SwiftUI/view/dropdestination%28for,action,istargeted%29.md) that support drag-and-drop interactions using `Transferable`. System types like [`String`](../Swift/string.md), [`Data`](../Foundation/data.md), [`URL`](../Foundation/url.md), and [`Image`](../SwiftUI/image.md) already conform to `Transferable`.
 
 You can send or receive `Transferable` items within an app, among a collection of your own apps, or between your apps and other apps that share an understanding of how to import or export a known data format. The following shows an example model type, `Note`, that’s extended to conform to `Transferable`:
 
@@ -52,38 +53,38 @@ extension UTType {
 }
 ```
 
-Use Core Transferable along with the collection of common file and data transfer identifiers from the [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers) framework to take advantage of system interactions that move and share data using standard file types or your own custom-defined file types.
+Use Core Transferable along with the collection of common file and data transfer identifiers from the [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md) framework to take advantage of system interactions that move and share data using standard file types or your own custom-defined file types.
 
 ## Topics
 
 ### Essentials
-- [protocol Transferable](transferable.md)
+- [protocol Transferable](./transferable.md)
   A protocol that describes how a type interacts with transport APIs such as drag and drop or copy and paste.
-- [protocol TransferRepresentation](transferrepresentation.md)
+- [protocol TransferRepresentation](./transferrepresentation.md)
   A declarative description of the process of importing and exporting a transferable item.
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
   Define a custom representation for your data using a combination of built-in types.
 ### Data transfer
-- [struct CodableRepresentation](codablerepresentation.md)
+- [struct CodableRepresentation](./codablerepresentation.md)
   A transfer representation for types that participate in Swift’s protocols for encoding and decoding.
-- [struct DataRepresentation](datarepresentation.md)
+- [struct DataRepresentation](./datarepresentation.md)
   A transfer representation for types that provide their own binary data conversion.
 ### File transfer
-- [struct FileRepresentation](filerepresentation.md)
+- [struct FileRepresentation](./filerepresentation.md)
   A transfer representation for types that transfer as a file URL.
-- [struct SentTransferredFile](senttransferredfile.md)
+- [struct SentTransferredFile](./senttransferredfile.md)
   A description of a file from the perspective of the sender.
-- [struct ReceivedTransferredFile](receivedtransferredfile.md)
+- [struct ReceivedTransferredFile](./receivedtransferredfile.md)
   A description of a file from the perspective of the receiver.
 ### Transfer customization
-- [struct ProxyRepresentation](proxyrepresentation.md)
+- [struct ProxyRepresentation](./proxyrepresentation.md)
   A transfer representation that uses another type’s transfer representation as its own.
-- [struct TransferRepresentationVisibility](transferrepresentationvisibility.md)
+- [struct TransferRepresentationVisibility](./transferrepresentationvisibility.md)
   The visibility levels that specify the kinds of apps and processes that can see an item in transit.
 ### Supporting types
-- [struct TransferRepresentationBuilder](transferrepresentationbuilder.md)
+- [struct TransferRepresentationBuilder](./transferrepresentationbuilder.md)
   Creates a transfer representation by composing existing transfer representations.
-- [struct TupleTransferRepresentation](tupletransferrepresentation.md)
+- [struct TupleTransferRepresentation](./tupletransferrepresentation.md)
   A wrapper type for tuples that contain transfer representations.
 
 

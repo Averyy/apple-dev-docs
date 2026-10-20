@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -11,7 +12,9 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.1 (renamed: compactMap(_:))
+
+> **Deprecated**: Please use compactMap(_:) for the case where closure returns an optional value
 
 ## Declaration
 

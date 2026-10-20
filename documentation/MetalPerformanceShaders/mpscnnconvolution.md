@@ -1,7 +1,8 @@
 # MPSCNNConvolution
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A convolution kernel that convolves the input image with a set of filters, with each producing one feature map in the output image.
 
@@ -19,89 +20,94 @@ A convolution kernel that convolves the input image with a set of filters, with 
 class MPSCNNConvolution
 ```
 
+```objc
+@interface MPSCNNConvolution : MPSCNNKernel
+```
+
 #### Overview
 
-The attributes of a convolution operation are described by an [`MPSCNNConvolutionDescriptor`](mpscnnconvolutiondescriptor.md) object.
+The attributes of a convolution operation are described by an [`MPSCNNConvolutionDescriptor`](./mpscnnconvolutiondescriptor.md) object.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnconvolution/init(coder:device:).md)
-- [init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, kernelWeights: UnsafePointer<Float>, biasTerms: UnsafePointer<Float>?, flags: MPSCNNConvolutionFlags)](mpscnnconvolution/init(device:convolutiondescriptor:kernelweights:biasterms:flags:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnconvolution/init%28coder,device%29.md)
+- [init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, kernelWeights: UnsafePointer<Float>, biasTerms: UnsafePointer<Float>?, flags: MPSCNNConvolutionFlags)](./mpscnnconvolution/init%28device,convolutiondescriptor,kernelweights,biasterms,flags%29.md)
   Initializes a convolution kernel.
-- [class MPSCNNConvolutionDescriptor](mpscnnconvolutiondescriptor.md)
+- [class MPSCNNConvolutionDescriptor](./mpscnnconvolutiondescriptor.md)
   A description of the attributes of a convolution kernel.
-- [enum MPSCNNConvolutionFlags](mpscnnconvolutionflags.md)
+- [enum MPSCNNConvolutionFlags](./mpscnnconvolutionflags.md)
   Options used to control how kernel weights are stored and used in the CNN kernels
-- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolution/init(device:weights:).md)
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](./mpscnnconvolution/init%28device,weights%29.md)
+- [protocol MPSCNNConvolutionDataSource](./mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 ### Instance Properties
-- [var inputFeatureChannels: Int](mpscnnconvolution/inputfeaturechannels.md)
+- [var inputFeatureChannels: Int](./mpscnnconvolution/inputfeaturechannels.md)
   The number of feature channels per pixel in the input image.
-- [var outputFeatureChannels: Int](mpscnnconvolution/outputfeaturechannels.md)
+- [var outputFeatureChannels: Int](./mpscnnconvolution/outputfeaturechannels.md)
   The number of feature channels per pixel in the output image.
-- [var groups: Int](mpscnnconvolution/groups.md)
+- [var groups: Int](./mpscnnconvolution/groups.md)
   The number of groups that the input and output channels are divided into.
-- [var subPixelScaleFactor: Int](mpscnnconvolution/subpixelscalefactor.md)
-- [var neuron: MPSCNNNeuron?](mpscnnconvolution/neuron.md)
+- [var subPixelScaleFactor: Int](./mpscnnconvolution/subpixelscalefactor.md)
+- [var neuron: MPSCNNNeuron?](./mpscnnconvolution/neuron.md)
   The neuron filter to be applied as part of the convolution operation.
-- [class MPSCNNNeuron](mpscnnneuron.md)
+- [class MPSCNNNeuron](./mpscnnneuron.md)
   A filter that applies a neuron activation function.
-- [var neuronType: MPSCNNNeuronType](mpscnnconvolution/neurontype.md)
-- [enum MPSCNNNeuronType](mpscnnneurontype.md)
+- [var neuronType: MPSCNNNeuronType](./mpscnnconvolution/neurontype.md)
+- [enum MPSCNNNeuronType](./mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
-- [var neuronParameterA: Float](mpscnnconvolution/neuronparametera.md)
-- [var neuronParameterB: Float](mpscnnconvolution/neuronparameterb.md)
-- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](mpscnnconvolution/accumulatorprecisionoption.md)
-- [var channelMultiplier: Int](mpscnnconvolution/channelmultiplier.md)
-- [var dataSource: any MPSCNNConvolutionDataSource](mpscnnconvolution/datasource.md)
-- [var fusedNeuronDescriptor: MPSNNNeuronDescriptor?](mpscnnconvolution/fusedneurondescriptor.md)
-- [var neuronParameterC: Float](mpscnnconvolution/neuronparameterc.md)
+- [var neuronParameterA: Float](./mpscnnconvolution/neuronparametera.md)
+- [var neuronParameterB: Float](./mpscnnconvolution/neuronparameterb.md)
+- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](./mpscnnconvolution/accumulatorprecisionoption.md)
+- [var channelMultiplier: Int](./mpscnnconvolution/channelmultiplier.md)
+- [var dataSource: any MPSCNNConvolutionDataSource](./mpscnnconvolution/datasource.md)
+- [var fusedNeuronDescriptor: MPSNNNeuronDescriptor?](./mpscnnconvolution/fusedneurondescriptor.md)
+- [var neuronParameterC: Float](./mpscnnconvolution/neuronparameterc.md)
 ### Instance Methods
-- [func exportWeightsAndBiases(with: any MTLCommandBuffer, resultStateCanBeTemporary: Bool) -> MPSCNNConvolutionWeightsAndBiasesState](mpscnnconvolution/exportweightsandbiases(with:resultstatecanbetemporary:).md)
-- [func reloadWeightsAndBiases(with: any MPSCNNConvolutionDataSource)](mpscnnconvolution/reloadweightsandbiases(with:).md)
-- [func reloadWeightsAndBiases(with: any MTLCommandBuffer, state: MPSCNNConvolutionWeightsAndBiasesState)](mpscnnconvolution/reloadweightsandbiases(with:state:).md)
-- [func reloadWeightsAndBiasesFromDataSource()](mpscnnconvolution/reloadweightsandbiasesfromdatasource.md)
-- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNConvolutionGradientState?](mpscnnconvolution/resultstate(sourceimage:sourcestates:destinationimage:).md)
-- [func resultStateBatch(sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSCNNConvolutionGradientState]?](mpscnnconvolution/resultstatebatch(sourceimage:sourcestates:destinationimage:).md)
-- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNConvolutionGradientState?](mpscnnconvolution/temporaryresultstate(commandbuffer:sourceimage:sourcestates:destinationimage:).md)
-- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSCNNConvolutionGradientState]?](mpscnnconvolution/temporaryresultstatebatch(commandbuffer:sourceimage:sourcestates:destinationimage:).md)
+- [func exportWeightsAndBiases(with: any MTLCommandBuffer, resultStateCanBeTemporary: Bool) -> MPSCNNConvolutionWeightsAndBiasesState](./mpscnnconvolution/exportweightsandbiases%28with,resultstatecanbetemporary%29.md)
+- [func reloadWeightsAndBiases(with: any MPSCNNConvolutionDataSource)](./mpscnnconvolution/reloadweightsandbiases%28with%29.md)
+- [func reloadWeightsAndBiases(with: any MTLCommandBuffer, state: MPSCNNConvolutionWeightsAndBiasesState)](./mpscnnconvolution/reloadweightsandbiases%28with,state%29.md)
+- [func reloadWeightsAndBiasesFromDataSource()](./mpscnnconvolution/reloadweightsandbiasesfromdatasource%28%29.md)
+- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNConvolutionGradientState?](./mpscnnconvolution/resultstate%28sourceimage,sourcestates,destinationimage%29.md)
+- [func resultStateBatch(sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSCNNConvolutionGradientState]?](./mpscnnconvolution/resultstatebatch%28sourceimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNConvolutionGradientState?](./mpscnnconvolution/temporaryresultstate%28commandbuffer,sourceimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSCNNConvolutionGradientState]?](./mpscnnconvolution/temporaryresultstatebatch%28commandbuffer,sourceimage,sourcestates,destinationimage%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Inherited By
-- [MPSCNNFullyConnected](mpscnnfullyconnected.md)
+- [MPSCNNFullyConnected](./mpscnnfullyconnected.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNBinaryConvolution](mpscnnbinaryconvolution.md)
+### Convolution Layers
+- [class MPSCNNBinaryConvolution](./mpscnnbinaryconvolution.md)
   A convolution kernel with binary weights and an input image using binary approximations.
-- [class MPSCNNDepthWiseConvolutionDescriptor](mpscnndepthwiseconvolutiondescriptor.md)
+- [class MPSCNNDepthWiseConvolutionDescriptor](./mpscnndepthwiseconvolutiondescriptor.md)
   A description of a convolution object that does depthwise convolution.
-- [class MPSCNNSubPixelConvolutionDescriptor](mpscnnsubpixelconvolutiondescriptor.md)
+- [class MPSCNNSubPixelConvolutionDescriptor](./mpscnnsubpixelconvolutiondescriptor.md)
   A description of a convolution object that does subpixel upsampling and reshaping.
-- [class MPSCNNConvolutionTranspose](mpscnnconvolutiontranspose.md)
+- [class MPSCNNConvolutionTranspose](./mpscnnconvolutiontranspose.md)
   A transposed convolution kernel.
-- [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
+- [class MPSCNNConvolutionGradient](./mpscnnconvolutiongradient.md)
   A gradient convolution kernel.
-- [class MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
+- [class MPSCNNConvolutionGradientState](./mpscnnconvolutiongradientstate.md)
   An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
-- [protocol MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
+- [protocol MPSImageSizeEncodingState](./mpsimagesizeencodingstate.md)
   A protocol for objects that contain information about an image size elsewhere in the graph.
-- [class MPSCNNConvolutionWeightsAndBiasesState](mpscnnconvolutionweightsandbiasesstate.md)
+- [class MPSCNNConvolutionWeightsAndBiasesState](./mpscnnconvolutionweightsandbiasesstate.md)
   A class that stores weights and biases.
 
 

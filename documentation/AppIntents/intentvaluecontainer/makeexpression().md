@@ -1,7 +1,8 @@
 # makeExpression()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an intent value expression that represents this container.
 

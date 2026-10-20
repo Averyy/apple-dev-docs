@@ -1,7 +1,8 @@
 # effect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbol effect that completed.
 
@@ -10,7 +11,7 @@ The symbol effect that completed.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ For a content transition completion, this property is `nil.`
 
 ## See Also
 
-- [var isFinished: Bool](uisymboleffectcompletioncontext-swift.struct/isfinished.md)
+### Determining completion status
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates whether the symbol effect finished completely.
-- [var sender: AnyObject?](uisymboleffectcompletioncontext-swift.struct/sender.md)
+- [var sender: AnyObject?](./sender.md)
   The object, an image view or bar button item, that received the symbol effect.
 
 

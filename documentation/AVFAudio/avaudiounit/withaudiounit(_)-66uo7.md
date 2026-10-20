@@ -1,7 +1,8 @@
 # withAudioUnit(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides scoped access to the audio unit’s AudioUnit
 
@@ -26,7 +27,7 @@ The value returned by the closure
 
 This method provides thread-safe, scoped access to the underlying AudioUnit. The audio unit reference is only valid within the closure and must not be retained or accessed outside of it.
 
-> **Note**: Rethrows any error thrown by the closure
+> **Throws**: Rethrows any error thrown by the closure
 
 ## Parameters
 
@@ -34,10 +35,11 @@ This method provides thread-safe, scoped access to the underlying AudioUnit. The
 
 ## See Also
 
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
+### Accessing the underlying Audio Unit
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](./withaudiounit%28_%29-6c2ze.md)
   Provides scoped access to the audio unit’s AudioUnit
-- [var audioUnit: AudioUnit](avaudiounit/audiounit-5vuo0.md)
-- [var audioUnit: AudioUnit](avaudiounit/audiounit-7dsac.md)
+- [var audioUnit: AudioUnit](./audiounit-5vuo0.md)
+- [var audioUnit: AudioUnit](./audiounit-7dsac.md)
 
 
 ---

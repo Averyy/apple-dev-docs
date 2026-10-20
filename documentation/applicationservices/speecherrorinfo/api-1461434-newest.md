@@ -1,7 +1,8 @@
 # newest
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The error code of the most recent error.
 
@@ -12,6 +13,10 @@ The error code of the most recent error.
 
 ```swift
 var newest: OSErr
+```
+
+```c
+OSErr newest;
 ```
 
 

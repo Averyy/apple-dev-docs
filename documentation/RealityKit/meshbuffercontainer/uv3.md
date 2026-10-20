@@ -1,7 +1,8 @@
 # uv3
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Buffer of UV data set 3, if any.
 

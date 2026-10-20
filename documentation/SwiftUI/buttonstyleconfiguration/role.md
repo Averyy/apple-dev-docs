@@ -1,7 +1,8 @@
 # role
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional semantic role that describes the button’s purpose.
 
@@ -22,7 +23,7 @@ let role: ButtonRole?
 
 #### Discussion
 
-A value of `nil` means that the Button doesn’t have an assigned role. If the button does have a role, use it to make adjustments to the button’s appearance. The following example shows a custom style that uses bold text when the role is [`cancel`](buttonrole/cancel.md), [`red`](shapestyle/red.md) text when the role is [`destructive`](buttonrole/destructive.md), and adds no special styling otherwise:
+A value of `nil` means that the Button doesn’t have an assigned role. If the button does have a role, use it to make adjustments to the button’s appearance. The following example shows a custom style that uses bold text when the role is [`cancel`](../buttonrole/cancel.md), [`red`](../shapestyle/red.md) text when the role is [`destructive`](../buttonrole/destructive.md), and adds no special styling otherwise:
 
 ```swift
 struct MyButtonStyle: ButtonStyle {
@@ -47,7 +48,7 @@ VStack(spacing: 20) {
 .buttonStyle(MyButtonStyle())
 ```
 
-![A screenshot of three buttons stacked vertically. The first says](/images/com.apple.SwiftUI/ButtonStyleConfiguration-role-1@2x.png)
+![A screenshot of three buttons stacked vertically. The first says](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ButtonStyleConfiguration-role-1@2x.png)
 
 
 ---

@@ -1,7 +1,8 @@
 # audioUnitShortName
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,19 +18,32 @@
 var audioUnitShortName: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * audioUnitShortName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * audioUnitShortName;
+```
+
 ## See Also
 
-- [var componentDescription: AudioComponentDescription](auaudiounit/componentdescription.md)
+### Describing the Audio Unit
+- [var componentDescription: AudioComponentDescription](./componentdescription.md)
   The component description with which the audio unit was created.
-- [var component: AudioComponent](auaudiounit/component.md)
+- [var component: AudioComponent](./component.md)
   The component found in the component description with which the audio unit was created.
-- [var componentName: String?](auaudiounit/componentname.md)
+- [var componentName: String?](./componentname.md)
   The audio unit’s component’s name.
-- [var componentVersion: UInt32](auaudiounit/componentversion.md)
+- [var componentVersion: UInt32](./componentversion.md)
   The audio unit’s component’s version.
-- [var audioUnitName: String?](auaudiounit/audiounitname.md)
+- [var audioUnitName: String?](./audiounitname.md)
   The audio unit’s name, derived from the component’s name.
-- [var manufacturerName: String?](auaudiounit/manufacturername.md)
+- [var manufacturerName: String?](./manufacturername.md)
   The manufacturer’s name, derived from the component’s name.
 
 

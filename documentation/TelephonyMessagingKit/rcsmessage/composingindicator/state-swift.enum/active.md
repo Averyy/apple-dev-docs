@@ -1,7 +1,8 @@
 # RCSMessage.ComposingIndicator.State.active
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The client is composing a message.
 
@@ -16,7 +17,8 @@ case active
 
 ## See Also
 
-- [RCSMessage.ComposingIndicator.State.idle](rcsmessage/composingindicator/state-swift.enum/idle.md)
+### Working with composing indicator states
+- [RCSMessage.ComposingIndicator.State.idle](./idle.md)
   The client is idle.
 
 

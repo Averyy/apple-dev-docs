@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that determines the extrusion, chamfering, and material assignment of an extruded shape.
 
@@ -22,49 +23,50 @@ struct ShapeExtrusionOptions
 ## Topics
 
 ### Structures
-- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions/materialassignment-swift.struct.md)
+- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](./shapeextrusionoptions/materialassignment-swift.struct.md)
   A type that determines the material assignments for each part of an extruded shape.
 ### Initializers
-- [init()](meshresource/shapeextrusionoptions/init.md)
+- [init()](./shapeextrusionoptions/init%28%29.md)
   Creates the shape extrusion options with default values.
 ### Instance Properties
-- [var boundaryResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/boundaryresolution.md)
+- [var boundaryResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](./shapeextrusionoptions/boundaryresolution.md)
   Resolution of the shape.
-- [var chamferMode: MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.property.md)
+- [var chamferMode: MeshResource.ShapeExtrusionOptions.ChamferMode](./shapeextrusionoptions/chamfermode-swift.property.md)
   Determines if the front, back or both sides should be chamfered.
-- [var chamferProfile: Path?](meshresource/shapeextrusionoptions/chamferprofile.md)
+- [var chamferProfile: Path?](./shapeextrusionoptions/chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
-- [var chamferRadius: Float](meshresource/shapeextrusionoptions/chamferradius.md)
+- [var chamferRadius: Float](./shapeextrusionoptions/chamferradius.md)
   The width or depth, in meters, of each chamfered edge.
-- [var chamferResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/chamferresolution.md)
+- [var chamferResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](./shapeextrusionoptions/chamferresolution.md)
   Resolution of the chamfer curve.
-- [var extrusionMethod: MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.property.md)
+- [var extrusionMethod: MeshResource.ShapeExtrusionOptions.ExtrusionMethod](./shapeextrusionoptions/extrusionmethod-swift.property.md)
   Specifies the extrusion type applied to the swept shape in 3D space.
-- [var materialAssignment: MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions/materialassignment-swift.property.md)
+- [var materialAssignment: MeshResource.ShapeExtrusionOptions.MaterialAssignment](./shapeextrusionoptions/materialassignment-swift.property.md)
   Determines the material assignments for each part of an extruded shape.
 ### Enumerations
-- [MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ChamferMode](./shapeextrusionoptions/chamfermode-swift.enum.md)
   Determines which part of the extrusion to chamfer.
-- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/curvestrokeresolution.md)
+- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](./shapeextrusionoptions/curvestrokeresolution.md)
   Designates the resolution at which a smooth curve is discretized.
-- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](./shapeextrusionoptions/extrusionmethod-swift.enum.md)
   The options that determine the way in which to extrude a swept shape in 3D.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions/materialassignment-swift.struct.md)
+### 2D path extrusion for 3D mesh creation
+- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](./shapeextrusionoptions/materialassignment-swift.struct.md)
   A type that determines the material assignments for each part of an extruded shape.
-- [MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ChamferMode](./shapeextrusionoptions/chamfermode-swift.enum.md)
   Determines which part of the extrusion to chamfer.
-- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/curvestrokeresolution.md)
+- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](./shapeextrusionoptions/curvestrokeresolution.md)
   Designates the resolution at which a smooth curve is discretized.
-- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](./shapeextrusionoptions/extrusionmethod-swift.enum.md)
   The options that determine the way in which to extrude a swept shape in 3D.
 
 

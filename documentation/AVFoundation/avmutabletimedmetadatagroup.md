@@ -1,7 +1,8 @@
 # AVMutableTimedMetadataGroup
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable collection of metadata items that are valid for use during a specific time range.
 
@@ -20,44 +21,49 @@ A mutable collection of metadata items that are valid for use during a specific 
 class AVMutableTimedMetadataGroup
 ```
 
+```objc
+@interface AVMutableTimedMetadataGroup : AVTimedMetadataGroup
+```
+
 ## Topics
 
 ### Configuring the group
-- [var items: [AVMetadataItem]](avmutabletimedmetadatagroup/items.md)
+- [var items: [AVMetadataItem]](./avmutabletimedmetadatagroup/items.md)
   An array of metadata items in the timed metadata group.
-- [var timeRange: CMTimeRange](avmutabletimedmetadatagroup/timerange.md)
+- [var timeRange: CMTimeRange](./avmutabletimedmetadatagroup/timerange.md)
   The time range of the timed metadata.
 
 ## Relationships
 
 ### Inherits From
-- [AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [AVTimedMetadataGroup](./avtimedmetadatagroup.md)
 ### Conforms To
-- [AVAssetReaderOutput.SupportedPayload](avassetreaderoutput/supportedpayload.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVAssetReaderOutput.SupportedPayload](./avassetreaderoutput/supportedpayload.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+### Timed metadata
+- [Presenting chapter markers](./presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
-- [class AVMetadataGroup](avmetadatagroup.md)
+- [class AVMetadataGroup](./avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.
-- [class AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [class AVTimedMetadataGroup](./avtimedmetadatagroup.md)
   A collection of metadata items that are valid for use during a specific time range.
-- [class AVDateRangeMetadataGroup](avdaterangemetadatagroup.md)
+- [class AVDateRangeMetadataGroup](./avdaterangemetadatagroup.md)
   A collection of metadata items that are valid for use within a specific date range.
-- [class AVMutableDateRangeMetadataGroup](avmutabledaterangemetadatagroup.md)
+- [class AVMutableDateRangeMetadataGroup](./avmutabledaterangemetadatagroup.md)
   A mutable collection of metadata items that are valid for use within a specific range of dates.
-- [class AVPlayerItemMediaDataCollector](avplayeritemmediadatacollector.md)
+- [class AVPlayerItemMediaDataCollector](./avplayeritemmediadatacollector.md)
   The abstract base for media data collectors.
-- [class AVPlayerItemMetadataCollector](avplayeritemmetadatacollector.md)
+- [class AVPlayerItemMetadataCollector](./avplayeritemmetadatacollector.md)
   An object used to capture the date range metadata defined for an HTTP Live Streaming asset.
 
 

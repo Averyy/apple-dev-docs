@@ -1,7 +1,8 @@
 # bDeviceClass
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The class code indicating the behavior of this device.
 
@@ -10,37 +11,38 @@ The class code indicating the behavior of this device.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDeviceClass;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicedescriptor/1546302-blength.md)
+### Getting the Device Properties
+- [bLength](./api-1546302-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicedescriptor/1545902-bdescriptortype.md)
+- [bDescriptorType](./api-1545902-bdescriptortype.md)
   The type of the descriptor.
-- [bcdUSB](iousbdevicedescriptor/1546010-bcdusb.md)
+- [bcdUSB](./api-1546010-bcdusb.md)
   The USB specification version number that the device is compliant with.
-- [bDeviceSubClass](iousbdevicedescriptor/1546530-bdevicesubclass.md)
+- [bDeviceSubClass](./api-1546530-bdevicesubclass.md)
   The subclass code that further defines the behavior of this device.
-- [bDeviceProtocol](iousbdevicedescriptor/1546376-bdeviceprotocol.md)
+- [bDeviceProtocol](./api-1546376-bdeviceprotocol.md)
   The protocol that the device supports.
-- [bMaxPacketSize0](iousbdevicedescriptor/1546126-bmaxpacketsize0.md)
+- [bMaxPacketSize0](./api-1546126-bmaxpacketsize0.md)
   An exponent value that specifies the maximum packet size for endpoint `0`.
-- [idVendor](iousbdevicedescriptor/1546331-idvendor.md)
+- [idVendor](./api-1546331-idvendor.md)
   The ID of the device’s manufacturer.
-- [idProduct](iousbdevicedescriptor/1546261-idproduct.md)
+- [idProduct](./api-1546261-idproduct.md)
   The product ID that the manufacturer assigns.
-- [bcdDevice](iousbdevicedescriptor/1546251-bcddevice.md)
+- [bcdDevice](./api-1546251-bcddevice.md)
   The device release number as a binary-coded decimal.
-- [iManufacturer](iousbdevicedescriptor/1546249-imanufacturer.md)
+- [iManufacturer](./api-1546249-imanufacturer.md)
   The index of the string descriptor that describes the manufacturer.
-- [iProduct](iousbdevicedescriptor/1546566-iproduct.md)
+- [iProduct](./api-1546566-iproduct.md)
   The index of the string descriptor that describes the product.
-- [iSerialNumber](iousbdevicedescriptor/1545940-iserialnumber.md)
+- [iSerialNumber](./api-1545940-iserialnumber.md)
   The index of the string descriptor that describes the device’s serial number.
-- [bNumConfigurations](iousbdevicedescriptor/1546184-bnumconfigurations.md)
+- [bNumConfigurations](./api-1546184-bnumconfigurations.md)
   The number of configurations that the device supports.
 
 

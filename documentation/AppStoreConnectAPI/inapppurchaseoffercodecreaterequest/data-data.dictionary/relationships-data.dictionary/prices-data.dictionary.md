@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase offer code data relationships prices.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase offer code data relationsh
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices.Data](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices.Data](./prices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.InAppPurchase](./inapppurchase-data.dictionary.md)
   The request body you use to create an In-App Purchase offer code for data relationships for an In-App Purchase.
 
 

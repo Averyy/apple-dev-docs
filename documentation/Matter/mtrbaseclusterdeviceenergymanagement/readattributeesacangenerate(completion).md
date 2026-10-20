@@ -1,7 +1,8 @@
 # readAttributeESACanGenerate(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeESACanGenerate(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeESACanGenerate() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeESACanGenerateWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

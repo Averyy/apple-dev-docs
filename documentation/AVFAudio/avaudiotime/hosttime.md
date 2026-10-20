@@ -1,7 +1,8 @@
 # hostTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host time.
 
@@ -20,13 +21,18 @@ The host time.
 var hostTime: UInt64 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) uint64_t hostTime;
+```
+
 ## See Also
 
-- [var isHostTimeValid: Bool](avaudiotime/ishosttimevalid.md)
+### Manipulating host time
+- [var isHostTimeValid: Bool](./ishosttimevalid.md)
   A Boolean value that indicates whether the host time value is valid.
-- [class func hostTime(forSeconds: TimeInterval) -> UInt64](avaudiotime/hosttime(forseconds:).md)
+- [class func hostTime(forSeconds: TimeInterval) -> UInt64](./hosttime%28forseconds%29.md)
   Converts seconds to host time.
-- [class func seconds(forHostTime: UInt64) -> TimeInterval](avaudiotime/seconds(forhosttime:).md)
+- [class func seconds(forHostTime: UInt64) -> TimeInterval](./seconds%28forhosttime%29.md)
   Converts host time to seconds.
 
 

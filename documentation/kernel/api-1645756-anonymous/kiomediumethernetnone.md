@@ -1,14 +1,15 @@
 # kIOMediumEthernetNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMediumEthernetNone = ( IFM_NONE    | IFM_ETHER )
 ```
 

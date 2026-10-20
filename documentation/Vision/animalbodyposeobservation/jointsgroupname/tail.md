@@ -1,7 +1,8 @@
 # AnimalBodyPoseObservation.JointsGroupName.tail
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,10 +20,11 @@ case tail
 
 ## See Also
 
-- [AnimalBodyPoseObservation.JointsGroupName.forelegs](animalbodyposeobservation/jointsgroupname/forelegs.md)
-- [AnimalBodyPoseObservation.JointsGroupName.head](animalbodyposeobservation/jointsgroupname/head.md)
-- [AnimalBodyPoseObservation.JointsGroupName.hindlegs](animalbodyposeobservation/jointsgroupname/hindlegs.md)
-- [AnimalBodyPoseObservation.JointsGroupName.trunk](animalbodyposeobservation/jointsgroupname/trunk.md)
+### Getting the group names
+- [AnimalBodyPoseObservation.JointsGroupName.forelegs](./forelegs.md)
+- [AnimalBodyPoseObservation.JointsGroupName.head](./head.md)
+- [AnimalBodyPoseObservation.JointsGroupName.hindlegs](./hindlegs.md)
+- [AnimalBodyPoseObservation.JointsGroupName.trunk](./trunk.md)
 
 
 ---

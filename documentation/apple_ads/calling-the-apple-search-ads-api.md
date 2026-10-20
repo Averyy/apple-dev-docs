@@ -1,14 +1,15 @@
 # Calling the Apple Ads API
 
-**Framework**: Apple Ads
+**Framework**: Apple Ads  
+**Role**: API Collection
 
 Pass your access token in the authorization header of HTTP requests.
 
 #### Overview
 
-> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+> **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
-Before you can call the API, you need to perform the implementation steps in [`Implementing OAuth for the Apple Ads API`](implementing-oauth-for-the-apple-search-ads-api.md).
+Before you can call the API, you need to perform the implementation steps in [Implementing OAuth for the Apple Ads API](./implementing-oauth-for-the-apple-search-ads-api.md).
 
 To call the Apple Ads Campaign Management API, pass your access token as `Bearer` in the authorization header of HTTP requests. The `Bearer` value informs the API that the bearer of the token has authorization to access the API and perform specified actions. The following is an example call to the API:
 
@@ -21,9 +22,9 @@ curl "https://api.searchads.apple.com/api/v5/campaigns" \
 | **Header** | **Description** |
 | --- | --- |
 | `Authorization` | **Required**. The authorization value is always `Bearer`. |
-| `X-AP-Context` | **Required**. The value is your `orgId`.  ![None](/images/com.apple.appleads/spacer.png) **Note**: This isn’t a requirement when calling [`Get User ACL`](get-user-acl.md) and [`Get Me Details`](get-me-details.md). |
+| `X-AP-Context` | **Required**. The value is your `orgId`.  ![](https://developer.apple.com/tutorials/images/com.apple.appleads/spacer.png) **Note**: This isn’t a requirement when calling [`Get User ACL`](./get-user-acl.md) and [`Get Me Details`](./get-me-details.md). |
 
-To return the `userId` and `parentOrgId` of an API caller, use [`Get Me Details`](get-me-details.md).
+To return the `userId` and `parentOrgId` of an API caller, use [`Get Me Details`](./get-me-details.md).
 
 ##### Handle Errors
 
@@ -46,35 +47,36 @@ Set a maximum exponential backoff time, such as 16 seconds. After reaching the m
 ## Topics
 
 ### Access Control List
-- [Get User ACL](get-user-acl.md)
+- [Get User ACL](./get-user-acl.md)
   Fetches roles and organizations that the API has access to.
-- [object UserAcl](useracl.md)
+- [object UserAcl](./useracl.md)
   The response to ACL requests.
-- [object UserAclListResponse](useracllistresponse.md)
+- [object UserAclListResponse](./useracllistresponse.md)
   A container for ACL call responses.
-- [Get Me Details](get-me-details.md)
+- [Get Me Details](./get-me-details.md)
   Fetches details of an API caller.
-- [object MeDetail](medetail.md)
+- [object MeDetail](./medetail.md)
   The API caller identifiers.
-- [object MeDetailResponse](medetailresponse.md)
+- [object MeDetailResponse](./medetailresponse.md)
   The response from me detail calls.
 ### Error Responses
-- [object ApiErrorResponse](apierrorresponse.md)
+- [object ApiErrorResponse](./apierrorresponse.md)
   A parent object of the error response body.
-- [object ErrorResponseBody](errorresponsebody.md)
+- [object ErrorResponseBody](./errorresponsebody.md)
   A parent object of the error response.
-- [object ErrorResponseItem](errorresponseitem.md)
+- [object ErrorResponseItem](./errorresponseitem.md)
   The error response details in the response body.
-- [object IntegerResponse](integerresponse.md)
+- [object IntegerResponse](./integerresponse.md)
   A common integer type response.
-- [object VoidResponse](voidresponse.md)
+- [object VoidResponse](./voidresponse.md)
   A default generic null response.
 
 ## See Also
 
-- [Implementing OAuth for the Apple Ads API](implementing-oauth-for-the-apple-search-ads-api.md)
+### Essentials
+- [Implementing OAuth for the Apple Ads API](./implementing-oauth-for-the-apple-search-ads-api.md)
   Manage secure access to Ads accounts.
-- [Using Apple Ads API Functionality](using-apple-search-ads-api-functionality.md)
+- [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md)
   Call endpoints using CRUD methods.
 
 

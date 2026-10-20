@@ -1,7 +1,8 @@
 # gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,7 +18,8 @@
 
 ## See Also
 
-- [func installGestures(ARView.EntityGestures, for: any HasCollision) -> [any EntityGestureRecognizer]](arview/installgestures(_:for:).md)
+### Adding gesture recognizers to entities
+- [func installGestures(ARView.EntityGestures, for: any HasCollision) -> [any EntityGestureRecognizer]](./installgestures%28_,for%29.md)
   Installs standard gestures onto the given entity, configured to be recognized simultaneously.
 
 

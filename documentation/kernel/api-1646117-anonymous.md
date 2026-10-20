@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kJIJournalInFSMask](1646117-anonymous/kjijournalinfsmask.md)
-- [kJIJournalNeedInitMask](1646117-anonymous/kjijournalneedinitmask.md)
-- [kJIJournalOnOtherDeviceMask](1646117-anonymous/kjijournalonotherdevicemask.md)
+- [kJIJournalInFSMask](./api-1646117-anonymous/kjijournalinfsmask.md)
+- [kJIJournalNeedInitMask](./api-1646117-anonymous/kjijournalneedinitmask.md)
+- [kJIJournalOnOtherDeviceMask](./api-1646117-anonymous/kjijournalonotherdevicemask.md)
 
 
 ---

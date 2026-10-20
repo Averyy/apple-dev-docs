@@ -1,7 +1,8 @@
 # deinitialize(count:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deinitializes the specified number of values starting at this pointer.
 

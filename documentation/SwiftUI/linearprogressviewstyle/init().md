@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linear progress view style.
 
@@ -23,7 +24,8 @@ init()
 
 ## See Also
 
-- [init(tint: Color)](linearprogressviewstyle/init(tint:).md)
+### Creating the progress view style
+- [init(tint: Color)](./init%28tint%29.md)
   Creates a linear progress view style with a tint color.
 
 

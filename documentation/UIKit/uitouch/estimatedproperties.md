@@ -1,7 +1,8 @@
 # estimatedProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of touch properties whose values contain only estimates.
 
@@ -18,19 +19,24 @@ A set of touch properties whose values contain only estimates.
 var estimatedProperties: UITouch.Properties { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITouchProperties estimatedProperties;
+```
+
 #### Discussion
 
 This property contains a bitmask of constants indicating which touch properties could not be reported immediately. For example, Apple Pencil records the force of a touch, but must transmit that information over the air to the underlying iPad. The delay incurred by transmitting the data may cause the information to be received after the touch has been reported to your app.
 
-Values in this property are not guaranteed to be updated later. For a list of properties whose values are expected to be updated, see [`estimatedPropertiesExpectingUpdates`](uitouch/estimatedpropertiesexpectingupdates.md).
+Values in this property are not guaranteed to be updated later. For a list of properties whose values are expected to be updated, see [`estimatedPropertiesExpectingUpdates`](./estimatedpropertiesexpectingupdates.md).
 
 ## See Also
 
-- [var estimatedPropertiesExpectingUpdates: UITouch.Properties](uitouch/estimatedpropertiesexpectingupdates.md)
+### Managing estimated touch attributes
+- [var estimatedPropertiesExpectingUpdates: UITouch.Properties](./estimatedpropertiesexpectingupdates.md)
   The set of touch properties for which updated values are expected in the future.
-- [UITouch.Properties](uitouch/properties.md)
+- [UITouch.Properties](./properties.md)
   A bit mask of touch properties that may get updated.
-- [var estimationUpdateIndex: NSNumber?](uitouch/estimationupdateindex.md)
+- [var estimationUpdateIndex: NSNumber?](./estimationupdateindex.md)
   An index number that lets you correlate an updated touch with the original touch.
 
 

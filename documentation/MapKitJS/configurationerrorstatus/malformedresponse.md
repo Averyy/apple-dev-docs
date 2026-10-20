@@ -1,7 +1,8 @@
 # MalformedResponse
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status that indicates the service returned a malformed response when initializing.
 
@@ -10,7 +11,7 @@ An error status that indicates the service returned a malformed response when in
 
 ## Declaration
 
-```swift
+```
 readonly MalformedResponse: "Malformed Response";
 ```
 

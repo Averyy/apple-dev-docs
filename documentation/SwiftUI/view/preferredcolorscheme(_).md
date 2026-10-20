@@ -1,7 +1,8 @@
 # preferredColorScheme(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred color scheme for this presentation.
 
@@ -27,7 +28,7 @@ A view that sets the color scheme.
 
 #### Discussion
 
-Use one of the values in [`ColorScheme`](colorscheme.md) with this modifier to set a preferred color scheme for the nearest enclosing presentation, like a popover, a sheet, or a window. The value that you set overrides the user’s Dark Mode selection for that presentation. In the example below, the [`Toggle`](toggle.md) controls an `isDarkMode` state variable, which in turn controls the color scheme of the sheet that contains the toggle:
+Use one of the values in [`ColorScheme`](../colorscheme.md) with this modifier to set a preferred color scheme for the nearest enclosing presentation, like a popover, a sheet, or a window. The value that you set overrides the user’s Dark Mode selection for that presentation. In the example below, the [`Toggle`](../toggle.md) controls an `isDarkMode` state variable, which in turn controls the color scheme of the sheet that contains the toggle:
 
 ```swift
 @State private var isPresented = false
@@ -46,7 +47,7 @@ var body: some View {
 }
 ```
 
-If you apply the modifier to any of the views in the sheet — which in this case are a [`List`](list.md) and a [`Toggle`](toggle.md) — the value that you set propagates up through the view hierarchy to the enclosing presentation, or until another color scheme modifier higher in the hierarchy overrides it. The value you set also flows down to all child views of the enclosing presentation.
+If you apply the modifier to any of the views in the sheet — which in this case are a [`List`](../list.md) and a [`Toggle`](../toggle.md) — the value that you set propagates up through the view hierarchy to the enclosing presentation, or until another color scheme modifier higher in the hierarchy overrides it. The value you set also flows down to all child views of the enclosing presentation.
 
 Pass `nil` to indicate that there is no preferred color scheme for this view. This is useful in cases where a preferred color scheme should only be applied conditionally. In the previous example, the sheet will prefer dark mode when `isDarkMode` is set to `true`, but otherwise defer to the color scheme as determined by the system.
 
@@ -77,7 +78,7 @@ struct MyView_Previews: PreviewProvider {
 }
 ```
 
-If you need to detect the color scheme that currently applies to a view, read the [`colorScheme`](environmentvalues/colorscheme.md) environment value:
+If you need to detect the color scheme that currently applies to a view, read the [`colorScheme`](../environmentvalues/colorscheme.md) environment value:
 
 ```swift
 @Environment(\.colorScheme) private var colorScheme
@@ -93,9 +94,10 @@ var body: some View {
 
 ## See Also
 
-- [var colorScheme: ColorScheme](environmentvalues/colorscheme.md)
+### Detecting and requesting the light or dark appearance
+- [var colorScheme: ColorScheme](../environmentvalues/colorscheme.md)
   The color scheme of this environment.
-- [enum ColorScheme](colorscheme.md)
+- [enum ColorScheme](../colorscheme.md)
   The possible color schemes, corresponding to the light and dark appearances.
 
 

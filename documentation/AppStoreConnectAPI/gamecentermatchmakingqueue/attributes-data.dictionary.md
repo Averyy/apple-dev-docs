@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueue.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of the rule set.
 
@@ -10,7 +11,7 @@ The attributes of the rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueue.Attributes
 ```
 
@@ -21,7 +22,8 @@ object GameCenterMatchmakingQueue.Attributes
 
 ## See Also
 
-- [object GameCenterMatchmakingQueue.Relationships](gamecentermatchmakingqueue/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingQueue.Relationships](./relationships-data.dictionary.md)
   The rule sets associated with the queue.
 
 

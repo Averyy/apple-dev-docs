@@ -1,7 +1,8 @@
 # readAttributeWeighting(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWeighting(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWeighting() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWeightingWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

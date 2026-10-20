@@ -1,7 +1,8 @@
 # oriented(_:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms the original image by a given orientation.
 
@@ -19,13 +20,18 @@ Transforms the original image by a given orientation.
 func oriented(_ orientation: CGImagePropertyOrientation) -> CIImage
 ```
 
+```objc
+- (CIImage *) imageByApplyingCGOrientation:(CGImagePropertyOrientation) orientation;
+```
+
 #### Discussion
 
-Returns a new image representing the original image transformed for the given [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation).
+Returns a new image representing the original image transformed for the given [`CGImagePropertyOrientation`](../../ImageIO/cgimagepropertyorientation.md).
 
 ## See Also
 
-- [func orientationTransform(for: CGImagePropertyOrientation) -> CGAffineTransform](ciimage/orientationtransform(for:).md)
+### Working with Orientation
+- [func orientationTransform(for: CGImagePropertyOrientation) -> CGAffineTransform](./orientationtransform%28for%29.md)
   The affine transform for changing the image to the given orientation.
 
 

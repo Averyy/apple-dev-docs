@@ -1,7 +1,8 @@
 # eraseToAnyColumn()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a type-erased column slice.
 

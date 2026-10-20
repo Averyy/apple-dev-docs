@@ -1,7 +1,8 @@
 # init(forNewContact:)
 
 **Framework**: Contacts UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a view controller for a new contact.
 
@@ -17,13 +18,17 @@ Initializes a view controller for a new contact.
 convenience init(forNewContact contact: CNContact?)
 ```
 
+```objc
++ (instancetype) viewControllerForNewContact:(CNContact *) contact;
+```
+
 #### Return Value
 
-A newly initialized [`CNContactViewController`](cncontactviewcontroller.md) object.
+A newly initialized [`CNContactViewController`](../cncontactviewcontroller.md) object.
 
 #### Discussion
 
-This view controller initializes the customized behavior and appearance of [`CNContactViewController`](cncontactviewcontroller.md) for a new contact.
+This view controller initializes the customized behavior and appearance of [`CNContactViewController`](../cncontactviewcontroller.md) for a new contact.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ This view controller initializes the customized behavior and appearance of [`CNC
 
 ## See Also
 
-- [convenience init(for: CNContact)](cncontactviewcontroller/init(for:).md)
+### Creating the Contact Viewer
+- [convenience init(for: CNContact)](./init%28for%29.md)
   Initializes a view controller for an existing contact.
-- [convenience init(forContact: CNContact)](cncontactviewcontroller/init(forcontact:).md)
+- [convenience init(forContact: CNContact)](./init%28forcontact%29.md)
   Initializes a view controller for an existing contact.
-- [convenience init(forUnknownContact: CNContact)](cncontactviewcontroller/init(forunknowncontact:).md)
+- [convenience init(forUnknownContact: CNContact)](./init%28forunknowncontact%29.md)
   Initializes a view controller for an unknown contact.
 
 

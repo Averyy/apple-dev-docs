@@ -1,7 +1,8 @@
 # physio
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Perform I/O on a device to/from target memory described by a uio.
 
@@ -10,11 +11,11 @@ Perform I/O on a device to/from target memory described by a uio.
 
 ## Declaration
 
-```swift
+```c
 int physio(void (*f_strategy)(buf_t), buf_t bp, dev_t dev, int flags, u_int (*f_minphys)(buf_t), struct uio *uio, int blocksize);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success; EFAULT for an invalid uio; errors from buf_biowait().
 

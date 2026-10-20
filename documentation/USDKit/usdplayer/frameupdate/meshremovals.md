@@ -1,7 +1,8 @@
 # meshRemovals
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of meshes removed this frame.
 

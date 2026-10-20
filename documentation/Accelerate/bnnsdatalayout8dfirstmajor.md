@@ -1,7 +1,8 @@
 # BNNSDataLayout8DFirstMajor
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 8D first-major tensor.
 
@@ -18,6 +19,10 @@ A constant that represents a 8D first-major tensor.
 
 ```swift
 var BNNSDataLayout8DFirstMajor: BNNSDataLayout { get }
+```
+
+```c
+BNNSDataLayout8DFirstMajor
 ```
 
 #### Discussion
@@ -39,7 +44,8 @@ The value `(i, j, k, l, m, n, o, p)` is at index:
 
 ## See Also
 
-- [var BNNSDataLayout8DLastMajor: BNNSDataLayout](bnnsdatalayout8dlastmajor.md)
+### 8D Data Layouts
+- [var BNNSDataLayout8DLastMajor: BNNSDataLayout](./bnnsdatalayout8dlastmajor.md)
   A constant that represents a 8D last-major tensor.
 
 

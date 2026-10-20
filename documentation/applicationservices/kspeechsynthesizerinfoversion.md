@@ -1,7 +1,8 @@
 # kSpeechSynthesizerInfoVersion
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The version of the speech synthesizer.
 
@@ -12,6 +13,10 @@ The version of the speech synthesizer.
 
 ```swift
 let kSpeechSynthesizerInfoVersion: CFString
+```
+
+```c
+const CFStringRef kSpeechSynthesizerInfoVersion;
 ```
 
 

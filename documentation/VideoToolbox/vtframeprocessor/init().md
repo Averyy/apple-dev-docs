@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new frame processor.
 
@@ -17,6 +18,10 @@ Creates a new frame processor.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

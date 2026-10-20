@@ -1,7 +1,8 @@
 # LACompanionType.vision
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Paired Vision Pro
 
@@ -14,6 +15,10 @@ Paired Vision Pro
 
 ```swift
 case vision
+```
+
+```c
+LACompanionTypeVision
 ```
 
 

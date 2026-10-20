@@ -1,7 +1,8 @@
 # channelManager(delegate:restorationDelegate:completionHandler:)
 
 **Framework**: Push to Talk  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a channel manager with the configuration you specify.
 
@@ -13,27 +14,41 @@ Creates a channel manager with the configuration you specify.
 ## Declaration
 
 ```swift
+class func channelManager(delegate: any PTChannelManagerDelegate, restorationDelegate: any PTChannelRestorationDelegate, completionHandler: @escaping @Sendable (PTChannelManager?, (any Error)?) -> Void)
+```
+
+```swift
 class func channelManager(delegate: any PTChannelManagerDelegate, restorationDelegate: any PTChannelRestorationDelegate) async throws -> PTChannelManager
+```
+
+```objc
++ (void) channelManagerWithDelegate:(id<PTChannelManagerDelegate>) delegate restorationDelegate:(id<PTChannelRestorationDelegate>) restorationDelegate completionHandler:(void (^)(PTChannelManager *manager, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-class func channelManager(delegate: PTChannelManagerDelegate, restorationDelegate: PTChannelRestorationDelegate) async throws -> PTChannelManager
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> class func channelManager(delegate: PTChannelManagerDelegate, restorationDelegate: PTChannelRestorationDelegate) async throws -> PTChannelManager
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-You must create a channel manager as soon as possible when launching your app so the system is able to restore existing challenge and deliver push notifications to your [`PTChannelManagerDelegate`](ptchannelmanagerdelegate.md). By providing the restoration delegate, you decide whether to rejoin or leave any previously active channel the system knows about.
+You must create a channel manager as soon as possible when launching your app so the system is able to restore existing challenge and deliver push notifications to your [`PTChannelManagerDelegate`](../ptchannelmanagerdelegate.md). By providing the restoration delegate, you decide whether to rejoin or leave any previously active channel the system knows about.
 
 ## Parameters
 
 - `delegate`: An object that conforms to the channel manager protocol.
 - `restorationDelegate`: An object that conforms to the channel resoration protocol.
-- `completionHandler`: The completion callback handler. - **`manager`**: A new channel manager instance.
-- **`error`**: An error, if any, that indicates the reason why the system couldn’t create the channel manager.
+- `completionHandler`: The completion callback handler.
+
+  - **`manager`**: A new channel manager instance.
+  - **`error`**: An error, if any, that indicates the reason why the system couldn’t create the channel manager.
 
 
 ---

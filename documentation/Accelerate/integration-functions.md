@@ -1,40 +1,42 @@
 # Integration functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Compute the running sum, Simpson, or trapezoidal integration of a vector.
 
 ## Topics
 
 ### Integration
-- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Double) -> [Double]](vdsp/integrate(_:using:stepsize:)-1bw3x.md)
+- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Double) -> [Double]](./vdsp/integrate%28_,using,stepsize%29-1bw3x.md)
   Returns the integration of a double-precision vector using the specified rule.
-- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Float) -> [Float]](vdsp/integrate(_:using:stepsize:)-7wei4.md)
+- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Float) -> [Float]](./vdsp/integrate%28_,using,stepsize%29-7wei4.md)
   Returns the integration of a single-precision vector using the specified rule.
-- [static func integrate<U, V>(U, using: vDSP.IntegrationRule, stepSize: Double, result: inout V)](vdsp/integrate(_:using:stepsize:result:)-75jvf.md)
+- [static func integrate<U, V>(U, using: vDSP.IntegrationRule, stepSize: Double, result: inout V)](./vdsp/integrate%28_,using,stepsize,result%29-75jvf.md)
   Performs the integration of a double-precision using the specified rule.
-- [static func integrate<U, V>(U, using: vDSP.IntegrationRule, stepSize: Float, result: inout V)](vdsp/integrate(_:using:stepsize:result:)-44lew.md)
+- [static func integrate<U, V>(U, using: vDSP.IntegrationRule, stepSize: Float, result: inout V)](./vdsp/integrate%28_,using,stepsize,result%29-44lew.md)
   Performs the integration of a single-precision using the specified rule.
-- [vDSP.IntegrationRule](vdsp/integrationrule.md)
+- [vDSP.IntegrationRule](./vdsp/integrationrule.md)
   Integration rules.
 
 ## See Also
 
-- [Absolute and negation functions](absolute-and-negation-functions.md)
+### Single-vector arithmetic functions
+- [Absolute and negation functions](./absolute-and-negation-functions.md)
   Compute the absolute or negated value of each element in a vector.
-- [Clipping, limit, and threshold operations](clipping-limit-and-threshold-operations.md)
+- [Clipping, limit, and threshold operations](./clipping-limit-and-threshold-operations.md)
   Apply clipping, limit, or threshold rules to the elements in a vector.
-- [Normalization functions](normalization-functions.md)
+- [Normalization functions](./normalization-functions.md)
   Compute the mean and standard deviation of a vector and calculate new elements to have a zero mean and a unit standard deviation.
-- [Phase computation functions](phase-computation-functions.md)
+- [Phase computation functions](./phase-computation-functions.md)
   Calculate the element-wise phase values, in radians, of a complex vector.
-- [Complex conjugation functions](complex-conjugation-functions.md)
+- [Complex conjugation functions](./complex-conjugation-functions.md)
   Calculate the complex conjugate of the elements in a vector.
-- [Vector squaring functions](vector-squaring-functions.md)
+- [Vector squaring functions](./vector-squaring-functions.md)
   Compute the square, signed square, or squared magnitude of the elements in a vector.
-- [Fractional part extraction](fractional-part-extraction.md)
+- [Fractional part extraction](./fractional-part-extraction.md)
   Truncate the elements of a vector to a fraction.
-- [Zero crossing search](zero-crossing-search.md)
+- [Zero crossing search](./zero-crossing-search.md)
   Count and find the zero crossings in a vector.
 
 

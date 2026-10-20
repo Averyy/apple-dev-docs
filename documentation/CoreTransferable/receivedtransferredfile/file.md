@@ -1,7 +1,8 @@
 # file
 
 **Framework**: Core Transferable  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The received file on disk.
 
@@ -22,7 +23,8 @@ let file: URL
 
 ## See Also
 
-- [let isOriginalFile: Bool](receivedtransferredfile/isoriginalfile.md)
+### Configuring a file transfer
+- [let isOriginalFile: Bool](./isoriginalfile.md)
   A Boolean value that indicates whether the file’s URL points to the original file provided by the sender or to a copy.
 
 

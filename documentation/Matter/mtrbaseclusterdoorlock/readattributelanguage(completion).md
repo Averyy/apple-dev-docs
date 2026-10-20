@@ -1,7 +1,8 @@
 # readAttributeLanguage(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLanguage(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLanguage() async throws -> String
+```
+
+```objc
+- (void) readAttributeLanguageWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

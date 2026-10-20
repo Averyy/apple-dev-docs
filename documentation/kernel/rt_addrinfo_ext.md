@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rt_addrinfo_ext {
     ...
 };
@@ -17,9 +17,9 @@ struct rt_addrinfo_ext {
 ## Topics
 
 ### Instance Properties
-- [rtix_info](rt_addrinfo_ext/4360127-rtix_info.md)
-- [rtix_next_tiny](rt_addrinfo_ext/4360128-rtix_next_tiny.md)
-- [rtix_tiny_addr](rt_addrinfo_ext/4360129-rtix_tiny_addr.md)
+- [rtix_info](./rt_addrinfo_ext/api-4360127-rtix_info.md)
+- [rtix_next_tiny](./rt_addrinfo_ext/api-4360128-rtix_next_tiny.md)
+- [rtix_tiny_addr](./rt_addrinfo_ext/api-4360129-rtix_tiny_addr.md)
 
 
 ---

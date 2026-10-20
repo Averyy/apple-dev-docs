@@ -1,7 +1,8 @@
 # exceptionCode
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Processor specific information about the exception.
 
@@ -24,13 +25,14 @@ Encoded into one or more 64-bit hexadecimal numbers.
 
 ## See Also
 
-- [let exceptionType: Int?](crashdiagnostic/exceptiontype.md)
+### Exception details
+- [let exceptionType: Int?](./exceptiontype.md)
   The name of the Mach exception that terminated the app.
-- [let signal: Int?](crashdiagnostic/signal.md)
+- [let signal: Int?](./signal.md)
   The signal associated with this crash.
-- [let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?](crashdiagnostic/exceptionreason.md)
+- [let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?](./exceptionreason.md)
   The exception reason for an uncaught ObjC exception.
-- [let virtualMemoryRegionInfo: String?](crashdiagnostic/virtualmemoryregioninfo.md)
+- [let virtualMemoryRegionInfo: String?](./virtualmemoryregioninfo.md)
   Details about memory that the app incorrectly accessed.
 
 

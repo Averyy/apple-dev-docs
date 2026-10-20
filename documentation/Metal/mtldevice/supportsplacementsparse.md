@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the device supports placement sparse resources.
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the device supports placement sparse reso
 
 ```swift
 var supportsPlacementSparse: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL supportsPlacementSparse;
 ```
 
 

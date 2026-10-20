@@ -1,7 +1,8 @@
 # clear()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the authored value of this attribute.
 

@@ -1,11 +1,12 @@
 # ExpressibleByFloatLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(floatLiteral: Double)](decimal/init(floatliteral:).md)
+- [init(floatLiteral: Double)](./init%28floatliteral%29.md)
   Creates and initializes a decimal with the provided floating point value.
 
 

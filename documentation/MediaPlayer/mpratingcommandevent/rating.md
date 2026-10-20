@@ -1,7 +1,8 @@
 # rating
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rating for the command event.
 
@@ -20,9 +21,13 @@ The rating for the command event.
 var rating: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float rating;
+```
+
 #### Discussion
 
-The `rating` property must be between the minimum and maximum ratings defined by the [`maximumRating`](mpratingcommand/maximumrating.md) and [`minimumRating`](mpratingcommand/minimumrating.md) properties.
+The `rating` property must be between the minimum and maximum ratings defined by the [`maximumRating`](../mpratingcommand/maximumrating.md) and [`minimumRating`](../mpratingcommand/minimumrating.md) properties.
 
 
 ---

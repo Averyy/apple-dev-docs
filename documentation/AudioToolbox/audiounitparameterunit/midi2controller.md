@@ -1,15 +1,16 @@
 # AudioUnitParameterUnit.midi2Controller
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,37 +18,42 @@
 case midi2Controller
 ```
 
+```c
+kAudioUnitParameterUnit_MIDI2Controller
+```
+
 ## See Also
 
-- [AudioUnitParameterUnit.absoluteCents](audiounitparameterunit/absolutecents.md)
+### Enumeration Cases
+- [AudioUnitParameterUnit.absoluteCents](./absolutecents.md)
   An absolute unit of measure for the musical pitch of a note.
-- [AudioUnitParameterUnit.BPM](audiounitparameterunit/bpm.md)
+- [AudioUnitParameterUnit.BPM](./bpm.md)
   A whole-number unit of measure for musical tempo, representing beats per minute.
-- [AudioUnitParameterUnit.beats](audiounitparameterunit/beats.md)
+- [AudioUnitParameterUnit.beats](./beats.md)
   A time unit of measure in musical beats.
-- [AudioUnitParameterUnit.boolean](audiounitparameterunit/boolean.md)
+- [AudioUnitParameterUnit.boolean](./boolean.md)
   A Boolean-like unit of measure.
-- [AudioUnitParameterUnit.cents](audiounitparameterunit/cents.md)
+- [AudioUnitParameterUnit.cents](./cents.md)
   A logarithmic unit of measure for a musical interval between two notes.
-- [AudioUnitParameterUnit.customUnit](audiounitparameterunit/customunit.md)
+- [AudioUnitParameterUnit.customUnit](./customunit.md)
   A custom unit of measure.
-- [AudioUnitParameterUnit.decibels](audiounitparameterunit/decibels.md)
+- [AudioUnitParameterUnit.decibels](./decibels.md)
   A logarithmic unit of measure representing the ratio between two audio levels.
-- [AudioUnitParameterUnit.degrees](audiounitparameterunit/degrees.md)
+- [AudioUnitParameterUnit.degrees](./degrees.md)
   An angular degree unit of measure.
-- [AudioUnitParameterUnit.equalPowerCrossfade](audiounitparameterunit/equalpowercrossfade.md)
+- [AudioUnitParameterUnit.equalPowerCrossfade](./equalpowercrossfade.md)
   An audio power unit of measure.
-- [AudioUnitParameterUnit.generic](audiounitparameterunit/generic.md)
+- [AudioUnitParameterUnit.generic](./generic.md)
   A generic unit of measure.
-- [AudioUnitParameterUnit.hertz](audiounitparameterunit/hertz.md)
+- [AudioUnitParameterUnit.hertz](./hertz.md)
   A hertz unit of measure.
-- [AudioUnitParameterUnit.indexed](audiounitparameterunit/indexed.md)
+- [AudioUnitParameterUnit.indexed](./indexed.md)
   An indexed unit of measure.
-- [AudioUnitParameterUnit.linearGain](audiounitparameterunit/lineargain.md)
+- [AudioUnitParameterUnit.linearGain](./lineargain.md)
   A linear unit of measure representing the difference between two audio levels.
-- [AudioUnitParameterUnit.midiController](audiounitparameterunit/midicontroller.md)
+- [AudioUnitParameterUnit.midiController](./midicontroller.md)
   A whole-number unit of measure corresponding to standard MIDI control numbers.
-- [AudioUnitParameterUnit.midiNoteNumber](audiounitparameterunit/midinotenumber.md)
+- [AudioUnitParameterUnit.midiNoteNumber](./midinotenumber.md)
   A whole-number unit of measure corresponding to audio frequency.
 
 

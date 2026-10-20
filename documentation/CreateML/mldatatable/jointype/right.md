@@ -1,7 +1,8 @@
 # MLDataTable.JoinType.right
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that is the union between an inner join and the remaining rows from the secondary data table.
 
@@ -25,11 +26,12 @@ The `.right` join type merges missing values.
 
 ## See Also
 
-- [MLDataTable.JoinType.inner](mldatatable/jointype/inner.md)
+### Selecting a joining operation
+- [MLDataTable.JoinType.inner](./inner.md)
   An operation that joins the rows of the data tables whose values match exactly.
-- [MLDataTable.JoinType.left](mldatatable/jointype/left.md)
+- [MLDataTable.JoinType.left](./left.md)
   An operation that is the union between an inner join and the remaining rows from the original data table.
-- [MLDataTable.JoinType.outer](mldatatable/jointype/outer.md)
+- [MLDataTable.JoinType.outer](./outer.md)
   An operation that is the union between a left join and a right join.
 
 

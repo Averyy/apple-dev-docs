@@ -1,7 +1,8 @@
 # notificationCenterSetting
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The setting that indicates whether your app’s notifications appear in Notification Center.
 
@@ -19,35 +20,48 @@ The setting that indicates whether your app’s notifications appear in Notifica
 var notificationCenterSetting: UNNotificationSetting { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UNNotificationSetting notificationCenterSetting;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) UNNotificationSetting notificationCenterSetting;
+```
+
 ## Mentions
 
-- [Asking permission to use notifications](asking-permission-to-use-notifications.md)
+- [Asking permission to use notifications](../asking-permission-to-use-notifications.md)
 
 #### Discussion
 
-The default value of this property is [`UNNotificationSetting.enabled`](unnotificationsetting/enabled.md).
+The default value of this property is [`UNNotificationSetting.enabled`](../unnotificationsetting/enabled.md).
 
 ## See Also
 
-- [var lockScreenSetting: UNNotificationSetting](unnotificationsettings/lockscreensetting.md)
+### Getting Device-Specific Settings
+- [var lockScreenSetting: UNNotificationSetting](./lockscreensetting.md)
   The setting that indicates whether your app’s notifications appear on a device’s Lock screen.
-- [var carPlaySetting: UNNotificationSetting](unnotificationsettings/carplaysetting.md)
+- [var carPlaySetting: UNNotificationSetting](./carplaysetting.md)
   The setting that indicates whether your app’s notifications appear in CarPlay.
-- [var alertSetting: UNNotificationSetting](unnotificationsettings/alertsetting.md)
+- [var alertSetting: UNNotificationSetting](./alertsetting.md)
   The authorization status for displaying alerts.
-- [var badgeSetting: UNNotificationSetting](unnotificationsettings/badgesetting.md)
+- [var badgeSetting: UNNotificationSetting](./badgesetting.md)
   The setting that indicates whether badges appear on your app’s icon.
-- [var soundSetting: UNNotificationSetting](unnotificationsettings/soundsetting.md)
+- [var soundSetting: UNNotificationSetting](./soundsetting.md)
   The authorization status for playing sounds for incoming notifications.
-- [var criticalAlertSetting: UNNotificationSetting](unnotificationsettings/criticalalertsetting.md)
+- [var criticalAlertSetting: UNNotificationSetting](./criticalalertsetting.md)
   The authorization status for playing sounds for critical alerts.
-- [var announcementSetting: UNNotificationSetting](unnotificationsettings/announcementsetting.md)
+- [var announcementSetting: UNNotificationSetting](./announcementsetting.md)
   The setting that indicates whether Siri can announce your app’s notifications.
-- [var scheduledDeliverySetting: UNNotificationSetting](unnotificationsettings/scheduleddeliverysetting.md)
+- [var scheduledDeliverySetting: UNNotificationSetting](./scheduleddeliverysetting.md)
   The setting that indicates the system schedules the notification.
-- [var timeSensitiveSetting: UNNotificationSetting](unnotificationsettings/timesensitivesetting.md)
+- [var timeSensitiveSetting: UNNotificationSetting](./timesensitivesetting.md)
   The setting that indicates the system treats the notification as time-sensitive.
-- [enum UNNotificationSetting](unnotificationsetting.md)
+- [enum UNNotificationSetting](../unnotificationsetting.md)
   Constants that indicate the current status of a notification setting.
 
 

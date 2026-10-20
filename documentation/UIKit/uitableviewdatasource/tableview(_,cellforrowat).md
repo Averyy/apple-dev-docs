@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source for a cell to insert in a particular location of the table view.
@@ -19,20 +20,24 @@ Asks the data source for a cell to insert in a particular location of the table 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 ```
 
+```objc
+- (UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Mentions
 
-- [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
-- [Filling a table with data](filling-a-table-with-data.md)
+- [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
+- [Filling a table with data](../filling-a-table-with-data.md)
 
 #### Return Value
 
-An object inheriting from [`UITableViewCell`](uitableviewcell.md) that the table view can use for the specified row. UIKit raises an assertion if you return `nil`.
+An object inheriting from [`UITableViewCell`](../uitableviewcell.md) that the table view can use for the specified row. UIKit raises an assertion if you return `nil`.
 
 #### Discussion
 
-In your implementation, create and configure an appropriate cell for the given index path. Create your cell using the table view’s [`dequeueReusableCell(withIdentifier:for:)`](uitableview/dequeuereusablecell(withidentifier:for:).md) method, which recycles or creates the cell for you. After creating the cell, update the properties of the cell with appropriate data values.
+In your implementation, create and configure an appropriate cell for the given index path. Create your cell using the table view’s [`dequeueReusableCell(withIdentifier:for:)`](../uitableview/dequeuereusablecell%28withidentifier,for%29.md) method, which recycles or creates the cell for you. After creating the cell, update the properties of the cell with appropriate data values.
 
-Never call this method yourself. If you want to retrieve cells from your table, call the table view’s [`cellForRow(at:)`](uitableview/cellforrow(at:).md) method instead.
+Never call this method yourself. If you want to retrieve cells from your table, call the table view’s [`cellForRow(at:)`](../uitableview/cellforrow%28at%29.md) method instead.
 
 ## Parameters
 
@@ -41,9 +46,10 @@ Never call this method yourself. If you want to retrieve cells from your table, 
 
 ## See Also
 
-- [func tableView(UITableView, titleForHeaderInSection: Int) -> String?](uitableviewdatasource/tableview(_:titleforheaderinsection:).md)
+### Providing cells, headers, and footers
+- [func tableView(UITableView, titleForHeaderInSection: Int) -> String?](./tableview%28_,titleforheaderinsection%29.md)
   Asks the data source for the title of the header of the specified section of the table view.
-- [func tableView(UITableView, titleForFooterInSection: Int) -> String?](uitableviewdatasource/tableview(_:titleforfooterinsection:).md)
+- [func tableView(UITableView, titleForFooterInSection: Int) -> String?](./tableview%28_,titleforfooterinsection%29.md)
   Asks the data source for the title of the footer of the specified section of the table view.
 
 

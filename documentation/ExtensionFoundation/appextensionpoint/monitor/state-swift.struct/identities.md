@@ -1,7 +1,8 @@
 # identities
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of approved and enabled app extensions.
 
@@ -26,9 +27,10 @@ Use this property to get the set of app extensions your host app can currently l
 
 ## See Also
 
-- [var disabledCount: Int](appextensionpoint/monitor/state-swift.struct/disabledcount.md)
+### Getting the app extension status
+- [var disabledCount: Int](./disabledcount.md)
   The number of app extensions that someone disabled.
-- [var unapprovedCount: Int](appextensionpoint/monitor/state-swift.struct/unapprovedcount.md)
+- [var unapprovedCount: Int](./unapprovedcount.md)
   The number of identity entries that someone hasn’t yet enabled.
 
 

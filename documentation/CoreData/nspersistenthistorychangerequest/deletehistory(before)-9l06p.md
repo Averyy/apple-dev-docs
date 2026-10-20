@@ -1,7 +1,8 @@
 # deleteHistory(before:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Purges history older than a given transaction.
 
@@ -20,9 +21,13 @@ Purges history older than a given transaction.
 class func deleteHistory(before transaction: NSPersistentHistoryTransaction?) -> Self
 ```
 
+```objc
++ (instancetype) deleteHistoryBeforeTransaction:(NSPersistentHistoryTransaction *) transaction;
+```
+
 #### Return Value
 
-A delete history change request ([`NSPersistentHistoryChangeRequest`](nspersistenthistorychangerequest.md)) using an end transaction boundary.
+A delete history change request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) using an end transaction boundary.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ A delete history change request ([`NSPersistentHistoryChangeRequest`](nspersiste
 
 ## See Also
 
-- [class func deleteHistory(before: Date) -> Self](nspersistenthistorychangerequest/deletehistory(before:)-7t2th.md)
+### Purging History
+- [class func deleteHistory(before: Date) -> Self](./deletehistory%28before%29-7t2th.md)
   Purges history older than a given date.
-- [class func deleteHistory(before: NSPersistentHistoryToken?) -> Self](nspersistenthistorychangerequest/deletehistory(before:)-5kghb.md)
+- [class func deleteHistory(before: NSPersistentHistoryToken?) -> Self](./deletehistory%28before%29-5kghb.md)
   Purges history older than that defined by a given token.
 
 

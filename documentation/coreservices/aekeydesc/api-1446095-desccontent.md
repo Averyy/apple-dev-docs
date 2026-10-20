@@ -1,9 +1,10 @@
 # descContent
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-A descriptor of type [`AEDesc`](aedesc.md) that stores the keyword descriptordata. See [`AEDesc`](aedesc.md).
+A descriptor of type [`AEDesc`](../aedesc.md) that stores the keyword descriptordata. See [`AEDesc`](../aedesc.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ A descriptor of type [`AEDesc`](aedesc.md) that stores the keyword descriptordat
 
 ```swift
 var descContent: AEDesc
+```
+
+```c
+AEDesc descContent;
 ```
 
 

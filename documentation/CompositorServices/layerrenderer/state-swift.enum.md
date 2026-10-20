@@ -1,7 +1,8 @@
 # LayerRenderer.State
 
 **Framework**: Compositor Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states of the layer renderer, which tell you how to proceed with drawing operations.
 
@@ -15,35 +16,40 @@ The states of the layer renderer, which tell you how to proceed with drawing ope
 enum State
 ```
 
+```c
+enum cp_layer_renderer_state : uint32_t;
+```
+
 ## Topics
 
 ### Getting the states
-- [LayerRenderer.State.paused](layerrenderer/state-swift.enum/paused.md)
+- [LayerRenderer.State.paused](./state-swift.enum/paused.md)
   A state that indicates the layer is paused and not currently drawing.
-- [LayerRenderer.State.running](layerrenderer/state-swift.enum/running.md)
+- [LayerRenderer.State.running](./state-swift.enum/running.md)
   A state that indicates the layer is visible and ready for you to draw your content.
-- [LayerRenderer.State.invalidated](layerrenderer/state-swift.enum/invalidated.md)
+- [LayerRenderer.State.invalidated](./state-swift.enum/invalidated.md)
   A state that indicates the layer no longer supports drawing operations.
 ### Initializers
-- [init?(rawValue: UInt32)](layerrenderer/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: LayerRenderer.State](layerrenderer/state-swift.property.md)
+### Managing the rendering loop
+- [var state: LayerRenderer.State](./state-swift.property.md)
   A value that indicates whether the layer renderer is currently visible and ready for you to draw content.
-- [func waitUntilRunning()](layerrenderer/waituntilrunning.md)
+- [func waitUntilRunning()](./waituntilrunning%28%29.md)
   Stops further execution of your code until the layer renderer leaves the paused state.
-- [LayerRenderer.Clock](layerrenderer/clock.md)
+- [LayerRenderer.Clock](./clock.md)
   A type that supports operations that require a precise time measurement.
 
 

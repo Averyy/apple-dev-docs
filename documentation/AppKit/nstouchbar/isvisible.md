@@ -1,7 +1,8 @@
 # isVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that Indicates whether the Touch Bar is eligible for display.
 
@@ -17,17 +18,22 @@ A Boolean value that Indicates whether the Touch Bar is eligible for display.
 var isVisible: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) indicates that the bar is attached to an eligible bar provider and that its items are displayable, assuming adequate geometric space. A *bar provider* is an object that conforms to the [`NSTouchBarProvider`](nstouchbarprovider.md) protocol. For more on bar providers, read [`Bar objects`](nstouchbar#Bar-objects.md).
+A value of [`true`](../../Swift/true.md) indicates that the bar is attached to an eligible bar provider and that its items are displayable, assuming adequate geometric space. A *bar provider* is an object that conforms to the [`NSTouchBarProvider`](../nstouchbarprovider.md) protocol. For more on bar providers, read [Bar objects](../nstouchbar.md#Bar-objects).
 
 This property is key–value observable.
 
 ## See Also
 
-- [var itemIdentifiers: [NSTouchBarItem.Identifier]](nstouchbar/itemidentifiers.md)
+### Observing bar status
+- [var itemIdentifiers: [NSTouchBarItem.Identifier]](./itemidentifiers.md)
   The list of identifiers for the current items in the Touch Bar.
-- [func item(forIdentifier: NSTouchBarItem.Identifier) -> NSTouchBarItem?](nstouchbar/item(foridentifier:).md)
+- [func item(forIdentifier: NSTouchBarItem.Identifier) -> NSTouchBarItem?](./item%28foridentifier%29.md)
   Returns the Touch Bar item that corresponds to a given identifier.
 
 

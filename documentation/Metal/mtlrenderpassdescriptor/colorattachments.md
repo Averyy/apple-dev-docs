@@ -1,7 +1,8 @@
 # colorAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of state information for attachments that store color data.
 
@@ -10,7 +11,7 @@ An array of state information for attachments that store color data.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ An array of state information for attachments that store color data.
 var colorAttachments: MTLRenderPassColorAttachmentDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLRenderPassColorAttachmentDescriptorArray * colorAttachments;
+```
+
 ## See Also
 
-- [var depthAttachment: MTLRenderPassDepthAttachmentDescriptor!](mtlrenderpassdescriptor/depthattachment.md)
+### Specifying the attachments for a rendering pass
+- [var depthAttachment: MTLRenderPassDepthAttachmentDescriptor!](./depthattachment.md)
   State information for an attachment that stores depth data.
-- [var stencilAttachment: MTLRenderPassStencilAttachmentDescriptor!](mtlrenderpassdescriptor/stencilattachment.md)
+- [var stencilAttachment: MTLRenderPassStencilAttachmentDescriptor!](./stencilattachment.md)
   State information for an attachment that stores stencil data.
 
 

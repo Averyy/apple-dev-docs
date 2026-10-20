@@ -1,7 +1,8 @@
 # kMIDIPropertyPrivate
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the system hides an endpoint from other clients.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the system hides an endpoint from other c
 let kMIDIPropertyPrivate: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyPrivate;
+```
+
 #### Discussion
 
 You can set this property on a device or entity, but it still appears in the API; the system only hides the object’s owned endpoints.
 
 ## See Also
 
-- [let kMIDIPropertyOffline: CFString](kmidipropertyoffline.md)
+### Status
+- [let kMIDIPropertyOffline: CFString](./kmidipropertyoffline.md)
   A Boolean value that indicates whether the object is offline.
 
 

@@ -1,7 +1,8 @@
 # AudioServicesPlayAlertSound(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Plays a system sound as an alert.
 
@@ -19,11 +20,15 @@ Plays a system sound as an alert.
 func AudioServicesPlayAlertSound(_ inSystemSoundID: SystemSoundID)
 ```
 
+```c
+extern void AudioServicesPlayAlertSound(SystemSoundID inSystemSoundID);
+```
+
 #### Discussion
 
 Depending on the particular iOS device, this function plays a short sound and may invoke vibration. Calling this function does the following on various iOS devices:
 
-- *iPhone*—plays the specified sound. If the user has configured the Settings application for vibration on ring, also invokes vibration. However, the device does *not* vibrate if your app’s audio session is configured with the  [`playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playandrecord) or [`record`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/record) audio session category. This ensures that vibration doesn’t interfere with audio recording. For an explanation of audio session categories, see [`Categories Express Audio Roles`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875-CH1-SW4).
+- *iPhone*—plays the specified sound. If the user has configured the Settings application for vibration on ring, also invokes vibration. However, the device does *not* vibrate if your app’s audio session is configured with the  [`playAndRecord`](../AVFAudio/avaudiosession/category-swift.struct/playandrecord.md) or [`record`](../AVFAudio/avaudiosession/category-swift.struct/record.md) audio session category. This ensures that vibration doesn’t interfere with audio recording. For an explanation of audio session categories, see [Categories Express Audio Roles](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875-CH1-SW4).
 - *iPod touch, original*—plays a short alert melody.
 - *iPod touch, 2nd generation and newer*—plays the specified sound.
 
@@ -33,19 +38,23 @@ In iOS, the duration of the sound to be played must not be more than 30 seconds.
 
 In macOS, when a user has configured System Preferences to flash the screen for alerts, or if sound cannot be rendered, calling this function will result in the screen flashing. In macOS, pass the constant `kSystemSoundID_UserPreferredAlert` to play the alert sound selected by the user in System Preferences. In iOS there is no preferred user alert sound.
 
-To play a short sound not used as an alert, use [`AudioServicesPlaySystemSound(_:)`](audioservicesplaysystemsound(_:).md).
+To play a short sound not used as an alert, use [`AudioServicesPlaySystemSound(_:)`](./audioservicesplaysystemsound%28_%29.md).
 
 ## Parameters
 
-- `inSystemSoundID`: The system sound object to play as an alert. Before using this function, call the [`AudioServicesCreateSystemSoundID(_:_:)`](audioservicescreatesystemsoundid(_:_:).md) function to obtain a system sound.
+- `inSystemSoundID`: The system sound object to play as an alert.
+
+  Before using this function, call the [`AudioServicesCreateSystemSoundID(_:_:)`](./audioservicescreatesystemsoundid%28_,_%29.md) function to obtain a system sound.
 
 ## See Also
 
-- [func AudioServicesCreateSystemSoundID(CFURL, UnsafeMutablePointer<SystemSoundID>) -> OSStatus](audioservicescreatesystemsoundid(_:_:).md)
+### Related Documentation
+- [func AudioServicesCreateSystemSoundID(CFURL, UnsafeMutablePointer<SystemSoundID>) -> OSStatus](./audioservicescreatesystemsoundid%28_,_%29.md)
   Creates a system sound object.
-- [func AudioServicesPlayAlertSoundWithCompletion(SystemSoundID, (() -> Void)?)](audioservicesplayalertsoundwithcompletion(_:_:).md)
-- [func AudioServicesPlaySystemSoundWithCompletion(SystemSoundID, (() -> Void)?)](audioservicesplaysystemsoundwithcompletion(_:_:).md)
-- [func AudioServicesPlaySystemSound(SystemSoundID)](audioservicesplaysystemsound(_:).md)
+### Playing Sounds
+- [func AudioServicesPlayAlertSoundWithCompletion(SystemSoundID, (() -> Void)?)](./audioservicesplayalertsoundwithcompletion%28_,_%29.md)
+- [func AudioServicesPlaySystemSoundWithCompletion(SystemSoundID, (() -> Void)?)](./audioservicesplaysystemsoundwithcompletion%28_,_%29.md)
+- [func AudioServicesPlaySystemSound(SystemSoundID)](./audioservicesplaysystemsound%28_%29.md)
   Plays a system sound object.
 
 

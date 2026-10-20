@@ -1,7 +1,8 @@
 # scopes
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directories to search.
 
@@ -24,9 +25,10 @@ Specify one or more directory URLs to scope the search to those directories and 
 
 ## See Also
 
-- [var fetchAttributes: [SearchableItemAttribute]](filesource/fetchattributes.md)
+### Configuring the search options
+- [var fetchAttributes: [SearchableItemAttribute]](./fetchattributes.md)
   The attributes to fetch for each file or directory and provide to the model.
-- [var maximumResultCount: Int?](filesource/maximumresultcount.md)
+- [var maximumResultCount: Int?](./maximumresultcount.md)
   The maximum number of results to retrieve from this source.
 
 

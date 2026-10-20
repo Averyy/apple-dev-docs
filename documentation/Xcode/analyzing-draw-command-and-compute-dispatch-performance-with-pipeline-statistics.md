@@ -1,6 +1,7 @@
 # Analyzing draw command and compute dispatch performance with pipeline statistics
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Identify issues within your frame capture by examining pipeline statistics.
 
@@ -8,13 +9,13 @@ Identify issues within your frame capture by examining pipeline statistics.
 
 The Pipeline Statistics viewer displays each shader stage in your pipeline state, the amount of time it took to complete, and the GPU activities it performed during that time.
 
-![A screenshot of the Pipeline Statistics viewer showing statistics for each shader and timing comparison across commands using the pipeline state.](/images/com.apple.Xcode/gputools-metal-debugger-psv-overview@2x.png)
+![A screenshot of the Pipeline Statistics viewer showing statistics for each shader and timing comparison across commands using the pipeline state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-psv-overview@2x.png)
 
-##### Interpret the Gpu Activities
+##### Interpret the GPU activities
 
 Various GPU activities appear with bar charts for compiler statistics and runtime profiling statistics.
 
-![A screenshot of the statistics for a shader. The top portion shows the timing by operations, and the bottom portion shows the number of instructions by operations.](/images/com.apple.Xcode/gputools-metal-debugger-psv-pipeline-statistics@2x.png)
+![A screenshot of the statistics for a shader. The top portion shows the timing by operations, and the bottom portion shows the number of instructions by operations.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-psv-pipeline-statistics@2x.png)
 
 | GPU activity | Explanation and recommendations |
 | --- | --- |
@@ -27,23 +28,24 @@ Various GPU activities appear with bar charts for compiler statistics and runtim
 | Synchronization (barrier) | The amount of time that the GPU spends when a thread reaches a barrier and the GPU waits for remaining threads in the same group to arrive at the barrier before proceeding. |
 | Synchronization (atomics) | The amount of time that the GPU spends on atomic instructions. |
 
-##### Inspect the Gpu Time of the Commands in the Pass
+##### Inspect the GPU time of the commands in the pass
 
 The bottom portion of the Pipeline Statistics viewer displays the GPU time in the Total column for each command in the pass so you can compare their respective elapsed times.
 
-![A screenshot of the timing comparison across commands using the pipeline state.](/images/com.apple.Xcode/gputools-metal-debugger-psv-commands@2x.png)
+![A screenshot of the timing comparison across commands using the pipeline state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-psv-commands@2x.png)
 
 ## See Also
 
-- [Inspecting the bound resources for a command](inspecting-the-bound-resources-for-a-command.md)
+### Metal command analysis
+- [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md)
   Discover issues by examining the bound resources at any point in an encoder.
-- [Inspecting the geometry of a draw command](inspecting-the-geometry-of-a-draw-command.md)
+- [Inspecting the geometry of a draw command](./inspecting-the-geometry-of-a-draw-command.md)
   Find problems in your app’s vertex, object, or mesh function by examining the current geometry.
-- [Inspecting the attachments of a draw command](inspecting-the-attachments-of-a-draw-command.md)
+- [Inspecting the attachments of a draw command](./inspecting-the-attachments-of-a-draw-command.md)
   Discover attachment issues by inspecting individual pixels and samples.
-- [Debugging the shaders within a draw command or compute dispatch](debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md)
+- [Debugging the shaders within a draw command or compute dispatch](./debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md)
   Identify and fix problematic shaders in your app using the shader debugger.
-- [Analyzing draw command and compute dispatch performance with GPU counters](analyzing-draw-command-and-compute-dispatch-performance-with-gpu-counters.md)
+- [Analyzing draw command and compute dispatch performance with GPU counters](./analyzing-draw-command-and-compute-dispatch-performance-with-gpu-counters.md)
   Identify issues within your frame capture by examining performance counters.
 
 

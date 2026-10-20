@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `FadeEnvironmentCommand` instance from the specified decoder.
 

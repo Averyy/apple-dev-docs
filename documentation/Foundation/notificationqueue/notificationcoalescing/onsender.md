@@ -1,7 +1,8 @@
 # onSender
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Coalesce notifications with the same object.
 
@@ -20,11 +21,16 @@ Coalesce notifications with the same object.
 static var onSender: NotificationQueue.NotificationCoalescing { get }
 ```
 
+```c
+NSNotificationCoalescingOnSender
+```
+
 ## See Also
 
-- [static var none: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/none.md)
+### Constants
+- [static var none: NotificationQueue.NotificationCoalescing](./none.md)
   Do not coalesce notifications in the queue.
-- [static var onName: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onname.md)
+- [static var onName: NotificationQueue.NotificationCoalescing](./onname.md)
   Coalesce notifications with the same name.
 
 

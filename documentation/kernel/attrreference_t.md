@@ -1,14 +1,15 @@
 # attrreference_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct attrreference {
     ...
 } attrreference_t;
@@ -17,8 +18,8 @@ typedef struct attrreference {
 ## Topics
 
 ### Instance Properties
-- [attr_dataoffset](attrreference_t/1555373-attr_dataoffset.md)
-- [attr_length](attrreference_t/1555171-attr_length.md)
+- [attr_dataoffset](./attrreference_t/api-1555373-attr_dataoffset.md)
+- [attr_length](./attrreference_t/api-1555171-attr_length.md)
 
 
 ---

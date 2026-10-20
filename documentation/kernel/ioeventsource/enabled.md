@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool enabled;
 ```
 
@@ -15,12 +15,13 @@ Is this event source enabled to deliver requests to the work-loop.
 
 ## See Also
 
-- [workLoop](ioeventsource/workloop.md)
-- [reserved](ioeventsource/reserved.md)
-- [refcon](ioeventsource/refcon.md)
-- [owner](ioeventsource/owner.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [action](ioeventsource/action-8l7.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [reserved](./reserved.md)
+- [refcon](./refcon.md)
+- [owner](./owner.md)
+- [eventChainNext](./eventchainnext.md)
+- [action](./action-8l7.md)
 
 
 ---

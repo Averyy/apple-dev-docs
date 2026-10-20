@@ -1,7 +1,8 @@
 # stringComparator
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A `String.StandardComparator` value.
 

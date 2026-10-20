@@ -1,7 +1,8 @@
 # SubscriptionGroupCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupCreateRequest.Data.Relationships.App](subscriptiongroupcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object SubscriptionGroupCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object SubscriptionGroupCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object SubscriptionGroupCreateRequest.Data.Attributes](subscriptiongroupcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionGroupCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription group create request resource.
 
 

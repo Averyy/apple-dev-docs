@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Raw data that contains a JSON-compatible encoding of the client data.
@@ -20,13 +21,18 @@ Raw data that contains a JSON-compatible encoding of the client data.
 var rawClientDataJSON: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * rawClientDataJSON;
+```
+
 #### Discussion
 
 This object acts as an input to the signing algorithm. It needs to be in JSON form for the relying party to verify the provided signature. The developer should ignore this value.
 
 ## See Also
 
-- [var credentialID: Data](aspublickeycredential/credentialid.md)
+### Getting the properties
+- [var credentialID: Data](./credentialid.md)
   An identifier that the authenticator generates during registration to uniquely identify a specific credential.
 
 

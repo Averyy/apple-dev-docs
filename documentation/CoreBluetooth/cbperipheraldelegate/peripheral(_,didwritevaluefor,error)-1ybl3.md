@@ -1,7 +1,8 @@
 # peripheral(_:didWriteValueFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the peripheral successfully set a value for the descriptor.
 
@@ -20,9 +21,13 @@ Tells the delegate that the peripheral successfully set a value for the descript
 optional func peripheral(_ peripheral: CBPeripheral, didWriteValueFor descriptor: CBDescriptor, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didWriteValueForDescriptor:(CBDescriptor *) descriptor error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`writeValue(_:for:)`](cbperipheral/writevalue(_:for:).md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`writeValue(_:for:)`](../cbperipheral/writevalue%28_,for%29.md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ Core Bluetooth invokes this method when your app calls the [`writeValue(_:for:)`
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didWriteValueFor: CBCharacteristic, error: (any Error)?)](cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-4f5ea.md)
+### Writing Characteristic and Descriptor Values
+- [func peripheral(CBPeripheral, didWriteValueFor: CBCharacteristic, error: (any Error)?)](./peripheral%28_,didwritevaluefor,error%29-4f5ea.md)
   Tells the delegate that the peripheral successfully set a value for the characteristic.
-- [func peripheralIsReady(toSendWriteWithoutResponse: CBPeripheral)](cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:).md)
+- [func peripheralIsReady(toSendWriteWithoutResponse: CBPeripheral)](./peripheralisready%28tosendwritewithoutresponse%29.md)
   Tells the delegate that a peripheral is again ready to send characteristic updates.
 
 

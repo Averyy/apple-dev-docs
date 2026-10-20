@@ -1,17 +1,22 @@
 # representedObject
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object represented by the menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var representedObject: Any? { get set }
+```
+
+```objc
+@property (strong, nullable) id representedObject;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ By setting a represented object for a menu item, you make an association between
 
 ## See Also
 
-- [var tag: Int](nsmenuitem/tag.md)
+### Related Documentation
+- [var tag: Int](./tag.md)
   The menu item’s tag.
 
 

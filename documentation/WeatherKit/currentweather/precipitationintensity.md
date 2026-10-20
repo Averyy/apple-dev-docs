@@ -1,7 +1,8 @@
 # precipitationIntensity
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current precipitation intensity in kilometers per hour.
 

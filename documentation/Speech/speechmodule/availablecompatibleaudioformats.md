@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The audio formats that this module is able to analyze, given its configuration.

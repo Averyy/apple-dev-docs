@@ -1,7 +1,8 @@
 # applicationDefault
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default location for persisting tips, which is generally your application’s support directory.
 

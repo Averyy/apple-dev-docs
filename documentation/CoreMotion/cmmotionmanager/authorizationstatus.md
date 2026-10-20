@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.2+
@@ -14,6 +15,10 @@
 
 ```swift
 class var authorizationStatus: CMAuthorizationStatus { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CMAuthorizationStatus authorizationStatus;
 ```
 
 

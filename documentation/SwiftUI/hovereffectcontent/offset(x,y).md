@@ -1,7 +1,8 @@
 # offset(x:y:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Offsets the view by the specified horizontal and vertical distances.
 

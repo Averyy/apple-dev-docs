@@ -1,7 +1,8 @@
 # MPSCNNYOLOLossDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies properties used by a YOLO loss kernel.
 
@@ -19,52 +20,57 @@ An object that specifies properties used by a YOLO loss kernel.
 class MPSCNNYOLOLossDescriptor
 ```
 
+```objc
+@interface MPSCNNYOLOLossDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var anchorBoxes: Data](mpscnnyololossdescriptor/anchorboxes.md)
-- [var classesLossDescriptor: MPSCNNLossDescriptor](mpscnnyololossdescriptor/classeslossdescriptor.md)
-- [var confidenceLossDescriptor: MPSCNNLossDescriptor](mpscnnyololossdescriptor/confidencelossdescriptor.md)
-- [var maxIOUForObjectAbsence: Float](mpscnnyololossdescriptor/maxiouforobjectabsence.md)
-- [var minIOUForObjectPresence: Float](mpscnnyololossdescriptor/miniouforobjectpresence.md)
-- [var numberOfAnchorBoxes: Int](mpscnnyololossdescriptor/numberofanchorboxes.md)
-- [var reduceAcrossBatch: Bool](mpscnnyololossdescriptor/reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpscnnyololossdescriptor/reductiontype.md)
-- [var rescore: Bool](mpscnnyololossdescriptor/rescore.md)
-- [var scaleClass: Float](mpscnnyololossdescriptor/scaleclass.md)
-- [var scaleNoObject: Float](mpscnnyololossdescriptor/scalenoobject.md)
-- [var scaleObject: Float](mpscnnyololossdescriptor/scaleobject.md)
-- [var scaleWH: Float](mpscnnyololossdescriptor/scalewh.md)
-- [var scaleXY: Float](mpscnnyololossdescriptor/scalexy.md)
-- [var whLossDescriptor: MPSCNNLossDescriptor](mpscnnyololossdescriptor/whlossdescriptor.md)
-- [var xyLossDescriptor: MPSCNNLossDescriptor](mpscnnyololossdescriptor/xylossdescriptor.md)
+- [var anchorBoxes: Data](./mpscnnyololossdescriptor/anchorboxes.md)
+- [var classesLossDescriptor: MPSCNNLossDescriptor](./mpscnnyololossdescriptor/classeslossdescriptor.md)
+- [var confidenceLossDescriptor: MPSCNNLossDescriptor](./mpscnnyololossdescriptor/confidencelossdescriptor.md)
+- [var maxIOUForObjectAbsence: Float](./mpscnnyololossdescriptor/maxiouforobjectabsence.md)
+- [var minIOUForObjectPresence: Float](./mpscnnyololossdescriptor/miniouforobjectpresence.md)
+- [var numberOfAnchorBoxes: Int](./mpscnnyololossdescriptor/numberofanchorboxes.md)
+- [var reduceAcrossBatch: Bool](./mpscnnyololossdescriptor/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](./mpscnnyololossdescriptor/reductiontype.md)
+- [var rescore: Bool](./mpscnnyololossdescriptor/rescore.md)
+- [var scaleClass: Float](./mpscnnyololossdescriptor/scaleclass.md)
+- [var scaleNoObject: Float](./mpscnnyololossdescriptor/scalenoobject.md)
+- [var scaleObject: Float](./mpscnnyololossdescriptor/scaleobject.md)
+- [var scaleWH: Float](./mpscnnyololossdescriptor/scalewh.md)
+- [var scaleXY: Float](./mpscnnyololossdescriptor/scalexy.md)
+- [var whLossDescriptor: MPSCNNLossDescriptor](./mpscnnyololossdescriptor/whlossdescriptor.md)
+- [var xyLossDescriptor: MPSCNNLossDescriptor](./mpscnnyololossdescriptor/xylossdescriptor.md)
 ### Type Methods
-- [class func cnnLossDescriptor(withXYLossType: MPSCNNLossType, whLossType: MPSCNNLossType, confidenceLossType: MPSCNNLossType, classesLossType: MPSCNNLossType, reductionType: MPSCNNReductionType, anchorBoxes: Data, numberOfAnchorBoxes: Int) -> MPSCNNYOLOLossDescriptor](mpscnnyololossdescriptor/cnnlossdescriptor(withxylosstype:whlosstype:confidencelosstype:classeslosstype:reductiontype:anchorboxes:numberofanchorboxes:).md)
+- [class func cnnLossDescriptor(withXYLossType: MPSCNNLossType, whLossType: MPSCNNLossType, confidenceLossType: MPSCNNLossType, classesLossType: MPSCNNLossType, reductionType: MPSCNNReductionType, anchorBoxes: Data, numberOfAnchorBoxes: Int) -> MPSCNNYOLOLossDescriptor](./mpscnnyololossdescriptor/cnnlossdescriptor%28withxylosstype,whlosstype,confidencelosstype,classeslosstype,reductiontype,anchorboxes,numberofanchorboxes%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNLoss](mpscnnloss.md)
+### Loss Layers
+- [class MPSCNNLoss](./mpscnnloss.md)
   A kernel that computes the loss and loss gradient between specified predictions and labels.
-- [class MPSCNNLossDataDescriptor](mpscnnlossdatadescriptor.md)
+- [class MPSCNNLossDataDescriptor](./mpscnnlossdatadescriptor.md)
   An object that specifies properties used by a loss data descriptor.
-- [class MPSCNNLossDescriptor](mpscnnlossdescriptor.md)
+- [class MPSCNNLossDescriptor](./mpscnnlossdescriptor.md)
   An object that specifies properties used by a loss kernel.
-- [class MPSCNNLossLabels](mpscnnlosslabels.md)
+- [class MPSCNNLossLabels](./mpscnnlosslabels.md)
   A class that stores the per-element weight buffer used by loss and gradient loss kernels.
-- [class MPSCNNYOLOLoss](mpscnnyololoss.md)
+- [class MPSCNNYOLOLoss](./mpscnnyololoss.md)
   A kernel that computes the YOLO loss and loss gradient between specified predictions and labels.
 
 

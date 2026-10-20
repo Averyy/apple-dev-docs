@@ -1,7 +1,8 @@
 # SubscriptionVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,20 +11,20 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionVersion.Relationships.Subscription](subscriptionversion/relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object SubscriptionVersion.Relationships.Image](subscriptionversion/relationships-data.dictionary/image-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Image](./relationships-data.dictionary/image-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object SubscriptionVersion.Relationships.Images](subscriptionversion/relationships-data.dictionary/images-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Images](./relationships-data.dictionary/images-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object SubscriptionVersion.Relationships.Localizations](subscriptionversion/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -35,7 +36,8 @@ object SubscriptionVersion.Relationships
 
 ## See Also
 
-- [object SubscriptionVersion.Attributes](subscriptionversion/attributes-data.dictionary.md)
+### Objects and types
+- [object SubscriptionVersion.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a SubscriptionVersion resource.
 
 

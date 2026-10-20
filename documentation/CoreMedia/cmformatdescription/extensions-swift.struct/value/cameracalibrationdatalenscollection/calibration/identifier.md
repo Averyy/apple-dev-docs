@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique number associated with a lens.
 

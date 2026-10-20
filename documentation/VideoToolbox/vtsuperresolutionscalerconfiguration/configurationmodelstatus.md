@@ -1,7 +1,8 @@
 # configurationModelStatus
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Reports the download status of models that the system needs for the current configuration.
 
@@ -17,13 +18,18 @@ Reports the download status of models that the system needs for the current conf
 var configurationModelStatus: VTSuperResolutionScalerConfiguration.ModelStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTSuperResolutionScalerConfigurationModelStatus configurationModelStatus;
+```
+
 ## See Also
 
-- [VTSuperResolutionScalerConfiguration.ModelStatus](vtsuperresolutionscalerconfiguration/modelstatus.md)
+### Managing the configuration model
+- [VTSuperResolutionScalerConfiguration.ModelStatus](./modelstatus.md)
   Available super-resolution processor model status types.
-- [var configurationModelPercentageAvailable: Float](vtsuperresolutionscalerconfiguration/configurationmodelpercentageavailable.md)
+- [var configurationModelPercentageAvailable: Float](./configurationmodelpercentageavailable.md)
   Returns a floating point value between 0.0 and 1.0 indicating the percentage of required model assets that have been downloaded.
-- [func downloadConfigurationModel(completionHandler: ((any Error)?) -> Void)](vtsuperresolutionscalerconfiguration/downloadconfigurationmodel(completionhandler:).md)
+- [func downloadConfigurationModel(completionHandler: ((any Error)?) -> Void)](./downloadconfigurationmodel%28completionhandler%29.md)
   Downloads models that the system needs for the current configuration.
 
 

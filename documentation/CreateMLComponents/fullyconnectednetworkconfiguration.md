@@ -1,7 +1,8 @@
 # FullyConnectedNetworkConfiguration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A fully connected network configuration.
 
@@ -23,60 +24,61 @@ struct FullyConnectedNetworkConfiguration
 ## Topics
 
 ### Creating a network configuration
-- [init()](fullyconnectednetworkconfiguration/init.md)
+- [init()](./fullyconnectednetworkconfiguration/init%28%29.md)
   Creates a default fully-connected-network configuration.
 ### Getting the properties
-- [var batchSize: Int](fullyconnectednetworkconfiguration/batchsize.md)
+- [var batchSize: Int](./fullyconnectednetworkconfiguration/batchsize.md)
   The number of examples to use per mini-batch.
-- [var dropoutProbability: Float](fullyconnectednetworkconfiguration/dropoutprobability.md)
+- [var dropoutProbability: Float](./fullyconnectednetworkconfiguration/dropoutprobability.md)
   The dropout probability.
-- [var earlyStopIterationCount: Int](fullyconnectednetworkconfiguration/earlystopiterationcount.md)
+- [var earlyStopIterationCount: Int](./fullyconnectednetworkconfiguration/earlystopiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var earlyStoppingTolerance: Double](fullyconnectednetworkconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Double](./fullyconnectednetworkconfiguration/earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var hiddenUnitCounts: [Int]](fullyconnectednetworkconfiguration/hiddenunitcounts.md)
+- [var hiddenUnitCounts: [Int]](./fullyconnectednetworkconfiguration/hiddenunitcounts.md)
   The number of neurons in each hidden layer.
-- [var learningRate: Float](fullyconnectednetworkconfiguration/learningrate.md)
+- [var learningRate: Float](./fullyconnectednetworkconfiguration/learningrate.md)
   The learning rate.
-- [var maximumIterations: Int](fullyconnectednetworkconfiguration/maximumiterations.md)
+- [var maximumIterations: Int](./fullyconnectednetworkconfiguration/maximumiterations.md)
   The maximum number of iterations.
-- [var randomSeed: Int](fullyconnectednetworkconfiguration/randomseed.md)
+- [var randomSeed: Int](./fullyconnectednetworkconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations such as column and row subsampling.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

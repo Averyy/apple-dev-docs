@@ -1,7 +1,8 @@
 # MTROperationalCertificateChain
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,27 +19,31 @@
 class MTROperationalCertificateChain
 ```
 
+```objc
+@interface MTROperationalCertificateChain : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, adminSubject: NSNumber?)](mtroperationalcertificatechain/init(operationalcertificate:intermediatecertificate:rootcertificate:adminsubject:).md)
+- [init(operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, adminSubject: NSNumber?)](./mtroperationalcertificatechain/init%28operationalcertificate,intermediatecertificate,rootcertificate,adminsubject%29.md)
 ### Instance Properties
-- [var adminSubject: NSNumber?](mtroperationalcertificatechain/adminsubject.md)
-- [var intermediateCertificate: Data?](mtroperationalcertificatechain/intermediatecertificate.md)
-- [var operationalCertificate: Data](mtroperationalcertificatechain/operationalcertificate.md)
-- [var rootCertificate: Data](mtroperationalcertificatechain/rootcertificate.md)
+- [var adminSubject: NSNumber?](./mtroperationalcertificatechain/adminsubject.md)
+- [var intermediateCertificate: Data?](./mtroperationalcertificatechain/intermediatecertificate.md)
+- [var operationalCertificate: Data](./mtroperationalcertificatechain/operationalcertificate.md)
+- [var rootCertificate: Data](./mtroperationalcertificatechain/rootcertificate.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

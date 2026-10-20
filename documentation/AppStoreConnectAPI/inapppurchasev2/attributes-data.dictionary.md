@@ -1,7 +1,8 @@
 # InAppPurchaseV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase v2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase v2 resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseV2.Attributes
 ```
 
@@ -26,11 +27,12 @@ object InAppPurchaseV2.Attributes
 
 ## See Also
 
-- [type InAppPurchaseType](inapppurchasetype.md)
+### Objects and types
+- [type InAppPurchaseType](../inapppurchasetype.md)
   A string that represents the type of an In-App Purchase.
-- [type InAppPurchaseState](inapppurchasestate.md)
+- [type InAppPurchaseState](../inapppurchasestate.md)
   A string that represents the review state of an In-App Purchase.
-- [object InAppPurchaseV2.Relationships](inapppurchasev2/relationships-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

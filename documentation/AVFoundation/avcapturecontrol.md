@@ -1,7 +1,8 @@
 # AVCaptureControl
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for controls that interact with the camera system.
 
@@ -18,9 +19,13 @@ An abstract base class for controls that interact with the camera system.
 class AVCaptureControl
 ```
 
+```objc
+@interface AVCaptureControl : NSObject
+```
+
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+- [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
 
 #### Overview
 
@@ -29,37 +34,38 @@ Capture controls provide the interface for interacting with the camera system fr
 ## Topics
 
 ### Setting the enabled state
-- [var isEnabled: Bool](avcapturecontrol/isenabled.md)
+- [var isEnabled: Bool](./avcapturecontrol/isenabled.md)
   A Boolean value that indicates whether this control supports user interaction.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVCaptureIndexPicker](avcaptureindexpicker.md)
-- [AVCaptureSlider](avcaptureslider.md)
-- [AVCaptureSystemExposureBiasSlider](avcapturesystemexposurebiasslider.md)
-- [AVCaptureSystemZoomSlider](avcapturesystemzoomslider.md)
+- [AVCaptureIndexPicker](./avcaptureindexpicker.md)
+- [AVCaptureSlider](./avcaptureslider.md)
+- [AVCaptureSystemExposureBiasSlider](./avcapturesystemexposurebiasslider.md)
+- [AVCaptureSystemZoomSlider](./avcapturesystemzoomslider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+### Capture controls
+- [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
   Provide direct access to your camera app’s features to help people quickly capture the perfect shot.
-- [class AVCaptureSystemZoomSlider](avcapturesystemzoomslider.md)
+- [class AVCaptureSystemZoomSlider](./avcapturesystemzoomslider.md)
   A control that adjusts the video zoom factor of a capture device within the system-recommended range.
-- [class AVCaptureSystemExposureBiasSlider](avcapturesystemexposurebiasslider.md)
+- [class AVCaptureSystemExposureBiasSlider](./avcapturesystemexposurebiasslider.md)
   A control that adjusts the exposure bias of a capture device within the system-recommended range.
-- [class AVCaptureSlider](avcaptureslider.md)
+- [class AVCaptureSlider](./avcaptureslider.md)
   A slider control that selects a value from a bounded range.
-- [class AVCaptureIndexPicker](avcaptureindexpicker.md)
+- [class AVCaptureIndexPicker](./avcaptureindexpicker.md)
   A control for selecting from a set of mutually exclusive values by index.
 
 

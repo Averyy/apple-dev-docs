@@ -1,6 +1,7 @@
 # Disabling and Enabling System Integrity Protection
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Disable system protections only temporarily during development to test drivers, kernel extensions, and other low-level code.
 
@@ -14,7 +15,7 @@ During development, it may be necessary for you to disable SIP temporarily to in
 
 To disable SIP, do the following:
 
-1. Restart your computer in [`Recovery mode`](https://developer.apple.comhttps://support.apple.com/en-us/HT201314).
+1. Restart your computer in [Recovery mode](https://support.apple.com/en-us/HT201314).
 2. Launch Terminal from the Utilities menu.
 3. Run the command `csrutil disable`.
 4. Restart your computer.
@@ -25,7 +26,7 @@ To disable SIP, do the following:
 
 To reenable SIP, do the following:
 
-1. Restart your computer in [`Recovery mode`](https://developer.apple.comhttps://support.apple.com/en-us/HT201314).
+1. Restart your computer in [Recovery mode](https://support.apple.com/en-us/HT201314).
 2. Launch Terminal from the Utilities menu.
 3. Run the command `csrutil enable`.
 4. Restart your computer.

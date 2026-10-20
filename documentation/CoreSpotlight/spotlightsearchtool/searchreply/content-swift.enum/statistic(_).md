@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.statistic(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scalar statistic (sum, average, max, min, median, stddev).
 

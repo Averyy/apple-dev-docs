@@ -1,7 +1,8 @@
 # init(specific:generic:table:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an `AppShortcutParameterPresentationTitle` with the specified parameters.
 
@@ -11,8 +12,10 @@ Initializes an `AppShortcutParameterPresentationTitle` with the specified parame
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
+
+> **Deprecated**: Please use init(for:summary:optionsCollections:)
 
 ## Declaration
 

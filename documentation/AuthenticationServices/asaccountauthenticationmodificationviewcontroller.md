@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationViewController
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that can upgrade user passwords to strong passwords, or convert accounts to use Sign in with Apple.
 
@@ -17,9 +18,21 @@ A view controller that can upgrade user passwords to strong passwords, or conver
 class ASAccountAuthenticationModificationViewController
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@interface ASAccountAuthenticationModificationViewController : UIViewController
+```
+
+*macOS*
+
+```objc
+@interface ASAccountAuthenticationModificationViewController : NSViewController
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Overview
 
@@ -30,68 +43,69 @@ Adding an account modification extension lets your app seamlessly upgrade user p
 ## Topics
 
 ### Upgrading to Sign in with Apple
-- [func convertAccountToSignInWithAppleWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/convertaccounttosigninwithapplewithoutuserinteraction(for:existingcredential:userinfo:).md)
+- [func convertAccountToSignInWithAppleWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](./asaccountauthenticationmodificationviewcontroller/convertaccounttosigninwithapplewithoutuserinteraction%28for,existingcredential,userinfo%29.md)
   Converts an account’s authentication mechanism from using passwords to using Sign in with Apple.
-- [func prepareInterfaceToConvertAccountToSignInWithApple(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/prepareinterfacetoconvertaccounttosigninwithapple(for:existingcredential:userinfo:).md)
+- [func prepareInterfaceToConvertAccountToSignInWithApple(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](./asaccountauthenticationmodificationviewcontroller/prepareinterfacetoconvertaccounttosigninwithapple%28for,existingcredential,userinfo%29.md)
   Prepares the view controller’s interface that displays when converting an account that uses password authentication to use Sign in with Apple.
-- [ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md)
+- [ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md)
   A Boolean value that indicates whether the extension supports upgrading from using password authentication to using Sign in with Apple.
 ### Upgrading to Strong Passwords
-- [func changePasswordWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/changepasswordwithoutuserinteraction(for:existingcredential:newpassword:userinfo:).md)
+- [func changePasswordWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](./asaccountauthenticationmodificationviewcontroller/changepasswordwithoutuserinteraction%28for,existingcredential,newpassword,userinfo%29.md)
   Upgrades a user’s weak password to a strong password.
-- [func prepareInterfaceToChangePassword(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/prepareinterfacetochangepassword(for:existingcredential:newpassword:userinfo:).md)
+- [func prepareInterfaceToChangePassword(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](./asaccountauthenticationmodificationviewcontroller/prepareinterfacetochangepassword%28for,existingcredential,newpassword,userinfo%29.md)
   Prepares the view controller’s interface that displays when upgrading from a weak password to a strong password.
-- [ASAccountAuthenticationModificationSupportsStrongPasswordChange](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange.md)
+- [ASAccountAuthenticationModificationSupportsStrongPasswordChange](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange.md)
   A Boolean value that indicates whether the extension supports upgrading a user’s password to a strong password.
-- [ASAccountAuthenticationModificationPasswordGenerationRequirements](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)
+- [ASAccountAuthenticationModificationPasswordGenerationRequirements](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)
   The rules the system satisfies when generating a strong password for your extension during an automatic upgrade.
-- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](../bundleresources/information-property-list/asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
+- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](../BundleResources/information-property-list/asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
   A Boolean value that indicates the system shouldn’t show security recommendation prompts when users sign in using the app.
 ### Handling Modification Requests
-- [func cancelRequest()](asaccountauthenticationmodificationviewcontroller/cancelrequest.md)
+- [func cancelRequest()](./asaccountauthenticationmodificationviewcontroller/cancelrequest%28%29.md)
   Cancels a request that the user initiated.
-- [protocol ASAccountAuthenticationModificationControllerDelegate](asaccountauthenticationmodificationcontrollerdelegate.md)
+- [protocol ASAccountAuthenticationModificationControllerDelegate](./asaccountauthenticationmodificationcontrollerdelegate.md)
   An interface you implement for receiving success and failure statuses about modification of an account’s authentication properties.
-- [protocol ASAccountAuthenticationModificationControllerPresentationContextProviding](asaccountauthenticationmodificationcontrollerpresentationcontextproviding.md)
+- [protocol ASAccountAuthenticationModificationControllerPresentationContextProviding](./asaccountauthenticationmodificationcontrollerpresentationcontextproviding.md)
   An interface you implement to coordinate presentation of the user interface when modifying an account’s authentication properties.
 ### Getting the Extension Context
-- [var extensionContext: ASAccountAuthenticationModificationExtensionContext](asaccountauthenticationmodificationviewcontroller/extensioncontext.md)
+- [var extensionContext: ASAccountAuthenticationModificationExtensionContext](./asaccountauthenticationmodificationviewcontroller/extensioncontext.md)
   The context your account authentication modification extension uses to provide information to the system.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+### Automatic security upgrades
+- [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
   Automatically and transparently convert accounts to Sign in with Apple or to use strong passwords for improved security.
-- [class ASAccountAuthenticationModificationController](asaccountauthenticationmodificationcontroller.md)
+- [class ASAccountAuthenticationModificationController](./asaccountauthenticationmodificationcontroller.md)
   An object that performs a request to modify an account’s authentication properties.
-- [class ASAccountAuthenticationModificationExtensionContext](asaccountauthenticationmodificationextensioncontext.md)
+- [class ASAccountAuthenticationModificationExtensionContext](./asaccountauthenticationmodificationextensioncontext.md)
   An object that you interact with to change an account’s password or to upgrade to Sign in with Apple.
 
 

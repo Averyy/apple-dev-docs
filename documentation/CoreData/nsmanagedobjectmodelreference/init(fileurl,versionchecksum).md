@@ -1,7 +1,8 @@
 # init(fileURL:versionChecksum:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object model reference for the model at the specified file URL.
 
@@ -20,9 +21,13 @@ Creates an object model reference for the model at the specified file URL.
 init(fileURL: URL, versionChecksum: String)
 ```
 
+```objc
+- (instancetype) initWithFileURL:(NSURL *) fileURL versionChecksum:(NSString *) versionChecksum;
+```
+
 #### Discussion
 
-To determine an object model’s version checksum, use its [`versionChecksum`](nsmanagedobjectmodel/versionchecksum.md) property. Alternatively, you can find the checksum in the versioned model’s `VersionInfo.plist` file or in Xcode’s build log.
+To determine an object model’s version checksum, use its [`versionChecksum`](../nsmanagedobjectmodel/versionchecksum.md) property. Alternatively, you can find the checksum in the versioned model’s `VersionInfo.plist` file or in Xcode’s build log.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ To determine an object model’s version checksum, use its [`versionChecksum`](n
 
 ## See Also
 
-- [init(model: NSManagedObjectModel, versionChecksum: String)](nsmanagedobjectmodelreference/init(model:versionchecksum:).md)
+### Creating a reference
+- [init(model: NSManagedObjectModel, versionChecksum: String)](./init%28model,versionchecksum%29.md)
   Creates an object model reference for the specified model.
-- [init(name: String, in: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(name:in:versionchecksum:).md)
+- [init(name: String, in: Bundle?, versionChecksum: String)](./init%28name,in,versionchecksum%29.md)
   Creates an object model reference for the named model in the specified bundle.
-- [init(entityVersionHashes: [AnyHashable : Any], in: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(entityversionhashes:in:versionchecksum:).md)
+- [init(entityVersionHashes: [AnyHashable : Any], in: Bundle?, versionChecksum: String)](./init%28entityversionhashes,in,versionchecksum%29.md)
   Creates an object model reference with the entities corresponding to the specified entity version hashes.
 
 

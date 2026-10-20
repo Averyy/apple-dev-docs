@@ -1,7 +1,8 @@
 # hasLearnedWord(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether the text checker has learned the specified word.
 
@@ -9,7 +10,7 @@ Returns whether the text checker has learned the specified word.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns whether the text checker has learned the specified word.
 class func hasLearnedWord(_ word: String) -> Bool
 ```
 
+```objc
++ (BOOL) hasLearnedWord:(NSString *) word;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the class has learned the word, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the class has learned the word, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -28,13 +33,14 @@ class func hasLearnedWord(_ word: String) -> Bool
 
 ## See Also
 
-- [func ignoreWord(String)](uitextchecker/ignoreword(_:).md)
+### Learning and Ignoring Words
+- [func ignoreWord(String)](./ignoreword%28_%29.md)
   Tells the text checker to ignore the specified word when spell-checking.
-- [var ignoredWords: [String]?](uitextchecker/ignoredwords.md)
+- [var ignoredWords: [String]?](./ignoredwords.md)
   Returns the words that the text checker ignores when spell-checking.
-- [class func learnWord(String)](uitextchecker/learnword(_:).md)
+- [class func learnWord(String)](./learnword%28_%29.md)
   Tells the text checker to learn the specified word so that it doesn’t evaluate it as misspelled.
-- [class func unlearnWord(String)](uitextchecker/unlearnword(_:).md)
+- [class func unlearnWord(String)](./unlearnword%28_%29.md)
   Tells the text checker to unlearn the specified word.
 
 

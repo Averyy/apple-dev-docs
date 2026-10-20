@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAGPStateEnablePending](1645943-anonymous/kioagpstateenablepending.md)
-- [kIOAGPStateEnabled](1645943-anonymous/kioagpstateenabled.md)
+- [kIOAGPStateEnablePending](./api-1645943-anonymous/kioagpstateenablepending.md)
+- [kIOAGPStateEnabled](./api-1645943-anonymous/kioagpstateenabled.md)
 
 
 ---

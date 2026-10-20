@@ -1,7 +1,8 @@
 # kSecACLAuthorizationExportClear
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Export an unencrypted key.
 
@@ -12,6 +13,10 @@ Export an unencrypted key.
 
 ```swift
 let kSecACLAuthorizationExportClear: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationExportClear;
 ```
 
 

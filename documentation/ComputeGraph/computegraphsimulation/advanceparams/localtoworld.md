@@ -1,7 +1,8 @@
 # localToWorld
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform from the system’s local space to world space.
 
@@ -12,7 +13,7 @@ The transform from the system’s local space to world space.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

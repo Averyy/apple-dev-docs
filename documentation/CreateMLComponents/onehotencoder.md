@@ -1,7 +1,8 @@
 # OneHotEncoder
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that encodes categorical values to an integer array.
 
@@ -27,40 +28,41 @@ The encoded array has an element count equal to the number of categories to enco
 ## Topics
 
 ### Creating the estimator
-- [init()](onehotencoder/init.md)
+- [init()](./onehotencoder/init%28%29.md)
   Creates a one-hot encoding estimator.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> OneHotEncoder<Category>.Transformer](onehotencoder/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> OneHotEncoder<Category>.Transformer](./onehotencoder/fitted%28to,eventhandler%29.md)
   Fits a one-hot encoder to a sequence of categories.
 ### Default Implementations
-- [Estimator Implementations](onehotencoder/estimator-implementations.md)
-- [UpdatableEstimator Implementations](onehotencoder/updatableestimator-implementations.md)
+- [Estimator Implementations](./onehotencoder/estimator-implementations.md)
+- [UpdatableEstimator Implementations](./onehotencoder/updatableestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UpdatableEstimator](updatableestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UpdatableEstimator](./updatableestimator.md)
 
 ## See Also
 
-- [struct LinearTransformer](lineartransformer.md)
+### Preprocessors
+- [struct LinearTransformer](./lineartransformer.md)
   A transformer that runs an input through a scale and offset.
-- [struct ImputeTransformer](imputetransformer.md)
+- [struct ImputeTransformer](./imputetransformer.md)
   A transformer that replaces missing values with a pre-defined value.
-- [struct OrdinalEncoder](ordinalencoder.md)
+- [struct OrdinalEncoder](./ordinalencoder.md)
   An ordinal encoder estimator encodes categorical values to ordinal integer values.
-- [struct NumericImputer](numericimputer.md)
+- [struct NumericImputer](./numericimputer.md)
   An estimator that replaces missing values in the numeric input.
-- [struct Reshaper](reshaper.md)
+- [struct Reshaper](./reshaper.md)
   A transformer that reshapes a shaped array.
-- [struct CategoricalImputer](categoricalimputer.md)
+- [struct CategoricalImputer](./categoricalimputer.md)
   An estimator that replaces missing values in the categorical input.
-- [struct OptionalUnwrapper](optionalunwrapper.md)
+- [struct OptionalUnwrapper](./optionalunwrapper.md)
   A transformer that unwraps optional elements and throws when encountering missing values.
 
 

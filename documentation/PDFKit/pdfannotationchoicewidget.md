@@ -1,17 +1,24 @@
 # PDFAnnotationChoiceWidget
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `PDFAnnotationChoiceWidget` object provides user interactivity on a page of a PDF document, in the form of pop-up menus and lists.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
+
+> **Deprecated**: Use [`PDFAnnotationSubtype`](./pdfannotationsubtype.md) instead.
 
 ## Declaration
 
 ```swift
 class PDFAnnotationChoiceWidget
+```
+
+```objc
+@interface PDFAnnotationChoiceWidget : PDFAnnotation
 ```
 
 #### Overview
@@ -21,75 +28,76 @@ class PDFAnnotationChoiceWidget
 ## Topics
 
 ### Getting and Setting the String Value
-- [func stringValue() -> String!](pdfannotationchoicewidget/stringvalue.md)
+- [func stringValue() -> String!](./pdfannotationchoicewidget/stringvalue%28%29.md)
   Returns the selection in the widget annotation.
-- [func setStringValue(String!)](pdfannotationchoicewidget/setstringvalue(_:).md)
+- [func setStringValue(String!)](./pdfannotationchoicewidget/setstringvalue%28_%29.md)
   Sets the selection in the widget annotation.
 ### Managing Font and Background Color Characteristics
-- [func backgroundColor() -> NSColor!](pdfannotationchoicewidget/backgroundcolor.md)
+- [func backgroundColor() -> NSColor!](./pdfannotationchoicewidget/backgroundcolor%28%29.md)
   Returns the color of the widget annotation background.
-- [func setBackgroundColor(NSColor!)](pdfannotationchoicewidget/setbackgroundcolor(_:).md)
+- [func setBackgroundColor(NSColor!)](./pdfannotationchoicewidget/setbackgroundcolor%28_%29.md)
   Sets the background color of the widget annotation.
-- [func font() -> NSFont!](pdfannotationchoicewidget/font.md)
+- [func font() -> NSFont!](./pdfannotationchoicewidget/font%28%29.md)
   Returns the font used to display the text in the widget annotation.
-- [func setFont(NSFont!)](pdfannotationchoicewidget/setfont(_:).md)
+- [func setFont(NSFont!)](./pdfannotationchoicewidget/setfont%28_%29.md)
   Sets the font used to display the text in the widget annotation.
-- [func fontColor() -> NSColor!](pdfannotationchoicewidget/fontcolor.md)
+- [func fontColor() -> NSColor!](./pdfannotationchoicewidget/fontcolor%28%29.md)
   Returns the font color used to display the text in the widget annotation.
-- [func setFontColor(NSColor!)](pdfannotationchoicewidget/setfontcolor(_:).md)
+- [func setFontColor(NSColor!)](./pdfannotationchoicewidget/setfontcolor%28_%29.md)
   Sets the font color used to display the text in the widget annotation.
 ### Managing the Associated Field Name
-- [func fieldName() -> String!](pdfannotationchoicewidget/fieldname.md)
+- [func fieldName() -> String!](./pdfannotationchoicewidget/fieldname%28%29.md)
   Returns the internal field name associated with the widget annotation.
-- [func setFieldName(String!)](pdfannotationchoicewidget/setfieldname(_:).md)
+- [func setFieldName(String!)](./pdfannotationchoicewidget/setfieldname%28_%29.md)
   Sets the internal field name associated with the widget annotation’s value.
 ### Determining the Type of Choice Widget Annotation
-- [func isListChoice() -> Bool](pdfannotationchoicewidget/islistchoice.md)
+- [func isListChoice() -> Bool](./pdfannotationchoicewidget/islistchoice%28%29.md)
   Returns a Boolean value indicating whether the widget annotation is a list.
-- [func setIsListChoice(Bool)](pdfannotationchoicewidget/setislistchoice(_:).md)
+- [func setIsListChoice(Bool)](./pdfannotationchoicewidget/setislistchoice%28_%29.md)
   Sets whether the widget annotation is a list.
 ### Accessing the Items in the Choice Widget Annotation
-- [func choices() -> [Any]!](pdfannotationchoicewidget/choices.md)
+- [func choices() -> [Any]!](./pdfannotationchoicewidget/choices%28%29.md)
   Returns an array of strings that represent the items available in the list or pop-up menu of the choice widget annotation.
-- [func setChoices([Any]!)](pdfannotationchoicewidget/setchoices(_:).md)
+- [func setChoices([Any]!)](./pdfannotationchoicewidget/setchoices%28_%29.md)
   Sets the items available in the list or pop-up menu of the choice widget annotation.
 
 ## Relationships
 
 ### Inherits From
-- [PDFAnnotation](pdfannotation.md)
+- [PDFAnnotation](./pdfannotation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PDFAnnotationButtonWidget](pdfannotationbuttonwidget.md)
+### Deprecated Annotation Types
+- [class PDFAnnotationButtonWidget](./pdfannotationbuttonwidget.md)
   A `PDFAnnotationButtonWidget` object provides user interactivity on a page of a PDF document. There are three types of buttons available: push button, radio button, and checkbox.
-- [class PDFAnnotationCircle](pdfannotationcircle.md)
-- [class PDFAnnotationFreeText](pdfannotationfreetext.md)
+- [class PDFAnnotationCircle](./pdfannotationcircle.md)
+- [class PDFAnnotationFreeText](./pdfannotationfreetext.md)
   A `PDFAnnotationFreeText` object displays text on a page.
-- [class PDFAnnotationInk](pdfannotationink.md)
-- [class PDFAnnotationLine](pdfannotationline.md)
+- [class PDFAnnotationInk](./pdfannotationink.md)
+- [class PDFAnnotationLine](./pdfannotationline.md)
   A `PDFAnnotationLine` object displays a single line on a page.
-- [class PDFAnnotationLink](pdfannotationlink.md)
-- [class PDFAnnotationMarkup](pdfannotationmarkup.md)
+- [class PDFAnnotationLink](./pdfannotationlink.md)
+- [class PDFAnnotationMarkup](./pdfannotationmarkup.md)
   A `PDFAnnotationMarkup` object appears as highlighting, underlining, or a strikethrough style applied to the text of a document.
-- [class PDFAnnotationPopup](pdfannotationpopup.md)
+- [class PDFAnnotationPopup](./pdfannotationpopup.md)
   A `PDFAnnotationPopup` object provides user interactivity on a PDF page in the form of a pop-up menu.
-- [class PDFAnnotationSquare](pdfannotationsquare.md)
+- [class PDFAnnotationSquare](./pdfannotationsquare.md)
   A rectangle annotation on a page.
-- [class PDFAnnotationStamp](pdfannotationstamp.md)
+- [class PDFAnnotationStamp](./pdfannotationstamp.md)
   A `PDFAnnotationStamp` object allows you to display a word or phrase, such as “Confidential,” in a PDF page.
-- [class PDFAnnotationText](pdfannotationtext.md)
+- [class PDFAnnotationText](./pdfannotationtext.md)
   A `PDFAnnotationText` object displays as an icon (such as a “sticky note”) attached to a specified point in the PDF document.
-- [class PDFAnnotationTextWidget](pdfannotationtextwidget.md)
+- [class PDFAnnotationTextWidget](./pdfannotationtextwidget.md)
   A `PDFAnnotationTextWidget` object allows you to manage the appearance and content of text fields.
 
 

@@ -1,7 +1,8 @@
 # saveSubscriptions
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves one or more subscriptions to record changes.
 
@@ -10,7 +11,7 @@ Saves one or more subscriptions to record changes.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.SubscriptionsResponse, CloudKit.CKError> saveSubscriptions(
 	CloudKit.Subscription|CloudKit.Subscription[] subscriptions
 );
@@ -18,15 +19,15 @@ Promise<CloudKit.SubscriptionsResponse, CloudKit.CKError> saveSubscriptions(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](cloudkit.subscriptionsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
-Instead of fetching records, you can subscribe to changes, and let the server run the query in the background. You subscribe to changes by creating a subscription, represented by a [`CloudKit.Subscription`](cloudkit.subscription.md) dictionary, and saving it to a database. Then you register for push notifications and handle them when they arrive.
+Instead of fetching records, you can subscribe to changes, and let the server run the query in the background. You subscribe to changes by creating a subscription, represented by a [`CloudKit.Subscription`](../cloudkit.subscription.md) dictionary, and saving it to a database. Then you register for push notifications and handle them when they arrive.
 
 Subscribing to Zone Changes
 
-To subscribe to all changes in a zone, set the [`CloudKit.Subscription`](cloudkit.subscription.md) dictionary’s `subscriptionType` key to `zone` and set the `zoneID` key to the name of the zone you want to observe.
+To subscribe to all changes in a zone, set the [`CloudKit.Subscription`](../cloudkit.subscription.md) dictionary’s `subscriptionType` key to `zone` and set the `zoneID` key to the name of the zone you want to observe.
 
 ```javascript
 var zoneSubscription = {
@@ -36,7 +37,7 @@ var zoneSubscription = {
 };
 ```
 
-Save the subscription using the [`saveSubscriptions`](cloudkit.database/savesubscriptions.md) method.
+Save the subscription using the [`saveSubscriptions`](./savesubscriptions.md) method.
 
 ```javascript
 database.saveSubscriptions(zoneSubscription).then(function(response) {
@@ -49,11 +50,11 @@ database.saveSubscriptions(zoneSubscription).then(function(response) {
 });
 ```
 
-To get the saved subscription, use the [`subscriptions`](cloudkit.subscriptionsresponse/subscriptions.md) property in the [`CloudKit.SubscriptionsResponse`](cloudkit.subscriptionsresponse.md) class.
+To get the saved subscription, use the [`subscriptions`](../cloudkit.subscriptionsresponse/subscriptions.md) property in the [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) class.
 
 Subscribing to Record Changes Using a Query
 
-Create a query subscription object (a [`CloudKit.Subscription`](cloudkit.subscription.md) dictionary with the `subscriptionType` key set to `query`) specifying the record type, matching criteria, and types of changes you want to be notified about. Then save the query subscription object to the database.
+Create a query subscription object (a [`CloudKit.Subscription`](../cloudkit.subscription.md) dictionary with the `subscriptionType` key set to `query`) specifying the record type, matching criteria, and types of changes you want to be notified about. Then save the query subscription object to the database.
 
 For example, subscribe to receive new artwork from an artist where the `artist` field in the `Artwork` record type is a `Reference` type. First create a reference to the `Artist` record to use in the query.
 
@@ -83,7 +84,7 @@ var querySubscription = {
 };
 ```
 
-Save the subscription using the [`saveSubscriptions`](cloudkit.database/savesubscriptions.md) method and get the saved subscription using the [`subscriptions`](cloudkit.subscriptionsresponse/subscriptions.md) property in the [`CloudKit.SubscriptionsResponse`](cloudkit.subscriptionsresponse.md) class.
+Save the subscription using the [`saveSubscriptions`](./savesubscriptions.md) method and get the saved subscription using the [`subscriptions`](../cloudkit.subscriptionsresponse/subscriptions.md) property in the [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) class.
 
 ```javascript
 database.saveSubscriptions(querySubscription).then(function(response) {
@@ -98,7 +99,7 @@ database.saveSubscriptions(querySubscription).then(function(response) {
 
 Handling Subscription Push Notifications
 
-Add a notification listener to the app’s container using the [`addNotificationListener`](cloudkit.container/addnotificationlistener.md) method in the [`CloudKit.Container`](cloudkit.container.md) class and implement the listener to handle the push notifications.
+Add a notification listener to the app’s container using the [`addNotificationListener`](../cloudkit.container/addnotificationlistener.md) method in the [`CloudKit.Container`](../cloudkit.container.md) class and implement the listener to handle the push notifications.
 
 ```javascript
 myContainer.addNotificationListener(function(notification) {
@@ -106,13 +107,13 @@ myContainer.addNotificationListener(function(notification) {
 });
 ```
 
-For details on the [`CloudKit.Notification`](cloudkit.notification.md) object passed to the listener, read [`CloudKit.Notification`](cloudkit.notification.md).
+For details on the [`CloudKit.Notification`](../cloudkit.notification.md) object passed to the listener, read [`CloudKit.Notification`](../cloudkit.notification.md).
 
 Registering for Subscription Push Notifications
 
 Saving subscriptions to the database doesn’t automatically configure your web app to receive notifications when a subscription fires. CloudKit uses the Apple Push Notification service (APNs) to send notifications, so your web app needs to register for push notifications to receive them.
 
-To receive push notifications when a subscription fires, use the [`registerForNotifications`](cloudkit.container/registerfornotifications.md) method in the [`CloudKit.Container`](cloudkit.container.md) class.
+To receive push notifications when a subscription fires, use the [`registerForNotifications`](../cloudkit.container/registerfornotifications.md) method in the [`CloudKit.Container`](../cloudkit.container.md) class.
 
 ```javascript
 var myContainer = CloudKit.getDefaultContainer();
@@ -121,18 +122,21 @@ myContainer.registerForNotifications();
 
 ## Parameters
 
-- `subscriptions`: Possible values are: | Type | Description |
-| --- | --- |
-| [`CloudKit.Subscription`](cloudkit.subscription.md) | A subscription in the database to save. |
-| `CloudKit.Subscription[]` | An array of subscriptions to save. |
+- `subscriptions`: Possible values are:
+
+  | Type | Description |
+  | --- | --- |
+  | [`CloudKit.Subscription`](../cloudkit.subscription.md) | A subscription in the database to save. |
+  | `CloudKit.Subscription[]` | An array of subscriptions to save. |
 
 ## See Also
 
-- [fetchSubscriptions](cloudkit.database/fetchsubscriptions.md)
+### Subscribing to Changes
+- [fetchSubscriptions](./fetchsubscriptions.md)
   Fetches one or more subscriptions.
-- [fetchAllSubscriptions](cloudkit.database/fetchallsubscriptions.md)
+- [fetchAllSubscriptions](./fetchallsubscriptions.md)
   Fetches all subscriptions in the schema.
-- [deleteSubscriptions](cloudkit.database/deletesubscriptions.md)
+- [deleteSubscriptions](./deletesubscriptions.md)
   Deletes one or more subscriptions.
 
 

@@ -1,7 +1,8 @@
 # Character.UTF16View
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A view of a character’s contents as a collection of UTF-16 code units. See String.UTF16View for more information
 

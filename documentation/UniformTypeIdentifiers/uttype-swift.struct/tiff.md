@@ -1,7 +1,8 @@
 # tiff
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a TIFF image.
 
@@ -24,23 +25,24 @@ static var tiff: UTType { get }
 
 The identifier for this type is `public.tiff`.
 
-This type conforms to [`UTTypeImage`](uttypeimage.md).
+This type conforms to [`UTTypeImage`](../uttypeimage.md).
 
 ## See Also
 
-- [static var png: UTType](uttype-swift.struct/png.md)
+### Images
+- [static var png: UTType](./png.md)
   A type that represents a PNG image.
-- [static var gif: UTType](uttype-swift.struct/gif.md)
+- [static var gif: UTType](./gif.md)
   A type that represents a GIF image.
-- [static var jpeg: UTType](uttype-swift.struct/jpeg.md)
+- [static var jpeg: UTType](./jpeg.md)
   A type that represents a JPEG image.
-- [static var webP: UTType](uttype-swift.struct/webp.md)
+- [static var webP: UTType](./webp.md)
   A type that represents a WebP image.
-- [static var bmp: UTType](uttype-swift.struct/bmp.md)
+- [static var bmp: UTType](./bmp.md)
   A type that represents a Windows bitmap image.
-- [static var svg: UTType](uttype-swift.struct/svg.md)
+- [static var svg: UTType](./svg.md)
   A type that represents a scalable vector graphics (SVG) image.
-- [static var rawImage: UTType](uttype-swift.struct/rawimage.md)
+- [static var rawImage: UTType](./rawimage.md)
   A base type that represents a raw image format that you use in digital photography.
 
 

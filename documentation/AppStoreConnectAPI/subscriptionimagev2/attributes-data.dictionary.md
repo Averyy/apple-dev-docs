@@ -1,7 +1,8 @@
 # SubscriptionImageV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a SubscriptionImageV2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a SubscriptionImageV2 resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImageV2.Attributes
 ```
 

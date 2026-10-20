@@ -1,7 +1,8 @@
 # collapsesBorders
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -17,12 +18,17 @@
 var collapsesBorders: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL collapsesBorders;
+```
+
 ## See Also
 
-- [var numberOfColumns: Int](nstexttable/numberofcolumns.md)
-- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.property.md)
-- [var hidesEmptyCells: Bool](nstexttable/hidesemptycells.md)
-- [NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum.md)
+### Configuring the table
+- [var numberOfColumns: Int](./numberofcolumns.md)
+- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.property.md)
+- [var hidesEmptyCells: Bool](./hidesemptycells.md)
+- [NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.enum.md)
 
 
 ---

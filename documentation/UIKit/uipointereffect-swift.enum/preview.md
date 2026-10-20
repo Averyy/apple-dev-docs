@@ -1,7 +1,8 @@
 # preview
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A preview of the view used during an interaction’s animations.
 
@@ -9,7 +10,7 @@ A preview of the view used during an interaction’s animations.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

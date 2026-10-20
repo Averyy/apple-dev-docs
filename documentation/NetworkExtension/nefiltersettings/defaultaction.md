@@ -1,7 +1,8 @@
 # defaultAction
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default action to take for flows of network data that don’t match any of the specified rules.
 
@@ -14,9 +15,14 @@ The default action to take for flows of network data that don’t match any of t
 var defaultAction: NEFilterAction { get }
 ```
 
+```objc
+@property (readonly) NEFilterAction defaultAction;
+```
+
 ## See Also
 
-- [var rules: [NEFilterRule]](nefiltersettings/rules.md)
+### Inspecting Filter Settings
+- [var rules: [NEFilterRule]](./rules.md)
   An ordered list of rules that define the filter’s operation.
 
 

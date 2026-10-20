@@ -1,7 +1,8 @@
 # NLLanguage
 
 **Framework**: Natural Language  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The languages that the Natural Language framework supports.
 
@@ -20,149 +21,154 @@ The languages that the Natural Language framework supports.
 struct NLLanguage
 ```
 
+```c
+typedef NSString * NLLanguage;
+```
+
 ## Mentions
 
-- [Identifying the language in text](identifying-the-language-in-text.md)
+- [Identifying the language in text](./identifying-the-language-in-text.md)
 
 ## Topics
 
 ### Getting standard languages
-- [static let amharic: NLLanguage](nllanguage/amharic.md)
+- [static let amharic: NLLanguage](./nllanguage/amharic.md)
   The unique identifier string for the Amharic language.
-- [static let arabic: NLLanguage](nllanguage/arabic.md)
+- [static let arabic: NLLanguage](./nllanguage/arabic.md)
   The unique identifier string for the Arabic language.
-- [static let armenian: NLLanguage](nllanguage/armenian.md)
+- [static let armenian: NLLanguage](./nllanguage/armenian.md)
   The unique identifier string for the Armenian language.
-- [static let bengali: NLLanguage](nllanguage/bengali.md)
+- [static let bengali: NLLanguage](./nllanguage/bengali.md)
   The unique identifier string for the Bengali language.
-- [static let bulgarian: NLLanguage](nllanguage/bulgarian.md)
+- [static let bulgarian: NLLanguage](./nllanguage/bulgarian.md)
   The unique identifier string for the Bulgarian language.
-- [static let burmese: NLLanguage](nllanguage/burmese.md)
+- [static let burmese: NLLanguage](./nllanguage/burmese.md)
   The unique identifier string for the Burmese language.
-- [static let catalan: NLLanguage](nllanguage/catalan.md)
+- [static let catalan: NLLanguage](./nllanguage/catalan.md)
   The unique identifier string for the Catalan language.
-- [static let cherokee: NLLanguage](nllanguage/cherokee.md)
+- [static let cherokee: NLLanguage](./nllanguage/cherokee.md)
   The unique identifier string for the Cherokee language.
-- [static let croatian: NLLanguage](nllanguage/croatian.md)
+- [static let croatian: NLLanguage](./nllanguage/croatian.md)
   The unique identifier string for the Croatian language.
-- [static let czech: NLLanguage](nllanguage/czech.md)
+- [static let czech: NLLanguage](./nllanguage/czech.md)
   The unique identifier string for the Czech language.
-- [static let danish: NLLanguage](nllanguage/danish.md)
+- [static let danish: NLLanguage](./nllanguage/danish.md)
   The unique identifier string for the Danish language.
-- [static let dutch: NLLanguage](nllanguage/dutch.md)
+- [static let dutch: NLLanguage](./nllanguage/dutch.md)
   The unique identifier string for the Dutch language.
-- [static let english: NLLanguage](nllanguage/english.md)
+- [static let english: NLLanguage](./nllanguage/english.md)
   The unique identifier string for the English language.
-- [static let finnish: NLLanguage](nllanguage/finnish.md)
+- [static let finnish: NLLanguage](./nllanguage/finnish.md)
   The unique identifier string for the Finnish language.
-- [static let french: NLLanguage](nllanguage/french.md)
+- [static let french: NLLanguage](./nllanguage/french.md)
   The unique identifier string for the French language.
-- [static let georgian: NLLanguage](nllanguage/georgian.md)
+- [static let georgian: NLLanguage](./nllanguage/georgian.md)
   The unique identifier string for the Georgian language.
-- [static let german: NLLanguage](nllanguage/german.md)
+- [static let german: NLLanguage](./nllanguage/german.md)
   The unique identifier string for the German language.
-- [static let greek: NLLanguage](nllanguage/greek.md)
+- [static let greek: NLLanguage](./nllanguage/greek.md)
   The unique identifier string for the Greek language.
-- [static let gujarati: NLLanguage](nllanguage/gujarati.md)
+- [static let gujarati: NLLanguage](./nllanguage/gujarati.md)
   The unique identifier string for the Gujarati language.
-- [static let hebrew: NLLanguage](nllanguage/hebrew.md)
+- [static let hebrew: NLLanguage](./nllanguage/hebrew.md)
   The unique identifier string for the Hebrew language.
-- [static let hindi: NLLanguage](nllanguage/hindi.md)
+- [static let hindi: NLLanguage](./nllanguage/hindi.md)
   The unique identifier string for the Hindi language.
-- [static let hungarian: NLLanguage](nllanguage/hungarian.md)
+- [static let hungarian: NLLanguage](./nllanguage/hungarian.md)
   The unique identifier string for the Hungarian language.
-- [static let icelandic: NLLanguage](nllanguage/icelandic.md)
+- [static let icelandic: NLLanguage](./nllanguage/icelandic.md)
   The unique identifier string for the Icelandic language.
-- [static let indonesian: NLLanguage](nllanguage/indonesian.md)
+- [static let indonesian: NLLanguage](./nllanguage/indonesian.md)
   The unique identifier string for the Indonesian language.
-- [static let italian: NLLanguage](nllanguage/italian.md)
+- [static let italian: NLLanguage](./nllanguage/italian.md)
   The unique identifier string for the Italian language.
-- [static let japanese: NLLanguage](nllanguage/japanese.md)
+- [static let japanese: NLLanguage](./nllanguage/japanese.md)
   The unique identifier string for the Japanese language.
-- [static let kannada: NLLanguage](nllanguage/kannada.md)
+- [static let kannada: NLLanguage](./nllanguage/kannada.md)
   The unique identifier string for the Kannada language.
-- [static let kazakh: NLLanguage](nllanguage/kazakh.md)
+- [static let kazakh: NLLanguage](./nllanguage/kazakh.md)
   The unique identifier string for the Kazakh language.
-- [static let khmer: NLLanguage](nllanguage/khmer.md)
+- [static let khmer: NLLanguage](./nllanguage/khmer.md)
   The unique identifier string for the Khmer language.
-- [static let korean: NLLanguage](nllanguage/korean.md)
+- [static let korean: NLLanguage](./nllanguage/korean.md)
   The unique identifier string for the Korean language.
-- [static let lao: NLLanguage](nllanguage/lao.md)
+- [static let lao: NLLanguage](./nllanguage/lao.md)
   The unique identifier string for the Lao language.
-- [static let malay: NLLanguage](nllanguage/malay.md)
+- [static let malay: NLLanguage](./nllanguage/malay.md)
   The unique identifier string for the Malay language.
-- [static let malayalam: NLLanguage](nllanguage/malayalam.md)
+- [static let malayalam: NLLanguage](./nllanguage/malayalam.md)
   The unique identifier string for the Malayalam language.
-- [static let marathi: NLLanguage](nllanguage/marathi.md)
+- [static let marathi: NLLanguage](./nllanguage/marathi.md)
   The unique identifier string for the Marathi language.
-- [static let mongolian: NLLanguage](nllanguage/mongolian.md)
+- [static let mongolian: NLLanguage](./nllanguage/mongolian.md)
   The unique identifier string for the Mongolian language.
-- [static let norwegian: NLLanguage](nllanguage/norwegian.md)
+- [static let norwegian: NLLanguage](./nllanguage/norwegian.md)
   The unique identifier string for the Norwegian language.
-- [static let oriya: NLLanguage](nllanguage/oriya.md)
+- [static let oriya: NLLanguage](./nllanguage/oriya.md)
   The unique identifier string for the Oriya language.
-- [static let persian: NLLanguage](nllanguage/persian.md)
+- [static let persian: NLLanguage](./nllanguage/persian.md)
   The unique identifier string for the Persian language.
-- [static let polish: NLLanguage](nllanguage/polish.md)
+- [static let polish: NLLanguage](./nllanguage/polish.md)
   The unique identifier string for the Polish language.
-- [static let portuguese: NLLanguage](nllanguage/portuguese.md)
+- [static let portuguese: NLLanguage](./nllanguage/portuguese.md)
   The unique identifier string for the Portuguese language.
-- [static let punjabi: NLLanguage](nllanguage/punjabi.md)
+- [static let punjabi: NLLanguage](./nllanguage/punjabi.md)
   The unique identifier string for the Punjabi language.
-- [static let romanian: NLLanguage](nllanguage/romanian.md)
+- [static let romanian: NLLanguage](./nllanguage/romanian.md)
   The unique identifier string for the Romanian language.
-- [static let russian: NLLanguage](nllanguage/russian.md)
+- [static let russian: NLLanguage](./nllanguage/russian.md)
   The unique identifier string for the Russian language.
-- [static let simplifiedChinese: NLLanguage](nllanguage/simplifiedchinese.md)
+- [static let simplifiedChinese: NLLanguage](./nllanguage/simplifiedchinese.md)
   The unique identifier string for the Simplified Chinese language.
-- [static let sinhalese: NLLanguage](nllanguage/sinhalese.md)
+- [static let sinhalese: NLLanguage](./nllanguage/sinhalese.md)
   The unique identifier string for the Sinhalese language.
-- [static let slovak: NLLanguage](nllanguage/slovak.md)
+- [static let slovak: NLLanguage](./nllanguage/slovak.md)
   The unique identifier string for the Slovak language.
-- [static let spanish: NLLanguage](nllanguage/spanish.md)
+- [static let spanish: NLLanguage](./nllanguage/spanish.md)
   The unique identifier string for the Spanish language.
-- [static let swedish: NLLanguage](nllanguage/swedish.md)
+- [static let swedish: NLLanguage](./nllanguage/swedish.md)
   The unique identifier string for the Swedish language.
-- [static let tamil: NLLanguage](nllanguage/tamil.md)
+- [static let tamil: NLLanguage](./nllanguage/tamil.md)
   The unique identifier string for the Tamil language.
-- [static let telugu: NLLanguage](nllanguage/telugu.md)
+- [static let telugu: NLLanguage](./nllanguage/telugu.md)
   The unique identifier string for the Telugu language.
-- [static let thai: NLLanguage](nllanguage/thai.md)
+- [static let thai: NLLanguage](./nllanguage/thai.md)
   The unique identifier string for the Thai language.
-- [static let tibetan: NLLanguage](nllanguage/tibetan.md)
+- [static let tibetan: NLLanguage](./nllanguage/tibetan.md)
   The unique identifier string for the Tibetan language.
-- [static let traditionalChinese: NLLanguage](nllanguage/traditionalchinese.md)
+- [static let traditionalChinese: NLLanguage](./nllanguage/traditionalchinese.md)
   The unique identifier string for the Traditional Chinese language.
-- [static let turkish: NLLanguage](nllanguage/turkish.md)
+- [static let turkish: NLLanguage](./nllanguage/turkish.md)
   The unique identifier string for the Turkish language.
-- [static let ukrainian: NLLanguage](nllanguage/ukrainian.md)
+- [static let ukrainian: NLLanguage](./nllanguage/ukrainian.md)
   The unique identifier string for the Ukrainian language.
-- [static let urdu: NLLanguage](nllanguage/urdu.md)
+- [static let urdu: NLLanguage](./nllanguage/urdu.md)
   The unique identifier string for the Urdu language.
-- [static let vietnamese: NLLanguage](nllanguage/vietnamese.md)
+- [static let vietnamese: NLLanguage](./nllanguage/vietnamese.md)
   The unique identifier string for the Vietnamese language.
-- [static let undetermined: NLLanguage](nllanguage/undetermined.md)
+- [static let undetermined: NLLanguage](./nllanguage/undetermined.md)
   The unique identifier string for a language the Natural Language framework doesn’t recognize.
 ### Creating custom language tags
-- [init(String)](nllanguage/init(_:).md)
+- [init(String)](./nllanguage/init%28_%29.md)
   Creates a language tag with the given string.
-- [init(rawValue: String)](nllanguage/init(rawvalue:).md)
+- [init(rawValue: String)](./nllanguage/init%28rawvalue%29.md)
   Creates a language tag with the given string as its raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Identifying the language in text](identifying-the-language-in-text.md)
+### Language identification
+- [Identifying the language in text](./identifying-the-language-in-text.md)
   Detect the language in a piece of text by using a language recognizer.
-- [class NLLanguageRecognizer](nllanguagerecognizer.md)
+- [class NLLanguageRecognizer](./nllanguagerecognizer.md)
   The language of a body of text.
 
 

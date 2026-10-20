@@ -1,9 +1,10 @@
 # unownedTaskExecutor
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The current [`TaskExecutor`](taskexecutor.md) preference, if this task has one configured.
+The current [`TaskExecutor`](../taskexecutor.md) preference, if this task has one configured.
 
 **Availability**:
 - iOS 18.0+
@@ -24,7 +25,7 @@ var unownedTaskExecutor: UnownedTaskExecutor? { get }
 
 The executor may be used to compare for equality with an expected executor preference.
 
-The lifetime of an executor is not guaranteed by an [`UnownedTaskExecutor`](unownedtaskexecutor.md), so accessing it must be handled with great case – and the program must use other means to guarantee the executor remains alive while it is in use.
+The lifetime of an executor is not guaranteed by an [`UnownedTaskExecutor`](../unownedtaskexecutor.md), so accessing it must be handled with great case – and the program must use other means to guarantee the executor remains alive while it is in use.
 
 
 ---

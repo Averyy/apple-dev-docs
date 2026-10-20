@@ -1,15 +1,20 @@
 # lvt
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var lvt: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t lvt[7];
 ```
 
 

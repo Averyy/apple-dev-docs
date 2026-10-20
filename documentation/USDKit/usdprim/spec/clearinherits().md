@@ -1,7 +1,8 @@
 # clearInherits()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all authored inherit paths on this prim.
 

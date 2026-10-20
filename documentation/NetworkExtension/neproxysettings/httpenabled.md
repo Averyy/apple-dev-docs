@@ -1,7 +1,8 @@
 # httpEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating if a static HTTP proxy will be used.
 
@@ -19,15 +20,20 @@ A Boolean indicating if a static HTTP proxy will be used.
 var httpEnabled: Bool { get set }
 ```
 
+```objc
+@property BOOL HTTPEnabled;
+```
+
 ## See Also
 
-- [var httpServer: NEProxyServer?](neproxysettings/httpserver.md)
-  An [`NEProxyServer`](neproxyserver.md) object containing the static HTTP proxy server settings.
-- [var httpsEnabled: Bool](neproxysettings/httpsenabled.md)
+### Accessing Manual Proxy Properties
+- [var httpServer: NEProxyServer?](./httpserver.md)
+  An [`NEProxyServer`](../neproxyserver.md) object containing the static HTTP proxy server settings.
+- [var httpsEnabled: Bool](./httpsenabled.md)
   A Boolean indicating if a static HTTPS proxy will be used.
-- [var httpsServer: NEProxyServer?](neproxysettings/httpsserver.md)
-  An [`NEProxyServer`](neproxyserver.md) object containing the static HTTPS proxy server settings.
-- [class NEProxyServer](neproxyserver.md)
+- [var httpsServer: NEProxyServer?](./httpsserver.md)
+  An [`NEProxyServer`](../neproxyserver.md) object containing the static HTTPS proxy server settings.
+- [class NEProxyServer](../neproxyserver.md)
   `NEProxyServer` contains settings for a proxy server.
 
 

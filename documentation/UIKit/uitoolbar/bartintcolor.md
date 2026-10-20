@@ -1,7 +1,8 @@
 # barTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the toolbar background.
 
@@ -17,15 +18,20 @@ The tint color to apply to the toolbar background.
 var barTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * barTintColor;
+```
+
 #### Discussion
 
-This color is made translucent by default unless you set the [`isTranslucent`](uitoolbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+This color is made translucent by default unless you set the [`isTranslucent`](./istranslucent.md) property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func backgroundImage(forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](uitoolbar/backgroundimage(fortoolbarposition:barmetrics:).md)
+### Changing the background
+- [func backgroundImage(forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](./backgroundimage%28fortoolbarposition,barmetrics%29.md)
   Returns the image to use for the background in a given position and with given metrics.
-- [func setBackgroundImage(UIImage?, forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics)](uitoolbar/setbackgroundimage(_:fortoolbarposition:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics)](./setbackgroundimage%28_,fortoolbarposition,barmetrics%29.md)
   Sets the image to use for the background in a given position and with given metrics.
 
 

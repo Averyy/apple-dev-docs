@@ -1,7 +1,8 @@
 # usableDatagramFrameSize
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the usable size of a datagram frame from a QUIC datagram flow.
 
@@ -19,6 +20,8 @@ Get the usable size of a datagram frame from a QUIC datagram flow.
 ```swift
 final var usableDatagramFrameSize: Int { get }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

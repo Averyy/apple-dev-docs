@@ -1,7 +1,8 @@
 # routeSegments
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The route segments associated with this navigation session.
 
@@ -14,6 +15,10 @@ The route segments associated with this navigation session.
 
 ```swift
 var routeSegments: [CPRouteSegment] { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSArray<CPRouteSegment *> * routeSegments;
 ```
 
 

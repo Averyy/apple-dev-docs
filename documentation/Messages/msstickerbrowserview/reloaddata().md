@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the sticker browser to reload its data from the data source.
 
@@ -16,11 +17,16 @@ Asks the sticker browser to reload its data from the data source.
 func reloadData()
 ```
 
+```objc
+- (void) reloadData;
+```
+
 ## See Also
 
-- [var dataSource: (any MSStickerBrowserViewDataSource)?](msstickerbrowserview/datasource.md)
+### Managing the Sticker Collection Contents
+- [var dataSource: (any MSStickerBrowserViewDataSource)?](./datasource.md)
   The sticker browser’s data source.
-- [protocol MSStickerBrowserViewDataSource](msstickerbrowserviewdatasource.md)
+- [protocol MSStickerBrowserViewDataSource](../msstickerbrowserviewdatasource.md)
   The protocol for dynamically providing stickers to a browser view.
 
 

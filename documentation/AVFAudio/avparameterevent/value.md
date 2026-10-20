@@ -1,7 +1,8 @@
 # value
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the parameter to set.
 
@@ -19,13 +20,18 @@ The value of the parameter to set.
 var value: Float { get set }
 ```
 
+```objc
+@property (readwrite) float value;
+```
+
 ## See Also
 
-- [var parameterID: UInt32](avparameterevent/parameterid.md)
+### Configuring a parameter event
+- [var parameterID: UInt32](./parameterid.md)
   The identifier of the parameter.
-- [var scope: UInt32](avparameterevent/scope.md)
+- [var scope: UInt32](./scope.md)
   The audio unit scope for the parameter.
-- [var element: UInt32](avparameterevent/element.md)
+- [var element: UInt32](./element.md)
   The element index in the scope.
 
 

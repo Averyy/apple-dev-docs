@@ -1,7 +1,8 @@
 # iOS
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The platform type for iOS/iPadOS software running on iOS/ipadOS/macOS/visionOS
 

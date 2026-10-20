@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.invalidSession
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is no longer active or is invalidated.
 

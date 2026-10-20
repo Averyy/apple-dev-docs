@@ -1,7 +1,8 @@
 # init(timeInterval:repeats:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time interval trigger using the time value parameter.
 
@@ -20,18 +21,22 @@ Creates a time interval trigger using the time value parameter.
 convenience init(timeInterval: TimeInterval, repeats: Bool)
 ```
 
+```objc
++ (instancetype) triggerWithTimeInterval:(NSTimeInterval) timeInterval repeats:(BOOL) repeats;
+```
+
 #### Return Value
 
 A new time interval trigger based on the specified temporal information.
 
 #### Discussion
 
-If you specify `true` for the `repeats` parameter, you must explicitly remove the notification request to stop the delivery of the associated notification. Use the methods of [`UNUserNotificationCenter`](unusernotificationcenter.md) to remove notification requests that are no longer needed.
+If you specify `true` for the `repeats` parameter, you must explicitly remove the notification request to stop the delivery of the associated notification. Use the methods of [`UNUserNotificationCenter`](../unusernotificationcenter.md) to remove notification requests that are no longer needed.
 
 ## Parameters
 
 - `timeInterval`: The time (in seconds) that must elapse from the current time before the trigger fires. This value must be greater than zero.
-- `repeats`: Specify [`false`](https://developer.apple.com/documentation/swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/swift/true) to reschedule the notification request each time the system delivers the notification. If this parameter is [`true`](https://developer.apple.com/documentation/swift/true), the value in the `timeInterval` parameter must be 60 seconds or greater.
+- `repeats`: Specify [`false`](../../Swift/false.md) to deliver the notification one time. Specify [`true`](../../Swift/true.md) to reschedule the notification request each time the system delivers the notification. If this parameter is [`true`](../../Swift/true.md), the value in the `timeInterval` parameter must be 60 seconds or greater.
 
 
 ---

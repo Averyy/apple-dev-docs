@@ -1,7 +1,8 @@
 # PersonalRecommendation.Attributes.Title
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the title of a personal recommendation.
 
@@ -10,7 +11,7 @@ An object that represents the title of a personal recommendation.
 
 ## Declaration
 
-```swift
+```
 object PersonalRecommendation.Attributes.Title
 ```
 
@@ -20,7 +21,8 @@ object PersonalRecommendation.Attributes.Title
 
 ## See Also
 
-- [object PersonalRecommendation.Attributes.Reason](personalrecommendation/attributes-data.dictionary/reason-data.dictionary.md)
+### Attribute Objects
+- [object PersonalRecommendation.Attributes.Reason](./reason-data.dictionary.md)
   An object that represents the reason for a personal recommendation.
 
 

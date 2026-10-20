@@ -1,7 +1,8 @@
 # usage
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that determine how you can use each drawable’s textures.
 
@@ -11,7 +12,7 @@ Options that determine how you can use each drawable’s textures.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

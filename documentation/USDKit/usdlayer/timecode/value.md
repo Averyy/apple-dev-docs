@@ -1,7 +1,8 @@
 # value
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying time value as a Double.
 

@@ -1,7 +1,8 @@
 # WidgetFamily.accessoryCircular
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A circular widget.
 
@@ -20,9 +21,9 @@ case accessoryCircular
 
 ## Mentions
 
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 
@@ -32,11 +33,12 @@ The accessory circular widget can appear as a complication in watchOS, or on the
 
 ## See Also
 
-- [WidgetFamily.accessoryCorner](widgetfamily/accessorycorner.md)
+### Accessing accessory families
+- [WidgetFamily.accessoryCorner](./accessorycorner.md)
   A widget-based complication in the corner of a watch face in watchOS.
-- [WidgetFamily.accessoryRectangular](widgetfamily/accessoryrectangular.md)
+- [WidgetFamily.accessoryRectangular](./accessoryrectangular.md)
   A rectangular widget.
-- [WidgetFamily.accessoryInline](widgetfamily/accessoryinline.md)
+- [WidgetFamily.accessoryInline](./accessoryinline.md)
   A flat widget that contains a single row of text and an optional image.
 
 

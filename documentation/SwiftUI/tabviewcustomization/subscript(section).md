@@ -1,7 +1,8 @@
 # subscript(section:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The customization of the section, identified by its customization identifier.
 
@@ -26,7 +27,7 @@ Section tab order can be read by subscripting with the tab section’s id:
 let order = customization[section: "com.myApp.categories"].tabOrder
 ```
 
-To reset the order of an individual section, use [`resetTabOrder()`](tabviewcustomization/sectioncustomization/resettaborder().md). To reset the order of all sections, use [`resetSectionOrder()`](tabviewcustomization/resetsectionorder().md).
+To reset the order of an individual section, use [`resetTabOrder()`](./sectioncustomization/resettaborder%28%29.md). To reset the order of all sections, use [`resetSectionOrder()`](./resetsectionorder%28%29.md).
 
 
 ---

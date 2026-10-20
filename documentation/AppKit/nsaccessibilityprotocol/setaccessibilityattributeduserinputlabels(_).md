@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,9 +16,10 @@ func setAccessibilityAttributedUserInputLabels(_ accessibilityAttributedUserInpu
 
 ## See Also
 
-- [func accessibilityAttributedUserInputLabels() -> [NSAttributedString]?](nsaccessibilityprotocol/accessibilityattributeduserinputlabels.md)
-- [func accessibilityUserInputLabels() -> [String]?](nsaccessibilityprotocol/accessibilityuserinputlabels.md)
-- [func setAccessibilityUserInputLabels([String]?)](nsaccessibilityprotocol/setaccessibilityuserinputlabels(_:).md)
+### Instance methods
+- [func accessibilityAttributedUserInputLabels() -> [NSAttributedString]?](./accessibilityattributeduserinputlabels%28%29.md)
+- [func accessibilityUserInputLabels() -> [String]?](./accessibilityuserinputlabels%28%29.md)
+- [func setAccessibilityUserInputLabels([String]?)](./setaccessibilityuserinputlabels%28_%29.md)
 
 
 ---

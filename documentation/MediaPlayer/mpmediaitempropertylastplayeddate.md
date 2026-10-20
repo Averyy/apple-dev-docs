@@ -1,7 +1,8 @@
 # MPMediaItemPropertyLastPlayedDate
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The most recent calendar date on which the user played the media item.
 
@@ -20,21 +21,26 @@ The most recent calendar date on which the user played the media item.
 let MPMediaItemPropertyLastPlayedDate: String
 ```
 
+```c
+extern NSString * const MPMediaItemPropertyLastPlayedDate;
+```
+
 #### Discussion
 
-Value is an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object.
+Value is an [`NSDate`](../Foundation/nsdate.md) object.
 
 ## See Also
 
-- [let MPMediaItemPropertySkipCount: String](mpmediaitempropertyskipcount.md)
+### User-defined property keys
+- [let MPMediaItemPropertySkipCount: String](./mpmediaitempropertyskipcount.md)
   The number of times the user has skipped playing the item.
-- [let MPMediaItemPropertyRating: String](mpmediaitempropertyrating.md)
+- [let MPMediaItemPropertyRating: String](./mpmediaitempropertyrating.md)
   The user-specified rating of the object in the range `[0...5]`, where a value of 5 indicates the most favorable rating.
-- [let MPMediaItemPropertyUserGrouping: String](mpmediaitempropertyusergrouping.md)
+- [let MPMediaItemPropertyUserGrouping: String](./mpmediaitempropertyusergrouping.md)
   Corresponds to the “Grouping” field in the Info tab in the Get Info dialog in iTunes.
-- [let MPMediaItemPropertyBookmarkTime: String](mpmediaitempropertybookmarktime.md)
+- [let MPMediaItemPropertyBookmarkTime: String](./mpmediaitempropertybookmarktime.md)
   The user’s place in the media item the most recent time it was played.
-- [let MPMediaItemPropertyDateAdded: String](mpmediaitempropertydateadded.md)
+- [let MPMediaItemPropertyDateAdded: String](./mpmediaitempropertydateadded.md)
   The date the media item was added to the user’s Media library.
 
 

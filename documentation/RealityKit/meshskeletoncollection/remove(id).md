@@ -1,7 +1,8 @@
 # remove(id:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a skeleton by id.
 

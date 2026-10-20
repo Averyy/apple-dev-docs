@@ -1,7 +1,8 @@
 # userInterfaceLayoutDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user interface layout direction.
 
@@ -14,9 +15,13 @@ The user interface layout direction.
 var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 ```
 
+```objc
+@property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
+```
+
 #### Discussion
 
-When set to [`NSUserInterfaceLayoutDirection.rightToLeft`](nsuserinterfacelayoutdirection/righttoleft.md), the outline view displays the disclosure triangle to the right of the cell instead of the left. The default value is [`NSUserInterfaceLayoutDirection.leftToRight`](nsuserinterfacelayoutdirection/lefttoright.md).
+When set to [`NSUserInterfaceLayoutDirection.rightToLeft`](../nsuserinterfacelayoutdirection/righttoleft.md), the outline view displays the disclosure triangle to the right of the cell instead of the left. The default value is [`NSUserInterfaceLayoutDirection.leftToRight`](../nsuserinterfacelayoutdirection/lefttoright.md).
 
 
 ---

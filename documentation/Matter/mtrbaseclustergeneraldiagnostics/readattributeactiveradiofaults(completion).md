@@ -1,7 +1,8 @@
 # readAttributeActiveRadioFaults(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveRadioFaults(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveRadioFaults() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeActiveRadioFaultsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

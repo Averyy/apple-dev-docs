@@ -1,7 +1,8 @@
 # deltaTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time between last fixed update event and this one.
 

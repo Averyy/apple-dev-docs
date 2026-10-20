@@ -1,7 +1,8 @@
 # cancellationHandler
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to invoke when canceling progress.
 
@@ -20,9 +21,13 @@ The block to invoke when canceling progress.
 var cancellationHandler: (@Sendable () -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^cancellationHandler)();
+```
+
 #### Discussion
 
-If the receiver is a suboperation of another progress object, the system invokes the [`cancellationHandler`](progress/cancellationhandler.md) block when canceling the containing progress object.
+If the receiver is a suboperation of another progress object, the system invokes the [`cancellationHandler`](./cancellationhandler.md) block when canceling the containing progress object.
 
 ##### Special Considerations
 
@@ -32,23 +37,24 @@ You can invoke the cancellation handler on any queue. If you must do work on a s
 
 ## See Also
 
-- [var totalUnitCount: Int64](progress/totalunitcount.md)
+### Reporting Progress
+- [var totalUnitCount: Int64](./totalunitcount.md)
   The total number of tracked units of work for the current progress.
-- [var completedUnitCount: Int64](progress/completedunitcount.md)
+- [var completedUnitCount: Int64](./completedunitcount.md)
   The number of completed units of work for the current job.
-- [var localizedDescription: String!](progress/localizeddescription.md)
+- [var localizedDescription: String!](./localizeddescription.md)
   A localized description of tracked progress for the receiver.
-- [var localizedAdditionalDescription: String!](progress/localizedadditionaldescription.md)
+- [var localizedAdditionalDescription: String!](./localizedadditionaldescription.md)
   A more specific localized description of tracked progress for the receiver.
-- [var isCancellable: Bool](progress/iscancellable.md)
+- [var isCancellable: Bool](./iscancellable.md)
   A Boolean value that indicates whether the receiver is tracking work that you can cancel.
-- [var isCancelled: Bool](progress/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that Indicates whether the receiver is tracking canceled work.
-- [var isPausable: Bool](progress/ispausable.md)
+- [var isPausable: Bool](./ispausable.md)
   A Boolean value that indicates whether the receiver is tracking work that you can pause.
-- [var isPaused: Bool](progress/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the receiver is tracking paused work.
-- [var pausingHandler: (() -> Void)?](progress/pausinghandler.md)
+- [var pausingHandler: (() -> Void)?](./pausinghandler.md)
   The block to invoke when pausing progress.
 
 

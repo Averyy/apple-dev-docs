@@ -1,7 +1,8 @@
 # certificateChain
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The certificate chain of the client.
 

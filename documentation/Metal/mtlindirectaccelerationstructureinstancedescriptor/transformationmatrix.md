@@ -1,7 +1,8 @@
 # transformationMatrix
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var transformationMatrix: MTLPackedFloat4x3
+```
+
+```c
+MTLPackedFloat4x3 transformationMatrix;
 ```
 
 

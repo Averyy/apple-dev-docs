@@ -1,11 +1,12 @@
 # CustomPlaygroundDisplayConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var playgroundDescription: Any](mldatatable/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the data table shown in a playground.
 
 

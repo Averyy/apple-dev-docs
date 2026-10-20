@@ -1,7 +1,8 @@
 # prominent
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The element is prominently revealed through occluding content.
 

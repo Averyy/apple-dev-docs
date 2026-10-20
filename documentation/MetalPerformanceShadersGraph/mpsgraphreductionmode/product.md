@@ -1,7 +1,8 @@
 # MPSGraphReductionMode.product
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Product
 
@@ -17,6 +18,10 @@ Product
 
 ```swift
 case product
+```
+
+```c
+MPSGraphReductionModeProduct
 ```
 
 

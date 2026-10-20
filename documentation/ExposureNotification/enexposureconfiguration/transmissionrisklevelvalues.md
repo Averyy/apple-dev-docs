@@ -1,19 +1,26 @@
 # transmissionRiskLevelValues
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level values for transmission risk.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var transmissionRiskLevelValues: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSNumber *> * transmissionRiskLevelValues;
 ```
 
 #### Discussion
@@ -48,15 +55,16 @@ Recommended report types for the different risk levels are:
 
 ## See Also
 
-- [var attenuationDurationThresholds: [NSNumber]](enexposureconfiguration/attenuationdurationthresholds.md)
+### Level Configuration
+- [var attenuationDurationThresholds: [NSNumber]](./attenuationdurationthresholds.md)
   The configurable signal-loss thresholds for calculating exposure risk.
-- [var attenuationLevelValues: [NSNumber]](enexposureconfiguration/attenuationlevelvalues.md)
+- [var attenuationLevelValues: [NSNumber]](./attenuationlevelvalues.md)
   The level values for attenuation.
-- [var daysSinceLastExposureLevelValues: [NSNumber]](enexposureconfiguration/dayssincelastexposurelevelvalues.md)
+- [var daysSinceLastExposureLevelValues: [NSNumber]](./dayssincelastexposurelevelvalues.md)
   The level values for days since last exposure.
-- [var durationLevelValues: [NSNumber]](enexposureconfiguration/durationlevelvalues.md)
+- [var durationLevelValues: [NSNumber]](./durationlevelvalues.md)
   The level values for duration.
-- [var metadata: [AnyHashable : Any]?](enexposureconfiguration/metadata.md)
+- [var metadata: [AnyHashable : Any]?](./metadata.md)
   The metadata you use to configure the exposure calculations.
 
 

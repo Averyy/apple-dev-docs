@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the aesthetics request.
 
@@ -19,9 +20,14 @@ The results of the aesthetics request.
 var results: [VNImageAestheticsScoresObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNImageAestheticsScoresObservation *> * results;
+```
+
 ## See Also
 
-- [class VNImageAestheticsScoresObservation](vnimageaestheticsscoresobservation.md)
+### Accessing the results
+- [class VNImageAestheticsScoresObservation](../vnimageaestheticsscoresobservation.md)
   An object that represents the overall score of aesthetic attributes for an image.
 
 

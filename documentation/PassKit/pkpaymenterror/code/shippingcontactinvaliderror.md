@@ -1,7 +1,8 @@
 # PKPaymentError.Code.shippingContactInvalidError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code that indicates an invalid shipping address, email, phone, or name.
 
@@ -19,21 +20,26 @@ The error code that indicates an invalid shipping address, email, phone, or name
 case shippingContactInvalidError
 ```
 
+```c
+PKPaymentShippingContactInvalidError
+```
+
 #### Discussion
 
 Use this error code if the shipping contact information on the Apple Pay sheet has an error in the address, email, phone, or name.
 
 ## See Also
 
-- [PKPaymentError.Code.couponCodeExpiredError](pkpaymenterror/code/couponcodeexpirederror.md)
+### Error codes
+- [PKPaymentError.Code.couponCodeExpiredError](./couponcodeexpirederror.md)
   The error code that indicates an expired coupon.
-- [PKPaymentError.Code.couponCodeInvalidError](pkpaymenterror/code/couponcodeinvaliderror.md)
+- [PKPaymentError.Code.couponCodeInvalidError](./couponcodeinvaliderror.md)
   The error code that indicates an invalid coupon.
-- [PKPaymentError.Code.billingContactInvalidError](pkpaymenterror/code/billingcontactinvaliderror.md)
+- [PKPaymentError.Code.billingContactInvalidError](./billingcontactinvaliderror.md)
   The error code that indicates an invalid billing address or billing name.
-- [PKPaymentError.Code.shippingAddressUnserviceableError](pkpaymenterror/code/shippingaddressunserviceableerror.md)
+- [PKPaymentError.Code.shippingAddressUnserviceableError](./shippingaddressunserviceableerror.md)
   The error code that indicates an unserviceable shipping address.
-- [PKPaymentError.Code.unknownError](pkpaymenterror/code/unknownerror.md)
+- [PKPaymentError.Code.unknownError](./unknownerror.md)
   The error code that indicates an unknown error.
 
 

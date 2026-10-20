@@ -1,7 +1,8 @@
 # callAsFunction(_:completion:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously opens a URL, following system conventions.
 
@@ -22,7 +23,7 @@ Asynchronously opens a URL, following system conventions.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`OpenURLAction`](openurlaction.md) structure that you get from the [`Environment`](environment.md), using a URL and a completion handler as arguments:
+Don’t call this method directly. SwiftUI calls it when you call the [`OpenURLAction`](../openurlaction.md) structure that you get from the [`Environment`](../environment.md), using a URL and a completion handler as arguments:
 
 ```swift
 struct OpenURLExample: View {
@@ -43,7 +44,7 @@ struct OpenURLExample: View {
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -52,7 +53,8 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction(URL)](openurlaction/callasfunction(_:).md)
+### Calling the action
+- [func callAsFunction(URL)](./callasfunction%28_%29.md)
   Opens a URL, following system conventions.
 
 

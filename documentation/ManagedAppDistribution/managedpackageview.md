@@ -1,7 +1,8 @@
 # ManagedPackageView
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays information and controls for a managed software package.
 
@@ -37,15 +38,15 @@ struct PackageListView: View {
 ## Topics
 
 ### Initializers
-- [init(package: ManagedPackage)](managedpackageview/init(package:).md)
+- [init(package: ManagedPackage)](./managedpackageview/init%28package%29.md)
   Create a managed packaged view from a managed package.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

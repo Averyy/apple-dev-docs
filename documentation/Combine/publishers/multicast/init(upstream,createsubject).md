@@ -1,7 +1,8 @@
 # init(upstream:createSubject:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multicast publisher that applies a closure to create a subject that delivers elements to subscribers.
 
@@ -22,7 +23,7 @@ init(upstream: Upstream, createSubject: @escaping () -> SubjectType)
 
 ## Parameters
 
-- `createSubject`: A closure that returns a [`Subject`](subject.md) each time a subscriber attaches to the multicast publisher.
+- `createSubject`: A closure that returns a [`Subject`](../../subject.md) each time a subscriber attaches to the multicast publisher.
 
 
 ---

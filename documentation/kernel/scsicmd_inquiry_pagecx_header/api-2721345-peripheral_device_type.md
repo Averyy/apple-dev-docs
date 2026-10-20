@@ -1,7 +1,8 @@
 # PERIPHERAL_DEVICE_TYPE
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt8 PERIPHERAL_DEVICE_TYPE;
 ```
 

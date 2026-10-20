@@ -1,7 +1,8 @@
 # isLogicallyComplete
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set this to `true` to indicate that an animation is logically complete.
 

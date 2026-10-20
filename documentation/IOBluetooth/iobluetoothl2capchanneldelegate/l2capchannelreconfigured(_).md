@@ -1,15 +1,20 @@
 # l2capChannelReconfigured(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func l2capChannelReconfigured(_ l2capChannel: IOBluetoothL2CAPChannel!)
+```
+
+```objc
+- (void) l2capChannelReconfigured:(IOBluetoothL2CAPChannel *) l2capChannel;
 ```
 
 

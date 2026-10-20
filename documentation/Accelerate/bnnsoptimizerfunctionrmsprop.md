@@ -1,7 +1,8 @@
 # BNNSOptimizerFunctionRMSProp
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An optimizer function that updates parameters according to the root mean square propagation (RMSProp) algorithm.
 
@@ -20,9 +21,14 @@ An optimizer function that updates parameters according to the root mean square 
 var BNNSOptimizerFunctionRMSProp: BNNSOptimizerFunction { get }
 ```
 
+```c
+BNNSOptimizerFunctionRMSProp
+```
+
 ## See Also
 
-- [var BNNSOptimizerFunctionRMSPropWithClipping: BNNSOptimizerFunction](bnnsoptimizerfunctionrmspropwithclipping.md)
+### RMSProp Optimizer Functions
+- [var BNNSOptimizerFunctionRMSPropWithClipping: BNNSOptimizerFunction](./bnnsoptimizerfunctionrmspropwithclipping.md)
   An optimizer function that updates parameters according to the root mean square propagation (RMSProp) algorithm and optionally clips the gradient by value or by norm.
 
 

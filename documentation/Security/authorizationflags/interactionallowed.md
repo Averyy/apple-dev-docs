@@ -1,7 +1,8 @@
 # interactionAllowed
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that permits user interaction as needed.
 
@@ -13,6 +14,10 @@ A flag that permits user interaction as needed.
 
 ```swift
 static var interactionAllowed: AuthorizationFlags { get }
+```
+
+```c
+kAuthorizationFlagInteractionAllowed
 ```
 
 #### Discussion

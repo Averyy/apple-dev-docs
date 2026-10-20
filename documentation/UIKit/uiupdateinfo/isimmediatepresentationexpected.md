@@ -1,7 +1,8 @@
 # isImmediatePresentationExpected
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system presents UI updates immediately upon completion.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the system presents UI updates immediatel
 var isImmediatePresentationExpected: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isImmediatePresentationExpected) BOOL immediatePresentationExpected;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the system presents UI updates immediately upon completion. Use this information to determine whether to minimize the complexity of the code you run during the UI update. Defer any processing that isn’t critical for the current UI update until after the UI update finishes.
+The value of this property is [`true`](../../Swift/true.md) when the system presents UI updates immediately upon completion. Use this information to determine whether to minimize the complexity of the code you run during the UI update. Defer any processing that isn’t critical for the current UI update until after the UI update finishes.
 
 This value can change during the UI update.
 
 ## See Also
 
-- [var isLowLatencyEventDispatchConfirmed: Bool](uiupdateinfo/islowlatencyeventdispatchconfirmed.md)
+### Working with low-latency updates
+- [var isLowLatencyEventDispatchConfirmed: Bool](./islowlatencyeventdispatchconfirmed.md)
   A Boolean value that indicates whether the system runs low-latency phases for the UI update.
-- [var isPerformingLowLatencyPhases: Bool](uiupdateinfo/isperforminglowlatencyphases.md)
+- [var isPerformingLowLatencyPhases: Bool](./isperforminglowlatencyphases.md)
   A Boolean value that indicates whether the UI update is in the low-latency phases.
 
 

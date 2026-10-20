@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether or not the accessory is interactive and draws with an enabled appearance. Defaults to `true`.
 
@@ -17,9 +18,14 @@ Determines whether or not the accessory is interactive and draws with an enabled
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [var behavior: NSSliderAccessoryBehavior](nsslideraccessory/behavior.md)
+### Instance Properties
+- [var behavior: NSSliderAccessoryBehavior](./behavior.md)
   The effect on interaction with the accessory.
 
 

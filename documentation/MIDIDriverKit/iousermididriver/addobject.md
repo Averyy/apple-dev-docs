@@ -1,31 +1,33 @@
 # AddObject
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddObject(IOUserMIDIObject *object);
 ```
 
 ## See Also
 
-- [GetMIDIObjectForObjectID](iousermididriver/getmidiobjectforobjectid.md)
-- [GetName](iousermididriver/getname.md)
-- [GetWorkQueue](iousermididriver/getworkqueue.md)
-- [NewUserClient](iousermididriver/newuserclient.md)
-- [RemoveObject](iousermididriver/removeobject.md)
-- [SetName](iousermididriver/setname.md)
-- [Start](iousermididriver/start.md)
-- [StartIO](iousermididriver/startio.md)
-- [Stop](iousermididriver/stop.md)
-- [StopIO](iousermididriver/stopio.md)
-- [free](iousermididriver/free.md)
-- [init](iousermididriver/init.md)
+### Instance Methods
+- [GetMIDIObjectForObjectID](./getmidiobjectforobjectid.md)
+- [GetName](./getname.md)
+- [GetWorkQueue](./getworkqueue.md)
+- [NewUserClient](./newuserclient.md)
+- [RemoveObject](./removeobject.md)
+- [SetName](./setname.md)
+- [Start](./start.md)
+- [StartIO](./startio.md)
+- [Stop](./stop.md)
+- [StopIO](./stopio.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

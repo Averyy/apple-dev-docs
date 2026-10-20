@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a script from a BCP 47 identifier as a string literal.
 
@@ -22,7 +23,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(String)](locale/script/init(_:).md)
+### Creating a script
+- [init(String)](./init%28_%29.md)
   Creates a script from a BCP 47 identifier.
 
 

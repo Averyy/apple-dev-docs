@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_HOA_ACN_N3D
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Higher-order Ambisonics, full 3D normalization audio layout.
 
@@ -20,13 +21,18 @@ A Higher-order Ambisonics, full 3D normalization audio layout.
 var kAudioChannelLayoutTag_HOA_ACN_N3D: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_HOA_ACN_N3D
+```
+
 #### Discussion
 
 This tag needs to be `ORed` with the number of HOA components, not the HOA order.
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_HOA_ACN_SN3D: AudioChannelLayoutTag](kaudiochannellayouttag_hoa_acn_sn3d.md)
+### HOA Defined Layouts
+- [var kAudioChannelLayoutTag_HOA_ACN_SN3D: AudioChannelLayoutTag](./kaudiochannellayouttag_hoa_acn_sn3d.md)
   A Higher-order Ambisonics, Schmidt semi-normalization audio layout.
 
 

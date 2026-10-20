@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Associates a string that uniquely identifies a binary function.
 
@@ -19,9 +20,13 @@ Associates a string that uniquely identifies a binary function.
 var name: String { get set }
 ```
 
+```objc
+@property (copy, readwrite, nonnull) NSString * name;
+```
+
 #### Discussion
 
-You can use this property to look up a corresponding binary function by name in a [`MTL4Archive`](mtl4archive.md) instance.
+You can use this property to look up a corresponding binary function by name in a [`MTL4Archive`](../mtl4archive.md) instance.
 
 
 ---

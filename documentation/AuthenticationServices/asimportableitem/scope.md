@@ -1,7 +1,8 @@
 # scope
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scope for where the credential can be used.
 

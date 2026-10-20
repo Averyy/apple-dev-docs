@@ -1,12 +1,13 @@
 # bottomMargin
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 `NSNumber`, containing a floating-point value that specifies the bottom margin, in points.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@
 static let bottomMargin: NSPrintInfo.AttributeKey
 ```
 
+```c
+extern NSPrintInfoAttributeKey const NSPrintBottomMargin;
+```
+
 ## See Also
 
-- [static let leftMargin: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/leftmargin.md)
+### Pagination Attributes
+- [static let leftMargin: NSPrintInfo.AttributeKey](./leftmargin.md)
   `NSNumber`, containing a floating-point value that specifies the left margin, in points.
-- [static let rightMargin: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/rightmargin.md)
+- [static let rightMargin: NSPrintInfo.AttributeKey](./rightmargin.md)
   `NSNumber`, containing a floating-point value that specifies the right margin, in points.
-- [static let topMargin: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/topmargin.md)
+- [static let topMargin: NSPrintInfo.AttributeKey](./topmargin.md)
   `NSNumber`, containing a floating-point value that specifies the top margin, in points.
-- [static let horizontallyCentered: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/horizontallycentered.md)
+- [static let horizontallyCentered: NSPrintInfo.AttributeKey](./horizontallycentered.md)
   An `NSNumber` object containing a Boolean value that specifies whether to horizontally center pages.
-- [static let verticallyCentered: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/verticallycentered.md)
+- [static let verticallyCentered: NSPrintInfo.AttributeKey](./verticallycentered.md)
   An `NSNumber` object containing a Boolean value that specifies whether to vertically center pages.
-- [static let horizontalPagination: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/horizontalpagination.md)
+- [static let horizontalPagination: NSPrintInfo.AttributeKey](./horizontalpagination.md)
   `NSNumber`, containing a `NSPrintingPaginationMode` value.
-- [static let verticalPagination: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/verticalpagination.md)
+- [static let verticalPagination: NSPrintInfo.AttributeKey](./verticalpagination.md)
   `NSNumber`, containing a `NSPrintingPaginationMode` value.
 
 

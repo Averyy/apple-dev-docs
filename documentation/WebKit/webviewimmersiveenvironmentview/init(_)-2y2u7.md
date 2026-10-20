@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immersive environment view from a `WKImmersiveEnvironment`.
 

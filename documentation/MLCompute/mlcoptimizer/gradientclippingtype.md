@@ -1,16 +1,17 @@
 # gradientClippingType
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of clipping the system applies to the gradient.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,27 +19,32 @@ The type of clipping the system applies to the gradient.
 var gradientClippingType: MLCGradientClippingType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLCGradientClippingType gradientClippingType;
+```
+
 ## See Also
 
-- [var learningRate: Float](mlcoptimizer/learningrate.md)
+### Inspecting an Optimizer
+- [var learningRate: Float](./learningrate.md)
   The learning rate.
-- [var gradientRescale: Float](mlcoptimizer/gradientrescale.md)
+- [var gradientRescale: Float](./gradientrescale.md)
   The rescale value the optimizer applies to gradients during updates.
-- [var appliesGradientClipping: Bool](mlcoptimizer/appliesgradientclipping.md)
+- [var appliesGradientClipping: Bool](./appliesgradientclipping.md)
   A Boolean value that indicates whether you apply gradient clipping.
-- [var gradientClipMax: Float](mlcoptimizer/gradientclipmax.md)
+- [var gradientClipMax: Float](./gradientclipmax.md)
   The maximum gradient value before the optimizer rescales the gradient, if you enable gradient clipping.
-- [var gradientClipMin: Float](mlcoptimizer/gradientclipmin.md)
+- [var gradientClipMin: Float](./gradientclipmin.md)
   The minimum gradient value before the optimizer rescales the gradient, if you enable gradient clipping.
-- [var regularizationScale: Float](mlcoptimizer/regularizationscale.md)
+- [var regularizationScale: Float](./regularizationscale.md)
   The regularization scale.
-- [var regularizationType: MLCRegularizationType](mlcoptimizer/regularizationtype.md)
+- [var regularizationType: MLCRegularizationType](./regularizationtype.md)
   The regularization type.
-- [enum MLCGradientClippingType](mlcgradientclippingtype.md)
+- [enum MLCGradientClippingType](../mlcgradientclippingtype.md)
   A clipping type the system applies to a gradient.
-- [var maximumClippingNorm: Float](mlcoptimizer/maximumclippingnorm.md)
+- [var maximumClippingNorm: Float](./maximumclippingnorm.md)
   The maximum clipping value.
-- [var customGlobalNorm: Float](mlcoptimizer/customglobalnorm.md)
+- [var customGlobalNorm: Float](./customglobalnorm.md)
   A custom norm the system uses in place of the global norm.
 
 

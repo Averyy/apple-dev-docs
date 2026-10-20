@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bytes from the start of one instance of `T` to the start of the next when stored in contiguous memory or in an `Array<T>`.
 
@@ -26,9 +27,10 @@ This is the same as the number of bytes moved when an `UnsafePointer<T>` instanc
 
 ## See Also
 
-- [static var size: Int](memorylayout/size.md)
+### Accessing the Layout of a Type
+- [static var size: Int](./size.md)
   The contiguous memory footprint of `T`, in bytes.
-- [static var alignment: Int](memorylayout/alignment.md)
+- [static var alignment: Int](./alignment.md)
   The default memory alignment of `T`, in bytes.
 
 

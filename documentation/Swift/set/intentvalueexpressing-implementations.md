@@ -1,11 +1,12 @@
 # IntentValueExpressing Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func makeExpression() -> IntentValueExpression](set/makeexpression.md)
+- [func makeExpression() -> IntentValueExpression](./makeexpression%28%29.md)
   Creates a pending expression of a set of intent values.
 
 

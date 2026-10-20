@@ -1,7 +1,8 @@
 # main
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The main menu system.
 
@@ -18,13 +19,18 @@ The main menu system.
 class var main: UIMenuSystem { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIMenuSystem * mainSystem;
+```
+
 #### Discussion
 
 In Mac apps built with Mac Catalyst, the main menu system is the app’s menu bar.
 
 ## See Also
 
-- [class var context: UIMenuSystem](uimenusystem/context.md)
+### Getting a menu system
+- [class var context: UIMenuSystem](./context.md)
   The context menu system.
 
 

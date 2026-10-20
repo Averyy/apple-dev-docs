@@ -1,7 +1,8 @@
 # willMigrateHandler
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler to execute before the stage runs.
 
@@ -11,7 +12,7 @@ The handler to execute before the stage runs.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 - Swift 5.8+
 
@@ -23,11 +24,12 @@ var willMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) thro
 
 #### Discussion
 
-Use this handler to prepare the persistent store’s data for the pending migration. Access the store using the [`container`](nsstagedmigrationmanager/container.md) property of the handler’s `migrationManager` parameter.
+Use this handler to prepare the persistent store’s data for the pending migration. Access the store using the [`container`](../nsstagedmigrationmanager/container.md) property of the handler’s `migrationManager` parameter.
 
 ## See Also
 
-- [var didMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)?](nscustommigrationstage/didmigratehandler-2zbss.md)
+### Assigning event handlers
+- [var didMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)?](./didmigratehandler-2zbss.md)
   The handler to execute after the stage runs.
 
 

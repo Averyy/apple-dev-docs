@@ -1,7 +1,8 @@
 # TCThrottle.Orientation.vertical
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A vertical throttle.
 
@@ -16,9 +17,14 @@ A vertical throttle.
 case vertical
 ```
 
+```c
+TCThrottleOrientationVertical
+```
+
 ## See Also
 
-- [TCThrottle.Orientation.horizontal](tcthrottle/orientation-swift.enum/horizontal.md)
+### Throttle orientations
+- [TCThrottle.Orientation.horizontal](./horizontal.md)
   A horizontal throttle.
 
 

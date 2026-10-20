@@ -1,12 +1,13 @@
 # frameRotation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,26 +15,32 @@ The angle of rotation, measured in degrees, applied to the view’s frame rectan
 var frameRotation: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat frameRotation;
+```
+
 #### Discussion
 
-Positive values indicate counterclockwise rotation. Negative values indicate clockwise rotation. Rotation is performed around the origin of the frame rectangle. Changing the value of this property does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the view to be redisplayed.
+Positive values indicate counterclockwise rotation. Negative values indicate clockwise rotation. Rotation is performed around the origin of the frame rectangle. Changing the value of this property does not mark the view as needing to be displayed. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 
-Changing the frame rotation value results in the posting of an [`frameDidChangeNotification`](nsview/framedidchangenotification.md) to the default notification center if the view is configured to do so.
+Changing the frame rotation value results in the posting of an [`frameDidChangeNotification`](./framedidchangenotification.md) to the default notification center if the view is configured to do so.
 
 ## See Also
 
-- [var boundsRotation: CGFloat](nsview/boundsrotation.md)
+### Related Documentation
+- [var boundsRotation: CGFloat](./boundsrotation.md)
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
-- [var frame: NSRect](nsview/frame.md)
+### Modifying the Frame Rectangle
+- [var frame: NSRect](./frame.md)
   The view’s frame rectangle, which defines its position and size in its superview’s coordinate system.
-- [func setFrameOrigin(NSPoint)](nsview/setframeorigin(_:).md)
+- [func setFrameOrigin(NSPoint)](./setframeorigin%28_%29.md)
   Sets the origin of the view’s frame rectangle to the specified point, effectively repositioning it within its superview.
-- [func setFrameSize(NSSize)](nsview/setframesize(_:).md)
+- [func setFrameSize(NSSize)](./setframesize%28_%29.md)
   Sets the size of the view’s frame rectangle to the specified dimensions, resizing it within its superview without affecting its coordinate system.
-- [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
+- [class let frameDidChangeNotification: NSNotification.Name](./framedidchangenotification.md)
   A notification that posts when the view’s frame rectangle changes to a new value.
-- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
-- [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
+- [NSView.FrameDidChangeMessage](./framedidchangemessage.md)
+- [var postsFrameChangedNotifications: Bool](./postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 
 

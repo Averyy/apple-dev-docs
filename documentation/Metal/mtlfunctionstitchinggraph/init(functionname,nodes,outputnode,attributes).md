@@ -1,7 +1,8 @@
 # init(functionName:nodes:outputNode:attributes:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a description of a new function call graph.
 
@@ -17,6 +18,10 @@ Creates a description of a new function call graph.
 
 ```swift
 init(functionName: String, nodes: [MTLFunctionStitchingFunctionNode], outputNode: MTLFunctionStitchingFunctionNode?, attributes: [any MTLFunctionStitchingAttribute])
+```
+
+```objc
+- (instancetype) initWithFunctionName:(NSString *) functionName nodes:(NSArray<MTLFunctionStitchingFunctionNode *> *) nodes outputNode:(MTLFunctionStitchingFunctionNode *) outputNode attributes:(NSArray<id<MTLFunctionStitchingAttribute>> *) attributes;
 ```
 
 ## Parameters

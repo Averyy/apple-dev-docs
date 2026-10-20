@@ -1,7 +1,8 @@
 # resourceNotFound
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a specified resource was not found on disk.
 

@@ -1,7 +1,8 @@
 # padScale
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Pads the scale of the chart to make space for the annotation.
 

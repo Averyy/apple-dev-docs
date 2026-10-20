@@ -1,7 +1,8 @@
 # relocates
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relocates map authored on this prim, or `nil` if none authored.
 

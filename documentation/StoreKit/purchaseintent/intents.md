@@ -1,7 +1,8 @@
 # intents
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The asynchronous sequence that emits a purchase intent when customers initiate a purchase outside of the app.
 
@@ -19,12 +20,12 @@ static var intents: PurchaseIntent.PurchaseIntents { get }
 
 ## Mentions
 
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 
-Your app receives a purchase intent when customers initiate a purchase outside of your app by selecting a promoted product on the App Store, or redeeming a win-back offer. Use the [`product`](purchaseintent/product.md) object to complete your app’s purchase workflow, including finishing the purchase, unlocking the product, and any other workflows specific to your app.
+Your app receives a purchase intent when customers initiate a purchase outside of your app by selecting a promoted product on the App Store, or redeeming a win-back offer. Use the [`product`](./product.md) object to complete your app’s purchase workflow, including finishing the purchase, unlocking the product, and any other workflows specific to your app.
 
 The following example code receives the purchase intent, and calls a method to complete the purchase workflow:
 
@@ -49,7 +50,8 @@ for await purchaseIntent in PurchaseIntent.intents {
 
 ## See Also
 
-- [PurchaseIntent.PurchaseIntents](purchaseintent/purchaseintents.md)
+### Getting purchase intents
+- [PurchaseIntent.PurchaseIntents](./purchaseintents.md)
   An asynchronous sequence of purchase intents for purchases that customers initiate outside of the app.
 
 

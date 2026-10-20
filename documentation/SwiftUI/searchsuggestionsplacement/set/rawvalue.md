@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value that records the search suggestion display modes.
 
@@ -22,7 +23,8 @@ var rawValue: Int
 
 ## See Also
 
-- [init(rawValue: Int)](searchsuggestionsplacement/set/init(rawvalue:).md)
+### Creating a set
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a set of search suggestions from an integer.
 
 

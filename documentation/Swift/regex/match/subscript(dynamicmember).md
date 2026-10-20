@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a capture by its name or number.
 

@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BillboardMode.billboard
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each particle is oriented to face the camera.
 

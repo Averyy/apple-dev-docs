@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s name.
 
@@ -20,10 +21,15 @@ The receiver’s name.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var rules: [SKTileGroupRule]](sktilegroup/rules.md)
-  An array of [`SKTileGroupRule`](sktilegrouprule.md) objects that the tile group uses to determine tile placement.
+### Accessing or Setting a Tile Group’s Properties
+- [var rules: [SKTileGroupRule]](./rules.md)
+  An array of [`SKTileGroupRule`](../sktilegrouprule.md) objects that the tile group uses to determine tile placement.
 
 
 ---

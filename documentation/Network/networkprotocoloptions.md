@@ -1,7 +1,8 @@
 # NetworkProtocolOptions
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -21,33 +22,33 @@ protocol NetworkProtocolOptions
 ## Topics
 
 ### Associated Types
-- [associatedtype BelowProtocol](networkprotocoloptions/belowprotocol.md)
-- [associatedtype Metadata : NetworkMetadataProtocol](networkprotocoloptions/metadata.md)
-- [associatedtype ProtocolStorage : ConnectionStorage = DefaultProtocolStorage](networkprotocoloptions/protocolstorage.md)
+- [associatedtype BelowProtocol](./networkprotocoloptions/belowprotocol.md)
+- [associatedtype Metadata : NetworkMetadataProtocol](./networkprotocoloptions/metadata.md)
+- [associatedtype ProtocolStorage : ConnectionStorage = DefaultProtocolStorage](./networkprotocoloptions/protocolstorage.md)
 ### Type Aliases
-- [NetworkProtocolOptions.Message](networkprotocoloptions/message.md)
+- [NetworkProtocolOptions.Message](./networkprotocoloptions/message.md)
 
 ## Relationships
 
 ### Inherited By
-- [DatagramProtocol](datagramprotocol.md)
-- [MessageProtocol](messageprotocol.md)
-- [MultiplexProtocol](multiplexprotocol.md)
-- [OneToOneProtocol](onetooneprotocol.md)
-- [StreamProtocol](streamprotocol.md)
+- [DatagramProtocol](./datagramprotocol.md)
+- [MessageProtocol](./messageprotocol.md)
+- [MultiplexProtocol](./multiplexprotocol.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
+- [StreamProtocol](./streamprotocol.md)
 ### Conforming Types
-- [Coder](coder.md)
-- [DTLS](dtls.md)
-- [Framer](framer.md)
-- [IP](ip.md)
-- [QUIC](quic.md)
-- [QUICDatagram](quicdatagram.md)
-- [QUICStream](quicstream.md)
-- [TCP](tcp.md)
-- [TLS](tls.md)
-- [TLV](tlv.md)
-- [UDP](udp.md)
-- [WebSocket](websocket.md)
+- [Coder](./coder.md)
+- [DTLS](./dtls.md)
+- [Framer](./framer.md)
+- [IP](./ip.md)
+- [QUIC](./quic.md)
+- [QUICDatagram](./quicdatagram.md)
+- [QUICStream](./quicstream.md)
+- [TCP](./tcp.md)
+- [TLS](./tls.md)
+- [TLV](./tlv.md)
+- [UDP](./udp.md)
+- [WebSocket](./websocket.md)
 
 
 ---

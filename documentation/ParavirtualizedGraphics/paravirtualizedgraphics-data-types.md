@@ -1,16 +1,18 @@
 # ParavirtualizedGraphics Data Types
 
-**Framework**: Paravirtualized Graphics
+**Framework**: Paravirtualized Graphics  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias PGDisplayCursorMoveHandler](pgdisplaycursormovehandler.md)
+- [typealias PGDisplayCursorMoveHandler](./pgdisplaycursormovehandler.md)
 
 ## See Also
 
-- [ParavirtualizedGraphics Constants](paravirtualizedgraphics-constants.md)
-- [ParavirtualizedGraphics Functions](paravirtualizedgraphics-functions.md)
+### Reference
+- [ParavirtualizedGraphics Constants](./paravirtualizedgraphics-constants.md)
+- [ParavirtualizedGraphics Functions](./paravirtualizedgraphics-functions.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Sharing Resources in a Playground Book
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Reuse common assets throughout a book to reduce its size.
 
@@ -25,17 +26,18 @@ If you support multiple localizations of content in your book, share localized r
 - `mybook.playgroundbook/Contents/Chapters/ch1.playgroundchapter/PublicResources/en.lproj` for the English localization.
 - `mybook.playgroundbook/Contents/Chapters/ch1.playgroundchapter/PublicResources/fr.lproj` for the French localization.
 
-To determine which identifier to use for a particular localization, see [`Language IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW6).
+To determine which identifier to use for a particular localization, see [Language IDs](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW6).
 
 ## See Also
 
-- [Adding a Chapter to a Playground Book](adding-a-chapter-to-a-playground-book.md)
+### Book Structure
+- [Adding a Chapter to a Playground Book](./adding-a-chapter-to-a-playground-book.md)
   Create a folder with a manifest that describes the chapter’s name and page order.
-- [Adding a Page to a Playground Book](adding-a-page-to-a-playground-book.md)
+- [Adding a Page to a Playground Book](./adding-a-page-to-a-playground-book.md)
   Create a subfolder, a manifest file, and a content file.
-- [Adding a Cutscene to a Playground Book](adding-a-cutscene-to-a-playground-book.md)
+- [Adding a Cutscene to a Playground Book](./adding-a-cutscene-to-a-playground-book.md)
   Create a subfolder, a manifest file, and cutscene metadata.
-- [Using Modules to Share Code in a Playground Book](using-modules-to-share-code-in-a-playground-book.md)
+- [Using Modules to Share Code in a Playground Book](./using-modules-to-share-code-in-a-playground-book.md)
   In Swift Playgrounds 3.0 and later, make code available across multiple chapters to teach the value of reusable code.
 
 

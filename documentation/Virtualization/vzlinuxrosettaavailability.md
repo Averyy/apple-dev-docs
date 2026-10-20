@@ -1,7 +1,8 @@
 # VZLinuxRosettaAvailability
 
 **Framework**: Virtualization  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the availability and installation status of Rosetta.
 
@@ -14,35 +15,40 @@ Constants that describe the availability and installation status of Rosetta.
 enum VZLinuxRosettaAvailability
 ```
 
+```c
+enum VZLinuxRosettaAvailability : NSInteger;
+```
+
 ## Mentions
 
-- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
+- [Running Intel Binaries in Linux VMs](./running-intel-binaries-in-linux-vms.md)
 
 ## Topics
 
 ### Rosetta availability states
-- [VZLinuxRosettaAvailability.notSupported](vzlinuxrosettaavailability/notsupported.md)
+- [VZLinuxRosettaAvailability.notSupported](./vzlinuxrosettaavailability/notsupported.md)
   The current hardware or software configuration doesn’t support Rosetta.
-- [VZLinuxRosettaAvailability.notInstalled](vzlinuxrosettaavailability/notinstalled.md)
+- [VZLinuxRosettaAvailability.notInstalled](./vzlinuxrosettaavailability/notinstalled.md)
   Rosetta isn’t installed.
-- [VZLinuxRosettaAvailability.installed](vzlinuxrosettaavailability/installed.md)
+- [VZLinuxRosettaAvailability.installed](./vzlinuxrosettaavailability/installed.md)
   Rosetta is available on the host system.
 ### Initializers
-- [init?(rawValue: Int)](vzlinuxrosettaavailability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./vzlinuxrosettaavailability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var availability: VZLinuxRosettaAvailability](vzlinuxrosettadirectoryshare/availability.md)
+### Checking Rosetta availability
+- [class var availability: VZLinuxRosettaAvailability](./vzlinuxrosettadirectoryshare/availability.md)
   A value that indicates the current state of Rosetta’s availability.
 
 

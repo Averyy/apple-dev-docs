@@ -1,7 +1,8 @@
 # removeObserver(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a display configuration change observer.
 
@@ -14,15 +15,20 @@ Removes a display configuration change observer.
 func removeObserver(_ observer: any VZGraphicsDisplayObserver)
 ```
 
+```objc
+- (void) removeObserver:(id<VZGraphicsDisplayObserver>) observer;
+```
+
 ## Parameters
 
 - `observer`: The observer to remove from notifications about display configuration changes.
 
 ## See Also
 
-- [func addObserver(any VZGraphicsDisplayObserver)](vzgraphicsdisplay/addobserver(_:).md)
+### Observing changes to the display configuration
+- [func addObserver(any VZGraphicsDisplayObserver)](./addobserver%28_%29.md)
   Adds an observer to notify about display configuration changes.
-- [protocol VZGraphicsDisplayObserver](vzgraphicsdisplayobserver.md)
+- [protocol VZGraphicsDisplayObserver](../vzgraphicsdisplayobserver.md)
   A protocol you implement to observe state changes in graphic displays.
 
 

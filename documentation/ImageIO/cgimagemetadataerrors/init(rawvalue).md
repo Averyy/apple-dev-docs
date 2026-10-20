@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Image I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+

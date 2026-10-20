@@ -1,7 +1,8 @@
 # append(moving:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the elements of a output span to the end of this array, leaving the span empty.
 
@@ -24,7 +25,7 @@ mutating func append(moving items: inout OutputSpan<Element>)
 
 If the array does not have sufficient capacity to hold all new items, then this reallocates the array’s storage to grow its capacity, using a geometric growth rate.
 
-> **Note**: O(`items.count`)
+> **Complexity**: O(`items.count`)
 
 ## Parameters
 

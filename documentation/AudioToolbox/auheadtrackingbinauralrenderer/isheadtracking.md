@@ -1,7 +1,8 @@
 # isHeadTracking
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the host currently has enabled head tracking for this spatial Audio Unit.
 
@@ -14,6 +15,10 @@ Indicates whether the host currently has enabled head tracking for this spatial 
 
 ```swift
 var isHeadTracking: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isHeadTracking) BOOL headTracking;
 ```
 
 #### Discussion

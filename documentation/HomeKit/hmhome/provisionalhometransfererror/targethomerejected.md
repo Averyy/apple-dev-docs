@@ -1,7 +1,8 @@
 # HMHome.ProvisionalHomeTransferError.targetHomeRejected
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The home hub rejected the target home identifier.
 
@@ -21,11 +22,12 @@ A home hub rejects a request to transfer a home if the provided home identifier 
 
 ## See Also
 
-- [HMHome.ProvisionalHomeTransferError.authenticationFailed](hmhome/provisionalhometransfererror/authenticationfailed.md)
+### Detecting transfer errors
+- [HMHome.ProvisionalHomeTransferError.authenticationFailed](./authenticationfailed.md)
   Authentication with the home hub failed.
-- [HMHome.ProvisionalHomeTransferError.connectionFailed](hmhome/provisionalhometransfererror/connectionfailed.md)
+- [HMHome.ProvisionalHomeTransferError.connectionFailed](./connectionfailed.md)
   Establishing a network connection to the home hub failed.
-- [HMHome.ProvisionalHomeTransferError.serverError](hmhome/provisionalhometransfererror/servererror.md)
+- [HMHome.ProvisionalHomeTransferError.serverError](./servererror.md)
   An unexpected server-side error or internal error occurred.
 
 

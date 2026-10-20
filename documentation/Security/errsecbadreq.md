@@ -1,7 +1,8 @@
 # errSecBadReq
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Bad parameter or invalid state for operation.
 
@@ -18,6 +19,10 @@ Bad parameter or invalid state for operation.
 
 ```swift
 var errSecBadReq: OSStatus { get }
+```
+
+```c
+errSecBadReq
 ```
 
 

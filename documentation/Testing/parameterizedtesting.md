@@ -1,6 +1,7 @@
 # Implementing parameterized tests
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: Article
 
 Specify different input parameters to generate multiple test cases from a test function.
 
@@ -8,9 +9,9 @@ Specify different input parameters to generate multiple test cases from a test f
 
 Some tests need to be run over many different inputs. For instance, a test might need to validate all cases of an enumeration. The testing library lets developers specify one or more collections to iterate over during testing, with the elements of those collections being forwarded to a test function. An invocation of a test function with a particular set of argument values is called a test *case*.
 
-By default, the test cases of a test function run in parallel with each other. For more information about test parallelization, see [`Running tests serially or in parallel`](parallelization.md).
+By default, the test cases of a test function run in parallel with each other. For more information about test parallelization, see [Running tests serially or in parallel](./parallelization.md).
 
-##### Parameterize Over an Array of Values
+##### Parameterize over an array of values
 
 It is very common to want to run a test *n* times over an array containing the values that should be tested. Consider the following test function:
 
@@ -44,7 +45,7 @@ func foodAvailable(_ food: Food) async throws {
 
 When passing a collection to the `@Test` attribute for parameterization, the testing library passes each element in the collection, one at a time, to the test function as its first (and only) argument. Then, if the test fails for one or more inputs, the corresponding diagnostics can clearly indicate which inputs to examine.
 
-##### Parameterize Over the Cases of an Enumeration
+##### Parameterize over the cases of an enumeration
 
 The previous example includes a hard-coded list of `Food` cases to test. If `Food` is an enumeration that conforms to `CaseIterable`, you can instead write:
 
@@ -62,7 +63,7 @@ func foodAvailable(_ food: Food) async throws {
 
 This way, if a new case is added to the `Food` enumeration, it’s automatically tested by this function.
 
-##### Parameterize Over a Range of Integers
+##### Parameterize over a range of integers
 
 It is possible to parameterize a test function over a closed range of integers:
 
@@ -76,7 +77,7 @@ func makeLargeOrder(count: Int) async throws {
 
 > **Note**: Very large ranges such as `0 ..< .max` may take an excessive amount of time to test, or may never complete due to resource constraints.
 
-##### Pass the Same Arguments to Multiple Test Functions
+##### Pass the same arguments to multiple test functions
 
 If you want to pass the same collection of arguments to two or more parameterized test functions, you can extract the arguments to a separate function or property and pass it to each `@Test` attribute. For example:
 
@@ -103,7 +104,7 @@ func `Package leftovers`(food: Food) throws {
 
 > 💡 **Tip**: You can prefix expressions passed to `arguments:` with `try` or `await`. The testing library evaluates them lazily only if it determines that the associated test will run.
 
-##### Test with More Than One Collection
+##### Test with more than one collection
 
 It’s possible to test more than one collection. Consider the following test function:
 
@@ -119,7 +120,7 @@ Elements from the first collection are passed as the first argument to the test 
 
 Assuming there are five cases in the `Food` enumeration, this test function will, when run, be invoked 500 times (5 x 100) with every possible combination of food and order size. These combinations are referred to as the collections’ Cartesian product.
 
-To avoid the combinatoric semantics shown above, use [`zip()`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/zip(_:_:)):
+To avoid the combinatoric semantics shown above, use [zip()](../Swift/zip%28_,_%29.md):
 
 ```swift
 @Test("Can make large orders", arguments: zip(Food.allCases, 1 ... 100))
@@ -133,13 +134,13 @@ The zipped sequence will be “destructured” into two arguments automatically,
 
 This revised test function is invoked once for each tuple in the zipped sequence, for a total of five invocations instead of 500 invocations. In other words, this test function is passed the inputs `(.burger, 1)`, `(.iceCream, 2)`, …, `(.kebab, 5)` instead of `(.burger, 1)`, `(.burger, 2)`, `(.burger, 3)`, …, `(.kebab, 99)`, `(.kebab, 100)`.
 
-##### Run Selected Test Cases
+##### Run selected test cases
 
 If a parameterized test meets certain requirements, the testing library allows people to run specific test cases it contains. This can be useful when a test has many cases but only some are failing since it enables re-running and debugging the failing cases in isolation.
 
 To support running selected test cases, it must be possible to deterministically match the test case’s arguments. When someone attempts to run selected test cases of a parameterized test function, the testing library evaluates each argument of the tests’ cases for conformance to one of several known protocols, and if all arguments of a test case conform to one of those protocols, that test case can be run selectively. The following lists the known protocols, in precedence order (highest to lowest):
 
-1. [`CustomTestArgumentEncodable`](customtestargumentencodable.md)
+1. [`CustomTestArgumentEncodable`](./customtestargumentencodable.md)
 2. `RawRepresentable`, where `RawValue` conforms to `Encodable`
 3. `Encodable`
 4. `Identifiable`, where `ID` conforms to `Encodable`
@@ -148,16 +149,17 @@ If any argument of a test case doesn’t meet one of the above requirements, the
 
 ## See Also
 
-- [macro Test<C>(String?, any TestTrait..., arguments: C)](test(_:_:arguments:)-8kn7a.md)
+### Test parameterization
+- [macro Test<C>(String?, any TestTrait..., arguments: C)](./test%28_,_,arguments%29-8kn7a.md)
   Declare a test parameterized over a collection of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: C1, C2)](test(_:_:arguments:_:).md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: C1, C2)](./test%28_,_,arguments,_%29.md)
   Declare a test parameterized over two collections of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](test(_:_:arguments:)-3rzok.md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](./test%28_,_,arguments%29-3rzok.md)
   Declare a test parameterized over two zipped collections of values.
-- [protocol CustomTestArgumentEncodable](customtestargumentencodable.md)
+- [protocol CustomTestArgumentEncodable](./customtestargumentencodable.md)
   A protocol for customizing how arguments passed to parameterized tests are encoded, which is used to match against when running specific arguments.
-- [struct Case](test/case.md)
-  A single test case from a parameterized [`Test`](test.md).
+- [struct Case](./test/case.md)
+  A single test case from a parameterized [`Test`](./test.md).
 
 
 ---

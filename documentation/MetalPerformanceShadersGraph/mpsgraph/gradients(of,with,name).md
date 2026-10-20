@@ -1,7 +1,8 @@
 # gradients(of:with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates a partial derivative of primaryTensor with respect to the tensors.
 
@@ -17,6 +18,10 @@ Calculates a partial derivative of primaryTensor with respect to the tensors.
 
 ```swift
 func gradients(of primaryTensor: MPSGraphTensor, with tensors: [MPSGraphTensor], name: String?) -> [MPSGraphTensor : MPSGraphTensor]
+```
+
+```objc
+- (NSDictionary<MPSGraphTensor *,MPSGraphTensor *> *) gradientForPrimaryTensor:(MPSGraphTensor *) primaryTensor withTensors:(NSArray<MPSGraphTensor *> *) tensors name:(NSString *) name;
 ```
 
 #### Return Value

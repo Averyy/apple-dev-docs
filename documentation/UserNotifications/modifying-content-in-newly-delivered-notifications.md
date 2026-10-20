@@ -1,6 +1,7 @@
 # Modifying content in newly delivered notifications
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Modify the payload of a remote notification before it’s displayed on the user’s iOS device.
 
@@ -16,7 +17,7 @@ Modifying a remote notification requires a notification service app extension, w
 
 > ❗ **Important**:  Notification service app extensions only operate on remote notifications configured in the system to display an alert to the user. If alerts are disabled for your app, or if the payload specifies only the playing of a sound or the badging of an icon, the extension isn’t employed.
 
-##### Add a Service App Extension to Your Project
+##### Add a service app extension to your project
 
 A notification service app extension ships as a separate bundle inside your iOS app. To add this extension to your app:
 
@@ -26,16 +27,16 @@ A notification service app extension ships as a separate bundle inside your iOS 
 4. Specify a name and other configuration details for your app extension.
 5. Click Finish.
 
-##### Implement Your Extensions Handler Methods
+##### Implement your extension’s handler methods
 
 The notification service app extension template provided by Xcode includes a default implementation for you to modify.
 
-- Use the [`didReceive(_:withContentHandler:)`](unnotificationserviceextension/didreceive(_:withcontenthandler:).md) method to create a new [`UNMutableNotificationContent`](unmutablenotificationcontent.md) object with the updated content.
-- Use the [`serviceExtensionTimeWillExpire()`](unnotificationserviceextension/serviceextensiontimewillexpire().md) method to terminate any payload-modification tasks that are still running.
+- Use the [`didReceive(_:withContentHandler:)`](./unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method to create a new [`UNMutableNotificationContent`](./unmutablenotificationcontent.md) object with the updated content.
+- Use the [`serviceExtensionTimeWillExpire()`](./unnotificationserviceextension/serviceextensiontimewillexpire%28%29.md) method to terminate any payload-modification tasks that are still running.
 
-Your [`didReceive(_:withContentHandler:)`](unnotificationserviceextension/didreceive(_:withcontenthandler:).md) method has only about 30 seconds to modify the payload and call the provided completion handler. If your code takes longer than that, the system calls the [`serviceExtensionTimeWillExpire()`](unnotificationserviceextension/serviceextensiontimewillexpire().md) method, at which point you must return whatever you can to the system immediately. If you fail to call the completion handler from either method, the system displays the original contents of the notification.
+Your [`didReceive(_:withContentHandler:)`](./unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method has only about 30 seconds to modify the payload and call the provided completion handler. If your code takes longer than that, the system calls the [`serviceExtensionTimeWillExpire()`](./unnotificationserviceextension/serviceextensiontimewillexpire%28%29.md) method, at which point you must return whatever you can to the system immediately. If you fail to call the completion handler from either method, the system displays the original contents of the notification.
 
-Listing 1 shows an implementation of the [`UNNotificationServiceExtension`](unnotificationserviceextension.md) object that decrypts the contents of a secret message delivered using a remote notification. The [`didReceive(_:withContentHandler:)`](unnotificationserviceextension/didreceive(_:withcontenthandler:).md) method decrypts the data and returns a modified version of the notification’s content if it’s successful. If it’s unsuccessful, or if time expires, the extension returns content indicating that the data is still encrypted.
+Listing 1 shows an implementation of the [`UNNotificationServiceExtension`](./unnotificationserviceextension.md) object that decrypts the contents of a secret message delivered using a remote notification. The [`didReceive(_:withContentHandler:)`](./unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method decrypts the data and returns a modified version of the notification’s content if it’s successful. If it’s unsuccessful, or if time expires, the extension returns content indicating that the data is still encrypted.
 
 Listing 1. Decrypting data contained in a remote notification
 
@@ -80,7 +81,7 @@ override func serviceExtensionTimeWillExpire() {
 }
 ```
 
-##### Configure the Payload for the Remote Notification
+##### Configure the payload for the remote notification
 
 The system executes your notification service app extension only when a remote notification’s payload contains the following information:
 
@@ -107,7 +108,8 @@ Listing 2. Specifying the remote notification payload
 
 ## See Also
 
-- [class UNNotificationServiceExtension](unnotificationserviceextension.md)
+### Notification service app extension
+- [class UNNotificationServiceExtension](./unnotificationserviceextension.md)
   An object that modifies the content of a remote notification before it’s delivered to the user.
 
 

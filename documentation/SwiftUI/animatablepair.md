@@ -1,7 +1,8 @@
 # AnimatablePair
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A pair of animatable values, which is itself animatable.
 
@@ -24,36 +25,37 @@ struct AnimatablePair<First, Second> where First : VectorArithmetic, Second : Ve
 ## Topics
 
 ### Creating an animatable pair
-- [init(First, Second)](animatablepair/init(_:_:).md)
+- [init(First, Second)](./animatablepair/init%28_,_%29.md)
   Creates an animated pair with the provided values.
 ### Getting the constituent animations
-- [var first: First](animatablepair/first.md)
+- [var first: First](./animatablepair/first.md)
   The first value.
-- [var second: Second](animatablepair/second.md)
+- [var second: Second](./animatablepair/second.md)
   The second value.
 ### Manipulating values
-- [var magnitudeSquared: Double](animatablepair/magnitudesquared.md)
+- [var magnitudeSquared: Double](./animatablepair/magnitudesquared.md)
   The dot-product of this animated pair with itself.
 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../swift/additivearithmetic.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VectorArithmetic](vectorarithmetic.md)
+- [AdditiveArithmetic](../Swift/additivearithmetic.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VectorArithmetic](./vectorarithmetic.md)
 
 ## See Also
 
-- [protocol Animatable](animatable.md)
+### Making data animatable
+- [protocol Animatable](./animatable.md)
   A type that describes how to animate a property of a view.
-- [struct AnimatableValues](animatablevalues.md)
-- [protocol VectorArithmetic](vectorarithmetic.md)
+- [struct AnimatableValues](./animatablevalues.md)
+- [protocol VectorArithmetic](./vectorarithmetic.md)
   A type that can serve as the animatable data of an animatable type.
-- [struct EmptyAnimatableData](emptyanimatabledata.md)
+- [struct EmptyAnimatableData](./emptyanimatabledata.md)
   An empty type for animatable data.
-- [protocol AnimatableModifier](animatablemodifier.md)
+- [protocol AnimatableModifier](./animatablemodifier.md)
   A modifier that can create another modifier with animation.
 
 

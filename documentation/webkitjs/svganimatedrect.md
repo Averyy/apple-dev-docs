@@ -1,7 +1,8 @@
 # SVGAnimatedRect
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedRect
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedrect/1629430-animval.md)
-- [baseVal](svganimatedrect/1630987-baseval.md)
+- [animVal](./svganimatedrect/api-1629430-animval.md)
+- [baseVal](./svganimatedrect/api-1630987-baseval.md)
 
 
 ---

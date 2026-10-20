@@ -1,7 +1,8 @@
 # errSecOCSPResponderUnauthorized
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) responder rejects the request as unauthorized.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) responder rejects the request as u
 
 ```swift
 var errSecOCSPResponderUnauthorized: OSStatus { get }
+```
+
+```c
+errSecOCSPResponderUnauthorized
 ```
 
 

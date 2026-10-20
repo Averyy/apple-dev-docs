@@ -1,7 +1,8 @@
 # hevcTemporalSubLayerAccess
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates a temporal sublayer access grouping.
 

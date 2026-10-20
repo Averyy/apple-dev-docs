@@ -1,16 +1,19 @@
 # licenseAgreement
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s license agreement URL.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 26.4+
-- macOS 26.4+
-- visionOS 2.4+
+- iOS 17.4+ - Deprecated in 27.0
+- iPadOS 17.4+ - Deprecated in 27.0
+- Mac Catalyst 26.4+ - Deprecated in 27.0
+- macOS 26.4+ - Deprecated in 27.0
+- visionOS 2.4+ - Deprecated in 27.0
+
+> **Deprecated**: Use licenseAgreementText instead.
 
 ## Declaration
 
@@ -20,9 +23,10 @@ var licenseAgreement: URL? { get }
 
 ## See Also
 
-- [let privacyPolicy: URL?](managedapp/privacypolicy.md)
+### Obtaining privacy and copyright information
+- [let privacyPolicy: URL?](./privacypolicy.md)
   The app’s privacy policy URL.
-- [let copyright: String?](managedapp/copyright.md)
+- [let copyright: String?](./copyright.md)
   The app’s copyright information.
 
 

@@ -1,7 +1,8 @@
 # setParent(_:preservingWorldTransform:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches the entity as a child to the specified entity.
 
@@ -11,7 +12,7 @@ Attaches the entity as a child to the specified entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,7 @@ Attaches the entity as a child to the specified entity.
 
 Attaching an entity to a new parent automatically detaches it from its old parent.
 
-The [`children`](hashierarchy/children.md) collections of both the old and new parent are automatically updated as well.
+The [`children`](./children.md) collections of both the old and new parent are automatically updated as well.
 
 > ❗ **Important**: On visionOS, only use `preservingWorldTransform` when moving an entity within the same `AnchorEntity`, `ImmersiveSpace` or SwiftUI `WindowGroup` hierarchy. Moving entities across these hierarchy boundaries while `preservingWorldTransform` is set to `true`, is not supported.
 
@@ -35,9 +36,10 @@ The [`children`](hashierarchy/children.md) collections of both the old and new p
 
 ## See Also
 
-- [var parent: Entity?](hashierarchy/parent.md)
+### Managing the parent
+- [var parent: Entity?](./parent.md)
   The parent entity.
-- [func removeFromParent(preservingWorldTransform: Bool)](hashierarchy/removefromparent(preservingworldtransform:).md)
+- [func removeFromParent(preservingWorldTransform: Bool)](./removefromparent%28preservingworldtransform%29.md)
   Removes the entity from its current parent or from the scene if it is a root entity.
 
 

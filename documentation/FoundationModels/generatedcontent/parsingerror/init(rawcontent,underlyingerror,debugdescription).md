@@ -1,7 +1,8 @@
 # init(rawContent:underlyingError:debugDescription:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a parsing failure value.
 

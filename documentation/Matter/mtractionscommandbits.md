@@ -1,7 +1,8 @@
 # MTRActionsCommandBits
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,35 +19,39 @@
 struct MTRActionsCommandBits
 ```
 
+```c
+enum MTRActionsCommandBits : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtractionscommandbits/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtractionscommandbits/init%28rawvalue%29.md)
 ### Type Properties
-- [static var disableAction: MTRActionsCommandBits](mtractionscommandbits/disableaction.md)
-- [static var disableActionWithDuration: MTRActionsCommandBits](mtractionscommandbits/disableactionwithduration.md)
-- [static var enableAction: MTRActionsCommandBits](mtractionscommandbits/enableaction.md)
-- [static var enableActionWithDuration: MTRActionsCommandBits](mtractionscommandbits/enableactionwithduration.md)
-- [static var instantAction: MTRActionsCommandBits](mtractionscommandbits/instantaction.md)
-- [static var instantActionWithTransition: MTRActionsCommandBits](mtractionscommandbits/instantactionwithtransition.md)
-- [static var pauseAction: MTRActionsCommandBits](mtractionscommandbits/pauseaction.md)
-- [static var pauseActionWithDuration: MTRActionsCommandBits](mtractionscommandbits/pauseactionwithduration.md)
-- [static var resumeAction: MTRActionsCommandBits](mtractionscommandbits/resumeaction.md)
-- [static var startAction: MTRActionsCommandBits](mtractionscommandbits/startaction.md)
-- [static var startActionWithDuration: MTRActionsCommandBits](mtractionscommandbits/startactionwithduration.md)
-- [static var stopAction: MTRActionsCommandBits](mtractionscommandbits/stopaction.md)
+- [static var disableAction: MTRActionsCommandBits](./mtractionscommandbits/disableaction.md)
+- [static var disableActionWithDuration: MTRActionsCommandBits](./mtractionscommandbits/disableactionwithduration.md)
+- [static var enableAction: MTRActionsCommandBits](./mtractionscommandbits/enableaction.md)
+- [static var enableActionWithDuration: MTRActionsCommandBits](./mtractionscommandbits/enableactionwithduration.md)
+- [static var instantAction: MTRActionsCommandBits](./mtractionscommandbits/instantaction.md)
+- [static var instantActionWithTransition: MTRActionsCommandBits](./mtractionscommandbits/instantactionwithtransition.md)
+- [static var pauseAction: MTRActionsCommandBits](./mtractionscommandbits/pauseaction.md)
+- [static var pauseActionWithDuration: MTRActionsCommandBits](./mtractionscommandbits/pauseactionwithduration.md)
+- [static var resumeAction: MTRActionsCommandBits](./mtractionscommandbits/resumeaction.md)
+- [static var startAction: MTRActionsCommandBits](./mtractionscommandbits/startaction.md)
+- [static var startActionWithDuration: MTRActionsCommandBits](./mtractionscommandbits/startactionwithduration.md)
+- [static var stopAction: MTRActionsCommandBits](./mtractionscommandbits/stopaction.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

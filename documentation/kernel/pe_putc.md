@@ -1,14 +1,15 @@
 # PE_putc
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void (*PE_putc)(char c);
 ```
 

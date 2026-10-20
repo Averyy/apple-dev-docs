@@ -1,7 +1,8 @@
 # showsUserTrackingButton
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map displays the user tracking button.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the map displays the user tracking button
 var showsUserTrackingButton: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL showsUserTrackingButton;
+```
+
 ## See Also
 
-- [var preferredConfiguration: MKMapConfiguration](mkmapview/preferredconfiguration.md)
+### Configuring the map appearance
+- [var preferredConfiguration: MKMapConfiguration](./preferredconfiguration.md)
   The characteristics of the map view, including the map type and features the map displays.
-- [var pitchButtonVisibility: MKFeatureVisibility](mkmapview/pitchbuttonvisibility.md)
+- [var pitchButtonVisibility: MKFeatureVisibility](./pitchbuttonvisibility.md)
   A value that indicates whether the map’s pitch button is visible.
-- [class MKMapConfiguration](mkmapconfiguration.md)
+- [class MKMapConfiguration](../mkmapconfiguration.md)
   An abstract class that represents the shared elements of map configurations.
-- [class MKStandardMapConfiguration](mkstandardmapconfiguration.md)
+- [class MKStandardMapConfiguration](../mkstandardmapconfiguration.md)
   The class that represents the default map presentation, which is a street map that shows the position of all roads and some road names.
-- [class MKHybridMapConfiguration](mkhybridmapconfiguration.md)
+- [class MKHybridMapConfiguration](../mkhybridmapconfiguration.md)
   The class that represents a satellite image of the area with road and road name information layers on top.
-- [class MKImageryMapConfiguration](mkimagerymapconfiguration.md)
+- [class MKImageryMapConfiguration](../mkimagerymapconfiguration.md)
   The class that represents an imagery-based map presentation, such as one using satellite imagery.
 
 

@@ -1,7 +1,8 @@
 # kSecAttrIsSensitive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s sensitivity.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s sensitivity.
 let kSecAttrIsSensitive: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrIsSensitive;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). When set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the item can only be exported in an encrypted format. Items of class [`kSecClassKey`](ksecclasskey.md) have this attribute.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). When set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), the item can only be exported in an encrypted format. Items of class [`kSecClassKey`](./ksecclasskey.md) have this attribute.
 
 
 ---

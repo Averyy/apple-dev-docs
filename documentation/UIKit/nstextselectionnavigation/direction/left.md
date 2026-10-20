@@ -1,7 +1,8 @@
 # NSTextSelectionNavigation.Direction.left
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents a selection in the left direction along the current line.
 
@@ -18,17 +19,22 @@ The value that represents a selection in the left direction along the current li
 case left
 ```
 
+```c
+NSTextSelectionNavigationDirectionLeft
+```
+
 ## See Also
 
-- [NSTextSelectionNavigation.Direction.forward](nstextselectionnavigation/direction/forward.md)
+### Navigation directions
+- [NSTextSelectionNavigation.Direction.forward](./forward.md)
   The value that represents a logical forward selection based on the flow of text stored in the document.
-- [NSTextSelectionNavigation.Direction.backward](nstextselectionnavigation/direction/backward.md)
+- [NSTextSelectionNavigation.Direction.backward](./backward.md)
   The value that represents a backward selection based on the flow of text stored in the document.
-- [NSTextSelectionNavigation.Direction.right](nstextselectionnavigation/direction/right.md)
+- [NSTextSelectionNavigation.Direction.right](./right.md)
   The value that represents a selection in the right direction along the current line.
-- [NSTextSelectionNavigation.Direction.up](nstextselectionnavigation/direction/up.md)
+- [NSTextSelectionNavigation.Direction.up](./up.md)
   The value that represents a selection in the up direction, above the current line.
-- [NSTextSelectionNavigation.Direction.down](nstextselectionnavigation/direction/down.md)
+- [NSTextSelectionNavigation.Direction.down](./down.md)
   The value that represents a selection in the down direction, below the current line.
 
 

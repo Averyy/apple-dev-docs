@@ -1,7 +1,8 @@
 # deviceWasAddedNotification
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,12 +17,17 @@
 class let deviceWasAddedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const MIDICIDeviceWasAddedNotification;
+```
+
 ## See Also
 
-- [class let deviceWasRemovedNotification: NSNotification.Name](midicidevicemanager/devicewasremovednotification.md)
-- [class let profileWasRemovedNotification: NSNotification.Name](midicidevicemanager/profilewasremovednotification.md)
-- [class let profileWasUpdatedNotification: NSNotification.Name](midicidevicemanager/profilewasupdatednotification.md)
-- [class var shared: MIDICIDeviceManager](midicidevicemanager/shared.md)
+### Type Properties
+- [class let deviceWasRemovedNotification: NSNotification.Name](./devicewasremovednotification.md)
+- [class let profileWasRemovedNotification: NSNotification.Name](./profilewasremovednotification.md)
+- [class let profileWasUpdatedNotification: NSNotification.Name](./profilewasupdatednotification.md)
+- [class var shared: MIDICIDeviceManager](./shared.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # localTransform(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the local transform matrix as of the specified time sample.
 
@@ -19,6 +20,10 @@ Returns the local transform matrix as of the specified time sample.
 optional func localTransform(atTime time: TimeInterval) -> matrix_float4x4
 ```
 
+```objc
+- (matrix_float4x4) localTransformAtTime:(NSTimeInterval) time;
+```
+
 #### Return Value
 
 The local transformation matrix for the specified time sample.
@@ -27,7 +32,7 @@ The local transformation matrix for the specified time sample.
 
 This matrix defines the position, orientation, shear, and scale for any object affected by the transform component, relative to the coordinate space of its parent, as of the specified time sample.
 
-Requesting a sample outside the time range clamps returned values using the [`minimumTime`](mdltransformcomponent/minimumtime.md) and [`maximumTime`](mdltransformcomponent/maximumtime.md) properties. Some asset formats support continuous sampling, with interpolation for times between the samples stored in the asset; others are discrete. For an asset with discrete time information, requesting a sample time in between the samples stored in the asset returns data for the immediately preceding time.
+Requesting a sample outside the time range clamps returned values using the [`minimumTime`](./minimumtime.md) and [`maximumTime`](./maximumtime.md) properties. Some asset formats support continuous sampling, with interpolation for times between the samples stored in the asset; others are discrete. For an asset with discrete time information, requesting a sample time in between the samples stored in the asset returns data for the immediately preceding time.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ Requesting a sample outside the time range clamps returned values using the [`mi
 
 ## See Also
 
-- [var minimumTime: TimeInterval](mdltransformcomponent/minimumtime.md)
+### Working with Animated Transforms
+- [var minimumTime: TimeInterval](./minimumtime.md)
   The timestamp for the first timed data sample in the transform component.
-- [var maximumTime: TimeInterval](mdltransformcomponent/maximumtime.md)
+- [var maximumTime: TimeInterval](./maximumtime.md)
   The timestamp for the last timed data sample in the transform component.
-- [func setLocalTransform(matrix_float4x4, forTime: TimeInterval)](mdltransformcomponent/setlocaltransform(_:fortime:).md)
+- [func setLocalTransform(matrix_float4x4, forTime: TimeInterval)](./setlocaltransform%28_,fortime%29.md)
   Sets a new local transform matrix for the specified time sample.
 
 

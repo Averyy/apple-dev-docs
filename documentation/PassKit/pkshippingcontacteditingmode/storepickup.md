@@ -1,7 +1,8 @@
 # PKShippingContactEditingMode.storePickup
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The shipping contact on the payment sheet represents a pickup address and isn’t editable by the user.
 
@@ -19,13 +20,18 @@ The shipping contact on the payment sheet represents a pickup address and isn’
 case storePickup
 ```
 
+```c
+PKShippingContactEditingModeStorePickup
+```
+
 ## Mentions
 
-- [Displaying a Read-Only Pickup Address](displaying-a-read-only-pickup-address.md)
+- [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
 
 ## See Also
 
-- [PKShippingContactEditingMode.available](pkshippingcontacteditingmode/available.md)
+### Reading the editing mode
+- [PKShippingContactEditingMode.available](./available.md)
   The value that indicates Apple Pay Later is available.
 
 

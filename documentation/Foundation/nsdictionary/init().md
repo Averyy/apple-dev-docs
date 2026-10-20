@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated dictionary.
 
@@ -20,17 +21,22 @@ Initializes a newly allocated dictionary.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A dictionary.
 
 #### Discussion
 
-This method is a designated initializer of [`NSDictionary`](nsdictionary.md).
+This method is a designated initializer of [`NSDictionary`](../nsdictionary.md).
 
 ## See Also
 
-- [init(objects: UnsafePointer<AnyObject>?, forKeys: UnsafePointer<any NSCopying>?, count: Int)](nsdictionary/init(objects:forkeys:count:).md)
+### Related Documentation
+- [init(objects: UnsafePointer<AnyObject>?, forKeys: UnsafePointer<any NSCopying>?, count: Int)](./init%28objects,forkeys,count%29.md)
   Initializes a newly allocated dictionary with the specified number of key-value pairs constructed from the provided C arrays of keys and objects.
 
 

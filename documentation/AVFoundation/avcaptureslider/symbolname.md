@@ -1,7 +1,8 @@
 # symbolName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the SF Symbol that represents this control.
 
@@ -18,9 +19,14 @@ The name of the SF Symbol that represents this control.
 var symbolName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * symbolName;
+```
+
 ## See Also
 
-- [var localizedTitle: String](avcaptureslider/localizedtitle.md)
+### Inspecting presentation attributes
+- [var localizedTitle: String](./localizedtitle.md)
   A localized title that describes the control’s action.
 
 

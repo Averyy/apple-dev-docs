@@ -1,7 +1,8 @@
 # PHASECardioidDirectivityModelParameters
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that directs sound in a heart-shaped curve surrounding a sound source.
 
@@ -17,6 +18,10 @@ An object that directs sound in a heart-shaped curve surrounding a sound source.
 
 ```swift
 class PHASECardioidDirectivityModelParameters
+```
+
+```objc
+@interface PHASECardioidDirectivityModelParameters : PHASEDirectivityModelParameters
 ```
 
 #### Overview
@@ -73,38 +78,39 @@ cardioidSegment2.sharpness = 1.5f;
 spatialMixer.sourceDirectivityModelParameters = simpleCardioid;
 ```
 
-![Illustration of two different types of cardioids that position in relation to a sphere representing the user. On the left, a cardioid resembles a heart with a sphere resting in the heart’s cusp. On the right, a cardioid resembles the shape of a hypercardioid. A large oval extends outward from one side of the sphere, and a smaller oval extends in the opposite direction, from the backside of the sphere.](/images/com.apple.phase/media-3919256@2x.png)
+![Illustration of two different types of cardioids that position in relation to a sphere representing the user. On the left, a cardioid resembles a heart with a sphere resting in the heart’s cusp. On the right, a cardioid resembles the shape of a hypercardioid. A large oval extends outward from one side of the sphere, and a smaller oval extends in the opposite direction, from the backside of the sphere.](https://developer.apple.com/tutorials/images/com.apple.phase/media-3919256@2x.png)
 
 ## Topics
 
 ### Creating the Cardioid Directivity Model Parameters
-- [init(subbandParameters: [PHASECardioidDirectivityModelSubbandParameters])](phasecardioiddirectivitymodelparameters/init(subbandparameters:).md)
+- [init(subbandParameters: [PHASECardioidDirectivityModelSubbandParameters])](./phasecardioiddirectivitymodelparameters/init%28subbandparameters%29.md)
   Creates an object that directs sound in a heart-shaped curve surrounding a sound source.
 ### Defining Subbands
-- [var subbandParameters: [PHASECardioidDirectivityModelSubbandParameters]](phasecardioiddirectivitymodelparameters/subbandparameters.md)
+- [var subbandParameters: [PHASECardioidDirectivityModelSubbandParameters]](./phasecardioiddirectivitymodelparameters/subbandparameters.md)
   An array of frequencies that describe varying sound emission across the spectrum.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEDirectivityModelParameters](phasedirectivitymodelparameters.md)
+- [PHASEDirectivityModelParameters](./phasedirectivitymodelparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASECardioidDirectivityModelSubbandParameters](phasecardioiddirectivitymodelsubbandparameters.md)
+### Sound Directivity
+- [class PHASECardioidDirectivityModelSubbandParameters](./phasecardioiddirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a heart.
-- [class PHASEConeDirectivityModelParameters](phaseconedirectivitymodelparameters.md)
+- [class PHASEConeDirectivityModelParameters](./phaseconedirectivitymodelparameters.md)
   An object that directs sound in a cone-shaped curve that extends from a sound source.
-- [class PHASEConeDirectivityModelSubbandParameters](phaseconedirectivitymodelsubbandparameters.md)
+- [class PHASEConeDirectivityModelSubbandParameters](./phaseconedirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a cone.
-- [class PHASEDirectivityModelParameters](phasedirectivitymodelparameters.md)
+- [class PHASEDirectivityModelParameters](./phasedirectivitymodelparameters.md)
   A base class for objects that direct sound.
 
 

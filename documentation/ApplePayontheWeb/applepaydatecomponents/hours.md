@@ -1,7 +1,8 @@
 # hours
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that represents an hour.
 
@@ -11,7 +12,7 @@ A number that represents an hour.
 
 ## Declaration
 
-```swift
+```
 long hours;
 ```
 
@@ -21,11 +22,12 @@ Hours of the day are 0-based. For example, to represent the time 06:00, use `6`,
 
 ## See Also
 
-- [years](applepaydatecomponents/years.md)
+### Date Components
+- [years](./years.md)
   A number that represents a year.
-- [months](applepaydatecomponents/months.md)
+- [months](./months.md)
   A number between 1 and 12 that represents a month.
-- [days](applepaydatecomponents/days.md)
+- [days](./days.md)
   A number that represents a day.
 
 

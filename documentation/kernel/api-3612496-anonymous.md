@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCICommandMessageControlStatus](3612496-anonymous/iousbhostcicommandmessagecontrolstatus.md)
-- [IOUSBHostCICommandMessageControlStatusPhase](3612496-anonymous/iousbhostcicommandmessagecontrolstatusphase.md)
-- [IOUSBHostCICommandMessageData0DeviceAddress](3612496-anonymous/iousbhostcicommandmessagedata0deviceaddress.md)
-- [IOUSBHostCICommandMessageData0DeviceAddressPhase](3612496-anonymous/iousbhostcicommandmessagedata0deviceaddressphase.md)
-- [IOUSBHostCICommandMessageData0EndpointAddress](3612496-anonymous/iousbhostcicommandmessagedata0endpointaddress.md)
-- [IOUSBHostCICommandMessageData0EndpointAddressPhase](3612496-anonymous/iousbhostcicommandmessagedata0endpointaddressphase.md)
-- [IOUSBHostCICommandMessageData0RootPort](3612496-anonymous/iousbhostcicommandmessagedata0rootport.md)
-- [IOUSBHostCICommandMessageData0RootPortPhase](3612496-anonymous/iousbhostcicommandmessagedata0rootportphase.md)
-- [IOUSBHostCICommandMessageData0StreamID](3612496-anonymous/iousbhostcicommandmessagedata0streamid.md)
-- [IOUSBHostCICommandMessageData0StreamIDPhase](3612496-anonymous/iousbhostcicommandmessagedata0streamidphase.md)
+- [IOUSBHostCICommandMessageControlStatus](./api-3612496-anonymous/iousbhostcicommandmessagecontrolstatus.md)
+- [IOUSBHostCICommandMessageControlStatusPhase](./api-3612496-anonymous/iousbhostcicommandmessagecontrolstatusphase.md)
+- [IOUSBHostCICommandMessageData0DeviceAddress](./api-3612496-anonymous/iousbhostcicommandmessagedata0deviceaddress.md)
+- [IOUSBHostCICommandMessageData0DeviceAddressPhase](./api-3612496-anonymous/iousbhostcicommandmessagedata0deviceaddressphase.md)
+- [IOUSBHostCICommandMessageData0EndpointAddress](./api-3612496-anonymous/iousbhostcicommandmessagedata0endpointaddress.md)
+- [IOUSBHostCICommandMessageData0EndpointAddressPhase](./api-3612496-anonymous/iousbhostcicommandmessagedata0endpointaddressphase.md)
+- [IOUSBHostCICommandMessageData0RootPort](./api-3612496-anonymous/iousbhostcicommandmessagedata0rootport.md)
+- [IOUSBHostCICommandMessageData0RootPortPhase](./api-3612496-anonymous/iousbhostcicommandmessagedata0rootportphase.md)
+- [IOUSBHostCICommandMessageData0StreamID](./api-3612496-anonymous/iousbhostcicommandmessagedata0streamid.md)
+- [IOUSBHostCICommandMessageData0StreamIDPhase](./api-3612496-anonymous/iousbhostcicommandmessagedata0streamidphase.md)
 
 
 ---

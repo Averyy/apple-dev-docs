@@ -1,12 +1,15 @@
 # draw(with:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the annotation on its associated page.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
+
+> **Deprecated**: Use [`draw(with:in:)`](./draw%28with,in%29.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Draws the annotation on its associated page.
 func draw(with box: PDFDisplayBox)
 ```
 
+```objc
+- (void) drawWithBox:(PDFDisplayBox) box;
+```
+
 ## Mentions
 
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](../adding-custom-graphics-to-a-pdf.md)
 
 #### Discussion
 
@@ -30,12 +37,14 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [func bounds(for: PDFDisplayBox) -> CGRect](pdfpage/bounds(for:).md)
+### Related Documentation
+- [func bounds(for: PDFDisplayBox) -> CGRect](../pdfpage/bounds%28for%29.md)
   Returns the bounds for the specified PDF display box.
-- [convenience init(bounds: NSRect)](pdfannotation/init(bounds:).md)
+### Deprecated Methods
+- [convenience init(bounds: NSRect)](./init%28bounds%29.md)
   Creates a PDF annotation object.
-- [convenience init(dictionary: [AnyHashable : Any], forPage: PDFPage?)](pdfannotation/init(dictionary:forpage:).md)
-- [func removeAllAppearanceStreams()](pdfannotation/removeallappearancestreams.md)
+- [convenience init(dictionary: [AnyHashable : Any], forPage: PDFPage?)](./init%28dictionary,forpage%29.md)
+- [func removeAllAppearanceStreams()](./removeallappearancestreams%28%29.md)
 
 
 ---

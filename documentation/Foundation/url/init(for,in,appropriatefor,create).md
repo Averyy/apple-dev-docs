@@ -1,7 +1,8 @@
 # init(for:in:appropriateFor:create:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a file URL for a common directory in a domain.
 
@@ -22,16 +23,19 @@ init(for directory: FileManager.SearchPathDirectory, in domain: FileManager.Sear
 
 ## Parameters
 
-- `directory`: The search path for the commonly used directory, such as [`FileManager.SearchPathDirectory.desktopDirectory`](filemanager/searchpathdirectory/desktopdirectory.md) or [`FileManager.SearchPathDirectory.downloadsDirectory`](filemanager/searchpathdirectory/downloadsdirectory.md).
-- `domain`: The file system domain to search, which the values in [`FileManager.SearchPathDomainMask`](filemanager/searchpathdomainmask.md) define. Specify only one domain for this parameter. You may not specify [`allDomainsMask`](filemanager/searchpathdomainmask/alldomainsmask.md) with this initializer.
-- `url`: The file URL for determining the location of the returned URL. Only the volume of this parameter is relevant. The initializer ignores this parameter unless the directory parameter contains the value [`FileManager.SearchPathDirectory.itemReplacementDirectory`](filemanager/searchpathdirectory/itemreplacementdirectory.md) and the domain parameter contains the value [`userDomainMask`](filemanager/searchpathdomainmask/userdomainmask.md).
+- `directory`: The search path for the commonly used directory, such as [`FileManager.SearchPathDirectory.desktopDirectory`](../filemanager/searchpathdirectory/desktopdirectory.md) or [`FileManager.SearchPathDirectory.downloadsDirectory`](../filemanager/searchpathdirectory/downloadsdirectory.md).
+- `domain`: The file system domain to search, which the values in [`FileManager.SearchPathDomainMask`](../filemanager/searchpathdomainmask.md) define. Specify only one domain for this parameter. You may not specify [`allDomainsMask`](../filemanager/searchpathdomainmask/alldomainsmask.md) with this initializer.
+- `url`: The file URL for determining the location of the returned URL. Only the volume of this parameter is relevant.
+
+  The initializer ignores this parameter unless the directory parameter contains the value [`FileManager.SearchPathDirectory.itemReplacementDirectory`](../filemanager/searchpathdirectory/itemreplacementdirectory.md) and the domain parameter contains the value [`userDomainMask`](../filemanager/searchpathdomainmask/userdomainmask.md).
 - `shouldCreate`: A Boolean value that indicates whether the initializer creates the directory if it doesn’t already exist.
 
 ## See Also
 
-- [FileManager.SearchPathDirectory](filemanager/searchpathdirectory.md)
+### Creating a file URL for a common directory
+- [FileManager.SearchPathDirectory](../filemanager/searchpathdirectory.md)
   The location of significant directories.
-- [FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask.md)
+- [FileManager.SearchPathDomainMask](../filemanager/searchpathdomainmask.md)
   Domain constants specifying base locations to use when you search for significant directories.
 
 

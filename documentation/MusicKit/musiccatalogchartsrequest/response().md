@@ -1,7 +1,8 @@
 # response()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the most popular items of the requested types that match the genre and kinds for the request.
 

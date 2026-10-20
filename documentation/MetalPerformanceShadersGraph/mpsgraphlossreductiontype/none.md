@@ -1,7 +1,8 @@
 # MPSGraphLossReductionType.none
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Computes the loss without reduction.
 
@@ -17,6 +18,10 @@ Computes the loss without reduction.
 
 ```swift
 case none
+```
+
+```c
+MPSGraphLossReductionTypeNone
 ```
 
 

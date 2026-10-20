@@ -1,7 +1,8 @@
 # init(_:prefersPromotionalIcon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to merchandise an individual product.
 
@@ -27,7 +28,7 @@ If the product has a promotional image available, the view displays it. Otherwis
 
 If you set the `prefersPromotionalIcon` parameter to `false`, the view doesn’t show an image even if the product has a promotional image available.
 
-> 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(_:icon:)`](productview/init(_:icon:).md) initializer. It receives a [`ProductIconPhase`](producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
+> 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(_:icon:)`](./init%28_,icon%29.md) initializer. It receives a [`ProductIconPhase`](../producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
 
 ## Parameters
 
@@ -36,9 +37,10 @@ If you set the `prefersPromotionalIcon` parameter to `false`, the view doesn’t
 
 ## See Also
 
-- [init(Product, prefersPromotionalIcon: Bool, icon: () -> Icon)](productview/init(_:preferspromotionalicon:icon:).md)
+### Creating product views with preloaded products
+- [init(Product, prefersPromotionalIcon: Bool, icon: () -> Icon)](./init%28_,preferspromotionalicon,icon%29.md)
   Creates a view to merchandise an individual product using a custom icon.
-- [init(Product, icon: (ProductIconPhase) -> Icon)](productview/init(_:icon:).md)
+- [init(Product, icon: (ProductIconPhase) -> Icon)](./init%28_,icon%29.md)
   Creates a view to display a product that the system already loaded from the App Store, and merchandise it using its promotional image.
 
 

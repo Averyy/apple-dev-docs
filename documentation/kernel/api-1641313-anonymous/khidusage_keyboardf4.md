@@ -1,14 +1,15 @@
 # kHIDUsage_KeyboardF4
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_KeyboardF4 = 0x3D
 ```
 

@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track-level metadata to write to the output.
 
@@ -17,6 +18,10 @@ The track-level metadata to write to the output.
 
 ```swift
 var metadata: [AVMetadataItem] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
 ```
 
 #### Discussion

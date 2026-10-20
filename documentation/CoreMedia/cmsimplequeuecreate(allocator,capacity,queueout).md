@@ -1,7 +1,8 @@
 # CMSimpleQueueCreate(allocator:capacity:queueOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a queue that has the specified capacity.
 
@@ -20,9 +21,13 @@ Creates a queue that has the specified capacity.
 func CMSimpleQueueCreate(allocator: CFAllocator?, capacity: Int32, queueOut: UnsafeMutablePointer<CMSimpleQueue?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSimpleQueueCreate(CFAllocatorRef allocator, int32_t capacity, CMSimpleQueueRef*queueOut);
+```
+
 #### Return Value
 
-A result code. See [`Simple Queue Error Codes`](simple-queue-errors.md).
+A result code. See [Simple Queue Error Codes](./simple-queue-errors.md).
 
 #### Discussion
 

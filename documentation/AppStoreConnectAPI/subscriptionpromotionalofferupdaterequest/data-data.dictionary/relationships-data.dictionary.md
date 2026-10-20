@@ -1,7 +1,8 @@
 # SubscriptionPromotionalOfferUpdateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPromotionalOfferUpdateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPromotionalOfferUpdateRequest.Data.Relationships.Prices](subscriptionpromotionalofferupdaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary.md)
+- [object SubscriptionPromotionalOfferUpdateRequest.Data.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
 
 ## Properties
 

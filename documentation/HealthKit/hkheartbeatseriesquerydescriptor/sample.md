@@ -1,7 +1,8 @@
 # sample
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sample containing the heartbeat series.
 
@@ -10,7 +11,7 @@ The sample containing the heartbeat series.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # init(expanded:compactLeading:compactTrailing:minimal:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration object with views that appear in the Dynamic Island.
 
@@ -24,7 +25,8 @@ init<Expanded, CompactLeading, CompactTrailing, Minimal>(@DynamicIslandExpandedC
 
 ## See Also
 
-- [struct DynamicIslandExpandedRegion](dynamicislandexpandedregion.md)
+### Creating the view for the Dynamic Island
+- [struct DynamicIslandExpandedRegion](../dynamicislandexpandedregion.md)
   A structure that defines and positions the content of an expanded Live Activity in the Dynamic Island.
 
 

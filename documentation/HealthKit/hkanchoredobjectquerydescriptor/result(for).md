@@ -1,7 +1,8 @@
 # result(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 
@@ -10,7 +11,7 @@ Runs a one-shot query and asynchronously returns a snapshot of the current match
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -19,17 +20,20 @@ Runs a one-shot query and asynchronously returns a snapshot of the current match
 func result(for healthStore: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result
 ```
 
+Available when `Sample` inherits `HKSample`.
+
 ## Parameters
 
 - `healthStore`: The access point for HealthKit data.
 
 ## See Also
 
-- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](hkanchoredobjectquerydescriptor/results(for:).md)
+### Running Queries
+- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](./results%28for%29.md)
   Initiates a long-running query that returns its results using an asynchronous sequence.
-- [HKAnchoredObjectQueryDescriptor.Result](hkanchoredobjectquerydescriptor/result.md)
+- [HKAnchoredObjectQueryDescriptor.Result](./result.md)
   A set of results from an anchored object query.
-- [HKAnchoredObjectQueryDescriptor.Results](hkanchoredobjectquerydescriptor/results.md)
+- [HKAnchoredObjectQueryDescriptor.Results](./results.md)
   An asynchronous sequence that emits updates from an anchored object query.
 
 

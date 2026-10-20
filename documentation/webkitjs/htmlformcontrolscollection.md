@@ -1,7 +1,8 @@
 # HTMLFormControlsCollection
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLFormControlsCollection
 ```
 
 ## Topics
 
 ### Instance Methods
-- [?](htmlformcontrolscollection/2871294.md)
-- [namedItem](htmlformcontrolscollection/1630090-nameditem.md)
+- [?](./htmlformcontrolscollection/api-2871294.md)
+- [namedItem](./htmlformcontrolscollection/api-1630090-nameditem.md)
 
 ## Relationships
 

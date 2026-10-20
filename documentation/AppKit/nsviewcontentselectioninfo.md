@@ -1,10 +1,11 @@
 # NSViewContentSelectionInfo
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,13 @@
 protocol NSViewContentSelectionInfo : NSObjectProtocol
 ```
 
+```objc
+@protocol NSViewContentSelectionInfo <NSObject>
+```
+
 ## Mentions
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
+- [Supporting Writing Tools via the pasteboard](./supporting-writing-tools-via-the-pasteboard.md)
 
 #### Overview
 
@@ -23,20 +28,21 @@ A protocol to request information from NSView subclasses about the selected cont
 ## Topics
 
 ### Instance Properties
-- [var selectionAnchorRect: NSRect](nsviewcontentselectioninfo/selectionanchorrect.md)
+- [var selectionAnchorRect: NSRect](./nsviewcontentselectioninfo/selectionanchorrect.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Layout](layout.md)
+### Managing the view’s content
+- [Layout](./layout.md)
   Specify the size and position your view relative to other nearby views using rules that update your view hierarchy automatically.
-- [Drawing](nsview-drawing.md)
+- [Drawing](./nsview-drawing.md)
   Draw the content of custom views and update that content when the view’s size or appearance changes.
-- [Printing](nsview-printing.md)
+- [Printing](./nsview-printing.md)
   Create a printable version of your view’s content and handle pagination and printer-related behaviors.
 
 

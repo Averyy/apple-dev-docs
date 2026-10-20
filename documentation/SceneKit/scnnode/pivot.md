@@ -1,18 +1,19 @@
 # pivot
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pivot point for the node’s position, rotation, and scale. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The pivot point for the node’s position, rotation, and scale. Animatable.
 var pivot: SCNMatrix4 { get set }
 ```
 
+```objc
+@property (nonatomic) SCNMatrix4 pivot;
+```
+
 #### Discussion
 
-A node’s pivot is the transformation between its coordinate space and that used by its [`position`](scnnode/position.md), [`rotation`](scnnode/rotation.md), and [`scale`](scnnode/scale.md) properties. The default pivot is [`SCNMatrix4Identity`](scnmatrix4identity.md), specifying that the node’s position locates the origin of its coordinate system, its rotation is about an axis through its center, and its scale is also relative to that center point.
+A node’s pivot is the transformation between its coordinate space and that used by its [`position`](./position.md), [`rotation`](./rotation.md), and [`scale`](./scale.md) properties. The default pivot is [`SCNMatrix4Identity`](../scnmatrix4identity.md), specifying that the node’s position locates the origin of its coordinate system, its rotation is about an axis through its center, and its scale is also relative to that center point.
 
 Changing the pivot transform alters these behaviors in many useful ways. You can:
 
@@ -30,23 +35,25 @@ Changing the pivot transform alters these behaviors in many useful ways. You can
 - Move the node’s axis of rotation. For example, with a translation transform you can cause a node to revolve around a faraway point instead of rotating around its center, and with a rotation transform you can tilt the axis of rotation.
 - Adjust the center point and direction for scaling the node. For example, with a translation transform you can cause a node to grow or shrink relative to a corner instead of to its center.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var simdPivot: simd_float4x4](scnnode/simdpivot.md)
+### Related Documentation
+- [var simdPivot: simd_float4x4](./simdpivot.md)
   The pivot point for the node’s position, rotation, and scale. Animatable.
-- [var transform: SCNMatrix4](scnnode/transform.md)
+### Managing the Node’s Transform (SceneKit Types)
+- [var transform: SCNMatrix4](./transform.md)
   The transform applied to the node relative to its parent. Animatable.
-- [var position: SCNVector3](scnnode/position.md)
+- [var position: SCNVector3](./position.md)
   The translation applied to the node. Animatable.
-- [var rotation: SCNVector4](scnnode/rotation.md)
+- [var rotation: SCNVector4](./rotation.md)
   The node’s orientation, expressed as a rotation angle about an axis. Animatable.
-- [var eulerAngles: SCNVector3](scnnode/eulerangles.md)
+- [var eulerAngles: SCNVector3](./eulerangles.md)
   The node’s orientation, expressed as pitch, yaw, and roll angles in radians. Animatable.
-- [var orientation: SCNQuaternion](scnnode/orientation.md)
+- [var orientation: SCNQuaternion](./orientation.md)
   The node’s orientation, expressed as a quaternion. Animatable.
-- [var scale: SCNVector3](scnnode/scale.md)
+- [var scale: SCNVector3](./scale.md)
   The scale factor applied to the node. Animatable.
 
 

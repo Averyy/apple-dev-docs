@@ -1,7 +1,8 @@
 # staticLinkingDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures an object that contains information about functions to link to the tile render pipeline when Metal builds it.
 
@@ -18,6 +19,10 @@ Configures an object that contains information about functions to link to the ti
 ```swift
 @NSCopying
 var staticLinkingDescriptor: MTL4StaticLinkingDescriptor! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTL4StaticLinkingDescriptor * staticLinkingDescriptor;
 ```
 
 

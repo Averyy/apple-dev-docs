@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Telephony  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a quick switch state with the provided value.
 

@@ -1,7 +1,8 @@
 # DatePicker.Components
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 13.0+
@@ -19,7 +20,8 @@ typealias Components = DatePickerComponents
 
 ## See Also
 
-- [struct DatePickerComponents](datepickercomponents.md)
+### Setting date picker components
+- [struct DatePickerComponents](../datepickercomponents.md)
   The date and time components that a date picker shows.
 
 

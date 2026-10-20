@@ -1,7 +1,8 @@
 # attributedSourceText
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to translate, including styling like bold text, italics, and hyperlink data for linking between data sources.
 
@@ -19,7 +20,7 @@ var attributedSourceText: AttributedString? { get set }
 
 #### Discussion
 
-When you translate an attributed string, the framework makes a best effort to preserve formatting and attributes such as accessibility instructions or timestamps for synchronized captions or lyrics. To exclude specific ranges of the string from translation, set the [`skipsTranslation`](https://developer.apple.com/documentation/foundation/attributescopes/translationattributes/skipstranslation) attribute on those ranges before translating.
+When you translate an attributed string, the framework makes a best effort to preserve formatting and attributes such as accessibility instructions or timestamps for synchronized captions or lyrics. To exclude specific ranges of the string from translation, set the [`skipsTranslation`](../../../Foundation/attributescopes/translationattributes/skipstranslation.md) attribute on those ranges before translating.
 
 The following example marks coordinates that VoiceOver spells out. When translated, VoiceOver spells out the translated coordinates character by character instead of reading them as full numbers:
 
@@ -54,7 +55,7 @@ if let coordinatesRange = attributedSource.range(of: "N37°47'11.5\" W122°25'34
 }
 ```
 
-When translating transcribed speech, the framework preserves time ranges so you can synchronize translated captions to the original audio. The Speech framework provides time ranges when you transcribe audio with [`SFSpeechRecognizer`](https://developer.apple.com/documentation/speech/sfspeechrecognizer). The following example shows setting time ranges and reads them back from the translation:
+When translating transcribed speech, the framework preserves time ranges so you can synchronize translated captions to the original audio. The Speech framework provides time ranges when you transcribe audio with [`SFSpeechRecognizer`](../../../Speech/sfspeechrecognizer.md). The following example shows setting time ranges and reads them back from the translation:
 
 ```swift
 import SwiftUI
@@ -102,7 +103,8 @@ if let worldRange = transcription.range(of: "World") {
 
 ## See Also
 
-- [var sourceText: String](translationsession/request/sourcetext.md)
+### Specifying text to translate
+- [var sourceText: String](./sourcetext.md)
   The plain text input to translate.
 
 

@@ -1,7 +1,8 @@
 # init(locale:contentHints:transcriptionOptions:reportingOptions:attributeOptions:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transcriber.
 
@@ -28,9 +29,10 @@ convenience init(locale: Locale, contentHints: Set<DictationTranscriber.ContentH
 
 ## See Also
 
-- [convenience init(locale: Locale, preset: DictationTranscriber.Preset)](dictationtranscriber/init(locale:preset:).md)
+### Creating a transcriber
+- [convenience init(locale: Locale, preset: DictationTranscriber.Preset)](./init%28locale,preset%29.md)
   Creates a transcriber according to a preset.
-- [DictationTranscriber.Preset](dictationtranscriber/preset.md)
+- [DictationTranscriber.Preset](./preset.md)
   Predefined transcriber configurations.
 
 

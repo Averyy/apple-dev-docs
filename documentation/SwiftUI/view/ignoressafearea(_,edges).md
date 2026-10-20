@@ -1,7 +1,8 @@
 # ignoresSafeArea(_:edges:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Expands the safe area of a view.
 
@@ -23,7 +24,7 @@ func ignoresSafeArea(_ regions: SafeAreaRegions = .all, edges: Edge.Set = .all) 
 
 ## Mentions
 
-- [Adding a background to your view](adding-a-background-to-your-view.md)
+- [Adding a background to your view](../adding-a-background-to-your-view.md)
 
 #### Return Value
 
@@ -37,7 +38,7 @@ When expanding the safe area, the SwiftUI layout system proposes the expanded si
 
 By default, SwiftUI resolves the alignment based on the edges being ignored. For example, providing only the bottom edge will result in a bottom alignment being used. You can use the `View/ignoresSafeArea(_:alignment:)` modifier to explicitly configure the alignment.
 
-For examples of how to use this modifier, see [`Adding a background to your view`](adding-a-background-to-your-view.md).
+For examples of how to use this modifier, see [Adding a background to your view](../adding-a-background-to-your-view.md).
 
 ## Parameters
 
@@ -46,15 +47,16 @@ For examples of how to use this modifier, see [`Adding a background to your view
 
 ## See Also
 
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+### Staying in the safe areas
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](./ignoressafearea%28_,edges,alignment%29.md)
   Expands the safe area of a view aligning content within the new bounds using the provided alignment.
-- [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
+- [func safeAreaInset(edge:alignment:spacing:content:)](./safeareainset%28edge,alignment,spacing,content%29.md)
   Shows the specified content beside the modified view.
-- [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
+- [func safeAreaPadding(_:)](./safeareapadding%28_%29.md)
   Adds the provided insets into the safe area of this view.
-- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](view/safeareapadding(_:_:).md)
+- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](./safeareapadding%28_,_%29.md)
   Adds the provided insets into the safe area of this view.
-- [struct SafeAreaRegions](safearearegions.md)
+- [struct SafeAreaRegions](../safearearegions.md)
   A set of symbolic safe area regions.
 
 

@@ -1,7 +1,8 @@
 # async(execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a work item for immediate execution, and returns immediately.
 
@@ -10,9 +11,9 @@ Schedules a work item for immediate execution, and returns immediately.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ func async(execute workItem: DispatchWorkItem)
 
 ## Parameters
 
-- `workItem`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](dispatchworkitem.md).
+- `workItem`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](../dispatchworkitem.md).
 
 ## See Also
 
-- [func asyncAfter(deadline: DispatchTime, execute: DispatchWorkItem)](dispatchqueue/asyncafter(deadline:execute:).md)
+### Executing Tasks Asynchronously
+- [func asyncAfter(deadline: DispatchTime, execute: DispatchWorkItem)](./asyncafter%28deadline,execute%29.md)
   Schedules a work item for execution at the specified time, and returns immediately.
-- [func asyncAfter(deadline: DispatchTime, qos: DispatchQoS, flags: DispatchWorkItemFlags, execute: () -> Void)](dispatchqueue/asyncafter(deadline:qos:flags:execute:).md)
+- [func asyncAfter(deadline: DispatchTime, qos: DispatchQoS, flags: DispatchWorkItemFlags, execute: () -> Void)](./asyncafter%28deadline,qos,flags,execute%29.md)
   Schedules a block for execution using the specified attributes, and returns immediately.
-- [func asyncAfter(wallDeadline: DispatchWallTime, execute: DispatchWorkItem)](dispatchqueue/asyncafter(walldeadline:execute:).md)
+- [func asyncAfter(wallDeadline: DispatchWallTime, execute: DispatchWorkItem)](./asyncafter%28walldeadline,execute%29.md)
   Schedules a work item for execution after the specified time, and returns immediately.
-- [func asyncAfter(wallDeadline: DispatchWallTime, qos: DispatchQoS, flags: DispatchWorkItemFlags, execute: () -> Void)](dispatchqueue/asyncafter(walldeadline:qos:flags:execute:).md)
+- [func asyncAfter(wallDeadline: DispatchWallTime, qos: DispatchQoS, flags: DispatchWorkItemFlags, execute: () -> Void)](./asyncafter%28walldeadline,qos,flags,execute%29.md)
   Schedules a block for execution using the specified attributes, and returns immediately.
 
 

@@ -1,7 +1,8 @@
 # toolbar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Placement for commands that manipulate the toolbar.
 
@@ -27,7 +28,8 @@ By default, this group includes the following commands in macOS:
 
 ## See Also
 
-- [static let sidebar: CommandGroupPlacement](commandgroupplacement/sidebar.md)
+### Bars
+- [static let sidebar: CommandGroupPlacement](./sidebar.md)
   Placement for commands that control the app’s sidebar and full-screen modes.
 
 

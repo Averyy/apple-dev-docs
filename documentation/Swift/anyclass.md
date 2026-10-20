@@ -1,7 +1,8 @@
 # AnyClass
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The protocol to which all class types implicitly conform.
 
@@ -48,7 +49,8 @@ print(getDefaultValue(NSString.self))
 
 ## See Also
 
-- [typealias AnyObject](anyobject.md)
+### Existential Types
+- [typealias AnyObject](./anyobject.md)
   The protocol to which all classes implicitly conform.
 
 

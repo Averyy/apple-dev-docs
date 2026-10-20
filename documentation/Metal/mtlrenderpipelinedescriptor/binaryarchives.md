@@ -1,7 +1,8 @@
 # binaryArchives
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of binary archives to search for precompiled versions of the shader.
 
@@ -19,15 +20,20 @@ An array of binary archives to search for precompiled versions of the shader.
 var binaryArchives: [any MTLBinaryArchive]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLBinaryArchive>> * binaryArchives;
+```
+
 ## Mentions
 
-- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](../creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 ## See Also
 
-- [var supportAddingVertexBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingvertexbinaryfunctions.md)
+### Specifying precompiled shader binaries
+- [var supportAddingVertexBinaryFunctions: Bool](./supportaddingvertexbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the vertex shader’s callable functions list.
-- [var supportAddingFragmentBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingfragmentbinaryfunctions.md)
+- [var supportAddingFragmentBinaryFunctions: Bool](./supportaddingfragmentbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the fragment shader’s callable functions list.
 
 

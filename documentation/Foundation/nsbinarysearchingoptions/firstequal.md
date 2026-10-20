@@ -1,7 +1,8 @@
 # firstEqual
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the search should return the first object in the range that is equal to the given object.
 
@@ -20,11 +21,16 @@ Specifies that the search should return the first object in the range that is eq
 static var firstEqual: NSBinarySearchingOptions { get }
 ```
 
+```c
+NSBinarySearchingFirstEqual
+```
+
 ## See Also
 
-- [static var lastEqual: NSBinarySearchingOptions](nsbinarysearchingoptions/lastequal.md)
+### Constants
+- [static var lastEqual: NSBinarySearchingOptions](./lastequal.md)
   Specifies that the search should return the last object in the range that is equal to the given object.
-- [static var insertionIndex: NSBinarySearchingOptions](nsbinarysearchingoptions/insertionindex.md)
+- [static var insertionIndex: NSBinarySearchingOptions](./insertionindex.md)
   Returns the index at which you should insert the object in order to maintain a sorted array.
 
 

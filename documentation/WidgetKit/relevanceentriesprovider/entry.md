@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that specifies the information to render a widget at a specific relevance configuration.

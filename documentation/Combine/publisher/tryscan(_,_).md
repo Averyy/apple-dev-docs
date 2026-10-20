@@ -1,7 +1,8 @@
 # tryScan(_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms elements from the upstream publisher by providing the current element to an error-throwing closure along with the last value returned by the closure.
 
@@ -26,9 +27,9 @@ A publisher that transforms elements by applying a closure that receives its pre
 
 #### Discussion
 
-Use [`tryScan(_:_:)`](publisher/tryscan(_:_:).md) to accumulate all previously-published values into a single value, which you then combine with each newly-published value. If your accumulator closure throws an error, the publisher terminates with the error.
+Use [`tryScan(_:_:)`](./tryscan%28_,_%29.md) to accumulate all previously-published values into a single value, which you then combine with each newly-published value. If your accumulator closure throws an error, the publisher terminates with the error.
 
-In the example below, [`tryScan(_:_:)`](publisher/tryscan(_:_:).md) calls a division function on elements of a collection publisher. The [`Publishers.TryScan`](publishers/tryscan.md) publisher publishes each result until the function encounters a `DivisionByZeroError`, which terminates the publisher.
+In the example below, [`tryScan(_:_:)`](./tryscan%28_,_%29.md) calls a division function on elements of a collection publisher. The [`Publishers.TryScan`](../publishers/tryscan.md) publisher publishes each result until the function encounters a `DivisionByZeroError`, which terminates the publisher.
 
 ```swift
 struct DivisionByZeroError: Error {}
@@ -59,17 +60,18 @@ If the closure throws an error, the publisher fails with the error.
 
 ## See Also
 
-- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](publisher/map(_:)-99evh.md)
+### Mapping elements
+- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](./map%28_%29-99evh.md)
   Transforms all elements from the upstream publisher with a provided closure.
-- [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](publisher/trymap(_:).md)
+- [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](./trymap%28_%29.md)
   Transforms all elements from the upstream publisher with a provided error-throwing closure.
-- [func mapError<E>((Self.Failure) -> E) -> Publishers.MapError<Self, E>](publisher/maperror(_:).md)
+- [func mapError<E>((Self.Failure) -> E) -> Publishers.MapError<Self, E>](./maperror%28_%29.md)
   Converts any failure from the upstream publisher into a new error.
-- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](publisher/replacenil(with:).md)
+- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](./replacenil%28with%29.md)
   Replaces nil elements in the stream with the provided element.
-- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](publisher/scan(_:_:).md)
+- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](./scan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to a closure along with the last value returned by the closure.
-- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](publisher/setfailuretype(to:).md)
+- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](./setfailuretype%28to%29.md)
   Changes the failure type declared by the upstream publisher.
 
 

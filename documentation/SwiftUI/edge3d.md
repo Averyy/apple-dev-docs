@@ -1,7 +1,8 @@
 # Edge3D
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An edge or face of a 3D volume.
 
@@ -18,42 +19,43 @@ enum Edge3D
 ## Topics
 
 ### Getting the edges
-- [Edge3D.top](edge3d/top.md)
-- [Edge3D.bottom](edge3d/bottom.md)
-- [Edge3D.leading](edge3d/leading.md)
-- [Edge3D.trailing](edge3d/trailing.md)
-- [Edge3D.front](edge3d/front.md)
-- [Edge3D.back](edge3d/back.md)
+- [Edge3D.top](./edge3d/top.md)
+- [Edge3D.bottom](./edge3d/bottom.md)
+- [Edge3D.leading](./edge3d/leading.md)
+- [Edge3D.trailing](./edge3d/trailing.md)
+- [Edge3D.front](./edge3d/front.md)
+- [Edge3D.back](./edge3d/back.md)
 ### Creating an edge
-- [init(Edge)](edge3d/init(_:).md)
+- [init(Edge)](./edge3d/init%28_%29.md)
 ### Accessing sets of edges
-- [Edge3D.Set](edge3d/set.md)
+- [Edge3D.Set](./edge3d/set.md)
   An efficient set of 3D edges.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Edge](edge.md)
+### Accessing edges, regions, and layouts
+- [enum Edge](./edge.md)
   An enumeration to indicate one edge of a rectangle.
-- [enum HorizontalEdge](horizontaledge.md)
+- [enum HorizontalEdge](./horizontaledge.md)
   An edge on the horizontal axis.
-- [enum VerticalEdge](verticaledge.md)
+- [enum VerticalEdge](./verticaledge.md)
   An edge on the vertical axis.
-- [struct EdgeInsets](edgeinsets.md)
+- [struct EdgeInsets](./edgeinsets.md)
   The inset distances for the sides of a rectangle.
-- [struct EdgeInsets3D](edgeinsets3d.md)
+- [struct EdgeInsets3D](./edgeinsets3d.md)
   The inset distances for the faces of a 3D volume.
 
 

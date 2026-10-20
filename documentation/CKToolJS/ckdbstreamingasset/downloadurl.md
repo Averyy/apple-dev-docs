@@ -1,7 +1,8 @@
 # downloadUrl
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for accessing the asset.
 
@@ -10,7 +11,7 @@ The URL for accessing the asset.
 
 ## Declaration
 
-```swift
+```
 attribute string? downloadUrl;
 ```
 

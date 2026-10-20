@@ -1,7 +1,8 @@
 # init(localized:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localized string from a localized string resource.
 
@@ -37,7 +38,7 @@ let frLocalized = String(localized: localizable)
 // frLocalized == "Bonjour, le monde!"
 ```
 
-If you don’t need the deferred-loading behavior of `LocalizedStringResource`, use [`init(localized:table:bundle:locale:comment:)`](string/init(localized:table:bundle:locale:comment:).md) instead. If you prefer to use an arbitrary localization key rather than the localized string in the development language, use [`init(localized:defaultValue:table:bundle:locale:comment:)`](string/init(localized:defaultvalue:table:bundle:locale:comment:).md).
+If you don’t need the deferred-loading behavior of `LocalizedStringResource`, use [`init(localized:table:bundle:locale:comment:)`](./init%28localized,table,bundle,locale,comment%29.md) instead. If you prefer to use an arbitrary localization key rather than the localized string in the development language, use [`init(localized:defaultValue:table:bundle:locale:comment:)`](./init%28localized,defaultvalue,table,bundle,locale,comment%29.md).
 
 ## Parameters
 
@@ -45,19 +46,20 @@ If you don’t need the deferred-loading behavior of `LocalizedStringResource`, 
 
 ## See Also
 
-- [init(localized: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:table:bundle:locale:comment:).md)
+### Creating a Localized String
+- [init(localized: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,table,bundle,locale,comment%29.md)
   Creates a localized string from an interpolated string.
-- [init(localized: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:options:table:bundle:locale:comment:).md)
+- [init(localized: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,options,table,bundle,locale,comment%29.md)
   Creates a localized string from an interpolated string, applying the specified options.
-- [String.LocalizationValue](string/localizationvalue.md)
+- [String.LocalizationValue](./localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
-- [String.LocalizationOptions](string/localizationoptions.md)
+- [String.LocalizationOptions](./localizationoptions.md)
   Options to apply when initializing a localized string.
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:defaultvalue:table:bundle:locale:comment:).md)
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,defaultvalue,table,bundle,locale,comment%29.md)
   Creates a localized string from an arbitrary static string key.
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:defaultvalue:options:table:bundle:locale:comment:).md)
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,defaultvalue,options,table,bundle,locale,comment%29.md)
   Creates a localized string from an arbitrary static string key, applying the specified options.
-- [init(localized: LocalizedStringResource, options: String.LocalizationOptions)](string/init(localized:options:).md)
+- [init(localized: LocalizedStringResource, options: String.LocalizationOptions)](./init%28localized,options%29.md)
   Creates a localized string from a localized string resource, applying the specified options.
 
 

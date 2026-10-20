@@ -1,7 +1,8 @@
 # HKVO2MaxTestType.predictionNonExercise
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A calculation that estimates VO2 max rate without any exercise.
 
@@ -19,11 +20,16 @@ A calculation that estimates VO2 max rate without any exercise.
 case predictionNonExercise
 ```
 
+```c
+HKVO2MaxTestTypePredictionNonExercise
+```
+
 ## See Also
 
-- [HKVO2MaxTestType.maxExercise](hkvo2maxtesttype/maxexercise.md)
+### Test Types
+- [HKVO2MaxTestType.maxExercise](./maxexercise.md)
   A test that measures VO2 max rate by monitoring exercise to the user’s physical limit.
-- [HKVO2MaxTestType.predictionSubMaxExercise](hkvo2maxtesttype/predictionsubmaxexercise.md)
+- [HKVO2MaxTestType.predictionSubMaxExercise](./predictionsubmaxexercise.md)
   A calculation that estimates VO2 max rate based on low-intensity exercise.
 
 

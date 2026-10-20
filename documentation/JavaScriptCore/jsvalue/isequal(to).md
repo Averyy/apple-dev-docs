@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the value to another for strict equality.
 
@@ -19,9 +20,13 @@ Compares the value to another for strict equality.
 func isEqual(to value: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToObject:(id) value;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the values are strictly equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the values are strictly equal; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -33,9 +38,10 @@ This method is analogous to the identity or strict equality operator `===` in Ja
 
 ## See Also
 
-- [func isEqualWithTypeCoercion(to: Any!) -> Bool](jsvalue/isequalwithtypecoercion(to:).md)
+### Comparing JavaScript Values
+- [func isEqualWithTypeCoercion(to: Any!) -> Bool](./isequalwithtypecoercion%28to%29.md)
   Compares the value to another for equivalence, allowing type conversion.
-- [func isInstance(of: Any!) -> Bool](jsvalue/isinstance(of:).md)
+- [func isInstance(of: Any!) -> Bool](./isinstance%28of%29.md)
   Returns a Boolean value indicating whether the value is an instance of another JavaScript object value.
 
 

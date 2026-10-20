@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time when the speech occurs.
 
@@ -16,15 +17,20 @@ The date and time when the speech occurs.
 var timestamp: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * timestamp;
+```
+
 ## See Also
 
-- [var sessionIdentifier: String](srspeechmetrics/sessionidentifier.md)
+### Getting session information
+- [var sessionIdentifier: String](./sessionidentifier.md)
   An identifier for the audio session.
-- [var sessionFlags: SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.property.md)
+- [var sessionFlags: SRSpeechMetrics.SessionFlags](./sessionflags-swift.property.md)
   Details about the audio processing.
-- [SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.struct.md)
+- [SRSpeechMetrics.SessionFlags](./sessionflags-swift.struct.md)
   Possible details about processing an audio stream.
-- [var timeSinceAudioStart: TimeInterval](srspeechmetrics/timesinceaudiostart.md)
+- [var timeSinceAudioStart: TimeInterval](./timesinceaudiostart.md)
   The number of seconds since the start of the audio stream.
 
 

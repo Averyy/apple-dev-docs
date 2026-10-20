@@ -1,7 +1,8 @@
 # regionOfInterest
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The area in the video frame in which the dock accessory tracks a subject.
 
@@ -19,11 +20,12 @@ final var regionOfInterest: CGRect { get }
 
 ## See Also
 
-- [func animate(motion: DockAccessory.Animation) async throws -> Progress](dockaccessory/animate(motion:).md)
+### Performing animation
+- [func animate(motion: DockAccessory.Animation) async throws -> Progress](./animate%28motion%29.md)
   Starts an animation sequence.
-- [func setRegionOfInterest(CGRect) async throws](dockaccessory/setregionofinterest(_:).md)
+- [func setRegionOfInterest(CGRect) async throws](./setregionofinterest%28_%29.md)
   Sets the area in the video frame in which the dock accessory tracks a subject.
-- [DockAccessory.Animation](dockaccessory/animation.md)
+- [DockAccessory.Animation](./animation.md)
   Character animations that describe how to move the dock accessory.
 
 

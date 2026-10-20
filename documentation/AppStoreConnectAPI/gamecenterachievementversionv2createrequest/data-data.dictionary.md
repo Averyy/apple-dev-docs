@@ -1,7 +1,8 @@
 # GameCenterAchievementVersionV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center achievement version create request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center achievement version create requ
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2CreateRequest.Data
 ```
 
@@ -22,13 +23,13 @@ object GameCenterAchievementVersionV2CreateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementVersionV2CreateRequest.Data.Relationships](gamecenterachievementversionv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterAchievementVersionV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
 
 - `relationships` (GameCenterAchievementVersionV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievementVersions`
 
 
 ---

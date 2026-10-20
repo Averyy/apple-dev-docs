@@ -1,23 +1,26 @@
 # MediaLocaleDetail
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The media locale detail object.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object MediaLocaleDetail
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object MediaLocaleDetail.AppPreviewDeviceWithAssets](medialocaledetail/apppreviewdevicewithassets-data.dictionary.md)
+- [object MediaLocaleDetail.AppPreviewDeviceWithAssets](./medialocaledetail/apppreviewdevicewithassets-data.dictionary.md)
 
 ## Properties
 
@@ -31,14 +34,15 @@ object MediaLocaleDetail
 ## Relationships
 
 ### Inherited By
-- [MediaLocaleDetailResponse](medialocaledetailresponse.md)
+- [MediaLocaleDetailResponse](./medialocaledetailresponse.md)
 
 ## See Also
 
-- [object MediaDetail](mediadetail.md)
+### Response Objects
+- [object MediaDetail](./mediadetail.md)
   The media detail object.
-- [object MediaDetailResponse](mediadetailresponse.md)
-- [object MediaLocaleDetailResponse](medialocaledetailresponse.md)
+- [object MediaDetailResponse](./mediadetailresponse.md)
+- [object MediaLocaleDetailResponse](./medialocaledetailresponse.md)
 
 
 ---

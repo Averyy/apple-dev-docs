@@ -1,7 +1,8 @@
 # NEEthernetTunnelNetworkSettings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The network settings for an ethernet-based VPN tunnel.
 
@@ -14,49 +15,54 @@ The network settings for an ethernet-based VPN tunnel.
 class NEEthernetTunnelNetworkSettings
 ```
 
+```objc
+@interface NEEthernetTunnelNetworkSettings : NEPacketTunnelNetworkSettings
+```
+
 #### Overview
 
-You use this type with [`NEEthernetTunnelProvider`](neethernettunnelprovider.md) instances to communicate the desired network settings for the packet tunnel to the framework. The framework takes care of applying the contained settings to the system.
+You use this type with [`NEEthernetTunnelProvider`](./neethernettunnelprovider.md) instances to communicate the desired network settings for the packet tunnel to the framework. The framework takes care of applying the contained settings to the system.
 
 Instances of this class are thread-safe.
 
 ## Topics
 
 ### Creating a settings instance
-- [init(tunnelRemoteAddress: String, ethernetAddress: String, mtu: Int)](neethernettunnelnetworksettings/init(tunnelremoteaddress:ethernetaddress:mtu:).md)
+- [init(tunnelRemoteAddress: String, ethernetAddress: String, mtu: Int)](./neethernettunnelnetworksettings/init%28tunnelremoteaddress,ethernetaddress,mtu%29.md)
   Creates a settings object with a given tunnel remote address and MAC address.
 ### Inspecting settings properties
-- [var ethernetAddress: String](neethernettunnelnetworksettings/ethernetaddress.md)
+- [var ethernetAddress: String](./neethernettunnelnetworksettings/ethernetaddress.md)
   The ethernet address of the tunnel interface, as a string.
 
 ## Relationships
 
 ### Inherits From
-- [NEPacketTunnelNetworkSettings](nepackettunnelnetworksettings.md)
+- [NEPacketTunnelNetworkSettings](./nepackettunnelnetworksettings.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEPacketTunnelProvider](nepackettunnelprovider.md)
+### Packet tunnel provider
+- [class NEPacketTunnelProvider](./nepackettunnelprovider.md)
   The principal class for a packet tunnel provider app extension.
-- [class NETunnelProvider](netunnelprovider.md)
+- [class NETunnelProvider](./netunnelprovider.md)
   An abstract base class shared by NEPacketTunnelProvider and NEAppProxyProvider.
-- [class NEProvider](neprovider.md)
+- [class NEProvider](./neprovider.md)
   An abstract base class for all NetworkExtension providers.
-- [class NEPacketTunnelNetworkSettings](nepackettunnelnetworksettings.md)
+- [class NEPacketTunnelNetworkSettings](./nepackettunnelnetworksettings.md)
   The configuration for a packet tunnel provider’s virtual interface.
-- [class NETunnelNetworkSettings](netunnelnetworksettings.md)
+- [class NETunnelNetworkSettings](./netunnelnetworksettings.md)
   The configuration for a tunnel provider’s virtual interface.
-- [class NEEthernetTunnelProvider](neethernettunnelprovider.md)
+- [class NEEthernetTunnelProvider](./neethernettunnelprovider.md)
   A type that implements the client side of a custom link-layer packet tunneling protocol.
 
 

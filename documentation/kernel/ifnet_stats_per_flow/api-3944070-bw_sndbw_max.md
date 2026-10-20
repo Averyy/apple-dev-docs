@@ -1,14 +1,15 @@
 # bw_sndbw_max
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t bw_sndbw_max;
 ```
 

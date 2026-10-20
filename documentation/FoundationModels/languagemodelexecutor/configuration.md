@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -20,7 +21,8 @@ associatedtype Configuration : Hashable, Sendable
 
 ## See Also
 
-- [init(configuration: Self.Configuration) throws](languagemodelexecutor/init(configuration:).md)
+### Creating an executor
+- [init(configuration: Self.Configuration) throws](./init%28configuration%29.md)
   Creates an executor from a configuration.
 
 

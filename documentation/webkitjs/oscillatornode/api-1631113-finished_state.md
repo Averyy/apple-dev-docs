@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short FINISHED_STATE;
 ```
 
 ## See Also
 
-- [PLAYING_STATE](oscillatornode/1632428-playing_state.md)
-- [SCHEDULED_STATE](oscillatornode/1632210-scheduled_state.md)
-- [UNSCHEDULED_STATE](oscillatornode/1633178-unscheduled_state.md)
+### Miscellaneous
+- [PLAYING_STATE](./api-1632428-playing_state.md)
+- [SCHEDULED_STATE](./api-1632210-scheduled_state.md)
+- [UNSCHEDULED_STATE](./api-1633178-unscheduled_state.md)
 
 
 ---

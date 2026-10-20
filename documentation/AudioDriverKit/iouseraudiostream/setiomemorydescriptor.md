@@ -1,7 +1,8 @@
 # SetIOMemoryDescriptor
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the memory descriptor the stream uses for I/O.
 
@@ -10,13 +11,14 @@ Sets the memory descriptor the stream uses for I/O.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIOMemoryDescriptor(IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
 ## See Also
 
-- [GetIOMemoryDescriptor](iouseraudiostream/getiomemorydescriptor.md)
+### Working with Memory Descriptors
+- [GetIOMemoryDescriptor](./getiomemorydescriptor.md)
   Gets the memory descriptor the stream uses for I/O.
 
 

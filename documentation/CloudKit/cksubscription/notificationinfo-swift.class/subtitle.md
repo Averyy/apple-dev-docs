@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification’s subtitle.
 
@@ -19,17 +20,22 @@ The notification’s subtitle.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
-CloudKit uses this value to set the `subtitle` push notification property. If you set [`subtitleLocalizationKey`](cksubscription/notificationinfo-swift.class/subtitlelocalizationkey.md), CloudKit ignores this value.
+CloudKit uses this value to set the `subtitle` push notification property. If you set [`subtitleLocalizationKey`](./subtitlelocalizationkey.md), CloudKit ignores this value.
 
-See [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification) for more details about push notification properties.
+See [Generating a remote notification](../../../UserNotifications/generating-a-remote-notification.md) for more details about push notification properties.
 
 ## See Also
 
-- [var subtitleLocalizationKey: String?](cksubscription/notificationinfo-swift.class/subtitlelocalizationkey.md)
+### Accessing the Notification Subtitle
+- [var subtitleLocalizationKey: String?](./subtitlelocalizationkey.md)
   The key that identifies the localized string for the notification’s subtitle.
-- [var subtitleLocalizationArgs: [CKRecord.FieldKey]?](cksubscription/notificationinfo-swift.class/subtitlelocalizationargs.md)
+- [var subtitleLocalizationArgs: [CKRecord.FieldKey]?](./subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
 
 

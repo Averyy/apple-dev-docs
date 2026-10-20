@@ -1,7 +1,8 @@
 # CMPackingType.overUnder
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The video contains packed frames that have a left eye image on the top and right eye image on the bottom.
 
@@ -20,15 +21,20 @@ The video contains packed frames that have a left eye image on the top and right
 case overUnder
 ```
 
+```c
+kCMPackingType_OverUnder
+```
+
 #### Discussion
 
 For over-under packed frames, the height of a frame in video data is twice as high as the video displayed.
 
 ## See Also
 
-- [CMPackingType.none](cmpackingtype/none.md)
+### Frame Arrangement
+- [CMPackingType.none](./none.md)
   Each frame contains only a single image, and isn’t frame-packed.
-- [CMPackingType.sideBySide](cmpackingtype/sidebyside.md)
+- [CMPackingType.sideBySide](./sidebyside.md)
   The video contains packed frames that have a left eye image on the left and right eye image on the right.
 
 

@@ -1,7 +1,8 @@
 # sequentiallyConsistent
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sequentially consistent store performs a releasing store and also guarantees that it and all other sequentially consistent atomic operations (loads, stores, updates) appear to be executed in a single, total sequential ordering.
 

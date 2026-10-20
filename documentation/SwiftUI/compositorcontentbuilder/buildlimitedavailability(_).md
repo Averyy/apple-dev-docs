@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Processes scene content for a conditional compiler-control statement that performs an availability check.
 

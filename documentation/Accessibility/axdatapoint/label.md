@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label for the data point.
 
@@ -20,9 +21,14 @@ The label for the data point.
 var label: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var attributedLabel: NSAttributedString?](axdatapoint/attributedlabel.md)
+### Specifying the label
+- [var attributedLabel: NSAttributedString?](./attributedlabel.md)
   An attributed version of the label for the data point.
 
 

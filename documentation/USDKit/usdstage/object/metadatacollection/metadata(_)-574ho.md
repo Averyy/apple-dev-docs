@@ -1,7 +1,8 @@
 # metadata(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the metadata value for the given key.
 

@@ -1,7 +1,8 @@
 # count(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the count associated with a given object in the set.
 
@@ -20,6 +21,10 @@ Returns the count associated with a given object in the set.
 func count(for object: Any) -> Int
 ```
 
+```objc
+- (NSUInteger) countForObject:(ObjectType) object;
+```
+
 #### Return Value
 
 The count associated with `object` in the set, which can be thought of as the number of occurrences of `object` present in the set.
@@ -30,9 +35,11 @@ The count associated with `object` in the set, which can be thought of as the nu
 
 ## See Also
 
-- [var count: Int](nsset/count.md)
+### Related Documentation
+- [var count: Int](../nsset/count.md)
   The number of members in the set.
-- [func objectEnumerator() -> NSEnumerator](nscountedset/objectenumerator.md)
+### Examining a Counted Set
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the set once, independent of its count.
 
 

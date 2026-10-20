@@ -1,7 +1,8 @@
 # prefetchStorage(with:imageDescriptorList:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A method that helps the framework decide which allocations to make ahead of time.
 
@@ -17,6 +18,10 @@ A method that helps the framework decide which allocations to make ahead of time
 
 ```swift
 class func prefetchStorage(with commandBuffer: any MTLCommandBuffer, imageDescriptorList descriptorList: [MPSImageDescriptor])
+```
+
+```objc
++ (void) prefetchStorageWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer imageDescriptorList:(NSArray<MPSImageDescriptor *> *) descriptorList;
 ```
 
 #### Discussion

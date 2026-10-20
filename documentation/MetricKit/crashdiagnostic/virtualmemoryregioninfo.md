@@ -1,7 +1,8 @@
 # virtualMemoryRegionInfo
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Details about memory that the app incorrectly accessed.
 
@@ -24,13 +25,14 @@ This property is set when a bad memory access crash occurs.
 
 ## See Also
 
-- [let exceptionType: Int?](crashdiagnostic/exceptiontype.md)
+### Exception details
+- [let exceptionType: Int?](./exceptiontype.md)
   The name of the Mach exception that terminated the app.
-- [let exceptionCode: UInt64?](crashdiagnostic/exceptioncode.md)
+- [let exceptionCode: UInt64?](./exceptioncode.md)
   Processor specific information about the exception.
-- [let signal: Int?](crashdiagnostic/signal.md)
+- [let signal: Int?](./signal.md)
   The signal associated with this crash.
-- [let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?](crashdiagnostic/exceptionreason.md)
+- [let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?](./exceptionreason.md)
   The exception reason for an uncaught ObjC exception.
 
 

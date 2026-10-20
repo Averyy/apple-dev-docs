@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraType.main
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 2.0+

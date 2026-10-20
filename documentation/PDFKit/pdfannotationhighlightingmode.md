@@ -1,14 +1,15 @@
 # PDFAnnotationHighlightingMode
 
 **Framework**: PDFKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,51 +18,56 @@
 struct PDFAnnotationHighlightingMode
 ```
 
+```c
+typedef NSString * const PDFAnnotationHighlightingMode;
+```
+
 ## Topics
 
 ### Choosing a Highlight Mode
-- [static let invert: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/invert.md)
+- [static let invert: PDFAnnotationHighlightingMode](./pdfannotationhighlightingmode/invert.md)
   A highlight mode that inverts the content of the annotation.
-- [static let none: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/none.md)
+- [static let none: PDFAnnotationHighlightingMode](./pdfannotationhighlightingmode/none.md)
   A highlight mode that doesn’t change the appearance of the annotation.
-- [static let outline: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/outline.md)
+- [static let outline: PDFAnnotationHighlightingMode](./pdfannotationhighlightingmode/outline.md)
   A highlight mode that inverts the annotation’s border.
-- [static let push: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/push.md)
+- [static let push: PDFAnnotationHighlightingMode](./pdfannotationhighlightingmode/push.md)
   A highlight mode that renders a pressed appearance for the annotation.
 ### Creating an Annotation Highlight Mode
-- [init(rawValue: String)](pdfannotationhighlightingmode/init(rawvalue:).md)
+- [init(rawValue: String)](./pdfannotationhighlightingmode/init%28rawvalue%29.md)
   Creates a highlight mode using the specified raw string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let appearanceDictionary: PDFAnnotationKey](pdfannotationkey/appearancedictionary.md)
+### Configuring Annotation Appearance
+- [static let appearanceDictionary: PDFAnnotationKey](./pdfannotationkey/appearancedictionary.md)
   A dictionary that contains properties for controlling the annotation’s visual appearance.
-- [static let appearanceState: PDFAnnotationKey](pdfannotationkey/appearancestate.md)
+- [static let appearanceState: PDFAnnotationKey](./pdfannotationkey/appearancestate.md)
   A string that specifies the appearance stream for the annotation.
-- [static let border: PDFAnnotationKey](pdfannotationkey/border.md)
+- [static let border: PDFAnnotationKey](./pdfannotationkey/border.md)
   An array of integers or border objects that describes the border of the annotation.
-- [static let borderStyle: PDFAnnotationKey](pdfannotationkey/borderstyle.md)
+- [static let borderStyle: PDFAnnotationKey](./pdfannotationkey/borderstyle.md)
   A dictionary that contains the properties of the annotation’s border.
-- [static let color: PDFAnnotationKey](pdfannotationkey/color.md)
+- [static let color: PDFAnnotationKey](./pdfannotationkey/color.md)
   An array of floats or a color object that specifies the annotation’s color.
-- [static let defaultAppearance: PDFAnnotationKey](pdfannotationkey/defaultappearance.md)
+- [static let defaultAppearance: PDFAnnotationKey](./pdfannotationkey/defaultappearance.md)
   A string value a free text annotation uses to format the text.
-- [static let highlightingMode: PDFAnnotationKey](pdfannotationkey/highlightingmode.md)
+- [static let highlightingMode: PDFAnnotationKey](./pdfannotationkey/highlightingmode.md)
   A string value that defines the way an annotation highlights when the user activates it, such as when clicking or tapping a link.
-- [static let iconName: PDFAnnotationKey](pdfannotationkey/iconname.md)
+- [static let iconName: PDFAnnotationKey](./pdfannotationkey/iconname.md)
   A string value that specifies the name of an icon for a text or stamp annotation.
-- [static let interiorColor: PDFAnnotationKey](pdfannotationkey/interiorcolor.md)
+- [static let interiorColor: PDFAnnotationKey](./pdfannotationkey/interiorcolor.md)
   An array of floating point values or a PDF color object that annotations use to fill interior space, such as line endings, squares, or circles.
-- [static let quadding: PDFAnnotationKey](pdfannotationkey/quadding.md)
+- [static let quadding: PDFAnnotationKey](./pdfannotationkey/quadding.md)
   An integer value that specifies left, right, or center justification.
 
 

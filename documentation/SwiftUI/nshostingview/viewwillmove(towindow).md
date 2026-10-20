@@ -1,7 +1,8 @@
 # viewWillMove(toWindow:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,9 +16,10 @@
 
 ## See Also
 
-- [func viewDidMoveToWindow()](nshostingview/viewdidmovetowindow.md)
-- [func viewDidChangeBackingProperties()](nshostingview/viewdidchangebackingproperties.md)
-- [func viewDidChangeEffectiveAppearance()](nshostingview/viewdidchangeeffectiveappearance.md)
+### Managing the view hierarchy
+- [func viewDidMoveToWindow()](./viewdidmovetowindow%28%29.md)
+- [func viewDidChangeBackingProperties()](./viewdidchangebackingproperties%28%29.md)
+- [func viewDidChangeEffectiveAppearance()](./viewdidchangeeffectiveappearance%28%29.md)
 
 
 ---

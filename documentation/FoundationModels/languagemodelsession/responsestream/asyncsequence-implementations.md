@@ -1,14 +1,15 @@
 # AsyncSequence Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [LanguageModelSession.ResponseStream.AsyncIterator](languagemodelsession/responsestream/asynciterator.md)
+- [LanguageModelSession.ResponseStream.AsyncIterator](./asynciterator.md)
   An asynchronous iterator that produces snapshots of partially generated content.
 ### Type Aliases
-- [LanguageModelSession.ResponseStream.Element](languagemodelsession/responsestream/element.md)
+- [LanguageModelSession.ResponseStream.Element](./element.md)
   The type of snapshot the stream produces.
 
 

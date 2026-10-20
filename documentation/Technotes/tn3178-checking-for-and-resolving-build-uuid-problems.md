@@ -1,6 +1,7 @@
 # TN3178: Checking for and resolving build UUID problems
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
 
@@ -10,7 +11,7 @@ Mach-O is the executable image format on Apple platforms.  A Mach-O image is a M
 
 > **Note**: Mach-O images have nothing to do with images in the more general sense, like PNG files.
 
-A Mach-O image should contain a UUID that identifies the image.  This build UUID is vital to various subsystems.  For example, the build UUID connects an image to its debug symbol (`dSYM`) file, as explained in [`Building your app to include debugging information`](https://developer.apple.com/documentation/xcode/building-your-app-to-include-debugging-information) and [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report).
+A Mach-O image should contain a UUID that identifies the image.  This build UUID is vital to various subsystems.  For example, the build UUID connects an image to its debug symbol (`dSYM`) file, as explained in [Building your app to include debugging information](../Xcode/building-your-app-to-include-debugging-information.md) and [Adding identifiable symbol names to a crash report](../Xcode/adding-identifiable-symbol-names-to-a-crash-report.md).
 
 Most Mach-O images are created by the Apple linker (`ld`).  If you use Xcode, it invokes the Apple linker as part of its build process.  The Apple linker sets the build UUID to a unique value, so most developers never run into build UUID problems.  However, you might run into problems if:
 
@@ -19,7 +20,7 @@ Most Mach-O images are created by the Apple linker (`ld`).  If you use Xcode, it
 
 This technote explains how to investigate and resolve such problems.
 
-#### Display the Build Uuid
+#### Display the build UUID
 
 To view a Mach-O image’s build UUID, run the `dwarfdump` command with the `--uuid` option:
 
@@ -41,7 +42,7 @@ Load command 8
     uuid E3F22F87-0B68-3B06-A845-8402D70B8FE9
 ```
 
-> **Note**: To learn more about these tools, see the UNIX online manual, known as *man pages*.  For information on how to access that documentation, see doc://com.apple.documentation/documentation/os/reading-unix-manual-pages.
+> **Note**: To learn more about these tools, see the UNIX online manual, known as *man pages*.  For information on how to access that documentation, see https://developer.apple.com/documentation/os/reading-unix-manual-pages.
 
 By default the Apple linker sets the build UUID based on a hash of the built code.  This promotes reproducible builds.
 
@@ -55,7 +56,7 @@ There’s no Apple command to explicitly set a Mach-O image’s build UUID after
 
 If a Mach-O image is signed, that signature covers the build UUID.
 
-#### Ensure Each Mach O Image Has a Build Uuid
+#### Ensure each Mach-O image has a build UUID
 
 Every Mach-O image should have a build UUID.  While it’s possible to create an image without a UUID, this is almost always a bad idea:
 
@@ -69,7 +70,7 @@ If that confirms that your Mach-O image is in fact missing its build UUID, inves
 - If you created the image with the Apple linker, check to see if the link command includes the `-no_uuid` option.  If it does, remove that option.
 - Some third-party tools create Mach-O images without a build UUID.  If you’re using third-party tooling, consult its documentation for advice on how to configure it to add a UUID.
 
-#### Use Unique Build Uuids
+#### Use unique build UUIDs
 
 Each distinct Mach-O image must have its own unique build UUID.
 
@@ -87,7 +88,7 @@ Normally this isn’t a problem because every app is built from different source
 
 If you encounter weird problems after installing two variants of your app on the same device, especially when it comes to the network subsystem, check that the main executable of each app has a different build UUID.  Use `dwarfdump` for this, as explained earlier.
 
-#### Force a Unique Main Executable Uuid
+#### Force a unique main executable UUID
 
 If `dwarfdump` reveals that two of your apps have the same main executable UUID, fix that before distributing your apps.  How you do that depends on how your app is built.
 
@@ -97,7 +98,7 @@ The easiest fix is to build both apps from source code.  Typically, the linker a
 - In Swift, the name mangling includes the module name.
 - The module name defaults to the app name, which is different for each app.
 
-> **Note**: In Xcode, use the [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) to change the module name.  It defaults to the app name, with any unrepresentable characters, such as space, replaced by underscore (`_`).
+> **Note**: In Xcode, use the [Product Module Name build setting](../Xcode/build-settings-reference.md) to change the module name.  It defaults to the app name, with any unrepresentable characters, such as space, replaced by underscore (`_`).
 
 If that doesn’t resolve the issue, add some unique code to each app.
 

@@ -1,7 +1,8 @@
 # invalidateFocusFilterAppContext()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ static func invalidateFocusFilterAppContext()
 
 ## See Also
 
-- [var appContext: FocusFilterAppContext](setfocusfilterintent/appcontext.md)
+### Configuring app context for the Focus
+- [var appContext: FocusFilterAppContext](./appcontext.md)
   An app context that is associated with the focus configuration. The system will retrieve this app context and adapt the system behavior based on the context provided.
 
 

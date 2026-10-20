@@ -1,6 +1,7 @@
 # MIDI System Setup
 
-**Framework**: Core MIDI
+**Framework**: Core MIDI  
+**Role**: API Collection
 
 Configure the global MIDI system.
 
@@ -11,43 +12,44 @@ The primary clients of this API are apps that present a user interface to config
 ## Topics
 
 ### Managing Devices
-- [func MIDISetupAddDevice(MIDIDeviceRef) -> OSStatus](midisetupadddevice(_:).md)
+- [func MIDISetupAddDevice(MIDIDeviceRef) -> OSStatus](./midisetupadddevice%28_%29.md)
   Adds a driver-owned MIDI device to the current MIDI setup.
-- [func MIDISetupRemoveDevice(MIDIDeviceRef) -> OSStatus](midisetupremovedevice(_:).md)
+- [func MIDISetupRemoveDevice(MIDIDeviceRef) -> OSStatus](./midisetupremovedevice%28_%29.md)
   Removes a driver-owned MIDI device from the current MIDI setup.
 ### Managing External Devices
-- [func MIDIExternalDeviceCreate(CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](midiexternaldevicecreate(_:_:_:_:).md)
+- [func MIDIExternalDeviceCreate(CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](./midiexternaldevicecreate%28_,_,_,_%29.md)
   Creates an external MIDI device.
-- [func MIDISetupAddExternalDevice(MIDIDeviceRef) -> OSStatus](midisetupaddexternaldevice(_:).md)
+- [func MIDISetupAddExternalDevice(MIDIDeviceRef) -> OSStatus](./midisetupaddexternaldevice%28_%29.md)
   Adds an external MIDI device to the current MIDI setup.
-- [func MIDISetupRemoveExternalDevice(MIDIDeviceRef) -> OSStatus](midisetupremoveexternaldevice(_:).md)
+- [func MIDISetupRemoveExternalDevice(MIDIDeviceRef) -> OSStatus](./midisetupremoveexternaldevice%28_%29.md)
   Removes an external MIDI device from the current MIDI setup.
 ### Managing Entities
-- [func MIDIDeviceNewEntity(MIDIDeviceRef, CFString, MIDIProtocolID, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](mididevicenewentity(_:_:_:_:_:_:_:).md)
+- [func MIDIDeviceNewEntity(MIDIDeviceRef, CFString, MIDIProtocolID, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](./mididevicenewentity%28_,_,_,_,_,_,_%29.md)
   Adds a new entity to a device.
-- [func MIDIDeviceRemoveEntity(MIDIDeviceRef, MIDIEntityRef) -> OSStatus](midideviceremoveentity(_:_:).md)
+- [func MIDIDeviceRemoveEntity(MIDIDeviceRef, MIDIEntityRef) -> OSStatus](./midideviceremoveentity%28_,_%29.md)
   Removes an entity from a device.
-- [func MIDIEntityAddOrRemoveEndpoints(MIDIEntityRef, Int, Int) -> OSStatus](midientityaddorremoveendpoints(_:_:_:).md)
+- [func MIDIEntityAddOrRemoveEndpoints(MIDIEntityRef, Int, Int) -> OSStatus](./midientityaddorremoveendpoints%28_,_,_%29.md)
   Adds or removes an entity’s endpoints.
 ### Deprecated
-- [Deprecated Symbols](deprecated-symbols.md)
+- [Deprecated Symbols](./deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## See Also
 
-- [MIDI Services](midi-services.md)
+### Services
+- [MIDI Services](./midi-services.md)
   Communicate with hardware using Universal MIDI Packets.
-- [MIDI Bluetooth](midi-bluetooth.md)
+- [MIDI Bluetooth](./midi-bluetooth.md)
   Connect to Bluetooth Low Energy MIDI peripherals.
-- [MIDI Messages](midi-messages.md)
+- [MIDI Messages](./midi-messages.md)
   Create and configure messages.
-- [MIDI Thru Connection](midi-thru-connection.md)
+- [MIDI Thru Connection](./midi-thru-connection.md)
   Create play-through connections between sources and destinations.
-- [MIDI Networking](midi-networking.md)
+- [MIDI Networking](./midi-networking.md)
   Create and manage devices connected over a local network.
-- [MIDI Drivers](midi-drivers.md)
+- [MIDI Drivers](./midi-drivers.md)
   Create driver plug-ins.
-- [MIDI Capability Inquiry](midi-capability-inquiry.md)
+- [MIDI Capability Inquiry](./midi-capability-inquiry.md)
   Provide support for bidirectional discovery and configuration of devices.
 
 

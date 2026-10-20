@@ -1,7 +1,8 @@
 # MLKey
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for machine learning key types.
 
@@ -20,43 +21,48 @@ An abstract base class for machine learning key types.
 class MLKey
 ```
 
+```objc
+@interface MLKey : NSObject
+```
+
 #### Overview
 
-You don’t create use this class directly. Instead, use a class that inherits from this one, such as [`MLParameterKey`](mlparameterkey.md) or [`MLMetricKey`](mlmetrickey.md).
+You don’t create use this class directly. Instead, use a class that inherits from this one, such as [`MLParameterKey`](./mlparameterkey.md) or [`MLMetricKey`](./mlmetrickey.md).
 
 ## Topics
 
 ### Retrieving a key’s information
-- [var name: String](mlkey/name.md)
+- [var name: String](./mlkey/name.md)
   The name of the machine learning key.
-- [var scope: String?](mlkey/scope.md)
+- [var scope: String?](./mlkey/scope.md)
   The applicable scope of the machine learning key.
 ### Initializers
-- [init?(coder: NSCoder)](mlkey/init(coder:).md)
+- [init?(coder: NSCoder)](./mlkey/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MLMetricKey](mlmetrickey.md)
-- [MLParameterKey](mlparameterkey.md)
+- [MLMetricKey](./mlmetrickey.md)
+- [MLParameterKey](./mlparameterkey.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MLModelConfiguration](mlmodelconfiguration.md)
+### Supporting types
+- [class MLModelConfiguration](./mlmodelconfiguration.md)
   The settings for creating or updating a machine learning model.
-- [struct MLOptimizationHints](mloptimizationhints-swift.struct.md)
+- [struct MLOptimizationHints](./mloptimizationhints-swift.struct.md)
 
 
 ---

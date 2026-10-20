@@ -1,7 +1,8 @@
 # rAddressMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address mode for the texture depth (r) coordinate.
 
@@ -10,7 +11,7 @@ The address mode for the texture depth (r) coordinate.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,24 +20,30 @@ The address mode for the texture depth (r) coordinate.
 var rAddressMode: MTLSamplerAddressMode { get set }
 ```
 
+```objc
+@property (nonatomic) MTLSamplerAddressMode rAddressMode;
+```
+
 #### Discussion
 
-The default value is [`MTLSamplerAddressMode.clampToEdge`](mtlsampleraddressmode/clamptoedge.md).
+The default value is [`MTLSamplerAddressMode.clampToEdge`](../mtlsampleraddressmode/clamptoedge.md).
 
 ## See Also
 
-- [Metal Shading Language Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [var sAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/saddressmode.md)
+### Related Documentation
+- [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Declaring addressing modes
+- [var sAddressMode: MTLSamplerAddressMode](./saddressmode.md)
   The address mode for the texture width (s) coordinate.
-- [var tAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/taddressmode.md)
+- [var tAddressMode: MTLSamplerAddressMode](./taddressmode.md)
   The address mode for the texture height (t) coordinate.
-- [var borderColor: MTLSamplerBorderColor](mtlsamplerdescriptor/bordercolor.md)
+- [var borderColor: MTLSamplerBorderColor](./bordercolor.md)
   The border color for clamped texture values.
-- [enum MTLSamplerAddressMode](mtlsampleraddressmode.md)
+- [enum MTLSamplerAddressMode](../mtlsampleraddressmode.md)
   Modes that determine the texture coordinate at each pixel when a fetch falls outside the bounds of a texture.
-- [enum MTLSamplerBorderColor](mtlsamplerbordercolor.md)
-  Values that determine the border color for clamped texture values when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](mtlsampleraddressmode/clamptobordercolor.md).
+- [enum MTLSamplerBorderColor](../mtlsamplerbordercolor.md)
+  Values that determine the border color for clamped texture values when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](../mtlsampleraddressmode/clamptobordercolor.md).
 
 
 ---

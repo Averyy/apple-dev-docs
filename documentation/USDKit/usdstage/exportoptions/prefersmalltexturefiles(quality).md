@@ -1,7 +1,8 @@
 # preferSmallTextureFiles(quality:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reduce textures’ file size at the specified quality level.
 

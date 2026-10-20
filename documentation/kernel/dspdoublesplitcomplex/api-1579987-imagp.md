@@ -1,7 +1,8 @@
 # imagp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An array of imaginary parts.
 
@@ -10,13 +11,14 @@ An array of imaginary parts.
 
 ## Declaration
 
-```swift
+```c
 double *imagp;
 ```
 
 ## See Also
 
-- [realp](../accelerate/dspdoublesplitcomplex/realp.md)
+### Fields
+- [realp](../../Accelerate/dspdoublesplitcomplex/realp.md)
   An array of real parts of the complex numbers.
 
 

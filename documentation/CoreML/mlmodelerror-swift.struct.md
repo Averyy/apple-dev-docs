@@ -1,7 +1,8 @@
 # MLModelError
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a Core ML model error.
 
@@ -23,50 +24,51 @@ struct MLModelError
 ## Topics
 
 ### Error Codes
-- [static var featureType: MLModelError.Code](mlmodelerror-swift.struct/featuretype.md)
+- [static var featureType: MLModelError.Code](./mlmodelerror-swift.struct/featuretype.md)
   An error code for problems related to model features.
-- [static var parameters: MLModelError.Code](mlmodelerror-swift.struct/parameters.md)
+- [static var parameters: MLModelError.Code](./mlmodelerror-swift.struct/parameters.md)
   An error code for problems related to model parameters.
-- [static var modelCollection: MLModelError.Code](mlmodelerror-swift.struct/modelcollection.md)
+- [static var modelCollection: MLModelError.Code](./mlmodelerror-swift.struct/modelcollection.md)
   An error code for problems related to retrieving a model collection from the deployment system.
-- [static var modelDecryptionKeyFetch: MLModelError.Code](mlmodelerror-swift.struct/modeldecryptionkeyfetch.md)
+- [static var modelDecryptionKeyFetch: MLModelError.Code](./mlmodelerror-swift.struct/modeldecryptionkeyfetch.md)
   An error code for problems related to retrieving a model’s decryption key.
-- [static var modelDecryption: MLModelError.Code](mlmodelerror-swift.struct/modeldecryption.md)
+- [static var modelDecryption: MLModelError.Code](./mlmodelerror-swift.struct/modeldecryption.md)
   An error code for problems related to decrypting models.
-- [static var update: MLModelError.Code](mlmodelerror-swift.struct/update.md)
+- [static var update: MLModelError.Code](./mlmodelerror-swift.struct/update.md)
   An error code for problems related to on-device model updates.
-- [static var customLayer: MLModelError.Code](mlmodelerror-swift.struct/customlayer.md)
+- [static var customLayer: MLModelError.Code](./mlmodelerror-swift.struct/customlayer.md)
   An error code for problems related to custom layers.
-- [static var customModel: MLModelError.Code](mlmodelerror-swift.struct/custommodel.md)
+- [static var customModel: MLModelError.Code](./mlmodelerror-swift.struct/custommodel.md)
   An error code for problems related to custom models.
-- [static var io: MLModelError.Code](mlmodelerror-swift.struct/io.md)
+- [static var io: MLModelError.Code](./mlmodelerror-swift.struct/io.md)
   An error code for problems related to the system’s input or output.
-- [static var predictionCancelled: MLModelError.Code](mlmodelerror-swift.struct/predictioncancelled.md)
+- [static var predictionCancelled: MLModelError.Code](./mlmodelerror-swift.struct/predictioncancelled.md)
   An error code for problems related to cancelling the prediction before it completes.
-- [static var generic: MLModelError.Code](mlmodelerror-swift.struct/generic.md)
+- [static var generic: MLModelError.Code](./mlmodelerror-swift.struct/generic.md)
   An error code for runtime issues that don’t apply to the other error codes.
-- [MLModelError.Code](mlmodelerror-swift.struct/code.md)
+- [MLModelError.Code](./mlmodelerror-swift.struct/code.md)
   Information about a Core ML model error.
 ### Error Domain
-- [let MLModelErrorDomain: String](mlmodelerrordomain.md)
+- [let MLModelErrorDomain: String](./mlmodelerrordomain.md)
   The domain for Core ML errors.
-- [static var errorDomain: String](mlmodelerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./mlmodelerror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLModelError.Code](mlmodelerror-swift.struct/code.md)
+### Model errors
+- [MLModelError.Code](./mlmodelerror-swift.struct/code.md)
   Information about a Core ML model error.
-- [let MLModelErrorDomain: String](mlmodelerrordomain.md)
+- [let MLModelErrorDomain: String](./mlmodelerrordomain.md)
   The domain for Core ML errors.
 
 

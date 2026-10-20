@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bl
 
 # mlx.core.blackman
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.blackman.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.blackman
-
- Table of contents 
-
-## Contents
-
-# mlx.core.blackman
-
-**blackman(*M: int*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**blackman(*M: int*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Return the Blackman window.
 The Blackman window is a taper formed by using the first three terms of a summation of cosines.
 
@@ -48,6 +21,4 @@ Returns:
 The window, with the maximum value normalized to one (the value oneappears only if the number of samples is odd).
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

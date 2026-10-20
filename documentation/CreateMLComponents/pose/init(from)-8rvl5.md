@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose from a dictionary of joint keypoints.
 
@@ -19,13 +20,20 @@ Creates a pose from a dictionary of joint keypoints.
 init(from points: [JointKey : JointPoint])
 ```
 
+**Other overloads**:
+
+```swift
+init(from decoder: any Decoder) throws
+```
+
 ## Parameters
 
 - `points`: A dictionary of pose joint keypoints, where keys are joint names and values are joint points.
 
 ## See Also
 
-- [init(VNRecognizedPointsObservation) throws](pose/init(_:).md)
+### Creating a pose
+- [init(VNRecognizedPointsObservation) throws](./init%28_%29.md)
   Creates a pose from a body or hand pose observation.
 
 

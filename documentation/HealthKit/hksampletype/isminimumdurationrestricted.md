@@ -1,7 +1,8 @@
 # isMinimumDurationRestricted
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether samples of this type have a minimum time interval between the start and end dates.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether samples of this type have a minimum time 
 var isMinimumDurationRestricted: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isMinimumDurationRestricted;
+```
+
 ## See Also
 
-- [var minimumAllowedDuration: TimeInterval](hksampletype/minimumallowedduration.md)
+### Checking the Duration Restriction
+- [var minimumAllowedDuration: TimeInterval](./minimumallowedduration.md)
   The minimum duration if the sample type has a restricted duration.
-- [var isMaximumDurationRestricted: Bool](hksampletype/ismaximumdurationrestricted.md)
+- [var isMaximumDurationRestricted: Bool](./ismaximumdurationrestricted.md)
   A Boolean value that indicates whether samples of this type have a maximum time interval between the start and end dates.
-- [var maximumAllowedDuration: TimeInterval](hksampletype/maximumallowedduration.md)
+- [var maximumAllowedDuration: TimeInterval](./maximumallowedduration.md)
   The maximum duration if the sample type has a restricted duration.
 
 

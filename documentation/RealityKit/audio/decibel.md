@@ -1,7 +1,8 @@
 # Audio.Decibel
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The unit for measuring intensity of sound on a logarithmic scale.
 
@@ -21,11 +22,12 @@ typealias Decibel = Double
 
 ## See Also
 
-- [enum Audio](audio.md)
+### Audio types
+- [enum Audio](../audio.md)
   A namespace for types that are used commonly in audio.
-- [Audio.Directivity](audio/directivity.md)
+- [Audio.Directivity](./directivity.md)
   The radiation pattern of sound emitted from an entity.
-- [Audio.DistanceAttenuation](audio/distanceattenuation.md)
+- [Audio.DistanceAttenuation](./distanceattenuation.md)
   The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
 

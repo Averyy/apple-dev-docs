@@ -1,13 +1,14 @@
 # mach_time
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the event occurred, as a Mach time value.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The time the event occurred, as a Mach time value.
 var mach_time: UInt64
 ```
 
+```c
+uint64_t mach_time;
+```
+
 ## See Also
 
-- [var time: timespec](es_message_t/time.md)
+### Inspecting Timing Properties
+- [var time: timespec](./time.md)
   The time the event occurred, expressed as a Darwin time value.
-- [var deadline: UInt64](es_message_t/deadline.md)
+- [var deadline: UInt64](./deadline.md)
   The deadline by which your app must respond to the event.
-- [var seq_num: UInt64](es_message_t/seq_num.md)
+- [var seq_num: UInt64](./seq_num.md)
   The sequence number of the message.
-- [var global_seq_num: UInt64](es_message_t/global_seq_num.md)
+- [var global_seq_num: UInt64](./global_seq_num.md)
   The global sequence number of the message.
 
 

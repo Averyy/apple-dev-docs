@@ -1,7 +1,8 @@
 # decelerationRate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies the rate of deceleration in the orthogonal scrolling section after the scrolling pan gesture ends.
 
@@ -18,9 +19,14 @@ A value that specifies the rate of deceleration in the orthogonal scrolling sect
 var decelerationRate: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate { get set }
 ```
 
+```objc
+@property (nonatomic) UICollectionLayoutSectionOrthogonalScrollingDecelerationRate decelerationRate;
+```
+
 ## See Also
 
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.struct.md)
+### Specifying the rate of deceleration
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](./decelerationrate-swift.struct.md)
   Constants that specify the rate of deceleration in the orthogonal scrolling section after the scrolling pan gesture ends.
 
 

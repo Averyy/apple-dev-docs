@@ -1,7 +1,8 @@
 # PKStoredValuePassBalance
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a balance that’s available for transactions, such as points or money.
 
@@ -9,7 +10,7 @@ An object that represents a balance that’s available for transactions, such as
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 8.0+
 
@@ -19,46 +20,51 @@ An object that represents a balance that’s available for transactions, such as
 class PKStoredValuePassBalance
 ```
 
+```objc
+@interface PKStoredValuePassBalance : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  A stored balance of type of [`cash`](pkstoredvaluepassbalance/balancetype-swift.struct/cash.md) requires a valid currency code.
+> ❗ **Important**:  A stored balance of type of [`cash`](./pkstoredvaluepassbalance/balancetype-swift.struct/cash.md) requires a valid currency code.
 
 ## Topics
 
 ### Getting the pass status
-- [var expiryDate: Date?](pkstoredvaluepassbalance/expirydate.md)
+- [var expiryDate: Date?](./pkstoredvaluepassbalance/expirydate.md)
   The date that the balance expires.
-- [var amount: Decimal](pkstoredvaluepassbalance/amount-2nwf5.md)
+- [var amount: Decimal](./pkstoredvaluepassbalance/amount-2nwf5.md)
   The current balance of a stored-value pass in money or points.
-- [var balanceType: PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.property.md)
+- [var balanceType: PKStoredValuePassBalance.BalanceType](./pkstoredvaluepassbalance/balancetype-swift.property.md)
   The type of value that the balance represents, such as money or points.
-- [var currencyCode: String?](pkstoredvaluepassbalance/currencycode.md)
+- [var currencyCode: String?](./pkstoredvaluepassbalance/currencycode.md)
   The ISO 4217 currency code of the balance.
-- [PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.struct.md)
+- [PKStoredValuePassBalance.BalanceType](./pkstoredvaluepassbalance/balancetype-swift.struct.md)
   The type of value that the balance represents, such as money or points.
 ### Comparing pass balance objects
-- [static func == (PKStoredValuePassBalance, PKStoredValuePassBalance) -> Bool](pkstoredvaluepassbalance/==(_:_:).md)
+- [static func == (PKStoredValuePassBalance, PKStoredValuePassBalance) -> Bool](./pkstoredvaluepassbalance/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two pass balance objects contain the same values.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKTransitPassProperties](pktransitpassproperties.md)
+### Stored-value passes
+- [class PKTransitPassProperties](./pktransitpassproperties.md)
   The properties of a transit pass.
-- [class PKSuicaPassProperties](pksuicapassproperties.md)
+- [class PKSuicaPassProperties](./pksuicapassproperties.md)
   The properties of a pass used as a ticket for the Suica transportation system.
-- [class PKStoredValuePassProperties](pkstoredvaluepassproperties.md)
+- [class PKStoredValuePassProperties](./pkstoredvaluepassproperties.md)
   An object that represents the properties of a pass that contains a balance used for specific transactions, such as a transit pass or loyalty card.
 
 

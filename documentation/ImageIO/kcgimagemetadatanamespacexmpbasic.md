@@ -1,7 +1,8 @@
 # kCGImageMetadataNamespaceXMPBasic
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The namespace for the Extensible Metadata Platform (XMP) format.
 
@@ -20,23 +21,28 @@ The namespace for the Extensible Metadata Platform (XMP) format.
 let kCGImageMetadataNamespaceXMPBasic: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageMetadataNamespaceXMPBasic;
+```
+
 ## See Also
 
-- [let kCGImageMetadataNamespaceDublinCore: CFString](kcgimagemetadatanamespacedublincore.md)
+### Public Namespaces
+- [let kCGImageMetadataNamespaceDublinCore: CFString](./kcgimagemetadatanamespacedublincore.md)
   The namespace for the Dublin Core Metadata Element Set.
-- [let kCGImageMetadataNamespaceExif: CFString](kcgimagemetadatanamespaceexif.md)
+- [let kCGImageMetadataNamespaceExif: CFString](./kcgimagemetadatanamespaceexif.md)
   The namespace for the Exchangeable Image File (EXIF) format.
-- [let kCGImageMetadataNamespaceExifAux: CFString](kcgimagemetadatanamespaceexifaux.md)
+- [let kCGImageMetadataNamespaceExifAux: CFString](./kcgimagemetadatanamespaceexifaux.md)
   The namespace for EXIF auxiliary keys.
-- [let kCGImageMetadataNamespaceExifEX: CFString](kcgimagemetadatanamespaceexifex.md)
+- [let kCGImageMetadataNamespaceExifEX: CFString](./kcgimagemetadatanamespaceexifex.md)
   The namespace for the exifEX format.
-- [let kCGImageMetadataNamespaceIPTCCore: CFString](kcgimagemetadatanamespaceiptccore.md)
+- [let kCGImageMetadataNamespaceIPTCCore: CFString](./kcgimagemetadatanamespaceiptccore.md)
   The namespace for the IPTC format.
-- [let kCGImageMetadataNamespacePhotoshop: CFString](kcgimagemetadatanamespacephotoshop.md)
+- [let kCGImageMetadataNamespacePhotoshop: CFString](./kcgimagemetadatanamespacephotoshop.md)
   The namespace for Photoshop image metadata.
-- [let kCGImageMetadataNamespaceTIFF: CFString](kcgimagemetadatanamespacetiff.md)
+- [let kCGImageMetadataNamespaceTIFF: CFString](./kcgimagemetadatanamespacetiff.md)
   The namespace for TIFF image metadata.
-- [let kCGImageMetadataNamespaceXMPRights: CFString](kcgimagemetadatanamespacexmprights.md)
+- [let kCGImageMetadataNamespaceXMPRights: CFString](./kcgimagemetadatanamespacexmprights.md)
   The namespace for XMP metadata that conveys legal restrictions associated with a resource.
 
 

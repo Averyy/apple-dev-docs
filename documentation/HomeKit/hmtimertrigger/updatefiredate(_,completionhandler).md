@@ -1,7 +1,8 @@
 # updateFireDate(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the next fire date for the trigger.
 
@@ -14,17 +15,28 @@ Updates the next fire date for the trigger.
 ## Declaration
 
 ```swift
+func updateFireDate(_ fireDate: Date, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateFireDate(_ fireDate: Date) async throws
+```
+
+```objc
+- (void) updateFireDate:(NSDate *) fireDate completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `fireDate`: The new fire date.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var fireDate: Date](hmtimertrigger/firedate.md)
+### Choosing the fire date
+- [var fireDate: Date](./firedate.md)
   The time at which the trigger will next fire.
 
 

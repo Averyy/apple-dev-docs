@@ -1,7 +1,8 @@
 # denyExplicitContent
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the setting that denies explicit content.
 
@@ -18,11 +19,12 @@ static let denyExplicitContent: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyExplicitContent` to access the metadata for [`denyExplicitContent`](mediasettings/denyexplicitcontent-swift.property.md). The default value is `false`.
+Use `denyExplicitContent` to access the metadata for [`denyExplicitContent`](./denyexplicitcontent-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyExplicitContent: Bool?](mediasettings/denyexplicitcontent-swift.property.md)
+### Denying explicit media
+- [var denyExplicitContent: Bool?](./denyexplicitcontent-swift.property.md)
   A Boolean value that indicates whether to prevent the user from accessing explicit content.
 
 

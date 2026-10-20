@@ -1,17 +1,22 @@
 # icon(forFiles:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an image containing the icon for the specified files.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func icon(forFiles fullPaths: [String]) -> NSImage?
+```
+
+```objc
+- (NSImage *) iconForFiles:(NSArray<NSString *> *) fullPaths;
 ```
 
 #### Return Value
@@ -30,15 +35,17 @@ You can safely call this method from any thread of your app.
 
 ## See Also
 
-- [func icon(forFileType: String) -> NSImage](nsworkspace/icon(forfiletype:).md)
+### Related Documentation
+- [func icon(forFileType: String) -> NSImage](./icon%28forfiletype%29.md)
   Returns an image containing the icon for files of the specified type.
-- [func icon(forFile: String) -> NSImage](nsworkspace/icon(forfile:).md)
+### Managing Icons
+- [func icon(forFile: String) -> NSImage](./icon%28forfile%29.md)
   Returns an image containing the icon for the specified file.
-- [func icon(for: UTType) -> NSImage](nsworkspace/icon(for:).md)
+- [func icon(for: UTType) -> NSImage](./icon%28for%29.md)
   Returns an image containing the icon for the specified content type.
-- [func setIcon(NSImage?, forFile: String, options: NSWorkspace.IconCreationOptions) -> Bool](nsworkspace/seticon(_:forfile:options:).md)
+- [func setIcon(NSImage?, forFile: String, options: NSWorkspace.IconCreationOptions) -> Bool](./seticon%28_,forfile,options%29.md)
   Sets the icon for the file or directory at the specified path.
-- [NSWorkspace.IconCreationOptions](nsworkspace/iconcreationoptions.md)
+- [NSWorkspace.IconCreationOptions](./iconcreationoptions.md)
   Constants that describe options for creating icons.
 
 

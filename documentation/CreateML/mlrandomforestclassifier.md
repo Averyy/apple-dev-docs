@@ -1,7 +1,8 @@
 # MLRandomForestClassifier
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A classifier based on a collection of decision trees trained on subsets of the data.
 
@@ -22,78 +23,79 @@ struct MLRandomForestClassifier
 ## Topics
 
 ### Creating a random forest classifier asynchronously
-- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./mlrandomforestclassifier/train%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Trains a random forest classifier.
-- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./mlrandomforestclassifier/maketrainingsession%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func resume(MLTrainingSession<MLRandomForestClassifier>) throws -> MLJob<MLRandomForestClassifier>](mlrandomforestclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLRandomForestClassifier>) throws -> MLJob<MLRandomForestClassifier>](./mlrandomforestclassifier/resume%28_%29.md)
   Resumes a training session from the last checkpoint if available.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLRandomForestClassifier>](mlrandomforestclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLRandomForestClassifier>](./mlrandomforestclassifier/restoretrainingsession%28sessionparameters%29.md)
   Restores an existing training session.
 ### Creating a random forest classifier from a checkpoint
-- [init(checkpoint: MLCheckpoint) throws](mlrandomforestclassifier/init(checkpoint:).md)
+- [init(checkpoint: MLCheckpoint) throws](./mlrandomforestclassifier/init%28checkpoint%29.md)
   Creates a random forest classifier classifier  from a checkpoint.
 ### Creating a random forest classifier synchronously
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./mlrandomforestclassifier/init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a random forest classifier.
-- [var targetColumn: String](mlrandomforestclassifier/targetcolumn.md)
+- [var targetColumn: String](./mlrandomforestclassifier/targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlrandomforestclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./mlrandomforestclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 ### Evaluating a random forest classifier
-- [func evaluation(on:)](mlrandomforestclassifier/evaluation(on:).md)
+- [func evaluation(on:)](./mlrandomforestclassifier/evaluation%28on%29.md)
   Evaluates the classifier on the provided labeled data.
-- [var trainingMetrics: MLClassifierMetrics](mlrandomforestclassifier/trainingmetrics.md)
+- [var trainingMetrics: MLClassifierMetrics](./mlrandomforestclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mlrandomforestclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./mlrandomforestclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 ### Testing a random forest classifier
-- [func predictions(from:)](mlrandomforestclassifier/predictions(from:).md)
+- [func predictions(from:)](./mlrandomforestclassifier/predictions%28from%29.md)
   Predicts a column of labels for the given testing data.
 ### Saving a random forest classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlrandomforestclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlrandomforestclassifier/write%28to,metadata%29.md)
   Exports a Core ML model file for use in your app.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlrandomforestclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlrandomforestclassifier/write%28tofile,metadata%29.md)
   Exports a Core ML model file for use in your app.
 ### Inspecting a random forest classifier
-- [var model: MLModel](mlrandomforestclassifier/model.md)
+- [var model: MLModel](./mlrandomforestclassifier/model.md)
   The Core ML model.
-- [MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.struct.md)
+- [MLRandomForestClassifier.ModelParameters](./mlrandomforestclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
-- [let modelParameters: MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLRandomForestClassifier.ModelParameters](./mlrandomforestclassifier/modelparameters-swift.property.md)
   The underlying parameters used when training the model.
 ### Describing a random forest classifier
-- [var description: String](mlrandomforestclassifier/description.md)
+- [var description: String](./mlrandomforestclassifier/description.md)
   A text representation of the random forest classifier.
-- [var debugDescription: String](mlrandomforestclassifier/debugdescription.md)
+- [var debugDescription: String](./mlrandomforestclassifier/debugdescription.md)
   A text representation of the random forest classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlrandomforestclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlrandomforestclassifier/playgrounddescription.md)
   A description of the random forest classifier shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlrandomforestclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlrandomforestclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlrandomforestclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlrandomforestclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlrandomforestclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlrandomforestclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLDecisionTreeClassifier](mldecisiontreeclassifier.md)
+### Supporting classifier types
+- [struct MLDecisionTreeClassifier](./mldecisiontreeclassifier.md)
   A classifier that predicts the target by creating rules to split the data.
-- [struct MLBoostedTreeClassifier](mlboostedtreeclassifier.md)
+- [struct MLBoostedTreeClassifier](./mlboostedtreeclassifier.md)
   A classifier based on a collection of decision trees combined with gradient boosting.
-- [struct MLLogisticRegressionClassifier](mllogisticregressionclassifier.md)
+- [struct MLLogisticRegressionClassifier](./mllogisticregressionclassifier.md)
   A classifier that predicts a discrete target value as a function of data features.
-- [struct MLSupportVectorClassifier](mlsupportvectorclassifier.md)
+- [struct MLSupportVectorClassifier](./mlsupportvectorclassifier.md)
   A classifier that predicts a binary target value by maximizing the separation between categories.
 
 

@@ -1,7 +1,8 @@
 # MTRColorControlStepMode
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.2+
@@ -18,23 +19,27 @@
 enum MTRColorControlStepMode
 ```
 
+```c
+enum MTRColorControlStepMode : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRColorControlStepMode.down](mtrcolorcontrolstepmode/down.md)
-- [MTRColorControlStepMode.up](mtrcolorcontrolstepmode/up.md)
+- [MTRColorControlStepMode.down](./mtrcolorcontrolstepmode/down.md)
+- [MTRColorControlStepMode.up](./mtrcolorcontrolstepmode/up.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcolorcontrolstepmode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcolorcontrolstepmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

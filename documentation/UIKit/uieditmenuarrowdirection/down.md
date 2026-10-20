@@ -1,7 +1,8 @@
 # UIEditMenuArrowDirection.down
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The arrow is pointing down at the object of focus.
 
@@ -17,15 +18,20 @@ The arrow is pointing down at the object of focus.
 case down
 ```
 
+```c
+UIEditMenuArrowDirectionDown
+```
+
 ## See Also
 
-- [UIEditMenuArrowDirection.automatic](uieditmenuarrowdirection/automatic.md)
+### Constants
+- [UIEditMenuArrowDirection.automatic](./automatic.md)
   The arrow is pointing up or down at the object of focus, based on its location in the screen, which is the default.
-- [UIEditMenuArrowDirection.up](uieditmenuarrowdirection/up.md)
+- [UIEditMenuArrowDirection.up](./up.md)
   The arrow is pointing up at the object of focus.
-- [UIEditMenuArrowDirection.left](uieditmenuarrowdirection/left.md)
+- [UIEditMenuArrowDirection.left](./left.md)
   The arrow is pointing left at the object of focus.
-- [UIEditMenuArrowDirection.right](uieditmenuarrowdirection/right.md)
+- [UIEditMenuArrowDirection.right](./right.md)
   The arrow is pointing right at the object of focus.
 
 

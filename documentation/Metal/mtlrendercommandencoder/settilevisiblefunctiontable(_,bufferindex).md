@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns a visible function table to an entry in the tile shader argument table.
@@ -20,18 +21,23 @@ Assigns a visible function table to an entry in the tile shader argument table.
 func setTileVisibleFunctionTable(_ functionTable: (any MTLVisibleFunctionTable)?, bufferIndex: Int)
 ```
 
+```objc
+- (void) setTileVisibleFunctionTable:(id<MTLVisibleFunctionTable>) functionTable atBufferIndex:(NSUInteger) bufferIndex;
+```
+
 #### Discussion
 
 By default, the visible function table at each index is `nil`.
 
 ## Parameters
 
-- `functionTable`: An [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) instance the command assigns to an entry in the tile shader argument table for visible function tables.
+- `functionTable`: An [`MTLVisibleFunctionTable`](../mtlvisiblefunctiontable.md) instance the command assigns to an entry in the tile shader argument table for visible function tables.
 - `bufferIndex`: An integer that represents the entry in the tile shader argument table for visible function tables that stores a record of `functionTable`.
 
 ## See Also
 
-- [func setTileVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](mtlrendercommandencoder/settilevisiblefunctiontables(_:bufferrange:).md)
+### Assigning visible function tables
+- [func setTileVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./settilevisiblefunctiontables%28_,bufferrange%29.md)
   Assigns multiple visible function tables to a range of entries in the tile shader argument table.
 
 

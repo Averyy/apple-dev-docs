@@ -1,7 +1,8 @@
 # getGroupMembership(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getGroupMembership(with params: MTRGroupsClusterGetGroupMembershipParams, completion: @escaping @Sendable (MTRGroupsClusterGetGroupMembershipResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func groupMembership(with params: MTRGroupsClusterGetGroupMembershipParams) async throws -> MTRGroupsClusterGetGroupMembershipResponseParams
+```
+
+```objc
+- (void) getGroupMembershipWithParams:(MTRGroupsClusterGetGroupMembershipParams *) params completion:(void (^)(MTRGroupsClusterGetGroupMembershipResponseParams *data, NSError *error)) completion;
 ```
 
 

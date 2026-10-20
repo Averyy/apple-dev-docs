@@ -1,7 +1,8 @@
 # ScaleOption
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single option in a scoring scale.
 
@@ -35,25 +36,26 @@ Each option defines a label, guide description, and numeric value. Options are p
 ## Topics
 
 ### Initializers
-- [init(label: String, guideDescription: String, value: Double)](scaleoption/init(label:guidedescription:value:).md)
+- [init(label: String, guideDescription: String, value: Double)](./scaleoption/init%28label,guidedescription,value%29.md)
   Creates a scale option.
 ### Instance Properties
-- [let guideDescription: String](scaleoption/guidedescription.md)
+- [let guideDescription: String](./scaleoption/guidedescription.md)
   Rubric guidance that the model judge references for this option.
-- [let label: String](scaleoption/label.md)
+- [let label: String](./scaleoption/label.md)
   A short label for this option, such as “excellent”, “pass”, or “5”.
-- [let value: Double](scaleoption/value.md)
+- [let value: Double](./scaleoption/value.md)
   The numeric value for this option, used for metric aggregation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let options: [ScaleOption]](scoringscale/options.md)
+### Inspecting a scale
+- [let options: [ScaleOption]](./scoringscale/options.md)
   The scale options, ordered from highest to lowest value.
 
 

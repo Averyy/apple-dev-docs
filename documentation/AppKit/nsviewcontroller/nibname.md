@@ -1,7 +1,8 @@
 # nibName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the nib file to be loaded to instantiate the receiver’s primary view.
 
@@ -14,15 +15,21 @@ The name of the nib file to be loaded to instantiate the receiver’s primary vi
 var nibName: NSNib.Name? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSNibName nibName;
+```
+
 #### Discussion
 
-This property’s value is the name you provide to the `nibNameOrNil` parameter in the [`init(nibName:bundle:)`](nsviewcontroller/init(nibname:bundle:).md) method.
+This property’s value is the name you provide to the `nibNameOrNil` parameter in the [`init(nibName:bundle:)`](./init%28nibname,bundle%29.md) method.
 
 ## See Also
 
-- [init(nibName: NSNib.Name?, bundle: Bundle?)](nsviewcontroller/init(nibname:bundle:).md)
+### Related Documentation
+- [init(nibName: NSNib.Name?, bundle: Bundle?)](./init%28nibname,bundle%29.md)
   Returns a view controller object initialized to the nib file in the specified bundle.
-- [var nibBundle: Bundle?](nsviewcontroller/nibbundle.md)
+### Nib Properties
+- [var nibBundle: Bundle?](./nibbundle.md)
   The nib bundle to be loaded to instantiate the receiver’s primary view.
 
 

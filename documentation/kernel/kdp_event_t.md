@@ -1,14 +1,15 @@
 # kdp_event_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef enum kdp_event_t : unsigned int {
     ...
 } kdp_event_t;
@@ -17,9 +18,9 @@ typedef enum kdp_event_t : unsigned int {
 ## Topics
 
 ### Constants
-- [KDP_EVENT_ENTER](kdp_event_t/kdp_event_enter.md)
-- [KDP_EVENT_EXIT](kdp_event_t/kdp_event_exit.md)
-- [KDP_EVENT_PANICLOG](kdp_event_t/kdp_event_paniclog.md)
+- [KDP_EVENT_ENTER](./kdp_event_t/kdp_event_enter.md)
+- [KDP_EVENT_EXIT](./kdp_event_t/kdp_event_exit.md)
+- [KDP_EVENT_PANICLOG](./kdp_event_t/kdp_event_paniclog.md)
 
 
 ---

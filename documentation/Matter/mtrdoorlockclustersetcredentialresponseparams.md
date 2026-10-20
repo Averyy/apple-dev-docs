@@ -1,7 +1,8 @@
 # MTRDoorLockClusterSetCredentialResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,28 +19,32 @@
 class MTRDoorLockClusterSetCredentialResponseParams
 ```
 
+```objc
+@interface MTRDoorLockClusterSetCredentialResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrdoorlockclustersetcredentialresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrdoorlockclustersetcredentialresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var nextCredentialIndex: NSNumber?](mtrdoorlockclustersetcredentialresponseparams/nextcredentialindex.md)
-- [var status: NSNumber](mtrdoorlockclustersetcredentialresponseparams/status.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrdoorlockclustersetcredentialresponseparams/timedinvoketimeoutms.md)
-- [var userIndex: NSNumber?](mtrdoorlockclustersetcredentialresponseparams/userindex.md)
+- [var nextCredentialIndex: NSNumber?](./mtrdoorlockclustersetcredentialresponseparams/nextcredentialindex.md)
+- [var status: NSNumber](./mtrdoorlockclustersetcredentialresponseparams/status.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrdoorlockclustersetcredentialresponseparams/timedinvoketimeoutms.md)
+- [var userIndex: NSNumber?](./mtrdoorlockclustersetcredentialresponseparams/userindex.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

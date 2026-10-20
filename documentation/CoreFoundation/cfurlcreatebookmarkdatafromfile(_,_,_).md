@@ -1,7 +1,8 @@
 # CFURLCreateBookmarkDataFromFile(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Initializes and returns bookmark data derived from a file pointed to by a specified URL.
 
@@ -20,27 +21,32 @@ Initializes and returns bookmark data derived from a file pointed to by a specif
 func CFURLCreateBookmarkDataFromFile(_ allocator: CFAllocator!, _ fileURL: CFURL!, _ errorRef: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!
 ```
 
+```c
+extern CFDataRefCFURLCreateBookmarkDataFromFile(CFAllocatorRef allocator, CFURLRef fileURL, CFErrorRef*errorRef);
+```
+
 #### Return Value
 
 The bookmark data for the file, or `NULL` if an error occurs.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `fileURL`: The file URL.
 - `errorRef`: The error that occurred in the case that the bookmark data cannot be created.
 
 ## See Also
 
-- [func CFURLCreateBookmarkData(CFAllocator!, CFURL!, CFURLBookmarkCreationOptions, CFArray!, CFURL!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](cfurlcreatebookmarkdata(_:_:_:_:_:_:).md)
+### Working with Bookmark Data
+- [func CFURLCreateBookmarkData(CFAllocator!, CFURL!, CFURLBookmarkCreationOptions, CFArray!, CFURL!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](./cfurlcreatebookmarkdata%28_,_,_,_,_,_%29.md)
   Returns bookmark data for a URL, created with specified options and resource values.
-- [func CFURLCreateBookmarkDataFromAliasRecord(CFAllocator!, CFData!) -> Unmanaged<CFData>!](cfurlcreatebookmarkdatafromaliasrecord(_:_:).md)
+- [func CFURLCreateBookmarkDataFromAliasRecord(CFAllocator!, CFData!) -> Unmanaged<CFData>!](./cfurlcreatebookmarkdatafromaliasrecord%28_,_%29.md)
   Initializes and returns bookmark data derived from an alias record.
-- [func CFURLWriteBookmarkDataToFile(CFData!, CFURL!, CFURLBookmarkFileCreationOptions, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](cfurlwritebookmarkdatatofile(_:_:_:_:).md)
+- [func CFURLWriteBookmarkDataToFile(CFData!, CFURL!, CFURLBookmarkFileCreationOptions, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./cfurlwritebookmarkdatatofile%28_,_,_,_%29.md)
   Creates an alias file on disk at a specified location with specified bookmark data.
-- [func CFURLStartAccessingSecurityScopedResource(CFURL!) -> Bool](cfurlstartaccessingsecurityscopedresource(_:).md)
+- [func CFURLStartAccessingSecurityScopedResource(CFURL!) -> Bool](./cfurlstartaccessingsecurityscopedresource%28_%29.md)
   In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
-- [func CFURLStopAccessingSecurityScopedResource(CFURL!)](cfurlstopaccessingsecurityscopedresource(_:).md)
+- [func CFURLStopAccessingSecurityScopedResource(CFURL!)](./cfurlstopaccessingsecurityscopedresource%28_%29.md)
   In an app that adopts App Sandbox, revokes access to the resource pointed to by a security-scoped URL.
 
 

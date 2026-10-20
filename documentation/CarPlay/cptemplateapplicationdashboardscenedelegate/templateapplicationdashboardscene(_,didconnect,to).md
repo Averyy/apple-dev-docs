@@ -1,7 +1,8 @@
 # templateApplicationDashboardScene(_:didConnect:to:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate about the addition of a CarPlay Dashboard scene to your navigation app.
 
@@ -16,9 +17,13 @@ Tells the delegate about the addition of a CarPlay Dashboard scene to your navig
 optional func templateApplicationDashboardScene(_ templateApplicationDashboardScene: CPTemplateApplicationDashboardScene, didConnect dashboardController: CPDashboardController, to window: UIWindow)
 ```
 
+```objc
+- (void) templateApplicationDashboardScene:(CPTemplateApplicationDashboardScene *) templateApplicationDashboardScene didConnectDashboardController:(CPDashboardController *) dashboardController toWindow:(UIWindow *) window;
+```
+
 ## Mentions
 
-- [Displaying Content in CarPlay](displaying-content-in-carplay.md)
+- [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
 
 #### Discussion
 
@@ -32,7 +37,8 @@ CarPlay calls this method when it connects a dashboard scene to your navigation 
 
 ## See Also
 
-- [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didDisconnect: CPDashboardController, from: UIWindow)](cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene(_:diddisconnect:from:).md)
+### Responding to the Scene Life Cycle
+- [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didDisconnect: CPDashboardController, from: UIWindow)](./templateapplicationdashboardscene%28_,diddisconnect,from%29.md)
   Tells the delegate when CarPlay removes the dashboard scene from your navigation app.
 
 

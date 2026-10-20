@@ -1,10 +1,11 @@
 # kBluetoothL2CAPTCIEventIDL2CA_QoSViolationInd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kBluetoothL2CAPTCIEventIDL2CA_QoSViolationInd: Int { get }
 ```
 
+```c
+kBluetoothL2CAPTCIEventIDL2CA_QoSViolationInd
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPTCIEventIDL2CA_ConfigInd: Int](kbluetoothl2captcieventidl2ca_configind.md)
-- [var kBluetoothL2CAPTCIEventIDL2CA_ConnectInd: Int](kbluetoothl2captcieventidl2ca_connectind.md)
-- [var kBluetoothL2CAPTCIEventIDL2CA_DisconnectInd: Int](kbluetoothl2captcieventidl2ca_disconnectind.md)
-- [var kBluetoothL2CAPTCIEventIDL2CA_TimeOutInd: Int](kbluetoothl2captcieventidl2ca_timeoutind.md)
-- [var kBluetoothL2CAPTCIEventIDReserved: Int](kbluetoothl2captcieventidreserved.md)
+### Constants
+- [var kBluetoothL2CAPTCIEventIDL2CA_ConfigInd: Int](./kbluetoothl2captcieventidl2ca_configind.md)
+- [var kBluetoothL2CAPTCIEventIDL2CA_ConnectInd: Int](./kbluetoothl2captcieventidl2ca_connectind.md)
+- [var kBluetoothL2CAPTCIEventIDL2CA_DisconnectInd: Int](./kbluetoothl2captcieventidl2ca_disconnectind.md)
+- [var kBluetoothL2CAPTCIEventIDL2CA_TimeOutInd: Int](./kbluetoothl2captcieventidl2ca_timeoutind.md)
+- [var kBluetoothL2CAPTCIEventIDReserved: Int](./kbluetoothl2captcieventidreserved.md)
 
 
 ---

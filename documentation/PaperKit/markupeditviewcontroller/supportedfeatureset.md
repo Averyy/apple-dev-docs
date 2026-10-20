@@ -1,7 +1,8 @@
 # supportedFeatureSet
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported features of this edit UI.
 
@@ -20,7 +21,8 @@ The supported features of this edit UI.
 
 ## See Also
 
-- [var delegate: (any MarkupEditViewController.Delegate)?](markupeditviewcontroller/delegate-swift.property.md)
+### Configuring the view controller
+- [var delegate: (any MarkupEditViewController.Delegate)?](./delegate-swift.property.md)
   The delegate for responding to user actions.
 
 

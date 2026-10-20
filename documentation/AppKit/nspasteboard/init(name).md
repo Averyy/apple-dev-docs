@@ -1,17 +1,22 @@
 # init(name:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the pasteboard with the specified name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(name: NSPasteboard.Name)
+```
+
+```objc
++ (NSPasteboard *) pasteboardWithName:(NSPasteboardName) name;
 ```
 
 #### Return Value
@@ -28,19 +33,20 @@ Other names can be assigned to create private pasteboards for other purposes.
 
 ## See Also
 
-- [class var general: NSPasteboard](nspasteboard/general.md)
+### Creating and releasing a pasteboard
+- [class var general: NSPasteboard](./general.md)
   The shared pasteboard object to use for general content.
-- [init(byFilteringData: Data, ofType: NSPasteboard.PasteboardType)](nspasteboard/init(byfilteringdata:oftype:).md)
+- [init(byFilteringData: Data, ofType: NSPasteboard.PasteboardType)](./init%28byfilteringdata,oftype%29.md)
   Creates a new pasteboard object that supplies the specified data in as many types as possible based on the available filter services.
-- [init(byFilteringFile: String)](nspasteboard/init(byfilteringfile:).md)
+- [init(byFilteringFile: String)](./init%28byfilteringfile%29.md)
   Creates a new pasteboard object that supplies the specified file in as many types as possible based on the available filter services.
-- [init(byFilteringTypesInPasteboard: NSPasteboard)](nspasteboard/init(byfilteringtypesinpasteboard:).md)
+- [init(byFilteringTypesInPasteboard: NSPasteboard)](./init%28byfilteringtypesinpasteboard%29.md)
   Creates a new pasteboard object that supplies the specified pasteboard data in as many types as possible based on the available filter services.
-- [NSPasteboard.Name](nspasteboard/name-swift.struct.md)
+- [NSPasteboard.Name](./name-swift.struct.md)
   Constants that represent the standard pasteboard names.
-- [class func withUniqueName() -> NSPasteboard](nspasteboard/withuniquename.md)
+- [class func withUniqueName() -> NSPasteboard](./withuniquename%28%29.md)
   Creates and returns a new pasteboard with a name that is guaranteed to be unique with respect to other pasteboards in the system.
-- [func releaseGlobally()](nspasteboard/releaseglobally.md)
+- [func releaseGlobally()](./releaseglobally%28%29.md)
   Releases the receiver’s resources in the pasteboard server.
 
 

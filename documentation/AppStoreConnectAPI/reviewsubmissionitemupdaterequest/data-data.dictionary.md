@@ -1,7 +1,8 @@
 # ReviewSubmissionItemUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a review submission item update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a review submission item update request.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionItemUpdateRequest.Data.Attributes](reviewsubmissionitemupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object ReviewSubmissionItemUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a review submission item update request resource.
 
 ## Properties
 
 - `attributes` (ReviewSubmissionItemUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `reviewSubmissionItems`
 
 
 ---

@@ -1,12 +1,13 @@
 # shouldRunSavePanelWithAccessoryView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the document’s Save panel displays a li
 var shouldRunSavePanelWithAccessoryView: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL shouldRunSavePanelWithAccessoryView;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the document includes a pop-up menu of supported writable document types when it displays the Save panel. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Subclasses can override this property to provide a different value. For example, you might provide the following implementation:
+When the value of this property is [`true`](../../Swift/true.md), the document includes a pop-up menu of supported writable document types when it displays the Save panel. The default value of this property is [`true`](../../Swift/true.md). Subclasses can override this property to provide a different value. For example, you might provide the following implementation:
 
 ```objc
 - (BOOL)shouldRunSavePanelWithAccessoryView {

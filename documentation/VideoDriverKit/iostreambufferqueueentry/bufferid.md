@@ -1,23 +1,25 @@
 # bufferID
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 IOStreamBufferID bufferID;
 ```
 
 ## See Also
 
-- [dataOffset](iostreambufferqueueentry/dataoffset.md)
-- [dataLength](iostreambufferqueueentry/datalength.md)
-- [controlOffset](iostreambufferqueueentry/controloffset.md)
-- [controlLength](iostreambufferqueueentry/controllength.md)
+### Accessing buffer queue entry properties
+- [dataOffset](./dataoffset.md)
+- [dataLength](./datalength.md)
+- [controlOffset](./controloffset.md)
+- [controlLength](./controllength.md)
 
 
 ---

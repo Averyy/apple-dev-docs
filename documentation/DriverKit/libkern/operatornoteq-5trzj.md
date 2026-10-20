@@ -1,17 +1,18 @@
 # operator!=
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, typename A, typename P> bool operator!=(sa_detail::nullptr_t , const safe_allocation<T, A, P> & x);
 ```
 

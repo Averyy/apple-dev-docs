@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](scaledpose3d/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the notification.
 
 

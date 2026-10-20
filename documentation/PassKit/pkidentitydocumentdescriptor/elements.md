@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A list of identity elements to request.
@@ -18,11 +19,16 @@ A list of identity elements to request.
 var elements: [PKIdentityElement] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<PKIdentityElement *> * elements;
+```
+
 ## See Also
 
-- [var issuerIdentifiers: [Data]](pkidentitydocumentdescriptor/issueridentifiers.md)
+### Inspecting elements
+- [var issuerIdentifiers: [Data]](./issueridentifiers.md)
   A list of X.509 authority key identifiers your app accepts.
-- [class PKIdentityElement](pkidentityelement.md)
+- [class PKIdentityElement](../pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
 
 

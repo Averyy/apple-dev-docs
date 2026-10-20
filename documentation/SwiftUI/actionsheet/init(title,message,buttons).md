@@ -1,17 +1,20 @@
 # init(title:message:buttons:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action sheet with the provided buttons.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use a [`View`](../view.md) modifier like [`confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)`](../view/confirmationdialog%28_,ispresented,titlevisibility,presenting,actions,message%29-8y541.md) instead.
 
 ## Declaration
 

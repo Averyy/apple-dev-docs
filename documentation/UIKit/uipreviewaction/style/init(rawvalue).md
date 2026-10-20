@@ -1,13 +1,16 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 17.1
+- iPadOS 9.0+ - Deprecated in 17.1
+- Mac Catalyst 13.1+ - Deprecated in 17.1
+- tvOS 9.0+ - Deprecated in 17.1
+
+> **Deprecated**: Please use UIContextMenuInteraction.
 
 ## Declaration
 

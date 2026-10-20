@@ -1,7 +1,8 @@
 # kIOUSBHostPortTypeAccessory
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The accessory type.
 
@@ -10,7 +11,7 @@ The accessory type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortTypeAccessory
 ```
 

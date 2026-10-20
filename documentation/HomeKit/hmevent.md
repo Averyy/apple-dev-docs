@@ -1,7 +1,8 @@
 # HMEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class for a HomeKit event.
 
@@ -19,51 +20,56 @@ The abstract base class for a HomeKit event.
 class HMEvent
 ```
 
+```objc
+@interface HMEvent : NSObject
+```
+
 ## Topics
 
 ### Getting information about the event
-- [var uniqueIdentifier: UUID](hmevent/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./hmevent/uniqueidentifier.md)
   A unique identifier for the event.
-- [class func isSupported(for: HMHome) -> Bool](hmevent/issupported(for:).md)
+- [class func isSupported(for: HMHome) -> Bool](./hmevent/issupported%28for%29.md)
   A Boolean value indicating whether the event can be added to an event trigger on the specified home.
 ### Initializers
-- [init()](hmevent/init.md)
+- [init()](./hmevent/init%28%29.md)
 ### Type Methods
-- [class func new() -> Self](hmevent/new.md)
+- [class func new() -> Self](./hmevent/new%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HMCharacteristicEvent](hmcharacteristicevent.md)
-- [HMCharacteristicThresholdRangeEvent](hmcharacteristicthresholdrangeevent.md)
-- [HMLocationEvent](hmlocationevent.md)
-- [HMPresenceEvent](hmpresenceevent.md)
-- [HMTimeEvent](hmtimeevent.md)
+- [HMCharacteristicEvent](./hmcharacteristicevent.md)
+- [HMCharacteristicThresholdRangeEvent](./hmcharacteristicthresholdrangeevent.md)
+- [HMLocationEvent](./hmlocationevent.md)
+- [HMPresenceEvent](./hmpresenceevent.md)
+- [HMTimeEvent](./hmtimeevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var events: [HMEvent]](hmeventtrigger/events.md)
+### Setting trigger events
+- [var events: [HMEvent]](./hmeventtrigger/events.md)
   The events that activate the trigger.
-- [func updateEvents([HMEvent], completionHandler: ((any Error)?) -> Void)](hmeventtrigger/updateevents(_:completionhandler:).md)
+- [func updateEvents([HMEvent], completionHandler: ((any Error)?) -> Void)](./hmeventtrigger/updateevents%28_,completionhandler%29.md)
   Updates the set of trigger events.
-- [Location events](location-events.md)
+- [Location events](./location-events.md)
   Events that represent the user’s movement among regions.
-- [Time events](time-events.md)
+- [Time events](./time-events.md)
   Events based on time, significant occurrences, and time durations.
-- [Characteristic events](characteristic-events.md)
+- [Characteristic events](./characteristic-events.md)
   Events based on the capabilities or characteristics of accessories.
-- [Presence events](presence-events.md)
+- [Presence events](./presence-events.md)
   Events based on the user’s presence in a home.
 
 

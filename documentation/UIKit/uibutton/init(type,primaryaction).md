@@ -1,7 +1,8 @@
 # init(type:primaryAction:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
 
@@ -10,7 +11,7 @@ Creates a new button with the specified type, registers the primary action event
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,13 +23,14 @@ Creates a new button with the specified type, registers the primary action event
 ## Parameters
 
 - `buttonType`: The type of button.
-- `primaryAction`: The action to perform when the button is selected. The button registers this action for the [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control event and sets the title and image properties to the action’s title and image.
+- `primaryAction`: The action to perform when the button is selected. The button registers this action for the [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control event and sets the title and image properties to the action’s title and image.
 
 ## See Also
 
-- [convenience init(type: UIButton.ButtonType)](uibutton/init(type:).md)
+### Creating buttons of a specific type
+- [convenience init(type: UIButton.ButtonType)](./init%28type%29.md)
   Creates and returns a new button of the specified type.
-- [UIButton.ButtonType](uibutton/buttontype-swift.enum.md)
+- [UIButton.ButtonType](./buttontype-swift.enum.md)
   Specifies the style of a button.
 
 

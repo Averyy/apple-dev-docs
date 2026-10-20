@@ -1,7 +1,8 @@
 # HTMLParamElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLParamElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [name](htmlparamelement/1632228-name.md)
-- [type](htmlparamelement/1632179-type.md)
-- [value](htmlparamelement/1632438-value.md)
-- [valueType](htmlparamelement/1629886-valuetype.md)
+- [name](./htmlparamelement/api-1632228-name.md)
+- [type](./htmlparamelement/api-1632179-type.md)
+- [value](./htmlparamelement/api-1632438-value.md)
+- [valueType](./htmlparamelement/api-1629886-valuetype.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

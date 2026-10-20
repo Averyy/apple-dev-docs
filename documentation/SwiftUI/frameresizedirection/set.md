@@ -1,7 +1,8 @@
 # FrameResizeDirection.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of frame resize directions.
 
@@ -18,29 +19,29 @@ struct Set
 ## Topics
 
 ### Initializers
-- [init(FrameResizeDirection)](frameresizedirection/set/init(_:).md)
+- [init(FrameResizeDirection)](./set/init%28_%29.md)
   Creates a set of directions containing only the specified direction.
 ### Type Properties
-- [static let all: FrameResizeDirection.Set](frameresizedirection/set/all.md)
+- [static let all: FrameResizeDirection.Set](./set/all.md)
   A set containing the inward and outward resizing directions.
-- [static let inward: FrameResizeDirection.Set](frameresizedirection/set/inward.md)
+- [static let inward: FrameResizeDirection.Set](./set/inward.md)
   A set containing only the inward resize direction.
-- [static let outward: FrameResizeDirection.Set](frameresizedirection/set/outward.md)
+- [static let outward: FrameResizeDirection.Set](./set/outward.md)
   A set containing only the outward resize direction.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

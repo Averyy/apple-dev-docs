@@ -1,7 +1,8 @@
 # heapOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting offset in the heap, in tiles.
 
@@ -17,6 +18,10 @@ The starting offset in the heap, in tiles.
 
 ```swift
 var heapOffset: Int
+```
+
+```c
+NSUInteger heapOffset;
 ```
 
 

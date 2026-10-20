@@ -1,7 +1,8 @@
 # init(projecting:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes this point as the projection of the given 3D point on the XZ plane
 
@@ -16,8 +17,9 @@ init(projecting point3D: Point3D)
 
 ## See Also
 
-- [init()](tablevisualstate/point2d/init.md)
-- [init(x: Double, z: Double)](tablevisualstate/point2d/init(x:z:).md)
+### Creating 2D point states
+- [init()](./init%28%29.md)
+- [init(x: Double, z: Double)](./init%28x,z%29.md)
 
 
 ---

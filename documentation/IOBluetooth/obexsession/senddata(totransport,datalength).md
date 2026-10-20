@@ -1,17 +1,22 @@
 # sendData(toTransport:dataLength:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 You must override this to send data over your transport. This does nothing by default, it will return a kOBEXUnsupportedError.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sendData(toTransport inDataToSend: UnsafeMutableRawPointer!, dataLength inDataLength: Int) -> OBEXError
+```
+
+```objc
+- (OBEXError) sendDataToTransport:(void *) inDataToSend dataLength:(size_t) inDataLength;
 ```
 
 #### Discussion

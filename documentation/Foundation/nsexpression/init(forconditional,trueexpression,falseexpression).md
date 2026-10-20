@@ -1,7 +1,8 @@
 # init(forConditional:trueExpression:falseExpression:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expression that returns a result, depending on the value of predicate.
 
@@ -18,6 +19,10 @@ Creates an expression that returns a result, depending on the value of predicate
 
 ```swift
 init(forConditional predicate: NSPredicate, trueExpression: NSExpression, falseExpression: NSExpression)
+```
+
+```objc
++ (NSExpression *) expressionForConditional:(NSPredicate *) predicate trueExpression:(NSExpression *) trueExpression falseExpression:(NSExpression *) falseExpression;
 ```
 
 ## Parameters

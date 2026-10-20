@@ -1,7 +1,8 @@
 # modelPath
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of a neural network `.mlmodel` file that takes an image as an input.
 
@@ -20,7 +21,8 @@ var modelPath: URL
 
 ## See Also
 
-- [var outputName: String?](mlimageclassifier/customfeatureextractor/outputname.md)
+### Configuring a custom feature extractor
+- [var outputName: String?](./outputname.md)
   The name of the output from a feature extraction layer within the model.
 
 

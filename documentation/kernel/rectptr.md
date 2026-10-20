@@ -1,7 +1,8 @@
 # RectPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Represents a type used by the Video Components API.
 
@@ -10,7 +11,7 @@ Represents a type used by the Video Components API.
 
 ## Declaration
 
-```swift
+```c
 typedef Rect *RectPtr;
 ```
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct console_ops {
     ...
 };
@@ -17,8 +17,8 @@ struct console_ops {
 ## Topics
 
 ### Instance Properties
-- [getc](console_ops/2870135-getc.md)
-- [putc](console_ops/2870133-putc.md)
+- [getc](./console_ops/api-2870135-getc.md)
+- [putc](./console_ops/api-2870133-putc.md)
 
 
 ---

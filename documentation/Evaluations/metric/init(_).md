@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metric with just a name.
 

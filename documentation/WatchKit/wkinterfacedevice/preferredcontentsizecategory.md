@@ -1,7 +1,8 @@
 # preferredContentSizeCategory
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred font-sizing option.
 
@@ -14,27 +15,32 @@ The preferred font-sizing option.
 var preferredContentSizeCategory: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * preferredContentSizeCategory;
+```
+
 #### Discussion
 
 Users can request that apps display fonts in a size that is larger or smaller than the normal font size defined by the system. For example, a user with a visual impairment might request a larger default font size to make it easier to read text. Font objects returned by the system automatically scale based on the user’s preference. When requesting font objects from code, use the value of this property to request a font object of the appropriate size.
 
-For a list of possible values, see “Content Size Category Constants” in [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication).
+For a list of possible values, see “Content Size Category Constants” in [`UIApplication`](../../UIKit/uiapplication.md).
 
 ## See Also
 
-- [var name: String](wkinterfacedevice/name.md)
+### Reading the Device Settings
+- [var name: String](./name.md)
   The name of the device.
-- [var model: String](wkinterfacedevice/model.md)
+- [var model: String](./model.md)
   The model information for the device.
-- [var localizedModel: String](wkinterfacedevice/localizedmodel.md)
+- [var localizedModel: String](./localizedmodel.md)
   The localized version of the model information.
-- [var wristLocation: WKInterfaceDeviceWristLocation](wkinterfacedevice/wristlocation.md)
+- [var wristLocation: WKInterfaceDeviceWristLocation](./wristlocation.md)
   The wrist on which the user wears the Apple Watch.
-- [enum WKInterfaceDeviceWristLocation](wkinterfacedevicewristlocation.md)
+- [enum WKInterfaceDeviceWristLocation](../wkinterfacedevicewristlocation.md)
   Constants indicating the wrist on which the user wears the Apple Watch.
-- [var crownOrientation: WKInterfaceDeviceCrownOrientation](wkinterfacedevice/crownorientation.md)
+- [var crownOrientation: WKInterfaceDeviceCrownOrientation](./crownorientation.md)
   The side on which the crown is positioned.
-- [enum WKInterfaceDeviceCrownOrientation](wkinterfacedevicecrownorientation.md)
+- [enum WKInterfaceDeviceCrownOrientation](../wkinterfacedevicecrownorientation.md)
   Constants indicating the crown orientation from the user’s perspective.
 
 

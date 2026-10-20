@@ -1,7 +1,8 @@
 # MKMarkerAnnotationView
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An annotation view that displays a balloon-shaped marker at the designated location.
 
@@ -19,89 +20,94 @@ An annotation view that displays a balloon-shaped marker at the designated locat
 class MKMarkerAnnotationView
 ```
 
+```objc
+@interface MKMarkerAnnotationView : MKAnnotationView
+```
+
 #### Overview
 
-Return an instance of this class from the [`mapView(_:viewFor:)`](mkmapviewdelegate/mapview(_:viewfor:)-8humz.md) method of your map view delegate when you want to display the same types of markers used in the Maps app.
+Return an instance of this class from the [`mapView(_:viewFor:)`](./mkmapviewdelegate/mapview%28_,viewfor%29-8humz.md) method of your map view delegate when you want to display the same types of markers used in the Maps app.
 
-The default [`displayPriority`](mkannotationview/displaypriority.md) for an instance of this class is [`defaultLow`](mkfeaturedisplaypriority/defaultlow.md).
+The default [`displayPriority`](./mkannotationview/displaypriority.md) for an instance of this class is [`defaultLow`](./mkfeaturedisplaypriority/defaultlow.md).
 
 ## Topics
 
 ### Setting the Marker Color
-- [var markerTintColor: UIColor?](mkmarkerannotationview/markertintcolor.md)
+- [var markerTintColor: UIColor?](./mkmarkerannotationview/markertintcolor.md)
   The background color of the marker balloon.
 ### Setting the Marker Content
-- [var glyphText: String?](mkmarkerannotationview/glyphtext.md)
+- [var glyphText: String?](./mkmarkerannotationview/glyphtext.md)
   The text to display in the marker balloon.
-- [var glyphImage: UIImage?](mkmarkerannotationview/glyphimage.md)
+- [var glyphImage: UIImage?](./mkmarkerannotationview/glyphimage.md)
   An image to display in the marker balloon.
-- [var glyphTintColor: UIColor?](mkmarkerannotationview/glyphtintcolor.md)
+- [var glyphTintColor: UIColor?](./mkmarkerannotationview/glyphtintcolor.md)
   The color to apply to the glyph text or image.
-- [var selectedGlyphImage: UIImage?](mkmarkerannotationview/selectedglyphimage.md)
+- [var selectedGlyphImage: UIImage?](./mkmarkerannotationview/selectedglyphimage.md)
   An image to display when the user selects the marker.
 ### Setting the Visibility
-- [var titleVisibility: MKFeatureVisibility](mkmarkerannotationview/titlevisibility.md)
+- [var titleVisibility: MKFeatureVisibility](./mkmarkerannotationview/titlevisibility.md)
   The visibility of the title text rendered beneath the marker balloon.
-- [var subtitleVisibility: MKFeatureVisibility](mkmarkerannotationview/subtitlevisibility.md)
+- [var subtitleVisibility: MKFeatureVisibility](./mkmarkerannotationview/subtitlevisibility.md)
   The visibility of the subtitle text rendered beneath the marker balloon.
-- [enum MKFeatureVisibility](mkfeaturevisibility.md)
+- [enum MKFeatureVisibility](./mkfeaturevisibility.md)
   Constants that indicate the visibility of different map features.
 ### Animating the Marker onto the Screen
-- [var animatesWhenAdded: Bool](mkmarkerannotationview/animateswhenadded.md)
+- [var animatesWhenAdded: Bool](./mkmarkerannotationview/animateswhenadded.md)
   A Boolean that indicates whether the marker animates into position onscreen.
 
 ## Relationships
 
 ### Inherits From
-- [MKAnnotationView](mkannotationview.md)
+- [MKAnnotationView](./mkannotationview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Annotating a Map with Custom Data](annotating-a-map-with-custom-data.md)
+### Location annotations
+- [Annotating a Map with Custom Data](./annotating-a-map-with-custom-data.md)
   Annotate a map with location-specific data using default and customized annotation views and callouts.
-- [class MKPointAnnotation](mkpointannotation.md)
+- [class MKPointAnnotation](./mkpointannotation.md)
   A string-based piece of location-specific data that you apply to a specific point on a map.
-- [class MKMapItemAnnotation](mkmapitemannotation.md)
+- [class MKMapItemAnnotation](./mkmapitemannotation.md)
   An annotation that represents a map item
-- [class MKPinAnnotationView](mkpinannotationview.md)
+- [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
 
 

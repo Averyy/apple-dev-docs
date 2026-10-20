@@ -1,12 +1,13 @@
 # init(session:name:)
 
 **Framework**: Open Directory  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a node object with a specified session and name.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,13 +16,19 @@ Creates a node object with a specified session and name.
 init(session inSession: ODSession!, name inName: String!) throws
 ```
 
+```objc
+- (instancetype) initWithSession:(ODSession *) inSession name:(NSString *) inName error:(NSError **) outError;
+```
+
 #### Return Value
 
 The created node object.
 
 #### Discussion
 
-> **Note**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -30,7 +37,8 @@ The created node object.
 
 ## See Also
 
-- [init(session: ODSession!, type: ODNodeType) throws](odnode/init(session:type:).md)
+### Creating and Initializing a Node
+- [init(session: ODSession!, type: ODNodeType) throws](./init%28session,type%29.md)
   Creates a node object with a specified session and type.
 
 

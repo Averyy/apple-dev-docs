@@ -1,7 +1,8 @@
 # valueType(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 6.0+
@@ -17,13 +18,18 @@
 func valueType(for dimension: NSTextBlock.Dimension) -> NSTextBlock.ValueType
 ```
 
+```objc
+- (NSTextBlockValueType) valueTypeForDimension:(NSTextBlockDimension) dimension;
+```
+
 ## See Also
 
-- [func setValue(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Dimension)](nstextblock/setvalue(_:type:for:).md)
-- [func value(for: NSTextBlock.Dimension) -> CGFloat](nstextblock/value(for:).md)
-- [func setContentWidth(CGFloat, type: NSTextBlock.ValueType)](nstextblock/setcontentwidth(_:type:).md)
-- [var contentWidth: CGFloat](nstextblock/contentwidth.md)
-- [var contentWidthValueType: NSTextBlock.ValueType](nstextblock/contentwidthvaluetype.md)
+### Setting content dimensions
+- [func setValue(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Dimension)](./setvalue%28_,type,for%29.md)
+- [func value(for: NSTextBlock.Dimension) -> CGFloat](./value%28for%29.md)
+- [func setContentWidth(CGFloat, type: NSTextBlock.ValueType)](./setcontentwidth%28_,type%29.md)
+- [var contentWidth: CGFloat](./contentwidth.md)
+- [var contentWidthValueType: NSTextBlock.ValueType](./contentwidthvaluetype.md)
 
 
 ---

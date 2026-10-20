@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of samples between temporal predictions.
 

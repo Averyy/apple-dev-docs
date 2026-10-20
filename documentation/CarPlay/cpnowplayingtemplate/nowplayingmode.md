@@ -1,7 +1,8 @@
 # nowPlayingMode
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently-active now playing mode. See @c CPNowPlayingMode.
 
@@ -14,6 +15,10 @@ The currently-active now playing mode. See @c CPNowPlayingMode.
 
 ```swift
 var nowPlayingMode: CPNowPlayingMode? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPNowPlayingMode * nowPlayingMode;
 ```
 
 

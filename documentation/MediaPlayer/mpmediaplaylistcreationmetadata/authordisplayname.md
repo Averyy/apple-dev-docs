@@ -1,7 +1,8 @@
 # authorDisplayName
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 App defined display name for the playlist.
 
@@ -17,15 +18,20 @@ App defined display name for the playlist.
 var authorDisplayName: String! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSString * authorDisplayName;
+```
+
 #### Discussion
 
 The system requires this property for 3rd party apps. Defaults to the app display name when not defined.
 
 ## See Also
 
-- [var descriptionText: String](mpmediaplaylistcreationmetadata/descriptiontext.md)
+### Metadata for a playlist
+- [var descriptionText: String](./descriptiontext.md)
   The descriptive text for the playlist.
-- [var name: String](mpmediaplaylistcreationmetadata/name.md)
+- [var name: String](./name.md)
   The playlist’s displayed name.
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable identifier that uniquely identifies this event.
 

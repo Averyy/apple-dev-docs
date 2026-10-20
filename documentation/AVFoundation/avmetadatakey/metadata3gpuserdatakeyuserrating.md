@@ -1,7 +1,8 @@
 # metadata3GPUserDataKeyUserRating
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the user rating.
 
@@ -20,35 +21,40 @@ A key that represents the user rating.
 static let metadata3GPUserDataKeyUserRating: AVMetadataKey
 ```
 
+```c
+extern AVMetadataKey const AVMetadata3GPUserDataKeyUserRating;
+```
+
 ## See Also
 
-- [static let metadata3GPUserDataKeyAlbumAndTrack: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyalbumandtrack.md)
+### 3GP user metadata keys
+- [static let metadata3GPUserDataKeyAlbumAndTrack: AVMetadataKey](./metadata3gpuserdatakeyalbumandtrack.md)
   A key that represents the text for the album and track titles.
-- [static let metadata3GPUserDataKeyAuthor: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyauthor.md)
+- [static let metadata3GPUserDataKeyAuthor: AVMetadataKey](./metadata3gpuserdatakeyauthor.md)
   A key that represents the author of the media.
-- [static let metadata3GPUserDataKeyCollection: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeycollection.md)
+- [static let metadata3GPUserDataKeyCollection: AVMetadataKey](./metadata3gpuserdatakeycollection.md)
   A key that represents the collection name for the media.
-- [static let metadata3GPUserDataKeyCopyright: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeycopyright.md)
+- [static let metadata3GPUserDataKeyCopyright: AVMetadataKey](./metadata3gpuserdatakeycopyright.md)
   A key that represents the copyright statement.
-- [static let metadata3GPUserDataKeyDescription: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeydescription.md)
+- [static let metadata3GPUserDataKeyDescription: AVMetadataKey](./metadata3gpuserdatakeydescription.md)
   A key that represents the description for the media.
-- [static let metadata3GPUserDataKeyGenre: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeygenre.md)
+- [static let metadata3GPUserDataKeyGenre: AVMetadataKey](./metadata3gpuserdatakeygenre.md)
   A key that represents the genre of the media.
-- [static let metadata3GPUserDataKeyKeywordList: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeykeywordlist.md)
+- [static let metadata3GPUserDataKeyKeywordList: AVMetadataKey](./metadata3gpuserdatakeykeywordlist.md)
   A key that represents the list of keywords for the media.
-- [static let metadata3GPUserDataKeyLocation: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeylocation.md)
+- [static let metadata3GPUserDataKeyLocation: AVMetadataKey](./metadata3gpuserdatakeylocation.md)
   A key that represents the location information for the media.
-- [static let metadata3GPUserDataKeyMediaClassification: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeymediaclassification.md)
+- [static let metadata3GPUserDataKeyMediaClassification: AVMetadataKey](./metadata3gpuserdatakeymediaclassification.md)
   A key that represents the classification of the media content.
-- [static let metadata3GPUserDataKeyMediaRating: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeymediarating.md)
+- [static let metadata3GPUserDataKeyMediaRating: AVMetadataKey](./metadata3gpuserdatakeymediarating.md)
   A key that represents the rating of the media content.
-- [static let metadata3GPUserDataKeyPerformer: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyperformer.md)
+- [static let metadata3GPUserDataKeyPerformer: AVMetadataKey](./metadata3gpuserdatakeyperformer.md)
   A key that represents information about the performer.
-- [static let metadata3GPUserDataKeyRecordingYear: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyrecordingyear.md)
+- [static let metadata3GPUserDataKeyRecordingYear: AVMetadataKey](./metadata3gpuserdatakeyrecordingyear.md)
   A key that represents the recording year for the media.
-- [static let metadata3GPUserDataKeyThumbnail: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeythumbnail.md)
+- [static let metadata3GPUserDataKeyThumbnail: AVMetadataKey](./metadata3gpuserdatakeythumbnail.md)
   A key that represents the media thumbnail.
-- [static let metadata3GPUserDataKeyTitle: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeytitle.md)
+- [static let metadata3GPUserDataKeyTitle: AVMetadataKey](./metadata3gpuserdatakeytitle.md)
   A key that represents the title for the media.
 
 

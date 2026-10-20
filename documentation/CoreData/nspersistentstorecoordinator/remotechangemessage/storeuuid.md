@@ -1,7 +1,8 @@
 # storeUUID
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID of the store that changed.
 

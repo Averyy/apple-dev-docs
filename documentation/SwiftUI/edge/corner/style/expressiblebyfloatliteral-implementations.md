@@ -1,11 +1,12 @@
 # ExpressibleByFloatLiteral Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(floatLiteral: Edge.Corner.Style.FloatLiteralType)](edge/corner/style/init(floatliteral:).md)
+- [init(floatLiteral: Edge.Corner.Style.FloatLiteralType)](./init%28floatliteral%29.md)
   Create a fixed corner style with a float value as its corner radius. This is a shorthand of writing `.fixed(value)`.
 
 

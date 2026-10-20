@@ -1,7 +1,8 @@
 # computeMean(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the mean of a metric and adds it to the aggregated results.
 
@@ -26,13 +27,14 @@ mutating func computeMean(of metric: Metric)
 
 ## See Also
 
-- [func computeMedian(of: Metric)](metricsaggregator/computemedian(of:).md)
+### Computing standard aggregations
+- [func computeMedian(of: Metric)](./computemedian%28of%29.md)
   Computes the median of a metric and adds it to the aggregated results.
-- [func computeMode(of: Metric)](metricsaggregator/computemode(of:).md)
+- [func computeMode(of: Metric)](./computemode%28of%29.md)
   Computes the mode of a metric and adds it to the aggregated results.
-- [func computeMinimum(of: Metric)](metricsaggregator/computeminimum(of:).md)
+- [func computeMinimum(of: Metric)](./computeminimum%28of%29.md)
   Computes the minimum value of a metric and adds it to the aggregated results.
-- [func computeMaximum(of: Metric)](metricsaggregator/computemaximum(of:).md)
+- [func computeMaximum(of: Metric)](./computemaximum%28of%29.md)
   Computes the maximum value of a metric and adds it to the aggregated results.
 
 

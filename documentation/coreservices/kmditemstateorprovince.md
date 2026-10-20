@@ -1,7 +1,8 @@
 # kMDItemStateOrProvince
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Identifies the province or state of origin according to guidelines established by the provider. For example, "CA", "Ontario", or "Sussex". A CFString.
 
@@ -12,6 +13,10 @@ Identifies the province or state of origin according to guidelines established b
 
 ```swift
 let kMDItemStateOrProvince: CFString!
+```
+
+```c
+const CFStringRef kMDItemStateOrProvince;
 ```
 
 

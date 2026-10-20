@@ -1,7 +1,8 @@
 # conjugate(_:count:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the complex conjugate of the values in a single-precision vector.
 
@@ -11,7 +12,7 @@ Calculates the complex conjugate of the values in a single-precision vector.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static func conjugate(_ splitComplex: DSPSplitComplex, count: Int, result: inout
 
 ## See Also
 
-- [static func conjugate(DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/conjugate(_:count:result:)-89mrk.md)
+### Single-Vector Complex Conjugation
+- [static func conjugate(DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](./conjugate%28_,count,result%29-89mrk.md)
   Calculates the complex conjugate of the values in a double-precision vector.
 
 

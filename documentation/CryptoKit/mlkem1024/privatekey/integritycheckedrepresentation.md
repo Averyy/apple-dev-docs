@@ -1,7 +1,8 @@
 # integrityCheckedRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integrity-checked representation of the private key.
 
@@ -26,9 +27,10 @@ This representation includes the seed value, and a hash of the corresponding pub
 
 ## See Also
 
-- [var publicKey: MLKEM1024.PublicKey](mlkem1024/privatekey/publickey.md)
+### Inspecting a private key’s properties
+- [var publicKey: MLKEM1024.PublicKey](./publickey.md)
   The corresponding public key.
-- [var seedRepresentation: Data](mlkem1024/privatekey/seedrepresentation.md)
+- [var seedRepresentation: Data](./seedrepresentation.md)
   The private key’s seed representation.
 
 

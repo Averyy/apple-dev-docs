@@ -1,7 +1,8 @@
 # fullName
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the full name of the identity.
 
@@ -14,27 +15,32 @@ Returns the full name of the identity.
 var fullName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * fullName;
+```
+
 #### Return Value
 
 The full name for the identity.
 
 ## See Also
 
-- [var aliases: [String]](cbidentity/aliases.md)
+### Getting Identity Attributes
+- [var aliases: [String]](./aliases.md)
   Returns an array of aliases (alternate names) for the identity.
-- [var authority: CBIdentityAuthority](cbidentity/authority.md)
+- [var authority: CBIdentityAuthority](./authority.md)
   Returns the identity authority where the identity is stored.
-- [var emailAddress: String?](cbidentity/emailaddress.md)
+- [var emailAddress: String?](./emailaddress.md)
   Returns the email address of an identity.
-- [var image: NSImage?](cbidentity/image.md)
+- [var image: NSImage?](./image.md)
   Returns the image associated with an identity.
-- [var isHidden: Bool](cbidentity/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   Returns a Boolean value indicating the state of the identity’s hidden property.
-- [func isMember(ofGroup: CBGroupIdentity) -> Bool](cbidentity/ismember(ofgroup:).md)
+- [func isMember(ofGroup: CBGroupIdentity) -> Bool](./ismember%28ofgroup%29.md)
   Returns a Boolean value indicating whether the identity is a member of the specified group.
-- [var posixName: String](cbidentity/posixname.md)
+- [var posixName: String](./posixname.md)
   Returns the POSIX name of the identity.
-- [var uuidString: String](cbidentity/uuidstring.md)
+- [var uuidString: String](./uuidstring.md)
   Returns the UUID of the identity as a string.
 
 

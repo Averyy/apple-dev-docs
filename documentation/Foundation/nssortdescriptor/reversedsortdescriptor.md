@@ -1,7 +1,8 @@
 # reversedSortDescriptor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a sort descriptor that reverses the sort order.
 
@@ -20,11 +21,16 @@ Returns a sort descriptor that reverses the sort order.
 var reversedSortDescriptor: Any { get }
 ```
 
+```objc
+@property (retain, readonly) id reversedSortDescriptor;
+```
+
 ## See Also
 
-- [func compare(Any, to: Any) -> ComparisonResult](nssortdescriptor/compare(_:to:).md)
+### Using Sort Descriptors
+- [func compare(Any, to: Any) -> ComparisonResult](./compare%28_,to%29.md)
   Returns a comparison result value that indicates the sort order of two objects.
-- [func allowEvaluation()](nssortdescriptor/allowevaluation.md)
+- [func allowEvaluation()](./allowevaluation%28%29.md)
   Forces a securely decoded sort descriptor to allow evaluation.
 
 

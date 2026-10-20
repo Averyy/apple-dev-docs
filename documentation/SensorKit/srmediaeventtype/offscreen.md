@@ -1,7 +1,8 @@
 # SRMediaEventType.offScreen
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that occurs when the media disappears from the screen.
 
@@ -16,9 +17,14 @@ An event that occurs when the media disappears from the screen.
 case offScreen
 ```
 
+```c
+SRMediaEventOffScreen
+```
+
 ## See Also
 
-- [SRMediaEventType.onScreen](srmediaeventtype/onscreen.md)
+### Event types
+- [SRMediaEventType.onScreen](./onscreen.md)
   An event that occurs when the media appears on the screen.
 
 

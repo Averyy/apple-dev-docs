@@ -1,7 +1,8 @@
 # timeSample(at:time:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the time-sampled value for the attribute at the given path at the specified time, or `nil` if none is authored at that time.
 
@@ -30,15 +31,16 @@ The authored sample, or `nil` if none exists at `time`.
 
 ## See Also
 
-- [func timeSamples(at: USDLayer.Path) -> Set<USDLayer.TimeCode>](usdlayer/timesamples(at:).md)
+### Working with time samples
+- [func timeSamples(at: USDLayer.Path) -> Set<USDLayer.TimeCode>](./timesamples%28at%29.md)
   Returns the time codes for which the attribute at the given path has authored time samples.
-- [var allTimeSamples: Set<USDLayer.TimeCode>](usdlayer/alltimesamples.md)
+- [var allTimeSamples: Set<USDLayer.TimeCode>](./alltimesamples.md)
   All time codes for which any attribute in the layer has an authored time sample.
-- [func setTimeSample(at: USDLayer.Path, time: USDLayer.TimeCode, value: USDValue)](usdlayer/settimesample(at:time:value:)-6t3qd.md)
+- [func setTimeSample(at: USDLayer.Path, time: USDLayer.TimeCode, value: USDValue)](./settimesample%28at,time,value%29-6t3qd.md)
   Sets the time-sampled value for the attribute at the given path at the specified time.
-- [func setTimeSample<T>(at: USDLayer.Path, time: USDLayer.TimeCode, value: T)](usdlayer/settimesample(at:time:value:)-3ot1j.md)
+- [func setTimeSample<T>(at: USDLayer.Path, time: USDLayer.TimeCode, value: T)](./settimesample%28at,time,value%29-3ot1j.md)
   Sets the time-sampled value for the attribute at the given path at the specified time, wrapping the typed value in a `USDValue`.
-- [func eraseTimeSample(at: USDLayer.Path, time: USDLayer.TimeCode)](usdlayer/erasetimesample(at:time:).md)
+- [func eraseTimeSample(at: USDLayer.Path, time: USDLayer.TimeCode)](./erasetimesample%28at,time%29.md)
   Erases the authored time sample at the given path and time.
 
 

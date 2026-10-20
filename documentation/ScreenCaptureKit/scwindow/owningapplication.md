@@ -1,7 +1,8 @@
 # owningApplication
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app that owns the window.
 
@@ -15,13 +16,18 @@ The app that owns the window.
 var owningApplication: SCRunningApplication? { get }
 ```
 
+```objc
+@property (readonly, nullable) SCRunningApplication * owningApplication;
+```
+
 ## See Also
 
-- [var windowID: CGWindowID](scwindow/windowid.md)
+### Identifying windows
+- [var windowID: CGWindowID](./windowid.md)
   The Core Graphics window identifier.
-- [var title: String?](scwindow/title.md)
+- [var title: String?](./title.md)
   The string that displays in a window’s title bar.
-- [var windowLayer: Int](scwindow/windowlayer.md)
+- [var windowLayer: Int](./windowlayer.md)
   The layer of the window relative to other windows.
 
 

@@ -1,7 +1,8 @@
 # GridLayout.Cache
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A stateful grid layout algorithm.
 

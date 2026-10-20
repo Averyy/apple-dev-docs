@@ -1,6 +1,7 @@
 # Adopting Wi-Fi Aware
 
-**Framework**: Wi-Fi Aware
+**Framework**: Wi-Fi Aware  
+**Role**: Article
 
 Add entitlements and declare your app’s services.
 
@@ -15,7 +16,7 @@ If you intend your app to use Wi-Fi Aware capabilities, you need to add the `com
 | `Publish` | Publish a service and allow incoming connections. |
 | `Subscribe` | Subscribe to a service and make outgoing connections. |
 
-#### Declare Services
+#### Declare services
 
 Services are the specific functionality and protocols that your app can either provide to other devices or consume from other devices. There are two supported service roles in Wi-Fi Aware:
 
@@ -33,7 +34,7 @@ Wi-Fi Aware can support multiple services simultaneously, and can also act as a 
 
 Declare the services you want to use with the WiFiAwareServices key in your app’s Information property list. The key’s value is the dictionary where *keys* are names of services your app uses and *values* are dictionaries of service configuration information, which is in the Info pane of the target editor in Xcode.
 
-Each key under the `WiFiAwareServices` entry is the fully qualified name of a service as it’s sent over the air. It’s populated in the `name` field of the resulting [`WAPublishableService`](wapublishableservice.md) and [`WASubscribableService`](wasubscribableservice.md) structures in the API. For a service name to be valid, it must conform to the rules in [`RFC 6763`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and [`RFC 6335`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6335#section-5.1).
+Each key under the `WiFiAwareServices` entry is the fully qualified name of a service as it’s sent over the air. It’s populated in the `name` field of the resulting [`WAPublishableService`](./wapublishableservice.md) and [`WASubscribableService`](./wasubscribableservice.md) structures in the API. For a service name to be valid, it must conform to the rules in [RFC 6763](https://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and [RFC 6335](https://datatracker.ietf.org/doc/html/rfc6335#section-5.1).
 
 The service string needs to have a unique name that:
 
@@ -57,7 +58,7 @@ The following examples show service names that follow the naming conventions:
 
 Use the exact same name in the `Info.plist`. Invalid service names in the `Info.plist` cause your app to crash.
 
-##### Configure a Service
+##### Configure a service
 
 For each service name key in the `WiFiAwareServices` dictionary, there’s a corresponding value dictionary. This dictionary contains a set of properties that configure each individual service. The configuration includes whether the service is published, subscribed, or both:
 
@@ -91,19 +92,20 @@ The following is an example of an `Info.plist` that declares a single service `_
 </plist>
 ```
 
-##### Access Api Services
+##### Access API services
 
-After you declare the services your app uses in `Info.plist`, your app can access those services with the Wi-Fi Aware API. For each `Publishable` service, the system creates a [`WAPublishableService`](wapublishableservice.md) available in [`allServices`](wapublishableservice/allservices.md). Similarly, for each `Subscribable` service, the system creates a [`WASubscribableService`](wasubscribableservice.md) available in [`allServices`](wasubscribableservice/allservices.md).
+After you declare the services your app uses in `Info.plist`, your app can access those services with the Wi-Fi Aware API. For each `Publishable` service, the system creates a [`WAPublishableService`](./wapublishableservice.md) available in [`allServices`](./wapublishableservice/allservices.md). Similarly, for each `Subscribable` service, the system creates a [`WASubscribableService`](./wasubscribableservice.md) available in [`allServices`](./wasubscribableservice/allservices.md).
 
 ## See Also
 
-- [Building peer-to-peer apps](building-peer-to-peer-apps.md)
+### Essentials
+- [Building peer-to-peer apps](./building-peer-to-peer-apps.md)
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
-- [Connecting devices for peer-to-peer Wi-Fi](connecting-paired-devices.md)
+- [Connecting devices for peer-to-peer Wi-Fi](./connecting-paired-devices.md)
   Make outgoing and accept incoming secure connections with paired devices.
-- [com.apple.developer.wifi-aware](../bundleresources/entitlements/com.apple.developer.wifi-aware.md)
+- [com.apple.developer.wifi-aware](../BundleResources/entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
-- [WiFiAwareServices](../bundleresources/information-property-list/wifiawareservices.md)
+- [WiFiAwareServices](../BundleResources/information-property-list/wifiawareservices.md)
   Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 
 

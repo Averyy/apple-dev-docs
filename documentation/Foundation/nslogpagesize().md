@@ -1,7 +1,8 @@
 # NSLogPageSize()
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the binary log of the page size.
 
@@ -20,25 +21,30 @@ Returns the binary log of the page size.
 func NSLogPageSize() -> Int
 ```
 
+```c
+extern NSUInteger NSLogPageSize();
+```
+
 #### Return Value
 
 The binary log of the page size.
 
 ## See Also
 
-- [func NSAllocateMemoryPages(Int) -> UnsafeMutableRawPointer](nsallocatememorypages(_:).md)
+### Memory Management
+- [func NSAllocateMemoryPages(Int) -> UnsafeMutableRawPointer](./nsallocatememorypages%28_%29.md)
   Allocates a new block of memory.
-- [func NSCopyMemoryPages(UnsafeRawPointer, UnsafeMutableRawPointer, Int)](nscopymemorypages(_:_:_:).md)
+- [func NSCopyMemoryPages(UnsafeRawPointer, UnsafeMutableRawPointer, Int)](./nscopymemorypages%28_,_,_%29.md)
   Copies a block of memory.
-- [func NSDeallocateMemoryPages(UnsafeMutableRawPointer, Int)](nsdeallocatememorypages(_:_:).md)
+- [func NSDeallocateMemoryPages(UnsafeMutableRawPointer, Int)](./nsdeallocatememorypages%28_,_%29.md)
   Deallocates the specified block of memory.
-- [func NSPageSize() -> Int](nspagesize().md)
+- [func NSPageSize() -> Int](./nspagesize%28%29.md)
   Returns the number of bytes in a page.
-- [func NSRealMemoryAvailable() -> Int](nsrealmemoryavailable().md)
+- [func NSRealMemoryAvailable() -> Int](./nsrealmemoryavailable%28%29.md)
   Returns information about the user’s system.
-- [func NSRoundDownToMultipleOfPageSize(Int) -> Int](nsrounddowntomultipleofpagesize(_:).md)
+- [func NSRoundDownToMultipleOfPageSize(Int) -> Int](./nsrounddowntomultipleofpagesize%28_%29.md)
   Returns the specified number of bytes rounded down to a multiple of the page size.
-- [func NSRoundUpToMultipleOfPageSize(Int) -> Int](nsrounduptomultipleofpagesize(_:).md)
+- [func NSRoundUpToMultipleOfPageSize(Int) -> Int](./nsrounduptomultipleofpagesize%28_%29.md)
   Returns the specified number of bytes rounded up to a multiple of the page size.
 
 

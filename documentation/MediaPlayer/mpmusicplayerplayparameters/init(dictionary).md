@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new play parameters object using information from MusicKit.
 
@@ -16,6 +17,10 @@ Returns a new play parameters object using information from MusicKit.
 
 ```swift
 init?(dictionary: [String : Any])
+```
+
+```objc
+- (instancetype) initWithDictionary:(NSDictionary<NSString *,id> *) dictionary;
 ```
 
 #### Return Value

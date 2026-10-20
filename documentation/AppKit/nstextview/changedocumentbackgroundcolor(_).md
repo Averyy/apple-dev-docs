@@ -1,12 +1,13 @@
 # changeDocumentBackgroundColor(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method used to set the background color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ An action method used to set the background color.
 func changeDocumentBackgroundColor(_ sender: Any?)
 ```
 
+```objc
+- (void) changeDocumentBackgroundColor:(id) sender;
+```
+
 #### Discussion
 
-This method gets the new color by sending a [`color`](nscolorpanel/color.md) message to  `sender`.
+This method gets the new color by sending a [`color`](../nscolorpanel/color.md) message to  `sender`.
 
-This will only set the background color if [`allowsDocumentBackgroundColorChange`](nstextview/allowsdocumentbackgroundcolorchange.md)returns [`true`](https://developer.apple.com/documentation/swift/true).
+This will only set the background color if [`allowsDocumentBackgroundColorChange`](./allowsdocumentbackgroundcolorchange.md)returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -26,11 +31,12 @@ This will only set the background color if [`allowsDocumentBackgroundColorChange
 
 ## See Also
 
-- [var backgroundColor: NSColor](nstextview/backgroundcolor.md)
+### Setting graphics attributes
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The receiver’s background color.
-- [var drawsBackground: Bool](nstextview/drawsbackground.md)
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value that indicates whether the receiver draws its background.
-- [var allowsDocumentBackgroundColorChange: Bool](nstextview/allowsdocumentbackgroundcolorchange.md)
+- [var allowsDocumentBackgroundColorChange: Bool](./allowsdocumentbackgroundcolorchange.md)
   A Boolean value that indicates whether the receiver allows its background color to change.
 
 

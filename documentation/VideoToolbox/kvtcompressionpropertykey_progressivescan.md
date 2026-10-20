@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_ProgressiveScan
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether the DV video stream should have the progressive flag set.
 
@@ -19,21 +20,26 @@ A Boolean value indicating whether the DV video stream should have the progressi
 let kVTCompressionPropertyKey_ProgressiveScan: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_ProgressiveScan;
+```
+
 #### Discussion
 
-This property is supported by the DV25/50 family of encoders. If false, content is encoded as interlaced. If true, content is encoded as progressive. The value of this property fixes the [`kVTCompressionPropertyKey_FieldCount`](kvtcompressionpropertykey_fieldcount.md) and [`kVTCompressionPropertyKey_FieldDetail`](kvtcompressionpropertykey_fielddetail.md) properties.
+This property is supported by the DV25/50 family of encoders. If false, content is encoded as interlaced. If true, content is encoded as progressive. The value of this property fixes the [`kVTCompressionPropertyKey_FieldCount`](./kvtcompressionpropertykey_fieldcount.md) and [`kVTCompressionPropertyKey_FieldDetail`](./kvtcompressionpropertykey_fielddetail.md) properties.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_AspectRatio16x9: CFString](kvtcompressionpropertykey_aspectratio16x9.md)
+### Clean Aperture and Pixel Aspect Ratio
+- [let kVTCompressionPropertyKey_AspectRatio16x9: CFString](./kvtcompressionpropertykey_aspectratio16x9.md)
   A Boolean value indicating whether the DV video stream should have the 16x9 flag set.
-- [let kVTCompressionPropertyKey_CleanAperture: CFString](kvtcompressionpropertykey_cleanaperture.md)
+- [let kVTCompressionPropertyKey_CleanAperture: CFString](./kvtcompressionpropertykey_cleanaperture.md)
   The clean aperture for encoded frames.
-- [let kVTCompressionPropertyKey_FieldCount: CFString](kvtcompressionpropertykey_fieldcount.md)
+- [let kVTCompressionPropertyKey_FieldCount: CFString](./kvtcompressionpropertykey_fieldcount.md)
   The field count indicating whether the frames should be encoded progressive (1) or interlaced (2).
-- [let kVTCompressionPropertyKey_FieldDetail: CFString](kvtcompressionpropertykey_fielddetail.md)
+- [let kVTCompressionPropertyKey_FieldDetail: CFString](./kvtcompressionpropertykey_fielddetail.md)
   Field ordering for encoded interlaced frames.
-- [let kVTCompressionPropertyKey_PixelAspectRatio: CFString](kvtcompressionpropertykey_pixelaspectratio.md)
+- [let kVTCompressionPropertyKey_PixelAspectRatio: CFString](./kvtcompressionpropertykey_pixelaspectratio.md)
   The pixel aspect ratio for encoded frames.
 
 

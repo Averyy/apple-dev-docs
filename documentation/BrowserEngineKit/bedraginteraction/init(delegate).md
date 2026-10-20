@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a drag interaction and assigns its delegate.
 
@@ -13,6 +14,10 @@ Creates a drag interaction and assigns its delegate.
 
 ```swift
 init(delegate: any BEDragInteractionDelegate)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<BEDragInteractionDelegate>) delegate;
 ```
 
 

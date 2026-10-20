@@ -1,7 +1,8 @@
 # CLLocationDistance
 
 **Framework**: Core Location  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A distance in meters from an existing location.
 
@@ -20,19 +21,24 @@ A distance in meters from an existing location.
 typealias CLLocationDistance = Double
 ```
 
+```c
+typedef double CLLocationDistance;
+```
+
 ## See Also
 
-- [var coordinate: CLLocationCoordinate2D](cllocation/coordinate.md)
+### Getting the location attributes
+- [var coordinate: CLLocationCoordinate2D](./cllocation/coordinate.md)
   The geographical coordinate information.
-- [var altitude: CLLocationDistance](cllocation/altitude.md)
+- [var altitude: CLLocationDistance](./cllocation/altitude.md)
   The altitude above mean sea level associated with a location, measured in meters.
-- [var ellipsoidalAltitude: CLLocationDistance](cllocation/ellipsoidalaltitude.md)
+- [var ellipsoidalAltitude: CLLocationDistance](./cllocation/ellipsoidalaltitude.md)
   The altitude as a height above the World Geodetic System 1984 (WGS84) ellipsoid, measured in meters.
-- [var floor: CLFloor?](cllocation/floor.md)
+- [var floor: CLFloor?](./cllocation/floor.md)
   The logical floor of the building in which the user is located.
-- [var timestamp: Date](cllocation/timestamp.md)
+- [var timestamp: Date](./cllocation/timestamp.md)
   The time at which this location was determined.
-- [var sourceInformation: CLLocationSourceInformation?](cllocation/sourceinformation.md)
+- [var sourceInformation: CLLocationSourceInformation?](./cllocation/sourceinformation.md)
   Information about the source that provides the location.
 
 

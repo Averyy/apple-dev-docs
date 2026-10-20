@@ -1,7 +1,8 @@
 # numericCast(_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the given integer as the equivalent value in a different integer type.
 

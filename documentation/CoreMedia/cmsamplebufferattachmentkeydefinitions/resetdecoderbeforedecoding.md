@@ -1,7 +1,8 @@
 # resetDecoderBeforeDecoding
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates whether the sample buffer should be reset before decoding.
 

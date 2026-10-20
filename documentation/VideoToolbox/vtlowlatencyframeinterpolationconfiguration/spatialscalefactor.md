@@ -1,7 +1,8 @@
 # spatialScaleFactor
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configured spatial scale factor as an integer.
 
@@ -19,19 +20,24 @@ Configured spatial scale factor as an integer.
 var spatialScaleFactor: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger spatialScaleFactor;
+```
+
 ## See Also
 
-- [var frameWidth: Int](vtlowlatencyframeinterpolationconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frames in pixels.
-- [var frameHeight: Int](vtlowlatencyframeinterpolationconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frames in pixels.
-- [var numberOfInterpolatedFrames: Int](vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes.md)
+- [var numberOfInterpolatedFrames: Int](./numberofinterpolatedframes.md)
   Number of uniformly spaced frames for which you configured the processor.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var supportedPixelFormats: [OSType]](vtlowlatencyframeinterpolationconfiguration/supportedpixelformats.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 
 
 ---

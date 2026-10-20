@@ -1,7 +1,8 @@
 # FilledColumn.Element
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the column’s elements that defines an associated type for the bidirectional collection protocol.
 
@@ -22,11 +23,12 @@ typealias Element = Base.WrappedElement
 
 #### Discussion
 
-See [`BidirectionalCollection`](https://developer.apple.com/documentation/swift/bidirectionalcollection) for more information.
+See [`BidirectionalCollection`](../../Swift/bidirectionalcollection.md) for more information.
 
 ## See Also
 
-- [FilledColumn.WrappedElement](filledcolumn/wrappedelement.md)
+### Supporting Types
+- [FilledColumn.WrappedElement](./wrappedelement.md)
   The type of the column’s elements that defines an associated type for the optional column protocol.
 
 

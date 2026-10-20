@@ -1,7 +1,8 @@
 # mathFloatingPointFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The FP32 math functions Metal uses.
 
@@ -19,29 +20,34 @@ The FP32 math functions Metal uses.
 var mathFloatingPointFunctions: MTLMathFloatingPointFunctions { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMathFloatingPointFunctions mathFloatingPointFunctions;
+```
+
 ## Topics
 
 ### Supporting types
-- [enum MTLMathFloatingPointFunctions](mtlmathfloatingpointfunctions.md)
+- [enum MTLMathFloatingPointFunctions](../mtlmathfloatingpointfunctions.md)
   Indicates which FP32 math functions Metal uses.
 
 ## See Also
 
-- [var enableLogging: Bool](mtlcompileoptions/enablelogging.md)
+### Configuring the compiler options
+- [var enableLogging: Bool](./enablelogging.md)
   A Boolean value that enables shader logging.
-- [var mathMode: MTLMathMode](mtlcompileoptions/mathmode.md)
+- [var mathMode: MTLMathMode](./mathmode.md)
   An indication of whether the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
-- [var preserveInvariance: Bool](mtlcompileoptions/preserveinvariance.md)
+- [var preserveInvariance: Bool](./preserveinvariance.md)
   A Boolean value that indicates whether the compiler compiles vertex shaders conservatively to generate consistent position calculations.
-- [var languageVersion: MTLLanguageVersion](mtlcompileoptions/languageversion.md)
+- [var languageVersion: MTLLanguageVersion](./languageversion.md)
   The language version for interpreting the library source code.
-- [var preprocessorMacros: [String : NSObject]?](mtlcompileoptions/preprocessormacros.md)
+- [var preprocessorMacros: [String : NSObject]?](./preprocessormacros.md)
   A list of preprocessor macros to apply when compiling the library source.
-- [var optimizationLevel: MTLLibraryOptimizationLevel](mtlcompileoptions/optimizationlevel.md)
+- [var optimizationLevel: MTLLibraryOptimizationLevel](./optimizationlevel.md)
   An option that tells the compiler what to prioritize when it compiles Metal shader code.
-- [var libraries: [any MTLDynamicLibrary]?](mtlcompileoptions/libraries.md)
+- [var libraries: [any MTLDynamicLibrary]?](./libraries.md)
   An array of dynamic libraries the Metal compiler links against.
-- [var fastMathEnabled: Bool](mtlcompileoptions/fastmathenabled.md)
+- [var fastMathEnabled: Bool](./fastmathenabled.md)
   A Boolean value that indicates whether the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
 
 

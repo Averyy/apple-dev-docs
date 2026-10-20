@@ -1,7 +1,8 @@
 # MapOverlaySelectionEvent
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event object that the map view dispatches when someone selects or deselects an overlay.
 
@@ -10,36 +11,37 @@ An event object that the map view dispatches when someone selects or deselects a
 
 ## Declaration
 
-```swift
+```
 class MapOverlaySelectionEvent extends Event
 ```
 
 #### Discussion
 
-[`Map`](map.md) dispatches a [`MapOverlaySelectionEvent`](mapoverlayselectionevent.md) when someone selects or deselects an overlay. The event type can be `select` or `deselect`.
+[`Map`](./map.md) dispatches a [`MapOverlaySelectionEvent`](./mapoverlayselectionevent.md) when someone selects or deselects an overlay. The event type can be `select` or `deselect`.
 
 ## Topics
 
 ### Instance Properties
-- [overlay](mapoverlayselectionevent/overlay.md)
+- [overlay](./mapoverlayselectionevent/overlay.md)
   The overlay that the framework selected or deselected.
 
 ## Relationships
 
 ### Inherits From
-- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
+- Event
 
 ## See Also
 
-- [class MapEvent](mapevent.md)
+### Map events
+- [class MapEvent](./mapevent.md)
   An object that represents a gesture the framework recognized on the map.
-- [class MapAnnotationDragEvent](mapannotationdragevent.md)
+- [class MapAnnotationDragEvent](./mapannotationdragevent.md)
   An event object that the map object dispatches when someone drags an annotation.
-- [class MapAnnotationSelectionEvent](mapannotationselectionevent.md)
+- [class MapAnnotationSelectionEvent](./mapannotationselectionevent.md)
   An event object that the map object dispatches when someone selects or deselects an annotation.
-- [class MapUserLocationChangeEvent](mapuserlocationchangeevent.md)
+- [class MapUserLocationChangeEvent](./mapuserlocationchangeevent.md)
   An event that represents a change in a person’s location.
-- [class MapUserLocationErrorEvent](mapuserlocationerrorevent.md)
+- [class MapUserLocationErrorEvent](./mapuserlocationerrorevent.md)
   An event that indicates that MapKit JS is unable to acquire a person’s location.
 
 

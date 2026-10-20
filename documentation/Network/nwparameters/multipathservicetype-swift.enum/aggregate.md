@@ -1,7 +1,8 @@
 # NWParameters.MultipathServiceType.aggregate
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enable multipath to maximize bandwidth across multiple interfaces.
 
@@ -22,11 +23,12 @@ case aggregate
 
 ## See Also
 
-- [NWParameters.MultipathServiceType.disabled](nwparameters/multipathservicetype-swift.enum/disabled.md)
+### Multipath Service Types
+- [NWParameters.MultipathServiceType.disabled](./disabled.md)
   Disable multipath.
-- [NWParameters.MultipathServiceType.handover](nwparameters/multipathservicetype-swift.enum/handover.md)
+- [NWParameters.MultipathServiceType.handover](./handover.md)
   Enable multipath, but only use other interfaces when the primary interface is lost.
-- [NWParameters.MultipathServiceType.interactive](nwparameters/multipathservicetype-swift.enum/interactive.md)
+- [NWParameters.MultipathServiceType.interactive](./interactive.md)
   Enable multipath to use other interfaces when the primary interface encounters loss or delay.
 
 

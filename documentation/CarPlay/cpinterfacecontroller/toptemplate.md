@@ -1,7 +1,8 @@
 # topTemplate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The top-most template in the navigation hierarchy.
 
@@ -16,11 +17,16 @@ The top-most template in the navigation hierarchy.
 var topTemplate: CPTemplate? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) CPTemplate * topTemplate;
+```
+
 ## See Also
 
-- [var rootTemplate: CPTemplate](cpinterfacecontroller/roottemplate.md)
+### Accessing Templates
+- [var rootTemplate: CPTemplate](./roottemplate.md)
   The root template in the navigation hierarchy.
-- [var templates: [CPTemplate]](cpinterfacecontroller/templates.md)
+- [var templates: [CPTemplate]](./templates.md)
   The contents of the navigation hierarchy.
 
 

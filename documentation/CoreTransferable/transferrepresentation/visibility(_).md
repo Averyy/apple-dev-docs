@@ -1,7 +1,8 @@
 # visibility(_:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the kinds of apps and processes that can see an item in transit.
 

@@ -1,7 +1,8 @@
 # dimInactiveLayers
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that dims inactive layers in a symbol-based image.
 
@@ -26,7 +27,8 @@ This effect draws inactive layers with reduced, but nonzero, opacity.
 
 ## See Also
 
-- [var hideInactiveLayers: VariableColorSymbolEffect](variablecolorsymboleffect/hideinactivelayers.md)
+### Affecting inactive layers
+- [var hideInactiveLayers: VariableColorSymbolEffect](./hideinactivelayers.md)
   An effect that hides inactive layers in a symbol-based image.
 
 

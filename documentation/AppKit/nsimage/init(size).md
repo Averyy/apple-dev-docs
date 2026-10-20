@@ -1,17 +1,22 @@
 # init(size:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object with the specified dimensions.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(size: NSSize)
+```
+
+```objc
+- (instancetype) initWithSize:(NSSize) size;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ After using this method to initialize an image object, you are expected to provi
 
 ## See Also
 
-- [var size: NSSize](nsimage/size.md)
+### Related Documentation
+- [var size: NSSize](./size.md)
   The size of the image.
 
 

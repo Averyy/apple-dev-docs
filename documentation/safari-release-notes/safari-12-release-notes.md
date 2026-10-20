@@ -1,6 +1,7 @@
 # Safari 12 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 17, 2018 — Version 12 (14606.1.36)
 
@@ -14,7 +15,7 @@ New features of Safari 12 include:
 - **Automatic Strong Passwords.** Automatically generate strong, unique passwords when you sign up for accounts or change passwords on websites.
 - **3D & AR Model Viewer.** View 3D models or jump into an AR viewing experience in Safari on iOS 12.
 
-##### Web on Watchos
+##### Web on watchOS
 
 ###### New Features
 
@@ -39,14 +40,14 @@ New features of Safari 12 include:
 - Added support for viewing USDZ models embedded in websites in 3D and AR.
 - Added support for viewing HTML elements in full screen on iPad.
 
-##### Css and Text
+##### CSS and Text
 
 ###### New Features
 
 - Added support for font collections in WOFF2 and TTC files.
 - Added support for defining letterforms in OpenType fonts using SVG.
 - Added support for the `font-display` CSS property to declaratively control web font loading behaviors.
-- Improved HSL and HSLA parsing to match the [`CSS Color Module Level 4 specification`](https://developer.apple.comhttps://drafts.csswg.org/css-color-4/#the-hsl-notation).
+- Improved HSL and HSLA parsing to match the [CSS Color Module Level 4 specification](https://drafts.csswg.org/css-color-4/#the-hsl-notation).
 
 ##### Security and Privacy
 
@@ -61,7 +62,7 @@ New features of Safari 12 include:
 ###### New Features
 
 - Added support for debugging WebGL shaders in the Canvas tab.
-- Updated Safari WebDriver to implement the protocol as defined by the [`W3C WebDriver`](https://developer.apple.comhttps://www.w3.org/TR/webdriver/) specification
+- Updated Safari WebDriver to implement the protocol as defined by the [W3C WebDriver](https://www.w3.org/TR/webdriver/) specification
 
 ##### Safari Extensions
 
@@ -71,7 +72,7 @@ New features of Safari 12 include:
 - Disabled `canLoad` Safari Extensions on first launch. Safari Extensions that make use of the `canLoad` event are disabled on first launch and users are notified with a warning that their use is harmful to performance. These extensions can be enabled in Safari Extensions preferences. Developers are encouraged to move to Content Blocker Extensions.
 - Removed Support for Developer-signed `.safariextz` Safari Extensions in Safari 12 on macOS. They no longer appear in Safari preferences and cannot be enabled. If a user has one of these extensions installed, they receive a warning notification on first launch.
 
-##### Legacy Npapi Plugins
+##### Legacy NPAPI Plugins
 
 ###### Deprecations
 
@@ -79,7 +80,8 @@ New features of Safari 12 include:
 
 ## See Also
 
-- [Safari 12.1 Release Notes](safari-12_1-release-notes.md)
+### Version 12
+- [Safari 12.1 Release Notes](./safari-12_1-release-notes.md)
   Released March 25, 2019 — Version 12.1 (14607.1.40)
 
 

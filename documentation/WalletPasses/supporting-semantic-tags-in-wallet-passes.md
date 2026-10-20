@@ -1,6 +1,7 @@
 # Supporting semantic tags in Wallet passes
 
-**Framework**: Wallet Passes
+**Framework**: Wallet Passes  
+**Role**: Article
 
 Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
 
@@ -8,17 +9,17 @@ Enable the system to offer suggestions for actions related to passes by adding m
 
 You can augment the user-visible information on Wallet passes with machine-readable metadata known as *semantic tags*. The metadata in semantic tags helps the system better understand Wallet passes and suggest relevant actions for the user to take on their installed passes.
 
-You can add semantic tags to all types of Wallet passes, but some tags only apply to specific types, such as event tickets, boarding passes, and store cards. For a full list of all tags and their associated pass types, see [`SemanticTags`](semantictags.md).
+You can add semantic tags to all types of Wallet passes, but some tags only apply to specific types, such as event tickets, boarding passes, and store cards. For a full list of all tags and their associated pass types, see [`SemanticTags`](./semantictags.md).
 
-##### Add Semantic Tags
+##### Add semantic tags
 
-To add machine-readable semantic tags to Wallet passes, add a `semantics` dictionary at the root of the [`Pass`](pass.md) dictionary or as a top-level key in any of these dictionaries:
+To add machine-readable semantic tags to Wallet passes, add a `semantics` dictionary at the root of the [`Pass`](./pass.md) dictionary or as a top-level key in any of these dictionaries:
 
-- [`PassFields.HeaderFields`](passfields/headerfields-data.dictionary.md)
-- [`PassFields.PrimaryFields`](passfields/primaryfields-data.dictionary.md)
-- [`PassFields.SecondaryFields`](passfields/secondaryfields-data.dictionary.md)
-- [`PassFields.AuxiliaryFields`](passfields/auxiliaryfields-data.dictionary.md)
-- [`PassFields.BackFields`](passfields/backfields-data.dictionary.md)
+- [`PassFields.HeaderFields`](./passfields/headerfields-data.dictionary.md)
+- [`PassFields.PrimaryFields`](./passfields/primaryfields-data.dictionary.md)
+- [`PassFields.SecondaryFields`](./passfields/secondaryfields-data.dictionary.md)
+- [`PassFields.AuxiliaryFields`](./passfields/auxiliaryfields-data.dictionary.md)
+- [`PassFields.BackFields`](./passfields/backfields-data.dictionary.md)
 
 The operating system uses the semantic tag data to offer suggestions for actions related to a relevant pass. For example, semantic tags in a movie pass could take effect when the user arrives in the theater at the scheduled time, offering a Siri suggestion to enable Do Not Disturb mode for the duration of the film.
 
@@ -29,7 +30,7 @@ For the system to send the suggestion to set Do Not Disturb, you must set `event
 - `eventEndDate`
 - `venueLocation`
 
-You can add semantic data to the [`Pass`](pass.md) dictionary in a single `semantictags` dictionary, like this:
+You can add semantic data to the [`Pass`](./pass.md) dictionary in a single `semantictags` dictionary, like this:
 
 ```javascript
 "semantics": {
@@ -58,7 +59,7 @@ You can add semantic data to the [`Pass`](pass.md) dictionary in a single `seman
 }
 ```
 
-Alternatively, you can add semantic data to enhance the individual fields in a pass. For example, you could add the `eventType` and `silenceRequested` keys to a `semantics` dictionary in the top-level [`Pass`](pass.md) dictionary:
+Alternatively, you can add semantic data to enhance the individual fields in a pass. For example, you could add the `eventType` and `silenceRequested` keys to a `semantics` dictionary in the top-level [`Pass`](./pass.md) dictionary:
 
 ```javascript
   "semantics": {
@@ -67,7 +68,7 @@ Alternatively, you can add semantic data to enhance the individual fields in a p
   }
 ```
 
-Then, because the primary field on this movie ticket pass shows the event and venue details, you could add the `eventName`, `venueName`, and `venueLocation` keys to the `semantics` dictionary in [`PassFields.PrimaryFields`](passfields/primaryfields-data.dictionary.md):
+Then, because the primary field on this movie ticket pass shows the event and venue details, you could add the `eventName`, `venueName`, and `venueLocation` keys to the `semantics` dictionary in [`PassFields.PrimaryFields`](./passfields/primaryfields-data.dictionary.md):
 
 ```javascript
 "primaryFields": [
@@ -104,15 +105,16 @@ A secondary field on this pass shows the length of the movie. Add the `eventStar
 
 ```
 
-Where you choose to add the semantic tags, whether to the top-level [`Pass`](pass.md) dictionary or to a field dictionary, doesn’t affect their functionality. Add them wherever is most convenient when generating your passes.
+Where you choose to add the semantic tags, whether to the top-level [`Pass`](./pass.md) dictionary or to a field dictionary, doesn’t affect their functionality. Add them wherever is most convenient when generating your passes.
 
 For the best user experience with your passes, add as much semantic data as you have for all possible semantic tags.
 
 ## See Also
 
-- [object SemanticTags](semantictags.md)
+### Adding system suggestions
+- [object SemanticTags](./semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
 
 

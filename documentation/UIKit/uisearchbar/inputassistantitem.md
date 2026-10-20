@@ -1,7 +1,8 @@
 # inputAssistantItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input assistant to use for configuring the keyboard’s shortcuts bar.
 
@@ -17,11 +18,15 @@ The input assistant to use for configuring the keyboard’s shortcuts bar.
 var inputAssistantItem: UITextInputAssistantItem { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UITextInputAssistantItem * inputAssistantItem;
+```
+
 #### Discussion
 
 When search is engaged on iPad, the shortcuts bar above the keyboard contains typing suggestions and may contain other controls for managing text. This property contains the object you use to configure the custom bar button items above the keyboard. The shortcuts bar is not available on iPhone or iPod Touch.
 
-For more information about how to configure shortcut items, see [`UITextInputAssistantItem`](uitextinputassistantitem.md).
+For more information about how to configure shortcut items, see [`UITextInputAssistantItem`](../uitextinputassistantitem.md).
 
 
 ---

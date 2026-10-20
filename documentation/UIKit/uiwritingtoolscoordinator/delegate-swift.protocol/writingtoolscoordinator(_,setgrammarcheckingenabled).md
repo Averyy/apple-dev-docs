@@ -1,7 +1,8 @@
 # writingToolsCoordinator(_:setGrammarCheckingEnabled:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the user chooses to disable grammar checking.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the user chooses to disable grammar checking.
 
 ```swift
 optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, setGrammarCheckingEnabled enabled: Bool)
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator setGrammarCheckingEnabled:(BOOL) enabled;
 ```
 
 #### Discussion

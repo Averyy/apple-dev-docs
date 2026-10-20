@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display mode used by the device view.
 
@@ -14,15 +15,20 @@ The display mode used by the device view.
 var mode: IKScannerDeviceViewDisplayMode { get set }
 ```
 
+```objc
+@property IKScannerDeviceViewDisplayMode mode;
+```
+
 #### Discussion
 
-The possible constants are described in [`IKScannerDeviceViewDisplayMode`](ikscannerdeviceviewdisplaymode.md).
+The possible constants are described in [`IKScannerDeviceViewDisplayMode`](../ikscannerdeviceviewdisplaymode.md).
 
 ## See Also
 
-- [var hasDisplayModeAdvanced: Bool](ikscannerdeviceview/hasdisplaymodeadvanced.md)
+### Setting the Device View’s Display Mode
+- [var hasDisplayModeAdvanced: Bool](./hasdisplaymodeadvanced.md)
   The property that determines whether the scanner view uses the advanced display mode.
-- [var hasDisplayModeSimple: Bool](ikscannerdeviceview/hasdisplaymodesimple.md)
+- [var hasDisplayModeSimple: Bool](./hasdisplaymodesimple.md)
   The property that determines whether the scanner view uses the simple display mode.
 
 

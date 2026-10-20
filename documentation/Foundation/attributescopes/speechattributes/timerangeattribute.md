@@ -1,7 +1,8 @@
 # AttributeScopes.SpeechAttributes.TimeRangeAttribute
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The time range in the source audio corresponding to the associated transcription text.
 
@@ -20,15 +21,15 @@ struct TimeRangeAttribute
 
 #### Overview
 
-> 💡 **Tip**: Use [`rangeOfAudioTimeRangeAttributes(intersecting:)`](attributedstring/rangeofaudiotimerangeattributes(intersecting:).md) to locate text corresponding to a source audio time range.
+> 💡 **Tip**: Use [`rangeOfAudioTimeRangeAttributes(intersecting:)`](../../attributedstring/rangeofaudiotimerangeattributes%28intersecting%29.md) to locate text corresponding to a source audio time range.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

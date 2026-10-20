@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the frame was captured.
 
@@ -15,17 +16,22 @@ The time at which the frame was captured.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 ## See Also
 
-- [var camera: ARCamera](arframe/camera.md)
+### Accessing camera data
+- [var camera: ARCamera](./camera.md)
   Information about the camera position, orientation, and imaging parameters used to capture the frame.
-- [var capturedImage: CVPixelBuffer](arframe/capturedimage.md)
+- [var capturedImage: CVPixelBuffer](./capturedimage.md)
   A pixel buffer containing the image captured by the camera.
-- [var cameraGrainIntensity: Float](arframe/cameragrainintensity.md)
+- [var cameraGrainIntensity: Float](./cameragrainintensity.md)
   A value that specifies the amount of grain present in the camera grain texture.
-- [var cameraGrainTexture: (any MTLTexture)?](arframe/cameragraintexture.md)
+- [var cameraGrainTexture: (any MTLTexture)?](./cameragraintexture.md)
   A tileable Metal texture created by ARKit to match the visual characteristics of the current video stream.
-- [var exifData: [String : Any]](arframe/exifdata.md)
+- [var exifData: [String : Any]](./exifdata.md)
   Auxiliary data for the captured image.
 
 

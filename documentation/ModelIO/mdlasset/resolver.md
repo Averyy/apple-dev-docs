@@ -1,7 +1,8 @@
 # resolver
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var resolver: (any MDLAssetResolver)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MDLAssetResolver> resolver;
 ```
 
 

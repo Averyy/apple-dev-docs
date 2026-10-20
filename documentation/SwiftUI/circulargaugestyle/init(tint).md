@@ -1,7 +1,8 @@
 # init(tint:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circular gauge that draws with a specified color.
 
@@ -15,9 +16,17 @@ nonisolated
 init(tint: Color)
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init(tint: Gradient)
+```
+
 ## See Also
 
-- [init()](circulargaugestyle/init.md)
+### Creating the gauge style
+- [init()](./init%28%29.md)
   Creates a circular gauge.
 
 

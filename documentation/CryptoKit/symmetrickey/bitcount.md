@@ -1,7 +1,8 @@
 # bitCount
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits in the key.
 

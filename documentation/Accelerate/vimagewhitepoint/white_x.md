@@ -1,18 +1,19 @@
 # white_x
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The white point `x` value according to the CIE 1931 color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The white point `x` value according to the CIE 1931 color space.
 var white_x: Float
 ```
 
+```c
+float white_x;
+```
+
 ## See Also
 
-- [var white_y: Float](vimagewhitepoint/white_y.md)
+### White point properties
+- [var white_y: Float](./white_y.md)
   The white point `y` value according to the CIE 1931 color space.
 
 

@@ -1,7 +1,8 @@
 # CollisionCastHit.TriangleHit
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information returned when ray intersects a triangle mesh.
 
@@ -22,23 +23,24 @@ struct TriangleHit
 ## Topics
 
 ### Instance Properties
-- [var faceIndex: Int](collisioncasthit/trianglehit-swift.struct/faceindex.md)
+- [var faceIndex: Int](./trianglehit-swift.struct/faceindex.md)
   The face index for the mesh face that that the ray hit.
-- [var uv: SIMD2<Float>](collisioncasthit/trianglehit-swift.struct/uv.md)
+- [var uv: SIMD2<Float>](./trianglehit-swift.struct/uv.md)
   The barycentric uv coordinate for where in the triangle the ray hit.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [struct CollisionCastHit](collisioncasthit.md)
+### Ray casting
+- [struct CollisionCastHit](../collisioncasthit.md)
   A hit result of a collision cast.
-- [enum CollisionCastQueryType](collisioncastquerytype.md)
+- [enum CollisionCastQueryType](../collisioncastquerytype.md)
   The kinds of ray and convex shape cast queries that you can make.
-- [struct PixelCastHit](pixelcasthit.md)
+- [struct PixelCastHit](../pixelcasthit.md)
 
 
 ---

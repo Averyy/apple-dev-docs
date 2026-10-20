@@ -1,7 +1,8 @@
 # GKError.Code.scoreNotSet
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t complete the requested operation because the system hasn’t set the score.
 
@@ -18,6 +19,10 @@ The system can’t complete the requested operation because the system hasn’t 
 
 ```swift
 case scoreNotSet
+```
+
+```c
+GKErrorScoreNotSet
 ```
 
 

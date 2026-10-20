@@ -1,7 +1,8 @@
 # NSToolbarItemGroup
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of subitems in a toolbar item.
 
@@ -17,13 +18,17 @@ A group of subitems in a toolbar item.
 class NSToolbarItemGroup
 ```
 
+```objc
+@interface NSToolbarItemGroup : NSToolbarItem
+```
+
 #### Overview
 
-An [`NSToolbarItemGroup`](nstoolbaritemgroup.md) represents a collection set of subitems in a toolbar that the system displays based on available space and settings that you specify. The system uses the views and labels of the subitems, but the parent’s attributes take precedence. This differs from other [`NSToolbarItem`](nstoolbaritem.md) objects because they’re attached — the user drags them together as a single item rather than separately.
+An [`NSToolbarItemGroup`](./nstoolbaritemgroup.md) represents a collection set of subitems in a toolbar that the system displays based on available space and settings that you specify. The system uses the views and labels of the subitems, but the parent’s attributes take precedence. This differs from other [`NSToolbarItem`](./nstoolbaritem.md) objects because they’re attached — the user drags them together as a single item rather than separately.
 
 If a subitem of the group has an action set on it, the group uses that action instead of its own when the user clicks or taps on that item. The system prefers the subitem’s action if it exists, otherwise it uses the group’s action.
 
-To configure an instance of [`NSToolbarItemGroup`](nstoolbaritemgroup.md), you first create the individual toolbar subitems:
+To configure an instance of [`NSToolbarItemGroup`](./nstoolbaritemgroup.md), you first create the individual toolbar subitems:
 
 ```objc
 NSToolbarItem *item1 = [[NSToolbarItem alloc] initWithItemIdentifier:@"Item1"];
@@ -58,60 +63,61 @@ If instead you set a view on the parent item, you get two labels with one shared
 ## Topics
 
 ### Creating grouped toolbar items
-- [convenience init(itemIdentifier: NSToolbarItem.Identifier, images: [UIImage], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)](nstoolbaritemgroup/init(itemidentifier:images:selectionmode:labels:target:action:).md)
+- [convenience init(itemIdentifier: NSToolbarItem.Identifier, images: [UIImage], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)](./nstoolbaritemgroup/init%28itemidentifier,images,selectionmode,labels,target,action%29.md)
   Creates a grouped toolbar item with images.
-- [convenience init(itemIdentifier: NSToolbarItem.Identifier, titles: [String], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)](nstoolbaritemgroup/init(itemidentifier:titles:selectionmode:labels:target:action:).md)
+- [convenience init(itemIdentifier: NSToolbarItem.Identifier, titles: [String], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)](./nstoolbaritemgroup/init%28itemidentifier,titles,selectionmode,labels,target,action%29.md)
   Creates a grouped toolbar item with labels.
 ### Working with subitems
-- [var subitems: [NSToolbarItem]](nstoolbaritemgroup/subitems.md)
+- [var subitems: [NSToolbarItem]](./nstoolbaritemgroup/subitems.md)
   The subitems of the grouped toolbar item.
-- [var selectedIndex: Int](nstoolbaritemgroup/selectedindex.md)
+- [var selectedIndex: Int](./nstoolbaritemgroup/selectedindex.md)
   The index value for the most recently selected subitem of a grouped toolbar item.
-- [func isSelected(at: Int) -> Bool](nstoolbaritemgroup/isselected(at:).md)
+- [func isSelected(at: Int) -> Bool](./nstoolbaritemgroup/isselected%28at%29.md)
   Indicates whether a specified index is currently selected.
-- [func setSelected(Bool, at: Int)](nstoolbaritemgroup/setselected(_:at:).md)
+- [func setSelected(Bool, at: Int)](./nstoolbaritemgroup/setselected%28_,at%29.md)
   Sets the selected state of a subitem in a grouped toolbar item.
 ### Configuring grouped toolbar items
-- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.property.md)
+- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](./nstoolbaritemgroup/controlrepresentation-swift.property.md)
   A value that represents how a toolbar displays a grouped toolbar item.
-- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
-- [var selectionMode: NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.property.md)
+- [NSToolbarItemGroup.ControlRepresentation](./nstoolbaritemgroup/controlrepresentation-swift.enum.md)
+- [var selectionMode: NSToolbarItemGroup.SelectionMode](./nstoolbaritemgroup/selectionmode-swift.property.md)
   The selection mode of the grouped toolbar item.
-- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+- [NSToolbarItemGroup.SelectionMode](./nstoolbaritemgroup/selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [var role: NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.property.md)
+- [var role: NSToolbarItemGroup.Role](./nstoolbaritemgroup/role-swift.property.md)
   The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
-- [NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.enum.md)
+- [NSToolbarItemGroup.Role](./nstoolbaritemgroup/role-swift.enum.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSToolbarItem](nstoolbaritem.md)
+- [NSToolbarItem](./nstoolbaritem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMenuItemValidation](./nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSValidatedUserInterfaceItem](./nsvalidateduserinterfaceitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSToolbarItem](nstoolbaritem.md)
+### Items
+- [class NSToolbarItem](./nstoolbaritem.md)
   A single item that appears in a window’s toolbar.
-- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
-- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+- [NSToolbarItemGroup.ControlRepresentation](./nstoolbaritemgroup/controlrepresentation-swift.enum.md)
+- [NSToolbarItemGroup.SelectionMode](./nstoolbaritemgroup/selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [class NSMenuToolbarItem](nsmenutoolbaritem.md)
+- [class NSMenuToolbarItem](./nsmenutoolbaritem.md)
   A control that presents a menu in a window’s toolbar.
-- [class NSSearchToolbarItem](nssearchtoolbaritem.md)
+- [class NSSearchToolbarItem](./nssearchtoolbaritem.md)
   A toolbar item that contains a search field optimized for performing text-based searches.
-- [class NSTrackingSeparatorToolbarItem](nstrackingseparatortoolbaritem.md)
+- [class NSTrackingSeparatorToolbarItem](./nstrackingseparatortoolbaritem.md)
   A toolbar separator that aligns with the vertical split view in the same window.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives Crash Detection events.
 
@@ -18,9 +19,14 @@ The object that receives Crash Detection events.
 weak var delegate: (any SACrashDetectionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, readwrite) id<SACrashDetectionDelegate> delegate;
+```
+
 ## See Also
 
-- [func requestAuthorization(completionHandler: (SAAuthorizationStatus, (any Error)?) -> Void)](sacrashdetectionmanager/requestauthorization(completionhandler:).md)
+### Requesting authorization
+- [func requestAuthorization(completionHandler: (SAAuthorizationStatus, (any Error)?) -> Void)](./requestauthorization%28completionhandler%29.md)
   Requests permission to access Crash Detection information.
 
 

@@ -1,7 +1,8 @@
 # interactive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The interactive dismiss behavior.
 
@@ -30,7 +31,8 @@ On iOS, dismissing a window using this behavior will dismiss it regardless of an
 
 ## See Also
 
-- [static let destructive: DismissBehavior](dismissbehavior/destructive.md)
+### Getting behaviors
+- [static let destructive: DismissBehavior](./destructive.md)
   The destructive dismiss behavior.
 
 

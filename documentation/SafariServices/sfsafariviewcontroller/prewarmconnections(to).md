@@ -1,7 +1,8 @@
 # prewarmConnections(to:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 15.0+
@@ -12,6 +13,10 @@
 
 ```swift
 class func prewarmConnections(to URLs: [URL]) -> SFSafariViewController.PrewarmingToken
+```
+
+```objc
++ (SFSafariViewControllerPrewarmingToken *) prewarmConnectionsToURLs:(NSArray<NSURL *> *) URLs;
 ```
 
 

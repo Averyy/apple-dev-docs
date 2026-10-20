@@ -1,7 +1,8 @@
 # CTSlicingManager.TrafficClass.video
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A traffic class for video data transmission.
 
@@ -22,19 +23,20 @@ The video traffic class provides quality-of-service characteristics suitable for
 
 ## See Also
 
-- [CTSlicingManager.TrafficClass.any](ctslicingmanager/trafficclass/any.md)
+### Traffic classes
+- [CTSlicingManager.TrafficClass.any](./any.md)
   A traffic class for general-purpose network traffic without specific QoS requirements.
-- [CTSlicingManager.TrafficClass.background](ctslicingmanager/trafficclass/background.md)
+- [CTSlicingManager.TrafficClass.background](./background.md)
   A traffic class for non-urgent background data transfers.
-- [CTSlicingManager.TrafficClass.responsiveData](ctslicingmanager/trafficclass/responsivedata.md)
+- [CTSlicingManager.TrafficClass.responsiveData](./responsivedata.md)
   A traffic class for interactive data that requires quick response times.
-- [CTSlicingManager.TrafficClass.avStreaming](ctslicingmanager/trafficclass/avstreaming.md)
+- [CTSlicingManager.TrafficClass.avStreaming](./avstreaming.md)
   A traffic class for audio and video streaming.
-- [CTSlicingManager.TrafficClass.responsiveAV](ctslicingmanager/trafficclass/responsiveav.md)
+- [CTSlicingManager.TrafficClass.responsiveAV](./responsiveav.md)
   A traffic class for real-time audio and video communication.
-- [CTSlicingManager.TrafficClass.voice](ctslicingmanager/trafficclass/voice.md)
+- [CTSlicingManager.TrafficClass.voice](./voice.md)
   A traffic class for voice communication with highest priority and lowest latency.
-- [CTSlicingManager.TrafficClass.signaling](ctslicingmanager/trafficclass/signaling.md)
+- [CTSlicingManager.TrafficClass.signaling](./signaling.md)
   A traffic class for network signaling and control messages.
 
 

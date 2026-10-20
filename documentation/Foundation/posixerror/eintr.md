@@ -1,7 +1,8 @@
 # EINTR
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interrupted system call.
 

@@ -1,7 +1,8 @@
 # BlendShapeWeightsComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that provides access to the current weights associated with all blend shape meshes on an entity.
 
@@ -21,7 +22,7 @@ struct BlendShapeWeightsComponent
 
 #### Overview
 
-You can access the weights associated with an entity’s blend shapes by using the [`weightSet`](blendshapeweightscomponent/weightset.md) variable after an initialized `BlendShapeWeightsComponent` is added to an entity.
+You can access the weights associated with an entity’s blend shapes by using the [`weightSet`](./blendshapeweightscomponent/weightset.md) variable after an initialized `BlendShapeWeightsComponent` is added to an entity.
 
 ```swift
 let blendShapeWeightsComponent = BlendShapeWeightsComponent(
@@ -35,26 +36,27 @@ entity.components[BlendShapeWeightsComponent.self]!.weightSets[0].weights =
 ## Topics
 
 ### Initializers
-- [init(weightsMapping: BlendShapeWeightsMapping)](blendshapeweightscomponent/init(weightsmapping:).md)
+- [init(weightsMapping: BlendShapeWeightsMapping)](./blendshapeweightscomponent/init%28weightsmapping%29.md)
   Create a BlendShapeWeightsComponent from a BlendShapeWeightsMapping.
 ### Instance Properties
-- [var weightSet: BlendShapeWeightsSet](blendshapeweightscomponent/weightset.md)
+- [var weightSet: BlendShapeWeightsSet](./blendshapeweightscomponent/weightset.md)
   The runtime named blend shapes weights.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [class BlendShapeWeightsMapping](blendshapeweightsmapping.md)
+### Blend shape management
+- [class BlendShapeWeightsMapping](./blendshapeweightsmapping.md)
   A mapping of blend weights to the target meshes that those weights affect.
-- [struct BlendShapeWeights](blendshapeweights.md)
+- [struct BlendShapeWeights](./blendshapeweights.md)
   A set of animatable weight values that collectively represent the blending amounts for all the blend shapes’ blend targets.
-- [struct BlendShapeWeightsData](blendshapeweightsdata.md)
+- [struct BlendShapeWeightsData](./blendshapeweightsdata.md)
   A structure that encapsulates the blend shape name, blend shape weights and the names of those weights to be stored by the blend shape weights set.
-- [struct BlendShapeWeightsSet](blendshapeweightsset.md)
+- [struct BlendShapeWeightsSet](./blendshapeweightsset.md)
   A custom collection of named blend shape weights.
 
 

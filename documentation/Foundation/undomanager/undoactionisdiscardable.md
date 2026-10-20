@@ -1,7 +1,8 @@
 # undoActionIsDiscardable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the next undo action is discardable.
 
@@ -20,9 +21,13 @@ A Boolean value that indicates whether the next undo action is discardable.
 var undoActionIsDiscardable: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL undoActionIsDiscardable;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action is discardable; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the action is discardable; [`false`](../../Swift/false.md) otherwise.
 
 Specifies that the latest undo action may be safely discarded when a document can not be saved for any reason. These are typically actions that don’t affect persistent state.
 
@@ -30,9 +35,10 @@ An example might be an undo action that changes the viewable area of a document.
 
 ## See Also
 
-- [func setActionIsDiscardable(Bool)](undomanager/setactionisdiscardable(_:).md)
+### Using discardable undo and redo actions
+- [func setActionIsDiscardable(Bool)](./setactionisdiscardable%28_%29.md)
   Sets whether the next undo or redo action is discardable.
-- [var redoActionIsDiscardable: Bool](undomanager/redoactionisdiscardable.md)
+- [var redoActionIsDiscardable: Bool](./redoactionisdiscardable.md)
   A Boolean value that indicates whether the next redo action is discardable.
 
 

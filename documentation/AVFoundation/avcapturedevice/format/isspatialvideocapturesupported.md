@@ -1,7 +1,8 @@
 # isSpatialVideoCaptureSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format supports capturing spatial video to a file.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the format supports capturing spatial vid
 
 ```swift
 var isSpatialVideoCaptureSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isSpatialVideoCaptureSupported) BOOL spatialVideoCaptureSupported;
 ```
 
 

@@ -1,7 +1,8 @@
 # RequestDescriptor.detectTrajectoriesRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a detect trajectories request.
 
@@ -22,9 +23,10 @@ case detectTrajectoriesRequest(DetectTrajectoriesRequest.Revision)
 
 ## See Also
 
-- [case detectContoursRequest(DetectContoursRequest.Revision)](requestdescriptor/detectcontoursrequest(_:).md)
+### Getting the trajectory, contour, and horizon detection descriptor
+- [case detectContoursRequest(DetectContoursRequest.Revision)](./detectcontoursrequest%28_%29.md)
   A descriptor that describes a detect contours request.
-- [case detectHorizonRequest(DetectHorizonRequest.Revision)](requestdescriptor/detecthorizonrequest(_:).md)
+- [case detectHorizonRequest(DetectHorizonRequest.Revision)](./detecthorizonrequest%28_%29.md)
   A descriptor that describes a detect horizon request.
 
 

@@ -1,7 +1,8 @@
 # apply(_:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds or updates a Wi-Fi network configuration after prompting the user for permission, and then attempts to join the network under certain conditions.
 
@@ -15,39 +16,49 @@ Adds or updates a Wi-Fi network configuration after prompting the user for permi
 ## Declaration
 
 ```swift
+func apply(_ configuration: NEHotspotConfiguration, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func apply(_ configuration: NEHotspotConfiguration) async throws
+```
+
+```objc
+- (void) applyConfiguration:(NEHotspotConfiguration *) configuration completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
 This method attempts to join the network only if it’s found nearby. Also, because of the noticeable delay that the Hotspot 2.0 discovery mechanism may incur, the method doesn’t attempt to join Hotspot 2.0 networks.
 
-In addition to providing an SSID for the Wi-Fi network, your app must provide configuration and authentication information using [`NEHotspotEAPSettings`](nehotspoteapsettings.md) and [`NEHotspotHS20Settings`](nehotspoths20settings.md). With Hotspot 2.0 networks, the app must provide an HS2.0 domain name instead of an SSID.
+In addition to providing an SSID for the Wi-Fi network, your app must provide configuration and authentication information using [`NEHotspotEAPSettings`](../nehotspoteapsettings.md) and [`NEHotspotHS20Settings`](../nehotspoths20settings.md). With Hotspot 2.0 networks, the app must provide an HS2.0 domain name instead of an SSID.
 
 This method won’t add a configuration if the same SSID or HS2.0 domain name is already configured through a Mobile Device Management (MDM) profile or a Carrier bundle. If your app configures a hotspot and later an MDM profile or Carrier bundle is installed for a hotspot with the same domain name, the new configuration will overwrite your app’s configuration.
 
-The system calls your completion handler when it has applied the Wi-Fi level configuration. A successful configuration doesnʼt mean the device has joined that Wi-Fi network. To get the current Wi-Fi state, call [`fetchCurrent(completionHandler:)`](nehotspotnetwork/fetchcurrent(completionhandler:).md).
+The system calls your completion handler when it has applied the Wi-Fi level configuration. A successful configuration doesnʼt mean the device has joined that Wi-Fi network. To get the current Wi-Fi state, call [`fetchCurrent(completionHandler:)`](../nehotspotnetwork/fetchcurrent%28completionhandler%29.md).
 
 Furthermore, joining a Wi-Fi network doesn’t guarantee that the network is fully operational. The system might still be in the process of configuring TCP/IP on that network. If you plan to connect to a service on that network, use an API that waits for connectivity. For example:
 
-- To start a TCP connection to a Bonjour service, use [`NWConnection`](https://developer.apple.com/documentation/network/nwconnection).
-- To fetch a URL, use [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) with the [`waitsForConnectivity`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/waitsforconnectivity) option.
+- To start a TCP connection to a Bonjour service, use [`NWConnection`](../../Network/nwconnection.md).
+- To fetch a URL, use [`URLSession`](../../Foundation/urlsession.md) with the [`waitsForConnectivity`](../../Foundation/urlsessionconfiguration/waitsforconnectivity.md) option.
 
 ## Parameters
 
-- `configuration`: The configuration to apply to the Wi-Fi network; see [`NEHotspotConfiguration`](nehotspotconfiguration.md).
-- `completionHandler`: A completion handler called by the method that takes a single argument indicating the outcome of the operation. A value of [`NEHotspotConfigurationError.userDenied`](nehotspotconfigurationerror/userdenied.md) indicates the user refuses to accept the new configuration.
+- `configuration`: The configuration to apply to the Wi-Fi network; see [`NEHotspotConfiguration`](../nehotspotconfiguration.md).
+- `completionHandler`: A completion handler called by the method that takes a single argument indicating the outcome of the operation. A value of [`NEHotspotConfigurationError.userDenied`](../nehotspotconfigurationerror/userdenied.md) indicates the user refuses to accept the new configuration.
 
 ## See Also
 
-- [class NEHotspotConfiguration](nehotspotconfiguration.md)
+### Related Documentation
+- [class NEHotspotConfiguration](../nehotspotconfiguration.md)
   Configuration settings for a Wi-Fi network.
-- [class NEHotspotEAPSettings](nehotspoteapsettings.md)
+- [class NEHotspotEAPSettings](../nehotspoteapsettings.md)
   Extensible Authentication Protocol settings for configuring WPA and WPA2 enterprise Wi-Fi networks.
-- [class NEHotspotHS20Settings](nehotspoths20settings.md)
+- [class NEHotspotHS20Settings](../nehotspoths20settings.md)
   Settings for configuring Hotspot 2.0 Wi-Fi networks.
-- [class var shared: NEHotspotConfigurationManager](nehotspotconfigurationmanager/shared.md)
-  Instantiates [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) as a singleton, so it can be shared.
+### Creating configurations
+- [class var shared: NEHotspotConfigurationManager](./shared.md)
+  Instantiates [`NEHotspotConfigurationManager`](../nehotspotconfigurationmanager.md) as a singleton, so it can be shared.
 
 
 ---

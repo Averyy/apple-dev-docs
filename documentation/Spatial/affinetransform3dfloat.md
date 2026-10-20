@@ -1,7 +1,8 @@
 # AffineTransform3DFloat
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +19,10 @@
 struct AffineTransform3DFloat
 ```
 
+```c
+typedef struct { ... } SPAffineTransform3DFloat;
+```
+
 #### Overview
 
 A single-precision 3D affine transformation matrix.
@@ -25,78 +30,79 @@ A single-precision 3D affine transformation matrix.
 ## Topics
 
 ### Operators
-- [static func * (AffineTransform3DFloat, AffineTransform3DFloat) -> AffineTransform3DFloat](affinetransform3dfloat/*(_:_:).md)
+- [static func * (AffineTransform3DFloat, AffineTransform3DFloat) -> AffineTransform3DFloat](./affinetransform3dfloat/star%28_,_%29.md)
   Returns the concatenation of two affine transforms.
-- [static func *= (inout AffineTransform3DFloat, AffineTransform3DFloat)](affinetransform3dfloat/*=(_:_:).md)
+- [static func *= (inout AffineTransform3DFloat, AffineTransform3DFloat)](./affinetransform3dfloat/stareq%28_,_%29.md)
   Calculates the concatenation of two affine transforms and stores the result in the left-hand-side variable.
 ### Initializers
-- [init()](affinetransform3dfloat/init-6ek9q.md)
+- [init()](./affinetransform3dfloat/init%28%29-6ek9q.md)
   Returns a new identity affine transform.
-- [init()](affinetransform3dfloat/init-8li4c.md)
+- [init()](./affinetransform3dfloat/init%28%29-8li4c.md)
   Returns a new identity affine transform.
-- [init(AffineTransform3D)](affinetransform3dfloat/init(_:)-2c2os.md)
+- [init(AffineTransform3D)](./affinetransform3dfloat/init%28_%29-2c2os.md)
   Returns a single-precision affine transformation from a double-precision affine transformation.
-- [init(simd_double4x3)](affinetransform3dfloat/init(_:)-3a23d.md)
+- [init(simd_double4x3)](./affinetransform3dfloat/init%28_%29-3a23d.md)
   Returns a new affine transform structure from the specified double-precision 4 x 3 matrix.
-- [init(simd_float4x3)](affinetransform3dfloat/init(_:)-5ajh4.md)
-- [init(matrix: simd_float4x3)](affinetransform3dfloat/init(matrix:).md)
-- [init(pose: Pose3DFloat)](affinetransform3dfloat/init(pose:).md)
+- [init(simd_float4x3)](./affinetransform3dfloat/init%28_%29-5ajh4.md)
+- [init(matrix: simd_float4x3)](./affinetransform3dfloat/init%28matrix%29.md)
+- [init(pose: Pose3DFloat)](./affinetransform3dfloat/init%28pose%29.md)
   Returns a new transform from the specified pose.
-- [init(scaledPose: ScaledPose3DFloat)](affinetransform3dfloat/init(scaledpose:).md)
+- [init(scaledPose: ScaledPose3DFloat)](./affinetransform3dfloat/init%28scaledpose%29.md)
   Returns a new transform from the specified scaled pose.
-- [init(truncating: ProjectiveTransform3DFloat)](affinetransform3dfloat/init(truncating:)-1jfno.md)
-- [init(truncating: simd_double4x4)](affinetransform3dfloat/init(truncating:)-7vabe.md)
+- [init(truncating: ProjectiveTransform3DFloat)](./affinetransform3dfloat/init%28truncating%29-1jfno.md)
+- [init(truncating: simd_double4x4)](./affinetransform3dfloat/init%28truncating%29-7vabe.md)
   Returns a new affine transform from a double-precision 4 x 4 matrix truncated to a  4 x 3 matrix.
-- [init(truncating: simd_float4x4)](affinetransform3dfloat/init(truncating:)-8jfn6.md)
+- [init(truncating: simd_float4x4)](./affinetransform3dfloat/init%28truncating%29-8jfn6.md)
 ### Instance Properties
-- [var columns: (Vector3DFloat, Vector3DFloat, Vector3DFloat, Vector3DFloat)](affinetransform3dfloat/columns.md)
+- [var columns: (Vector3DFloat, Vector3DFloat, Vector3DFloat, Vector3DFloat)](./affinetransform3dfloat/columns.md)
   The columns of the underlying matrix.
-- [var isInvertible: Bool](affinetransform3dfloat/isinvertible.md)
-- [var matrix: simd_float4x3](affinetransform3dfloat/matrix.md)
-- [var matrix3x3: simd_float3x3](affinetransform3dfloat/matrix3x3.md)
-- [var matrix4x4: simd_float4x4](affinetransform3dfloat/matrix4x4.md)
-- [var scale: Size3DFloat](affinetransform3dfloat/scale.md)
+- [var isInvertible: Bool](./affinetransform3dfloat/isinvertible.md)
+- [var matrix: simd_float4x3](./affinetransform3dfloat/matrix.md)
+- [var matrix3x3: simd_float3x3](./affinetransform3dfloat/matrix3x3.md)
+- [var matrix4x4: simd_float4x4](./affinetransform3dfloat/matrix4x4.md)
+- [var scale: Size3DFloat](./affinetransform3dfloat/scale.md)
 ### Instance Methods
-- [func changeBasis(from: AffineTransform3DFloat, to: AffineTransform3DFloat) -> AffineTransform3DFloat?](affinetransform3dfloat/changebasis(from:to:).md)
+- [func changeBasis(from: AffineTransform3DFloat, to: AffineTransform3DFloat) -> AffineTransform3DFloat?](./affinetransform3dfloat/changebasis%28from,to%29.md)
   Returns a new affine transform structure by applying a change-of-basis.
 ### Default Implementations
-- [CustomReflectable Implementations](affinetransform3dfloat/customreflectable-implementations.md)
-- [Decodable Implementations](affinetransform3dfloat/decodable-implementations.md)
-- [Encodable Implementations](affinetransform3dfloat/encodable-implementations.md)
-- [Equatable Implementations](affinetransform3dfloat/equatable-implementations.md)
-- [Hashable Implementations](affinetransform3dfloat/hashable-implementations.md)
-- [Scalable3DProtocol Implementations](affinetransform3dfloat/scalable3dprotocol-implementations.md)
-- [Shearable3DProtocol Implementations](affinetransform3dfloat/shearable3dprotocol-implementations.md)
-- [Transform3DProtocol Implementations](affinetransform3dfloat/transform3dprotocol-implementations.md)
+- [CustomReflectable Implementations](./affinetransform3dfloat/customreflectable-implementations.md)
+- [Decodable Implementations](./affinetransform3dfloat/decodable-implementations.md)
+- [Encodable Implementations](./affinetransform3dfloat/encodable-implementations.md)
+- [Equatable Implementations](./affinetransform3dfloat/equatable-implementations.md)
+- [Hashable Implementations](./affinetransform3dfloat/hashable-implementations.md)
+- [Scalable3DProtocol Implementations](./affinetransform3dfloat/scalable3dprotocol-implementations.md)
+- [Shearable3DProtocol Implementations](./affinetransform3dfloat/shearable3dprotocol-implementations.md)
+- [Transform3DProtocol Implementations](./affinetransform3dfloat/transform3dprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Rotatable3DProtocol](rotatable3dprotocol.md)
-- [Scalable3DProtocol](scalable3dprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shearable3DProtocol](shearable3dprotocol.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
-- [Transform3DProtocol](transform3dprotocol.md)
-- [Translatable3DProtocol](translatable3dprotocol.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Rotatable3DProtocol](./rotatable3dprotocol.md)
+- [Scalable3DProtocol](./scalable3dprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shearable3DProtocol](./shearable3dprotocol.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
+- [Transform3DProtocol](./transform3dprotocol.md)
+- [Translatable3DProtocol](./translatable3dprotocol.md)
 
 ## See Also
 
-- [struct AffineTransform3D](affinetransform3d.md)
+### Affine and projective transforms
+- [struct AffineTransform3D](./affinetransform3d.md)
   A 3D affine transformation matrix.
-- [struct ProjectiveTransform3D](projectivetransform3d.md)
+- [struct ProjectiveTransform3D](./projectivetransform3d.md)
   A 3D projective transformation matrix.
-- [struct ProjectiveTransform3DFloat](projectivetransform3dfloat.md)
+- [struct ProjectiveTransform3DFloat](./projectivetransform3dfloat.md)
   A single-precision 3D projective transformation matrix.
 
 

@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A function to create content on demand using the underlying data.
 
@@ -20,7 +21,8 @@ var content: (Data.Element) -> Content
 
 ## See Also
 
-- [var data: Data](tablecolumnforeach/data.md)
+### Accessing collection content
+- [var data: Data](./data.md)
   The collection of underlying identified data that SwiftUI uses to create columns dynamically.
 
 

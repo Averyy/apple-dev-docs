@@ -1,7 +1,8 @@
 # init(jsGlobalContextRef:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init!(jsGlobalContextRef: JSGlobalContextRef!)
+```
+
+```objc
++ (JSContext *) contextWithJSGlobalContextRef:(JSGlobalContextRef) jsGlobalContextRef;
 ```
 
 #### Return Value

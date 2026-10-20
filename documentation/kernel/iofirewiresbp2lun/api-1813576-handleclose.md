@@ -7,7 +7,7 @@ Overrideable method to control the open / close behaviour of an IOService.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleClose(
  IOService *forClient, 
  IOOptionBitsoptions );
@@ -24,21 +24,22 @@ See IOService for discussion.
 
 ## See Also
 
-- [attach](iofirewiresbp2lun/1813520-attach.md)
+### Miscellaneous
+- [attach](./api-1813520-attach.md)
   Attaches an IOService client to a provider in the registry.
-- [createLogin](iofirewiresbp2lun/1813525-createlogin.md)
+- [createLogin](./api-1813525-createlogin.md)
   Creates a new IOFireWireSBP2Login object.
-- [createManagementORB](iofirewiresbp2lun/1813535-createmanagementorb.md)
+- [createManagementORB](./api-1813535-createmanagementorb.md)
   Creates a new IOFireWireSBP2ManagementORB object.
-- [getDiagnostics](iofirewiresbp2lun/1813549-getdiagnostics.md)
+- [getDiagnostics](./api-1813549-getdiagnostics.md)
   Debug-only method.
-- [getFireWireUnit](iofirewiresbp2lun/1813559-getfirewireunit.md)
+- [getFireWireUnit](./api-1813559-getfirewireunit.md)
   Returns an IOFireWireUnit object.
-- [getLUNumber](iofirewiresbp2lun/1813568-getlunumber.md)
+- [getLUNumber](./api-1813568-getlunumber.md)
   Returns the LUNs number.
-- [handleOpen](iofirewiresbp2lun/1813589-handleopen.md)
+- [handleOpen](./api-1813589-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [matchPropertyTable](iofirewiresbp2lun/1813597-matchpropertytable.md)
+- [matchPropertyTable](./api-1813597-matchpropertytable.md)
   Implements SBP2 specific matching.
 
 

@@ -1,7 +1,8 @@
 # init(x:y:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point mark that plots values to x and y.
 
@@ -34,9 +35,9 @@ Chart(data) {
 }
 ```
 
-![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](/images/com.apple.Charts/PointMarkSwift.PointMarkScatterChart@2x.png)
+![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](https://developer.apple.com/tutorials/images/com.apple.Charts/PointMarkSwift.PointMarkScatterChart@2x.png)
 
-For more background, see the first example used in [`PointMark`](pointmark.md) which shows the structure that contains the `wingLength` and `wingHeight` properties.
+For more background, see the first example used in [`PointMark`](../pointmark.md) which shows the structure that contains the `wingLength` and `wingHeight` properties.
 
 ## Parameters
 
@@ -45,11 +46,12 @@ For more background, see the first example used in [`PointMark`](pointmark.md) w
 
 ## See Also
 
-- [init<Y>(x: CGFloat?, y: PlottableValue<Y>)](pointmark/init(x:y:)-9dswq.md)
+### Creating a point mark
+- [init<Y>(x: CGFloat?, y: PlottableValue<Y>)](./init%28x,y%29-9dswq.md)
   Creates a point mark with fixed x position and plots values with y.
-- [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
+- [init<X>(x: PlottableValue<X>, y: CGFloat?)](./init%28x,y%29-9hppd.md)
   Creates a point mark that plots a value on x with fixed y position.
-- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](pointmark/init(x:y:z:).md)
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](./init%28x,y,z%29.md)
   Creates a 3D point mark that plots values to x, y and z.
 
 

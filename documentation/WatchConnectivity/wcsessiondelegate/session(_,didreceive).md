@@ -1,7 +1,8 @@
 # session(_:didReceive:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session successfully received a file from its counterpart.
 
@@ -18,13 +19,17 @@ Tells the delegate that the session successfully received a file from its counte
 optional func session(_ session: WCSession, didReceive file: WCSessionFile)
 ```
 
+```objc
+- (void) session:(WCSession *) session didReceiveFile:(WCSessionFile *) file;
+```
+
 #### Discussion
 
 The session object calls this method when it successfully receives a file from its counterpart. Implement this method to incorporate the file information into the current app. The system calls this method on a background thread.
 
 Remember to move the file referenced by the `file` parameter if you intend to keep it. If you don’t move the file synchronously during your implementation of this method, the system deletes the file when the method returns.
 
-> ⚠️ **Warning**:  Always test Watch Connectivity file transfers on paired devices. The system doesn’t call the [`session(_:didReceive:)`](wcsessiondelegate/session(_:didreceive:).md) method in Simulator.
+> ⚠️ **Warning**:  Always test Watch Connectivity file transfers on paired devices. The system doesn’t call the [`session(_:didReceive:)`](./session%28_,didreceive%29.md) method in Simulator.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ Remember to move the file referenced by the `file` parameter if you intend to ke
 
 ## See Also
 
-- [func session(WCSession, didFinish: WCSessionFileTransfer, error: (any Error)?)](wcsessiondelegate/session(_:didfinish:error:)-6dtcu.md)
+### Managing File Transfers
+- [func session(WCSession, didFinish: WCSessionFileTransfer, error: (any Error)?)](./session%28_,didfinish,error%29-6dtcu.md)
   Tells the delegate that a file transfer has finished successfully or ended because of an error.
 
 

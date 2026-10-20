@@ -1,7 +1,8 @@
 # AudioLibraryComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for audio resources that you can look up by user-defined names.
 
@@ -21,9 +22,9 @@ struct AudioLibraryComponent
 
 #### Overview
 
-`AudioLibraryComponent` serves as a container for audio resources, so that you can store loaded audio resources and associate them with an entity for playback using user-defined names. You may use any [`AudioResource`](audioresource.md) type, such as [`AudioFileResource`](audiofileresource.md) or [`AudioFileGroupResource`](audiofilegroupresource.md).
+`AudioLibraryComponent` serves as a container for audio resources, so that you can store loaded audio resources and associate them with an entity for playback using user-defined names. You may use any [`AudioResource`](./audioresource.md) type, such as [`AudioFileResource`](./audiofileresource.md) or [`AudioFileGroupResource`](./audiofilegroupresource.md).
 
-> **Note**: In memory, you can also use [`AudioBufferResource`](audiobufferresource.md), but this type doesn’t support serializing to disk or sharing via network.
+> **Note**: In memory, you can also use [`AudioBufferResource`](./audiobufferresource.md), but this type doesn’t support serializing to disk or sharing via network.
 
 Below is an example of how you can set this component in code:
 
@@ -89,31 +90,32 @@ entity.playAudio(audioResource)
 ## Topics
 
 ### Creating an audio library component
-- [init(resources: [String : AudioResource])](audiolibrarycomponent/init(resources:).md)
+- [init(resources: [String : AudioResource])](./audiolibrarycomponent/init%28resources%29.md)
   Creates a new audio library from a dictionary.
 ### Accessing audio resources
-- [var resources: [String : AudioResource]](audiolibrarycomponent/resources.md)
+- [var resources: [String : AudioResource]](./audiolibrarycomponent/resources.md)
   A dictionary of audio resources with user-defined names.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
+- [Component](./component.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
 
 ## See Also
 
-- [class AudioFileResource](audiofileresource.md)
+### Audio resources
+- [class AudioFileResource](./audiofileresource.md)
   An audio resource that you load from a file or from a URL.
-- [class AudioFileGroupResource](audiofilegroupresource.md)
+- [class AudioFileGroupResource](./audiofilegroupresource.md)
   An audio file group.
-- [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
-- [class AudioResource](audioresource.md)
+- [class AudioBufferResource](./audiobufferresource.md)
+  An audio resource that you load from an [`AVAudioBuffer`](../AVFAudio/avaudiobuffer.md).
+- [class AudioResource](./audioresource.md)
   A playable audio resource
-- [AudioResource.Calibration](audioresource/calibration.md)
+- [AudioResource.Calibration](./audioresource/calibration.md)
   A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
+- [AudioResource.Normalization](./audioresource/normalization.md)
   Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 

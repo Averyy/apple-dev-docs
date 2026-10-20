@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size, in points, of the image associated with the media item artwork.
 
@@ -20,9 +21,14 @@ The maximum size, in points, of the image associated with the media item artwork
 var bounds: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect bounds;
+```
+
 ## See Also
 
-- [func image(at: CGSize) -> UIImage?](mpmediaitemartwork/image(at:).md)
+### Using a media item image
+- [func image(at: CGSize) -> UIImage?](./image%28at%29.md)
   Returns the artwork image for an item at the given size.
 
 

@@ -1,7 +1,8 @@
 # kSecKeyEncrypt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key can be used in an encrypt operation.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key can be used in an encrypt operation.
 
 ```swift
 var kSecKeyEncrypt: Int32 { get }
+```
+
+```c
+kSecKeyEncrypt
 ```
 
 

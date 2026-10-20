@@ -1,7 +1,8 @@
 # AppSchema.RemindersIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the reminders domain.
 
@@ -21,23 +22,23 @@ protocol RemindersIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var createList: some AppSchemaIntent](appschema/remindersintent/createlist.md)
+- [var createList: some AppSchemaIntent](./remindersintent/createlist.md)
   An intent schema that creates a new reminder list.
-- [var createReminder: some AppSchemaIntent](appschema/remindersintent/createreminder.md)
+- [var createReminder: some AppSchemaIntent](./remindersintent/createreminder.md)
   An intent schema that creates a new reminder.
-- [var createSection: some AppSchemaIntent](appschema/remindersintent/createsection.md)
+- [var createSection: some AppSchemaIntent](./remindersintent/createsection.md)
   An intent schema that creates a new reminder list section.
-- [var deleteReminders: some AppSchemaIntent](appschema/remindersintent/deletereminders.md)
+- [var deleteReminders: some AppSchemaIntent](./remindersintent/deletereminders.md)
   An intent schema that deletes reminders.
-- [var updateReminder: some AppSchemaIntent](appschema/remindersintent/updatereminder.md)
+- [var updateReminder: some AppSchemaIntent](./remindersintent/updatereminder.md)
   An intent schema that updates a reminder.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 
 ---

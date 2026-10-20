@@ -1,7 +1,8 @@
 # ASContactIdentifierRequest
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -19,22 +20,22 @@ enum ASContactIdentifierRequest
 ## Topics
 
 ### Enumeration Cases
-- [ASContactIdentifierRequest.email](ascontactidentifierrequest/email.md)
+- [ASContactIdentifierRequest.email](./ascontactidentifierrequest/email.md)
   Indicates the app accepts an email address as the contact identifier for the new account.
-- [ASContactIdentifierRequest.phoneNumber](ascontactidentifierrequest/phonenumber.md)
+- [ASContactIdentifierRequest.phoneNumber](./ascontactidentifierrequest/phonenumber.md)
   Indicates the app accepts a phone number as the contact identifier for the new account.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

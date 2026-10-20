@@ -1,7 +1,8 @@
 # readAttributeOpenPeriod(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOpenPeriod(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOpenPeriod() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeOpenPeriodWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

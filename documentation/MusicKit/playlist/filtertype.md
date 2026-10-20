@@ -1,7 +1,8 @@
 # Playlist.FilterType
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the set of playlist properties your app uses as a filter for a catalog resource request.
 

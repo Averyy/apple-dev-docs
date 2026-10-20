@@ -1,7 +1,8 @@
 # GetCustomPropertyInfo
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a property info object that describes the custom property.
 
@@ -10,7 +11,7 @@ Gets a property info object that describes the custom property.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioCustomPropertyInfo GetCustomPropertyInfo();
 ```
 
@@ -20,11 +21,12 @@ A property info object that describes the custom property.
 
 ## See Also
 
-- [SetQualifierAndDataValue](iouseraudiocustomproperty/setqualifieranddatavalue.md)
+### Accessing the Data Value
+- [SetQualifierAndDataValue](./setqualifieranddatavalue.md)
   Sets the custom property’s data value.
-- [GetCustomPropertyValueWithQualifier](iouseraudiocustomproperty/getcustompropertyvaluewithqualifier.md)
+- [GetCustomPropertyValueWithQualifier](./getcustompropertyvaluewithqualifier.md)
   Gets the custom property value for a given qualifier.
-- [IOUserAudioCustomPropertyInfo](audiodriverkit/iouseraudiocustompropertyinfo.md)
+- [IOUserAudioCustomPropertyInfo](../audiodriverkit-page/iouseraudiocustompropertyinfo.md)
   A description of a custom property’s data types.
 
 

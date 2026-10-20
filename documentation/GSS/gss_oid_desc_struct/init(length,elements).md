@@ -1,7 +1,8 @@
 # init(length:elements:)
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new object identifier with the given array of octets.
 
@@ -25,7 +26,8 @@ init(length: OM_uint32, elements: UnsafeMutableRawPointer!)
 
 ## See Also
 
-- [init()](gss_oid_desc_struct/init.md)
+### Initialization
+- [init()](./init%28%29.md)
   Initialize a new, empty object identifier.
 
 

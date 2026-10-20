@@ -1,7 +1,8 @@
 # init(term:includingTopResultsOfTypes:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a catalog search suggestions request for a specified search term along with a list of types to include when fetching top results.
 

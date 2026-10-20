@@ -1,7 +1,8 @@
 # outputPixelFormatType
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired pixel format type of the observation.
 
@@ -21,15 +22,16 @@ final var outputPixelFormatType: OSType { get set }
 
 #### Discussion
 
-The default is [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent32float).
+The default is [`kCVPixelFormatType_TwoComponent32Float`](../../CoreVideo/kcvpixelformattype_twocomponent32float.md).
 
 ## See Also
 
-- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring a request
+- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The level of accuracy to compute the optical flow.
-- [TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.enum.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   A type that describes the computational accuracy.
-- [var supportedOutputPixelFormatTypes: [OSType]](trackopticalflowrequest/supportedoutputpixelformattypes.md)
+- [var supportedOutputPixelFormatTypes: [OSType]](./supportedoutputpixelformattypes.md)
   The collection of supported pixel format types.
 
 

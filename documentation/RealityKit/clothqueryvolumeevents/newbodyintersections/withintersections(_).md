@@ -1,7 +1,8 @@
 # withIntersections(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the intersections with cloth bodies that took place.
 
@@ -30,7 +31,8 @@ This span is only available during the subscription callback of this event. The 
 
 ## See Also
 
-- [ClothQueryVolumeEvents.NewBodyIntersections.Intersection](clothqueryvolumeevents/newbodyintersections/intersection.md)
+### Accessing the intersections
+- [ClothQueryVolumeEvents.NewBodyIntersections.Intersection](./intersection.md)
   An intersection with a cloth body.
 
 

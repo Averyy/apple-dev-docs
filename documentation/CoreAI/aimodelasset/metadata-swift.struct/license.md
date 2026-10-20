@@ -1,7 +1,8 @@
 # license
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The license text for the model.
 
@@ -24,11 +25,12 @@ Returns an empty string if the model has no license.
 
 ## See Also
 
-- [var description: String](aimodelasset/metadata-swift.struct/description.md)
+### Reading model information
+- [var description: String](./description.md)
   A human-readable description of the model.
-- [var author: String](aimodelasset/metadata-swift.struct/author.md)
+- [var author: String](./author.md)
   The name of the model’s author.
-- [var creationDate: Date?](aimodelasset/metadata-swift.struct/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The model’s creation date.
 
 

@@ -1,7 +1,8 @@
 # imageConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image configuration object compatible with this trait collection.
 
@@ -18,9 +19,13 @@ An image configuration object compatible with this trait collection.
 var imageConfiguration: UIImage.Configuration { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIImageConfiguration * imageConfiguration;
+```
+
 #### Discussion
 
-The [`UIImage.Configuration`](uiimage/configuration-swift.class.md) object in this property contains the same traits as the current trait collection.
+The [`UIImage.Configuration`](../uiimage/configuration-swift.class.md) object in this property contains the same traits as the current trait collection.
 
 
 ---

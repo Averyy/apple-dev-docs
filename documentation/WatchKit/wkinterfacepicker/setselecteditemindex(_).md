@@ -1,7 +1,8 @@
 # setSelectedItemIndex(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the specified item in the list.
 
@@ -14,21 +15,26 @@ Selects the specified item in the list.
 func setSelectedItemIndex(_ itemIndex: Int)
 ```
 
+```objc
+- (void) setSelectedItemIndex:(NSInteger) itemIndex;
+```
+
 #### Discussion
 
 If the value in `itemIndex` exceeds the number of items in the array, the picker selects the last item. If `itemIndex` is negative, the picker selects the first item in the array.
 
 ## Parameters
 
-- `itemIndex`: The index of the item to select. This index represents the index into the array of items you set using the [`setItems(_:)`](wkinterfacepicker/setitems(_:).md) method.
+- `itemIndex`: The index of the item to select. This index represents the index into the array of items you set using the [`setItems(_:)`](./setitems%28_%29.md) method.
 
 ## See Also
 
-- [func setItems([WKPickerItem]?)](wkinterfacepicker/setitems(_:).md)
+### Managing the Picker Contents
+- [func setItems([WKPickerItem]?)](./setitems%28_%29.md)
   Sets the list of items displayed by the picker.
-- [class WKPickerItem](wkpickeritem.md)
+- [class WKPickerItem](../wkpickeritem.md)
   A single item in a picker interface.
-- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](wkinterfacepicker/setcoordinatedanimations(_:).md)
+- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](./setcoordinatedanimations%28_%29.md)
   Sets the interface objects that should coordinate their own animations with the picker.
 
 

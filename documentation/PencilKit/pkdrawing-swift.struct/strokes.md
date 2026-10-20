@@ -1,7 +1,8 @@
 # strokes
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of strokes that make up the drawing.
 
@@ -20,13 +21,14 @@ var strokes: [PKStroke] { get set }
 
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
 ## See Also
 
-- [func dataRepresentation() -> Data](pkdrawing-swift.struct/datarepresentation.md)
+### Getting the drawing data
+- [func dataRepresentation() -> Data](./datarepresentation%28%29.md)
   Returns a raw data representation of the rendered content.
-- [let PKAppleDrawingTypeIdentifier: CFString](pkappledrawingtypeidentifier.md)
+- [let PKAppleDrawingTypeIdentifier: CFString](../pkappledrawingtypeidentifier.md)
   The uniform type identifier for data associated with a drawing object.
 
 

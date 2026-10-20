@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(coder aDecoder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
 

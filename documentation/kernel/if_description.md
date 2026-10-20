@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_description {
     ...
 };
@@ -17,9 +17,9 @@ struct if_description {
 ## Topics
 
 ### Instance Properties
-- [ifd_desc](if_description/3943878-ifd_desc.md)
-- [ifd_len](if_description/3943879-ifd_len.md)
-- [ifd_maxlen](if_description/3943880-ifd_maxlen.md)
+- [ifd_desc](./if_description/api-3943878-ifd_desc.md)
+- [ifd_len](./if_description/api-3943879-ifd_len.md)
+- [ifd_maxlen](./if_description/api-3943880-ifd_maxlen.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # .!=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 A vector mask with the result of a pointwise inequality comparison.
 
@@ -19,6 +20,8 @@ A vector mask with the result of a pointwise inequality comparison.
 ```swift
 static func .!= (a: SIMDMask<Storage>, b: SIMDMask<Storage>) -> SIMDMask<Storage>
 ```
+
+Available when `Storage` is `SIMD64<Int8>`.
 
 #### Discussion
 

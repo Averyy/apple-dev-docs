@@ -1,7 +1,8 @@
 # possessionIndicator
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional indicator used to indicate possession by this team. Only one team should have possession at a given time.
 
@@ -15,6 +16,10 @@ An optional indicator used to indicate possession by this team. Only one team sh
 ```swift
 @NSCopying
 var possessionIndicator: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * possessionIndicator;
 ```
 
 

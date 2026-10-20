@@ -1,7 +1,8 @@
 # vfs_context_suser
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a vfs_context_t corresponds to the superuser.
 
@@ -10,11 +11,11 @@ Determine if a vfs_context_t corresponds to the superuser.
 
 ## Declaration
 
-```swift
+```c
 int vfs_context_suser(vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if context belongs to superuser, 0 otherwise.
 

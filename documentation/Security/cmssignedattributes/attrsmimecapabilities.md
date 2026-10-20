@@ -1,7 +1,8 @@
 # attrSmimeCapabilities
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identify signature, encryption, and digest algorithms supported by the encoder.
 
@@ -15,9 +16,13 @@ Identify signature, encryption, and digest algorithms supported by the encoder.
 static var attrSmimeCapabilities: CMSSignedAttributes { get }
 ```
 
+```c
+kCMSAttrSmimeCapabilities
+```
+
 #### Discussion
 
-Using this attribute doesn’t change the encoding. See [`RFC 2311: S/MIME Version 2 Message Specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2311) section 2.5.2 for more information about the capabilities attribute.
+Using this attribute doesn’t change the encoding. See [RFC 2311: S/MIME Version 2 Message Specification](https://tools.ietf.org/html/rfc2311) section 2.5.2 for more information about the capabilities attribute.
 
 
 ---

@@ -1,6 +1,7 @@
 # Handling downloads and playback
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Handle Apple Podcasts’ download and playback behavior, including hybrid audio/video streaming, non-video modes, and user-agent identification.
 
@@ -8,7 +9,7 @@ Handle Apple Podcasts’ download and playback behavior, including hybrid audio/
 
 Apple Podcasts supports a flexible download model that balances cellular data usage with the best available playback experience.
 
-#### Deliver Audio Only Downloads to Followers By Default
+#### Deliver audio-only downloads to followers by default
 
 When followers of a show have auto-downloads enabled, Apple Podcasts delivers audio-only downloads by default. This preserves current behavior and avoids unexpected increases in data usage.
 
@@ -20,7 +21,7 @@ Apple Podcasts downloads audio from the media playlist and from each interstitia
 
 Because of this, keep your main media and interstitial media URLs resolvable and replayable at a later date. If a URL fails to resolve later, playback errors occur.
 
-#### Stream Video When Only Audio Is on Device
+#### Stream video when only audio is on device
 
 When a user requests video playback but only has an audio version downloaded on device, Apple Podcasts fetches and streams the video version over the network.
 
@@ -29,7 +30,7 @@ When a user requests video playback but only has an audio version downloaded on 
 
 To support this hybrid playback model, keep the HLS multivariant playlist and all associated interstitials accessible and consistent when Apple Podcasts fetches the video version. A mismatch between the audio download state and the HLS manifest may result in playback issues.
 
-#### Continue Audio Playback in Non Video Contexts
+#### Continue audio playback in non-video contexts
 
 When a user is streaming a video episode and transitions to a non-video context — such as locking the device or connecting to CarPlay — the player automatically adjusts:
 
@@ -38,7 +39,7 @@ When a user is streaming a video episode and transitions to a non-video context 
 
 This behavior optimizes bandwidth usage and ensures uninterrupted audio playback across all listening environments.
 
-#### Recognize Apple Podcasts User Agent Strings
+#### Recognize Apple Podcasts user-agent strings
 
 Apple Podcasts identifies itself to hosting providers by sending a user-agent header with every media request. Hosting providers should expect to see two distinct user-agent formats:
 
@@ -47,17 +48,17 @@ Apple Podcasts identifies itself to hosting providers by sending a user-agent he
 
 ## See Also
 
-- [Authoring multivariant and media playlists](multivariant-and-media-playlists.md)
+- [Authoring multivariant and media playlists](./multivariant-and-media-playlists.md)
   Author the HTTP Live Streaming (HLS) multivariant and media playlists that Apple Podcasts requires, with the tags and attributes each playlist uses.
-- [Encoding media for HLS](encoding-media.md)
+- [Encoding media for HLS](./encoding-media.md)
   Encode audio and video for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Configuring delivery for HLS](configuring-delivery.md)
+- [Configuring delivery for HLS](./configuring-delivery.md)
   Format media URLs and origin domain access for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Delivering ad interstitials in podcast streams](delivering-ad-interstitials.md)
+- [Delivering ad interstitials in podcast streams](./delivering-ad-interstitials.md)
   Insert ad interstitials into HTTP Live Streaming (HLS) media playlists.
-- [Delivering WebVTT subtitles and captions in HLS](delivering-subtitles-and-captions.md)
+- [Delivering WebVTT subtitles and captions in HLS](./delivering-subtitles-and-captions.md)
   Add WebVTT subtitle and caption tracks to your HTTP Live Streaming (HLS) streams, and declare their absence when a stream doesn’t carry captions.
-- [Reviewing sample playlists and validating streams](examples-and-validation.md)
+- [Reviewing sample playlists and validating streams](./examples-and-validation.md)
   Reference sample multivariant and video-on-demand (VOD) media playlists, and validate your HTTP Live Streaming (HLS) streams with Media Stream Validator.
 
 

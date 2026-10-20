@@ -1,7 +1,8 @@
 # SecProtocolType.HTTP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates HTTP.
 
@@ -13,6 +14,10 @@ Indicates HTTP.
 
 ```swift
 case HTTP
+```
+
+```c
+kSecProtocolTypeHTTP
 ```
 
 

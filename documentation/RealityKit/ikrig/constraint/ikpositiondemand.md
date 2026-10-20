@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKPositionDemand
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition of a positional demand.
 
@@ -22,17 +23,17 @@ struct IKPositionDemand
 ## Topics
 
 ### Initializers
-- [init()](ikrig/constraint/ikpositiondemand/init.md)
+- [init()](./ikpositiondemand/init%28%29.md)
   Creates a positional demand with default settings.
 ### Instance Properties
-- [var influenceDepthMaxJointCount: Int](ikrig/constraint/ikpositiondemand/influencedepthmaxjointcount.md)
+- [var influenceDepthMaxJointCount: Int](./ikpositiondemand/influencedepthmaxjointcount.md)
   The number of joints to be influenced by this demand.
-- [var mode: IKRig.Constraint.IKPositionDemand.Mode](ikrig/constraint/ikpositiondemand/mode-swift.property.md)
+- [var mode: IKRig.Constraint.IKPositionDemand.Mode](./ikpositiondemand/mode-swift.property.md)
   The mode of the positional demand.
-- [var weight: SIMD3<Float>](ikrig/constraint/ikpositiondemand/weight.md)
+- [var weight: SIMD3<Float>](./ikpositiondemand/weight.md)
   The per-axis weight this demand has on the pose.
 ### Enumerations
-- [IKRig.Constraint.IKPositionDemand.Mode](ikrig/constraint/ikpositiondemand/mode-swift.enum.md)
+- [IKRig.Constraint.IKPositionDemand.Mode](./ikpositiondemand/mode-swift.enum.md)
   Describes the acting modes of positional demands.
 
 

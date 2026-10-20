@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes a menu from the menu system.
@@ -19,9 +20,13 @@ Removes a menu from the menu system.
 func remove(menu removedIdentifier: UIMenu.Identifier)
 ```
 
+```objc
+- (void) removeMenuForIdentifier:(UIMenuIdentifier) removedIdentifier;
+```
+
 #### Discussion
 
-Use this method to remove menus ([`UIMenu`](uimenu.md) objects) from a menu system.
+Use this method to remove menus ([`UIMenu`](../uimenu.md) objects) from a menu system.
 
 ## Parameters
 

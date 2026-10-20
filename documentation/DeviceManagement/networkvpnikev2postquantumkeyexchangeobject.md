@@ -1,7 +1,8 @@
 # NetworkVPNIKEV2PostQuantumKeyExchangeObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Post Quantum Key Exchange settings.
 
@@ -15,32 +16,37 @@ Post Quantum Key Exchange settings.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIKEV2PostQuantumKeyExchangeObject
 ```
 
 ## Properties
 
 - `AllowFallback` (boolean): If set to `false`, the VPN doesn’t establish a connection if the server doesn’t support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` isn’t present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
+
+  **Default**: `false`
 - `PPK` (string): The Post-quantum Pre-shared key (PPK) the device uses for this VPN. This key is is used with VPN servers that support RFC 8784. If this key is present `PPKIdentifier` must also be present.
 - `PPKIdentifier` (string): The identifier for the Post-quantum Pre-shared key (PPK) the device uses for this VPN. This key is is used with VPN servers that support RFC 8784. If this key is present `PPK` must also be present.
 - `PPKMandatory` (boolean): If set to `true`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` aren’t present.
 
+  **Default**: `true`
+
 ## See Also
 
-- [object NetworkVPNIKEV2AuthenticationObject](networkvpnikev2authenticationobject.md)
+### Objects
+- [object NetworkVPNIKEV2AuthenticationObject](./networkvpnikev2authenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIKEV2DNSObject](networkvpnikev2dnsobject.md)
+- [object NetworkVPNIKEV2DNSObject](./networkvpnikev2dnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIKEV2IdleObject](networkvpnikev2idleobject.md)
+- [object NetworkVPNIKEV2IdleObject](./networkvpnikev2idleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIKEV2NetworkRoutingObject](networkvpnikev2networkroutingobject.md)
+- [object NetworkVPNIKEV2NetworkRoutingObject](./networkvpnikev2networkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNIKEV2OnDemandObject](networkvpnikev2ondemandobject.md)
+- [object NetworkVPNIKEV2OnDemandObject](./networkvpnikev2ondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNIKEV2ProxiesObject](networkvpnikev2proxiesobject.md)
+- [object NetworkVPNIKEV2ProxiesObject](./networkvpnikev2proxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNIKEV2SecurityAssociationParametersObject](networkvpnikev2securityassociationparametersobject.md)
+- [object NetworkVPNIKEV2SecurityAssociationParametersObject](./networkvpnikev2securityassociationparametersobject.md)
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 
 

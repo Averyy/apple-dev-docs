@@ -1,7 +1,8 @@
 # error(_:userInfo:url:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 8.0+

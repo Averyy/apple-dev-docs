@@ -1,15 +1,16 @@
 # AUParameterAutomationEventType.touch
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 case touch
 ```
 
+```c
+AUParameterAutomationEventTypeTouch
+```
+
 ## See Also
 
-- [AUParameterAutomationEventType.release](auparameterautomationeventtype/release.md)
-- [AUParameterAutomationEventType.value](auparameterautomationeventtype/value.md)
+### Constants
+- [AUParameterAutomationEventType.release](./release.md)
+- [AUParameterAutomationEventType.value](./value.md)
 
 
 ---

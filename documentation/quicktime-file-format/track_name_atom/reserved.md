@@ -1,7 +1,8 @@
 # Reserved
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer.
 
@@ -11,9 +12,10 @@ Set this value to zero.
 
 ## See Also
 
-- [Language](track_name_atom/language.md)
+### Data fields
+- [Language](./language.md)
   A 16-bit integer holding a packed ISO 639-2/T code.
-- [Name](track_name_atom/name.md)
+- [Name](./name.md)
   A string holding the track name.
 
 

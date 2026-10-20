@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct OSNotificationHeader64 {
     ...
 };
@@ -17,10 +17,10 @@ struct OSNotificationHeader64 {
 ## Topics
 
 ### Instance Properties
-- [content](osnotificationheader64/1425182-content.md)
-- [reference](osnotificationheader64/1425223-reference.md)
-- [size](osnotificationheader64/1425221-size.md)
-- [type](osnotificationheader64/1425192-type.md)
+- [content](./osnotificationheader64/api-1425182-content.md)
+- [reference](./osnotificationheader64/api-1425223-reference.md)
+- [size](./osnotificationheader64/api-1425221-size.md)
+- [type](./osnotificationheader64/api-1425192-type.md)
 
 
 ---

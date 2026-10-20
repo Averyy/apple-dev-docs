@@ -1,7 +1,8 @@
 # recommended(excluding:including:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the recommended set of experiences.
 
@@ -25,7 +26,8 @@ Use this method to return the default recommended set of experiences for each pl
 
 ## See Also
 
-- [static func only<C>(C) -> AVExperienceController.Experiences](avexperiencecontroller/experiences/only(_:).md)
+### Defining experiences
+- [static func only<C>(C) -> AVExperienceController.Experiences](./only%28_%29.md)
   Returns a set of experiences for the provided list.
 
 

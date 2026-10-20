@@ -1,7 +1,8 @@
 # BetaAppClipInvocationLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized title displayed to beta testers for a specific App Clip invocation.
 
@@ -10,14 +11,14 @@ The localized title displayed to beta testers for a specific App Clip invocation
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocationLocalization.Attributes](betaappclipinvocationlocalization/attributes-data.dictionary.md)
+- [object BetaAppClipInvocationLocalization.Attributes](./betaappclipinvocationlocalization/attributes-data.dictionary.md)
   The attributes that describe a Beta App Clip Invocation Localizations resource.
 
 ## Properties
@@ -27,13 +28,16 @@ object BetaAppClipInvocationLocalization
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `betaAppClipInvocationLocalizations`
+
 ## See Also
 
-- [object BetaAppClipInvocationLocalizationCreateRequest](betaappclipinvocationlocalizationcreaterequest.md)
+### Objects
+- [object BetaAppClipInvocationLocalizationCreateRequest](./betaappclipinvocationlocalizationcreaterequest.md)
   The request body you use to create a Beta App Clip Localization.
-- [object BetaAppClipInvocationLocalizationUpdateRequest](betaappclipinvocationlocalizationupdaterequest.md)
+- [object BetaAppClipInvocationLocalizationUpdateRequest](./betaappclipinvocationlocalizationupdaterequest.md)
   The request body you use to update localized text that appears on the App Clip card for testers.
-- [object BetaAppClipInvocationLocalizationResponse](betaappclipinvocationlocalizationresponse.md)
+- [object BetaAppClipInvocationLocalizationResponse](./betaappclipinvocationlocalizationresponse.md)
   A response containing a single localized title for a beta App Clip invocation.
 
 

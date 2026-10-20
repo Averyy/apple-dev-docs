@@ -1,7 +1,8 @@
 # hasSuffix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -20,7 +21,8 @@ func hasSuffix(_ suffix: String) -> Bool
 
 ## See Also
 
-- [func hasPrefix(String) -> Bool](string/hasprefix(_:).md)
+### Finding Substrings
+- [func hasPrefix(String) -> Bool](./hasprefix%28_%29.md)
 
 
 ---

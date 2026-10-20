@@ -1,7 +1,8 @@
 # longEraSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of long era symbols for this calendar.
 
@@ -20,9 +21,14 @@ A list of long era symbols for this calendar.
 var longEraSymbols: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * longEraSymbols;
+```
+
 ## See Also
 
-- [var eraSymbols: [String]](nscalendar/erasymbols.md)
+### Getting Era Symbols
+- [var eraSymbols: [String]](./erasymbols.md)
   A list of era symbols for this calendar.
 
 

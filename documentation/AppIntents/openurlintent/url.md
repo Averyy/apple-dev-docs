@@ -1,7 +1,8 @@
 # url
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The universal link you use to locate your app’s content.
 

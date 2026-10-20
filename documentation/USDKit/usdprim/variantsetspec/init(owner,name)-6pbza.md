@@ -1,7 +1,8 @@
 # init(owner:name:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new variant set spec under the given prim spec.
 

@@ -1,14 +1,17 @@
 # displayedProperties
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties (such as name or telephone number) the picker displays when it shows a person.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`CNContactPickerViewController`](../../ContactsUI/cncontactpickerviewcontroller.md) instead.
 
 ## Declaration
 
@@ -16,9 +19,13 @@ The properties (such as name or telephone number) the picker displays when it sh
 var displayedProperties: [NSNumber]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSNumber *> * displayedProperties;
+```
+
 #### Discussion
 
-Objects in the array are instances of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that represent [`ABPropertyID`](https://developer.apple.com/documentation/addressbook/abpropertyid) values.
+Objects in the array are instances of [`NSNumber`](../../Foundation/nsnumber.md) that represent [`ABPropertyID`](../../AddressBook/abpropertyid.md) values.
 
 The name property is always displayed if available.
 

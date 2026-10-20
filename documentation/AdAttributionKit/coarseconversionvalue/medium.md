@@ -1,7 +1,8 @@
 # CoarseConversionValue.medium
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a developer-defined, coarse conversion value that is medium.
 

@@ -1,7 +1,8 @@
 # GKPlayerConnectionState.disconnected
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state in which a player disconnects from the match and can’t receive data.
 
@@ -20,11 +21,16 @@ A state in which a player disconnects from the match and can’t receive data.
 case disconnected
 ```
 
+```c
+GKPlayerStateDisconnected
+```
+
 ## See Also
 
-- [GKPlayerConnectionState.unknown](gkplayerconnectionstate/unknown.md)
+### States
+- [GKPlayerConnectionState.unknown](./unknown.md)
   An undetermined state in which the player can’t receive data.
-- [GKPlayerConnectionState.connected](gkplayerconnectionstate/connected.md)
+- [GKPlayerConnectionState.connected](./connected.md)
   A state in which a player connects to the match and can receive data.
 
 

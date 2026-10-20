@@ -1,7 +1,8 @@
 # durationOptions
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration options for the challenge, like `1 day` or `1 week`.
 
@@ -20,6 +21,10 @@ The duration options for the challenge, like `1 day` or `1 week`.
 var durationOptions: [DateComponents] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSDateComponents *> * durationOptions;
+```
+
 #### Discussion
 
 > **Note**: If set, the amount of weeks is stored in the `weekOfYear` field.
@@ -28,7 +33,8 @@ var durationOptions: [DateComponents] { get }
 
 ## See Also
 
-- [var isRepeatable: Bool](gkchallengedefinition/isrepeatable.md)
+### Getting the challenge rules
+- [var isRepeatable: Bool](./isrepeatable.md)
   Indicates if a challenge can be attempted more than once.
 
 

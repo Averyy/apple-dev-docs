@@ -1,7 +1,8 @@
 # countOfBytesClientExpectsToReceive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A best-guess upper bound on the number of bytes the client expects to receive.
 
@@ -20,21 +21,26 @@ A best-guess upper bound on the number of bytes the client expects to receive.
 var countOfBytesClientExpectsToReceive: Int64 { get set }
 ```
 
+```objc
+@property int64_t countOfBytesClientExpectsToReceive;
+```
+
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files in the background](../downloading-files-in-the-background.md)
 
 #### Discussion
 
-The value set for this property should account for the size of both HTTP response headers and the response body. If no value is specified, the system uses [`NSURLSessionTransferSizeUnknown`](nsurlsessiontransfersizeunknown.md) instead. This property is used by the system to optimize the scheduling of URL session tasks. Developers are strongly encouraged to provide an approximate upper bound, or an exact byte count, if possible, rather than accept the default.
+The value set for this property should account for the size of both HTTP response headers and the response body. If no value is specified, the system uses [`NSURLSessionTransferSizeUnknown`](../nsurlsessiontransfersizeunknown.md) instead. This property is used by the system to optimize the scheduling of URL session tasks. Developers are strongly encouraged to provide an approximate upper bound, or an exact byte count, if possible, rather than accept the default.
 
 ## See Also
 
-- [var countOfBytesClientExpectsToSend: Int64](urlsessiontask/countofbytesclientexpectstosend.md)
+### Scheduling tasks
+- [var countOfBytesClientExpectsToSend: Int64](./countofbytesclientexpectstosend.md)
   A best-guess upper bound on the number of bytes the client expects to send.
-- [let NSURLSessionTransferSizeUnknown: Int64](nsurlsessiontransfersizeunknown.md)
+- [let NSURLSessionTransferSizeUnknown: Int64](../nsurlsessiontransfersizeunknown.md)
   The total size of the transfer cannot be determined.
-- [var earliestBeginDate: Date?](urlsessiontask/earliestbegindate.md)
+- [var earliestBeginDate: Date?](./earliestbegindate.md)
   The earliest date at which the network load should begin.
 
 

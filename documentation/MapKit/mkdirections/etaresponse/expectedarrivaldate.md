@@ -1,7 +1,8 @@
 # expectedArrivalDate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected arrival time.
 
@@ -20,19 +21,24 @@ The expected arrival time.
 var expectedArrivalDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * expectedArrivalDate;
+```
+
 #### Discussion
 
-The value of this property is dependent on whether you specify a departure date or arrival date in your [`MKDirections.Request`](mkdirections/request.md) object. If you specify a departure date, the framework computes the date in this property by starting at your departure date and adding the expected travel time. If you specify an arrival time, but not a departure date, the framework sets this property to your arrival time. If you don’t specify an arrival date or departure date, the framework sets this property to the date that results by adding the travel time to the current time.
+The value of this property is dependent on whether you specify a departure date or arrival date in your [`MKDirections.Request`](../request.md) object. If you specify a departure date, the framework computes the date in this property by starting at your departure date and adding the expected travel time. If you specify an arrival time, but not a departure date, the framework sets this property to your arrival time. If you don’t specify an arrival date or departure date, the framework sets this property to the date that results by adding the travel time to the current time.
 
 ## See Also
 
-- [var expectedTravelTime: TimeInterval](mkdirections/etaresponse/expectedtraveltime.md)
+### Getting the travel information
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var expectedDepartureDate: Date](mkdirections/etaresponse/expecteddeparturedate.md)
+- [var expectedDepartureDate: Date](./expecteddeparturedate.md)
   The expected departure time.
-- [var distance: CLLocationDistance](mkdirections/etaresponse/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The expected travel distance, in meters.
-- [var transportType: MKDirectionsTransportType](mkdirections/etaresponse/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The type of conveyance to use for determining the travel time.
 
 

@@ -1,7 +1,8 @@
 # languageModel
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of a compiled language model file.
 
@@ -18,11 +19,16 @@ The location of a compiled language model file.
 var languageModel: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * languageModel;
+```
+
 ## See Also
 
-- [var vocabulary: URL?](sfspeechlanguagemodel/configuration/vocabulary.md)
+### Inspecting a language model
+- [var vocabulary: URL?](./vocabulary.md)
   The location of a compiled vocabulary file.
-- [var weight: NSNumber?](sfspeechlanguagemodel/configuration/weight.md)
+- [var weight: NSNumber?](./weight.md)
   The relative weight of the language model customization. Value must be between 0.0 and 1.0 inclusive.
 
 

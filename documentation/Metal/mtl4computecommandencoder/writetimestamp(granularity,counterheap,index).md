@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes a GPU timestamp into a heap.
@@ -20,19 +21,23 @@ Writes a GPU timestamp into a heap.
 func writeTimestamp(granularity: MTL4TimestampGranularity, counterHeap: any MTL4CounterHeap, index: Int)
 ```
 
+```objc
+- (void) writeTimestampWithGranularity:(MTL4TimestampGranularity) granularity intoHeap:(id<MTL4CounterHeap>) counterHeap atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 The method ensures that any prior work finishes, but doesn’t delay any subsequent work.
 
 You can alter this command’s behavior through the `granularity` parameter.
 
-- Pass [`MTL4TimestampGranularity.relaxed`](mtl4timestampgranularity/relaxed.md) to allow Metal to provide timestamps with minimal impact to runtime performance, but with less detail. For example, the command may group all timestamps for a pass together.
-- Pass [`MTL4TimestampGranularity.precise`](mtl4timestampgranularity/precise.md) to request that Metal provides timestamps with the most detail. This can affect runtime performance.
+- Pass [`MTL4TimestampGranularity.relaxed`](../mtl4timestampgranularity/relaxed.md) to allow Metal to provide timestamps with minimal impact to runtime performance, but with less detail. For example, the command may group all timestamps for a pass together.
+- Pass [`MTL4TimestampGranularity.precise`](../mtl4timestampgranularity/precise.md) to request that Metal provides timestamps with the most detail. This can affect runtime performance.
 
 ## Parameters
 
-- `granularity`: [`MTL4TimestampGranularity`](mtl4timestampgranularity.md) hint to Metal about acceptable the level of precision.
-- `counterHeap`: [`MTL4CounterHeap`](mtl4counterheap.md) to write timestamps into.
+- `granularity`: [`MTL4TimestampGranularity`](../mtl4timestampgranularity.md) hint to Metal about acceptable the level of precision.
+- `counterHeap`: [`MTL4CounterHeap`](../mtl4counterheap.md) to write timestamps into.
 - `index`: The index value into which Metal writes the timestamp.
 
 

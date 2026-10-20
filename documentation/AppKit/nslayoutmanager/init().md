@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly created layout manager object.
 
@@ -14,13 +15,18 @@ Initializes a newly created layout manager object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 This method is the designated initializer for the `NSLayoutManager` class. Returns an initialized object.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nslayoutmanager/init(coder:).md)
+### Creating a layout manager
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a layout manager from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # outOfMemory
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
 
@@ -21,11 +22,12 @@ static var outOfMemory: MTLCounterSampleBufferError.Code { get }
 
 ## See Also
 
-- [static var invalid: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/invalid.md)
+### Error code values
+- [static var invalid: MTLCounterSampleBufferError.Code](./invalid.md)
   An error code that indicates the descriptor for creating a counter sample buffer descriptor has an invalid property.
-- [static var `internal`: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/internal.md)
+- [static var `internal`: MTLCounterSampleBufferError.Code](./internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/code.md)
+- [MTLCounterSampleBufferError.Code](./code.md)
   The underlying error code type that indicates why a GPU driver can’t create a counter sample buffer.
 
 

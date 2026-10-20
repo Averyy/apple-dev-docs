@@ -1,7 +1,8 @@
 # hasItemsConforming(to:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether at least one item conforms to at least one of the specified uniform type identifiers.
 
@@ -18,6 +19,12 @@ Indicates whether at least one item conforms to at least one of the specified un
 func hasItemsConforming(to contentTypes: [UTType]) -> Bool
 ```
 
+**Other overloads**:
+
+```swift
+func hasItemsConforming(to types: [String]) -> Bool
+```
+
 #### Return Value
 
 Whether at least one item conforms to one of `contentTypes`.
@@ -28,7 +35,8 @@ Whether at least one item conforms to one of `contentTypes`.
 
 ## See Also
 
-- [func itemProviders(for: [UTType]) -> [NSItemProvider]](dropinfo/itemproviders(for:)-93409.md)
+### Checking for items
+- [func itemProviders(for: [UTType]) -> [NSItemProvider]](./itemproviders%28for%29-93409.md)
   Finds item providers that conform to at least one of the specified uniform type identifiers.
 
 

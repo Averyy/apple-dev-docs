@@ -1,7 +1,8 @@
 # SAAuthorizationStatus.notDetermined
 
 **Framework**: SafetyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There isn’t a designated app for receiving Crash Detection events.
 
@@ -18,11 +19,16 @@ There isn’t a designated app for receiving Crash Detection events.
 case notDetermined
 ```
 
+```c
+SAAuthorizationStatusNotDetermined
+```
+
 ## See Also
 
-- [SAAuthorizationStatus.authorized](saauthorizationstatus/authorized.md)
+### Obtaining status
+- [SAAuthorizationStatus.authorized](./authorized.md)
   This is the designated app for receiving Crash Detection events.
-- [SAAuthorizationStatus.denied](saauthorizationstatus/denied.md)
+- [SAAuthorizationStatus.denied](./denied.md)
   The system denies the app from receiving Crash Detection events because another app has authorization.
 
 

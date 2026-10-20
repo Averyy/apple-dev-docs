@@ -1,14 +1,15 @@
 # kVideoSimpleI2CTypeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kVideoSimpleI2CTypeMask = (1 << kVideoSimpleI2CType)
 ```
 

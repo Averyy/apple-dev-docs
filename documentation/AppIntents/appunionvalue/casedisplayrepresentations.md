@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A dictionary that maps each case to the visual elements that represent it.
@@ -20,6 +21,12 @@ A dictionary that maps each case to the visual elements that represent it.
 ```swift
 static var caseDisplayRepresentations: [Self.Cases : DisplayRepresentation] { get }
 ```
+
+## Default Implementations
+
+### AppUnionValue Implementations
+- [static var caseDisplayRepresentations: [Self.Cases : DisplayRepresentation]](./casedisplayrepresentations-5ajs2.md)
+  Default implementation providing an empty case display representations dictionary.
 
 
 ---

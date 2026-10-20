@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the loss type, suitable for debugging.
 
@@ -18,17 +19,22 @@ A textual description of the loss type, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCLossTypeDebugDescription(MLCLossType lossType);
+```
+
 ## See Also
 
-- [MLCLossType.categoricalCrossEntropy](mlclosstype/categoricalcrossentropy.md)
-- [MLCLossType.cosineDistance](mlclosstype/cosinedistance.md)
-- [MLCLossType.hinge](mlclosstype/hinge.md)
-- [MLCLossType.huber](mlclosstype/huber.md)
-- [MLCLossType.log](mlclosstype/log.md)
-- [MLCLossType.meanAbsoluteError](mlclosstype/meanabsoluteerror.md)
-- [MLCLossType.meanSquaredError](mlclosstype/meansquarederror.md)
-- [MLCLossType.sigmoidCrossEntropy](mlclosstype/sigmoidcrossentropy.md)
-- [MLCLossType.softmaxCrossEntropy](mlclosstype/softmaxcrossentropy.md)
+### Enumeration Cases
+- [MLCLossType.categoricalCrossEntropy](./categoricalcrossentropy.md)
+- [MLCLossType.cosineDistance](./cosinedistance.md)
+- [MLCLossType.hinge](./hinge.md)
+- [MLCLossType.huber](./huber.md)
+- [MLCLossType.log](./log.md)
+- [MLCLossType.meanAbsoluteError](./meanabsoluteerror.md)
+- [MLCLossType.meanSquaredError](./meansquarederror.md)
+- [MLCLossType.sigmoidCrossEntropy](./sigmoidcrossentropy.md)
+- [MLCLossType.softmaxCrossEntropy](./softmaxcrossentropy.md)
 
 
 ---

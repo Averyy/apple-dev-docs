@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: USDKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the variant set with the specified name, or `nil` if no variant set with that name exists on the prim.
 

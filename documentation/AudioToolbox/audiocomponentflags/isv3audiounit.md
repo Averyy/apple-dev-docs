@@ -1,7 +1,8 @@
 # isV3AudioUnit
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -17,12 +18,17 @@
 static var isV3AudioUnit: AudioComponentFlags { get }
 ```
 
+```c
+kAudioComponentFlag_IsV3AudioUnit
+```
+
 ## See Also
 
-- [static var unsearchable: AudioComponentFlags](audiocomponentflags/unsearchable.md)
-- [static var sandboxSafe: AudioComponentFlags](audiocomponentflags/sandboxsafe.md)
-- [static var requiresAsyncInstantiation: AudioComponentFlags](audiocomponentflags/requiresasyncinstantiation.md)
-- [static var canLoadInProcess: AudioComponentFlags](audiocomponentflags/canloadinprocess.md)
+### Flags
+- [static var unsearchable: AudioComponentFlags](./unsearchable.md)
+- [static var sandboxSafe: AudioComponentFlags](./sandboxsafe.md)
+- [static var requiresAsyncInstantiation: AudioComponentFlags](./requiresasyncinstantiation.md)
+- [static var canLoadInProcess: AudioComponentFlags](./canloadinprocess.md)
 
 
 ---

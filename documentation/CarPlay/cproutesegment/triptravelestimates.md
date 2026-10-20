@@ -1,7 +1,8 @@
 # tripTravelEstimates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 tripTravelEstimates is a CPTravelEstimates object, describing the travel estimates for the current trip.
 
@@ -15,6 +16,10 @@ tripTravelEstimates is a CPTravelEstimates object, describing the travel estimat
 ```swift
 @NSCopying
 var tripTravelEstimates: CPTravelEstimates { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CPTravelEstimates * tripTravelEstimates;
 ```
 
 

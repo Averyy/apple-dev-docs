@@ -1,7 +1,8 @@
 # MTL4CompilerTaskStatus.scheduled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The compiler task is currently scheduled.
 
@@ -17,6 +18,10 @@ The compiler task is currently scheduled.
 
 ```swift
 case scheduled
+```
+
+```c
+MTL4CompilerTaskStatusScheduled
 ```
 
 

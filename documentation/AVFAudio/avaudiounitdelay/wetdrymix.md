@@ -1,7 +1,8 @@
 # wetDryMix
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend of the wet and dry signals.
 
@@ -19,17 +20,22 @@ The blend of the wet and dry signals.
 var wetDryMix: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float wetDryMix;
+```
+
 #### Discussion
 
 You specify the blend as a percentage. The default value is `100%`. The valid range of values is `0%` through `100%`, where `0%` represents all dry.
 
 ## See Also
 
-- [var delayTime: TimeInterval](avaudiounitdelay/delaytime.md)
+### Configuring the delay
+- [var delayTime: TimeInterval](./delaytime.md)
   The time for the input signal to reach the output.
-- [var feedback: Float](avaudiounitdelay/feedback.md)
+- [var feedback: Float](./feedback.md)
   The amount of the output signal that feeds back into the delay line.
-- [var lowPassCutoff: Float](avaudiounitdelay/lowpasscutoff.md)
+- [var lowPassCutoff: Float](./lowpasscutoff.md)
   The cutoff frequency above which high frequency content rolls off, in hertz.
 
 

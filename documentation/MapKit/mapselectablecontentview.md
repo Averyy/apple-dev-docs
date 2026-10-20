@@ -1,13 +1,14 @@
 # MapSelectableContentView
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,22 @@
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
+### Structures
+- [struct DefaultUserAnnotationContent](./defaultuserannotationcontent.md)
   A structure that represents the view to show at the user’s location on the map.
-- [struct EmptyMapContent](emptymapcontent.md)
+- [struct EmptyMapContent](./emptymapcontent.md)
   A map content element that doesn’t contain any content.
-- [struct MapProxy](mapproxy.md)
+- [struct MapProxy](./mapproxy.md)
   A proxy for accessing sizing information about a given map view.
-- [struct MapReader](mapreader.md)
+- [struct MapReader](./mapreader.md)
   A container view that defines its contents as a function of information about the first contained map.
-- [struct TupleMapContent](tuplemapcontent.md)
+- [struct TupleMapContent](./tuplemapcontent.md)
   A view created from a Swift tuple of map content values.
 
 

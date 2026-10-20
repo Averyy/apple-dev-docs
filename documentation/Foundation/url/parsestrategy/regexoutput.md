@@ -1,7 +1,8 @@
 # URL.ParseStrategy.RegexOutput
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type returned when capturing matching substrings with this strategy.
 
@@ -22,7 +23,7 @@ typealias RegexOutput = URL
 
 #### Discussion
 
-This strategy returns the [`URL`](url.md) type when performing regex capture.
+This strategy returns the [`URL`](../../url.md) type when performing regex capture.
 
 
 ---

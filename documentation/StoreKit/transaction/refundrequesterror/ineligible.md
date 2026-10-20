@@ -1,7 +1,8 @@
 # Transaction.RefundRequestError.ineligible
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

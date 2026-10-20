@@ -1,7 +1,8 @@
 # CommunicationHandle.Kind.emailAddress
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person’s email address.
 
@@ -20,9 +21,10 @@ case emailAddress
 
 ## See Also
 
-- [CommunicationHandle.Kind.phoneNumber](communicationhandle/kind-swift.enum/phonenumber.md)
+### Identifying a handle type
+- [CommunicationHandle.Kind.phoneNumber](./phonenumber.md)
   A person’s phone number.
-- [CommunicationHandle.Kind.custom](communicationhandle/kind-swift.enum/custom.md)
+- [CommunicationHandle.Kind.custom](./custom.md)
   A unique identifier that distinguishes one person from another.
 
 

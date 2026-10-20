@@ -1,7 +1,8 @@
 # setCustomIconSizeSlider(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func setCustomIconSizeSlider(_ slider: NSSlider!)
+```
+
+```objc
+- (void) setCustomIconSizeSlider:(NSSlider *) slider;
 ```
 
 

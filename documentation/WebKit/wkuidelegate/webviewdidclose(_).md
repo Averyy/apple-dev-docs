@@ -1,7 +1,8 @@
 # webViewDidClose(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your app that the DOM window closed successfully.
 
@@ -18,6 +19,10 @@ Notifies your app that the DOM window closed successfully.
 optional func webViewDidClose(_ webView: WKWebView)
 ```
 
+```objc
+- (void) webViewDidClose:(WKWebView *) webView;
+```
+
 #### Discussion
 
 Your app should remove the web view from the view hierarchy and update the UI as needed, for instance by closing the containing browser tab or window.
@@ -28,7 +33,8 @@ Your app should remove the web view from the view hierarchy and update the UI as
 
 ## See Also
 
-- [func webView(WKWebView, createWebViewWith: WKWebViewConfiguration, for: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?](wkuidelegate/webview(_:createwebviewwith:for:windowfeatures:).md)
+### Creating and closing the web view
+- [func webView(WKWebView, createWebViewWith: WKWebViewConfiguration, for: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?](./webview%28_,createwebviewwith,for,windowfeatures%29.md)
   Creates a new web view.
 
 

@@ -1,12 +1,13 @@
 # NSBorderType.bezelBorder
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A concave border that makes the view look sunken.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A concave border that makes the view look sunken.
 case bezelBorder
 ```
 
+```c
+NSBezelBorder
+```
+
 ## See Also
 
-- [NSBorderType.grooveBorder](nsbordertype/grooveborder.md)
+### Constants
+- [NSBorderType.grooveBorder](./grooveborder.md)
   A thin border that looks etched around the image.
-- [NSBorderType.lineBorder](nsbordertype/lineborder.md)
+- [NSBorderType.lineBorder](./lineborder.md)
   A black line border around the view.
-- [NSBorderType.noBorder](nsbordertype/noborder.md)
+- [NSBorderType.noBorder](./noborder.md)
   No border.
 
 

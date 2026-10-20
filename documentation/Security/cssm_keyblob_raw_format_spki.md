@@ -1,7 +1,8 @@
 # CSSM_KEYBLOB_RAW_FORMAT_SPKI
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KEYBLOB_RAW_FORMAT_SPKI: UInt32 { get }
+```
+
+```c
+CSSM_KEYBLOB_RAW_FORMAT_SPKI
 ```
 
 

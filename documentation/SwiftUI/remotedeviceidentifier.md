@@ -1,9 +1,10 @@
 # RemoteDeviceIdentifier
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-An opaque type that identifies a remote device displaying scene content in a [`RemoteImmersiveSpace`](remoteimmersivespace.md).
+An opaque type that identifies a remote device displaying scene content in a [`RemoteImmersiveSpace`](./remoteimmersivespace.md).
 
 **Availability**:
 - macOS 26.0+
@@ -17,7 +18,7 @@ struct RemoteDeviceIdentifier
 
 #### Overview
 
-Access this from the [`remoteDeviceIdentifier`](environmentvalues/remotedeviceidentifier.md) environment property in a remote scene to get the identifier for that scene’s device.
+Access this from the [`remoteDeviceIdentifier`](./environmentvalues/remotedeviceidentifier.md) environment property in a remote scene to get the identifier for that scene’s device.
 
 When accessed in a context that is being presented on the local device, this value will be `nil`.
 
@@ -52,20 +53,21 @@ struct SolarSystem: CompositorContent {
 ## Topics
 
 ### Instance Properties
-- [var cDevice: ar_device_t](remotedeviceidentifier/cdevice.md)
+- [var cDevice: ar_device_t](./remotedeviceidentifier/cdevice.md)
   Returns the `ar_device` associated with this device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct RemoteImmersiveSpace](remoteimmersivespace.md)
+### Handling remote immersive spaces
+- [struct RemoteImmersiveSpace](./remoteimmersivespace.md)
   A scene that presents its content in an unbounded space on a remote device.
 
 

@@ -1,6 +1,7 @@
 # Troubleshooting your Safari app extension
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Debug your Safari app extension with these techniques.
 
@@ -8,9 +9,9 @@ Debug your Safari app extension with these techniques.
 
 Here are a few options for debugging your Safari app extension:
 
-**Check website access permissions.** Make sure your website access permissions and allowed domain patterns are right. For more details, see [`Adjusting website access permissions`](adjusting-website-access-permissions.md).
+**Check website access permissions.** Make sure your website access permissions and allowed domain patterns are right. For more details, see [Adjusting website access permissions](./adjusting-website-access-permissions.md).
 
-**Check URL patterns.** Make sure your URL patterns are right. For more details, see [`Specify URL patterns`](using-permissions-for-scripts-and-style-sheets#Specify-URL-patterns.md).
+**Check URL patterns.** Make sure your URL patterns are right. For more details, see [Specify URL patterns](./using-permissions-for-scripts-and-style-sheets.md#Specify-URL-patterns).
 
 **Update the deployment target.** Check that the deployment target for your app is set to the system you are testing on.
 
@@ -32,9 +33,10 @@ console.log("injection script on " + document.location.href);
 
 ## See Also
 
-- [Building a Safari app extension](building-a-safari-app-extension.md)
+### Essentials
+- [Building a Safari app extension](./building-a-safari-app-extension.md)
   Add, build, and enable a Safari app extension.
-- [Converting a legacy Safari extension to a Safari app extension](converting-a-legacy-safari-extension-to-a-safari-app-extension.md)
+- [Converting a legacy Safari extension to a Safari app extension](./converting-a-legacy-safari-extension-to-a-safari-app-extension.md)
   Convert a legacy Safari extension to a Safari app extension, automatically with keys or manually.
 
 

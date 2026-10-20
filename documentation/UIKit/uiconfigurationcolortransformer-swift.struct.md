@@ -1,7 +1,8 @@
 # UIConfigurationColorTransformer
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that generates a modified output color from an input color.
 
@@ -10,7 +11,7 @@ A transformer that generates a modified output color from an input color.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,18 +28,18 @@ Because color transformers can use the same base input color to produce a number
 ## Topics
 
 ### Creating a color transformer
-- [init((UIColor) -> UIColor)](uiconfigurationcolortransformer-swift.struct/init(_:).md)
+- [init((UIColor) -> UIColor)](./uiconfigurationcolortransformer-swift.struct/init%28_%29.md)
   Creates a color transformer with the specified closure.
-- [static let grayscale: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/grayscale.md)
+- [static let grayscale: UIConfigurationColorTransformer](./uiconfigurationcolortransformer-swift.struct/grayscale.md)
   Creates a color transformer that generates a grayscale version of the color.
-- [static let preferredTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/preferredtint.md)
+- [static let preferredTint: UIConfigurationColorTransformer](./uiconfigurationcolortransformer-swift.struct/preferredtint.md)
   A color transformer that returns the preferred system accent color.
-- [static let monochromeTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/monochrometint.md)
+- [static let monochromeTint: UIConfigurationColorTransformer](./uiconfigurationcolortransformer-swift.struct/monochrometint.md)
   A color transformer that returns the color with a monochrome tint.
 ### Calling the color transformer
-- [let transform: (UIColor) -> UIColor](uiconfigurationcolortransformer-swift.struct/transform.md)
+- [let transform: (UIColor) -> UIColor](./uiconfigurationcolortransformer-swift.struct/transform.md)
   The transform closure of the color transformer.
-- [func callAsFunction(UIColor) -> UIColor](uiconfigurationcolortransformer-swift.struct/callasfunction(_:).md)
+- [func callAsFunction(UIColor) -> UIColor](./uiconfigurationcolortransformer-swift.struct/callasfunction%28_%29.md)
   Calls the transform closure of the color transformer.
 
 

@@ -1,10 +1,13 @@
 # init()
 
 **Framework**: OSLog  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 12.0
+
+> **Deprecated**: Use one of the factory methods
 
 ## Declaration
 
@@ -12,9 +15,14 @@
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(scope: OSLogStore.Scope) throws](oslogstore/init(scope:).md)
+### Initializers
+- [convenience init(scope: OSLogStore.Scope) throws](./init%28scope%29.md)
 
 
 ---

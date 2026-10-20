@@ -1,7 +1,8 @@
 # Entity.ConfigurationCatalog.Configuration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents an alternative that you can choose.
 
@@ -22,24 +23,25 @@ struct Configuration
 ## Topics
 
 ### Creating a configuration
-- [init(id: String)](entity/configurationcatalog/configuration/init(id:).md)
+- [init(id: String)](./configuration/init%28id%29.md)
   Creates a configuration with an identifier.
 ### Accessing a configuration’s name
-- [var id: String](entity/configurationcatalog/configuration/id.md)
+- [var id: String](./configuration/id.md)
   A name that identifies the configuration.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../../../Swift/identifiable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Entity.ConfigurationCatalog.ConfigurationSet](entity/configurationcatalog/configurationset.md)
+### Defining configuration choices
+- [Entity.ConfigurationCatalog.ConfigurationSet](./configurationset.md)
   A collection of alternatives to choose from.
-- [Entity.ConfigurationCatalog.ConfigurationCombination](entity/configurationcatalog/configurationcombination.md)
+- [Entity.ConfigurationCatalog.ConfigurationCombination](./configurationcombination.md)
   A type that associates an entity with a combination of configurations.
 
 

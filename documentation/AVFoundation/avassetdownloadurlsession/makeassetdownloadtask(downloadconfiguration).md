@@ -1,7 +1,8 @@
 # makeAssetDownloadTask(downloadConfiguration:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a download task that uses the specified configuration.
 
@@ -19,6 +20,10 @@ Creates a download task that uses the specified configuration.
 func makeAssetDownloadTask(downloadConfiguration: AVAssetDownloadConfiguration) -> AVAssetDownloadTask
 ```
 
+```objc
+- (AVAssetDownloadTask *) assetDownloadTaskWithConfiguration:(AVAssetDownloadConfiguration *) downloadConfiguration;
+```
+
 #### Return Value
 
 A new download task.
@@ -33,13 +38,14 @@ This method raises an exception if you call it on an invalidated session.
 
 ## See Also
 
-- [class AVAssetDownloadConfiguration](avassetdownloadconfiguration.md)
+### Creating download tasks
+- [class AVAssetDownloadConfiguration](../avassetdownloadconfiguration.md)
   An object that provides the configuration for a download task.
-- [func makeAssetDownloadTask(asset: AVURLAsset, assetTitle: String, assetArtworkData: Data?, options: [String : Any]?) -> AVAssetDownloadTask?](avassetdownloadurlsession/makeassetdownloadtask(asset:assettitle:assetartworkdata:options:).md)
+- [func makeAssetDownloadTask(asset: AVURLAsset, assetTitle: String, assetArtworkData: Data?, options: [String : Any]?) -> AVAssetDownloadTask?](./makeassetdownloadtask%28asset,assettitle,assetartworkdata,options%29.md)
   Creates a download task to download the asset.
-- [func aggregateAssetDownloadTask(with: AVURLAsset, mediaSelections: [AVMediaSelection], assetTitle: String, assetArtworkData: Data?, options: [String : Any]?) -> AVAggregateAssetDownloadTask?](avassetdownloadurlsession/aggregateassetdownloadtask(with:mediaselections:assettitle:assetartworkdata:options:).md)
+- [func aggregateAssetDownloadTask(with: AVURLAsset, mediaSelections: [AVMediaSelection], assetTitle: String, assetArtworkData: Data?, options: [String : Any]?) -> AVAggregateAssetDownloadTask?](./aggregateassetdownloadtask%28with,mediaselections,assettitle,assetartworkdata,options%29.md)
   Creates a download task to download the asset and media selections.
-- [func makeAssetDownloadTask(asset: AVURLAsset, destinationURL: URL, options: [String : Any]?) -> AVAssetDownloadTask?](avassetdownloadurlsession/makeassetdownloadtask(asset:destinationurl:options:).md)
+- [func makeAssetDownloadTask(asset: AVURLAsset, destinationURL: URL, options: [String : Any]?) -> AVAssetDownloadTask?](./makeassetdownloadtask%28asset,destinationurl,options%29.md)
   Creates a download task to download the asset to the indicated location.
 
 

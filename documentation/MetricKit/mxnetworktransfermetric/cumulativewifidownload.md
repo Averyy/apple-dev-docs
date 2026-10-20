@@ -1,16 +1,19 @@
 # cumulativeWifiDownload
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total amount of data downloaded over the WiFi connection.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`TotalWiFiDownloadMetric`](../totalwifidownloadmetric.md) instead.
 
 ## Declaration
 
@@ -18,13 +21,18 @@ The total amount of data downloaded over the WiFi connection.
 var cumulativeWifiDownload: Measurement<UnitInformationStorage> { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) NSMeasurement<NSUnitInformationStorage *> * cumulativeWifiDownload;
+```
+
 ## See Also
 
-- [var cumulativeCellularDownload: Measurement<UnitInformationStorage>](mxnetworktransfermetric/cumulativecellulardownload.md)
+### Reading wireless data use
+- [var cumulativeCellularDownload: Measurement<UnitInformationStorage>](./cumulativecellulardownload.md)
   The total amount of data downloaded over the cellular connection.
-- [var cumulativeCellularUpload: Measurement<UnitInformationStorage>](mxnetworktransfermetric/cumulativecellularupload.md)
+- [var cumulativeCellularUpload: Measurement<UnitInformationStorage>](./cumulativecellularupload.md)
   The total amount of data uploaded over the cellular connection.
-- [var cumulativeWifiUpload: Measurement<UnitInformationStorage>](mxnetworktransfermetric/cumulativewifiupload.md)
+- [var cumulativeWifiUpload: Measurement<UnitInformationStorage>](./cumulativewifiupload.md)
   The total amount of data uploaded over the WiFi connection.
 
 

@@ -1,7 +1,8 @@
 # pairedDeviceIdentifiers()
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the UUIDs of the hearing device peripherals.
 
@@ -18,13 +19,17 @@ Returns the UUIDs of the hearing device peripherals.
 static func pairedDeviceIdentifiers() -> [UUID]
 ```
 
+```c
+extern NSArray<NSUUID *> *AXMFiHearingDevicePairedUUIDs();
+```
+
 #### Return Value
 
-An array of [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) objects that represent the [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) UUIDs of the hearing device peripherals.
+An array of [`NSUUID`](../../Foundation/nsuuid.md) objects that represent the [Core Bluetooth](../../CoreBluetooth/CoreBluetooth.md) UUIDs of the hearing device peripherals.
 
 #### Discussion
 
-This function returns each [`CBPeripheral`](https://developer.apple.com/documentation/corebluetooth/cbperipheral) with a manufacturer that matches the manufacturer in your app’s `hearing.aid.app` entitlement. For bimodal hearing devices, specify an array of manufacturers for this entitlement.
+This function returns each [`CBPeripheral`](../../CoreBluetooth/cbperipheral.md) with a manufacturer that matches the manufacturer in your app’s `hearing.aid.app` entitlement. For bimodal hearing devices, specify an array of manufacturers for this entitlement.
 
 Find and connect to the matching hearing device peripherals like this:
 
@@ -38,7 +43,8 @@ for peripheral in peripherals where peripheral.state == .connected {
 
 ## See Also
 
-- [static let pairedUUIDsDidChangeNotification: NSNotification.Name](axmfihearingdevice/paireduuidsdidchangenotification.md)
+### Paired hearing devices
+- [static let pairedUUIDsDidChangeNotification: NSNotification.Name](./paireduuidsdidchangenotification.md)
   A notification that the system posts when there’s a change to the UUIDs of the hearing device peripherals.
 
 

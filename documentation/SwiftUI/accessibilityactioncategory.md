@@ -1,7 +1,8 @@
 # AccessibilityActionCategory
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Designates an accessibility action category that is provided and named by the system.
 
@@ -23,46 +24,47 @@ struct AccessibilityActionCategory
 ## Topics
 
 ### Initializers
-- [init(_:)](accessibilityactioncategory/init(_:).md)
+- [init(_:)](./accessibilityactioncategory/init%28_%29.md)
   Creates a custom action category labeled by `nameResource`.
 ### Type Properties
-- [static let `default`: AccessibilityActionCategory](accessibilityactioncategory/default.md)
+- [static let `default`: AccessibilityActionCategory](./accessibilityactioncategory/default.md)
   An accessibility action category for the default actions of a view. This category replaces the system provided actions rotor for accessibility technologies like VoiceOver.
-- [static let edit: AccessibilityActionCategory](accessibilityactioncategory/edit.md)
+- [static let edit: AccessibilityActionCategory](./accessibilityactioncategory/edit.md)
   An accessibility action category for associating actions related to editing text. This category replaces the system provided Edit actions for accessibility technologies like VoiceOver.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessibilityAction(AccessibilityActionKind, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaction(_:_:).md)
+### Adding actions to views
+- [func accessibilityAction(AccessibilityActionKind, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityaction%28_,_%29.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityActions<Content>(() -> Content) -> some View](view/accessibilityactions(_:).md)
+- [func accessibilityActions<Content>(() -> Content) -> some View](./view/accessibilityactions%28_%29.md)
   Adds multiple accessibility actions to the view.
-- [func accessibilityAction(named:_:)](view/accessibilityaction(named:_:).md)
+- [func accessibilityAction(named:_:)](./view/accessibilityaction%28named,_%29.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View](view/accessibilityaction(action:label:).md)
+- [func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View](./view/accessibilityaction%28action,label%29.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<I, Label>(intent: I, label: () -> Label) -> some View](view/accessibilityaction(intent:label:).md)
+- [func accessibilityAction<I, Label>(intent: I, label: () -> Label) -> some View](./view/accessibilityaction%28intent,label%29.md)
   Adds an accessibility action labeled by the contents of `label` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAction<I>(AccessibilityActionKind, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaction(_:intent:).md)
+- [func accessibilityAction<I>(AccessibilityActionKind, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityaction%28_,intent%29.md)
   Adds an accessibility action representing `actionKind` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAction(named:intent:)](view/accessibilityaction(named:intent:).md)
+- [func accessibilityAction(named:intent:)](./view/accessibilityaction%28named,intent%29.md)
   Adds an accessibility action labeled `name` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAdjustableAction((AccessibilityAdjustmentDirection) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityadjustableaction(_:).md)
+- [func accessibilityAdjustableAction((AccessibilityAdjustmentDirection) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityadjustableaction%28_%29.md)
   Adds an accessibility adjustable action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityscrollaction(_:).md)
+- [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityscrollaction%28_%29.md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](view/accessibilityactions(category:_:).md)
+- [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](./view/accessibilityactions%28category,_%29.md)
   Adds multiple accessibility actions to the view with a specific category. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action and are grouped by their category. When multiple action modifiers with an equal category are applied to the view, the actions are combined together.
-- [struct AccessibilityActionKind](accessibilityactionkind.md)
+- [struct AccessibilityActionKind](./accessibilityactionkind.md)
   The structure that defines the kinds of available accessibility actions.
-- [enum AccessibilityAdjustmentDirection](accessibilityadjustmentdirection.md)
+- [enum AccessibilityAdjustmentDirection](./accessibilityadjustmentdirection.md)
   A directional indicator you use when making an accessibility adjustment.
 
 

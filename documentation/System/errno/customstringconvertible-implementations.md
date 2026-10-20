@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](errno/description.md)
+- [var description: String](./description.md)
   A textual representation of the most recent error returned by a system call.
 
 

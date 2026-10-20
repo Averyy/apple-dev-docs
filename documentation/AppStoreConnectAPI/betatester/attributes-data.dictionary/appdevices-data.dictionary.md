@@ -1,7 +1,8 @@
 # BetaTester.Attributes.AppDevices
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about devices used by the beta tester.
 
@@ -10,7 +11,7 @@ Information about devices used by the beta tester.
 
 ## Declaration
 
-```swift
+```
 object BetaTester.Attributes.AppDevices
 ```
 
@@ -19,7 +20,7 @@ object BetaTester.Attributes.AppDevices
 - `appBuildVersion` (string)
 - `model` (string)
 - `osVersion` (string)
-- `platform` (string)
+- `platform` (string): **Allowed Values**: `IOS`, `MAC_OS`, `TV_OS`, `WATCH_OS`, `VISION_OS`
 
 
 ---

@@ -1,7 +1,8 @@
 # Asset.ProviderAssetMetadata
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Provider-specific metadata attached to an asset, with keys that vary by provider.
 
@@ -10,7 +11,7 @@ Provider-specific metadata attached to an asset, with keys that vary by provider
 
 ## Declaration
 
-```swift
+```
 object Asset.ProviderAssetMetadata
 ```
 

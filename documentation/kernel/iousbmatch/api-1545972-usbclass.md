@@ -1,7 +1,8 @@
 # usbClass
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The class value.
 
@@ -10,19 +11,20 @@ The class value.
 
 ## Declaration
 
-```swift
+```c
 UInt16 usbClass;
 ```
 
 ## See Also
 
-- [usbProduct](iousbmatch/1546064-usbproduct.md)
+### Getting the Properties
+- [usbProduct](./api-1546064-usbproduct.md)
   The product value.
-- [usbProtocol](iousbmatch/1546377-usbprotocol.md)
+- [usbProtocol](./api-1546377-usbprotocol.md)
   The protocol value.
-- [usbSubClass](iousbmatch/1546202-usbsubclass.md)
+- [usbSubClass](./api-1546202-usbsubclass.md)
   The subclass value.
-- [usbVendor](iousbmatch/1546497-usbvendor.md)
+- [usbVendor](./api-1546497-usbvendor.md)
   The vendor value.
 
 

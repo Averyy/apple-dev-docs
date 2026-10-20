@@ -1,7 +1,8 @@
 # mapFeatureAnnotation
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature annotation.
 
@@ -17,17 +18,22 @@ The feature annotation.
 var mapFeatureAnnotation: MKMapFeatureAnnotation? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MKMapFeatureAnnotation * mapFeatureAnnotation;
+```
+
 ## See Also
 
-- [var mapFeature: MapFeature?](mkmapitemrequest/mapfeature.md)
+### Configuring the item request
+- [var mapFeature: MapFeature?](./mapfeature.md)
   The map feature.
-- [var mapItemIdentifier: MKMapItem.Identifier?](mkmapitemrequest/mapitemidentifier.md)
+- [var mapItemIdentifier: MKMapItem.Identifier?](./mapitemidentifier.md)
   The map item identifer.
-- [var feature: MapFeature](mkmapitemrequest/feature.md)
+- [var feature: MapFeature](./feature.md)
   The map feature.
-- [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
+- [var featureAnnotation: MKMapFeatureAnnotation](./featureannotation.md)
   The feature annotation.
-- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+- [var placeDescriptor: PlaceDescriptor?](./placedescriptor.md)
   The place descriptor that contains information that’s helpful in uniquely identifying this place.
 
 

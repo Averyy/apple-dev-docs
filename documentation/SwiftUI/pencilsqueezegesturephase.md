@@ -1,7 +1,8 @@
 # PencilSqueezeGesturePhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the phase and value of an Apple Pencil squeeze gesture.
 
@@ -21,40 +22,41 @@ enum PencilSqueezeGesturePhase
 
 #### Overview
 
-When you use the [`onPencilSqueeze(perform:)`](view/onpencilsqueeze(perform:).md) view modifier, you can handle the Apple Pencil squeeze gesture’s phase in the `action` closure.
+When you use the [`onPencilSqueeze(perform:)`](./view/onpencilsqueeze%28perform%29.md) view modifier, you can handle the Apple Pencil squeeze gesture’s phase in the `action` closure.
 
 ## Topics
 
 ### Enumeration Cases
-- [case active(PencilSqueezeGestureValue)](pencilsqueezegesturephase/active(_:).md)
+- [case active(PencilSqueezeGestureValue)](./pencilsqueezegesturephase/active%28_%29.md)
   The user started squeezing their Apple Pencil.
-- [case ended(PencilSqueezeGestureValue)](pencilsqueezegesturephase/ended(_:).md)
+- [case ended(PencilSqueezeGestureValue)](./pencilsqueezegesturephase/ended%28_%29.md)
   The user successfully completed a squeeze gesture.
-- [PencilSqueezeGesturePhase.failed](pencilsqueezegesturephase/failed.md)
+- [PencilSqueezeGesturePhase.failed](./pencilsqueezegesturephase/failed.md)
   The user started squeezing their Apple Pencil but failed to successfully complete the gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](view/onpencildoubletap(perform:).md)
+### Recognizing Apple Pencil gestures
+- [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](./view/onpencildoubletap%28perform%29.md)
   Adds an action to perform after the user double-taps their Apple Pencil.
-- [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](view/onpencilsqueeze(perform:).md)
+- [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](./view/onpencilsqueeze%28perform%29.md)
   Adds an action to perform when the user squeezes their Apple Pencil.
-- [var preferredPencilDoubleTapAction: PencilPreferredAction](environmentvalues/preferredpencildoubletapaction.md)
+- [var preferredPencilDoubleTapAction: PencilPreferredAction](./environmentvalues/preferredpencildoubletapaction.md)
   The action that the user prefers to perform after double-tapping their Apple Pencil, as selected in the Settings app.
-- [var preferredPencilSqueezeAction: PencilPreferredAction](environmentvalues/preferredpencilsqueezeaction.md)
+- [var preferredPencilSqueezeAction: PencilPreferredAction](./environmentvalues/preferredpencilsqueezeaction.md)
   The action that the user prefers to perform when squeezing their Apple Pencil, as selected in the Settings app.
-- [struct PencilPreferredAction](pencilpreferredaction.md)
+- [struct PencilPreferredAction](./pencilpreferredaction.md)
   An action that the user prefers to perform after double-tapping their Apple Pencil.
-- [struct PencilDoubleTapGestureValue](pencildoubletapgesturevalue.md)
+- [struct PencilDoubleTapGestureValue](./pencildoubletapgesturevalue.md)
   Describes the value of an Apple Pencil double-tap gesture.
-- [struct PencilSqueezeGestureValue](pencilsqueezegesturevalue.md)
+- [struct PencilSqueezeGestureValue](./pencilsqueezegesturevalue.md)
   Describes the value of an Apple Pencil squeeze gesture.
-- [struct PencilHoverPose](pencilhoverpose.md)
+- [struct PencilHoverPose](./pencilhoverpose.md)
   A value describing the location and distance of an Apple Pencil hovering in the area above a view’s bounds.
 
 

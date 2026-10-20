@@ -1,7 +1,8 @@
 # TypesettingLanguage
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines how typesetting language is determined for text.
 
@@ -22,32 +23,33 @@ struct TypesettingLanguage
 
 #### Overview
 
-Use a modifier like [`typesettingLanguage(_:isEnabled:)`](view/typesettinglanguage(_:isenabled:).md) to specify the typesetting language.
+Use a modifier like [`typesettingLanguage(_:isEnabled:)`](./view/typesettinglanguage%28_,isenabled%29.md) to specify the typesetting language.
 
 ## Topics
 
 ### Getting language behavior
-- [static let automatic: TypesettingLanguage](typesettinglanguage/automatic.md)
+- [static let automatic: TypesettingLanguage](./typesettinglanguage/automatic.md)
   Automatic language behavior.
-- [static func explicit(Locale.Language) -> TypesettingLanguage](typesettinglanguage/explicit(_:).md)
+- [static func explicit(Locale.Language) -> TypesettingLanguage](./typesettinglanguage/explicit%28_%29.md)
   Use explicit language.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Preparing views for localization](preparing-views-for-localization.md)
+### Localizing text
+- [Preparing views for localization](./preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
-- [struct LocalizedStringKey](localizedstringkey.md)
+- [struct LocalizedStringKey](./localizedstringkey.md)
   The key used to look up an entry in a strings file or strings dictionary file.
-- [var locale: Locale](environmentvalues/locale.md)
+- [var locale: Locale](./environmentvalues/locale.md)
   The current locale that views should use.
-- [func typesettingLanguage(_:isEnabled:)](view/typesettinglanguage(_:isenabled:).md)
+- [func typesettingLanguage(_:isEnabled:)](./view/typesettinglanguage%28_,isenabled%29.md)
   Specifies the language for typesetting.
 
 

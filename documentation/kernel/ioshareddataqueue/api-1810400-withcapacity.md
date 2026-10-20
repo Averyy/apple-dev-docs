@@ -7,12 +7,12 @@ Static method that creates a new IOSharedDataQueue instance with the capacity sp
 
 ## Declaration
 
-```swift
+```c
 static IOSharedDataQueue *withCapacity(
  UInt32size);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the newly allocated IOSharedDataQueue instance. Zero is returned on failure.
 
@@ -28,15 +28,16 @@ This method allocates a new IODataQueue instance and then calls initWithCapacity
 
 ## See Also
 
-- [dequeue](ioshareddataqueue/1810190-dequeue.md)
+### Miscellaneous
+- [dequeue](./api-1810190-dequeue.md)
   Dequeues the next available entry on the queue and copies it into the given data pointer.
-- [getMemoryDescriptor](ioshareddataqueue/1810240-getmemorydescriptor.md)
+- [getMemoryDescriptor](./api-1810240-getmemorydescriptor.md)
   Returns a memory descriptor covering the IODataQueueMemory region.
-- [initWithCapacity](ioshareddataqueue/1810293-initwithcapacity.md)
+- [initWithCapacity](./api-1810293-initwithcapacity.md)
   Initializes an IOSharedDataQueue instance with the capacity specified in the size parameter.
-- [peek](ioshareddataqueue/1810347-peek.md)
+- [peek](./api-1810347-peek.md)
   Used to peek at the next entry on the queue.
-- [withEntries](ioshareddataqueue/1810447-withentries.md)
+- [withEntries](./api-1810447-withentries.md)
   Static method that creates a new IOSharedDataQueue instance with the specified number of entries of the given size.
 
 

@@ -1,7 +1,8 @@
 # on
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a control’s value has changed to on, such as when a toggle is tapped to turn on.
 

@@ -1,7 +1,8 @@
 # CBATTErrorDomain
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Core Bluetooth ATT errors.
 
@@ -20,23 +21,28 @@ The domain for Core Bluetooth ATT errors.
 let CBATTErrorDomain: String
 ```
 
+```c
+extern NSString * const CBATTErrorDomain;
+```
+
 #### Discussion
 
-This value identifies Core Bluetooth Attribute Protocol (ATT) errors when used as the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) of an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance.
+This value identifies Core Bluetooth Attribute Protocol (ATT) errors when used as the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) instance.
 
 ## See Also
 
-- [struct CBError](cberror-swift.struct.md)
+### Errors
+- [struct CBError](./cberror-swift.struct.md)
   An error that Core Bluetooth returns during Bluetooth transactions.
-- [let CBErrorDomain: String](cberrordomain.md)
+- [let CBErrorDomain: String](./cberrordomain.md)
   The domain for Core Bluetooth errors.
-- [CBError.Code](cberror-swift.struct/code.md)
+- [CBError.Code](./cberror-swift.struct/code.md)
   The codes for errors that Core Bluetooth returns during Bluetooth transactions.
-- [struct CBATTError](cbatterror-swift.struct.md)
+- [struct CBATTError](./cbatterror-swift.struct.md)
   An error that Core Bluetooth returns while using Attribute Protocol (ATT).
-- [CBATTError.Code](cbatterror-swift.struct/code.md)
+- [CBATTError.Code](./cbatterror-swift.struct/code.md)
   The possible errors returned by a GATT server (a remote peripheral) during Bluetooth low energy ATT transactions.
-- [struct CBATTError](cbatterror-swift.struct.md)
+- [struct CBATTError](./cbatterror-swift.struct.md)
   An error that Core Bluetooth returns while using Attribute Protocol (ATT).
 
 

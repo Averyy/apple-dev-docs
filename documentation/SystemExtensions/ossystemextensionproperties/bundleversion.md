@@ -1,7 +1,8 @@
 # bundleVersion
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle version of the extension.
 
@@ -17,15 +18,20 @@ The bundle version of the extension.
 var bundleVersion: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * bundleVersion;
+```
+
 #### Discussion
 
-This is the [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) of the extension bundle.
+This is the [`CFBundleVersion`](../../BundleResources/information-property-list/cfbundleversion.md) of the extension bundle.
 
 ## See Also
 
-- [var bundleIdentifier: String](ossystemextensionproperties/bundleidentifier.md)
+### Identifying the Extension
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the extension.
-- [var bundleShortVersion: String](ossystemextensionproperties/bundleshortversion.md)
+- [var bundleShortVersion: String](./bundleshortversion.md)
   The bundle short version string of the extension.
 
 

@@ -1,7 +1,8 @@
 # remove(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a match from Game Center that the local player participants in.
 
@@ -17,16 +18,28 @@ Removes a match from Game Center that the local player participants in.
 ## Declaration
 
 ```swift
+func remove(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func remove() async throws
+```
+
+```objc
+- (void) removeWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-If you don’t use the [`GKTurnBasedMatchmakerViewController`](gkturnbasedmatchmakerviewcontroller.md) interface, where players can delete their matches, use this method to delete a match that the local player no longer actively participants in. This method only removes the match from the local player’s Game Center data — it doesn’t impact other participants in the match.
+If you don’t use the [`GKTurnBasedMatchmakerViewController`](../gkturnbasedmatchmakerviewcontroller.md) interface, where players can delete their matches, use this method to delete a match that the local player no longer actively participants in. This method only removes the match from the local player’s Game Center data — it doesn’t impact other participants in the match.
 
 ## Parameters
 
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameter:
+
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 
 ---

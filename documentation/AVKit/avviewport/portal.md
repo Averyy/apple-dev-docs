@@ -1,7 +1,8 @@
 # portal
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The viewport configuration to use when the player displays immersive content in a portal.
 
@@ -14,6 +15,10 @@ The viewport configuration to use when the player displays immersive content in 
 var portal: AVPortalViewport? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) AVPortalViewport * portal;
+```
+
 #### Discussion
 
 Set this property to customize how content appears within a portal frame. When this property is `nil`, the system uses default portal settings.
@@ -22,7 +27,8 @@ Set this property to customize how content appears within a portal frame. When t
 
 ## See Also
 
-- [class AVPortalViewport](avportalviewport.md)
+### Configuring the portal viewport
+- [class AVPortalViewport](../avportalviewport.md)
   An object that defines the visual parameters for content displayed within a portal frame.
 
 

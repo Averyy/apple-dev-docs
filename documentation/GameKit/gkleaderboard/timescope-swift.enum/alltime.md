@@ -1,7 +1,8 @@
 # GKLeaderboard.TimeScope.allTime
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Loads a player’s best score.
 
@@ -20,11 +21,16 @@ Loads a player’s best score.
 case allTime
 ```
 
+```c
+GKLeaderboardTimeScopeAllTime
+```
+
 ## See Also
 
-- [GKLeaderboard.TimeScope.today](gkleaderboard/timescope-swift.enum/today.md)
+### Constants
+- [GKLeaderboard.TimeScope.today](./today.md)
   Loads data for the past 24 hours.
-- [GKLeaderboard.TimeScope.week](gkleaderboard/timescope-swift.enum/week.md)
+- [GKLeaderboard.TimeScope.week](./week.md)
   Loads data for the past week.
 
 

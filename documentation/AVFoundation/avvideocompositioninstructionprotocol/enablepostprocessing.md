@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the composition enables post-processing.
@@ -20,9 +21,13 @@ A Boolean value that indicates whether the composition enables post-processing.
 var enablePostProcessing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL enablePostProcessing;
+```
+
 #### Discussion
 
-A value of [`false`](https://developer.apple.com/documentation/swift/false) indicates to skip post-processing for the duration of the instruction.
+A value of [`false`](../../Swift/false.md) indicates to skip post-processing for the duration of the instruction.
 
 
 ---

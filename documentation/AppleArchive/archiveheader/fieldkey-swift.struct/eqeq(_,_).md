@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Apple Archive  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Equatable protocol
 
@@ -11,7 +12,7 @@ Equatable protocol
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

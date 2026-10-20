@@ -1,7 +1,8 @@
 # MPSGraphOptions.verbose
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework prints more logging info.
 
@@ -17,6 +18,10 @@ The framework prints more logging info.
 
 ```swift
 case verbose
+```
+
+```c
+MPSGraphOptionsVerbose
 ```
 
 

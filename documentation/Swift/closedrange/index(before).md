@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately before the given index.
 
@@ -19,6 +20,8 @@ Returns the position immediately before the given index.
 ```swift
 func index(before i: ClosedRange<Bound>.Index) -> ClosedRange<Bound>.Index
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 #### Return Value
 

@@ -1,12 +1,13 @@
 # didChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted after an `NSText` object performs any operation that changes characters or formatting attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ Posted after an `NSText` object performs any operation that changes characters o
 class let didChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSTextDidChangeNotification;
+```
+
 #### Discussion
 
 The notification object is the notifying `NSText` object. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSTextView.DidChangeMessage`](nstextview/didchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSTextView.DidChangeMessage`](../nstextview/didchangemessage.md).
 
 ## See Also
 
-- [class let didBeginEditingNotification: NSNotification.Name](nstext/didbegineditingnotification.md)
+### Notifications
+- [class let didBeginEditingNotification: NSNotification.Name](./didbegineditingnotification.md)
   Posted when an `NSText` object begins any operation that changes characters or formatting attributes.
-- [class let didEndEditingNotification: NSNotification.Name](nstext/didendeditingnotification.md)
+- [class let didEndEditingNotification: NSNotification.Name](./didendeditingnotification.md)
   Posted when focus leaves an `NSText` object, whether or not any operation has changed characters or formatting attributes.
-- [class let movementUserInfoKey: String](nstext/movementuserinfokey.md)
-  The `userInfo` dictionary key for the [`didEndEditingNotification`](nstext/didendeditingnotification.md) notification.
-- [enum NSTextMovement](nstextmovement.md)
+- [class let movementUserInfoKey: String](./movementuserinfokey.md)
+  The `userInfo` dictionary key for the [`didEndEditingNotification`](./didendeditingnotification.md) notification.
+- [enum NSTextMovement](../nstextmovement.md)
 
 
 ---

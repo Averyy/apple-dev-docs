@@ -1,6 +1,7 @@
 # Finding multiple GPUs on an Intel-based Mac
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Locate, identify, and choose suitable GPUs for your app.
 
@@ -10,9 +11,9 @@ Your app can use multiple GPUs on an Intel-based Mac, including any built-in and
 
 > **Note**:  Mac computers with Apple silicon have a single, high-performance, and energy-efficient GPU.
 
-##### Get a List of Gpu Devices
+##### Get a list of GPU devices
 
-Your app can get an array of [`MTLDevice`](mtldevice.md) instances, each of which represents an available GPU, by calling the [`MTLCopyAllDevices()`](mtlcopyalldevices().md) function.
+Your app can get an array of [`MTLDevice`](./mtldevice.md) instances, each of which represents an available GPU, by calling the [`MTLCopyAllDevices()`](./mtlcopyalldevices%28%29.md) function.
 
 **Swift**:
 
@@ -26,7 +27,7 @@ let devices = MTLCopyAllDevices()
 NSArray<id<MTLDevice>> *devices = MTLCopyAllDevices();
 ```
 
-However, that function provides a list of GPUs that are available at that moment in time. To get the current list and register for device update notifications, provide a handler to Metal by calling the [`MTLCopyAllDevicesWithObserver`](mtlcopyalldeviceswithobserver.md) function.
+However, that function provides a list of GPUs that are available at that moment in time. To get the current list and register for device update notifications, provide a handler to Metal by calling the [`MTLCopyAllDevicesWithObserver`](./mtlcopyalldeviceswithobserver.md) function.
 
 **Swift**:
 
@@ -49,11 +50,11 @@ devices = MTLCopyAllDevicesWithObserver(&deviceObserver,
 });
 ```
 
-Metal calls your handler to tell your app when the system adds or removes an [`MTLDevice`](mtldevice.md) from the system.
+Metal calls your handler to tell your app when the system adds or removes an [`MTLDevice`](./mtldevice.md) from the system.
 
-> **Note**:  Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [`Handling external GPU additions and removals`](handling-external-gpu-additions-and-removals.md).
+> **Note**:  Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [Handling external GPU additions and removals](./handling-external-gpu-additions-and-removals.md).
 
-Your app can deregister its observer when it no longer needs GPU device updates from the system by calling the [`MTLRemoveDeviceObserver(_:)`](mtlremovedeviceobserver(_:).md) function.
+Your app can deregister its observer when it no longer needs GPU device updates from the system by calling the [`MTLRemoveDeviceObserver(_:)`](./mtlremovedeviceobserver%28_%29.md) function.
 
 **Swift**:
 
@@ -67,15 +68,15 @@ MTLRemoveDeviceObserver(observer)
 MTLRemoveDeviceObserver(deviceObserver);
 ```
 
-##### Identify Each Gpu By Type
+##### Identify each GPU by type
 
-Each GPU on a Mac computer’s system can be one of three types: integrated, discrete, or external. You can identify each [`MTLDevice`](mtldevice.md) instance’s type by inspecting its [`isLowPower`](mtldevice/islowpower.md) and [`isRemovable`](mtldevice/isremovable.md) properties.
+Each GPU on a Mac computer’s system can be one of three types: integrated, discrete, or external. You can identify each [`MTLDevice`](./mtldevice.md) instance’s type by inspecting its [`isLowPower`](./mtldevice/islowpower.md) and [`isRemovable`](./mtldevice/isremovable.md) properties.
 
-| GPU Type | [`isLowPower`](mtldevice/islowpower.md) | [`isRemovable`](mtldevice/isremovable.md) |
+| GPU Type | [`isLowPower`](./mtldevice/islowpower.md) | [`isRemovable`](./mtldevice/isremovable.md) |
 | --- | --- | --- |
-| Integrated | [`true`](https://developer.apple.com/documentation/swift/true) | [`false`](https://developer.apple.com/documentation/swift/false) |
-| Discrete | [`false`](https://developer.apple.com/documentation/swift/false) | [`false`](https://developer.apple.com/documentation/swift/false) |
-| External | [`false`](https://developer.apple.com/documentation/swift/false) | [`true`](https://developer.apple.com/documentation/swift/true) |
+| Integrated | [`true`](../Swift/true.md) | [`false`](../Swift/false.md) |
+| Discrete | [`false`](../Swift/false.md) | [`false`](../Swift/false.md) |
+| External | [`false`](../Swift/false.md) | [`true`](../Swift/true.md) |
 
 For example, you can use these properties to build a list of devices for each GPU type.
 
@@ -108,7 +109,7 @@ for (id<MTLDevice> device in devices) {
 }
 ```
 
-Some external or discrete GPUs can also be *headless*, which means they aren’t connected to a display. Your app can identify whether a GPU is headless by checking a device instance’s [`isHeadless`](mtldevice/isheadless.md) property.
+Some external or discrete GPUs can also be *headless*, which means they aren’t connected to a display. Your app can identify whether a GPU is headless by checking a device instance’s [`isHeadless`](./mtldevice/isheadless.md) property.
 
 **Swift**:
 
@@ -128,7 +129,7 @@ if (device.isHeadless) {
 }
 ```
 
-##### Select the Gpus Suitable for Your Workloads
+##### Select the GPUs suitable for your workloads
 
 Each GPU type has its advantages for certain tasks or workloads that you can consider for a system with multiple GPUs.
 
@@ -149,25 +150,26 @@ External GPUs typically have significant processing power but lower bandwidth co
 - Processing compute workloads in tandem with rendering graphics
 - Processing compute workloads that use a high arithmetic-logic unit (ALU) complexity
 
-For more information about GPU memory bandwidth, see [`Adjusting for GPU memory bandwidth tradeoffs`](adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
+For more information about GPU memory bandwidth, see [Adjusting for GPU memory bandwidth tradeoffs](./adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
 
 > **Note**:  A headless GPU is more suitable for compute processing than rendering graphics for a display because the GPU isn’t connected to a display.
 
 ## See Also
 
-- [Getting the GPU that drives a view’s display](getting-the-gpu-that-drives-a-views-display.md)
+### Locating GPUs
+- [Getting the GPU that drives a view’s display](./getting-the-gpu-that-drives-a-views-display.md)
   Keep up to date with the optimal device for your display.
-- [func MTLCopyAllDevices() -> [any MTLDevice]](mtlcopyalldevices().md)
+- [func MTLCopyAllDevices() -> [any MTLDevice]](./mtlcopyalldevices%28%29.md)
   Returns an array of all the Metal device instances in the system.
-- [func MTLCopyAllDevicesWithObserver(handler: (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
+- [func MTLCopyAllDevicesWithObserver(handler: (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)](./mtlcopyalldeviceswithobserver%28handler%29.md)
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
-- [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
+- [func MTLRemoveDeviceObserver(any NSObjectProtocol)](./mtlremovedeviceobserver%28_%29.md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/cgdirectdisplaycopycurrentmetaldevice%28_%29.md)
   Returns the GPU device instance that’s currently driving a display.
-- [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
+- [typealias MTLDeviceNotificationHandler](./mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.
-- [struct MTLDeviceNotificationName](mtldevicenotificationname.md)
+- [struct MTLDeviceNotificationName](./mtldevicenotificationname.md)
   A notification that represents a change to a GPU device in the system.
 
 

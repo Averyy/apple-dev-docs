@@ -1,7 +1,8 @@
 # ask(_:in:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system to request that a person send the communication permission question to the person’s parent or guardian.
 
@@ -27,11 +28,12 @@ Throws an error if the system is unable to request to send the question.
 
 ## See Also
 
-- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: NSWindow) async throws](askcenter/ask(_:in:)-39vi7.md)
+### Making permission requests
+- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: NSWindow) async throws](./ask%28_,in%29-39vi7.md)
   Tells the system to request that the person send the communication permission question to the person’s parent or guardian.
-- [func ask(PermissionQuestion<CommunicationTopic>, in: NSWindow) async throws](askcenter/ask(_:in:)-3znb6.md)
+- [func ask(PermissionQuestion<CommunicationTopic>, in: NSWindow) async throws](./ask%28_,in%29-3znb6.md)
   Tells the system to request that the person send the communication permission question to the person’s parent or guardian.
-- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: UIViewController) async throws](askcenter/ask(_:in:)-8ks48.md)
+- [func ask(PermissionQuestion<SignificantAppUpdateTopic>, in: UIViewController) async throws](./ask%28_,in%29-8ks48.md)
   Tells the system to request that a person send the the significant app update permission question to their parent or guardian.
 
 

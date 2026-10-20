@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A barcode description for use in Core Image.
 
@@ -18,11 +19,16 @@ A barcode description for use in Core Image.
 var descriptor: CIBarcodeDescriptor? { get }
 ```
 
+```objc
+@property (readonly, nullable) CIBarcodeDescriptor * descriptor;
+```
+
 ## See Also
 
-- [var corners: [CGPoint]](avmetadatamachinereadablecodeobject/corners-58qbe.md)
+### Getting machine-readable code values
+- [var corners: [CGPoint]](./corners-58qbe.md)
   A Swift array of corner points.
-- [var stringValue: String?](avmetadatamachinereadablecodeobject/stringvalue.md)
+- [var stringValue: String?](./stringvalue.md)
   Returns the error-corrected data decoded into a human-readable string.
 
 

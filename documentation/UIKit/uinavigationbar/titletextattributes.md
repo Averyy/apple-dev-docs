@@ -1,7 +1,8 @@
 # titleTextAttributes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Display attributes for the bar’s title text.
 
@@ -9,7 +10,7 @@ Display attributes for the bar’s title text.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Display attributes for the bar’s title text.
 var titleTextAttributes: [NSAttributedString.Key : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * titleTextAttributes;
+```
+
 #### Discussion
 
-You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary, using the text attribute keys described in [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
+You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary, using the text attribute keys described in [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 
 ## See Also
 
-- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]?](uinavigationbar/largetitletextattributes.md)
+### Configuring the title
+- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]?](./largetitletextattributes.md)
   Display attributes for the bar’s large title text.
-- [func titleVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](uinavigationbar/titleverticalpositionadjustment(for:).md)
+- [func titleVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](./titleverticalpositionadjustment%28for%29.md)
   Returns the title’s vertical position adjustment for given bar metrics.
-- [func setTitleVerticalPositionAdjustment(CGFloat, for: UIBarMetrics)](uinavigationbar/settitleverticalpositionadjustment(_:for:).md)
+- [func setTitleVerticalPositionAdjustment(CGFloat, for: UIBarMetrics)](./settitleverticalpositionadjustment%28_,for%29.md)
   Sets the title’s vertical position adjustment for given bar metrics.
 
 

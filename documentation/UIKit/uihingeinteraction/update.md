@@ -1,7 +1,8 @@
 # UIHingeInteraction.Update
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An update for a `UIHingeInteraction`
 
@@ -19,25 +20,29 @@ An update for a `UIHingeInteraction`
 class Update
 ```
 
+```objc
+@interface UIHingeInteractionUpdate : NSObject
+```
+
 ## Topics
 
 ### Getting the hinge
-- [var hinge: UIHinge?](uihingeinteraction/update/hinge.md)
+- [var hinge: UIHinge?](./update/hinge.md)
   The current hinge state for the interaction, or `nil` when the interaction leaves a hierarchy that provides hinge updates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 
 ---

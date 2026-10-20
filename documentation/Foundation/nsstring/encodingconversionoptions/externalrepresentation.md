@@ -1,7 +1,8 @@
 # externalRepresentation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies an external representation (with a byte-order mark, if necessary, to indicate endianness).
 
@@ -20,9 +21,14 @@ Specifies an external representation (with a byte-order mark, if necessary, to i
 static var externalRepresentation: NSString.EncodingConversionOptions { get }
 ```
 
+```c
+NSStringEncodingConversionExternalRepresentation
+```
+
 ## See Also
 
-- [static var allowLossy: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/allowlossy.md)
+### Constants
+- [static var allowLossy: NSString.EncodingConversionOptions](./allowlossy.md)
   Allows lossy conversion.
 
 

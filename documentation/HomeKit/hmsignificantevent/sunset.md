@@ -1,7 +1,8 @@
 # sunset
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event that fires at sunset.
 
@@ -19,9 +20,14 @@ An event that fires at sunset.
 static let sunset: HMSignificantEvent
 ```
 
+```c
+extern HMSignificantEvent const HMSignificantEventSunset;
+```
+
 ## See Also
 
-- [static let sunrise: HMSignificantEvent](hmsignificantevent/sunrise.md)
+### Significant event properties
+- [static let sunrise: HMSignificantEvent](./sunrise.md)
   An event that fires at sunrise.
 
 

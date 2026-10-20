@@ -1,7 +1,8 @@
 # IsASCIICapable
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether a custom keyboard displays standard ASCII characters.
 
@@ -9,37 +10,39 @@ A Boolean value indicating whether a custom keyboard displays standard ASCII cha
 - iOS 8.0+
 - iPadOS 8.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `IsASCIICapable`
+- **Type**: boolean
 
 ## See Also
 
-- [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)
+### UIKit
+- [IDMessageFilterExtensionNetworkURL](./idmessagefilterextensionnetworkurl.md)
   The server that a Message Filter app extension may defer a query to.
-- [ILClassificationExtensionSMSReportDestination](information-property-list/nsextension/nsextensionattributes/ilclassificationextensionsmsreportdestination.md)
+- [ILClassificationExtensionSMSReportDestination](./ilclassificationextensionsmsreportdestination.md)
   The phone number that receives SMS messages when the user reports an SMS message or a call.
-- [MSMessagesAppPresentationContextMessages](information-property-list/nsextension/nsextensionattributes/msmessagesapppresentationcontextmessages.md)
+- [MSMessagesAppPresentationContextMessages](./msmessagesapppresentationcontextmessages.md)
   The contexts that an iMessage app or sticker pack supports.
-- [PrefersRightToLeft](information-property-list/nsextension/nsextensionattributes/prefersrighttoleft.md)
+- [PrefersRightToLeft](./prefersrighttoleft.md)
   A Boolean value indicating whether a keyboard extension supports right-to-left languages.
-- [PrimaryLanguage](information-property-list/nsextension/nsextensionattributes/primarylanguage.md)
+- [PrimaryLanguage](./primarylanguage.md)
   The primary language for a keyboard extension.
-- [RequestsOpenAccess](information-property-list/nsextension/nsextensionattributes/requestsopenaccess.md)
+- [RequestsOpenAccess](./requestsopenaccess.md)
   A Boolean value indicating whether a custom keyboard uses a shared container and accesses the network.
-- [UIDocumentPickerModes](information-property-list/nsextension/nsextensionattributes/uidocumentpickermodes.md)
+- [UIDocumentPickerModes](./uidocumentpickermodes.md)
   The modes that a Document Picker extension supports.
-- [UIDocumentPickerSupportedFileTypes](information-property-list/nsextension/nsextensionattributes/uidocumentpickersupportedfiletypes.md)
+- [UIDocumentPickerSupportedFileTypes](./uidocumentpickersupportedfiletypes.md)
   The Uniform Type Identifiers that a document picker extension supports.
-- [UNNotificationExtensionCategory](information-property-list/nsextension/nsextensionattributes/unnotificationextensioncategory.md)
+- [UNNotificationExtensionCategory](./unnotificationextensioncategory.md)
   The identifier of a category declared by the app extension.
-- [UNNotificationExtensionDefaultContentHidden](information-property-list/nsextension/nsextensionattributes/unnotificationextensiondefaultcontenthidden.md)
+- [UNNotificationExtensionDefaultContentHidden](./unnotificationextensiondefaultcontenthidden.md)
   A Boolean value indicating whether only the app extension’s custom view controller is displayed in the notification interface.
-- [UNNotificationExtensionInitialContentSizeRatio](information-property-list/nsextension/nsextensionattributes/unnotificationextensioninitialcontentsizeratio.md)
+- [UNNotificationExtensionInitialContentSizeRatio](./unnotificationextensioninitialcontentsizeratio.md)
   The initial size of the view controller’s view for an app extension, expressed as a ratio of its height to its width.
-- [UNNotificationExtensionOverridesDefaultTitle](information-property-list/nsextension/nsextensionattributes/unnotificationextensionoverridesdefaulttitle.md)
+- [UNNotificationExtensionOverridesDefaultTitle](./unnotificationextensionoverridesdefaulttitle.md)
   A Boolean value indicating whether the title of the app extension’s view controller is used as the title of the notification.
-- [UNNotificationExtensionUserInteractionEnabled](information-property-list/nsextension/nsextensionattributes/unnotificationextensionuserinteractionenabled.md)
+- [UNNotificationExtensionUserInteractionEnabled](./unnotificationextensionuserinteractionenabled.md)
   A Boolean value indicating whether user interactions in a custom notification are enabled.
 
 

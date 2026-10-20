@@ -1,7 +1,8 @@
 # crc32
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -20,11 +21,12 @@ static let crc32: ArchiveHash
 
 ## See Also
 
-- [static let maxSize: Int](archivehash/maxsize.md)
-- [static let sha1: ArchiveHash](archivehash/sha1.md)
-- [static let sha256: ArchiveHash](archivehash/sha256.md)
-- [static let sha384: ArchiveHash](archivehash/sha384.md)
-- [static let sha512: ArchiveHash](archivehash/sha512.md)
+### Type Properties
+- [static let maxSize: Int](./maxsize.md)
+- [static let sha1: ArchiveHash](./sha1.md)
+- [static let sha256: ArchiveHash](./sha256.md)
+- [static let sha384: ArchiveHash](./sha384.md)
+- [static let sha512: ArchiveHash](./sha512.md)
 
 
 ---

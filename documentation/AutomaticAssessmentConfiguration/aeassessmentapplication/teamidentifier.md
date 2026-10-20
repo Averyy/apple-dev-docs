@@ -1,7 +1,8 @@
 # teamIdentifier
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The team identifier of the app.
 
@@ -17,6 +18,10 @@ The team identifier of the app.
 var teamIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * teamIdentifier;
+```
+
 #### Discussion
 
 You can get the team identifier for an app using the `codesign` command line utility:
@@ -27,11 +32,12 @@ You can get the team identifier for an app using the `codesign` command line uti
 
 ## See Also
 
-- [init(bundleIdentifier: String, teamIdentifier: String?)](aeassessmentapplication/init(bundleidentifier:teamidentifier:).md)
+### Creating an assessment application
+- [init(bundleIdentifier: String, teamIdentifier: String?)](./init%28bundleidentifier,teamidentifier%29.md)
   Creates a representation of an app using its bundle and team identifiers.
-- [init(bundleIdentifier: String)](aeassessmentapplication/init(bundleidentifier:).md)
+- [init(bundleIdentifier: String)](./init%28bundleidentifier%29.md)
   Creates a representation of an app using its bundle identifier.
-- [var bundleIdentifier: String](aeassessmentapplication/bundleidentifier.md)
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app.
 
 

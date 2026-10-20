@@ -1,7 +1,8 @@
 # update
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Updates an item in the data source array.
 
@@ -10,7 +11,7 @@ Updates an item in the data source array.
 
 ## Declaration
 
-```swift
+```
 void update(
     in Array items, 
     in Array indexTitle, 
@@ -24,13 +25,14 @@ The update API allows the existing data source to reuse already loaded items. Th
 
 ## See Also
 
-- [insert](datasource/datasource/3192116-insert.md)
+### Modifying the Data Source
+- [insert](./api-3192116-insert.md)
   Inserts a new item into the array.
-- [delete](datasource/datasource/3192115-delete.md)
+- [delete](./api-3192115-delete.md)
   Deletes an item from the data source array.
-- [move](datasource/datasource/3192120-move.md)
+- [move](./api-3192120-move.md)
   Moves an item in the data source array.
-- [replace](datasource/datasource/3192121-replace.md)
+- [replace](./api-3192121-replace.md)
   Replaces an item in the data source array.
 
 

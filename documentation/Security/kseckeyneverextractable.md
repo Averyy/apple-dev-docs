@@ -1,7 +1,8 @@
 # kSecKeyNeverExtractable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key was never marked extractable.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key was never marked extractable.
 
 ```swift
 var kSecKeyNeverExtractable: Int32 { get }
+```
+
+```c
+kSecKeyNeverExtractable
 ```
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ACInsertPicture
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ACInsertPicture = 0x294
 ```
 

@@ -1,7 +1,8 @@
 # init(player:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video-player user interface for the player object.
 
@@ -21,13 +22,16 @@ Creates a video-player user interface for the player object.
 @preconcurrency init(player: AVPlayer?)
 ```
 
+Available when `VideoOverlay` is `EmptyView`.
+
 ## Parameters
 
 - `player`: The player that plays the audiovisual content.
 
 ## See Also
 
-- [init(player: AVPlayer?, videoOverlay: () -> VideoOverlay)](videoplayer/init(player:videooverlay:).md)
+### Creating a video player
+- [init(player: AVPlayer?, videoOverlay: () -> VideoOverlay)](./init%28player,videooverlay%29.md)
   Creates a video-player user interface for the player object.
 
 

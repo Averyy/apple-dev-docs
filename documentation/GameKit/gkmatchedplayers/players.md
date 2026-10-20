@@ -1,7 +1,8 @@
 # players
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The players that join the match.
 
@@ -17,6 +18,10 @@ The players that join the match.
 
 ```swift
 var players: [GKPlayer] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<GKPlayer *> * players;
 ```
 
 

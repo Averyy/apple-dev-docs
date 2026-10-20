@@ -1,7 +1,8 @@
 # NSInferMappingModelAutomaticallyOption
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key to attempt to create the mapping model automatically.
 
@@ -10,7 +11,7 @@ Key to attempt to create the mapping model automatically.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,24 @@ Key to attempt to create the mapping model automatically.
 let NSInferMappingModelAutomaticallyOption: String
 ```
 
+```c
+extern NSString * const NSInferMappingModelAutomaticallyOption;
+```
+
 ## Mentions
 
-- [Migrating your data model automatically](migrating-your-data-model-automatically.md)
+- [Migrating your data model automatically](./migrating-your-data-model-automatically.md)
 
 #### Discussion
 
-The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/foundation/nsnumber/boolvalue) of the number is [`true`](https://developer.apple.com/documentation/swift/true) and the value of the `NSMigratePersistentStoresAutomaticallyOption` is [`true`](https://developer.apple.com/documentation/swift/true), the coordinator will attempt to infer a mapping model if none can be found.
+The corresponding value is an `NSNumber` object. If the [`boolValue`](../Foundation/nsnumber/boolvalue.md) of the number is [`true`](../Swift/true.md) and the value of the `NSMigratePersistentStoresAutomaticallyOption` is [`true`](../Swift/true.md), the coordinator will attempt to infer a mapping model if none can be found.
 
 ## See Also
 
-- [let NSIgnorePersistentStoreVersioningOption: String](nsignorepersistentstoreversioningoption.md)
+### Constants
+- [let NSIgnorePersistentStoreVersioningOption: String](./nsignorepersistentstoreversioningoption.md)
   Key to ignore the built-in versioning provided by Core Data.
-- [let NSMigratePersistentStoresAutomaticallyOption: String](nsmigratepersistentstoresautomaticallyoption.md)
+- [let NSMigratePersistentStoresAutomaticallyOption: String](./nsmigratepersistentstoresautomaticallyoption.md)
   Key to automatically attempt to migrate versioned stores.
 
 

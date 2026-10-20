@@ -1,7 +1,8 @@
 # CWErr.cwShortSlotUnsupportedErr
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.6+
@@ -12,27 +13,32 @@
 case cwShortSlotUnsupportedErr
 ```
 
+```c
+kCWShortSlotUnsupportedErr
+```
+
 #### Discussion
 
 Association denied because short slot time option is not supported by requesting station.
 
 ## See Also
 
-- [CWErr.cwapFullErr](cwerr/cwapfullerr.md)
-- [CWErr.cwAssociationDeniedErr](cwerr/cwassociationdeniederr.md)
-- [CWErr.cwAuthenticationAlgorithmUnsupportedErr](cwerr/cwauthenticationalgorithmunsupportederr.md)
-- [CWErr.cwChallengeFailureErr](cwerr/cwchallengefailureerr.md)
-- [CWErr.cwCipherSuiteRejectedErr](cwerr/cwciphersuiterejectederr.md)
-- [CWErr.cwdsssofdmUnsupportedErr](cwerr/cwdsssofdmunsupportederr.md)
-- [CWErr.cweapolErr](cwerr/cweapolerr.md)
-- [CWErr.cwErr](cwerr/cwerr.md)
-- [CWErr.cwhtFeaturesNotSupportedErr](cwerr/cwhtfeaturesnotsupportederr.md)
-- [CWErr.cwipcFailureErr](cwerr/cwipcfailureerr.md)
-- [CWErr.cwInvalidAKMPErr](cwerr/cwinvalidakmperr.md)
-- [CWErr.cwInvalidAuthenticationSequenceNumberErr](cwerr/cwinvalidauthenticationsequencenumbererr.md)
-- [CWErr.cwInvalidFormatErr](cwerr/cwinvalidformaterr.md)
-- [CWErr.cwInvalidGroupCipherErr](cwerr/cwinvalidgroupciphererr.md)
-- [CWErr.cwInvalidInformationElementErr](cwerr/cwinvalidinformationelementerr.md)
+### Constants
+- [CWErr.cwapFullErr](./cwapfullerr.md)
+- [CWErr.cwAssociationDeniedErr](./cwassociationdeniederr.md)
+- [CWErr.cwAuthenticationAlgorithmUnsupportedErr](./cwauthenticationalgorithmunsupportederr.md)
+- [CWErr.cwChallengeFailureErr](./cwchallengefailureerr.md)
+- [CWErr.cwCipherSuiteRejectedErr](./cwciphersuiterejectederr.md)
+- [CWErr.cwdsssofdmUnsupportedErr](./cwdsssofdmunsupportederr.md)
+- [CWErr.cweapolErr](./cweapolerr.md)
+- [CWErr.cwErr](./cwerr.md)
+- [CWErr.cwhtFeaturesNotSupportedErr](./cwhtfeaturesnotsupportederr.md)
+- [CWErr.cwipcFailureErr](./cwipcfailureerr.md)
+- [CWErr.cwInvalidAKMPErr](./cwinvalidakmperr.md)
+- [CWErr.cwInvalidAuthenticationSequenceNumberErr](./cwinvalidauthenticationsequencenumbererr.md)
+- [CWErr.cwInvalidFormatErr](./cwinvalidformaterr.md)
+- [CWErr.cwInvalidGroupCipherErr](./cwinvalidgroupciphererr.md)
+- [CWErr.cwInvalidInformationElementErr](./cwinvalidinformationelementerr.md)
 
 
 ---

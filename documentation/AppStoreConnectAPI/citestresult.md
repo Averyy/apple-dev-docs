@@ -1,7 +1,8 @@
 # CiTestResult
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The outcome of a single test case in an Xcode Cloud test action, including its pass/fail status and duration.
 
@@ -10,14 +11,14 @@ The outcome of a single test case in an Xcode Cloud test action, including its p
 
 ## Declaration
 
-```swift
+```
 object CiTestResult
 ```
 
 ## Topics
 
 ### Objects
-- [object CiTestResult.Attributes](citestresult/attributes-data.dictionary.md)
+- [object CiTestResult.Attributes](./citestresult/attributes-data.dictionary.md)
   The attributes that describe a Test Results resource.
 
 ## Properties
@@ -27,9 +28,12 @@ object CiTestResult
 - `links` (ResourceLinks): The navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciTestResults`
+
 ## See Also
 
-- [object CiTestResultResponse](citestresultresponse.md)
+### Objects and types
+- [object CiTestResultResponse](./citestresultresponse.md)
   The response body for endpoints that read a single test result from an Xcode Cloud build action.
 
 

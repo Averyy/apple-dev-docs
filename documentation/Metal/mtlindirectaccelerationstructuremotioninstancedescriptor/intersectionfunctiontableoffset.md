@@ -1,7 +1,8 @@
 # intersectionFunctionTableOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An offset for determining which function in the intersection function table Metal calls when testing a ray against the instance.
 
@@ -17,6 +18,10 @@ An offset for determining which function in the intersection function table Meta
 
 ```swift
 var intersectionFunctionTableOffset: UInt32
+```
+
+```c
+uint32_t intersectionFunctionTableOffset;
 ```
 
 

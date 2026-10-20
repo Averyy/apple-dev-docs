@@ -1,7 +1,8 @@
 # UINavigationBar.NSToolbarSection
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that determine how the system hosts the navigation bar in an AppKit toolbar.
 
@@ -17,41 +18,46 @@ Constants that determine how the system hosts the navigation bar in an AppKit to
 enum NSToolbarSection
 ```
 
+```c
+enum UINavigationBarNSToolbarSection : NSInteger;
+```
+
 #### Discussion
 
-Not every navigation item property is supported in every toolbar section. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
+Not every navigation item property is supported in every toolbar section. For more information, see [Display content in a toolbar on Mac](../uinavigationitem/title.md#Display-content-in-a-toolbar-on-Mac).
 
 ## Topics
 
 ### Constants
-- [UINavigationBar.NSToolbarSection.none](uinavigationbar/nstoolbarsection/none.md)
+- [UINavigationBar.NSToolbarSection.none](./nstoolbarsection/none.md)
   A constant that disables hosting the navigation bar in the toolbar.
-- [UINavigationBar.NSToolbarSection.sidebar](uinavigationbar/nstoolbarsection/sidebar.md)
+- [UINavigationBar.NSToolbarSection.sidebar](./nstoolbarsection/sidebar.md)
   A constant that hosts the navigation bar in the toolbar’s sidebar column.
-- [UINavigationBar.NSToolbarSection.supplementary](uinavigationbar/nstoolbarsection/supplementary.md)
+- [UINavigationBar.NSToolbarSection.supplementary](./nstoolbarsection/supplementary.md)
   A constant that hosts the navigation bar in the toolbar’s supplementary column.
-- [UINavigationBar.NSToolbarSection.content](uinavigationbar/nstoolbarsection/content.md)
+- [UINavigationBar.NSToolbarSection.content](./nstoolbarsection/content.md)
   A constant that hosts the navigation bar in the toolbar’s content column.
 ### Initializers
-- [init?(rawValue: Int)](uinavigationbar/nstoolbarsection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nstoolbarsection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var behavioralStyle: UIBehavioralStyle](uinavigationbar/behavioralstyle.md)
+### Building with Mac Catalyst
+- [var behavioralStyle: UIBehavioralStyle](./behavioralstyle.md)
   The behavioral style of the navigation bar.
-- [var preferredBehavioralStyle: UIBehavioralStyle](uinavigationbar/preferredbehavioralstyle.md)
+- [var preferredBehavioralStyle: UIBehavioralStyle](./preferredbehavioralstyle.md)
   The preferred behavioral style of the navigation bar.
-- [var currentNSToolbarSection: UINavigationBar.NSToolbarSection](uinavigationbar/currentnstoolbarsection.md)
+- [var currentNSToolbarSection: UINavigationBar.NSToolbarSection](./currentnstoolbarsection.md)
   The toolbar section that the navigation bar is currently using.
 
 

@@ -1,7 +1,8 @@
 # Delete a beta tester
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a beta tester’s ability to test all apps.
 
@@ -14,11 +15,24 @@ Remove a beta tester’s ability to test all apps.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+## Responses
+
+- `202` Accepted
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a beta tester](post-v1-betatesters.md)
+### Creating and Deleting Beta Testers
+- [Create a beta tester](./post-v1-betatesters.md)
   Create a beta tester assigned to a group, a build, or an app.
 
 

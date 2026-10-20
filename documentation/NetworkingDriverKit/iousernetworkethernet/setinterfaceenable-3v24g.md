@@ -1,16 +1,17 @@
 # SetInterfaceEnable
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables your service.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetInterfaceEnable(bool isEnable);
 ```
 

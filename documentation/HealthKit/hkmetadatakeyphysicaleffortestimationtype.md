@@ -1,7 +1,8 @@
 # HKMetadataKeyPhysicalEffortEstimationType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -17,14 +18,19 @@
 let HKMetadataKeyPhysicalEffortEstimationType: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyPhysicalEffortEstimationType;
+```
+
 ## Topics
 
 ### Valid estimation types
-- [enum HKPhysicalEffortEstimationType](hkphysicaleffortestimationtype.md)
+- [enum HKPhysicalEffortEstimationType](./hkphysicaleffortestimationtype.md)
 
 ## See Also
 
-- [let HKMetadataKeyAverageMETs: String](hkmetadatakeyaveragemets.md)
+### Intensity
+- [let HKMetadataKeyAverageMETs: String](./hkmetadatakeyaveragemets.md)
   A key that indicates the average Metabolic Equivalent of Task (METs) during a workout.
 
 

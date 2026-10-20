@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that represents an amount of money.
 
@@ -20,9 +21,14 @@ A number that represents an amount of money.
 var amount: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double amount;
+```
+
 ## See Also
 
-- [var currency: String](ddmatchmoneyamount/currency.md)
+### Getting money information
+- [var currency: String](./currency.md)
   A string that contains an ISO currency code, which the data detection system identifies from the matched string and user preferences.
 
 

@@ -1,17 +1,24 @@
 # names
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns all the hostnames of the receiver.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use Network framework instead, see deprecation notice in <Foundation/NSHost.h>
 
 ## Declaration
 
 ```swift
 var names: [String] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSString *> * names;
 ```
 
 #### Return Value
@@ -20,13 +27,14 @@ All the hostnames of the receiver.
 
 ## See Also
 
-- [var address: String?](host/address.md)
+### Getting Host Information
+- [var address: String?](./address.md)
   Returns one of the network addresses of the receiver.
-- [var addresses: [String]](host/addresses.md)
+- [var addresses: [String]](./addresses.md)
   Returns all the network addresses of the receiver.
-- [var name: String?](host/name.md)
+- [var name: String?](./name.md)
   Returns one of the hostnames of the receiver.
-- [var localizedName: String?](host/localizedname.md)
+- [var localizedName: String?](./localizedname.md)
   Returns the name used as by default when publishing `NSNetServices`.
 
 

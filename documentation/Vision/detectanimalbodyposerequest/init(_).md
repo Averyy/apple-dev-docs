@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animal body pose-detection request.
 

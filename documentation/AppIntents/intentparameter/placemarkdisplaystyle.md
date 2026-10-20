@@ -1,7 +1,8 @@
 # IntentParameter.PlacemarkDisplayStyle
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes a location’s display style in Shortcuts and Siri Suggestions.
 
@@ -11,7 +12,7 @@ Describes a location’s display style in Shortcuts and Siri Suggestions.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,25 +21,28 @@ Describes a location’s display style in Shortcuts and Siri Suggestions.
 enum PlacemarkDisplayStyle
 ```
 
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
+
 ## Topics
 
 ### Getting the display styles
-- [IntentParameter.PlacemarkDisplayStyle.name](intentparameter/placemarkdisplaystyle/name.md)
+- [IntentParameter.PlacemarkDisplayStyle.name](./placemarkdisplaystyle/name.md)
   A display style that shows only the location’s city.
-- [IntentParameter.PlacemarkDisplayStyle.address](intentparameter/placemarkdisplaystyle/address.md)
+- [IntentParameter.PlacemarkDisplayStyle.address](./placemarkdisplaystyle/address.md)
   A display style that shows the location’s full address.
-- [IntentParameter.PlacemarkDisplayStyle.city](intentparameter/placemarkdisplaystyle/city.md)
+- [IntentParameter.PlacemarkDisplayStyle.city](./placemarkdisplaystyle/city.md)
   A display style that shows only the location’s city.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle?](intentparameter/displaystyle.md)
+### Accessing the display style
+- [var displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle?](./displaystyle.md)
 
 
 ---

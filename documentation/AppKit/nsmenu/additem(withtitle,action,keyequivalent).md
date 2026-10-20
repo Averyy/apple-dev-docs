@@ -1,17 +1,22 @@
 # addItem(withTitle:action:keyEquivalent:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new menu item and adds it to the end of the menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func addItem(withTitle string: String, action selector: Selector?, keyEquivalent charCode: String) -> NSMenuItem
+```
+
+```objc
+- (NSMenuItem *) addItemWithTitle:(NSString *) string action:(SEL) selector keyEquivalent:(NSString *) charCode;
 ```
 
 #### Return Value
@@ -26,19 +31,20 @@ The created menu item (an object conforming to the NSMenuItem protocol) or `nil`
 
 ## See Also
 
-- [func insertItem(NSMenuItem, at: Int)](nsmenu/insertitem(_:at:).md)
+### Adding and Removing Menu Items
+- [func insertItem(NSMenuItem, at: Int)](./insertitem%28_,at%29.md)
   Inserts a menu item into the menu at a specific location.
-- [func insertItem(withTitle: String, action: Selector?, keyEquivalent: String, at: Int) -> NSMenuItem](nsmenu/insertitem(withtitle:action:keyequivalent:at:).md)
+- [func insertItem(withTitle: String, action: Selector?, keyEquivalent: String, at: Int) -> NSMenuItem](./insertitem%28withtitle,action,keyequivalent,at%29.md)
   Creates and adds a menu item at a specified location in the menu.
-- [func addItem(NSMenuItem)](nsmenu/additem(_:).md)
+- [func addItem(NSMenuItem)](./additem%28_%29.md)
   Adds a menu item to the end of the menu.
-- [func removeItem(NSMenuItem)](nsmenu/removeitem(_:).md)
+- [func removeItem(NSMenuItem)](./removeitem%28_%29.md)
   Removes a menu item from the menu.
-- [func removeItem(at: Int)](nsmenu/removeitem(at:).md)
+- [func removeItem(at: Int)](./removeitem%28at%29.md)
   Removes the menu item at a specified location in the menu.
-- [func itemChanged(NSMenuItem)](nsmenu/itemchanged(_:).md)
+- [func itemChanged(NSMenuItem)](./itemchanged%28_%29.md)
   Invoked when a menu item is modified visually (for example, its title changes).
-- [func removeAllItems()](nsmenu/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all the menu items in the menu.
 
 

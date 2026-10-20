@@ -1,7 +1,8 @@
 # BooleanLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The default type for an otherwise-unconstrained Boolean literal.
 
@@ -34,9 +35,10 @@ The type aliased by `BooleanLiteralType` must conform to the `ExpressibleByBoole
 
 ## See Also
 
-- [typealias IntegerLiteralType](integerliteraltype.md)
+### Basic Values
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   The default type for an otherwise-unconstrained integer literal.
-- [typealias FloatLiteralType](floatliteraltype.md)
+- [typealias FloatLiteralType](./floatliteraltype.md)
   The default type for an otherwise-unconstrained floating-point literal.
 
 

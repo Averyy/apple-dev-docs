@@ -1,7 +1,8 @@
 # AnnotationOverflowResolution
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,23 @@ struct AnnotationOverflowResolution
 ## Topics
 
 ### Structures
-- [AnnotationOverflowResolution.Boundary](annotationoverflowresolution/boundary.md)
+- [AnnotationOverflowResolution.Boundary](./annotationoverflowresolution/boundary.md)
   Describes a boundary of a chart for overflow resolution.
-- [AnnotationOverflowResolution.Strategy](annotationoverflowresolution/strategy.md)
+- [AnnotationOverflowResolution.Strategy](./annotationoverflowresolution/strategy.md)
   Strategies for annotation overflow resolution.
 ### Initializers
-- [init(x: AnnotationOverflowResolution.Strategy, y: AnnotationOverflowResolution.Strategy)](annotationoverflowresolution/init(x:y:).md)
+- [init(x: AnnotationOverflowResolution.Strategy, y: AnnotationOverflowResolution.Strategy)](./annotationoverflowresolution/init%28x,y%29.md)
   Creates an AnnotationOverflowResolution with strategies for the X and Y dimensions.
 ### Type Properties
-- [static let automatic: AnnotationOverflowResolution](annotationoverflowresolution/automatic.md)
+- [static let automatic: AnnotationOverflowResolution](./annotationoverflowresolution/automatic.md)
   Automatically resolves overflow in each dimension.
 
 ## See Also
 
-- [struct AnnotationContext](annotationcontext.md)
+### Annotations
+- [struct AnnotationContext](./annotationcontext.md)
   Information about an item that you add an annotation to.
-- [struct AnnotationPosition](annotationposition.md)
+- [struct AnnotationPosition](./annotationposition.md)
   The position of an annotation.
 
 

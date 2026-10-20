@@ -438,7 +438,7 @@ and moves the square to its new position.
 
 <!-- Apple Books screenshot begins here. -->
 
-![](computedProperties)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/computedProperties@2x.png)
 
 ### Shorthand Setter Declaration
 
@@ -860,7 +860,7 @@ and the default name of `oldValue` is used instead.
 > This is because of the copy-in copy-out memory model for in-out parameters:
 > The value is always written back to the property at the end of the function.
 > For a detailed discussion of the behavior of in-out parameters,
-> see [In Out Parameters](Declarations.md#In-Out-Parameters).
+> see [In-Out Parameters](../ReferenceManual/Declarations.md#In-Out-Parameters).
 
 <!--
   - test: `observersCalledAfterInout`
@@ -1920,7 +1920,7 @@ When the audio level is `10`, all of the lights for that channel are lit.
 In this figure, the left channel has a current level of `9`,
 and the right channel has a current level of `7`:
 
-![](staticPropertiesVUMeter)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/staticPropertiesVUMeter@2x.png)
 
 The audio channels described above are represented by
 instances of the `AudioChannel` structure:

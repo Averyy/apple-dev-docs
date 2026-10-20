@@ -1,7 +1,8 @@
 # setTime(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current time.
 
@@ -22,7 +23,8 @@ func setTime(_ time: CMTime) throws
 
 ## See Also
 
-- [func time(withTimescale: CMTimeScale, rounding: CMTimeRoundingMethod) -> CMTime](cmtimebase/time(withtimescale:rounding:).md)
+### Getting and Setting Time
+- [func time(withTimescale: CMTimeScale, rounding: CMTimeRoundingMethod) -> CMTime](./time%28withtimescale,rounding%29.md)
   Returns the current time in the timescale you request.
 
 

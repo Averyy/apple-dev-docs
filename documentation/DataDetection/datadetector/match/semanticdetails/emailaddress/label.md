@@ -1,7 +1,8 @@
 # label
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value the framework returns that may contain a value suitable to populate a label when creating a contact.
 
@@ -22,7 +23,8 @@ let label: String?
 
 ## See Also
 
-- [let emailAddress: String](datadetector/match/semanticdetails/emailaddress/emailaddress.md)
+### Properties that describe an email address
+- [let emailAddress: String](./emailaddress.md)
   The value the framework returns for a match on an email address.
 
 

@@ -1,7 +1,8 @@
 # applyReduction(_:input:output:weights:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies the specified reduction function.
 
@@ -11,7 +12,7 @@ Applies the specified reduction function.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -30,15 +31,16 @@ static func applyReduction(_ reductionFunction: BNNS.ReductionFunction, input: B
 
 ## See Also
 
-- [class ReductionLayer](bnns/reductionlayer.md)
+### Reduction layers
+- [class ReductionLayer](./reductionlayer.md)
   A layer object that wraps a reduction filter and manages its deinitialization.
-- [struct BNNSReduceFunction](bnnsreducefunction.md)
+- [struct BNNSReduceFunction](../bnnsreducefunction.md)
   Constants that describe reduction functions.
-- [struct BNNSLayerParametersReduction](bnnslayerparametersreduction.md)
+- [struct BNNSLayerParametersReduction](../bnnslayerparametersreduction.md)
   A set of parameters that define a reduction layer.
-- [func BNNSFilterCreateLayerReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerreduction(_:_:).md)
+- [func BNNSFilterCreateLayerReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayerreduction%28_,_%29.md)
   Returns a new reduction layer.
-- [func BNNSDirectApplyReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsdirectapplyreduction(_:_:).md)
+- [func BNNSDirectApplyReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> Int32](../bnnsdirectapplyreduction%28_,_%29.md)
   Applies a reduction operation directly to an input tensor.
 
 

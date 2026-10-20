@@ -1,7 +1,8 @@
 # locale(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the list format style to use the specified locale.
 
@@ -30,15 +31,16 @@ A list format style with the provided locale.
 
 ## See Also
 
-- [var width: ListFormatStyle<Style, Base>.Width](listformatstyle/width-swift.property.md)
+### Modifying a list format style
+- [var width: ListFormatStyle<Style, Base>.Width](./width-swift.property.md)
   The size of the list.
-- [ListFormatStyle.Width](listformatstyle/width-swift.enum.md)
+- [ListFormatStyle.Width](./width-swift.enum.md)
   The type representing the width of a list.
-- [var listType: ListFormatStyle<Style, Base>.ListType](listformatstyle/listtype-swift.property.md)
+- [var listType: ListFormatStyle<Style, Base>.ListType](./listtype-swift.property.md)
   The type of the list.
-- [ListFormatStyle.ListType](listformatstyle/listtype-swift.enum.md)
+- [ListFormatStyle.ListType](./listtype-swift.enum.md)
   A type that describes whether the returned list contains cumulative or alternative elements.
-- [var locale: Locale](listformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting items in the list.
 
 

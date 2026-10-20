@@ -1,7 +1,8 @@
 # lineHeight
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height, in points, of text lines.
 
@@ -9,7 +10,7 @@ The height, in points, of text lines.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,23 +20,28 @@ The height, in points, of text lines.
 var lineHeight: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat lineHeight;
+```
+
 #### Discussion
 
-This value is approximately equal to [`ascender`](uifont/ascender.md) plus the absolute value of [`descender`](uifont/descender.md) plus [`leading`](uifont/leading.md). For an explanation of how these metrics relate to each other, see [`UIFont`](uifont.md).
+This value is approximately equal to [`ascender`](./ascender.md) plus the absolute value of [`descender`](./descender.md) plus [`leading`](./leading.md). For an explanation of how these metrics relate to each other, see [`UIFont`](../uifont.md).
 
 ## See Also
 
-- [var pointSize: CGFloat](uifont/pointsize.md)
+### Getting Font Metrics
+- [var pointSize: CGFloat](./pointsize.md)
   The font’s point size, or the effective vertical point size for a font with a nonstandard matrix.
-- [var ascender: CGFloat](uifont/ascender.md)
+- [var ascender: CGFloat](./ascender.md)
   The top y-coordinate, offset from the baseline, of the font’s longest ascender.
-- [var descender: CGFloat](uifont/descender.md)
+- [var descender: CGFloat](./descender.md)
   The bottom y-coordinate, offset from the baseline, of the font’s longest descender.
-- [var leading: CGFloat](uifont/leading.md)
+- [var leading: CGFloat](./leading.md)
   The font’s leading information.
-- [var capHeight: CGFloat](uifont/capheight.md)
+- [var capHeight: CGFloat](./capheight.md)
   The font’s cap height information.
-- [var xHeight: CGFloat](uifont/xheight.md)
+- [var xHeight: CGFloat](./xheight.md)
   The x-height of the font.
 
 

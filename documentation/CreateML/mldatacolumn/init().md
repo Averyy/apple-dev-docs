@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an invalid Column.
 
@@ -25,9 +26,10 @@ Assigning an invalid Column to a column name in a DataTable will remove any Colu
 
 ## See Also
 
-- [init(repeating:count:)](mldatacolumn/init(repeating:count:).md)
+### Creating a data column
+- [init(repeating:count:)](./init%28repeating,count%29.md)
   Creates a new column with a repeating element.
-- [init<S>(S)](mldatacolumn/init(_:).md)
+- [init<S>(S)](./init%28_%29.md)
   Creates a new column from a given sequence of elements.
 
 

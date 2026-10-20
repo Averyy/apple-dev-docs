@@ -1,7 +1,8 @@
 # copyMappings(sourceBuffer:destinationBuffer:operations:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies multiple offsets within a source placement sparse buffer to a destination placement sparse buffer.
 
@@ -21,7 +22,7 @@ func copyMappings(sourceBuffer: any MTLBuffer, destinationBuffer: any MTLBuffer,
 
 #### Discussion
 
-You are responsible for ensuring the source destination sparse buffers have the same `placementSparsePageSize` when you create them via [`makeBuffer(length:options:placementSparsePageSize:)`](mtldevice/makebuffer(length:options:placementsparsepagesize:).md).
+You are responsible for ensuring the source destination sparse buffers have the same `placementSparsePageSize` when you create them via [`makeBuffer(length:options:placementSparsePageSize:)`](../mtldevice/makebuffer%28length,options,placementsparsepagesize%29.md).
 
 Additionally, you are responsible for ensuring both the source and destination sparse buffers don’t use the same aliased tiles at the same time.
 
@@ -29,9 +30,9 @@ Additionally, you are responsible for ensuring both the source and destination s
 
 ## Parameters
 
-- `sourceBuffer`: The source placement sparse [`MTLBuffer`](mtlbuffer.md).
-- `destinationBuffer`: The destination placement sparse [`MTLBuffer`](mtlbuffer.md).
-- `operations`: An array of [`MTL4CopySparseBufferMappingOperation`](mtl4copysparsebuffermappingoperation.md) instances to perform.
+- `sourceBuffer`: The source placement sparse [`MTLBuffer`](../mtlbuffer.md).
+- `destinationBuffer`: The destination placement sparse [`MTLBuffer`](../mtlbuffer.md).
+- `operations`: An array of [`MTL4CopySparseBufferMappingOperation`](../mtl4copysparsebuffermappingoperation.md) instances to perform.
 
 
 ---

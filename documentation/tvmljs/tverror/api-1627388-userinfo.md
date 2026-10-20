@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The user info dictionary.
 
@@ -10,21 +11,22 @@ The user info dictionary.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Object userInfo;
 ```
 
 #### Discussion
 
-If no user info dictionary has been set, this property is `null`. See [`User Info Dictionary Keys`](tverror/user_info_dictionary_keys.md) for a list of keys.
+If no user info dictionary has been set, this property is `null`. See [User Info Dictionary Keys](./user_info_dictionary_keys.md) for a list of keys.
 
 ## See Also
 
-- [code](tverror/1627334-code.md)
+### Getting Error Properties
+- [code](./api-1627334-code.md)
   The error code.
-- [description](tverror/1627424-description.md)
+- [description](./api-1627424-description.md)
   A string containing the description of the error.
-- [domain](tverror/1627426-domain.md)
+- [domain](./api-1627426-domain.md)
   A string containing the error domain.
 
 

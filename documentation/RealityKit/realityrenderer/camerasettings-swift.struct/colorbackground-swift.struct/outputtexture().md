@@ -1,7 +1,8 @@
 # outputTexture()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use the corresponding `CameraOutput` colorTexture as background.
 

@@ -1,7 +1,8 @@
 # isGraphemeExtend
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a grapheme extender.
 
@@ -26,7 +27,7 @@ A grapheme extender can be thought of primarily as a non-spacing glyph that is a
 
 The set of scalars for which `isGraphemeExtend` is `true` is disjoint by definition from the set for which `isGraphemeBase` is `true`.
 
-This property corresponds to the “Grapheme_Extend” and the “Other_Grapheme_Extend” properties in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Grapheme_Extend” and the “Other_Grapheme_Extend” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

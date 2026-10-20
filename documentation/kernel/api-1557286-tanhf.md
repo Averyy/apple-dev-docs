@@ -1,24 +1,26 @@
 # tanhf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float tanhf(float);
 ```
 
 ## See Also
 
-- [tan](1557150-tan.md)
-- [tanf](1557258-tanf.md)
-- [tanh](1557370-tanh.md)
-- [tanhl](1557188-tanhl.md)
-- [tanl](1557239-tanl.md)
+### Tangent
+- [tan](./api-1557150-tan.md)
+- [tanf](./api-1557258-tanf.md)
+- [tanh](./api-1557370-tanh.md)
+- [tanhl](./api-1557188-tanhl.md)
+- [tanl](./api-1557239-tanl.md)
 
 
 ---

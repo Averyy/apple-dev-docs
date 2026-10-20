@@ -1,7 +1,8 @@
 # kSecPolicyAppleSSL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Basic X509 plus host name verification per RFC 2818.
 
@@ -18,6 +19,10 @@ Basic X509 plus host name verification per RFC 2818.
 
 ```swift
 let kSecPolicyAppleSSL: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleSSL;
 ```
 
 

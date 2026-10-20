@@ -1,7 +1,8 @@
 # Parameter
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
 
@@ -24,9 +25,9 @@ struct Parameter<Value> where Value : Decodable, Value : Encodable, Value : Send
 
 You create a parameter by wrapping a conforming type with the `@Parameter` macro. An `id` is generated based on the parameter’s enclosing instance and the name of the property it is wrapping.
 
-> **Note**: Parameters are persistent by default. Wrapping a property with `@Parameter` will persist its value between app launches within the tips datastore. Passing [`ParameterOption.transient`](tips/parameteroption/transient.md) as an option will allow the parameter to reset to a default value the first time it is referenced.
+> **Note**: Parameters are persistent by default. Wrapping a property with `@Parameter` will persist its value between app launches within the tips datastore. Passing [`ParameterOption.transient`](./parameteroption/transient.md) as an option will allow the parameter to reset to a default value the first time it is referenced.
 
-Tips must be configured using [`configure(_:)`](tips/configure(_:).md) before a parameter’s value will be updated.
+Tips must be configured using [`configure(_:)`](./configure%28_%29.md) before a parameter’s value will be updated.
 
 Pair parameters with the tip properties you want to monitor.
 
@@ -56,21 +57,22 @@ struct FavoriteLandmarkTip: Tip {
 ## Topics
 
 ### Parameter options
-- [static var transient: Tips.ParameterOption](tips/parameteroption/transient.md)
+- [static var transient: Tips.ParameterOption](./parameteroption/transient.md)
   An option that resets the parameter value the first time it is referenced.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Rule](tips/rule.md)
+### Related Documentation
+- [struct Rule](./rule.md)
   A condition to meet before displaying a tip.
 
 

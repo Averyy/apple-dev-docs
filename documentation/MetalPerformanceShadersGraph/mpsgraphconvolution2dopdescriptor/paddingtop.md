@@ -1,7 +1,8 @@
 # paddingTop
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of zeros added at the top of the source tensor.
 
@@ -17,6 +18,10 @@ The number of zeros added at the top of the source tensor.
 
 ```swift
 var paddingTop: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingTop;
 ```
 
 

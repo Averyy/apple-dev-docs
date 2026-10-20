@@ -1,7 +1,8 @@
 # init(coordinate:altitude:horizontalAccuracy:verticalAccuracy:course:speed:timestamp:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a location object with the specified coordinate, altitude, and course information.
 
@@ -20,13 +21,17 @@ Creates a location object with the specified coordinate, altitude, and course in
 init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy hAccuracy: CLLocationAccuracy, verticalAccuracy vAccuracy: CLLocationAccuracy, course: CLLocationDirection, speed: CLLocationSpeed, timestamp: Date)
 ```
 
+```objc
+- (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate altitude:(CLLocationDistance) altitude horizontalAccuracy:(CLLocationAccuracy) hAccuracy verticalAccuracy:(CLLocationAccuracy) vAccuracy course:(CLLocationDirection) course speed:(CLLocationSpeed) speed timestamp:(NSDate *) timestamp;
+```
+
 #### Return Value
 
 A location object initialized with the specified geographical coordinate, altitude, and course information.
 
 #### Discussion
 
-Use this method to create location objects that aren’t necessarily based on the user’s current location.Typically, you acquire location objects from your [`CLLocationManager`](cllocationmanager.md) object, which returns the user’s actual location. However, you might use this method when you want to represent any location on a map. For example, you might create an object to represent the user’s intended destination.
+Use this method to create location objects that aren’t necessarily based on the user’s current location.Typically, you acquire location objects from your [`CLLocationManager`](../cllocationmanager.md) object, which returns the user’s actual location. However, you might use this method when you want to represent any location on a map. For example, you might create an object to represent the user’s intended destination.
 
 ## Parameters
 
@@ -40,13 +45,14 @@ Use this method to create location objects that aren’t necessarily based on th
 
 ## See Also
 
-- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)](cllocation/init(latitude:longitude:).md)
+### Creating a location object
+- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)](./init%28latitude,longitude%29.md)
   Creates a location object with the specified latitude and longitude.
-- [init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, timestamp: Date)](cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:timestamp:).md)
+- [init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, timestamp: Date)](./init%28coordinate,altitude,horizontalaccuracy,verticalaccuracy,timestamp%29.md)
   Creates a location object with the specified coordinate and altitude information.
-- [init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, course: CLLocationDirection, courseAccuracy: CLLocationDirectionAccuracy, speed: CLLocationSpeed, speedAccuracy: CLLocationSpeedAccuracy, timestamp: Date)](cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:courseaccuracy:speed:speedaccuracy:timestamp:).md)
+- [init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, course: CLLocationDirection, courseAccuracy: CLLocationDirectionAccuracy, speed: CLLocationSpeed, speedAccuracy: CLLocationSpeedAccuracy, timestamp: Date)](./init%28coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,courseaccuracy,speed,speedaccuracy,timestamp%29.md)
   Creates a location object with the specified coordinate, altitude, course, and accuracy information.
-- [init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, course: CLLocationDirection, courseAccuracy: CLLocationDirectionAccuracy, speed: CLLocationSpeed, speedAccuracy: CLLocationSpeedAccuracy, timestamp: Date, sourceInfo: CLLocationSourceInformation)](cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:courseaccuracy:speed:speedaccuracy:timestamp:sourceinfo:).md)
+- [init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, course: CLLocationDirection, courseAccuracy: CLLocationDirectionAccuracy, speed: CLLocationSpeed, speedAccuracy: CLLocationSpeedAccuracy, timestamp: Date, sourceInfo: CLLocationSourceInformation)](./init%28coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,courseaccuracy,speed,speedaccuracy,timestamp,sourceinfo%29.md)
 
 
 ---

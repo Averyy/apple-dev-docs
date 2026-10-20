@@ -1,11 +1,12 @@
 # TextOutputStreamable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func write<Target>(to: inout Target)](character/write(to:).md)
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes the character into the given output stream.
 
 

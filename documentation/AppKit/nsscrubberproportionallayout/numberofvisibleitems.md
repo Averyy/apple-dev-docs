@@ -1,7 +1,8 @@
 # numberOfVisibleItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items visible in the scrubber at once.
 
@@ -12,6 +13,10 @@ The number of items visible in the scrubber at once.
 
 ```swift
 var numberOfVisibleItems: Int { get set }
+```
+
+```objc
+@property NSInteger numberOfVisibleItems;
 ```
 
 

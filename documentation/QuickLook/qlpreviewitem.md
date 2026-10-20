@@ -1,7 +1,8 @@
 # QLPreviewItem
 
 **Framework**: Quick Look  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 4.0+
@@ -15,6 +16,10 @@
 protocol QLPreviewItem : NSObjectProtocol
 ```
 
+```objc
+@protocol QLPreviewItem <NSObject>
+```
+
 #### Overview
 
 The QLPreviewItem protocol declares the methods that a QLPreviewController instance uses to access the contents of a given item.
@@ -22,23 +27,24 @@ The QLPreviewItem protocol declares the methods that a QLPreviewController insta
 ## Topics
 
 ### Instance Properties
-- [var previewItemTitle: String?](qlpreviewitem/previewitemtitle.md)
-- [var previewItemURL: URL?](qlpreviewitem/previewitemurl.md)
+- [var previewItemTitle: String?](./qlpreviewitem/previewitemtitle.md)
+- [var previewItemURL: URL?](./qlpreviewitem/previewitemurl.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [ARQuickLookPreviewItem](arquicklookpreviewitem.md)
+- [ARQuickLookPreviewItem](./arquicklookpreviewitem.md)
 
 ## See Also
 
-- [class QLFilePreviewRequest](qlfilepreviewrequest.md)
-- [class QLPreviewProvider](qlpreviewprovider.md)
-- [class QLPreviewReply](qlpreviewreply.md)
-- [class QLPreviewReplyAttachment](qlpreviewreplyattachment.md)
-- [protocol QLPreviewingController](qlpreviewingcontroller.md)
+### QuickLookUI symbols
+- [class QLFilePreviewRequest](./qlfilepreviewrequest.md)
+- [class QLPreviewProvider](./qlpreviewprovider.md)
+- [class QLPreviewReply](./qlpreviewreply.md)
+- [class QLPreviewReplyAttachment](./qlpreviewreplyattachment.md)
+- [protocol QLPreviewingController](./qlpreviewingcontroller.md)
   For view based previews, the view controller that implements the QLPreviewingController protocol must at least implement one of the two following methods: -[QLPreviewingController preparePreviewOfSearchableItemWithIdentifier:queryString:completionHandler:], to generate previews for Spotlight searchable items. -[QLPreviewingController preparePreviewOfFileAtURL:completionHandler:], to generate previews for file URLs.
 
 

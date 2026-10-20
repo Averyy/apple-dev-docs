@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The maximum size of a resource, in bytes, that can be currently allocated from the heap.
@@ -20,13 +21,17 @@ The maximum size of a resource, in bytes, that can be currently allocated from t
 func maxAvailableSize(alignment: Int) -> Int
 ```
 
+```objc
+- (NSUInteger) maxAvailableSizeWithAlignment:(NSUInteger) alignment;
+```
+
 #### Return Value
 
 The maximum size for the resource, in bytes.
 
 #### Discussion
 
-This method measures fragmentation within the heap. You can use the [`heapBufferSizeAndAlign(length:options:)`](mtldevice/heapbuffersizeandalign(length:options:).md) and [`heapTextureSizeAndAlign(descriptor:)`](mtldevice/heaptexturesizeandalign(descriptor:).md) methods to help you determine the correct alignment for the resource.
+This method measures fragmentation within the heap. You can use the [`heapBufferSizeAndAlign(length:options:)`](../mtldevice/heapbuffersizeandalign%28length,options%29.md) and [`heapTextureSizeAndAlign(descriptor:)`](../mtldevice/heaptexturesizeandalign%28descriptor%29.md) methods to help you determine the correct alignment for the resource.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ This method measures fragmentation within the heap. You can use the [`heapBuffer
 
 ## See Also
 
-- [var size: Int](mtlheap/size.md)
+### Checking a heap’s size information
+- [var size: Int](./size.md)
   The total size of the heap, in bytes.
-- [var usedSize: Int](mtlheap/usedsize.md)
+- [var usedSize: Int](./usedsize.md)
   The size of all resources currently in the heap, in bytes.
-- [var currentAllocatedSize: Int](mtlheap/currentallocatedsize.md)
+- [var currentAllocatedSize: Int](./currentallocatedsize.md)
   The size, in bytes, of the current heap allocation.
 
 

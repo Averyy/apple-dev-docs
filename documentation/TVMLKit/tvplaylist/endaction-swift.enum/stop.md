@@ -1,12 +1,15 @@
 # TVPlaylist.EndAction.stop
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player has stopped playback
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The player has stopped playback
 case stop
 ```
 
+```c
+TVPlaylistEndActionStop
+```
+
 ## See Also
 
-- [TVPlaylist.EndAction.pause](tvplaylist/endaction-swift.enum/pause.md)
+### End Playback Reasons
+- [TVPlaylist.EndAction.pause](./pause.md)
   The player has paused playback.
-- [TVPlaylist.EndAction.waitForMoreItems](tvplaylist/endaction-swift.enum/waitformoreitems.md)
+- [TVPlaylist.EndAction.waitForMoreItems](./waitformoreitems.md)
   The player is waiting for more media items.
 
 

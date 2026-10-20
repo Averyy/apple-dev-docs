@@ -1,7 +1,8 @@
 # kMDItemPath
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The complete path to the file. A CFString.
 
@@ -12,6 +13,10 @@ The complete path to the file. A CFString.
 
 ```swift
 let kMDItemPath: CFString!
+```
+
+```c
+const CFStringRef kMDItemPath;
 ```
 
 

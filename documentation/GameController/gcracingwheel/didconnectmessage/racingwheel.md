@@ -1,7 +1,8 @@
 # racingWheel
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The racing wheel object that connected to the device.
 

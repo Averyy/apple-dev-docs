@@ -1,7 +1,8 @@
 # makeCharacterIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator that will construct `Character`s from the underlying UTF-8 content.
 

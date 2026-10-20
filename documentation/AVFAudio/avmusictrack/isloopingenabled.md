@@ -1,7 +1,8 @@
 # isLoopingEnabled
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the track is in a looping state.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the track is in a looping state.
 var isLoopingEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isLoopingEnabled) BOOL loopingEnabled;
+```
+
 #### Discussion
 
-If you don’t set [`loopRange`](avmusictrack/looprange.md), the framework loops the full track.
+If you don’t set [`loopRange`](./looprange.md), the framework loops the full track.
 
 ## See Also
 
-- [var loopRange: AVBeatRange](avmusictrack/looprange.md)
+### Configuring the looping state
+- [var loopRange: AVBeatRange](./looprange.md)
   The timestamp range for the loop, in beats.
-- [var numberOfLoops: Int](avmusictrack/numberofloops.md)
+- [var numberOfLoops: Int](./numberofloops.md)
   The number of times the track’s loop repeats.
 
 

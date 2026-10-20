@@ -1,16 +1,17 @@
 # templateIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier used in push notifications.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS ?+
-- visionOS 1.0+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -18,13 +19,18 @@ An identifier used in push notifications.
 var templateIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * templateIdentifier;
+```
+
 ## See Also
 
-- [var accountHash: String](pkshareablepassmetadata/accounthash.md)
+### Reading notification properties
+- [var accountHash: String](./accounthash.md)
   An Apple Push Notification push token.
-- [var relyingPartyIdentifier: String](pkshareablepassmetadata/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   An identifier used in push notifications.
-- [var cardTemplateIdentifier: String](pkshareablepassmetadata/cardtemplateidentifier.md)
+- [var cardTemplateIdentifier: String](./cardtemplateidentifier.md)
 
 
 ---

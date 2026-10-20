@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 A static factory method that allocates and initializes an slider control.
 
@@ -10,7 +11,7 @@ A static factory method that allocates and initializes an slider control.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoSliderControl> Create(IOUserVideoDriver *in_driver, bool in_is_settable, uint32_t in_control_value, IOUserVideoSliderRange in_range, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
@@ -34,13 +35,14 @@ If IOUserVideoSliderControl is subclassed to override behavior, don’t use this
 
 ## See Also
 
-- [init](iouservideoslidercontrol/init.md)
+### Creating a slider control
+- [init](./init.md)
   Initializes a slider control.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](../videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](../videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 

@@ -1,7 +1,8 @@
 # data(withCapacity:options:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func data(withCapacity capacity: Int, options: IOUSBHostObjectDataOptions = []) throws -> NSMutableData
+```
+
+```objc
+- (NSMutableData *) dataWithCapacity:(NSUInteger) capacity options:(IOUSBHostObjectDataOptions) options error:(NSError **) error;
 ```
 
 #### Return Value

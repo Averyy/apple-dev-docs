@@ -1,7 +1,8 @@
 # hoverAlignment
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Hover alignment describes how the equipment should behave when hovering a target.
 

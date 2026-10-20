@@ -1,7 +1,8 @@
 # EOVERFLOW
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Value too large to be stored in data type.
 

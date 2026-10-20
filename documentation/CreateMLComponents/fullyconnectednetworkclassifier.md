@@ -1,7 +1,8 @@
 # FullyConnectedNetworkClassifier
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A classifier that uses a fully connected network.
 
@@ -22,70 +23,71 @@ struct FullyConnectedNetworkClassifier<Scalar, Label> where Scalar : MLShapedArr
 
 ## Mentions
 
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+- [Creating a multi-label image classifier](./creating-a-multi-label-image-classifier.md)
 
 ## Topics
 
 ### Creating the classifier
-- [init(labels: Set<Label>, configuration: FullyConnectedNetworkConfiguration)](fullyconnectednetworkclassifier/init(labels:configuration:).md)
+- [init(labels: Set<Label>, configuration: FullyConnectedNetworkConfiguration)](./fullyconnectednetworkclassifier/init%28labels,configuration%29.md)
   Creates a fully connected network classifier.
 ### Getting the properties
-- [var labels: Set<Label>](fullyconnectednetworkclassifier/labels.md)
+- [var labels: Set<Label>](./fullyconnectednetworkclassifier/labels.md)
   The set of possible labels.
-- [var configuration: FullyConnectedNetworkConfiguration](fullyconnectednetworkclassifier/configuration.md)
+- [var configuration: FullyConnectedNetworkConfiguration](./fullyconnectednetworkclassifier/configuration.md)
   The fully-connected-network configuration.
 ### Encoding and decoding
-- [func encodeWithOptimizer(FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](fullyconnectednetworkclassifier/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](./fullyconnectednetworkclassifier/encodewithoptimizer%28_,to%29.md)
   Encodes a fitted transformer with an optimizer.
-- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](./fullyconnectednetworkclassifier/decode%28from%29.md)
   Decodes the estimator.
 ### Fitting a classifier
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](./fullyconnectednetworkclassifier/fitted%28to,eventhandler%29.md)
   Fits a fully connected network classifier model to a sequence of examples.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](./fullyconnectednetworkclassifier/fitted%28to,validateon,eventhandler%29.md)
   Fits a fully connected network classifier model to a sequence of examples.
-- [FullyConnectedNetworkClassifier.Annotation](fullyconnectednetworkclassifier/annotation.md)
+- [FullyConnectedNetworkClassifier.Annotation](./fullyconnectednetworkclassifier/annotation.md)
   The annotation type.
-- [FullyConnectedNetworkClassifier.Transformer](fullyconnectednetworkclassifier/transformer.md)
+- [FullyConnectedNetworkClassifier.Transformer](./fullyconnectednetworkclassifier/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [SupervisedEstimator Implementations](fullyconnectednetworkclassifier/supervisedestimator-implementations.md)
-- [UpdatableSupervisedEstimator Implementations](fullyconnectednetworkclassifier/updatablesupervisedestimator-implementations.md)
+- [SupervisedEstimator Implementations](./fullyconnectednetworkclassifier/supervisedestimator-implementations.md)
+- [UpdatableSupervisedEstimator Implementations](./fullyconnectednetworkclassifier/updatablesupervisedestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

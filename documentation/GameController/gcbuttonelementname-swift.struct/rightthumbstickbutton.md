@@ -1,7 +1,8 @@
 # rightThumbstickButton
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the right thumbstick element.
 
@@ -11,7 +12,7 @@ The name of the right thumbstick element.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ static let rightThumbstickButton: GCButtonElementName
 
 ## See Also
 
-- [static let leftThumbstickButton: GCButtonElementName](gcbuttonelementname-swift.struct/leftthumbstickbutton.md)
+### Getting extended gamepad thumbstick names
+- [static let leftThumbstickButton: GCButtonElementName](./leftthumbstickbutton.md)
   The name of the left thumbstick element.
 
 

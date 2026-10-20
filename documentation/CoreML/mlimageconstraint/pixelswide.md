@@ -1,7 +1,8 @@
 # pixelsWide
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model’s default width for an image feature.
 
@@ -20,11 +21,16 @@ The model’s default width for an image feature.
 var pixelsWide: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger pixelsWide;
+```
+
 ## See Also
 
-- [var pixelsHigh: Int](mlimageconstraint/pixelshigh.md)
+### Accessing the constraints
+- [var pixelsHigh: Int](./pixelshigh.md)
   The model’s default height for an image feature.
-- [var pixelFormatType: OSType](mlimageconstraint/pixelformattype.md)
+- [var pixelFormatType: OSType](./pixelformattype.md)
   The model’s pixel format for an image feature.
 
 

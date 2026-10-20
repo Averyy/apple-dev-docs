@@ -1,7 +1,8 @@
 # LanguageModelError.UnsupportedTranscriptContent
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about unsupported prompt content.
 
@@ -22,25 +23,26 @@ struct UnsupportedTranscriptContent
 ## Topics
 
 ### Creating an error instance
-- [init(unsupportedContent: [Transcript.Entry], debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedtranscriptcontent/init(unsupportedcontent:debugdescription:metadata:).md)
+- [init(unsupportedContent: [Transcript.Entry], debugDescription: String, metadata: [String : any Sendable])](./unsupportedtranscriptcontent/init%28unsupportedcontent,debugdescription,metadata%29.md)
   Creates information describing transcript content the model can’t process.
 ### Inspecting unsupported transcript content errors
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedtranscriptcontent/metadata.md)
+- [var metadata: [String : any Sendable]](./unsupportedtranscriptcontent/metadata.md)
   Additional information about the failure, keyed by name.
-- [var unsupportedContent: [Transcript.Entry]](languagemodelerror/unsupportedtranscriptcontent/unsupportedcontent.md)
+- [var unsupportedContent: [Transcript.Entry]](./unsupportedtranscriptcontent/unsupportedcontent.md)
   The transcript entries that the model can’t process.
-- [var debugDescription: String](languagemodelerror/unsupportedtranscriptcontent/debugdescription.md)
+- [var debugDescription: String](./unsupportedtranscriptcontent/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case unsupportedTranscriptContent(LanguageModelError.UnsupportedTranscriptContent)](languagemodelerror/unsupportedtranscriptcontent(_:).md)
+### Transcript content unsupported error
+- [case unsupportedTranscriptContent(LanguageModelError.UnsupportedTranscriptContent)](./unsupportedtranscriptcontent%28_%29.md)
   The prompt contains content that the model cannot process.
 
 

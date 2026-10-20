@@ -1,10 +1,11 @@
 # init(apic_gpa:apic_controls:tsc_deadline:apic_id:ver:tpr:apr:ldr:dfr:svr:isr:tmr:irr:esr:lvt:icr:icr_timer:dcr_timer:ccr_timer:esr_pending:boot_state:aeoi:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

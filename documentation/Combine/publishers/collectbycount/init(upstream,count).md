@@ -1,7 +1,8 @@
 # init(upstream:count:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that buffers a maximum number of items.
 

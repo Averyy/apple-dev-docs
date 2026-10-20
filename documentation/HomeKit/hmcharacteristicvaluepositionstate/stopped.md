@@ -1,7 +1,8 @@
 # HMCharacteristicValuePositionState.stopped
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory isn’t moving.
 
@@ -19,11 +20,16 @@ The accessory isn’t moving.
 case stopped
 ```
 
+```c
+HMCharacteristicValuePositionStateStopped
+```
+
 ## See Also
 
-- [HMCharacteristicValuePositionState.closing](hmcharacteristicvaluepositionstate/closing.md)
+### Position States
+- [HMCharacteristicValuePositionState.closing](./closing.md)
   The position is moving towards minimum value.
-- [HMCharacteristicValuePositionState.opening](hmcharacteristicvaluepositionstate/opening.md)
+- [HMCharacteristicValuePositionState.opening](./opening.md)
   The position is moving towards maximum value.
 
 

@@ -1,16 +1,21 @@
 # optionOnScreenBelowWindow
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 static var optionOnScreenBelowWindow: CGWindowListOption { get }
+```
+
+```c
+kCGWindowListOptionOnScreenBelowWindow
 ```
 
 #### Discussion
@@ -19,11 +24,12 @@ List all windows that are currently onscreen and in behind the window specified 
 
 ## See Also
 
-- [static var excludeDesktopElements: CGWindowListOption](cgwindowlistoption/excludedesktopelements.md)
-- [static var optionAll: CGWindowListOption](cgwindowlistoption/optionall.md)
-- [static var optionIncludingWindow: CGWindowListOption](cgwindowlistoption/optionincludingwindow.md)
-- [static var optionOnScreenAboveWindow: CGWindowListOption](cgwindowlistoption/optiononscreenabovewindow.md)
-- [static var optionOnScreenOnly: CGWindowListOption](cgwindowlistoption/optiononscreenonly.md)
+### Type Properties
+- [static var excludeDesktopElements: CGWindowListOption](./excludedesktopelements.md)
+- [static var optionAll: CGWindowListOption](./optionall.md)
+- [static var optionIncludingWindow: CGWindowListOption](./optionincludingwindow.md)
+- [static var optionOnScreenAboveWindow: CGWindowListOption](./optiononscreenabovewindow.md)
+- [static var optionOnScreenOnly: CGWindowListOption](./optiononscreenonly.md)
 
 
 ---

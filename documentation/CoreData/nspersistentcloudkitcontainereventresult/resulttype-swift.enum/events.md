@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainerEventResult.ResultType.events
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The persistent CloudKit container events that match the event request.
 
@@ -20,9 +21,14 @@ The persistent CloudKit container events that match the event request.
 case events
 ```
 
+```c
+NSPersistentCloudKitContainerEventResultTypeEvents
+```
+
 ## See Also
 
-- [NSPersistentCloudKitContainerEventResult.ResultType.countEvents](nspersistentcloudkitcontainereventresult/resulttype-swift.enum/countevents.md)
+### Result Types
+- [NSPersistentCloudKitContainerEventResult.ResultType.countEvents](./countevents.md)
   The number of CloudKit container events that match the event request.
 
 

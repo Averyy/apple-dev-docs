@@ -1,7 +1,8 @@
 # NSKeyedUnarchiverDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The optional methods implemented by the delegate of a keyed unarchiver.
 
@@ -20,37 +21,42 @@ The optional methods implemented by the delegate of a keyed unarchiver.
 protocol NSKeyedUnarchiverDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSKeyedUnarchiverDelegate <NSObject>
+```
+
 ## Topics
 
 ### Decoding Objects
-- [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](nskeyedunarchiverdelegate/unarchiver(_:cannotdecodeobjectofclassname:originalclasses:).md)
+- [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](./nskeyedunarchiverdelegate/unarchiver%28_,cannotdecodeobjectofclassname,originalclasses%29.md)
   Informs the delegate that the class with a given name is not available during decoding.
-- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
+- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](./nskeyedunarchiverdelegate/unarchiver%28_,diddecode%29.md)
   Informs the delegate that a given object has been decoded.
-- [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](nskeyedunarchiverdelegate/unarchiver(_:willreplace:with:).md)
+- [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](./nskeyedunarchiverdelegate/unarchiver%28_,willreplace,with%29.md)
   Informs the delegate that one object is being substituted for another.
 ### Finishing Decoding
-- [func unarchiverDidFinish(NSKeyedUnarchiver)](nskeyedunarchiverdelegate/unarchiverdidfinish(_:).md)
+- [func unarchiverDidFinish(NSKeyedUnarchiver)](./nskeyedunarchiverdelegate/unarchiverdidfinish%28_%29.md)
   Notifies the delegate that decoding has finished.
-- [func unarchiverWillFinish(NSKeyedUnarchiver)](nskeyedunarchiverdelegate/unarchiverwillfinish(_:).md)
+- [func unarchiverWillFinish(NSKeyedUnarchiver)](./nskeyedunarchiverdelegate/unarchiverwillfinish%28_%29.md)
   Notifies the delegate that decoding is about to finish.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSKeyedArchiver](nskeyedarchiver.md)
+### Keyed Archivers
+- [class NSKeyedArchiver](./nskeyedarchiver.md)
   An encoder that stores an object’s data to an archive referenced by keys.
-- [protocol NSKeyedArchiverDelegate](nskeyedarchiverdelegate.md)
+- [protocol NSKeyedArchiverDelegate](./nskeyedarchiverdelegate.md)
   The optional methods implemented by the delegate of a keyed archiver.
-- [class NSKeyedUnarchiver](nskeyedunarchiver.md)
+- [class NSKeyedUnarchiver](./nskeyedunarchiver.md)
   A decoder that restores data from an archive referenced by keys.
-- [class NSCoder](nscoder.md)
+- [class NSCoder](./nscoder.md)
   An abstract class that serves as the basis for objects that enable archiving and distribution of other objects.
-- [class NSSecureUnarchiveFromDataTransformer](nssecureunarchivefromdatatransformer.md)
+- [class NSSecureUnarchiveFromDataTransformer](./nssecureunarchivefromdatatransformer.md)
   A value transformer that converts data to and from classes that support secure coding.
 
 

@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lowest number allowed as input by the receiver.
 
@@ -21,11 +22,16 @@ The lowest number allowed as input by the receiver.
 var minimum: NSNumber? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSNumber * minimum;
+```
+
 ## See Also
 
-- [var allowsFloats: Bool](numberformatter/allowsfloats.md)
+### Managing Input and Output Attributes
+- [var allowsFloats: Bool](./allowsfloats.md)
   Determines whether the receiver allows as input floating-point values (that is, values that include the period character [`.`]).
-- [var maximum: NSNumber?](numberformatter/maximum.md)
+- [var maximum: NSNumber?](./maximum.md)
   The highest number allowed as input by the receiver.
 
 

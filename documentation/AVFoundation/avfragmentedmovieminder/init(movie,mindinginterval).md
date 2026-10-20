@@ -1,7 +1,8 @@
 # init(movie:mindingInterval:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a movie minder and adds a movie with a minding interval.
 
@@ -17,6 +18,10 @@ Creates a movie minder and adds a movie with a minding interval.
 
 ```swift
 init(movie: AVFragmentedMovie, mindingInterval: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithMovie:(AVFragmentedMovie *) movie mindingInterval:(NSTimeInterval) mindingInterval;
 ```
 
 #### Return Value

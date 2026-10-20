@@ -2,6 +2,7 @@
 
 **Framework**: ActivityKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The associated type that describes the dynamic content of a Live Activity.

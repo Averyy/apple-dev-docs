@@ -1,7 +1,8 @@
 # inputWindowSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of input samples.
 
@@ -22,19 +23,20 @@ var inputWindowSize: Int
 
 ## See Also
 
-- [var batchSize: Int](lineartimeseriesforecasterconfiguration/batchsize.md)
+### Inspecting a linear time series forecasater configuration
+- [var batchSize: Int](./batchsize.md)
   The number of examples in each training batch.
-- [var earlyStoppingIterationCount: Int](lineartimeseriesforecasterconfiguration/earlystoppingiterationcount.md)
+- [var earlyStoppingIterationCount: Int](./earlystoppingiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var earlyStoppingTolerance: Float](lineartimeseriesforecasterconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Float](./earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var forecastWindowSize: Int](lineartimeseriesforecasterconfiguration/forecastwindowsize.md)
+- [var forecastWindowSize: Int](./forecastwindowsize.md)
   The number of predicted samples.
-- [var learningRate: Float](lineartimeseriesforecasterconfiguration/learningrate.md)
+- [var learningRate: Float](./learningrate.md)
   The starting learning rate.
-- [var maximumIterationCount: Int](lineartimeseriesforecasterconfiguration/maximumiterationcount.md)
+- [var maximumIterationCount: Int](./maximumiterationcount.md)
   The maximum number of allowed passes through the data.
-- [var randomSeed: Int?](lineartimeseriesforecasterconfiguration/randomseed.md)
+- [var randomSeed: Int?](./randomseed.md)
   A seed to generate reproducible results from random operations.
 
 

@@ -1,7 +1,8 @@
 # WorkoutGoal.open
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An open workout with no set goal.
 
@@ -20,11 +21,12 @@ case open
 
 ## See Also
 
-- [case distance(Double, UnitLength)](workoutgoal/distance(_:_:).md)
+### Determining workout goals
+- [case distance(Double, UnitLength)](./distance%28_,_%29.md)
   A goal based on distance traveled during the workout.
-- [case energy(Double, UnitEnergy)](workoutgoal/energy(_:_:).md)
+- [case energy(Double, UnitEnergy)](./energy%28_,_%29.md)
   A goal based on the amount of energy burned during the workout.
-- [case time(Double, UnitDuration)](workoutgoal/time(_:_:).md)
+- [case time(Double, UnitDuration)](./time%28_,_%29.md)
   A goal based on the amount of time that has elapsed during the workout.
 
 

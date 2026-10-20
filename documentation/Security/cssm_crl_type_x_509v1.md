@@ -1,7 +1,8 @@
 # CSSM_CRL_TYPE_X_509v1
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CRL_TYPE_X_509v1: Int { get }
+```
+
+```c
+CSSM_CRL_TYPE_X_509v1
 ```
 
 

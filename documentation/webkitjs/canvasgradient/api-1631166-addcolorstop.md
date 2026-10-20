@@ -1,7 +1,8 @@
 # addColorStop
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Adds a color to the gradient.
 
@@ -11,7 +12,7 @@ Adds a color to the gradient.
 
 ## Declaration
 
-```swift
+```
 void addColorStop(
     float offset, 
     DOMString color
@@ -22,7 +23,7 @@ void addColorStop(
 
 A gradient is a blend of colors, proceeding from one color stop to the next. You must add a color stop at offset 0 and a color stop at offset 1 before a gradient can be displayed. Adding color stops at 0 and 1 provides a beginning color and an ending color. You may add additional color stops between 0 and 1 to provide intermediate colors.
 
-##### 1678734
+##### Special Considerations
 
 You cannot add a color stop at the same offset as an existing color stop. To change a color stop, obtain a new gradient instance and add the the color stops that you want.
 

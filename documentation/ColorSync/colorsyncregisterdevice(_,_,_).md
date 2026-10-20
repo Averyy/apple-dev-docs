@@ -1,7 +1,8 @@
 # ColorSyncRegisterDevice(_:_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers a device of the given class with ColorSync.
 
@@ -15,6 +16,10 @@ Registers a device of the given class with ColorSync.
 func ColorSyncRegisterDevice(_ deviceClass: CFString!, _ deviceID: CFUUID!, _ deviceInfo: CFDictionary!) -> Bool
 ```
 
+```c
+extern bool ColorSyncRegisterDevice(CFStringRef deviceClass, CFUUIDRef deviceID, CFDictionaryRef deviceInfo);
+```
+
 #### Return Value
 
 `true` on success and `false` in case of failure.
@@ -23,26 +28,26 @@ func ColorSyncRegisterDevice(_ deviceClass: CFString!, _ deviceID: CFUUID!, _ de
 
 The `deviceInfo` dictionary requires the following keys:
 
-- [`kColorSyncDeviceDescriptions`](kcolorsyncdevicedescriptions.md): A `CFDictionary` with localized names of the device. Localization keys must be five-character strings containing a language code and region code in the `lc_RG` format, and must contain (at least) the `en_US` locale.
-- [`kColorSyncFactoryProfiles`](kcolorsyncfactoryprofiles.md): A `CFDictionary` of factory profile info dictionaries. The keys are the profile IDs and the values are the profile info dictionaries.
+- [`kColorSyncDeviceDescriptions`](./kcolorsyncdevicedescriptions.md): A `CFDictionary` with localized names of the device. Localization keys must be five-character strings containing a language code and region code in the `lc_RG` format, and must contain (at least) the `en_US` locale.
+- [`kColorSyncFactoryProfiles`](./kcolorsyncfactoryprofiles.md): A `CFDictionary` of factory profile info dictionaries. The keys are the profile IDs and the values are the profile info dictionaries.
 
 It may also include the following optional keys:
 
-- [`kColorSyncDeviceHostScope`](kcolorsyncdevicehostscope.md): The host scope of the device; one of `kCFPreferencesCurrentHost` or `kCFPreferencesAnyHost`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentHost`.
-- [`kColorSyncDeviceUserScope`](kcolorsyncdeviceuserscope.md): The user scope of the device; one of `kCFPreferencesCurrentUser` or `kCFPreferencesAnyUser`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentUser`.
+- [`kColorSyncDeviceHostScope`](./kcolorsyncdevicehostscope.md): The host scope of the device; one of `kCFPreferencesCurrentHost` or `kCFPreferencesAnyHost`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentHost`.
+- [`kColorSyncDeviceUserScope`](./kcolorsyncdeviceuserscope.md): The user scope of the device; one of `kCFPreferencesCurrentUser` or `kCFPreferencesAnyUser`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentUser`.
 
-The factory profiles dictionary (the value for the key [`kColorSyncFactoryProfiles`](kcolorsyncfactoryprofiles.md) in `deviceInfo`) requires the following keys and values. A ProfileID (of `CFStringRef` type) identifies each profile and serves as the key. The value associated with the key is a profile info dictionary that describes an individual device profile.
+The factory profiles dictionary (the value for the key [`kColorSyncFactoryProfiles`](./kcolorsyncfactoryprofiles.md) in `deviceInfo`) requires the following keys and values. A ProfileID (of `CFStringRef` type) identifies each profile and serves as the key. The value associated with the key is a profile info dictionary that describes an individual device profile.
 
-- [`kColorSyncDeviceDefaultProfileID`](kcolorsyncdevicedefaultprofileid.md): The associated value must be one of the ProfileIDs present in the dictionary. Presence of this key is not required if there is only one factory profile.
+- [`kColorSyncDeviceDefaultProfileID`](./kcolorsyncdevicedefaultprofileid.md): The associated value must be one of the ProfileIDs present in the dictionary. Presence of this key is not required if there is only one factory profile.
 
 Each profile info `CFDictionary` requires the following keys:
 
-- [`kColorSyncDeviceProfileURL`](kcolorsyncdeviceprofileurl.md): The `CFURLRef` of the profile to register.
-- [`kColorSyncDeviceModeDescriptions`](kcolorsyncdevicemodedescriptions.md): A `CFDictionary` with localized device mode names for the profile. Localization keys must be five-character strings containing a language code and region code in the `lc_RG` format, and must contain (at least) the `en_US` locale. For example, `en_US` “Glossy Paper with best quality”.
+- [`kColorSyncDeviceProfileURL`](./kcolorsyncdeviceprofileurl.md): The `CFURLRef` of the profile to register.
+- [`kColorSyncDeviceModeDescriptions`](./kcolorsyncdevicemodedescriptions.md): A `CFDictionary` with localized device mode names for the profile. Localization keys must be five-character strings containing a language code and region code in the `lc_RG` format, and must contain (at least) the `en_US` locale. For example, `en_US` “Glossy Paper with best quality”.
 
 Example of a `deviceInfo` dictionary:
 
-```None
+```
 <<
     kColorSyncDeviceDescriptions   <<
                                         en_US  My Little Printer
@@ -84,17 +89,18 @@ Example of a `deviceInfo` dictionary:
 
 ## See Also
 
-- [func ColorSyncDeviceCopyDeviceInfo(CFString!, CFUUID!) -> Unmanaged<CFDictionary>?](colorsyncdevicecopydeviceinfo(_:_:).md)
+### Registering and enumerating devices
+- [func ColorSyncDeviceCopyDeviceInfo(CFString!, CFUUID!) -> Unmanaged<CFDictionary>?](./colorsyncdevicecopydeviceinfo%28_,_%29.md)
   Copies information about a device, resolved for the current host and current user.
-- [typealias ColorSyncDeviceProfileIterateCallback](colorsyncdeviceprofileiteratecallback.md)
+- [typealias ColorSyncDeviceProfileIterateCallback](./colorsyncdeviceprofileiteratecallback.md)
   A callback that ColorSync invokes for each device profile during iteration.
-- [func ColorSyncDeviceSetCustomProfiles(CFString!, CFUUID!, CFDictionary!) -> Bool](colorsyncdevicesetcustomprofiles(_:_:_:).md)
+- [func ColorSyncDeviceSetCustomProfiles(CFString!, CFUUID!, CFDictionary!) -> Bool](./colorsyncdevicesetcustomprofiles%28_,_,_%29.md)
   Sets custom profiles for a device in lieu of its factory profiles.
-- [func ColorSyncIterateDeviceProfiles(ColorSyncDeviceProfileIterateCallback!, UnsafeMutableRawPointer?)](colorsynciteratedeviceprofiles(_:_:).md)
+- [func ColorSyncIterateDeviceProfiles(ColorSyncDeviceProfileIterateCallback!, UnsafeMutableRawPointer?)](./colorsynciteratedeviceprofiles%28_,_%29.md)
   Iterates over the profiles registered for all devices, invoking a callback for each.
-- [func ColorSyncProfileCreateDeviceProfile(CFString!, CFUUID!, CFTypeRef!) -> Unmanaged<ColorSyncProfile>?](colorsyncprofilecreatedeviceprofile(_:_:_:).md)
+- [func ColorSyncProfileCreateDeviceProfile(CFString!, CFUUID!, CFTypeRef!) -> Unmanaged<ColorSyncProfile>?](./colorsyncprofilecreatedeviceprofile%28_,_,_%29.md)
   Creates a profile for a device registered with ColorSync.
-- [func ColorSyncUnregisterDevice(CFString!, CFUUID!) -> Bool](colorsyncunregisterdevice(_:_:).md)
+- [func ColorSyncUnregisterDevice(CFString!, CFUUID!) -> Bool](./colorsyncunregisterdevice%28_,_%29.md)
   Unregisters a device of the given class and identifier.
 
 

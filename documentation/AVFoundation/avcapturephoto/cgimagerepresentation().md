@@ -1,7 +1,8 @@
 # cgImageRepresentation()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extracts and returns the captured photo’s primary image as a Core Graphics image object.
 
@@ -18,21 +19,26 @@ Extracts and returns the captured photo’s primary image as a Core Graphics ima
 func cgImageRepresentation() -> CGImage?
 ```
 
+```objc
+- (CGImageRef) CGImageRepresentation;
+```
+
 #### Return Value
 
 A Core Graphics image representation of the captured photo, or `nil` if the image cannot be converted.
 
 ## See Also
 
-- [func fileDataRepresentation(with: any AVCapturePhotoFileDataRepresentationCustomizer) -> Data?](avcapturephoto/filedatarepresentation(with:).md)
+### Packaging data for file output
+- [func fileDataRepresentation(with: any AVCapturePhotoFileDataRepresentationCustomizer) -> Data?](./filedatarepresentation%28with%29.md)
   Gets a customized representation of the photo data.
-- [protocol AVCapturePhotoFileDataRepresentationCustomizer](avcapturephotofiledatarepresentationcustomizer.md)
+- [protocol AVCapturePhotoFileDataRepresentationCustomizer](../avcapturephotofiledatarepresentationcustomizer.md)
   A protocol that defines the methods to implement to customize the packaging of photo data.
-- [func fileDataRepresentation() -> Data?](avcapturephoto/filedatarepresentation.md)
+- [func fileDataRepresentation() -> Data?](./filedatarepresentation%28%29.md)
   Generates and returns a flat data representation of the photo and its attachments.
-- [func previewCGImageRepresentation() -> CGImage?](avcapturephoto/previewcgimagerepresentation.md)
+- [func previewCGImageRepresentation() -> CGImage?](./previewcgimagerepresentation%28%29.md)
   Extracts and returns the captured photo’s preview image as a Core Graphics image object.
-- [func fileDataRepresentation(withReplacementMetadata: [String : Any]?, replacementEmbeddedThumbnailPhotoFormat: [String : Any]?, replacementEmbeddedThumbnailPixelBuffer: CVPixelBuffer?, replacementDepthData: AVDepthData?) -> Data?](avcapturephoto/filedatarepresentation(withreplacementmetadata:replacementembeddedthumbnailphotoformat:replacementembeddedthumbnailpixelbuffer:replacementdepthdata:).md)
+- [func fileDataRepresentation(withReplacementMetadata: [String : Any]?, replacementEmbeddedThumbnailPhotoFormat: [String : Any]?, replacementEmbeddedThumbnailPixelBuffer: CVPixelBuffer?, replacementDepthData: AVDepthData?) -> Data?](./filedatarepresentation%28withreplacementmetadata,replacementembeddedthumbnailphotoformat,replacementembeddedthumbnailpixelbuffer,replacementdepthdata%29.md)
   Generates and returns a flat data representation of the photo using the specified replacements for some or all of its attachments.
 
 

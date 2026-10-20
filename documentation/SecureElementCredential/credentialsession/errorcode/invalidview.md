@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.invalidView
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided UIKit view is invalid.
 

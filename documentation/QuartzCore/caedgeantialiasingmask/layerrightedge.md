@@ -1,7 +1,8 @@
 # layerRightEdge
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+
@@ -17,16 +18,21 @@
 static var layerRightEdge: CAEdgeAntialiasingMask { get }
 ```
 
+```c
+kCALayerRightEdge
+```
+
 #### Discussion
 
 Specifies that the right edge of the receiver’s content should be antialiased.
 
 ## See Also
 
-- [init(rawValue: UInt32)](caedgeantialiasingmask/init(rawvalue:).md)
-- [static var layerLeftEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layerleftedge.md)
-- [static var layerBottomEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layerbottomedge.md)
-- [static var layerTopEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layertopedge.md)
+### Constants
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
+- [static var layerLeftEdge: CAEdgeAntialiasingMask](./layerleftedge.md)
+- [static var layerBottomEdge: CAEdgeAntialiasingMask](./layerbottomedge.md)
+- [static var layerTopEdge: CAEdgeAntialiasingMask](./layertopedge.md)
 
 
 ---

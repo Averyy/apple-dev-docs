@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

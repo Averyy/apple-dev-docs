@@ -1,7 +1,8 @@
 # errSecInvalidModifyMode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The modify mode is not valid.
 
@@ -18,6 +19,10 @@ The modify mode is not valid.
 
 ```swift
 var errSecInvalidModifyMode: OSStatus { get }
+```
+
+```c
+errSecInvalidModifyMode
 ```
 
 

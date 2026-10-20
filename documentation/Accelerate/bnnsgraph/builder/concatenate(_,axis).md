@@ -1,7 +1,8 @@
 # concatenate(_:axis:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a concatenation operation to the current graph.
 

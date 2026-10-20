@@ -1,7 +1,8 @@
 # UIApplicationShortcutIcon.IconType.play
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An icon for a quick action that plays media.
 
@@ -17,41 +18,46 @@ An icon for a quick action that plays media.
 case play
 ```
 
+```c
+UIApplicationShortcutIconTypePlay
+```
+
 #### Discussion
 
-![Play icon](/images/com.apple.uikit/media-2934510@2x.png)
+![Play icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934510@2x.png)
 
 ## See Also
 
-- [UIApplicationShortcutIcon.IconType.compose](uiapplicationshortcuticon/icontype/compose.md)
+### Constants
+- [UIApplicationShortcutIcon.IconType.compose](./compose.md)
   An icon for a quick action that lets a user compose new content.
-- [UIApplicationShortcutIcon.IconType.pause](uiapplicationshortcuticon/icontype/pause.md)
+- [UIApplicationShortcutIcon.IconType.pause](./pause.md)
   An icon for  a quick action that pauses media playback.
-- [UIApplicationShortcutIcon.IconType.add](uiapplicationshortcuticon/icontype/add.md)
+- [UIApplicationShortcutIcon.IconType.add](./add.md)
   An icon for a quick action that adds an item.
-- [UIApplicationShortcutIcon.IconType.location](uiapplicationshortcuticon/icontype/location.md)
+- [UIApplicationShortcutIcon.IconType.location](./location.md)
   An icon for a quick action that accesses the user’s current location.
-- [UIApplicationShortcutIcon.IconType.search](uiapplicationshortcuticon/icontype/search.md)
+- [UIApplicationShortcutIcon.IconType.search](./search.md)
   An icon a quick action that offers search.
-- [UIApplicationShortcutIcon.IconType.share](uiapplicationshortcuticon/icontype/share.md)
+- [UIApplicationShortcutIcon.IconType.share](./share.md)
   An icon for a quick action that offers content sharing.
-- [UIApplicationShortcutIcon.IconType.prohibit](uiapplicationshortcuticon/icontype/prohibit.md)
+- [UIApplicationShortcutIcon.IconType.prohibit](./prohibit.md)
   An icon for a quick action that disallows something.
-- [UIApplicationShortcutIcon.IconType.contact](uiapplicationshortcuticon/icontype/contact.md)
+- [UIApplicationShortcutIcon.IconType.contact](./contact.md)
   An icon for a quick action that chooses a generic contact.
-- [UIApplicationShortcutIcon.IconType.home](uiapplicationshortcuticon/icontype/home.md)
+- [UIApplicationShortcutIcon.IconType.home](./home.md)
   An icon for a quick action that indicates home.
-- [UIApplicationShortcutIcon.IconType.markLocation](uiapplicationshortcuticon/icontype/marklocation.md)
+- [UIApplicationShortcutIcon.IconType.markLocation](./marklocation.md)
   An icon for a quick action that lets a user mark a location.
-- [UIApplicationShortcutIcon.IconType.favorite](uiapplicationshortcuticon/icontype/favorite.md)
+- [UIApplicationShortcutIcon.IconType.favorite](./favorite.md)
   An icon for a quick action that lets a user designate a favorite item.
-- [UIApplicationShortcutIcon.IconType.love](uiapplicationshortcuticon/icontype/love.md)
+- [UIApplicationShortcutIcon.IconType.love](./love.md)
   An icon for a quick action that lets a user designate a loved item.
-- [UIApplicationShortcutIcon.IconType.cloud](uiapplicationshortcuticon/icontype/cloud.md)
+- [UIApplicationShortcutIcon.IconType.cloud](./cloud.md)
   An icon for a quick action that offers cloud access.
-- [UIApplicationShortcutIcon.IconType.invitation](uiapplicationshortcuticon/icontype/invitation.md)
+- [UIApplicationShortcutIcon.IconType.invitation](./invitation.md)
   An icon for a quick action that indicates an invitation.
-- [UIApplicationShortcutIcon.IconType.confirmation](uiapplicationshortcuticon/icontype/confirmation.md)
+- [UIApplicationShortcutIcon.IconType.confirmation](./confirmation.md)
   An icon for a quick action that indicates confirmation.
 
 

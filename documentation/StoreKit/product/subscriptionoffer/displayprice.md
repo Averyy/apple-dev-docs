@@ -1,7 +1,8 @@
 # displayPrice
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized string representation of the discounted price of the subscription offer.
 
@@ -22,11 +23,12 @@ let displayPrice: String
 
 ## See Also
 
-- [let price: Decimal](product/subscriptionoffer/price.md)
+### Getting price information
+- [let price: Decimal](./price.md)
   The decimal representation of the discounted price of the subscription offer.
-- [let paymentMode: Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.property.md)
+- [let paymentMode: Product.SubscriptionOffer.PaymentMode](./paymentmode-swift.property.md)
   The offer’s payment mode.
-- [Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct.md)
+- [Product.SubscriptionOffer.PaymentMode](./paymentmode-swift.struct.md)
   The payment modes for subscription offers that apply to a transaction.
 
 

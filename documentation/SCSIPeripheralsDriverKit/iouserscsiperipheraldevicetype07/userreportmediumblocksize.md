@@ -1,7 +1,8 @@
 # UserReportMediumBlockSize
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a report on the external device’s block size.
 
@@ -10,13 +11,13 @@ Provides a report on the external device’s block size.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserReportMediumBlockSize(UInt64 *blockSize);
 ```
 
 #### Return Value
 
-A value that indicates the result of the report request. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of the report request. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 

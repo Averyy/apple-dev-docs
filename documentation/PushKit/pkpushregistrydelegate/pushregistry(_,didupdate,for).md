@@ -2,6 +2,7 @@
 
 **Framework**: PushKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the system updated the credentials for the specified type of push notification.
@@ -20,9 +21,13 @@ Tells the delegate that the system updated the credentials for the specified typ
 func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushCredentials, for type: PKPushType)
 ```
 
+```objc
+- (void) pushRegistry:(PKPushRegistry *) registry didUpdatePushCredentials:(PKPushCredentials *) pushCredentials forType:(PKPushType) type;
+```
+
 ## Mentions
 
-- [Supporting PushKit Notifications in Your App](supporting-pushkit-notifications-in-your-app.md)
+- [Supporting PushKit Notifications in Your App](../supporting-pushkit-notifications-in-your-app.md)
 
 #### Discussion
 
@@ -30,13 +35,14 @@ The system calls this method when it receives new credentials (including a push 
 
 ## Parameters
 
-- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
+- `registry`: The [`PKPushRegistry`](../pkpushregistry.md) instance responsible for the delegate callback.
 - `pushCredentials`: The push credentials that can be used to send pushes to the device for the specified push type.
-- `type`: One of the requested notification types. This type is present in the [`desiredPushTypes`](pkpushregistry/desiredpushtypes.md) property of the push registry.
+- `type`: One of the requested notification types. This type is present in the [`desiredPushTypes`](../pkpushregistry/desiredpushtypes.md) property of the push registry.
 
 ## See Also
 
-- [func pushRegistry(PKPushRegistry, didInvalidatePushTokenFor: PKPushType)](pkpushregistrydelegate/pushregistry(_:didinvalidatepushtokenfor:).md)
+### Responding to Registration Events
+- [func pushRegistry(PKPushRegistry, didInvalidatePushTokenFor: PKPushType)](./pushregistry%28_,didinvalidatepushtokenfor%29.md)
   Tells the delegate that the system invalidated the push token for the specified type.
 
 

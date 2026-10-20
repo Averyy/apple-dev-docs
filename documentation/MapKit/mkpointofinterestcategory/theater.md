@@ -1,7 +1,8 @@
 # theater
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for theaters.
 
@@ -20,11 +21,16 @@ The point of interest category for theaters.
 static let theater: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryTheater;
+```
+
 ## See Also
 
-- [static let museum: MKPointOfInterestCategory](mkpointofinterestcategory/museum.md)
+### Arts and culture
+- [static let museum: MKPointOfInterestCategory](./museum.md)
   The point of interest category for museums.
-- [static let musicVenue: MKPointOfInterestCategory](mkpointofinterestcategory/musicvenue.md)
+- [static let musicVenue: MKPointOfInterestCategory](./musicvenue.md)
   The point of interest category for music venues.
 
 

@@ -1,16 +1,17 @@
 # GetPacketBufferPool
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the memory buffer that contains the pakcet.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetPacketBufferPool(IOUserNetworkPacketBufferPool **pool) const;
 ```
 

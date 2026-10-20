@@ -1,7 +1,8 @@
 # ToolExpectation
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A specification for an expected tool call, or a group of expectations that can be satisfied in any order.
 
@@ -22,8 +23,8 @@ struct ToolExpectation
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
 #### Overview
 
@@ -35,7 +36,7 @@ ToolExpectation("getWeather", arguments: [
 ])
 ```
 
-For ordered sequences where multiple tools must all be called at the same position but their relative order doesn’t matter, use [`anyOrder(_:)`](toolexpectation/anyorder(_:).md):
+For ordered sequences where multiple tools must all be called at the same position but their relative order doesn’t matter, use [`anyOrder(_:)`](./toolexpectation/anyorder%28_%29.md):
 
 ```swift
 ToolExpectation.anyOrder([
@@ -47,57 +48,58 @@ ToolExpectation.anyOrder([
 ## Topics
 
 ### Creating an expectation
-- [init(String, arguments: [ArgumentMatcher])](toolexpectation/init(_:arguments:).md)
+- [init(String, arguments: [ArgumentMatcher])](./toolexpectation/init%28_,arguments%29.md)
   Creates a new tool expectation.
 ### Creating any-order groups
-- [static func anyOrder([ToolExpectation]) -> ToolExpectation](toolexpectation/anyorder(_:).md)
+- [static func anyOrder([ToolExpectation]) -> ToolExpectation](./toolexpectation/anyorder%28_%29.md)
   Creates a group of expectations that must all be satisfied at the same sequential position, but can occur in any relative order.
 ### Accessing expectation details
-- [var name: String](toolexpectation/name.md)
+- [var name: String](./toolexpectation/name.md)
   The name of the tool that the evaluation expects the model to call.
-- [var arguments: [ArgumentMatcher]](toolexpectation/arguments.md)
+- [var arguments: [ArgumentMatcher]](./toolexpectation/arguments.md)
   The argument matchers to validate against the tool call.
-- [var isAnyOrderGroup: Bool](toolexpectation/isanyordergroup.md)
+- [var isAnyOrderGroup: Bool](./toolexpectation/isanyordergroup.md)
   A Boolean value that indicates whether this expectation represents a group of expectations that can be satisfied in any order.
 ### Matching arguments
-- [enum ArgumentMatcher](argumentmatcher.md)
+- [enum ArgumentMatcher](./argumentmatcher.md)
   The values that define how to validate a tool-call argument.
 ### Initializers
-- [init(from: any Decoder) throws](toolexpectation/init(from:).md)
+- [init(from: any Decoder) throws](./toolexpectation/init%28from%29.md)
   Creates a tool expectation by decoding from the given decoder.
 ### Instance Properties
-- [var generatedContent: GeneratedContent](toolexpectation/generatedcontent.md)
+- [var generatedContent: GeneratedContent](./toolexpectation/generatedcontent.md)
   The generated content representation of this tool expectation.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](toolexpectation/encode(to:).md)
+- [func encode(to: any Encoder) throws](./toolexpectation/encode%28to%29.md)
   Encodes this tool expectation into the given encoder.
 ### Type Properties
-- [static var generationSchema: GenerationSchema](toolexpectation/generationschema.md)
+- [static var generationSchema: GenerationSchema](./toolexpectation/generationschema.md)
   The generation schema for this tool expectation.
 ### Enumerations
-- [ToolExpectation.PartiallyGenerated](toolexpectation/partiallygenerated.md)
+- [ToolExpectation.PartiallyGenerated](./toolexpectation/partiallygenerated.md)
   A partially generated form of a tool expectation.
 ### Default Implementations
-- [ConvertibleFromGeneratedContent Implementations](toolexpectation/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleFromGeneratedContent Implementations](./toolexpectation/convertiblefromgeneratedcontent-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Generable](../foundationmodels/generable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Generable](../FoundationModels/generable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(expected: String, arguments: [ArgumentMatcher])](trajectoryexpectation/init(expected:arguments:).md)
+### Creating a single-tool expectation
+- [init(expected: String, arguments: [ArgumentMatcher])](./trajectoryexpectation/init%28expected,arguments%29.md)
   Creates a trajectory expectation for a single expected tool call.
 
 

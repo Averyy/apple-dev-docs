@@ -1,7 +1,8 @@
 # automaticReloadBilling
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A line item that contains the reload amount and balance threshold for the automatic reload payment.
 
@@ -11,7 +12,7 @@ A line item that contains the reload amount and balance threshold for the automa
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem automaticReloadBilling;
 ```
 
@@ -19,13 +20,14 @@ required ApplePayLineItem automaticReloadBilling;
 
 This line item describes an automatic reload payment.
 
-Set the [`automaticReloadPaymentThresholdAmount`](applepaylineitem/automaticreloadpaymentthresholdamount.md) to indicate the balance that the account drops below before the merchant applies the automatic reload amount. Set the [`amount`](applepaylineitem/amount.md) object to specify the reload amount.
+Set the [`automaticReloadPaymentThresholdAmount`](../applepaylineitem/automaticreloadpaymentthresholdamount.md) to indicate the balance that the account drops below before the merchant applies the automatic reload amount. Set the [`amount`](../applepaylineitem/amount.md) object to specify the reload amount.
 
-> **Note**:  Set the [`paymentTiming`](applepaylineitem/paymenttiming.md) property of the line item to `"automaticReload"` to avoid an error.
+> **Note**:  Set the [`paymentTiming`](../applepaylineitem/paymenttiming.md) property of the line item to `"automaticReload"` to avoid an error.
 
 ## See Also
 
-- [ApplePayLineItem](applepaylineitem.md)
+### Setting the payment summary items
+- [ApplePayLineItem](../applepaylineitem.md)
   A line item in a payment request—for example, total, tax, discount, or grand total.
 
 

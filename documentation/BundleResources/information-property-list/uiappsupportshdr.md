@@ -1,16 +1,20 @@
 # UIAppSupportsHDR
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app supports HDR mode on Apple TV 4K.
 
 **Availability**:
 - tvOS 11.2+
 
+## Details
+
+- **Name**: `UIAppSupportsHDR` (Supports HDR color mode)
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `YES`
 
@@ -22,15 +26,16 @@ On Apple TV 4K, HDR mode uses the GPU to compose the content that appears onscre
 
 ## See Also
 
-- [NSHighResolutionCapable](information-property-list/nshighresolutioncapable.md)
+### Graphics
+- [NSHighResolutionCapable](./nshighresolutioncapable.md)
   A Boolean value indicating whether the Cocoa app supports high-resolution displays.
-- [NSSupportsAutomaticGraphicsSwitching](information-property-list/nssupportsautomaticgraphicsswitching.md)
+- [NSSupportsAutomaticGraphicsSwitching](./nssupportsautomaticgraphicsswitching.md)
   A Boolean value indicating whether an OpenGL app may utilize the integrated GPU.
-- [GPUEjectPolicy](information-property-list/gpuejectpolicy.md)
+- [GPUEjectPolicy](./gpuejectpolicy.md)
   The preferred system action when an external GPU is connected from the system.
-- [GPUSelectionPolicy](information-property-list/gpuselectionpolicy.md)
+- [GPUSelectionPolicy](./gpuselectionpolicy.md)
   The app’s preference for whether it wants to use external graphics processors.
-- [CADisableMinimumFrameDurationOnPhone](information-property-list/cadisableminimumframedurationonphone.md)
+- [CADisableMinimumFrameDurationOnPhone](./cadisableminimumframedurationonphone.md)
   A Boolean value that allows your app to access frame rates higher than the system’s default.
 
 

@@ -1,7 +1,8 @@
 # RemoveStream
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an audio stream from the device.
 
@@ -10,13 +11,13 @@ Removes an audio stream from the device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveStream(IOUserAudioStream *in_stream);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,9 +29,10 @@ If removing the stream succeeds, the stream’s reference count decrements by on
 
 ## See Also
 
-- [AddStream](iouseraudiodevice/addstream.md)
+### Working with Audio Streams
+- [AddStream](./addstream.md)
   Adds an audio stream to the device.
-- [IOUserAudioStream](iouseraudiostream.md)
+- [IOUserAudioStream](../iouseraudiostream.md)
   An audio object that performs I/O for an audio device.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Specifies the basic duration of the animation, in seconds.
@@ -20,13 +21,18 @@ Specifies the basic duration of the animation, in seconds.
 var duration: CFTimeInterval { get set }
 ```
 
+```objc
+@property CFTimeInterval duration;
+```
+
 #### Discussion
 
 Defaults to 0.
 
 ## See Also
 
-- [var speed: Float](camediatiming/speed.md)
+### Duration and Speed
+- [var speed: Float](./speed.md)
   Specifies how time is mapped to receiver’s time space from the parent time space.
 
 

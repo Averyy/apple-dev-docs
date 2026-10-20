@@ -1,7 +1,8 @@
 # free_func
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var free_func: CSSM_FREE!
+```
+
+```c
+CSSM_FREE free_func;
 ```
 
 

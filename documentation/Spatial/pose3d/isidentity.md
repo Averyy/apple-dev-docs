@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pose is the identity pose.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the pose is the identity pose.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

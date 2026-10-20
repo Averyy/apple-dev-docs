@@ -1,7 +1,8 @@
 # PDFAction
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An action that is performed when, for example, a PDF annotation is activated or an outline item is clicked.
 
@@ -19,6 +20,10 @@ An action that is performed when, for example, a PDF annotation is activated or 
 class PDFAction
 ```
 
+```objc
+@interface PDFAction : NSObject
+```
+
 #### Overview
 
 A `PDFAction` object represents an action associated with a PDF element, such as an annotation or a link, that the viewer application can perform. See the Adobe PDF Specification for more about actions and action types.
@@ -34,53 +39,54 @@ A `PDFAction` object represents an action associated with a PDF element, such as
 ## Topics
 
 ### Action Types
-- [class PDFActionGoTo](pdfactiongoto.md)
+- [class PDFActionGoTo](./pdfactiongoto.md)
   `PDFActionGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action.
-- [class PDFActionNamed](pdfactionnamed.md)
+- [class PDFActionNamed](./pdfactionnamed.md)
   `PDFActionNamed` defines methods used to work with actions in PDF documents, some of which are named in the Adobe PDF Specification.
-- [class PDFActionRemoteGoTo](pdfactionremotegoto.md)
+- [class PDFActionRemoteGoTo](./pdfactionremotegoto.md)
   `PDFActionRemoteGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action that targets another document.
-- [class PDFActionResetForm](pdfactionresetform.md)
+- [class PDFActionResetForm](./pdfactionresetform.md)
   `PDFActionResetForm`, a subclass of `PDFAction`, defines methods for getting and clearing fields in a PDF form.
-- [class PDFActionURL](pdfactionurl.md)
+- [class PDFActionURL](./pdfactionurl.md)
   `PDFActionURL`, a subclass of `PDFAction`, defines methods for getting and setting the URL associated with a URL action.
-- [enum PDFActionNamedName](pdfactionnamedname.md)
+- [enum PDFActionNamedName](./pdfactionnamedname.md)
 ### Getting the Action Type
-- [var type: String](pdfaction/type.md)
+- [var type: String](./pdfaction/type.md)
   Returns the type of the action.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PDFActionGoTo](pdfactiongoto.md)
-- [PDFActionNamed](pdfactionnamed.md)
-- [PDFActionRemoteGoTo](pdfactionremotegoto.md)
-- [PDFActionResetForm](pdfactionresetform.md)
-- [PDFActionURL](pdfactionurl.md)
+- [PDFActionGoTo](./pdfactiongoto.md)
+- [PDFActionNamed](./pdfactionnamed.md)
+- [PDFActionRemoteGoTo](./pdfactionremotegoto.md)
+- [PDFActionResetForm](./pdfactionresetform.md)
+- [PDFActionURL](./pdfactionurl.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var page: PDFPage?](pdfannotation/page.md)
+### Accessing Information About an Annotation
+- [var page: PDFPage?](./pdfannotation/page.md)
   Returns the page that the annotation is associated with.
-- [var modificationDate: Date?](pdfannotation/modificationdate.md)
+- [var modificationDate: Date?](./pdfannotation/modificationdate.md)
   Returns the modification date of the annotation.
-- [var userName: String?](pdfannotation/username.md)
+- [var userName: String?](./pdfannotation/username.md)
   Returns the name of the user who created the annotation.
-- [var type: String?](pdfannotation/type.md)
+- [var type: String?](./pdfannotation/type.md)
   Returns the type of the annotation.
-- [var action: PDFAction?](pdfannotation/action.md)
+- [var action: PDFAction?](./pdfannotation/action.md)
   An object that represents an action for a PDF element, such as a link annotation.
-- [class PDFDestination](pdfdestination.md)
+- [class PDFDestination](./pdfdestination.md)
   A `PDFDestination` object describes a point on a PDF page.
 
 

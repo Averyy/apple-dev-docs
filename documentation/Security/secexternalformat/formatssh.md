@@ -1,7 +1,8 @@
 # SecExternalFormat.formatSSH
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 OpenSSH 1 format for asymmetric (public/private) keys. OpenSSH is an OpenBSD implementation of the Secure Shell (SSH) protocol.
 
@@ -12,6 +13,10 @@ OpenSSH 1 format for asymmetric (public/private) keys. OpenSSH is an OpenBSD imp
 
 ```swift
 case formatSSH
+```
+
+```c
+kSecFormatSSH
 ```
 
 

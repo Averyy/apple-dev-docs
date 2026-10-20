@@ -1,7 +1,8 @@
 # shortcutAvailability
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of defined contexts in which an intent or activity might be relevant to a user.
 
@@ -18,6 +19,18 @@ A set of defined contexts in which an intent or activity might be relevant to a 
 var shortcutAvailability: INShortcutAvailabilityOptions { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readwrite) INShortcutAvailabilityOptions shortcutAvailability;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readwrite) INShortcutAvailabilityOptions shortcutAvailability;
+```
+
 #### Discussion
 
 When you donate an activity, include a set of relevant [`INShortcutAvailabilityOptions`](https://developer.apple.com/documentation/intents/inshortcutavailabilityoptions) to describe appropriate categories for offering a shortcut to the activity.
@@ -28,9 +41,10 @@ If none of the availability options apply to your intent, use the empty set. The
 
 ## See Also
 
-- [var interaction: INInteraction?](nsuseractivity/interaction.md)
+### Providing SiriKit with activity details
+- [var interaction: INInteraction?](./interaction.md)
   The SiriKit interaction object to use when configuring your app.
-- [var suggestedInvocationPhrase: String?](nsuseractivity/suggestedinvocationphrase.md)
+- [var suggestedInvocationPhrase: String?](./suggestedinvocationphrase.md)
   A phrase suggested to the user when they create a shortcut.
 
 

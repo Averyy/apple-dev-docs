@@ -1,7 +1,8 @@
 # AVPlayerAudiovisualBackgroundPlaybackPolicy.continuesIfPossible
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app continues playback, if possible.
 
@@ -20,11 +21,16 @@ The app continues playback, if possible.
 case continuesIfPossible
 ```
 
+```c
+AVPlayerAudiovisualBackgroundPlaybackPolicyContinuesIfPossible
+```
+
 ## See Also
 
-- [AVPlayerAudiovisualBackgroundPlaybackPolicy.automatic](avplayeraudiovisualbackgroundplaybackpolicy/automatic.md)
+### Policies
+- [AVPlayerAudiovisualBackgroundPlaybackPolicy.automatic](./automatic.md)
   The system decides whether playback continues.
-- [AVPlayerAudiovisualBackgroundPlaybackPolicy.pauses](avplayeraudiovisualbackgroundplaybackpolicy/pauses.md)
+- [AVPlayerAudiovisualBackgroundPlaybackPolicy.pauses](./pauses.md)
   The app pauses playback.
 
 

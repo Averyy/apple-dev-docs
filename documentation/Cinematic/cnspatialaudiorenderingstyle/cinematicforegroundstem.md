@@ -1,7 +1,8 @@
 # CNSpatialAudioRenderingStyle.cinematicForegroundStem
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Isolates foreground sounds in a stem.
 
@@ -16,6 +17,10 @@ Isolates foreground sounds in a stem.
 
 ```swift
 case cinematicForegroundStem
+```
+
+```c
+CNSpatialAudioRenderingStyleCinematicForegroundStem
 ```
 
 

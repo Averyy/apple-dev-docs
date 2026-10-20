@@ -1,7 +1,8 @@
 # MTLStencilOperation
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The operation performed on a currently stored stencil value when a comparison test passes or fails.
 
@@ -10,7 +11,7 @@ The operation performed on a currently stored stencil value when a comparison te
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,47 +20,52 @@ The operation performed on a currently stored stencil value when a comparison te
 enum MTLStencilOperation
 ```
 
+```c
+enum MTLStencilOperation : NSUInteger;
+```
+
 ## Topics
 
 ### Stencil operations
-- [MTLStencilOperation.keep](mtlstenciloperation/keep.md)
+- [MTLStencilOperation.keep](./mtlstenciloperation/keep.md)
   A stencil operation that doesn’t modify a stencil value.
-- [MTLStencilOperation.zero](mtlstenciloperation/zero.md)
+- [MTLStencilOperation.zero](./mtlstenciloperation/zero.md)
   A stencil operation that sets a stencil value to zero.
-- [MTLStencilOperation.replace](mtlstenciloperation/replace.md)
+- [MTLStencilOperation.replace](./mtlstenciloperation/replace.md)
   A stencil operation that replaces a stencil value with a reference value.
-- [MTLStencilOperation.incrementClamp](mtlstenciloperation/incrementclamp.md)
+- [MTLStencilOperation.incrementClamp](./mtlstenciloperation/incrementclamp.md)
   A stencil operation that increases a stencil value by one, but only when the current value isn’t the maximum representable value.
-- [MTLStencilOperation.decrementClamp](mtlstenciloperation/decrementclamp.md)
+- [MTLStencilOperation.decrementClamp](./mtlstenciloperation/decrementclamp.md)
   A stencil operation that decreases a nonzero stencil value by one.
-- [MTLStencilOperation.invert](mtlstenciloperation/invert.md)
+- [MTLStencilOperation.invert](./mtlstenciloperation/invert.md)
   A stencil operation that applies a logical bitwise NOT to a stencil value.
-- [MTLStencilOperation.incrementWrap](mtlstenciloperation/incrementwrap.md)
+- [MTLStencilOperation.incrementWrap](./mtlstenciloperation/incrementwrap.md)
   A stencil operation that decreases a nonzero stencil value by one, or when it’s the maximum representable value, resets it to zero.
-- [MTLStencilOperation.decrementWrap](mtlstenciloperation/decrementwrap.md)
+- [MTLStencilOperation.decrementWrap](./mtlstenciloperation/decrementwrap.md)
   A stencil operation that decreases a nonzero stencil value by one, or when it’s zero, resets it to the maximum representable value.
 ### Initializers
-- [init?(rawValue: UInt)](mtlstenciloperation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlstenciloperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var stencilFailureOperation: MTLStencilOperation](mtlstencildescriptor/stencilfailureoperation.md)
+### Configuring stencil functions and operations
+- [var stencilFailureOperation: MTLStencilOperation](./mtlstencildescriptor/stencilfailureoperation.md)
   The operation that is performed to update the values in the stencil attachment when the stencil test fails.
-- [var depthFailureOperation: MTLStencilOperation](mtlstencildescriptor/depthfailureoperation.md)
+- [var depthFailureOperation: MTLStencilOperation](./mtlstencildescriptor/depthfailureoperation.md)
   The operation that is performed to update the values in the stencil attachment when the stencil test passes, but the depth test fails.
-- [var depthStencilPassOperation: MTLStencilOperation](mtlstencildescriptor/depthstencilpassoperation.md)
+- [var depthStencilPassOperation: MTLStencilOperation](./mtlstencildescriptor/depthstencilpassoperation.md)
   The operation that is performed to update the values in the stencil attachment when both the stencil test and the depth test pass.
-- [var stencilCompareFunction: MTLCompareFunction](mtlstencildescriptor/stencilcomparefunction.md)
+- [var stencilCompareFunction: MTLCompareFunction](./mtlstencildescriptor/stencilcomparefunction.md)
   The comparison that is performed between the masked reference value and a masked value in the stencil attachment.
 
 

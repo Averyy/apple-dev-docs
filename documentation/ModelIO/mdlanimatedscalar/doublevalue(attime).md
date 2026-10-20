@@ -1,7 +1,8 @@
 # doubleValue(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func doubleValue(atTime time: TimeInterval) -> Double
+```
+
+```objc
+- (double) doubleAtTime:(NSTimeInterval) time;
 ```
 
 

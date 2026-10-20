@@ -1,7 +1,8 @@
 # VTFrameRateConversionConfiguration.QualityPrioritization.quality
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quality prioritization level.
 
@@ -17,9 +18,14 @@ A quality prioritization level.
 case quality
 ```
 
+```c
+VTFrameRateConversionConfigurationQualityPrioritizationQuality
+```
+
 ## See Also
 
-- [VTFrameRateConversionConfiguration.QualityPrioritization.normal](vtframerateconversionconfiguration/qualityprioritization-swift.enum/normal.md)
+### Priorities
+- [VTFrameRateConversionConfiguration.QualityPrioritization.normal](./normal.md)
   A normal quality prioritization level.
 
 

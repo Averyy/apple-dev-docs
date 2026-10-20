@@ -1,23 +1,28 @@
 # copyDescription
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy description callback for your program-defined `info` pointer. Can be `NULL`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var copyDescription: ((UnsafeMutableRawPointer?) -> Unmanaged<CFString>?)!
+```
+
+```c
+const struct __CFString *(*)(void *) copyDescription;
 ```
 
 

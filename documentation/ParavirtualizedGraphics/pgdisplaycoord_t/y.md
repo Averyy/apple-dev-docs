@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical coordinate value.
 
@@ -15,9 +16,14 @@ The vertical coordinate value.
 var y: UInt16
 ```
 
+```c
+uint16_t y;
+```
+
 ## See Also
 
-- [var x: UInt16](pgdisplaycoord_t/x.md)
+### Inspecting Coordinate Values
+- [var x: UInt16](./x.md)
   The horizontal coordinate value.
 
 

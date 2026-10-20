@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataUnitsPartsPerMillion
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unit of the characters is parts per million.
 
@@ -19,9 +20,14 @@ The unit of the characters is parts per million.
 let HMCharacteristicMetadataUnitsPartsPerMillion: String
 ```
 
+```c
+extern NSString * const HMCharacteristicMetadataUnitsPartsPerMillion;
+```
+
 ## See Also
 
-- [let HMCharacteristicMetadataUnitsPercentage: String](hmcharacteristicmetadataunitspercentage.md)
+### Parts Per Total
+- [let HMCharacteristicMetadataUnitsPercentage: String](./hmcharacteristicmetadataunitspercentage.md)
   The unit of the characteristic is a percentage.
 
 

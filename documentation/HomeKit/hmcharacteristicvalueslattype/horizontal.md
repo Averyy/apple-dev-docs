@@ -1,7 +1,8 @@
 # HMCharacteristicValueSlatType.horizontal
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Horizontal slats.
 
@@ -19,9 +20,14 @@ Horizontal slats.
 case horizontal
 ```
 
+```c
+HMCharacteristicValueSlatTypeHorizontal
+```
+
 ## See Also
 
-- [HMCharacteristicValueSlatType.vertical](hmcharacteristicvalueslattype/vertical.md)
+### Slat Types
+- [HMCharacteristicValueSlatType.vertical](./vertical.md)
   Vertical slats.
 
 

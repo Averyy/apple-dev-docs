@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new telephony action with data in an unarchiver.
 
@@ -18,13 +19,18 @@ Creates a new telephony action with data in an unarchiver.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: An unarchiver object.
 
 ## See Also
 
-- [init()](cxaction/init.md)
+### Creating an Action
+- [init()](./init%28%29.md)
   Initializes a new telephony action.
 
 

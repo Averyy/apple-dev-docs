@@ -1,7 +1,8 @@
 # resolveCounterRange(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms samples of a GPU’s counter set from the driver’s internal format to a standard Metal data structure.
 
@@ -11,7 +12,7 @@ Transforms samples of a GPU’s counter set from the driver’s internal format 
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,17 @@ func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/foundation/data) instance in Swift, or an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) instance in Objective-C, if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
+A [`Data`](../../Foundation/data.md) instance in Swift, or an [`NSData`](../../Foundation/nsdata.md) instance in Objective-C, if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
 
 #### Discussion
 
-You can only call this method on a counter sample buffer that you create with [`MTLStorageMode.shared`](mtlstoragemode/shared.md) (see [`storageMode`](mtlcountersamplebufferdescriptor/storagemode.md)). For an example of how and when to use this method, see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+You can only call this method on a counter sample buffer that you create with [`MTLStorageMode.shared`](../mtlstoragemode/shared.md) (see [`storageMode`](../mtlcountersamplebufferdescriptor/storagemode.md)). For an example of how and when to use this method, see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md).
 
-> **Note**:  The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
+> **Note**:  The GPU stores [`MTLCounterErrorValue`](../mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # evaluation(on:textColumn:labelColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes evaluation metrics.
 
@@ -18,6 +19,12 @@ Computes evaluation metrics.
 func evaluation(on dataFrame: DataFrame, textColumn: String, labelColumn: String) -> MLClassifierMetrics
 ```
 
+**Other overloads**:
+
+```swift
+func evaluation(on labeledTexts: MLDataTable, textColumn: String, labelColumn: String) -> MLClassifierMetrics
+```
+
 #### Return Value
 
 The computed metrics or an error message.
@@ -30,11 +37,12 @@ The computed metrics or an error message.
 
 ## See Also
 
-- [func evaluation(on:)](mltextclassifier/evaluation(on:).md)
+### Evaluating a text classifier
+- [func evaluation(on:)](./evaluation%28on%29.md)
   Computes evaluation metrics.
-- [let trainingMetrics: MLClassifierMetrics](mltextclassifier/trainingmetrics.md)
+- [let trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [let validationMetrics: MLClassifierMetrics](mltextclassifier/validationmetrics.md)
+- [let validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 
 

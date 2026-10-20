@@ -1,7 +1,8 @@
 # init(name:jointPaths:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(name: String, jointPaths: [String])
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name jointPaths:(NSArray<NSString *> *) jointPaths;
 ```
 
 

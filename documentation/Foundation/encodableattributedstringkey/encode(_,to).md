@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Encodes a value to the provided encoder.
@@ -29,6 +30,13 @@ This method throws an error if writing to the encoder fails.
 
 - `value`: The value to encode.
 - `encoder`: The encoder to write data to.
+
+## Default Implementations
+
+### EncodableAttributedStringKey Implementations
+- [static func encode(Self.Value, to: any Encoder) throws](./encode%28_,to%29-16dss.md)
+  Encodes an Objective-C value to the provided encoder, using a default implementation.
+- [static func encode(Self.Value, to: any Encoder) throws](./encode%28_,to%29-47oas.md)
 
 
 ---

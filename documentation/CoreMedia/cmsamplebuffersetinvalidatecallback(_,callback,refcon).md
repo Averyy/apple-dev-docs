@@ -1,7 +1,8 @@
 # CMSampleBufferSetInvalidateCallback(_:callback:refcon:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the sample buffer’s invalidation callback.
 
@@ -20,9 +21,13 @@ Sets the sample buffer’s invalidation callback.
 func CMSampleBufferSetInvalidateCallback(_ sbuf: CMSampleBuffer, callback invalidateCallback: CMSampleBufferInvalidateCallback, refcon invalidateRefCon: UInt64) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSampleBufferSetInvalidateCallback(CMSampleBufferRef sbuf, CMSampleBufferInvalidateCallback invalidateCallback, uint64_t invalidateRefCon);
+```
+
 #### Return Value
 
-A result code. See [`Sample Buffer Error Codes`](sample-buffer-errors.md).
+A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
 #### Discussion
 
@@ -37,16 +42,17 @@ A sample buffer can only have one invalidation callback. The invalidation callba
 ## Topics
 
 ### Callbacks
-- [typealias CMSampleBufferInvalidateCallback](cmsamplebufferinvalidatecallback.md)
-  Client callback called by [`CMSampleBufferInvalidate(_:)`](cmsamplebufferinvalidate(_:).md).
+- [typealias CMSampleBufferInvalidateCallback](./cmsamplebufferinvalidatecallback.md)
+  Client callback called by [`CMSampleBufferInvalidate(_:)`](./cmsamplebufferinvalidate%28_%29.md).
 
 ## See Also
 
-- [func CMSampleBufferSetInvalidateHandler(CMSampleBuffer, invalidateHandler: CMSampleBufferInvalidateHandler) -> OSStatus](cmsamplebuffersetinvalidatehandler(_:invalidatehandler:).md)
+### Invalidating Sample Buffers
+- [func CMSampleBufferSetInvalidateHandler(CMSampleBuffer, invalidateHandler: CMSampleBufferInvalidateHandler) -> OSStatus](./cmsamplebuffersetinvalidatehandler%28_,invalidatehandler%29.md)
   Sets the sample buffer’s invalidation handler.
-- [func CMSampleBufferInvalidate(CMSampleBuffer) -> OSStatus](cmsamplebufferinvalidate(_:).md)
+- [func CMSampleBufferInvalidate(CMSampleBuffer) -> OSStatus](./cmsamplebufferinvalidate%28_%29.md)
   Invalidates a sample buffer by calling its invalidation callback.
-- [func CMSampleBufferIsValid(CMSampleBuffer) -> Bool](cmsamplebufferisvalid(_:).md)
+- [func CMSampleBufferIsValid(CMSampleBuffer) -> Bool](./cmsamplebufferisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a sample buffer is valid.
 
 

@@ -1,7 +1,8 @@
 # attributedText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed variant of the primary text.
 
@@ -10,7 +11,7 @@ An attributed variant of the primary text.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var attributedText: NSAttributedString? { get set }
 
 #### Discussion
 
-Setting this property supersedes [`text`](uicontentunavailableconfiguration-swift.struct/text.md) and some properties of [`textProperties`](uicontentunavailableconfiguration-swift.struct/textproperties-swift.property.md).
+Setting this property supersedes [`text`](./text.md) and some properties of [`textProperties`](./textproperties-swift.property.md).
 
 
 ---

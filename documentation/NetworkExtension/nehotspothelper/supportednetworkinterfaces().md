@@ -1,20 +1,27 @@
 # supportedNetworkInterfaces()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Return the list of network interfaces managed by the Hotspot Helper infrastructure.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 26.0
+- iPadOS 9.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use NEHotspotManager API
 
 ## Declaration
 
 ```swift
 class func supportedNetworkInterfaces() -> [Any]?
+```
+
+```objc
++ (NSArray *) supportedNetworkInterfaces;
 ```
 
 #### Return Value
@@ -23,9 +30,9 @@ If no network interfaces are being managed, this function returns nil. Otherwise
 
 #### Discussion
 
-Each network interface is represented by an NEHotspotNetwork object. Currently, the returned array contains exactly one [`NEHotspotNetwork`](nehotspotnetwork.md) object representing the Wi-Fi interface.
+Each network interface is represented by an NEHotspotNetwork object. Currently, the returned array contains exactly one [`NEHotspotNetwork`](../nehotspotnetwork.md) object representing the Wi-Fi interface.
 
-The main purpose of this method is to allow a Hotspot Helper to provide accurate status in its UI at times when it has not been given a command to process. This method coupled with the `isChosenHelper` method of [`NEHotspotNetwork`](nehotspotnetwork.md) allows the application to know whether it is the one that is handling the current network.
+The main purpose of this method is to allow a Hotspot Helper to provide accurate status in its UI at times when it has not been given a command to process. This method coupled with the `isChosenHelper` method of [`NEHotspotNetwork`](../nehotspotnetwork.md) allows the application to know whether it is the one that is handling the current network.
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a parallel render command encoder from a descriptor.
@@ -11,7 +12,7 @@ Creates a parallel render command encoder from a descriptor.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,17 @@ Creates a parallel render command encoder from a descriptor.
 func makeParallelRenderCommandEncoder(descriptor renderPassDescriptor: MTLRenderPassDescriptor) -> (any MTLParallelRenderCommandEncoder)?
 ```
 
+```objc
+- (id<MTLParallelRenderCommandEncoder>) parallelRenderCommandEncoderWithDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor;
+```
+
 #### Discussion
 
-An [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) instance can create multiple, independent render command encoders that contribute to the same render pass on different threads.
+An [`MTLParallelRenderCommandEncoder`](../mtlparallelrendercommandencoder.md) instance can create multiple, independent render command encoders that contribute to the same render pass on different threads.
 
 ## Parameters
 
-- `renderPassDescriptor`: An [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance that configures the [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) the method returns.
+- `renderPassDescriptor`: An [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) instance that configures the [`MTLParallelRenderCommandEncoder`](../mtlparallelrendercommandencoder.md) the method returns.
 
 
 ---

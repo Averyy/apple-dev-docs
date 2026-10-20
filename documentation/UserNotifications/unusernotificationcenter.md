@@ -1,7 +1,8 @@
 # UNUserNotificationCenter
 
 **Framework**: User Notifications  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The central object for managing notification-related activities for your app or app extension.
 
@@ -20,95 +21,100 @@ The central object for managing notification-related activities for your app or 
 class UNUserNotificationCenter
 ```
 
+```objc
+@interface UNUserNotificationCenter : NSObject
+```
+
 ## Mentions
 
-- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
-- [Asking permission to use notifications](asking-permission-to-use-notifications.md)
-- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
+- [Handling notifications and notification-related actions](./handling-notifications-and-notification-related-actions.md)
+- [Asking permission to use notifications](./asking-permission-to-use-notifications.md)
+- [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md)
 
 #### Overview
 
-Use the shared [`UNUserNotificationCenter`](unusernotificationcenter.md) object to manage all notification-related behaviors in your app or app extension. Specifically, use this object to do the following:
+Use the shared [`UNUserNotificationCenter`](./unusernotificationcenter.md) object to manage all notification-related behaviors in your app or app extension. Specifically, use this object to do the following:
 
-- Request authorization to interact with the user through alerts, sounds, and icon badges. See [`Asking permission to use notifications`](asking-permission-to-use-notifications.md).
-- Declare the notification types that your app supports and the custom actions the user may perform when the system delivers those notifications. See [`Declaring your actionable notification types`](declaring-your-actionable-notification-types.md).
-- Schedule the delivery of notifications from your app. See [`Scheduling a notification locally from your app`](scheduling-a-notification-locally-from-your-app.md).
-- Process the payloads from remote notifications the system delivers by Apple Push Notification service (APNs). See [`Handling notifications and notification-related actions`](handling-notifications-and-notification-related-actions.md).
+- Request authorization to interact with the user through alerts, sounds, and icon badges. See [Asking permission to use notifications](./asking-permission-to-use-notifications.md).
+- Declare the notification types that your app supports and the custom actions the user may perform when the system delivers those notifications. See [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md).
+- Schedule the delivery of notifications from your app. See [Scheduling a notification locally from your app](./scheduling-a-notification-locally-from-your-app.md).
+- Process the payloads from remote notifications the system delivers by Apple Push Notification service (APNs). See [Handling notifications and notification-related actions](./handling-notifications-and-notification-related-actions.md).
 - Manage the already delivered notifications the system displays in Notification Center. See Managing Delivered Notifications.
-- Handle user-selected actions associated with your custom notification types. See [`Handling notifications and notification-related actions`](handling-notifications-and-notification-related-actions.md).
+- Handle user-selected actions associated with your custom notification types. See [Handling notifications and notification-related actions](./handling-notifications-and-notification-related-actions.md).
 - Get the notification-related settings for your app. See Managing Settings and Authorization.
 
-To handle incoming notifications and notification-related actions, create an object that adopts the [`UNUserNotificationCenterDelegate`](unusernotificationcenterdelegate.md) protocol and assign it to the [`delegate`](unusernotificationcenter/delegate.md) property. Always assign an object to the [`delegate`](unusernotificationcenter/delegate.md) property before performing any tasks that might interact with that delegate.
+To handle incoming notifications and notification-related actions, create an object that adopts the [`UNUserNotificationCenterDelegate`](./unusernotificationcenterdelegate.md) protocol and assign it to the [`delegate`](./unusernotificationcenter/delegate.md) property. Always assign an object to the [`delegate`](./unusernotificationcenter/delegate.md) property before performing any tasks that might interact with that delegate.
 
 You may use the shared user notification center object simultaneously from any of your app’s threads. The object processes requests serially in the order that the system initiates them.
 
 ## Topics
 
 ### Managing the notification center
-- [class func current() -> UNUserNotificationCenter](unusernotificationcenter/current.md)
+- [class func current() -> UNUserNotificationCenter](./unusernotificationcenter/current%28%29.md)
   Returns your app’s notification center.
-- [func getNotificationSettings(completionHandler: (UNNotificationSettings) -> Void)](unusernotificationcenter/getnotificationsettings(completionhandler:).md)
+- [func getNotificationSettings(completionHandler: (UNNotificationSettings) -> Void)](./unusernotificationcenter/getnotificationsettings%28completionhandler%29.md)
   Retrieves the authorization and feature-related settings for your app.
-- [func setBadgeCount(Int, withCompletionHandler: (((any Error)?) -> Void)?)](unusernotificationcenter/setbadgecount(_:withcompletionhandler:).md)
+- [func setBadgeCount(Int, withCompletionHandler: (((any Error)?) -> Void)?)](./unusernotificationcenter/setbadgecount%28_,withcompletionhandler%29.md)
   Updates the badge count for your app’s icon.
 ### Requesting authorization
-- [func requestAuthorization(options: UNAuthorizationOptions, completionHandler: (Bool, (any Error)?) -> Void)](unusernotificationcenter/requestauthorization(options:completionhandler:).md)
+- [func requestAuthorization(options: UNAuthorizationOptions, completionHandler: (Bool, (any Error)?) -> Void)](./unusernotificationcenter/requestauthorization%28options,completionhandler%29.md)
   Requests a person’s authorization to allow local and remote notifications for your app.
-- [struct UNAuthorizationOptions](unauthorizationoptions.md)
+- [struct UNAuthorizationOptions](./unauthorizationoptions.md)
   Options that determine the authorized features of local and remote notifications.
 ### Processing received notifications
-- [var delegate: (any UNUserNotificationCenterDelegate)?](unusernotificationcenter/delegate.md)
+- [var delegate: (any UNUserNotificationCenterDelegate)?](./unusernotificationcenter/delegate.md)
   The notification center’s delegate.
-- [protocol UNUserNotificationCenterDelegate](unusernotificationcenterdelegate.md)
+- [protocol UNUserNotificationCenterDelegate](./unusernotificationcenterdelegate.md)
   An interface for processing incoming notifications and responding to notification actions.
-- [var supportsContentExtensions: Bool](unusernotificationcenter/supportscontentextensions.md)
+- [var supportsContentExtensions: Bool](./unusernotificationcenter/supportscontentextensions.md)
   A Boolean value that indicates whether the device supports notification content extensions.
 ### Scheduling notifications
-- [func add(UNNotificationRequest, withCompletionHandler: (((any Error)?) -> Void)?)](unusernotificationcenter/add(_:withcompletionhandler:).md)
+- [func add(UNNotificationRequest, withCompletionHandler: (((any Error)?) -> Void)?)](./unusernotificationcenter/add%28_,withcompletionhandler%29.md)
   Schedules the delivery of a local notification.
-- [func getPendingNotificationRequests(completionHandler: ([UNNotificationRequest]) -> Void)](unusernotificationcenter/getpendingnotificationrequests(completionhandler:).md)
+- [func getPendingNotificationRequests(completionHandler: ([UNNotificationRequest]) -> Void)](./unusernotificationcenter/getpendingnotificationrequests%28completionhandler%29.md)
   Fetches all of your app’s local notifications that are pending delivery.
-- [func removePendingNotificationRequests(withIdentifiers: [String])](unusernotificationcenter/removependingnotificationrequests(withidentifiers:).md)
+- [func removePendingNotificationRequests(withIdentifiers: [String])](./unusernotificationcenter/removependingnotificationrequests%28withidentifiers%29.md)
   Removes your app’s local notifications that are pending and match the specified identifiers.
-- [func removeAllPendingNotificationRequests()](unusernotificationcenter/removeallpendingnotificationrequests.md)
+- [func removeAllPendingNotificationRequests()](./unusernotificationcenter/removeallpendingnotificationrequests%28%29.md)
   Removes all of your app’s pending local notifications.
 ### Removing delivered notifications
-- [func getDeliveredNotifications(completionHandler: ([UNNotification]) -> Void)](unusernotificationcenter/getdeliverednotifications(completionhandler:).md)
+- [func getDeliveredNotifications(completionHandler: ([UNNotification]) -> Void)](./unusernotificationcenter/getdeliverednotifications%28completionhandler%29.md)
   Fetches all of your app’s delivered notifications that are still present in Notification Center.
-- [func removeDeliveredNotifications(withIdentifiers: [String])](unusernotificationcenter/removedeliverednotifications(withidentifiers:).md)
+- [func removeDeliveredNotifications(withIdentifiers: [String])](./unusernotificationcenter/removedeliverednotifications%28withidentifiers%29.md)
   Removes your app’s notifications from Notification Center that match the specified identifiers.
-- [func removeAllDeliveredNotifications()](unusernotificationcenter/removealldeliverednotifications.md)
+- [func removeAllDeliveredNotifications()](./unusernotificationcenter/removealldeliverednotifications%28%29.md)
   Removes all of your app’s delivered notifications from Notification Center.
 ### Managing notification categories
-- [func setNotificationCategories(Set<UNNotificationCategory>)](unusernotificationcenter/setnotificationcategories(_:).md)
+- [func setNotificationCategories(Set<UNNotificationCategory>)](./unusernotificationcenter/setnotificationcategories%28_%29.md)
   Registers the notification categories that your app supports.
-- [func getNotificationCategories(completionHandler: (Set<UNNotificationCategory>) -> Void)](unusernotificationcenter/getnotificationcategories(completionhandler:).md)
+- [func getNotificationCategories(completionHandler: (Set<UNNotificationCategory>) -> Void)](./unusernotificationcenter/getnotificationcategories%28completionhandler%29.md)
   Fetches your app’s registered notification categories.
 ### Handling errors
-- [struct UNError](unerror.md)
+- [struct UNError](./unerror.md)
   An object that represents a notification error.
-- [UNError.Code](unerror/code.md)
+- [UNError.Code](./unerror/code.md)
   Constants that identify notification errors.
-- [let UNErrorDomain: String](unerrordomain.md)
+- [let UNErrorDomain: String](./unerrordomain.md)
   The error domain for notifications.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol UNUserNotificationCenterDelegate](unusernotificationcenterdelegate.md)
+### Notification management
+- [protocol UNUserNotificationCenterDelegate](./unusernotificationcenterdelegate.md)
   An interface for processing incoming notifications and responding to notification actions.
-- [class UNNotificationSettings](unnotificationsettings.md)
+- [class UNNotificationSettings](./unnotificationsettings.md)
   The object for managing notification-related settings and the authorization status of your app.
 
 

@@ -1,7 +1,8 @@
 # kAXHeadingRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXHeadingRole: String { get }
+```
+
+```c
+#define kAXHeadingRole
 ```
 
 

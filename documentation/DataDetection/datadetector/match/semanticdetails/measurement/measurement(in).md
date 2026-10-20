@@ -1,7 +1,8 @@
 # measurement(in:)
 
 **Framework**: DataDetection  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A function that returns a measurement object initialized with the specified dimensions.
 
@@ -22,9 +23,10 @@ func measurement<D>(in dimension: D) -> Measurement<D> where D : Dimension
 
 ## See Also
 
-- [let possibleDimensions: [Dimension]](datadetector/match/semanticdetails/measurement/possibledimensions.md)
+### Values that describe the characteristics of the measurement
+- [let possibleDimensions: [Dimension]](./possibledimensions.md)
   An array of dimensions someone can consider for use in a measurement.
-- [let value: Double](datadetector/match/semanticdetails/measurement/value.md)
+- [let value: Double](./value.md)
   The value the framework returns for a measurement.
 
 

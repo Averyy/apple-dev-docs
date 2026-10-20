@@ -1,7 +1,8 @@
 # SparseTriangular
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A triangular sparse matrix with a nonunit diagonal.
 
@@ -20,23 +21,28 @@ A triangular sparse matrix with a nonunit diagonal.
 var SparseTriangular: SparseKind_t { get }
 ```
 
+```c
+SparseTriangular
+```
+
 ## Mentions
 
-- [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
+- [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
 
 #### Discussion
 
-The [`SparseTriangle_t`](sparsetriangle_t.md) field indicates which triangle (upper or lower) represents the matrix.
+The [`SparseTriangle_t`](./sparsetriangle_t.md) field indicates which triangle (upper or lower) represents the matrix.
 
 ## See Also
 
-- [var SparseOrdinary: SparseKind_t](sparseordinary.md)
+### Constants
+- [var SparseOrdinary: SparseKind_t](./sparseordinary.md)
   An unsymmetric sparse matrix without special structure.
-- [var SparseSymmetric: SparseKind_t](sparsesymmetric.md)
+- [var SparseSymmetric: SparseKind_t](./sparsesymmetric.md)
   A symmetric sparse matrix.
-- [var SparseUnitTriangular: SparseKind_t](sparseunittriangular.md)
+- [var SparseUnitTriangular: SparseKind_t](./sparseunittriangular.md)
   A triangular sparse matrix with a unit diagonal.
-- [var SparseHermitian: SparseKind_t](sparsehermitian.md)
+- [var SparseHermitian: SparseKind_t](./sparsehermitian.md)
   A flag to describe the type of matrix represented.
 
 

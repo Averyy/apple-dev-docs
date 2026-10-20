@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the attribute for serialization and identification.
 
@@ -22,7 +23,8 @@ static let name: String
 
 ## See Also
 
-- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute.Value](attributescopes/translationattributes/skiptranslationattribute/value.md)
+### Using attrubute properties
+- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute.Value](./value.md)
   A type that stores whether to exclude the associated text range from translation.
 
 

@@ -1,7 +1,8 @@
 # AVMIDIEventListBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+
@@ -18,6 +19,10 @@
 typealias AVMIDIEventListBlock = (Int64, UInt8, UnsafePointer<MIDIEventList>) -> OSStatus
 ```
 
+```c
+typedef int (^)(long long, unsigned char, const struct MIDIEventList *) __attribute__((nonblocking)) AVMIDIEventListBlock;
+```
+
 #### Discussion
 
 A block used by an audio unit to send or receive MIDIEventList data.
@@ -30,9 +35,10 @@ A block used by an audio unit to send or receive MIDIEventList data.
 
 ## See Also
 
-- [class AVAudioSequencer](avaudiosequencer.md)
+### MIDI sequencing and instruments
+- [class AVAudioSequencer](./avaudiosequencer.md)
   An object that plays audio from a collection of MIDI events the system organizes into music tracks.
-- [class AVAudioUnitSampler](avaudiounitsampler.md)
+- [class AVAudioUnitSampler](./avaudiounitsampler.md)
   An object that you configure with one or more instrument samples, based on Apple’s Sampler audio unit.
 
 

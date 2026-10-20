@@ -1,7 +1,8 @@
 # MTLDeviceError
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -20,22 +21,22 @@ struct MTLDeviceError
 ## Topics
 
 ### Type Properties
-- [static var errorDomain: String](mtldeviceerror-swift.struct/errordomain.md)
-- [static var none: MTLDeviceError.Code](mtldeviceerror-swift.struct/none.md)
-- [static var notSupported: MTLDeviceError.Code](mtldeviceerror-swift.struct/notsupported.md)
+- [static var errorDomain: String](./mtldeviceerror-swift.struct/errordomain.md)
+- [static var none: MTLDeviceError.Code](./mtldeviceerror-swift.struct/none.md)
+- [static var notSupported: MTLDeviceError.Code](./mtldeviceerror-swift.struct/notsupported.md)
 ### Enumerations
-- [MTLDeviceError.Code](mtldeviceerror-swift.struct/code.md)
+- [MTLDeviceError.Code](./mtldeviceerror-swift.struct/code.md)
   Enumeration of kinds of errors that methods on MTLDevice can produce.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

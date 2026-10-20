@@ -1,16 +1,19 @@
 # tryLock()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire a lock.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.4+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 8.0
+- iPadOS 3.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.4+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use a queue style context and -performBlock: instead
 
 ## Declaration
 
@@ -18,9 +21,13 @@ Attempts to acquire a lock.
 func tryLock() -> Bool
 ```
 
+```objc
+- (BOOL) tryLock;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a lock was acquired, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if a lock was acquired, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -28,12 +35,13 @@ This method returns immediately after the attempt to acquire a lock.
 
 ## See Also
 
-- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](nsmanagedobjectcontext/init(concurrencytype:).md)
+### Deprecated instance methods
+- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](./init%28concurrencytype%29.md)
   Creates a context that uses the specified concurrency type.
-- [convenience init()](nsmanagedobjectcontext/init.md)
-- [func lock()](nsmanagedobjectcontext/lock.md)
+- [convenience init()](./init%28%29.md)
+- [func lock()](./lock%28%29.md)
   Attempts to acquire a lock on the context.
-- [func unlock()](nsmanagedobjectcontext/unlock.md)
+- [func unlock()](./unlock%28%29.md)
   Relinquishes a previously acquired lock.
 
 

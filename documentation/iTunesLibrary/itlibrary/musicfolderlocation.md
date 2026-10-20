@@ -1,7 +1,8 @@
 # musicFolderLocation
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the iTunes music folder.
 
@@ -9,17 +10,24 @@ The location of the iTunes music folder.
 - Mac Catalyst 14.0+
 - macOS 10.13+
 
+> **Deprecated**: Use [`mediaFolderLocation`](./mediafolderlocation.md) instead.
+
 ## Declaration
 
 ```swift
 var musicFolderLocation: URL? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSURL * musicFolderLocation;
+```
+
 ## See Also
 
-- [var features: ITLibExportFeature](itlibrary/features.md)
+### Deprecated
+- [var features: ITLibExportFeature](./features.md)
   A bitwise OR combination of the features of this library.
-- [enum ITLibExportFeature](itlibexportfeature.md)
+- [enum ITLibExportFeature](../itlibexportfeature.md)
   These constants describe the features that an iTunes library supports.
 
 

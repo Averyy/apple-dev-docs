@@ -1,7 +1,8 @@
 # end(_:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 func end(_ session: AXFeatureOverrideSession) throws
+```
+
+```objc
+- (BOOL) endOverrideSession:(AXFeatureOverrideSession *) session error:(NSError **) error;
 ```
 
 

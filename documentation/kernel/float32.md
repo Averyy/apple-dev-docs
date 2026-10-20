@@ -1,7 +1,8 @@
 # Float32
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Convenience type that represent a 32-bit floating point number
 
@@ -10,7 +11,7 @@ Convenience type that represent a 32-bit floating point number
 
 ## Declaration
 
-```swift
+```c
 typedef float Float32;
 ```
 

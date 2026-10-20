@@ -1,14 +1,15 @@
 # LivePhotosKit.EffectType
 
 **Framework**: LivePhotosKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - LivePhotosKit JS 1.5+
 
 ## Declaration
 
-```swift
+```
 interface LivePhotosKit.EffectType {
 	const EffectTypeLiteral default;
 	const EffectTypeLiteral BOUNCE;
@@ -21,11 +22,11 @@ interface LivePhotosKit.EffectType {
 ## Topics
 
 ### Enumeration Cases
-- [BOUNCE](livephotoskit.effecttype/bounce.md)
-- [EXPOSURE](livephotoskit.effecttype/exposure.md)
-- [LIVE](livephotoskit.effecttype/live.md)
-- [LOOP](livephotoskit.effecttype/loop.md)
-- [default](livephotoskit.effecttype/default.md)
+- [BOUNCE](./livephotoskit.effecttype/bounce.md)
+- [EXPOSURE](./livephotoskit.effecttype/exposure.md)
+- [LIVE](./livephotoskit.effecttype/live.md)
+- [LOOP](./livephotoskit.effecttype/loop.md)
+- [default](./livephotoskit.effecttype/default.md)
 
 
 ---

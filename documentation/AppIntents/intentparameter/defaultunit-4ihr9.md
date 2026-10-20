@@ -1,7 +1,8 @@
 # defaultUnit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 final var defaultUnit: IntentParameter<Value>.DurationUnit? { get }
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Duration`.
 
 
 ---

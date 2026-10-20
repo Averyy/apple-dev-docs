@@ -1,7 +1,8 @@
 # vDSP_vfill
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Populates a single-precision vector with a specified scalar value.
 
@@ -10,7 +11,7 @@ Populates a single-precision vector with a specified scalar value.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_vfill(const float *__A, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 

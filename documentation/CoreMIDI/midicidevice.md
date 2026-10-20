@@ -1,7 +1,8 @@
 # MIDICIDevice
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,31 +17,35 @@
 class MIDICIDevice
 ```
 
+```objc
+@interface MIDICIDevice : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var deviceInfo: MIDI2DeviceInfo](midicidevice/deviceinfo.md)
-- [var deviceType: MIDICIDeviceType](midicidevice/devicetype.md)
-- [var maxPropertyExchangeRequests: Int](midicidevice/maxpropertyexchangerequests.md)
-- [var maxSysExSize: Int](midicidevice/maxsysexsize.md)
-- [var muid: MIDICIMUID](midicidevice/muid.md)
-- [var profiles: [MIDIUMPCIProfile]](midicidevice/profiles.md)
-- [var supportsProcessInquiry: Bool](midicidevice/supportsprocessinquiry.md)
-- [var supportsProfileConfiguration: Bool](midicidevice/supportsprofileconfiguration.md)
-- [var supportsPropertyExchange: Bool](midicidevice/supportspropertyexchange.md)
-- [var supportsProtocolNegotiation: Bool](midicidevice/supportsprotocolnegotiation.md)
+- [var deviceInfo: MIDI2DeviceInfo](./midicidevice/deviceinfo.md)
+- [var deviceType: MIDICIDeviceType](./midicidevice/devicetype.md)
+- [var maxPropertyExchangeRequests: Int](./midicidevice/maxpropertyexchangerequests.md)
+- [var maxSysExSize: Int](./midicidevice/maxsysexsize.md)
+- [var muid: MIDICIMUID](./midicidevice/muid.md)
+- [var profiles: [MIDIUMPCIProfile]](./midicidevice/profiles.md)
+- [var supportsProcessInquiry: Bool](./midicidevice/supportsprocessinquiry.md)
+- [var supportsProfileConfiguration: Bool](./midicidevice/supportsprofileconfiguration.md)
+- [var supportsPropertyExchange: Bool](./midicidevice/supportspropertyexchange.md)
+- [var supportsProtocolNegotiation: Bool](./midicidevice/supportsprotocolnegotiation.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

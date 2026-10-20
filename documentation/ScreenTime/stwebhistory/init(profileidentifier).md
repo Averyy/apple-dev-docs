@@ -1,7 +1,8 @@
 # init(profileIdentifier:)
 
 **Framework**: Screen Time  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a web history instance to delete web-usage data associated to the profile identifier you specify.
 
@@ -15,6 +16,10 @@ Creates a web history instance to delete web-usage data associated to the profil
 
 ```swift
 init(profileIdentifier: STWebHistory.ProfileIdentifier?)
+```
+
+```objc
+- (instancetype) initWithProfileIdentifier:(STWebHistoryProfileIdentifier) profileIdentifier;
 ```
 
 #### Discussion

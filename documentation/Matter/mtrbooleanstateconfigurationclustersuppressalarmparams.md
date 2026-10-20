@@ -1,7 +1,8 @@
 # MTRBooleanStateConfigurationClusterSuppressAlarmParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,25 +19,29 @@
 class MTRBooleanStateConfigurationClusterSuppressAlarmParams
 ```
 
+```objc
+@interface MTRBooleanStateConfigurationClusterSuppressAlarmParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var alarmsToSuppress: NSNumber](mtrbooleanstateconfigurationclustersuppressalarmparams/alarmstosuppress.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrbooleanstateconfigurationclustersuppressalarmparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrbooleanstateconfigurationclustersuppressalarmparams/timedinvoketimeoutms.md)
+- [var alarmsToSuppress: NSNumber](./mtrbooleanstateconfigurationclustersuppressalarmparams/alarmstosuppress.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrbooleanstateconfigurationclustersuppressalarmparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrbooleanstateconfigurationclustersuppressalarmparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

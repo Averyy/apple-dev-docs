@@ -1,18 +1,23 @@
 # setMode(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overriden to set the color picker’s mode.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func setMode(_ mode: NSColorPanel.Mode)
+```
+
+```objc
+- (void) setMode:(NSColorPanelMode) mode;
 ```
 
 #### Discussion

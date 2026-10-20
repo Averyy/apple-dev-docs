@@ -1,7 +1,8 @@
 # clHand
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var clHand: CSSM_CL_HANDLE
+```
+
+```c
+CSSM_CL_HANDLE clHand;
 ```
 
 

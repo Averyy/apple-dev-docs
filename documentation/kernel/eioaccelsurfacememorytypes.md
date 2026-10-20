@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum eIOAccelSurfaceMemoryTypes : unsigned int {
     ...
 };
@@ -17,7 +17,7 @@ enum eIOAccelSurfaceMemoryTypes : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAccelNumSurfaceMemoryTypes](eioaccelsurfacememorytypes/kioaccelnumsurfacememorytypes.md)
+- [kIOAccelNumSurfaceMemoryTypes](./eioaccelsurfacememorytypes/kioaccelnumsurfacememorytypes.md)
 
 
 ---

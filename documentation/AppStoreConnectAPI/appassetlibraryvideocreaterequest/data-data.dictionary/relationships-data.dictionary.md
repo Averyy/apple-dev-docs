@@ -1,7 +1,8 @@
 # AppAssetLibraryVideoCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideoCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.AssetLibrary](appassetlibraryvideocreaterequest/data-data.dictionary/relationships-data.dictionary/assetlibrary-data.dictionary.md)
+- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.AssetLibrary](./relationships-data.dictionary/assetlibrary-data.dictionary.md)
   The asset library to associate with the new app asset library video.
-- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements](appassetlibraryvideocreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary.md)
+- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements](./relationships-data.dictionary/placements-data.dictionary.md)
   The placements to associate with the new app asset library video.
 
 ## Properties
@@ -29,7 +30,8 @@ object AppAssetLibraryVideoCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppAssetLibraryVideoCreateRequest.Data.Attributes](appassetlibraryvideocreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryVideoCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the new app asset library video resource.
 
 

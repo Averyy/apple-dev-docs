@@ -1,7 +1,8 @@
 # searchScopes(_:scopes:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the search scopes for this view.
 
@@ -22,7 +23,7 @@ func searchScopes<V, S>(_ scope: Binding<V>, @ContentBuilder scopes: () -> S) ->
 
 ## Mentions
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+- [Scoping a search operation](../scoping-a-search-operation.md)
 
 #### Discussion
 
@@ -54,22 +55,23 @@ ProductList()
     }
 ```
 
-SwiftUI uses this binding and view to add a [`Picker`](picker.md) with the search field. In iOS, iPadOS, macOS, and tvOS, the picker appears below the search field when search is active. To ensure that the picker operates correctly, match the type of the scope binding with the type of each view’s tag. Then modify your search to account for the current value of the `scope` state property.
+SwiftUI uses this binding and view to add a [`Picker`](../picker.md) with the search field. In iOS, iPadOS, macOS, and tvOS, the picker appears below the search field when search is active. To ensure that the picker operates correctly, match the type of the scope binding with the type of each view’s tag. Then modify your search to account for the current value of the `scope` state property.
 
-For more information about using searchable modifiers, see [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
+For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 
 ## Parameters
 
 - `scope`: The active scope of the search field.
-- `scopes`: A content builder that represents the scoping options SwiftUI uses to populate a [`Picker`](picker.md).
+- `scopes`: A content builder that represents the scoping options SwiftUI uses to populate a [`Picker`](../picker.md).
 
 ## See Also
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+### Limiting search scope
+- [Scoping a search operation](../scoping-a-search-operation.md)
   Divide the search space into a few broad categories.
-- [func searchScopes<V, S>(Binding<V>, activation: SearchScopeActivation, () -> S) -> some View](view/searchscopes(_:activation:_:).md)
+- [func searchScopes<V, S>(Binding<V>, activation: SearchScopeActivation, () -> S) -> some View](./searchscopes%28_,activation,_%29.md)
   Configures the search scopes for this view with the specified activation strategy.
-- [struct SearchScopeActivation](searchscopeactivation.md)
+- [struct SearchScopeActivation](../searchscopeactivation.md)
   The ways that searchable modifiers can show or hide search scopes.
 
 

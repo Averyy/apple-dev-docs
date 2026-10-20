@@ -1,7 +1,8 @@
 # CKShare.Participant.Role
 
 **Framework**: CloudKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the role for a participant.
 
@@ -11,9 +12,11 @@ A type that represents the role for a participant.
 - Mac Catalyst 13.1+ - Deprecated
 - macOS 10.14+ - Deprecated
 - tvOS 12.0+ - Deprecated
-- visionOS ?+ - Deprecated
+- visionOS - Deprecated
 - watchOS 5.0+ - Deprecated
 - Swift 4.2+
+
+> **Deprecated**: renamed to CKShare.ParticipantRole
 
 ## Declaration
 
@@ -23,15 +26,16 @@ typealias Role = CKShare.ParticipantRole
 
 ## See Also
 
-- [var permission: CKShare.ParticipantPermission](ckshare/participant/permission-swift.property.md)
+### Managing the Participant’s Capabilites
+- [var permission: CKShare.ParticipantPermission](./permission-swift.property.md)
   The participant’s permission level for the share.
-- [CKShare.Participant.Permission](ckshare/participant/permission-swift.typealias.md)
+- [CKShare.Participant.Permission](./permission-swift.typealias.md)
   A type that represents the permissions for a participant.
-- [CKShare.ParticipantPermission](ckshare/participantpermission.md)
+- [CKShare.ParticipantPermission](../participantpermission.md)
   Constants that represent the permissions to grant to a share participant.
-- [var role: CKShare.ParticipantRole](ckshare/participant/role-swift.property.md)
+- [var role: CKShare.ParticipantRole](./role-swift.property.md)
   The participant’s role for the share.
-- [CKShare.ParticipantRole](ckshare/participantrole.md)
+- [CKShare.ParticipantRole](../participantrole.md)
   Constants that represent the role of a share’s participant.
 
 

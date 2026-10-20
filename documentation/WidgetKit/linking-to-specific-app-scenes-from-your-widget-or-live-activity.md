@@ -1,6 +1,7 @@
 # Linking to specific app scenes from your widget or Live Activity
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
 
@@ -10,13 +11,13 @@ People interact with a widget or Live Activity to launch a scene in the correspo
 
 When you create widgets and Live Activities, think about how people interact with them. Make sure interactions launch the scene in your app that fits the widget’s content or the Live Activity.
 
-##### Launch a Specific Screen in Your App
+##### Launch a specific screen in your app
 
-By default, tapping or clicking your widget or Live Activity opens its corresponding app. To provide a good experience and not make people navigate to get to the right place in your app, open the app at a scene that matches the content of the widget or Live Activity. To open a specific screen in your app, add the [`widgetURL(_:)`](https://developer.apple.com/documentation/swiftui/view/widgeturl(_:)) modifier to a view in the view hierarchy of your widget or Live Activity.
+By default, tapping or clicking your widget or Live Activity opens its corresponding app. To provide a good experience and not make people navigate to get to the right place in your app, open the app at a scene that matches the content of the widget or Live Activity. To open a specific screen in your app, add the [`widgetURL(_:)`](../SwiftUI/view/widgeturl%28_%29.md) modifier to a view in the view hierarchy of your widget or Live Activity.
 
 > ❗ **Important**: If the view hierarchy includes more than one `widgetURL` modifier, the behavior is undefined.
 
-For example, the following code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how the small widget uses `widgetURL(_:)` to allow people to open the app and show a character’s detail information:
+For example, the following code snippet from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how the small widget uses `widgetURL(_:)` to allow people to open the app and show a character’s detail information:
 
 ```swift
 struct EmojiRangerWidgetEntryView: View {
@@ -38,30 +39,31 @@ struct EmojiRangerWidgetEntryView: View {
 }
 ```
 
-For widgets with enough space for more than one interaction target — [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrectangular.md), [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md), and larger system family sizes — add one or more [`Link`](https://developer.apple.com/documentation/swiftui/link) controls to your view hierarchy. You can use one `widgetURL` and additional `Link` controls. If an interaction targets a `Link` control, the system uses the URL in that control. For interactions anywhere else in the widget, the system uses the URL you specify in the `widgetURL(_:)` view modifier.
+For widgets with enough space for more than one interaction target — [`WidgetFamily.accessoryRectangular`](./widgetfamily/accessoryrectangular.md), [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md), and larger system family sizes — add one or more [`Link`](../SwiftUI/link.md) controls to your view hierarchy. You can use one `widgetURL` and additional `Link` controls. If an interaction targets a `Link` control, the system uses the URL in that control. For interactions anywhere else in the widget, the system uses the URL you specify in the `widgetURL(_:)` view modifier.
 
-For example, the leaderboard widget of the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app displays a list of characters. Each item in the list uses a `Link` control to launch the scene in the app for the specific character that the item represents.
+For example, the leaderboard widget of the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app displays a list of characters. Each item in the list uses a `Link` control to launch the scene in the app for the specific character that the item represents.
 
-> **Note**: When the widget or Live Activity receives an interaction, the system activates the containing app and passes the URL to [`onOpenURL(perform:)`](https://developer.apple.com/documentation/swiftui/view/onopenurl(perform:)), [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:)), or [`application(_:open:)`](https://developer.apple.com/documentation/appkit/nsapplicationdelegate/application(_:open:)), depending on the life cycle your app uses.
+> **Note**: When the widget or Live Activity receives an interaction, the system activates the containing app and passes the URL to [`onOpenURL(perform:)`](../SwiftUI/view/onopenurl%28perform%29.md), [`application(_:open:options:)`](../UIKit/uiapplicationdelegate/application%28_,open,options%29.md), or [`application(_:open:)`](../AppKit/nsapplicationdelegate/application%28_,open%29.md), depending on the life cycle your app uses.
 
-##### Detect the Originating Widget By Accessing the User Activity Object
+##### Detect the originating widget by accessing the user activity object
 
-If a widget doesn’t specify a deep link URL with [`widgetURL(_:)`](https://developer.apple.com/documentation/swiftui/view/widgeturl(_:)) or [`Link`](https://developer.apple.com/documentation/swiftui/link) and a person interacts with it, the system opens the containing app and passes an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) to [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)), [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:continue:restorationhandler:)), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/appkit/nsapplicationdelegate/application(_:continue:restorationhandler:)). The user activity’s `userInfo` dictionary contains details about the widget the person interacted with. Use the keys in [`WidgetCenter.UserInfoKey`](widgetcenter/userinfokey.md) to access these values from Swift code. To access the `userInfo` values from Objective-C, use the keys `WGWidgetUserInfoKeyKind` and `WGWidgetUserInfoKeyFamily` instead. Then, update your app’s interface to match the widget so people don’t have to navigate to the right place in your app.
+If a widget doesn’t specify a deep link URL with [`widgetURL(_:)`](../SwiftUI/view/widgeturl%28_%29.md) or [`Link`](../SwiftUI/link.md) and a person interacts with it, the system opens the containing app and passes an [`NSUserActivity`](../Foundation/nsuseractivity.md) to [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md), [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md), or [`application(_:continue:restorationHandler:)`](../AppKit/nsapplicationdelegate/application%28_,continue,restorationhandler%29.md). The user activity’s `userInfo` dictionary contains details about the widget the person interacted with. Use the keys in [`WidgetCenter.UserInfoKey`](./widgetcenter/userinfokey.md) to access these values from Swift code. To access the `userInfo` values from Objective-C, use the keys `WGWidgetUserInfoKeyKind` and `WGWidgetUserInfoKeyFamily` instead. Then, update your app’s interface to match the widget so people don’t have to navigate to the right place in your app.
 
-> **Note**: If you use an [`AppIntentConfiguration`](appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/widgetconfigurationintent(of:)) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](intentconfiguration.md), the user activity’s [`interaction`](https://developer.apple.com/documentation/foundation/nsuseractivity/interaction) property contains the associated [`INIntent`](https://developer.apple.com/documentation/intents/inintent).
+> **Note**: If you use an [`AppIntentConfiguration`](./appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](../Foundation/nsuseractivity/widgetconfigurationintent%28of%29.md) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](./intentconfiguration.md), the user activity’s [`interaction`](../Foundation/nsuseractivity/interaction.md) property contains the associated [`INIntent`](https://developer.apple.com/documentation/intents/inintent).
 
-##### Review Linking Behavior in Carplay
+##### Review linking behavior in CarPlay
 
-In CarPlay, linking from your widget to your app works differently to match the specific context of using your app while using your car. For more information about supporting CarPlay, see [`Adding StandBy and CarPlay support to your widget`](adding-standby-and-carplay-support-to-your-widget.md).
+In CarPlay, linking from your widget to your app works differently to match the specific context of using your app while using your car. For more information about supporting CarPlay, see [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md).
 
 ## See Also
 
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
+### Interactivity
+- [Adding interactivity to widgets and Live Activities](./adding-interactivity-to-widgets-and-live-activities.md)
   Include buttons or toggles in a widget or Live Activity to offer app functionality without launching the app.
-- [Animating data updates in widgets and Live Activities](animating-data-updates-in-widgets-and-live-activities.md)
+- [Animating data updates in widgets and Live Activities](./animating-data-updates-in-widgets-and-live-activities.md)
   Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
 - [func widgetURL(URL?) -> some View
-](../swiftui/view/widgeturl(_:).md)
+](../SwiftUI/view/widgeturl%28_%29.md)
   Sets the URL to open in the containing app when the user clicks the widget.
 
 

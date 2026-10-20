@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](mlcomputepolicy/description.md)
+- [var description: String](./description.md)
   A textual representation of the compute policy.
 
 

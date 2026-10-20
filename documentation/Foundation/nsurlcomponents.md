@@ -1,7 +1,8 @@
 # NSURLComponents
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that parses URLs into and constructs URLs from their constituent parts.
 
@@ -20,104 +21,108 @@ An object that parses URLs into and constructs URLs from their constituent parts
 class NSURLComponents
 ```
 
+```objc
+@interface NSURLComponents : NSObject
+```
+
 #### Overview
 
-In Swift, this object bridges to [`URLComponents`](urlcomponents.md); use [`NSURLComponents`](nsurlcomponents.md) when you need reference semantics or other Foundation-specific behavior.
+In Swift, this object bridges to [`URLComponents`](./urlcomponents.md); use [`NSURLComponents`](./nsurlcomponents.md) when you need reference semantics or other Foundation-specific behavior.
 
-The [`NSURLComponents`](nsurlcomponents.md) class is a class that is designed to parse URLs based on [`RFC 3986`](https://developer.apple.comhttp://www.ietf.org/rfc/rfc3986.txt) and to construct URLs from their constituent parts. Its behavior differs subtly from the [`NSURL`](nsurl.md) class, which conforms to older RFCs. However, you can easily obtain an [`NSURL`](nsurl.md) object based on the contents of a URL components object or vice versa.
+The [`NSURLComponents`](./nsurlcomponents.md) class is a class that is designed to parse URLs based on [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) and to construct URLs from their constituent parts. Its behavior differs subtly from the [`NSURL`](./nsurl.md) class, which conforms to older RFCs. However, you can easily obtain an [`NSURL`](./nsurl.md) object based on the contents of a URL components object or vice versa.
 
-You create a URL components object in one of three ways: from an [`NSString`](nsstring.md) object that contains a URL, from an [`NSURL`](nsurl.md) object, or from scratch by using the default initializer. From there, you can modify the URL’s individual components and subcomponents by modifying various properties, either in unencoded form or in URL-encoded form. If you set the unencoded property, you can then obtain the encoded equivalent by reading the encoded property value and vice versa.
+You create a URL components object in one of three ways: from an [`NSString`](./nsstring.md) object that contains a URL, from an [`NSURL`](./nsurl.md) object, or from scratch by using the default initializer. From there, you can modify the URL’s individual components and subcomponents by modifying various properties, either in unencoded form or in URL-encoded form. If you set the unencoded property, you can then obtain the encoded equivalent by reading the encoded property value and vice versa.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLComponents`](urlcomponents.md) structure, which bridges to the [`NSURLComponents`](nsurlcomponents.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLComponents`](./urlcomponents.md) structure, which bridges to the [`NSURLComponents`](./nsurlcomponents.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
 ## Topics
 
 ### Creating URL components
-- [init()](nsurlcomponents/init.md)
+- [init()](./nsurlcomponents/init%28%29.md)
   Creates a URL components object with all components left undefined.
-- [init?(string: String)](nsurlcomponents/init(string:).md)
+- [init?(string: String)](./nsurlcomponents/init%28string%29.md)
   Creates a URL components object by parsing a URL in string form.
-- [init?(string: String, encodingInvalidCharacters: Bool)](nsurlcomponents/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./nsurlcomponents/init%28string,encodinginvalidcharacters%29.md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](./nsurlcomponents/init%28url,resolvingagainstbaseurl%29-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
 ### Getting the URL
-- [var string: String?](nsurlcomponents/string.md)
+- [var string: String?](./nsurlcomponents/string.md)
   A URL derived from the components object, in string form.
-- [var url: URL?](nsurlcomponents/url.md)
+- [var url: URL?](./nsurlcomponents/url.md)
   A URL object derived from the components object.
-- [func url(relativeTo: URL?) -> URL?](nsurlcomponents/url(relativeto:).md)
+- [func url(relativeTo: URL?) -> URL?](./nsurlcomponents/url%28relativeto%29.md)
   Returns a URL object derived from the components object.
 ### Accessing components in native format
-- [var fragment: String?](nsurlcomponents/fragment.md)
+- [var fragment: String?](./nsurlcomponents/fragment.md)
   The fragment URL component (the part after a `#` symbol), or nil if not present.
-- [var host: String?](nsurlcomponents/host.md)
+- [var host: String?](./nsurlcomponents/host.md)
   The host URL subcomponent, or nil if not present.
-- [var encodedHost: String?](nsurlcomponents/encodedhost.md)
+- [var encodedHost: String?](./nsurlcomponents/encodedhost.md)
   The host subcomponent, percent-encoded.
-- [var password: String?](nsurlcomponents/password.md)
+- [var password: String?](./nsurlcomponents/password.md)
   The password URL subcomponent, or nil if not present.
-- [var path: String?](nsurlcomponents/path.md)
+- [var path: String?](./nsurlcomponents/path.md)
   The path URL component, or nil if not present.
-- [var port: NSNumber?](nsurlcomponents/port.md)
+- [var port: NSNumber?](./nsurlcomponents/port.md)
   The port number URL component, or nil if not present.
-- [var query: String?](nsurlcomponents/query.md)
+- [var query: String?](./nsurlcomponents/query.md)
   The query URL component as a string, or nil if not present.
-- [var queryItems: [URLQueryItem]?](nsurlcomponents/queryitems.md)
+- [var queryItems: [URLQueryItem]?](./nsurlcomponents/queryitems.md)
   The query URL component as an array of name/value pairs.
-- [var scheme: String?](nsurlcomponents/scheme.md)
+- [var scheme: String?](./nsurlcomponents/scheme.md)
   The scheme URL component, or nil if not present.
-- [var user: String?](nsurlcomponents/user.md)
+- [var user: String?](./nsurlcomponents/user.md)
   The username URL subcomponent, or nil if not present.
 ### Accessing components in URL-encoded format
-- [var percentEncodedFragment: String?](nsurlcomponents/percentencodedfragment.md)
+- [var percentEncodedFragment: String?](./nsurlcomponents/percentencodedfragment.md)
   The fragment URL component (the part after a `#` symbol) expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedHost: String?](nsurlcomponents/percentencodedhost.md)
+- [var percentEncodedHost: String?](./nsurlcomponents/percentencodedhost.md)
   The host URL subcomponent expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedPassword: String?](nsurlcomponents/percentencodedpassword.md)
+- [var percentEncodedPassword: String?](./nsurlcomponents/percentencodedpassword.md)
   The password URL subcomponent expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedPath: String?](nsurlcomponents/percentencodedpath.md)
+- [var percentEncodedPath: String?](./nsurlcomponents/percentencodedpath.md)
   The path URL component expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedQuery: String?](nsurlcomponents/percentencodedquery.md)
+- [var percentEncodedQuery: String?](./nsurlcomponents/percentencodedquery.md)
   The query URL component expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedUser: String?](nsurlcomponents/percentencodeduser.md)
+- [var percentEncodedUser: String?](./nsurlcomponents/percentencodeduser.md)
   The username URL subcomponent expressed as a URL-encoded string, or `nil` if not present.
 ### Locating components in the URL string representation
-- [var percentEncodedQueryItems: [URLQueryItem]?](nsurlcomponents/percentencodedqueryitems.md)
-- [var rangeOfFragment: NSRange](nsurlcomponents/rangeoffragment.md)
+- [var percentEncodedQueryItems: [URLQueryItem]?](./nsurlcomponents/percentencodedqueryitems.md)
+- [var rangeOfFragment: NSRange](./nsurlcomponents/rangeoffragment.md)
   Returns the character range of the fragment in the string returned by the string property.
-- [var rangeOfHost: NSRange](nsurlcomponents/rangeofhost.md)
+- [var rangeOfHost: NSRange](./nsurlcomponents/rangeofhost.md)
   Returns the character range of the host in the string returned by the string property.
-- [var rangeOfPassword: NSRange](nsurlcomponents/rangeofpassword.md)
+- [var rangeOfPassword: NSRange](./nsurlcomponents/rangeofpassword.md)
   Returns the character range of the password in the string returned by the string property.
-- [var rangeOfPath: NSRange](nsurlcomponents/rangeofpath.md)
+- [var rangeOfPath: NSRange](./nsurlcomponents/rangeofpath.md)
   Returns the character range of the path in the string returned by the string property.
-- [var rangeOfPort: NSRange](nsurlcomponents/rangeofport.md)
+- [var rangeOfPort: NSRange](./nsurlcomponents/rangeofport.md)
   Returns the character range of the port in the string returned by the string property.
-- [var rangeOfQuery: NSRange](nsurlcomponents/rangeofquery.md)
+- [var rangeOfQuery: NSRange](./nsurlcomponents/rangeofquery.md)
   Returns the character range of the query in the string returned by the string property.
-- [var rangeOfScheme: NSRange](nsurlcomponents/rangeofscheme.md)
+- [var rangeOfScheme: NSRange](./nsurlcomponents/rangeofscheme.md)
   Returns the character range of the scheme in the string returned by the string property.
-- [var rangeOfUser: NSRange](nsurlcomponents/rangeofuser.md)
+- [var rangeOfUser: NSRange](./nsurlcomponents/rangeofuser.md)
   Returns the character range of the user in the string returned by the string property.
 ### Initializers
-- [init?(URL: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-5k5ld.md)
-- [convenience init?(URL: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-6mpr5.md)
+- [init?(URL: URL, resolvingAgainstBaseURL: Bool)](./nsurlcomponents/init%28url,resolvingagainstbaseurl%29-5k5ld.md)
+- [convenience init?(URL: URL, resolvingAgainstBaseURL: Bool)](./nsurlcomponents/init%28url,resolvingagainstbaseurl%29-6mpr5.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

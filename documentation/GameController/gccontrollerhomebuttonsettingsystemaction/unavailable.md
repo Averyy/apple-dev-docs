@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingSystemAction.unavailable
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The setting value could not be retrieved.
 
@@ -16,6 +17,10 @@ The setting value could not be retrieved.
 
 ```swift
 case unavailable
+```
+
+```c
+GCControllerHomeButtonSettingSystemActionUnavailable
 ```
 
 #### Discussion

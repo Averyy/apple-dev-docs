@@ -1,7 +1,8 @@
 # mcfail
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of times m_copym failed.
 
@@ -10,43 +11,44 @@ Number of times m_copym failed.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t mcfail;
 ```
 
 ## See Also
 
-- [mbufs](mbuf_stat/1535703-mbufs.md)
+### Fields
+- [mbufs](./api-1535703-mbufs.md)
   Number of mbufs (free or otherwise).
-- [clusters](mbuf_stat/1535704-clusters.md)
+- [clusters](./api-1535704-clusters.md)
   Number of clusters (free or otherwise).
-- [clfree](mbuf_stat/1535715-clfree.md)
+- [clfree](./api-1535715-clfree.md)
   Number of free clusters.
-- [drops](mbuf_stat/1535754-drops.md)
+- [drops](./api-1535754-drops.md)
   Number of times allocation failed.
-- [wait](mbuf_stat/1535798-wait.md)
+- [wait](./api-1535798-wait.md)
   Number of times allocation blocked.
-- [drain](mbuf_stat/1535647-drain.md)
+- [drain](./api-1535647-drain.md)
   Number of times protocol drain functions were called.
-- [mtypes](mbuf_stat/1535632-mtypes.md)
+- [mtypes](./api-1535632-mtypes.md)
   An array of counts of each type of mbuf allocated.
-- [mpfail](mbuf_stat/1535668-mpfail.md)
+- [mpfail](./api-1535668-mpfail.md)
   Number of times m_pullup failed.
-- [msize](mbuf_stat/1535673-msize.md)
+- [msize](./api-1535673-msize.md)
   Length of an mbuf.
-- [mclbytes](mbuf_stat/1535727-mclbytes.md)
+- [mclbytes](./api-1535727-mclbytes.md)
   Length of an mbuf cluster.
-- [minclsize](mbuf_stat/1535802-minclsize.md)
+- [minclsize](./api-1535802-minclsize.md)
   Minimum length of data to allocate a cluster. Anything smaller than this should be placed in chained mbufs.
-- [mlen](mbuf_stat/1535678-mlen.md)
+- [mlen](./api-1535678-mlen.md)
   Length of data in an mbuf.
-- [mhlen](mbuf_stat/1535691-mhlen.md)
+- [mhlen](./api-1535691-mhlen.md)
   Length of data in an mbuf with a packet header.
-- [bigclusters](mbuf_stat/1535797-bigclusters.md)
+- [bigclusters](./api-1535797-bigclusters.md)
   Number of big clusters.
-- [bigclfree](mbuf_stat/1535733-bigclfree.md)
+- [bigclfree](./api-1535733-bigclfree.md)
   Number of unused big clusters.
-- [bigmclbytes](mbuf_stat/1535618-bigmclbytes.md)
+- [bigmclbytes](./api-1535618-bigmclbytes.md)
   Length of a big mbuf cluster.
 
 

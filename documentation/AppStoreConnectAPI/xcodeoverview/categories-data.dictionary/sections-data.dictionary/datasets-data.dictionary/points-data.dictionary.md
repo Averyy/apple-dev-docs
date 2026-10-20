@@ -1,21 +1,22 @@
 # xcodeOverview.Categories.Sections.Datasets.Points
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object xcodeOverview.Categories.Sections.Datasets.Points
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object xcodeOverview.Categories.Sections.Datasets.Points.PercentageBreakdown](xcodeoverview/categories-data.dictionary/sections-data.dictionary/datasets-data.dictionary/points-data.dictionary/percentagebreakdown-data.dictionary.md)
+- [object xcodeOverview.Categories.Sections.Datasets.Points.PercentageBreakdown](./points-data.dictionary/percentagebreakdown-data.dictionary.md)
 
 ## Properties
 

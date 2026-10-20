@@ -1,7 +1,8 @@
 # AudioServicesGetProperty(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets a specified System Sound Services property value.
 
@@ -19,39 +20,44 @@ Gets a specified System Sound Services property value.
 func AudioServicesGetProperty(_ inPropertyID: AudioServicesPropertyID, _ inSpecifierSize: UInt32, _ inSpecifier: UnsafeRawPointer?, _ ioPropertyDataSize: UnsafeMutablePointer<UInt32>, _ outPropertyData: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioServicesGetProperty(AudioServicesPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *ioPropertyDataSize, void *outPropertyData);
+```
+
 #### Return Value
 
 A result code.
 
 #### Discussion
 
-System Sound Services properties are listed and described in [`System Sound Services Property Identifiers`](1405268-system-sound-services-property-i.md).
+System Sound Services properties are listed and described in [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md).
 
 ##### Special Considerations
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 
-If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [`Memory Management Programming Guide for Core Foundation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
+If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
 
 ## Parameters
 
 - `inPropertyID`: The property whose value you want.
 - `inSpecifierSize`: The size of the buffer pointed to by the `inSpecifier` parameter. Pass `0` if no specifier buffer is required.
 - `inSpecifier`: A pointer to a specifier buffer, if such a buffer is required by the property about which you want information. Pass `NULL` if no specifier is required.
-- `ioPropertyDataSize`: On input, the size, in bytes, of the buffer pointed to by the `outPropertyData` parameter. Call the [`AudioServicesGetPropertyInfo(_:_:_:_:_:)`](audioservicesgetpropertyinfo(_:_:_:_:_:).md) function to find out the size required for this buffer. On output, the number of bytes written to the buffer.
+- `ioPropertyDataSize`: On input, the size, in bytes, of the buffer pointed to by the `outPropertyData` parameter. Call the [`AudioServicesGetPropertyInfo(_:_:_:_:_:)`](./audioservicesgetpropertyinfo%28_,_,_,_,_%29.md) function to find out the size required for this buffer. On output, the number of bytes written to the buffer.
 - `outPropertyData`: On output, the property value.
 
 ## See Also
 
-- [func AudioServicesGetPropertyInfo(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](audioservicesgetpropertyinfo(_:_:_:_:_:).md)
+### Managing System Sound Services Properties
+- [func AudioServicesGetPropertyInfo(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./audioservicesgetpropertyinfo%28_,_,_,_,_%29.md)
   Gets information about a System Sound Services property.
-- [func AudioServicesSetProperty(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UInt32, UnsafeRawPointer) -> OSStatus](audioservicessetproperty(_:_:_:_:_:).md)
+- [func AudioServicesSetProperty(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UInt32, UnsafeRawPointer) -> OSStatus](./audioservicessetproperty%28_,_,_,_,_%29.md)
   Sets the value for a specified System Sound Services property.
-- [typealias AudioServicesPropertyID](audioservicespropertyid.md)
+- [typealias AudioServicesPropertyID](./audioservicespropertyid.md)
   The data type for a system sound property identifier.
-- [System Sound Services Property Identifiers](1405268-system-sound-services-property-i.md)
+- [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md)
   Property identifiers used when playing alerts with System Sound Services.
-- [Audio Hardware Services Properties](1405208-audio-hardware-services-properti.md)
+- [Audio Hardware Services Properties](./api-1405208-audio-hardware-services-properti.md)
   Property identifiers that apply to HAL audio objects only when accessed via the Audio Hardware Services.
 
 

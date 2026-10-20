@@ -1,7 +1,8 @@
 # init(_:symbolName:numberOfIndexes:localizedTitleTransform:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control to pick a value from the specified number of indices.
 
@@ -18,6 +19,10 @@ Creates a control to pick a value from the specified number of indices.
 init(_ localizedTitle: String, symbolName: String, numberOfIndexes: Int, localizedTitleTransform: (Int) -> String)
 ```
 
+```objc
+- (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName numberOfIndexes:(NSInteger) numberOfIndexes localizedTitleTransform:(NSString * (^)(NSInteger index)) localizedTitleTransform;
+```
+
 #### Discussion
 
 Create a picker with this initializer if your app requires specifying a title for each value lazily.
@@ -31,9 +36,10 @@ Create a picker with this initializer if your app requires specifying a title fo
 
 ## See Also
 
-- [init(String, symbolName: String, numberOfIndexes: Int)](avcaptureindexpicker/init(_:symbolname:numberofindexes:).md)
+### Creating an index picker
+- [init(String, symbolName: String, numberOfIndexes: Int)](./init%28_,symbolname,numberofindexes%29.md)
   Creates a control to pick a value from the specified number of indexes.
-- [init(String, symbolName: String, localizedIndexTitles: [String])](avcaptureindexpicker/init(_:symbolname:localizedindextitles:).md)
+- [init(String, symbolName: String, localizedIndexTitles: [String])](./init%28_,symbolname,localizedindextitles%29.md)
   Creates an object to select an index from a set of values.
 
 

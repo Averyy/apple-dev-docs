@@ -1,7 +1,8 @@
 # topLabels(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the most likely labels in the classification set.
 
@@ -30,7 +31,8 @@ The labels with the highest probabilities.
 
 ## See Also
 
-- [func map<T>((Classification<Label>) throws -> Classification<T>) rethrows -> ClassificationDistribution<T>](classificationdistribution/map(_:).md)
+### Labeling and mapping
+- [func map<T>((Classification<Label>) throws -> Classification<T>) rethrows -> ClassificationDistribution<T>](./map%28_%29.md)
   Creates a new classification distribution by applying a transformation to every element.
 
 

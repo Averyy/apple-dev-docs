@@ -1,7 +1,8 @@
 # init(payloadType:onPaste:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that accepts values of the specified type.
 
@@ -26,7 +27,8 @@ init<T>(payloadType: T.Type, onPaste: @escaping ([T]) -> Void) where T : Transfe
 
 ## See Also
 
-- [init(supportedContentTypes: [UTType], payloadAction: ([NSItemProvider]) -> Void)](pastebutton/init(supportedcontenttypes:payloadaction:).md)
+### Creating a paste button
+- [init(supportedContentTypes: [UTType], payloadAction: ([NSItemProvider]) -> Void)](./init%28supportedcontenttypes,payloadaction%29.md)
   Creates a Paste button that accepts specific types of data from the pasteboard.
 
 

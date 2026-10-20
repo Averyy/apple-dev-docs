@@ -1,7 +1,8 @@
 # url
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the webpage this item represents.
 
@@ -18,9 +19,14 @@ The URL of the webpage this item represents.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var title: String?](wkbackforwardlistitem/title.md)
+### Getting the Page-Specific Information
+- [var title: String?](./title.md)
   The title of the webpage this item represents.
 
 

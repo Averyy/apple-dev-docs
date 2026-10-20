@@ -1,7 +1,8 @@
 # contentsScale
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor applied to the layer.
 
@@ -19,6 +20,10 @@ The scale factor applied to the layer.
 var contentsScale: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat contentsScale;
+```
+
 #### Discussion
 
 This value defines the mapping between the logical coordinate space of the layer (measured in points) and the physical coordinate space (measured in pixels). Higher scale factors indicate that each point in the layer is represented by more than one pixel at render time. For example, if the scale factor is `2.0` and the layer’s bounds are 50 x 50 points, the size of the bitmap used to present the layer’s content is 100 x 100 pixels.
@@ -27,17 +32,18 @@ The default value of this property is 1.0. For layers attached to a view, the vi
 
 ## See Also
 
-- [var frame: CGRect](calayer/frame.md)
+### Modifying the layer geometry
+- [var frame: CGRect](./frame.md)
   The layer’s frame rectangle.
-- [var bounds: CGRect](calayer/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The layer’s bounds rectangle. Animatable.
-- [var position: CGPoint](calayer/position.md)
+- [var position: CGPoint](./position.md)
   The layer’s position in its superlayer’s coordinate space. Animatable.
-- [var zPosition: CGFloat](calayer/zposition.md)
+- [var zPosition: CGFloat](./zposition.md)
   The layer’s position on the z axis. Animatable.
-- [var anchorPointZ: CGFloat](calayer/anchorpointz.md)
+- [var anchorPointZ: CGFloat](./anchorpointz.md)
   The anchor point for the layer’s position along the z axis. Animatable.
-- [var anchorPoint: CGPoint](calayer/anchorpoint.md)
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   Defines the anchor point of the layer’s bounds rectangle. Animatable.
 
 

@@ -1,7 +1,8 @@
 # outputColorAttachments
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the color-related Core Video image buffer keys and values that become attachments to the output pixel buffers.
 
@@ -14,17 +15,22 @@ Returns the color-related Core Video image buffer keys and values that become at
 optional var outputColorAttachments: [String : Any] { get }
 ```
 
+```objc
+@property (readonly) NSDictionary<NSString *,id> * outputColorAttachments;
+```
+
 #### Discussion
 
-This is an optional property. Only color-related keys from [`Image Buffer Attachment Keys`](https://developer.apple.com/documentation/corevideo/image-buffer-attachment-keys) are permitted in the returned dictionary.
+This is an optional property. Only color-related keys from [Image Buffer Attachment Keys](../../CoreVideo/image-buffer-attachment-keys.md) are permitted in the returned dictionary.
 
 ## See Also
 
-- [var metalDeviceRegistryID: UInt64](merawprocessor/metaldeviceregistryid.md)
+### Inspecting a RAW processor
+- [var metalDeviceRegistryID: UInt64](./metaldeviceregistryid.md)
   Requests the processor use the provided Metal device for processing.
-- [var processingParameters: [MERAWProcessingParameter]](merawprocessor/processingparameters.md)
+- [var processingParameters: [MERAWProcessingParameter]](./processingparameters.md)
   Provides a list of processing parameters that can be changed by the client of Video Toolbox session to influence processing behavior.
-- [var isReadyForMoreMediaData: Bool](merawprocessor/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   Indicates the readiness of the processor to accept more sample buffers.
 
 

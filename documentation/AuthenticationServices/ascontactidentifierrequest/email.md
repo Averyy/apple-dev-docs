@@ -1,7 +1,8 @@
 # ASContactIdentifierRequest.email
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the app accepts an email address as the contact identifier for the new account.
 

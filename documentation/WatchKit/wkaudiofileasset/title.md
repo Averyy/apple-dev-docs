@@ -1,17 +1,22 @@
 # title
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title information for the audio file.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 var title: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * title;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ If you do not set the title directly at initialization time, the asset object ob
 
 ## See Also
 
-- [var url: URL](wkaudiofileasset/url.md)
+### Getting the Asset’s Properties
+- [var url: URL](./url.md)
   The URL of the audio file.
-- [var duration: TimeInterval](wkaudiofileasset/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration (in seconds) of the audio file.
-- [var albumTitle: String?](wkaudiofileasset/albumtitle.md)
+- [var albumTitle: String?](./albumtitle.md)
   The album title information for the audio file.
-- [var artist: String?](wkaudiofileasset/artist.md)
+- [var artist: String?](./artist.md)
   The artist information for the audio file.
 
 

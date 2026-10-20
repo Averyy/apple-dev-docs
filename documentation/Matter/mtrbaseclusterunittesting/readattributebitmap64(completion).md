@@ -1,7 +1,8 @@
 # readAttributeBitmap64(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBitmap64(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBitmap64() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBitmap64WithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

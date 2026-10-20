@@ -1,7 +1,8 @@
 # GL_PALETTE4_RGBA4_OES
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_PALETTE4_RGBA4_OES: Int32 { get }
+```
+
+```c
+#define GL_PALETTE4_RGBA4_OES
 ```
 
 

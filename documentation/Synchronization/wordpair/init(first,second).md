@@ -1,7 +1,8 @@
 # init(first:second:)
 
 **Framework**: Synchronization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new `WordPair` value given both individual words.
 

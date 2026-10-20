@@ -1,7 +1,8 @@
 # CPMapTemplate.PanDirection
 
 **Framework**: CarPlay  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The directions a user can pan (or move) a map displayed on the CarPlay screen.
 
@@ -16,52 +17,57 @@ The directions a user can pan (or move) a map displayed on the CarPlay screen.
 struct PanDirection
 ```
 
+```c
+enum CPPanDirection : NSInteger;
+```
+
 ## Topics
 
 ### Pan Directions
-- [static var down: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/down.md)
+- [static var down: CPMapTemplate.PanDirection](./pandirection/down.md)
   The user panned the map downward.
-- [static var left: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/left.md)
+- [static var left: CPMapTemplate.PanDirection](./pandirection/left.md)
   The user panned the map to the left.
-- [static var right: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/right.md)
+- [static var right: CPMapTemplate.PanDirection](./pandirection/right.md)
   The user panned the map to the right.
-- [static var up: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/up.md)
+- [static var up: CPMapTemplate.PanDirection](./pandirection/up.md)
   The user panned the map upward.
 ### Initializers
-- [init(rawValue: Int)](cpmaptemplate/pandirection/init(rawvalue:).md)
+- [init(rawValue: Int)](./pandirection/init%28rawvalue%29.md)
   Initializes a pan direction using the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func mapTemplateDidShowPanningInterface(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidshowpanninginterface(_:).md)
+### Panning the Map
+- [func mapTemplateDidShowPanningInterface(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatedidshowpanninginterface%28_%29.md)
   Tells the delegate that the panning interface is visible on the map.
-- [func mapTemplateWillDismissPanningInterface(CPMapTemplate)](cpmaptemplatedelegate/maptemplatewilldismisspanninginterface(_:).md)
+- [func mapTemplateWillDismissPanningInterface(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatewilldismisspanninginterface%28_%29.md)
   Tells the delegate that the panning interface will disappear from the map.
-- [func mapTemplateDidDismissPanningInterface(CPMapTemplate)](cpmaptemplatedelegate/maptemplatediddismisspanninginterface(_:).md)
+- [func mapTemplateDidDismissPanningInterface(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatediddismisspanninginterface%28_%29.md)
   Tells the delegate that the panning interface is no longer visible on the map.
-- [func mapTemplateDidBeginPanGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginpangesture(_:).md)
+- [func mapTemplateDidBeginPanGesture(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatedidbeginpangesture%28_%29.md)
   Tells the delegate that the pan gesture has started.
-- [func mapTemplate(CPMapTemplate, panBeganWith: CPMapTemplate.PanDirection)](cpmaptemplatedelegate/maptemplate(_:panbeganwith:).md)
+- [func mapTemplate(CPMapTemplate, panBeganWith: CPMapTemplate.PanDirection)](../cpmaptemplatedelegate/maptemplate%28_,panbeganwith%29.md)
   Tells the delegate that the user is starting to pan the map.
-- [func mapTemplate(CPMapTemplate, panWith: CPMapTemplate.PanDirection)](cpmaptemplatedelegate/maptemplate(_:panwith:).md)
+- [func mapTemplate(CPMapTemplate, panWith: CPMapTemplate.PanDirection)](../cpmaptemplatedelegate/maptemplate%28_,panwith%29.md)
   Tells the delegate that the user is panning in a certain direction on the map.
-- [func mapTemplate(CPMapTemplate, panEndedWith: CPMapTemplate.PanDirection)](cpmaptemplatedelegate/maptemplate(_:panendedwith:).md)
+- [func mapTemplate(CPMapTemplate, panEndedWith: CPMapTemplate.PanDirection)](../cpmaptemplatedelegate/maptemplate%28_,panendedwith%29.md)
   Tells the delegate that the user stopped panning the map.
-- [func mapTemplate(CPMapTemplate, didEndPanGestureWithVelocity: CGPoint)](cpmaptemplatedelegate/maptemplate(_:didendpangesturewithvelocity:).md)
+- [func mapTemplate(CPMapTemplate, didEndPanGestureWithVelocity: CGPoint)](../cpmaptemplatedelegate/maptemplate%28_,didendpangesturewithvelocity%29.md)
   Tells the delegate that the pan gesture ended with the specified velocity.
-- [func mapTemplate(CPMapTemplate, didUpdatePanGestureWithTranslation: CGPoint, velocity: CGPoint)](cpmaptemplatedelegate/maptemplate(_:didupdatepangesturewithtranslation:velocity:).md)
+- [func mapTemplate(CPMapTemplate, didUpdatePanGestureWithTranslation: CGPoint, velocity: CGPoint)](../cpmaptemplatedelegate/maptemplate%28_,didupdatepangesturewithtranslation,velocity%29.md)
   Tells the delegate that the pan gesture changed.
 
 

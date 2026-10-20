@@ -1,14 +1,15 @@
 # fsid_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct fsid {
     ...
 } fsid_t;
@@ -17,7 +18,7 @@ typedef struct fsid {
 ## Topics
 
 ### Instance Properties
-- [val](fsid_t/1398077-val.md)
+- [val](./fsid_t/api-1398077-val.md)
 
 
 ---

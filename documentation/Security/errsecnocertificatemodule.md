@@ -1,7 +1,8 @@
 # errSecNoCertificateModule
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 There is no certificate module available.
 
@@ -18,6 +19,10 @@ There is no certificate module available.
 
 ```swift
 var errSecNoCertificateModule: OSStatus { get }
+```
+
+```c
+errSecNoCertificateModule
 ```
 
 

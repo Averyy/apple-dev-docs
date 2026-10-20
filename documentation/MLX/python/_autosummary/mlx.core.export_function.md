@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.export_function
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.export_function.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.export_function
-
- Table of contents 
-
-## Contents
-
-# mlx.core.export_function
-
 **export_function(*file_or_callback: str | Callable*, *fun: Callable*, **args*, *shapeless: bool = False*, *metadata: str | None = None*, ***kwargs*) → [None](https://docs.python.org/3/builtins/constants.html#None)**
 : Export an MLX function.
 Example input arrays must be provided to export a function. The example
@@ -49,26 +22,27 @@ Parameters:
 **file_or_callback** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)* or **Callable*) – Either a file path to export
 the function to or a callback.
 **fun** (*Callable*) – A function which takes as input zero or more
-[array](mlx.core.array.html#mlx.core.array) and returns one or more [array](mlx.core.array.html#mlx.core.array).
-***args** ([array](mlx.core.array.html#mlx.core.array)) – Example array inputs to the function.
+[array](mlx.core.array.md#mlx.core.array) and returns one or more [array](mlx.core.array.md#mlx.core.array).
+***args** ([array](mlx.core.array.md#mlx.core.array)) – Example array inputs to the function.
 **shapeless** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether or not the function allows
 inputs with variable shapes. Default: `False`.
 **metadata** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – A string to save alongside the
 function, for example a JSON encoded model configuration. Only
 supported when exporting to a file. Read it back with
-[import_function()](mlx.core.import_function.html#mlx.core.import_function). Default: `None`.
-****kwargs** ([array](mlx.core.array.html#mlx.core.array)) – Additional example keyword array inputs to the
+[import_function()](mlx.core.import_function.md#mlx.core.import_function). Default: `None`.
+****kwargs** ([array](mlx.core.array.md#mlx.core.array)) – Additional example keyword array inputs to the
 function.
 
 Raises:
 [ValueError](https://docs.python.org/3/builtins/exceptions.html#ValueError) – If `metadata` is given when exporting with a callback.
 
 Example
-def fun(x, y):
-    return x + y
 
-x = mx.array(1)
-y = mx.array([1, 2, 3])
-mx.export_function("fun.mlxfn", fun, x, y=y)
+  ```
+  def fun(x, y):
+      return x + y
 
-** Contents
+  x = mx.array(1)
+  y = mx.array([1, 2, 3])
+  mx.export_function("fun.mlxfn", fun, x, y=y)
+  ```

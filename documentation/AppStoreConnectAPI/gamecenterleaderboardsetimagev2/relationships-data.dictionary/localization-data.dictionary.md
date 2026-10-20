@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetImageV2.Relationships.Localization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the localization of the Game Center leaderboard set image v2.
 
@@ -10,7 +11,7 @@ The data that describes the localization of the Game Center leaderboard set imag
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetImageV2.Relationships.Localization
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardSetImageV2.Relationships.Localization
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetImageV2.Relationships.Localization.Data](gamecenterleaderboardsetimagev2/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardSetImageV2.Relationships.Localization.Data](./localization-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

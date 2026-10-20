@@ -1,7 +1,8 @@
 # CSSM_DB_OPERATOR_PTR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_DB_OPERATOR_PTR = UnsafeMutablePointer<uint32>
+```
+
+```c
+typedef uint32 * CSSM_DB_OPERATOR_PTR;
 ```
 
 

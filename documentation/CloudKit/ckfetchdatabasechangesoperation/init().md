@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty fetch database changes operation.
 
@@ -20,9 +21,14 @@ Creates an empty fetch database changes operation.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(previousServerChangeToken: CKServerChangeToken?)](ckfetchdatabasechangesoperation/init(previousserverchangetoken:).md)
+### Creating an Operation
+- [convenience init(previousServerChangeToken: CKServerChangeToken?)](./init%28previousserverchangetoken%29.md)
   Creates an operation for fetching database changes.
 
 

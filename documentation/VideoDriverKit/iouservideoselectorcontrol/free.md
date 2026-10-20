@@ -1,7 +1,8 @@
 # free
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the selector control.
 
@@ -10,7 +11,7 @@ Frees the selector control.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

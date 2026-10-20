@@ -1,16 +1,17 @@
 # init(reductionType:dimension:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reduction layer using the reduction type and dimension you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Creates a reduction layer using the reduction type and dimension you specify.
 convenience init?(reductionType: MLCReductionType, dimension: Int)
 ```
 
+```objc
++ (instancetype) layerWithReductionType:(MLCReductionType) reductionType dimension:(NSUInteger) dimension;
+```
+
 #### Return Value
 
-A new [`MLCReductionLayer`](mlcreductionlayer.md) instance.
+A new [`MLCReductionLayer`](../mlcreductionlayer.md) instance.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ A new [`MLCReductionLayer`](mlcreductionlayer.md) instance.
 
 ## See Also
 
-- [convenience init?(reductionType: MLCReductionType, dimensions: [Int])](mlcreductionlayer/init(reductiontype:dimensions:).md)
+### Creating Reduction Layers
+- [convenience init?(reductionType: MLCReductionType, dimensions: [Int])](./init%28reductiontype,dimensions%29.md)
   Creates a reduction layer using the reduction type and dimensions you specify.
-- [enum MLCReductionType](mlcreductiontype.md)
+- [enum MLCReductionType](../mlcreductiontype.md)
   Constants that describe a reduction operation type.
 
 

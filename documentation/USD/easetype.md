@@ -1,6 +1,7 @@
 # easeType
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An option that describes the animation’s change in pace over time.
 
@@ -23,15 +24,16 @@ uniform token easeType = "none"
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [xformTarget](xformtarget.md)
+- [xformTarget](./xformtarget.md)
   A prim that provides the transform to which this action animates.
-- [duration](duration.md)
+- [duration](./duration.md)
   The amount of time that the objects face the camera.
-- [type](type.md)
+- [type](./type.md)
   An option that controls the order in which the actions execute.
 
 

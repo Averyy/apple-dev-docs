@@ -1,12 +1,15 @@
 # image
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full-color image to display.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,13 +17,18 @@ The full-color image to display.
 var image: UIImage { get set }
 ```
 
+```objc
+@property (nonatomic, retain) UIImage * image;
+```
+
 #### Discussion
 
-For information about the image sizes and masks, see [`Apple Watch Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/watch/human-interface-guidelines/).
+For information about the image sizes and masks, see [Apple Watch Human Interface Guidelines](https://developer.apple.com/watch/human-interface-guidelines/).
 
 ## See Also
 
-- [var tintedImageProvider: CLKImageProvider?](clkfullcolorimageprovider/tintedimageprovider.md)
+### Getting the Image Data
+- [var tintedImageProvider: CLKImageProvider?](./tintedimageprovider.md)
   An image provider that produces alternative images for tinted graphic complications.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ledger_info {
     ...
 };
@@ -17,9 +17,9 @@ struct ledger_info {
 ## Topics
 
 ### Instance Properties
-- [li_entries](ledger_info/1563225-li_entries.md)
-- [li_id](ledger_info/1563231-li_id.md)
-- [li_name](ledger_info/1563239-li_name.md)
+- [li_entries](./ledger_info/api-1563225-li_entries.md)
+- [li_id](./ledger_info/api-1563231-li_id.md)
+- [li_name](./ledger_info/api-1563239-li_name.md)
 
 
 ---

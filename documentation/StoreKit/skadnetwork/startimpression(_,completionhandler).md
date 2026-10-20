@@ -1,7 +1,8 @@
 # startImpression(_:completionHandler:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates that your app is presenting a view-through ad to the user.
 
@@ -13,35 +14,44 @@ Indicates that your app is presenting a view-through ad to the user.
 ## Declaration
 
 ```swift
+class func startImpression(_ impression: SKAdImpression, completionHandler completion: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func startImpression(_ impression: SKAdImpression) async throws
+```
+
+```objc
++ (void) startImpression:(SKAdImpression *) impression completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
-- [Signing and providing ads](signing-and-providing-ads.md)
-- [SKAdNetwork 2.2 release notes](skadnetwork-2-2-release-notes.md)
+- [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
+- [Signing and providing ads](../signing-and-providing-ads.md)
+- [SKAdNetwork 2.2 release notes](../skadnetwork-2-2-release-notes.md)
 
 #### Discussion
 
-Call this method when you start presenting the view-through ad to the user. If you call [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) more than once for the same advertised app before calling [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md), the latest impression overwrites the earlier impression.
+Call this method when you start presenting the view-through ad to the user. If you call [`startImpression(_:completionHandler:)`](./startimpression%28_,completionhandler%29.md) more than once for the same advertised app before calling [`endImpression(_:completionHandler:)`](./endimpression%28_,completionhandler%29.md), the latest impression overwrites the earlier impression.
 
-Call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) when the impression ends and is no longer visible to the user.
+Call [`endImpression(_:completionHandler:)`](./endimpression%28_,completionhandler%29.md) when the impression ends and is no longer visible to the user.
 
-> **Note**:  To ensure that SKAdNetwork records the impression, call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) after the impression ends, regardless of whether [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) returns an error in the completion handler.
+> **Note**:  To ensure that SKAdNetwork records the impression, call [`endImpression(_:completionHandler:)`](./endimpression%28_,completionhandler%29.md) after the impression ends, regardless of whether [`startImpression(_:completionHandler:)`](./startimpression%28_,completionhandler%29.md) returns an error in the completion handler.
 
 ## Parameters
 
-- `impression`: An instance of [`SKAdImpression`](skadimpression.md) with the properties set for the view-through ad that you’re presenting.
+- `impression`: An instance of [`SKAdImpression`](../skadimpression.md) with the properties set for the view-through ad that you’re presenting.
 - `completion`: The callback handler you provide to handle any tasks relevant to the start of the ad impression.
 
 ## See Also
 
-- [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
+### Signing view-through ads
+- [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
   Initiate install validation by displaying a view-through ad with signed parameters.
-- [class SKAdImpression](skadimpression.md)
+- [class SKAdImpression](../skadimpression.md)
   A class that defines an ad impression for a view-through ad.
-- [class func endImpression(SKAdImpression, completionHandler: (((any Error)?) -> Void)?)](skadnetwork/endimpression(_:completionhandler:).md)
+- [class func endImpression(SKAdImpression, completionHandler: (((any Error)?) -> Void)?)](./endimpression%28_,completionhandler%29.md)
   Indicates that your app is no longer presenting a view-through ad to the user.
 
 

@@ -1,7 +1,8 @@
 # CTFontGetStringEncoding(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the best string encoding for legacy format support.
 
@@ -20,6 +21,10 @@ Returns the best string encoding for legacy format support.
 func CTFontGetStringEncoding(_ font: CTFont) -> CFStringEncoding
 ```
 
+```c
+extern CFStringEncoding CTFontGetStringEncoding(CTFontRef font);
+```
+
 #### Return Value
 
 The best string encoding for the font.
@@ -30,9 +35,10 @@ The best string encoding for the font.
 
 ## See Also
 
-- [func CTFontCopyCharacterSet(CTFont) -> CFCharacterSet](ctfontcopycharacterset(_:).md)
+### Working With Encoding
+- [func CTFontCopyCharacterSet(CTFont) -> CFCharacterSet](./ctfontcopycharacterset%28_%29.md)
   Returns the Unicode character set of the font.
-- [func CTFontCopySupportedLanguages(CTFont) -> CFArray](ctfontcopysupportedlanguages(_:).md)
+- [func CTFontCopySupportedLanguages(CTFont) -> CFArray](./ctfontcopysupportedlanguages%28_%29.md)
   Returns an array of languages supported by the font.
 
 

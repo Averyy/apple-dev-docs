@@ -1,7 +1,8 @@
 # Double.Magnitude
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that can represent the absolute value of any possible value of the conforming type.
 
@@ -22,9 +23,10 @@ typealias Magnitude = Double
 
 ## See Also
 
-- [var magnitude: Double](double/magnitude-swift.property.md)
+### Finding the Sign and Magnitude
+- [var magnitude: Double](./magnitude-swift.property.md)
   The magnitude of this value.
-- [var sign: FloatingPointSign](double/sign.md)
+- [var sign: FloatingPointSign](./sign.md)
   The sign of the floating-point value.
 
 

@@ -1,7 +1,8 @@
 # CNContactPhoneNumbersKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A phone numbers of a contact.
 
@@ -17,6 +18,10 @@ A phone numbers of a contact.
 
 ```swift
 let CNContactPhoneNumbersKey: String
+```
+
+```c
+extern NSString * const CNContactPhoneNumbersKey;
 ```
 
 #### Discussion

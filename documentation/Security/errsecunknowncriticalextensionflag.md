@@ -1,7 +1,8 @@
 # errSecUnknownCriticalExtensionFlag
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 There is an unknown critical extension flag.
 
@@ -18,6 +19,10 @@ There is an unknown critical extension flag.
 
 ```swift
 var errSecUnknownCriticalExtensionFlag: OSStatus { get }
+```
+
+```c
+errSecUnknownCriticalExtensionFlag
 ```
 
 

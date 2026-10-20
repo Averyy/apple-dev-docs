@@ -1,7 +1,8 @@
 # AlternativeDistributionDomainCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an alternative distribution domain.
 
@@ -10,14 +11,14 @@ The request body you use to create an alternative distribution domain.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionDomainCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionDomainCreateRequest.Data](alternativedistributiondomaincreaterequest/data-data.dictionary.md)
+- [object AlternativeDistributionDomainCreateRequest.Data](./alternativedistributiondomaincreaterequest/data-data.dictionary.md)
   The request body you use to create an alternative distribution domain.
 
 ## Properties
@@ -26,11 +27,12 @@ object AlternativeDistributionDomainCreateRequest
 
 ## See Also
 
-- [object AlternativeDistributionDomain](alternativedistributiondomain.md)
+### Objects
+- [object AlternativeDistributionDomain](./alternativedistributiondomain.md)
   A web domain authorized to distribute your app outside the App Store via web distribution or an alternative marketplace.
-- [object AlternativeDistributionDomainResponse](alternativedistributiondomainresponse.md)
+- [object AlternativeDistributionDomainResponse](./alternativedistributiondomainresponse.md)
   The response body for endpoints that create or read a single alternative distribution domain.
-- [object AlternativeDistributionDomainsResponse](alternativedistributiondomainsresponse.md)
+- [object AlternativeDistributionDomainsResponse](./alternativedistributiondomainsresponse.md)
   The response body for endpoints that list alternative distribution domains.
 
 

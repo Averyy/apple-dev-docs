@@ -1,7 +1,8 @@
 # CTFontManagerUnregisterFontDescriptors(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregisters font descriptors with the font manager.
 
@@ -20,6 +21,10 @@ Unregisters font descriptors with the font manager.
 func CTFontManagerUnregisterFontDescriptors(_ fontDescriptors: CFArray, _ scope: CTFontManagerScope, _ registrationHandler: ((CFArray, Bool) -> Bool)?)
 ```
 
+```c
+extern void CTFontManagerUnregisterFontDescriptors(CFArrayRef fontDescriptors, CTFontManagerScope scope, bool (^registrationHandler)(CFArrayRef errors, bool done));
+```
+
 #### Discussion
 
 Unregistered fonts don’t participate in font descriptor matching.
@@ -27,40 +32,45 @@ Unregistered fonts don’t participate in font descriptor matching.
 ## Parameters
 
 - `fontDescriptors`: An array of font descriptors to unregister.
-- `scope`: A scope constant that defines the availability and lifetime of the registration. See [`CTFontManagerScope`](ctfontmanagerscope.md) for more details.
-- `registrationHandler`: A block called as errors arise or upon completion. The block’s `errors` parameter contains an array of [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) references; an empty array indicates no errors unregistering the font descriptors. Each error reference contains a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) of font descriptors corresponding to [`kCTFontManagerErrorFontDescriptorsKey`](kctfontmanagererrorfontdescriptorskey.md). These represent the font descriptors causing the error and failing to unregister successfully. This block may be called multiple times during the unregistration process. The `done` parameter becomes [`true`](https://developer.apple.com/documentation/swift/true) when the unregistration process completes. Return [`false`](https://developer.apple.com/documentation/swift/false) from the block to stop the unregistration operation, like after receiving an error.
+- `scope`: A scope constant that defines the availability and lifetime of the registration. See [`CTFontManagerScope`](./ctfontmanagerscope.md) for more details.
+- `registrationHandler`: A block called as errors arise or upon completion.
+
+  The block’s `errors` parameter contains an array of [`CFError`](../CoreFoundation/cferror.md) references; an empty array indicates no errors unregistering the font descriptors. Each error reference contains a [`CFArray`](../CoreFoundation/cfarray.md) of font descriptors corresponding to [`kCTFontManagerErrorFontDescriptorsKey`](./kctfontmanagererrorfontdescriptorskey.md). These represent the font descriptors causing the error and failing to unregister successfully.
+
+  This block may be called multiple times during the unregistration process. The `done` parameter becomes [`true`](../Swift/true.md) when the unregistration process completes. Return [`false`](../Swift/false.md) from the block to stop the unregistration operation, like after receiving an error.
 
 ## See Also
 
-- [func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(CFArray, CFSet?, CTFontDescriptorProgressHandler) -> Bool](ctfontdescriptormatchfontdescriptorswithprogresshandler(_:_:_:).md)
+### Functions
+- [func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(CFArray, CFSet?, CTFontDescriptorProgressHandler) -> Bool](./ctfontdescriptormatchfontdescriptorswithprogresshandler%28_,_,_%29.md)
   Matches font descriptors and tracks progress with a progress handler.
-- [func CTFontManagerCompareFontFamilyNames(UnsafeRawPointer, UnsafeRawPointer, UnsafeMutableRawPointer?) -> CFComparisonResult](ctfontmanagercomparefontfamilynames(_:_:_:).md)
+- [func CTFontManagerCompareFontFamilyNames(UnsafeRawPointer, UnsafeRawPointer, UnsafeMutableRawPointer?) -> CFComparisonResult](./ctfontmanagercomparefontfamilynames%28_,_,_%29.md)
   A comparator function to compare font family names and sort them according to Apple guidelines.
-- [func CTFontManagerCopyAvailableFontFamilyNames() -> CFArray](ctfontmanagercopyavailablefontfamilynames().md)
+- [func CTFontManagerCopyAvailableFontFamilyNames() -> CFArray](./ctfontmanagercopyavailablefontfamilynames%28%29.md)
   Returns an array of visible font family names sorted for user interface display.
-- [func CTFontManagerCopyAvailableFontURLs() -> CFArray](ctfontmanagercopyavailablefonturls().md)
+- [func CTFontManagerCopyAvailableFontURLs() -> CFArray](./ctfontmanagercopyavailablefonturls%28%29.md)
   Returns an array of font URLs.
-- [func CTFontManagerCopyAvailablePostScriptNames() -> CFArray](ctfontmanagercopyavailablepostscriptnames().md)
+- [func CTFontManagerCopyAvailablePostScriptNames() -> CFArray](./ctfontmanagercopyavailablepostscriptnames%28%29.md)
   Returns an array of unique PostScript font names for the fonts.
-- [func CTFontManagerCreateFontDescriptorFromData(CFData) -> CTFontDescriptor?](ctfontmanagercreatefontdescriptorfromdata(_:).md)
+- [func CTFontManagerCreateFontDescriptorFromData(CFData) -> CTFontDescriptor?](./ctfontmanagercreatefontdescriptorfromdata%28_%29.md)
   Creates a font descriptor representing the font in the supplied data.
-- [func CTFontManagerCreateFontDescriptorsFromURL(CFURL) -> CFArray?](ctfontmanagercreatefontdescriptorsfromurl(_:).md)
+- [func CTFontManagerCreateFontDescriptorsFromURL(CFURL) -> CFArray?](./ctfontmanagercreatefontdescriptorsfromurl%28_%29.md)
   Returns an array of font descriptors representing each of the fonts in the specified URL.
-- [func CTFontManagerCreateFontRequestRunLoopSource(CFIndex, (CFDictionary, pid_t) -> Unmanaged<CFArray>) -> CFRunLoopSource?](ctfontmanagercreatefontrequestrunloopsource(_:_:).md)
+- [func CTFontManagerCreateFontRequestRunLoopSource(CFIndex, (CFDictionary, pid_t) -> Unmanaged<CFArray>) -> CFRunLoopSource?](./ctfontmanagercreatefontrequestrunloopsource%28_,_%29.md)
   Creates a reference to a run loop source used to convey font requests from the Font Manager.
-- [func CTFontManagerEnableFontDescriptors(CFArray, Bool)](ctfontmanagerenablefontdescriptors(_:_:).md)
+- [func CTFontManagerEnableFontDescriptors(CFArray, Bool)](./ctfontmanagerenablefontdescriptors%28_,_%29.md)
   Enables or disables the matching font descriptors for font descriptor matching.
-- [func CTFontManagerGetAutoActivationSetting(CFString?) -> CTFontManagerAutoActivationSetting](ctfontmanagergetautoactivationsetting(_:).md)
+- [func CTFontManagerGetAutoActivationSetting(CFString?) -> CTFontManagerAutoActivationSetting](./ctfontmanagergetautoactivationsetting%28_%29.md)
   Gets the auto-activation setting for the specified bundle identifier.
-- [func CTFontManagerGetScopeForURL(CFURL) -> CTFontManagerScope](ctfontmanagergetscopeforurl(_:).md)
+- [func CTFontManagerGetScopeForURL(CFURL) -> CTFontManagerScope](./ctfontmanagergetscopeforurl%28_%29.md)
   Returns the registration scope of the specified URL.
-- [func CTFontManagerIsSupportedFont(CFURL) -> Bool](ctfontmanagerissupportedfont(_:).md)
+- [func CTFontManagerIsSupportedFont(CFURL) -> Bool](./ctfontmanagerissupportedfont%28_%29.md)
   Determines whether a file is in a supported font format.
-- [func CTFontManagerRegisterFontsForURL(CFURL, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](ctfontmanagerregisterfontsforurl(_:_:_:).md)
+- [func CTFontManagerRegisterFontsForURL(CFURL, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./ctfontmanagerregisterfontsforurl%28_,_,_%29.md)
   Registers fonts from the specified font URL with the Font Manager. Registered fonts are discoverable through font descriptor matching.
-- [func CTFontManagerRegisterFontsForURLs(CFArray, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> Bool](ctfontmanagerregisterfontsforurls(_:_:_:).md)
+- [func CTFontManagerRegisterFontsForURLs(CFArray, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> Bool](./ctfontmanagerregisterfontsforurls%28_,_,_%29.md)
   Registers fonts from the specified array of font URLs with the Font Manager. Registered fonts are discoverable through font descriptor matching.
-- [func CTFontManagerRegisterGraphicsFont(CGFont, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](ctfontmanagerregistergraphicsfont(_:_:).md)
+- [func CTFontManagerRegisterGraphicsFont(CGFont, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./ctfontmanagerregistergraphicsfont%28_,_%29.md)
   Registers the specified graphics font with the font manager.
 
 

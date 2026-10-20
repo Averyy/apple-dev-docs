@@ -1,7 +1,8 @@
 # getAllResponseHeaders
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns all of the response headers.
 
@@ -12,11 +13,19 @@ Returns all of the response headers.
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+String getAllResponseHeaders();
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 DOMString getAllResponseHeaders();
 ```
 
-#### Return_value
+#### Return Value
 
 A string representation of the response headers.
 
@@ -26,9 +35,10 @@ Returns `null` if no responses have been received.
 
 ## See Also
 
-- [getResponseHeader](xmlhttprequest/1627438-getresponseheader.md)
+### Manipulating the Header List
+- [getResponseHeader](./api-1627438-getresponseheader.md)
   Retrieves the field value from the response that is contained in the specified header.
-- [setRequestHeader](xmlhttprequest/1627317-setrequestheader.md)
+- [setRequestHeader](./api-1627317-setrequestheader.md)
   Appends a header to the list of request headers.
 
 

@@ -1,17 +1,24 @@
 # clickedPathComponentCell()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the clicked cell.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Use the clickedPathItem property instead
 
 ## Declaration
 
 ```swift
 func clickedPathComponentCell() -> NSPathComponentCell?
+```
+
+```objc
+- (NSPathComponentCell *) clickedPathComponentCell;
 ```
 
 #### Return Value
@@ -26,9 +33,10 @@ The value returned is generally valid only when the action or double action is b
 
 ## See Also
 
-- [func pathComponentCells() -> [NSPathComponentCell]](nspathcontrol/pathcomponentcells.md)
+### Deprecated
+- [func pathComponentCells() -> [NSPathComponentCell]](./pathcomponentcells%28%29.md)
   Returns an array of the `NSPathComponentCell` objects currently being displayed.
-- [func setPathComponentCells([NSPathComponentCell])](nspathcontrol/setpathcomponentcells(_:).md)
+- [func setPathComponentCells([NSPathComponentCell])](./setpathcomponentcells%28_%29.md)
   Sets the array of `NSPathComponentCell` objects currently being displayed.
 
 

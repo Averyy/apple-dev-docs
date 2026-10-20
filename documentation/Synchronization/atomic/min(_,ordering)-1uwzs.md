@@ -1,7 +1,8 @@
 # min(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic minimum operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic minimum operation and return the old and new value, applying t
 @discardableResult
 func min(_ operand: Int, ordering: AtomicUpdateOrdering) -> (oldValue: Int, newValue: Int)
 ```
+
+Available when `Value` is `Int`.
 
 #### Return Value
 

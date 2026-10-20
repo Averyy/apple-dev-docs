@@ -1,7 +1,8 @@
 # CiMacOsVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a macOS Versions resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a macOS Versions resource.
 
 ## Declaration
 
-```swift
+```
 object CiMacOsVersion.Attributes
 ```
 
@@ -21,7 +22,8 @@ object CiMacOsVersion.Attributes
 
 ## See Also
 
-- [object CiMacOsVersion.Relationships](cimacosversion/relationships-data.dictionary.md)
+### Objects
+- [object CiMacOsVersion.Relationships](./relationships-data.dictionary.md)
   The relationships of the macOS Versions resource you included in the request and those on which you can operate.
 
 

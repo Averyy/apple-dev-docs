@@ -1,7 +1,8 @@
 # binaryInfo
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Deduplicated binary information indexed by UUID
 
@@ -20,7 +21,7 @@ let binaryInfo: [UUID : CallStackTree.BinaryInfo]
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 
 ---

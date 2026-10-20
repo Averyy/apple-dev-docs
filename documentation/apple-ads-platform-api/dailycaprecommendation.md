@@ -1,7 +1,8 @@
 # DailyCapRecommendation
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 
@@ -10,7 +11,7 @@ A daily budget recommendation for a campaign that’s frequently hitting its spe
 
 ## Declaration
 
-```swift
+```
 object DailyCapRecommendation
 ```
 
@@ -89,54 +90,54 @@ When a campaign frequently exhausts its daily budget, `DailyCapRecommendation` p
 - `campaignName` (string): Display name of the campaign. Read-only.
 - `state` (RecommendationState): Current state. Values: `AVAILABLE`, `APPLIED`, `DISMISSED`, `DELETE`. Read-only.
 - `status` (RecommendationStatus): Operational status. Read-only.
-- `suggestedDailyBudgetAmount` (RecommendationMoney): The recommended new daily budget. See [`Money`](money.md). Read-only.
-- `dailyBudget` (RecommendationMoney): The campaign’s current daily budget. See [`Money`](money.md). Read-only.
-- `bidStrategy` (RecommendationBidStrategy): The campaign’s current bid strategy. See [`BidStrategy`](bidstrategy.md). Read-only.
+- `suggestedDailyBudgetAmount` (RecommendationMoney): The recommended new daily budget. See [`Money`](./money.md). Read-only.
+- `dailyBudget` (RecommendationMoney): The campaign’s current daily budget. See [`Money`](./money.md). Read-only.
+- `bidStrategy` (RecommendationBidStrategy): The campaign’s current bid strategy. See [`BidStrategy`](./bidstrategy.md). Read-only.
 - `installs` (int64): Historical install count. Read-only.
-- `spend` (RecommendationMoney): Historical spend. See [`Money`](money.md). Read-only.
-- `averageCPA` (RecommendationMoney): Historical average cost per acquisition. See [`Money`](money.md). Read-only.
-- `averageCPT` (RecommendationMoney): Historical average cost per tap. See [`Money`](money.md). Read-only.
+- `spend` (RecommendationMoney): Historical spend. See [`Money`](./money.md). Read-only.
+- `averageCPA` (RecommendationMoney): Historical average cost per acquisition. See [`Money`](./money.md). Read-only.
+- `averageCPT` (RecommendationMoney): Historical average cost per tap. See [`Money`](./money.md). Read-only.
 - `impression` (int64): Historical impression count. Read-only.
 - `taps` (int64): Historical tap count. Read-only.
 - `ttr` (double): Historical tap-through rate. Read-only.
 - `expectedInstalls` (int64): The estimated installs you could see over a seven-day period after applying a recommendation, based on historical data. Read-only.
-- `expectedSpend` (RecommendationMoney): The estimated amount you could spend over a seven-day period after applying a recommendation, based on historical data. See [`Money`](money.md). Read-only.
-- `expectedCpa` (RecommendationMoney): The estimated average cost-per-acquisition you could see over a seven-day period after applying a recommendation, based on historical data. See [`Money`](money.md). Read-only.
+- `expectedSpend` (RecommendationMoney): The estimated amount you could spend over a seven-day period after applying a recommendation, based on historical data. See [`Money`](./money.md). Read-only.
+- `expectedCpa` (RecommendationMoney): The estimated average cost-per-acquisition you could see over a seven-day period after applying a recommendation, based on historical data. See [`Money`](./money.md). Read-only.
 - `creationTime` (date-time): When the recommendation was created. Read-only.
 - `modificationTime` (date-time): When the recommendation was last modified. Read-only.
 - `expirationTime` (date-time): When the recommendation expires. Read-only.
 
 ## See Also
 
-- [object TargetCpaRecommendation](targetcparecommendation.md)
+- [object TargetCpaRecommendation](./targetcparecommendation.md)
   A target CPA recommendation for a campaign using a Maximize Conversions bid strategy.
-- [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
+- [object TargetCpaRecommendationHistory](./targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
-- [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
+- [object DailyCapRecommendationHistory](./dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
-- [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)
+- [object ApplyTargetCpaRecommendation](./applytargetcparecommendation.md)
   Request object for applying or dismissing a target CPA recommendation.
-- [object ApplyDailyCapRecommendation](applydailycaprecommendation.md)
+- [object ApplyDailyCapRecommendation](./applydailycaprecommendation.md)
   Request object for applying or dismissing a daily budget recommendation.
-- [object RecommendationResponseBody](recommendationresponsebody.md)
+- [object RecommendationResponseBody](./recommendationresponsebody.md)
   The standard response envelope for all Recommendations and Suggestions API endpoints.
-- [object RecommendationResponseError](recommendationresponseerror.md)
+- [object RecommendationResponseError](./recommendationresponseerror.md)
   Error information returned in the response body when a Recommendations or Suggestions request fails.
-- [object RecommendationResponseErrorDetail](recommendationresponseerrordetail.md)
+- [object RecommendationResponseErrorDetail](./recommendationresponseerrordetail.md)
   Granular error detail for a single field or condition within a failed Recommendations or Suggestions request.
-- [object RecommendationResponsePagination](recommendationresponsepagination.md)
+- [object RecommendationResponsePagination](./recommendationresponsepagination.md)
   Pagination metadata returned in list responses from Recommendations and Suggestions endpoints.
-- [object RecommendationMoney](recommendationmoney.md)
+- [object RecommendationMoney](./recommendationmoney.md)
   A monetary amount with currency used throughout the Recommendations and Suggestions APIs.
-- [object RecommendationApplyDailyBudgetResponse](recommendationapplydailybudgetresponse.md)
+- [object RecommendationApplyDailyBudgetResponse](./recommendationapplydailybudgetresponse.md)
   Response envelope returned when applying or dismissing a daily budget recommendation, containing the resulting history record(s).
-- [object RecommendationApplyTargetCpaResponse](recommendationapplytargetcparesponse.md)
+- [object RecommendationApplyTargetCpaResponse](./recommendationapplytargetcparesponse.md)
   Response envelope returned when applying or dismissing a target CPA recommendation, containing the resulting history record(s).
-- [object RecommendationBidStrategy](recommendationbidstrategy.md)
+- [object RecommendationBidStrategy](./recommendationbidstrategy.md)
   Bid strategy configuration (type, goal, and amount) associated with a recommendation.
-- [object RecommendationDismissDailyBudgetResponse](recommendationdismissdailybudgetresponse.md)
+- [object RecommendationDismissDailyBudgetResponse](./recommendationdismissdailybudgetresponse.md)
   Response envelope returned when dismissing a daily budget recommendation, containing the resulting history record(s).
-- [object RecommendationDismissTargetCpaResponse](recommendationdismisstargetcparesponse.md)
+- [object RecommendationDismissTargetCpaResponse](./recommendationdismisstargetcparesponse.md)
   Response envelope returned when dismissing a target CPA recommendation, containing the resulting history record(s).
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Can be used to initialize a standalone `AppDependencyManager` for dependency injection during testing.
 
@@ -11,7 +12,7 @@ Can be used to initialize a standalone `AppDependencyManager` for dependency inj
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

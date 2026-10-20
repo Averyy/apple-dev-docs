@@ -1,7 +1,8 @@
 # LFE2
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The low-frequency effects 2 (LFE2) channel.
 
@@ -10,13 +11,14 @@ The low-frequency effects 2 (LFE2) channel.
 
 ## Declaration
 
-```swift
+```c
 LFE2
 ```
 
 ## See Also
 
-- [LFEScreen](audiodriverkit/iouseraudiochannellabel/lfescreen.md)
+### Low-Frequency Effects Channels
+- [LFEScreen](./lfescreen.md)
   The low-frequency effects (LFE) screen channel.
 
 

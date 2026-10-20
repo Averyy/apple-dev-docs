@@ -1,7 +1,8 @@
 # inflecting()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the string has portions tagged with NSInflectionRuleAttributeName that have no format specifiers, create a new string with those portions inflected by following the rule in the attribute.
 
@@ -18,6 +19,10 @@ If the string has portions tagged with NSInflectionRuleAttributeName that have n
 
 ```swift
 func inflecting() -> NSAttributedString
+```
+
+```objc
+- (NSAttributedString *) attributedStringByInflectingString;
 ```
 
 

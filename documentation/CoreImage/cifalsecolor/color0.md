@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The first color to use for the color ramp.
@@ -11,7 +12,7 @@ The first color to use for the color ramp.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The first color to use for the color ramp.
 var color0: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color0;
+```
+
 ## See Also
 
-- [var color1: CIColor](cifalsecolor/color1.md)
+### Instance Properties
+- [var color1: CIColor](./color1.md)
   The second color to use for the color ramp.
-- [var inputImage: CIImage?](cifalsecolor/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

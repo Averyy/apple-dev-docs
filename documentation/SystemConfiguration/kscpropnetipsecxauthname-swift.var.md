@@ -1,7 +1,8 @@
 # kSCPropNetIPSecXAuthName
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The IPSec key XAuthName.
 
@@ -14,41 +15,46 @@ The IPSec key XAuthName.
 let kSCPropNetIPSecXAuthName: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetIPSecXAuthName;
+```
+
 #### Discussion
 
-The value of this key is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring).
+The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md).
 
 ## See Also
 
-- [let kSCCompAnyRegex: CFString](ksccompanyregex-swift.var.md)
+### Constants
+- [let kSCCompAnyRegex: CFString](./ksccompanyregex-swift.var.md)
   A regular expression pattern that matches any component.
-- [let kSCPropNetIPSecConnectTime: CFString](kscpropnetipsecconnecttime-swift.var.md)
+- [let kSCPropNetIPSecConnectTime: CFString](./kscpropnetipsecconnecttime-swift.var.md)
   The IPSec key ConnectTime.
-- [let kSCPropNetIPSecRemoteAddress: CFString](kscpropnetipsecremoteaddress-swift.var.md)
+- [let kSCPropNetIPSecRemoteAddress: CFString](./kscpropnetipsecremoteaddress-swift.var.md)
   The IPSec key RemoteAddress.
-- [let kSCPropNetIPSecStatus: CFString](kscpropnetipsecstatus-swift.var.md)
+- [let kSCPropNetIPSecStatus: CFString](./kscpropnetipsecstatus-swift.var.md)
   The IPSec key Status.
-- [let kSCPropNetIPSecXAuthEnabled: CFString](kscpropnetipsecxauthenabled-swift.var.md)
+- [let kSCPropNetIPSecXAuthEnabled: CFString](./kscpropnetipsecxauthenabled-swift.var.md)
   The IPSec key XAuthEnabled.
-- [let kSCPropNetIPSecXAuthPassword: CFString](kscpropnetipsecxauthpassword-swift.var.md)
+- [let kSCPropNetIPSecXAuthPassword: CFString](./kscpropnetipsecxauthpassword-swift.var.md)
   The IPSec key XAuthPassword.
-- [let kSCPropNetIPSecXAuthPasswordEncryption: CFString](kscpropnetipsecxauthpasswordencryption-swift.var.md)
+- [let kSCPropNetIPSecXAuthPasswordEncryption: CFString](./kscpropnetipsecxauthpasswordencryption-swift.var.md)
   The IPSec key XAuthPasswordEncryption.
-- [let kSCPropNetProxiesProxyAutoConfigJavaScript: CFString](kscpropnetproxiesproxyautoconfigjavascript-swift.var.md)
+- [let kSCPropNetProxiesProxyAutoConfigJavaScript: CFString](./kscpropnetproxiesproxyautoconfigjavascript-swift.var.md)
   The Proxies key ProxyAutoConfigJavaScript.
-- [let kSCResvInactive: CFString](kscresvinactive-swift.var.md)
+- [let kSCResvInactive: CFString](./kscresvinactive-swift.var.md)
   The reserved key __INACTIVE__.
-- [let kSCResvLink: CFString](kscresvlink-swift.var.md)
+- [let kSCResvLink: CFString](./kscresvlink-swift.var.md)
   The reserved key __LINK__.
-- [let kSCValNetIPSecAuthenticationMethodCertificate: CFString](kscvalnetipsecauthenticationmethodcertificate-swift.var.md)
+- [let kSCValNetIPSecAuthenticationMethodCertificate: CFString](./kscvalnetipsecauthenticationmethodcertificate-swift.var.md)
   The constant value Certificate.
-- [let kSCValNetIPSecAuthenticationMethodHybrid: CFString](kscvalnetipsecauthenticationmethodhybrid-swift.var.md)
+- [let kSCValNetIPSecAuthenticationMethodHybrid: CFString](./kscvalnetipsecauthenticationmethodhybrid-swift.var.md)
   The constant value Hybrid.
-- [let kSCValNetIPSecAuthenticationMethodSharedSecret: CFString](kscvalnetipsecauthenticationmethodsharedsecret-swift.var.md)
+- [let kSCValNetIPSecAuthenticationMethodSharedSecret: CFString](./kscvalnetipsecauthenticationmethodsharedsecret-swift.var.md)
   The constant value SharedSecret.
-- [let kSCValNetIPSecLocalIdentifierTypeKeyID: CFString](kscvalnetipseclocalidentifiertypekeyid-swift.var.md)
+- [let kSCValNetIPSecLocalIdentifierTypeKeyID: CFString](./kscvalnetipseclocalidentifiertypekeyid-swift.var.md)
   The constant value KeyID.
-- [let kSCValNetIPSecSharedSecretEncryptionKeychain: CFString](kscvalnetipsecsharedsecretencryptionkeychain-swift.var.md)
+- [let kSCValNetIPSecSharedSecretEncryptionKeychain: CFString](./kscvalnetipsecsharedsecretencryptionkeychain-swift.var.md)
   The constant value Keychain.
 
 

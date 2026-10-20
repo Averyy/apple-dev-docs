@@ -1,7 +1,8 @@
 # first(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first element of the sequence that satisfies the given predicate.
 

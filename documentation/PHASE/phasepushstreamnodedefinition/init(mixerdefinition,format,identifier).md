@@ -1,7 +1,8 @@
 # init(mixerDefinition:format:identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named node definition for audio streams.
 
@@ -19,6 +20,10 @@ Creates a named node definition for audio streams.
 convenience init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat, identifier: String)
 ```
 
+```objc
+- (instancetype) initWithMixerDefinition:(PHASEMixerDefinition *) mixerDefinition format:(AVAudioFormat *) format identifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `mixerDefinition`: An object that combines audio layers.
@@ -27,7 +32,8 @@ convenience init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat, i
 
 ## See Also
 
-- [init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)](phasepushstreamnodedefinition/init(mixerdefinition:format:).md)
+### Creating a Node
+- [init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)](./init%28mixerdefinition,format%29.md)
   Creates a node definition for audio streams.
 
 

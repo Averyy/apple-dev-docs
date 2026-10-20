@@ -1,7 +1,8 @@
 # makeExpression()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a pending expression of a set of intent values.
 
@@ -19,6 +20,8 @@ Creates a pending expression of a set of intent values.
 ```swift
 func makeExpression() -> IntentValueExpression
 ```
+
+Available when `Element` conforms to `IntentValueConvertible` and `Hashable`.
 
 #### Return Value
 

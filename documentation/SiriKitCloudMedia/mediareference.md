@@ -1,7 +1,8 @@
 # MediaReference
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A way of identifying the current media item rather than with metadata.
 
@@ -10,17 +11,24 @@ A way of identifying the current media item rather than with metadata.
 
 ## Declaration
 
-```swift
+```
 string MediaReference
 ```
 
+## Possible Values
+
+- `currentlyPlaying`: The media item the device is playing.
+- `unknown`: An unspecified reference.
+- `my`: Information specific to the user, as in *Play my Top 10 playlist*.
+
 ## See Also
 
-- [object MediaItem](mediaitem.md)
+### Media Items
+- [object MediaItem](./mediaitem.md)
   A particular piece of media that an intent references, such as a song, podcast episode, or playlist.
-- [object MediaSearch](mediasearch.md)
+- [object MediaSearch](./mediasearch.md)
   A description of the media items the user wants to play, add to a playlist, or express a preference for.
-- [type MediaItemType](mediaitemtype.md)
+- [type MediaItemType](./mediaitemtype.md)
   Types of media items or media searches.
 
 

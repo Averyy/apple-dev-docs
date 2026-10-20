@@ -1,7 +1,8 @@
 # NSView.BoundsDidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,21 +16,22 @@ struct BoundsDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(view: NSView)](nsview/boundsdidchangemessage/init(view:).md)
+- [init(view: NSView)](./boundsdidchangemessage/init%28view%29.md)
 ### Instance Properties
-- [var view: NSView](nsview/boundsdidchangemessage/view.md)
+- [var view: NSView](./boundsdidchangemessage/view.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
+### Observing bounds and frame changes
+- [NSView.FrameDidChangeMessage](./framedidchangemessage.md)
 
 
 ---

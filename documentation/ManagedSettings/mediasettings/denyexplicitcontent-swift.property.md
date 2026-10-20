@@ -1,7 +1,8 @@
 # denyExplicitContent
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from accessing explicit content.
 
@@ -22,7 +23,8 @@ Use `denyExplicitContent` to hide music and video content that has an *explicit*
 
 ## See Also
 
-- [static let denyExplicitContent: SettingMetadata<Bool>](mediasettings/denyexplicitcontent-swift.type.property.md)
+### Denying explicit media
+- [static let denyExplicitContent: SettingMetadata<Bool>](./denyexplicitcontent-swift.type.property.md)
   The metadata for the setting that denies explicit content.
 
 

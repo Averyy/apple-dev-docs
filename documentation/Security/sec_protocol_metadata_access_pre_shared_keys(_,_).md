@@ -1,7 +1,8 @@
 # sec_protocol_metadata_access_pre_shared_keys(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_access_pre_shared_keys(_ metadata: sec_protocol_metadata_t, _ handler: @escaping (dispatch_data_t, dispatch_data_t) -> Void) -> Bool
+```
+
+```c
+bool sec_protocol_metadata_access_pre_shared_keys(sec_protocol_metadata_t metadata, void (^handler)(dispatch_data_t psk, dispatch_data_t psk_identity));
 ```
 
 #### Return Value

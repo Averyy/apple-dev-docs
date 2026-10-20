@@ -1,7 +1,8 @@
 # textView(_:editMenuForTextInRanges:suggestedActions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func textView(_ textView: UITextView, editMenuForTextInRanges ranges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?
+```
+
+```objc
+- (UIMenu *) textView:(UITextView *) textView editMenuForTextInRanges:(NSArray<NSValue *> *) ranges suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
 #### Return Value

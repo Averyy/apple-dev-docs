@@ -1,7 +1,8 @@
 # image
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display.
 
@@ -16,11 +17,12 @@ var image: UIImage? { get set }
 
 ## See Also
 
-- [var text: String?](tvmonogramcontentconfiguration-swift.struct/text.md)
+### Customizing Content
+- [var text: String?](./text.md)
   The primary text.
-- [var secondaryText: String?](tvmonogramcontentconfiguration-swift.struct/secondarytext.md)
+- [var secondaryText: String?](./secondarytext.md)
   The secondary text.
-- [var personNameComponents: PersonNameComponents?](tvmonogramcontentconfiguration-swift.struct/personnamecomponents.md)
+- [var personNameComponents: PersonNameComponents?](./personnamecomponents.md)
   The name the system uses when creating a monogram image.
 
 

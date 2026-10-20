@@ -1,7 +1,8 @@
 # init(name:key:description:list:initialValue:neutralValue:cameraValue:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list parameter object.
 

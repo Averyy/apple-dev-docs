@@ -1,7 +1,8 @@
 # NSPasteboard.ContentsOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for preparing the pasteboard.
 
@@ -14,39 +15,44 @@ Options for preparing the pasteboard.
 struct ContentsOptions
 ```
 
+```c
+enum NSPasteboardContentsOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Options
-- [static var currentHostOnly: NSPasteboard.ContentsOptions](nspasteboard/contentsoptions/currenthostonly.md)
+- [static var currentHostOnly: NSPasteboard.ContentsOptions](./contentsoptions/currenthostonly.md)
   The pasteboard contents are available only on the current device, and not on any other devices.
 ### Initializers
-- [init(rawValue: UInt)](nspasteboard/contentsoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./contentsoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [class NSPasteboard](nspasteboard.md)
+### Pasteboard
+- [class NSPasteboard](../nspasteboard.md)
   An object that transfers data to and from the pasteboard server.
-- [class NSPasteboardItem](nspasteboarditem.md)
+- [class NSPasteboardItem](../nspasteboarditem.md)
   An item on a pasteboard.
-- [protocol NSPasteboardReading](nspasteboardreading.md)
+- [protocol NSPasteboardReading](../nspasteboardreading.md)
   A set of methods that defines the interface for initializing an object from a pasteboard.
-- [protocol NSPasteboardWriting](nspasteboardwriting.md)
+- [protocol NSPasteboardWriting](../nspasteboardwriting.md)
   A set of methods that defines the interface for retrieving a representation of an object that can be written to a pasteboard.
-- [protocol NSPasteboardItemDataProvider](nspasteboarditemdataprovider.md)
+- [protocol NSPasteboardItemDataProvider](../nspasteboarditemdataprovider.md)
   A set of methods implemented by the data provider of a pasteboard item to provide the data for a particular UTI type.
-- [protocol NSPasteboardTypeOwner](nspasteboardtypeowner.md)
+- [protocol NSPasteboardTypeOwner](../nspasteboardtypeowner.md)
   An object that serves as a data provider for data types that use lazy data fulfillment from a pasteboard request.
 
 

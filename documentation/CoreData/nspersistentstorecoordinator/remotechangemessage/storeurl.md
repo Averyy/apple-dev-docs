@@ -1,7 +1,8 @@
 # storeURL
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the store that changed.
 

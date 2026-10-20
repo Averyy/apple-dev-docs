@@ -1,18 +1,19 @@
 # AVAudioMake3DVectorOrientation(_:_:)
 
 **Framework**: AVFAudio  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a 3D vector orientation instance using the forward and up vectors you specify.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a 3D vector orientation instance using the forward and up vectors you sp
 func AVAudioMake3DVectorOrientation(_ forward: AVAudio3DVector, _ up: AVAudio3DVector) -> AVAudio3DVectorOrientation
 ```
 
+```c
+static AVAudio3DVectorOrientation AVAudioMake3DVectorOrientation(AVAudio3DVector forward, AVAudio3DVector up);
+```
+
 #### Return Value
 
-A new [`AVAudioMake3DVectorOrientation(_:_:)`](avaudiomake3dvectororientation(_:_:).md) object.
+A new [`AVAudioMake3DVectorOrientation(_:_:)`](./avaudiomake3dvectororientation%28_,_%29.md) object.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ A new [`AVAudioMake3DVectorOrientation(_:_:)`](avaudiomake3dvectororientation(_:
 
 ## See Also
 
-- [init()](avaudio3dvectororientation/init.md)
+### Creating a vector orientation
+- [init()](./avaudio3dvectororientation/init%28%29.md)
   Creates a 3D vector orientation instance.
-- [init(forward: AVAudio3DVector, up: AVAudio3DVector)](avaudio3dvectororientation/init(forward:up:).md)
+- [init(forward: AVAudio3DVector, up: AVAudio3DVector)](./avaudio3dvectororientation/init%28forward,up%29.md)
   Creates a 3D vector orientation instance using the forward and up vectors you specify.
 
 

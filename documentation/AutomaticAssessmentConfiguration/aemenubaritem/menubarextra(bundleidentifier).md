@@ -1,7 +1,8 @@
 # menuBarExtra(bundleIdentifier:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a menu bar extra item representing a custom menu extra.
 

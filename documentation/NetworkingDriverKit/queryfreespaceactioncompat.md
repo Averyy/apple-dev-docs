@@ -1,14 +1,15 @@
 # QueryFreeSpaceActionCompat
 
 **Framework**: NetworkingDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 typedef unsigned int (*)(class OSObject *, class IOUserNetworkPacketQueueCompat *, unsigned int *) QueryFreeSpaceActionCompat;
 ```
 

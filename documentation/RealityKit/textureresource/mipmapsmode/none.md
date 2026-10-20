@@ -1,7 +1,8 @@
 # TextureResource.MipmapsMode.none
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not allocate mipmaps for the texture resource.
 
@@ -11,7 +12,7 @@ Do not allocate mipmaps for the texture resource.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ case none
 
 ## See Also
 
-- [TextureResource.MipmapsMode.allocateAll](textureresource/mipmapsmode/allocateall.md)
+### Specifying allocation and generation
+- [TextureResource.MipmapsMode.allocateAll](./allocateall.md)
   Allocate memory for all mipmaps, but don’t generate them.
-- [TextureResource.MipmapsMode.allocateAndGenerateAll](textureresource/mipmapsmode/allocateandgenerateall.md)
+- [TextureResource.MipmapsMode.allocateAndGenerateAll](./allocateandgenerateall.md)
   Allocate and generate all mipmaps for the texture resource.
 
 

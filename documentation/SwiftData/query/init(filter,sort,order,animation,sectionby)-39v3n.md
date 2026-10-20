@@ -1,7 +1,8 @@
 # init(filter:sort:order:animation:sectionBy:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sectioned query sorted by an optional key path, grouped by a required optional-String key path.
 
@@ -20,6 +21,8 @@ Creates a sectioned query sorted by an optional key path, grouped by a required 
 @MainActor
 @preconcurrency init<Value>(filter: Predicate<Element>? = nil, sort keyPath: KeyPath<Element, Value?>, order: SortOrder = .forward, animation: Animation, sectionBy sectionKeyPath: KeyPath<Element, String?>) where Result == SectionedResults<Element, String>, Value : Comparable
 ```
+
+Available when `Element` conforms to `PersistentModel`.
 
 
 ---

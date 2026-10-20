@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](mlwordtagger/featureextractortype/description.md)
+- [var description: String](./description.md)
   A text representation of a feature extractor type.
 
 

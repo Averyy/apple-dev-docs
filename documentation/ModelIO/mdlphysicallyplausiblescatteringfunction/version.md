@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var version: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSInteger version;
 ```
 
 

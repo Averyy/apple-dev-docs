@@ -1,7 +1,8 @@
 # List all localizations for an in-app event
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of all localizations for a specific in-app event.
 
@@ -14,29 +15,61 @@ Get a list of all localizations for a specific in-app event.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app event resource ID from the [`List all in-app events for an app`](./get-v1-apps-_id_-appevents.md) response.
+
+### Query Parameters
+
 - `fields[appEventLocalizations]` ([string]): Additional fields to include for each app event localization resource returned by the response.
+
+  **Allowed Values**: `locale`, `name`, `shortDescription`, `longDescription`, `appEvent`, `appEventScreenshots`, `appEventVideoClips`, `placements`
 - `fields[appEventScreenshots]` ([string]): Additional fields to include for each app event screenshot resource returned by the response.
+
+  **Allowed Values**: `fileSize`, `fileName`, `imageAsset`, `assetToken`, `uploadOperations`, `assetDeliveryState`, `appEventAssetType`, `appEventLocalization`
 - `fields[appEventVideoClips]` ([string]): Additional fields to include for each app event video clip resource returned by the response.
+
+  **Allowed Values**: `fileSize`, `fileName`, `previewFrameTimeCode`, `videoUrl`, `previewFrameImage`, `previewImage`, `uploadOperations`, `assetDeliveryState`, `videoDeliveryState`, `appEventAssetType`, `appEventLocalization`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `appEvent`, `appEventScreenshots`, `appEventVideoClips`, `placements`
 - `limit` (integer): The maximum number of app event localization resources to return.
+
+  **Maximum**: `200`
 - `limit[appEventScreenshots]` (integer): The maximum number of related app event screenshots resources to return.
+
+  **Maximum**: `50`
 - `limit[appEventVideoClips]` (integer): The maximum number of related app event video clips resources to return.
+
+  **Maximum**: `50`
 - `fields[appEvents]` ([string]): Additional fields to include for each app event resource returned by the response.
-- `fields[appAssetLibraryPlacements]` ([string])
-- `limit[placements]` (integer)
+
+  **Allowed Values**: `referenceName`, `badge`, `eventState`, `deepLink`, `purchaseRequirement`, `primaryLocale`, `priority`, `purpose`, `territorySchedules`, `archivedTerritorySchedules`, `localizations`
+- `fields[appAssetLibraryPlacements]` ([string]): **Allowed Values**: `mediaType`, `placementType`, `placementGroup`, `createdDate`, `lastModifiedDate`, `state`, `stateDetails`, `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`
+- `limit[placements]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`AppEventLocalizationsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read In-App Event Information](get-v1-appevents-_id_.md)
+### Endpoints
+- [Read In-App Event Information](./get-v1-appevents-_id_.md)
   Get information about a specific in-app event.
-- [List localization IDs for an app event](get-v1-appevents-_id_-relationships-localizations.md)
-- [List all in-app events for an app](get-v1-apps-_id_-appevents.md)
+- [List localization IDs for an app event](./get-v1-appevents-_id_-relationships-localizations.md)
+- [List all in-app events for an app](./get-v1-apps-_id_-appevents.md)
   Get a list of in-app events for a specific app.
-- [Modify an in-app event](patch-v1-appevents-_id_.md)
+- [Modify an in-app event](./patch-v1-appevents-_id_.md)
   Update the metadata for a specific in-app event.
-- [Create an in-app event](post-v1-appevents.md)
+- [Create an in-app event](./post-v1-appevents.md)
   Create a new in-app event for your app.
-- [Delete an app event](delete-v1-appevents-_id_.md)
+- [Delete an app event](./delete-v1-appevents-_id_.md)
   Delete an in-app event and its related metadata.
 
 

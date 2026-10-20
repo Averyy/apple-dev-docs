@@ -1,13 +1,14 @@
 # kODErrorCredentialsParameterError
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid parameter was provided.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,37 +16,42 @@ An invalid parameter was provided.
 var kODErrorCredentialsParameterError: ODFrameworkErrors { get }
 ```
 
+```c
+kODErrorCredentialsParameterError
+```
+
 ## See Also
 
-- [var kODErrorCredentialsAccountDisabled: ODFrameworkErrors](koderrorcredentialsaccountdisabled.md)
+### Constants
+- [var kODErrorCredentialsAccountDisabled: ODFrameworkErrors](./koderrorcredentialsaccountdisabled.md)
   The account is disabled.
-- [var kODErrorCredentialsAccountExpired: ODFrameworkErrors](koderrorcredentialsaccountexpired.md)
+- [var kODErrorCredentialsAccountExpired: ODFrameworkErrors](./koderrorcredentialsaccountexpired.md)
   The account is expired.
-- [var kODErrorCredentialsAccountInactive: ODFrameworkErrors](koderrorcredentialsaccountinactive.md)
+- [var kODErrorCredentialsAccountInactive: ODFrameworkErrors](./koderrorcredentialsaccountinactive.md)
   The account is inactive.
-- [var kODErrorCredentialsAccountNotFound: ODFrameworkErrors](koderrorcredentialsaccountnotfound.md)
+- [var kODErrorCredentialsAccountNotFound: ODFrameworkErrors](./koderrorcredentialsaccountnotfound.md)
   The authentication server could not find the provided account.
-- [var kODErrorCredentialsInvalid: ODFrameworkErrors](koderrorcredentialsinvalid.md)
+- [var kODErrorCredentialsInvalid: ODFrameworkErrors](./koderrorcredentialsinvalid.md)
   The provided credentials are invalid with the current node.
-- [var kODErrorCredentialsInvalidComputer: ODFrameworkErrors](koderrorcredentialsinvalidcomputer.md)
+- [var kODErrorCredentialsInvalidComputer: ODFrameworkErrors](./koderrorcredentialsinvalidcomputer.md)
   The account is not permitted to log into this computer.
-- [var kODErrorCredentialsInvalidLogonHours: ODFrameworkErrors](koderrorcredentialsinvalidlogonhours.md)
+- [var kODErrorCredentialsInvalidLogonHours: ODFrameworkErrors](./koderrorcredentialsinvalidlogonhours.md)
   The logon attempt was not within set logon hours.
-- [var kODErrorCredentialsMethodNotSupported: ODFrameworkErrors](koderrorcredentialsmethodnotsupported.md)
+- [var kODErrorCredentialsMethodNotSupported: ODFrameworkErrors](./koderrorcredentialsmethodnotsupported.md)
   The extended authentication method is not supported.
-- [var kODErrorCredentialsNotAuthorized: ODFrameworkErrors](koderrorcredentialsnotauthorized.md)
+- [var kODErrorCredentialsNotAuthorized: ODFrameworkErrors](./koderrorcredentialsnotauthorized.md)
   The operation, such as changing a password, is not permitted with current privileges.
-- [var kODErrorCredentialsOperationFailed: ODFrameworkErrors](koderrorcredentialsoperationfailed.md)
+- [var kODErrorCredentialsOperationFailed: ODFrameworkErrors](./koderrorcredentialsoperationfailed.md)
   The requested operation failed.
-- [var kODErrorCredentialsPasswordChangeRequired: ODFrameworkErrors](koderrorcredentialspasswordchangerequired.md)
+- [var kODErrorCredentialsPasswordChangeRequired: ODFrameworkErrors](./koderrorcredentialspasswordchangerequired.md)
   The password must be changed.
-- [var kODErrorCredentialsPasswordChangeTooSoon: ODFrameworkErrors](koderrorcredentialspasswordchangetoosoon.md)
+- [var kODErrorCredentialsPasswordChangeTooSoon: ODFrameworkErrors](./koderrorcredentialspasswordchangetoosoon.md)
   The password was changed too recently to be changed again.
-- [var kODErrorCredentialsPasswordExpired: ODFrameworkErrors](koderrorcredentialspasswordexpired.md)
+- [var kODErrorCredentialsPasswordExpired: ODFrameworkErrors](./koderrorcredentialspasswordexpired.md)
   The password has expired and must be changed.
-- [var kODErrorCredentialsPasswordNeedsDigit: ODFrameworkErrors](koderrorcredentialspasswordneedsdigit.md)
+- [var kODErrorCredentialsPasswordNeedsDigit: ODFrameworkErrors](./koderrorcredentialspasswordneedsdigit.md)
   The provided password needs at least one digit.
-- [var kODErrorCredentialsPasswordNeedsLetter: ODFrameworkErrors](koderrorcredentialspasswordneedsletter.md)
+- [var kODErrorCredentialsPasswordNeedsLetter: ODFrameworkErrors](./koderrorcredentialspasswordneedsletter.md)
   The provided password needs at least one letter.
 
 

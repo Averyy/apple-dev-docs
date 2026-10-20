@@ -1,7 +1,8 @@
 # MTLVertexFormat.uchar
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit, unsigned integer value.
 
@@ -19,21 +20,26 @@ An 8-bit, unsigned integer value.
 case uchar
 ```
 
+```c
+MTLVertexFormatUChar
+```
+
 ## See Also
 
-- [MTLVertexFormat.char](mtlvertexformat/char.md)
+### 8-bit integer formats
+- [MTLVertexFormat.char](./char.md)
   An 8-bit, signed integer value.
-- [MTLVertexFormat.char2](mtlvertexformat/char2.md)
+- [MTLVertexFormat.char2](./char2.md)
   A two-component vector with 8-bit, signed integer values.
-- [MTLVertexFormat.char3](mtlvertexformat/char3.md)
+- [MTLVertexFormat.char3](./char3.md)
   A three-component vector with 8-bit, signed integer values.
-- [MTLVertexFormat.char4](mtlvertexformat/char4.md)
+- [MTLVertexFormat.char4](./char4.md)
   A four-component vector with 8-bit, signed integer values.
-- [MTLVertexFormat.uchar2](mtlvertexformat/uchar2.md)
+- [MTLVertexFormat.uchar2](./uchar2.md)
   A two-component vector with 8-bit, unsigned integer values.
-- [MTLVertexFormat.uchar3](mtlvertexformat/uchar3.md)
+- [MTLVertexFormat.uchar3](./uchar3.md)
   A three-component vector with 8-bit, unsigned integer values.
-- [MTLVertexFormat.uchar4](mtlvertexformat/uchar4.md)
+- [MTLVertexFormat.uchar4](./uchar4.md)
   A four-component vector with 8-bit, unsigned integer values.
 
 

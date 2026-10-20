@@ -1,7 +1,8 @@
 # comment
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Additional text information about the voice. Some synthesizers use this field to store a phrase that can be spoken.
 
@@ -12,6 +13,10 @@ Additional text information about the voice. Some synthesizers use this field to
 
 ```swift
 var comment: Str255
+```
+
+```c
+Str255 comment;
 ```
 
 

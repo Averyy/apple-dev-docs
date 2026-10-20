@@ -1,7 +1,8 @@
 # CKRecordChangedErrorAncestorRecordKey
 
 **Framework**: CloudKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key to retrieve the original version of the record.
 
@@ -10,7 +11,7 @@ The key to retrieve the original version of the record.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,11 +21,16 @@ The key to retrieve the original version of the record.
 let CKRecordChangedErrorAncestorRecordKey: String
 ```
 
+```c
+extern NSString * const CKRecordChangedErrorAncestorRecordKey;
+```
+
 ## See Also
 
-- [let CKRecordChangedErrorClientRecordKey: String](ckrecordchangederrorclientrecordkey.md)
+### Record Changed Error Keys
+- [let CKRecordChangedErrorClientRecordKey: String](./ckrecordchangederrorclientrecordkey.md)
   The key to retrieve the local version of the record.
-- [let CKRecordChangedErrorServerRecordKey: String](ckrecordchangederrorserverrecordkey.md)
+- [let CKRecordChangedErrorServerRecordKey: String](./ckrecordchangederrorserverrecordkey.md)
   The key to retrieve the server’s version of the record.
 
 

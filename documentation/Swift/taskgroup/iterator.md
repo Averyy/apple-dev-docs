@@ -1,7 +1,8 @@
 # TaskGroup.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides an iteration interface over the results of tasks added to the group.
 
@@ -20,6 +21,8 @@ A type that provides an iteration interface over the results of tasks added to t
 struct Iterator
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable`.
+
 #### Overview
 
 The elements returned by this iterator appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group.
@@ -35,31 +38,32 @@ group.addTask { 2 }
 for await r in group { print(r) }
 ```
 
-> **Note**: `TaskGroup.next()`
+> **See Also**: `TaskGroup.next()`
 
 ## Topics
 
 ### Instance Methods
-- [func cancel()](taskgroup/iterator/cancel.md)
-- [func next() async -> TaskGroup<ChildTaskResult>.Iterator.Element?](taskgroup/iterator/next.md)
+- [func cancel()](./iterator/cancel%28%29.md)
+- [func next() async -> TaskGroup<ChildTaskResult>.Iterator.Element?](./iterator/next%28%29.md)
   Advances to and returns the result of the next child task.
-- [func next(isolation: isolated (any Actor)?) async -> TaskGroup<ChildTaskResult>.Iterator.Element?](taskgroup/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async -> TaskGroup<ChildTaskResult>.Iterator.Element?](./iterator/next%28isolation%29.md)
   Advances to and returns the result of the next child task.
 ### Type Aliases
-- [TaskGroup.Iterator.Element](taskgroup/iterator/element.md)
+- [TaskGroup.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](taskgroup/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
 
 ## See Also
 
-- [TaskGroup.Element](taskgroup/element.md)
+### Supporting Types
+- [TaskGroup.Element](./element.md)
   The type of element produced by this asynchronous sequence.
-- [TaskGroup.AsyncIterator](taskgroup/asynciterator.md)
+- [TaskGroup.AsyncIterator](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
 

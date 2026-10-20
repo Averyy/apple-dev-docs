@@ -1,7 +1,8 @@
 # PersonNameComponents.AttributedStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,21 +22,21 @@ struct AttributedStyle
 ## Topics
 
 ### Initializers
-- [init(style: PersonNameComponents.FormatStyle.Style, locale: Locale)](personnamecomponents/attributedstyle/init(style:locale:).md)
+- [init(style: PersonNameComponents.FormatStyle.Style, locale: Locale)](./attributedstyle/init%28style,locale%29.md)
 ### Instance Properties
-- [var locale: Locale](personnamecomponents/attributedstyle/locale.md)
-- [var style: PersonNameComponents.FormatStyle.Style](personnamecomponents/attributedstyle/style.md)
+- [var locale: Locale](./attributedstyle/locale.md)
+- [var style: PersonNameComponents.FormatStyle.Style](./attributedstyle/style.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

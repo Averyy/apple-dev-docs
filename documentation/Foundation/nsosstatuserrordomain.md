@@ -1,7 +1,8 @@
 # NSOSStatusErrorDomain
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Mac OS 9/Carbon errors
 
@@ -20,19 +21,24 @@ Mac OS 9/Carbon errors
 let NSOSStatusErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NSOSStatusErrorDomain;
+```
+
 ## See Also
 
-- [let NSCocoaErrorDomain: String](nscocoaerrordomain.md)
+### Error Domains
+- [let NSCocoaErrorDomain: String](./nscocoaerrordomain.md)
   Cocoa errors
-- [let NSPOSIXErrorDomain: String](nsposixerrordomain.md)
+- [let NSPOSIXErrorDomain: String](./nsposixerrordomain.md)
   POSIX/BSD errors
-- [let NSMachErrorDomain: String](nsmacherrordomain.md)
+- [let NSMachErrorDomain: String](./nsmacherrordomain.md)
   Mach errors
-- [let NSURLErrorDomain: String](nsurlerrordomain.md)
+- [let NSURLErrorDomain: String](./nsurlerrordomain.md)
   URL loading system errors
-- [let NSStreamSOCKSErrorDomain: String](nsstreamsockserrordomain.md)
+- [let NSStreamSOCKSErrorDomain: String](./nsstreamsockserrordomain.md)
   The error domain used by `NSError` when reporting SOCKS errors.
-- [let NSStreamSocketSSLErrorDomain: String](nsstreamsocketsslerrordomain.md)
+- [let NSStreamSocketSSLErrorDomain: String](./nsstreamsocketsslerrordomain.md)
   The error domain used by `NSError` when reporting SSL errors.
 
 

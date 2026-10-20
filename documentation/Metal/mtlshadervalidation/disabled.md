@@ -1,7 +1,8 @@
 # MTLShaderValidation.disabled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disables shader validation.
 
@@ -19,11 +20,16 @@ Disables shader validation.
 case disabled
 ```
 
+```c
+MTLShaderValidationDisabled
+```
+
 ## See Also
 
-- [MTLShaderValidation.default](mtlshadervalidation/default.md)
+### Validation states
+- [MTLShaderValidation.default](./default.md)
   The default value when the property isn’t set.
-- [MTLShaderValidation.enabled](mtlshadervalidation/enabled.md)
+- [MTLShaderValidation.enabled](./enabled.md)
   Enables shader validation.
 
 

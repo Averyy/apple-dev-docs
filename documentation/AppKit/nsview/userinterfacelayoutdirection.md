@@ -1,7 +1,8 @@
 # userInterfaceLayoutDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction for content in the view.
 
@@ -14,11 +15,15 @@ The layout direction for content in the view.
 var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 ```
 
+```objc
+@property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
+```
+
 #### Discussion
 
 Different languages support different directions for laying out content. While many languages support left-to-right layout, some support right-to-left layout. This property contains the preferred layout direction employed by the view. It is the responsibility of the view to respect this value and lay out its content appropriately.
 
-In macOS 10.9 and later, if no layout direction is set explicitly, this property contains the value reported by the app’s [`userInterfaceLayoutDirection`](nsapplication/userinterfacelayoutdirection.md) property. In prior versions of macOS, it returns the value [`NSUserInterfaceLayoutDirection.leftToRight`](nsuserinterfacelayoutdirection/lefttoright.md) by default. Certain AppKit subclasses, such as [`NSOutlineView`](nsoutlineview.md), respect the value returned by this method and adjust their layout accordingly.
+In macOS 10.9 and later, if no layout direction is set explicitly, this property contains the value reported by the app’s [`userInterfaceLayoutDirection`](../nsapplication/userinterfacelayoutdirection.md) property. In prior versions of macOS, it returns the value [`NSUserInterfaceLayoutDirection.leftToRight`](../nsuserinterfacelayoutdirection/lefttoright.md) by default. Certain AppKit subclasses, such as [`NSOutlineView`](../nsoutlineview.md), respect the value returned by this method and adjust their layout accordingly.
 
 
 ---

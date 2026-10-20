@@ -1,7 +1,8 @@
 # invalidResourceCodeSignature
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a resource failed the bundle’s code signature checks.
 

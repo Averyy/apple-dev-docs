@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Intitializes a timestamp that represents the current time.
 
@@ -11,9 +12,14 @@ Intitializes a timestamp that represents the current time.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(absoluteTime: UInt64, date: Date)](xctperformancemeasurementtimestamp/init(absolutetime:date:).md)
+### Initializers
+- [init(absoluteTime: UInt64, date: Date)](./init%28absolutetime,date%29.md)
   Intitializes a timestamp that represents the provided time.
 
 

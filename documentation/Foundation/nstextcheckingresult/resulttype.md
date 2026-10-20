@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the text checking result type that the receiver represents.
 
@@ -20,19 +21,24 @@ Returns the text checking result type that the receiver represents.
 var resultType: NSTextCheckingResult.CheckingType { get }
 ```
 
+```objc
+@property (readonly) NSTextCheckingType resultType;
+```
+
 #### Discussion
 
-The possible result types for the built in checking capabilities are described in [`NSTextCheckingResult.CheckingType`](nstextcheckingresult/checkingtype.md).
+The possible result types for the built in checking capabilities are described in [`NSTextCheckingResult.CheckingType`](./checkingtype.md).
 
 This property will be present for all returned `NSTextCheckingResult` instances.
 
 ## See Also
 
-- [var range: NSRange](nstextcheckingresult/range.md)
+### Text Checking Type Range and Type
+- [var range: NSRange](./range.md)
   Returns the range of the result that the receiver represents.
-- [var numberOfRanges: Int](nstextcheckingresult/numberofranges.md)
+- [var numberOfRanges: Int](./numberofranges.md)
   Returns the number of ranges.
-- [func range(at: Int) -> NSRange](nstextcheckingresult/range(at:).md)
+- [func range(at: Int) -> NSRange](./range%28at%29.md)
   Returns the result type that the range represents.
 
 

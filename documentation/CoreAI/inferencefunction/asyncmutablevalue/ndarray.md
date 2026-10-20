@@ -1,7 +1,8 @@
 # ndArray
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Consume this value to access the underlying NDArray once any pending write is complete.
 
@@ -28,7 +29,8 @@ The underlying ndArray or `nil` if this was not an ndArray value.
 
 ## See Also
 
-- [var pixelBuffer: CVMutablePixelBuffer?](inferencefunction/asyncmutablevalue/pixelbuffer.md)
+### Accessing an async mutable value
+- [var pixelBuffer: CVMutablePixelBuffer?](./pixelbuffer.md)
   Consume this value to access the underlying pixel buffer once any pending write is complete.
 
 

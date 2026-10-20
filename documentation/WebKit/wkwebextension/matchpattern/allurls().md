@@ -1,7 +1,8 @@
 # allURLs()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a pattern object for `<all_urls>`.
 
@@ -16,6 +17,10 @@ Returns a pattern object for `<all_urls>`.
 
 ```swift
 class func allURLs() -> Self
+```
+
+```objc
++ (instancetype) allURLsMatchPattern;
 ```
 
 

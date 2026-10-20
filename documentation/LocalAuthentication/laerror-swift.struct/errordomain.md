@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+
@@ -19,7 +20,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let LAErrorDomain: String](laerrordomain.md)
+### Error Characteristics
+- [let LAErrorDomain: String](../laerrordomain.md)
   The error domain that the framework uses when issuing errors.
 
 

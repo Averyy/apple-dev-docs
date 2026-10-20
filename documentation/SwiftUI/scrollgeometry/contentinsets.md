@@ -1,7 +1,8 @@
 # contentInsets
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content insets of the scroll view.
 

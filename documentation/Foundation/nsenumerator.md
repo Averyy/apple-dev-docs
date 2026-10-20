@@ -1,7 +1,8 @@
 # NSEnumerator
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class whose subclasses enumerate collections of objects, such as arrays and dictionaries.
 
@@ -20,11 +21,15 @@ An abstract class whose subclasses enumerate collections of objects, such as arr
 class NSEnumerator
 ```
 
+```objc
+@interface NSEnumerator : NSObject
+```
+
 #### Overview
 
-All creation methods are defined in the collection classes—such as [`NSArray`](nsarray.md), [`NSSet`](nsset.md), and [`NSDictionary`](nsdictionary.md)—which provide special [`NSEnumerator`](nsenumerator.md) objects with which to enumerate their contents. For example, `NSArray` has two methods that return an [`NSEnumerator`](nsenumerator.md) object: [`objectEnumerator()`](nsset/objectenumerator().md) and [`reverseObjectEnumerator()`](nsarray/reverseobjectenumerator().md). `NSDictionary` also has two methods that return an [`NSEnumerator`](nsenumerator.md) object: [`keyEnumerator()`](nsdictionary/keyenumerator().md) and [`objectEnumerator()`](nsdictionary/objectenumerator().md). These methods let you enumerate the contents of a dictionary by key or by value, respectively.
+All creation methods are defined in the collection classes—such as [`NSArray`](./nsarray.md), [`NSSet`](./nsset.md), and [`NSDictionary`](./nsdictionary.md)—which provide special [`NSEnumerator`](./nsenumerator.md) objects with which to enumerate their contents. For example, `NSArray` has two methods that return an [`NSEnumerator`](./nsenumerator.md) object: [`objectEnumerator()`](./nsset/objectenumerator%28%29.md) and [`reverseObjectEnumerator()`](./nsarray/reverseobjectenumerator%28%29.md). `NSDictionary` also has two methods that return an [`NSEnumerator`](./nsenumerator.md) object: [`keyEnumerator()`](./nsdictionary/keyenumerator%28%29.md) and [`objectEnumerator()`](./nsdictionary/objectenumerator%28%29.md). These methods let you enumerate the contents of a dictionary by key or by value, respectively.
 
-You send [`nextObject()`](nsenumerator/nextobject().md) repeatedly to a newly created [`NSEnumerator`](nsenumerator.md) object to have it return the next object in the original collection. When the collection is exhausted, `nil` is returned. You cannot “reset” an enumerator after it has exhausted its collection. To enumerate a collection again, you need a new enumerator.
+You send [`nextObject()`](./nsenumerator/nextobject%28%29.md) repeatedly to a newly created [`NSEnumerator`](./nsenumerator.md) object to have it return the next object in the original collection. When the collection is exhausted, `nil` is returned. You cannot “reset” an enumerator after it has exhausted its collection. To enumerate a collection again, you need a new enumerator.
 
 The enumerator subclasses used by `NSArray`, `NSDictionary`, and `NSSet` retain the collection during enumeration. When the enumeration is exhausted, the collection is released.
 
@@ -33,41 +38,42 @@ The enumerator subclasses used by `NSArray`, `NSDictionary`, and `NSSet` retain 
 ## Topics
 
 ### Getting the Enumerated Objects
-- [var allObjects: [Any]](nsenumerator/allobjects.md)
+- [var allObjects: [Any]](./nsenumerator/allobjects.md)
   The array of unenumerated objects.
-- [func nextObject() -> Any?](nsenumerator/nextobject.md)
+- [func nextObject() -> Any?](./nsenumerator/nextobject%28%29.md)
   Returns the next object from the collection being enumerated.
 ### Default Implementations
-- [Sequence Implementations](nsenumerator/sequence-implementations.md)
+- [Sequence Implementations](./nsenumerator/sequence-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [FileManager.DirectoryEnumerator](filemanager/directoryenumerator.md)
+- [FileManager.DirectoryEnumerator](./filemanager/directoryenumerator.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSFastEnumeration](nsfastenumeration.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sequence](../swift/sequence.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSFastEnumeration](./nsfastenumeration.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [protocol NSFastEnumeration](nsfastenumeration.md)
+### Iteration
+- [protocol NSFastEnumeration](./nsfastenumeration.md)
   A protocol that objects adopt to support fast enumeration.
-- [struct NSFastEnumerationIterator](nsfastenumerationiterator.md)
-- [struct NSIndexSetIterator](nsindexsetiterator.md)
+- [struct NSFastEnumerationIterator](./nsfastenumerationiterator.md)
+- [struct NSIndexSetIterator](./nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
-- [struct NSEnumerationOptions](nsenumerationoptions.md)
+- [struct NSEnumerationOptions](./nsenumerationoptions.md)
   Options for block enumeration operations.
-- [struct NSSortOptions](nssortoptions.md)
+- [struct NSSortOptions](./nssortoptions.md)
   Options for block sorting operations.
 
 

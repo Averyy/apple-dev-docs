@@ -1,7 +1,8 @@
 # allowFP16Conv2DWinogradTransformIntermediate
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Execute winograd transform intermediate as FP16.
 
@@ -17,6 +18,10 @@ Execute winograd transform intermediate as FP16.
 
 ```swift
 static var allowFP16Conv2DWinogradTransformIntermediate: MPSGraphReducedPrecisionFastMath { get }
+```
+
+```c
+MPSGraphReducedPrecisionFastMathAllowFP16Conv2DWinogradTransformIntermediate
 ```
 
 

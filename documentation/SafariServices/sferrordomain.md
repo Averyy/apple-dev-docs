@@ -1,7 +1,8 @@
 # SFErrorDomain
 
 **Framework**: Safari Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for content blocker or Safari app extension errors.
 
@@ -18,11 +19,16 @@ The domain for content blocker or Safari app extension errors.
 let SFErrorDomain: String
 ```
 
+```c
+extern NSString * const SFErrorDomain;
+```
+
 ## See Also
 
-- [struct SFError](sferror.md)
+### Miscellaneous errors
+- [struct SFError](./sferror.md)
   A content blocker or Safari app extension error.
-- [SFError.Code](sferror/code.md)
+- [SFError.Code](./sferror/code.md)
   Messages that describe a content blocker or Safari app extension error.
 
 

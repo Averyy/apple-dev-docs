@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.Target.builtIn
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A drawable that is targeting the built-in display, this is what a user will see in the device.
 
@@ -13,6 +14,10 @@ A drawable that is targeting the built-in display, this is what a user will see 
 
 ```swift
 case builtIn
+```
+
+```c
+cp_drawable_target_built_in
 ```
 
 

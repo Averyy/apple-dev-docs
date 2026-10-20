@@ -1,7 +1,8 @@
 # Transcript.Attachment
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of attached content.
 
@@ -22,22 +23,23 @@ The types of attached content.
 ## Topics
 
 ### Image attachment case
-- [case image(Transcript.ImageAttachment)](transcript/attachment/image(_:).md)
+- [case image(Transcript.ImageAttachment)](./attachment/image%28_%29.md)
   An attached image.
 ### Enumeration Cases
-- [case data(Transcript.DataAttachment)](transcript/attachment/data(_:).md)
+- [case data(Transcript.DataAttachment)](./attachment/data%28_%29.md)
   An attached data payload identified by a content type identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.ImageAttachment](transcript/imageattachment.md)
+### Attachments
+- [Transcript.ImageAttachment](./imageattachment.md)
   An image attachment in a transcript entry.
 
 

@@ -1,14 +1,15 @@
 # kmod_control_flavor_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef int kmod_control_flavor_t;
 ```
 

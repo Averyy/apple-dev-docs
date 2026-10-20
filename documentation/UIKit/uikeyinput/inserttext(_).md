@@ -2,16 +2,17 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts a character into the displayed text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Inserts a character into the displayed text.
 func insertText(_ text: String)
 ```
 
+```objc
+- (void) insertText:(NSString *) text;
+```
+
 ## Mentions
 
-- [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
+- [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
 #### Discussion
 
@@ -33,9 +38,10 @@ Add the character `text` to your class’s backing store at the index correspond
 
 ## See Also
 
-- [func deleteBackward()](uikeyinput/deletebackward.md)
+### Inserting and deleting text
+- [func deleteBackward()](./deletebackward%28%29.md)
   Deletes a character from the displayed text.
-- [var hasText: Bool](uikeyinput/hastext.md)
+- [var hasText: Bool](./hastext.md)
   A Boolean value that indicates whether the text-entry object has any text.
 
 

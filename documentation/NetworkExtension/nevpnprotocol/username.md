@@ -1,7 +1,8 @@
 # username
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user name component of the tunneling protocol authentication credential.
 
@@ -19,15 +20,20 @@ The user name component of the tunneling protocol authentication credential.
 var username: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * username;
+```
+
 ## See Also
 
-- [var passwordReference: Data?](nevpnprotocol/passwordreference.md)
+### Authenticating the user
+- [var passwordReference: Data?](./passwordreference.md)
   A persistent keychain reference to a keychain item containing the password component of the tunneling protocol authentication credential.
-- [var identityReference: Data?](nevpnprotocol/identityreference.md)
+- [var identityReference: Data?](./identityreference.md)
   A persistent keychain reference to a keychain item containing the certificate and private key components of the tunneling protocol authentication credential.
-- [var identityData: Data?](nevpnprotocol/identitydata.md)
+- [var identityData: Data?](./identitydata.md)
   The certificate and private key components of the tunneling protocol authentication credential, in PKCS12 format.
-- [var identityDataPassword: String?](nevpnprotocol/identitydatapassword.md)
+- [var identityDataPassword: String?](./identitydatapassword.md)
   The password for the PKCS12 tunneling protocol authentication credentials.
 
 

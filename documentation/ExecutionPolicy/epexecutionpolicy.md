@@ -1,7 +1,8 @@
 # EPExecutionPolicy
 
 **Framework**: Execution Policy  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,28 +14,33 @@
 class EPExecutionPolicy
 ```
 
+```objc
+@interface EPExecutionPolicy : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init()](epexecutionpolicy/init.md)
+- [init()](./epexecutionpolicy/init%28%29.md)
 ### Instance Methods
-- [func addException(for: URL) throws](epexecutionpolicy/addexception(for:).md)
+- [func addException(for: URL) throws](./epexecutionpolicy/addexception%28for%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class EPDeveloperTool](epdevelopertool.md)
+### Classes
+- [class EPDeveloperTool](./epdevelopertool.md)
 
 
 ---

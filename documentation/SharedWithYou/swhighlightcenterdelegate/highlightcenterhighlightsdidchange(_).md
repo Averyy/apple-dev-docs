@@ -2,6 +2,7 @@
 
 **Framework**: Shared with You  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the delegate that the list or rank order of surfaced highlights has changed.
@@ -18,6 +19,10 @@ Notifies the delegate that the list or rank order of surfaced highlights has cha
 
 ```swift
 func highlightCenterHighlightsDidChange(_ highlightCenter: SWHighlightCenter)
+```
+
+```objc
+- (void) highlightCenterHighlightsDidChange:(SWHighlightCenter *) highlightCenter;
 ```
 
 #### Discussion

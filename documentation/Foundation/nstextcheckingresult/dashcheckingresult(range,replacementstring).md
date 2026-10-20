@@ -1,7 +1,8 @@
 # dashCheckingResult(range:replacementString:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified dash corrected replacement string.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified dash corrected rep
 class func dashCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) dashCheckingResultWithRange:(NSRange) range replacementString:(NSString *) replacementString;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`dash`](nstextcheckingresult/checkingtype/dash.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`dash`](./checkingtype/dash.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [class func quoteCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult](nstextcheckingresult/quotecheckingresult(range:replacementstring:).md)
+### Text Checking Results for Typography
+- [class func quoteCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult](./quotecheckingresult%28range,replacementstring%29.md)
   Creates and returns a text checking result with the specified quote-balanced replacement string.
 
 

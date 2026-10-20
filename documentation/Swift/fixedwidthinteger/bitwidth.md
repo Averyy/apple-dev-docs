@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The number of bits used for the underlying binary representation of values of this type.
@@ -24,6 +25,12 @@ static var bitWidth: Int { get }
 #### Discussion
 
 An unsigned, fixed-width integer type can represent values from 0 through `(2 ** bitWidth) - 1`, where `**` is exponentiation. A signed, fixed-width integer type can represent values from `-(2 ** (bitWidth - 1))` through `(2 ** (bitWidth - 1)) - 1`. For example, the `Int8` type has a `bitWidth` value of 8 and can store any integer in the range `-128...127`.
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [var bitWidth: Int](../binaryinteger/bitwidth-57x70.md)
+  The number of bits in the current binary representation of this value.
 
 
 ---

@@ -1,7 +1,8 @@
 # kSecACLAuthorizationSign
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Digitally sign data.
 
@@ -12,6 +13,10 @@ Digitally sign data.
 
 ```swift
 let kSecACLAuthorizationSign: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationSign;
 ```
 
 

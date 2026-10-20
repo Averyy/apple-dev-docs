@@ -1,23 +1,26 @@
 # GameCenterEnabledVersionCompatibleVersionsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response body that contains a list of related resource IDs.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 3.0
+
+> **Deprecated**: This object is deprecated. Use [`GameCenterAppVersionCompatibilityVersionsLinkagesResponse`](./gamecenterappversioncompatibilityversionslinkagesresponse.md) instead.
 
 ## Declaration
 
-```swift
+```
 object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse.Data](gamecenterenabledversioncompatibleversionslinkagesresponse/data-data.dictionary.md)
+- [object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse.Data](./gamecenterenabledversioncompatibleversionslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
 ## Properties
@@ -28,13 +31,14 @@ object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse
 
 ## See Also
 
-- [object GameCenterEnabledVersion](gamecenterenabledversion.md)
-  An app version with Game Center enabled. Deprecated in API version 3.0; use [`GameCenterAppVersion`](gamecenterappversion.md) instead.
-- [object GameCenterEnabledVersionCompatibleVersionsLinkagesRequest](gamecenterenabledversioncompatibleversionslinkagesrequest.md)
+### Objects
+- [object GameCenterEnabledVersion](./gamecenterenabledversion.md)
+  An app version with Game Center enabled. Deprecated in API version 3.0; use [`GameCenterAppVersion`](./gamecenterappversion.md) instead.
+- [object GameCenterEnabledVersionCompatibleVersionsLinkagesRequest](./gamecenterenabledversioncompatibleversionslinkagesrequest.md)
   A request body you use to add or remove compatible versions from a Game Center-enabled version.
-- [object GameCenterEnabledVersionsResponse](gamecenterenabledversionsresponse.md)
+- [object GameCenterEnabledVersionsResponse](./gamecenterenabledversionsresponse.md)
   A response containing a list of app versions with Game Center enabled (deprecated; use GameCenterAppVersion).
-- [object AppGameCenterEnabledVersionsLinkagesResponse](appgamecenterenabledversionslinkagesresponse.md)
+- [object AppGameCenterEnabledVersionsLinkagesResponse](./appgamecenterenabledversionslinkagesresponse.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # NSRuleEditor.RowType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies a type for row types.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 enum RowType
+```
+
+```c
+enum NSRuleEditorRowType : NSUInteger;
 ```
 
 #### Overview
@@ -21,34 +26,35 @@ See `Row Types` for possible values.
 ## Topics
 
 ### Enumeration Cases
-- [NSRuleEditor.RowType.compound](nsruleeditor/rowtype/compound.md)
+- [NSRuleEditor.RowType.compound](./rowtype/compound.md)
   Specifies a compound row.
-- [NSRuleEditor.RowType.simple](nsruleeditor/rowtype/simple.md)
+- [NSRuleEditor.RowType.simple](./rowtype/simple.md)
   Specifies a simple row.
 ### Initializers
-- [init?(rawValue: UInt)](nsruleeditor/rowtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./rowtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var numberOfRows: Int](nsruleeditor/numberofrows.md)
+### Obtaining Row Information
+- [var numberOfRows: Int](./numberofrows.md)
   The number of rows in the rule editor.
-- [func parentRow(forRow: Int) -> Int](nsruleeditor/parentrow(forrow:).md)
+- [func parentRow(forRow: Int) -> Int](./parentrow%28forrow%29.md)
   Returns the index of the parent of a given row.
-- [func row(forDisplayValue: Any) -> Int](nsruleeditor/row(fordisplayvalue:).md)
+- [func row(forDisplayValue: Any) -> Int](./row%28fordisplayvalue%29.md)
   Returns the index of the row containing a given value.
-- [func rowType(forRow: Int) -> NSRuleEditor.RowType](nsruleeditor/rowtype(forrow:).md)
+- [func rowType(forRow: Int) -> NSRuleEditor.RowType](./rowtype%28forrow%29.md)
   Returns the type of a given row.
-- [func subrowIndexes(forRow: Int) -> IndexSet](nsruleeditor/subrowindexes(forrow:).md)
+- [func subrowIndexes(forRow: Int) -> IndexSet](./subrowindexes%28forrow%29.md)
   Returns the immediate subrows of a given row.
 
 

@@ -1,7 +1,8 @@
 # canvas(location:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an anchor at the specified location in the paper markup coordinates.
 

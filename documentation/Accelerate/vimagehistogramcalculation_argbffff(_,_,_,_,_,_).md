@@ -1,7 +1,8 @@
 # vImageHistogramCalculation_ARGBFFFF(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the histogram of a 32-bit-per-channel, 4-channel interleaved buffer.
 
@@ -20,13 +21,17 @@ Calculates the histogram of a 32-bit-per-channel, 4-channel interleaved buffer.
 func vImageHistogramCalculation_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, _ histogram: UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, _ histogram_entries: UInt32, _ minVal: Pixel_F, _ maxVal: Pixel_F, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageHistogramCalculation_ARGBFFFF(const vImage_Buffer *src, vImagePixelCount * histogram[4], unsigned int histogram_entries, Pixel_F minVal, Pixel_F maxVal, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-The following code populates the `histogramAlpha` , `histogramRed`, `histogramGreen`, and `histogramBlue` arrays with the histograms for each channel of the specified [`vImage_Buffer`](vimage_buffer.md) structure:
+The following code populates the `histogramAlpha` , `histogramRed`, `histogramGreen`, and `histogramBlue` arrays with the histograms for each channel of the specified [`vImage_Buffer`](./vimage_buffer.md) structure:
 
 **Swift**:
 
@@ -120,19 +125,23 @@ printf("Blue:  %lu %lu\n", (unsigned long)histogramBlue[25],  (unsigned long)his
 - `histogram_entries`: The number of histogram entries.
 - `minVal`: The minimum pixel value. The operation assigns pixel values less than `minVal` to the first histogram entry.
 - `maxVal`: The maximum pixel value. The operation assigns pixel values greater than `maxVal` to the last histogram entry.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To specify that the function doesn’t calculate the alpha channel histogram, set the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  To specify that the function doesn’t calculate the alpha channel histogram, set the [`kvImageLeaveAlphaUnchanged`](./kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 
-- [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
+### Related Documentation
+- [Enhancing image contrast with histogram manipulation](./enhancing-image-contrast-with-histogram-manipulation.md)
   Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
-- [Specifying histograms with vImage](specifying-histograms-with-vimage.md)
+- [Specifying histograms with vImage](./specifying-histograms-with-vimage.md)
   Calculate the histogram of one image, and apply it to a second image.
-- [func vImageHistogramCalculation_Planar8(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<vImagePixelCount>, vImage_Flags) -> vImage_Error](vimagehistogramcalculation_planar8(_:_:_:).md)
+### Calculating a histogram
+- [func vImageHistogramCalculation_Planar8(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<vImagePixelCount>, vImage_Flags) -> vImage_Error](./vimagehistogramcalculation_planar8%28_,_,_%29.md)
   Calculates the histogram of an 8-bit planar buffer.
-- [func vImageHistogramCalculation_PlanarF(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<vImagePixelCount>, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](vimagehistogramcalculation_planarf(_:_:_:_:_:_:).md)
+- [func vImageHistogramCalculation_PlanarF(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<vImagePixelCount>, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](./vimagehistogramcalculation_planarf%28_,_,_,_,_,_%29.md)
   Calculates the histogram of a 32-bit planar buffer.
-- [func vImageHistogramCalculation_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, vImage_Flags) -> vImage_Error](vimagehistogramcalculation_argb8888(_:_:_:).md)
+- [func vImageHistogramCalculation_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, vImage_Flags) -> vImage_Error](./vimagehistogramcalculation_argb8888%28_,_,_%29.md)
   Calculates the histogram of an 8-bit-per-channel, 4-channel interleaved buffer.
 
 

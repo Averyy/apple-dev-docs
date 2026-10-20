@@ -1,7 +1,8 @@
 # WKWebExtension.MessagePort.Error.Code.messageInvalid
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the message is invalid.
 
@@ -16,6 +17,10 @@ Indicates that the message is invalid.
 
 ```swift
 case messageInvalid
+```
+
+```c
+WKWebExtensionMessagePortErrorMessageInvalid
 ```
 
 #### Discussion

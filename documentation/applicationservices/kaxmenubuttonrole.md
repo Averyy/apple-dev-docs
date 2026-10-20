@@ -1,7 +1,8 @@
 # kAXMenuButtonRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A menu button.
 
@@ -12,6 +13,10 @@ A menu button.
 
 ```swift
 var kAXMenuButtonRole: String { get }
+```
+
+```c
+#define kAXMenuButtonRole
 ```
 
 

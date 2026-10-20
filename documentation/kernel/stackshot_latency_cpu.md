@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_latency_cpu {
     ...
 };
@@ -17,18 +17,18 @@ struct stackshot_latency_cpu {
 ## Topics
 
 ### Instance Properties
-- [cluster_type](stackshot_latency_cpu/4395269-cluster_type.md)
-- [cpu_number](stackshot_latency_cpu/4395270-cpu_number.md)
-- [faulting_time_mt](stackshot_latency_cpu/4395271-faulting_time_mt.md)
-- [init_latency_mt](stackshot_latency_cpu/4395272-init_latency_mt.md)
-- [intercluster_buf_used](stackshot_latency_cpu/4395273-intercluster_buf_used.md)
-- [tasks_processed](stackshot_latency_cpu/4395274-tasks_processed.md)
-- [threads_processed](stackshot_latency_cpu/4395275-threads_processed.md)
-- [total_buf](stackshot_latency_cpu/4395276-total_buf.md)
-- [total_cycles](stackshot_latency_cpu/4395277-total_cycles.md)
-- [total_instrs](stackshot_latency_cpu/4395278-total_instrs.md)
-- [total_latency_mt](stackshot_latency_cpu/4395279-total_latency_mt.md)
-- [workqueue_latency_mt](stackshot_latency_cpu/4395280-workqueue_latency_mt.md)
+- [cluster_type](./stackshot_latency_cpu/api-4395269-cluster_type.md)
+- [cpu_number](./stackshot_latency_cpu/api-4395270-cpu_number.md)
+- [faulting_time_mt](./stackshot_latency_cpu/api-4395271-faulting_time_mt.md)
+- [init_latency_mt](./stackshot_latency_cpu/api-4395272-init_latency_mt.md)
+- [intercluster_buf_used](./stackshot_latency_cpu/api-4395273-intercluster_buf_used.md)
+- [tasks_processed](./stackshot_latency_cpu/api-4395274-tasks_processed.md)
+- [threads_processed](./stackshot_latency_cpu/api-4395275-threads_processed.md)
+- [total_buf](./stackshot_latency_cpu/api-4395276-total_buf.md)
+- [total_cycles](./stackshot_latency_cpu/api-4395277-total_cycles.md)
+- [total_instrs](./stackshot_latency_cpu/api-4395278-total_instrs.md)
+- [total_latency_mt](./stackshot_latency_cpu/api-4395279-total_latency_mt.md)
+- [workqueue_latency_mt](./stackshot_latency_cpu/api-4395280-workqueue_latency_mt.md)
 
 
 ---

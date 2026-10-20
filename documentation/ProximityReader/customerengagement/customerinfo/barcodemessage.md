@@ -1,7 +1,8 @@
 # barcodeMessage
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A message for the barcode.
 
@@ -22,11 +23,12 @@ The value is the `message` field of the barcode dictionary of the selected pass.
 
 ## See Also
 
-- [let customerVASData: Data?](customerengagement/customerinfo/customervasdata.md)
+### Getting customer information details
+- [let customerVASData: Data?](./customervasdata.md)
   The encrypted VAS content of a selected Wallet pass.
-- [let emailAddress: String?](customerengagement/customerinfo/emailaddress.md)
+- [let emailAddress: String?](./emailaddress.md)
   The customer’s email address or Hide My Email address if supported.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/customerinfo/phonenumber.md)
+- [let phoneNumber: CNPhoneNumber?](./phonenumber.md)
   The customer’s phone number, if provided.
 
 

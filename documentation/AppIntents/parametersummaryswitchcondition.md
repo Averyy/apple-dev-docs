@@ -1,7 +1,8 @@
 # ParameterSummarySwitchCondition
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a switch statement in a parameter summary.
 
@@ -11,7 +12,7 @@ A type that represents a switch statement in a parameter summary.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,36 +24,37 @@ struct ParameterSummarySwitchCondition<Intent, Value, CaseCondition> where Inten
 ## Topics
 
 ### Creating a switch condition
-- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-4vxvs.md)
+- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](./parametersummaryswitchcondition/init%28_,_%29-4vxvs.md)
   Initializes a parameter summary Switch statement over widget family.
-- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](./parametersummaryswitchcondition/init%28_,_%29-6cdw3.md)
   Creates a `Switch` statement that branches based on union value parameter cases.
-- [enum ParameterSummaryCaseBuilder](parametersummarycasebuilder.md)
+- [enum ParameterSummaryCaseBuilder](./parametersummarycasebuilder.md)
   A result builder that allows you to declaratively describe the cases of a switch statement in a parameter summary.
-- [ParameterSummarySwitchCondition.WidgetFamily](parametersummaryswitchcondition/widgetfamily.md)
+- [ParameterSummarySwitchCondition.WidgetFamily](./parametersummaryswitchcondition/widgetfamily.md)
   An enum that represents a parameter summary Switch statement over widget family.
 ### Initializers
-- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-8b7di.md)
+- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](./parametersummaryswitchcondition/init%28_,_%29-8b7di.md)
   Creates a `Switch` statement that branches based on union value parameter cases.
 
 ## Relationships
 
 ### Conforms To
-- [ParameterSummary](parametersummary.md)
+- [ParameterSummary](./parametersummary.md)
 
 ## See Also
 
-- [protocol ParameterSummary](parametersummary.md)
+### Shortcuts support
+- [protocol ParameterSummary](./parametersummary.md)
   An interface for defining the visual representation of an app intent’s parameters.
-- [struct IntentParameterSummary](intentparametersummary.md)
+- [struct IntentParameterSummary](./intentparametersummary.md)
   A type that describes the user interface configuration of an app intent’s parameters.
-- [struct ParameterSummaryString](parametersummarystring.md)
+- [struct ParameterSummaryString](./parametersummarystring.md)
   A human-readable string that interpolates parameter key paths to provide user-configurable placeholders in the Shortcuts app.
-- [struct ParameterSummaryWhenCondition](parametersummarywhencondition.md)
+- [struct ParameterSummaryWhenCondition](./parametersummarywhencondition.md)
   A type that represents a conditional statement in a parameter summary.
-- [struct ParameterSummaryCaseCondition](parametersummarycasecondition.md)
+- [struct ParameterSummaryCaseCondition](./parametersummarycasecondition.md)
   A type that represents an individual case of a switch statement in a parameter summary.
-- [struct ParameterSummaryDefaultCaseCondition](parametersummarydefaultcasecondition.md)
+- [struct ParameterSummaryDefaultCaseCondition](./parametersummarydefaultcasecondition.md)
   A type that represents the default case of a switch statement in a parameter summary.
 
 

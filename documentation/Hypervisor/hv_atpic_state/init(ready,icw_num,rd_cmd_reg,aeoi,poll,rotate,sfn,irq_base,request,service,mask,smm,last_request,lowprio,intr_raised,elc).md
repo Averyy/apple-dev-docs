@@ -1,10 +1,11 @@
 # init(ready:icw_num:rd_cmd_reg:aeoi:poll:rotate:sfn:irq_base:request:service:mask:smm:last_request:lowprio:intr_raised:elc:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(_:symbolName:values:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a discrete slider control that selects a value from a list.
 
@@ -31,9 +32,10 @@ Use discrete sliders when your app supports selecting from a specific list of va
 
 ## See Also
 
-- [convenience init(String, symbolName: String, in: ClosedRange<Float>)](avcaptureslider/init(_:symbolname:in:).md)
+### Creating a slider
+- [convenience init(String, symbolName: String, in: ClosedRange<Float>)](./init%28_,symbolname,in%29.md)
   Creates a continuous slider control that selects a value from a bounded range.
-- [convenience init(String, symbolName: String, in: ClosedRange<Float>, step: Float)](avcaptureslider/init(_:symbolname:in:step:).md)
+- [convenience init(String, symbolName: String, in: ClosedRange<Float>, step: Float)](./init%28_,symbolname,in,step%29.md)
   Creates a discrete slider control that selects a stepped value from a bounded range.
 
 

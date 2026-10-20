@@ -1,6 +1,7 @@
 # App Store Connect API 1.5 release notes
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Update your server-side code to use new features, and test your code against API changes.
 
@@ -8,13 +9,13 @@ Update your server-side code to use new features, and test your code against API
 
 App Store Connect API version 1.5 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+##### New features
 
-- [`Xcode Cloud Workflows and Builds`](xcode-cloud-workflows-and-builds.md) can now automate reading Xcode Cloud data, managing workflows, and starting builds.
-- [`App Store Version Release Requests`](app-store-version-release-requests.md) now support manually releasing an App Store-approved version of your app to the App Store.
-- The [`BetaGroup.Attributes`](betagroup/attributes-data.dictionary.md) adds an `isInternalGroup` property to support creating internal beta tester groups for TestFlight, in [`Beta Groups`](beta-groups.md).
-- The [`AppInfoLocalization.Attributes`](appinfolocalization/attributes-data.dictionary.md) in [`App Metadata`](app-metadata.md) adds a `privacyChoicesURL` property.
-- The API now supports JSON web tokens that can last longer than 20 minutes for resources that meet the required criteria. For more information, see [`Generating Tokens for API Requests`](generating-tokens-for-api-requests.md).
+- [Xcode Cloud Workflows and Builds](./xcode-cloud-workflows-and-builds.md) can now automate reading Xcode Cloud data, managing workflows, and starting builds.
+- [App Store Version Release Requests](./app-store-version-release-requests.md) now support manually releasing an App Store-approved version of your app to the App Store.
+- The [`BetaGroup.Attributes`](./betagroup/attributes-data.dictionary.md) adds an `isInternalGroup` property to support creating internal beta tester groups for TestFlight, in [Beta Groups](./beta-groups.md).
+- The [`AppInfoLocalization.Attributes`](./appinfolocalization/attributes-data.dictionary.md) in [App Metadata](./app-metadata.md) adds a `privacyChoicesURL` property.
+- The API now supports JSON web tokens that can last longer than 20 minutes for resources that meet the required criteria. For more information, see [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md).
 
 ##### Deprecations
 
@@ -22,35 +23,36 @@ App Store Connect API version 1.5 provides resources that enable you to automate
 
 ## See Also
 
-- [App Store Connect API 4.5.1 release notes](app-store-connect-api-4-5-1-release-notes.md)
+### Versions
+- [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+- [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
+- [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+- [App Store Connect API 4.4 release notes](./app-store-connect-api-4-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
+- [App Store Connect API 4.3.1 release notes](./app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+- [App Store Connect API 4.3 release notes](./app-store-connect-api-4-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+- [App Store Connect API 4.2 release notes](./app-store-connect-api-4-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 4.1 release notes](./app-store-connect-api-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
+- [App Store Connect API 3.8 release notes](./app-store-connect-api-3-8-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
+- [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
+- [App Store Connect API 3.5 release notes](./app-store-connect-api-3-5-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.4 release notes](app-store-connect-api-3-4-release-notes.md)
+- [App Store Connect API 3.4 release notes](./app-store-connect-api-3-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
+- [App Store Connect API 3.3 release notes](./app-store-connect-api-3-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

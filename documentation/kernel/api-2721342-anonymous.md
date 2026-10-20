@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kC0DataMaxStringLen](2721342-anonymous/kc0datamaxstringlen.md)
-- [kC0DataMaxStringLen](../iokit/2721366-anonymous/kc0datamaxstringlen.md)
+- [kC0DataMaxStringLen](./api-2721342-anonymous/kc0datamaxstringlen.md)
+- [kC0DataMaxStringLen](../iokit/api-2721366-anonymous/kc0datamaxstringlen.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # XMLDocument.ContentKind.xml
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default type of document content type, which is XML.
 
@@ -15,13 +16,18 @@ The default type of document content type, which is XML.
 case xml
 ```
 
+```c
+NSXMLDocumentXMLKind
+```
+
 ## See Also
 
-- [XMLDocument.ContentKind.html](xmldocument/contentkind/html.md)
+### Enumeration Cases
+- [XMLDocument.ContentKind.html](./html.md)
   Outputs empty tags in HTML without a close tag, such as `<br>`.
-- [XMLDocument.ContentKind.text](xmldocument/contentkind/text.md)
+- [XMLDocument.ContentKind.text](./text.md)
   Outputs the string value of the document by extracting the string values from all text nodes.
-- [XMLDocument.ContentKind.xhtml](xmldocument/contentkind/xhtml.md)
+- [XMLDocument.ContentKind.xhtml](./xhtml.md)
   The document output is XHTML.
 
 

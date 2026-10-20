@@ -1,7 +1,8 @@
 # input
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the input profile for the device.
 
@@ -12,6 +13,10 @@ Gets the input profile for the device.
 
 ```swift
 var input: (any GCDevicePhysicalInput)? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) id<GCDevicePhysicalInput> input;
 ```
 
 

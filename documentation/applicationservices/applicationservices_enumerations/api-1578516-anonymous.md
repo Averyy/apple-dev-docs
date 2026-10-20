@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kICNoUserInteractionBit: Int](kicnouserinteractionbit.md)
+- [var kICNoUserInteractionBit: Int](../kicnouserinteractionbit.md)
 
 
 ---

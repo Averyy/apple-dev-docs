@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+
@@ -18,7 +19,8 @@ init()
 
 ## See Also
 
-- [init(enabled: ObjCBool, reason: AVLegibleMediaOptionsMenuController.StateChangeReason)](avlegiblemediaoptionsmenustate/init(enabled:reason:).md)
+### Creating a menu state
+- [init(enabled: ObjCBool, reason: AVLegibleMediaOptionsMenuController.StateChangeReason)](./init%28enabled,reason%29.md)
 
 
 ---

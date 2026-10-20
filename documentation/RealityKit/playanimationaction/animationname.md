@@ -1,7 +1,8 @@
 # animationName
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the animation resource within the target entity animation library component to start playing.
 

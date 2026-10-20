@@ -1,7 +1,8 @@
 # primPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete path to the nearest prim that contains this attribute.
 
@@ -21,7 +22,7 @@ var primPath: USDLayer.Path { get }
 
 #### Discussion
 
-`primPath` is the [`path`](usdprim/path.md) of this attribute’s [`prim`](usdprim/attribute/prim.md).
+`primPath` is the [`path`](../path.md) of this attribute’s [`prim`](./prim.md).
 
 
 ---

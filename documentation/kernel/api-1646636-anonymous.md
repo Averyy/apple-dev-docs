@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDTMaxPropertyNameLength](1646636-anonymous/kdtmaxpropertynamelength.md)
+- [kDTMaxPropertyNameLength](./api-1646636-anonymous/kdtmaxpropertynamelength.md)
 
 
 ---

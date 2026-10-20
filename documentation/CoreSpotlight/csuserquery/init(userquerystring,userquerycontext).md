@@ -1,7 +1,8 @@
 # init(userQueryString:userQueryContext:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new user query that searches for the specified term.
 
@@ -16,6 +17,10 @@ Creates a new user query that searches for the specified term.
 
 ```swift
 init(userQueryString: String?, userQueryContext: CSUserQueryContext?)
+```
+
+```objc
+- (instancetype) initWithUserQueryString:(NSString *) userQueryString userQueryContext:(CSUserQueryContext *) userQueryContext;
 ```
 
 #### Return Value

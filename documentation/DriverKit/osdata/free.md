@@ -1,34 +1,36 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [withBytes](osdata/withbytes.md)
+### Creating a Data Object
+- [withBytes](./withbytes.md)
   Allocates an OSData object with a copy of bytes.
-- [withBytesNoCopy](osdata/withbytesnocopy.md)
+- [withBytesNoCopy](./withbytesnocopy.md)
   Allocates an OSData object with a copy of bytes.
-- [withCapacity](osdata/withcapacity.md)
+- [withCapacity](./withcapacity.md)
   Allocates an OSData object with preallocated capacity.
-- [withData](osdata/withdata-9y3g.md)
+- [withData](./withdata-9y3g.md)
   Allocates an OSData object with a copy of bytes from another OSData.
-- [withData](osdata/withdata-4rd8n.md)
+- [withData](./withdata-4rd8n.md)
   Allocates an OSData object with a copy of bytes from a subset of another OSData.
-- [OSDataCreate](osdatacreate.md)
-- [OSDataPtr](osdataptr.md)
+- [OSDataCreate](../osdatacreate.md)
+- [OSDataPtr](../osdataptr.md)
 
 
 ---

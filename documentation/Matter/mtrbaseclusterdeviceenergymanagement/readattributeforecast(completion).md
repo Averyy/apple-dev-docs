@@ -1,7 +1,8 @@
 # readAttributeForecast(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeForecast(completion: @escaping @Sendable (MTRDeviceEnergyManagementClusterForecastStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeForecast() async throws -> MTRDeviceEnergyManagementClusterForecastStruct
+```
+
+```objc
+- (void) readAttributeForecastWithCompletion:(void (^)(MTRDeviceEnergyManagementClusterForecastStruct *value, NSError *error)) completion;
 ```
 
 

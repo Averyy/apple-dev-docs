@@ -1,7 +1,8 @@
 # Track.song(_:)
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A track that corresponds to a song.
 

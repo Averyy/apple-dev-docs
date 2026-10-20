@@ -1,7 +1,8 @@
 # EXHostViewController.Configuration
 
 **Framework**: ExtensionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that holds configuration options for a host view controller.
 
@@ -20,19 +21,20 @@ struct Configuration
 ## Topics
 
 ### Creating a configuration type
-- [init(appExtension: AppExtensionIdentity, sceneID: String)](exhostviewcontroller/configuration-swift.struct/init(appextension:sceneid:).md)
+- [init(appExtension: AppExtensionIdentity, sceneID: String)](./configuration-swift.struct/init%28appextension,sceneid%29.md)
   Creates a new configuration object.
 ### Identifying the scene to display
-- [var appExtension: AppExtensionIdentity](exhostviewcontroller/configuration-swift.struct/appextension.md)
+- [var appExtension: AppExtensionIdentity](./configuration-swift.struct/appextension.md)
   The app extension for this configuration object.
-- [var sceneID: String](exhostviewcontroller/configuration-swift.struct/sceneid.md)
+- [var sceneID: String](./configuration-swift.struct/sceneid.md)
   The unique identifier for this configuration object’s user interface.
 
 ## See Also
 
-- [var configuration: EXHostViewController.Configuration?](exhostviewcontroller/configuration-swift.property.md)
+### Configuring the view controller
+- [var configuration: EXHostViewController.Configuration?](./configuration-swift.property.md)
   The information the host view controller uses to fetch the appropriate scene from an app extension.
-- [var placeholderView: UIView](exhostviewcontroller/placeholderview.md)
+- [var placeholderView: UIView](./placeholderview.md)
   The view to display when the view controller has no app extension content to display.
 
 

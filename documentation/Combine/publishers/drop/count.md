@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements to drop.
 
@@ -22,7 +23,8 @@ let count: Int
 
 ## See Also
 
-- [let upstream: Upstream](publishers/drop/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

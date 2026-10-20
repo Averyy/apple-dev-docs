@@ -1,7 +1,8 @@
 # setHandshake(count:timeoutMs:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures handshake and timeout settings.
 

@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An authentication tag.
 
@@ -26,9 +27,10 @@ The authentication tag has a length of 16 bytes.
 
 ## See Also
 
-- [var nonce: AES.GCM.Nonce](aes/gcm/sealedbox/nonce.md)
+### Inspecting the component elements
+- [var nonce: AES.GCM.Nonce](./nonce.md)
   The nonce used to encrypt the data.
-- [var ciphertext: Data](aes/gcm/sealedbox/ciphertext.md)
+- [var ciphertext: Data](./ciphertext.md)
   The encrypted data.
 
 

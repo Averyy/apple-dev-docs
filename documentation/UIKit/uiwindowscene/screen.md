@@ -1,7 +1,8 @@
 # screen
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The screen that displays the contents of the scene.
 
@@ -17,15 +18,20 @@ The screen that displays the contents of the scene.
 var screen: UIScreen { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIScreen * screen;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
 ## See Also
 
-- [var windows: [UIWindow]](uiwindowscene/windows.md)
+### Getting the active windows
+- [var windows: [UIWindow]](./windows.md)
   The windows associated with the scene.
-- [var keyWindow: UIWindow?](uiwindowscene/keywindow.md)
+- [var keyWindow: UIWindow?](./keywindow.md)
   The key window associated with the scene.
 
 

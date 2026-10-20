@@ -1,7 +1,8 @@
 # setMutedSpeechActivityEventListener(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -17,9 +18,14 @@
 func setMutedSpeechActivityEventListener(_ listenerBlock: (@Sendable (AVAudioVoiceProcessingSpeechActivityEvent) -> Void)?) -> Bool
 ```
 
+```objc
+- (BOOL) setMutedSpeechActivityEventListener:(void (^)(AVAudioVoiceProcessingSpeechActivityEvent event)) listenerBlock;
+```
+
 ## See Also
 
-- [enum AVAudioVoiceProcessingSpeechActivityEvent](avaudiovoiceprocessingspeechactivityevent.md)
+### Handling muted speech events
+- [enum AVAudioVoiceProcessingSpeechActivityEvent](../avaudiovoiceprocessingspeechactivityevent.md)
   Types of speech activity events.
 
 

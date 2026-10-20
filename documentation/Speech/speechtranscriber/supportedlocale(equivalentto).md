@@ -1,7 +1,8 @@
 # supportedLocale(equivalentTo:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A locale from the module’s supported locales equivalent to the given locale.
 
@@ -37,9 +38,10 @@ If there is no exact equivalent, this method will return a near-equivalent: a su
 
 ## See Also
 
-- [static var installedLocales: [Locale]](speechtranscriber/installedlocales.md)
+### Checking locale support
+- [static var installedLocales: [Locale]](./installedlocales.md)
   The locales that the transcriber can transcribe into, considering only locales that are installed on the device.
-- [static var supportedLocales: [Locale]](speechtranscriber/supportedlocales.md)
+- [static var supportedLocales: [Locale]](./supportedlocales.md)
   The locales that the transcriber can transcribe into, including locales that may not be installed but are downloadable.
 
 

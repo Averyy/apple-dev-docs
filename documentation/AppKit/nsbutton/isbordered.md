@@ -1,12 +1,13 @@
 # isBordered
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the button has a border.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,31 +15,36 @@ A Boolean value that determines whether the button has a border.
 var isBordered: Bool { get set }
 ```
 
+```objc
+@property (getter=isBordered) BOOL bordered;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the button has a border, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. A button’s border isn’t the single line of most other controls’ borders—instead, it’s a raised bezel. By default, buttons are bordered. If the bordered state of a button changes, it gets redrawn.
+The value of this property is [`true`](../../Swift/true.md) if the button has a border, [`false`](../../Swift/false.md) otherwise. A button’s border isn’t the single line of most other controls’ borders—instead, it’s a raised bezel. By default, buttons are bordered. If the bordered state of a button changes, it gets redrawn.
 
 ## See Also
 
-- [var image: NSImage?](nsbutton/image.md)
+### Configuring button images
+- [var image: NSImage?](./image.md)
   The image that appears on the button when it’s in an off state, or `nil` if there is no such image.
-- [var alternateImage: NSImage?](nsbutton/alternateimage.md)
+- [var alternateImage: NSImage?](./alternateimage.md)
   An alternate image that appears on the button when the button is in an on state.
-- [var imagePosition: NSControl.ImagePosition](nsbutton/imageposition.md)
+- [var imagePosition: NSControl.ImagePosition](./imageposition.md)
   The position of the button’s image relative to its title.
-- [NSControl.ImagePosition](nscontrol/imageposition.md)
+- [NSControl.ImagePosition](../nscontrol/imageposition.md)
   A constant for specifying the position of a button’s image relative to its title.
-- [var isTransparent: Bool](nsbutton/istransparent.md)
+- [var isTransparent: Bool](./istransparent.md)
   A Boolean value that indicates whether the button is transparent.
-- [var bezelStyle: NSButton.BezelStyle](nsbutton/bezelstyle-swift.property.md)
+- [var bezelStyle: NSButton.BezelStyle](./bezelstyle-swift.property.md)
   The appearance of the button’s border.
-- [var bezelColor: NSColor?](nsbutton/bezelcolor.md)
+- [var bezelColor: NSColor?](./bezelcolor.md)
   The color of the button’s bezel, in appearances that support it.
-- [var showsBorderOnlyWhileMouseInside: Bool](nsbutton/showsborderonlywhilemouseinside.md)
+- [var showsBorderOnlyWhileMouseInside: Bool](./showsborderonlywhilemouseinside.md)
   A Boolean value that determines whether the button displays its border only when the pointer is over it.
-- [var imageHugsTitle: Bool](nsbutton/imagehugstitle.md)
+- [var imageHugsTitle: Bool](./imagehugstitle.md)
   A Boolean value that determines how the button’s image and title are positioned together within the button bezel.
-- [var imageScaling: NSImageScaling](nsbutton/imagescaling.md)
+- [var imageScaling: NSImageScaling](./imagescaling.md)
   The scaling mode applied to make the cell’s image fit the frame of the image view.
 
 

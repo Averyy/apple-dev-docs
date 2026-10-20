@@ -1,7 +1,8 @@
 # init(boundsSize:requestHandler:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new image from existing artwork with the specified bounds.
 
@@ -16,8 +17,28 @@ Creates a new image from existing artwork with the specified bounds.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+init(boundsSize: CGSize, requestHandler: @escaping (CGSize) -> UIImage)
+```
+
+*macOS*
+
 ```swift
 init(boundsSize: CGSize, requestHandler: @escaping (CGSize) -> NSImage)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (instancetype) initWithBoundsSize:(CGSize) boundsSize requestHandler:(UIImage * (^)(CGSize size)) requestHandler;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithBoundsSize:(CGSize) boundsSize requestHandler:(NSImage * (^)(CGSize size)) requestHandler;
 ```
 
 #### Return Value
@@ -31,7 +52,9 @@ The request handler returns the image in the newly requested size. The requested
 ## Parameters
 
 - `boundsSize`: The original size of the artwork.
-- `requestHandler`: A handler that the system calls for the requested artwork. - **size**: The new size for the image.
+- `requestHandler`: A handler that the system calls for the requested artwork.
+
+  - **size**: The new size for the image.
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new paste configuration.
 
@@ -17,21 +18,26 @@ Initializes a new paste configuration.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A paste configuration that has no acceptable uniform type identifiers (UTIs).
 
 #### Discussion
 
-Use this initializer to create a paste configuration that has an empty [`acceptableTypeIdentifiers`](uipasteconfiguration/acceptabletypeidentifiers.md) array. After you create the paste configuration, you can use its [`addAcceptableTypeIdentifiers(_:)`](uipasteconfiguration/addacceptabletypeidentifiers(_:).md) method or [`addTypeIdentifiers(forAccepting:)`](uipasteconfiguration/addtypeidentifiers(foraccepting:)-4fvd6.md) method to add acceptable UTIs to the array.
+Use this initializer to create a paste configuration that has an empty [`acceptableTypeIdentifiers`](./acceptabletypeidentifiers.md) array. After you create the paste configuration, you can use its [`addAcceptableTypeIdentifiers(_:)`](./addacceptabletypeidentifiers%28_%29.md) method or [`addTypeIdentifiers(forAccepting:)`](./addtypeidentifiers%28foraccepting%29-4fvd6.md) method to add acceptable UTIs to the array.
 
 ## See Also
 
-- [convenience init(acceptableTypeIdentifiers: [String])](uipasteconfiguration/init(acceptabletypeidentifiers:).md)
+### Initializing a paste configuration
+- [convenience init(acceptableTypeIdentifiers: [String])](./init%28acceptabletypeidentifiers%29.md)
   Initializes a new paste configuration with a specified array of acceptable UTIs.
-- [convenience init(forAccepting: any NSItemProviderReading.Type)](uipasteconfiguration/init(foraccepting:)-6is3h.md)
+- [convenience init(forAccepting: any NSItemProviderReading.Type)](./init%28foraccepting%29-6is3h.md)
   Initializes a new paste configuration with the UTIs declared as supported by a specified class.
-- [convenience init<T>(forAccepting: T.Type)](uipasteconfiguration/init(foraccepting:)-84r2r.md)
+- [convenience init<T>(forAccepting: T.Type)](./init%28foraccepting%29-84r2r.md)
 
 
 ---

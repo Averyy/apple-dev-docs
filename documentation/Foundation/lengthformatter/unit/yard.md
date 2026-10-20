@@ -1,7 +1,8 @@
 # LengthFormatter.Unit.yard
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The yard unit.
 
@@ -20,21 +21,26 @@ The yard unit.
 case yard
 ```
 
+```c
+NSLengthFormatterUnitYard
+```
+
 ## See Also
 
-- [LengthFormatter.Unit.millimeter](lengthformatter/unit/millimeter.md)
+### Constants
+- [LengthFormatter.Unit.millimeter](./millimeter.md)
   The millimeter unit.
-- [LengthFormatter.Unit.centimeter](lengthformatter/unit/centimeter.md)
+- [LengthFormatter.Unit.centimeter](./centimeter.md)
   The centimeter unit.
-- [LengthFormatter.Unit.meter](lengthformatter/unit/meter.md)
+- [LengthFormatter.Unit.meter](./meter.md)
   The meter unit.
-- [LengthFormatter.Unit.kilometer](lengthformatter/unit/kilometer.md)
+- [LengthFormatter.Unit.kilometer](./kilometer.md)
   The kilometer unit.
-- [LengthFormatter.Unit.inch](lengthformatter/unit/inch.md)
+- [LengthFormatter.Unit.inch](./inch.md)
   The inch unit.
-- [LengthFormatter.Unit.foot](lengthformatter/unit/foot.md)
+- [LengthFormatter.Unit.foot](./foot.md)
   The foot unit.
-- [LengthFormatter.Unit.mile](lengthformatter/unit/mile.md)
+- [LengthFormatter.Unit.mile](./mile.md)
   The mile unit.
 
 

@@ -1,7 +1,8 @@
 # AVSystemRouteEvent.Reason.deactivate
 
 **Framework**: AVSystemRouting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a user deselected a route in the picker.
 

@@ -1,7 +1,8 @@
 # errSecCSInvalidAssociatedFileData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Resource fork, Finder information, or similar detritus not allowed.
 
@@ -13,6 +14,10 @@ Resource fork, Finder information, or similar detritus not allowed.
 
 ```swift
 var errSecCSInvalidAssociatedFileData: OSStatus { get }
+```
+
+```c
+errSecCSInvalidAssociatedFileData
 ```
 
 

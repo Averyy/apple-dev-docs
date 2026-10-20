@@ -1,7 +1,8 @@
 # AppExtensionPoint.Capability
 
 **Framework**: ExtensionFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that marks a type as an extension capability.
 
@@ -27,7 +28,7 @@ Types adopt this protocol if they comprise part of an extension’s capabilities
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 
 ---

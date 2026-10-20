@@ -1,25 +1,26 @@
 # RGBColor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct RGBColor RGBColor;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [blue](rgbcolor/1401405-blue.md)
+- [blue](./rgbcolor/api-1401405-blue.md)
   The magnitude of the blue component
-- [green](rgbcolor/1401654-green.md)
+- [green](./rgbcolor/api-1401654-green.md)
   The magnitude of the green component
-- [red](rgbcolor/1401520-red.md)
+- [red](./rgbcolor/api-1401520-red.md)
   The magnitude of the red component
 
 

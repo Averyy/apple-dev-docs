@@ -1,7 +1,8 @@
 # usbController(_:usbPassthroughDeviceDidDisconnect:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func usbController(_ usbController: VZUSBController, usbPassthroughDeviceDidDisconnect device: VZUSBPassthroughDevice)
+```
+
+```objc
+- (void) usbController:(VZUSBController *) usbController usbPassthroughDeviceDidDisconnect:(VZUSBPassthroughDevice *) device;
 ```
 
 #### Discussion

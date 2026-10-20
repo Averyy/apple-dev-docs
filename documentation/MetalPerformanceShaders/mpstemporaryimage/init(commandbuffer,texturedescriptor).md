@@ -1,7 +1,8 @@
 # init(commandBuffer:textureDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Low-level interface for creating a temporary image using a texture descriptor.
 
@@ -19,19 +20,23 @@ Low-level interface for creating a temporary image using a texture descriptor.
 convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor)
 ```
 
+```objc
++ (instancetype) temporaryImageWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer textureDescriptor:(const MTLTextureDescriptor *) textureDescriptor;
+```
+
 #### Return Value
 
-A valid [`MPSTemporaryImage`](mpstemporaryimage.md) object.
+A valid [`MPSTemporaryImage`](../mpstemporaryimage.md) object.
 
 #### Discussion
 
-The temporary image will be released when the command buffer is committed. The underlying texture will become invalid before this time due to the action of the [`readCount`](mpstemporaryimage/readcount.md) property.
+The temporary image will be released when the command buffer is committed. The underlying texture will become invalid before this time due to the action of the [`readCount`](./readcount.md) property.
 
-This function provides access to pixel formats not typically covered by the [`init(commandBuffer:imageDescriptor:)`](mpstemporaryimage/init(commandbuffer:imagedescriptor:).md) method. The feature channels will be inferred from the pixel format without changing the width. The following restrictions apply:
+This function provides access to pixel formats not typically covered by the [`init(commandBuffer:imageDescriptor:)`](./init%28commandbuffer,imagedescriptor%29.md) method. The feature channels will be inferred from the pixel format without changing the width. The following restrictions apply:
 
-- The texture type must be [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d) or [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray).
-- The texture usage must contain at least one of [`shaderRead`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderread) or [`shaderWrite`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderwrite).
-- The storage mode must be [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private).
+- The texture type must be [`MTLTextureType.type2D`](../../Metal/mtltexturetype/type2d.md) or [`MTLTextureType.type2DArray`](../../Metal/mtltexturetype/type2darray.md).
+- The texture usage must contain at least one of [`shaderRead`](../../Metal/mtltextureusage/shaderread.md) or [`shaderWrite`](../../Metal/mtltextureusage/shaderwrite.md).
+- The storage mode must be [`MTLStorageMode.private`](../../Metal/mtlstoragemode/private.md).
 - The depth must be 1.
 
 ## Parameters
@@ -41,13 +46,14 @@ This function provides access to pixel formats not typically covered by the [`in
 
 ## See Also
 
-- [convenience init(commandBuffer: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor)](mpstemporaryimage/init(commandbuffer:imagedescriptor:).md)
+### Initializers
+- [convenience init(commandBuffer: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor)](./init%28commandbuffer,imagedescriptor%29.md)
   Initializes a temporary image for use on a command buffer.
-- [class MPSImageDescriptor](mpsimagedescriptor.md)
-  A description of the attributes used to create an [`MPSImage`](mpsimage.md).
-- [class MTLTextureDescriptor](../metal/mtltexturedescriptor.md)
+- [class MPSImageDescriptor](../mpsimagedescriptor.md)
+  A description of the attributes used to create an [`MPSImage`](../mpsimage.md).
+- [class MTLTextureDescriptor](../../Metal/mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)](mpstemporaryimage/init(commandbuffer:texturedescriptor:featurechannels:).md)
+- [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)](./init%28commandbuffer,texturedescriptor,featurechannels%29.md)
 
 
 ---

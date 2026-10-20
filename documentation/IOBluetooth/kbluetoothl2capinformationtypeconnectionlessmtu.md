@@ -1,10 +1,11 @@
 # kBluetoothL2CAPInformationTypeConnectionlessMTU
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothL2CAPInformationTypeConnectionlessMTU: BluetoothL2CAPInformationType { get }
 ```
 
+```c
+kBluetoothL2CAPInformationTypeConnectionlessMTU
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPInformationTypeExtendedFeatures: BluetoothL2CAPInformationType](kbluetoothl2capinformationtypeextendedfeatures.md)
-- [var kBluetoothL2CAPInformationTypeFixedChannelsSupported: BluetoothL2CAPInformationType](kbluetoothl2capinformationtypefixedchannelssupported.md)
+### Constants
+- [var kBluetoothL2CAPInformationTypeExtendedFeatures: BluetoothL2CAPInformationType](./kbluetoothl2capinformationtypeextendedfeatures.md)
+- [var kBluetoothL2CAPInformationTypeFixedChannelsSupported: BluetoothL2CAPInformationType](./kbluetoothl2capinformationtypefixedchannelssupported.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constant color with the values specified by the resolved color.
 
@@ -20,11 +21,43 @@ Creates a constant color with the values specified by the resolved color.
 init(_ resolved: Color.Resolved)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ resolved: Color.ResolvedHDR)
+```
+
+```swift
+init(_ resource: ColorResource)
+```
+
+```swift
+init<T>(_ color: T) where T : Hashable, T : ShapeStyle, T.Resolved == Color.Resolved
+```
+
+```swift
+init<T>(_ color: T) where T : Hashable, T : ShapeStyle, T.Resolved == Color.ResolvedHDR
+```
+
+```swift
+init(_ cgColor: CGColor)
+```
+
+```swift
+init(_ color: UIColor)
+```
+
+```swift
+nonisolated
+init(_ color: NSColor)
+```
+
 ## See Also
 
-- [init(String, bundle: Bundle?)](color/init(_:bundle:).md)
+### Creating a color
+- [init(String, bundle: Bundle?)](./init%28_,bundle%29.md)
   Creates a color from a color set that you indicate by name.
-- [func resolve(in: EnvironmentValues) -> Color.Resolved](color/resolve(in:).md)
+- [func resolve(in: EnvironmentValues) -> Color.Resolved](./resolve%28in%29.md)
   Evaluates this color to a resolved color given the current `context`.
 
 

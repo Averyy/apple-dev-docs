@@ -1,7 +1,8 @@
 # accept(connection:)
 
 **Framework**: ExtensionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A closure the framework calls when a host tries to connect to this extension.
 

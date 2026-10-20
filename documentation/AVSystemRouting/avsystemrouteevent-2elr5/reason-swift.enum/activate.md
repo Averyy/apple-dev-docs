@@ -1,7 +1,8 @@
 # AVSystemRouteEvent.Reason.activate
 
 **Framework**: AVSystemRouting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a user selected a route in the picker.
 
@@ -18,8 +19,8 @@ case activate
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](../../routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](../../routing-media-to-third-party-devices.md)
 
 
 ---

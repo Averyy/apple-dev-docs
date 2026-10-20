@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that uniquely identifies this measurement.
 
@@ -17,9 +18,14 @@ A value that uniquely identifies this measurement.
 var identifier: UInt64 { get }
 ```
 
+```objc
+@property (readonly) uint64_t identifier;
+```
+
 ## See Also
 
-- [var startDate: Date](cmrecordedpressuredata/startdate.md)
+### Instance Properties
+- [var startDate: Date](./startdate.md)
   The time and date when the system recorded the measurement.
 
 

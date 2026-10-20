@@ -1,7 +1,8 @@
 # PDFThumbnailLayoutMode.horizontal
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -16,9 +17,14 @@
 case horizontal
 ```
 
+```c
+PDFThumbnailLayoutModeHorizontal
+```
+
 ## See Also
 
-- [PDFThumbnailLayoutMode.vertical](pdfthumbnaillayoutmode/vertical.md)
+### Enumeration Cases
+- [PDFThumbnailLayoutMode.vertical](./vertical.md)
 
 
 ---

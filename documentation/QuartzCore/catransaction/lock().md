@@ -1,7 +1,8 @@
 # lock()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Attempts to acquire a recursive spin-lock lock, ensuring that returned layer values are valid until unlocked.
 
@@ -19,13 +20,18 @@ Attempts to acquire a recursive spin-lock lock, ensuring that returned layer val
 class func lock()
 ```
 
+```objc
++ (void) lock;
+```
+
 #### Discussion
 
 Core Animation uses a data model that promises not to corrupt the internal data structures when called from multiple threads concurrently, but not that data returned is still valid if the property was valid on another thread. By locking during a transaction you can ensure data that is read, modified, and set is correctly managed.
 
 ## See Also
 
-- [class func unlock()](catransaction/unlock.md)
+### Managing Concurrency
+- [class func unlock()](./unlock%28%29.md)
   Relinquishes a previously acquired transaction lock.
 
 

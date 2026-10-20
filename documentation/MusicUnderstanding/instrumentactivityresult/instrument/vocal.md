@@ -1,7 +1,8 @@
 # vocal
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to use to obtain vocal activity from an instrument activity result.
 

@@ -1,7 +1,8 @@
 # MaxAbsScaler
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that scales the input values so that the maximum absolute value is 1.0.
 
@@ -23,30 +24,31 @@ struct MaxAbsScaler<Element> where Element : BinaryFloatingPoint, Element : Deco
 ## Topics
 
 ### Creating an estimator
-- [init()](maxabsscaler/init.md)
+- [init()](./maxabsscaler/init%28%29.md)
   Creates a max abs scaler.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> MaxAbsScaler<Element>.Transformer](maxabsscaler/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> MaxAbsScaler<Element>.Transformer](./maxabsscaler/fitted%28to,eventhandler%29.md)
   Fits a max abs scaler to a sequence of elements.
 ### Default Implementations
-- [Estimator Implementations](maxabsscaler/estimator-implementations.md)
+- [Estimator Implementations](./maxabsscaler/estimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StandardScaler](standardscaler.md)
+### Scalers
+- [struct StandardScaler](./standardscaler.md)
   An estimator that standardizes the input by removing the mean and scaling to unit variance.
-- [struct MinMaxScaler](minmaxscaler.md)
+- [struct MinMaxScaler](./minmaxscaler.md)
   An estimator that scales the input values so that they all lie in a closed range.
-- [struct NormalizationScaler](normalizationscaler.md)
+- [struct NormalizationScaler](./normalizationscaler.md)
   An estimator that normalizes the input values using a normalization strategy.
-- [struct RobustScaler](robustscaler.md)
+- [struct RobustScaler](./robustscaler.md)
   An estimator that scales the input using statistics that are robust to outliers.
 
 

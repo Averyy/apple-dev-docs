@@ -1,16 +1,17 @@
 # UIForceTouchCapability.unavailable
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 3D Touch isn’t available on the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 case unavailable
 ```
 
+```c
+UIForceTouchCapabilityUnavailable
+```
+
 ## See Also
 
-- [UIForceTouchCapability.unknown](uiforcetouchcapability/unknown.md)
+### Availability options
+- [UIForceTouchCapability.unknown](./unknown.md)
   The availability of 3D Touch is unknown.
-- [UIForceTouchCapability.available](uiforcetouchcapability/available.md)
+- [UIForceTouchCapability.available](./available.md)
   3D Touch is available on the device.
 
 

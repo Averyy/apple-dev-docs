@@ -1,7 +1,8 @@
 # contentKeySession(_:didProvide:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the receiver with a new content key request object to process a persistable content key.
 
@@ -20,6 +21,10 @@ Provides the receiver with a new content key request object to process a persist
 optional func contentKeySession(_ session: AVContentKeySession, didProvide keyRequest: AVPersistableContentKeyRequest)
 ```
 
+```objc
+- (void) contentKeySession:(AVContentKeySession *) session didProvidePersistableContentKeyRequest:(AVPersistableContentKeyRequest *) keyRequest;
+```
+
 ## Parameters
 
 - `session`: The content key session that is providing the new persistable content key request.
@@ -27,9 +32,10 @@ optional func contentKeySession(_ session: AVContentKeySession, didProvide keyRe
 
 ## See Also
 
-- [func contentKeySession(AVContentKeySession, didProvide: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-3coq5.md)
+### Providing new content key requests
+- [func contentKeySession(AVContentKeySession, didProvide: AVContentKeyRequest)](./contentkeysession%28_,didprovide%29-3coq5.md)
   Provides the receiver with a new content key request object.
-- [func contentKeySession(AVContentKeySession, didProvideRenewingContentKeyRequest: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didproviderenewingcontentkeyrequest:).md)
+- [func contentKeySession(AVContentKeySession, didProvideRenewingContentKeyRequest: AVContentKeyRequest)](./contentkeysession%28_,didproviderenewingcontentkeyrequest%29.md)
   Provides the receiver with a new content key request object for the renewal of an existing content key.
 
 

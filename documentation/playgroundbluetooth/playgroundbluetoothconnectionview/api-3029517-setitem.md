@@ -1,7 +1,8 @@
 # setItem(_:forPeripheral:)
 
 **Framework**: Playground Bluetooth  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Sets all of the information about the specified peripheral at once.
 
@@ -17,12 +18,13 @@ func setItem(_ item: PlaygroundBluetoothConnectionView.Item, forPeripheral perip
 
 ## Parameters
 
-- `item`: A [`PlaygroundBluetoothConnectionView.Item`](playgroundbluetoothconnectionview/item.md) that holds information about the specified peripheral.
-- `peripheral`: The peripheral corresponding to the [`PlaygroundBluetoothConnectionView.Item`](playgroundbluetoothconnectionview/item.md) being displayed.
+- `item`: A [`PlaygroundBluetoothConnectionView.Item`](./item.md) that holds information about the specified peripheral.
+- `peripheral`: The peripheral corresponding to the [`PlaygroundBluetoothConnectionView.Item`](./item.md) being displayed.
 
 ## See Also
 
-- [struct PlaygroundBluetoothConnectionView.Item](playgroundbluetoothconnectionview/item.md)
+### Displaying Peripherals
+- [struct PlaygroundBluetoothConnectionView.Item](./item.md)
   A value that holds information about a peripheral displayed in a connection view.
 
 

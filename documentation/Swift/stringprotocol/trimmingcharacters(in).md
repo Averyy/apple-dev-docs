@@ -1,7 +1,8 @@
 # trimmingCharacters(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string made by removing from both ends of the `String` characters contained in a given character set.
 

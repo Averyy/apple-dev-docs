@@ -1,14 +1,15 @@
 # vetoSleepWakeNotification
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 IOReturn vetoSleepWakeNotification(void *PMrefcon);
 ```
 

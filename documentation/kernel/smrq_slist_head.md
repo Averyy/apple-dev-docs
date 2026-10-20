@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct smrq_slist_head {
     ...
 };
@@ -17,7 +17,7 @@ struct smrq_slist_head {
 ## Topics
 
 ### Instance Properties
-- [first](smrq_slist_head/4133143-first.md)
+- [first](./smrq_slist_head/api-4133143-first.md)
 
 
 ---

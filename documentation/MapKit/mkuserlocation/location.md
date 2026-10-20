@@ -1,7 +1,8 @@
 # location
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the device.
 
@@ -19,9 +20,13 @@ The location of the device.
 var location: CLLocation? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CLLocation * location;
+```
+
 ## Mentions
 
-- [Converting a user’s location to a descriptive placemark](converting-a-user-s-location-to-a-descriptive-placemark.md)
+- [Converting a user’s location to a descriptive placemark](../converting-a-user-s-location-to-a-descriptive-placemark.md)
 
 #### Discussion
 
@@ -29,10 +34,12 @@ This property contains `nil` if the map view isn’t showing the user’s locati
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [var isUpdating: Bool](mkuserlocation/isupdating.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Determining the user’s location
+- [var isUpdating: Bool](./isupdating.md)
   A Boolean value that indicates whether the map view is updating the user’s location.
-- [var heading: CLHeading?](mkuserlocation/heading.md)
+- [var heading: CLHeading?](./heading.md)
   The heading of the user’s location.
 
 

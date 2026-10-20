@@ -1,7 +1,8 @@
 # api
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents any authentication scheme.
 
@@ -9,7 +10,7 @@ Represents any authentication scheme.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 13.0+
 - visionOS 1.0+
 
@@ -19,9 +20,14 @@ Represents any authentication scheme.
 static let api: VSAccountProviderAuthenticationScheme
 ```
 
+```c
+extern VSAccountProviderAuthenticationScheme const VSAccountProviderAuthenticationSchemeAPI;
+```
+
 ## See Also
 
-- [static let saml: VSAccountProviderAuthenticationScheme](vsaccountproviderauthenticationscheme/saml.md)
+### Authentication Scheme Types
+- [static let saml: VSAccountProviderAuthenticationScheme](./saml.md)
   Represents a SAML authentication scheme.
 
 

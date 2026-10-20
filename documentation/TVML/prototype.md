@@ -1,6 +1,7 @@
 # prototype
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Associates a data item type with an element.
 
@@ -8,23 +9,24 @@ Associates a data item type with an element.
 
 Use the `prototype` attribute to associate the data item’s type with a particular element.
 
-##### Value for Prototype
+##### Value for prototype
 
 - **String**: The string value associated with the `type` property in the associated data item.
 
-##### Elements That Use Prototype
+##### Elements that Use prototype
 
-- Any element contained in a [`section`](section.md).
+- Any element contained in a [section](./section.md).
 
 ## See Also
 
-- [autoHighlight](autohighlight.md)
+### Valid TVML Attributes
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 

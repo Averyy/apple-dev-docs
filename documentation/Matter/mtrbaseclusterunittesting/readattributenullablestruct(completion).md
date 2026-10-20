@@ -1,7 +1,8 @@
 # readAttributeNullableStruct(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableStruct(completion: @escaping @Sendable (MTRUnitTestingClusterSimpleStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableStruct() async throws -> MTRUnitTestingClusterSimpleStruct
+```
+
+```objc
+- (void) readAttributeNullableStructWithCompletion:(void (^)(MTRUnitTestingClusterSimpleStruct *value, NSError *error)) completion;
 ```
 
 

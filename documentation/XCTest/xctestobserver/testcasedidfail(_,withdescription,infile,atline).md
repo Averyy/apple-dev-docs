@@ -1,14 +1,21 @@
 # testCaseDidFail(_:withDescription:inFile:atLine:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the observer when a test case fails.
+
+> **Deprecated**: Use the XCTestObservationCenter class and XCTestObservation protocol instead.
 
 ## Declaration
 
 ```swift
 func testCaseDidFail(_ testRun: XCTestRun!, withDescription description: String!, inFile filePath: String!, atLine lineNumber: Int)
+```
+
+```objc
+- (void) testCaseDidFail:(XCTestRun *) testRun withDescription:(NSString *) description inFile:(NSString *) filePath atLine:(NSUInteger) lineNumber;
 ```
 
 ## Parameters
@@ -20,13 +27,14 @@ func testCaseDidFail(_ testRun: XCTestRun!, withDescription description: String!
 
 ## See Also
 
-- [func testCaseDidStart(XCTestRun!)](xctestobserver/testcasedidstart(_:).md)
+### Monitoring Test Activity
+- [func testCaseDidStart(XCTestRun!)](./testcasedidstart%28_%29.md)
   Notifies the observer when a test case starts.
-- [func testCaseDidStop(XCTestRun!)](xctestobserver/testcasedidstop(_:).md)
+- [func testCaseDidStop(XCTestRun!)](./testcasedidstop%28_%29.md)
   Notifies the observer when a test case stops.
-- [func testSuiteDidStart(XCTestRun!)](xctestobserver/testsuitedidstart(_:).md)
+- [func testSuiteDidStart(XCTestRun!)](./testsuitedidstart%28_%29.md)
   Notifies the observer when a test suite starts.
-- [func testSuiteDidStop(XCTestRun!)](xctestobserver/testsuitedidstop(_:).md)
+- [func testSuiteDidStop(XCTestRun!)](./testsuitedidstop%28_%29.md)
   Notifies the observer when a test suite stops.
 
 

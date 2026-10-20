@@ -1,7 +1,8 @@
 # kSecKeyPrintName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type blob; human readable name of the key. Same as `kSecLabelItemAttr` for typical keychain items.
 
@@ -12,6 +13,10 @@ Type blob; human readable name of the key. Same as `kSecLabelItemAttr` for typic
 
 ```swift
 var kSecKeyPrintName: Int32 { get }
+```
+
+```c
+kSecKeyPrintName
 ```
 
 

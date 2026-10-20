@@ -1,17 +1,18 @@
 # updateBroadcast(_:)
 
 **Framework**: ReplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the current broadcast URL to the broadcast controller.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- tvOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Sends the current broadcast URL to the broadcast controller.
 func updateBroadcast(_ broadcastURL: URL)
 ```
 
+```objc
+- (void) updateBroadcastURL:(NSURL *) broadcastURL;
+```
+
 #### Discussion
 
-This method updates the [`broadcastURL`](rpbroadcastcontroller/broadcasturl.md) property for the broadcast controller.
+This method updates the [`broadcastURL`](../rpbroadcastcontroller/broadcasturl.md) property for the broadcast controller.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ This method updates the [`broadcastURL`](rpbroadcastcontroller/broadcasturl.md) 
 
 ## See Also
 
-- [func updateServiceInfo([String : any NSCoding & NSObjectProtocol])](rpbroadcasthandler/updateserviceinfo(_:).md)
+### Updating Current Broadcast Information
+- [func updateServiceInfo([String : any NSCoding & NSObjectProtocol])](./updateserviceinfo%28_%29.md)
   Sends information about the current broadcast to the broadcasting app.
 
 

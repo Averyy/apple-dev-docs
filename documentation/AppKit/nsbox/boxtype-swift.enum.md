@@ -1,12 +1,13 @@
 # NSBox.BoxType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants and data type identifies box types, which, in conjunction with a box’s border type, define the appearance of the box.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,30 +15,35 @@ These constants and data type identifies box types, which, in conjunction with a
 enum BoxType
 ```
 
+```c
+enum NSBoxType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
-- [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
-- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
-- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
+- [NSBox.BoxType.primary](./boxtype-swift.enum/primary.md)
+- [NSBox.BoxType.separator](./boxtype-swift.enum/separator.md)
+- [NSBox.BoxType.custom](./boxtype-swift.enum/custom.md)
+- [static var secondary: NSBox.BoxType](./boxtype-swift.enum/secondary.md)
+- [static var oldStyle: NSBox.BoxType](./boxtype-swift.enum/oldstyle.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsbox/boxtype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./boxtype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSBox.TitlePosition](nsbox/titleposition-swift.enum.md)
+### Constants
+- [NSBox.TitlePosition](./titleposition-swift.enum.md)
   Specify the location of a box’s title with respect to its border.
 
 

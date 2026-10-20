@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerNotificationTypeReservedEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 var kBluetoothLESecurityManagerNotificationTypeReservedEnd: BluetoothLESecurityManagerKeypressNotificationType { get }
 ```
 
+```c
+kBluetoothLESecurityManagerNotificationTypeReservedEnd
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerNotificationTypePasskeyCleared: BluetoothLESecurityManagerKeypressNotificationType](kbluetoothlesecuritymanagernotificationtypepasskeycleared.md)
-- [var kBluetoothLESecurityManagerNotificationTypePasskeyDigitEntered: BluetoothLESecurityManagerKeypressNotificationType](kbluetoothlesecuritymanagernotificationtypepasskeydigitentered.md)
-- [var kBluetoothLESecurityManagerNotificationTypePasskeyDigitErased: BluetoothLESecurityManagerKeypressNotificationType](kbluetoothlesecuritymanagernotificationtypepasskeydigiterased.md)
-- [var kBluetoothLESecurityManagerNotificationTypePasskeyEntryCompleted: BluetoothLESecurityManagerKeypressNotificationType](kbluetoothlesecuritymanagernotificationtypepasskeyentrycompleted.md)
-- [var kBluetoothLESecurityManagerNotificationTypePasskeyEntryStarted: BluetoothLESecurityManagerKeypressNotificationType](kbluetoothlesecuritymanagernotificationtypepasskeyentrystarted.md)
-- [var kBluetoothLESecurityManagerNotificationTypeReservedStart: BluetoothLESecurityManagerKeypressNotificationType](kbluetoothlesecuritymanagernotificationtypereservedstart.md)
+### Constants
+- [var kBluetoothLESecurityManagerNotificationTypePasskeyCleared: BluetoothLESecurityManagerKeypressNotificationType](./kbluetoothlesecuritymanagernotificationtypepasskeycleared.md)
+- [var kBluetoothLESecurityManagerNotificationTypePasskeyDigitEntered: BluetoothLESecurityManagerKeypressNotificationType](./kbluetoothlesecuritymanagernotificationtypepasskeydigitentered.md)
+- [var kBluetoothLESecurityManagerNotificationTypePasskeyDigitErased: BluetoothLESecurityManagerKeypressNotificationType](./kbluetoothlesecuritymanagernotificationtypepasskeydigiterased.md)
+- [var kBluetoothLESecurityManagerNotificationTypePasskeyEntryCompleted: BluetoothLESecurityManagerKeypressNotificationType](./kbluetoothlesecuritymanagernotificationtypepasskeyentrycompleted.md)
+- [var kBluetoothLESecurityManagerNotificationTypePasskeyEntryStarted: BluetoothLESecurityManagerKeypressNotificationType](./kbluetoothlesecuritymanagernotificationtypepasskeyentrystarted.md)
+- [var kBluetoothLESecurityManagerNotificationTypeReservedStart: BluetoothLESecurityManagerKeypressNotificationType](./kbluetoothlesecuritymanagernotificationtypereservedstart.md)
 
 
 ---

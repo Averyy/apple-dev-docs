@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from a specified texture.
 

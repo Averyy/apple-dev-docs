@@ -1,7 +1,8 @@
 # Publishers.Multicast
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A publisher that uses a subject to deliver elements to multiple subscribers.
 
@@ -22,37 +23,38 @@ final class Multicast<Upstream, SubjectType> where Upstream : Publisher, Subject
 
 ## Mentions
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
+- [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
 #### Overview
 
-Use a multicast publisher when you have multiple downstream subscribers, but you want upstream publishers to only process one [`receive(_:)`](subscriber/receive(_:).md) call per event.
+Use a multicast publisher when you have multiple downstream subscribers, but you want upstream publishers to only process one [`receive(_:)`](../subscriber/receive%28_%29.md) call per event.
 
 ## Topics
 
 ### Creating a multicast publisher
-- [init(upstream: Upstream, createSubject: () -> SubjectType)](publishers/multicast/init(upstream:createsubject:).md)
+- [init(upstream: Upstream, createSubject: () -> SubjectType)](./multicast/init%28upstream,createsubject%29.md)
   Creates a multicast publisher that applies a closure to create a subject that delivers elements to subscribers.
 ### Declaring supporting types
-- [Publishers.Multicast.Output](publishers/multicast/output.md)
+- [Publishers.Multicast.Output](./multicast/output.md)
   The kind of values published by this publisher.
-- [Publishers.Multicast.Failure](publishers/multicast/failure.md)
+- [Publishers.Multicast.Failure](./multicast/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/multicast/upstream.md)
+- [let upstream: Upstream](./multicast/upstream.md)
   The publisher from which this publisher receives its elements.
-- [let createSubject: () -> SubjectType](publishers/multicast/createsubject.md)
+- [let createSubject: () -> SubjectType](./multicast/createsubject.md)
   A closure that returns a subject each time a subscriber attaches to the multicast publisher.
 
 ## Relationships
 
 ### Conforms To
-- [ConnectablePublisher](connectablepublisher.md)
-- [Publisher](publisher.md)
+- [ConnectablePublisher](../connectablepublisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Share](publishers/share.md)
+### Working with multiple subscribers
+- [Publishers.Share](./share.md)
   A publisher that shares the output of an upstream publisher with multiple subscribers.
 
 

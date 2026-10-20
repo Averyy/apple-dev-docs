@@ -1,7 +1,8 @@
 # errSecMobileMeServerAlreadyExists
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The MobileMe server reported that the item already exists.
 
@@ -18,6 +19,10 @@ The MobileMe server reported that the item already exists.
 
 ```swift
 var errSecMobileMeServerAlreadyExists: OSStatus { get }
+```
+
+```c
+errSecMobileMeServerAlreadyExists
 ```
 
 

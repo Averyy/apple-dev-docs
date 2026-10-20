@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,16 +12,16 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func setKeyEquivalentFont(String, size: CGFloat)](nsbuttoncell/setkeyequivalentfont(_:size:).md)
+- [func setKeyEquivalentFont(String, size: CGFloat)](./nsbuttoncell/setkeyequivalentfont%28_,size%29.md)
   Sets by name and size of the font used to draw the key equivalent.
 ### Deprecated properties
-- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
+- [var keyEquivalentFont: NSFont?](./nsbuttoncell/keyequivalentfont.md)
   The font used to draw the button’s key equivalent.
-- [var gradientType: NSButton.GradientType](nsbuttoncell/gradienttype.md)
+- [var gradientType: NSButton.GradientType](./nsbuttoncell/gradienttype.md)
   The gradient of the button’s border.
 ### Deprecated enumerations
-- [NSButton.GradientType](nsbutton/gradienttype.md)
-  Specify the gradients used by the [`gradientType`](nsbuttoncell/gradienttype.md) property.
+- [NSButton.GradientType](./nsbutton/gradienttype.md)
+  Specify the gradients used by the [`gradientType`](./nsbuttoncell/gradienttype.md) property.
 
 
 ---

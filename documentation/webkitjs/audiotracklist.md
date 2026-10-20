@@ -1,7 +1,8 @@
 # AudioTrackList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioTrackList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](audiotracklist/1632570-length.md)
-- [onaddtrack](audiotracklist/1631720-onaddtrack.md)
-- [onchange](audiotracklist/1632094-onchange.md)
-- [onremovetrack](audiotracklist/1633286-onremovetrack.md)
+- [length](./audiotracklist/api-1632570-length.md)
+- [onaddtrack](./audiotracklist/api-1631720-onaddtrack.md)
+- [onchange](./audiotracklist/api-1632094-onchange.md)
+- [onremovetrack](./audiotracklist/api-1633286-onremovetrack.md)
 ### Instance Methods
-- [getTrackById](audiotracklist/1634400-gettrackbyid.md)
-- [item](audiotracklist/1633494-item.md)
+- [getTrackById](./audiotracklist/api-1634400-gettrackbyid.md)
+- [item](./audiotracklist/api-1633494-item.md)
 
 ## Relationships
 

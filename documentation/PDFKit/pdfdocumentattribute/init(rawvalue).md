@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `PDFDocumentAttribute` structure.
 
@@ -10,7 +11,7 @@ Initialize a `PDFDocumentAttribute` structure.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration

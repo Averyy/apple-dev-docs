@@ -1,7 +1,8 @@
 # CurrencyFormatStyleConfiguration.Grouping
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used to configure grouping for currency format styles.
 
@@ -22,15 +23,16 @@ typealias Grouping = NumberFormatStyleConfiguration.Grouping
 
 ## See Also
 
-- [CurrencyFormatStyleConfiguration.Precision](currencyformatstyleconfiguration/precision.md)
+### Specifying Configuration
+- [CurrencyFormatStyleConfiguration.Precision](./precision.md)
   The type used to configure precision for currency format styles.
-- [CurrencyFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](currencyformatstyleconfiguration/decimalseparatordisplaystrategy.md)
+- [CurrencyFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./decimalseparatordisplaystrategy.md)
   The type used to configure decimal separator display strategies for currency format styles.
-- [CurrencyFormatStyleConfiguration.RoundingRule](currencyformatstyleconfiguration/roundingrule.md)
+- [CurrencyFormatStyleConfiguration.RoundingRule](./roundingrule.md)
   The type used to configure rounding rules for currency format styles.
-- [CurrencyFormatStyleConfiguration.SignDisplayStrategy](currencyformatstyleconfiguration/signdisplaystrategy.md)
+- [CurrencyFormatStyleConfiguration.SignDisplayStrategy](./signdisplaystrategy.md)
   A structure used to configure sign display strategies for currency format styles.
-- [CurrencyFormatStyleConfiguration.Presentation](currencyformatstyleconfiguration/presentation.md)
+- [CurrencyFormatStyleConfiguration.Presentation](./presentation.md)
   A structure used to configure the presentation of currency format styles.
 
 

@@ -1,7 +1,8 @@
 # rawPublicKeys
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of TLS raw public keys that the relay server can present during the TLS handshake.
 
@@ -19,17 +20,22 @@ An array of TLS raw public keys that the relay server can present during the TLS
 var rawPublicKeys: [Data]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSData *> * rawPublicKeys;
+```
+
 #### Discussion
 
 If you set one or more keys, the raw public keys are used to authenticate the relay server. If no keys are set, or if the array is `nil`, default TLS server certificate evaluation is used.
 
 ## See Also
 
-- [var http3RelayURL: URL?](nerelay/http3relayurl.md)
+### Configuring server properties
+- [var http3RelayURL: URL?](./http3relayurl.md)
   A URL identifying the relay server accessible using HTTP/3.
-- [var http2RelayURL: URL?](nerelay/http2relayurl.md)
+- [var http2RelayURL: URL?](./http2relayurl.md)
   A URL identifying the relay server accessible using HTTP/2.
-- [var dnsOverHTTPSURL: URL?](nerelay/dnsoverhttpsurl.md)
+- [var dnsOverHTTPSURL: URL?](./dnsoverhttpsurl.md)
   The URL of a DNS-over-HTTPS (DoH) resolver accessible from the relay.
 
 

@@ -1,7 +1,8 @@
 # HTMLMetaElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLMetaElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [content](htmlmetaelement/1632833-content.md)
-- [httpEquiv](htmlmetaelement/1631230-httpequiv.md)
-- [name](htmlmetaelement/1629826-name.md)
-- [scheme](htmlmetaelement/1633299-scheme.md)
+- [content](./htmlmetaelement/api-1632833-content.md)
+- [httpEquiv](./htmlmetaelement/api-1631230-httpequiv.md)
+- [name](./htmlmetaelement/api-1629826-name.md)
+- [scheme](./htmlmetaelement/api-1633299-scheme.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

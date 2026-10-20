@@ -1,7 +1,8 @@
 # diacriticInsensitive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A diacritic-insensitive predicate.
 
@@ -20,15 +21,20 @@ A diacritic-insensitive predicate.
 static var diacriticInsensitive: NSComparisonPredicate.Options { get }
 ```
 
+```c
+NSDiacriticInsensitivePredicateOption
+```
+
 #### Discussion
 
 You represent this option in a predicate format string using a `[d]` following a string operation (for example, `"naïve" like[d] "naive"`).
 
 ## See Also
 
-- [static var caseInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/caseinsensitive.md)
+### Constants
+- [static var caseInsensitive: NSComparisonPredicate.Options](./caseinsensitive.md)
   A case-insensitive predicate.
-- [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
+- [static var normalized: NSComparisonPredicate.Options](./normalized.md)
   A predicate that indicates you’ve preprocessed the strings to compare.
 
 

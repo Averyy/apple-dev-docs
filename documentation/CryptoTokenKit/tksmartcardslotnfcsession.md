@@ -1,7 +1,8 @@
 # TKSmartCardSlotNFCSession
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 NFC session that’s related to NFC smart card slot which was created.
 
@@ -17,6 +18,10 @@ NFC session that’s related to NFC smart card slot which was created.
 class TKSmartCardSlotNFCSession
 ```
 
+```objc
+@interface TKSmartCardSlotNFCSession : NSObject
+```
+
 #### Overview
 
 Lifetime of this session object is tied to the NFC smart card slot lifetime and once the NFC slot disappears (eg. after a user cancellation, calling end session, or an NFC timeout) the functions will start to fail and return `TKErrorCodeObjectNotFound` error.
@@ -24,27 +29,27 @@ Lifetime of this session object is tied to the NFC smart card slot lifetime and 
 ## Topics
 
 ### Instance Properties
-- [var slotName: String?](tksmartcardslotnfcsession/slotname.md)
+- [var slotName: String?](./tksmartcardslotnfcsession/slotname.md)
   Smart card slot name of the NFC slot that was created together with this session.
 ### Instance Methods
-- [func end()](tksmartcardslotnfcsession/end.md)
+- [func end()](./tksmartcardslotnfcsession/end%28%29.md)
   Ends the NFC slot session and dismisses the system-presented NFC UI (if present).
-- [func update(message: String) throws](tksmartcardslotnfcsession/update(message:).md)
+- [func update(message: String) throws](./tksmartcardslotnfcsession/update%28message%29.md)
   Updates the message of the system-presented NFC UI.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

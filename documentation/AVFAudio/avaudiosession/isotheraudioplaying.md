@@ -1,7 +1,8 @@
 # isOtherAudioPlaying
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether another app is playing audio.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether another app is playing audio.
 var isOtherAudioPlaying: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isOtherAudioPlaying) BOOL otherAudioPlaying;
+```
+
 #### Discussion
 
-This property returns [`true`](https://developer.apple.com/documentation/swift/true) if any other audio is playing, including audio from an app using the [`ambient`](avaudiosession/category-swift.struct/ambient.md) category. Most apps should instead use the [`secondaryAudioShouldBeSilencedHint`](avaudiosession/secondaryaudioshouldbesilencedhint.md) property, because it’s more restrictive when considering whether primary audio from another app is playing.
+This property returns [`true`](../../Swift/true.md) if any other audio is playing, including audio from an app using the [`ambient`](./category-swift.struct/ambient.md) category. Most apps should instead use the [`secondaryAudioShouldBeSilencedHint`](./secondaryaudioshouldbesilencedhint.md) property, because it’s more restrictive when considering whether primary audio from another app is playing.
 
 ## See Also
 
-- [var secondaryAudioShouldBeSilencedHint: Bool](avaudiosession/secondaryaudioshouldbesilencedhint.md)
+### Mixing with other audio
+- [var secondaryAudioShouldBeSilencedHint: Bool](./secondaryaudioshouldbesilencedhint.md)
   A Boolean value that indicates whether another app, with a nonmixable audio session, is playing audio.
-- [class let silenceSecondaryAudioHintNotification: NSNotification.Name](avaudiosession/silencesecondaryaudiohintnotification.md)
+- [class let silenceSecondaryAudioHintNotification: NSNotification.Name](./silencesecondaryaudiohintnotification.md)
   A notification the system posts when the primary audio from other apps starts and stops.
-- [var allowHapticsAndSystemSoundsDuringRecording: Bool](avaudiosession/allowhapticsandsystemsoundsduringrecording.md)
+- [var allowHapticsAndSystemSoundsDuringRecording: Bool](./allowhapticsandsystemsoundsduringrecording.md)
   A Boolean value that indicates whether system sounds and haptics play while recording from audio input.
-- [func setAllowHapticsAndSystemSoundsDuringRecording(Bool) throws](avaudiosession/setallowhapticsandsystemsoundsduringrecording(_:).md)
+- [func setAllowHapticsAndSystemSoundsDuringRecording(Bool) throws](./setallowhapticsandsystemsoundsduringrecording%28_%29.md)
   Sets a Boolean value that indicates whether system sounds and haptics play while recording from audio input.
 
 

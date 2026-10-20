@@ -1,9 +1,10 @@
 # onDelete(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](list.md).
+Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](../list.md).
 
 **Availability**:
 - iOS 13.0+
@@ -23,7 +24,7 @@ func onDelete(perform action: Optional<(IndexSet) -> Void>) -> some DynamicViewC
 
 ## Mentions
 
-- [Picking container views for your content](picking-container-views-for-your-content.md)
+- [Picking container views for your content](../picking-container-views-for-your-content.md)
 
 #### Return Value
 
@@ -35,11 +36,12 @@ A view that calls `action` when elements are deleted from the original view.
 
 ## See Also
 
-- [func onInsert(of:perform:)](dynamicviewcontent/oninsert(of:perform:).md)
+### Responding to updates
+- [func onInsert(of:perform:)](./oninsert%28of,perform%29.md)
   Sets the insert action for the dynamic view.
-- [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](dynamicviewcontent/onmove(perform:).md)
+- [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](./onmove%28perform%29.md)
   Sets the move action for the dynamic view.
-- [func dropDestination<T>(for: T.Type, action: ([T], Int) -> Void) -> some DynamicViewContent](dynamicviewcontent/dropdestination(for:action:).md)
+- [func dropDestination<T>(for: T.Type, action: ([T], Int) -> Void) -> some DynamicViewContent](./dropdestination%28for,action%29.md)
   Sets the insert action for the dynamic view.
 
 

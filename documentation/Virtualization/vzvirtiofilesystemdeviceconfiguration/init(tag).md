@@ -1,7 +1,8 @@
 # init(tag:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a VIRTIO file system device.
 
@@ -14,9 +15,13 @@ Creates a configuration for a VIRTIO file system device.
 init(tag: String)
 ```
 
+```objc
+- (instancetype) initWithTag:(NSString *) tag;
+```
+
 #### Discussion
 
-The system presents the `tag` as a label in the guest identifying this device for mounting. The `tag` must be valid, which you can check with [`validateTag(_:)`](vzvirtiofilesystemdeviceconfiguration/validatetag(_:).md).
+The system presents the `tag` as a label in the guest identifying this device for mounting. The `tag` must be valid, which you can check with [`validateTag(_:)`](./validatetag%28_%29.md).
 
 ## Parameters
 
@@ -24,7 +29,8 @@ The system presents the `tag` as a label in the guest identifying this device fo
 
 ## See Also
 
-- [class func validateTag(String) throws](vzvirtiofilesystemdeviceconfiguration/validatetag(_:).md)
+### Related Documentation
+- [class func validateTag(String) throws](./validatetag%28_%29.md)
   Checks to see whether a Virtio tag is valid.
 
 

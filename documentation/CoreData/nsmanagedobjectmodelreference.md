@@ -1,7 +1,8 @@
 # NSManagedObjectModelReference
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a specific version of an object model.
 
@@ -20,41 +21,46 @@ An object that describes a specific version of an object model.
 class NSManagedObjectModelReference
 ```
 
+```objc
+@interface NSManagedObjectModelReference : NSObject
+```
+
 ## Topics
 
 ### Creating a reference
-- [init(model: NSManagedObjectModel, versionChecksum: String)](nsmanagedobjectmodelreference/init(model:versionchecksum:).md)
+- [init(model: NSManagedObjectModel, versionChecksum: String)](./nsmanagedobjectmodelreference/init%28model,versionchecksum%29.md)
   Creates an object model reference for the specified model.
-- [init(fileURL: URL, versionChecksum: String)](nsmanagedobjectmodelreference/init(fileurl:versionchecksum:).md)
+- [init(fileURL: URL, versionChecksum: String)](./nsmanagedobjectmodelreference/init%28fileurl,versionchecksum%29.md)
   Creates an object model reference for the model at the specified file URL.
-- [init(name: String, in: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(name:in:versionchecksum:).md)
+- [init(name: String, in: Bundle?, versionChecksum: String)](./nsmanagedobjectmodelreference/init%28name,in,versionchecksum%29.md)
   Creates an object model reference for the named model in the specified bundle.
-- [init(entityVersionHashes: [AnyHashable : Any], in: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(entityversionhashes:in:versionchecksum:).md)
+- [init(entityVersionHashes: [AnyHashable : Any], in: Bundle?, versionChecksum: String)](./nsmanagedobjectmodelreference/init%28entityversionhashes,in,versionchecksum%29.md)
   Creates an object model reference with the entities corresponding to the specified entity version hashes.
 ### Resolving the model object
-- [var resolvedModel: NSManagedObjectModel](nsmanagedobjectmodelreference/resolvedmodel.md)
+- [var resolvedModel: NSManagedObjectModel](./nsmanagedobjectmodelreference/resolvedmodel.md)
   The resolved object model.
-- [var versionChecksum: String](nsmanagedobjectmodelreference/versionchecksum.md)
+- [var versionChecksum: String](./nsmanagedobjectmodelreference/versionchecksum.md)
   The version checksum of the resolved model.
 ### Initializers
-- [init(entityVersionHashes: [AnyHashable : Any], inBundle: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(entityversionhashes:inbundle:versionchecksum:).md)
-- [init(name: String, inBundle: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(name:inbundle:versionchecksum:).md)
+- [init(entityVersionHashes: [AnyHashable : Any], inBundle: Bundle?, versionChecksum: String)](./nsmanagedobjectmodelreference/init%28entityversionhashes,inbundle,versionchecksum%29.md)
+- [init(name: String, inBundle: Bundle?, versionChecksum: String)](./nsmanagedobjectmodelreference/init%28name,inbundle,versionchecksum%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [convenience init(migratingFrom: NSManagedObjectModelReference, to: NSManagedObjectModelReference)](nscustommigrationstage/init(migratingfrom:to:).md)
+### Creating a custom migration stage
+- [convenience init(migratingFrom: NSManagedObjectModelReference, to: NSManagedObjectModelReference)](./nscustommigrationstage/init%28migratingfrom,to%29.md)
   Creates a custom migration stage with the specified source and destination model references.
 
 

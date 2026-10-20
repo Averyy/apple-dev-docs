@@ -1,7 +1,8 @@
 # relaxed
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Guarantees the atomicity of the specific operation on which it is applied, but imposes no ordering constraints on any other variable accesses.
 

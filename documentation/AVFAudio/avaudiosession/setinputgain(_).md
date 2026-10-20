@@ -1,7 +1,8 @@
 # setInputGain(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the input gain to the specified value.
 
@@ -18,9 +19,13 @@ Changes the input gain to the specified value.
 func setInputGain(_ gain: Float) throws
 ```
 
+```objc
+- (BOOL) setInputGain:(float) gain error:(NSError **) outError;
+```
+
 #### Discussion
 
-Before calling this method, check the value in the [`isInputGainSettable`](avaudiosession/isinputgainsettable.md) property to make sure the input gain level is settable for the current inputs.
+Before calling this method, check the value in the [`isInputGainSettable`](./isinputgainsettable.md) property to make sure the input gain level is settable for the current inputs.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Before calling this method, check the value in the [`isInputGainSettable`](avaud
 
 ## See Also
 
-- [var inputGain: Float](avaudiosession/inputgain.md)
+### Setting input gain
+- [var inputGain: Float](./inputgain.md)
   The gain applied to inputs associated with the session.
-- [var isInputGainSettable: Bool](avaudiosession/isinputgainsettable.md)
+- [var isInputGainSettable: Bool](./isinputgainsettable.md)
   A Boolean value that indicates whether you can set the input gain.
 
 

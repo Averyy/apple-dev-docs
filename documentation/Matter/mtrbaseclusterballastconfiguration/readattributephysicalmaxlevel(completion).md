@@ -1,7 +1,8 @@
 # readAttributePhysicalMaxLevel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePhysicalMaxLevel(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePhysicalMaxLevel() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePhysicalMaxLevelWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

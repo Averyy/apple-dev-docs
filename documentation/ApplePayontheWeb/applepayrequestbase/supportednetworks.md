@@ -1,7 +1,8 @@
 # supportedNetworks
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payment networks the merchant provides to their customers.
 
@@ -11,15 +12,15 @@ The payment networks the merchant provides to their customers.
 
 ## Declaration
 
-```swift
+```
 required sequence <DOMString> supportedNetworks;
 ```
 
 #### Discussion
 
-Set this property to one or more of the payment network values. For a complete list of networks that Apple Pay supports and the specific Apple Pay version that introduced that network, see [`Supporting payment networks`](supported-networks.md).
+Set this property to one or more of the payment network values. For a complete list of networks that Apple Pay supports and the specific Apple Pay version that introduced that network, see [Supporting payment networks](../supported-networks.md).
 
-To use a network introduced with a specific Apple Pay version, set the [`ApplePaySession`](applepaysession/applepaysession.md) version parameter to the required version number, like this:
+To use a network introduced with a specific Apple Pay version, set the [`ApplePaySession`](../applepaysession/applepaysession.md) version parameter to the required version number, like this:
 
 ```swift
 var session = new ApplePaySession(2, paymentRequest);
@@ -29,15 +30,16 @@ For the best compatibility with operating systems and browsers, use the lowest p
 
 In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify payment methods in the order you prefer. For example, to specify the default network to use for cobadged cards, set the first element in the array to the default network, and alternate networks afterward in the order you prefer.
 
-> **Note**:  If your website supports debit networks, check for regional regulations. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/passkit/complying-with-regional-regulations).
+> **Note**:  If your website supports debit networks, check for regional regulations. For more information, see [Complying with regional regulations](../../PassKit/complying-with-regional-regulations.md).
 
 ## See Also
 
-- [countryCode](applepayrequestbase/countrycode.md)
+### Setting the transaction information
+- [countryCode](./countrycode.md)
   The merchant’s two-letter ISO-3166 country code.
-- [merchantCapabilities](applepayrequestbase/merchantcapabilities.md)
+- [merchantCapabilities](./merchantcapabilities.md)
   An array of the payment capabilities that the merchant supports, such as credit or debit card payments.
-- [supportedCountries](applepayrequestbase/supportedcountries.md)
+- [supportedCountries](./supportedcountries.md)
   A list of two-letter country codes for limiting payment to credit cards from specific countries or regions.
 
 

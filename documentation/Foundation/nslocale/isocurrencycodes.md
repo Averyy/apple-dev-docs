@@ -1,7 +1,8 @@
 # isoCurrencyCodes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The list of known currency codes.
 
@@ -20,19 +21,24 @@ The list of known currency codes.
 class var isoCurrencyCodes: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * ISOCurrencyCodes;
+```
+
 #### Discussion
 
 Not all currency codes have supporting locale data in the system.
 
 ## See Also
 
-- [class var availableLocaleIdentifiers: [String]](nslocale/availablelocaleidentifiers.md)
+### Getting Known Identifiers and Codes
+- [class var availableLocaleIdentifiers: [String]](./availablelocaleidentifiers.md)
   The list of locale identifiers available on the system.
-- [class var isoCountryCodes: [String]](nslocale/isocountrycodes.md)
+- [class var isoCountryCodes: [String]](./isocountrycodes.md)
   The list of known country or region codes.
-- [class var isoLanguageCodes: [String]](nslocale/isolanguagecodes.md)
+- [class var isoLanguageCodes: [String]](./isolanguagecodes.md)
   The list of known language codes.
-- [class var commonISOCurrencyCodes: [String]](nslocale/commonisocurrencycodes.md)
+- [class var commonISOCurrencyCodes: [String]](./commonisocurrencycodes.md)
   A list of commonly encountered currency codes.
 
 

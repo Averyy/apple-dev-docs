@@ -1,7 +1,8 @@
 # NSOutlineView.SelectionIsChangingMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct SelectionIsChangingMessage
 ## Topics
 
 ### Initializers
-- [init(outlineView: NSOutlineView)](nsoutlineview/selectionischangingmessage/init(outlineview:).md)
+- [init(outlineView: NSOutlineView)](./selectionischangingmessage/init%28outlineview%29.md)
 ### Instance Properties
-- [var outlineView: NSOutlineView](nsoutlineview/selectionischangingmessage/outlineview.md)
+- [var outlineView: NSOutlineView](./selectionischangingmessage/outlineview.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

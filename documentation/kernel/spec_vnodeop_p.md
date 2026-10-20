@@ -1,14 +1,15 @@
 # spec_vnodeop_p
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 int (**)(void *) spec_vnodeop_p;
 ```
 

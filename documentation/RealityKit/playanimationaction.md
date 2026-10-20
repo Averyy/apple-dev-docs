@@ -1,7 +1,8 @@
 # PlayAnimationAction
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that plays an animation on the given target entity with a range of playback options.
 
@@ -23,9 +24,9 @@ struct PlayAnimationAction
 
 Use this action to initiate the playback of animations in a data-driven way. For example, this action can play an animation group which contains a nested action, which plays another animation with specific playback properties.
 
-This action plays the [`AnimationResource`](animationresource.md) from the[`AnimationLibraryComponent`](animationlibrarycomponent.md) on the [`targetEntity`](playanimationaction/targetentity.md). Add all animations to the animation library component that this action will play, ensuring the name of the animation matches the [`animationName`](playanimationaction/animationname.md) being supplied.
+This action plays the [`AnimationResource`](./animationresource.md) from the[`AnimationLibraryComponent`](./animationlibrarycomponent.md) on the [`targetEntity`](./playanimationaction/targetentity.md). Add all animations to the animation library component that this action will play, ensuring the name of the animation matches the [`animationName`](./playanimationaction/animationname.md) being supplied.
 
-[`useParentedControllers`](playanimationaction/useparentedcontrollers.md) is used to determine the playback behavior of the animation this action is playing. Set this to `true` to control the playback of the animation. Calling methods such as [`pause()`](animationplaybackcontroller/pause().md) and [`resume()`](animationplaybackcontroller/resume().md) on the animation playback controller generated from this action will give you control of the animation being played. When the action ends, the animation playback also ends. Set this to `false` to ensure the animation being played runs independently of the action. This would behave as a one shot animation.
+[`useParentedControllers`](./playanimationaction/useparentedcontrollers.md) is used to determine the playback behavior of the animation this action is playing. Set this to `true` to control the playback of the animation. Calling methods such as [`pause()`](./animationplaybackcontroller/pause%28%29.md) and [`resume()`](./animationplaybackcontroller/resume%28%29.md) on the animation playback controller generated from this action will give you control of the animation being played. When the action ends, the animation playback also ends. Set this to `false` to ensure the animation being played runs independently of the action. This would behave as a one shot animation.
 
 The example below is the animation group that the action will play. This contains a sequence containing a single `FromToByAnimation<Transform>`, and character animation.
 
@@ -35,7 +36,7 @@ let finalAnimation = try AnimationResource
     .group(with: [walkAnimation, moveToAnimation])
 ```
 
-The example below creates an animation sequence. The final animation in the sequence is an animation generated from the action. This action plays an animation that exist within the [`targetEntity`](playanimationaction/targetentity.md) [`AnimationLibraryComponent`](animationlibrarycomponent.md).
+The example below creates an animation sequence. The final animation in the sequence is an animation generated from the action. This action plays an animation that exist within the [`targetEntity`](./playanimationaction/targetentity.md) [`AnimationLibraryComponent`](./animationlibrarycomponent.md).
 
 ```swift
 // An action which plays an animation, with parented controllers.
@@ -64,57 +65,58 @@ let animationSequence = try AnimationResource
 let animationPlaybackController = entity.playAnimation(animationSequence)
 ```
 
-> **Note**: If [`useParentedControllers`](playanimationaction/useparentedcontrollers.md) is set to `true`, the animation will play for the duration of the action. Set the duration of the action to match the length of the animation being played to ensure the entire animation plays.
+> **Note**: If [`useParentedControllers`](./playanimationaction/useparentedcontrollers.md) is set to `true`, the animation will play for the duration of the action. Set the duration of the action to match the length of the animation being played to ensure the entire animation plays.
 
-> ❗ **Important**: This action does not animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
+> ❗ **Important**: This action does not animate a bound property, such as [`BindTarget.transform`](./bindtarget/transform.md).
 
 ## Topics
 
 ### Initializers
-- [init(animationName: String, targetEntity: ActionEntityResolution, transitionDuration: TimeInterval, blendLayer: Int, separateAnimatedValue: Bool, useParentedControllers: Bool, handoffType: AnimationHandoffType)](playanimationaction/init(animationname:targetentity:transitionduration:blendlayer:separateanimatedvalue:useparentedcontrollers:handofftype:).md)
+- [init(animationName: String, targetEntity: ActionEntityResolution, transitionDuration: TimeInterval, blendLayer: Int, separateAnimatedValue: Bool, useParentedControllers: Bool, handoffType: AnimationHandoffType)](./playanimationaction/init%28animationname,targetentity,transitionduration,blendlayer,separateanimatedvalue,useparentedcontrollers,handofftype%29.md)
   Creates a new play animation action.
 ### Instance Properties
-- [var animatedValueType: (any AnimatableData.Type)?](playanimationaction/animatedvaluetype.md)
+- [var animatedValueType: (any AnimatableData.Type)?](./playanimationaction/animatedvaluetype.md)
   The type for the value that the action modifies over time.
-- [var animationName: String](playanimationaction/animationname.md)
+- [var animationName: String](./playanimationaction/animationname.md)
   The name of the animation resource within the target entity animation library component to start playing.
-- [var blendLayer: Int](playanimationaction/blendlayer.md)
+- [var blendLayer: Int](./playanimationaction/blendlayer.md)
   An integer that specifies the order in which to apply animations when more than one animation is playing.
-- [var handoffType: AnimationHandoffType](playanimationaction/handofftype.md)
+- [var handoffType: AnimationHandoffType](./playanimationaction/handofftype.md)
   Type of handoff behavior between a currently-playing animation and the new animation.
-- [var separateAnimatedValue: Bool](playanimationaction/separateanimatedvalue.md)
+- [var separateAnimatedValue: Bool](./playanimationaction/separateanimatedvalue.md)
   When set to false, this value indicates that the animation will write directly to the entity’s base value. When set to true, this value indicates that the animation will write to an interim value for the duration of the animation. If this value is set to true then when the animation completes, the entity’s value will be reset to the base value.
-- [var targetEntity: ActionEntityResolution](playanimationaction/targetentity.md)
+- [var targetEntity: ActionEntityResolution](./playanimationaction/targetentity.md)
   The entity to play the animation.
-- [var transitionDuration: TimeInterval](playanimationaction/transitionduration.md)
+- [var transitionDuration: TimeInterval](./playanimationaction/transitionduration.md)
   The duration in seconds over which the animation fades in or cross-fades.
-- [var useParentedControllers: Bool](playanimationaction/useparentedcontrollers.md)
+- [var useParentedControllers: Bool](./playanimationaction/useparentedcontrollers.md)
   A Boolean that indicates whether to parent the new animation’s controller to the controller managing this action.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [EntityAction](entityaction.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [EntityAction](./entityaction.md)
 
 ## See Also
 
-- [struct BillboardAction](billboardaction.md)
+### Built-in actions
+- [struct BillboardAction](./billboardaction.md)
   An action that animates the blend factor of an entity’s billboard component.
-- [struct EmphasizeAction](emphasizeaction.md)
+- [struct EmphasizeAction](./emphasizeaction.md)
   An action that performs an animation to call attention to an entity.
-- [struct FromToByAction](fromtobyaction.md)
+- [struct FromToByAction](./fromtobyaction.md)
   An action that starts, stops, or increments by a specific value.
-- [struct ImpulseAction](impulseaction.md)
+- [struct ImpulseAction](./impulseaction.md)
   An action that applies an impulse to the physics body at its center of mass when played as an animation.
-- [struct OrbitEntityAction](orbitentityaction.md)
+- [struct OrbitEntityAction](./orbitentityaction.md)
   An action which animates the transform of an entity to revolve around a specified pivot entity.
-- [struct PlayAudioAction](playaudioaction.md)
+- [struct PlayAudioAction](./playaudioaction.md)
   An action which plays an audio resource on the given target entity.
-- [struct SetEntityEnabledAction](setentityenabledaction.md)
+- [struct SetEntityEnabledAction](./setentityenabledaction.md)
   An action that enables or disables the targeted entity and its descendants when played as an animation.
-- [struct SpinAction](spinaction.md)
+- [struct SpinAction](./spinaction.md)
   An action which animates the transform of an entity to rotate around a specified local axis.
 
 

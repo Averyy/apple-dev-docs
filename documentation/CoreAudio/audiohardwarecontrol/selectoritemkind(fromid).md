@@ -1,12 +1,13 @@
 # selectorItemKind(fromID:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This property returns a UInt32 that identifies the kind of selector item the item ID refers to.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

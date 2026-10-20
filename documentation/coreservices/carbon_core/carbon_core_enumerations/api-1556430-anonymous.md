@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kAlertCautionIcon: Int](kalertcautionicon.md)
-- [var kAlertNoteIcon: Int](kalertnoteicon.md)
-- [var kAlertStopIcon: Int](kalertstopicon.md)
+- [var kAlertCautionIcon: Int](../../kalertcautionicon.md)
+- [var kAlertNoteIcon: Int](../../kalertnoteicon.md)
+- [var kAlertStopIcon: Int](../../kalertstopicon.md)
 
 
 ---

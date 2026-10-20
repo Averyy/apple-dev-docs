@@ -1,12 +1,13 @@
 # resizingMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The table column’s resizing mask.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The table column’s resizing mask.
 var resizingMask: NSTableColumn.ResizingOptions { get set }
 ```
 
+```objc
+@property NSTableColumnResizingOptions resizingMask;
+```
+
 #### Discussion
 
-The value of this property specifies the resizability of the table column. See [`Resizing Modes`](resizing-modes.md) for possible values. Values can be combined using the C bitwise OR operator.
+The value of this property specifies the resizability of the table column. See [Resizing Modes](../resizing-modes.md) for possible values. Values can be combined using the C bitwise OR operator.
 
-When the value of this property is `0`, the column is not resizable. The default value of this property is [`userResizingMask`](nstablecolumn/resizingoptions/userresizingmask.md) | [`autoresizingMask`](nstablecolumn/resizingoptions/autoresizingmask.md).
+When the value of this property is `0`, the column is not resizable. The default value of this property is [`userResizingMask`](./resizingoptions/userresizingmask.md) | [`autoresizingMask`](./resizingoptions/autoresizingmask.md).
 
 ## See Also
 
-- [var width: CGFloat](nstablecolumn/width.md)
+### Controlling Size
+- [var width: CGFloat](./width.md)
   The table column’s width, in points.
-- [var minWidth: CGFloat](nstablecolumn/minwidth.md)
+- [var minWidth: CGFloat](./minwidth.md)
   The table column’s minimum width, in points.
-- [var maxWidth: CGFloat](nstablecolumn/maxwidth.md)
+- [var maxWidth: CGFloat](./maxwidth.md)
   The table column’s maximum width, in points.
-- [func sizeToFit()](nstablecolumn/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the table column to fit the width of its header cell.
 
 

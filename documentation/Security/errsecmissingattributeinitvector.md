@@ -1,7 +1,8 @@
 # errSecMissingAttributeInitVector
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An init vector attribute is missing.
 
@@ -18,6 +19,10 @@ An init vector attribute is missing.
 
 ```swift
 var errSecMissingAttributeInitVector: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeInitVector
 ```
 
 

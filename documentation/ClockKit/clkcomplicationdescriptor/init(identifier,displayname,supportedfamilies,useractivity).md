@@ -1,12 +1,15 @@
 # init(identifier:displayName:supportedFamilies:userActivity:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new complication descriptor with an associated user activity.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -16,11 +19,11 @@ convenience init(identifier: String, displayName: String, supportedFamilies: [CL
 
 ## Mentions
 
-- [Declaring complications for your app](declaring-complications-for-your-app.md)
+- [Declaring complications for your app](../declaring-complications-for-your-app.md)
 
 #### Discussion
 
-If the user taps on a complication specified by this descriptor, the system launches the app and calls [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-5pyj1), passing the user activity. Your [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-5pyj1) method should update the app so that it’s in the specified state.
+If the user taps on a complication specified by this descriptor, the system launches the app and calls [`handle(_:)`](../../WatchKit/wkextensiondelegate/handle%28_%29-5pyj1.md), passing the user activity. Your [`handle(_:)`](../../WatchKit/wkextensiondelegate/handle%28_%29-5pyj1.md) method should update the app so that it’s in the specified state.
 
 Because the system can pass configurations as part of a shared watch face, only include data useable by any instance of the app. For example, avoid using identifiers that might change between users, like an index into the user’s favorites list. Instead, use items that remain constant across all copies of the app, like unique string identifiers.
 
@@ -33,9 +36,10 @@ Because the system can pass configurations as part of a shared watch face, only 
 
 ## See Also
 
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily])](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:).md)
+### Creating descriptors
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily])](./init%28identifier,displayname,supportedfamilies%29.md)
   Returns a new complication descriptor.
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:userinfo:).md)
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](./init%28identifier,displayname,supportedfamilies,userinfo%29.md)
   Returns a new complication descriptor with an associated dictionary of user data.
 
 

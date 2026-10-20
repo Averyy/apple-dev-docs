@@ -1,20 +1,25 @@
 # isAccessibilityElement
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 var isAccessibilityElement: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL isAccessibilityElement;
 ```
 
 

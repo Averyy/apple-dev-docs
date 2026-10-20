@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A text drag delegate object for customizing the drag source behavior of a text view.
@@ -16,6 +17,10 @@ A text drag delegate object for customizing the drag source behavior of a text v
 
 ```swift
 weak var textDragDelegate: (any UITextDragDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<UITextDragDelegate> textDragDelegate;
 ```
 
 

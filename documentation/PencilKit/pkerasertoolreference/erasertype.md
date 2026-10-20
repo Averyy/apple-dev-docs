@@ -1,7 +1,8 @@
 # eraserType
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior adopted by the eraser when deleting content.
 
@@ -16,6 +17,10 @@ The behavior adopted by the eraser when deleting content.
 
 ```swift
 var eraserType: __PKEraserType { get }
+```
+
+```objc
+@property (nonatomic, readonly) PKEraserType eraserType;
 ```
 
 

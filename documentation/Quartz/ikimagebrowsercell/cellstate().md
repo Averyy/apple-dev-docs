@@ -1,7 +1,8 @@
 # cellState()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current cell state of the receiver.
 
@@ -14,13 +15,17 @@ Returns the current cell state of the receiver.
 func cellState() -> IKImageBrowserCellState
 ```
 
+```objc
+- (IKImageBrowserCellState) cellState;
+```
+
 #### Return Value
 
-The current state of the cell. See [`IKImageBrowserCellState`](ikimagebrowsercellstate.md) for possible values.
+The current state of the cell. See [`IKImageBrowserCellState`](../ikimagebrowsercellstate.md) for possible values.
 
 #### Discussion
 
-The [`IKImageBrowserView`](ikimagebrowserview.md) creates thumbnails asynchronously. This method returns the current state.
+The [`IKImageBrowserView`](../ikimagebrowserview.md) creates thumbnails asynchronously. This method returns the current state.
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Reduces a property value into an accumulating summary.

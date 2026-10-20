@@ -1,7 +1,8 @@
 # MTLDynamicLibraryError
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Errors when compiling dynamic libraries.
 
@@ -22,52 +23,53 @@ struct MTLDynamicLibraryError
 ## Topics
 
 ### Error codes
-- [static var none: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/none.md)
+- [static var none: MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/none.md)
   An error code that represents the absence of any problems.
-- [static var invalidFile: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/invalidfile.md)
+- [static var invalidFile: MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/invalidfile.md)
   An error code that indicates an app is using an invalid reference to a library file, typically related to a URL.
-- [static var compilationFailure: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/compilationfailure.md)
+- [static var compilationFailure: MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/compilationfailure.md)
   An error code that indicates Metal couldn’t compile a dynamic library.
-- [static var unresolvedInstallName: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/unresolvedinstallname.md)
+- [static var unresolvedInstallName: MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/unresolvedinstallname.md)
   An error code that indicates Metal couldn’t resolve the installation name for a new dynamic library.
-- [static var dependencyLoadFailure: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/dependencyloadfailure.md)
+- [static var dependencyLoadFailure: MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/dependencyloadfailure.md)
   An error code that indicates a dynamic library couldn’t link to other dynamic libraries.
-- [static var unsupported: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/unsupported.md)
+- [static var unsupported: MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/unsupported.md)
   An error code that indicates the GPU device doesn’t support dynamic libraries.
-- [MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/code.md)
+- [MTLDynamicLibraryError.Code](./mtldynamiclibraryerror-swift.struct/code.md)
   Error codes that Metal can generate when creating dynamic libraries.
 ### Error domain
-- [static var errorDomain: String](mtldynamiclibraryerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./mtldynamiclibraryerror-swift.struct/errordomain.md)
   The current dynamic library error domain.
-- [let MTLDynamicLibraryDomain: String](mtldynamiclibrarydomain.md)
+- [let MTLDynamicLibraryDomain: String](./mtldynamiclibrarydomain.md)
   The domain for Metal dynamic library errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
+### Structures
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [struct MTLBinaryArchiveError](./mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
-- [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
+- [struct MTLCommandBufferError](./mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
-- [struct MTLComponentTransform](mtlcomponenttransform.md)
-- [struct MTLCounterSampleBufferError](mtlcountersamplebuffererror-swift.struct.md)
+- [struct MTLComponentTransform](./mtlcomponenttransform.md)
+- [struct MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct.md)
   The error codes that indicate why a GPU driver can’t create a counter sample buffer.
-- [struct MTLIOError](mtlioerror-swift.struct.md)
+- [struct MTLIOError](./mtlioerror-swift.struct.md)
   The categories of errors for creating an input/output file handle.
-- [struct MTLPackedFloatQuaternion](mtlpackedfloatquaternion.md)
-- [struct MTLStitchedLibraryOptions](mtlstitchedlibraryoptions.md)
-- [struct NSDeviceCertification](nsdevicecertification.md)
-- [struct NSProcessPerformanceProfile](nsprocessperformanceprofile.md)
+- [struct MTLPackedFloatQuaternion](./mtlpackedfloatquaternion.md)
+- [struct MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions.md)
+- [struct NSDeviceCertification](./nsdevicecertification.md)
+- [struct NSProcessPerformanceProfile](./nsprocessperformanceprofile.md)
   A value describing the device’s performance profile.
 
 

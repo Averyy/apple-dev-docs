@@ -1,7 +1,8 @@
 # PlayMediaMediaItemResolutionResult
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media item that matches a play media intent, or information about why your service can’t provide a media item.
 
@@ -10,7 +11,7 @@ A media item that matches a play media intent, or information about why your ser
 
 ## Declaration
 
-```swift
+```
 object PlayMediaMediaItemResolutionResult
 ```
 
@@ -21,18 +22,20 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Topics
 
 ### Specifying a Result
-- [object PlayMediaMediaItemResolutionResult.Success](playmediamediaitemresolutionresult/success-data.dictionary.md)
+- [object PlayMediaMediaItemResolutionResult.Success](./playmediamediaitemresolutionresult/success-data.dictionary.md)
   A media item that successfully matches the intent.
-- [object PlayMediaMediaItemResolutionResult.Unsupported](playmediamediaitemresolutionresult/unsupported-data.dictionary.md)
+- [object PlayMediaMediaItemResolutionResult.Unsupported](./playmediamediaitemresolutionresult/unsupported-data.dictionary.md)
   The reason your service can’t play the requested media item.
-- [object PlayMediaMediaItemResolutionResult.Disambiguation](playmediamediaitemresolutionresult/disambiguation-data.dictionary.md)
+- [object PlayMediaMediaItemResolutionResult.Disambiguation](./playmediamediaitemresolutionresult/disambiguation-data.dictionary.md)
   A result that requires the user to choose from multiple media items before proceeding.
-- [object PlayMediaMediaItemResolutionResult.ConfirmationRequired](playmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)
+- [object PlayMediaMediaItemResolutionResult.ConfirmationRequired](./playmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before proceeding.
 
 ## Properties
 
 - `class` (string): The specific type of result.
+
+  **Allowed Values**: `PlayMediaMediaItemResolutionResult`
 - `success` (PlayMediaMediaItemResolutionResult.Success): A media item that successfully matches the intent.
 - `confirmationRequired` (PlayMediaMediaItemResolutionResult.ConfirmationRequired): A media item for the user to confirm as a match.
 - `disambiguation` (PlayMediaMediaItemResolutionResult.Disambiguation): Multiple media items for the user to choose from.
@@ -41,13 +44,14 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Relationships
 
 ### Inherits From
-- [IntentResolutionResult](intentresolutionresult.md)
+- [IntentResolutionResult](./intentresolutionresult.md)
 
 ## See Also
 
-- [object PlayMediaIntentHandlingResolveMediaItemsInvocationResponse](playmediaintenthandlingresolvemediaitemsinvocationresponse.md)
+### Resolving a Media Item
+- [object PlayMediaIntentHandlingResolveMediaItemsInvocationResponse](./playmediaintenthandlingresolvemediaitemsinvocationresponse.md)
   Your service’s response to a request to resolve media items in a play media intent.
-- [type PlayMediaMediaItemUnsupportedReason](playmediamediaitemunsupportedreason.md)
+- [type PlayMediaMediaItemUnsupportedReason](./playmediamediaitemunsupportedreason.md)
   Reasons the media service can’t play the media item.
 
 

@@ -1,7 +1,8 @@
 # ecdsaSignatureDigestRFC4754
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An algorithm for generating message digest signatures.
 
@@ -18,6 +19,10 @@ An algorithm for generating message digest signatures.
 
 ```swift
 static let ecdsaSignatureDigestRFC4754: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDSASignatureDigestRFC4754;
 ```
 
 

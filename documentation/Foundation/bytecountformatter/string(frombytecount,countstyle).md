@@ -1,7 +1,8 @@
 # string(fromByteCount:countStyle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a byte count into the specified string format without creating an `NSNumber` object.
 
@@ -20,6 +21,10 @@ Converts a byte count into the specified string format without creating an `NSNu
 class func string(fromByteCount byteCount: Int64, countStyle: ByteCountFormatter.CountStyle) -> String
 ```
 
+```objc
++ (NSString *) stringFromByteCount:(long long) byteCount countStyle:(NSByteCountFormatterCountStyle) countStyle;
+```
+
 #### Return Value
 
 A string containing the formatted `byteCount` value.
@@ -27,12 +32,14 @@ A string containing the formatted `byteCount` value.
 ## Parameters
 
 - `byteCount`: The byte count.
-- `countStyle`: The formatter style. See [`ByteCountFormatter.CountStyle`](bytecountformatter/countstyle-swift.enum.md) for possible values.
+- `countStyle`: The formatter style. See [`ByteCountFormatter.CountStyle`](./countstyle-swift.enum.md) for possible values.
 
 ## See Also
 
-- [Data Formatting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
-- [func string(fromByteCount: Int64) -> String](bytecountformatter/string(frombytecount:).md)
+### Related Documentation
+- [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
+### Creating Strings from Byte Count
+- [func string(fromByteCount: Int64) -> String](./string%28frombytecount%29.md)
   Converts a byte count into a string without creating an `NSNumber` object.
 
 

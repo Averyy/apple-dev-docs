@@ -1,7 +1,8 @@
 # restTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The local space transformation of the joint in the solver’s rest pose.
 

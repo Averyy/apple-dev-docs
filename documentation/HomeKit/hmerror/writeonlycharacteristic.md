@@ -1,7 +1,8 @@
 # writeOnlyCharacteristic
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to read from a write-only characteristic.
 
@@ -21,7 +22,8 @@ static var writeOnlyCharacteristic: HMError.Code { get }
 
 ## See Also
 
-- [static var readOnlyCharacteristic: HMError.Code](hmerror/readonlycharacteristic.md)
+### Detecting characteristic errors
+- [static var readOnlyCharacteristic: HMError.Code](./readonlycharacteristic.md)
   An attempt to modify a read-only value.
 
 

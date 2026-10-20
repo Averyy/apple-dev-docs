@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency to localize the amounts in the shopping cart.
 

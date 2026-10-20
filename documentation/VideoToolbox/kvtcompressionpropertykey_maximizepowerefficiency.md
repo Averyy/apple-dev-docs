@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_MaximizePowerEfficiency
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 12.0+
@@ -17,13 +18,18 @@
 let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_MaximizePowerEfficiency;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString](kvtcompressionpropertykey_maxframedelaycount.md)
+### Runtime Restrictions
+- [let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString](./kvtcompressionpropertykey_maxframedelaycount.md)
   The maximum number of frames that a compressor is allowed to hold before it must output a compressed frame.
-- [let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString](kvtcompressionpropertykey_maxh264slicebytes.md)
+- [let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString](./kvtcompressionpropertykey_maxh264slicebytes.md)
   The maximum slice size for H.264 encoding.
-- [let kVTCompressionPropertyKey_RealTime: CFString](kvtcompressionpropertykey_realtime.md)
+- [let kVTCompressionPropertyKey_RealTime: CFString](./kvtcompressionpropertykey_realtime.md)
   A Boolean value indicating whether it’s recommended that the video encoder perform compression in real time.
 
 

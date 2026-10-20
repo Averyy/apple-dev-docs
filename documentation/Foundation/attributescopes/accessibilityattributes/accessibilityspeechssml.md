@@ -1,7 +1,8 @@
 # accessibilitySpeechSSML
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An SSML fragment describing how the annotated range should be spoken.
 

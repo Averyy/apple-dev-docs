@@ -1,7 +1,8 @@
 # uppercased
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An uppercase representation of the string.
 
@@ -20,31 +21,36 @@ An uppercase representation of the string.
 var uppercased: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * uppercaseString;
+```
+
 #### Discussion
 
 This property performs the canonical (non-localized) mapping. It is suitable for programming operations that require stable results not depending on the current locale.
 
-Case transformations aren’t guaranteed to be symmetrical or to produce strings of the same lengths as the originals. See [`lowercased`](nsstring/lowercased.md) for an example.
+Case transformations aren’t guaranteed to be symmetrical or to produce strings of the same lengths as the originals. See [`lowercased`](./lowercased.md) for an example.
 
-> ❗ **Important**:  When working with text that’s presented to the user, use [`localizedUppercase`](nsstring/localizeduppercase.md) or [`uppercased(with:)`](nsstring/uppercased(with:).md) instead.
+> ❗ **Important**:  When working with text that’s presented to the user, use [`localizedUppercase`](./localizeduppercase.md) or [`uppercased(with:)`](./uppercased%28with%29.md) instead.
 
 ## See Also
 
-- [var lowercased: String](nsstring/lowercased.md)
+### Changing Case
+- [var lowercased: String](./lowercased.md)
   A lowercase representation of the string.
-- [var localizedLowercase: String](nsstring/localizedlowercase.md)
+- [var localizedLowercase: String](./localizedlowercase.md)
   Returns a version of the string with all letters converted to lowercase, taking into account the current locale.
-- [func lowercased(with: Locale?) -> String](nsstring/lowercased(with:).md)
+- [func lowercased(with: Locale?) -> String](./lowercased%28with%29.md)
   Returns a version of the string with all letters converted to lowercase, taking into account the specified locale.
-- [var localizedUppercase: String](nsstring/localizeduppercase.md)
+- [var localizedUppercase: String](./localizeduppercase.md)
   Returns a version of the string with all letters converted to uppercase, taking into account the current locale.
-- [func uppercased(with: Locale?) -> String](nsstring/uppercased(with:).md)
+- [func uppercased(with: Locale?) -> String](./uppercased%28with%29.md)
   Returns a version of the string with all letters converted to uppercase, taking into account the specified locale.
-- [var capitalized: String](nsstring/capitalized.md)
+- [var capitalized: String](./capitalized.md)
   A capitalized representation of the string.
-- [var localizedCapitalized: String](nsstring/localizedcapitalized.md)
+- [var localizedCapitalized: String](./localizedcapitalized.md)
   Returns a capitalized representation of the receiver using the current locale.
-- [func capitalized(with: Locale?) -> String](nsstring/capitalized(with:).md)
+- [func capitalized(with: Locale?) -> String](./capitalized%28with%29.md)
   Returns a capitalized representation of the receiver using the specified locale.
 
 

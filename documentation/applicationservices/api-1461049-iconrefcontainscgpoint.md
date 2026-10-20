@@ -1,7 +1,8 @@
 # IconRefContainsCGPoint(_:_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func IconRefContainsCGPoint(_ testPt: UnsafePointer<CGPoint>!, _ iconRect: UnsafePointer<CGRect>!, _ align: IconAlignmentType, _ iconServicesUsageFlags: IconServicesUsageFlags, _ theIconRef: IconRef!) -> Bool
+```
+
+```c
+Boolean IconRefContainsCGPoint(const CGPoint *testPt, const CGRect *iconRect, IconAlignmentType align, IconServicesUsageFlags iconServicesUsageFlags, IconRef theIconRef);
 ```
 
 

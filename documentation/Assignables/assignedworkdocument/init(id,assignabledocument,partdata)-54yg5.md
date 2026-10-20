@@ -1,7 +1,8 @@
 # init(id:assignableDocument:partData:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct an instance of this object with the parts data passed in.
 
@@ -9,7 +10,9 @@ Construct an instance of this object with the parts data passed in.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use async init(id:assignableDocument:partData:)
 
 ## Declaration
 
@@ -25,7 +28,8 @@ init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partDa
 
 ## See Also
 
-- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : MergeablePartData]) async throws](assignedworkdocument/init(id:assignabledocument:partdata:)-8eh38.md)
+### Creating an assigned work document
+- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : MergeablePartData]) async throws](./init%28id,assignabledocument,partdata%29-8eh38.md)
   Construct an instance of this object with the parts data passed in.
 
 

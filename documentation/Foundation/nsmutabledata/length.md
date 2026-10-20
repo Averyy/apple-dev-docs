@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes contained in the mutable data object.
 
@@ -20,15 +21,20 @@ The number of bytes contained in the mutable data object.
 var length: Int { get set }
 ```
 
+```objc
+@property NSUInteger length;
+```
+
 #### Discussion
 
 The mutable data object’s length parameter is read-writeable. You can set this parameter to expand or truncate the number of bytes contained by the data object. If the mutable data object is expanded, the additional bytes are filled with zeros.
 
-> ❗ **Important**:  Changing the length of a mutable data object invalidate any existing data pointers returned by the [`bytes`](nsdata/bytes.md) or [`mutableBytes`](nsmutabledata/mutablebytes.md) properties.
+> ❗ **Important**:  Changing the length of a mutable data object invalidate any existing data pointers returned by the [`bytes`](../nsdata/bytes.md) or [`mutableBytes`](./mutablebytes.md) properties.
 
 ## See Also
 
-- [func increaseLength(by: Int)](nsmutabledata/increaselength(by:).md)
+### Related Documentation
+- [func increaseLength(by: Int)](./increaselength%28by%29.md)
   Increases the length of the receiver by a given number of bytes.
 
 

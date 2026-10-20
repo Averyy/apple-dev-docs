@@ -1,7 +1,8 @@
 # CSIdentityCommitAsynchronously(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityCommitAsynchronously(_ identity: CSIdentity!, _ clientContext: UnsafePointer<CSIdentityClientContext>!, _ runLoop: CFRunLoop!, _ runLoopMode: CFString!, _ authorization: AuthorizationRef!) -> Bool
+```
+
+```c
+Boolean CSIdentityCommitAsynchronously(CSIdentityRef identity, const CSIdentityClientContext *clientContext, CFRunLoopRef runLoop, CFStringRef runLoopMode, AuthorizationRef authorization);
 ```
 
 

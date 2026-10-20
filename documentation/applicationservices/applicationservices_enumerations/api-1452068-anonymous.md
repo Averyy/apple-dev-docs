@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kATSULeftToRightBaseDirection: Int](katsulefttorightbasedirection.md)
-- [var kATSURightToLeftBaseDirection: Int](katsurighttoleftbasedirection.md)
+- [var kATSULeftToRightBaseDirection: Int](../katsulefttorightbasedirection.md)
+- [var kATSURightToLeftBaseDirection: Int](../katsurighttoleftbasedirection.md)
 
 
 ---

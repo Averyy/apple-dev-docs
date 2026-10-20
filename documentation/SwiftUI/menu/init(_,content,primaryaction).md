@@ -1,7 +1,8 @@
 # init(_:content:primaryAction:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu with a custom primary action that generates its label from a localized string resource.
 
@@ -20,6 +21,20 @@ Creates a menu with a custom primary action that generates its label from a loca
 nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder content: () -> Content, primaryAction: @escaping () -> Void) where Label == Text
 ```
 
+Available when `Label` conforms to `View` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content, primaryAction: @escaping () -> Void) where Label == Text
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, @ContentBuilder content: () -> Content, primaryAction: @escaping () -> Void) where Label == Text, S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: Text resource for the link’s localized title, which describes the contents of the menu.
@@ -28,11 +43,12 @@ nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder conte
 
 ## See Also
 
-- [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](menu/init(content:label:primaryaction:).md)
+### Creating a menu with a primary action
+- [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](./init%28content,label,primaryaction%29.md)
   Creates a menu with a custom primary action and custom label.
-- [init(_:image:content:primaryAction:)](menu/init(_:image:content:primaryaction:).md)
+- [init(_:image:content:primaryAction:)](./init%28_,image,content,primaryaction%29.md)
   Creates a menu with a custom primary action that generates its label from a localized string resource.
-- [init(_:systemImage:content:primaryAction:)](menu/init(_:systemimage:content:primaryaction:).md)
+- [init(_:systemImage:content:primaryAction:)](./init%28_,systemimage,content,primaryaction%29.md)
   Creates a menu with a custom primary action that generates its label from a localized string key and system image.
 
 

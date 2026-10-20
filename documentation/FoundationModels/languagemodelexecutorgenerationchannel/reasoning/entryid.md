@@ -1,7 +1,8 @@
 # entryID
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the entry.
 
@@ -21,9 +22,10 @@ var entryID: String?
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.Reasoning.Action](languagemodelexecutorgenerationchannel/reasoning/action-swift.property.md)
+### Handling reasoning
+- [var action: LanguageModelExecutorGenerationChannel.Reasoning.Action](./action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.Reasoning.Action](languagemodelexecutorgenerationchannel/reasoning/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.Reasoning.Action](./action-swift.struct.md)
   An operation that can be performed on a reasoning entry.
 
 

@@ -1,14 +1,15 @@
 # downloadResources(versions:timeout:subprogress:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Downloads the resources required to render cinematic effects on assets Resources are device-wide and are cached once downloaded
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration

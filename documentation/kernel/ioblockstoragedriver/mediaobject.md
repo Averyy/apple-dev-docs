@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOMedia * _mediaObject;
 ```
 
@@ -15,14 +15,15 @@ A pointer to the media object we have instantiated (if any).
 
 ## See Also
 
-- [_writeProtected](ioblockstoragedriver/writeprotected.md)
-- [_removable](ioblockstoragedriver/removable.md)
-- [_mediaType](ioblockstoragedriver/mediatype.md)
-- [_mediaBlockSize](ioblockstoragedriver/mediablocksize.md)
-- [_maxWriteByteTransfer](ioblockstoragedriver/maxwritebytetransfer.md)
-- [_maxReadByteTransfer](ioblockstoragedriver/maxreadbytetransfer.md)
-- [_maxBlockNumber](ioblockstoragedriver/maxblocknumber.md)
-- [_ejectable](ioblockstoragedriver/ejectable.md)
+### Instance Variables
+- [_writeProtected](./writeprotected.md)
+- [_removable](./removable.md)
+- [_mediaType](./mediatype.md)
+- [_mediaBlockSize](./mediablocksize.md)
+- [_maxWriteByteTransfer](./maxwritebytetransfer.md)
+- [_maxReadByteTransfer](./maxreadbytetransfer.md)
+- [_maxBlockNumber](./maxblocknumber.md)
+- [_ejectable](./ejectable.md)
 
 
 ---

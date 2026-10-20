@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A rectangle that defines the extent of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A rectangle that defines the extent of the effect.
 var extent: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect extent;
+```
+
 ## See Also
 
-- [var color: CIColor](ciroundedrectanglegenerator/color.md)
+### Instance Properties
+- [var color: CIColor](./color.md)
   The color of the rounded rectangle.
-- [var radius: Float](ciroundedrectanglegenerator/radius.md)
+- [var radius: Float](./radius.md)
   The distance from the center of the effect.
 
 

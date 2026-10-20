@@ -1,23 +1,28 @@
 # longitudeDelta
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of east-to-west distance (measured in degrees) to display for the map region.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var longitudeDelta: CLLocationDegrees
+```
+
+```c
+CLLocationDegrees longitudeDelta;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The number of kilometers spanned by a longitude range varies based on the curren
 
 ## See Also
 
-- [var latitudeDelta: CLLocationDegrees](mkcoordinatespan/latitudedelta.md)
+### Getting the span coordinates
+- [var latitudeDelta: CLLocationDegrees](./latitudedelta.md)
   The amount of north-to-south distance (measured in degrees) to display on the map.
 
 

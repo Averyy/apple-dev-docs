@@ -1,7 +1,8 @@
 # supportedLanguages
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of translation languages the framework supports.
 

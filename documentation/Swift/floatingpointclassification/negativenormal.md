@@ -1,7 +1,8 @@
 # FloatingPointClassification.negativeNormal
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A negative value that uses the full precision of the floating-point type.
 

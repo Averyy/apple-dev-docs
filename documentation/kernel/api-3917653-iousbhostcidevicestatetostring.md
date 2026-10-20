@@ -1,14 +1,15 @@
 # IOUSBHostCIDeviceStateToString
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 const char * IOUSBHostCIDeviceStateToString(IOUSBHostCIDeviceState deviceState);
 ```
 

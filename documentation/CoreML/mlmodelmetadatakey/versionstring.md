@@ -1,7 +1,8 @@
 # versionString
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Key for the version of the model.
 
@@ -20,15 +21,20 @@ Key for the version of the model.
 static let versionString: MLModelMetadataKey
 ```
 
+```c
+extern MLModelMetadataKey const MLModelVersionStringKey;
+```
+
 ## See Also
 
-- [static let author: MLModelMetadataKey](mlmodelmetadatakey/author.md)
+### Metadata keys
+- [static let author: MLModelMetadataKey](./author.md)
   Key for the author of the model.
-- [static let description: MLModelMetadataKey](mlmodelmetadatakey/description.md)
+- [static let description: MLModelMetadataKey](./description.md)
   Key for the overall description of the model.
-- [static let license: MLModelMetadataKey](mlmodelmetadatakey/license.md)
+- [static let license: MLModelMetadataKey](./license.md)
   Key for the license of the model.
-- [static let creatorDefinedKey: MLModelMetadataKey](mlmodelmetadatakey/creatordefinedkey.md)
+- [static let creatorDefinedKey: MLModelMetadataKey](./creatordefinedkey.md)
   Key for the model creator’s custom metadata.
 
 

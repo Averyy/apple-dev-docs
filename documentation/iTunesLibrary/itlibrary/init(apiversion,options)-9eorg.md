@@ -1,7 +1,8 @@
 # init(apiVersion:options:)
 
 **Framework**: iTunes Library  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of `ITLibrary` that can retrieve media entities.
 
@@ -15,24 +16,29 @@ Initializes an instance of `ITLibrary` that can retrieve media entities.
 init(apiVersion requestedAPIVersion: String, options: ITLibInitOptions) throws
 ```
 
+```objc
+- (instancetype) initWithAPIVersion:(NSString *) requestedAPIVersion options:(ITLibInitOptions) options error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`ITLibrary`](itlibrary.md) instance that can retrieve media entities, or `nil` if the method fails.
+An [`ITLibrary`](../itlibrary.md) instance that can retrieve media entities, or `nil` if the method fails.
 
 #### Discussion
 
-Unless you specify the [`ITLibInitOptions.lazyLoadData`](itlibinitoptions/lazyloaddata.md) option, the system reads and parses the default iTunes database for the current user during initialization of the [`ITLibrary`](itlibrary.md) class. All media entities cache in memory until deallocation of the object occurs.
+Unless you specify the [`ITLibInitOptions.lazyLoadData`](../itlibinitoptions/lazyloaddata.md) option, the system reads and parses the default iTunes database for the current user during initialization of the [`ITLibrary`](../itlibrary.md) class. All media entities cache in memory until deallocation of the object occurs.
 
 ## Parameters
 
 - `requestedAPIVersion`: The version of the iTunesLibrary API that the app is requesting. Provide `"1.0"` if unknown.
-- `options`: Options that change the initialization behavior. See [`ITLibInitOptions`](itlibinitoptions.md).
+- `options`: Options that change the initialization behavior. See [`ITLibInitOptions`](../itlibinitoptions.md).
 
 ## See Also
 
-- [convenience init(apiVersion: String) throws](itlibrary/init(apiversion:)-71e74.md)
-  Initializes an instance of [`ITLibrary`](itlibrary.md) that can retrieve media entities.
-- [enum ITLibInitOptions](itlibinitoptions.md)
+### Essentials
+- [convenience init(apiVersion: String) throws](./init%28apiversion%29-71e74.md)
+  Initializes an instance of [`ITLibrary`](../itlibrary.md) that can retrieve media entities.
+- [enum ITLibInitOptions](../itlibinitoptions.md)
   These constants describe initialization options for an iTunes library.
 
 

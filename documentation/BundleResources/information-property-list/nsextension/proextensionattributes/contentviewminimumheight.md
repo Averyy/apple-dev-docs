@@ -1,20 +1,23 @@
 # ContentViewMinimumHeight
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An integer that specifies the minimum height of the floating window.
 
 **Availability**:
 - ProVideo Workflow Extensions 1.0+
 
+## Details
 
-
-**Type**: integer
+- **Name**: `ContentViewMinimumHeight`
+- **Type**: integer
 
 ## See Also
 
-- [ContentViewMinimumWidth](information-property-list/nsextension/proextensionattributes/contentviewminimumwidth.md)
+### Attributes
+- [ContentViewMinimumWidth](./contentviewminimumwidth.md)
   An integer that specifies the minimum width of the floating window.
 
 

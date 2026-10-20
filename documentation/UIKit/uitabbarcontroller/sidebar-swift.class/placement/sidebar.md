@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Placement.sidebar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Display the sidebar when it is supported.
 
@@ -15,6 +16,10 @@ Display the sidebar when it is supported.
 
 ```swift
 case sidebar
+```
+
+```c
+UITabBarControllerSidebarPlacementSidebar
 ```
 
 

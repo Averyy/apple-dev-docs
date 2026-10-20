@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of confidence of the speaker.
 
@@ -16,19 +17,24 @@ The level of confidence of the speaker.
 var confidence: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double confidence;
+```
+
 #### Discussion
 
 This property is a range from `0` to `1`, where `1` indicates the most confident.
 
 ## See Also
 
-- [var mood: Double](srspeechexpression/mood.md)
+### Getting speech analytics
+- [var mood: Double](./mood.md)
   An indication of how slurry, tired, or exhausted the speaker sounds compared to normal speech.
-- [var valence: Double](srspeechexpression/valence.md)
+- [var valence: Double](./valence.md)
   The degree of positive or negative emotion or sentiment of the speaker.
-- [var activation: Double](srspeechexpression/activation.md)
+- [var activation: Double](./activation.md)
   The level of energy or activation of the speaker.
-- [var dominance: Double](srspeechexpression/dominance.md)
+- [var dominance: Double](./dominance.md)
   The degree of how strong or meek the speaker sounds.
 
 

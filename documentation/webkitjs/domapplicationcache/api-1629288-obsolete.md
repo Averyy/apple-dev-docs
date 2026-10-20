@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short OBSOLETE;
 ```
 

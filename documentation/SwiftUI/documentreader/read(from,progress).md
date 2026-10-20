@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads the document’s content from disk.
@@ -26,9 +27,9 @@ A snapshot representing the document’s content.
 
 #### Discussion
 
-SwiftUI calls this method in the background with coordinated file access. Perform all deserialization and disk access here — the returned snapshot is delivered to [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md) on the main actor.
+SwiftUI calls this method in the background with coordinated file access. Perform all deserialization and disk access here — the returned snapshot is delivered to [`apply(snapshot:previous:)`](../readabledocument/apply%28snapshot,previous%29.md) on the main actor.
 
-For most documents, use [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) instead of implementing a custom reader. Only implement `read` yourself when you need capabilities `FileWrapperDocumentReader` doesn’t provide — such as direct URL access for Core Graphics, AVFoundation, or other frameworks that operate on file paths:
+For most documents, use [`FileWrapperDocumentReader`](../filewrapperdocumentreader.md) instead of implementing a custom reader. Only implement `read` yourself when you need capabilities `FileWrapperDocumentReader` doesn’t provide — such as direct URL access for Core Graphics, AVFoundation, or other frameworks that operate on file paths:
 
 ```swift
 @concurrent
@@ -52,9 +53,10 @@ func read(from source: URL, progress: consuming Subprogress)
 
 ## See Also
 
-- [associatedtype Snapshot](documentreader/snapshot.md)
+### Reading a document
+- [associatedtype Snapshot](./snapshot.md)
   The type representing the document’s content after reading.
-- [associatedtype Source = URL](documentreader/source.md)
+- [associatedtype Source = URL](./source.md)
   The type of the source location to read from.
 
 

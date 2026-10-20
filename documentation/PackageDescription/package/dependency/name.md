@@ -1,12 +1,15 @@
 # name
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the dependency.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
+
+> **Deprecated**: use kind instead
 
 ## Declaration
 
@@ -20,13 +23,14 @@ If the `name` is `nil`, Swift Package Manager deduces the dependency’s name fr
 
 ## See Also
 
-- [let kind: Package.Dependency.Kind](package/dependency/kind-swift.property.md)
+### Describing a Package Dependency
+- [let kind: Package.Dependency.Kind](./kind-swift.property.md)
   A description of the package dependency.
-- [Package.Dependency.Kind](package/dependency/kind-swift.enum.md)
+- [Package.Dependency.Kind](./kind-swift.enum.md)
   The type of dependency.
-- [struct Version](version.md)
+- [struct Version](../../version.md)
   A version according to the semantic versioning specification.
-- [var url: String?](package/dependency/url.md)
+- [var url: String?](./url.md)
   The Git URL of the package dependency.
 
 

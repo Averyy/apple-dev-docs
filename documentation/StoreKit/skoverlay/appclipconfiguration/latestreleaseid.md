@@ -1,7 +1,8 @@
 # latestReleaseID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The release ID of the latest version of your parent app as displayed in App Store Connect.
 
@@ -15,6 +16,10 @@ The release ID of the latest version of your parent app as displayed in App Stor
 
 ```swift
 var latestReleaseID: String? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSString * latestReleaseID;
 ```
 
 

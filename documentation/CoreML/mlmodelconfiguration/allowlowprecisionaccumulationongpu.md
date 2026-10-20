@@ -1,7 +1,8 @@
 # allowLowPrecisionAccumulationOnGPU
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to allow low-precision accumulation on a GPU.
 
@@ -20,9 +21,14 @@ A Boolean value that determines whether to allow low-precision accumulation on a
 var allowLowPrecisionAccumulationOnGPU: Bool { get set }
 ```
 
+```objc
+@property (readwrite) BOOL allowLowPrecisionAccumulationOnGPU;
+```
+
 ## See Also
 
-- [var preferredMetalDevice: (any MTLDevice)?](mlmodelconfiguration/preferredmetaldevice.md)
+### Configuring GPU usage
+- [var preferredMetalDevice: (any MTLDevice)?](./preferredmetaldevice.md)
   The metal device you prefer this model use to make predictions (inference) and update the model.
 
 

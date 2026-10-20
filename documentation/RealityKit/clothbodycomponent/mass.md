@@ -1,7 +1,8 @@
 # mass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Mass of the body as a whole, in Kg.
 
@@ -24,11 +25,12 @@ Must be positive. The default value is `1.0`.
 
 ## See Also
 
-- [var motionTypes: PerClothVertexData<ClothBodyComponent.ParticleMotionType>](clothbodycomponent/motiontypes.md)
+### Controlling cloth motion
+- [var motionTypes: PerClothVertexData<ClothBodyComponent.ParticleMotionType>](./motiontypes.md)
   Motion types for each particle in the body.
-- [ClothBodyComponent.ParticleMotionType](clothbodycomponent/particlemotiontype.md)
+- [ClothBodyComponent.ParticleMotionType](./particlemotiontype.md)
   Defines whether a particle is moved by the simulation or by the entity transform.
-- [static func resetDeformation(entity: Entity)](clothbodycomponent/resetdeformation(entity:).md)
+- [static func resetDeformation(entity: Entity)](./resetdeformation%28entity%29.md)
   Resets the deformation of the cloth body to its initial pose and motion.
 
 

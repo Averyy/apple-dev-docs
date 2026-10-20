@@ -1,7 +1,8 @@
 # MDLComponent
 
 **Framework**: Model I/O  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The base protocol for extensible file format support in Model I/O.
 
@@ -19,13 +20,17 @@ The base protocol for extensible file format support in Model I/O.
 protocol MDLComponent : NSObjectProtocol
 ```
 
+```objc
+@protocol MDLComponent <NSObject>
+```
+
 #### Overview
 
-By extending this protocol in your own custom protocols, you can define new functionality to add to the [`MDLObject`](mdlobject.md) instances in the object graph corresponding to a [`MDLAsset`](mdlasset.md) instance.
+By extending this protocol in your own custom protocols, you can define new functionality to add to the [`MDLObject`](./mdlobject.md) instances in the object graph corresponding to a [`MDLAsset`](./mdlasset.md) instance.
 
-Model I/O adopts this pattern to support container objects (with the [`MDLObjectContainerComponent`](mdlobjectcontainercomponent.md) protocol) and objects with associated transformations (with the [`MDLTransformComponent`](mdltransformcomponent.md) protocol). To work with these aspects of a Model I/O object, call the object’s [`componentConforming(to:)`](mdlobject/componentconforming(to:).md) method with the appropriate protocol. (The [`MDLObject`](mdlobject.md) class also provides convenience methods and properties for accessing features of these components without directly accessing the component instances.)
+Model I/O adopts this pattern to support container objects (with the [`MDLObjectContainerComponent`](./mdlobjectcontainercomponent.md) protocol) and objects with associated transformations (with the [`MDLTransformComponent`](./mdltransformcomponent.md) protocol). To work with these aspects of a Model I/O object, call the object’s [`componentConforming(to:)`](./mdlobject/componentconforming%28to%29.md) method with the appropriate protocol. (The [`MDLObject`](./mdlobject.md) class also provides convenience methods and properties for accessing features of these components without directly accessing the component instances.)
 
-To add your own object features, first define a protocol that extends the [`MDLComponent`](mdlcomponent.md) protocol, implement a class that adopts that protocol, and then use the [`setComponent(_:for:)`](mdlobject/setcomponent(_:for:).md) method to add your component to each object that needs it. The example below shows how you might implement a file format that associates scripting event triggers with parts of a game scene.
+To add your own object features, first define a protocol that extends the [`MDLComponent`](./mdlcomponent.md) protocol, implement a class that adopts that protocol, and then use the [`setComponent(_:for:)`](./mdlobject/setcomponent%28_,for%29.md) method to add your component to each object that needs it. The example below shows how you might implement a file format that associates scripting event triggers with parts of a game scene.
 
 ```objc
 @protocol MyScriptTriggerComponent <MDLComponent>
@@ -52,23 +57,24 @@ To add your own object features, first define a protocol that extends the [`MDLC
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MDLObjectContainerComponent](mdlobjectcontainercomponent.md)
-- [MDLTransformComponent](mdltransformcomponent.md)
+- [MDLObjectContainerComponent](./mdlobjectcontainercomponent.md)
+- [MDLTransformComponent](./mdltransformcomponent.md)
 ### Conforming Types
-- [MDLAnimationBindComponent](mdlanimationbindcomponent.md)
-- [MDLObjectContainer](mdlobjectcontainer.md)
-- [MDLTransform](mdltransform.md)
-- [MDLTransformStack](mdltransformstack.md)
+- [MDLAnimationBindComponent](./mdlanimationbindcomponent.md)
+- [MDLObjectContainer](./mdlobjectcontainer.md)
+- [MDLTransform](./mdltransform.md)
+- [MDLTransformStack](./mdltransformstack.md)
 
 ## See Also
 
-- [class MDLObjectContainer](mdlobjectcontainer.md)
+### Extensible Asset Format Support
+- [class MDLObjectContainer](./mdlobjectcontainer.md)
   A default implementation for handling object hierarchy relationships in a 3D asset.
-- [protocol MDLObjectContainerComponent](mdlobjectcontainercomponent.md)
+- [protocol MDLObjectContainerComponent](./mdlobjectcontainercomponent.md)
   The general interface for classes that can act as containers in an object hierarchy.
-- [protocol MDLTransformComponent](mdltransformcomponent.md)
+- [protocol MDLTransformComponent](./mdltransformcomponent.md)
   The general interface for classes that manage local coordinate space transforms for 3D objects
 
 

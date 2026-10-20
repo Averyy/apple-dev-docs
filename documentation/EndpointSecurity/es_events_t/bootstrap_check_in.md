@@ -1,16 +1,21 @@
 # bootstrap_check_in
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var bootstrap_check_in: UnsafeMutablePointer<es_event_bootstrap_check_in_t> { get set }
+```
+
+```c
+es_event_bootstrap_check_in_t * bootstrap_check_in;
 ```
 
 

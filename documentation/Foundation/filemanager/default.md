@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared file manager object for the process.
 
@@ -20,13 +21,18 @@ The shared file manager object for the process.
 class var `default`: FileManager { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSFileManager * defaultManager;
+```
+
 #### Discussion
 
-This method always represents the same file manager object. If you plan to use a delegate with the file manager to receive notifications about the completion of file-based operations, you should create a new instance of [`FileManager`](filemanager.md) rather than using the shared object.
+This method always represents the same file manager object. If you plan to use a delegate with the file manager to receive notifications about the completion of file-based operations, you should create a new instance of [`FileManager`](../filemanager.md) rather than using the shared object.
 
 ## See Also
 
-- [convenience init(authorization: NSWorkspace.Authorization)](filemanager/init(authorization:).md)
+### Creating a file manager
+- [convenience init(authorization: NSWorkspace.Authorization)](./init%28authorization%29.md)
   Initializes a file manager object that is authorized to perform privileged file system operations.
 
 

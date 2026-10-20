@@ -1,7 +1,8 @@
 # takeSelectedIndexFrom(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Navigates to the selected index, which is taken from the sender.
 
@@ -15,11 +16,15 @@ Navigates to the selected index, which is taken from the sender.
 func takeSelectedIndexFrom(_ sender: Any?)
 ```
 
+```objc
+- (void) takeSelectedIndexFrom:(id) sender;
+```
+
 #### Discussion
 
 When invoked, this method causes the page controller’s view to display the object specified by the value taken from the `sender` control.
 
-This method is animated and invokes the delegate’s [`pageControllerWillStartLiveTransition(_:)`](nspagecontrollerdelegate/pagecontrollerwillstartlivetransition(_:).md) and [`pageControllerDidEndLiveTransition(_:)`](nspagecontrollerdelegate/pagecontrollerdidendlivetransition(_:).md) methods.
+This method is animated and invokes the delegate’s [`pageControllerWillStartLiveTransition(_:)`](../nspagecontrollerdelegate/pagecontrollerwillstartlivetransition%28_%29.md) and [`pageControllerDidEndLiveTransition(_:)`](../nspagecontrollerdelegate/pagecontrollerdidendlivetransition%28_%29.md) methods.
 
 ## Parameters
 
@@ -27,11 +32,13 @@ This method is animated and invokes the delegate’s [`pageControllerWillStartLi
 
 ## See Also
 
-- [func navigateForward(to: Any)](nspagecontroller/navigateforward(to:).md)
+### Related Documentation
+- [func navigateForward(to: Any)](./navigateforward%28to%29.md)
   Navigates to the specific object.
-- [func navigateBack(Any?)](nspagecontroller/navigateback(_:).md)
+### Page Controller Navigation
+- [func navigateBack(Any?)](./navigateback%28_%29.md)
   Navigates backwards in the page controller’s arranged objects array.
-- [func navigateForward(Any?)](nspagecontroller/navigateforward(_:).md)
+- [func navigateForward(Any?)](./navigateforward%28_%29.md)
   Navigates to the next object in the page controller’s arranged objects array, if appropriate.
 
 

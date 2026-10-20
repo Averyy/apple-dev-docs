@@ -1,7 +1,8 @@
 # proRated
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -20,8 +21,9 @@ static let proRated: Transaction.AdvancedCommerceInfo.Refund.RefundType
 
 ## See Also
 
-- [static let custom: Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/refundtype/custom.md)
-- [static let full: Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/refundtype/full.md)
+### Type Properties
+- [static let custom: Transaction.AdvancedCommerceInfo.Refund.RefundType](./custom.md)
+- [static let full: Transaction.AdvancedCommerceInfo.Refund.RefundType](./full.md)
 
 
 ---

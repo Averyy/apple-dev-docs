@@ -1,7 +1,8 @@
 # isArchived
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a medication is archived.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether a medication is archived.
 
 ```swift
 var isArchived: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL isArchived;
 ```
 
 #### Discussion

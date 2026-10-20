@@ -1,7 +1,8 @@
 # es_respond_auth_result(_:_:_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Responds to an event that requires an authorization response.
 
@@ -12,6 +13,10 @@ Responds to an event that requires an authorization response.
 
 ```swift
 func es_respond_auth_result(_ client: OpaquePointer, _ message: UnsafePointer<es_message_t>, _ result: es_auth_result_t, _ cache: Bool) -> es_respond_result_t
+```
+
+```c
+extern es_respond_result_t es_respond_auth_result(es_client_t *client, const es_message_t *message, es_auth_result_t result, bool cache);
 ```
 
 #### Return Value
@@ -27,11 +32,12 @@ A result that indicates whether the response succeeded or failed.
 
 ## See Also
 
-- [struct es_auth_result_t](es_auth_result_t.md)
+### Responding to Events
+- [struct es_auth_result_t](./es_auth_result_t.md)
   Values used when responding to an authorization event.
-- [func es_respond_flags_result(OpaquePointer, UnsafePointer<es_message_t>, UInt32, Bool) -> es_respond_result_t](es_respond_flags_result(_:_:_:_:).md)
+- [func es_respond_flags_result(OpaquePointer, UnsafePointer<es_message_t>, UInt32, Bool) -> es_respond_result_t](./es_respond_flags_result%28_,_,_,_%29.md)
   Responds to an event that requires authorization flags as a response.
-- [struct es_respond_result_t](es_respond_result_t.md)
+- [struct es_respond_result_t](./es_respond_result_t.md)
   Values that indicate the result of responding to a message.
 
 

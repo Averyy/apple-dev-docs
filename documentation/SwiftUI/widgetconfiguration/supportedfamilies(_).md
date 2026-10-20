@@ -1,7 +1,8 @@
 # supportedFamilies(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the sizes that a widget supports.
 
@@ -30,11 +31,12 @@ A widget configuration that supports the sizes you specify.
 
 ## See Also
 
-- [func contentMarginsDisabled() -> some WidgetConfiguration](widgetconfiguration/contentmarginsdisabled.md)
+### Setting the appearance
+- [func contentMarginsDisabled() -> some WidgetConfiguration](./contentmarginsdisabled%28%29.md)
   Disable default content margins.
-- [func disfavoredLocations([WidgetLocation], for: [WidgetFamily]) -> some WidgetConfiguration](widgetconfiguration/disfavoredlocations(_:for:).md)
+- [func disfavoredLocations([WidgetLocation], for: [WidgetFamily]) -> some WidgetConfiguration](./disfavoredlocations%28_,for%29.md)
   Sets the disfavored locations for a widget.
-- [func containerBackgroundRemovable(Bool) -> some WidgetConfiguration](widgetconfiguration/containerbackgroundremovable(_:).md)
+- [func containerBackgroundRemovable(Bool) -> some WidgetConfiguration](./containerbackgroundremovable%28_%29.md)
   A modifier that marks the background of a widget as removable.
 
 

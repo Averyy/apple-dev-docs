@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 var hashValue: Int { get }
 ```
+
+Available when `Self` conforms to `Hashable` and `RawValue` conforms to `Hashable`.
 
 
 ---

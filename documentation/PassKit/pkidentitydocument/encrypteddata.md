@@ -1,7 +1,8 @@
 # encryptedData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An encrypted data object that contains the document information and metadata to associate with a request.
 
@@ -17,9 +18,13 @@ An encrypted data object that contains the document information and metadata to 
 var encryptedData: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * encryptedData;
+```
+
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+- [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
 #### Discussion
 

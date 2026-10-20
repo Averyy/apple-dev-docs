@@ -1,7 +1,8 @@
 # init(contentType:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attribute set for the specified content type.
 
@@ -18,17 +19,22 @@ Creates an attribute set for the specified content type.
 init(contentType: UTType)
 ```
 
+```objc
+- (instancetype) initWithContentType:(UTType *) contentType;
+```
+
 #### Return Value
 
 An attribute set that represents an item of the specified content type.
 
 ## Parameters
 
-- `contentType`: The type of the content. For example, [`png`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/png) or [`movie`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/movie).
+- `contentType`: The type of the content. For example, [`png`](../../UniformTypeIdentifiers/uttype-swift.struct/png.md) or [`movie`](../../UniformTypeIdentifiers/uttype-swift.struct/movie.md).
 
 ## See Also
 
-- [init?(coder: NSCoder)](cssearchableitemattributeset/init(coder:).md)
+### Creating an attribute set
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

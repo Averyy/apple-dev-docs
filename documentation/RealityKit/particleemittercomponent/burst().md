@@ -1,7 +1,8 @@
 # burst()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Emits burstCount particles on the next update call.
 

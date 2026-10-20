@@ -1,7 +1,8 @@
 # kSpeechPhonemeInfoHiliteEnd
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The character offset into the example word that identifies the location of the end of the phoneme.
 
@@ -12,6 +13,10 @@ The character offset into the example word that identifies the location of the e
 
 ```swift
 let kSpeechPhonemeInfoHiliteEnd: CFString
+```
+
+```c
+const CFStringRef kSpeechPhonemeInfoHiliteEnd;
 ```
 
 

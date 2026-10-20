@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called to trigger the action specified by the identifier.
@@ -20,15 +21,20 @@ Called to trigger the action specified by the identifier.
 func run(forKey event: String, object anObject: Any, arguments dict: [AnyHashable : Any]?)
 ```
 
+```objc
+- (void) runActionForKey:(NSString *) event object:(id) anObject arguments:(NSDictionary *) dict;
+```
+
 ## Parameters
 
-- `event`: The identifier of the action. The identifier may be a key or key path relative to `anObject`, an arbitrary external action, or one of the action identifiers defined in [`CALayer`](calayer.md).
+- `event`: The identifier of the action. The identifier may be a key or key path relative to `anObject`, an arbitrary external action, or one of the action identifiers defined in [`CALayer`](../calayer.md).
 - `anObject`: The layer on which the action should occur.
 - `dict`: A dictionary containing parameters associated with this event. May be `nil`.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

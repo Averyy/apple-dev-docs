@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the iterator and returns the next key-value pair from the record.
 
@@ -11,7 +12,7 @@ Advances the iterator and returns the next key-value pair from the record.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration

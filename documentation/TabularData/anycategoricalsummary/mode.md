@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most common values in a column.
 
@@ -26,8 +27,9 @@ The summary orders the elements based on their original locations within the col
 
 ## See Also
 
-- [var modeType: any Any.Type](anycategoricalsummary/modetype.md)
-  The underlying type of [`mode`](anycategoricalsummary/mode.md).
+### Getting Mode Information
+- [var modeType: any Any.Type](./modetype.md)
+  The underlying type of [`mode`](./mode.md).
 
 
 ---

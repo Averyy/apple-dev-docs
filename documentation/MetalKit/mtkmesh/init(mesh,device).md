@@ -1,7 +1,8 @@
 # init(mesh:device:)
 
 **Framework**: MetalKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a MetalKit mesh and its submeshes from a Model I/O mesh.
 
@@ -19,6 +20,10 @@ Initializes a MetalKit mesh and its submeshes from a Model I/O mesh.
 init(mesh: MDLMesh, device: any MTLDevice) throws
 ```
 
+```objc
+- (instancetype) initWithMesh:(MDLMesh *) mesh device:(id<MTLDevice>) device error:(NSError **) error;
+```
+
 #### Return Value
 
 A new MetalKit mesh object, or `nil` if an error occured.
@@ -27,13 +32,13 @@ A new MetalKit mesh object, or `nil` if an error occured.
 
 This initializer does *not* initialize any children meshes of the Model I/O mesh.
 
-All vertex buffers in the source Model I/O mesh and the index buffer of each of its submeshes must have been created with a [`MTKMeshBufferAllocator`](mtkmeshbufferallocator.md) object.
+All vertex buffers in the source Model I/O mesh and the index buffer of each of its submeshes must have been created with a [`MTKMeshBufferAllocator`](../mtkmeshbufferallocator.md) object.
 
 A Model I/O submesh may have its index type and/or geometric primitive type converted to a corresponding Metal type as listed in the tables below. If the geometric primitive type cannot be converted, an error is returned through `error`.
 
 | MDLIndexBitDepth | MTLIndexType |
 | --- | --- |
-| `MDLIndexBitDepthInvalid` ![None](/images/com.apple.metalkit/spacer.png) `MDLIndexBitDepthUInt8` ![None](/images/com.apple.metalkit/spacer.png) `MDLIndexBitDepthUInt16` | `MTLIndexTypeUInt16` |
+| `MDLIndexBitDepthInvalid` ![](https://developer.apple.com/tutorials/images/com.apple.metalkit/spacer.png) `MDLIndexBitDepthUInt8` ![](https://developer.apple.com/tutorials/images/com.apple.metalkit/spacer.png) `MDLIndexBitDepthUInt16` | `MTLIndexTypeUInt16` |
 | `MDLIndexBitDepthUInt32` | `MTLIndexTypeUInt32` |
 
 | MDLGeometryType | MTLPrimitiveType |
@@ -41,9 +46,9 @@ A Model I/O submesh may have its index type and/or geometric primitive type conv
 | `MDLGeometryTypePoints` | `MTLPrimitiveTypePoint` |
 | `MDLGeometryTypeLines` | `MTLPrimitiveTypeLine` |
 | `MDLGeometryTypeTriangleStrips` | `MTLPrimitiveTypeTriangleStrip` |
-| `MDLGeometryTypeTriangles` ![None](/images/com.apple.metalkit/spacer.png) `MDLGeometryTypeQuads` ![None](/images/com.apple.metalkit/spacer.png) `MDLGeometryTypeVariableTopology` | `MTLPrimitiveTypeTriangle` |
+| `MDLGeometryTypeTriangles` ![](https://developer.apple.com/tutorials/images/com.apple.metalkit/spacer.png) `MDLGeometryTypeQuads` ![](https://developer.apple.com/tutorials/images/com.apple.metalkit/spacer.png) `MDLGeometryTypeVariableTopology` | `MTLPrimitiveTypeTriangle` |
 
-> **Note**:  In macOS, vertex buffers allocated from a [`MTKMeshBufferAllocator`](mtkmeshbufferallocator.md) object are aligned to 256 bytes. Index buffers are not aligned.
+> **Note**:  In macOS, vertex buffers allocated from a [`MTKMeshBufferAllocator`](../mtkmeshbufferallocator.md) object are aligned to 256 bytes. Index buffers are not aligned.
 
 ## Parameters
 

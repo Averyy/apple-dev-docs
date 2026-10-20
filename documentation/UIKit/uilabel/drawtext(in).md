@@ -1,7 +1,8 @@
 # drawText(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the label’s text, or its shadow, in the specified rectangle.
 
@@ -9,13 +10,17 @@ Draws the label’s text, or its shadow, in the specified rectangle.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func drawText(in rect: CGRect)
+```
+
+```objc
+- (void) drawTextInRect:(CGRect) rect;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ By the time the system calls this method, the current graphics context is alread
 
 ## See Also
 
-- [func textRect(forBounds: CGRect, limitedToNumberOfLines: Int) -> CGRect](uilabel/textrect(forbounds:limitedtonumberoflines:).md)
+### Drawing and positioning overrides
+- [func textRect(forBounds: CGRect, limitedToNumberOfLines: Int) -> CGRect](./textrect%28forbounds,limitedtonumberoflines%29.md)
   Returns the drawing rectangle for the label’s text.
 
 

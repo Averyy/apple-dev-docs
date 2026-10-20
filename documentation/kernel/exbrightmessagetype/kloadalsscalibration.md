@@ -1,14 +1,15 @@
 # kLoadALSSCalibration
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kLoadALSSCalibration = 0
 ```
 

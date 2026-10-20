@@ -1,6 +1,7 @@
 # Implementing web-based authentication with Platform Single Sign-on
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Support modern, phishing-resistant, and flexible authentication methods.
 
@@ -8,15 +9,15 @@ Support modern, phishing-resistant, and flexible authentication methods.
 
 With web-based authentication, Platform Single Sign-on (Platform SSO) presents a built-in web view that loads your identity provider’s OAuth 2.0/OpenID Connect (OIDC) authorization endpoint. You define the content of the web view and any required authentication steps.
 
-#### Prepare the Sso Extension
+#### Prepare the SSO extension
 
-Web-based authentication uses the Platform SSO 2.0 protocol and specifically requires support of the key service and shared device keys. For more information, see [`Creating extensions that support Platform SSO`](creating-extensions-that-support-platform-sso.md).
+Web-based authentication uses the Platform SSO 2.0 protocol and specifically requires support of the key service and shared device keys. For more information, see [Creating extensions that support Platform SSO](./creating-extensions-that-support-platform-sso.md).
 
-The SSO extension needs to support the [`tokenExchange`](asauthorizationproviderextensionsupportedgranttypes/tokenexchange.md) grant type and return this value from [`supportedGrantTypes()`](asauthorizationproviderextensionregistrationhandler/supportedgranttypes().md) during device registration.
+The SSO extension needs to support the [`tokenExchange`](./asauthorizationproviderextensionsupportedgranttypes/tokenexchange.md) grant type and return this value from [`supportedGrantTypes()`](./asauthorizationproviderextensionregistrationhandler/supportedgranttypes%28%29.md) during device registration.
 
-#### Provide a Login Configuration
+#### Provide a login configuration
 
-When you set [`ASAuthorizationProviderExtensionAuthenticationMethod.openID`](asauthorizationproviderextensionauthenticationmethod/openid.md), or when the options include [`ASAuthorizationProviderExtensionRequestOptionsOpenIDFallback`](asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md), the SSO extension needs to provide a login configuration for web-based authentication.
+When you set [`ASAuthorizationProviderExtensionAuthenticationMethod.openID`](./asauthorizationproviderextensionauthenticationmethod/openid.md), or when the options include [`ASAuthorizationProviderExtensionRequestOptionsOpenIDFallback`](./asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md), the SSO extension needs to provide a login configuration for web-based authentication.
 
 During web-based authentication, Platform SSO displays a web view that loads content from the authorization endpoint. The URL of the authorization endpoint can be static or dynamic. In both cases, the SSO extension needs to provide information to Platform SSO as part of the login configuration when performing the registration.
 
@@ -28,31 +29,31 @@ Regardless of how you provide the URL, Platform SSO makes the following changes 
 | `login_hint` | Removed if already present and set to the identity provider username. |
 | `scope` | Removed if already present and re-added as a whitespace-deduplicated merge of the URL’s scope and the Platform SSO specific login scope. If the login request includes a request object, Platform SSO updates the scope to the same value before signing. |
 
-##### Use a Static Oauth Url
+##### Use a static OAuth URL
 
 This method uses a static URL for the authorization endpoint:
 
-- Set [`federationType`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) or [`fallbackFederationType`](asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.openID`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/openid.md).
-- Set [`authorizationURL`](asauthorizationproviderextensionloginconfiguration/authorizationurl.md) to the full static URL to use for login.
+- Set [`federationType`](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) or [`fallbackFederationType`](./asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.openID`](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/openid.md).
+- Set [`authorizationURL`](./asauthorizationproviderextensionloginconfiguration/authorizationurl.md) to the full static URL to use for login.
 
-##### Use a Dynamic Oauth Url
+##### Use a dynamic OAuth URL
 
 This method retrieves the authorization URL from the authorization endpoint using the federation pre-authentication request and uses it for authentication:
 
-- Set [`federationType`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) or [`fallbackFederationType`](asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicOpenID`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicopenid.md).
-- Set [`authorizationURLKeypath`](asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md) to the key for the authorization in the pre-authentication response. Leave [`authorizationURL`](asauthorizationproviderextensionloginconfiguration/authorizationurl.md) unset.
+- Set [`federationType`](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) or [`fallbackFederationType`](./asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicOpenID`](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicopenid.md).
+- Set [`authorizationURLKeypath`](./asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md) to the key for the authorization in the pre-authentication response. Leave [`authorizationURL`](./asauthorizationproviderextensionloginconfiguration/authorizationurl.md) unset.
 
 If you include an `authorizationRequest` dictionary in the federation pre-authentication response, Platform SSO creates a JWT OpenID request object from it and signs it with the device signing key. Platform SSO also updates the scope value to include the current scope for the request.
 
-#### Perform the Authentication
+#### Perform the authentication
 
 Web-based authentication assumes that the identity provider is a nonpublic client for OAuth and uses the following flow:
 
-![Diagram of the seven-step Platform SSO web-based authentication flow between the user, Platform SSO, and the identity provider (including its authorization endpoint).](/images/com.apple.authenticationservices/psso-web-based-auth@2x.png)
+![Diagram of the seven-step Platform SSO web-based authentication flow between the user, Platform SSO, and the identity provider (including its authorization endpoint).](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/psso-web-based-auth@2x.png)
 
 **Step 1**: The user starts the web-based authentication login flow.
 
-**Step 2**: Platform SSO either contacts the static `authorizationURL` directly, or performs a pre-authentication HTTP GET request to [`federationUserPreauthenticationURL`](asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md) and extracts the `authorizationURL` from the key specified by the [`authorizationURLKeypath`](asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md). If the URL fails to load, Platform SSO assumes the device is offline and uses a fallback credential.
+**Step 2**: Platform SSO either contacts the static `authorizationURL` directly, or performs a pre-authentication HTTP GET request to [`federationUserPreauthenticationURL`](./asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md) and extracts the `authorizationURL` from the key specified by the [`authorizationURLKeypath`](./asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md). If the URL fails to load, Platform SSO assumes the device is offline and uses a fallback credential.
 
 The following is an example pre-authentication request:
 
@@ -91,7 +92,7 @@ Connection: keep-alive
 }
 ```
 
-**Step 3**: Platform SSO loads the webpage located at the `authorizationURL`. This request includes an updated scope for the current request in the web view. For more information on the available scope value, see [`Interpreting Platform Single Sign-on authorization scopes`](interpreting-platform-single-sign-on-authorization-scopes.md).
+**Step 3**: Platform SSO loads the webpage located at the `authorizationURL`. This request includes an updated scope for the current request in the web view. For more information on the available scope value, see [Interpreting Platform Single Sign-on authorization scopes](./interpreting-platform-single-sign-on-authorization-scopes.md).
 
 **Step 4**: The user interacts with the web view, which can involve multiple steps that the authorization endpoint defines. Platform SSO loads only the URLs that the `WebLoginURLAllowList` key in the device management configuration permits. If authentication is successful, the authorization endpoint returns the callback URI `com.apple.platformsso://callback`, which includes an authorization code and a redirect to engage the Platform SSO extension.
 
@@ -275,7 +276,7 @@ The following is an example JWT login request:
 
 Platform SSO processes and validates the login response the same way as other login requests. It then uses the Platform SSO 2.0 key service to unlock the user’s keybag and complete the login or unlock flow. Platform SSO always uses the key service during web-based authentication.
 
-#### Sync the Password
+#### Sync the password
 
 Optionally, you can sync the password the user enters during web-based authentication to the local user account. Use this option when the device management configuration sets the `AllowWebLoginPasswordSync` key to `true`. This requires the identity provider to embed a JavaScript snippet (like the following conceptual example) in the authorization endpoint login page:
 
@@ -303,7 +304,7 @@ Optionally, you can sync the password the user enters during web-based authentic
 </script>
 ```
 
-#### Support Qr Code Authentication
+#### Support QR code authentication
 
 QR code scanning is a supplementary feature that the authorization endpoint’s webpage initiates during web-based authentication. The sign-in page calls a JavaScript API injected into the web view, which opens an attached camera for QR code scanning. The JavaScript caller receives the scanned data and stores it for inclusion in the OAuth credential submission.
 
@@ -356,11 +357,12 @@ The `scanQR()` function rejects with an Error where `error.message` is one of:
 
 ## See Also
 
-- [Authentication process](authentication-process.md)
+### Authentication
+- [Authentication process](./authentication-process.md)
   Use a system-supported method to authenticate with an identity provider.
-- [Using access keys with Platform Single Sign-on](using-access-keys-with-platform-single-sign-on.md)
+- [Using access keys with Platform Single Sign-on](./using-access-keys-with-platform-single-sign-on.md)
   Authenticate users with access keys stored in Apple Wallet.
-- [class ASAuthorizationProviderExtensionKerberosMapping](asauthorizationproviderextensionkerberosmapping.md)
+- [class ASAuthorizationProviderExtensionKerberosMapping](./asauthorizationproviderextensionkerberosmapping.md)
   A set of Kerberos mappings that the system login process uses.
 
 

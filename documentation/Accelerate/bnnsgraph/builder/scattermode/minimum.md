@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode.minimum
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation writes the minimum of the existing value and the scattered value.
 

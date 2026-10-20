@@ -1,7 +1,8 @@
 # contrastPivot
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel value to use as a pivot for the contrast.
 
@@ -28,11 +29,12 @@ The default value is `0.5`, which indicates the pixel center.
 
 ## See Also
 
-- [var contrastAdjustment: Float](detectcontoursrequest/contrastadjustment.md)
+### Configuring a request
+- [var contrastAdjustment: Float](./contrastadjustment.md)
   The amount by which to adjust the image contrast.
-- [var detectsDarkOnLight: Bool](detectcontoursrequest/detectsdarkonlight.md)
+- [var detectsDarkOnLight: Bool](./detectsdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background to aid in detection.
-- [var maximumImageDimension: Int](detectcontoursrequest/maximumimagedimension.md)
+- [var maximumImageDimension: Int](./maximumimagedimension.md)
   The maximum image dimension to use for contour detection.
 
 

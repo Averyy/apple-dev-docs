@@ -1,6 +1,7 @@
 # Describing data use in privacy manifests
 
-**Framework**: Bundle Resources
+**Framework**: Bundle Resources  
+**Role**: Article
 
 Declare the data collected by your app or by third-party SDKs.
 
@@ -10,18 +11,18 @@ Record the categories of data that your app or third-party SDK collects about th
 
 > ❗ **Important**:  Third-party SDKs need to provide their own privacy manifest files that record the types of data they collect. Your app’s privacy manifest file doesn’t need to cover data collected by third-party SDKs that your app links to.
 
-##### Describe the Data Your App or Third Party Sdk Collects
+##### Describe the data your app or third-party SDK collects
 
-For each type of data your app or third-party SDK collects, add a dictionary to the [`NSPrivacyCollectedDataTypes`](app-privacy-configuration/nsprivacycollecteddatatypes.md) array in your privacy information file. Add the following keys to the dictionary.
+For each type of data your app or third-party SDK collects, add a dictionary to the [`NSPrivacyCollectedDataTypes`](./app-privacy-configuration/nsprivacycollecteddatatypes.md) array in your privacy information file. Add the following keys to the dictionary.
 
-- **[`NSPrivacyCollectedDataType`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatype.md)**: A string that identifies the type of data your app or third-party SDK collects. Choose the value from the list of data types below that matches the data your app or third-party SDK collects.
-- **[`NSPrivacyCollectedDataTypeLinked`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypelinked.md)**: A Boolean that indicates whether your app or third-party SDK links this data type to the user’s identity. For more information, see Data linked to the user in [`App privacy details on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/#linked-data).
-- **[`NSPrivacyCollectedDataTypeTracking`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypetracking.md)**: A Boolean that indicates whether your app or third-party SDK uses this data type to track.
-- **[`NSPrivacyCollectedDataTypePurposes`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypepurposes.md)**: An array of strings that lists the reasons your app or third-party SDK collects the data. Choose values from the list of purposes below that match the reasons your app or third-party SDK collects this data type.
+- **[`NSPrivacyCollectedDataType`](./app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatype.md)**: A string that identifies the type of data your app or third-party SDK collects. Choose the value from the list of data types below that matches the data your app or third-party SDK collects.
+- **[`NSPrivacyCollectedDataTypeLinked`](./app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypelinked.md)**: A Boolean that indicates whether your app or third-party SDK links this data type to the user’s identity. For more information, see Data linked to the user in [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/#linked-data).
+- **[`NSPrivacyCollectedDataTypeTracking`](./app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypetracking.md)**: A Boolean that indicates whether your app or third-party SDK uses this data type to track.
+- **[`NSPrivacyCollectedDataTypePurposes`](./app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypepurposes.md)**: An array of strings that lists the reasons your app or third-party SDK collects the data. Choose values from the list of purposes below that match the reasons your app or third-party SDK collects this data type.
 
 Xcode won’t generate a privacy report correctly if you define your own collected data types for the `NSPrivacyCollectedDataType` key, or provide your own reasons for the `NSPrivacyCollectedDataTypePurposes` key. Use values listed in the documentation for the keys.
 
-##### Create Your Apps Privacy Report
+##### Create your app’s privacy report
 
 Xcode can create a privacy report by aggregating the privacy manifests from your app and the third-party SDKs it links to. Use the privacy report to better understand all of the data collected by your app and whether it tracks. Create the privacy report for your app by doing the following:
 
@@ -32,17 +33,18 @@ Xcode can create a privacy report by aggregating the privacy manifests from your
 5. Switch to Finder.
 6. Navigate to the location where you saved the privacy report, and double-click to open the report in Preview.
 
-The privacy report is organized in a similar way to Privacy Nutrition Labels. Refer to this report when you provide your app’s privacy details in App Store Connect. For more information on providing your app’s privacy details, see [`App privacy details on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/).
+The privacy report is organized in a similar way to Privacy Nutrition Labels. Refer to this report when you provide your app’s privacy details in App Store Connect. For more information on providing your app’s privacy details, see [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/).
 
 ## See Also
 
-- [Adding a privacy manifest to your app or third-party SDK](adding-a-privacy-manifest-to-your-app-or-third-party-sdk.md)
+### Essentials
+- [Adding a privacy manifest to your app or third-party SDK](./adding-a-privacy-manifest-to-your-app-or-third-party-sdk.md)
   Report the data you collect and the required reasons API you use in your app or third-party SDK.
-- [Describing use of required reason API](describing-use-of-required-reason-api.md)
+- [Describing use of required reason API](./describing-use-of-required-reason-api.md)
   Ensure your use of covered API is consistent with policy.
-- [Editing property list files](../xcode/editing-property-list-files.md)
+- [Editing property list files](../Xcode/editing-property-list-files.md)
   Add, remove, and change keys and values in a structured file.
-- [App Privacy Configuration](app-privacy-configuration.md)
+- [App Privacy Configuration](./app-privacy-configuration.md)
   A data structure that represents the root object in a privacy manifest file.
 
 

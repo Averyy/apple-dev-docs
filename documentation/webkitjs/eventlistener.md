@@ -1,7 +1,8 @@
 # EventListener
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface EventListener
 ```
 
 ## Topics
 
 ### Instance Methods
-- [handleEvent](eventlistener/1631660-handleevent.md)
+- [handleEvent](./eventlistener/api-1631660-handleevent.md)
 
 
 ---

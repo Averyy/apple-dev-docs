@@ -1,13 +1,14 @@
 # UIDragPreview Implementations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(forURL: URL)](uidragpreview/init(forurl:).md)
+- [convenience init(forURL: URL)](./init%28forurl%29.md)
   Initializes a new drag item preview with a URL.
-- [convenience init(forURL: URL, title: String?)](uidragpreview/init(forurl:title:).md)
+- [convenience init(forURL: URL, title: String?)](./init%28forurl,title%29.md)
   Initializes a drag item preview with a URL and title.
 
 

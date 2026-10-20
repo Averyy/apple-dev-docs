@@ -1,7 +1,8 @@
 # kAuthorizationFlagCanNotPreAuthorize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates the Security Server could not preauthorizethe right.
 
@@ -13,6 +14,10 @@ Indicates the Security Server could not preauthorizethe right.
 
 ```swift
 var kAuthorizationFlagCanNotPreAuthorize: Int { get }
+```
+
+```c
+kAuthorizationFlagCanNotPreAuthorize
 ```
 
 

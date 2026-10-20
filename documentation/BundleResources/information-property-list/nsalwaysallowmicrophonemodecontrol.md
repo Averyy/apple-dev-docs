@@ -1,7 +1,8 @@
 # NSAlwaysAllowMicrophoneModeControl
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates if a person can configure a microphone mode regardless of whether the microphone is in an active state.
 
@@ -9,9 +10,10 @@ A Boolean value that indicates if a person can configure a microphone mode regar
 - iOS 18.0+
 - iPadOS 18.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSAlwaysAllowMicrophoneModeControl`
+- **Type**: boolean
 
 #### Discussion
 

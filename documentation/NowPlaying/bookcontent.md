@@ -1,7 +1,8 @@
 # BookContent
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content representing an audiobook or book being read aloud.
 
@@ -22,7 +23,7 @@ struct BookContent
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -31,51 +32,52 @@ Use this type for audiobooks and other spoken-word book content.
 ## Topics
 
 ### Initializers
-- [init(id: String, title: String, authorName: String, narratorName: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](bookcontent/init(id:title:authorname:narratorname:type:duration:artwork:).md)
+- [init(id: String, title: String, authorName: String, narratorName: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](./bookcontent/init%28id,title,authorname,narratorname,type,duration,artwork%29.md)
   Creates audiobook content.
-- [init(id: String, title: String, authorName: String, narratorName: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](bookcontent/init(id:title:authorname:narratorname:type:duration:artwork:animatedartwork:).md)
+- [init(id: String, title: String, authorName: String, narratorName: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](./bookcontent/init%28id,title,authorname,narratorname,type,duration,artwork,animatedartwork%29.md)
   Creates audiobook content with static and animated artwork.
 ### Instance Properties
-- [let animatedArtwork: AnimatedArtwork?](bookcontent/animatedartwork.md)
+- [let animatedArtwork: AnimatedArtwork?](./bookcontent/animatedartwork.md)
   Animated artwork for this content.
-- [let artwork: Artwork?](bookcontent/artwork.md)
+- [let artwork: Artwork?](./bookcontent/artwork.md)
   Artwork for this content.
-- [let authorName: String](bookcontent/authorname.md)
+- [let authorName: String](./bookcontent/authorname.md)
   The author of the book.
-- [var chapter: (current: Int, total: Int)?](bookcontent/chapter.md)
+- [var chapter: (current: Int, total: Int)?](./bookcontent/chapter.md)
   The current chapter information, if applicable.
-- [let duration: MediaDuration?](bookcontent/duration.md)
+- [let duration: MediaDuration?](./bookcontent/duration.md)
   The duration of this content.
-- [let narratorName: String?](bookcontent/narratorname.md)
+- [let narratorName: String?](./bookcontent/narratorname.md)
   The narrator of the audiobook, if applicable.
-- [let title: String](bookcontent/title.md)
+- [let title: String](./bookcontent/title.md)
   The title of the book.
-- [let type: MediaType](bookcontent/type.md)
+- [let type: MediaType](./bookcontent/type.md)
   The media type. Defaults to `.audio` for book content.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MediaContentRepresentable](mediacontentrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MediaContentRepresentable](./mediacontentrepresentable.md)
 
 ## See Also
 
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+### Presenting content
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct MusicContent](musiccontent.md)
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 
 

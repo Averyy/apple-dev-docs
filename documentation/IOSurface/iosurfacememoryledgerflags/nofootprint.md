@@ -1,7 +1,8 @@
 # noFootprint
 
 **Framework**: IOSurface  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var noFootprint: IOSurfaceMemoryLedgerFlags { get }
+```
+
+```c
+kIOSurfaceMemoryLedgerFlagNoFootprint
 ```
 
 

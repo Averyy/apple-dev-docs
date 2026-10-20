@@ -1,7 +1,8 @@
 # requestValue(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Request a value from the user for this parameter.
 
@@ -11,7 +12,7 @@ Request a value from the user for this parameter.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Request a value from the user for this parameter.
 ```swift
 func requestValue(_ dialog: IntentDialog? = nil) async throws -> Value.ValueType
 ```
+
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 #### Return Value
 

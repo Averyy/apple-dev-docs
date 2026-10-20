@@ -1,7 +1,8 @@
 # extendedAddress
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of an active Thread network Border Agent.
 
@@ -10,7 +11,7 @@ The identifier of an active Thread network Border Agent.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,23 +21,24 @@ var extendedAddress: Data
 
 #### Discussion
 
-This corresponds to the Border Agent ID in [`retrieveCredentials(forBorderAgent:completion:)`](https://developer.apple.com/documentation/threadnetwork/thclient/retrievecredentials(forborderagent:completion:)).
+This corresponds to the Border Agent ID in [`retrieveCredentials(forBorderAgent:completion:)`](../../../ThreadNetwork/thclient/retrievecredentials%28forborderagent,completion%29.md).
 
 ## See Also
 
-- [var channel: UInt16](matteradddeviceextensionrequesthandler/threadscanresult/channel.md)
+### Getting result information
+- [var channel: UInt16](./channel.md)
   The Thread network radio channel.
-- [var extendedPANID: UInt64](matteradddeviceextensionrequesthandler/threadscanresult/extendedpanid.md)
+- [var extendedPANID: UInt64](./extendedpanid.md)
   The Thread network extended PAN identifier.
-- [var linkQualityIndicator: UInt8](matteradddeviceextensionrequesthandler/threadscanresult/linkqualityindicator.md)
+- [var linkQualityIndicator: UInt8](./linkqualityindicator.md)
   A receive quality indicator, as specified by Matter specification.
-- [var networkName: String](matteradddeviceextensionrequesthandler/threadscanresult/networkname.md)
+- [var networkName: String](./networkname.md)
   The Thread network name.
-- [var panID: UInt16](matteradddeviceextensionrequesthandler/threadscanresult/panid.md)
+- [var panID: UInt16](./panid.md)
   The Thread network PAN identifier.
-- [var rssi: Int8](matteradddeviceextensionrequesthandler/threadscanresult/rssi.md)
+- [var rssi: Int8](./rssi.md)
   The observed RSSI of the network by the device.
-- [var version: UInt8](matteradddeviceextensionrequesthandler/threadscanresult/version.md)
+- [var version: UInt8](./version.md)
   The version field, as specified by the Matter specification.
 
 

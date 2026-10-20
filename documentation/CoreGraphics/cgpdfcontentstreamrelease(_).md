@@ -1,7 +1,8 @@
 # CGPDFContentStreamRelease(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Decrements the retain count of a PDF content stream object.
 
@@ -10,7 +11,7 @@ Decrements the retain count of a PDF content stream object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Decrements the retain count of a PDF content stream object.
 func CGPDFContentStreamRelease(_ cs: CGPDFContentStreamRef)
 ```
 
+```c
+extern void CGPDFContentStreamRelease(CGPDFContentStreamRef cs);
+```
+
 ## Parameters
 
 - `cs`: A PDF content stream.
 
 ## See Also
 
-- [func CGPDFContentStreamRetain(CGPDFContentStreamRef) -> CGPDFContentStreamRef](cgpdfcontentstreamretain(_:).md)
+### Retaining and Releasing a PDF Content Stream Object
+- [func CGPDFContentStreamRetain(CGPDFContentStreamRef) -> CGPDFContentStreamRef](./cgpdfcontentstreamretain%28_%29.md)
   Increments the retain count of a PDF content stream object.
 
 

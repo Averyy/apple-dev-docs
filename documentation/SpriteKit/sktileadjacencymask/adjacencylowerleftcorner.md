@@ -1,7 +1,8 @@
 # adjacencyLowerLeftCorner
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,23 +19,28 @@
 static var adjacencyLowerLeftCorner: SKTileAdjacencyMask { get }
 ```
 
+```c
+SKTileAdjacencyLowerLeftCorner
+```
+
 ## See Also
 
-- [static var adjacencyAll: SKTileAdjacencyMask](sktileadjacencymask/adjacencyall.md)
-- [static var adjacencyDown: SKTileAdjacencyMask](sktileadjacencymask/adjacencydown.md)
-- [static var adjacencyDownEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencydownedge.md)
-- [static var adjacencyLeft: SKTileAdjacencyMask](sktileadjacencymask/adjacencyleft.md)
-- [static var adjacencyLeftEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyleftedge.md)
-- [static var adjacencyLowerLeft: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerleft.md)
-- [static var adjacencyLowerLeftEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerleftedge.md)
-- [static var adjacencyLowerRight: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerright.md)
-- [static var adjacencyLowerRightCorner: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerrightcorner.md)
-- [static var adjacencyLowerRightEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerrightedge.md)
-- [static var adjacencyRight: SKTileAdjacencyMask](sktileadjacencymask/adjacencyright.md)
-- [static var adjacencyRightEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyrightedge.md)
-- [static var adjacencyUp: SKTileAdjacencyMask](sktileadjacencymask/adjacencyup.md)
-- [static var adjacencyUpEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupedge.md)
-- [static var adjacencyUpperLeft: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperleft.md)
+### Masks
+- [static var adjacencyAll: SKTileAdjacencyMask](./adjacencyall.md)
+- [static var adjacencyDown: SKTileAdjacencyMask](./adjacencydown.md)
+- [static var adjacencyDownEdge: SKTileAdjacencyMask](./adjacencydownedge.md)
+- [static var adjacencyLeft: SKTileAdjacencyMask](./adjacencyleft.md)
+- [static var adjacencyLeftEdge: SKTileAdjacencyMask](./adjacencyleftedge.md)
+- [static var adjacencyLowerLeft: SKTileAdjacencyMask](./adjacencylowerleft.md)
+- [static var adjacencyLowerLeftEdge: SKTileAdjacencyMask](./adjacencylowerleftedge.md)
+- [static var adjacencyLowerRight: SKTileAdjacencyMask](./adjacencylowerright.md)
+- [static var adjacencyLowerRightCorner: SKTileAdjacencyMask](./adjacencylowerrightcorner.md)
+- [static var adjacencyLowerRightEdge: SKTileAdjacencyMask](./adjacencylowerrightedge.md)
+- [static var adjacencyRight: SKTileAdjacencyMask](./adjacencyright.md)
+- [static var adjacencyRightEdge: SKTileAdjacencyMask](./adjacencyrightedge.md)
+- [static var adjacencyUp: SKTileAdjacencyMask](./adjacencyup.md)
+- [static var adjacencyUpEdge: SKTileAdjacencyMask](./adjacencyupedge.md)
+- [static var adjacencyUpperLeft: SKTileAdjacencyMask](./adjacencyupperleft.md)
 
 
 ---

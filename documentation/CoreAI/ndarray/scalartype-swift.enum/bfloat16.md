@@ -1,7 +1,8 @@
 # NDArray.ScalarType.bfloat16
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit brain floating-point type.
 
@@ -24,11 +25,12 @@ BFloat16 (Brain Floating Point) uses 8 exponent bits and 7 mantissa bits, matchi
 
 ## See Also
 
-- [NDArray.ScalarType.float16](ndarray/scalartype-swift.enum/float16.md)
+### Defining floating-point types
+- [NDArray.ScalarType.float16](./float16.md)
   A 16-bit floating-point type.
-- [NDArray.ScalarType.float32](ndarray/scalartype-swift.enum/float32.md)
+- [NDArray.ScalarType.float32](./float32.md)
   A 32-bit floating-point type.
-- [NDArray.ScalarType.float64](ndarray/scalartype-swift.enum/float64.md)
+- [NDArray.ScalarType.float64](./float64.md)
   A 64-bit floating-point type.
 
 

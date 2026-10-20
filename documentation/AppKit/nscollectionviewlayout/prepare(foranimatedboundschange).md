@@ -1,17 +1,22 @@
 # prepare(forAnimatedBoundsChange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the layout object for animated changes to the collection view’s bounds or for the insertion or deletion of items.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func prepare(forAnimatedBoundsChange oldBounds: NSRect)
+```
+
+```objc
+- (void) prepareForAnimatedBoundsChange:(NSRect) oldBounds;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ The default implementation of this method does nothing. The collection view call
 
 ## See Also
 
-- [func finalizeAnimatedBoundsChange()](nscollectionviewlayout/finalizeanimatedboundschange.md)
+### Coordinating Animated Changes
+- [func finalizeAnimatedBoundsChange()](./finalizeanimatedboundschange%28%29.md)
   Cleans up after any animated changes to the collection view’s bounds or after the insertion or deletion of items.
 
 

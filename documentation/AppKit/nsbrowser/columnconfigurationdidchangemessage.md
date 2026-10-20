@@ -1,7 +1,8 @@
 # NSBrowser.ColumnConfigurationDidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct ColumnConfigurationDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(browser: NSBrowser)](nsbrowser/columnconfigurationdidchangemessage/init(browser:).md)
+- [init(browser: NSBrowser)](./columnconfigurationdidchangemessage/init%28browser%29.md)
 ### Instance Properties
-- [var browser: NSBrowser](nsbrowser/columnconfigurationdidchangemessage/browser.md)
+- [var browser: NSBrowser](./columnconfigurationdidchangemessage/browser.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

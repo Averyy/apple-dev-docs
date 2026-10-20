@@ -1,7 +1,8 @@
 # regularMaterial
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A material that’s somewhat translucent.
 
@@ -21,17 +22,20 @@ A material that’s somewhat translucent.
 static var regularMaterial: Material { get }
 ```
 
+Available when `Self` is `Material`.
+
 ## See Also
 
-- [static var ultraThinMaterial: Material](shapestyle/ultrathinmaterial.md)
+### Materials
+- [static var ultraThinMaterial: Material](./ultrathinmaterial.md)
   A mostly translucent material.
-- [static var thinMaterial: Material](shapestyle/thinmaterial.md)
+- [static var thinMaterial: Material](./thinmaterial.md)
   A material that’s more translucent than opaque.
-- [static var thickMaterial: Material](shapestyle/thickmaterial.md)
+- [static var thickMaterial: Material](./thickmaterial.md)
   A material that’s more opaque than translucent.
-- [static var ultraThickMaterial: Material](shapestyle/ultrathickmaterial.md)
+- [static var ultraThickMaterial: Material](./ultrathickmaterial.md)
   A mostly opaque material.
-- [static var bar: Material](shapestyle/bar.md)
+- [static var bar: Material](./bar.md)
   A material matching the style of system toolbars.
 
 

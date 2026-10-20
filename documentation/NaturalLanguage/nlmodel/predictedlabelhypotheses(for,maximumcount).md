@@ -1,7 +1,8 @@
 # predictedLabelHypotheses(for:maximumCount:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts multiple possible labels for the given input string.
 
@@ -32,11 +33,12 @@ A dictionary of label hypotheses. Each dictionary entry is a predicted label wit
 
 ## See Also
 
-- [func predictedLabel(for: String) -> String?](nlmodel/predictedlabel(for:).md)
+### Making predictions
+- [func predictedLabel(for: String) -> String?](./predictedlabel%28for%29.md)
   Predicts a label for the given input string.
-- [func predictedLabels(forTokens: [String]) -> [String]](nlmodel/predictedlabels(fortokens:).md)
+- [func predictedLabels(forTokens: [String]) -> [String]](./predictedlabels%28fortokens%29.md)
   Predicts a label for each string in the given array.
-- [func predictedLabelHypotheses(forTokens: [String], maximumCount: Int) -> [[String : Double]]](nlmodel/predictedlabelhypotheses(fortokens:maximumcount:).md)
+- [func predictedLabelHypotheses(forTokens: [String], maximumCount: Int) -> [[String : Double]]](./predictedlabelhypotheses%28fortokens,maximumcount%29.md)
   Predicts multiple possible labels for each string in the given array.
 
 

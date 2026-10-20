@@ -1,7 +1,8 @@
 # maxValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stepper’s maximum value.
 
@@ -17,17 +18,22 @@ The stepper’s maximum value.
 var maxValue: Double { get set }
 ```
 
+```objc
+@property double maxValue;
+```
+
 #### Discussion
 
 The default is `59.0`.
 
 ## See Also
 
-- [var value: Double](nssteppertouchbaritem/value.md)
+### Managing the stepper’s value
+- [var value: Double](./value.md)
   The current value of the stepper.
-- [var minValue: Double](nssteppertouchbaritem/minvalue.md)
+- [var minValue: Double](./minvalue.md)
   The stepper’s minimum value.
-- [var increment: Double](nssteppertouchbaritem/increment.md)
+- [var increment: Double](./increment.md)
   The stepper’s increment value.
 
 

@@ -1,17 +1,22 @@
 # init(patternImage:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object that uses the specified image pattern to paint the target area.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(patternImage image: NSImage)
+```
+
+```objc
++ (NSColor *) colorWithPatternImage:(NSImage *) image;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The `NSColor` object. This color object is autoreleased.
 
 ## See Also
 
-- [var patternImage: NSImage](nscolor/patternimage.md)
+### Creating a pattern-based color
+- [var patternImage: NSImage](./patternimage.md)
   The pattern image used to paint the target area.
 
 

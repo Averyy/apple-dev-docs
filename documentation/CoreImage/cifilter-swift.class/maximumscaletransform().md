@@ -1,7 +1,8 @@
 # maximumScaleTransform()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,11 +18,16 @@
 class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform
 ```
 
+```objc
++ (CIFilter<CIMaximumScaleTransform> *) maximumScaleTransformFilter;
+```
+
 ## See Also
 
-- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](cifilter-swift.class/areaalphaweightedhistogram.md)
-- [class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed](cifilter-swift.class/areaboundsred.md)
-- [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](cifilter-swift.class/tonemapheadroom.md)
+### Type methods
+- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](./areaalphaweightedhistogram%28%29.md)
+- [class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed](./areaboundsred%28%29.md)
+- [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](./tonemapheadroom%28%29.md)
 
 
 ---

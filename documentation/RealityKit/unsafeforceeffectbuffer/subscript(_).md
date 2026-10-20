@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns an element by index.
 
@@ -21,7 +22,7 @@ subscript(index: Int) -> T { get }
 
 #### Overview
 
-The index should be in the range [0, [`physicsBodyCount`](forceeffectparameters/physicsbodycount.md)].
+The index should be in the range [0, [`physicsBodyCount`](../forceeffectparameters/physicsbodycount.md)].
 
 
 ---

@@ -1,7 +1,8 @@
 # isTouchScrollingEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enable touch scrolling
 
@@ -12,6 +13,10 @@ Enable touch scrolling
 
 ```swift
 var isTouchScrollingEnabled: Bool { get set }
+```
+
+```objc
+@property (getter=isTouchScrollingEnabled) BOOL touchScrollingEnabled;
 ```
 
 #### Discussion

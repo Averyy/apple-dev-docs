@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Quick Look UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.7+

@@ -1,17 +1,18 @@
 # mipMapLevel
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mipmap to change.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The mipmap to change.
 var mipMapLevel: UInt32
 ```
 
+```c
+uint32_t mipMapLevel;
+```
+
 ## See Also
 
-- [var sliceId: UInt32](mtlmapindirectarguments/sliceid.md)
+### Specifying texture location
+- [var sliceId: UInt32](./sliceid.md)
   The texture slice to change.
 
 

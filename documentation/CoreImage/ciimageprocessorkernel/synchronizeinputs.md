@@ -1,7 +1,8 @@
 # synchronizeInputs
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Override this class property to return false if you want your processor to be given input objects that have not been synchronized for CPU access.
 
@@ -19,15 +20,20 @@ Override this class property to return false if you want your processor to be gi
 class var synchronizeInputs: Bool { get }
 ```
 
+```objc
+@property (class, readonly) bool synchronizeInputs;
+```
+
 #### Discussion
 
 Generally, if your subclass uses the GPU your should override this method to return false. If not overridden, true is returned.
 
 ## See Also
 
-- [class var outputFormat: CIFormat](ciimageprocessorkernel/outputformat.md)
+### Type Properties
+- [class var outputFormat: CIFormat](./outputformat.md)
   Override this class property if you want your processor’s output to be in a specific pixel format.
-- [class var outputIsOpaque: Bool](ciimageprocessorkernel/outputisopaque.md)
+- [class var outputIsOpaque: Bool](./outputisopaque.md)
   Override this class property if your processor’s output stores 1.0 into the alpha channel of all pixels within the output extent.
 
 

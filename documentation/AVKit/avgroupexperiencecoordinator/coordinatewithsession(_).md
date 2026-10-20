@@ -1,7 +1,8 @@
 # coordinateWithSession(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins coordinating viewing environment state with a group session.
 

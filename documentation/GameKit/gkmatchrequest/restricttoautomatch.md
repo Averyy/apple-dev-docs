@@ -1,18 +1,21 @@
 # restrictToAutomatch
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether a game uses automatch to find players or the local player invites players.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 14.0
+- iPadOS 13.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- macOS 10.15+ - Deprecated in 11.0
+- tvOS 13.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 6.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use the [`matchmakingMode`](../gkmatchmakerviewcontroller/matchmakingmode.md) property instead.
 
 ## Declaration
 
@@ -20,17 +23,22 @@ A Boolean value that determines whether a game uses automatch to find players or
 var restrictToAutomatch: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL restrictToAutomatch;
+```
+
 #### Discussion
 
-Use this property to match the local player only with players who are also actively looking for a match. If [`true`](https://developer.apple.com/documentation/swift/true), the local player can’t invite contacts, friends, or nearby players. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Use this property to match the local player only with players who are also actively looking for a match. If [`true`](../../Swift/true.md), the local player can’t invite contacts, friends, or nearby players. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var inviteeResponseHandler: ((String, GKInviteeResponse) -> Void)?](gkmatchrequest/inviteeresponsehandler.md)
+### Deprecated methods and properties
+- [var inviteeResponseHandler: ((String, GKInviteeResponse) -> Void)?](./inviteeresponsehandler.md)
   Handles when a player responds to an invitation.
-- [typealias GKInviteeResponse](gkinviteeresponse.md)
+- [typealias GKInviteeResponse](../gkinviteeresponse.md)
   Possible responses from an invitation to a remote player.
-- [var playersToInvite: [String]?](gkmatchrequest/playerstoinvite.md)
+- [var playersToInvite: [String]?](./playerstoinvite.md)
   A list of player identifiers for players to invite to the match.
 
 

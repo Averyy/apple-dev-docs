@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A strategy to automatically configure locale-appropriate sign display behavior.
 
@@ -22,9 +23,10 @@ static var automatic: NumberFormatStyleConfiguration.SignDisplayStrategy { get }
 
 ## See Also
 
-- [static func always(includingZero: Bool) -> NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy/always(includingzero:).md)
+### Sign display strategies
+- [static func always(includingZero: Bool) -> NumberFormatStyleConfiguration.SignDisplayStrategy](./always%28includingzero%29.md)
   A strategy to always display sign symbols.
-- [static var never: NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy/never.md)
+- [static var never: NumberFormatStyleConfiguration.SignDisplayStrategy](./never.md)
   A strategy to never display sign symbols.
 
 

@@ -1,7 +1,8 @@
 # AppAssetLibraryImageCreateRequest.Data.Relationships.Placements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The placements to associate with the new app asset library image.
 
@@ -10,14 +11,14 @@ The placements to associate with the new app asset library image.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryImageCreateRequest.Data.Relationships.Placements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryImageCreateRequest.Data.Relationships.Placements.Data](appassetlibraryimagecreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryImageCreateRequest.Data.Relationships.Placements.Data](./placements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AppAssetLibraryImageCreateRequest.Data.Relationships.Placements
 
 ## See Also
 
-- [object AppAssetLibraryImageCreateRequest.Data.Relationships.AssetLibrary](appassetlibraryimagecreaterequest/data-data.dictionary/relationships-data.dictionary/assetlibrary-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryImageCreateRequest.Data.Relationships.AssetLibrary](./assetlibrary-data.dictionary.md)
   The asset library to associate with the new app asset library image.
 
 

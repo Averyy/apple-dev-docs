@@ -1,7 +1,8 @@
 # Curator.Kind.editorial
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the curator is an Apple Music curator.
 

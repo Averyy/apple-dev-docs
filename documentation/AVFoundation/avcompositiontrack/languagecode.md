@@ -1,18 +1,19 @@
 # languageCode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language code of the track.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ The value is an ISO 639-2/T language code, or `nil` if the track doesn’t speci
 
 ## See Also
 
-- [var extendedLanguageTag: String?](avcompositiontrack/extendedlanguagetag.md)
+### Accessing language support
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The language tag of the track.
 
 

@@ -1,7 +1,8 @@
 # textureUsage
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enumeration for the various options that determine how you can use a texture.
 

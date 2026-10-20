@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an intrinsic content size invalidation structure.
 
@@ -10,7 +11,7 @@ Creates an intrinsic content size invalidation structure.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [var intrinsicContentSize: CGSize](uiview/intrinsiccontentsize.md)
+### Creating the invalidation structure
+- [var intrinsicContentSize: CGSize](../../intrinsiccontentsize.md)
   The natural size for the receiving view, considering only properties of the view itself.
 
 

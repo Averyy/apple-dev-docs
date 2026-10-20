@@ -1,7 +1,8 @@
 # LFESpeaker
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A speaker for low-frequency effects.
 
@@ -10,15 +11,16 @@ A speaker for low-frequency effects.
 
 ## Declaration
 
-```swift
+```c
 LFESpeaker
 ```
 
 ## See Also
 
-- [Speaker](audiodriverkit/iouseraudiostreamterminaltype/speaker.md)
+### Speakers
+- [Speaker](./speaker.md)
   An audio speaker.
-- [ReceiverSpeaker](audiodriverkit/iouseraudiostreamterminaltype/receiverspeaker.md)
+- [ReceiverSpeaker](./receiverspeaker.md)
   A speaker on a telephone handset receiver.
 
 

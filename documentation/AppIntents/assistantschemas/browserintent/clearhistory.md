@@ -1,7 +1,8 @@
 # clearHistory
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for clearing the browser history.
 
@@ -36,7 +37,7 @@ struct ClearHistoryIntent: AppIntent {
 }
 ```
 
-For more information about the `.browser` app intent domain, see [`Browser`](app-schema-domain-browser.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.browser` app intent domain, see [Browser](../../app-schema-domain-browser.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(forMLModel:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -19,7 +20,8 @@ convenience init(forMLModel model: MLModel) throws
 
 ## See Also
 
-- [convenience init(for: MLModel) throws](vncoremlmodel/init(for:).md)
+### Initializing a Model
+- [convenience init(for: MLModel) throws](./init%28for%29.md)
   Creates a model container to use with a Core ML request.
 
 

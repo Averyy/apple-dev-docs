@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The property you implement to provide a Touch Bar object.
@@ -19,9 +20,13 @@ The property you implement to provide a Touch Bar object.
 var touchBar: NSTouchBar? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSTouchBar * touchBar;
+```
+
 #### Discussion
 
-This property supports key-value observing, which is used by the system, for example, if you replace a running bar. Many subclasses of [`NSResponder`](nsresponder.md) implement this property and conform to the [`NSTouchBarProvider`](nstouchbarprovider.md) protocol.
+This property supports key-value observing, which is used by the system, for example, if you replace a running bar. Many subclasses of [`NSResponder`](../nsresponder.md) implement this property and conform to the [`NSTouchBarProvider`](../nstouchbarprovider.md) protocol.
 
 
 ---

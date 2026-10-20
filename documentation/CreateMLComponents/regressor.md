@@ -1,7 +1,8 @@
 # Regressor
 
 **Framework**: Create ML Components  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A transformer that predicts a float value.
 
@@ -23,39 +24,40 @@ protocol Regressor : Transformer where Self.Output : FloatingPoint
 ## Topics
 
 ### Performing the prediction
-- [func prediction(from:)](regressor/prediction(from:).md)
+- [func prediction(from:)](./regressor/prediction%28from%29.md)
   Performs a prediction from a single input.
 
 ## Relationships
 
 ### Inherits From
-- [Transformer](transformer.md)
+- [Transformer](./transformer.md)
 ### Conforming Types
-- [FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
-- [LinearRegressorModel](linearregressormodel.md)
-- [MLModelRegressorAdaptor](mlmodelregressoradaptor.md)
+- [FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
+- [LinearRegressorModel](./linearregressormodel.md)
+- [MLModelRegressorAdaptor](./mlmodelregressoradaptor.md)
 
 ## See Also
 
-- [struct LinearRegressor](linearregressor.md)
+### Regressors
+- [struct LinearRegressor](./linearregressor.md)
   A linear regressor.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](./linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressor](multivariatelinearregressor.md)
+- [struct MultivariateLinearRegressor](./multivariatelinearregressor.md)
   A multivariate linear regressor.
-- [struct MultivariateLinearRegressorConfiguration](multivariatelinearregressorconfiguration.md)
+- [struct MultivariateLinearRegressorConfiguration](./multivariatelinearregressorconfiguration.md)
   A linear regressor configuration.
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](./fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct BoostedTreeRegressor](boostedtreeregressor.md)
+- [struct BoostedTreeRegressor](./boostedtreeregressor.md)
   A gradient boosted decision tree regressor.
-- [struct TreeRegressorModel](treeregressormodel.md)
+- [struct TreeRegressorModel](./treeregressormodel.md)
   A trained tree regressor model.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](./optimizationstrategy.md)
   A linear optimization strategy.
 
 

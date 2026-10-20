@@ -1,7 +1,8 @@
 # AppEncryptionDeclaration.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an App Encryption Declarations resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an App Encryption Declarations resource.
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclaration.Attributes
 ```
 
@@ -20,22 +21,24 @@ object AppEncryptionDeclaration.Attributes
 - `codeValue` (string): A unique identifier that can be added to your app to associate it with a given declaration.
 - `containsProprietaryCryptography` (boolean): A Boolean value that indicates your app implements any proprietary encryption algorithms.
 - `containsThirdPartyCryptography` (boolean): A Boolean value that indicates your app implements any standard encryption algorithms instead of, or in addition to, using or accessing the encryption in Apple’s operating systems.
-- `documentName` (string): The document name of your submitted export compliance documentation.
-- `documentType` (string): The file type of your submitted export compliance documentation.
-- `documentUrl` (string): The URL to the file of your submitted export compliance documentation.
+- `documentName` (string) *(deprecated)*: The document name of your submitted export compliance documentation.
+- `documentType` (string) *(deprecated)*: The file type of your submitted export compliance documentation.
+- `documentUrl` (string) *(deprecated)*: The URL to the file of your submitted export compliance documentation.
 - `exempt` (boolean): A Boolean value that indicates your app is exempt based on your use of encryption and the app’s availability.
 - `platform` (Platform): The platform of the declaration.
-- `usesEncryption` (boolean): A Boolean value that indicates whether your app uses, contains, or incorporates cryptography.
+- `usesEncryption` (boolean) *(deprecated)*: A Boolean value that indicates whether your app uses, contains, or incorporates cryptography.
 - `appEncryptionDeclarationState` (AppEncryptionDeclarationState): The approval state of your export compliance documentation.
-- `uploadedDate` (date-time): The date and time you submitted your declaration.
+- `uploadedDate` (date-time) *(deprecated)*: The date and time you submitted your declaration.
 - `appDescription` (string)
 - `createdDate` (date-time)
 
 ## See Also
 
-- [App Encryption Declarations](app-encryption-declarations.md)
+### Related Documentation
+- [App Encryption Declarations](../app-encryption-declarations.md)
   View, and assign to builds, the declarations about types of encryption used in your app.
-- [object AppEncryptionDeclaration.Relationships](appencryptiondeclaration/relationships-data.dictionary.md)
+### Objects
+- [object AppEncryptionDeclaration.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

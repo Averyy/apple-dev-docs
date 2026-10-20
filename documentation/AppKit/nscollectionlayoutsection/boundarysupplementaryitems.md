@@ -1,7 +1,8 @@
 # boundarySupplementaryItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the supplementary items that are associated with the boundary edges of the section, such as headers and footers.
 
@@ -14,9 +15,14 @@ An array of the supplementary items that are associated with the boundary edges 
 var boundarySupplementaryItems: [NSCollectionLayoutBoundarySupplementaryItem] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSCollectionLayoutBoundarySupplementaryItem *> * boundarySupplementaryItems;
+```
+
 ## See Also
 
-- [var decorationItems: [NSCollectionLayoutDecorationItem]](nscollectionlayoutsection/decorationitems.md)
+### Configuring additional views
+- [var decorationItems: [NSCollectionLayoutDecorationItem]](./decorationitems.md)
   An array of the decoration items that are anchored to the section, such as background decoration views.
 
 

@@ -1,7 +1,8 @@
 # DestinationCreate.Parameters
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Destination-specific parameters supplied when creating an ad creative.
 
@@ -10,13 +11,13 @@ Destination-specific parameters supplied when creating an ad creative.
 
 ## Declaration
 
-```swift
+```
 object DestinationCreate.Parameters
 ```
 
 #### Discussion
 
-See [`DestinationParameter`](destinationparameter.md) for the full field reference.
+See [`DestinationParameter`](../destinationparameter.md) for the full field reference.
 
 ## Properties
 

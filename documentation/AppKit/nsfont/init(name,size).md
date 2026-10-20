@@ -1,17 +1,22 @@
 # init(name:size:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font object for the specified font name and font size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(name fontName: String, size fontSize: CGFloat)
+```
+
+```objc
++ (NSFont *) fontWithName:(NSString *) fontName size:(CGFloat) fontSize;
 ```
 
 #### Return Value
@@ -22,7 +27,7 @@ A font object for the specified name and size.
 
 The value of the `fontName` parameter is a fully specified family-face name, preferably the PostScript name, such as Helvetica-BoldOblique or Times-Roman. (The Font Book app displays PostScript names of fonts in the Font Info panel.)
 
-Specifying `fontSize` is equivalent to using a font matrix of [`fontSize` 0 0 `fontSize` 0 0] with [`init(descriptor:size:)`](nsfont/init(descriptor:size:).md). If you use a `fontSize` of 0.0, this method uses the default User Font size.
+Specifying `fontSize` is equivalent to using a font matrix of [`fontSize` 0 0 `fontSize` 0 0] with [`init(descriptor:size:)`](./init%28descriptor,size%29.md). If you use a `fontSize` of 0.0, this method uses the default User Font size.
 
 Fonts created with this method automatically flip themselves in flipped views. This method is the preferred means for creating fonts.
 
@@ -33,11 +38,12 @@ Fonts created with this method automatically flip themselves in flipped views. T
 
 ## See Also
 
-- [init?(descriptor: NSFontDescriptor, size: CGFloat)](nsfont/init(descriptor:size:).md)
+### Creating Arbitrary Fonts
+- [init?(descriptor: NSFontDescriptor, size: CGFloat)](./init%28descriptor,size%29.md)
   Returns a font object for the specified font descriptor and font size.
-- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](nsfont/init(descriptor:texttransform:).md)
+- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](./init%28descriptor,texttransform%29.md)
   Returns a font object for the specified font descriptor and text transform.
-- [init?(name: String, matrix: UnsafePointer<CGFloat>)](nsfont/init(name:matrix:).md)
+- [init?(name: String, matrix: UnsafePointer<CGFloat>)](./init%28name,matrix%29.md)
   Returns a font object for the specified font name and matrix.
 
 

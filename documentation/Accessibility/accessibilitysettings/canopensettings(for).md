@@ -1,7 +1,8 @@
 # canOpenSettings(for:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.4+

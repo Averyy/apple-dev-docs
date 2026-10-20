@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Event.closed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event indicating that the connection to the peer closed.
 

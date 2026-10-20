@@ -1,7 +1,8 @@
 # keyEncipherment
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `KeyEncipherment` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `KeyEncipherment` bit is set in KeyUsage extension.
 
 ```swift
 static var keyEncipherment: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageKeyEncipherment
 ```
 
 

@@ -1,12 +1,13 @@
 # isVerticallyCentered
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the image is centered vertically.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the image is centered vertically.
 var isVerticallyCentered: Bool { get set }
 ```
 
+```objc
+@property (getter=isVerticallyCentered) BOOL verticallyCentered;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image is centered vertically; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the image is centered vertically; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isHorizontallyCentered: Bool](nsprintinfo/ishorizontallycentered.md)
+### Positioning the Image on the Page
+- [var isHorizontallyCentered: Bool](./ishorizontallycentered.md)
   A Boolean value that indicates whether the image is centered horizontally.
 
 

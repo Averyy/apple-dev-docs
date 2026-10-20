@@ -1,7 +1,8 @@
 # argumentIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index in the argument table that corresponds to the struct member.
 
@@ -19,13 +20,18 @@ The index in the argument table that corresponds to the struct member.
 var argumentIndex: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger argumentIndex;
+```
+
 ## See Also
 
-- [var name: String](mtlstructmember/name.md)
+### Describing the struct member
+- [var name: String](./name.md)
   The name of the struct member.
-- [var dataType: MTLDataType](mtlstructmember/datatype.md)
+- [var dataType: MTLDataType](./datatype.md)
   The data type of the struct member.
-- [var offset: Int](mtlstructmember/offset.md)
+- [var offset: Int](./offset.md)
   The location of this member relative to the start of its struct, in bytes.
 
 

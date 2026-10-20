@@ -1,7 +1,8 @@
 # CTTextTabGetAlignment(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the text alignment of the tab.
 
@@ -20,6 +21,10 @@ Returns the text alignment of the tab.
 func CTTextTabGetAlignment(_ tab: CTTextTab) -> CTTextAlignment
 ```
 
+```c
+extern CTTextAlignment CTTextTabGetAlignment(CTTextTabRef tab);
+```
+
 #### Return Value
 
 The tab’s text alignment value.
@@ -30,9 +35,10 @@ The tab’s text alignment value.
 
 ## See Also
 
-- [func CTTextTabGetLocation(CTTextTab) -> Double](cttexttabgetlocation(_:).md)
+### Getting Text Tab Data
+- [func CTTextTabGetLocation(CTTextTab) -> Double](./cttexttabgetlocation%28_%29.md)
   Returns the tab’s ruler location.
-- [func CTTextTabGetOptions(CTTextTab) -> CFDictionary?](cttexttabgetoptions(_:).md)
+- [func CTTextTabGetOptions(CTTextTab) -> CFDictionary?](./cttexttabgetoptions%28_%29.md)
   Returns the dictionary of attributes associated with the tab.
 
 

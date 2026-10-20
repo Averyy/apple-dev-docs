@@ -1,7 +1,8 @@
 # externalNonInteractive(sceneConfiguration:userInfo:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new scene accessory configuration for presenting non-interactive content on an external display.
 
@@ -16,9 +17,13 @@ Creates a new scene accessory configuration for presenting non-interactive conte
 class func externalNonInteractive(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self
 ```
 
+```objc
++ (instancetype) externalNonInteractiveSceneAccessoryWithConfiguration:(UISceneConfiguration *) sceneConfiguration userInfo:(id) userInfo;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
 #### Discussion
 

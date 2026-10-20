@@ -1,7 +1,8 @@
 # linkedServices
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of service objects that represents all the services to which the service links.
 
@@ -17,6 +18,10 @@ An array of service objects that represents all the services to which the servic
 
 ```swift
 var linkedServices: [HMService]? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMService *> * linkedServices;
 ```
 
 

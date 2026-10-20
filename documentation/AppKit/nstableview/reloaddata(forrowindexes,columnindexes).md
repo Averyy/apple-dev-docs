@@ -1,7 +1,8 @@
 # reloadData(forRowIndexes:columnIndexes:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data for only the specified rows and columns.
 
@@ -14,13 +15,17 @@ Reloads the data for only the specified rows and columns.
 func reloadData(forRowIndexes rowIndexes: IndexSet, columnIndexes: IndexSet)
 ```
 
+```objc
+- (void) reloadDataForRowIndexes:(NSIndexSet *) rowIndexes columnIndexes:(NSIndexSet *) columnIndexes;
+```
+
 #### Discussion
 
-For cells that are visible, the appropriate [`dataSource`](nstableview/datasource.md) and [`delegate`](nstableview/delegate.md) methods are called and the cells are redrawn.
+For cells that are visible, the appropriate [`dataSource`](./datasource.md) and [`delegate`](./delegate.md) methods are called and the cells are redrawn.
 
-For tables that support variable row heights, the row height is not re-queried from the delegate; it is your responsibility to invoke [`noteHeightOfRows(withIndexesChanged:)`](nstableview/noteheightofrows(withindexeschanged:).md) if a row height change is required.
+For tables that support variable row heights, the row height is not re-queried from the delegate; it is your responsibility to invoke [`noteHeightOfRows(withIndexesChanged:)`](./noteheightofrows%28withindexeschanged%29.md) if a row height change is required.
 
-> **Note**:  For [`NSView`](nsview.md)-based table views, this method drops the view-cells in the table row, but not the [`NSTableRowView`](nstablerowview.md) instances.
+> **Note**:  For [`NSView`](../nsview.md)-based table views, this method drops the view-cells in the table row, but not the [`NSTableRowView`](../nstablerowview.md) instances.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ For tables that support variable row heights, the row height is not re-queried f
 
 ## See Also
 
-- [var dataSource: (any NSTableViewDataSource)?](nstableview/datasource.md)
+### Managing the Table’s Data
+- [var dataSource: (any NSTableViewDataSource)?](./datasource.md)
   The object that provides the data displayed by the table view.
-- [var usesStaticContents: Bool](nstableview/usesstaticcontents.md)
+- [var usesStaticContents: Bool](./usesstaticcontents.md)
   A Boolean value indicating whether the table uses static data.
-- [func reloadData()](nstableview/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Marks the table view as needing redisplay, so it will reload the data for visible cells and draw the new values.
 
 

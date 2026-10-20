@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of the collection.
 
@@ -22,11 +23,12 @@ func makeIterator() -> String.Iterator
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](string/foreach(_:).md)
+### Iterating over a String’s Characters
+- [func forEach((Self.Element) throws -> Void) rethrows](./foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](string/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [var underestimatedCount: Int](string/underestimatedcount.md)
+- [var underestimatedCount: Int](./underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 
 

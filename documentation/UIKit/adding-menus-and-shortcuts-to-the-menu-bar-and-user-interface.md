@@ -1,6 +1,8 @@
 # Adding menus and shortcuts to the menu bar and user interface
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [AddingMenusAndShortcutsToTheMenuBarAndUserInterface.zip](https://docs-assets.developer.apple.com/published/5e60ae06106d/AddingMenusAndShortcutsToTheMenuBarAndUserInterface.zip)
 
 Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 
@@ -12,7 +14,7 @@ Provide quick access to useful actions by adding menus and keyboard shortcuts to
 
 #### Overview
 
-This sample project demonstrates how to add menu commands and keyboard shortcuts to the menu bar. The sample app uses its `MenuController` object to insert a [`UIMenuSystem`](uimenusystem.md) object that adds the following menus:
+This sample project demonstrates how to add menu commands and keyboard shortcuts to the menu bar. The sample app uses its `MenuController` object to insert a [`UIMenuSystem`](./uimenusystem.md) object that adds the following menus:
 
 - New: Appears at the beginning of the File menu and contains the two operations New Date Item and New Text Item, which add items to the table view.
 - Cities: Contains a group of UICommand and UIKeyCommand objects.
@@ -20,23 +22,23 @@ This sample project demonstrates how to add menu commands and keyboard shortcuts
 - Style: Contains a group of UICommand objects that have checkmark states. This grouping looks like a font-style menu for text formatting.
 - Tools: Contains a group of UICommand objects.
 
-The sample project also shows you how to add contextual menus to views, and how to handle menu-command selection using [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md).
+The sample project also shows you how to add contextual menus to views, and how to handle menu-command selection using [`UIContextMenuInteractionDelegate`](./uicontextmenuinteractiondelegate.md).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 In Xcode, select your development team on the iOS target’s Signing and Capabilities tab.
 
-##### Add Menus to the Menu Bar
+##### Add menus to the menu bar
 
 Create `UIMenu` objects and use them to construct the menus and submenus. This sample adds menus to the menu bar when it runs on macOS, and key command elements in those menus also appear in the discoverability heads-up display (HUD) on iPad when the user presses the command key.
 
-The Mac version of an iPad app comes with a standard menu bar. Use the [`UIMenuSystem`](uimenusystem.md) class, an object that represents the main or contextual menu system, to modify the menu bar.
+The Mac version of an iPad app comes with a standard menu bar. Use the [`UIMenuSystem`](./uimenusystem.md) class, an object that represents the main or contextual menu system, to modify the menu bar.
 
-The sample uses `UIMenuSystem` to add menus and key commands to the [`main`](uimenusystem/main.md) system menu by implementing [`buildMenu(with:)`](uiresponder/buildmenu(with:).md) in `AppDelegate`. This function receives a [`UIMenuBuilder`](uimenubuilder.md) object that the sample then uses to add and remove menus. Because menus can exist with no window or view hierarchy, the system only consults `UIApplication` and `UIApplicationDelegate` to build the app’s menu bar.
+The sample uses `UIMenuSystem` to add menus and key commands to the [`main`](./uimenusystem/main.md) system menu by implementing [`buildMenu(with:)`](./uiresponder/buildmenu%28with%29.md) in `AppDelegate`. This function receives a [`UIMenuBuilder`](./uimenubuilder.md) object that the sample then uses to add and remove menus. Because menus can exist with no window or view hierarchy, the system only consults `UIApplication` and `UIApplicationDelegate` to build the app’s menu bar.
 
-Menu commands consist of `UICommand`, `UIKeyCommand`, and [`UIAction`](uiaction.md) objects that are grouped in a `UIMenu` container.
+Menu commands consist of `UICommand`, `UIKeyCommand`, and [`UIAction`](./uiaction.md) objects that are grouped in a `UIMenu` container.
 
-##### Add Menu Commands to the File Menu
+##### Add menu commands to the file menu
 
 This sample inserts a `UIKeyCommand` called Command-O into the File Menu and creates a corresponding keyboard shortcut:
 
@@ -58,7 +60,7 @@ class func openMenu() -> UIMenu {
 }
 ```
 
-Notice that the `UIKeyCommand` title is a localized string using the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) function, which can display the menu name in multiple languages.
+Notice that the `UIKeyCommand` title is a localized string using the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) function, which can display the menu name in multiple languages.
 
 This sample inserts the Open command into the middle of the menu bar’s File menu:
 
@@ -68,7 +70,7 @@ builder.insertChild(MenuController.openMenu(), atStartOfMenu: .file)
 
 Mac apps also typically include a Print menu command in the File menu. This sample includes both Print and Export as PDF menu commands in the File menu. These menu commands are automatically inserted when the `Info.plist` contains the `UIApplicationSupportsPrintCommand` key whose value is set to `true`. The application responds to these print commands by implementing `UIResponder's` `printContent(_ sender: Any?)` function.
 
-##### Contribute to the Edit Menu
+##### Contribute to the edit menu
 
 Editing operations, such as cut, copy, paste, and delete, are commonly used in most apps. This sample app provides these operations through the Edit menu, where the user can edit the sample’s left-side content or its primary table-view content. These operations represent the first-responder functions `cut(_ sender: Any?)`, `copy(_ sender: Any?)`, `paste(_ sender: Any?)`, `delete(_ sender: Any?)`.
 
@@ -106,9 +108,9 @@ override func canPerformAction(_ action: Selector, withSender sender: Any?) -> B
 }
 ```
 
-##### Add Commands to Control the User Interface
+##### Add commands to control the user interface
 
-In the sample, you can change the primary or left-side table view’s selection by using [`UIKeyCommand`](uikeycommand.md). These key commands are connected to the up and down arrow keys and are added directly to the table view. The following example shows how to add the down arrow key as a `UIKeyCommand`:
+In the sample, you can change the primary or left-side table view’s selection by using [`UIKeyCommand`](./uikeycommand.md). These key commands are connected to the up and down arrow keys and are added directly to the table view. The following example shows how to add the down arrow key as a `UIKeyCommand`:
 
 ```swift
 let downArrowCommand =
@@ -151,15 +153,15 @@ class func navigationMenu() -> UIMenu {
 }
 ```
 
-##### Display Contextual Menus
+##### Display contextual menus
 
 The sample displays a contextual menu through the use of `UIContextMenuInteractionDelegate`, an interaction object used to display relevant actions for the content.
 
-For macOS, the user control-clicks or right-clicks the `DetailViewController`. For iPadOS, the user taps and holds the `DetailViewController`. The sample uses `UIContextMenuInteractionDelegate` to display Cut, Copy, Paste, Delete, Rename, and Share commands. This kind of contextual menu is a grouping of `UIAction` objects. `UIAction` is a menu element that performs its action in a closure. In iOS, optionally customize this contextual menu’s highlight preview by using [`contextMenuInteraction(_:previewForHighlightingMenuWithConfiguration:)`](uicontextmenuinteractiondelegate/contextmenuinteraction(_:previewforhighlightingmenuwithconfiguration:).md). This delegate function returns a primary view controller. Override this function to enable menu commands based on the table view state or the state of the pasteboard.
+For macOS, the user control-clicks or right-clicks the `DetailViewController`. For iPadOS, the user taps and holds the `DetailViewController`. The sample uses `UIContextMenuInteractionDelegate` to display Cut, Copy, Paste, Delete, Rename, and Share commands. This kind of contextual menu is a grouping of `UIAction` objects. `UIAction` is a menu element that performs its action in a closure. In iOS, optionally customize this contextual menu’s highlight preview by using [`contextMenuInteraction(_:previewForHighlightingMenuWithConfiguration:)`](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,previewforhighlightingmenuwithconfiguration%29.md). This delegate function returns a primary view controller. Override this function to enable menu commands based on the table view state or the state of the pasteboard.
 
-##### Adjust the Style Menu
+##### Adjust the style menu
 
-The sample implements [`validate(_:)`](uiresponder/validate(_:).md), where it can adjust the Style menu as the user selects between one or more font styles: plain, bold, italic, underline.
+The sample implements [`validate(_:)`](./uiresponder/validate%28_%29.md), where it can adjust the Style menu as the user selects between one or more font styles: plain, bold, italic, underline.
 
 ```swift
 // The font style menu item check marks used in the Style menu.
@@ -187,17 +189,18 @@ override func validate(_ command: UICommand) {
 }
 ```
 
-##### Add a Settings Menu
+##### Add a settings menu
 
-Mac apps typically display app-specific settings using a Settings window. The sample adds a Settings window by adding a Settings bundle to the Xcode project’s target. The window automatically becomes available to the user through the Settings menu command in the Application menu. To learn more about settings, see [`Displaying a Settings window`](displaying-a-settings-window.md).
+Mac apps typically display app-specific settings using a Settings window. The sample adds a Settings window by adding a Settings bundle to the Xcode project’s target. The window automatically becomes available to the user through the Settings menu command in the Application menu. To learn more about settings, see [Displaying a Settings window](./displaying-a-settings-window.md).
 
 ## See Also
 
-- [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)
+### User interactions
+- [Navigating an app’s user interface using a keyboard](./navigating-an-app-s-user-interface-using-a-keyboard.md)
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md)
   Detect when someone presses and releases keys on a physical keyboard.
-- [class UIHoverGestureRecognizer](uihovergesturerecognizer.md)
+- [class UIHoverGestureRecognizer](./uihovergesturerecognizer.md)
   A continuous gesture recognizer that interprets pointer movement over a view.
 
 

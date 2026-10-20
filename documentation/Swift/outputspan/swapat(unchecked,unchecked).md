@@ -1,7 +1,8 @@
 # swapAt(unchecked:unchecked:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exchange the elements at the two given indices.
 

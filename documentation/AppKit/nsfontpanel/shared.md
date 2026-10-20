@@ -1,17 +1,22 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the single `NSFontPanel` instance for the application, creating it if necessary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var shared: NSFontPanel { get }
+```
+
+```objc
+@property (class, strong, readonly) NSFontPanel * sharedFontPanel;
 ```
 
 #### Return Value
@@ -20,9 +25,11 @@ The `NSFontPanel` instance for the application.
 
 ## See Also
 
-- [class func setFontPanelFactory(AnyClass?)](nsfontmanager/setfontpanelfactory(_:).md)
+### Related Documentation
+- [class func setFontPanelFactory(AnyClass?)](../nsfontmanager/setfontpanelfactory%28_%29.md)
   Sets the class that creates the shared Font panel object.
-- [class var sharedFontPanelExists: Bool](nsfontpanel/sharedfontpanelexists.md)
+### Getting the Font Panel
+- [class var sharedFontPanelExists: Bool](./sharedfontpanelexists.md)
   A Boolean value that indicates whether the shared Font panel has been created.
 
 

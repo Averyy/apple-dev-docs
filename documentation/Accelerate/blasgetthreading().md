@@ -1,7 +1,8 @@
 # BLASGetThreading()
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current BLAS and LAPACK threading model.
 
@@ -20,17 +21,22 @@ Returns the current BLAS and LAPACK threading model.
 func BLASGetThreading() -> BLAS_THREADING
 ```
 
+```c
+enum BLAS_THREADING BLASGetThreading();
+```
+
 #### Return Value
 
 A constant that represents the current BLAS and LAPACK threading model.
 
 ## See Also
 
-- [struct BLAS](blas.md)
+### Specifying the threading model
+- [struct BLAS](./blas.md)
   An enumeration that acts as a namespace for Swift overlays to BLAS.
-- [func BLASSetThreading(BLAS_THREADING) -> Int32](blassetthreading(_:).md)
+- [func BLASSetThreading(BLAS_THREADING) -> Int32](./blassetthreading%28_%29.md)
   Sets the BLAS and LAPACK threading model.
-- [struct BLAS_THREADING](blas_threading.md)
+- [struct BLAS_THREADING](./blas_threading.md)
   Constants that describe the BLAS and LAPACK threading model.
 
 

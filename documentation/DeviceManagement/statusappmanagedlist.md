@@ -1,7 +1,8 @@
 # StatusAppManagedList
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that lists the device’s declarative managed apps.
 
@@ -14,20 +15,20 @@ The status item that lists the device’s declarative managed apps.
 
 ## Declaration
 
-```swift
+```
 object StatusAppManagedList
 ```
 
 ## Mentions
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
+- [Processing status for managed apps](./processing-status-for-managed-apps.md)
+- [Transferring management of apps to declarative management](./transferring-management-of-apps-to-declarative-management.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -41,9 +42,13 @@ object StatusAppManagedList
 ##### Reason Codes
 
 - `Error.AppStoreDisabled`: The App Store is disabled.
-- `Error.DownloadFailed`: The app download failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last download failure.
+- `Error.DownloadFailed`: The app download failed.
+
+  - `Timestamp`: (string) The RFC 3339 timestamp of the last download failure.
 - `Error.DuplicateConfiguredApp`: The app is already being managed.
-- `Error.InstallFailed`: The app install failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
+- `Error.InstallFailed`: The app install failed.
+
+  - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
 - `Error.InvalidAppID`: The app id could not be found.
 - `Error.InvalidCodeSignature`: The code signature of the app does not match the composed identifier, and the app cannot be managed.
 - `Error.IsSystemApp`: The app is a system app that cannot be managed.
@@ -53,9 +58,11 @@ object StatusAppManagedList
 - `Error.UnmanagedAppAlreadyInstalled`: An unmanaged app is already installed and cannot be managed.
 - `Error.UserRejected`: The user rejected management of the app.
 - `Info.UpdateAvailable`: An update is available for the app.
-- `Error.UpdateFailed`: The app update failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last update failure.
+- `Error.UpdateFailed`: The app update failed.
 
-##### Status Item Example
+  - `Timestamp`: (string) The RFC 3339 timestamp of the last update failure.
+
+##### Status item example
 
 **New or updated app**:
 
@@ -103,7 +110,7 @@ Reports a removed app.
 ## Topics
 
 ### Objects
-- [object StatusAppManagedListAppObject](statusappmanagedlistappobject.md)
+- [object StatusAppManagedListAppObject](./statusappmanagedlistappobject.md)
   A managed app.
 
 ## Properties
@@ -112,9 +119,10 @@ Reports a removed app.
 
 ## See Also
 
-- [object StatusMDMApp](statusmdmapp.md)
+### App and package items
+- [object StatusMDMApp](./statusmdmapp.md)
   The status item that lists the devices’s MDM-installed apps.
-- [object StatusPackageList](statuspackagelist.md)
+- [object StatusPackageList](./statuspackagelist.md)
   The status item that lists the device’s declarative packages.
 
 

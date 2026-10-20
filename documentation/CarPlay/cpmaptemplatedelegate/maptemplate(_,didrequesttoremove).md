@@ -1,7 +1,8 @@
 # mapTemplate(_:didRequestToRemove:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user removes a waypoint. Perform a reroute to update the route accordingly.
 
@@ -14,6 +15,10 @@ Called when the user removes a waypoint. Perform a reroute to update the route a
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRequestToRemove waypoint: CPNavigationWaypoint)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didRequestToRemoveWaypoint:(CPNavigationWaypoint *) waypoint;
 ```
 
 

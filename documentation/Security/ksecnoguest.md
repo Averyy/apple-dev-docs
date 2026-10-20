@@ -1,7 +1,8 @@
 # kSecNoGuest
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Not a valid `SecGuestRef` object.
 
@@ -13,6 +14,10 @@ Not a valid `SecGuestRef` object.
 
 ```swift
 var kSecNoGuest: SecGuestRef { get }
+```
+
+```c
+kSecNoGuest
 ```
 
 #### Discussion

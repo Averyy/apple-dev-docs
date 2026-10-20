@@ -1,7 +1,8 @@
 # le_prev
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The pointer to the previous USB host input/output source client record.
 
@@ -10,13 +11,14 @@ The pointer to the previous USB host input/output source client record.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBHostIOSourceClientRecord **le_prev;
 ```
 
 ## See Also
 
-- [le_next](iousbhostiosourceclientrecordlink/2882013-le_next.md)
+### Getting the Properties
+- [le_next](./api-2882013-le_next.md)
   The pointer to the next USB host input/output source client record. 
 
 

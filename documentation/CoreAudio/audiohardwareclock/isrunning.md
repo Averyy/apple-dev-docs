@@ -1,12 +1,13 @@
 # isRunning
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bool where a value of false indicates the device is not providing timestamps and a value of true means that it is.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

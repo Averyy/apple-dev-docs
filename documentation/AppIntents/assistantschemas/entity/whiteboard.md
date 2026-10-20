@@ -1,7 +1,8 @@
 # whiteboard
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app entities that describe data for whiteboard functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app entities that describe data for whiteboard 
 ```swift
 static var whiteboard: some AssistantSchemas.WhiteboardEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

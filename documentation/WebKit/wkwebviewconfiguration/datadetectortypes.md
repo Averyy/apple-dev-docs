@@ -1,7 +1,8 @@
 # dataDetectorTypes
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of data detectors to apply to the web view’s content.
 
@@ -17,15 +18,20 @@ The types of data detectors to apply to the web view’s content.
 var dataDetectorTypes: WKDataDetectorTypes { get set }
 ```
 
+```objc
+@property (nonatomic) WKDataDetectorTypes dataDetectorTypes;
+```
+
 #### Discussion
 
 Data detectors add interactivity to web content by creating links for specially formatted text. For example, the `WKDataDetectorTypeLink` type causes the `apple.com` portion of the text “Visit apple.com” to become a link to the Apple website.
 
-The default value of this property is [`WKDataDetectorTypeNone`](wkdatadetectortypes/wkdatadetectortypenone.md). For other possible values, see [`WKDataDetectorTypes`](wkdatadetectortypes.md).
+The default value of this property is [`WKDataDetectorTypeNone`](../wkdatadetectortypes/wkdatadetectortypenone.md). For other possible values, see [`WKDataDetectorTypes`](../wkdatadetectortypes.md).
 
 ## See Also
 
-- [struct WKDataDetectorTypes](wkdatadetectortypes.md)
+### Identifying data types
+- [struct WKDataDetectorTypes](../wkdatadetectortypes.md)
   The data detector types.
 
 

@@ -1,7 +1,8 @@
 # init(_:resolvedPath:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an asset path with both authored and resolved values.
 

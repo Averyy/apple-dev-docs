@@ -1,7 +1,8 @@
 # InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase App Store review screenshot.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase App Store review screensho
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchases`
 
 
 ---

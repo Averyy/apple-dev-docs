@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a caption to the pending group.
 
@@ -15,6 +16,10 @@ Adds a caption to the pending group.
 
 ```swift
 func add(_ input: AVCaption)
+```
+
+```objc
+- (void) addCaption:(AVCaption *) input;
 ```
 
 ## Parameters

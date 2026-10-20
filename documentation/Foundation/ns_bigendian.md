@@ -1,7 +1,8 @@
 # NS_BigEndian
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The byte order is big endian.
 
@@ -20,11 +21,16 @@ The byte order is big endian.
 var NS_BigEndian: Int { get }
 ```
 
+```c
+NS_BigEndian
+```
+
 ## See Also
 
-- [var NS_LittleEndian: Int](ns_littleendian.md)
+### Constants
+- [var NS_LittleEndian: Int](./ns_littleendian.md)
   The byte order is little endian.
-- [var NS_UnknownByteOrder: Int](ns_unknownbyteorder.md)
+- [var NS_UnknownByteOrder: Int](./ns_unknownbyteorder.md)
   The byte order is unknown.
 
 

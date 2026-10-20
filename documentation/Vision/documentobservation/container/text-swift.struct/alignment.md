@@ -1,7 +1,8 @@
 # DocumentObservation.Container.Text.Alignment
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The different text alignment types within a container.
 
@@ -22,28 +23,29 @@ enum Alignment
 ## Topics
 
 ### Getting the alignment
-- [DocumentObservation.Container.Text.Alignment.center](documentobservation/container/text-swift.struct/alignment/center.md)
+- [DocumentObservation.Container.Text.Alignment.center](./alignment/center.md)
   Text aligns horizontally to the center of the container.
-- [DocumentObservation.Container.Text.Alignment.leading](documentobservation/container/text-swift.struct/alignment/leading.md)
+- [DocumentObservation.Container.Text.Alignment.leading](./alignment/leading.md)
   Text aligns to the left edge of the container.
-- [DocumentObservation.Container.Text.Alignment.trailing](documentobservation/container/text-swift.struct/alignment/trailing.md)
+- [DocumentObservation.Container.Text.Alignment.trailing](./alignment/trailing.md)
   Lines aligned with a right edge within the container.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](documentobservation/container/text-swift.struct/boundingregion.md)
+### Inspecting the text
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   A polygon that defines the boundary of text.
-- [var textAlignment: DocumentObservation.Container.Text.Alignment?](documentobservation/container/text-swift.struct/textalignment.md)
+- [var textAlignment: DocumentObservation.Container.Text.Alignment?](./textalignment.md)
   The alignment of the text within its container.
 
 

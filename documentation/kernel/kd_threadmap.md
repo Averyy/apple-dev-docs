@@ -1,14 +1,15 @@
 # kd_threadmap
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kd_threadmap {
     ...
 } kd_threadmap;
@@ -17,9 +18,9 @@ typedef struct kd_threadmap {
 ## Topics
 
 ### Instance Properties
-- [command](kd_threadmap/3197810-command.md)
-- [thread](kd_threadmap/3197811-thread.md)
-- [valid](kd_threadmap/3197812-valid.md)
+- [command](./kd_threadmap/api-3197810-command.md)
+- [thread](./kd_threadmap/api-3197811-thread.md)
+- [valid](./kd_threadmap/api-3197812-valid.md)
 
 
 ---

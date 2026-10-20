@@ -1,7 +1,8 @@
 # SnapshotData
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The associated data of a snapshot background task.
 
@@ -17,26 +18,27 @@ struct SnapshotData
 ## Topics
 
 ### Getting the data
-- [let identifier: String?](snapshotdata/identifier.md)
+- [let identifier: String?](./snapshotdata/identifier.md)
   The identifier associated with this snapshot request.
-- [let reason: SnapshotData.SnapshotReason](snapshotdata/reason.md)
+- [let reason: SnapshotData.SnapshotReason](./snapshotdata/reason.md)
   The reason for a background snapshot task.
-- [SnapshotData.SnapshotReason](snapshotdata/snapshotreason.md)
+- [SnapshotData.SnapshotReason](./snapshotdata/snapshotreason.md)
   The reason for a background snapshot task.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some Scene](scene/backgroundtask(_:action:).md)
+### Handling background tasks
+- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some Scene](./scene/backgroundtask%28_,action%29.md)
   Runs the specified action when the system provides a background task.
-- [struct BackgroundTask](backgroundtask.md)
+- [struct BackgroundTask](./backgroundtask.md)
   The kinds of background tasks that your app or extension can handle.
-- [struct SnapshotResponse](snapshotresponse.md)
+- [struct SnapshotResponse](./snapshotresponse.md)
   Your application’s response to a snapshot background task.
 
 

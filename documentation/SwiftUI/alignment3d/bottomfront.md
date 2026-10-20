@@ -1,7 +1,8 @@
 # bottomFront
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide representing a point at the center of the horizontal axis, bottom of the vertical axis, and front of the depth axis.
 

@@ -1,37 +1,39 @@
 # OSMetaClass
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Base class for DriverKit runtime class system. Not called directly.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class OSMetaClass;
 ```
 
 ## Topics
 
 ### Instantiating a Class
-- [New](osmetaclass/new.md)
+- [New](./osmetaclass/new.md)
 ### Instance Properties
-- [metaClassPrivate](osmetaclass/metaclassprivate.md)
+- [metaClassPrivate](./osmetaclass/metaclassprivate.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSMetaClassBase](osmetaclassbase.md)
+- [OSMetaClassBase](./osmetaclassbase.md)
 
 ## See Also
 
-- [OSMetaClassBase](osmetaclassbase.md)
+### Base Classes
+- [OSMetaClassBase](./osmetaclassbase.md)
   Base class for DriverKit objects.
 
 

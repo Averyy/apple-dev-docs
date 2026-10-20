@@ -1,7 +1,8 @@
 # columns
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The columns in a table.
 
@@ -21,9 +22,10 @@ var columns: [[DocumentObservation.Container.Table.Cell]] { get }
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](documentobservation/container/table/boundingregion.md)
+### Inspecting a table
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   A polygon that defines the boundary of the table.
-- [var rows: [[DocumentObservation.Container.Table.Cell]]](documentobservation/container/table/rows.md)
+- [var rows: [[DocumentObservation.Container.Table.Cell]]](./rows.md)
   The rows in a table.
 
 

@@ -1,7 +1,8 @@
 # initialize(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes memory starting at this pointer’s address with the elements of the given collection.
 

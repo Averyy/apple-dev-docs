@@ -1,7 +1,8 @@
 # productID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Product Identifier associated with the device.
 
@@ -19,6 +20,10 @@ The Product Identifier associated with the device.
 ```swift
 @NSCopying
 var productID: NSNumber? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * productID;
 ```
 
 #### Discussion

@@ -1,23 +1,28 @@
 # sparse_index
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The index type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias sparse_index = Int64
+```
+
+```c
+typedef int64_t sparse_index;
 ```
 
 #### Discussion
@@ -28,13 +33,14 @@ All indices, including those in a sparse vectors index array, are positive value
 
 ## See Also
 
-- [typealias sparse_dimension](sparse_dimension.md)
+### Supporting types
+- [typealias sparse_dimension](./sparse_dimension.md)
   The dimension type.
-- [typealias sparse_matrix_double](sparse_matrix_double.md)
+- [typealias sparse_matrix_double](./sparse_matrix_double.md)
   Sparse matrix opaque type for double.
-- [typealias sparse_matrix_float](sparse_matrix_float.md)
+- [typealias sparse_matrix_float](./sparse_matrix_float.md)
   Sparse matrix opaque type for float.
-- [struct sparse_status](sparse_status.md)
+- [struct sparse_status](./sparse_status.md)
   The type reflecting the status of an operations.
 
 

@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phone number of a type checking result.
 
@@ -20,9 +21,14 @@ The phone number of a type checking result.
 var phoneNumber: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * phoneNumber;
+```
+
 ## See Also
 
-- [class func phoneNumberCheckingResult(range: NSRange, phoneNumber: String) -> NSTextCheckingResult](nstextcheckingresult/phonenumbercheckingresult(range:phonenumber:).md)
+### Text Checking Results for Phone Numbers
+- [class func phoneNumberCheckingResult(range: NSRange, phoneNumber: String) -> NSTextCheckingResult](./phonenumbercheckingresult%28range,phonenumber%29.md)
   Creates and returns a text checking result with the specified phone number.
 
 

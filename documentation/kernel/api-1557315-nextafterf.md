@@ -1,21 +1,23 @@
 # nextafterf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float nextafterf(float, float);
 ```
 
 ## See Also
 
-- [nextafter](1557351-nextafter.md)
-- [nextafterl](1557308-nextafterl.md)
+### Next After
+- [nextafter](./api-1557351-nextafter.md)
+- [nextafterl](./api-1557308-nextafterl.md)
 
 
 ---

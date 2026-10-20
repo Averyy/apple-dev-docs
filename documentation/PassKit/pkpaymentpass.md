@@ -1,7 +1,8 @@
 # PKPaymentPass
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a provisioned payment card for in-app payments.
 
@@ -19,9 +20,13 @@ An object that represents a provisioned payment card for in-app payments.
 class PKPaymentPass
 ```
 
+```objc
+@interface PKPaymentPass : PKSecureElementPass
+```
+
 #### Overview
 
-Use [`PKSecureElementPass`](pksecureelementpass.md) in apps instead of this class to implement a payment pass in apps with these these system versions:
+Use [`PKSecureElementPass`](./pksecureelementpass.md) in apps instead of this class to implement a payment pass in apps with these these system versions:
 
 - iOS 13.4 or later
 - macOS 11.0 or later
@@ -31,26 +36,27 @@ Use [`PKSecureElementPass`](pksecureelementpass.md) in apps instead of this clas
 ## Topics
 
 ### Determining activation state
-- [var activationState: PKPaymentPassActivationState](pkpaymentpass/activationstate.md)
+- [var activationState: PKPaymentPassActivationState](./pkpaymentpass/activationstate.md)
   The current activation state of the pass.
-- [enum PKPaymentPassActivationState](pkpaymentpassactivationstate.md)
+- [enum PKPaymentPassActivationState](./pkpaymentpassactivationstate.md)
   Cases that indicate payment pass activation states.
 
 ## Relationships
 
 ### Inherits From
-- [PKSecureElementPass](pksecureelementpass.md)
+- [PKSecureElementPass](./pksecureelementpass.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKAddPaymentPassViewController](pkaddpaymentpassviewcontroller.md)
+### Payment passes
+- [class PKAddPaymentPassViewController](./pkaddpaymentpassviewcontroller.md)
   Displays an interface that lets users add cards to Apple Pay from within your app.
 
 

@@ -1,7 +1,8 @@
 # errSecCRLNotTrusted
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list is not trusted.
 
@@ -18,6 +19,10 @@ The certificate revocation list is not trusted.
 
 ```swift
 var errSecCRLNotTrusted: OSStatus { get }
+```
+
+```c
+errSecCRLNotTrusted
 ```
 
 

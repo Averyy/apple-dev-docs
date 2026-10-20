@@ -1,14 +1,15 @@
 # HVG_HCALL_ACCESS_DENIED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 HVG_HCALL_ACCESS_DENIED
 ```
 

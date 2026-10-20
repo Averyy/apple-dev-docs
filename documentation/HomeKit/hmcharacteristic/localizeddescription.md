@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized description of the characteristic.
 
@@ -19,9 +20,14 @@ The localized description of the characteristic.
 var localizedDescription: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * localizedDescription;
+```
+
 ## See Also
 
-- [var uniqueIdentifier: UUID](hmcharacteristic/uniqueidentifier.md)
+### Identifying a characteristic
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the characteristic.
 
 

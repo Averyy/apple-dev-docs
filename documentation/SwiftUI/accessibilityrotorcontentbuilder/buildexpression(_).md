@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an expression within the builder.
 
@@ -23,8 +24,9 @@ static func buildExpression<Content>(_ content: Content) -> Content where Conten
 
 ## See Also
 
-- [static buildBlock(_:)](accessibilityrotorcontentbuilder/buildblock(_:).md)
-- [static func buildIf<Content>(Content?) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildif(_:).md)
+### Building navigation content
+- [static buildBlock(_:)](./buildblock%28_%29.md)
+- [static func buildIf<Content>(Content?) -> some AccessibilityRotorContent](./buildif%28_%29.md)
 
 
 ---

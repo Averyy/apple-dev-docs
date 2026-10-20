@@ -1,7 +1,8 @@
 # unregisterForLaunch(onQuickSwitchStateEvents:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Removes the calling app’s registration for background launch on quick switch state changes.
 
@@ -13,7 +14,15 @@ Removes the calling app’s registration for background launch on quick switch s
 ## Declaration
 
 ```swift
+class func unregisterForLaunch(onQuickSwitchStateEvents completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 class func unregisterForLaunchOnQuickSwitchStateEvents() async throws
+```
+
+```objc
++ (void) unregisterForLaunchOnQuickSwitchStateEvents:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -28,7 +37,8 @@ After this call succeeds, the system no longer launches the app  in the backgrou
 
 ## See Also
 
-- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
+### Registering and unregistering for quick switch events
+- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](./registerforlaunch%28onquickswitchstateevents%29.md)
   Registers the calling app for background launch whenever the device’s quick switch state changes.
 
 

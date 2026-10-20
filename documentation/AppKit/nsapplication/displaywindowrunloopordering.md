@@ -1,12 +1,13 @@
 # displayWindowRunLoopOrdering
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The priority at which windows are displayed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The priority at which windows are displayed.
 class var displayWindowRunLoopOrdering: Int { get }
 ```
 
+```c
+NSDisplayWindowRunLoopOrdering
+```
+
 ## See Also
 
-- [class var resetCursorRectsRunLoopOrdering: Int](nsapplication/resetcursorrectsrunloopordering.md)
+### Managing Run Loops
+- [class var resetCursorRectsRunLoopOrdering: Int](./resetcursorrectsrunloopordering.md)
   The priority at which cursor rects are reset.
-- [class var updateWindowsRunLoopOrdering: Int](nsapplication/updatewindowsrunloopordering.md)
+- [class var updateWindowsRunLoopOrdering: Int](./updatewindowsrunloopordering.md)
   Run-loop message priority for handling window updates.
 
 

@@ -1,7 +1,8 @@
 # allSubscriptions()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all subscriptions from the current database.
 
@@ -11,7 +12,7 @@ Fetches all subscriptions from the current database.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,7 +29,7 @@ The database’s subscriptions.
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 
-For information on a more configurable way to fetch all subscriptions from a specific database, see [`fetchAllSubscriptionsOperation()`](ckfetchsubscriptionsoperation/fetchallsubscriptionsoperation().md).
+For information on a more configurable way to fetch all subscriptions from a specific database, see [`fetchAllSubscriptionsOperation()`](../ckfetchsubscriptionsoperation/fetchallsubscriptionsoperation%28%29.md).
 
 
 ---

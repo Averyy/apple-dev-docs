@@ -1,7 +1,8 @@
 # tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_CBC_SHA256
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case ECDHE_RSA_WITH_AES_128_CBC_SHA256
+```
+
+```c
+tls_ciphersuite_ECDHE_RSA_WITH_AES_128_CBC_SHA256
 ```
 
 

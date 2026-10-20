@@ -2,6 +2,7 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a custom view for a filter.
@@ -15,13 +16,17 @@ Provides a custom view for a filter.
 func provideView(forUIConfiguration inUIConfiguration: [AnyHashable : Any]!, excludedKeys inKeys: [Any]!) -> IKFilterUIView!
 ```
 
+```objc
+- (IKFilterUIView *) provideViewForUIConfiguration:(NSDictionary *) inUIConfiguration excludedKeys:(NSArray *) inKeys;
+```
+
 #### Return Value
 
-An [`IKFilterUIView`](ikfilteruiview.md) object or `nil` if the filter is unable to provide a view. If `nil`, the Image Kit framework will attempt to provide a user interface.
+An [`IKFilterUIView`](../ikfilteruiview.md) object or `nil` if the filter is unable to provide a view. If `nil`, the Image Kit framework will attempt to provide a user interface.
 
 #### Discussion
 
-This method overrides the method [`view(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class/view(foruiconfiguration:excludedkeys:)).
+This method overrides the method [`view(forUIConfiguration:excludedKeys:)`](../../CoreImage/cifilter-swift.class/view%28foruiconfiguration,excludedkeys%29.md).
 
 ## Parameters
 

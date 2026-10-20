@@ -1,7 +1,8 @@
 # Algorithm.lzfse
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The LZFSE compression algorithm, which is recommended for use on Apple platforms.
 
@@ -11,7 +12,7 @@ The LZFSE compression algorithm, which is recommended for use on Apple platforms
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -28,7 +29,8 @@ Use LZFSE when compressing a payload for iOS, macOS, watchOS, and tvOS. If you n
 
 ## See Also
 
-- [var COMPRESSION_LZFSE: compression_algorithm](compression_lzfse.md)
+### Related Documentation
+- [var COMPRESSION_LZFSE: compression_algorithm](../compression_lzfse.md)
   The LZFSE compression algorithm, which is recommended for use on Apple platforms.
 
 

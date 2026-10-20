@@ -1,7 +1,8 @@
 # SequenceGesture.Value.second(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The first gesture has ended.
 
@@ -22,7 +23,8 @@ case second(First.Value, Second.Value?)
 
 ## See Also
 
-- [SequenceGesture.Value.first(_:)](sequencegesture/value/first(_:).md)
+### Getting gesture values
+- [SequenceGesture.Value.first(_:)](./first%28_%29.md)
   The first gesture hasn’t ended.
 
 

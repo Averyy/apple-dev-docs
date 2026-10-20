@@ -1,7 +1,8 @@
 # Delete an end user license agreement
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete the custom end user license agreement that is associated with an app.
 
@@ -14,13 +15,25 @@ Delete the custom end user license agreement that is associated with an app.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an end user license agreement](post-v1-enduserlicenseagreements.md)
+### Creating, Modifying, and Deleting an EULA
+- [Create an end user license agreement](./post-v1-enduserlicenseagreements.md)
   Add a custom end user license agreement (EULA) to an app and configure the territories to which it applies.
-- [Modify an end user license agreement](patch-v1-enduserlicenseagreements-_id_.md)
+- [Modify an end user license agreement](./patch-v1-enduserlicenseagreements-_id_.md)
   Update the text or territories for your custom end user license agreement.
 
 

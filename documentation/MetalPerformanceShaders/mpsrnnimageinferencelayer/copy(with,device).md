@@ -1,7 +1,8 @@
 # copy(with:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 func copy(with zone: NSZone? = nil, device: (any MTLDevice)?) -> Self
 ```
 
+```objc
+- (instancetype) copyWithZone:(NSZone *) zone device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSImage], destinationForwardImages: [MPSImage], destinationBackwardImages: [MPSImage]?)](mpsrnnimageinferencelayer/encodebidirectionalsequence(commandbuffer:sourcesequence:destinationforwardimages:destinationbackwardimages:).md)
-- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationImages: [MPSImage], recurrentInputState: MPSRNNRecurrentImageState?, recurrentOutputStates: NSMutableArray?)](mpsrnnimageinferencelayer/encodesequence(commandbuffer:sourceimages:destinationimages:recurrentinputstate:recurrentoutputstates:).md)
-- [class MPSRNNRecurrentImageState](mpsrnnrecurrentimagestate.md)
+### Instance Methods
+- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSImage], destinationForwardImages: [MPSImage], destinationBackwardImages: [MPSImage]?)](./encodebidirectionalsequence%28commandbuffer,sourcesequence,destinationforwardimages,destinationbackwardimages%29.md)
+- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationImages: [MPSImage], recurrentInputState: MPSRNNRecurrentImageState?, recurrentOutputStates: NSMutableArray?)](./encodesequence%28commandbuffer,sourceimages,destinationimages,recurrentinputstate,recurrentoutputstates%29.md)
+- [class MPSRNNRecurrentImageState](../mpsrnnrecurrentimagestate.md)
   A class that holds all the data that’s passed from one sequence iteration of the image-based recurrent neural network layer (stack) to the next.
 
 

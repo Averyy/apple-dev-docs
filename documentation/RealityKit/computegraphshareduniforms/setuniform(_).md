@@ -1,7 +1,8 @@
 # setUniform(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores a uniform value, replacing any previously stored value of the same type.
 

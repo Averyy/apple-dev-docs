@@ -1,7 +1,8 @@
 # OSSystemExtensionRequest.Result
 
 **Framework**: System Extensions  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of a completed request, possibly including additional information about the extension’s state.
 
@@ -14,31 +15,36 @@ The result of a completed request, possibly including additional information abo
 enum Result
 ```
 
+```c
+enum OSSystemExtensionRequestResult : NSInteger;
+```
+
 ## Topics
 
 ### Results
-- [OSSystemExtensionRequest.Result.completed](ossystemextensionrequest/result/completed.md)
+- [OSSystemExtensionRequest.Result.completed](./result/completed.md)
   The request completed successfully.
-- [OSSystemExtensionRequest.Result.willCompleteAfterReboot](ossystemextensionrequest/result/willcompleteafterreboot.md)
+- [OSSystemExtensionRequest.Result.willCompleteAfterReboot](./result/willcompleteafterreboot.md)
   The request requires a restart to complete successfully.
 ### Initializers
-- [init?(rawValue: Int)](ossystemextensionrequest/result/init(rawvalue:).md)
+- [init?(rawValue: Int)](./result/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func request(OSSystemExtensionRequest, didFinishWithResult: OSSystemExtensionRequest.Result)](ossystemextensionrequestdelegate/request(_:didfinishwithresult:).md)
+### Handling Success and Failure
+- [func request(OSSystemExtensionRequest, didFinishWithResult: OSSystemExtensionRequest.Result)](../ossystemextensionrequestdelegate/request%28_,didfinishwithresult%29.md)
   Tells the delegate that the manager completed the request.
-- [func request(OSSystemExtensionRequest, didFailWithError: any Error)](ossystemextensionrequestdelegate/request(_:didfailwitherror:).md)
+- [func request(OSSystemExtensionRequest, didFailWithError: any Error)](../ossystemextensionrequestdelegate/request%28_,didfailwitherror%29.md)
   Tells the delegate the manager failed to complete the request.
 
 

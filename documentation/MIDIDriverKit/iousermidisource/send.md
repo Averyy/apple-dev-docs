@@ -1,23 +1,25 @@
 # Send
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Send(const IOUserMIDIUMPWord *umpWords, size_t numWords);
 ```
 
 ## See Also
 
-- [GetBaseClassID](iousermidisource/getbaseclassid.md)
-- [GetClassID](iousermidisource/getclassid.md)
-- [free](iousermidisource/free.md)
-- [init](iousermidisource/init.md)
+### Instance Methods
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

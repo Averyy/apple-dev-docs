@@ -1,7 +1,8 @@
 # OSLogEntry.StoreCategory
 
 **Framework**: OSLog  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A classification of how the entry was to be stored and rotated at the point when it was created.
 
@@ -20,6 +21,10 @@ A classification of how the entry was to be stored and rotated at the point when
 enum StoreCategory
 ```
 
+```c
+enum OSLogEntryStoreCategory : NSInteger;
+```
+
 #### Overview
 
 The unified logging system keeps entries in one of two locations: a ring buffer in memory, or a persisted data store. Entries rotate out to free up resources; they are rotated out in bulk according to heuristics based on space, time, and entry classification.
@@ -27,40 +32,41 @@ The unified logging system keeps entries in one of two locations: a ring buffer 
 ## Topics
 
 ### Constants
-- [OSLogEntry.StoreCategory.undefined](oslogentry/storecategory-swift.enum/undefined.md)
+- [OSLogEntry.StoreCategory.undefined](./storecategory-swift.enum/undefined.md)
   This entry’s purpose is unknown.
-- [OSLogEntry.StoreCategory.metadata](oslogentry/storecategory-swift.enum/metadata.md)
+- [OSLogEntry.StoreCategory.metadata](./storecategory-swift.enum/metadata.md)
   This entry was generated as information about the other entries or about the sequence of entries as a whole.
-- [OSLogEntry.StoreCategory.shortTerm](oslogentry/storecategory-swift.enum/shortterm.md)
+- [OSLogEntry.StoreCategory.shortTerm](./storecategory-swift.enum/shortterm.md)
   This entry was not intended to be long-lived, and was captured in the ring buffer.
-- [OSLogEntry.StoreCategory.longTermAuto](oslogentry/storecategory-swift.enum/longtermauto.md)
+- [OSLogEntry.StoreCategory.longTermAuto](./storecategory-swift.enum/longtermauto.md)
   The entry was tagged with a hint indicating the system should try to preserve it based on the amount of space available.
-- [OSLogEntry.StoreCategory.longTerm1](oslogentry/storecategory-swift.enum/longterm1.md)
+- [OSLogEntry.StoreCategory.longTerm1](./storecategory-swift.enum/longterm1.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 1 day.
-- [OSLogEntry.StoreCategory.longTerm3](oslogentry/storecategory-swift.enum/longterm3.md)
+- [OSLogEntry.StoreCategory.longTerm3](./storecategory-swift.enum/longterm3.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 3 days.
-- [OSLogEntry.StoreCategory.longTerm7](oslogentry/storecategory-swift.enum/longterm7.md)
+- [OSLogEntry.StoreCategory.longTerm7](./storecategory-swift.enum/longterm7.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 7 days.
-- [OSLogEntry.StoreCategory.longTerm14](oslogentry/storecategory-swift.enum/longterm14.md)
+- [OSLogEntry.StoreCategory.longTerm14](./storecategory-swift.enum/longterm14.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 14 days.
-- [OSLogEntry.StoreCategory.longTerm30](oslogentry/storecategory-swift.enum/longterm30.md)
+- [OSLogEntry.StoreCategory.longTerm30](./storecategory-swift.enum/longterm30.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 30 days.
 ### Initializers
-- [init?(rawValue: Int)](oslogentry/storecategory-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./storecategory-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var storeCategory: OSLogEntry.StoreCategory](oslogentry/storecategory-swift.property.md)
+### Accessing Store Categories
+- [var storeCategory: OSLogEntry.StoreCategory](./storecategory-swift.property.md)
   The current log entry’s storage tag.
 
 

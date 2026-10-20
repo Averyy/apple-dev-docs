@@ -1,7 +1,8 @@
 # zoomBlur()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a zoom blur centered around a single point on the image.
 
@@ -19,6 +20,10 @@ Creates a zoom blur centered around a single point on the image.
 class func zoomBlur() -> any CIFilter & CIZoomBlur
 ```
 
+```objc
++ (CIFilter<CIZoomBlur> *) zoomBlurFilter;
+```
+
 #### Return Value
 
 The blurred image.
@@ -29,9 +34,9 @@ This method applies the zoom blur filter to an image. This effect mimics the zoo
 
 The zoom blur filter uses the following properties:
 
-- **`amount`**: A `float` representing the zoom-in amount as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
-- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+- **`amount`**: A `float` representing the zoom-in amount as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](../../CoreFoundation/cgpoint.md).
+- **`inputImage`**: A [`CIImage`](../ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a zoom blur to the input image:
 
@@ -46,35 +51,36 @@ The following code creates a filter that adds a zoom blur to the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In photo on the right, a zoom blur filter has been applied resulting in a distorted and fuzzy image.](/images/com.apple.coreimage/media-3544962@2x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In photo on the right, a zoom blur filter has been applied resulting in a distorted and fuzzy image.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3544962@2x.png)
 
 ## See Also
 
-- [class func bokehBlur() -> any CIFilter & CIBokehBlur](cifilter-swift.class/bokehblur.md)
+### Filters
+- [class func bokehBlur() -> any CIFilter & CIBokehBlur](./bokehblur%28%29.md)
   Applies a bokeh effect to an image.
-- [class func boxBlur() -> any CIFilter & CIBoxBlur](cifilter-swift.class/boxblur.md)
+- [class func boxBlur() -> any CIFilter & CIBoxBlur](./boxblur%28%29.md)
   Applies a square-shaped blur to an area of an image.
-- [class func discBlur() -> any CIFilter & CIDiscBlur](cifilter-swift.class/discblur.md)
+- [class func discBlur() -> any CIFilter & CIDiscBlur](./discblur%28%29.md)
   Applies a circle-shaped blur to an area of an image.
-- [class func gaussianBlur() -> any CIFilter & CIGaussianBlur](cifilter-swift.class/gaussianblur.md)
+- [class func gaussianBlur() -> any CIFilter & CIGaussianBlur](./gaussianblur%28%29.md)
   Blurs an image with a Gaussian distribution pattern.
-- [class func maskedVariableBlur() -> any CIFilter & CIMaskedVariableBlur](cifilter-swift.class/maskedvariableblur.md)
+- [class func maskedVariableBlur() -> any CIFilter & CIMaskedVariableBlur](./maskedvariableblur%28%29.md)
   Blurs a specified portion of an image.
-- [class func median() -> any CIFilter & CIMedian](cifilter-swift.class/median.md)
+- [class func median() -> any CIFilter & CIMedian](./median%28%29.md)
   Calculates the median of an image to refine detail.
-- [class func morphologyGradient() -> any CIFilter & CIMorphologyGradient](cifilter-swift.class/morphologygradient.md)
+- [class func morphologyGradient() -> any CIFilter & CIMorphologyGradient](./morphologygradient%28%29.md)
   Detects and highlights edges of objects.
-- [class func morphologyMaximum() -> any CIFilter & CIMorphologyMaximum](cifilter-swift.class/morphologymaximum.md)
+- [class func morphologyMaximum() -> any CIFilter & CIMorphologyMaximum](./morphologymaximum%28%29.md)
   Blurs a circular area by enlarging contrasting pixels.
-- [class func morphologyMinimum() -> any CIFilter & CIMorphologyMinimum](cifilter-swift.class/morphologyminimum.md)
+- [class func morphologyMinimum() -> any CIFilter & CIMorphologyMinimum](./morphologyminimum%28%29.md)
   Blurs a circular area by reducing contrasting pixels.
-- [class func morphologyRectangleMaximum() -> any CIFilter & CIMorphologyRectangleMaximum](cifilter-swift.class/morphologyrectanglemaximum.md)
+- [class func morphologyRectangleMaximum() -> any CIFilter & CIMorphologyRectangleMaximum](./morphologyrectanglemaximum%28%29.md)
   Blurs a rectangular area by enlarging contrasting pixels.
-- [class func morphologyRectangleMinimum() -> any CIFilter & CIMorphologyRectangleMinimum](cifilter-swift.class/morphologyrectangleminimum.md)
+- [class func morphologyRectangleMinimum() -> any CIFilter & CIMorphologyRectangleMinimum](./morphologyrectangleminimum%28%29.md)
   Blurs a rectangular area by reducing contrasting pixels.
-- [class func motionBlur() -> any CIFilter & CIMotionBlur](cifilter-swift.class/motionblur.md)
+- [class func motionBlur() -> any CIFilter & CIMotionBlur](./motionblur%28%29.md)
   Creates motion blur on an image.
-- [class func noiseReduction() -> any CIFilter & CINoiseReduction](cifilter-swift.class/noisereduction.md)
+- [class func noiseReduction() -> any CIFilter & CINoiseReduction](./noisereduction%28%29.md)
   Reduces noise by sharpening the edges of objects.
 
 

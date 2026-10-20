@@ -1,7 +1,8 @@
 # skip(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func skip(with params: MTRServiceAreaClusterSkipAreaParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTRServiceAreaClusterSkipAreaResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func skip(with params: MTRServiceAreaClusterSkipAreaParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTRServiceAreaClusterSkipAreaResponseParams
+```
+
+```objc
+- (void) skipAreaWithParams:(MTRServiceAreaClusterSkipAreaParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTRServiceAreaClusterSkipAreaResponseParams *data, NSError *error)) completion;
 ```
 
 

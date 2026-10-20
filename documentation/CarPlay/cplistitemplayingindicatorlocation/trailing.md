@@ -1,7 +1,8 @@
 # CPListItemPlayingIndicatorLocation.trailing
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Align the Now Playing indicator with the trailing edge of the list item.
 
@@ -16,9 +17,14 @@ Align the Now Playing indicator with the trailing edge of the list item.
 case trailing
 ```
 
+```c
+CPListItemPlayingIndicatorLocationTrailing
+```
+
 ## See Also
 
-- [CPListItemPlayingIndicatorLocation.leading](cplistitemplayingindicatorlocation/leading.md)
+### Now Playing Indicator Locations
+- [CPListItemPlayingIndicatorLocation.leading](./leading.md)
   Align the Now Playing indicator with the leading edge of the list item.
 
 

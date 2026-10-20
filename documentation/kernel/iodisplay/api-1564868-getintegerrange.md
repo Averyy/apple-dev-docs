@@ -1,14 +1,15 @@
 # getIntegerRange
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * getIntegerRange(OSDictionary *params, const OSSymbol *sym, SInt32 *value, SInt32 *min, SInt32 *max);
 ```
 

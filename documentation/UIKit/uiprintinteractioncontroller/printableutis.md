@@ -1,7 +1,8 @@
 # printableUTIs
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a set of the Uniform Type Identifiers for the types of data that UIKit can print.
 
@@ -17,17 +18,22 @@ Returns a set of the Uniform Type Identifiers for the types of data that UIKit c
 class var printableUTIs: Set<String> { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSSet<NSString *> * printableUTIs;
+```
+
 #### Return Value
 
 A set object that contains, as strings, the UTIs identifying data types that UIKit knows how to print natively.
 
 ## See Also
 
-- [class var isPrintingAvailable: Bool](uiprintinteractioncontroller/isprintingavailable.md)
+### Determining printability
+- [class var isPrintingAvailable: Bool](./isprintingavailable.md)
   A Boolean value that indicates whether the device supports printing.
-- [class func canPrint(Data) -> Bool](uiprintinteractioncontroller/canprint(_:)-4e0bs.md)
+- [class func canPrint(Data) -> Bool](./canprint%28_%29-4e0bs.md)
   Returns a Boolean value that indicates whether UIKit can print the contents of a data object.
-- [class func canPrint(URL) -> Bool](uiprintinteractioncontroller/canprint(_:)-364vj.md)
+- [class func canPrint(URL) -> Bool](./canprint%28_%29-364vj.md)
   Returns a Boolean value that indicates whether UIKit can print the file that the specified URL references.
 
 

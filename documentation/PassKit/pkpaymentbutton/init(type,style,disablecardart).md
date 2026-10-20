@@ -1,7 +1,8 @@
 # init(type:style:disableCardArt:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 convenience init(type: PKPaymentButtonType, style: PKPaymentButtonStyle, disableCardArt: Bool)
+```
+
+```objc
+- (instancetype) initWithPaymentButtonType:(PKPaymentButtonType) type paymentButtonStyle:(PKPaymentButtonStyle) style disableCardArt:(BOOL) disableCardArt;
 ```
 
 

@@ -1,7 +1,8 @@
 # ParentalControlsTimeLimits.Time-limits
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The time limits dictionary.
 
@@ -10,20 +11,20 @@ The time limits dictionary.
 
 ## Declaration
 
-```swift
+```
 object ParentalControlsTimeLimits.Time-limits
 ```
 
 ## Topics
 
 ### Objects
-- [object ParentalControlsTimeLimits.Time-limits.Weekday-allowance](parentalcontrolstimelimits/time-limits-data.dictionary/weekday-allowance-data.dictionary.md)
+- [object ParentalControlsTimeLimits.Time-limits.Weekday-allowance](./time-limits-data.dictionary/weekday-allowance-data.dictionary.md)
   The weekday allowance dictionary.
-- [object ParentalControlsTimeLimits.Time-limits.Weekday-curfew](parentalcontrolstimelimits/time-limits-data.dictionary/weekday-curfew-data.dictionary.md)
+- [object ParentalControlsTimeLimits.Time-limits.Weekday-curfew](./time-limits-data.dictionary/weekday-curfew-data.dictionary.md)
   The weekday curfew dictionary.
-- [object ParentalControlsTimeLimits.Time-limits.Weekend-allowance](parentalcontrolstimelimits/time-limits-data.dictionary/weekend-allowance-data.dictionary.md)
+- [object ParentalControlsTimeLimits.Time-limits.Weekend-allowance](./time-limits-data.dictionary/weekend-allowance-data.dictionary.md)
   The weekend allowance dictionary.
-- [object ParentalControlsTimeLimits.Time-limits.Weekend-curfew](parentalcontrolstimelimits/time-limits-data.dictionary/weekend-curfew-data.dictionary.md)
+- [object ParentalControlsTimeLimits.Time-limits.Weekend-curfew](./time-limits-data.dictionary/weekend-curfew-data.dictionary.md)
   The weekend curfew dictionary.
 
 ## Properties

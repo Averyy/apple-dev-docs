@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ALVirusProtection
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ALVirusProtection = 0x1AF
 ```
 

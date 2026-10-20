@@ -1,7 +1,8 @@
 # rootRecord
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root shared record.
 
@@ -10,7 +11,7 @@ The root shared record.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.Record rootRecord;
 ```
 

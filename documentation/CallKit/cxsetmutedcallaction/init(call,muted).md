@@ -1,7 +1,8 @@
 # init(call:muted:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new action for a call identified by a given UUID, as well as whether the call is muted.
 
@@ -18,18 +19,23 @@ Initializes a new action for a call identified by a given UUID, as well as wheth
 convenience init(call callUUID: UUID, muted: Bool)
 ```
 
+```objc
+- (instancetype) initWithCallUUID:(NSUUID *) callUUID muted:(BOOL) muted;
+```
+
 #### Return Value
 
 A new action for the specified call UUID and whether the call is muted.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object of the action.
+- `callUUID`: The unique identifier for the associated [`CXCall`](../cxcall.md) object of the action.
 - `muted`: Whether the call is muted.
 
 ## See Also
 
-- [init?(coder: NSCoder)](cxsetmutedcallaction/init(coder:).md)
+### Creating New Actions
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new action for a call with data in an unarchiver.
 
 

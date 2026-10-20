@@ -1,7 +1,8 @@
 # kATSFontNameTableBytes
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kATSFontNameTableBytes: String { get }
+```
+
+```c
+#define kATSFontNameTableBytes
 ```
 
 

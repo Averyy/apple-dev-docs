@@ -1,7 +1,8 @@
 # event(withIdentifier:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Locates the first occurrence of an event with a given identifier.
 
@@ -19,9 +20,13 @@ Locates the first occurrence of an event with a given identifier.
 func event(withIdentifier identifier: String) -> EKEvent?
 ```
 
+```objc
+- (EKEvent *) eventWithIdentifier:(NSString *) identifier;
+```
+
 ## Mentions
 
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
 #### Return Value
 
@@ -33,21 +38,22 @@ The event that corresponds with `identifier`, or `nil` if no event is found.
 
 ## See Also
 
-- [func calendarItem(withIdentifier: String) -> EKCalendarItem?](ekeventstore/calendaritem(withidentifier:).md)
+### Accessing calendar events
+- [func calendarItem(withIdentifier: String) -> EKCalendarItem?](./calendaritem%28withidentifier%29.md)
   Locates a reminder or the first occurrence of an event with the specified identifier.
-- [func calendarItems(withExternalIdentifier: String) -> [EKCalendarItem]](ekeventstore/calendaritems(withexternalidentifier:).md)
+- [func calendarItems(withExternalIdentifier: String) -> [EKCalendarItem]](./calendaritems%28withexternalidentifier%29.md)
   Locates all reminders or the first occurrences of all events with the specified external identifier.
-- [func remove(EKEvent, span: EKSpan) throws](ekeventstore/remove(_:span:).md)
+- [func remove(EKEvent, span: EKSpan) throws](./remove%28_,span%29.md)
   Removes an event from the event store.
-- [func remove(EKEvent, span: EKSpan, commit: Bool) throws](ekeventstore/remove(_:span:commit:).md)
+- [func remove(EKEvent, span: EKSpan, commit: Bool) throws](./remove%28_,span,commit%29.md)
   Removes an event or recurring events from the event store by either committing or batching the changes.
-- [func remove(EKReminder, commit: Bool) throws](ekeventstore/remove(_:commit:).md)
+- [func remove(EKReminder, commit: Bool) throws](./remove%28_,commit%29.md)
   Removes a reminder from the event store by either committing or batching the changes.
-- [func save(EKEvent, span: EKSpan) throws](ekeventstore/save(_:span:).md)
+- [func save(EKEvent, span: EKSpan) throws](./save%28_,span%29.md)
   Saves changes to an event permanently.
-- [func save(EKEvent, span: EKSpan, commit: Bool) throws](ekeventstore/save(_:span:commit:).md)
+- [func save(EKEvent, span: EKSpan, commit: Bool) throws](./save%28_,span,commit%29.md)
   Saves an event or recurring events to the event store by either committing or batching the changes.
-- [func save(EKReminder, commit: Bool) throws](ekeventstore/save(_:commit:).md)
+- [func save(EKReminder, commit: Bool) throws](./save%28_,commit%29.md)
   Saves changes to a reminder by either committing or batching the changes.
 
 

@@ -1,16 +1,17 @@
 # LtagStringRange
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,27 +19,32 @@
 struct LtagStringRange
 ```
 
+```c
+struct LtagStringRange;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](ltagstringrange/init.md)
-- [init(offset: UInt16, length: UInt16)](ltagstringrange/init(offset:length:).md)
+- [init()](./ltagstringrange/init%28%29.md)
+- [init(offset: UInt16, length: UInt16)](./ltagstringrange/init%28offset,length%29.md)
 ### Instance Properties
-- [var length: UInt16](ltagstringrange/length.md)
-- [var offset: UInt16](ltagstringrange/offset.md)
+- [var length: UInt16](./ltagstringrange/length.md)
+- [var offset: UInt16](./ltagstringrange/offset.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct CTLineBoundsOptions](ctlineboundsoptions.md)
+### Structures
+- [struct CTLineBoundsOptions](./ctlineboundsoptions.md)
   Options for getting the bounds of a line of text.
-- [struct LtagTable](ltagtable.md)
-- [struct SFNTLookupVectorHeader](sfntlookupvectorheader.md)
+- [struct LtagTable](./ltagtable.md)
+- [struct SFNTLookupVectorHeader](./sfntlookupvectorheader.md)
 
 
 ---

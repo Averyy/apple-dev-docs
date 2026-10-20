@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_ptr_32_firmware_rebase {
     ...
 };
@@ -17,8 +17,8 @@ struct dyld_chained_ptr_32_firmware_rebase {
 ## Topics
 
 ### Instance Properties
-- [next](dyld_chained_ptr_32_firmware_rebase/3553612-next.md)
-- [target](dyld_chained_ptr_32_firmware_rebase/3553613-target.md)
+- [next](./dyld_chained_ptr_32_firmware_rebase/api-3553612-next.md)
+- [target](./dyld_chained_ptr_32_firmware_rebase/api-3553613-target.md)
 
 
 ---

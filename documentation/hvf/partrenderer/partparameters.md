@@ -1,7 +1,8 @@
 # PartRenderer.PartParameters
 
 **Framework**: hvf  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 All the parameters applied to a part, including nested subparts
 
@@ -23,19 +24,19 @@ class PartParameters
 ## Topics
 
 ### Instance Properties
-- [var axisValues: PartRenderer.AxisValues](partrenderer/partparameters/axisvalues.md)
+- [var axisValues: PartRenderer.AxisValues](./partparameters/axisvalues.md)
   The axis values applied to the part
-- [var blendedRotation: Double](partrenderer/partparameters/blendedrotation.md)
+- [var blendedRotation: Double](./partparameters/blendedrotation.md)
   After rendering, the blended rotation applied to the part
-- [var blendedTranslation: PartRenderer.Translation](partrenderer/partparameters/blendedtranslation.md)
+- [var blendedTranslation: PartRenderer.Translation](./partparameters/blendedtranslation.md)
   After rendering, the blended translation applied to the part
-- [let partIndex: Int](partrenderer/partparameters/partindex.md)
+- [let partIndex: Int](./partparameters/partindex.md)
   The part index of the part these parameters refer to
-- [var rotation: Double](partrenderer/partparameters/rotation.md)
+- [var rotation: Double](./partparameters/rotation.md)
   The rotation applied to the part, counterclockwise, in radians
-- [var subparts: PartRenderer.Subparts](partrenderer/partparameters/subparts.md)
+- [var subparts: PartRenderer.Subparts](./partparameters/subparts.md)
   Collection of PartParameters applied to subparts of the part (if any)
-- [var translation: PartRenderer.Translation](partrenderer/partparameters/translation.md)
+- [var translation: PartRenderer.Translation](./partparameters/translation.md)
   The translation applied to the part
 
 

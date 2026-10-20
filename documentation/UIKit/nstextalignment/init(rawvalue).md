@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 6.0+
@@ -19,7 +20,8 @@ init?(rawValue: Int)
 
 ## See Also
 
-- [init(CTTextAlignment)](nstextalignment/init(_:).md)
+### Initializers
+- [init(CTTextAlignment)](./init%28_%29.md)
   Converts a Core Text alignment constant value to the matching constant value in UIKit.
 
 

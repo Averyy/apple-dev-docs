@@ -1,6 +1,7 @@
 # border-radius
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Changes the shape of an element’s corner.
 
@@ -15,7 +16,7 @@ Use the `border-radius` style to apply rounded corners to elements. Here’s an 
 </lockup>
 ```
 
-##### Values for Border Radius
+##### Values for border-radius
 
 - **4-tuple**: An image whose corners are cropped to the specified radius.
 - **`circle`**: An image that is cropped to fit inside of a circle.
@@ -30,15 +31,15 @@ There are four ways to designate the border-radius style as a 4-tuple:
 - `border-radius: X1 X2`—Where X1 is applied to the top-left and bottom-right corners, and X2 is applied to the top-right and bottom-left corners.
 - `border-radius: X1`—Where X1 is applied to each corner.
 
-##### Elements That Use Border Radius
+##### Elements that Use border-radius
 
-- [`card`](card.md)
-- [`heroImg`](heroimg.md)
-- [`img`](img.md)
-- [`monogram`](monogram.md)
-- [`ratingCard`](ratingcard.md)
-- [`reviewCard`](reviewcard.md)
-- [`textBadge`](textbadge.md)
+- [card](./card.md)
+- [heroImg](./heroimg.md)
+- [img](./img.md)
+- [monogram](./monogram.md)
+- [ratingCard](./ratingcard.md)
+- [reviewCard](./reviewcard.md)
+- [textBadge](./textbadge.md)
 
 
 ---

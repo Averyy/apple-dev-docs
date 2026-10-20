@@ -1,7 +1,8 @@
 # firmwareVersion
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var firmwareVersion: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * firmwareVersion;
 ```
 
 #### Discussion

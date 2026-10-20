@@ -1,7 +1,8 @@
 # documentElements
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document elements from a successful mobile national ID card data request.
 

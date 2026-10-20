@@ -1,23 +1,26 @@
 # AppScreenshotUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an App Screenshot.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryImageUpdateRequest`](./appassetlibraryimageupdaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshotUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppScreenshotUpdateRequest.Data](appscreenshotupdaterequest/data-data.dictionary.md)
+- [object AppScreenshotUpdateRequest.Data](./appscreenshotupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,15 +29,16 @@ object AppScreenshotUpdateRequest
 
 ## See Also
 
-- [object AppScreenshot](appscreenshot.md)
+### Objects
+- [object AppScreenshot](./appscreenshot.md)
   The data structure that represent an App Screenshots resource.
-- [object AppScreenshotCreateRequest](appscreenshotcreaterequest.md)
+- [object AppScreenshotCreateRequest](./appscreenshotcreaterequest.md)
   The request body you use to create an App Screenshot.
-- [object AppScreenshotResponse](appscreenshotresponse.md)
+- [object AppScreenshotResponse](./appscreenshotresponse.md)
   The response body for endpoints that create, read, or modify an app screenshot.
-- [object AppScreenshotsResponse](appscreenshotsresponse.md)
+- [object AppScreenshotsResponse](./appscreenshotsresponse.md)
   The response body for endpoints that list screenshots in an app screenshot set.
-- [object UploadOperation](uploadoperation.md)
+- [object UploadOperation](./uploadoperation.md)
   Upload instructions for assets such as app previews and app screenshots.
 
 

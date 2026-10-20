@@ -1,7 +1,8 @@
 # oneTimeCode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a one-time code.
 
@@ -12,6 +13,10 @@ A property that defines the content in a text input area as a one-time code.
 
 ```swift
 static let oneTimeCode: NSTextContentType
+```
+
+```c
+extern NSTextContentType const NSTextContentTypeOneTimeCode;
 ```
 
 

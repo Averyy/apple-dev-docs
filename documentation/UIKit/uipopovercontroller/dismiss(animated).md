@@ -1,20 +1,27 @@
 # dismiss(animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the popover programmatically.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: For more information, see [`UIPopoverController`](../uipopovercontroller.md).
 
 ## Declaration
 
 ```swift
 func dismiss(animated: Bool)
+```
+
+```objc
+- (void) dismissPopoverAnimated:(BOOL) animated;
 ```
 
 #### Discussion
@@ -23,13 +30,14 @@ You can use this method to dismiss the popover programmatically in response to t
 
 ## Parameters
 
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal of the popover or [`false`](https://developer.apple.com/documentation/swift/false) to dismiss it immediately.
+- `animated`: Specify [`true`](../../Swift/true.md) to animate the dismissal of the popover or [`false`](../../Swift/false.md) to dismiss it immediately.
 
 ## See Also
 
-- [func present(from: CGRect, in: UIView, permittedArrowDirections: UIPopoverArrowDirection, animated: Bool)](uipopovercontroller/present(from:in:permittedarrowdirections:animated:).md)
+### Presenting and dismissing the popover
+- [func present(from: CGRect, in: UIView, permittedArrowDirections: UIPopoverArrowDirection, animated: Bool)](./present%28from,in,permittedarrowdirections,animated%29.md)
   Displays the popover and anchors it to the specified location in the view.
-- [func present(from: UIBarButtonItem, permittedArrowDirections: UIPopoverArrowDirection, animated: Bool)](uipopovercontroller/present(from:permittedarrowdirections:animated:).md)
+- [func present(from: UIBarButtonItem, permittedArrowDirections: UIPopoverArrowDirection, animated: Bool)](./present%28from,permittedarrowdirections,animated%29.md)
   Displays the popover and anchors it to the specified bar button item.
 
 

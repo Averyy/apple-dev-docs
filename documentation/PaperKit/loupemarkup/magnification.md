@@ -1,7 +1,8 @@
 # magnification
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The magnification level applied to the content displayed within the loupe.
 
@@ -20,9 +21,10 @@ var magnification: CGFloat { get set }
 
 ## See Also
 
-- [var strokeColor: CGColor?](loupemarkup/strokecolor.md)
+### Configuring appearance
+- [var strokeColor: CGColor?](./strokecolor.md)
   The color of the loupe’s border.
-- [var lineWidth: CGFloat](loupemarkup/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The width of the loupe’s border in points.
 
 

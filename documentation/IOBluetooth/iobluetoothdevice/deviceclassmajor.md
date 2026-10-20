@@ -1,17 +1,22 @@
 # deviceClassMajor
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the major device class of the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var deviceClassMajor: BluetoothDeviceClassMajor { get }
+```
+
+```objc
+@property (readonly) BluetoothDeviceClassMajor deviceClassMajor;
 ```
 
 #### Discussion

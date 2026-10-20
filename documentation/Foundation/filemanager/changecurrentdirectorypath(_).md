@@ -1,7 +1,8 @@
 # changeCurrentDirectoryPath(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the path of the current working directory to the specified path.
 
@@ -20,9 +21,13 @@ Changes the path of the current working directory to the specified path.
 func changeCurrentDirectoryPath(_ path: String) -> Bool
 ```
 
+```objc
+- (BOOL) changeCurrentDirectoryPath:(NSString *) path;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -36,11 +41,13 @@ All relative pathnames refer implicitly to the current working directory.
 
 ## See Also
 
-- [func fileExists(atPath: String, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool](filemanager/fileexists(atpath:isdirectory:).md)
+### Related Documentation
+- [func fileExists(atPath: String, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool](./fileexists%28atpath,isdirectory%29.md)
   Returns a Boolean value that indicates whether a file or directory exists at a specified path.
-- [func contentsOfDirectory(atPath: String) throws -> [String]](filemanager/contentsofdirectory(atpath:).md)
+- [func contentsOfDirectory(atPath: String) throws -> [String]](./contentsofdirectory%28atpath%29.md)
   Performs a shallow search of the specified directory and returns the paths of any contained items.
-- [var currentDirectoryPath: String](filemanager/currentdirectorypath.md)
+### Managing the current directory
+- [var currentDirectoryPath: String](./currentdirectorypath.md)
   The path to the program’s current directory.
 
 

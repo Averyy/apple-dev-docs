@@ -1,7 +1,8 @@
 # draw(from:to:options:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a linear gradient between the specified start and end points.
 
@@ -12,6 +13,10 @@ Draws a linear gradient between the specified start and end points.
 
 ```swift
 func draw(from startingPoint: NSPoint, to endingPoint: NSPoint, options: NSGradient.DrawingOptions = [])
+```
+
+```objc
+- (void) drawFromPoint:(NSPoint) startingPoint toPoint:(NSPoint) endingPoint options:(NSGradientDrawingOptions) options;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ This is a primitive method used by the `NSGradient` class to draw linear gradien
 
 ## See Also
 
-- [func draw(in: NSRect, angle: CGFloat)](nsgradient/draw(in:angle:)-7sdyh.md)
+### Drawing a Linear Gradient
+- [func draw(in: NSRect, angle: CGFloat)](./draw%28in,angle%29-7sdyh.md)
   Fills the specified rectangle with a linear gradient.
-- [func draw(in: NSBezierPath, angle: CGFloat)](nsgradient/draw(in:angle:)-68adz.md)
+- [func draw(in: NSBezierPath, angle: CGFloat)](./draw%28in,angle%29-68adz.md)
   Fills the specified path with a linear gradient.
 
 

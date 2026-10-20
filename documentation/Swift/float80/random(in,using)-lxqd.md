@@ -1,7 +1,8 @@
 # random(in:using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a random value within the specified range, using the given generator as a source for randomness.
 
@@ -13,6 +14,8 @@ Returns a random value within the specified range, using the given generator as 
 ```swift
 static func random<T>(in range: Range<Self>, using generator: inout T) -> Self where T : RandomNumberGenerator
 ```
+
+Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
 #### Return Value
 

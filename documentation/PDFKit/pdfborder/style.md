@@ -1,7 +1,8 @@
 # style
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the border style.
 
@@ -19,21 +20,26 @@ Sets the border style.
 var style: PDFBorderStyle { get set }
 ```
 
+```objc
+@property (nonatomic) PDFBorderStyle style;
+```
+
 #### Discussion
 
 Refer to `Constants` for the available border styles.
 
 ## See Also
 
-- [enum PDFBorderStyle](pdfborderstyle.md)
+### Working with Border Styles and Characteristics
+- [enum PDFBorderStyle](../pdfborderstyle.md)
   PDF Kit annotation borders may have the following styles.
-- [var lineWidth: CGFloat](pdfborder/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   Sets the line width (in points) for the border.
-- [var dashPattern: [Any]?](pdfborder/dashpattern.md)
+- [var dashPattern: [Any]?](./dashpattern.md)
   Gets the dash pattern for the border as an array of NSNumber objects.
-- [var borderKeyValues: [AnyHashable : Any]](pdfborder/borderkeyvalues.md)
+- [var borderKeyValues: [AnyHashable : Any]](./borderkeyvalues.md)
   A dictionary that contains a deep copy of all border properties.
-- [struct PDFBorderKey](pdfborderkey.md)
+- [struct PDFBorderKey](../pdfborderkey.md)
 
 
 ---

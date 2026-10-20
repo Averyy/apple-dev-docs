@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func controller(_ controller: MTRDeviceController, storeValue value: any NSSecureCoding, forKey key: String, securityLevel: MTRStorageSecurityLevel, sharingType: MTRStorageSharingType) -> Bool
+```
+
+```objc
+- (BOOL) controller:(MTRDeviceController *) controller storeValue:(id<NSSecureCoding>) value forKey:(NSString *) key securityLevel:(MTRStorageSecurityLevel) securityLevel sharingType:(MTRStorageSharingType) sharingType;
 ```
 
 

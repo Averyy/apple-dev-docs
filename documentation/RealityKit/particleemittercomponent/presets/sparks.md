@@ -1,7 +1,8 @@
 # sparks
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Quick and short lived particles that accumulate color to simulate welding sparks
 

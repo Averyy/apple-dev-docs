@@ -1,7 +1,8 @@
 # TranslationSession.Response
 
 **Framework**: Translation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The response to a translation request.
 
@@ -24,46 +25,47 @@ You get a single response structure after you translate a string, or when you ca
 ## Topics
 
 ### Initializing a response
-- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourcetext:targettext:clientidentifier:).md)
+- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](./response/init%28sourcelanguage,targetlanguage,sourcetext,targettext,clientidentifier%29.md)
   Creates an instance of a translation response.
-- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourceattributedtext:targetattributedtext:clientidentifier:).md)
+- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](./response/init%28sourcelanguage,targetlanguage,sourceattributedtext,targetattributedtext,clientidentifier%29.md)
   Creates an instance of a translation response with formatted text.
 ### Getting translation results
-- [let sourceText: String](translationsession/response/sourcetext.md)
+- [let sourceText: String](./response/sourcetext.md)
   The original text to translate from.
-- [let targetText: String](translationsession/response/targettext.md)
+- [let targetText: String](./response/targettext.md)
   The translated text.
-- [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
+- [let attributedSourceText: AttributedString?](./response/attributedsourcetext.md)
   The original translated text, including style formatting and links.
-- [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
+- [let attributedTargetText: AttributedString?](./response/attributedtargettext.md)
   The translated formatted text.
 ### Getting translation details
-- [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
+- [let sourceLanguage: Locale.Language](./response/sourcelanguage.md)
   The language that the framework translated the text from.
-- [let targetLanguage: Locale.Language](translationsession/response/targetlanguage.md)
+- [let targetLanguage: Locale.Language](./response/targetlanguage.md)
   The language that the framework translated the text into.
-- [let clientIdentifier: String?](translationsession/response/clientidentifier.md)
+- [let clientIdentifier: String?](./response/clientidentifier.md)
   The unique identifier matching the client identifier set in the translation request.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+### Translating the text
+- [func translate(AttributedString) async throws -> TranslationSession.Response](./translate%28_%29-59zi2.md)
   Translates a formatted string of text, preserving formatting in the translation.
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
+- [func translate(String) async throws -> TranslationSession.Response](./translate%28_%29-4m20l.md)
   Translates a single string of text.
-- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
+- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](./translate%28batch%29.md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.
-- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](translationsession/translations(from:).md)
+- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](./translations%28from%29.md)
   Translates multiple strings of text of the same language, returning the results all at once when complete.
-- [TranslationSession.Request](translationsession/request.md)
+- [TranslationSession.Request](./request.md)
   A translation request containing a single item of text to translate.
-- [TranslationSession.BatchResponse](translationsession/batchresponse.md)
+- [TranslationSession.BatchResponse](./batchresponse.md)
   A type that provides asynchronous access to translation responses.
 
 

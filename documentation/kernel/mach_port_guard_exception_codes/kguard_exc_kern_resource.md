@@ -1,14 +1,15 @@
 # kGUARD_EXC_KERN_RESOURCE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_KERN_RESOURCE = 1u << 15
 ```
 

@@ -1,7 +1,8 @@
 # prominentButtonAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for Prominent buttons.
 
@@ -17,6 +18,10 @@ The appearance attributes for Prominent buttons.
 ```swift
 @NSCopying
 var prominentButtonAppearance: UIBarButtonItemAppearance { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * prominentButtonAppearance;
 ```
 
 #### Discussion

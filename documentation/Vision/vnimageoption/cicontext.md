@@ -1,7 +1,8 @@
 # ciContext
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option key to specify the context to use in the handler’s Core Image operations.
 
@@ -19,17 +20,22 @@ An option key to specify the context to use in the handler’s Core Image operat
 static let ciContext: VNImageOption
 ```
 
+```c
+extern VNImageOption const VNImageOptionCIContext;
+```
+
 #### Discussion
 
-If this key isn’t specified, Vision will create its own [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext).
+If this key isn’t specified, Vision will create its own [`CIContext`](../../CoreImage/cicontext.md).
 
-Specify a [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) when you’ve used one in processing an input [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) or executing a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) chain, so you can save the cost of creating a new context.
+Specify a [`CIContext`](../../CoreImage/cicontext.md) when you’ve used one in processing an input [`CIImage`](../../CoreImage/ciimage.md) or executing a [`CIFilter`](../../CoreImage/cifilter-swift.class.md) chain, so you can save the cost of creating a new context.
 
 ## See Also
 
-- [static let properties: VNImageOption](vnimageoption/properties.md)
+### Options Dictionary Keys
+- [static let properties: VNImageOption](./properties.md)
   The dictionary from the image source that contains the metadata for algorithms like horizon detection.
-- [static let cameraIntrinsics: VNImageOption](vnimageoption/cameraintrinsics.md)
+- [static let cameraIntrinsics: VNImageOption](./cameraintrinsics.md)
   An option to specify the camera intrinstics.
 
 

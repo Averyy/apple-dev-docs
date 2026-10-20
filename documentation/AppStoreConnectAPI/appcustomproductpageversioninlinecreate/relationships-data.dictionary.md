@@ -1,7 +1,8 @@
 # AppCustomProductPageVersionInlineCreate.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageVersionInlineCreate.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppCustomProductPageVersionInlineCreate.Relationships.AppCustomProductPage](appcustomproductpageversioninlinecreate/relationships-data.dictionary/appcustomproductpage-data.dictionary.md)
-- [object AppCustomProductPageVersionInlineCreate.Relationships.AppCustomProductPageLocalizations](appcustomproductpageversioninlinecreate/relationships-data.dictionary/appcustomproductpagelocalizations-data.dictionary.md)
+- [object AppCustomProductPageVersionInlineCreate.Relationships.AppCustomProductPage](./relationships-data.dictionary/appcustomproductpage-data.dictionary.md)
+- [object AppCustomProductPageVersionInlineCreate.Relationships.AppCustomProductPageLocalizations](./relationships-data.dictionary/appcustomproductpagelocalizations-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object AppCustomProductPageVersionInlineCreate.Relationships
 
 ## See Also
 
-- [object AppCustomProductPageVersionInlineCreate.Attributes](appcustomproductpageversioninlinecreate/attributes-data.dictionary.md)
+### Objects
+- [object AppCustomProductPageVersionInlineCreate.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app custom product page version inline create resource.
 
 

@@ -1,7 +1,8 @@
 # videoOrientation
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 static let videoOrientation: SCStreamFrameInfo
+```
+
+```c
+extern SCStreamFrameInfo const SCStreamFrameInfoVideoOrientation;
 ```
 
 #### Discussion

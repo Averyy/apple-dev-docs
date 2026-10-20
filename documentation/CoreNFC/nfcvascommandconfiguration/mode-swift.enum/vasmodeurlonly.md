@@ -1,17 +1,22 @@
 # VASModeURLOnly
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASCommandConfiguration.Mode.urlOnly)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASCommandConfiguration.Mode.urlOnly)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCVASCommandConfiguration.Mode.urlOnly)
 
 ## Declaration
 
 ```swift
 static var VASModeURLOnly: NFCVASCommandConfiguration.Mode { get }
+```
+
+```c
+VASModeURLOnly
 ```
 
 

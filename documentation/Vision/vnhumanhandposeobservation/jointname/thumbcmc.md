@@ -1,7 +1,8 @@
 # thumbCMC
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The thumb’s carpometacarpal (CMC) joint.
 
@@ -19,13 +20,18 @@ The thumb’s carpometacarpal (CMC) joint.
 static let thumbCMC: VNHumanHandPoseObservation.JointName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameThumbCMC;
+```
+
 ## See Also
 
-- [static let thumbTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbtip.md)
+### Thumb
+- [static let thumbTip: VNHumanHandPoseObservation.JointName](./thumbtip.md)
   The tip of the thumb.
-- [static let thumbIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbip.md)
+- [static let thumbIP: VNHumanHandPoseObservation.JointName](./thumbip.md)
   The thumb’s interphalangeal (IP) joint.
-- [static let thumbMP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbmp.md)
+- [static let thumbMP: VNHumanHandPoseObservation.JointName](./thumbmp.md)
   The thumb’s metacarpophalangeal (MP) joint.
 
 

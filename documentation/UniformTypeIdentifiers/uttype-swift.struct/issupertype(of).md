@@ -1,7 +1,8 @@
 # isSupertype(of:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a type is lower in a hierarchy than the type.
 
@@ -22,21 +23,22 @@ func isSupertype(of type: UTType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `type` directly or indirectly conforms to the type, but returns [`false`](https://developer.apple.com/documentation/swift/false) if it’s equal to the type.
+[`true`](../../Swift/true.md) if `type` directly or indirectly conforms to the type, but returns [`false`](../../Swift/false.md) if it’s equal to the type.
 
 ## Parameters
 
-- `type`: A [`UTType`](uttype-swift.struct.md) instance.
+- `type`: A [`UTType`](../uttype-swift.struct.md) instance.
 
 ## See Also
 
-- [var supertypes: Set<UTType>](uttype-swift.struct/supertypes.md)
+### Checking a type’s relationship to another type
+- [var supertypes: Set<UTType>](./supertypes.md)
   The set of types the type directly or indirectly conforms to.
-- [func conforms(to: UTType) -> Bool](uttype-swift.struct/conforms(to:).md)
+- [func conforms(to: UTType) -> Bool](./conforms%28to%29.md)
   Returns a Boolean value that indicates whether a type conforms to the type.
-- [func isSubtype(of: UTType) -> Bool](uttype-swift.struct/issubtype(of:).md)
+- [func isSubtype(of: UTType) -> Bool](./issubtype%28of%29.md)
   Returns a Boolean value that indicates whether a type is higher in a hierarchy than the type.
-- [Navigating Hierarchical Data Using Outline and Split Views](../appkit/navigating-hierarchical-data-using-outline-and-split-views.md)
+- [Navigating Hierarchical Data Using Outline and Split Views](../../AppKit/navigating-hierarchical-data-using-outline-and-split-views.md)
   Build a structured user interface that simplifies navigation in your app.
 
 

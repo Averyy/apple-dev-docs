@@ -1,7 +1,8 @@
 # VPN.AlwaysOn.TunnelConfigurationElement
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary used to configure VPN tunnels.
 
@@ -13,22 +14,27 @@ The dictionary used to configure VPN tunnels.
 
 ## Declaration
 
-```swift
+```
 object VPN.AlwaysOn.TunnelConfigurationElement
 ```
 
 ## Properties
 
 - `Interfaces` ([string]): The interfaces to apply this configuration to.
+
+  **Allowed Values**: `Cellular`, `WiFi`
 - `ProtocolType` (string) *(required)*: The type of connection, which needs to be `IKEv2`.
+
+  **Allowed Values**: `IKEv2`
 
 ## See Also
 
-- [object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement](vpn/alwayson-data.dictionary/allowedcaptivenetworkpluginelement.md)
+### Objects
+- [object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement](./allowedcaptivenetworkpluginelement.md)
   The dictionary for captive network configurations.
-- [object VPN.AlwaysOn.ApplicationExceptionElement](vpn/alwayson-data.dictionary/applicationexceptionelement.md)
+- [object VPN.AlwaysOn.ApplicationExceptionElement](./applicationexceptionelement.md)
   The dictionary that defines which applications can have traffic outside the VPN tunnel.
-- [object VPN.AlwaysOn.ServiceExceptionElement](vpn/alwayson-data.dictionary/serviceexceptionelement.md)
+- [object VPN.AlwaysOn.ServiceExceptionElement](./serviceexceptionelement.md)
   The dictionary that defines service exceptions.
 
 

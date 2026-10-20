@@ -1,14 +1,15 @@
 # policy_rr_limit_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct policy_rr_limit {
     ...
 } policy_rr_limit_data_t;
@@ -17,7 +18,7 @@ typedef struct policy_rr_limit {
 ## Topics
 
 ### Instance Properties
-- [max_priority](policy_rr_limit_data_t/1396843-max_priority.md)
+- [max_priority](./policy_rr_limit_data_t/api-1396843-max_priority.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # earlierDisplayTimesAllowed
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether later samples may have earlier display times.
 

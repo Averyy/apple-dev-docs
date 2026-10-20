@@ -1,7 +1,8 @@
 # SpeechModels
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Namespace for methods related to model management.
 
@@ -22,12 +23,13 @@ enum SpeechModels
 ## Topics
 
 ### Releasing cached models
-- [static func endRetention() async](speechmodels/endretention.md)
+- [static func endRetention() async](./speechmodels/endretention%28%29.md)
   Releases all models held by cached recognizer instances. The method does not return until all models are released.
 
 ## See Also
 
-- [class AssetInstallationRequest](assetinstallationrequest.md)
+### Asset and resource management
+- [class AssetInstallationRequest](./assetinstallationrequest.md)
   An object that describes, downloads, and installs a selection of assets.
 
 

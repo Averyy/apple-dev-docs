@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.ShaderGraphOutput.Blending.opaque
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An opaque surface that requires no alpha blending.
 
@@ -19,7 +20,8 @@ case opaque
 
 ## See Also
 
-- [LowLevelMaterialResource.ShaderGraphOutput.Blending.transparent](lowlevelmaterialresource/shadergraphoutput/blending-swift.enum/transparent.md)
+### Specifying the blend mode
+- [LowLevelMaterialResource.ShaderGraphOutput.Blending.transparent](./transparent.md)
   A surface that requires alpha blending.
 
 

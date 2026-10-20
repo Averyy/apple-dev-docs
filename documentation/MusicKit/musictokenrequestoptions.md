@@ -1,7 +1,8 @@
 # MusicTokenRequestOptions
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that music requests pass into token provider methods to fetch a required token for accessing Apple Music API.
 
@@ -23,31 +24,32 @@ struct MusicTokenRequestOptions
 ## Topics
 
 ### Type Properties
-- [static let ignoreCache: MusicTokenRequestOptions](musictokenrequestoptions/ignorecache.md)
+- [static let ignoreCache: MusicTokenRequestOptions](./musictokenrequestoptions/ignorecache.md)
   An option that indicates the token provider needs to discard any cached token and generate a new token.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias MusicTokenProvider](musictokenprovider.md)
+### Token management
+- [typealias MusicTokenProvider](./musictokenprovider.md)
   An object that music requests use to access Apple Music API.
-- [protocol MusicDeveloperTokenProvider](musicdevelopertokenprovider.md)
+- [protocol MusicDeveloperTokenProvider](./musicdevelopertokenprovider.md)
   A set of methods that music requests use to access Apple Music API.
-- [class MusicUserTokenProvider](musicusertokenprovider.md)
+- [class MusicUserTokenProvider](./musicusertokenprovider.md)
   A class that music requests use to fetch user tokens your app requires to access Apple Music API.
-- [enum MusicTokenRequestError](musictokenrequesterror.md)
+- [enum MusicTokenRequestError](./musictokenrequesterror.md)
   An error that the token provider or music requests can throw upon requesting any token necessary for accessing Apple Music API.
-- [class DefaultMusicTokenProvider](defaultmusictokenprovider.md)
+- [class DefaultMusicTokenProvider](./defaultmusictokenprovider.md)
   The default token provider that music requests use to access Apple Music API.
 
 

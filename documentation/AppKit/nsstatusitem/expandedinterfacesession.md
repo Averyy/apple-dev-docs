@@ -1,7 +1,8 @@
 # expandedInterfaceSession
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A session object that tracks the lifecycle of the status item’s active expanded interface.
 
@@ -14,13 +15,18 @@ A session object that tracks the lifecycle of the status item’s active expande
 var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSStatusItemExpandedInterfaceSession * expandedInterfaceSession;
+```
+
 #### Discussion
 
-The status item sets this property to a valid session object before calling [`statusItem(_:didBegin:)`](nsstatusitemexpandedinterfacedelegate/statusitem(_:didbegin:).md) on the [`expandedInterfaceDelegate`](nsstatusitem/expandedinterfacedelegate.md), and sets the property to `nil` before calling [`statusItemDidEndExpandedInterfaceSession(_:animated:)`](nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession(_:animated:).md).
+The status item sets this property to a valid session object before calling [`statusItem(_:didBegin:)`](../nsstatusitemexpandedinterfacedelegate/statusitem%28_,didbegin%29.md) on the [`expandedInterfaceDelegate`](./expandedinterfacedelegate.md), and sets the property to `nil` before calling [`statusItemDidEndExpandedInterfaceSession(_:animated:)`](../nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession%28_,animated%29.md).
 
 ## See Also
 
-- [var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)?](nsstatusitem/expandedinterfacedelegate.md)
+### Managing the expanded interface
+- [var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)?](./expandedinterfacedelegate.md)
   The delegate that manages the lifecycle of the status item’s expanded interface.
 
 

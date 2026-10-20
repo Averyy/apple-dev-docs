@@ -1,7 +1,8 @@
 # PermissionFlow.acknowledgmentAlert
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Presents the “Ask to Approve / Approve in Person / Cancel” acknowledgment alert first, then routes the user into the chosen path.
 

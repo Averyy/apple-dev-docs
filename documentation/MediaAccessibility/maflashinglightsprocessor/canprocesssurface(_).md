@@ -1,7 +1,8 @@
 # canProcessSurface(_:)
 
 **Framework**: Media Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the flashing lights processor can process the content in the surface for sequences of flashing lights.
 
@@ -19,13 +20,17 @@ Returns a Boolean value that indicates whether the flashing lights processor can
 func canProcessSurface(_ surface: IOSurfaceRef) -> Bool
 ```
 
+```objc
+- (BOOL) canProcessSurface:(IOSurfaceRef) surface;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the processor can process the content in the surface for flashing lights. [`false`](https://developer.apple.com/documentation/swift/false) if the processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
+[`true`](../../Swift/true.md) if the processor can process the content in the surface for flashing lights. [`false`](../../Swift/false.md) if the processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
 
 ## Parameters
 
-- `surface`: The [`IOSurfaceRef`](https://developer.apple.com/documentation/iosurface/iosurfaceref) to process for flashing lights.
+- `surface`: The [`IOSurfaceRef`](../../IOSurface/iosurfaceref.md) to process for flashing lights.
 
 
 ---

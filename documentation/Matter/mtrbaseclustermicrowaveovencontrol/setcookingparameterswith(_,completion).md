@@ -1,7 +1,8 @@
 # setCookingParametersWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetCookingParameters
 
@@ -17,7 +18,15 @@ Command SetCookingParameters
 ## Declaration
 
 ```swift
+func setCookingParametersWith(_ params: MTRMicrowaveOvenControlClusterSetCookingParametersParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setCookingParametersWith(_ params: MTRMicrowaveOvenControlClusterSetCookingParametersParams?) async throws
+```
+
+```objc
+- (void) setCookingParametersWithParams:(MTRMicrowaveOvenControlClusterSetCookingParametersParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

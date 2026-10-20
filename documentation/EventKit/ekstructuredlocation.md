@@ -1,7 +1,8 @@
 # EKStructuredLocation
 
 **Framework**: EventKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 `A` class that specifies a geofence to activate the alarm of a calendar item.
 
@@ -19,43 +20,48 @@
 class EKStructuredLocation
 ```
 
+```objc
+@interface EKStructuredLocation : EKObject
+```
+
 #### Overview
 
-Use [`init(title:)`](ekstructuredlocation/init(title:).md) to create a new structured location, then set it to the [`structuredLocation`](ekalarm/structuredlocation.md) property of an [`EKAlarm`](ekalarm.md) object.
+Use [`init(title:)`](./ekstructuredlocation/init%28title%29.md) to create a new structured location, then set it to the [`structuredLocation`](./ekalarm/structuredlocation.md) property of an [`EKAlarm`](./ekalarm.md) object.
 
 ## Topics
 
 ### Creating Structured Locations
-- [convenience init(title: String)](ekstructuredlocation/init(title:).md)
+- [convenience init(title: String)](./ekstructuredlocation/init%28title%29.md)
   Creates a new structured location with the specified title.
-- [convenience init(mapItem: MKMapItem)](ekstructuredlocation/init(mapitem:).md)
+- [convenience init(mapItem: MKMapItem)](./ekstructuredlocation/init%28mapitem%29.md)
   Creates a new structured location with the specified map item.
 ### Accessing Structured Location Properties
-- [var title: String?](ekstructuredlocation/title.md)
+- [var title: String?](./ekstructuredlocation/title.md)
   The title of the location.
-- [var geoLocation: CLLocation?](ekstructuredlocation/geolocation.md)
+- [var geoLocation: CLLocation?](./ekstructuredlocation/geolocation.md)
   The core location.
-- [var radius: Double](ekstructuredlocation/radius.md)
+- [var radius: Double](./ekstructuredlocation/radius.md)
   A minimum distance from the core location that would trigger the alarm or reminder.
 
 ## Relationships
 
 ### Inherits From
-- [EKObject](ekobject.md)
+- [EKObject](./ekobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting an alarm](setting-an-alarm.md)
+### Alarms
+- [Setting an alarm](./setting-an-alarm.md)
   Alert users of events and reminders with an alarm.
-- [class EKAlarm](ekalarm.md)
+- [class EKAlarm](./ekalarm.md)
   A class that represents an alarm.
 
 

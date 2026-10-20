@@ -1,14 +1,15 @@
 # kBluetoothL2CAPMTUMinimum
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPMTUMinimum = 0x0030
 ```
 

@@ -1,14 +1,15 @@
 # CompleteAsyncDeviceRequest
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void CompleteAsyncDeviceRequest(OSAction *action, IOReturn status, uint32_t bytesTransferred, OSDispatchMethod supermethod);
 ```
 

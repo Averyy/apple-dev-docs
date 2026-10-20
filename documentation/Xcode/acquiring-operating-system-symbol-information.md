@@ -1,6 +1,7 @@
 # Acquiring operating system symbol information
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Download symbols for Apple system frameworks using Xcode or Terminal.
 
@@ -10,7 +11,7 @@ To make symbols from the operating system frameworks identifiable in a crash rep
 
 After you collect the symbols, the system saves them in `~/Library/Developer/Xcode/<iOS|watchOS|tvOS|visionOS> DeviceSupport`.
 
-#### Collect System Framework Symbols From a Device
+#### Collect system framework symbols from a device
 
 For iOS, iPadOS, tvOS, visionOS, and watchOS apps, Xcode automatically copies operating system binaries that contain symbols from each device you connect to your Mac.
 
@@ -18,20 +19,20 @@ For iOS, iPadOS, tvOS, visionOS, and watchOS apps, Xcode automatically copies op
 
 Alternatively, you can acquire operating system symbols from an unlocked and attached device in Terminal with the `xcodebuild -prepareDeviceSupport` command. To fetch the system binaries that contain symbols from a device, add the `-destination` option to the command. The option takes the UDID, identifier, or name of the device as an argument.
 
-```None
+```
 % xcodebuild -prepareDeviceSupport -destination "id=device-UDID" | "id=device-identifier" | "name=device-name"
 
 ```
 
 For example, the following command collects the symbols using the UDID of the device. Enter `devicectl list devices` with the `--columns` option and the UDID in Terminal.
 
-```None
+```
 % devicectl list devices --columns 'UDID'
 ```
 
 The command prints the default data columns and the specified UDID column, as in the following example:
 
-```None
+```
 % devicectl list devices --columns 'UDID'
 Name          Hostname                      Identifier                  State                 UDID 
 ----   ---------------------   ------------------------------------   --------- ... -------------------------
@@ -41,7 +42,7 @@ Work   Work.coredevice.local   09C6E78B-1024-568C-869F-68A0B772907E   available 
 
 Next, run `xcodebuild -prepareDeviceSupport` with the `-destination` option set to the gathered UDID. If the system finds the device with the specified UDID, the command collects the symbols from the device and prints a message.
 
-```None
+```
 % xcodebuild -prepareDeviceSupport -destination "id=00008103-000D585C36D0801E"
 Starting Device Support Preparation
 -----------------------------------
@@ -52,11 +53,11 @@ Located Work 00008103-000D585C36D0801E
 [Work] Finished
 ```
 
-#### Download System Framework Symbols for Watchos in Terminal
+#### Download system framework symbols for watchOS in Terminal
 
 You can download operating system symbols specific to a watchOS release from the command line without pairing an Apple Watch to your Mac. Enter `xcodebuild -prepareDeviceSupport` with the `-platform`, `-osVersion`, and `-buildVersion` in Terminal.
 
-```None
+```
 % xcodebuild -prepareDeviceSupport -platform watchOS -osVersion <version> -buildVersion <version>
 ```
 
@@ -64,7 +65,7 @@ You can download operating system symbols specific to a watchOS release from the
 
 The following command downloads symbols for watchOS 26.3 (23S618):
 
-```None
+```
 % xcodebuild -prepareDeviceSupport -platform watchOS -osVersion 26.3 -buildVersion 23S618
 Starting Device Support Preparation
 -----------------------------------
@@ -80,11 +81,11 @@ Created '/Users/ravipatel/Library/Developer/Xcode/watchOS DeviceSupport/26.3 (23
 
 In watchOS 11 and later, the command downloads universal symbols you can use to symbolicate crash reports from all models of Apple Watch. If you require symbols for an earlier version of watchOS, like watchOS 10.6, specify the model of Apple Watch to download them using the `-modelCode` option.
 
-> **Note**: For information about finding the model code value, see `Hardware Model` in [`Examining the fields in a crash report`](examining-the-fields-in-a-crash-report.md).
+> **Note**: For information about finding the model code value, see `Hardware Model` in [Examining the fields in a crash report](./examining-the-fields-in-a-crash-report.md).
 
 The following command downloads symbols for an Apple Watch Ultra 2 with watchOS 10.6 (21U577):
 
-```None
+```
 % xcodebuild -prepareDeviceSupport -platform watchOS -osVersion 10.6 -buildVersion 21U577 -modelCode "Watch7,5"
 Starting Device Support Preparation
 -----------------------------------
@@ -100,9 +101,10 @@ Created '/Users/ravipatel/Library/Developer/Xcode/watchOS DeviceSupport/10.6 (21
 
 ## See Also
 
-- [Locating a missing debug symbol file](locating-a-missing-debug-symbol-file.md)
+### Debugging
+- [Locating a missing debug symbol file](./locating-a-missing-debug-symbol-file.md)
   Find the debug symbol file (`.dSYM`) required to decode the hexadecimal address from a crash report.
-- [Resetting access to protected resources in macOS](resetting-access-to-protected-resources-in-macos.md)
+- [Resetting access to protected resources in macOS](./resetting-access-to-protected-resources-in-macos.md)
   Use Terminal to remove your app’s authorization access to protected resources during testing.
 
 

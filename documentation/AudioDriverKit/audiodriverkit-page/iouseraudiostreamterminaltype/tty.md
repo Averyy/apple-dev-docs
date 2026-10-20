@@ -1,7 +1,8 @@
 # TTY
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A device that serves as a teletypewriter (TTY) terminal.
 
@@ -10,7 +11,7 @@ A device that serves as a teletypewriter (TTY) terminal.
 
 ## Declaration
 
-```swift
+```c
 TTY
 ```
 

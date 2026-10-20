@@ -1,7 +1,8 @@
 # getData
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the data associated with a particular key.
 
@@ -10,13 +11,13 @@ Returns the data associated with a particular key.
 
 ## Declaration
 
-```swift
+```
 String getData(
     in String key
 );
 ```
 
-#### Return_value
+#### Return Value
 
 The retrieved data.
 
@@ -26,9 +27,10 @@ The retrieved data.
 
 ## See Also
 
-- [removeData](userdefaults/1682085-removedata.md)
+### Modifying User Defaults
+- [removeData](./api-1682085-removedata.md)
   Removes the data associated with a particular key.
-- [setData](userdefaults/1682089-setdata.md)
+- [setData](./api-1682089-setdata.md)
   Stores the data for a given key.
 
 

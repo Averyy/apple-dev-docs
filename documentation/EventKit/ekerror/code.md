@@ -1,17 +1,18 @@
 # EKError.Code
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for EventKit errors.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,103 +20,108 @@ Error codes for EventKit errors.
 enum Code
 ```
 
+```c
+enum EKErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKError.Code.eventNotMutable](ekerror/code/eventnotmutable.md)
+- [EKError.Code.eventNotMutable](./code/eventnotmutable.md)
   The event isn’t mutable and you can’t save or delete it.
-- [EKError.Code.noCalendar](ekerror/code/nocalendar.md)
+- [EKError.Code.noCalendar](./code/nocalendar.md)
   The event isn’t associated with a calendar.
-- [EKError.Code.noStartDate](ekerror/code/nostartdate.md)
+- [EKError.Code.noStartDate](./code/nostartdate.md)
   The event has no start date set.
-- [EKError.Code.noEndDate](ekerror/code/noenddate.md)
+- [EKError.Code.noEndDate](./code/noenddate.md)
   The event has no end date set.
-- [EKError.Code.datesInverted](ekerror/code/datesinverted.md)
+- [EKError.Code.datesInverted](./code/datesinverted.md)
   The event’s end date occurs before its start date.
-- [EKError.Code.internalFailure](ekerror/code/internalfailure.md)
+- [EKError.Code.internalFailure](./code/internalfailure.md)
   An internal error occurred.
-- [EKError.Code.calendarReadOnly](ekerror/code/calendarreadonly.md)
+- [EKError.Code.calendarReadOnly](./code/calendarreadonly.md)
   The calendar is read-only and you can’t add events to it.
-- [EKError.Code.durationGreaterThanRecurrence](ekerror/code/durationgreaterthanrecurrence.md)
+- [EKError.Code.durationGreaterThanRecurrence](./code/durationgreaterthanrecurrence.md)
   The duration of an event is greater than its recurrence interval.
-- [EKError.Code.alarmGreaterThanRecurrence](ekerror/code/alarmgreaterthanrecurrence.md)
+- [EKError.Code.alarmGreaterThanRecurrence](./code/alarmgreaterthanrecurrence.md)
   The alarm interval is greater than the recurrence interval.
-- [EKError.Code.startDateTooFarInFuture](ekerror/code/startdatetoofarinfuture.md)
+- [EKError.Code.startDateTooFarInFuture](./code/startdatetoofarinfuture.md)
   The start date is further into the future than the calendar can display.
-- [EKError.Code.startDateCollidesWithOtherOccurrence](ekerror/code/startdatecollideswithotheroccurrence.md)
+- [EKError.Code.startDateCollidesWithOtherOccurrence](./code/startdatecollideswithotheroccurrence.md)
   The event’s start date collides with another occurrence of the event.
-- [EKError.Code.objectBelongsToDifferentStore](ekerror/code/objectbelongstodifferentstore.md)
+- [EKError.Code.objectBelongsToDifferentStore](./code/objectbelongstodifferentstore.md)
   The object belongs to a different calendar store.
-- [EKError.Code.invitesCannotBeMoved](ekerror/code/invitescannotbemoved.md)
+- [EKError.Code.invitesCannotBeMoved](./code/invitescannotbemoved.md)
   You can’t move the event because it’s an invitation.
-- [EKError.Code.invalidSpan](ekerror/code/invalidspan.md)
+- [EKError.Code.invalidSpan](./code/invalidspan.md)
   The system encountered an invalid span during a save or deletion.
-- [EKError.Code.calendarHasNoSource](ekerror/code/calendarhasnosource.md)
+- [EKError.Code.calendarHasNoSource](./code/calendarhasnosource.md)
   You can’t save the calendar without setting a source first.
-- [EKError.Code.calendarSourceCannotBeModified](ekerror/code/calendarsourcecannotbemodified.md)
+- [EKError.Code.calendarSourceCannotBeModified](./code/calendarsourcecannotbemodified.md)
   You can’t move the calendar to another source.
-- [EKError.Code.calendarIsImmutable](ekerror/code/calendarisimmutable.md)
+- [EKError.Code.calendarIsImmutable](./code/calendarisimmutable.md)
   The calendar is immutable and you can’t modify or delete it.
-- [EKError.Code.sourceDoesNotAllowCalendarAddDelete](ekerror/code/sourcedoesnotallowcalendaradddelete.md)
+- [EKError.Code.sourceDoesNotAllowCalendarAddDelete](./code/sourcedoesnotallowcalendaradddelete.md)
   The source doesn’t allow you to add or delete calendars.
-- [EKError.Code.recurringReminderRequiresDueDate](ekerror/code/recurringreminderrequiresduedate.md)
+- [EKError.Code.recurringReminderRequiresDueDate](./code/recurringreminderrequiresduedate.md)
   The recurring reminder requires a due date.
-- [EKError.Code.structuredLocationsNotSupported](ekerror/code/structuredlocationsnotsupported.md)
+- [EKError.Code.structuredLocationsNotSupported](./code/structuredlocationsnotsupported.md)
   The source to which this calendar belongs doesn’t support structured locations.
-- [EKError.Code.reminderLocationsNotSupported](ekerror/code/reminderlocationsnotsupported.md)
+- [EKError.Code.reminderLocationsNotSupported](./code/reminderlocationsnotsupported.md)
   The source doesn’t support locations on reminders.
-- [EKError.Code.alarmProximityNotSupported](ekerror/code/alarmproximitynotsupported.md)
+- [EKError.Code.alarmProximityNotSupported](./code/alarmproximitynotsupported.md)
   The source doesn’t allow geofences on alarms.
-- [EKError.Code.calendarDoesNotAllowEvents](ekerror/code/calendardoesnotallowevents.md)
+- [EKError.Code.calendarDoesNotAllowEvents](./code/calendardoesnotallowevents.md)
   The calendar doesn’t allow you to add events.
-- [EKError.Code.calendarDoesNotAllowReminders](ekerror/code/calendardoesnotallowreminders.md)
+- [EKError.Code.calendarDoesNotAllowReminders](./code/calendardoesnotallowreminders.md)
   The calendar doesn’t allow you to add reminders.
-- [EKError.Code.sourceDoesNotAllowReminders](ekerror/code/sourcedoesnotallowreminders.md)
+- [EKError.Code.sourceDoesNotAllowReminders](./code/sourcedoesnotallowreminders.md)
   The source doesn’t allow calendars supporting reminder entity types.
-- [EKError.Code.sourceDoesNotAllowEvents](ekerror/code/sourcedoesnotallowevents.md)
+- [EKError.Code.sourceDoesNotAllowEvents](./code/sourcedoesnotallowevents.md)
   The source doesn’t allow calendars supporting event entity types.
-- [EKError.Code.priorityIsInvalid](ekerror/code/priorityisinvalid.md)
+- [EKError.Code.priorityIsInvalid](./code/priorityisinvalid.md)
   The priority number for the reminder is invalid.
-- [EKError.Code.invalidEntityType](ekerror/code/invalidentitytype.md)
+- [EKError.Code.invalidEntityType](./code/invalidentitytype.md)
   The entity type is invalid.
-- [EKError.Code.procedureAlarmsNotMutable](ekerror/code/procedurealarmsnotmutable.md)
+- [EKError.Code.procedureAlarmsNotMutable](./code/procedurealarmsnotmutable.md)
   You can’t create or modify procedure alarms.
-- [EKError.Code.eventStoreNotAuthorized](ekerror/code/eventstorenotauthorized.md)
+- [EKError.Code.eventStoreNotAuthorized](./code/eventstorenotauthorized.md)
   The user hasn’t authorized your app to access events or reminders.
-- [EKError.Code.osNotSupported](ekerror/code/osnotsupported.md)
+- [EKError.Code.osNotSupported](./code/osnotsupported.md)
   The action isn’t supported on the current operating system.
-- [EKError.Code.invalidInviteReplyCalendar](ekerror/code/invalidinvitereplycalendar.md)
+- [EKError.Code.invalidInviteReplyCalendar](./code/invalidinvitereplycalendar.md)
   The calendar is invalid or nil.
-- [EKError.Code.notificationsCollectionFlagNotSet](ekerror/code/notificationscollectionflagnotset.md)
+- [EKError.Code.notificationsCollectionFlagNotSet](./code/notificationscollectionflagnotset.md)
   The notification collection doesn’t have the notifications collection flag.
-- [EKError.Code.sourceMismatch](ekerror/code/sourcemismatch.md)
+- [EKError.Code.sourceMismatch](./code/sourcemismatch.md)
   The object’s source doesn’t match its container’s source.
-- [EKError.Code.notificationCollectionMismatch](ekerror/code/notificationcollectionmismatch.md)
+- [EKError.Code.notificationCollectionMismatch](./code/notificationcollectionmismatch.md)
   The notification collection that contains this notification doesn’t match the collection the system is trying to save.
-- [EKError.Code.notificationSavedWithoutCollection](ekerror/code/notificationsavedwithoutcollection.md)
+- [EKError.Code.notificationSavedWithoutCollection](./code/notificationsavedwithoutcollection.md)
   The notification can’t save because you haven’t added it to a notification collection and saved the collection first.
-- [EKError.Code.last](ekerror/code/last.md)
+- [EKError.Code.last](./code/last.md)
   This error is for internal use.
 ### Enumeration Cases
-- [EKError.Code.reminderAlarmContainsEmailOrUrl](ekerror/code/reminderalarmcontainsemailorurl.md)
+- [EKError.Code.reminderAlarmContainsEmailOrUrl](./code/reminderalarmcontainsemailorurl.md)
 ### Initializers
-- [init?(rawValue: Int)](ekerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EKError](ekerror.md)
+### Errors
+- [struct EKError](../ekerror.md)
   An EventKit error.
-- [let EKErrorDomain: String](ekerrordomain.md)
+- [let EKErrorDomain: String](../ekerrordomain.md)
   A string that identifies the EventKit error domain.
 
 

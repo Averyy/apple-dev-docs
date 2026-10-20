@@ -1,7 +1,8 @@
 # ToolbarVerticalBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A behavior that determines whether the vertical bar is used.
 
@@ -23,26 +24,27 @@ struct ToolbarVerticalBehavior
 ## Topics
 
 ### Getting behavior options
-- [static let automatic: ToolbarVerticalBehavior](toolbarverticalbehavior/automatic.md)
+- [static let automatic: ToolbarVerticalBehavior](./toolbarverticalbehavior/automatic.md)
   The system determines whether the vertical bar is rendered.
-- [static let disabled: ToolbarVerticalBehavior](toolbarverticalbehavior/disabled.md)
+- [static let disabled: ToolbarVerticalBehavior](./toolbarverticalbehavior/disabled.md)
   The vertical bar is disabled.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](view/toolbarverticalbehavior(_:).md)
+### Configuring vertical toolbar behavior
+- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](./view/toolbarverticalbehavior%28_%29.md)
   Sets the behavior for the vertical bar.
-- [func toolbarVerticalCompressionBehavior(ToolbarVerticalCompressionBehavior) -> some View](view/toolbarverticalcompressionbehavior(_:).md)
+- [func toolbarVerticalCompressionBehavior(ToolbarVerticalCompressionBehavior) -> some View](./view/toolbarverticalcompressionbehavior%28_%29.md)
   Sets how bars should compress when different types of toolbars are hosted together and space is constrained.
-- [struct ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior.md)
+- [struct ToolbarVerticalCompressionBehavior](./toolbarverticalcompressionbehavior.md)
   A behavior that determines how bars compress when the system places different types of bars together and space is constrained.
 
 

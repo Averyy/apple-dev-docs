@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document properties object from document data at the URL you specify.
 
@@ -17,9 +18,13 @@ Creates a document properties object from document data at the URL you specify.
 init(url: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
+```
+
 #### Discussion
 
-When you initialize a document properties object with a URL, UIKit automatically finds the corresponding metadata and stores it in the document properties object’s [`metadata`](uidocumentproperties/metadata.md) property.
+When you initialize a document properties object with a URL, UIKit automatically finds the corresponding metadata and stores it in the document properties object’s [`metadata`](./metadata.md) property.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ When you initialize a document properties object with a URL, UIKit automatically
 
 ## See Also
 
-- [init(metadata: LPLinkMetadata)](uidocumentproperties/init(metadata:).md)
+### Creating a document header
+- [init(metadata: LPLinkMetadata)](./init%28metadata%29.md)
   Creates a document properties object from the metadata object you specify.
-- [var metadata: LPLinkMetadata](uidocumentproperties/metadata.md)
+- [var metadata: LPLinkMetadata](./metadata.md)
   The document’s metadata.
 
 

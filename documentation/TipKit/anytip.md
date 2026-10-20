@@ -1,7 +1,8 @@
 # AnyTip
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased tip value.
 
@@ -23,16 +24,17 @@ struct AnyTip
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Tip](tip.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Tip](./tip.md)
 
 ## See Also
 
-- [struct TipKitError](tipkiterror.md)
+### Common types
+- [struct TipKitError](./tipkiterror.md)
   A localized tip kit error.
-- [protocol TipOption](tipoption.md)
+- [protocol TipOption](./tipoption.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
 
 

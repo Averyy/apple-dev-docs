@@ -1,7 +1,8 @@
 # init(_:modifiers:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new keyboard shortcut with the given key equivalent and set of modifier keys.
 
@@ -20,13 +21,14 @@ init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
 
 #### Discussion
 
-The localization configuration defaults to [`automatic`](keyboardshortcut/localization-swift.struct/automatic.md).
+The localization configuration defaults to [`automatic`](./localization-swift.struct/automatic.md).
 
 ## See Also
 
-- [var key: KeyEquivalent](keyboardshortcut/key.md)
+### Creating a shortcut
+- [var key: KeyEquivalent](./key.md)
   The key equivalent that the user presses in conjunction with any specified modifier keys to activate the shortcut.
-- [var modifiers: EventModifiers](keyboardshortcut/modifiers.md)
+- [var modifiers: EventModifiers](./modifiers.md)
   The modifier keys that the user presses in conjunction with a key equivalent to activate the shortcut.
 
 

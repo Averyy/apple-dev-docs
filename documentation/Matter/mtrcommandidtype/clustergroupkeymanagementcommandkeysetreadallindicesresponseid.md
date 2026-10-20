@@ -1,7 +1,8 @@
 # clusterGroupKeyManagementCommandKeySetReadAllIndicesResponseID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterGroupKeyManagementCommandKeySetReadAllIndicesResponseID: MTRCommandIDType { get }
+```
+
+```c
+MTRCommandIDTypeClusterGroupKeyManagementCommandKeySetReadAllIndicesResponseID
 ```
 
 

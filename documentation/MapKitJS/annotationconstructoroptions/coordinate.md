@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Sets the coordinate of the annotation.
 
@@ -10,7 +11,7 @@ Sets the coordinate of the annotation.
 
 ## Declaration
 
-```swift
+```
 coordinate?: CoordinateData;
 ```
 

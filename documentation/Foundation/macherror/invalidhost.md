@@ -1,7 +1,8 @@
 # invalidHost
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Target host isn’t actually a host.
 

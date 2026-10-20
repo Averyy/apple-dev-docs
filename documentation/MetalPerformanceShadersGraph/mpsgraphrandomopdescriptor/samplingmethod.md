@@ -1,7 +1,8 @@
 # samplingMethod
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sampling method of the distribution.
 
@@ -17,6 +18,10 @@ The sampling method of the distribution.
 
 ```swift
 var samplingMethod: MPSGraphRandomNormalSamplingMethod { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphRandomNormalSamplingMethod samplingMethod;
 ```
 
 #### Discussion

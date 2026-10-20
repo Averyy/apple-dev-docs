@@ -1,12 +1,13 @@
 # selectedRowIndexes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indexes of the rule editor’s selected rows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The indexes of the rule editor’s selected rows.
 var selectedRowIndexes: IndexSet { get }
 ```
 
+```objc
+@property (copy, readonly) NSIndexSet * selectedRowIndexes;
+```
+
 ## See Also
 
-- [func selectRowIndexes(IndexSet, byExtendingSelection: Bool)](nsruleeditor/selectrowindexes(_:byextendingselection:).md)
+### Working with the Selection
+- [func selectRowIndexes(IndexSet, byExtendingSelection: Bool)](./selectrowindexes%28_,byextendingselection%29.md)
   Sets in the receiver the indexes of rows that are selected.
 
 

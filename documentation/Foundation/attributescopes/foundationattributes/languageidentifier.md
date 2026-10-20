@@ -1,7 +1,8 @@
 # languageIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a language identifier attribute.
 
@@ -22,7 +23,8 @@ let languageIdentifier: AttributeScopes.FoundationAttributes.LanguageIdentifierA
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.LanguageIdentifierAttribute](attributescopes/foundationattributes/languageidentifierattribute.md)
+### Using language attributes
+- [AttributeScopes.FoundationAttributes.LanguageIdentifierAttribute](./languageidentifierattribute.md)
   A type for using a language identifier as an attribute.
 
 

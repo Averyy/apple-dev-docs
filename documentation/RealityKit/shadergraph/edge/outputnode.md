@@ -1,7 +1,8 @@
 # outputNode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the node providing the output value.
 

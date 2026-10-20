@@ -1,7 +1,8 @@
 # ATSFontNotificationSubscribe(_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontNotificationSubscribe(_ callback: ATSNotificationCallback!, _ options: ATSFontNotifyOption, _ iRefcon: UnsafeMutableRawPointer!, _ oNotificationRef: UnsafeMutablePointer<ATSFontNotificationRef?>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontNotificationSubscribe(ATSNotificationCallback callback, ATSFontNotifyOption options, void *iRefcon, ATSFontNotificationRef *oNotificationRef);
 ```
 
 

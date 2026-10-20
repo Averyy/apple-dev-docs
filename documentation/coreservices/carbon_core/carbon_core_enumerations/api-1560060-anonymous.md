@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var noScrapErr: Int](noscraperr.md)
-- [var noTypeErr: Int](notypeerr.md)
+- [var noScrapErr: Int](../../noscraperr.md)
+- [var noTypeErr: Int](../../notypeerr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # compare(byRank:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -16,9 +17,14 @@
 func compare(byRank other: CSSuggestion) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) compareByRank:(CSSuggestion *) other;
+```
+
 ## See Also
 
-- [func compare(CSSuggestion) -> ComparisonResult](cssuggestion/compare(_:).md)
+### Comparing suggestions
+- [func compare(CSSuggestion) -> ComparisonResult](./compare%28_%29.md)
   Compares the suggestion with a second specified suggestion.
 
 

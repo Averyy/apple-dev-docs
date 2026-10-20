@@ -1,7 +1,8 @@
 # sessionID
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the message’s capability session.
 
@@ -16,7 +17,7 @@ let sessionID: UUID
 
 ## Mentions
 
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 
@@ -24,7 +25,8 @@ This identifier correlates messages with their capability (such as notifications
 
 ## See Also
 
-- [let data: Data](transportmessage/data.md)
+### Accessing message content
+- [let data: Data](./data.md)
   A data object that contains the message content.
 
 

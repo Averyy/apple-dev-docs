@@ -1,7 +1,8 @@
 # layoutIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the layout that contains this attribute.
 
@@ -19,7 +20,7 @@ var layoutIndex: Int { get set }
 
 #### Discussion
 
-The index refers to an entry in [`vertexLayouts`](lowlevelmeshresource/descriptor-swift.struct/vertexlayouts.md).
+The index refers to an entry in [`vertexLayouts`](../descriptor-swift.struct/vertexlayouts.md).
 
 
 ---

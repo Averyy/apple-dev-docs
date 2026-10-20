@@ -1,7 +1,8 @@
 # organizationName
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the organization associated with the contact.
 
@@ -19,13 +20,26 @@ The name of the organization associated with the contact.
 var organizationName: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSString * organizationName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * organizationName;
+```
+
 ## See Also
 
-- [var jobTitle: String](cnmutablecontact/jobtitle.md)
+### Setting Work Information
+- [var jobTitle: String](./jobtitle.md)
   The contact’s job title.
-- [var departmentName: String](cnmutablecontact/departmentname.md)
+- [var departmentName: String](./departmentname.md)
   The name of the department associated with the contact.
-- [var phoneticOrganizationName: String](cnmutablecontact/phoneticorganizationname.md)
+- [var phoneticOrganizationName: String](./phoneticorganizationname.md)
   The phonetic name of the organization associated with the contact.
 
 

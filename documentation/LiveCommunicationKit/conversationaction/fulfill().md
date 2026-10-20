@@ -1,7 +1,8 @@
 # fulfill()
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports that the action was successful.
 
@@ -20,7 +21,8 @@ final func fulfill()
 
 ## See Also
 
-- [func fail()](conversationaction/fail.md)
+### Completing actions
+- [func fail()](./fail%28%29.md)
   Reports that performing the action failed.
 
 

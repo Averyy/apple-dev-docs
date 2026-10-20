@@ -1,14 +1,15 @@
 # lck_rw_type_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef unsigned int lck_rw_type_t;
 ```
 

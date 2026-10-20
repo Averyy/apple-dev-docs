@@ -1,9 +1,10 @@
 # NSCollectorDisabledOption
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Specifies that the block is retained, and therefore ineligible for collection. Specifying this option is equivalent to invoking [`disableCollectorForPointer:`](nsgarbagecollector/disablecollectorforpointer:.md) with the returned block as the argument.
+Specifies that the block is retained, and therefore ineligible for collection. Specifying this option is equivalent to invoking [`disableCollectorForPointer:`](./nsgarbagecollector/disablecollectorforpointer_.md) with the returned block as the argument.
 
 **Availability**:
 - macOS 10.0+
@@ -14,9 +15,14 @@ Specifies that the block is retained, and therefore ineligible for collection. S
 var NSCollectorDisabledOption: Int { get }
 ```
 
+```c
+NSCollectorDisabledOption
+```
+
 ## See Also
 
-- [var NSScannedOption: Int](nsscannedoption.md)
+### Constants
+- [var NSScannedOption: Int](./nsscannedoption.md)
   Specifies allocation of scanned memory.
 
 

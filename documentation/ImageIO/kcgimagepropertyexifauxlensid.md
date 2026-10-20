@@ -1,7 +1,8 @@
 # kCGImagePropertyExifAuxLensID
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The lens ID.
 
@@ -20,23 +21,28 @@ The lens ID.
 let kCGImagePropertyExifAuxLensID: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifAuxLensID;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifAuxLensInfo: CFString](kcgimagepropertyexifauxlensinfo.md)
+### Auxiliary Keys
+- [let kCGImagePropertyExifAuxLensInfo: CFString](./kcgimagepropertyexifauxlensinfo.md)
   Lens information.
-- [let kCGImagePropertyExifAuxLensModel: CFString](kcgimagepropertyexifauxlensmodel.md)
+- [let kCGImagePropertyExifAuxLensModel: CFString](./kcgimagepropertyexifauxlensmodel.md)
   The lens model.
-- [let kCGImagePropertyExifAuxSerialNumber: CFString](kcgimagepropertyexifauxserialnumber.md)
+- [let kCGImagePropertyExifAuxSerialNumber: CFString](./kcgimagepropertyexifauxserialnumber.md)
   The serial number.
-- [let kCGImagePropertyExifAuxLensSerialNumber: CFString](kcgimagepropertyexifauxlensserialnumber.md)
+- [let kCGImagePropertyExifAuxLensSerialNumber: CFString](./kcgimagepropertyexifauxlensserialnumber.md)
   The lens serial number.
-- [let kCGImagePropertyExifAuxImageNumber: CFString](kcgimagepropertyexifauximagenumber.md)
+- [let kCGImagePropertyExifAuxImageNumber: CFString](./kcgimagepropertyexifauximagenumber.md)
   The image number.
-- [let kCGImagePropertyExifAuxFlashCompensation: CFString](kcgimagepropertyexifauxflashcompensation.md)
+- [let kCGImagePropertyExifAuxFlashCompensation: CFString](./kcgimagepropertyexifauxflashcompensation.md)
   Flash compensation.
-- [let kCGImagePropertyExifAuxOwnerName: CFString](kcgimagepropertyexifauxownername.md)
+- [let kCGImagePropertyExifAuxOwnerName: CFString](./kcgimagepropertyexifauxownername.md)
   The owner name.
-- [let kCGImagePropertyExifAuxFirmware: CFString](kcgimagepropertyexifauxfirmware.md)
+- [let kCGImagePropertyExifAuxFirmware: CFString](./kcgimagepropertyexifauxfirmware.md)
   Firmware information.
 
 

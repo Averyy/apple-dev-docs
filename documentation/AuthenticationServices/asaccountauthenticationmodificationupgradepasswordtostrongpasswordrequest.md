@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to automatically upgrade from a weak password to a strong password.
 
@@ -17,47 +18,52 @@ A request to automatically upgrade from a weak password to a strong password.
 class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest
 ```
 
+```objc
+@interface ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest : ASAccountAuthenticationModificationRequest
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Overview
 
-Your app uses this class to initiate an upgrade from a weak password to a strong system-generated one. After creating the request, your app initiates the upgrade process by instantiating an [`ASAccountAuthenticationModificationController`](asaccountauthenticationmodificationcontroller.md) object and calling [`perform(_:)`](asaccountauthenticationmodificationcontroller/perform(_:).md) on it. The system invokes your authentication modification extension to complete the upgrade.
+Your app uses this class to initiate an upgrade from a weak password to a strong system-generated one. After creating the request, your app initiates the upgrade process by instantiating an [`ASAccountAuthenticationModificationController`](./asaccountauthenticationmodificationcontroller.md) object and calling [`perform(_:)`](./asaccountauthenticationmodificationcontroller/perform%28_%29.md) on it. The system invokes your authentication modification extension to complete the upgrade.
 
-For details about how to enforce requirements on the password, such as minimum length or requiring both letters and numbers, see [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements).
+For details about how to enforce requirements on the password, such as minimum length or requiring both letters and numbers, see [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md).
 
 ## Topics
 
 ### Creating Upgrade Requests in Your App
-- [init(user: String, serviceIdentifier: ASCredentialServiceIdentifier, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/init(user:serviceidentifier:userinfo:).md)
+- [init(user: String, serviceIdentifier: ASCredentialServiceIdentifier, userInfo: [AnyHashable : Any]?)](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/init%28user,serviceidentifier,userinfo%29.md)
   Creates a request to upgrade from using a weak password to using a strong system-generated password.
-- [var user: String](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/user.md)
+- [var user: String](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/user.md)
   The user name of the account to upgrade.
-- [var serviceIdentifier: ASCredentialServiceIdentifier](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/serviceidentifier.md)
+- [var serviceIdentifier: ASCredentialServiceIdentifier](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/serviceidentifier.md)
   An identifier that represents a particular service that the user needs a credential for, like a web site.
-- [var userInfo: [AnyHashable : Any]?](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/userinfo.md)
   A dictionary that contains values to pass to your account modification extension.
 
 ## Relationships
 
 ### Inherits From
-- [ASAccountAuthenticationModificationRequest](asaccountauthenticationmodificationrequest.md)
+- [ASAccountAuthenticationModificationRequest](./asaccountauthenticationmodificationrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func perform(ASAccountAuthenticationModificationRequest)](asaccountauthenticationmodificationcontroller/perform(_:).md)
+### Initiating Security Upgrades from Your App
+- [func perform(ASAccountAuthenticationModificationRequest)](./asaccountauthenticationmodificationcontroller/perform%28_%29.md)
   Performs a request to upgrade the authentication credentials for an account to a strong password, or to use Sign in with Apple.
-- [class ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
+- [class ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](./asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
   A request to upgrade from using a password to using Sign in with Apple.
-- [class ASAccountAuthenticationModificationRequest](asaccountauthenticationmodificationrequest.md)
+- [class ASAccountAuthenticationModificationRequest](./asaccountauthenticationmodificationrequest.md)
   A request to modify an account’s authentication properties.
 
 

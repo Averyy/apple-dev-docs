@@ -1,7 +1,8 @@
 # init(checkpoint:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action classifier from a training session checkpoint.
 

@@ -1,7 +1,8 @@
 # CHHapticParameterCurve.ControlPoint
 
 **Framework**: Core Haptics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single control point in a parameter curve.
 
@@ -19,32 +20,37 @@ A single control point in a parameter curve.
 class ControlPoint
 ```
 
+```objc
+@interface CHHapticParameterCurveControlPoint : NSObject
+```
+
 ## Topics
 
 ### Creating a Control Point
-- [init(relativeTime: TimeInterval, value: Float)](chhapticparametercurve/controlpoint/init(relativetime:value:).md)
+- [init(relativeTime: TimeInterval, value: Float)](./controlpoint/init%28relativetime,value%29.md)
   Creates a control point from its time and value.
 ### Specifying Control Point Coordinates
-- [var relativeTime: TimeInterval](chhapticparametercurve/controlpoint/relativetime.md)
+- [var relativeTime: TimeInterval](./controlpoint/relativetime.md)
   The time at which the associated parameter reaches this value, relative to the start time of the parameter curve.
-- [var value: Float](chhapticparametercurve/controlpoint/value.md)
+- [var value: Float](./controlpoint/value.md)
   The parameter value of the point.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(parameterID: CHHapticDynamicParameter.ID, controlPoints: [CHHapticParameterCurve.ControlPoint], relativeTime: TimeInterval)](chhapticparametercurve/init(parameterid:controlpoints:relativetime:).md)
+### Creating a Curve
+- [init(parameterID: CHHapticDynamicParameter.ID, controlPoints: [CHHapticParameterCurve.ControlPoint], relativeTime: TimeInterval)](./init%28parameterid,controlpoints,relativetime%29.md)
   Creates a parameter curve from its parameter ID, control points, and start time.
 
 

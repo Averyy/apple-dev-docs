@@ -1,7 +1,8 @@
 # resID
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The resource ID of the voice in the file. Voices are stored in resources of type `kTextToSpeechVoiceType`.
 
@@ -12,6 +13,10 @@ The resource ID of the voice in the file. Voices are stored in resources of type
 
 ```swift
 var resID: Int16
+```
+
+```c
+SInt16 resID;
 ```
 
 

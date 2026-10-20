@@ -2,6 +2,7 @@
 
 **Framework**: ManagedApp  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An app-specific error code that identifies a configuration issue.
@@ -20,7 +21,7 @@ var code: ManagedAppConfigurationDecodingErrorCode { get set }
 
 ## Mentions
 
-- [Specifying and decoding a configuration](specifying-and-decoding-a-configuration.md)
+- [Specifying and decoding a configuration](../specifying-and-decoding-a-configuration.md)
 
 #### Discussion
 

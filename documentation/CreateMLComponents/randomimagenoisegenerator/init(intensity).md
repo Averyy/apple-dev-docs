@@ -1,7 +1,8 @@
 # init(intensity:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates transformer that generates random noise to apply to an image.
 

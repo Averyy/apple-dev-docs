@@ -1,7 +1,8 @@
 # topCandidates(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the top candidates for a recognized text string.
 
@@ -25,7 +26,8 @@ func topCandidates(_ maxCandidateCount: Int) -> [RecognizedText]
 
 ## See Also
 
-- [struct RecognizedText](recognizedtext.md)
+### Getting the recognized text
+- [struct RecognizedText](../recognizedtext.md)
   Text recognized in an image through a text recognition request.
 
 

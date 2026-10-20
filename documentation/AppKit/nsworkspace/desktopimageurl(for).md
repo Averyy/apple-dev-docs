@@ -1,7 +1,8 @@
 # desktopImageURL(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the URL for the desktop image for the given screen.
 
@@ -12,6 +13,10 @@ Returns the URL for the desktop image for the given screen.
 
 ```swift
 func desktopImageURL(for screen: NSScreen) -> URL?
+```
+
+```objc
+- (NSURL *) desktopImageURLForScreen:(NSScreen *) screen;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ You must call this method from your app’s main thread.
 
 ## See Also
 
-- [func setDesktopImageURL(URL, for: NSScreen, options: [NSWorkspace.DesktopImageOptionKey : Any]) throws](nsworkspace/setdesktopimageurl(_:for:options:).md)
+### Managing the Desktop Image
+- [func setDesktopImageURL(URL, for: NSScreen, options: [NSWorkspace.DesktopImageOptionKey : Any]) throws](./setdesktopimageurl%28_,for,options%29.md)
   Sets the desktop image for the given screen to the image at the specified URL.
-- [func desktopImageOptions(for: NSScreen) -> [NSWorkspace.DesktopImageOptionKey : Any]?](nsworkspace/desktopimageoptions(for:).md)
+- [func desktopImageOptions(for: NSScreen) -> [NSWorkspace.DesktopImageOptionKey : Any]?](./desktopimageoptions%28for%29.md)
   Returns the desktop image options for the given screen.
-- [NSWorkspace.DesktopImageOptionKey](nsworkspace/desktopimageoptionkey.md)
+- [NSWorkspace.DesktopImageOptionKey](./desktopimageoptionkey.md)
   Keys that indicate how to display a new desktop image.
 
 

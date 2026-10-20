@@ -1,7 +1,8 @@
 # operationCategory
 
 **Framework**: Trust Insights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of operation you’re requesting the evaluation for.
 
@@ -21,9 +22,10 @@ The framework may present information based on this request in the transparency 
 
 ## See Also
 
-- [var requestID: String?](insightevaluator/insightcontext/requestid.md)
+### insight context properties
+- [var requestID: String?](./requestid.md)
   An optional identifier you can use to tie an assessment to a specific transaction.
-- [let requestedInsight: (repeat each InsightRequest)](insightevaluator/insightcontext/requestedinsight.md)
+- [let requestedInsight: (repeat each InsightRequest)](./requestedinsight.md)
   The insight you’re requesting.
 
 

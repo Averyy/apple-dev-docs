@@ -1,7 +1,8 @@
 # readAttributeIdentifyType(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeIdentifyType(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeIdentifyType() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeIdentifyTypeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

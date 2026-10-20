@@ -1,7 +1,8 @@
 # PlacesResponse.PlaceLookupError
 
 **Framework**: Apple Maps Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error associated with a lookup call.
 
@@ -10,38 +11,41 @@ An error associated with a lookup call.
 
 ## Declaration
 
-```swift
+```
 object PlacesResponse.PlaceLookupError
 ```
 
 ## Properties
 
 - `errorCode` (string): An error code that indicates whether an Place ID is invalid because it’s malformed, not found, or resulted in any other error.
+
+  **Allowed Values**: `FAILED_INVALID_ID`, `FAILED_NOT_FOUND`, `FAILED_INTERNAL_ERROR`
 - `id` (string): The Place ID.
 
 ## See Also
 
-- [type AddressCategory](addresscategory.md)
+### Searching
+- [type AddressCategory](../addresscategory.md)
   Search categories related to political geographical boundaries.
-- [type SearchACResultType](searchacresulttype.md)
+- [type SearchACResultType](../searchacresulttype.md)
   An enumerated string that indicates the result type for the search request.
-- [type SearchResultType](searchresulttype.md)
+- [type SearchResultType](../searchresulttype.md)
   An enumerated string that indicates the result type for the search autocomplete request.
-- [object AlternateIdsResponse](alternateidsresponse.md)
+- [object AlternateIdsResponse](../alternateidsresponse.md)
   A list of alternate Place IDs and associated errors.
-- [object AlternateIdsResponse.AlternateIds](alternateidsresponse/alternateids.md)
+- [object AlternateIdsResponse.AlternateIds](../alternateidsresponse/alternateids.md)
   Contains a list of alternate Place IDs for a given Place ID.
-- [object PlacesResponse](placesresponse.md)
+- [object PlacesResponse](../placesresponse.md)
   A list of Place IDs and errors.
-- [Search for places that match specific criteria](-v1-search.md)
+- [Search for places that match specific criteria](../v1-search.md)
   Find places by name or by specific search criteria.
-- [Search for places that meet specific criteria to autocomplete a place search](-v1-searchautocomplete.md)
+- [Search for places that meet specific criteria to autocomplete a place search](../v1-searchautocomplete.md)
   Find results that you can use to autocomplete searches.
-- [Search for a place using an identifier](-v1-place-:id.md)
+- [Search for a place using an identifier](../v1-place-_id.md)
   Obtain a Place object for a given Place ID.
-- [Search for places using mulitple identifiers](-v1-place.md)
+- [Search for places using mulitple identifiers](../v1-place.md)
   Obtain a set of Place objects for a given set of Place IDs.
-- [Obtain a list of alternate place identifiers](-v1-place-alternateids.md)
+- [Obtain a list of alternate place identifiers](../v1-place-alternateids.md)
   Get a list of alternate Place IDs given one or more Place IDs.
 
 

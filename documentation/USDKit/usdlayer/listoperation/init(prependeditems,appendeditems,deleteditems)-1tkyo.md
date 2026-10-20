@@ -1,7 +1,8 @@
 # init(prependedItems:appendedItems:deletedItems:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list operation with the given prepended/appended/deleted items. Pass no arguments for an empty operation with no slots authored.
 

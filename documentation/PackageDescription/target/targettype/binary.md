@@ -1,7 +1,8 @@
 # Target.TargetType.binary
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A target that references a binary artifact.
 
@@ -13,15 +14,16 @@ case binary
 
 ## See Also
 
-- [Target.TargetType.regular](target/targettype/regular.md)
+### Enumeration Cases
+- [Target.TargetType.regular](./regular.md)
   A target that contains code for the Swift package’s functionality.
-- [Target.TargetType.system](target/targettype/system.md)
+- [Target.TargetType.system](./system.md)
   A target that adapts a library on the system to work with Swift packages.
-- [Target.TargetType.test](target/targettype/test.md)
+- [Target.TargetType.test](./test.md)
   A target that contains tests for the Swift package’s other targets.
-- [Target.TargetType.executable](target/targettype/executable.md)
+- [Target.TargetType.executable](./executable.md)
   A target that contains code for an executable’s main module.
-- [Target.TargetType.plugin](target/targettype/plugin.md)
+- [Target.TargetType.plugin](./plugin.md)
   A target that provides a package plug-in.
 
 

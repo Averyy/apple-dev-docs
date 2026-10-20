@@ -1,7 +1,8 @@
 # borderStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The border style for the text field.
 
@@ -18,21 +19,26 @@ The border style for the text field.
 var borderStyle: UITextView.BorderStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UITextViewBorderStyle borderStyle;
+```
+
 ## See Also
 
-- [var font: UIFont?](uitextview/font.md)
+### Configuring appearance attributes
+- [var font: UIFont?](./font.md)
   The font of the text.
-- [var textColor: UIColor?](uitextview/textcolor.md)
+- [var textColor: UIColor?](./textcolor.md)
   The color of the text.
-- [var textAlignment: NSTextAlignment](uitextview/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The technique for aligning the text.
-- [var typingAttributes: [NSAttributedString.Key : Any]](uitextview/typingattributes.md)
+- [var typingAttributes: [NSAttributedString.Key : Any]](./typingattributes.md)
   The attributes to apply to new text that the user enters.
-- [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
+- [var linkTextAttributes: [NSAttributedString.Key : Any]!](./linktextattributes.md)
   The attributes to apply to links.
-- [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
-- [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
-- [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+- [var textHighlightAttributes: [NSAttributedString.Key : Any]!](./texthighlightattributes.md)
+- [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](./drawtexthighlightbackground%28for,origin%29.md)
+- [UITextView.BorderStyle](./borderstyle-swift.enum.md)
   The type of border around the text view.
 
 

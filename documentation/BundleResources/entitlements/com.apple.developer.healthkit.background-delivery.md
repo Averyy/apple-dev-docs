@@ -1,7 +1,8 @@
 # com.apple.developer.healthkit.background-delivery
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether observer queries receive updates while running in the background.
 
@@ -11,25 +12,27 @@ A Boolean value that indicates whether observer queries receive updates while ru
 - visionOS 1.0+
 - watchOS 8.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.healthkit.background-delivery` (HealthKit Observer Query Background Delivery)
+- **Type**: boolean
 
 #### Discussion
 
-If this key is [`true`](https://developer.apple.com/documentation/swift/true), your app can enable background delivery of [`HKObserverQuery`](https://developer.apple.com/documentation/healthkit/hkobserverquery) instances by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:)) method. By default, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+If this key is [`true`](../../Swift/true.md), your app can enable background delivery of [`HKObserverQuery`](../../HealthKit/hkobserverquery.md) instances by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](../../HealthKit/hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md) method. By default, the value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [HealthKit Entitlement](entitlements/com.apple.developer.healthkit.md)
+### Health
+- [HealthKit Entitlement](./com.apple.developer.healthkit.md)
   A Boolean value that indicates whether the app may request user authorization to access health and activity data that appears in the Health app.
-- [HealthKit Capabilities Entitlement](entitlements/com.apple.developer.healthkit.access.md)
+- [HealthKit Capabilities Entitlement](./com.apple.developer.healthkit.access.md)
   Health data types that require additional permission.
-- [Fall Detection Notifications](entitlements/com.apple.developer.health.fall-detection.md)
+- [Fall Detection Notifications](./com.apple.developer.health.fall-detection.md)
   An entitlement that permits an app to receive fall-detection notifications from Apple Watch.
-- [com.apple.developer.healthkit.recalibrate-estimates](entitlements/com.apple.developer.healthkit.recalibrate-estimates.md)
+- [com.apple.developer.healthkit.recalibrate-estimates](./com.apple.developer.healthkit.recalibrate-estimates.md)
   A Boolean value that determines whether your app can recalibrate the prediction algorithm used to calculate supported sample types.
-- [com.apple.developer.healthkit.research](entitlements/com.apple.developer.healthkit.research.md)
+- [com.apple.developer.healthkit.research](./com.apple.developer.healthkit.research.md)
   A Boolean value that indicates whether an approved health research app offers only Full Access when it requests HealthKit read access.
 
 

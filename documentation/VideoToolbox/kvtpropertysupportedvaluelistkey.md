@@ -1,7 +1,8 @@
 # kVTPropertySupportedValueListKey
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Dictionary key to access the array of of supported values.
 
@@ -19,23 +20,28 @@ Dictionary key to access the array of of supported values.
 let kVTPropertySupportedValueListKey: CFString
 ```
 
+```c
+extern CFStringRef const kVTPropertySupportedValueListKey;
+```
+
 ## See Also
 
-- [let kVTPropertyTypeKey: CFString](kvtpropertytypekey.md)
+### Properties
+- [let kVTPropertyTypeKey: CFString](./kvtpropertytypekey.md)
   Dictionary key used to access the property type.
-- [Property Type Constants](property-type-constants.md)
+- [Property Type Constants](./property-type-constants.md)
   Supported constant values for `kVTPropertyTypeKey`.
-- [let kVTPropertyReadWriteStatusKey: CFString](kvtpropertyreadwritestatuskey.md)
+- [let kVTPropertyReadWriteStatusKey: CFString](./kvtpropertyreadwritestatuskey.md)
   Dictionary key to access the read/write status of a property.
-- [Read/Write Status Constants](read-write-status-constants.md)
+- [Read/Write Status Constants](./read-write-status-constants.md)
   Supported constant values for `kVTPropertyReadWriteStatusKey`.
-- [let kVTPropertyShouldBeSerializedKey: CFString](kvtpropertyshouldbeserializedkey.md)
+- [let kVTPropertyShouldBeSerializedKey: CFString](./kvtpropertyshouldbeserializedkey.md)
   Dictionary key to access the serializable status of a property.
-- [let kVTPropertySupportedValueMaximumKey: CFString](kvtpropertysupportedvaluemaximumkey.md)
+- [let kVTPropertySupportedValueMaximumKey: CFString](./kvtpropertysupportedvaluemaximumkey.md)
   Dictionary key to access the maximum value of a property.
-- [let kVTPropertySupportedValueMinimumKey: CFString](kvtpropertysupportedvalueminimumkey.md)
+- [let kVTPropertySupportedValueMinimumKey: CFString](./kvtpropertysupportedvalueminimumkey.md)
   Dictionary key to access the minimum value of a property.
-- [let kVTPropertyDocumentationKey: CFString](kvtpropertydocumentationkey.md)
+- [let kVTPropertyDocumentationKey: CFString](./kvtpropertydocumentationkey.md)
   Dictionary key to access any documentation intended for developers only.
 
 

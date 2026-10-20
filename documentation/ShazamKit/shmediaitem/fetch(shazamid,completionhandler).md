@@ -1,7 +1,8 @@
 # fetch(shazamID:completionHandler:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Requests the media item for the song with the specified Shazam ID.
 
@@ -17,26 +18,43 @@ Requests the media item for the song with the specified Shazam ID.
 ## Declaration
 
 ```swift
+class func fetch(shazamID: String, completionHandler: @escaping @Sendable (SHMediaItem?, (any Error)?) -> Void)
+```
+
+```swift
 class func fetch(shazamID: String) async throws -> SHMediaItem
+```
+
+```objc
++ (void) fetchMediaItemWithShazamID:(NSString *) shazamID completionHandler:(void (^)(SHMediaItem *mediaItem, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-class func fetch(shazamID: String) async throws -> SHMediaItem
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> class func fetch(shazamID: String) async throws -> SHMediaItem
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
 - `shazamID`: The Shazam ID of the song.
-- `completionHandler`: The completion handler that the system calls with the result of the request. This block takes the following parameters: - **`mediaItem`**: A media item.
-- **`error`**: An error object if a problem occurs when fetching the media item; otherwise, `nil`.
+- `completionHandler`: The completion handler that the system calls with the result of the request.
+
+  This block takes the following parameters:
+
+  - **`mediaItem`**: A media item.
+  - **`error`**: An error object if a problem occurs when fetching the media item; otherwise, `nil`.
 
 ## See Also
 
-- [var webURL: URL?](shmediaitem/weburl.md)
+### Working with Shazam music catalog media items
+- [var webURL: URL?](./weburl.md)
   A link to the Shazam Music catalog page that contains the full information for the song.
-- [var shazamID: String?](shmediaitem/shazamid.md)
+- [var shazamID: String?](./shazamid.md)
   The Shazam ID for the song.
 
 

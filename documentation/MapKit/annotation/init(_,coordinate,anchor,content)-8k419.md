@@ -1,7 +1,8 @@
 # init(_:coordinate:anchor:content:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotation that displays a view at a coordinate on the map.
 
@@ -11,7 +12,7 @@ Creates an annotation that displays a view at a coordinate on the map.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

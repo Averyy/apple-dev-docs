@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -19,9 +20,10 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [CHHapticError.Code](chhapticerror/code.md)
+### Inspecting an Error
+- [CHHapticError.Code](./code.md)
   Error codes for framework operations.
-- [Error Constants](error-constants.md)
+- [Error Constants](../error-constants.md)
   Error code constants for framework operations.
 
 

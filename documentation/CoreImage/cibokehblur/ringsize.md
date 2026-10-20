@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The radius of the extra emphasis at the ring of the bokeh.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The radius of the extra emphasis at the ring of the bokeh.
 var ringSize: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float ringSize;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cibokehblur/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var radius: Float](cibokehblur/radius.md)
+- [var radius: Float](./radius.md)
   The radius of the blur, in pixels.
-- [var ringAmount: Float](cibokehblur/ringamount.md)
+- [var ringAmount: Float](./ringamount.md)
   The amount of extra emphasis at the ring of the bokeh.
-- [var softness: Float](cibokehblur/softness.md)
+- [var softness: Float](./softness.md)
   The softness of the bokeh effect.
 
 

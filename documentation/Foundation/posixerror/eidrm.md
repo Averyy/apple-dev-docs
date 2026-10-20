@@ -1,7 +1,8 @@
 # EIDRM
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier removed.
 

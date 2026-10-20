@@ -1,7 +1,8 @@
 # BluetoothKeyboardReturnType
 
 **Framework**: IOBluetooth UI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,26 +13,30 @@
 struct BluetoothKeyboardReturnType
 ```
 
+```c
+typedef enum { ... } BluetoothKeyboardReturnType;
+```
+
 ## Topics
 
 ### Constants
-- [init(UInt32)](bluetoothkeyboardreturntype/init(_:).md)
-- [init(rawValue: UInt32)](bluetoothkeyboardreturntype/init(rawvalue:).md)
+- [init(UInt32)](./bluetoothkeyboardreturntype/init%28_%29.md)
+- [init(rawValue: UInt32)](./bluetoothkeyboardreturntype/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](bluetoothkeyboardreturntype/rawvalue.md)
-- [var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardansireturn.md)
-- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardisoreturn.md)
-- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardjisreturn.md)
-- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardnoreturn.md)
+- [var rawValue: UInt32](./bluetoothkeyboardreturntype/rawvalue.md)
+- [var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardansireturn.md)
+- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardisoreturn.md)
+- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardjisreturn.md)
+- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardnoreturn.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

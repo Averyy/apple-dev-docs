@@ -1,7 +1,8 @@
 # init(tabs:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tab bar controller with the specified tabs.
 
@@ -16,6 +17,10 @@ Creates a tab bar controller with the specified tabs.
 
 ```swift
 init(tabs: [UITab])
+```
+
+```objc
+- (instancetype) initWithTabs:(NSArray<UITab *> *) tabs;
 ```
 
 

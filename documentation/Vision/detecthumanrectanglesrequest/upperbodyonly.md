@@ -1,7 +1,8 @@
 # upperBodyOnly
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request requires only detecting a human upper body to produce a result.
 

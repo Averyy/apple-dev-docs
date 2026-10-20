@@ -1,7 +1,8 @@
 # UIActivityItemsConfigurationPreviewIntent
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that specifies the types of activity item previews.
 
@@ -17,31 +18,36 @@ A structure that specifies the types of activity item previews.
 struct UIActivityItemsConfigurationPreviewIntent
 ```
 
+```c
+typedef NSString * UIActivityItemsConfigurationPreviewIntent;
+```
+
 ## Topics
 
 ### Constants
-- [static let fullSize: UIActivityItemsConfigurationPreviewIntent](uiactivityitemsconfigurationpreviewintent/fullsize.md)
+- [static let fullSize: UIActivityItemsConfigurationPreviewIntent](./uiactivityitemsconfigurationpreviewintent/fullsize.md)
   A full-size preview image.
-- [static let thumbnail: UIActivityItemsConfigurationPreviewIntent](uiactivityitemsconfigurationpreviewintent/thumbnail.md)
+- [static let thumbnail: UIActivityItemsConfigurationPreviewIntent](./uiactivityitemsconfigurationpreviewintent/thumbnail.md)
   A thumbnail preview image.
 ### Initializers
-- [init(String)](uiactivityitemsconfigurationpreviewintent/init(_:).md)
+- [init(String)](./uiactivityitemsconfigurationpreviewintent/init%28_%29.md)
   Creates a preview intent.
-- [init(rawValue: String)](uiactivityitemsconfigurationpreviewintent/init(rawvalue:).md)
+- [init(rawValue: String)](./uiactivityitemsconfigurationpreviewintent/init%28rawvalue%29.md)
   Creates a preview intent with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var previewProvider: ((Int, UIActivityItemsConfigurationPreviewIntent, CGSize) -> NSItemProvider?)?](uiactivityitemsconfiguration/previewprovider.md)
+### Managing previews
+- [var previewProvider: ((Int, UIActivityItemsConfigurationPreviewIntent, CGSize) -> NSItemProvider?)?](./uiactivityitemsconfiguration/previewprovider.md)
   A closure that provides previews for the activity items.
 
 

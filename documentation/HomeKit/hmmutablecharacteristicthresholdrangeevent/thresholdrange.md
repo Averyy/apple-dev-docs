@@ -1,7 +1,8 @@
 # thresholdRange
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of the characteristic value that triggers the event.
 
@@ -20,13 +21,18 @@ The range of the characteristic value that triggers the event.
 var thresholdRange: HMNumberRange { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) HMNumberRange * thresholdRange;
+```
+
 #### Discussion
 
 Use this property to adjust the range of characteristic values that trigger the event.
 
 ## See Also
 
-- [var characteristic: HMCharacteristic](hmmutablecharacteristicthresholdrangeevent/characteristic.md)
+### Configuring a characteristic threshold event
+- [var characteristic: HMCharacteristic](./characteristic.md)
   The characteristic associated with the event.
 
 

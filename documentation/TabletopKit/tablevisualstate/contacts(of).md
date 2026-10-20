@@ -1,7 +1,8 @@
 # contacts(of:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all contacts for the current update of the physics simulation for a specified equipment type.
 
@@ -16,9 +17,10 @@ func contacts<E>(of type: E.Type) -> some Sequence<TableVisualState.Contact> whe
 
 ## See Also
 
-- [var contacts: some Sequence<TableVisualState.Contact>](tablevisualstate/contacts.md)
+### Representing collision states
+- [var contacts: some Sequence<TableVisualState.Contact>](./contacts.md)
   Returns all contacts for the current update of the physics simulation.
-- [TableVisualState.Contact](tablevisualstate/contact.md)
+- [TableVisualState.Contact](./contact.md)
   An object that represents the contact of a collision during a simulation of tossable equipment.
 
 

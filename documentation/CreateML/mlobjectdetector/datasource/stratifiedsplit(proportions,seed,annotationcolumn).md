@@ -1,12 +1,15 @@
 # stratifiedSplit(proportions:seed:annotationColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a new data table by splitting the data source using the specified proportions.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
+
+> **Deprecated**: Use DataFrame.stratifiedSplit(on:by:)
 
 ## Declaration
 
@@ -16,7 +19,7 @@ func stratifiedSplit(proportions: [Double], seed: Int = timestampSeed(), annotat
 
 #### Return Value
 
-An [`MLDataTable`](mldatatable.md) containing the data source’s split contents.
+An [`MLDataTable`](../../mldatatable.md) containing the data source’s split contents.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system definition of the Transport Control Protocol.
 
@@ -22,7 +23,8 @@ static let definition: NWProtocolDefinition
 
 ## See Also
 
-- [NWProtocolTCP.Options](nwprotocoltcp/options.md)
+### Creating TCP Connections
+- [NWProtocolTCP.Options](./options.md)
   A container of options for configuring how TCP is used on a connection.
 
 

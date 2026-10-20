@@ -1,7 +1,8 @@
 # MPSGraphResizeNearestRoundingMode.roundPreferFloor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds values to the nearest integer value, with 0.5f rounding toward -inf.
 
@@ -17,6 +18,10 @@ Rounds values to the nearest integer value, with 0.5f rounding toward -inf.
 
 ```swift
 case roundPreferFloor
+```
+
+```c
+MPSGraphResizeNearestRoundingModeRoundPreferFloor
 ```
 
 

@@ -1,7 +1,8 @@
 # automaticallyDetectLanguage
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to attempt detecting the language to use the appropriate model for recognition and language correction.
 
@@ -21,15 +22,16 @@ var automaticallyDetectLanguage: Bool
 
 ## See Also
 
-- [var customWords: [String]](recognizedocumentsrequest/textrecognitionoptions-swift.struct/customwords.md)
+### Inspecting the recognized text
+- [var customWords: [String]](./customwords.md)
   An array of strings to supplement the recognized languages at the word-recognition stage.
-- [var maximumCandidateCount: Int](recognizedocumentsrequest/textrecognitionoptions-swift.struct/maximumcandidatecount.md)
+- [var maximumCandidateCount: Int](./maximumcandidatecount.md)
   The maximum number of text candidates to return.
-- [var minimumTextHeightFraction: Float](recognizedocumentsrequest/textrecognitionoptions-swift.struct/minimumtextheightfraction.md)
+- [var minimumTextHeightFraction: Float](./minimumtextheightfraction.md)
   The minimum height, relative to the image height, of the text to recognize.
-- [var recognitionLanguages: [Locale.Language]](recognizedocumentsrequest/textrecognitionoptions-swift.struct/recognitionlanguages.md)
+- [var recognitionLanguages: [Locale.Language]](./recognitionlanguages.md)
   An array of languages to detect, in priority order.
-- [var useLanguageCorrection: Bool](recognizedocumentsrequest/textrecognitionoptions-swift.struct/uselanguagecorrection.md)
+- [var useLanguageCorrection: Bool](./uselanguagecorrection.md)
   A Boolean value that indicates whether the request applies language correction during the recognition process.
 
 

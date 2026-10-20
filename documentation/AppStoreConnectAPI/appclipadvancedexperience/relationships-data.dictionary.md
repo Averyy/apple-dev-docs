@@ -1,7 +1,8 @@
 # AppClipAdvancedExperience.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships of the Advanced App Clip Experiences resource you included in the request and those on which you can operate.
 
@@ -10,18 +11,18 @@ The relationships of the Advanced App Clip Experiences resource you included in 
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperience.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperience.Relationships.AppClip](appclipadvancedexperience/relationships-data.dictionary/appclip-data.dictionary.md)
+- [object AppClipAdvancedExperience.Relationships.AppClip](./relationships-data.dictionary/appclip-data.dictionary.md)
   The data and links that describe the relationship between the Advanced App Clip Experiences and the App Clips resources.
-- [object AppClipAdvancedExperience.Relationships.HeaderImage](appclipadvancedexperience/relationships-data.dictionary/headerimage-data.dictionary.md)
+- [object AppClipAdvancedExperience.Relationships.HeaderImage](./relationships-data.dictionary/headerimage-data.dictionary.md)
   The data and links that describe the relationship between the Advanced App Clip Experiences and the App Clip Header Images resources.
-- [object AppClipAdvancedExperience.Relationships.Localizations](appclipadvancedexperience/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object AppClipAdvancedExperience.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Advanced App Clip Experiences and the Localizations resources.
 
 ## Properties
@@ -32,7 +33,8 @@ object AppClipAdvancedExperience.Relationships
 
 ## See Also
 
-- [object AppClipAdvancedExperience.Attributes](appclipadvancedexperience/attributes-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperience.Attributes](./attributes-data.dictionary.md)
   The attributes that describe an Advanced App Clip Experiences resource.
 
 

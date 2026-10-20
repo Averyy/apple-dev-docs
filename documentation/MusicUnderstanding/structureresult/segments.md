@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range of each segment in the song.
 

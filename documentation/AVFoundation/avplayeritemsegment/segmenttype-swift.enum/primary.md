@@ -1,7 +1,8 @@
 # AVPlayerItemSegment.SegmentType.primary
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A segment that represents playback of a primary item.
 
@@ -20,9 +21,14 @@ A segment that represents playback of a primary item.
 case primary
 ```
 
+```c
+AVPlayerItemSegmentTypePrimary
+```
+
 ## See Also
 
-- [AVPlayerItemSegment.SegmentType.interstitial](avplayeritemsegment/segmenttype-swift.enum/interstitial.md)
+### Segment types
+- [AVPlayerItemSegment.SegmentType.interstitial](./interstitial.md)
   A segment that represents playback of an interstitial event.
 
 

@@ -1,7 +1,8 @@
 # orbitalAxis
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A vector that describes the axis of rotation (in world space).
 

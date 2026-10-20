@@ -1,7 +1,8 @@
 # SAEmergencyResponseManager.VoiceCallStatus
 
 **Framework**: SafetyKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that defines the status of a requested voice call.
 
@@ -18,35 +19,40 @@ An enumeration that defines the status of a requested voice call.
 enum VoiceCallStatus
 ```
 
+```c
+enum SAEmergencyResponseManagerVoiceCallStatus : NSInteger;
+```
+
 ## Topics
 
 ### Determining call status
-- [SAEmergencyResponseManager.VoiceCallStatus.active](saemergencyresponsemanager/voicecallstatus/active.md)
+- [SAEmergencyResponseManager.VoiceCallStatus.active](./voicecallstatus/active.md)
   The system successfully placed a call to the desired contact and that call is currently active.
-- [SAEmergencyResponseManager.VoiceCallStatus.dialing](saemergencyresponsemanager/voicecallstatus/dialing.md)
+- [SAEmergencyResponseManager.VoiceCallStatus.dialing](./voicecallstatus/dialing.md)
   The system is dialing the desired contact.
-- [SAEmergencyResponseManager.VoiceCallStatus.disconnected](saemergencyresponsemanager/voicecallstatus/disconnected.md)
+- [SAEmergencyResponseManager.VoiceCallStatus.disconnected](./voicecallstatus/disconnected.md)
   The voice call to the desired contact disconnected.
-- [SAEmergencyResponseManager.VoiceCallStatus.failed](saemergencyresponsemanager/voicecallstatus/failed.md)
+- [SAEmergencyResponseManager.VoiceCallStatus.failed](./voicecallstatus/failed.md)
   The voice call failed to connect to the desired contact.
 ### Initializers
-- [init?(rawValue: Int)](saemergencyresponsemanager/voicecallstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./voicecallstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func dialVoiceCall(toPhoneNumber: String, completionHandler: (Bool, (any Error)?) -> Void)](saemergencyresponsemanager/dialvoicecall(tophonenumber:completionhandler:).md)
+### Placing a voice call
+- [func dialVoiceCall(toPhoneNumber: String, completionHandler: (Bool, (any Error)?) -> Void)](./dialvoicecall%28tophonenumber,completionhandler%29.md)
   Request the system to dial a voice call on behalf of someone involved in a crash.
-- [var delegate: (any SAEmergencyResponseDelegate)?](saemergencyresponsemanager/delegate.md)
+- [var delegate: (any SAEmergencyResponseDelegate)?](./delegate.md)
   The object that receives voice call status updates and requested emergency response actions.
 
 

@@ -1,7 +1,8 @@
 # run(info:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the evaluation against the dataset and computes metric results.
 
@@ -23,17 +24,17 @@ nonisolated
 
 #### Return Value
 
-An [`EvaluationResult`](evaluationresult.md) that contains the summary statistics and sample-level results.
+An [`EvaluationResult`](../evaluationresult.md) that contains the summary statistics and sample-level results.
 
 #### Discussion
 
 This method executes the evaluation by iterating through your dataset, producing subjects, applying evaluators, and producing summary statistics. The evaluation logs and skips inference errors rather than halting the run.
 
-The resulting [`EvaluationResult`](evaluationresult.md) contains typed data in its DataFrames:
+The resulting [`EvaluationResult`](../evaluationresult.md) contains typed data in its DataFrames:
 
 - The Input column contains the full `Sample` from the dataset.
 - The Response column contains the full subject that the system under test produces.
-- Metric columns contain [`Metric`](metric.md) values directly, preserving pass, fail, and score semantics and rationale.
+- Metric columns contain [`Metric`](../metric.md) values directly, preserving pass, fail, and score semantics and rationale.
 - The SubjectInferenceError column contains the failure reason for any sample whose subject could not be produced by `subject(from:)` (the same rows whose Response is `nil`). It is present only when at least one subject failed.
 - The EvaluatorErrors column contains the failure reason(s), labeled by evaluator type, for any sample whose subject was produced but one or more evaluators threw. It is present only when at least one evaluator failed.
 
@@ -43,11 +44,12 @@ The resulting [`EvaluationResult`](evaluationresult.md) contains typed data in i
 
 ## See Also
 
-- [struct EvaluationTrait](evaluationtrait.md)
+### Running an evaluation
+- [struct EvaluationTrait](../evaluationtrait.md)
   A test trait that runs an evaluation and records the result as attachments.
-- [struct EvaluationContext](evaluationcontext.md)
+- [struct EvaluationContext](../evaluationcontext.md)
   A context that provides the evaluation result within a test scope.
-- [struct EvaluationResult](evaluationresult.md)
+- [struct EvaluationResult](../evaluationresult.md)
   The results of running a model evaluation.
 
 

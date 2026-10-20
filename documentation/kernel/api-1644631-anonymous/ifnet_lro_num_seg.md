@@ -1,14 +1,15 @@
 # IFNET_LRO_NUM_SEG
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 IFNET_LRO_NUM_SEG = 0x40000000
 ```
 

@@ -1,7 +1,8 @@
 # DocumentObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about the sections of content that an image-analysis request detects in a document.
 
@@ -21,36 +22,36 @@ struct DocumentObservation
 
 #### Overview
 
-The observation allows you to access a document’s content and group it within different sections. An observation is the result of using a [`RecognizeDocumentsRequest`](recognizedocumentsrequest.md) to process an image of a document and detects the content within that document using a container. Each container provides access to any text, lists, barcodes, or any other detected data that appears within the region of the container.
+The observation allows you to access a document’s content and group it within different sections. An observation is the result of using a [`RecognizeDocumentsRequest`](./recognizedocumentsrequest.md) to process an image of a document and detects the content within that document using a container. Each container provides access to any text, lists, barcodes, or any other detected data that appears within the region of the container.
 
 ## Topics
 
 ### Inspecting an observation
-- [let uuid: UUID](documentobservation/uuid.md)
+- [let uuid: UUID](./documentobservation/uuid.md)
   A unique alphanumeric value that the framework assigns to the observation.
-- [let confidence: Float](documentobservation/confidence.md)
+- [let confidence: Float](./documentobservation/confidence.md)
   The level of confidence in the observation’s accuracy.
-- [let document: DocumentObservation.Container](documentobservation/document.md)
+- [let document: DocumentObservation.Container](./documentobservation/document.md)
   The contents of the document.
-- [let timeRange: CMTimeRange?](documentobservation/timerange.md)
+- [let timeRange: CMTimeRange?](./documentobservation/timerange.md)
   Time in a video frame where the observation was detected.
 ### Getting the recognized text
-- [DocumentObservation.Container](documentobservation/container.md)
+- [DocumentObservation.Container](./documentobservation/container.md)
   A region of content recognized in a document.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

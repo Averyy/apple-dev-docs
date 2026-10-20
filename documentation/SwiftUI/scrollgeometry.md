@@ -1,7 +1,8 @@
 # ScrollGeometry
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the geometry of a scroll view.
 
@@ -22,50 +23,51 @@ struct ScrollGeometry
 
 #### Overview
 
-SwiftUI provides you values of this type when using modifiers like `View/onScrollGeometryChange(_:action:)` or [`onScrollPhaseChange(_:)`](view/onscrollphasechange(_:).md).
+SwiftUI provides you values of this type when using modifiers like `View/onScrollGeometryChange(_:action:)` or [`onScrollPhaseChange(_:)`](./view/onscrollphasechange%28_%29.md).
 
 ## Topics
 
 ### Initializers
-- [init(contentOffset: CGPoint, contentSize: CGSize, contentInsets: EdgeInsets, containerSize: CGSize)](scrollgeometry/init(contentoffset:contentsize:contentinsets:containersize:).md)
+- [init(contentOffset: CGPoint, contentSize: CGSize, contentInsets: EdgeInsets, containerSize: CGSize)](./scrollgeometry/init%28contentoffset,contentsize,contentinsets,containersize%29.md)
   Creates a scroll geometry.
 ### Instance Properties
-- [var bounds: CGRect](scrollgeometry/bounds.md)
+- [var bounds: CGRect](./scrollgeometry/bounds.md)
   The bounds rect of the scroll view.
-- [var containerSize: CGSize](scrollgeometry/containersize.md)
+- [var containerSize: CGSize](./scrollgeometry/containersize.md)
   The size of the container of the scroll view.
-- [var contentInsets: EdgeInsets](scrollgeometry/contentinsets.md)
+- [var contentInsets: EdgeInsets](./scrollgeometry/contentinsets.md)
   The content insets of the scroll view.
-- [var contentOffset: CGPoint](scrollgeometry/contentoffset.md)
+- [var contentOffset: CGPoint](./scrollgeometry/contentoffset.md)
   The content offset of the scroll view.
-- [var contentSize: CGSize](scrollgeometry/contentsize.md)
+- [var contentSize: CGSize](./scrollgeometry/contentsize.md)
   The size of the content of the scroll view.
-- [var visibleRect: CGRect](scrollgeometry/visiblerect.md)
+- [var visibleRect: CGRect](./scrollgeometry/visiblerect.md)
   The visible rect of the scroll view.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func onScrollGeometryChange<T>(for: T.Type, of: (ScrollGeometry) -> T, action: (T, T) -> Void) -> some View](view/onscrollgeometrychange(for:of:action:).md)
+### Responding to scroll view changes
+- [func onScrollGeometryChange<T>(for: T.Type, of: (ScrollGeometry) -> T, action: (T, T) -> Void) -> some View](./view/onscrollgeometrychange%28for,of,action%29.md)
   Adds an action to be performed when a value, created from a scroll geometry, changes.
-- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](view/onscrolltargetvisibilitychange(idtype:threshold:_:).md)
+- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](./view/onscrolltargetvisibilitychange%28idtype,threshold,_%29.md)
   Adds an action to be called with information about what views would be considered visible.
-- [func onScrollVisibilityChange(threshold: Double, (Bool) -> Void) -> some View](view/onscrollvisibilitychange(threshold:_:).md)
+- [func onScrollVisibilityChange(threshold: Double, (Bool) -> Void) -> some View](./view/onscrollvisibilitychange%28threshold,_%29.md)
   Adds an action to be called when the view crosses the threshold to be considered on/off screen.
-- [func onScrollPhaseChange(_:)](view/onscrollphasechange(_:).md)
+- [func onScrollPhaseChange(_:)](./view/onscrollphasechange%28_%29.md)
   Adds an action to perform when the scroll phase of the first scroll view in the hierarchy changes.
-- [enum ScrollPhase](scrollphase.md)
+- [enum ScrollPhase](./scrollphase.md)
   A type that describes the state of a scroll gesture of a scrollable view like a scroll view.
-- [struct ScrollPhaseChangeContext](scrollphasechangecontext.md)
+- [struct ScrollPhaseChangeContext](./scrollphasechangecontext.md)
   A type that provides you with more content when the phase of a scroll view changes.
 
 

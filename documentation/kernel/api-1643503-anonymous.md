@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBDeviceCapabilityBillboard](1643503-anonymous/kusbdevicecapabilitybillboard.md)
-- [kUSBDeviceCapabilityContainerID](1643503-anonymous/kusbdevicecapabilitycontainerid.md)
-- [kUSBDeviceCapabilitySuperSpeedUSB](1643503-anonymous/kusbdevicecapabilitysuperspeedusb.md)
-- [kUSBDeviceCapabilityUSB20Extension](1643503-anonymous/kusbdevicecapabilityusb20extension.md)
-- [kUSBDeviceCapabilityWirelessUSB](1643503-anonymous/kusbdevicecapabilitywirelessusb.md)
-- [kUSBDeviceCapabilityBillboardAltMode](1643503-anonymous/kusbdevicecapabilitybillboardaltmode.md)
+- [kUSBDeviceCapabilityBillboard](./api-1643503-anonymous/kusbdevicecapabilitybillboard.md)
+- [kUSBDeviceCapabilityContainerID](./api-1643503-anonymous/kusbdevicecapabilitycontainerid.md)
+- [kUSBDeviceCapabilitySuperSpeedUSB](./api-1643503-anonymous/kusbdevicecapabilitysuperspeedusb.md)
+- [kUSBDeviceCapabilityUSB20Extension](./api-1643503-anonymous/kusbdevicecapabilityusb20extension.md)
+- [kUSBDeviceCapabilityWirelessUSB](./api-1643503-anonymous/kusbdevicecapabilitywirelessusb.md)
+- [kUSBDeviceCapabilityBillboardAltMode](./api-1643503-anonymous/kusbdevicecapabilitybillboardaltmode.md)
 
 
 ---

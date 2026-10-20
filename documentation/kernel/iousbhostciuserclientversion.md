@@ -1,21 +1,22 @@
 # IOUSBHostCIUserClientVersion
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOUSBHostCIUserClientVersion IOUSBHostCIUserClientVersion;
 ```
 
 ## Topics
 
 ### Constants
-- [IOUSBHostCIUserClientVersion100](iousbhostciuserclientversion/iousbhostciuserclientversion100.md)
+- [IOUSBHostCIUserClientVersion100](./iousbhostciuserclientversion/iousbhostciuserclientversion100.md)
 
 
 ---

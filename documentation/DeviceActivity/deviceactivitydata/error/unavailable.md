@@ -1,7 +1,8 @@
 # DeviceActivityData.Error.unavailable
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating data access is unavailable.
 
@@ -21,9 +22,10 @@ To access data, the person must be in a region that supports data access.
 
 ## See Also
 
-- [DeviceActivityData.Error.unauthorized](deviceactivitydata/error/unauthorized.md)
+### Representing errors
+- [DeviceActivityData.Error.unauthorized](./unauthorized.md)
   An error indicating the app isn’t authorized to provide parental controls and access data.
-- [DeviceActivityData.Error.missingData](deviceactivitydata/error/missingdata.md)
+- [DeviceActivityData.Error.missingData](./missingdata.md)
   An error indicating the requested data does not exist.
 
 

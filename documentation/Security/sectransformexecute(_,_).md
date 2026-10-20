@@ -1,17 +1,24 @@
 # SecTransformExecute(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Executes a transform or transform group synchronously.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 12.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 func SecTransformExecute(_ transformRef: SecTransform, _ errorRef: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFTypeRef
+```
+
+```c
+extern CFTypeRefSecTransformExecute(SecTransformRef transformRef, CFErrorRef*errorRef);
 ```
 
 #### Return Value

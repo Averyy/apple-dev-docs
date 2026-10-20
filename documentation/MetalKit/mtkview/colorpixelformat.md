@@ -1,7 +1,8 @@
 # colorPixelFormat
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color pixel format for the current drawable’s texture.
 
@@ -19,25 +20,30 @@ The color pixel format for the current drawable’s texture.
 var colorPixelFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLPixelFormat colorPixelFormat;
+```
+
 #### Discussion
 
-The pixel format must be one that the underlying [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) can use. See [`pixelFormat`](https://developer.apple.com/documentation/quartzcore/cametallayer/pixelformat).
+The pixel format must be one that the underlying [`CAMetalLayer`](../../QuartzCore/cametallayer.md) can use. See [`pixelFormat`](../../QuartzCore/cametallayer/pixelformat.md).
 
-The default value is [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm).
+The default value is [`MTLPixelFormat.bgra8Unorm`](../../Metal/mtlpixelformat/bgra8unorm.md).
 
 ## See Also
 
-- [var colorspace: CGColorSpace?](mtkview/colorspace.md)
+### Configuring the Color Render Target
+- [var colorspace: CGColorSpace?](./colorspace.md)
   The color space of the rendered content.
-- [var framebufferOnly: Bool](mtkview/framebufferonly.md)
+- [var framebufferOnly: Bool](./framebufferonly.md)
   A Boolean value that determines whether the drawable’s textures are used only for rendering.
-- [var drawableSize: CGSize](mtkview/drawablesize.md)
+- [var drawableSize: CGSize](./drawablesize.md)
   The current size of drawable textures.
-- [var preferredDrawableSize: CGSize](mtkview/preferreddrawablesize.md)
+- [var preferredDrawableSize: CGSize](./preferreddrawablesize.md)
   The recommended dimensions of the drawable.
-- [var autoResizeDrawable: Bool](mtkview/autoresizedrawable.md)
+- [var autoResizeDrawable: Bool](./autoresizedrawable.md)
   A Boolean value that controls whether to resize the drawable as the view changes size.
-- [var clearColor: MTLClearColor](mtkview/clearcolor.md)
+- [var clearColor: MTLClearColor](./clearcolor.md)
   The color to use to clear the color target when creating a render pass descriptor.
 
 

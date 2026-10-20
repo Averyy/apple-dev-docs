@@ -1,14 +1,15 @@
 # ceri_file_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ceri_file_offset;
 ```
 

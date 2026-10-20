@@ -1,7 +1,8 @@
 # removeEntity(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a GameplayKit entity from the list of entities managed by the scene.
 
@@ -19,15 +20,20 @@ Removes a GameplayKit entity from the list of entities managed by the scene.
 func removeEntity(_ entity: GKEntity)
 ```
 
+```objc
+- (void) removeEntity:(GKEntity *) entity;
+```
+
 ## Parameters
 
 - `entity`: The entity to be removed from the scene.
 
 ## See Also
 
-- [var entities: [GKEntity]](gkscene/entities.md)
+### Managing Entities and Components
+- [var entities: [GKEntity]](./entities.md)
   The list of GameplayKit entities managed by the scene.
-- [func addEntity(GKEntity)](gkscene/addentity(_:).md)
+- [func addEntity(GKEntity)](./addentity%28_%29.md)
   Adds a GameplayKit entity to the list of entities managed by the scene.
 
 

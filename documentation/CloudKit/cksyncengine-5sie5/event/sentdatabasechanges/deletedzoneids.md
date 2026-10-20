@@ -1,7 +1,8 @@
 # deletedZoneIDs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifiers of the deleted record zones.
 
@@ -11,7 +12,7 @@ The unique identifiers of the deleted record zones.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ let deletedZoneIDs: [CKRecordZone.ID]
 
 ## See Also
 
-- [let savedZones: [CKRecordZone]](cksyncengine-5sie5/event/sentdatabasechanges/savedzones.md)
+### Accessing successful changes
+- [let savedZones: [CKRecordZone]](./savedzones.md)
   The modified record zones.
 
 

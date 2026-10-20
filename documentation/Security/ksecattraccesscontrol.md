@@ -1,7 +1,8 @@
 # kSecAttrAccessControl
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that’s an access control instance indicating access control settings for the item.
 
@@ -20,15 +21,19 @@ A key with a value that’s an access control instance indicating access control
 let kSecAttrAccessControl: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrAccessControl;
+```
+
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md)
 
 #### Discussion
 
-The corresponding value is a [`SecAccessControl`](secaccesscontrol.md) instance, created with the [`SecAccessControlCreateWithFlags(_:_:_:_:)`](secaccesscontrolcreatewithflags(_:_:_:_:).md) method, containing access control conditions for the item. See [`Restricting keychain item accessibility`](restricting-keychain-item-accessibility.md) for more details.
+The corresponding value is a [`SecAccessControl`](./secaccesscontrol.md) instance, created with the [`SecAccessControlCreateWithFlags(_:_:_:_:)`](./secaccesscontrolcreatewithflags%28_,_,_,_%29.md) method, containing access control conditions for the item. See [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md) for more details.
 
-> ❗ **Important**:  This attribute is mutually exclusive with the [`kSecAttrAccess`](ksecattraccess.md) attribute.
+> ❗ **Important**:  This attribute is mutually exclusive with the [`kSecAttrAccess`](./ksecattraccess.md) attribute.
 
 
 ---

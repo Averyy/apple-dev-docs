@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a lane status with the provided value.
 

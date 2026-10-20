@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 What kind of element the path’s leaf represents.
 

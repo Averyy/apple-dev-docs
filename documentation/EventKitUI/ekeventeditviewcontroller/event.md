@@ -1,7 +1,8 @@
 # event
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event the user creates or edits using this view controller.
 
@@ -17,13 +18,18 @@ The event the user creates or edits using this view controller.
 var event: EKEvent? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) EKEvent * event;
+```
+
 #### Discussion
 
 If `nil`, creates and adds a new event to the default calendar’s event store. To avoid throwing an exception, ensure that the event is in the specified event store.
 
 ## See Also
 
-- [var eventStore: EKEventStore!](ekeventeditviewcontroller/eventstore.md)
+### Creating and Saving Events
+- [var eventStore: EKEventStore!](./eventstore.md)
   The event store used to save the event.
 
 

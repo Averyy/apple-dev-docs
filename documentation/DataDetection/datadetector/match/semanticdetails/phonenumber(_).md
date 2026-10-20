@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.phoneNumber(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents a phone number.
 
@@ -22,7 +23,7 @@ case phoneNumber(DataDetector.Match.SemanticDetails.PhoneNumber)
 
 ## Parameters
 
-- `PhoneNumber`: A [`DataDetector.Match.SemanticDetails.PhoneNumber`](datadetector/match/semanticdetails/phonenumber.md) structure.
+- `PhoneNumber`: A [`DataDetector.Match.SemanticDetails.PhoneNumber`](./phonenumber.md) structure.
 
 
 ---

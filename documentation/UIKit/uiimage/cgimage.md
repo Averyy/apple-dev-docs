@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Quartz image data.
 
@@ -9,7 +10,7 @@ The underlying Quartz image data.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ The underlying Quartz image data.
 
 ```swift
 var cgImage: CGImage? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) CGImageRef CGImage;
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ If the `UIImage` object was initialized using a `CIImage` object, the value of t
 
 ## See Also
 
-- [var ciImage: CIImage?](uiimage/ciimage.md)
+### Getting the image data
+- [var ciImage: CIImage?](./ciimage.md)
   The underlying Core Image data.
-- [var images: [UIImage]?](uiimage/images.md)
+- [var images: [UIImage]?](./images.md)
   The complete array of image objects that compose the animation of an animated object.
-- [var imageAsset: UIImageAsset?](uiimage/imageasset.md)
+- [var imageAsset: UIImageAsset?](./imageasset.md)
   The image asset (if any) for the image.
 
 

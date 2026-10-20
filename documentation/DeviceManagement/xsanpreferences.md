@@ -1,7 +1,8 @@
 # XsanPreferences
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the Xsan preferences that define the volumes that automatically mount at startup.
 
@@ -10,7 +11,7 @@ The payload that configures the Xsan preferences that define the volumes that au
 
 ## Declaration
 
-```swift
+```
 object XsanPreferences
 ```
 
@@ -18,9 +19,9 @@ object XsanPreferences
 
 Specify `com.apple.xsan.preferences` as the payload type.
 
-For more information, see [`https://support.apple.com/en-us/HT205333`](https://developer.apple.comhttps://support.apple.com/en-us/HT205333).
+For more information, see [https://support.apple.com/en-us/HT205333](https://support.apple.com/en-us/HT205333).
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ For more information, see [`https://support.apple.com/en-us/HT205333`](https://d
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Example Profile
+##### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -92,9 +93,12 @@ For more information, see [`https://support.apple.com/en-us/HT205333`](https://d
 - `preferDLC` ([string]): An array of StorNext volume names. If the Xsan client is attempting to mount a volume named in this array, the Xsan client attempts to mount the volume using DLC. If DLC isn’t available, the client attempts to mount the volume if its LUNs are available through Fibre Channel. The volume name must not also appear in `denyDLC`.
 - `useDLC` (boolean): If `true`, use the DLC for all volumes.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object Xsan](xsan.md)
+### Xsan
+- [object Xsan](./xsan.md)
   The payload that configures an Xsan client system.
 
 

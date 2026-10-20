@@ -1,7 +1,8 @@
 # ImmersionChangeContext
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a state of immersion of your app.
 
@@ -22,18 +23,19 @@ You don’t use this structure directly. Instead, SwiftUI provides instances of 
 ## Topics
 
 ### Instance Properties
-- [let amount: Double?](immersionchangecontext/amount.md)
+- [let amount: Double?](./immersionchangecontext/amount.md)
   The current amount of immersion.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func onImmersionChange(initial: Bool, (ImmersionChangeContext, ImmersionChangeContext) -> Void) -> some View](view/onimmersionchange(initial:_:).md)
+### Responding to immersion changes
+- [func onImmersionChange(initial: Bool, (ImmersionChangeContext, ImmersionChangeContext) -> Void) -> some View](./view/onimmersionchange%28initial,_%29.md)
   Performs an action when the immersion state of your app changes.
 
 

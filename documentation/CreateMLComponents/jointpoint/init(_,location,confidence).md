@@ -1,7 +1,8 @@
 # init(_:location:confidence:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a joint point with its key, location and confidence.
 

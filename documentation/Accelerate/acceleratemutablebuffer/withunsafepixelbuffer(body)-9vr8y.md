@@ -1,7 +1,8 @@
 # withUnsafePixelBuffer(body:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -17,6 +18,8 @@
 ```swift
 mutating func withUnsafePixelBuffer<R>(body: (vImage.PixelBuffer<vImage.PlanarF>) throws -> R) rethrows -> R
 ```
+
+Available when `Element` is `Float`.
 
 
 ---

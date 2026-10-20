@@ -1,14 +1,15 @@
 # sptm_retype_params_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct sptm_retype_params_t sptm_retype_params_t;
 ```
 

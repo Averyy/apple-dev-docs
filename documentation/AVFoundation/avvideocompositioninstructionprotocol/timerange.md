@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time range during which the instruction is effective.
@@ -18,6 +19,10 @@ The time range during which the instruction is effective.
 
 ```swift
 var timeRange: CMTimeRange { get }
+```
+
+```objc
+@property (nonatomic, readonly) CMTimeRange timeRange;
 ```
 
 

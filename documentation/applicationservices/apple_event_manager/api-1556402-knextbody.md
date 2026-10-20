@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kNextBody: Int](../coreservices/knextbody.md)
-- [var kPreviousBody: Int](../coreservices/kpreviousbody.md)
+- [var kNextBody: Int](../../coreservices/knextbody.md)
+- [var kPreviousBody: Int](../../coreservices/kpreviousbody.md)
 
 
 ---

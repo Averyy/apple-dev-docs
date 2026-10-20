@@ -1,7 +1,8 @@
 # CMSampleBufferSetInvalidateHandler(_:invalidateHandler:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the sample buffer’s invalidation handler.
 
@@ -20,6 +21,10 @@ Sets the sample buffer’s invalidation handler.
 func CMSampleBufferSetInvalidateHandler(_ sbuf: CMSampleBuffer, invalidateHandler: @escaping CMSampleBufferInvalidateHandler) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSampleBufferSetInvalidateHandler(CMSampleBufferRef sbuf, CMSampleBufferInvalidateHandler invalidateHandler);
+```
+
 #### Discussion
 
 A sample buffer can only have one invalidation callback. The invalidation callback isn’t called during ordinary sample buffer finalization.
@@ -32,16 +37,17 @@ A sample buffer can only have one invalidation callback. The invalidation callba
 ## Topics
 
 ### Handlers
-- [typealias CMSampleBufferInvalidateHandler](cmsamplebufferinvalidatehandler.md)
-  Client callback called by [`CMSampleBufferInvalidate(_:)`](cmsamplebufferinvalidate(_:).md).
+- [typealias CMSampleBufferInvalidateHandler](./cmsamplebufferinvalidatehandler.md)
+  Client callback called by [`CMSampleBufferInvalidate(_:)`](./cmsamplebufferinvalidate%28_%29.md).
 
 ## See Also
 
-- [func CMSampleBufferInvalidate(CMSampleBuffer) -> OSStatus](cmsamplebufferinvalidate(_:).md)
+### Invalidating Sample Buffers
+- [func CMSampleBufferInvalidate(CMSampleBuffer) -> OSStatus](./cmsamplebufferinvalidate%28_%29.md)
   Invalidates a sample buffer by calling its invalidation callback.
-- [func CMSampleBufferIsValid(CMSampleBuffer) -> Bool](cmsamplebufferisvalid(_:).md)
+- [func CMSampleBufferIsValid(CMSampleBuffer) -> Bool](./cmsamplebufferisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a sample buffer is valid.
-- [func CMSampleBufferSetInvalidateCallback(CMSampleBuffer, callback: CMSampleBufferInvalidateCallback, refcon: UInt64) -> OSStatus](cmsamplebuffersetinvalidatecallback(_:callback:refcon:).md)
+- [func CMSampleBufferSetInvalidateCallback(CMSampleBuffer, callback: CMSampleBufferInvalidateCallback, refcon: UInt64) -> OSStatus](./cmsamplebuffersetinvalidatecallback%28_,callback,refcon%29.md)
   Sets the sample buffer’s invalidation callback.
 
 

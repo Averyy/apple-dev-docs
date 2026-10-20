@@ -1,6 +1,7 @@
 # Running a Core AI model in a Foundation Models session
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 
@@ -12,13 +13,13 @@ By default, the Foundation Models framework provides access to the same on-devic
 - Support a range of devices that might not support Apple Intelligence.
 - Maintain cross-platform support.
 
-With [`Core AI`](https://developer.apple.com/documentation/coreai), you can deploy AI models within your app and load them into the same language model session API you already use. Only the model you pass into [`init(model:tools:instructions:)`](languagemodelsession/init(model:tools:instructions:).md) changes.
+With [Core AI](../CoreAI/CoreAI.md), you can deploy AI models within your app and load them into the same language model session API you already use. Only the model you pass into [`init(model:tools:instructions:)`](./languagemodelsession/init%28model,tools,instructions%29.md) changes.
 
 > **Note**: Running and integrating a Core AI model requires macOS 27, iOS 27, and Xcode 27 or later.
 
-#### Export an Open Source Model
+#### Export an open source model
 
-The open-source [`coreai-models`](https://developer.apple.comhttps://github.com/apple/coreai-models) Swift package provides model export recipes and utilities for building on-device AI with [`Core AI`](https://developer.apple.com/documentation/coreai). The package contains `CoreAILanguageModel`, which conforms to the `LanguageModel` protocol, and you can use it to easily load an on-device model and prepare it to run.
+The open-source [coreai-models](https://github.com/apple/coreai-models) Swift package provides model export recipes and utilities for building on-device AI with [Core AI](../CoreAI/CoreAI.md). The package contains `CoreAILanguageModel`, which conforms to the `LanguageModel` protocol, and you can use it to easily load an on-device model and prepare it to run.
 
 Discover open source models to export by following these steps:
 
@@ -50,18 +51,18 @@ After the export completes, add the folder to your app so your code can load it 
 
 > **Note**: Each model in the registry has its own README with the exact export recipe and any model-specific requirements. Review the `models` directory in `coreai-models` for additional details.
 
-#### Load the Exported Model Into a Session
+#### Load the exported model into a session
 
-Create a `CoreAILanguageModel` from the URL of the exported resource folder, then pass it to a [`LanguageModelSession`](languagemodelsession.md). To access `CoreAILanguageModel`, add `coreai-models` as a package dependency in Xcode by following these steps:
+Create a `CoreAILanguageModel` from the URL of the exported resource folder, then pass it to a [`LanguageModelSession`](./languagemodelsession.md). To access `CoreAILanguageModel`, add `coreai-models` as a package dependency in Xcode by following these steps:
 
 1. Select File > Add Package Dependencies.
-2. In the search bar, enter [`coreai-models`](https://developer.apple.comhttps://github.com/apple/coreai-models).
+2. In the search bar, enter [`https://github.com/apple/coreai-models`](https://github.com/apple/coreai-models).
 3. Select `coreai-models`.
 4. Choose Add Package.
 5. In the view that appears, click None next to `CoreAILM` and choose your app from the drop-down selector.
 6. Choose Add Package.
 
-Because `CoreAILanguageModel` conforms to [`LanguageModel`](languagemodel.md), you initialize the session the same way you do with the on-device or server-based model, as follows:
+Because `CoreAILanguageModel` conforms to [`LanguageModel`](./languagemodel.md), you initialize the session the same way you do with the on-device or server-based model, as follows:
 
 ```swift
 import FoundationModels
@@ -78,11 +79,11 @@ let model = try await CoreAILanguageModel(resourcesAt: modelURL)
 let session = LanguageModelSession(model: model)
 ```
 
-Loading is asynchronous because the framework compiles the model and loads its tokenizer before the first request. Load a model ahead of time when you know a request is at least a second or two away so it’s ready when a person interacts with your feature. For more information about compiling models in advance, see [`Compiling Core AI models ahead of time`](https://developer.apple.com/documentation/coreai/compiling-core-ai-models-ahead-of-time).
+Loading is asynchronous because the framework compiles the model and loads its tokenizer before the first request. Load a model ahead of time when you know a request is at least a second or two away so it’s ready when a person interacts with your feature. For more information about compiling models in advance, see [Compiling Core AI models ahead of time](../CoreAI/compiling-core-ai-models-ahead-of-time.md).
 
-#### Run Requests Through the Session
+#### Run requests through the session
 
-After you create the session, the API is identical regardless of which model backs it. The [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) and stream methods, along with any [`Tool`](tool.md) instances and [`Instructions`](instructions.md) you configure, carry over without modification:
+After you create the session, the API is identical regardless of which model backs it. The [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) and stream methods, along with any [`Tool`](./tool.md) instances and [`Instructions`](./instructions.md) you configure, carry over without modification:
 
 ```swift
 // Prompt the Core AI model exactly as you would the built-in models.
@@ -92,11 +93,11 @@ let response = try await session.respond(
 )
 ```
 
-To show output as the model produces it, use [`streamResponse(to:options:)`](languagemodelsession/streamresponse(to:options:).md) instead. For more information about prompting, tools, and structured output, see [`Generating content and performing tasks with Foundation Models`](generating-content-and-performing-tasks-with-foundation-models.md).
+To show output as the model produces it, use [`streamResponse(to:options:)`](./languagemodelsession/streamresponse%28to,options%29.md) instead. For more information about prompting, tools, and structured output, see [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md).
 
-#### Handle Reasoning Output
+#### Handle reasoning output
 
-Some open source models are reasoning models that produce intermediate chain-of-thought before their final answer. Core AI recognizes this content and routes it into the transcript as a [`Transcript.Entry.reasoning(_:)`](transcript/entry/reasoning(_:).md) segment rather than person-facing text. As a result, it doesn’t appear in the response content a person sees. Reviewing the reasoning helps you understand why the model produced a particular answer, which is useful when you debug prompts.
+Some open source models are reasoning models that produce intermediate chain-of-thought before their final answer. Core AI recognizes this content and routes it into the transcript as a [`Transcript.Entry.reasoning(_:)`](./transcript/entry/reasoning%28_%29.md) segment rather than person-facing text. As a result, it doesn’t appear in the response content a person sees. Reviewing the reasoning helps you understand why the model produced a particular answer, which is useful when you debug prompts.
 
 Whether a model reasons, and how much, depends on the model you export. Check model reasoning by inspecting its capabilities, as shown here:
 
@@ -106,23 +107,24 @@ if model.capabilities.contains(.reasoning) {
 }
 ```
 
-#### Profile the Models Runtime Performance
+#### Profile the model’s runtime performance
 
-Core AI selects an inference engine for the device automatically, running the model on the GPU, CPU, or Apple Neural Engine, depending on how you export it. To measure load times, token counts, and per-request latency, use the Foundation Models instrument. For more information, see [`Analyzing the runtime performance of your Foundation Models app`](analyzing-the-runtime-performance-of-your-foundation-models-app.md).
+Core AI selects an inference engine for the device automatically, running the model on the GPU, CPU, or Apple Neural Engine, depending on how you export it. To measure load times, token counts, and per-request latency, use the Foundation Models instrument. For more information, see [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 
 ## See Also
 
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+### Custom language model provider
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
-- [protocol LanguageModel](languagemodel.md)
+- [protocol LanguageModel](./languagemodel.md)
   A protocol that you use to interface with a model.
-- [struct LanguageModelCapabilities](languagemodelcapabilities.md)
+- [struct LanguageModelCapabilities](./languagemodelcapabilities.md)
   A set of capabilities that a language model provides.
-- [protocol LanguageModelExecutor](languagemodelexecutor.md)
+- [protocol LanguageModelExecutor](./languagemodelexecutor.md)
   A protocol that defines the interface for responding to session requests.
-- [struct LanguageModelExecutorGenerationChannel](languagemodelexecutorgenerationchannel.md)
+- [struct LanguageModelExecutorGenerationChannel](./languagemodelexecutorgenerationchannel.md)
   A type you use to send model output deltas and updates to the framework.
-- [struct LanguageModelExecutorGenerationRequest](languagemodelexecutorgenerationrequest.md)
+- [struct LanguageModelExecutorGenerationRequest](./languagemodelexecutorgenerationrequest.md)
   A type that contains the details for a generation request.
 
 

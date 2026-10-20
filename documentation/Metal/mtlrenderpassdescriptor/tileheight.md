@@ -1,7 +1,8 @@
 # tileHeight
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tile height, in pixels.
 
@@ -19,17 +20,22 @@ The tile height, in pixels.
 var tileHeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger tileHeight;
+```
+
 #### Discussion
 
 The valid tile sizes are `32 x 32`, `32 x 16`, and `16 x 16`. The Metal driver chooses a default size when your app doesn’t set a tile size.
 
 ## See Also
 
-- [var imageblockSampleLength: Int](mtlrenderpassdescriptor/imageblocksamplelength.md)
+### Specifying tile shading parameters
+- [var imageblockSampleLength: Int](./imageblocksamplelength.md)
   The per-sample size, in bytes, of the largest explicit imageblock layout in the render pass.
-- [var threadgroupMemoryLength: Int](mtlrenderpassdescriptor/threadgroupmemorylength.md)
+- [var threadgroupMemoryLength: Int](./threadgroupmemorylength.md)
   The per-tile size, in bytes, of the persistent threadgroup memory allocation.
-- [var tileWidth: Int](mtlrenderpassdescriptor/tilewidth.md)
+- [var tileWidth: Int](./tilewidth.md)
   The tile width, in pixels.
 
 

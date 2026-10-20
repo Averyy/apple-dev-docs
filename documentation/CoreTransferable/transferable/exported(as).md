@@ -1,7 +1,8 @@
 # exported(as:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Using the type’s `Transferable` conformance implementation, exports a value as binary data.
 
@@ -22,7 +23,7 @@ func exported(as contentType: UTType?) async throws -> Data
 
 #### Discussion
 
-If the [`Transferable`](transferable.md) is backed by a file `URL`, this might cause loading the entire file contents into memory. This function uses the first representation that conforms to the given content type in `static var transferRepresentation` requirement of the `Transferable` protocol or in the `var body` property of a custom `TransferRepresentation`.
+If the [`Transferable`](../transferable.md) is backed by a file `URL`, this might cause loading the entire file contents into memory. This function uses the first representation that conforms to the given content type in `static var transferRepresentation` requirement of the `Transferable` protocol or in the `var body` property of a custom `TransferRepresentation`.
 
 The default implementation of this function is available to all types that conform to `Transferable` protocol.
 

@@ -1,7 +1,8 @@
 # binocularFrustumMatrixForDrawableTarget(drawableTarget:convention:increaseTangents:depthRange:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the transform which can be used for binocular frustum culling. A matrix to convert between the device coordinate space to normalized device coordinate space. This should be acquired between starting and submitting a frame. Renderer should not utilize this transform for actual rendering output.
 
@@ -21,7 +22,7 @@ A transform which combines  perspective projection matrix that transforms coordi
 
 #### Discussion
 
-```None
+```
             /
            /
           / Monocular eye

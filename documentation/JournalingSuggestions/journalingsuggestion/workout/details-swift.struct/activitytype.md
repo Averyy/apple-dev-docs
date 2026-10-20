@@ -1,7 +1,8 @@
 # activityType
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of workout.
 

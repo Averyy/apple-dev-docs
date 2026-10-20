@@ -1,7 +1,8 @@
 # description(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the description shown for a widget when a user adds or edits it using the contents of a text view.
 
@@ -18,6 +19,23 @@ Sets the description shown for a widget when a user adds or edits it using the c
 ```swift
 @MainActor
 @preconcurrency func description(_ description: Text) -> some WidgetConfiguration
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func description(_ descriptionKey: LocalizedStringKey) -> some WidgetConfiguration
+```
+
+```swift
+@MainActor
+@preconcurrency func description(_ descriptionResource: LocalizedStringResource) -> some WidgetConfiguration
+```
+
+```swift
+@MainActor
+@preconcurrency func description<S>(_ description: S) -> some WidgetConfiguration where S : StringProtocol
 ```
 
 #### Return Value

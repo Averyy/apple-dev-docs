@@ -1,7 +1,8 @@
 # writeAttributeScheduleProgrammingVisibility(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeScheduleProgrammingVisibility(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeScheduleProgrammingVisibility(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeScheduleProgrammingVisibilityWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

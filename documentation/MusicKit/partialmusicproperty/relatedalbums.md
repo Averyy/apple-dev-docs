@@ -1,7 +1,8 @@
 # relatedAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of related albums.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of related 
 ```swift
 static let relatedAlbums: MusicRelationshipProperty<Album, Album>
 ```
+
+Available when `Root` is `Album`.
 
 
 ---

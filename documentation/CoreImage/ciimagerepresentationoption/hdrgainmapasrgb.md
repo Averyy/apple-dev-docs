@@ -1,7 +1,8 @@
 # hdrGainMapAsRGB
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An optional key and value to request the gain map channel to be color instead of monochrome.
 
@@ -19,9 +20,13 @@ An optional key and value to request the gain map channel to be color instead of
 static let hdrGainMapAsRGB: CIImageRepresentationOption
 ```
 
+```c
+extern CIImageRepresentationOption const kCIImageRepresentationHDRGainMapAsRGB;
+```
+
 #### Discussion
 
-This key affects how the gain map image is calculated from the SDR receiver and the [`hdrImage`](ciimagerepresentationoption/hdrimage.md) image value.
+This key affects how the gain map image is calculated from the SDR receiver and the [`hdrImage`](./hdrimage.md) image value.
 
 The value for this is a Boolean where:
 

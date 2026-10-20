@@ -1,7 +1,8 @@
 # gss_OID_desc
 
 **Framework**: GSS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The OID descriptor that exchanges object identifiers with many GSS-API functions.
 
@@ -18,29 +19,34 @@ The OID descriptor that exchanges object identifiers with many GSS-API functions
 typealias gss_OID_desc = gss_OID_desc_struct
 ```
 
+```c
+typedef struct gss_OID_desc_struct gss_OID_desc;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var elements: UnsafeMutableRawPointer!](gss_oid_desc_struct/elements.md)
+- [var elements: UnsafeMutableRawPointer!](./gss_oid_desc_struct/elements.md)
   A pointer to the octets that make up the object identifier.
-- [var length: OM_uint32](gss_oid_desc_struct/length.md)
+- [var length: OM_uint32](./gss_oid_desc_struct/length.md)
   The number of octets in the object identifier.
 
 ## See Also
 
-- [typealias gss_OID](gss_oid.md)
+### Object IDs
+- [typealias gss_OID](./gss_oid.md)
   A pointer to the OID descriptor that exchanges object identifiers with many GSS-API functions.
-- [typealias gss_OID_set](gss_oid_set.md)
+- [typealias gss_OID_set](./gss_oid_set.md)
   A pointer to a descriptor that manages an array of OID descriptors.
-- [typealias gss_const_OID](gss_const_oid.md)
+- [typealias gss_const_OID](./gss_const_oid.md)
   A pointer to an immutable OID descriptor exchanges object identifiers with many GSS-API functions.
-- [typealias gss_const_OID_set](gss_const_oid_set.md)
+- [typealias gss_const_OID_set](./gss_const_oid_set.md)
   A pointer to an immutable descriptor manages an array of OID descriptors.
-- [struct gss_OID_desc_struct](gss_oid_desc_struct.md)
+- [struct gss_OID_desc_struct](./gss_oid_desc_struct.md)
   The structure for an OID descriptor that exchanges object identifiers with many GSS-API functions.
-- [typealias gss_OID_set_desc](gss_oid_set_desc.md)
+- [typealias gss_OID_set_desc](./gss_oid_set_desc.md)
   The descriptor that manages an array of OID descriptors.
-- [struct gss_OID_set_desc_struct](gss_oid_set_desc_struct.md)
+- [struct gss_OID_set_desc_struct](./gss_oid_set_desc_struct.md)
   The structure for an OID set descriptor that manages an array of OID descriptors.
 
 

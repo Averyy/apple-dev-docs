@@ -1,7 +1,8 @@
 # HTMLFontElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLFontElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [color](htmlfontelement/1633769-color.md)
-- [face](htmlfontelement/1628922-face.md)
-- [size](htmlfontelement/1633479-size.md)
+- [color](./htmlfontelement/api-1633769-color.md)
+- [face](./htmlfontelement/api-1628922-face.md)
+- [size](./htmlfontelement/api-1633479-size.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

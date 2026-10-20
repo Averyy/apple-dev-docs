@@ -1,7 +1,8 @@
 # requiresSetUpModeCompletion
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the system requires the user to complete setup mode before it executes the completion handler.
 
@@ -15,13 +16,18 @@ A Boolean value that specifies whether the system requires the user to complete 
 var requiresSetUpModeCompletion: Bool { get set }
 ```
 
+```objc
+@property BOOL requiresSetUpModeCompletion;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which tells the system to execute the completion handler as soon as it displays Desk View. If [`true`](https://developer.apple.com/documentation/swift/true), the system executes the completion handler after the user completes setup and starts Desk View.
+The default value is [`false`](../../../Swift/false.md), which tells the system to execute the completion handler as soon as it displays Desk View. If [`true`](../../../Swift/true.md), the system executes the completion handler after the user completes setup and starts Desk View.
 
 ## See Also
 
-- [var mainWindowFrame: CGRect](avcapturedeskviewapplication/launchconfiguration/mainwindowframe.md)
+### Customizing the presentation
+- [var mainWindowFrame: CGRect](./mainwindowframe.md)
   The frame for Desk View after it launches.
 
 

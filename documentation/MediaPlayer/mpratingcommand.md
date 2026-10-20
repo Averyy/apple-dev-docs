@@ -1,7 +1,8 @@
 # MPRatingCommand
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides a detailed rating for the playing item.
 
@@ -20,33 +21,38 @@ An object that provides a detailed rating for the playing item.
 class MPRatingCommand
 ```
 
+```objc
+@interface MPRatingCommand : MPRemoteCommand
+```
+
 ## Topics
 
 ### Defining maximum and minimum ratings
-- [var maximumRating: Float](mpratingcommand/maximumrating.md)
+- [var maximumRating: Float](./mpratingcommand/maximumrating.md)
   The maximum rating for a command.
-- [var minimumRating: Float](mpratingcommand/minimumrating.md)
+- [var minimumRating: Float](./mpratingcommand/minimumrating.md)
   The minimum rating for a command.
 
 ## Relationships
 
 ### Inherits From
-- [MPRemoteCommand](mpremotecommand.md)
+- [MPRemoteCommand](./mpremotecommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPFeedbackCommand](mpfeedbackcommand.md)
+### Responding to feedback and rating events
+- [class MPFeedbackCommand](./mpfeedbackcommand.md)
   An object that reflects the feedback state for the playing item.
-- [class MPFeedbackCommandEvent](mpfeedbackcommandevent.md)
+- [class MPFeedbackCommandEvent](./mpfeedbackcommandevent.md)
   An event requesting a change in the feedback setting.
-- [class MPRatingCommandEvent](mpratingcommandevent.md)
+- [class MPRatingCommandEvent](./mpratingcommandevent.md)
   An event requesting a change in the rating.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view for showing indeterminate progress that generates its label from a localized string resource.
 
@@ -21,9 +22,33 @@ Creates a progress view for showing indeterminate progress that generates its la
 nonisolated init(_ titleResource: LocalizedStringResource) where Label == Text
 ```
 
+Available when `Label` conforms to `View` and `CurrentValueLabel` is `EmptyView`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ configuration: ProgressViewStyleConfiguration) where Label == ProgressViewStyleConfiguration.Label, CurrentValueLabel == ProgressViewStyleConfiguration.CurrentValueLabel
+```
+
+```swift
+nonisolated
+init(_ progress: Progress) where Label == EmptyView, CurrentValueLabel == EmptyView
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey) where Label == Text
+```
+
+```swift
+nonisolated
+init<S>(_ title: S) where Label == Text, S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings. To initialize a indeterminate progress view with a string variable, use the corresponding initializer that takes a `StringProtocol` instance.
+This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings. To initialize a indeterminate progress view with a string variable, use the corresponding initializer that takes a `StringProtocol` instance.
 
 ## Parameters
 

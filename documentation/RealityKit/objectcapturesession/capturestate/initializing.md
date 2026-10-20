@@ -1,7 +1,8 @@
 # ObjectCaptureSession.CaptureState.initializing
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session and camera feed are initializing.
 

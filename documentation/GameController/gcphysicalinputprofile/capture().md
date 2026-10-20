@@ -1,7 +1,8 @@
 # capture()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a snapshot of the profile with its current element values.
 
@@ -19,6 +20,10 @@ Returns a snapshot of the profile with its current element values.
 func capture() -> Self
 ```
 
+```objc
+- (instancetype) capture;
+```
+
 #### Return Value
 
 A snapshot of the profile.
@@ -29,7 +34,8 @@ A snapshot is a copy of profile at a moment in time with its current element val
 
 ## See Also
 
-- [func setStateFromPhysicalInput(GCPhysicalInputProfile)](gcphysicalinputprofile/setstatefromphysicalinput(_:).md)
+### Setting snapshot values
+- [func setStateFromPhysicalInput(GCPhysicalInputProfile)](./setstatefromphysicalinput%28_%29.md)
   Copies the input values from a specified physical input profile to a snapshot of the profile.
 
 

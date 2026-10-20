@@ -1,7 +1,8 @@
 # Mirror.AncestorRepresentation.generated
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Generates a default mirror for all ancestor classes.
 

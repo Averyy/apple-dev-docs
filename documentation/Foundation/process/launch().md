@@ -1,17 +1,24 @@
 # launch()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches the task represented by the receiver.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`run()`](./run%28%29.md) instead.
 
 ## Declaration
 
 ```swift
 func launch()
+```
+
+```objc
+- (void) launch;
 ```
 
 #### Discussion
@@ -20,15 +27,17 @@ Raises an `NSInvalidArgumentException` if the launch path has not been set or is
 
 ## See Also
 
-- [func waitUntilExit()](process/waituntilexit.md)
+### Related Documentation
+- [func waitUntilExit()](./waituntilexit%28%29.md)
   Blocks the process until the receiver is finished.
-- [func terminate()](process/terminate.md)
+- [func terminate()](./terminate%28%29.md)
   Sends a terminate signal to the receiver and all of its subtasks.
-- [class func launchedProcess(launchPath: String, arguments: [String]) -> Process](process/launchedprocess(launchpath:arguments:).md)
+### Deprecated
+- [class func launchedProcess(launchPath: String, arguments: [String]) -> Process](./launchedprocess%28launchpath,arguments%29.md)
   Creates and launches a task with a specified executable and arguments.
-- [var currentDirectoryPath: String](process/currentdirectorypath.md)
+- [var currentDirectoryPath: String](./currentdirectorypath.md)
   Sets the current directory for the receiver.
-- [var launchPath: String?](process/launchpath.md)
+- [var launchPath: String?](./launchpath.md)
   Sets the receiver’s executable.
 
 

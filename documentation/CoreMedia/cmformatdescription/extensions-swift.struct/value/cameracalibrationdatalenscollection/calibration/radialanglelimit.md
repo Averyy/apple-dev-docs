@@ -1,7 +1,8 @@
 # radialAngleLimit
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Outer limit of the calibration validity in degrees of angle eccentric from the optical axis.
 

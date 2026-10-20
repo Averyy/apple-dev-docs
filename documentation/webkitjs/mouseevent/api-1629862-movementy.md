@@ -1,14 +1,15 @@
 # movementY
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 10.1+
 
 ## Declaration
 
-```swift
+```
 readonly attribute long movementY;
 ```
 

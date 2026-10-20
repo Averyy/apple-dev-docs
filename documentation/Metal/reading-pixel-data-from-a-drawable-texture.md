@@ -1,6 +1,8 @@
 # Reading pixel data from a drawable texture
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [ReadingPixelDataFromADrawableTexture.zip](https://docs-assets.developer.apple.com/published/6c0bd32987e6/ReadingPixelDataFromADrawableTexture.zip)
 
 Access texture data from the CPU by copying it to a buffer.
 
@@ -17,7 +19,7 @@ Metal optimizes textures for fast access by the GPU, but it doesn’t allow you 
 
 Run the sample, then tap or click on a single point to read the pixel data stored at that point. Alternatively, drag out a rectangle to capture pixel data for a region on the screen. The sample converts your selection to a rectangle in the drawable texture’s coordinate system. Next, it renders an image to the texture. Finally, it copies the pixel data from the selected rectangle into a buffer for the sample to process further.
 
-##### Configure the Drawable Texture for Read Access
+##### Configure the drawable texture for read access
 
 By default, MetalKit views create drawable textures for rendering only, so other Metal commands can’t access the texture. The code below creates a view whose textures include read access. Because the sample needs to get a texture whenever the user selects part of the view, the code configures the view’s Metal layer to wait indefinitely for a new drawable.
 
@@ -29,7 +31,7 @@ _view.colorPixelFormat = MTLPixelFormatBGRA8Unorm;
 
 Because configuring the drawable textures for read access means that Metal may not apply some optimizations, only change the drawable configuration when necessary. For similar reasons, don’t configure the view to wait indefinitely in performance-sensitive apps.
 
-##### Determine Which Pixels to Copy
+##### Determine which pixels to copy
 
 The `AAPLViewController` class manages user interaction. When a user interacts with a view, AppKit and UIKit send events with positions specified in the view’s coordinate system. To determine which pixels to copy from the Metal drawable texture, the app transforms these view coordinates into the Metal texture coordinate system.
 
@@ -67,7 +69,7 @@ In iOS, the app reads the view’s `contentScaleFactor` and applies a scaling tr
 }
 ```
 
-##### Render the Pixel Data
+##### Render the pixel data
 
 When the user selects a rectangle in the view, the view controller calls the `renderAndReadPixelsFromView:withRegion` method to render the drawable’s contents and copy them to a Metal buffer.
 
@@ -96,7 +98,7 @@ const id<MTLBuffer> pixelBuffer = [self readPixelsWithCommandBuffer:commandBuffe
                                                            withSize:readSize];
 ```
 
-##### Copy Pixel Data to a Buffer
+##### Copy pixel data to a buffer
 
 The renderer’s `readPixelsWithCommandBuffer:fromTexture:atOrigin:withSize:` method encodes the commands to copy the texture. Because the sample passes the same command buffer into this method, Metal encodes these new commands after the render pass. Metal automatically manages the dependencies on the destination texture, and ensures that rendering completes before copying the texture data.
 
@@ -110,7 +112,7 @@ NSUInteger bytesPerImage = size.height * bytesPerRow;
 _readBuffer = [texture.device newBufferWithLength:bytesPerImage options:MTLResourceStorageModeShared];
 ```
 
-Next, the method creates an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md), which provides commands that copy data between Metal resources, fill resources with data, and perform other similar resource-related tasks that don’t directly involve computation or rendering. The sample encodes a blit command to copy the texture data to the beginning of the new buffer. It then ends the blit pass.
+Next, the method creates an [`MTLBlitCommandEncoder`](./mtlblitcommandencoder.md), which provides commands that copy data between Metal resources, fill resources with data, and perform other similar resource-related tasks that don’t directly involve computation or rendering. The sample encodes a blit command to copy the texture data to the beginning of the new buffer. It then ends the blit pass.
 
 ```objective-c
 id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
@@ -129,7 +131,7 @@ id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 
 ```
 
-Finally, it commits the command buffer and calls [`waitUntilCompleted()`](mtlcommandbuffer/waituntilcompleted().md) to immediately wait for the GPU to finish executing the rendering and blit commands. After this call returns control to the method, the buffer contains the requested pixel data. In a real-time app, synchronizing commands unnecessarily reduces parallelism between the CPU and GPU; this sample synchronizes in this way to simplify the code.
+Finally, it commits the command buffer and calls [`waitUntilCompleted()`](./mtlcommandbuffer/waituntilcompleted%28%29.md) to immediately wait for the GPU to finish executing the rendering and blit commands. After this call returns control to the method, the buffer contains the requested pixel data. In a real-time app, synchronizing commands unnecessarily reduces parallelism between the CPU and GPU; this sample synchronizes in this way to simplify the code.
 
 ```objective-c
 [commandBuffer commit];
@@ -139,15 +141,15 @@ Finally, it commits the command buffer and calls [`waitUntilCompleted()`](mtlcom
 [commandBuffer waitUntilCompleted];
 ```
 
-##### Read the Pixels From the Buffer
+##### Read the pixels from the buffer
 
-The app calls the buffer’s [`contents()`](mtlbuffer/contents().md) method to get a pointer to the pixel data.
+The app calls the buffer’s [`contents()`](./mtlbuffer/contents%28%29.md) method to get a pointer to the pixel data.
 
 ```objective-c
 AAPLPixelBGRA8Unorm *pixels = (AAPLPixelBGRA8Unorm *)pixelBuffer.contents;
 ```
 
-The sample copies the buffer’s data into an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object and passes it to another method to initialize an `AAPLImage` object. For more information on `AAPLImage`, see [`Creating and sampling textures`](creating-and-sampling-textures.md).
+The sample copies the buffer’s data into an [`NSData`](../Foundation/nsdata.md) object and passes it to another method to initialize an `AAPLImage` object. For more information on `AAPLImage`, see [Creating and sampling textures](./creating-and-sampling-textures.md).
 
 ```objective-c
 // Create an `NSData` object and initialize it with the pixel data.
@@ -165,11 +167,12 @@ The renderer returns this image object to the view controller for further proces
 
 ## See Also
 
-- [Combining blit and compute operations in a single pass](combining-blit-and-compute-operations-in-a-single-pass.md)
+### Textures
+- [Combining blit and compute operations in a single pass](./combining-blit-and-compute-operations-in-a-single-pass.md)
   Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
-- [Creating and sampling textures](creating-and-sampling-textures.md)
+- [Creating and sampling textures](./creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
-- [Streaming large images with Metal sparse textures](streaming-large-images-with-metal-sparse-textures.md)
+- [Streaming large images with Metal sparse textures](./streaming-large-images-with-metal-sparse-textures.md)
   Limit texture memory usage for large textures by loading or unloading image detail on the basis of MIP and tile region.
 
 

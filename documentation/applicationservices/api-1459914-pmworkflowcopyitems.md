@@ -1,7 +1,8 @@
 # PMWorkflowCopyItems(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains an array of the available PDF workflow items.
 
@@ -14,19 +15,24 @@ Obtains an array of the available PDF workflow items.
 func PMWorkflowCopyItems(_ workflowItems: UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMWorkflowCopyItems(CFArrayRef  _Nullable *workflowItems);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 ## Parameters
 
-- `workflowItems`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to an Core Foundation array. Each element in the array is a dictionary that describes either a PDF workflow item or a folder containing a set of PDF workflow items. For a list of possible keys, see [`PDF Workflow Dictionary Keys`](core_printing/pdf_workflow_dictionary_keys.md). You are responsible for releasing the array.
+- `workflowItems`: A pointer to your [`CFArray`](../CoreFoundation/cfarray.md) variable. On return, the variable refers to an Core Foundation array. Each element in the array is a dictionary that describes either a PDF workflow item or a folder containing a set of PDF workflow items. For a list of possible keys, see [PDF Workflow Dictionary Keys](./core_printing/pdf_workflow_dictionary_keys.md). You are responsible for releasing the array.
 
 ## See Also
 
-- [func PMWorkflowSubmitPDFWithOptions(CFURL, CFString?, UnsafePointer<CChar>?, CFURL) -> OSStatus](1463747-pmworkflowsubmitpdfwithoptions.md)
+### Using PDF Workflow Items
+- [func PMWorkflowSubmitPDFWithOptions(CFURL, CFString?, UnsafePointer<CChar>?, CFURL) -> OSStatus](./api-1463747-pmworkflowsubmitpdfwithoptions.md)
   Submits a PDF file for workflow processing using the specified CUPS options string.
-- [func PMWorkflowSubmitPDFWithSettings(CFURL, PMPrintSettings, CFURL) -> OSStatus](1458874-pmworkflowsubmitpdfwithsettings.md)
+- [func PMWorkflowSubmitPDFWithSettings(CFURL, PMPrintSettings, CFURL) -> OSStatus](./api-1458874-pmworkflowsubmitpdfwithsettings.md)
   Submits a PDF file for workflow processing using the specified print settings.
 
 

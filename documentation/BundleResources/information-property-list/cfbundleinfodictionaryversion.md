@@ -1,7 +1,8 @@
 # CFBundleInfoDictionaryVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The current version of the Information Property List structure.
 
@@ -13,9 +14,12 @@ The current version of the Information Property List structure.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `CFBundleInfoDictionaryVersion` (InfoDictionary version)
+- **Type**: string
 
 
-**Type**: string
 
 **Default**: `6.0`
 
@@ -25,11 +29,12 @@ Xcode adds this key automatically. Don’t change the value.
 
 ## See Also
 
-- [CFBundleVersion](information-property-list/cfbundleversion.md)
+### Bundle version
+- [CFBundleVersion](./cfbundleversion.md)
   The version of the build that identifies an iteration of the bundle.
-- [CFBundleShortVersionString](information-property-list/cfbundleshortversionstring.md)
+- [CFBundleShortVersionString](./cfbundleshortversionstring.md)
   The release or version number of the bundle.
-- [NSHumanReadableCopyright](information-property-list/nshumanreadablecopyright.md)
+- [NSHumanReadableCopyright](./nshumanreadablecopyright.md)
   A human-readable copyright notice for the bundle.
 
 

@@ -1,7 +1,8 @@
 # vImageConvert_ChunkyToPlanarF(_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deinterleaves a floating-point 32-bit-per-channel interleaved buffer with an arbitrary number of channels into the corresponding number of 32-bit planar buffers.
 
@@ -20,9 +21,13 @@ Deinterleaves a floating-point 32-bit-per-channel interleaved buffer with an arb
 func vImageConvert_ChunkyToPlanarF(_ srcChannels: UnsafeMutablePointer<UnsafeRawPointer?>, _ destPlanarBuffers: UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, _ channelCount: UInt32, _ srcStrideBytes: Int, _ srcWidth: vImagePixelCount, _ srcHeight: vImagePixelCount, _ srcRowBytes: Int, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_ChunkyToPlanarF(const void * srcChannels[], const vImage_Buffer * destPlanarBuffers[], unsigned int channelCount, size_t srcStrideBytes, vImagePixelCount srcWidth, vImagePixelCount srcHeight, size_t srcRowBytes, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -131,13 +136,13 @@ printf("[%f, %f, %f, %f]\n", crData[0], crData[1], crData[2], crData[3]);
 ## Parameters
 
 - `srcChannels`: An array that contains pointers to the start of each channel in the source buffer.
-- `destPlanarBuffers`: An array that contains `channelCount` destination planar vImage buffers. Each source buffer must be the same height and width, but they may have different [`rowBytes`](vimage_buffer/rowbytes.md) values.
+- `destPlanarBuffers`: An array that contains `channelCount` destination planar vImage buffers. Each source buffer must be the same height and width, but they may have different [`rowBytes`](./vimage_buffer/rowbytes.md) values.
 - `channelCount`: The number of channels in the source image.
 - `srcStrideBytes`: The number of bytes between consecutive pixels in a channel in the same row.
 - `srcWidth`: The width, in pixels, of the source channels and the destination planar buffers.
 - `srcHeight`: The height, in pixels, of the source channels and the destination planar buffers.
 - `srcRowBytes`: The distance, in bytes, between the corresponding pixels in consecutive rows in the source buffer, including any unused space between them.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # ManagedAppConfigurationDecodingError
 
 **Framework**: ManagedApp  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for an error that describes an issue with decoding the configuration.
 
@@ -19,35 +20,36 @@ protocol ManagedAppConfigurationDecodingError : Decodable, Encodable, Error
 
 ## Mentions
 
-- [Specifying and decoding a configuration](specifying-and-decoding-a-configuration.md)
+- [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md)
 
 #### Overview
 
-For more information, see [`configurations(_:)`](managedappconfigurationprovider/configurations(_:).md).
+For more information, see [`configurations(_:)`](./managedappconfigurationprovider/configurations%28_%29.md).
 
 ## Topics
 
 ### Identifying an error
-- [var code: ManagedAppConfigurationDecodingErrorCode](managedappconfigurationdecodingerror/code.md)
+- [var code: ManagedAppConfigurationDecodingErrorCode](./managedappconfigurationdecodingerror/code.md)
   An app-specific error code that identifies a configuration issue.
 ### Interpreting an error
-- [var message: String](managedappconfigurationdecodingerror/message.md)
+- [var message: String](./managedappconfigurationdecodingerror/message.md)
   A human-readable message that describes the configuration issue.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ManagedAppError](managedapperror.md)
+### Errors
+- [enum ManagedAppError](./managedapperror.md)
   Errors that functions in the ManagedApp framework can throw.
-- [struct ManagedAppConfigurationDecodingErrorCode](managedappconfigurationdecodingerrorcode.md)
+- [struct ManagedAppConfigurationDecodingErrorCode](./managedappconfigurationdecodingerrorcode.md)
   A code for an error that occurs during configuration decoding.
 
 

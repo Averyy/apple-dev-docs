@@ -1,7 +1,8 @@
 # visualDescription()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string with an ASCII representation of the group.
 
@@ -12,6 +13,10 @@ Returns a string with an ASCII representation of the group.
 
 ```swift
 func visualDescription() -> String
+```
+
+```objc
+- (NSString *) visualDescription;
 ```
 
 

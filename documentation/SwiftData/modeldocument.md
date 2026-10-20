@@ -1,7 +1,8 @@
 # ModelDocument
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A document type that uses SwiftData to manage its storage.
 
@@ -20,21 +21,22 @@ struct ModelDocument
 
 #### Overview
 
-> ❗ **Important**: Don’t create instances of this type. Instead, use one of the initializers on [`DocumentGroup`](https://developer.apple.com/documentation/swiftui/documentgroup).
+> ❗ **Important**: Don’t create instances of this type. Instead, use one of the initializers on [`DocumentGroup`](../SwiftUI/documentgroup.md).
 
 ## See Also
 
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
+### Model storage
+- [Maintaining a local copy of server data](./maintaining-a-local-copy-of-server-data.md)
   Create and update a persistent store to cache read-only network data.
-- [class DefaultStore](defaultstore.md)
+- [class DefaultStore](./defaultstore.md)
   A data store that uses Core Data as its undelying storage mechanism.
-- [protocol DataStore](datastore.md)
+- [protocol DataStore](./datastore.md)
   An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
-- [protocol DataStoreBatching](datastorebatching.md)
+- [protocol DataStoreBatching](./datastorebatching.md)
   An interface that enables a custom data store to support batch requests.
-- [protocol HistoryProviding](historyproviding.md)
+- [protocol HistoryProviding](./historyproviding.md)
   An interface that enables a custom data store to provide the history of changes for its persisted models.
-- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
+- [Building a document-based app using SwiftData](../SwiftUI/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
 
 

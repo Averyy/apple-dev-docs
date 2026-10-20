@@ -1,7 +1,8 @@
 # instantActionWithTransition(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func instantActionWithTransition(with params: MTRActionsClusterInstantActionWithTransitionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func instantActionWithTransition(with params: MTRActionsClusterInstantActionWithTransitionParams) async throws
+```
+
+```objc
+- (void) instantActionWithTransitionWithParams:(MTRActionsClusterInstantActionWithTransitionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

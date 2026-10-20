@@ -1,7 +1,8 @@
 # conversational
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrangement where the participants can see one another and the app’s content.
 
@@ -30,11 +31,12 @@ A             C
 
 ## See Also
 
-- [static let none: SpatialTemplatePreference](spatialtemplatepreference/none.md)
+### Getting the spatial position preferences
+- [static let none: SpatialTemplatePreference](./none.md)
   An arrangement where the system places spatial Personas based on your app’s content.
-- [static let sideBySide: SpatialTemplatePreference](spatialtemplatepreference/sidebyside.md)
+- [static let sideBySide: SpatialTemplatePreference](./sidebyside.md)
   An arrangement where the participants sit in a line with the content in front of them.
-- [static func custom(any SpatialTemplate) -> SpatialTemplatePreference](spatialtemplatepreference/custom(_:).md)
+- [static func custom(any SpatialTemplate) -> SpatialTemplatePreference](./custom%28_%29.md)
   Creates a template preference with the given custom spatial template.
 
 

@@ -1,7 +1,8 @@
 # init(vertexBuffers:vertexCount:descriptor:submeshes:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mesh by unifying vertex data from multiple sources with the specified parameters.
 
@@ -17,6 +18,10 @@ Creates a mesh by unifying vertex data from multiple sources with the specified 
 
 ```swift
 init(vertexBuffers: [any MDLMeshBuffer], vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])
+```
+
+```objc
+- (instancetype) initWithVertexBuffers:(NSArray<id<MDLMeshBuffer>> *) vertexBuffers vertexCount:(NSUInteger) vertexCount descriptor:(MDLVertexDescriptor *) descriptor submeshes:(NSArray<MDLSubmesh *> *) submeshes;
 ```
 
 #### Return Value
@@ -36,12 +41,13 @@ Use this initializer to create a mesh from vertex data that describes separate v
 
 ## See Also
 
-- [init(vertexBuffer: any MDLMeshBuffer, vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])](mdlmesh/init(vertexbuffer:vertexcount:descriptor:submeshes:).md)
+### Creating a Custom Mesh
+- [init(vertexBuffer: any MDLMeshBuffer, vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])](./init%28vertexbuffer,vertexcount,descriptor,submeshes%29.md)
   Creates a mesh from a single vertex buffer with the specified parameters.
-- [init(bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(bufferallocator:).md)
-- [class func newSubdividedMesh(MDLMesh, submeshIndex: Int, subdivisionLevels: Int) -> Self?](mdlmesh/newsubdividedmesh(_:submeshindex:subdivisionlevels:).md)
+- [init(bufferAllocator: (any MDLMeshBufferAllocator)?)](./init%28bufferallocator%29.md)
+- [class func newSubdividedMesh(MDLMesh, submeshIndex: Int, subdivisionLevels: Int) -> Self?](./newsubdividedmesh%28_,submeshindex,subdivisionlevels%29.md)
   Creates a new mesh by subdividing the specified mesh.
-- [init(meshBySubdividingMesh: MDLMesh, submeshIndex: Int32, subdivisionLevels: UInt32, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(meshbysubdividingmesh:submeshindex:subdivisionlevels:allocator:).md)
+- [init(meshBySubdividingMesh: MDLMesh, submeshIndex: Int32, subdivisionLevels: UInt32, allocator: (any MDLMeshBufferAllocator)?)](./init%28meshbysubdividingmesh,submeshindex,subdivisionlevels,allocator%29.md)
 
 
 ---

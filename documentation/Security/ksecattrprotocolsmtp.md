@@ -1,7 +1,8 @@
 # kSecAttrProtocolSMTP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 SMTP protocol.
 
@@ -18,6 +19,10 @@ SMTP protocol.
 
 ```swift
 let kSecAttrProtocolSMTP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolSMTP;
 ```
 
 

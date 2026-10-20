@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sysctl_oid_list {
     ...
 };
@@ -17,7 +17,7 @@ struct sysctl_oid_list {
 ## Topics
 
 ### Instance Properties
-- [slh_first](sysctl_oid_list/1404355-slh_first.md)
+- [slh_first](./sysctl_oid_list/api-1404355-slh_first.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Artwork.Gradient
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the properties of a color gradient for an artwork object.
 
@@ -10,7 +11,7 @@ An object that represents the properties of a color gradient for an artwork obje
 
 ## Declaration
 
-```swift
+```
 object Artwork.Gradient
 ```
 

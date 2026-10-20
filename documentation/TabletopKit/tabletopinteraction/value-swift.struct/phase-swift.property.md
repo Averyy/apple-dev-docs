@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the current phase of the overall interaction
 
@@ -16,9 +17,10 @@ var phase: TabletopInteraction.Value.Phase { get }
 
 ## See Also
 
-- [var gesturePhase: TabletopInteraction.Value.Phase?](tabletopinteraction/value-swift.struct/gesturephase.md)
+### Getting the phases
+- [var gesturePhase: TabletopInteraction.Value.Phase?](./gesturephase.md)
   the current phase of the gesture
-- [TabletopInteraction.Value.Phase](tabletopinteraction/value-swift.struct/phase-swift.enum.md)
+- [TabletopInteraction.Value.Phase](./phase-swift.enum.md)
   The stages of players interacting with equipment on the table.
 
 

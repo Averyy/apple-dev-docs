@@ -1,7 +1,8 @@
 # addTarget(_:action:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a target-action pair for the specified control events.
 
@@ -14,6 +15,10 @@ Registers a target-action pair for the specified control events.
 func addTarget(_ target: Any?, action: Selector, for controlEvents: NSControl.Events)
 ```
 
+```objc
+- (void) addTarget:(id) target action:(SEL) action forControlEvents:(NSControlEvents) controlEvents;
+```
+
 #### Discussion
 
 You can call this method multiple times to register additional target-action pairs for the same or different events. You can also register multiple targets or multiple actions for the same event. The control holds a weak reference to each registered target.
@@ -22,13 +27,14 @@ You can call this method multiple times to register additional target-action pai
 
 - `target`: The object to receive the action message. Pass `nil` to send the action up the responder chain.
 - `action`: The selector to invoke on `target` when the specified events occur. This parameter can’t be `nil`. The selector may include the sender, the event, or both as parameters, in that order.
-- `controlEvents`: A bit mask of [`NSControl.Events`](nscontrol/events.md) values specifying which events initiate the action.
+- `controlEvents`: A bit mask of [`NSControl.Events`](./events.md) values specifying which events initiate the action.
 
 ## See Also
 
-- [NSControl.Events](nscontrol/events.md)
+### Handling Control Events
+- [NSControl.Events](./events.md)
   A set of events that a control can report to its target.
-- [func removeTarget(Any?, action: Selector?, for: NSControl.Events)](nscontrol/removetarget(_:action:for:).md)
+- [func removeTarget(Any?, action: Selector?, for: NSControl.Events)](./removetarget%28_,action,for%29.md)
   Stops the delivery of events to the specified target object.
 
 

@@ -1,7 +1,8 @@
 # sensitivityLevel
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 static var sensitivityLevel: MTRBooleanStateConfigurationFeature { get }
+```
+
+```c
+MTRBooleanStateConfigurationFeatureSensitivityLevel
 ```
 
 

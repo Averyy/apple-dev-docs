@@ -1,7 +1,8 @@
 # render(_:to:at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Renders a USD stage to an entity in manual mode.
 
@@ -36,7 +37,8 @@ If the entity does not have a `USDStageComponent` attached, or if the attached c
 
 ## See Also
 
-- [USDStageComponent.RenderResult](usdstagecomponent/renderresult.md)
+### Rendering the stage
+- [USDStageComponent.RenderResult](./renderresult.md)
   The result of a render operation.
 
 

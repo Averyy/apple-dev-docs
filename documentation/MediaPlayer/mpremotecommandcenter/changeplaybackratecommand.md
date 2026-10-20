@@ -1,7 +1,8 @@
 # changePlaybackRateCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for changing the playback rate of the current media item.
 
@@ -20,21 +21,26 @@ The command object for changing the playback rate of the current media item.
 var changePlaybackRateCommand: MPChangePlaybackRateCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPChangePlaybackRateCommand * changePlaybackRateCommand;
+```
+
 #### Discussion
 
 Use the object in this property to register your app’s handler for changing the playback rate of the current track. In your handler, change the playback rate to the new value. The current playback rate cannot be negative. You can disable the command if your app does not support it.
 
 ## See Also
 
-- [var seekBackwardCommand: MPRemoteCommand](mpremotecommandcenter/seekbackwardcommand.md)
+### Navigating a track’s contents
+- [var seekBackwardCommand: MPRemoteCommand](./seekbackwardcommand.md)
   The command object for seeking backward through a single media item.
-- [var seekForwardCommand: MPRemoteCommand](mpremotecommandcenter/seekforwardcommand.md)
+- [var seekForwardCommand: MPRemoteCommand](./seekforwardcommand.md)
   The command object for seeking forward through a single media item.
-- [var skipBackwardCommand: MPSkipIntervalCommand](mpremotecommandcenter/skipbackwardcommand.md)
+- [var skipBackwardCommand: MPSkipIntervalCommand](./skipbackwardcommand.md)
   The command object for playing a previous point in a media item.
-- [var skipForwardCommand: MPSkipIntervalCommand](mpremotecommandcenter/skipforwardcommand.md)
+- [var skipForwardCommand: MPSkipIntervalCommand](./skipforwardcommand.md)
   The command object for playing a future point in a media item.
-- [var changePlaybackPositionCommand: MPChangePlaybackPositionCommand](mpremotecommandcenter/changeplaybackpositioncommand.md)
+- [var changePlaybackPositionCommand: MPChangePlaybackPositionCommand](./changeplaybackpositioncommand.md)
   The command object for changing the playback position in a media item.
 
 

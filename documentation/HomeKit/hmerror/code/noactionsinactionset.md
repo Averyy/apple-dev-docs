@@ -1,7 +1,8 @@
 # HMError.Code.noActionsInActionSet
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to execute an action set with no actions.
 
@@ -19,19 +20,24 @@ An attempt to execute an action set with no actions.
 case noActionsInActionSet
 ```
 
+```c
+HMErrorCodeNoActionsInActionSet
+```
+
 ## See Also
 
-- [HMError.Code.actionInAnotherActionSet](hmerror/code/actioninanotheractionset.md)
+### Action set errors
+- [HMError.Code.actionInAnotherActionSet](./actioninanotheractionset.md)
   An attempt to add an action that exists in one action set to another action set.
-- [HMError.Code.actionSetExecutionFailed](hmerror/code/actionsetexecutionfailed.md)
+- [HMError.Code.actionSetExecutionFailed](./actionsetexecutionfailed.md)
   An attempt to execute the action set failed.
-- [HMError.Code.actionSetExecutionInProgress](hmerror/code/actionsetexecutioninprogress.md)
+- [HMError.Code.actionSetExecutionInProgress](./actionsetexecutioninprogress.md)
   An error indicating the execution of the action set is in progress.
-- [HMError.Code.actionSetExecutionPartialSuccess](hmerror/code/actionsetexecutionpartialsuccess.md)
+- [HMError.Code.actionSetExecutionPartialSuccess](./actionsetexecutionpartialsuccess.md)
   An attempt to execute the action set was only partially successful.
-- [HMError.Code.cannotRemoveBuiltinActionSet](hmerror/code/cannotremovebuiltinactionset.md)
+- [HMError.Code.cannotRemoveBuiltinActionSet](./cannotremovebuiltinactionset.md)
   An error indicating the built-in action set cannot be removed.
-- [HMError.Code.noRegisteredActionSets](hmerror/code/noregisteredactionsets.md)
+- [HMError.Code.noRegisteredActionSets](./noregisteredactionsets.md)
   An attempt to activate a trigger with no action sets.
 
 

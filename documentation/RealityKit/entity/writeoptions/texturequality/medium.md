@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reduces more the texture file size. RealityKit might not preserve fine details to reach a small file size.
 
@@ -20,7 +21,8 @@ static var medium: Entity.WriteOptions.TextureQuality { get }
 
 ## See Also
 
-- [static var low: Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality/low.md)
+### Choosing a quality level
+- [static var low: Entity.WriteOptions.TextureQuality](./low.md)
   Aggressively reduces the texture file size. RealityKit can suppress some visual details to reach the smallest file size.
 
 

@@ -1,7 +1,8 @@
 # AutomaticTableStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default table style in the current context.
 
@@ -21,18 +22,19 @@ struct AutomaticTableStyle
 
 #### Overview
 
-You can also use [`automatic`](tablestyle/automatic.md) to construct this style.
+You can also use [`automatic`](./tablestyle/automatic.md) to construct this style.
 
 ## Relationships
 
 ### Conforms To
-- [TableStyle](tablestyle.md)
+- [TableStyle](./tablestyle.md)
 
 ## See Also
 
-- [struct InsetTableStyle](insettablestyle.md)
+### Supporting types
+- [struct InsetTableStyle](./insettablestyle.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [struct BorderedTableStyle](borderedtablestyle.md)
+- [struct BorderedTableStyle](./borderedtablestyle.md)
   The table style that describes the behavior and appearance of a table with standard border.
 
 

@@ -1,7 +1,8 @@
 # makeDataReady(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads sample data asynchronously for all sample buffers within a batch.
 
@@ -17,7 +18,15 @@ Loads sample data asynchronously for all sample buffers within a batch.
 ## Declaration
 
 ```swift
+func makeDataReady(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func makeDataReady() async throws
+```
+
+```objc
+- (void) makeDataReadyWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

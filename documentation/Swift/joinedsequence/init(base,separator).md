@@ -1,7 +1,8 @@
 # init(base:separator:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an iterator that presents the elements of the sequences traversed by `base`, concatenated using `separator`.
 
@@ -22,7 +23,7 @@ init<Separator>(base: Base, separator: Separator) where Separator : Sequence, Se
 
 #### Discussion
 
-> **Note**: O(`separator.count`).
+> **Complexity**: O(`separator.count`).
 
 
 ---

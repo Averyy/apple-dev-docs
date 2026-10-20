@@ -1,21 +1,26 @@
 # init(type:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activation descriptor with the activation type you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init?(type activationType: MLCActivationType)
+```
+
+```objc
++ (instancetype) descriptorWithType:(MLCActivationType) activationType;
 ```
 
 #### Discussion
@@ -24,11 +29,11 @@ Use this initializer to create one of the following activation descriptors:
 
 - **Absolute**: `f(x) = fabs(x)`
 
-Activation type: [`MLCActivationType.absolute`](mlcactivationtype/absolute.md)
+Activation type: [`MLCActivationType.absolute`](../mlcactivationtype/absolute.md)
 
 - **GELU**: `f(x) = x * CDF(x)`
 
-Activation type: [`MLCActivationType.gelu`](mlcactivationtype/gelu.md)
+Activation type: [`MLCActivationType.gelu`](../mlcactivationtype/gelu.md)
 
 - **Hard Swish**: `f(x) = 0, if x <= -3`
 
@@ -36,19 +41,19 @@ Activation type: [`MLCActivationType.gelu`](mlcactivationtype/gelu.md)
 
 `f(x) = x * (x + 3)/6`
 
-Activation type: [`MLCActivationType.hardSwish`](mlcactivationtype/hardswish.md)
+Activation type: [`MLCActivationType.hardSwish`](../mlcactivationtype/hardswish.md)
 
 - **Identity**: `f(x) = x`
 
-Activation type: [`MLCActivationType.none`](mlcactivationtype/none.md)
+Activation type: [`MLCActivationType.none`](../mlcactivationtype/none.md)
 
 - **LogSigmoid**: `f(x) = log(1 / (1 + exp(-x)))`
 
-Activation type: [`MLCActivationType.logSigmoid`](mlcactivationtype/logsigmoid.md)
+Activation type: [`MLCActivationType.logSigmoid`](../mlcactivationtype/logsigmoid.md)
 
 - **Parametric Soft Sign**: `f(x) = x / (1 + abs(x))`
 
-Activation type: [`MLCActivationType.softSign`](mlcactivationtype/softsign.md)
+Activation type: [`MLCActivationType.softSign`](../mlcactivationtype/softsign.md)
 
 - **SELU**: `f(x) = scale * (max(0, x) + min(0, α * (exp(x)−1)))`, where:
 
@@ -56,15 +61,15 @@ Activation type: [`MLCActivationType.softSign`](mlcactivationtype/softsign.md)
 
 `scale = 1.0507009873554804934193349852946`
 
-Activation type: [`MLCActivationType.selu`](mlcactivationtype/selu.md)
+Activation type: [`MLCActivationType.selu`](../mlcactivationtype/selu.md)
 
 - **Sigmoid**: `f(x) = 1 / (1 + e⁻ˣ)`
 
-Activation type: [`MLCActivationType.sigmoid`](mlcactivationtype/sigmoid.md)
+Activation type: [`MLCActivationType.sigmoid`](../mlcactivationtype/sigmoid.md)
 
 - **TanhShrink**: `f(x) = x - tanh(x)`
 
-Activation type: [`MLCActivationType.tanhShrink`](mlcactivationtype/tanhshrink.md)
+Activation type: [`MLCActivationType.tanhShrink`](../mlcactivationtype/tanhshrink.md)
 
 ## Parameters
 
@@ -72,13 +77,14 @@ Activation type: [`MLCActivationType.tanhShrink`](mlcactivationtype/tanhshrink.m
 
 ## See Also
 
-- [convenience init?(type: MLCActivationType, a: Float)](mlcactivationdescriptor/init(type:a:).md)
+### Creating Activation Descriptors
+- [convenience init?(type: MLCActivationType, a: Float)](./init%28type,a%29.md)
   Creates an activation descriptor with the activation type and parameter a that you specify.
-- [convenience init?(type: MLCActivationType, a: Float, b: Float)](mlcactivationdescriptor/init(type:a:b:).md)
+- [convenience init?(type: MLCActivationType, a: Float, b: Float)](./init%28type,a,b%29.md)
   Creates an activation descriptor with the activation type and parameters a and b that you specify.
-- [convenience init?(type: MLCActivationType, a: Float, b: Float, c: Float)](mlcactivationdescriptor/init(type:a:b:c:).md)
+- [convenience init?(type: MLCActivationType, a: Float, b: Float, c: Float)](./init%28type,a,b,c%29.md)
   Creates an activation descriptor with the activation type and parameters a, b, and c that you specify.
-- [enum MLCActivationType](mlcactivationtype.md)
+- [enum MLCActivationType](../mlcactivationtype.md)
   An activation type that you specify for an activation descriptor.
 
 

@@ -1,7 +1,8 @@
 # maxPacketSize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum packet size of the endpoint.
 
@@ -10,17 +11,18 @@ The maximum packet size of the endpoint.
 
 ## Declaration
 
-```swift
+```c
 UInt16 maxPacketSize;
 ```
 
 ## See Also
 
-- [type](iousbfindendpointrequest/1546255-type.md)
+### Getting the Properties
+- [type](./api-1546255-type.md)
   The type of endpoint.
-- [direction](iousbfindendpointrequest/1546504-direction.md)
+- [direction](./api-1546504-direction.md)
   The direction of the endpoint.
-- [interval](iousbfindendpointrequest/1546078-interval.md)
+- [interval](./api-1546078-interval.md)
   The polling interval for the endpoint in milliseconds.
 
 

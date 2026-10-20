@@ -1,23 +1,28 @@
 # CFNumberGetByteSize(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of bytes used by a CFNumber object to store its value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNumberGetByteSize(_ number: CFNumber!) -> CFIndex
+```
+
+```c
+extern CFIndex CFNumberGetByteSize(CFNumberRef number);
 ```
 
 #### Return Value
@@ -34,11 +39,12 @@ Because a CFNumber object might store a value using a type different from that o
 
 ## See Also
 
-- [func CFNumberGetType(CFNumber!) -> CFNumberType](cfnumbergettype(_:).md)
+### Getting Information About Numbers
+- [func CFNumberGetType(CFNumber!) -> CFNumberType](./cfnumbergettype%28_%29.md)
   Returns the type used by a CFNumber object to store its value.
-- [func CFNumberGetValue(CFNumber!, CFNumberType, UnsafeMutableRawPointer!) -> Bool](cfnumbergetvalue(_:_:_:).md)
+- [func CFNumberGetValue(CFNumber!, CFNumberType, UnsafeMutableRawPointer!) -> Bool](./cfnumbergetvalue%28_,_,_%29.md)
   Obtains the value of a CFNumber object cast to a specified type.
-- [func CFNumberIsFloatType(CFNumber!) -> Bool](cfnumberisfloattype(_:).md)
+- [func CFNumberIsFloatType(CFNumber!) -> Bool](./cfnumberisfloattype%28_%29.md)
   Determines whether a CFNumber object contains a value stored as one of the defined floating point types.
 
 

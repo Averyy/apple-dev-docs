@@ -1,17 +1,22 @@
 # close()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates the close process on an open L2CAP channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func close() -> IOReturn
+```
+
+```objc
+- (IOReturn) closeChannel;
 ```
 
 #### Return Value

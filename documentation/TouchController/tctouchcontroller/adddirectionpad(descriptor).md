@@ -1,7 +1,8 @@
 # addDirectionPad(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new direction pad control with the provided descriptor, and adds it to the touch controller.
 
@@ -16,6 +17,10 @@ Creates a new direction pad control with the provided descriptor, and adds it to
 func addDirectionPad(descriptor: TCDirectionPadDescriptor) -> TCDirectionPad
 ```
 
+```objc
+- (TCDirectionPad *) addDirectionPadWithDescriptor:(TCDirectionPadDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCDirectionPad` instance.
@@ -26,7 +31,8 @@ A new `TCDirectionPad` instance.
 
 ## See Also
 
-- [class TCDirectionPadDescriptor](tcdirectionpaddescriptor.md)
+### Adding a directional pad control
+- [class TCDirectionPadDescriptor](../tcdirectionpaddescriptor.md)
   A descriptor for configuring a directional pad.
 
 

@@ -1,7 +1,8 @@
 # statistic
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The common name for the counter set that contains GPU workload statistics.
 
@@ -19,30 +20,35 @@ The common name for the counter set that contains GPU workload statistics.
 static let statistic: MTLCommonCounterSet
 ```
 
+```c
+extern MTLCommonCounterSet MTLCommonCounterSetStatistic;
+```
+
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 
 The statistics counter set contains the following counters:
 
-- [`computeKernelInvocations`](mtlcommoncounter/computekernelinvocations.md)
-- [`vertexInvocations`](mtlcommoncounter/vertexinvocations.md)
-- [`fragmentInvocations`](mtlcommoncounter/fragmentinvocations.md)
-- [`fragmentsPassed`](mtlcommoncounter/fragmentspassed.md)
-- [`tessellationInputPatches`](mtlcommoncounter/tessellationinputpatches.md)
-- [`postTessellationVertexInvocations`](mtlcommoncounter/posttessellationvertexinvocations.md)
-- [`clipperInvocations`](mtlcommoncounter/clipperinvocations.md)
-- [`clipperPrimitivesOut`](mtlcommoncounter/clipperprimitivesout.md)
+- [`computeKernelInvocations`](../mtlcommoncounter/computekernelinvocations.md)
+- [`vertexInvocations`](../mtlcommoncounter/vertexinvocations.md)
+- [`fragmentInvocations`](../mtlcommoncounter/fragmentinvocations.md)
+- [`fragmentsPassed`](../mtlcommoncounter/fragmentspassed.md)
+- [`tessellationInputPatches`](../mtlcommoncounter/tessellationinputpatches.md)
+- [`postTessellationVertexInvocations`](../mtlcommoncounter/posttessellationvertexinvocations.md)
+- [`clipperInvocations`](../mtlcommoncounter/clipperinvocations.md)
+- [`clipperPrimitivesOut`](../mtlcommoncounter/clipperprimitivesout.md)
 
-Use this name to check whether a GPU device supports the corresponding counter set (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+Use this name to check whether a GPU device supports the corresponding counter set (see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 
 ## See Also
 
-- [static let timestamp: MTLCommonCounterSet](mtlcommoncounterset/timestamp.md)
+### Common counter set names
+- [static let timestamp: MTLCommonCounterSet](./timestamp.md)
   The common name for the counter set that contains the timestamp counter.
-- [static let stageUtilization: MTLCommonCounterSet](mtlcommoncounterset/stageutilization.md)
+- [static let stageUtilization: MTLCommonCounterSet](./stageutilization.md)
   The common name for the counter set that contains hardware utilization measurements from various render stages.
 
 

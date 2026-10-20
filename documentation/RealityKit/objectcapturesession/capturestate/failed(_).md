@@ -1,7 +1,8 @@
 # ObjectCaptureSession.CaptureState.failed(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There was an unrecoverable error and the session is now invalid and needs to be torn down.
 

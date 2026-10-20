@@ -1,7 +1,8 @@
 # init(identifier:expiration:priority:isFinal:antecedent:metadata:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a custom message context you use to send data.
 
@@ -22,7 +23,8 @@ override init(identifier: String, expiration: UInt64 = super, priority: Double =
 
 ## See Also
 
-- [static let `default`: NWConnectionGroup.Message](nwconnectiongroup/message/default.md)
+### Sending Messages
+- [static let `default`: NWConnectionGroup.Message](./default.md)
   A static object you use to send a message with default properties.
 
 

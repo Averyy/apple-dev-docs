@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Modifies the format style to use the specified locale.
@@ -32,6 +33,12 @@ Use this format style to change the locale used by an existing format style.
 ## Parameters
 
 - `locale`: The locale to apply to the format style.
+
+## Default Implementations
+
+### FormatStyle Implementations
+- [func locale(Locale) -> Self](./locale%28_%29-7c6hb.md)
+  Modifies the format style to use the specified locale.
 
 
 ---

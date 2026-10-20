@@ -1,7 +1,8 @@
 # zlarf1l_(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func zlarf1l_(_ side: UnsafePointer<CChar>, _ m: UnsafePointer<__LAPACK_int>, _ n: UnsafePointer<__LAPACK_int>, _ v: OpaquePointer?, _ incv: UnsafePointer<__LAPACK_int>, _ tau: OpaquePointer, _ c: OpaquePointer?, _ ldc: UnsafePointer<__LAPACK_int>, _ work: OpaquePointer?)
+```
+
+```c
+void zlarf1l_(const char *side, const __LAPACK_int *m, const __LAPACK_int *n, const __LAPACK_double_complex *v, const __LAPACK_int *incv, const __LAPACK_double_complex *tau, __LAPACK_double_complex *c, const __LAPACK_int *ldc, __LAPACK_double_complex *work);
 ```
 
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -15,10 +16,15 @@
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isEnabled;
+```
+
 ## See Also
 
-- [var isAwaitingUserApproval: Bool](ossystemextensionproperties/isawaitinguserapproval.md)
-- [var isUninstalling: Bool](ossystemextensionproperties/isuninstalling.md)
+### Instance Properties
+- [var isAwaitingUserApproval: Bool](./isawaitinguserapproval.md)
+- [var isUninstalling: Bool](./isuninstalling.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # recordChangeTag
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the server change token for the record.
 
@@ -10,7 +11,7 @@ A string that contains the server change token for the record.
 
 ## Declaration
 
-```swift
+```
 attribute string recordChangeTag;
 ```
 

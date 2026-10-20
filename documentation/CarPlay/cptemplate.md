@@ -1,7 +1,8 @@
 # CPTemplate
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for interface templates.
 
@@ -17,66 +18,71 @@ An abstract base class for interface templates.
 class CPTemplate
 ```
 
+```objc
+@interface CPTemplate : NSObject
+```
+
 #### Overview
 
 `CPTemplate` is an abstract base class for defining CarPlay user interface templates. It provides the common functionality present in all templates.
 
-You don’t use this class directly, or create your own subclasses. Instead, you must use one of the prebuilt templates, such as [`CPListTemplate`](cplisttemplate.md) or [`CPGridTemplate`](cpgridtemplate.md).
+You don’t use this class directly, or create your own subclasses. Instead, you must use one of the prebuilt templates, such as [`CPListTemplate`](./cplisttemplate.md) or [`CPGridTemplate`](./cpgridtemplate.md).
 
 ## Topics
 
 ### Accessing Template Information
-- [var userInfo: Any?](cptemplate/userinfo.md)
+- [var userInfo: Any?](./cptemplate/userinfo.md)
   Any custom data or object that you want to associate with the template.
 ### Accessing Tab Information
-- [var tabTitle: String?](cptemplate/tabtitle.md)
+- [var tabTitle: String?](./cptemplate/tabtitle.md)
   A short title that describes the content of the tab.
-- [var tabImage: UIImage?](cptemplate/tabimage.md)
+- [var tabImage: UIImage?](./cptemplate/tabimage.md)
   An image that represents the content of the tab.
-- [var tabSystemItem: UITabBarItem.SystemItem](cptemplate/tabsystemitem.md)
+- [var tabSystemItem: UITabBarItem.SystemItem](./cptemplate/tabsystemitem.md)
   A system object that provides a title and image for common tab content, such as contacts or favorites.
-- [var showsTabBadge: Bool](cptemplate/showstabbadge.md)
+- [var showsTabBadge: Bool](./cptemplate/showstabbadge.md)
   An indicator you use to call attention to the tab.
 ### Initializers
-- [init?(coder: NSCoder)](cptemplate/init(coder:).md)
+- [init?(coder: NSCoder)](./cptemplate/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CPActionSheetTemplate](cpactionsheettemplate.md)
-- [CPAlertTemplate](cpalerttemplate.md)
-- [CPContactTemplate](cpcontacttemplate.md)
-- [CPGridTemplate](cpgridtemplate.md)
-- [CPInformationTemplate](cpinformationtemplate.md)
-- [CPListTemplate](cplisttemplate.md)
-- [CPMapTemplate](cpmaptemplate.md)
-- [CPNowPlayingTemplate](cpnowplayingtemplate.md)
-- [CPPointOfInterestTemplate](cppointofinteresttemplate.md)
-- [CPSearchTemplate](cpsearchtemplate.md)
-- [CPTabBarTemplate](cptabbartemplate.md)
-- [CPVoiceControlTemplate](cpvoicecontroltemplate.md)
+- [CPActionSheetTemplate](./cpactionsheettemplate.md)
+- [CPAlertTemplate](./cpalerttemplate.md)
+- [CPContactTemplate](./cpcontacttemplate.md)
+- [CPGridTemplate](./cpgridtemplate.md)
+- [CPInformationTemplate](./cpinformationtemplate.md)
+- [CPListTemplate](./cplisttemplate.md)
+- [CPMapTemplate](./cpmaptemplate.md)
+- [CPNowPlayingTemplate](./cpnowplayingtemplate.md)
+- [CPPointOfInterestTemplate](./cppointofinteresttemplate.md)
+- [CPSearchTemplate](./cpsearchtemplate.md)
+- [CPTabBarTemplate](./cptabbartemplate.md)
+- [CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class CPListTemplate](cplisttemplate.md)
+### General Purpose Templates
+- [class CPListTemplate](./cplisttemplate.md)
   A template that displays and manages a list of items.
-- [class CPGridTemplate](cpgridtemplate.md)
+- [class CPGridTemplate](./cpgridtemplate.md)
   A template that displays and manages a grid of items.
-- [class CPTabBarTemplate](cptabbartemplate.md)
+- [class CPTabBarTemplate](./cptabbartemplate.md)
   A container template that displays and manages other templates, presenting them as tabs.
-- [protocol CPBarButtonProviding](cpbarbuttonproviding.md)
+- [protocol CPBarButtonProviding](./cpbarbuttonproviding.md)
   The methods that templates use to provide buttons for the navigation bar.
 
 

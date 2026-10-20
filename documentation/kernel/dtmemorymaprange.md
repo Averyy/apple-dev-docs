@@ -1,14 +1,15 @@
 # DTMemoryMapRange
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct DTMemoryMapRange {
     ...
 } DTMemoryMapRange;
@@ -17,8 +18,8 @@ typedef struct DTMemoryMapRange {
 ## Topics
 
 ### Instance Properties
-- [length](dtmemorymaprange/4395335-length.md)
-- [paddr](dtmemorymaprange/4395336-paddr.md)
+- [length](./dtmemorymaprange/api-4395335-length.md)
+- [paddr](./dtmemorymaprange/api-4395336-paddr.md)
 
 
 ---

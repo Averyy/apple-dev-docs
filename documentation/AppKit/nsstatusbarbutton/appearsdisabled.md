@@ -1,7 +1,8 @@
 # appearsDisabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the status bar icon has a disabled/off appearance while still being functional, such as allowing selection and actions.
 
@@ -12,6 +13,10 @@ Determines whether the status bar icon has a disabled/off appearance while still
 
 ```swift
 var appearsDisabled: Bool { get set }
+```
+
+```objc
+@property BOOL appearsDisabled;
 ```
 
 #### Discussion

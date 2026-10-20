@@ -1,7 +1,8 @@
 # intendedSpatialExperience
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spatial audio experience your app intends to provide the user.
 
@@ -17,16 +18,17 @@ var intendedSpatialExperience: any AVAudioSessionSpatialExperience { get }
 
 ## See Also
 
-- [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](avaudiosession/setintendedspatialexperience(_:).md)
+### Configuring the spatial experience
+- [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](./setintendedspatialexperience%28_%29.md)
   Sets the spatial audio experience your app intends to provide the user.
-- [protocol AVAudioSessionSpatialExperience](avaudiosessionspatialexperience-swift.protocol.md)
-- [AVAudioSession.SoundStageSize](avaudiosession/soundstagesize.md)
+- [protocol AVAudioSessionSpatialExperience](../avaudiosessionspatialexperience-swift.protocol.md)
+- [AVAudioSession.SoundStageSize](./soundstagesize.md)
   Constants that specify the perceived size of sounds the audio session plays.
-- [AVAudioSession.AnchoringStrategy](avaudiosession/anchoringstrategy.md)
+- [AVAudioSession.AnchoringStrategy](./anchoringstrategy.md)
   Constants that specify how to set the origin of audio in a head-tracked spatial experience.
-- [var isNowPlayingCandidate: Bool](avaudiosession/isnowplayingcandidate.md)
+- [var isNowPlayingCandidate: Bool](./isnowplayingcandidate.md)
   A Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
-- [func setIsNowPlayingCandidate(Bool) throws](avaudiosession/setisnowplayingcandidate(_:).md)
+- [func setIsNowPlayingCandidate(Bool) throws](./setisnowplayingcandidate%28_%29.md)
   Sets a Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
 
 

@@ -1,7 +1,8 @@
 # GameCenterActivityCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an activity resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an activity resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityCreateRequest.Data.Attributes
 ```
 
@@ -18,7 +19,7 @@ object GameCenterActivityCreateRequest.Data.Attributes
 
 - `maximumPlayersCount` (integer)
 - `minimumPlayersCount` (integer)
-- `playStyle` (string)
+- `playStyle` (string): **Allowed Values**: `ASYNCHRONOUS`, `SYNCHRONOUS`
 - `properties` (StringToStringMap)
 - `referenceName` (string) *(required)*
 - `supportsPartyCode` (boolean)

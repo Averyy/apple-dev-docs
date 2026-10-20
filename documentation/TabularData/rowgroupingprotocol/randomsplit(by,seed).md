@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates two row groupings by randomly splitting the original by a proportion.
@@ -32,7 +33,8 @@ A tuple of two data row grouping types.
 
 ## See Also
 
-- [func randomSplit(by: Double) -> (Self, Self)](rowgroupingprotocol/randomsplit(by:).md)
+### Splitting a Row Grouping
+- [func randomSplit(by: Double) -> (Self, Self)](./randomsplit%28by%29.md)
   Generates two row groupings by randomly splitting the original with a proportion.
 
 

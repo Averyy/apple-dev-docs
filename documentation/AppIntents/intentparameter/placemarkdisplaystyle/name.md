@@ -1,7 +1,8 @@
 # IntentParameter.PlacemarkDisplayStyle.name
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A display style that shows only the location’s city.
 
@@ -11,7 +12,7 @@ A display style that shows only the location’s city.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case name
 
 ## See Also
 
-- [IntentParameter.PlacemarkDisplayStyle.address](intentparameter/placemarkdisplaystyle/address.md)
+### Getting the display styles
+- [IntentParameter.PlacemarkDisplayStyle.address](./address.md)
   A display style that shows the location’s full address.
-- [IntentParameter.PlacemarkDisplayStyle.city](intentparameter/placemarkdisplaystyle/city.md)
+- [IntentParameter.PlacemarkDisplayStyle.city](./city.md)
   A display style that shows only the location’s city.
 
 

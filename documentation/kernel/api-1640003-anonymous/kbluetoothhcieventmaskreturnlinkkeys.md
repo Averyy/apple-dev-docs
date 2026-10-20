@@ -1,14 +1,15 @@
 # kBluetoothHCIEventMaskReturnLinkKeys
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIEventMaskReturnLinkKeys = 0x00100000
 ```
 

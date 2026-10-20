@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the grant, removing the capability from the process it was granted to.
 
@@ -18,11 +19,12 @@ func invalidate()
 
 ## Mentions
 
-- [Managing the browser extension life cycle](managing-the-browser-extension-lifecycle.md)
+- [Managing the browser extension life cycle](../../managing-the-browser-extension-lifecycle.md)
 
 ## See Also
 
-- [var isValid: Bool](processcapability/grant/isvalid.md)
+### Testing and changing validity
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the system honors a granted capability for the browser extension process.
 
 

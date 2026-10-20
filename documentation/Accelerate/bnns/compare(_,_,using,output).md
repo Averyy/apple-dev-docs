@@ -1,7 +1,8 @@
 # compare(_:_:using:output:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs an elementwise comparison of two array descriptors using the specified relational operator.
 
@@ -11,8 +12,10 @@ Performs an elementwise comparison of two array descriptors using the specified 
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -30,14 +33,15 @@ static func compare(_ inputA: BNNSNDArrayDescriptor, _ inputB: BNNSNDArrayDescri
 ## Topics
 
 ### Specifying a Relational Operator
-- [struct RelationalOperator](bnns/relationaloperator.md)
+- [struct RelationalOperator](./relationaloperator.md)
   Constants that describe relational operations.
 
 ## See Also
 
-- [struct BNNSRelationalOperator](bnnsrelationaloperator.md)
+### Tensor comparison layers
+- [struct BNNSRelationalOperator](../bnnsrelationaloperator.md)
   Constants that describe relational operations.
-- [func BNNSCompareTensor(UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, BNNSRelationalOperator, UnsafeMutablePointer<BNNSNDArrayDescriptor>) -> Int32](bnnscomparetensor(_:_:_:_:).md)
+- [func BNNSCompareTensor(UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, BNNSRelationalOperator, UnsafeMutablePointer<BNNSNDArrayDescriptor>) -> Int32](../bnnscomparetensor%28_,_,_,_%29.md)
   Returns a tensor of Boolean type by comparing or performing a logical operation between two inputs.
 
 

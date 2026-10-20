@@ -1,7 +1,8 @@
 # ARImageAnchor
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An anchor for a known image that ARKit detects in the physical environment.
 
@@ -15,47 +16,52 @@ An anchor for a known image that ARKit detects in the physical environment.
 class ARImageAnchor
 ```
 
+```objc
+@interface ARImageAnchor : ARAnchor
+```
+
 #### Overview
 
-When you run a world-tracking AR session and specify [`ARReferenceImage`](arreferenceimage.md) objects for the session configuration’s [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) property, ARKit searches for those images in the real-world environment. When the session recognizes an image, it automatically adds an [`ARImageAnchor`](arimageanchor.md) for each detected image to its list of anchors.
+When you run a world-tracking AR session and specify [`ARReferenceImage`](./arreferenceimage.md) objects for the session configuration’s [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) property, ARKit searches for those images in the real-world environment. When the session recognizes an image, it automatically adds an [`ARImageAnchor`](./arimageanchor.md) for each detected image to its list of anchors.
 
-To find the extent of a recognized image in the scene, use the inherited [`transform`](aranchor/transform.md) property together with the [`physicalSize`](arreferenceimage/physicalsize.md) of the anchor’s [`referenceImage`](arimageanchor/referenceimage.md).
+To find the extent of a recognized image in the scene, use the inherited [`transform`](./aranchor/transform.md) property together with the [`physicalSize`](./arreferenceimage/physicalsize.md) of the anchor’s [`referenceImage`](./arimageanchor/referenceimage.md).
 
 ## Topics
 
 ### Identifying Detected Images
-- [var referenceImage: ARReferenceImage](arimageanchor/referenceimage.md)
+- [var referenceImage: ARReferenceImage](./arimageanchor/referenceimage.md)
   The detected image referenced by the image anchor.
 ### Estimating Scale
-- [var estimatedScaleFactor: CGFloat](arimageanchor/estimatedscalefactor.md)
+- [var estimatedScaleFactor: CGFloat](./arimageanchor/estimatedscalefactor.md)
   A factor between the initial size and the estimated physical size.
 
 ## Relationships
 
 ### Inherits From
-- [ARAnchor](aranchor.md)
+- [ARAnchor](./aranchor.md)
 ### Conforms To
-- [ARAnchorCopying](aranchorcopying.md)
-- [ARTrackable](artrackable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ARAnchorCopying](./aranchorcopying.md)
+- [ARTrackable](./artrackable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Tracking and altering images](tracking-and-altering-images.md)
+### Image Detection
+- [Tracking and altering images](./tracking-and-altering-images.md)
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
-- [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
+- [Detecting Images in an AR Experience](./detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [class ARReferenceImage](arreferenceimage.md)
+- [class ARReferenceImage](./arreferenceimage.md)
   A 2D image that you want ARKit to detect in the physical environment.
 
 

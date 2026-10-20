@@ -1,7 +1,8 @@
 # stayActiveDuration
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var stayActiveDuration: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * stayActiveDuration;
 ```
 
 

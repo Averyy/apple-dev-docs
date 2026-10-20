@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new entity.
 
@@ -11,7 +12,7 @@ Creates a new entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,13 +23,14 @@ Creates a new entity.
 
 ## See Also
 
-- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+### Creating an entity
+- [convenience init(components: [any Component])](./init%28components%29-1lmhe.md)
   Creates an entity with multiple components.
-- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+- [convenience init(components: [any Component])](./init%28components%29-1lmhe.md)
   Creates an entity with multiple components.
-- [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
+- [func clone(recursive: Bool) -> Self](./clone%28recursive%29.md)
   Duplicates an entity to create a new entity.
-- [func didClone(from: Entity)](entity/didclone(from:).md)
+- [func didClone(from: Entity)](./didclone%28from%29.md)
   Tells a newly cloned entity that cloning is complete.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionStoreButtonLabel
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The label of the subscribe button that a subscription store view uses.
 
@@ -22,38 +23,39 @@ struct SubscriptionStoreButtonLabel
 ## Topics
 
 ### Instance Properties
-- [var action: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/action-swift.property.md)
-- [var displayName: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/displayname-swift.property.md)
-- [var multiline: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/multiline-swift.property.md)
-- [var price: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/price-swift.property.md)
-- [var singleLine: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/singleline-swift.property.md)
+- [var action: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/action-swift.property.md)
+- [var displayName: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/displayname-swift.property.md)
+- [var multiline: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/multiline-swift.property.md)
+- [var price: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/price-swift.property.md)
+- [var singleLine: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/singleline-swift.property.md)
 ### Type Properties
-- [static var action: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/action-swift.type.property.md)
-- [static var automatic: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/automatic.md)
-- [static var displayName: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/displayname-swift.type.property.md)
-- [static var multiline: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/multiline-swift.type.property.md)
-- [static var price: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/price-swift.type.property.md)
-- [static var singleLine: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/singleline-swift.type.property.md)
+- [static var action: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/action-swift.type.property.md)
+- [static var automatic: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/automatic.md)
+- [static var displayName: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/displayname-swift.type.property.md)
+- [static var multiline: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/multiline-swift.type.property.md)
+- [static var price: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/price-swift.type.property.md)
+- [static var singleLine: SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel/singleline-swift.type.property.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
+### Configuring subscription store controls
 - [func subscriptionStoreControlIcon(icon: (Product, Product.SubscriptionInfo) -> some View) -> some View
-](../swiftui/view/subscriptionstorecontrolicon(icon:).md)
+](../SwiftUI/view/subscriptionstorecontrolicon%28icon%29.md)
   Sets a view to use to decorate individual subscription options within a subscription store view.
 - [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some View
-](../swiftui/view/subscriptionstorepickeritembackground(_:).md)
+](../SwiftUI/view/subscriptionstorepickeritembackground%28_%29.md)
   Sets the background style for picker items of the subscription store view instances within a view.
 - [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some View
-](../swiftui/view/subscriptionstorepickeritembackground(_:in:).md)
+](../SwiftUI/view/subscriptionstorepickeritembackground%28_,in%29.md)
   Sets the background shape and style for subscription store view picker items within a view.
 - [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some View
-](../swiftui/view/subscriptionstorebuttonlabel(_:).md)
+](../SwiftUI/view/subscriptionstorebuttonlabel%28_%29.md)
   Configures subscription store view instances within a view to use the provided button label.
 
 

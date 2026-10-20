@@ -1,7 +1,8 @@
 # CMDroppedFrameReason.frameWasLate
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The frame was dropped because it was late.
 

@@ -1,7 +1,8 @@
 # text
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text of the label on a shield.
 

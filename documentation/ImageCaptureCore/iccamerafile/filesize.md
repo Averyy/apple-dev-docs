@@ -1,7 +1,8 @@
 # fileSize
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the file, in bytes.
 
@@ -16,6 +17,10 @@ The size of the file, in bytes.
 
 ```swift
 var fileSize: off_t { get }
+```
+
+```objc
+@property (nonatomic, readonly) off_t fileSize;
 ```
 
 

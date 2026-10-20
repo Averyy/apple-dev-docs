@@ -1,7 +1,8 @@
 # netServiceBrowserDidStopSearch(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a search was stopped.
 
@@ -19,9 +20,13 @@ Tells the delegate that a search was stopped.
 optional func netServiceBrowserDidStopSearch(_ browser: NetServiceBrowser)
 ```
 
+```objc
+- (void) netServiceBrowserDidStopSearch:(NSNetServiceBrowser *) browser;
+```
+
 #### Discussion
 
-When `netServiceBrowser` receives a [`stop()`](netservicebrowser/stop().md) message from its client, `netServiceBrowser` sends a `netServiceBrowserDidStopSearch:` message to its delegate. The delegate then performs any necessary cleanup.
+When `netServiceBrowser` receives a [`stop()`](../netservicebrowser/stop%28%29.md) message from its client, `netServiceBrowser` sends a `netServiceBrowserDidStopSearch:` message to its delegate. The delegate then performs any necessary cleanup.
 
 ## Parameters
 
@@ -29,19 +34,21 @@ When `netServiceBrowser` receives a [`stop()`](netservicebrowser/stop().md) mess
 
 ## See Also
 
-- [func stop()](netservicebrowser/stop.md)
+### Related Documentation
+- [func stop()](../netservicebrowser/stop%28%29.md)
   Halts a currently running search or resolution.
-- [func netServiceBrowser(NetServiceBrowser, didFindDomain: String, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didfinddomain:morecoming:).md)
+### Using Network Service Browsers
+- [func netServiceBrowser(NetServiceBrowser, didFindDomain: String, moreComing: Bool)](./netservicebrowser%28_,didfinddomain,morecoming%29.md)
   Tells the delegate the sender found a domain.
-- [func netServiceBrowser(NetServiceBrowser, didRemoveDomain: String, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didremovedomain:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didRemoveDomain: String, moreComing: Bool)](./netservicebrowser%28_,didremovedomain,morecoming%29.md)
   Tells the delegate the a domain has disappeared or has become unavailable.
-- [func netServiceBrowser(NetServiceBrowser, didFind: NetService, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didfind:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didFind: NetService, moreComing: Bool)](./netservicebrowser%28_,didfind,morecoming%29.md)
   Tells the delegate the sender found a service.
-- [func netServiceBrowser(NetServiceBrowser, didRemove: NetService, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didremove:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didRemove: NetService, moreComing: Bool)](./netservicebrowser%28_,didremove,morecoming%29.md)
   Tells the delegate a service has disappeared or has become unavailable.
-- [func netServiceBrowserWillSearch(NetServiceBrowser)](netservicebrowserdelegate/netservicebrowserwillsearch(_:).md)
+- [func netServiceBrowserWillSearch(NetServiceBrowser)](./netservicebrowserwillsearch%28_%29.md)
   Tells the delegate that a search is commencing.
-- [func netServiceBrowser(NetServiceBrowser, didNotSearch: [String : NSNumber])](netservicebrowserdelegate/netservicebrowser(_:didnotsearch:).md)
+- [func netServiceBrowser(NetServiceBrowser, didNotSearch: [String : NSNumber])](./netservicebrowser%28_,didnotsearch%29.md)
   Tells the delegate that a search was not successful.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from a custom material’s ambient occlusion property.
 
@@ -24,7 +25,8 @@ init(_ value: CustomMaterial.AmbientOcclusion)
 
 ## See Also
 
-- [init(texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/ambientocclusion-swift.struct/init(texture:).md)
+### Creating an ambient occlusion object
+- [init(texture: PhysicallyBasedMaterial.Texture?)](./init%28texture%29.md)
   Creates an object from an image texture.
 
 

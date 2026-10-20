@@ -1,7 +1,8 @@
 # dependentMorphology
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dependent morphology of the pronoun form.
 
@@ -22,9 +23,10 @@ var dependentMorphology: Morphology?
 
 ## See Also
 
-- [var pronoun: String](morphology/pronoun/pronoun.md)
+### Using pronouns
+- [var pronoun: String](./pronoun.md)
   The string representation of the pronoun.
-- [var morphology: Morphology](morphology/pronoun/morphology.md)
+- [var morphology: Morphology](./morphology.md)
   The morphology of the pronoun form.
 
 

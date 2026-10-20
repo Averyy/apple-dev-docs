@@ -1,7 +1,8 @@
 # GameCenterLeaderboardGroupLeaderboardLinkageResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the group leaderboard associated with a leaderboard.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the group leaderboard associated with a le
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardGroupLeaderboardLinkageResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboards`
 
 
 ---

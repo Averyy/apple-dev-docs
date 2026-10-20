@@ -1,7 +1,8 @@
 # ValidateApplicationsCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to force validation of developer and universal provisioning profiles for enterprise apps.
 
@@ -14,14 +15,14 @@ The command to force validation of developer and universal provisioning profiles
 
 ## Declaration
 
-```swift
+```
 object ValidateApplicationsCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ValidateApplicationsCommand.Command](validateapplicationscommand/command-data.dictionary.md)
+- [object ValidateApplicationsCommand.Command](./validateapplicationscommand/command-data.dictionary.md)
   The command to force validation of developer and universal provisioning profiles for enterprise apps.
 
 ## Properties
@@ -31,7 +32,8 @@ object ValidateApplicationsCommand
 
 ## See Also
 
-- [object ValidateApplicationsResponse](validateapplicationsresponse.md)
+### Commands and responses
+- [object ValidateApplicationsResponse](./validateapplicationsresponse.md)
   A response from the device after it processes the command to force validation of developer and universal provisioning profiles for enterprise apps.
 
 

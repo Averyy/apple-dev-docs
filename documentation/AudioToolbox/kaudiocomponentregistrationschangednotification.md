@@ -1,7 +1,8 @@
 # kAudioComponentRegistrationsChangedNotification
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -17,12 +18,17 @@
 let kAudioComponentRegistrationsChangedNotification: CFString
 ```
 
+```c
+extern CFStringRef const kAudioComponentRegistrationsChangedNotification;
+```
+
 ## See Also
 
-- [var kAudioComponentConfigurationInfo_ValidationResult: String](kaudiocomponentconfigurationinfo_validationresult.md)
-- [let kAudioComponentInstanceInvalidationNotification: CFString](kaudiocomponentinstanceinvalidationnotification.md)
-- [var kAudioComponentValidationParameter_ForceValidation: String](kaudiocomponentvalidationparameter_forcevalidation.md)
-- [var kAudioComponentValidationParameter_TimeOut: String](kaudiocomponentvalidationparameter_timeout.md)
+### Constants
+- [var kAudioComponentConfigurationInfo_ValidationResult: String](./kaudiocomponentconfigurationinfo_validationresult.md)
+- [let kAudioComponentInstanceInvalidationNotification: CFString](./kaudiocomponentinstanceinvalidationnotification.md)
+- [var kAudioComponentValidationParameter_ForceValidation: String](./kaudiocomponentvalidationparameter_forcevalidation.md)
+- [var kAudioComponentValidationParameter_TimeOut: String](./kaudiocomponentvalidationparameter_timeout.md)
 
 
 ---

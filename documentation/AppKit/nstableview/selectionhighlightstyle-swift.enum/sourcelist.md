@@ -1,10 +1,13 @@
 # NSTableView.SelectionHighlightStyle.sourceList
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 12.0
+
+> **Deprecated**: Set the NSTableView.style property to NSTableViewStyleSourceList instead.
 
 ## Declaration
 
@@ -12,16 +15,21 @@
 case sourceList
 ```
 
+```c
+NSTableViewSelectionHighlightStyleSourceList
+```
+
 #### Discussion
 
 The source list style of NSTableView. On 10.5, a light blue gradient is used to highlight selected rows.
 
-> **Note**:  When using this style, cell subclasses that implement `drawsBackground` must set the value to [`false`](https://developer.apple.com/documentation/swift/false). Otherwise, the cells will draw over the tableview’s highlighting.
+> **Note**:  When using this style, cell subclasses that implement `drawsBackground` must set the value to [`false`](../../../Swift/false.md). Otherwise, the cells will draw over the tableview’s highlighting.
 
 ## See Also
 
-- [NSTableView.SelectionHighlightStyle.none](nstableview/selectionhighlightstyle-swift.enum/none.md)
-- [NSTableView.SelectionHighlightStyle.regular](nstableview/selectionhighlightstyle-swift.enum/regular.md)
+### Constants
+- [NSTableView.SelectionHighlightStyle.none](./none.md)
+- [NSTableView.SelectionHighlightStyle.regular](./regular.md)
 
 
 ---

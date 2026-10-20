@@ -1,7 +1,8 @@
 # loadInstrument(at:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the sampler with the specified instrument file.
 
@@ -19,6 +20,10 @@ Configures the sampler with the specified instrument file.
 func loadInstrument(at instrumentURL: URL) throws
 ```
 
+```objc
+- (BOOL) loadInstrumentAtURL:(NSURL *) instrumentURL error:(NSError **) outError;
+```
+
 #### Discussion
 
 The instrument can be one of the following types: Logic or GarageBand `EXS24`, the sampler’s native `aupreset` file, or an audio file, such as `caf`, `aiff`, `wav`, or `mp3`.
@@ -31,9 +36,10 @@ For a single audio file, the framework loads it into a new default instrument an
 
 ## See Also
 
-- [func loadAudioFiles(at: [URL]) throws](avaudiounitsampler/loadaudiofiles(at:).md)
+### Configuring the sampler Audio Unit
+- [func loadAudioFiles(at: [URL]) throws](./loadaudiofiles%28at%29.md)
   Configures the sampler by loading the specified audio files.
-- [func loadSoundBankInstrument(at: URL, program: UInt8, bankMSB: UInt8, bankLSB: UInt8) throws](avaudiounitsampler/loadsoundbankinstrument(at:program:bankmsb:banklsb:).md)
+- [func loadSoundBankInstrument(at: URL, program: UInt8, bankMSB: UInt8, bankLSB: UInt8) throws](./loadsoundbankinstrument%28at,program,bankmsb,banklsb%29.md)
   Loads a specific instrument from the specified soundbank.
 
 

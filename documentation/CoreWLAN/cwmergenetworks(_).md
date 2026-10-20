@@ -1,7 +1,8 @@
 # CWMergeNetworks(_:)
 
 **Framework**: Core WLAN  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Merges the specified set of CWNetwork objects.
 
@@ -14,6 +15,10 @@ Merges the specified set of CWNetwork objects.
 func CWMergeNetworks(_ networks: Set<CWNetwork>) -> Set<CWNetwork>
 ```
 
+```c
+NSSet<CWNetwork *> *CWMergeNetworks(NSSet<CWNetwork *> *networks);
+```
+
 #### Discussion
 
 Duplicate networks are defined as networks with the same SSID, security type, and BSS type. When duplicates are found, the network with the best RSSI value will remain.
@@ -24,7 +29,8 @@ Duplicate networks are defined as networks with the same SSID, security type, an
 
 ## See Also
 
-- [func CWKeychainCopyEAPIdentityList(UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> OSStatus](cwkeychaincopyeapidentitylist(_:).md)
+### Utility Methods
+- [func CWKeychainCopyEAPIdentityList(UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> OSStatus](./cwkeychaincopyeapidentitylist%28_%29.md)
   Finds and returns the available identities stored in the keychain.
 
 

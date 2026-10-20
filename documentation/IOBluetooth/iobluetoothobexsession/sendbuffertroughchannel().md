@@ -1,17 +1,22 @@
 # sendBufferTroughChannel()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the next block of data through the rfcomm channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sendBufferTroughChannel() -> IOReturn
+```
+
+```objc
+- (IOReturn) sendBufferTroughChannel;
 ```
 
 #### Discussion

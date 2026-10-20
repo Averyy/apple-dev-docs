@@ -1,7 +1,8 @@
 # previewAssets
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preview assets for the playlist entry’s item.
 

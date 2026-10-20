@@ -1,9 +1,10 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A set containing all four of the [`SquareAzimuth`](squareazimuth.md) constants.
+A set containing all four of the [`SquareAzimuth`](../../squareazimuth.md) constants.
 
 **Availability**:
 - visionOS 2.0+

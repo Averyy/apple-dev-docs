@@ -1,7 +1,8 @@
 # SecProtocolType.SSH
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates SSH.
 
@@ -13,6 +14,10 @@ Indicates SSH.
 
 ```swift
 case SSH
+```
+
+```c
+kSecProtocolTypeSSH
 ```
 
 

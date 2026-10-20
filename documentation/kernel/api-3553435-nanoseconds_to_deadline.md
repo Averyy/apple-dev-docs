@@ -1,14 +1,15 @@
 # nanoseconds_to_deadline
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void nanoseconds_to_deadline(uint64_t interval, uint64_t *result);
 ```
 

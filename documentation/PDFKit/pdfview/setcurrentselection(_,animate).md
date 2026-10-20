@@ -1,7 +1,8 @@
 # setCurrentSelection(_:animate:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current selection, in an animated way, if desired.
 
@@ -19,23 +20,28 @@ Sets the current selection, in an animated way, if desired.
 func setCurrentSelection(_ selection: PDFSelection?, animate: Bool)
 ```
 
+```objc
+- (void) setCurrentSelection:(PDFSelection *) selection animate:(BOOL) animate;
+```
+
 #### Discussion
 
-This method behaves as `setCurrentSelection(_:)`, but with the addition of animation, if `animate` is [`true`](https://developer.apple.com/documentation/swift/true). The animation serves to draw the user’s attention to the new selection, which can be useful when implementing search.
+This method behaves as `setCurrentSelection(_:)`, but with the addition of animation, if `animate` is [`true`](../../Swift/true.md). The animation serves to draw the user’s attention to the new selection, which can be useful when implementing search.
 
 ## See Also
 
-- [var currentSelection: PDFSelection?](pdfview/currentselection.md)
+### Handling Selections
+- [var currentSelection: PDFSelection?](./currentselection.md)
   The current selection.
-- [func selectAll(Any?)](pdfview/selectall(_:).md)
+- [func selectAll(Any?)](./selectall%28_%29.md)
   Selects all text in the document.
-- [func clearSelection()](pdfview/clearselection.md)
+- [func clearSelection()](./clearselection%28%29.md)
   Clears the selection.
-- [func copy(Any?)](pdfview/copy(_:).md)
+- [func copy(Any?)](./copy%28_%29.md)
   Copies the text in the selection, if any, to the Pasteboard.
-- [func scrollSelectionToVisible(Any?)](pdfview/scrollselectiontovisible(_:).md)
+- [func scrollSelectionToVisible(Any?)](./scrollselectiontovisible%28_%29.md)
   Scrolls the view until the selection is visible.
-- [var highlightedSelections: [PDFSelection]?](pdfview/highlightedselections.md)
+- [var highlightedSelections: [PDFSelection]?](./highlightedselections.md)
   Returns the array of selections that are highlighted using `setHighlightedSelections`.
 
 

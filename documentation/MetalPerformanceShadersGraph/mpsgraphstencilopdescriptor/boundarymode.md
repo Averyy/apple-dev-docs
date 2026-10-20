@@ -1,7 +1,8 @@
 # boundaryMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that determines which values to use for padding the input tensor.
 
@@ -17,6 +18,10 @@ The property that determines which values to use for padding the input tensor.
 
 ```swift
 var boundaryMode: MPSGraphPaddingMode { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphPaddingMode boundaryMode;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # textField(_:editMenuForCharactersInRanges:suggestedActions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func textField(_ textField: UITextField, editMenuForCharactersInRanges ranges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?
+```
+
+```objc
+- (UIMenu *) textField:(UITextField *) textField editMenuForCharactersInRanges:(NSArray<NSValue *> *) ranges suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
 #### Return Value

@@ -1,12 +1,15 @@
 # makeAttributedString(font:foregroundColor:textAlignment:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convenience method for configuring an attributed string given the specified attributes.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Convenience method for configuring an attributed string given the specified attr
 func makeAttributedString(font: UIFont, foregroundColor: UIColor?, textAlignment alignment: NSTextAlignment) -> NSAttributedString
 ```
 
+```objc
+- (NSAttributedString *) attributedStringWithFont:(UIFont *) font foregroundColor:(UIColor *) foregroundColor textAlignment:(NSTextAlignment) alignment;
+```
+
 #### Return Value
 
-An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object with the applied attributes.
+An [`NSAttributedString`](../../Foundation/nsattributedstring.md) object with the applied attributes.
 
 #### Discussion
 
-Supply a font to this method to get the [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) representation of the text contained within an element. Use the `foregroundColor` and `alignment` parameters to override the value specified in the text element.
+Supply a font to this method to get the [`NSAttributedString`](../../Foundation/nsattributedstring.md) representation of the text contained within an element. Use the `foregroundColor` and `alignment` parameters to override the value specified in the text element.
 
 ## Parameters
 
@@ -30,7 +37,8 @@ Supply a font to this method to get the [`NSAttributedString`](https://developer
 
 ## See Also
 
-- [func makeAttributedString(font: UIFont) -> NSAttributedString](tvtextelement/makeattributedstring(font:).md)
+### Creating Attributed Strings
+- [func makeAttributedString(font: UIFont) -> NSAttributedString](./makeattributedstring%28font%29.md)
   Provides an attributed string for a given font.
 
 

@@ -1,7 +1,8 @@
 # kSpeechPhonemeCallBack
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Set the callback function to be called every time the Speech Synthesis Manager is about to generate a phoneme on the speech channel.
 
@@ -14,11 +15,15 @@ Set the callback function to be called every time the Speech Synthesis Manager i
 let kSpeechPhonemeCallBack: CFString
 ```
 
+```c
+const CFStringRef kSpeechPhonemeCallBack;
+```
+
 #### Discussion
 
-The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined phoneme callback function, whose syntax is described in [`SpeechPhonemeProcPtr`](speechphonemeprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the phoneme callback function.
+The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined phoneme callback function, whose syntax is described in [`SpeechPhonemeProcPtr`](./speechphonemeprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the phoneme callback function.
 
-This property works with the [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) function.
+This property works with the [`SetSpeechProperty(_:_:_:)`](./api-1459256-setspeechproperty.md) function.
 
 
 ---

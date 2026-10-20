@@ -1,7 +1,8 @@
 # kernelUserShared
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 static var kernelUserShared: IOUSBHostObjectDataOptions { get }
+```
+
+```c
+IOUSBHostObjectDataOptionsKernelUserShared
 ```
 
 

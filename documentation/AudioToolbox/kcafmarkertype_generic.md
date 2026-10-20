@@ -1,15 +1,16 @@
 # kCAFMarkerType_Generic
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,23 +18,28 @@
 var kCAFMarkerType_Generic: UInt32 { get }
 ```
 
+```c
+kCAFMarkerType_Generic
+```
+
 ## See Also
 
-- [var kCAFMarkerType_EditDestinationBegin: UInt32](kcafmarkertype_editdestinationbegin.md)
-- [var kCAFMarkerType_EditDestinationEnd: UInt32](kcafmarkertype_editdestinationend.md)
-- [var kCAFMarkerType_EditSourceBegin: UInt32](kcafmarkertype_editsourcebegin.md)
-- [var kCAFMarkerType_EditSourceEnd: UInt32](kcafmarkertype_editsourceend.md)
-- [var kCAFMarkerType_Index: UInt32](kcafmarkertype_index.md)
-- [var kCAFMarkerType_KeySignature: UInt32](kcafmarkertype_keysignature.md)
-- [var kCAFMarkerType_ProgramEnd: UInt32](kcafmarkertype_programend.md)
-- [var kCAFMarkerType_ProgramStart: UInt32](kcafmarkertype_programstart.md)
-- [var kCAFMarkerType_RegionEnd: UInt32](kcafmarkertype_regionend.md)
-- [var kCAFMarkerType_RegionStart: UInt32](kcafmarkertype_regionstart.md)
-- [var kCAFMarkerType_RegionSyncPoint: UInt32](kcafmarkertype_regionsyncpoint.md)
-- [var kCAFMarkerType_ReleaseLoopEnd: UInt32](kcafmarkertype_releaseloopend.md)
-- [var kCAFMarkerType_ReleaseLoopStart: UInt32](kcafmarkertype_releaseloopstart.md)
-- [var kCAFMarkerType_SavedPlayPosition: UInt32](kcafmarkertype_savedplayposition.md)
-- [var kCAFMarkerType_SelectionEnd: UInt32](kcafmarkertype_selectionend.md)
+### Constants
+- [var kCAFMarkerType_EditDestinationBegin: UInt32](./kcafmarkertype_editdestinationbegin.md)
+- [var kCAFMarkerType_EditDestinationEnd: UInt32](./kcafmarkertype_editdestinationend.md)
+- [var kCAFMarkerType_EditSourceBegin: UInt32](./kcafmarkertype_editsourcebegin.md)
+- [var kCAFMarkerType_EditSourceEnd: UInt32](./kcafmarkertype_editsourceend.md)
+- [var kCAFMarkerType_Index: UInt32](./kcafmarkertype_index.md)
+- [var kCAFMarkerType_KeySignature: UInt32](./kcafmarkertype_keysignature.md)
+- [var kCAFMarkerType_ProgramEnd: UInt32](./kcafmarkertype_programend.md)
+- [var kCAFMarkerType_ProgramStart: UInt32](./kcafmarkertype_programstart.md)
+- [var kCAFMarkerType_RegionEnd: UInt32](./kcafmarkertype_regionend.md)
+- [var kCAFMarkerType_RegionStart: UInt32](./kcafmarkertype_regionstart.md)
+- [var kCAFMarkerType_RegionSyncPoint: UInt32](./kcafmarkertype_regionsyncpoint.md)
+- [var kCAFMarkerType_ReleaseLoopEnd: UInt32](./kcafmarkertype_releaseloopend.md)
+- [var kCAFMarkerType_ReleaseLoopStart: UInt32](./kcafmarkertype_releaseloopstart.md)
+- [var kCAFMarkerType_SavedPlayPosition: UInt32](./kcafmarkertype_savedplayposition.md)
+- [var kCAFMarkerType_SelectionEnd: UInt32](./kcafmarkertype_selectionend.md)
 
 
 ---

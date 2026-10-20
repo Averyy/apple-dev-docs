@@ -1,7 +1,8 @@
 # lineStyle(by:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Represents data using line styles.
 
@@ -27,13 +28,14 @@ func lineStyle<D>(by value: PlottableValue<D>) -> some ChartContent where D : Pl
 
 ## See Also
 
-- [func foregroundStyle<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/foregroundstyle(by:).md)
+### Encoding data into mark characteristics
+- [func foregroundStyle<D>(by: PlottableValue<D>) -> some ChartContent](./foregroundstyle%28by%29.md)
   Represents data using a foreground style.
-- [func position<P>(by: PlottableValue<P>, axis: Axis?, span: MarkDimension) -> some ChartContent](chartcontent/position(by:axis:span:).md)
+- [func position<P>(by: PlottableValue<P>, axis: Axis?, span: MarkDimension) -> some ChartContent](./position%28by,axis,span%29.md)
   Represents data using position.
-- [func symbol<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/symbol(by:).md)
+- [func symbol<D>(by: PlottableValue<D>) -> some ChartContent](./symbol%28by%29.md)
   Represents data using different kinds of symbols.
-- [func symbolSize<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/symbolsize(by:).md)
+- [func symbolSize<D>(by: PlottableValue<D>) -> some ChartContent](./symbolsize%28by%29.md)
   Represents data using symbol sizes.
 
 

@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A representation of an “unknown” currency, for use with transactions that don’t involve any currency.
 
@@ -22,7 +23,8 @@ static let unknown: Locale.Currency
 
 ## See Also
 
-- [static var isoCurrencies: [Locale.Currency]](locale/currency-swift.struct/isocurrencies.md)
+### Using common currencies
+- [static var isoCurrencies: [Locale.Currency]](./isocurrencies.md)
   An array containing currencies defined by the currency codes in ISO-4217.
 
 

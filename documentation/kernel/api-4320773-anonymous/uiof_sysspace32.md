@@ -1,14 +1,15 @@
 # UIOF_SYSSPACE32
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 UIOF_SYSSPACE32 = (1 << UIO_SYSSPACE32)
 ```
 

@@ -1,7 +1,8 @@
 # instrumentActivity
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aggregated instrument activity results, identifying which instruments are present and when they’re active.
 
@@ -22,15 +23,16 @@ let instrumentActivity: InstrumentActivityResult?
 
 ## See Also
 
-- [let key: KeyResult?](musicunderstandingsession/sessionresult/key.md)
+### Getting music understanding session results
+- [let key: KeyResult?](./key.md)
   The aggregated key results, identifying the central note (tonic) and mode around which a piece of music is organized.
-- [let loudness: LoudnessResult?](musicunderstandingsession/sessionresult/loudness.md)
+- [let loudness: LoudnessResult?](./loudness.md)
   The aggregated loudness results, providing information about volume levels throughout the audio.
-- [let pace: PaceResult?](musicunderstandingsession/sessionresult/pace.md)
+- [let pace: PaceResult?](./pace.md)
   The aggregated pace results, describing the energy and momentum variations over time.
-- [let rhythm: RhythmResult?](musicunderstandingsession/sessionresult/rhythm.md)
+- [let rhythm: RhythmResult?](./rhythm.md)
   The aggregated rhythm results, including detected beats, bars, and BPM.
-- [let structure: StructureResult?](musicunderstandingsession/sessionresult/structure.md)
+- [let structure: StructureResult?](./structure.md)
   The aggregated structure results, identifying musical sections and their boundaries.
 
 

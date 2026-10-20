@@ -1,7 +1,8 @@
 # isEmojiModifier
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is one that can modify a base emoji that precedes it.
 
@@ -24,7 +25,7 @@ var isEmojiModifier: Bool { get }
 
 The Fitzpatrick skin types are examples of emoji modifiers; they change the appearance of the preceding emoji base (that is, a scalar for which `isEmojiModifierBase` is true) by rendering it with a different skin tone.
 
-This property corresponds to the “Emoji_Modifier” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Emoji_Modifier” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

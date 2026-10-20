@@ -1,12 +1,13 @@
 # isDragging
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the receiver is being dragged.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean that indicates whether the receiver is being dragged.
 var isDragging: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isDragging) BOOL dragging;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is being dragged, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the receiver is being dragged, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func draw(NSRect)](nsrulermarker/draw(_:).md)
+### Drawing and event handling
+- [func draw(NSRect)](./draw%28_%29.md)
   Draws the receiver’s image that appears in the supplied rectangle.
-- [func trackMouse(with: NSEvent, adding: Bool) -> Bool](nsrulermarker/trackmouse(with:adding:).md)
+- [func trackMouse(with: NSEvent, adding: Bool) -> Bool](./trackmouse%28with,adding%29.md)
   Handles user manipulation of the receiver in its ruler view.
 
 

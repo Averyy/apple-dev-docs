@@ -1,7 +1,8 @@
 # hard
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The code prefers to be denied access to resources if gaining access would invalidate it.
 
@@ -13,6 +14,10 @@ The code prefers to be denied access to resources if gaining access would invali
 
 ```swift
 static var hard: SecCodeStatus { get }
+```
+
+```c
+kSecCodeStatusHard
 ```
 
 #### Discussion

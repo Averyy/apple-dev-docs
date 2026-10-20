@@ -1,7 +1,8 @@
 # registerSoundAsset(data:identifier:format:normalizationMode:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a sound asset from memory and adds it to the engine’s list of registered assets.
 
@@ -19,6 +20,10 @@ Loads a sound asset from memory and adds it to the engine’s list of registered
 func registerSoundAsset(data: Data, identifier: String?, format: AVAudioFormat, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset
 ```
 
+```objc
+- (PHASESoundAsset *) registerSoundAssetWithData:(NSData *) data identifier:(NSString *) identifier format:(AVAudioFormat *) format normalizationMode:(PHASENormalizationMode) normalizationMode error:(NSError **) error;
+```
+
 #### Return Value
 
 A sound asset object. If an error occurs, the function returns `nil`.
@@ -32,9 +37,10 @@ A sound asset object. If an error occurs, the function returns `nil`.
 
 ## See Also
 
-- [func registerSoundAsset(url: URL, identifier: String?, assetType: PHASEAsset.AssetType, channelLayout: AVAudioChannelLayout?, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset](phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).md)
+### Registering Sound Assets
+- [func registerSoundAsset(url: URL, identifier: String?, assetType: PHASEAsset.AssetType, channelLayout: AVAudioChannelLayout?, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset](./registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md)
   Loads a sound asset from the argument URL and adds it to the engine’s list of registered assets.
-- [func unregisterAsset(identifier: String, completion: ((Bool) -> Void)?)](phaseassetregistry/unregisterasset(identifier:completion:).md)
+- [func unregisterAsset(identifier: String, completion: ((Bool) -> Void)?)](./unregisterasset%28identifier,completion%29.md)
   Deallocates system memory for a given asset and removes it from the engine’s list of registered assets.
 
 

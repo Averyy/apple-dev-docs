@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin of the ray.
 
@@ -18,6 +19,10 @@ The origin of the ray.
 
 ```swift
 var origin: Point3DFloat
+```
+
+```c
+SPPoint3DFloat origin;
 ```
 
 

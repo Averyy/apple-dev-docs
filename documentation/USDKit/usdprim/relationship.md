@@ -1,7 +1,8 @@
 # USDPrim.Relationship
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property that connects a prim to one or more other objects in the stage by their paths.
 
@@ -22,50 +23,51 @@ struct Relationship
 ## Topics
 
 ### Structures
-- [USDPrim.Relationship.Spec](usdprim/relationship/spec.md)
+- [USDPrim.Relationship.Spec](./relationship/spec.md)
   A handle to a relationship definition stored in a layer.
 ### Initializers
-- [init()](usdprim/relationship/init.md)
+- [init()](./relationship/init%28%29.md)
   An invalid relationship handle.
-- [init?(USDPrim.Property)](usdprim/relationship/init(_:)-8v165.md)
+- [init?(USDPrim.Property)](./relationship/init%28_%29-8v165.md)
   Casts a property handle to a relationship handle.
-- [init?(USDStage.Object)](usdprim/relationship/init(_:)-sp7s.md)
+- [init?(USDStage.Object)](./relationship/init%28_%29-sp7s.md)
   Casts an object handle to a relationship handle.
 ### Instance Properties
-- [var isValid: Bool](usdprim/relationship/isvalid.md)
+- [var isValid: Bool](./relationship/isvalid.md)
   A Boolean value indicating whether this relationship is valid.
-- [var name: USDToken](usdprim/relationship/name.md)
+- [var name: USDToken](./relationship/name.md)
   The name of this relationship.
-- [var path: USDLayer.Path](usdprim/relationship/path.md)
+- [var path: USDLayer.Path](./relationship/path.md)
   The complete scene path to this relationship, relative to its stage.
-- [var prim: USDPrim](usdprim/relationship/prim.md)
+- [var prim: USDPrim](./relationship/prim.md)
   The nearest prim that contains this relationship.
-- [var primPath: USDLayer.Path](usdprim/relationship/primpath.md)
+- [var primPath: USDLayer.Path](./relationship/primpath.md)
   The complete path to the nearest prim that contains this relationship.
-- [var stage: USDStage](usdprim/relationship/stage.md)
+- [var stage: USDStage](./relationship/stage.md)
   The stage that owns this relationship.
-- [var targets: [USDLayer.Path]](usdprim/relationship/targets.md)
+- [var targets: [USDLayer.Path]](./relationship/targets.md)
   The target paths authored on this relationship.
 ### Default Implementations
-- [CustomStringConvertible Implementations](usdprim/relationship/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./relationship/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [USDStage.Object.MetadataCollection](../usdstage/object/metadatacollection.md)
 
 ## See Also
 
-- [func relationship(named: USDToken) -> USDPrim.Relationship](usdprim/relationship(named:).md)
+### Accessing relationships
+- [func relationship(named: USDToken) -> USDPrim.Relationship](./relationship%28named%29.md)
   Returns the relationship with a given name on this prim.
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdprim/relationship(at:).md)
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](./relationship%28at%29.md)
   Returns the relationship at a given path, relative to this prim.
-- [func hasRelationship(named: USDToken) -> Bool](usdprim/hasrelationship(named:).md)
+- [func hasRelationship(named: USDToken) -> Bool](./hasrelationship%28named%29.md)
   Returns true if a relationship with a given name exists on this prim.
 
 

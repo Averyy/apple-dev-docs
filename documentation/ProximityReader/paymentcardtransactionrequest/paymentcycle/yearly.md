@@ -1,7 +1,8 @@
 # PaymentCardTransactionRequest.PaymentCycle.yearly
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Payment is yearly.
 

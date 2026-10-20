@@ -1,7 +1,8 @@
 # removeEntities(_:from:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes specific entities from the given context.
 
@@ -22,7 +23,7 @@ func removeEntities(_ entities: [any AppEntity], from context: AppEntityContext)
 
 #### Discussion
 
-> **Note**: An error if the removal fails.
+> **Throws**: An error if the removal fails.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ func removeEntities(_ entities: [any AppEntity], from context: AppEntityContext)
 
 ## See Also
 
-- [func removeAllEntities() async throws](relevantentities/removeallentities.md)
+### Removing the current donations
+- [func removeAllEntities() async throws](./removeallentities%28%29.md)
   Removes all suggested entities across all contexts.
-- [func removeAllEntities(for: AppEntityContext) async throws](relevantentities/removeallentities(for:).md)
+- [func removeAllEntities(for: AppEntityContext) async throws](./removeallentities%28for%29.md)
   Removes all donated entities for the given context.
-- [func removeEntities([any AppEntity]) async throws](relevantentities/removeentities(_:).md)
+- [func removeEntities([any AppEntity]) async throws](./removeentities%28_%29.md)
   Removes the specified entities across all contexts.
 
 

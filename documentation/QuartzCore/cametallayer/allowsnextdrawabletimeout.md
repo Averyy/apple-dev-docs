@@ -1,7 +1,8 @@
 # allowsNextDrawableTimeout
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether requests for a new buffer expire if the system can’t satisfy them.
 
@@ -19,17 +20,22 @@ A Boolean value that determines whether requests for a new buffer expire if the 
 var allowsNextDrawableTimeout: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsNextDrawableTimeout;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the [`nextDrawable()`](cametallayer/nextdrawable().md) method returns [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if it can’t provide a drawable object within one second. If [`false`](https://developer.apple.com/documentation/swift/false), the [`nextDrawable()`](cametallayer/nextdrawable().md) method waits indefinitely for a drawable to become available.
+If [`true`](../../Swift/true.md), the [`nextDrawable()`](./nextdrawable%28%29.md) method returns [`nil`](../../ObjectiveC/nil-227m0.md) if it can’t provide a drawable object within one second. If [`false`](../../Swift/false.md), the [`nextDrawable()`](./nextdrawable%28%29.md) method waits indefinitely for a drawable to become available.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func nextDrawable() -> (any CAMetalDrawable)?](cametallayer/nextdrawable.md)
+### Obtaining a Metal Drawable
+- [func nextDrawable() -> (any CAMetalDrawable)?](./nextdrawable%28%29.md)
   Waits until a Metal drawable is available, and then returns it.
-- [var maximumDrawableCount: Int](cametallayer/maximumdrawablecount.md)
+- [var maximumDrawableCount: Int](./maximumdrawablecount.md)
   The number of Metal drawables in the resource pool managed by Core Animation.
 
 

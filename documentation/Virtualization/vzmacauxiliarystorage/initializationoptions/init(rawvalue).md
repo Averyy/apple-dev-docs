@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new initialization options structure with the value you supply.
 

@@ -1,7 +1,8 @@
 # modificationDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modification date of the version.
 
@@ -20,21 +21,26 @@ The modification date of the version.
 var modificationDate: Date? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDate * modificationDate;
+```
+
 #### Discussion
 
 If the version has been deleted, this value is `nil`.
 
 ## See Also
 
-- [var url: URL](nsfileversion/url.md)
+### Accessing the Version Information
+- [var url: URL](./url.md)
   The URL identifying the location of the file associated with the file version object.
-- [var localizedName: String?](nsfileversion/localizedname.md)
+- [var localizedName: String?](./localizedname.md)
   The string containing the user-presentable name of the file version.
-- [var localizedNameOfSavingComputer: String?](nsfileversion/localizednameofsavingcomputer.md)
+- [var localizedNameOfSavingComputer: String?](./localizednameofsavingcomputer.md)
   The user-presentable name of the computer on which the revision was saved.
-- [var persistentIdentifier: any NSCoding](nsfileversion/persistentidentifier.md)
+- [var persistentIdentifier: any NSCoding](./persistentidentifier.md)
   The identifier for this version of the file.
-- [var isDiscardable: Bool](nsfileversion/isdiscardable.md)
+- [var isDiscardable: Bool](./isdiscardable.md)
   A Boolean value that specifies whether the system can delete the associated file at some future time.
 
 

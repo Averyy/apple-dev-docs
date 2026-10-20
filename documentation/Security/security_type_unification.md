@@ -1,7 +1,8 @@
 # SECURITY_TYPE_UNIFICATION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var SECURITY_TYPE_UNIFICATION: Int32 { get }
+```
+
+```c
+#define SECURITY_TYPE_UNIFICATION
 ```
 
 

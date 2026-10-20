@@ -1,14 +1,15 @@
 # kdp_receive_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*kdp_receive_t)(void *pkt, unsigned int *pkt_len, unsigned int timeout);
 ```
 

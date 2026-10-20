@@ -1,7 +1,8 @@
 # lastUsedDateForItem(with:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 func lastUsedDateForItem(with itemURL: URL) -> Date?
+```
+
+```objc
+- (NSDate *) lastUsedDateForItemWithURL:(NSURL *) itemURL;
 ```
 
 

@@ -1,18 +1,31 @@
 # category
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The named leaderboard that is displayed by the view controller.
 
 **Availability**:
-- macOS ?+
-- visionOS ?+
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var category: String! { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSString * category;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * category;
 ```
 
 #### Discussion
@@ -23,9 +36,10 @@ When the view controller is presented, the initial leaderboard shown is based on
 
 ## See Also
 
-- [var leaderboardDelegate: (any GKLeaderboardViewControllerDelegate)!](gkleaderboardviewcontroller/leaderboarddelegate.md)
+### Configuring the Leaderboard View Controller
+- [var leaderboardDelegate: (any GKLeaderboardViewControllerDelegate)!](./leaderboarddelegate.md)
   The view controller’s delegate.
-- [var timeScope: GKLeaderboard.TimeScope](gkleaderboardviewcontroller/timescope.md)
+- [var timeScope: GKLeaderboard.TimeScope](./timescope.md)
   A time filter used to restrict which scores are displayed to the player.
 
 

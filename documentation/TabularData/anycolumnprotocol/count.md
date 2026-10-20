@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of elements in the column type.
@@ -23,9 +24,10 @@ var count: Int { get }
 
 ## See Also
 
-- [var name: String](anycolumnprotocol/name.md)
+### Inspecting a Type-Erased Column Type
+- [var name: String](./name.md)
   The name of the column type.
-- [var wrappedElementType: any Any.Type](anycolumnprotocol/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column type’s elements.
 
 

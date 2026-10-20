@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drag session that corresponds to this drop session, for in-app drag activities.
@@ -16,6 +17,10 @@ The drag session that corresponds to this drop session, for in-app drag activiti
 
 ```swift
 var localDragSession: (any UIDragSession)? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) id<UIDragSession> localDragSession;
 ```
 
 #### Discussion

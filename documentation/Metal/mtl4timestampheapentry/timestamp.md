@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var timestamp: UInt64
+```
+
+```c
+uint64_t timestamp;
 ```
 
 

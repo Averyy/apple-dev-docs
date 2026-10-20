@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fits a transformer to a data frame
@@ -32,9 +33,10 @@ The fitted transformer.
 
 ## See Also
 
-- [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> TabularEstimatorToSupervisedAdaptor<Self, Annotation>](tabularestimator/adaptedassupervised(annotationcolumnid:).md)
+### Adapting and fitting
+- [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> TabularEstimatorToSupervisedAdaptor<Self, Annotation>](./adaptedassupervised%28annotationcolumnid%29.md)
   Exposes this tabular estimator as a supervised tabular estimator.
-- [func fitted(to:)](tabularestimator/fitted(to:).md)
+- [func fitted(to:)](./fitted%28to%29.md)
 
 
 ---

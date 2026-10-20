@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.TimeZone.Width
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type representing the width of a timezone in a format style.
 
@@ -27,21 +28,21 @@ The possible values of a width are `short` and `long`.
 ## Topics
 
 ### Modifying Time Zones
-- [Date.FormatStyle.Symbol.TimeZone.Width.short](date/formatstyle/symbol/timezone/width/short.md)
+- [Date.FormatStyle.Symbol.TimeZone.Width.short](./width/short.md)
   A short timezone representation.
-- [Date.FormatStyle.Symbol.TimeZone.Width.long](date/formatstyle/symbol/timezone/width/long.md)
+- [Date.FormatStyle.Symbol.TimeZone.Width.long](./width/long.md)
   A long timezone representation.
 ### Comparing Time Zones
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

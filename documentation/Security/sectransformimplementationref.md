@@ -1,7 +1,8 @@
 # SecTransformImplementationRef
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An opaque pointer to a block that implements an instance of a transform.
 
@@ -13,6 +14,10 @@ An opaque pointer to a block that implements an instance of a transform.
 
 ```swift
 typealias SecTransformImplementationRef = OpaquePointer
+```
+
+```c
+typedef const struct OpaqueSecTransformImplementation * SecTransformImplementationRef;
 ```
 
 

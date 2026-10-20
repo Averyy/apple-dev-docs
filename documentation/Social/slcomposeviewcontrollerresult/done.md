@@ -1,7 +1,8 @@
 # SLComposeViewControllerResult.done
 
 **Framework**: Social  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view controller is dismissed and the message is being sent in the background.
 
@@ -16,13 +17,18 @@ The view controller is dismissed and the message is being sent in the background
 case done
 ```
 
+```c
+SLComposeViewControllerResultDone
+```
+
 #### Discussion
 
 This result occurs when the user selects Done.
 
 ## See Also
 
-- [SLComposeViewControllerResult.cancelled](slcomposeviewcontrollerresult/cancelled.md)
+### Constants
+- [SLComposeViewControllerResult.cancelled](./cancelled.md)
   The view controller is dismissed without sending the post.
 
 

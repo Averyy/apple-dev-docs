@@ -1,7 +1,8 @@
 # OutlineGroup
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that computes views and disclosure groups on demand from an underlying collection of tree-structured, identified data.
 
@@ -20,7 +21,7 @@ struct OutlineGroup<Data, ID, Parent, Leaf, Subgroup> where Data : RandomAccessC
 
 ## Mentions
 
-- [Displaying data in lists](displaying-data-in-lists.md)
+- [Displaying data in lists](./displaying-data-in-lists.md)
 
 #### Overview
 
@@ -63,7 +64,7 @@ OutlineGroup(data, children: \.children) { item in
 }
 ```
 
-##### Type Parameters
+##### Type parameters
 
 Five generic type constraints define a specific `OutlineGroup` instance:
 
@@ -76,29 +77,30 @@ Five generic type constraints define a specific `OutlineGroup` instance:
 ## Topics
 
 ### Creating an outline group
-- [init(_:children:)](outlinegroup/init(_:children:).md)
+- [init(_:children:)](./outlinegroup/init%28_,children%29.md)
   Creates an outline group from a collection of root data elements and a key path to element’s children.
-- [init(_:children:content:)](outlinegroup/init(_:children:content:).md)
+- [init(_:children:content:)](./outlinegroup/init%28_,children,content%29.md)
   Creates an outline group from a binding to a collection of root data elements and a key path to its children.
-- [init(_:id:children:content:)](outlinegroup/init(_:id:children:content:).md)
+- [init(_:id:children:content:)](./outlinegroup/init%28_,id,children,content%29.md)
   Creates an outline group from a binding to a collection of root data elements, the key path to a data element’s identifier, and a key path to its children.
 ### Supporting types
-- [struct OutlineSubgroupChildren](outlinesubgroupchildren.md)
+- [struct OutlineSubgroupChildren](./outlinesubgroupchildren.md)
   A type-erased view representing the children in an outline subgroup.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [TableRowContent](tablerowcontent.md)
-- [View](view.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [TableRowContent](./tablerowcontent.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct DisclosureGroup](disclosuregroup.md)
+### Disclosing information progressively
+- [struct DisclosureGroup](./disclosuregroup.md)
   A view that shows or hides another content view, based on the state of a disclosure control.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
 
 

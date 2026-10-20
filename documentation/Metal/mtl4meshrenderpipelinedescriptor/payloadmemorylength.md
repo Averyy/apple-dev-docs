@@ -1,7 +1,8 @@
 # payloadMemoryLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Reserves storage for the object-to-mesh stage payload.
 
@@ -17,6 +18,10 @@ Reserves storage for the object-to-mesh stage payload.
 
 ```swift
 var payloadMemoryLength: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger payloadMemoryLength;
 ```
 
 #### Discussion

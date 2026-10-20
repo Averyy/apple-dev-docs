@@ -1,7 +1,8 @@
 # tabWidth
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of space characters represented by a tab character in the buffer.
 
@@ -14,11 +15,16 @@ The number of space characters represented by a tab character in the buffer.
 var tabWidth: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger tabWidth;
+```
+
 ## See Also
 
-- [var indentationWidth: Int](xcsourcetextbuffer/indentationwidth.md)
+### Configuring Source Editor Indentation
+- [var indentationWidth: Int](./indentationwidth.md)
   The number of space characters used for indentation of the text in the buffer.
-- [var usesTabsForIndentation: Bool](xcsourcetextbuffer/usestabsforindentation.md)
+- [var usesTabsForIndentation: Bool](./usestabsforindentation.md)
   A Boolean value that indicates whether tabs are used for indentation.
 
 

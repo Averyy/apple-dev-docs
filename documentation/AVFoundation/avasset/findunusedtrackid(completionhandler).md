@@ -1,7 +1,8 @@
 # findUnusedTrackID(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads an identifier that no other track in the asset uses.
 
@@ -17,7 +18,15 @@ Loads an identifier that no other track in the asset uses.
 ## Declaration
 
 ```swift
+func findUnusedTrackID(completionHandler: @escaping @Sendable (CMPersistentTrackID, (any Error)?) -> Void)
+```
+
+```swift
 func findUnusedTrackID() async throws -> CMPersistentTrackID
+```
+
+```objc
+- (void) findUnusedTrackIDWithCompletionHandler:(void (^)(CMPersistentTrackID , NSError *)) completionHandler;
 ```
 
 ## Parameters
@@ -26,13 +35,14 @@ func findUnusedTrackID() async throws -> CMPersistentTrackID
 
 ## See Also
 
-- [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](avpartialasyncproperty/tracks-48zyw.md)
+### Loading tracks
+- [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](../avpartialasyncproperty/tracks-48zyw.md)
   The tracks of media that an asset contains.
-- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVAssetTrack?, (any Error)?) -> Void)](avasset/loadtrack(withtrackid:completionhandler:).md)
+- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVAssetTrack?, (any Error)?) -> Void)](./loadtrack%28withtrackid,completionhandler%29.md)
   Loads a track that contains the specified identifier.
-- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avasset/loadtracks(withmediatype:completionhandler:).md)
+- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](./loadtracks%28withmediatype,completionhandler%29.md)
   Loads tracks that contain media of a specified type.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avasset/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](./loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
 
 

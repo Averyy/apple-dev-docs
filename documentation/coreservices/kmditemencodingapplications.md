@@ -1,7 +1,8 @@
 # kMDItemEncodingApplications
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Application used to convert the original content into it's current form.  For example, a PDF file might have an encoding application set to "Distiller". A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Application used to convert the original content into it's current form.  For ex
 
 ```swift
 let kMDItemEncodingApplications: CFString!
+```
+
+```c
+const CFStringRef kMDItemEncodingApplications;
 ```
 
 

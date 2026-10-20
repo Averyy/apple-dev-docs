@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses all audio playback.
 
@@ -19,21 +20,26 @@ Pauses all audio playback.
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 #### Discussion
 
-To resume paused playback, call [`start()`](phaseengine/start().md).
+To resume paused playback, call [`start()`](./start%28%29.md).
 
 ## See Also
 
-- [func start() throws](phaseengine/start.md)
+### Controlling and Inspecting Playback State
+- [func start() throws](./start%28%29.md)
   Starts or resumes all audio playback.
-- [func stop()](phaseengine/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops all audio playback.
-- [func update()](phaseengine/update.md)
+- [func update()](./update%28%29.md)
   Processes app commands and increments framework processing.
-- [var renderingState: PHASESoundEvent.RenderingState](phaseengine/renderingstate.md)
+- [var renderingState: PHASESoundEvent.RenderingState](./renderingstate.md)
   The status of the engine’s audio playback.
-- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
+- [var lastRenderTime: AVAudioTime?](./lastrendertime.md)
 
 
 ---

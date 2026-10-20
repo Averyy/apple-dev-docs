@@ -1,13 +1,14 @@
 # UpcomingPayment
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An upcoming payment.
 
 ## Declaration
 
-```swift
+```
 object UpcomingPayment
 ```
 
@@ -19,20 +20,23 @@ object UpcomingPayment
 - `imageName` (string): The name of an image that represents the payment.
 - `label` (string) *(required)*: A short, localized description of the payment, such as the service name.
 - `paymentType` (string) *(required)*: The payment’s type.
+
+  **Allowed Values**: `recurring`, `deferred`, `automaticReload`
 - `paymentIssueDetails` (PaymentIssueDetails): Details about a payment issue. Present when the payment has an issue, such as a declined payment.
 - `recurringPaymentDetails` (RecurringPaymentDetails): Details about a recurring payment. Required if `paymentType` is `recurring`.
 
 ## See Also
 
-- [object AutomaticReloadPaymentDetails](automaticreloadpaymentdetails.md)
+### Getting payment details
+- [object AutomaticReloadPaymentDetails](./automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object DeferredPaymentDetails](deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](./deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](pastpayment.md)
+- [object PastPayment](./pastpayment.md)
   A past payment.
-- [object PaymentIssueDetails](paymentissuedetails.md)
+- [object PaymentIssueDetails](./paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](./recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
 
 

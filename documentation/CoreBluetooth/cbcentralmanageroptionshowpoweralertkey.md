@@ -1,7 +1,8 @@
 # CBCentralManagerOptionShowPowerAlertKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that specifies whether the system warns the user if the app instantiates the central manager when Bluetooth service isn’t available.
 
@@ -20,13 +21,18 @@ A Boolean value that specifies whether the system warns the user if the app inst
 let CBCentralManagerOptionShowPowerAlertKey: String
 ```
 
+```c
+extern NSString * const CBCentralManagerOptionShowPowerAlertKey;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. If the key isn’t specified, the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object. If the key isn’t specified, the default value is [`true`](../Swift/true.md).
 
 ## See Also
 
-- [let CBCentralManagerOptionRestoreIdentifierKey: String](cbcentralmanageroptionrestoreidentifierkey.md)
+### Constants
+- [let CBCentralManagerOptionRestoreIdentifierKey: String](./cbcentralmanageroptionrestoreidentifierkey.md)
   A string containing a unique identifier (UID) for the central manager to instantiate.
 
 

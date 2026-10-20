@@ -1,24 +1,29 @@
 # init(header:footer:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with a header, footer, and the provided section content.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- macOS 10.15+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- tvOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- watchOS 6.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+
+> **Deprecated**: Use [`init(content:header:footer:)`](./init%28content,header,footer%29.md) instead.
 
 ## Declaration
 
 ```swift
 init(header: Parent, footer: Footer, @ContentBuilder content: () -> Content)
 ```
+
+Available when `Parent` conforms to `View`, `Content` conforms to `View`, and `Footer` conforms to `View`.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ init(header: Parent, footer: Footer, @ContentBuilder content: () -> Content)
 
 ## See Also
 
-- [init(header: Parent, content: () -> Content)](section/init(header:content:).md)
+### Deprecated
+- [init(header: Parent, content: () -> Content)](./init%28header,content%29.md)
   Creates a section with a header and the provided section content.
-- [init(footer: Footer, content: () -> Content)](section/init(footer:content:).md)
+- [init(footer: Footer, content: () -> Content)](./init%28footer,content%29.md)
   Creates a section with a footer and the provided section content.
-- [func collapsible(Bool) -> some View](section/collapsible(_:).md)
+- [func collapsible(Bool) -> some View](./collapsible%28_%29.md)
   Sets whether a section can be collapsed by the user.
 
 

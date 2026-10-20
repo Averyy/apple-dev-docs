@@ -1,7 +1,8 @@
 # multiPolyline
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that represents multiple polyline shapes, each consisting of one or more connected line segments.
 
@@ -17,6 +18,10 @@ An object that represents multiple polyline shapes, each consisting of one or mo
 
 ```swift
 var multiPolyline: MKMultiPolyline { get }
+```
+
+```objc
+@property (nonatomic, readonly) MKMultiPolyline * multiPolyline;
 ```
 
 

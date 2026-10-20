@@ -8,7 +8,7 @@ Displays important information to the user.
 
 Use the `alertTemplate` element to display important information, such as a message telling the user to perform an action before continuing. At a minimum, provide a description of the alert and a button so the user can take any required actions. The following figure shows the basic layout for an `alertTemplate` page. The theme for the alert template defaults to the system preference.
 
-![Layout diagram showing title and description areas at the top, and a button area followed by a text area below.](/images/com.apple.TVML/alerttemplate-1@2x.png)
+![Layout diagram showing title and description areas at the top, and a button area followed by a text area below.](https://developer.apple.com/tutorials/images/com.apple.TVML/alerttemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -30,11 +30,11 @@ The following listing shows the main elements of the `alertTemplate` element in 
 
 ###### Element Descriptions
 
-- **[`background`](background.md)**: Background elements, such as audio.
-- **[`button`](button.md)**: A button that typically allows the user to dismiss the alert or to bring up a new template page. The button element contains a text element that shows the name of the button.
-- **[`description`](description.md)**: The main text for the alert.
-- **[`text`](text.md)**: A brief description of what the button does.
-- **[`title`](title.md)**: The title of the alert, which should briefly communicate its purpose.
+- **[background](./background.md)**: Background elements, such as audio.
+- **[button](./button.md)**: A button that typically allows the user to dismiss the alert or to bring up a new template page. The button element contains a text element that shows the name of the button.
+- **[description](./description.md)**: The main text for the alert.
+- **[text](./text.md)**: A brief description of what the button does.
+- **[title](./title.md)**: The title of the alert, which should briefly communicate its purpose.
 
 ##### Example
 
@@ -57,53 +57,54 @@ The following listing shows the TVML for an `alertTemplate` example:
 
 The following figure shows the output for the above example:
 
-![Screenshot prompting the user to update the Apple TV. Two buttons below the prompt allow the user to accept or cancel the update.](/images/com.apple.TVML/alerttemplate-2@2x.png)
+![Screenshot prompting the user to update the Apple TV. Two buttons below the prompt allow the user to accept or cancel the update.](https://developer.apple.com/tutorials/images/com.apple.TVML/alerttemplate-2@2x.png)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [catalogTemplate](catalogtemplate.md)
+### Full-Page Templates
+- [catalogTemplate](./catalogtemplate.md)
   Displays groups of items along one side of a page and images of a group’s contents on the other side.
-- [compilationTemplate](compilationtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
   Displays information about a single media item and its components.
-- [descriptiveAlertTemplate](descriptivealerttemplate.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
   Displays large amounts of important information to the user.
-- [divTemplate](divtemplate.md)
+- [divTemplate](./divtemplate.md)
   Provides the ability to create pages that don’t conform to a layout defined by another template.
-- [formTemplate](formtemplate.md)
+- [formTemplate](./formtemplate.md)
   Provides the ability to gather information from the user.
-- [listTemplate](listtemplate.md)
+- [listTemplate](./listtemplate.md)
   Displays a list of items along one side of a page and the corresponding image on the other side.
-- [loadingTemplate](loadingtemplate.md)
+- [loadingTemplate](./loadingtemplate.md)
   Displays a spinner and description on the screen.
-- [mainTemplate](maintemplate.md)
+- [mainTemplate](./maintemplate.md)
   Displays user options for a media item.
-- [menuBarTemplate](menubartemplate.md)
+- [menuBarTemplate](./menubartemplate.md)
   Creates a page with items along the top and related information below.
-- [oneupTemplate](oneuptemplate.md)
+- [oneupTemplate](./oneuptemplate.md)
   Creates a page that allows users to navigate between full-screen images.
-- [paradeTemplate](paradetemplate.md)
+- [paradeTemplate](./paradetemplate.md)
   Displays a groups of items along one side of a page and scrolling images on the other side.
-- [productBundleTemplate](productbundletemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
   Displays information for a group of related media items.
-- [productTemplate](producttemplate.md)
+- [productTemplate](./producttemplate.md)
   Displays detailed information about a single product.
-- [ratingTemplate](ratingtemplate.md)
+- [ratingTemplate](./ratingtemplate.md)
   Displays a rating for an item.
-- [searchTemplate](searchtemplate.md)
+- [searchTemplate](./searchtemplate.md)
   Searches for a media item based on user input.
 
 

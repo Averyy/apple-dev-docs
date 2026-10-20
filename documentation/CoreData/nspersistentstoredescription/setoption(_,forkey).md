@@ -1,7 +1,8 @@
 # setOption(_:forKey:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an option on the store.
 
@@ -20,9 +21,13 @@ Sets an option on the store.
 func setOption(_ option: NSObject?, forKey key: String)
 ```
 
+```objc
+- (void) setOption:(NSObject *) option forKey:(NSString *) key;
+```
+
 #### Discussion
 
-If a value was previously set for the given option, that value is replaced with the given value. Note that the keys are case-sensitive. For a list of the available options, see [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md).
+If a value was previously set for the given option, that value is replaced with the given value. Note that the keys are case-sensitive. For a list of the available options, see [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md).
 
 ## Parameters
 
@@ -31,23 +36,24 @@ If a value was previously set for the given option, that value is replaced with 
 
 ## See Also
 
-- [var url: URL?](nspersistentstoredescription/url.md)
+### Configuring a Persistent Store Description
+- [var url: URL?](./url.md)
   The URL that the store will use for its location.
-- [var configuration: String?](nspersistentstoredescription/configuration.md)
+- [var configuration: String?](./configuration.md)
   The name of the configuration used by this store.
-- [var timeout: TimeInterval](nspersistentstoredescription/timeout.md)
+- [var timeout: TimeInterval](./timeout.md)
   The connection timeout for the associated store.
-- [var type: String](nspersistentstoredescription/type.md)
+- [var type: String](./type.md)
   The type of store this description represents.
-- [var isReadOnly: Bool](nspersistentstoredescription/isreadonly.md)
+- [var isReadOnly: Bool](./isreadonly.md)
   A flag that indicates whether this store will be read-only.
-- [var shouldAddStoreAsynchronously: Bool](nspersistentstoredescription/shouldaddstoreasynchronously.md)
+- [var shouldAddStoreAsynchronously: Bool](./shouldaddstoreasynchronously.md)
   A flag that determines whether the store is added asynchronously.
-- [var shouldInferMappingModelAutomatically: Bool](nspersistentstoredescription/shouldinfermappingmodelautomatically.md)
+- [var shouldInferMappingModelAutomatically: Bool](./shouldinfermappingmodelautomatically.md)
   A flag indicating whether a mapping model should be created automatically.
-- [var shouldMigrateStoreAutomatically: Bool](nspersistentstoredescription/shouldmigratestoreautomatically.md)
+- [var shouldMigrateStoreAutomatically: Bool](./shouldmigratestoreautomatically.md)
   A flag indicating whether the associated persistent store should be migrated automatically.
-- [func setValue(NSObject?, forPragmaNamed: String)](nspersistentstoredescription/setvalue(_:forpragmanamed:).md)
+- [func setValue(NSObject?, forPragmaNamed: String)](./setvalue%28_,forpragmanamed%29.md)
   Allows you to set pragmas for the SQLite store.
 
 

@@ -1,16 +1,17 @@
 # flipsHorizontallyInOppositeLayoutDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the horizontal coordinate system is automatically flipped at appropriate times.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the horizontal coordinate system is autom
 var flipsHorizontallyInOppositeLayoutDirection: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL flipsHorizontallyInOppositeLayoutDirection;
+```
+
 #### Discussion
 
-The language you use during development naturally affects the decisions you make when configuring your layout object. When you develop using a left-to-right language, your layout information automatically matches the collection view’s natural coordinate system. However, when the user’s language has a right-to-left orientation, the layout information you provide is still based on the collection view’s natural coordinate system. This discrepancy can cause layout issues for languages using the opposite orientation. When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the collection view automatically flips the orientation of its horizontal coordinate system to match the leading edge of the current language. (The [`developmentLayoutDirection`](uicollectionviewlayout/developmentlayoutdirection.md) property specifies the layout direction used to design the layout.) Flipping the horizontal coordinate system effectively flips your existing layout information, which should result in a better looking layout.
+The language you use during development naturally affects the decisions you make when configuring your layout object. When you develop using a left-to-right language, your layout information automatically matches the collection view’s natural coordinate system. However, when the user’s language has a right-to-left orientation, the layout information you provide is still based on the collection view’s natural coordinate system. This discrepancy can cause layout issues for languages using the opposite orientation. When this property is set to [`true`](../../Swift/true.md), the collection view automatically flips the orientation of its horizontal coordinate system to match the leading edge of the current language. (The [`developmentLayoutDirection`](./developmentlayoutdirection.md) property specifies the layout direction used to design the layout.) Flipping the horizontal coordinate system effectively flips your existing layout information, which should result in a better looking layout.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var developmentLayoutDirection: UIUserInterfaceLayoutDirection](uicollectionviewlayout/developmentlayoutdirection.md)
+### Supporting right-to-left layouts
+- [var developmentLayoutDirection: UIUserInterfaceLayoutDirection](./developmentlayoutdirection.md)
   The direction of the language you used when designing your custom layout.
 
 

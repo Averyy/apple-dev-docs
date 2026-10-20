@@ -1,24 +1,26 @@
 # loadResource
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t loadResource(const char *name, uint64_t options, size_t minGuardSize, OSMappedFile **outputMap);
 ```
 
 ## See Also
 
-- [free](osbundle/free.md)
-- [init](osbundle/init.md)
+### Instance Methods
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

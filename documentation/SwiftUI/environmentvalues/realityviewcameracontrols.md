@@ -1,7 +1,8 @@
 # realityViewCameraControls
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera controls for the reality view.
 
@@ -19,9 +20,10 @@ var realityViewCameraControls: CameraControls { get set }
 
 ## See Also
 
-- [func realityViewCameraControls(CameraControls) -> some View](view/realityviewcameracontrols(_:).md)
+### Configuring camera controls
+- [func realityViewCameraControls(CameraControls) -> some View](../view/realityviewcameracontrols%28_%29.md)
   Adds gestures that control the position and direction of a virtual camera.
-- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](view/realityviewlayoutbehavior(_:).md)
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](../view/realityviewlayoutbehavior%28_%29.md)
   A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 
 

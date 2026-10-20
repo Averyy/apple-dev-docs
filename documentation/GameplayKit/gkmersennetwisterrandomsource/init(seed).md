@@ -1,7 +1,8 @@
 # init(seed:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a random source with the specified seed value.
 
@@ -19,15 +20,19 @@ Initializes a random source with the specified seed value.
 init(seed: UInt64)
 ```
 
+```objc
+- (instancetype) initWithSeed:(uint64_t) seed;
+```
+
 #### Return Value
 
 A new, independent random source.
 
 #### Discussion
 
-Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKMersenneTwisterRandomSource`](gkmersennetwisterrandomsource.md) instance, read that instance’s [`init(seed:)`](gkmersennetwisterrandomsource/init(seed:).md) property and then create a new instance by passing the resulting data to the [`seed`](gkmersennetwisterrandomsource/seed.md) initializer.
+Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKMersenneTwisterRandomSource`](../gkmersennetwisterrandomsource.md) instance, read that instance’s [`init(seed:)`](./init%28seed%29.md) property and then create a new instance by passing the resulting data to the [`seed`](./seed.md) initializer.
 
-For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:)) function.
+For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](../../Security/secrandomcopybytes%28_,_,_%29.md) function.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](h
 
 ## See Also
 
-- [convenience init()](gkmersennetwisterrandomsource/init.md)
+### Creating a Random Source
+- [convenience init()](./init%28%29.md)
   Initializes a random source from a nondeterministic seed.
 
 

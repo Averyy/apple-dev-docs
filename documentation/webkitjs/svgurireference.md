@@ -1,7 +1,8 @@
 # SVGURIReference
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGURIReference
 ```
 
 ## Topics
 
 ### Instance Properties
-- [href](svgurireference/1629471-href.md)
+- [href](./svgurireference/api-1629471-href.md)
 
 
 ---

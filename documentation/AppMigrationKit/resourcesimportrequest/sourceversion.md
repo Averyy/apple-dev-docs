@@ -1,7 +1,8 @@
 # sourceVersion
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data format version provided by the source application.
 
@@ -21,9 +22,10 @@ Use this value to distinguish between potentially incompatible versions of the a
 
 ## See Also
 
-- [let sourceAppIdentifier: MigrationAppIdentifier](resourcesimportrequest/sourceappidentifier.md)
+### Inspecting import request properties
+- [let sourceAppIdentifier: MigrationAppIdentifier](./sourceappidentifier.md)
   The application that exported the content.
-- [struct MigrationAppIdentifier](migrationappidentifier.md)
+- [struct MigrationAppIdentifier](../migrationappidentifier.md)
   A type that identifies an app on a different platform.
 
 

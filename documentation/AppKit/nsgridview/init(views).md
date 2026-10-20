@@ -1,7 +1,8 @@
 # init(views:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly allocated grid view object with the specified array of arrays of views.
 
@@ -14,6 +15,10 @@ Creates a newly allocated grid view object with the specified array of arrays of
 convenience init(views rows: [[NSView]])
 ```
 
+```objc
++ (instancetype) gridViewWithViews:(NSArray<NSArray<NSView *> *> *) rows;
+```
+
 #### Discussion
 
 This method creates an autoreleased grid view large enough to hold the passed array of rows. Each element in the array is itself an array of views for that row.
@@ -24,11 +29,12 @@ This method creates an autoreleased grid view large enough to hold the passed ar
 
 ## See Also
 
-- [convenience init(numberOfColumns: Int, rows: Int)](nsgridview/init(numberofcolumns:rows:).md)
+### Creating a Grid View
+- [convenience init(numberOfColumns: Int, rows: Int)](./init%28numberofcolumns,rows%29.md)
   Creates a newly allocated grid view object with the specified number of columns and rows.
-- [init(frame: NSRect)](nsgridview/init(frame:).md)
+- [init(frame: NSRect)](./init%28frame%29.md)
   Creates a newly allocated grid view object with the specified frame rectangle.
-- [init?(coder: NSCoder)](nsgridview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a newly allocated grid view object from the coder.
 
 

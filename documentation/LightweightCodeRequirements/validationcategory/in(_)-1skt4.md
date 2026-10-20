@@ -1,7 +1,8 @@
 # in(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Matches if the file or process is signed in a way that conforms to any of the specified categories.
 

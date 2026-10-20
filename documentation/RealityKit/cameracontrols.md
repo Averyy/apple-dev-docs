@@ -1,7 +1,8 @@
 # CameraControls
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -19,30 +20,31 @@ struct CameraControls
 ## Topics
 
 ### Type Properties
-- [static var dolly: CameraControls](cameracontrols/dolly.md)
+- [static var dolly: CameraControls](./cameracontrols/dolly.md)
   Move the camera forward and backward by dragging a trackpad or mouse.
-- [static var none: CameraControls](cameracontrols/none.md)
+- [static var none: CameraControls](./cameracontrols/none.md)
   Disable camera control via gestures.
-- [static var orbit: CameraControls](cameracontrols/orbit.md)
+- [static var orbit: CameraControls](./cameracontrols/orbit.md)
   Move the camera around a target by dragging a trackpad or mouse.
-- [static var pan: CameraControls](cameracontrols/pan.md)
+- [static var pan: CameraControls](./cameracontrols/pan.md)
   Move the viewport up, left, right, or down by dragging a trackpad or mouse.
-- [static var tilt: CameraControls](cameracontrols/tilt.md)
+- [static var tilt: CameraControls](./cameracontrols/tilt.md)
   Change the viewing angle by dragging a trackpad or mouse.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct RealityViewCamera](realityviewcamera.md)
+### Camera mode settings
+- [struct RealityViewCamera](./realityviewcamera.md)
   A camera for reality view scenes, that can be world tracking or virtual.
-- [ARView.CameraMode](arview/cameramode-swift.enum.md)
+- [ARView.CameraMode](./arview/cameramode-swift.enum.md)
   The available camera modes.
 
 

@@ -1,7 +1,8 @@
 # skeletonID
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifier of the skeleton that this mesh part is bound to (if it is skinned).
 

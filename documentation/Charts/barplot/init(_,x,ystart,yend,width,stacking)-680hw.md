@@ -1,7 +1,8 @@
 # init(_:x:yStart:yEnd:width:stacking:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -21,16 +22,17 @@ init<Data>(_ data: Data, x: PlottableProjection<BarPlot<Content>.DataElement, so
 
 ## See Also
 
-- [init<Data>(Data, x: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, width: MarkDimensions<BarPlot<Content>.DataElement>, height: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](barplot/init(_:x:y:width:height:stacking:).md)
-- [init<Data, Y>(Data, x: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>, width: MarkDimensions<BarPlot<Content>.DataElement>)](barplot/init(_:x:ystart:yend:width:).md)
-- [init<Data>(Data, x: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](barplot/init(_:x:ystart:yend:width:stacking:)-2mtih.md)
-- [init<Data>(Data, xStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, xEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, height: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](barplot/init(_:xstart:xend:y:height:stacking:)-16tou.md)
-- [init<Data>(Data, xStart: CGFloat?, xEnd: CGFloat?, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, height: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](barplot/init(_:xstart:xend:y:height:stacking:)-2x0yx.md)
-- [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, height: MarkDimensions<BarPlot<Content>.DataElement>)](barplot/init(_:xstart:xend:y:height:).md)
-- [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, yStart: CGFloat?, yEnd: CGFloat?)](barplot/init(_:xstart:xend:ystart:yend:)-48su5.md)
-- [init<Data, Y>(Data, xStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, xEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>)](barplot/init(_:xstart:xend:ystart:yend:)-862wn.md)
-- [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, yStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, yEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>)](barplot/init(_:xstart:xend:ystart:yend:)-mtdv.md)
-- [init<Data, Y>(Data, xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>)](barplot/init(_:xstart:xend:ystart:yend:)-raqh.md)
+### Plotting bars from a collection
+- [init<Data>(Data, x: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, width: MarkDimensions<BarPlot<Content>.DataElement>, height: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](./init%28_,x,y,width,height,stacking%29.md)
+- [init<Data, Y>(Data, x: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>, width: MarkDimensions<BarPlot<Content>.DataElement>)](./init%28_,x,ystart,yend,width%29.md)
+- [init<Data>(Data, x: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](./init%28_,x,ystart,yend,width,stacking%29-2mtih.md)
+- [init<Data>(Data, xStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, xEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, height: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](./init%28_,xstart,xend,y,height,stacking%29-16tou.md)
+- [init<Data>(Data, xStart: CGFloat?, xEnd: CGFloat?, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, height: MarkDimensions<BarPlot<Content>.DataElement>, stacking: MarkStackingMethod)](./init%28_,xstart,xend,y,height,stacking%29-2x0yx.md)
+- [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, y: PlottableProjection<BarPlot<Content>.DataElement, some Plottable>, height: MarkDimensions<BarPlot<Content>.DataElement>)](./init%28_,xstart,xend,y,height%29.md)
+- [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, yStart: CGFloat?, yEnd: CGFloat?)](./init%28_,xstart,xend,ystart,yend%29-48su5.md)
+- [init<Data, Y>(Data, xStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, xEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>)](./init%28_,xstart,xend,ystart,yend%29-862wn.md)
+- [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, yStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, yEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>)](./init%28_,xstart,xend,ystart,yend%29-mtdv.md)
+- [init<Data, Y>(Data, xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>)](./init%28_,xstart,xend,ystart,yend%29-raqh.md)
 
 
 ---

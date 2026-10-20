@@ -1,7 +1,8 @@
 # neutralPose
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hand pose that you can use as a reference.
 
@@ -20,9 +21,10 @@ For example, you might use this property as part of visualizing all of the avail
 
 ## See Also
 
-- [var allJoints: [HandSkeleton.Joint]](handskeleton/alljoints.md)
+### Inspecting hand skeletons
+- [var allJoints: [HandSkeleton.Joint]](./alljoints.md)
   All of the joints in a hand skeleton.
-- [var description: String](handskeleton/description.md)
+- [var description: String](./description.md)
   A textual representation of this Skeleton.
 
 

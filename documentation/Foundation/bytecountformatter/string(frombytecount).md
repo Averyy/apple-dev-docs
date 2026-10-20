@@ -1,7 +1,8 @@
 # string(fromByteCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a byte count into a string without creating an `NSNumber` object.
 
@@ -20,6 +21,10 @@ Converts a byte count into a string without creating an `NSNumber` object.
 func string(fromByteCount byteCount: Int64) -> String
 ```
 
+```objc
+- (NSString *) stringFromByteCount:(long long) byteCount;
+```
+
 #### Return Value
 
 A string containing the formatted `byteCount` value.
@@ -30,7 +35,8 @@ A string containing the formatted `byteCount` value.
 
 ## See Also
 
-- [class func string(fromByteCount: Int64, countStyle: ByteCountFormatter.CountStyle) -> String](bytecountformatter/string(frombytecount:countstyle:).md)
+### Creating Strings from Byte Count
+- [class func string(fromByteCount: Int64, countStyle: ByteCountFormatter.CountStyle) -> String](./string%28frombytecount,countstyle%29.md)
   Converts a byte count into the specified string format without creating an `NSNumber` object.
 
 

@@ -1,7 +1,8 @@
 # exponentBase2(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an exponent with base 2 to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies an exponent with base 2 to the input tensor elements.
 
 ```swift
 func exponentBase2(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) exponentBase2WithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

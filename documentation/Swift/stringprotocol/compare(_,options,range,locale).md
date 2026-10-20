@@ -1,7 +1,8 @@
 # compare(_:options:range:locale:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the string using the specified options and returns the lexical ordering for the range.
 

@@ -1,7 +1,8 @@
 # errSecRecordModified
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The record is modified.
 
@@ -18,6 +19,10 @@ The record is modified.
 
 ```swift
 var errSecRecordModified: OSStatus { get }
+```
+
+```c
+errSecRecordModified
 ```
 
 

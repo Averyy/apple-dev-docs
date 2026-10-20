@@ -1,7 +1,8 @@
 # RCSService.Business.URIEntry.URIType.sip
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 SIP URI.
 
@@ -16,7 +17,8 @@ case sip
 
 ## See Also
 
-- [RCSService.Business.URIEntry.URIType.other](rcsservice/business/urientry/uritype/other.md)
+### Determining URI type
+- [RCSService.Business.URIEntry.URIType.other](./other.md)
   Other type of URI.
 
 

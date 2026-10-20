@@ -1,7 +1,8 @@
 # canStartPictureInPictureAutomaticallyFromInline
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Picture in Picture starts automatically when the controller embeds its content inline and the app transitions to the background.
 
@@ -17,9 +18,13 @@ A Boolean value that indicates whether Picture in Picture starts automatically w
 var canStartPictureInPictureAutomaticallyFromInline: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL canStartPictureInPictureAutomaticallyFromInline;
+```
+
 ## Mentions
 
-- [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
+- [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
 
 #### Discussion
 
@@ -27,13 +32,14 @@ Only set this value to `true` for content that you intend to be the user’s pri
 
 ## See Also
 
-- [var canStopPictureInPicture: Bool](avpictureinpicturecontroller/canstoppictureinpicture.md)
+### Controlling Picture in Picture playback
+- [var canStopPictureInPicture: Bool](./canstoppictureinpicture.md)
   A Boolean value that indicates whether Picture in Picture is active and is able to stop.
-- [func startPictureInPicture()](avpictureinpicturecontroller/startpictureinpicture.md)
+- [func startPictureInPicture()](./startpictureinpicture%28%29.md)
   Starts Picture in Picture, if possible.
-- [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
+- [func stopPictureInPicture()](./stoppictureinpicture%28%29.md)
   Stops Picture in Picture, if active.
-- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+- [func invalidatePlaybackState()](./invalidateplaybackstate%28%29.md)
   Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 

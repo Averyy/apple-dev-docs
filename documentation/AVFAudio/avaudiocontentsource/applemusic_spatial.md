@@ -1,7 +1,8 @@
 # AVAudioContentSource.appleMusic_Spatial
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,11 +19,16 @@
 case appleMusic_Spatial
 ```
 
+```c
+AVAudioContentSource_AppleMusic_Spatial
+```
+
 ## See Also
 
-- [AVAudioContentSource.appleMusic_Traditional](avaudiocontentsource/applemusic_traditional.md)
-- [AVAudioContentSource.music_Spatial](avaudiocontentsource/music_spatial.md)
-- [AVAudioContentSource.music_Traditional](avaudiocontentsource/music_traditional.md)
+### Identifying music content
+- [AVAudioContentSource.appleMusic_Traditional](./applemusic_traditional.md)
+- [AVAudioContentSource.music_Spatial](./music_spatial.md)
+- [AVAudioContentSource.music_Traditional](./music_traditional.md)
 
 
 ---

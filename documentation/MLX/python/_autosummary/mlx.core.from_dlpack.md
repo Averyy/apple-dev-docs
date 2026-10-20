@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fr
 
 # mlx.core.from_dlpack
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.from_dlpack.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.from_dlpack
-
- Table of contents 
-
-## Contents
-
-# mlx.core.from_dlpack
-
-**from_dlpack(*x: DLPackCompatible*, */*, ***, *copy: bool | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**from_dlpack(*x: DLPackCompatible*, */*, ***, *copy: bool | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Create an array from an object that supports DLPack.
 
 Parameters:
@@ -49,6 +22,4 @@ Returns:
 An array containing the input data.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

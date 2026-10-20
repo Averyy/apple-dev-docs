@@ -1,7 +1,8 @@
 # resourceLoader(_:shouldWaitForResponseTo:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that assistance is required of the application to respond to an authentication challenge.
 
@@ -19,15 +20,19 @@ Tells the delegate that assistance is required of the application to respond to 
 optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWaitForResponseTo authenticationChallenge: URLAuthenticationChallenge) -> Bool
 ```
 
+```objc
+- (BOOL) resourceLoader:(AVAssetResourceLoader *) resourceLoader shouldWaitForResponseToAuthenticationChallenge:(NSURLAuthenticationChallenge *) authenticationChallenge;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the resource loader should wait for a response to the authentication challenge; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the resource loader should wait for a response to the authentication challenge; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
 Delegates receive this message when assistance is required of the application to respond to an authentication challenge.
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if you expect a response either subsequently or immediately to the authenticationChallenger object’s sender.
+Return [`true`](../../Swift/true.md) if you expect a response either subsequently or immediately to the authenticationChallenger object’s sender.
 
 If you intend to respond to the authentication challenge after your handling of `resourceLoader:shouldWaitForResponseToAuthenticationChallenge:` returns, you must retain the authenticationChallenge until after your response has been made.
 
@@ -38,7 +43,8 @@ If you intend to respond to the authentication challenge after your handling of 
 
 ## See Also
 
-- [func resourceLoader(AVAssetResourceLoader, didCancel: URLAuthenticationChallenge)](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-1wqin.md)
+### Processing authentication challenges
+- [func resourceLoader(AVAssetResourceLoader, didCancel: URLAuthenticationChallenge)](./resourceloader%28_,didcancel%29-1wqin.md)
   Informs the delegate that a prior authentication challenge has been cancelled.
 
 

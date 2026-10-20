@@ -1,7 +1,8 @@
 # isProvisionalHome
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that indicates if the home is a temporary, provisional home for use by installation services.
 
@@ -17,15 +18,16 @@ var isProvisionalHome: Bool { get }
 
 ## See Also
 
-- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](hmhome/isprovisionalhome(forpairingidentifier:).md)
+### Providing installation services
+- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](./isprovisionalhome%28forpairingidentifier%29.md)
   Checks whether the home is a temporary, provisional home for use by installation services.
-- [func transferProvisionalHome(connectionDetails: HMHome.ProvisionalHomeConnectionDetails, targetHomeUniqueIdentifier: UUID) async throws(HMHome.ProvisionalHomeTransferError) -> HMHome.ProvisionalHomeTransferResult](hmhome/transferprovisionalhome(connectiondetails:targethomeuniqueidentifier:).md)
+- [func transferProvisionalHome(connectionDetails: HMHome.ProvisionalHomeConnectionDetails, targetHomeUniqueIdentifier: UUID) async throws(HMHome.ProvisionalHomeTransferError) -> HMHome.ProvisionalHomeTransferResult](./transferprovisionalhome%28connectiondetails,targethomeuniqueidentifier%29.md)
   Transfers a temporary, provisional home to a person’s home hub.
-- [HMHome.ProvisionalHomeConnectionDetails](hmhome/provisionalhomeconnectiondetails.md)
+- [HMHome.ProvisionalHomeConnectionDetails](./provisionalhomeconnectiondetails.md)
   A structure that contains the token to transfer a temporary, provisional home to a person’s home hub.
-- [HMHome.ProvisionalHomeTransferResult](hmhome/provisionalhometransferresult.md)
+- [HMHome.ProvisionalHomeTransferResult](./provisionalhometransferresult.md)
   The outcome of transferring a temporary home to a home hub.
-- [HMHome.ProvisionalHomeTransferError](hmhome/provisionalhometransfererror.md)
+- [HMHome.ProvisionalHomeTransferError](./provisionalhometransfererror.md)
   Errors that occur when transferring a temporary home to a person’s home hub.
 
 

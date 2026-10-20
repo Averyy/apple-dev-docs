@@ -1,7 +1,8 @@
 # recognizedPoint(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the point for a joint name the observation recognizes.
 
@@ -19,6 +20,10 @@ Returns the point for a joint name the observation recognizes.
 func recognizedPoint(_ jointName: VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint
 ```
 
+```objc
+- (VNRecognizedPoint *) recognizedPointForJointName:(VNAnimalBodyPoseObservationJointName) jointName error:(NSError **) error;
+```
+
 #### Return Value
 
 The point for the joint name.
@@ -29,15 +34,16 @@ The point for the joint name.
 
 ## See Also
 
-- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](vnanimalbodyposeobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname.md)
+- [VNAnimalBodyPoseObservation.JointName](./jointname.md)
   The joint names for an animal body pose.
-- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](vnanimalbodyposeobservation/availablejointgroupnames.md)
+- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](./availablejointgroupnames.md)
   The available joint group names in the observation.
-- [VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname.md)
+- [VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname.md)
   The joint group names for an animal body pose.
-- [func recognizedPoints(VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]](vnanimalbodyposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Returns the points for a joint group name the observation recognizes.
 
 

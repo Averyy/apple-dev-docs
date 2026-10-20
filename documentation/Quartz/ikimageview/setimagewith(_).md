@@ -1,7 +1,8 @@
 # setImageWith(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes an image view with the image specified by a URL.
 
@@ -14,6 +15,10 @@ Initializes an image view with the image specified by a URL.
 func setImageWith(_ url: URL!)
 ```
 
+```objc
+- (void) setImageWithURL:(NSURL *) url;
+```
+
 #### Discussion
 
 This method is the preferred initializer for RAW images. If you use this method for a TIFF file that contains multiple images, only the first image is displayed.
@@ -24,9 +29,10 @@ This method is the preferred initializer for RAW images. If you use this method 
 
 ## See Also
 
-- [func image() -> Unmanaged<CGImage>!](ikimageview/image.md)
+### Getting and Setting Images
+- [func image() -> Unmanaged<CGImage>!](./image%28%29.md)
   Returns the image associated with the view, after any image corrections.
-- [func setImage(CGImage!, imageProperties: [AnyHashable : Any]!)](ikimageview/setimage(_:imageproperties:).md)
+- [func setImage(CGImage!, imageProperties: [AnyHashable : Any]!)](./setimage%28_,imageproperties%29.md)
   Sets the image to display in an image view.
 
 

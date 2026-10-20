@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Reserved option bits.
 
@@ -13,6 +14,10 @@ Reserved option bits.
 
 ```swift
 var flags: UInt32
+```
+
+```c
+UInt32 flags;
 ```
 
 #### Discussion

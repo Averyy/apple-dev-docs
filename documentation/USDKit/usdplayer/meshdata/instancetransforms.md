@@ -1,7 +1,8 @@
 # instanceTransforms
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 World-space transforms for each mesh instance.
 

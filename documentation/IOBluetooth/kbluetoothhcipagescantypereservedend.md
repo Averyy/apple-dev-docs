@@ -1,10 +1,11 @@
 # kBluetoothHCIPageScanTypeReservedEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothHCIPageScanTypeReservedEnd: BluetoothHCIPageScanTypes { get }
 ```
 
+```c
+kBluetoothHCIPageScanTypeReservedEnd
+```
+
 ## See Also
 
-- [var kBluetoothHCIPageScanTypeInterlaced: BluetoothHCIPageScanTypes](kbluetoothhcipagescantypeinterlaced.md)
-- [var kBluetoothHCIPageScanTypeReservedStart: BluetoothHCIPageScanTypes](kbluetoothhcipagescantypereservedstart.md)
-- [var kBluetoothHCIPageScanTypeStandard: BluetoothHCIPageScanTypes](kbluetoothhcipagescantypestandard.md)
+### Constants
+- [var kBluetoothHCIPageScanTypeInterlaced: BluetoothHCIPageScanTypes](./kbluetoothhcipagescantypeinterlaced.md)
+- [var kBluetoothHCIPageScanTypeReservedStart: BluetoothHCIPageScanTypes](./kbluetoothhcipagescantypereservedstart.md)
+- [var kBluetoothHCIPageScanTypeStandard: BluetoothHCIPageScanTypes](./kbluetoothhcipagescantypestandard.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AdGroupUpdate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for updating an existing ad group.
 
@@ -10,7 +11,7 @@ The request body for updating an existing ad group.
 
 ## Declaration
 
-```swift
+```
 object AdGroupUpdate
 ```
 
@@ -60,59 +61,61 @@ To manage keywords and negative keywords, use the dedicated keyword endpoints.
 ## Topics
 
 ### Dictionaries
-- [object AdGroupUpdate.BidStrategy](adgroupupdate/bidstrategy-data.dictionary.md)
+- [object AdGroupUpdate.BidStrategy](./adgroupupdate/bidstrategy-data.dictionary.md)
   The request body for updating a bid strategy on an ad group or campaign.
-- [object AdGroupUpdate.CpaCap](adgroupupdate/cpacap-data.dictionary.md)
+- [object AdGroupUpdate.CpaCap](./adgroupupdate/cpacap-data.dictionary.md)
   The deprecated request payload for updating a cost-per-acquisition goal. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object AdGroupUpdate.Targeting](adgroupupdate/targeting-data.dictionary.md)
+- [object AdGroupUpdate.Targeting](./adgroupupdate/targeting-data.dictionary.md)
   The targeting configuration for updating an existing ad group, specifying audience dimensions to include or exclude.
 ### Type Aliases
-- [type AdGroupUpdate.Status](adgroupupdate/status-data.typealias.md)
+- [type AdGroupUpdate.Status](./adgroupupdate/status-data.typealias.md)
   Advertiser-configurable serving status for an ad group.
 
 ## Properties
 
 - `name` (string): The advertiser-given name of this ad group. Mutable.
+
+  **Minimum Length**: `1`
 - `startTime` (date-time): The scheduled start date and time of this ad group in ISO 8601 format. Mutable.
 - `endTime` (date-time): The scheduled end date and time. Omit to inherit the campaign end date. Mutable.
 - `automatedKeywordsOptIn` (boolean): Opt in to Search Match, which automatically matches search terms without requiring explicit keywords. Mutable.
-- `status` (AdGroupUpdate.Status): Advertiser-configurable serving status. Use to pause (`PAUSED`) or resume (`ENABLED`) this ad group. See [`AdGroupStatus`](adgroupstatus.md). Mutable.
+- `status` (AdGroupUpdate.Status): Advertiser-configurable serving status. Use to pause (`PAUSED`) or resume (`ENABLED`) this ad group. See [`AdGroupStatus`](./adgroupstatus.md). Mutable.
 - `automatedKeywordsRequired` (boolean): Immutable. Set at creation via `AdGroupCreate`. Any value sent here is ignored.
-- `bidStrategy` (AdGroupUpdate.BidStrategy): The bid strategy for this ad group. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`BidStrategy`](bidstrategy.md). See [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md) and [`BidStrategyUpdate`](bidstrategyupdate.md). Mutable.
-- `targeting` (AdGroupUpdate.Targeting): Audience and placement targeting configuration for this ad group. See [`AdGroupTargetingUpdate`](adgrouptargetingupdate.md). Mutable.
-- `cpaCap` (AdGroupUpdate.CpaCap): Deprecated. Still accepted on update for backward compatibility, but use `bidStrategy` with `MAX_CONVERSIONS` instead. See [`CPAGoalUpdate`](cpagoalupdate.md).
+- `bidStrategy` (AdGroupUpdate.BidStrategy): The bid strategy for this ad group. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`BidStrategy`](./bidstrategy.md). See [`AdGroupUpdate.BidStrategy`](./adgroupupdate/bidstrategy-data.dictionary.md) and [`BidStrategyUpdate`](./bidstrategyupdate.md). Mutable.
+- `targeting` (AdGroupUpdate.Targeting): Audience and placement targeting configuration for this ad group. See [`AdGroupTargetingUpdate`](./adgrouptargetingupdate.md). Mutable.
+- `cpaCap` (AdGroupUpdate.CpaCap) *(deprecated)*: Deprecated. Still accepted on update for backward compatibility, but use `bidStrategy` with `MAX_CONVERSIONS` instead. See [`CPAGoalUpdate`](./cpagoalupdate.md).
 
 ## See Also
 
-- [object AdGroup](adgroup.md)
+- [object AdGroup](./adgroup.md)
   Primary unit governing targeting, bid strategy, pricing model, and scheduling within a campaign.
-- [object AdGroupCreate](adgroupcreate.md)
+- [object AdGroupCreate](./adgroupcreate.md)
   The request body for creating a new ad group.
-- [object AdGroupResponse](adgroupresponse.md)
+- [object AdGroupResponse](./adgroupresponse.md)
   The response object for an ad group operation.
-- [object AdGroupQueryResponse](adgroupqueryresponse.md)
+- [object AdGroupQueryResponse](./adgroupqueryresponse.md)
   The response object for an ad group query, containing matched results and pagination metadata.
-- [object AdGroupTargeting](adgrouptargeting.md)
+- [object AdGroupTargeting](./adgrouptargeting.md)
   The comprehensive audience and placement configuration for an ad group.
-- [object AdGroupTargetingCreate](adgrouptargetingcreate.md)
+- [object AdGroupTargetingCreate](./adgrouptargetingcreate.md)
   The targeting configuration for creating a new ad group, specifying audience dimensions to include or exclude.
-- [object AdGroupTargetingUpdate](adgrouptargetingupdate.md)
+- [object AdGroupTargetingUpdate](./adgrouptargetingupdate.md)
   The targeting configuration for updating an existing ad group, specifying audience dimensions to include or exclude.
-- [object BidStrategy](bidstrategy.md)
+- [object BidStrategy](./bidstrategy.md)
   Defines how an ad group or campaign competes in auctions, including bid type, optimization goal, and bid amount.
-- [object BidStrategyCreate](bidstrategycreate.md)
+- [object BidStrategyCreate](./bidstrategycreate.md)
   The creation payload for configuring a bid strategy on an ad group or campaign.
-- [object BidStrategyUpdate](bidstrategyupdate.md)
+- [object BidStrategyUpdate](./bidstrategyupdate.md)
   The request body for updating a bid strategy on an ad group or campaign.
-- [object CPAGoal](cpagoal.md)
+- [object CPAGoal](./cpagoal.md)
   A deprecated cost-per-acquisition goal value. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object CPAGoalCreate](cpagoalcreate.md)
+- [object CPAGoalCreate](./cpagoalcreate.md)
   The deprecated request payload for setting a cost-per-acquisition goal. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object CPAGoalUpdate](cpagoalupdate.md)
+- [object CPAGoalUpdate](./cpagoalupdate.md)
   The deprecated request payload for updating a cost-per-acquisition goal. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object TargetingData](targetingdata.md)
+- [object TargetingData](./targetingdata.md)
   The shared include and exclude pattern for all ad group and campaign targeting dimensions.
-- [object TargetingDataCreate](targetingdatacreate.md)
+- [object TargetingDataCreate](./targetingdatacreate.md)
   A targeting dimension value set for creating ad group or campaign targeting, specifying values to include or exclude.
 
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that toggles the enabled status of the URL filter.
 
@@ -25,9 +26,10 @@ This value defaults to `false`.
 
 ## See Also
 
-- [var shouldFailClosed: Bool](neurlfiltermanager/shouldfailclosed.md)
+### Managing filter life cycle
+- [var shouldFailClosed: Bool](./shouldfailclosed.md)
   A Boolean value that determines how the filter behaves if it fails to make a filtering decision.
-- [var prefilterFetchInterval: TimeInterval](neurlfiltermanager/prefilterfetchinterval.md)
+- [var prefilterFetchInterval: TimeInterval](./prefilterfetchinterval.md)
   The time interval at which the the filter control provider app extension runs.
 
 

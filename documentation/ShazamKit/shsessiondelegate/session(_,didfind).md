@@ -1,7 +1,8 @@
 # session(_:didFind:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the query signature matches an item in the catalog.
 
@@ -20,6 +21,10 @@ Tells the delegate that the query signature matches an item in the catalog.
 optional func session(_ session: SHSession, didFind match: SHMatch)
 ```
 
+```objc
+- (void) session:(SHSession *) session didFindMatch:(SHMatch *) match;
+```
+
 ## Parameters
 
 - `session`: The session object that performs the match.
@@ -27,7 +32,8 @@ optional func session(_ session: SHSession, didFind match: SHMatch)
 
 ## See Also
 
-- [func session(SHSession, didNotFindMatchFor: SHSignature, error: (any Error)?)](shsessiondelegate/session(_:didnotfindmatchfor:error:).md)
+### Handling matches
+- [func session(SHSession, didNotFindMatchFor: SHSignature, error: (any Error)?)](./session%28_,didnotfindmatchfor,error%29.md)
   Tells the delegate that the query signature doesn’t match an item in the catalog, or that there’s an error.
 
 

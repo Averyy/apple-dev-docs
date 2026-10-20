@@ -1,7 +1,8 @@
 # ..<(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a half-open range that contains its lower bound but not its upper bound.
 
@@ -30,7 +31,7 @@ print(lessThanFive.contains(3.14))  // Prints "true"
 print(lessThanFive.contains(5.0))   // Prints "false"
 ```
 
-> **Note**: `minimum <= maximum`.
+> **Precondition**: `minimum <= maximum`.
 
 ## Parameters
 
@@ -39,13 +40,14 @@ print(lessThanFive.contains(5.0))   // Prints "false"
 
 ## See Also
 
-- [struct Range](range.md)
+### Ranges
+- [struct Range](../range.md)
   A half-open interval from a lower bound up to, but not including, an upper bound.
-- [struct RangeSet](rangeset.md)
+- [struct RangeSet](../rangeset.md)
   A set of values of any comparable type, represented by ranges.
-- [static func ... (Self, Self) -> ClosedRange<Self>](comparable/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [struct ClosedRange](closedrange.md)
+- [struct ClosedRange](../closedrange.md)
   An interval from a lower bound up to, and including, an upper bound.
 
 

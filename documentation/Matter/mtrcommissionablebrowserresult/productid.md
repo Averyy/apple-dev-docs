@@ -1,7 +1,8 @@
 # productID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var productID: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSNumber * productID;
 ```
 
 

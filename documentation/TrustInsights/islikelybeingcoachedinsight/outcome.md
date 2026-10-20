@@ -1,7 +1,8 @@
 # outcome
 
 **Framework**: Trust Insights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Result value from a request for this insight.
 
@@ -17,11 +18,12 @@ let outcome: Result<IsLikelyBeingCoachedInsight.Value, InsightError>
 
 ## See Also
 
-- [var insightID: String](islikelybeingcoachedinsight/insightid.md)
+### Instance Properties - generated
+- [var insightID: String](./insightid.md)
   The identifier for this particular result.
-- [var modelVersion: String?](islikelybeingcoachedinsight/modelversion.md)
+- [var modelVersion: String?](./modelversion.md)
   The model version used for this particular insight.
-- [var newestModelVersion: String?](islikelybeingcoachedinsight/newestmodelversion.md)
+- [var newestModelVersion: String?](./newestmodelversion.md)
   The newest model that could be requested.
 
 

@@ -1,7 +1,8 @@
 # sampleAttachments
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attachments for the sample in this buffer.
 
@@ -19,6 +20,8 @@ Attachments for the sample in this buffer.
 ```swift
 var sampleAttachments: CMSampleBuffer.SampleAttachments { get set }
 ```
+
+Available when `Content` is `CVReadOnlyPixelBuffer`.
 
 
 ---

@@ -1,7 +1,8 @@
 # ASError
 
 **Framework**: AccessorySetupKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error encountered during accessory discovery.
 
@@ -18,45 +19,46 @@ struct ASError
 ## Topics
 
 ### Activation errors
-- [static var activationFailed: ASError.Code](aserror/activationfailed.md)
+- [static var activationFailed: ASError.Code](./aserror/activationfailed.md)
 ### Life cycle errors
-- [static var invalidated: ASError.Code](aserror/invalidated.md)
+- [static var invalidated: ASError.Code](./aserror/invalidated.md)
 ### Configuration errors
-- [static var extensionNotFound: ASError.Code](aserror/extensionnotfound.md)
-- [static var invalidRequest: ASError.Code](aserror/invalidrequest.md)
+- [static var extensionNotFound: ASError.Code](./aserror/extensionnotfound.md)
+- [static var invalidRequest: ASError.Code](./aserror/invalidrequest.md)
 ### Picker errors
-- [static var pickerRestricted: ASError.Code](aserror/pickerrestricted.md)
-- [static var pickerAlreadyActive: ASError.Code](aserror/pickeralreadyactive.md)
+- [static var pickerRestricted: ASError.Code](./aserror/pickerrestricted.md)
+- [static var pickerAlreadyActive: ASError.Code](./aserror/pickeralreadyactive.md)
 ### Cancellation and permission errors
-- [static var userCancelled: ASError.Code](aserror/usercancelled.md)
-- [static var userRestricted: ASError.Code](aserror/userrestricted.md)
+- [static var userCancelled: ASError.Code](./aserror/usercancelled.md)
+- [static var userRestricted: ASError.Code](./aserror/userrestricted.md)
 ### Communication errors
-- [static var connectionFailed: ASError.Code](aserror/connectionfailed.md)
-- [static var discoveryTimeout: ASError.Code](aserror/discoverytimeout.md)
+- [static var connectionFailed: ASError.Code](./aserror/connectionfailed.md)
+- [static var discoveryTimeout: ASError.Code](./aserror/discoverytimeout.md)
 ### Success cases
-- [static var success: ASError.Code](aserror/success.md)
+- [static var success: ASError.Code](./aserror/success.md)
 ### Unclassified errors
-- [static var unknown: ASError.Code](aserror/unknown.md)
+- [static var unknown: ASError.Code](./aserror/unknown.md)
 ### Accessing the error domain
-- [static var errorDomain: String](aserror/errordomain.md)
-- [let ASErrorDomain: String](aserrordomain.md)
+- [static var errorDomain: String](./aserror/errordomain.md)
+- [let ASErrorDomain: String](./aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let ASErrorDomain: String](aserrordomain.md)
+### Errors
+- [let ASErrorDomain: String](./aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
-- [ASError.Code](aserror/code.md)
+- [ASError.Code](./aserror/code.md)
   Codes that describe errors encountered during accessory discovery.
 
 

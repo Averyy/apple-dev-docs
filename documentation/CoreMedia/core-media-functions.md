@@ -1,16 +1,18 @@
 # Core Media Functions
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 ## Topics
 
 ### Functions
-- [func CMBufferQueueCopyHead(CMBufferQueue) -> CMBuffer?](cmbufferqueuecopyhead(_:).md)
+- [func CMBufferQueueCopyHead(CMBufferQueue) -> CMBuffer?](./cmbufferqueuecopyhead%28_%29.md)
 
 ## See Also
 
-- [Core Media Constants](core-media-constants.md)
-- [Core Media Type Aliases](core-media-type-aliases.md)
+### Reference
+- [Core Media Constants](./core-media-constants.md)
+- [Core Media Type Aliases](./core-media-type-aliases.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # activeInteractionTypes
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of interactions that a person actively performs.
 
@@ -20,19 +21,20 @@ final var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes { ge
 
 #### Discussion
 
-This property is always a concrete type that’s never set to [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md).
+This property is always a concrete type that’s never set to [`automatic`](./interactiontypes/automatic.md).
 
 ## See Also
 
-- [var delegate: (any ImageAnalysisInteractionDelegate)?](imageanalysisinteraction/delegate.md)
+### Configuring an image interaction
+- [var delegate: (any ImageAnalysisInteractionDelegate)?](./delegate.md)
   The delegate that handles the interaction callbacks.
-- [var analysis: ImageAnalysis?](imageanalysisinteraction/analysis.md)
+- [var analysis: ImageAnalysis?](./analysis.md)
   The results of analyzing an image for items that people can interact with.
-- [var view: UIView?](imageanalysisinteraction/view.md)
+- [var view: UIView?](./view.md)
   The view that uses this interaction.
-- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/preferredinteractiontypes.md)
+- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./preferredinteractiontypes.md)
   The types of interactions that people can perform with the image.
-- [ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes.md)
+- [ImageAnalysisInteraction.InteractionTypes](./interactiontypes.md)
   The types of interactions that people can perform with an image.
 
 

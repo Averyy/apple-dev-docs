@@ -6,40 +6,13 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conv_general
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.conv_general.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.conv_general
-
- Table of contents 
-
-## Contents
-
-# mlx.core.conv_general
-
-**conv_general(*input: array*, *weight: array*, */*, *stride: int | Sequence[int] = 1*, *padding: int | Sequence[int] | tuple[Sequence[int], Sequence[int]] = 0*, *kernel_dilation: int | Sequence[int] = 1*, *input_dilation: int | Sequence[int] = 1*, *groups: int = 1*, *flip: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**conv_general(*input: array*, *weight: array*, */*, *stride: int | Sequence[int] = 1*, *padding: int | Sequence[int] | tuple[Sequence[int], Sequence[int]] = 0*, *kernel_dilation: int | Sequence[int] = 1*, *input_dilation: int | Sequence[int] = 1*, *groups: int = 1*, *flip: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : General convolution over an input with several channels
 
 Parameters:
 
-**input** ([array](mlx.core.array.html#mlx.core.array)) – Input array of shape `(N, ..., C_in)`.
-**weight** ([array](mlx.core.array.html#mlx.core.array)) – Weight array of shape `(C_out, ..., C_in)`.
+**input** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `(N, ..., C_in)`.
+**weight** ([array](mlx.core.array.md#mlx.core.array)) – Weight array of shape `(C_out, ..., C_in)`.
 **stride** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – [list](https://docs.python.org/3/builtins/stdtypes.html#list) with kernel strides.
 All spatial dimensions get the same stride if
 only one number is specified. Default: `1`.
@@ -61,6 +34,4 @@ Returns:
 The convolved array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

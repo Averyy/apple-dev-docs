@@ -1,7 +1,8 @@
 # ipv6Settings
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tunnel IP version 6 settings.
 
@@ -20,9 +21,13 @@ The tunnel IP version 6 settings.
 var ipv6Settings: NEIPv6Settings? { get set }
 ```
 
+```objc
+@property (copy, nullable) NEIPv6Settings * IPv6Settings;
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
 #### Discussion
 
@@ -30,15 +35,16 @@ This property contains the IPv6 routes specifying what IPv6 traffic to route to 
 
 ## See Also
 
-- [var ipv4Settings: NEIPv4Settings?](nepackettunnelnetworksettings/ipv4settings.md)
+### Accessing network properties
+- [var ipv4Settings: NEIPv4Settings?](./ipv4settings.md)
   The tunnel IP version 4 settings.
-- [class NEIPv4Settings](neipv4settings.md)
+- [class NEIPv4Settings](../neipv4settings.md)
   The IPv4 settings of an IP layer network tunnel.
-- [class NEIPv6Settings](neipv6settings.md)
+- [class NEIPv6Settings](../neipv6settings.md)
   The IPv6 settings of an IP layer network tunnel.
-- [var tunnelOverheadBytes: NSNumber?](nepackettunnelnetworksettings/tunneloverheadbytes.md)
+- [var tunnelOverheadBytes: NSNumber?](./tunneloverheadbytes.md)
   The number of bytes added to each tunneled packet for storing tunneling protocol headers.
-- [var mtu: NSNumber?](nepackettunnelnetworksettings/mtu.md)
+- [var mtu: NSNumber?](./mtu.md)
   The size of the maximum trasnmission unit, in bytes.
 
 

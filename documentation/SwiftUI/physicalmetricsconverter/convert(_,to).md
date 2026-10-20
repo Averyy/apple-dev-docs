@@ -1,7 +1,8 @@
 # convert(_:to:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point’s coordinates to physical length measurements in the specified unit.
 
@@ -15,6 +16,43 @@ Converts a point’s coordinates to physical length measurements in the specifie
 @preconcurrency func convert(_ point: CGPoint, to unit: UnitLength) -> CGPoint
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func convert(_ point: Point3D, to unit: UnitLength) -> Point3D
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ pointsValue: CGFloat, to unit: UnitLength) -> CGFloat
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ rect: CGRect, to unit: UnitLength) -> CGRect
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ rect: Rect3D, to unit: UnitLength) -> Rect3D
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ size: CGSize, to unit: UnitLength) -> CGSize
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ size: Size3D, to unit: UnitLength) -> Size3D
+```
+
+```swift
+@MainActor
+@preconcurrency func convert<V>(_ pointValues: V, to unit: UnitLength) -> V where V : VectorArithmetic
+```
+
 #### Return Value
 
 A point value with physical length measurements, in the given unit
@@ -25,7 +63,8 @@ The point is assumed to be in the coordinate system of the scene that this conve
 
 ## See Also
 
-- [func convert(_:from:)](physicalmetricsconverter/convert(_:from:).md)
+### Converting a unit length
+- [func convert(_:from:)](./convert%28_,from%29.md)
   Converts a length in the specified unit to a length in points suitable for use in the environment this converter is associated with.
 
 

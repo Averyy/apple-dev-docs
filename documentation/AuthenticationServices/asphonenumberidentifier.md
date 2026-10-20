@@ -1,7 +1,8 @@
 # ASPhoneNumberIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,14 +20,14 @@ struct ASPhoneNumberIdentifier
 ## Topics
 
 ### Instance Properties
-- [var value: String](asphonenumberidentifier/value.md)
+- [var value: String](./asphonenumberidentifier/value.md)
   The string representation of the phone number.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

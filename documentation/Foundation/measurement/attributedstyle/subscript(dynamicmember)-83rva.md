@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 subscript<T>(dynamicMember key: KeyPath<Measurement<UnitType>.FormatStyle, T>) -> T { get }
 ```
+
+Available when `UnitType` inherits `Dimension`.
 
 
 ---

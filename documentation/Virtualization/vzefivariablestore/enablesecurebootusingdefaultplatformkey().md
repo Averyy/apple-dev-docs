@@ -1,7 +1,8 @@
 # enableSecureBootUsingDefaultPlatformKey()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables Secure Boot with an Apple-managed Platform Key.
 
@@ -12,6 +13,10 @@ Enables Secure Boot with an Apple-managed Platform Key.
 
 ```swift
 func enableSecureBootUsingDefaultPlatformKey() throws
+```
+
+```objc
+- (BOOL) enableSecureBootUsingDefaultPlatformKeyWithError:(NSError **) error;
 ```
 
 #### Discussion

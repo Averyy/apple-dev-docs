@@ -1,21 +1,22 @@
 # DOMImplementationRegistry
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface DOMImplementationRegistry
 ```
 
 ## Topics
 
 ### Instance Methods
-- [getDOMImplementation](domimplementationregistry/3192110-getdomimplementation.md)
+- [getDOMImplementation](./domimplementationregistry/api-3192110-getdomimplementation.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # accessibilityLabel
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessibility label for the annotation.
 
@@ -10,7 +11,7 @@ The accessibility label for the annotation.
 
 ## Declaration
 
-```swift
+```
 get accessibilityLabel(): string | null;
 ```
 

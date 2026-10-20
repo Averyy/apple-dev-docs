@@ -1,6 +1,7 @@
 # Xcode 11.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -12,7 +13,9 @@ Xcode 11.1 includes SDKs for iOS 13.1, macOS Catalina 10.15, watchOS 6, and tvOS
 
 ###### Known Issues
 
-- Xcode may fail to update from the Mac App Store after updating to macOS Catalina. (56061273) **Workaround**: To trigger a new download you can delete the existing Xcode.app or temporarily change the file extension so it is no longer visible to the App Store.
+- Xcode may fail to update from the Mac App Store after updating to macOS Catalina. (56061273)
+
+  **Workaround**: To trigger a new download you can delete the existing Xcode.app or temporarily change the file extension so it is no longer visible to the App Store.
 
 ##### Asset Catalogs
 
@@ -28,18 +31,22 @@ Xcode 11.1 includes SDKs for iOS 13.1, macOS Catalina 10.15, watchOS 6, and tvOS
 
 ###### Known Issues
 
-- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/init(coder:)) method: ```swift
-class WorkaroundTabBarController: UITabBarController {
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+- There is an issue with [`UITabBarController`](../UIKit/uitabbarcontroller.md) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448)
 
-        // This must be run immediately after the call to super.
-        if tabBar.subviews.count > 1 {
-            tabBar.subviews[0].isHidden = true
-        }
-    }
-}
-```
+  **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](../UIKit/uitabbarcontroller.md) and add the following snippet in the class’s [`init(coder:)`](../UIKit/uiviewcontroller/init%28coder%29.md) method:
+
+  ```swift
+  class WorkaroundTabBarController: UITabBarController {
+      required init?(coder: NSCoder) {
+          super.init(coder: coder)
+
+          // This must be run immediately after the call to super.
+          if tabBar.subviews.count > 1 {
+              tabBar.subviews[0].isHidden = true
+          }
+      }
+  }
+  ```
 
 ###### Resolved Issues
 
@@ -49,13 +56,15 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) labels in storyboards and XIB files do not use localized string values from the strings file at runtime. (52839404)
+- [`UITableViewCell`](../UIKit/uitableviewcell.md) labels in storyboards and XIB files do not use localized string values from the strings file at runtime. (52839404)
 
 ##### Simulator
 
 ###### Known Issues
 
-- On macOS Catalina, iCloud Drive will crash in a loop on simulated devices running older versions of iOS. (51392951, 54282967, 54818084) **Workaround**: Log out of iCloud in impacted simulators to halt the crash cycle.
+- On macOS Catalina, iCloud Drive will crash in a loop on simulated devices running older versions of iOS. (51392951, 54282967, 54818084)
+
+  **Workaround**: Log out of iCloud in impacted simulators to halt the crash cycle.
 
 ###### Resolved Issues
 
@@ -65,13 +74,21 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- The `NEHotspotConfigurationError` enum from the [`Network Extension`](https://developer.apple.com/documentation/networkextension) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this: ```swift
-let code = NEHotspotConfigurationError(rawValue: errorCode)
-``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/networkextension/nehotspotconfigurationerror). For the above example, change the code to: ```swift
-let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
-```
+- The `NEHotspotConfigurationError` enum from the [Network Extension](../NetworkExtension/NetworkExtension.md) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this:
 
-##### Swiftui
+  ```swift
+  let code = NEHotspotConfigurationError(rawValue: errorCode)
+  ```
+
+  You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493)
+
+  **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](../NetworkExtension/nehotspotconfigurationerror.md). For the above example, change the code to:
+
+  ```swift
+  let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
+  ```
+
+##### SwiftUI
 
 ###### Resolved Issues
 
@@ -81,35 +98,40 @@ let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
 
 ###### Known Issues
 
-- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324) **Workaround**: Modify the Package manifest to build a static library.
+- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324)
 
-##### Watchos
+  **Workaround**: Modify the Package manifest to build a static library.
+
+##### watchOS
 
 ###### Known Issues
 
-- watchOS applications built with the watchOS 6 SDK and a deployment target of watchOS 5.3 will crash on launch when run on watchOS 5.3. (55360395) **Workaround**: Set the `__WKEXTENSIONMAIN_LEGACY_TARGET_5_3` build setting to “legacy,” or use another deployment target instead of 5.3.
+- watchOS applications built with the watchOS 6 SDK and a deployment target of watchOS 5.3 will crash on launch when run on watchOS 5.3. (55360395)
+
+  **Workaround**: Set the `__WKEXTENSIONMAIN_LEGACY_TARGET_5_3` build setting to “legacy,” or use another deployment target instead of 5.3.
 
 ## See Also
 
-- [Xcode 11.7 Release Notes](xcode-11_7-release-notes.md)
+### Xcode 11
+- [Xcode 11.7 Release Notes](./xcode-11_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.6 Release Notes](xcode-11_6-release-notes.md)
+- [Xcode 11.6 Release Notes](./xcode-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.5 Release Notes](xcode-11_5-release-notes.md)
+- [Xcode 11.5 Release Notes](./xcode-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4.1 Release Notes](xcode-11_4_1-release-notes.md)
+- [Xcode 11.4.1 Release Notes](./xcode-11_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4 Release Notes](xcode-11_4-release-notes.md)
+- [Xcode 11.4 Release Notes](./xcode-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.3.1 Release Notes](xcode-11_3_1-release-notes.md)
+- [Xcode 11.3.1 Release Notes](./xcode-11_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.3 Release Notes](xcode-11_3-release-notes.md)
+- [Xcode 11.3 Release Notes](./xcode-11_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.2.1 Release Notes](xcode-11_2_1-release-notes.md)
+- [Xcode 11.2.1 Release Notes](./xcode-11_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.2 Release Notes](xcode-11_2-release-notes.md)
+- [Xcode 11.2 Release Notes](./xcode-11_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11 Release Notes](xcode-11-release-notes.md)
+- [Xcode 11 Release Notes](./xcode-11-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

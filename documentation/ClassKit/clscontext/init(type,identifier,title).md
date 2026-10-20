@@ -1,7 +1,8 @@
 # init(type:identifier:title:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new context.
 
@@ -18,6 +19,10 @@ Initializes a new context.
 init(type: CLSContextType, identifier: String, title: String)
 ```
 
+```objc
+- (instancetype) initWithType:(CLSContextType) type identifier:(NSString *) identifier title:(NSString *) title;
+```
+
 ## Parameters
 
 - `type`: The context type, like a book chapter, or a game level. This value tells teachers what kind of app content this context represents.
@@ -26,7 +31,8 @@ init(type: CLSContextType, identifier: String, title: String)
 
 ## See Also
 
-- [class CLSObject](clsobject.md)
+### Creating contexts
+- [class CLSObject](../clsobject.md)
   The abstract base class for objects managed by ClassKit.
 
 

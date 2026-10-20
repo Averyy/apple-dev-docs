@@ -1,7 +1,8 @@
 # requiredResponse
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The response that represents this command succeeding.
 
@@ -18,6 +19,10 @@ The response that represents this command succeeding.
 
 ```swift
 var requiredResponse: [NSNumber : [String : Any]]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSNumber *,NSDictionary<NSString *,id> *> * requiredResponse;
 ```
 
 #### Discussion

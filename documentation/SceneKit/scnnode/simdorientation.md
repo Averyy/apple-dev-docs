@@ -1,18 +1,19 @@
 # simdOrientation
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The node’s orientation, expressed as a quaternion. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,27 +21,33 @@ The node’s orientation, expressed as a quaternion. Animatable.
 var simdOrientation: simd_quatf { get set }
 ```
 
+```objc
+@property (nonatomic) simd_quatf simdOrientation;
+```
+
 #### Discussion
 
-The [`simdRotation`](scnnode/simdrotation.md), [`simdEulerAngles`](scnnode/simdeulerangles.md), and [`simdOrientation`](scnnode/simdorientation.md) properties all affect the rotational aspect of the node’s [`simdTransform`](scnnode/simdtransform.md) property. Any change to one of these properties is reflected in the others.
+The [`simdRotation`](./simdrotation.md), [`simdEulerAngles`](./simdeulerangles.md), and [`simdOrientation`](./simdorientation.md) properties all affect the rotational aspect of the node’s [`simdTransform`](./simdtransform.md) property. Any change to one of these properties is reflected in the others.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var orientation: SCNQuaternion](scnnode/orientation.md)
+### Related Documentation
+- [var orientation: SCNQuaternion](./orientation.md)
   The node’s orientation, expressed as a quaternion. Animatable.
-- [var simdTransform: simd_float4x4](scnnode/simdtransform.md)
+### Managing the Node’s Transform
+- [var simdTransform: simd_float4x4](./simdtransform.md)
   The transform applied to the node relative to its parent. Animatable.
-- [var simdPosition: simd_float3](scnnode/simdposition.md)
+- [var simdPosition: simd_float3](./simdposition.md)
   The translation applied to the node. Animatable.
-- [var simdRotation: simd_float4](scnnode/simdrotation.md)
+- [var simdRotation: simd_float4](./simdrotation.md)
   The node’s orientation, expressed as a rotation angle about an axis. Animatable.
-- [var simdEulerAngles: simd_float3](scnnode/simdeulerangles.md)
+- [var simdEulerAngles: simd_float3](./simdeulerangles.md)
   The node’s orientation, expressed as pitch, yaw, and roll angles in radians. Animatable.
-- [var simdScale: simd_float3](scnnode/simdscale.md)
+- [var simdScale: simd_float3](./simdscale.md)
   The scale factor applied to the node. Animatable.
-- [var simdPivot: simd_float4x4](scnnode/simdpivot.md)
+- [var simdPivot: simd_float4x4](./simdpivot.md)
   The pivot point for the node’s position, rotation, and scale. Animatable.
 
 

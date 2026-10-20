@@ -1,7 +1,8 @@
 # init(learningRate:alpha:epsilon:centered:momentum:gradientScale:regularizationScale:gradientClipping:regularizationFunction:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new RMSProp optimizer object with gradient clipped by value or clipped by norm.
 
@@ -11,7 +12,7 @@ Returns a new RMSProp optimizer object with gradient clipped by value or clipped
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -34,7 +35,8 @@ init(learningRate: Float = 1e-2, alpha: Float = 0.99, epsilon: Float = 1e-8, cen
 
 ## See Also
 
-- [init(learningRate: Float, alpha: Float, epsilon: Float, centered: Bool, momentum: Float, gradientScale: Float, regularizationScale: Float, clipsGradientsTo: ClosedRange<Float>?, regularizationFunction: BNNSOptimizerRegularizationFunction)](bnns/rmspropoptimizer/init(learningrate:alpha:epsilon:centered:momentum:gradientscale:regularizationscale:clipsgradientsto:regularizationfunction:).md)
+### Creating an RMSProp Optimizer
+- [init(learningRate: Float, alpha: Float, epsilon: Float, centered: Bool, momentum: Float, gradientScale: Float, regularizationScale: Float, clipsGradientsTo: ClosedRange<Float>?, regularizationFunction: BNNSOptimizerRegularizationFunction)](./init%28learningrate,alpha,epsilon,centered,momentum,gradientscale,regularizationscale,clipsgradientsto,regularizationfunction%29.md)
   Returns a new RMSProp optimizer object.
 
 

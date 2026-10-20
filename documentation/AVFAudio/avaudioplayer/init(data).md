@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player to play in-memory audio data.
 
@@ -20,9 +21,13 @@ Creates a player to play in-memory audio data.
 init(data: Data) throws
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data error:(NSError **) outError;
+```
+
 #### Return Value
 
-A new audio player instance, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an error occurs.
+A new audio player instance, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurs.
 
 #### Discussion
 
@@ -34,11 +39,12 @@ The audio data must be in a format that Core Audio supports.
 
 ## See Also
 
-- [init(contentsOf: URL) throws](avaudioplayer/init(contentsof:).md)
+### Creating an audio player
+- [init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a player to play audio from a file.
-- [init(contentsOf: URL, fileTypeHint: String?) throws](avaudioplayer/init(contentsof:filetypehint:).md)
+- [init(contentsOf: URL, fileTypeHint: String?) throws](./init%28contentsof,filetypehint%29.md)
   Creates a player to play audio from a file of a particular type.
-- [init(data: Data, fileTypeHint: String?) throws](avaudioplayer/init(data:filetypehint:).md)
+- [init(data: Data, fileTypeHint: String?) throws](./init%28data,filetypehint%29.md)
   Creates a player to play in-memory audio data of a particular type.
 
 

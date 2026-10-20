@@ -1,15 +1,16 @@
 # postEffects
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 static var postEffects: AudioQueueProcessingTapFlags { get }
 ```
 
+```c
+kAudioQueueProcessingTap_PostEffects
+```
+
 ## See Also
 
-- [static var endOfStream: AudioQueueProcessingTapFlags](audioqueueprocessingtapflags/endofstream.md)
-- [static var preEffects: AudioQueueProcessingTapFlags](audioqueueprocessingtapflags/preeffects.md)
-- [static var siphon: AudioQueueProcessingTapFlags](audioqueueprocessingtapflags/siphon.md)
-- [static var startOfStream: AudioQueueProcessingTapFlags](audioqueueprocessingtapflags/startofstream.md)
+### Constants
+- [static var endOfStream: AudioQueueProcessingTapFlags](./endofstream.md)
+- [static var preEffects: AudioQueueProcessingTapFlags](./preeffects.md)
+- [static var siphon: AudioQueueProcessingTapFlags](./siphon.md)
+- [static var startOfStream: AudioQueueProcessingTapFlags](./startofstream.md)
 
 
 ---

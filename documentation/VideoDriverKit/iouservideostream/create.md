@@ -1,22 +1,24 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoStream> Create(IOUserVideoDriver *in_driver, OSString *in_stream_uid, IOUserVideoStreamDirection in_direction, OSArray *in_video_buffers);
 ```
 
 ## See Also
 
-- [init](iouservideostream/init.md)
+### Creating a video stream
+- [init](./init.md)
   Initializes an video stream.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
 
 

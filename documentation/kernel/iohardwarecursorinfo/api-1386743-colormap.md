@@ -1,7 +1,8 @@
 # colorMap
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Pointer to array of IOColorEntry structures, with the number of elements set by the numColors field of the IOHardwareCursorDescriptor. Zero should be passed for direct pixel formats.
 
@@ -10,7 +11,7 @@ Pointer to array of IOColorEntry structures, with the number of elements set by 
 
 ## Declaration
 
-```swift
+```c
 IOColorEntry *colorMap;
 ```
 

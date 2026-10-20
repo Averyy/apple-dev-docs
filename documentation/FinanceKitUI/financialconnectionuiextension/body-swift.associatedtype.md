@@ -2,6 +2,7 @@
 
 **Framework**: FinanceKitUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:

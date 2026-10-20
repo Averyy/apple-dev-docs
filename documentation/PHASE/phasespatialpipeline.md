@@ -1,7 +1,8 @@
 # PHASESpatialPipeline
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies the volume of optional environmental effects.
 
@@ -19,44 +20,49 @@ An object that specifies the volume of optional environmental effects.
 class PHASESpatialPipeline
 ```
 
+```objc
+@interface PHASESpatialPipeline : NSObject
+```
+
 #### Overview
 
-The [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md) class contains an instance of this class, [`spatialPipeline`](phasespatialmixerdefinition/spatialpipeline.md), to add optional sound layers to the output.
+The [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md) class contains an instance of this class, [`spatialPipeline`](./phasespatialmixerdefinition/spatialpipeline.md), to add optional sound layers to the output.
 
-On top of the original audio signal designated by [`directPathTransmission`](phasespatialpipeline/flags-swift.struct/directpathtransmission.md), this class optionally includes audio layers for environmental effects, such as [`earlyReflections`](phasespatialcategory/earlyreflections.md) or [`lateReverb`](phasespatialcategory/latereverb.md), in the output.  To control the amount of volume that either audio layer possesses in the mixer’s output, adjust the [`sendLevel`](phasespatialpipelineentry/sendlevel.md) for the layer’s respective [`PHASESpatialPipelineEntry`](phasespatialpipelineentry.md) member in the [`entries`](phasespatialpipeline/entries.md) dictionary.
+On top of the original audio signal designated by [`directPathTransmission`](./phasespatialpipeline/flags-swift.struct/directpathtransmission.md), this class optionally includes audio layers for environmental effects, such as [`earlyReflections`](./phasespatialcategory/earlyreflections.md) or [`lateReverb`](./phasespatialcategory/latereverb.md), in the output.  To control the amount of volume that either audio layer possesses in the mixer’s output, adjust the [`sendLevel`](./phasespatialpipelineentry/sendlevel.md) for the layer’s respective [`PHASESpatialPipelineEntry`](./phasespatialpipelineentry.md) member in the [`entries`](./phasespatialpipeline/entries.md) dictionary.
 
 ## Topics
 
 ### Creating a Spatial Pipeline
-- [init?(flags: PHASESpatialPipeline.Flags)](phasespatialpipeline/init(flags:).md)
+- [init?(flags: PHASESpatialPipeline.Flags)](./phasespatialpipeline/init%28flags%29.md)
   Creates a spatial pipeline with the specified flags.
-- [PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct.md)
+- [PHASESpatialPipeline.Flags](./phasespatialpipeline/flags-swift.struct.md)
   Sound resonance options for a spatial pipeline.
 ### Inspecting Effects
-- [var flags: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.property.md)
+- [var flags: PHASESpatialPipeline.Flags](./phasespatialpipeline/flags-swift.property.md)
   A collection of environmental effects to include in the output.
-- [var entries: [PHASESpatialCategory : PHASESpatialPipelineEntry]](phasespatialpipeline/entries.md)
+- [var entries: [PHASESpatialCategory : PHASESpatialPipelineEntry]](./phasespatialpipeline/entries.md)
   Audio layers for environmental effects to add to the output.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESpatialPipelineEntry](phasespatialpipelineentry.md)
+### Sound Reflections and Resonance
+- [class PHASESpatialPipelineEntry](./phasespatialpipelineentry.md)
   An audio layer with an adjustable volume for a spatial mixer’s output.
-- [struct PHASESpatialCategory](phasespatialcategory.md)
+- [struct PHASESpatialCategory](./phasespatialcategory.md)
   Sound resonance effects for spatial mixing.
-- [PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct.md)
+- [PHASESpatialPipeline.Flags](./phasespatialpipeline/flags-swift.struct.md)
   Sound resonance options for a spatial pipeline.
 
 

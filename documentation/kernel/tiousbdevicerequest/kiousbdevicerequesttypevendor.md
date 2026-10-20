@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypeVendor
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type vendor.
 
@@ -10,7 +11,7 @@ The type vendor.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypeVendor = (kIOUSBDeviceRequestTypeValueVendor << kIOUSBDeviceRequestTypePhase)
 ```
 

@@ -1,7 +1,8 @@
 # artwork
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preview artwork for the associated preview music video.
 

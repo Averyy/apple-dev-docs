@@ -1,7 +1,8 @@
 # bufferOffset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte offset into the buffer for the first byte of this layout.
 

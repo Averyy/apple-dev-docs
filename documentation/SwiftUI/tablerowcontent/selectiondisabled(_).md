@@ -1,7 +1,8 @@
 # selectionDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a condition that controls whether users can select this row.
 
@@ -21,7 +22,7 @@ Adds a condition that controls whether users can select this row.
 
 #### Discussion
 
-Use this modifier to control the selectability of views in selectable containers like [`List`](list.md) or [`Table`](table.md). In the example, below, the user can’t select the first item in the table.
+Use this modifier to control the selectability of views in selectable containers like [`List`](../list.md) or [`Table`](../table.md). In the example, below, the user can’t select the first item in the table.
 
 ```swift
 @Binding var rows: [Item]

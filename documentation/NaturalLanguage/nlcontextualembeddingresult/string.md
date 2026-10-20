@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy of the input string used to generate the embedding vectors.
 
@@ -20,11 +21,16 @@ A copy of the input string used to generate the embedding vectors.
 var string: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * string;
+```
+
 ## See Also
 
-- [var language: NLLanguage](nlcontextualembeddingresult/language.md)
+### Inspecting the result
+- [var language: NLLanguage](./language.md)
   The language that the framework identified or used when processing the input string.
-- [var sequenceLength: Int](nlcontextualembeddingresult/sequencelength.md)
+- [var sequenceLength: Int](./sequencelength.md)
   The number of embedding vectors the request generates.
 
 

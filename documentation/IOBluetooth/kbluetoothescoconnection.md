@@ -1,10 +1,11 @@
 # kBluetoothESCOConnection
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothESCOConnection: BluetoothLinkTypes { get }
 ```
 
+```c
+kBluetoothESCOConnection
+```
+
 ## See Also
 
-- [var kBluetoothACLConnection: BluetoothLinkTypes](kbluetoothaclconnection.md)
-- [var kBluetoothLinkTypeNone: BluetoothLinkTypes](kbluetoothlinktypenone.md)
-- [var kBluetoothSCOConnection: BluetoothLinkTypes](kbluetoothscoconnection.md)
+### Constants
+- [var kBluetoothACLConnection: BluetoothLinkTypes](./kbluetoothaclconnection.md)
+- [var kBluetoothLinkTypeNone: BluetoothLinkTypes](./kbluetoothlinktypenone.md)
+- [var kBluetoothSCOConnection: BluetoothLinkTypes](./kbluetoothscoconnection.md)
 
 
 ---

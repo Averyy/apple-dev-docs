@@ -1,7 +1,8 @@
 # expandDims(_:axesTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an expand-dimensions operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates an expand-dimensions operation and returns the result tensor.
 
 ```swift
 func expandDims(_ tensor: MPSGraphTensor, axesTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) expandDimsOfTensor:(MPSGraphTensor *) tensor axesTensor:(MPSGraphTensor *) axesTensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # setConnectionCodeSigningRequirement(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the code signing requirement for connections to this listener.
 
@@ -12,6 +13,10 @@ Sets the code signing requirement for connections to this listener.
 
 ```swift
 func setConnectionCodeSigningRequirement(_ requirement: String)
+```
+
+```objc
+- (void) setConnectionCodeSigningRequirement:(NSString *) requirement;
 ```
 
 #### Discussion
@@ -51,7 +56,7 @@ func listener(_ listener: NSXPCListener,
 
 ## Parameters
 
-- `requirement`: A string that describes requirements expected of the connection peer. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/) for more information on the code signing format.
+- `requirement`: A string that describes requirements expected of the connection peer. See [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/) for more information on the code signing format.
 
 
 ---

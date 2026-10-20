@@ -1,7 +1,8 @@
 # LevelOfDetailComponent.DetailLevel
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An array of entities representing a single detail level. Entities within a level are shown or hidden together based on LOD selection.
 
@@ -21,7 +22,8 @@ typealias DetailLevel = [Entity]
 
 ## See Also
 
-- [var levels: [LevelOfDetailComponent.DetailLevel]](levelofdetailcomponent/levels.md)
+### Configuring detail levels
+- [var levels: [LevelOfDetailComponent.DetailLevel]](./levels.md)
 
 
 ---

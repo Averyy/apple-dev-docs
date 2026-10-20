@@ -1,7 +1,8 @@
 # DelimiterInfo
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines a delimiter information structure.
 
@@ -12,6 +13,12 @@ Defines a delimiter information structure.
 
 ```swift
 struct DelimiterInfo
+```
+
+```c
+typedef struct DelimiterInfo {
+    ...
+} DelimiterInfo;
 ```
 
 #### Overview
@@ -25,12 +32,12 @@ If a single-byte delimiter is desired, it should be followed by a `NULL` (0) byt
 ## Topics
 
 ### Initializers
-- [init()](delimiterinfo/1460927-init.md)
-- [init(startDelimiter: (UInt8, UInt8), endDelimiter: (UInt8, UInt8))](delimiterinfo/1464001-init.md)
+- [init()](./delimiterinfo/api-1460927-init.md)
+- [init(startDelimiter: (UInt8, UInt8), endDelimiter: (UInt8, UInt8))](./delimiterinfo/api-1464001-init.md)
 ### Instance Properties
-- [var endDelimiter: (UInt8, UInt8)](delimiterinfo/1462493-enddelimiter.md)
+- [var endDelimiter: (UInt8, UInt8)](./delimiterinfo/api-1462493-enddelimiter.md)
   The end delimiter for an embedded command. By default, the end delimiter is “`]]`”.
-- [var startDelimiter: (UInt8, UInt8)](delimiterinfo/1462284-startdelimiter.md)
+- [var startDelimiter: (UInt8, UInt8)](./delimiterinfo/api-1462284-startdelimiter.md)
   The start delimiter for an embedded command. By default, the start delimiter is “`[[`”.
 
 

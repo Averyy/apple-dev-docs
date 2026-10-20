@@ -1,7 +1,8 @@
 # annotationsChanged(on:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the PDF view that an annotation on the specified page has changed.
 
@@ -19,13 +20,18 @@ Tells the PDF view that an annotation on the specified page has changed.
 func annotationsChanged(on page: PDFPage)
 ```
 
+```objc
+- (void) annotationsChangedOnPage:(PDFPage *) page;
+```
+
 #### Discussion
 
 When the `PDFView` object receives this message, it rescans for tool tips and pop-ups and informs the `PDFThumbailView` objects so the thumbnail images can be redrawn.
 
 ## See Also
 
-- [Link Annotations](link-annotations.md)
+### Working with Annotation Actions
+- [Link Annotations](../link-annotations.md)
   Validate and handle links in a PDF view.
 
 

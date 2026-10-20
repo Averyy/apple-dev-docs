@@ -1,7 +1,8 @@
 # load(contentsOf:configuration:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct the compute plan of a model asynchronously given the location of its on-disk representation.
 
@@ -22,7 +23,7 @@ static func load(contentsOf url: URL, configuration: MLModelConfiguration) async
 
 ## Mentions
 
-- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+- [Analyzing a Core ML model’s performance in Xcode](../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
 ## Parameters
 
@@ -31,7 +32,8 @@ static func load(contentsOf url: URL, configuration: MLModelConfiguration) async
 
 ## See Also
 
-- [static func load(asset: MLModelAsset, configuration: MLModelConfiguration) async throws -> MLComputePlan](mlcomputeplan-1w21n/load(asset:configuration:).md)
+### Loading a compute plan
+- [static func load(asset: MLModelAsset, configuration: MLModelConfiguration) async throws -> MLComputePlan](./load%28asset,configuration%29.md)
   Construct the compute plan of a model asynchronously given the model asset.
 
 

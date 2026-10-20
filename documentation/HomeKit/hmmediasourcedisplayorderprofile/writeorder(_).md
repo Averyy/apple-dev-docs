@@ -1,7 +1,8 @@
 # writeOrder(_:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the display order of the media sources to the accessory.
 
@@ -25,17 +26,18 @@ An error is thrown if the source ordering fails to be written to the accessory.
 
 ## Parameters
 
-- `order`: The new display order for the media sources. Provides an ordered list of [`HMCharacteristicTypeIdentifier`](hmcharacteristictypeidentifier.md) values for [`HMServiceTypeInputSource`](hmservicetypeinputsource.md) services associated with the profile.
+- `order`: The new display order for the media sources. Provides an ordered list of [`HMCharacteristicTypeIdentifier`](../hmcharacteristictypeidentifier.md) values for [`HMServiceTypeInputSource`](../hmservicetypeinputsource.md) services associated with the profile.
 
 ## See Also
 
-- [var delegate: (any HMMediaSourceDisplayOrderProfile.Delegate)?](hmmediasourcedisplayorderprofile/delegate-swift.property.md)
+### Managing input source order
+- [var delegate: (any HMMediaSourceDisplayOrderProfile.Delegate)?](./delegate-swift.property.md)
   The property that handles updates to the display order.
-- [var order: [Int]](hmmediasourcedisplayorderprofile/order.md)
+- [var order: [Int]](./order.md)
   The display order of input media sources.
-- [let canModifyOrder: Bool](hmmediasourcedisplayorderprofile/canmodifyorder.md)
+- [let canModifyOrder: Bool](./canmodifyorder.md)
   A Boolean that indicates if the display order of the input media sources can be modified.
-- [HMMediaSourceDisplayOrderProfile.Delegate](hmmediasourcedisplayorderprofile/delegate-swift.protocol.md)
+- [HMMediaSourceDisplayOrderProfile.Delegate](./delegate-swift.protocol.md)
   The protocol through which a delegate receives updates on the order of input media sources.
 
 

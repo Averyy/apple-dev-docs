@@ -1,7 +1,8 @@
 # cssm_key_size
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,24 @@
 struct cssm_key_size
 ```
 
+```c
+struct cssm_key_size;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_key_size-swift.struct/init.md)
-- [init(LogicalKeySizeInBits: uint32, EffectiveKeySizeInBits: uint32)](cssm_key_size-swift.struct/init(logicalkeysizeinbits:effectivekeysizeinbits:).md)
+- [init()](./cssm_key_size-swift.struct/init%28%29.md)
+- [init(LogicalKeySizeInBits: uint32, EffectiveKeySizeInBits: uint32)](./cssm_key_size-swift.struct/init%28logicalkeysizeinbits,effectivekeysizeinbits%29.md)
 ### Instance Properties
-- [var EffectiveKeySizeInBits: uint32](cssm_key_size-swift.struct/effectivekeysizeinbits.md)
-- [var LogicalKeySizeInBits: uint32](cssm_key_size-swift.struct/logicalkeysizeinbits.md)
+- [var EffectiveKeySizeInBits: uint32](./cssm_key_size-swift.struct/effectivekeysizeinbits.md)
+- [var LogicalKeySizeInBits: uint32](./cssm_key_size-swift.struct/logicalkeysizeinbits.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

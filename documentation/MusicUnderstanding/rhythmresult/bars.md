@@ -1,7 +1,8 @@
 # bars
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start time of each bar. A bar is a musical unit typically containing several beats.
 
@@ -22,9 +23,10 @@ let bars: [CMTime]
 
 ## See Also
 
-- [let beats: [CMTime]](rhythmresult/beats.md)
+### Types of rhythm results
+- [let beats: [CMTime]](./beats.md)
   The timestamp of each detected beat.
-- [let beatsPerMinute: Float?](rhythmresult/beatsperminute.md)
+- [let beatsPerMinute: Float?](./beatsperminute.md)
   The tempo of the song in beats per minute.
 
 

@@ -1,7 +1,8 @@
 # update(with:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates your session with information about the physical environment that is collected by another user.
 
@@ -15,15 +16,20 @@ Updates your session with information about the physical environment that is col
 func update(with collaborationData: ARSession.CollaborationData)
 ```
 
+```objc
+- (void) updateWithCollaborationData:(ARCollaborationData *) collaborationData;
+```
+
 #### Discussion
 
-Call this function to update a session when the app receives collaboration data from other users that are participating in a multiuser AR experience. Your app receives this data when multiple users scan different parts of an environment and share that information with your app over the network. For more information, see [`isCollaborationEnabled`](arworldtrackingconfiguration/iscollaborationenabled.md).
+Call this function to update a session when the app receives collaboration data from other users that are participating in a multiuser AR experience. Your app receives this data when multiple users scan different parts of an environment and share that information with your app over the network. For more information, see [`isCollaborationEnabled`](../arworldtrackingconfiguration/iscollaborationenabled.md).
 
 Collaboration is supported for world tracking configurations only.
 
 ## See Also
 
-- [ARSession.CollaborationData](arsession/collaborationdata.md)
+### Managing collaboration
+- [ARSession.CollaborationData](./collaborationdata.md)
   An object that holds information that a user has collected about the physical environment.
 
 

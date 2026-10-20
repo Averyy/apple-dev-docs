@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct portlabel_info {
     ...
 };
@@ -17,9 +17,9 @@ struct portlabel_info {
 ## Topics
 
 ### Instance Properties
-- [portlabel_domain](portlabel_info/3917673-portlabel_domain.md)
-- [portlabel_flags](portlabel_info/3917674-portlabel_flags.md)
-- [portlabel_id](portlabel_info/3917675-portlabel_id.md)
+- [portlabel_domain](./portlabel_info/api-3917673-portlabel_domain.md)
+- [portlabel_flags](./portlabel_info/api-3917674-portlabel_flags.md)
+- [portlabel_id](./portlabel_info/api-3917675-portlabel_id.md)
 
 
 ---

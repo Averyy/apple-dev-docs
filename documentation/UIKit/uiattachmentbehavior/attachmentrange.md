@@ -1,7 +1,8 @@
 # attachmentRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of motion for the attachment behavior.
 
@@ -18,27 +19,32 @@ The range of motion for the attachment behavior.
 var attachmentRange: UIFloatRange { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) UIFloatRange attachmentRange;
+```
+
 #### Discussion
 
-For sliding attachments, this property defines the range of motion (measured in points) supported along the given axis of translation. The specified range must always contain the value 0, which represents the starting point of movement for items. Items slide along the axis between the minimum and maximum values you specify. Setting this property to [`zero`](uifloatrange/zero.md) prevents items from sliding at all along their axis of translation.
+For sliding attachments, this property defines the range of motion (measured in points) supported along the given axis of translation. The specified range must always contain the value 0, which represents the starting point of movement for items. Items slide along the axis between the minimum and maximum values you specify. Setting this property to [`zero`](../uifloatrange/zero.md) prevents items from sliding at all along their axis of translation.
 
-For pin attachments, this property defines the amount of rotation (measured in radians) supported in the counter-clockwise and clockwise directions. The specified range must contain the value `0`, which represents the starting angle of each item. Items rotate around the anchor point between the minimum and maximum values you specify. Setting this property to [`zero`](uifloatrange/zero.md) prevents items from rotating at all.
+For pin attachments, this property defines the amount of rotation (measured in radians) supported in the counter-clockwise and clockwise directions. The specified range must contain the value `0`, which represents the starting angle of each item. Items rotate around the anchor point between the minimum and maximum values you specify. Setting this property to [`zero`](../uifloatrange/zero.md) prevents items from rotating at all.
 
-The default value of this property is [`infinite`](uifloatrange/infinite.md).
+The default value of this property is [`infinite`](../uifloatrange/infinite.md).
 
 ## See Also
 
-- [var anchorPoint: CGPoint](uiattachmentbehavior/anchorpoint.md)
+### Configuring an attachment behavior
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   The anchor point for the attachment behavior, if any.
-- [var attachedBehaviorType: UIAttachmentBehavior.AttachmentType](uiattachmentbehavior/attachedbehaviortype.md)
+- [var attachedBehaviorType: UIAttachmentBehavior.AttachmentType](./attachedbehaviortype.md)
   The type of the attachment behavior.
-- [var damping: CGFloat](uiattachmentbehavior/damping.md)
+- [var damping: CGFloat](./damping.md)
   The amount of damping to apply to the attachment behavior.
-- [var frequency: CGFloat](uiattachmentbehavior/frequency.md)
+- [var frequency: CGFloat](./frequency.md)
   The frequency of oscillation for the attachment behavior.
-- [var length: CGFloat](uiattachmentbehavior/length.md)
+- [var length: CGFloat](./length.md)
   The distance, in points, between the two attachment points of the attachment behavior.
-- [var frictionTorque: CGFloat](uiattachmentbehavior/frictiontorque.md)
+- [var frictionTorque: CGFloat](./frictiontorque.md)
   The amount of force needed to overcome rotational forces around an anchor point.
 
 

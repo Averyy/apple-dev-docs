@@ -1,7 +1,8 @@
 # SendDataAvailable
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Sends a notification to observers that indicates more data is available for processing.
 
@@ -11,21 +12,22 @@ Sends a notification to observers that indicates more data is available for proc
 
 ## Declaration
 
-```swift
+```c
 void SendDataAvailable(void);
 ```
 
 ## See Also
 
-- [- SetDataServicedHandler](../driverkit/iodataqueuedispatchsource/setdataservicedhandler.md)
+### Adding Work to the Queue
+- [- SetDataServicedHandler](../../DriverKit/iodataqueuedispatchsource/setdataservicedhandler.md)
   Installs the handler block to execute when data is removed from the queue.
-- [- DataServiced](../driverkit/iodataqueuedispatchsource/dataserviced.md)
+- [- DataServiced](../../DriverKit/iodataqueuedispatchsource/dataserviced.md)
   Responds to the removal of data from the queue.  
-- [- Enqueue](iodataqueuedispatchsource/3438180-enqueue.md)
+- [- Enqueue](./api-3438180-enqueue.md)
   Adds a single entry to the shared data queue.
-- [- EnqueueWithCoalesce](iodataqueuedispatchsource/3438181-enqueuewithcoalesce.md)
+- [- EnqueueWithCoalesce](./api-3438181-enqueuewithcoalesce.md)
   Adds an entry to the queue, but doesn't automatically send a data-available notification.
-- [IODataQueueClientEnqueueEntryBlock](../driverkit/iodataqueueclientenqueueentryblock.md)
+- [IODataQueueClientEnqueueEntryBlock](../../DriverKit/iodataqueueclientenqueueentryblock.md)
   The handler block you use to add data to a queue. 
 
 

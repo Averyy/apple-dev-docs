@@ -1,15 +1,17 @@
 # stringLength
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The length, in bytes, of the string.
 
 ## See Also
 
-- [stringUsage](qtvr_string_atom/stringusage.md)
+### Data fields
+- [stringUsage](./stringusage.md)
   The string usage.
-- [theString](qtvr_string_atom/thestring.md)
+- [theString](./thestring.md)
   The string.
 
 

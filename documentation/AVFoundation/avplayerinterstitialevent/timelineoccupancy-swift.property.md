@@ -1,7 +1,8 @@
 # timelineOccupancy
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An event’s occupancy on the integrated timeline.
 
@@ -20,19 +21,24 @@ An event’s occupancy on the integrated timeline.
 var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) AVPlayerInterstitialEventTimelineOccupancy timelineOccupancy;
+```
+
 #### Discussion
 
-The default value is [`AVPlayerInterstitialEvent.TimelineOccupancy.singlePoint`](avplayerinterstitialevent/timelineoccupancy-swift.enum/singlepoint.md).
+The default value is [`AVPlayerInterstitialEvent.TimelineOccupancy.singlePoint`](./timelineoccupancy-swift.enum/singlepoint.md).
 
 ## See Also
 
-- [AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.enum.md)
+### Inspecting timeline occupancy
+- [AVPlayerInterstitialEvent.TimelineOccupancy](./timelineoccupancy-swift.enum.md)
   Constants that specify how an event occupies time on an integrated timeline.
-- [var supplementsPrimaryContent: Bool](avplayerinterstitialevent/supplementsprimarycontent.md)
+- [var supplementsPrimaryContent: Bool](./supplementsprimarycontent.md)
   A Boolean value that indicates whether an event supplements the primary content and should present with the primary item.
-- [var contentMayVary: Bool](avplayerinterstitialevent/contentmayvary.md)
+- [var contentMayVary: Bool](./contentmayvary.md)
   A Boolean value that indicates whether an event’s content is dynamic and the server may respond with different interstitial assets for other participants in a coordinated playback session.
-- [var plannedDuration: CMTime](avplayerinterstitialevent/plannedduration.md)
+- [var plannedDuration: CMTime](./plannedduration.md)
   The planned duration of the event.
 
 

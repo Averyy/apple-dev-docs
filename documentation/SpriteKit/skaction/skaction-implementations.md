@@ -1,13 +1,14 @@
 # SKAction Implementations
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(named: String, fromURL: URL)](skaction/init(named:fromurl:).md)
+- [init?(named: String, fromURL: URL)](./init%28named,fromurl%29.md)
   Creates an action of the given name from an action file.
-- [init?(named: String, fromURL: URL, duration: TimeInterval)](skaction/init(named:fromurl:duration:).md)
+- [init?(named: String, fromURL: URL, duration: TimeInterval)](./init%28named,fromurl,duration%29.md)
   Creates an action of the given name from an action file with a new duration.
 
 

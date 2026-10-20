@@ -1,14 +1,15 @@
 # capacities
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 dk_format_capacity_t *capacities;
 ```
 

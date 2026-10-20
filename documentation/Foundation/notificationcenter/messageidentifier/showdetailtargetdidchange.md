@@ -1,7 +1,8 @@
 # showDetailTargetDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,10 +17,13 @@
 static var showDetailTargetDidChange: NotificationCenter.BaseMessageIdentifier<UIViewController.ShowDetailTargetDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIViewController.ShowDetailTargetDidChangeMessage>`.
+
 ## See Also
 
-- [static var didBecomeVisible: NotificationCenter.BaseMessageIdentifier<UIWindow.DidBecomeVisibleMessage>](notificationcenter/messageidentifier/didbecomevisible.md)
-- [static var didBecomeHidden: NotificationCenter.BaseMessageIdentifier<UIWindow.DidBecomeHiddenMessage>](notificationcenter/messageidentifier/didbecomehidden.md)
+### Identifying UIKit view controller messages
+- [static var didBecomeVisible: NotificationCenter.BaseMessageIdentifier<UIWindow.DidBecomeVisibleMessage>](./didbecomevisible.md)
+- [static var didBecomeHidden: NotificationCenter.BaseMessageIdentifier<UIWindow.DidBecomeHiddenMessage>](./didbecomehidden.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # writeAttributeHoldTime(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeHoldTime(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeHoldTime(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeHoldTimeWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # isIdeographic
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is considered to be a CJKV (Chinese, Japanese, Korean, and Vietnamese) or other siniform (Chinese writing-related) ideograph.
 
@@ -24,7 +25,7 @@ var isIdeographic: Bool { get }
 
 This property roughly defines the class of “Chinese characters” and does not include characters of other logographic scripts such as Cuneiform or Egyptian Hieroglyphs.
 
-This property corresponds to the “Ideographic” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Ideographic” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

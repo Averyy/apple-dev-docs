@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that receives and combines the latest elements from two publishers.
 

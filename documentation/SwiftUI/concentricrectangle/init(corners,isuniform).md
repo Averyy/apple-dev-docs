@@ -1,7 +1,8 @@
 # init(corners:isUniform:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle with the same corner style set on four corners.
 
@@ -31,7 +32,8 @@ When you provide `false` for `isUniform`, the system may calculate a different r
 
 ## See Also
 
-- [static func rect(corners: Edge.Corner.Style, isUniform: Bool) -> Self](shape/rect(corners:isuniform:).md)
+### Creating a rectangle with the same corner style
+- [static func rect(corners: Edge.Corner.Style, isUniform: Bool) -> Self](../shape/rect%28corners,isuniform%29.md)
   Creates a rectangle with the same corner style set on four corners.
 
 

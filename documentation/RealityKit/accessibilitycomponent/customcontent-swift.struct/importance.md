@@ -1,7 +1,8 @@
 # importance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines when to output custom accessibility content.
 
@@ -11,7 +12,7 @@ Determines when to output custom accessibility content.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # AAUSBAccessory.Event
 
 **Framework**: Accessory Access  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events that represent accessory connection and disconnection.
 
@@ -17,16 +18,16 @@ enum Event
 ## Topics
 
 ### Responding to USB accessory events
-- [AAUSBAccessory.Event.didConnect(_:)](aausbaccessory/event/didconnect(_:).md)
+- [AAUSBAccessory.Event.didConnect(_:)](./event/didconnect%28_%29.md)
   The event the framework sends when a USB accessory connects to the system.
-- [AAUSBAccessory.Event.didDisconnect(_:)](aausbaccessory/event/diddisconnect(_:).md)
+- [AAUSBAccessory.Event.didDisconnect(_:)](./event/diddisconnect%28_%29.md)
   The method the framework calls when a USB accessory disconnects from the system.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

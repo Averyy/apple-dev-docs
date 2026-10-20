@@ -1,7 +1,8 @@
 # MusicSubscriptionOffer.MessageIdentifier
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for the main message that the subscription offer sheet presents to the user.
 
@@ -20,29 +21,29 @@ struct MessageIdentifier
 ## Topics
 
 ### Initializers
-- [init(String)](musicsubscriptionoffer/messageidentifier/init(_:).md)
+- [init(String)](./messageidentifier/init%28_%29.md)
   Creates a message identifier with the specified raw value.
-- [init(rawValue: String)](musicsubscriptionoffer/messageidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./messageidentifier/init%28rawvalue%29.md)
   Creates a message identifier with the specified raw value.
 ### Type Properties
-- [static let addMusic: MusicSubscriptionOffer.MessageIdentifier](musicsubscriptionoffer/messageidentifier/addmusic.md)
+- [static let addMusic: MusicSubscriptionOffer.MessageIdentifier](./messageidentifier/addmusic.md)
   An identifier for the message that invites the user to add music to their library by subscribing to Apple Music.
-- [static let join: MusicSubscriptionOffer.MessageIdentifier](musicsubscriptionoffer/messageidentifier/join.md)
+- [static let join: MusicSubscriptionOffer.MessageIdentifier](./messageidentifier/join.md)
   An identifier for the message that invites the user to join Apple Music.
-- [static let playMusic: MusicSubscriptionOffer.MessageIdentifier](musicsubscriptionoffer/messageidentifier/playmusic.md)
+- [static let playMusic: MusicSubscriptionOffer.MessageIdentifier](./messageidentifier/playmusic.md)
   An identifier for the message that invites the user to play music by subscribing to Apple Music.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dpad
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s directional pad element.
 
@@ -17,6 +18,10 @@ The controller’s directional pad element.
 
 ```swift
 var dpad: GCControllerDirectionPad { get }
+```
+
+```objc
+@property (nonatomic, readonly) GCControllerDirectionPad * dpad;
 ```
 
 #### Discussion

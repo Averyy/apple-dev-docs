@@ -1,7 +1,8 @@
 # init(geometry:surface:lighting:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor from the three shader stages.
 

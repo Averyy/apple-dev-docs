@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents anything containing user-viewable content.
 
@@ -22,33 +23,34 @@ static var content: UTType { get }
 
 #### Discussion
 
-Types that conform to content include documents, pasteboard data, and document packages. Types describing files or packages must also conform to [`UTTypeData`](uttypedata.md) or [`UTTypePackage`](uttypepackage.md) for the system to bind documents to them.
+Types that conform to content include documents, pasteboard data, and document packages. Types describing files or packages must also conform to [`UTTypeData`](../uttypedata.md) or [`UTTypePackage`](../uttypepackage.md) for the system to bind documents to them.
 
 The identifier for this type is `public.content`.
 
 ## See Also
 
-- [static var item: UTType](uttype-swift.struct/item.md)
+### Apple system base types
+- [static var item: UTType](./item.md)
   A generic base type for most objects, such as files or directories.
-- [static var compositeContent: UTType](uttype-swift.struct/compositecontent.md)
+- [static var compositeContent: UTType](./compositecontent.md)
   A base type that represents a content format supporting mixed embedded content.
-- [static var data: UTType](uttype-swift.struct/data.md)
+- [static var data: UTType](./data.md)
   A base type that represents any sort of byte stream, including files and in-memory data.
-- [static var resolvable: UTType](uttype-swift.struct/resolvable.md)
+- [static var resolvable: UTType](./resolvable.md)
   A base type that represents a resolvable reference, including symbolic links and aliases.
-- [static var package: UTType](uttype-swift.struct/package.md)
+- [static var package: UTType](./package.md)
   A base type that represents a packaged directory.
-- [static var bundle: UTType](uttype-swift.struct/bundle.md)
+- [static var bundle: UTType](./bundle.md)
   A base type that represents a directory that conforms to one of the bundle layouts.
-- [static var pluginBundle: UTType](uttype-swift.struct/pluginbundle.md)
+- [static var pluginBundle: UTType](./pluginbundle.md)
   A base type that represents a bundle-based plug-in.
-- [static var application: UTType](uttype-swift.struct/application.md)
+- [static var application: UTType](./application.md)
   A base type that represents a macOS, iOS, iPadOS, watchOS, and tvOS app.
-- [static var sourceCode: UTType](uttype-swift.struct/sourcecode.md)
+- [static var sourceCode: UTType](./sourcecode.md)
   A base type that represents source code of any programming language.
-- [static var bookmark: UTType](uttype-swift.struct/bookmark.md)
+- [static var bookmark: UTType](./bookmark.md)
   A base type that represents bookmark data.
-- [static var log: UTType](uttype-swift.struct/log.md)
+- [static var log: UTType](./log.md)
   A base type that represents console log data.
 
 

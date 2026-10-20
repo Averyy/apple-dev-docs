@@ -1,7 +1,8 @@
 # GroupActivitySharingResult.success
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates someone wants to share the activity with the group.
 
@@ -19,7 +20,8 @@ case success
 
 ## See Also
 
-- [GroupActivitySharingResult.cancelled](groupactivitysharingresult-2ijfu/cancelled.md)
+### Getting the result
+- [GroupActivitySharingResult.cancelled](./cancelled.md)
   A result that indicates someone canceled the request.
 
 

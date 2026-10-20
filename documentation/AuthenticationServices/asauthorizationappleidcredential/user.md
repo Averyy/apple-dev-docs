@@ -1,7 +1,8 @@
 # user
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the authenticated user.
 
@@ -20,13 +21,18 @@ An identifier for the authenticated user.
 var user: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * user;
+```
+
 ## See Also
 
-- [var identityToken: Data?](asauthorizationappleidcredential/identitytoken.md)
+### Identifying a User
+- [var identityToken: Data?](./identitytoken.md)
   A JSON Web Token (JWT) that securely communicates information about the user to the app.
-- [var authorizationCode: Data?](asauthorizationappleidcredential/authorizationcode.md)
+- [var authorizationCode: Data?](./authorizationcode.md)
   A token that the app uses to interact with the server.
-- [var state: String?](asauthorizationappleidcredential/state.md)
+- [var state: String?](./state.md)
   An arbitrary string that your app provides to the request that generates the credential.
 
 

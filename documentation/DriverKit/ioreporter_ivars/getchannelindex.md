@@ -1,17 +1,18 @@
 # getChannelIndex
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getChannelIndex(uint64_t channel_id, int *channel_index);
 ```
 
@@ -29,8 +30,12 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `channel_id`: - ID of the channel
-- `channel_index`: - pointer to the returned element_index
+- `channel_id`:
+
+  - ID of the channel
+- `channel_index`:
+
+  - pointer to the returned element_index
 
 
 ---

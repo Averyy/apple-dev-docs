@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The default value for the animation state key.
@@ -23,7 +24,8 @@ static var defaultValue: Self.Value { get }
 
 ## See Also
 
-- [associatedtype Value](animationstatekey/value.md)
+### Setting the default value
+- [associatedtype Value](./value.md)
   The associated type representing the type of the animation state key’s value.
 
 

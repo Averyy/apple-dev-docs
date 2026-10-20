@@ -1,7 +1,8 @@
 # tail
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A group name that represents the tail.
 
@@ -19,17 +20,22 @@ A group name that represents the tail.
 static let tail: VNAnimalBodyPoseObservation.JointsGroupName
 ```
 
+```c
+extern VNAnimalBodyPoseObservationJointsGroupName const VNAnimalBodyPoseObservationJointsGroupNameTail;
+```
+
 ## See Also
 
-- [static let all: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/all.md)
+### Getting the Group Names
+- [static let all: VNAnimalBodyPoseObservation.JointsGroupName](./all.md)
   A group name that represents all joints.
-- [static let forelegs: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/forelegs.md)
+- [static let forelegs: VNAnimalBodyPoseObservation.JointsGroupName](./forelegs.md)
   A group name that represents the forelegs.
-- [static let head: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/head.md)
+- [static let head: VNAnimalBodyPoseObservation.JointsGroupName](./head.md)
   A group name that represents the head.
-- [static let hindlegs: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/hindlegs.md)
+- [static let hindlegs: VNAnimalBodyPoseObservation.JointsGroupName](./hindlegs.md)
   A group name that represents the hindlegs.
-- [static let trunk: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/trunk.md)
+- [static let trunk: VNAnimalBodyPoseObservation.JointsGroupName](./trunk.md)
   A group name that represents the trunk.
 
 

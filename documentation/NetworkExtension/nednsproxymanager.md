@@ -1,7 +1,8 @@
 # NEDNSProxyManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object to create and manage an DNS proxy provider’s configuration.
 
@@ -18,58 +19,63 @@ An object to create and manage an DNS proxy provider’s configuration.
 class NEDNSProxyManager
 ```
 
+```objc
+@interface NEDNSProxyManager : NSObject
+```
+
 #### Overview
 
 A DNS proxy allows your app to intercept all DNS traffic generated on a device. You can use this capability to provide services like DNS traffic encryption, typically by redirecting DNS traffic to your own server. You usually do this in the context of managed devices, such as those owned by a school or an enterprise.
 
-You create a DNS proxy as an app extension based on a custom subclass of the [`NEDNSProxyProvider`](nednsproxyprovider.md) class. You enable and configure this proxy from within your app using the singleton proxy manager instance provided by the [`shared()`](nednsproxymanager/shared().md) type method of the [`NEDNSProxyManager`](nednsproxymanager.md) class. For example, for a proxy that performs a simple redirect, you can use the proxy manager to define and dynamically configure the destination IP address of the redirected traffic.
+You create a DNS proxy as an app extension based on a custom subclass of the [`NEDNSProxyProvider`](./nednsproxyprovider.md) class. You enable and configure this proxy from within your app using the singleton proxy manager instance provided by the [`shared()`](./nednsproxymanager/shared%28%29.md) type method of the [`NEDNSProxyManager`](./nednsproxymanager.md) class. For example, for a proxy that performs a simple redirect, you can use the proxy manager to define and dynamically configure the destination IP address of the redirected traffic.
 
 Instances of the proxy manager are thread safe.
 
-> ❗ **Important**:  To use the [`NEDNSProxyManager`](nednsproxymanager.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
+> ❗ **Important**:  To use the [`NEDNSProxyManager`](./nednsproxymanager.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [Configure network extensions](http://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
 ## Topics
 
 ### Managing the DNS proxy configuration
-- [class func shared() -> NEDNSProxyManager](nednsproxymanager/shared.md)
+- [class func shared() -> NEDNSProxyManager](./nednsproxymanager/shared%28%29.md)
   Returns a singleton DNS proxy manager instance.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nednsproxymanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./nednsproxymanager/loadfrompreferences%28completionhandler%29.md)
   Loads the current DNS proxy configuration from the caller’s DNS proxy preferences.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](nednsproxymanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./nednsproxymanager/savetopreferences%28completionhandler%29.md)
   Saves the DNS proxy configuration in the caller’s DNS proxy preferences.
-- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](nednsproxymanager/removefrompreferences(completionhandler:).md)
+- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](./nednsproxymanager/removefrompreferences%28completionhandler%29.md)
   Removes the DNS proxy configuration from the caller’s DNS proxy preferences.
 ### Accessing DNS proxy configuration properties
-- [var isEnabled: Bool](nednsproxymanager/isenabled.md)
+- [var isEnabled: Bool](./nednsproxymanager/isenabled.md)
   The status of a DNS proxy.
-- [var providerProtocol: NEDNSProxyProviderProtocol?](nednsproxymanager/providerprotocol.md)
+- [var providerProtocol: NEDNSProxyProviderProtocol?](./nednsproxymanager/providerprotocol.md)
   The provider-specific portion of the DNS proxy configuration.
-- [var localizedDescription: String?](nednsproxymanager/localizeddescription.md)
+- [var localizedDescription: String?](./nednsproxymanager/localizeddescription.md)
   A description of the DNS proxy.
 ### Notifications
-- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nednsproxyconfigurationdidchange.md)
+- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nednsproxyconfigurationdidchange.md)
   A notification that is posted when the DNS proxy configuration changes.
 ### Errors
-- [let NEDNSProxyErrorDomain: String](nednsproxyerrordomain.md)
+- [let NEDNSProxyErrorDomain: String](./nednsproxyerrordomain.md)
   The DNS proxy error domain.
-- [enum NEDNSProxyManagerError](nednsproxymanagererror.md)
+- [enum NEDNSProxyManagerError](./nednsproxymanagererror.md)
   The possible DNS proxy manager errors.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEDNSProxyProviderProtocol](nednsproxyproviderprotocol.md)
+### Configuration
+- [class NEDNSProxyProviderProtocol](./nednsproxyproviderprotocol.md)
   Configuration parameters for a DNS proxy.
 
 

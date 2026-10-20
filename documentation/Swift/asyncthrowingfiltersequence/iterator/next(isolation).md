@@ -1,7 +1,8 @@
 # next(isolation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces the next element in the filter sequence.
 

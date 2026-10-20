@@ -1,7 +1,8 @@
 # memberAnnotations
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of annotations that the framework groups together in a cluster.
 
@@ -10,19 +11,20 @@ An array of annotations that the framework groups together in a cluster.
 
 ## Declaration
 
-```swift
+```
 get memberAnnotations(): Annotation[] | null;
 ```
 
 #### Discussion
 
-The [`memberAnnotations`](annotation/memberannotations.md) array contains all of the annotations that MapKit JS groups together in a cluster. This is a flat array. If there are multiple clusters of annotations, this array contains all of the individual annotations within those clusters; it doesn’t contain any cluster annotations.
+The [`memberAnnotations`](./memberannotations.md) array contains all of the annotations that MapKit JS groups together in a cluster. This is a flat array. If there are multiple clusters of annotations, this array contains all of the individual annotations within those clusters; it doesn’t contain any cluster annotations.
 
 ## See Also
 
-- [clusteringIdentifier](annotation/clusteringidentifier.md)
+### Managing clustering
+- [clusteringIdentifier](./clusteringidentifier.md)
   An identifier for grouping annotations into the same cluster.
-- [collisionMode](annotation/collisionmode-data.property.md)
+- [collisionMode](./collisionmode-data.property.md)
   A mode that determines the shape of the collision frame.
 
 

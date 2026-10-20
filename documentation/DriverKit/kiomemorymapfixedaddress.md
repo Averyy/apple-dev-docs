@@ -1,33 +1,35 @@
 # kIOMemoryMapFixedAddress
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The memory maps to a specific address.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryMapFixedAddress
 ```
 
 ## See Also
 
-- [kIOMemoryMapReadOnly](kiomemorymapreadonly.md)
+### Options
+- [kIOMemoryMapReadOnly](./kiomemorymapreadonly.md)
   The memory maps as read-only.
-- [kIOMemoryMapCacheModeDefault](kiomemorymapcachemodedefault.md)
+- [kIOMemoryMapCacheModeDefault](./kiomemorymapcachemodedefault.md)
   The memory maps using the default cache mode.
-- [kIOMemoryMapCacheModeInhibit](kiomemorymapcachemodeinhibit.md)
+- [kIOMemoryMapCacheModeInhibit](./kiomemorymapcachemodeinhibit.md)
   The memory maps using the inhibited cache mode.
-- [kIOMemoryMapCacheModeCopyback](kiomemorymapcachemodecopyback.md)
+- [kIOMemoryMapCacheModeCopyback](./kiomemorymapcachemodecopyback.md)
   The memory maps using the copy-back cache mode.
-- [kIOMemoryMapCacheModeWriteThrough](kiomemorymapcachemodewritethrough.md)
+- [kIOMemoryMapCacheModeWriteThrough](./kiomemorymapcachemodewritethrough.md)
   The memory maps using the write-through cache mode.
 
 

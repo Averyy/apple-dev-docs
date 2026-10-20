@@ -1,7 +1,8 @@
 # SHMatchedMediaItem
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the metadata for a matched reference signature.
 
@@ -20,52 +21,57 @@ An object that represents the metadata for a matched reference signature.
 class SHMatchedMediaItem
 ```
 
+```objc
+@interface SHMatchedMediaItem : SHMediaItem
+```
+
 #### Overview
 
-To access properties for custom media items, use subscripting. For more information, see [`SHMediaItem`](shmediaitem.md).
+To access properties for custom media items, use subscripting. For more information, see [`SHMediaItem`](./shmediaitem.md).
 
 ## Topics
 
 ### Reading information about the match
-- [var matchOffset: TimeInterval](shmatchedmediaitem/matchoffset.md)
+- [var matchOffset: TimeInterval](./shmatchedmediaitem/matchoffset.md)
   The timecode in the reference recording that matches the start of the query, in seconds.
-- [var predictedCurrentMatchOffset: TimeInterval](shmatchedmediaitem/predictedcurrentmatchoffset.md)
+- [var predictedCurrentMatchOffset: TimeInterval](./shmatchedmediaitem/predictedcurrentmatchoffset.md)
   The updated timecode in the reference recording that matches the current playback position of the query audio, in seconds.
-- [var frequencySkew: Float](shmatchedmediaitem/frequencyskew.md)
+- [var frequencySkew: Float](./shmatchedmediaitem/frequencyskew.md)
   A multiple for the difference in frequency between the matched audio and the query audio.
 ### Instance Properties
-- [var confidence: Float](shmatchedmediaitem/confidence.md)
+- [var confidence: Float](./shmatchedmediaitem/confidence.md)
   The level of confidence in the match result.
 
 ## Relationships
 
 ### Inherits From
-- [SHMediaItem](shmediaitem.md)
+- [SHMediaItem](./shmediaitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SHSession](shsession.md)
+### Match audio
+- [class SHSession](./shsession.md)
   An object that matches a specific audio recording when a segment of that recording is part of captured sound in the Shazam catalog or your custom catalog.
-- [class SHManagedSession](shmanagedsession.md)
+- [class SHManagedSession](./shmanagedsession.md)
   An object that records and matches a recording with captured sound in the Shazam catalog or your custom catalog.
-- [protocol SHSessionDelegate](shsessiondelegate.md)
+- [protocol SHSessionDelegate](./shsessiondelegate.md)
   Methods that the session calls with the result of a match request.
-- [class SHMatch](shmatch.md)
+- [class SHMatch](./shmatch.md)
   An object that represents the catalog media items that match a query.
-- [class SHMediaItem](shmediaitem.md)
+- [class SHMediaItem](./shmediaitem.md)
   An object that represents the metadata for a reference signature.
 
 

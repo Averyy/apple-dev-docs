@@ -1,7 +1,8 @@
 # vDSP_maxv
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the maximum value in a single-precision vector.
 
@@ -10,7 +11,7 @@ Calculates the maximum value in a single-precision vector.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_maxv(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
@@ -29,7 +30,7 @@ for (n = 0; n < N; ++n)
         *C = A[n*I];
 ```
 
-The following code shows an example of using [`vDSP_maxv`](https://developer.apple.com/documentation/accelerate/vdsp_maxv).
+The following code shows an example of using [`vDSP_maxv`](../Accelerate/vdsp_maxv.md).
 
 ```swift
 let stride = vDSP_Stride(1)

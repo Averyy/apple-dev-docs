@@ -1,7 +1,8 @@
 # AdvancedCommerceProduct
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A product configured as a generic SKU in App Store Connect for use with the Advanced Commerce API.
 
@@ -22,55 +23,56 @@ struct AdvancedCommerceProduct
 
 #### Overview
 
-For more information about [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi), see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
+For more information about [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md), see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/).
 
 ## Topics
 
 ### Getting the product ID and type
-- [let id: AdvancedCommerceProduct.ID](advancedcommerceproduct/id.md)
+- [let id: AdvancedCommerceProduct.ID](./advancedcommerceproduct/id.md)
   The generic product ID.
-- [AdvancedCommerceProduct.ProductType](advancedcommerceproduct/producttype.md)
-- [let type: AdvancedCommerceProduct.ProductType](advancedcommerceproduct/type.md)
+- [AdvancedCommerceProduct.ProductType](./advancedcommerceproduct/producttype.md)
+- [let type: AdvancedCommerceProduct.ProductType](./advancedcommerceproduct/type.md)
   The type of the product.
 ### Initiating purchases
-- [AdvancedCommerceProduct.PurchaseOption](advancedcommerceproduct/purchaseoption.md)
-- [func purchase(compactJWS: String, confirmIn: NSWindow, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchase(compactjws:confirmin:options:)-7x4bh.md)
+- [AdvancedCommerceProduct.PurchaseOption](./advancedcommerceproduct/purchaseoption.md)
+- [func purchase(compactJWS: String, confirmIn: NSWindow, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./advancedcommerceproduct/purchase%28compactjws,confirmin,options%29-7x4bh.md)
   Processes a purchase for the product.
-- [func purchase(compactJWS: String, confirmIn: UIViewController, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchase(compactjws:confirmin:options:)-54lkw.md)
+- [func purchase(compactJWS: String, confirmIn: UIViewController, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./advancedcommerceproduct/purchase%28compactjws,confirmin,options%29-54lkw.md)
   Processes a purchase for the product.
-- [func purchase(compactJWS: String, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchase(compactjws:options:).md)
+- [func purchase(compactJWS: String, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./advancedcommerceproduct/purchase%28compactjws,options%29.md)
   Processes a purchase for the product.
-- [AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchaseresult.md)
+- [AdvancedCommerceProduct.PurchaseResult](./advancedcommerceproduct/purchaseresult.md)
 ### Getting transactions and entitlements
-- [var allTransactions: Transaction.Transactions](advancedcommerceproduct/alltransactions.md)
+- [var allTransactions: Transaction.Transactions](./advancedcommerceproduct/alltransactions.md)
   All transactions associated with the generic product ID.
-- [var currentEntitlements: Transaction.Transactions](advancedcommerceproduct/currententitlements.md)
+- [var currentEntitlements: Transaction.Transactions](./advancedcommerceproduct/currententitlements.md)
   The transactions that entitle the customer to Advanced Commerce Items purchased using the generic product ID.
-- [var latestTransaction: VerificationResult<Transaction>?](advancedcommerceproduct/latesttransaction.md)
+- [var latestTransaction: VerificationResult<Transaction>?](./advancedcommerceproduct/latesttransaction.md)
   The most recent transaction associated with the generic product ID, if it exists.
 ### Initializing an instance
-- [init(id: AdvancedCommerceProduct.ID) async throws](advancedcommerceproduct/init(id:).md)
+- [init(id: AdvancedCommerceProduct.ID) async throws](./advancedcommerceproduct/init%28id%29.md)
   Creates an Advanced Commerce product.
 ### Handling errors
-- [struct InvalidRequestError](invalidrequesterror.md)
+- [struct InvalidRequestError](./invalidrequesterror.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Sending Advanced Commerce API requests from your app](sending-advanced-commerce-api-requests-from-your-app.md)
+### Advanced Commerce API interactions
+- [Sending Advanced Commerce API requests from your app](./sending-advanced-commerce-api-requests-from-your-app.md)
   Send Advanced Commerce API requests from your app that you authorize with a JSON Web Signature (JWS) you generate on your server.
-- [Generating JWS to sign App Store requests](generating-jws-to-sign-app-store-requests.md)
+- [Generating JWS to sign App Store requests](./generating-jws-to-sign-app-store-requests.md)
   Create signed JSON Web Signature (JWS) strings on your server to authorize your API requests in your app.
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tile set’s type.
 
@@ -20,21 +21,26 @@ The tile set’s type.
 var type: SKTileSetType { get set }
 ```
 
+```objc
+@property (nonatomic) SKTileSetType type;
+```
+
 #### Discussion
 
 The tile set’s type specifies how the tiles in the set will be arranged when placed in a tile map.
 
 ## See Also
 
-- [var defaultTileGroup: SKTileGroup?](sktileset/defaulttilegroup.md)
+### Accessing or Reading a Tile Set’s Properties
+- [var defaultTileGroup: SKTileGroup?](./defaulttilegroup.md)
   The tile set’s default tile group.
-- [var defaultTileSize: CGSize](sktileset/defaulttilesize.md)
+- [var defaultTileSize: CGSize](./defaulttilesize.md)
   The tile set’s default tile size.
-- [var name: String?](sktileset/name.md)
+- [var name: String?](./name.md)
   A name associated with the tile set.
-- [var tileGroups: [SKTileGroup]](sktileset/tilegroups.md)
+- [var tileGroups: [SKTileGroup]](./tilegroups.md)
   The tile set’s array of tile group objects.
-- [enum SKTileSetType](sktilesettype.md)
+- [enum SKTileSetType](../sktilesettype.md)
   An enumeration defining how tiles are arranged.
 
 

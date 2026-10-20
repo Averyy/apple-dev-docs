@@ -1,7 +1,8 @@
 # wantedAttributes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes requested by the request.
 
@@ -14,15 +15,20 @@ The attributes requested by the request.
 var wantedAttributes: FSItem.Attribute { get set }
 ```
 
+```objc
+@property (nonatomic) FSItemAttribute wantedAttributes;
+```
+
 #### Discussion
 
-This property is a bit field in Objective-C and an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) in Swift.
+This property is a bit field in Objective-C and an [`OptionSet`](../../../Swift/optionset.md) in Swift.
 
 ## See Also
 
-- [func isAttributeWanted(FSItem.Attribute) -> Bool](fsitem/getattributesrequest/isattributewanted(_:).md)
+### Inspecting requested attributes
+- [func isAttributeWanted(FSItem.Attribute) -> Bool](./isattributewanted%28_%29.md)
   A method that indicates whether the request wants given attribute.
-- [FSItem.Attribute](fsitem/attribute.md)
+- [FSItem.Attribute](../attribute.md)
   A value that indicates a set of item attributes to get or set.
 
 

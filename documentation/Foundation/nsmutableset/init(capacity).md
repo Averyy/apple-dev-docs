@@ -1,7 +1,8 @@
 # init(capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized mutable set with a given initial capacity.
 
@@ -20,6 +21,10 @@ Returns an initialized mutable set with a given initial capacity.
 init(capacity numItems: Int)
 ```
 
+```objc
+- (instancetype) initWithCapacity:(NSUInteger) numItems;
+```
+
 #### Return Value
 
 An initialized mutable set with initial capacity to hold `numItems` members. The returned set might be different than the original receiver.
@@ -36,7 +41,8 @@ This method is a designated initializer for `NSMutableSet`.
 
 ## See Also
 
-- [init()](nsmutableset/init.md)
+### Creating a mutable set
+- [init()](./init%28%29.md)
   Initializes a newly allocated set.
 
 

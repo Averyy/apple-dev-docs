@@ -1,7 +1,8 @@
 # description
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string describing the risk of harm from unprotected sun exposure.
 

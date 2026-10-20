@@ -1,7 +1,8 @@
 # CLMonitor.CircularGeographicCondition
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A condition that describes a circular geographic area that a center point and radius define.
 
@@ -24,26 +25,27 @@ Use `CLMonitor.CircularGeographicCondition` to monitor events that occur in a ci
 ## Topics
 
 ### Creating a circular geographic condition
-- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](clmonitor-2r51v/circulargeographiccondition/init(center:radius:).md)
+- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](./circulargeographiccondition/init%28center,radius%29.md)
   Creates a circular geographic condition with a center point and radius you specify.
 ### Condition characteristics
-- [let center: CLLocationCoordinate2D](clmonitor-2r51v/circulargeographiccondition/center.md)
+- [let center: CLLocationCoordinate2D](./circulargeographiccondition/center.md)
   The center point of the condition’s area.
-- [let radius: CLLocationDistance](clmonitor-2r51v/circulargeographiccondition/radius.md)
+- [let radius: CLLocationDistance](./circulargeographiccondition/radius.md)
   The radius of the condition’s area, in meters.
 
 ## Relationships
 
 ### Conforms To
-- [CLCondition](clcondition-swift.protocol.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CLCondition](../clcondition-swift.protocol.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CLMonitor.BeaconIdentityCondition](clmonitor-2r51v/beaconidentitycondition.md)
+### Monitor conditions
+- [CLMonitor.BeaconIdentityCondition](./beaconidentitycondition.md)
   A condition that describes the characteristics of a beacon.
 
 

@@ -1,12 +1,13 @@
 # NSGlyphAttributeBidiLevel
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The bidirectional level of the glyph.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The bidirectional level of the glyph.
 var NSGlyphAttributeBidiLevel: Int { get }
 ```
 
+```c
+NSGlyphAttributeBidiLevel
+```
+
 ## See Also
 
-- [var NSGlyphAttributeSoft: Int](nsglyphattributesoft.md)
+### Attributes
+- [var NSGlyphAttributeSoft: Int](./nsglyphattributesoft.md)
   The glyph is soft.
-- [var NSGlyphAttributeElastic: Int](nsglyphattributeelastic.md)
+- [var NSGlyphAttributeElastic: Int](./nsglyphattributeelastic.md)
   The glyph is elastic.
-- [var NSGlyphAttributeInscribe: Int](nsglyphattributeinscribe.md)
+- [var NSGlyphAttributeInscribe: Int](./nsglyphattributeinscribe.md)
   The glyph inscription attribute.
 
 

@@ -1,7 +1,8 @@
 # leafIsCA
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow CA certificates as leaf certificates.
 
@@ -12,6 +13,10 @@ Allow CA certificates as leaf certificates.
 
 ```swift
 static var leafIsCA: SecTrustOptionFlags { get }
+```
+
+```c
+kSecTrustOptionLeafIsCA
 ```
 
 

@@ -1,7 +1,8 @@
 # Text
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The subtitle text.
 
@@ -11,9 +12,10 @@ The subtitle text is Unicode text, encoded either as UTF-8 text or UTF-16 text b
 
 ## See Also
 
-- [Text size](subtitle_sample_data/text_size.md)
+### Data fields
+- [Text size](./text_size.md)
   A 16-bit word that specifies the length (number of bytes) of the subtitle text.
-- [Sample extensions](subtitle_sample_data/sample_extensions.md)
+- [Sample extensions](./sample_extensions.md)
   One or more atoms containing additional information for selecting and drawing the subtitle.
 
 

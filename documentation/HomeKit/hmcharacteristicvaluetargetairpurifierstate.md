@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetAirPurifierState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the target air purifier state.
 
@@ -19,25 +20,29 @@ Possible values for the target air purifier state.
 enum HMCharacteristicValueTargetAirPurifierState
 ```
 
+```c
+enum HMCharacteristicValueTargetAirPurifierState : NSInteger;
+```
+
 ## Topics
 
 ### Air Purifier States
-- [HMCharacteristicValueTargetAirPurifierState.manual](hmcharacteristicvaluetargetairpurifierstate/manual.md)
+- [HMCharacteristicValueTargetAirPurifierState.manual](./hmcharacteristicvaluetargetairpurifierstate/manual.md)
   The air purifier should operate in a manual mode.
-- [HMCharacteristicValueTargetAirPurifierState.automatic](hmcharacteristicvaluetargetairpurifierstate/automatic.md)
+- [HMCharacteristicValueTargetAirPurifierState.automatic](./hmcharacteristicvaluetargetairpurifierstate/automatic.md)
   The air purifier should operate in an automatic mode.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetairpurifierstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetairpurifierstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

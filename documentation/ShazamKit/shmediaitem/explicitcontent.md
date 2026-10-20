@@ -1,7 +1,8 @@
 # explicitContent
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the media item contains explicit content.
 
@@ -20,25 +21,38 @@ A Boolean value that indicates whether the media item contains explicit content.
 var explicitContent: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) BOOL explicitContent;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) BOOL explicitContent;
+```
+
 ## See Also
 
-- [var title: String?](shmediaitem/title.md)
+### Reading general media item properties
+- [var title: String?](./title.md)
   A title for the media item.
-- [var subtitle: String?](shmediaitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A subtitle for the media item.
-- [var artist: String?](shmediaitem/artist.md)
+- [var artist: String?](./artist.md)
   The name of the artist for the media item, such as the performer of a song.
-- [var artworkURL: URL?](shmediaitem/artworkurl.md)
+- [var artworkURL: URL?](./artworkurl.md)
   The URL for artwork for the media item, such as an album cover.
-- [var videoURL: URL?](shmediaitem/videourl.md)
+- [var videoURL: URL?](./videourl.md)
   The URL for a video for the media item, such as a music video.
-- [var genres: [String]](shmediaitem/genres.md)
+- [var genres: [String]](./genres.md)
   An array of genre names for the media item.
-- [var creationDate: Date?](shmediaitem/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The date the media item was created.
-- [var isrc: String?](shmediaitem/isrc.md)
+- [var isrc: String?](./isrc.md)
   The International Standard Recording Code (ISRC) for the media item.
-- [var id: UUID](shmediaitem/id.md)
+- [var id: UUID](./id.md)
   A unique identifier for this media item.
 
 

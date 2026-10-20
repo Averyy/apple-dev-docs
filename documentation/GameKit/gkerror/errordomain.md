@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 4.0+

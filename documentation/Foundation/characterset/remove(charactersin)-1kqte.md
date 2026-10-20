@@ -1,7 +1,8 @@
 # remove(charactersIn:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a closed range of integer values from the `CharacterSet`.
 

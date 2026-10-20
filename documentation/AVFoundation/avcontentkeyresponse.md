@@ -1,7 +1,8 @@
 # AVContentKeyResponse
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates information about a response to a content decryption key request.
 
@@ -20,47 +21,52 @@ An object that encapsulates information about a response to a content decryption
 class AVContentKeyResponse
 ```
 
+```objc
+@interface AVContentKeyResponse : NSObject
+```
+
 ## Topics
 
 ### Creating new content key responses
-- [convenience init(clearKeyData: Data, initializationVector: Data?)](avcontentkeyresponse/init(clearkeydata:initializationvector:).md)
+- [convenience init(clearKeyData: Data, initializationVector: Data?)](./avcontentkeyresponse/init%28clearkeydata,initializationvector%29.md)
   Creates a new key response object for key data and initialization vector sent in the clear.
-- [convenience init(fairPlayStreamingKeyResponseData: Data)](avcontentkeyresponse/init(fairplaystreamingkeyresponsedata:).md)
+- [convenience init(fairPlayStreamingKeyResponseData: Data)](./avcontentkeyresponse/init%28fairplaystreamingkeyresponsedata%29.md)
   Creates a content key response with an encrypted key response data blob when FairPlay Streaming is the key delivery method.
-- [convenience init(authorizationTokenData: Data)](avcontentkeyresponse/init(authorizationtokendata:).md)
+- [convenience init(authorizationTokenData: Data)](./avcontentkeyresponse/init%28authorizationtokendata%29.md)
   Creates a content key response with an authorization token.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVContentKeySession](avcontentkeysession.md)
+### FairPlay streaming
+- [class AVContentKeySession](./avcontentkeysession.md)
   An object that creates and tracks decryption keys for media data.
-- [protocol AVContentKeySessionDelegate](avcontentkeysessiondelegate.md)
+- [protocol AVContentKeySessionDelegate](./avcontentkeysessiondelegate.md)
   A protocol that handles content key requests.
-- [class AVContentKey](avcontentkey.md)
+- [class AVContentKey](./avcontentkey.md)
   An object that represents the content key decryptor.
-- [class AVContentKeySpecifier](avcontentkeyspecifier.md)
+- [class AVContentKeySpecifier](./avcontentkeyspecifier.md)
   An object that uniquely identifies a content key.
-- [class AVContentKeyRequest](avcontentkeyrequest.md)
+- [class AVContentKeyRequest](./avcontentkeyrequest.md)
   An object that encapsulates information about a content decryption key request issued from a content key session object.
-- [class AVPersistableContentKeyRequest](avpersistablecontentkeyrequest.md)
+- [class AVPersistableContentKeyRequest](./avpersistablecontentkeyrequest.md)
   An object that encapsulates information about a persistable content decryption key request issued from a content key session.
-- [enum AVExternalContentProtectionStatus](avexternalcontentprotectionstatus.md)
+- [enum AVExternalContentProtectionStatus](./avexternalcontentprotectionstatus.md)
   Constants that specify whether sufficient protection exists to display the content.
-- [func AVSampleBufferAttachContentKey(CMSampleBuffer, AVContentKey, NSErrorPointer) -> Bool](avsamplebufferattachcontentkey(_:_:_:).md)
+- [func AVSampleBufferAttachContentKey(CMSampleBuffer, AVContentKey, NSErrorPointer) -> Bool](./avsamplebufferattachcontentkey%28_,_,_%29.md)
   Attaches a content key to a sample buffer for the purpose of content decryption.
 
 

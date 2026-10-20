@@ -1,7 +1,8 @@
 # AudioBuffer
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds a buffer of audio data.
 
@@ -20,41 +21,46 @@ A structure that holds a buffer of audio data.
 struct AudioBuffer
 ```
 
+```c
+struct AudioBuffer;
+```
+
 #### Overview
 
-An audio buffer holds a single buffer of audio data in its [`mData`](audiobuffer/mdata.md) field. The buffer can represent two types of audio:
+An audio buffer holds a single buffer of audio data in its [`mData`](./audiobuffer/mdata.md) field. The buffer can represent two types of audio:
 
 - A single, monophonic, noninterleaved channel of audio
-- Interleaved audio with the number of channels set by the [`mNumberChannels`](audiobuffer/mnumberchannels.md) field
+- Interleaved audio with the number of channels set by the [`mNumberChannels`](./audiobuffer/mnumberchannels.md) field
 
-> **Note**:  The [`mDataByteSize`](audiostreampacketdescription/mdatabytesize.md) and [`mNumberChannels`](audiobuffer/mnumberchannels.md) parameters needs to match the memory layout of [`mData`](audiobuffer/mdata.md), so update the size and number of channels when you update the data field.
+> **Note**:  The [`mDataByteSize`](./audiostreampacketdescription/mdatabytesize.md) and [`mNumberChannels`](./audiobuffer/mnumberchannels.md) parameters needs to match the memory layout of [`mData`](./audiobuffer/mdata.md), so update the size and number of channels when you update the data field.
 
 ## Topics
 
 ### Creating a Buffer
-- [init()](audiobuffer/init.md)
+- [init()](./audiobuffer/init%28%29.md)
   Creates an empty audio buffer.
-- [init(mNumberChannels: UInt32, mDataByteSize: UInt32, mData: UnsafeMutableRawPointer?)](audiobuffer/init(mnumberchannels:mdatabytesize:mdata:).md)
+- [init(mNumberChannels: UInt32, mDataByteSize: UInt32, mData: UnsafeMutableRawPointer?)](./audiobuffer/init%28mnumberchannels,mdatabytesize,mdata%29.md)
   Creates an audio buffer with audio data.
 ### Accessing the Audio
-- [var mNumberChannels: UInt32](audiobuffer/mnumberchannels.md)
+- [var mNumberChannels: UInt32](./audiobuffer/mnumberchannels.md)
   The number of interleaved channels in the buffer.
-- [var mDataByteSize: UInt32](audiobuffer/mdatabytesize.md)
+- [var mDataByteSize: UInt32](./audiobuffer/mdatabytesize.md)
   The number of bytes in the buffer.
-- [var mData: UnsafeMutableRawPointer?](audiobuffer/mdata.md)
+- [var mData: UnsafeMutableRawPointer?](./audiobuffer/mdata.md)
   A pointer to a buffer of audio data.
 ### Initializers
-- [init<Element>(UnsafeMutableBufferPointer<Element>, numberOfChannels: Int)](audiobuffer/init(_:numberofchannels:).md)
+- [init<Element>(UnsafeMutableBufferPointer<Element>, numberOfChannels: Int)](./audiobuffer/init%28_,numberofchannels%29.md)
   Initialize an `AudioBuffer` from an `UnsafeMutableBufferPointer<Element>`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct AudioBufferList](audiobufferlist.md)
+### Buffers
+- [struct AudioBufferList](./audiobufferlist.md)
   A structure that stores a variable-length array of audio buffers.
 
 

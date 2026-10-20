@@ -1,7 +1,8 @@
 # HMCharacteristicTypeValveType
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type of automated valve that controls fluid flow.
 
@@ -19,21 +20,26 @@ The type of automated valve that controls fluid flow.
 let HMCharacteristicTypeValveType: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeValveType;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueValveType`](hmcharacteristicvaluevalvetype.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueValveType`](./hmcharacteristicvaluevalvetype.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueValveType](hmcharacteristicvaluevalvetype.md)
+- [enum HMCharacteristicValueValveType](./hmcharacteristicvaluevalvetype.md)
   Possible values for a valve type.
 
 ## See Also
 
-- [let HMCharacteristicTypeWaterLevel: String](hmcharacteristictypewaterlevel.md)
+### Water
+- [let HMCharacteristicTypeWaterLevel: String](./hmcharacteristictypewaterlevel.md)
   The water level measured by an accessory.
-- [let HMCharacteristicTypeLeakDetected: String](hmcharacteristictypeleakdetected.md)
+- [let HMCharacteristicTypeLeakDetected: String](./hmcharacteristictypeleakdetected.md)
   A leak detection indicator.
 
 

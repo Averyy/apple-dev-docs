@@ -1,18 +1,23 @@
 # CGMouseButton
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify buttons on a one, two, or three-button mouse.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 enum CGMouseButton
+```
+
+```c
+enum CGMouseButton : uint32_t;
 ```
 
 #### Overview
@@ -21,60 +26,61 @@ Quartz supports up to 32 mouse buttons. The first three buttons are specified us
 
 These constants are used:
 
-- In the function [`init(mouseEventSource:mouseType:mouseCursorPosition:mouseButton:)`](cgevent/init(mouseeventsource:mousetype:mousecursorposition:mousebutton:).md) to specify the button that’s changing state.
-- In the function [`buttonState(_:button:)`](cgeventsource/buttonstate(_:button:).md) to specify the button that’s being tested.
+- In the function [`init(mouseEventSource:mouseType:mouseCursorPosition:mouseButton:)`](./cgevent/init%28mouseeventsource,mousetype,mousecursorposition,mousebutton%29.md) to specify the button that’s changing state.
+- In the function [`buttonState(_:button:)`](./cgeventsource/buttonstate%28_,button%29.md) to specify the button that’s being tested.
 - To specify the value of the `kCGMouseEventButtonNumber` event field when modifying an event.
 
 ## Topics
 
 ### Constants
-- [CGMouseButton.left](cgmousebutton/left.md)
-- [CGMouseButton.right](cgmousebutton/right.md)
-- [CGMouseButton.center](cgmousebutton/center.md)
+- [CGMouseButton.left](./cgmousebutton/left.md)
+- [CGMouseButton.right](./cgmousebutton/right.md)
+- [CGMouseButton.center](./cgmousebutton/center.md)
 ### Initializers
-- [init?(rawValue: UInt32)](cgmousebutton/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./cgmousebutton/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGCaptureOptions](cgcaptureoptions.md)
+### Enumerations
+- [struct CGCaptureOptions](./cgcaptureoptions.md)
   Configuration parameters that are used when capturing displays.
-- [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
+- [enum CGColorConversionInfoTransformType](./cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
-- [enum CGColorRenderingIntent](cgcolorrenderingintent.md)
+- [enum CGColorRenderingIntent](./cgcolorrenderingintent.md)
   Handling options for colors that are not located within the destination color space of a graphics context.
-- [struct CGConfigureOption](cgconfigureoption.md)
+- [struct CGConfigureOption](./cgconfigureoption.md)
   The scope of the changes in a display configuration transaction.
-- [struct CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags.md)
+- [struct CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags.md)
   The configuration parameters that are passed to a display reconfiguration callback function.
-- [enum CGDisplayStreamFrameStatus](cgdisplaystreamframestatus.md)
+- [enum CGDisplayStreamFrameStatus](./cgdisplaystreamframestatus.md)
   Describes a frame update event.
-- [enum CGDisplayStreamUpdateRectType](cgdisplaystreamupdaterecttype.md)
+- [enum CGDisplayStreamUpdateRectType](./cgdisplaystreamupdaterecttype.md)
   Use these constants to determine which rectangles your app is interested in.
-- [enum CGError](cgerror.md)
+- [enum CGError](./cgerror.md)
   A uniform type for result codes returned by functions in Core Graphics.
-- [enum CGEventField](cgeventfield.md)
+- [enum CGEventField](./cgeventfield.md)
   Constants used as keys to access specialized fields in low-level events.
-- [struct CGEventFilterMask](cgeventfiltermask.md)
+- [struct CGEventFilterMask](./cgeventfiltermask.md)
   Specify masks for classes of low-level events that can be filtered during event suppression states.
-- [struct CGEventFlags](cgeventflags.md)
+- [struct CGEventFlags](./cgeventflags.md)
   Constants that indicate the modifier key state at the time an event is created, as well as other event-related states.
-- [enum CGEventMouseSubtype](cgeventmousesubtype.md)
-  Constants used with the [`CGEventField.mouseEventSubtype`](cgeventfield/mouseeventsubtype.md) event field.
-- [enum CGEventSourceStateID](cgeventsourcestateid.md)
+- [enum CGEventMouseSubtype](./cgeventmousesubtype.md)
+  Constants used with the [`CGEventField.mouseEventSubtype`](./cgeventfield/mouseeventsubtype.md) event field.
+- [enum CGEventSourceStateID](./cgeventsourcestateid.md)
   Constants that specify the possible source states of an event source.
-- [enum CGEventSuppressionState](cgeventsuppressionstate.md)
+- [enum CGEventSuppressionState](./cgeventsuppressionstate.md)
   Specify the event suppression states that can occur after posting an event.
-- [enum CGEventTapLocation](cgeventtaplocation.md)
+- [enum CGEventTapLocation](./cgeventtaplocation.md)
   Constants that specify possible tapping points for events.
 
 

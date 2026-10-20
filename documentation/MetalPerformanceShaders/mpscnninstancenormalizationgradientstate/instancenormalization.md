@@ -1,7 +1,8 @@
 # instanceNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var instanceNormalization: MPSCNNInstanceNormalization { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nonnull) MPSCNNInstanceNormalization * instanceNormalization;
 ```
 
 

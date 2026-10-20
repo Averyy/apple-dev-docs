@@ -1,7 +1,8 @@
 # NDArray.ScalarType.float8e8m0fn
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit floating-point type with 8 exponent bits and 0 mantissa bits, without a sign bit.
 
@@ -20,7 +21,8 @@ case float8e8m0fn
 
 ## See Also
 
-- [NDArray.ScalarType.float4e2m1fn](ndarray/scalartype-swift.enum/float4e2m1fn.md)
+### Defining 4- and 8-bit special floating-point types
+- [NDArray.ScalarType.float4e2m1fn](./float4e2m1fn.md)
   A 4-bit floating-point type with 2 exponent bits and 1 mantissa bit.
 
 

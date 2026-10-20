@@ -1,12 +1,13 @@
 # warningValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s warning value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The receiver’s warning value.
 var warningValue: Double { get set }
 ```
 
+```objc
+@property double warningValue;
+```
+
 ## See Also
 
-- [var minValue: Double](nslevelindicator/minvalue.md)
+### Configuring the Range of Values
+- [var minValue: Double](./minvalue.md)
   The receiver’s minimum value.
-- [var maxValue: Double](nslevelindicator/maxvalue.md)
+- [var maxValue: Double](./maxvalue.md)
   The receiver’s maximum value.
-- [var criticalValue: Double](nslevelindicator/criticalvalue.md)
+- [var criticalValue: Double](./criticalvalue.md)
   The receiver’s critical value.
 
 

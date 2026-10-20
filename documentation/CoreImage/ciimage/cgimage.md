@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CoreGraphics image object this image was created from, if applicable.
 
@@ -19,19 +20,24 @@ The CoreGraphics image object this image was created from, if applicable.
 var cgImage: CGImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CGImageRef CGImage;
+```
+
 #### Discussion
 
-If this image was created using the [`init(cgImage:)`](ciimage/init(cgimage:)-2kvvb.md) or [`init(contentsOf:)`](ciimage/init(contentsof:).md) initializer, this property’s value is the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) object that provides the image’s underlying image data. Otherwise, this property’s value is `nil`—in this case you can obtain a CoreGraphics image by rendering the image with the [`CIContext`](cicontext.md) [`createCGImage(_:from:)`](cicontext/createcgimage(_:from:).md) method.
+If this image was created using the [`init(cgImage:)`](./init%28cgimage%29-2kvvb.md) or [`init(contentsOf:)`](./init%28contentsof%29.md) initializer, this property’s value is the [`CGImage`](../../CoreGraphics/cgimage.md) object that provides the image’s underlying image data. Otherwise, this property’s value is `nil`—in this case you can obtain a CoreGraphics image by rendering the image with the [`CIContext`](../cicontext.md) [`createCGImage(_:from:)`](../cicontext/createcgimage%28_,from%29.md) method.
 
 ## See Also
 
-- [var pixelBuffer: CVPixelBuffer?](ciimage/pixelbuffer.md)
+### Accessing Original Image Content
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   The CoreVideo pixel buffer this image was created from, if applicable.
-- [var depthData: AVDepthData?](ciimage/depthdata.md)
+- [var depthData: AVDepthData?](./depthdata.md)
   Depth data associated with the image.
-- [var portraitEffectsMatte: AVPortraitEffectsMatte?](ciimage/portraiteffectsmatte.md)
+- [var portraitEffectsMatte: AVPortraitEffectsMatte?](./portraiteffectsmatte.md)
   The portrait effects matte associated with the image.
-- [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](ciimage/semanticsegmentationmatte.md)
+- [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](./semanticsegmentationmatte.md)
 
 
 ---

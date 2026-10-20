@@ -1,7 +1,8 @@
 # notes
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of entity schemas in the notes domain.
 
@@ -17,6 +18,8 @@ The collection of entity schemas in the notes domain.
 ```swift
 static var notes: some AppSchema.NotesEntity { get }
 ```
+
+Available when `Self` is `AppSchema.Entity`.
 
 
 ---

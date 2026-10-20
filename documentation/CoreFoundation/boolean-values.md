@@ -1,15 +1,16 @@
 # Boolean Values
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 CFBoolean evaluates to either true or false values where `kCFBooleanTrue` is the true, and `kCFBooleanFalse` is the false value.
 
 ## Topics
 
 ### Constants
-- [let kCFBooleanTrue: CFBoolean!](kcfbooleantrue.md)
+- [let kCFBooleanTrue: CFBoolean!](./kcfbooleantrue.md)
   Boolean true value.
-- [let kCFBooleanFalse: CFBoolean!](kcfbooleanfalse.md)
+- [let kCFBooleanFalse: CFBoolean!](./kcfbooleanfalse.md)
   Boolean false value.
 
 

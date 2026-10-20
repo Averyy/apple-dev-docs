@@ -1,7 +1,8 @@
 # resumingHandler
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to invoke when progress resumes.
 
@@ -20,9 +21,13 @@ The block to invoke when progress resumes.
 var resumingHandler: (@Sendable () -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^resumingHandler)();
+```
+
 #### Discussion
 
-If the receiver is a suboperation of another progress object, the system invokes the [`resumingHandler`](progress/resuminghandler.md) block when pausing the containing progress object.
+If the receiver is a suboperation of another progress object, the system invokes the [`resumingHandler`](./resuminghandler.md) block when pausing the containing progress object.
 
 ##### Special Considerations
 
@@ -32,11 +37,12 @@ You can invoke the resuming handler on any queue. If you must do work on a speci
 
 ## See Also
 
-- [func cancel()](progress/cancel.md)
+### Controlling Progress
+- [func cancel()](./cancel%28%29.md)
   Cancels progress tracking.
-- [func pause()](progress/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses progress tracking.
-- [func resume()](progress/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes progress tracking.
 
 

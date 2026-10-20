@@ -1,17 +1,18 @@
 # init(rawValue:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a balance type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.struct.md)
+### Related Documentation
+- [PKStoredValuePassBalance.BalanceType](../balancetype-swift.struct.md)
   The type of value that the balance represents, such as money or points.
 
 

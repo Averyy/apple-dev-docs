@@ -1,10 +1,11 @@
 # init(connectionHandle:maxTransmitLatency:maxReceiveLatency:minRemoteTimeout:minLocalTimeout:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

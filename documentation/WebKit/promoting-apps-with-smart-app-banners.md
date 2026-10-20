@@ -1,6 +1,7 @@
 # Promoting Apps with Smart App Banners
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: Article
 
 Create a banner to promote your app on the App Store from a website.
 
@@ -8,11 +9,11 @@ Create a banner to promote your app on the App Store from a website.
 
 Smart App Banners vastly improve users’ browsing experience compared to other promotional methods. In iOS, Smart App Banners  provide a consistent look and feel that users come to recognize. They trust that tapping the banner will take them to the App Store and not a third-party advertisement. They appreciate unobtrusive banners at the top of a webpage, instead of a full screen that interrupts their experience with the web content. And with a large and prominent Close button, a banner is easy to dismiss. When the user returns to the webpage, the banner doesn’t reappear.
 
-![Smart App Banner with a View button above a web page for an app.](/images/com.apple.webkit/media-3701613@2x.png)
+![Smart App Banner with a View button above a web page for an app.](https://developer.apple.com/tutorials/images/com.apple.webkit/media-3701613@2x.png)
 
 If the app is already installed on a user’s device, the Smart App Banner intelligently changes its action, and tapping the banner simply opens the app. If the user doesn’t have your app on their device, tapping the banner takes them to the app’s entry in the App Store. When they return to your website, a progress bar appears in the banner, indicating how much longer the download will take to complete. When the app finishes downloading, the View button changes to an Open button, and tapping the banner opens the app while preserving the user’s content from your website.
 
-![Smart App Banner with a Open button above a web page for an app.](/images/com.apple.webkit/media-3701614@2x.png)
+![Smart App Banner with a Open button above a web page for an app.](https://developer.apple.com/tutorials/images/com.apple.webkit/media-3701614@2x.png)
 
 Smart App Banners automatically determine whether the user’s device supports your app. If it doesn’t, or if your app is unavailable in the user’s location, the banner doesn’t appear.
 
@@ -26,7 +27,7 @@ To add a Smart App Banner to your website, include the following meta tag in the
 
 You can include two comma-separated parameters in the content attribute:
 
-- **`app-id`**: Required. Your app’s unique identifier. To find your app ID from [`App Store Marketing Tools`](https://developer.apple.comhttps://tools.applemediaservices.com/app-store), type the name of your app in the Search field, and select the appropriate country or region and media type. In the results, select your app. In the detail view for your app, find the Content Link. Your app ID is the number between `id` and `?`. Alternatively, select your app in App Store Connect. Under General, select App Information, then find your app ID in the General Information section that opens in the middle of the screen; your app ID is listed as Apple ID.
+- **`app-id`**: Required. Your app’s unique identifier. To find your app ID from [App Store Marketing Tools](https://tools.applemediaservices.com/app-store), type the name of your app in the Search field, and select the appropriate country or region and media type. In the results, select your app. In the detail view for your app, find the Content Link. Your app ID is the number between `id` and `?`. Alternatively, select your app in App Store Connect. Under General, select App Information, then find your app ID in the General Information section that opens in the middle of the screen; your app ID is listed as Apple ID.
 - **`app-argument`**: Optional. A URL that provides context to your native app. If you include the URL and the user has your app installed, they can jump from your website to the corresponding position in your iOS app.
 
 Typically, it’s beneficial to retain navigational context because:
@@ -41,7 +42,7 @@ You can generate the `app-argument` parameter for each page dynamically with a s
 
 ##### Provide Navigational Context to Your App
 
-Implement the [`application(_:open:sourceApplication:annotation:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:sourceapplication:annotation:)): method in your app delegate, which fires when your app is launched from a URL. Then provide logic that can interpret the URL you pass. The value you set for the `app-argument` parameter is available as the [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) [`url`](https://developer.apple.com/documentation/foundation/nsurlcomponents/url) object.
+Implement the [`application(_:open:sourceApplication:annotation:)`](../UIKit/uiapplicationdelegate/application%28_,open,sourceapplication,annotation%29.md): method in your app delegate, which fires when your app is launched from a URL. Then provide logic that can interpret the URL you pass. The value you set for the `app-argument` parameter is available as the [`NSURL`](../Foundation/nsurl.md) [`url`](../Foundation/nsurlcomponents/url.md) object.
 
 The code sample below is for a website that passes data to a native iOS app. It first detects whether the URL contains the string `/profile`. If so, it opens the profile view controller and passes the profile ID number that’s in the query string.
 
@@ -69,9 +70,10 @@ The code sample below is for a website that passes data to a native iOS app. It 
 
 ## See Also
 
-- [Optimizing Your Website for Safari](optimizing-your-website-for-safari.md)
+### Safari Support
+- [Optimizing Your Website for Safari](./optimizing-your-website-for-safari.md)
   Improve your website by optimizing it for Safari.
-- [Delivering Video Content for Safari](delivering-video-content-for-safari.md)
+- [Delivering Video Content for Safari](./delivering-video-content-for-safari.md)
   Improve the performance and appearance of video in your website in Safari.
 
 

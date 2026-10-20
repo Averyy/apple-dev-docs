@@ -1,7 +1,8 @@
 # key
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key equivalent that the user presses in conjunction with any specified modifier keys to activate the shortcut.
 
@@ -20,9 +21,10 @@ var key: KeyEquivalent
 
 ## See Also
 
-- [init(KeyEquivalent, modifiers: EventModifiers)](keyboardshortcut/init(_:modifiers:).md)
+### Creating a shortcut
+- [init(KeyEquivalent, modifiers: EventModifiers)](./init%28_,modifiers%29.md)
   Creates a new keyboard shortcut with the given key equivalent and set of modifier keys.
-- [var modifiers: EventModifiers](keyboardshortcut/modifiers.md)
+- [var modifiers: EventModifiers](./modifiers.md)
   The modifier keys that the user presses in conjunction with a key equivalent to activate the shortcut.
 
 

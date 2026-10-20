@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of frames. For this sequence count is always nil.
 

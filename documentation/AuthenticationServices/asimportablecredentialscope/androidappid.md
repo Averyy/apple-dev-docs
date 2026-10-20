@@ -1,7 +1,8 @@
 # ASImportableCredentialScope.AndroidAppID
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for an Android app.
 
@@ -21,21 +22,21 @@ struct AndroidAppID
 ## Topics
 
 ### Initializers
-- [init(bundleID: String, certificate: ASImportableCredentialScope.AndroidAppCertificationFingerprint?, name: String?)](asimportablecredentialscope/androidappid/init(bundleid:certificate:name:).md)
+- [init(bundleID: String, certificate: ASImportableCredentialScope.AndroidAppCertificationFingerprint?, name: String?)](./androidappid/init%28bundleid,certificate,name%29.md)
 ### Instance Properties
-- [var bundleID: String](asimportablecredentialscope/androidappid/bundleid.md)
-- [var certificate: ASImportableCredentialScope.AndroidAppCertificationFingerprint?](asimportablecredentialscope/androidappid/certificate.md)
-- [var name: String?](asimportablecredentialscope/androidappid/name.md)
+- [var bundleID: String](./androidappid/bundleid.md)
+- [var certificate: ASImportableCredentialScope.AndroidAppCertificationFingerprint?](./androidappid/certificate.md)
+- [var name: String?](./androidappid/name.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

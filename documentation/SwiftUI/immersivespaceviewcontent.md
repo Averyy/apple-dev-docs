@@ -1,7 +1,8 @@
 # ImmersiveSpaceViewContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Immersive space content that uses a SwiftUI view hierarchy as the content.
 
@@ -17,16 +18,17 @@ struct ImmersiveSpaceViewContent<Content> where Content : View
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you construct an [`ImmersiveSpace`](immersivespace.md) with view-based content.
+You don’t create this type directly. SwiftUI creates it when you construct an [`ImmersiveSpace`](./immersivespace.md) with view-based content.
 
 ## Relationships
 
 ### Conforms To
-- [ImmersiveSpaceContent](immersivespacecontent.md)
+- [ImmersiveSpaceContent](./immersivespacecontent.md)
 
 ## See Also
 
-- [protocol ImmersiveSpaceContent](immersivespacecontent.md)
+### Supporting types
+- [protocol ImmersiveSpaceContent](./immersivespacecontent.md)
   A type that you can use as the content of an immersive space.
 
 

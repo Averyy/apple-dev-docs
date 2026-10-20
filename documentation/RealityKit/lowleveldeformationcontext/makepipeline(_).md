@@ -1,7 +1,8 @@
 # makePipeline(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a compute pipeline synchronously.
 
@@ -17,9 +18,16 @@ Creates a compute pipeline synchronously.
 final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) throws -> LowLevelDeformation.Pipeline
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) async throws -> LowLevelDeformation.Pipeline
+```
+
 #### Discussion
 
-> **Note**: If the descriptor is invalid.
+> **Throws**: If the descriptor is invalid.
 
 ## Parameters
 

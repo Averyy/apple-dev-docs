@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Modes that describe how materials using the created `CustomMaterial.Program` will be blended with content behind them.
 

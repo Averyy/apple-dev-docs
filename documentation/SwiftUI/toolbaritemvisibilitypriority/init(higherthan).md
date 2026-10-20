@@ -1,7 +1,8 @@
 # init(higherThan:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a priority higher than the specified value.
 
@@ -31,7 +32,8 @@ x == y // true
 
 ## See Also
 
-- [init(lowerThan: ToolbarItemVisibilityPriority)](toolbaritemvisibilitypriority/init(lowerthan:).md)
+### Creating custom priorities
+- [init(lowerThan: ToolbarItemVisibilityPriority)](./init%28lowerthan%29.md)
   Creates a priority lower than the specified value.
 
 

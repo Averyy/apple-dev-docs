@@ -1,7 +1,8 @@
 # hour(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the date format style to use the specified hour format style.
 
@@ -26,11 +27,11 @@ A date format style modified to include the specified hour style.
 
 #### Discussion
 
-Values of [`Date.FormatStyle.Symbol.Hour`](date/formatstyle/symbol/hour.md) are [`defaultDigitsNoAMPM`](date/formatstyle/symbol/hour/defaultdigitsnoampm.md) and [`twoDigitsNoAMPM`](date/formatstyle/symbol/hour/twodigitsnoampm.md).
+Values of [`Date.FormatStyle.Symbol.Hour`](./symbol/hour.md) are [`defaultDigitsNoAMPM`](./symbol/hour/defaultdigitsnoampm.md) and [`twoDigitsNoAMPM`](./symbol/hour/twodigitsnoampm.md).
 
-Static methods that return [`Date.FormatStyle.Symbol.Hour`](date/formatstyle/symbol/hour.md) objects include [`conversationalDefaultDigits(amPM:)`](date/formatstyle/symbol/hour/conversationaldefaultdigits(ampm:).md), [`conversationalTwoDigits(amPM:)`](date/formatstyle/symbol/hour/conversationaltwodigits(ampm:).md), [`defaultDigits(amPM:)`](date/formatstyle/symbol/hour/defaultdigits(ampm:).md), and [`twoDigitsNoAMPM`](date/formatstyle/symbol/hour/twodigitsnoampm.md).
+Static methods that return [`Date.FormatStyle.Symbol.Hour`](./symbol/hour.md) objects include [`conversationalDefaultDigits(amPM:)`](./symbol/hour/conversationaldefaultdigits%28ampm%29.md), [`conversationalTwoDigits(amPM:)`](./symbol/hour/conversationaltwodigits%28ampm%29.md), [`defaultDigits(amPM:)`](./symbol/hour/defaultdigits%28ampm%29.md), and [`twoDigitsNoAMPM`](./symbol/hour/twodigitsnoampm.md).
 
-This example shows a variety of [`Date.FormatStyle.Symbol.Hour`](date/formatstyle/symbol/hour.md) format styles applied to a date:
+This example shows a variety of [`Date.FormatStyle.Symbol.Hour`](./symbol/hour.md) format styles applied to a date:
 
 ```swift
 let meetingDate = Date() // Feb 9, 2021 at 7:00 PM
@@ -50,9 +51,9 @@ meetingDate.formatted(Date.FormatStyle().hour(.conversationalDefaultDigits(amPM:
 // 7 P.M.
 ```
 
-If you don’t provide a format, the [`defaultDigits`](date/formatstyle/symbol/minute/defaultdigits.md) static variable is the default format.
+If you don’t provide a format, the [`defaultDigits`](./symbol/minute/defaultdigits.md) static variable is the default format.
 
-For more information about formatting dates, see [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see [`Date.FormatStyle`](../formatstyle.md).
 
 ## Parameters
 
@@ -60,15 +61,16 @@ For more information about formatting dates, see [`Date.FormatStyle`](date/forma
 
 ## See Also
 
-- [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle](date/formatstyle/minute(_:).md)
+### Specifying the Time Format
+- [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle](./minute%28_%29.md)
   Modifies the date format style to use the specified minute format style.
-- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](date/formatstyle/second(_:).md)
+- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](./second%28_%29.md)
   Modifies the date format style to use the specified second format style.
-- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](date/formatstyle/secondfraction(_:).md)
+- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](./secondfraction%28_%29.md)
   Modifies the date format style to use the specified second fraction format style.
-- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](date/formatstyle/timezone(_:).md)
+- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](./timezone%28_%29.md)
   Modifies the date format style to use the specified time zone format style.
-- [Date.FormatStyle.TimeStyle](date/formatstyle/timestyle.md)
+- [Date.FormatStyle.TimeStyle](./timestyle.md)
   Type that defines time styles varied in length or components included.
 
 

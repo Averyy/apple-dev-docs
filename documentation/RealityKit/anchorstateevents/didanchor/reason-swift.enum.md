@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidAnchor.Reason
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -20,18 +21,18 @@ enum Reason
 ## Topics
 
 ### Enumeration Cases
-- [AnchorStateEvents.DidAnchor.Reason.newAnchor](anchorstateevents/didanchor/reason-swift.enum/newanchor.md)
+- [AnchorStateEvents.DidAnchor.Reason.newAnchor](./reason-swift.enum/newanchor.md)
   Entity is anchored to a new anchor
-- [AnchorStateEvents.DidAnchor.Reason.reanchor](anchorstateevents/didanchor/reason-swift.enum/reanchor.md)
+- [AnchorStateEvents.DidAnchor.Reason.reanchor](./reason-swift.enum/reanchor.md)
   Entity is re-anchored to its previously selected anchor that was temporarily disqualified
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

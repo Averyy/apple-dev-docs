@@ -1,7 +1,8 @@
 # startTimeAdjustRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command StartTimeAdjustRequest
 
@@ -17,7 +18,15 @@ Command StartTimeAdjustRequest
 ## Declaration
 
 ```swift
+func startTimeAdjustRequest(with params: MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startTimeAdjustRequest(with params: MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams) async throws
+```
+
+```objc
+- (void) startTimeAdjustRequestWithParams:(MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

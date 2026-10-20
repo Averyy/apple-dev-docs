@@ -1,7 +1,8 @@
 # get()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the value currently bound to this task-local from the current task.
 

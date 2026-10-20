@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Stores the result of performing a bitwise XOR operation on the two given values in the left-hand-side variable.

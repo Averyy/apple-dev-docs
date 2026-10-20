@@ -1,7 +1,8 @@
 # kCFProxyAutoConfigurationHTTPResponseKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,19 +18,24 @@
 let kCFProxyAutoConfigurationHTTPResponseKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFProxyAutoConfigurationHTTPResponseKey;
+```
+
 #### Discussion
 
-A `CFHTTPMessageRef` value found in the user info dictionary of an authentication error returned to the [`CFNetworkCopyProxiesForAutoConfigurationScript(_:_:_:)`](cfnetworkcopyproxiesforautoconfigurationscript(_:_:_:).md) function or to a [`CFProxyAutoConfigurationResultCallback`](cfproxyautoconfigurationresultcallback.md) callback.
+A `CFHTTPMessageRef` value found in the user info dictionary of an authentication error returned to the [`CFNetworkCopyProxiesForAutoConfigurationScript(_:_:_:)`](./cfnetworkcopyproxiesforautoconfigurationscript%28_,_,_%29.md) function or to a [`CFProxyAutoConfigurationResultCallback`](./cfproxyautoconfigurationresultcallback.md) callback.
 
 ## See Also
 
-- [let kCFProxyAutoConfigurationJavaScriptKey: CFString](kcfproxyautoconfigurationjavascriptkey.md)
-- [let kCFProxyAutoConfigurationURLKey: CFString](kcfproxyautoconfigurationurlkey.md)
-- [let kCFProxyHostNameKey: CFString](kcfproxyhostnamekey.md)
-- [let kCFProxyPasswordKey: CFString](kcfproxypasswordkey.md)
-- [let kCFProxyPortNumberKey: CFString](kcfproxyportnumberkey.md)
-- [let kCFProxyTypeKey: CFString](kcfproxytypekey.md)
-- [let kCFProxyUsernameKey: CFString](kcfproxyusernamekey.md)
+### Constants
+- [let kCFProxyAutoConfigurationJavaScriptKey: CFString](./kcfproxyautoconfigurationjavascriptkey.md)
+- [let kCFProxyAutoConfigurationURLKey: CFString](./kcfproxyautoconfigurationurlkey.md)
+- [let kCFProxyHostNameKey: CFString](./kcfproxyhostnamekey.md)
+- [let kCFProxyPasswordKey: CFString](./kcfproxypasswordkey.md)
+- [let kCFProxyPortNumberKey: CFString](./kcfproxyportnumberkey.md)
+- [let kCFProxyTypeKey: CFString](./kcfproxytypekey.md)
+- [let kCFProxyUsernameKey: CFString](./kcfproxyusernamekey.md)
 
 
 ---

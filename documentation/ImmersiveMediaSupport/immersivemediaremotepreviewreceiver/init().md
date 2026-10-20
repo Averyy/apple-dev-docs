@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview receiver object.
 
@@ -17,7 +18,7 @@ init() async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails during initialization.
+> **Throws**: This function throws if anything fails during initialization.
 
 
 ---

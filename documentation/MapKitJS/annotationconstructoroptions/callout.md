@@ -1,7 +1,8 @@
 # callout
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A delegate that enables you to customize the annotation’s callout.
 
@@ -10,19 +11,20 @@ A delegate that enables you to customize the annotation’s callout.
 
 ## Declaration
 
-```swift
+```
 callout?: AnnotationCalloutDelegate | null;
 ```
 
 #### Discussion
 
-The default value is `null`. See [`AnnotationCalloutDelegate`](annotationcalloutdelegate.md) for details.
+The default value is `null`. See [`AnnotationCalloutDelegate`](../annotationcalloutdelegate.md) for details.
 
 ## See Also
 
-- [calloutEnabled](annotationconstructoroptions/calloutenabled.md)
+### Creating callouts
+- [calloutEnabled](./calloutenabled.md)
   A Boolean value that determines whether the map shows a callout.
-- [calloutOffset](annotationconstructoroptions/calloutoffset.md)
+- [calloutOffset](./calloutoffset.md)
   The offset, in CSS pixels, of a callout from the top center of the element.
 
 

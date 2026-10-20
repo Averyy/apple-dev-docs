@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Error.sensorFailed
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There was an ARKit failure in one of the sensors.
 

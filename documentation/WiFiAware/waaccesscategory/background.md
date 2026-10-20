@@ -1,7 +1,8 @@
 # WAAccessCategory.background
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quality-of-service (QoS) type that provides high throughput for delay-tolerant, noninteractive data transfers of any size.
 
@@ -20,15 +21,16 @@ case background
 
 Use this Wi-Fi access category for background data transfers, to prevent background traffic from interfering with other higher-priority flows, and for packets transmitted by a `NetworkConnection` that you set with NWParameter’s `serviceClass = .background`.
 
-For more information, refer to [`NWParameters.ServiceClass.background`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.enum/background)
+For more information, refer to [NWParameters.ServiceClass.background](../../Network/nwparameters/serviceclass-swift.enum/background.md)
 
 ## See Also
 
-- [WAAccessCategory.bestEffort](waaccesscategory/besteffort.md)
+### Providing throughput
+- [WAAccessCategory.bestEffort](./besteffort.md)
   A default quality-of-service (QoS) type that provides high throughput for data transfers of any size.
-- [WAAccessCategory.interactiveVideo](waaccesscategory/interactivevideo.md)
+- [WAAccessCategory.interactiveVideo](./interactivevideo.md)
   A quality-of-service (QoS) type that provides low-latency for moderate throughput flows.
-- [WAAccessCategory.interactiveVoice](waaccesscategory/interactivevoice.md)
+- [WAAccessCategory.interactiveVoice](./interactivevoice.md)
   A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
 

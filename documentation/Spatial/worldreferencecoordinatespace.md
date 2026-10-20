@@ -1,7 +1,8 @@
 # WorldReferenceCoordinateSpace
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A coordinate space that represents a world reference point.
 
@@ -23,20 +24,21 @@ struct WorldReferenceCoordinateSpace
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpace3D](coordinatespace3d.md)
-- [CoordinateSpace3DFloat](coordinatespace3dfloat.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [CoordinateSpace3D](./coordinatespace3d.md)
+- [CoordinateSpace3DFloat](./coordinatespace3dfloat.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [protocol CoordinateSpace3D](coordinatespace3d.md)
+### Converting between coordinate spaces
+- [protocol CoordinateSpace3D](./coordinatespace3d.md)
   A type that represents a coordinate space which you can use to convert values to and from other coordinate spaces.
-- [protocol CoordinateSpace3DFloat](coordinatespace3dfloat.md)
-- [protocol CoordinateSpaceValue3D](coordinatespacevalue3d.md)
+- [protocol CoordinateSpace3DFloat](./coordinatespace3dfloat.md)
+- [protocol CoordinateSpaceValue3D](./coordinatespacevalue3d.md)
   An opaque value which can be resolved to a concrete value in a `CoordinateSpace3D`
-- [protocol ProjectiveTransformable3D](projectivetransformable3d.md)
-- [protocol ProjectiveTransformable3DFloat](projectivetransformable3dfloat.md)
+- [protocol ProjectiveTransformable3D](./projectivetransformable3d.md)
+- [protocol ProjectiveTransformable3DFloat](./projectivetransformable3dfloat.md)
 
 
 ---

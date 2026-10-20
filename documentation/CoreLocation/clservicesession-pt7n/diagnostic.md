@@ -1,7 +1,8 @@
 # CLServiceSession.Diagnostic
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe the state of a core location services session.
 
@@ -22,14 +23,14 @@ struct Diagnostic
 ## Topics
 
 ### Diagnostic values
-- [var alwaysAuthorizationDenied: Bool](clservicesession-pt7n/diagnostic/alwaysauthorizationdenied.md)
-- [var authorizationDenied: Bool](clservicesession-pt7n/diagnostic/authorizationdenied.md)
-- [var authorizationDeniedGlobally: Bool](clservicesession-pt7n/diagnostic/authorizationdeniedglobally.md)
-- [var authorizationRequestInProgress: Bool](clservicesession-pt7n/diagnostic/authorizationrequestinprogress.md)
-- [var authorizationRestricted: Bool](clservicesession-pt7n/diagnostic/authorizationrestricted.md)
-- [var fullAccuracyDenied: Bool](clservicesession-pt7n/diagnostic/fullaccuracydenied.md)
-- [var insufficientlyInUse: Bool](clservicesession-pt7n/diagnostic/insufficientlyinuse.md)
-- [var serviceSessionRequired: Bool](clservicesession-pt7n/diagnostic/servicesessionrequired.md)
+- [var alwaysAuthorizationDenied: Bool](./diagnostic/alwaysauthorizationdenied.md)
+- [var authorizationDenied: Bool](./diagnostic/authorizationdenied.md)
+- [var authorizationDeniedGlobally: Bool](./diagnostic/authorizationdeniedglobally.md)
+- [var authorizationRequestInProgress: Bool](./diagnostic/authorizationrequestinprogress.md)
+- [var authorizationRestricted: Bool](./diagnostic/authorizationrestricted.md)
+- [var fullAccuracyDenied: Bool](./diagnostic/fullaccuracydenied.md)
+- [var insufficientlyInUse: Bool](./diagnostic/insufficientlyinuse.md)
+- [var serviceSessionRequired: Bool](./diagnostic/servicesessionrequired.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # stationary
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Mission Control doesn’t affect the window, so it stays visible and stationary, like the desktop window.
 
@@ -12,6 +13,10 @@ Mission Control doesn’t affect the window, so it stays visible and stationary,
 
 ```swift
 static var stationary: NSWindow.CollectionBehavior { get }
+```
+
+```c
+NSWindowCollectionBehaviorStationary
 ```
 
 

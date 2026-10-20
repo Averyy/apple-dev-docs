@@ -1,7 +1,8 @@
 # premultipliedAlphaBlend(_:topLayer:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs alpha compositing of two 4-channel interleaved RGBA 8-bit pixel buffers using the specified blend mode to produce a premultiplied result.
 
@@ -11,7 +12,7 @@ Performs alpha compositing of two 4-channel interleaved RGBA 8-bit pixel buffers
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Performs alpha compositing of two 4-channel interleaved RGBA 8-bit pixel buffers
 ```swift
 func premultipliedAlphaBlend(_ blendMode: vImage.BlendMode, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` is `vImage.Interleaved8x4`.
 
 #### Discussion
 
@@ -32,9 +35,11 @@ This function treats `self` as the bottom layer and both pixel buffers must have
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](../../compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [vImage.BlendMode](vimage/blendmode.md)
+### Alpha blending
+- [vImage.BlendMode](../blendmode.md)
   Constants that specify an alpha blending mode.
 
 

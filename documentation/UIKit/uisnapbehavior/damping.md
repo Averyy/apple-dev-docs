@@ -1,7 +1,8 @@
 # damping
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of oscillation of a dynamic item during the conclusion of a snap.
 
@@ -9,7 +10,7 @@ The amount of oscillation of a dynamic item during the conclusion of a snap.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The amount of oscillation of a dynamic item during the conclusion of a snap.
 var damping: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat damping;
+```
+
 #### Discussion
 
 The valid range for damping extends from `0.0`, for maximum oscillation, through `1.0`, for minimum oscillation. The default value is `0.5`.
 
 ## See Also
 
-- [var snapPoint: CGPoint](uisnapbehavior/snappoint.md)
+### Configuring a snap behavior
+- [var snapPoint: CGPoint](./snappoint.md)
   The point to which to snap.
 
 

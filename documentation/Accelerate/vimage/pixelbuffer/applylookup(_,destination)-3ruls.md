@@ -1,7 +1,8 @@
 # applyLookup(_:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a lookup table to transform an 8-bit planar image to an 8-bit-per-channel, three-channel interleaved image.
 
@@ -11,7 +12,7 @@ Applies a lookup table to transform an 8-bit planar image to an 8-bit-per-channe
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Applies a lookup table to transform an 8-bit planar image to an 8-bit-per-channe
 ```swift
 func applyLookup(_ lookupTable: [Pixel_8888], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)
 ```
+
+Available when `Format` is `vImage.Planar8`.
 
 #### Discussion
 
@@ -44,9 +47,9 @@ let lookup: [Pixel_8888] = (0 ..< 256).map { i in
 
 The graph below visualizes the values in the lookup table:
 
-![A line chart with three series. The dotted line represents the red values that peaks at the left and curves to zero at the middle. The solid line represents the green values that starts on the left at zero, peaks in the middle, and drops to zero at the right. The dashed line represents the blue values that starts at zero in the middle and peaks at the right.](/images/com.apple.accelerate/media-4164668@2x.png)
+![A line chart with three series. The dotted line represents the red values that peaks at the left and curves to zero at the middle. The solid line represents the green values that starts on the left at zero, peaks in the middle, and drops to zero at the right. The dashed line represents the blue values that starts at zero in the middle and peaks at the right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4164668@2x.png)
 
-Use the following code to apply the lookup table to a [`vImage.Planar8`](vimage/planar8.md) source buffer with a [`vImage.Interleaved8x3`](vimage/interleaved8x3.md) destination buffer:
+Use the following code to apply the lookup table to a [`vImage.Planar8`](../planar8.md) source buffer with a [`vImage.Interleaved8x3`](../interleaved8x3.md) destination buffer:
 
 ```swift
 let destinationBuffer = vImage.PixelBuffer (
@@ -58,24 +61,25 @@ sourceBuffer.applyLookup(lookup, destination: destinationBuffer)
 
 The images below show an example grayscale source image on the left and the pseudo-color result on the right. The operation converts dark areas in the source to red in the destination, and light areas in the source to blue in the destination.
 
-![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed RGB color image.](/images/com.apple.accelerate/media-4164667@2x.png)
+![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed RGB color image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4164667@2x.png)
 
 ## Parameters
 
-- `lookupTable`: A lookup table that contains 256 [`Pixel_8888`](pixel_8888.md) ARGB values. The function discards the alpha component.
+- `lookupTable`: A lookup table that contains 256 [`Pixel_8888`](../../pixel_8888.md) ARGB values. The function discards the alpha component.
 - `destination`: The destination pixel buffer.
 
 ## See Also
 
-- [func applyLookup([Pixel_8], destination: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/applylookup(_:destination:)-5r7bq.md)
+### Transforming with a lookup table
+- [func applyLookup([Pixel_8], destination: vImage.PixelBuffer<vImage.Planar8>)](./applylookup%28_,destination%29-5r7bq.md)
   Applies a lookup table to transform an 8-bit planar image.
-- [func applyLookup([Pixel_F], destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/applylookup(_:destination:)-14pjo.md)
+- [func applyLookup([Pixel_F], destination: vImage.PixelBuffer<vImage.PlanarF>)](./applylookup%28_,destination%29-14pjo.md)
   Applies a lookup table to transform an 8-bit planar image to a 32-bit planar image.
-- [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](vimage/pixelbuffer/applylookup(_:destination:)-5oi4o.md)
+- [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](./applylookup%28_,destination%29-5oi4o.md)
   Applies a lookup table to transform an 8-bit planar image to a 16-bit planar image.
-- [func applyLookup([Pixel_FFFF], destination: vImage.PixelBuffer<vImage.InterleavedFx3>)](vimage/pixelbuffer/applylookup(_:destination:)-1tsb5.md)
+- [func applyLookup([Pixel_FFFF], destination: vImage.PixelBuffer<vImage.InterleavedFx3>)](./applylookup%28_,destination%29-1tsb5.md)
   Applies a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, three-channel interleaved image.
-- [func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixel_8]?, blueTable: [Pixel_8]?, destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/applylookup(alphatable:redtable:greentable:bluetable:destination:).md)
+- [func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixel_8]?, blueTable: [Pixel_8]?, destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](./applylookup%28alphatable,redtable,greentable,bluetable,destination%29.md)
   Applies a set of four lookup tables to transform an interleaved, four-channel 8-bit image.
 
 

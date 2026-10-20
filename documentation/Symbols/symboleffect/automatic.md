@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A transition that applies the default animation to a symbol-based image in a context-sensitive manner.
 
@@ -20,9 +21,12 @@ A transition that applies the default animation to a symbol-based image in a con
 static var automatic: AutomaticSymbolEffect { get }
 ```
 
+Available when `Self` is `AutomaticSymbolEffect`.
+
 ## See Also
 
-- [static var replace: ReplaceSymbolEffect](symboleffect/replace.md)
+### Symbol content transitions
+- [static var replace: ReplaceSymbolEffect](./replace.md)
   An animation that replaces the layers of one symbol-based image with those of another.
 
 

@@ -1,7 +1,8 @@
 # LADomainStateCompanion
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -15,27 +16,31 @@
 class LADomainStateCompanion
 ```
 
+```objc
+@interface LADomainStateCompanion : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var availableCompanionTypes: Set<LACompanionType>](ladomainstatecompanion/availablecompaniontypes-1t7ur.md)
-- [var stateHash: Data?](ladomainstatecompanion/statehash.md)
+- [var availableCompanionTypes: Set<LACompanionType>](./ladomainstatecompanion/availablecompaniontypes-1t7ur.md)
+- [var stateHash: Data?](./ladomainstatecompanion/statehash.md)
   Contains combined state hash data for all available companion types. . Returns `nil` if no companion devices are paired.
 ### Instance Methods
-- [func stateHash(for: LACompanionType) -> Data?](ladomainstatecompanion/statehash(for:).md)
+- [func stateHash(for: LACompanionType) -> Data?](./ladomainstatecompanion/statehash%28for%29.md)
   Returns state hash data for the given companion type.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

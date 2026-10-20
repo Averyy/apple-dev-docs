@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client when one or more objects are renamed on the device.
@@ -17,6 +18,10 @@ Tells the client when one or more objects are renamed on the device.
 
 ```swift
 func cameraDevice(_ camera: ICCameraDevice, didRenameItems items: [ICCameraItem])
+```
+
+```objc
+- (void) cameraDevice:(ICCameraDevice *) camera didRenameItems:(NSArray<ICCameraItem *> *) items;
 ```
 
 

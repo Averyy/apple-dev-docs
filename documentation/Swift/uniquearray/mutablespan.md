@@ -1,7 +1,8 @@
 # mutableSpan
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable span over the elements of this array, providing direct mutating access.
 
@@ -22,7 +23,7 @@ var mutableSpan: MutableSpan<Element> { mutating get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

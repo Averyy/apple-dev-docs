@@ -1,7 +1,8 @@
 # UITextSmartQuotesType.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the default smart quote behavior.
 
@@ -18,15 +19,20 @@ Use the default smart quote behavior.
 case `default`
 ```
 
+```c
+UITextSmartQuotesTypeDefault
+```
+
 #### Discussion
 
 This option selectively enables the smart quote behavior based on the keyboard type. For example, smart quotes are disabled for email address and password keyboards.
 
 ## See Also
 
-- [UITextSmartQuotesType.no](uitextsmartquotestype/no.md)
+### Constants
+- [UITextSmartQuotesType.no](./no.md)
   Disable smart quotes.
-- [UITextSmartQuotesType.yes](uitextsmartquotestype/yes.md)
+- [UITextSmartQuotesType.yes](./yes.md)
   Enable smart quotes.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic window resizability.
 
@@ -22,17 +23,18 @@ static var automatic: WindowResizability { get set }
 
 When you use automatic resizability, SwiftUI applies a resizing strategy that’s appropriate for the scene type:
 
-- Windows from [`WindowGroup`](windowgroup.md), [`Window`](window.md), and [`DocumentGroup`](documentgroup.md) scene declarations use the [`contentMinSize`](windowresizability/contentminsize.md) strategy.
-- A window from a [`Settings`](settings.md) scene declaration uses the [`contentSize`](windowresizability/contentsize.md) strategy.
-- Windows on visionOS with a window style of [`volumetric`](windowstyle/volumetric.md) use the [`contentSize`](windowresizability/contentsize.md) strategy.
+- Windows from [`WindowGroup`](../windowgroup.md), [`Window`](../window.md), and [`DocumentGroup`](../documentgroup.md) scene declarations use the [`contentMinSize`](./contentminsize.md) strategy.
+- A window from a [`Settings`](../settings.md) scene declaration uses the [`contentSize`](./contentsize.md) strategy.
+- Windows on visionOS with a window style of [`volumetric`](../windowstyle/volumetric.md) use the [`contentSize`](./contentsize.md) strategy.
 
-Automatic resizability is the default if you don’t specify another value using the [`windowResizability(_:)`](scene/windowresizability(_:).md) scene modifier.
+Automatic resizability is the default if you don’t specify another value using the [`windowResizability(_:)`](../scene/windowresizability%28_%29.md) scene modifier.
 
 ## See Also
 
-- [static var contentMinSize: WindowResizability](windowresizability/contentminsize.md)
+### Getting the resizability
+- [static var contentMinSize: WindowResizability](./contentminsize.md)
   A window resizability that’s partially derived from the window’s content.
-- [static var contentSize: WindowResizability](windowresizability/contentsize.md)
+- [static var contentSize: WindowResizability](./contentsize.md)
   A window resizability that’s derived from the window’s content.
 
 

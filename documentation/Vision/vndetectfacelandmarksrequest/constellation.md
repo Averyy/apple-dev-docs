@@ -1,7 +1,8 @@
 # constellation
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A variable that describes how a face landmarks request orders or enumerates the resulting features.
 
@@ -19,13 +20,18 @@ A variable that describes how a face landmarks request orders or enumerates the 
 var constellation: VNRequestFaceLandmarksConstellation { get set }
 ```
 
+```objc
+@property (assign, readwrite) VNRequestFaceLandmarksConstellation constellation;
+```
+
 #### Discussion
 
-Set this variable to one of the supported constellation types detailed in [`VNRequestFaceLandmarksConstellation`](vnrequestfacelandmarksconstellation.md). The default value is [`VNRequestFaceLandmarksConstellation.constellationNotDefined`](vnrequestfacelandmarksconstellation/constellationnotdefined.md).
+Set this variable to one of the supported constellation types detailed in [`VNRequestFaceLandmarksConstellation`](../vnrequestfacelandmarksconstellation.md). The default value is [`VNRequestFaceLandmarksConstellation.constellationNotDefined`](../vnrequestfacelandmarksconstellation/constellationnotdefined.md).
 
 ## See Also
 
-- [enum VNRequestFaceLandmarksConstellation](vnrequestfacelandmarksconstellation.md)
+### Locating Face Landmarks
+- [enum VNRequestFaceLandmarksConstellation](../vnrequestfacelandmarksconstellation.md)
   An enumeration of face landmarks in a constellation object.
 
 

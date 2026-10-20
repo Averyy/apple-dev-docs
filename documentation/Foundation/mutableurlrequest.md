@@ -1,7 +1,8 @@
 # MutableURLRequest
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -12,6 +13,8 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: Use a [`URLRequest`](./urlrequest.md) variable instead.
+
 ## Declaration
 
 ```swift
@@ -20,9 +23,10 @@ typealias MutableURLRequest = NSMutableURLRequest
 
 ## See Also
 
-- [class NSURLRequest](nsurlrequest.md)
+### Using reference types
+- [class NSURLRequest](./nsurlrequest.md)
   A URL load request that is independent of protocol or URL scheme.
-- [class NSMutableURLRequest](nsmutableurlrequest.md)
+- [class NSMutableURLRequest](./nsmutableurlrequest.md)
   A mutable URL load request that is independent of protocol or URL scheme.
 
 

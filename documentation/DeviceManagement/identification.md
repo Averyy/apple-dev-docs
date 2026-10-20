@@ -1,16 +1,17 @@
 # Identification
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the names of the account user.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 15.4
 
 ## Declaration
 
-```swift
+```
 object Identification
 ```
 
@@ -18,7 +19,7 @@ object Identification
 
 Specify `com.apple.configurationprofile.identification` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -106,24 +107,27 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
 ## Topics
 
 ### Objects
-- [object Identification.PayloadIdentification](identification/payloadidentification-data.dictionary.md)
+- [object Identification.PayloadIdentification](./identification/payloadidentification-data.dictionary.md)
   The dictionary containing details about the user.
 
 ## Properties
 
-- `PayloadIdentification` (Identification.PayloadIdentification) *(required)*: The dictionary that contains details about the user. Deprecated: macOS 15.4+
+- `PayloadIdentification` (Identification.PayloadIdentification) *(required)* *(deprecated)*: The dictionary that contains details about the user.
+
+  Deprecated: macOS 15.4+
 
 ## See Also
 
-- [object DirectoryService](directoryservice.md)
+### Authentication
+- [object DirectoryService](./directoryservice.md)
   The payload that configures an Active Directory (AD) domain.
-- [object ExtensibleSingleSignOn](extensiblesinglesignon.md)
+- [object ExtensibleSingleSignOn](./extensiblesinglesignon.md)
   The payload that configures an app extension that performs single sign-on (SSO).
-- [object ExtensibleSingleSignOnKerberos](extensiblesinglesignonkerberos.md)
+- [object ExtensibleSingleSignOnKerberos](./extensiblesinglesignonkerberos.md)
   The payload that configures an app extension that performs single sign-on with the Kerberos extension.
-- [object IdentityPreference](identitypreference.md)
+- [object IdentityPreference](./identitypreference.md)
   The payload that configures the user’s identity on the device.
-- [object SingleSignOn](singlesignon.md)
+- [object SingleSignOn](./singlesignon.md)
   The payload that configures single sign-on (SSO).
 
 

@@ -1,7 +1,8 @@
 # WinBackOffer.Relationships.Prices
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object WinBackOffer.Relationships.Prices
 ```
 
 ## Topics
 
 ### Objects
-- [object WinBackOffer.Relationships.Prices.Data](winbackoffer/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
+- [object WinBackOffer.Relationships.Prices.Data](./prices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

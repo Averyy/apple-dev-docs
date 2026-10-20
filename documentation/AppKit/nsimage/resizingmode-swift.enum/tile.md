@@ -1,7 +1,8 @@
 # NSImage.ResizingMode.tile
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image tiles when it resizes.
 
@@ -14,13 +15,18 @@ The image tiles when it resizes.
 case tile
 ```
 
+```c
+NSImageResizingModeTile
+```
+
 #### Discussion
 
 The interior region of the original image repeats to fill in the interior region of the newly resized image.
 
 ## See Also
 
-- [NSImage.ResizingMode.stretch](nsimage/resizingmode-swift.enum/stretch.md)
+### Constants
+- [NSImage.ResizingMode.stretch](./stretch.md)
   The image stretches when it resizes.
 
 

@@ -1,12 +1,13 @@
 # NSScroller
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that controls scrolling of a document view within a scroll view or other type of container view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,102 +15,107 @@ An object that controls scrolling of a document view within a scroll view or oth
 class NSScroller
 ```
 
+```objc
+@interface NSScroller : NSControl
+```
+
 #### Overview
 
 A scroller displays a slot containing a knob that the user can drag directly to the desired location. The knob indicates both the position within the document view and—by varying in size within the slot—the amount visible relative to the size of the document view.
 
-Typically, you don’t need to program with scrollers; instead, you configure them with an [`NSScrollView`](nsscrollview.md) object in a [`Nib file`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/NibFile.html#//apple_ref/doc/uid/TP40008195-CH34).
+Typically, you don’t need to program with scrollers; instead, you configure them with an [`NSScrollView`](./nsscrollview.md) object in a [Nib file](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/NibFile.html#//apple_ref/doc/uid/TP40008195-CH34).
 
-Don’t use an scroller when a slider would be more appropriate. An [`NSSlider`](nsslider.md) object represents a range of values for something in the application and lets the user choose a setting. A scroller represents the relative position of the visible portion of a view and lets the user choose which portion to view.
+Don’t use an scroller when a slider would be more appropriate. An [`NSSlider`](./nsslider.md) object represents a range of values for something in the application and lets the user choose a setting. A scroller represents the relative position of the visible portion of a view and lets the user choose which portion to view.
 
 ## Topics
 
 ### Determining Scroller Size
-- [class func scrollerWidth(for: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> CGFloat](nsscroller/scrollerwidth(for:scrollerstyle:).md)
+- [class func scrollerWidth(for: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> CGFloat](./nsscroller/scrollerwidth%28for,scrollerstyle%29.md)
   Returns the width for scrollers of the receiving class for a given control size and scroller style.
-- [var controlSize: NSControl.ControlSize](nsscroller/controlsize.md)
+- [var controlSize: NSControl.ControlSize](./nsscroller/controlsize.md)
   The size of the scroller.
 ### Setting the Knob Position
-- [var knobProportion: CGFloat](nsscroller/knobproportion.md)
+- [var knobProportion: CGFloat](./nsscroller/knobproportion.md)
   The proportion of the knob slot that the knob should fill.
 ### Calculating Layout
-- [func rect(for: NSScroller.Part) -> NSRect](nsscroller/rect(for:).md)
+- [func rect(for: NSScroller.Part) -> NSRect](./nsscroller/rect%28for%29.md)
   Returns the rectangle occupied by `aPart`, which for this method is interpreted literally rather than as an indicator of scrolling direction.
-- [func testPart(NSPoint) -> NSScroller.Part](nsscroller/testpart(_:).md)
+- [func testPart(NSPoint) -> NSScroller.Part](./nsscroller/testpart%28_%29.md)
   Returns the part that would be hit by a mouse-down event at `aPoint` (expressed in the window’s coordinate system).
-- [func checkSpaceForParts()](nsscroller/checkspaceforparts.md)
+- [func checkSpaceForParts()](./nsscroller/checkspaceforparts%28%29.md)
   Checks to see if there is enough room in the receiver to display the knob and buttons.
-- [var usableParts: NSScroller.UsableParts](nsscroller/usableparts-swift.property.md)
+- [var usableParts: NSScroller.UsableParts](./nsscroller/usableparts-swift.property.md)
   A value that indicates which parts of the receiver are displayed and usable.
 ### Drawing Scroller Parts
-- [func drawKnobSlot(in: NSRect, highlight: Bool)](nsscroller/drawknobslot(in:highlight:).md)
+- [func drawKnobSlot(in: NSRect, highlight: Bool)](./nsscroller/drawknobslot%28in,highlight%29.md)
   Draws the portion of the scroller’s track, possibly including the line increment and decrement arrow buttons, that falls in the given rectangle.
-- [func drawKnob()](nsscroller/drawknob.md)
+- [func drawKnob()](./nsscroller/drawknob%28%29.md)
   Draws the knob.
 ### Event Handling
-- [var hitPart: NSScroller.Part](nsscroller/hitpart.md)
+- [var hitPart: NSScroller.Part](./nsscroller/hitpart.md)
   A part code indicating the manner in which the scrolling should be performed.
-- [func trackKnob(with: NSEvent)](nsscroller/trackknob(with:).md)
+- [func trackKnob(with: NSEvent)](./nsscroller/trackknob%28with%29.md)
   Tracks the knob and sends action messages to the receiver’s target.
 ### Managing Presentation Style
-- [class var preferredScrollerStyle: NSScroller.Style](nsscroller/preferredscrollerstyle.md)
+- [class var preferredScrollerStyle: NSScroller.Style](./nsscroller/preferredscrollerstyle.md)
   Returns the style of scrollers that applications should use wherever possible.
-- [var scrollerStyle: NSScroller.Style](nsscroller/scrollerstyle.md)
+- [var scrollerStyle: NSScroller.Style](./nsscroller/scrollerstyle.md)
   The scroller style for this scroller.
-- [var knobStyle: NSScroller.KnobStyle](nsscroller/knobstyle-swift.property.md)
+- [var knobStyle: NSScroller.KnobStyle](./nsscroller/knobstyle-swift.property.md)
   The scroller’s knob style.
 ### Constants
-- [NSScroller.Style](nsscroller/style.md)
+- [NSScroller.Style](./nsscroller/style.md)
   Constants to specify the scroller style.
-- [NSScroller.KnobStyle](nsscroller/knobstyle-swift.enum.md)
+- [NSScroller.KnobStyle](./nsscroller/knobstyle-swift.enum.md)
   Specify different knob styles.
-- [NSScroller.Part](nsscroller/part.md)
+- [NSScroller.Part](./nsscroller/part.md)
   These constants specify the different parts of the scroller:
-- [NSScroller.UsableParts](nsscroller/usableparts-swift.enum.md)
+- [NSScroller.UsableParts](./nsscroller/usableparts-swift.enum.md)
   These constants specify which parts of the scroller are visible.
 ### Notifications
-- [class let preferredScrollerStyleDidChangeNotification: NSNotification.Name](nsscroller/preferredscrollerstyledidchangenotification.md)
+- [class let preferredScrollerStyleDidChangeNotification: NSNotification.Name](./nsscroller/preferredscrollerstyledidchangenotification.md)
   Posted if the preferred scroller style changes.
 ### Instance Properties
-- [var knobProportion: CGFloat](nsscroller/knobproportion.md)
+- [var knobProportion: CGFloat](./nsscroller/knobproportion.md)
   The proportion of the knob slot that the knob should fill.
 ### Type Properties
-- [class var isCompatibleWithOverlayScrollers: Bool](nsscroller/iscompatiblewithoverlayscrollers.md)
+- [class var isCompatibleWithOverlayScrollers: Bool](./nsscroller/iscompatiblewithoverlayscrollers.md)
 ### Deprecated
-- [Deprecated symbols](nsscroller-deprecated-symbols.md)
+- [Deprecated symbols](./nsscroller-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
-- [NSScroller.PreferredScrollerStyleDidChangeMessage](nsscroller/preferredscrollerstyledidchangemessage.md)
+- [NSScroller.PreferredScrollerStyleDidChangeMessage](./nsscroller/preferredscrollerstyledidchangemessage.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSControl](nscontrol.md)
+- [NSControl](./nscontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSScrollView](nsscrollview.md)
+### Views
+- [class NSScrollView](./nsscrollview.md)
   A view that displays a portion of a document view and provides scroll bars that allow the user to move the document view within the scroll view.
-- [class NSClipView](nsclipview.md)
+- [class NSClipView](./nsclipview.md)
   An object that clips a document view to a scroll view’s frame.
 
 

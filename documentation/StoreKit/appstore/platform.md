@@ -1,7 +1,8 @@
 # AppStore.Platform
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that represent Apple platforms.
 
@@ -22,36 +23,37 @@ struct Platform
 
 #### Discussion
 
-You choose a platform for your app when you add the new app in App Store Connect. For more information, see [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/).
+You choose a platform for your app when you add the new app in App Store Connect. For more information, see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/).
 
 The platform values in `AppStore.Platform` are the same as those in App Store Connect.
 
 ## Topics
 
 ### Getting platform values
-- [static let iOS: AppStore.Platform](appstore/platform/ios.md)
+- [static let iOS: AppStore.Platform](./platform/ios.md)
   A value that indicates the iOS platform.
-- [static let macOS: AppStore.Platform](appstore/platform/macos.md)
+- [static let macOS: AppStore.Platform](./platform/macos.md)
   A value that indicates the macOS platform.
-- [static let tvOS: AppStore.Platform](appstore/platform/tvos.md)
+- [static let tvOS: AppStore.Platform](./platform/tvos.md)
   A value that indicates the tvOS platform.
-- [static let visionOS: AppStore.Platform](appstore/platform/visionos.md)
+- [static let visionOS: AppStore.Platform](./platform/visionos.md)
   A value that indicates the visionOS platform.
 ### Type Properties
-- [static var managed: AppStore.Platform](appstore/platform/managed.md)
+- [static var managed: AppStore.Platform](./platform/managed.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let originalPlatform: AppStore.Platform](apptransaction/originalplatform.md)
+### Getting the original platform
+- [let originalPlatform: AppStore.Platform](../apptransaction/originalplatform.md)
   The platform on which the customer originally purchased the app.
 
 

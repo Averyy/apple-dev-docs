@@ -1,7 +1,8 @@
 # CMTag.Value.float64(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents a 64-bit floating point number.
 
@@ -22,11 +23,12 @@ case float64(Float64)
 
 ## See Also
 
-- [CMTag.Value.int64(_:)](cmtag-swift.class/value/int64(_:).md)
+### Value Types
+- [CMTag.Value.int64(_:)](./int64%28_%29.md)
   Represents a 64-bit integer.
-- [CMTag.Value.flags(_:)](cmtag-swift.class/value/flags(_:).md)
+- [CMTag.Value.flags(_:)](./flags%28_%29.md)
   Represents a 64-bit wide bitflag field.
-- [CMTag.Value.osType(_:)](cmtag-swift.class/value/ostype(_:).md)
+- [CMTag.Value.osType(_:)](./ostype%28_%29.md)
   Represents a 64-bit identifier used by the operating system.
 
 

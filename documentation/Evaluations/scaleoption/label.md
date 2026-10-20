@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short label for this option, such as “excellent”, “pass”, or “5”.
 

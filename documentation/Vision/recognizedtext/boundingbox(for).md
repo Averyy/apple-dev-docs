@@ -1,7 +1,8 @@
 # boundingBox(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the bounding box around the characters in the range of a string.
 

@@ -1,7 +1,8 @@
 # typeIEEE64BitFloatingPoint
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 64-bit floating point value.
 

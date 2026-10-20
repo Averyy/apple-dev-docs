@@ -1,7 +1,8 @@
 # MTLFunctionLogType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for different kinds of function logs.
 
@@ -19,27 +20,32 @@ Options for different kinds of function logs.
 enum MTLFunctionLogType
 ```
 
+```c
+enum MTLFunctionLogType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration cases
-- [MTLFunctionLogType.validation](mtlfunctionlogtype/validation.md)
+- [MTLFunctionLogType.validation](./mtlfunctionlogtype/validation.md)
   A message related to usage validation.
 ### Initializers
-- [init?(rawValue: UInt)](mtlfunctionlogtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlfunctionlogtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: MTLFunctionLogType](mtlfunctionlog/type.md)
+### Getting the log messsage
+- [var type: MTLFunctionLogType](./mtlfunctionlog/type.md)
   The type of message that was logged.
 
 

@@ -1,7 +1,8 @@
 # transpose(axes:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a transpose operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a transpose operation to the current graph.
 ```swift
 func transpose(axes: [Int]) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

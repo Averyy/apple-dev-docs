@@ -1,7 +1,8 @@
 # NSCollectionViewItem.HighlightState
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of highlight applied to an item.
 
@@ -14,29 +15,33 @@ Constants indicating the type of highlight applied to an item.
 enum HighlightState
 ```
 
+```c
+enum NSCollectionViewItemHighlightState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSCollectionViewItem.HighlightState.none](nscollectionviewitem/highlightstate-swift.enum/none.md)
+- [NSCollectionViewItem.HighlightState.none](./highlightstate-swift.enum/none.md)
   No highlight state.
-- [NSCollectionViewItem.HighlightState.forSelection](nscollectionviewitem/highlightstate-swift.enum/forselection.md)
+- [NSCollectionViewItem.HighlightState.forSelection](./highlightstate-swift.enum/forselection.md)
   The selected highlight state. This type of highlight is applied when an item is selected. During interactive highlighting, this state is also applied to indicate that the item will become highlighted.
-- [NSCollectionViewItem.HighlightState.forDeselection](nscollectionviewitem/highlightstate-swift.enum/fordeselection.md)
-  The deselection highlight state. During interactive selection, this state is used to indicate that the item will become deselected when interactions end. After interactions end, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](nscollectionviewitem/highlightstate-swift.enum/none.md).
-- [NSCollectionViewItem.HighlightState.asDropTarget](nscollectionviewitem/highlightstate-swift.enum/asdroptarget.md)
-  The drop target highlight state. This type of highlight is applied when the item is the target of a drop operation on the collection view. After the drop operation completes, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](nscollectionviewitem/highlightstate-swift.enum/none.md).
+- [NSCollectionViewItem.HighlightState.forDeselection](./highlightstate-swift.enum/fordeselection.md)
+  The deselection highlight state. During interactive selection, this state is used to indicate that the item will become deselected when interactions end. After interactions end, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](./highlightstate-swift.enum/none.md).
+- [NSCollectionViewItem.HighlightState.asDropTarget](./highlightstate-swift.enum/asdroptarget.md)
+  The drop target highlight state. This type of highlight is applied when the item is the target of a drop operation on the collection view. After the drop operation completes, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](./highlightstate-swift.enum/none.md).
 ### Initializers
-- [init?(rawValue: Int)](nscollectionviewitem/highlightstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./highlightstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

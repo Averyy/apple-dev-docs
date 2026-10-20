@@ -1,7 +1,8 @@
 # convert(to:channelOrdering:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the 8-bit-per-channel RGBA or ARGB pixel buffer to RGB.
 
@@ -11,7 +12,7 @@ Converts the 8-bit-per-channel RGBA or ARGB pixel buffer to RGB.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,6 +21,8 @@ Converts the 8-bit-per-channel RGBA or ARGB pixel buffer to RGB.
 func convert(to destination: vImage.PixelBuffer<vImage.Interleaved8x3>, channelOrdering: vImage.ChannelOrdering)
 ```
 
+Available when `Format` is `vImage.Interleaved8x4`.
+
 ## Parameters
 
 - `destination`: The destination pixel buffer.
@@ -27,7 +30,8 @@ func convert(to destination: vImage.PixelBuffer<vImage.Interleaved8x3>, channelO
 
 ## See Also
 
-- [func convert(to: vImage.PixelBuffer<vImage.InterleavedFx3>, channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/convert(to:channelordering:)-1nll2.md)
+### Conversion from four channels to three channels
+- [func convert(to: vImage.PixelBuffer<vImage.InterleavedFx3>, channelOrdering: vImage.ChannelOrdering)](./convert%28to,channelordering%29-1nll2.md)
   Converts the 32-bit-per-channel RGBA or ARGB pixel buffer to RGB.
 
 

@@ -1,7 +1,8 @@
 # isEightDot
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns true if this table makes use of eight dots as opposed to six dots.
 
@@ -18,6 +19,10 @@ Returns true if this table makes use of eight dots as opposed to six dots.
 
 ```swift
 var isEightDot: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isEightDot;
 ```
 
 

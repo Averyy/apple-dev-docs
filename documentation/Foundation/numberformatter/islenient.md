@@ -1,7 +1,8 @@
 # isLenient
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the receiver will use heuristics to guess at the number which is intended by a string.
 
@@ -18,6 +19,10 @@ Determines whether the receiver will use heuristics to guess at the number which
 
 ```swift
 var isLenient: Bool { get set }
+```
+
+```objc
+@property (getter=isLenient) BOOL lenient;
 ```
 
 #### Discussion

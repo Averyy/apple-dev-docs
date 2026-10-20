@@ -1,7 +1,8 @@
 # photoIDData(retaining:notRetaining:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request which retrieves elements from the holder and returns the validated document elements.
 
@@ -15,6 +16,8 @@ A request which retrieves elements from the holder and returns the validated doc
 ```swift
 static func photoIDData(retaining retainedElements: [MobilePhotoIDDataRequest.Element], notRetaining nonRetainedElements: [MobilePhotoIDDataRequest.Element]) -> Self
 ```
+
+Available when `Self` is `MobilePhotoIDDataRequest`.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new frame decode operation status with the raw value that you specify.
 

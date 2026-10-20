@@ -1,7 +1,8 @@
 # accessibilityReduceHighlightingEffects
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the system preference for Reduce Bright Effects is enabled.
 

@@ -1,7 +1,8 @@
 # DeviceFitStatus.eyesBelow
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User’s eyes are positioned below the optimal device fit range.
 

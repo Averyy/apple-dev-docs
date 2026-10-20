@@ -1,7 +1,8 @@
 # VTOpticalFlowConfiguration
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object that enables optical flow on a frame processing session.
 
@@ -17,62 +18,67 @@ A configuration object that enables optical flow on a frame processing session.
 class VTOpticalFlowConfiguration
 ```
 
+```objc
+@interface VTOpticalFlowConfiguration : NSObject
+```
+
 ## Topics
 
 ### Creating an optical flow configuration
-- [init?(frameWidth: Int, frameHeight: Int, qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization, revision: VTOpticalFlowConfiguration.Revision)](vtopticalflowconfiguration/init(framewidth:frameheight:qualityprioritization:revision:).md)
+- [init?(frameWidth: Int, frameHeight: Int, qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization, revision: VTOpticalFlowConfiguration.Revision)](./vtopticalflowconfiguration/init%28framewidth,frameheight,qualityprioritization,revision%29.md)
 ### Determining processor availability
-- [class var isSupported: Bool](vtopticalflowconfiguration/issupported.md)
+- [class var isSupported: Bool](./vtopticalflowconfiguration/issupported.md)
   Reports whether the system supports this processor.
 ### Inspecting the configuration
-- [var frameWidth: Int](vtopticalflowconfiguration/framewidth.md)
+- [var frameWidth: Int](./vtopticalflowconfiguration/framewidth.md)
   The width of a source frame in pixels.
-- [var frameHeight: Int](vtopticalflowconfiguration/frameheight.md)
+- [var frameHeight: Int](./vtopticalflowconfiguration/frameheight.md)
   The height of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./vtopticalflowconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./vtopticalflowconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var supportedPixelFormats: [OSType]](vtopticalflowconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./vtopticalflowconfiguration/supportedpixelformats.md)
+- [var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization](./vtopticalflowconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
-- [VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.enum.md)
+- [VTOpticalFlowConfiguration.QualityPrioritization](./vtopticalflowconfiguration/qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 ### Inspecting revision information
-- [var revision: VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/revision-swift.property.md)
+- [var revision: VTOpticalFlowConfiguration.Revision](./vtopticalflowconfiguration/revision-swift.property.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-- [class var defaultRevision: VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTOpticalFlowConfiguration.Revision](./vtopticalflowconfiguration/defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtopticalflowconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./vtopticalflowconfiguration/supportedrevisions.md)
   A boolean value that indicates whether the processor supported on the current configuration.
-- [VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/revision-swift.enum.md)
+- [VTOpticalFlowConfiguration.Revision](./vtopticalflowconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
 ### Deprecated
-- [class var processorSupported: Bool](vtopticalflowconfiguration/processorsupported.md)
+- [class var processorSupported: Bool](./vtopticalflowconfiguration/processorsupported.md)
   A boolean value that indicates whether the processor supported on the current configuration.
-- [var frameSupportedPixelFormats: [NSNumber]](vtopticalflowconfiguration/framesupportedpixelformats-gm6u.md)
+- [var frameSupportedPixelFormats: [NSNumber]](./vtopticalflowconfiguration/framesupportedpixelformats-gm6u.md)
   A list of source frame supported pixel formats for the current configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
 
 ## See Also
 
-- [class VTFrameProcessorOpticalFlow](vtframeprocessoropticalflow.md)
+### Optical flow
+- [class VTFrameProcessorOpticalFlow](./vtframeprocessoropticalflow.md)
   A class to wrap bidirectional optical flow to send to the processor.
-- [class VTOpticalFlowParameters](vtopticalflowparameters.md)
+- [class VTOpticalFlowParameters](./vtopticalflowparameters.md)
   An object that describes frame-level optical flow parameters.
 
 

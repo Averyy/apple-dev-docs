@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the entity is active.
 
@@ -11,7 +12,7 @@ A Boolean that indicates whether the entity is active.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ A Boolean that indicates whether the entity is active.
 
 #### Discussion
 
-The value of this property is `true` if the entity is anchored in a scene, and it and all of its ancestors are enabled ([`isEnabled`](entity/isenabled.md) is set to `true`). RealityKit doesn’t simulate or render inactive entities.
+The value of this property is `true` if the entity is anchored in a scene, and it and all of its ancestors are enabled ([`isEnabled`](./isenabled.md) is set to `true`). RealityKit doesn’t simulate or render inactive entities.
 
 ## See Also
 
-- [var isEnabled: Bool](entity/isenabled.md)
+### Managing the entity’s state
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean that you set to enable or disable the entity and its descendants.
-- [var isEnabledInHierarchy: Bool](entity/isenabledinhierarchy.md)
+- [var isEnabledInHierarchy: Bool](./isenabledinhierarchy.md)
   A Boolean that indicates whether the entity and all of its ancestors are enabled.
-- [var isAnchored: Bool](entity/isanchored.md)
+- [var isAnchored: Bool](./isanchored.md)
   A Boolean that indicates whether the entity is anchored.
 
 

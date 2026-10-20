@@ -1,7 +1,8 @@
 # SetCanBeDefaultSystemOutputDevice
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies if device can be used as default system output device
 
@@ -10,7 +11,7 @@ Specifies if device can be used as default system output device
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetCanBeDefaultSystemOutputDevice(bool in_can_be_default);
 ```
 
@@ -24,15 +25,16 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetCanBeDefaultInputDevice](iouservideodevice/setcanbedefaultinputdevice.md)
+### Working with default device behavior
+- [SetCanBeDefaultInputDevice](./setcanbedefaultinputdevice.md)
   Specify if device can be used as default input device.
-- [CanBeDefaultInputDevice](iouservideodevice/canbedefaultinputdevice.md)
+- [CanBeDefaultInputDevice](./canbedefaultinputdevice.md)
   Returns a Boolean value indicating if device can be used for default input.
-- [SetCanBeDefaultOutputDevice](iouservideodevice/setcanbedefaultoutputdevice.md)
+- [SetCanBeDefaultOutputDevice](./setcanbedefaultoutputdevice.md)
   Specifies if device can be used as default output device.
-- [CanBeDefaultOutputDevice](iouservideodevice/canbedefaultoutputdevice.md)
+- [CanBeDefaultOutputDevice](./canbedefaultoutputdevice.md)
   Returns a Boolean value indicating if device can be used for default output.
-- [CanBeDefaultSystemOutputDevice](iouservideodevice/canbedefaultsystemoutputdevice.md)
+- [CanBeDefaultSystemOutputDevice](./canbedefaultsystemoutputdevice.md)
   Returns a Boolean value indicating if device can be used for default system output.
 
 

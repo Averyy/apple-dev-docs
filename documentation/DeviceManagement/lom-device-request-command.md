@@ -1,7 +1,8 @@
 # LOM Device Request
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Send requests to a device using lights-out management (LOM).
 
@@ -10,11 +11,11 @@ Send requests to a device using lights-out management (LOM).
 
 #### Discussion
 
-This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOutManagementLOM`](lightsoutmanagementlom.md) configuration and is available in macOS 11 and later on [`supported macOS devices`](https://developer.apple.comhttps://support.apple.com/guide/deployment/lights-out-management-payload-settings-dep580cf25bc/web).
+This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOutManagementLOM`](./lightsoutmanagementlom.md) configuration and is available in macOS 11 and later on [supported macOS devices](https://support.apple.com/guide/deployment/lights-out-management-payload-settings-dep580cf25bc/web).
 
-`DeviceDNSName` is the `CommonName` in the Identity issued on the client certificate from [`LightsOutManagementLOM`](lightsoutmanagementlom.md). [`LOMSetupRequestResponse`](lomsetuprequestresponse.md) returns `PrimaryIPv6AddressList` and `SecondaryIPv6AddressList` after a successful deployment of Lights Out management configuration payload and subsequent [`LOMSetupRequestCommand`](lomsetuprequestcommand.md).
+`DeviceDNSName` is the `CommonName` in the Identity issued on the client certificate from [`LightsOutManagementLOM`](./lightsoutmanagementlom.md). [`LOMSetupRequestResponse`](./lomsetuprequestresponse.md) returns `PrimaryIPv6AddressList` and `SecondaryIPv6AddressList` after a successful deployment of Lights Out management configuration payload and subsequent [`LOMSetupRequestCommand`](./lomsetuprequestcommand.md).
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -24,7 +25,7 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -89,9 +90,9 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 ## Topics
 
 ### Commands and responses
-- [object LOMDeviceRequestCommand](lomdevicerequestcommand.md)
+- [object LOMDeviceRequestCommand](./lomdevicerequestcommand.md)
   The command to send requests to a device using lights-out management (LOM).
-- [object LOMDeviceRequestResponse](lomdevicerequestresponse.md)
+- [object LOMDeviceRequestResponse](./lomdevicerequestresponse.md)
   A response from the device after it processes the command to send requests to a device using lights-out management (LOM).
 
 ## Endpoint
@@ -100,11 +101,19 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `LOMDeviceRequestCommand`
+
 The request object the server returns for the LOM Device Request Command.
+
+## Responses
+
+- `200` OK (`LOMDeviceRequestResponse`, `application/xml`): The response object the system returns for the LOM Device Request Command.
 
 ## See Also
 
-- [LOM Setup Request](lom-setup-request-command.md)
+### Lights-out management
+- [LOM Setup Request](./lom-setup-request-command.md)
   Get information from a device to set up lights-out management (LOM).
 
 

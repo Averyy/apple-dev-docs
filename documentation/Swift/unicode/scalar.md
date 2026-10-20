@@ -1,7 +1,8 @@
 # Unicode.Scalar
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Unicode scalar value.
 
@@ -45,99 +46,99 @@ print(airplane)
 ## Topics
 
 ### Creating a Scalar
-- [init(UInt8)](unicode/scalar/init(_:)-2oo2e.md)
+- [init(UInt8)](./scalar/init%28_%29-2oo2e.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init(Unicode.Scalar)](unicode/scalar/init(_:)-5d6us.md)
+- [init(Unicode.Scalar)](./scalar/init%28_%29-5d6us.md)
   Creates a duplicate of the given Unicode scalar.
-- [init?(UInt32)](unicode/scalar/init(_:)-9eo1y.md)
+- [init?(UInt32)](./scalar/init%28_%29-9eo1y.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init?(UInt16)](unicode/scalar/init(_:)-18u1m.md)
+- [init?(UInt16)](./scalar/init%28_%29-18u1m.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init?(Int)](unicode/scalar/init(_:)-96l5f.md)
+- [init?(Int)](./scalar/init%28_%29-96l5f.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init(unicodeScalarLiteral: Unicode.Scalar)](unicode/scalar/init(unicodescalarliteral:).md)
+- [init(unicodeScalarLiteral: Unicode.Scalar)](./scalar/init%28unicodescalarliteral%29.md)
   Creates a Unicode scalar with the specified value.
-- [init?(String)](unicode/scalar/init(_:)-4p868.md)
+- [init?(String)](./scalar/init%28_%29-4p868.md)
   Instantiates an instance of the conforming type from a string representation.
 ### Inspecting a Scalar
-- [var value: UInt32](unicode/scalar/value.md)
+- [var value: UInt32](./scalar/value.md)
   A numeric representation of the Unicode scalar.
-- [var properties: Unicode.Scalar.Properties](unicode/scalar/properties-swift.property.md)
+- [var properties: Unicode.Scalar.Properties](./scalar/properties-swift.property.md)
   Properties of this scalar defined by the Unicode standard.
-- [Unicode.Scalar.Properties](unicode/scalar/properties-swift.struct.md)
+- [Unicode.Scalar.Properties](./scalar/properties-swift.struct.md)
   A value that provides access to properties of a Unicode scalar that are defined by the Unicode standard.
-- [func hash(into: inout Hasher)](unicode/scalar/hash(into:).md)
+- [func hash(into: inout Hasher)](./scalar/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var isASCII: Bool](unicode/scalar/isascii.md)
+- [var isASCII: Bool](./scalar/isascii.md)
   A Boolean value indicating whether the Unicode scalar is an ASCII character.
 ### Printing and Displaying a Scalar
-- [var description: String](unicode/scalar/description.md)
+- [var description: String](./scalar/description.md)
   A textual representation of the Unicode scalar.
-- [func write<Target>(to: inout Target)](unicode/scalar/write(to:).md)
+- [func write<Target>(to: inout Target)](./scalar/write%28to%29.md)
   Writes the textual representation of the Unicode scalar into the given output stream.
-- [func escaped(asASCII: Bool) -> String](unicode/scalar/escaped(asascii:).md)
+- [func escaped(asASCII: Bool) -> String](./scalar/escaped%28asascii%29.md)
   Returns a string representation of the Unicode scalar.
-- [var utf16: Unicode.Scalar.UTF16View](unicode/scalar/utf16.md)
-- [Unicode.Scalar.UTF16View](unicode/scalar/utf16view.md)
-- [var debugDescription: String](unicode/scalar/debugdescription.md)
+- [var utf16: Unicode.Scalar.UTF16View](./scalar/utf16.md)
+- [Unicode.Scalar.UTF16View](./scalar/utf16view.md)
+- [var debugDescription: String](./scalar/debugdescription.md)
   An escaped textual representation of the Unicode scalar, suitable for debugging.
-- [var customMirror: Mirror](unicode/scalar/custommirror.md)
+- [var customMirror: Mirror](./scalar/custommirror.md)
   A mirror that reflects the `Unicode.Scalar` instance.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](unicode/scalar/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./scalar/customplaygroundquicklook.md)
   A custom playground Quick Look for the `Unicode.Scalar` instance.
 ### Comparing Scalars
-- [static func == (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/==(_:_:).md)
+- [static func == (Unicode.Scalar, Unicode.Scalar) -> Bool](./scalar/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](unicode/scalar/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./scalar/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func < (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/_(_:_:).md)
+- [static func < (Unicode.Scalar, Unicode.Scalar) -> Bool](./scalar/op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 ### Creating Ranges of Scalars
-- [static func ... (Self) -> PartialRangeFrom<Self>](unicode/scalar/'...(_:)-9u9rz.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./scalar/dotdotdot%28_%29-9u9rz.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](unicode/scalar/'...(_:)-7lhvp.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./scalar/dotdotdot%28_%29-7lhvp.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](unicode/scalar/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./scalar/dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](unicode/scalar/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./scalar/dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](unicode/scalar/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./scalar/dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
 ### Structures
-- [Unicode.Scalar.UTF8View](unicode/scalar/utf8view.md)
+- [Unicode.Scalar.UTF8View](./scalar/utf8view.md)
 ### Instance Properties
-- [var utf8: Unicode.Scalar.UTF8View](unicode/scalar/utf8.md)
+- [var utf8: Unicode.Scalar.UTF8View](./scalar/utf8.md)
 ### Type Aliases
-- [Unicode.Scalar.Output](unicode/scalar/output.md)
+- [Unicode.Scalar.Output](./scalar/output.md)
 ### Default Implementations
-- [Comparable Implementations](unicode/scalar/comparable-implementations.md)
-- [CustomDebugStringConvertible Implementations](unicode/scalar/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](unicode/scalar/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](unicode/scalar/customstringconvertible-implementations.md)
-- [Equatable Implementations](unicode/scalar/equatable-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](unicode/scalar/expressiblebyunicodescalarliteral-implementations.md)
-- [Hashable Implementations](unicode/scalar/hashable-implementations.md)
-- [LosslessStringConvertible Implementations](unicode/scalar/losslessstringconvertible-implementations.md)
-- [TextOutputStreamable Implementations](unicode/scalar/textoutputstreamable-implementations.md)
+- [Comparable Implementations](./scalar/comparable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./scalar/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./scalar/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./scalar/customstringconvertible-implementations.md)
+- [Equatable Implementations](./scalar/equatable-implementations.md)
+- [ExpressibleByUnicodeScalarLiteral Implementations](./scalar/expressiblebyunicodescalarliteral-implementations.md)
+- [Hashable Implementations](./scalar/hashable-implementations.md)
+- [LosslessStringConvertible Implementations](./scalar/losslessstringconvertible-implementations.md)
+- [TextOutputStreamable Implementations](./scalar/textoutputstreamable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
-- [Hashable](hashable.md)
-- [LosslessStringConvertible](losslessstringconvertible.md)
-- [RegexComponent](regexcomponent.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [TextOutputStreamable](textoutputstreamable.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Comparable](../comparable.md)
+- [Copyable](../copyable.md)
+- [CustomDebugStringConvertible](../customdebugstringconvertible.md)
+- [CustomReflectable](../customreflectable.md)
+- [CustomStringConvertible](../customstringconvertible.md)
+- [Equatable](../equatable.md)
+- [Escapable](../escapable.md)
+- [ExpressibleByUnicodeScalarLiteral](../expressiblebyunicodescalarliteral.md)
+- [Hashable](../hashable.md)
+- [LosslessStringConvertible](../losslessstringconvertible.md)
+- [RegexComponent](../regexcomponent.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [TextOutputStreamable](../textoutputstreamable.md)
 
 
 ---

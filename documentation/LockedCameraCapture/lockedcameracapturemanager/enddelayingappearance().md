@@ -1,7 +1,8 @@
 # endDelayingAppearance()
 
 **Framework**: LockedCameraCapture  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that the application is ready to appear after delaying the appearance during a transition between the extension and the application
 

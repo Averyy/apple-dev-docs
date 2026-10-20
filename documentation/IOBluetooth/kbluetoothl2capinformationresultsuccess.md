@@ -1,10 +1,11 @@
 # kBluetoothL2CAPInformationResultSuccess
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothL2CAPInformationResultSuccess: BluetoothL2CAPInformationResult { get }
 ```
 
+```c
+kBluetoothL2CAPInformationResultSuccess
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPInformationResultNotSupported: BluetoothL2CAPInformationResult](kbluetoothl2capinformationresultnotsupported.md)
+### Constants
+- [var kBluetoothL2CAPInformationResultNotSupported: BluetoothL2CAPInformationResult](./kbluetoothl2capinformationresultnotsupported.md)
 
 
 ---

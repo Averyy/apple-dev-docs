@@ -1,7 +1,8 @@
 # preferredCurrentPageIndicatorImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred image for the current page indicator.
 
@@ -18,23 +19,28 @@ The preferred image for the current page indicator.
 var preferredCurrentPageIndicatorImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * preferredCurrentPageIndicatorImage;
+```
+
 #### Discussion
 
-When `nil`, the page control uses [`preferredIndicatorImage`](uipagecontrol/preferredindicatorimage.md) as its current page indicator.
+When `nil`, the page control uses [`preferredIndicatorImage`](./preferredindicatorimage.md) as its current page indicator.
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [var preferredIndicatorImage: UIImage?](uipagecontrol/preferredindicatorimage.md)
+### Managing the indicator images
+- [var preferredIndicatorImage: UIImage?](./preferredindicatorimage.md)
   The preferred image for indicators.
-- [func indicatorImage(forPage: Int) -> UIImage?](uipagecontrol/indicatorimage(forpage:).md)
+- [func indicatorImage(forPage: Int) -> UIImage?](./indicatorimage%28forpage%29.md)
   Returns the override image for the indicator of the specified page.
-- [func setIndicatorImage(UIImage?, forPage: Int)](uipagecontrol/setindicatorimage(_:forpage:).md)
+- [func setIndicatorImage(UIImage?, forPage: Int)](./setindicatorimage%28_,forpage%29.md)
   Registers an override image for the indicator of the specified page.
-- [func currentPageIndicatorImage(forPage: Int) -> UIImage?](uipagecontrol/currentpageindicatorimage(forpage:).md)
+- [func currentPageIndicatorImage(forPage: Int) -> UIImage?](./currentpageindicatorimage%28forpage%29.md)
   Returns the override image for the current page indicator of the specified page.
-- [func setCurrentPageIndicatorImage(UIImage?, forPage: Int)](uipagecontrol/setcurrentpageindicatorimage(_:forpage:).md)
+- [func setCurrentPageIndicatorImage(UIImage?, forPage: Int)](./setcurrentpageindicatorimage%28_,forpage%29.md)
   Registers an override image for the current page indicator of the specified page.
 
 

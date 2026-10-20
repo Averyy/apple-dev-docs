@@ -1,7 +1,8 @@
 # MusicRecentlyPlayedRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch items the user has recently played.
 
@@ -23,15 +24,15 @@ struct MusicRecentlyPlayedRequest<MusicItemType> where MusicItemType : MusicRece
 ## Topics
 
 ### Initializers
-- [init()](musicrecentlyplayedrequest/init.md)
+- [init()](./musicrecentlyplayedrequest/init%28%29.md)
   Creates a request for items the user has recently played.
 ### Instance Properties
-- [var limit: Int?](musicrecentlyplayedrequest/limit.md)
+- [var limit: Int?](./musicrecentlyplayedrequest/limit.md)
   A limit for the number of items to return in the response that contains items the user has recently played.
-- [var offset: Int?](musicrecentlyplayedrequest/offset.md)
+- [var offset: Int?](./musicrecentlyplayedrequest/offset.md)
   An offset for the request.
 ### Instance Methods
-- [func response() async throws -> MusicRecentlyPlayedResponse<MusicItemType>](musicrecentlyplayedrequest/response.md)
+- [func response() async throws -> MusicRecentlyPlayedResponse<MusicItemType>](./musicrecentlyplayedrequest/response%28%29.md)
   Fetches items the user has recently played.
 
 

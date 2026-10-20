@@ -1,26 +1,27 @@
 # eIOAccelSurfaceScaleBits
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 typedef enum eIOAccelSurfaceScaleBits eIOAccelSurfaceScaleBits;
 ```
 
 ## Topics
 
 ### Constants
-- [kIOAccelSurfaceBeamSyncSwaps](eioaccelsurfacescalebits/kioaccelsurfacebeamsyncswaps.md)
-- [kIOAccelSurfaceFilterDefault](eioaccelsurfacescalebits/kioaccelsurfacefilterdefault.md)
-- [kIOAccelSurfaceFilterLinear](eioaccelsurfacescalebits/kioaccelsurfacefilterlinear.md)
-- [kIOAccelSurfaceFilterNone](eioaccelsurfacescalebits/kioaccelsurfacefilternone.md)
-- [kIOAccelSurfaceFiltering](eioaccelsurfacescalebits/kioaccelsurfacefiltering.md)
-- [kIOAccelSurfaceFixedSource](eioaccelsurfacescalebits/kioaccelsurfacefixedsource.md)
+- [kIOAccelSurfaceBeamSyncSwaps](./eioaccelsurfacescalebits/kioaccelsurfacebeamsyncswaps.md)
+- [kIOAccelSurfaceFilterDefault](./eioaccelsurfacescalebits/kioaccelsurfacefilterdefault.md)
+- [kIOAccelSurfaceFilterLinear](./eioaccelsurfacescalebits/kioaccelsurfacefilterlinear.md)
+- [kIOAccelSurfaceFilterNone](./eioaccelsurfacescalebits/kioaccelsurfacefilternone.md)
+- [kIOAccelSurfaceFiltering](./eioaccelsurfacescalebits/kioaccelsurfacefiltering.md)
+- [kIOAccelSurfaceFixedSource](./eioaccelsurfacescalebits/kioaccelsurfacefixedsource.md)
 
 
 ---

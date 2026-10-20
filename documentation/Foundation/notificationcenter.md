@@ -1,7 +1,8 @@
 # NotificationCenter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A notification dispatch mechanism that enables the broadcast of information to registered observers.
 
@@ -20,75 +21,80 @@ A notification dispatch mechanism that enables the broadcast of information to r
 class NotificationCenter
 ```
 
+```objc
+@interface NSNotificationCenter : NSObject
+```
+
 #### Overview
 
 Callers register with a notification center to receive one or both of the following:
 
-- [`NSNotification`](nsnotification.md) objects, when working in Objective-C or with frameworks that only support [`NSNotification`](nsnotification.md). Objects register with a notification center to receive notifications ([`NSNotification`](nsnotification.md) objects) using the [`addObserver(_:selector:name:object:)`](notificationcenter/addobserver(_:selector:name:object:).md) or [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) methods, specifying a notification name and optionally a source object. When a caller adds itself as an observer, it specifies which notifications it should receive.
-- [`NotificationCenter.MainActorMessage`](notificationcenter/mainactormessage.md) and [`NotificationCenter.AsyncMessage`](notificationcenter/asyncmessage.md) instances for use with Swift code, providing strong typing, appropriate actor isolation, and a more idiomatic Swift experience. Callers register with the notification center using the various flavors of the `addObserver(of:for:using:)` method, specifying either a message type or a convenience [`NotificationCenter.MessageIdentifier`](notificationcenter/messageidentifier.md) to identify the notification messages to receive. See [`Notification center messages`](notification-center-messages.md) for more information about this API.
+- [`NSNotification`](./nsnotification.md) objects, when working in Objective-C or with frameworks that only support [`NSNotification`](./nsnotification.md). Objects register with a notification center to receive notifications ([`NSNotification`](./nsnotification.md) objects) using the [`addObserver(_:selector:name:object:)`](./notificationcenter/addobserver%28_,selector,name,object%29.md) or [`addObserver(forName:object:queue:using:)`](./notificationcenter/addobserver%28forname,object,queue,using%29.md) methods, specifying a notification name and optionally a source object. When a caller adds itself as an observer, it specifies which notifications it should receive.
+- [`NotificationCenter.MainActorMessage`](./notificationcenter/mainactormessage.md) and [`NotificationCenter.AsyncMessage`](./notificationcenter/asyncmessage.md) instances for use with Swift code, providing strong typing, appropriate actor isolation, and a more idiomatic Swift experience. Callers register with the notification center using the various flavors of the `addObserver(of:for:using:)` method, specifying either a message type or a convenience [`NotificationCenter.MessageIdentifier`](./notificationcenter/messageidentifier.md) to identify the notification messages to receive. See [Notification center messages](./notification-center-messages.md) for more information about this API.
 
 Callers may add observers for many different notifications, or even the same notification name or message type as produced by different source objects.
 
-Each running app has a [`default`](notificationcenter/default.md) notification center, and you can create new notification centers to organize communications in particular contexts.
+Each running app has a [`default`](./notificationcenter/default.md) notification center, and you can create new notification centers to organize communications in particular contexts.
 
-A notification center can deliver notifications only within a single program. On macOS, if you want to post a notification to other processes or receive notifications from other processes, use [`DistributedNotificationCenter`](distributednotificationcenter.md) instead.
+A notification center can deliver notifications only within a single program. On macOS, if you want to post a notification to other processes or receive notifications from other processes, use [`DistributedNotificationCenter`](./distributednotificationcenter.md) instead.
 
 ## Topics
 
 ### Getting the default notification center
-- [class var `default`: NotificationCenter](notificationcenter/default.md)
+- [class var `default`: NotificationCenter](./notificationcenter/default.md)
   The app’s default notification center.
 ### Adding and removing notification observers
-- [func addObserver(forName: NSNotification.Name?, object: Any?, queue: OperationQueue?, using: (Notification) -> Void) -> any NSObjectProtocol](notificationcenter/addobserver(forname:object:queue:using:).md)
+- [func addObserver(forName: NSNotification.Name?, object: Any?, queue: OperationQueue?, using: (Notification) -> Void) -> any NSObjectProtocol](./notificationcenter/addobserver%28forname,object,queue,using%29.md)
   Adds an entry to the notification center to receive notifications that passed to the provided block.
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](notificationcenter/addobserver(_:selector:name:object:).md)
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](./notificationcenter/addobserver%28_,selector,name,object%29.md)
   Adds an entry to the notification center to call the provided selector with the notification.
-- [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](notificationcenter/removeobserver(_:name:object:).md)
+- [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](./notificationcenter/removeobserver%28_,name,object%29.md)
   Removes matching entries from the notification center’s dispatch table.
-- [func removeObserver(Any)](notificationcenter/removeobserver(_:)-2yciv.md)
+- [func removeObserver(Any)](./notificationcenter/removeobserver%28_%29-2yciv.md)
   Removes all entries specifying an observer from the notification center’s dispatch table.
 ### Posting notifications
-- [func post(Notification)](notificationcenter/post(_:)-3x2st.md)
+- [func post(Notification)](./notificationcenter/post%28_%29-3x2st.md)
   Posts a given notification to the notification center.
-- [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](notificationcenter/post(name:object:userinfo:).md)
+- [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./notificationcenter/post%28name,object,userinfo%29.md)
   Creates a notification with a given name, sender, and information and posts it to the notification center.
-- [func post(name: NSNotification.Name, object: Any?)](notificationcenter/post(name:object:).md)
+- [func post(name: NSNotification.Name, object: Any?)](./notificationcenter/post%28name,object%29.md)
   Creates a notification with a given name and sender and posts it to the notification center.
 ### Receiving notifications as an asynchronous sequence
-- [func notifications(named: Notification.Name, object: (any AnyObject & Sendable)?) -> NotificationCenter.Notifications](notificationcenter/notifications(named:object:).md)
+- [func notifications(named: Notification.Name, object: (any AnyObject & Sendable)?) -> NotificationCenter.Notifications](./notificationcenter/notifications%28named,object%29.md)
   Returns an asynchronous sequence of notifications produced by this center for a given notification name and optional source object.
-- [NotificationCenter.Notifications](notificationcenter/notifications.md)
+- [NotificationCenter.Notifications](./notificationcenter/notifications.md)
   An asynchronous sequence of notifications generated by a notification center.
 ### Receiving notifications as a Combine publisher
-- [func publisher(for: Notification.Name, object: AnyObject?) -> NotificationCenter.Publisher](notificationcenter/publisher(for:object:).md)
+- [func publisher(for: Notification.Name, object: AnyObject?) -> NotificationCenter.Publisher](./notificationcenter/publisher%28for,object%29.md)
   Returns a publisher that emits events when broadcasting notifications.
-- [NotificationCenter.Publisher](notificationcenter/publisher.md)
+- [NotificationCenter.Publisher](./notificationcenter/publisher.md)
   A publisher that emits elements when broadcasting notifications.
 ### Using notification center with Swift actor isolation
-- [Notification center messages](notification-center-messages.md)
+- [Notification center messages](./notification-center-messages.md)
   Use Foundation’s notification center with Swift concurrency.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [DistributedNotificationCenter](distributednotificationcenter.md)
+- [DistributedNotificationCenter](./distributednotificationcenter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Notification](notification.md)
+### Notifications
+- [struct Notification](./notification.md)
   A container for information broadcast through a notification center to all registered observers.
-- [class NotificationQueue](notificationqueue.md)
+- [class NotificationQueue](./notificationqueue.md)
   A notification center buffer.
 
 

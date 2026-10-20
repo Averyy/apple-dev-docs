@@ -1,18 +1,19 @@
 # structure
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sparsity structure of the matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The sparsity structure of the matrix.
 var structure: SparseMatrixStructure
 ```
 
+```c
+SparseMatrixStructure structure;
+```
+
 ## See Also
 
-- [var data: UnsafeMutablePointer<Float>](sparsematrix_float/data.md)
+### Inspecting a Matrix’s Structure and Data
+- [var data: UnsafeMutablePointer<Float>](./data.md)
   The array of contiguous values in the nonzero blocks of the matrix.
 
 

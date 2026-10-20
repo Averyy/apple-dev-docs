@@ -1,7 +1,8 @@
 # perform(schedule:_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Submits a closure to the context’s queue for asynchronous execution.
 
@@ -11,7 +12,7 @@ Submits a closure to the context’s queue for asynchronous execution.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,18 +24,19 @@ nonisolated func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType =
 
 ## Parameters
 
-- `schedule`: The required execution schedule. For more information, see [`NSManagedObjectContext.ScheduledTaskType`](nsmanagedobjectcontext/scheduledtasktype.md).
+- `schedule`: The required execution schedule. For more information, see [`NSManagedObjectContext.ScheduledTaskType`](./scheduledtasktype.md).
 - `block`: The closure to perform.
 
 ## See Also
 
-- [func perform(() -> Void)](nsmanagedobjectcontext/perform(_:).md)
+### Performing block operations
+- [func perform(() -> Void)](./perform%28_%29.md)
   Asynchronously performs the specified closure on the context’s queue.
-- [func performAndWait(() -> Void)](nsmanagedobjectcontext/performandwait(_:)-ypye.md)
+- [func performAndWait(() -> Void)](./performandwait%28_%29-ypye.md)
   Synchronously performs the specified closure on the context’s queue.
-- [func performAndWait<T>(() throws -> T) rethrows -> T](nsmanagedobjectcontext/performandwait(_:)-6aaf1.md)
+- [func performAndWait<T>(() throws -> T) rethrows -> T](./performandwait%28_%29-6aaf1.md)
   Submits a closure to the context’s queue for synchronous execution.
-- [NSManagedObjectContext.ScheduledTaskType](nsmanagedobjectcontext/scheduledtasktype.md)
+- [NSManagedObjectContext.ScheduledTaskType](./scheduledtasktype.md)
   The different types of scheduled tasks.
 
 

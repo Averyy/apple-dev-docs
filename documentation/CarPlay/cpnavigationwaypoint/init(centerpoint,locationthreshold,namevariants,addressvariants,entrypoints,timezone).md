@@ -1,7 +1,8 @@
 # init(centerPoint:locationThreshold:nameVariants:addressVariants:entryPoints:timeZone:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraPosition.left
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Left camera.
 

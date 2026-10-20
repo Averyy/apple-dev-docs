@@ -1,7 +1,8 @@
 # isIndexedBySpotlight
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Core Data adds the property’s value to the Core Spotlight index.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether Core Data adds the property’s value to 
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether Core Data adds the property’s value to 
 var isIndexedBySpotlight: Bool { get set }
 ```
 
+```objc
+@property (getter=isIndexedBySpotlight) BOOL indexedBySpotlight;
+```
+
 #### Discussion
 
-> ❗ **Important**:  If you set this property to [`true`](https://developer.apple.com/documentation/swift/true) for a property description that describes a relationship, you must override [`attributeSet(for:)`](nscoredatacorespotlightdelegate/attributeset(for:).md) in your Core Spotlight delegate and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
+> ❗ **Important**:  If you set this property to [`true`](../../Swift/true.md) for a property description that describes a relationship, you must override [`attributeSet(for:)`](../nscoredatacorespotlightdelegate/attributeset%28for%29.md) in your Core Spotlight delegate and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
 
 You can also set this property using the Index in Spotlight attribute in the Attributes inspector of the Core Data model editor.
 
 ## See Also
 
-- [var isStoredInExternalRecord: Bool](nspropertydescription/isstoredinexternalrecord.md)
+### Specifying Spotlight Support
+- [var isStoredInExternalRecord: Bool](./isstoredinexternalrecord.md)
   A Boolean value that indicates whether to write the property’s data in an external record file that corresponds to the managed object.
 
 

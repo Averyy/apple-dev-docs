@@ -1,6 +1,7 @@
 # Migrating your app’s files to its App Sandbox container
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Simplify your app’s access to documents and supporting files.
 
@@ -10,13 +11,13 @@ The first time someone uses an app that uses the App Sandbox entitlement, macOS 
 
 If you are adopting App Sandbox in an existing app, you can configure your app to migrate existing documents, scripts, and supporting files from locations in the user’s home folder to the app’s container.
 
-##### Create a Container Migration Manifest
+##### Create a container migration manifest
 
 The app’s container migration manifest tells macOS which files to move to the app’s container when someone launches the app for the first time with the App Sandbox entitlement.
 
 In Xcode, create a new file of type “Property List”, name it `container-migration.plist`, and add it to your app’s target.
 
-##### Migrate Existing Files to the Apps Container
+##### Migrate existing files to the app’s container
 
 Under the root of the `container-migration.plist` file, create a key called `Move`. Change its type to array. For each file or folder you need to move into the app’s container, add one of these two elements to the array:
 
@@ -35,17 +36,17 @@ The strings you add to the can contain the following variables:
 
 In source paths, these variables expand relative to the user’s home folder. In destination paths, they expand relative to the top level of the app’s container.
 
-##### Migrate User Scripts to the Standard Location
+##### Migrate user scripts to the standard location
 
 If your app needs access to user scripts, add the `MigrateScriptsForApplication` key to the `container-migration.plist` file. The value for this key is a string that represents a folder name relative to the folder `Library/Scripts/Applications/` in the user’s home folder, or an array of strings representing multiple folder names. macOS moves these folders to `~/Library/Application Scripts/<your app’s bundle ID>`.
 
-##### Create Symbolic Links to Items Outside the Apps Container
+##### Create symbolic links to items outside the app’s container
 
 If your app needs symbolic links to files or folders outside the container, add the key `Symlink` to the `container-migration.plist` file. The value for this key is an array of strings, representing paths to files or folders on the file system. The operating system creates symbolic links to those files and folders when it creates the app’s container.
 
 > ❗ **Important**:  Without the appropriate permissions, your app can’t access files and folders outside of its container, even if there’s a symbolic link inside the container. You may need to apply a temporary entitlement to your app to gain the correct access.
 
-##### Revert the Container Migration for Testing
+##### Revert the container migration for testing
 
 To test that your app’s container migration works correctly, delete the following files and folders:
 

@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the entries of a sequence to the end of the history view.
 

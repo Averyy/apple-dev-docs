@@ -1,7 +1,8 @@
 # setAllMediaPlaybackSuspended(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes whether the webpage is suspending playback of all media in the page.
 
@@ -15,7 +16,15 @@ Changes whether the webpage is suspending playback of all media in the page.
 ## Declaration
 
 ```swift
+func setAllMediaPlaybackSuspended(_ suspended: Bool, completionHandler: (@MainActor @Sendable () -> Void)? = nil)
+```
+
+```swift
 func setAllMediaPlaybackSuspended(_ suspended: Bool) async
+```
+
+```objc
+- (void) setAllMediaPlaybackSuspended:(BOOL) suspended completionHandler:(void (^)(void)) completionHandler;
 ```
 
 #### Discussion
@@ -29,13 +38,14 @@ Pass `true` to pause all media the web view is playing. Neither the user nor the
 
 ## See Also
 
-- [func pauseAllMediaPlayback(completionHandler: (() -> Void)?)](wkwebview/pauseallmediaplayback(completionhandler:).md)
+### Interacting with media
+- [func pauseAllMediaPlayback(completionHandler: (() -> Void)?)](./pauseallmediaplayback%28completionhandler%29.md)
   Pauses playback of all media in the web view.
-- [func requestMediaPlaybackState(completionHandler: (WKMediaPlaybackState) -> Void)](wkwebview/requestmediaplaybackstate(completionhandler:).md)
+- [func requestMediaPlaybackState(completionHandler: (WKMediaPlaybackState) -> Void)](./requestmediaplaybackstate%28completionhandler%29.md)
   Requests the playback status of media in the web view.
-- [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](wkwebview/closeallmediapresentations(completionhandler:).md)
+- [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](./closeallmediapresentations%28completionhandler%29.md)
   Closes all media the web view is presenting, including picture-in-picture video and fullscreen video.
-- [enum WKMediaPlaybackState](wkmediaplaybackstate.md)
+- [enum WKMediaPlaybackState](../wkmediaplaybackstate.md)
   An enumeration that describes whether an audio or video presentation is playing, paused, or suspended.
 
 

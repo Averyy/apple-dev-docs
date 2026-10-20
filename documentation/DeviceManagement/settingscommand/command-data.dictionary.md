@@ -1,7 +1,8 @@
 # SettingsCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to configure settings on a device.
 
@@ -16,20 +17,24 @@ The command to configure settings on a device.
 
 ## Declaration
 
-```swift
+```
 object SettingsCommand.Command
 ```
 
 ## Topics
 
 ### Objects
-- [object SettingsCommand.Command.Settings](settingscommand/command-data.dictionary/settings-data.dictionary.md)
+- [object SettingsCommand.Command.Settings](./command-data.dictionary/settings-data.dictionary.md)
   An array of dictionaries that contains the settings.
 
 ## Properties
 
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `Settings`
 - `Settings` (SettingsCommand.Command.Settings) *(required)*: An array of dictionaries that contains the settings.
 
 

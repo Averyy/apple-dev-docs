@@ -1,7 +1,8 @@
 # init(question:label:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance.
 
@@ -26,9 +27,10 @@ Creates a new instance.
 
 ## See Also
 
-- [var body: some View](communicationlimitsbutton/body.md)
+### Creating a view
+- [var body: some View](./body.md)
   The body of the view.
-- [let question: PermissionQuestion<CommunicationTopic>](communicationlimitsbutton/question.md)
+- [let question: PermissionQuestion<CommunicationTopic>](./question.md)
   The question to ask a parent or guardian about making an exception to their child’s communication limits.
 
 

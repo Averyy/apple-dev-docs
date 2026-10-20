@@ -1,7 +1,8 @@
 # keyPathsAndRelativeValues(forViewerOffset:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For a given set of offset values, returns the view properties (and corresponding values) to update.
 
@@ -9,13 +10,17 @@ For a given set of offset values, returns the view properties (and corresponding
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func keyPathsAndRelativeValues(forViewerOffset viewerOffset: UIOffset) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) keyPathsAndRelativeValuesForViewerOffset:(UIOffset) viewerOffset;
 ```
 
 #### Return Value

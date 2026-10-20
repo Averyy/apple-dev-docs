@@ -1,7 +1,8 @@
 # preparePreviewOfSearchableItem(identifier:queryString:completionHandler:)
 
 **Framework**: Quick Look UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the preview for a file by using the data from Spotlight’s searchable item.
 
@@ -11,7 +12,15 @@ Prepares the preview for a file by using the data from Spotlight’s searchable 
 ## Declaration
 
 ```swift
+optional func preparePreviewOfSearchableItem(identifier: String, queryString: String?, completionHandler handler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 optional func preparePreviewOfSearchableItem(identifier: String, queryString: String?) async throws
+```
+
+```objc
+- (void) preparePreviewOfSearchableItemWithIdentifier:(NSString *) identifier queryString:(NSString *) queryString completionHandler:(void (^)(NSError *)) handler;
 ```
 
 #### Discussion
@@ -26,9 +35,10 @@ The operating system calls this method only once from the main thread before it 
 
 ## See Also
 
-- [func preparePreviewOfFile(at: URL, completionHandler: ((any Error)?) -> Void)](qlpreviewingcontroller/preparepreviewoffile(at:completionhandler:).md)
+### Instance Methods
+- [func preparePreviewOfFile(at: URL, completionHandler: ((any Error)?) -> Void)](./preparepreviewoffile%28at,completionhandler%29.md)
   Prepares the preview of a file at the specified file’s URL.
-- [func providePreview(for: QLFilePreviewRequest, completionHandler: (QLPreviewReply?, (any Error)?) -> Void)](qlpreviewingcontroller/providepreview(for:completionhandler:).md)
+- [func providePreview(for: QLFilePreviewRequest, completionHandler: (QLPreviewReply?, (any Error)?) -> Void)](./providepreview%28for,completionhandler%29.md)
   Prepares the preview of a file identified within a file preview request.
 
 

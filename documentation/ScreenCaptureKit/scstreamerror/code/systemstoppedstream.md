@@ -1,7 +1,8 @@
 # SCStreamError.Code.systemStoppedStream
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error message that indicates the system stopped the stream.
 
@@ -19,27 +20,32 @@ An error message that indicates the system stopped the stream.
 case systemStoppedStream
 ```
 
+```c
+SCStreamErrorSystemStoppedStream
+```
+
 ## See Also
 
-- [SCStreamError.Code.attemptToStartStreamState](scstreamerror/code/attempttostartstreamstate.md)
+### Stream management
+- [SCStreamError.Code.attemptToStartStreamState](./attempttostartstreamstate.md)
   An error message that indicates a stream is already running or doesn’t exist when trying to start a stream.
-- [SCStreamError.Code.attemptToStopStreamState](scstreamerror/code/attempttostopstreamstate.md)
+- [SCStreamError.Code.attemptToStopStreamState](./attempttostopstreamstate.md)
   An error message that indicates a stream is already stopped or doesn’t exist when trying to stop a stream.
-- [SCStreamError.Code.attemptToUpdateFilterState](scstreamerror/code/attempttoupdatefilterstate.md)
+- [SCStreamError.Code.attemptToUpdateFilterState](./attempttoupdatefilterstate.md)
   An error message that indicates a stream couldn’t update its content filter.
-- [SCStreamError.Code.attemptToConfigState](scstreamerror/code/attempttoconfigstate.md)
+- [SCStreamError.Code.attemptToConfigState](./attempttoconfigstate.md)
   An error message that indicates a stream couldn’t update its configuration.
-- [SCStreamError.Code.failedToStart](scstreamerror/code/failedtostart.md)
+- [SCStreamError.Code.failedToStart](./failedtostart.md)
   An error message that indicates a stream failed to start.
-- [SCStreamError.Code.removingStream](scstreamerror/code/removingstream.md)
+- [SCStreamError.Code.removingStream](./removingstream.md)
   An error message that indicates a stream wasn’t removed.
-- [SCStreamError.Code.failedToStartAudioCapture](scstreamerror/code/failedtostartaudiocapture.md)
+- [SCStreamError.Code.failedToStartAudioCapture](./failedtostartaudiocapture.md)
   An error message that indicates an audio stream failed to start.
-- [SCStreamError.Code.failedToStopAudioCapture](scstreamerror/code/failedtostopaudiocapture.md)
+- [SCStreamError.Code.failedToStopAudioCapture](./failedtostopaudiocapture.md)
   An error message that indicates an audio stream failed to stop.
-- [SCStreamError.Code.failedToStartMicrophoneCapture](scstreamerror/code/failedtostartmicrophonecapture.md)
+- [SCStreamError.Code.failedToStartMicrophoneCapture](./failedtostartmicrophonecapture.md)
   An error message that indicates microphone capture failed to start.
-- [SCStreamError.Code.internalError](scstreamerror/code/internalerror.md)
+- [SCStreamError.Code.internalError](./internalerror.md)
   An error message that indicates a stream can’t start due to a failure in ScreenCaptureKit’s internals.
 
 

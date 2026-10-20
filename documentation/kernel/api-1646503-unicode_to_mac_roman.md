@@ -1,14 +1,15 @@
 # unicode_to_mac_roman
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 int unicode_to_mac_roman(uint16_t *uni_str, u_int32_t unicodeChars, uint8_t hfs_str[32]);
 ```
 

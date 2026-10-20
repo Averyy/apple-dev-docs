@@ -1,7 +1,8 @@
 # ExpressibleByStringInterpolation
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized by string interpolation with a string literal that includes expressions.
 
@@ -51,36 +52,37 @@ For more information, see the `StringInterpolationProtocol` documentation.
 ## Topics
 
 ### Associated Types
-- [associatedtype StringInterpolation : StringInterpolationProtocol = DefaultStringInterpolation](expressiblebystringinterpolation/stringinterpolation.md)
+- [associatedtype StringInterpolation : StringInterpolationProtocol = DefaultStringInterpolation](./expressiblebystringinterpolation/stringinterpolation.md)
   The type each segment of a string literal containing interpolations should be appended to.
 ### Initializers
-- [init(stringInterpolation: Self.StringInterpolation)](expressiblebystringinterpolation/init(stringinterpolation:).md)
+- [init(stringInterpolation: Self.StringInterpolation)](./expressiblebystringinterpolation/init%28stringinterpolation%29.md)
   Creates an instance from a string interpolation.
 
 ## Relationships
 
 ### Inherits From
-- [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](./expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](./expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
 ### Inherited By
-- [StringProtocol](stringprotocol.md)
+- [StringProtocol](./stringprotocol.md)
 ### Conforming Types
-- [String](string.md)
-- [String.LocalizationValue](string/localizationvalue.md)
-- [Substring](substring.md)
+- [String](./string.md)
+- [String.LocalizationValue](./string/localizationvalue.md)
+- [Substring](./substring.md)
 
 ## See Also
 
-- [protocol ExpressibleByStringLiteral](expressiblebystringliteral.md)
+### String Literals
+- [protocol ExpressibleByStringLiteral](./expressiblebystringliteral.md)
   A type that can be initialized with a string literal.
-- [protocol ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
+- [protocol ExpressibleByExtendedGraphemeClusterLiteral](./expressiblebyextendedgraphemeclusterliteral.md)
   A type that can be initialized with a string literal containing a single extended grapheme cluster.
-- [protocol ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
+- [protocol ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
   A type that can be initialized with a string literal containing a single Unicode scalar value.
-- [protocol StringInterpolationProtocol](stringinterpolationprotocol.md)
+- [protocol StringInterpolationProtocol](./stringinterpolationprotocol.md)
   Represents the contents of a string literal with interpolations while it’s being built up.
-- [struct DefaultStringInterpolation](defaultstringinterpolation.md)
+- [struct DefaultStringInterpolation](./defaultstringinterpolation.md)
   Represents a string literal with interpolations while it’s being built up.
 
 

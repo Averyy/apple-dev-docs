@@ -1,21 +1,22 @@
 # ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion.Data](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptiongroupversion-data.dictionary/data-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion.Data](./subscriptiongroupversion-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

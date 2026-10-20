@@ -1,7 +1,8 @@
 # init(attachment:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new NVM Express controller configuration with the storage device attachment you provide.
 
@@ -14,13 +15,18 @@ Creates a new NVM Express controller configuration with the storage device attac
 init(attachment: VZStorageDeviceAttachment)
 ```
 
+```objc
+- (instancetype) initWithAttachment:(VZStorageDeviceAttachment *) attachment;
+```
+
 ## Parameters
 
 - `attachment`: The storage device attachment. This defines how the virtualized device operates on the host side.
 
 ## See Also
 
-- [class VZDiskImageStorageDeviceAttachment](vzdiskimagestoragedeviceattachment.md)
+### Related Documentation
+- [class VZDiskImageStorageDeviceAttachment](../vzdiskimagestoragedeviceattachment.md)
   A device that stores content in a disk image.
 
 

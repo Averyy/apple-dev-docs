@@ -1,7 +1,8 @@
 # OpenInMaps
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A style that displays a caption to open in Maps.
 
@@ -10,19 +11,20 @@ A style that displays a caption to open in Maps.
 
 ## Declaration
 
-```swift
+```
 readonly OpenInMaps: "openInMaps";
 ```
 
 ## See Also
 
-- [Automatic](placeselectionaccessorystyle/automatic.md)
+### Style values
+- [Automatic](./automatic.md)
   A style that MapKit automatically chooses based on the size of the map view.
-- [Callout](placeselectionaccessorystyle/callout.md)
+- [Callout](./callout.md)
   A style that selects between a full and compact presentation based on the map’s size.
-- [CompactCallout](placeselectionaccessorystyle/compactcallout.md)
+- [CompactCallout](./compactcallout.md)
   A style that displays a compact, space-saving presentation.
-- [FullCallout](placeselectionaccessorystyle/fullcallout.md)
+- [FullCallout](./fullcallout.md)
   A style that displays a rich, detailed presentation.
 
 

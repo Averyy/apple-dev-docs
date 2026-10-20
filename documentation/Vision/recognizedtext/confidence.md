@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A normalized confidence score for the text recognition result.
 
@@ -21,7 +22,8 @@ var confidence: Float { get }
 
 ## See Also
 
-- [var string: String](recognizedtext/string.md)
+### Inspecting the recognized text
+- [var string: String](./string.md)
   The top candidate for recognized text.
 
 

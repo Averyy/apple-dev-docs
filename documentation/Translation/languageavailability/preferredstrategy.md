@@ -1,7 +1,8 @@
 # preferredStrategy
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred strategy of translation to check availability for.
 
@@ -19,7 +20,7 @@ var preferredStrategy: TranslationSession.Strategy { get }
 
 #### Discussion
 
-Set this property to determine which translation models the framework considers when checking language availability. [`lowLatency`](translationsession/strategy/lowlatency.md) checks for traditional translation models that work on all devices. [`highFidelity`](translationsession/strategy/highfidelity.md) checks for Apple Intelligence models that provide more fluent translations. When Apple Intelligence is enabled, these models are already downloaded, so translation is immediately available without prompting the person to download languages.
+Set this property to determine which translation models the framework considers when checking language availability. [`lowLatency`](../translationsession/strategy/lowlatency.md) checks for traditional translation models that work on all devices. [`highFidelity`](../translationsession/strategy/highfidelity.md) checks for Apple Intelligence models that provide more fluent translations. When Apple Intelligence is enabled, these models are already downloaded, so translation is immediately available without prompting the person to download languages.
 
 
 ---

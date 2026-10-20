@@ -1,7 +1,8 @@
 # NEVPNIKEv2EncryptionAlgorithm.algorithmAES256GCM
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Advanced Encryption Standard 256-bit Galois/Counter Mode (AES256GCM).
 
@@ -19,15 +20,20 @@ Advanced Encryption Standard 256-bit Galois/Counter Mode (AES256GCM).
 case algorithmAES256GCM
 ```
 
+```c
+NEVPNIKEv2EncryptionAlgorithmAES256GCM
+```
+
 ## See Also
 
-- [NEVPNIKEv2EncryptionAlgorithm.algorithmAES128](nevpnikev2encryptionalgorithm/algorithmaes128.md)
+### Encryption algorithms
+- [NEVPNIKEv2EncryptionAlgorithm.algorithmAES128](./algorithmaes128.md)
   Advanced Encryption Standard 256-bit (AES256).
-- [NEVPNIKEv2EncryptionAlgorithm.algorithmAES256](nevpnikev2encryptionalgorithm/algorithmaes256.md)
+- [NEVPNIKEv2EncryptionAlgorithm.algorithmAES256](./algorithmaes256.md)
   Advanced Encryption Standard 256 bit (AES256).
-- [NEVPNIKEv2EncryptionAlgorithm.algorithmAES128GCM](nevpnikev2encryptionalgorithm/algorithmaes128gcm.md)
+- [NEVPNIKEv2EncryptionAlgorithm.algorithmAES128GCM](./algorithmaes128gcm.md)
   Advanced Encryption Standard 128-bit Galois/Counter Mode (AES128GCM).
-- [NEVPNIKEv2EncryptionAlgorithm.algorithmChaCha20Poly1305](nevpnikev2encryptionalgorithm/algorithmchacha20poly1305.md)
+- [NEVPNIKEv2EncryptionAlgorithm.algorithmChaCha20Poly1305](./algorithmchacha20poly1305.md)
   ChaCha20 and Poly1305 (ChaCha20Poly1305).
 
 

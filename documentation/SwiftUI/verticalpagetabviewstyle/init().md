@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - watchOS 10.0+
@@ -15,9 +16,10 @@ init()
 
 ## See Also
 
-- [init(transitionStyle: VerticalPageTabViewStyle.TransitionStyle)](verticalpagetabviewstyle/init(transitionstyle:).md)
+### Creating the tab view style
+- [init(transitionStyle: VerticalPageTabViewStyle.TransitionStyle)](./init%28transitionstyle%29.md)
   Creates a new `VerticalPageTabViewStyle` with a transition style.
-- [VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle.md)
+- [VerticalPageTabViewStyle.TransitionStyle](./transitionstyle.md)
   A transition style used between tabs.
 
 

@@ -1,12 +1,13 @@
 # addCursorRect(_:cursor:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Establishes  the cursor to be used when the mouse pointer lies within a specified region.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Establishes  the cursor to be used when the mouse pointer lies within a specifie
 func addCursorRect(_ rect: NSRect, cursor object: NSCursor)
 ```
 
+```objc
+- (void) addCursorRect:(NSRect) rect cursor:(NSCursor *) object;
+```
+
 #### Discussion
 
 Cursor rectangles aren’t subject to clipping by superviews, nor are they intended for use with rotated views. You should explicitly confine a cursor rectangle to the view’s visible rectangle to prevent improper behavior.
 
-This method is intended to be invoked only by the [`resetCursorRects()`](nsview/resetcursorrects().md) method. If invoked in any other way, the resulting cursor rectangle will be discarded the next time the view’s cursor rectangles are rebuilt.
+This method is intended to be invoked only by the [`resetCursorRects()`](./resetcursorrects%28%29.md) method. If invoked in any other way, the resulting cursor rectangle will be discarded the next time the view’s cursor rectangles are rebuilt.
 
 ## Parameters
 
@@ -27,13 +32,15 @@ This method is intended to be invoked only by the [`resetCursorRects()`](nsview/
 
 ## See Also
 
-- [var visibleRect: NSRect](nsview/visiblerect.md)
+### Related Documentation
+- [var visibleRect: NSRect](./visiblerect.md)
   The portion of the view that isn’t clipped by its superviews.
-- [func removeCursorRect(NSRect, cursor: NSCursor)](nsview/removecursorrect(_:cursor:).md)
+### Responding to Cursor Movements
+- [func removeCursorRect(NSRect, cursor: NSCursor)](./removecursorrect%28_,cursor%29.md)
   Completely removes a cursor rectangle from the view.
-- [func discardCursorRects()](nsview/discardcursorrects.md)
-  Invalidates all cursor rectangles set up using [`addCursorRect(_:cursor:)`](nsview/addcursorrect(_:cursor:).md).
-- [func resetCursorRects()](nsview/resetcursorrects.md)
+- [func discardCursorRects()](./discardcursorrects%28%29.md)
+  Invalidates all cursor rectangles set up using [`addCursorRect(_:cursor:)`](./addcursorrect%28_,cursor%29.md).
+- [func resetCursorRects()](./resetcursorrects%28%29.md)
   Overridden by subclasses to define their default cursor rectangles.
 
 

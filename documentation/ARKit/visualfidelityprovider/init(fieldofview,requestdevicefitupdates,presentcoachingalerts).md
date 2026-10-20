@@ -1,7 +1,8 @@
 # init(fieldOfView:requestDeviceFitUpdates:presentCoachingAlerts:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a visual fidelity data provider.
 

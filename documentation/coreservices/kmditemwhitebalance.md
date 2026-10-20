@@ -1,7 +1,8 @@
 # kMDItemWhiteBalance
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The white balance setting used to acquire the document contents. Possible values are 0 (auto white balance) and 1 (manual). A CFNumber.
 
@@ -12,6 +13,10 @@ The white balance setting used to acquire the document contents. Possible values
 
 ```swift
 let kMDItemWhiteBalance: CFString!
+```
+
+```c
+const CFStringRef kMDItemWhiteBalance;
 ```
 
 

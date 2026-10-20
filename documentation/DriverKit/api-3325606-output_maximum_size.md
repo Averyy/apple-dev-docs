@@ -1,19 +1,21 @@
 # Output Maximum Size
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 Constant to denote a variable length structure argument to IOUserClient.
 
 ## Topics
 
 ### Getting the Maximum Size
-- [kIOUserClientVariableStructureSize](kiouserclientvariablestructuresize.md)
+- [kIOUserClientVariableStructureSize](./kiouserclientvariablestructuresize.md)
 
 ## See Also
 
-- [IOUserClientScalarArray](iouserclientscalararray.md)
-- [Scalar Array Sizes](3325605-scalar_array_sizes.md)
-- [Version Information](3325604-version_information.md)
+### Getting Type Information
+- [IOUserClientScalarArray](./iouserclientscalararray.md)
+- [Scalar Array Sizes](./api-3325605-scalar_array_sizes.md)
+- [Version Information](./api-3325604-version_information.md)
 
 
 ---

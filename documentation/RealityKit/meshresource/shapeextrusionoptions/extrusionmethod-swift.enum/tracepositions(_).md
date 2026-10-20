@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.ExtrusionMethod.tracePositions(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Extrudes the shape by sweeping it along a piecewise-linear curve.
 
@@ -40,7 +41,7 @@ var extrusionOptions = ShapeExtrusionOptions()
 extrusionOptions.extrusionMethod = .tracePositions(positions)
 ```
 
-![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-tracePositions-red.jpg)
+![](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-tracePositions-red.jpg)
 
 
 ---

@@ -1,7 +1,8 @@
 # parentID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The parent ID attribute.
 
@@ -14,9 +15,14 @@ The parent ID attribute.
 static var parentID: FSItem.Attribute { get }
 ```
 
+```c
+FSItemAttributeParentID
+```
+
 ## See Also
 
-- [static var fileID: FSItem.Attribute](fsitem/attribute/fileid.md)
+### Working with identifier attributes
+- [static var fileID: FSItem.Attribute](./fileid.md)
   The file ID attribute.
 
 

@@ -1,7 +1,8 @@
 # cinematicVideoMetadataFormatDescription
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The format description for Cinematic video timed metadata sample buffers.
 
@@ -18,9 +19,13 @@ The format description for Cinematic video timed metadata sample buffers.
 class var cinematicVideoMetadataFormatDescription: CMFormatDescription? { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, nullable) CMFormatDescriptionRef cinematicVideoMetadataFormatDescription;
+```
+
 #### Discussion
 
-Use this format description when creating your [`AVAssetWriterInput`](avassetwriterinput.md) for the Cinematic video timed metadata track.
+Use this format description when creating your [`AVAssetWriterInput`](../avassetwriterinput.md) for the Cinematic video timed metadata track.
 
 
 ---

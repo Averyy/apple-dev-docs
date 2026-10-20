@@ -1,7 +1,8 @@
 # MediaDeviceExtension
 
 **Framework**: Media Device  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the requirements of a media device extension that discovers, activates, and plays media on a remote device.
 
@@ -19,7 +20,7 @@ protocol MediaDeviceExtension : AppExtension
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](./creating-a-media-device-extension.md)
 
 #### Overview
 
@@ -30,52 +31,53 @@ The display name of the extension is sourced from the value of the `UTTypeDescri
 ## Topics
 
 ### Instance Properties
-- [var protocolType: UTType](mediadeviceextension/protocoltype.md)
+- [var protocolType: UTType](./mediadeviceextension/protocoltype.md)
   The communication protocol that this extension implements.
-- [var supportsSimultaneousSessions: Bool](mediadeviceextension/supportssimultaneoussessions.md)
+- [var supportsSimultaneousSessions: Bool](./mediadeviceextension/supportssimultaneoussessions.md)
   Indicates whether the extension supports handling simultaneous media sessions via `MediaOutputSession`.
 ### Instance Methods
-- [func activateDevice(MediaOutputDevice, session: MediaOutputSession, for: MediaOutputDevice.Capabilities)](mediadeviceextension/activatedevice(_:session:for:).md)
+- [func activateDevice(MediaOutputDevice, session: MediaOutputSession, for: MediaOutputDevice.Capabilities)](./mediadeviceextension/activatedevice%28_,session,for%29.md)
   Called when the user activates a device via a user interface.
-- [func changeVolume(by: Int, for: MediaOutputDevice)](mediadeviceextension/changevolume(by:for:).md)
+- [func changeVolume(by: Int, for: MediaOutputDevice)](./mediadeviceextension/changevolume%28by,for%29.md)
   Changes the volume by a specified number of increments for the specified device.
-- [func connectUsingPairingCode(String?, to: MediaOutputDevice, session: MediaOutputSession)](mediadeviceextension/connectusingpairingcode(_:to:session:).md)
+- [func connectUsingPairingCode(String?, to: MediaOutputDevice, session: MediaOutputSession)](./mediadeviceextension/connectusingpairingcode%28_,to,session%29.md)
   Called after the user has input their authorization into a user interface. Use the Security framework’s keychain to store any derived key material.
-- [func deactivateDevice(MediaOutputDevice, session: MediaOutputSession)](mediadeviceextension/deactivatedevice(_:session:).md)
+- [func deactivateDevice(MediaOutputDevice, session: MediaOutputSession)](./mediadeviceextension/deactivatedevice%28_,session%29.md)
   Called when the user deactivates a device via a user interface.
-- [func isDeviceMuted(MediaOutputDevice) -> Bool](mediadeviceextension/isdevicemuted(_:).md)
+- [func isDeviceMuted(MediaOutputDevice) -> Bool](./mediadeviceextension/isdevicemuted%28_%29.md)
   Gets the current mute state for the specified device.
-- [func muteDevice(MediaOutputDevice)](mediadeviceextension/mutedevice(_:).md)
+- [func muteDevice(MediaOutputDevice)](./mediadeviceextension/mutedevice%28_%29.md)
   Mutes the audio output for the specified device.
-- [func sendData(Data, toApplication: String, session: MediaOutputSession)](mediadeviceextension/senddata(_:toapplication:session:).md)
+- [func sendData(Data, toApplication: String, session: MediaOutputSession)](./mediadeviceextension/senddata%28_,toapplication,session%29.md)
   Called when an app sends data to a remote application.
-- [func setVolume(Float, for: MediaOutputDevice)](mediadeviceextension/setvolume(_:for:).md)
+- [func setVolume(Float, for: MediaOutputDevice)](./mediadeviceextension/setvolume%28_,for%29.md)
   Sets the volume level for the specified device.
-- [func startDeviceDiscovery()](mediadeviceextension/startdevicediscovery.md)
+- [func startDeviceDiscovery()](./mediadeviceextension/startdevicediscovery%28%29.md)
   Called when a user action requires discovered devices to be displayed.
-- [func startSession(MediaOutputSession, identifier: String?, url: URL)](mediadeviceextension/startsession(_:identifier:url:).md)
+- [func startSession(MediaOutputSession, identifier: String?, url: URL)](./mediadeviceextension/startsession%28_,identifier,url%29.md)
   Called when media playback or a remote application should be started on a remote device.
-- [func stopDeviceDiscovery()](mediadeviceextension/stopdevicediscovery.md)
+- [func stopDeviceDiscovery()](./mediadeviceextension/stopdevicediscovery%28%29.md)
   Called when the user dismisses the UI element that is showing devices.
-- [func stopSession(MediaOutputSession)](mediadeviceextension/stopsession(_:).md)
+- [func stopSession(MediaOutputSession)](./mediadeviceextension/stopsession%28_%29.md)
   Called when the application stops media playback.
-- [func volume(for: MediaOutputDevice) -> Float](mediadeviceextension/volume(for:).md)
+- [func volume(for: MediaOutputDevice) -> Float](./mediadeviceextension/volume%28for%29.md)
   Gets the current volume level for the specified device.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 ### Inherited By
-- [RealtimeSampleHandling](realtimesamplehandling.md)
+- [RealtimeSampleHandling](./realtimesamplehandling.md)
 
 ## See Also
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+### Essentials
+- [Creating a media device extension](./creating-a-media-device-extension.md)
   Provide a way for people to find, connect to, and control your media device by adding a device extension in your iOS app.
-- [Routing media to third-party devices](../avsystemrouting/routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](../AVSystemRouting/routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
-- [protocol MediaDeviceExtensionConfiguration](mediadeviceextensionconfiguration.md)
+- [protocol MediaDeviceExtensionConfiguration](./mediadeviceextensionconfiguration.md)
   Configuration for the app extension.
 
 

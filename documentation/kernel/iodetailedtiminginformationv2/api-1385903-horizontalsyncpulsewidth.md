@@ -1,7 +1,8 @@
 # horizontalSyncPulseWidth
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Width of horizontal sync.
 
@@ -10,7 +11,7 @@ Width of horizontal sync.
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalSyncPulseWidth;
 ```
 

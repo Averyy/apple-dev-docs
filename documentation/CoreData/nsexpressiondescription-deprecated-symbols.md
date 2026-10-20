@@ -1,13 +1,14 @@
 # Deprecated Symbols
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated Properties
-- [var expressionResultType: NSAttributeType](nsexpressiondescription/expressionresulttype.md)
+- [var expressionResultType: NSAttributeType](./nsexpressiondescription/expressionresulttype.md)
   The attribute type of the expression’s result.
 
 

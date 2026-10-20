@@ -1,7 +1,8 @@
 # EFTYPE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Inappropriate file type or format.
 

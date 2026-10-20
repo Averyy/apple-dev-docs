@@ -1,7 +1,8 @@
 # reportID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The report ID for the report that contains this element.
 

@@ -1,14 +1,15 @@
 # ElectricityGuidance.Service
 
 **Framework**: EnergyKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface for obtaining electricity guidance data.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -20,18 +21,19 @@ final class Service
 
 ### Obtaining guidance data
 - [func guidance(using: ElectricityGuidance.Query, at: UUID) -> some AsyncSequence<ElectricityGuidance, any Error>
-](electricityguidance/service/guidance(using:at:).md)
+](./service/guidance%28using,at%29.md)
   Returns an async sequence of electricity guidance forecasts for the requested venue with cost information incorporated, if available.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let sharedService: ElectricityGuidance.Service](electricityguidance/sharedservice.md)
+### Getting the electricity guidance data
+- [static let sharedService: ElectricityGuidance.Service](./sharedservice.md)
   A single, shared guidance service object.
 
 

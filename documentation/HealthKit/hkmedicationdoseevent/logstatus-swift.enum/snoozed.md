@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus.snoozed
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person snoozes a scheduled medication notification.
 
@@ -17,6 +18,10 @@ The person snoozes a scheduled medication notification.
 
 ```swift
 case snoozed
+```
+
+```c
+HKMedicationDoseEventLogStatusSnoozed
 ```
 
 

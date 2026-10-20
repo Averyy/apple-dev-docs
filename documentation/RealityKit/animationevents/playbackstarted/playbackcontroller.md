@@ -1,7 +1,8 @@
 # playbackController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation playback controller managing the animation that triggered the event.
 

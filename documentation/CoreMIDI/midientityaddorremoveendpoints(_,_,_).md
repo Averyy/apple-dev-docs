@@ -1,7 +1,8 @@
 # MIDIEntityAddOrRemoveEndpoints(_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds or removes an entity’s endpoints.
 
@@ -18,13 +19,17 @@ Adds or removes an entity’s endpoints.
 func MIDIEntityAddOrRemoveEndpoints(_ entity: MIDIEntityRef, _ numSourceEndpoints: Int, _ numDestinationEndpoints: Int) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIEntityAddOrRemoveEndpoints(MIDIEntityRef entity, ItemCount numSourceEndpoints, ItemCount numDestinationEndpoints);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 #### Discussion
 
-Drivers and configuration editors may call this function to add to or remove an entity’s endpoints. The [`MIDIProtocolID`](midiprotocolid.md) of new endpoints is initially the same as that of the entity.
+Drivers and configuration editors may call this function to add to or remove an entity’s endpoints. The [`MIDIProtocolID`](./midiprotocolid.md) of new endpoints is initially the same as that of the entity.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ Drivers and configuration editors may call this function to add to or remove an 
 
 ## See Also
 
-- [func MIDIDeviceNewEntity(MIDIDeviceRef, CFString, MIDIProtocolID, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](mididevicenewentity(_:_:_:_:_:_:_:).md)
+### Managing Entities
+- [func MIDIDeviceNewEntity(MIDIDeviceRef, CFString, MIDIProtocolID, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](./mididevicenewentity%28_,_,_,_,_,_,_%29.md)
   Adds a new entity to a device.
-- [func MIDIDeviceRemoveEntity(MIDIDeviceRef, MIDIEntityRef) -> OSStatus](midideviceremoveentity(_:_:).md)
+- [func MIDIDeviceRemoveEntity(MIDIDeviceRef, MIDIEntityRef) -> OSStatus](./midideviceremoveentity%28_,_%29.md)
   Removes an entity from a device.
 
 

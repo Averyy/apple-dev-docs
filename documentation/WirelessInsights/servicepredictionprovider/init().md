@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WirelessInsights  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a service prediction provider.
 
@@ -17,7 +18,7 @@ init()
 
 #### Discussion
 
-Retain a reference to this instance for as long as you need to receive events from the [`servicePredictions`](servicepredictionprovider/servicepredictions.md) asychronous sequence.
+Retain a reference to this instance for as long as you need to receive events from the [`servicePredictions`](./servicepredictions.md) asychronous sequence.
 
 
 ---

@@ -1,6 +1,7 @@
 # Format reader entitlement
 
-**Framework**: MediaExtension
+**Framework**: MediaExtension  
+**Role**: Article
 
 Include an entitlement to indicate your extension is a MediaExtension format reader.
 
@@ -17,17 +18,18 @@ The entitlement key is `com.apple.developer.mediaextension.formatreader` and it 
 
 ## See Also
 
-- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+### Format readers
+- [Supporting custom media formats and decoders](./supporting-custom-media-formats-and-decoders.md)
   Extend the media formats the system can open by providing a format reader and a video decoder.
-- [protocol MEFormatReader](meformatreader.md)
+- [protocol MEFormatReader](./meformatreader.md)
   A protocol that defines the requirements for a format reader, which represents a single media asset.
-- [protocol MEFormatReaderExtension](meformatreaderextension.md)
+- [protocol MEFormatReaderExtension](./meformatreaderextension.md)
   A protocol that defines a factory to create a new format reader with a byte source.
-- [class MEFormatReaderInstantiationOptions](meformatreaderinstantiationoptions.md)
+- [class MEFormatReaderInstantiationOptions](./meformatreaderinstantiationoptions.md)
   An object that contains options to pass to a format reader extension.
-- [class MEFileInfo](mefileinfo.md)
+- [class MEFileInfo](./mefileinfo.md)
   An object that contains file properties from the media asset.
-- [Format reader property list dictionaries](format-reader-property-list-dictionaries.md)
+- [Format reader property list dictionaries](./format-reader-property-list-dictionaries.md)
   Include property list dictionaries to describe a format reader and register the formats it supports.
 
 

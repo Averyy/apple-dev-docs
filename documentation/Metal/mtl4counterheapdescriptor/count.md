@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the number of entries in the heap.
 
@@ -17,6 +18,10 @@ Assigns the number of entries in the heap.
 
 ```swift
 var count: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger count;
 ```
 
 #### Discussion

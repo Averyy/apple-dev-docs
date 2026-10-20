@@ -1,14 +1,15 @@
 # ml_get_cluster_number_type
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_get_cluster_number_type(cluster_type_t cluster_type);
 ```
 

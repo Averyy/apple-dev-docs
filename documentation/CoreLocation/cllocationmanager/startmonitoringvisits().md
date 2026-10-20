@@ -1,7 +1,8 @@
 # startMonitoringVisits()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the delivery of visit-related events.
 
@@ -17,15 +18,19 @@ Starts the delivery of visit-related events.
 func startMonitoringVisits()
 ```
 
+```objc
+- (void) startMonitoringVisits;
+```
+
 ## Mentions
 
-- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
+- [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
 #### Discussion
 
-Calling this method begins the delivery of visit-related events to your app. Enabling visit events for one location manager enables visit events for all other location manager objects in your app. When a new visit event arrives, the location manager object delivers the event to the [`locationManager(_:didVisit:)`](cllocationmanagerdelegate/locationmanager(_:didvisit:).md) method of its delegate.
+Calling this method begins the delivery of visit-related events to your app. Enabling visit events for one location manager enables visit events for all other location manager objects in your app. When a new visit event arrives, the location manager object delivers the event to the [`locationManager(_:didVisit:)`](../cllocationmanagerdelegate/locationmanager%28_,didvisit%29.md) method of its delegate.
 
-Your app can monitor for visit events without calling `requestTemporaryPreciseLocationAuthorization(withPurposeKey:)`. In that case, the visit events use reduced accuracy, as reflected by the [`horizontalAccuracy`](clvisit/horizontalaccuracy.md) property of [`CLVisit`](clvisit.md).
+Your app can monitor for visit events without calling `requestTemporaryPreciseLocationAuthorization(withPurposeKey:)`. In that case, the visit events use reduced accuracy, as reflected by the [`horizontalAccuracy`](../clvisit/horizontalaccuracy.md) property of [`CLVisit`](../clvisit.md).
 
 If your app is terminated while this service is active, the system relaunches your app when new visit events are ready to be delivered. Upon relaunch, recreate your location manager object and assign a delegate to begin receiving visit events. You don’t need to call this method again to restart the delivery of visit events, but calling it does no harm.
 
@@ -33,7 +38,8 @@ If a compatible iPad or iPhone app calls this method when running in visionOS, t
 
 ## See Also
 
-- [func stopMonitoringVisits()](cllocationmanager/stopmonitoringvisits.md)
+### Running the visits location service
+- [func stopMonitoringVisits()](./stopmonitoringvisits%28%29.md)
   Stops the delivery of visit-related events.
 
 

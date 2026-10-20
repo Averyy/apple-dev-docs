@@ -1,7 +1,8 @@
 # MusicSubscription.Updates.Iterator
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for the asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
 
@@ -23,7 +24,7 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

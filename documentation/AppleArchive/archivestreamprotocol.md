@@ -1,7 +1,8 @@
 # ArchiveStreamProtocol
 
 **Framework**: Apple Archive  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the interface for using an archive stream that reads from and writes to data blobs.
 
@@ -11,7 +12,7 @@ A set of methods that defines the interface for using an archive stream that rea
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ protocol ArchiveStreamProtocol
 ## Topics
 
 ### Reading and Writing Blobs
-- [func readBlob(key: ArchiveHeader.FieldKey, into: UnsafeMutableRawBufferPointer) throws](archivestreamprotocol/readblob(key:into:).md)
+- [func readBlob(key: ArchiveHeader.FieldKey, into: UnsafeMutableRawBufferPointer) throws](./archivestreamprotocol/readblob%28key,into%29.md)
   Reads the current entry blob data.
-- [func writeBlob(key: ArchiveHeader.FieldKey, from: UnsafeRawBufferPointer) throws](archivestreamprotocol/writeblob(key:from:).md)
+- [func writeBlob(key: ArchiveHeader.FieldKey, from: UnsafeRawBufferPointer) throws](./archivestreamprotocol/writeblob%28key,from%29.md)
   Writes an entry blob data.
 ### Reading and Writing Headers
-- [func readHeader() throws -> ArchiveHeader?](archivestreamprotocol/readheader.md)
+- [func readHeader() throws -> ArchiveHeader?](./archivestreamprotocol/readheader%28%29.md)
   Reads the next entry header.
-- [func writeHeader(ArchiveHeader) throws](archivestreamprotocol/writeheader(_:).md)
+- [func writeHeader(ArchiveHeader) throws](./archivestreamprotocol/writeheader%28_%29.md)
   Writes an entry header.
 ### Using Archive Streams
-- [func cancel()](archivestreamprotocol/cancel.md)
+- [func cancel()](./archivestreamprotocol/cancel%28%29.md)
   Cancels stream operations.
-- [func close() throws](archivestreamprotocol/close.md)
+- [func close() throws](./archivestreamprotocol/close%28%29.md)
   Closes the stream and releases associated resources.
 
 ## Relationships
 
 ### Conforming Types
-- [ArchiveStream](archivestream.md)
+- [ArchiveStream](./archivestream.md)
 
 ## See Also
 
-- [class ArchiveStream](archivestream.md)
+### Apple Archive streams
+- [class ArchiveStream](./archivestream.md)
   An archive stream that reads from and writes to data blobs
-- [protocol ArchiveByteStreamProtocol](archivebytestreamprotocol.md)
+- [protocol ArchiveByteStreamProtocol](./archivebytestreamprotocol.md)
   A set of methods that defines the interface for using an archive stream that reads from and writes to buffers.
-- [class ArchiveByteStream](archivebytestream.md)
+- [class ArchiveByteStream](./archivebytestream.md)
   An archive stream that reads from and writes to buffers.
 
 

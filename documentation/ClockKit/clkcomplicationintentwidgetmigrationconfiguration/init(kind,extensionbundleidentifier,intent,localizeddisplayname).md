@@ -1,7 +1,8 @@
 # init(kind:extensionBundleIdentifier:intent:localizedDisplayName:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes an intents-based watchOS complication in your WidgetKit extension.
 
@@ -12,6 +13,10 @@ Creates an object that describes an intents-based watchOS complication in your W
 
 ```swift
 init(kind: String, extensionBundleIdentifier: String, intent: INIntent, localizedDisplayName: String)
+```
+
+```objc
+- (instancetype) initWithKind:(NSString *) kind extensionBundleIdentifier:(NSString *) extensionBundleIdentifier intent:(INIntent *) intent localizedDisplayName:(NSString *) localizedDisplayName;
 ```
 
 ## Parameters

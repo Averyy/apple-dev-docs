@@ -1,14 +1,15 @@
 # kBluetoothHCICommandSetMWSChannelParameters
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandSetMWSChannelParameters = 0x006E
 ```
 

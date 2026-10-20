@@ -1,7 +1,8 @@
 # connectedPeripherals
 
 **Framework**: Playground Bluetooth  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An array of the peripherals currently connected to the central manager.
 
@@ -17,7 +18,8 @@ var connectedPeripherals: [CBPeripheral] { get }
 
 ## See Also
 
-- [var state: CBManagerState](playgroundbluetoothcentralmanager/3029472-state.md)
+### Inspecting Central Managers
+- [var state: CBManagerState](./api-3029472-state.md)
   The current state of the central manager.
 
 

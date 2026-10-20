@@ -1,7 +1,8 @@
 # maximumCallGroupsReached
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Performing the requested transaction exceeds the maximum number of call groups for the provider.
 
@@ -20,19 +21,20 @@ static var maximumCallGroupsReached: CXErrorCodeRequestTransactionError.Code { g
 
 ## See Also
 
-- [static var unknown: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/unknown.md)
+### Constants
+- [static var unknown: CXErrorCodeRequestTransactionError.Code](./unknown.md)
   An unknown error occurred.
-- [static var unentitled: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/unentitled.md)
+- [static var unentitled: CXErrorCodeRequestTransactionError.Code](./unentitled.md)
   The app doesn’t have the entitlement to perform the actions in the requested transaction.
-- [static var unknownCallProvider: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/unknowncallprovider.md)
+- [static var unknownCallProvider: CXErrorCodeRequestTransactionError.Code](./unknowncallprovider.md)
   The controller can’t find a call provider to perform the actions in the requested transaction.
-- [static var emptyTransaction: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/emptytransaction.md)
+- [static var emptyTransaction: CXErrorCodeRequestTransactionError.Code](./emptytransaction.md)
   The requested transaction doesn’t contain any actions.
-- [static var unknownCallUUID: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/unknowncalluuid.md)
+- [static var unknownCallUUID: CXErrorCodeRequestTransactionError.Code](./unknowncalluuid.md)
   The requested transaction contains call actions that reference an unknown UUID.
-- [static var callUUIDAlreadyExists: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/calluuidalreadyexists.md)
+- [static var callUUIDAlreadyExists: CXErrorCodeRequestTransactionError.Code](./calluuidalreadyexists.md)
   The requested transaction contains call actions that reference a UUID that already exists.
-- [static var invalidAction: CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/invalidaction.md)
+- [static var invalidAction: CXErrorCodeRequestTransactionError.Code](./invalidaction.md)
   The requested transaction contains an invalid action.
 
 

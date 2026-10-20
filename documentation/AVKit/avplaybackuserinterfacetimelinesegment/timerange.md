@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range defining the segment’s position and duration within the overall timeline.
 
@@ -14,6 +15,10 @@ The time range defining the segment’s position and duration within the overall
 
 ```swift
 var timeRange: CMTimeRange { get }
+```
+
+```objc
+@property (nonatomic, readonly) CMTimeRange timeRange;
 ```
 
 

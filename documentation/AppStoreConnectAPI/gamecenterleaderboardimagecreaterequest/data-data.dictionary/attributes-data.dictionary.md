@@ -1,7 +1,8 @@
 # GameCenterLeaderboardImageCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a leaderboard resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a leaderboard resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardImageCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object GameCenterLeaderboardImageCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterLeaderboardImageCreateRequest.Data.Relationships](gamecenterleaderboardimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterLeaderboardImageCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

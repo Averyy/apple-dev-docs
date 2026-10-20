@@ -1,7 +1,8 @@
 # missingValues
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of strings that represent missing values in a CSV file.
 

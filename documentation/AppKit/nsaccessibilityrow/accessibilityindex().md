@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the index for the row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func accessibilityIndex() -> Int
+```
+
+```objc
+- (NSInteger) accessibilityIndex;
 ```
 
 #### Return Value
@@ -21,11 +26,12 @@ The index for the row.
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityIndex`](nsaccessibility-c.protocol/accessibilityindex.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityIndex`](../nsaccessibility-c.protocol/accessibilityindex.md) property.
 
 ## See Also
 
-- [func accessibilityDisclosureLevel() -> Int](nsaccessibilityrow/accessibilitydisclosurelevel.md)
+### Supporting Accessibility
+- [func accessibilityDisclosureLevel() -> Int](./accessibilitydisclosurelevel%28%29.md)
   Returns the indention level for the row.
 
 

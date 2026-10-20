@@ -1,7 +1,8 @@
 # kSecSerialNumberItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 DER-encoded certificate serial number (without the tag and length).
 
@@ -12,6 +13,10 @@ DER-encoded certificate serial number (without the tag and length).
 
 ```swift
 var kSecSerialNumberItemAttr: Int { get }
+```
+
+```c
+kSecSerialNumberItemAttr
 ```
 
 

@@ -1,7 +1,8 @@
 # FindContext
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The status of the find navigator for views which support text editing.
 
@@ -59,24 +60,25 @@ struct FindNavigatorDrivenTextInput: View {
 ## Topics
 
 ### Instance Properties
-- [var isPresented: Binding<Bool>?](findcontext/ispresented.md)
-  A binding controlling if the find navigator is presented, or nil if no binding has been provided via the [`findNavigator(isPresented:)`](view/findnavigator(ispresented:).md) modifier.
-- [var supportsReplace: Bool](findcontext/supportsreplace.md)
+- [var isPresented: Binding<Bool>?](./findcontext/ispresented.md)
+  A binding controlling if the find navigator is presented, or nil if no binding has been provided via the [`findNavigator(isPresented:)`](./view/findnavigator%28ispresented%29.md) modifier.
+- [var supportsReplace: Bool](./findcontext/supportsreplace.md)
   If the find navigators in this context should support replacing.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func findNavigator(isPresented: Binding<Bool>) -> some View](view/findnavigator(ispresented:).md)
+### Searching for text in a view
+- [func findNavigator(isPresented: Binding<Bool>) -> some View](./view/findnavigator%28ispresented%29.md)
   Programmatically presents the find and replace interface for text editor views.
-- [func findDisabled(Bool) -> some View](view/finddisabled(_:).md)
+- [func findDisabled(Bool) -> some View](./view/finddisabled%28_%29.md)
   Prevents find and replace operations in a text editor.
-- [func replaceDisabled(Bool) -> some View](view/replacedisabled(_:).md)
+- [func replaceDisabled(Bool) -> some View](./view/replacedisabled%28_%29.md)
   Prevents replace operations in a text editor.
 
 

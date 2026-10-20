@@ -1,7 +1,8 @@
 # isLockedOut
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isLockedOut: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isLockedOut;
 ```
 
 #### Discussion

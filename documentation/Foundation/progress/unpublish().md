@@ -1,7 +1,8 @@
 # unpublish()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a progress object from publication, making it unobservable by other processes.
 
@@ -14,9 +15,14 @@ Removes a progress object from publication, making it unobservable by other proc
 func unpublish()
 ```
 
+```objc
+- (void) unpublish;
+```
+
 ## See Also
 
-- [func publish()](progress/publish.md)
+### Reporting Progress to Other Processes
+- [func publish()](./publish%28%29.md)
   Publishes the progress object for other processes to observe it.
 
 

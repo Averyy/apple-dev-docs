@@ -1,7 +1,8 @@
 # MTRThermostatFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,34 +19,38 @@
 struct MTRThermostatFeature
 ```
 
+```c
+enum MTRThermostatFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrthermostatfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrthermostatfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var autoMode: MTRThermostatFeature](mtrthermostatfeature/automode-8aad0.md)
-- [static var automode: MTRThermostatFeature](mtrthermostatfeature/automode-8hb9b.md)
-- [static var cooling: MTRThermostatFeature](mtrthermostatfeature/cooling.md)
-- [static var heating: MTRThermostatFeature](mtrthermostatfeature/heating.md)
-- [static var localTemperatureNotExposed: MTRThermostatFeature](mtrthermostatfeature/localtemperaturenotexposed.md)
-- [static var occupancy: MTRThermostatFeature](mtrthermostatfeature/occupancy.md)
-- [static var schedule: MTRThermostatFeature](mtrthermostatfeature/schedule.md)
-- [static var scheduleConfiguration: MTRThermostatFeature](mtrthermostatfeature/scheduleconfiguration.md)
-- [static var setback: MTRThermostatFeature](mtrthermostatfeature/setback.md)
-- [static var matterScheduleConfiguration: MTRThermostatFeature](mtrthermostatfeature/matterscheduleconfiguration.md)
-- [static var presets: MTRThermostatFeature](mtrthermostatfeature/presets.md)
+- [static var autoMode: MTRThermostatFeature](./mtrthermostatfeature/automode-8aad0.md)
+- [static var automode: MTRThermostatFeature](./mtrthermostatfeature/automode-8hb9b.md)
+- [static var cooling: MTRThermostatFeature](./mtrthermostatfeature/cooling.md)
+- [static var heating: MTRThermostatFeature](./mtrthermostatfeature/heating.md)
+- [static var localTemperatureNotExposed: MTRThermostatFeature](./mtrthermostatfeature/localtemperaturenotexposed.md)
+- [static var occupancy: MTRThermostatFeature](./mtrthermostatfeature/occupancy.md)
+- [static var schedule: MTRThermostatFeature](./mtrthermostatfeature/schedule.md)
+- [static var scheduleConfiguration: MTRThermostatFeature](./mtrthermostatfeature/scheduleconfiguration.md)
+- [static var setback: MTRThermostatFeature](./mtrthermostatfeature/setback.md)
+- [static var matterScheduleConfiguration: MTRThermostatFeature](./mtrthermostatfeature/matterscheduleconfiguration.md)
+- [static var presets: MTRThermostatFeature](./mtrthermostatfeature/presets.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

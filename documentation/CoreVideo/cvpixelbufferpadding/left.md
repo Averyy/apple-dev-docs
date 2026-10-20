@@ -1,7 +1,8 @@
 # left
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel column padding to the left
 

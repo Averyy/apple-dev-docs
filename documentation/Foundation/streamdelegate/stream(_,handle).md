@@ -1,7 +1,8 @@
 # stream(_:handle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The delegate receives this message when a given event has occurred on a given stream.
 
@@ -20,9 +21,13 @@ The delegate receives this message when a given event has occurred on a given st
 optional func stream(_ aStream: Stream, handle eventCode: Stream.Event)
 ```
 
+```objc
+- (void) stream:(NSStream *) aStream handleEvent:(NSStreamEvent) eventCode;
+```
+
 ## Mentions
 
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading streams of data](../uploading-streams-of-data.md)
 
 #### Discussion
 
@@ -35,7 +40,8 @@ The delegate receives this message only if `theStream` is scheduled on a run loo
 
 ## See Also
 
-- [Stream Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Streams/Streams.html#//apple_ref/doc/uid/10000188i)
+### Related Documentation
+- [Stream Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Streams/Streams.html#//apple_ref/doc/uid/10000188i)
 
 
 ---

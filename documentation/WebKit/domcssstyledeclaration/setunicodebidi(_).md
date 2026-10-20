@@ -1,7 +1,8 @@
 # setUnicodeBidi(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setUnicodeBidi(_ unicodeBidi: String!)
+```
+
+```objc
+- (void) setUnicodeBidi:(NSString *) unicodeBidi;
 ```
 
 

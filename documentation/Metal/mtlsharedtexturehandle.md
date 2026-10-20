@@ -1,7 +1,8 @@
 # MTLSharedTextureHandle
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A texture handle that can be shared across process address space boundaries.
 
@@ -19,48 +20,53 @@ A texture handle that can be shared across process address space boundaries.
 class MTLSharedTextureHandle
 ```
 
+```objc
+@interface MTLSharedTextureHandle : NSObject
+```
+
 #### Overview
 
-`MTLSharedTextureHandle` objects may be passed between processes using XPC connections and then used to create a reference to the texture in another process. The texture in the other process needs to be created using the same [`MTLDevice`](mtldevice.md) on which the shared texture was originally created. To identify which device it was created on, you can use the [`device`](mtlsharedtexturehandle/device.md) property of the `MTLSharedTextureHandle` object.
+`MTLSharedTextureHandle` objects may be passed between processes using XPC connections and then used to create a reference to the texture in another process. The texture in the other process needs to be created using the same [`MTLDevice`](./mtldevice.md) on which the shared texture was originally created. To identify which device it was created on, you can use the [`device`](./mtlsharedtexturehandle/device.md) property of the `MTLSharedTextureHandle` object.
 
 ## Topics
 
 ### Identifying the shared texture handle
-- [var device: any MTLDevice](mtlsharedtexturehandle/device.md)
+- [var device: any MTLDevice](./mtlsharedtexturehandle/device.md)
   The device object that created the texture.
-- [var label: String?](mtlsharedtexturehandle/label.md)
+- [var label: String?](./mtlsharedtexturehandle/label.md)
   A string that identifies the texture.
 ### Initializers
-- [init?(coder: NSCoder)](mtlsharedtexturehandle/init(coder:).md)
+- [init?(coder: NSCoder)](./mtlsharedtexturehandle/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
+### Texture basics
+- [Understanding color-renderable pixel format sizes](./understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [Optimizing texture data](optimizing-texture-data.md)
+- [Optimizing texture data](./optimizing-texture-data.md)
   Optimize a texture’s data to improve GPU or CPU access.
-- [protocol MTLTexture](mtltexture.md)
+- [protocol MTLTexture](./mtltexture.md)
   A resource that holds formatted image data.
-- [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
-- [class MTLTextureDescriptor](mtltexturedescriptor.md)
+- [enum MTLTextureCompressionType](./mtltexturecompressiontype.md)
+- [class MTLTextureDescriptor](./mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
+- [class MTKTextureLoader](../MetalKit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
-- [enum MTLPixelFormat](mtlpixelformat.md)
+- [enum MTLPixelFormat](./mtlpixelformat.md)
   The data formats that describe the organization and characteristics of individual pixels in a texture.
 
 

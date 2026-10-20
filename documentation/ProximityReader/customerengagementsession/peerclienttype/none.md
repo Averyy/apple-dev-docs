@@ -1,7 +1,8 @@
 # CustomerEngagementSession.PeerClientType.none
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This case indicates no peer client connection.
 

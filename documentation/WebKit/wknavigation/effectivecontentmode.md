@@ -1,7 +1,8 @@
 # effectiveContentMode
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content mode WebKit uses to load the webpage.
 
@@ -16,6 +17,10 @@ The content mode WebKit uses to load the webpage.
 
 ```swift
 var effectiveContentMode: WKWebpagePreferences.ContentMode { get }
+```
+
+```objc
+@property (nonatomic, readonly) WKContentMode effectiveContentMode;
 ```
 
 

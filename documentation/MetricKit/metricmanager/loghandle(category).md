@@ -1,7 +1,8 @@
 # logHandle(category:)
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an `OSLog` handle for creating custom signpost metrics that MetricKit aggregates.
 
@@ -19,7 +20,7 @@ static func logHandle(category: String) -> OSLog
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 

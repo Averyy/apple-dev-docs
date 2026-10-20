@@ -1,7 +1,8 @@
 # loadNonExecutablePlugIn(_:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads a non-executable plug-in specified by its URL.
 
@@ -14,6 +15,10 @@ Loads a non-executable plug-in specified by its URL.
 class func loadNonExecutablePlugIn(_ url: URL!)
 ```
 
+```objc
++ (void) loadNonExecutablePlugIn:(NSURL *) url;
+```
+
 #### Discussion
 
 If the filters contain executable code the plugin isn’t loaded.
@@ -24,7 +29,8 @@ If the filters contain executable code the plugin isn’t loaded.
 
 ## See Also
 
-- [class func loadNonExecutablePlugIns()](ciplugin/loadnonexecutableplugins.md)
+### Loading Plug-ins
+- [class func loadNonExecutablePlugIns()](./loadnonexecutableplugins%28%29.md)
   Scans directories for plugins.
 
 

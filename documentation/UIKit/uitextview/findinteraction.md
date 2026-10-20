@@ -1,7 +1,8 @@
 # findInteraction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text view’s built-in find interaction.
 
@@ -17,15 +18,20 @@ The text view’s built-in find interaction.
 var findInteraction: UIFindInteraction? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIFindInteraction * findInteraction;
+```
+
 #### Discussion
 
-Set [`isFindInteractionEnabled`](uitextview/isfindinteractionenabled.md) to `true` to enable the text view’s built-in find interaction. This method returns `nil` when the interaction isn’t enabled.
+Set [`isFindInteractionEnabled`](./isfindinteractionenabled.md) to `true` to enable the text view’s built-in find interaction. This method returns `nil` when the interaction isn’t enabled.
 
-Call [`presentFindNavigator(showingReplace:)`](uifindinteraction/presentfindnavigator(showingreplace:).md) on the [`UIFindInteraction`](uifindinteraction.md) object returned by this method to invoke the find interaction and display the find panel.
+Call [`presentFindNavigator(showingReplace:)`](../uifindinteraction/presentfindnavigator%28showingreplace%29.md) on the [`UIFindInteraction`](../uifindinteraction.md) object returned by this method to invoke the find interaction and display the find panel.
 
 ## See Also
 
-- [var isFindInteractionEnabled: Bool](uitextview/isfindinteractionenabled.md)
+### Supporting Find and Replace
+- [var isFindInteractionEnabled: Bool](./isfindinteractionenabled.md)
   A Boolean value that enables a text view’s built-in find interaction.
 
 

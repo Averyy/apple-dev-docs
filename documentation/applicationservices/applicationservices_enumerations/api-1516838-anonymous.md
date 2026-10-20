@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kATSStyleAppleReserved: UInt32](katsstyleapplereserved.md)
-- [var kATSStyleApplyAntiAliasing: UInt32](katsstyleapplyantialiasing.md)
-- [var kATSStyleApplyHints: UInt32](katsstyleapplyhints.md)
-- [var kATSStyleNoAntiAliasing: UInt32](katsstylenoantialiasing.md)
-- [var kATSStyleNoHinting: UInt32](katsstylenohinting.md)
-- [var kATSStyleNoOptions: UInt32](katsstylenooptions.md)
+- [var kATSStyleAppleReserved: UInt32](../katsstyleapplereserved.md)
+- [var kATSStyleApplyAntiAliasing: UInt32](../katsstyleapplyantialiasing.md)
+- [var kATSStyleApplyHints: UInt32](../katsstyleapplyhints.md)
+- [var kATSStyleNoAntiAliasing: UInt32](../katsstylenoantialiasing.md)
+- [var kATSStyleNoHinting: UInt32](../katsstylenohinting.md)
+- [var kATSStyleNoOptions: UInt32](../katsstylenooptions.md)
 
 
 ---

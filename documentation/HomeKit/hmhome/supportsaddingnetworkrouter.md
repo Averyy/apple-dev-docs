@@ -1,7 +1,8 @@
 # supportsAddingNetworkRouter
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether a home supports all of the requirements for adding a network router.
 
@@ -19,23 +20,28 @@ A Boolean that indicates whether a home supports all of the requirements for add
 var supportsAddingNetworkRouter: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL supportsAddingNetworkRouter;
+```
+
 ## See Also
 
-- [var accessories: [HMAccessory]](hmhome/accessories.md)
+### Managing accessories
+- [var accessories: [HMAccessory]](./accessories.md)
   The collection of accessories that are part of the home.
-- [func addAndSetupAccessories(completionHandler: ((any Error)?) -> Void)](hmhome/addandsetupaccessories(completionhandler:).md)
+- [func addAndSetupAccessories(completionHandler: ((any Error)?) -> Void)](./addandsetupaccessories%28completionhandler%29.md)
   Finds and adds nearby accessories to the home.
-- [func addAndSetupAccessories(with: HMAccessorySetupPayload, completionHandler: ([HMAccessory]?, (any Error)?) -> Void)](hmhome/addandsetupaccessories(with:completionhandler:).md)
+- [func addAndSetupAccessories(with: HMAccessorySetupPayload, completionHandler: ([HMAccessory]?, (any Error)?) -> Void)](./addandsetupaccessories%28with,completionhandler%29.md)
   Finds and adds nearby accessories to the home using a HomeKit code provided by your app.
-- [func addAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](hmhome/addaccessory(_:completionhandler:).md)
+- [func addAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](./addaccessory%28_,completionhandler%29.md)
   Adds a new accessory to the home.
-- [func assignAccessory(HMAccessory, to: HMRoom, completionHandler: ((any Error)?) -> Void)](hmhome/assignaccessory(_:to:completionhandler:).md)
+- [func assignAccessory(HMAccessory, to: HMRoom, completionHandler: ((any Error)?) -> Void)](./assignaccessory%28_,to,completionhandler%29.md)
   Assigns an accessory to a different room.
-- [func removeAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](hmhome/removeaccessory(_:completionhandler:).md)
+- [func removeAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](./removeaccessory%28_,completionhandler%29.md)
   Removes an accessory from the home.
-- [func unblockAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](hmhome/unblockaccessory(_:completionhandler:).md)
+- [func unblockAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](./unblockaccessory%28_,completionhandler%29.md)
   Unblocks a blocked accessory.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](../hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
 
 

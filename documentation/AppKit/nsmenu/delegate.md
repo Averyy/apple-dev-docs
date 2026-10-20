@@ -1,17 +1,22 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var delegate: (any NSMenuDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSMenuDelegate> delegate;
 ```
 
 #### Discussion
@@ -22,8 +27,9 @@ You can use the delegate to populate a menu just before it is drawn and to check
 
 ## See Also
 
-- [protocol NSMenuDelegate](nsmenudelegate.md)
-  The optional methods implemented by delegates of [`NSMenu`](nsmenu.md) objects to manage menu display and handle some events.
+### Related Documentation
+- [protocol NSMenuDelegate](../nsmenudelegate.md)
+  The optional methods implemented by delegates of [`NSMenu`](../nsmenu.md) objects to manage menu display and handle some events.
 
 
 ---

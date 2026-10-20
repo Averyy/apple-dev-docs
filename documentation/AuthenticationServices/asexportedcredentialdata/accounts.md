@@ -1,7 +1,8 @@
 # accounts
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of importable accounts.
 
@@ -20,7 +21,8 @@ var accounts: [ASImportableAccount]
 
 ## See Also
 
-- [struct ASImportableAccount](asimportableaccount.md)
+### Accessing accounts
+- [struct ASImportableAccount](../asimportableaccount.md)
   An account for use in importing and exporting credentials.
 
 

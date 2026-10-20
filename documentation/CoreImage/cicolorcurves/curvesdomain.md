@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A two-element vector that defines the minimum and maximum values of the curve data.
@@ -11,7 +12,7 @@ A two-element vector that defines the minimum and maximum values of the curve da
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ A two-element vector that defines the minimum and maximum values of the curve da
 var curvesDomain: CIVector { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIVector * curvesDomain;
+```
+
 ## See Also
 
-- [var colorSpace: CGColorSpace?](cicolorcurves/colorspace.md)
+### Instance Properties
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The working color space.
-- [var curvesData: Data](cicolorcurves/curvesdata.md)
+- [var curvesData: Data](./curvesdata.md)
   Color values that determine the color curves transform.
-- [var inputImage: CIImage?](cicolorcurves/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

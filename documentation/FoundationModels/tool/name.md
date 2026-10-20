@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A unique name for the tool.
@@ -24,15 +25,22 @@ var name: String { get }
 
 Use whichever style reads best in your codebase, such as `get_weather`, `toggleDarkMode`, or `search contacts`.
 
+## Default Implementations
+
+### Tool Implementations
+- [var name: String](./name-6x7wj.md)
+  A unique name for the tool.
+
 ## See Also
 
-- [var description: String](tool/description.md)
+### Inspecting a tool
+- [var description: String](./description.md)
   A natural language description of when and how to use the tool.
-- [var parameters: GenerationSchema](tool/parameters.md)
+- [var parameters: GenerationSchema](./parameters.md)
   A schema for the parameters this tool accepts.
-- [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
+- [var includesSchemaInInstructions: Bool](./includesschemaininstructions.md)
   A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
-- [typealias SessionProperty](tool/sessionproperty.md)
+- [typealias SessionProperty](./sessionproperty.md)
   A property wrapper that provides access to a session property from within a tool.
 
 

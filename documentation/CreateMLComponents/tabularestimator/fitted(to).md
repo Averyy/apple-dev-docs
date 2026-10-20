@@ -1,7 +1,8 @@
 # fitted(to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -18,11 +19,18 @@
 func fitted(to input: DataFrame) async throws -> Self.Transformer
 ```
 
+**Other overloads**:
+
+```swift
+func fitted(to input: DataFrame) async throws -> Self.Transformer
+```
+
 ## See Also
 
-- [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> TabularEstimatorToSupervisedAdaptor<Self, Annotation>](tabularestimator/adaptedassupervised(annotationcolumnid:).md)
+### Adapting and fitting
+- [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> TabularEstimatorToSupervisedAdaptor<Self, Annotation>](./adaptedassupervised%28annotationcolumnid%29.md)
   Exposes this tabular estimator as a supervised tabular estimator.
-- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Self.Transformer](tabularestimator/fitted(to:eventhandler:).md)
+- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a data frame
 
 

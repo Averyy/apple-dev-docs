@@ -1,7 +1,8 @@
 # hasAudioSampleDependencies
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the track has sample dependencies.
 
@@ -20,15 +21,18 @@ A Boolean value that indicates whether the track has sample dependencies.
 static var hasAudioSampleDependencies: AVAsyncProperty<Root, Bool> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-The value is always [`false`](https://developer.apple.com/documentation/swift/false) for nonaudible media.
+The value is always [`false`](../../Swift/false.md) for nonaudible media.
 
 ## See Also
 
-- [static var preferredVolume: AVAsyncProperty<Root, Float>](avpartialasyncproperty/preferredvolume-8q2yt.md)
+### Loading audible characteristics
+- [static var preferredVolume: AVAsyncProperty<Root, Float>](./preferredvolume-8q2yt.md)
   The track’s volume preference for playing its audible media.
 
 

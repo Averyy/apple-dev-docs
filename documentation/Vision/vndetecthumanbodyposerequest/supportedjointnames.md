@@ -1,7 +1,8 @@
 # supportedJointNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieves the supported joint names.
 
@@ -21,11 +22,12 @@ var supportedJointNames: [VNHumanBodyPoseObservation.JointName] { get throws }
 
 ## See Also
 
-- [class func supportedJointNames(forRevision: Int) throws -> [VNHumanBodyPoseObservation.JointName]](vndetecthumanbodyposerequest/supportedjointnames(forrevision:).md)
+### Determining Supported Joints
+- [class func supportedJointNames(forRevision: Int) throws -> [VNHumanBodyPoseObservation.JointName]](./supportedjointnames%28forrevision%29.md)
   Retrieves the supported joint names for a revision.
-- [var supportedJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName]](vndetecthumanbodyposerequest/supportedjointsgroupnames.md)
+- [var supportedJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName]](./supportedjointsgroupnames.md)
   Retrieves the supported joint group names.
-- [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanBodyPoseObservation.JointsGroupName]](vndetecthumanbodyposerequest/supportedjointsgroupnames(forrevision:).md)
+- [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanBodyPoseObservation.JointsGroupName]](./supportedjointsgroupnames%28forrevision%29.md)
   Retrieves the supported joint group names for a revision.
 
 

@@ -1,7 +1,8 @@
 # appAccountToken
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UUID that associates the transaction with a user on your own service.
 
@@ -22,11 +23,11 @@ let appAccountToken: UUID?
 
 ## Mentions
 
-- [Generating a signature for promotional offers](generating-a-signature-for-promotional-offers.md)
+- [Generating a signature for promotional offers](../generating-a-signature-for-promotional-offers.md)
 
 #### Discussion
 
-You create an [`appAccountToken(_:)`](product/purchaseoption/appaccounttoken(_:).md) and send it to the App Store when a customer initiates an in-app purchase. The App Store returns the same value in [`appAccountToken`](transaction/appaccounttoken.md) in the transaction information after the customer completes the purchase.
+You create an [`appAccountToken(_:)`](../product/purchaseoption/appaccounttoken%28_%29.md) and send it to the App Store when a customer initiates an in-app purchase. The App Store returns the same value in [`appAccountToken`](./appaccounttoken.md) in the transaction information after the customer completes the purchase.
 
 
 ---

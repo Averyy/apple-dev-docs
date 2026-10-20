@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for an external sync device.
 
@@ -18,21 +19,26 @@ A unique identifier for an external sync device.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUUID * uuid;
+```
+
 #### Discussion
 
 Use this property to select a specific external sync device.
 
 ## See Also
 
-- [var clock: CMClock?](avexternalsyncdevice/clock.md)
+### Inspecting a device
+- [var clock: CMClock?](./clock.md)
   A clock representing the source of time from the external sync device.
-- [var productID: UInt32](avexternalsyncdevice/productid.md)
+- [var productID: UInt32](./productid.md)
   The USB product identifier associated with the external sync device.
-- [var signalCompensationDelay: CMTime](avexternalsyncdevice/signalcompensationdelay.md)
+- [var signalCompensationDelay: CMTime](./signalcompensationdelay.md)
   Delay to wait before starting the frame capture.
-- [var status: AVExternalSyncDeviceStatus](avexternalsyncdevice/status.md)
+- [var status: AVExternalSyncDeviceStatus](./status.md)
   The status of the externally connected device.
-- [var vendorID: UInt32](avexternalsyncdevice/vendorid.md)
+- [var vendorID: UInt32](./vendorid.md)
   The USB vendor identifier associated with the external sync device.
 
 

@@ -1,7 +1,8 @@
 # seal(_:using:nonce:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Secures the given plaintext message with encryption and an authentication tag.
 
@@ -28,11 +29,12 @@ The sealed message.
 
 - `message`: The plaintext data to seal.
 - `key`: A cryptographic key used to seal the message.
-- `nonce`: The nonce the sealing process requires. If you don’t provide a nonce, the method generates a random one by invoking [`init()`](aes/gcm/nonce/init().md).
+- `nonce`: The nonce the sealing process requires. If you don’t provide a nonce, the method generates a random one by invoking [`init()`](./nonce/init%28%29.md).
 
 ## See Also
 
-- [static func seal<Plaintext, AuthenticatedData>(Plaintext, using: SymmetricKey, nonce: AES.GCM.Nonce?, authenticating: AuthenticatedData) throws -> AES.GCM.SealedBox](aes/gcm/seal(_:using:nonce:authenticating:).md)
+### Securing the plaintext message
+- [static func seal<Plaintext, AuthenticatedData>(Plaintext, using: SymmetricKey, nonce: AES.GCM.Nonce?, authenticating: AuthenticatedData) throws -> AES.GCM.SealedBox](./seal%28_,using,nonce,authenticating%29.md)
   Secures the given plaintext message with encryption and an authentication tag that covers both the encrypted data and additional data.
 
 

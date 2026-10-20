@@ -1,7 +1,8 @@
 # value
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant value for the parameter definition.
 
@@ -19,9 +20,13 @@ A constant value for the parameter definition.
 var value: Any { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id value;
+```
+
 #### Discussion
 
-Set this value using a subclass initializer. For example, see [`init(value:)`](phasestringmetaparameterdefinition/init(value:).md).
+Set this value using a subclass initializer. For example, see [`init(value:)`](../phasestringmetaparameterdefinition/init%28value%29.md).
 
 
 ---

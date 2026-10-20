@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Requests suitable locations for known folders.
@@ -12,7 +13,15 @@ Requests suitable locations for known folders.
 ## Declaration
 
 ```swift
+func getKnownFolderLocations(_ knownFolders: NSFileProviderKnownFolders, completionHandler: @escaping @Sendable (NSFileProviderKnownFolderLocations?, (any Error)?) -> Void)
+```
+
+```swift
 func knownFolderLocations(_ knownFolders: NSFileProviderKnownFolders) async throws -> NSFileProviderKnownFolderLocations
+```
+
+```objc
+- (void) getKnownFolderLocations:(NSFileProviderKnownFolders) knownFolders completionHandler:(void (^)(NSFileProviderKnownFolderLocations *, NSError *)) completionHandler;
 ```
 
 

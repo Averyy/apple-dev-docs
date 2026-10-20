@@ -1,7 +1,8 @@
 # invalidatedAll
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if all objects in the context were invalidated.
 

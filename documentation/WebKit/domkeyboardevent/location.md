@@ -1,15 +1,20 @@
 # location
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var location: UInt32 { get }
+```
+
+```objc
+@property (readonly) unsigned int location;
 ```
 
 

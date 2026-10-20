@@ -1,18 +1,21 @@
 # PreviewDevice
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A simulator device that runs a preview.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.0+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- tvOS 13.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 6.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use the device picker in the Xcode preview canvas instead.
 
 ## Declaration
 
@@ -22,7 +25,7 @@ struct PreviewDevice
 
 #### Overview
 
-Create a preview device by name, like “iPhone X”, or by model number, like “iPad8,1”. Use the device in a call to the [`previewDevice(_:)`](view/previewdevice(_:).md) modifier to set a preview device that doesn’t change when you change the run destination in Xcode:
+Create a preview device by name, like “iPhone X”, or by model number, like “iPad8,1”. Use the device in a call to the [`previewDevice(_:)`](./view/previewdevice%28_%29.md) modifier to set a preview device that doesn’t change when you change the run destination in Xcode:
 
 ```swift
 struct CircleImage_Previews: PreviewProvider {
@@ -47,22 +50,23 @@ Additionally, you can use the following values for macOS platform development:
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func previewDevice(PreviewDevice?) -> some View](view/previewdevice(_:).md)
+### Customizing a preview
+- [func previewDevice(PreviewDevice?) -> some View](./view/previewdevice%28_%29.md)
   Overrides the device for a preview.
-- [func previewLayout(PreviewLayout) -> some View](view/previewlayout(_:).md)
+- [func previewLayout(PreviewLayout) -> some View](./view/previewlayout%28_%29.md)
   Overrides the size of the container for the preview.
-- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](view/previewinterfaceorientation(_:).md)
+- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](./view/previewinterfaceorientation%28_%29.md)
   Overrides the orientation of the preview.
-- [struct InterfaceOrientation](interfaceorientation.md)
+- [struct InterfaceOrientation](./interfaceorientation.md)
   The orientation of the interface from the user’s perspective.
 
 

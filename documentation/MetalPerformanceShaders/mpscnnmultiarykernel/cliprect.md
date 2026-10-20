@@ -1,7 +1,8 @@
 # clipRect
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var clipRect: MTLRegion { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLRegion clipRect;
 ```
 
 

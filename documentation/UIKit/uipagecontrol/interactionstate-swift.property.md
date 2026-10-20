@@ -1,7 +1,8 @@
 # interactionState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interaction state when the current page changes.
 
@@ -18,11 +19,16 @@ The interaction state when the current page changes.
 var interactionState: UIPageControl.InteractionState { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) UIPageControlInteractionState interactionState;
+```
+
 ## See Also
 
-- [var allowsContinuousInteraction: Bool](uipagecontrol/allowscontinuousinteraction.md)
+### Customizing the interaction state
+- [var allowsContinuousInteraction: Bool](./allowscontinuousinteraction.md)
   A Boolean value that determines whether the page control allows continuous interaction.
-- [UIPageControl.InteractionState](uipagecontrol/interactionstate-swift.enum.md)
+- [UIPageControl.InteractionState](./interactionstate-swift.enum.md)
   Constants that define the interaction states of the page control.
 
 

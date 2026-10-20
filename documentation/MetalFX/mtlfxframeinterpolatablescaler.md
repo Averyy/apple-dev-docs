@@ -1,7 +1,8 @@
 # MTLFXFrameInterpolatableScaler
 
 **Framework**: MetalFX  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -17,17 +18,21 @@
 protocol MTLFXFrameInterpolatableScaler : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLFXFrameInterpolatableScaler <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)
-- [MTL4FXTemporalScaler](mtl4fxtemporalscaler.md)
-- [MTLFXTemporalDenoisedScaler](mtlfxtemporaldenoisedscaler.md)
-- [MTLFXTemporalDenoisedScalerBase](mtlfxtemporaldenoisedscalerbase.md)
-- [MTLFXTemporalScaler](mtlfxtemporalscaler.md)
-- [MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
+- [MTL4FXTemporalDenoisedScaler](./mtl4fxtemporaldenoisedscaler.md)
+- [MTL4FXTemporalScaler](./mtl4fxtemporalscaler.md)
+- [MTLFXTemporalDenoisedScaler](./mtlfxtemporaldenoisedscaler.md)
+- [MTLFXTemporalDenoisedScalerBase](./mtlfxtemporaldenoisedscalerbase.md)
+- [MTLFXTemporalScaler](./mtlfxtemporalscaler.md)
+- [MTLFXTemporalScalerBase](./mtlfxtemporalscalerbase.md)
 
 
 ---

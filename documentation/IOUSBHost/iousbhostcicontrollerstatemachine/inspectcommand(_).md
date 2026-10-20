@@ -1,7 +1,8 @@
 # inspectCommand(_:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,11 +14,16 @@
 func inspectCommand(_ command: UnsafePointer<IOUSBHostCIMessage>) throws
 ```
 
+```objc
+- (BOOL) inspectCommand:(const IOUSBHostCIMessage *) command error:(NSError **) error;
+```
+
 ## See Also
 
-- [func enqueueUpdatedFrame(UInt64, timestamp: UInt64) throws](iousbhostcicontrollerstatemachine/enqueueupdatedframe(_:timestamp:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](iousbhostcicontrollerstatemachine/respond(tocommand:status:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, frame: UInt64, timestamp: UInt64) throws](iousbhostcicontrollerstatemachine/respond(tocommand:status:frame:timestamp:).md)
+### Instance Methods
+- [func enqueueUpdatedFrame(UInt64, timestamp: UInt64) throws](./enqueueupdatedframe%28_,timestamp%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, frame: UInt64, timestamp: UInt64) throws](./respond%28tocommand,status,frame,timestamp%29.md)
 
 
 ---

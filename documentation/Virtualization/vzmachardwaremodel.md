@@ -1,7 +1,8 @@
 # VZMacHardwareModel
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specification for the hardware elements and configurations present in a particular Mac hardware model.
 
@@ -14,10 +15,14 @@ A specification for the hardware elements and configurations present in a partic
 class VZMacHardwareModel
 ```
 
+```objc
+@interface VZMacHardwareModel : NSObject
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
-- [Using iCloud with macOS virtual machines](using-icloud-with-macos-virtual-machines.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
+- [Using iCloud with macOS virtual machines](./using-icloud-with-macos-virtual-machines.md)
 
 #### Overview
 
@@ -25,57 +30,59 @@ The Mac hardware model abstracts a set of virtualized hardware elements and conf
 
 A version of macOS may only run on certain hardware models. Additionally, the host may also only provide certain hardware models based on the version of macOS and the underlying hardware.
 
-The [`isSupported`](vzmachardwaremodel/issupported.md) property allows you to discover if the current host supports a particular hardware model.
+The [`isSupported`](./vzmachardwaremodel/issupported.md) property allows you to discover if the current host supports a particular hardware model.
 
-Choosing the hardware model starts from a restore image with [`VZMacOSRestoreImage`](vzmacosrestoreimage.md). A restore image describes its supported configuration requirements through its [`mostFeaturefulSupportedConfiguration`](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) property.
+Choosing the hardware model starts from a restore image with [`VZMacOSRestoreImage`](./vzmacosrestoreimage.md). A restore image describes its supported configuration requirements through its [`mostFeaturefulSupportedConfiguration`](./vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) property.
 
-A configuration requirements object has a corresponding hardware model that you can use to configure a VM that meets the requirements. After obtaining the hardware model, use the platform configuration’s [`hardwareModel`](vzmacplatformconfiguration/hardwaremodel.md) to configure the Mac platform object and use [`init(creatingStorageAt:hardwareModel:options:)`](vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).md) to create its auxiliary storage.
+A configuration requirements object has a corresponding hardware model that you can use to configure a VM that meets the requirements. After obtaining the hardware model, use the platform configuration’s [`hardwareModel`](./vzmacplatformconfiguration/hardwaremodel.md) to configure the Mac platform object and use [`init(creatingStorageAt:hardwareModel:options:)`](./vzmacauxiliarystorage/init%28creatingstorageat,hardwaremodel,options%29.md) to create its auxiliary storage.
 
-After creating the VM, use [`VZMacOSInstaller`](vzmacosinstaller.md) to install macOS on it.
+After creating the VM, use [`VZMacOSInstaller`](./vzmacosinstaller.md) to install macOS on it.
 
-If you serialize the VM on disk, preserve the hardware model used for installation for subsequent boots. The [`dataRepresentation`](vzmachardwaremodel/datarepresentation.md) property provides a unique binary representation that you serialize to the file system. You can recreate the hardware model from the serialized binary representation with [`init(dataRepresentation:)`](vzmachardwaremodel/init(datarepresentation:).md).
+If you serialize the VM on disk, preserve the hardware model used for installation for subsequent boots. The [`dataRepresentation`](./vzmachardwaremodel/datarepresentation.md) property provides a unique binary representation that you serialize to the file system. You can recreate the hardware model from the serialized binary representation with [`init(dataRepresentation:)`](./vzmachardwaremodel/init%28datarepresentation%29.md).
 
 ## Topics
 
 ### Creating the hardware model
-- [init?(dataRepresentation: Data)](vzmachardwaremodel/init(datarepresentation:).md)
+- [init?(dataRepresentation: Data)](./vzmachardwaremodel/init%28datarepresentation%29.md)
   Creates an instance of the hardware model described by the specified data representation.
 ### Configuring the hardware model
-- [var dataRepresentation: Data](vzmachardwaremodel/datarepresentation.md)
+- [var dataRepresentation: Data](./vzmachardwaremodel/datarepresentation.md)
   Returns the opaque data representation of the hardware model.
-- [var isSupported: Bool](vzmachardwaremodel/issupported.md)
+- [var isSupported: Bool](./vzmachardwaremodel/issupported.md)
   A Boolean value that indicates whether the host supports this hardware model.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacOSInstaller](vzmacosinstaller.md)
+### Related Documentation
+- [class VZMacOSInstaller](./vzmacosinstaller.md)
   An object you use to install macOS on the specified virtual machine.
-- [class VZMacOSRestoreImage](vzmacosrestoreimage.md)
+- [class VZMacOSRestoreImage](./vzmacosrestoreimage.md)
   An object that describes a version of macOS to install on to a virtual machine.
-- [class VZVirtualMachineConfiguration](vzvirtualmachineconfiguration.md)
+### Platform components
+- [class VZVirtualMachineConfiguration](./vzvirtualmachineconfiguration.md)
   The environment attributes and list of devices to use during the configuration of macOS or Linux VMs.
-- [class VZMacOSVirtualMachineStartOptions](vzmacosvirtualmachinestartoptions.md)
+- [class VZMacOSVirtualMachineStartOptions](./vzmacosvirtualmachinestartoptions.md)
   A class that describes start options for macOS VMs.
-- [class VZMacPlatformConfiguration](vzmacplatformconfiguration.md)
+- [class VZMacPlatformConfiguration](./vzmacplatformconfiguration.md)
   The platform configuration for booting macOS on Apple silicon.
-- [class VZPlatformConfiguration](vzplatformconfiguration.md)
+- [class VZPlatformConfiguration](./vzplatformconfiguration.md)
   The base class for a platform configuration.
-- [class VZMacMachineIdentifier](vzmacmachineidentifier.md)
+- [class VZMacMachineIdentifier](./vzmacmachineidentifier.md)
   A unique identifier for a VM.
-- [class VZMacAuxiliaryStorage](vzmacauxiliarystorage.md)
+- [class VZMacAuxiliaryStorage](./vzmacauxiliarystorage.md)
   An object that contains information the boot loader needs for booting macOS as a guest operating system.
 
 

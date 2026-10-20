@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The role that influences how a scroll view should align its content when the size of its content is smaller than the container size of the scroll view.
 

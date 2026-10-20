@@ -1,7 +1,8 @@
 # withTransitionGroup(body:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Coordinates multiple experience transitions to perform together as a single visual transition.
 
@@ -21,7 +22,7 @@ An array of transition results in the order transitions were added.
 
 #### Discussion
 
-Use this method when you need to transition multiple [`AVExperienceController`](avexperiencecontroller.md) instances simultaneously, creating a smooth, coordinated animation.
+Use this method when you need to transition multiple [`AVExperienceController`](../avexperiencecontroller.md) instances simultaneously, creating a smooth, coordinated animation.
 
 All transitions prepare concurrently, then perform together once preparation completes. Individual transitions may succeed or fail independently — the group continues with successful transitions and collects results for all.
 
@@ -48,9 +49,10 @@ for (index, result) in results.enumerated() {
 
 ## See Also
 
-- [AVExperienceController.TransitionGroup](avexperiencecontroller/transitiongroup.md)
+### Transitioning experiences
+- [AVExperienceController.TransitionGroup](./transitiongroup.md)
   A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
-- [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transition(to:).md)
+- [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](./transition%28to%29.md)
   Transitions the video to a different experience.
 
 

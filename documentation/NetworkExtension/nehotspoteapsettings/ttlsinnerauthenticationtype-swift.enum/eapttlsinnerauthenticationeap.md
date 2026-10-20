@@ -1,7 +1,8 @@
 # NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationEAP
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Network EAPTTLS inner authentication type is EAP.
 
@@ -17,15 +18,20 @@ Network EAPTTLS inner authentication type is EAP.
 case eapttlsInnerAuthenticationEAP
 ```
 
+```c
+NEHotspotConfigurationEAPTTLSInnerAuthenticationEAP
+```
+
 ## See Also
 
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationPAP](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum/eapttlsinnerauthenticationpap.md)
+### Enumeration Cases
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationPAP](./eapttlsinnerauthenticationpap.md)
   Network EAPTTLS inner authentication type is PAP.
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationCHAP](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum/eapttlsinnerauthenticationchap.md)
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationCHAP](./eapttlsinnerauthenticationchap.md)
   Network EAPTTLS inner authentication type is CHAP.
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationMSCHAP](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum/eapttlsinnerauthenticationmschap.md)
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationMSCHAP](./eapttlsinnerauthenticationmschap.md)
   Network EAPTTLS inner authentication type is MSCHAP.
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationMSCHAPv2](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum/eapttlsinnerauthenticationmschapv2.md)
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType.eapttlsInnerAuthenticationMSCHAPv2](./eapttlsinnerauthenticationmschapv2.md)
   Network EAPTTLS inner authentication type is MSCHAP, version 2.
 
 

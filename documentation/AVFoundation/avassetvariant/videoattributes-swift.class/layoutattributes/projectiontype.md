@@ -1,7 +1,8 @@
 # projectionType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes the video projection.
 
@@ -20,9 +21,14 @@ Describes the video projection.
 var projectionType: CMProjectionType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMProjectionType projectionType;
+```
+
 ## See Also
 
-- [var stereoViewComponents: CMStereoViewComponents](avassetvariant/videoattributes-swift.class/layoutattributes/stereoviewcomponents.md)
+### Accessing attributes
+- [var stereoViewComponents: CMStereoViewComponents](./stereoviewcomponents.md)
   Attributes that describe the video’s stereo components.
 
 

@@ -1,7 +1,8 @@
 # sampleCount
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of samples in the sample buffer.
 
@@ -20,9 +21,11 @@ Number of samples in the sample buffer.
 var sampleCount: Int { get }
 ```
 
+Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
+
 #### Discussion
 
-This value is always equal to `sampleProperties.count`. This value is 0 when `Content` is [`CMSampleBuffer.DynamicContent`](cmsamplebuffer/dynamiccontent.md) and [`contentType`](cmreadysamplebuffer/contenttype.md) is [`CMSampleBuffer.ContentType.markerOnly`](cmsamplebuffer/contenttype-swift.enum/markeronly.md). For all other sample buffer content, this value is greater than 0.
+This value is always equal to `sampleProperties.count`. This value is 0 when `Content` is [`CMSampleBuffer.DynamicContent`](../cmsamplebuffer/dynamiccontent.md) and [`contentType`](./contenttype.md) is [`CMSampleBuffer.ContentType.markerOnly`](../cmsamplebuffer/contenttype-swift.enum/markeronly.md). For all other sample buffer content, this value is greater than 0.
 
 
 ---

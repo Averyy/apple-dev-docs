@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for this notification request.
 
@@ -20,19 +21,32 @@ The unique identifier for this notification request.
 var identifier: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
-Use this string to identify notifications in your app. For example, you can pass this string to the [`removePendingNotificationRequests(withIdentifiers:)`](unusernotificationcenter/removependingnotificationrequests(withidentifiers:).md) method to cancel a previously scheduled notification.
+Use this string to identify notifications in your app. For example, you can pass this string to the [`removePendingNotificationRequests(withIdentifiers:)`](../unusernotificationcenter/removependingnotificationrequests%28withidentifiers%29.md) method to cancel a previously scheduled notification.
 
 If you use the same identifier when scheduling a new notification, the system removes the previously scheduled notification with that identifier and replaces it with the new one.
 
-For local notifications, the system sets this property to the value passed to the request’s initializer (see the [`init(identifier:content:trigger:)`](unnotificationrequest/init(identifier:content:trigger:).md) method). For remote notifications, the system sets this property to the value of the `apns-collapse-id` key that you specified in the APNs request header when generating the remote notification. If your app doesn’t set a value, the system automatically assigns an identifier.
+For local notifications, the system sets this property to the value passed to the request’s initializer (see the [`init(identifier:content:trigger:)`](./init%28identifier,content,trigger%29.md) method). For remote notifications, the system sets this property to the value of the `apns-collapse-id` key that you specified in the APNs request header when generating the remote notification. If your app doesn’t set a value, the system automatically assigns an identifier.
 
 ## See Also
 
-- [var content: UNNotificationContent](unnotificationrequest/content.md)
+### Getting the Request Details
+- [var content: UNNotificationContent](./content.md)
   The content associated with the notification.
-- [var trigger: UNNotificationTrigger?](unnotificationrequest/trigger.md)
+- [var trigger: UNNotificationTrigger?](./trigger.md)
   The conditions that trigger the delivery of the notification.
 
 

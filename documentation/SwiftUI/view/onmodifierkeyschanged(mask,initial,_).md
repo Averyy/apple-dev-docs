@@ -1,7 +1,8 @@
 # onModifierKeysChanged(mask:initial:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an action whenever the user presses or releases a hardware modifier key.
 
@@ -46,7 +47,8 @@ When the view first appears, SwiftUI will check the state of the modifier keys a
 
 ## See Also
 
-- [func modifierKeyAlternate<V>(EventModifiers, () -> V) -> some View](view/modifierkeyalternate(_:_:).md)
+### Responding to modifier keys
+- [func modifierKeyAlternate<V>(EventModifiers, () -> V) -> some View](./modifierkeyalternate%28_,_%29.md)
   Builds a view to use in place of the modified view when the user presses the modifier key(s) indicated by the given set.
 
 

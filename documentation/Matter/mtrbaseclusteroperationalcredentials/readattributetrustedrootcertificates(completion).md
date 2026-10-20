@@ -1,7 +1,8 @@
 # readAttributeTrustedRootCertificates(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTrustedRootCertificates(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTrustedRootCertificates() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeTrustedRootCertificatesWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # captureTraceURL
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tell the next render using this destination to capture a Metal trace.
 
@@ -17,6 +18,10 @@ Tell the next render using this destination to capture a Metal trace.
 
 ```swift
 var captureTraceURL: URL? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSURL * captureTraceURL;
 ```
 
 #### Discussion

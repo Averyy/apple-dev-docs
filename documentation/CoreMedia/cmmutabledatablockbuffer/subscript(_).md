@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the data byte at the specified position.
 

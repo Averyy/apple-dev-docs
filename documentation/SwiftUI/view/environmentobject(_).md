@@ -1,7 +1,8 @@
 # environmentObject(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Supplies an observable object to a view’s hierarchy.
 
@@ -23,11 +24,11 @@ func environmentObject<T>(_ object: T) -> some View where T : ObservableObject
 
 #### Discussion
 
-Use this modifier to add an observable object to a view’s environment. The object must conform to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol.
+Use this modifier to add an observable object to a view’s environment. The object must conform to the [`ObservableObject`](../../Combine/observableobject.md) protocol.
 
-Adding an object to a view’s environment makes the object available to subviews in the view’s hierarchy. To retrieve the object in a subview, use the [`EnvironmentObject`](environmentobject.md) property wrapper.
+Adding an object to a view’s environment makes the object available to subviews in the view’s hierarchy. To retrieve the object in a subview, use the [`EnvironmentObject`](../environmentobject.md) property wrapper.
 
-> **Note**: If the observable object conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, use either [`environment(_:)`](view/environment(_:).md) or the [`environment(_:_:)`](view/environment(_:_:).md) modifier to add the object to the view’s environment.
+> **Note**: If the observable object conforms to the [`Observable`](../../Observation/observable.md) protocol, use either [`environment(_:)`](./environment%28_%29.md) or the [`environment(_:_:)`](./environment%28_,_%29.md) modifier to add the object to the view’s environment.
 
 ## Parameters
 
@@ -35,9 +36,10 @@ Adding an object to a view’s environment makes the object available to subview
 
 ## See Also
 
-- [func environmentObject<T>(T) -> some Scene](scene/environmentobject(_:).md)
+### Distributing model data throughout your app
+- [func environmentObject<T>(T) -> some Scene](../scene/environmentobject%28_%29.md)
   Supplies an `ObservableObject` to a view subhierarchy.
-- [struct EnvironmentObject](environmentobject.md)
+- [struct EnvironmentObject](../environmentobject.md)
   A property wrapper type for an observable object that a parent or ancestor view supplies.
 
 

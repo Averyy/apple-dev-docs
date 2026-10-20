@@ -1,7 +1,8 @@
 # isNaN
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the instance is NaN (“not a number”).
 

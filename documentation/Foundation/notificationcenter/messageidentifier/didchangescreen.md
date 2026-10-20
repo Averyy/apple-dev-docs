@@ -1,7 +1,8 @@
 # didChangeScreen
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeScreen: NotificationCenter.BaseMessageIdentifier<NSWindow.DidChangeScreenMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidChangeScreenMessage>`.
 
 
 ---

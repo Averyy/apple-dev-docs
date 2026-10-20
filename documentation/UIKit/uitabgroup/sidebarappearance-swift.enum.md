@@ -1,7 +1,8 @@
 # UITabGroup.SidebarAppearance
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The appearance of a section in a sidebar.
 
@@ -17,33 +18,38 @@ The appearance of a section in a sidebar.
 enum SidebarAppearance
 ```
 
+```c
+enum UITabGroupSidebarAppearance : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UITabGroup.SidebarAppearance.automatic](uitabgroup/sidebarappearance-swift.enum/automatic.md)
+- [UITabGroup.SidebarAppearance.automatic](./sidebarappearance-swift.enum/automatic.md)
   The default appearance showing the group and its children appropriately depending on the group level it is in.
-- [UITabGroup.SidebarAppearance.inline](uitabgroup/sidebarappearance-swift.enum/inline.md)
+- [UITabGroup.SidebarAppearance.inline](./sidebarappearance-swift.enum/inline.md)
   Displays only the children alongside the group’s siblings.
-- [UITabGroup.SidebarAppearance.rootSection](uitabgroup/sidebarappearance-swift.enum/rootsection.md)
+- [UITabGroup.SidebarAppearance.rootSection](./sidebarappearance-swift.enum/rootsection.md)
   Displays the group and its children as a top-level group of the sidebar.
 ### Initializers
-- [init?(rawValue: UInt)](uitabgroup/sidebarappearance-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./sidebarappearance-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sidebarAppearance: UITabGroup.SidebarAppearance](uitabgroup/sidebarappearance-swift.property.md)
+### Configuring a tab group
+- [var sidebarAppearance: UITabGroup.SidebarAppearance](./sidebarappearance-swift.property.md)
   The appearance of a tab group’s section in a sidebar.
-- [var managingNavigationController: UINavigationController?](uitabgroup/managingnavigationcontroller.md)
+- [var managingNavigationController: UINavigationController?](./managingnavigationcontroller.md)
   The controller that manages navigation for items in a sidebar.
 
 

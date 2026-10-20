@@ -1,24 +1,25 @@
 # rr
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 struct { ... } rr;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [len](rr_record_s/rr/len.md)
-- [rr_class](rr_record_s/rr/rr_class.md)
-- [ttl](rr_record_s/rr/ttl.md)
-- [type](rr_record_s/rr/type.md)
+- [len](./rr/len.md)
+- [rr_class](./rr/rr_class.md)
+- [ttl](./rr/ttl.md)
+- [type](./rr/type.md)
 
 
 ---

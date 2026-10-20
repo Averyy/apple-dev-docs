@@ -1,7 +1,8 @@
 # Beauty
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for beauty services.
 
@@ -10,7 +11,7 @@ The point-of-interest category for beauty services.
 
 ## Declaration
 
-```swift
+```
 readonly Beauty: "Beauty";
 ```
 

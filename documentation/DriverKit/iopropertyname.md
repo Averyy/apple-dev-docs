@@ -1,33 +1,35 @@
 # IOPropertyName
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A string type for specifying the name of a property in the system’s registry.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef char[128] IOPropertyName;
 ```
 
 ## See Also
 
-- [CopyProperties](ioservice/copyproperties.md)
+### Managing the Registry Properties
+- [CopyProperties](./ioservice/copyproperties.md)
   Returns the registry properties associated with the current service.
-- [SetProperties](ioservice/setproperties.md)
+- [SetProperties](./ioservice/setproperties.md)
   Sends the dictionary of properties to the current service object.
-- [SearchProperty](ioservice/searchproperty.md)
+- [SearchProperty](./ioservice/searchproperty.md)
   Searches for a property with the specified name in the current service or one of its parent services, and returns the corresponding value.
-- [IORegistryPlaneName](ioregistryplanename.md)
+- [IORegistryPlaneName](./ioregistryplanename.md)
   A string type for specifying the name of a plane in the system’s registry.
-- [Search Options](3325572-search_options.md)
+- [Search Options](./api-3325572-search_options.md)
   Options to apply when searching for registry properties.
 
 

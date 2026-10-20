@@ -1,7 +1,8 @@
 # userInterfaceLayoutDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A layout direction hint.
 
@@ -14,15 +15,20 @@ A layout direction hint.
 static let userInterfaceLayoutDirection: NSImageRep.HintKey
 ```
 
+```c
+extern NSImageHintKey const NSImageHintUserInterfaceLayoutDirection;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) with an [`NSUserInterfaceLayoutDirection`](nsuserinterfacelayoutdirection.md) value.
+The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) with an [`NSUserInterfaceLayoutDirection`](../../nsuserinterfacelayoutdirection.md) value.
 
 ## See Also
 
-- [static let ctm: NSImageRep.HintKey](nsimagerep/hintkey/ctm.md)
+### Hint Keys
+- [static let ctm: NSImageRep.HintKey](./ctm.md)
   A context transform hint.
-- [static let interpolation: NSImageRep.HintKey](nsimagerep/hintkey/interpolation.md)
+- [static let interpolation: NSImageRep.HintKey](./interpolation.md)
   An interpolation hint.
 
 

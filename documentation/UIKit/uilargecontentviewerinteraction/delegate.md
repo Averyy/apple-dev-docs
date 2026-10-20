@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that can fine-tune the large content viewer interactions, especially in the presence of other gesture recognizers.
 
@@ -17,9 +18,14 @@ An object that can fine-tune the large content viewer interactions, especially i
 weak var delegate: (any UILargeContentViewerInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UILargeContentViewerInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [var gestureRecognizerForExclusionRelationship: UIGestureRecognizer](uilargecontentviewerinteraction/gesturerecognizerforexclusionrelationship.md)
+### Customizing large content viewer interactions
+- [var gestureRecognizerForExclusionRelationship: UIGestureRecognizer](./gesturerecognizerforexclusionrelationship.md)
   A gesture recognizer that you can use to set up simultaneous recognition or failure relationships with other gesture recognizers.
 
 

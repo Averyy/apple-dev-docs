@@ -1,7 +1,8 @@
 # download(_:didFailWithError:resumeData:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the download failed, with error information and data you can use to restart the download.
 
@@ -18,9 +19,13 @@ Tells the delegate that the download failed, with error information and data you
 optional func download(_ download: WKDownload, didFailWithError error: any Error, resumeData: Data?)
 ```
 
+```objc
+- (void) download:(WKDownload *) download didFailWithError:(NSError *) error resumeData:(NSData *) resumeData;
+```
+
 #### Discussion
 
-To restart a failed download, call [`resumeDownload(fromResumeData:completionHandler:)`](wkwebview/resumedownload(fromresumedata:completionhandler:).md) with `resumeData`.
+To restart a failed download, call [`resumeDownload(fromResumeData:completionHandler:)`](../wkwebview/resumedownload%28fromresumedata,completionhandler%29.md) with `resumeData`.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ To restart a failed download, call [`resumeDownload(fromResumeData:completionHan
 
 ## See Also
 
-- [func download(WKDownload, decideDestinationUsing: URLResponse, suggestedFilename: String, completionHandler: (URL?) -> Void)](wkdownloaddelegate/download(_:decidedestinationusing:suggestedfilename:completionhandler:).md)
+### Tracking Download Progress
+- [func download(WKDownload, decideDestinationUsing: URLResponse, suggestedFilename: String, completionHandler: (URL?) -> Void)](./download%28_,decidedestinationusing,suggestedfilename,completionhandler%29.md)
   Asks the delegate to provide a file destination where the system should write the download data.
-- [func downloadDidFinish(WKDownload)](wkdownloaddelegate/downloaddidfinish(_:).md)
+- [func downloadDidFinish(WKDownload)](./downloaddidfinish%28_%29.md)
   Tells the delegate that the download finished.
 
 

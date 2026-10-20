@@ -1,7 +1,8 @@
 # scriptURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the script file.
 
@@ -14,13 +15,18 @@ The URL of the script file.
 var scriptURL: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * scriptURL;
+```
+
 #### Return Value
 
 The URL of the script file.
 
 ## See Also
 
-- [init(url: URL) throws](nsuserscripttask/init(url:)-2qgls.md)
+### Specifying the Script
+- [init(url: URL) throws](./init%28url%29-2qgls.md)
   Return a user script task instance given a URL for a script file.
 
 

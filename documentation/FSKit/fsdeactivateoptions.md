@@ -1,7 +1,8 @@
 # FSDeactivateOptions
 
 **Framework**: FSKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect the behavior of deactivate methods.
 
@@ -14,31 +15,36 @@ Options that affect the behavior of deactivate methods.
 struct FSDeactivateOptions
 ```
 
+```c
+enum FSDeactivateOptions : NSInteger;
+```
+
 ## Topics
 
 ### Deactivation options
-- [static var force: FSDeactivateOptions](fsdeactivateoptions/force.md)
+- [static var force: FSDeactivateOptions](./fsdeactivateoptions/force.md)
   An option to force deactivation.
 ### Working with raw values
-- [init(rawValue: Int)](fsdeactivateoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./fsdeactivateoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [class FSItem](fsitem.md)
+### Handling activation and deactivation
+- [class FSItem](./fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [class FSActivateResult](fsactivateresult.md)
+- [class FSActivateResult](./fsactivateresult.md)
   The result of an activate call.
 
 

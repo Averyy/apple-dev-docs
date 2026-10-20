@@ -1,7 +1,8 @@
 # responses
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The matching results and suggestions for the current query string.
 
@@ -20,7 +21,7 @@ var responses: CSUserQuery.Responses { get }
 
 ## Mentions
 
-- [Building a search interface for your app](building-a-search-interface-for-your-app.md)
+- [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
 #### Discussion
 
@@ -47,15 +48,16 @@ for try await element in query.responses {
 
 ## See Also
 
-- [var suggestions: CSUserQuery.Suggestions](csuserquery/suggestions-swift.property.md)
+### Executing the query automatically
+- [var suggestions: CSUserQuery.Suggestions](./suggestions-swift.property.md)
   An asynchronous sequence of suggested completions for the current query text.
-- [CSUserQuery.Responses](csuserquery/responses-swift.struct.md)
+- [CSUserQuery.Responses](./responses-swift.struct.md)
   An asynchronous sequence that contains the results and suggestions for a query string.
-- [CSUserQuery.Suggestions](csuserquery/suggestions-swift.struct.md)
+- [CSUserQuery.Suggestions](./suggestions-swift.struct.md)
   An asynchronous sequence that contains the suggested completions for a search string.
-- [CSUserQuery.Item](csuserquery/item.md)
+- [CSUserQuery.Item](./item.md)
   A search result that the query returns in a response.
-- [CSUserQuery.Suggestion](csuserquery/suggestion.md)
+- [CSUserQuery.Suggestion](./suggestion.md)
   A suggested text completion for a query’s search term.
 
 

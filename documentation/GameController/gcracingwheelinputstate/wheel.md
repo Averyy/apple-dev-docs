@@ -1,7 +1,8 @@
 # wheel
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s wheel element.
 
@@ -15,15 +16,20 @@ The controller’s wheel element.
 var wheel: GCSteeringWheelElement { get }
 ```
 
+```objc
+@property (readonly) GCSteeringWheelElement * wheel;
+```
+
 ## See Also
 
-- [var acceleratorPedal: (any GCButtonElement)?](gcracingwheelinputstate/acceleratorpedal.md)
+### Getting input elements
+- [var acceleratorPedal: (any GCButtonElement)?](./acceleratorpedal.md)
   The controller’s accelerator pedal element.
-- [var brakePedal: (any GCButtonElement)?](gcracingwheelinputstate/brakepedal.md)
+- [var brakePedal: (any GCButtonElement)?](./brakepedal.md)
   The controller’s brake pedal element.
-- [var clutchPedal: (any GCButtonElement)?](gcracingwheelinputstate/clutchpedal.md)
+- [var clutchPedal: (any GCButtonElement)?](./clutchpedal.md)
   The controller’s clutch element.
-- [var shifter: GCGearShifterElement?](gcracingwheelinputstate/shifter.md)
+- [var shifter: GCGearShifterElement?](./shifter.md)
   The controller’s gear shift element.
 
 

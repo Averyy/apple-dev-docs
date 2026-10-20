@@ -1,7 +1,8 @@
 # kAXSheetCreatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A sheet was created (that is, a modal dialog now extends from this window).
 
@@ -12,6 +13,10 @@ A sheet was created (that is, a modal dialog now extends from this window).
 
 ```swift
 var kAXSheetCreatedNotification: String { get }
+```
+
+```c
+#define kAXSheetCreatedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # contentUTI
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Uniform Type Identifier (UTI) of the content in the buffer.
 
@@ -14,9 +15,14 @@ The Uniform Type Identifier (UTI) of the content in the buffer.
 var contentUTI: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * contentUTI;
+```
+
 ## See Also
 
-- [var completeBuffer: String](xcsourcetextbuffer/completebuffer.md)
+### Accessing Source Text
+- [var completeBuffer: String](./completebuffer.md)
   The complete buffer’s string representation.
 
 

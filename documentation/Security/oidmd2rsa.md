@@ -1,7 +1,8 @@
 # oidMd2Rsa
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let oidMd2Rsa: DERItem
+```
+
+```c
+extern const DERItem oidMd2Rsa;
 ```
 
 

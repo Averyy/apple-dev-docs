@@ -1,7 +1,8 @@
 # readBytes(_:dataLayout:bytesPerRow:region:featureChannelInfo:imageIndex:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,14 +18,19 @@
 func readBytes(_ dataBytes: UnsafeMutableRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)
 ```
 
+```objc
+- (void) readBytes:(void *) dataBytes dataLayout:(MPSDataLayout) dataLayout bytesPerRow:(NSUInteger) bytesPerRow region:(MTLRegion) region featureChannelInfo:(MPSImageReadWriteParams) featureChannelInfo imageIndex:(NSUInteger) imageIndex;
+```
+
 ## See Also
 
-- [func readBytes(UnsafeMutableRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](mpsimage/readbytes(_:datalayout:imageindex:).md)
-- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)](mpsimage/writebytes(_:datalayout:bytesperrow:region:featurechannelinfo:imageindex:).md)
-- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](mpsimage/writebytes(_:datalayout:imageindex:).md)
-- [struct MPSImageReadWriteParams](mpsimagereadwriteparams.md)
+### Methods to Read and Write Raw Data
+- [func readBytes(UnsafeMutableRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](./readbytes%28_,datalayout,imageindex%29.md)
+- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)](./writebytes%28_,datalayout,bytesperrow,region,featurechannelinfo,imageindex%29.md)
+- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](./writebytes%28_,datalayout,imageindex%29.md)
+- [struct MPSImageReadWriteParams](../mpsimagereadwriteparams.md)
   Parameters that control reading and writing of a particular set of feature channels.
-- [enum MPSDataLayout](mpsdatalayout.md)
+- [enum MPSDataLayout](../mpsdatalayout.md)
   Options that define how buffer data is arranged.
 
 

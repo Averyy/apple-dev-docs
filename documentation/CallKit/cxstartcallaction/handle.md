@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handle of the call recipient.
 
@@ -19,11 +20,16 @@ The handle of the call recipient.
 var handle: CXHandle { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CXHandle * handle;
+```
+
 ## See Also
 
-- [var isVideo: Bool](cxstartcallaction/isvideo.md)
+### Accessing Action Attributes
+- [var isVideo: Bool](./isvideo.md)
   A Boolean value that indicates whether the call is a video call.
-- [var contactIdentifier: String?](cxstartcallaction/contactidentifier.md)
+- [var contactIdentifier: String?](./contactidentifier.md)
   The identifier for the call recipient.
 
 

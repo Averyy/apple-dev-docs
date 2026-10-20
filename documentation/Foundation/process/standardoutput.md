@@ -1,7 +1,8 @@
 # standardOutput
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard output for the receiver.
 
@@ -15,6 +16,10 @@ The standard output for the receiver.
 var standardOutput: Any? { get set }
 ```
 
+```objc
+@property (retain, nullable) id standardOutput;
+```
+
 #### Discussion
 
 If `file` is an `NSPipe` object, launching the receiver automatically closes the write end of the pipe in the current task. Don’t create a handle for the pipe and pass that as the argument, or the write end of the pipe won’t be closed automatically.
@@ -23,23 +28,24 @@ If this method isn’t used, the standard output is inherited from the process t
 
 ## Parameters
 
-- `file`: The standard output for the receiver, which can be either an [`FileHandle`](filehandle.md) or an [`Pipe`](pipe.md) object.
+- `file`: The standard output for the receiver, which can be either an [`FileHandle`](../filehandle.md) or an [`Pipe`](../pipe.md) object.
 
 ## See Also
 
-- [var arguments: [String]?](process/arguments.md)
+### Configuring a process
+- [var arguments: [String]?](./arguments.md)
   The command arguments that the system uses to launch the executable.
-- [var currentDirectoryURL: URL?](process/currentdirectoryurl.md)
+- [var currentDirectoryURL: URL?](./currentdirectoryurl.md)
   The current directory for the receiver.
-- [var environment: [String : String]?](process/environment.md)
+- [var environment: [String : String]?](./environment.md)
   The environment for the receiver.
-- [var executableURL: URL?](process/executableurl.md)
+- [var executableURL: URL?](./executableurl.md)
   The receiver’s executable.
-- [var qualityOfService: QualityOfService](process/qualityofservice.md)
+- [var qualityOfService: QualityOfService](./qualityofservice.md)
   The default quality of service level the system applies to operations the task executes.
-- [var standardError: Any?](process/standarderror.md)
+- [var standardError: Any?](./standarderror.md)
   The standard error for the receiver.
-- [var standardInput: Any?](process/standardinput.md)
+- [var standardInput: Any?](./standardinput.md)
   The standard input for the receiver.
 
 

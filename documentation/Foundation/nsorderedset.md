@@ -1,7 +1,8 @@
 # NSOrderedSet
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A static, ordered collection of unique objects.
 
@@ -20,169 +21,174 @@ A static, ordered collection of unique objects.
 class NSOrderedSet
 ```
 
+```objc
+@interface NSOrderedSet : NSObject
+```
+
 #### Overview
 
-[`NSOrderedSet`](nsorderedset.md) declares the programmatic interface for static sets of distinct objects. You establish a static set’s entries when it’s created, and thereafter the entries can’t be modified. [`NSMutableOrderedSet`](nsmutableorderedset.md), on the other hand, declares a programmatic interface for dynamic sets of distinct objects. A dynamic—or mutable—set allows the addition and deletion of entries at any time, automatically allocating memory as needed.
+[`NSOrderedSet`](./nsorderedset.md) declares the programmatic interface for static sets of distinct objects. You establish a static set’s entries when it’s created, and thereafter the entries can’t be modified. [`NSMutableOrderedSet`](./nsmutableorderedset.md), on the other hand, declares a programmatic interface for dynamic sets of distinct objects. A dynamic—or mutable—set allows the addition and deletion of entries at any time, automatically allocating memory as needed.
 
 You can use ordered sets as an alternative to arrays when the order of elements is important and performance in testing whether an object is contained in the set is a consideration—testing for membership of an array is slower than testing for membership of a set.
 
 ## Topics
 
 ### Creating an Ordered Set
-- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsorderedset/init(objects:count:)-3ny0m.md)
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./nsorderedset/init%28objects,count%29-3ny0m.md)
   Creates and returns a set containing a specified number of objects from a given C array of objects.
 ### Initializing an Ordered Set
-- [convenience init(array: [Any])](nsorderedset/init(array:).md)
+- [convenience init(array: [Any])](./nsorderedset/init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
-- [convenience init(array: [Any], copyItems: Bool)](nsorderedset/init(array:copyitems:).md)
+- [convenience init(array: [Any], copyItems: Bool)](./nsorderedset/init%28array,copyitems%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array, optionally copying the items.
-- [convenience init(array: [Any], range: NSRange, copyItems: Bool)](nsorderedset/init(array:range:copyitems:).md)
+- [convenience init(array: [Any], range: NSRange, copyItems: Bool)](./nsorderedset/init%28array,range,copyitems%29.md)
   Initializes a newly allocated set with the objects that are contained in the specified range of an array, optionally copying the items.
-- [convenience init(object: Any)](nsorderedset/init(object:).md)
+- [convenience init(object: Any)](./nsorderedset/init%28object%29.md)
   Initializes a new ordered set with the object.
-- [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsorderedset/init(objects:count:)-2ai32.md)
+- [init(objects: UnsafePointer<AnyObject>?, count: Int)](./nsorderedset/init%28objects,count%29-2ai32.md)
   Initializes a newly allocated set with a specified number of objects from a given C array of objects.
-- [convenience init(orderedSet: NSOrderedSet)](nsorderedset/init(orderedset:).md)
+- [convenience init(orderedSet: NSOrderedSet)](./nsorderedset/init%28orderedset%29.md)
   Initializes a new ordered set with the contents of a set.
-- [convenience init(orderedSet: NSOrderedSet, copyItems: Bool)](nsorderedset/init(orderedset:copyitems:).md)
+- [convenience init(orderedSet: NSOrderedSet, copyItems: Bool)](./nsorderedset/init%28orderedset,copyitems%29.md)
   Initializes a new ordered set with the contents of a set, optionally copying the items.
-- [convenience init(orderedSet: NSOrderedSet, range: NSRange, copyItems: Bool)](nsorderedset/init(orderedset:range:copyitems:).md)
+- [convenience init(orderedSet: NSOrderedSet, range: NSRange, copyItems: Bool)](./nsorderedset/init%28orderedset,range,copyitems%29.md)
   Initializes a new ordered set with the contents of an ordered set, optionally copying the items.
-- [convenience init(set: Set<AnyHashable>)](nsorderedset/init(set:).md)
+- [convenience init(set: Set<AnyHashable>)](./nsorderedset/init%28set%29.md)
   Initializes a new ordered set with the contents of a set.
-- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](nsorderedset/init(set:copyitems:).md)
+- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](./nsorderedset/init%28set,copyitems%29.md)
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
-- [init()](nsorderedset/init.md)
+- [init()](./nsorderedset/init%28%29.md)
   Initializes a newly allocated ordered set.
 ### Counting Entries
-- [var count: Int](nsorderedset/count.md)
+- [var count: Int](./nsorderedset/count.md)
   The number of members in the set.
 ### Accessing Set Members
-- [func contains(Any) -> Bool](nsorderedset/contains(_:).md)
+- [func contains(Any) -> Bool](./nsorderedset/contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the ordered set.
-- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsorderedset/enumerateobjects(at:options:using:).md)
+- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsorderedset/enumerateobjects%28at,options,using%29.md)
   Executes a given block using the objects in the ordered set at the specified indexes.
-- [func enumerateObjects((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsorderedset/enumerateobjects(_:).md)
+- [func enumerateObjects((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsorderedset/enumerateobjects%28_%29.md)
   Executes a given block using each object in the ordered set.
-- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsorderedset/enumerateobjects(options:using:).md)
+- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsorderedset/enumerateobjects%28options,using%29.md)
   Executes a given block using each object in the set, using the specified enumeration options.
-- [var firstObject: Any?](nsorderedset/firstobject.md)
+- [var firstObject: Any?](./nsorderedset/firstobject.md)
   The first object in the ordered set.
-- [var lastObject: Any?](nsorderedset/lastobject.md)
+- [var lastObject: Any?](./nsorderedset/lastobject.md)
   The last object in the ordered set.
-- [func object(at: Int) -> Any](nsorderedset/object(at:).md)
+- [func object(at: Int) -> Any](./nsorderedset/object%28at%29.md)
   Returns the object at the specified index of the set.
-- [subscript(Int) -> Any](nsorderedset/subscript(_:).md)
+- [subscript(Int) -> Any](./nsorderedset/subscript%28_%29.md)
   Returns the object at the specified index of the set.
-- [func objects(at: IndexSet) -> [Any]](nsorderedset/objects(at:).md)
+- [func objects(at: IndexSet) -> [Any]](./nsorderedset/objects%28at%29.md)
   Returns the objects in the ordered set at the specified indexes.
-- [func index(of: Any) -> Int](nsorderedset/index(of:).md)
+- [func index(of: Any) -> Int](./nsorderedset/index%28of%29.md)
   Returns the index of the specified object.
-- [func index(of: Any, inSortedRange: NSRange, options: NSBinarySearchingOptions, usingComparator: (Any, Any) -> ComparisonResult) -> Int](nsorderedset/index(of:insortedrange:options:usingcomparator:).md)
+- [func index(of: Any, inSortedRange: NSRange, options: NSBinarySearchingOptions, usingComparator: (Any, Any) -> ComparisonResult) -> Int](./nsorderedset/index%28of,insortedrange,options,usingcomparator%29.md)
   Returns the index, within a specified range, of an object compared with elements in the ordered set using a given NSComparator block.
-- [func index(ofObjectAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsorderedset/index(ofobjectat:options:passingtest:).md)
+- [func index(ofObjectAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./nsorderedset/index%28ofobjectat,options,passingtest%29.md)
   Returns the index, from a given set of indexes, of the object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func index(ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsorderedset/index(ofobjectpassingtest:).md)
+- [func index(ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./nsorderedset/index%28ofobjectpassingtest%29.md)
   Returns the index of the object in the ordered set that passes a test in a given block.
-- [func index(NSEnumerationOptions, ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsorderedset/index(_:ofobjectpassingtest:).md)
+- [func index(NSEnumerationOptions, ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./nsorderedset/index%28_,ofobjectpassingtest%29.md)
   Returns the index of an object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func indexes(ofObjectsAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectsat:options:passingtest:).md)
+- [func indexes(ofObjectsAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./nsorderedset/indexes%28ofobjectsat,options,passingtest%29.md)
   Returns the index, from a given set of indexes, of the object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func indexes(ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectspassingtest:).md)
+- [func indexes(ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./nsorderedset/indexes%28ofobjectspassingtest%29.md)
   Returns the index of the object in the ordered set that passes a test in a given block.
-- [func indexes(options: NSEnumerationOptions, ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(options:ofobjectspassingtest:).md)
+- [func indexes(options: NSEnumerationOptions, ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./nsorderedset/indexes%28options,ofobjectspassingtest%29.md)
   Returns the index of an object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func objectEnumerator() -> NSEnumerator](nsorderedset/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./nsorderedset/objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the ordered set.
-- [func reverseObjectEnumerator() -> NSEnumerator](nsorderedset/reverseobjectenumerator.md)
+- [func reverseObjectEnumerator() -> NSEnumerator](./nsorderedset/reverseobjectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the ordered set.
-- [var reversed: NSOrderedSet](nsorderedset/reversed.md)
+- [var reversed: NSOrderedSet](./nsorderedset/reversed.md)
   An ordered set in the reverse order.
 ### Key-Value Coding Support
-- [func setValue(Any?, forKey: String)](nsorderedset/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./nsorderedset/setvalue%28_,forkey%29.md)
   Invokes `setValue:forKey:` on each of the receiver’s members using the specified value and key
-- [func value(forKey: String) -> Any](nsorderedset/value(forkey:).md)
+- [func value(forKey: String) -> Any](./nsorderedset/value%28forkey%29.md)
   Returns an ordered set containing the results of invoking `valueForKey:` using key on each of the ordered set’s objects.
 ### Key-Value Observing Support
-- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](nsorderedset/addobserver(_:forkeypath:options:context:).md)
+- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](./nsorderedset/addobserver%28_,forkeypath,options,context%29.md)
   Raises an exception.
-- [func removeObserver(NSObject, forKeyPath: String)](nsorderedset/removeobserver(_:forkeypath:).md)
+- [func removeObserver(NSObject, forKeyPath: String)](./nsorderedset/removeobserver%28_,forkeypath%29.md)
   Raises an exception.
-- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](nsorderedset/removeobserver(_:forkeypath:context:).md)
+- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](./nsorderedset/removeobserver%28_,forkeypath,context%29.md)
   Raises an exception.
 ### Comparing Sets
-- [func isEqual(to: NSOrderedSet) -> Bool](nsorderedset/isequal(to:).md)
+- [func isEqual(to: NSOrderedSet) -> Bool](./nsorderedset/isequal%28to%29.md)
   Compares the receiving ordered set to another ordered set.
-- [func intersects(NSOrderedSet) -> Bool](nsorderedset/intersects(_:).md)
+- [func intersects(NSOrderedSet) -> Bool](./nsorderedset/intersects%28_%29.md)
   Returns a Boolean value that indicates whether at least one object in the receiving ordered set is also present in another given ordered set.
-- [func intersectsSet(Set<AnyHashable>) -> Bool](nsorderedset/intersectsset(_:).md)
+- [func intersectsSet(Set<AnyHashable>) -> Bool](./nsorderedset/intersectsset%28_%29.md)
   Returns a Boolean value that indicates whether at least one object in the receiving ordered set is also present in another given set.
-- [func isSubset(of: NSOrderedSet) -> Bool](nsorderedset/issubset(of:)-7brc.md)
+- [func isSubset(of: NSOrderedSet) -> Bool](./nsorderedset/issubset%28of%29-7brc.md)
   Returns a Boolean value that indicates whether every object in the receiving ordered set is also present in another given ordered set.
-- [func isSubset(of: Set<AnyHashable>) -> Bool](nsorderedset/issubset(of:)-8zx9x.md)
+- [func isSubset(of: Set<AnyHashable>) -> Bool](./nsorderedset/issubset%28of%29-8zx9x.md)
   Returns a Boolean value that indicates whether every object in the receiving ordered set is also present in another given set.
 ### Creating a Sorted Array
-- [func sortedArray(using: [NSSortDescriptor]) -> [Any]](nsorderedset/sortedarray(using:).md)
+- [func sortedArray(using: [NSSortDescriptor]) -> [Any]](./nsorderedset/sortedarray%28using%29.md)
   Returns an array of the ordered set’s elements sorted as specified by a given array of sort descriptors.
-- [func sortedArray(comparator: (Any, Any) -> ComparisonResult) -> [Any]](nsorderedset/sortedarray(comparator:).md)
+- [func sortedArray(comparator: (Any, Any) -> ComparisonResult) -> [Any]](./nsorderedset/sortedarray%28comparator%29.md)
   Returns an array that lists the receiving ordered set’s elements in ascending order, as determined by the comparison method specified by a given `NSComparator` block
-- [func sortedArray(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](nsorderedset/sortedarray(options:usingcomparator:).md)
+- [func sortedArray(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](./nsorderedset/sortedarray%28options,usingcomparator%29.md)
   Returns an array that lists the receiving ordered set’s elements in ascending order, as determined by the comparison method specified by a given `NSComparator` block.
 ### Filtering Ordered Sets
-- [func filtered(using: NSPredicate) -> NSOrderedSet](nsorderedset/filtered(using:).md)
+- [func filtered(using: NSPredicate) -> NSOrderedSet](./nsorderedset/filtered%28using%29.md)
   Evaluates a given predicate against each object in the receiving ordered set and returns a new ordered set containing the objects for which the predicate returns true.
 ### Describing a Set
-- [var description: String](nsorderedset/description.md)
+- [var description: String](./nsorderedset/description.md)
   A string that represents the contents of the ordered set, formatted as a property list.
-- [func description(withLocale: Any?) -> String](nsorderedset/description(withlocale:).md)
+- [func description(withLocale: Any?) -> String](./nsorderedset/description%28withlocale%29.md)
   Returns a string that represents the contents of the ordered set, formatted as a property list.
-- [func description(withLocale: Any?, indent: Int) -> String](nsorderedset/description(withlocale:indent:).md)
+- [func description(withLocale: Any?, indent: Int) -> String](./nsorderedset/description%28withlocale,indent%29.md)
   Returns a string that represents the contents of the ordered set, formatted as a property list.
 ### Converting Other Collections
-- [var array: [Any]](nsorderedset/array.md)
+- [var array: [Any]](./nsorderedset/array.md)
   A representation of the ordered set as an array.
-- [var set: Set<AnyHashable>](nsorderedset/set.md)
+- [var set: Set<AnyHashable>](./nsorderedset/set.md)
   A representation of the set containing the contents of the ordered set.
 ### Comparing with Another Set
-- [class NSOrderedCollectionDifference](nsorderedcollectiondifference.md)
+- [class NSOrderedCollectionDifference](./nsorderedcollectiondifference.md)
   An object representing the difference between two ordered collections.
-- [struct NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions.md)
+- [struct NSOrderedCollectionDifferenceCalculationOptions](./nsorderedcollectiondifferencecalculationoptions.md)
   Constants that specify the options to use when creating an ordered collection difference.
 ### Initializers
-- [init?(coder: NSCoder)](nsorderedset/init(coder:).md)
-- [convenience init(objects: Any...)](nsorderedset/init(objects:).md)
+- [init?(coder: NSCoder)](./nsorderedset/init%28coder%29.md)
+- [convenience init(objects: Any...)](./nsorderedset/init%28objects%29.md)
 ### Default Implementations
-- [ExpressibleByArrayLiteral Implementations](nsorderedset/expressiblebyarrayliteral-implementations.md)
-- [Sequence Implementations](nsorderedset/sequence-implementations.md)
+- [ExpressibleByArrayLiteral Implementations](./nsorderedset/expressiblebyarrayliteral-implementations.md)
+- [Sequence Implementations](./nsorderedset/sequence-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSMutableOrderedSet](nsmutableorderedset.md)
+- [NSMutableOrderedSet](./nsmutableorderedset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSFastEnumeration](nsfastenumeration.md)
-- [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sequence](../swift/sequence.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSFastEnumeration](./nsfastenumeration.md)
+- [NSMutableCopying](./nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [class NSCountedSet](nscountedset.md)
+### Specialized Sets
+- [class NSCountedSet](./nscountedset.md)
   A mutable, unordered collection of distinct objects that may appear more than once in the collection.
-- [class NSMutableOrderedSet](nsmutableorderedset.md)
+- [class NSMutableOrderedSet](./nsmutableorderedset.md)
   A dynamic, ordered collection of unique objects.
 
 

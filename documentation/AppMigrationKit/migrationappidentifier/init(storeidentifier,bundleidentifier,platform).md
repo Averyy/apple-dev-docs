@@ -1,7 +1,8 @@
 # init(storeIdentifier:bundleIdentifier:platform:)
 
 **Framework**: AppMigrationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a migration app identifier instance.
 

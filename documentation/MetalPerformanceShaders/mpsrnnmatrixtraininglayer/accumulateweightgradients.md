@@ -1,7 +1,8 @@
 # accumulateWeightGradients
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var accumulateWeightGradients: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL accumulateWeightGradients;
 ```
 
 

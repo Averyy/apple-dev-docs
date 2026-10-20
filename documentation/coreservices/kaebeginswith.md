@@ -1,7 +1,8 @@
 # kAEBeginsWith
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of `operand1` begins with the value of `operand2` (for example, the string `"operand"` begins with the string `"opera"`).
 

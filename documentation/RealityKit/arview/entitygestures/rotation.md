@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A multitouch gesture used to rotate an entity.
 
@@ -18,11 +19,12 @@ static let rotation: ARView.EntityGestures
 
 ## See Also
 
-- [static let all: ARView.EntityGestures](arview/entitygestures/all.md)
+### Recognizing gesture types
+- [static let all: ARView.EntityGestures](./all.md)
   All gesture types.
-- [static let scale: ARView.EntityGestures](arview/entitygestures/scale.md)
+- [static let scale: ARView.EntityGestures](./scale.md)
   A pinch gesture used to scale an entity.
-- [static let translation: ARView.EntityGestures](arview/entitygestures/translation.md)
+- [static let translation: ARView.EntityGestures](./translation.md)
   A single touch pan gesture used to move entities along their anchoring plane.
 
 

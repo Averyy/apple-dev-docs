@@ -1,7 +1,8 @@
 # limitIncreaseSuggestion
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A suggestion to increase the usage limit, if one exists.
 
@@ -21,7 +22,8 @@ var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIn
 
 ## See Also
 
-- [var resetDate: Date?](privatecloudcomputelanguagemodel/error/quotalimitreached/resetdate.md)
+### Inspecting a quota reached error
+- [var resetDate: Date?](./resetdate.md)
   The date that the usage limit resets.
 
 

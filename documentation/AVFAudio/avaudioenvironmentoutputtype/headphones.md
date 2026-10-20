@@ -1,7 +1,8 @@
 # AVAudioEnvironmentOutputType.headphones
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Renders the audio output for headphones.
 
@@ -19,13 +20,18 @@ Renders the audio output for headphones.
 case headphones
 ```
 
+```c
+AVAudioEnvironmentOutputTypeHeadphones
+```
+
 ## See Also
 
-- [AVAudioEnvironmentOutputType.auto](avaudioenvironmentoutputtype/auto.md)
+### Choosing an output type
+- [AVAudioEnvironmentOutputType.auto](./auto.md)
   Automatically detects the playback route and picks the correct output.
-- [AVAudioEnvironmentOutputType.builtInSpeakers](avaudioenvironmentoutputtype/builtinspeakers.md)
+- [AVAudioEnvironmentOutputType.builtInSpeakers](./builtinspeakers.md)
   Renders the audio output for built-in speakers on the current hardware.
-- [AVAudioEnvironmentOutputType.externalSpeakers](avaudioenvironmentoutputtype/externalspeakers.md)
+- [AVAudioEnvironmentOutputType.externalSpeakers](./externalspeakers.md)
   Renders the audio output for external speakers according to the audio environment node’s output channel layout.
 
 

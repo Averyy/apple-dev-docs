@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The world-to-view transformation matrix this scaler uses as part of its operation.
@@ -17,6 +18,10 @@ The world-to-view transformation matrix this scaler uses as part of its operatio
 
 ```swift
 var worldToViewMatrix: simd_float4x4 { get set }
+```
+
+```objc
+@property (nonatomic) simd_float4x4 worldToViewMatrix;
 ```
 
 

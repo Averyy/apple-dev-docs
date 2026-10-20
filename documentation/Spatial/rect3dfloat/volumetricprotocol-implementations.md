@@ -1,13 +1,14 @@
 # VolumetricProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func contains(anyOf: [Point3DFloat]) -> Bool](rect3dfloat/contains(anyof:).md)
+- [func contains(anyOf: [Point3DFloat]) -> Bool](./contains%28anyof%29.md)
   Returns a Boolean value that indicates whether this volume contains any of the specified points.
-- [func intersection(Rect3DFloat) -> Rect3DFloat?](rect3dfloat/intersection(_:).md)
+- [func intersection(Rect3DFloat) -> Rect3DFloat?](./intersection%28_%29.md)
   Returns the intersection of two rectangles.
 
 

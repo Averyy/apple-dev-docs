@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the delegate from receiving callbacks about the device.
 
@@ -18,6 +19,10 @@ Removes the delegate from receiving callbacks about the device.
 
 ```swift
 func remove(_ delegate: any MTRDeviceDelegate)
+```
+
+```objc
+- (void) removeDelegate:(id<MTRDeviceDelegate>) delegate;
 ```
 
 

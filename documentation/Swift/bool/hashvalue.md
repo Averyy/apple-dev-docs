@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -28,11 +29,12 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [var customMirror: Mirror](bool/custommirror.md)
+### Inspecting a Boolean
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Bool` instance.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](bool/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the `Bool` instance.
-- [func hash(into: inout Hasher)](bool/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

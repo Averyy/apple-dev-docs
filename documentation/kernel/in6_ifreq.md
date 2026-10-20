@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct in6_ifreq {
     ...
 };
@@ -17,8 +17,8 @@ struct in6_ifreq {
 ## Topics
 
 ### Instance Properties
-- [ifr_ifru](in6_ifreq/3755267-ifr_ifru.md)
-- [ifr_name](in6_ifreq/3755268-ifr_name.md)
+- [ifr_ifru](./in6_ifreq/api-3755267-ifr_ifru.md)
+- [ifr_name](./in6_ifreq/api-3755268-ifr_name.md)
 
 
 ---

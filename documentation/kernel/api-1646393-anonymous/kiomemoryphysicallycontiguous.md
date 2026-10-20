@@ -1,14 +1,15 @@
 # kIOMemoryPhysicallyContiguous
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryPhysicallyContiguous = 0x00000010
 ```
 

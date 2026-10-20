@@ -1,7 +1,8 @@
 # NSURLRequest.NetworkServiceType.avStreaming
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A service type for medium-delay tolerant, low-medium-loss tolerant, elastic flow, constant packet interval, and variable rate and size connections.
 
@@ -20,23 +21,28 @@ A service type for medium-delay tolerant, low-medium-loss tolerant, elastic flow
 case avStreaming
 ```
 
+```c
+NSURLNetworkServiceTypeAVStreaming
+```
+
 ## See Also
 
-- [NSURLRequest.NetworkServiceType.default](nsurlrequest/networkservicetype-swift.enum/default.md)
+### Network service types
+- [NSURLRequest.NetworkServiceType.default](./default.md)
   A service type for standard network traffic.
-- [NSURLRequest.NetworkServiceType.video](nsurlrequest/networkservicetype-swift.enum/video.md)
+- [NSURLRequest.NetworkServiceType.video](./video.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
-- [NSURLRequest.NetworkServiceType.background](nsurlrequest/networkservicetype-swift.enum/background.md)
+- [NSURLRequest.NetworkServiceType.background](./background.md)
   A service type for high-delay tolerant, high-loss tolerant, elastic flow, and variable size connections.
-- [NSURLRequest.NetworkServiceType.voice](nsurlrequest/networkservicetype-swift.enum/voice.md)
+- [NSURLRequest.NetworkServiceType.voice](./voice.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
-- [NSURLRequest.NetworkServiceType.callSignaling](nsurlrequest/networkservicetype-swift.enum/callsignaling.md)
+- [NSURLRequest.NetworkServiceType.callSignaling](./callsignaling.md)
   A service for low-loss tolerant, inelastic flow, jitter tolerant, short but bursty rate, and variable size connections.
-- [NSURLRequest.NetworkServiceType.responsiveData](nsurlrequest/networkservicetype-swift.enum/responsivedata.md)
+- [NSURLRequest.NetworkServiceType.responsiveData](./responsivedata.md)
   A service type for medium-delay tolerant, elastic and inelastic flow, bursty, and long-lived connections.
-- [NSURLRequest.NetworkServiceType.responsiveAV](nsurlrequest/networkservicetype-swift.enum/responsiveav.md)
+- [NSURLRequest.NetworkServiceType.responsiveAV](./responsiveav.md)
   A service type for low-delay tolerant, low-to-medium-loss tolerant, elastic flow, variable packet interval, rate, size responsive and time-sensitive connections.
-- [NSURLRequest.NetworkServiceType.voip](nsurlrequest/networkservicetype-swift.enum/voip.md)
+- [NSURLRequest.NetworkServiceType.voip](./voip.md)
   A service type for VoIP traffic.
 
 

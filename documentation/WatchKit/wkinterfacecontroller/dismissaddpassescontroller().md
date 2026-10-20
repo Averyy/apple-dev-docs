@@ -1,7 +1,8 @@
 # dismissAddPassesController()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the pass interface controller
 
@@ -14,13 +15,18 @@ Dismisses the pass interface controller
 func dismissAddPassesController()
 ```
 
+```objc
+- (void) dismissAddPassesController;
+```
+
 #### Discussion
 
-Use this method to dismiss a pass controller you previously displayed using the [`presentAddPassesController(withPasses:completion:)`](wkinterfacecontroller/presentaddpassescontroller(withpasses:completion:).md) method. When dismissing the pass controller programmatically, WatchKit still calls the completion block you provided.
+Use this method to dismiss a pass controller you previously displayed using the [`presentAddPassesController(withPasses:completion:)`](./presentaddpassescontroller%28withpasses,completion%29.md) method. When dismissing the pass controller programmatically, WatchKit still calls the completion block you provided.
 
 ## See Also
 
-- [func presentAddPassesController(withPasses: [PKPass], completion: () -> Void)](wkinterfacecontroller/presentaddpassescontroller(withpasses:completion:).md)
+### Adding PassKit passes
+- [func presentAddPassesController(withPasses: [PKPass], completion: () -> Void)](./presentaddpassescontroller%28withpasses,completion%29.md)
   Displays a modal interface for presenting passes to the user.
 
 

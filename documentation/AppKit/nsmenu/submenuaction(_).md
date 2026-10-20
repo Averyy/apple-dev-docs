@@ -1,17 +1,22 @@
 # submenuAction(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The action method assigned to menu items that open submenus.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func submenuAction(_ sender: Any?)
+```
+
+```objc
+- (void) submenuAction:(id) sender;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ You may override this method to implement different behavior. Never invoke this 
 
 ## See Also
 
-- [func setSubmenu(NSMenu?, for: NSMenuItem)](nsmenu/setsubmenu(_:for:).md)
+### Managing Submenus
+- [func setSubmenu(NSMenu?, for: NSMenuItem)](./setsubmenu%28_,for%29.md)
   Assigns a menu to be a submenu of the menu controlled by a given menu item.
-- [var supermenu: NSMenu?](nsmenu/supermenu.md)
+- [var supermenu: NSMenu?](./supermenu.md)
   The parent menu that contains the menu as a submenu.
 
 

@@ -1,7 +1,8 @@
 # UInt64.Stride
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the distance between two values.
 

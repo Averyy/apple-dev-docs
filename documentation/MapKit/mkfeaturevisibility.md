@@ -1,7 +1,8 @@
 # MKFeatureVisibility
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the visibility of different map features.
 
@@ -19,33 +20,38 @@ Constants that indicate the visibility of different map features.
 enum MKFeatureVisibility
 ```
 
+```c
+enum MKFeatureVisibility : NSInteger;
+```
+
 ## Topics
 
 ### Visibility options
-- [MKFeatureVisibility.adaptive](mkfeaturevisibility/adaptive.md)
+- [MKFeatureVisibility.adaptive](./mkfeaturevisibility/adaptive.md)
   A constant indicating that the feature adapts to the current map state.
-- [MKFeatureVisibility.hidden](mkfeaturevisibility/hidden.md)
+- [MKFeatureVisibility.hidden](./mkfeaturevisibility/hidden.md)
   A constant indicating that the feature is hidden.
-- [MKFeatureVisibility.visible](mkfeaturevisibility/visible.md)
+- [MKFeatureVisibility.visible](./mkfeaturevisibility/visible.md)
   A constant indicating that the feature is visible.
 ### Initializers
-- [init?(rawValue: Int)](mkfeaturevisibility/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mkfeaturevisibility/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mapView: MKMapView?](mkcompassbutton/mapview.md)
+### Getting the compass attributes
+- [var mapView: MKMapView?](./mkcompassbutton/mapview.md)
   The map view that provides the heading information for the compass button.
-- [var compassVisibility: MKFeatureVisibility](mkcompassbutton/compassvisibility.md)
+- [var compassVisibility: MKFeatureVisibility](./mkcompassbutton/compassvisibility.md)
   The visibility of the compass button.
 
 

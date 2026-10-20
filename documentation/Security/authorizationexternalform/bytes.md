@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of characters representing the external form of an authorization reference.
 
@@ -13,6 +14,10 @@ An array of characters representing the external form of an authorization refere
 
 ```swift
 var bytes: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar)
+```
+
+```c
+char bytes[32];
 ```
 
 

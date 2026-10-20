@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Environment context for the device and app.
 
@@ -19,7 +20,7 @@ let environment: MetricReport.Environment?
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -27,7 +28,8 @@ This is `nil` when device or app metadata cannot be determined during metric agg
 
 ## See Also
 
-- [let timeRange: DateInterval](metricreport/timerange.md)
+### Report details
+- [let timeRange: DateInterval](./timerange.md)
   The date interval this report covers.
 
 

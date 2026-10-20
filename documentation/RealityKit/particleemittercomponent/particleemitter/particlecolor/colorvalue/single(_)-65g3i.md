@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue.single(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The particle will be the given Color.
 

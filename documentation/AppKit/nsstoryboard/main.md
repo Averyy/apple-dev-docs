@@ -1,7 +1,8 @@
 # main
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app’s main storyboard.
 
@@ -14,15 +15,20 @@ The app’s main storyboard.
 class var main: NSStoryboard? { get }
 ```
 
+```objc
+@property (class, strong, readonly, nullable) NSStoryboard * mainStoryboard;
+```
+
 #### Discussion
 
-The name of the main storyboard is stored in the [`NSMainStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmainstoryboardfile) key of the app’s `Info.plist` file.
+The name of the main storyboard is stored in the [`NSMainStoryboardFile`](../../BundleResources/information-property-list/nsmainstoryboardfile.md) key of the app’s `Info.plist` file.
 
 ## See Also
 
-- [convenience init(name: NSStoryboard.Name, bundle: Bundle?)](nsstoryboard/init(name:bundle:).md)
+### Creating a Storyboard Object
+- [convenience init(name: NSStoryboard.Name, bundle: Bundle?)](./init%28name,bundle%29.md)
   Creates a storyboard based on the named storyboard file in the specified bundle.
-- [NSStoryboard.Name](nsstoryboard/name.md)
+- [NSStoryboard.Name](./name.md)
   The name of the storyboard file.
 
 

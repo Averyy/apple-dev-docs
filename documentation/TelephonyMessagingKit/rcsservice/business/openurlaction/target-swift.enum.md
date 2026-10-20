@@ -1,7 +1,8 @@
 # RCSService.Business.OpenURLAction.Target
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing the target to open the URL in.
 
@@ -17,27 +18,28 @@ enum Target
 ## Topics
 
 ### Accessing targets
-- [RCSService.Business.OpenURLAction.Target.defaultBrowser](rcsservice/business/openurlaction/target-swift.enum/defaultbrowser.md)
+- [RCSService.Business.OpenURLAction.Target.defaultBrowser](./target-swift.enum/defaultbrowser.md)
   Open using default browser.
-- [case inApp(detent: RCSService.Business.OpenURLAction.Detent)](rcsservice/business/openurlaction/target-swift.enum/inapp(detent:).md)
+- [case inApp(detent: RCSService.Business.OpenURLAction.Detent)](./target-swift.enum/inapp%28detent%29.md)
   Open in-app.
-- [RCSService.Business.OpenURLAction.Detent](rcsservice/business/openurlaction/detent.md)
+- [RCSService.Business.OpenURLAction.Detent](./detent.md)
   Enumeration that represents a height to apply when opening a URL.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let url: URL](rcsservice/business/openurlaction/url.md)
+### Accessing action properties
+- [let url: URL](./url.md)
   URL to open.
-- [let target: RCSService.Business.OpenURLAction.Target](rcsservice/business/openurlaction/target-swift.property.md)
+- [let target: RCSService.Business.OpenURLAction.Target](./target-swift.property.md)
   Target to use when opening URL.
 
 

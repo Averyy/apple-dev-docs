@@ -1,7 +1,8 @@
 # MPSNNOptimizerDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies properties used by an optimizer kernel.
 
@@ -19,41 +20,46 @@ An object that specifies properties used by an optimizer kernel.
 class MPSNNOptimizerDescriptor
 ```
 
+```objc
+@interface MPSNNOptimizerDescriptor : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(learningRate: Float, gradientRescale: Float, applyGradientClipping: Bool, gradientClipMax: Float, gradientClipMin: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](mpsnnoptimizerdescriptor/init(learningrate:gradientrescale:applygradientclipping:gradientclipmax:gradientclipmin:regularizationtype:regularizationscale:).md)
-- [init(learningRate: Float, gradientRescale: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](mpsnnoptimizerdescriptor/init(learningrate:gradientrescale:regularizationtype:regularizationscale:).md)
+- [init(learningRate: Float, gradientRescale: Float, applyGradientClipping: Bool, gradientClipMax: Float, gradientClipMin: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](./mpsnnoptimizerdescriptor/init%28learningrate,gradientrescale,applygradientclipping,gradientclipmax,gradientclipmin,regularizationtype,regularizationscale%29.md)
+- [init(learningRate: Float, gradientRescale: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](./mpsnnoptimizerdescriptor/init%28learningrate,gradientrescale,regularizationtype,regularizationscale%29.md)
 ### Instance Properties
-- [var applyGradientClipping: Bool](mpsnnoptimizerdescriptor/applygradientclipping.md)
-- [var gradientClipMax: Float](mpsnnoptimizerdescriptor/gradientclipmax.md)
-- [var gradientClipMin: Float](mpsnnoptimizerdescriptor/gradientclipmin.md)
-- [var gradientRescale: Float](mpsnnoptimizerdescriptor/gradientrescale.md)
-- [var learningRate: Float](mpsnnoptimizerdescriptor/learningrate.md)
-- [var regularizationScale: Float](mpsnnoptimizerdescriptor/regularizationscale.md)
-- [var regularizationType: MPSNNRegularizationType](mpsnnoptimizerdescriptor/regularizationtype.md)
+- [var applyGradientClipping: Bool](./mpsnnoptimizerdescriptor/applygradientclipping.md)
+- [var gradientClipMax: Float](./mpsnnoptimizerdescriptor/gradientclipmax.md)
+- [var gradientClipMin: Float](./mpsnnoptimizerdescriptor/gradientclipmin.md)
+- [var gradientRescale: Float](./mpsnnoptimizerdescriptor/gradientrescale.md)
+- [var learningRate: Float](./mpsnnoptimizerdescriptor/learningrate.md)
+- [var regularizationScale: Float](./mpsnnoptimizerdescriptor/regularizationscale.md)
+- [var regularizationType: MPSNNRegularizationType](./mpsnnoptimizerdescriptor/regularizationtype.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSNNOptimizerAdam](mpsnnoptimizeradam.md)
+### Optimization Layers
+- [class MPSNNOptimizerAdam](./mpsnnoptimizeradam.md)
   An optimization layer that performs an Adam pdate.
-- [class MPSNNOptimizerRMSProp](mpsnnoptimizerrmsprop.md)
+- [class MPSNNOptimizerRMSProp](./mpsnnoptimizerrmsprop.md)
   An optimization layer that performs a root mean square propagation update.
-- [class MPSNNOptimizerStochasticGradientDescent](mpsnnoptimizerstochasticgradientdescent.md)
+- [class MPSNNOptimizerStochasticGradientDescent](./mpsnnoptimizerstochasticgradientdescent.md)
   An optimization layer that performs a gradient descent with an optional momentum update.
-- [class MPSNNOptimizer](mpsnnoptimizer.md)
+- [class MPSNNOptimizer](./mpsnnoptimizer.md)
   The base class for optimization layers.
 
 

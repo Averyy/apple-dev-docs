@@ -1,7 +1,8 @@
 # init(coordinateRegion:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a points of interest search request based on existing region.
 
@@ -20,13 +21,18 @@ Creates a points of interest search request based on existing region.
 init(coordinateRegion region: MKCoordinateRegion)
 ```
 
+```objc
+- (instancetype) initWithCoordinateRegion:(MKCoordinateRegion) region;
+```
+
 ## Parameters
 
 - `region`: The region to search.
 
 ## See Also
 
-- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](mklocalpointsofinterestrequest/init(center:radius:).md)
+### Creating a point of interest request
+- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](./init%28center,radius%29.md)
   Creates a points of interest search request centered on the provided coordinate with the provided radius.
 
 

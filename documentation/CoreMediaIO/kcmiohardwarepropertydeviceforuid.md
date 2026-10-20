@@ -1,7 +1,8 @@
 # kCMIOHardwarePropertyDeviceForUID
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,21 +14,26 @@
 var kCMIOHardwarePropertyDeviceForUID: Int { get }
 ```
 
+```c
+kCMIOHardwarePropertyDeviceForUID
+```
+
 ## See Also
 
-- [var kCMIOHardwarePropertyAllowScreenCaptureDevices: Int](kcmiohardwarepropertyallowscreencapturedevices.md)
-- [var kCMIOHardwarePropertyAllowWirelessScreenCaptureDevices: Int](kcmiohardwarepropertyallowwirelessscreencapturedevices.md)
-- [var kCMIOHardwarePropertyDefaultInputDevice: Int](kcmiohardwarepropertydefaultinputdevice.md)
-- [var kCMIOHardwarePropertyDefaultOutputDevice: Int](kcmiohardwarepropertydefaultoutputdevice.md)
-- [var kCMIOHardwarePropertyDevices: Int](kcmiohardwarepropertydevices.md)
-- [var kCMIOHardwarePropertyIsInitingOrExiting: Int](kcmiohardwarepropertyisinitingorexiting.md)
-- [var kCMIOHardwarePropertyPlugInForBundleID: Int](kcmiohardwarepropertypluginforbundleid.md)
-- [var kCMIOHardwarePropertyProcessIsMain: Int](kcmiohardwarepropertyprocessismain.md)
-- [var kCMIOHardwarePropertyProcessIsMaster: Int](kcmiohardwarepropertyprocessismaster.md)
-- [var kCMIOHardwarePropertySleepingIsAllowed: Int](kcmiohardwarepropertysleepingisallowed.md)
-- [var kCMIOHardwarePropertySuspendedBySystem: Int](kcmiohardwarepropertysuspendedbysystem.md)
-- [var kCMIOHardwarePropertyUnloadingIsAllowed: Int](kcmiohardwarepropertyunloadingisallowed.md)
-- [var kCMIOHardwarePropertyUserSessionIsActiveOrHeadless: Int](kcmiohardwarepropertyusersessionisactiveorheadless.md)
+### Constants
+- [var kCMIOHardwarePropertyAllowScreenCaptureDevices: Int](./kcmiohardwarepropertyallowscreencapturedevices.md)
+- [var kCMIOHardwarePropertyAllowWirelessScreenCaptureDevices: Int](./kcmiohardwarepropertyallowwirelessscreencapturedevices.md)
+- [var kCMIOHardwarePropertyDefaultInputDevice: Int](./kcmiohardwarepropertydefaultinputdevice.md)
+- [var kCMIOHardwarePropertyDefaultOutputDevice: Int](./kcmiohardwarepropertydefaultoutputdevice.md)
+- [var kCMIOHardwarePropertyDevices: Int](./kcmiohardwarepropertydevices.md)
+- [var kCMIOHardwarePropertyIsInitingOrExiting: Int](./kcmiohardwarepropertyisinitingorexiting.md)
+- [var kCMIOHardwarePropertyPlugInForBundleID: Int](./kcmiohardwarepropertypluginforbundleid.md)
+- [var kCMIOHardwarePropertyProcessIsMain: Int](./kcmiohardwarepropertyprocessismain.md)
+- [var kCMIOHardwarePropertyProcessIsMaster: Int](./kcmiohardwarepropertyprocessismaster.md)
+- [var kCMIOHardwarePropertySleepingIsAllowed: Int](./kcmiohardwarepropertysleepingisallowed.md)
+- [var kCMIOHardwarePropertySuspendedBySystem: Int](./kcmiohardwarepropertysuspendedbysystem.md)
+- [var kCMIOHardwarePropertyUnloadingIsAllowed: Int](./kcmiohardwarepropertyunloadingisallowed.md)
+- [var kCMIOHardwarePropertyUserSessionIsActiveOrHeadless: Int](./kcmiohardwarepropertyusersessionisactiveorheadless.md)
 
 
 ---

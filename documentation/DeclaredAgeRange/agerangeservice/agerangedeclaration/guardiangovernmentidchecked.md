@@ -1,7 +1,8 @@
 # AgeRangeService.AgeRangeDeclaration.guardianGovernmentIDChecked
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a government ID.
 
@@ -19,15 +20,16 @@ case guardianGovernmentIDChecked
 
 ## See Also
 
-- [AgeRangeService.AgeRangeDeclaration.paymentChecked](agerangeservice/agerangedeclaration/paymentchecked.md)
+### Deprecated
+- [AgeRangeService.AgeRangeDeclaration.paymentChecked](./paymentchecked.md)
   Indicates the person set their own age range using a payment method, like a credit card.
-- [AgeRangeService.AgeRangeDeclaration.governmentIDChecked](agerangeservice/agerangedeclaration/governmentidchecked.md)
+- [AgeRangeService.AgeRangeDeclaration.governmentIDChecked](./governmentidchecked.md)
   Indicates the person set their own age range using a government ID.
-- [AgeRangeService.AgeRangeDeclaration.checkedByOtherMethod](agerangeservice/agerangedeclaration/checkedbyothermethod.md)
+- [AgeRangeService.AgeRangeDeclaration.checkedByOtherMethod](./checkedbyothermethod.md)
   Indicates the person set their own age range using an unspecified method.
-- [AgeRangeService.AgeRangeDeclaration.guardianPaymentChecked](agerangeservice/agerangedeclaration/guardianpaymentchecked.md)
+- [AgeRangeService.AgeRangeDeclaration.guardianPaymentChecked](./guardianpaymentchecked.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a payment method, like a credit card.
-- [AgeRangeService.AgeRangeDeclaration.guardianCheckedByOtherMethod](agerangeservice/agerangedeclaration/guardiancheckedbyothermethod.md)
+- [AgeRangeService.AgeRangeDeclaration.guardianCheckedByOtherMethod](./guardiancheckedbyothermethod.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using an unspecified method.
 
 

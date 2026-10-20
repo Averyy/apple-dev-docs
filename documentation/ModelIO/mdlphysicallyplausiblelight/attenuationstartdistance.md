@@ -1,7 +1,8 @@
 # attenuationStartDistance
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the light source, in units of local coordinate space, at which its illumination begins to diminish.
 
@@ -19,6 +20,10 @@ The distance from the light source, in units of local coordinate space, at which
 var attenuationStartDistance: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float attenuationStartDistance;
+```
+
 #### Discussion
 
 At distances less than the start distance, the light’s illumination is at full intensity. At distances greater than the end distance, the light provides no illumination. At distances in between the start and end distance, the attenuationFalloffExponent property defines the transition from full illumination to no illumination.
@@ -27,7 +32,8 @@ The default distance is `1.0`.
 
 ## See Also
 
-- [var attenuationEndDistance: Float](mdlphysicallyplausiblelight/attenuationenddistance.md)
+### Managing Attenuation
+- [var attenuationEndDistance: Float](./attenuationenddistance.md)
   The distance from the light source, in units of local coordinate space, at which its illumination becomes zero.
 
 

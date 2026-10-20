@@ -1,7 +1,8 @@
 # dynamicallyCall(withKeywordArguments:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an instance of `T` by applying the provided argument values to the properties.
 

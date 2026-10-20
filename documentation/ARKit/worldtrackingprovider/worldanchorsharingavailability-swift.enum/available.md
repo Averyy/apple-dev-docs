@@ -1,7 +1,8 @@
 # WorldTrackingProvider.WorldAnchorSharingAvailability.available
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 World anchors can be shared with nearby participants. This indicates that the device is in a SharePlay session with nearby participants.
 

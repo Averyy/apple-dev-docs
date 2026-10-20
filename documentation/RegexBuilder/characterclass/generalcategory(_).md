@@ -1,7 +1,8 @@
 # generalCategory(_:)
 
 **Framework**: RegexBuilder  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a character class that matches any element with the given Unicode general category.
 
@@ -11,7 +12,7 @@ Returns a character class that matches any element with the given Unicode genera
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

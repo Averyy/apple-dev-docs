@@ -1,12 +1,13 @@
 # unknown
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An unknown error.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,16 @@ WatchKit reports this error when it can’t determine the precise reason for the
 
 ## See Also
 
-- [static var downloadFailed: WatchKitError.Code](watchkiterror/downloadfailed.md)
+### Accessing Error Codes
+- [static var downloadFailed: WatchKitError.Code](./downloadfailed.md)
   A download error.
-- [static var invalidArgument: WatchKitError.Code](watchkiterror/invalidargument.md)
+- [static var invalidArgument: WatchKitError.Code](./invalidargument.md)
   An invalid argument error.
-- [static var mediaPlayerFailed: WatchKitError.Code](watchkiterror/mediaplayerfailed.md)
+- [static var mediaPlayerFailed: WatchKitError.Code](./mediaplayerfailed.md)
   A media player error.
-- [static var recordingFailed: WatchKitError.Code](watchkiterror/recordingfailed.md)
+- [static var recordingFailed: WatchKitError.Code](./recordingfailed.md)
   An audio recording error.
-- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](watchkiterror/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](./applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 
 

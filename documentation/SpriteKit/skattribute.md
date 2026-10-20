@@ -1,7 +1,8 @@
 # SKAttribute
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specification for dynamic per-node data used with a custom shader.
 
@@ -20,13 +21,17 @@ A specification for dynamic per-node data used with a custom shader.
 class SKAttribute
 ```
 
+```objc
+@interface SKAttribute : NSObject
+```
+
 ## Mentions
 
-- [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
+- [Creating a Custom Fragment Shader](./creating-a-custom-fragment-shader.md)
 
 #### Overview
 
-To define an attribute for your shader, you create an [`SKAttribute`](skattribute.md) object with a unique name and data type, which is a [`SKAttributeType`](skattributetype.md) enum. After creating an [`SKShader`](skshader.md) object, custom attributes are added to its [`attributes`](skshader/attributes.md) array. Attribute values are set on the parent node with [`setValue(_:forAttribute:)`](sknode/setvalue(_:forattribute:).md) and can change for each execution of a shader without the need for recompilation.
+To define an attribute for your shader, you create an [`SKAttribute`](./skattribute.md) object with a unique name and data type, which is a [`SKAttributeType`](./skattributetype.md) enum. After creating an [`SKShader`](./skshader.md) object, custom attributes are added to its [`attributes`](./skshader/attributes.md) array. Attribute values are set on the parent node with [`setValue(_:forAttribute:)`](./sknode/setvalue%28_,forattribute%29.md) and can change for each execution of a shader without the need for recompilation.
 
 The following listing shows how you can use an attribute to pass the size of a sprite into a shader using an attribute. In this example, `a_sprite_size` is available as a global `vec2` within the GLSL code.
 
@@ -49,39 +54,40 @@ sprite.setValue(SKAttributeValue(vectorFloat2: spriteSize),
 ## Topics
 
 ### Constants
-- [enum SKAttributeType](skattributetype.md)
+- [enum SKAttributeType](./skattributetype.md)
   Options that specify an attribute’s data type.
 ### Initializers
-- [init(name: String, type: SKAttributeType)](skattribute/init(name:type:).md)
+- [init(name: String, type: SKAttributeType)](./skattribute/init%28name,type%29.md)
   Creates and initializes a new attribute object of a specified type with a name that can be referenced within the shader.
-- [init?(coder: NSCoder)](skattribute/init(coder:).md)
+- [init?(coder: NSCoder)](./skattribute/init%28coder%29.md)
 ### Instance Properties
-- [var name: String](skattribute/name.md)
+- [var name: String](./skattribute/name.md)
   The receiver’s name
-- [var type: SKAttributeType](skattribute/type.md)
+- [var type: SKAttributeType](./skattribute/type.md)
   The data type of the attribute’s value.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKShader](skshader.md)
+### Shaders
+- [class SKShader](./skshader.md)
   An object that allows you to apply a custom fragment shader.
-- [class SKAttributeValue](skattributevalue.md)
+- [class SKAttributeValue](./skattributevalue.md)
   A container for dynamic shader data associated with a node.
-- [class SKUniform](skuniform.md)
+- [class SKUniform](./skuniform.md)
   A container for uniform shader data.
 
 

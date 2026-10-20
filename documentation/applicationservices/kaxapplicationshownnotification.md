@@ -1,7 +1,8 @@
 # kAXApplicationShownNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application was shown (that is, a hidden application is now visible).
 
@@ -12,6 +13,10 @@ The application was shown (that is, a hidden application is now visible).
 
 ```swift
 var kAXApplicationShownNotification: String { get }
+```
+
+```c
+#define kAXApplicationShownNotification
 ```
 
 

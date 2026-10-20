@@ -1,7 +1,8 @@
 # init(referencing:converter:destinationPixelFormat:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new pixel buffer that references the specified Core Video pixel buffer and populated converter.
 
@@ -11,7 +12,7 @@ Returns a new pixel buffer that references the specified Core Video pixel buffer
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,11 @@ Returns a new pixel buffer that references the specified Core Video pixel buffer
 init(referencing lockedCVPixelBuffer: CVPixelBuffer, converter: vImageConverter, destinationPixelFormat: Format.Type = Format.self)
 ```
 
+Available when `Format` conforms to `SinglePlanePixelFormat`.
+
 #### Discussion
 
-The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](vimage/pixelbuffer/init(referencing:converter:destinationpixelformat:).md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output:
+The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](../../../CoreImage/ciimageprocessorkernel.md) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](./init%28referencing,converter,destinationpixelformat%29.md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output:
 
 ```swift
 class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {
@@ -90,17 +93,19 @@ class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {
 
 ## Parameters
 
-- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockbaseaddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:)) to lock and unlock the pixel buffer.
+- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](../../../CoreVideo/cvpixelbufferlockbaseaddress%28_,_%29.md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](../../../CoreVideo/cvpixelbufferunlockbaseaddress%28_,_%29.md) to lock and unlock the pixel buffer.
 - `converter`: The vImage Core Video to Core Graphics any-to-any converter.
 - `destinationPixelFormat`: The pixel format of the initialized buffer.
 
 ## See Also
 
-- [func vImageBuffer_InitForCopyFromCVPixelBuffer(UnsafeMutablePointer<vImage_Buffer>, vImageConverter, CVPixelBuffer, vImage_Flags) -> vImage_Error](vimagebuffer_initforcopyfromcvpixelbuffer(_:_:_:_:).md)
+### Related Documentation
+- [func vImageBuffer_InitForCopyFromCVPixelBuffer(UnsafeMutablePointer<vImage_Buffer>, vImageConverter, CVPixelBuffer, vImage_Flags) -> vImage_Error](../../vimagebuffer_initforcopyfromcvpixelbuffer%28_,_,_,_%29.md)
   Initializes an array of vImage buffers in the order necessary to copy from a Core Video pixel buffer.
-- [init(copying: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, cgImageFormat: inout vImage_CGImageFormat, pixelFormat: Format.Type) throws](vimage/pixelbuffer/init(copying:cvimageformat:cgimageformat:pixelformat:).md)
+### Creating a pixel buffer from a Core Video buffer
+- [init(copying: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, cgImageFormat: inout vImage_CGImageFormat, pixelFormat: Format.Type) throws](./init%28copying,cvimageformat,cgimageformat,pixelformat%29.md)
   Initializes a pixel buffer by copying the data from a Core Video pixel buffer.
-- [init(referencing: CVPixelBuffer, planeIndex: Int, overrideSize: vImage.Size?, pixelFormat: Format.Type)](vimage/pixelbuffer/init(referencing:planeindex:overridesize:pixelformat:).md)
+- [init(referencing: CVPixelBuffer, planeIndex: Int, overrideSize: vImage.Size?, pixelFormat: Format.Type)](./init%28referencing,planeindex,overridesize,pixelformat%29.md)
   Initializes a pixel buffer by refencing the data from a single plane of a multiplane Core Video pixel buffer.
 
 

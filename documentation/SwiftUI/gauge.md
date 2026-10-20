@@ -1,7 +1,8 @@
 # Gauge
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that shows a value within a range.
 
@@ -38,7 +39,7 @@ struct SimpleGauge: View {
 }
 ```
 
-![A linear gauge displaying a current value set to 40 percent in a range of 0](/images/com.apple.SwiftUI/SwiftUI-Gauge-ValueLabelLinear@2x.png)
+![A linear gauge displaying a current value set to 40 percent in a range of 0](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Gauge-ValueLabelLinear@2x.png)
 
 You can make a gauge more descriptive by describing its purpose, showing its current value and its start and end values. This example shows the gauge variant that accepts a range and adds labels using multiple trailing closures describing the current value and the minimum and maximum values of the gauge:
 
@@ -62,13 +63,13 @@ struct LabeledGauge: View {
 }
 ```
 
-![A linear gauge describing heart-rate in beats per minute with its](/images/com.apple.SwiftUI/SwiftUI-Gauge-Label-CurrentValueLinear@2x.png)
+![A linear gauge describing heart-rate in beats per minute with its](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Gauge-Label-CurrentValueLinear@2x.png)
 
 As shown above, the default style for gauges is a linear, continuous bar with an indicator showing the current value, and optional labels describing the gauge’s purpose, current, minimum, and maximum values.
 
 > **Note**: Some visual presentations of `Gauge` don’t display all the labels required by the API. However, the accessibility system does use the label content and you should use these labels to fully describe the gauge for accessibility users.
 
-To change the style of a gauge, use the [`gaugeStyle(_:)`](view/gaugestyle(_:).md) view modifier and supply an initializer for a specific gauge style. For example, to display the same gauge in a circular style, apply the [`circular`](gaugestyle/circular.md) style to the view:
+To change the style of a gauge, use the [`gaugeStyle(_:)`](./view/gaugestyle%28_%29.md) view modifier and supply an initializer for a specific gauge style. For example, to display the same gauge in a circular style, apply the [`circular`](./gaugestyle/circular.md) style to the view:
 
 ```swift
 struct LabeledGauge: View {
@@ -91,7 +92,7 @@ struct LabeledGauge: View {
 }
 ```
 
-![A circular gauge describing heart rate in beats per minute with its](/images/com.apple.SwiftUI/SwiftUI-Gauge-LabeledCircular@2x.png)
+![A circular gauge describing heart rate in beats per minute with its](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Gauge-LabeledCircular@2x.png)
 
 To style elements of a gauge’s presentation, you apply view modifiers to the elements that you want to change. In the example below, the current value, minimum and maximum value labels have custom colors:
 
@@ -120,9 +121,9 @@ struct StyledGauge: View {
 }
 ```
 
-![A circular gauge describing heart rate in beats per minute with its](/images/com.apple.SwiftUI/SwiftUI-Gauge-CircularStyled@2x.png)
+![A circular gauge describing heart rate in beats per minute with its](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Gauge-CircularStyled@2x.png)
 
-You can further style a gauge’s appearance by supplying a tint color or a gradient to the style’s initializer. The following example shows the effect of a gradient in the initialization of a [`CircularGaugeStyle`](circulargaugestyle.md) gauge with a colorful gradient across the length of the gauge:
+You can further style a gauge’s appearance by supplying a tint color or a gradient to the style’s initializer. The following example shows the effect of a gradient in the initialization of a [`CircularGaugeStyle`](./circulargaugestyle.md) gauge with a colorful gradient across the length of the gauge:
 
 ```swift
 struct StyledGauge: View {
@@ -150,38 +151,39 @@ struct StyledGauge: View {
 }
 ```
 
-![A screenshot showing a circular gauge with a gradient](/images/com.apple.SwiftUI/SwiftUI-Gauge-Circular-Gradient@2x.png)
+![A screenshot showing a circular gauge with a gradient](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Gauge-Circular-Gradient@2x.png)
 
 ## Topics
 
 ### Creating a gauge
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label)](gauge/init(value:in:label:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label)](./gauge/init%28value,in,label%29.md)
   Creates a gauge showing a value within a range and describes the gauge’s purpose and current value.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](gauge/init(value:in:label:currentvaluelabel:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](./gauge/init%28value,in,label,currentvaluelabel%29.md)
   Creates a gauge showing a value within a range and that describes the gauge’s purpose and current value.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, markedValueLabels: () -> MarkedValueLabels)](gauge/init(value:in:label:currentvaluelabel:markedvaluelabels:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, markedValueLabels: () -> MarkedValueLabels)](./gauge/init%28value,in,label,currentvaluelabel,markedvaluelabels%29.md)
   Creates a gauge representing a value within a range.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel)](gauge/init(value:in:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel)](./gauge/init%28value,in,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel%29.md)
   Creates a gauge showing a value within a range and describes the gauge’s current, minimum, and maximum values.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel, markedValueLabels: () -> MarkedValueLabels)](gauge/init(value:in:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:markedvaluelabels:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel, markedValueLabels: () -> MarkedValueLabels)](./gauge/init%28value,in,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel,markedvaluelabels%29.md)
   Creates a gauge representing a value within a range.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+### Indicating a value
+- [func gaugeStyle<S>(S) -> some View](./view/gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [struct ProgressView](progressview.md)
+- [struct ProgressView](./progressview.md)
   A view that shows the progress toward completion of a task.
-- [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
+- [func progressViewStyle<S>(S) -> some View](./view/progressviewstyle%28_%29.md)
   Sets the style for progress views in this view.
-- [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
+- [struct DefaultDateProgressLabel](./defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
-- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+- [struct DefaultButtonLabel](./defaultbuttonlabel.md)
   The default label to use for a button.
 
 

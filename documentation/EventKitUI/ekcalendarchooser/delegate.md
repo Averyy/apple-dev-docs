@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar chooser’s delegate.
 
@@ -17,13 +18,18 @@ The calendar chooser’s delegate.
 weak var delegate: (any EKCalendarChooserDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<EKCalendarChooserDelegate> delegate;
+```
+
 #### Discussion
 
-This object should conform to [`EKCalendarChooserDelegate`](ekcalendarchooserdelegate.md).
+This object should conform to [`EKCalendarChooserDelegate`](../ekcalendarchooserdelegate.md).
 
 ## See Also
 
-- [protocol EKCalendarChooserDelegate](ekcalendarchooserdelegate.md)
+### Managing Calendar Selection
+- [protocol EKCalendarChooserDelegate](../ekcalendarchooserdelegate.md)
   Methods a calendar chooser’s delegate may use to receive notifications.
 
 

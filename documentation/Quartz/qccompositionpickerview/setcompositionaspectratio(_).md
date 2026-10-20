@@ -1,17 +1,24 @@
 # setCompositionAspectRatio(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets  the aspect ratio used to display compositions in the composition picker view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func setCompositionAspectRatio(_ ratio: NSSize)
+```
+
+```objc
+- (void) setCompositionAspectRatio:(NSSize) ratio;
 ```
 
 ## Parameters
@@ -20,19 +27,20 @@ func setCompositionAspectRatio(_ ratio: NSSize)
 
 ## See Also
 
-- [func setCompositionsFromRepositoryWithProtocol(String!, andAttributes: [AnyHashable : Any]!)](qccompositionpickerview/setcompositionsfromrepositorywithprotocol(_:andattributes:).md)
+### Managing the Composition Picker View
+- [func setCompositionsFromRepositoryWithProtocol(String!, andAttributes: [AnyHashable : Any]!)](./setcompositionsfromrepositorywithprotocol%28_,andattributes%29.md)
   Sets the  compositions in the composition picker view  to those that match the specified criteria.
-- [func compositions() -> [Any]!](qccompositionpickerview/compositions.md)
+- [func compositions() -> [Any]!](./compositions%28%29.md)
   Returns the list of compositions that are currently in the composition picker view.
-- [func setAllowsEmptySelection(Bool)](qccompositionpickerview/setallowsemptyselection(_:).md)
+- [func setAllowsEmptySelection(Bool)](./setallowsemptyselection%28_%29.md)
   Sets whether to allow an empty selection in the composition picker view.
-- [func allowsEmptySelection() -> Bool](qccompositionpickerview/allowsemptyselection.md)
+- [func allowsEmptySelection() -> Bool](./allowsemptyselection%28%29.md)
   Retrieves the empty-selection state of the composition picker view.
-- [func compositionAspectRatio() -> NSSize](qccompositionpickerview/compositionaspectratio.md)
+- [func compositionAspectRatio() -> NSSize](./compositionaspectratio%28%29.md)
   Retrieves the aspect ratio used to display compositions in the composition picker  view.
-- [func setSelectedComposition(QCComposition!)](qccompositionpickerview/setselectedcomposition(_:).md)
+- [func setSelectedComposition(QCComposition!)](./setselectedcomposition%28_%29.md)
   Sets a composition as selected in the composition picker view.
-- [func selectedComposition() -> QCComposition!](qccompositionpickerview/selectedcomposition.md)
+- [func selectedComposition() -> QCComposition!](./selectedcomposition%28%29.md)
   Returns the composition that is currently selected in the composition picker view.
 
 

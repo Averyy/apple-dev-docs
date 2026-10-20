@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var minimum: HKQuantity { get }
+```
+
+```c
+extern HKQuantity *HKAppleSleepingBreathingDisturbancesMinimumQuantityForClassification(HKAppleSleepingBreathingDisturbancesClassification classification);
 ```
 
 

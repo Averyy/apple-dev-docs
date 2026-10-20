@@ -1,24 +1,26 @@
 # kInTransitions
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kInTransitions
 ```
 
 ## See Also
 
-- [kLastTransitionTime](iostatereporter_valueselector/klasttransitiontime.md)
-- [kResidencyTime](iostatereporter_valueselector/kresidencytime.md)
+### Constants
+- [kLastTransitionTime](./klasttransitiontime.md)
+- [kResidencyTime](./kresidencytime.md)
 
 
 ---

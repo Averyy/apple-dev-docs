@@ -1,7 +1,8 @@
 # RequestMirroringCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to prompt the user to share their screen using AirPlay Mirroring.
 
@@ -13,7 +14,7 @@ The command to prompt the user to share their screen using AirPlay Mirroring.
 
 ## Declaration
 
-```swift
+```
 object RequestMirroringCommand.Command
 ```
 
@@ -23,7 +24,11 @@ object RequestMirroringCommand.Command
 - `DestinationName` (string): The name of the AirPlay Mirroring destination.
 - `Password` (string): The screen-sharing password that the device uses when connecting to the destination.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RequestMirroring`
 - `ScanTime` (integer): The number of seconds, from `10` to `300`, for the device to spend searching for the destination. The default value is `30`.
 
 

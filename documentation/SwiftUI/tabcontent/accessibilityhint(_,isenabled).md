@@ -1,7 +1,8 @@
 # accessibilityHint(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Communicates to the user what happens after selecting the tab.
 
@@ -19,6 +20,23 @@ Communicates to the user what happens after selecting the tab.
 ```swift
 @export(implementation)
 nonisolated func accessibilityHint(_ hint: LocalizedStringResource, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityHint(_ hint: Text, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+```swift
+nonisolated
+func accessibilityHint(_ hintKey: LocalizedStringKey, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+```swift
+nonisolated
+func accessibilityHint<S>(_ hint: S, isEnabled: Bool = true) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
 #### Discussion
@@ -45,14 +63,15 @@ var body: some View {
 
 ## See Also
 
+### Configuring tab accessibility
 - [func accessibilityIdentifier(String, isEnabled: Bool) -> some TabContent<Self.TabValue>
-](tabcontent/accessibilityidentifier(_:isenabled:).md)
+](./accessibilityidentifier%28_,isenabled%29.md)
   Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
-- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
+- [func accessibilityInputLabels(_:isEnabled:)](./accessibilityinputlabels%28_,isenabled%29.md)
   Sets alternate input labels with which users identify a tab.
-- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
+- [func accessibilityLabel(_:isEnabled:)](./accessibilitylabel%28_,isenabled%29.md)
   Adds a label to the tab that describes its contents.
-- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
+- [func accessibilityValue(_:isEnabled:)](./accessibilityvalue%28_,isenabled%29.md)
   Adds a textual description of the value that the tab contains.
 
 

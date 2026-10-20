@@ -1,7 +1,8 @@
 # init(request:scale:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays an image from the specified URL load request.
 
@@ -29,18 +30,19 @@ Until the image loads, SwiftUI displays a default placeholder. When the load ope
 AsyncImage(request: URLRequest(url: imageURL))
 ```
 
-If you want to customize the placeholder or apply image-specific modifiers — like [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) — to the loaded image, use the [`init(request:scale:content:placeholder:)`](asyncimage/init(request:scale:content:placeholder:).md) initializer instead.
+If you want to customize the placeholder or apply image-specific modifiers — like [`resizable(capInsets:resizingMode:)`](../image/resizable%28capinsets,resizingmode%29.md) — to the loaded image, use the [`init(request:scale:content:placeholder:)`](./init%28request,scale,content,placeholder%29.md) initializer instead.
 
 ## Parameters
 
-- `request`: The [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest) of the image to display.
+- `request`: The [`URLRequest`](../../Foundation/urlrequest.md) of the image to display.
 - `scale`: The scale to use for the image. The default is `1`. Set a different value when loading images designed for higher resolution displays. For example, set a value of `2` for an image that you would name with the `@2x` suffix if stored in a file on disk.
 
 ## See Also
 
-- [init<I, P>(request: URLRequest?, scale: CGFloat, content: (Image) -> I, placeholder: () -> P)](asyncimage/init(request:scale:content:placeholder:).md)
+### Loading an image with a URL request
+- [init<I, P>(request: URLRequest?, scale: CGFloat, content: (Image) -> I, placeholder: () -> P)](./init%28request,scale,content,placeholder%29.md)
   Loads and displays a modifiable image from the specified URL load request using a custom placeholder until the image loads.
-- [init(request: URLRequest?, scale: CGFloat, transaction: Transaction, content: (AsyncImagePhase) -> Content)](asyncimage/init(request:scale:transaction:content:).md)
+- [init(request: URLRequest?, scale: CGFloat, transaction: Transaction, content: (AsyncImagePhase) -> Content)](./init%28request,scale,transaction,content%29.md)
   Loads and displays a modifiable image from the specified URL load request in phases.
 
 

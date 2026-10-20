@@ -1,7 +1,8 @@
 # init(sequence:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher for a sequence of elements.
 

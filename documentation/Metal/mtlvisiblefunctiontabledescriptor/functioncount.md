@@ -1,7 +1,8 @@
 # functionCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of entries in the function table.
 
@@ -17,6 +18,10 @@ The number of entries in the function table.
 
 ```swift
 var functionCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger functionCount;
 ```
 
 

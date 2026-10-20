@@ -1,7 +1,8 @@
 # HMMutableLocationEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that is evaluated based on entry to or exit from a region.
 
@@ -18,31 +19,36 @@ A mutable event that is evaluated based on entry to or exit from a region.
 class HMMutableLocationEvent
 ```
 
+```objc
+@interface HMMutableLocationEvent : HMLocationEvent
+```
+
 ## Topics
 
 ### Controlling the Region
-- [var region: CLRegion?](hmmutablelocationevent/region.md)
+- [var region: CLRegion?](./hmmutablelocationevent/region.md)
   The region on which events are triggered.
 
 ## Relationships
 
 ### Inherits From
-- [HMLocationEvent](hmlocationevent.md)
+- [HMLocationEvent](./hmlocationevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMLocationEvent](hmlocationevent.md)
+### Locations
+- [class HMLocationEvent](./hmlocationevent.md)
   An event that is evaluated based on entry to or exit from a region.
 
 

@@ -1,14 +1,15 @@
 # kGUARD_EXC_PROVISIONAL_REPLY_PORT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_PROVISIONAL_REPLY_PORT = 0x00100002
 ```
 

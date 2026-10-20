@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.join_schedules
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.join_schedules.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.join_schedules
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.join_schedules
-
 **join_schedules(*schedules: List[Callable]*, *boundaries: List[int]*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)**
 : Join multiple schedules to create a new schedule.
 
@@ -45,15 +18,16 @@ the \(i\)-th boundary.
 that indicates when to transition between schedules.
 
 Example
->>> linear = optim.linear_schedule(0, 1e-1, steps=10)
->>> cosine = optim.cosine_decay(1e-1, 200)
->>> lr_schedule = optim.join_schedules([linear, cosine], [10])
->>> optimizer = optim.Adam(learning_rate=lr_schedule)
->>> optimizer.learning_rate
-array(0.0, dtype=float32)
->>> for _ in range(12): optimizer.update({}, {})
-...
->>> optimizer.learning_rate
-array(0.0999938, dtype=float32)
 
-** Contents
+  ```
+  >>> linear = optim.linear_schedule(0, 1e-1, steps=10)
+  >>> cosine = optim.cosine_decay(1e-1, 200)
+  >>> lr_schedule = optim.join_schedules([linear, cosine], [10])
+  >>> optimizer = optim.Adam(learning_rate=lr_schedule)
+  >>> optimizer.learning_rate
+  array(0.0, dtype=float32)
+  >>> for _ in range(12): optimizer.update({}, {})
+  ...
+  >>> optimizer.learning_rate
+  array(0.0999938, dtype=float32)
+  ```

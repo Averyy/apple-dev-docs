@@ -1,7 +1,8 @@
 # Error
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about an error that occurred while processing a request.
 
@@ -10,14 +11,14 @@ Information about an error that occurred while processing a request.
 
 ## Declaration
 
-```swift
+```
 object Error
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Error.Source](error/source-data.dictionary.md)
+- [object Error.Source](./error/source-data.dictionary.md)
   An object that represents the source of an error.
 
 ## Properties

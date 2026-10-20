@@ -1,7 +1,8 @@
 # unregisterSmartCard(tokenID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters a smartcard for the provided token ID.
 
@@ -15,6 +16,10 @@ Unregisters a smartcard for the provided token ID.
 
 ```swift
 func unregisterSmartCard(tokenID: String) throws
+```
+
+```objc
+- (BOOL) unregisterSmartCardWithTokenID:(NSString *) tokenID error:(NSError **) error;
 ```
 
 #### Discussion

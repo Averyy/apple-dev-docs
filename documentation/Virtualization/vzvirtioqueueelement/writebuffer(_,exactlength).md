@@ -1,7 +1,8 @@
 # writeBuffer(_:exactLength:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes to the memory represented by the pointer to the buffer you provide to the write buffers.
 
@@ -12,6 +13,10 @@ Writes to the memory represented by the pointer to the buffer you provide to the
 
 ```swift
 func writeBuffer(_ buffer: UnsafeMutableRawPointer, exactLength: Int) throws
+```
+
+```objc
+- (BOOL) writeBuffer:(void *) buffer exactLength:(NSUInteger) exactLength error:(NSError **) error;
 ```
 
 ## Parameters

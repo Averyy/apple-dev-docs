@@ -1,16 +1,17 @@
 # UITextAutocorrectionType.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies an appropriate autocorrection behavior for the current script system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ Specifies an appropriate autocorrection behavior for the current script system.
 case `default`
 ```
 
+```c
+UITextAutocorrectionTypeDefault
+```
+
 ## See Also
 
-- [UITextAutocorrectionType.no](uitextautocorrectiontype/no.md)
+### Constants
+- [UITextAutocorrectionType.no](./no.md)
   Disables autocorrection behavior.
-- [UITextAutocorrectionType.yes](uitextautocorrectiontype/yes.md)
+- [UITextAutocorrectionType.yes](./yes.md)
   Enables autocorrection behavior.
 
 

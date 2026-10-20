@@ -1,7 +1,8 @@
 # vfs_statfs
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get information about filesystem status.
 
@@ -10,11 +11,11 @@ Get information about filesystem status.
 
 ## Declaration
 
-```swift
+```c
 struct vfsstatfs * vfs_statfs(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Pointer to vfsstatfs.
 

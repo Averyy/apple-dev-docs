@@ -1,7 +1,8 @@
 # kIOUSB30HubExtStatusRxSublinkSpeedIDPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The receive sublink speed identifier phase.
 
@@ -10,7 +11,7 @@ The receive sublink speed identifier phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubExtStatusRxSublinkSpeedIDPhase = IOUSBBitRangePhase(0, 3)
 ```
 

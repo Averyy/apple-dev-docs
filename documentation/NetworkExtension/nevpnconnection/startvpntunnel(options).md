@@ -1,7 +1,8 @@
 # startVPNTunnel(options:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Start the process of connecting the VPN.
 
@@ -19,11 +20,17 @@ Start the process of connecting the VPN.
 func startVPNTunnel(options: [String : NSObject]? = nil) throws
 ```
 
+```objc
+- (BOOL) startVPNTunnelWithOptions:(NSDictionary<NSString *,NSObject *> *) options andReturnError:(NSError **) error;
+```
+
 #### Discussion
 
-This method returns immediately after starting the process of connecting the VPN. In order to be notified when the VPN is fully connected, register to observe the [`NEVPNStatusDidChangeNotification`](nevpnstatusdidchangenotification.md) notification on the [`NEVPNConnection`](nevpnconnection.md) object, and examine the status property when the notification is received.
+This method returns immediately after starting the process of connecting the VPN. In order to be notified when the VPN is fully connected, register to observe the [`NEVPNStatusDidChangeNotification`](../nevpnstatusdidchangenotification.md) notification on the [`NEVPNConnection`](../nevpnconnection.md) object, and examine the status property when the notification is received.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -31,11 +38,12 @@ This method returns immediately after starting the process of connecting the VPN
 
 ## See Also
 
-- [func startVPNTunnel() throws](nevpnconnection/startvpntunnel.md)
+### Controlling the VPN connection
+- [func startVPNTunnel() throws](./startvpntunnel%28%29.md)
   Start the process of connecting the VPN.
-- [let NEVPNConnectionStartOptionUsername: String](nevpnconnectionstartoptionusername.md)
-- [let NEVPNConnectionStartOptionPassword: String](nevpnconnectionstartoptionpassword.md)
-- [func stopVPNTunnel()](nevpnconnection/stopvpntunnel.md)
+- [let NEVPNConnectionStartOptionUsername: String](../nevpnconnectionstartoptionusername.md)
+- [let NEVPNConnectionStartOptionPassword: String](../nevpnconnectionstartoptionpassword.md)
+- [func stopVPNTunnel()](./stopvpntunnel%28%29.md)
   Start the process of disconnecting the VPN.
 
 

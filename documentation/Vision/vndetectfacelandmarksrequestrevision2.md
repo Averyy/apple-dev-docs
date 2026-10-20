@@ -1,7 +1,8 @@
 # VNDetectFaceLandmarksRequestRevision2
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 2 of the face landmarks detection request.
 
@@ -19,13 +20,18 @@ A constant for specifying revision 2 of the face landmarks detection request.
 var VNDetectFaceLandmarksRequestRevision2: Int { get }
 ```
 
+```c
+static const NSUInteger VNDetectFaceLandmarksRequestRevision2;
+```
+
 ## See Also
 
-- [class func revision(Int, supportsConstellation: VNRequestFaceLandmarksConstellation) -> Bool](vndetectfacelandmarksrequest/revision(_:supportsconstellation:).md)
+### Identifying Request Revisions
+- [class func revision(Int, supportsConstellation: VNRequestFaceLandmarksConstellation) -> Bool](./vndetectfacelandmarksrequest/revision%28_,supportsconstellation%29.md)
   Returns a Boolean value that indicates whether a revision supports a constellation.
-- [var VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
+- [var VNDetectFaceLandmarksRequestRevision3: Int](./vndetectfacelandmarksrequestrevision3.md)
   A constant for specifying revision 3 of the face landmarks detection request.
-- [var VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
+- [var VNDetectFaceLandmarksRequestRevision1: Int](./vndetectfacelandmarksrequestrevision1.md)
   A constant for specifying revision 1 of the face landmarks detection request.
 
 

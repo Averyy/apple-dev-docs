@@ -1,12 +1,13 @@
 # NSButton.BezelStyle.helpButton
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A round button with a question mark, providing the standard help button look.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ A round button with a question mark, providing the standard help button look.
 case helpButton
 ```
 
+```c
+NSBezelStyleHelpButton
+```
+
 #### Discussion
 
 A help button appears within a view and opens app-specific help documentation.
 
-![A screenshot displaying a voice over dialog. The main content of the dialog explains what voice over is. In the lower right corner of the dialog there is a help button.](/images/com.apple.appkit/media-4306763@2x.png)
+![A screenshot displaying a voice over dialog. The main content of the dialog explains what voice over is. In the lower right corner of the dialog there is a help button.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4306763@2x.png)
 
 These are circular, consistently sized buttons that contain a question mark.
 
@@ -44,13 +49,14 @@ Include no more than one help button per window. Multiple help buttons in the sa
 
 Avoid displaying text that introduces a help button. People know what a help button does, so they don’t need additional descriptive text.
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also
 
-- [NSButton.BezelStyle.badge](nsbutton/bezelstyle-swift.enum/badge.md)
+### Informational
+- [NSButton.BezelStyle.badge](./badge.md)
   A button style suitable for displaying additional information.
-- [NSButton.BezelStyle.circular](nsbutton/bezelstyle-swift.enum/circular.md)
+- [NSButton.BezelStyle.circular](./circular.md)
   A round button that can contain either a single character or an icon.
 
 

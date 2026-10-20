@@ -1,23 +1,24 @@
 # processReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses the contents of the specified report and updates the interface’s elements.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void processReport(uint64_t timestamp, uint8_t *report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
 #### Discussion
 
-This method uses the provided report data to update the [`IOHIDElement`](iohidelement.md) objects associated with this interface. Upon receiving a new report, call this method before you call the [`getElements`](iohidinterface/getelements.md) method.
+This method uses the provided report data to update the [`IOHIDElement`](../iohidelement.md) objects associated with this interface. Upon receiving a new report, call this method before you call the [`getElements`](./getelements.md) method.
 
 ## Parameters
 
@@ -29,13 +30,14 @@ This method uses the provided report data to update the [`IOHIDElement`](iohidel
 
 ## See Also
 
-- [ReportAvailable](iohidinterface/reportavailable.md)
+### Getting and Setting Input Reports
+- [ReportAvailable](./reportavailable.md)
   Notifies the interface that an updated report is available from the HID device.
-- [AddReportToPool](iohidinterface/addreporttopool.md)
+- [AddReportToPool](./addreporttopool.md)
   Adds a memory descriptor to the report pool.
-- [GetReport](iohidinterface/getreport.md)
+- [GetReport](./getreport.md)
   Retrieves a new input report from the HID device.
-- [SetReport](iohidinterface/setreport.md)
+- [SetReport](./setreport.md)
   Sends a report to the HID device.
 
 

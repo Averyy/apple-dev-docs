@@ -1,17 +1,22 @@
 # withType(_:sizeDescriptor:size:value:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new IOBluetoothSDPDataElement with the given attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withType(_ type: BluetoothSDPDataElementTypeDescriptor, sizeDescriptor newSizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size newSize: UInt32, value newValue: NSObject!) -> Self!
+```
+
+```objc
++ (instancetype) withType:(BluetoothSDPDataElementTypeDescriptor) type sizeDescriptor:(BluetoothSDPDataElementSizeDescriptor) newSizeDescriptor size:(uint32_t) newSize value:(NSObject *) newValue;
 ```
 
 #### Return Value

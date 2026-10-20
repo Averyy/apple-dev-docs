@@ -1,7 +1,8 @@
 # triangleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Declares the number of triangles in the vertex buffers that the buffer in the vertex buffers property references.
 
@@ -17,6 +18,10 @@ Declares the number of triangles in the vertex buffers that the buffer in the ve
 
 ```swift
 var triangleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger triangleCount;
 ```
 
 #### Discussion

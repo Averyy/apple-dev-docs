@@ -1,6 +1,7 @@
 # Getting up-to-date calling and blocking information for your app
 
-**Framework**: SMS and Call Reporting
+**Framework**: SMS and Call Reporting  
+**Role**: Article
 
 Implement the Live Caller ID Lookup app extension to provide call-blocking and identity services.
 
@@ -8,24 +9,24 @@ Implement the Live Caller ID Lookup app extension to provide call-blocking and i
 
 With the Live Caller ID Lookup app extension, you can provide caller ID and call-blocking services from a server you maintain. The app extension tells the system how to communicate with your server. When someone’s device receives a phone call, the system communicates with your back-end server to retrieve caller ID and blocking information, and then displays that information on the incoming call screen and in the device’s recent phone calls.
 
-> **Note**:  The Live Caller ID Lookup app extension requires you to use Apple relay servers to support making calls to your server endpoints. This requires endpoint validation from Apple. If you’re interested in using the app extension, [`submit your request`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/identity). For more information on the server side API, see the [`Live Caller ID Lookup example`](https://developer.apple.comhttps://github.com/apple/live-caller-id-lookup-example) and the [`Swift homomorphic encryption library`](https://developer.apple.comhttps://github.com/apple/swift-homomorphic-encryption).
+> **Note**:  The Live Caller ID Lookup app extension requires you to use Apple relay servers to support making calls to your server endpoints. This requires endpoint validation from Apple. If you’re interested in using the app extension, [submit your request](https://icloud.developer.apple.com/dashboard/identity). For more information on the server side API, see the [Live Caller ID Lookup example](https://github.com/apple/live-caller-id-lookup-example) and the [Swift homomorphic encryption library](https://github.com/apple/swift-homomorphic-encryption).
 
-##### Add the App Extension to Your Project
+##### Add the app extension to your project
 
 To use the Live Caller ID Lookup app extension, you need to add it to your Xcode project by choosing File > New > Target, selecting its template, and clicking Next.
 
-![An Xcode screenshot of the New target dialog with the Live Caller ID Lookup Extension option selected.](/images/com.apple.identitylookup/media-4444460@2x.png)
+![An Xcode screenshot of the New target dialog with the Live Caller ID Lookup Extension option selected.](https://developer.apple.com/tutorials/images/com.apple.identitylookup/media-4444460@2x.png)
 
 When you add this target to your project, it provides the initial files you need for your app extension.
 
-##### Configure Your Pir Server
+##### Configure your PIR server
 
 After you add the app extension, configure your PIR server. Live Caller ID Lookup requires that your app extension’s information property list contains a top-level `NSPIRConfiguration`. The dictionary contains the following two keys:
 
-- **`PIRServerURL`**: (Required) The endpoint for fetching information from your server. This endpoint is equivalent to the [`serviceURL`](livecalleridlookupextensioncontext/serviceurl.md) property.
-- **`PrivacyPassIssuerURL`**: (Required) The URL for the Private Access token issuer. This URL is equivalent to the [`tokenIssuerURL`](livecalleridlookupextensioncontext/tokenissuerurl.md).
+- **`PIRServerURL`**: (Required) The endpoint for fetching information from your server. This endpoint is equivalent to the [`serviceURL`](./livecalleridlookupextensioncontext/serviceurl.md) property.
+- **`PrivacyPassIssuerURL`**: (Required) The URL for the Private Access token issuer. This URL is equivalent to the [`tokenIssuerURL`](./livecalleridlookupextensioncontext/tokenissuerurl.md).
 
-See the [`PIR Service - Live Caller ID Lookup `](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice#Live-Caller-ID-Lookup) documentation for updated security guidance to configure your PIR server to support Live Caller ID Lookup.
+See the [PIR Service - Live Caller ID Lookup ](https://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice#Live-Caller-ID-Lookup) documentation for updated security guidance to configure your PIR server to support Live Caller ID Lookup.
 
 The following example shows an `NSPIRConfiguration` dictionary:
 
@@ -41,17 +42,17 @@ The following example shows an `NSPIRConfiguration` dictionary:
 
 > **Note**: The `NSPIRConfiguration` goes in your app extension’s information property list.
 
-The system uses Private Information Retrieval (PIR) to fetch a database entry without disclosing the query to the server. When an incoming call occurs, the PIR process privately checks the number against your server before revealing relevant caller information to the system. For more information on setting up your PIRService, see [`PIRService`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice).
+The system uses Private Information Retrieval (PIR) to fetch a database entry without disclosing the query to the server. When an incoming call occurs, the PIR process privately checks the number against your server before revealing relevant caller information to the system. For more information on setting up your PIRService, see [PIRService](https://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice).
 
-The system needs configuration data to connect to your server and authenticate the person using your app. The app extension’s entrypoint is an object that adopts the [`LiveCallerIDLookupProtocol`](livecalleridlookupprotocol.md). This protocol defines a context parameter in which you provide information for the system about your server and access tokens. The [`LiveCallerIDLookupExtensionContext`](livecalleridlookupextensioncontext.md) takes three parameters:
+The system needs configuration data to connect to your server and authenticate the person using your app. The app extension’s entrypoint is an object that adopts the [`LiveCallerIDLookupProtocol`](./livecalleridlookupprotocol.md). This protocol defines a context parameter in which you provide information for the system about your server and access tokens. The [`LiveCallerIDLookupExtensionContext`](./livecalleridlookupextensioncontext.md) takes three parameters:
 
-- **[`serviceURL`](livecalleridlookupextensioncontext/serviceurl.md)**: The endpoint for fetching information from your server.
-- **[`tokenIssuerURL`](livecalleridlookupextensioncontext/tokenissuerurl.md)**: The URL for the Private Access token issuer.
-- **[`userTierToken`](livecalleridlookupextensioncontext/usertiertoken.md)**: An HTTP bearer token that authenticates the person using your app.
+- **[`serviceURL`](./livecalleridlookupextensioncontext/serviceurl.md)**: The endpoint for fetching information from your server.
+- **[`tokenIssuerURL`](./livecalleridlookupextensioncontext/tokenissuerurl.md)**: The URL for the Private Access token issuer.
+- **[`userTierToken`](./livecalleridlookupextensioncontext/usertiertoken.md)**: An HTTP bearer token that authenticates the person using your app.
 
-The system caches the responses for server-side per entry configuration time. As a result, if a second phone call comes in from the same number before the cache expires, the system uses the cached values instead of making another PIR request. For more information about setting up your PIR server, see [`Setting up the HTTP endpoints`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice/httpendpoints).
+The system caches the responses for server-side per entry configuration time. As a result, if a second phone call comes in from the same number before the cache expires, the system uses the cached values instead of making another PIR request. For more information about setting up your PIR server, see [Setting up the HTTP endpoints](https://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice/httpendpoints).
 
-The following example shows an extension entrypoint configuration using [`LiveCallerIDLookupExtensionContext`](livecalleridlookupextensioncontext.md).
+The following example shows an extension entrypoint configuration using [`LiveCallerIDLookupExtensionContext`](./livecalleridlookupextensioncontext.md).
 
 ```swift
 import Foundation
@@ -72,11 +73,11 @@ struct MyAppExtension: LiveCallerIDLookupProtocol {
 }
 ```
 
-##### Manage the App Extension
+##### Manage the app extension
 
-After configuring your data and connecting the app extension to the server, you have access to several functions and variables through the [`LiveCallerIDLookupManager`](livecalleridlookupmanager.md) class. This allows you to manage the state of the app extension.
+After configuring your data and connecting the app extension to the server, you have access to several functions and variables through the [`LiveCallerIDLookupManager`](./livecalleridlookupmanager.md) class. This allows you to manage the state of the app extension.
 
-The app extension needs to be in an enabled state so the system can communicate with your server. To check the status of your app extension, use the [`status(forExtensionWithIdentifier:)`](livecalleridlookupmanager/status(forextensionwithidentifier:).md) function. You can call [`openSettings()`](livecalleridlookupmanager/opensettings().md) to navigate to Settings, where the user can enable the app extension.
+The app extension needs to be in an enabled state so the system can communicate with your server. To check the status of your app extension, use the [`status(forExtensionWithIdentifier:)`](./livecalleridlookupmanager/status%28forextensionwithidentifier%29.md) function. You can call [`openSettings()`](./livecalleridlookupmanager/opensettings%28%29.md) to navigate to Settings, where the user can enable the app extension.
 
 ```swift
 // Check the status of your app extension.
@@ -88,29 +89,30 @@ if LiveCallerIDLookupManager.shared.status(forExtensionWithIdentifier: extension
 try await LiveCallerIDLookupManager.shared.openSettings()
 ```
 
-##### Refresh the Data
+##### Refresh the data
 
-The system fetches data from the parameters in the [`LiveCallerIDLookupExtensionContext`](livecalleridlookupextensioncontext.md) structure to communicate with the server. If you need to update the extension context, use the [`reset(forExtensionWithIdentifier:)`](livecalleridlookupmanager/reset(forextensionwithidentifier:).md) method. This reregisters your app extension so the system caches the new parameters.
+The system fetches data from the parameters in the [`LiveCallerIDLookupExtensionContext`](./livecalleridlookupextensioncontext.md) structure to communicate with the server. If you need to update the extension context, use the [`reset(forExtensionWithIdentifier:)`](./livecalleridlookupmanager/reset%28forextensionwithidentifier%29.md) method. This reregisters your app extension so the system caches the new parameters.
 
-If you communicate to your app through push notifications, or other means, about changes to your server-side parameters, use the [`refreshPIRParameters(forExtensionWithIdentifier:)`](livecalleridlookupmanager/refreshpirparameters(forextensionwithidentifier:).md) to update your dataset immediately. This function asks the system to refresh information about the server dataset, such as its size. The system periodically refreshes these parameters automatically.
+If you communicate to your app through push notifications, or other means, about changes to your server-side parameters, use the [`refreshPIRParameters(forExtensionWithIdentifier:)`](./livecalleridlookupmanager/refreshpirparameters%28forextensionwithidentifier%29.md) to update your dataset immediately. This function asks the system to refresh information about the server dataset, such as its size. The system periodically refreshes these parameters automatically.
 
 ## See Also
 
-- [Understanding how Live Caller ID Lookup preserves privacy](understanding-how-live-caller-id-lookup-preserves-privacy.md)
+### Live Caller ID Lookup
+- [Understanding how Live Caller ID Lookup preserves privacy](./understanding-how-live-caller-id-lookup-preserves-privacy.md)
   Use Live Caller ID Lookup to protect user privacy by hiding the client’s IP address, using anonymous authentication, and hiding the incoming phone number.
-- [Formatting data for blocking and identity information](formatting-data-for-blocking-and-identity-information.md)
+- [Formatting data for blocking and identity information](./formatting-data-for-blocking-and-identity-information.md)
   Set up your PIR payload for call blocking and identity information.
-- [Setting up the HTTP endpoints for Live Caller ID Lookup](setting-up-the-http-endpoints-for-live-caller-id-lookup.md)
+- [Setting up the HTTP endpoints for Live Caller ID Lookup](./setting-up-the-http-endpoints-for-live-caller-id-lookup.md)
   Connect the on-device system to your server.
-- [protocol LiveCallerIDLookupProtocol](livecalleridlookupprotocol.md)
+- [protocol LiveCallerIDLookupProtocol](./livecalleridlookupprotocol.md)
   Information the system uses to query the app extension for context.
-- [protocol LiveCallerIDLookupExtensionConfiguration](livecalleridlookupextensionconfiguration.md)
+- [protocol LiveCallerIDLookupExtensionConfiguration](./livecalleridlookupextensionconfiguration.md)
   An object that allows the system to query the app extension.
-- [struct LiveCallerIDLookupExtensionContext](livecalleridlookupextensioncontext.md)
+- [struct LiveCallerIDLookupExtensionContext](./livecalleridlookupextensioncontext.md)
   The information the system uses for configuration.
-- [enum CallLookupExtensionStatus](calllookupextensionstatus.md)
+- [enum CallLookupExtensionStatus](./calllookupextensionstatus.md)
   Returns a value with the current state of the app extension.
-- [class LiveCallerIDLookupManager](livecalleridlookupmanager.md)
+- [class LiveCallerIDLookupManager](./livecalleridlookupmanager.md)
   The entry point that provides access to a collection of functions that help manage the state of the Live Caller ID Lookup app extension.
 
 

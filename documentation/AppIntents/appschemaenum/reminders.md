@@ -1,7 +1,8 @@
 # reminders
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the reminders domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the reminders domain.
 ```swift
 static var reminders: some AppSchema.RemindersEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

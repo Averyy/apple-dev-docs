@@ -1,7 +1,8 @@
 # trimmedPath(from:to:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a partial copy of the path.
 
@@ -26,9 +27,10 @@ The returned path contains the region between `from` and `to`, both of which mus
 
 ## See Also
 
-- [func applying(CGAffineTransform) -> Path](path/applying(_:).md)
+### Transforming the path
+- [func applying(CGAffineTransform) -> Path](./applying%28_%29.md)
   Returns a path constructed by applying the transform to all points of the path.
-- [func offsetBy(dx: CGFloat, dy: CGFloat) -> Path](path/offsetby(dx:dy:).md)
+- [func offsetBy(dx: CGFloat, dy: CGFloat) -> Path](./offsetby%28dx,dy%29.md)
   Returns a path constructed by translating all its points.
 
 

@@ -1,17 +1,18 @@
 # kAudioUnitSubType_VoiceProcessingIO
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An audio unit that interfaces to the audio inputs and outputs of iOS devices and provides voice processing features.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ An audio unit that interfaces to the audio inputs and outputs of iOS devices and
 var kAudioUnitSubType_VoiceProcessingIO: UInt32 { get }
 ```
 
+```c
+kAudioUnitSubType_VoiceProcessingIO
+```
+
 #### Discussion
 
-Bus 0 provides output to hardware and bus 1 accepts input from hardware. See [`Audio Unit Voice I/O`](audio-unit-voice-i-o.md) for the identifiers for this audio unit’s properties.
+Bus 0 provides output to hardware and bus 1 accepts input from hardware. See [Audio Unit Voice I/O](./audio-unit-voice-i-o.md) for the identifiers for this audio unit’s properties.
 
 ## See Also
 
-- [var kAudioUnitSubType_GenericOutput: UInt32](kaudiounitsubtype_genericoutput.md)
+### Constants
+- [var kAudioUnitSubType_GenericOutput: UInt32](./kaudiounitsubtype_genericoutput.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new shareable event listener.
 
@@ -19,9 +20,14 @@ Creates a new shareable event listener.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(dispatchQueue: dispatch_queue_t)](mtlsharedeventlistener/init(dispatchqueue:).md)
+### Initializing a shareable event listener
+- [init(dispatchQueue: dispatch_queue_t)](./init%28dispatchqueue%29.md)
   Creates a new shareable event listener with a specific dispatch queue.
 
 

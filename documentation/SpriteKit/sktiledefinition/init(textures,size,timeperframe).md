@@ -1,7 +1,8 @@
 # init(textures:size:timePerFrame:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new tile definition with an array of textures for animation.
 
@@ -20,6 +21,10 @@ Initializes a new tile definition with an array of textures for animation.
 init(textures: [SKTexture], size: CGSize, timePerFrame: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithTextures:(NSArray<SKTexture *> *) textures size:(CGSize) size timePerFrame:(CGFloat) timePerFrame;
+```
+
 #### Return Value
 
 A new tile definition.
@@ -32,7 +37,8 @@ A new tile definition.
 
 ## See Also
 
-- [init(textures: [SKTexture], normalTextures: [SKTexture], size: CGSize, timePerFrame: CGFloat)](sktiledefinition/init(textures:normaltextures:size:timeperframe:).md)
+### Creating an Animated Tile
+- [init(textures: [SKTexture], normalTextures: [SKTexture], size: CGSize, timePerFrame: CGFloat)](./init%28textures,normaltextures,size,timeperframe%29.md)
   Initializes a new tile definition with arrays of textures and normal textures for animation.
 
 

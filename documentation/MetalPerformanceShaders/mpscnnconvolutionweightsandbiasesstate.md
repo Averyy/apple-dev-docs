@@ -1,7 +1,8 @@
 # MPSCNNConvolutionWeightsAndBiasesState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that stores weights and biases.
 
@@ -19,49 +20,54 @@ A class that stores weights and biases.
 class MPSCNNConvolutionWeightsAndBiasesState
 ```
 
+```objc
+@interface MPSCNNConvolutionWeightsAndBiasesState : MPSState
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, cnnConvolutionDescriptor: MPSCNNConvolutionDescriptor)](mpscnnconvolutionweightsandbiasesstate/init(device:cnnconvolutiondescriptor:).md)
-- [init(weights: any MTLBuffer, biases: (any MTLBuffer)?)](mpscnnconvolutionweightsandbiasesstate/init(weights:biases:).md)
-- [init(weights: any MTLBuffer, weightsOffset: Int, biases: (any MTLBuffer)?, biasesOffset: Int, cnnConvolutionDescriptor: MPSCNNConvolutionDescriptor)](mpscnnconvolutionweightsandbiasesstate/init(weights:weightsoffset:biases:biasesoffset:cnnconvolutiondescriptor:).md)
+- [init(device: any MTLDevice, cnnConvolutionDescriptor: MPSCNNConvolutionDescriptor)](./mpscnnconvolutionweightsandbiasesstate/init%28device,cnnconvolutiondescriptor%29.md)
+- [init(weights: any MTLBuffer, biases: (any MTLBuffer)?)](./mpscnnconvolutionweightsandbiasesstate/init%28weights,biases%29.md)
+- [init(weights: any MTLBuffer, weightsOffset: Int, biases: (any MTLBuffer)?, biasesOffset: Int, cnnConvolutionDescriptor: MPSCNNConvolutionDescriptor)](./mpscnnconvolutionweightsandbiasesstate/init%28weights,weightsoffset,biases,biasesoffset,cnnconvolutiondescriptor%29.md)
 ### Instance Properties
-- [var biases: (any MTLBuffer)?](mpscnnconvolutionweightsandbiasesstate/biases.md)
-- [var biasesOffset: Int](mpscnnconvolutionweightsandbiasesstate/biasesoffset.md)
-- [var weights: any MTLBuffer](mpscnnconvolutionweightsandbiasesstate/weights.md)
-- [var weightsOffset: Int](mpscnnconvolutionweightsandbiasesstate/weightsoffset.md)
+- [var biases: (any MTLBuffer)?](./mpscnnconvolutionweightsandbiasesstate/biases.md)
+- [var biasesOffset: Int](./mpscnnconvolutionweightsandbiasesstate/biasesoffset.md)
+- [var weights: any MTLBuffer](./mpscnnconvolutionweightsandbiasesstate/weights.md)
+- [var weightsOffset: Int](./mpscnnconvolutionweightsandbiasesstate/weightsoffset.md)
 ### Type Methods
-- [class func temporaryCNNConvolutionWeightsAndBiasesState(with: any MTLCommandBuffer, cnnConvolutionDescriptor: MPSCNNConvolutionDescriptor) -> Self](mpscnnconvolutionweightsandbiasesstate/temporarycnnconvolutionweightsandbiasesstate(with:cnnconvolutiondescriptor:).md)
+- [class func temporaryCNNConvolutionWeightsAndBiasesState(with: any MTLCommandBuffer, cnnConvolutionDescriptor: MPSCNNConvolutionDescriptor) -> Self](./mpscnnconvolutionweightsandbiasesstate/temporarycnnconvolutionweightsandbiasesstate%28with,cnnconvolutiondescriptor%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNBinaryConvolution](mpscnnbinaryconvolution.md)
+### Convolution Layers
+- [class MPSCNNBinaryConvolution](./mpscnnbinaryconvolution.md)
   A convolution kernel with binary weights and an input image using binary approximations.
-- [class MPSCNNConvolution](mpscnnconvolution.md)
+- [class MPSCNNConvolution](./mpscnnconvolution.md)
   A convolution kernel that convolves the input image with a set of filters, with each producing one feature map in the output image.
-- [class MPSCNNDepthWiseConvolutionDescriptor](mpscnndepthwiseconvolutiondescriptor.md)
+- [class MPSCNNDepthWiseConvolutionDescriptor](./mpscnndepthwiseconvolutiondescriptor.md)
   A description of a convolution object that does depthwise convolution.
-- [class MPSCNNSubPixelConvolutionDescriptor](mpscnnsubpixelconvolutiondescriptor.md)
+- [class MPSCNNSubPixelConvolutionDescriptor](./mpscnnsubpixelconvolutiondescriptor.md)
   A description of a convolution object that does subpixel upsampling and reshaping.
-- [class MPSCNNConvolutionTranspose](mpscnnconvolutiontranspose.md)
+- [class MPSCNNConvolutionTranspose](./mpscnnconvolutiontranspose.md)
   A transposed convolution kernel.
-- [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
+- [class MPSCNNConvolutionGradient](./mpscnnconvolutiongradient.md)
   A gradient convolution kernel.
-- [class MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
+- [class MPSCNNConvolutionGradientState](./mpscnnconvolutiongradientstate.md)
   An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
-- [protocol MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
+- [protocol MPSImageSizeEncodingState](./mpsimagesizeencodingstate.md)
   A protocol for objects that contain information about an image size elsewhere in the graph.
 
 

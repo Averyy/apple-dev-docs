@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the volume.
 
@@ -18,7 +19,8 @@ var shape: ClothVolumeShape
 
 ## See Also
 
-- [var falloffStart: Float](clothforcevolumecomponent/falloffstart.md)
+### Shaping the volume
+- [var falloffStart: Float](./falloffstart.md)
   The depth (in meters) inside the volume at which the total force starts to linearly fall off.
 
 

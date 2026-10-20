@@ -1,17 +1,20 @@
 # preferFileIDResolutionMask
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that an alias created with the bookmark data prefers resolving with its embedded file ID.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 4.0+
+- iOS 4.0+ - Deprecated in 7.0
+- iPadOS 4.0+ - Deprecated in 7.0
+- Mac Catalyst 4.0+ - Deprecated in 7.0
 - tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: kCFURLBookmarkCreationPreferFileIDResolutionMask does nothing and has no effect on bookmark resolution
 
 ## Declaration
 
@@ -19,16 +22,21 @@ Specifies that an alias created with the bookmark data prefers resolving with it
 static var preferFileIDResolutionMask: CFURLBookmarkCreationOptions { get }
 ```
 
+```c
+kCFURLBookmarkCreationPreferFileIDResolutionMask
+```
+
 ## See Also
 
-- [static var minimalBookmarkMask: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/minimalbookmarkmask.md)
+### Constants
+- [static var minimalBookmarkMask: CFURLBookmarkCreationOptions](./minimalbookmarkmask.md)
   Specifies that an alias created with the bookmark data be created with minimal information, which may make it smaller but still able to resolve in certain ways.
-- [static var suitableForBookmarkFile: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/suitableforbookmarkfile.md)
+- [static var suitableForBookmarkFile: CFURLBookmarkCreationOptions](./suitableforbookmarkfile.md)
   Specifies that the bookmark data include properties required to create Finder alias files.
-- [static var withSecurityScope: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/withsecurityscope.md)
+- [static var withSecurityScope: CFURLBookmarkCreationOptions](./withsecurityscope.md)
   Specifies that you want to create a security-scoped bookmark that, when resolved, provides a security-scoped URL allowing read/write access to a file-system resource; for use in an app that adopts App Sandbox.
-- [static var securityScopeAllowOnlyReadAccess: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/securityscopeallowonlyreadaccess.md)
-  When combined with the [`withSecurityScope`](cfurlbookmarkcreationoptions/withsecurityscope.md) option, specifies that you want to create a security-scoped bookmark that, when resolved, provides a security-scoped URL allowing read-only access to a file-system resource; for use in an app that adopts App Sandbox.
+- [static var securityScopeAllowOnlyReadAccess: CFURLBookmarkCreationOptions](./securityscopeallowonlyreadaccess.md)
+  When combined with the [`withSecurityScope`](./withsecurityscope.md) option, specifies that you want to create a security-scoped bookmark that, when resolved, provides a security-scoped URL allowing read-only access to a file-system resource; for use in an app that adopts App Sandbox.
 
 
 ---

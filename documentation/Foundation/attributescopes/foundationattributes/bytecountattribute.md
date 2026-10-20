@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.ByteCountAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -22,18 +23,18 @@ enum ByteCountAttribute
 ## Topics
 
 ### Enumerations
-- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component](attributescopes/foundationattributes/bytecountattribute/component.md)
-- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Unit](attributescopes/foundationattributes/bytecountattribute/unit.md)
+- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component](./bytecountattribute/component.md)
+- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Unit](./bytecountattribute/unit.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

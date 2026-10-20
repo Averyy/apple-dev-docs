@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the error that occurred.
 

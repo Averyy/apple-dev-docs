@@ -1,7 +1,8 @@
 # title
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the title changed.
 
@@ -16,6 +17,10 @@ Indicates the title changed.
 
 ```swift
 static var title: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesTitle
 ```
 
 

@@ -1,7 +1,8 @@
 # init(identifier:title:score:maxScore:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an activity item that holds a score value.
 
@@ -16,6 +17,10 @@ Initializes an activity item that holds a score value.
 
 ```swift
 init(identifier: String, title: String, score: Double, maxScore: Double)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title score:(double) score maxScore:(double) maxScore;
 ```
 
 ## Parameters

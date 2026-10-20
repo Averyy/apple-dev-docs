@@ -1,7 +1,8 @@
 # init(system:version:code:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clinical coding with the specified system, version, and code.
 
@@ -17,6 +18,10 @@ Creates a clinical coding with the specified system, version, and code.
 
 ```swift
 init(system: String, version: String?, code: String)
+```
+
+```objc
+- (instancetype) initWithSystem:(NSString *) system version:(NSString *) version code:(NSString *) code;
 ```
 
 #### Discussion

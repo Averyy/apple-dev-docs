@@ -1,7 +1,8 @@
 # CLLocationPushServiceErrorDomain
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Location Push Service Extension errors.
 
@@ -16,15 +17,20 @@ The domain for Location Push Service Extension errors.
 let CLLocationPushServiceErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const CLLocationPushServiceErrorDomain;
+```
+
 ## See Also
 
-- [Location Push Service Extension](../bundleresources/entitlements/com.apple.developer.location.push.md)
+### Location push service extension
+- [Location Push Service Extension](../BundleResources/entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
-- [protocol CLLocationPushServiceExtension](cllocationpushserviceextension.md)
+- [protocol CLLocationPushServiceExtension](./cllocationpushserviceextension.md)
   The interface you adopt in the type that acts as the main entry point for a Location Push Service Extension.
-- [struct CLLocationPushServiceError](cllocationpushserviceerror-swift.struct.md)
+- [struct CLLocationPushServiceError](./cllocationpushserviceerror-swift.struct.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.
-- [CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/code.md)
+- [CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/code.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.
 
 

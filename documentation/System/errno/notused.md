@@ -1,7 +1,8 @@
 # notUsed
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Error. Not used.
 
@@ -22,17 +23,18 @@ static var notUsed: Errno { get }
 
 ## See Also
 
-- [static var lastErrnoValue: Errno](errno/lasterrnovalue.md)
+### Reserved
+- [static var lastErrnoValue: Errno](./lasterrnovalue.md)
   The largest valid error.
-- [static var multiHop: Errno](errno/multihop.md)
+- [static var multiHop: Errno](./multihop.md)
   Reserved.
-- [static var noLink: Errno](errno/nolink.md)
+- [static var noLink: Errno](./nolink.md)
   Reserved.
-- [static var noStreamResources: Errno](errno/nostreamresources.md)
+- [static var noStreamResources: Errno](./nostreamresources.md)
   Reserved.
-- [static var notStream: Errno](errno/notstream.md)
+- [static var notStream: Errno](./notstream.md)
   Reserved.
-- [static var timeout: Errno](errno/timeout.md)
+- [static var timeout: Errno](./timeout.md)
   Reserved.
 
 

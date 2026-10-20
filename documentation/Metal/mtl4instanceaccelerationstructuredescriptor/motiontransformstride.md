@@ -1,7 +1,8 @@
 # motionTransformStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specify the stride for motion transform.
 
@@ -17,6 +18,10 @@ Specify the stride for motion transform.
 
 ```swift
 var motionTransformStride: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger motionTransformStride;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # layoutAlgorithm
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text table layout algorithm.
 
@@ -12,6 +13,10 @@ The text table layout algorithm.
 
 ```swift
 var layoutAlgorithm: NSTextTable.LayoutAlgorithm { get set }
+```
+
+```objc
+@property NSTextTableLayoutAlgorithm layoutAlgorithm;
 ```
 
 

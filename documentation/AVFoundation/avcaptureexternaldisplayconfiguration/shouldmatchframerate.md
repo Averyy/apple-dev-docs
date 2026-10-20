@@ -1,7 +1,8 @@
 # shouldMatchFrameRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property indicating whether the frame rate of the external display should be configured to match the camera’s frame rate.
 
@@ -18,15 +19,20 @@ A property indicating whether the frame rate of the external display should be c
 var shouldMatchFrameRate: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL shouldMatchFrameRate;
+```
+
 #### Discussion
 
-If you want to configure your [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) to match its source [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md), set [`shouldMatchFrameRate`](avcaptureexternaldisplayconfiguration/shouldmatchframerate.md) to `true`. The default value is `false`.
+If you want to configure your [`AVCaptureVideoPreviewLayer`](../avcapturevideopreviewlayer.md) to match its source [`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md), set [`shouldMatchFrameRate`](./shouldmatchframerate.md) to `true`. The default value is `false`.
 
 ## See Also
 
-- [var bypassColorSpaceConversion: Bool](avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md)
+### Modifying the configuration
+- [var bypassColorSpaceConversion: Bool](./bypasscolorspaceconversion.md)
   A property indicating whether the color space of the configurator’s preview layer should be preserved on the output display by avoiding color space conversions.
-- [var preferredResolution: CMVideoDimensions](avcaptureexternaldisplayconfiguration/preferredresolution.md)
+- [var preferredResolution: CMVideoDimensions](./preferredresolution.md)
   Your preferred external display resolution.
 
 

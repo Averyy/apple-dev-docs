@@ -1,7 +1,8 @@
 # destructive
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Apply a style that indicates the option might change or delete data.
 

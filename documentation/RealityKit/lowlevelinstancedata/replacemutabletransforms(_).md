@@ -1,7 +1,8 @@
 # replaceMutableTransforms(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the per instance transform data synchronously on the CPU.
 

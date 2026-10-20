@@ -1,14 +1,15 @@
 # IdentityDocumentPresentmentError
 
 **Framework**: IdentityDocumentServices  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error type that is thrown from the identity document web presentment controller.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
@@ -20,32 +21,32 @@ struct IdentityDocumentPresentmentError
 ## Topics
 
 ### Instance Properties
-- [let code: IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/code-swift.property.md)
+- [let code: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/code-swift.property.md)
   The code of the current error.
-- [let debugDescription: String](identitydocumentpresentmenterror/debugdescription.md)
+- [let debugDescription: String](./identitydocumentpresentmenterror/debugdescription.md)
   A debug description that provides additional context about the current error.
 ### Type Properties
-- [static let cancelled: IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/cancelled.md)
+- [static let cancelled: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/cancelled.md)
   An error that indicates that the current request has been cancelled.
-- [static let invalidRequest: IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/invalidrequest.md)
+- [static let invalidRequest: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/invalidrequest.md)
   An error that is thrown when an invalid request is provided.
-- [static let notEntitled: IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/notentitled.md)
+- [static let notEntitled: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/notentitled.md)
   An error that indicates the caller is not entitled.
-- [static let requestInProgress: IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/requestinprogress.md)
+- [static let requestInProgress: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/requestinprogress.md)
   An error that indicates that there is currently a request in progress.
-- [static let unknown: IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/unknown.md)
+- [static let unknown: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/unknown.md)
   An error that indicates that the framework encountered an unknown problem.
 ### Enumerations
-- [IdentityDocumentPresentmentError.Code](identitydocumentpresentmenterror/code-swift.enum.md)
+- [IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/code-swift.enum.md)
   Specific error codes for identity document web presentment errors.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

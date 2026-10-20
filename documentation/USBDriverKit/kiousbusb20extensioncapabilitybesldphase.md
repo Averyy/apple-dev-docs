@@ -1,26 +1,28 @@
 # kIOUSBUSB20ExtensionCapabilityBESLDPhase
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBUSB20ExtensionCapabilityBESLDPhase
 ```
 
 ## See Also
 
-- [kIOUSBUSB20ExtensionCapabilityLPM](kiousbusb20extensioncapabilitylpm.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLSupport](kiousbusb20extensioncapabilitybeslsupport.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLValid](kiousbusb20extensioncapabilitybeslvalid.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLDValid](kiousbusb20extensioncapabilitybesldvalid.md)
-- [kIOUSBUSB20ExtensionCapabilityBESL](kiousbusb20extensioncapabilitybesl.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLPhase](kiousbusb20extensioncapabilitybeslphase.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLD](kiousbusb20extensioncapabilitybesld.md)
+### Getting the Capabilities
+- [kIOUSBUSB20ExtensionCapabilityLPM](./kiousbusb20extensioncapabilitylpm.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLSupport](./kiousbusb20extensioncapabilitybeslsupport.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLValid](./kiousbusb20extensioncapabilitybeslvalid.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLDValid](./kiousbusb20extensioncapabilitybesldvalid.md)
+- [kIOUSBUSB20ExtensionCapabilityBESL](./kiousbusb20extensioncapabilitybesl.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLPhase](./kiousbusb20extensioncapabilitybeslphase.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLD](./kiousbusb20extensioncapabilitybesld.md)
 
 
 ---

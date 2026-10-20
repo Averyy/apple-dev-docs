@@ -1,16 +1,21 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use Anchor.Source.center3D instead
 
 ## Declaration
 
 ```swift
 static var center: Anchor<Point3D>.Source { get }
 ```
+
+Available when `Value` is `Point3D`.
 
 
 ---

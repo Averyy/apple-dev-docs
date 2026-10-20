@@ -1,7 +1,8 @@
 # source
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller being dismissed by the unwind segue.
 
@@ -18,11 +19,16 @@ The view controller being dismissed by the unwind segue.
 var source: UIViewController { get }
 ```
 
+```objc
+@property (readonly) UIViewController * sourceViewController;
+```
+
 ## See Also
 
-- [var unwindAction: Selector](uistoryboardunwindseguesource/unwindaction.md)
+### Getting the unwind segue attributes
+- [var unwindAction: Selector](./unwindaction.md)
   The action method associated with the unwind segue.
-- [var sender: Any?](uistoryboardunwindseguesource/sender.md)
+- [var sender: Any?](./sender.md)
   The object that performed the unwind action.
 
 

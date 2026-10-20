@@ -1,7 +1,8 @@
 # UICollectionViewPlaceholder
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A placeholder for an item dragged or dropped on a collection view.
 
@@ -18,49 +19,54 @@ A placeholder for an item dragged or dropped on a collection view.
 class UICollectionViewPlaceholder
 ```
 
+```objc
+@interface UICollectionViewPlaceholder : NSObject
+```
+
 ## Topics
 
 ### Initializing a Placeholder
-- [init(insertionIndexPath: IndexPath, reuseIdentifier: String)](uicollectionviewplaceholder/init(insertionindexpath:reuseidentifier:).md)
+- [init(insertionIndexPath: IndexPath, reuseIdentifier: String)](./uicollectionviewplaceholder/init%28insertionindexpath,reuseidentifier%29.md)
   Creates a placeholder object with the specified index path and reuse identifier.
 ### Updating the Cell’s Content
-- [var cellUpdateHandler: ((UICollectionViewCell) -> Void)?](uicollectionviewplaceholder/cellupdatehandler.md)
+- [var cellUpdateHandler: ((UICollectionViewCell) -> Void)?](./uicollectionviewplaceholder/cellupdatehandler.md)
   The block that updates the contents of the placeholder cell.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UICollectionViewDropPlaceholder](uicollectionviewdropplaceholder.md)
+- [UICollectionViewDropPlaceholder](./uicollectionviewdropplaceholder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
+### Drag and drop
+- [Supporting Drag and Drop in Collection Views](./supporting-drag-and-drop-in-collection-views.md)
   Initiate drags and handle drops from a collection view.
-- [protocol UICollectionViewDragDelegate](uicollectionviewdragdelegate.md)
+- [protocol UICollectionViewDragDelegate](./uicollectionviewdragdelegate.md)
   The interface for initiating drags from a collection view.
-- [protocol UICollectionViewDropDelegate](uicollectionviewdropdelegate.md)
+- [protocol UICollectionViewDropDelegate](./uicollectionviewdropdelegate.md)
   The interface for handling drops in a collection view.
-- [protocol UICollectionViewDropCoordinator](uicollectionviewdropcoordinator.md)
+- [protocol UICollectionViewDropCoordinator](./uicollectionviewdropcoordinator.md)
   An interface for coordinating your custom drop-related actions with the collection view.
-- [class UICollectionViewDropPlaceholder](uicollectionviewdropplaceholder.md)
+- [class UICollectionViewDropPlaceholder](./uicollectionviewdropplaceholder.md)
   A placeholder for an item dropped on a collection view.
-- [class UICollectionViewDropProposal](uicollectionviewdropproposal.md)
+- [class UICollectionViewDropProposal](./uicollectionviewdropproposal.md)
   Your proposed solution for handling a drop in a collection view.
-- [protocol UICollectionViewDropItem](uicollectionviewdropitem.md)
+- [protocol UICollectionViewDropItem](./uicollectionviewdropitem.md)
   The data associated with an item being dropped into the collection view.
-- [protocol UICollectionViewDropPlaceholderContext](uicollectionviewdropplaceholdercontext.md)
+- [protocol UICollectionViewDropPlaceholderContext](./uicollectionviewdropplaceholdercontext.md)
   An object that contains information about a placeholder in the collection view.
-- [protocol UIDataSourceTranslating](uidatasourcetranslating.md)
+- [protocol UIDataSourceTranslating](./uidatasourcetranslating.md)
   An advanced interface for managing a data source object.
 
 

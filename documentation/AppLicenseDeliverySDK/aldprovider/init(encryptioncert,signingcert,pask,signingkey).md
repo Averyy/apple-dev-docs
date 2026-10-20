@@ -1,7 +1,8 @@
 # init(encryptionCert:signingCert:PASK:signingKey:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a provider with the marketplace’s App License Delivery assets and their unique signing key.
 
@@ -13,11 +14,11 @@ init(encryptionCert: [UInt8], signingCert: [UInt8], PASK: [UInt8], signingKey: [
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
 #### Discussion
 
-For an example that uses a provider, see [`Licensing alternative distribution apps`](licensing-alternative-distribution-apps.md).
+For an example that uses a provider, see [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # ALDSession.ALDLicenseAction
 
 **Framework**: App License Delivery SDK  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The action requested in the license request or provided in the response to one.
 
@@ -14,23 +15,23 @@ enum ALDLicenseAction
 ## Topics
 
 ### Enumeration Cases
-- [ALDSession.ALDLicenseAction.create](aldsession/aldlicenseaction/create.md)
-- [ALDSession.ALDLicenseAction.generateStatic](aldsession/aldlicenseaction/generatestatic.md)
-- [ALDSession.ALDLicenseAction.renew](aldsession/aldlicenseaction/renew.md)
-- [ALDSession.ALDLicenseAction.unknown](aldsession/aldlicenseaction/unknown.md)
+- [ALDSession.ALDLicenseAction.create](./aldlicenseaction/create.md)
+- [ALDSession.ALDLicenseAction.generateStatic](./aldlicenseaction/generatestatic.md)
+- [ALDSession.ALDLicenseAction.renew](./aldlicenseaction/renew.md)
+- [ALDSession.ALDLicenseAction.unknown](./aldlicenseaction/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt32)](aldsession/aldlicenseaction/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./aldlicenseaction/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Default Implementations
-- [Equatable Implementations](aldsession/aldlicenseaction/equatable-implementations.md)
-- [RawRepresentable Implementations](aldsession/aldlicenseaction/rawrepresentable-implementations.md)
+- [Equatable Implementations](./aldlicenseaction/equatable-implementations.md)
+- [RawRepresentable Implementations](./aldlicenseaction/rawrepresentable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

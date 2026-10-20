@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 
@@ -30,11 +31,12 @@ If you will be adding a known number of elements to a collection, use this metho
 
 ## See Also
 
-- [func append(Data)](data/append(_:)-vjwy.md)
+### Adding Bytes
+- [func append(Data)](./append%28_%29-vjwy.md)
   Appends the specified data to the end of this data.
-- [func append<SourceType>(UnsafeBufferPointer<SourceType>)](data/append(_:)-xtlw.md)
+- [func append<SourceType>(UnsafeBufferPointer<SourceType>)](./append%28_%29-xtlw.md)
   Append a buffer of bytes to the data.
-- [func append(UnsafePointer<UInt8>, count: Int)](data/append(_:count:).md)
+- [func append(UnsafePointer<UInt8>, count: Int)](./append%28_,count%29.md)
   Appends the specified bytes from memory to the end of the data.
 
 

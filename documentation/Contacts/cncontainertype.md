@@ -1,7 +1,8 @@
 # CNContainerType
 
 **Framework**: Contacts  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The container may be local on the device or associated with a server account that has contacts.
 
@@ -19,37 +20,42 @@ The container may be local on the device or associated with a server account tha
 enum CNContainerType
 ```
 
+```c
+enum CNContainerType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CNContainerType.local](cncontainertype/local.md)
+- [CNContainerType.local](./cncontainertype/local.md)
   A container for contacts only stored locally on the device.
-- [CNContainerType.exchange](cncontainertype/exchange.md)
+- [CNContainerType.exchange](./cncontainertype/exchange.md)
   A container for contacts stored in an Exchange folder from an Exchange server.
-- [CNContainerType.cardDAV](cncontainertype/carddav.md)
+- [CNContainerType.cardDAV](./cncontainertype/carddav.md)
   A container for contacts stored in an CardDAV server, such as iCloud.
-- [CNContainerType.unassigned](cncontainertype/unassigned.md)
+- [CNContainerType.unassigned](./cncontainertype/unassigned.md)
   A container where the system hasn’t assigned the container type.
 ### Initializers
-- [init?(rawValue: Int)](cncontainertype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cncontainertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var name: String](cncontainer/name.md)
+### Getting the Container Information
+- [var name: String](./cncontainer/name.md)
   The name of the container.
-- [var identifier: String](cncontainer/identifier.md)
+- [var identifier: String](./cncontainer/identifier.md)
   The unique identifier for a contacts container on the device.
-- [var type: CNContainerType](cncontainer/type.md)
+- [var type: CNContainerType](./cncontainer/type.md)
   The type of the container.
 
 

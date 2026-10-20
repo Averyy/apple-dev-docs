@@ -1,7 +1,8 @@
 # init(pointerFunctions:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver to use the given functions.
 
@@ -20,6 +21,10 @@ Initializes the receiver to use the given functions.
 init(pointerFunctions functions: NSPointerFunctions)
 ```
 
+```objc
+- (instancetype) initWithPointerFunctions:(NSPointerFunctions *) functions;
+```
+
 #### Return Value
 
 The receiver, initialized to use the given functions.
@@ -30,11 +35,12 @@ The receiver, initialized to use the given functions.
 
 ## See Also
 
-- [init(options: NSPointerFunctions.Options)](nspointerarray/init(options:).md)
+### Creating and Initializing a New Pointer Array
+- [init(options: NSPointerFunctions.Options)](./init%28options%29.md)
   Initializes the receiver to use the given options.
-- [class func strongObjects() -> NSPointerArray](nspointerarray/strongobjects.md)
+- [class func strongObjects() -> NSPointerArray](./strongobjects%28%29.md)
   Returns a new pointer array that maintains strong references to its elements.
-- [class func weakObjects() -> NSPointerArray](nspointerarray/weakobjects.md)
+- [class func weakObjects() -> NSPointerArray](./weakobjects%28%29.md)
   Returns a new pointer array that maintains weak references to its elements.
 
 

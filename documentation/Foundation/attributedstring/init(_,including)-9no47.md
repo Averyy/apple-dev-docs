@@ -1,7 +1,8 @@
 # init(_:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value-type attributed string from a reference type, including an attribute scope.
 
@@ -26,14 +27,15 @@ This initializer only collects attributes from `nsStr` that exist in the provide
 
 ## Parameters
 
-- `nsStr`: The [`NSAttributedString`](nsattributedstring.md) to convert.
+- `nsStr`: The [`NSAttributedString`](../nsattributedstring.md) to convert.
 - `scope`: The attribute scope of the attributes in `nsStr`. This can be a nested scope that contains several scopes.
 
 ## See Also
 
-- [init<S>(NSAttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](attributedstring/init(_:including:)-puv0.md)
+### Creating an Attributed String from a Reference Type
+- [init<S>(NSAttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](./init%28_,including%29-puv0.md)
   Creates a value-type attributed string from a reference type, including an attribute scope that a key path identifies.
-- [init(NSAttributedString)](attributedstring/init(_:)-1fru0.md)
+- [init(NSAttributedString)](./init%28_%29-1fru0.md)
   Creates a value-type attributed string from a reference type.
 
 

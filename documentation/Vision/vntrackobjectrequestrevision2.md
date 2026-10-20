@@ -1,7 +1,8 @@
 # VNTrackObjectRequestRevision2
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 2 of the object tracking request.
 
@@ -19,9 +20,14 @@ A constant for specifying revision 2 of the object tracking request.
 var VNTrackObjectRequestRevision2: Int { get }
 ```
 
+```c
+static const NSUInteger VNTrackObjectRequestRevision2;
+```
+
 ## See Also
 
-- [var VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
+### Identifying Request Revisions
+- [var VNTrackObjectRequestRevision1: Int](./vntrackobjectrequestrevision1.md)
   A constant for specifying revision 1 of the object tracking request.
 
 

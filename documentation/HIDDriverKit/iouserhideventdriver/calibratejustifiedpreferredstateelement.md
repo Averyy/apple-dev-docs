@@ -1,15 +1,16 @@
 # calibrateJustifiedPreferredStateElement
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void calibrateJustifiedPreferredStateElement(IOHIDElement *element, int32_t removalPercentage);
 ```
 

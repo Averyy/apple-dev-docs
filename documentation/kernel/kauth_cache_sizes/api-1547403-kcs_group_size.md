@@ -1,14 +1,15 @@
 # kcs_group_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t kcs_group_size;
 ```
 

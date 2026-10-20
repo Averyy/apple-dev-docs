@@ -1,7 +1,8 @@
 # mutatingSlice(at:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
@@ -18,6 +19,8 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 @export(implementation)
 mutating func mutatingSlice(at ranges: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 #### Discussion
 
@@ -46,11 +49,12 @@ func incrementRegion(
 
 ## See Also
 
-- [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-50cpv.md)
+### Slicing the view
+- [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](./slice%28at%29-50cpv.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-qyjq.md)
+- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](./slice%28at%29-qyjq.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-30asd.md)
+- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](./mutatingslice%28at%29-30asd.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 

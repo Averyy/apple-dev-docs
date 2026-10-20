@@ -1,7 +1,8 @@
 # Morphology.GrammaticalCase
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -21,33 +22,33 @@ enum GrammaticalCase
 ## Topics
 
 ### Enumeration Cases
-- [Morphology.GrammaticalCase.ablative](morphology/grammaticalcase-swift.enum/ablative.md)
-- [Morphology.GrammaticalCase.accusative](morphology/grammaticalcase-swift.enum/accusative.md)
-- [Morphology.GrammaticalCase.adessive](morphology/grammaticalcase-swift.enum/adessive.md)
-- [Morphology.GrammaticalCase.allative](morphology/grammaticalcase-swift.enum/allative.md)
-- [Morphology.GrammaticalCase.dative](morphology/grammaticalcase-swift.enum/dative.md)
-- [Morphology.GrammaticalCase.elative](morphology/grammaticalcase-swift.enum/elative.md)
-- [Morphology.GrammaticalCase.essive](morphology/grammaticalcase-swift.enum/essive.md)
-- [Morphology.GrammaticalCase.genitive](morphology/grammaticalcase-swift.enum/genitive.md)
-- [Morphology.GrammaticalCase.illative](morphology/grammaticalcase-swift.enum/illative.md)
-- [Morphology.GrammaticalCase.inessive](morphology/grammaticalcase-swift.enum/inessive.md)
-- [Morphology.GrammaticalCase.locative](morphology/grammaticalcase-swift.enum/locative.md)
-- [Morphology.GrammaticalCase.nominative](morphology/grammaticalcase-swift.enum/nominative.md)
-- [Morphology.GrammaticalCase.prepositional](morphology/grammaticalcase-swift.enum/prepositional.md)
-- [Morphology.GrammaticalCase.translative](morphology/grammaticalcase-swift.enum/translative.md)
+- [Morphology.GrammaticalCase.ablative](./grammaticalcase-swift.enum/ablative.md)
+- [Morphology.GrammaticalCase.accusative](./grammaticalcase-swift.enum/accusative.md)
+- [Morphology.GrammaticalCase.adessive](./grammaticalcase-swift.enum/adessive.md)
+- [Morphology.GrammaticalCase.allative](./grammaticalcase-swift.enum/allative.md)
+- [Morphology.GrammaticalCase.dative](./grammaticalcase-swift.enum/dative.md)
+- [Morphology.GrammaticalCase.elative](./grammaticalcase-swift.enum/elative.md)
+- [Morphology.GrammaticalCase.essive](./grammaticalcase-swift.enum/essive.md)
+- [Morphology.GrammaticalCase.genitive](./grammaticalcase-swift.enum/genitive.md)
+- [Morphology.GrammaticalCase.illative](./grammaticalcase-swift.enum/illative.md)
+- [Morphology.GrammaticalCase.inessive](./grammaticalcase-swift.enum/inessive.md)
+- [Morphology.GrammaticalCase.locative](./grammaticalcase-swift.enum/locative.md)
+- [Morphology.GrammaticalCase.nominative](./grammaticalcase-swift.enum/nominative.md)
+- [Morphology.GrammaticalCase.prepositional](./grammaticalcase-swift.enum/prepositional.md)
+- [Morphology.GrammaticalCase.translative](./grammaticalcase-swift.enum/translative.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

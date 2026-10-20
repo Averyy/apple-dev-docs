@@ -1,7 +1,8 @@
 # alignRight(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func alignRight(_ sender: Any?)
+```
+
+```objc
+- (void) alignRight:(id) sender;
 ```
 
 

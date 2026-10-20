@@ -1,7 +1,8 @@
 # self
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bind target for the scene.
 
@@ -11,7 +12,7 @@ A bind target for the scene.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ var `self`: BindTarget { get }
 
 #### Discussion
 
-This property represents a bind path within an [`AnimationView`](animationview.md) to redirect the view’s [`source`](blendtreesourcenode/source.md) animation to a different scene.
+This property represents a bind path within an [`AnimationView`](../../animationview.md) to redirect the view’s [`source`](../../blendtreesourcenode/source.md) animation to a different scene.
 
 
 ---

@@ -1,7 +1,8 @@
 # calculateHDRStats(for:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Given a Core Graphics image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Graphics image that has the calculated values.
 
@@ -17,6 +18,10 @@ Given a Core Graphics image, use the receiving Core Image context to calculate i
 
 ```swift
 func calculateHDRStats(for cgimage: CGImage) -> CGImage
+```
+
+```objc
+- (CGImageRef) calculateHDRStatsForCGImage:(CGImageRef) cgimage;
 ```
 
 #### Return Value

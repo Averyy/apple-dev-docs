@@ -1,7 +1,8 @@
 # CMDroppedFrameReason.Info
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Provides additional information regarding the dropped video frame.
 
@@ -23,20 +24,20 @@ enum Info
 ## Topics
 
 ### Enumeration Cases
-- [CMDroppedFrameReason.Info.cameraModeSwitch](cmdroppedframereason/info/cameramodeswitch.md)
+- [CMDroppedFrameReason.Info.cameraModeSwitch](./info/cameramodeswitch.md)
   A discontinuity was caused by a camera mode switch.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../../CoreVideo/cvattachmentvaluerepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

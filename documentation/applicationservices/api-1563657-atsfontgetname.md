@@ -1,7 +1,8 @@
 # ATSFontGetName(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontGetName(_ iFont: ATSFontRef, _ iOptions: ATSOptionFlags, _ oName: UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontGetName(ATSFontRef iFont, ATSOptionFlags iOptions, CFStringRef *oName);
 ```
 
 

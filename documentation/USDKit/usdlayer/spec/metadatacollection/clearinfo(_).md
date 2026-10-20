@@ -1,7 +1,8 @@
 # clearInfo(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the authored value for `key`.
 

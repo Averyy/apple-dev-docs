@@ -1,12 +1,13 @@
 # WebOpenPanelResultListener
 
 **Framework**: WebKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 `WebView` user interface delegates that implement the webView:runOpenPanelForFileButtonWithResultListener: method use the methods defined in this protocol to communicate with the listener object. The methods allow the delegate to send a cancel message, or set the selected file name.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,21 +15,25 @@
 protocol WebOpenPanelResultListener : NSObjectProtocol
 ```
 
+```objc
+@protocol WebOpenPanelResultListener <NSObject>
+```
+
 ## Topics
 
 ### Setting a File Name
-- [func chooseFilename(String!)](webopenpanelresultlistener/choosefilename(_:).md)
+- [func chooseFilename(String!)](./webopenpanelresultlistener/choosefilename%28_%29.md)
   Displays a file open panel and returns the selected filename.
-- [func chooseFilenames([Any]!)](webopenpanelresultlistener/choosefilenames(_:).md)
+- [func chooseFilenames([Any]!)](./webopenpanelresultlistener/choosefilenames%28_%29.md)
   Displays a file open panel and returns the multiple selected filenames.
 ### Cancelling a File Open Operation
-- [func cancel()](webopenpanelresultlistener/cancel.md)
+- [func cancel()](./webopenpanelresultlistener/cancel%28%29.md)
   Invoked when a file open operation was cancelled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

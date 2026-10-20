@@ -1,7 +1,8 @@
 # init(cgColor:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object using the specified Core Graphics color.
 
@@ -12,6 +13,10 @@ Creates a color object using the specified Core Graphics color.
 
 ```swift
 init?(cgColor: CGColor)
+```
+
+```objc
++ (NSColor *) colorWithCGColor:(CGColorRef) cgColor;
 ```
 
 #### Return Value
@@ -28,8 +33,9 @@ This method may return `nil`.
 
 ## See Also
 
-- [convenience init(Color)](nscolor/init(_:).md)
-- [init(CIColor: CIColor)](nscolor/init(cicolor:)-3rxsk.md)
+### Converting other types of color objects
+- [convenience init(Color)](./init%28_%29.md)
+- [init(CIColor: CIColor)](./init%28cicolor%29-3rxsk.md)
   Creates a color object from the specified Core Image color.
 
 

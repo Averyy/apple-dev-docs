@@ -1,7 +1,8 @@
 # constituentDevices
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of physical devices that make up a virtual device.
 
@@ -17,19 +18,24 @@ An array of physical devices that make up a virtual device.
 var constituentDevices: [AVCaptureDevice] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureDevice *> * constituentDevices;
+```
+
 #### Discussion
 
-The value of this property is an empty array when called on a device whose [`isVirtualDevice`](avcapturedevice/isvirtualdevice.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is an empty array when called on a device whose [`isVirtualDevice`](./isvirtualdevice.md) property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isVirtualDevice: Bool](avcapturedevice/isvirtualdevice.md)
+### Inspecting device characteristics
+- [var isVirtualDevice: Bool](./isvirtualdevice.md)
   A Boolean value that indicates whether the device consists of two or more physical devices.
-- [func hasMediaType(AVMediaType) -> Bool](avcapturedevice/hasmediatype(_:).md)
+- [func hasMediaType(AVMediaType) -> Bool](./hasmediatype%28_%29.md)
   Returns a Boolean value that indicates whether the device captures media of a particular type.
-- [var transportType: Int32](avcapturedevice/transporttype.md)
+- [var transportType: Int32](./transporttype.md)
   The transport type of the device.
-- [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](avcapturedevice/supportssessionpreset(_:).md)
+- [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](./supportssessionpreset%28_%29.md)
   Returns a Boolean value that indicates whether you can use the device with capture session configured with the specified preset.
 
 

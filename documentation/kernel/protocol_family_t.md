@@ -1,7 +1,8 @@
 # protocol_family_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Storage type for the protocol family.
 
@@ -10,7 +11,7 @@ Storage type for the protocol family.
 
 ## Declaration
 
-```swift
+```c
 typedef u_int32_t protocol_family_t;
 ```
 

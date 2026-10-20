@@ -1,7 +1,8 @@
 # message
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The incoming message.
 

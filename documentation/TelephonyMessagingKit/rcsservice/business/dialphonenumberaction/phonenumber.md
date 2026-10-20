@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phone number to dial.
 
@@ -16,7 +17,8 @@ let phoneNumber: String
 
 ## See Also
 
-- [let fallbackURL: URL?](rcsservice/business/dialphonenumberaction/fallbackurl.md)
+### Accessing action properties
+- [let fallbackURL: URL?](./fallbackurl.md)
   Fallback URL to use when unable to perform operation.
 
 

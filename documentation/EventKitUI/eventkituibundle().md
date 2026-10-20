@@ -1,7 +1,8 @@
 # EventKitUIBundle()
 
 **Framework**: EventKit UI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Use to access resources within the app bundle.
 
@@ -15,6 +16,10 @@ Use to access resources within the app bundle.
 
 ```swift
 func EventKitUIBundle() -> Bundle!
+```
+
+```c
+extern NSBundle *EventKitUIBundle();
 ```
 
 #### Discussion

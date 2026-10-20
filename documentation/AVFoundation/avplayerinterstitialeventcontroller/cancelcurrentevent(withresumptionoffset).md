@@ -1,7 +1,8 @@
 # cancelCurrentEvent(withResumptionOffset:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.
 
@@ -20,9 +21,13 @@ Cancels the playback of all currently playing and scheduled interstitial events,
 func cancelCurrentEvent(withResumptionOffset resumptionOffset: CMTime)
 ```
 
+```objc
+- (void) cancelCurrentEventWithResumptionOffset:(CMTime) resumptionOffset;
+```
+
 #### Discussion
 
-When you cancel interstitial events using this method, the resumption offset value that you specify overrides the events’s [`resumptionOffset`](avplayerinterstitialevent/resumptionoffset.md) value.
+When you cancel interstitial events using this method, the resumption offset value that you specify overrides the events’s [`resumptionOffset`](../avplayerinterstitialevent/resumptionoffset.md) value.
 
 > **Note**:  If you call this method during the handling of coinciding interstitial events, the system cancels all events for that time. Calling this method has no impact on schedule events that have dates or times later than this event.
 
@@ -32,9 +37,10 @@ When you cancel interstitial events using this method, the resumption offset val
 
 ## See Also
 
-- [var events: [AVPlayerInterstitialEvent]!](avplayerinterstitialeventcontroller/events.md)
+### Configuring the event schedule
+- [var events: [AVPlayerInterstitialEvent]!](./events.md)
   The current schedule of interstitial events.
-- [func skipCurrentEvent()](avplayerinterstitialeventcontroller/skipcurrentevent.md)
+- [func skipCurrentEvent()](./skipcurrentevent%28%29.md)
   Causes the playback of the currently playing interstital event to be abandoned.
 
 

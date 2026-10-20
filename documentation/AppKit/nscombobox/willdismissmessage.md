@@ -1,7 +1,8 @@
 # NSComboBox.WillDismissMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct WillDismissMessage
 ## Topics
 
 ### Initializers
-- [init(comboBox: NSComboBox)](nscombobox/willdismissmessage/init(combobox:).md)
+- [init(comboBox: NSComboBox)](./willdismissmessage/init%28combobox%29.md)
 ### Instance Properties
-- [var comboBox: NSComboBox](nscombobox/willdismissmessage/combobox.md)
+- [var comboBox: NSComboBox](./willdismissmessage/combobox.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

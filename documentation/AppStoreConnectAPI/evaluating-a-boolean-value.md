@@ -1,6 +1,7 @@
 # Evaluating a Boolean value
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Return given values for true and false results of a conditional.
 
@@ -18,7 +19,7 @@ any if(boolean $condition, any $ifTrue, any $ifFalse)
 
 -`condition`: An expression that evaluates to a Boolean value. -`ifTrue`: The value to return if `condition` is `true`. -`ifFalse`: The value to return if `condition` is `false`.
 
-##### Return Value
+##### Return value
 
 Returns `ifTrue` if `condition` is `true`; otherwise, `ifFalse`.
 

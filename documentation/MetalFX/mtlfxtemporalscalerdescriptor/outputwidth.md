@@ -1,7 +1,8 @@
 # outputWidth
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the output color texture for the temporal scaler you create with this descriptor.
 
@@ -18,11 +19,16 @@ The width of the output color texture for the temporal scaler you create with th
 var outputWidth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger outputWidth;
+```
+
 ## See Also
 
-- [var outputHeight: Int](mtlfxtemporalscalerdescriptor/outputheight.md)
+### Configuring a temporal effect’s output
+- [var outputHeight: Int](./outputheight.md)
   The height of the output color texture for the temporal scaler you create with this descriptor.
-- [var outputTextureFormat: MTLPixelFormat](mtlfxtemporalscalerdescriptor/outputtextureformat.md)
+- [var outputTextureFormat: MTLPixelFormat](./outputtextureformat.md)
   The pixel format of the output color texture for the temporal scaler you create with this descriptor.
 
 

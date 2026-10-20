@@ -1,18 +1,19 @@
 # mbuf_concatenate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 mbuf_t mbuf_concatenate(mbuf_t dst, mbuf_t src);
 ```
 
-#### Return_value
+#### Return Value
 
 A pointer to the head of the concatenated mbuf chain. This should be treated as the updated destination mbuf chain; the caller must no longer refer to the original src or dst mbuf chain. Otherwise it returns NULL if the original dst mbuf chain is NULL.
 

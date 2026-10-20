@@ -1,7 +1,8 @@
 # SecStaticCodeCheckValidity(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Validates a static code object.
 
@@ -15,9 +16,13 @@ Validates a static code object.
 func SecStaticCodeCheckValidity(_ staticCode: SecStaticCode, _ flags: SecCSFlags, _ requirement: SecRequirement?) -> OSStatus
 ```
 
+```c
+OSStatus SecStaticCodeCheckValidity(SecStaticCodeRef staticCode, SecCSFlags flags, SecRequirementRef requirement);
+```
+
 #### Return Value
 
-A result code. See [`Code Signing Services Result Codes`](code-signing-services-result-codes.md).
+A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
 #### Discussion
 
@@ -25,15 +30,15 @@ This function obtains and verifies the signature on the code specified by the co
 
 This call is only secure if the code is not subject to concurrent modification, and the outcome is only valid as long as the code remains unmodified. If the underlying file system has dynamic characteristics, such as a network file system, union mount, or FUSE, you must consider how secure the code is from modification after validation.
 
-When checking a universal binary, include the [`kSecCSCheckAllArchitectures`](kseccscheckallarchitectures.md) flag. Otherwise the method verifies only one slice of the binary, potentially indicating success without testing all the slices. Be aware that the slices of a universal binary don’t have to be signed by the same signer for the test to pass. One slice might be ad hoc signed, for example. But the validity check doesn’t know which slice you are going to run. For example, the user might use the arch(1) command line utility to pick a 32-bit architecture even though a 64-bit architecture is available.
+When checking a universal binary, include the [`kSecCSCheckAllArchitectures`](./kseccscheckallarchitectures.md) flag. Otherwise the method verifies only one slice of the binary, potentially indicating success without testing all the slices. Be aware that the slices of a universal binary don’t have to be signed by the same signer for the test to pass. One slice might be ad hoc signed, for example. But the validity check doesn’t know which slice you are going to run. For example, the user might use the arch(1) command line utility to pick a 32-bit architecture even though a 64-bit architecture is available.
 
-If you want to be sure to test a particular slice, create the static code object with the [`SecStaticCodeCreateWithPathAndAttributes(_:_:_:_:)`](secstaticcodecreatewithpathandattributes(_:_:_:_:).md) method using the [`kSecCodeAttributeArchitecture`](kseccodeattributearchitecture.md) and [`kSecCodeAttributeSubarchitecture`](kseccodeattributesubarchitecture.md) attributes (if you know the architecture) or the [`kSecCodeAttributeUniversalFileOffset`](kseccodeattributeuniversalfileoffset.md) attribute (if you know the offset into the universal binary).
+If you want to be sure to test a particular slice, create the static code object with the [`SecStaticCodeCreateWithPathAndAttributes(_:_:_:_:)`](./secstaticcodecreatewithpathandattributes%28_,_,_,_%29.md) method using the [`kSecCodeAttributeArchitecture`](./kseccodeattributearchitecture.md) and [`kSecCodeAttributeSubarchitecture`](./kseccodeattributesubarchitecture.md) attributes (if you know the architecture) or the [`kSecCodeAttributeUniversalFileOffset`](./kseccodeattributeuniversalfileoffset.md) attribute (if you know the offset into the universal binary).
 
 ## Parameters
 
 - `staticCode`: The static code object to be validated.
-- `flags`: Optional flags; see [`Static Code Validation Flags`](static-code-validation-flags.md) for possible values. Use [`kSecCSCheckAllArchitectures`](kseccscheckallarchitectures.md) to validate all slices of a universal binary.
-- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](secrequirementcreatewithstring(_:_:_:).md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirementcreatewithstringanderrors(_:_:_:_:).md) function to create a code requirement object. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
+- `flags`: Optional flags; see [Static Code Validation Flags](./static-code-validation-flags.md) for possible values. Use [`kSecCSCheckAllArchitectures`](./kseccscheckallarchitectures.md) to validate all slices of a universal binary.
+- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](./secrequirementcreatewithstring%28_,_,_%29.md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](./secrequirementcreatewithstringanderrors%28_,_,_,_%29.md) function to create a code requirement object. See [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
 
 
 ---

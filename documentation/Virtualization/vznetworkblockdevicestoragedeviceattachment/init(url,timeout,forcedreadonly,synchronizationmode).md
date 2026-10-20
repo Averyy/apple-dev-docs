@@ -1,7 +1,8 @@
 # init(URL:timeout:forcedReadOnly:synchronizationMode:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 14.0+

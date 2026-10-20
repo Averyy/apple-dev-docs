@@ -1,7 +1,8 @@
 # outputNames
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output names.
 
@@ -22,9 +23,10 @@ let outputNames: [String]
 
 ## See Also
 
-- [let inputs: [MLModelStructure.Program.NamedValueType]](mlmodelstructure-swift.enum/program/block/inputs.md)
+### Accessing the properties
+- [let inputs: [MLModelStructure.Program.NamedValueType]](./inputs.md)
   The inputs to the block.
-- [let operations: [MLModelStructure.Program.Operation]](mlmodelstructure-swift.enum/program/block/operations.md)
+- [let operations: [MLModelStructure.Program.Operation]](./operations.md)
   The operations in the block.
 
 

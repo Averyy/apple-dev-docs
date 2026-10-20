@@ -1,18 +1,19 @@
 # points
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of one or more points that serve as arguments.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ An array of one or more points that serve as arguments.
 var points: UnsafeMutablePointer<CGPoint>
 ```
 
+```c
+CGPoint * points;
+```
+
 ## See Also
 
-- [var type: CGPathElementType](cgpathelement/type.md)
+### Instance Properties
+- [var type: CGPathElementType](./type.md)
   An element type (or operation).
 
 

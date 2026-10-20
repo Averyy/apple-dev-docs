@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A value less than or equal to the number of elements in the sequence, calculated nondestructively.
@@ -20,6 +21,12 @@ A value less than or equal to the number of elements in the sequence, calculated
 ```swift
 var underestimatedCount: Int { get }
 ```
+
+## Default Implementations
+
+### Iterable Implementations
+- [var underestimatedCount: Int](./underestimatedcount-83ybl.md)
+  A value less than or equal to the number of elements in the sequence, calculated nondestructively.
 
 
 ---

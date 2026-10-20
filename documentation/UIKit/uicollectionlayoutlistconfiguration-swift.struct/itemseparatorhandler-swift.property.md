@@ -1,7 +1,8 @@
 # itemSeparatorHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that provides granular control over the list separator appearance of each item.
 
@@ -9,7 +10,7 @@ The closure that provides granular control over the list separator appearance of
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,13 +24,14 @@ The list section treats the configuration that returns from this closure as the 
 
 ## See Also
 
-- [var showsSeparators: Bool](uicollectionlayoutlistconfiguration-swift.struct/showsseparators.md)
+### Configuring separators
+- [var showsSeparators: Bool](./showsseparators.md)
   A Boolean value that determines whether the list shows separators between cells.
-- [var separatorConfiguration: UIListSeparatorConfiguration](uicollectionlayoutlistconfiguration-swift.struct/separatorconfiguration.md)
+- [var separatorConfiguration: UIListSeparatorConfiguration](./separatorconfiguration.md)
   The section’s preferred configuration for list separators.
-- [struct UIListSeparatorConfiguration](uilistseparatorconfiguration-swift.struct.md)
+- [struct UIListSeparatorConfiguration](../uilistseparatorconfiguration-swift.struct.md)
   A configuration that controls the list separator appearance in a list section.
-- [UICollectionLayoutListConfiguration.ItemSeparatorHandler](uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.typealias.md)
+- [UICollectionLayoutListConfiguration.ItemSeparatorHandler](./itemseparatorhandler-swift.typealias.md)
   A closure that provides granular control over list separator appearance.
 
 

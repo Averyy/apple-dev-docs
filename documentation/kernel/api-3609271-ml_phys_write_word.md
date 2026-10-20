@@ -1,14 +1,15 @@
 # ml_phys_write_word
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_phys_write_word(vm_offset_t paddr, unsigned int data);
 ```
 

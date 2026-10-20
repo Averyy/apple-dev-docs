@@ -1,7 +1,8 @@
 # convert(_:to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point from the current window’s coordinate system to the coordinate system of another window.
 
@@ -9,13 +10,17 @@ Converts a point from the current window’s coordinate system to the coordinate
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func convert(_ point: CGPoint, to window: UIWindow?) -> CGPoint
+```
+
+```objc
+- (CGPoint) convertPoint:(CGPoint) point toWindow:(UIWindow *) window;
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ The point converted to the coordinate system of `window`.
 
 ## See Also
 
-- [func convert(CGPoint, from: UIWindow?) -> CGPoint](uiwindow/convert(_:from:)-1gbm1.md)
+### Converting coordinates
+- [func convert(CGPoint, from: UIWindow?) -> CGPoint](./convert%28_,from%29-1gbm1.md)
   Converts a point from the coordinate system of a given window to the coordinate system of the current window.
-- [func convert(CGRect, to: UIWindow?) -> CGRect](uiwindow/convert(_:to:)-7k3l0.md)
+- [func convert(CGRect, to: UIWindow?) -> CGRect](./convert%28_,to%29-7k3l0.md)
   Converts a rectangle from the current window’s coordinate system to the coordinate system of another window.
-- [func convert(CGRect, from: UIWindow?) -> CGRect](uiwindow/convert(_:from:)-10p2b.md)
+- [func convert(CGRect, from: UIWindow?) -> CGRect](./convert%28_,from%29-10p2b.md)
   Converts a rectangle from the coordinate system of another window to coordinate system of the current window.
 
 

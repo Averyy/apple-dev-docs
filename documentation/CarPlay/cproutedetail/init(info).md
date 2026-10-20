@@ -1,7 +1,8 @@
 # init(info:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information with a freeform informational string.
 
@@ -14,6 +15,10 @@ Creates additional route information with a freeform informational string.
 
 ```swift
 convenience init(info: String)
+```
+
+```objc
++ (instancetype) routeDetailWithInfo:(NSString *) info;
 ```
 
 #### Return Value

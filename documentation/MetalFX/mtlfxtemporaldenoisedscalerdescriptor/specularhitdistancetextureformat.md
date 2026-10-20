@@ -1,7 +1,8 @@
 # specularHitDistanceTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input specular hit texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input specular hit texture for the scaler you create wit
 
 ```swift
 var specularHitDistanceTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat specularHitDistanceTextureFormat;
 ```
 
 

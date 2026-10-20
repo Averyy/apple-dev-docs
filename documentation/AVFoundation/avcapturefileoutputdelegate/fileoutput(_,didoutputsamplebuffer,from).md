@@ -1,7 +1,8 @@
 # fileOutput(_:didOutputSampleBuffer:from:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gives the delegate the opportunity to inspect samples as they are received by the output and start and stop recording at exact times.
 
@@ -14,9 +15,13 @@ Gives the delegate the opportunity to inspect samples as they are received by th
 optional func fileOutput(_ output: AVCaptureFileOutput, didOutputSampleBuffer sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
 ```
 
+```objc
+- (void) captureOutput:(AVCaptureFileOutput *) output didOutputSampleBuffer:(CMSampleBufferRef) sampleBuffer fromConnection:(AVCaptureConnection *) connection;
+```
+
 #### Discussion
 
-This method is called whenever the file output receives a single sample buffer (a single video frame or audio buffer, for example) from the given connection. This gives delegates an opportunity to start and stop recording or change output files at an exact sample boundary. If called from within this method, the file output’s [`startRecording(to:recordingDelegate:)`](avcapturefileoutput/startrecording(to:recordingdelegate:).md) and [`resumeRecording()`](avcapturefileoutput/resumerecording().md) methods are guaranteed to include the received sample buffer in the new file, whereas calls to [`stopRecording()`](avcapturefileoutput/stoprecording().md) and [`pauseRecording()`](avcapturefileoutput/pauserecording().md) are guaranteed to include all samples leading up to those in the current sample buffer in the existing file.
+This method is called whenever the file output receives a single sample buffer (a single video frame or audio buffer, for example) from the given connection. This gives delegates an opportunity to start and stop recording or change output files at an exact sample boundary. If called from within this method, the file output’s [`startRecording(to:recordingDelegate:)`](../avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) and [`resumeRecording()`](../avcapturefileoutput/resumerecording%28%29.md) methods are guaranteed to include the received sample buffer in the new file, whereas calls to [`stopRecording()`](../avcapturefileoutput/stoprecording%28%29.md) and [`pauseRecording()`](../avcapturefileoutput/pauserecording%28%29.md) are guaranteed to include all samples leading up to those in the current sample buffer in the existing file.
 
 You can gather information particular to the samples by inspecting the `CMSampleBuffer` object. Sample buffers always contain a single frame of video if called from this method but may also contain multiple samples of audio. For B-frame video formats, samples are always delivered in presentation order.
 
@@ -30,12 +35,13 @@ You should not assume that this method will be called on a specific thread. In a
 
 - `output`: The capture file output that is receiving the media data.
 - `sampleBuffer`: A `CMSampleBuffer` object containing the sample data and additional information about the sample, such as its format and presentation time.
-- `connection`: The [`AVCaptureConnection`](avcaptureconnection.md) object attached to the file output from which the sample data was received.
+- `connection`: The [`AVCaptureConnection`](../avcaptureconnection.md) object attached to the file output from which the sample data was received.
 
 ## See Also
 
-- [func fileOutputShouldProvideSampleAccurateRecordingStart(AVCaptureFileOutput) -> Bool](avcapturefileoutputdelegate/fileoutputshouldprovidesampleaccuraterecordingstart(_:).md)
-  Allows a client to opt in to frame accurate recording in [`fileOutput(_:didOutputSampleBuffer:from:)`](avcapturefileoutputdelegate/fileoutput(_:didoutputsamplebuffer:from:).md).
+### Sample processing
+- [func fileOutputShouldProvideSampleAccurateRecordingStart(AVCaptureFileOutput) -> Bool](./fileoutputshouldprovidesampleaccuraterecordingstart%28_%29.md)
+  Allows a client to opt in to frame accurate recording in [`fileOutput(_:didOutputSampleBuffer:from:)`](./fileoutput%28_,didoutputsamplebuffer,from%29.md).
 
 
 ---

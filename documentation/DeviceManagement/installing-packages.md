@@ -1,31 +1,32 @@
 # Installing packages
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Use declarative package management to install and remove packages in macOS.
 
 #### Overview
 
-Device management services can install and monitor packages using declarative management on macOS devices. The services apply a declarative management configuration to the device and subscribe to a declarative management status item. Devices support packages with any type of content. If a package installs an app, a service can manage the app using the [`AppManaged`](appmanaged.md) configuration with an `AppComposedIdentifier` key.
+Device management services can install and monitor packages using declarative management on macOS devices. The services apply a declarative management configuration to the device and subscribe to a declarative management status item. Devices support packages with any type of content. If a package installs an app, a service can manage the app using the [`AppManaged`](./appmanaged.md) configuration with an `AppComposedIdentifier` key.
 
 Devices can install packages only on supervised devices in the system scope (the device management service device channel).
 
-The [`Package`](package.md) configuration type is `com.apple.configuration.package`. Use this configuration to install a package.
+The [`Package`](./package.md) configuration type is `com.apple.configuration.package`. Use this configuration to install a package.
 
-#### Install Packages
+#### Install packages
 
-To install packages, the device downloads a manifest document from the URL in the configuration’s `ManifestURL` key. The manifest needs to match the [`ManifestURL`](manifesturl.md) format and reference a single package file. It also needs to contain a `bundle-version` key for the package, which the device uses to detect package updates when updating configurations.
+To install packages, the device downloads a manifest document from the URL in the configuration’s `ManifestURL` key. The manifest needs to match the [`ManifestURL`](./manifesturl.md) format and reference a single package file. It also needs to contain a `bundle-version` key for the package, which the device uses to detect package updates when updating configurations.
 
-The device can install a package immediately after it applies a configuration, or it can wait for the user to start the install. The `Install` key in the [`PackageInstallBehaviorObject`](packageinstallbehaviorobject.md) object controls this behavior:
+The device can install a package immediately after it applies a configuration, or it can wait for the user to start the install. The `Install` key in the [`PackageInstallBehaviorObject`](./packageinstallbehaviorobject.md) object controls this behavior:
 
 | Value | Description |
 | --- | --- |
 | `Required` | The device installs the package when it applies the configuration. |
 | `Optional` | The device doesn’t install the package when it applies the configuration. Instead, the user chooses when to install the package. |
 
-A *management app* displays required and optional packages to the user, provides details about packages, and allows the user to initiate installs of optional packages. For more information, see [`Displaying managed apps and packages`](displaying-managed-apps-and-packages.md).
+A *management app* displays required and optional packages to the user, provides details about packages, and allows the user to initiate installs of optional packages. For more information, see [Displaying managed apps and packages](./displaying-managed-apps-and-packages.md).
 
-#### Update Packages
+#### Update packages
 
 The device doesn’t automatically update packages. To update a package, the device management service needs to:
 
@@ -34,40 +35,40 @@ The device doesn’t automatically update packages. To update a package, the dev
 
 The device checks the manifest during configuration updates, and updates packages if needed.
 
-#### Remove Packages
+#### Remove packages
 
 The device removes a package when it deactivates or removes the configuration for a package, or when it unenrolls.
 
-The device tracks the files and directories that the package creates or updates at install time. The device removes the files and directories it tracks, when the `Remove` key in the [`PackageUninstallBehaviorObject`](packageuninstallbehaviorobject.md) object is set to `true`. Any changes to files or directories after install, such as via a post-install script in the package or by user changes, are not tracked.
+The device tracks the files and directories that the package creates or updates at install time. The device removes the files and directories it tracks, when the `Remove` key in the [`PackageUninstallBehaviorObject`](./packageuninstallbehaviorobject.md) object is set to `true`. Any changes to files or directories after install, such as via a post-install script in the package or by user changes, are not tracked.
 
 > **Note**:  Removal of files and directories only occurs when the `Remove` key is set to `true` when the package is installed. If you change the key from `false` to `true` in a configuration that the device has already installed, then the device won’t track the files and directories and it won’t remove them when it removes the package configuration.
 
-When the `Remove` key in the [`PackageUninstallBehaviorObject`](packageuninstallbehaviorobject.md) object is set to `false` or isn’t present, the device only removes the system metadata for the package.
+When the `Remove` key in the [`PackageUninstallBehaviorObject`](./packageuninstallbehaviorobject.md) object is set to `false` or isn’t present, the device only removes the system metadata for the package.
 
-#### Get the Status of Packages
+#### Get the status of packages
 
-The device reports the status of each declarative managed package in the [`StatusPackageList`](statuspackagelist.md) status item, which device management services can subscribe to. When the package status changes, the device reports incremental updates to the [`StatusPackageList`](statuspackagelist.md) status item elements.
+The device reports the status of each declarative managed package in the [`StatusPackageList`](./statuspackagelist.md) status item, which device management services can subscribe to. When the package status changes, the device reports incremental updates to the [`StatusPackageList`](./statuspackagelist.md) status item elements.
 
-#### Process the Status Item
+#### Process the status item
 
-The [`StatusPackageList`](statuspackagelist.md) status item type is `package.list`, which is the device’s list of declarative packages.
+The [`StatusPackageList`](./statuspackagelist.md) status item type is `package.list`, which is the device’s list of declarative packages.
 
-The status item’s value is an array of objects, where each object represents a declarative managed package. The device uses normal status-item array value reporting behavior to report changes incrementally to the device management service; for more information, see [`StatusReport`](statusreport.md). The status includes required and optional packages, regardless of whether they are installed.
+The status item’s value is an array of objects, where each object represents a declarative managed package. The device uses normal status-item array value reporting behavior to report changes incrementally to the device management service; for more information, see [`StatusReport`](./statusreport.md). The status includes required and optional packages, regardless of whether they are installed.
 
-The `identifier` key provides the unique identifier of the package for incremental reporting in the overall status item (see [`StatusReport`](statusreport.md)). The `declaration-identifier` key contains the `Identifier` of the package configuration. Additional properties show the package’s name and version identifiers.
+The `identifier` key provides the unique identifier of the package for incremental reporting in the overall status item (see [`StatusReport`](./statusreport.md)). The `declaration-identifier` key contains the `Identifier` of the package configuration. Additional properties show the package’s name and version identifiers.
 
 The `state` key indicates the package’s management state, for example, `queued`, `downloading`, `installing`, and `installed`. If an error occurs during installation, the device reports the `failed` state and includes the `reasons` key to provide more details.
 
-Use this status item in declarative device management activation predicates using the same format for expressions that [`Processing status for managed apps`](processing-status-for-managed-apps.md) describes for managed app status.
+Use this status item in declarative device management activation predicates using the same format for expressions that [Processing status for managed apps](./processing-status-for-managed-apps.md) describes for managed app status.
 
-#### Handle Errors
+#### Handle errors
 
 The device reports errors to the device management service in two ways:
 
-- It reports an error in a configuration using the declarative management [`StatusManagementDeclarations`](statusmanagementdeclarations.md) status item. The status item shows the configuration as active but invalid, with a reason code. Examples include syntax errors or missing required keys.
-- It reports an error during package installation using the declarative management [`StatusPackageList`](statuspackagelist.md) status item, described above.
+- It reports an error in a configuration using the declarative management [`StatusManagementDeclarations`](./statusmanagementdeclarations.md) status item. The status item shows the configuration as active but invalid, with a reason code. Examples include syntax errors or missing required keys.
+- It reports an error during package installation using the declarative management [`StatusPackageList`](./statuspackagelist.md) status item, described above.
 
-#### Build a Package
+#### Build a package
 
 The device only installs signed packages and only when it can verify the signature. The package signature needs to use an appropriate certificate that the device can verify, such as a TLS certificate with signing usage. Only sign the package; you don’t need to sign the app because Gatekeeper doesn’t check apps that are installed using device management.
 
@@ -79,7 +80,7 @@ $ sudo pkgbuild --component <APP> --install-location /Applications --sign <CERT>
 
 Set the `<APP>` argument to the path of the app to install, and the `<CERT>` argument to the signing certificate identifier. Set the install location to `/Applications` because the device only manages apps in that location.
 
-In addition to the `.pkg` file, create a [`ManifestURL`](package/manifesturl.md) document that the device management service uses to install the package, as the following example shows:
+In addition to the `.pkg` file, create a [`ManifestURL`](./package/manifesturl.md) document that the device management service uses to install the package, as the following example shows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,7 +118,7 @@ In addition to the `.pkg` file, create a [`ManifestURL`](package/manifesturl.md)
 </plist>
 ```
 
-The [`ManifestURL`](package/manifesturl.md) needs to adhere to the following requirements:
+The [`ManifestURL`](./package/manifesturl.md) needs to adhere to the following requirements:
 
 - Set the `items/assets/kind` key to `software-package`.
 - Set the `items/assets/url` key to the URL the device uses to download the package file.
@@ -137,9 +138,10 @@ You can build more complex packages — for example, ones that contain multiple 
 
 ## See Also
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
+### Install managed apps
+- [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
   Use declarative management to handle all aspects of managing apps on devices.
-- [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
+- [Displaying managed apps and packages](./displaying-managed-apps-and-packages.md)
   Use a management app to display managed apps and packages to the user.
 
 

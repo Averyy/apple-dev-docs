@@ -1,7 +1,8 @@
 # MPSGraphNonMaximumSuppressionCoordinateMode.centersWidthFirst
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case centersWidthFirst
+```
+
+```c
+MPSGraphNonMaximumSuppressionCoordinateModeCentersWidthFirst
 ```
 
 

@@ -1,7 +1,8 @@
 # ProductViewStyle.Configuration
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the properties of a product view style.
 
@@ -22,9 +23,10 @@ typealias Configuration = ProductViewStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](productviewstyle/makebody(configuration:).md)
+### Creating custom product views
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a product view.
-- [associatedtype Body : View](productviewstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a product view.
 
 

@@ -1,7 +1,8 @@
 # ShaderGraph.Node.NodeData
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -18,17 +19,17 @@ enum NodeData
 ## Topics
 
 ### Enumeration Cases
-- [ShaderGraph.Node.NodeData.constant(_:)](shadergraph/node/nodedata/constant(_:).md)
+- [ShaderGraph.Node.NodeData.constant(_:)](./nodedata/constant%28_%29.md)
   A node with a fixed, inline value.
-- [case definition(ShaderGraph.NodeDefinition)](shadergraph/node/nodedata/definition(_:).md)
-  A node defined by a [`ShaderGraph.NodeDefinition`](shadergraph/nodedefinition.md) from a [`ShaderGraph.NodeLibrary`](shadergraph/nodelibrary.md).
-- [ShaderGraph.Node.NodeData.graph(_:)](shadergraph/node/nodedata/graph(_:).md)
-  A subgraph node, embedding another [`ShaderGraph`](shadergraph.md) as a node.
+- [case definition(ShaderGraph.NodeDefinition)](./nodedata/definition%28_%29.md)
+  A node defined by a [`ShaderGraph.NodeDefinition`](../nodedefinition.md) from a [`ShaderGraph.NodeLibrary`](../nodelibrary.md).
+- [ShaderGraph.Node.NodeData.graph(_:)](./nodedata/graph%28_%29.md)
+  A subgraph node, embedding another [`ShaderGraph`](../../shadergraph.md) as a node.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 
 ---

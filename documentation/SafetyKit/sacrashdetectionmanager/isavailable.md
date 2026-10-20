@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates if Crash Detection is available.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates if Crash Detection is available.
 class var isAvailable: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isAvailable) BOOL available;
+```
+
 ## See Also
 
-- [var authorizationStatus: SAAuthorizationStatus](sacrashdetectionmanager/authorizationstatus.md)
+### Determining availability
+- [var authorizationStatus: SAAuthorizationStatus](./authorizationstatus.md)
   A value that indicates if the person authorized the app to receive Crash Detection events.
 
 

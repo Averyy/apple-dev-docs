@@ -1,7 +1,8 @@
 # kAXTextAreaRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The editable text area in a control or window.
 
@@ -12,6 +13,10 @@ The editable text area in a control or window.
 
 ```swift
 var kAXTextAreaRole: String { get }
+```
+
+```c
+#define kAXTextAreaRole
 ```
 
 

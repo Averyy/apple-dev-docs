@@ -1,7 +1,8 @@
 # vertical(layoutSize:subitems:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a group of the specified size, containing an array of items arranged in a vertical line.
 
@@ -14,6 +15,10 @@ Creates a group of the specified size, containing an array of items arranged in 
 class func vertical(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self
 ```
 
+```objc
++ (instancetype) verticalGroupWithLayoutSize:(NSCollectionLayoutSize *) layoutSize subitems:(NSArray<NSCollectionLayoutItem *> *) subitems;
+```
+
 ## Parameters
 
 - `layoutSize`: The group’s size.
@@ -21,7 +26,8 @@ class func vertical(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionL
 
 ## See Also
 
-- [class func vertical(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self](nscollectionlayoutgroup/vertical(layoutsize:subitem:count:).md)
+### Creating a vertical group
+- [class func vertical(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self](./vertical%28layoutsize,subitem,count%29.md)
   Creates a group of the specified size, containing an array of equally sized items arranged in a vertical line up to the number specified by count.
 
 

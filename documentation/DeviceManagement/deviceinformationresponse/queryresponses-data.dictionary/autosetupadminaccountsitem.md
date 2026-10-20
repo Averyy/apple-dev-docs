@@ -1,7 +1,8 @@
 # DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The response dictionary that contains the administrator setup information.
 
@@ -10,7 +11,7 @@ The response dictionary that contains the administrator setup information.
 
 ## Declaration
 
-```swift
+```
 object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem
 ```
 
@@ -21,17 +22,18 @@ object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem
 
 ## See Also
 
-- [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary.md)
+### Objects
+- [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](./accessibilitysettings-data.dictionary.md)
   The response dictionary that contains the devices accessibility settings.
-- [object DeviceInformationResponse.QueryResponses.MDMOptions](deviceinformationresponse/queryresponses-data.dictionary/mdmoptions-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.MDMOptions](./mdmoptions-data.dictionary.md)
   The response dictionary that contains MDM options.
-- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](./osupdatesettings-data.dictionary.md)
   The response dictionary that contains operating system update settings.
-- [object DeviceInformationResponse.QueryResponses.OrganizationInfo](deviceinformationresponse/queryresponses-data.dictionary/organizationinfo-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.OrganizationInfo](./organizationinfo-data.dictionary.md)
   The response dictionary that contains organization information.
-- [object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty.md)
+- [object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](./servicesubscriptionproperty.md)
   The response dictionary that contains information about the active service subscription.
-- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary.md)
+- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](./softwareupdatesettings-data.dictionary.md)
   The response dictionary that contains information about the Software Update pane in Settings.
 
 

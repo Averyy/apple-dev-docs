@@ -1,21 +1,22 @@
 # InAppPurchaseV2.Relationships.InAppPurchaseLocalizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations.Data](inapppurchasev2/relationships-data.dictionary/inapppurchaselocalizations-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations.Data](./inapppurchaselocalizations-data.dictionary/data-data.dictionary.md)
   The request body you use to update an In-App Purchase v2.
 
 ## Properties

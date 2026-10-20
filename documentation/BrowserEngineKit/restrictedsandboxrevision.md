@@ -1,7 +1,8 @@
 # RestrictedSandboxRevision
 
 **Framework**: BrowserEngineKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Revisions to the restricted sandbox rules.
 
@@ -20,33 +21,34 @@ enum RestrictedSandboxRevision
 
 Design your browser to support the latest revision to the restricted sandbox in all extensions, and opt in to new revisions as they become available.
 
-The [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) method of the [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) protocol takes an argument of this type.
+The [`applyRestrictedSandbox(revision:)`](./restrictedsandboxappliable/applyrestrictedsandbox%28revision%29.md) method of the [`RestrictedSandboxAppliable`](./restrictedsandboxappliable.md) protocol takes an argument of this type.
 
 ## Topics
 
 ### Sandbox restriction revisions
-- [RestrictedSandboxRevision.revision1](restrictedsandboxrevision/revision1.md)
+- [RestrictedSandboxRevision.revision1](./restrictedsandboxrevision/revision1.md)
   First revision of the restricted sandbox rules.
-- [RestrictedSandboxRevision.revision2](restrictedsandboxrevision/revision2.md)
+- [RestrictedSandboxRevision.revision2](./restrictedsandboxrevision/revision2.md)
   Second revision of the restricted sandbox rules.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Comparable](../Swift/comparable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Limiting resource access in web content extensions](limiting-resource-access-in-content-extensions.md)
+### Access control
+- [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md)
   Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
-- [Accessing files in browser extensions](accessing-files-in-browser-extensions.md)
+- [Accessing files in browser extensions](./accessing-files-in-browser-extensions.md)
   Grant extensions access to files from within your browser app.
-- [Attributing memory to a content extension](attributing-memory-to-a-content-extension.md)
+- [Attributing memory to a content extension](./attributing-memory-to-a-content-extension.md)
   Adhere to operating-system limits on GPU memory use.
-- [protocol RestrictedSandboxAppliable](restrictedsandboxappliable.md)
+- [protocol RestrictedSandboxAppliable](./restrictedsandboxappliable.md)
   A protocol that browser extensions implement to opt into a more restricted sandbox.
 
 

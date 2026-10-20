@@ -1,7 +1,8 @@
 # init(dictionary:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a word embedding.
 
@@ -21,9 +22,10 @@ init(dictionary: [String : [Double]], parameters: MLWordEmbedding.ModelParameter
 
 ## See Also
 
-- [MLWordEmbedding.ModelParameters](mlwordembedding/modelparameters-swift.struct.md)
+### Creating a word embedding
+- [MLWordEmbedding.ModelParameters](./modelparameters-swift.struct.md)
   The model configuration parameters.
-- [let modelParameters: MLWordEmbedding.ModelParameters](mlwordembedding/modelparameters-swift.property.md)
+- [let modelParameters: MLWordEmbedding.ModelParameters](./modelparameters-swift.property.md)
   The model configuration parameters.
 
 

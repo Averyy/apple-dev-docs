@@ -1,7 +1,8 @@
 # ITLibDistinguishedPlaylistKind.kindMusicShowsAndMovies
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default Smart Playlist that iTunes creates of the user’s music shows and movies.
 
@@ -15,37 +16,42 @@ The default Smart Playlist that iTunes creates of the user’s music shows and m
 case kindMusicShowsAndMovies
 ```
 
+```c
+ITLibDistinguishedPlaylistKindMusicShowsAndMovies
+```
+
 ## See Also
 
-- [ITLibDistinguishedPlaylistKind.kindNone](itlibdistinguishedplaylistkind/kindnone.md)
+### Distinguished Playlist Kinds
+- [ITLibDistinguishedPlaylistKind.kindNone](./kindnone.md)
   The playlist isn’t a distinguished playlist.
-- [ITLibDistinguishedPlaylistKind.kindMovies](itlibdistinguishedplaylistkind/kindmovies.md)
+- [ITLibDistinguishedPlaylistKind.kindMovies](./kindmovies.md)
   The playlist contains all the movies in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindTVShows](itlibdistinguishedplaylistkind/kindtvshows.md)
+- [ITLibDistinguishedPlaylistKind.kindTVShows](./kindtvshows.md)
   The playlist contains all the TV shows in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindMusic](itlibdistinguishedplaylistkind/kindmusic.md)
+- [ITLibDistinguishedPlaylistKind.kindMusic](./kindmusic.md)
   The playlist contains all the music items in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindAudiobooks](itlibdistinguishedplaylistkind/kindaudiobooks.md)
+- [ITLibDistinguishedPlaylistKind.kindAudiobooks](./kindaudiobooks.md)
   The playlist contains all the audiobooks in the iTunes library.
-- [static var kindBooks: ITLibDistinguishedPlaylistKind](itlibdistinguishedplaylistkind/kindbooks.md)
+- [static var kindBooks: ITLibDistinguishedPlaylistKind](./kindbooks.md)
   The playlist contains all the audiobooks in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindRingtones](itlibdistinguishedplaylistkind/kindringtones.md)
+- [ITLibDistinguishedPlaylistKind.kindRingtones](./kindringtones.md)
   The playlist contains all the iOS ringtones in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindPodcasts](itlibdistinguishedplaylistkind/kindpodcasts.md)
+- [ITLibDistinguishedPlaylistKind.kindPodcasts](./kindpodcasts.md)
   The playlist contains all the podcasts in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindVoiceMemos](itlibdistinguishedplaylistkind/kindvoicememos.md)
+- [ITLibDistinguishedPlaylistKind.kindVoiceMemos](./kindvoicememos.md)
   The playlist contains all the voice memos in the iTunes library.
-- [ITLibDistinguishedPlaylistKind.kindPurchases](itlibdistinguishedplaylistkind/kindpurchases.md)
+- [ITLibDistinguishedPlaylistKind.kindPurchases](./kindpurchases.md)
   The playlist contains all the user’s purchases from the iTunes Store.
-- [ITLibDistinguishedPlaylistKind.kindiTunesU](itlibdistinguishedplaylistkind/kinditunesu.md)
+- [ITLibDistinguishedPlaylistKind.kindiTunesU](./kinditunesu.md)
   The playlist contains all the user’s iTunes U items.
-- [ITLibDistinguishedPlaylistKind.kind90sMusic](itlibdistinguishedplaylistkind/kind90smusic.md)
+- [ITLibDistinguishedPlaylistKind.kind90sMusic](./kind90smusic.md)
   The default Smart Playlist that iTunes creates of the user’s music from the 1990s.
-- [ITLibDistinguishedPlaylistKind.kindMyTopRated](itlibdistinguishedplaylistkind/kindmytoprated.md)
+- [ITLibDistinguishedPlaylistKind.kindMyTopRated](./kindmytoprated.md)
   The default Smart Playlist that iTunes creates of the user’s top rated media items.
-- [ITLibDistinguishedPlaylistKind.kindTop25MostPlayed](itlibdistinguishedplaylistkind/kindtop25mostplayed.md)
+- [ITLibDistinguishedPlaylistKind.kindTop25MostPlayed](./kindtop25mostplayed.md)
   The default Smart Playlist that iTunes creates of the user’s 25 most played media items.
-- [ITLibDistinguishedPlaylistKind.kindRecentlyPlayed](itlibdistinguishedplaylistkind/kindrecentlyplayed.md)
+- [ITLibDistinguishedPlaylistKind.kindRecentlyPlayed](./kindrecentlyplayed.md)
   The default Smart Playlist that iTunes creates of the user’s most recently played media items.
 
 

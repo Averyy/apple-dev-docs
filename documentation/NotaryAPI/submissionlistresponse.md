@@ -1,7 +1,8 @@
 # SubmissionListResponse
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The notary service’s response to a request for information about your team’s previous submissions.
 
@@ -10,20 +11,20 @@ The notary service’s response to a request for information about your team’s
 
 ## Declaration
 
-```swift
+```
 object SubmissionListResponse
 ```
 
 #### Discussion
 
-You receive a structure of this type in response to a call to the [`Get Previous Submissions`](get-previous-submissions.md) endpoint. The list includes only the 100 most recent submissions.
+You receive a structure of this type in response to a call to the [`Get Previous Submissions`](./get-previous-submissions.md) endpoint. The list includes only the 100 most recent submissions.
 
 ## Topics
 
 ### Objects
-- [object SubmissionListResponse.Data](submissionlistresponse/data-data.dictionary.md)
+- [object SubmissionListResponse.Data](./submissionlistresponse/data-data.dictionary.md)
   Data that describes one of your team’s previous submissions.
-- [object SubmissionListResponse.Meta](submissionlistresponse/meta-data.dictionary.md)
+- [object SubmissionListResponse.Meta](./submissionlistresponse/meta-data.dictionary.md)
   An empty object.
 
 ## Properties
@@ -33,7 +34,8 @@ You receive a structure of this type in response to a call to the [`Get Previous
 
 ## See Also
 
-- [Get Previous Submissions](get-previous-submissions.md)
+### History
+- [Get Previous Submissions](./get-previous-submissions.md)
   Fetch a list of your team’s previous notarization submissions.
 
 

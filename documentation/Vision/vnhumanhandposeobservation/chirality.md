@@ -1,7 +1,8 @@
 # chirality
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chirality, or handedness, of a pose.
 
@@ -19,9 +20,14 @@ The chirality, or handedness, of a pose.
 var chirality: VNChirality { get }
 ```
 
+```objc
+@property (readonly) VNChirality chirality;
+```
+
 ## See Also
 
-- [enum VNChirality](vnchirality.md)
+### Determining the Chirality
+- [enum VNChirality](../vnchirality.md)
   Constants that the define the chirality, or handedness, of a pose.
 
 

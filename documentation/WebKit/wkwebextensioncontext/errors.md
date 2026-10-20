@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All errors that occurred in the extension context.
 
@@ -16,6 +17,10 @@ All errors that occurred in the extension context.
 
 ```swift
 var errors: [any Error] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSError *> * errors;
 ```
 
 #### Discussion

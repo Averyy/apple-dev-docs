@@ -1,7 +1,8 @@
 # HKActivityMoveMode.appleMoveTime
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the Activity app’s Move ring measures Apple Move Time.
 
@@ -19,6 +20,10 @@ A value that indicates the Activity app’s Move ring measures Apple Move Time.
 case appleMoveTime
 ```
 
+```c
+HKActivityMoveModeAppleMoveTime
+```
+
 #### Discussion
 
 Move time measures every full minute where the watch detects the user actively moving. Apple Watch uses the accelerometer and gyroscopes to detect activities that involve full-body movements, like walking, running, or playing in the playground.
@@ -31,7 +36,8 @@ For younger users, the Activity app’s Move ring (and HealthKit’s related act
 
 ## See Also
 
-- [HKActivityMoveMode.activeEnergy](hkactivitymovemode/activeenergy.md)
+### Move Modes
+- [HKActivityMoveMode.activeEnergy](./activeenergy.md)
   A value that indicates the Move ring measures active energy burned.
 
 

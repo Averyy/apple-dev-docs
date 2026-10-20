@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kSetFrontProcessCausedByUser: Int](ksetfrontprocesscausedbyuser.md)
-- [var kSetFrontProcessFrontWindowOnly: Int](ksetfrontprocessfrontwindowonly.md)
+- [var kSetFrontProcessCausedByUser: Int](../ksetfrontprocesscausedbyuser.md)
+- [var kSetFrontProcessFrontWindowOnly: Int](../ksetfrontprocessfrontwindowonly.md)
 
 
 ---

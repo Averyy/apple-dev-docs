@@ -1,7 +1,8 @@
 # Build.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object Build.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object Build.Relationships.App.Data](build/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object Build.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -27,25 +28,26 @@ object Build.Relationships.App
 
 ## See Also
 
-- [object Build.Relationships.AppEncryptionDeclaration](build/relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
+### Objects
+- [object Build.Relationships.AppEncryptionDeclaration](./appencryptiondeclaration-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.AppStoreVersion](build/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object Build.Relationships.AppStoreVersion](./appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BetaBuildLocalizations](build/relationships-data.dictionary/betabuildlocalizations-data.dictionary.md)
+- [object Build.Relationships.BetaBuildLocalizations](./betabuildlocalizations-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BetaGroups](build/relationships-data.dictionary/betagroups-data.dictionary.md)
+- [object Build.Relationships.BetaGroups](./betagroups-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BuildBetaDetail](build/relationships-data.dictionary/buildbetadetail-data.dictionary.md)
+- [object Build.Relationships.BuildBetaDetail](./buildbetadetail-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BuildBundles](build/relationships-data.dictionary/buildbundles-data.dictionary.md)
+- [object Build.Relationships.BuildBundles](./buildbundles-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Builds and the Build Bundles resources.
-- [object Build.Relationships.Icons](build/relationships-data.dictionary/icons-data.dictionary.md)
+- [object Build.Relationships.Icons](./icons-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.IndividualTesters](build/relationships-data.dictionary/individualtesters-data.dictionary.md)
+- [object Build.Relationships.IndividualTesters](./individualtesters-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.PreReleaseVersion](build/relationships-data.dictionary/prereleaseversion-data.dictionary.md)
+- [object Build.Relationships.PreReleaseVersion](./prereleaseversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BetaAppReviewSubmission](build/relationships-data.dictionary/betaappreviewsubmission-data.dictionary.md)
+- [object Build.Relationships.BetaAppReviewSubmission](./betaappreviewsubmission-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

@@ -1,7 +1,8 @@
 # measureInterval(using:options:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Measures and emits the time interval between events received from an upstream publisher.
 
@@ -26,9 +27,9 @@ A publisher that emits elements representing the time interval between the eleme
 
 #### Discussion
 
-Use [`measureInterval(using:options:)`](publisher/measureinterval(using:options:).md) to measure the time between events delivered from an upstream publisher.
+Use [`measureInterval(using:options:)`](./measureinterval%28using,options%29.md) to measure the time between events delivered from an upstream publisher.
 
-In the example below, a 1-second [`Timer`](https://developer.apple.com/documentation/foundation/timer) is used as the data source for an event publisher; the [`measureInterval(using:options:)`](publisher/measureinterval(using:options:).md) operator reports the elapsed time between the reception of events on the main run loop:
+In the example below, a 1-second [`Timer`](../../Foundation/timer.md) is used as the data source for an event publisher; the [`measureInterval(using:options:)`](./measureinterval%28using,options%29.md) operator reports the elapsed time between the reception of events on the main run loop:
 
 ```swift
 cancellable = Timer.publish(every: 1, on: .main, in: .default)
@@ -43,7 +44,7 @@ cancellable = Timer.publish(every: 1, on: .main, in: .default)
 
 The output type of the returned publisher is the time interval of the provided scheduler.
 
-This operator uses the provided scheduler’s [`now`](scheduler/now.md) property to measure intervals between events.
+This operator uses the provided scheduler’s [`now`](../scheduler/now.md) property to measure intervals between events.
 
 ## Parameters
 
@@ -52,13 +53,14 @@ This operator uses the provided scheduler’s [`now`](scheduler/now.md) property
 
 ## See Also
 
-- [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](publisher/debounce(for:scheduler:options:).md)
+### Controlling timing
+- [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](./debounce%28for,scheduler,options%29.md)
   Publishes elements only after a specified time interval elapses between events.
-- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](publisher/delay(for:tolerance:scheduler:options:).md)
+- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](./delay%28for,tolerance,scheduler,options%29.md)
   Delays delivery of all output to the downstream receiver by a specified amount of time on a particular scheduler.
-- [func throttle<S>(for: S.SchedulerTimeType.Stride, scheduler: S, latest: Bool) -> Publishers.Throttle<Self, S>](publisher/throttle(for:scheduler:latest:).md)
+- [func throttle<S>(for: S.SchedulerTimeType.Stride, scheduler: S, latest: Bool) -> Publishers.Throttle<Self, S>](./throttle%28for,scheduler,latest%29.md)
   Publishes either the most-recent or first element published by the upstream publisher in the specified time interval.
-- [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](publisher/timeout(_:scheduler:options:customerror:).md)
+- [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](./timeout%28_,scheduler,options,customerror%29.md)
   Terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
 
 

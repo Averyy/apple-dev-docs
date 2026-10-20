@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Obtains a reference to the GPU device this pool belongs to.
@@ -18,6 +19,10 @@ Obtains a reference to the GPU device this pool belongs to.
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```objc
+@property (readonly) id<MTLDevice> device;
 ```
 
 

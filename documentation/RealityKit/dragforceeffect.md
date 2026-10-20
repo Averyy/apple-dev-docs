@@ -1,7 +1,8 @@
 # DragForceEffect
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A force effect that slows bodies within its area of effect with a force proportional to the body’s velocity.
 
@@ -22,37 +23,38 @@ struct DragForceEffect
 ## Topics
 
 ### Initializers
-- [init(strength: Double)](dragforceeffect/init(strength:).md)
+- [init(strength: Double)](./dragforceeffect/init%28strength%29.md)
   Creates a drag force effect.
 ### Instance Properties
-- [var forceMode: ForceMode](dragforceeffect/forcemode.md)
+- [var forceMode: ForceMode](./dragforceeffect/forcemode.md)
   The type of force this effect applies.
-- [var parameterTypes: PhysicsBodyParameterTypes](dragforceeffect/parametertypes.md)
+- [var parameterTypes: PhysicsBodyParameterTypes](./dragforceeffect/parametertypes.md)
   The input rigid body parameters.
-- [let strength: Float](dragforceeffect/strength.md)
+- [let strength: Float](./dragforceeffect/strength.md)
   The magnitude of the force.
 ### Instance Methods
-- [func update(parameters: inout ForceEffectParameters)](dragforceeffect/update(parameters:).md)
+- [func update(parameters: inout ForceEffectParameters)](./dragforceeffect/update%28parameters%29.md)
   Calculates the drag forces for rigid bodies from the force effect.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [ForceEffectProtocol](forceeffectprotocol.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [ForceEffectProtocol](./forceeffectprotocol.md)
 
 ## See Also
 
-- [struct ConstantForceEffect](constantforceeffect.md)
+### Built-in force effect types
+- [struct ConstantForceEffect](./constantforceeffect.md)
   A force effect that exerts a constant force in a direction relative to the effect’s transform.
-- [struct ConstantRadialForceEffect](constantradialforceeffect.md)
+- [struct ConstantRadialForceEffect](./constantradialforceeffect.md)
   A force effect that pulls objects toward its center with a constant strength.
-- [struct RadialForceEffect](radialforceeffect.md)
+- [struct RadialForceEffect](./radialforceeffect.md)
   A force effect that pulls objects toward its center with a spring-like (distance dependent) force.
-- [struct TurbulenceForceEffect](turbulenceforceeffect.md)
+- [struct TurbulenceForceEffect](./turbulenceforceeffect.md)
   A force effect that applies random forces with magnitudes proportional to each body’s velocity.
-- [struct VortexForceEffect](vortexforceeffect.md)
+- [struct VortexForceEffect](./vortexforceeffect.md)
   A force effect whose forces circulate around an axis centered at the origin of the effect.
 
 

@@ -1,7 +1,8 @@
 # AVVideoEncoderSpecificationKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The video encoder specification includes options for choosing a specific video encoder.
 
@@ -12,6 +13,10 @@ The video encoder specification includes options for choosing a specific video e
 
 ```swift
 let AVVideoEncoderSpecificationKey: String
+```
+
+```c
+extern NSString * const AVVideoEncoderSpecificationKey;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # GroupSession.Sessions
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of sessions you use to manage a specific activity.
 
@@ -19,23 +20,25 @@ An asynchronous sequence of sessions you use to manage a specific activity.
 struct Sessions
 ```
 
+Available when `ActivityType` conforms to `GroupActivity`.
+
 #### Overview
 
-When a participant engages one of your app’s activities, a `Sessions` structure provides the session you use to handle synchronization. Iterate over the contents of this structure asynchronously to retrieve each new session the system delivers to your app. The system delivers only one [`GroupSession`](groupsession.md) for each activity. To monitor changes to that session, configure subscribers to its published properties.
+When a participant engages one of your app’s activities, a `Sessions` structure provides the session you use to handle synchronization. Iterate over the contents of this structure asynchronously to retrieve each new session the system delivers to your app. The system delivers only one [`GroupSession`](../groupsession.md) for each activity. To monitor changes to that session, configure subscribers to its published properties.
 
-Don’t create this structure directly. Instead, use the [`sessions()`](groupactivity/sessions().md) method to retrieve the sessions.
+Don’t create this structure directly. Instead, use the [`sessions()`](../groupactivity/sessions%28%29.md) method to retrieve the sessions.
 
 ## Topics
 
 ### Creating an iterator
-- [GroupSession.Sessions.Iterator](groupsession/sessions/iterator.md)
+- [GroupSession.Sessions.Iterator](./sessions/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # disconnect()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnects the virtual controller from the device and removes it from the screen.
 
@@ -16,13 +17,18 @@ Disconnects the virtual controller from the device and removes it from the scree
 func disconnect()
 ```
 
+```objc
+- (void) disconnect;
+```
+
 #### Discussion
 
 After you invoke this method, the framework stops calling input handlers that you set for the elements.
 
 ## See Also
 
-- [func connect(replyHandler: (((any Error)?) -> Void)?)](gcvirtualcontroller/connect(replyhandler:).md)
+### Connecting and displaying virtual controllers
+- [func connect(replyHandler: (((any Error)?) -> Void)?)](./connect%28replyhandler%29.md)
   Connects the virtual controller to the device and displays it on the screen.
 
 

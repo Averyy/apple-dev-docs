@@ -1,7 +1,8 @@
 # WebKitCSSRegionRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitCSSRegionRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cssRules](webkitcssregionrule/1630273-cssrules.md)
+- [cssRules](./webkitcssregionrule/api-1630273-cssrules.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

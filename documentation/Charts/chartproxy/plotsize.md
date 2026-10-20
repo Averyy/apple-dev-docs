@@ -1,7 +1,8 @@
 # plotSize
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the plot in the chart.
 

@@ -1,16 +1,21 @@
 # od_enable_user
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var od_enable_user: UnsafeMutablePointer<es_event_od_enable_user_t> { get set }
+```
+
+```c
+es_event_od_enable_user_t * od_enable_user;
 ```
 
 

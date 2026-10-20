@@ -1,7 +1,8 @@
 # init(viewportSize:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new 3D node.
 
@@ -10,7 +11,7 @@ Initializes a new 3D node.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Initializes a new 3D node.
 init(viewportSize: CGSize)
 ```
 
+```objc
+- (instancetype) initWithViewportSize:(CGSize) viewportSize;
+```
+
 #### Return Value
 
-An initialized [`SK3DNode`](sk3dnode.md) object.
+An initialized [`SK3DNode`](../sk3dnode.md) object.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ An initialized [`SK3DNode`](sk3dnode.md) object.
 
 ## See Also
 
-- [init?(coder: NSCoder)](sk3dnode/init(coder:).md)
+### Creating 3D Nodes
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to initialize a 3D node that has been unarchived.
 
 

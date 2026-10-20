@@ -1,7 +1,8 @@
 # movableGroup(customizationIdentifier:representativeItem:items:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a movable group that a person can move but can’t remove from the navigation bar during layout customization.
 
@@ -9,7 +10,7 @@ Creates a movable group that a person can move but can’t remove from the navig
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,13 +27,14 @@ Creates a movable group that a person can move but can’t remove from the navig
 
 ## See Also
 
-- [class func fixedGroup(representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/fixedgroup(representativeitem:items:).md)
+### Creating a group
+- [class func fixedGroup(representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./fixedgroup%28representativeitem,items%29.md)
   Creates a fixed group that a person can’t move or remove from the navigation bar during layout customization.
-- [class func optionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/optionalgroup(customizationidentifier:isindefaultcustomization:representativeitem:items:).md)
+- [class func optionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./optionalgroup%28customizationidentifier,isindefaultcustomization,representativeitem,items%29.md)
   Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
-- [init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)](uibarbuttonitemgroup/init(barbuttonitems:representativeitem:).md)
+- [init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)](./init%28barbuttonitems,representativeitem%29.md)
   Creates a fixed group with the specified items.
-- [init?(coder: NSCoder)](uibarbuttonitemgroup/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a bar button item group from data in an unarchiver.
 
 

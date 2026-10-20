@@ -1,7 +1,8 @@
 # NWProtocolFramer.StartResult
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Results that you send to indicate the disposition of your protocol after receiving the call to start.
 
@@ -23,30 +24,31 @@ enum StartResult
 ## Topics
 
 ### Start Results
-- [NWProtocolFramer.StartResult.ready](nwprotocolframer/startresult/ready.md)
+- [NWProtocolFramer.StartResult.ready](./startresult/ready.md)
   The protocol is immediately ready to send and receive data.
-- [NWProtocolFramer.StartResult.willMarkReady](nwprotocolframer/startresult/willmarkready.md)
-  The protocol will perform a handshake, preventing the overall connection from becoming ready until [`markReady()`](nwprotocolframer/instance/markready().md) is called.
+- [NWProtocolFramer.StartResult.willMarkReady](./startresult/willmarkready.md)
+  The protocol will perform a handshake, preventing the overall connection from becoming ready until [`markReady()`](./instance/markready%28%29.md) is called.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/init(framer:).md)
+### Handling Instance Lifetime
+- [init(framer: NWProtocolFramer.Instance)](../nwprotocolframerimplementation/init%28framer%29.md)
   Initializes your custom framing protocol for use in one connection attempt.
-- [func start(framer: NWProtocolFramer.Instance) -> NWProtocolFramer.StartResult](nwprotocolframerimplementation/start(framer:).md)
+- [func start(framer: NWProtocolFramer.Instance) -> NWProtocolFramer.StartResult](../nwprotocolframerimplementation/start%28framer%29.md)
   Requests that your protocol set up its state and begin a handshake, if necessary.
-- [func wakeup(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/wakeup(framer:).md)
+- [func wakeup(framer: NWProtocolFramer.Instance)](../nwprotocolframerimplementation/wakeup%28framer%29.md)
   Delivers a scheduled wakeup event.
-- [func stop(framer: NWProtocolFramer.Instance) -> Bool](nwprotocolframerimplementation/stop(framer:).md)
+- [func stop(framer: NWProtocolFramer.Instance) -> Bool](../nwprotocolframerimplementation/stop%28framer%29.md)
   Requests that your protocol send any final messages to close the connection.
-- [func cleanup(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/cleanup(framer:).md)
+- [func cleanup(framer: NWProtocolFramer.Instance)](../nwprotocolframerimplementation/cleanup%28framer%29.md)
   Indicates that your protocol should clean up all allocations before being deallocated.
-- [static var label: String](nwprotocolframerimplementation/label.md)
+- [static var label: String](../nwprotocolframerimplementation/label.md)
   A label defined by your custom protocol for use in debugging.
 
 

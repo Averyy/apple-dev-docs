@@ -1,7 +1,8 @@
 # errSecCSRegularFile
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The main executable or Info.plist must be a regular file (and not, for example, a symbolic link).
 
@@ -13,6 +14,10 @@ The main executable or Info.plist must be a regular file (and not, for example, 
 
 ```swift
 var errSecCSRegularFile: OSStatus { get }
+```
+
+```c
+errSecCSRegularFile
 ```
 
 

@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.ShaderGraphOutput.Blending
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates the blending mode of the ShaderGraph material.
 
@@ -20,22 +21,23 @@ enum Blending
 ## Topics
 
 ### Specifying the blend mode
-- [LowLevelMaterialResource.ShaderGraphOutput.Blending.opaque](lowlevelmaterialresource/shadergraphoutput/blending-swift.enum/opaque.md)
+- [LowLevelMaterialResource.ShaderGraphOutput.Blending.opaque](./blending-swift.enum/opaque.md)
   An opaque surface that requires no alpha blending.
-- [LowLevelMaterialResource.ShaderGraphOutput.Blending.transparent](lowlevelmaterialresource/shadergraphoutput/blending-swift.enum/transparent.md)
+- [LowLevelMaterialResource.ShaderGraphOutput.Blending.transparent](./blending-swift.enum/transparent.md)
   A surface that requires alpha blending.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.property.md)
+### Configuring blending
+- [var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending](./blending-swift.property.md)
   The blending mode derived from the ShaderGraph material.
 
 

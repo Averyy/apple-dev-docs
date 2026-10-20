@@ -1,7 +1,8 @@
 # resumeTrip(updatedRouteSegments:currentSegment:rerouteReason:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the current trip with updated route segments
 
@@ -14,6 +15,10 @@ Resume the current trip with updated route segments
 
 ```swift
 func resumeTrip(updatedRouteSegments routeSegments: [CPRouteSegment], currentSegment: CPRouteSegment, rerouteReason: CPRerouteReason)
+```
+
+```objc
+- (void) resumeTripWithUpdatedRouteSegments:(NSArray<CPRouteSegment *> *) routeSegments currentSegment:(CPRouteSegment *) currentSegment rerouteReason:(CPRerouteReason) rerouteReason;
 ```
 
 ## Parameters

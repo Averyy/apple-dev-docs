@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the rule list.
 
@@ -18,9 +19,13 @@ The identifier for the rule list.
 var identifier: String! { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
-You specify the identifier for your rule lists at compile time in the [`compileContentRuleList(forIdentifier:encodedContentRuleList:completionHandler:)`](wkcontentruleliststore/compilecontentrulelist(foridentifier:encodedcontentrulelist:completionhandler:).md) method of [`WKContentRuleListStore`](wkcontentruleliststore.md). You also use this identifier to look up the rules list later.
+You specify the identifier for your rule lists at compile time in the [`compileContentRuleList(forIdentifier:encodedContentRuleList:completionHandler:)`](../wkcontentruleliststore/compilecontentrulelist%28foridentifier,encodedcontentrulelist,completionhandler%29.md) method of [`WKContentRuleListStore`](../wkcontentruleliststore.md). You also use this identifier to look up the rules list later.
 
 
 ---

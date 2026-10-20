@@ -1,7 +1,8 @@
 # resourceUnusable
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.4+
@@ -14,12 +15,13 @@ static var resourceUnusable: FSError.Code { get }
 
 ## See Also
 
-- [static var invalidDirectoryCookie: FSError.Code](fserror/invaliddirectorycookie.md)
-- [static var moduleLoadFailed: FSError.Code](fserror/moduleloadfailed.md)
-- [static var resourceDamaged: FSError.Code](fserror/resourcedamaged.md)
-- [static var resourceUnrecognized: FSError.Code](fserror/resourceunrecognized.md)
-- [static var statusOperationInProgress: FSError.Code](fserror/statusoperationinprogress.md)
-- [static var statusOperationPaused: FSError.Code](fserror/statusoperationpaused.md)
+### Identifying errors
+- [static var invalidDirectoryCookie: FSError.Code](./invaliddirectorycookie.md)
+- [static var moduleLoadFailed: FSError.Code](./moduleloadfailed.md)
+- [static var resourceDamaged: FSError.Code](./resourcedamaged.md)
+- [static var resourceUnrecognized: FSError.Code](./resourceunrecognized.md)
+- [static var statusOperationInProgress: FSError.Code](./statusoperationinprogress.md)
+- [static var statusOperationPaused: FSError.Code](./statusoperationpaused.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UIPencilInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface an object implements to handle double taps or squeezes a person makes on Apple Pencil.
 
@@ -18,33 +19,38 @@ The interface an object implements to handle double taps or squeezes a person ma
 protocol UIPencilInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIPencilInteractionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling double-tap interactions
-- [func pencilInteraction(UIPencilInteraction, didReceiveTap: UIPencilInteraction.Tap)](uipencilinteractiondelegate/pencilinteraction(_:didreceivetap:).md)
+- [func pencilInteraction(UIPencilInteraction, didReceiveTap: UIPencilInteraction.Tap)](./uipencilinteractiondelegate/pencilinteraction%28_,didreceivetap%29.md)
   Tells the delegate when a person double-taps Apple Pencil.
-- [func pencilInteractionDidTap(UIPencilInteraction)](uipencilinteractiondelegate/pencilinteractiondidtap(_:).md)
+- [func pencilInteractionDidTap(UIPencilInteraction)](./uipencilinteractiondelegate/pencilinteractiondidtap%28_%29.md)
   Tells the delegate that the user double-tapped Apple Pencil.
 ### Handling squeeze interactions
-- [func pencilInteraction(UIPencilInteraction, didReceiveSqueeze: UIPencilInteraction.Squeeze)](uipencilinteractiondelegate/pencilinteraction(_:didreceivesqueeze:).md)
+- [func pencilInteraction(UIPencilInteraction, didReceiveSqueeze: UIPencilInteraction.Squeeze)](./uipencilinteractiondelegate/pencilinteraction%28_,didreceivesqueeze%29.md)
   Tells the delegate when a person squeezes Apple Pencil.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIPencilInteraction](uipencilinteraction.md)
+### Apple Pencil interactions in UIKit
+- [class UIPencilInteraction](./uipencilinteraction.md)
   An interaction that tells your app when a person double-taps or squeezes Apple Pencil.
-- [UIPencilInteraction.Tap](uipencilinteraction/tap.md)
+- [UIPencilInteraction.Tap](./uipencilinteraction/tap.md)
   An interaction that represents a double tap on Apple Pencil.
-- [UIPencilInteraction.Squeeze](uipencilinteraction/squeeze.md)
+- [UIPencilInteraction.Squeeze](./uipencilinteraction/squeeze.md)
   An interaction that represents a squeeze on Apple Pencil.
-- [UIPencilInteraction.Phase](uipencilinteraction/phase.md)
+- [UIPencilInteraction.Phase](./uipencilinteraction/phase.md)
   Constants that describe the phases of an interaction on Apple Pencil.
-- [class UIPencilHoverPose](uipencilhoverpose.md)
+- [class UIPencilHoverPose](./uipencilhoverpose.md)
   An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
 

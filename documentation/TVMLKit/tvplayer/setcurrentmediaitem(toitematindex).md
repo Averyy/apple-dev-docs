@@ -1,17 +1,24 @@
 # setCurrentMediaItem(toItemAtIndex:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current media item to the designated media item.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 func setCurrentMediaItem(toItemAtIndex index: Int)
+```
+
+```objc
+- (void) changeToMediaItemAtIndex:(NSInteger) index;
 ```
 
 ## Parameters
@@ -20,11 +27,12 @@ func setCurrentMediaItem(toItemAtIndex index: Int)
 
 ## See Also
 
-- [var previousMediaItem: TVMediaItem?](tvplayer/previousmediaitem.md)
+### Inspecting Media Items
+- [var previousMediaItem: TVMediaItem?](./previousmediaitem.md)
   The previously selected media item.
-- [var currentMediaItem: TVMediaItem?](tvplayer/currentmediaitem.md)
+- [var currentMediaItem: TVMediaItem?](./currentmediaitem.md)
   The currently selected media item.
-- [var nextMediaItem: TVMediaItem?](tvplayer/nextmediaitem.md)
+- [var nextMediaItem: TVMediaItem?](./nextmediaitem.md)
   The next media item in the playlist.
 
 

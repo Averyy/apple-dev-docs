@@ -1,7 +1,8 @@
 # upOrOpen(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func upOrOpen(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func upOrOpen() async throws
+```
+
+```objc
+- (void) upOrOpenWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

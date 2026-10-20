@@ -1,7 +1,8 @@
 # QLFilePreviewRequest
 
 **Framework**: Quick Look UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A Quick Look preview request that indicates the content to preview.
 
@@ -14,35 +15,40 @@ A Quick Look preview request that indicates the content to preview.
 class QLFilePreviewRequest
 ```
 
+```objc
+@interface QLFilePreviewRequest : NSObject
+```
+
 #### Overview
 
-The system provides a [`QLFilePreviewRequest`](qlfilepreviewrequest.md) to the [`providePreview(for:completionHandler:)`](qlpreviewingcontroller/providepreview(for:completionhandler:).md) method of your data-based Quick Look extension.
+The system provides a [`QLFilePreviewRequest`](./qlfilepreviewrequest.md) to the [`providePreview(for:completionHandler:)`](./qlpreviewingcontroller/providepreview%28for,completionhandler%29.md) method of your data-based Quick Look extension.
 
 ## Topics
 
 ### Inspecting the preview request
-- [var fileURL: URL](qlfilepreviewrequest/fileurl.md)
+- [var fileURL: URL](./qlfilepreviewrequest/fileurl.md)
   The URL that indicates the content to preview.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class QLPreviewProvider](qlpreviewprovider.md)
+### Data-based Preview Extensions
+- [class QLPreviewProvider](./qlpreviewprovider.md)
   A class that you subclass to provide a data-based Quick Look preview extension.
-- [class QLPreviewReply](qlpreviewreply.md)
+- [class QLPreviewReply](./qlpreviewreply.md)
   The class you create when providing a data-based Quick Look preview extension.
-- [class QLPreviewReplyAttachment](qlpreviewreplyattachment.md)
+- [class QLPreviewReplyAttachment](./qlpreviewreplyattachment.md)
   An attachment for a Quick Look preview reply that provides additional content for the system to display a preview.
 
 

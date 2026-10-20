@@ -1,7 +1,8 @@
 # rectValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Foundation rectangle structure representation of the value.
 
@@ -15,19 +16,25 @@ The Foundation rectangle structure representation of the value.
 var rectValue: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect rectValue;
+```
+
 ## See Also
 
-- [typealias NSRect](nsrect.md)
+### Related Documentation
+- [typealias NSRect](../nsrect.md)
   A rectangle.
-- [init(point: NSPoint)](nsvalue/init(point:).md)
+### Working with Foundation Geometry Values
+- [init(point: NSPoint)](./init%28point%29.md)
   Creates a new value object containing the specified Foundation point structure.
-- [init(size: NSSize)](nsvalue/init(size:).md)
+- [init(size: NSSize)](./init%28size%29.md)
   Creates a new value object containing the specified Foundation size structure.
-- [init(rect: NSRect)](nsvalue/init(rect:).md)
+- [init(rect: NSRect)](./init%28rect%29.md)
   Creates a new value object containing the specified Foundation rectangle structure.
-- [var pointValue: NSPoint](nsvalue/pointvalue.md)
+- [var pointValue: NSPoint](./pointvalue.md)
   The Foundation point structure representation of the value.
-- [var sizeValue: NSSize](nsvalue/sizevalue.md)
+- [var sizeValue: NSSize](./sizevalue.md)
   The Foundation size structure representation of the value.
 
 

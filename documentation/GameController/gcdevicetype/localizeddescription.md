@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized description of the device type.
 
@@ -12,6 +13,10 @@ A localized description of the device type.
 
 ```swift
 var localizedDescription: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * localizedDescription;
 ```
 
 

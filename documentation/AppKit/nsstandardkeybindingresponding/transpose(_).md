@@ -1,12 +1,13 @@
 # transpose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transposes the content around the current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Transposes the content around the current selection.
 optional func transpose(_ sender: Any?)
 ```
 
+```objc
+- (void) transpose:(id) sender;
+```
+
 ## See Also
 
-- [func transposeWords(Any?)](nsstandardkeybindingresponding/transposewords(_:).md)
+### Transposing Elements
+- [func transposeWords(Any?)](./transposewords%28_%29.md)
   Transposes the words around the current selection.
 
 

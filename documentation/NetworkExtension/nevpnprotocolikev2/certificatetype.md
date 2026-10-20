@@ -1,7 +1,8 @@
 # certificateType
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the certificate in the identity configured in `identityReference` or `identityData`.
 
@@ -19,17 +20,22 @@ The type of the certificate in the identity configured in `identityReference` or
 var certificateType: NEVPNIKEv2CertificateType { get set }
 ```
 
+```objc
+@property NEVPNIKEv2CertificateType certificateType;
+```
+
 #### Discussion
 
-The default value is [`NEVPNIKEv2CertificateType.RSA`](nevpnikev2certificatetype/rsa.md).
+The default value is [`NEVPNIKEv2CertificateType.RSA`](../nevpnikev2certificatetype/rsa.md).
 
 ## See Also
 
-- [var serverCertificateIssuerCommonName: String?](nevpnprotocolikev2/servercertificateissuercommonname.md)
+### Accessing certificate properties
+- [var serverCertificateIssuerCommonName: String?](./servercertificateissuercommonname.md)
   A string containing the value of the Subject Common Name field of the Certificate Authority certificate that issued the IKEv2 server’s certificate.
-- [var serverCertificateCommonName: String?](nevpnprotocolikev2/servercertificatecommonname.md)
+- [var serverCertificateCommonName: String?](./servercertificatecommonname.md)
   A string containing the value of the Subject Common Name field of the IKEv2 server’s certificate.
-- [enum NEVPNIKEv2CertificateType](nevpnikev2certificatetype.md)
+- [enum NEVPNIKEv2CertificateType](../nevpnikev2certificatetype.md)
   An enumeration of certificate type values.
 
 

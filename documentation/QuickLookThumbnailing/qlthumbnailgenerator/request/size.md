@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the thumbnails.
 
@@ -18,19 +19,24 @@ The size of the thumbnails.
 var size: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize size;
+```
+
 ## See Also
 
-- [var scale: CGFloat](qlthumbnailgenerator/request/scale.md)
+### Describing the Requested Thumbnail
+- [var scale: CGFloat](./scale.md)
   The pixel density of the display on the intended device.
-- [var contentType: UTType!](qlthumbnailgenerator/request/contenttype.md)
+- [var contentType: UTType!](./contenttype.md)
   The content type of the source data for the thumbnail request.
-- [var representationTypes: QLThumbnailGenerator.Request.RepresentationTypes](qlthumbnailgenerator/request/representationtypes-swift.property.md)
+- [var representationTypes: QLThumbnailGenerator.Request.RepresentationTypes](./representationtypes-swift.property.md)
   The thumbnail sizes that you provide for a thumbnail request.
-- [var minimumDimension: CGFloat](qlthumbnailgenerator/request/minimumdimension.md)
+- [var minimumDimension: CGFloat](./minimumdimension.md)
   The minimum height or width for a generated thumbnail.
-- [var iconMode: Bool](qlthumbnailgenerator/request/iconmode.md)
+- [var iconMode: Bool](./iconmode.md)
   A Boolean value indicating whether the generated thumbnail request should include icon decorations.
-- [QLThumbnailGenerator.Request.RepresentationTypes](qlthumbnailgenerator/request/representationtypes-swift.struct.md)
+- [QLThumbnailGenerator.Request.RepresentationTypes](./representationtypes-swift.struct.md)
   The various types of thumbnails that you can request.
 
 

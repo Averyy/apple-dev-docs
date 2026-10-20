@@ -1,7 +1,8 @@
 # nextFrameCount
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of next frames that the processor requires for processing.
 
@@ -21,7 +22,8 @@ var nextFrameCount: Int? { get }
 
 ## See Also
 
-- [var previousFrameCount: Int?](vtframeprocessorconfiguration/previousframecount-1crhc.md)
+### Inspecting frame requirements
+- [var previousFrameCount: Int?](./previousframecount-1crhc.md)
   The number of previous frames that the processor requires for processing.
 
 

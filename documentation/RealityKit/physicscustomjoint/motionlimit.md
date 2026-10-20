@@ -1,7 +1,8 @@
 # PhysicsCustomJoint.MotionLimit
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies allowed linear or angular motion.
 
@@ -22,14 +23,14 @@ enum MotionLimit
 ## Topics
 
 ### Enumeration Cases
-- [PhysicsCustomJoint.MotionLimit.fixed](physicscustomjoint/motionlimit/fixed.md)
-- [PhysicsCustomJoint.MotionLimit.range(_:)](physicscustomjoint/motionlimit/range(_:).md)
-- [PhysicsCustomJoint.MotionLimit.unlimited](physicscustomjoint/motionlimit/unlimited.md)
+- [PhysicsCustomJoint.MotionLimit.fixed](./motionlimit/fixed.md)
+- [PhysicsCustomJoint.MotionLimit.range(_:)](./motionlimit/range%28_%29.md)
+- [PhysicsCustomJoint.MotionLimit.unlimited](./motionlimit/unlimited.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

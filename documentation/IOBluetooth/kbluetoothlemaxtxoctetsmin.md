@@ -1,10 +1,11 @@
 # kBluetoothLEMaxTXOctetsMin
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kBluetoothLEMaxTXOctetsMin: Int { get }
 ```
 
+```c
+kBluetoothLEMaxTXOctetsMin
+```
+
 ## See Also
 
-- [var kBluetoothLEMaxTXOctetsDefault: Int](kbluetoothlemaxtxoctetsdefault.md)
-- [var kBluetoothLEMaxTXOctetsMax: Int](kbluetoothlemaxtxoctetsmax.md)
-- [var kBluetoothLEMaxTXTimeDefault: Int](kbluetoothlemaxtxtimedefault.md)
-- [var kBluetoothLEMaxTXTimeMax: Int](kbluetoothlemaxtxtimemax.md)
-- [var kBluetoothLEMaxTXTimeMin: Int](kbluetoothlemaxtxtimemin.md)
+### Constants
+- [var kBluetoothLEMaxTXOctetsDefault: Int](./kbluetoothlemaxtxoctetsdefault.md)
+- [var kBluetoothLEMaxTXOctetsMax: Int](./kbluetoothlemaxtxoctetsmax.md)
+- [var kBluetoothLEMaxTXTimeDefault: Int](./kbluetoothlemaxtxtimedefault.md)
+- [var kBluetoothLEMaxTXTimeMax: Int](./kbluetoothlemaxtxtimemax.md)
+- [var kBluetoothLEMaxTXTimeMin: Int](./kbluetoothlemaxtxtimemin.md)
 
 
 ---

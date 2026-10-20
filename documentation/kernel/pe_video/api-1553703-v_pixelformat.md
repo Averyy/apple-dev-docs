@@ -1,14 +1,15 @@
 # v_pixelFormat
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 char v_pixelFormat[64];
 ```
 

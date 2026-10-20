@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates and initializes an instance of the audio stream class.
 
@@ -10,29 +11,30 @@ Allocates and initializes an instance of the audio stream class.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserAudioStream> Create(IOUserAudioDriver *in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
 #### Return Value
 
-A poiner to an [`IOUserAudioStream`](iouseraudiostream.md), if allocation and initialization succeeded.
+A poiner to an [`IOUserAudioStream`](../iouseraudiostream.md), if allocation and initialization succeeded.
 
 #### Discussion
 
-If you subclass [`IOUserAudioStream`](iouseraudiostream.md) to override this class’ behavior, don’t use [`Create`](iouseraudiostream/create.md) to allocate and initialize the custom subclass.
+If you subclass [`IOUserAudioStream`](../iouseraudiostream.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 
 ## Parameters
 
-- `in_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
+- `in_driver`: The [`IOUserAudioDriver`](../iouseraudiodriver.md) that owns this object.
 - `in_direction`: A `IOUserAudioStreamDirection` for the stream’s direction: input or output.
-- `in_io_memory_descriptor`: A pointer to a [`IOMemoryDescriptor`](https://developer.apple.com/documentation/driverkit/iomemorydescriptor). The stream maps the descriptor’s buffer to the host for doing audio I/O.
+- `in_io_memory_descriptor`: A pointer to a [`IOMemoryDescriptor`](../../DriverKit/iomemorydescriptor.md). The stream maps the descriptor’s buffer to the host for doing audio I/O.
 
 ## See Also
 
-- [init](iouseraudiostream/init.md)
+### Creating an Audio Stream
+- [init](./init.md)
   Initializes an instance of the audio stream class.
-- [IOUserAudioDriver](iouseraudiodriver.md)
+- [IOUserAudioDriver](../iouseraudiodriver.md)
   A DriverKit provider object that manages communications with an audio device.
 
 

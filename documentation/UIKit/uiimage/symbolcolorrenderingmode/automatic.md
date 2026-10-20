@@ -1,7 +1,8 @@
 # UIImage.SymbolColorRenderingMode.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically uses an appropriate color rendering mode for the symbol’s color layers.
 
@@ -17,6 +18,10 @@ Automatically uses an appropriate color rendering mode for the symbol’s color 
 
 ```swift
 case automatic
+```
+
+```c
+UIImageSymbolColorRenderingModeAutomatic
 ```
 
 

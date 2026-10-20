@@ -1,7 +1,8 @@
 # unlock()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Relinquishes the receiver.
 
@@ -15,15 +16,20 @@ Relinquishes the receiver.
 func unlock()
 ```
 
+```objc
+- (void) unlock;
+```
+
 #### Discussion
 
-You should generally use the [`unlock()`](nsdistributedlock/unlock().md) method rather than [`break()`](nsdistributedlock/break().md) to release a lock.
+You should generally use the [`unlock()`](./unlock%28%29.md) method rather than [`break()`](./break%28%29.md) to release a lock.
 
 An `NSGenericException` is raised if the receiver doesn’t already exist.
 
 ## See Also
 
-- [func `break`()](nsdistributedlock/break.md)
+### Relinquishing a Lock
+- [func `break`()](./break%28%29.md)
   Forces the lock to be relinquished.
 
 

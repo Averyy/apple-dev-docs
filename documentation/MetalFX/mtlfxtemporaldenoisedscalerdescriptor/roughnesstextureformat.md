@@ -1,7 +1,8 @@
 # roughnessTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input roughness texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input roughness texture for the scaler you create with t
 
 ```swift
 var roughnessTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat roughnessTextureFormat;
 ```
 
 

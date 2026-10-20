@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional, user-visible title for this activity, such as a document name or web page title.
 
@@ -20,11 +21,15 @@ An optional, user-visible title for this activity, such as a document name or we
 var title: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * title;
+```
+
 ## Mentions
 
-- [Creating a user activity object](creating-a-user-activity-object.md)
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
-- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
+- [Creating a user activity object](../creating-a-user-activity-object.md)
+- [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
+- [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 
 #### Discussion
 
@@ -32,15 +37,16 @@ Always specify a title string for activity objects that are eligible for searche
 
 ## See Also
 
-- [var activityType: String](nsuseractivity/activitytype.md)
+### Describing the activity
+- [var activityType: String](./activitytype.md)
   The user activity object’s activity type.
-- [var keywords: Set<String>](nsuseractivity/keywords.md)
+- [var keywords: Set<String>](./keywords.md)
   A set of localized keywords that can help users find the activity in search results.
-- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](nsuseractivity/persistentidentifier.md)
+- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](./persistentidentifier.md)
   A unique and persistent value you use to identify the activity.
-- [typealias NSUserActivityPersistentIdentifier](nsuseractivitypersistentidentifier.md)
+- [typealias NSUserActivityPersistentIdentifier](../nsuseractivitypersistentidentifier.md)
   The type that defines a persistent identifier value for an activity.
-- [var contentAttributeSet: CSSearchableItemAttributeSet?](nsuseractivity/contentattributeset.md)
+- [var contentAttributeSet: CSSearchableItemAttributeSet?](./contentattributeset.md)
   A set of properties that describe the activity.
 
 

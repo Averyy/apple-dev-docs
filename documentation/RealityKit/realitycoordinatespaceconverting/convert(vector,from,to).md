@@ -1,7 +1,8 @@
 # convert(vector:from:to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a 3D vector from a RealityKit coordinate space to one in a SwiftUI coordinate space.
 

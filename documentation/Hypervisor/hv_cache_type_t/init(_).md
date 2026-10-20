@@ -1,12 +1,13 @@
 # init(_:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new 32-bit integer that describes a cache element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](hv_cache_type_t/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a new cache element with the unsigned 32-bit integer you provide.
 
 

@@ -1,7 +1,8 @@
 # imageRefTrackIndex
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The index of the image track reference.
 
@@ -11,35 +12,36 @@ This is the index returned by the `AddTrackReference` function when the image tr
 
 ## See Also
 
-- [majorVersion](panorama_sample_atom/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](panorama_sample_atom/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [hotSpotRefTrackIndex](panorama_sample_atom/hotspotreftrackindex.md)
+- [hotSpotRefTrackIndex](./hotspotreftrackindex.md)
   The index of the hot spot track reference.
-- [minPan](panorama_sample_atom/minpan.md)
+- [minPan](./minpan.md)
   The minimum pan angle, in degrees.
-- [maxPan](panorama_sample_atom/maxpan.md)
+- [maxPan](./maxpan.md)
   The maximum pan angle, in degrees.
-- [minTilt](panorama_sample_atom/mintilt.md)
+- [minTilt](./mintilt.md)
   The minimum tilt angle, in degrees.
-- [maxTilt](panorama_sample_atom/maxtilt.md)
+- [maxTilt](./maxtilt.md)
   The maximum tilt angle, in degrees.
-- [minFieldOfView](panorama_sample_atom/minfieldofview.md)
+- [minFieldOfView](./minfieldofview.md)
   The minimum vertical field of view, in degrees.
-- [maxFieldOfView](panorama_sample_atom/maxfieldofview.md)
+- [maxFieldOfView](./maxfieldofview.md)
   The maximum vertical field of view, in degrees.
-- [defaultPan](panorama_sample_atom/defaultpan.md)
+- [defaultPan](./defaultpan.md)
   The default pan angle, in degrees.
-- [defaultTilt](panorama_sample_atom/defaulttilt.md)
+- [defaultTilt](./defaulttilt.md)
   The default tilt angle, in degrees.
-- [defaultFieldOfView](panorama_sample_atom/defaultfieldofview.md)
+- [defaultFieldOfView](./defaultfieldofview.md)
   The default vertical field of view, in degrees.
-- [imageSizeX](panorama_sample_atom/imagesizex.md)
+- [imageSizeX](./imagesizex.md)
   The width, in pixels, of the panorama stored in the highest resolution image track.
-- [imageSizeY](panorama_sample_atom/imagesizey.md)
+- [imageSizeY](./imagesizey.md)
   The height, in pixels, of the panorama stored in the highest resolution image track.
-- [imageNumFramesX](panorama_sample_atom/imagenumframesx.md)
+- [imageNumFramesX](./imagenumframesx.md)
   The number of frames into which the panoramic image is diced horizontally.
 
 

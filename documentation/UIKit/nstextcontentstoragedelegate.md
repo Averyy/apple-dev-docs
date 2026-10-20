@@ -1,7 +1,8 @@
 # NSTextContentStorageDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The optional methods that delegates of content storage objects implement to handle content processing.
 
@@ -18,21 +19,26 @@ The optional methods that delegates of content storage objects implement to hand
 protocol NSTextContentStorageDelegate : NSTextContentManagerDelegate
 ```
 
+```objc
+@protocol NSTextContentStorageDelegate <NSTextContentManagerDelegate>
+```
+
 ## Topics
 
 ### Working with paragraphs
-- [func textContentStorage(NSTextContentStorage, textParagraphWith: NSRange) -> NSTextParagraph?](nstextcontentstoragedelegate/textcontentstorage(_:textparagraphwith:).md)
+- [func textContentStorage(NSTextContentStorage, textParagraphWith: NSRange) -> NSTextParagraph?](./nstextcontentstoragedelegate/textcontentstorage%28_,textparagraphwith%29.md)
   Returns a custom paragraph for a range that you provide from the object’s attributed string.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTextContentManagerDelegate](nstextcontentmanagerdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTextContentManagerDelegate](./nstextcontentmanagerdelegate.md)
 
 ## See Also
 
-- [var delegate: (any NSTextContentStorageDelegate)?](nstextcontentstorage/delegate.md)
+### Accessing paragraphs
+- [var delegate: (any NSTextContentStorageDelegate)?](./nstextcontentstorage/delegate.md)
   The delegate for the content storage object.
 
 

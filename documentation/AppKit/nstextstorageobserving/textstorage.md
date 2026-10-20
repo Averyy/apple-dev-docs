@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -11,6 +12,10 @@
 
 ```swift
 var textStorage: NSTextStorage? { get set }
+```
+
+```objc
+@property (strong, nullable) NSTextStorage * textStorage;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:arrowEdge:actionHandler:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tip view with an optional arrow edge and action handler.
 

@@ -1,7 +1,8 @@
 # search(text:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a `ContentUnavailableView` instance that conveys a search state.
 
@@ -19,6 +20,8 @@ Creates a `ContentUnavailableView` instance that conveys a search state.
 ```swift
 static func search(text: String) -> ContentUnavailableView<Label, Description, Actions>
 ```
+
+Available when `Label` is `SearchUnavailableContent.Label`, `Description` is `SearchUnavailableContent.Description`, and `Actions` is `SearchUnavailableContent.Actions`.
 
 #### Discussion
 
@@ -58,7 +61,8 @@ struct ContactsListView: View {
 
 ## See Also
 
-- [static var search: ContentUnavailableView<SearchUnavailableContent.Label, SearchUnavailableContent.Description, SearchUnavailableContent.Actions>](contentunavailableview/search.md)
+### Getting built-in unavailable views
+- [static var search: ContentUnavailableView<SearchUnavailableContent.Label, SearchUnavailableContent.Description, SearchUnavailableContent.Actions>](./search.md)
   Creates a `ContentUnavailableView` instance that conveys a search state.
 
 

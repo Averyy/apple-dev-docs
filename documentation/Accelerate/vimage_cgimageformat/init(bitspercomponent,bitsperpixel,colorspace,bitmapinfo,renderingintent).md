@@ -1,7 +1,8 @@
 # init(bitsPerComponent:bitsPerPixel:colorSpace:bitmapInfo:renderingIntent:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Graphics image format with a color space instance and default decode array.
 
@@ -11,7 +12,7 @@ Creates a Core Graphics image format with a color space instance and default dec
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -30,11 +31,12 @@ init?(bitsPerComponent: Int, bitsPerPixel: Int, colorSpace: CGColorSpace, bitmap
 
 ## See Also
 
-- [init(bitsPerComponent: UInt32, bitsPerPixel: UInt32, colorSpace: Unmanaged<CGColorSpace>!, bitmapInfo: CGBitmapInfo, version: UInt32, decode: UnsafePointer<CGFloat>!, renderingIntent: CGColorRenderingIntent)](vimage_cgimageformat/init(bitspercomponent:bitsperpixel:colorspace:bitmapinfo:version:decode:renderingintent:).md)
+### Initializers
+- [init(bitsPerComponent: UInt32, bitsPerPixel: UInt32, colorSpace: Unmanaged<CGColorSpace>!, bitmapInfo: CGBitmapInfo, version: UInt32, decode: UnsafePointer<CGFloat>!, renderingIntent: CGColorRenderingIntent)](./init%28bitspercomponent,bitsperpixel,colorspace,bitmapinfo,version,decode,renderingintent%29.md)
   Creates a Core Graphics image format.
-- [init?(cgImage: CGImage)](vimage_cgimageformat/init(cgimage:).md)
+- [init?(cgImage: CGImage)](./init%28cgimage%29.md)
   Creates a Core Graphics image format of the specified image.
-- [init()](vimage_cgimageformat/init.md)
+- [init()](./init%28%29.md)
   Creates an empty Core Graphics image format.
 
 

@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.CloseCode.protocolCode(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A well-known close code reserved by the protocol (values 1000-2999).
 
@@ -22,13 +23,14 @@ case protocolCode(NWProtocolWebSocket.CloseCode.Defined)
 
 ## See Also
 
-- [init(rawValue: UInt16) throws](nwprotocolwebsocket/closecode/init(rawvalue:).md)
+### Close Code Types
+- [init(rawValue: UInt16) throws](./init%28rawvalue%29.md)
   Initializes a close code with a raw value.
-- [NWProtocolWebSocket.CloseCode.Defined](nwprotocolwebsocket/closecode/defined.md)
+- [NWProtocolWebSocket.CloseCode.Defined](./defined.md)
   Well-known close code values.
-- [NWProtocolWebSocket.CloseCode.applicationCode(_:)](nwprotocolwebsocket/closecode/applicationcode(_:).md)
+- [NWProtocolWebSocket.CloseCode.applicationCode(_:)](./applicationcode%28_%29.md)
   A close code in the range reserved for applications and frameworks (3000-3999).
-- [NWProtocolWebSocket.CloseCode.privateCode(_:)](nwprotocolwebsocket/closecode/privatecode(_:).md)
+- [NWProtocolWebSocket.CloseCode.privateCode(_:)](./privatecode%28_%29.md)
   A close code in the private-use range (4000-4999).
 
 

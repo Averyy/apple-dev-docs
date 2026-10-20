@@ -1,12 +1,13 @@
 # dateValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date currently specified in the picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The date currently specified in the picker.
 var dateValue: Date { get set }
 ```
 
+```objc
+@property (copy) NSDate * dateValue;
+```
+
 #### Discussion
 
-Assign a date to this property to set the starting value for the picker. For range-based dates, use the [`timeInterval`](nsdatepickercell/timeinterval.md) property to set the extent of the time range.
+Assign a date to this property to set the starting value for the picker. For range-based dates, use the [`timeInterval`](./timeinterval.md) property to set the extent of the time range.
 
 ## See Also
 
-- [var timeInterval: TimeInterval](nsdatepickercell/timeinterval.md)
+### Object Values
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The time interval that represents the date range.
-- [var calendar: Calendar?](nsdatepickercell/calendar.md)
+- [var calendar: Calendar?](./calendar.md)
   The calendar used by the date picker.
-- [var locale: Locale?](nsdatepickercell/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale used to display dates.
-- [var timeZone: TimeZone?](nsdatepickercell/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone used to display time-related values.
 
 

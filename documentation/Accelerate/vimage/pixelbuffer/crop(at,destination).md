@@ -1,7 +1,8 @@
 # crop(at:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Crops the pixel buffer to a rectangle that’s defined by an origin and the destination buffer’s dimensions.
 
@@ -11,7 +12,7 @@ Crops the pixel buffer to a rectangle that’s defined by an origin and the dest
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Crops the pixel buffer to a rectangle that’s defined by an origin and the dest
 ```swift
 func crop(at origin: CGPoint, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` conforms to `StaticPixelFormat`.
 
 #### Discussion
 
@@ -55,7 +58,8 @@ print(dest.array)
 
 ## See Also
 
-- [func cropped(to: CGRect) -> vImage.PixelBuffer<Format>](vimage/pixelbuffer/cropped(to:).md)
+### Cropping
+- [func cropped(to: CGRect) -> vImage.PixelBuffer<Format>](./cropped%28to%29.md)
   Returns a new pixel buffer that contains a copy of the data specified as a subregion of an existing pixel buffer.
 
 

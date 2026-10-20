@@ -1,7 +1,8 @@
 # paymentAuthorizationViewController(_:didChangeCouponCode:handler:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user entered or updated a coupon code.
 
@@ -15,7 +16,15 @@ Tells the delegate that the user entered or updated a coupon code.
 ## Declaration
 
 ```swift
+optional func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didChangeCouponCode couponCode: String, handler completion: @escaping @Sendable (PKPaymentRequestCouponCodeUpdate) -> Void)
+```
+
+```swift
 optional func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didChangeCouponCode couponCode: String) async -> PKPaymentRequestCouponCodeUpdate
+```
+
+```objc
+- (void) paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *) controller didChangeCouponCode:(NSString *) couponCode handler:(void (^)(PKPaymentRequestCouponCodeUpdate *update)) completion;
 ```
 
 ## Parameters

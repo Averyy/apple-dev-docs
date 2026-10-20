@@ -2,23 +2,28 @@
 
 **Framework**: SceneKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns all nodes that might be visible from a specified point of view.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func nodesInsideFrustum(of pointOfView: SCNNode) -> [SCNNode]
+```
+
+```objc
+- (NSArray<SCNNode *> *) nodesInsideFrustumWithPointOfView:(SCNNode *) pointOfView;
 ```
 
 #### Return Value
@@ -27,27 +32,28 @@ An array of nodes whose bounding boxes intersect the view frustum defined by the
 
 #### Discussion
 
-Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](scnscenerenderer/pointofview.md) property for details). Such a node defines a *viewing frustum*—a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
+Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](./pointofview.md) property for details). Such a node defines a *viewing frustum*—a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
 
-Use this method find all nodes whose content lies within the viewing frustum defined by another node (which may or may not be the scene renderer’s current [`pointOfView`](scnscenerenderer/pointofview.md) node).
+Use this method find all nodes whose content lies within the viewing frustum defined by another node (which may or may not be the scene renderer’s current [`pointOfView`](./pointofview.md) node).
 
 Note that this method does not perform occlusion testing. That is, the returned array includes any node that lies within the specified viewing frustum regardless of whether that node’s contents are obscured by other geometry.
 
 ## Parameters
 
-- `pointOfView`: A node defining a point of view, as used by the [`pointOfView`](scnscenerenderer/pointofview.md) property.
+- `pointOfView`: A node defining a point of view, as used by the [`pointOfView`](./pointofview.md) property.
 
 ## See Also
 
-- [func hitTest(CGPoint, options: [SCNHitTestOption : Any]?) -> [SCNHitTestResult]](scnscenerenderer/hittest(_:options:).md)
+### Working With Projected Scene Contents
+- [func hitTest(CGPoint, options: [SCNHitTestOption : Any]?) -> [SCNHitTestResult]](./hittest%28_,options%29.md)
   Searches the renderer’s scene for objects corresponding to a point in the rendered image.
-- [struct SCNHitTestOption](scnhittestoption.md)
+- [struct SCNHitTestOption](../scnhittestoption.md)
   Options affecting the behavior of SceneKit hit-testing methods.
-- [func isNode(SCNNode, insideFrustumOf: SCNNode) -> Bool](scnscenerenderer/isnode(_:insidefrustumof:).md)
+- [func isNode(SCNNode, insideFrustumOf: SCNNode) -> Bool](./isnode%28_,insidefrustumof%29.md)
   Returns a Boolean value indicating whether a node might be visible from a specified point of view.
-- [func projectPoint(SCNVector3) -> SCNVector3](scnscenerenderer/projectpoint(_:).md)
+- [func projectPoint(SCNVector3) -> SCNVector3](./projectpoint%28_%29.md)
   Projects a point from the 3D world coordinate system of the scene to the 2D pixel coordinate system of the renderer.
-- [func unprojectPoint(SCNVector3) -> SCNVector3](scnscenerenderer/unprojectpoint(_:).md)
+- [func unprojectPoint(SCNVector3) -> SCNVector3](./unprojectpoint%28_%29.md)
   Unprojects a point from the 2D pixel coordinate system of the renderer to the 3D world coordinate system of the scene.
 
 

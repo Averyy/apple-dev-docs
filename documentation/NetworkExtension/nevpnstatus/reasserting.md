@@ -1,7 +1,8 @@
 # NEVPNStatus.reasserting
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The VPN is in the process of reconnecting.
 
@@ -19,17 +20,22 @@ The VPN is in the process of reconnecting.
 case reasserting
 ```
 
+```c
+NEVPNStatusReasserting
+```
+
 ## See Also
 
-- [NEVPNStatus.disconnecting](nevpnstatus/disconnecting.md)
+### Statuses
+- [NEVPNStatus.disconnecting](./disconnecting.md)
   The VPN is in the process of disconnecting.
-- [NEVPNStatus.connected](nevpnstatus/connected.md)
+- [NEVPNStatus.connected](./connected.md)
   The VPN is connected.
-- [NEVPNStatus.connecting](nevpnstatus/connecting.md)
+- [NEVPNStatus.connecting](./connecting.md)
   The VPN is in the process of connecting.
-- [NEVPNStatus.disconnected](nevpnstatus/disconnected.md)
+- [NEVPNStatus.disconnected](./disconnected.md)
   The VPN is disconnected.
-- [NEVPNStatus.invalid](nevpnstatus/invalid.md)
+- [NEVPNStatus.invalid](./invalid.md)
   The associated VPN configuration doesn’t exist in the Network Extension preferences or isn’t enabled.
 
 

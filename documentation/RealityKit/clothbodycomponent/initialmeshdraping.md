@@ -1,7 +1,8 @@
 # initialMeshDraping
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional pose that specifies an already draped configuration of the cloth at the start of the simulation.
 
@@ -18,15 +19,16 @@ var initialMeshDraping: ClothPoseResource? { get }
 
 #### Discussion
 
-This configuration is applied when the body is created or reset, providing the cloth with an initial settled state. In contrast, the rest pose defined by [`mesh`](clothbodycomponent/mesh.md) represents the reference shape that the cloth attempts to preserve during deformation.
+This configuration is applied when the body is created or reset, providing the cloth with an initial settled state. In contrast, the rest pose defined by [`mesh`](./mesh.md) represents the reference shape that the cloth attempts to preserve during deformation.
 
-The number and ordering of positions in this pose resource must match those of the [`mesh`](clothbodycomponent/mesh.md).
+The number and ordering of positions in this pose resource must match those of the [`mesh`](./mesh.md).
 
 ## See Also
 
-- [init(mesh: ClothMeshResource, meshDraping: ClothPoseResource?)](clothbodycomponent/init(mesh:meshdraping:).md)
+### Creating a cloth body
+- [init(mesh: ClothMeshResource, meshDraping: ClothPoseResource?)](./init%28mesh,meshdraping%29.md)
   Creates a new cloth body component.
-- [var mesh: ClothMeshResource](clothbodycomponent/mesh.md)
+- [var mesh: ClothMeshResource](./mesh.md)
   The (simulation) mesh of the cloth body that defines the rest pose of the body.
 
 

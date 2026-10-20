@@ -1,7 +1,8 @@
 # MPSGetPreferredDevice(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.2+
@@ -15,6 +16,10 @@
 
 ```swift
 func MPSGetPreferredDevice(_ options: MPSDeviceOptions) -> (any MTLDevice)?
+```
+
+```c
+id<MTLDevice>MPSGetPreferredDevice(MPSDeviceOptions options);
 ```
 
 

@@ -1,7 +1,8 @@
 # NSSuggestionItemResponse.Highlight.firstSelectableItem
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The first selectable item (if any) should be highlighted, indicating a strong match This is useful in contexts where suggestions are less for convenience and are instead expected to be the primary way for users to interact with the control.
 

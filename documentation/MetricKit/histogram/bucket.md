@@ -1,7 +1,8 @@
 # Histogram.Bucket
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -18,19 +19,19 @@ struct Bucket
 ## Topics
 
 ### Instance Properties
-- [let count: Int](histogram/bucket/count.md)
-- [let lowerBound: Measurement<DimensionType>](histogram/bucket/lowerbound.md)
-- [let upperBound: Measurement<DimensionType>](histogram/bucket/upperbound.md)
+- [let count: Int](./bucket/count.md)
+- [let lowerBound: Measurement<DimensionType>](./bucket/lowerbound.md)
+- [let upperBound: Measurement<DimensionType>](./bucket/upperbound.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

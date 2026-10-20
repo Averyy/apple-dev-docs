@@ -1,14 +1,15 @@
 # cpu_broadcast_xcall
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int cpu_broadcast_xcall(uint32_t *, boolean_t, broadcastFunc, void *);
 ```
 

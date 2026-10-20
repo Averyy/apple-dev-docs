@@ -1,7 +1,8 @@
 # CGPDFObjectGetType(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the PDF type identifier of an object.
 
@@ -10,7 +11,7 @@ Returns the PDF type identifier of an object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Returns the PDF type identifier of an object.
 func CGPDFObjectGetType(_ object: CGPDFObjectRef) -> CGPDFObjectType
 ```
 
+```c
+extern CGPDFObjectType CGPDFObjectGetType(CGPDFObjectRef object);
+```
+
 #### Return Value
 
-Returns the type of the `object` parameter. See [`Abstract Types for PDF Document Content`](cgpdfdocument#Abstract-Types-for-PDF-Document-Content.md).
+Returns the type of the `object` parameter. See [Abstract Types for PDF Document Content](./cgpdfdocument.md#Abstract-Types-for-PDF-Document-Content).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Returns the type of the `object` parameter. See [`Abstract Types for PDF Documen
 
 ## See Also
 
-- [func CGPDFObjectGetValue(CGPDFObjectRef, CGPDFObjectType, UnsafeMutableRawPointer?) -> Bool](cgpdfobjectgetvalue(_:_:_:).md)
+### Getting Object Types and Values
+- [func CGPDFObjectGetValue(CGPDFObjectRef, CGPDFObjectType, UnsafeMutableRawPointer?) -> Bool](./cgpdfobjectgetvalue%28_,_,_%29.md)
   Returns whether an object is of a given type and if it is, retrieves its value.
 
 

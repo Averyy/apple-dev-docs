@@ -1,7 +1,8 @@
 # Accessory.Chirality.left
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Left-handed accessory, or non-handed accessory held in left hand.
 

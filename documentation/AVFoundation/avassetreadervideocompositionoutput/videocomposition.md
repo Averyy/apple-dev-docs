@@ -1,7 +1,8 @@
 # videoComposition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video composition to use for the output.
 
@@ -20,13 +21,18 @@ The video composition to use for the output.
 var videoComposition: AVVideoComposition? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
+```
+
 #### Discussion
 
-The value is an [`AVVideoComposition`](avvideocomposition.md) object that specifies the visual arrangement of video frames read from each source track over the timeline of the source asset.
+The value is an [`AVVideoComposition`](../avvideocomposition.md) object that specifies the visual arrangement of video frames read from each source track over the timeline of the source asset.
 
 ## See Also
 
-- [var customVideoCompositor: (any AVVideoCompositing)?](avassetreadervideocompositionoutput/customvideocompositor.md)
+### Configuring video settings
+- [var customVideoCompositor: (any AVVideoCompositing)?](./customvideocompositor.md)
   A custom video compositor for the output.
 
 

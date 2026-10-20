@@ -7,7 +7,7 @@ A C function that translates a 64-bit segment and outputs a single desired segme
 
 ## Declaration
 
-```swift
+```c
 typedef bool ( *SegmentFunction)(
    IODMACommand *target,
    Segment64 segment,
@@ -15,7 +15,7 @@ typedef bool ( *SegmentFunction)(
    UInt32 segmentIndex);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if segment encoding succeeded. false may be returned if the current segment does not fit in an output segment, i.e. a 38bit address wont fit into a 32 encoding.
 

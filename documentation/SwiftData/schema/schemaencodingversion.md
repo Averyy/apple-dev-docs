@@ -1,7 +1,8 @@
 # schemaEncodingVersion
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ static let schemaEncodingVersion: Schema.Version
 
 ## See Also
 
-- [let encodingVersion: Schema.Version](schema/encodingversion.md)
+### Accessing version details
+- [let encodingVersion: Schema.Version](./encodingversion.md)
 
 
 ---

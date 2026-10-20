@@ -1,7 +1,8 @@
 # unlimited
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A request for as many values as the publisher can produce.
 
@@ -22,11 +23,12 @@ static let unlimited: Subscribers.Demand
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../../processing-published-elements-with-subscribers.md)
 
 ## See Also
 
-- [static let none: Subscribers.Demand](subscribers/demand/none.md)
+### Using special demands
+- [static let none: Subscribers.Demand](./none.md)
   A request for no elements from the publisher.
 
 

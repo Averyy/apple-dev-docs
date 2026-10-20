@@ -1,7 +1,8 @@
 # prepare(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform any custom setup associated with a sharing service picker.
 
@@ -14,9 +15,13 @@ Perform any custom setup associated with a sharing service picker.
 func prepare(_ sharingServicePicker: NSSharingServicePicker)
 ```
 
+```objc
+- (void) prepareSharingServicePicker:(NSSharingServicePicker *) sharingServicePicker;
+```
+
 #### Discussion
 
-Override this method, as needed, and use it to configure the sharing service picker before AppKit displays it. The default implementation of this method does nothing. You might customize the contents of the share menu or provide a custom delegate for the chosen sharing service. You can get the default sharing menu item by calling [`standardShareMenuItem()`](nsdocumentcontroller/standardsharemenuitem().md) on the current document controller.
+Override this method, as needed, and use it to configure the sharing service picker before AppKit displays it. The default implementation of this method does nothing. You might customize the contents of the share menu or provide a custom delegate for the chosen sharing service. You can get the default sharing menu item by calling [`standardShareMenuItem()`](../nsdocumentcontroller/standardsharemenuitem%28%29.md) on the current document controller.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ Override this method, as needed, and use it to configure the sharing service pic
 
 ## See Also
 
-- [var allowsDocumentSharing: Bool](nsdocument/allowsdocumentsharing.md)
+### Sharing the Document
+- [var allowsDocumentSharing: Bool](./allowsdocumentsharing.md)
   A Boolean value that indicates whether the document is shareable from the standard Share menu.
-- [func share(with: NSSharingService, completionHandler: ((Bool) -> Void)?)](nsdocument/share(with:completionhandler:).md)
+- [func share(with: NSSharingService, completionHandler: ((Bool) -> Void)?)](./share%28with,completionhandler%29.md)
   Share the document’s file using the specified sharing service.
 
 

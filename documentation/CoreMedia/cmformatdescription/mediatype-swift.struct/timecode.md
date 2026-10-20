@@ -1,7 +1,8 @@
 # timeCode
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,14 +21,15 @@ static let timeCode: CMFormatDescription.MediaType
 
 ## See Also
 
-- [static let audio: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/audio.md)
-- [static let closedCaption: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/closedcaption.md)
-- [static let metadata: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/metadata.md)
-- [static let muxed: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/muxed.md)
-- [static let subtitle: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/subtitle.md)
-- [static let text: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/text.md)
-- [static let video: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/video.md)
-- [static let taggedBufferGroup: CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct/taggedbuffergroup.md)
+### Media Types
+- [static let audio: CMFormatDescription.MediaType](./audio.md)
+- [static let closedCaption: CMFormatDescription.MediaType](./closedcaption.md)
+- [static let metadata: CMFormatDescription.MediaType](./metadata.md)
+- [static let muxed: CMFormatDescription.MediaType](./muxed.md)
+- [static let subtitle: CMFormatDescription.MediaType](./subtitle.md)
+- [static let text: CMFormatDescription.MediaType](./text.md)
+- [static let video: CMFormatDescription.MediaType](./video.md)
+- [static let taggedBufferGroup: CMFormatDescription.MediaType](./taggedbuffergroup.md)
 
 
 ---

@@ -1,10 +1,11 @@
 # DOMStyleSheet
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -12,49 +13,54 @@
 class DOMStyleSheet
 ```
 
+```objc
+@interface DOMStyleSheet : DOMObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var disabled: Bool](domstylesheet/disabled.md)
-- [var href: String!](domstylesheet/href.md)
-- [var media: DOMMediaList!](domstylesheet/media.md)
-- [var ownerNode: DOMNode!](domstylesheet/ownernode.md)
-- [var parent: DOMStyleSheet!](domstylesheet/parent.md)
-- [var title: String!](domstylesheet/title.md)
-- [var type: String!](domstylesheet/type.md)
+- [var disabled: Bool](./domstylesheet/disabled.md)
+- [var href: String!](./domstylesheet/href.md)
+- [var media: DOMMediaList!](./domstylesheet/media.md)
+- [var ownerNode: DOMNode!](./domstylesheet/ownernode.md)
+- [var parent: DOMStyleSheet!](./domstylesheet/parent.md)
+- [var title: String!](./domstylesheet/title.md)
+- [var type: String!](./domstylesheet/type.md)
 
 ## Relationships
 
 ### Inherits From
-- [DOMObject](domobject.md)
+- [DOMObject](./domobject.md)
 ### Inherited By
-- [DOMCSSStyleSheet](domcssstylesheet.md)
+- [DOMCSSStyleSheet](./domcssstylesheet.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class DOMAbstractView](domabstractview.md)
-- [class DOMAttr](domattr.md)
-- [class DOMBlob](domblob.md)
-- [class DOMCDATASection](domcdatasection.md)
-- [class DOMCharacterData](domcharacterdata.md)
-- [class DOMComment](domcomment.md)
-- [class DOMCounter](domcounter.md)
-- [class DOMCSSCharsetRule](domcsscharsetrule.md)
-- [class DOMCSSFontFaceRule](domcssfontfacerule.md)
-- [class DOMCSSImportRule](domcssimportrule.md)
-- [class DOMCSSMediaRule](domcssmediarule.md)
-- [class DOMCSSPageRule](domcsspagerule.md)
-- [class DOMCSSPrimitiveValue](domcssprimitivevalue.md)
-- [class DOMCSSRule](domcssrule.md)
-- [class DOMCSSRuleList](domcssrulelist.md)
+### Document Object Model (DOM) APIs
+- [class DOMAbstractView](./domabstractview.md)
+- [class DOMAttr](./domattr.md)
+- [class DOMBlob](./domblob.md)
+- [class DOMCDATASection](./domcdatasection.md)
+- [class DOMCharacterData](./domcharacterdata.md)
+- [class DOMComment](./domcomment.md)
+- [class DOMCounter](./domcounter.md)
+- [class DOMCSSCharsetRule](./domcsscharsetrule.md)
+- [class DOMCSSFontFaceRule](./domcssfontfacerule.md)
+- [class DOMCSSImportRule](./domcssimportrule.md)
+- [class DOMCSSMediaRule](./domcssmediarule.md)
+- [class DOMCSSPageRule](./domcsspagerule.md)
+- [class DOMCSSPrimitiveValue](./domcssprimitivevalue.md)
+- [class DOMCSSRule](./domcssrule.md)
+- [class DOMCSSRuleList](./domcssrulelist.md)
 
 
 ---

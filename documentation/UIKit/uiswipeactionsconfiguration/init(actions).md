@@ -1,7 +1,8 @@
 # init(actions:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a swipe action configuration object with the specified set of actions.
 
@@ -15,6 +16,10 @@ Creates a swipe action configuration object with the specified set of actions.
 
 ```swift
 convenience init(actions: [UIContextualAction])
+```
+
+```objc
++ (instancetype) configurationWithActions:(NSArray<UIContextualAction *> *) actions;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # errSecSMIMESubjAltNameNotCritical
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The subject alternative name extension is not marked as critical.
 
@@ -18,6 +19,10 @@ The subject alternative name extension is not marked as critical.
 
 ```swift
 var errSecSMIMESubjAltNameNotCritical: OSStatus { get }
+```
+
+```c
+errSecSMIMESubjAltNameNotCritical
 ```
 
 

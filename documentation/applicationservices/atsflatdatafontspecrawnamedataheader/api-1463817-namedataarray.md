@@ -1,7 +1,8 @@
 # nameDataArray
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var nameDataArray: ATSFlatDataFontSpecRawNameData
+```
+
+```c
+ATSFlatDataFontSpecRawNameData nameDataArray[1];
 ```
 
 

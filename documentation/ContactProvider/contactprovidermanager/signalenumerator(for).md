@@ -1,7 +1,8 @@
 # signalEnumerator(for:)
 
 **Framework**: ContactProvider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the extension enumerate its contacts for the domain.
 
@@ -21,7 +22,7 @@ You typically call this when you need to invoke the app extension on demand. One
 
 ## Parameters
 
-- `collection`: The collection to enumerate; defaults to [`rootContainer`](contactitem/identifier/rootcontainer.md).
+- `collection`: The collection to enumerate; defaults to [`rootContainer`](../contactitem/identifier/rootcontainer.md).
 
 
 ---

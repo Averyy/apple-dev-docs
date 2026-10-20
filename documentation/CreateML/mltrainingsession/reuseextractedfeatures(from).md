@@ -1,7 +1,8 @@
 # reuseExtractedFeatures(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses the features another session has already extracted from its dataset.
 

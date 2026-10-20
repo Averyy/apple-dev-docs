@@ -5,17 +5,17 @@
 ## Topics
 
 ### Constants
-- [var kFloppyIconResource: Int](kfloppyiconresource.md)
-- [var kGenericApplicationIconResource: Int](kgenericapplicationiconresource.md)
-- [var kGenericCDROMIconResource: Int](kgenericcdromiconresource.md)
-- [var kGenericDeskAccessoryIconResource: Int](kgenericdeskaccessoryiconresource.md)
-- [var kGenericDocumentIconResource: Int](kgenericdocumenticonresource.md)
-- [var kGenericEditionFileIconResource: Int](kgenericeditionfileiconresource.md)
-- [var kGenericFolderIconResource: Int](kgenericfoldericonresource.md)
-- [var kGenericRAMDiskIconResource: Int](kgenericramdiskiconresource.md)
-- [var kGenericStationeryIconResource: Int](kgenericstationeryiconresource.md)
-- [var kPrivateFolderIconResource: Int](kprivatefoldericonresource.md)
-- [var kTrashIconResource: Int](ktrashiconresource.md)
+- [var kFloppyIconResource: Int](../../kfloppyiconresource.md)
+- [var kGenericApplicationIconResource: Int](../../kgenericapplicationiconresource.md)
+- [var kGenericCDROMIconResource: Int](../../kgenericcdromiconresource.md)
+- [var kGenericDeskAccessoryIconResource: Int](../../kgenericdeskaccessoryiconresource.md)
+- [var kGenericDocumentIconResource: Int](../../kgenericdocumenticonresource.md)
+- [var kGenericEditionFileIconResource: Int](../../kgenericeditionfileiconresource.md)
+- [var kGenericFolderIconResource: Int](../../kgenericfoldericonresource.md)
+- [var kGenericRAMDiskIconResource: Int](../../kgenericramdiskiconresource.md)
+- [var kGenericStationeryIconResource: Int](../../kgenericstationeryiconresource.md)
+- [var kPrivateFolderIconResource: Int](../../kprivatefoldericonresource.md)
+- [var kTrashIconResource: Int](../../ktrashiconresource.md)
 
 
 ---

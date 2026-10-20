@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A confidence score that indicates the detected joint’s accuracy.
 
@@ -22,9 +23,10 @@ let confidence: Float
 
 ## See Also
 
-- [let jointName: String](joint/jointname.md)
+### Inspecting a joint
+- [let jointName: String](./jointname.md)
   The joint’s identifier label.
-- [let location: NormalizedPoint](joint/location.md)
+- [let location: NormalizedPoint](./location.md)
   The location of the joint in normalized coordinates.
 
 

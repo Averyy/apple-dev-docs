@@ -1,7 +1,8 @@
 # status
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the participant.
 
@@ -20,21 +21,34 @@ The status of the participant.
 var status: GKTurnBasedParticipant.Status { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) GKTurnBasedParticipantStatus status;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) GKTurnBasedParticipantStatus status;
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 ## See Also
 
-- [var lastTurnDate: Date?](gkturnbasedparticipant/lastturndate.md)
+### Retrieving Participant Details
+- [var lastTurnDate: Date?](./lastturndate.md)
   The date and time that this participant last took a turn in the game.
-- [var timeoutDate: Date?](gkturnbasedparticipant/timeoutdate.md)
+- [var timeoutDate: Date?](./timeoutdate.md)
   The date and time that the participant’s turn timed out.
-- [var player: GKPlayer?](gkturnbasedparticipant/player.md)
+- [var player: GKPlayer?](./player.md)
   The player object containing the participant details.
-- [GKTurnBasedParticipant.Status](gkturnbasedparticipant/status-swift.enum.md)
+- [GKTurnBasedParticipant.Status](./status-swift.enum.md)
   The state the participant is in during the match.
-- [var playerID: String?](gkturnbasedparticipant/playerid.md)
+- [var playerID: String?](./playerid.md)
   The player identifier for this participant.
 
 

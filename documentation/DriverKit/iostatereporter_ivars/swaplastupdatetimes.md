@@ -1,25 +1,27 @@
 # swapLastUpdateTimes
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t * swapLastUpdateTimes;
 ```
 
 ## See Also
 
-- [currentStates](iostatereporter_ivars/currentstates.md)
-- [lastUpdateTimes](iostatereporter_ivars/lastupdatetimes.md)
-- [swapCurrentStates](iostatereporter_ivars/swapcurrentstates.md)
+### Instance Properties
+- [currentStates](./currentstates.md)
+- [lastUpdateTimes](./lastupdatetimes.md)
+- [swapCurrentStates](./swapcurrentstates.md)
 
 
 ---

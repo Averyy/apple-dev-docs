@@ -1,7 +1,8 @@
 # SCDynamicStoreCopyProxies(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the key-value pairs that represent the current internet proxy settings.
 
@@ -12,6 +13,10 @@ Returns the key-value pairs that represent the current internet proxy settings.
 
 ```swift
 func SCDynamicStoreCopyProxies(_ store: SCDynamicStore?) -> CFDictionary?
+```
+
+```c
+CFDictionaryRefSCDynamicStoreCopyProxies(SCDynamicStoreRef store);
 ```
 
 #### Return Value
@@ -42,13 +47,14 @@ The returned proxy settings dictionary can include the following key-value pairs
 
 ## See Also
 
-- [func SCDynamicStoreCopyComputerName(SCDynamicStore?, UnsafeMutablePointer<CFStringEncoding>?) -> CFString?](scdynamicstorecopycomputername(_:_:).md)
+### Group
+- [func SCDynamicStoreCopyComputerName(SCDynamicStore?, UnsafeMutablePointer<CFStringEncoding>?) -> CFString?](./scdynamicstorecopycomputername%28_,_%29.md)
   Returns the current computer name.
-- [func SCDynamicStoreCopyConsoleUser(SCDynamicStore?, UnsafeMutablePointer<uid_t>?, UnsafeMutablePointer<gid_t>?) -> CFString?](scdynamicstorecopyconsoleuser(_:_:_:).md)
+- [func SCDynamicStoreCopyConsoleUser(SCDynamicStore?, UnsafeMutablePointer<uid_t>?, UnsafeMutablePointer<gid_t>?) -> CFString?](./scdynamicstorecopyconsoleuser%28_,_,_%29.md)
   Returns information about the user currently logged into the system.
-- [func SCDynamicStoreCopyLocalHostName(SCDynamicStore?) -> CFString?](scdynamicstorecopylocalhostname(_:).md)
+- [func SCDynamicStoreCopyLocalHostName(SCDynamicStore?) -> CFString?](./scdynamicstorecopylocalhostname%28_%29.md)
   Returns the current local host name.
-- [func SCDynamicStoreCopyLocation(SCDynamicStore?) -> CFString?](scdynamicstorecopylocation(_:).md)
+- [func SCDynamicStoreCopyLocation(SCDynamicStore?) -> CFString?](./scdynamicstorecopylocation%28_%29.md)
   Returns the current location identifier.
 
 

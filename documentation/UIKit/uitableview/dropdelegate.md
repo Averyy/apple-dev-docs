@@ -1,7 +1,8 @@
 # dropDelegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that manages the dropping of content into the table view.
 
@@ -17,15 +18,20 @@ The delegate object that manages the dropping of content into the table view.
 weak var dropDelegate: (any UITableViewDropDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UITableViewDropDelegate> dropDelegate;
+```
+
 ## Mentions
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 ## See Also
 
-- [protocol UITableViewDropDelegate](uitableviewdropdelegate.md)
+### Managing drop interactions
+- [protocol UITableViewDropDelegate](../uitableviewdropdelegate.md)
   The interface for handling drops in a table view.
-- [var hasActiveDrop: Bool](uitableview/hasactivedrop.md)
+- [var hasActiveDrop: Bool](./hasactivedrop.md)
   A Boolean value that indicates whether the table view is currently tracking a drop session.
 
 

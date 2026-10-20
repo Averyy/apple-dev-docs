@@ -1,7 +1,8 @@
 # MPSGraphResizeMode.nearest
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Samples the nearest neighbor to the pixel coordinate.
 
@@ -17,6 +18,10 @@ Samples the nearest neighbor to the pixel coordinate.
 
 ```swift
 case nearest
+```
+
+```c
+MPSGraphResizeNearest
 ```
 
 

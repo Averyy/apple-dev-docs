@@ -1,7 +1,8 @@
 # CMTimeFoldIntoRange(_:foldRange:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Folds a time into a time range.
 
@@ -20,6 +21,10 @@ Folds a time into a time range.
 func CMTimeFoldIntoRange(_ time: CMTime, foldRange: CMTimeRange) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeFoldIntoRange(CMTime time, CMTimeRange foldRange);
+```
+
 #### Return Value
 
 A time that represents the translated duration.
@@ -31,7 +36,8 @@ A time that represents the translated duration.
 
 ## See Also
 
-- [func CMVideoFormatDescriptionGetHEVCParameterSetAtIndex(CMFormatDescription, parameterSetIndex: Int, parameterSetPointerOut: UnsafeMutablePointer<UnsafePointer<UInt8>?>?, parameterSetSizeOut: UnsafeMutablePointer<Int>?, parameterSetCountOut: UnsafeMutablePointer<Int>?, nalUnitHeaderLengthOut: UnsafeMutablePointer<Int32>?) -> OSStatus](cmvideoformatdescriptiongethevcparametersetatindex(_:parametersetindex:parametersetpointerout:parametersetsizeout:parametersetcountout:nalunitheaderlengthout:).md)
+### Functions
+- [func CMVideoFormatDescriptionGetHEVCParameterSetAtIndex(CMFormatDescription, parameterSetIndex: Int, parameterSetPointerOut: UnsafeMutablePointer<UnsafePointer<UInt8>?>?, parameterSetSizeOut: UnsafeMutablePointer<Int>?, parameterSetCountOut: UnsafeMutablePointer<Int>?, nalUnitHeaderLengthOut: UnsafeMutablePointer<Int32>?) -> OSStatus](./cmvideoformatdescriptiongethevcparametersetatindex%28_,parametersetindex,parametersetpointerout,parametersetsizeout,parametersetcountout,nalunitheaderlengthout%29.md)
   Returns a parameter set contained in an HEVC (H.265) format description.
 
 

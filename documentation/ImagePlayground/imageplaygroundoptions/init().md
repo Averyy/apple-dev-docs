@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Image Playground  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new instance of this structure with a default set of options.
 

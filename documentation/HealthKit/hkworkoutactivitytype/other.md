@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.other
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for a workout that does not match any of the other workout activity types.
 
@@ -19,9 +20,13 @@ The constant for a workout that does not match any of the other workout activity
 case other
 ```
 
+```c
+HKWorkoutActivityTypeOther
+```
+
 #### Discussion
 
-If your app uses the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md) or [`HKWorkoutActivityType.other`](hkworkoutactivitytype/other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/).
+If your app uses the [`HKWorkoutActivityType.swimming`](./swimming.md) or [`HKWorkoutActivityType.other`](./other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/).
 
 
 ---

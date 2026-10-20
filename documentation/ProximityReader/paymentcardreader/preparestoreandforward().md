@@ -1,7 +1,8 @@
 # prepareStoreAndForward()
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the pipeline for reading payment or loyalty cards in Store and Forward mode.
 
@@ -18,7 +19,7 @@ func prepareStoreAndForward() async throws -> StoreAndForwardPaymentCardReaderSe
 
 #### Return Value
 
-[`StoreAndForwardPaymentCardReaderSession`](storeandforwardpaymentcardreadersession.md) when successful.
+[`StoreAndForwardPaymentCardReaderSession`](../storeandforwardpaymentcardreadersession.md) when successful.
 
 #### Discussion
 
@@ -26,7 +27,7 @@ Call this function to configure Tap to Pay on iPhone on someone’s device. This
 
 Prior to calling this method, make sure that your service provider has the Store and Forward feature enabled and that you created an online session in the last 24 hours.
 
-> **Note**: [`PaymentCardReaderError`](paymentcardreadererror.md) if the method fails to configure the device.
+> **Throws**: [`PaymentCardReaderError`](../paymentcardreadererror.md) if the method fails to configure the device.
 
 
 ---

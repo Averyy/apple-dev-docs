@@ -1,6 +1,7 @@
 # Creating an Intents App Extension
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Add and configure an Intents app extension in your Xcode project.
 
@@ -19,7 +20,7 @@ Enabling the Siri capability adds a set of entitlements to your app. The App Sto
 3. Select the Capabilities tab.
 4. Enable the Siri capability.
 
-![A screenshot of Xcode with the Capabilities pane of the Project editor active, and the Siri capability enabled.](/images/com.apple.sirikit/media-2910037@2x.png)
+![A screenshot of Xcode with the Capabilities pane of the Project editor active, and the Siri capability enabled.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-2910037@2x.png)
 
 ##### Add an Intents App Extension to Your Project
 
@@ -35,7 +36,7 @@ Adding an Intents app extension target provides the initial files you need to bu
 
 > **Note**:  You may add more than one Intents extension to your app, but each extension must support different intents. Create multiple extensions only if doing so provides a performance advantage or reduces the memory footprint of each extension.
 
-![A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.](/images/com.apple.sirikit/media-3172417@2x.png)
+![A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3172417@2x.png)
 
 ##### Specify the Intents Your Extension Supports
 
@@ -43,12 +44,12 @@ After adding your Intents extension target to your project, specify the intents 
 
 1. In Xcode’s Project editor, select the extension target  and expand the Supported Intents section in the General pane.
 2. Add the class name of each intent you support.
-3. If you support the [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent), also select each type of media your app plays in the Media Categories list. For more details about these categories, see [`SupportedMediaCategories`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/supportedmediacategories).
+3. If you support the [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent), also select each type of media your app plays in the Media Categories list. For more details about these categories, see [`SupportedMediaCategories`](../BundleResources/information-property-list/nsextension/nsextensionattributes/supportedmediacategories.md).
 4. For each intent you support, select the appropriate Authentication requirement.
 
 Choose Restricted While Locked to specify that the intent requires an unlocked device. Some intents, such as those involving financial transactions, always require the user’s device to be unlocked. For those intents, Siri automatically asks the user to unlock the device, even if you leave the Authentication set to None. In watchOS, all intents require the device to be unlocked.
 
-> ❗ **Important**:  Unless your watchOS app has [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkrunsindependentlyofcompanionapp) enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension.
+> ❗ **Important**:  Unless your watchOS app has [`WKRunsIndependentlyOfCompanionApp`](../BundleResources/information-property-list/wkrunsindependentlyofcompanionapp.md) enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension.
 
 When an ambiguous user utterance resolves to multiple intents, SiriKit uses the order of the intents in the Supported Intents table to determine which intent to send to your app. Organize your list of intents by putting the most relevant ones at the top of the table. Prioritizing your intents is especially important when your Intents extension supports multiple domains with similar semantics. For example, an app that supports calling and messaging intents might choose to prioritize sending a message over initiating a call.
 
@@ -67,35 +68,36 @@ When installing your extension for the first time, Siri may not immediately reco
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Deleting Donated Shortcuts](deleting-donated-shortcuts.md)
+- [Deleting Donated Shortcuts](./deleting-donated-shortcuts.md)
   Remove your donations from Siri.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Improving interactions between Siri and your messaging app](improving-interactions-between-siri-and-your-messaging-app.md)
+- [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Confirming the Details of an Intent](confirming-the-details-of-an-intent.md)
+- [Confirming the Details of an Intent](./confirming-the-details-of-an-intent.md)
   Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
-- [Handling an Intent](handling-an-intent.md)
+- [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
+- [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
 
 

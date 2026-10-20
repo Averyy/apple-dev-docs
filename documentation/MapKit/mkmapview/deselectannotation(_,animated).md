@@ -1,7 +1,8 @@
 # deselectAnnotation(_:animated:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deselects the specified annotation and hides its callout view.
 
@@ -19,18 +20,23 @@ Deselects the specified annotation and hides its callout view.
 func deselectAnnotation(_ annotation: (any MKAnnotation)?, animated: Bool)
 ```
 
+```objc
+- (void) deselectAnnotation:(id<MKAnnotation>) annotation animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `annotation`: The annotation object to deselect.
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the map view animates the callout view offscreen.
+- `animated`: If [`true`](../../Swift/true.md), the map view animates the callout view offscreen.
 
 ## See Also
 
-- [var annotationVisibleRect: CGRect](mkmapview/annotationvisiblerect.md)
+### Managing annotation selections
+- [var annotationVisibleRect: CGRect](./annotationvisiblerect.md)
   The visible rectangle where the map is displaying annotation views.
-- [var selectedAnnotations: [any MKAnnotation]](mkmapview/selectedannotations.md)
+- [var selectedAnnotations: [any MKAnnotation]](./selectedannotations.md)
   The selected annotations.
-- [func selectAnnotation(any MKAnnotation, animated: Bool)](mkmapview/selectannotation(_:animated:).md)
+- [func selectAnnotation(any MKAnnotation, animated: Bool)](./selectannotation%28_,animated%29.md)
   Selects the specified annotation and displays a callout view for it.
 
 

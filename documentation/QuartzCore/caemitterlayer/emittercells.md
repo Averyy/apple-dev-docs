@@ -1,7 +1,8 @@
 # emitterCells
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array emitter cells attached to the layer.
 
@@ -19,13 +20,18 @@ The array emitter cells attached to the layer.
 var emitterCells: [CAEmitterCell]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<CAEmitterCell *> * emitterCells;
+```
+
 #### Discussion
 
 Each object in the array must be an instance of the `CAEmitterCell` class.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

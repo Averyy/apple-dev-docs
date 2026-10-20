@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decode all generic substitutions that were recorded for this invocation.
@@ -12,7 +13,7 @@ Decode all generic substitutions that were recorded for this invocation.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,9 +28,9 @@ Array of all generic substitutions necessary to execute this invocation target.
 
 #### Discussion
 
-The values retrieved from here must be in the same order as they were recorded by [`recordGenericSubstitution(_:)`](distributedtargetinvocationencoder/recordgenericsubstitution(_:).md).
+The values retrieved from here must be in the same order as they were recorded by [`recordGenericSubstitution(_:)`](../distributedtargetinvocationencoder/recordgenericsubstitution%28_%29.md).
 
-> **Note**: If decoding substitutions fails.
+> **Throws**: If decoding substitutions fails.
 
 
 ---

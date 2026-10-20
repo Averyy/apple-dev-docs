@@ -1,7 +1,8 @@
 # BEBrowserData
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of browsing data from a source browser app.
 
@@ -15,6 +16,10 @@ A representation of browsing data from a source browser app.
 class BEBrowserData
 ```
 
+```objc
+@interface BEBrowserData : NSObject
+```
+
 #### Overview
 
 This class describes the source of browsing data that transfers between browsers. It identifies the browser that data originates from by providing its bundle ID and localized display name.
@@ -22,46 +27,47 @@ This class describes the source of browsing data that transfers between browsers
 ## Topics
 
 ### Creating a representation of browser data
-- [init?(coder: NSCoder)](bebrowserdata/init(coder:).md)
+- [init?(coder: NSCoder)](./bebrowserdata/init%28coder%29.md)
   Initializes browser data from a decoder.
-- [init(sourceApplicationBundleIdentifier: String?, sourceApplicationLocalizedName: String?)](bebrowserdata/init(sourceapplicationbundleidentifier:sourceapplicationlocalizedname:).md)
+- [init(sourceApplicationBundleIdentifier: String?, sourceApplicationLocalizedName: String?)](./bebrowserdata/init%28sourceapplicationbundleidentifier,sourceapplicationlocalizedname%29.md)
   Initializes browser data with the source app’s identifier and display name.
 ### Identifying the source browser app
-- [var sourceApplicationBundleIdentifier: String?](bebrowserdata/sourceapplicationbundleidentifier.md)
+- [var sourceApplicationBundleIdentifier: String?](./bebrowserdata/sourceapplicationbundleidentifier.md)
   The source browser app’s bundle identifier.
-- [var sourceApplicationLocalizedName: String?](bebrowserdata/sourceapplicationlocalizedname.md)
+- [var sourceApplicationLocalizedName: String?](./bebrowserdata/sourceapplicationlocalizedname.md)
   The source browser app’s localized name.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [BEBrowserDataBookmark](bebrowserdatabookmark.md)
-- [BEBrowserDataExtension](bebrowserdataextension.md)
-- [BEBrowserDataHistoryVisit](bebrowserdatahistoryvisit.md)
-- [BEBrowserDataReadingListItem](bebrowserdatareadinglistitem.md)
+- [BEBrowserDataBookmark](./bebrowserdatabookmark.md)
+- [BEBrowserDataExtension](./bebrowserdataextension.md)
+- [BEBrowserDataHistoryVisit](./bebrowserdatahistoryvisit.md)
+- [BEBrowserDataReadingListItem](./bebrowserdatareadinglistitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class BEBrowserDataHistoryVisit](bebrowserdatahistoryvisit.md)
+### Browser data
+- [class BEBrowserDataHistoryVisit](./bebrowserdatahistoryvisit.md)
   A class that transfers page visit history between browsers.
-- [class BEBrowserDataBookmark](bebrowserdatabookmark.md)
+- [class BEBrowserDataBookmark](./bebrowserdatabookmark.md)
   A class that transfers bookmark information between browsers.
-- [class BEBrowserDataReadingListItem](bebrowserdatareadinglistitem.md)
+- [class BEBrowserDataReadingListItem](./bebrowserdatareadinglistitem.md)
   A class that transfers reading list data between browsers.
-- [class BEBrowserDataExtension](bebrowserdataextension.md)
+- [class BEBrowserDataExtension](./bebrowserdataextension.md)
   A class that transfers browser extension information between browsers.
 
 

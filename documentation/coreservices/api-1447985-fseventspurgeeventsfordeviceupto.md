@@ -1,7 +1,8 @@
 # FSEventsPurgeEventsForDeviceUpToEventId(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventsPurgeEventsForDeviceUpToEventId(_ dev: dev_t, _ eventId: FSEventStreamEventId) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean FSEventsPurgeEventsForDeviceUpToEventId(dev_t dev, FSEventStreamEventId eventId);
+```
+
+#### Return Value
 
 True if it succeeds, otherwise False if it fails.
 

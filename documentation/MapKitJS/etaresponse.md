@@ -1,7 +1,8 @@
 # EtaResponse
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 The estimated arrival times for a set of destinations.
 
@@ -10,28 +11,29 @@ The estimated arrival times for a set of destinations.
 
 ## Declaration
 
-```swift
+```
 interface EtaResponse
 ```
 
 ## Topics
 
 ### Estimated Arrival Time Responses
-- [origin](etaresponse/origin.md)
+- [origin](./etaresponse/origin.md)
   The coordinates that represent the starting point for estimated arrival time requests.
-- [etas](etaresponse/etas.md)
+- [etas](./etaresponse/etas.md)
   An array of estimated arrival times.
 ### Deprecated
-- [request](etaresponse/request.md)
+- [request](./etaresponse/request.md)
   The request object associated with the estimated time of arrival response.
 
 ## See Also
 
-- [eta(request)](directions/eta.md)
+### Getting estimated arrival times
+- [eta(request)](./directions/eta.md)
   Retrieves estimated arrival times to up to 10 destinations from a single starting point.
-- [interface EtaRequestOptions](etarequestoptions.md)
+- [interface EtaRequestOptions](./etarequestoptions.md)
   The options you may provide for requesting estimated arrival times.
-- [interface EtaResult](etaresult.md)
+- [interface EtaResult](./etaresult.md)
   The mode of transportation, distance, and travel time estimates for a single destination.
 
 

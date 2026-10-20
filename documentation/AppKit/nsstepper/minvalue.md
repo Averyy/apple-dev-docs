@@ -1,17 +1,22 @@
 # minValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stepper’s minimum value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var minValue: Double { get set }
+```
+
+```objc
+@property double minValue;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The default is 0.
 
 ## See Also
 
-- [var maxValue: Double](nsstepper/maxvalue.md)
+### Specifying value range
+- [var maxValue: Double](./maxvalue.md)
   The stepper’s maximum value.
-- [var increment: Double](nsstepper/increment.md)
+- [var increment: Double](./increment.md)
   The amount by which the receiver changes with each increment or decrement.
 
 

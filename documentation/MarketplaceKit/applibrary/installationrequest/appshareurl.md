@@ -1,7 +1,8 @@
 # appShareURL
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,9 +16,10 @@ var appShareURL: URL?
 
 ## See Also
 
-- [var account: String](applibrary/installationrequest/account.md)
-- [var alternativeDistributionPackageURL: URL](applibrary/installationrequest/alternativedistributionpackageurl.md)
-- [var installVerificationToken: String](applibrary/installationrequest/installverificationtoken.md)
+### Inspecting app installation information
+- [var account: String](./account.md)
+- [var alternativeDistributionPackageURL: URL](./alternativedistributionpackageurl.md)
+- [var installVerificationToken: String](./installverificationtoken.md)
 
 
 ---

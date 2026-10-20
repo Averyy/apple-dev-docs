@@ -1,7 +1,8 @@
 # size
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the rectangle.
 
@@ -16,7 +17,8 @@ var size: Size3D
 
 ## See Also
 
-- [var pose: Pose3D](tablevisualstate/orientedrect3d/pose.md)
+### Getting 3D rectangle properties
+- [var pose: Pose3D](./pose.md)
   The pose of the rectangle.
 
 

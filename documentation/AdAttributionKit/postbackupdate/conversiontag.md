@@ -1,7 +1,8 @@
 # conversionTag
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,8 +17,8 @@ let conversionTag: String?
 
 ## Mentions
 
-- [Identifying conversion values with conversion tags](conversion-tags.md)
-- [Creating postbacks in developer settings](creating-postbacks-in-developer-settings.md)
+- [Identifying conversion values with conversion tags](../conversion-tags.md)
+- [Creating postbacks in developer settings](../creating-postbacks-in-developer-settings.md)
 
 
 ---

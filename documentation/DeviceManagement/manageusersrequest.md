@@ -1,7 +1,8 @@
 # ManageUsersRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request for user management.
 
@@ -10,18 +11,18 @@ The request for user management.
 
 ## Declaration
 
-```swift
+```
 object ManageUsersRequest
 ```
 
 ## Mentions
 
-- [Managing users](managing-users.md)
+- [Managing users](./managing-users.md)
 
 ## Topics
 
 ### Objects and Data Types
-- [object RequestUser](requestuser.md)
+- [object RequestUser](./requestuser.md)
   The requested user in the organization.
 
 ## Properties
@@ -30,9 +31,10 @@ object ManageUsersRequest
 
 ## See Also
 
-- [object EventResponse](eventresponse.md)
+### Request and Response
+- [object EventResponse](./eventresponse.md)
   The response that contains the event identifier.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 

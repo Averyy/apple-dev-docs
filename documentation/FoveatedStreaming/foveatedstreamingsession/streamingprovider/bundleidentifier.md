@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the extension.
 

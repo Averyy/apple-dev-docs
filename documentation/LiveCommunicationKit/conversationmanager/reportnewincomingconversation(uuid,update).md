@@ -1,7 +1,8 @@
 # reportNewIncomingConversation(uuid:update:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the system that there’s a new incoming conversation, and the device should begin to ring and present the incoming Conversation UI.
 
@@ -20,16 +21,17 @@ final func reportNewIncomingConversation(uuid: UUID, update: Conversation.Update
 
 ## Parameters
 
-- `uuid`: The [`UUID`](https://developer.apple.com/documentation/foundation/uuid) used to identify the created conversation.
+- `uuid`: The [`UUID`](../../Foundation/uuid.md) used to identify the created conversation.
 - `update`: Optional fields to configure the initial state of the conversation.
 
 ## See Also
 
-- [func pendingConversationActions(of: ConversationAction.Type, for: Conversation) -> [ConversationAction]](conversationmanager/pendingconversationactions(of:for:).md)
+### Observing conversations
+- [func pendingConversationActions(of: ConversationAction.Type, for: Conversation) -> [ConversationAction]](./pendingconversationactions%28of,for%29.md)
   Queries a conversation for pending actions of a specified type.
-- [func reportConversationEvent(Conversation.Event, for: Conversation)](conversationmanager/reportconversationevent(_:for:).md)
+- [func reportConversationEvent(Conversation.Event, for: Conversation)](./reportconversationevent%28_,for%29.md)
   Informs the system that an event has occurred and that it needs to update the conversation if necessary.
-- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any]) async throws](conversationmanager/reportnewincomingvoippushpayload(_:).md)
+- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any]) async throws](./reportnewincomingvoippushpayload%28_%29.md)
   Reports a new incoming conversation after your notification service extension decrypts a VoIP request.
 
 

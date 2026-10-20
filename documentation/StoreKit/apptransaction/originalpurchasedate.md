@@ -1,7 +1,8 @@
 # originalPurchaseDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the customer originally purchased the app from the App Store.
 
@@ -28,7 +29,8 @@ In the sandbox testing environment, the original purchase date is always 2013-08
 
 ## See Also
 
-- [let preorderDate: Date?](apptransaction/preorderdate.md)
+### Getting purchase dates
+- [let preorderDate: Date?](./preorderdate.md)
   The date the customer placed an order for the app before it’s available in the App Store.
 
 

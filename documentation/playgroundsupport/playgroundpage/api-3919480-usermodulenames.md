@@ -1,7 +1,8 @@
 # userModuleNames
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Xcode 13.2+

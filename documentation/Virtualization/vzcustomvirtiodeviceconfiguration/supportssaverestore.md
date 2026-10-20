@@ -1,7 +1,8 @@
 # supportsSaveRestore
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var supportsSaveRestore: Bool { get set }
+```
+
+```objc
+@property (readwrite) BOOL supportsSaveRestore;
 ```
 
 #### Discussion

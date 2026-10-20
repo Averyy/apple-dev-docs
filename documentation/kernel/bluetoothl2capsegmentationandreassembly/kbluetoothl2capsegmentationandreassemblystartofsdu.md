@@ -1,14 +1,15 @@
 # kBluetoothL2CAPSegmentationAndReassemblyStartOfSDU
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPSegmentationAndReassemblyStartOfSDU = 0x01
 ```
 

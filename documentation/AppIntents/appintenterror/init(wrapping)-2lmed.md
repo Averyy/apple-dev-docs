@@ -1,7 +1,8 @@
 # init(wrapping:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an error from a custom app intent convertible value.
 
@@ -22,9 +23,9 @@ init(wrapping convertible: some CustomAppIntentErrorConvertible)
 
 #### Discussion
 
-The system calls this initializer for errors thrown from [`perform()`](appintent/perform().md) that conform to [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
+The system calls this initializer for errors thrown from [`perform()`](../appintent/perform%28%29.md) that conform to [`CustomAppIntentErrorConvertible`](../customappintenterrorconvertible.md).
 
-If the error conforms to both [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
+If the error conforms to both [`CustomLocalizedStringResourceConvertible`](../../Foundation/customlocalizedstringresourceconvertible.md) and [`CustomAppIntentErrorConvertible`](../customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](../customappintenterrorconvertible.md).
 
 ## Parameters
 

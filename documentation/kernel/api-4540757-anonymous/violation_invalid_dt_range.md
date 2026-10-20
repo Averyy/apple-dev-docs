@@ -1,14 +1,15 @@
 # VIOLATION_INVALID_DT_RANGE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 VIOLATION_INVALID_DT_RANGE
 ```
 

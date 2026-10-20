@@ -1,7 +1,8 @@
 # layerInstructions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Instructions that specify how to layer and compose video frames from source tracks.
 
@@ -19,6 +20,10 @@ Instructions that specify how to layer and compose video frames from source trac
 var layerInstructions: [AVVideoCompositionLayerInstruction] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<AVVideoCompositionLayerInstruction *> * layerInstructions;
+```
+
 #### Discussion
 
 Tracks are layered in the composition according to the top-to-bottom order of the `layerInstructions` array; the track with `trackID` of the first instruction in the array will be layered on top, with the track with the `trackID` of the second instruction immediately underneath, and so on.
@@ -27,11 +32,12 @@ If the property value is `nil`, the output is a fill of the background color.
 
 ## See Also
 
-- [var backgroundColor: CGColor?](avvideocompositioninstruction-swift.class/backgroundcolor.md)
+### Inspecting the instruction
+- [var backgroundColor: CGColor?](./backgroundcolor.md)
   The background color of the composition.
-- [var timeRange: CMTimeRange](avvideocompositioninstruction-swift.class/timerange.md)
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range to which the instruction applies.
-- [var enablePostProcessing: Bool](avvideocompositioninstruction-swift.class/enablepostprocessing.md)
+- [var enablePostProcessing: Bool](./enablepostprocessing.md)
   A Boolean value that indicates whether the instruction requires post processing.
 
 

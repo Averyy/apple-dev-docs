@@ -1,7 +1,8 @@
 # dismiss()
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the extension and marks it for termination.
 
@@ -16,23 +17,28 @@ Dismisses the extension and marks it for termination.
 func dismiss()
 ```
 
+```objc
+- (void) dismiss;
+```
+
 #### Discussion
 
 Call this method to dismiss the extension. The system displays the keyboard if there is any content in the Messages app’s input field. If the input field is empty, the system dismisses the keyboard entirely.
 
-This method also marks the extension as eligible for termination, causing the system to call the view controller’s [`willResignActive(with:)`](msmessagesappviewcontroller/willresignactive(with:).md) and [`didResignActive(with:)`](msmessagesappviewcontroller/didresignactive(with:).md) methods.
+This method also marks the extension as eligible for termination, causing the system to call the view controller’s [`willResignActive(with:)`](./willresignactive%28with%29.md) and [`didResignActive(with:)`](./didresignactive%28with%29.md) methods.
 
 ## See Also
 
-- [var activeConversation: MSConversation?](msmessagesappviewcontroller/activeconversation.md)
+### Managing the Extension’s State
+- [var activeConversation: MSConversation?](./activeconversation.md)
   The conversation currently displayed in the transcript.
-- [func willBecomeActive(with: MSConversation)](msmessagesappviewcontroller/willbecomeactive(with:).md)
+- [func willBecomeActive(with: MSConversation)](./willbecomeactive%28with%29.md)
   Invoked just before the Messages extension becomes active.
-- [func didBecomeActive(with: MSConversation)](msmessagesappviewcontroller/didbecomeactive(with:).md)
+- [func didBecomeActive(with: MSConversation)](./didbecomeactive%28with%29.md)
   Invoked after the Messages extension becomes active.
-- [func willResignActive(with: MSConversation)](msmessagesappviewcontroller/willresignactive(with:).md)
+- [func willResignActive(with: MSConversation)](./willresignactive%28with%29.md)
   Invoked just before the message resigns its active status.
-- [func didResignActive(with: MSConversation)](msmessagesappviewcontroller/didresignactive(with:).md)
+- [func didResignActive(with: MSConversation)](./didresignactive%28with%29.md)
   Invoked after the message resigns its active status.
 
 

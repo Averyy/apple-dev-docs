@@ -1,14 +1,17 @@
 # sensor
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The particular sensor that this object reads.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The particular sensor that this object reads.
 var sensor: SRSensor { get }
 ```
 
+```objc
+@property (copy, readonly) SRSensor sensor;
+```
+
 #### Discussion
 
-The framework sets this property to the sensor you pass into [`init(sensor:)`](srsensorreader/init(sensor:).md).
+The framework sets this property to the sensor you pass into [`init(sensor:)`](./init%28sensor%29.md).
 
 ## See Also
 
-- [init(sensor: SRSensor)](srsensorreader/init(sensor:).md)
+### Creating a sensor reader
+- [init(sensor: SRSensor)](./init%28sensor%29.md)
   Initializes a new sensor reader object.
-- [struct SRSensor](srsensor.md)
+- [struct SRSensor](../srsensor.md)
   The sensors an app can read.
 
 

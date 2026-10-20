@@ -1,19 +1,24 @@
 # show(from:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays an action sheet that originates from the specified bar button item.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 8.3
+- iPadOS 3.2+ - Deprecated in 8.3
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
 ```swift
 func show(from item: UIBarButtonItem, animated: Bool)
+```
+
+```objc
+- (void) showFromBarButtonItem:(UIBarButtonItem *) item animated:(BOOL) animated;
 ```
 
 #### Discussion
@@ -23,17 +28,18 @@ On iPad, this method presents the action sheet in a popover and adds the toolbar
 ## Parameters
 
 - `item`: The bar button item from which the action sheet originates.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the presentation of the action sheet or [`false`](https://developer.apple.com/documentation/swift/false) to present it immediately without any animation effects.
+- `animated`: Specify [`true`](../../Swift/true.md) to animate the presentation of the action sheet or [`false`](../../Swift/false.md) to present it immediately without any animation effects.
 
 ## See Also
 
-- [func show(from: UITabBar)](uiactionsheet/show(from:)-9i3tw.md)
+### Presenting the action sheet
+- [func show(from: UITabBar)](./show%28from%29-9i3tw.md)
   Displays an action sheet that originates from the specified tab bar.
-- [func show(from: UIToolbar)](uiactionsheet/show(from:)-1p4ap.md)
+- [func show(from: UIToolbar)](./show%28from%29-1p4ap.md)
   Displays an action sheet that originates from the specified toolbar.
-- [func show(in: UIView)](uiactionsheet/show(in:).md)
+- [func show(in: UIView)](./show%28in%29.md)
   Displays an action sheet that originates from the specified view.
-- [func show(from: CGRect, in: UIView, animated: Bool)](uiactionsheet/show(from:in:animated:).md)
+- [func show(from: CGRect, in: UIView, animated: Bool)](./show%28from,in,animated%29.md)
   Displays an action sheet that originates from the specified view.
 
 

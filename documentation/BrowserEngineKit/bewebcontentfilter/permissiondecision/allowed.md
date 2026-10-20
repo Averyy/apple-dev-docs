@@ -1,7 +1,8 @@
 # BEWebContentFilter.PermissionDecision.allowed
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -11,6 +12,10 @@
 
 ```swift
 case allowed
+```
+
+```c
+BEWebContentFilterPermissionDecisionAllowed
 ```
 
 

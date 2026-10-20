@@ -1,7 +1,8 @@
 # NetService.ErrorCode.missingRequiredConfigurationError
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Missing required configuration for local network access.
 
@@ -17,6 +18,10 @@ Missing required configuration for local network access.
 
 ```swift
 case missingRequiredConfigurationError
+```
+
+```c
+NSNetServicesMissingRequiredConfigurationError
 ```
 
 #### Discussion

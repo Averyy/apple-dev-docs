@@ -1,7 +1,8 @@
 # substringRange
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range information for the transcription segment’s substring, relative to the overall transcription.
 
@@ -18,15 +19,20 @@ The range information for the transcription segment’s substring, relative to t
 var substringRange: NSRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSRange substringRange;
+```
+
 #### Discussion
 
-Use the range information to find the position of the segment within the [`formattedString`](sftranscription/formattedstring.md) property of the [`SFTranscription`](sftranscription.md) object containing this segment.
+Use the range information to find the position of the segment within the [`formattedString`](../sftranscription/formattedstring.md) property of the [`SFTranscription`](../sftranscription.md) object containing this segment.
 
 ## See Also
 
-- [var substring: String](sftranscriptionsegment/substring.md)
+### Transcribing the segment
+- [var substring: String](./substring.md)
   The string representation of the utterance in the transcription segment.
-- [var alternativeSubstrings: [String]](sftranscriptionsegment/alternativesubstrings.md)
+- [var alternativeSubstrings: [String]](./alternativesubstrings.md)
   An array of alternate interpretations of the utterance in the transcription segment.
 
 

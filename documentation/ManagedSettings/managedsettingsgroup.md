@@ -1,7 +1,8 @@
 # ManagedSettingsGroup
 
 **Framework**: Managed Settings  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A group of settings to manage.
 
@@ -19,18 +20,18 @@ protocol ManagedSettingsGroup
 ## Relationships
 
 ### Conforming Types
-- [AccountSettings](accountsettings.md)
-- [AppStoreSettings](appstoresettings.md)
-- [ApplicationSettings](applicationsettings.md)
-- [CellularSettings](cellularsettings.md)
-- [DateAndTimeSettings](dateandtimesettings.md)
-- [GameCenterSettings](gamecentersettings.md)
-- [MediaSettings](mediasettings.md)
-- [PasscodeSettings](passcodesettings.md)
-- [SafariSettings](safarisettings.md)
-- [ShieldSettings](shieldsettings.md)
-- [SiriSettings](sirisettings.md)
-- [WebContentSettings](webcontentsettings.md)
+- [AccountSettings](./accountsettings.md)
+- [AppStoreSettings](./appstoresettings.md)
+- [ApplicationSettings](./applicationsettings.md)
+- [CellularSettings](./cellularsettings.md)
+- [DateAndTimeSettings](./dateandtimesettings.md)
+- [GameCenterSettings](./gamecentersettings.md)
+- [MediaSettings](./mediasettings.md)
+- [PasscodeSettings](./passcodesettings.md)
+- [SafariSettings](./safarisettings.md)
+- [ShieldSettings](./shieldsettings.md)
+- [SiriSettings](./sirisettings.md)
+- [WebContentSettings](./webcontentsettings.md)
 
 
 ---

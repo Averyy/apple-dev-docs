@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct fvmfile_command {
     ...
 };
@@ -17,10 +17,10 @@ struct fvmfile_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](fvmfile_command/1525780-cmd.md)
-- [cmdsize](fvmfile_command/1525562-cmdsize.md)
-- [header_addr](fvmfile_command/1525800-header_addr.md)
-- [name](fvmfile_command/1525601-name.md)
+- [cmd](./fvmfile_command/api-1525780-cmd.md)
+- [cmdsize](./fvmfile_command/api-1525562-cmdsize.md)
+- [header_addr](./fvmfile_command/api-1525800-header_addr.md)
+- [name](./fvmfile_command/api-1525601-name.md)
 
 
 ---

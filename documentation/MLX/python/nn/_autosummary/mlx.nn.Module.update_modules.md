@@ -6,41 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.update_modules
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Module.update_modules.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Module.update_modules
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Module.update_modules
-
-**Module.update_modules(*modules: dict*, *strict: bool = True*) → [Module](../module.html#mlx.nn.Module)**
-: Replace the child modules of this [Module](../module.html#mlx.nn.Module) instance with the
+**Module.update_modules(*modules: dict*, *strict: bool = True*) → [Module](../module.md#mlx.nn.Module)**
+: Replace the child modules of this [Module](../module.md#mlx.nn.Module) instance with the
 provided ones in the dict of dicts and lists.
-It is the equivalent of [Module.update()](mlx.nn.Module.update.html#mlx.nn.Module.update) but for modules instead
+It is the equivalent of [Module.update()](mlx.nn.Module.update.md#mlx.nn.Module.update) but for modules instead
 of parameters and allows us to flexibly edit complex architectures by
 programmatically swapping layers.
 The passed in parameters dictionary need not be a full dictionary
-similar to [modules()](mlx.nn.Module.modules.html#mlx.nn.Module.modules). Only the provided locations will be
+similar to [modules()](mlx.nn.Module.modules.md#mlx.nn.Module.modules). Only the provided locations will be
 updated.
 
 Parameters:
@@ -52,5 +25,3 @@ subset of the child modules of this instance. Default: `True`.
 
 Returns:
 The module instance after updating the submodules.
-
-** Contents

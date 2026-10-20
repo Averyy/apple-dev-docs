@@ -1,7 +1,8 @@
 # custom(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a content brightness with a custom value.
 
@@ -20,13 +21,14 @@ static func custom(_ value: Double) -> ImmersiveContentBrightness
 
 ## See Also
 
-- [static let automatic: ImmersiveContentBrightness](immersivecontentbrightness/automatic.md)
+### Getting brightness levels
+- [static let automatic: ImmersiveContentBrightness](./automatic.md)
   The default content brightness.
-- [static let dark: ImmersiveContentBrightness](immersivecontentbrightness/dark.md)
+- [static let dark: ImmersiveContentBrightness](./dark.md)
   A dark content brightness.
-- [static let dim: ImmersiveContentBrightness](immersivecontentbrightness/dim.md)
+- [static let dim: ImmersiveContentBrightness](./dim.md)
   A dimmed content brightness.
-- [static let bright: ImmersiveContentBrightness](immersivecontentbrightness/bright.md)
+- [static let bright: ImmersiveContentBrightness](./bright.md)
   A bright content brightness.
 
 

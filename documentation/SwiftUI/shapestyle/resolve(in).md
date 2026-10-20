@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Evaluate to a resolved shape style given the current `environment`.
@@ -21,9 +22,15 @@ Evaluate to a resolved shape style given the current `environment`.
 func resolve(in environment: EnvironmentValues) -> Self.Resolved
 ```
 
+## Default Implementations
+
+### ShapeStyle Implementations
+- [func resolve(in: EnvironmentValues) -> Never](./resolve%28in%29-6feyg.md)
+
 ## See Also
 
-- [associatedtype Resolved : ShapeStyle = Never](shapestyle/resolved.md)
+### Resolving a shape style in an environment
+- [associatedtype Resolved : ShapeStyle = Never](./resolved.md)
   The type of shape style this will resolve to.
 
 

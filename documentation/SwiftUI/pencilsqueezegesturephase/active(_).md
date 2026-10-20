@@ -1,7 +1,8 @@
 # PencilSqueezeGesturePhase.active(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user started squeezing their Apple Pencil.
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetSecuritySystemState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the target security system state.
 
@@ -19,29 +20,33 @@ Possible values for the target security system state.
 enum HMCharacteristicValueTargetSecuritySystemState
 ```
 
+```c
+enum HMCharacteristicValueTargetSecuritySystemState : NSInteger;
+```
+
 ## Topics
 
 ### Security System States
-- [HMCharacteristicValueTargetSecuritySystemState.stayArm](hmcharacteristicvaluetargetsecuritysystemstate/stayarm.md)
+- [HMCharacteristicValueTargetSecuritySystemState.stayArm](./hmcharacteristicvaluetargetsecuritysystemstate/stayarm.md)
   The home is occupied and residents are active.
-- [HMCharacteristicValueTargetSecuritySystemState.awayArm](hmcharacteristicvaluetargetsecuritysystemstate/awayarm.md)
+- [HMCharacteristicValueTargetSecuritySystemState.awayArm](./hmcharacteristicvaluetargetsecuritysystemstate/awayarm.md)
   The home is unoccupied.
-- [HMCharacteristicValueTargetSecuritySystemState.nightArm](hmcharacteristicvaluetargetsecuritysystemstate/nightarm.md)
+- [HMCharacteristicValueTargetSecuritySystemState.nightArm](./hmcharacteristicvaluetargetsecuritysystemstate/nightarm.md)
   The home is occupied and residents are sleeping.
-- [HMCharacteristicValueTargetSecuritySystemState.disarm](hmcharacteristicvaluetargetsecuritysystemstate/disarm.md)
+- [HMCharacteristicValueTargetSecuritySystemState.disarm](./hmcharacteristicvaluetargetsecuritysystemstate/disarm.md)
   The security system is disarmed.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetsecuritysystemstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetsecuritysystemstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

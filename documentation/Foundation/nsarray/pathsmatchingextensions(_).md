@@ -1,7 +1,8 @@
 # pathsMatchingExtensions(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing all the pathname elements in the receiving array that have filename extensions from a given array.
 
@@ -18,6 +19,10 @@ Returns an array containing all the pathname elements in the receiving array tha
 
 ```swift
 func pathsMatchingExtensions(_ filterTypes: [String]) -> [String]
+```
+
+```objc
+- (NSArray<NSString *> *) pathsMatchingExtensions:(NSArray<NSString *> *) filterTypes;
 ```
 
 #### Return Value

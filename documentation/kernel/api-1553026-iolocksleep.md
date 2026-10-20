@@ -1,7 +1,8 @@
 # IOLockSleep
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sleep with mutex unlock and relock
 
@@ -10,11 +11,11 @@ Sleep with mutex unlock and relock
 
 ## Declaration
 
-```swift
+```c
 int IOLockSleep(IOLock *lock, void *event, UInt32 interType);
 ```
 
-#### Return_value
+#### Return Value
 
 The wait-result value indicating how the thread was awakened.
 
@@ -30,23 +31,24 @@ Prepare to sleep,unlock the mutex, and re-acquire it on wakeup. Results are unde
 
 ## See Also
 
-- [IOLockAlloc](1553021-iolockalloc.md)
+### Mutexes
+- [IOLockAlloc](./api-1553021-iolockalloc.md)
   Allocates and initializes a mutex.
-- [IOLockInitWithState](1553028-iolockinitwithstate.md)
-- [IOLockFree](1553034-iolockfree.md)
+- [IOLockInitWithState](./api-1553028-iolockinitwithstate.md)
+- [IOLockFree](./api-1553034-iolockfree.md)
   Frees a mutex.
-- [IOTryLock](1553012-iotrylock.md)
-- [IOTakeLock](1553007-iotakelock.md)
-- [IOLockLock](1553000-iolocklock.md)
+- [IOTryLock](./api-1553012-iotrylock.md)
+- [IOTakeLock](./api-1553007-iotakelock.md)
+- [IOLockLock](./api-1553000-iolocklock.md)
   Lock a mutex.
-- [IOUnlock](1552994-iounlock.md)
-- [IOLockTryLock](1553018-iolocktrylock.md)
+- [IOUnlock](./api-1552994-iounlock.md)
+- [IOLockTryLock](./api-1553018-iolocktrylock.md)
   Attempt to lock a mutex.
-- [IOLockUnlock](1553006-iolockunlock.md)
+- [IOLockUnlock](./api-1553006-iolockunlock.md)
   Unlock a mutex.
-- [IOLockWakeup](1553016-iolockwakeup.md)
-- [IOLockSleepDeadline](1553030-iolocksleepdeadline.md)
-- [IOLockGetMachLock](1553008-iolockgetmachlock.md)
+- [IOLockWakeup](./api-1553016-iolockwakeup.md)
+- [IOLockSleepDeadline](./api-1553030-iolocksleepdeadline.md)
+- [IOLockGetMachLock](./api-1553008-iolockgetmachlock.md)
   Accessor to a Mach mutex.
 
 

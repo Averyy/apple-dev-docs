@@ -1,7 +1,8 @@
 # PortalComponent.BoundaryMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A combination of clipping and crossing behaviors to apply to a portal boundary.
 
@@ -21,27 +22,27 @@ enum BoundaryMode
 
 #### Overview
 
-Pass this value to the factory entry points to configure [`clippingMode`](portalcomponent/clippingmode-swift.property.md) and [`crossingMode`](portalcomponent/crossingmode-swift.property.md) together.
+Pass this value to the factory entry points to configure [`clippingMode`](./clippingmode-swift.property.md) and [`crossingMode`](./crossingmode-swift.property.md) together.
 
 ## Topics
 
 ### Enumeration Cases
-- [PortalComponent.BoundaryMode.clippingAndCrossing](portalcomponent/boundarymode/clippingandcrossing.md)
-  The portal clips its content to the boundary, and entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the boundary.
-- [PortalComponent.BoundaryMode.clippingOnly](portalcomponent/boundarymode/clippingonly.md)
+- [PortalComponent.BoundaryMode.clippingAndCrossing](./boundarymode/clippingandcrossing.md)
+  The portal clips its content to the boundary, and entities with [`PortalCrossingComponent`](../portalcrossingcomponent.md) cross the boundary.
+- [PortalComponent.BoundaryMode.clippingOnly](./boundarymode/clippingonly.md)
   The portal clips its content to the boundary.
-- [PortalComponent.BoundaryMode.crossingOnly](portalcomponent/boundarymode/crossingonly.md)
-  Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the boundary.
-- [PortalComponent.BoundaryMode.none](portalcomponent/boundarymode/none.md)
+- [PortalComponent.BoundaryMode.crossingOnly](./boundarymode/crossingonly.md)
+  Entities with [`PortalCrossingComponent`](../portalcrossingcomponent.md) cross the boundary.
+- [PortalComponent.BoundaryMode.none](./boundarymode/none.md)
   The portal renders without clipping or crossing.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

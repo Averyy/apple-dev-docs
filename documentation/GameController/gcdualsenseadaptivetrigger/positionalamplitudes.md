@@ -1,7 +1,8 @@
 # GCDualSenseAdaptiveTrigger.PositionalAmplitudes
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The amplitudes for multiple positions on a trigger.
 
@@ -19,38 +20,43 @@ The amplitudes for multiple positions on a trigger.
 struct PositionalAmplitudes
 ```
 
+```c
+typedef struct { ... } GCDualSenseAdaptiveTriggerPositionalAmplitudes;
+```
+
 ## Topics
 
 ### Creating multiple amplitudes
-- [init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float))](gcdualsenseadaptivetrigger/positionalamplitudes/init(values:).md)
+- [init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float))](./positionalamplitudes/init%28values%29.md)
   Creates a positional amplitudes structure with the specified amplitude values.
-- [init()](gcdualsenseadaptivetrigger/positionalamplitudes/init.md)
+- [init()](./positionalamplitudes/init%28%29.md)
   Creates an empty positional amplitudes structure.
 ### Accessing multiple amplitudes
-- [var values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float)](gcdualsenseadaptivetrigger/positionalamplitudes/values.md)
+- [var values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float)](./positionalamplitudes/values.md)
   The amplitude values for possible trigger positions.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [func setModeFeedbackWithStartPosition(Float, resistiveStrength: Float)](gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition(_:resistivestrength:).md)
+### Configuring the trigger
+- [func setModeFeedbackWithStartPosition(Float, resistiveStrength: Float)](./setmodefeedbackwithstartposition%28_,resistivestrength%29.md)
   Sets the mode to provide feedback when the user depresses the trigger at the start position or at a greater value.
-- [GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths](gcdualsenseadaptivetrigger/positionalresistivestrengths.md)
+- [GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths](./positionalresistivestrengths.md)
   The resistive strengths for multiple positions on a trigger.
-- [func setModeFeedback(resistiveStrengths: GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths)](gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths:).md)
+- [func setModeFeedback(resistiveStrengths: GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths)](./setmodefeedback%28resistivestrengths%29.md)
   Sets the mode to provide feedback with the specified strengths for each possible trigger position.
-- [func setModeWeaponWithStartPosition(Float, endPosition: Float, resistiveStrength: Float)](gcdualsenseadaptivetrigger/setmodeweaponwithstartposition(_:endposition:resistivestrength:).md)
+- [func setModeWeaponWithStartPosition(Float, endPosition: Float, resistiveStrength: Float)](./setmodeweaponwithstartposition%28_,endposition,resistivestrength%29.md)
   Sets the mode to provide feedback when the user depresses the trigger between the start and the end positions.
-- [func setModeVibrationWithStartPosition(Float, amplitude: Float, frequency: Float)](gcdualsenseadaptivetrigger/setmodevibrationwithstartposition(_:amplitude:frequency:).md)
+- [func setModeVibrationWithStartPosition(Float, amplitude: Float, frequency: Float)](./setmodevibrationwithstartposition%28_,amplitude,frequency%29.md)
   Sets the mode to vibrate when the user depresses the trigger at the start position or at a greater value.
-- [func setModeVibration(amplitudes: GCDualSenseAdaptiveTrigger.PositionalAmplitudes, frequency: Float)](gcdualsenseadaptivetrigger/setmodevibration(amplitudes:frequency:).md)
+- [func setModeVibration(amplitudes: GCDualSenseAdaptiveTrigger.PositionalAmplitudes, frequency: Float)](./setmodevibration%28amplitudes,frequency%29.md)
   Sets the mode to vibrate with the specified amplitudes for each possible trigger position.
-- [func setModeSlopeFeedback(startPosition: Float, endPosition: Float, startStrength: Float, endStrength: Float)](gcdualsenseadaptivetrigger/setmodeslopefeedback(startposition:endposition:startstrength:endstrength:).md)
+- [func setModeSlopeFeedback(startPosition: Float, endPosition: Float, startStrength: Float, endStrength: Float)](./setmodeslopefeedback%28startposition,endposition,startstrength,endstrength%29.md)
   Sets the mode to provide feedback when the user tilts the trigger between the start and the end positions.
 
 

@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.plane
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from a 2D plane that aligns with the x and z axes.
 

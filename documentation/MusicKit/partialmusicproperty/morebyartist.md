@@ -1,7 +1,8 @@
 # moreByArtist
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier of the association property that returns a collection of additional music videos by the artist.
 
@@ -19,6 +20,8 @@ An identifier of the association property that returns a collection of additiona
 ```swift
 static let moreByArtist: MusicRelationshipProperty<MusicVideo, MusicVideo>
 ```
+
+Available when `Root` is `MusicVideo`.
 
 
 ---

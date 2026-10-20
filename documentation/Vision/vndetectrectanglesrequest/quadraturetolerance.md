@@ -1,7 +1,8 @@
 # quadratureTolerance
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A float specifying the number of degrees a rectangle corner angle can deviate from 90°.
 
@@ -19,27 +20,32 @@ A float specifying the number of degrees a rectangle corner angle can deviate fr
 var quadratureTolerance: VNDegrees { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) VNDegrees quadratureTolerance;
+```
+
 #### Discussion
 
 The tolerance value should range from `0` to `45`, inclusive. The default tolerance is `30`.
 
 ## See Also
 
-- [var minimumAspectRatio: VNAspectRatio](vndetectrectanglesrequest/minimumaspectratio.md)
+### Configuring Detection
+- [var minimumAspectRatio: VNAspectRatio](./minimumaspectratio.md)
   A `float` specifying the minimum aspect ratio of the rectangle to detect, defined as the shorter dimension over the longer dimension.
-- [var maximumAspectRatio: VNAspectRatio](vndetectrectanglesrequest/maximumaspectratio.md)
+- [var maximumAspectRatio: VNAspectRatio](./maximumaspectratio.md)
   A `float` specifying the maximum aspect ratio of the rectangle to detect, defined as the shorter dimension over the longer dimension.
-- [typealias VNAspectRatio](vnaspectratio.md)
+- [typealias VNAspectRatio](../vnaspectratio.md)
   A type alias for expressing rectangle aspect ratios in Vision.
-- [typealias VNDegrees](vndegrees.md)
+- [typealias VNDegrees](../vndegrees.md)
   A typealias for expressing tolerance angles in Vision.
-- [var minimumSize: Float](vndetectrectanglesrequest/minimumsize.md)
+- [var minimumSize: Float](./minimumsize.md)
   The minimum size of a rectangle to detect, as a proportion of the smallest dimension.
-- [var minimumConfidence: VNConfidence](vndetectrectanglesrequest/minimumconfidence.md)
+- [var minimumConfidence: VNConfidence](./minimumconfidence.md)
   A value specifying the minimum acceptable confidence level.
-- [typealias VNConfidence](vnconfidence.md)
+- [typealias VNConfidence](../vnconfidence.md)
   A type alias for the confidence value of an observation.
-- [var maximumObservations: Int](vndetectrectanglesrequest/maximumobservations.md)
+- [var maximumObservations: Int](./maximumobservations.md)
   An integer specifying the maximum number of rectangles Vision returns.
 
 

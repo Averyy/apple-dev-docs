@@ -1,7 +1,8 @@
 # canonicalizedName(from:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Transforms a string to be a valid directory name.
 
@@ -14,6 +15,10 @@ Transforms a string to be a valid directory name.
 class func canonicalizedName(from name: String) -> String?
 ```
 
+```objc
++ (NSString *) canonicalizedNameFromName:(NSString *) name;
+```
+
 #### Return Value
 
 Returns a String with the canonicalized name, or `nil` if there was an error.
@@ -24,7 +29,8 @@ Returns a String with the canonicalized name, or `nil` if there was an error.
 
 ## See Also
 
-- [class func validateName(String) throws](vzmultipledirectoryshare/validatename(_:).md)
+### Directory name utility methods
+- [class func validateName(String) throws](./validatename%28_%29.md)
   Check if a name is a valid directory name.
 
 

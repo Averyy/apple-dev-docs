@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a dictionary that customizes the appearance of strings.
@@ -16,6 +17,10 @@ Provides a dictionary that customizes the appearance of strings.
 
 ```swift
 func textStyling(at position: UITextPosition, in direction: UITextStorageDirection) -> [NSAttributedString.Key : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) textStylingAtPosition:(UITextPosition *) position inDirection:(UITextStorageDirection) direction;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout session’s current state.
 
@@ -9,7 +10,7 @@ The workout session’s current state.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,19 +20,24 @@ The workout session’s current state.
 var state: HKWorkoutSessionState { get }
 ```
 
+```objc
+@property (readonly) HKWorkoutSessionState state;
+```
+
 #### Discussion
 
-For a list of possible session states, see [`HKWorkoutSessionState`](hkworkoutsessionstate.md).
+For a list of possible session states, see [`HKWorkoutSessionState`](../hkworkoutsessionstate.md).
 
 ## See Also
 
-- [var endDate: Date?](hkworkoutsession/enddate.md)
+### Accessing session data
+- [var endDate: Date?](./enddate.md)
   The ending time and date for this workout session.
-- [var startDate: Date?](hkworkoutsession/startdate.md)
+- [var startDate: Date?](./startdate.md)
   The starting time and date for this workout session.
-- [var type: HKWorkoutSessionType](hkworkoutsession/type.md)
+- [var type: HKWorkoutSessionType](./type.md)
   A value that indicates whether the session is a primary session or a mirrored session.
-- [var workoutConfiguration: HKWorkoutConfiguration](hkworkoutsession/workoutconfiguration.md)
+- [var workoutConfiguration: HKWorkoutConfiguration](./workoutconfiguration.md)
   The configuration object that describes this workout.
 
 

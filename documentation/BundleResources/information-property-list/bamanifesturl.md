@@ -1,7 +1,8 @@
 # BAManifestURL
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The location URL of the app’s manifest file that contains the names and sizes of assets.
 
@@ -13,9 +14,10 @@ The location URL of the app’s manifest file that contains the names and sizes 
 - tvOS 18.4+
 - visionOS 2.4+
 
+## Details
 
-
-**Type**: string
+- **Name**: `BAManifestURL`
+- **Type**: string
 
 #### Discussion
 
@@ -23,17 +25,18 @@ The manifest file contains information that your extension needs to schedule ass
 
 ## See Also
 
-- [BAUsesAppleHosting](information-property-list/bausesapplehosting.md)
+### Background downloads
+- [BAUsesAppleHosting](./bausesapplehosting.md)
   A Boolean value that indicates whether you use Apple’s service to host your asset packs.
-- [BAHasManagedAssetPacks](information-property-list/bahasmanagedassetpacks.md)
+- [BAHasManagedAssetPacks](./bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
-- [BAAppGroupID](information-property-list/baappgroupid.md)
+- [BAAppGroupID](./baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAInitialDownloadRestrictions](information-property-list/bainitialdownloadrestrictions.md)
+- [BAInitialDownloadRestrictions](./bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
-- [BAMaxInstallSize](information-property-list/bamaxinstallsize.md)
+- [BAMaxInstallSize](./bamaxinstallsize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
-- [BAEssentialMaxInstallSize](information-property-list/baessentialmaxinstallsize.md)
+- [BAEssentialMaxInstallSize](./baessentialmaxinstallsize.md)
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
 
 

@@ -1,7 +1,8 @@
 # CMBlockBufferCreateEmpty(allocator:capacity:flags:blockBufferOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an empty block buffer.
 
@@ -18,6 +19,10 @@ Creates an empty block buffer.
 
 ```swift
 func CMBlockBufferCreateEmpty(allocator structureAllocator: CFAllocator?, capacity subBlockCapacity: UInt32, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus
+```
+
+```c
+extern OSStatus CMBlockBufferCreateEmpty(CFAllocatorRef structureAllocator, uint32_t subBlockCapacity, CMBlockBufferFlags flags, CMBlockBufferRef*blockBufferOut);
 ```
 
 #### Return Value
@@ -37,19 +42,20 @@ Creates an empty `CMBlockBuffer`, i.e. one which has no memory block nor referen
 
 ## See Also
 
-- [func CMBlockBufferCreateWithMemoryBlock(allocator: CFAllocator?, memoryBlock: UnsafeMutableRawPointer?, blockLength: Int, blockAllocator: CFAllocator?, customBlockSource: UnsafePointer<CMBlockBufferCustomBlockSource>?, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](cmblockbuffercreatewithmemoryblock(allocator:memoryblock:blocklength:blockallocator:customblocksource:offsettodata:datalength:flags:blockbufferout:).md)
+### Creating a Block Buffer
+- [func CMBlockBufferCreateWithMemoryBlock(allocator: CFAllocator?, memoryBlock: UnsafeMutableRawPointer?, blockLength: Int, blockAllocator: CFAllocator?, customBlockSource: UnsafePointer<CMBlockBufferCustomBlockSource>?, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](./cmblockbuffercreatewithmemoryblock%28allocator,memoryblock,blocklength,blockallocator,customblocksource,offsettodata,datalength,flags,blockbufferout%29.md)
   Creates a block buffer that’s backed by a memory block.
-- [func CMBlockBufferCreateWithBufferReference(allocator: CFAllocator?, referenceBuffer: CMBlockBuffer, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](cmblockbuffercreatewithbufferreference(allocator:referencebuffer:offsettodata:datalength:flags:blockbufferout:).md)
+- [func CMBlockBufferCreateWithBufferReference(allocator: CFAllocator?, referenceBuffer: CMBlockBuffer, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](./cmblockbuffercreatewithbufferreference%28allocator,referencebuffer,offsettodata,datalength,flags,blockbufferout%29.md)
   Creates a block buffer that refers to another block buffer object.
-- [func CMBlockBufferCreateContiguous(allocator: CFAllocator?, sourceBuffer: CMBlockBuffer, blockAllocator: CFAllocator?, customBlockSource: UnsafePointer<CMBlockBufferCustomBlockSource>?, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](cmblockbuffercreatecontiguous(allocator:sourcebuffer:blockallocator:customblocksource:offsettodata:datalength:flags:blockbufferout:).md)
+- [func CMBlockBufferCreateContiguous(allocator: CFAllocator?, sourceBuffer: CMBlockBuffer, blockAllocator: CFAllocator?, customBlockSource: UnsafePointer<CMBlockBufferCustomBlockSource>?, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](./cmblockbuffercreatecontiguous%28allocator,sourcebuffer,blockallocator,customblocksource,offsettodata,datalength,flags,blockbufferout%29.md)
   Creates a block buffer that contains a contiguous copy of, or reference to, the data specified by the parameters.
-- [typealias CMBlockBufferFlags](cmblockbufferflags.md)
+- [typealias CMBlockBufferFlags](./cmblockbufferflags.md)
   A type for flags that control behaviors and features of block buffer APIs.
-- [Block Buffer Flags](block-buffer-flags.md)
+- [Block Buffer Flags](./block-buffer-flags.md)
   An enumeration of flags that control behaviors and features of block buffer APIs.
-- [struct CMBlockBufferCustomBlockSource](cmblockbuffercustomblocksource.md)
+- [struct CMBlockBufferCustomBlockSource](./cmblockbuffercustomblocksource.md)
   A structure to support custom memory allocation and deallocation for a block used in a block buffer.
-- [Custom Block Source Version](custom-block-source-version.md)
+- [Custom Block Source Version](./custom-block-source-version.md)
   A custom block source version identifier.
 
 

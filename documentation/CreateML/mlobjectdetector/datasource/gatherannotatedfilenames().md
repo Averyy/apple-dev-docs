@@ -1,7 +1,8 @@
 # gatherAnnotatedFileNames()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the data source and returns a data frame that contains file URLs and annotations.
 

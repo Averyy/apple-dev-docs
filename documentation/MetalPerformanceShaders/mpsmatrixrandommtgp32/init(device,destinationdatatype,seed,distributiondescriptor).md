@@ -1,7 +1,8 @@
 # init(device:destinationDataType:seed:distributionDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device destinationDataType:(MPSDataType) destinationDataType seed:(NSUInteger) seed distributionDescriptor:(MPSMatrixRandomDistributionDescriptor *) distributionDescriptor;
 ```
 
 

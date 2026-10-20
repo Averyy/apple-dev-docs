@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A vertical version of the font.
 
@@ -15,15 +16,20 @@ A vertical version of the font.
 var vertical: NSFont { get }
 ```
 
+```objc
+@property (copy, readonly) NSFont * verticalFont;
+```
+
 #### Discussion
 
 The value in this property is a vertical version of the font, if such a configuration is supported. If a vertical configuration is not supported, the value in the property is `self`.
 
-A vertical font applies appropriate rotation to the text matrix in [`set(in:)`](nsfont/set(in:).md), returns vertical metrics, and enables the vertical glyph substitution feature by default.
+A vertical font applies appropriate rotation to the text matrix in [`set(in:)`](./set%28in%29.md), returns vertical metrics, and enables the vertical glyph substitution feature by default.
 
 ## See Also
 
-- [var isVertical: Bool](nsfont/isvertical.md)
+### Vertical Fonts
+- [var isVertical: Bool](./isvertical.md)
   A Boolean value indicating whether the font is a vertical font.
 
 

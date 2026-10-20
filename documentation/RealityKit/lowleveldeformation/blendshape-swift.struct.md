@@ -1,9 +1,10 @@
 # LowLevelDeformation.BlendShape
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-An accessor for the blend-shape buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
+An accessor for the blend-shape buffers of a [`LowLevelDeformation`](../lowleveldeformation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -20,13 +21,13 @@ struct BlendShape
 ## Topics
 
 ### Instance Methods
-- [func setNormalOffsets(any MTLBuffer, offset: Int) throws](lowleveldeformation/blendshape-swift.struct/setnormaloffsets(_:offset:).md)
+- [func setNormalOffsets(any MTLBuffer, offset: Int) throws](./blendshape-swift.struct/setnormaloffsets%28_,offset%29.md)
   Sets the buffer containing blend-shape normal offsets.
-- [func setPositionOffsets(any MTLBuffer, offset: Int) throws](lowleveldeformation/blendshape-swift.struct/setpositionoffsets(_:offset:).md)
+- [func setPositionOffsets(any MTLBuffer, offset: Int) throws](./blendshape-swift.struct/setpositionoffsets%28_,offset%29.md)
   Sets the buffer containing blend-shape position offsets.
-- [func setTangentOffsets(any MTLBuffer, offset: Int) throws](lowleveldeformation/blendshape-swift.struct/settangentoffsets(_:offset:).md)
+- [func setTangentOffsets(any MTLBuffer, offset: Int) throws](./blendshape-swift.struct/settangentoffsets%28_,offset%29.md)
   Sets the buffer containing blend-shape tangent offsets.
-- [func setWeights(any MTLBuffer, offset: Int) throws](lowleveldeformation/blendshape-swift.struct/setweights(_:offset:).md)
+- [func setWeights(any MTLBuffer, offset: Int) throws](./blendshape-swift.struct/setweights%28_,offset%29.md)
   Sets the buffer containing blend-shape weights.
 
 

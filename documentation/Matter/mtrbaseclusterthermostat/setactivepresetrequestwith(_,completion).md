@@ -1,7 +1,8 @@
 # setActivePresetRequestWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetActivePresetRequest
 
@@ -17,7 +18,15 @@ Command SetActivePresetRequest
 ## Declaration
 
 ```swift
+func setActivePresetRequestWith(_ params: MTRThermostatClusterSetActivePresetRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setActivePresetRequestWith(_ params: MTRThermostatClusterSetActivePresetRequestParams) async throws
+```
+
+```objc
+- (void) setActivePresetRequestWithParams:(MTRThermostatClusterSetActivePresetRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

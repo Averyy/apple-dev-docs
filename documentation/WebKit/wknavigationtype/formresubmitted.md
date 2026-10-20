@@ -1,7 +1,8 @@
 # WKNavigationType.formResubmitted
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request to resubmit a form.
 
@@ -18,21 +19,26 @@ A request to resubmit a form.
 case formResubmitted
 ```
 
+```c
+WKNavigationTypeFormResubmitted
+```
+
 #### Discussion
 
 This type of action occurs when the forward or backward navigation causes the web view to resubmit a form. It also occurs when a reload operation causes the resubmission of the form.
 
 ## See Also
 
-- [WKNavigationType.linkActivated](wknavigationtype/linkactivated.md)
+### Getting the Navigation Types
+- [WKNavigationType.linkActivated](./linkactivated.md)
   A link activation.
-- [WKNavigationType.formSubmitted](wknavigationtype/formsubmitted.md)
+- [WKNavigationType.formSubmitted](./formsubmitted.md)
   A request to submit a form.
-- [WKNavigationType.backForward](wknavigationtype/backforward.md)
+- [WKNavigationType.backForward](./backforward.md)
   A request for the frame’s next or previous item.
-- [WKNavigationType.reload](wknavigationtype/reload.md)
+- [WKNavigationType.reload](./reload.md)
   A request to reload the webpage.
-- [WKNavigationType.other](wknavigationtype/other.md)
+- [WKNavigationType.other](./other.md)
   A navigation request that originates for some other reason.
 
 

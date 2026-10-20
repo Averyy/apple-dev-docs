@@ -1,17 +1,22 @@
 # replyPINCode(_:pinCode:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This is the required reply to the devicePairingPINCodeRequest delegate message. Set the PIN code to use during pairing if required.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func replyPINCode(_ PINCodeSize: Int, pinCode PINCode: UnsafeMutablePointer<BluetoothPINCode>!)
+```
+
+```objc
+- (void) replyPINCode:(ByteCount) PINCodeSize PINCode:(BluetoothPINCode *) PINCode;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # CSSM_USEE_TAG
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_USEE_TAG = CSSM_PRIVILEGE
+```
+
+```c
+typedef CSSM_PRIVILEGE CSSM_USEE_TAG;
 ```
 
 

@@ -1,7 +1,8 @@
 # AppStoreVersionLocalization.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,22 +11,22 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalization.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionLocalization.Relationships.AppPreviewSets](appstoreversionlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.AppPreviewSets](./relationships-data.dictionary/apppreviewsets-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersionLocalization.Relationships.AppScreenshotSets](appstoreversionlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.AppScreenshotSets](./relationships-data.dictionary/appscreenshotsets-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersionLocalization.Relationships.AppStoreVersion](appstoreversionlocalization/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 ### Dictionaries
-- [object AppStoreVersionLocalization.Relationships.Placements](appstoreversionlocalization/relationships-data.dictionary/placements-data.dictionary.md)
-- [object AppStoreVersionLocalization.Relationships.SearchKeywords](appstoreversionlocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.Placements](./relationships-data.dictionary/placements-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.SearchKeywords](./relationships-data.dictionary/searchkeywords-data.dictionary.md)
 
 ## Properties
 
@@ -37,7 +38,8 @@ object AppStoreVersionLocalization.Relationships
 
 ## See Also
 
-- [object AppStoreVersionLocalization.Attributes](appstoreversionlocalization/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionLocalization.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Store Version Localizations resource.
 
 

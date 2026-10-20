@@ -1,7 +1,8 @@
 # allowedParticipantPermissionOptions
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The permission option the system uses to control whether a user can grant read-only or write access.
 
@@ -18,13 +19,18 @@ The permission option the system uses to control whether a user can grant read-o
 var allowedParticipantPermissionOptions: CKSharingParticipantPermissionOption { get set }
 ```
 
+```objc
+@property (assign) CKSharingParticipantPermissionOption allowedParticipantPermissionOptions;
+```
+
 ## See Also
 
-- [var allowedParticipantAccessOptions: CKSharingParticipantAccessOption](ckallowedsharingoptions/allowedparticipantaccessoptions.md)
+### Configuring the options
+- [var allowedParticipantAccessOptions: CKSharingParticipantAccessOption](./allowedparticipantaccessoptions.md)
   The permission option the system uses to control whether a user can share publicly or privately.
-- [struct CKSharingParticipantAccessOption](cksharingparticipantaccessoption.md)
+- [struct CKSharingParticipantAccessOption](../cksharingparticipantaccessoption.md)
   An object that controls participant access options.
-- [struct CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption.md)
+- [struct CKSharingParticipantPermissionOption](../cksharingparticipantpermissionoption.md)
   An object that controls participant permission options.
 
 

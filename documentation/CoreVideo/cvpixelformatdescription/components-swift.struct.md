@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.Components
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines the color components represented by pixels in the buffer.
 
@@ -23,28 +24,28 @@ struct Components
 ## Topics
 
 ### Type Properties
-- [static let alpha: CVPixelFormatDescription.Components](cvpixelformatdescription/components-swift.struct/alpha.md)
+- [static let alpha: CVPixelFormatDescription.Components](./components-swift.struct/alpha.md)
   Format contains alpha transparency data.
-- [static let grayscale: CVPixelFormatDescription.Components](cvpixelformatdescription/components-swift.struct/grayscale.md)
+- [static let grayscale: CVPixelFormatDescription.Components](./components-swift.struct/grayscale.md)
   Format contains grayscale color data.
-- [static let rgb: CVPixelFormatDescription.Components](cvpixelformatdescription/components-swift.struct/rgb.md)
+- [static let rgb: CVPixelFormatDescription.Components](./components-swift.struct/rgb.md)
   Format contains RGB color data.
-- [static let senselArray: CVPixelFormatDescription.Components](cvpixelformatdescription/components-swift.struct/senselarray.md)
+- [static let senselArray: CVPixelFormatDescription.Components](./components-swift.struct/senselarray.md)
   Format contains sensel data (for example Bayer RAW data).
-- [static let yCbCr: CVPixelFormatDescription.Components](cvpixelformatdescription/components-swift.struct/ycbcr.md)
+- [static let yCbCr: CVPixelFormatDescription.Components](./components-swift.struct/ycbcr.md)
   Format contains YCbCr color data.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

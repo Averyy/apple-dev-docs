@@ -1,7 +1,8 @@
 # mean()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the mean average of the integer slice’s elements, ignoring missing elements.
 
@@ -20,19 +21,22 @@ Returns the mean average of the integer slice’s elements, ignoring missing ele
 func mean() -> Double?
 ```
 
+Available when `WrappedElement` conforms to `BinaryInteger`.
+
 ## See Also
 
-- [func sum() -> WrappedElement](columnslice/sum.md)
+### Getting Statistical Values
+- [func sum() -> WrappedElement](./sum%28%29.md)
   Returns the sum of the column slice’s elements, ignoring missing elements.
-- [func min() -> ColumnSlice<WrappedElement>.Element](columnslice/min.md)
+- [func min() -> ColumnSlice<WrappedElement>.Element](./min%28%29.md)
   Returns the element with the lowest value, ignoring missing elements.
-- [func max() -> ColumnSlice<WrappedElement>.Element](columnslice/max.md)
+- [func max() -> ColumnSlice<WrappedElement>.Element](./max%28%29.md)
   Returns the element with the highest value, ignoring missing elements.
-- [func mean() -> ColumnSlice<WrappedElement>.Element](columnslice/mean-7u3i0.md)
+- [func mean() -> ColumnSlice<WrappedElement>.Element](./mean%28%29-7u3i0.md)
   Returns the mean average of the floating-point slice’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](columnslice/standarddeviation(deltadegreesoffreedom:)-1i05i.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](./standarddeviation%28deltadegreesoffreedom%29-1i05i.md)
   Returns the standard deviation of the integer column slice’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> ColumnSlice<WrappedElement>.Element](columnslice/standarddeviation(deltadegreesoffreedom:)-3d6vo.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> ColumnSlice<WrappedElement>.Element](./standarddeviation%28deltadegreesoffreedom%29-3d6vo.md)
   Returns the standard deviation of the floating-point column slice’s elements, ignoring missing elements.
 
 

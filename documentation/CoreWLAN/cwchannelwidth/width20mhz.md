@@ -1,7 +1,8 @@
 # CWChannelWidth.width20MHz
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 20MHz channel width.
 
@@ -14,15 +15,20 @@
 case width20MHz
 ```
 
+```c
+kCWChannelWidth20MHz
+```
+
 ## See Also
 
-- [CWChannelWidth.widthUnknown](cwchannelwidth/widthunknown.md)
+### Constants
+- [CWChannelWidth.widthUnknown](./widthunknown.md)
   Unknown channel width.
-- [CWChannelWidth.width40MHz](cwchannelwidth/width40mhz.md)
+- [CWChannelWidth.width40MHz](./width40mhz.md)
   40MHz channel width.
-- [CWChannelWidth.width80MHz](cwchannelwidth/width80mhz.md)
+- [CWChannelWidth.width80MHz](./width80mhz.md)
   80MHz channel width.
-- [CWChannelWidth.width160MHz](cwchannelwidth/width160mhz.md)
+- [CWChannelWidth.width160MHz](./width160mhz.md)
   160MHz channel width.
 
 

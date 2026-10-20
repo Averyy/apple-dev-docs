@@ -1,7 +1,8 @@
 # init(share:container:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the CloudKit sharing view controller with a CloudKit share record and container to manage participants and restrictions.
 
@@ -17,13 +18,17 @@ Initializes the CloudKit sharing view controller with a CloudKit share record an
 init(share: CKShare, container: CKContainer)
 ```
 
+```objc
+- (instancetype) initWithShare:(CKShare *) share container:(CKContainer *) container;
+```
+
 #### Discussion
 
-Use the [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) initializer method to create the [`UICloudSharingController`](uicloudsharingcontroller.md) instance when the user who owns the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record wants to manage the participants and restrictions associated with the share. (For more information, see [`Adding and removing participants from an existing share`](uicloudsharingcontroller#Adding-and-removing-participants-from-an-existing-share.md).) You also use this initializer method when users are participants who want to remove themselves from a share. (For more information, see [`Viewing participants and leaving a share`](uicloudsharingcontroller#Viewing-participants-and-leaving-a-share.md).)
+Use the [`init(share:container:)`](./init%28share,container%29.md) initializer method to create the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance when the user who owns the [`CKShare`](../../CloudKit/ckshare.md) record wants to manage the participants and restrictions associated with the share. (For more information, see [Adding and removing participants from an existing share](../uicloudsharingcontroller.md#Adding-and-removing-participants-from-an-existing-share).) You also use this initializer method when users are participants who want to remove themselves from a share. (For more information, see [Viewing participants and leaving a share](../uicloudsharingcontroller.md#Viewing-participants-and-leaving-a-share).)
 
-> ❗ **Important**:  You must initialize the controller with the correct initializer method. Do not use [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) if the [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) is already shared. Likewise, do not use [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) if the [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) is not shared. Using the wrong initializer leads to errors when saving the record.
+> ❗ **Important**:  You must initialize the controller with the correct initializer method. Do not use [`init(preparationHandler:)`](./init%28preparationhandler%29.md) if the [`CKRecord`](../../CloudKit/ckrecord.md) is already shared. Likewise, do not use [`init(share:container:)`](./init%28share,container%29.md) if the [`CKRecord`](../../CloudKit/ckrecord.md) is not shared. Using the wrong initializer leads to errors when saving the record.
 
-[`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) requires a reference to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) instance associated with the [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) instance that represents the shared data. To retrieve the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) instance, get the [`share`](https://developer.apple.com/documentation/cloudkit/ckrecord/share) property value (a [`CKRecord.Reference`](https://developer.apple.com/documentation/cloudkit/ckrecord/reference) instance) from the [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) instance. Then pass the [`recordID`](https://developer.apple.com/documentation/cloudkit/ckrecord/reference/recordid) from the [`CKRecord.Reference`](https://developer.apple.com/documentation/cloudkit/ckrecord/reference) instance to the [`fetch(withRecordID:completionHandler:)`](https://developer.apple.com/documentation/cloudkit/ckdatabase/fetch(withrecordid:completionhandler:)) method on a [`CKDatabase`](https://developer.apple.com/documentation/cloudkit/ckdatabase) instance, as shown in the following code.
+[`init(share:container:)`](./init%28share,container%29.md) requires a reference to the [`CKShare`](../../CloudKit/ckshare.md) instance associated with the [`CKRecord`](../../CloudKit/ckrecord.md) instance that represents the shared data. To retrieve the [`CKShare`](../../CloudKit/ckshare.md) instance, get the [`share`](../../CloudKit/ckrecord/share.md) property value (a [`CKRecord.Reference`](../../CloudKit/ckrecord/reference.md) instance) from the [`CKRecord`](../../CloudKit/ckrecord.md) instance. Then pass the [`recordID`](../../CloudKit/ckrecord/reference/recordid.md) from the [`CKRecord.Reference`](../../CloudKit/ckrecord/reference.md) instance to the [`fetch(withRecordID:completionHandler:)`](../../CloudKit/ckdatabase/fetch%28withrecordid,completionhandler%29.md) method on a [`CKDatabase`](../../CloudKit/ckdatabase.md) instance, as shown in the following code.
 
 ```objc
 CKRecord *record = [self record];
@@ -46,12 +51,13 @@ CKContainer *container = [CKContainer defaultContainer];
 
 ## Parameters
 
-- `share`: An instance of [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) that was previously saved.
-- `container`: An instance of [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) that contains the record that is shared.
+- `share`: An instance of [`CKShare`](../../CloudKit/ckshare.md) that was previously saved.
+- `container`: An instance of [`CKContainer`](../../CloudKit/ckcontainer.md) that contains the record that is shared.
 
 ## See Also
 
-- [init(preparationHandler: (UICloudSharingController, (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](uicloudsharingcontroller/init(preparationhandler:).md)
+### Creating the cloud sharing controller
+- [init(preparationHandler: (UICloudSharingController, (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](./init%28preparationhandler%29.md)
   Initializes the CloudKit sharing controller with a preparation handler intending to save a new share record.
 
 

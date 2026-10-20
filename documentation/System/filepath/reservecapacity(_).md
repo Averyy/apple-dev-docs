@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reserve enough storage space to store `minimumCapacity` platform characters.
 

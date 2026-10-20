@@ -1,7 +1,8 @@
 # modelContainer
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model container whose data stores this observer monitors for changes.
 
@@ -22,11 +23,12 @@ final let modelContainer: ModelContainer
 
 ## See Also
 
-- [var eventCounter: Int](historyobserver/eventcounter.md)
+### Accessing observer properties
+- [var eventCounter: Int](./eventcounter.md)
   A counter that increments each time the observer detects relevant changes.
-- [let observedModels: [any PersistentModel.Type]](historyobserver/observedmodels.md)
+- [let observedModels: [any PersistentModel.Type]](./observedmodels.md)
   The model types that the observer filters for when evaluating history transactions.
-- [let authors: Set<String>](historyobserver/authors.md)
+- [let authors: Set<String>](./authors.md)
   The transaction authors that the observer filters for when evaluating history transactions.
 
 

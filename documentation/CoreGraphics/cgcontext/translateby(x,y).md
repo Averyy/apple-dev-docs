@@ -1,7 +1,8 @@
 # translateBy(x:y:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the origin of the user coordinate system in a context.
 
@@ -10,7 +11,7 @@ Changes the origin of the user coordinate system in a context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,6 +21,10 @@ Changes the origin of the user coordinate system in a context.
 func translateBy(x tx: CGFloat, y ty: CGFloat)
 ```
 
+```c
+extern void CGContextTranslateCTM(CGContextRef c, CGFloat tx, CGFloat ty);
+```
+
 ## Parameters
 
 - `tx`: The amount to displace the x-axis of the coordinate space, in units of the user space, of the specified context.
@@ -27,13 +32,14 @@ func translateBy(x tx: CGFloat, y ty: CGFloat)
 
 ## See Also
 
-- [var ctm: CGAffineTransform](cgcontext/ctm.md)
+### Working with the Current Transformation Matrix
+- [var ctm: CGAffineTransform](./ctm.md)
   Returns the current transformation matrix.
-- [func rotate(by: CGFloat)](cgcontext/rotate(by:).md)
+- [func rotate(by: CGFloat)](./rotate%28by%29.md)
   Rotates the user coordinate system in a context.
-- [func scaleBy(x: CGFloat, y: CGFloat)](cgcontext/scaleby(x:y:).md)
+- [func scaleBy(x: CGFloat, y: CGFloat)](./scaleby%28x,y%29.md)
   Changes the scale of the user coordinate system in a context.
-- [func concatenate(CGAffineTransform)](cgcontext/concatenate(_:).md)
+- [func concatenate(CGAffineTransform)](./concatenate%28_%29.md)
   Transforms the user coordinate system in a context using a specified matrix.
 
 

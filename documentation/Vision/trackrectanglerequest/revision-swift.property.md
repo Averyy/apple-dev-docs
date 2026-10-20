@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm or implementation the request uses.
 
@@ -22,9 +23,10 @@ final let revision: TrackRectangleRequest.Revision
 
 ## See Also
 
-- [static let supportedRevisions: [TrackRectangleRequest.Revision]](trackrectanglerequest/supportedrevisions.md)
+### Getting the revision
+- [static let supportedRevisions: [TrackRectangleRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
-- [TrackRectangleRequest.Revision](trackrectanglerequest/revision-swift.enum.md)
+- [TrackRectangleRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

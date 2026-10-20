@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.sessionFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the framework failed to create the session.
 

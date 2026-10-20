@@ -1,7 +1,8 @@
 # bestTranscription
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transcription with the highest confidence level.
 
@@ -19,11 +20,16 @@ The transcription with the highest confidence level.
 var bestTranscription: SFTranscription { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) SFTranscription * bestTranscription;
+```
+
 ## See Also
 
-- [var transcriptions: [SFTranscription]](sfspeechrecognitionresult/transcriptions.md)
+### Getting transcriptions
+- [var transcriptions: [SFTranscription]](./transcriptions.md)
   An array of potential transcriptions, sorted in descending order of confidence.
-- [var speechRecognitionMetadata: SFSpeechRecognitionMetadata?](sfspeechrecognitionresult/speechrecognitionmetadata.md)
+- [var speechRecognitionMetadata: SFSpeechRecognitionMetadata?](./speechrecognitionmetadata.md)
   An object that contains the metadata results for a speech recognition request.
 
 

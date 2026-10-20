@@ -1,7 +1,8 @@
 # acceptedEAPTypes
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The EAP types allowed for this network.
 

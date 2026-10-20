@@ -1,7 +1,8 @@
 # sleepAnalysis
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category sample type for sleep analysis information.
 
@@ -19,23 +20,28 @@ A category sample type for sleep analysis information.
 static let sleepAnalysis: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSleepAnalysis;
+```
+
 ## Mentions
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
 #### Discussion
 
-These samples use values from the [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) enum.
+These samples use values from the [`HKCategoryValueSleepAnalysis`](../hkcategoryvaluesleepanalysis.md) enum.
 
-For best results when analyzing sleep samples, it’s recommended that you use [`HKMetadataKeyTimeZone`](hkmetadatakeytimezone.md) to store time zone metadata with your sleep sample data.
+For best results when analyzing sleep samples, it’s recommended that you use [`HKMetadataKeyTimeZone`](../hkmetadatakeytimezone.md) to store time zone metadata with your sleep sample data.
 
 ## See Also
 
-- [static let mindfulSession: HKCategoryTypeIdentifier](hkcategorytypeidentifier/mindfulsession.md)
+### Mindfulness and sleep
+- [static let mindfulSession: HKCategoryTypeIdentifier](./mindfulsession.md)
   A category sample type for recording a mindful session.
-- [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingwristtemperature.md)
+- [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](../hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
-- [enum HKAppleSleepingBreathingDisturbancesClassification](hkapplesleepingbreathingdisturbancesclassification.md)
+- [enum HKAppleSleepingBreathingDisturbancesClassification](../hkapplesleepingbreathingdisturbancesclassification.md)
 
 
 ---

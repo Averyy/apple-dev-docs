@@ -1,7 +1,8 @@
 # errSecInvalidPVC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid pointer validation checking policy was detected.
 
@@ -18,6 +19,10 @@ An invalid pointer validation checking policy was detected.
 
 ```swift
 var errSecInvalidPVC: OSStatus { get }
+```
+
+```c
+errSecInvalidPVC
 ```
 
 

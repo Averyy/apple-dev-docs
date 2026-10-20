@@ -1,7 +1,8 @@
 # smartCard
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Smart Card to which the formatted APDU is sent in order to authenticate.
 
@@ -20,17 +21,22 @@ A Smart Card to which the formatted APDU is sent in order to authenticate.
 var smartCard: TKSmartCard? { get set }
 ```
 
+```objc
+@property (nullable) TKSmartCard * smartCard;
+```
+
 #### Discussion
 
-This property is only used if the [`apduTemplate`](tktokensmartcardpinauthoperation/apdutemplate.md) property has a set value.
+This property is only used if the [`apduTemplate`](./apdutemplate.md) property has a set value.
 
 ## See Also
 
-- [var pinFormat: TKSmartCardPINFormat](tktokensmartcardpinauthoperation/pinformat.md)
+### Configuring the Operation
+- [var pinFormat: TKSmartCardPINFormat](./pinformat.md)
   The PIN format.
-- [var apduTemplate: Data?](tktokensmartcardpinauthoperation/apdutemplate.md)
+- [var apduTemplate: Data?](./apdutemplate.md)
   The template into which the PIN is filled in. `nil` by default.
-- [var pinByteOffset: Int](tktokensmartcardpinauthoperation/pinbyteoffset.md)
+- [var pinByteOffset: Int](./pinbyteoffset.md)
   The offset, in bytes, within the APDU template to mark the location for filling in the PIN.
 
 

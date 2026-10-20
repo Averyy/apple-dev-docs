@@ -1,7 +1,8 @@
 # MutableSpan.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents an index in a `MutableSpan`.
 

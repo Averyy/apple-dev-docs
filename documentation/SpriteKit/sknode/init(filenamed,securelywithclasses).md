@@ -1,7 +1,8 @@
 # init(fileNamed:securelyWithClasses:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -18,15 +19,20 @@
 convenience init(fileNamed filename: String, securelyWithClasses classes: Set<AnyHashable>) throws
 ```
 
+```objc
++ (instancetype) nodeWithFileNamed:(NSString *) filename securelyWithClasses:(NSSet<Class> *) classes andError:(NSError **) error;
+```
+
 ## See Also
 
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+### First Steps
+- [Getting Started with Nodes](../getting-started-with-nodes.md)
   Learn about the fundamental properties that provide a foundation for all other nodes.
-- [init()](sknode/init.md)
+- [init()](./init%28%29.md)
   Initializes a blank node.
-- [convenience init?(fileNamed: String)](sknode/init(filenamed:).md)
+- [convenience init?(fileNamed: String)](./init%28filenamed%29.md)
   Creates a new node by loading an archive file from the game’s main bundle.
-- [init?(coder: NSCoder)](sknode/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Called when a node is initialized from an .sks file.
 
 

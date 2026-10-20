@@ -1,7 +1,8 @@
 # indexPath
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index path of the element.
 
@@ -14,21 +15,26 @@ The index path of the element.
 var indexPath: IndexPath? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSIndexPath * indexPath;
+```
+
 #### Discussion
 
-Use the index path to locate information about the item in your app’s data structures. For supplementary and decoration views, you must also use the [`representedElementKind`](nscollectionviewlayoutattributes/representedelementkind.md) property to identify the element.
+Use the index path to locate information about the item in your app’s data structures. For supplementary and decoration views, you must also use the [`representedElementKind`](./representedelementkind.md) property to identify the element.
 
 ## See Also
 
-- [var representedElementCategory: NSCollectionElementCategory](nscollectionviewlayoutattributes/representedelementcategory.md)
+### Identifying the Element
+- [var representedElementCategory: NSCollectionElementCategory](./representedelementcategory.md)
   The type of the element.
-- [var representedElementKind: String?](nscollectionviewlayoutattributes/representedelementkind.md)
+- [var representedElementKind: String?](./representedelementkind.md)
   The identifier for specific elements of your collection view interface.
-- [class let elementKindInterItemGapIndicator: String](nscollectionview/elementkindinteritemgapindicator.md)
+- [class let elementKindInterItemGapIndicator: String](../nscollectionview/elementkindinteritemgapindicator.md)
   The element kind string assigned to the attributes object when it represents an inter-item gap.
-- [class let elementKindSectionFooter: String](nscollectionview/elementkindsectionfooter.md)
+- [class let elementKindSectionFooter: String](../nscollectionview/elementkindsectionfooter.md)
   A supplementary view that acts as a footer for a given section.
-- [class let elementKindSectionHeader: String](nscollectionview/elementkindsectionheader.md)
+- [class let elementKindSectionHeader: String](../nscollectionview/elementkindsectionheader.md)
   A supplementary view that acts as a header for a given section.
 
 

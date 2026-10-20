@@ -1,18 +1,19 @@
 # shared
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,11 +22,16 @@ The current device.
 class var shared: XCUIDevice { get }
 ```
 
+```objc
+@property (class, readonly) XCUIDevice * sharedDevice;
+```
+
 ## See Also
 
-- [var supportsPointerInteraction: Bool](xcuidevice/supportspointerinteraction.md)
+### Accessing the current device
+- [var supportsPointerInteraction: Bool](./supportspointerinteraction.md)
   A Boolean value that indicates if the device supports pointer interaction.
-- [var supportsHandGestures: Bool](xcuidevice/supportshandgestures.md)
+- [var supportsHandGestures: Bool](./supportshandgestures.md)
   A Boolean value that indicates if the device supports hand gestures.
 
 

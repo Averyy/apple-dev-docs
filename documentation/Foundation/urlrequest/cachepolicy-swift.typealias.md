@@ -1,7 +1,8 @@
 # URLRequest.CachePolicy
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the cache policy.
 
@@ -22,17 +23,18 @@ typealias CachePolicy = NSURLRequest.CachePolicy
 
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
-This type is an alias to [`NSURLRequest.CachePolicy`](nsurlrequest/cachepolicy-swift.enum.md).
+This type is an alias to [`NSURLRequest.CachePolicy`](../nsurlrequest/cachepolicy-swift.enum.md).
 
 ## See Also
 
-- [var cachePolicy: URLRequest.CachePolicy](urlrequest/cachepolicy-swift.property.md)
+### Working with a cache policy
+- [var cachePolicy: URLRequest.CachePolicy](./cachepolicy-swift.property.md)
   The request’s cache policy.
-- [NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum.md)
+- [NSURLRequest.CachePolicy](../nsurlrequest/cachepolicy-swift.enum.md)
   The constants used to specify interaction with the cached responses.
 
 

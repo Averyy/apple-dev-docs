@@ -1,16 +1,21 @@
 # from_uid
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var from_uid: uid_t
+```
+
+```c
+uid_t from_uid;
 ```
 
 

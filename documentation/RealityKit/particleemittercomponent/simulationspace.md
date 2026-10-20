@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SimulationSpace
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for particle simulation space
 
@@ -22,16 +23,16 @@ enum SimulationSpace
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.SimulationSpace.global](particleemittercomponent/simulationspace/global.md)
-- [ParticleEmitterComponent.SimulationSpace.local](particleemittercomponent/simulationspace/local.md)
+- [ParticleEmitterComponent.SimulationSpace.global](./simulationspace/global.md)
+- [ParticleEmitterComponent.SimulationSpace.local](./simulationspace/local.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

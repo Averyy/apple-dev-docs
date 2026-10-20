@@ -1,18 +1,23 @@
 # value(withUniqueID:inPropertyWithKey:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves an object by ID from the collection specified by the passed key.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 func value(withUniqueID uniqueID: Any, inPropertyWithKey key: String) -> Any?
+```
+
+```objc
+- (id) valueWithUniqueID:(id) uniqueID inPropertyWithKey:(NSString *) key;
 ```
 
 #### Discussion
@@ -21,9 +26,10 @@ The method `valueIn<Key>WithUniqueID:` is invoked if it exists. Otherwise, raise
 
 ## See Also
 
-- [func insertValue(Any, inPropertyWithKey: String)](nsobject-swift.class/insertvalue(_:inpropertywithkey:).md)
+### Access by name, key, or ID
+- [func insertValue(Any, inPropertyWithKey: String)](./insertvalue%28_,inpropertywithkey%29.md)
   Inserts an object in the collection specified by the passed key.
-- [func value(withName: String, inPropertyWithKey: String) -> Any?](nsobject-swift.class/value(withname:inpropertywithkey:).md)
+- [func value(withName: String, inPropertyWithKey: String) -> Any?](./value%28withname,inpropertywithkey%29.md)
   Retrieves a named object from the collection specified by the passed key.
 
 

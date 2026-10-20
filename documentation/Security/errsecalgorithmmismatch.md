@@ -1,7 +1,8 @@
 # errSecAlgorithmMismatch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An algorithm mismatch occurred.
 
@@ -18,6 +19,10 @@ An algorithm mismatch occurred.
 
 ```swift
 var errSecAlgorithmMismatch: OSStatus { get }
+```
+
+```c
+errSecAlgorithmMismatch
 ```
 
 

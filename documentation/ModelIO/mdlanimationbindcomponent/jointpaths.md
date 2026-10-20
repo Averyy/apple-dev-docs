@@ -1,7 +1,8 @@
 # jointPaths
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var jointPaths: [String]? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSArray<NSString *> * jointPaths;
 ```
 
 

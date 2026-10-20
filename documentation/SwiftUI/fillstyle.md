@@ -1,7 +1,8 @@
 # FillStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A style for rasterizing vector shapes.
 
@@ -24,40 +25,41 @@ struct FillStyle
 ## Topics
 
 ### Creating a fill style
-- [init(eoFill: Bool, antialiased: Bool)](fillstyle/init(eofill:antialiased:).md)
+- [init(eoFill: Bool, antialiased: Bool)](./fillstyle/init%28eofill,antialiased%29.md)
   Creates a new fill style with the specified settings.
 ### Setting fill style properties
-- [var isEOFilled: Bool](fillstyle/iseofilled.md)
+- [var isEOFilled: Bool](./fillstyle/iseofilled.md)
   A Boolean value that indicates whether to use the even-odd rule when rendering a shape.
-- [var isAntialiased: Bool](fillstyle/isantialiased.md)
+- [var isAntialiased: Bool](./fillstyle/isantialiased.md)
   A Boolean value that indicates whether to apply antialiasing to the edges of a shape.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ShapeView](shapeview.md)
+### Defining shape behavior
+- [protocol ShapeView](./shapeview.md)
   A view that provides a shape that you can use for drawing operations.
-- [protocol Shape](shape.md)
+- [protocol Shape](./shape.md)
   A 2D shape that you can use when drawing a view.
-- [struct AnyShape](anyshape.md)
+- [struct AnyShape](./anyshape.md)
   A type-erased shape value.
-- [enum ShapeRole](shaperole.md)
+- [enum ShapeRole](./shaperole.md)
   Ways of styling a shape.
-- [struct StrokeStyle](strokestyle.md)
+- [struct StrokeStyle](./strokestyle.md)
   The characteristics of a stroke that traces a path.
-- [struct StrokeShapeView](strokeshapeview.md)
+- [struct StrokeShapeView](./strokeshapeview.md)
   A shape provider that strokes its shape.
-- [struct StrokeBorderShapeView](strokebordershapeview.md)
+- [struct StrokeBorderShapeView](./strokebordershapeview.md)
   A shape provider that strokes the border of its shape.
-- [struct FillShapeView](fillshapeview.md)
+- [struct FillShapeView](./fillshapeview.md)
   A shape provider that fills its shape.
 
 

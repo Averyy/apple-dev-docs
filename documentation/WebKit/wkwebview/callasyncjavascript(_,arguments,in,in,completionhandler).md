@@ -1,7 +1,8 @@
 # callAsyncJavaScript(_:arguments:in:in:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the specified string as an asynchronous JavaScript function.
 
@@ -10,7 +11,7 @@ Executes the specified string as an asynchronous JavaScript function.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -42,20 +43,23 @@ return p;
 ## Parameters
 
 - `functionBody`: The JavaScript string to use as the function body. This method treats the string as an anonymous JavaScript function body and calls it with the named arguments in the `arguments` parameter.
-- `arguments`: A dictionary of the arguments to pass to the function call. Each key in the dictionary corresponds to the name of an argument in the `functionBody` string, and the value of that key is the value to use during the evaluation of the code. Supported value types are [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), or [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull). All items in an array or dictionary must also be one of the supported types.
-- `frame`: The frame in which to evaluate the JavaScript code. Specify `nil` to target the main frame. If this frame is no longer valid when script evaluation begins, this method returns a [`WKError.Code.javaScriptInvalidFrameTarget`](wkerror/code/javascriptinvalidframetarget.md) error.
-- `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes you make to the underlying web content, such as the document’s DOM structure. Those changes remain visible to all scripts, regardless of which content world you specify. For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
-- `completionHandler`: A handler block to execute when script evaluation finishes. The method calls your block whether script evaluation completes successfully or fails. The block has no return value and takes the following parameter: - **result**: The result of the script evaluation, or an error object that contains information about the problem that occurred. If your function body doesn’t return an explicit value, WebKit passes `nil` to your completion handler on success. If your function explicitly returns `null`, WebKit returns that value as an [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object.
+- `arguments`: A dictionary of the arguments to pass to the function call. Each key in the dictionary corresponds to the name of an argument in the `functionBody` string, and the value of that key is the value to use during the evaluation of the code. Supported value types are [`NSNumber`](../../Foundation/nsnumber.md), [`NSString`](../../Foundation/nsstring.md), [`NSDate`](../../Foundation/nsdate.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), or [`NSNull`](../../Foundation/nsnull.md). All items in an array or dictionary must also be one of the supported types.
+- `frame`: The frame in which to evaluate the JavaScript code. Specify `nil` to target the main frame. If this frame is no longer valid when script evaluation begins, this method returns a [`WKError.Code.javaScriptInvalidFrameTarget`](../wkerror/code/javascriptinvalidframetarget.md) error.
+- `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes you make to the underlying web content, such as the document’s DOM structure. Those changes remain visible to all scripts, regardless of which content world you specify. For more information about content worlds, see [`WKContentWorld`](../wkcontentworld.md).
+- `completionHandler`: A handler block to execute when script evaluation finishes. The method calls your block whether script evaluation completes successfully or fails. The block has no return value and takes the following parameter:
+
+  - **result**: The result of the script evaluation, or an error object that contains information about the problem that occurred. If your function body doesn’t return an explicit value, WebKit passes `nil` to your completion handler on success. If your function explicitly returns `null`, WebKit returns that value as an [`NSNull`](../../Foundation/nsnull.md) object.
 
 ## See Also
 
-- [func evaluateJavaScript(String, completionHandler: ((Any?, (any Error)?) -> Void)?)](wkwebview/evaluatejavascript(_:completionhandler:).md)
+### Executing JavaScript
+- [func evaluateJavaScript(String, completionHandler: ((Any?, (any Error)?) -> Void)?)](./evaluatejavascript%28_,completionhandler%29.md)
   Evaluates the specified JavaScript string.
-- [func evaluateJavaScript(String, in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](wkwebview/evaluatejavascript(_:in:in:completionhandler:).md)
+- [func evaluateJavaScript(String, in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](./evaluatejavascript%28_,in,in,completionhandler%29.md)
   Evaluates a JavaScript string in the context of the specified frame and content world.
-- [func evaluateJavaScript(String, in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](wkwebview/evaluatejavascript(_:in:contentworld:).md)
+- [func evaluateJavaScript(String, in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./evaluatejavascript%28_,in,contentworld%29.md)
   Evaluates a JavaScript string in the context of the specified frame and content world.
-- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](wkwebview/callasyncjavascript(_:arguments:in:contentworld:).md)
+- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./callasyncjavascript%28_,arguments,in,contentworld%29.md)
   Executes the specified string as an asynchronous JavaScript function.
 
 

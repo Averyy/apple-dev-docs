@@ -1,7 +1,8 @@
 # selectionManagerDidEndSelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a selection gesture has ended.
 
@@ -12,6 +13,10 @@ Tells the delegate that a selection gesture has ended.
 
 ```swift
 optional func selectionManagerDidEndSelection(_ selectionManager: NSTextSelectionManager)
+```
+
+```objc
+- (void) selectionManagerDidEndSelection:(NSTextSelectionManager *) selectionManager;
 ```
 
 #### Discussion

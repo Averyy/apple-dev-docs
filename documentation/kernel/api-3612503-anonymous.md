@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIMessageControlNoResponse](3612503-anonymous/iousbhostcimessagecontrolnoresponse.md)
-- [IOUSBHostCIMessageControlStatus](3612503-anonymous/iousbhostcimessagecontrolstatus.md)
-- [IOUSBHostCIMessageControlStatusPhase](3612503-anonymous/iousbhostcimessagecontrolstatusphase.md)
-- [IOUSBHostCIMessageControlType](3612503-anonymous/iousbhostcimessagecontroltype.md)
-- [IOUSBHostCIMessageControlTypePhase](3612503-anonymous/iousbhostcimessagecontroltypephase.md)
-- [IOUSBHostCIMessageControlValid](3612503-anonymous/iousbhostcimessagecontrolvalid.md)
+- [IOUSBHostCIMessageControlNoResponse](./api-3612503-anonymous/iousbhostcimessagecontrolnoresponse.md)
+- [IOUSBHostCIMessageControlStatus](./api-3612503-anonymous/iousbhostcimessagecontrolstatus.md)
+- [IOUSBHostCIMessageControlStatusPhase](./api-3612503-anonymous/iousbhostcimessagecontrolstatusphase.md)
+- [IOUSBHostCIMessageControlType](./api-3612503-anonymous/iousbhostcimessagecontroltype.md)
+- [IOUSBHostCIMessageControlTypePhase](./api-3612503-anonymous/iousbhostcimessagecontroltypephase.md)
+- [IOUSBHostCIMessageControlValid](./api-3612503-anonymous/iousbhostcimessagecontrolvalid.md)
 
 
 ---

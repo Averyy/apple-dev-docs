@@ -1,7 +1,8 @@
 # CWChannel
 
 **Framework**: Core WLAN  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Encapsulates an IEEE 802.11 channel.
 
@@ -14,51 +15,56 @@ Encapsulates an IEEE 802.11 channel.
 class CWChannel
 ```
 
+```objc
+@interface CWChannel : NSObject
+```
+
 ## Topics
 
 ### Comparing channels
-- [func isEqual(to: CWChannel) -> Bool](cwchannel/isequal(to:).md)
+- [func isEqual(to: CWChannel) -> Bool](./cwchannel/isequal%28to%29.md)
   Determine CWChannel object equality.
 ### Instance Properties
-- [var channelBand: CWChannelBand](cwchannel/channelband.md)
+- [var channelBand: CWChannelBand](./cwchannel/channelband.md)
   The channel band.
-- [var channelNumber: Int](cwchannel/channelnumber.md)
+- [var channelNumber: Int](./cwchannel/channelnumber.md)
   The channel number.
-- [var channelWidth: CWChannelWidth](cwchannel/channelwidth.md)
+- [var channelWidth: CWChannelWidth](./cwchannel/channelwidth.md)
   The channel width.
 ### Initializers
-- [init?(coder: NSCoder)](cwchannel/init(coder:).md)
+- [init?(coder: NSCoder)](./cwchannel/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CWConfiguration](cwconfiguration.md)
+### Classes
+- [class CWConfiguration](./cwconfiguration.md)
   Encapsulates an immutable configuration for an AirPort WLAN interface.
-- [class CWInterface](cwinterface.md)
+- [class CWInterface](./cwinterface.md)
   Encapsulates an IEEE 802.11 interface.
-- [class CWMutableConfiguration](cwmutableconfiguration.md)
+- [class CWMutableConfiguration](./cwmutableconfiguration.md)
   Encapsulates a mutable configuration for an AirPort WLAN interface.
-- [class CWMutableNetworkProfile](cwmutablenetworkprofile.md)
+- [class CWMutableNetworkProfile](./cwmutablenetworkprofile.md)
   Encapsulates a mutable network profile entry.
-- [class CWNetwork](cwnetwork.md)
+- [class CWNetwork](./cwnetwork.md)
   Encapsulates an IEEE 802.11 network, providing read-only accessors to various properties of the network.
-- [class CWNetworkProfile](cwnetworkprofile.md)
+- [class CWNetworkProfile](./cwnetworkprofile.md)
   Encapsulates an immutable network profile entry.
-- [class CWWiFiClient](cwwificlient.md)
+- [class CWWiFiClient](./cwwificlient.md)
   A wrapper around the entire Wi-Fi subsystem that you use to access interfaces and set up event notifications.
 
 

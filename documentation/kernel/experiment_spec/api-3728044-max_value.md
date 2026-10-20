@@ -1,14 +1,15 @@
 # max_value
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 uint64_t max_value;
 ```
 

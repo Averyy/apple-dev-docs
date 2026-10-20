@@ -1,7 +1,8 @@
 # kMDItemExposureTimeString
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The time of the exposure. A CFString.
 
@@ -12,6 +13,10 @@ The time of the exposure. A CFString.
 
 ```swift
 let kMDItemExposureTimeString: CFString!
+```
+
+```c
+const CFStringRef kMDItemExposureTimeString;
 ```
 
 

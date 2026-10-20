@@ -1,7 +1,8 @@
 # LibraryPlaylistSortProperties
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Playlist properties your app uses to sort results for a library request.
 
@@ -23,11 +24,11 @@ protocol LibraryPlaylistSortProperties
 ## Topics
 
 ### Instance Properties
-- [var lastPlayedDate: Date?](libraryplaylistsortproperties/lastplayeddate.md)
+- [var lastPlayedDate: Date?](./libraryplaylistsortproperties/lastplayeddate.md)
   The date when the user last played the playlist on this device.
-- [var libraryAddedDate: Date?](libraryplaylistsortproperties/libraryaddeddate.md)
+- [var libraryAddedDate: Date?](./libraryplaylistsortproperties/libraryaddeddate.md)
   The date when the user added the playlist to the library.
-- [var name: String](libraryplaylistsortproperties/name.md)
+- [var name: String](./libraryplaylistsortproperties/name.md)
   The name of the playlist.
 
 

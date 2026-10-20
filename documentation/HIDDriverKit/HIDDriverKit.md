@@ -1,7 +1,8 @@
 # HIDDriverKit
 
 **Framework**: HIDDriverKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Develop drivers for human-interface devices, such as keyboards, pointing devices, and digitizers like pens and touch pads.
 
@@ -11,95 +12,95 @@ Develop drivers for human-interface devices, such as keyboards, pointing devices
 
 #### Overview
 
-The HIDDriverKit framework provides C++ classes for developing drivers for human interface devices. HIDDriverKit uses the core types defined in [`DriverKit`](https://developer.apple.com/documentation/driverkit), and adds features specific to human interface device development.
+The HIDDriverKit framework provides C++ classes for developing drivers for human interface devices. HIDDriverKit uses the core types defined in [DriverKit](../DriverKit/DriverKit.md), and adds features specific to human interface device development.
 
-Develop your driver with DriverKit and HIDDriverKit, and package it in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade the driver on the user’s Mac.
+Develop your driver with DriverKit and HIDDriverKit, and package it in an app that uses the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  HIDDriverKit is available on macOS.
 
 ## Topics
 
 ### Essentials
-- [com.apple.developer.driverkit.transport.hid](../bundleresources/entitlements/com.apple.developer.driverkit.transport.hid.md)
+- [com.apple.developer.driverkit.transport.hid](../BundleResources/entitlements/com.apple.developer.driverkit.transport.hid.md)
   A Boolean value that indicates whether the driver communicates with human interface devices.
-- [Handling Keyboard Events from a Human Interface Device](handling-keyboard-events-from-a-human-interface-device.md)
+- [Handling Keyboard Events from a Human Interface Device](./handling-keyboard-events-from-a-human-interface-device.md)
   Process keyboard-related data from a human interface device and dispatch events to the system.
-- [Handling Stylus Input from a Human Interface Device](handling-stylus-input-from-a-human-interface-device.md)
+- [Handling Stylus Input from a Human Interface Device](./handling-stylus-input-from-a-human-interface-device.md)
   Process stylus-related input from a human interface device and dispatch events to the system.
 ### Samples
-- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
+- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 ### Driver Interfaces
-- [com.apple.developer.driverkit.family.hid.eventservice](../bundleresources/entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
+- [com.apple.developer.driverkit.family.hid.eventservice](../BundleResources/entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
   A Boolean value that indicates whether the driver provides a HID-related event service to the system.
-- [IOUserHIDEventDriver](iouserhideventdriver.md)
+- [IOUserHIDEventDriver](./iouserhideventdriver.md)
   A complete driver object that dispatches keyboard, digitizer, scrolling, and pointer events originating from a HID device.
-- [IOUserHIDEventService](iouserhideventservice.md)
+- [IOUserHIDEventService](./iouserhideventservice.md)
   A service that parses HID report data into elements that you can use to dispatch events.
-- [IOHIDEventService](iohideventservice.md)
+- [IOHIDEventService](./iohideventservice.md)
   The base class for implementing a device or operating system service that dispatches events to the system.
 ### Providers
-- [com.apple.developer.driverkit.family.hid.device](../bundleresources/entitlements/com.apple.developer.driverkit.family.hid.device.md)
+- [com.apple.developer.driverkit.family.hid.device](../BundleResources/entitlements/com.apple.developer.driverkit.family.hid.device.md)
   A Boolean value that indicates whether the driver provides a HID-related service to the system.
-- [IOHIDInterface](iohidinterface.md)
+- [IOHIDInterface](./iohidinterface.md)
   A provider object for a HID device’s interface.
-- [IOUserUSBHostHIDDevice](iouserusbhosthiddevice.md)
+- [IOUserUSBHostHIDDevice](./iouserusbhosthiddevice.md)
   A provider object for USB devices that support HID interactions.
-- [IOUserHIDDevice](iouserhiddevice.md)
+- [IOUserHIDDevice](./iouserhiddevice.md)
   A provider object for devices that support interactions with users.
-- [IOHIDDevice](iohiddevice.md)
+- [IOHIDDevice](./iohiddevice.md)
   An object containing the low-level behavior for all HID device providers.
 ### Events
-- [IOHIDDigitizerStylusData](iohiddigitizerstylusdata.md)
+- [IOHIDDigitizerStylusData](./iohiddigitizerstylusdata.md)
   A structure containing digitizer stylus data.
-- [IOHIDDigitizerTouchData](iohiddigitizertouchdata.md)
+- [IOHIDDigitizerTouchData](./iohiddigitizertouchdata.md)
   A structure containing the current digitizer touch data.
 ### HID Usage Tables
-- [HID Usage Tables](hid-usage-tables.md)
+- [HID Usage Tables](./hid-usage-tables.md)
   Identify the types of data that HID devices can report to your driver.
-- [Match Criteria](match-criteria.md)
+- [Match Criteria](./match-criteria.md)
   Specify the criteria that the system uses to match your driver to a device.
 ### HID Device Data
-- [IOHIDElement](iohidelement.md)
+- [IOHIDElement](./iohidelement.md)
   An object that contains parsed information from a HID input report.
-- [IOHIDDigitizerCollection](iohiddigitizercollection.md)
+- [IOHIDDigitizerCollection](./iohiddigitizercollection.md)
   A collection of elements that contain digitizer-related data.
-- [com.apple.developer.hid.virtual.device](../bundleresources/entitlements/com.apple.developer.hid.virtual.device.md)
+- [com.apple.developer.hid.virtual.device](../BundleResources/entitlements/com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
-- [Low-Level Information](low-level-information.md)
+- [Low-Level Information](./low-level-information.md)
   Understand the underlying structures that support HID drivers.
 ### Reference
-- [HIDDriverKit Macros](hiddriverkit-macros.md)
+- [HIDDriverKit Macros](./hiddriverkit-macros.md)
 ### Macros
-- [kIOHIDDeviceApprovedCarPlayDeviceKey](kiohiddeviceapprovedcarplaydevicekey.md)
-- [kIOHIDDeviceCarPlayDeviceKey](kiohiddevicecarplaydevicekey.md)
-- [kIOHIDDeviceHIDRMHashKey](kiohiddevicehidrmhashkey.md)
-- [kIOHIDEventServicePropertiesRequiredForMatching](kiohideventservicepropertiesrequiredformatching.md)
-- [kIOHIDEventServiceSensorControlOptionsKey](kiohideventservicesensorcontroloptionskey.md)
-- [kIOHIDSupportedEventMaskKey](kiohidsupportedeventmaskkey.md)
-- [kIOHIDSupportedKeyboardUsagePairsKey](kiohidsupportedkeyboardusagepairskey.md)
-- [kIOHIDSupportedVendorUsagePairsKey](kiohidsupportedvendorusagepairskey.md)
+- [kIOHIDDeviceApprovedCarPlayDeviceKey](./kiohiddeviceapprovedcarplaydevicekey.md)
+- [kIOHIDDeviceCarPlayDeviceKey](./kiohiddevicecarplaydevicekey.md)
+- [kIOHIDDeviceHIDRMHashKey](./kiohiddevicehidrmhashkey.md)
+- [kIOHIDEventServicePropertiesRequiredForMatching](./kiohideventservicepropertiesrequiredformatching.md)
+- [kIOHIDEventServiceSensorControlOptionsKey](./kiohideventservicesensorcontroloptionskey.md)
+- [kIOHIDSupportedEventMaskKey](./kiohidsupportedeventmaskkey.md)
+- [kIOHIDSupportedKeyboardUsagePairsKey](./kiohidsupportedkeyboardusagepairskey.md)
+- [kIOHIDSupportedVendorUsagePairsKey](./kiohidsupportedvendorusagepairskey.md)
 ### Enumeration Cases
-- [kHIDUsage_GenDevControls_BatteryStrength](khidusage_gendevcontrols_batterystrength.md)
-- [kHIDUsage_LED_BlueLEDChannel](khidusage_led_blueledchannel.md)
-- [kHIDUsage_LED_GoodStatus](khidusage_led_goodstatus.md)
-- [kHIDUsage_LED_GreenLEDChannel](khidusage_led_greenledchannel.md)
-- [kHIDUsage_LED_IndicatorBlue](khidusage_led_indicatorblue.md)
-- [kHIDUsage_LED_IndicatorOrange](khidusage_led_indicatororange.md)
-- [kHIDUsage_LED_LEDIntensity](khidusage_led_ledintensity.md)
-- [kHIDUsage_LED_RGB_LED](khidusage_led_rgb_led.md)
-- [kHIDUsage_LED_RedLEDChannel](khidusage_led_redledchannel.md)
-- [kHIDUsage_LED_SystemMicrophoneMute](khidusage_led_systemmicrophonemute.md)
-- [kHIDUsage_LED_WarningStatus](khidusage_led_warningstatus.md)
-- [kHIDUsage_Snsr_Biometric_HeartRate](khidusage_snsr_biometric_heartrate.md)
-- [kHIDUsage_Snsr_Data_Biometric_HeartRate](khidusage_snsr_data_biometric_heartrate.md)
-- [kHIDUsage_Snsr_Data_Hinge](khidusage_snsr_data_hinge.md)
-- [kHIDUsage_Snsr_Data_Hinge_Angle](khidusage_snsr_data_hinge_angle.md)
-- [kHIDUsage_Snsr_Motion_GravityVector](khidusage_snsr_motion_gravityvector.md)
-- [kHIDUsage_Snsr_Motion_LinearAccelerometer](khidusage_snsr_motion_linearaccelerometer.md)
-- [kHIDUsage_Snsr_Other_HingeAngle](khidusage_snsr_other_hingeangle.md)
+- [kHIDUsage_GenDevControls_BatteryStrength](./khidusage_gendevcontrols_batterystrength.md)
+- [kHIDUsage_LED_BlueLEDChannel](./khidusage_led_blueledchannel.md)
+- [kHIDUsage_LED_GoodStatus](./khidusage_led_goodstatus.md)
+- [kHIDUsage_LED_GreenLEDChannel](./khidusage_led_greenledchannel.md)
+- [kHIDUsage_LED_IndicatorBlue](./khidusage_led_indicatorblue.md)
+- [kHIDUsage_LED_IndicatorOrange](./khidusage_led_indicatororange.md)
+- [kHIDUsage_LED_LEDIntensity](./khidusage_led_ledintensity.md)
+- [kHIDUsage_LED_RGB_LED](./khidusage_led_rgb_led.md)
+- [kHIDUsage_LED_RedLEDChannel](./khidusage_led_redledchannel.md)
+- [kHIDUsage_LED_SystemMicrophoneMute](./khidusage_led_systemmicrophonemute.md)
+- [kHIDUsage_LED_WarningStatus](./khidusage_led_warningstatus.md)
+- [kHIDUsage_Snsr_Biometric_HeartRate](./khidusage_snsr_biometric_heartrate.md)
+- [kHIDUsage_Snsr_Data_Biometric_HeartRate](./khidusage_snsr_data_biometric_heartrate.md)
+- [kHIDUsage_Snsr_Data_Hinge](./khidusage_snsr_data_hinge.md)
+- [kHIDUsage_Snsr_Data_Hinge_Angle](./khidusage_snsr_data_hinge_angle.md)
+- [kHIDUsage_Snsr_Motion_GravityVector](./khidusage_snsr_motion_gravityvector.md)
+- [kHIDUsage_Snsr_Motion_LinearAccelerometer](./khidusage_snsr_motion_linearaccelerometer.md)
+- [kHIDUsage_Snsr_Other_HingeAngle](./khidusage_snsr_other_hingeangle.md)
 ### Enumerations
-- [IOHIDServiceSensorControlOptions](iohidservicesensorcontroloptions.md)
+- [IOHIDServiceSensorControlOptions](./iohidservicesensorcontroloptions.md)
 
 
 ---

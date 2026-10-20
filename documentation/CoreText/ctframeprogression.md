@@ -1,18 +1,19 @@
 # CTFrameProgression
 
 **Framework**: Core Text  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify frame progression types.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,43 +21,48 @@ Constants that specify frame progression types.
 enum CTFrameProgression
 ```
 
+```c
+enum CTFrameProgression : uint32_t;
+```
+
 #### Overview
 
-The lines of text within a frame may stack for either horizontal or vertical text. Values are enumerated for each stacking type supported by [`CTFrameProgression`](ctframeprogression.md). Frames with a progression type that specifies vertical text rotate lines 90 degrees counterclockwise during drawing.
+The lines of text within a frame may stack for either horizontal or vertical text. Values are enumerated for each stacking type supported by [`CTFrameProgression`](./ctframeprogression.md). Frames with a progression type that specifies vertical text rotate lines 90 degrees counterclockwise during drawing.
 
 ## Topics
 
 ### Constants
-- [CTFrameProgression.topToBottom](ctframeprogression/toptobottom.md)
+- [CTFrameProgression.topToBottom](./ctframeprogression/toptobottom.md)
   Lines stack top to bottom for horizontal text.
-- [CTFrameProgression.rightToLeft](ctframeprogression/righttoleft.md)
+- [CTFrameProgression.rightToLeft](./ctframeprogression/righttoleft.md)
   Lines stack right to left for vertical text.
-- [CTFrameProgression.leftToRight](ctframeprogression/lefttoright.md)
+- [CTFrameProgression.leftToRight](./ctframeprogression/lefttoright.md)
   Lines stack left to right for vertical text.
 ### Initializers
-- [init?(rawValue: UInt32)](ctframeprogression/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./ctframeprogression/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let kCTFrameProgressionAttributeName: CFString](kctframeprogressionattributename.md)
+### Constants
+- [let kCTFrameProgressionAttributeName: CFString](./kctframeprogressionattributename.md)
   Specifies progression for a frame.
-- [let kCTFramePathFillRuleAttributeName: CFString](kctframepathfillruleattributename.md)
+- [let kCTFramePathFillRuleAttributeName: CFString](./kctframepathfillruleattributename.md)
   The key used to specify the fill rule for a frame.
-- [let kCTFramePathWidthAttributeName: CFString](kctframepathwidthattributename.md)
+- [let kCTFramePathWidthAttributeName: CFString](./kctframepathwidthattributename.md)
   The key used to specify the frame width.
-- [let kCTFrameClippingPathsAttributeName: CFString](kctframeclippingpathsattributename.md)
+- [let kCTFrameClippingPathsAttributeName: CFString](./kctframeclippingpathsattributename.md)
   Specifies array of paths to clip frame.
-- [let kCTFramePathClippingPathAttributeName: CFString](kctframepathclippingpathattributename.md)
+- [let kCTFramePathClippingPathAttributeName: CFString](./kctframepathclippingpathattributename.md)
   Specifies clipping path.
 
 

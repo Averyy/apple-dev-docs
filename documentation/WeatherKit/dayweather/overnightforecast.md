@@ -1,7 +1,8 @@
 # overnightForecast
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weather forecast for 7PM on this day until 7AM the following day.
 

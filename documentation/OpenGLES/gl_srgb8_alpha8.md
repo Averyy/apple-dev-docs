@@ -1,7 +1,8 @@
 # GL_SRGB8_ALPHA8
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_SRGB8_ALPHA8: Int32 { get }
+```
+
+```c
+#define GL_SRGB8_ALPHA8
 ```
 
 

@@ -1,7 +1,8 @@
 # receiveTimeCalculated(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure IP to calculate receive time for inbound packets.
 

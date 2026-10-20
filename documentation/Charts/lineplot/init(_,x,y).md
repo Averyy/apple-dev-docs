@@ -1,7 +1,8 @@
 # init(_:x:y:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -21,7 +22,8 @@ init<Data>(_ data: Data, x: PlottableProjection<LinePlot<Content>.DataElement, s
 
 ## See Also
 
-- [init<Data>(Data, x: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, y: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, series: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>)](lineplot/init(_:x:y:series:).md)
+### Plotting lines from a collection
+- [init<Data>(Data, x: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, y: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, series: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>)](./init%28_,x,y,series%29.md)
 
 
 ---

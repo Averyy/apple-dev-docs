@@ -1,7 +1,8 @@
 # RCSService.Business.Feature
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing an RCS service feature supported by a business.
 
@@ -17,32 +18,32 @@ enum Feature
 ## Topics
 
 ### Enumeration Cases
-- [RCSService.Business.Feature.business](rcsservice/business/feature/business.md)
+- [RCSService.Business.Feature.business](./feature/business.md)
   Business feature.
-- [RCSService.Business.Feature.businessStandalone](rcsservice/business/feature/businessstandalone.md)
+- [RCSService.Business.Feature.businessStandalone](./feature/businessstandalone.md)
   Business Standalone feature.
-- [RCSService.Business.Feature.chat](rcsservice/business/feature/chat.md)
+- [RCSService.Business.Feature.chat](./feature/chat.md)
   Chat feature.
-- [RCSService.Business.Feature.customReaction](rcsservice/business/feature/customreaction.md)
+- [RCSService.Business.Feature.customReaction](./feature/customreaction.md)
   Custom Reaction feature.
-- [RCSService.Business.Feature.fileTransfer](rcsservice/business/feature/filetransfer.md)
+- [RCSService.Business.Feature.fileTransfer](./feature/filetransfer.md)
   File Transfer feature.
-- [RCSService.Business.Feature.geoPush](rcsservice/business/feature/geopush.md)
+- [RCSService.Business.Feature.geoPush](./feature/geopush.md)
   Geo Push feature.
-- [RCSService.Business.Feature.reaction](rcsservice/business/feature/reaction.md)
+- [RCSService.Business.Feature.reaction](./feature/reaction.md)
   Reaction feature.
-- [RCSService.Business.Feature.reply](rcsservice/business/feature/reply.md)
+- [RCSService.Business.Feature.reply](./feature/reply.md)
   Reply feature.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

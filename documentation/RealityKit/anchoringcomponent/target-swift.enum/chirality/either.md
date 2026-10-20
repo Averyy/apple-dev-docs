@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.Chirality.either
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+

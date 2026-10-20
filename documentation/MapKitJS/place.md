@@ -1,7 +1,8 @@
 # Place
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A place object that returns from a geocoder lookup, a reverse lookup, or a fetch request for points of interest.
 
@@ -10,78 +11,79 @@ A place object that returns from a geocoder lookup, a reverse lookup, or a fetch
 
 ## Declaration
 
-```swift
+```
 class Place
 ```
 
 ## Mentions
 
-- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+- [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
 #### Overview
 
-[`GeocoderResponse`](geocoderresponse.md), [`SearchResponse`](searchresponse.md), and [`PointsOfInterestSearchResponse`](pointsofinterestsearchresponse.md) return places.
+[`GeocoderResponse`](./geocoderresponse.md), [`SearchResponse`](./searchresponse.md), and [`PointsOfInterestSearchResponse`](./pointsofinterestsearchresponse.md) return places.
 
 ## Topics
 
 ### Place name and category
-- [name](place/name.md)
+- [name](./place/name.md)
   The name of the place.
-- [formattedAddress](place/formattedaddress.md)
+- [formattedAddress](./place/formattedaddress.md)
   The address of the place, formatted using its conventions of its country or region.
-- [areasOfInterest](place/areasofinterest.md)
+- [areasOfInterest](./place/areasofinterest.md)
   Common names of the area in which the place resides.
-- [pointOfInterestCategory](place/pointofinterestcategory.md)
+- [pointOfInterestCategory](./place/pointofinterestcategory.md)
   The category of the place.
 ### Street address
-- [thoroughfare](place/thoroughfare.md)
+- [thoroughfare](./place/thoroughfare.md)
   The street name at the place.
-- [subThoroughfare](place/subthoroughfare.md)
+- [subThoroughfare](./place/subthoroughfare.md)
   The number on the street at the place.
-- [fullThoroughfare](place/fullthoroughfare.md)
+- [fullThoroughfare](./place/fullthoroughfare.md)
   A combination of thoroughfare and subthoroughfare.
-- [postCode](place/postcode.md)
+- [postCode](./place/postcode.md)
   The postal code of the place.
 ### City and district address
-- [locality](place/locality.md)
+- [locality](./place/locality.md)
   The city of the place.
-- [subLocality](place/sublocality.md)
+- [subLocality](./place/sublocality.md)
   The name of the area within the locality.
-- [dependentLocalities](place/dependentlocalities.md)
+- [dependentLocalities](./place/dependentlocalities.md)
   Common names for the local area or neighborhood of the place.
-- [administrativeArea](place/administrativearea.md)
+- [administrativeArea](./place/administrativearea.md)
   The state or province of the place.
-- [administrativeAreaCode](place/administrativeareacode.md)
+- [administrativeAreaCode](./place/administrativeareacode.md)
   The short code for the state or area.
 ### Country address
-- [country](place/country.md)
+- [country](./place/country.md)
   The country or region of the place.
-- [countryCode](place/countrycode.md)
+- [countryCode](./place/countrycode.md)
   The country or region associated with the place.
 ### Location
-- [coordinate](place/coordinate.md)
+- [coordinate](./place/coordinate.md)
   The latitude and longitude for the place.
-- [region](place/region.md)
+- [region](./place/region.md)
   The geographic region associated with the place.
 ### Place IDs
-- [id](place/id.md)
+- [id](./place/id.md)
   The Place ID referencing a feature.
-- [alternateIds](place/alternateids.md)
+- [alternateIds](./place/alternateids.md)
   A list of alternate Place IDs referencing a feature.
 
 ## See Also
 
-- [class PlaceLookup](placelookup.md)
+### Places
+- [class PlaceLookup](./placelookup.md)
   An object that provides the ability to look up place information for a specified Place ID.
-- [placeDetails](mapkit/placedetails.md)
+- [placeDetails](./mapkit/placedetails.md)
   A list of all place detail objects that are currently active on a page.
-- [interface PlaceSelectionAccessoryOptions](placeselectionaccessoryoptions.md)
+- [interface PlaceSelectionAccessoryOptions](./placeselectionaccessoryoptions.md)
   The options for selection accessories.
-- [class PlaceAnnotation](placeannotation.md)
+- [class PlaceAnnotation](./placeannotation.md)
   An annotation for a place.
-- [class PlaceDetail](placedetail.md)
+- [class PlaceDetail](./placedetail.md)
   An interactive view that displays information about a place.
-- [class PlaceSelectionAccessory](placeselectionaccessory.md)
+- [class PlaceSelectionAccessory](./placeselectionaccessory.md)
   The accessory that conveys information about a place associated with an annotation.
 
 

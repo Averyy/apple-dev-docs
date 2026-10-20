@@ -1,7 +1,8 @@
 # PMPreset
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque type that stores information about a named preset available for a print job.
 
@@ -14,9 +15,13 @@ An opaque type that stores information about a named preset available for a prin
 typealias PMPreset = OpaquePointer
 ```
 
+```c
+typedef struct OpaquePMPreset *PMPreset;
+```
+
 #### Discussion
 
-Your application uses a preset object to identify a named preset in the Print dialog. You typically obtain an instance of this type using the function [`PMPrinterCopyPresets(_:_:)`](1459117-pmprintercopypresets.md).
+Your application uses a preset object to identify a named preset in the Print dialog. You typically obtain an instance of this type using the function [`PMPrinterCopyPresets(_:_:)`](./api-1459117-pmprintercopypresets.md).
 
 
 ---

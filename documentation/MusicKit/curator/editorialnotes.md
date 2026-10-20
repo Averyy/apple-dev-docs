@@ -1,7 +1,8 @@
 # editorialNotes
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notes about the curator that appear in the Music catalog.
 

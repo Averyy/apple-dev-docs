@@ -1,7 +1,8 @@
 # roundToOddHermitean
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter which controls how graph rounds the output tensor size for a Hermitean-to-real Fourier transform.
 
@@ -19,9 +20,13 @@ A parameter which controls how graph rounds the output tensor size for a Hermite
 var roundToOddHermitean: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL roundToOddHermitean;
+```
+
 #### Discussion
 
-If set to `YES` then MPSGraph rounds the last output dimension of the result tensor in [`HermiteanToRealFFT(_:axesTensor:descriptor:name:)`](mpsgraph/hermiteantorealfft(_:axestensor:descriptor:name:).md) to an odd value. Has no effect in the other Fourier transform operations. Default value: `NO`.
+If set to `YES` then MPSGraph rounds the last output dimension of the result tensor in [`HermiteanToRealFFT(_:axesTensor:descriptor:name:)`](../mpsgraph/hermiteantorealfft%28_,axestensor,descriptor,name%29.md) to an odd value. Has no effect in the other Fourier transform operations. Default value: `NO`.
 
 
 ---

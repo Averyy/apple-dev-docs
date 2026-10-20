@@ -1,7 +1,8 @@
 # setTo(_:)
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver to a specified value.
 
@@ -15,13 +16,17 @@ Sets the receiver to a specified value.
 func setTo(_ value: Any?)
 ```
 
+```objc
+- (void) setTo:(id) value;
+```
+
 #### Discussion
 
 You should not call this method directly.
 
 ## Parameters
 
-- `value`: The data the receiver should be set to. It can be an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), `SBObject`, or any other type of object supported by the Scripting Bridge framework.
+- `value`: The data the receiver should be set to. It can be an [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSArray`](../../Foundation/nsarray.md), `SBObject`, or any other type of object supported by the Scripting Bridge framework.
 
 
 ---

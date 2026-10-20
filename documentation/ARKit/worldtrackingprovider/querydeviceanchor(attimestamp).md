@@ -1,7 +1,8 @@
 # queryDeviceAnchor(atTimestamp:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The predicted pose of the current device at a given time.
 
@@ -21,9 +22,9 @@ The predicted position and orientation of the device at the time you specify.
 
 #### Discussion
 
-Pass the `timestamp` parameter as absolute time in seconds. For example, to get the device’s current pose, pass [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime()) as the timestamp.
+Pass the `timestamp` parameter as absolute time in seconds. For example, to get the device’s current pose, pass [`CACurrentMediaTime()`](../../QuartzCore/cacurrentmediatime%28%29.md) as the timestamp.
 
-> ❗ **Important**:  Predicting future device pose is a computationally expensive operation. You typically only use this method when implementing your own rendering with the [`Compositor Services`](https://developer.apple.com/documentation/compositorservices) framework.
+> ❗ **Important**:  Predicting future device pose is a computationally expensive operation. You typically only use this method when implementing your own rendering with the [Compositor Services](../../CompositorServices/CompositorServices.md) framework.
 
 ## Parameters
 

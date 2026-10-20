@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Changes the NDEF tag status to read-only, preventing future write operations.
@@ -14,7 +15,15 @@ Changes the NDEF tag status to read-only, preventing future write operations.
 ## Declaration
 
 ```swift
+func writeLock(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeLock() async throws
+```
+
+```objc
+- (void) writeLockWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -23,11 +32,16 @@ Calling this method updates the write access condition byte in the NDEF File Con
 
 ## Parameters
 
-- `completionHandler`: The handler invoked by the reader session after completing the lock request. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md). The handler has the following parameter: - **error**: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object if the write request fails. A value of `nil` indicates that the session locked the tag and future write requests aren’t possible.
+- `completionHandler`: The handler invoked by the reader session after completing the lock request. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](../nfcndefreadersession.md).
+
+  The handler has the following parameter:
+
+  - **error**: An [`NSError`](../../Foundation/nserror.md) object if the write request fails. A value of `nil` indicates that the session locked the tag and future write requests aren’t possible.
 
 ## See Also
 
-- [func writeNDEF(NFCNDEFMessage, completionHandler: ((any Error)?) -> Void)](nfcndeftag/writendef(_:completionhandler:).md)
+### Writing to the Tag
+- [func writeNDEF(NFCNDEFMessage, completionHandler: ((any Error)?) -> Void)](./writendef%28_,completionhandler%29.md)
   Saves an NDEF message to a writable tag.
 
 

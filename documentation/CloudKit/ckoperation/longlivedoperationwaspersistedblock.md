@@ -1,7 +1,8 @@
 # longLivedOperationWasPersistedBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when the server begins to store callbacks for the long-lived operation.
 
@@ -20,19 +21,24 @@ The closure to execute when the server begins to store callbacks for the long-li
 var longLivedOperationWasPersistedBlock: (() -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^longLivedOperationWasPersistedBlock)();
+```
+
 #### Discussion
 
-If your app exits before CloudKit calls this property’s value, the system doesn’t include the operation’s ID in the results of calls to the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method.
+If your app exits before CloudKit calls this property’s value, the system doesn’t include the operation’s ID in the results of calls to the [`allLongLivedOperationIDs()`](../ckcontainer/alllonglivedoperationids%28%29.md) method.
 
-For more information, see [`Long-Lived Operations`](ckoperation#Long-Lived-Operations.md).
+For more information, see [Long-Lived Operations](../ckoperation.md#Long-Lived-Operations).
 
 ## See Also
 
-- [var configuration: CKOperation.Configuration!](ckoperation/configuration-swift.property.md)
+### Managing the Operation’s Configuration
+- [var configuration: CKOperation.Configuration!](./configuration-swift.property.md)
   The operation’s configuration.
-- [CKOperation.Configuration](ckoperation/configuration-swift.class.md)
+- [CKOperation.Configuration](./configuration-swift.class.md)
   An object that describes how a CloudKit operation behaves.
-- [var group: CKOperationGroup?](ckoperation/group.md)
+- [var group: CKOperationGroup?](./group.md)
   The operation’s group.
 
 

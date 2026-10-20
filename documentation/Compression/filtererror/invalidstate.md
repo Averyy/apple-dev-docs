@@ -1,7 +1,8 @@
 # FilterError.invalidState
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a filter failed to initialize, or that it has an invalid internal stare or parameters.
 
@@ -11,7 +12,7 @@ An error that indicates a filter failed to initialize, or that it has an invalid
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

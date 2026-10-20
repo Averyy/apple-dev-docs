@@ -1,7 +1,8 @@
 # getDocument
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Retrieves the document associated with the specified menu item.
 
@@ -10,13 +11,13 @@ Retrieves the document associated with the specified menu item.
 
 ## Declaration
 
-```swift
+```
 Document getDocument(
     in Element menuItem
 );
 ```
 
-#### Return_value
+#### Return Value
 
 The TVML page associated with the selected menu item.
 
@@ -26,11 +27,12 @@ The TVML page associated with the selected menu item.
 
 ## See Also
 
-- [getSelectedItem](menubardocument/1657224-getselecteditem.md)
+### Setting and Retrieving Menu Item Documents
+- [getSelectedItem](./api-1657224-getselecteditem.md)
   Retrieves the menu item in the menu bar that is currently in focus.
-- [setDocument](menubardocument/1627374-setdocument.md)
+- [setDocument](./api-1627374-setdocument.md)
   Associates a document with a menu item.
-- [setSelectedItem](menubardocument/1627427-setselecteditem.md)
+- [setSelectedItem](./api-1627427-setselecteditem.md)
   Sets the focus in a menu bar to the specified menu item.
 
 

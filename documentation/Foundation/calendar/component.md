@@ -1,7 +1,8 @@
 # Calendar.Component
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration for the various components of a calendar date.
 
@@ -22,9 +23,9 @@ enum Component
 
 #### Overview
 
-You use one or more [`Calendar.Component`](calendar/component.md) values with the [`component(_:from:)`](calendar/component(_:from:).md) or [`dateComponents(_:from:)`](calendar/datecomponents(_:from:).md) methods to specify parts to extract from a given [`Date`](date.md).
+You use one or more [`Calendar.Component`](./component.md) values with the [`component(_:from:)`](./component%28_,from%29.md) or [`dateComponents(_:from:)`](./datecomponents%28_,from%29.md) methods to specify parts to extract from a given [`Date`](../date.md).
 
-The following code listing shows how to use the year, month, and day components to get the corresponding units of the current Gregorian calendar date as a [`DateComponents`](datecomponents.md) instance.
+The following code listing shows how to use the year, month, and day components to get the corresponding units of the current Gregorian calendar date as a [`DateComponents`](../datecomponents.md) instance.
 
 ```swift
 let myCalendar = Calendar(identifier: .gregorian)
@@ -34,67 +35,68 @@ let ymd = myCalendar.dateComponents([.year, .month, .day], from: Date())
 ## Topics
 
 ### Specifying Years and Months
-- [Calendar.Component.era](calendar/component/era.md)
+- [Calendar.Component.era](./component/era.md)
   Identifier for the era unit.
-- [Calendar.Component.year](calendar/component/year.md)
+- [Calendar.Component.year](./component/year.md)
   Identifier for the year unit.
-- [Calendar.Component.yearForWeekOfYear](calendar/component/yearforweekofyear.md)
+- [Calendar.Component.yearForWeekOfYear](./component/yearforweekofyear.md)
   Identifier for the week-counting year unit.
-- [Calendar.Component.quarter](calendar/component/quarter.md)
+- [Calendar.Component.quarter](./component/quarter.md)
   Identifier for the quarter of the calendar.
-- [Calendar.Component.month](calendar/component/month.md)
+- [Calendar.Component.month](./component/month.md)
   Identifier for the month unit.
 ### Specifying Weeks and Days
-- [Calendar.Component.weekOfYear](calendar/component/weekofyear.md)
+- [Calendar.Component.weekOfYear](./component/weekofyear.md)
   Identifier for the week of the year unit.
-- [Calendar.Component.weekOfMonth](calendar/component/weekofmonth.md)
+- [Calendar.Component.weekOfMonth](./component/weekofmonth.md)
   Identifier for the week of the month calendar unit.
-- [Calendar.Component.weekday](calendar/component/weekday.md)
+- [Calendar.Component.weekday](./component/weekday.md)
   Identifier for the weekday unit.
-- [Calendar.Component.weekdayOrdinal](calendar/component/weekdayordinal.md)
+- [Calendar.Component.weekdayOrdinal](./component/weekdayordinal.md)
   Identifier for the weekday ordinal unit.
-- [Calendar.Component.day](calendar/component/day.md)
+- [Calendar.Component.day](./component/day.md)
   Identifier for the day unit.
 ### Specifying Hours, Minutes, and Seconds
-- [Calendar.Component.hour](calendar/component/hour.md)
+- [Calendar.Component.hour](./component/hour.md)
   Identifier for the hour unit.
-- [Calendar.Component.minute](calendar/component/minute.md)
+- [Calendar.Component.minute](./component/minute.md)
   Identifier for the minute unit.
-- [Calendar.Component.second](calendar/component/second.md)
+- [Calendar.Component.second](./component/second.md)
   Identifier for the second unit.
-- [Calendar.Component.nanosecond](calendar/component/nanosecond.md)
+- [Calendar.Component.nanosecond](./component/nanosecond.md)
   Identifier for the nanosecond unit.
 ### Specifying Calendars and Time Zones
-- [Calendar.Component.calendar](calendar/component/calendar.md)
+- [Calendar.Component.calendar](./component/calendar.md)
   Identifier for the calendar unit.
-- [Calendar.Component.timeZone](calendar/component/timezone.md)
+- [Calendar.Component.timeZone](./component/timezone.md)
   Identifier for the time zone unit.
 ### Enumeration Cases
-- [Calendar.Component.dayOfYear](calendar/component/dayofyear.md)
-- [Calendar.Component.isLeapMonth](calendar/component/isleapmonth.md)
-- [Calendar.Component.isRepeatedDay](calendar/component/isrepeatedday.md)
+- [Calendar.Component.dayOfYear](./component/dayofyear.md)
+- [Calendar.Component.isLeapMonth](./component/isleapmonth.md)
+- [Calendar.Component.isRepeatedDay](./component/isrepeatedday.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func date(Date, matchesComponents: DateComponents) -> Bool](calendar/date(_:matchescomponents:).md)
+### Extracting Components
+- [func date(Date, matchesComponents: DateComponents) -> Bool](./date%28_,matchescomponents%29.md)
   Determines if the date has all of the specified date components.
-- [func component(Calendar.Component, from: Date) -> Int](calendar/component(_:from:).md)
+- [func component(Calendar.Component, from: Date) -> Int](./component%28_,from%29.md)
   Returns the value for one component of a date.
-- [func dateComponents(Set<Calendar.Component>, from: Date) -> DateComponents](calendar/datecomponents(_:from:).md)
+- [func dateComponents(Set<Calendar.Component>, from: Date) -> DateComponents](./datecomponents%28_,from%29.md)
   Returns all the date components of a date, using the calendar time zone.
-- [func dateComponents(Set<Calendar.Component>, from: Date, to: Date) -> DateComponents](calendar/datecomponents(_:from:to:)-2kcg.md)
+- [func dateComponents(Set<Calendar.Component>, from: Date, to: Date) -> DateComponents](./datecomponents%28_,from,to%29-2kcg.md)
   Returns the difference between two dates.
-- [func dateComponents(Set<Calendar.Component>, from: DateComponents, to: DateComponents) -> DateComponents](calendar/datecomponents(_:from:to:)-5g20t.md)
+- [func dateComponents(Set<Calendar.Component>, from: DateComponents, to: DateComponents) -> DateComponents](./datecomponents%28_,from,to%29-5g20t.md)
   Returns the difference between two dates specified as `DateComponents`.
-- [func dateComponents(in: TimeZone, from: Date) -> DateComponents](calendar/datecomponents(in:from:).md)
+- [func dateComponents(in: TimeZone, from: Date) -> DateComponents](./datecomponents%28in,from%29.md)
   Returns all the date components of a date, as if in a given time zone (instead of the `Calendar` time zone).
 
 

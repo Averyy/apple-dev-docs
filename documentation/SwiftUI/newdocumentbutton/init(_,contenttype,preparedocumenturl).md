@@ -1,7 +1,8 @@
 # init(_:contentType:prepareDocumentURL:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and opens new documents.
 
@@ -17,6 +18,25 @@ Creates and opens new documents.
 ```swift
 @export(implementation)
 nonisolated init(_ title: LocalizedStringResource, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ label: Text? = nil, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+```swift
+nonisolated
+init(_ title: LocalizedStringKey, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+```swift
+nonisolated
+init(_ title: some StringProtocol, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
 ```
 
 #### Discussion
@@ -88,7 +108,8 @@ struct TemplatePicker: View {
 
 ## See Also
 
-- [init(_:contentType:)](newdocumentbutton/init(_:contenttype:).md)
+### Creating and opening a document
+- [init(_:contentType:)](./init%28_,contenttype%29.md)
   Creates and opens new documents.
 
 

@@ -1,7 +1,8 @@
 # IOSurfaceRef
 
 **Framework**: IOSurface  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Data type representing an IOSurface opaque object.
 
@@ -19,22 +20,27 @@ Data type representing an IOSurface opaque object.
 class IOSurfaceRef
 ```
 
+```c
+typedef struct __IOSurface * IOSurfaceRef;
+```
+
 ## Topics
 
 ### Initializers
-- [init(IOSurface)](iosurfaceref/init(_:).md)
+- [init(IOSurface)](./iosurfaceref/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class IOSurface](iosurface.md)
+### Classes
+- [class IOSurface](./iosurface-page.md)
   Data type representing an IOSurface opaque object.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes any barrier set on the command.
@@ -20,13 +21,18 @@ Removes any barrier set on the command.
 func clearBarrier()
 ```
 
+```objc
+- (void) clearBarrier;
+```
+
 #### Discussion
 
 You need to set or clear barriers (as needed) before executing any of the commands in the indirect command buffer.
 
 ## See Also
 
-- [func setBarrier()](mtlindirectcomputecommand/setbarrier.md)
+### Synchronizing command execution
+- [func setBarrier()](./setbarrier%28%29.md)
   Adds a barrier to ensure that commands executed prior to this command are complete before this command executes.
 
 

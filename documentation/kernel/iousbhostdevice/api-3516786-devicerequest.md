@@ -1,14 +1,15 @@
 # deviceRequest
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn deviceRequest(IOService *forClient, StandardUSB::DeviceRequest & request, IOMemoryDescriptor *dataBuffer, IOUSBHostCompletion *completion, uint32_t completionTimeoutMs);
 ```
 

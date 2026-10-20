@@ -1,7 +1,8 @@
 # allowsProminentActivity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value the system uses to elevate a system activity to make it more prominent.
 
@@ -15,6 +16,10 @@ A Boolean value the system uses to elevate a system activity to make it more pro
 
 ```swift
 var allowsProminentActivity: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL allowsProminentActivity;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # writeAttributeNullableCharString(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeNullableCharString(withValue value: String?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeNullableCharString(withValue value: String?) async throws
+```
+
+```objc
+- (void) writeAttributeNullableCharStringWithValue:(NSString *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

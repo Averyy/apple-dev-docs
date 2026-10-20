@@ -1,7 +1,8 @@
 # init(_:x:y:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -21,10 +22,11 @@ init<Data>(_ data: Data, x: KeyPath<Data.Element, CGFloat>, y: PlottableProjecti
 
 ## See Also
 
-- [init<Data>(Data, x: CGFloat?, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](pointplot/init(_:x:y:)-1p6px.md)
-- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: CGFloat?)](pointplot/init(_:x:y:)-72pm2.md)
-- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](pointplot/init(_:x:y:)-7frpp.md)
-- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: KeyPath<PointPlot<Content>.DataElement, CGFloat>)](pointplot/init(_:x:y:)-9p3yg.md)
+### Plotting points from a collection
+- [init<Data>(Data, x: CGFloat?, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](./init%28_,x,y%29-1p6px.md)
+- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: CGFloat?)](./init%28_,x,y%29-72pm2.md)
+- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](./init%28_,x,y%29-7frpp.md)
+- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: KeyPath<PointPlot<Content>.DataElement, CGFloat>)](./init%28_,x,y%29-9p3yg.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # resultFailed
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 3.0+
@@ -19,9 +20,10 @@ static var resultFailed: EABluetoothAccessoryPickerError.Code { get }
 
 ## See Also
 
-- [static var alreadyConnected: EABluetoothAccessoryPickerError.Code](eabluetoothaccessorypickererror/alreadyconnected.md)
-- [static var resultCancelled: EABluetoothAccessoryPickerError.Code](eabluetoothaccessorypickererror/resultcancelled.md)
-- [static var resultNotFound: EABluetoothAccessoryPickerError.Code](eabluetoothaccessorypickererror/resultnotfound.md)
+### Error Codes
+- [static var alreadyConnected: EABluetoothAccessoryPickerError.Code](./alreadyconnected.md)
+- [static var resultCancelled: EABluetoothAccessoryPickerError.Code](./resultcancelled.md)
+- [static var resultNotFound: EABluetoothAccessoryPickerError.Code](./resultnotfound.md)
 
 
 ---

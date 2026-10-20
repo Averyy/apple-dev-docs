@@ -1,17 +1,18 @@
 # init
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the event service.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -21,13 +22,14 @@ virtual bool init();
 
 ## See Also
 
-- [Start](iouserusbhosthiddevice/start.md)
+### Running the Service
+- [Start](./start.md)
   Starts the current device service and associates it with the specified provider object.
-- [handleStart](iouserusbhosthiddevice/handlestart.md)
+- [handleStart](./handlestart.md)
   Performs any custom initialization associated with starting the device service.
-- [Stop](iouserusbhosthiddevice/stop.md)
+- [Stop](./stop.md)
   Stops the device service associated with the specified provider.
-- [free](iouserusbhosthiddevice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

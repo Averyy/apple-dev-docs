@@ -1,7 +1,8 @@
 # cmLinkClass
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A device link profile.
 

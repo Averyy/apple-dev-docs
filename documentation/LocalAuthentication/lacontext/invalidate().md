@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the authentication context.
 
@@ -19,9 +20,13 @@ Invalidates the authentication context.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
-Calling this method stops any pending policy evaluations, causing them to fail with the [`LAError.Code.appCancel`](laerror-swift.struct/code/appcancel.md) error code. Once an authentication context has been invalidated, it cannot be used for policy evaluation. Invalidating a context that has been already invalidated has no effect.
+Calling this method stops any pending policy evaluations, causing them to fail with the [`LAError.Code.appCancel`](../laerror-swift.struct/code/appcancel.md) error code. Once an authentication context has been invalidated, it cannot be used for policy evaluation. Invalidating a context that has been already invalidated has no effect.
 
 
 ---

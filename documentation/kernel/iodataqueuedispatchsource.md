@@ -1,85 +1,87 @@
 # IODataQueueDispatchSource
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```cpp
 class IODataQueueDispatchSource : IODispatchSource, IODataQueueDispatchSourceInterface
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- CanEnqueueData](iodataqueuedispatchsource/3943320-canenqueuedata.md)
-- [- CanEnqueueData](iodataqueuedispatchsource/3969247-canenqueuedata.md)
-- [- Cancel_Impl](iodataqueuedispatchsource/3223201-cancel_impl.md)
-- [- CheckForWork_Impl](iodataqueuedispatchsource/3223202-checkforwork_impl.md)
-- [- CopyDataAvailableHandler](iodataqueuedispatchsource/3223203-copydataavailablehandler.md)
-- [- CopyDataAvailableHandler_Impl](iodataqueuedispatchsource/3223204-copydataavailablehandler_impl.md)
-- [- CopyDataServicedHandler](iodataqueuedispatchsource/3223206-copydataservicedhandler.md)
-- [- CopyDataServicedHandler_Impl](iodataqueuedispatchsource/3223207-copydataservicedhandler_impl.md)
-- [- CopyMemory](iodataqueuedispatchsource/3223209-copymemory.md)
-- [- CopyMemory_Impl](iodataqueuedispatchsource/3223210-copymemory_impl.md)
-- [- DataAvailable](iodataqueuedispatchsource/3223215-dataavailable.md)
-- [- DataServiced](iodataqueuedispatchsource/3223217-dataserviced.md)
-- [- Dequeue](iodataqueuedispatchsource/3438178-dequeue.md)
+- [- CanEnqueueData](./iodataqueuedispatchsource/api-3943320-canenqueuedata.md)
+- [- CanEnqueueData](./iodataqueuedispatchsource/api-3969247-canenqueuedata.md)
+- [- Cancel_Impl](./iodataqueuedispatchsource/api-3223201-cancel_impl.md)
+- [- CheckForWork_Impl](./iodataqueuedispatchsource/api-3223202-checkforwork_impl.md)
+- [- CopyDataAvailableHandler](./iodataqueuedispatchsource/api-3223203-copydataavailablehandler.md)
+- [- CopyDataAvailableHandler_Impl](./iodataqueuedispatchsource/api-3223204-copydataavailablehandler_impl.md)
+- [- CopyDataServicedHandler](./iodataqueuedispatchsource/api-3223206-copydataservicedhandler.md)
+- [- CopyDataServicedHandler_Impl](./iodataqueuedispatchsource/api-3223207-copydataservicedhandler_impl.md)
+- [- CopyMemory](./iodataqueuedispatchsource/api-3223209-copymemory.md)
+- [- CopyMemory_Impl](./iodataqueuedispatchsource/api-3223210-copymemory_impl.md)
+- [- DataAvailable](./iodataqueuedispatchsource/api-3223215-dataavailable.md)
+- [- DataServiced](./iodataqueuedispatchsource/api-3223217-dataserviced.md)
+- [- Dequeue](./iodataqueuedispatchsource/api-3438178-dequeue.md)
   Removes the next entry from the queue.
-- [- DequeueWithCoalesce](iodataqueuedispatchsource/3438179-dequeuewithcoalesce.md)
+- [- DequeueWithCoalesce](./iodataqueuedispatchsource/api-3438179-dequeuewithcoalesce.md)
   Removes the next queue entry, but doesn't automatically send notifications.
-- [- Dispatch](iodataqueuedispatchsource/3223220-dispatch.md)
-- [- Enqueue](iodataqueuedispatchsource/3438180-enqueue.md)
+- [- Dispatch](./iodataqueuedispatchsource/api-3223220-dispatch.md)
+- [- Enqueue](./iodataqueuedispatchsource/api-3438180-enqueue.md)
   Adds a single entry to the shared data queue.
-- [- EnqueueWithCoalesce](iodataqueuedispatchsource/3438181-enqueuewithcoalesce.md)
+- [- EnqueueWithCoalesce](./iodataqueuedispatchsource/api-3438181-enqueuewithcoalesce.md)
   Adds an entry to the queue, but doesn't automatically send a data-available notification.
-- [- IsDataAvailable](iodataqueuedispatchsource/3438182-isdataavailable.md)
+- [- IsDataAvailable](./iodataqueuedispatchsource/api-3438182-isdataavailable.md)
   Checks whether the data queue contains data to process.
-- [- Peek](iodataqueuedispatchsource/3438183-peek.md)
+- [- Peek](./iodataqueuedispatchsource/api-3438183-peek.md)
   Returns the next queue entry without removing it from the queue.
-- [- SendDataAvailable](iodataqueuedispatchsource/3438184-senddataavailable.md)
+- [- SendDataAvailable](./iodataqueuedispatchsource/api-3438184-senddataavailable.md)
   Sends a notification to observers that indicates more data is available for processing.
-- [- SendDataServiced](iodataqueuedispatchsource/3438185-senddataserviced.md)
+- [- SendDataServiced](./iodataqueuedispatchsource/api-3438185-senddataserviced.md)
   Notifies interested parties that you removed data from the queue. 
-- [- SetDataAvailableHandler](iodataqueuedispatchsource/3223226-setdataavailablehandler.md)
-- [- SetDataAvailableHandler_Impl](iodataqueuedispatchsource/3223227-setdataavailablehandler_impl.md)
-- [- SetDataServicedHandler](iodataqueuedispatchsource/3223229-setdataservicedhandler.md)
-- [- SetDataServicedHandler_Impl](iodataqueuedispatchsource/3223230-setdataservicedhandler_impl.md)
-- [- SetEnableWithCompletion_Impl](iodataqueuedispatchsource/3325695-setenablewithcompletion_impl.md)
-- [- free](iodataqueuedispatchsource/3438186-free.md)
+- [- SetDataAvailableHandler](./iodataqueuedispatchsource/api-3223226-setdataavailablehandler.md)
+- [- SetDataAvailableHandler_Impl](./iodataqueuedispatchsource/api-3223227-setdataavailablehandler_impl.md)
+- [- SetDataServicedHandler](./iodataqueuedispatchsource/api-3223229-setdataservicedhandler.md)
+- [- SetDataServicedHandler_Impl](./iodataqueuedispatchsource/api-3223230-setdataservicedhandler_impl.md)
+- [- SetEnableWithCompletion_Impl](./iodataqueuedispatchsource/api-3325695-setenablewithcompletion_impl.md)
+- [- free](./iodataqueuedispatchsource/api-3438186-free.md)
   Performs any final cleanup for the data-queue dispatch source.
-- [- getMetaClass](iodataqueuedispatchsource/3223234-getmetaclass.md)
-- [- init](iodataqueuedispatchsource/3438187-init.md)
+- [- getMetaClass](./iodataqueuedispatchsource/api-3223234-getmetaclass.md)
+- [- init](./iodataqueuedispatchsource/api-3438187-init.md)
   Handles the basic initialization of the dispatch source.
 ### Type Methods
-- [+ CopyDataAvailableHandler_Invoke](iodataqueuedispatchsource/3223205-copydataavailablehandler_invoke.md)
-- [+ CopyDataServicedHandler_Invoke](iodataqueuedispatchsource/3223208-copydataservicedhandler_invoke.md)
-- [+ CopyMemory_Invoke](iodataqueuedispatchsource/3223211-copymemory_invoke.md)
-- [+ Create](iodataqueuedispatchsource/3438177-create.md)
+- [+ CopyDataAvailableHandler_Invoke](./iodataqueuedispatchsource/api-3223205-copydataavailablehandler_invoke.md)
+- [+ CopyDataServicedHandler_Invoke](./iodataqueuedispatchsource/api-3223208-copydataservicedhandler_invoke.md)
+- [+ CopyMemory_Invoke](./iodataqueuedispatchsource/api-3223211-copymemory_invoke.md)
+- [+ Create](./iodataqueuedispatchsource/api-3438177-create.md)
   Creates a dispatch source that you use as a shared-memory data queue.
-- [+ Create_Impl](iodataqueuedispatchsource/3223213-create_impl.md)
-- [+ Create_Invoke](iodataqueuedispatchsource/3223214-create_invoke.md)
-- [+ DataAvailable_Invoke](iodataqueuedispatchsource/4519990-dataavailable_invoke.md)
-- [+ DataAvailable_Invoke](iodataqueuedispatchsource/4519991-dataavailable_invoke.md)
-- [+ DataServiced_Invoke](iodataqueuedispatchsource/4519992-dataserviced_invoke.md)
-- [+ DataServiced_Invoke](iodataqueuedispatchsource/4519993-dataserviced_invoke.md)
-- [+ GetDataQueueEntryHeaderSize](iodataqueuedispatchsource/3969248-getdataqueueentryheadersize.md)
-- [+ SetDataAvailableHandler_Invoke](iodataqueuedispatchsource/3223228-setdataavailablehandler_invoke.md)
-- [+ SetDataServicedHandler_Invoke](iodataqueuedispatchsource/3223231-setdataservicedhandler_invoke.md)
+- [+ Create_Impl](./iodataqueuedispatchsource/api-3223213-create_impl.md)
+- [+ Create_Invoke](./iodataqueuedispatchsource/api-3223214-create_invoke.md)
+- [+ DataAvailable_Invoke](./iodataqueuedispatchsource/api-4519990-dataavailable_invoke.md)
+- [+ DataAvailable_Invoke](./iodataqueuedispatchsource/api-4519991-dataavailable_invoke.md)
+- [+ DataServiced_Invoke](./iodataqueuedispatchsource/api-4519992-dataserviced_invoke.md)
+- [+ DataServiced_Invoke](./iodataqueuedispatchsource/api-4519993-dataserviced_invoke.md)
+- [+ GetDataQueueEntryHeaderSize](./iodataqueuedispatchsource/api-3969248-getdataqueueentryheadersize.md)
+- [+ SetDataAvailableHandler_Invoke](./iodataqueuedispatchsource/api-3223228-setdataavailablehandler_invoke.md)
+- [+ SetDataServicedHandler_Invoke](./iodataqueuedispatchsource/api-3223231-setdataservicedhandler_invoke.md)
 
 ## Relationships
 
 ### Inherits From
-- [IODataQueueDispatchSourceInterface](iodataqueuedispatchsourceinterface.md)
-- [IODispatchSource](iodispatchsource.md)
+- [IODataQueueDispatchSourceInterface](./iodataqueuedispatchsourceinterface.md)
+- [IODispatchSource](./iodispatchsource.md)
 
 ## See Also
 
-- [IODataQueueDispatchSourceInterface](iodataqueuedispatchsourceinterface.md)
-- [IODataQueue](iodataqueue.md)
+### Data Queues
+- [IODataQueueDispatchSourceInterface](./iodataqueuedispatchsourceinterface.md)
+- [IODataQueue](./iodataqueue.md)
   A generic queue designed to pass data from the kernel to a user process.
 
 

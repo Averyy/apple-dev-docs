@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A readable name for the credential.
 

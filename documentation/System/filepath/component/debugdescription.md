@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the path component, suitable for debugging.
 

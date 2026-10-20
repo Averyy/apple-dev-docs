@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared cookie storage instance.
 
@@ -20,9 +21,14 @@ The shared cookie storage instance.
 class var shared: HTTPCookieStorage { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSHTTPCookieStorage * sharedHTTPCookieStorage;
+```
+
 ## See Also
 
-- [class func sharedCookieStorage(forGroupContainerIdentifier: String) -> HTTPCookieStorage](httpcookiestorage/sharedcookiestorage(forgroupcontaineridentifier:).md)
+### Getting the shared cookie storage object
+- [class func sharedCookieStorage(forGroupContainerIdentifier: String) -> HTTPCookieStorage](./sharedcookiestorage%28forgroupcontaineridentifier%29.md)
   Returns the cookie storage instance for the container associated with the specified app group identifier.
 
 

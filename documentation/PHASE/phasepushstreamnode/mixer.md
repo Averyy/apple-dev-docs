@@ -1,7 +1,8 @@
 # mixer
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio stream’s output pipeline.
 
@@ -19,13 +20,18 @@ The audio stream’s output pipeline.
 var mixer: PHASEMixer { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) PHASEMixer * mixer;
+```
+
 #### Discussion
 
-The framework sets the value based on the definition initializer’s `mixerDefinition` argument. See [`init(mixerDefinition:format:)`](phasepushstreamnodedefinition/init(mixerdefinition:format:).md).
+The framework sets the value based on the definition initializer’s `mixerDefinition` argument. See [`init(mixerDefinition:format:)`](../phasepushstreamnodedefinition/init%28mixerdefinition,format%29.md).
 
 ## See Also
 
-- [var format: AVAudioFormat](phasepushstreamnode/format.md)
+### Inspecting Stream Properties
+- [var format: AVAudioFormat](./format.md)
   The format of the audio stream data.
 
 

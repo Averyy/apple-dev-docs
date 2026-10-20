@@ -1,7 +1,8 @@
 # isDiscretionary
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether background tasks can be scheduled at the discretion of the system for optimal performance.
 
@@ -20,23 +21,28 @@ A Boolean value that determines whether background tasks can be scheduled at the
 var isDiscretionary: Bool { get set }
 ```
 
+```objc
+@property (getter=isDiscretionary) BOOL discretionary;
+```
+
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files in the background](../downloading-files-in-the-background.md)
 
 #### Discussion
 
-For configuration objects created using the [`background(withIdentifier:)`](urlsessionconfiguration/background(withidentifier:).md) method, use this property to give the system control over when transfers should occur. This property is ignored for configuration objects created using other methods.
+For configuration objects created using the [`background(withIdentifier:)`](./background%28withidentifier%29.md) method, use this property to give the system control over when transfers should occur. This property is ignored for configuration objects created using other methods.
 
-When transferring large amounts of data, you are encouraged to set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true). Doing so lets the system schedule those transfers at times that are more optimal for the device. For example, the system might delay transferring large files until the device is plugged in and connected to the network via Wi-Fi. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When transferring large amounts of data, you are encouraged to set the value of this property to [`true`](../../Swift/true.md). Doing so lets the system schedule those transfers at times that are more optimal for the device. For example, the system might delay transferring large files until the device is plugged in and connected to the network via Wi-Fi. The default value of this property is [`false`](../../Swift/false.md).
 
-The session object applies the value of this property only to transfers that your app starts while it is in the foreground. For transfers started while your app is in the background, the system always starts transfers at its discretion—in other words, the system assumes this property is [`true`](https://developer.apple.com/documentation/swift/true) and ignores any value you specified.
+The session object applies the value of this property only to transfers that your app starts while it is in the foreground. For transfers started while your app is in the background, the system always starts transfers at its discretion—in other words, the system assumes this property is [`true`](../../Swift/true.md) and ignores any value you specified.
 
 ## See Also
 
-- [var sessionSendsLaunchEvents: Bool](urlsessionconfiguration/sessionsendslaunchevents.md)
+### Supporting background transfers
+- [var sessionSendsLaunchEvents: Bool](./sessionsendslaunchevents.md)
   A Boolean value that indicates whether the app should be resumed or launched in the background when transfers finish.
-- [var shouldUseExtendedBackgroundIdleMode: Bool](urlsessionconfiguration/shoulduseextendedbackgroundidlemode.md)
+- [var shouldUseExtendedBackgroundIdleMode: Bool](./shoulduseextendedbackgroundidlemode.md)
   A Boolean value that indicates whether TCP connections should be kept open when the app moves to the background.
 
 

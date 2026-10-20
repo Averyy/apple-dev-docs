@@ -1,7 +1,8 @@
 # lowQualityThumbnail
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A faster to generate version of the thumbnail that may sacrifice quality for speed.
 
@@ -18,15 +19,20 @@ A faster to generate version of the thumbnail that may sacrifice quality for spe
 static var lowQualityThumbnail: QLThumbnailGenerator.Request.RepresentationTypes { get }
 ```
 
+```c
+QLThumbnailGenerationRequestRepresentationTypeLowQualityThumbnail
+```
+
 ## See Also
 
-- [init(rawValue: UInt)](qlthumbnailgenerator/request/representationtypes-swift.struct/init(rawvalue:).md)
+### Creating a Thumbnail Type
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates a new thumbnail type object for a given value.
-- [static var all: QLThumbnailGenerator.Request.RepresentationTypes](qlthumbnailgenerator/request/representationtypes-swift.struct/all.md)
+- [static var all: QLThumbnailGenerator.Request.RepresentationTypes](./all.md)
   The thumbnail type to generate all possible thumbnail representations.
-- [static var icon: QLThumbnailGenerator.Request.RepresentationTypes](qlthumbnailgenerator/request/representationtypes-swift.struct/icon.md)
+- [static var icon: QLThumbnailGenerator.Request.RepresentationTypes](./icon.md)
   A file icon representation of a file.
-- [static var thumbnail: QLThumbnailGenerator.Request.RepresentationTypes](qlthumbnailgenerator/request/representationtypes-swift.struct/thumbnail.md)
+- [static var thumbnail: QLThumbnailGenerator.Request.RepresentationTypes](./thumbnail.md)
   A thumbnail representation of a file.
 
 

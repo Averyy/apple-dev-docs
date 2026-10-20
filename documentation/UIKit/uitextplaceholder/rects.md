@@ -1,7 +1,8 @@
 # rects
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var rects: [UITextSelectionRect] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<UITextSelectionRect *> * rects;
 ```
 
 

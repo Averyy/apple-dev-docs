@@ -1,7 +1,8 @@
 # symbol(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a plotting symbol type for the chart content.
 
@@ -27,11 +28,12 @@ func symbol<S>(_ symbol: S) -> some ChartContent where S : ChartSymbolShape
 
 ## See Also
 
-- [func symbol<V>(symbol: () -> V) -> some ChartContent](chartcontent/symbol(symbol:).md)
+### Setting symbol appearance
+- [func symbol<V>(symbol: () -> V) -> some ChartContent](./symbol%28symbol%29.md)
   Sets a SwiftUI view to use as the symbol for the chart content.
-- [func symbolSize(CGSize) -> some ChartContent](chartcontent/symbolsize(_:)-7s0vk.md)
+- [func symbolSize(CGSize) -> some ChartContent](./symbolsize%28_%29-7s0vk.md)
   Sets the plotting symbol size for the chart content.
-- [func symbolSize(CGFloat) -> some ChartContent](chartcontent/symbolsize(_:)-8dtyt.md)
+- [func symbolSize(CGFloat) -> some ChartContent](./symbolsize%28_%29-8dtyt.md)
   Sets the plotting symbol size for the chart content according to a perceived area.
 
 

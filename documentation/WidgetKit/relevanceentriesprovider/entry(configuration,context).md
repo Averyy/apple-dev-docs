@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the entry used to render a widget for a specific relevance configuration.
@@ -17,7 +18,7 @@ func entry(configuration: Self.Configuration, context: Self.Context) async throw
 
 ## Mentions
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
+- [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
 #### Return Value
 
@@ -30,11 +31,12 @@ A relevance entry representing the widget in this configuration.
 
 ## See Also
 
-- [func relevance() async -> WidgetRelevance<Self.Configuration>](relevanceentriesprovider/relevance.md)
+### Generating relevance entries
+- [func relevance() async -> WidgetRelevance<Self.Configuration>](./relevance%28%29.md)
   Provides a collection of conditions under which a specific widget could be relevant.
-- [func placeholder(context: Self.Context) -> Self.Entry](relevanceentriesprovider/placeholder(context:).md)
+- [func placeholder(context: Self.Context) -> Self.Entry](./placeholder%28context%29.md)
   Provides the entry representing a placeholder version of the widget.
-- [struct RelevanceEntriesProviderContext](relevanceentriesprovidercontext.md)
+- [struct RelevanceEntriesProviderContext](../relevanceentriesprovidercontext.md)
   An object that contains details about how a widget is rendered, including its size.
 
 

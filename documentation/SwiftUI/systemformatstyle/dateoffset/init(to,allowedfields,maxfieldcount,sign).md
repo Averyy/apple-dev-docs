@@ -1,7 +1,8 @@
 # init(to:allowedFields:maxFieldCount:sign:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a format style that displays the offset between a comparison date and an anchor date that you provide.
 

@@ -1,7 +1,8 @@
 # copy(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies texture data to another texture.
 
@@ -11,7 +12,7 @@ Copies texture data to another texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,20 @@ Copies texture data to another texture.
 @preconcurrency func copy(to texture: any MTLTexture) throws
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func copy(to texture: any MTLTexture) async throws
+```
+
 #### Discussion
 
-This method blocks until it finishes copying the data. If you have an attached [`TextureResource.DrawableQueue`](textureresource/drawablequeue-swift.class.md) on this resource, this function detaches it. This method copies all available mipmap sizes to `texture`.
+This method blocks until it finishes copying the data. If you have an attached [`TextureResource.DrawableQueue`](./drawablequeue-swift.class.md) on this resource, this function detaches it. This method copies all available mipmap sizes to `texture`.
 
-It’s recommended that you provide a value for [`semantic`](textureresource/createoptions/semantic.md) when creating this resource. Specifying a semantic enables RealityKit to select an appropriate pixel format for the target texture.
+It’s recommended that you provide a value for [`semantic`](./createoptions/semantic.md) when creating this resource. Specifying a semantic enables RealityKit to select an appropriate pixel format for the target texture.
 
-Here’s an example using [`copy(to:)`](textureresource/copy(to:)-jfbi.md) to get a texture resource’s raw pixel data:
+Here’s an example using [`copy(to:)`](./copy%28to%29-jfbi.md) to get a texture resource’s raw pixel data:
 
 ```swift
 let device: MTLDevice = ...
@@ -71,11 +79,12 @@ bytes.withUnsafeMutableBytes { bytesPtr in
 
 ## Parameters
 
-- `texture`: The target texture for copying the data. It needs to have the same width and height as [`TextureResource`](textureresource.md), and [`shaderWrite`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderwrite) usage.
+- `texture`: The target texture for copying the data. It needs to have the same width and height as [`TextureResource`](../textureresource.md), and [`shaderWrite`](../../Metal/mtltextureusage/shaderwrite.md) usage.
 
 ## See Also
 
-- [func copyAsync(to: any MTLTexture, completionHandler: ((any Error)?) -> Void)](textureresource/copyasync(to:completionhandler:).md)
+### Copying the texture
+- [func copyAsync(to: any MTLTexture, completionHandler: ((any Error)?) -> Void)](./copyasync%28to,completionhandler%29.md)
   Asynchronously copies texture data to another texture.
 
 

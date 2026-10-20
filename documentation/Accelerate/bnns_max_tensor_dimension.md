@@ -1,21 +1,26 @@
 # BNNS_MAX_TENSOR_DIMENSION
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var BNNS_MAX_TENSOR_DIMENSION: Int32 { get }
+```
+
+```c
+#define BNNS_MAX_TENSOR_DIMENSION
 ```
 
 

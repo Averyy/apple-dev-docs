@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data of the Ethernet address.
 

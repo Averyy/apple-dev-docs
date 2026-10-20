@@ -1,7 +1,8 @@
 # MTLTextureViewDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -17,39 +18,44 @@
 class MTLTextureViewDescriptor
 ```
 
+```objc
+@interface MTLTextureViewDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var levelRange: Range<Int>](mtltextureviewdescriptor/levelrange-55q8m.md)
+- [var levelRange: Range<Int>](./mtltextureviewdescriptor/levelrange-55q8m.md)
   A desired range of mip levels of a texture view.
-- [var minLOD: Float](mtltextureviewdescriptor/minlod.md)
+- [var minLOD: Float](./mtltextureviewdescriptor/minlod.md)
   The minimum level of detail for texture views you create with the descriptor.
-- [var pixelFormat: MTLPixelFormat](mtltextureviewdescriptor/pixelformat.md)
-- [var sliceRange: Range<Int>](mtltextureviewdescriptor/slicerange-6nq6v.md)
+- [var pixelFormat: MTLPixelFormat](./mtltextureviewdescriptor/pixelformat.md)
+- [var sliceRange: Range<Int>](./mtltextureviewdescriptor/slicerange-6nq6v.md)
   A desired range of slices of a texture view.
-- [var swizzle: MTLTextureSwizzleChannels](mtltextureviewdescriptor/swizzle.md)
-- [var textureType: MTLTextureType](mtltextureviewdescriptor/texturetype.md)
+- [var swizzle: MTLTextureSwizzleChannels](./mtltextureviewdescriptor/swizzle.md)
+- [var textureType: MTLTextureType](./mtltextureviewdescriptor/texturetype.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLResourceViewPool](mtlresourceviewpool.md)
+### View pools
+- [protocol MTLResourceViewPool](./mtlresourceviewpool.md)
   Contains views over resources of a specific type, and allows you to manage those views.
-- [class MTLResourceViewPoolDescriptor](mtlresourceviewpooldescriptor.md)
+- [class MTLResourceViewPoolDescriptor](./mtlresourceviewpooldescriptor.md)
   Provides parameters for creating a resource view pool.
-- [protocol MTLTextureViewPool](mtltextureviewpool.md)
+- [protocol MTLTextureViewPool](./mtltextureviewpool.md)
   A pool of lightweight texture views.
 
 

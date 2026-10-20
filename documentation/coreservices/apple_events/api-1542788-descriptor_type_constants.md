@@ -8,7 +8,7 @@ Specify types for descriptors.
 
 The constants described here specify the data type for a descriptor and show the kind of data stored in a descriptor with that type.
 
-Descriptors are the building blocks used by the Apple Event Manager to construct Apple event attributes and parameters. A descriptor is a data structure of type [`AEDesc`](aedesc.md), which consists of data storage and a descriptor type that identifies the type of the data. A descriptor type is defined by the data type [`DescType`](desctype.md). AppleScript defines descriptor type constants for a wide variety of common data types. For additional types, see [`Numeric Descriptor Type Constants`](apple_events/1542872-numeric_descriptor_type_constant.md) and [`Other Descriptor Type Constants`](apple_events/1542760-other_descriptor_type_constants.md). For a complete listing, including data types such as units of length, weight, and volume, see the Apple Event Manager and Open Scripting Architecture header files.
+Descriptors are the building blocks used by the Apple Event Manager to construct Apple event attributes and parameters. A descriptor is a data structure of type [`AEDesc`](../aedesc.md), which consists of data storage and a descriptor type that identifies the type of the data. A descriptor type is defined by the data type [`DescType`](../desctype.md). AppleScript defines descriptor type constants for a wide variety of common data types. For additional types, see [Numeric Descriptor Type Constants](./api-1542872-numeric_descriptor_type_constant.md) and [Other Descriptor Type Constants](./api-1542760-other_descriptor_type_constants.md). For a complete listing, including data types such as units of length, weight, and volume, see the Apple Event Manager and Open Scripting Architecture header files.
 
 For the constant `typeApplicationURL`, the data that specifies the application URL takes the following format:
 
@@ -33,48 +33,48 @@ The availability of user identifiers provides enhanced Apple event support for F
 ## Topics
 
 ### Constants
-- [var typeAEList: DescType](typeaelist.md)
+- [var typeAEList: DescType](../typeaelist.md)
   List of descriptors.
-- [var typeAERecord: DescType](typeaerecord.md)
+- [var typeAERecord: DescType](../typeaerecord.md)
   List of keyword-specified descriptors.
-- [var typeAppleEvent: DescType](typeappleevent.md)
+- [var typeAppleEvent: DescType](../typeappleevent.md)
   Apple event.
-- [var typeTrue: DescType](typetrue.md)
+- [var typeTrue: DescType](../typetrue.md)
   `TRUE` Boolean value.
-- [var typeFalse: DescType](typefalse.md)
+- [var typeFalse: DescType](../typefalse.md)
   `FALSE` Boolean value.
-- [var typeAlias: DescType](typealias.md)
+- [var typeAlias: DescType](../typealias.md)
   Alias.
-- [var typeEnumerated: DescType](typeenumerated.md)
+- [var typeEnumerated: DescType](../typeenumerated.md)
   Enumerated data.
-- [var typeType: DescType](typetype.md)
+- [var typeType: DescType](../typetype.md)
   Four-character code for event class or event ID
-- [var typeAppParameters: DescType](typeappparameters.md)
+- [var typeAppParameters: DescType](../typeappparameters.md)
   Process Manager launch parameters.
-- [var typeProperty: DescType](typeproperty.md)
+- [var typeProperty: DescType](../typeproperty.md)
   Apple event object property.
-- [var typeFSRef: DescType](typefsref.md)
+- [var typeFSRef: DescType](../typefsref.md)
   File system reference. Use in preference to file system specifications (`typeFSS`).
-- [var typeFileURL: DescType](typefileurl.md)
-  A file URL. That is, the associated data consists of the bytes of a UTF-8 encoded URL with a scheme of "file". This type is appropriate for describing a file that may not yet exist—see [`Technical Note 2022`](https://developer.apple.comhttp://developer.apple.com/technotes/tn/tn2022.html) for more information.
-- [var typeKeyword: DescType](typekeyword.md)
+- [var typeFileURL: DescType](../typefileurl.md)
+  A file URL. That is, the associated data consists of the bytes of a UTF-8 encoded URL with a scheme of "file". This type is appropriate for describing a file that may not yet exist—see [Technical Note 2022](http://developer.apple.com/technotes/tn/tn2022.html) for more information.
+- [var typeKeyword: DescType](../typekeyword.md)
   Apple event keyword.
-- [var typeSectionH: DescType](typesectionh.md)
+- [var typeSectionH: DescType](../typesectionh.md)
   Handle to a section record. (Deprecated.)
-- [var typeWildCard: DescType](typewildcard.md)
+- [var typeWildCard: DescType](../typewildcard.md)
   Matches any type.
-- [var typeApplSignature: DescType](typeapplsignature.md)
+- [var typeApplSignature: DescType](../typeapplsignature.md)
   Application signature.
-- [var typeProcessSerialNumber: DescType](typeprocessserialnumber.md)
-  A process serial number. See also [`AEAddressDesc`](aeaddressdesc.md).
-- [var typeApplicationURL: DescType](typeapplicationurl.md)
+- [var typeProcessSerialNumber: DescType](../typeprocessserialnumber.md)
+  A process serial number. See also [`AEAddressDesc`](../aeaddressdesc.md).
+- [var typeApplicationURL: DescType](../typeapplicationurl.md)
   For specifying an application by URL. See Discussion section below for important information.
-- [var typeNull: DescType](typenull.md)
+- [var typeNull: DescType](../typenull.md)
   A null data storage pointer. When resolving an object specifier, an object with a null storage pointer specifies the default container at the top of the container hierarchy.
-- [var typeBookmarkData: DescType](typebookmarkdata.md)
-- [var typeEventRecord: DescType](typeeventrecord.md)
-- [var typeFixed: DescType](typefixed.md)
-- [var typeQDRectangle: DescType](typeqdrectangle.md)
+- [var typeBookmarkData: DescType](../typebookmarkdata.md)
+- [var typeEventRecord: DescType](../typeeventrecord.md)
+- [var typeFixed: DescType](../typefixed.md)
+- [var typeQDRectangle: DescType](../typeqdrectangle.md)
 
 
 ---

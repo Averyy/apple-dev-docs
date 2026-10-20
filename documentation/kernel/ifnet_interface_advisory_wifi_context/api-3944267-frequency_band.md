@@ -1,14 +1,15 @@
 # frequency_band
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 enum ifnet_interface_advisory_wifi_freq_band frequency_band;
 ```
 

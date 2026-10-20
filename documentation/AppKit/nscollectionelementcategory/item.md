@@ -1,7 +1,8 @@
 # NSCollectionElementCategory.item
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element is an item. Items represent the main content of your collection view.
 
@@ -15,13 +16,18 @@ The element is an item. Items represent the main content of your collection view
 case item
 ```
 
+```c
+NSCollectionElementCategoryItem
+```
+
 ## See Also
 
-- [NSCollectionElementCategory.supplementaryView](nscollectionelementcategory/supplementaryview.md)
+### Constants
+- [NSCollectionElementCategory.supplementaryView](./supplementaryview.md)
   The element is a supplementary view. Use supplementary views for single views that contain some data but are associated with an entire section. For example, use them to specify header or footer views for a section.
-- [NSCollectionElementCategory.decorationView](nscollectionelementcategory/decorationview.md)
+- [NSCollectionElementCategory.decorationView](./decorationview.md)
   The element is a decoration view. Decoration views represent visual adornments that do not contain any data of their own.
-- [NSCollectionElementCategory.interItemGap](nscollectionelementcategory/interitemgap.md)
+- [NSCollectionElementCategory.interItemGap](./interitemgap.md)
   The element is an inter-item gap. An inter-item gap element is a custom visual indicator that is displayed between items when dropping items into the collection view.
 
 

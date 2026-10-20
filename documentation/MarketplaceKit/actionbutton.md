@@ -1,7 +1,8 @@
 # ActionButton
 
 **Framework**: MarketplaceKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A user-interface element that enables a person to install, update, or launch apps by tapping the element.
 
@@ -18,83 +19,84 @@ A user-interface element that enables a person to install, update, or launch app
 
 ## Mentions
 
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
-- [Supplying an install verification token](supplying-an-install-verification-token.md)
+- [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md)
+- [Supplying an install verification token](./supplying-an-install-verification-token.md)
 
 #### Overview
 
-The system doesn’t allow an app marketplace to install apps without a person’s consent. When the system receives a request to install an app, it validates that request came from a person’s interaction with this button. If instead a marketplace calls the [`AppLibrary`](applibrary.md) installation methods directly, the call may fail.
+The system doesn’t allow an app marketplace to install apps without a person’s consent. When the system receives a request to install an app, it validates that request came from a person’s interaction with this button. If instead a marketplace calls the [`AppLibrary`](./applibrary.md) installation methods directly, the call may fail.
 
 ## Topics
 
 ### Initializers
-- [init(action: ActionButton.Action)](actionbutton/init(action:).md)
+- [init(action: ActionButton.Action)](./actionbutton/init%28action%29.md)
 ### Instance Properties
-- [let action: ActionButton.Action](actionbutton/action-swift.property.md)
-- [var backgroundColor: UIColor?](actionbutton/backgroundcolor.md)
-- [var borderColor: UIColor](actionbutton/bordercolor.md)
-- [var borderWidth: CGFloat](actionbutton/borderwidth.md)
-- [var cornerRadius: CGFloat](actionbutton/cornerradius.md)
-- [var fontSize: CGFloat](actionbutton/fontsize.md)
-- [var imageName: String?](actionbutton/imagename.md)
-- [var imagePlacement: ActionButton.ButtonImagePlacement](actionbutton/imageplacement.md)
-- [var isEnabled: Bool](actionbutton/isenabled.md)
-- [var isHighlighted: Bool](actionbutton/ishighlighted.md)
-- [var label: String](actionbutton/label.md)
-- [var size: CGSize](actionbutton/size.md)
-- [var tintColor: UIColor!](actionbutton/tintcolor.md)
+- [let action: ActionButton.Action](./actionbutton/action-swift.property.md)
+- [var backgroundColor: UIColor?](./actionbutton/backgroundcolor.md)
+- [var borderColor: UIColor](./actionbutton/bordercolor.md)
+- [var borderWidth: CGFloat](./actionbutton/borderwidth.md)
+- [var cornerRadius: CGFloat](./actionbutton/cornerradius.md)
+- [var fontSize: CGFloat](./actionbutton/fontsize.md)
+- [var imageName: String?](./actionbutton/imagename.md)
+- [var imagePlacement: ActionButton.ButtonImagePlacement](./actionbutton/imageplacement.md)
+- [var isEnabled: Bool](./actionbutton/isenabled.md)
+- [var isHighlighted: Bool](./actionbutton/ishighlighted.md)
+- [var label: String](./actionbutton/label.md)
+- [var size: CGSize](./actionbutton/size.md)
+- [var tintColor: UIColor!](./actionbutton/tintcolor.md)
 ### Enumerations
-- [ActionButton.Action](actionbutton/action-swift.enum.md)
-- [ActionButton.ButtonImagePlacement](actionbutton/buttonimageplacement.md)
+- [ActionButton.Action](./actionbutton/action-swift.enum.md)
+- [ActionButton.ButtonImagePlacement](./actionbutton/buttonimageplacement.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIControl](../uikit/uicontrol.md)
+- [UIControl](../UIKit/uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContextMenuInteractionDelegate](../uikit/uicontextmenuinteractiondelegate.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContextMenuInteractionDelegate](../UIKit/uicontextmenuinteractiondelegate.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct InstallMetadata](installmetadata.md)
+### App distribution UI
+- [struct InstallMetadata](./installmetadata.md)
   Information about a specific app to install or update and the person who initiates it.
-- [struct InstallConfiguration](installconfiguration.md)
+- [struct InstallConfiguration](./installconfiguration.md)
   Information that describes a requested app installation or app update.
-- [enum InstallConfirmationResult](installconfirmationresult.md)
+- [enum InstallConfirmationResult](./installconfirmationresult.md)
   Options that indicate whether the installation of an app proceeds when a person interacts with an app installation button.
-- [struct BatchInstallConfiguration](batchinstallconfiguration.md)
+- [struct BatchInstallConfiguration](./batchinstallconfiguration.md)
   Information that describes multiple app installations or app updates.
-- [enum BatchInstallConfirmationResult](batchinstallconfirmationresult.md)
+- [enum BatchInstallConfirmationResult](./batchinstallconfirmationresult.md)
   Options that indicate whether the installation of multiple apps proceeds when a person interacts with an app installation button.
-- [enum MarketplaceDisplayOption](marketplacedisplayoption.md)
+- [enum MarketplaceDisplayOption](./marketplacedisplayoption.md)
   The kinds of deep links that the operating system makes into your marketplace.
-- [protocol MarketplaceSceneDelegate](marketplacescenedelegate.md)
+- [protocol MarketplaceSceneDelegate](./marketplacescenedelegate.md)
   A delegate that handles deep link requests into your marketplace app.
 
 

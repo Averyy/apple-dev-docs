@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [IOUSBHostCITransferCompletionMessageData1TransferStructure](4520042-anonymous/iousbhostcitransfercompletionmessagedata1transferstructure.md)
-- [IOUSBHostCITransferCompletionMessageData1TransferStructurePhase](4520042-anonymous/iousbhostcitransfercompletionmessagedata1transferstructurephase.md)
+- [IOUSBHostCITransferCompletionMessageData1TransferStructure](./api-4520042-anonymous/iousbhostcitransfercompletionmessagedata1transferstructure.md)
+- [IOUSBHostCITransferCompletionMessageData1TransferStructurePhase](./api-4520042-anonymous/iousbhostcitransfercompletionmessagedata1transferstructurephase.md)
 
 
 ---

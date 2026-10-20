@@ -1,7 +1,8 @@
 # workoutEvents
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of events added to the workout.
 
@@ -9,7 +10,7 @@ The list of events added to the workout.
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -19,13 +20,18 @@ The list of events added to the workout.
 var workoutEvents: [HKWorkoutEvent] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<HKWorkoutEvent *> * workoutEvents;
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 ## See Also
 
-- [func addWorkoutEvents([HKWorkoutEvent], completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/addworkoutevents(_:completion:).md)
+### Adding events to the workout
+- [func addWorkoutEvents([HKWorkoutEvent], completion: (Bool, (any Error)?) -> Void)](./addworkoutevents%28_,completion%29.md)
   Adds a workout event to the builder.
 
 

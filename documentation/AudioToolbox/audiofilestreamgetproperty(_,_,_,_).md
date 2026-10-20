@@ -1,7 +1,8 @@
 # AudioFileStreamGetProperty(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the value of the specified property.
 
@@ -19,6 +20,10 @@ Retrieves the value of the specified property.
 func AudioFileStreamGetProperty(_ inAudioFileStream: AudioFileStreamID, _ inPropertyID: AudioFileStreamPropertyID, _ ioPropertyDataSize: UnsafeMutablePointer<UInt32>, _ outPropertyData: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileStreamGetProperty(AudioFileStreamID inAudioFileStream, AudioFileStreamPropertyID inPropertyID, UInt32 *ioPropertyDataSize, void *outPropertyData);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -27,22 +32,24 @@ A result code. See Result Codes.
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 
-If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [`Memory Management Programming Guide for Core Foundation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
+If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser from which you wish to obtain data. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
-- `inPropertyID`: A four-character ID indicating the audio file stream property whose value you want to read. See [`Audio File Stream Properties`](1391506-audio-file-stream-properties.md) for possible values.
-- `ioPropertyDataSize`: On input, the size of the buffer in the `outPropertyData` parameter. Call the [`AudioFileStreamGetPropertyInfo(_:_:_:_:)`](audiofilestreamgetpropertyinfo(_:_:_:_:).md) function to obtain the size of the property value. On output, the number of bytes of the property value returned.
+- `inAudioFileStream`: The ID of the parser from which you wish to obtain data. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](./audiofilestreamopen%28_,_,_,_,_%29.md) function.
+- `inPropertyID`: A four-character ID indicating the audio file stream property whose value you want to read. See [Audio File Stream Properties](./api-1391506-audio-file-stream-properties.md) for possible values.
+- `ioPropertyDataSize`: On input, the size of the buffer in the `outPropertyData` parameter. Call the [`AudioFileStreamGetPropertyInfo(_:_:_:_:)`](./audiofilestreamgetpropertyinfo%28_,_,_,_%29.md) function to obtain the size of the property value. On output, the number of bytes of the property value returned.
 - `outPropertyData`: On output, the value of the specified property.
 
 ## See Also
 
-- [func AudioFileStreamOpen(UnsafeMutableRawPointer?, AudioFileStream_PropertyListenerProc, AudioFileStream_PacketsProc, AudioFileTypeID, UnsafeMutablePointer<AudioFileStreamID?>) -> OSStatus](audiofilestreamopen(_:_:_:_:_:).md)
+### Related Documentation
+- [func AudioFileStreamOpen(UnsafeMutableRawPointer?, AudioFileStream_PropertyListenerProc, AudioFileStream_PacketsProc, AudioFileTypeID, UnsafeMutablePointer<AudioFileStreamID?>) -> OSStatus](./audiofilestreamopen%28_,_,_,_,_%29.md)
   Creates and opens a new audio file stream parser.
-- [func AudioFileStreamGetPropertyInfo(AudioFileStreamID, AudioFileStreamPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](audiofilestreamgetpropertyinfo(_:_:_:_:).md)
+### Working with Data Stream Property Information
+- [func AudioFileStreamGetPropertyInfo(AudioFileStreamID, AudioFileStreamPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./audiofilestreamgetpropertyinfo%28_,_,_,_%29.md)
   Retrieves information about a property value.
-- [func AudioFileStreamSetProperty(AudioFileStreamID, AudioFileStreamPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](audiofilestreamsetproperty(_:_:_:_:).md)
+- [func AudioFileStreamSetProperty(AudioFileStreamID, AudioFileStreamPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./audiofilestreamsetproperty%28_,_,_,_%29.md)
   Sets the value of the specified property.
 
 

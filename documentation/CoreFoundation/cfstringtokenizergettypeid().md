@@ -1,7 +1,8 @@
 # CFStringTokenizerGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type ID for CFStringTokenizer.
 
@@ -18,6 +19,10 @@ Returns the type ID for CFStringTokenizer.
 
 ```swift
 func CFStringTokenizerGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFStringTokenizerGetTypeID();
 ```
 
 #### Return Value

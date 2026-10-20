@@ -1,15 +1,16 @@
 # y
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point’s y coordinate.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@ The point’s y coordinate.
 var y: AVCaptionDimension
 ```
 
+```c
+AVCaptionDimension y;
+```
+
 ## See Also
 
-- [var x: AVCaptionDimension](avcaptionpoint/x.md)
+### Inspecting the point
+- [var x: AVCaptionDimension](./x.md)
   The point’s x coordinate.
 
 

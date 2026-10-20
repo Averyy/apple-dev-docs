@@ -1,7 +1,8 @@
 # Artists.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for an artist resource.
 
@@ -10,7 +11,7 @@ The attributes for an artist resource.
 
 ## Declaration
 
-```swift
+```
 object Artists.Attributes
 ```
 
@@ -25,9 +26,10 @@ object Artists.Attributes
 
 ## See Also
 
-- [object Artists.Relationships](artists/relationships-data.dictionary.md)
+### Related Objects
+- [object Artists.Relationships](./relationships-data.dictionary.md)
   The relationships for an artist resource.
-- [object Artists.Views](artists/views-data.dictionary.md)
+- [object Artists.Views](./views-data.dictionary.md)
   The views for associations between artists and other resources.
 
 

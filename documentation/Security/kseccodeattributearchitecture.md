@@ -1,7 +1,8 @@
 # kSecCodeAttributeArchitecture
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string that indicates an architecture, such as `i386` or `x86_64`.
 
@@ -13,6 +14,10 @@ A key whose value is a string that indicates an architecture, such as `i386` or 
 
 ```swift
 let kSecCodeAttributeArchitecture: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeAttributeArchitecture;
 ```
 
 

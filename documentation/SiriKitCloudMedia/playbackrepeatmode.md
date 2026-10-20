@@ -1,7 +1,8 @@
 # PlaybackRepeatMode
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The possible repeat modes for a media queue.
 
@@ -10,17 +11,25 @@ The possible repeat modes for a media queue.
 
 ## Declaration
 
-```swift
+```
 string PlaybackRepeatMode
 ```
 
+## Possible Values
+
+- `none`: Don’t repeat media items.
+- `all`: Repeat all media items within the playback queue.
+- `one`: Repeat the current media item.
+- `unknown`: An unknown repeat mode.
+
 ## See Also
 
-- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md)
+### Resolving the Intended Repeat Mode
+- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse](./playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md)
   Your service’s response to a request to resolve the repeat mode in a play media intent.
-- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
+- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](./playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
   The result of resolving the repeat mode for a play media intent.
-- [object PlaybackRepeatModeResolutionResult](playbackrepeatmoderesolutionresult.md)
+- [object PlaybackRepeatModeResolutionResult](./playbackrepeatmoderesolutionresult.md)
   Information about whether your service can identify the specified repeat mode.
 
 

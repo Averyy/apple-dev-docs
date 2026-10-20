@@ -1,7 +1,8 @@
 # managedObjectContext
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed object context for the result.
 
@@ -10,7 +11,7 @@ The managed object context for the result.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The managed object context for the result.
 var managedObjectContext: NSManagedObjectContext { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectContext * managedObjectContext;
+```
+
 ## See Also
 
-- [var operationError: (any Error)?](nspersistentstoreasynchronousresult/operationerror.md)
+### Inspecting the Result
+- [var operationError: (any Error)?](./operationerror.md)
   An error that contains details if the asynchronous fetch request fails.
-- [var progress: Progress?](nspersistentstoreasynchronousresult/progress.md)
+- [var progress: Progress?](./progress.md)
   An object that reports progress for the asynchronous fetch request.
 
 

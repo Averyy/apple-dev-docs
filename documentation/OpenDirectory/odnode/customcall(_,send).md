@@ -1,12 +1,13 @@
 # customCall(_:send:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of a custom call to the node.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,13 +16,19 @@ Returns the result of a custom call to the node.
 func customCall(_ inCustomCode: Int, send inSendData: Data!) throws -> Data
 ```
 
+```objc
+- (NSData *) customCall:(NSInteger) inCustomCode sendData:(NSData *) inSendData error:(NSError **) outError;
+```
+
 #### Return Value
 
 The result of the custom call.
 
 #### Discussion
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -30,13 +37,14 @@ The result of the custom call.
 
 ## See Also
 
-- [func nodeDetails(forKeys: [Any]!) throws -> [AnyHashable : Any]](odnode/nodedetails(forkeys:).md)
+### Querying a Node
+- [func nodeDetails(forKeys: [Any]!) throws -> [AnyHashable : Any]](./nodedetails%28forkeys%29.md)
   Returns a dictionary containing details about a node.
-- [var nodeName: String!](odnode/nodename.md)
+- [var nodeName: String!](./nodename.md)
   The node’s name.
-- [func subnodeNames() throws -> [Any]](odnode/subnodenames.md)
+- [func subnodeNames() throws -> [Any]](./subnodenames%28%29.md)
   Returns the names of subnodes for the node.
-- [func unreachableSubnodeNames() throws -> [Any]](odnode/unreachablesubnodenames.md)
+- [func unreachableSubnodeNames() throws -> [Any]](./unreachablesubnodenames%28%29.md)
   Returns an array of the subnodes of a given node that are currently unreachable.
 
 

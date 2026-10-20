@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -18,12 +19,17 @@
 var backgroundColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIColor * backgroundColor;
+```
+
 ## See Also
 
-- [var verticalAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.property.md)
-- [func setBorderColor(UIColor?)](nstextblock/setbordercolor(_:).md)
-- [func setBorderColor(UIColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
-- [func borderColor(for: CGRectEdge) -> UIColor?](nstextblock/bordercolor(for:).md)
+### Configuring appearance
+- [var verticalAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.property.md)
+- [func setBorderColor(UIColor?)](./setbordercolor%28_%29.md)
+- [func setBorderColor(UIColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
+- [func borderColor(for: CGRectEdge) -> UIColor?](./bordercolor%28for%29.md)
 
 
 ---

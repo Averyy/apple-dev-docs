@@ -1,7 +1,8 @@
 # init(id:joints:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose for the joint name and transformation pairs.
 

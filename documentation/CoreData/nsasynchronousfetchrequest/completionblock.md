@@ -1,7 +1,8 @@
 # completionBlock
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that is executed when the fetch request has completed.
 
@@ -10,7 +11,7 @@ The block that is executed when the fetch request has completed.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The block that is executed when the fetch request has completed.
 var completionBlock: NSPersistentStoreAsynchronousFetchResultCompletionBlock? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSPersistentStoreAsynchronousFetchResultCompletionBlock completionBlock;
+```
+
 ## See Also
 
-- [var estimatedResultCount: Int](nsasynchronousfetchrequest/estimatedresultcount.md)
+### Preparing a Request
+- [var estimatedResultCount: Int](./estimatedresultcount.md)
   A configuration parameter that assists Core Data with scheduling the asynchronous fetch request.
-- [var fetchRequest: NSFetchRequest<ResultType>](nsasynchronousfetchrequest/fetchrequest.md)
+- [var fetchRequest: NSFetchRequest<ResultType>](./fetchrequest.md)
   The underlying fetch request that is executed asynchronously.
 
 

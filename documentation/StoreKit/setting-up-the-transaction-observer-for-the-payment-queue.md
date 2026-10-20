@@ -1,6 +1,7 @@
 # Setting up the transaction observer for the payment queue
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Enable your app to receive and handle transactions by adding an observer.
 
@@ -8,7 +9,7 @@ Enable your app to receive and handle transactions by adding an observer.
 
 To process transactions in your app, you need to create and add an observer to the payment queue. The observer object responds to new transactions and synchronizes the queue of pending transactions with the App Store, and the payment queue prompts users to authorize payment. It’s important to add the transaction observer at app launch to ensure you don’t miss payment queue notifications that the system may send when the app launches.
 
-##### Create an Observer
+##### Create an observer
 
 Create and build a custom observer class to handle changes to the payment queue.
 
@@ -35,11 +36,11 @@ Create an instance of this observer class to act as the observer of changes to t
 let iapObserver = StoreObserver()
 ```
 
-> 💡 **Tip**:  Consider creating your observer as a shared instance of the class for global reference in any other class. A shared instance also ensures the lifetime of the object, so that the same instance handles callbacks for the [`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md) protocol.
+> 💡 **Tip**:  Consider creating your observer as a shared instance of the class for global reference in any other class. A shared instance also ensures the lifetime of the object, so that the same instance handles callbacks for the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) protocol.
 
 After you create the transaction observer, you can add it to the payment queue.
 
-##### Add an Observer
+##### Add an observer
 
 StoreKit attaches your observer to the queue when your app calls.
 
@@ -47,7 +48,7 @@ StoreKit attaches your observer to the queue when your app calls.
 SKPaymentQueue.default().add(iapObserver)
 ```
 
-StoreKit can notify your [`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md) instance automatically when the content of the payment queue changes upon resuming or while running your app.
+StoreKit can notify your [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) instance automatically when the content of the payment queue changes upon resuming or while running your app.
 
 Implement the transaction observer.
 
@@ -72,9 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-It’s important to add the observer at launch, in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)), to ensure that it persists during all launches of your app, receives all payment queue notifications, and continues transactions that may initiate outside the app, such as:
+It’s important to add the observer at launch, in [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md), to ensure that it persists during all launches of your app, receives all payment queue notifications, and continues transactions that may initiate outside the app, such as:
 
-- Promoted Apple In-App Purchases. For more information, see [`Promoting Apple In-App Purchases`](promoting-in-app-purchases.md).
+- Promoted Apple In-App Purchases. For more information, see [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md).
 - Background subscription renewals
 - Interrupted purchases
 
@@ -82,17 +83,19 @@ The observer needs to be persistent so the system doesn’t deallocate it when i
 
 ## See Also
 
-- [func add(any SKPaymentTransactionObserver)](skpaymentqueue/add(_:)-5ciz2.md)
+### Related Documentation
+- [func add(any SKPaymentTransactionObserver)](./skpaymentqueue/add%28_%29-5ciz2.md)
   Adds an observer to the payment queue.
-- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
+### Essentials
+- [Offering, completing, and restoring Apple In-App Purchases](./offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
-- [class SKPaymentQueue](skpaymentqueue.md)
+- [class SKPaymentQueue](./skpaymentqueue.md)
   A queue of payment transactions for the App Store to process.
-- [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
+- [protocol SKPaymentTransactionObserver](./skpaymenttransactionobserver.md)
   A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
-- [protocol SKPaymentQueueDelegate](skpaymentqueuedelegate.md)
+- [protocol SKPaymentQueueDelegate](./skpaymentqueuedelegate.md)
   The protocol that provides information needed to complete transactions.
-- [class SKRequest](skrequest.md)
+- [class SKRequest](./skrequest.md)
   An abstract class that represents a request to the App Store.
 
 

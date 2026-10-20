@@ -1,7 +1,8 @@
 # keyLayoutFeatureInfoFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the `UCKeyLayoutFeatureInfo` structure. Set to `kUCKeyLayoutFeatureInfoFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the `UCKeyLayoutFeatureInfo
 
 ```swift
 var keyLayoutFeatureInfoFormat: UInt16
+```
+
+```c
+UInt16 keyLayoutFeatureInfoFormat;
 ```
 
 

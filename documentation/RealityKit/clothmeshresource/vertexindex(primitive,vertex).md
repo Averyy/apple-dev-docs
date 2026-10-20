@@ -1,7 +1,8 @@
 # vertexIndex(primitive:vertex:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the vertex index of the specified vertex within the specified primitive.
 
@@ -27,15 +28,16 @@ The vertex index of the specified vertex within the specified primitive.
 
 ## See Also
 
-- [var vertexCount: Int](clothmeshresource/vertexcount.md)
+### Accessing vertex data
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the mesh.
-- [func position(at: UInt32) -> SIMD3<Float>](clothmeshresource/position(at:).md)
+- [func position(at: UInt32) -> SIMD3<Float>](./position%28at%29.md)
   Returns the position of the vertex at the given index.
-- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothmeshresource/withpositions(_:).md)
+- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./withpositions%28_%29.md)
   Provides access to the positions of all the vertices within a callback.
-- [func vertexIndex(at: UInt32) -> UInt32](clothmeshresource/vertexindex(at:).md)
+- [func vertexIndex(at: UInt32) -> UInt32](./vertexindex%28at%29.md)
   Returns the vertex index at the given position in the mesh’s flattened primitive index array.
-- [func vertices(in: ClothVolumeShape, center: SIMD3<Float>, orientation: simd_quatf) -> [UInt32]](clothmeshresource/vertices(in:center:orientation:).md)
+- [func vertices(in: ClothVolumeShape, center: SIMD3<Float>, orientation: simd_quatf) -> [UInt32]](./vertices%28in,center,orientation%29.md)
   Returns the indices of the vertices that lie inside the given volume shape.
 
 

@@ -1,7 +1,8 @@
 # AccessibilityComponent.RotorType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A context-sensitive event that helps VoiceOver users find the next instance of a related element.
 
@@ -10,7 +11,7 @@ A context-sensitive event that helps VoiceOver users find the next instance of a
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,26 +22,27 @@ enum RotorType
 ## Topics
 
 ### Enumeration Cases
-- [AccessibilityComponent.RotorType.custom(_:)](accessibilitycomponent/rotortype/custom(_:).md)
-- [case system(UIAccessibilityCustomRotor.SystemRotorType)](accessibilitycomponent/rotortype/system(_:).md)
+- [AccessibilityComponent.RotorType.custom(_:)](./rotortype/custom%28_%29.md)
+- [case system(UIAccessibilityCustomRotor.SystemRotorType)](./rotortype/system%28_%29.md)
   A rotor type provided by the system.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
+### Accessibility
+- [Improving the Accessibility of RealityKit Apps](../improving-the-accessibility-of-realitykit-apps.md)
   Incorporate assistive technologies in your augmented reality app.
-- [struct AccessibilityComponent](accessibilitycomponent.md)
+- [struct AccessibilityComponent](../accessibilitycomponent.md)
   A component that stores accessibility information for an entity.
-- [AccessibilityComponent.SupportedActions](accessibilitycomponent/supportedactions.md)
+- [AccessibilityComponent.SupportedActions](./supportedactions.md)
   A custom action that can be invoked on an entity in response to specific user cues.
-- [AccessibilityComponent.CustomContent](accessibilitycomponent/customcontent-swift.struct.md)
+- [AccessibilityComponent.CustomContent](./customcontent-swift.struct.md)
   A CustomContent struct contains the accessibility strings for the labels you apply to your accessibility content.
-- [enum AccessibilityEvents](accessibilityevents.md)
+- [enum AccessibilityEvents](../accessibilityevents.md)
 
 
 ---

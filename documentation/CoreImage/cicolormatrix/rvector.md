@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of red to multiply the source color values by.
@@ -11,7 +12,7 @@ The amount of red to multiply the source color values by.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,17 +21,22 @@ The amount of red to multiply the source color values by.
 var rVector: CIVector { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIVector * RVector;
+```
+
 ## See Also
 
-- [var aVector: CIVector](cicolormatrix/avector.md)
+### Instance Properties
+- [var aVector: CIVector](./avector.md)
   The amount of alpha to multiply the source color values by.
-- [var bVector: CIVector](cicolormatrix/bvector.md)
+- [var bVector: CIVector](./bvector.md)
   The amount of blue to multiply the source color values by.
-- [var gVector: CIVector](cicolormatrix/gvector.md)
+- [var gVector: CIVector](./gvector.md)
   The amount of green to multiply the source color values by.
-- [var biasVector: CIVector](cicolormatrix/biasvector.md)
+- [var biasVector: CIVector](./biasvector.md)
   A vector that’s added to each color component.
-- [var inputImage: CIImage?](cicolormatrix/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

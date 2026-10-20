@@ -1,7 +1,8 @@
 # AlternativeDistributionKey.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution key resource.
 
@@ -10,17 +11,17 @@ Attributes that describe an alternative distribution key resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionKey.Attributes
 ```
 
 #### Discussion
 
-For more information on the object that includes these attributes, see [`AlternativeDistributionKey`](alternativedistributionkey.md).
+For more information on the object that includes these attributes, see [`AlternativeDistributionKey`](../alternativedistributionkey.md).
 
 ## Properties
 
-- `publicKey` (string): You create this key to establish a marketplace or web distribution app in App Store Connect. To learn more, see [`Creating keys and establishing alternative marketplace connections`](creating-keys-and-establishing-alternative-marketplace-connections.md) or [`Creating and configuring keys for web distribution`](creating-and-configuring-keys-for-web-distribution.md).
+- `publicKey` (string): You create this key to establish a marketplace or web distribution app in App Store Connect. To learn more, see [Creating keys and establishing alternative marketplace connections](../creating-keys-and-establishing-alternative-marketplace-connections.md) or [Creating and configuring keys for web distribution](../creating-and-configuring-keys-for-web-distribution.md).
 
 
 ---

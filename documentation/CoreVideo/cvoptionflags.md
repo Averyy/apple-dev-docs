@@ -1,7 +1,8 @@
 # CVOptionFlags
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The flags to be used for the display link output callback function.
 
@@ -20,13 +21,18 @@ The flags to be used for the display link output callback function.
 typealias CVOptionFlags = UInt64
 ```
 
+```c
+typedef uint64_t CVOptionFlags;
+```
+
 #### Discussion
 
 No flags are currently defined.
 
 ## See Also
 
-- [class CVDisplayLink](cvdisplaylink.md)
+### Data Types
+- [class CVDisplayLink](./cvdisplaylink.md)
   A reference to a display link object.
 
 

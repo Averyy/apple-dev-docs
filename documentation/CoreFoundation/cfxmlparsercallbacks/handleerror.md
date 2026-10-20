@@ -1,17 +1,22 @@
 # handleError
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Called when a parse error needs to be handled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var handleError: CFXMLParserHandleErrorCallBack!
+```
+
+```c
+CFXMLParserHandleErrorCallBack handleError;
 ```
 
 

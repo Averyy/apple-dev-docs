@@ -1,7 +1,8 @@
 # kMDItemFSInvisible
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the file is invisible. A CFBoolean.
 
@@ -12,6 +13,10 @@ Indicates whether the file is invisible. A CFBoolean.
 
 ```swift
 let kMDItemFSInvisible: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSInvisible;
 ```
 
 

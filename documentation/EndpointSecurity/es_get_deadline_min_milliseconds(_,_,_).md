@@ -1,7 +1,8 @@
 # es_get_deadline_min_milliseconds(_:_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get the current minimum deadline in milliseconds for a specific event type
 
@@ -12,6 +13,10 @@ Get the current minimum deadline in milliseconds for a specific event type
 
 ```swift
 func es_get_deadline_min_milliseconds(_ client: OpaquePointer, _ event: es_event_type_t, _ milliseconds: UnsafeMutablePointer<UInt32>) -> es_return_t
+```
+
+```c
+extern es_return_t es_get_deadline_min_milliseconds(es_client_t *client, es_event_type_t event, uint32_t *milliseconds);
 ```
 
 #### Return Value

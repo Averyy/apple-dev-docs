@@ -1,7 +1,8 @@
 # allowsReordering
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates people can reorder subitems in the sidebar.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates people can reorder subitems in the sidebar.
 var allowsReordering: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsReordering;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 ## See Also
 
-- [var displayOrderIdentifiers: [String]](uitabgroup/displayorderidentifiers.md)
+### Managing customization
+- [var displayOrderIdentifiers: [String]](./displayorderidentifiers.md)
   An array that contains the identifiers of subitems in their display order.
-- [var displayOrder: [UITab]](uitabgroup/displayorder.md)
+- [var displayOrder: [UITab]](./displayorder.md)
   An array that contains instances of subitems in their display order.
 
 

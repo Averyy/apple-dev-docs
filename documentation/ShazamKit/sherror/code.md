@@ -1,7 +1,8 @@
 # SHError.Code
 
 **Framework**: ShazamKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes for the errors that Shazam produces.
 
@@ -20,53 +21,58 @@ Codes for the errors that Shazam produces.
 enum Code
 ```
 
+```c
+enum SHErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Matching errors
-- [SHError.Code.matchAttemptFailed](sherror/code/matchattemptfailed.md)
+- [SHError.Code.matchAttemptFailed](./code/matchattemptfailed.md)
   The error code to indicate when a Shazam Music catalog server issue prevents finding a match.
 ### Signature errors
-- [SHError.Code.signatureInvalid](sherror/code/signatureinvalid.md)
+- [SHError.Code.signatureInvalid](./code/signatureinvalid.md)
   The error code to indicate that the system is unable to generate a signature from the audio.
-- [SHError.Code.signatureDurationInvalid](sherror/code/signaturedurationinvalid.md)
+- [SHError.Code.signatureDurationInvalid](./code/signaturedurationinvalid.md)
   The error code to indicate that the length of the generated signature is too long or too short to make a match in the catalog.
 ### Audio format errors
-- [SHError.Code.invalidAudioFormat](sherror/code/invalidaudioformat.md)
+- [SHError.Code.invalidAudioFormat](./code/invalidaudioformat.md)
   The error code to indicate an unsupported audio format.
-- [SHError.Code.audioDiscontinuity](sherror/code/audiodiscontinuity.md)
+- [SHError.Code.audioDiscontinuity](./code/audiodiscontinuity.md)
   The error code to indicate the use of noncontiguous audio to request a match.
 ### Catalog errors
-- [SHError.Code.customCatalogInvalidURL](sherror/code/customcataloginvalidurl.md)
+- [SHError.Code.customCatalogInvalidURL](./code/customcataloginvalidurl.md)
   The error code to indicate that the format for the custom catalog URL is invalid.
-- [SHError.Code.customCatalogInvalid](sherror/code/customcataloginvalid.md)
+- [SHError.Code.customCatalogInvalid](./code/customcataloginvalid.md)
   The error code to indicate when the custom catalog fails to load due to an invalid format.
 ### Library sync errors
-- [SHError.Code.mediaItemFetchFailed](sherror/code/mediaitemfetchfailed.md)
+- [SHError.Code.mediaItemFetchFailed](./code/mediaitemfetchfailed.md)
   The error code to indicate when the system fails to fetch one or more media items.
-- [SHError.Code.mediaLibrarySyncFailed](sherror/code/medialibrarysyncfailed.md)
+- [SHError.Code.mediaLibrarySyncFailed](./code/medialibrarysyncfailed.md)
   The error code to indicate when the system fails to add one or more media items to the user’s Shazam library.
 ### Framework errors
-- [SHError.Code.internalError](sherror/code/internalerror.md)
+- [SHError.Code.internalError](./code/internalerror.md)
   The error code to indicate a generic framework error.
 ### Querying the error domain
-- [let SHErrorDomain: String](sherrordomain.md)
+- [let SHErrorDomain: String](../sherrordomain.md)
   The error domain for specific errors for ShazamKit.
 ### Initializers
-- [init?(rawValue: Int)](sherror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Error Constants](error-constants.md)
+### Inspecting an error
+- [Error Constants](../error-constants.md)
   Error code constants for framework operations.
 
 

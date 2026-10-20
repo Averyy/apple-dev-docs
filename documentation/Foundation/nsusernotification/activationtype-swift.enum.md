@@ -1,12 +1,15 @@
 # NSUserNotification.ActivationType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants describe how the user notification was activated.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,35 +17,40 @@ These constants describe how the user notification was activated.
 enum ActivationType
 ```
 
+```c
+enum NSUserNotificationActivationType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSUserNotification.ActivationType.none](nsusernotification/activationtype-swift.enum/none.md)
+- [NSUserNotification.ActivationType.none](./activationtype-swift.enum/none.md)
   The user did not interact with the notification alert.
-- [NSUserNotification.ActivationType.contentsClicked](nsusernotification/activationtype-swift.enum/contentsclicked.md)
+- [NSUserNotification.ActivationType.contentsClicked](./activationtype-swift.enum/contentsclicked.md)
   The user clicked on the contents of the notification alert.
-- [NSUserNotification.ActivationType.actionButtonClicked](nsusernotification/activationtype-swift.enum/actionbuttonclicked.md)
+- [NSUserNotification.ActivationType.actionButtonClicked](./activationtype-swift.enum/actionbuttonclicked.md)
   The user clicked on the action button of the notification alert.
-- [NSUserNotification.ActivationType.replied](nsusernotification/activationtype-swift.enum/replied.md)
+- [NSUserNotification.ActivationType.replied](./activationtype-swift.enum/replied.md)
   The user replied to the notification.
-- [NSUserNotification.ActivationType.additionalActionClicked](nsusernotification/activationtype-swift.enum/additionalactionclicked.md)
+- [NSUserNotification.ActivationType.additionalActionClicked](./activationtype-swift.enum/additionalactionclicked.md)
   The user clicked on the additional action button of the notification alert.
 ### Initializers
-- [init?(rawValue: Int)](nsusernotification/activationtype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./activationtype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NSUserNotificationDefaultSoundName: String](nsusernotificationdefaultsoundname.md)
+### Constants
+- [let NSUserNotificationDefaultSoundName: String](../nsusernotificationdefaultsoundname.md)
   The default notification sound.
 
 

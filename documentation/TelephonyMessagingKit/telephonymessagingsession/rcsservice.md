@@ -1,7 +1,8 @@
 # rcsService
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 RCS service associated with this session.
 
@@ -16,11 +17,12 @@ final var rcsService: RCSService { get }
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 ## See Also
 
-- [class RCSService](rcsservice.md)
+### Using Rich Communication Services (RCS)
+- [class RCSService](../rcsservice.md)
   A class that provides an interface for performing RCS operations.
 
 

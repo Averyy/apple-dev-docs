@@ -1,7 +1,8 @@
 # invalidNonSurrogateCodePointByte
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A byte in an invalid, non-surrogate code point (`>U+10FFFF`) sequence
 

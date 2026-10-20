@@ -1,7 +1,8 @@
 # fetchLimit
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetch limit of the fetch request.
 
@@ -10,7 +11,7 @@ The fetch limit of the fetch request.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The fetch limit of the fetch request.
 
 ```swift
 var fetchLimit: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger fetchLimit;
 ```
 
 #### Discussion
@@ -28,19 +33,20 @@ If you set a fetch limit, the framework makes a best effort to improve efficienc
 
 ## See Also
 
-- [var predicate: NSPredicate?](nsfetchrequest/predicate.md)
+### Specifying Fetch Constraints
+- [var predicate: NSPredicate?](./predicate.md)
   The predicate of the fetch request.
-- [var fetchOffset: Int](nsfetchrequest/fetchoffset.md)
+- [var fetchOffset: Int](./fetchoffset.md)
   The fetch offset of the fetch request.
-- [var fetchBatchSize: Int](nsfetchrequest/fetchbatchsize.md)
+- [var fetchBatchSize: Int](./fetchbatchsize.md)
   The batch size of the objects specified in the fetch request.
-- [var affectedStores: [NSPersistentStore]?](nsfetchrequest/affectedstores.md)
+- [var affectedStores: [NSPersistentStore]?](./affectedstores.md)
   An array of persistent stores specified for the fetch request.
-- [class NSFetchRequestExpression](nsfetchrequestexpression.md)
+- [class NSFetchRequestExpression](../nsfetchrequestexpression.md)
   An expression that evaluates the result of a fetch request on a managed object context.
-- [class NSExpressionDescription](nsexpressiondescription.md)
+- [class NSExpressionDescription](../nsexpressiondescription.md)
   An object that describes an expression to include with a fetch request.
-- [class NSFetchedPropertyDescription](nsfetchedpropertydescription.md)
+- [class NSFetchedPropertyDescription](../nsfetchedpropertydescription.md)
   A description object used to define which properties are fetched from Core Data.
 
 

@@ -1,7 +1,8 @@
 # defaultValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default value for this input, if any exists.
 

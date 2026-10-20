@@ -1,7 +1,8 @@
 # eventParameters
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of event parameters, possibly empty.
 
@@ -19,13 +20,18 @@ An array of event parameters, possibly empty.
 var eventParameters: [CHHapticEventParameter] { get }
 ```
 
+```objc
+@property (readonly) NSArray<CHHapticEventParameter *> * eventParameters;
+```
+
 ## See Also
 
-- [CHHapticEvent.ParameterID](chhapticevent/parameterid.md)
+### Configuring Haptic Events
+- [CHHapticEvent.ParameterID](./parameterid.md)
   An identifier for an event parameter.
-- [var relativeTime: TimeInterval](chhapticevent/relativetime.md)
+- [var relativeTime: TimeInterval](./relativetime.md)
   The start time of the event, relative to other events in the same pattern.
-- [var duration: TimeInterval](chhapticevent/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration of the haptic event.
 
 

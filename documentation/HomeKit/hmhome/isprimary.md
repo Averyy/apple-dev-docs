@@ -1,7 +1,8 @@
 # isPrimary
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this is the primary home for its home manager.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether this is the primary home for its home man
 var isPrimary: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPrimary) BOOL primary;
+```
+
 ## See Also
 
-- [var name: String](hmhome/name.md)
+### Identifying a home
+- [var name: String](./name.md)
   The name the user gives to the home.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmhome/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the home.
-- [var uniqueIdentifier: UUID](hmhome/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the home.
 
 

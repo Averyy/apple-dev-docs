@@ -1,7 +1,8 @@
 # VNAnimalBodyPoseObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The joint group names for an animal body pose.
 
@@ -19,45 +20,50 @@ The joint group names for an animal body pose.
 struct JointsGroupName
 ```
 
+```c
+typedef VNRecognizedPointGroupKey VNAnimalBodyPoseObservationJointsGroupName;
+```
+
 ## Topics
 
 ### Getting the Group Names
-- [static let all: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/all.md)
+- [static let all: VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname/all.md)
   A group name that represents all joints.
-- [static let forelegs: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/forelegs.md)
+- [static let forelegs: VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname/forelegs.md)
   A group name that represents the forelegs.
-- [static let head: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/head.md)
+- [static let head: VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname/head.md)
   A group name that represents the head.
-- [static let hindlegs: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/hindlegs.md)
+- [static let hindlegs: VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname/hindlegs.md)
   A group name that represents the hindlegs.
-- [static let tail: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/tail.md)
+- [static let tail: VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname/tail.md)
   A group name that represents the tail.
-- [static let trunk: VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname/trunk.md)
+- [static let trunk: VNAnimalBodyPoseObservation.JointsGroupName](./jointsgroupname/trunk.md)
   A group name that represents the trunk.
 ### Creating a Group Name
-- [init(rawValue: VNRecognizedPointGroupKey)](vnanimalbodyposeobservation/jointsgroupname/init(rawvalue:).md)
+- [init(rawValue: VNRecognizedPointGroupKey)](./jointsgroupname/init%28rawvalue%29.md)
   Creates a joint name with the key you specify.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](vnanimalbodyposeobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname.md)
+- [VNAnimalBodyPoseObservation.JointName](./jointname.md)
   The joint names for an animal body pose.
-- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](vnanimalbodyposeobservation/availablejointgroupnames.md)
+- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](./availablejointgroupnames.md)
   The available joint group names in the observation.
-- [func recognizedPoint(VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint](vnanimalbodyposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Returns the point for a joint name the observation recognizes.
-- [func recognizedPoints(VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]](vnanimalbodyposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Returns the points for a joint group name the observation recognizes.
 
 

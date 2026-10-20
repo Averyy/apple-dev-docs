@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The order in which the framework composites the animation.
@@ -12,7 +13,7 @@ The order in which the framework composites the animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ The framework applies multiple animations on the same target in ascending order 
 
 ## See Also
 
-- [var name: String](animationdefinition/name.md)
+### Configuring the animation
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](animationdefinition/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
 
 

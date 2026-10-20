@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model configuration parameters the sound classifier used during its training session.
 
@@ -20,7 +21,8 @@ let modelParameters: MLSoundClassifier.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mlsoundclassifier/model.md)
+### Inspecting a sound classifier model
+- [var model: MLModel](./model.md)
   The underlying model instance of the sound classifier stored in memory.
 
 

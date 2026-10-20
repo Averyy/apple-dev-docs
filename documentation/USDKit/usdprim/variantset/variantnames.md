@@ -1,7 +1,8 @@
 # variantNames
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of all variants in this variant set.
 

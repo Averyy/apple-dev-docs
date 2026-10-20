@@ -1,7 +1,8 @@
 # Column.Element
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the column’s elements, which is an optional type of the column’s type.
 
@@ -22,13 +23,14 @@ typealias Element = WrappedElement?
 
 ## See Also
 
-- [var name: String](column/name.md)
+### Inspecting a Column
+- [var name: String](./name.md)
   The name of the column.
-- [var count: Int](column/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column.
-- [var missingCount: Int](column/missingcount.md)
+- [var missingCount: Int](./missingcount.md)
   The number of missing elements in the column.
-- [var wrappedElementType: any Any.Type](column/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
 
 

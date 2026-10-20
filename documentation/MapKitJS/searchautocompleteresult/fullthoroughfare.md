@@ -1,7 +1,8 @@
 # fullThoroughfare
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A combination of the thoroughfare and subthoroughfare.
 
@@ -10,13 +11,13 @@ A combination of the thoroughfare and subthoroughfare.
 
 ## Declaration
 
-```swift
+```
 fullThoroughfare: string | null;
 ```
 
 #### Discussion
 
-For example, depending on the search terms, an autocompletion result for the [`fullThoroughfare`](searchautocompleteresult/fullthoroughfare.md) for Golden Gate Park in San Francisco, CA could be is `"1054 John F Kennedy Dr"`.
+For example, depending on the search terms, an autocompletion result for the [`fullThoroughfare`](./fullthoroughfare.md) for Golden Gate Park in San Francisco, CA could be is `"1054 John F Kennedy Dr"`.
 
 
 ---

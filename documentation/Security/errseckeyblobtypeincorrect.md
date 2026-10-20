@@ -1,7 +1,8 @@
 # errSecKeyBlobTypeIncorrect
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key blob type is incorrect.
 
@@ -18,6 +19,10 @@ The key blob type is incorrect.
 
 ```swift
 var errSecKeyBlobTypeIncorrect: OSStatus { get }
+```
+
+```c
+errSecKeyBlobTypeIncorrect
 ```
 
 

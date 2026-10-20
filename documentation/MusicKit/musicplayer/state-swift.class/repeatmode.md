@@ -1,7 +1,8 @@
 # repeatMode
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current repeat mode of the music player.
 

@@ -1,7 +1,8 @@
 # ToolbarItemGroup
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
 
@@ -24,38 +25,39 @@ struct ToolbarItemGroup<Content> where Content : View
 ## Topics
 
 ### Creating a toolbar item group
-- [init(placement: ToolbarItemPlacement, content: () -> Content)](toolbaritemgroup/init(placement:content:).md)
+- [init(placement: ToolbarItemPlacement, content: () -> Content)](./toolbaritemgroup/init%28placement,content%29.md)
   Creates a toolbar item group with a specified placement and content.
-- [init<C, L>(placement: ToolbarItemPlacement, content: () -> C, label: () -> L)](toolbaritemgroup/init(placement:content:label:).md)
+- [init<C, L>(placement: ToolbarItemPlacement, content: () -> C, label: () -> L)](./toolbaritemgroup/init%28placement,content,label%29.md)
   Creates a toolbar item group with the specified placement, content, and a label describing that content.
 ### Supporting types
-- [struct LabeledToolbarItemGroupContent](labeledtoolbaritemgroupcontent.md)
+- [struct LabeledToolbarItemGroupContent](./labeledtoolbaritemgroupcontent.md)
   A view that represents the view of a toolbar item group with a specified label.
 
 ## Relationships
 
 ### Conforms To
-- [ToolbarContent](toolbarcontent.md)
+- [ToolbarContent](./toolbarcontent.md)
 
 ## See Also
 
-- [func toolbar(content:)](view/toolbar(content:).md)
+### Populating a toolbar
+- [func toolbar(content:)](./view/toolbar%28content%29.md)
   Populates the toolbar or navigation bar with the specified items.
-- [struct ToolbarItem](toolbaritem.md)
+- [struct ToolbarItem](./toolbaritem.md)
   A model that represents an item which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemPlacement](toolbaritemplacement.md)
+- [struct ToolbarItemPlacement](./toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
-- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](./view/toolbaroverflowmenu%28content%29.md)
   Configures the overflow menu of a toolbar.
-- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+- [struct ToolbarOverflowMenu](./toolbaroverflowmenu.md)
   The overflow menu of a toolbar.
-- [protocol ToolbarContent](toolbarcontent.md)
+- [protocol ToolbarContent](./toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
-- [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
+- [struct ToolbarContentBuilder](./toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
-- [struct ToolbarSpacer](toolbarspacer.md)
+- [struct ToolbarSpacer](./toolbarspacer.md)
   A standard space item in toolbars.
-- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+- [struct DefaultToolbarItem](./defaulttoolbaritem.md)
   A toolbar item that represents a system component.
 
 

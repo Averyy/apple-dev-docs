@@ -1,7 +1,8 @@
 # blendLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which the framework composites the animation.
 
@@ -11,7 +12,7 @@ The order in which the framework composites the animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,21 +26,22 @@ The framework applies multiple animations on the same target in ascending order 
 
 ## See Also
 
-- [var startTransform: Transform](orbitanimation/starttransform.md)
+### Configuring the animation
+- [var startTransform: Transform](./starttransform.md)
   The pose of the orbiting object at the start of the animation.
-- [var axis: SIMD3<Float>](orbitanimation/axis.md)
+- [var axis: SIMD3<Float>](./axis.md)
   A 3D vector that points in the direction of the axis around which to rotate.
-- [var name: String](orbitanimation/name.md)
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](orbitanimation/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
-- [var rotationCount: Float](orbitanimation/rotationcount.md)
+- [var rotationCount: Float](./rotationcount.md)
   The number of times to rotate the target entity before stopping.
-- [var spinClockwise: Bool](orbitanimation/spinclockwise.md)
+- [var spinClockwise: Bool](./spinclockwise.md)
   A Boolean value that indicates whether the object orbits the center point in the clockwise direction.
-- [var orientToPath: Bool](orbitanimation/orienttopath.md)
+- [var orientToPath: Bool](./orienttopath.md)
   A Boolean value that indicates whether the orbiting object updates its orientation during the animation to orient itself along the rotation path.
-- [var additive: Bool](orbitanimation/additive.md)
+- [var additive: Bool](./additive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 
 

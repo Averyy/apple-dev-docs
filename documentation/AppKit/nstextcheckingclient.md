@@ -1,10 +1,11 @@
 # NSTextCheckingClient
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,30 +13,35 @@
 protocol NSTextCheckingClient : NSTextInputClient, NSTextInputTraits
 ```
 
+```objc
+@protocol NSTextCheckingClient <NSTextInputClient, NSTextInputTraits>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func addAnnotations([NSAttributedString.Key : String], range: NSRange)](nstextcheckingclient/addannotations(_:range:).md)
-- [func annotatedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](nstextcheckingclient/annotatedsubstring(forproposedrange:actualrange:).md)
-- [func candidateListTouchBarItem() -> NSCandidateListTouchBarItem<AnyObject>?](nstextcheckingclient/candidatelisttouchbaritem.md)
-- [func removeAnnotation(NSAttributedString.Key, range: NSRange)](nstextcheckingclient/removeannotation(_:range:).md)
-- [func replaceCharacters(in: NSRange, withAnnotatedString: NSAttributedString)](nstextcheckingclient/replacecharacters(in:withannotatedstring:).md)
-- [func selectAndShow(NSRange)](nstextcheckingclient/selectandshow(_:).md)
-- [func setAnnotations([NSAttributedString.Key : String], range: NSRange)](nstextcheckingclient/setannotations(_:range:).md)
-- [func view(for: NSRange, firstRect: NSRectPointer?, actualRange: NSRangePointer?) -> NSView?](nstextcheckingclient/view(for:firstrect:actualrange:).md)
+- [func addAnnotations([NSAttributedString.Key : String], range: NSRange)](./nstextcheckingclient/addannotations%28_,range%29.md)
+- [func annotatedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](./nstextcheckingclient/annotatedsubstring%28forproposedrange,actualrange%29.md)
+- [func candidateListTouchBarItem() -> NSCandidateListTouchBarItem<AnyObject>?](./nstextcheckingclient/candidatelisttouchbaritem%28%29.md)
+- [func removeAnnotation(NSAttributedString.Key, range: NSRange)](./nstextcheckingclient/removeannotation%28_,range%29.md)
+- [func replaceCharacters(in: NSRange, withAnnotatedString: NSAttributedString)](./nstextcheckingclient/replacecharacters%28in,withannotatedstring%29.md)
+- [func selectAndShow(NSRange)](./nstextcheckingclient/selectandshow%28_%29.md)
+- [func setAnnotations([NSAttributedString.Key : String], range: NSRange)](./nstextcheckingclient/setannotations%28_,range%29.md)
+- [func view(for: NSRange, firstRect: NSRectPointer?, actualRange: NSRangePointer?) -> NSView?](./nstextcheckingclient/view%28for,firstrect,actualrange%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTextInputClient](nstextinputclient.md)
-- [NSTextInputTraits](nstextinputtraits.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTextInputClient](./nstextinputclient.md)
+- [NSTextInputTraits](./nstextinputtraits.md)
 
 ## See Also
 
-- [class NSTextCheckingController](nstextcheckingcontroller.md)
-- [protocol NSTextInputTraits](nstextinputtraits.md)
-- [enum NSTextInputTraitType](nstextinputtraittype.md)
+### Text-checking
+- [class NSTextCheckingController](./nstextcheckingcontroller.md)
+- [protocol NSTextInputTraits](./nstextinputtraits.md)
+- [enum NSTextInputTraitType](./nstextinputtraittype.md)
 
 
 ---

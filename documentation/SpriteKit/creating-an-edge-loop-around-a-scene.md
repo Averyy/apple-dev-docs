@@ -1,6 +1,7 @@
 # Creating an Edge Loop Around a Scene
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Border your scene with an obstacle that physics bodies cannot penetrate.
 
@@ -31,13 +32,14 @@ func createSceneContents() {
 
 ## See Also
 
-- [init(edgeLoopFrom: CGRect)](skphysicsbody/init(edgeloopfrom:)-8sqfy.md)
+### Creating an Edge-Based Physics Body
+- [init(edgeLoopFrom: CGRect)](./skphysicsbody/init%28edgeloopfrom%29-8sqfy.md)
   Creates an edge loop from a rectangle.
-- [init(edgeFrom: CGPoint, to: CGPoint)](skphysicsbody/init(edgefrom:to:).md)
+- [init(edgeFrom: CGPoint, to: CGPoint)](./skphysicsbody/init%28edgefrom,to%29.md)
   Creates an edge between two points.
-- [init(edgeLoopFrom: CGPath)](skphysicsbody/init(edgeloopfrom:)-5grxu.md)
+- [init(edgeLoopFrom: CGPath)](./skphysicsbody/init%28edgeloopfrom%29-5grxu.md)
   Creates an edge loop from a path.
-- [init(edgeChainFrom: CGPath)](skphysicsbody/init(edgechainfrom:).md)
+- [init(edgeChainFrom: CGPath)](./skphysicsbody/init%28edgechainfrom%29.md)
   Creates an edge chain from a path.
 
 

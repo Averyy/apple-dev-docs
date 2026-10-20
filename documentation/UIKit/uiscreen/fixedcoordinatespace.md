@@ -1,7 +1,8 @@
 # fixedCoordinateSpace
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fixed coordinate space of the screen.
 
@@ -9,12 +10,16 @@ The fixed coordinate space of the screen.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
 ```swift
 var fixedCoordinateSpace: any UICoordinateSpace { get }
+```
+
+```objc
+@property (readonly) id<UICoordinateSpace> fixedCoordinateSpace;
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ The bounds of this coordinate space always reflect the screen dimensions of the 
 
 ## See Also
 
-- [var coordinateSpace: any UICoordinateSpace](uiscreen/coordinatespace.md)
+### Getting the coordinate space
+- [var coordinateSpace: any UICoordinateSpace](./coordinatespace.md)
   The current coordinate space of the screen.
 
 

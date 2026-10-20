@@ -1,7 +1,8 @@
 # allSatisfy(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes a single Boolean value that indicates whether all received elements pass a given predicate.
 
@@ -26,9 +27,9 @@ A publisher that publishes a Boolean value that indicates whether all received e
 
 #### Discussion
 
-Use the [`allSatisfy(_:)`](publisher/allsatisfy(_:).md) operator to determine if all elements in a stream satisfy a criteria you provide. When this publisher receives an element, it runs the predicate against the element. If the predicate returns `false`, the publisher produces a `false` value and finishes. If the upstream publisher finishes normally, this publisher produces a `true` value and finishes.
+Use the [`allSatisfy(_:)`](./allsatisfy%28_%29.md) operator to determine if all elements in a stream satisfy a criteria you provide. When this publisher receives an element, it runs the predicate against the element. If the predicate returns `false`, the publisher produces a `false` value and finishes. If the upstream publisher finishes normally, this publisher produces a `true` value and finishes.
 
-In the example below, the [`allSatisfy(_:)`](publisher/allsatisfy(_:).md) operator tests if each an integer array publisher’s elements fall into the `targetRange`:
+In the example below, the [`allSatisfy(_:)`](./allsatisfy%28_%29.md) operator tests if each an integer array publisher’s elements fall into the `targetRange`:
 
 ```swift
 let targetRange = (-1...100)
@@ -40,7 +41,7 @@ numbers.publisher
 // Prints: "true"
 ```
 
-With operators similar to [`reduce(_:_:)`](publisher/reduce(_:_:).md), this publisher produces at most one value.
+With operators similar to [`reduce(_:_:)`](./reduce%28_,_%29.md), this publisher produces at most one value.
 
 > **Note**: Upon receiving any request greater than zero, this publisher requests unlimited elements from the upstream publisher.
 
@@ -50,13 +51,14 @@ With operators similar to [`reduce(_:_:)`](publisher/reduce(_:_:).md), this publ
 
 ## See Also
 
-- [func contains(Self.Output) -> Publishers.Contains<Self>](publisher/contains(_:).md)
+### Applying matching criteria to elements
+- [func contains(Self.Output) -> Publishers.Contains<Self>](./contains%28_%29.md)
   Publishes a Boolean value upon receiving an element equal to the argument.
-- [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](publisher/contains(where:).md)
+- [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](./contains%28where%29.md)
   Publishes a Boolean value upon receiving an element that satisfies the predicate closure.
-- [func tryContains(where: (Self.Output) throws -> Bool) -> Publishers.TryContainsWhere<Self>](publisher/trycontains(where:).md)
+- [func tryContains(where: (Self.Output) throws -> Bool) -> Publishers.TryContainsWhere<Self>](./trycontains%28where%29.md)
   Publishes a Boolean value upon receiving an element that satisfies the throwing predicate closure.
-- [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](publisher/tryallsatisfy(_:).md)
+- [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](./tryallsatisfy%28_%29.md)
   Publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
 
 

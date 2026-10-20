@@ -1,7 +1,8 @@
 # init(signers:isEncrypted:signingError:encryptionError:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message security information object that indicates if a message is encrypted, who signed it, or if an error occurred when decoding the message.
 
@@ -14,6 +15,10 @@ Creates a message security information object that indicates if a message is enc
 init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, encryptionError: (any Error)?)
 ```
 
+```objc
+- (instancetype) initWithSigners:(NSArray<MEMessageSigner *> *) signers isEncrypted:(BOOL) isEncrypted signingError:(NSError *) signingError encryptionError:(NSError *) encryptionError;
+```
+
 ## Parameters
 
 - `signers`: An array of objects that contain information about who signed the message.
@@ -23,13 +28,14 @@ init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, 
 
 ## See Also
 
-- [var isEncrypted: Bool](memessagesecurityinformation/isencrypted.md)
+### Describing Message Security Attributes
+- [var isEncrypted: Bool](./isencrypted.md)
   A Boolean value that indicates if the sender encrypted the message.
-- [var encryptionError: (any Error)?](memessagesecurityinformation/encryptionerror.md)
+- [var encryptionError: (any Error)?](./encryptionerror.md)
   An error that indicates the security handler couldn’t decrypt the message.
-- [var signers: [MEMessageSigner]](memessagesecurityinformation/signers.md)
+- [var signers: [MEMessageSigner]](./signers.md)
   An array of objects that contain information about who signed the message.
-- [var signingError: (any Error)?](memessagesecurityinformation/signingerror.md)
+- [var signingError: (any Error)?](./signingerror.md)
   An error that indicates the security handler couldn’t decode the message’s digital signatures.
 
 

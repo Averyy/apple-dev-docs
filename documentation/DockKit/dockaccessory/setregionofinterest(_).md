@@ -1,7 +1,8 @@
 # setRegionOfInterest(_:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the area in the video frame in which the dock accessory tracks a subject.
 
@@ -25,7 +26,7 @@ If you disable system tracking, this configuration change applies to any custom 
 
 The region of interest doesn’t persist; it resets to the entire video frame any time an app exits, backgrounds, or stops tracking.
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](../dockkiterror/notsupported.md) if called on macOS.
 
 ## Parameters
 
@@ -33,11 +34,12 @@ The region of interest doesn’t persist; it resets to the entire video frame an
 
 ## See Also
 
-- [func animate(motion: DockAccessory.Animation) async throws -> Progress](dockaccessory/animate(motion:).md)
+### Performing animation
+- [func animate(motion: DockAccessory.Animation) async throws -> Progress](./animate%28motion%29.md)
   Starts an animation sequence.
-- [var regionOfInterest: CGRect](dockaccessory/regionofinterest.md)
+- [var regionOfInterest: CGRect](./regionofinterest.md)
   The area in the video frame in which the dock accessory tracks a subject.
-- [DockAccessory.Animation](dockaccessory/animation.md)
+- [DockAccessory.Animation](./animation.md)
   Character animations that describe how to move the dock accessory.
 
 

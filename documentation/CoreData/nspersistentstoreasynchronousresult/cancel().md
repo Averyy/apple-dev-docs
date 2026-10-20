@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the asynchronous fetch request.
 
@@ -10,7 +11,7 @@ Cancels the asynchronous fetch request.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Cancels the asynchronous fetch request.
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 

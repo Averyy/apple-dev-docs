@@ -1,7 +1,8 @@
 # AppSchema.CalendarEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the calendar domain.
 
@@ -21,27 +22,28 @@ protocol CalendarEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var attendee: some AppSchemaEntity](appschema/calendarentity/attendee.md)
+- [var attendee: some AppSchemaEntity](./calendarentity/attendee.md)
   An entity schema for an attendee.
-- [var calendar: some AppSchemaEntity](appschema/calendarentity/calendar.md)
+- [var calendar: some AppSchemaEntity](./calendarentity/calendar.md)
   An entity schema for a calendar.
-- [var event: some AppSchemaEntity](appschema/calendarentity/event.md)
+- [var event: some AppSchemaEntity](./calendarentity/event.md)
   An entity schema for an event.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var attendee: some AppSchemaEntity](appschema/calendarentity/attendee.md)
+### Content and parameter types
+- [var attendee: some AppSchemaEntity](./calendarentity/attendee.md)
   An entity schema for an attendee.
-- [var calendar: some AppSchemaEntity](appschema/calendarentity/calendar.md)
+- [var calendar: some AppSchemaEntity](./calendarentity/calendar.md)
   An entity schema for a calendar.
-- [var event: some AppSchemaEntity](appschema/calendarentity/event.md)
+- [var event: some AppSchemaEntity](./calendarentity/event.md)
   An entity schema for an event.
 
 

@@ -1,7 +1,8 @@
 # PlaybackQueueLocationResolutionResult.Success
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A queue location that matches the intent.
 
@@ -10,7 +11,7 @@ A queue location that matches the intent.
 
 ## Declaration
 
-```swift
+```
 object PlaybackQueueLocationResolutionResult.Success
 ```
 
@@ -20,7 +21,8 @@ object PlaybackQueueLocationResolutionResult.Success
 
 ## See Also
 
-- [object PlaybackQueueLocationResolutionResult.ConfirmationRequired](playbackqueuelocationresolutionresult/confirmationrequired-data.dictionary.md)
+### Specifying a Result
+- [object PlaybackQueueLocationResolutionResult.ConfirmationRequired](./confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the playback mode before proceeding.
 
 

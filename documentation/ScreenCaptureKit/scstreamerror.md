@@ -1,7 +1,8 @@
 # SCStreamError
 
 **Framework**: ScreenCaptureKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance representing a ScreenCaptureKit framework error.
 
@@ -21,34 +22,35 @@ struct SCStreamError
 
 #### Overview
 
-> ❗ **Important**:  When a user cancels a stream, the system calls an observer’s [`stream(_:didStopWithError:)`](scstreamdelegate/stream(_:didstopwitherror:).md) method with [`SCStreamError.Code.userStopped`](scstreamerror/code/userstopped.md). Rather than treating this event as an error, handle it as an intentional user request.
+> ❗ **Important**:  When a user cancels a stream, the system calls an observer’s [`stream(_:didStopWithError:)`](./scstreamdelegate/stream%28_,didstopwitherror%29.md) method with [`SCStreamError.Code.userStopped`](./scstreamerror/code/userstopped.md). Rather than treating this event as an error, handle it as an intentional user request.
 
 ## Topics
 
 ### Error inspection
-- [Error Constants](error-constants.md)
+- [Error Constants](./error-constants.md)
   Error code constants for framework operations.
-- [SCStreamError.Code](scstreamerror/code.md)
+- [SCStreamError.Code](./scstreamerror/code.md)
   Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
-- [static var errorDomain: String](scstreamerror/errordomain.md)
+- [static var errorDomain: String](./scstreamerror/errordomain.md)
 ### Type Properties
-- [static var insufficientStorage: SCStreamError.Code](scstreamerror/insufficientstorage.md)
-- [static var missingBackgroundMode: SCStreamError.Code](scstreamerror/missingbackgroundmode.md)
-- [static var notSupported: SCStreamError.Code](scstreamerror/notsupported.md)
+- [static var insufficientStorage: SCStreamError.Code](./scstreamerror/insufficientstorage.md)
+- [static var missingBackgroundMode: SCStreamError.Code](./scstreamerror/missingbackgroundmode.md)
+- [static var notSupported: SCStreamError.Code](./scstreamerror/notsupported.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SCStreamErrorDomain: String](scstreamerrordomain.md)
+### Stream errors (Swift)
+- [let SCStreamErrorDomain: String](./scstreamerrordomain.md)
   A string representation of the error domain.
 
 

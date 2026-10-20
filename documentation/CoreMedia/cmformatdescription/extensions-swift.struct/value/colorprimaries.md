@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.ColorPrimaries
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,35 +22,36 @@ struct ColorPrimaries
 ## Topics
 
 ### Color Primaries
-- [static let dci_P3: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/dci_p3.md)
-- [static let ebu_3213: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/ebu_3213.md)
-- [static let itu_R_2020: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/itu_r_2020.md)
-- [static let itu_R_709_2: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/itu_r_709_2.md)
-- [static let p22: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/p22.md)
-- [static let p3_D65: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/p3_d65.md)
-- [static let smpte_C: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/smpte_c.md)
+- [static let dci_P3: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/dci_p3.md)
+- [static let ebu_3213: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/ebu_3213.md)
+- [static let itu_R_2020: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/itu_r_2020.md)
+- [static let itu_R_709_2: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/itu_r_709_2.md)
+- [static let p22: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/p22.md)
+- [static let p3_D65: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/p3_d65.md)
+- [static let smpte_C: CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries/smpte_c.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMFormatDescription.Extensions.Value.AlphaChannelMode](cmformatdescription/extensions-swift.struct/value/alphachannelmode.md)
-- [CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation.md)
-- [CMFormatDescription.Extensions.Value.FieldDetail](cmformatdescription/extensions-swift.struct/value/fielddetail.md)
-- [CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface.md)
-- [CMFormatDescription.Extensions.Value.MPEG2VideoProfile](cmformatdescription/extensions-swift.struct/value/mpeg2videoprofile.md)
-- [CMFormatDescription.Extensions.Value.TextDisplayFlags](cmformatdescription/extensions-swift.struct/value/textdisplayflags.md)
-- [CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification.md)
-- [CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction.md)
-- [CMFormatDescription.Extensions.Value.Vendor](cmformatdescription/extensions-swift.struct/value/vendor.md)
-- [CMFormatDescription.Extensions.Value.YCbCrMatrix](cmformatdescription/extensions-swift.struct/value/ycbcrmatrix.md)
+### Constants
+- [CMFormatDescription.Extensions.Value.AlphaChannelMode](./alphachannelmode.md)
+- [CMFormatDescription.Extensions.Value.ChromaLocation](./chromalocation.md)
+- [CMFormatDescription.Extensions.Value.FieldDetail](./fielddetail.md)
+- [CMFormatDescription.Extensions.Value.FontFace](./fontface.md)
+- [CMFormatDescription.Extensions.Value.MPEG2VideoProfile](./mpeg2videoprofile.md)
+- [CMFormatDescription.Extensions.Value.TextDisplayFlags](./textdisplayflags.md)
+- [CMFormatDescription.Extensions.Value.TextJustification](./textjustification.md)
+- [CMFormatDescription.Extensions.Value.TransferFunction](./transferfunction.md)
+- [CMFormatDescription.Extensions.Value.Vendor](./vendor.md)
+- [CMFormatDescription.Extensions.Value.YCbCrMatrix](./ycbcrmatrix.md)
 
 
 ---

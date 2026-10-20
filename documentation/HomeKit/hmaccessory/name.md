@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the accessory.
 
@@ -19,17 +20,22 @@ The name of the accessory.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 #### Discussion
 
-Use the [`updateName(_:completionHandler:)`](hmaccessory/updatename(_:completionhandler:).md) method to change the name to a value chosen by the user.
+Use the [`updateName(_:completionHandler:)`](./updatename%28_,completionhandler%29.md) method to change the name to a value chosen by the user.
 
 ## See Also
 
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmaccessory/updatename(_:completionhandler:).md)
+### Identifying an Accessory
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Changes the name of the accessory.
-- [var uniqueIdentifier: UUID](hmaccessory/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the accessory.
-- [var identifier: UUID](hmaccessory/identifier.md)
+- [var identifier: UUID](./identifier.md)
   A unique identifier for the accessory.
 
 

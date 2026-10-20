@@ -1,7 +1,8 @@
 # init(descriptors:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a font collection matching the given descriptors.
 
@@ -14,6 +15,10 @@ Returns a font collection matching the given descriptors.
 init(descriptors queryDescriptors: [NSFontDescriptor])
 ```
 
+```objc
++ (NSFontCollection *) fontCollectionWithDescriptors:(NSArray<NSFontDescriptor *> *) queryDescriptors;
+```
+
 #### Return Value
 
 The font collection matching the given descriptors.
@@ -24,13 +29,14 @@ The font collection matching the given descriptors.
 
 ## See Also
 
-- [init?(locale: Locale)](nsfontcollection/init(locale:).md)
+### Creating Font Collections
+- [init?(locale: Locale)](./init%28locale%29.md)
   Returns a collection of fonts matching the given locale.
-- [init?(name: NSFontCollection.Name)](nsfontcollection/init(name:).md)
+- [init?(name: NSFontCollection.Name)](./init%28name%29.md)
   Creates a named font collection object.
-- [init?(name: NSFontCollection.Name, visibility: NSFontCollection.Visibility)](nsfontcollection/init(name:visibility:).md)
+- [init?(name: NSFontCollection.Name, visibility: NSFontCollection.Visibility)](./init%28name,visibility%29.md)
   Creates a font collection with the specified name and font visibility.
-- [class var withAllAvailableDescriptors: NSFontCollection](nsfontcollection/withallavailabledescriptors.md)
+- [class var withAllAvailableDescriptors: NSFontCollection](./withallavailabledescriptors.md)
   The font collection that matches all registered fonts.
 
 

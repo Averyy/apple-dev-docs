@@ -1,7 +1,8 @@
 # init(id:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event.
 
@@ -20,9 +21,9 @@ Creates an event.
 init(id: String) where DonationInfo == Tips.EmptyDonation
 ```
 
-##### Creating an Event
+##### Creating an event
 
-Create an event when you want display a tip based on an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](tips/event/donate().md) to donate to the event when the action occurs, increasing the event count by one.
+Create an event when you want display a tip based on an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](./donate%28%29.md) to donate to the event when the action occurs, increasing the event count by one.
 
 ```swift
 struct LandmarkDetailView: View {
@@ -43,7 +44,7 @@ struct LandmarkDetailView: View {
 }
 ```
 
-##### Adding Event Rules
+##### Adding event rules
 
 Add tip display rules using the `#Rule` macro to prevent a tip from being displayed until an event has been donated a specific number of times.
 
@@ -65,16 +66,16 @@ struct FavoriteLandmarkTip: Tip {
 ## Topics
 
 ### Properties
-- [var donations: [Tips.Event<DonationInfo>.Donation]](tips/event/donations.md)
+- [var donations: [Tips.Event<DonationInfo>.Donation]](./donations.md)
   Returns an events existing donations.
 ### Add Donations
-- [func donate() async](tips/event/donate.md)
+- [func donate() async](./donate%28%29.md)
   Donates an event with no associated `Donation` value.
-- [func donate(DonationInfo) async](tips/event/donate(_:).md)
+- [func donate(DonationInfo) async](./donate%28_%29.md)
   Donates an event along with its associated `Donation` value.
-- [func sendDonation((() -> Void)?)](tips/event/senddonation(_:).md)
+- [func sendDonation((() -> Void)?)](./senddonation%28_%29.md)
   Asynchronously donates an event with no associated `Donation` value.
-- [func sendDonation(DonationInfo, (() -> Void)?)](tips/event/senddonation(_:_:).md)
+- [func sendDonation(DonationInfo, (() -> Void)?)](./senddonation%28_,_%29.md)
   Asynchronously donates an event along with its associated `Donation` value.
 
 

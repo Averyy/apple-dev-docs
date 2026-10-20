@@ -1,6 +1,8 @@
 # Building a Custom Catalog and Matching Audio
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: Sample Code  
+**Download**: [BuildingACustomCatalogAndMatchingAudio.zip](https://docs-assets.developer.apple.com/published/381514c405ff/BuildingACustomCatalogAndMatchingAudio.zip)
 
 Display lesson content that’s synchronized to a learning video by matching the audio to a custom reference signature and associated metadata.
 
@@ -12,7 +14,7 @@ Display lesson content that’s synchronized to a learning video by matching the
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10045: Create Custom Audio Experiences with ShazamKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10045/).
+> **Note**: This sample code project is associated with WWDC21 session [10045: Create Custom Audio Experiences with ShazamKit](https://developer.apple.com/wwdc21/10045/).
 
 ##### Configure the Sample Code Project
 
@@ -22,11 +24,12 @@ Before you run the sample code project in Xcode:
 
 ## See Also
 
-- [ShazamKit Dance Finder with Managed Session](shazamkit-dance-finder-with-managed-session.md)
+### Create a custom audio catalog
+- [ShazamKit Dance Finder with Managed Session](./shazamkit-dance-finder-with-managed-session.md)
   Find a video of dance moves for a specific song by matching the audio to a custom catalog, and show a history of recognized songs.
-- [class SHCustomCatalog](shcustomcatalog.md)
+- [class SHCustomCatalog](./shcustomcatalog.md)
   An object for storing the reference signatures for custom audio recordings and their associated metadata.
-- [class SHCatalog](shcatalog.md)
+- [class SHCatalog](./shcatalog.md)
   An abstract base class for storing reference signatures and their associated metadata.
 
 

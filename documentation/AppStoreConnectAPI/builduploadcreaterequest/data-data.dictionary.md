@@ -1,7 +1,8 @@
 # BuildUploadCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for a build upload create request.
 
@@ -10,23 +11,23 @@ The data wrapper for a build upload create request.
 
 ## Declaration
 
-```swift
+```
 object BuildUploadCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BuildUploadCreateRequest.Data.Attributes](builduploadcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BuildUploadCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a build upload resource.
-- [object BuildUploadCreateRequest.Data.Relationships](builduploadcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BuildUploadCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (BuildUploadCreateRequest.Data.Attributes) *(required)*
 - `relationships` (BuildUploadCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `buildUploads`
 
 
 ---

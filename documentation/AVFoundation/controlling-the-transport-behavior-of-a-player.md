@@ -1,20 +1,21 @@
 # Controlling the transport behavior of a player
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Play, pause, and seek through a media presentation.
 
 #### Overview
 
-AVFoundation provides comprehensive support for playing media assets, including local and remote file-based media and also media streamed with HTTP Live Streaming. The framework models its media assets using the [`AVAsset`](avasset.md) class, which provides a consistent interface to load and inspect your media, regardless of its type or location. Use an [`AVPlayer`](avplayer.md) object to play media assets in the form of [`AVPlayerItem`](avplayeritem.md) objects, which model the dynamic state of an asset such as its [`currentTime()`](avplayeritem/currenttime().md).
+AVFoundation provides comprehensive support for playing media assets, including local and remote file-based media and also media streamed with HTTP Live Streaming. The framework models its media assets using the [`AVAsset`](./avasset.md) class, which provides a consistent interface to load and inspect your media, regardless of its type or location. Use an [`AVPlayer`](./avplayer.md) object to play media assets in the form of [`AVPlayerItem`](./avplayeritem.md) objects, which model the dynamic state of an asset such as its [`currentTime()`](./avplayeritem/currenttime%28%29.md).
 
-Understanding how to effectively use [`AVPlayer`](avplayer.md) is essential for anyone building a custom player UI or otherwise requiring programmatic control of playback.
+Understanding how to effectively use [`AVPlayer`](./avplayer.md) is essential for anyone building a custom player UI or otherwise requiring programmatic control of playback.
 
-##### Observe Playback Readiness
+##### Observe playback readiness
 
-When you create a player item, it starts with a status of [`AVPlayerItem.Status.unknown`](avplayeritem/status-swift.enum/unknown.md), which means the system hasn’t attempted to load its media for playback. Only when you associate the item with an [`AVPlayer`](avplayer.md) object does the system begin loading an asset’s media.
+When you create a player item, it starts with a status of [`AVPlayerItem.Status.unknown`](./avplayeritem/status-swift.enum/unknown.md), which means the system hasn’t attempted to load its media for playback. Only when you associate the item with an [`AVPlayer`](./avplayer.md) object does the system begin loading an asset’s media.
 
-To know when the player item is ready for playback, observe the value of its [`status`](avplayeritem/status-swift.property.md) property. Add this observation before you call the player’s [`replaceCurrentItem(with:)`](avplayer/replacecurrentitem(with:).md) method, because associating the player item with a player is the system’s cue to load the item’s media:
+To know when the player item is ready for playback, observe the value of its [`status`](./avplayeritem/status-swift.property.md) property. Add this observation before you call the player’s [`replaceCurrentItem(with:)`](./avplayer/replacecurrentitem%28with%29.md) method, because associating the player item with a player is the system’s cue to load the item’s media:
 
 ```swift
 var statusObservation: NSKeyValueObservation?
@@ -44,11 +45,11 @@ func playMedia(at url: URL) {
 }
 ```
 
-When the player item reaches a [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md) state, present or enable your playback UI. Alternatively, if a failure occurs, show the appropriate status in the player.
+When the player item reaches a [`AVPlayerItem.Status.readyToPlay`](./avplayeritem/status-swift.enum/readytoplay.md) state, present or enable your playback UI. Alternatively, if a failure occurs, show the appropriate status in the player.
 
-##### Control the Playback Rate
+##### Control the playback rate
 
-A player provides the [`play()`](avplayer/play().md) and [`pause()`](avplayer/pause().md) methods as its primary means of controlling its playback rate. When a player item is ready for playback, call the player’s [`play()`](avplayer/play().md) method to request that playback begins at the [`defaultRate`](avplayer/defaultrate.md), which has an initial value of `1.0` (the natural rate). By default, a player automatically waits to start playback until it has sufficient media data available to minimize stalling. You can determine whether a player is in a paused, waiting to play, or playing state by observing its [`timeControlStatus`](avplayer/timecontrolstatus-swift.property.md) value:
+A player provides the [`play()`](./avplayer/play%28%29.md) and [`pause()`](./avplayer/pause%28%29.md) methods as its primary means of controlling its playback rate. When a player item is ready for playback, call the player’s [`play()`](./avplayer/play%28%29.md) method to request that playback begins at the [`defaultRate`](./avplayer/defaultrate.md), which has an initial value of `1.0` (the natural rate). By default, a player automatically waits to start playback until it has sufficient media data available to minimize stalling. You can determine whether a player is in a paused, waiting to play, or playing state by observing its [`timeControlStatus`](./avplayer/timecontrolstatus-swift.property.md) value:
 
 ```swift
 var isPlaying = false
@@ -64,7 +65,7 @@ private func observePlayingState() {
 }
 ```
 
-Observe changes to the [`rate`](avplayer/rate.md) property by observing notifications of type [`rateDidChangeNotification`](avplayer/ratedidchangenotification.md). Observing this notification is similar to key-value observing the [`rate`](avplayer/rate.md) property, but provides additional information about the reason for the rate change. Retrieve the reason from the notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary using the [`rateDidChangeReasonKey`](avplayer/ratedidchangereasonkey.md) constant:
+Observe changes to the [`rate`](./avplayer/rate.md) property by observing notifications of type [`rateDidChangeNotification`](./avplayer/ratedidchangenotification.md). Observing this notification is similar to key-value observing the [`rate`](./avplayer/rate.md) property, but provides additional information about the reason for the rate change. Retrieve the reason from the notification’s [`userInfo`](../Foundation/notification/userinfo.md) dictionary using the [`rateDidChangeReasonKey`](./avplayer/ratedidchangereasonkey.md) constant:
 
 ```swift
 // Observe changes to the playback rate asynchronously.
@@ -90,9 +91,9 @@ private func observeRateChanges() async {
 }
 ```
 
-##### Seek Through the Media Timeline
+##### Seek through the media timeline
 
-You can seek through a media timeline in several ways using the methods of [`AVPlayer`](avplayer.md) and [`AVPlayerItem`](avplayeritem.md). The most common way is to use the player’s [`seek(to:)`](avplayer/seek(to:)-87h2r.md) method, passing it a destination [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value. Call this method in an asynchronous context:
+You can seek through a media timeline in several ways using the methods of [`AVPlayer`](./avplayer.md) and [`AVPlayerItem`](./avplayeritem.md). The most common way is to use the player’s [`seek(to:)`](./avplayer/seek%28to%29-87h2r.md) method, passing it a destination [`CMTime`](../CoreMedia/cmtime.md) value. Call this method in an asynchronous context:
 
 ```swift
 // Handle time update request from user interface.
@@ -103,9 +104,9 @@ func seek(to timeInterval: TimeInterval) async {
 }
 ```
 
-You can call this method a single time to seek to the location, but you can also call it continuously such as when you use a [`Slider`](https://developer.apple.com/documentation/swiftui/slider) view.
+You can call this method a single time to seek to the location, but you can also call it continuously such as when you use a [`Slider`](../SwiftUI/slider.md) view.
 
-The [`seek(to:)`](avplayer/seek(to:)-87h2r.md) method is a convenient way to quickly seek through your presentation, but it’s tuned for speed rather than precision. This means the actual time to which the player seeks may differ slightly from the time you request. If you need to implement precise seeking behavior, use the [`seek(to:toleranceBefore:toleranceAfter:)`](avplayer/seek(to:tolerancebefore:toleranceafter:).md) method, which lets you indicate the tolerated amount of deviation from your target time (before and after). For example, if you need to provide sample-accurate seeking behavior, specify tolerance values of zero:
+The [`seek(to:)`](./avplayer/seek%28to%29-87h2r.md) method is a convenient way to quickly seek through your presentation, but it’s tuned for speed rather than precision. This means the actual time to which the player seeks may differ slightly from the time you request. If you need to implement precise seeking behavior, use the [`seek(to:toleranceBefore:toleranceAfter:)`](./avplayer/seek%28to,tolerancebefore,toleranceafter%29.md) method, which lets you indicate the tolerated amount of deviation from your target time (before and after). For example, if you need to provide sample-accurate seeking behavior, specify tolerance values of zero:
 
 ```swift
 // Seek precisely to the specified time.
@@ -114,19 +115,20 @@ await avPlayer.seek(to: time, toleranceBefore: .zero, toleranceAfter: .zero)
 
 ## See Also
 
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+### Playback control
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
   Keep your user interface in sync with state changes from playback objects.
-- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+- [Creating a seamless multiview playback experience](./creating-a-seamless-multiview-playback-experience.md)
   Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
-- [class AVPlayer](avplayer.md)
+- [class AVPlayer](./avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
-- [class AVPlayerItem](avplayeritem.md)
+- [class AVPlayerItem](./avplayeritem.md)
   An object that models the timing and presentation state of an asset during playback.
-- [class AVPlayerItemTrack](avplayeritemtrack.md)
+- [class AVPlayerItemTrack](./avplayeritemtrack.md)
   An object that represents the presentation state of an asset track during playback.
-- [class AVQueuePlayer](avqueueplayer.md)
+- [class AVQueuePlayer](./avqueueplayer.md)
   An object that plays a sequence of player items.
-- [class AVPlayerLooper](avplayerlooper.md)
+- [class AVPlayerLooper](./avplayerlooper.md)
   An object that loops media content using a queue player.
 
 

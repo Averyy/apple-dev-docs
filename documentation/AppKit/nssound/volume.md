@@ -1,7 +1,8 @@
 # volume
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume of the sound.
 
@@ -14,6 +15,10 @@ The volume of the sound.
 var volume: Float { get set }
 ```
 
+```objc
+@property float volume;
+```
+
 #### Discussion
 
 The valid range is between `0.0` and `1.0`.
@@ -22,17 +27,18 @@ The value of this property does not affect the systemwide volume.
 
 ## See Also
 
-- [var name: NSSound.Name?](nssound/name-swift.property.md)
+### Configuring Sounds
+- [var name: NSSound.Name?](./name-swift.property.md)
   The name assigned to the sound.
-- [typealias Name](nssound/name-swift.typealias.md)
-- [func setName(NSSound.Name?) -> Bool](nssound/setname(_:).md)
-- [var currentTime: TimeInterval](nssound/currenttime.md)
+- [typealias Name](./name-swift.typealias.md)
+- [func setName(NSSound.Name?) -> Bool](./setname%28_%29.md)
+- [var currentTime: TimeInterval](./currenttime.md)
   The sound’s playback progress, in seconds.
-- [var loops: Bool](nssound/loops.md)
+- [var loops: Bool](./loops.md)
   A Boolean that indicates whether the sound restarts playback when it reaches the end of its content.
-- [var playbackDeviceIdentifier: NSSound.PlaybackDeviceIdentifier?](nssound/playbackdeviceidentifier-swift.property.md)
+- [var playbackDeviceIdentifier: NSSound.PlaybackDeviceIdentifier?](./playbackdeviceidentifier-swift.property.md)
   Identifies the sound’s output device
-- [typealias PlaybackDeviceIdentifier](nssound/playbackdeviceidentifier-swift.typealias.md)
+- [typealias PlaybackDeviceIdentifier](./playbackdeviceidentifier-swift.typealias.md)
 
 
 ---

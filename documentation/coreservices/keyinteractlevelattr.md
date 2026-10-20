@@ -1,9 +1,10 @@
 # keyInteractLevelAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Settings for when to allow the Apple Event Manager to bring a server application to the foreground, if necessary, to interact with the user. See [`AEAddressDesc`](aeaddressdesc.md). (Read-only.)
+Settings for when to allow the Apple Event Manager to bring a server application to the foreground, if necessary, to interact with the user. See [`AEAddressDesc`](./aeaddressdesc.md). (Read-only.)
 
 **Availability**:
 - Mac Catalyst 13.0+

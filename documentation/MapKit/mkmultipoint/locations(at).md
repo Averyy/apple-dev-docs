@@ -1,7 +1,8 @@
 # locations(at:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Translates a point index set into a unit distance along the shape.
 
@@ -11,7 +12,7 @@ Translates a point index set into a unit distance along the shape.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func locations(at indexes: IndexSet) -> [CGFloat]
 
 #### Return Value
 
-An array of [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values.
+An array of [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) values.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ An array of [`CGFloat`](https://developer.apple.com/documentation/corefoundation
 
 ## See Also
 
-- [func points() -> UnsafeMutablePointer<MKMapPoint>](mkmultipoint/points.md)
+### Accessing the points in the shape
+- [func points() -> UnsafeMutablePointer<MKMapPoint>](./points%28%29.md)
   Returns an array of map points associated with the shape.
-- [var pointCount: Int](mkmultipoint/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The number of points associated with the shape.
-- [func location(atPointIndex: Int) -> CGFloat](mkmultipoint/location(atpointindex:).md)
+- [func location(atPointIndex: Int) -> CGFloat](./location%28atpointindex%29.md)
   Translates a point index into a unit distance along the shape.
 
 

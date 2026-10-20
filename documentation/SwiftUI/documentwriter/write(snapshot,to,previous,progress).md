@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes the document content to disk.
@@ -22,9 +23,9 @@ func write(snapshot: sending Self.Snapshot, to destination: sending Self.Destina
 
 #### Discussion
 
-SwiftUI calls this method in the background after obtaining a snapshot via [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md). Perform all serialization and disk access here.
+SwiftUI calls this method in the background after obtaining a snapshot via [`snapshot(contentType:)`](../writabledocument/snapshot%28contenttype%29.md). Perform all serialization and disk access here.
 
-For most documents, use [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) instead of implementing a custom writer. Only implement `write` yourself when you need capabilities `FileWrapperDocumentWriter` doesn’t provide — such as direct URL access for Core Graphics, AVFoundation, or other frameworks that operate on file paths:
+For most documents, use [`FileWrapperDocumentWriter`](../filewrapperdocumentwriter.md) instead of implementing a custom writer. Only implement `write` yourself when you need capabilities `FileWrapperDocumentWriter` doesn’t provide — such as direct URL access for Core Graphics, AVFoundation, or other frameworks that operate on file paths:
 
 ```swift
 @concurrent
@@ -59,9 +60,10 @@ func write(content image: sending CGImage, to destination: URL,
 
 ## See Also
 
-- [associatedtype Snapshot](documentwriter/snapshot.md)
+### Writing a document
+- [associatedtype Snapshot](./snapshot.md)
   The type representing the document’s content to write.
-- [associatedtype Destination = URL](documentwriter/destination.md)
+- [associatedtype Destination = URL](./destination.md)
   The type of the destination location to write to.
 
 

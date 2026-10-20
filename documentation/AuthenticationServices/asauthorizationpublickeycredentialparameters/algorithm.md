@@ -1,7 +1,8 @@
 # algorithm
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm to use for negitation between the authenticator and the relying party.
 
@@ -18,9 +19,14 @@ The algorithm to use for negitation between the authenticator and the relying pa
 var algorithm: ASCOSEAlgorithmIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASCOSEAlgorithmIdentifier algorithm;
+```
+
 ## See Also
 
-- [init(algorithm: ASCOSEAlgorithmIdentifier)](asauthorizationpublickeycredentialparameters/init(algorithm:).md)
+### Getting the parameters
+- [init(algorithm: ASCOSEAlgorithmIdentifier)](./init%28algorithm%29.md)
   Creates the object with an algorithm.
 
 

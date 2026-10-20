@@ -1,7 +1,8 @@
 # FoveatedStreamingExtension.Endpoint
 
 **Framework**: Foveated Streaming  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The streaming endpoint the extension connects to.
 

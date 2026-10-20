@@ -1,7 +1,8 @@
 # encode()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the graph into a binary representation.
 
@@ -19,9 +20,9 @@ final func encode() throws -> Data
 
 #### Discussion
 
-The resulting data can be stored to disk or passed across a process boundary, and later restored with [`init(from:)`](shadergraph/init(from:).md).
+The resulting data can be stored to disk or passed across a process boundary, and later restored with [`init(from:)`](./init%28from%29.md).
 
-> **Note**: If the graph cannot be serialized.
+> **Throws**: If the graph cannot be serialized.
 
 
 ---

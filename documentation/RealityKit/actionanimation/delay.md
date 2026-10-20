@@ -1,7 +1,8 @@
 # delay
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An amount of time that lapses before the animation plays.
 

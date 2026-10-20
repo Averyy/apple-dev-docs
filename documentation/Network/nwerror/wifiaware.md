@@ -1,7 +1,8 @@
 # wifiAware
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error that occurred, if applicable.
 

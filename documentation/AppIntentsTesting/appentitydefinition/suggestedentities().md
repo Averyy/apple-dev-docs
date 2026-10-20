@@ -1,7 +1,8 @@
 # suggestedEntities()
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all suggested entities of this type.
 
@@ -28,11 +29,12 @@ An array of suggested app entities.
 
 The system uses suggested entities for disambiguation and recommendations in Shortcuts and Siri.
 
-> **Note**: Any errors encountered during the query execution.
+> **Throws**: Any errors encountered during the query execution.
 
 ## See Also
 
-- [func suggestedEntitiesQuery() -> AnyEntityQuery](appentitydefinition/suggestedentitiesquery.md)
+### Accessing suggested entities
+- [func suggestedEntitiesQuery() -> AnyEntityQuery](./suggestedentitiesquery%28%29.md)
   Creates an entity query that retrieves suggested entities of this type.
 
 

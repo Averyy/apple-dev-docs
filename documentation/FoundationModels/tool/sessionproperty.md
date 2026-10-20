@@ -1,7 +1,8 @@
 # Tool.SessionProperty
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A property wrapper that provides access to a session property from within a tool.
 
@@ -21,13 +22,14 @@ typealias SessionProperty = LanguageModelSession.SessionProperty
 
 ## See Also
 
-- [var name: String](tool/name.md)
+### Inspecting a tool
+- [var name: String](./name.md)
   A unique name for the tool.
-- [var description: String](tool/description.md)
+- [var description: String](./description.md)
   A natural language description of when and how to use the tool.
-- [var parameters: GenerationSchema](tool/parameters.md)
+- [var parameters: GenerationSchema](./parameters.md)
   A schema for the parameters this tool accepts.
-- [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
+- [var includesSchemaInInstructions: Bool](./includesschemaininstructions.md)
   A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
 
 

@@ -1,7 +1,8 @@
 # list(using:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a compositional layout that contains only list sections of the specified configuration.
 
@@ -10,7 +11,7 @@ Creates a compositional layout that contains only list sections of the specified
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ Creates a compositional layout that contains only list sections of the specified
 
 ## See Also
 
-- [struct UICollectionLayoutListConfiguration](uicollectionlayoutlistconfiguration-swift.struct.md)
+### Creating a list layout
+- [struct UICollectionLayoutListConfiguration](../uicollectionlayoutlistconfiguration-swift.struct.md)
   A configuration for creating a list layout.
 
 

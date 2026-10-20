@@ -1,7 +1,8 @@
 # NSScrollView.Elasticity
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants determine the elasticity behavior for an axis of the scrollview.
 
@@ -14,31 +15,36 @@ These constants determine the elasticity behavior for an axis of the scrollview.
 enum Elasticity
 ```
 
+```c
+enum NSScrollElasticity : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScrollView.Elasticity.automatic](nsscrollview/elasticity/automatic.md)
+- [NSScrollView.Elasticity.automatic](./elasticity/automatic.md)
   Automatically determine whether to allow elasticity on this axis.
-- [NSScrollView.Elasticity.none](nsscrollview/elasticity/none.md)
+- [NSScrollView.Elasticity.none](./elasticity/none.md)
   Disallow scrolling beyond document bounds on this axis.
-- [NSScrollView.Elasticity.allowed](nsscrollview/elasticity/allowed.md)
+- [NSScrollView.Elasticity.allowed](./elasticity/allowed.md)
   Allow content to be scrolled past its bounds on this axis in an elastic fashion.
 ### Initializers
-- [init?(rawValue: Int)](nsscrollview/elasticity/init(rawvalue:).md)
+- [init?(rawValue: Int)](./elasticity/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScrollView.FindBarPosition](nsscrollview/findbarposition-swift.enum.md)
+### Constants
+- [NSScrollView.FindBarPosition](./findbarposition-swift.enum.md)
   These constants define the position of the find bar in relation to the scroll view.
 
 

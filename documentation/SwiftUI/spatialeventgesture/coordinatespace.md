@@ -1,7 +1,8 @@
 # coordinateSpace
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate space of the gesture.
 

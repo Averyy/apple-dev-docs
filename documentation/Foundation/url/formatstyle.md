@@ -1,7 +1,8 @@
 # URL.FormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that converts between URL instances and their textual representations.
 
@@ -22,18 +23,18 @@ struct FormatStyle
 
 #### Overview
 
-Instances of [`URL.FormatStyle`](url/formatstyle.md) create localized, human-readable text from [`URL`](url.md) instances and parse string representations of URLs into instances of [`URL`](url.md).
+Instances of [`URL.FormatStyle`](./formatstyle.md) create localized, human-readable text from [`URL`](../url.md) instances and parse string representations of URLs into instances of [`URL`](../url.md).
 
-##### Formatting Urls
+##### Formatting URLs
 
-Use the [`formatted()`](url/formatted().md) method to create a string representation of a URL using the default [`URL.FormatStyle`](url/formatstyle.md) configuration. As seen in the following example, the default style creates a string with the scheme, host, and path, but not the port or query.
+Use the [`formatted()`](./formatted%28%29.md) method to create a string representation of a URL using the default [`URL.FormatStyle`](./formatstyle.md) configuration. As seen in the following example, the default style creates a string with the scheme, host, and path, but not the port or query.
 
 ```swift
 let url = URL(string:"https://www.example.com:8080/path/to/endpoint?key=value")!
 let formatted = url.formatted() // "https://www.example.com/path/to/endpoint"
 ```
 
-You can specify a format style by providing an argument to the [`format(_:)`](url/formatstyle/format(_:).md) method. The following example uses the previous URL, but preserves only the host and path.
+You can specify a format style by providing an argument to the [`format(_:)`](./formatstyle/format%28_%29.md) method. The following example uses the previous URL, but preserves only the host and path.
 
 ```swift
 let url = URL(string:"https://www.example.com:8080/path/to/endpoint?key=value")!
@@ -48,7 +49,7 @@ let style = URL.FormatStyle(scheme: .never,
 let formatted = style.format(url) // "www.example.com/path/to/endpoint"
 ```
 
-Instantiate a style when you want to format multiple URL instances with the same style. For one-time access to a default style, you can use the static accessor [`url`](formatstyle/url.md) at call points that expect the [`URL.FormatStyle`](url/formatstyle.md) type, such as the [`format(_:)`](url/formatstyle/format(_:).md) method. This means you can write the example above as follows:
+Instantiate a style when you want to format multiple URL instances with the same style. For one-time access to a default style, you can use the static accessor [`url`](../formatstyle/url.md) at call points that expect the [`URL.FormatStyle`](./formatstyle.md) type, such as the [`format(_:)`](./formatstyle/format%28_%29.md) method. This means you can write the example above as follows:
 
 ```swift
 let url = URL(string:"https://www.example.com:8080/path/to/endpoint?key=value")!
@@ -60,11 +61,11 @@ let formatted = url.formatted(.url
     .query(.never)) // "www.example.com/path/to/endpoint"
 ```
 
-This example works by taking the default style provided by [`url`](formatstyle/url.md), then customizing it with calls to the style modifiers in Customizing style behavior.
+This example works by taking the default style provided by [`url`](../formatstyle/url.md), then customizing it with calls to the style modifiers in Customizing style behavior.
 
-##### Parsing Urls
+##### Parsing URLs
 
-You can use [`URL.FormatStyle`](url/formatstyle.md) to parse strings into URL values. To do this, create a [`URL.ParseStrategy`](url/parsestrategy.md) from a format style, then call the strategy’s [`parse(_:)`](url/parsestrategy/parse(_:).md) method.
+You can use [`URL.FormatStyle`](./formatstyle.md) to parse strings into URL values. To do this, create a [`URL.ParseStrategy`](./parsestrategy.md) from a format style, then call the strategy’s [`parse(_:)`](./parsestrategy/parse%28_%29.md) method.
 
 ```swift
 let style = URL.FormatStyle(scheme: .always,
@@ -79,7 +80,7 @@ let urlString = "https://www.example.com:8080/path/to/endpoint?key=value"
 let url = try? style.parseStrategy.parse(urlString)
 ```
 
-##### Matching Regular Expressions
+##### Matching regular expressions
 
 Along with parsing URL values in strings, you can use the regular expression domain-specific language provided by Swift to match and capture URL substrings. The following example scans source input that’s expected to contain a timestamp, some whitespace, and a URL.
 
@@ -110,80 +111,81 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
 ## Topics
 
 ### Creating a URL format style
-- [init(scheme: URL.FormatStyle.ComponentDisplayOption, user: URL.FormatStyle.ComponentDisplayOption, password: URL.FormatStyle.ComponentDisplayOption, host: URL.FormatStyle.HostDisplayOption, port: URL.FormatStyle.ComponentDisplayOption, path: URL.FormatStyle.ComponentDisplayOption, query: URL.FormatStyle.ComponentDisplayOption, fragment: URL.FormatStyle.ComponentDisplayOption)](url/formatstyle/init(scheme:user:password:host:port:path:query:fragment:).md)
+- [init(scheme: URL.FormatStyle.ComponentDisplayOption, user: URL.FormatStyle.ComponentDisplayOption, password: URL.FormatStyle.ComponentDisplayOption, host: URL.FormatStyle.HostDisplayOption, port: URL.FormatStyle.ComponentDisplayOption, path: URL.FormatStyle.ComponentDisplayOption, query: URL.FormatStyle.ComponentDisplayOption, fragment: URL.FormatStyle.ComponentDisplayOption)](./formatstyle/init%28scheme,user,password,host,port,path,query,fragment%29.md)
   Creates a URL format style with the given display options.
-- [URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption.md)
+- [URL.FormatStyle.ComponentDisplayOption](./formatstyle/componentdisplayoption.md)
   A type that indicates whether a formatted URL should include a component.
-- [URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption.md)
+- [URL.FormatStyle.HostDisplayOption](./formatstyle/hostdisplayoption.md)
   A type that indicates whether a formatted URL should include the host component.
 ### Formatting URL values
-- [func format(URL) -> String](url/formatstyle/format(_:).md)
+- [func format(URL) -> String](./formatstyle/format%28_%29.md)
   Formats a URL, using this style.
 ### Customizing style behavior
-- [func scheme(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/scheme(_:).md)
+- [func scheme(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/scheme%28_%29.md)
   Modifies a format style to display a URL’s scheme component in accordance with the provided option.
-- [func user(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/user(_:).md)
+- [func user(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/user%28_%29.md)
   Modifies a format style to display a URL’s user component in accordance with the provided option.
-- [func password(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/password(_:).md)
+- [func password(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/password%28_%29.md)
   Modifies a format style to display a URL’s password component in accordance with the provided option.
-- [func host(URL.FormatStyle.HostDisplayOption) -> URL.FormatStyle](url/formatstyle/host(_:).md)
+- [func host(URL.FormatStyle.HostDisplayOption) -> URL.FormatStyle](./formatstyle/host%28_%29.md)
   Modifies a format style to display a URL’s host component in accordance with the provided option.
-- [URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption.md)
+- [URL.FormatStyle.HostDisplayOption](./formatstyle/hostdisplayoption.md)
   A type that indicates whether a formatted URL should include the host component.
-- [func port(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/port(_:).md)
+- [func port(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/port%28_%29.md)
   Modifies a format style to display a URL’s port component in accordance with the provided option.
-- [func path(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/path(_:).md)
+- [func path(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/path%28_%29.md)
   Modifies a format style to display a URL’s path component in accordance with the provided option.
-- [func query(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/query(_:).md)
+- [func query(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/query%28_%29.md)
   Modifies a format style to display a URL’s query component in accordance with the provided option.
-- [func fragment(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/fragment(_:).md)
+- [func fragment(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./formatstyle/fragment%28_%29.md)
   Modifies a format style to display a URL’s fragment component in accordance with the provided option.
-- [URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption.md)
+- [URL.FormatStyle.ComponentDisplayOption](./formatstyle/componentdisplayoption.md)
   A type that indicates whether a formatted URL should include a component.
 ### Parsing URLs
-- [var parseStrategy: URL.ParseStrategy](url/formatstyle/parsestrategy.md)
+- [var parseStrategy: URL.ParseStrategy](./formatstyle/parsestrategy.md)
   The parse strategy used by this format style.
-- [struct ParseStrategy](url/parsestrategy.md)
+- [struct ParseStrategy](./parsestrategy.md)
   A parse strategy for creating URLs from formatted strings.
 ### Enumerations
-- [URL.FormatStyle.Component](url/formatstyle/component.md)
+- [URL.FormatStyle.Component](./formatstyle/component.md)
   An enumeration of the components of a URL, for use in creating format style options that depend on a component’s value.
 ### Default Implementations
-- [FormatStyle Implementations](url/formatstyle/formatstyle-implementations.md)
-- [ParseableFormatStyle Implementations](url/formatstyle/parseableformatstyle-implementations.md)
+- [FormatStyle Implementations](./formatstyle/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](./formatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseableFormatStyle](../parseableformatstyle.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Language Introspector](language-introspector.md)
+### Data formatting in Swift
+- [Language Introspector](../language-introspector.md)
   Converts data into human-readable text using formatters and locales.
-- [protocol FormatStyle](formatstyle.md)
+- [protocol FormatStyle](../formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
-- [struct IntegerFormatStyle](integerformatstyle.md)
+- [struct IntegerFormatStyle](../integerformatstyle.md)
   A structure that converts between integer values and their textual representations.
-- [struct FloatingPointFormatStyle](floatingpointformatstyle.md)
+- [struct FloatingPointFormatStyle](../floatingpointformatstyle.md)
   A structure that converts between floating-point values and their textual representations.
-- [Decimal.FormatStyle](decimal/formatstyle.md)
+- [Decimal.FormatStyle](../decimal/formatstyle.md)
   A structure that converts between decimal values and their textual representations.
-- [struct ListFormatStyle](listformatstyle.md)
+- [struct ListFormatStyle](../listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
-- [struct StringStyle](stringstyle.md)
-- [struct FormatStyleCapitalizationContext](formatstylecapitalizationcontext.md)
+- [struct StringStyle](../stringstyle.md)
+- [struct FormatStyleCapitalizationContext](../formatstylecapitalizationcontext.md)
   The capitalization formatting context used when formatting dates and times.
-- [Format Style Configurations](format-style-configurations.md)
+- [Format Style Configurations](../format-style-configurations.md)
   Behaviors for traits like numeric precision, rounding, and scale, used for formatting and parsing numeric values.
 
 

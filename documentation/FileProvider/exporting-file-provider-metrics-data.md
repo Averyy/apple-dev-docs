@@ -1,12 +1,13 @@
 # Exporting file provider metrics data
 
-**Framework**: File Provider
+**Framework**: File Provider  
+**Role**: Article
 
 Download and analyze usage, consistency, and error data.
 
 #### Overview
 
-Use CloudKit Console to create a data export token that you use to export file provider metrics for your apps. Request data from iCloud web services, and download the data when the request is complete. For more information on CloudKit and CloudKit Console, see [`Build apps using CloudKit`](https://developer.apple.comhttps://developer.apple.com/icloud/cloudkit/).
+Use CloudKit Console to create a data export token that you use to export file provider metrics for your apps. Request data from iCloud web services, and download the data when the request is complete. For more information on CloudKit and CloudKit Console, see [Build apps using CloudKit](https://developer.apple.com/icloud/cloudkit/).
 
 You can download three different reports that provide file provider metrics:
 
@@ -14,13 +15,17 @@ You can download three different reports that provide file provider metrics:
 - **Usage**: A summary of the kinds of items that a file provider stores on someone’s device, along with the number of materialized items, dataless items, and the total space used by items. A *materialized item* is an item for which the system stores content on someone’s device. A *dataless item* is an item that the system synchronizes on the device, and downloads the content on demand when someone opens it.
 - **Dynamic errors**: A list of errors that occurred during file provider operations, along with additional details you can use to investigate the errors.
 
-> **Note**:  If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > CloudKit Console > Data Export [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
+> **Note**:  If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option:
+>
+> Developer Tools & Resources > CloudKit Console > Data Export
+>
+> [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-##### Create a Data Export Token
+##### Create a data export token
 
 To access log data for your apps, create a data export token by following these steps:
 
-1. Navigate to [`CloudKit Console settings`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/notifications/teams?settings=account) and log in.
+1. Navigate to [CloudKit Console settings](https://icloud.developer.apple.com/dashboard/notifications/teams?settings=account) and log in.
 2. Click Tokens.
 3. Click Create Data Export Token.
 4. Give the token a name, and an optional description.
@@ -34,7 +39,7 @@ To access log data for your apps, create a data export token by following these 
 
 The token you create is restricted to your developer account, and only gives you access to the data set you requested for the specified app.
 
-##### Create a Data Export Request
+##### Create a data export request
 
 Make an HTTPS `POST` request to the data export request endpoint:
 
@@ -84,7 +89,7 @@ You can request a download that covers the same date range as a previous downloa
 
 > **Note**:  The status URLs for all requests are available for 6 months after you make the request. Make sure you use the latest URLs for checking status and downloading reports.
 
-##### Check the Status of Your Data Export
+##### Check the status of your data export
 
 Make an HTTPS `GET` request to the status URL, passing your data export token in the `X-Apple-CloudKit-Management-Token` header.
 
@@ -114,7 +119,7 @@ The data export status endpoint might return the following HTTP status codes tha
 - **`404`**: The data export token is invalid.
 - **`500`**: An internal error occurred.
 
-##### Download the Exported Data
+##### Download the exported data
 
 Make an HTTPS `GET` request to URL in the status object’s `downloadDetails.dataUrl` field to receive a CSV file that contains your exported data:
 
@@ -122,7 +127,7 @@ Make an HTTPS `GET` request to URL in the status object’s `downloadDetails.dat
 curl --compressed -X GET "https://example.com/download/data.csv" -o export.csv
 ```
 
-##### Analyze the Csv File
+##### Analyze the CSV file
 
 The CSV file for all types of report contains these common fields:
 
@@ -135,7 +140,7 @@ The CSV file for all types of report contains these common fields:
 - **`eventtime`**: A date that’s the timestamp of the event, in the format `yyyy-MM-dd`.
 - **`providerversion`**: A string that’s the version of the file provider extension.
 
-##### Understand Usage Report Fields
+##### Understand usage report fields
 
 The usage report contains these fields:
 
@@ -156,7 +161,7 @@ The usage report contains these fields:
 - **`pinned_resident_pct`**: A string that’s the fraction of storage used by materialized documents that are also pinned, expressed as a percentage, and takes one of these values: `0%`, `< 1%`, `<30 %`, `< 100%`, or `100%`.
 - **`sync_pause_item_count`**: An Boolean that’s `true` if more than one item’s synchronization is paused due to an active iWork collaboration session; otherwise, it’s `false`.
 
-##### Understand Dynamic Error Fields
+##### Understand dynamic error fields
 
 The dynamic errors report contains these fields:
 
@@ -176,7 +181,7 @@ The dynamic errors report contains these fields:
 - **`reimportwithreason`**: A string that represents the reason for the current reimport, or `null` if the operation isn’t a reimport.
 - **`reason`**: An integer that’s a 37-bit bitfield that identifies the reason for the operation. For a list of values this field can take, see the section, “Understand the transfer operation types and operation reasons”, below.
 
-##### Understand Consistency Report Fields
+##### Understand consistency report fields
 
 The consistency report contains these fields:
 
@@ -294,12 +299,16 @@ The consistency report contains these fields:
 - **`remaining_disk_broken_invariants_is_tracked_but_should_not_be`**: An integer that’s the number of files on disk that are tracked and don’t need to be on disk, after running the repair tool.
 - **`remaining_disk_broken_invariants_is_untracked_but_should_be`**: An integer that’s the number of files that need to be tracked and aren’t on disk, after running the repair tool.
 - **`database_creation_reason`**: A string that describes the reason that the file provider domain database was created.
-- **`vendor_item_count_per_effective_policy`**: A JSON object that contains the following keys that all have Boolean values: - **`vendor_effective_keep_downloaded_policy_items`**: Value is `true` if the file provider has an effective policy to eagerly download and keep any item; otherwise, it’s `false`.
-- **`vendor_effective_lazy_policy_items`**: Value is `true` if the file provider has an effective policy to lazily download any item; otherwise, it’s `false`.
-- **`vendor_effective_evict_on_remote_update_policy_items`**: Value is `true` if the file provider has an effective policy to lazily download any item and evict it when it gets updated remotely; otherwise, it’s `false`.
-- **`vendor_item_count_per_policy`**: A JSON object that contains the following keys that all have Boolean values: - **`vendor_keep_downloaded_policy_items`**: Value is `true` if the file provider has a policy to eagerly download and keep any item; otherwise, it’s `false`.
-- **`vendor_lazy_policy_items`**: Value is `true` if the file provider has a policy to lazily download any item; otherwise, it’s `false`.
-- **`vendor_evict_on_remote_update_policy_items`**: Value is `true` if the file provider has a policy to lazily download any item and evict it when it gets updated remotely; otherwise, it’s `false`.
+- **`vendor_item_count_per_effective_policy`**: A JSON object that contains the following keys that all have Boolean values:
+
+  - **`vendor_effective_keep_downloaded_policy_items`**: Value is `true` if the file provider has an effective policy to eagerly download and keep any item; otherwise, it’s `false`.
+  - **`vendor_effective_lazy_policy_items`**: Value is `true` if the file provider has an effective policy to lazily download any item; otherwise, it’s `false`.
+  - **`vendor_effective_evict_on_remote_update_policy_items`**: Value is `true` if the file provider has an effective policy to lazily download any item and evict it when it gets updated remotely; otherwise, it’s `false`.
+- **`vendor_item_count_per_policy`**: A JSON object that contains the following keys that all have Boolean values:
+
+  - **`vendor_keep_downloaded_policy_items`**: Value is `true` if the file provider has a policy to eagerly download and keep any item; otherwise, it’s `false`.
+  - **`vendor_lazy_policy_items`**: Value is `true` if the file provider has a policy to lazily download any item; otherwise, it’s `false`.
+  - **`vendor_evict_on_remote_update_policy_items`**: Value is `true` if the file provider has a policy to lazily download any item and evict it when it gets updated remotely; otherwise, it’s `false`.
 - **`vendor_missing_allows_evict_capability_items`**: A Boolean that’s `true` if any item doesn’t have the flag that indicates that evicting the item is allowed; otherwise, it’s `false`.
 - **`numberOfReconciliationTableEntries`**: An integer that’s the number of items represented in the file provider’s reconciliation table, including items in the working set and items on disk.
 - **`reportAge`**: An integer that’s the number of days since the last time the file provider check ran successfully.
@@ -318,7 +327,7 @@ Additionally, the consistency report includes a randomly chosen instance of an e
 - **`db_error_code`**: An integer that’s the code for an error that happened while gathering information.
 - **`db_error_date`**: An integer that’s the logarithm in base 12 of the number of seconds that the item has been in the super pending set, rounded to the nearest whole number.
 - **`db_error_domain`**: A string that’s the domain for an error that happened while gathering information.
-- **`db_capabilities`**: An integer that enumerates the item’s [`NSFileProviderItemCapabilities`](nsfileprovideritemcapabilities.md).
+- **`db_capabilities`**: An integer that enumerates the item’s [`NSFileProviderItemCapabilities`](./nsfileprovideritemcapabilities.md).
 - **`db_effective_content_policy`**: An integer that’s the content policy of the item.
 - **`db_error_retry_count`**: An integer that counts the number of operation retries since the item entered an error state.
 - **`db_fp_content_status`**: An integer that’s the server’s content-monitoring status for the item.
@@ -343,7 +352,7 @@ Additionally, the consistency report includes a randomly chosen instance of an e
 - **`name_path_depth`**: An integer that’s the item’s path depth.
 - **`name_path_length`**: An integer that’s the length of the item’s path.
 - **`name_unicode_norm`**: A string that indicates how the Unicode name of the item is normalized: if the name has the decomposed canonical form, it’s `D`; it the name has the precomposed canonical form, it’s `C`; if the name has a decomposed compatible form; it’s `KD`; if the name has a precomposed compatible form, it’s `KC`; otherwise, it’s undefined.
-- **`name_uttype`**: A string that’s the item’s [`UTTypeReference`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypereference).
+- **`name_uttype`**: A string that’s the item’s [`UTTypeReference`](../UniformTypeIdentifiers/uttypereference.md).
 - **`purge_atime`**: An integer that’s the purgeability access time of the item.
 - **`purge_flags`**: An integer that’s the flags the system uses to mark the item purgeable.
 - **`purge_gencount`**: An integer that’s the item’s generation count for being marked purgeable.
@@ -384,18 +393,18 @@ Additionally, the consistency report includes a randomly chosen instance of an e
 - **`disk_versus_fs_snapshot_diffs_in_pinned_folder_but_not_marked_accordingly`**: A Boolean that’s `true` if the item is a pinned folder with the corresponding extended attribute, but that this information isn’t propagated to the records for all descendent items; otherwise, it’s `false`.
 - **`disk_versus_fs_snapshot_diffs_marked_in_pinned_folder_but_not_in_pinned_folder`**: A Boolean that’s `true` if the item isn’t in a pinned folder but its database record says that it is; otherwise, it’s `false`.
 
-##### Understand the Character Set Bit Masks
+##### Understand the character set bit masks
 
 The bits in the `name_characters_sets` bitfield are set to `1` when the following conditions are true, with bit `0` being the least significant bit:
 
-- **`0`**: The item’s name contains one or more characters from [`controlCharacters`](https://developer.apple.com/documentation/foundation/nscharacterset/controlcharacters).
-- **`1`**: The item’s name contains one or more characters from [`illegalCharacters`](https://developer.apple.com/documentation/foundation/nscharacterset/illegalcharacters).
-- **`2`**: The item’s name contains one or more characters from [`nonBaseCharacters`](https://developer.apple.com/documentation/foundation/nscharacterset/nonbasecharacters).
-- **`3`**: The item’s name contains one or more characters from [`symbols`](https://developer.apple.com/documentation/foundation/nscharacterset/symbols).
+- **`0`**: The item’s name contains one or more characters from [`controlCharacters`](../Foundation/nscharacterset/controlcharacters.md).
+- **`1`**: The item’s name contains one or more characters from [`illegalCharacters`](../Foundation/nscharacterset/illegalcharacters.md).
+- **`2`**: The item’s name contains one or more characters from [`nonBaseCharacters`](../Foundation/nscharacterset/nonbasecharacters.md).
+- **`3`**: The item’s name contains one or more characters from [`symbols`](../Foundation/nscharacterset/symbols.md).
 - **`4`**: The item’s name contains one or more emoji.
 - **`5`**: The item’s name contains one or more characters that are outside the set `NSCharacterSet(range:NSMakeRange(0x0000, 0x024F))`; that is, characters that aren’t in the Base Latin, Latin-1, Extended Latin A or Extended Latin B sets.
 
-##### Understand the Disconnection States
+##### Understand the disconnection states
 
 The `disconnection_state` field in the usage report enumerates the reason that file provider is disconnected. The possible values are:
 
@@ -409,7 +418,7 @@ The `disconnection_state` field in the usage report enumerates the reason that f
 - **`7`**: File provider is unable to start because a mobile device management profile stops the system from using the file provider extension.
 - **`8`**: File provider is unable to start because the domain is backed by an external drive and the provider rejected the domain.
 
-##### Understand the Transfer Operation Types and Operation Reasons
+##### Understand the transfer operation types and operation reasons
 
 The `db_transfer_operation_type` field in the consistency report’s erroneous item breakdown enumerates the operation type that encountered an error. The possible values are:
 

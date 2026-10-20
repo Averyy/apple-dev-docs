@@ -1,30 +1,33 @@
 # IOProviderClass
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the class that your driver expects to provide the implementation for its provider object.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `IOProviderClass`
+- **Type**: string
 
 #### Discussion
 
-The value of this key is a string that contains the name of an [`IOService`](https://developer.apple.comhttps://developer.apple.com/documentation/kernel/ioservice-1g) subclass. This class corresponds to the provider object that the system passes to your [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass at startup. (For a kernel extension, the system passes the provider object to the [`start`](https://developer.apple.com/documentation/kernel/ioservice/1532606-start) method of your [`IOService`](https://developer.apple.comhttps://developer.apple.com/documentation/kernel/ioservice-1g) subclass. For a DriverKit extension, the system passes it to the [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method of your [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass.) Use the provider object in your driver you receive to communicate with the underlying device.
+The value of this key is a string that contains the name of an [IOService](../../kernel/ioservice-1g.md) subclass. This class corresponds to the provider object that the system passes to your [`IOService`](../../DriverKit/ioservice.md) subclass at startup. (For a kernel extension, the system passes the provider object to the [`start`](../../kernel/ioservice/api-1532606-start.md) method of your [`IOService`](../../kernel/ioservice-1g.md) subclass. For a DriverKit extension, the system passes it to the [`Start`](../../DriverKit/ioservice/start.md) method of your [`IOService`](../../DriverKit/ioservice.md) subclass.) Use the provider object in your driver you receive to communicate with the underlying device.
 
 ## See Also
 
-- [IOUserClass](information-property-list/iouserclass.md)
+### Driver Classes
+- [IOUserClass](./iouserclass.md)
   The name of your driver’s main class, which is the entry point for interacting with your driver’s code.
-- [IOClass](information-property-list/ioclass.md)
+- [IOClass](./ioclass.md)
   The name of the class to instantiate from your driver.
-- [IOUserClientClass](information-property-list/iouserclientclass.md)
+- [IOUserClientClass](./iouserclientclass.md)
   The name of the class to instantiate when the system requires a client connection to the driver.
-- [IOUserServerName](information-property-list/iouserservername.md)
+- [IOUserServerName](./iouserservername.md)
   The name that the system uses to facilitate communication between your driver and other clients.
 
 

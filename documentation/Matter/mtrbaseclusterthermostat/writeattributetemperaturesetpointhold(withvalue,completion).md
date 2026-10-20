@@ -1,7 +1,8 @@
 # writeAttributeTemperatureSetpointHold(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeTemperatureSetpointHold(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeTemperatureSetpointHold(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeTemperatureSetpointHoldWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

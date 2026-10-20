@@ -1,13 +1,14 @@
 # MusicLibraryRequestable Implementations
 
-**Framework**: MusicKit
+**Framework**: MusicKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias LibraryFilter](track/libraryfilter.md)
+- [typealias LibraryFilter](./libraryfilter.md)
   The associated type that contains the track properties your app uses for a library request.
-- [typealias LibrarySortProperties](track/librarysortproperties.md)
+- [typealias LibrarySortProperties](./librarysortproperties.md)
   The associated type that contains the set of track properties your app uses to sort results for a library request.
 
 

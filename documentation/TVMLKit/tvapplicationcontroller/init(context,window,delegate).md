@@ -1,12 +1,15 @@
 # init(context:window:delegate:)
 
 **Framework**: TVMLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an app controller.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,18 +17,22 @@ Initializes and returns an app controller.
 init(context: TVApplicationControllerContext, window: UIWindow?, delegate: (any TVApplicationControllerDelegate)?)
 ```
 
+```objc
+- (instancetype) initWithContext:(TVApplicationControllerContext *) context window:(UIWindow *) window delegate:(id<TVApplicationControllerDelegate>) delegate;
+```
+
 #### Return Value
 
-The initialized [`TVApplicationController`](tvapplicationcontroller.md) object.
+The initialized [`TVApplicationController`](../tvapplicationcontroller.md) object.
 
 #### Discussion
 
-An app controller coordinates activity between the JavaScript environments and tvOS. There are three options when presenting the application controller. If you provide a valid [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) object, the application controller’s navigation controller is presented immediately and managed by [`TVApplicationController`](tvapplicationcontroller.md). If no window is provided, the navigation controller can be presented and dismissed manually within the binary app. Finally, if you wish to present native view controllers alongside a [`TVApplicationController`](tvapplicationcontroller.md) object, you can push additional view controllers onto [`navigationController`](tvapplicationcontroller/navigationcontroller.md).
+An app controller coordinates activity between the JavaScript environments and tvOS. There are three options when presenting the application controller. If you provide a valid [`UIWindow`](../../UIKit/uiwindow.md) object, the application controller’s navigation controller is presented immediately and managed by [`TVApplicationController`](../tvapplicationcontroller.md). If no window is provided, the navigation controller can be presented and dismissed manually within the binary app. Finally, if you wish to present native view controllers alongside a [`TVApplicationController`](../tvapplicationcontroller.md) object, you can push additional view controllers onto [`navigationController`](./navigationcontroller.md).
 
 ## Parameters
 
-- `context`: A [`TVApplicationControllerContext`](tvapplicationcontrollercontext.md) object containing information about the JavaScript app.
-- `window`: A [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) object that presents the application controller’s navigation controller.
+- `context`: A [`TVApplicationControllerContext`](../tvapplicationcontrollercontext.md) object containing information about the JavaScript app.
+- `window`: A [`UIWindow`](../../UIKit/uiwindow.md) object that presents the application controller’s navigation controller.
 - `delegate`: The app controller delegate.
 
 

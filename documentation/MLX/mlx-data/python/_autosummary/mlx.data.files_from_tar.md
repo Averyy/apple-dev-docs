@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.files_from_tar
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.files_from_tar.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.files_from_tar
-
- Table of contents 
-
-## Contents
-
-# mlx.data.files_from_tar
-
 **mlx.data.files_from_tar(*tarfile: str*, *nested: bool = False*, *num_threads: int = 1*) → mlx.data._c.Buffer**
 : Return the list of files contained in a tar archive.
 If `nested` is true then the archive is indexed recursively ie
@@ -36,5 +19,3 @@ Parameters:
 (default: False)
 **num_threads** ([int](https://docs.python.org/3/library/functions.html#int)) – If nested archives are enabled then index the
 nested archives in parallel using `num_threads` threads. (default: 1)
-
-** Contents

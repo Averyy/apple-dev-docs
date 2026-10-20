@@ -1,6 +1,8 @@
 # Measuring distance between devices using Channel Sounding
 
-**Framework**: Core Bluetooth
+**Framework**: Core Bluetooth  
+**Role**: Sample Code  
+**Download**: [MeasuringDistanceBetweenDevicesUsingChannelSounding.zip](https://docs-assets.developer.apple.com/published/f710ac24903f/MeasuringDistanceBetweenDevicesUsingChannelSounding.zip)
 
 Measure the distance between two Bluetooth Low Energy devices in real time with Channel Sounding.
 
@@ -12,25 +14,25 @@ Measure the distance between two Bluetooth Low Energy devices in real time with 
 
 #### Overview
 
-This sample app demonstrates how to use the Channel Sounding API to continuously measure the physical distance between an iOS device and any Bluetooth Low Energy peripheral that supports Bluetooth 6.3 and Channel Sounding. The app uses [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) to pair the peripheral, [`Core Bluetooth`](CoreBluetooth.md) to establish the *ACL connection* (the standard Bluetooth data link between devices), and then starts a Channel Sounding session as the initiator to stream live distance estimates to the screen. The app supports two measurement paths: Core Bluetooth and Nearby Interaction.
+This sample app demonstrates how to use the Channel Sounding API to continuously measure the physical distance between an iOS device and any Bluetooth Low Energy peripheral that supports Bluetooth 6.3 and Channel Sounding. The app uses [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) to pair the peripheral, [Core Bluetooth](./CoreBluetooth.md) to establish the *ACL connection* (the standard Bluetooth data link between devices), and then starts a Channel Sounding session as the initiator to stream live distance estimates to the screen. The app supports two measurement paths: Core Bluetooth and Nearby Interaction.
 
-The app walks through each stage of the workflow: accessory pairing via [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit), ACL connection, Channel Sounding session start, and measurement display. It keeps a rolling history of up to 200 distance readings so you can observe how distance estimates change over time.
+The app walks through each stage of the workflow: accessory pairing via [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md), ACL connection, Channel Sounding session start, and measurement display. It keeps a rolling history of up to 200 distance readings so you can observe how distance estimates change over time.
 
-> **Note**: This sample code project is associated with WWDC26 session 369: [`Find your accessory with Bluetooth Channel Sounding`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/369/).
+> **Note**: This sample code project is associated with WWDC26 session 369: [Find your accessory with Bluetooth Channel Sounding](https://developer.apple.com/videos/play/wwdc2026/369/).
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 Before running the sample code project in Xcode:
 
 - Use an iOS 27 device with Channel Sounding-capable hardware (iPhone 17 or later) as the initiator. Channel Sounding isn’t available in Simulator.
 - Use a Bluetooth Low Energy peripheral that supports Bluetooth 6.3 and Channel Sounding as the responder. The responder can be any compatible BLE device.
-- Ensure your information property list includes the required [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) entries for the Bluetooth identifiers your peripheral uses.
+- Ensure your information property list includes the required [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) entries for the Bluetooth identifiers your peripheral uses.
 
-#### Add and Pair the Accessory Using Accessorysetupkit
+#### Add and pair the accessory using AccessorySetupKit
 
-[`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) is the required pairing mechanism for Channel Sounding. It presents a system-managed picker that lets a person select and pair the peripheral, while keeping Bluetooth identifiers private from the app until the person explicitly grants access. Importantly, the system restricts Channel Sounding sessions to [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit)-paired devices. The system denies an attempt to start a session with a peripheral that wasn’t paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit).
+[AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) is the required pairing mechanism for Channel Sounding. It presents a system-managed picker that lets a person select and pair the peripheral, while keeping Bluetooth identifiers private from the app until the person explicitly grants access. Importantly, the system restricts Channel Sounding sessions to [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md)-paired devices. The system denies an attempt to start a session with a peripheral that wasn’t paired through [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md).
 
-`BluetoothManager` activates an instance of [`ASAccessorySession`](https://developer.apple.com/documentation/accessorysetupkit/asaccessorysession) during its initialization and registers a closure to receive all [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) events:
+`BluetoothManager` activates an instance of [`ASAccessorySession`](../AccessorySetupKit/asaccessorysession.md) during its initialization and registers a closure to receive all [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) events:
 
 ```swift
 override init() {
@@ -41,7 +43,7 @@ override init() {
 }
 ```
 
-When the person taps Add Accessory, the app presents the picker. An [`ASDiscoveryDescriptor`](https://developer.apple.com/documentation/accessorysetupkit/asdiscoverydescriptor) tells [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) which Bluetooth identifiers to filter for, so only matching peripherals appear as candidates. If the person already paired the peripheral in a previous session, the app skips the picker and reconnects directly:
+When the person taps Add Accessory, the app presents the picker. An [`ASDiscoveryDescriptor`](../AccessorySetupKit/asdiscoverydescriptor.md) tells [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) which Bluetooth identifiers to filter for, so only matching peripherals appear as candidates. If the person already paired the peripheral in a previous session, the app skips the picker and reconnects directly:
 
 ```swift
 func showAccessoryPicker() {
@@ -98,11 +100,11 @@ private func handleAccessoryEvent(_ event: ASAccessoryEvent) {
 }
 ```
 
-#### Connect the Peripheral Using Core Bluetooth
+#### Connect the peripheral using Core Bluetooth
 
-After [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) provides the peripheral’s `bluetoothIdentifier`, the app initializes [`CBCentralManager`](cbcentralmanager.md), instead of at app launch. Initializing a [`CBCentralManager`](cbcentralmanager.md) before [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) completes pairing triggers the system Bluetooth permission prompt, which prevents the [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) picker from appearing.
+After [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) provides the peripheral’s `bluetoothIdentifier`, the app initializes [`CBCentralManager`](./cbcentralmanager.md), instead of at app launch. Initializing a [`CBCentralManager`](./cbcentralmanager.md) before [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) completes pairing triggers the system Bluetooth permission prompt, which prevents the [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) picker from appearing.
 
-Because the central manager may still be powering on when the app calls `connectAccessory`, the app stores the identifier and defers the actual connection until [`centralManagerDidUpdateState(_:)`](cbcentralmanagerdelegate/centralmanagerdidupdatestate(_:).md) fires:
+Because the central manager may still be powering on when the app calls `connectAccessory`, the app stores the identifier and defers the actual connection until [`centralManagerDidUpdateState(_:)`](./cbcentralmanagerdelegate/centralmanagerdidupdatestate%28_%29.md) fires:
 
 ```swift
 private func connectAccessory(identifier: UUID, name: String) {
@@ -119,7 +121,7 @@ private func connectAccessory(identifier: UUID, name: String) {
 }
 ```
 
-On the first launch after pairing, Core Bluetooth’s cache is empty, so `retrieveAndConnect` scans by service UUID and connects when [`centralManager(_:didDiscover:advertisementData:rssi:)`](cbcentralmanagerdelegate/centralmanager(_:diddiscover:advertisementdata:rssi:).md) finds a peripheral with a matching identifier. On subsequent launches, the peripheral is already in the cache, so the app uses [`retrievePeripherals(withIdentifiers:)`](cbcentralmanager/retrieveperipherals(withidentifiers:).md) to fetch it directly without scanning:
+On the first launch after pairing, Core Bluetooth’s cache is empty, so `retrieveAndConnect` scans by service UUID and connects when [`centralManager(_:didDiscover:advertisementData:rssi:)`](./cbcentralmanagerdelegate/centralmanager%28_,diddiscover,advertisementdata,rssi%29.md) finds a peripheral with a matching identifier. On subsequent launches, the peripheral is already in the cache, so the app uses [`retrievePeripherals(withIdentifiers:)`](./cbcentralmanager/retrieveperipherals%28withidentifiers%29.md) to fetch it directly without scanning:
 
 ```swift
 private func retrieveAndConnect(identifier: UUID, name: String) {
@@ -139,7 +141,7 @@ private func retrieveAndConnect(identifier: UUID, name: String) {
 
 The app stores a strong reference to the peripheral in `connectedPeripheral` before calling `connect`, keeping the object alive until the connection completes.
 
-#### Start a Channel Sounding Session
+#### Start a Channel Sounding session
 
 The app supports two measurement paths, selectable with a segmented control:
 
@@ -174,7 +176,7 @@ func startChannelSounding() {
 }
 ```
 
-In the Core Bluetooth path, before creating the session configuration, the app verifies that the local device hardware supports Channel Sounding. Call [`supports(_:)`](cbcentralmanager/supports(_:).md) only after a [`CBCentralManager`](cbcentralmanager.md) instance initializes and reaches the `.poweredOn` state; calling it earlier returns incorrect results. By this point in the flow, the central manager is guaranteed to be `.poweredOn` because the person has already completed pairing and connecting:
+In the Core Bluetooth path, before creating the session configuration, the app verifies that the local device hardware supports Channel Sounding. Call [`supports(_:)`](./cbcentralmanager/supports%28_%29.md) only after a [`CBCentralManager`](./cbcentralmanager.md) instance initializes and reaches the `.poweredOn` state; calling it earlier returns incorrect results. By this point in the flow, the central manager is guaranteed to be `.poweredOn` because the person has already completed pairing and connecting:
 
 ```swift
 func startChannelSoundingThroughCoreBluetooth(peripheral: CBPeripheral) {
@@ -189,7 +191,7 @@ func startChannelSoundingThroughCoreBluetooth(peripheral: CBPeripheral) {
 }
 ```
 
-In the Nearby Interaction path, the app uses [`NISession`](https://developer.apple.com/documentation/nearbyinteraction/nisession) to verify Bluetooth Channel Sounding support before starting the session:
+In the Nearby Interaction path, the app uses [`NISession.deviceCapabilities`](../NearbyInteraction/nisession.md) to verify Bluetooth Channel Sounding support before starting the session:
 
 ```swift
 func startChannelSoundingThroughNearbyInteraction(peripheral: CBPeripheral) {
@@ -209,9 +211,9 @@ func startChannelSoundingThroughNearbyInteraction(peripheral: CBPeripheral) {
 }
 ```
 
-#### Process Incoming Distance Measurements
+#### Process incoming distance measurements
 
-A small extension on [`CBChannelSoundingProcedureResults`](cbchannelsoundingprocedureresults.md) maps the raw `distance` property to an optional. The API returns a negative sentinel value when no valid measurement is available; the extension ensures the rest of the app only handles real readings:
+A small extension on [`CBChannelSoundingProcedureResults`](./cbchannelsoundingprocedureresults.md) maps the raw `distance` property to an optional. The API returns a negative sentinel value when no valid measurement is available; the extension ensures the rest of the app only handles real readings:
 
 ```swift
 extension CBChannelSoundingProcedureResults {
@@ -219,7 +221,7 @@ extension CBChannelSoundingProcedureResults {
 }
 ```
 
-In the Core Bluetooth path, the distance data arrives in the [`CBPeripheralDelegate`](cbperipheraldelegate.md) callback:
+In the Core Bluetooth path, the distance data arrives in the [`CBPeripheralDelegate`](./cbperipheraldelegate.md) callback:
 
 ```swift
 func peripheral(_ peripheral: CBPeripheral,
@@ -232,7 +234,7 @@ func peripheral(_ peripheral: CBPeripheral,
 }
 ```
 
-In the Nearby Interaction path, distance and directional data arrive via [`NINearbyObject`](https://developer.apple.com/documentation/nearbyinteraction/ninearbyobject) in the [`NISessionDelegate`](https://developer.apple.com/documentation/nearbyinteraction/nisessiondelegate) callback. In addition to distance, the Nearby Interaction path provides a horizontal angle in radians when camera assistance is available, which the `ArrowView` uses to point toward the remote device:
+In the Nearby Interaction path, distance and directional data arrive via [`NINearbyObject`](../NearbyInteraction/ninearbyobject.md) in the [`NISessionDelegate`](../NearbyInteraction/nisessiondelegate.md) callback. In addition to distance, the Nearby Interaction path provides a horizontal angle in radians when camera assistance is available, which the `ArrowView` uses to point toward the remote device:
 
 ```swift
 func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
@@ -257,7 +259,7 @@ if bluetooth.channelSoundingMethod == .nearbyInteraction,
 }
 ```
 
-#### Stop the Session and Clean Up
+#### Stop the session and clean up
 
 When it’s time to stop the session, `stopChannelSounding()` delegates to the active path and transitions the connection state back to `.connected`:
 
@@ -277,7 +279,7 @@ func stopChannelSounding() {
 }
 ```
 
-For the Core Bluetooth path, [`cancelChannelSoundingSession()`](cbperipheral/cancelchannelsoundingsession().md) ends the Channel Sounding procedure on the peripheral. The [`peripheral(_:didCompleteChannelSoundingSession:)`](cbperipheraldelegate/peripheral(_:didcompletechannelsoundingsession:).md) delegate callback confirms the session ended:
+For the Core Bluetooth path, [`cancelChannelSoundingSession()`](./cbperipheral/cancelchannelsoundingsession%28%29.md) ends the Channel Sounding procedure on the peripheral. The [`peripheral(_:didCompleteChannelSoundingSession:)`](./cbperipheraldelegate/peripheral%28_,didcompletechannelsoundingsession%29.md) delegate callback confirms the session ended:
 
 ```swift
 func stopChannelSoundingThroughCoreBluetooth(peripheral: CBPeripheral) {
@@ -297,7 +299,7 @@ func peripheral(_ peripheral: CBPeripheral,
 }
 ```
 
-For the Nearby Interaction path, [`NISession`](https://developer.apple.com/documentation/nearbyinteraction/nisession) tears down the [`NISession`](https://developer.apple.com/documentation/nearbyinteraction/nisession). The [`NISessionDelegate`](https://developer.apple.com/documentation/nearbyinteraction/nisessiondelegate) callback clears `currentRange` and `currentHorizontalAngle` from the UI:
+For the Nearby Interaction path, [`NISession/invalidate()`](../NearbyInteraction/nisession.md) tears down the [`NISession`](../NearbyInteraction/nisession.md). The [`NISessionDelegate/session(_:didInvalidateWith:)`](../NearbyInteraction/nisessiondelegate.md) callback clears `currentRange` and `currentHorizontalAngle` from the UI:
 
 ```swift
 func stopChannelSoundingThroughNearbyInteraction(peripheral: CBPeripheral) {
@@ -314,7 +316,7 @@ func session(_ session: NISession, didInvalidateWith error: any Error) {
 }
 ```
 
-Tapping Disconnect calls `disconnect()`, which cancels the ACL connection. The [`centralManager(_:didDisconnectPeripheral:error:)`](cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:error:).md) callback then clears all connection state and resets the UI to `idle`.
+Tapping Disconnect calls `disconnect()`, which cancels the ACL connection. The [`centralManager(_:didDisconnectPeripheral:error:)`](./cbcentralmanagerdelegate/centralmanager%28_,diddisconnectperipheral,error%29.md) callback then clears all connection state and resets the UI to `idle`.
 
 ```swift
 func disconnect() {
@@ -337,9 +339,10 @@ func centralManager(_ central: CBCentralManager,
 
 ## See Also
 
-- [class CBChannelSoundingProcedureResults](cbchannelsoundingprocedureresults.md)
-- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
-- [let CBUUIDCharacteristicObservationScheduleString: String](cbuuidcharacteristicobservationschedulestring.md)
+### Channel Sounding
+- [class CBChannelSoundingProcedureResults](./cbchannelsoundingprocedureresults.md)
+- [class CBChannelSoundingSessionConfiguration](./cbchannelsoundingsessionconfiguration.md)
+- [let CBUUIDCharacteristicObservationScheduleString: String](./cbuuidcharacteristicobservationschedulestring.md)
 
 
 ---

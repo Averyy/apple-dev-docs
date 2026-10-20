@@ -1,7 +1,8 @@
 # tryReclaim(_:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reclaims the item by executing the given block, if conditions allow.
 
@@ -14,17 +15,21 @@ Reclaims the item by executing the given block, if conditions allow.
 func tryReclaim(_ reclaimBlock: @escaping () -> Void) -> Bool
 ```
 
+```objc
+- (BOOL) tryReclaimWithBlock:(void (^)()) reclaimBlock;
+```
+
 #### Return Value
 
-`true` (Swift) or YES (Obj-C)  if the reclaim block ran; otherwise, `false` (Swift) or `NO` (Obj-C). When your [`reclaimItem(_:replyHandler:)`](fsvolume/handler/reclaimitem(_:replyhandler:).md) implementation receives a `false`/`NO` return value, call `replyHandler(nil)`.
+`true` (Swift) or YES (Obj-C)  if the reclaim block ran; otherwise, `false` (Swift) or `NO` (Obj-C). When your [`reclaimItem(_:replyHandler:)`](../fsvolume/handler/reclaimitem%28_,replyhandler%29.md) implementation receives a `false`/`NO` return value, call `replyHandler(nil)`.
 
 #### Discussion
 
-Invoke this method in your implementation of the [`reclaimItem(_:replyHandler:)`](fsvolume/handler/reclaimitem(_:replyhandler:).md) operation.
+Invoke this method in your implementation of the [`reclaimItem(_:replyHandler:)`](../fsvolume/handler/reclaimitem%28_,replyhandler%29.md) operation.
 
-FSKit internally maintains a count of how many times it returns each [`FSItem`](fsitem.md) to the kernel, via either a creation operation or a lookup. The kernel file system also maintains a count of how many times a create or a lookup operation returned a vnode. When the kernel reclaims the vnode associated with an FSItem, the FSItem is only eligible for reclaiming when both the kernel and user space counts agree. This mechanism addresses a potential race condition in which concurrent reclaim and lookup operations might lead to a lookup returning a deallocated [`FSItem`](fsitem.md), and as a result, induce undefined behavior. File systems that don’t invoke this method during reclaim are exposed to this race condition.
+FSKit internally maintains a count of how many times it returns each [`FSItem`](../fsitem.md) to the kernel, via either a creation operation or a lookup. The kernel file system also maintains a count of how many times a create or a lookup operation returned a vnode. When the kernel reclaims the vnode associated with an FSItem, the FSItem is only eligible for reclaiming when both the kernel and user space counts agree. This mechanism addresses a potential race condition in which concurrent reclaim and lookup operations might lead to a lookup returning a deallocated [`FSItem`](../fsitem.md), and as a result, induce undefined behavior. File systems that don’t invoke this method during reclaim are exposed to this race condition.
 
-> ❗ **Important**: The caller must invoke this method within a synchronization context that ensures the [`FSItem`](fsitem.md) isn’t concurrently returned by lookup operations.
+> ❗ **Important**: The caller must invoke this method within a synchronization context that ensures the [`FSItem`](../fsitem.md) isn’t concurrently returned by lookup operations.
 
 Example Usage:
 

@@ -1,6 +1,7 @@
 # width
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the maximum width for an image element.
 
@@ -12,24 +13,25 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 <img src="resource://mpaa-g" width="200">
 ```
 
-##### Values for Width
+##### Values for width
 
 - **Integer**: The width of the element, in points.
 
-##### Elements That Use Width
+##### Elements that Use width
 
-- [`decorationLabel`](decorationlabel.md)
-- [`fullscreenImg`](fullscreenimg.md)
-- [`heroImg`](heroimg.md)
-- [`img`](img.md)
+- [decorationLabel](./decorationlabel.md)
+- [fullscreenImg](./fullscreenimg.md)
+- [heroImg](./heroimg.md)
+- [img](./img.md)
 
 > **Note**: When an image is a child of a `lockup` element, the longest dimension of the image must be 70 points longer than the corresponding bounding box dimension.
 
 ## See Also
 
-- [height](image-attributes-height.md)
+### Image Size
+- [height](./image-attributes-height.md)
   Specifies the maximum height for an image.
-- [aspectRatio](aspectratio.md)
+- [aspectRatio](./aspectratio.md)
   Specifies the aspect ratio of an image.
 
 

@@ -1,7 +1,8 @@
 # DNSServiceEnumerateDomains(_:_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enumerates domains that are recommended for registration and browsing.
 
@@ -20,19 +21,23 @@ Enumerates domains that are recommended for registration and browsing.
 func DNSServiceEnumerateDomains(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ flags: DNSServiceFlags, _ interfaceIndex: UInt32, _ callBack: DNSServiceDomainEnumReply!, _ context: UnsafeMutableRawPointer!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceEnumerateDomains(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, DNSServiceDomainEnumReply callBack, void *context);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is not invoked and the DNSServiceRef is not initialized).
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is not invoked and the DNSServiceRef is not initialized).
 
 #### Discussion
 
-The enumeration MUST be cancelled via [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md) when no more domains are to be found.
+The enumeration MUST be cancelled via [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md) when no more domains are to be found.
 
 Note that the names returned are (like all of DNS-SD) UTF-8 strings, and are escaped using standard DNS escaping rules. (See “Notes on DNS Name Escaping” earlier in this file for more details.) A graphical browser displaying a hierarchical tree-structured view should cut the names at the bare dots to yield individual labels, then de-escape each label according to the escaping rules, and then display the resulting UTF-8 text.
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the enumeration operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md), and the enumeration operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md).
 - `flags`: Possible values are: kDNSServiceFlagsBrowseDomains to enumerate domains recommended for browsing. kDNSServiceFlagsRegistrationDomains to enumerate domains recommended for registration.
 - `interfaceIndex`: If non-zero, specifies the interface on which to look for domains. (the index for a given interface is determined via the if_nametoindex() family of calls.) Most applications will pass 0 to enumerate domains on all interfaces. See “Constants for specifying an interface index” for more details.
 - `callBack`: The function to be called when a domain is found or the call asynchronously fails.

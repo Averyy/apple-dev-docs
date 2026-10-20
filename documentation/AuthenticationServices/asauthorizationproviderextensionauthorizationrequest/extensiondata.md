@@ -1,7 +1,8 @@
 # extensionData
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Extension data from the Mobile Device Management (MDM) configuration.
 
@@ -18,15 +19,20 @@ Extension data from the Mobile Device Management (MDM) configuration.
 var extensionData: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary * extensionData;
+```
+
 ## See Also
 
-- [var callerBundleIdentifier: String](asauthorizationproviderextensionauthorizationrequest/callerbundleidentifier.md)
+### Getting Context
+- [var callerBundleIdentifier: String](./callerbundleidentifier.md)
   The bundle ID of the app making the request.
-- [var callerTeamIdentifier: String](asauthorizationproviderextensionauthorizationrequest/callerteamidentifier.md)
+- [var callerTeamIdentifier: String](./callerteamidentifier.md)
   The team identifier of the app making the request.
-- [var localizedCallerDisplayName: String](asauthorizationproviderextensionauthorizationrequest/localizedcallerdisplayname.md)
+- [var localizedCallerDisplayName: String](./localizedcallerdisplayname.md)
   The localized display name of the app making the request.
-- [var isCallerManaged: Bool](asauthorizationproviderextensionauthorizationrequest/iscallermanaged.md)
+- [var isCallerManaged: Bool](./iscallermanaged.md)
   A Boolean value that indicates whether the app making the request is managed.
 
 

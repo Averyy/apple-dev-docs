@@ -1,7 +1,8 @@
 # httpCookieAcceptPolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A policy constant that determines when cookies should be accepted.
 
@@ -20,21 +21,26 @@ A policy constant that determines when cookies should be accepted.
 var httpCookieAcceptPolicy: HTTPCookie.AcceptPolicy { get set }
 ```
 
+```objc
+@property NSHTTPCookieAcceptPolicy HTTPCookieAcceptPolicy;
+```
+
 #### Discussion
 
 This property determines the cookie accept policy for all tasks within sessions based on this configuration.
 
-The default value is [`HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain`](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md). You can change it to any of the constants defined in the [`HTTPCookie.AcceptPolicy`](httpcookie/acceptpolicy.md) enumerated type.
+The default value is [`HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain`](../httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md). You can change it to any of the constants defined in the [`HTTPCookie.AcceptPolicy`](../httpcookie/acceptpolicy.md) enumerated type.
 
-If you want more direct control over what cookies are accepted, set this value to [`HTTPCookie.AcceptPolicy.never`](httpcookie/acceptpolicy/never.md) and then use the [`allHeaderFields`](httpurlresponse/allheaderfields.md) and [`cookies(withResponseHeaderFields:for:)`](httpcookie/cookies(withresponseheaderfields:for:).md) methods to extract cookies from the URL response object yourself.
+If you want more direct control over what cookies are accepted, set this value to [`HTTPCookie.AcceptPolicy.never`](../httpcookie/acceptpolicy/never.md) and then use the [`allHeaderFields`](../httpurlresponse/allheaderfields.md) and [`cookies(withResponseHeaderFields:for:)`](../httpcookie/cookies%28withresponseheaderfields,for%29.md) methods to extract cookies from the URL response object yourself.
 
 ## See Also
 
-- [var httpShouldSetCookies: Bool](urlsessionconfiguration/httpshouldsetcookies.md)
+### Setting cookie policies
+- [var httpShouldSetCookies: Bool](./httpshouldsetcookies.md)
   A Boolean value that determines whether requests should contain cookies from the cookie store.
-- [var httpCookieStorage: HTTPCookieStorage?](urlsessionconfiguration/httpcookiestorage.md)
+- [var httpCookieStorage: HTTPCookieStorage?](./httpcookiestorage.md)
   The cookie store for storing cookies within this session.
-- [class HTTPCookie](httpcookie.md)
+- [class HTTPCookie](../httpcookie.md)
   A representation of an HTTP cookie.
 
 

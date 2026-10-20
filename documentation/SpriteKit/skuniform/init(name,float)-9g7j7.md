@@ -1,15 +1,16 @@
 # init(name:float:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new uniform object that holds a vector of four floating-point numbers.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- macOS 10.8+
-- tvOS ?+
+- iOS 7.0+ - Deprecated in 10.0
+- iPadOS 7.0+ - Deprecated in 10.0
+- macOS 10.8+ - Deprecated in 10.12
+- tvOS - Deprecated in 10.0
 
 ## Declaration
 
@@ -17,9 +18,13 @@ Initializes a new uniform object that holds a vector of four floating-point numb
 init(name: String, float value: GLKVector4)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name floatVector4:(GLKVector4) value;
+```
+
 #### Return Value
 
-An initialized uniform object whose type is set to [`SKUniformType.floatVector4`](skuniformtype/floatvector4.md).
+An initialized uniform object whose type is set to [`SKUniformType.floatVector4`](../skuniformtype/floatvector4.md).
 
 ## Parameters
 
@@ -28,21 +33,22 @@ An initialized uniform object whose type is set to [`SKUniformType.floatVector4`
 
 ## See Also
 
-- [init(name: String)](skuniform/init(name:).md)
+### Creating and Initializing Uniform Objects
+- [init(name: String)](./init%28name%29.md)
   Initializes a new uniform object.
-- [init(name: String, float: Float)](skuniform/init(name:float:)-48rln.md)
+- [init(name: String, float: Float)](./init%28name,float%29-48rln.md)
   Initializes a new uniform object that holds a floating-point number.
-- [init(name: String, float: GLKVector2)](skuniform/init(name:float:)-9g5vj.md)
+- [init(name: String, float: GLKVector2)](./init%28name,float%29-9g5vj.md)
   Initializes a new uniform object that holds a vector of two floating-point numbers.
-- [init(name: String, float: GLKVector3)](skuniform/init(name:float:)-9g6a7.md)
+- [init(name: String, float: GLKVector3)](./init%28name,float%29-9g6a7.md)
   Creates and initializes a new uniform object that holds a vector of three floating-point numbers.
-- [init(name: String, float: GLKMatrix2)](skuniform/init(name:float:)-6110m.md)
+- [init(name: String, float: GLKMatrix2)](./init%28name,float%29-6110m.md)
   Initializes a new uniform object that holds a `2 x 2` matrix of floating-point numbers.
-- [init(name: String, float: GLKMatrix3)](skuniform/init(name:float:)-611hs.md)
+- [init(name: String, float: GLKMatrix3)](./init%28name,float%29-611hs.md)
   Initializes a new uniform object that holds a `3 x 3` matrix of floating-point numbers.
-- [init(name: String, float: GLKMatrix4)](skuniform/init(name:float:)-60zbm.md)
+- [init(name: String, float: GLKMatrix4)](./init%28name,float%29-60zbm.md)
   Initializes a new uniform object that holds a `4 x 4` matrix of floating-point numbers.
-- [init(name: String, texture: SKTexture?)](skuniform/init(name:texture:).md)
+- [init(name: String, texture: SKTexture?)](./init%28name,texture%29.md)
   Initializes a new uniform object that holds a reference to a texture.
 
 

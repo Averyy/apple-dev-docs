@@ -1,14 +1,15 @@
 # DYLD_CHAINED_PTR_ARM64E_SHARED_CACHE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 DYLD_CHAINED_PTR_ARM64E_SHARED_CACHE = 13
 ```
 

@@ -1,12 +1,13 @@
 # browser(_:selectRow:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to select the cell at the specified row and column location.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Asks the delegate to select the cell at the specified row and column location.
 optional func browser(_ sender: NSBrowser, selectRow row: Int, inColumn column: Int) -> Bool
 ```
 
+```objc
+- (BOOL) browser:(NSBrowser *) sender selectRow:(NSInteger) row inColumn:(NSInteger) column;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell was selected; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the cell was selected; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Invoked in response to [`selectRow(_:inColumn:)`](nsbrowser/selectrow(_:incolumn:).md) of [`NSBrowser`](nsbrowser.md) being received by `sender`.
+Invoked in response to [`selectRow(_:inColumn:)`](../nsbrowser/selectrow%28_,incolumn%29.md) of [`NSBrowser`](../nsbrowser.md) being received by `sender`.
 
 ## Parameters
 
@@ -31,13 +36,15 @@ Invoked in response to [`selectRow(_:inColumn:)`](nsbrowser/selectrow(_:incolumn
 
 ## See Also
 
-- [func selectRow(Int, inColumn: Int)](nsbrowser/selectrow(_:incolumn:).md)
+### Related Documentation
+- [func selectRow(Int, inColumn: Int)](../nsbrowser/selectrow%28_,incolumn%29.md)
   Selects the cell at the specified row and column index.
-- [func selectedRow(inColumn: Int) -> Int](nsbrowser/selectedrow(incolumn:).md)
+- [func selectedRow(inColumn: Int) -> Int](../nsbrowser/selectedrow%28incolumn%29.md)
   Returns the row index of the selected cell in the specified column.
-- [func browser(NSBrowser, selectCellWith: String, inColumn: Int) -> Bool](nsbrowserdelegate/browser(_:selectcellwith:incolumn:).md)
+### Managing Selection
+- [func browser(NSBrowser, selectCellWith: String, inColumn: Int) -> Bool](./browser%28_,selectcellwith,incolumn%29.md)
   Asks the delegate to select the cell with the given title in the specified column.
-- [func browser(NSBrowser, selectionIndexesForProposedSelection: IndexSet, inColumn: Int) -> IndexSet](nsbrowserdelegate/browser(_:selectionindexesforproposedselection:incolumn:).md)
+- [func browser(NSBrowser, selectionIndexesForProposedSelection: IndexSet, inColumn: Int) -> IndexSet](./browser%28_,selectionindexesforproposedselection,incolumn%29.md)
   Asks the delegate for a set of indexes to select when the user changes the selection in the browser with the keyboard or mouse.
 
 

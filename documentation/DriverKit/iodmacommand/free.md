@@ -1,24 +1,26 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](iodmacommand/init.md)
-- [Create](iodmacommand/create.md)
+### Creating a DMA Command
+- [init](./init.md)
+- [Create](./create.md)
 
 
 ---

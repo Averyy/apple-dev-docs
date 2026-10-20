@@ -1,18 +1,19 @@
 # GKChallengeState.completed
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player successfully completed the challenge.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 6.0+ - Deprecated in 26.0
+- iPadOS 6.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The player successfully completed the challenge.
 case completed
 ```
 
+```c
+GKChallengeStateCompleted
+```
+
 ## See Also
 
-- [GKChallengeState.invalid](gkchallengestate/invalid.md)
+### Challenge States
+- [GKChallengeState.invalid](./invalid.md)
   The challenge isn’t valid because an error occurred.
-- [GKChallengeState.pending](gkchallengestate/pending.md)
+- [GKChallengeState.pending](./pending.md)
   The player issued a challenge, but the other player hasn’t accepted or refused it.
-- [GKChallengeState.declined](gkchallengestate/declined.md)
+- [GKChallengeState.declined](./declined.md)
   The player declined the challenge.
 
 

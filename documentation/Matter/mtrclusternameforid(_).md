@@ -1,7 +1,8 @@
 # MTRClusterNameForID(_:)
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func MTRClusterNameForID(_ clusterID: MTRClusterIDType) -> String!
+```
+
+```c
+extern NSString *MTRClusterNameForID(MTRClusterIDType clusterID);
 ```
 
 

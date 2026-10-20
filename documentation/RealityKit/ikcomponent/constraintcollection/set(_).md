@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the element with identifier matching the new value.
 

@@ -1,7 +1,8 @@
 # description(options:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a text representation of the data frame type.
 

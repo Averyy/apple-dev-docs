@@ -1,7 +1,8 @@
 # matrixFloat3x3Value
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,13 +19,18 @@
 var matrixFloat3x3Value: matrix_float3x3 { get set }
 ```
 
+```objc
+@property (nonatomic) matrix_float3x3 matrixFloat3x3Value;
+```
+
 ## See Also
 
-- [var matrixFloat2x2Value: matrix_float2x2](skuniform/matrixfloat2x2value.md)
-- [var matrixFloat4x4Value: matrix_float4x4](skuniform/matrixfloat4x4value.md)
-- [var vectorFloat2Value: vector_float2](skuniform/vectorfloat2value.md)
-- [var vectorFloat3Value: vector_float3](skuniform/vectorfloat3value.md)
-- [var vectorFloat4Value: vector_float4](skuniform/vectorfloat4value.md)
+### Instance Properties
+- [var matrixFloat2x2Value: matrix_float2x2](./matrixfloat2x2value.md)
+- [var matrixFloat4x4Value: matrix_float4x4](./matrixfloat4x4value.md)
+- [var vectorFloat2Value: vector_float2](./vectorfloat2value.md)
+- [var vectorFloat3Value: vector_float3](./vectorfloat3value.md)
+- [var vectorFloat4Value: vector_float4](./vectorfloat4value.md)
 
 
 ---

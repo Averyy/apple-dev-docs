@@ -1,7 +1,8 @@
 # setImageNamed(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the displayed image using a named image resource file.
 
@@ -14,6 +15,10 @@ Sets the displayed image using a named image resource file.
 func setImageNamed(_ imageName: String?)
 ```
 
+```objc
+- (void) setImageNamed:(NSString *) imageName;
+```
+
 #### Discussion
 
 This method looks for an image with the specified name on Apple Watch and displays it in the image view. If the specified image cannot be found, the image view displays no image.
@@ -22,15 +27,16 @@ When setting images, always try to use images that are sized to fit the availabl
 
 ## Parameters
 
-- `imageName`: The name of the image to be loaded from the Watch app’s bundle. Specify the filename of the image and include the filename extension in the name. You may specify an image file that contains multiple images running as an animation. For information on how to specify an animated image, see [`Animating a Series of Images`](wkinterfaceimage#Animating-a-Series-of-Images.md).
+- `imageName`: The name of the image to be loaded from the Watch app’s bundle. Specify the filename of the image and include the filename extension in the name. You may specify an image file that contains multiple images running as an animation. For information on how to specify an animated image, see [Animating a Series of Images](../wkinterfaceimage.md#Animating-a-Series-of-Images).
 
 ## See Also
 
-- [func setImage(UIImage?)](wkinterfaceimage/setimage(_:).md)
+### Configuring the Image
+- [func setImage(UIImage?)](./setimage%28_%29.md)
   Sets the displayed image using the specified image object.
-- [func setImageData(Data?)](wkinterfaceimage/setimagedata(_:).md)
+- [func setImageData(Data?)](./setimagedata%28_%29.md)
   Sets the displayed image using a formatted data object.
-- [func setTintColor(UIColor?)](wkinterfaceimage/settintcolor(_:).md)
+- [func setTintColor(UIColor?)](./settintcolor%28_%29.md)
   Changes the color applied to a template image.
 
 

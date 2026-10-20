@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves a group at an index.
 
@@ -20,13 +21,16 @@ Retrieves a group at an index.
 subscript(position: Int) -> (key: GroupingKey?, group: DataFrame.Slice) { get }
 ```
 
+Available when `GroupingKey` conforms to `Hashable`.
+
 ## Parameters
 
 - `position`: A valid index to a group in the row grouping.
 
 ## See Also
 
-- [var count: Int](rowgrouping/count.md)
+### Inspecting a Row Grouping
+- [var count: Int](./count.md)
   The number of groups in the row grouping.
 
 

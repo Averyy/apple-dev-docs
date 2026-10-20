@@ -1,7 +1,8 @@
 # TaskPriority
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The priority of a task.
 
@@ -36,69 +37,70 @@ In both cases, priority elevation helps you prevent a low-priority task from blo
 ## Topics
 
 ### Operators
-- [static func != (TaskPriority, TaskPriority) -> Bool](taskpriority/!=(_:_:).md)
+- [static func != (TaskPriority, TaskPriority) -> Bool](./taskpriority/noteq%28_,_%29.md)
 ### Initializers
-- [init?(JobPriority)](taskpriority/init(_:).md)
-  Convert this [`JobPriority`](jobpriority.md) to a [`TaskPriority`](taskpriority.md).
-- [init(rawValue: UInt8)](taskpriority/init(rawvalue:).md)
+- [init?(JobPriority)](./taskpriority/init%28_%29.md)
+  Convert this [`JobPriority`](./jobpriority.md) to a [`TaskPriority`](./taskpriority.md).
+- [init(rawValue: UInt8)](./taskpriority/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [var rawValue: UInt8](taskpriority/rawvalue-swift.property.md)
+- [var rawValue: UInt8](./taskpriority/rawvalue-swift.property.md)
   The corresponding value of the raw type.
 ### Type Aliases
-- [TaskPriority.RawValue](taskpriority/rawvalue-swift.typealias.md)
+- [TaskPriority.RawValue](./taskpriority/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
-- [static let background: TaskPriority](taskpriority/background.md)
-- [static let `default`: TaskPriority](taskpriority/default.md)
-- [static let high: TaskPriority](taskpriority/high.md)
-- [static let low: TaskPriority](taskpriority/low.md)
-- [static var medium: TaskPriority](taskpriority/medium.md)
-- [static var unspecified: TaskPriority](taskpriority/unspecified.md)
-- [static let userInitiated: TaskPriority](taskpriority/userinitiated.md)
-- [static var userInteractive: TaskPriority](taskpriority/userinteractive.md)
-- [static let utility: TaskPriority](taskpriority/utility.md)
+- [static let background: TaskPriority](./taskpriority/background.md)
+- [static let `default`: TaskPriority](./taskpriority/default.md)
+- [static let high: TaskPriority](./taskpriority/high.md)
+- [static let low: TaskPriority](./taskpriority/low.md)
+- [static var medium: TaskPriority](./taskpriority/medium.md)
+- [static var unspecified: TaskPriority](./taskpriority/unspecified.md)
+- [static let userInitiated: TaskPriority](./taskpriority/userinitiated.md)
+- [static var userInteractive: TaskPriority](./taskpriority/userinteractive.md)
+- [static let utility: TaskPriority](./taskpriority/utility.md)
 ### Default Implementations
-- [Comparable Implementations](taskpriority/comparable-implementations.md)
-- [CustomStringConvertible Implementations](taskpriority/customstringconvertible-implementations.md)
-- [Equatable Implementations](taskpriority/equatable-implementations.md)
-- [RawRepresentable Implementations](taskpriority/rawrepresentable-implementations.md)
+- [Comparable Implementations](./taskpriority/comparable-implementations.md)
+- [CustomStringConvertible Implementations](./taskpriority/customstringconvertible-implementations.md)
+- [Equatable Implementations](./taskpriority/equatable-implementations.md)
+- [RawRepresentable Implementations](./taskpriority/rawrepresentable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [RawRepresentable](rawrepresentable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](./comparable.md)
+- [Copyable](./copyable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [RawRepresentable](./rawrepresentable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Task](task.md)
+### Tasks
+- [struct Task](./task.md)
   A unit of asynchronous work.
-- [struct TaskGroup](taskgroup.md)
+- [struct TaskGroup](./taskgroup.md)
   A group that contains dynamically created child tasks.
-- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
+- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](./withtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingTaskGroup](throwingtaskgroup.md)
+- [struct ThrowingTaskGroup](./throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
-- [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)
+- [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](./withthrowingtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of throwing child tasks.
-- [struct DiscardingTaskGroup](discardingtaskgroup.md)
+- [struct DiscardingTaskGroup](./discardingtaskgroup.md)
   A discarding group that contains dynamically created child tasks.
-- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](withdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](./withdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingDiscardingTaskGroup](throwingdiscardingtaskgroup.md)
+- [struct ThrowingDiscardingTaskGroup](./throwingdiscardingtaskgroup.md)
   A throwing discarding group that contains dynamically created child tasks.
-- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](withthrowingdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](./withthrowingdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct UnsafeCurrentTask](unsafecurrenttask.md)
+- [struct UnsafeCurrentTask](./unsafecurrenttask.md)
   An unsafe reference to the current task.
 
 

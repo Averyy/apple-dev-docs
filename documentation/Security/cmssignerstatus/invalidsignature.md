@@ -1,7 +1,8 @@
 # CMSSignerStatus.invalidSignature
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message was signed but the signature is invalid.
 
@@ -13,6 +14,10 @@ The message was signed but the signature is invalid.
 
 ```swift
 case invalidSignature
+```
+
+```c
+kCMSSignerInvalidSignature
 ```
 
 

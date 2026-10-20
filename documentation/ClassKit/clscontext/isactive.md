@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the context is active.
 
@@ -18,17 +19,22 @@ A Boolean indicating whether the context is active.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isActive) BOOL active;
+```
+
 #### Discussion
 
-Use the [`becomeActive()`](clscontext/becomeactive().md) method to activate a context, and the [`resignActive()`](clscontext/resignactive().md) method to deactivate it.
+Use the [`becomeActive()`](./becomeactive%28%29.md) method to activate a context, and the [`resignActive()`](./resignactive%28%29.md) method to deactivate it.
 
 ## See Also
 
-- [Informing ClassKit that a task is about to begin](informing-classkit-that-a-task-is-about-to-begin.md)
+### Activating and deactivating a context
+- [Informing ClassKit that a task is about to begin](../informing-classkit-that-a-task-is-about-to-begin.md)
   Activate and deactivate contexts according to user interaction.
-- [func becomeActive()](clscontext/becomeactive.md)
+- [func becomeActive()](./becomeactive%28%29.md)
   Tells a context to become the active context.
-- [func resignActive()](clscontext/resignactive.md)
+- [func resignActive()](./resignactive%28%29.md)
   Tells a context to stop being the active context.
 
 

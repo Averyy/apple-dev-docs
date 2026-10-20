@@ -1,7 +1,8 @@
 # valueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the element calls when the user changes the axis value.
 
@@ -19,9 +20,14 @@ The block that the element calls when the user changes the axis value.
 var valueChangedHandler: GCControllerAxisValueChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCControllerAxisValueChangedHandler valueChangedHandler;
+```
+
 ## See Also
 
-- [typealias GCControllerAxisValueChangedHandler](gccontrolleraxisvaluechangedhandler.md)
+### Getting change information
+- [typealias GCControllerAxisValueChangedHandler](../gccontrolleraxisvaluechangedhandler.md)
   The signature for the block that executes when the user changes the axis value.
 
 

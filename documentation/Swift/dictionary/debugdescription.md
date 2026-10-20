@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the dictionary, suitable for debugging.
 
@@ -20,13 +21,16 @@ A string that represents the contents of the dictionary, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 ## See Also
 
-- [var description: String](dictionary/description.md)
+### Describing a Dictionary
+- [var description: String](./description.md)
   A string that represents the contents of the dictionary.
-- [var customMirror: Mirror](dictionary/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the dictionary.
-- [func hash(into: inout Hasher)](dictionary/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

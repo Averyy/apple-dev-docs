@@ -1,7 +1,8 @@
 # NetworkVPNIKEV2ProxiesObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to use to configure `Proxies` for use with `VPN`.
 
@@ -15,39 +16,44 @@ The dictionary to use to configure `Proxies` for use with `VPN`.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIKEV2ProxiesObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNIKEV2Proxies_ProtocolObject](networkvpnikev2proxies_protocolobject.md)
+- [object NetworkVPNIKEV2Proxies_ProtocolObject](./networkvpnikev2proxies_protocolobject.md)
   The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 
 ## Properties
 
 - `AutoConfigEnable` (boolean): If `true`, enables automatic proxy configuration.
+
+  **Default**: `false`
 - `AutoConfigURLString` (string): The URL to the location of the proxy auto-configuration file. Used only when `ProxyAutoConfigEnable` is `true`.
 - `AutoDiscoveryEnable` (boolean): If `true`, enables proxy auto discovery.
+
+  **Default**: `true`
 - `Protocol` (NetworkVPNIKEV2Proxies_ProtocolObject): The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 - `SupplementalMatchDomains` ([string]): An array of domains that defines which hosts use proxy settings for hosts.
 
 ## See Also
 
-- [object NetworkVPNIKEV2AuthenticationObject](networkvpnikev2authenticationobject.md)
+### Objects
+- [object NetworkVPNIKEV2AuthenticationObject](./networkvpnikev2authenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIKEV2DNSObject](networkvpnikev2dnsobject.md)
+- [object NetworkVPNIKEV2DNSObject](./networkvpnikev2dnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIKEV2IdleObject](networkvpnikev2idleobject.md)
+- [object NetworkVPNIKEV2IdleObject](./networkvpnikev2idleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIKEV2NetworkRoutingObject](networkvpnikev2networkroutingobject.md)
+- [object NetworkVPNIKEV2NetworkRoutingObject](./networkvpnikev2networkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNIKEV2OnDemandObject](networkvpnikev2ondemandobject.md)
+- [object NetworkVPNIKEV2OnDemandObject](./networkvpnikev2ondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](networkvpnikev2postquantumkeyexchangeobject.md)
+- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](./networkvpnikev2postquantumkeyexchangeobject.md)
   Post Quantum Key Exchange settings.
-- [object NetworkVPNIKEV2SecurityAssociationParametersObject](networkvpnikev2securityassociationparametersobject.md)
+- [object NetworkVPNIKEV2SecurityAssociationParametersObject](./networkvpnikev2securityassociationparametersobject.md)
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 
 

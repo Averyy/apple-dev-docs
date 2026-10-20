@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.SecurityRestrictionMode.maximizeCompatibility
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enhanced security protections optimized for maintaining web compatibility. Disables JIT compilation and enables increased MTE adoption.
 

@@ -1,7 +1,8 @@
 # init(relyingParty:clientDataHash:credentialID:attestationObject:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a passkey registration credential object.
 
@@ -18,6 +19,10 @@ Initializes a passkey registration credential object.
 init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data)
 ```
 
+```objc
+- (instancetype) initWithRelyingParty:(NSString *) relyingParty clientDataHash:(NSData *) clientDataHash credentialID:(NSData *) credentialID attestationObject:(NSData *) attestationObject;
+```
+
 ## Parameters
 
 - `relyingParty`: The relying party associated with this passkey.
@@ -27,7 +32,8 @@ init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestation
 
 ## See Also
 
-- [convenience init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data, extensionOutput: ASPasskeyRegistrationCredentialExtensionOutput?)](aspasskeyregistrationcredential/init(relyingparty:clientdatahash:credentialid:attestationobject:extensionoutput:).md)
+### Creating a passkey registration credential
+- [convenience init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data, extensionOutput: ASPasskeyRegistrationCredentialExtensionOutput?)](./init%28relyingparty,clientdatahash,credentialid,attestationobject,extensionoutput%29.md)
   Initializes a passkey registration credential object.
 
 

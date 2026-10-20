@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty raw attachment value.
 

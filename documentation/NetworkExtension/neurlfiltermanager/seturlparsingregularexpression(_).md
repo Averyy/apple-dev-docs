@@ -1,7 +1,8 @@
 # setURLParsingRegularExpression(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a regular expression for use in URL parsing.
 
@@ -25,23 +26,24 @@ Calling this method validates the `pattern` you provide for the regular expressi
 
 The result is a single string that uses the space character for a delimiter between each name-value pair, such as:
 
-```None
+```
 <group-1-name>=<group-1-value> <group-2-name>=<group-2-value> <group-3-name>=...
 ```
 
 Providing a `pattern` without a named capture group throws an error. If you provide a regular expression that uses other types of captured groups, only the named captured groups appear in the result.
 
-Setting a regular expression causes the [`urlParsingConfiguration`](neurlfiltermanager/urlparsingconfiguration.md) parameter to have no effect. You can read the current value of the regular expression with the [`urlParsingRegularExpression`](neurlfiltermanager/urlparsingregularexpression.md) property.
+Setting a regular expression causes the [`urlParsingConfiguration`](./urlparsingconfiguration.md) parameter to have no effect. You can read the current value of the regular expression with the [`urlParsingRegularExpression`](./urlparsingregularexpression.md) property.
 
 URL parsing with a regular expression is case insensitive.
 
 ## See Also
 
-- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/urlparsingconfiguration.md)
+### Customizing filter parsing behavior
+- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](./urlparsingconfiguration.md)
   A property to configure the filter’s parser behavior.
-- [NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/parsingconfiguration.md)
+- [NEURLFilterManager.ParsingConfiguration](./parsingconfiguration.md)
   A type to configure the filter’s parser behavior.
-- [var urlParsingRegularExpression: String?](neurlfiltermanager/urlparsingregularexpression.md)
+- [var urlParsingRegularExpression: String?](./urlparsingregularexpression.md)
   A regular expression used for advanced URL parsing.
 
 

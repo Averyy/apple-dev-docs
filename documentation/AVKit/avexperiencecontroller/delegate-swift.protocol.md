@@ -1,7 +1,8 @@
 # AVExperienceController.Delegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods to implement to respond to experience changes.
 
@@ -22,18 +23,19 @@ Use this delegate to be aware of transitions and to update an app’s state base
 ## Topics
 
 ### Responding to experience changes
-- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangeavailableexperiences:).md)
+- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](./delegate-swift.protocol/experiencecontroller%28_,didchangeavailableexperiences%29.md)
   Tells the delegate when the available experiences change.
-- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:preparefortransitionusing:).md)
+- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](./delegate-swift.protocol/experiencecontroller%28_,preparefortransitionusing%29.md)
   Tells the delegate that the system is preparing for a transition.
-- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangetransitioncontext:).md)
+- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](./delegate-swift.protocol/experiencecontroller%28_,didchangetransitioncontext%29.md)
   Tells the delegate when the transition context changes during a transition.
-- [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
+- [AVExperienceController.TransitionContext](./transitioncontext.md)
   The state of the transition that the system provides to the delegate object.
 
 ## See Also
 
-- [var delegate: (any AVExperienceController.Delegate)?](avexperiencecontroller/delegate-swift.property.md)
+### Configuring a delegate
+- [var delegate: (any AVExperienceController.Delegate)?](./delegate-swift.property.md)
   A delegate object for the experience controller.
 
 

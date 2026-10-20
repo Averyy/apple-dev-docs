@@ -1,7 +1,8 @@
 # LazyCollectionProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 8.0+
@@ -21,25 +22,26 @@ protocol LazyCollectionProtocol : Collection, LazySequenceProtocol where Self.El
 ## Topics
 
 ### Instance Properties
-- [var lazy: Self.Elements](lazycollectionprotocol/lazy-7wmso.md)
-- [var lazy: LazyCollection<Self.Elements>](lazycollectionprotocol/lazy-9k7qy.md)
+- [var lazy: Self.Elements](./lazycollectionprotocol/lazy-7wmso.md)
+- [var lazy: LazyCollection<Self.Elements>](./lazycollectionprotocol/lazy-9k7qy.md)
 
 ## Relationships
 
 ### Inherits From
-- [Collection](collection.md)
-- [LazySequenceProtocol](lazysequenceprotocol.md)
-- [Sequence](sequence.md)
+- [Collection](./collection.md)
+- [LazySequenceProtocol](./lazysequenceprotocol.md)
+- [Sequence](./sequence.md)
 ### Conforming Types
-- [LazyDropWhileSequence](lazydropwhilesequence.md)
-- [LazyFilterSequence](lazyfiltersequence.md)
-- [LazyMapSequence](lazymapsequence.md)
-- [LazyPrefixWhileSequence](lazyprefixwhilesequence.md)
-- [LazySequence](lazysequence.md)
+- [LazyDropWhileSequence](./lazydropwhilesequence.md)
+- [LazyFilterSequence](./lazyfiltersequence.md)
+- [LazyMapSequence](./lazymapsequence.md)
+- [LazyPrefixWhileSequence](./lazyprefixwhilesequence.md)
+- [LazySequence](./lazysequence.md)
 
 ## See Also
 
-- [protocol LazySequenceProtocol](lazysequenceprotocol.md)
+### Lazy Collections
+- [protocol LazySequenceProtocol](./lazysequenceprotocol.md)
   A sequence on which normally-eager sequence operations are implemented lazily.
 
 

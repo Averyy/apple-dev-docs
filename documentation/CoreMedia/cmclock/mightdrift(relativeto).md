@@ -1,7 +1,8 @@
 # mightDrift(relativeTo:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether it’s possible for one timebase or clock to drift relative to another.
 

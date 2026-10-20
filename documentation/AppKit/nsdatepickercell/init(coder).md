@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(textCell: String)](nsdatepickercell/init(textcell:).md)
+### Initializers
+- [init(textCell: String)](./init%28textcell%29.md)
 
 
 ---

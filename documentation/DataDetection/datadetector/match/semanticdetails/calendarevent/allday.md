@@ -1,7 +1,8 @@
 # allDay
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the event is an all-day event.
 
@@ -26,13 +27,14 @@ This may be `true` if the date or date range doesn’t specify a time.
 
 ## See Also
 
-- [let startDate: Date?](datadetector/match/semanticdetails/calendarevent/startdate.md)
+### Calendar event properties
+- [let startDate: Date?](./startdate.md)
   An optional date that may contain the start date of the event.
-- [let endDate: Date?](datadetector/match/semanticdetails/calendarevent/enddate.md)
+- [let endDate: Date?](./enddate.md)
   An optional date that may contain the end date of the event.
-- [let startTimeZone: TimeZone?](datadetector/match/semanticdetails/calendarevent/starttimezone.md)
+- [let startTimeZone: TimeZone?](./starttimezone.md)
   An optional time zone object that may contain the time zone of the start date of the event.
-- [let endTimeZone: TimeZone?](datadetector/match/semanticdetails/calendarevent/endtimezone.md)
+- [let endTimeZone: TimeZone?](./endtimezone.md)
   An optional time zone object that may contain the time zone of the end date of the event.
 
 

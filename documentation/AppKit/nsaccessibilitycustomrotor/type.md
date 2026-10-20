@@ -1,7 +1,8 @@
 # type
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of content that the rotor represents.
 
@@ -14,9 +15,14 @@ The type of content that the rotor represents.
 var type: NSAccessibilityCustomRotor.RotorType { get set }
 ```
 
+```objc
+@property NSAccessibilityCustomRotorType type;
+```
+
 ## See Also
 
-- [NSAccessibilityCustomRotor.RotorType](nsaccessibilitycustomrotor/rotortype.md)
+### Getting the Rotor Type
+- [NSAccessibilityCustomRotor.RotorType](./rotortype.md)
   Constants that indicate the type of content that the rotor represents.
 
 

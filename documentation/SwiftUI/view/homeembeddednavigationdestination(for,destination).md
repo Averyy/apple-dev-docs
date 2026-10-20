@@ -1,7 +1,8 @@
 # homeEmbeddedNavigationDestination(for:destination:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Drop-in replacement for `.navigationDestination(for:)` for hosted extension content. Pair with `context.navigator.push(_:title:)` or `NavigationLink(value:)`.
 

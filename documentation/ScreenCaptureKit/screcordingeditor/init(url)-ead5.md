@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(url: URL)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
 ```
 
 #### Return Value

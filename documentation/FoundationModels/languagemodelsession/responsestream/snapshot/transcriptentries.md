@@ -1,7 +1,8 @@
 # transcriptEntries
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of transcript entries.
 
@@ -21,9 +22,10 @@ var transcriptEntries: ArraySlice<Transcript.Entry>
 
 ## See Also
 
-- [var content: Content.PartiallyGenerated](languagemodelsession/responsestream/snapshot/content.md)
+### Inspecting a snapshot
+- [var content: Content.PartiallyGenerated](./content.md)
   The content of the response.
-- [var rawContent: GeneratedContent](languagemodelsession/responsestream/snapshot/rawcontent.md)
+- [var rawContent: GeneratedContent](./rawcontent.md)
   The raw content of the response.
 
 

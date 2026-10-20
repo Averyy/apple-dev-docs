@@ -1,7 +1,8 @@
 # InstallMediaCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to install a book on a device.
 
@@ -9,18 +10,18 @@ The command to install a book on a device.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```
 object InstallMediaCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object InstallMediaCommand.Command](installmediacommand/command-data.dictionary.md)
+- [object InstallMediaCommand.Command](./installmediacommand/command-data.dictionary.md)
   The command to install a book on a device.
 
 ## Properties
@@ -30,7 +31,8 @@ object InstallMediaCommand
 
 ## See Also
 
-- [object InstallMediaResponse](installmediaresponse.md)
+### Commands and responses
+- [object InstallMediaResponse](./installmediaresponse.md)
   A response from the device after it processes the command to install a book on a device.
 
 

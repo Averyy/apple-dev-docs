@@ -1,7 +1,8 @@
 # usesDeviceMetrics
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Uses image glyph bounds instead of typographic bounds.
 
@@ -19,13 +20,18 @@ Uses image glyph bounds instead of typographic bounds.
 static var usesDeviceMetrics: NSStringDrawingOptions { get }
 ```
 
+```c
+NSStringDrawingUsesDeviceMetrics
+```
+
 ## See Also
 
-- [static var usesLineFragmentOrigin: NSStringDrawingOptions](nsstringdrawingoptions/useslinefragmentorigin.md)
+### Constants
+- [static var usesLineFragmentOrigin: NSStringDrawingOptions](./useslinefragmentorigin.md)
   Uses the line fragment origin instead of the baseline origin.
-- [static var usesFontLeading: NSStringDrawingOptions](nsstringdrawingoptions/usesfontleading.md)
+- [static var usesFontLeading: NSStringDrawingOptions](./usesfontleading.md)
   Uses the font leading for calculating line heights.
-- [static var truncatesLastVisibleLine: NSStringDrawingOptions](nsstringdrawingoptions/truncateslastvisibleline.md)
+- [static var truncatesLastVisibleLine: NSStringDrawingOptions](./truncateslastvisibleline.md)
   Truncates and adds the ellipsis character to the last visible line if the text doesn’t fit into the specified bounds.
 
 

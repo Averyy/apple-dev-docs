@@ -1,7 +1,8 @@
 # RCSService.Business.SuggestedAction.Action.openURL(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 URL action.
 
@@ -16,11 +17,12 @@ case openURL(RCSService.Business.OpenURLAction)
 
 ## See Also
 
-- [RCSService.Business.OpenURLAction](rcsservice/business/openurlaction.md)
+### Handling URL and phone-dialing actions
+- [RCSService.Business.OpenURLAction](../../openurlaction.md)
   Suggested action to open a URL.
-- [case dialPhoneNumber(RCSService.Business.DialPhoneNumberAction)](rcsservice/business/suggestedaction/action-swift.enum/dialphonenumber(_:).md)
+- [case dialPhoneNumber(RCSService.Business.DialPhoneNumberAction)](./dialphonenumber%28_%29.md)
   Dialer phone number.
-- [RCSService.Business.DialPhoneNumberAction](rcsservice/business/dialphonenumberaction.md)
+- [RCSService.Business.DialPhoneNumberAction](../../dialphonenumberaction.md)
   Suggested action to dial a phone number.
 
 

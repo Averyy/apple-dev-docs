@@ -1,7 +1,8 @@
 # JSGlobalContextRef
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A global JavaScript execution context.
 
@@ -19,41 +20,46 @@ A global JavaScript execution context.
 typealias JSGlobalContextRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueJSContext * JSGlobalContextRef;
+```
+
 #### Discussion
 
-A [`JSGlobalContextRef`](jsglobalcontextref.md) is a [`JSContextRef`](jscontextref.md).
+A [`JSGlobalContextRef`](./jsglobalcontextref.md) is a [`JSContextRef`](./jscontextref.md).
 
 ## Topics
 
 ### Creating a global context
-- [func JSGlobalContextCreate(JSClassRef!) -> JSGlobalContextRef!](jsglobalcontextcreate(_:).md)
+- [func JSGlobalContextCreate(JSClassRef!) -> JSGlobalContextRef!](./jsglobalcontextcreate%28_%29.md)
   Creates a global JavaScript execution context.
-- [func JSGlobalContextCreateInGroup(JSContextGroupRef!, JSClassRef!) -> JSGlobalContextRef!](jsglobalcontextcreateingroup(_:_:).md)
+- [func JSGlobalContextCreateInGroup(JSContextGroupRef!, JSClassRef!) -> JSGlobalContextRef!](./jsglobalcontextcreateingroup%28_,_%29.md)
   Creates a global JavaScript execution context in the provided context group.
-- [func JSGlobalContextRetain(JSGlobalContextRef!) -> JSGlobalContextRef!](jsglobalcontextretain(_:).md)
+- [func JSGlobalContextRetain(JSGlobalContextRef!) -> JSGlobalContextRef!](./jsglobalcontextretain%28_%29.md)
   Retains a global JavaScript execution context.
-- [func JSGlobalContextRelease(JSGlobalContextRef!)](jsglobalcontextrelease(_:).md)
+- [func JSGlobalContextRelease(JSGlobalContextRef!)](./jsglobalcontextrelease%28_%29.md)
   Releases a global JavaScript execution context.
 ### Managing the context’s name
-- [func JSGlobalContextCopyName(JSGlobalContextRef!) -> JSStringRef!](jsglobalcontextcopyname(_:).md)
+- [func JSGlobalContextCopyName(JSGlobalContextRef!) -> JSStringRef!](./jsglobalcontextcopyname%28_%29.md)
   Gets a copy of the name of a context.
-- [func JSGlobalContextSetName(JSGlobalContextRef!, JSStringRef!)](jsglobalcontextsetname(_:_:).md)
+- [func JSGlobalContextSetName(JSGlobalContextRef!, JSStringRef!)](./jsglobalcontextsetname%28_,_%29.md)
   Sets the remote debugging name for a context.
 ### Making a context inspectable
-- [func JSGlobalContextIsInspectable(JSGlobalContextRef!) -> Bool](jsglobalcontextisinspectable(_:).md)
+- [func JSGlobalContextIsInspectable(JSGlobalContextRef!) -> Bool](./jsglobalcontextisinspectable%28_%29.md)
   Returns a Boolean value that indicates whether the JavaScript context is inspectable.
-- [func JSGlobalContextSetInspectable(JSGlobalContextRef!, Bool)](jsglobalcontextsetinspectable(_:_:).md)
+- [func JSGlobalContextSetInspectable(JSGlobalContextRef!, Bool)](./jsglobalcontextsetinspectable%28_,_%29.md)
   Sets a JavaScript context to be either inspectable or not inspectable.
 
 ## See Also
 
-- [typealias JSContextGroupRef](jscontextgroupref.md)
+### JavaScriptCore Engine Interface
+- [typealias JSContextGroupRef](./jscontextgroupref.md)
   A group that associates JavaScript contexts with one another.
-- [typealias JSContextRef](jscontextref.md)
+- [typealias JSContextRef](./jscontextref.md)
   A JavaScript execution context.
-- [typealias JSStringRef](jsstringref.md)
+- [typealias JSStringRef](./jsstringref.md)
   A UTF-16 character buffer.
-- [typealias JSClassRef](jsclassref.md)
+- [typealias JSClassRef](./jsclassref.md)
   A JavaScript class.
 
 

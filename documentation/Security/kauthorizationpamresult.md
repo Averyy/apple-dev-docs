@@ -1,7 +1,8 @@
 # kAuthorizationPamResult
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type for an authorization item containing a return code from a Pluggable Authentication Module (PAM).
 
@@ -13,6 +14,10 @@ The type for an authorization item containing a return code from a Pluggable Aut
 
 ```swift
 var kAuthorizationPamResult: String { get }
+```
+
+```c
+#define kAuthorizationPamResult
 ```
 
 

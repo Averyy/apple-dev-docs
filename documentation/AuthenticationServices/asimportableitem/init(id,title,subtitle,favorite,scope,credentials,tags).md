@@ -1,7 +1,8 @@
 # init(id:title:subtitle:favorite:scope:credentials:tags:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.1+

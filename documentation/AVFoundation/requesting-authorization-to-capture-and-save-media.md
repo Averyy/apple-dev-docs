@@ -1,6 +1,7 @@
 # Requesting authorization to capture and save media
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Prompt the user to authorize access to the camera, microphone, and photo library.
 
@@ -8,41 +9,41 @@ Prompt the user to authorize access to the camera, microphone, and photo library
 
 In iOS and macOS 10.14 and later, the user must explicitly grant permission for each app to access the camera and microphone. Before your app can use a capture device for the first time, the system presents an alert with an app-specific message that you specify, to ask the user to grant your app access to the capture device. For example, the following screenshots show the camera access alert in iOS and macOS 10.14 and later:
 
-![A screenshot of the iOS camera access alert, with an app-specific message to request access to the camera, with two buttons: Don’t Allow and OK.](/images/com.apple.avfoundation/media-4132752@2x.png)
+![A screenshot of the iOS camera access alert, with an app-specific message to request access to the camera, with two buttons: Don’t Allow and OK.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4132752@2x.png)
 
-![A screenshot of the macOS 10.14 and later camera access alert, with an app-specific message to request access to the camera, with two buttons: Don’t Allow and OK.](/images/com.apple.avfoundation/media-4132753@2x.png)
+![A screenshot of the macOS 10.14 and later camera access alert, with an app-specific message to request access to the camera, with two buttons: Don’t Allow and OK.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4132753@2x.png)
 
 The system remembers the user’s response to each access alert, so subsequent uses of the corresponding capture device don’t cause the alert to appear again. The user can change permission settings for your app in Settings > Privacy in iOS and in System Preferences > Security & Privacy in macOS.
 
 This article outlines the steps you can take to ensure your app has permission before it attempts to capture media.
 
-##### Configure Access Alerts
+##### Configure access alerts
 
 The system requires that your app provides static messages to display to the user when the system asks for permission to access the camera or microphone:
 
-- If your app uses device cameras, include the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) key in your app’s `Info.plist` file.
-- If your app uses device microphones, include the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key in your app’s `Info.plist` file.
+- If your app uses device cameras, include the [`NSCameraUsageDescription`](../BundleResources/information-property-list/nscamerausagedescription.md) key in your app’s `Info.plist` file.
+- If your app uses device microphones, include the [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) key in your app’s `Info.plist` file.
 
 For each key, provide a message that explains to the user why your app needs to capture media so the user can feel confident granting permission to your app.
 
-![A screenshot showing the Camera and Microphone usage descriptions in the Info tab of the app target.](/images/com.apple.avfoundation/media-4132754@2x.png)
+![A screenshot showing the Camera and Microphone usage descriptions in the Info tab of the app target.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4132754@2x.png)
 
-##### Enable Entitlements in Macos
+##### Enable entitlements in macOS
 
 In macOS, you also need to enable the following entitlements in Signing & Capabilities for your app targets:
 
-- If your app uses device cameras, enable the [`Camera entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.device.camera).
-- If your app uses device microphones, enable the [`Audio Input Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.device.audio-input).
+- If your app uses device cameras, enable the [`Camera entitlement`](../BundleResources/entitlements/com.apple.security.device.camera.md).
+- If your app uses device microphones, enable the [`Audio Input Entitlement`](../BundleResources/entitlements/com.apple.security.device.audio-input.md).
 
-![A screenshot showing the macOS Camera and Audio Input entitlements enabled in the Signing & Capabilities tab of the app target.](/images/com.apple.avfoundation/media-4140079@2x.png)
+![A screenshot showing the macOS Camera and Audio Input entitlements enabled in the Signing & Capabilities tab of the app target.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4140079@2x.png)
 
 > ❗ **Important**:  Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a capture device. Otherwise, the system terminates your app.
 
-##### Verify and Request Authorization for Capture
+##### Verify and request authorization for capture
 
-Always test the [`AVCaptureDevice`](avcapturedevice.md) [`authorizationStatus(for:)`](avcapturedevice/authorizationstatus(for:).md) method before setting up a capture session. If the user hasn’t granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](avauthorizationstatus/notdetermined.md). In this case, use the [`requestAccess(for:completionHandler:)`](avcapturedevice/requestaccess(for:completionhandler:).md) method to tell the system to prompt the user.
+Always test the [`AVCaptureDevice`](./avcapturedevice.md) [`authorizationStatus(for:)`](./avcapturedevice/authorizationstatus%28for%29.md) method before setting up a capture session. If the user hasn’t granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](./avauthorizationstatus/notdetermined.md). In this case, use the [`requestAccess(for:completionHandler:)`](./avcapturedevice/requestaccess%28for,completionhandler%29.md) method to tell the system to prompt the user.
 
-Call [`requestAccess(for:completionHandler:)`](avcapturedevice/requestaccess(for:completionhandler:).md) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video capture isn’t the main focus of your app, check for permission only when the user invokes your app’s camera-related features. Here’s an example:
+Call [`requestAccess(for:completionHandler:)`](./avcapturedevice/requestaccess%28for,completionhandler%29.md) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video capture isn’t the main focus of your app, check for permission only when the user invokes your app’s camera-related features. Here’s an example:
 
 ```swift
 var isAuthorized: Bool {
@@ -68,14 +69,14 @@ func setUpCaptureSession() async {
 }
 ```
 
-##### Request Authorization to Save Captured Media
+##### Request authorization to save captured media
 
 Your app must get permission to access the photo library before it attempts to save photos or videos; otherwise the system terminates your app. Which permission you request depends on the types of media you want to save:
 
-- For most photo and video capture workflows, including Live Photos and RAW format capture, use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) and [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) classes. These classes require read/write access to the photo library, so you need to use the [`NSPhotoLibraryUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryusagedescription) key in your `Info.plist` file to provide the user a message to request access. For additional information, see [`Delivering an Enhanced Privacy Experience in Your Photos App`](https://developer.apple.com/documentation/photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app).
-- If your app only needs to save video to the photo library, the [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uisavevideoatpathtosavedphotosalbum(_:_:_:_:)) function is a simpler alternative to [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary). This function only requires write access to the library. Use the [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription) key in your `Info.plist` file to provide the user a message to request permission to save to the photo library.
+- For most photo and video capture workflows, including Live Photos and RAW format capture, use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) and [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) classes. These classes require read/write access to the photo library, so you need to use the [`NSPhotoLibraryUsageDescription`](../BundleResources/information-property-list/nsphotolibraryusagedescription.md) key in your `Info.plist` file to provide the user a message to request access. For additional information, see [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md).
+- If your app only needs to save video to the photo library, the [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uisavevideoatpathtosavedphotosalbum%28_,_,_,_%29.md) function is a simpler alternative to [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary). This function only requires write access to the library. Use the [`NSPhotoLibraryAddUsageDescription`](../BundleResources/information-property-list/nsphotolibraryaddusagedescription.md) key in your `Info.plist` file to provide the user a message to request permission to save to the photo library.
 
-> **Note**:  The [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uiimagewritetosavedphotosalbum(_:_:_:_:)) function isn’t recommended for use with photos captured with [`AVCapturePhotoOutput`](avcapturephotooutput.md) because [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) doesn’t support the features and metadata included in photo output.
+> **Note**:  The [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uiimagewritetosavedphotosalbum%28_,_,_,_%29.md) function isn’t recommended for use with photos captured with [`AVCapturePhotoOutput`](./avcapturephotooutput.md) because [`UIImage`](../UIKit/uiimage.md) doesn’t support the features and metadata included in photo output.
 
 
 ---

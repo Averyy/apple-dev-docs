@@ -1,7 +1,8 @@
 # downArrow
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Down Arrow (U+F701)
 
@@ -21,11 +22,12 @@ static let downArrow: KeyEquivalent
 
 ## See Also
 
-- [static let upArrow: KeyEquivalent](keyequivalent/uparrow.md)
+### Getting arrow keys
+- [static let upArrow: KeyEquivalent](./uparrow.md)
   Up Arrow (U+F700)
-- [static let leftArrow: KeyEquivalent](keyequivalent/leftarrow.md)
+- [static let leftArrow: KeyEquivalent](./leftarrow.md)
   Left Arrow (U+F702)
-- [static let rightArrow: KeyEquivalent](keyequivalent/rightarrow.md)
+- [static let rightArrow: KeyEquivalent](./rightarrow.md)
   Right Arrow (U+F703)
 
 

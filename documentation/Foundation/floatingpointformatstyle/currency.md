@@ -1,7 +1,8 @@
 # FloatingPointFormatStyle.Currency
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that converts between floating-point currency values and their textual representations.
 
@@ -20,80 +21,82 @@ A format style that converts between floating-point currency values and their te
 struct Currency
 ```
 
+Available when `Value` conforms to `BinaryFloatingPoint`.
+
 ## Topics
 
 ### Creating a floating-point currency style
-- [init(code: String, locale: Locale)](floatingpointformatstyle/currency/init(code:locale:).md)
+- [init(code: String, locale: Locale)](./currency/init%28code,locale%29.md)
   Creates a floating-point currency format style that uses the given currency code and locale.
 ### Customizing style behavior
-- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/decimalseparator(strategy:).md)
+- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](./currency/decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/grouping(_:).md)
+- [func grouping(FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency](./currency/grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/locale(_:).md)
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Currency](./currency/locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func precision(FloatingPointFormatStyle<Value>.Currency.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/precision(_:).md)
+- [func precision(FloatingPointFormatStyle<Value>.Currency.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Currency](./currency/precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func presentation(FloatingPointFormatStyle<Value>.Currency.Configuration.Presentation) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/presentation(_:).md)
+- [func presentation(FloatingPointFormatStyle<Value>.Currency.Configuration.Presentation) -> FloatingPointFormatStyle<Value>.Currency](./currency/presentation%28_%29.md)
   Modifies the format style to use the specified presentation.
-- [func rounded(rule: FloatingPointFormatStyle<Value>.Currency.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/rounded(rule:increment:).md)
+- [func rounded(rule: FloatingPointFormatStyle<Value>.Currency.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>.Currency](./currency/rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/scale(_:).md)
+- [func scale(Double) -> FloatingPointFormatStyle<Value>.Currency](./currency/scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/sign(strategy:).md)
+- [func sign(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](./currency/sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [FloatingPointFormatStyle.Currency.Configuration](floatingpointformatstyle/currency/configuration.md)
+- [FloatingPointFormatStyle.Currency.Configuration](./currency/configuration.md)
   The type the format style uses for configuration settings.
-- [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
+- [enum CurrencyFormatStyleConfiguration](../currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
 ### Formatting floating-point currency values
-- [func format(Value) -> String](floatingpointformatstyle/currency/format(_:).md)
+- [func format(Value) -> String](./currency/format%28_%29.md)
   Formats a floating-point value, using this style.
 ### Creating attributed strings
-- [var attributed: FloatingPointFormatStyle<Value>.Attributed](floatingpointformatstyle/currency/attributed.md)
+- [var attributed: FloatingPointFormatStyle<Value>.Attributed](./currency/attributed.md)
   An attributed format style based on the floating-point currency format style.
-- [FloatingPointFormatStyle.Attributed](floatingpointformatstyle/attributed-swift.struct.md)
+- [FloatingPointFormatStyle.Attributed](./attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 ### Accessing style properties
-- [let currencyCode: String](floatingpointformatstyle/currency/currencycode.md)
+- [let currencyCode: String](./currency/currencycode.md)
   The currency code this format style uses.
-- [var locale: Locale](floatingpointformatstyle/currency/locale.md)
+- [var locale: Locale](./currency/locale.md)
   The locale of the format style.
 ### Applying measurement styles
-- [Measurement.FormatStyle](measurement/formatstyle.md)
+- [Measurement.FormatStyle](../measurement/formatstyle.md)
   A type that provides localized representations of measurements.
 ### Applying list styles
-- [struct ListFormatStyle](listformatstyle.md)
+- [struct ListFormatStyle](../listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 ### Parsing floating-point currency values
-- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>.Currency>](floatingpointformatstyle/currency/parsestrategy.md)
+- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>.Currency>](./currency/parsestrategy.md)
   The parse strategy that this format style uses.
 ### Locating currency values in regular expressions
-- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](floatingpointformatstyle/currency/consuming(_:startingat:in:).md)
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](./currency/consuming%28_,startingat,in%29.md)
   Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Instance Methods
-- [func notation(FloatingPointFormatStyle<Value>.Currency.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/notation(_:).md)
+- [func notation(FloatingPointFormatStyle<Value>.Currency.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Currency](./currency/notation%28_%29.md)
   Modifies the format style to use the specified notation.
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](floatingpointformatstyle/currency/customconsumingregexcomponent-implementations.md)
-- [FormatStyle Implementations](floatingpointformatstyle/currency/formatstyle-implementations.md)
-- [ParseableFormatStyle Implementations](floatingpointformatstyle/currency/parseableformatstyle-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./currency/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](./currency/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](./currency/parseableformatstyle-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseableFormatStyle](../parseableformatstyle.md)
+- [RegexComponent](../../Swift/regexcomponent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

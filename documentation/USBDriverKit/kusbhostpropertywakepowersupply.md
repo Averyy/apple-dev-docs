@@ -1,28 +1,30 @@
 # kUSBHostPropertyWakePowerSupply
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kUSBHostPropertyWakePowerSupply
 ```
 
 ## See Also
 
-- [kUSBHostPropertyForcePower](kusbhostpropertyforcepower.md)
-- [kUSBHostPropertyLocationID](kusbhostpropertylocationid.md)
-- [kUSBHostPropertyDebugOptions](kusbhostpropertydebugoptions.md)
-- [kUSBHostPropertyBusCurrentPoolID](kusbhostpropertybuscurrentpoolid.md)
-- [kUSBHostPropertyFailedRemoteWake](kusbhostpropertyfailedremotewake.md)
-- [kUSBHostPropertySleepPowerSupply](kusbhostpropertysleeppowersupply.md)
-- [kUSBHostPropertySmcBusCurrentPoolID](kusbhostpropertysmcbuscurrentpoolid.md)
-- [kUSBHostPropertyWakePortCurrentLimit](kusbhostpropertywakeportcurrentlimit.md)
-- [kUSBHostPropertySleepPortCurrentLimit](kusbhostpropertysleepportcurrentlimit.md)
+### Host Properties
+- [kUSBHostPropertyForcePower](./kusbhostpropertyforcepower.md)
+- [kUSBHostPropertyLocationID](./kusbhostpropertylocationid.md)
+- [kUSBHostPropertyDebugOptions](./kusbhostpropertydebugoptions.md)
+- [kUSBHostPropertyBusCurrentPoolID](./kusbhostpropertybuscurrentpoolid.md)
+- [kUSBHostPropertyFailedRemoteWake](./kusbhostpropertyfailedremotewake.md)
+- [kUSBHostPropertySleepPowerSupply](./kusbhostpropertysleeppowersupply.md)
+- [kUSBHostPropertySmcBusCurrentPoolID](./kusbhostpropertysmcbuscurrentpoolid.md)
+- [kUSBHostPropertyWakePortCurrentLimit](./kusbhostpropertywakeportcurrentlimit.md)
+- [kUSBHostPropertySleepPortCurrentLimit](./kusbhostpropertysleepportcurrentlimit.md)
 
 
 ---

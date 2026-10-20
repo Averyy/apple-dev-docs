@@ -1,7 +1,8 @@
 # xArbitraryCorrectedZVertical
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A reference frame where the Z axis is vertical and has improved rotation accuracy, and the X axis points in an arbitrary direction in the horizontal plane.
 
@@ -19,9 +20,13 @@ A reference frame where the Z axis is vertical and has improved rotation accurac
 static var xArbitraryCorrectedZVertical: CMAttitudeReferenceFrame { get }
 ```
 
+```c
+CMAttitudeReferenceFrameXArbitraryCorrectedZVertical
+```
+
 ## Mentions
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+- [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
 #### Discussion
 
@@ -29,17 +34,18 @@ When you start the device-motion service, Core Motion uses the current device or
 
 This option uses the magnetometer to improve long-term accuracy for the z axis (yaw) measurements. The device must have a magnetometer and that sensor must be available and calibrated.
 
-This option requires more CPU usage than the [`xArbitraryZVertical`](cmattitudereferenceframe/xarbitraryzvertical.md) option.
+This option requires more CPU usage than the [`xArbitraryZVertical`](./xarbitraryzvertical.md) option.
 
 > 💡 **Tip**:  Save the first reported attitude value, and compare it to new values to determine changes since the start of the service.
 
 ## See Also
 
-- [static var xArbitraryZVertical: CMAttitudeReferenceFrame](cmattitudereferenceframe/xarbitraryzvertical.md)
+### Getting the reference frames
+- [static var xArbitraryZVertical: CMAttitudeReferenceFrame](./xarbitraryzvertical.md)
   A reference frame where the Z axis is vertical and the X axis points in an arbitrary direction in the horizontal plane.
-- [static var xMagneticNorthZVertical: CMAttitudeReferenceFrame](cmattitudereferenceframe/xmagneticnorthzvertical.md)
+- [static var xMagneticNorthZVertical: CMAttitudeReferenceFrame](./xmagneticnorthzvertical.md)
   A reference frame where the Z axis is vertical and the X axis points to the magnetic north pole.
-- [static var xTrueNorthZVertical: CMAttitudeReferenceFrame](cmattitudereferenceframe/xtruenorthzvertical.md)
+- [static var xTrueNorthZVertical: CMAttitudeReferenceFrame](./xtruenorthzvertical.md)
   A reference frame where the Z axis is vertical and the X axis points to the geographic north pole.
 
 

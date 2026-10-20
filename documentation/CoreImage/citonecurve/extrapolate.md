@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 If true, then the color effect will be extrapolated if the input image contains RGB component values outside the range 0.0 to 1.0.
@@ -18,6 +19,10 @@ If true, then the color effect will be extrapolated if the input image contains 
 
 ```swift
 var extrapolate: Bool { get set }
+```
+
+```objc
+@property (nonatomic) bool extrapolate;
 ```
 
 

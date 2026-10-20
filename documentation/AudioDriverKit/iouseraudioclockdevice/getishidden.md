@@ -1,7 +1,8 @@
 # GetIsHidden
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a Boolean value that indicates whether the device is hidden.
 
@@ -10,7 +11,7 @@ Gets a Boolean value that indicates whether the device is hidden.
 
 ## Declaration
 
-```swift
+```c
 bool GetIsHidden();
 ```
 
@@ -26,13 +27,14 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [GetDeviceIsRunning](iouseraudioclockdevice/getdeviceisrunning.md)
+### Working with Clock Device State
+- [GetDeviceIsRunning](./getdeviceisrunning.md)
   Gets a Boolean value that indicates whether the device is running.
-- [SetDeviceIsAlive](iouseraudioclockdevice/setdeviceisalive.md)
+- [SetDeviceIsAlive](./setdeviceisalive.md)
   Sets a Boolean value to represent whether the device is alive.
-- [GetDeviceIsAlive](iouseraudioclockdevice/getdeviceisalive.md)
+- [GetDeviceIsAlive](./getdeviceisalive.md)
   Gets a Boolean value that represents whether the device is alive.
-- [SetIsHidden](iouseraudioclockdevice/setishidden.md)
+- [SetIsHidden](./setishidden.md)
   Sets a Boolean value to indicate whether the device is hidden.
 
 

@@ -1,10 +1,11 @@
 # kBluetoothL2CAPConfigurationOptionFlushTimeoutLength
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothL2CAPConfigurationOptionFlushTimeoutLength: Int { get }
 ```
 
+```c
+kBluetoothL2CAPConfigurationOptionFlushTimeoutLength
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPConfigurationOptionMTULength: Int](kbluetoothl2capconfigurationoptionmtulength.md)
-- [var kBluetoothL2CAPConfigurationOptionQoSLength: Int](kbluetoothl2capconfigurationoptionqoslength.md)
-- [var kBluetoothL2CAPConfigurationOptionRetransmissionAndFlowControlLength: Int](kbluetoothl2capconfigurationoptionretransmissionandflowcontrollength.md)
+### Constants
+- [var kBluetoothL2CAPConfigurationOptionMTULength: Int](./kbluetoothl2capconfigurationoptionmtulength.md)
+- [var kBluetoothL2CAPConfigurationOptionQoSLength: Int](./kbluetoothl2capconfigurationoptionqoslength.md)
+- [var kBluetoothL2CAPConfigurationOptionRetransmissionAndFlowControlLength: Int](./kbluetoothl2capconfigurationoptionretransmissionandflowcontrollength.md)
 
 
 ---

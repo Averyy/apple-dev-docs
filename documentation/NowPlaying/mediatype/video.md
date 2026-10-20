@@ -1,7 +1,8 @@
 # MediaType.video
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Video content, such as movies, TV shows, or video podcasts.
 

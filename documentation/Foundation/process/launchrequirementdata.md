@@ -1,7 +1,8 @@
 # launchRequirementData
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The launch requirement data for the receiver.
 
@@ -12,6 +13,10 @@ The launch requirement data for the receiver.
 
 ```swift
 var launchRequirementData: Data? { get set }
+```
+
+```objc
+@property (copy, nullable) NSData * launchRequirementData;
 ```
 
 

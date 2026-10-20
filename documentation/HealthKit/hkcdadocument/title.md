@@ -1,7 +1,8 @@
 # title
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document’s title.
 
@@ -18,19 +19,24 @@ The document’s title.
 var title: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * title;
+```
+
 #### Discussion
 
 HealthKit automatically extracts the document’s title from the CDA’s XML data.
 
 ## See Also
 
-- [var authorName: String](hkcdadocument/authorname.md)
+### Accessing the Document’s Data
+- [var authorName: String](./authorname.md)
   The document’s author.
-- [var custodianName: String](hkcdadocument/custodianname.md)
+- [var custodianName: String](./custodianname.md)
   The name of the organization responsible for the document.
-- [var documentData: Data?](hkcdadocument/documentdata.md)
+- [var documentData: Data?](./documentdata.md)
   The CDA document stored as XML data.
-- [var patientName: String](hkcdadocument/patientname.md)
+- [var patientName: String](./patientname.md)
   The patient’s name.
 
 

@@ -1,7 +1,8 @@
 # Color table size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 16-bit integer that indicates the number of colors in the following color array.
 
@@ -11,15 +12,16 @@ This is a zero-relative value; setting this field to `0` means that there is one
 
 ## See Also
 
-- [Size](color_table_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this color table atom.
-- [Type](color_table_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Color table seed](color_table_atom/color_table_seed.md)
+- [Color table seed](./color_table_seed.md)
   A 32-bit integer.
-- [Color table flags](color_table_atom/color_table_flags.md)
+- [Color table flags](./color_table_flags.md)
   A 16-bit integer.
-- [Color array](color_table_atom/color_array.md)
+- [Color array](./color_array.md)
   An array of colors.
 
 

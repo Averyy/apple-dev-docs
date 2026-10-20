@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system definition of the WebSocket protocol.
 
@@ -22,7 +23,8 @@ static let definition: NWProtocolDefinition
 
 ## See Also
 
-- [NWProtocolWebSocket.Options](nwprotocolwebsocket/options.md)
+### Creating WebSocket Connections
+- [NWProtocolWebSocket.Options](./options.md)
   A container of options for configuring how WebSocket is used on a connection.
 
 

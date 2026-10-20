@@ -1,7 +1,8 @@
 # resolved(from:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves a transient entity from an exported `IntentFile` through the entity type’s `Transferable` conformance.
 
@@ -28,7 +29,7 @@ The resolved transient entity.
 
 Use this to verify the import direction — that an `IntentFile` produced by `AnyTransientAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into a transient entity through the same pipeline used at runtime.
 
-> **Note**: If the entity type does not support the file’s content type.
+> **Throws**: If the entity type does not support the file’s content type.
 
 ```swift
 let file = try await transientEntity.exported(as: .json)

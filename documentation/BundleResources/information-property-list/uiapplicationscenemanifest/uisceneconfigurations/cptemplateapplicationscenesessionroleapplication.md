@@ -1,7 +1,8 @@
 # CPTemplateApplicationSceneSessionRoleApplication
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Configurations for scenes that you use to display template content on a CarPlay-enabled vehicle screen.
 
@@ -9,32 +10,34 @@ Configurations for scenes that you use to display template content on a CarPlay-
 - iOS 13.0+
 - iPadOS 13.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `CPTemplateApplicationSceneSessionRoleApplication`
+- **Type**: array of dictionary 
 
 #### Discussion
 
 Use this key to specify the scene configuration you use when displaying content on a CarPlay-enabled vehicle screen.
 
-For more information, see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/carplay/displaying-content-in-carplay).
+For more information, see [Displaying Content in CarPlay](../../../../CarPlay/displaying-content-in-carplay.md).
 
 ## Topics
 
 ### Configuration name
-- [UISceneConfigurationName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneconfigurationname.md)
+- [UISceneConfigurationName](./cptemplateapplicationscenesessionroleapplication/uisceneconfigurationname.md)
   The app-specific name you use to identify the scene.
 ### Scene objects
-- [UISceneClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneclassname.md)
+- [UISceneClassName](./cptemplateapplicationscenesessionroleapplication/uisceneclassname.md)
   The name of the scene class you want UIKit to instantiate.
-- [UISceneDelegateClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname.md)
+- [UISceneDelegateClassName](./cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname.md)
   The name of the app-specific class you want UIKit to instantiate and use as the delegate of your app’s main scene.
 
 ## See Also
 
-- [CPTemplateApplicationDashboardSceneSessionRoleApplication](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication.md)
+### CarPlay scene roles
+- [CPTemplateApplicationDashboardSceneSessionRoleApplication](./cptemplateapplicationdashboardscenesessionroleapplication.md)
   Configurations for scenes that you use to display navigation content on a CarPlay Dashboard.
-- [CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
+- [CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication](./cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
   Configurations for scenes you use to display navigation content on a CarPlay Instrument Cluster.
 
 

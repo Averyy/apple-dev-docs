@@ -1,7 +1,8 @@
 # JSONReadingError
 
 **Framework**: TabularData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A JSON reading error.
 
@@ -23,40 +24,41 @@ enum JSONReadingError
 ## Topics
 
 ### Getting Error Information
-- [case failedToParse(row: Int, column: String, type: JSONType, contents: String)](jsonreadingerror/failedtoparse(row:column:type:contents:).md)
+- [case failedToParse(row: Int, column: String, type: JSONType, contents: String)](./jsonreadingerror/failedtoparse%28row,column,type,contents%29.md)
   An error that occurs when a JSON value fails to parse as the specified type.
-- [JSONReadingError.incompatibleValues(column:)](jsonreadingerror/incompatiblevalues(column:).md)
+- [JSONReadingError.incompatibleValues(column:)](./jsonreadingerror/incompatiblevalues%28column%29.md)
   An error that occurs when the JSON data contains incompatible values in a column.
-- [JSONReadingError.unsupportedStructure](jsonreadingerror/unsupportedstructure.md)
+- [JSONReadingError.unsupportedStructure](./jsonreadingerror/unsupportedstructure.md)
   An error that occurs when the JSON structure is incompatible with a data frame.
-- [case wrongType(row: Int, column: String, expectedType: JSONType, value: any Sendable)](jsonreadingerror/wrongtype(row:column:expectedtype:value:).md)
+- [case wrongType(row: Int, column: String, expectedType: JSONType, value: any Sendable)](./jsonreadingerror/wrongtype%28row,column,expectedtype,value%29.md)
   An error that occurs when the JSON data contains a value of the wrong type for a type-constrained column.
 ### Default Implementations
-- [CustomStringConvertible Implementations](jsonreadingerror/customstringconvertible-implementations.md)
-- [LocalizedError Implementations](jsonreadingerror/localizederror-implementations.md)
+- [CustomStringConvertible Implementations](./jsonreadingerror/customstringconvertible-implementations.md)
+- [LocalizedError Implementations](./jsonreadingerror/localizederror-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CSVReadingError](csvreadingerror.md)
+### Errors
+- [enum CSVReadingError](./csvreadingerror.md)
   A CSV reading error.
-- [enum CSVWritingError](csvwritingerror.md)
+- [enum CSVWritingError](./csvwritingerror.md)
   A CSV writing error.
-- [struct ColumnDecodingError](columndecodingerror.md)
+- [struct ColumnDecodingError](./columndecodingerror.md)
   A column decoding error.
-- [struct ColumnEncodingError](columnencodingerror.md)
+- [struct ColumnEncodingError](./columnencodingerror.md)
   A column encoding error.
-- [enum SFrameReadingError](sframereadingerror.md)
+- [enum SFrameReadingError](./sframereadingerror.md)
   An error when reading a Turi Create scalable data frame.
 
 

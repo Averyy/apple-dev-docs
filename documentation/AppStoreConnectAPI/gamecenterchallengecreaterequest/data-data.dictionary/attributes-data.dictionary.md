@@ -1,7 +1,8 @@
 # GameCenterChallengeCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new challenge resource.
 
@@ -10,13 +11,13 @@ The attributes you set that describe the new challenge resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `challengeType` (string) *(required)*
+- `challengeType` (string) *(required)*: **Allowed Values**: `LEADERBOARD`
 - `referenceName` (string) *(required)*
 - `repeatable` (boolean)
 - `vendorIdentifier` (string) *(required)*

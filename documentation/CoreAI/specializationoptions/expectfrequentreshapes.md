@@ -1,7 +1,8 @@
 # expectFrequentReshapes
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Setting to allow more optimal specialization if the model performs frequent reshapes based on usage
 
@@ -20,7 +21,7 @@ var expectFrequentReshapes: Bool
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 
 ---

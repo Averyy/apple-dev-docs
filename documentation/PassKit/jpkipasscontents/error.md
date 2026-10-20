@@ -1,7 +1,8 @@
 # JPKIPassContents.Error
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines a set of possible errors.
 
@@ -18,30 +19,30 @@ enum Error
 ## Topics
 
 ### Error cases
-- [JPKIPassContents.Error.appNotForeground](jpkipasscontents/error/appnotforeground.md)
+- [JPKIPassContents.Error.appNotForeground](./error/appnotforeground.md)
   The calling app isn’t in the foreground.
-- [JPKIPassContents.Error.biometricUnavailable](jpkipasscontents/error/biometricunavailable.md)
+- [JPKIPassContents.Error.biometricUnavailable](./error/biometricunavailable.md)
   Biometric authorization isn’t available.
-- [JPKIPassContents.Error.incorrectUserAuthentication](jpkipasscontents/error/incorrectuserauthentication.md)
+- [JPKIPassContents.Error.incorrectUserAuthentication](./error/incorrectuserauthentication.md)
   The provided credential authentication request wasn’t accepted.
-- [JPKIPassContents.Error.invalidInput](jpkipasscontents/error/invalidinput.md)
+- [JPKIPassContents.Error.invalidInput](./error/invalidinput.md)
   The PIN or password doesn’t meet the specified conditions.
-- [JPKIPassContents.Error.resourceNotAvailable](jpkipasscontents/error/resourcenotavailable.md)
+- [JPKIPassContents.Error.resourceNotAvailable](./error/resourcenotavailable.md)
   The system resouce is currently unavailable.
 ### Enumeration Cases
-- [JPKIPassContents.Error.biometricAuthenticationFailed(laError:)](jpkipasscontents/error/biometricauthenticationfailed(laerror:).md)
+- [JPKIPassContents.Error.biometricAuthenticationFailed(laError:)](./error/biometricauthenticationfailed%28laerror%29.md)
   Biometric authorization failed
-- [JPKIPassContents.Error.unknownError](jpkipasscontents/error/unknownerror.md)
+- [JPKIPassContents.Error.unknownError](./error/unknownerror.md)
   Unknown error occurred
-- [JPKIPassContents.Error.userAuthenticationFailed(remainingRetryAttempts:)](jpkipasscontents/error/userauthenticationfailed(remainingretryattempts:).md)
+- [JPKIPassContents.Error.userAuthenticationFailed(remainingRetryAttempts:)](./error/userauthenticationfailed%28remainingretryattempts%29.md)
   Credential authentication request provided was rejected.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

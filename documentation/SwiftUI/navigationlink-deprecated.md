@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -8,37 +9,37 @@ Review symbols that are no longer in active development, and their recommended r
 
 Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
-For information about updating your use of navigation symbols, see [`Migrating to new navigation types`](migrating-to-new-navigation-types.md).
+For information about updating your use of navigation symbols, see [Migrating to new navigation types](./migrating-to-new-navigation-types.md).
 
 ## Topics
 
 ### Creating links with content builders
-- [init(_:isActive:destination:)](navigationlink/init(_:isactive:destination:).md)
+- [init(_:isActive:destination:)](./navigationlink/init%28_,isactive,destination%29.md)
   Creates a navigation link that presents a destination view when active, with a text label that the link generates from a localized string key.
-- [init(isActive: Binding<Bool>, destination: () -> Destination, label: () -> Label)](navigationlink/init(isactive:destination:label:).md)
+- [init(isActive: Binding<Bool>, destination: () -> Destination, label: () -> Label)](./navigationlink/init%28isactive,destination,label%29.md)
   Creates a navigation link that presents the destination view when active.
-- [init(_:tag:selection:destination:)](navigationlink/init(_:tag:selection:destination:).md)
+- [init(_:tag:selection:destination:)](./navigationlink/init%28_,tag,selection,destination%29.md)
   Creates a navigation link that presents a destination view when a bound selection variable matches a value you provide, using a text label that the link generates from a title string.
-- [init<V>(tag: V, selection: Binding<V?>, destination: () -> Destination, label: () -> Label)](navigationlink/init(tag:selection:destination:label:).md)
+- [init<V>(tag: V, selection: Binding<V?>, destination: () -> Destination, label: () -> Label)](./navigationlink/init%28tag,selection,destination,label%29.md)
   Creates a navigation link that presents the destination view when a bound selection variable equals a given tag value.
 ### Creating links for WatchKit
-- [init(destinationName: String, isActive: Binding<Bool>, label: () -> Label)](navigationlink/init(destinationname:isactive:label:).md)
+- [init(destinationName: String, isActive: Binding<Bool>, label: () -> Label)](./navigationlink/init%28destinationname,isactive,label%29.md)
   Creates a navigation link that presents a view from a WatchKit storyboard when active.
-- [init<V>(destinationName: String, tag: V, selection: Binding<V?>, label: () -> Label)](navigationlink/init(destinationname:tag:selection:label:).md)
+- [init<V>(destinationName: String, tag: V, selection: Binding<V?>, label: () -> Label)](./navigationlink/init%28destinationname,tag,selection,label%29.md)
   Creates a navigation link that presents a view from a WatchKit storyboard when a bound selection variable matches a value you provide.
-- [init(destinationName: String, label: () -> Label)](navigationlink/init(destinationname:label:).md)
+- [init(destinationName: String, label: () -> Label)](./navigationlink/init%28destinationname,label%29.md)
   Creates a navigation link that presents a view from a WatchKit storyboard.
 ### Creating links with view arguments
-- [init(_:destination:isActive:)](navigationlink/init(_:destination:isactive:).md)
+- [init(_:destination:isActive:)](./navigationlink/init%28_,destination,isactive%29.md)
   Creates a navigation link that presents a destination view when active, with a text label that the link generates from a localized string key.
-- [init(destination: Destination, isActive: Binding<Bool>, label: () -> Label)](navigationlink/init(destination:isactive:label:).md)
+- [init(destination: Destination, isActive: Binding<Bool>, label: () -> Label)](./navigationlink/init%28destination,isactive,label%29.md)
   Creates a navigation link that presents the destination view when active.
-- [init(_:destination:tag:selection:)](navigationlink/init(_:destination:tag:selection:).md)
+- [init(_:destination:tag:selection:)](./navigationlink/init%28_,destination,tag,selection%29.md)
   Creates a navigation link that presents a destination view when a bound selection variable matches a value you provide, using a text label that the link generates from a title string.
-- [init<V>(destination: Destination, tag: V, selection: Binding<V?>, label: () -> Label)](navigationlink/init(destination:tag:selection:label:).md)
+- [init<V>(destination: Destination, tag: V, selection: Binding<V?>, label: () -> Label)](./navigationlink/init%28destination,tag,selection,label%29.md)
   Creates a navigation link that presents the destination view when a bound selection variable equals a given tag value.
 ### Deprecated initializers
-- [init(destination:label:)](navigationlink/init(destination:label:).md)
+- [init(destination:label:)](./navigationlink/init%28destination,label%29.md)
   Creates a navigation link that presents the destination view.
 
 

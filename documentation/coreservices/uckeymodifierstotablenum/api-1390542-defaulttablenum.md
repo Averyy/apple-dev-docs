@@ -1,7 +1,8 @@
 # defaultTableNum
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the table number to use for modifier combinations that are outside of the range included in the `tableNum` field.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the table number to use for modifier comb
 
 ```swift
 var defaultTableNum: UInt16
+```
+
+```c
+UInt16 defaultTableNum;
 ```
 
 

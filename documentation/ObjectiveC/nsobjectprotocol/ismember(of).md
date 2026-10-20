@@ -2,18 +2,19 @@
 
 **Framework**: Objective-C Runtime  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the receiver is an instance of a given class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,17 @@ Returns a Boolean value that indicates whether the receiver is an instance of a 
 func isMember(of aClass: AnyClass) -> Bool
 ```
 
+```objc
+- (BOOL) isMemberOfClass:(Class) aClass;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the receiver is an instance of `aClass`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the receiver is an instance of `aClass`, otherwise [`NO`](../no.md).
 
 #### Discussion
 
-For example, in this code, [`isMember(of:)`](nsobjectprotocol/ismember(of:).md) would return [`NO`](no.md):
+For example, in this code, [`isMember(of:)`](./ismember%28of%29.md) would return [`NO`](../no.md):
 
 ```objc
 NSMutableData *myData = [NSMutableData dataWithCapacity:30];
@@ -44,11 +49,12 @@ Class objects may be compiler-created objects but they still support the concept
 
 ## See Also
 
-- [func isKind(of: AnyClass) -> Bool](nsobjectprotocol/iskind(of:).md)
+### Testing Object Inheritance, Behavior, and Conformance
+- [func isKind(of: AnyClass) -> Bool](./iskind%28of%29.md)
   Returns a Boolean value that indicates whether the receiver is an instance of given class or an instance of any class that inherits from that class.
-- [func responds(to: Selector!) -> Bool](nsobjectprotocol/responds(to:).md)
+- [func responds(to: Selector!) -> Bool](./responds%28to%29.md)
   Returns a Boolean value that indicates whether the receiver implements or inherits a method that can respond to a specified message.
-- [func conforms(to: Protocol) -> Bool](nsobjectprotocol/conforms(to:).md)
+- [func conforms(to: Protocol) -> Bool](./conforms%28to%29.md)
   Returns a Boolean value that indicates whether the receiver conforms to a given protocol.
 
 

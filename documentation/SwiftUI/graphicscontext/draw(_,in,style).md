@@ -1,7 +1,8 @@
 # draw(_:in:style:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a resolved image into the context, using the specified rectangle as a layout frame.
 
@@ -20,21 +21,28 @@ Draws a resolved image into the context, using the specified rectangle as a layo
 func draw(_ image: GraphicsContext.ResolvedImage, in rect: CGRect, style: FillStyle = FillStyle())
 ```
 
+**Other overloads**:
+
+```swift
+func draw(_ image: Image, in rect: CGRect, style: FillStyle = FillStyle())
+```
+
 #### Discussion
 
 The current context state defines the full drawing operation. For example, the current transformation and clip shapes affect how SwiftUI draws the image.
 
 ## Parameters
 
-- `image`: The [`GraphicsContext.ResolvedImage`](graphicscontext/resolvedimage.md) to draw. Get a resolved image from an [`Image`](image.md) by calling [`resolve(_:)`](graphicscontext/resolve(_:)-898z6.md). Alternatively, you can call [`draw(_:in:style:)`](graphicscontext/draw(_:in:style:)-blhz.md) with an [`Image`](image.md), and that method performs the resolution automatically.
+- `image`: The [`GraphicsContext.ResolvedImage`](./resolvedimage.md) to draw. Get a resolved image from an [`Image`](../image.md) by calling [`resolve(_:)`](./resolve%28_%29-898z6.md). Alternatively, you can call [`draw(_:in:style:)`](./draw%28_,in,style%29-blhz.md) with an [`Image`](../image.md), and that method performs the resolution automatically.
 - `rect`: The rectangle in the current user space to draw the image in.
 - `style`: A fill style to use when rasterizing the image.
 
 ## See Also
 
-- [func draw(_:in:)](graphicscontext/draw(_:in:).md)
+### Drawing images, text, and views
+- [func draw(_:in:)](./draw%28_,in%29.md)
   Draws a resolved symbol into the context, using the specified rectangle as a layout frame.
-- [func draw(_:at:anchor:)](graphicscontext/draw(_:at:anchor:).md)
+- [func draw(_:at:anchor:)](./draw%28_,at,anchor%29.md)
   Draws a resolved image into the context, aligning an anchor within the image to a point in the context.
 
 

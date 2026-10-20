@@ -1,7 +1,8 @@
 # BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a background asset upload file resource linked to a specific background asset version.
 
@@ -10,14 +11,14 @@ The type and ID of a background asset upload file resource linked to a specific 
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `backgroundAssetUploadFiles`
 
 
 ---

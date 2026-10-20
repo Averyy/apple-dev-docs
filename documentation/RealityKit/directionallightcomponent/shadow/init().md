@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a directional light shadow using default values.
 
@@ -21,11 +22,12 @@ init()
 
 ## See Also
 
-- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
+### Creating the shadow
+- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](./init%28shadowprojection,depthbias,cullmode%29.md)
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
-- [init(maximumDistance: Float, depthBias: Float)](directionallightcomponent/shadow/init(maximumdistance:depthbias:).md)
+- [init(maximumDistance: Float, depthBias: Float)](./init%28maximumdistance,depthbias%29.md)
   Creates a directional light shadow with a maximum distance and depth bias.
-- [init(layers: RenderLayer.Set?)](directionallightcomponent/shadow/init(layers:).md)
+- [init(layers: RenderLayer.Set?)](./init%28layers%29.md)
   Creates a directional light shadow that accepts shadow casters from the specified layers.
 
 

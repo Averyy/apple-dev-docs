@@ -1,7 +1,8 @@
 # bytesInboundCount
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of inbound bytes received from the flow.
 
@@ -18,23 +19,28 @@ The number of inbound bytes received from the flow.
 var bytesInboundCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger bytesInboundCount;
+```
+
 #### Discussion
 
-This property is only non-zero when the report [`event`](nefilterreport/event-swift.property.md) is [`NEFilterReport.Event.flowClosed`](nefilterreport/event-swift.enum/flowclosed.md).
+This property is only non-zero when the report [`event`](./event-swift.property.md) is [`NEFilterReport.Event.flowClosed`](./event-swift.enum/flowclosed.md).
 
 ## See Also
 
-- [var flow: NEFilterFlow?](nefilterreport/flow.md)
+### Getting report properties
+- [var flow: NEFilterFlow?](./flow.md)
   The flow on which the associated action was taken.
-- [var action: NEFilterAction](nefilterreport/action.md)
+- [var action: NEFilterAction](./action.md)
   The action taken on the reported flow.
-- [enum NEFilterAction](nefilteraction.md)
+- [enum NEFilterAction](../nefilteraction.md)
   The actions a data provider can take on a filter flow.
-- [var event: NEFilterReport.Event](nefilterreport/event-swift.property.md)
+- [var event: NEFilterReport.Event](./event-swift.property.md)
   The type of event indicated by this report.
-- [NEFilterReport.Event](nefilterreport/event-swift.enum.md)
+- [NEFilterReport.Event](./event-swift.enum.md)
   A type that represents the kind of event indicated by a report.
-- [var bytesOutboundCount: Int](nefilterreport/bytesoutboundcount.md)
+- [var bytesOutboundCount: Int](./bytesoutboundcount.md)
   The number of outbound bytes sent on the flow.
 
 

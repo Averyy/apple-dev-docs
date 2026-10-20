@@ -1,7 +1,8 @@
 # disconnect()
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Manually disconnects and closes the data channel.
 
@@ -16,7 +17,7 @@ func disconnect()
 
 #### Discussion
 
-Sets the [`channelStatus`](foveatedstreamingsession/messagechannel/channelstatus-swift.property.md) to [`FoveatedStreamingSession.MessageChannel.ChannelStatus.closed`](foveatedstreamingsession/messagechannel/channelstatus-swift.enum/closed.md).
+Sets the [`channelStatus`](./channelstatus-swift.property.md) to [`FoveatedStreamingSession.MessageChannel.ChannelStatus.closed`](./channelstatus-swift.enum/closed.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # ImageAnalyzer.Configuration
 
 **Framework**: VisionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration that specifies the types of items and locales that the image analyzer recognizes.
 
@@ -20,23 +21,23 @@ struct Configuration
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
 #### Overview
 
-Create an `ImageAnalyzer.Configuration` structure to specify the criteria when analyzing an image. Then pass the configuration object to the `ImageAnalyzer` [`analyze(_:configuration:)`](imageanalyzer/analyze(_:configuration:).md) or similar method to find the items you want.
+Create an `ImageAnalyzer.Configuration` structure to specify the criteria when analyzing an image. Then pass the configuration object to the `ImageAnalyzer` [`analyze(_:configuration:)`](./analyze%28_,configuration%29.md) or similar method to find the items you want.
 
 ## Topics
 
 ### Creating configurations
-- [init(ImageAnalyzer.AnalysisTypes)](imageanalyzer/configuration/init(_:).md)
+- [init(ImageAnalyzer.AnalysisTypes)](./configuration/init%28_%29.md)
   Creates a configuration that an image analyzer uses to find items.
-- [let analysisTypes: ImageAnalyzer.AnalysisTypes](imageanalyzer/configuration/analysistypes.md)
+- [let analysisTypes: ImageAnalyzer.AnalysisTypes](./configuration/analysistypes.md)
   The types of items that the image analyzer looks for in the image.
-- [ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes.md)
+- [ImageAnalyzer.AnalysisTypes](./analysistypes.md)
   The types of items that an image analyzer looks for in an image.
 ### Recognizing languages
-- [var locales: [String]](imageanalyzer/configuration/locales.md)
+- [var locales: [String]](./configuration/locales.md)
   The languages to use in text items that the image analyzer recognizes.
 
 

@@ -1,7 +1,8 @@
 # root
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A skeletal joint that’s the root of all other joints.
 
@@ -15,25 +16,30 @@ A skeletal joint that’s the root of all other joints.
 static let root: ARSkeleton.JointName
 ```
 
+```c
+extern ARSkeletonJointName const ARSkeletonJointNameRoot;
+```
+
 #### Discussion
 
 The root skeletal joint is at the hip, and is located at the origin of its associated body anchor.
 
 ## See Also
 
-- [static let head: ARSkeleton.JointName](arskeleton/jointname/head.md)
+### Identifying Joints
+- [static let head: ARSkeleton.JointName](./head.md)
   A skeletal joint that ARKit tracks representing the head.
-- [static let leftFoot: ARSkeleton.JointName](arskeleton/jointname/leftfoot.md)
+- [static let leftFoot: ARSkeleton.JointName](./leftfoot.md)
   A skeletal joint that ARKit tracks representing the left foot.
-- [static let leftHand: ARSkeleton.JointName](arskeleton/jointname/lefthand.md)
+- [static let leftHand: ARSkeleton.JointName](./lefthand.md)
   A skeletal joint that ARKit tracks representing the left hand.
-- [static let leftShoulder: ARSkeleton.JointName](arskeleton/jointname/leftshoulder.md)
+- [static let leftShoulder: ARSkeleton.JointName](./leftshoulder.md)
   A skeletal joint that ARKit tracks representing the left shoulder.
-- [static let rightFoot: ARSkeleton.JointName](arskeleton/jointname/rightfoot.md)
+- [static let rightFoot: ARSkeleton.JointName](./rightfoot.md)
   A skeletal joint that ARKit tracks representing the right foot.
-- [static let rightHand: ARSkeleton.JointName](arskeleton/jointname/righthand.md)
+- [static let rightHand: ARSkeleton.JointName](./righthand.md)
   A skeletal joint that ARKit tracks representing the right hand.
-- [static let rightShoulder: ARSkeleton.JointName](arskeleton/jointname/rightshoulder.md)
+- [static let rightShoulder: ARSkeleton.JointName](./rightshoulder.md)
   A skeletal joint that ARKit tracks representing the right shoulder.
 
 

@@ -1,7 +1,8 @@
 # UIPointerShape.horizontalBeam(length:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pointer morphs into a horizontal beam using the specified length.
 
@@ -9,7 +10,7 @@ The pointer morphs into a horizontal beam using the specified length.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ case horizontalBeam(length: CGFloat)
 
 ## See Also
 
-- [UIPointerShape.verticalBeam(length:)](uipointershape-swift.enum/verticalbeam(length:).md)
+### Specifying pointer shapes
+- [UIPointerShape.verticalBeam(length:)](./verticalbeam%28length%29.md)
   The pointer morphs into a vertical beam using the specified length.
-- [UIPointerShape.path(_:)](uipointershape-swift.enum/path(_:).md)
+- [UIPointerShape.path(_:)](./path%28_%29.md)
   The pointer morphs into the given Bézier path.
-- [case roundedRect(CGRect, radius: CGFloat)](uipointershape-swift.enum/roundedrect(_:radius:).md)
+- [case roundedRect(CGRect, radius: CGFloat)](./roundedrect%28_,radius%29.md)
   The pointer morphs into a rounded rectangle using the provided corner radius.
 
 

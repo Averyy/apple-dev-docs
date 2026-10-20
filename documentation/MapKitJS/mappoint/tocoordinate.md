@@ -1,7 +1,8 @@
 # toCoordinate()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a map point into a coordinate with latitude and longitude.
 
@@ -10,7 +11,7 @@ Converts a map point into a coordinate with latitude and longitude.
 
 ## Declaration
 
-```swift
+```
 toCoordinate(): Coordinate;
 ```
 
@@ -20,9 +21,10 @@ A coordinate that contains the latitude and longitude corresponding to the locat
 
 ## See Also
 
-- [copy()](mappoint/copy.md)
+### Working with map points
+- [copy()](./copy.md)
   Returns a copy of the location.
-- [equals(anotherPoint)](mappoint/equals.md)
+- [equals(anotherPoint)](./equals.md)
   Indicates whether two map points are equal.
 
 

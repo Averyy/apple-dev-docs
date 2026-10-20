@@ -1,7 +1,8 @@
 # writeJSON(to:options:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a JSON file with the contents of the data frame.
 
@@ -23,7 +24,7 @@ func writeJSON(to url: URL, options: JSONWritingOptions = .init()) throws
 ## Parameters
 
 - `url`: A location URL in the file system where the method saves the JSON file.
-- `options`: A [`JSONWritingOptions`](jsonwritingoptions.md) instance.
+- `options`: A [`JSONWritingOptions`](../jsonwritingoptions.md) instance.
 
 
 ---

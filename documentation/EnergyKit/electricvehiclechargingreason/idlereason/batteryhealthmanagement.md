@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.IdleReason.batteryHealthManagement
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates charging pauses for battery health management.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,15 +19,16 @@ case batteryHealthManagement
 
 ## See Also
 
-- [ElectricVehicleChargingReason.IdleReason.chargerFault](electricvehiclechargingreason/idlereason/chargerfault.md)
+### System conditions
+- [ElectricVehicleChargingReason.IdleReason.chargerFault](./chargerfault.md)
   A reason that indicates charging stops due to a charger fault.
-- [ElectricVehicleChargingReason.IdleReason.demandResponseActive](electricvehiclechargingreason/idlereason/demandresponseactive.md)
+- [ElectricVehicleChargingReason.IdleReason.demandResponseActive](./demandresponseactive.md)
   A reason that indicates charging pauses due to an active utility-demand response event.
-- [ElectricVehicleChargingReason.IdleReason.batteryThermalManagement](electricvehiclechargingreason/idlereason/batterythermalmanagement.md)
+- [ElectricVehicleChargingReason.IdleReason.batteryThermalManagement](./batterythermalmanagement.md)
   A reason that indicates charging pauses for battery thermal management.
-- [ElectricVehicleChargingReason.IdleReason.insufficientPower](electricvehiclechargingreason/idlereason/insufficientpower.md)
+- [ElectricVehicleChargingReason.IdleReason.insufficientPower](./insufficientpower.md)
   A reason that indicates charging stops because insufficient power is available.
-- [ElectricVehicleChargingReason.IdleReason.loadBalancing](electricvehiclechargingreason/idlereason/loadbalancing.md)
+- [ElectricVehicleChargingReason.IdleReason.loadBalancing](./loadbalancing.md)
   A reason that indicates charging pauses due to load balancing with other electrical devices.
 
 

@@ -1,7 +1,8 @@
 # BEAudioSession
 
 **Framework**: BrowserEngineCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that wraps an AV audio session to scope the browser app’s audio session control.
 
@@ -15,6 +16,10 @@ An object that wraps an AV audio session to scope the browser app’s audio sess
 class BEAudioSession
 ```
 
+```objc
+@interface BEAudioSession : NSObject
+```
+
 #### Overview
 
 This class provides a scoped interface that limits a browser-app extension’s access to the audio session. For example, an extension process can query available outputs and communicate a preferred output to the system, while the browser app’s main process retains full control over audio session configuration.
@@ -22,31 +27,32 @@ This class provides a scoped interface that limits a browser-app extension’s a
 ## Topics
 
 ### Initializing an audio session
-- [init(audioSession: AVAudioSession)](beaudiosession-6b7ig/init(audiosession:).md)
+- [init(audioSession: AVAudioSession)](./beaudiosession-6b7ig/init%28audiosession%29.md)
   Initializes a browser engine audio session.
 ### Managing audio output
-- [var availableOutputs: [AVAudioSessionPortDescription]?](beaudiosession-6b7ig/availableoutputs.md)
+- [var availableOutputs: [AVAudioSessionPortDescription]?](./beaudiosession-6b7ig/availableoutputs.md)
   An array of output ports available for audio routing in the current session.
-- [var preferredOutput: AVAudioSessionPortDescription?](beaudiosession-6b7ig/preferredoutput.md)
+- [var preferredOutput: AVAudioSessionPortDescription?](./beaudiosession-6b7ig/preferredoutput.md)
   The output port the person sets as their preference.
-- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](beaudiosession-6b7ig/setpreferredoutput(_:).md)
+- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](./beaudiosession-6b7ig/setpreferredoutput%28_%29.md)
   Sets the preferred audio output port for the session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class BEAudioSession](beaudiosession-7bb2q.md)
+### Audio preferences
+- [class BEAudioSession](./beaudiosession-7bb2q.md)
   An object that wraps an AV audio session to scope the browser app’s audio session control.
 
 

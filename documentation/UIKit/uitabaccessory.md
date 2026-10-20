@@ -1,7 +1,8 @@
 # UITabAccessory
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -15,57 +16,62 @@
 class UITabAccessory
 ```
 
+```objc
+@interface UITabAccessory : NSObject
+```
+
 ## Topics
 
 ### Creating a tab accessory
-- [init(contentView: UIView)](uitabaccessory/init(contentview:).md)
+- [init(contentView: UIView)](./uitabaccessory/init%28contentview%29.md)
   Creates a new accessory with the specified content view.
 ### Accessing the content view
-- [var contentView: UIView](uitabaccessory/contentview.md)
+- [var contentView: UIView](./uitabaccessory/contentview.md)
   The content view of the accessory.
 ### Specifying the tab accessory environment
-- [UITabAccessory.Environment](uitabaccessory/environment.md)
+- [UITabAccessory.Environment](./uitabaccessory/environment.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+### Container view controllers
+- [Creating a custom container view controller](./creating-a-custom-container-view-controller.md)
   Create a composite interface by combining content from one or more view controllers with other custom views.
-- [class UISplitViewController](uisplitviewcontroller.md)
+- [class UISplitViewController](./uisplitviewcontroller.md)
   A container view controller that implements a hierarchical interface.
-- [class UINavigationController](uinavigationcontroller.md)
+- [class UINavigationController](./uinavigationcontroller.md)
   A container view controller that defines a stack-based scheme for navigating hierarchical content.
-- [class UINavigationBar](uinavigationbar.md)
+- [class UINavigationBar](./uinavigationbar.md)
   A region that displays the title and controls provided by navigation items.
-- [class UINavigationItem](uinavigationitem.md)
+- [class UINavigationItem](./uinavigationitem.md)
   The items that a navigation bar displays when the associated view controller is visible.
-- [class UITabBarController](uitabbarcontroller.md)
+- [class UITabBarController](./uitabbarcontroller.md)
   A container view controller that manages a multiselection interface, where the selection determines which child view controller to display.
-- [class UITabBar](uitabbar.md)
+- [class UITabBar](./uitabbar.md)
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
-- [class UITabBarItem](uitabbaritem.md)
+- [class UITabBarItem](./uitabbaritem.md)
   An object that describes an item in a tab bar.
-- [class UITab](uitab.md)
+- [class UITab](./uitab.md)
   An object that manages a tab in a tab bar.
-- [class UISearchTab](uisearchtab.md)
+- [class UISearchTab](./uisearchtab.md)
   A tab subclass that represents the system’s search tab.
-- [class UITabGroup](uitabgroup.md)
+- [class UITabGroup](./uitabgroup.md)
   An object that manages a collection of tab objects.
-- [class UIPageViewController](uipageviewcontroller.md)
+- [class UIPageViewController](./uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
-- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+- [class UIArrangementViewController](./uiarrangementviewcontroller.md)
   A view controller that dynamically lays out primary and secondary view controllers based on size class, orientation, and reserved regions.
 
 

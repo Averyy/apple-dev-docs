@@ -1,7 +1,8 @@
 # dateReceived
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time when the system received the message.
 
@@ -17,9 +18,14 @@ The date and time when the system received the message.
 var dateReceived: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * dateReceived;
+```
+
 ## See Also
 
-- [var sender: String?](ilcommunication/sender.md)
+### Accessing Data
+- [var sender: String?](./sender.md)
   The email address or phone number of the sender.
 
 

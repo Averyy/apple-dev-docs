@@ -1,7 +1,8 @@
 # BatchInstallConfirmationResult
 
 **Framework**: MarketplaceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that indicate whether the installation of multiple apps proceeds when a person interacts with an app installation button.
 
@@ -17,38 +18,39 @@ enum BatchInstallConfirmationResult
 
 #### Overview
 
-The [`BatchInstallConfiguration`](batchinstallconfiguration.md) initializer [`init(installs:confirmInstall:)`](batchinstallconfiguration/init(installs:confirminstall:).md)  takes a closure as a parameter that returns a case of this enumeration.
+The [`BatchInstallConfiguration`](./batchinstallconfiguration.md) initializer [`init(installs:confirmInstall:)`](./batchinstallconfiguration/init%28installs,confirminstall%29.md)  takes a closure as a parameter that returns a case of this enumeration.
 
-Your marketplace app supplies code in the closure that facilitates any prerequisites a person needs to satisfy to download the apps, such as completing a payment flow. The result of the prerequisites flow helps you determine the case to return, ([`BatchInstallConfirmationResult.cancel`](batchinstallconfirmationresult/cancel.md) or [`BatchInstallConfirmationResult.confirmed(installVerificationTokens:authenticationContext:)`](batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:).md).
+Your marketplace app supplies code in the closure that facilitates any prerequisites a person needs to satisfy to download the apps, such as completing a payment flow. The result of the prerequisites flow helps you determine the case to return, ([`BatchInstallConfirmationResult.cancel`](./batchinstallconfirmationresult/cancel.md) or [`BatchInstallConfirmationResult.confirmed(installVerificationTokens:authenticationContext:)`](./batchinstallconfirmationresult/confirmed%28installverificationtokens,authenticationcontext%29.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [BatchInstallConfirmationResult.cancel](batchinstallconfirmationresult/cancel.md)
-- [case confirmed(installVerificationTokens: [AppleItemID : String], authenticationContext: LAContext?)](batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:).md)
+- [BatchInstallConfirmationResult.cancel](./batchinstallconfirmationresult/cancel.md)
+- [case confirmed(installVerificationTokens: [AppleItemID : String], authenticationContext: LAContext?)](./batchinstallconfirmationresult/confirmed%28installverificationtokens,authenticationcontext%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ActionButton](actionbutton.md)
+### App distribution UI
+- [class ActionButton](./actionbutton.md)
   A user-interface element that enables a person to install, update, or launch apps by tapping the element.
-- [struct InstallMetadata](installmetadata.md)
+- [struct InstallMetadata](./installmetadata.md)
   Information about a specific app to install or update and the person who initiates it.
-- [struct InstallConfiguration](installconfiguration.md)
+- [struct InstallConfiguration](./installconfiguration.md)
   Information that describes a requested app installation or app update.
-- [enum InstallConfirmationResult](installconfirmationresult.md)
+- [enum InstallConfirmationResult](./installconfirmationresult.md)
   Options that indicate whether the installation of an app proceeds when a person interacts with an app installation button.
-- [struct BatchInstallConfiguration](batchinstallconfiguration.md)
+- [struct BatchInstallConfiguration](./batchinstallconfiguration.md)
   Information that describes multiple app installations or app updates.
-- [enum MarketplaceDisplayOption](marketplacedisplayoption.md)
+- [enum MarketplaceDisplayOption](./marketplacedisplayoption.md)
   The kinds of deep links that the operating system makes into your marketplace.
-- [protocol MarketplaceSceneDelegate](marketplacescenedelegate.md)
+- [protocol MarketplaceSceneDelegate](./marketplacescenedelegate.md)
   A delegate that handles deep link requests into your marketplace app.
 
 

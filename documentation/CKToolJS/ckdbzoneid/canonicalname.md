@@ -1,7 +1,8 @@
 # canonicalName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a zone within a database.
 
@@ -10,7 +11,7 @@ The unique identifier for a zone within a database.
 
 ## Declaration
 
-```swift
+```
 attribute string canonicalName;
 ```
 

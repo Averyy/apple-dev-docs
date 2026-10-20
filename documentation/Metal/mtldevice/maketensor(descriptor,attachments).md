@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a tensor with the specified descriptor and per-plane buffer backing storage.
@@ -20,13 +21,17 @@ Creates a tensor with the specified descriptor and per-plane buffer backing stor
 func makeTensor(descriptor: MTLTensorDescriptor, attachments: MTLTensorBufferAttachments) throws -> any MTLTensor
 ```
 
+```objc
+- (id<MTLTensor>) newTensorWithDescriptor:(MTLTensorDescriptor *) descriptor attachments:(MTLTensorBufferAttachments *) attachments error:(NSError **) error;
+```
+
 #### Return Value
 
 A tensor, or `nil` if validation fails.
 
 #### Discussion
 
-This method validates the constraints documented on [`MTLTensorDescriptor`](mtltensordescriptor.md) and [`MTLTensorBufferAttachments`](mtltensorbufferattachments.md), and additionally requires that every plane configured in `descriptor` (data plane and all auxiliary planes) has a corresponding entry in `attachments`.
+This method validates the constraints documented on [`MTLTensorDescriptor`](../mtltensordescriptor.md) and [`MTLTensorBufferAttachments`](../mtltensorbufferattachments.md), and additionally requires that every plane configured in `descriptor` (data plane and all auxiliary planes) has a corresponding entry in `attachments`.
 
 ## Parameters
 

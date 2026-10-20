@@ -1,7 +1,8 @@
 # roll
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The roll angle of a face in radians.
 
@@ -19,6 +20,10 @@ The roll angle of a face in radians.
 var roll: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSNumber * roll;
+```
+
 #### Discussion
 
 This value indicates the rotational angle of the face around the z-axis.
@@ -27,9 +32,10 @@ If the request doesn’t calculate the angle, the value is `nil`.
 
 ## See Also
 
-- [var yaw: NSNumber?](vnfaceobservation/yaw.md)
+### Determining Facial Orientation
+- [var yaw: NSNumber?](./yaw.md)
   The yaw angle of a face in radians.
-- [var pitch: NSNumber?](vnfaceobservation/pitch.md)
+- [var pitch: NSNumber?](./pitch.md)
   The pitch angle of a face in radians.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The list style that describes a platform’s default behavior and appearance for a list.
 
@@ -21,27 +22,30 @@ The list style that describes a platform’s default behavior and appearance for
 static var automatic: DefaultListStyle { get }
 ```
 
+Available when `Self` is `DefaultListStyle`.
+
 ## See Also
 
-- [static var bordered: BorderedListStyle](liststyle/bordered.md)
+### Getting built-in list styles
+- [static var bordered: BorderedListStyle](./bordered.md)
   The list style that describes the behavior and appearance of a list with standard border.
-- [static var carousel: CarouselListStyle](liststyle/carousel.md)
+- [static var carousel: CarouselListStyle](./carousel.md)
   The carousel list style.
-- [static var elliptical: EllipticalListStyle](liststyle/elliptical.md)
+- [static var elliptical: EllipticalListStyle](./elliptical.md)
   The list style that describes the behavior and appearance of an elliptical list.
-- [static var grouped: GroupedListStyle](liststyle/grouped.md)
+- [static var grouped: GroupedListStyle](./grouped.md)
   The list style that describes the behavior and appearance of a grouped list.
-- [static var inset: InsetListStyle](liststyle/inset.md)
+- [static var inset: InsetListStyle](./inset.md)
   The list style that describes the behavior and appearance of an inset list.
-- [static var insetGrouped: InsetGroupedListStyle](liststyle/insetgrouped.md)
+- [static var insetGrouped: InsetGroupedListStyle](./insetgrouped.md)
   The list style that describes the behavior and appearance of an inset grouped list.
-- [static var plain: PlainListStyle](liststyle/plain.md)
+- [static var plain: PlainListStyle](./plain.md)
   The list style that describes the behavior and appearance of a plain list.
-- [static var sidebar: SidebarListStyle](liststyle/sidebar.md)
+- [static var sidebar: SidebarListStyle](./sidebar.md)
   The list style that describes the behavior and appearance of a sidebar list.
-- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle](liststyle/bordered(alternatesrowbackgrounds:).md)
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle](./bordered%28alternatesrowbackgrounds%29.md)
   The list style that describes the behavior and appearance of a list with standard border.
-- [static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle](liststyle/inset(alternatesrowbackgrounds:).md)
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle](./inset%28alternatesrowbackgrounds%29.md)
   The list style that describes the behavior and appearance of an inset list with optional alternating row backgrounds.
 
 

@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,10 @@ var subtitle: LocalizedStringResource?
 
 ## See Also
 
-- [var title: LocalizedStringResource](displayrepresentation/title.md)
-- [var image: DisplayRepresentation.Image?](displayrepresentation/image-swift.property.md)
-- [DisplayRepresentation.Image](displayrepresentation/image-swift.struct.md)
+### Displaying the content
+- [var title: LocalizedStringResource](./title.md)
+- [var image: DisplayRepresentation.Image?](./image-swift.property.md)
+- [DisplayRepresentation.Image](./image-swift.struct.md)
 
 
 ---

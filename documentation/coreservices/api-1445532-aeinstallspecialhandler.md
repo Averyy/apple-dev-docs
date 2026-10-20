@@ -1,7 +1,8 @@
 # AEInstallSpecialHandler(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Installs a callback function in a special handler dispatch table.
 
@@ -14,20 +15,24 @@ Installs a callback function in a special handler dispatch table.
 func AEInstallSpecialHandler(_ functionClass: AEKeyword, _ handler: AEEventHandlerUPP!, _ isSysHandler: Bool) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AEInstallSpecialHandler(AEKeyword functionClass, AEEventHandlerUPP handler, Boolean isSysHandler);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
 An Apple event special handler dispatch table contains entries with a function class keyword, the address of the handler function that handles the Apple events indicated by the keyword, and a reference constant. Depending on which handlers you choose to install, a special handler dispatch table can have entries for any of the following:
 
 -  a predispatch handler (an Apple event handler that the Apple Event Manager calls immediately before it dispatches an Apple event) 
--  up to one each of the callback functions described in [`Apple Event Manager`](https://developer.apple.com/documentation/applicationservices/apple_event_manager) these functions, such as an object comparison function and an object-counting function, can be installed with `AEInstallSpecialHandler` or with the [`AEInstallObjectAccessor(_:_:_:_:_:)`](1447905-aeinstallobjectaccessor.md) function 
+-  up to one each of the callback functions described in [Apple Event Manager](../applicationservices/apple_event_manager.md) these functions, such as an object comparison function and an object-counting function, can be installed with `AEInstallSpecialHandler` or with the [`AEInstallObjectAccessor(_:_:_:_:_:)`](./api-1447905-aeinstallobjectaccessor.md) function 
 
-See also [`AEGetSpecialHandler(_:_:_:)`](1444274-aegetspecialhandler.md) and [`AERemoveSpecialHandler(_:_:_:)`](1447960-aeremovespecialhandler.md). 
+See also [`AEGetSpecialHandler(_:_:_:)`](./api-1444274-aegetspecialhandler.md) and [`AERemoveSpecialHandler(_:_:_:)`](./api-1447960-aeremovespecialhandler.md). 
 
-##### 1770210
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
@@ -37,15 +42,20 @@ Your application should not install a handler in a system dispatch table with th
 
 ## Parameters
 
-- `functionClass`: A value that specifies the type of handler to install. You can use any of the constants defined in [`Special Handler Callback Constants`](apple_events/1572726-special_handler_callback_constan.md). If there is already an entry in the specified special handler dispatch table for the value you specify in this parameter, it is replaced. See [`AEKeyword`](aekeyword.md).
-- `handler`: A universal procedure pointer to the special handler to install. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `functionClass`: A value that specifies the type of handler to install. You can use any of the constants defined in [Special Handler Callback Constants](./apple_events/api-1572726-special_handler_callback_constan.md).
+
+  If there is already an entry in the specified special handler dispatch table for the value you specify in this parameter, it is replaced.
+
+  See [`AEKeyword`](./aekeyword.md).
+- `handler`: A universal procedure pointer to the special handler to install. See [`AEEventHandlerUPP`](./aeeventhandlerupp.md).
 - `isSysHandler`: Specifies the special handler dispatch table to add the handler to. Pass `TRUE` to add the handler to the system special handler dispatch table or `FALSE` to add the handler to your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
 
 ## See Also
 
-- [func AEGetSpecialHandler(AEKeyword, UnsafeMutablePointer<AEEventHandlerUPP?>!, Bool) -> OSErr](1444274-aegetspecialhandler.md)
+### Managing Special Handler Dispatch Tables
+- [func AEGetSpecialHandler(AEKeyword, UnsafeMutablePointer<AEEventHandlerUPP?>!, Bool) -> OSErr](./api-1444274-aegetspecialhandler.md)
   Gets a specified handler from a special handler dispatch table.
-- [func AERemoveSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](1447960-aeremovespecialhandler.md)
+- [func AERemoveSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](./api-1447960-aeremovespecialhandler.md)
   Removes a handler from a special handler dispatch table.
 
 

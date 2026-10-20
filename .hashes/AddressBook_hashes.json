@@ -471,9 +471,8 @@
       "hash": "298aad1a43ac9ecf9fe486a64e8f88e3551823424aa93c0dc4761fe5e34e15af"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupaddmember(_:_:)": {
-      "etag": "W/\"dbd07984a4f9d30d9ee92a806a890730\"",
       "file_path": "documentation/AddressBook/abgroupaddmember(_,_).md",
-      "hash": "6126f2cc6d86c5109982bc2ab34f172120e035e5dfb35e71d039a0af710c8234"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/addressbook/abgroupaddmember(_:_:_:)": {
       "etag": "\"961b-65d55dfc4458c-df\"",
@@ -536,9 +535,8 @@
       "hash": "28f341cfcaeecbeab5dfb1841b553af3f71a14ca875c71b73fc2083584cb71e1"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupremovemember(_:_:)": {
-      "etag": "W/\"fede2c4a17a58e1722848c819d90cc5f\"",
       "file_path": "documentation/AddressBook/abgroupremovemember(_,_).md",
-      "hash": "e9b28d886262a248231a93a85f24d67720f7ffa2906192caf7f995a4e46dd452"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/addressbook/abgroupremovemember(_:_:_:)": {
       "etag": "\"938c-65d55dfcc237d-df\"",
@@ -686,9 +684,8 @@
       "hash": "09a82b84c85af1bd2effae3ee5e313567e1ced02bbd7cc1c540ae7bcfe7af886"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutable()": {
-      "etag": "W/\"bf5f4527c31a08ec5422d2c8e5dcd74e\"",
       "file_path": "documentation/AddressBook/abmultivaluecreatemutable().md",
-      "hash": "13b8f9aba10f8f5fd852e45f96b00353c5537c47289db4573338a32bf4275db7"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutable(_:)": {
       "etag": "\"9045-65d55dfd5dbfe-df\"",
@@ -1026,7 +1023,7 @@
       "hash": "a808bf75b5cca73145ba9598d279580546a70198189eaea92d9e56e491f51476"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/imagedata()": {
-      "etag": "\"378d-65d55dfca62bd-df\"",
+      "etag": "\"378d-65d55dfca62bd\"",
       "file_path": "documentation/AddressBook/abperson/imagedata().md",
       "hash": "f0a9d9fcb038720931c290773d0618867bf21769e3d32f2013c86390dba21845"
     },
@@ -1216,9 +1213,8 @@
       "hash": "a81be7e7d14d3021d67c0b330597761a34bc248acd65c02264354d7dd48470bc"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonsetimagedata(_:_:)": {
-      "etag": "W/\"ab3b4c2becfae96c6ed936b964628380\"",
       "file_path": "documentation/AddressBook/abpersonsetimagedata(_,_).md",
-      "hash": "fab9ee3489bfed27dc9bdb8b42e0c3395673edf2c2975af4c6df549035ac4d8a"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/addressbook/abpersonsetimagedata(_:_:_:)": {
       "etag": "\"7f91-65d55dfca62bd-df\"",
@@ -1376,9 +1372,8 @@
       "hash": "df9acc577f6f89ba054203f48c85f2ac1c9a960d56a688a093b392e0ae18d609"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordremovevalue(_:_:)": {
-      "etag": "W/\"d17705a5f7fe52a8a4ab005c7f625dbf\"",
       "file_path": "documentation/AddressBook/abrecordremovevalue(_,_).md",
-      "hash": "50c8ddfb8d41256aa3519bed592a489a6675603b2884ba5aa9a171b5d95ce9f7"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/addressbook/abrecordremovevalue(_:_:_:)": {
       "etag": "\"90e4-65d55dfca62bd-df\"",
@@ -1386,9 +1381,8 @@
       "hash": "0219f387b4987ab0995e95a0fae45424048f0dc541120caa37991460325b9f7a"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordsetvalue(_:_:_:)": {
-      "etag": "W/\"1f86493b5e46965443f6ca891812d35e\"",
       "file_path": "documentation/AddressBook/abrecordsetvalue(_,_,_).md",
-      "hash": "343062ecde913c0b49e762c30dbba519c59a7e9aa04c2010454f2d86df797622"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/addressbook/abrecordsetvalue(_:_:_:_:)": {
       "etag": "\"9c7f-65d55dfc83d15-df\"",
@@ -3421,9 +3415,8 @@
       "hash": "298aad1a43ac9ecf9fe486a64e8f88e3551823424aa93c0dc4761fe5e34e15af"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupaddmember(_:_:).json": {
-      "etag": "W/\"dbd07984a4f9d30d9ee92a806a890730\"",
       "file_path": "documentation/AddressBook/abgroupaddmember(_,_).md",
-      "hash": "6126f2cc6d86c5109982bc2ab34f172120e035e5dfb35e71d039a0af710c8234"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupaddmember(_:_:_:).json": {
       "etag": "\"961b-65d55dfc4458c-df\"",
@@ -3486,9 +3479,8 @@
       "hash": "28f341cfcaeecbeab5dfb1841b553af3f71a14ca875c71b73fc2083584cb71e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupremovemember(_:_:).json": {
-      "etag": "W/\"fede2c4a17a58e1722848c819d90cc5f\"",
       "file_path": "documentation/AddressBook/abgroupremovemember(_,_).md",
-      "hash": "e9b28d886262a248231a93a85f24d67720f7ffa2906192caf7f995a4e46dd452"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupremovemember(_:_:_:).json": {
       "etag": "\"938c-65d55dfcc237d-df\"",
@@ -3636,9 +3628,8 @@
       "hash": "09a82b84c85af1bd2effae3ee5e313567e1ced02bbd7cc1c540ae7bcfe7af886"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreatemutable().json": {
-      "etag": "W/\"bf5f4527c31a08ec5422d2c8e5dcd74e\"",
       "file_path": "documentation/AddressBook/abmultivaluecreatemutable().md",
-      "hash": "13b8f9aba10f8f5fd852e45f96b00353c5537c47289db4573338a32bf4275db7"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreatemutable(_:).json": {
       "etag": "\"9045-65d55dfd5dbfe-df\"",
@@ -3976,7 +3967,7 @@
       "hash": "a808bf75b5cca73145ba9598d279580546a70198189eaea92d9e56e491f51476"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/imagedata().json": {
-      "etag": "\"378d-65d55dfca62bd-df\"",
+      "etag": "\"378d-65d55dfca62bd\"",
       "file_path": "documentation/AddressBook/abperson/imagedata().md",
       "hash": "f0a9d9fcb038720931c290773d0618867bf21769e3d32f2013c86390dba21845"
     },
@@ -4166,9 +4157,8 @@
       "hash": "a81be7e7d14d3021d67c0b330597761a34bc248acd65c02264354d7dd48470bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonsetimagedata(_:_:).json": {
-      "etag": "W/\"ab3b4c2becfae96c6ed936b964628380\"",
       "file_path": "documentation/AddressBook/abpersonsetimagedata(_,_).md",
-      "hash": "fab9ee3489bfed27dc9bdb8b42e0c3395673edf2c2975af4c6df549035ac4d8a"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonsetimagedata(_:_:_:).json": {
       "etag": "\"7f91-65d55dfca62bd-df\"",
@@ -4326,9 +4316,8 @@
       "hash": "df9acc577f6f89ba054203f48c85f2ac1c9a960d56a688a093b392e0ae18d609"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordremovevalue(_:_:).json": {
-      "etag": "W/\"d17705a5f7fe52a8a4ab005c7f625dbf\"",
       "file_path": "documentation/AddressBook/abrecordremovevalue(_,_).md",
-      "hash": "50c8ddfb8d41256aa3519bed592a489a6675603b2884ba5aa9a171b5d95ce9f7"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordremovevalue(_:_:_:).json": {
       "etag": "\"90e4-65d55dfca62bd-df\"",
@@ -4336,9 +4325,8 @@
       "hash": "0219f387b4987ab0995e95a0fae45424048f0dc541120caa37991460325b9f7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordsetvalue(_:_:_:).json": {
-      "etag": "W/\"1f86493b5e46965443f6ca891812d35e\"",
       "file_path": "documentation/AddressBook/abrecordsetvalue(_,_,_).md",
-      "hash": "343062ecde913c0b49e762c30dbba519c59a7e9aa04c2010454f2d86df797622"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordsetvalue(_:_:_:_:).json": {
       "etag": "\"9c7f-65d55dfc83d15-df\"",
@@ -5902,6 +5890,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1180
   }
 }

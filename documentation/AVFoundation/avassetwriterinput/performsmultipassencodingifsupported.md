@@ -1,7 +1,8 @@
 # performsMultiPassEncodingIfSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes.
 
@@ -19,31 +20,36 @@ A Boolean value that indicates whether the input attempts to encode the source m
 var performsMultiPassEncodingIfSupported: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL performsMultiPassEncodingIfSupported;
+```
+
 #### Discussion
 
-An asset writer input may be able to achieve higher quality and lower data rate by performing multiple passes over the source media. It does this by analyzing the media data it appends and reencodes certain segments with different parameters. To perform the reencoding, you must append the media data for the segments again. See the [`currentPassDescription`](avassetwriterinput/currentpassdescription.md) property and [`markCurrentPassAsFinished()`](avassetwriterinput/markcurrentpassasfinished().md) method for the means by which the input nominates segments to reappend.
+An asset writer input may be able to achieve higher quality and lower data rate by performing multiple passes over the source media. It does this by analyzing the media data it appends and reencodes certain segments with different parameters. To perform the reencoding, you must append the media data for the segments again. See the [`currentPassDescription`](./currentpassdescription.md) property and [`markCurrentPassAsFinished()`](./markcurrentpassasfinished%28%29.md) method for the means by which the input nominates segments to reappend.
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the value of [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) for other inputs attached to the same asset writer may be [`false`](https://developer.apple.com/documentation/swift/false) more often and for longer periods of time. In particular, the value of [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) for inputs that don’t perform multiple passes may start as [`false`](https://developer.apple.com/documentation/swift/false) after calling the method asset writer’s [`startWriting()`](avassetwriter/startwriting().md) method, and may not change to [`true`](https://developer.apple.com/documentation/swift/true) until after all multipass inputs complete their final pass.
+When the value of this property is [`true`](../../Swift/true.md), the value of [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) for other inputs attached to the same asset writer may be [`false`](../../Swift/false.md) more often and for longer periods of time. In particular, the value of [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) for inputs that don’t perform multiple passes may start as [`false`](../../Swift/false.md) after calling the method asset writer’s [`startWriting()`](../avassetwriter/startwriting%28%29.md) method, and may not change to [`true`](../../Swift/true.md) until after all multipass inputs complete their final pass.
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the input may store data in one or more temporary files before writing compressed samples to the output file. Use the asset writer’s [`directoryForTemporaryFiles`](avassetwriter/directoryfortemporaryfiles.md) property if you need to specify the location of temporary file writing.
+When the value of this property is [`true`](../../Swift/true.md), the input may store data in one or more temporary files before writing compressed samples to the output file. Use the asset writer’s [`directoryForTemporaryFiles`](../avassetwriter/directoryfortemporaryfiles.md) property if you need to specify the location of temporary file writing.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which means that no additional analysis occurs and it doesn’t reencode segments. Not all asset writer input configurations benefit from performing multiple passes over the source media. To determine whether the selected encoder can perform multiple passes, query the value of [`canPerformMultiplePasses`](avassetwriterinput/canperformmultiplepasses.md) after calling [`startWriting()`](avassetwriter/startwriting().md).
+The default value is [`false`](../../Swift/false.md), which means that no additional analysis occurs and it doesn’t reencode segments. Not all asset writer input configurations benefit from performing multiple passes over the source media. To determine whether the selected encoder can perform multiple passes, query the value of [`canPerformMultiplePasses`](./canperformmultiplepasses.md) after calling [`startWriting()`](../avassetwriter/startwriting%28%29.md).
 
-> ❗ **Important**:  It’s an error to set this property value to [`true`](https://developer.apple.com/documentation/swift/true) when the value for [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md) is [`true`](https://developer.apple.com/documentation/swift/true). It’s also an error for an asset writer to contain inputs with this property set to [`true`](https://developer.apple.com/documentation/swift/true) when any of its other inputs have a value of [`true`](https://developer.apple.com/documentation/swift/true) for [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md).
+> ❗ **Important**:  It’s an error to set this property value to [`true`](../../Swift/true.md) when the value for [`expectsMediaDataInRealTime`](./expectsmediadatainrealtime.md) is [`true`](../../Swift/true.md). It’s also an error for an asset writer to contain inputs with this property set to [`true`](../../Swift/true.md) when any of its other inputs have a value of [`true`](../../Swift/true.md) for [`expectsMediaDataInRealTime`](./expectsmediadatainrealtime.md).
 
 ## See Also
 
-- [var canPerformMultiplePasses: Bool](avassetwriterinput/canperformmultiplepasses.md)
+### Performing multiple-pass encoding
+- [var canPerformMultiplePasses: Bool](./canperformmultiplepasses.md)
   A Boolean value that indicates whether the input may perform multiple passes over appended media data.
-- [var currentPassDescription: AVAssetWriterInputPassDescription?](avassetwriterinput/currentpassdescription.md)
+- [var currentPassDescription: AVAssetWriterInputPassDescription?](./currentpassdescription.md)
   An object that describes the requirements for the current pass.
-- [class AVAssetWriterInputPassDescription](avassetwriterinputpassdescription.md)
+- [class AVAssetWriterInputPassDescription](../avassetwriterinputpassdescription.md)
   An object that defines the interface to query for the requirements of the current pass.
-- [func markCurrentPassAsFinished()](avassetwriterinput/markcurrentpassasfinished.md)
+- [func markCurrentPassAsFinished()](./markcurrentpassasfinished%28%29.md)
   Tells the input to analyze the appended media to determine whether it can improve the results by reencoding certain segments.
-- [func respondToEachPassDescription(on: dispatch_queue_t, using: () -> Void)](avassetwriterinput/respondtoeachpassdescription(on:using:).md)
+- [func respondToEachPassDescription(on: dispatch_queue_t, using: () -> Void)](./respondtoeachpassdescription%28on,using%29.md)
   Tells the input to invoke a callback whenever it begins a new pass.
-- [AVAssetWriterInput.MultiPassController](avassetwriterinput/multipasscontroller.md)
+- [AVAssetWriterInput.MultiPassController](./multipasscontroller.md)
   Provides an interface to receive an async sequence of pass descriptions for the writer input receiver, if multi-pass is supported.
 
 

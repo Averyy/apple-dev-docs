@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration parameters that the text classifier used for training during initialization.
 
@@ -20,13 +21,14 @@ let modelParameters: MLTextClassifier.ModelParameters
 
 ## See Also
 
-- [init(trainingData:parameters:)](mltextclassifier/init(trainingdata:parameters:).md)
+### Creating and training a text classifier
+- [init(trainingData:parameters:)](./init%28trainingdata,parameters%29.md)
   Creates a text classifier.
-- [init(trainingData:textColumn:labelColumn:parameters:)](mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:).md)
+- [init(trainingData:textColumn:labelColumn:parameters:)](./init%28trainingdata,textcolumn,labelcolumn,parameters%29.md)
   Creates a text classifier.
-- [MLTextClassifier.DataSource](mltextclassifier/datasource.md)
+- [MLTextClassifier.DataSource](./datasource.md)
   A data source for a text classifier.
-- [MLTextClassifier.ModelParameters](mltextclassifier/modelparameters-swift.struct.md)
+- [MLTextClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that specify model training parameters and validation data.
 
 

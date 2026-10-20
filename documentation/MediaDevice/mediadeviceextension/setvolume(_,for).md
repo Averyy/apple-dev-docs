@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the volume level for the specified device.
@@ -20,17 +21,17 @@ func setVolume(_ volume: Float, for device: MediaOutputDevice)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 
 For a group of devices, individual device volume changes should influence the group volume.
 
-Called when a device supports [`MediaOutputDevice.VolumeControl.absolute`](mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
+Called when a device supports [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 
 #### Grouping
 
-For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.absolute`](mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
+For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 
 ## Parameters
 

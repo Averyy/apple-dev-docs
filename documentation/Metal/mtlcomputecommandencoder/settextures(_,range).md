@@ -1,7 +1,8 @@
 # setTextures(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds multiple textures to the texture argument table, allowing compute functions to access their data on the GPU.
 
@@ -11,7 +12,7 @@ Binds multiple textures to the texture argument table, allowing compute function
 - Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,12 +26,13 @@ func setTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 
 ## Parameters
 
-- `textures`: A list of [`MTLTexture`](mtltexture.md) instances to bind to the texture argument table.
+- `textures`: A list of [`MTLTexture`](../mtltexture.md) instances to bind to the texture argument table.
 - `range`: The texture table indices to bind each of the `textures` to, in the order they appear.
 
 ## See Also
 
-- [func setTexture((any MTLTexture)?, index: Int)](mtlcomputecommandencoder/settexture(_:index:).md)
+### Binding textures
+- [func setTexture((any MTLTexture)?, index: Int)](./settexture%28_,index%29.md)
   Binds a texture to the texture argument table, allowing compute kernels to access its data on the GPU.
 
 

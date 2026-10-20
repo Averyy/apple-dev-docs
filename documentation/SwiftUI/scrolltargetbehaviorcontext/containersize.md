@@ -1,7 +1,8 @@
 # containerSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the container of the scrollable view.
 
@@ -26,13 +27,14 @@ This is the size of the bounds of the scroll view subtracting any insets applied
 
 ## See Also
 
-- [var axes: Axis.Set](scrolltargetbehaviorcontext/axes.md)
+### Getting the scroll target behavior context
+- [var axes: Axis.Set](./axes.md)
   The axes in which the scrollable view is scrollable.
-- [var contentSize: CGSize](scrolltargetbehaviorcontext/contentsize.md)
+- [var contentSize: CGSize](./contentsize.md)
   The size of the content of the scrollable view.
-- [var originalTarget: ScrollTarget](scrolltargetbehaviorcontext/originaltarget.md)
+- [var originalTarget: ScrollTarget](./originaltarget.md)
   The original target when the scroll gesture began.
-- [var velocity: CGVector](scrolltargetbehaviorcontext/velocity.md)
+- [var velocity: CGVector](./velocity.md)
   The current velocity of the scrollable view’s scroll gesture.
 
 

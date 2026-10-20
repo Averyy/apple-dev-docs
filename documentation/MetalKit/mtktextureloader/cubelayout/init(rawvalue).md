@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: MetalKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cube layout option from a raw string value.
 

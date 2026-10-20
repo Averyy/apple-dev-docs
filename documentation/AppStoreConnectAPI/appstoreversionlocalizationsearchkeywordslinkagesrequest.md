@@ -1,7 +1,8 @@
 # AppStoreVersionLocalizationSearchKeywordsLinkagesRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for updating the list of search keywords linked to an App Store version localization.
 
@@ -10,14 +11,14 @@ The request body for updating the list of search keywords linked to an App Store
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest.Data](appstoreversionlocalizationsearchkeywordslinkagesrequest/data-data.dictionary.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest.Data](./appstoreversionlocalizationsearchkeywordslinkagesrequest/data-data.dictionary.md)
   The resource linkage data identifying a search keyword linked to an App Store version localization.
 
 ## Properties
@@ -26,19 +27,20 @@ object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest
 
 ## See Also
 
-- [object AppStoreVersionLocalization](appstoreversionlocalization.md)
+### Objects
+- [object AppStoreVersionLocalization](./appstoreversionlocalization.md)
   The data structure that represent an App Store Version Localizations resource.
-- [object AppStoreVersionLocalizationCreateRequest](appstoreversionlocalizationcreaterequest.md)
+- [object AppStoreVersionLocalizationCreateRequest](./appstoreversionlocalizationcreaterequest.md)
   The request body you use to create an App Store Version Localization.
-- [object AppStoreVersionLocalizationResponse](appstoreversionlocalizationresponse.md)
+- [object AppStoreVersionLocalizationResponse](./appstoreversionlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized App Store version entry.
-- [object AppStoreVersionLocalizationsResponse](appstoreversionlocalizationsresponse.md)
+- [object AppStoreVersionLocalizationsResponse](./appstoreversionlocalizationsresponse.md)
   The response body for endpoints that list localized App Store version entries.
-- [object AppStoreVersionLocalizationUpdateRequest](appstoreversionlocalizationupdaterequest.md)
+- [object AppStoreVersionLocalizationUpdateRequest](./appstoreversionlocalizationupdaterequest.md)
   The request body you use to update an App Store Version Localization
-- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](./appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
   A response containing the resource identifiers of search keywords linked to an App Store version localization.
-- [object AppStoreVersionLocalizationPlacementsLinkagesResponse](appstoreversionlocalizationplacementslinkagesresponse.md)
+- [object AppStoreVersionLocalizationPlacementsLinkagesResponse](./appstoreversionlocalizationplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 

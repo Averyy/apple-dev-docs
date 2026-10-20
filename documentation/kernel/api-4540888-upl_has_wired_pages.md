@@ -1,14 +1,15 @@
 # upl_has_wired_pages
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 boolean_t upl_has_wired_pages(upl_t upl);
 ```
 

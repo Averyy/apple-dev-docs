@@ -1,7 +1,8 @@
 # lockCellularPlan
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the constraint that locks the user’s cellular plan.
 
@@ -22,7 +23,8 @@ The default value is `false`.
 
 ## See Also
 
-- [var lockCellularPlan: Bool?](cellularsettings/lockcellularplan-swift.property.md)
+### Locking the device’s cell plan
+- [var lockCellularPlan: Bool?](./lockcellularplan-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing their cellular plan.
 
 

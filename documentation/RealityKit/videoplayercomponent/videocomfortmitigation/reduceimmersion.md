@@ -1,7 +1,8 @@
 # VideoPlayerComponent.VideoComfortMitigation.reduceImmersion
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Media immersion level was reduced due to a comfort violation
 

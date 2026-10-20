@@ -1,17 +1,18 @@
 # HKDocumentTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The identifiers for documents.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,33 +20,38 @@ The identifiers for documents.
 struct HKDocumentTypeIdentifier
 ```
 
+```c
+typedef NSString * HKDocumentTypeIdentifier;
+```
+
 #### Overview
 
-To create an [`HKDocumentType`](hkdocumenttype.md) instance, pass an [`HKDocumentTypeIdentifier`](hkdocumenttypeidentifier.md) value to the [`documentType(forIdentifier:)`](hkobjecttype/documenttype(foridentifier:).md) method.
+To create an [`HKDocumentType`](./hkdocumenttype.md) instance, pass an [`HKDocumentTypeIdentifier`](./hkdocumenttypeidentifier.md) value to the [`documentType(forIdentifier:)`](./hkobjecttype/documenttype%28foridentifier%29.md) method.
 
 For the complete list of quantity type identifiers, see Document Types.
 
 ## Topics
 
 ### Document Types
-- [static let CDA: HKDocumentTypeIdentifier](hkdocumenttypeidentifier/cda.md)
+- [static let CDA: HKDocumentTypeIdentifier](./hkdocumenttypeidentifier/cda.md)
   The CDA Document type identifier, used when requesting permission to read or share CDA documents.
 ### Initializers
-- [init(rawValue: String)](hkdocumenttypeidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./hkdocumenttypeidentifier/init%28rawvalue%29.md)
   Returns a newly initialized document type identifier using the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func documentType(forIdentifier: HKDocumentTypeIdentifier) -> HKDocumentType?](hkobjecttype/documenttype(foridentifier:).md)
+### Creating document types
+- [class func documentType(forIdentifier: HKDocumentTypeIdentifier) -> HKDocumentType?](./hkobjecttype/documenttype%28foridentifier%29.md)
   Returns the shared document type for the provided identifier.
 
 

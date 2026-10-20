@@ -1,16 +1,21 @@
 # source_address
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var source_address: es_string_token_t
+```
+
+```c
+es_string_token_t source_address;
 ```
 
 

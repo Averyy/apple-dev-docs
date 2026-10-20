@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 One or more physical actions the user performs to manipulate the input.
@@ -18,6 +19,10 @@ One or more physical actions the user performs to manipulate the input.
 
 ```swift
 var sources: Set<AnyHashable> { get }
+```
+
+```objc
+@property (copy, readonly) NSSet<id<GCPhysicalInputSource>> * sources;
 ```
 
 

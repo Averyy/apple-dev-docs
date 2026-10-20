@@ -1,7 +1,8 @@
 # didSucceed
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system successfully delivered the test postback.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates whether the system successfully delivered the tes
 var didSucceed: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL didSucceed;
+```
+
 #### Discussion
 
 The value is `true` if the system successfully delivered the test postback and received an HTTP 200 response.
 
 ## See Also
 
-- [var httpResponse: HTTPURLResponse?](skadtestpostbackresponse/httpresponse.md)
+### Getting Postback Responses
+- [var httpResponse: HTTPURLResponse?](./httpresponse.md)
   The HTTP response from the server receiving the test postback.
-- [var error: (any Error)?](skadtestpostbackresponse/error.md)
+- [var error: (any Error)?](./error.md)
   An error the test session reports if sending a test postbacks fails.
 
 

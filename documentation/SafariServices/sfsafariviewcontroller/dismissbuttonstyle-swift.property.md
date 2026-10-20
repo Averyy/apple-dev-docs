@@ -1,7 +1,8 @@
 # dismissButtonStyle
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of dismiss button to use in the navigation bar to close the Safari view controller.
 
@@ -16,18 +17,23 @@ The style of dismiss button to use in the navigation bar to close the Safari vie
 var dismissButtonStyle: SFSafariViewController.DismissButtonStyle { get set }
 ```
 
+```objc
+@property (nonatomic) SFSafariViewControllerDismissButtonStyle dismissButtonStyle;
+```
+
 #### Discussion
 
-The Safari view controller sets dismissButtonStyle to [`SFSafariViewController.DismissButtonStyle.close`](sfsafariviewcontroller/dismissbuttonstyle-swift.enum/close.md) during initialization, displaying “xmark” icon by default. You can use other values such as [`SFSafariViewController.DismissButtonStyle.done`](sfsafariviewcontroller/dismissbuttonstyle-swift.enum/done.md) to show “checkmark” icon to provide consistency with your app.
+The Safari view controller sets dismissButtonStyle to [`SFSafariViewController.DismissButtonStyle.close`](./dismissbuttonstyle-swift.enum/close.md) during initialization, displaying “xmark” icon by default. You can use other values such as [`SFSafariViewController.DismissButtonStyle.done`](./dismissbuttonstyle-swift.enum/done.md) to show “checkmark” icon to provide consistency with your app.
 
 ## See Also
 
-- [var configuration: SFSafariViewController.Configuration](sfsafariviewcontroller/configuration-swift.property.md)
+### Configuring the View Controller
+- [var configuration: SFSafariViewController.Configuration](./configuration-swift.property.md)
   A copy of the Safari view controller’s initialized configuration.
-- [SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.enum.md)
-- [var preferredBarTintColor: UIColor?](sfsafariviewcontroller/preferredbartintcolor.md)
+- [SFSafariViewController.DismissButtonStyle](./dismissbuttonstyle-swift.enum.md)
+- [var preferredBarTintColor: UIColor?](./preferredbartintcolor.md)
   The color to tint the background of the navigation bar and the toolbar.
-- [var preferredControlTintColor: UIColor?](sfsafariviewcontroller/preferredcontroltintcolor.md)
+- [var preferredControlTintColor: UIColor?](./preferredcontroltintcolor.md)
   The color to tint the control buttons on the navigation bar and the toolbar.
 
 

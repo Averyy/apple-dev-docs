@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Calculates the spherical linear interpolation between the identity rotation and the RHS rotation at the LHS interpolation parameter.
 
@@ -24,7 +25,7 @@ static func * (lhs: Float, rhs: Rotation3DFloat) -> Rotation3DFloat
 
 For example, multiplying an angle of 90° by `0.5`, returns an angle of 45°:
 
-```None
+```
  let rotation = Rotation3DFloat(angle: Angle2DFloat(degrees: 90),
                            axis: .init(x: 0, y: 1, z: 0))
  let rotated = ( 0.5 * rotation).angle.degrees

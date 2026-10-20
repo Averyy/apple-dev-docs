@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the input delegate when text has changed in the input object for a conversation.
@@ -17,9 +18,13 @@ Tells the input delegate when text has changed in the input object for a convers
 func conversationContext(_ context: UIConversationContext?, didChange textInput: (any UITextInput)?)
 ```
 
+```objc
+- (void) conversationContext:(UIConversationContext *) context didChange:(id<UITextInput>) textInput;
+```
+
 ## Mentions
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+- [Adopting Smart Reply in your messaging or email app](../adopting-smart-reply-in-your-messaging-or-email-app.md)
 
 
 ---

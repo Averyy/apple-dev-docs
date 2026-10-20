@@ -1,7 +1,8 @@
 # AppIntentTypeDefinition
 
 **Framework**: App Intents Testing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that associates a definition type with its corresponding instance type.
 
@@ -22,31 +23,32 @@ protocol AppIntentTypeDefinition
 
 #### Overview
 
-The `AppIntentTypeDefinition` bridges a definition type you use to retrieve your intent, entity, and enum type, and the type-erased instance of your concrete intent, entity, or enum. For example, `AppIntentTypeDefinition` bridges [`AppEntityDefinition`](appentitydefinition.md) to the [`AnyAppEntity`](anyappentity.md). Validate that a given instance was produced from the correct definition using the [`isInstance(_:)`](appintenttypedefinition/isinstance(_:).md) function.
+The `AppIntentTypeDefinition` bridges a definition type you use to retrieve your intent, entity, and enum type, and the type-erased instance of your concrete intent, entity, or enum. For example, `AppIntentTypeDefinition` bridges [`AppEntityDefinition`](./appentitydefinition.md) to the [`AnyAppEntity`](./anyappentity.md). Validate that a given instance was produced from the correct definition using the [`isInstance(_:)`](./appintenttypedefinition/isinstance%28_%29.md) function.
 
 ## Topics
 
 ### Associated Types
-- [associatedtype Instance : IntentValueConvertible](appintenttypedefinition/instance.md)
+- [associatedtype Instance : IntentValueConvertible](./appintenttypedefinition/instance.md)
   The instance type that corresponds to this definition type.
 ### Instance Methods
-- [func isInstance(Self.Instance) throws](appintenttypedefinition/isinstance(_:).md)
+- [func isInstance(Self.Instance) throws](./appintenttypedefinition/isinstance%28_%29.md)
   Validates that the provided value matches this definition’s type.
 
 ## Relationships
 
 ### Conforming Types
-- [AppEntityDefinition](appentitydefinition.md)
-- [AppEnumDefinition](appenumdefinition.md)
-- [TransientAppEntityDefinition](transientappentitydefinition.md)
+- [AppEntityDefinition](./appentitydefinition.md)
+- [AppEnumDefinition](./appenumdefinition.md)
+- [TransientAppEntityDefinition](./transientappentitydefinition.md)
 
 ## See Also
 
-- [struct DynamicPropertyPath](dynamicpropertypath.md)
+### Supporting types
+- [struct DynamicPropertyPath](./dynamicpropertypath.md)
   A type-safe, dynamic path to access nested intent values.
-- [struct DynamicPropertyPathCollection](dynamicpropertypathcollection.md)
+- [struct DynamicPropertyPathCollection](./dynamicpropertypathcollection.md)
   Indexed result items from an intent value query.
-- [struct IntentValuePropertiesCallable](intentvaluepropertiescallable.md)
+- [struct IntentValuePropertiesCallable](./intentvaluepropertiescallable.md)
   A callable wrapper that creates app intent instances from keyword arguments.
 
 

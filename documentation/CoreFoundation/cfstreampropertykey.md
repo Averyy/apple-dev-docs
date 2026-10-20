@@ -1,16 +1,17 @@
 # CFStreamPropertyKey
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,46 +19,51 @@
 struct CFStreamPropertyKey
 ```
 
+```c
+typedef CFStringRef CFStreamPropertyKey;
+```
+
 ## Topics
 
 ### Type Properties
-- [static let appendToFile: CFStreamPropertyKey!](cfstreampropertykey/appendtofile.md)
+- [static let appendToFile: CFStreamPropertyKey!](./cfstreampropertykey/appendtofile.md)
   Value is a `CFBoolean` value that indicates whether to append the written data to a file, if it already exists, rather than to replace its contents.
-- [static let dataWritten: CFStreamPropertyKey!](cfstreampropertykey/datawritten.md)
+- [static let dataWritten: CFStreamPropertyKey!](./cfstreampropertykey/datawritten.md)
   Value is a `CFData` object that contains all the bytes written to a writable memory stream. You cannot modify this value.
-- [static let fileCurrentOffset: CFStreamPropertyKey!](cfstreampropertykey/filecurrentoffset.md)
+- [static let fileCurrentOffset: CFStreamPropertyKey!](./cfstreampropertykey/filecurrentoffset.md)
   Value is a `CFNumber` object containing the current file offset.
-- [static let socketNativeHandle: CFStreamPropertyKey!](cfstreampropertykey/socketnativehandle.md)
-  Value is a `CFData` object that contains the native handle for a socket stream—of type [`CFSocketNativeHandle`](cfsocketnativehandle.md)—to which the socket stream is connected.
-- [static let socketRemoteHostName: CFStreamPropertyKey!](cfstreampropertykey/socketremotehostname.md)
+- [static let socketNativeHandle: CFStreamPropertyKey!](./cfstreampropertykey/socketnativehandle.md)
+  Value is a `CFData` object that contains the native handle for a socket stream—of type [`CFSocketNativeHandle`](./cfsocketnativehandle.md)—to which the socket stream is connected.
+- [static let socketRemoteHostName: CFStreamPropertyKey!](./cfstreampropertykey/socketremotehostname.md)
   Value is a `CFString` object containing the name of the host to which the socket stream is connected or `NULL` if unknown.
-- [static let socketRemotePortNumber: CFStreamPropertyKey!](cfstreampropertykey/socketremoteportnumber.md)
+- [static let socketRemotePortNumber: CFStreamPropertyKey!](./cfstreampropertykey/socketremoteportnumber.md)
   Value is a `CFNumber` object containing the remote port number to which the socket stream is connected or `NULL` if unknown.
 ### Initializers
-- [init(CFString)](cfstreampropertykey/init(_:).md)
-- [init(rawValue: CFString)](cfstreampropertykey/init(rawvalue:).md)
+- [init(CFString)](./cfstreampropertykey/init%28_%29.md)
+- [init(rawValue: CFString)](./cfstreampropertykey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CFAllocatorTypeID](cfallocatortypeid.md)
-- [struct CFCalendarIdentifier](cfcalendaridentifier.md)
-- [struct CFDateFormatterKey](cfdateformatterkey.md)
-- [typealias CFErrorDomain](cferrordomain.md)
-- [struct CFLocaleIdentifier](cflocaleidentifier.md)
-- [struct CFLocaleKey](cflocalekey.md)
-- [struct CFNotificationName](cfnotificationname.md)
-- [struct CFNumberFormatterKey](cfnumberformatterkey.md)
-- [struct CFRunLoopMode](cfrunloopmode.md)
-- [typealias CFTypeRef](cftyperef.md)
+### Data Types
+- [typealias CFAllocatorTypeID](./cfallocatortypeid.md)
+- [struct CFCalendarIdentifier](./cfcalendaridentifier.md)
+- [struct CFDateFormatterKey](./cfdateformatterkey.md)
+- [typealias CFErrorDomain](./cferrordomain.md)
+- [struct CFLocaleIdentifier](./cflocaleidentifier.md)
+- [struct CFLocaleKey](./cflocalekey.md)
+- [struct CFNotificationName](./cfnotificationname.md)
+- [struct CFNumberFormatterKey](./cfnumberformatterkey.md)
+- [struct CFRunLoopMode](./cfrunloopmode.md)
+- [typealias CFTypeRef](./cftyperef.md)
   An untyped “generic” reference to any Core Foundation object.
 
 

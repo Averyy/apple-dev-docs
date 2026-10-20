@@ -1,17 +1,24 @@
 # view
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the view associated with the layer.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
+
+> **Deprecated**: Please use CAMetalLayer instead.
 
 ## Declaration
 
 ```swift
 weak var view: NSView? { get set }
+```
+
+```objc
+@property (weak, nullable) NSView * view;
 ```
 
 #### Discussion

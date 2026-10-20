@@ -1,23 +1,28 @@
 # CFAttributedStringGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CFAttributedString opaque type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFAttributedStringGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFAttributedStringGetTypeID();
 ```
 
 #### Return Value

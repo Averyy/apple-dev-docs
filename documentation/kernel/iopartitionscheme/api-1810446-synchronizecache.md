@@ -5,12 +5,12 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn synchronizeCache(
  IOService *client);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the cache synchronization.
 
@@ -24,15 +24,16 @@ Flush the cached data in the storage object, if any, synchronously.
 
 ## See Also
 
-- [copyPhysicalExtent](iopartitionscheme/1810278-copyphysicalextent.md)
-- [handleClose](iopartitionscheme/1810310-handleclose.md)
-- [handleIsOpen](iopartitionscheme/1810337-handleisopen.md)
-- [handleOpen](iopartitionscheme/1810366-handleopen.md)
-- [lockPhysicalExtents](iopartitionscheme/1810387-lockphysicalextents.md)
-- [read](iopartitionscheme/1810409-read.md)
-- [unlockPhysicalExtents](iopartitionscheme/1810496-unlockphysicalextents.md)
-- [unmap](iopartitionscheme/1810548-unmap.md)
-- [write](iopartitionscheme/1810601-write.md)
+### Miscellaneous
+- [copyPhysicalExtent](./api-1810278-copyphysicalextent.md)
+- [handleClose](./api-1810310-handleclose.md)
+- [handleIsOpen](./api-1810337-handleisopen.md)
+- [handleOpen](./api-1810366-handleopen.md)
+- [lockPhysicalExtents](./api-1810387-lockphysicalextents.md)
+- [read](./api-1810409-read.md)
+- [unlockPhysicalExtents](./api-1810496-unlockphysicalextents.md)
+- [unmap](./api-1810548-unmap.md)
+- [write](./api-1810601-write.md)
 
 
 ---

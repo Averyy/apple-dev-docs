@@ -1,7 +1,8 @@
 # reciprocal(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the reciprocal operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the reciprocal operation to the input tensor elements.
 
 ```swift
 func reciprocal(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reciprocalWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

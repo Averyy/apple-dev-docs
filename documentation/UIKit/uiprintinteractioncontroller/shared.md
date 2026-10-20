@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared print-interaction controller object.
 
@@ -15,6 +16,10 @@ The shared print-interaction controller object.
 
 ```swift
 class var shared: UIPrintInteractionController { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIPrintInteractionController * sharedPrintController;
 ```
 
 #### Return Value

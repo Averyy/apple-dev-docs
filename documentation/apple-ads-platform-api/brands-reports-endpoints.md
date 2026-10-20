@@ -1,6 +1,7 @@
 # Brands Reports Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, and search terms.
 
@@ -9,28 +10,29 @@ Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, an
 
 ## Topics
 
-- [Campaigns Report (Brands)](get-brand-campaign-reports.md)
+- [Campaigns Report (Brands)](./get-brand-campaign-reports.md)
   Retrieve performance metrics for Apple Maps campaigns.
-- [Ad Groups Report (Brands)](get-brand-ad-group-reports.md)
+- [Ad Groups Report (Brands)](./get-brand-ad-group-reports.md)
   Retrieve performance metrics for Apple Maps ad groups.
-- [Ads Report (Brands)](get-brand-ad-reports.md)
+- [Ads Report (Brands)](./get-brand-ad-reports.md)
   Retrieve performance metrics for Apple Maps ads.
-- [Keywords Report (Brands)](get-brand-keyword-reports.md)
+- [Keywords Report (Brands)](./get-brand-keyword-reports.md)
   Retrieve performance metrics for Apple Maps keywords.
-- [Search Terms Report (Brands)](get-brand-search-term-reports.md)
+- [Search Terms Report (Brands)](./get-brand-search-term-reports.md)
   Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 ## See Also
 
-- [Managing Reports](reports.md)
+### Reports
+- [Managing Reports](./reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
-- [App Store Reports Endpoints](apps-reports-endpoints.md)
+- [App Store Reports Endpoints](./apps-reports-endpoints.md)
   Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
-- [Apps Data Objects](apps-reports-objects.md)
+- [Apps Data Objects](./apps-reports-objects.md)
   Request, response, and metadata objects for Apps report endpoints.
-- [Brands Data Objects](brands-reports-objects.md)
+- [Brands Data Objects](./brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
-- [Shared Objects](reports-shared-objects.md)
+- [Shared Objects](./reports-shared-objects.md)
   Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 

@@ -1,7 +1,8 @@
 # errSecOCSPResponderMalformedReq
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) responder detected a malformed request.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) responder detected a malformed req
 
 ```swift
 var errSecOCSPResponderMalformedReq: OSStatus { get }
+```
+
+```c
+errSecOCSPResponderMalformedReq
 ```
 
 

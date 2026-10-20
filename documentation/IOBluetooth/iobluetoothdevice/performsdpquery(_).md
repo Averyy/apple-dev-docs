@@ -1,17 +1,22 @@
 # performSDPQuery(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an SDP query on the target device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func performSDPQuery(_ target: Any!) -> IOReturn
+```
+
+```objc
+- (IOReturn) performSDPQuery:(id) target;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 4.0+
@@ -18,13 +19,18 @@
 var version: UInt32
 ```
 
+```c
+uint32_t version;
+```
+
 ## See Also
 
-- [var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?](cmblockbuffercustomblocksource/allocateblock.md)
+### Properties
+- [var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?](./allocateblock.md)
   The function to allocate memory.
-- [var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?](cmblockbuffercustomblocksource/freeblock.md)
+- [var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?](./freeblock.md)
   A function to call once when the `CMBlockBuffer` is disposed.
-- [var refCon: UnsafeMutableRawPointer?](cmblockbuffercustomblocksource/refcon.md)
+- [var refCon: UnsafeMutableRawPointer?](./refcon.md)
   Contextual information passed to both the allocate and free function calls.
 
 

@@ -1,7 +1,8 @@
 # leftArm
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The left arm.
 
@@ -19,9 +20,14 @@ The left arm.
 static let leftArm: VNHumanBodyPoseObservation.JointsGroupName
 ```
 
+```c
+extern VNHumanBodyPoseObservationJointsGroupName const VNHumanBodyPoseObservationJointsGroupNameLeftArm;
+```
+
 ## See Also
 
-- [static let rightArm: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/rightarm.md)
+### Arms
+- [static let rightArm: VNHumanBodyPoseObservation.JointsGroupName](./rightarm.md)
   The right arm.
 
 

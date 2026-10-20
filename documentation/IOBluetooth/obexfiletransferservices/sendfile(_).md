@@ -1,17 +1,22 @@
 # sendFile(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Put a local file to the remote target
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sendFile(_ inLocalPathAndName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) sendFile:(NSString *) inLocalPathAndName;
 ```
 
 #### Return Value

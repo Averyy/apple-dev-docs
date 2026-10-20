@@ -1,11 +1,12 @@
 # BidirectionalCollection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func index(before: ClosedRange<Bound>.Index) -> ClosedRange<Bound>.Index](closedrange/index(before:).md)
+- [func index(before: ClosedRange<Bound>.Index) -> ClosedRange<Bound>.Index](./index%28before%29.md)
   Returns the position immediately before the given index.
 
 

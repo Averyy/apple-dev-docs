@@ -1,7 +1,8 @@
 # development
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the code is signed by an Apple issued development certificate.
 

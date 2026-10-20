@@ -1,7 +1,8 @@
 # testEnumsRequest(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testEnumsRequest(with params: MTRUnitTestingClusterTestEnumsRequestParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTRUnitTestingClusterTestEnumsResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testEnumsRequest(with params: MTRUnitTestingClusterTestEnumsRequestParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTRUnitTestingClusterTestEnumsResponseParams
+```
+
+```objc
+- (void) testEnumsRequestWithParams:(MTRUnitTestingClusterTestEnumsRequestParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTRUnitTestingClusterTestEnumsResponseParams *data, NSError *error)) completion;
 ```
 
 

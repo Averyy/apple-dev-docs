@@ -1,7 +1,8 @@
 # threadGroupSizeIsMultipleOfThreadExecutionWidth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the threadgroup size is always a multiple of the thread execution width.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether the threadgroup size is always a multiple
 var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL threadGroupSizeIsMultipleOfThreadExecutionWidth;
+```
+
 #### Discussion
 
 > ⚠️ **Warning**:  When this configuration value is `true` and the threadgroup size isn’t a multiple of thread execution width, the compute pass’s execution results are undefined.
 
-If you can guarantee that the threadgroup size used by all compute commands in this pipeline is a multiple of [`threadExecutionWidth`](mtlcomputepipelinestate/threadexecutionwidth.md), set this property to `true` to take advantage of additional Metal optimizations.
+If you can guarantee that the threadgroup size used by all compute commands in this pipeline is a multiple of [`threadExecutionWidth`](../mtlcomputepipelinestate/threadexecutionwidth.md), set this property to `true` to take advantage of additional Metal optimizations.
 
 The default value is `false`.
 
 ## See Also
 
-- [var computeFunction: (any MTLFunction)?](mtlcomputepipelinedescriptor/computefunction.md)
+### Configuring the compute execution environment
+- [var computeFunction: (any MTLFunction)?](./computefunction.md)
   The compute kernel the pipeline calls.
-- [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
+- [var maxTotalThreadsPerThreadgroup: Int](./maxtotalthreadsperthreadgroup.md)
   A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
-- [var maxCallStackDepth: Int](mtlcomputepipelinedescriptor/maxcallstackdepth.md)
+- [var maxCallStackDepth: Int](./maxcallstackdepth.md)
   The maximum call stack depth for indirect function calls in compute shaders.
 
 

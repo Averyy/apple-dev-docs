@@ -1,7 +1,8 @@
 # ICScannerMeasurementUnit
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The unit of measurement used by the scanner.
 
@@ -14,6 +15,10 @@ The unit of measurement used by the scanner.
 enum ICScannerMeasurementUnit
 ```
 
+```c
+enum ICScannerMeasurementUnit : NSUInteger;
+```
+
 #### Overview
 
 The values correspond to the `ICAP_UNITS` values as defined in the `TWAIN` Specification.
@@ -21,28 +26,29 @@ The values correspond to the `ICAP_UNITS` values as defined in the `TWAIN` Speci
 ## Topics
 
 ### Constants
-- [ICScannerMeasurementUnit.centimeters](icscannermeasurementunit/centimeters.md)
-- [ICScannerMeasurementUnit.inches](icscannermeasurementunit/inches.md)
-- [ICScannerMeasurementUnit.picas](icscannermeasurementunit/picas.md)
-- [ICScannerMeasurementUnit.pixels](icscannermeasurementunit/pixels.md)
-- [ICScannerMeasurementUnit.points](icscannermeasurementunit/points.md)
-- [ICScannerMeasurementUnit.twips](icscannermeasurementunit/twips.md)
+- [ICScannerMeasurementUnit.centimeters](./icscannermeasurementunit/centimeters.md)
+- [ICScannerMeasurementUnit.inches](./icscannermeasurementunit/inches.md)
+- [ICScannerMeasurementUnit.picas](./icscannermeasurementunit/picas.md)
+- [ICScannerMeasurementUnit.pixels](./icscannermeasurementunit/pixels.md)
+- [ICScannerMeasurementUnit.points](./icscannermeasurementunit/points.md)
+- [ICScannerMeasurementUnit.twips](./icscannermeasurementunit/twips.md)
 ### Initializers
-- [init?(rawValue: UInt)](icscannermeasurementunit/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./icscannermeasurementunit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ICScannerDocumentType](icscannerdocumenttype.md)
+### Document Sizes
+- [enum ICScannerDocumentType](./icscannerdocumenttype.md)
   The supported document size types.
 
 

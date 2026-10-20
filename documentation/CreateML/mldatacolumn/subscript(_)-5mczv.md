@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Creates a subset of the column, given a range expression of elements.
 
@@ -19,6 +20,26 @@ Creates a subset of the column, given a range expression of elements.
 subscript<R>(slice: R) -> MLDataColumn<Element> where R : RangeExpression, R.Bound == Int { get }
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
+**Other overloads**:
+
+```swift
+subscript(index: Int) -> Element { get }
+```
+
+```swift
+subscript(mask: MLDataColumn<Bool>) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript(mask: MLUntypedColumn) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLDataColumn<Element> { get }
+```
+
 #### Return Value
 
 A new column.
@@ -29,11 +50,12 @@ A new column.
 
 ## See Also
 
-- [subscript(Range<Int>) -> MLDataColumn<Element>](mldatacolumn/subscript(_:)-pp34.md)
+### Selecting elements to generate a column
+- [subscript(Range<Int>) -> MLDataColumn<Element>](./subscript%28_%29-pp34.md)
   Creates a subset of the column, given a range of elements.
-- [func prefix(Int) -> MLDataColumn<Element>](mldatacolumn/prefix(_:).md)
+- [func prefix(Int) -> MLDataColumn<Element>](./prefix%28_%29.md)
   Creates a subset of the column, given a number of initial elements.
-- [func suffix(Int) -> MLDataColumn<Element>](mldatacolumn/suffix(_:).md)
+- [func suffix(Int) -> MLDataColumn<Element>](./suffix%28_%29.md)
   Creates a subset of the column, given a number of final elements.
 
 

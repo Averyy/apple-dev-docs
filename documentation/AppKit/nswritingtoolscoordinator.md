@@ -1,7 +1,8 @@
 # NSWritingToolsCoordinator
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages interactions between Writing Tools and your custom text view.
 
@@ -15,108 +16,113 @@ An object that manages interactions between Writing Tools and your custom text v
 class NSWritingToolsCoordinator
 ```
 
+```objc
+@interface NSWritingToolsCoordinator : NSObject
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
+- [Adding Writing Tools support to a custom AppKit view](./adding-writing-tools-support-to-a-custom-nsview.md)
 
 #### Overview
 
 Add a `NSWritingToolsCoordinator` object to a custom view when you want to add Writing Tools support to that view. The coordinator manages interactions between your view and the Writing Tools UI and back-end capabilities. When creating a coordinator, you supply a delegate object to respond to requests from the system and provide needed information. Your delegate delivers your view’s text to Writing Tools, incorporates suggested changes back into your text storage, and supports the animations that Writing Tools creates to show the state of an operation.
 
-Create the `NSWritingToolsCoordinator` object when setting up your UI, and initialize it with a custom object that adopts the [`NSWritingToolsCoordinator.Delegate`](nswritingtoolscoordinator/delegate-swift.protocol.md) protocol. Add the coordinator to the [`writingToolsCoordinator`](nsview/writingtoolscoordinator.md) property of your view. When a coordinator is present on a view, the system adds UI elements to initiate Writing Tools operations.
+Create the `NSWritingToolsCoordinator` object when setting up your UI, and initialize it with a custom object that adopts the [`NSWritingToolsCoordinator.Delegate`](./nswritingtoolscoordinator/delegate-swift.protocol.md) protocol. Add the coordinator to the [`writingToolsCoordinator`](./nsview/writingtoolscoordinator.md) property of your view. When a coordinator is present on a view, the system adds UI elements to initiate Writing Tools operations.
 
-When defining the delegate, choose an object from your app that has access to your view and its text storage. You can adopt the [`NSWritingToolsCoordinator.Delegate`](nswritingtoolscoordinator/delegate-swift.protocol.md) protocol in the view itself, or in another type that your view uses to manage content. During the interactions with Writing Tools, the delegate gets and sets the contents of the view’s text storage and supports Writing Tools behaviors.
+When defining the delegate, choose an object from your app that has access to your view and its text storage. You can adopt the [`NSWritingToolsCoordinator.Delegate`](./nswritingtoolscoordinator/delegate-swift.protocol.md) protocol in the view itself, or in another type that your view uses to manage content. During the interactions with Writing Tools, the delegate gets and sets the contents of the view’s text storage and supports Writing Tools behaviors.
 
-> **Note**: You don’t need to create an `NSWritingToolsCoordinator`  object if you display text using a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview), [`NSTextField`](nstextfield.md), [`NSTextView`](nstextview.md), [`TextField`](https://developer.apple.com/documentation/swiftui/textfield), or [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor) view. Those views already include the required support to handle Writing Tools interactions.
+> **Note**: You don’t need to create an `NSWritingToolsCoordinator`  object if you display text using a [`UITextView`](../UIKit/uitextview.md), [`NSTextField`](./nstextfield.md), [`NSTextView`](./nstextview.md), [`TextField`](../SwiftUI/textfield.md), or [`TextEditor`](../SwiftUI/texteditor.md) view. Those views already include the required support to handle Writing Tools interactions.
 
 ## Topics
 
 ### Creating a coordinator object
-- [init(delegate: (any NSWritingToolsCoordinator.Delegate)?)](nswritingtoolscoordinator/init(delegate:).md)
+- [init(delegate: (any NSWritingToolsCoordinator.Delegate)?)](./nswritingtoolscoordinator/init%28delegate%29.md)
   Creates a writing tools coordinator and assigns the specified delegate object to it.
 ### Checking the availability of Writing Tools
-- [class var isWritingToolsAvailable: Bool](nswritingtoolscoordinator/iswritingtoolsavailable.md)
+- [class var isWritingToolsAvailable: Bool](./nswritingtoolscoordinator/iswritingtoolsavailable.md)
   A Boolean value that indicates whether Writing Tools features are available to enable.
 ### Managing Writing Tools interactions
-- [var delegate: (any NSWritingToolsCoordinator.Delegate)?](nswritingtoolscoordinator/delegate-swift.property.md)
+- [var delegate: (any NSWritingToolsCoordinator.Delegate)?](./nswritingtoolscoordinator/delegate-swift.property.md)
   The object that handles Writing Tools interactions for your view.
-- [NSWritingToolsCoordinator.Delegate](nswritingtoolscoordinator/delegate-swift.protocol.md)
+- [NSWritingToolsCoordinator.Delegate](./nswritingtoolscoordinator/delegate-swift.protocol.md)
   An interface that you use to manage interactions between Writing Tools and your custom text view.
-- [var view: NSView?](nswritingtoolscoordinator/view.md)
+- [var view: NSView?](./nswritingtoolscoordinator/view.md)
   The view that currently uses the writing tools coordinator.
 ### Getting the host views for effects
-- [var effectContainerView: NSView?](nswritingtoolscoordinator/effectcontainerview.md)
+- [var effectContainerView: NSView?](./nswritingtoolscoordinator/effectcontainerview.md)
   The view that Writing Tools uses to display visual effects during the text-rewriting process.
-- [var decorationContainerView: NSView?](nswritingtoolscoordinator/decorationcontainerview.md)
+- [var decorationContainerView: NSView?](./nswritingtoolscoordinator/decorationcontainerview.md)
   The view that Writing Tools uses to display background decorations such as proofreading marks.
 ### Configuring the experience
-- [var preferredBehavior: NSWritingToolsBehavior](nswritingtoolscoordinator/preferredbehavior.md)
+- [var preferredBehavior: NSWritingToolsBehavior](./nswritingtoolscoordinator/preferredbehavior.md)
   The level of Writing Tools support you want the system to provide for your view.
-- [var behavior: NSWritingToolsBehavior](nswritingtoolscoordinator/behavior.md)
+- [var behavior: NSWritingToolsBehavior](./nswritingtoolscoordinator/behavior.md)
   The actual level of Writing Tools support the system provides for your view.
-- [var preferredResultOptions: NSWritingToolsResultOptions](nswritingtoolscoordinator/preferredresultoptions.md)
+- [var preferredResultOptions: NSWritingToolsResultOptions](./nswritingtoolscoordinator/preferredresultoptions.md)
   The type of content you allow Writing Tools to generate for your custom text view.
-- [var resultOptions: NSWritingToolsResultOptions](nswritingtoolscoordinator/resultoptions.md)
+- [var resultOptions: NSWritingToolsResultOptions](./nswritingtoolscoordinator/resultoptions.md)
   The type of content the system generates for your custom text view.
 ### Reporting changes to Writing Tools
-- [func updateRange(NSRange, with: NSAttributedString, reason: NSWritingToolsCoordinator.TextUpdateReason, forContextWithIdentifier: UUID)](nswritingtoolscoordinator/updaterange(_:with:reason:forcontextwithidentifier:).md)
+- [func updateRange(NSRange, with: NSAttributedString, reason: NSWritingToolsCoordinator.TextUpdateReason, forContextWithIdentifier: UUID)](./nswritingtoolscoordinator/updaterange%28_,with,reason,forcontextwithidentifier%29.md)
   Informs the coordinator about changes your app made to the text in the specified context object.
-- [func updateForReflowedTextInContextWithIdentifier(UUID)](nswritingtoolscoordinator/updateforreflowedtextincontextwithidentifier(_:).md)
+- [func updateForReflowedTextInContextWithIdentifier(UUID)](./nswritingtoolscoordinator/updateforreflowedtextincontextwithidentifier%28_%29.md)
   Informs the coordinator that a change occurred to the view or its text that requires a layout update.
-- [NSWritingToolsCoordinator.TextUpdateReason](nswritingtoolscoordinator/textupdatereason.md)
+- [NSWritingToolsCoordinator.TextUpdateReason](./nswritingtoolscoordinator/textupdatereason.md)
   Constants that specify the reason you updated your view’s content outside of the Writing Tools workflow.
 ### Managing the current state
-- [func stopWritingTools()](nswritingtoolscoordinator/stopwritingtools.md)
+- [func stopWritingTools()](./nswritingtoolscoordinator/stopwritingtools%28%29.md)
   Stops the current Writing Tools operation and dismisses the system UI.
-- [var state: NSWritingToolsCoordinator.State](nswritingtoolscoordinator/state-swift.property.md)
+- [var state: NSWritingToolsCoordinator.State](./nswritingtoolscoordinator/state-swift.property.md)
   The current level of Writing Tools activity in your view.
-- [NSWritingToolsCoordinator.State](nswritingtoolscoordinator/state-swift.enum.md)
+- [NSWritingToolsCoordinator.State](./nswritingtoolscoordinator/state-swift.enum.md)
   The states that indicate the current activity, if any, Writing Tools is performing in your view.
 ### Getting the supporting types
-- [NSWritingToolsCoordinator.ContextScope](nswritingtoolscoordinator/contextscope.md)
+- [NSWritingToolsCoordinator.ContextScope](./nswritingtoolscoordinator/contextscope.md)
   Options that indicate how much of your content Writing Tools requested.
-- [NSWritingToolsCoordinator.TextReplacementReason](nswritingtoolscoordinator/textreplacementreason.md)
+- [NSWritingToolsCoordinator.TextReplacementReason](./nswritingtoolscoordinator/textreplacementreason.md)
   Options that indicate whether Writing Tools is animating changes to your view’s text.
-- [NSWritingToolsCoordinator.TextAnimation](nswritingtoolscoordinator/textanimation.md)
+- [NSWritingToolsCoordinator.TextAnimation](./nswritingtoolscoordinator/textanimation.md)
   The types of animations that Writing Tools performs during an interactive update of your view.
 ### Instance Properties
-- [var includesTextListMarkers: Bool](nswritingtoolscoordinator/includestextlistmarkers.md)
+- [var includesTextListMarkers: Bool](./nswritingtoolscoordinator/includestextlistmarkers.md)
 ### Instance Methods
-- [func cancelTextAnimations(identifiers: [UUID])](nswritingtoolscoordinator/canceltextanimations(identifiers:).md)
+- [func cancelTextAnimations(identifiers: [UUID])](./nswritingtoolscoordinator/canceltextanimations%28identifiers%29.md)
   Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
-- [func showGrammarPresentation(for: NSRange, in: NSWritingToolsCoordinator.Context) -> Bool](nswritingtoolscoordinator/showgrammarpresentation(for:in:).md)
+- [func showGrammarPresentation(for: NSRange, in: NSWritingToolsCoordinator.Context) -> Bool](./nswritingtoolscoordinator/showgrammarpresentation%28for,in%29.md)
   Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
-- [func startTextAnimation(NSWritingToolsCoordinator.TextAnimation, for: NSRange, in: NSWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](nswritingtoolscoordinator/starttextanimation(_:for:in:writingdirection:).md)
+- [func startTextAnimation(NSWritingToolsCoordinator.TextAnimation, for: NSRange, in: NSWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](./nswritingtoolscoordinator/starttextanimation%28_,for,in,writingdirection%29.md)
 ### Enumerations
-- [NSWritingToolsCoordinator.TextDecoration](nswritingtoolscoordinator/textdecoration.md)
-  Use the `NSWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:textdecoration:completion:).md) to provide both forms of previews, based on the specified decoration.
+- [NSWritingToolsCoordinator.TextDecoration](./nswritingtoolscoordinator/textdecoration.md)
+  Use the `NSWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,requestspreviewfor,of,in,textdecoration,completion%29.md) to provide both forms of previews, based on the specified decoration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
+### Writing Tools for custom views
+- [Supporting Writing Tools via the pasteboard](./supporting-writing-tools-via-the-pasteboard.md)
   Adopt a simplified version of the Writing Tools experience in a custom view using the pasteboard and macOS services.
-- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
+- [Adding Writing Tools support to a custom AppKit view](./adding-writing-tools-support-to-a-custom-nsview.md)
   Integrate Writing Tools support, including support for inline replacement animations, to your custom text views on macOS.
-- [NSWritingToolsCoordinator.Delegate](nswritingtoolscoordinator/delegate-swift.protocol.md)
+- [NSWritingToolsCoordinator.Delegate](./nswritingtoolscoordinator/delegate-swift.protocol.md)
   An interface that you use to manage interactions between Writing Tools and your custom text view.
-- [NSWritingToolsCoordinator.Context](nswritingtoolscoordinator/context.md)
+- [NSWritingToolsCoordinator.Context](./nswritingtoolscoordinator/context.md)
   A data object that you use to share your custom view’s text with Writing Tools.
-- [NSWritingToolsCoordinator.AnimationParameters](nswritingtoolscoordinator/animationparameters.md)
+- [NSWritingToolsCoordinator.AnimationParameters](./nswritingtoolscoordinator/animationparameters.md)
   An object you use to configure additional tasks or animations to run alongside the Writing Tools animations.
-- [Enhancing your custom text engine with Writing Tools](enhancing-your-custom-text-engine-with-writing-tools.md)
+- [Enhancing your custom text engine with Writing Tools](./enhancing-your-custom-text-engine-with-writing-tools.md)
   Add Writing Tools support to your custom text engine to enhance the text editing experience.
 
 

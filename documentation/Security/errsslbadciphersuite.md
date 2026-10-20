@@ -1,7 +1,8 @@
 # errSSLBadCipherSuite
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A bad SSL cipher suite was encountered.
 
@@ -18,6 +19,10 @@ A bad SSL cipher suite was encountered.
 
 ```swift
 var errSSLBadCipherSuite: OSStatus { get }
+```
+
+```c
+errSSLBadCipherSuite
 ```
 
 

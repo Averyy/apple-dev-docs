@@ -1,7 +1,8 @@
 # link
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The specified color for links.
 
@@ -16,6 +17,10 @@ The specified color for links.
 
 ```swift
 class var link: UIColor { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIColor * linkColor;
 ```
 
 

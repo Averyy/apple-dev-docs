@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCreateRequest.Data.Relationships.Video.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app asset library placement.
 
@@ -10,13 +11,13 @@ The request body you use to create an app asset library placement.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCreateRequest.Data.Relationships.Video.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appAssetLibraryVideos`
 - `id` (string) *(required)*
 
 

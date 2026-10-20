@@ -1,7 +1,8 @@
 # Duration.UnwrappedType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.0+

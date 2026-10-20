@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An angle, in radians, to use to correct the hue of an image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ An angle, in radians, to use to correct the hue of an image.
 var angle: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float angle;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cihueadjust/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

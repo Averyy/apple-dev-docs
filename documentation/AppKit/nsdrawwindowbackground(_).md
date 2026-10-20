@@ -1,17 +1,22 @@
 # NSDrawWindowBackground(_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws the window’s default background pattern into the specified rectangle of the currently focused view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func NSDrawWindowBackground(_ rect: NSRect)
+```
+
+```c
+extern void NSDrawWindowBackground(NSRect rect);
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func NSDrawWindowBackground(_ rect: NSRect)
 
 ## See Also
 
-- [func NSDrawButton(NSRect, NSRect)](nsdrawbutton(_:_:).md)
+### Drawing Backgrounds
+- [func NSDrawButton(NSRect, NSRect)](./nsdrawbutton%28_,_%29.md)
   Draws a gray-filled rectangle representing a user-interface button.
 
 

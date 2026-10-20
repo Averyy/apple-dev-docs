@@ -1,7 +1,8 @@
 # PortalComponent.CrossingMode.disabled
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disallows contents within the portal to cross out of the portal boundary.
 

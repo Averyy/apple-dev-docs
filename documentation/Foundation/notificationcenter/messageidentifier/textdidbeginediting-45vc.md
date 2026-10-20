@@ -1,7 +1,8 @@
 # textDidBeginEditing
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var textDidBeginEditing: NotificationCenter.BaseMessageIdentifier<NSControl.TextDidBeginEditingMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSControl.TextDidBeginEditingMessage>`.
 
 
 ---

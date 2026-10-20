@@ -1,7 +1,8 @@
 # logarithmBase10(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the logarithm with base 10 to the input tensor elements.
 
@@ -17,6 +18,10 @@ Computes the logarithm with base 10 to the input tensor elements.
 
 ```swift
 func logarithmBase10(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) logarithmBase10WithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

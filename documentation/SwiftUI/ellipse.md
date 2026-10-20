@@ -1,7 +1,8 @@
 # Ellipse
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An ellipse aligned inside the frame of the view containing it.
 
@@ -24,27 +25,28 @@ struct Ellipse
 ## Topics
 
 ### Creating an ellipse
-- [init()](ellipse/init.md)
+- [init()](./ellipse/init%28%29.md)
   Creates a new ellipse shape.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [InsettableShape](insettableshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [InsettableShape](./insettableshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Circle](circle.md)
+### Creating circular shapes
+- [struct Circle](./circle.md)
   A circle centered on the frame of the view containing it.
-- [struct Capsule](capsule.md)
+- [struct Capsule](./capsule.md)
   A capsule shape aligned inside the frame of the view containing it.
 
 

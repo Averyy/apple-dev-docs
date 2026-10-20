@@ -1,7 +1,8 @@
 # pixelsWide
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of an image feature in pixels.
 
@@ -20,9 +21,14 @@ The width of an image feature in pixels.
 var pixelsWide: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger pixelsWide;
+```
+
 ## See Also
 
-- [var pixelsHigh: Int](mlimagesize/pixelshigh.md)
+### Accessing an image size
+- [var pixelsHigh: Int](./pixelshigh.md)
   The height of an image feature in pixels.
 
 

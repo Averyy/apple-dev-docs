@@ -1,7 +1,8 @@
 # read(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the current transform data synchronously on the CPU.
 
@@ -21,7 +22,7 @@ final func read<R, E>(_ body: (consuming Span<float4x4>) throws(E) -> R) throws(
 
 You pass a closure that receives a read-only span representing the transform data. This span is valid only for the duration of the closure.
 
-> **Note**: Any error thrown by `body`.
+> **Throws**: Any error thrown by `body`.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ You pass a closure that receives a read-only span representing the transform dat
 
 ## See Also
 
-- [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelinstancetransformresource/read(commandbuffer:).md)
+### Reading transform data
+- [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./read%28commandbuffer%29.md)
   Returns a Metal buffer containing the current transform data for GPU read operations.
 
 

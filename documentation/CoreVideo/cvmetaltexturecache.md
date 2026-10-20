@@ -1,7 +1,8 @@
 # CVMetalTextureCache
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a Core Video Metal texture cache.
 
@@ -19,11 +20,15 @@ A reference to a Core Video Metal texture cache.
 class CVMetalTextureCache
 ```
 
+```c
+typedef struct __CVMetalTextureCache * CVMetalTextureCacheRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

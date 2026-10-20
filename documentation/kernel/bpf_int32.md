@@ -1,14 +1,15 @@
 # bpf_int32
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef int32_t bpf_int32;
 ```
 

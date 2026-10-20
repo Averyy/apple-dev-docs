@@ -1,7 +1,8 @@
 # USDValue.Vec2f
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 2-component single-precision vector.
 
@@ -23,35 +24,35 @@ struct Vec2f
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec2f/init.md)
+- [init()](./vec2f/init%28%29.md)
   Creates a zero vector.
-- [init(SIMD2<Float>)](usdvalue/vec2f/init(_:).md)
+- [init(SIMD2<Float>)](./vec2f/init%28_%29.md)
   Creates a vector from a `SIMD2<Float>`.
-- [init(Float, Float)](usdvalue/vec2f/init(_:_:).md)
+- [init(Float, Float)](./vec2f/init%28_,_%29.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD2<Float>](usdvalue/vec2f/simd.md)
+- [var simd: SIMD2<Float>](./vec2f/simd.md)
   The vector as a `SIMD2<Float>`.
-- [var x: Float](usdvalue/vec2f/x.md)
-- [var y: Float](usdvalue/vec2f/y.md)
+- [var x: Float](./vec2f/x.md)
+- [var y: Float](./vec2f/y.md)
 ### Subscripts
-- [subscript(Int) -> Float](usdvalue/vec2f/subscript(_:).md)
+- [subscript(Int) -> Float](./vec2f/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

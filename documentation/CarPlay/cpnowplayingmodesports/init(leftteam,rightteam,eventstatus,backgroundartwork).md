@@ -1,7 +1,8 @@
 # init(leftTeam:rightTeam:eventStatus:backgroundArtwork:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a sports mode for display on the CarPlay now playing screen.
 
@@ -14,6 +15,10 @@ Initialize a sports mode for display on the CarPlay now playing screen.
 
 ```swift
 init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?, backgroundArtwork: UIImage?)
+```
+
+```objc
+- (instancetype) initWithLeftTeam:(CPNowPlayingSportsTeam *) leftTeam rightTeam:(CPNowPlayingSportsTeam *) rightTeam eventStatus:(CPNowPlayingSportsEventStatus *) eventStatus backgroundArtwork:(UIImage *) backgroundArtwork;
 ```
 
 ## Parameters

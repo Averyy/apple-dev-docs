@@ -1,7 +1,8 @@
 # init(wrappedValue:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
 
@@ -17,23 +18,24 @@ init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4,
 
 ## See Also
 
-- [init(wrappedValue: Value, InvalidationType)](nsview/invalidating/init(wrappedvalue:_:).md)
+### Creating an Invalidating Property Wrapper
+- [init(wrappedValue: Value, InvalidationType)](./init%28wrappedvalue,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates an aspect of the containing view.
-- [init<InvalidationType1, InvalidationType2>(wrappedValue: Value, InvalidationType1, InvalidationType2)](nsview/invalidating/init(wrappedvalue:_:_:).md)
+- [init<InvalidationType1, InvalidationType2>(wrappedValue: Value, InvalidationType1, InvalidationType2)](./init%28wrappedvalue,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3)](nsview/invalidating/init(wrappedvalue:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3)](./init%28wrappedvalue,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4)](nsview/invalidating/init(wrappedvalue:_:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4)](./init%28wrappedvalue,_,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5)](nsview/invalidating/init(wrappedvalue:_:_:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5)](./init%28wrappedvalue,_,_,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6)](nsview/invalidating/init(wrappedvalue:_:_:_:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6)](./init%28wrappedvalue,_,_,_,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7)](nsview/invalidating/init(wrappedvalue:_:_:_:_:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7)](./init%28wrappedvalue,_,_,_,_,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8)](nsview/invalidating/init(wrappedvalue:_:_:_:_:_:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8)](./init%28wrappedvalue,_,_,_,_,_,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
-- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8, InvalidationType9>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8, InvalidationType9)](nsview/invalidating/init(wrappedvalue:_:_:_:_:_:_:_:_:_:).md)
+- [init<InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8, InvalidationType9>(wrappedValue: Value, InvalidationType1, InvalidationType2, InvalidationType3, InvalidationType4, InvalidationType5, InvalidationType6, InvalidationType7, InvalidationType8, InvalidationType9)](./init%28wrappedvalue,_,_,_,_,_,_,_,_,_%29.md)
   Creates a property wrapper that notifies the system when a change in the property value invalidates aspects of the containing view.
 
 

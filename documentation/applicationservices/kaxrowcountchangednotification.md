@@ -1,7 +1,8 @@
 # kAXRowCountChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The number of rows in this table was changed.
 
@@ -12,6 +13,10 @@ The number of rows in this table was changed.
 
 ```swift
 var kAXRowCountChangedNotification: String { get }
+```
+
+```c
+#define kAXRowCountChangedNotification
 ```
 
 

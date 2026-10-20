@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns display representations by identifier.
@@ -24,6 +25,12 @@ func displayRepresentations(for identifiers: [Self.Entity.ID]) async throws -> [
 #### Discussion
 
 Return full representations; the system materializes only the components it needs (for example, dropping a deferred image when only text is required).
+
+## Default Implementations
+
+### EntityQuery Implementations
+- [func displayRepresentations(for: [Self.Entity.ID]) async throws -> [Self.Entity.ID : DisplayRepresentation]](./displayrepresentations%28for%29-258xs.md)
+  Returns display representations by identifier.
 
 
 ---

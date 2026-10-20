@@ -1,7 +1,8 @@
 # MapSelection
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value representing a selected feature on a map.
 
@@ -23,24 +24,25 @@ struct MapSelection<SelectionValue> where SelectionValue : Hashable
 ## Topics
 
 ### Creating a map selection
-- [init(SelectionValue)](mapselection/init(_:).md)
+- [init(SelectionValue)](./mapselection/init%28_%29.md)
   Creates a map selection with a tag.
 ### Getting the properties
-- [var value: SelectionValue?](mapselection/value.md)
+- [var value: SelectionValue?](./mapselection/value.md)
   The selection of the given tag value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MapSelectable](mapselectable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MapSelectable](./mapselectable.md)
 
 ## See Also
 
-- [struct MapFeature](mapfeature.md)
+### Map features
+- [struct MapFeature](./mapfeature.md)
   A tappable map feature.
-- [protocol MapSelectable](mapselectable.md)
+- [protocol MapSelectable](./mapselectable.md)
 
 
 ---

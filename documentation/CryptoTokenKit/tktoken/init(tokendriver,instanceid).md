@@ -1,7 +1,8 @@
 # init(tokenDriver:instanceID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a token with the driver you specify.
 
@@ -20,6 +21,10 @@ Initializes a token with the driver you specify.
 init(tokenDriver: TKTokenDriver, instanceID: TKToken.InstanceID)
 ```
 
+```objc
+- (instancetype) initWithTokenDriver:(TKTokenDriver *) tokenDriver instanceID:(TKTokenInstanceID) instanceID;
+```
+
 #### Return Value
 
 A new token object.
@@ -35,7 +40,8 @@ This is the designated initializer.
 
 ## See Also
 
-- [typealias InstanceID](tktoken/instanceid.md)
+### Creating Tokens
+- [typealias InstanceID](./instanceid.md)
   A type that represents the instance identifier of a token.
 
 

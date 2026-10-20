@@ -1,7 +1,8 @@
 # scroll(to:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the origin of the receiver to the specified point.
 
@@ -19,13 +20,18 @@ Changes the origin of the receiver to the specified point.
 func scroll(to p: CGPoint)
 ```
 
+```objc
+- (void) scrollToPoint:(CGPoint) p;
+```
+
 ## Parameters
 
 - `p`: The new origin.
 
 ## See Also
 
-- [func scroll(to: CGRect)](cascrolllayer/scroll(to:)-782vd.md)
+### Scrolling the layer
+- [func scroll(to: CGRect)](./scroll%28to%29-782vd.md)
   Scroll the contents of the receiver to ensure that the rectangle is visible.
 
 

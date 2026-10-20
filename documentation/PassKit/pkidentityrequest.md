@@ -1,7 +1,8 @@
 # PKIdentityRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a request for identity information from a Wallet pass.
 
@@ -17,59 +18,64 @@ An object that represents a request for identity information from a Wallet pass.
 class PKIdentityRequest
 ```
 
+```objc
+@interface PKIdentityRequest : NSObject
+```
+
 ## Mentions
 
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+- [Verifying Wallet identity requests](./verifying-wallet-identity-requests.md)
 
 #### Overview
 
-A request consists of a [`PKIdentityDocumentDescriptor`](pkidentitydocumentdescriptor.md), a [`nonce`](pkidentityrequest/nonce.md), a [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md), and [`usageDescriptionKey`](pkidentityrequest/usagedescriptionkey.md). A [`PKIdentityDocumentDescriptor`](pkidentitydocumentdescriptor.md) describes the document an app requests.
+A request consists of a [`PKIdentityDocumentDescriptor`](./pkidentitydocumentdescriptor.md), a [`nonce`](./pkidentityrequest/nonce.md), a [`merchantIdentifier`](./pkidentityrequest/merchantidentifier.md), and [`usageDescriptionKey`](./pkidentityrequest/usagedescriptionkey.md). A [`PKIdentityDocumentDescriptor`](./pkidentitydocumentdescriptor.md) describes the document an app requests.
 
-You use a [`nonce`](pkidentityrequest/nonce.md) to verify a request is only made once. It’s up to the app and its server to generate the [`nonce`](pkidentityrequest/nonce.md) before making the request, and to verify the [`nonce`](pkidentityrequest/nonce.md) when the server receives the response.
+You use a [`nonce`](./pkidentityrequest/nonce.md) to verify a request is only made once. It’s up to the app and its server to generate the [`nonce`](./pkidentityrequest/nonce.md) before making the request, and to verify the [`nonce`](./pkidentityrequest/nonce.md) when the server receives the response.
 
-The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an identifier you configure in the developer portal. Payment and identity requests share the same identifier, so it’s important that the name of the property matches the equivalent [`PKPaymentRequest`](pkpaymentrequest.md), if necessary.
+The [`merchantIdentifier`](./pkidentityrequest/merchantidentifier.md) maps to an identifier you configure in the developer portal. Payment and identity requests share the same identifier, so it’s important that the name of the property matches the equivalent [`PKPaymentRequest`](./pkpaymentrequest.md), if necessary.
 
-The [`usageDescriptionKey`](pkidentityrequest/usagedescriptionkey.md) is a key you create in the `NSIdentityDescriptionDictionary` field of your app’s information property list.
+The [`usageDescriptionKey`](./pkidentityrequest/usagedescriptionkey.md) is a key you create in the `NSIdentityDescriptionDictionary` field of your app’s information property list.
 
 ## Topics
 
 ### Configuring an identity request
-- [var descriptor: (any PKIdentityDocumentDescriptor)?](pkidentityrequest/descriptor.md)
+- [var descriptor: (any PKIdentityDocumentDescriptor)?](./pkidentityrequest/descriptor.md)
   The description of the document the app requests.
-- [var nonce: Data?](pkidentityrequest/nonce.md)
+- [var nonce: Data?](./pkidentityrequest/nonce.md)
   An arbitrary number that the signed response playload includes.
-- [var merchantIdentifier: String?](pkidentityrequest/merchantidentifier.md)
+- [var merchantIdentifier: String?](./pkidentityrequest/merchantidentifier.md)
   A value that represents the merchant that makes the request.
-- [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
+- [var usageDescriptionKey: String?](./pkidentityrequest/usagedescriptionkey.md)
   The key in your app’s information property list that describes the reason for an identity request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
+### Identity sheet interactions and authorization
+- [class PKIdentityAuthorizationController](./pkidentityauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to allow a request for identity information.
-- [class PKIdentityDocument](pkidentitydocument.md)
+- [class PKIdentityDocument](./pkidentitydocument.md)
   An object that represents the response to a request.
-- [class PKIdentityElement](pkidentityelement.md)
+- [class PKIdentityElement](./pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
-- [class PKIdentityButton](pkidentitybutton.md)
+- [class PKIdentityButton](./pkidentitybutton.md)
   An object that displays a button to trigger the identity verification flow.
-- [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
+- [struct VerifyIdentityWithWalletButton](./verifyidentitywithwalletbutton.md)
   A type that displays a button to present the identity verification flow.
-- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
+- [struct VerifyIdentityWithWalletButtonLabel](./verifyidentitywithwalletbuttonlabel.md)
   A type that represents the label you use with a verify identity button.
-- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
+- [struct VerifyIdentityWithWalletButtonStyle](./verifyidentitywithwalletbuttonstyle.md)
   A type that represents the style you use with a verify identity button.
 
 

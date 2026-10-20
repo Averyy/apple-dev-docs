@@ -1,7 +1,8 @@
 # CMMutableDataBlockBuffer.MemoryPool
 
 **Framework**: Core Media  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Optimize memory allocations when working with large block buffers.
 
@@ -29,20 +30,20 @@ This object allocates memory by page. It doesn’t sub-allocate memory within pa
 ## Topics
 
 ### Initializers
-- [init(ageOutDuration: TimeInterval)](cmmutabledatablockbuffer/memorypool/init(ageoutduration:).md)
+- [init(ageOutDuration: TimeInterval)](./memorypool/init%28ageoutduration%29.md)
 ### Instance Methods
-- [func flush()](cmmutabledatablockbuffer/memorypool/flush.md)
+- [func flush()](./memorypool/flush%28%29.md)
   Release all memory that the pool was waiting to deallocate.
-- [func makeBlockBuffer(copying: UnsafePointer<AudioBufferList>) -> CMMutableDataBlockBuffer](cmmutabledatablockbuffer/memorypool/makeblockbuffer(copying:).md)
+- [func makeBlockBuffer(copying: UnsafePointer<AudioBufferList>) -> CMMutableDataBlockBuffer](./memorypool/makeblockbuffer%28copying%29.md)
   Creates a block buffer by copying the given audio buffer list.
-- [func makeBlockBuffer(count: Int) -> CMMutableDataBlockBuffer](cmmutabledatablockbuffer/memorypool/makeblockbuffer(count:).md)
+- [func makeBlockBuffer(count: Int) -> CMMutableDataBlockBuffer](./memorypool/makeblockbuffer%28count%29.md)
   Creates a block buffer with `count` number of bytes.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

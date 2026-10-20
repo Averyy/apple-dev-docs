@@ -1,7 +1,8 @@
 # transaction(_:body:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given transaction mutation function to all animations used within the `body` closure.
 
@@ -40,19 +41,20 @@ MyView(isActive: isActive)
 
 ## See Also
 
-- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](withtransaction(_:_:).md)
+### Moving an animation to another view
+- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](../withtransaction%28_,_%29.md)
   Executes a closure with the specified transaction and returns the result.
-- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](withtransaction(_:_:_:).md)
+- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](../withtransaction%28_,_,_%29.md)
   Executes a closure with the specified transaction key path and value and returns the result.
-- [func transaction((inout Transaction) -> Void) -> some View](view/transaction(_:).md)
+- [func transaction((inout Transaction) -> Void) -> some View](./transaction%28_%29.md)
   Applies the given transaction mutation function to all animations used within the view.
-- [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](view/transaction(value:_:).md)
+- [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](./transaction%28value,_%29.md)
   Applies the given transaction mutation function to all animations used within the view.
-- [struct Transaction](transaction.md)
+- [struct Transaction](../transaction.md)
   The context of the current state-processing update.
-- [macro Entry()](entry().md)
+- [macro Entry()](../entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
-- [protocol TransactionKey](transactionkey.md)
+- [protocol TransactionKey](../transactionkey.md)
   A key for accessing values in a transaction.
 
 

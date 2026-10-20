@@ -1,17 +1,22 @@
 # performClick(withFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the receiver’s menu and track mouse events in it.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func performClick(withFrame frame: NSRect, in controlView: NSView)
+```
+
+```objc
+- (void) performClickWithFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ You normally do not call this method explicitly. It is called by the Application
 
 ## See Also
 
-- [func attachPopUp(withFrame: NSRect, in: NSView)](nspopupbuttoncell/attachpopup(withframe:in:).md)
+### Handling events and action messages
+- [func attachPopUp(withFrame: NSRect, in: NSView)](./attachpopup%28withframe,in%29.md)
   Sets up the receiver to display a menu.
-- [func dismissPopUp()](nspopupbuttoncell/dismisspopup.md)
+- [func dismissPopUp()](./dismisspopup%28%29.md)
   Dismisses the pop-up button’s menu by ordering its window out.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sadb_key {
     ...
 };
@@ -17,10 +17,10 @@ struct sadb_key {
 ## Topics
 
 ### Instance Properties
-- [sadb_key_bits](sadb_key/1588129-sadb_key_bits.md)
-- [sadb_key_exttype](sadb_key/1588167-sadb_key_exttype.md)
-- [sadb_key_len](sadb_key/1588291-sadb_key_len.md)
-- [sadb_key_reserved](sadb_key/1588321-sadb_key_reserved.md)
+- [sadb_key_bits](./sadb_key/api-1588129-sadb_key_bits.md)
+- [sadb_key_exttype](./sadb_key/api-1588167-sadb_key_exttype.md)
+- [sadb_key_len](./sadb_key/api-1588291-sadb_key_len.md)
+- [sadb_key_reserved](./sadb_key/api-1588321-sadb_key_reserved.md)
 
 
 ---

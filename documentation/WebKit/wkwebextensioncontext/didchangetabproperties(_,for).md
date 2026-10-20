@@ -1,7 +1,8 @@
 # didChangeTabProperties(_:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the app when the properties of a tab are changed to fire appropriate events with only this extension.
 
@@ -16,6 +17,10 @@ Called by the app when the properties of a tab are changed to fire appropriate e
 
 ```swift
 func didChangeTabProperties(_ properties: WKWebExtension.TabChangedProperties, for changedTab: any WKWebExtensionTab)
+```
+
+```objc
+- (void) didChangeTabProperties:(WKWebExtensionTabChangedProperties) properties forTab:(id<WKWebExtensionTab>) changedTab;
 ```
 
 #### Discussion

@@ -1,16 +1,17 @@
 # ICReturnConnectionError.Code.ejectFailed
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Device reports eject has failed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,31 +19,36 @@ Device reports eject has failed.
 case ejectFailed
 ```
 
+```c
+ICReturnConnectionEjectFailed
+```
+
 ## See Also
 
-- [ICReturnConnectionError.Code.closedSessionSuddenly](icreturnconnectionerror/code/closedsessionsuddenly.md)
+### Error Cases
+- [ICReturnConnectionError.Code.closedSessionSuddenly](./closedsessionsuddenly.md)
   Device closed session without request.
-- [ICReturnConnectionError.Code.driverExited](icreturnconnectionerror/code/driverexited.md)
+- [ICReturnConnectionError.Code.driverExited](./driverexited.md)
   Device driver exited without request.
-- [ICReturnConnectionError.Code.ejectedSuddenly](icreturnconnectionerror/code/ejectedsuddenly.md)
+- [ICReturnConnectionError.Code.ejectedSuddenly](./ejectedsuddenly.md)
   Device ejected without request.
-- [ICReturnConnectionError.Code.failedToOpen](icreturnconnectionerror/code/failedtoopen.md)
+- [ICReturnConnectionError.Code.failedToOpen](./failedtoopen.md)
   Failed to open a connection to the device.
-- [ICReturnConnectionError.Code.failedToOpenDevice](icreturnconnectionerror/code/failedtoopendevice.md)
+- [ICReturnConnectionError.Code.failedToOpenDevice](./failedtoopendevice.md)
   Failed to open the device.
-- [ICReturnConnectionError.Code.sessionAlreadyOpen](icreturnconnectionerror/code/sessionalreadyopen.md)
+- [ICReturnConnectionError.Code.sessionAlreadyOpen](./sessionalreadyopen.md)
   Device reports session is already open.
-- [ICReturnConnectionError.Code.closedSessionSuddenly](icreturnconnectionerror/code/closedsessionsuddenly.md)
+- [ICReturnConnectionError.Code.closedSessionSuddenly](./closedsessionsuddenly.md)
   Device closed session without request.
-- [ICReturnConnectionError.Code.driverExited](icreturnconnectionerror/code/driverexited.md)
+- [ICReturnConnectionError.Code.driverExited](./driverexited.md)
   Device driver exited without request.
-- [ICReturnConnectionError.Code.ejectedSuddenly](icreturnconnectionerror/code/ejectedsuddenly.md)
+- [ICReturnConnectionError.Code.ejectedSuddenly](./ejectedsuddenly.md)
   Device ejected without request.
-- [ICReturnConnectionError.Code.failedToOpen](icreturnconnectionerror/code/failedtoopen.md)
+- [ICReturnConnectionError.Code.failedToOpen](./failedtoopen.md)
   Failed to open a connection to the device.
-- [ICReturnConnectionError.Code.failedToOpenDevice](icreturnconnectionerror/code/failedtoopendevice.md)
+- [ICReturnConnectionError.Code.failedToOpenDevice](./failedtoopendevice.md)
   Failed to open the device.
-- [ICReturnConnectionError.Code.sessionAlreadyOpen](icreturnconnectionerror/code/sessionalreadyopen.md)
+- [ICReturnConnectionError.Code.sessionAlreadyOpen](./sessionalreadyopen.md)
   Device reports session is already open.
 
 

@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionCompatibleBuildCheck.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a beta recruitment criteria-compatible, build-check resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a beta recruitment criteria-compatible, build-check res
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionCompatibleBuildCheck.Attributes
 ```
 

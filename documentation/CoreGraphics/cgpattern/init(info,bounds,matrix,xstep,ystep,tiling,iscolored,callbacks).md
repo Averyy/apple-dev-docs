@@ -1,7 +1,8 @@
 # init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pattern object.
 
@@ -10,7 +11,7 @@ Creates a pattern object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a pattern object.
 init?(info: UnsafeMutableRawPointer?, bounds: CGRect, matrix: CGAffineTransform, xStep: CGFloat, yStep: CGFloat, tiling: CGPatternTiling, isColored: Bool, callbacks: UnsafePointer<CGPatternCallbacks>)
 ```
 
+```c
+extern CGPatternRefCGPatternCreate(void *info, CGRect bounds, CGAffineTransform matrix, CGFloat xStep, CGFloat yStep, CGPatternTiling tiling, bool isColored, const CGPatternCallbacks *callbacks);
+```
+
 #### Return Value
 
-A new Core Graphics pattern. In Objective-C, you’re responsible for releasing this object using [`CGPatternRelease`](cgpatternrelease.md).
+A new Core Graphics pattern. In Objective-C, you’re responsible for releasing this object using [`CGPatternRelease`](../cgpatternrelease.md).
 
 #### Discussion
 
@@ -30,7 +35,7 @@ Core Graphics calls your drawing function at the appropriate timeto draw the pat
 
 The appearance of a pattern cell is unaffected by changesin the graphics state of the context in which the pattern is used.
 
-See [`CGPatternDrawPatternCallback`](cgpatterndrawpatterncallback.md) formore information about pattern drawing functions.
+See [`CGPatternDrawPatternCallback`](../cgpatterndrawpatterncallback.md) formore information about pattern drawing functions.
 
 ## Parameters
 
@@ -39,9 +44,9 @@ See [`CGPatternDrawPatternCallback`](cgpatterndrawpatterncallback.md) formore in
 - `matrix`: A matrix that represents a transform from pattern space to the default user space of the context in which the pattern is used. If no transform is needed, pass the identity matrix.
 - `xStep`: The horizontal displacement between cells, specified in pattern space. For no additional horizontal space between cells (so that each pattern cells abuts the previous pattern cell in the horizontal direction), pass the width of the pattern cell.
 - `yStep`: The vertical displacement between cells, specified in pattern space. For no additional vertical space between cells(so that each pattern cells abuts the previous pattern cell in the vertical direction), pass the height of the pattern cell.
-- `tiling`: A [`CGPatternTiling`](cgpatterntiling.md) constant that specifies the desired tiling method.
-- `isColored`: If you want to draw your pattern using its own intrinsic color, pass [`true`](https://developer.apple.com/documentation/swift/true). If you want to draw an uncolored (or masking) pattern that uses the fill or stroke color in the graphics state, pass [`false`](https://developer.apple.com/documentation/swift/false).
-- `callbacks`: A pointer to a pattern  callback function table—your pattern drawing function is an entry in this table. See [`CGPatternCallbacks`](cgpatterncallbacks.md) for more information about callback function tables for patterns.
+- `tiling`: A [`CGPatternTiling`](../cgpatterntiling.md) constant that specifies the desired tiling method.
+- `isColored`: If you want to draw your pattern using its own intrinsic color, pass [`true`](../../Swift/true.md). If you want to draw an uncolored (or masking) pattern that uses the fill or stroke color in the graphics state, pass [`false`](../../Swift/false.md).
+- `callbacks`: A pointer to a pattern  callback function table—your pattern drawing function is an entry in this table. See [`CGPatternCallbacks`](../cgpatterncallbacks.md) for more information about callback function tables for patterns.
 
 
 ---

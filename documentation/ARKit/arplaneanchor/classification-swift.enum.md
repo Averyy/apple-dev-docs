@@ -1,7 +1,8 @@
 # ARPlaneAnchor.Classification
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible characterizations of real-world surfaces represented by plane anchors.
 
@@ -17,43 +18,44 @@ enum Classification
 
 #### Overview
 
-You get values of this type from a plane anchor’s [`classification`](arplaneanchor/classification-2r4x8.md) property, identifying both the likely type of real-world surface for a detected plane anchor and the state of ARKit’s plane classification process.
+You get values of this type from a plane anchor’s [`classification`](./classification-2r4x8.md) property, identifying both the likely type of real-world surface for a detected plane anchor and the state of ARKit’s plane classification process.
 
 ## Topics
 
 ### Plane Classifications
-- [ARPlaneAnchor.Classification.wall](arplaneanchor/classification-swift.enum/wall.md)
+- [ARPlaneAnchor.Classification.wall](./classification-swift.enum/wall.md)
   The plane anchor represents a real-world wall or similar large vertical surface.
-- [ARPlaneAnchor.Classification.floor](arplaneanchor/classification-swift.enum/floor.md)
+- [ARPlaneAnchor.Classification.floor](./classification-swift.enum/floor.md)
   The plane anchor represents a real-world floor, ground plane, or similar large horizontal surface.
-- [ARPlaneAnchor.Classification.ceiling](arplaneanchor/classification-swift.enum/ceiling.md)
+- [ARPlaneAnchor.Classification.ceiling](./classification-swift.enum/ceiling.md)
   The plane anchor represents a real-world ceiling or similar overhead horizontal surface.
-- [ARPlaneAnchor.Classification.table](arplaneanchor/classification-swift.enum/table.md)
+- [ARPlaneAnchor.Classification.table](./classification-swift.enum/table.md)
   The plane anchor represents a real-world table, desk, bar, or similar flat surface.
-- [ARPlaneAnchor.Classification.seat](arplaneanchor/classification-swift.enum/seat.md)
+- [ARPlaneAnchor.Classification.seat](./classification-swift.enum/seat.md)
   The plane anchor represents a real-world chair, stool, bench or similar flat surface.
-- [ARPlaneAnchor.Classification.door](arplaneanchor/classification-swift.enum/door.md)
+- [ARPlaneAnchor.Classification.door](./classification-swift.enum/door.md)
   The plane anchor represents a real-world door or similar vertical surface.
-- [ARPlaneAnchor.Classification.window](arplaneanchor/classification-swift.enum/window.md)
+- [ARPlaneAnchor.Classification.window](./classification-swift.enum/window.md)
   The plane anchor represents a real-world window or similar vertical surface.
 ### Missing Classification Status
-- [case none(ARPlaneAnchor.Classification.Status)](arplaneanchor/classification-swift.enum/none(_:).md)
+- [case none(ARPlaneAnchor.Classification.Status)](./classification-swift.enum/none%28_%29.md)
   No classification is available for the plane anchor.
-- [ARPlaneAnchor.Classification.Status](arplaneanchor/classification-swift.enum/status.md)
+- [ARPlaneAnchor.Classification.Status](./classification-swift.enum/status.md)
   Reasons ARKit is unable to classify a plane.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var isClassificationSupported: Bool](arplaneanchor/isclassificationsupported.md)
+### Classifying a Plane
+- [class var isClassificationSupported: Bool](./isclassificationsupported.md)
   A Boolean value that indicates whether plane classification is available on the current device.
-- [var classification: ARPlaneAnchor.Classification](arplaneanchor/classification-2r4x8.md)
+- [var classification: ARPlaneAnchor.Classification](./classification-2r4x8.md)
   A general characterization of what kind of real-world surface the plane anchor represents.
 
 

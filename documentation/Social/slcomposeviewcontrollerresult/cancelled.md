@@ -1,7 +1,8 @@
 # SLComposeViewControllerResult.cancelled
 
 **Framework**: Social  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view controller is dismissed without sending the post.
 
@@ -16,13 +17,18 @@ The view controller is dismissed without sending the post.
 case cancelled
 ```
 
+```c
+SLComposeViewControllerResultCancelled
+```
+
 #### Discussion
 
 This result occurs when the user selects Cancel or the account is unavailable.
 
 ## See Also
 
-- [SLComposeViewControllerResult.done](slcomposeviewcontrollerresult/done.md)
+### Constants
+- [SLComposeViewControllerResult.done](./done.md)
   The view controller is dismissed and the message is being sent in the background.
 
 

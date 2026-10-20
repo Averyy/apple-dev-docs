@@ -1,7 +1,8 @@
 # homes
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of available homes to add the new device into.
 
@@ -10,7 +11,7 @@ An array of available homes to add the new device into.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var homes: [MatterAddDeviceRequest.Home]
 
 ## See Also
 
-- [var ecosystemName: String](matteradddevicerequest/topology-swift.struct/ecosystemname.md)
+### Getting the properties
+- [var ecosystemName: String](./ecosystemname.md)
   The name of your ecosystem.
 
 

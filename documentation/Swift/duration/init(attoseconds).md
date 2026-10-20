@@ -1,7 +1,8 @@
 # init(attoseconds:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct a `Duration` from the given number of attoseconds.
 

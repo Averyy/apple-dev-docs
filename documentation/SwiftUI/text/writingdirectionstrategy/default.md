@@ -1,9 +1,10 @@
 # default
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The default strategy is [`contentBased`](text/writingdirectionstrategy/contentbased.md).
+The default strategy is [`contentBased`](./contentbased.md).
 
 **Availability**:
 - iOS 26.0+

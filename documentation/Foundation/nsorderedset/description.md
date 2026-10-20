@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the ordered set, formatted as a property list.
 
@@ -20,11 +21,16 @@ A string that represents the contents of the ordered set, formatted as a propert
 var description: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * description;
+```
+
 ## See Also
 
-- [func description(withLocale: Any?) -> String](nsorderedset/description(withlocale:).md)
+### Describing a Set
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string that represents the contents of the ordered set, formatted as a property list.
-- [func description(withLocale: Any?, indent: Int) -> String](nsorderedset/description(withlocale:indent:).md)
+- [func description(withLocale: Any?, indent: Int) -> String](./description%28withlocale,indent%29.md)
   Returns a string that represents the contents of the ordered set, formatted as a property list.
 
 

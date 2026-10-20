@@ -1,7 +1,8 @@
 # init(primaryPlayer:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an observer with a player item.
 
@@ -18,6 +19,10 @@ Creates an observer with a player item.
 
 ```swift
 init(primaryPlayer: AVPlayer)
+```
+
+```objc
+- (instancetype) initWithPrimaryPlayer:(AVPlayer *) primaryPlayer;
 ```
 
 ## Parameters

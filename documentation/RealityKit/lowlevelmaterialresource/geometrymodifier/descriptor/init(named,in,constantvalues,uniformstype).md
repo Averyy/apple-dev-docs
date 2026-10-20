@@ -1,7 +1,8 @@
 # init(named:in:constantValues:uniformsType:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor for a geometry modifier that accepts a custom uniforms argument buffer, deriving the buffer size from `uniformsType`.
 
@@ -19,7 +20,7 @@ init<UniformsType>(named name: String, in library: any MTLLibrary, constantValue
 
 #### Discussion
 
-Equivalent to calling [`init(named:in:constantValues:uniformsSize:)`](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:constantvalues:uniformssize:).md) with `MemoryLayout<UniformsType>.size`.
+Equivalent to calling [`init(named:in:constantValues:uniformsSize:)`](./init%28named,in,constantvalues,uniformssize%29.md) with `MemoryLayout<UniformsType>.size`.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ Equivalent to calling [`init(named:in:constantValues:uniformsSize:)`](lowlevelma
 
 ## See Also
 
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:constantvalues:).md)
+### Creating a descriptor
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](./init%28named,in,constantvalues%29.md)
   Creates a descriptor referencing the named function in the given library, with the provided function constant values.
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsSize: Int)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:constantvalues:uniformssize:).md)
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsSize: Int)](./init%28named,in,constantvalues,uniformssize%29.md)
   Creates a descriptor for a geometry modifier that accepts a custom uniforms argument buffer.
 
 

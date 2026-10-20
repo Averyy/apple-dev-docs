@@ -1,7 +1,8 @@
 # invalidatePath()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the path associated with the overlay renderer.
 
@@ -19,15 +20,20 @@ Updates the path associated with the overlay renderer.
 func invalidatePath()
 ```
 
+```objc
+- (void) invalidatePath;
+```
+
 #### Discussion
 
-Call this method when a change in the path information would require you to recreate the overlay’s path. This method sets the [`path`](mkoverlaypathrenderer/path.md) property to `nil` and tells the overlay renderer to redisplay its contents.
+Call this method when a change in the path information would require you to recreate the overlay’s path. This method sets the [`path`](./path.md) property to `nil` and tells the overlay renderer to redisplay its contents.
 
 ## See Also
 
-- [var path: CGPath!](mkoverlaypathrenderer/path.md)
+### Creating and managing the path
+- [var path: CGPath!](./path.md)
   The path representing the overlay’s shape.
-- [func createPath()](mkoverlaypathrenderer/createpath.md)
+- [func createPath()](./createpath%28%29.md)
   Creates the path for the overlay.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Exports a machine learning file to the file system.
@@ -19,6 +20,10 @@ Exports a machine learning file to the file system.
 
 ```swift
 func write(to url: URL) throws
+```
+
+```objc
+- (BOOL) writeToURL:(NSURL *) url error:(NSError **) error;
 ```
 
 ## Parameters

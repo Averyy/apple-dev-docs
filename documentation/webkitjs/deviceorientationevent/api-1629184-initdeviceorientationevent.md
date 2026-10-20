@@ -1,7 +1,8 @@
 # initDeviceOrientationEvent
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Initializes a new device orientation event.
 
@@ -10,7 +11,7 @@ Initializes a new device orientation event.
 
 ## Declaration
 
-```swift
+```
 void initDeviceOrientationEvent(
     optional DOMString type, 
     optional boolean bubbles, 
@@ -35,7 +36,8 @@ void initDeviceOrientationEvent(
 
 ## See Also
 
-- [Safari Web Content Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051)
+### Related Documentation
+- [Safari Web Content Guide](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051)
 
 
 ---

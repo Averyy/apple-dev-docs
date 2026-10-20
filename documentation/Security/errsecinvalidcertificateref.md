@@ -1,7 +1,8 @@
 # errSecInvalidCertificateRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid certificate reference was detected.
 
@@ -18,6 +19,10 @@ An invalid certificate reference was detected.
 
 ```swift
 var errSecInvalidCertificateRef: OSStatus { get }
+```
+
+```c
+errSecInvalidCertificateRef
 ```
 
 

@@ -1,7 +1,8 @@
 # UISlider.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -15,27 +16,32 @@
 enum Style
 ```
 
+```c
+enum UISliderStyle : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UISlider.Style.default](uislider/style/default.md)
-- [UISlider.Style.thumbless](uislider/style/thumbless.md)
+- [UISlider.Style.default](./style/default.md)
+- [UISlider.Style.thumbless](./style/thumbless.md)
 ### Initializers
-- [init?(rawValue: Int)](uislider/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sliderStyle: UISlider.Style](uislider/sliderstyle.md)
+### Changing the slider’s style
+- [var sliderStyle: UISlider.Style](./sliderstyle.md)
 
 
 ---

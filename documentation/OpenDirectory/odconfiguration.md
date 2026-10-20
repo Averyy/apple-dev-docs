@@ -1,10 +1,11 @@
 # ODConfiguration
 
 **Framework**: Open Directory  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
@@ -13,77 +14,82 @@
 class ODConfiguration
 ```
 
+```objc
+@interface ODConfiguration : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var authenticationModuleEntries: [Any]!](odconfiguration/authenticationmoduleentries-swift.property.md)
-- [var comment: String!](odconfiguration/comment-swift.property.md)
-- [var connectionIdleTimeoutInSeconds: Int](odconfiguration/connectionidletimeoutinseconds-swift.property.md)
-- [var connectionSetupTimeoutInSeconds: Int](odconfiguration/connectionsetuptimeoutinseconds-swift.property.md)
-- [var defaultMappings: ODMappings!](odconfiguration/defaultmappings-swift.property.md)
-- [var defaultModuleEntries: [Any]!](odconfiguration/defaultmoduleentries-swift.property.md)
-- [var discoveryModuleEntries: [Any]!](odconfiguration/discoverymoduleentries-swift.property.md)
-- [var generalModuleEntries: [Any]!](odconfiguration/generalmoduleentries-swift.property.md)
-- [var hideRegistration: Bool](odconfiguration/hideregistration-swift.property.md)
-- [var manInTheMiddleProtection: Bool](odconfiguration/maninthemiddleprotection-swift.property.md)
-- [var nodeName: String!](odconfiguration/nodename-swift.property.md)
-- [var packetEncryption: Int](odconfiguration/packetencryption-swift.property.md)
-- [var packetSigning: Int](odconfiguration/packetsigning-swift.property.md)
-- [var preferredDestinationHostName: String!](odconfiguration/preferreddestinationhostname-swift.property.md)
-- [var preferredDestinationHostPort: UInt16](odconfiguration/preferreddestinationhostport-swift.property.md)
-- [var queryTimeoutInSeconds: Int](odconfiguration/querytimeoutinseconds-swift.property.md)
-- [var templateName: String!](odconfiguration/templatename-swift.property.md)
-- [var trustAccount: String!](odconfiguration/trustaccount-swift.property.md)
-- [var trustKerberosPrincipal: String!](odconfiguration/trustkerberosprincipal-swift.property.md)
-- [var trustMetaAccount: String!](odconfiguration/trustmetaaccount-swift.property.md)
-- [var trustType: String!](odconfiguration/trusttype-swift.property.md)
-- [var trustUsesKerberosKeytab: Bool](odconfiguration/trustuseskerberoskeytab-swift.property.md)
-- [var trustUsesMutualAuthentication: Bool](odconfiguration/trustusesmutualauthentication-swift.property.md)
-- [var trustUsesSystemKeychain: Bool](odconfiguration/trustusessystemkeychain-swift.property.md)
-- [var virtualSubnodes: [Any]!](odconfiguration/virtualsubnodes-swift.property.md)
+- [var authenticationModuleEntries: [Any]!](./odconfiguration/authenticationmoduleentries-swift.property.md)
+- [var comment: String!](./odconfiguration/comment-swift.property.md)
+- [var connectionIdleTimeoutInSeconds: Int](./odconfiguration/connectionidletimeoutinseconds-swift.property.md)
+- [var connectionSetupTimeoutInSeconds: Int](./odconfiguration/connectionsetuptimeoutinseconds-swift.property.md)
+- [var defaultMappings: ODMappings!](./odconfiguration/defaultmappings-swift.property.md)
+- [var defaultModuleEntries: [Any]!](./odconfiguration/defaultmoduleentries-swift.property.md)
+- [var discoveryModuleEntries: [Any]!](./odconfiguration/discoverymoduleentries-swift.property.md)
+- [var generalModuleEntries: [Any]!](./odconfiguration/generalmoduleentries-swift.property.md)
+- [var hideRegistration: Bool](./odconfiguration/hideregistration-swift.property.md)
+- [var manInTheMiddleProtection: Bool](./odconfiguration/maninthemiddleprotection-swift.property.md)
+- [var nodeName: String!](./odconfiguration/nodename-swift.property.md)
+- [var packetEncryption: Int](./odconfiguration/packetencryption-swift.property.md)
+- [var packetSigning: Int](./odconfiguration/packetsigning-swift.property.md)
+- [var preferredDestinationHostName: String!](./odconfiguration/preferreddestinationhostname-swift.property.md)
+- [var preferredDestinationHostPort: UInt16](./odconfiguration/preferreddestinationhostport-swift.property.md)
+- [var queryTimeoutInSeconds: Int](./odconfiguration/querytimeoutinseconds-swift.property.md)
+- [var templateName: String!](./odconfiguration/templatename-swift.property.md)
+- [var trustAccount: String!](./odconfiguration/trustaccount-swift.property.md)
+- [var trustKerberosPrincipal: String!](./odconfiguration/trustkerberosprincipal-swift.property.md)
+- [var trustMetaAccount: String!](./odconfiguration/trustmetaaccount-swift.property.md)
+- [var trustType: String!](./odconfiguration/trusttype-swift.property.md)
+- [var trustUsesKerberosKeytab: Bool](./odconfiguration/trustuseskerberoskeytab-swift.property.md)
+- [var trustUsesMutualAuthentication: Bool](./odconfiguration/trustusesmutualauthentication-swift.property.md)
+- [var trustUsesSystemKeychain: Bool](./odconfiguration/trustusessystemkeychain-swift.property.md)
+- [var virtualSubnodes: [Any]!](./odconfiguration/virtualsubnodes-swift.property.md)
 ### Instance Methods
-- [func addTrustType(String!, trustAccount: String!, trustPassword: String!, username: String!, password: String!, joinExisting: Bool) throws](odconfiguration/addtrusttype(_:trustaccount:trustpassword:username:password:joinexisting:).md)
-- [func removeTrust(usingUsername: String!, password: String!, deleteTrustAccount: Bool) throws](odconfiguration/removetrust(usingusername:password:deletetrustaccount:).md)
-- [func save(using: SFAuthorization!) throws](odconfiguration/save(using:).md)
+- [func addTrustType(String!, trustAccount: String!, trustPassword: String!, username: String!, password: String!, joinExisting: Bool) throws](./odconfiguration/addtrusttype%28_,trustaccount,trustpassword,username,password,joinexisting%29.md)
+- [func removeTrust(usingUsername: String!, password: String!, deleteTrustAccount: Bool) throws](./odconfiguration/removetrust%28usingusername,password,deletetrustaccount%29.md)
+- [func save(using: SFAuthorization!) throws](./odconfiguration/save%28using%29.md)
 ### Type Methods
-- [class func suggestedTrustAccount(String!) -> String!](odconfiguration/suggestedtrustaccount(_:).md)
-- [class func suggestedTrustPassword(Int) -> String!](odconfiguration/suggestedtrustpassword(_:).md)
+- [class func suggestedTrustAccount(String!) -> String!](./odconfiguration/suggestedtrustaccount%28_%29.md)
+- [class func suggestedTrustPassword(Int) -> String!](./odconfiguration/suggestedtrustpassword%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ODAttributeMap](odattributemap.md)
-- [class ODContext](odcontext.md)
+### Classes
+- [class ODAttributeMap](./odattributemap.md)
+- [class ODContext](./odcontext.md)
   An Open Directory context type.
-- [class ODMappings](odmappings.md)
-- [class ODModuleEntry](odmoduleentry.md)
-- [class ODNode](odnode.md)
+- [class ODMappings](./odmappings.md)
+- [class ODModuleEntry](./odmoduleentry.md)
+- [class ODNode](./odnode.md)
   An `ODNode` object serves as a Cocoa wrapper for an Open Directory node.
-- [class ODNodeRef](odnoderef.md)
+- [class ODNodeRef](./odnoderef.md)
   An Open Directory node type.
-- [class ODQuery](odquery.md)
+- [class ODQuery](./odquery.md)
   An `ODQuery` object serves as a Cocoa wrapper for an Open Directory query.
-- [class ODQueryRef](odqueryref.md)
+- [class ODQueryRef](./odqueryref.md)
   An Open Directory query type.
-- [class ODRecord](odrecord.md)
+- [class ODRecord](./odrecord.md)
   An `ODRecord` object serves as a Cocoa wrapper for an Open Directory record.
-- [class ODRecordMap](odrecordmap.md)
-- [class ODRecordRef](odrecordref.md)
+- [class ODRecordMap](./odrecordmap.md)
+- [class ODRecordRef](./odrecordref.md)
   An Open Directory record type.
-- [class ODSession](odsession.md)
+- [class ODSession](./odsession.md)
   An `ODSession` object serves as a Cocoa wrapper for an Open Directory session.
-- [class ODSessionRef](odsessionref.md)
+- [class ODSessionRef](./odsessionref.md)
   An Open Directory session type.
 
 

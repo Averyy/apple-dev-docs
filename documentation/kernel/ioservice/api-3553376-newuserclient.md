@@ -1,14 +1,15 @@
 # newUserClient
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn newUserClient(task_t owningTask, void *securityID, UInt32 type, OSDictionary *properties, OSSharedPtr<IOUserClient> & handler);
 ```
 

@@ -1,11 +1,12 @@
 # kAudioObjectPropertyFirmwareVersion
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,20 +14,25 @@
 var kAudioObjectPropertyFirmwareVersion: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioObjectPropertyFirmwareVersion
+```
+
 ## See Also
 
-- [var kAudioObjectPropertyBaseClass: AudioObjectPropertySelector](kaudioobjectpropertybaseclass.md)
-- [var kAudioObjectPropertyClass: AudioObjectPropertySelector](kaudioobjectpropertyclass.md)
-- [var kAudioObjectPropertyElementCategoryName: AudioObjectPropertySelector](kaudioobjectpropertyelementcategoryname.md)
-- [var kAudioObjectPropertyElementName: AudioObjectPropertySelector](kaudioobjectpropertyelementname.md)
-- [var kAudioObjectPropertyElementNumberName: AudioObjectPropertySelector](kaudioobjectpropertyelementnumbername.md)
-- [var kAudioObjectPropertyIdentify: AudioObjectPropertySelector](kaudioobjectpropertyidentify.md)
-- [var kAudioObjectPropertyManufacturer: AudioObjectPropertySelector](kaudioobjectpropertymanufacturer.md)
-- [var kAudioObjectPropertyModelName: AudioObjectPropertySelector](kaudioobjectpropertymodelname.md)
-- [var kAudioObjectPropertyName: AudioObjectPropertySelector](kaudioobjectpropertyname.md)
-- [var kAudioObjectPropertyOwnedObjects: AudioObjectPropertySelector](kaudioobjectpropertyownedobjects.md)
-- [var kAudioObjectPropertyOwner: AudioObjectPropertySelector](kaudioobjectpropertyowner.md)
-- [var kAudioObjectPropertySerialNumber: AudioObjectPropertySelector](kaudioobjectpropertyserialnumber.md)
+### Constants
+- [var kAudioObjectPropertyBaseClass: AudioObjectPropertySelector](./kaudioobjectpropertybaseclass.md)
+- [var kAudioObjectPropertyClass: AudioObjectPropertySelector](./kaudioobjectpropertyclass.md)
+- [var kAudioObjectPropertyElementCategoryName: AudioObjectPropertySelector](./kaudioobjectpropertyelementcategoryname.md)
+- [var kAudioObjectPropertyElementName: AudioObjectPropertySelector](./kaudioobjectpropertyelementname.md)
+- [var kAudioObjectPropertyElementNumberName: AudioObjectPropertySelector](./kaudioobjectpropertyelementnumbername.md)
+- [var kAudioObjectPropertyIdentify: AudioObjectPropertySelector](./kaudioobjectpropertyidentify.md)
+- [var kAudioObjectPropertyManufacturer: AudioObjectPropertySelector](./kaudioobjectpropertymanufacturer.md)
+- [var kAudioObjectPropertyModelName: AudioObjectPropertySelector](./kaudioobjectpropertymodelname.md)
+- [var kAudioObjectPropertyName: AudioObjectPropertySelector](./kaudioobjectpropertyname.md)
+- [var kAudioObjectPropertyOwnedObjects: AudioObjectPropertySelector](./kaudioobjectpropertyownedobjects.md)
+- [var kAudioObjectPropertyOwner: AudioObjectPropertySelector](./kaudioobjectpropertyowner.md)
+- [var kAudioObjectPropertySerialNumber: AudioObjectPropertySelector](./kaudioobjectpropertyserialnumber.md)
 
 
 ---

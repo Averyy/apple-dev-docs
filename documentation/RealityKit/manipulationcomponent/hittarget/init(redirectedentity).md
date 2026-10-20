@@ -1,7 +1,8 @@
 # init(redirectedEntity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `HitTarget` component redirecting to an entity that has a `ManipulationComponent`.
 

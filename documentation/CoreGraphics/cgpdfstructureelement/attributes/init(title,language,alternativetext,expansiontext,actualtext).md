@@ -1,7 +1,8 @@
 # init(title:language:alternativeText:expansionText:actualText:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

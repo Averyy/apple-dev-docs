@@ -1,7 +1,8 @@
 # MDLStereoscopicCamera
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A point of view for rendering a stereoscopic display of a 3D scene.
 
@@ -19,47 +20,52 @@ A point of view for rendering a stereoscopic display of a 3D scene.
 class MDLStereoscopicCamera
 ```
 
+```objc
+@interface MDLStereoscopicCamera : MDLCamera
+```
+
 #### Overview
 
-This class provides properties related to rendering the scene from two slightly different perspectives to simulate binocular vision. For general and optical properties of a camera, see the superclass [`MDLCamera`](mdlcamera.md).
+This class provides properties related to rendering the scene from two slightly different perspectives to simulate binocular vision. For general and optical properties of a camera, see the superclass [`MDLCamera`](./mdlcamera.md).
 
 ## Topics
 
 ### Modeling Stereoscopic Imaging
-- [var interPupillaryDistance: Float](mdlstereoscopiccamera/interpupillarydistance.md)
+- [var interPupillaryDistance: Float](./mdlstereoscopiccamera/interpupillarydistance.md)
   The distance, in millimeters, between the stereoscopic camera’s two viewpoints.
-- [var overlap: Float](mdlstereoscopiccamera/overlap.md)
+- [var overlap: Float](./mdlstereoscopiccamera/overlap.md)
   The amount, as a fraction of image width, by which the images from the camera’s two viewpoints overlap.
-- [var leftVergence: Float](mdlstereoscopiccamera/leftvergence.md)
+- [var leftVergence: Float](./mdlstereoscopiccamera/leftvergence.md)
   The angle, in degrees, at which the camera’s left viewpoint faces toward a central focal point.
-- [var rightVergence: Float](mdlstereoscopiccamera/rightvergence.md)
+- [var rightVergence: Float](./mdlstereoscopiccamera/rightvergence.md)
   The angle, in degrees, at which the camera’s right viewpoint faces toward a central focal point.
 ### Generating View and Projection Matrices
-- [var leftViewMatrix: matrix_float4x4](mdlstereoscopiccamera/leftviewmatrix.md)
+- [var leftViewMatrix: matrix_float4x4](./mdlstereoscopiccamera/leftviewmatrix.md)
   The transformation matrix that determines the position and orientation of the camera’s left viewpoint relative to a scene.
-- [var leftProjectionMatrix: matrix_float4x4](mdlstereoscopiccamera/leftprojectionmatrix.md)
+- [var leftProjectionMatrix: matrix_float4x4](./mdlstereoscopiccamera/leftprojectionmatrix.md)
   The transformation matrix that determines the extent of a scene visible to the camera’s left viewpoint.
-- [var rightViewMatrix: matrix_float4x4](mdlstereoscopiccamera/rightviewmatrix.md)
+- [var rightViewMatrix: matrix_float4x4](./mdlstereoscopiccamera/rightviewmatrix.md)
   The transformation matrix that determines the position and orientation of the camera’s right viewpoint relative to a scene.
-- [var rightProjectionMatrix: matrix_float4x4](mdlstereoscopiccamera/rightprojectionmatrix.md)
+- [var rightProjectionMatrix: matrix_float4x4](./mdlstereoscopiccamera/rightprojectionmatrix.md)
   The transformation matrix that determines the extent of a scene visible to the camera’s right viewpoint.
 
 ## Relationships
 
 ### Inherits From
-- [MDLCamera](mdlcamera.md)
+- [MDLCamera](./mdlcamera.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLCamera](mdlcamera.md)
+### Cameras
+- [class MDLCamera](./mdlcamera.md)
   A point of view for rendering a 3D scene, along with a set of parameters describing an intended appearance for rendering.
 
 

@@ -1,7 +1,8 @@
 # sortedArray(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of the set’s content sorted as specified by a given array of sort descriptors.
 
@@ -20,17 +21,21 @@ Returns an array of the set’s content sorted as specified by a given array of 
 func sortedArray(using sortDescriptors: [NSSortDescriptor]) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) sortedArrayUsingDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors;
+```
+
 #### Return Value
 
 An NSArray containing the set’s content sorted as specified by `sortDescriptors`.
 
 #### Discussion
 
-The first descriptor specifies the primary key path to be used in sorting the set’s contents. Any subsequent descriptors are used to further refine sorting of objects with duplicate values. See [`NSSortDescriptor`](nssortdescriptor.md) for additional information.
+The first descriptor specifies the primary key path to be used in sorting the set’s contents. Any subsequent descriptors are used to further refine sorting of objects with duplicate values. See [`NSSortDescriptor`](../nssortdescriptor.md) for additional information.
 
 ## Parameters
 
-- `sortDescriptors`: An array of [`NSSortDescriptor`](nssortdescriptor.md) objects.
+- `sortDescriptors`: An array of [`NSSortDescriptor`](../nssortdescriptor.md) objects.
 
 
 ---

@@ -1,7 +1,8 @@
 # textColor(at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text color at the index position.
 
@@ -28,7 +29,8 @@ A tuple that contains the text color and range to which it applies.
 
 ## See Also
 
-- [func backgroundColor(at: String.Index) -> (CGColor?, Range<String.Index>)](avcaption/backgroundcolor(at:).md)
+### Accessing colors
+- [func backgroundColor(at: String.Index) -> (CGColor?, Range<String.Index>)](./backgroundcolor%28at%29.md)
   Returns the background color at the index position.
 
 

@@ -1,7 +1,8 @@
 # assetRegistry
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that loads and unloads audio resources.
 
@@ -17,6 +18,10 @@ An object that loads and unloads audio resources.
 
 ```swift
 var assetRegistry: PHASEAssetRegistry { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) PHASEAssetRegistry * assetRegistry;
 ```
 
 #### Discussion

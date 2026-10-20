@@ -1,9 +1,10 @@
 # descriptorType
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-A four-character code of type [`DescType`](desctype.md) that indicates the type ofdata in the structure. See [`DescType`](desctype.md).
+A four-character code of type [`DescType`](../desctype.md) that indicates the type ofdata in the structure. See [`DescType`](../desctype.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ A four-character code of type [`DescType`](desctype.md) that indicates the type 
 
 ```swift
 var descriptorType: DescType
+```
+
+```c
+DescType descriptorType;
 ```
 
 

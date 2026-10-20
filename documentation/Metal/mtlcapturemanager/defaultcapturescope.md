@@ -1,7 +1,8 @@
 # defaultCaptureScope
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture scope to use when a capture is initiated in Xcode.
 
@@ -19,17 +20,22 @@ The capture scope to use when a capture is initiated in Xcode.
 var defaultCaptureScope: (any MTLCaptureScope)? { get set }
 ```
 
+```objc
+@property (atomic, strong, readwrite, nullable) id<MTLCaptureScope> defaultCaptureScope;
+```
+
 #### Discussion
 
 Use this property to specify a default capture scope for Xcode to use when the user presses the capture button. You can still long-press the button to select a different capture scope.
 
-The default value is `nil.` When the value is `nil`, the capture scope is defined by drawable presentation boundaries; such as those created by calls to [`present(_:)`](mtlcommandbuffer/present(_:).md) or [`present()`](mtldrawable/present().md).
+The default value is `nil.` When the value is `nil`, the capture scope is defined by drawable presentation boundaries; such as those created by calls to [`present(_:)`](../mtlcommandbuffer/present%28_%29.md) or [`present()`](../mtldrawable/present%28%29.md).
 
 ## See Also
 
-- [func makeCaptureScope(device: any MTLDevice) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(device:).md)
+### Creating a capture scope
+- [func makeCaptureScope(device: any MTLDevice) -> any MTLCaptureScope](./makecapturescope%28device%29.md)
   Creates a capture scope for commands submitted to a specific device object.
-- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md)
+- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](./makecapturescope%28commandqueue%29-1rozd.md)
   Creates a capture scope for commands submitted to a specific command queue.
 
 

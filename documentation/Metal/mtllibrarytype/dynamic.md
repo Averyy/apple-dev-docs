@@ -1,7 +1,8 @@
 # MTLLibraryType.dynamic
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A library that you can dynamically link to from other libraries.
 
@@ -19,9 +20,14 @@ A library that you can dynamically link to from other libraries.
 case dynamic
 ```
 
+```c
+MTLLibraryTypeDynamic
+```
+
 ## See Also
 
-- [MTLLibraryType.executable](mtllibrarytype/executable.md)
+### Library options
+- [MTLLibraryType.executable](./executable.md)
   A library that can create pipeline state objects.
 
 

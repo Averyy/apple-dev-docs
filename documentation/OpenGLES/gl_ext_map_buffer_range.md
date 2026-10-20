@@ -1,7 +1,8 @@
 # GL_EXT_map_buffer_range
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_EXT_map_buffer_range: Int32 { get }
+```
+
+```c
+#define GL_EXT_map_buffer_range
 ```
 
 

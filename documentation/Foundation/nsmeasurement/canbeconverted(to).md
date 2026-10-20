@@ -1,7 +1,8 @@
 # canBeConverted(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the measurement can be converted to the given unit.
 
@@ -20,9 +21,14 @@ Indicates whether the measurement can be converted to the given unit.
 func canBeConverted(to unit: Unit) -> Bool
 ```
 
+```objc
+- (BOOL) canBeConvertedToUnit:(NSUnit *) unit;
+```
+
 ## See Also
 
-- [func converting(to: Unit) -> Measurement<Unit>](nsmeasurement/converting(to:).md)
+### Converting to Other Units
+- [func converting(to: Unit) -> Measurement<Unit>](./converting%28to%29.md)
   Returns a measurement created by converting the receiver to the specified unit.
 
 

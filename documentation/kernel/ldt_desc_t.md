@@ -1,14 +1,15 @@
 # ldt_desc_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ldt_desc {
     ...
 } ldt_desc_t;
@@ -17,14 +18,14 @@ typedef struct ldt_desc {
 ## Topics
 
 ### Instance Properties
-- [base00](ldt_desc_t/1501329-base00.md)
-- [base16](ldt_desc_t/1501280-base16.md)
-- [base24](ldt_desc_t/1501294-base24.md)
-- [granular](ldt_desc_t/1501300-granular.md)
-- [limit00](ldt_desc_t/1501295-limit00.md)
-- [limit16](ldt_desc_t/1501369-limit16.md)
-- [present](ldt_desc_t/1501381-present.md)
-- [type](ldt_desc_t/1501284-type.md)
+- [base00](./ldt_desc_t/api-1501329-base00.md)
+- [base16](./ldt_desc_t/api-1501280-base16.md)
+- [base24](./ldt_desc_t/api-1501294-base24.md)
+- [granular](./ldt_desc_t/api-1501300-granular.md)
+- [limit00](./ldt_desc_t/api-1501295-limit00.md)
+- [limit16](./ldt_desc_t/api-1501369-limit16.md)
+- [present](./ldt_desc_t/api-1501381-present.md)
+- [type](./ldt_desc_t/api-1501284-type.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # encodeRegression(commandBuffer:source:guidance:weights:destinationCoefficientsA:destinationCoefficientsB:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.2+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeRegression(commandBuffer: any MTLCommandBuffer, source sourceTexture: any MTLTexture, guidance guidanceTexture: any MTLTexture, weights weightsTexture: (any MTLTexture)?, destinationCoefficientsA destinationCoefficientsTextureA: any MTLTexture, destinationCoefficientsB destinationCoefficientsTextureB: any MTLTexture)
+```
+
+```objc
+- (void) encodeRegressionToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) sourceTexture guidanceTexture:(id<MTLTexture>) guidanceTexture weightsTexture:(id<MTLTexture>) weightsTexture destinationCoefficientsTextureA:(id<MTLTexture>) destinationCoefficientsTextureA destinationCoefficientsTextureB:(id<MTLTexture>) destinationCoefficientsTextureB;
 ```
 
 

@@ -1,7 +1,8 @@
 # DataStoreError
 
 **Framework**: SwiftData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes a data store error.
 
@@ -24,23 +25,24 @@ enum DataStoreError
 ## Topics
 
 ### Getting error codes
-- [DataStoreError.invalidPredicate](datastoreerror/invalidpredicate.md)
-- [DataStoreError.preferInMemoryFilter](datastoreerror/preferinmemoryfilter.md)
-- [DataStoreError.preferInMemorySort](datastoreerror/preferinmemorysort.md)
-- [DataStoreError.unsupportedFeature](datastoreerror/unsupportedfeature.md)
+- [DataStoreError.invalidPredicate](./datastoreerror/invalidpredicate.md)
+- [DataStoreError.preferInMemoryFilter](./datastoreerror/preferinmemoryfilter.md)
+- [DataStoreError.preferInMemorySort](./datastoreerror/preferinmemorysort.md)
+- [DataStoreError.unsupportedFeature](./datastoreerror/unsupportedfeature.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SwiftDataError](swiftdataerror.md)
+### Errors
+- [struct SwiftDataError](./swiftdataerror.md)
   A type that describes a SwiftData error.
 
 

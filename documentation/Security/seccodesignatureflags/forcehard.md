@@ -1,9 +1,10 @@
 # forceHard
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Always set the [`hard`](seccodestatus/hard.md) status flag on launch.
+Always set the [`hard`](../seccodestatus/hard.md) status flag on launch.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ Always set the [`hard`](seccodestatus/hard.md) status flag on launch.
 
 ```swift
 static var forceHard: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureForceHard
 ```
 
 #### Discussion

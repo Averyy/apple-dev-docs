@@ -1,7 +1,8 @@
 # CTRunDelegateGetRefCon(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a run delegate’s “refCon” value.
 
@@ -20,6 +21,10 @@ Returns a run delegate’s “refCon” value.
 func CTRunDelegateGetRefCon(_ runDelegate: CTRunDelegate) -> UnsafeMutableRawPointer
 ```
 
+```c
+extern void *CTRunDelegateGetRefCon(CTRunDelegateRef runDelegate);
+```
+
 #### Return Value
 
 A constant value associated with the run delegate as an identifier.
@@ -34,7 +39,8 @@ The run delegate object was created with the returned “refCon” value.
 
 ## See Also
 
-- [func CTRunDelegateGetTypeID() -> CFTypeID](ctrundelegategettypeid().md)
+### Getting Information About a Run Delegate
+- [func CTRunDelegateGetTypeID() -> CFTypeID](./ctrundelegategettypeid%28%29.md)
   Returns the type of CTRunDelegate objects.
 
 

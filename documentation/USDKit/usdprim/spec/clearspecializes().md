@@ -1,7 +1,8 @@
 # clearSpecializes()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all authored specializes paths on this prim.
 

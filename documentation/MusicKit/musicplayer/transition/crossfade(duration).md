@@ -1,7 +1,8 @@
 # crossfade(duration:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A smooth overlap between the currently playing item and the next item with a specified duration.
 

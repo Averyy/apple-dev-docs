@@ -1,23 +1,28 @@
 # CFDataGetMutableBytePtr(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a pointer to a mutable byte buffer of a CFMutableData object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFDataGetMutableBytePtr(_ theData: CFMutableData!) -> UnsafeMutablePointer<UInt8>!
+```
+
+```c
+extern UInt8 *CFDataGetMutableBytePtr(CFMutableDataRef theData);
 ```
 
 #### Return Value

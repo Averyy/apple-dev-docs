@@ -1,14 +1,17 @@
 # accessLog
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A snapshot of the network playback log for the movie player if it is playing a network stream.
 
 **Availability**:
-- iOS 4.3+
-- iPadOS 4.3+
-- Mac Catalyst 13.1+
+- iOS 4.3+ - Deprecated in 9.0
+- iPadOS 4.3+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVFoundation.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ A snapshot of the network playback log for the movie player if it is playing a n
 var accessLog: MPMovieAccessLog! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPMovieAccessLog * accessLog;
+```
+
 #### Discussion
 
-Can be `nil`. For information about movie access logs, refer to [`MPMovieAccessLog`](mpmovieaccesslog.md).
+Can be `nil`. For information about movie access logs, refer to [`MPMovieAccessLog`](../mpmovieaccesslog.md).
 
 ## See Also
 
-- [var errorLog: MPMovieErrorLog!](mpmovieplayercontroller/errorlog.md)
+### Retrieving movie logs
+- [var errorLog: MPMovieErrorLog!](./errorlog.md)
   A snapshot of the playback failure error log for the movie player if it is playing a network stream.
 
 

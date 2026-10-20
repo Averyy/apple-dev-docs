@@ -1,12 +1,15 @@
 # QCCompositionPickerPanelDidSelectComposition
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the user chooses a composition.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -16,23 +19,24 @@ static let QCCompositionPickerPanelDidSelectComposition: NSNotification.Name
 
 ## See Also
 
-- [static let IKFilterBrowserFilterDoubleClick: NSNotification.Name](nsnotification/name-swift.struct/ikfilterbrowserfilterdoubleclick.md)
+### Quartz
+- [static let IKFilterBrowserFilterDoubleClick: NSNotification.Name](./ikfilterbrowserfilterdoubleclick.md)
   Posted when the user double-clicks a filter in the filter browser.
-- [static let IKFilterBrowserFilterSelected: NSNotification.Name](nsnotification/name-swift.struct/ikfilterbrowserfilterselected.md)
+- [static let IKFilterBrowserFilterSelected: NSNotification.Name](./ikfilterbrowserfilterselected.md)
   Posted when the user clicks a filter name in the filter browser.
-- [static let IKFilterBrowserWillPreviewFilter: NSNotification.Name](nsnotification/name-swift.struct/ikfilterbrowserwillpreviewfilter.md)
+- [static let IKFilterBrowserWillPreviewFilter: NSNotification.Name](./ikfilterbrowserwillpreviewfilter.md)
   Posted before showing a filter preview, allowing an application to set the parameters of a filter.
-- [static let quartzFilterManagerDidAddFilter: NSNotification.Name](nsnotification/name-swift.struct/quartzfiltermanagerdidaddfilter.md)
-- [static let quartzFilterManagerDidModifyFilter: NSNotification.Name](nsnotification/name-swift.struct/quartzfiltermanagerdidmodifyfilter.md)
-- [static let quartzFilterManagerDidRemoveFilter: NSNotification.Name](nsnotification/name-swift.struct/quartzfiltermanagerdidremovefilter.md)
-- [static let quartzFilterManagerDidSelectFilter: NSNotification.Name](nsnotification/name-swift.struct/quartzfiltermanagerdidselectfilter.md)
-- [static let QCCompositionPickerViewDidSelectComposition: NSNotification.Name](nsnotification/name-swift.struct/qccompositionpickerviewdidselectcomposition.md)
+- [static let quartzFilterManagerDidAddFilter: NSNotification.Name](./quartzfiltermanagerdidaddfilter.md)
+- [static let quartzFilterManagerDidModifyFilter: NSNotification.Name](./quartzfiltermanagerdidmodifyfilter.md)
+- [static let quartzFilterManagerDidRemoveFilter: NSNotification.Name](./quartzfiltermanagerdidremovefilter.md)
+- [static let quartzFilterManagerDidSelectFilter: NSNotification.Name](./quartzfiltermanagerdidselectfilter.md)
+- [static let QCCompositionPickerViewDidSelectComposition: NSNotification.Name](./qccompositionpickerviewdidselectcomposition.md)
   Posted when the user selects a composition in the picker view.
-- [static let QCCompositionRepositoryDidUpdate: NSNotification.Name](nsnotification/name-swift.struct/qccompositionrepositorydidupdate.md)
+- [static let QCCompositionRepositoryDidUpdate: NSNotification.Name](./qccompositionrepositorydidupdate.md)
   Posted whenever the list of compositions in the composition repository is updated.
-- [static let QCViewDidStartRendering: NSNotification.Name](nsnotification/name-swift.struct/qcviewdidstartrendering.md)
+- [static let QCViewDidStartRendering: NSNotification.Name](./qcviewdidstartrendering.md)
   Posted when the view starts rendering.
-- [static let QCViewDidStopRendering: NSNotification.Name](nsnotification/name-swift.struct/qcviewdidstoprendering.md)
+- [static let QCViewDidStopRendering: NSNotification.Name](./qcviewdidstoprendering.md)
   Posted when the view stops rendering.
 
 

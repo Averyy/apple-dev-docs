@@ -1,7 +1,8 @@
 # symbolRotation(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the rotation of a 3D symbol.
 

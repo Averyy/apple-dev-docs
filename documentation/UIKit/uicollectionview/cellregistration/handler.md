@@ -1,7 +1,8 @@
 # UICollectionView.CellRegistration.Handler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that handles the cell registration and configuration.
 
@@ -10,7 +11,7 @@ A closure that handles the cell registration and configuration.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ typealias Handler = (Cell, IndexPath, Item) -> Void
 
 The closure takes the following parameters:
 
-- **`cell`**: The [`UICollectionViewCell`](uicollectionviewcell.md) or subclass instance to configure.
-- **`indexPath`**: The [`IndexPath`](https://developer.apple.com/documentation/foundation/indexpath) of the cell to configure.
-- **`item`**: The data item you provide in [`dequeueConfiguredReusableCell(using:for:item:)`](uicollectionview/dequeueconfiguredreusablecell(using:for:item:).md).
+- **`cell`**: The [`UICollectionViewCell`](../../uicollectionviewcell.md) or subclass instance to configure.
+- **`indexPath`**: The [`IndexPath`](../../../Foundation/indexpath.md) of the cell to configure.
+- **`item`**: The data item you provide in [`dequeueConfiguredReusableCell(using:for:item:)`](../dequeueconfiguredreusablecell%28using,for,item%29.md).
 
 ## See Also
 
-- [init(handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](uicollectionview/cellregistration/init(handler:).md)
+### Creating a cell registration
+- [init(handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](./init%28handler%29.md)
   Creates a cell registration with the specified registration handler.
-- [init(cellNib: UINib, handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](uicollectionview/cellregistration/init(cellnib:handler:).md)
+- [init(cellNib: UINib, handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](./init%28cellnib,handler%29.md)
   Creates a cell registration with the specified registration handler and nib file.
 
 

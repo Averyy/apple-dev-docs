@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message that describes what error occurred.
 

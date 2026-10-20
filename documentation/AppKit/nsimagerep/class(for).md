@@ -1,17 +1,22 @@
 # class(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the image representation subclass that handles the specified type of data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func `class`(for data: Data) -> AnyClass?
+```
+
+```objc
++ (Class) imageRepClassForData:(NSData *) data;
 ```
 
 #### Return Value
@@ -24,13 +29,14 @@ A `Class` object for the image representation that can handle the data, or `nil`
 
 ## See Also
 
-- [class func `class`(forType: String) -> AnyClass?](nsimagerep/class(fortype:).md)
+### Managing Representation Subclasses of Images
+- [class func `class`(forType: String) -> AnyClass?](./class%28fortype%29.md)
   Returns the image representation subclass that handles image data for the specified UTI.
-- [class var registeredClasses: [AnyClass]](nsimagerep/registeredclasses.md)
+- [class var registeredClasses: [AnyClass]](./registeredclasses.md)
   Returns an array containing the registered image representation classes.
-- [class func registerClass(AnyClass)](nsimagerep/registerclass(_:).md)
+- [class func registerClass(AnyClass)](./registerclass%28_%29.md)
   Adds the specified class to the registry of available image representation subclasses.
-- [class func unregisterClass(AnyClass)](nsimagerep/unregisterclass(_:).md)
+- [class func unregisterClass(AnyClass)](./unregisterclass%28_%29.md)
   Removes the specified image representation subclass from the registry of available image representations.
 
 

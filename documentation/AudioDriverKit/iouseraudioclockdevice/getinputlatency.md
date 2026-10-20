@@ -1,7 +1,8 @@
 # GetInputLatency
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the input latency of the clock device.
 
@@ -10,7 +11,7 @@ Get the input latency of the clock device.
 
 ## Declaration
 
-```swift
+```c
 uint32_t GetInputLatency();
 ```
 
@@ -24,17 +25,18 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [GetSupportsPrewarming](iouseraudioclockdevice/getsupportsprewarming.md)
+### Working with Timing and Latency
+- [GetSupportsPrewarming](./getsupportsprewarming.md)
   Returns a Boolean value that indicates clock device’s support for prewarming.
-- [SetZeroTimeStampPeriod](iouseraudioclockdevice/setzerotimestampperiod.md)
+- [SetZeroTimeStampPeriod](./setzerotimestampperiod.md)
   Sets the zero time stamp of the clock device.
-- [GetZeroTimestampPeriod](iouseraudioclockdevice/getzerotimestampperiod.md)
+- [GetZeroTimestampPeriod](./getzerotimestampperiod.md)
   Gets the zero time stamp of the clock device.
-- [SetOutputLatency](iouseraudioclockdevice/setoutputlatency.md)
+- [SetOutputLatency](./setoutputlatency.md)
   Sets the output latency of the clock device.
-- [GetOutputLatency](iouseraudioclockdevice/getoutputlatency.md)
+- [GetOutputLatency](./getoutputlatency.md)
   Gets the output latency of the clock device.
-- [SetInputLatency](iouseraudioclockdevice/setinputlatency.md)
+- [SetInputLatency](./setinputlatency.md)
   Sets the input latency of the clock device.
 
 

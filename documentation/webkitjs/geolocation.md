@@ -1,7 +1,8 @@
 # Geolocation
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface Geolocation
 ```
 
 ## Topics
 
 ### Instance Methods
-- [clearWatch](geolocation/1634140-clearwatch.md)
-- [getCurrentPosition](geolocation/1630317-getcurrentposition.md)
-- [watchPosition](geolocation/1633356-watchposition.md)
+- [clearWatch](./geolocation/api-1634140-clearwatch.md)
+- [getCurrentPosition](./geolocation/api-1630317-getcurrentposition.md)
+- [watchPosition](./geolocation/api-1633356-watchposition.md)
 
 
 ---

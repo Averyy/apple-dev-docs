@@ -1,7 +1,8 @@
 # originalAppVersion
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app version that the customer originally purchased from the App Store.
 
@@ -22,27 +23,28 @@ let originalAppVersion: String
 
 ## Mentions
 
-- [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
+- [Supporting business model changes by using the app transaction](../supporting-business-model-changes-by-using-the-app-transaction.md)
 
 #### Discussion
 
-Use this value to determine which app version the customer first purchased or downloaded. This value is comparable to the [`appVersion`](apptransaction/appversion.md) value.
+Use this value to determine which app version the customer first purchased or downloaded. This value is comparable to the [`appVersion`](./appversion.md) value.
 
-The [`originalAppVersion`](apptransaction/originalappversion.md) remains constant and doesn’t change when the customer upgrades the app. The string value contains the original value of the [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) for apps running in macOS, and the original value of the [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) for apps running on all other platforms.
+The [`originalAppVersion`](./originalappversion.md) remains constant and doesn’t change when the customer upgrades the app. The string value contains the original value of the [`CFBundleShortVersionString`](../../BundleResources/information-property-list/cfbundleshortversionstring.md) for apps running in macOS, and the original value of the [`CFBundleVersion`](../../BundleResources/information-property-list/cfbundleversion.md) for apps running on all other platforms.
 
-In the sandbox testing environment, the [`originalAppVersion`](apptransaction/originalappversion.md) value is always `1.0`.
+In the sandbox testing environment, the [`originalAppVersion`](./originalappversion.md) value is always `1.0`.
 
-For more information about using the [`originalAppVersion`](apptransaction/originalappversion.md), see [`Supporting business model changes by using the app transaction`](supporting-business-model-changes-by-using-the-app-transaction.md).
+For more information about using the [`originalAppVersion`](./originalappversion.md), see [Supporting business model changes by using the app transaction](../supporting-business-model-changes-by-using-the-app-transaction.md).
 
 ## See Also
 
-- [let bundleID: String](apptransaction/bundleid.md)
+### Getting app and version information
+- [let bundleID: String](./bundleid.md)
   The bundle identifier that the app transaction applies to.
-- [let appVersion: String](apptransaction/appversion.md)
+- [let appVersion: String](./appversion.md)
   The app version that the app transaction applies to.
-- [let appID: UInt64?](apptransaction/appid.md)
+- [let appID: UInt64?](./appid.md)
   The unique identifier the App Store uses to identify the app.
-- [let appVersionID: UInt64?](apptransaction/appversionid.md)
+- [let appVersionID: UInt64?](./appversionid.md)
   The number that the App Store uses to uniquely identify the version of the app.
 
 

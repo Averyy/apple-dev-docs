@@ -1,14 +1,15 @@
 # copy_strategy
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 memory_object_copy_strategy_t copy_strategy;
 ```
 

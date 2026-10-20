@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom object you use to determine when the VM stops.
 
@@ -14,9 +15,14 @@ A custom object you use to determine when the VM stops.
 weak var delegate: (any VZVirtualMachineDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<VZVirtualMachineDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol VZVirtualMachineDelegate](vzvirtualmachinedelegate.md)
+### Responding to a stopped VM
+- [protocol VZVirtualMachineDelegate](../vzvirtualmachinedelegate.md)
   The methods you use to respond to changes in the state of the VM.
 
 

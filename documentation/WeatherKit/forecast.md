@@ -1,7 +1,8 @@
 # Forecast
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A forecast collection for minute, hourly, and daily forecasts.
 
@@ -22,59 +23,60 @@ struct Forecast<Element> where Element : Decodable, Element : Encodable, Element
 
 #### Overview
 
-[`Forecast`](forecast.md) conforms to the `RandomAccessCollection` protocol to support efficient random-access index traversal through forecast types. The protocol involves forwarding the required properties and methods to the underlying forecast collection. The implementation of `subscript` returns an instance of the `Element` type.
+[`Forecast`](./forecast.md) conforms to the `RandomAccessCollection` protocol to support efficient random-access index traversal through forecast types. The protocol involves forwarding the required properties and methods to the underlying forecast collection. The implementation of `subscript` returns an instance of the `Element` type.
 
 ## Topics
 
 ### Creating the forecast
-- [init(from: any Decoder) throws](forecast/init(from:)-390k1.md)
-- [init(from: any Decoder) throws](forecast/init(from:)-4wobg.md)
+- [init(from: any Decoder) throws](./forecast/init%28from%29-390k1.md)
+- [init(from: any Decoder) throws](./forecast/init%28from%29-4wobg.md)
 ### Serializing objects
-- [func encode(to: any Encoder) throws](forecast/encode(to:)-5zuqd.md)
-- [func encode(to: any Encoder) throws](forecast/encode(to:)-fbco.md)
+- [func encode(to: any Encoder) throws](./forecast/encode%28to%29-5zuqd.md)
+- [func encode(to: any Encoder) throws](./forecast/encode%28to%29-fbco.md)
 ### Getting the properties
-- [var endIndex: Forecast<Element>.Index](forecast/endindex.md)
+- [var endIndex: Forecast<Element>.Index](./forecast/endindex.md)
   The forecast end index.
-- [var forecast: [Element]](forecast/forecast.md)
+- [var forecast: [Element]](./forecast/forecast.md)
   The forecast collection.
-- [var metadata: WeatherMetadata](forecast/metadata.md)
+- [var metadata: WeatherMetadata](./forecast/metadata.md)
   Descriptive information about the forecast data.
-- [var startIndex: Forecast<Element>.Index](forecast/startindex.md)
+- [var startIndex: Forecast<Element>.Index](./forecast/startindex.md)
   The forecast start index.
-- [var summary: String](forecast/summary.md)
+- [var summary: String](./forecast/summary.md)
   A convenient localized description of the minute forecast.
 ### Accessing elements
-- [subscript(Forecast<Element>.Index) -> Element](forecast/subscript(_:).md)
+- [subscript(Forecast<Element>.Index) -> Element](./forecast/subscript%28_%29.md)
   The forecast element at the provided index.
-- [typealias Index](forecast/index.md)
+- [typealias Index](./forecast/index.md)
   The forecast index.
 ### Comparing forecasts
-- [static func == (Forecast<MinuteWeather>, Forecast<MinuteWeather>) -> Bool](forecast/==(_:_:).md)
+- [static func == (Forecast<MinuteWeather>, Forecast<MinuteWeather>) -> Bool](./forecast/eqeq%28_,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct WeatherAlert](weatheralert.md)
+### Alerts and forecasts
+- [struct WeatherAlert](./weatheralert.md)
   A weather alert issued for the requested  location by a governmental authority.
-- [struct WeatherAvailability](weatheravailability.md)
+- [struct WeatherAvailability](./weatheravailability.md)
   A structure that indicates the availability of data at the requested location.
-- [struct MinuteWeather](minuteweather.md)
+- [struct MinuteWeather](./minuteweather.md)
   A structure that represents the next hour minute forecasts.
-- [struct HourWeather](hourweather.md)
+- [struct HourWeather](./hourweather.md)
   A structure that represents the weather conditions for the hour.
-- [struct DayWeather](dayweather.md)
+- [struct DayWeather](./dayweather.md)
   A structure that represents the weather conditions for the day.
 
 

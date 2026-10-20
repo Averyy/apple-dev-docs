@@ -1,7 +1,8 @@
 # Slotable
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface Slotable
 ```
 
 ## Topics
 
 ### Instance Properties
-- [assignedSlot](slotable/2528110-assignedslot.md)
+- [assignedSlot](./slotable/api-2528110-assignedslot.md)
 
 
 ---

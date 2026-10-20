@@ -1,7 +1,8 @@
 # AEStreamRef
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque data structure for storing stream-based descriptor data.
 
@@ -15,9 +16,13 @@ An opaque data structure for storing stream-based descriptor data.
 typealias AEStreamRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueAEStreamRef *AEStreamRef;
+```
+
 #### Discussion
 
-You create `AEStreamRef` objects and manipulate their contents using the stream routines found in the section [`Apple Event Manager`](https://developer.apple.com/documentation/applicationservices/apple_event_manager).
+You create `AEStreamRef` objects and manipulate their contents using the stream routines found in the section [Apple Event Manager](../applicationservices/apple_event_manager.md).
 
 
 ---

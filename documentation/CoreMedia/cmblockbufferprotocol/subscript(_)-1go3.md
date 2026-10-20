@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 13.0+
@@ -20,12 +21,13 @@ subscript(bounds: Range<Int>) -> CMBlockBuffer.Slice { get }
 
 ## See Also
 
-- [subscript(ClosedRange<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-7a30d.md)
+### Subscripts
+- [subscript(ClosedRange<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-7a30d.md)
   Creates a slice from a `ClosedRange`.
-- [subscript(PartialRangeFrom<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-9ntfs.md)
-- [subscript(PartialRangeUpTo<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-6ghj4.md)
-- [subscript(PartialRangeThrough<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-532k5.md)
-- [subscript(UnboundedRange) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-8jilq.md)
+- [subscript(PartialRangeFrom<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-9ntfs.md)
+- [subscript(PartialRangeUpTo<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-6ghj4.md)
+- [subscript(PartialRangeThrough<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-532k5.md)
+- [subscript(UnboundedRange) -> CMBlockBuffer.Slice](./subscript%28_%29-8jilq.md)
 
 
 ---

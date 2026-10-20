@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Require an interface when connecting, listening, and browsing.
@@ -28,6 +29,12 @@ Connections will fail if this interface is not available.
 ## Parameters
 
 - `interface`: The interface to require.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func requiredInterface(NWInterface) -> Self](./requiredinterface%28_%29-tfqe.md)
+  Require an interface when connecting, listening, and browsing.
 
 
 ---

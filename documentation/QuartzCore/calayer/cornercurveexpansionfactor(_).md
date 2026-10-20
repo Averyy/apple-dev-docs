@@ -1,7 +1,8 @@
 # cornerCurveExpansionFactor(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func cornerCurveExpansionFactor(_ curve: CALayerCornerCurve) -> CGFloat
+```
+
+```objc
++ (CGFloat) cornerCurveExpansionFactor:(CALayerCornerCurve) curve;
 ```
 
 

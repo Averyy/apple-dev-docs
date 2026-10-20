@@ -1,10 +1,11 @@
 # dataDetectionType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,18 +13,23 @@
 optional var dataDetectionType: NSTextInputTraitType { get set }
 ```
 
+```objc
+@property NSTextInputTraitType dataDetectionType;
+```
+
 ## See Also
 
-- [var autocorrectionType: NSTextInputTraitType](nstextinputtraits/autocorrectiontype.md)
-- [var grammarCheckingType: NSTextInputTraitType](nstextinputtraits/grammarcheckingtype.md)
-- [var inlinePredictionType: NSTextInputTraitType](nstextinputtraits/inlinepredictiontype.md)
-- [var linkDetectionType: NSTextInputTraitType](nstextinputtraits/linkdetectiontype.md)
-- [var smartDashesType: NSTextInputTraitType](nstextinputtraits/smartdashestype.md)
-- [var smartInsertDeleteType: NSTextInputTraitType](nstextinputtraits/smartinsertdeletetype.md)
-- [var smartQuotesType: NSTextInputTraitType](nstextinputtraits/smartquotestype.md)
-- [var spellCheckingType: NSTextInputTraitType](nstextinputtraits/spellcheckingtype.md)
-- [var textCompletionType: NSTextInputTraitType](nstextinputtraits/textcompletiontype.md)
-- [var textReplacementType: NSTextInputTraitType](nstextinputtraits/textreplacementtype.md)
+### Instance Properties
+- [var autocorrectionType: NSTextInputTraitType](./autocorrectiontype.md)
+- [var grammarCheckingType: NSTextInputTraitType](./grammarcheckingtype.md)
+- [var inlinePredictionType: NSTextInputTraitType](./inlinepredictiontype.md)
+- [var linkDetectionType: NSTextInputTraitType](./linkdetectiontype.md)
+- [var smartDashesType: NSTextInputTraitType](./smartdashestype.md)
+- [var smartInsertDeleteType: NSTextInputTraitType](./smartinsertdeletetype.md)
+- [var smartQuotesType: NSTextInputTraitType](./smartquotestype.md)
+- [var spellCheckingType: NSTextInputTraitType](./spellcheckingtype.md)
+- [var textCompletionType: NSTextInputTraitType](./textcompletiontype.md)
+- [var textReplacementType: NSTextInputTraitType](./textreplacementtype.md)
 
 
 ---

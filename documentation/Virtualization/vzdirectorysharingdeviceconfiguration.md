@@ -1,7 +1,8 @@
 # VZDirectorySharingDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for a directory sharing device configuration.
 
@@ -14,30 +15,35 @@ The base class for a directory sharing device configuration.
 class VZDirectorySharingDeviceConfiguration
 ```
 
+```objc
+@interface VZDirectorySharingDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t instantiate `VZDirectorySharingDeviceConfiguration` directly. Instead use one of its subclasses, like [`VZVirtioFileSystemDeviceConfiguration`](vzvirtiofilesystemdeviceconfiguration.md).
+Don’t instantiate `VZDirectorySharingDeviceConfiguration` directly. Instead use one of its subclasses, like [`VZVirtioFileSystemDeviceConfiguration`](./vzvirtiofilesystemdeviceconfiguration.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioFileSystemDeviceConfiguration](vzvirtiofilesystemdeviceconfiguration.md)
+- [VZVirtioFileSystemDeviceConfiguration](./vzvirtiofilesystemdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioFileSystemDeviceConfiguration](vzvirtiofilesystemdeviceconfiguration.md)
+### Configurations
+- [class VZVirtioFileSystemDeviceConfiguration](./vzvirtiofilesystemdeviceconfiguration.md)
   An object that represents the configuration of a Virtio file system device.
-- [class VZLinuxRosettaDirectoryShare](vzlinuxrosettadirectoryshare.md)
+- [class VZLinuxRosettaDirectoryShare](./vzlinuxrosettadirectoryshare.md)
   The Linux directory share for Rosetta.
 
 

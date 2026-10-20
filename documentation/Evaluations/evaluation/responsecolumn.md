@@ -1,7 +1,8 @@
 # responseColumn
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A typed column descriptor for the model responses in the detailed DataFrame.
 
@@ -22,17 +23,18 @@ var responseColumn: ResultColumn<Self.Subject> { get }
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 ## See Also
 
-- [struct EvaluationResult](evaluationresult.md)
+### Results
+- [struct EvaluationResult](../evaluationresult.md)
   The results of running a model evaluation.
-- [struct ResultColumn](resultcolumn.md)
+- [struct ResultColumn](../resultcolumn.md)
   A typed descriptor for a column in an evaluation result DataFrame.
-- [var inputColumn: ResultColumn<Self.Sample>](evaluation/inputcolumn.md)
+- [var inputColumn: ResultColumn<Self.Sample>](./inputcolumn.md)
   A typed column descriptor for the input samples in the detailed DataFrame.
-- [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](evaluation/expectedcolumn.md)
+- [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./expectedcolumn.md)
   A typed column descriptor for the expected values in the detailed DataFrame.
 
 

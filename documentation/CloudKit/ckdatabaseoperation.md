@@ -1,7 +1,8 @@
 # CKDatabaseOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class for operations that act upon databases in CloudKit.
 
@@ -10,7 +11,7 @@ The abstract base class for operations that act upon databases in CloudKit.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,41 +21,45 @@ The abstract base class for operations that act upon databases in CloudKit.
 class CKDatabaseOperation
 ```
 
+```objc
+@interface CKDatabaseOperation : CKOperation
+```
+
 #### Overview
 
-Database operations typically involve fetching and saving records and other database objects, as well as executing queries on the contents of the database. Use this class’s [`database`](ckdatabaseoperation/database.md) property to tell the operation which database to use when you execute it. Don’t subclass this class or create instances of it. Instead, create instances of one of its concrete subclasses.
+Database operations typically involve fetching and saving records and other database objects, as well as executing queries on the contents of the database. Use this class’s [`database`](./ckdatabaseoperation/database.md) property to tell the operation which database to use when you execute it. Don’t subclass this class or create instances of it. Instead, create instances of one of its concrete subclasses.
 
 ## Topics
 
 ### Accessing the Database
-- [var database: CKDatabase?](ckdatabaseoperation/database.md)
+- [var database: CKDatabase?](./ckdatabaseoperation/database.md)
   The database that the operation uses.
 
 ## Relationships
 
 ### Inherits From
-- [CKOperation](ckoperation.md)
+- [CKOperation](./ckoperation.md)
 ### Inherited By
-- [CKFetchDatabaseChangesOperation](ckfetchdatabasechangesoperation.md)
-- [CKFetchRecordChangesOperation](ckfetchrecordchangesoperation.md)
-- [CKFetchRecordZoneChangesOperation](ckfetchrecordzonechangesoperation.md)
-- [CKFetchRecordZonesOperation](ckfetchrecordzonesoperation.md)
-- [CKFetchRecordsOperation](ckfetchrecordsoperation.md)
-- [CKFetchSubscriptionsOperation](ckfetchsubscriptionsoperation.md)
-- [CKFetchWebAuthTokenOperation](ckfetchwebauthtokenoperation.md)
-- [CKModifyRecordZonesOperation](ckmodifyrecordzonesoperation.md)
-- [CKModifyRecordsOperation](ckmodifyrecordsoperation.md)
-- [CKModifySubscriptionsOperation](ckmodifysubscriptionsoperation.md)
-- [CKQueryOperation](ckqueryoperation.md)
+- [CKFetchDatabaseChangesOperation](./ckfetchdatabasechangesoperation.md)
+- [CKFetchRecordChangesOperation](./ckfetchrecordchangesoperation.md)
+- [CKFetchRecordZoneChangesOperation](./ckfetchrecordzonechangesoperation.md)
+- [CKFetchRecordZonesOperation](./ckfetchrecordzonesoperation.md)
+- [CKFetchRecordsOperation](./ckfetchrecordsoperation.md)
+- [CKFetchSubscriptionsOperation](./ckfetchsubscriptionsoperation.md)
+- [CKFetchWebAuthTokenOperation](./ckfetchwebauthtokenoperation.md)
+- [CKModifyRecordZonesOperation](./ckmodifyrecordzonesoperation.md)
+- [CKModifyRecordsOperation](./ckmodifyrecordsoperation.md)
+- [CKModifySubscriptionsOperation](./ckmodifysubscriptionsoperation.md)
+- [CKQueryOperation](./ckqueryoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

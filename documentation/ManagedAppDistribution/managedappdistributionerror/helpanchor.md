@@ -1,7 +1,8 @@
 # helpAnchor
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A link to help documentation.
 

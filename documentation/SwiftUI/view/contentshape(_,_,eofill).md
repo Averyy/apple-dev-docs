@@ -1,7 +1,8 @@
 # contentShape(_:_:eoFill:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the content shape for this view.
 
@@ -23,7 +24,7 @@ func contentShape<S>(_ kind: ContentShapeKinds, _ shape: S, eoFill: Bool = false
 
 ## Mentions
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
 #### Return Value
 
@@ -38,13 +39,13 @@ MyFocusableView()
     .contentShape(.focusEffect, Circle())
 ```
 
-You can apply multiple kinds of content shapes to the same view. For example, apply a [`interaction`](contentshapekinds/interaction.md) shape and [`focusEffect`](contentshapekinds/focuseffect.md) shape together to set both the hit-testing shape and focus ring shape on a view.
+You can apply multiple kinds of content shapes to the same view. For example, apply a [`interaction`](../contentshapekinds/interaction.md) shape and [`focusEffect`](../contentshapekinds/focuseffect.md) shape together to set both the hit-testing shape and focus ring shape on a view.
 
-#### Context Menu Drag Previews
+#### Context Menu & Drag Previews
 
-You can control the preview shown by the system for context menus or drags using the relevant content shape kind, like [`dragPreview`](contentshapekinds/dragpreview.md) and [`contextMenuPreview`](contentshapekinds/contextmenupreview.md).
+You can control the preview shown by the system for context menus or drags using the relevant content shape kind, like [`dragPreview`](../contentshapekinds/dragpreview.md) and [`contextMenuPreview`](../contentshapekinds/contextmenupreview.md).
 
-The following example creates a [`VStack`](vstack.md) of an [`Image`](image.md) and [`Text`](text.md) that has a context menu with a custom content shape:
+The following example creates a [`VStack`](../vstack.md) of an [`Image`](../image.md) and [`Text`](../text.md) that has a context menu with a custom content shape:
 
 ```swift
 VStack {
@@ -62,11 +63,11 @@ VStack {
 }
 ```
 
-When someone activates the context menu with an action like touch and hold in iOS or iPadOS, the system uses the [`Image`](image.md) as the preview for the context menu, applying the requested corner radius.
+When someone activates the context menu with an action like touch and hold in iOS or iPadOS, the system uses the [`Image`](../image.md) as the preview for the context menu, applying the requested corner radius.
 
-The content shape also supports applying modifiers such as [`inset(by:)`](insettableshape/inset(by:).md) to add padding.
+The content shape also supports applying modifiers such as [`inset(by:)`](../insettableshape/inset%28by%29.md) to add padding.
 
-> **Note**: Similar to [`focusEffect`](contentshapekinds/focuseffect.md), the [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) and [`dragPreview`](contentshapekinds/dragpreview.md) content shapes do not impact the hit-testing shape. In this example, someone can touch and hold anywhere on the [`VStack`](vstack.md) to activate the menu. If you only want the [`Image`](image.md) to activate the menu, apply [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) to the [`Image`](image.md) instead.
+> **Note**: Similar to [`focusEffect`](../contentshapekinds/focuseffect.md), the [`contextMenuPreview`](../contentshapekinds/contextmenupreview.md) and [`dragPreview`](../contentshapekinds/dragpreview.md) content shapes do not impact the hit-testing shape. In this example, someone can touch and hold anywhere on the [`VStack`](../vstack.md) to activate the menu. If you only want the [`Image`](../image.md) to activate the menu, apply [`contextMenu(menuItems:)`](./contextmenu%28menuitems%29.md) to the [`Image`](../image.md) instead.
 
 ## Parameters
 
@@ -76,11 +77,12 @@ The content shape also supports applying modifiers such as [`inset(by:)`](insett
 
 ## See Also
 
-- [func allowsTightening(Bool) -> some View](view/allowstightening(_:).md)
+### Controlling hit testing
+- [func allowsTightening(Bool) -> some View](./allowstightening%28_%29.md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
-- [func contentShape<S>(S, eoFill: Bool) -> some View](view/contentshape(_:eofill:).md)
+- [func contentShape<S>(S, eoFill: Bool) -> some View](./contentshape%28_,eofill%29.md)
   Defines the content shape for hit testing.
-- [struct ContentShapeKinds](contentshapekinds.md)
+- [struct ContentShapeKinds](../contentshapekinds.md)
   A kind for the content shape of a view.
 
 

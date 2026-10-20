@@ -1,7 +1,8 @@
 # cssm_tp_result_set
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,23 @@
 struct cssm_tp_result_set
 ```
 
+```c
+struct cssm_tp_result_set;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_tp_result_set-swift.struct/init.md)
-- [init(NumberOfResults: uint32, Results: UnsafeMutableRawPointer!)](cssm_tp_result_set-swift.struct/init(numberofresults:results:).md)
+- [init()](./cssm_tp_result_set-swift.struct/init%28%29.md)
+- [init(NumberOfResults: uint32, Results: UnsafeMutableRawPointer!)](./cssm_tp_result_set-swift.struct/init%28numberofresults,results%29.md)
 ### Instance Properties
-- [var NumberOfResults: uint32](cssm_tp_result_set-swift.struct/numberofresults.md)
-- [var Results: UnsafeMutableRawPointer!](cssm_tp_result_set-swift.struct/results.md)
+- [var NumberOfResults: uint32](./cssm_tp_result_set-swift.struct/numberofresults.md)
+- [var Results: UnsafeMutableRawPointer!](./cssm_tp_result_set-swift.struct/results.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

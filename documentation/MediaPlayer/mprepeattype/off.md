@@ -1,7 +1,8 @@
 # MPRepeatType.off
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Nothing is repeated during playback.
 
@@ -10,7 +11,7 @@ Nothing is repeated during playback.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,11 +21,16 @@ Nothing is repeated during playback.
 case off
 ```
 
+```c
+MPRepeatTypeOff
+```
+
 ## See Also
 
-- [MPRepeatType.one](mprepeattype/one.md)
+### Repeat types
+- [MPRepeatType.one](./one.md)
   A single item is repeated indefinitely.
-- [MPRepeatType.all](mprepeattype/all.md)
+- [MPRepeatType.all](./all.md)
   The current container or playlist is repeated indefinitely.
 
 

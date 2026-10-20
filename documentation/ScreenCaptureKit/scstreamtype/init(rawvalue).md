@@ -1,11 +1,14 @@
 # init(rawValue:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst 18.2+
-- macOS 14.0+
+- Mac Catalyst 18.2+ - Deprecated in 18.2
+- macOS 14.0+ - Deprecated in 15.0
+
+> **Deprecated**: Use SCShareableContentStyle instead
 
 ## Declaration
 

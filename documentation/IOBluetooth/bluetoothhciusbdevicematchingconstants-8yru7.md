@@ -1,15 +1,16 @@
 # BluetoothHCIUSBDeviceMatchingConstants
 
-**Framework**: IOBluetooth
+**Framework**: IOBluetooth  
+**Role**: API Collection
 
 Bluetooth USB device matching constants
 
 ## Topics
 
 ### Constants
-- [var kBluetoothHCITransportUSBClassCode: Int](kbluetoothhcitransportusbclasscode.md)
-- [var kBluetoothHCITransportUSBProtocolCode: Int](kbluetoothhcitransportusbprotocolcode.md)
-- [var kBluetoothHCITransportUSBSubClassCode: Int](kbluetoothhcitransportusbsubclasscode.md)
+- [var kBluetoothHCITransportUSBClassCode: Int](./kbluetoothhcitransportusbclasscode.md)
+- [var kBluetoothHCITransportUSBProtocolCode: Int](./kbluetoothhcitransportusbprotocolcode.md)
+- [var kBluetoothHCITransportUSBSubClassCode: Int](./kbluetoothhcitransportusbsubclasscode.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cellLayoutMarginsFollowReadableWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cell margins derive from the width of the readable content guide.
 
@@ -18,17 +19,23 @@ A Boolean value that indicates whether the cell margins derive from the width of
 var cellLayoutMarginsFollowReadableWidth: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL cellLayoutMarginsFollowReadableWidth;
+```
+
 ## See Also
 
-- [var readableContentGuide: UILayoutGuide](uiview/readablecontentguide.md)
+### Related Documentation
+- [var readableContentGuide: UILayoutGuide](../uiview/readablecontentguide.md)
   A layout guide representing an area with a readable width within the view.
-- [var rowHeight: CGFloat](uitableview/rowheight.md)
+### Configuring cell height and layout
+- [var rowHeight: CGFloat](./rowheight.md)
   The default height in points of each row in the table view.
-- [var estimatedRowHeight: CGFloat](uitableview/estimatedrowheight.md)
+- [var estimatedRowHeight: CGFloat](./estimatedrowheight.md)
   The estimated height of rows in the table view.
-- [var fillerRowHeight: CGFloat](uitableview/fillerrowheight.md)
+- [var fillerRowHeight: CGFloat](./fillerrowheight.md)
   The height for empty rows that fill the table view.
-- [var insetsContentViewsToSafeArea: Bool](uitableview/insetscontentviewstosafearea.md)
+- [var insetsContentViewsToSafeArea: Bool](./insetscontentviewstosafearea.md)
   A Boolean value that indicates whether the table view adjusts the content views of its cells, headers, and footers to fit within the safe area.
 
 

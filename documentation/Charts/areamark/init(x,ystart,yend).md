@@ -1,7 +1,8 @@
 # init(x:yStart:yEnd:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an area mark that plots values with a vertical interval.
 
@@ -35,9 +36,9 @@ Chart(data) { day in
 }
 ```
 
-![A chart that shows month names on the x-axis, ranging from January to October, and a number in the range 0 to 80 on the y-axis. A solid blue region spans the chart from left to right. The region is close to the middle of the y-axis on either end, and closer to the top of the chart in the middle. The region is thinner at the ends and thicker in the middle.](/images/com.apple.Charts/AreaMark-5-macOS@2x.png)
+![A chart that shows month names on the x-axis, ranging from January to October, and a number in the range 0 to 80 on the y-axis. A solid blue region spans the chart from left to right. The region is close to the middle of the y-axis on either end, and closer to the top of the chart in the middle. The region is thinner at the ends and thicker in the middle.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-5-macOS@2x.png)
 
-If you want to plot values that have a horiztonal interval, use [`init(xStart:xEnd:y:)`](areamark/init(xstart:xend:y:).md) instead.
+If you want to plot values that have a horiztonal interval, use [`init(xStart:xEnd:y:)`](./init%28xstart,xend,y%29.md) instead.
 
 ## Parameters
 
@@ -47,11 +48,12 @@ If you want to plot values that have a horiztonal interval, use [`init(xStart:xE
 
 ## See Also
 
-- [init<X, Y, S>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, series: PlottableValue<S>)](areamark/init(x:ystart:yend:series:).md)
+### Creating a range area chart
+- [init<X, Y, S>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, series: PlottableValue<S>)](./init%28x,ystart,yend,series%29.md)
   Creates an area mark that plots values with a vertical interval and associates it with the specified series.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>)](areamark/init(xstart:xend:y:).md)
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>)](./init%28xstart,xend,y%29.md)
   Creates an area mark that plots values with a horizontal interval.
-- [init<X, Y, S>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>)](areamark/init(xstart:xend:y:series:).md)
+- [init<X, Y, S>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>)](./init%28xstart,xend,y,series%29.md)
   Creates an area mark that plots values with a horizontal interval and associates it with the specified series.
 
 

@@ -1,12 +1,13 @@
 # NSButton.ButtonType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Button types that you can specify using [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
+Button types that you can specify using [`setButtonType(_:)`](../nsbuttoncell/setbuttontype%28_%29.md).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,52 +15,57 @@ Button types that you can specify using [`setButtonType(_:)`](nsbuttoncell/setbu
 enum ButtonType
 ```
 
+```c
+enum NSButtonType : NSUInteger;
+```
+
 #### Overview
 
-For more information, see [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
+For more information, see [`setButtonType(_:)`](../nsbuttoncell/setbuttontype%28_%29.md).
 
 ## Topics
 
 ### Configuring Button Behavior
-- [NSButton.ButtonType.momentaryPushIn](nsbutton/buttontype/momentarypushin.md)
+- [NSButton.ButtonType.momentaryPushIn](./buttontype/momentarypushin.md)
   A button that illuminates when the user clicks it.
-- [NSButton.ButtonType.momentaryLight](nsbutton/buttontype/momentarylight.md)
+- [NSButton.ButtonType.momentaryLight](./buttontype/momentarylight.md)
   A button that displays a highlight when the user clicks it and returns to its normal state when the user releases it.
-- [NSButton.ButtonType.momentaryChange](nsbutton/buttontype/momentarychange.md)
+- [NSButton.ButtonType.momentaryChange](./buttontype/momentarychange.md)
   A button that displays its alternate content when clicked and returns to its normal content when the user releases it.
-- [NSButton.ButtonType.pushOnPushOff](nsbutton/buttontype/pushonpushoff.md)
+- [NSButton.ButtonType.pushOnPushOff](./buttontype/pushonpushoff.md)
   A button that switches between on and off states with each click.
-- [NSButton.ButtonType.onOff](nsbutton/buttontype/onoff.md)
+- [NSButton.ButtonType.onOff](./buttontype/onoff.md)
   A button that switches between a normal and emphasized bezel on each click.
-- [NSButton.ButtonType.toggle](nsbutton/buttontype/toggle.md)
+- [NSButton.ButtonType.toggle](./buttontype/toggle.md)
   A button that switches between its normal and alternate content on each click.
-- [NSButton.ButtonType.switch](nsbutton/buttontype/switch.md)
+- [NSButton.ButtonType.switch](./buttontype/switch.md)
   A standard checkbox button.
-- [NSButton.ButtonType.radio](nsbutton/buttontype/radio.md)
+- [NSButton.ButtonType.radio](./buttontype/radio.md)
   A button that displays a single selected value from group of possible choices.
-- [NSButton.ButtonType.accelerator](nsbutton/buttontype/accelerator.md)
+- [NSButton.ButtonType.accelerator](./buttontype/accelerator.md)
   A button that sends repeating actions as pressure changes occur.
-- [NSButton.ButtonType.multiLevelAccelerator](nsbutton/buttontype/multilevelaccelerator.md)
+- [NSButton.ButtonType.multiLevelAccelerator](./buttontype/multilevelaccelerator.md)
   A button that allows for a configurable number of stepped pressure levels and provides tactile feedback as the user reaches each step.
 ### Deprecated
-- [Deprecated symbols](buttontype-deprecated-symbols.md)
+- [Deprecated symbols](../buttontype-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [init?(rawValue: UInt)](nsbutton/buttontype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./buttontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSButton.BezelStyle](nsbutton/bezelstyle-swift.enum.md)
+### Constants
+- [NSButton.BezelStyle](./bezelstyle-swift.enum.md)
   The set of bezel styles to style buttons in your app.
 
 

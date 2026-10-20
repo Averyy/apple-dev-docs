@@ -1,7 +1,8 @@
 # MigrationStatus.failure(_:)
 
 **Framework**: AppMigrationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The migration failed with an error.
 
@@ -17,11 +18,12 @@ case failure(any Error)
 
 #### Discussion
 
-Inspect the associated value to retrieve the [`Error`](https://developer.apple.com/documentation/swift/error) that caused migration to fail.
+Inspect the associated value to retrieve the [`Error`](../../Swift/error.md) that caused migration to fail.
 
 ## See Also
 
-- [MigrationStatus.success](migrationstatus/success.md)
+### Examining migration statuses
+- [MigrationStatus.success](./success.md)
   The migration completed successfully.
 
 

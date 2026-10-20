@@ -1,7 +1,8 @@
 # DynamicTypeSize.accessibility1
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The first accessibility size.
 
@@ -22,15 +23,16 @@ case accessibility1
 
 ## See Also
 
-- [DynamicTypeSize.accessibility2](dynamictypesize/accessibility2.md)
+### Getting accessibility type sizes
+- [DynamicTypeSize.accessibility2](./accessibility2.md)
   The second accessibility size.
-- [DynamicTypeSize.accessibility3](dynamictypesize/accessibility3.md)
+- [DynamicTypeSize.accessibility3](./accessibility3.md)
   The third accessibility size.
-- [DynamicTypeSize.accessibility4](dynamictypesize/accessibility4.md)
+- [DynamicTypeSize.accessibility4](./accessibility4.md)
   The fourth accessibility size.
-- [DynamicTypeSize.accessibility5](dynamictypesize/accessibility5.md)
+- [DynamicTypeSize.accessibility5](./accessibility5.md)
   The fifth accessibility size.
-- [var isAccessibilitySize: Bool](dynamictypesize/isaccessibilitysize.md)
+- [var isAccessibilitySize: Bool](./isaccessibilitysize.md)
   A Boolean value indicating whether the size is one that is associated with accessibility.
 
 

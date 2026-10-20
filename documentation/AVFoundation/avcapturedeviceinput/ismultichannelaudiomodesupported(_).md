@@ -1,7 +1,8 @@
 # isMultichannelAudioModeSupported(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that indicates whether the input supports the specified multichannel audio mode.
 
@@ -18,15 +19,19 @@ A Boolean value that indicates whether the input supports the specified multicha
 func isMultichannelAudioModeSupported(_ multichannelAudioMode: AVCaptureMultichannelAudioMode) -> Bool
 ```
 
+```objc
+- (BOOL) isMultichannelAudioModeSupported:(AVCaptureMultichannelAudioMode) multichannelAudioMode;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the input supports the mode; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the input supports the mode; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You can only set the [`multichannelAudioMode`](avcapturedeviceinput/multichannelaudiomode.md) property if the input supports the value.
+You can only set the [`multichannelAudioMode`](./multichannelaudiomode.md) property if the input supports the value.
 
-> **Note**:  Multichannel audio modes aren’t supported when used in with [`AVCaptureMultiCamSession`](avcapturemulticamsession.md).
+> **Note**:  Multichannel audio modes aren’t supported when used in with [`AVCaptureMultiCamSession`](../avcapturemulticamsession.md).
 
 ## Parameters
 
@@ -34,12 +39,13 @@ You can only set the [`multichannelAudioMode`](avcapturedeviceinput/multichannel
 
 ## See Also
 
-- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](avcapturedeviceinput/multichannelaudiomode.md)
+### Configuring audio properties
+- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](./multichannelaudiomode.md)
   The multichannel audio mode to apply when recording audio.
-- [enum AVCaptureMultichannelAudioMode](avcapturemultichannelaudiomode.md)
+- [enum AVCaptureMultichannelAudioMode](../avcapturemultichannelaudiomode.md)
   Constants that indicate the modes of multichannel audio.
-- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
-- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
+- [var isWindNoiseRemovalSupported: Bool](./iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](./iswindnoiseremovalenabled.md)
 
 
 ---

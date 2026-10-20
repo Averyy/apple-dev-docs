@@ -1,7 +1,8 @@
 # status
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that describes the lane’s status.
 
@@ -16,15 +17,20 @@ A value that describes the lane’s status.
 var status: CPLaneStatus { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CPLaneStatus status;
+```
+
 #### Discussion
 
-One of the [`CPLaneStatus`](cplanestatus.md) values that describes the lane’s status.
+One of the [`CPLaneStatus`](../cplanestatus.md) values that describes the lane’s status.
 
 ## See Also
 
-- [var primaryAngle: Measurement<UnitAngle>](cplane/primaryangle.md)
+### Properties
+- [var primaryAngle: Measurement<UnitAngle>](./primaryangle.md)
   A value that represents the angle the framework highlights if this lane is preferred or good.
-- [var secondaryAngles: [Measurement<UnitAngle>]](cplane/secondaryangles.md)
+- [var secondaryAngles: [Measurement<UnitAngle>]](./secondaryangles.md)
   A list of the remaining angles of this lane guidance.
 
 

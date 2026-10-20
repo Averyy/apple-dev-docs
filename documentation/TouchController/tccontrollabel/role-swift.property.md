@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the control label.
 
@@ -16,11 +17,16 @@ The type of the control label.
 var role: TCControlLabel.Role { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) TCControlLabelRole role;
+```
+
 ## See Also
 
-- [TCControlLabel.Role](tccontrollabel/role-swift.enum.md)
+### Inspecting the control
+- [TCControlLabel.Role](./role-swift.enum.md)
   Defines the role for a control label. This determines the type of control on the touch controller’s associated GCController.
-- [TCControlLabel.Role](tccontrollabel/role-swift.enum.md)
+- [TCControlLabel.Role](./role-swift.enum.md)
   Defines the role for a control label. This determines the type of control on the touch controller’s associated GCController.
 
 

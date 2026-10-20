@@ -1,6 +1,7 @@
 # TN3182: Adding privacy tracking keys to your privacy manifest
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
 
@@ -11,13 +12,13 @@ When you build an app or third-party SDK that contacts domains engaged in tracki
 1. Add the `NSPrivacyTracking` key and set its value to `true`.
 2. Add the `NSPrivacyTrackingDomains` key and set its value to a list of tracking domains.
 
-For more information about these keys and the privacy manifest, see [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files).
+For more information about these keys and the privacy manifest, see [Privacy manifest files](../BundleResources/privacy-manifest-files.md).
 
 This document describes how to add the `NSPrivacyTracking` and `NSPrivacyTrackingDomains` keys to your privacy manifest in Xcode. If you work outside of Xcode, review this document to learn about the expected structure of each key.
 
 > **Note**: Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
-#### Add the Privacy Tracking Key
+#### Add the privacy tracking key
 
 The `NSPrivacyTracking` key uses the following format:
 
@@ -36,9 +37,9 @@ To add the `NSPrivacyTracking` key to your privacy manifest:
 4. Confirm the value is `Boolean` in the Type column.
 5. Select `YES` from the pop-up menu in the Value column.
 
-#### Add a Tracking Domain to the Privacy Tracking Domains Key
+#### Add a tracking domain to the privacy tracking domains key
 
-Set the value of the `NSPrivacyTrackingDomains` key to a list of tracking domains in your privacy manifest. For more information about tracking domains, see “Configure a tracking domain” in [`TN3181: Debugging an invalid privacy manifest`](tn3181-debugging-invalid-privacy-manifest.md).
+Set the value of the `NSPrivacyTrackingDomains` key to a list of tracking domains in your privacy manifest. For more information about tracking domains, see “Configure a tracking domain” in [TN3181: Debugging an invalid privacy manifest](./tn3181-debugging-invalid-privacy-manifest.md).
 
 To add a tracking domain to the `NSPrivacyTrackingDomains` key in your privacy manifest:
 
@@ -48,7 +49,7 @@ To add a tracking domain to the `NSPrivacyTrackingDomains` key in your privacy m
 4. Click the disclosure triangle to the left of `NSPrivacyTrackingDomains` to reveal it.
 5. Click the Add button (+) beside `NSPrivacyTrackingDomains` to insert a tracking domain such as `mywebsite.example.com`.
 
-#### Add the Privacy Tracking Domains Key
+#### Add the privacy tracking domains key
 
 The `NSPrivacyTrackingDomains` key uses the following format:
 
@@ -60,7 +61,7 @@ The `NSPrivacyTrackingDomains` key uses the following format:
 </array>
 ```
 
-Each string value in the array identifies an internet domain your app or third-party SDK connects to that engages in tracking. For more information, see [`Add a tracking domain to the privacy tracking domains key`](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest#Add-a-tracking-domain-to-the-privacy-tracking-domains-key.md).
+Each string value in the array identifies an internet domain your app or third-party SDK connects to that engages in tracking. For more information, see [Add a tracking domain to the privacy tracking domains key](./tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md#Add-a-tracking-domain-to-the-privacy-tracking-domains-key).
 
 To add the `NSPrivacyTrackingDomains` key to your privacy manifest:
 
@@ -68,7 +69,7 @@ To add the `NSPrivacyTrackingDomains` key to your privacy manifest:
 2. Click the Add button (+) beside the `App Privacy Configuration` key in the property list editor.
 3. In the pop-up menu that appears, choose `NSPrivacyTrackingDomains`.
 4. Confirm the value is `Array` in the Type column.
-5. To add a tracking domain to the array, see [`Add a tracking domain to the privacy tracking domains key`](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest#Add-a-tracking-domain-to-the-privacy-tracking-domains-key.md).
+5. To add a tracking domain to the array, see [Add a tracking domain to the privacy tracking domains key](./tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md#Add-a-tracking-domain-to-the-privacy-tracking-domains-key).
 
 The following example declares one tracking domain for an app called `Sample`:
 
@@ -89,7 +90,7 @@ The following example declares one tracking domain for an app called `Sample`:
 
 **Property list**:
 
-![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains one tracking domain.](/images/com.apple.technotes/tn3182-privacy_tracking_single_domain@2x.png)
+![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains one tracking domain.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3182-privacy_tracking_single_domain@2x.png)
 
 Repeat step 5 for each additional tracking domain your app or third-party SDK contacts. The example below declares an additional tracking domain for `Sample`:
 
@@ -111,7 +112,7 @@ Repeat step 5 for each additional tracking domain your app or third-party SDK co
 
 **Property list**:
 
-![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains two tracking domains.](/images/com.apple.technotes/tn3182-privacy_tracking_multiple_domains@2x.png)
+![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains two tracking domains.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3182-privacy_tracking_multiple_domains@2x.png)
 
 #### Revision History
 
@@ -119,11 +120,12 @@ Repeat step 5 for each additional tracking domain your app or third-party SDK co
 
 ## See Also
 
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
+### Related Documentation
+- [TN3181: Debugging an invalid privacy manifest](./tn3181-debugging-invalid-privacy-manifest.md)
   Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
+- [TN3183: Adding required reason API entries to your privacy manifest](./tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
   Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
+- [TN3184: Adding data collection details to your privacy manifest](./tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
   Declare the data your app or third-party SDK collects in a privacy manifest.
 
 

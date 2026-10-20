@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Music Understanding  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ranged value by decoding from the given decoder.
 

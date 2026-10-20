@@ -1,7 +1,8 @@
 # dateRange(startingAt:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A time data source that produces `date..<max(date, Date.now)`.
 

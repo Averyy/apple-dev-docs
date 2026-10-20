@@ -1,6 +1,8 @@
 # Creating and Customizing the Touch Bar
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [CreatingAndCustomizingTheTouchBar.zip](https://docs-assets.developer.apple.com/published/4110bf888f80/CreatingAndCustomizingTheTouchBar.zip)
 
 Adopt Touch Bar support by displaying interactive content and controls for your macOS apps.
 
@@ -12,13 +14,13 @@ Adopt Touch Bar support by displaying interactive content and controls for your 
 
 You can use the Touch Bar to display interactive content and controls for supported models of MacBook Pro.
 
-This sample uses a split-view controller architecture to navigate various ways to implement the [`NSTouchBar`](nstouchbar.md) class. The `PrimaryViewController` class shows the available use cases. When you select one of the use cases, the secondary view shows what you can do with the Touch Bar controls.
+This sample uses a split-view controller architecture to navigate various ways to implement the [`NSTouchBar`](./nstouchbar.md) class. The `PrimaryViewController` class shows the available use cases. When you select one of the use cases, the secondary view shows what you can do with the Touch Bar controls.
 
 The description in each secondary view controller reflects its target item. For example, the `ButtonViewController` class shows how to use an `NSButton` object. The sample hosts all view controllers in separate storyboards.
 
-Refer to this sample if you’re looking for specific ways to use and customize the `NSTouchBar`. It shows how to create an [`NSTouchBarItem`](nstouchbaritem.md) for use with buttons, views, pickers, sliders, popovers, scrubbers, text fields, and text views.
+Refer to this sample if you’re looking for specific ways to use and customize the `NSTouchBar`. It shows how to create an [`NSTouchBarItem`](./nstouchbaritem.md) for use with buttons, views, pickers, sliders, popovers, scrubbers, text fields, and text views.
 
-The sample also displays a secondary window that shows a typical use case with the Touch Bar that uses an [`NSScrubber`](nsscrubber.md) to pick an image that changes the window background.
+The sample also displays a secondary window that shows a typical use case with the Touch Bar that uses an [`NSScrubber`](./nsscrubber.md) to pick an image that changes the window background.
 
 ##### Configure the Sample Code Project
 
@@ -30,7 +32,7 @@ When adopting Touch Bar support for your app, but running Xcode on a Mac without
 
 ##### Create the Touch Bar
 
-Create a Touch Bar by adding one to a view controller in the storyboard, or by creating one programmatically by overriding the [`NSResponder`](nsresponder.md) [`makeTouchBar()`](nsresponder/maketouchbar().md) function. The following example demonstrates overriding [`makeTouchBar()`](nsresponder/maketouchbar().md) for an [`NSViewController`](nsviewcontroller.md) that displays a color-picker button or [`NSColorPickerTouchBarItem`](nscolorpickertouchbaritem.md):
+Create a Touch Bar by adding one to a view controller in the storyboard, or by creating one programmatically by overriding the [`NSResponder`](./nsresponder.md) [`makeTouchBar()`](./nsresponder/maketouchbar%28%29.md) function. The following example demonstrates overriding [`makeTouchBar()`](./nsresponder/maketouchbar%28%29.md) for an [`NSViewController`](./nsviewcontroller.md) that displays a color-picker button or [`NSColorPickerTouchBarItem`](./nscolorpickertouchbaritem.md):
 
 ```swift
 override func makeTouchBar() -> NSTouchBar? {
@@ -48,7 +50,7 @@ override func makeTouchBar() -> NSTouchBar? {
 
 ##### Add Content to the Touch Bar
 
-Add content to the Touch Bar by adopting the [`NSTouchBarDelegate`](nstouchbardelegate.md) protocol and implementing [`touchBar(_:makeItemForIdentifier:)`](nstouchbardelegate/touchbar(_:makeitemforidentifier:).md). The following example adds a Sharing Service button:
+Add content to the Touch Bar by adopting the [`NSTouchBarDelegate`](./nstouchbardelegate.md) protocol and implementing [`touchBar(_:makeItemForIdentifier:)`](./nstouchbardelegate/touchbar%28_,makeitemforidentifier%29.md). The following example adds a Sharing Service button:
 
 ```swift
 func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
@@ -63,7 +65,7 @@ func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchB
 
 ##### Add a Scrubber to the Touch Bar
 
-The `NSScrubber` class provides a way to add a flexible, horizontally oriented picker. Add a scrubber view to an [`NSCustomTouchBarItem`](nscustomtouchbaritem.md), and that view adds a scrubber to the Touch Bar.
+The `NSScrubber` class provides a way to add a flexible, horizontally oriented picker. Add a scrubber view to an [`NSCustomTouchBarItem`](./nscustomtouchbaritem.md), and that view adds a scrubber to the Touch Bar.
 
 ```swift
 func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
@@ -98,7 +100,7 @@ func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchB
 
 ##### Add a Popover to the Touch Bar
 
-An [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) class shows its own Touch Bar when the user taps and holds on it. This class is a two-state control that can expand into its second state, which shows the contents of a bar it owns. The second Touch Bar displays when this item *pops*. The following example shows how to create an [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) with an [`NSScrubber`](nsscrubber.md) view with a set of numbered text items:
+An [`NSCustomTouchBarItem`](./nscustomtouchbaritem.md) class shows its own Touch Bar when the user taps and holds on it. This class is a two-state control that can expand into its second state, which shows the contents of a bar it owns. The second Touch Bar displays when this item *pops*. The following example shows how to create an [`NSPopoverTouchBarItem`](./nspopovertouchbaritem.md) with an [`NSScrubber`](./nsscrubber.md) view with a set of numbered text items:
 
 ```swift
 func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
@@ -130,13 +132,14 @@ func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchB
 
 ## See Also
 
-- [Integrating a Toolbar and Touch Bar into Your App](integrating-a-toolbar-and-touch-bar-into-your-app.md)
+### Essentials
+- [Integrating a Toolbar and Touch Bar into Your App](./integrating-a-toolbar-and-touch-bar-into-your-app.md)
   Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
-- [class NSTouchBar](nstouchbar.md)
+- [class NSTouchBar](./nstouchbar.md)
   An object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
-- [protocol NSTouchBarDelegate](nstouchbardelegate.md)
+- [protocol NSTouchBarDelegate](./nstouchbardelegate.md)
   A protocol that allows you to provide the items for a bar dynamically.
-- [protocol NSTouchBarProvider](nstouchbarprovider.md)
+- [protocol NSTouchBarProvider](./nstouchbarprovider.md)
   A protocol that an object adopts to create a bar object in your app.
 
 

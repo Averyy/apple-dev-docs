@@ -1,12 +1,15 @@
 # imageProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,13 +18,18 @@ The image to display.
 var imageProvider: CLKFullColorImageProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKFullColorImageProvider * imageProvider;
+```
+
 #### Discussion
 
 This image provider produces a full-color image, masked to a circle.
 
 ## See Also
 
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/gaugeprovider.md)
+### Setting the Complication Data
+- [var gaugeProvider: CLKGaugeProvider](./gaugeprovider.md)
   The gauge to display in the complication.
 
 

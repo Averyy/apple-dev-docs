@@ -1,7 +1,8 @@
 # CreditDebitIndicator.credit
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates an amount which increases an asset or decreases a liability.
 
@@ -17,7 +18,8 @@ case credit
 
 ## See Also
 
-- [CreditDebitIndicator.debit](creditdebitindicator/debit.md)
+### Enumeration Cases
+- [CreditDebitIndicator.debit](./debit.md)
   A value that indicates an amount which increases a liability or decreases an asset.
 
 

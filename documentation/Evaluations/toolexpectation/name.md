@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the tool that the evaluation expects the model to call.
 
@@ -22,13 +23,14 @@ var name: String { get }
 
 #### Discussion
 
-This is only valid for single expectations. Accessing this on an [`anyOrder(_:)`](toolexpectation/anyorder(_:).md) group is a programming error.
+This is only valid for single expectations. Accessing this on an [`anyOrder(_:)`](./anyorder%28_%29.md) group is a programming error.
 
 ## See Also
 
-- [var arguments: [ArgumentMatcher]](toolexpectation/arguments.md)
+### Accessing expectation details
+- [var arguments: [ArgumentMatcher]](./arguments.md)
   The argument matchers to validate against the tool call.
-- [var isAnyOrderGroup: Bool](toolexpectation/isanyordergroup.md)
+- [var isAnyOrderGroup: Bool](./isanyordergroup.md)
   A Boolean value that indicates whether this expectation represents a group of expectations that can be satisfied in any order.
 
 

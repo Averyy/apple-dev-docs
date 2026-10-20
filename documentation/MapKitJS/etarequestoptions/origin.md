@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The starting point for estimated arrival time requests.
 
@@ -10,23 +11,24 @@ The starting point for estimated arrival time requests.
 
 ## Declaration
 
-```swift
+```
 origin: CoordinateData;
 ```
 
 #### Discussion
 
-The [`origin`](etarequestoptions/origin.md) can be a [`Coordinate`](coordinate.md), a [`Place`](place.md) object, or a string that’s an address. Other services, such as Search and Geocoder, return [`Place`](place.md) objects.
+The [`origin`](./origin.md) can be a [`Coordinate`](../coordinate.md), a [`Place`](../place.md) object, or a string that’s an address. Other services, such as Search and Geocoder, return [`Place`](../place.md) objects.
 
 ## See Also
 
-- [departureDate](etarequestoptions/departuredate.md)
+### ETA Request
+- [departureDate](./departuredate.md)
   The time of departure used in an estimated arrival time request.
-- [destinations](etarequestoptions/destinations.md)
+- [destinations](./destinations.md)
   An array of coordinates that represent end points for estimated arrival time requests.
-- [transportType](etarequestoptions/transporttype.md)
+- [transportType](./transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
-- [signal](etarequestoptions/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

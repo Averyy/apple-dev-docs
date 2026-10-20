@@ -1,7 +1,8 @@
 # decodeXPCSubscribeParams(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 class func decodeXPCSubscribeParams(_ params: [String : Any]?) -> MTRSubscribeParams?
+```
+
+```objc
++ (MTRSubscribeParams *) decodeXPCSubscribeParams:(NSDictionary<NSString *,id> *) params;
 ```
 
 

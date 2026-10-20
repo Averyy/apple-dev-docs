@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The seats that can manipulate or interact with this equipment.
@@ -15,9 +16,15 @@ The seats that can manipulate or interact with this equipment.
 var seatControl: ControllingSeats { get }
 ```
 
+## Default Implementations
+
+### EquipmentState Implementations
+- [var seatControl: ControllingSeats](./seatcontrol-pb0s.md)
+
 ## See Also
 
-- [var lockedBy: PlayerIdentifier?](equipmentstate/lockedby.md)
+### Controlling the equipment
+- [var lockedBy: PlayerIdentifier?](./lockedby.md)
   The identifier for the player who exclusively controls the equipment.
 
 

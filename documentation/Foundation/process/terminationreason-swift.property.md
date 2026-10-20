@@ -1,7 +1,8 @@
 # terminationReason
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason the system terminated the task.
 
@@ -14,15 +15,20 @@ The reason the system terminated the task.
 var terminationReason: Process.TerminationReason { get }
 ```
 
+```objc
+@property (readonly) NSTaskTerminationReason terminationReason;
+```
+
 #### Return Value
 
-The termination status. The possible values are described in [`Process.TerminationReason`](process/terminationreason-swift.enum.md).
+The termination status. The possible values are described in [`Process.TerminationReason`](./terminationreason-swift.enum.md).
 
 ## See Also
 
-- [var isRunning: Bool](process/isrunning.md)
+### Querying the process state
+- [var isRunning: Bool](./isrunning.md)
   A status that indicates whether the receiver is still running.
-- [var terminationStatus: Int32](process/terminationstatus.md)
+- [var terminationStatus: Int32](./terminationstatus.md)
   The exit status the receiver’s executable returns.
 
 

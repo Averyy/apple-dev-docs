@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.load_video
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.Buffer.load_video.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.Buffer.load_video
-
- Table of contents 
-
-## Contents
-
-# mlx.data.Buffer.load_video
-
 **Buffer.load_video(*self: mlx.data._c.Buffer*, *key: str*, *prefix: str = ''*, *info: bool = False*, *from_memory: bool = False*, *output_key: str = ''*) → mlx.data._c.Buffer**
 : Load a video file.
 Decodes a video file to memory from a file or from memory. If `info`
@@ -39,5 +22,3 @@ of the video data. (default: False)
 instead of the file name. (default: False)
 **output_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to store the result in. If it is an empty
 string then overwrite the input. (default: ‘’)
-
-** Contents

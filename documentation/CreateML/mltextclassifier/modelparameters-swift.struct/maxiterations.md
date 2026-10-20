@@ -1,7 +1,8 @@
 # maxIterations
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of training iterations.
 
@@ -20,11 +21,12 @@ var maxIterations: Int? { get set }
 
 ## See Also
 
-- [var algorithm: MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelparameters-swift.struct/algorithm.md)
+### Accessing parameters
+- [var algorithm: MLTextClassifier.ModelAlgorithmType](./algorithm.md)
   The parameter’s algorithm setting.
-- [var language: NLLanguage?](mltextclassifier/modelparameters-swift.struct/language.md)
+- [var language: NLLanguage?](./language.md)
   The parameter’s language setting.
-- [var validation: MLTextClassifier.ModelParameters.ValidationData](mltextclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLTextClassifier.ModelParameters.ValidationData](./validation.md)
   The validation dataset.
 
 

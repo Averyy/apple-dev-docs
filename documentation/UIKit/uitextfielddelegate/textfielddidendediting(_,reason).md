@@ -1,7 +1,8 @@
 # textFieldDidEndEditing(_:reason:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when editing stops for the specified text field, and the reason it stopped.
 
@@ -18,11 +19,15 @@ Tells the delegate when editing stops for the specified text field, and the reas
 optional func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason)
 ```
 
+```objc
+- (void) textFieldDidEndEditing:(UITextField *) textField reason:(UITextFieldDidEndEditingReason) reason;
+```
+
 #### Discussion
 
 This method is called after the text field resigns its first responder status. You can use this method to update your delegate’s state information. For example, you might use this method to hide overlay views that should be visible only while editing.
 
-Implementation of this method by the delegate is optional. UIKit calls this method in preference to the [`textFieldDidEndEditing(_:)`](uitextfielddelegate/textfielddidendediting(_:).md) method.
+Implementation of this method by the delegate is optional. UIKit calls this method in preference to the [`textFieldDidEndEditing(_:)`](./textfielddidendediting%28_%29.md) method.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ Implementation of this method by the delegate is optional. UIKit calls this meth
 
 ## See Also
 
-- [func textFieldShouldBeginEditing(UITextField) -> Bool](uitextfielddelegate/textfieldshouldbeginediting(_:).md)
+### Managing editing
+- [func textFieldShouldBeginEditing(UITextField) -> Bool](./textfieldshouldbeginediting%28_%29.md)
   Asks the delegate whether to begin editing in the specified text field.
-- [func textFieldDidBeginEditing(UITextField)](uitextfielddelegate/textfielddidbeginediting(_:).md)
+- [func textFieldDidBeginEditing(UITextField)](./textfielddidbeginediting%28_%29.md)
   Tells the delegate when editing begins in the specified text field.
-- [func textFieldShouldEndEditing(UITextField) -> Bool](uitextfielddelegate/textfieldshouldendediting(_:).md)
+- [func textFieldShouldEndEditing(UITextField) -> Bool](./textfieldshouldendediting%28_%29.md)
   Asks the delegate whether to stop editing in the specified text field.
-- [func textFieldDidEndEditing(UITextField)](uitextfielddelegate/textfielddidendediting(_:).md)
+- [func textFieldDidEndEditing(UITextField)](./textfielddidendediting%28_%29.md)
   Tells the delegate when editing stops for the specified text field.
-- [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
+- [UITextField.DidEndEditingReason](../uitextfield/didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
 
 

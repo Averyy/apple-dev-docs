@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random Curve25519 private key for key agreement.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init<D>(rawRepresentation: D) throws](curve25519/keyagreement/privatekey/init(rawrepresentation:).md)
+### Creating a private key
+- [init<D>(rawRepresentation: D) throws](./init%28rawrepresentation%29.md)
   Creates a Curve25519 private key for key agreement from a collection of bytes.
 
 

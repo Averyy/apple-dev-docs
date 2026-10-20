@@ -1,18 +1,19 @@
 # ReportingCampaign.TargetCpa
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ReportingCampaign.TargetCpa
 ```
 
 ## Relationships
 
 ### Inherits From
-- [Money](money.md)
+- [Money](../money.md)
 
 
 ---

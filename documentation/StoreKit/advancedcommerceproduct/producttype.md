@@ -1,7 +1,8 @@
 # AdvancedCommerceProduct.ProductType
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -20,9 +21,10 @@ typealias ProductType = Product.ProductType
 
 ## See Also
 
-- [let id: AdvancedCommerceProduct.ID](advancedcommerceproduct/id.md)
+### Getting the product ID and type
+- [let id: AdvancedCommerceProduct.ID](./id.md)
   The generic product ID.
-- [let type: AdvancedCommerceProduct.ProductType](advancedcommerceproduct/type.md)
+- [let type: AdvancedCommerceProduct.ProductType](./type.md)
   The type of the product.
 
 

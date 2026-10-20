@@ -1,7 +1,8 @@
 # tabBarController(_:tab:operationForAcceptingItemsFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a drop operation to determine if drag items can be dropped into the specified @c tab
 
@@ -17,9 +18,13 @@ Asks the delegate for a drop operation to determine if drag items can be dropped
 optional func tabBarController(_ tabBarController: UITabBarController, tab: UITab, operationForAcceptingItemsFrom session: any UIDropSession) -> UIDropOperation
 ```
 
+```objc
+- (UIDropOperation) tabBarController:(UITabBarController *) tabBarController tab:(UITab *) tab operationForAcceptingItemsFromDropSession:(id<UIDropSession>) session;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 #### Discussion
 

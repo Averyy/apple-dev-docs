@@ -1,7 +1,8 @@
 # HMServiceTypeStatelessProgrammableSwitch
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A stateless programmable switch service.
 
@@ -19,15 +20,20 @@ A stateless programmable switch service.
 let HMServiceTypeStatelessProgrammableSwitch: String
 ```
 
+```c
+extern NSString * const HMServiceTypeStatelessProgrammableSwitch;
+```
+
 ## See Also
 
-- [let HMServiceTypeSwitch: String](hmservicetypeswitch.md)
+### Power and Switches
+- [let HMServiceTypeSwitch: String](./hmservicetypeswitch.md)
   A switch service.
-- [let HMServiceTypeBattery: String](hmservicetypebattery.md)
+- [let HMServiceTypeBattery: String](./hmservicetypebattery.md)
   A battery service.
-- [let HMServiceTypeOutlet: String](hmservicetypeoutlet.md)
+- [let HMServiceTypeOutlet: String](./hmservicetypeoutlet.md)
   An outlet service.
-- [let HMServiceTypeStatefulProgrammableSwitch: String](hmservicetypestatefulprogrammableswitch.md)
+- [let HMServiceTypeStatefulProgrammableSwitch: String](./hmservicetypestatefulprogrammableswitch.md)
   A stateful programmable switch service.
 
 

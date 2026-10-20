@@ -1,7 +1,8 @@
 # init(appEntity:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new searchable item with the relevant fields populated from the provided app entity.
 
@@ -24,15 +25,16 @@ convenience init(appEntity: some IndexedEntity)
 
 ## See Also
 
-- [init(uniqueIdentifier: String?, domainIdentifier: String?, attributeSet: CSSearchableItemAttributeSet)](cssearchableitem/init(uniqueidentifier:domainidentifier:attributeset:).md)
+### Getting a searchable item
+- [init(uniqueIdentifier: String?, domainIdentifier: String?, attributeSet: CSSearchableItemAttributeSet)](./init%28uniqueidentifier,domainidentifier,attributeset%29.md)
   Returns a searchable item associated with the specified identifier, domain identifier, and attribute set.
-- [convenience init(appEntity: some IndexedEntity) async](cssearchableitem/init(appentity:)-3hv5.md)
+- [convenience init(appEntity: some IndexedEntity) async](./init%28appentity%29-3hv5.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
-- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:)-7h9s.md)
+- [convenience init<Entity>(appEntity: Entity, priority: Int)](./init%28appentity,priority%29-7h9s.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity.
-- [convenience init<Entity>(appEntity: Entity, priority: Int) async](cssearchableitem/init(appentity:priority:)-7xlow.md)
+- [convenience init<Entity>(appEntity: Entity, priority: Int) async](./init%28appentity,priority%29-7xlow.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
-- [init?(coder: NSCoder)](cssearchableitem/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

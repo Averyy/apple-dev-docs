@@ -1,7 +1,8 @@
 # getDirection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Gets the direction of memory transfers associated with the descriptor. 
 
@@ -10,11 +11,11 @@ Gets the direction of memory transfers associated with the descriptor.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IODirection getDirection(void);
 ```
 
-#### Return_value
+#### Return Value
 
 The transfer direction. 
 
@@ -24,18 +25,19 @@ This method returns the direction with which the memory descriptor was created.
 
 ## See Also
 
-- [getDirection](iomemorydescriptor/1812765-getdirection.md)
+### Getting the Descriptor Information
+- [getDirection](./api-1812765-getdirection.md)
   Gets the direction of memory transfers associated with the descriptor. 
-- [getLength](iomemorydescriptor/1812776-getlength.md)
+- [getLength](./api-1812776-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- getLength](iomemorydescriptor/1442036-getlength.md)
+- [- getLength](./api-1442036-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- GetLength](iomemorydescriptor/3180642-getlength.md)
+- [- GetLength](./api-3180642-getlength.md)
   Returns the length of the memory block represented by this object.
-- [- getDMAMapLength](iomemorydescriptor/3553361-getdmamaplength.md)
-- [- getFlags](iomemorydescriptor/2870265-getflags.md)
+- [- getDMAMapLength](./api-3553361-getdmamaplength.md)
+- [- getFlags](./api-2870265-getflags.md)
   Returns the options used to create the memory descriptor.
-- [- getMetaClass](iomemorydescriptor/1442096-getmetaclass.md)
+- [- getMetaClass](./api-1442096-getmetaclass.md)
 
 
 ---

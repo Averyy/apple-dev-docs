@@ -1,7 +1,8 @@
 # run(_:session:arConfiguration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the spatial tracking session with a spatial tracking configuration, an AR session, and an AR configuration.
 
@@ -22,7 +23,7 @@ The unavailable capabilities based on the hardware and the user authorization.
 
 #### Discussion
 
-You manage and run the [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) for the `SpatialTrackingSession`.
+You manage and run the [`ARSession`](../../ARKit/arsession.md) for the `SpatialTrackingSession`.
 
 ## Parameters
 

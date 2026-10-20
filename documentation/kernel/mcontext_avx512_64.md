@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mcontext_avx512_64 {
     ...
 };
@@ -17,9 +17,9 @@ struct mcontext_avx512_64 {
 ## Topics
 
 ### Instance Properties
-- [es](mcontext_avx512_64/2870590-es.md)
-- [fs](mcontext_avx512_64/2870585-fs.md)
-- [ss](mcontext_avx512_64/2870591-ss.md)
+- [es](./mcontext_avx512_64/api-2870590-es.md)
+- [fs](./mcontext_avx512_64/api-2870585-fs.md)
+- [ss](./mcontext_avx512_64/api-2870591-ss.md)
 
 
 ---

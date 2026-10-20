@@ -1,6 +1,7 @@
 # Adding an AirPlay button to your Safari media controls
 
-**Framework**: WebKit JS
+**Framework**: WebKit JS  
+**Role**: Article
 
 Create a custom control that adds AirPlay to your Safari media player. 
 
@@ -8,7 +9,7 @@ Create a custom control that adds AirPlay to your Safari media player.
 
 Although default controls are available for audio and video elements in your Safari webpage, you can also create your own custom media controls. One of the custom controls you should add is an AirPlay button.
 
-##### 2940017
+##### Write markup for a custom control 
 
 In this example, the custom controls for a video have only a Play button and a hidden Pause button: 
 
@@ -20,7 +21,7 @@ In this example, the custom controls for a video have only a Play button and a h
 </div>
 ```
 
-##### 2940019
+##### Add an AirPlay element to your markup 
 
 Add markup for the AirPlay button, setting it to hidden by default to mimic the behavior of the AirPlay button in default controls. The default button appears only when AirPlay is available.
 
@@ -33,7 +34,7 @@ Add markup for the AirPlay button, setting it to hidden by default to mimic the 
 </div> 
 ```
 
-##### 2940021
+##### Add an event listener 
 
 To show the AirPlay button when AirPlay is available, you add an event listener for the `webkitplaybacktargetavailabilitychanged` event. This event detects when AirPlay availability changes, and it changes the visibility of the AirPlay button from the above default markup. 
 
@@ -56,7 +57,7 @@ if (window.WebKitPlaybackTargetAvailabilityEvent) {
 } 
 ```
 
-##### 2940025
+##### Select the AirPlay device 
 
 Add this block of code to use the native AirPlay route picker in your controls. With this route picker, you can add and select an available AirPlay device:
 
@@ -70,7 +71,7 @@ airPlayButton.addEventListener('click', function(event) {
 });
 ```
 
-##### 2940027
+##### Ensure that styles persist when playing over AirPlay 
 
 Use the code below to listen for the event `webkitcurrentplaybacktargetiswirelesschanged`. This event fires when a media element starts or stops AirPlay playback. Use this event to update styles.
 
@@ -87,7 +88,8 @@ Use the code below to listen for the event `webkitcurrentplaybacktargetiswireles
 
 ## See Also
 
-- [Adding Picture in Picture to your Safari media controls](adding_picture_in_picture_to_your_safari_media_controls.md)
+### Essentials
+- [Adding Picture in Picture to your Safari media controls](./adding_picture_in_picture_to_your_safari_media_controls.md)
   Create a custom control that adds Picture in Picture to your Safari media player. 
 
 

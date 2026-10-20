@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.0+
@@ -12,9 +13,14 @@
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](nstextblock/init.md)
+### Creating text blocks
+- [init()](./init%28%29.md)
   Initializes and returns an empty text block object.
 
 

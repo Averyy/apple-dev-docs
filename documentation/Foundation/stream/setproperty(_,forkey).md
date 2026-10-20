@@ -1,7 +1,8 @@
 # setProperty(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to set the value of a given property of the receiver and returns a Boolean value that indicates whether the value is accepted by the receiver.
 
@@ -20,9 +21,13 @@ Attempts to set the value of a given property of the receiver and returns a Bool
 func setProperty(_ property: Any?, forKey key: Stream.PropertyKey) -> Bool
 ```
 
+```objc
+- (BOOL) setProperty:(id) property forKey:(NSStreamPropertyKey) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value is accepted by the receiver, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the value is accepted by the receiver, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ func setProperty(_ property: Any?, forKey key: Stream.PropertyKey) -> Bool
 
 ## See Also
 
-- [func property(forKey: Stream.PropertyKey) -> Any?](stream/property(forkey:).md)
+### Configuring Streams
+- [func property(forKey: Stream.PropertyKey) -> Any?](./property%28forkey%29.md)
   Returns the receiver’s property for a given key.
-- [var delegate: (any StreamDelegate)?](stream/delegate.md)
+- [var delegate: (any StreamDelegate)?](./delegate.md)
   Sets the receiver’s delegate.
 
 

@@ -1,14 +1,15 @@
 # sysctl_register_fixed
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.12
 
 ## Declaration
 
-```swift
+```c
 void sysctl_register_fixed(void);
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a Boolean value that indicates whether the interaction can begin at the given point.
@@ -29,6 +30,12 @@ The system calls this method once for each type of interaction. The default valu
 - `overlayView`: The overlay view for which interaction can begin.
 - `point`: The point where the interaction can begin.
 - `analysisType`: The type of interaction that can begin.
+
+## Default Implementations
+
+### ImageAnalysisOverlayViewDelegate Implementations
+- [func overlayView(ImageAnalysisOverlayView, shouldBeginAt: CGPoint, forAnalysisType: ImageAnalysisOverlayView.InteractionTypes) -> Bool](./overlayview%28_,shouldbeginat,foranalysistype%29-35czq.md)
+  Indicates whether interaction begins at the given point for the specified interaction type.
 
 
 ---

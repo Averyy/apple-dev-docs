@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next element in the sequence.
 

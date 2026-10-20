@@ -1,7 +1,8 @@
 # protocol
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol for this group.
 
@@ -20,19 +21,24 @@ The protocol for this group.
 var `protocol`: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * protocol;
+```
+
 #### Discussion
 
-This property returns an `NSNumber` object containing an `NSUInteger` value corresponding to a member of the [`TKSmartCardProtocol`](tksmartcardprotocol.md) enumeration.
+This property returns an `NSNumber` object containing an `NSUInteger` value corresponding to a member of the [`TKSmartCardProtocol`](../../tksmartcardprotocol.md) enumeration.
 
 This property is `nil` for the first interface group (global), as it has no assigned protocol.
 
 ## See Also
 
-- [var ta: NSNumber?](tksmartcardatr/interfacegroup/ta.md)
+### Accessing Interface Group Protocol and Bytes
+- [var ta: NSNumber?](./ta.md)
   The TA interface byte of ATR group, or `nil` if TA is not present.
-- [var tb: NSNumber?](tksmartcardatr/interfacegroup/tb.md)
+- [var tb: NSNumber?](./tb.md)
   The TB interface byte of ATR group, or `nil` if TB is not present.
-- [var tc: NSNumber?](tksmartcardatr/interfacegroup/tc.md)
+- [var tc: NSNumber?](./tc.md)
   The TC interface byte of ATR group, or `nil` if TC is not present.
 
 

@@ -1,7 +1,8 @@
 # client
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object the protocol uses to communicate with the URL loading system.
 
@@ -20,15 +21,20 @@ The object the protocol uses to communicate with the URL loading system.
 var client: (any URLProtocolClient)? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) id<NSURLProtocolClient> client;
+```
+
 ## See Also
 
-- [var cachedResponse: CachedURLResponse?](urlprotocol/cachedresponse.md)
+### Getting protocol attributes
+- [var cachedResponse: CachedURLResponse?](./cachedresponse.md)
   The protocol’s cached response.
-- [protocol URLProtocolClient](urlprotocolclient.md)
-  The interface used by [`URLProtocol`](urlprotocol.md) subclasses to communicate with the URL Loading System.
-- [var request: URLRequest](urlprotocol/request.md)
+- [protocol URLProtocolClient](../urlprotocolclient.md)
+  The interface used by [`URLProtocol`](../urlprotocol.md) subclasses to communicate with the URL Loading System.
+- [var request: URLRequest](./request.md)
   The protocol’s request.
-- [var task: URLSessionTask?](urlprotocol/task.md)
+- [var task: URLSessionTask?](./task.md)
   The protocol’s task.
 
 

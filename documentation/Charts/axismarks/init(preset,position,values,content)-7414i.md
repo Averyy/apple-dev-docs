@@ -1,7 +1,8 @@
 # init(preset:position:values:content:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates axis markers with the given properties,will override default markers.
 

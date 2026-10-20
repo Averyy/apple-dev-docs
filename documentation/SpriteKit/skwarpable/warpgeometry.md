@@ -2,6 +2,7 @@
 
 **Framework**: SpriteKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The warp geometry used to define the distortion.
@@ -21,13 +22,18 @@ The warp geometry used to define the distortion.
 var warpGeometry: SKWarpGeometry? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) SKWarpGeometry * warpGeometry;
+```
+
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Animate the Warping of a Sprite](../animate-the-warping-of-a-sprite.md)
 
 ## See Also
 
-- [var subdivisionLevels: Int](skwarpable/subdivisionlevels.md)
+### Instance Properties
+- [var subdivisionLevels: Int](./subdivisionlevels.md)
   The maximum number of subdivision iterations used to generate the final vertices.
 
 

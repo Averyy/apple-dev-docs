@@ -1,7 +1,8 @@
 # insert(_:afterItem:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the provided section snapshot immediately after the item with the specified identifier in the section snapshot.
 
@@ -18,13 +19,18 @@ Inserts the provided section snapshot immediately after the item with the specif
 func insert(_ snapshot: NSDiffableDataSourceSectionSnapshotReference, afterItem item: Any) -> Any
 ```
 
+```objc
+- (ItemIdentifierType) insertSnapshot:(NSDiffableDataSourceSectionSnapshot<id> *) snapshot afterItem:(ItemIdentifierType) item;
+```
+
 ## See Also
 
-- [func insertItems([Any], afterItem: Any)](nsdiffabledatasourcesectionsnapshotreference/insertitems(_:afteritem:).md)
+### Inserting items
+- [func insertItems([Any], afterItem: Any)](./insertitems%28_,afteritem%29.md)
   Inserts the provided items immediately after the item with the specified identifier in the section snapshot.
-- [func insert(NSDiffableDataSourceSectionSnapshotReference, beforeItem: Any)](nsdiffabledatasourcesectionsnapshotreference/insert(_:beforeitem:).md)
+- [func insert(NSDiffableDataSourceSectionSnapshotReference, beforeItem: Any)](./insert%28_,beforeitem%29.md)
   Inserts the provided section snapshot immediately before the item with the specified identifier in the section snapshot.
-- [func insertItems([Any], beforeItem: Any)](nsdiffabledatasourcesectionsnapshotreference/insertitems(_:beforeitem:).md)
+- [func insertItems([Any], beforeItem: Any)](./insertitems%28_,beforeitem%29.md)
   Inserts the provided items immediately before the item with the specified identifier in the section snapshot.
 
 

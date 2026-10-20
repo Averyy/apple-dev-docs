@@ -1,7 +1,8 @@
 # Product.Executable
 
 **Framework**: PackageDescription  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The executable product of a Swift package.
 
@@ -14,20 +15,21 @@ final class Executable
 ## Topics
 
 ### Describing an executable product
-- [let targets: [String]](product/executable/targets.md)
+- [let targets: [String]](./executable/targets.md)
   The names of the targets in this product.
 
 ## Relationships
 
 ### Inherits From
-- [Product](product.md)
+- [Product](../product.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func executable(name: String, targets: [String]) -> Product](product/executable(name:targets:).md)
+### Creating an Executable Product
+- [static func executable(name: String, targets: [String]) -> Product](./executable%28name,targets%29.md)
   Creates an executable package product.
 
 

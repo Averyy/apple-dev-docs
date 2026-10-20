@@ -1,7 +1,8 @@
 # appInitiatedDisconnect
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A disconnect reason indicating the disconnect was initiated by the application.
 
@@ -16,7 +17,7 @@ static var appInitiatedDisconnect: FoveatedStreamingSession.DisconnectReason { g
 
 #### Discussion
 
-This disconnect reason is given after you call [`disconnect()`](foveatedstreamingsession/disconnect().md), or when the person disconnects from the streaming session via system UI.
+This disconnect reason is given after you call [`disconnect()`](../disconnect%28%29.md), or when the person disconnects from the streaming session via system UI.
 
 
 ---

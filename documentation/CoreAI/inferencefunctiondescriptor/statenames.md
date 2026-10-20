@@ -1,7 +1,8 @@
 # stateNames
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the function’s states.
 
@@ -20,11 +21,12 @@ var stateNames: [String] { get }
 
 #### Discussion
 
-States are function arguments that the function both reads and writes during inference. You must provide a mutable view for every state when calling [`run(inputs:states:outputViews:)`](inferencefunction/run(inputs:states:outputviews:)-14emi.md).
+States are function arguments that the function both reads and writes during inference. You must provide a mutable view for every state when calling [`run(inputs:states:outputViews:)`](../inferencefunction/run%28inputs,states,outputviews%29-14emi.md).
 
 ## See Also
 
-- [func stateDescriptor(of: String) -> InferenceValue.Descriptor?](inferencefunctiondescriptor/statedescriptor(of:).md)
+### Describing state
+- [func stateDescriptor(of: String) -> InferenceValue.Descriptor?](./statedescriptor%28of%29.md)
   Returns the descriptor for the specified state.
 
 

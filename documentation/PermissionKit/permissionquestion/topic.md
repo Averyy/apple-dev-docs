@@ -1,7 +1,8 @@
 # topic
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A topic that can be used to interpret a person’s request.
 
@@ -20,9 +21,10 @@ final let topic: Topic
 
 ## See Also
 
-- [let id: UUID](permissionquestion/id.md)
+### Accessing properties
+- [let id: UUID](./id.md)
   A unique identifier for the question.
-- [var expirationDate: Date?](permissionquestion/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date that this question expires, if any.
 
 

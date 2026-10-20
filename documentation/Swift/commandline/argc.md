@@ -1,7 +1,8 @@
 # argc
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Access to the raw argc value from C.
 
@@ -22,7 +23,8 @@ static var argc: Int32 { get }
 
 ## See Also
 
-- [static var unsafeArgv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>](commandline/unsafeargv.md)
+### Accessing Raw Argument Data
+- [static var unsafeArgv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>](./unsafeargv.md)
   Access to the raw argv value from C.
 
 

@@ -1,11 +1,12 @@
 # IntentValueExpressing Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func makeExpression() -> IntentValueExpression](intentvaluecontainer/makeexpression.md)
+- [func makeExpression() -> IntentValueExpression](./makeexpression%28%29.md)
   Creates an intent value expression that represents this container.
 
 

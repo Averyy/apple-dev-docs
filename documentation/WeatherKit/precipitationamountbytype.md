@@ -1,7 +1,8 @@
 # PrecipitationAmountByType
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that provides a breakdown of amounts of all forms of precipitation that is expected to occur over a period of time.
 
@@ -23,27 +24,27 @@ struct PrecipitationAmountByType
 ## Topics
 
 ### Instance Properties
-- [var hail: Measurement<UnitLength>](precipitationamountbytype/hail.md)
+- [var hail: Measurement<UnitLength>](./precipitationamountbytype/hail.md)
   The amount of hail for the period.
-- [var mixed: Measurement<UnitLength>](precipitationamountbytype/mixed.md)
+- [var mixed: Measurement<UnitLength>](./precipitationamountbytype/mixed.md)
   The amount of wintry mix for the period.
-- [var precipitation: Measurement<UnitLength>](precipitationamountbytype/precipitation.md)
+- [var precipitation: Measurement<UnitLength>](./precipitationamountbytype/precipitation.md)
   The amount of liquid equivalent of all precipitation for the period.
-- [var rainfall: Measurement<UnitLength>](precipitationamountbytype/rainfall.md)
+- [var rainfall: Measurement<UnitLength>](./precipitationamountbytype/rainfall.md)
   The amount of rainfall for the period.
-- [var sleet: Measurement<UnitLength>](precipitationamountbytype/sleet.md)
+- [var sleet: Measurement<UnitLength>](./precipitationamountbytype/sleet.md)
   The amount of sleet for the period.
-- [var snowfallAmount: SnowfallAmount](precipitationamountbytype/snowfallamount.md)
+- [var snowfallAmount: SnowfallAmount](./precipitationamountbytype/snowfallamount.md)
   Describes the amount of snowfall for the period.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

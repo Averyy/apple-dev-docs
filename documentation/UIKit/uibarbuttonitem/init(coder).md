@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates an item from data in an unarchiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Creates an item from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: An unarchiver object.
 
 ## See Also
 
-- [convenience init(title: String?, image: UIImage?, primaryAction: UIAction?, menu: UIMenu?)](uibarbuttonitem/init(title:image:primaryaction:menu:).md)
+### Creating items
+- [convenience init(title: String?, image: UIImage?, primaryAction: UIAction?, menu: UIMenu?)](./init%28title,image,primaryaction,menu%29.md)
   Creates a plain-style item using the specified title, image, primary action, and context menu.
-- [convenience init(title: String?, image: UIImage?, target: AnyObject?, action: Selector?, menu: UIMenu?)](uibarbuttonitem/init(title:image:target:action:menu:).md)
+- [convenience init(title: String?, image: UIImage?, target: AnyObject?, action: Selector?, menu: UIMenu?)](./init%28title,image,target,action,menu%29.md)
   Creates a plain-style item using the specified title, image, target, action, and context menu.
-- [init()](uibarbuttonitem/init.md)
+- [init()](./init%28%29.md)
   Initializes the item to its default state.
 
 

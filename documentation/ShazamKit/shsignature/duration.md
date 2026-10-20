@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the audio you use to generate the signature.
 
@@ -20,13 +21,26 @@ The duration of the audio you use to generate the signature.
 var duration: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval duration;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) NSTimeInterval duration;
+```
+
 #### Discussion
 
 Audio that contains periods of silence may result in a duration value that’s shorter than the full duration of the original audio track.
 
 ## See Also
 
-- [var dataRepresentation: Data](shsignature/datarepresentation.md)
+### Reading signature information
+- [var dataRepresentation: Data](./datarepresentation.md)
   The raw data for the signature.
 
 

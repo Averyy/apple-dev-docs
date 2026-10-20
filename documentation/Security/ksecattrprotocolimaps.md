@@ -1,7 +1,8 @@
 # kSecAttrProtocolIMAPS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 IMAP over TLS/SSL.
 
@@ -18,6 +19,10 @@ IMAP over TLS/SSL.
 
 ```swift
 let kSecAttrProtocolIMAPS: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolIMAPS;
 ```
 
 

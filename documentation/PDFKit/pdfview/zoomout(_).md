@@ -1,7 +1,8 @@
 # zoomOut(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Zooms out by decreasing the scaling factor.
 
@@ -20,17 +21,22 @@ Zooms out by decreasing the scaling factor.
 func zoomOut(_ sender: Any?)
 ```
 
+```objc
+- (void) zoomOut:(id) sender;
+```
+
 #### Discussion
 
 Each invocation of `zoomOut` divides the scaling factor by the square root of 2.
 
 ## See Also
 
-- [func zoomIn(Any?)](pdfview/zoomin(_:).md)
+### Zooming in a PDF View
+- [func zoomIn(Any?)](./zoomin%28_%29.md)
   Zooms in by increasing the scaling factor.
-- [var canZoomIn: Bool](pdfview/canzoomin.md)
+- [var canZoomIn: Bool](./canzoomin.md)
   Returns a Boolean value indicating whether the user can magnify the view and zoom in.
-- [var canZoomOut: Bool](pdfview/canzoomout.md)
+- [var canZoomOut: Bool](./canzoomout.md)
   Returns a Boolean value indicating whether the user can view an expanded area and zoom out.
 
 

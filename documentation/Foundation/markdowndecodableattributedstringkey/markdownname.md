@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The Markdown name associated with an attributed string key.
@@ -20,6 +21,12 @@ The Markdown name associated with an attributed string key.
 ```swift
 static var markdownName: String { get }
 ```
+
+## Default Implementations
+
+### MarkdownDecodableAttributedStringKey Implementations
+- [static var markdownName: String](./markdownname-5szep.md)
+  The Markdown name associated with an attributed string key, as provided by a default implementation.
 
 
 ---

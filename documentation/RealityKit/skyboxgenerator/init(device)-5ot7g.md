@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -16,9 +17,16 @@ nonisolated
 (nonsending) init(device: any MTLDevice) async
 ```
 
+**Other overloads**:
+
+```swift
+init(device: any MTLDevice)
+```
+
 ## See Also
 
-- [init(device: any MTLDevice)](skyboxgenerator/init(device:)-1hp6p.md)
+### Creating a skybox generator
+- [init(device: any MTLDevice)](./init%28device%29-1hp6p.md)
 
 
 ---

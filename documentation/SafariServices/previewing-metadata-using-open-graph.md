@@ -1,6 +1,8 @@
 # Previewing Metadata using Open Graph
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Sample Code  
+**Download**: [PreviewingMetadataUsingOpenGraph.zip](https://docs-assets.developer.apple.com/published/30a55aaa70fc/PreviewingMetadataUsingOpenGraph.zip)
 
 Build a Safari Extension that displays metadata using Open Graph.
 
@@ -13,13 +15,14 @@ Build a Safari Extension that displays metadata using Open Graph.
 
 #### Overview
 
-> **Note**: This sample code project is associated with the Tech Talks 2021 session [`Build and deploy Safari Extensions for iOS`](https://developer.apple.comhttp://developer.apple.com/tech-talks/110148).
+> **Note**: This sample code project is associated with the Tech Talks 2021 session [Build and deploy Safari Extensions for iOS](http://developer.apple.com/tech-talks/110148).
 
 ## See Also
 
-- [Updating a Safari web extension](updating-a-safari-web-extension.md)
+### Extension updates
+- [Updating a Safari web extension](./updating-a-safari-web-extension.md)
   Add new features and fix bugs in your Safari web extension using Xcode tools.
-- [Managing Safari web extension permissions](managing-safari-web-extension-permissions.md)
+- [Managing Safari web extension permissions](./managing-safari-web-extension-permissions.md)
   Respect user privacy by setting appropriate permissions for your Safari web extension.
 
 

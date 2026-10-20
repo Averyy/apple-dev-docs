@@ -1,7 +1,8 @@
 # tX
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An element of the transform matrix that contributes translation.
 
@@ -15,17 +16,22 @@ An element of the transform matrix that contributes translation.
 var tX: Double
 ```
 
+```c
+CGFloat tX;
+```
+
 ## See Also
 
-- [var m11: Double](nsaffinetransformstruct/m11.md)
+### Instance Properties
+- [var m11: Double](./m11.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m12: Double](nsaffinetransformstruct/m12.md)
+- [var m12: Double](./m12.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m21: Double](nsaffinetransformstruct/m21.md)
+- [var m21: Double](./m21.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m22: Double](nsaffinetransformstruct/m22.md)
+- [var m22: Double](./m22.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var tY: Double](nsaffinetransformstruct/ty.md)
+- [var tY: Double](./ty.md)
   An element of the transform matrix that contributes translation.
 
 

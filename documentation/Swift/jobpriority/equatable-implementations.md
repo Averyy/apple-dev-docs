@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](jobpriority/!=(_:_:)-5u8dc.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29-5u8dc.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (JobPriority, JobPriority) -> Bool](jobpriority/==(_:_:).md)
+- [static func == (JobPriority, JobPriority) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

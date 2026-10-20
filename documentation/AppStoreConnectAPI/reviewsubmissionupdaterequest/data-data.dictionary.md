@@ -1,7 +1,8 @@
 # ReviewSubmissionUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for a review submission update request, specifying the review action to take.
 
@@ -10,21 +11,21 @@ The data wrapper for a review submission update request, specifying the review a
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionUpdateRequest.Data.Attributes](reviewsubmissionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object ReviewSubmissionUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a review submission update request resource.
 
 ## Properties
 
 - `attributes` (ReviewSubmissionUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `reviewSubmissions`
 
 
 ---

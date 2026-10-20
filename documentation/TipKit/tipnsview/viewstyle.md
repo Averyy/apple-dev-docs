@@ -1,7 +1,8 @@
 # viewStyle
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The given style for TipView within the view hierarchy
 

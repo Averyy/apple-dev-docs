@@ -1,7 +1,8 @@
 # init(named:fromURL:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action of the given name from an action file.
 

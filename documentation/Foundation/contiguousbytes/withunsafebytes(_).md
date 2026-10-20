@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calls the given closure with a pointer to the underlying bytes of the type’s contiguous storage.
@@ -41,7 +42,7 @@ _ = data?.withUnsafeBytes { buffer in
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeRawBufferPointer`](https://developer.apple.com/documentation/swift/unsaferawbufferpointer) parameter that points to the contiguous storage for the type. If no such storage exists, the method creates it. If `body` has a return value, this method also returns that value. The argument is valid only for the duration of the closure’s execution.
+- `body`: A closure with an [`UnsafeRawBufferPointer`](../../Swift/unsaferawbufferpointer.md) parameter that points to the contiguous storage for the type. If no such storage exists, the method creates it. If `body` has a return value, this method also returns that value. The argument is valid only for the duration of the closure’s execution.
 
 
 ---

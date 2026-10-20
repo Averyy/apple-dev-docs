@@ -1,7 +1,8 @@
 # unarchiver(_:willReplace:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that one object is being substituted for another.
 
@@ -20,9 +21,13 @@ Informs the delegate that one object is being substituted for another.
 optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, willReplace object: Any, with newObject: Any)
 ```
 
+```objc
+- (void) unarchiver:(NSKeyedUnarchiver *) unarchiver willReplaceObject:(id) object withObject:(id) newObject;
+```
+
 #### Discussion
 
-This method is called even when the delegate itself is doing, or has done, the substitution with [`unarchiver(_:didDecode:)`](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md).
+This method is called even when the delegate itself is doing, or has done, the substitution with [`unarchiver(_:didDecode:)`](./unarchiver%28_,diddecode%29.md).
 
 The delegate may use this method if it is keeping track of the encoded or decoded objects.
 
@@ -34,9 +39,10 @@ The delegate may use this method if it is keeping track of the encoded or decode
 
 ## See Also
 
-- [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](nskeyedunarchiverdelegate/unarchiver(_:cannotdecodeobjectofclassname:originalclasses:).md)
+### Decoding Objects
+- [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](./unarchiver%28_,cannotdecodeobjectofclassname,originalclasses%29.md)
   Informs the delegate that the class with a given name is not available during decoding.
-- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
+- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](./unarchiver%28_,diddecode%29.md)
   Informs the delegate that a given object has been decoded.
 
 

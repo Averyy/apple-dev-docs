@@ -1,7 +1,8 @@
 # readAttributeActiveBatChargeFaults(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveBatChargeFaults(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveBatChargeFaults() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeActiveBatChargeFaultsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

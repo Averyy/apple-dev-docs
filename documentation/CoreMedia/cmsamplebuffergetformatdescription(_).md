@@ -1,7 +1,8 @@
 # CMSampleBufferGetFormatDescription(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the format description of the samples in a sample buffer.
 
@@ -18,6 +19,10 @@ Returns the format description of the samples in a sample buffer.
 
 ```swift
 func CMSampleBufferGetFormatDescription(_ sbuf: CMSampleBuffer) -> CMFormatDescription?
+```
+
+```c
+extern CMFormatDescriptionRefCMSampleBufferGetFormatDescription(CMSampleBufferRef sbuf);
 ```
 
 #### Return Value

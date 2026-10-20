@@ -2,6 +2,7 @@
 
 **Framework**: AppMigrationKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Exports resources from the app, in response to a request from the migration system.
@@ -22,14 +23,15 @@ Implement this method in your app extension to export files from your app to the
 
 ## Parameters
 
-- `archiver`: An archiver to receive files from your app. Call [`appendItem(at:pathInArchive:)`](resourcesarchiver/appenditem(at:pathinarchive:).md) with each item to export.
+- `archiver`: An archiver to receive files from your app. Call [`appendItem(at:pathInArchive:)`](../resourcesarchiver/appenditem%28at,pathinarchive%29.md) with each item to export.
 - `request`: A request object that describes the destination of the migration.
 
 ## See Also
 
-- [class ResourcesArchiver](resourcesarchiver.md)
+### Exporting resources
+- [class ResourcesArchiver](../resourcesarchiver.md)
   An object your app uses to archive resources during an export operation.
-- [struct MigrationRequestWithOptions](migrationrequestwithoptions.md)
+- [struct MigrationRequestWithOptions](../migrationrequestwithoptions.md)
   An object that exposes properties of the migration request.
 
 

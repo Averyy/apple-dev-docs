@@ -1,7 +1,8 @@
 # PassTypeId.Relationships.Certificates.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a certificate associated with a pass type identifier.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a certificate associated with a pass type 
 
 ## Declaration
 
-```swift
+```
 object PassTypeId.Relationships.Certificates.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `certificates`
 
 
 ---

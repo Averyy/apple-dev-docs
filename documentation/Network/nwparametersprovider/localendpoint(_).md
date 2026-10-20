@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Specify a specific endpoint to use as the local endpoint.
@@ -28,6 +29,12 @@ For connections, this will be used to initiate traffic; for listeners, this will
 ## Parameters
 
 - `endpoint`: The local endpoint to require, or `nil` if none.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func localEndpoint(NWEndpoint?) -> Self](./localendpoint%28_%29-64i45.md)
+  Specify a specific endpoint to use as the local endpoint.
 
 
 ---

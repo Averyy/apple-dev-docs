@@ -1,7 +1,8 @@
 # SecExternalFormat.formatWrappedSSH
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 OpenSSH 1 format for wrapped symmetric and private keys.  OpenSSH is an OpenBSD implementation of the Secure Shell (SSH) protocol.
 
@@ -12,6 +13,10 @@ OpenSSH 1 format for wrapped symmetric and private keys.  OpenSSH is an OpenBSD 
 
 ```swift
 case formatWrappedSSH
+```
+
+```c
+kSecFormatWrappedSSH
 ```
 
 

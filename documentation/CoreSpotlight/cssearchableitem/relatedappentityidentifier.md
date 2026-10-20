@@ -1,7 +1,8 @@
 # relatedAppEntityIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the related indexed entity for this searchable item.
 
@@ -28,9 +29,10 @@ Setting this property again replaces the previously set identifier.
 
 ## See Also
 
-- [func associateAppEntity(some IndexedEntity, priority: Int) async](cssearchableitem/associateappentity(_:priority:)-6h7ym.md)
+### Associating an entity with an item
+- [func associateAppEntity(some IndexedEntity, priority: Int) async](./associateappentity%28_,priority%29-6h7ym.md)
   Associates an app entity with this searchable item. Resolves deferred properties before association.
-- [func associateAppEntity(some IndexedEntity, priority: Int)](cssearchableitem/associateappentity(_:priority:)-736lx.md)
+- [func associateAppEntity(some IndexedEntity, priority: Int)](./associateappentity%28_,priority%29-736lx.md)
   Associates an app entity with this searchable item.
 
 

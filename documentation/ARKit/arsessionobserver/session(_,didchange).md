@@ -1,7 +1,8 @@
 # session(_:didChange:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Listen and react to geo-tracking state changes.
 
@@ -15,11 +16,15 @@ Listen and react to geo-tracking state changes.
 optional func session(_ session: ARSession, didChange geoTrackingStatus: ARGeoTrackingStatus)
 ```
 
+```objc
+- (void) session:(ARSession *) session didChangeGeoTrackingStatus:(ARGeoTrackingStatus *) geoTrackingStatus;
+```
+
 #### Discussion
 
-To create and maintain an effective geo-tracking session, an app must react promptly when ARKit changes the geo-tracking status. For more information, see [`ARGeoTrackingStatus`](argeotrackingstatus.md).
+To create and maintain an effective geo-tracking session, an app must react promptly when ARKit changes the geo-tracking status. For more information, see [`ARGeoTrackingStatus`](../argeotrackingstatus.md).
 
-ARKit invokes this callback only for [`ARGeoTrackingConfiguration`](argeotrackingconfiguration.md) sessions.
+ARKit invokes this callback only for [`ARGeoTrackingConfiguration`](../argeotrackingconfiguration.md) sessions.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ ARKit invokes this callback only for [`ARGeoTrackingConfiguration`](argeotrackin
 
 ## See Also
 
-- [func session(ARSession, cameraDidChangeTrackingState: ARCamera)](arsessionobserver/session(_:cameradidchangetrackingstate:).md)
+### Responding to Tracking Quality Changes
+- [func session(ARSession, cameraDidChangeTrackingState: ARCamera)](./session%28_,cameradidchangetrackingstate%29.md)
   Informs the delegate of changes to the quality of ARKit’s device position tracking.
 
 

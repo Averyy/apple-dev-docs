@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingHandleInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of handling an intent to play a media item.
 
@@ -10,7 +11,7 @@ The result of handling an intent to play a media item.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingHandleInvocationResponse.Result
 ```
 

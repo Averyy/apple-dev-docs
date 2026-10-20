@@ -1,7 +1,8 @@
 # InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
+- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2](./relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase App Store review screenshot create request resource.
 
 

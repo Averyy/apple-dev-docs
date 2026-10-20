@@ -1,12 +1,13 @@
 # NSWindow.BackingLocation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The following constants and the related data type represent a window’s possible backing locations.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,27 +15,31 @@ The following constants and the related data type represent a window’s possibl
 enum BackingLocation
 ```
 
+```c
+enum NSWindowBackingLocation : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSWindow.BackingLocation.default](nswindow/backinglocation-swift.enum/default.md)
+- [NSWindow.BackingLocation.default](./backinglocation-swift.enum/default.md)
   Determined by the operating system.
-- [NSWindow.BackingLocation.videoMemory](nswindow/backinglocation-swift.enum/videomemory.md)
+- [NSWindow.BackingLocation.videoMemory](./backinglocation-swift.enum/videomemory.md)
   Video memory.
-- [NSWindow.BackingLocation.mainMemory](nswindow/backinglocation-swift.enum/mainmemory.md)
+- [NSWindow.BackingLocation.mainMemory](./backinglocation-swift.enum/mainmemory.md)
   Physical memory.
 ### Initializers
-- [init?(rawValue: UInt)](nswindow/backinglocation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./backinglocation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

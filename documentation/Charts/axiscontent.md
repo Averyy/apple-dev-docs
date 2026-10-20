@@ -1,7 +1,8 @@
 # AxisContent
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the elements you use to build a chart’s axes.
 
@@ -23,29 +24,30 @@ protocol AxisContent
 ## Topics
 
 ### Instance Methods
-- [func compositingLayer() -> some AxisContent](axiscontent/compositinglayer.md)
+- [func compositingLayer() -> some AxisContent](./axiscontent/compositinglayer%28%29.md)
   Creates a compositing layer for the axis content.
-- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some AxisContent](axiscontent/compositinglayer(style:).md)
+- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some AxisContent](./axiscontent/compositinglayer%28style%29.md)
   Creates a compositing layer for the axis content, and apply view modifiers to the compositing layer.
 
 ## Relationships
 
 ### Conforming Types
-- [AnyAxisContent](anyaxiscontent.md)
-- [AxisMarks](axismarks.md)
-- [BuilderConditional](builderconditional.md)
+- [AnyAxisContent](./anyaxiscontent.md)
+- [AxisMarks](./axismarks.md)
+- [BuilderConditional](./builderconditional.md)
 
 ## See Also
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+### Axes
+- [Customizing axes in Swift Charts](./customizing-axes-in-swift-charts.md)
   Improve the clarity of your chart by configuring the appearance of its axes.
-- [struct ChartAxisContent](chartaxiscontent.md)
+- [struct ChartAxisContent](./chartaxiscontent.md)
   A view that represents a chart’s axis.
-- [struct AxisMarks](axismarks.md)
+- [struct AxisMarks](./axismarks.md)
   A group of visual marks that a chart draws to indicate the composition of a chart’s axes.
-- [struct AnyAxisContent](anyaxiscontent.md)
+- [struct AnyAxisContent](./anyaxiscontent.md)
   A type-erased element of a chart’s axis.
-- [struct AxisContentBuilder](axiscontentbuilder.md)
+- [struct AxisContentBuilder](./axiscontentbuilder.md)
   A result builder that constructs axis content.
 
 

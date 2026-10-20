@@ -1,7 +1,8 @@
 # plain
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A text editor style with no decoration.
 
@@ -19,11 +20,14 @@ A text editor style with no decoration.
 @export(implementation) @preconcurrency static var plain: PlainTextEditorStyle { get }
 ```
 
+Available when `Self` is `PlainTextEditorStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticTextEditorStyle](texteditorstyle/automatic.md)
+### Getting built-in styles
+- [static var automatic: AutomaticTextEditorStyle](./automatic.md)
   The default text editor style, based on the text editor’s context.
-- [static var roundedBorder: RoundedBorderTextEditorStyle](texteditorstyle/roundedborder.md)
+- [static var roundedBorder: RoundedBorderTextEditorStyle](./roundedborder.md)
   A text editor style with a system-defined rounded border.
 
 

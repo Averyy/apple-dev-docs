@@ -1,7 +1,8 @@
 # List the placement IDs for an app asset library image
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of placement resource IDs for a specific app asset library image.
 
@@ -10,7 +11,7 @@ Get a list of placement resource IDs for a specific app asset library image.
 
 ## Mentions
 
-- [Uploading and managing image assets](uploading-and-managing-image-assets.md)
+- [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Get a list of placement resource IDs for a specific app asset library image.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appAssetLibraryImages/f4000005-e036-8f0b-8018-d259974bee61/relationships/placements?limit=2
 ```
 
@@ -52,13 +53,31 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraryImages/f4000005-e036-8f0
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `limit` (integer): The maximum number of app asset library placement resource identifiers to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`AppAssetLibraryImagePlacementsLinkagesResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read an app asset library image](get-v1-appassetlibraryimages-_id_.md)
+### Getting images and reading information
+- [Read an app asset library image](./get-v1-appassetlibraryimages-_id_.md)
   Get information about an app asset library image.
-- [List related placements](get-v1-appassetlibraryimages-_id_-placements.md)
+- [List related placements](./get-v1-appassetlibraryimages-_id_-placements.md)
   List the placements that reuse an app asset library image.
 
 

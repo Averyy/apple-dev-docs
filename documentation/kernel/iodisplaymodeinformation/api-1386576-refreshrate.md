@@ -1,7 +1,8 @@
 # refreshRate
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Refresh rate in fixed point 16.16.
 
@@ -10,7 +11,7 @@ Refresh rate in fixed point 16.16.
 
 ## Declaration
 
-```swift
+```c
 IOFixed1616 refreshRate;
 ```
 

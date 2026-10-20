@@ -1,7 +1,8 @@
 # emptyViewTitleVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of title variants for the template’s empty view.
 
@@ -16,6 +17,10 @@ An array of title variants for the template’s empty view.
 var emptyViewTitleVariants: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * emptyViewTitleVariants;
+```
+
 #### Discussion
 
 When the list contains zero items, the template displays an empty view with a title and a subtitle. The template removes the empty view if you update the list and provide items.
@@ -24,7 +29,8 @@ Provide at least one nonzero length title variant. The view displays the first t
 
 ## See Also
 
-- [var emptyViewSubtitleVariants: [String]](cplisttemplate/emptyviewsubtitlevariants.md)
+### Managing an Empty List
+- [var emptyViewSubtitleVariants: [String]](./emptyviewsubtitlevariants.md)
   An array of subtitle variants for the template’s empty view.
 
 

@@ -1,16 +1,17 @@
 # UITableView.ScrollPosition
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The position in the table view (top, middle, bottom) to scroll a specified row to.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,39 +19,44 @@ The position in the table view (top, middle, bottom) to scroll a specified row t
 enum ScrollPosition
 ```
 
+```c
+enum UITableViewScrollPosition : NSInteger;
+```
+
 #### Overview
 
-You set the scroll position through a parameter of the [`selectRow(at:animated:scrollPosition:)`](uitableview/selectrow(at:animated:scrollposition:).md), [`scrollToNearestSelectedRow(at:animated:)`](uitableview/scrolltonearestselectedrow(at:animated:).md), [`cellForRow(at:)`](uitableview/cellforrow(at:).md), and [`indexPathForSelectedRow`](uitableview/indexpathforselectedrow.md) methods.
+You set the scroll position through a parameter of the [`selectRow(at:animated:scrollPosition:)`](./selectrow%28at,animated,scrollposition%29.md), [`scrollToNearestSelectedRow(at:animated:)`](./scrolltonearestselectedrow%28at,animated%29.md), [`cellForRow(at:)`](./cellforrow%28at%29.md), and [`indexPathForSelectedRow`](./indexpathforselectedrow.md) methods.
 
 ## Topics
 
 ### Constants
-- [UITableView.ScrollPosition.none](uitableview/scrollposition/none.md)
+- [UITableView.ScrollPosition.none](./scrollposition/none.md)
   The table view scrolls the row of interest to be fully visible with a minimum of movement.
-- [UITableView.ScrollPosition.top](uitableview/scrollposition/top.md)
+- [UITableView.ScrollPosition.top](./scrollposition/top.md)
   The table view scrolls the row of interest to the top of the visible table view.
-- [UITableView.ScrollPosition.middle](uitableview/scrollposition/middle.md)
+- [UITableView.ScrollPosition.middle](./scrollposition/middle.md)
   The table view scrolls the row of interest to the middle of the visible table view.
-- [UITableView.ScrollPosition.bottom](uitableview/scrollposition/bottom.md)
+- [UITableView.ScrollPosition.bottom](./scrollposition/bottom.md)
   The table view scrolls the row of interest to the bottom of the visible table view.
 ### Initializers
-- [init?(rawValue: Int)](uitableview/scrollposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scrollposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollToRow(at: IndexPath, at: UITableView.ScrollPosition, animated: Bool)](uitableview/scrolltorow(at:at:animated:).md)
+### Scrolling the table view
+- [func scrollToRow(at: IndexPath, at: UITableView.ScrollPosition, animated: Bool)](./scrolltorow%28at,at,animated%29.md)
   Scrolls through the table view until a row that an index path identifies is at a particular location on the screen.
-- [func scrollToNearestSelectedRow(at: UITableView.ScrollPosition, animated: Bool)](uitableview/scrolltonearestselectedrow(at:animated:).md)
+- [func scrollToNearestSelectedRow(at: UITableView.ScrollPosition, animated: Bool)](./scrolltonearestselectedrow%28at,animated%29.md)
   Scrolls the table view so that the selected row nearest to a specified position in the table view is at that position.
 
 

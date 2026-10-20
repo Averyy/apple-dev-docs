@@ -1,7 +1,8 @@
 # CVGetHostClockMinimumTimeDelta()
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the smallest possible increment in the system time.
 
@@ -17,15 +18,20 @@ Returns the smallest possible increment in the system time.
 func CVGetHostClockMinimumTimeDelta() -> UInt32
 ```
 
+```c
+extern uint32_t CVGetHostClockMinimumTimeDelta();
+```
+
 #### Return Value
 
 The smallest valid increment in the system time.
 
 ## See Also
 
-- [func CVGetCurrentHostTime() -> UInt64](cvgetcurrenthosttime().md)
+### Inspecting the Host Clock
+- [func CVGetCurrentHostTime() -> UInt64](./cvgetcurrenthosttime%28%29.md)
   Returns the current system time.
-- [func CVGetHostClockFrequency() -> Double](cvgethostclockfrequency().md)
+- [func CVGetHostClockFrequency() -> Double](./cvgethostclockfrequency%28%29.md)
   Returns the frequency of updates to the system time.
 
 

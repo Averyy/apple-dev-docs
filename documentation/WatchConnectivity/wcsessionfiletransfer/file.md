@@ -1,7 +1,8 @@
 # file
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file being transferred.
 
@@ -16,6 +17,10 @@ The file being transferred.
 
 ```swift
 var file: WCSessionFile { get }
+```
+
+```objc
+@property (nonatomic, readonly) WCSessionFile * file;
 ```
 
 

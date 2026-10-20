@@ -1,7 +1,8 @@
 # heicData()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns HEIC data representing the image, or nil if such a representation could not be generated. HEIC is recommended for efficiently storing all kinds of images, including those with high dynamic range content.
 
@@ -19,13 +20,18 @@ Returns HEIC data representing the image, or nil if such a representation could 
 func heicData() -> Data?
 ```
 
+```c
+extern NSData *UIImageHEICRepresentation(UIImage *image);
+```
+
 ## See Also
 
-- [var isHighDynamicRange: Bool](uiimage/ishighdynamicrange.md)
+### Specifying the dynamic range
+- [var isHighDynamicRange: Bool](./ishighdynamicrange.md)
   Indicates that this image is tagged for display of high dynamic range content.
-- [func imageRestrictedToStandardDynamicRange() -> UIImage](uiimage/imagerestrictedtostandarddynamicrange.md)
+- [func imageRestrictedToStandardDynamicRange() -> UIImage](./imagerestrictedtostandarddynamicrange%28%29.md)
   Returns a new image that will render within the standard range.
-- [UIImage.DynamicRange](uiimage/dynamicrange.md)
+- [UIImage.DynamicRange](./dynamicrange.md)
 
 
 ---

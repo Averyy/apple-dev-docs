@@ -1,18 +1,25 @@
 # localTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position and orientation of the result relative to the nearest anchor or feature point.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 11.0+ - Deprecated in 14.0
+- iPadOS 11.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use raycasting
 
 ## Declaration
 
 ```swift
 var localTransform: simd_float4x4 { get }
+```
+
+```objc
+@property (nonatomic, readonly) simd_float4x4 localTransform;
 ```
 
 #### Discussion
@@ -21,9 +28,10 @@ This transform matrix indicates the intersection point between the detected surf
 
 ## See Also
 
-- [var distance: CGFloat](arhittestresult/distance.md)
+### Examining Result Geometry
+- [var distance: CGFloat](./distance.md)
   The distance, in meters, from the camera to the detected surface.
-- [var worldTransform: simd_float4x4](arhittestresult/worldtransform.md)
+- [var worldTransform: simd_float4x4](./worldtransform.md)
   The position and orientation of the result relative to the world coordinate system.
 
 

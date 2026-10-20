@@ -1,7 +1,8 @@
 # numberOfSetFeatures
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var numberOfSetFeatures: UInt32
+```
+
+```c
+UInt32 numberOfSetFeatures;
 ```
 
 

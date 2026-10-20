@@ -1,7 +1,8 @@
 # Manipulable.Event.Phase.active(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person is manipulating the view.
 

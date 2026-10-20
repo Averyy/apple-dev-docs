@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation library from a variadic list of key-value pairs.
 
@@ -21,7 +22,7 @@ init(dictionaryLiteral elements: (String, AnimationResource)...)
 
 #### Discussion
 
-Use the [`ExpressibleByDictionaryLiteral`](https://developer.apple.com/documentation/swift/expressiblebydictionaryliteral) initializer by directly assigning the library to a dictionary literal.
+Use the [`ExpressibleByDictionaryLiteral`](../../Swift/expressiblebydictionaryliteral.md) initializer by directly assigning the library to a dictionary literal.
 
 ```swift
 let animationLibrary: AnimationLibraryComponent = [
@@ -36,9 +37,10 @@ let animationLibrary: AnimationLibraryComponent = [
 
 ## See Also
 
-- [init()](animationlibrarycomponent/init.md)
+### Creating an animation library component
+- [init()](./init%28%29.md)
   Creates an empty animation library.
-- [init(animations: [String : AnimationResource])](animationlibrarycomponent/init(animations:).md)
+- [init(animations: [String : AnimationResource])](./init%28animations%29.md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
 
 

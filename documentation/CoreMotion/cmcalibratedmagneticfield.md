@@ -1,7 +1,8 @@
 # CMCalibratedMagneticField
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Calibrated magnetic field data and an estimate of the accuracy of the calibration.
 
@@ -19,30 +20,35 @@ Calibrated magnetic field data and an estimate of the accuracy of the calibratio
 struct CMCalibratedMagneticField
 ```
 
+```c
+typedef struct { ... } CMCalibratedMagneticField;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cmcalibratedmagneticfield/init.md)
+- [init()](./cmcalibratedmagneticfield/init%28%29.md)
   Initializes the magnetic field to a set of default values.
-- [init(field: CMMagneticField, accuracy: CMMagneticFieldCalibrationAccuracy)](cmcalibratedmagneticfield/init(field:accuracy:).md)
+- [init(field: CMMagneticField, accuracy: CMMagneticFieldCalibrationAccuracy)](./cmcalibratedmagneticfield/init%28field,accuracy%29.md)
   Initializes the magnetic field to the specified set of values.
 ### Accessing the Field Values
-- [var field: CMMagneticField](cmcalibratedmagneticfield/field.md)
-  A structure containing 3-axis calibrated magnetic field data. See the description of the [`CMMagneticField`](cmmagneticfield.md) structure.
-- [var accuracy: CMMagneticFieldCalibrationAccuracy](cmcalibratedmagneticfield/accuracy.md)
-  An enum-constant value that indicates the accuracy of the magnetic field estimate. See [`CMMagneticFieldCalibrationAccuracy`](cmmagneticfieldcalibrationaccuracy.md).
+- [var field: CMMagneticField](./cmcalibratedmagneticfield/field.md)
+  A structure containing 3-axis calibrated magnetic field data. See the description of the [`CMMagneticField`](./cmmagneticfield.md) structure.
+- [var accuracy: CMMagneticFieldCalibrationAccuracy](./cmcalibratedmagneticfield/accuracy.md)
+  An enum-constant value that indicates the accuracy of the magnetic field estimate. See [`CMMagneticFieldCalibrationAccuracy`](./cmmagneticfieldcalibrationaccuracy.md).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var magneticField: CMCalibratedMagneticField](cmdevicemotion/magneticfield.md)
+### Getting the Calibrated Magnetic Field
+- [var magneticField: CMCalibratedMagneticField](./cmdevicemotion/magneticfield.md)
   Returns the magnetic field vector with respect to the device.
-- [enum CMMagneticFieldCalibrationAccuracy](cmmagneticfieldcalibrationaccuracy.md)
+- [enum CMMagneticFieldCalibrationAccuracy](./cmmagneticfieldcalibrationaccuracy.md)
   Indicates the calibration accuracy of a magnetic field estimate
 
 

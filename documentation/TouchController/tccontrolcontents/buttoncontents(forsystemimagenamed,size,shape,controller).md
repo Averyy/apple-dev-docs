@@ -1,7 +1,8 @@
 # buttonContents(forSystemImageNamed:size:shape:controller:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The button contents for the specified system image name, size, and shape.
 
@@ -14,6 +15,10 @@ The button contents for the specified system image name, size, and shape.
 
 ```swift
 class func buttonContents(forSystemImageNamed imageName: String, size: CGSize, shape: TCControlContents.ButtonShape, controller: TCTouchController) -> TCControlContents
+```
+
+```objc
++ (TCControlContents *) buttonContentsForSystemImageNamed:(NSString *) imageName size:(CGSize) size shape:(TCControlContentsButtonShape) shape controller:(TCTouchController *) controller;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ The `TCControlContents` for the button.
 
 ## See Also
 
-- [TCControlContents.ButtonShape](tccontrolcontents/buttonshape.md)
+### Accessing button contents
+- [TCControlContents.ButtonShape](./buttonshape.md)
   Defines the visual shape of a button.
 
 

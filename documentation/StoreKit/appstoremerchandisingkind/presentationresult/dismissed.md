@@ -1,7 +1,8 @@
 # AppStoreMerchandisingKind.PresentationResult.dismissed
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,7 +19,8 @@ case dismissed
 
 ## See Also
 
-- [AppStoreMerchandisingKind.PresentationResult.purchaseCompleted(_:)](appstoremerchandisingkind/presentationresult/purchasecompleted(_:).md)
+### Enumeration cases
+- [AppStoreMerchandisingKind.PresentationResult.purchaseCompleted(_:)](./purchasecompleted%28_%29.md)
 
 
 ---

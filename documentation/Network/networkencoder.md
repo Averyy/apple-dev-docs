@@ -1,7 +1,8 @@
 # NetworkEncoder
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that conforms to the NetworkEncoder protocol can encode a Encodable object to Data
 
@@ -23,7 +24,7 @@ protocol NetworkEncoder
 ## Topics
 
 ### Instance Methods
-- [func encode<T>(T) throws -> Data](networkencoder/encode(_:).md)
+- [func encode<T>(T) throws -> Data](./networkencoder/encode%28_%29.md)
 
 
 ---

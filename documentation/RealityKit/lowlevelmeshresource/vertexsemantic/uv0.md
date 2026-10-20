@@ -1,7 +1,8 @@
 # LowLevelMeshResource.VertexSemantic.uv0
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The semantic for the first UV channel (UV0).
 
@@ -23,19 +24,20 @@ Standard materials interpret `uv0` as a texture coordinate.
 
 ## See Also
 
-- [LowLevelMeshResource.VertexSemantic.uv1](lowlevelmeshresource/vertexsemantic/uv1.md)
+### Identifying texture coordinates
+- [LowLevelMeshResource.VertexSemantic.uv1](./uv1.md)
   The semantic for the second UV channel (UV1). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv2](lowlevelmeshresource/vertexsemantic/uv2.md)
+- [LowLevelMeshResource.VertexSemantic.uv2](./uv2.md)
   The semantic for the third UV channel (UV2). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv3](lowlevelmeshresource/vertexsemantic/uv3.md)
+- [LowLevelMeshResource.VertexSemantic.uv3](./uv3.md)
   The semantic for the fourth UV channel (UV3). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv4](lowlevelmeshresource/vertexsemantic/uv4.md)
+- [LowLevelMeshResource.VertexSemantic.uv4](./uv4.md)
   The semantic for the fifth UV channel (UV4). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv5](lowlevelmeshresource/vertexsemantic/uv5.md)
+- [LowLevelMeshResource.VertexSemantic.uv5](./uv5.md)
   The semantic for the sixth UV channel (UV5). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv6](lowlevelmeshresource/vertexsemantic/uv6.md)
+- [LowLevelMeshResource.VertexSemantic.uv6](./uv6.md)
   The semantic for the seventh UV channel (UV6). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv7](lowlevelmeshresource/vertexsemantic/uv7.md)
+- [LowLevelMeshResource.VertexSemantic.uv7](./uv7.md)
   The semantic for the eighth UV channel (UV7). A shader can access this generic data.
 
 

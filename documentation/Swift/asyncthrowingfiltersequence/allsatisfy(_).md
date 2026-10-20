@@ -1,7 +1,8 @@
 # allSatisfy(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether all elements produced by the asynchronous sequence satisfy the given predicate.
 

@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handle push tokens changing for configured controls.

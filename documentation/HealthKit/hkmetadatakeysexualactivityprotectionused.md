@@ -1,9 +1,10 @@
 # HKMetadataKeySexualActivityProtectionUsed
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A key that indicates whether protection was used during sexual activity. This metadata key can be used with [`sexualActivity`](hkcategorytypeidentifier/sexualactivity.md) category samples.
+A key that indicates whether protection was used during sexual activity. This metadata key can be used with [`sexualActivity`](./hkcategorytypeidentifier/sexualactivity.md) category samples.
 
 **Availability**:
 - iOS 9.0+
@@ -19,9 +20,13 @@ A key that indicates whether protection was used during sexual activity. This me
 let HKMetadataKeySexualActivityProtectionUsed: String
 ```
 
+```c
+extern NSString * const HKMetadataKeySexualActivityProtectionUsed;
+```
+
 #### Discussion
 
-Set this key’s value to [`true`](https://developer.apple.com/documentation/swift/true) if protection was used during sexual activity; otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this key’s value to [`true`](../Swift/true.md) if protection was used during sexual activity; otherwise, set it to [`false`](../Swift/false.md).
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A data object that contains the returned attestation.
@@ -20,9 +21,13 @@ A data object that contains the returned attestation.
 var rawAttestationObject: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * rawAttestationObject;
+```
+
 #### Discussion
 
-This object contains the public key. If you request it, it also contains the attestation statement. To learn more, see the [`W3C Web Authentication specification`](https://developer.apple.comhttps://www.w3.org/TR/webauthn-2/#attestation-object).
+This object contains the public key. If you request it, it also contains the attestation statement. To learn more, see the [W3C Web Authentication specification](https://www.w3.org/TR/webauthn-2/#attestation-object).
 
 
 ---

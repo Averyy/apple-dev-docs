@@ -1,16 +1,21 @@
 # es_lightweight_code_requirement_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 struct es_lightweight_code_requirement_t
+```
+
+```c
+typedef struct { ... } es_lightweight_code_requirement_t;
 ```
 
 #### Overview
@@ -23,11 +28,11 @@ The PROCESS arm omits this struct entirely — the receiving process’s actual 
 
 Both string token fields preserve the three-state distinction common to optional ES strings: `data == NULL` (the LWCR did not carry this fact), `data != NULL && length == 0` (carried an empty value), and `data != NULL && length > 0` (carried a value).
 
-```None
+```
                is NULL when the LWCR did not carry this fact.
 ```
 
-```None
+```
                `data` is NULL when the LWCR did not carry this
                fact.
 ```
@@ -35,16 +40,16 @@ Both string token fields preserve the three-state distinction common to optional
 ## Topics
 
 ### Initializers
-- [init()](es_lightweight_code_requirement_t/init.md)
-- [init(team_id: es_string_token_t, signing_id: es_string_token_t)](es_lightweight_code_requirement_t/init(team_id:signing_id:).md)
+- [init()](./es_lightweight_code_requirement_t/init%28%29.md)
+- [init(team_id: es_string_token_t, signing_id: es_string_token_t)](./es_lightweight_code_requirement_t/init%28team_id,signing_id%29.md)
 ### Instance Properties
-- [var signing_id: es_string_token_t](es_lightweight_code_requirement_t/signing_id.md)
-- [var team_id: es_string_token_t](es_lightweight_code_requirement_t/team_id.md)
+- [var signing_id: es_string_token_t](./es_lightweight_code_requirement_t/signing_id.md)
+- [var team_id: es_string_token_t](./es_lightweight_code_requirement_t/team_id.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

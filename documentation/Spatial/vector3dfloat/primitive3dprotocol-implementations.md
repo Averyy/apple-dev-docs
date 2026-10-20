@@ -1,21 +1,22 @@
 # Primitive3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func applying(AffineTransform3DFloat) -> Vector3DFloat](vector3dfloat/applying(_:)-1a8xg.md)
+- [func applying(AffineTransform3DFloat) -> Vector3DFloat](./applying%28_%29-1a8xg.md)
   Returns the vector that results from applying an affine transform to the vector.
-- [func applying(ProjectiveTransform3DFloat) -> Vector3DFloat](vector3dfloat/applying(_:)-6hw8r.md)
+- [func applying(ProjectiveTransform3DFloat) -> Vector3DFloat](./applying%28_%29-6hw8r.md)
   Returns the vector that results from applying a projective transform to the vector.
-- [func applying(Pose3DFloat) -> Vector3DFloat](vector3dfloat/applying(_:)-81zwt.md)
+- [func applying(Pose3DFloat) -> Vector3DFloat](./applying%28_%29-81zwt.md)
   Returns the primitive that results from applying a pose to the primitive.
-- [func unapplying(AffineTransform3DFloat) -> Vector3DFloat](vector3dfloat/unapplying(_:)-2n7h2.md)
+- [func unapplying(AffineTransform3DFloat) -> Vector3DFloat](./unapplying%28_%29-2n7h2.md)
   Returns the vector that results from unapplying an affine transform to the vector.
-- [func unapplying(Pose3DFloat) -> Vector3DFloat](vector3dfloat/unapplying(_:)-4xdju.md)
+- [func unapplying(Pose3DFloat) -> Vector3DFloat](./unapplying%28_%29-4xdju.md)
   Returns the primitive that results from applying a pose to the primitive.
-- [func unapplying(ProjectiveTransform3DFloat) -> Vector3DFloat](vector3dfloat/unapplying(_:)-wz3i.md)
+- [func unapplying(ProjectiveTransform3DFloat) -> Vector3DFloat](./unapplying%28_%29-wz3i.md)
   Returns the vector that results from unapplying a projective transform to the vector.
 
 

@@ -1,7 +1,8 @@
 # HKElectrocardiogramQuery.Result.error(_:)
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred while accessing the voltage measurements.
 
@@ -10,7 +11,7 @@ An error occurred while accessing the voltage measurements.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -21,9 +22,10 @@ case error(any Error)
 
 ## See Also
 
-- [case measurement(HKElectrocardiogram.VoltageMeasurement)](hkelectrocardiogramquery/result/measurement(_:).md)
+### Results
+- [case measurement(HKElectrocardiogram.VoltageMeasurement)](./measurement%28_%29.md)
   A single voltage measurement.
-- [HKElectrocardiogramQuery.Result.done](hkelectrocardiogramquery/result/done.md)
+- [HKElectrocardiogramQuery.Result.done](./done.md)
   The query has finished returning voltage measurements.
 
 

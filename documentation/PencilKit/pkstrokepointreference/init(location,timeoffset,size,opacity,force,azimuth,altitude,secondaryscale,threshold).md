@@ -1,7 +1,8 @@
 # init(location:timeOffset:size:opacity:force:azimuth:altitude:secondaryScale:threshold:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke point with the specified properties, including a rendering threshold.
 
@@ -16,6 +17,10 @@ Creates a stroke point with the specified properties, including a rendering thre
 
 ```swift
 init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat)
+```
+
+```objc
+- (instancetype) initWithLocation:(CGPoint) location timeOffset:(NSTimeInterval) timeOffset size:(CGSize) size opacity:(CGFloat) opacity force:(CGFloat) force azimuth:(CGFloat) azimuth altitude:(CGFloat) altitude secondaryScale:(CGFloat) secondaryScale threshold:(CGFloat) threshold;
 ```
 
 

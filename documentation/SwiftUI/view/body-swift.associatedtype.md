@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of view representing the body of this view.
@@ -23,15 +24,16 @@ associatedtype Body : View
 
 #### Discussion
 
-When you create a custom view, Swift infers this type from your implementation of the required [`body`](view/body-8kl5o.md) property.
+When you create a custom view, Swift infers this type from your implementation of the required [`body`](./body-8kl5o.md) property.
 
 ## See Also
 
-- [var body: Self.Body](view/body-8kl5o.md)
+### Implementing a custom view
+- [var body: Self.Body](./body-8kl5o.md)
   The content and behavior of the view.
-- [func modifier<T>(T) -> ModifiedContent<Self, T>](view/modifier(_:).md)
+- [func modifier<T>(T) -> ModifiedContent<Self, T>](./modifier%28_%29.md)
   Applies a modifier to a view and returns a new view.
-- [Previews in Xcode](previews-in-xcode.md)
+- [Previews in Xcode](../previews-in-xcode.md)
   Generate dynamic, interactive previews of your custom views.
 
 

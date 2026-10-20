@@ -1,7 +1,8 @@
 # NSDerivedAttributeDescription
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of an attribute that derives its value by performing a calculation on a related attribute.
 
@@ -20,6 +21,10 @@ A description of an attribute that derives its value by performing a calculation
 class NSDerivedAttributeDescription
 ```
 
+```objc
+@interface NSDerivedAttributeDescription : NSAttributeDescription
+```
+
 #### Overview
 
 Use derived attributes to optimize fetch performance; for example:
@@ -32,8 +37,8 @@ Derived attributes support the following expressions:
 | **Expression** | **Description** | **Example** |
 | --- | --- | --- |
 | to-one keypath | A single value to replicate. | `name` or `author.name` |
-| to-one keypath with a function | The result of calling a function on a single value. ![None](/images/com.apple.coredata/spacer.png) Supported functions include `canonical:`, `uppercase:`, and `lowercase:`. ![None](/images/com.apple.coredata/spacer.png) The `canonical:` function returns a case- and diacritic-insensitive String value. | `canonical:(name)` |
-| to-many keypath with a function | The result of calling an aggregate function on a set of values. ![None](/images/com.apple.coredata/spacer.png) Supported functions include `@count` and `@sum`. | `friends.@count` |
+| to-one keypath with a function | The result of calling a function on a single value. ![](https://developer.apple.com/tutorials/images/com.apple.coredata/spacer.png) Supported functions include `canonical:`, `uppercase:`, and `lowercase:`. ![](https://developer.apple.com/tutorials/images/com.apple.coredata/spacer.png) The `canonical:` function returns a case- and diacritic-insensitive String value. | `canonical:(name)` |
+| to-many keypath with a function | The result of calling an aggregate function on a set of values. ![](https://developer.apple.com/tutorials/images/com.apple.coredata/spacer.png) Supported functions include `@count` and `@sum`. | `friends.@count` |
 | time | The current time. | `now()` |
 
 > ❗ **Important**:  Data recomputes derived attributes when you save a context. A managed object’s property does not reflect unsaved changes until you save the context and refresh the object.
@@ -41,26 +46,27 @@ Derived attributes support the following expressions:
 ## Topics
 
 ### Specifying the Derivation Expression
-- [var derivationExpression: NSExpression?](nsderivedattributedescription/derivationexpression.md)
+- [var derivationExpression: NSExpression?](./nsderivedattributedescription/derivationexpression.md)
   An expression for generating derived data.
 
 ## Relationships
 
 ### Inherits From
-- [NSAttributeDescription](nsattributedescription.md)
+- [NSAttributeDescription](./nsattributedescription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSCompositeAttributeDescription](nscompositeattributedescription.md)
+### Computed attributes
+- [class NSCompositeAttributeDescription](./nscompositeattributedescription.md)
   A description of an attribute that derives its value by composing other attributes.
 
 

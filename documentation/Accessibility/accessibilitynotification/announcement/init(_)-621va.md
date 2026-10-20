@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an announcement notification with a string.
 
@@ -22,9 +23,10 @@ init(_ announcement: String)
 
 ## See Also
 
-- [init(NSAttributedString)](accessibilitynotification/announcement/init(_:)-46byj.md)
+### Creating an announcement notification
+- [init(NSAttributedString)](./init%28_%29-46byj.md)
   Creates an announcement notification with an attributed string value.
-- [init(AttributedString)](accessibilitynotification/announcement/init(_:)-btpf.md)
+- [init(AttributedString)](./init%28_%29-btpf.md)
   Creates an announcement notification with an attributed string object.
 
 

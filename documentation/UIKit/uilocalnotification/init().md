@@ -1,13 +1,16 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 10.0
+- iPadOS 4.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- watchOS 2.0+ - Deprecated in 3.0
+
+> **Deprecated**: For more information, see [`UILocalNotification`](../uilocalnotification.md).
 
 ## Declaration
 
@@ -15,9 +18,14 @@
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](uilocalnotification/init(coder:).md)
+### Initializers
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

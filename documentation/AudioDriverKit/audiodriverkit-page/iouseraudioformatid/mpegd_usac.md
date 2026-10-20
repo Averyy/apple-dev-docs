@@ -1,7 +1,8 @@
 # MPEGD_USAC
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The MPEG-D Unified Speech and Audio Coding format.
 
@@ -10,7 +11,7 @@ The MPEG-D Unified Speech and Audio Coding format.
 
 ## Declaration
 
-```swift
+```c
 MPEGD_USAC
 ```
 
@@ -20,11 +21,12 @@ This format uses no flags.
 
 ## See Also
 
-- [MPEGLayer1](audiodriverkit/iouseraudioformatid/mpeglayer1.md)
+### Other MPEG Formats
+- [MPEGLayer1](./mpeglayer1.md)
   The MPEG-1/2, Layer 1 audio format.
-- [MPEGLayer2](audiodriverkit/iouseraudioformatid/mpeglayer2.md)
+- [MPEGLayer2](./mpeglayer2.md)
   The MPEG-1/2, Layer 2 audio format.
-- [MPEGLayer3](audiodriverkit/iouseraudioformatid/mpeglayer3.md)
+- [MPEGLayer3](./mpeglayer3.md)
   The MPEG-1/2, Layer 3 audio format.
 
 

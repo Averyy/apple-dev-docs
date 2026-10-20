@@ -1,7 +1,8 @@
 # AppSchema.RemindersEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the reminders domain.
 
@@ -21,35 +22,36 @@ protocol RemindersEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var group: some AppSchemaEntity](appschema/remindersentity/group.md)
+- [var group: some AppSchemaEntity](./remindersentity/group.md)
   An entity schema for a group.
-- [var list: some AppSchemaEntity](appschema/remindersentity/list.md)
+- [var list: some AppSchemaEntity](./remindersentity/list.md)
   An entity schema for a list.
-- [var locationTrigger: some AppSchemaEntity](appschema/remindersentity/locationtrigger.md)
+- [var locationTrigger: some AppSchemaEntity](./remindersentity/locationtrigger.md)
   An entity schema for a location trigger.
-- [var reminder: some AppSchemaEntity](appschema/remindersentity/reminder.md)
+- [var reminder: some AppSchemaEntity](./remindersentity/reminder.md)
   An entity schema for a reminder.
-- [var section: some AppSchemaEntity](appschema/remindersentity/section.md)
+- [var section: some AppSchemaEntity](./remindersentity/section.md)
   An entity schema for a section.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var group: some AppSchemaEntity](appschema/remindersentity/group.md)
+### Content and parameter types
+- [var group: some AppSchemaEntity](./remindersentity/group.md)
   An entity schema for a group.
-- [var list: some AppSchemaEntity](appschema/remindersentity/list.md)
+- [var list: some AppSchemaEntity](./remindersentity/list.md)
   An entity schema for a list.
-- [var locationTrigger: some AppSchemaEntity](appschema/remindersentity/locationtrigger.md)
+- [var locationTrigger: some AppSchemaEntity](./remindersentity/locationtrigger.md)
   An entity schema for a location trigger.
-- [var reminder: some AppSchemaEntity](appschema/remindersentity/reminder.md)
+- [var reminder: some AppSchemaEntity](./remindersentity/reminder.md)
   An entity schema for a reminder.
-- [var section: some AppSchemaEntity](appschema/remindersentity/section.md)
+- [var section: some AppSchemaEntity](./remindersentity/section.md)
   An entity schema for a section.
 
 

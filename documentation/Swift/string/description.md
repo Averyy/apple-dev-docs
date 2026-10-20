@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of this string.
 
@@ -26,13 +27,14 @@ Using this property directly is discouraged. Instead, use simple assignment to c
 
 ## See Also
 
-- [var debugDescription: String](string/debugdescription.md)
+### Describing a String
+- [var debugDescription: String](./debugdescription.md)
   A representation of the string that is suitable for debugging.
-- [var customMirror: Mirror](string/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `String` instance.
-- [var hashValue: Int](string/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
-- [func hash(into: inout Hasher)](string/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

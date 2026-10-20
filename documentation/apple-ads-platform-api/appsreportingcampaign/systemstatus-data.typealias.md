@@ -1,7 +1,8 @@
 # AppsReportingCampaign.SystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-evaluated delivery state of the campaign at report time.
 
@@ -10,9 +11,14 @@ System-evaluated delivery state of the campaign at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingCampaign.SystemStatus
 ```
+
+## Possible Values
+
+- `RUNNING`: The campaign is actively delivering ads.
+- `NOT_RUNNING`: The campaign isn’t currently delivering. Check `systemStatusReasons` for the cause.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ This is a point-in-time snapshot; a campaign that later changes to `NOT_RUNNING`
 }
 ```
 
-See [`CampaignSystemStatus`](campaignsystemstatus.md) for additional context.
+See [`CampaignSystemStatus`](../campaignsystemstatus.md) for additional context.
 
 
 ---

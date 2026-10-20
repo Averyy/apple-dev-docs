@@ -1,7 +1,8 @@
 # matchWindow
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Materials will have an active or inactive appearance based on the active appearance of their window.
 

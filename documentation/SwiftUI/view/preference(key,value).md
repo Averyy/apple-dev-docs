@@ -1,7 +1,8 @@
 # preference(key:value:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a value for the given preference.
 
@@ -23,7 +24,8 @@ func preference<K>(key: K.Type = K.self, value: K.Value) -> some View where K : 
 
 ## See Also
 
-- [func transformPreference<K>(K.Type, (inout K.Value) -> Void) -> some View](view/transformpreference(_:_:).md)
+### Setting preferences
+- [func transformPreference<K>(K.Type, (inout K.Value) -> Void) -> some View](./transformpreference%28_,_%29.md)
   Applies a transformation to a preference value.
 
 

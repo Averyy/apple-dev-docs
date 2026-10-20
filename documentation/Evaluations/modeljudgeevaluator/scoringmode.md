@@ -1,9 +1,10 @@
 # scoringMode
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The scoring constraint mode. See [`ScoringMode`](scoringmode.md).
+The scoring constraint mode. See [`ScoringMode`](../scoringmode.md).
 
 **Availability**:
 - iOS 27.0+
@@ -22,9 +23,10 @@ let scoringMode: ScoringMode
 
 ## See Also
 
-- [let dimensions: [ScoreDimension]](modeljudgeevaluator/dimensions.md)
+### Inspecting the evaluator
+- [let dimensions: [ScoreDimension]](./dimensions.md)
   The dimensions this evaluator scores.
-- [enum ScoringMode](scoringmode.md)
+- [enum ScoringMode](../scoringmode.md)
   The scoring constraint mode for a model evaluator.
 
 

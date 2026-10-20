@@ -1,7 +1,8 @@
 # diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the diagnostic log including app version and build information, event details, OS, device type, and platform, and disk writes.
 
@@ -10,7 +11,7 @@ Information about the diagnostic log including app version and build information
 
 ## Declaration
 
-```swift
+```
 object diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData
 ```
 
@@ -28,7 +29,8 @@ object diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData
 
 ## See Also
 
-- [object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary/callstacktree-data.dictionary.md)
+### Objects
+- [object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree](./callstacktree-data.dictionary.md)
   The call stack representation of the diagnostic logs for single or multiple threads.
 
 

@@ -1,7 +1,8 @@
 # errorRange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An `NSValue` that specifies a range.
 
@@ -14,15 +15,20 @@ An `NSValue` that specifies a range.
 class let errorRange: String
 ```
 
+```c
+extern NSString * const NSAppleScriptErrorRange;
+```
+
 ## See Also
 
-- [class let errorMessage: String](nsapplescript/errormessage.md)
+### Constants
+- [class let errorMessage: String](./errormessage.md)
   An `NSString` that supplies a detailed description of the error condition.
-- [class let errorNumber: String](nsapplescript/errornumber.md)
+- [class let errorNumber: String](./errornumber.md)
   An `NSNumber` that specifies the error number.
-- [class let errorAppName: String](nsapplescript/errorappname.md)
+- [class let errorAppName: String](./errorappname.md)
   An `NSString` that specifies the name of the application that generated the error.
-- [class let errorBriefMessage: String](nsapplescript/errorbriefmessage.md)
+- [class let errorBriefMessage: String](./errorbriefmessage.md)
   An `NSString` that provides a brief description of the error.
 
 

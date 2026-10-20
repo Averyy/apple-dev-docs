@@ -1,7 +1,8 @@
 # primaryContentConfiguration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration for the primary content that the task downloads.
 
@@ -20,19 +21,24 @@ The configuration for the primary content that the task downloads.
 var primaryContentConfiguration: AVAssetDownloadContentConfiguration { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAssetDownloadContentConfiguration * primaryContentConfiguration;
+```
+
 ## See Also
 
-- [var artworkData: Data?](avassetdownloadconfiguration/artworkdata.md)
+### Accessing configuration details
+- [var artworkData: Data?](./artworkdata.md)
   A data value that represents the asset’s artwork.
-- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](avassetdownloadconfiguration/auxiliarycontentconfigurations.md)
+- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](./auxiliarycontentconfigurations.md)
   The configuration for the auxiliary content that the task downloads.
-- [class AVAssetDownloadContentConfiguration](avassetdownloadcontentconfiguration.md)
+- [class AVAssetDownloadContentConfiguration](../avassetdownloadcontentconfiguration.md)
   A configuration object that contains variant qualifiers and media options.
-- [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
+- [var optimizesAuxiliaryContentConfigurations: Bool](./optimizesauxiliarycontentconfigurations.md)
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
-- [var downloadsInterstitialAssets: Bool](avassetdownloadconfiguration/downloadsinterstitialassets.md)
+- [var downloadsInterstitialAssets: Bool](./downloadsinterstitialassets.md)
   Download interstitial assets as listed in the index file. False by default.
-- [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
+- [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](./setinterstitialmediaselectioncriteria%28_,formediacharacteristic%29.md)
   Sets media selection on interstitials for this asset
 
 

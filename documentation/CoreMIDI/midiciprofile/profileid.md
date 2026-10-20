@@ -1,7 +1,8 @@
 # profileID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique five-byte profile identifier that represents the profile.
 
@@ -18,9 +19,14 @@ The unique five-byte profile identifier that represents the profile.
 var profileID: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * profileID;
+```
+
 ## See Also
 
-- [var name: String](midiciprofile/name.md)
+### Inspecting a Profile
+- [var name: String](./name.md)
   A string that describes the profile.
 
 

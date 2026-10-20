@@ -1,17 +1,18 @@
 # x
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal component of the offset, in pixels.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The horizontal component of the offset, in pixels.
 var x: Int
 ```
 
+```c
+NSInteger x;
+```
+
 ## See Also
 
-- [var y: Int](mpsoffset/y.md)
+### Fields
+- [var y: Int](./y.md)
   The vertical component of the offset, in pixels.
-- [var z: Int](mpsoffset/z.md)
+- [var z: Int](./z.md)
   The depth component of the offset, in pixels.
 
 

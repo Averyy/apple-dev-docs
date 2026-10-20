@@ -1,7 +1,8 @@
 # secondarySystemFill
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A color appropriate for filling small-size shapes, such as the backing of a progress indicator.
 
@@ -14,17 +15,22 @@ A color appropriate for filling small-size shapes, such as the backing of a prog
 class var secondarySystemFill: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * secondarySystemFillColor;
+```
+
 ## See Also
 
-- [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
+### Fill colors
+- [class var quaternarySystemFill: NSColor](./quaternarysystemfill.md)
   A color appropriate for filling large areas, such as a group box or tab pane.
-- [class var quinarySystemFill: NSColor](nscolor/quinarysystemfill.md)
+- [class var quinarySystemFill: NSColor](./quinarysystemfill.md)
   A color appropriate for filling large areas that require subtle emphasis, such as content of a form.
-- [class var systemFill: NSColor](nscolor/systemfill.md)
+- [class var systemFill: NSColor](./systemfill.md)
   A color appropriate for filling thin shapes, such as the track of a slider.
-- [class var tertiarySystemFill: NSColor](nscolor/tertiarysystemfill.md)
+- [class var tertiarySystemFill: NSColor](./tertiarysystemfill.md)
   A color appropriate for filling medium-size shapes, such as the backing of a switch.
-- [class var textInsertionPointColor: NSColor](nscolor/textinsertionpointcolor.md)
+- [class var textInsertionPointColor: NSColor](./textinsertionpointcolor.md)
 
 
 ---

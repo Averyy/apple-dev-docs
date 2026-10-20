@@ -1,16 +1,17 @@
 # showsVerticalScrollIndicator
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the vertical scroll indicator is visible.
 
 **Availability**:
-- iOS 26.1+
-- iPadOS 26.1+
-- Mac Catalyst 26.1+
-- macOS 26.1+
-- visionOS 26.1+
+- iOS 26.1+ - Deprecated in 27.0 (renamed: scrollConfiguration.visibleScrollIndicators)
+- iPadOS 26.1+ - Deprecated in 27.0 (renamed: scrollConfiguration.visibleScrollIndicators)
+- Mac Catalyst 26.1+ - Deprecated in 27.0 (renamed: scrollConfiguration.visibleScrollIndicators)
+- macOS 26.1+ - Deprecated in 27.0 (renamed: scrollConfiguration.visibleScrollIndicators)
+- visionOS 26.1+ - Deprecated in 27.0 (renamed: scrollConfiguration.visibleScrollIndicators)
 
 ## Declaration
 
@@ -25,7 +26,8 @@ Default is `true`.
 
 ## See Also
 
-- [var showsHorizontalScrollIndicator: Bool](papermarkupviewcontroller/showshorizontalscrollindicator.md)
+### Deprecated
+- [var showsHorizontalScrollIndicator: Bool](./showshorizontalscrollindicator.md)
   A Boolean value that controls whether the horizontal scroll indicator is visible.
 
 

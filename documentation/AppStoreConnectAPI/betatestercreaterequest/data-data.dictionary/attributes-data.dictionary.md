@@ -1,7 +1,8 @@
 # BetaTesterCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object BetaTesterCreateRequest.Data.Attributes
 ```
 
@@ -22,9 +23,11 @@ object BetaTesterCreateRequest.Data.Attributes
 
 ## See Also
 
-- [Beta Testers](beta-testers.md)
+### Related Documentation
+- [Beta Testers](../../beta-testers.md)
   People who can install and test prerelease builds.
-- [object BetaTesterCreateRequest.Data.Relationships](betatestercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object BetaTesterCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

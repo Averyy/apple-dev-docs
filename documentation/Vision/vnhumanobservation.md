@@ -1,7 +1,8 @@
 # VNHumanObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a person that the request detects.
 
@@ -19,39 +20,44 @@ An object that represents a person that the request detects.
 class VNHumanObservation
 ```
 
+```objc
+@interface VNHumanObservation : VNDetectedObjectObservation
+```
+
 ## Topics
 
 ### Inspecting the Observation
-- [var upperBodyOnly: Bool](vnhumanobservation/upperbodyonly.md)
+- [var upperBodyOnly: Bool](./vnhumanobservation/upperbodyonly.md)
   A Boolean value that indicates whether the observation represents an upper-body or full-body rectangle.
 
 ## Relationships
 
 ### Inherits From
-- [VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [VNDetectedObjectObservation](./vndetectedobjectobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Selecting a selfie based on capture quality](selecting-a-selfie-based-on-capture-quality.md)
+### Face and body detection
+- [Selecting a selfie based on capture quality](./selecting-a-selfie-based-on-capture-quality.md)
   Compare face-capture quality in a set of images by using Vision.
-- [class VNDetectFaceCaptureQualityRequest](vndetectfacecapturequalityrequest.md)
+- [class VNDetectFaceCaptureQualityRequest](./vndetectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
-- [class VNDetectFaceLandmarksRequest](vndetectfacelandmarksrequest.md)
+- [class VNDetectFaceLandmarksRequest](./vndetectfacelandmarksrequest.md)
   An image-analysis request that finds facial features like eyes and mouth in an image.
-- [class VNDetectFaceRectanglesRequest](vndetectfacerectanglesrequest.md)
+- [class VNDetectFaceRectanglesRequest](./vndetectfacerectanglesrequest.md)
   A request that finds faces within an image.
-- [class VNDetectHumanRectanglesRequest](vndetecthumanrectanglesrequest.md)
+- [class VNDetectHumanRectanglesRequest](./vndetecthumanrectanglesrequest.md)
   A request that finds rectangular regions that contain people in an image.
 
 

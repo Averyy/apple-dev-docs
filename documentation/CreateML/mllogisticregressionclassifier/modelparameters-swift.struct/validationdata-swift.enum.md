@@ -1,7 +1,8 @@
 # MLLogisticRegressionClassifier.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for specifying validation data.
 
@@ -22,19 +23,20 @@ enum ValidationData
 ## Topics
 
 ### Specifying validation data
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.split(strategy:)](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.split(strategy:)](./validationdata-swift.enum/split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.table(_:)](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.table(_:)](./validationdata-swift.enum/table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.dataFrame(_:)](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.dataFrame(_:)](./validationdata-swift.enum/dataframe%28_%29.md)
   Validation data provided in a DataFrame.
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.none](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.none](./validationdata-swift.enum/none.md)
   Do not set validation data.
 
 ## See Also
 
-- [init(validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](mllogisticregressionclassifier/modelparameters-swift.struct/init(validation:maxiterations:l1penalty:l2penalty:stepsize:convergencethreshold:featurerescaling:).md)
-- [init(validationData: MLDataTable?, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](mllogisticregressionclassifier/modelparameters-swift.struct/init(validationdata:maxiterations:l1penalty:l2penalty:stepsize:convergencethreshold:featurerescaling:).md)
+### Creating parameters
+- [init(validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](./init%28validation,maxiterations,l1penalty,l2penalty,stepsize,convergencethreshold,featurerescaling%29.md)
+- [init(validationData: MLDataTable?, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](./init%28validationdata,maxiterations,l1penalty,l2penalty,stepsize,convergencethreshold,featurerescaling%29.md)
   Creates a new set of parameters.
 
 

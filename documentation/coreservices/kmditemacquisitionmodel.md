@@ -1,7 +1,8 @@
 # kMDItemAcquisitionModel
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The model of the device used to aquire the document contents. For example, 100, 200, 400, etc. A CFString.
 
@@ -12,6 +13,10 @@ The model of the device used to aquire the document contents. For example, 100, 
 
 ```swift
 let kMDItemAcquisitionModel: CFString!
+```
+
+```c
+const CFStringRef kMDItemAcquisitionModel;
 ```
 
 

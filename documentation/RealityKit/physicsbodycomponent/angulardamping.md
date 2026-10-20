@@ -1,7 +1,8 @@
 # angularDamping
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that controls how fast a dynamic rigid body’s rotational motion approaches the zero rest state.
 

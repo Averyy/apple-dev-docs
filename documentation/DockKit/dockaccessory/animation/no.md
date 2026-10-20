@@ -1,7 +1,8 @@
 # DockAccessory.Animation.no
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory traces a horizontal head shake.
 

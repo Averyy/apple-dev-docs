@@ -1,7 +1,8 @@
 # getSize(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,11 +21,12 @@ mutating func getSize(_ body: @escaping CMBufferGetSizeHandler)
 
 ## See Also
 
-- [func compare(CMBufferCompareHandler)](cmbufferqueue/handlers/builder/compare(_:).md)
-- [func getDecodeTimeStamp(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getdecodetimestamp(_:).md)
-- [func getDuration(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getduration(_:).md)
-- [func getPresentationTimeStamp(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getpresentationtimestamp(_:).md)
-- [func isDataReady(CMBufferGetBooleanHandler)](cmbufferqueue/handlers/builder/isdataready(_:).md)
+### Instance Methods
+- [func compare(CMBufferCompareHandler)](./compare%28_%29.md)
+- [func getDecodeTimeStamp(CMBufferGetTimeHandler)](./getdecodetimestamp%28_%29.md)
+- [func getDuration(CMBufferGetTimeHandler)](./getduration%28_%29.md)
+- [func getPresentationTimeStamp(CMBufferGetTimeHandler)](./getpresentationtimestamp%28_%29.md)
+- [func isDataReady(CMBufferGetBooleanHandler)](./isdataready%28_%29.md)
 
 
 ---

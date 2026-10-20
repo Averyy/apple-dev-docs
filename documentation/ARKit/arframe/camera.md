@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about the camera position, orientation, and imaging parameters used to capture the frame.
 
@@ -16,17 +17,22 @@ Information about the camera position, orientation, and imaging parameters used 
 var camera: ARCamera { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) ARCamera * camera;
+```
+
 ## See Also
 
-- [var capturedImage: CVPixelBuffer](arframe/capturedimage.md)
+### Accessing camera data
+- [var capturedImage: CVPixelBuffer](./capturedimage.md)
   A pixel buffer containing the image captured by the camera.
-- [var timestamp: TimeInterval](arframe/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time at which the frame was captured.
-- [var cameraGrainIntensity: Float](arframe/cameragrainintensity.md)
+- [var cameraGrainIntensity: Float](./cameragrainintensity.md)
   A value that specifies the amount of grain present in the camera grain texture.
-- [var cameraGrainTexture: (any MTLTexture)?](arframe/cameragraintexture.md)
+- [var cameraGrainTexture: (any MTLTexture)?](./cameragraintexture.md)
   A tileable Metal texture created by ARKit to match the visual characteristics of the current video stream.
-- [var exifData: [String : Any]](arframe/exifdata.md)
+- [var exifData: [String : Any]](./exifdata.md)
   Auxiliary data for the captured image.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The unit in the last place of 1.0.
@@ -29,6 +30,12 @@ The positive difference between 1.0 and the next greater representable number. `
 - The name “epsilon” suggests that this quantity is a good tolerance to choose for approximate comparisons, but it is almost always unsuitable for that purpose.
 
 See also the `ulp` member property.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [static var ulpOfOne: Self](./ulpofone-3j2pj.md)
+  The unit in the last place of 1.0.
 
 
 ---

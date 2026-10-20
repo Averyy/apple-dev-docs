@@ -1,9 +1,10 @@
 # contains(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns a Boolean value that indicates whether the set contains the specified [`SquareAzimuth`](squareazimuth.md).
+Returns a Boolean value that indicates whether the set contains the specified [`SquareAzimuth`](../../squareazimuth.md).
 
 **Availability**:
 - visionOS 2.0+

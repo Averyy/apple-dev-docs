@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: App Intents  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compares two entity identifiers for equality.
 
@@ -11,7 +12,7 @@ Compares two entity identifiers for equality.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,9 @@ static func == (lhs: EntityIdentifier, rhs: EntityIdentifier) -> Bool
 
 #### Discussion
 
-> ❗ **Important**: This implementation **intentionally ignores** the `stableIdentifier` field. Only `entityType` and `identifier` are compared. This ensures that the same entity on different devices (same local ID, different stable ID) is considered equal, enabling correct Dictionary/Set behavior.
+> ❗ **Important**: This implementation **intentionally ignores** the `stableIdentifier` field. Only `entityType` and `identifier` are compared.
+>
+> This ensures that the same entity on different devices (same local ID, different stable ID) is considered equal, enabling correct Dictionary/Set behavior.
 
 
 ---

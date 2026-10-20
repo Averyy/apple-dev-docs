@@ -1,7 +1,8 @@
 # axis
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the axis on which the function applies scale and bias.
 
@@ -11,8 +12,10 @@ The index of the axis on which the function applies scale and bias.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -26,9 +29,10 @@ Set to `nil` to dequantize the entire tensor using scale and bias.
 
 ## See Also
 
-- [var scale: BNNSNDArrayDescriptor?](bnns/fusedquantizationparameters/scale.md)
+### Inspecting the Properties of a Fused Quantization Parameters Structure
+- [var scale: BNNSNDArrayDescriptor?](./scale.md)
   The descriptor of the scale.
-- [var bias: BNNSNDArrayDescriptor?](bnns/fusedquantizationparameters/bias.md)
+- [var bias: BNNSNDArrayDescriptor?](./bias.md)
   The descriptor of the bias.
 
 

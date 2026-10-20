@@ -1,17 +1,22 @@
 # highlightColor(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the highlight color that the receiver wants to display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func highlightColor(in controlView: NSView) -> NSColor?
+```
+
+```objc
+- (NSColor *) highlightColorInView:(NSView *) controlView;
 ```
 
 #### Return Value
@@ -24,13 +29,14 @@ The highlight color.
 
 ## See Also
 
-- [func reset()](nsbrowsercell/reset.md)
+### Managing Browser Cell State
+- [func reset()](./reset%28%29.md)
   Unhighlights the receiver and unsets its state.
-- [func set()](nsbrowsercell/set.md)
+- [func set()](./set%28%29.md)
   Highlights the receiver and sets its state.
-- [var isLeaf: Bool](nsbrowsercell/isleaf.md)
+- [var isLeaf: Bool](./isleaf.md)
   A Boolean that indicates whether the browser cell is a leaf or a branch cell.
-- [var isLoaded: Bool](nsbrowsercell/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   A Boolean that indicates whether the cell is ready to display.
 
 

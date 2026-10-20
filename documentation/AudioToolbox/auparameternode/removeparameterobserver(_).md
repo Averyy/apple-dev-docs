@@ -1,7 +1,8 @@
 # removeParameterObserver(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a specific parameter observer.
 
@@ -19,6 +20,10 @@ Remove a specific parameter observer.
 func removeParameterObserver(_ token: AUParameterObserverToken)
 ```
 
+```objc
+- (void) removeParameterObserver:(AUParameterObserverToken) token;
+```
+
 #### Discussion
 
 This call will remove the callback corresponding to the given token. This operation blocks until any callbacks currently in progress have completed.
@@ -29,11 +34,12 @@ This call will remove the callback corresponding to the given token. This operat
 
 ## See Also
 
-- [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterobserver:).md)
+### Observers
+- [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](./token%28byaddingparameterobserver%29.md)
   Adds an observer for a single parameter or all parameters in a group.
-- [func token(byAddingParameterRecordingObserver: AUParameterRecordingObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterrecordingobserver:).md)
+- [func token(byAddingParameterRecordingObserver: AUParameterRecordingObserver) -> AUParameterObserverToken](./token%28byaddingparameterrecordingobserver%29.md)
   Adds a recording observer for a single parameter or all parameters in a group.
-- [func token(byAddingParameterAutomationObserver: AUParameterAutomationObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterautomationobserver:).md)
+- [func token(byAddingParameterAutomationObserver: AUParameterAutomationObserver) -> AUParameterObserverToken](./token%28byaddingparameterautomationobserver%29.md)
 
 
 ---

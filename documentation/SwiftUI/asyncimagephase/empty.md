@@ -1,7 +1,8 @@
 # AsyncImagePhase.empty
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No image is loaded.
 
@@ -22,9 +23,10 @@ case empty
 
 ## See Also
 
-- [AsyncImagePhase.success(_:)](asyncimagephase/success(_:).md)
+### Getting load phases
+- [AsyncImagePhase.success(_:)](./success%28_%29.md)
   An image successfully loaded.
-- [AsyncImagePhase.failure(_:)](asyncimagephase/failure(_:).md)
+- [AsyncImagePhase.failure(_:)](./failure%28_%29.md)
   An image failed to load with an error.
 
 

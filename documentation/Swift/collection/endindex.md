@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
@@ -37,15 +38,16 @@ If the collection is empty, `endIndex` is equal to `startIndex`.
 
 ## See Also
 
-- [var startIndex: Self.Index](collection/startindex.md)
+### Manipulating Indices
+- [var startIndex: Self.Index](./startindex.md)
   The position of the first element in a nonempty collection.
-- [var indices: Self.Indices](collection/indices-9kkbf.md)
+- [var indices: Self.Indices](./indices-9kkbf.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [func index(after: Self.Index) -> Self.Index](collection/index(after:).md)
+- [func index(after: Self.Index) -> Self.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(inout Self.Index, offsetBy: Int)](collection/formindex(_:offsetby:)-393pr.md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29-393pr.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](collection/formindex(_:offsetby:limitedby:)-6jwra.md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29-6jwra.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
 
 

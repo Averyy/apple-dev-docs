@@ -1,7 +1,8 @@
 # BuildBetaNotificationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Build Beta Notification.
 
@@ -10,14 +11,14 @@ The request body you use to create a Build Beta Notification.
 
 ## Declaration
 
-```swift
+```
 object BuildBetaNotificationCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object BuildBetaNotificationCreateRequest.Data](buildbetanotificationcreaterequest/data-data.dictionary.md)
+- [object BuildBetaNotificationCreateRequest.Data](./buildbetanotificationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,9 +27,10 @@ object BuildBetaNotificationCreateRequest
 
 ## See Also
 
-- [object BuildBetaNotification](buildbetanotification.md)
+### Objects
+- [object BuildBetaNotification](./buildbetanotification.md)
   A push notification sent to eligible TestFlight testers when a new build is available to install.
-- [object BuildBetaNotificationResponse](buildbetanotificationresponse.md)
+- [object BuildBetaNotificationResponse](./buildbetanotificationresponse.md)
   The response body for the endpoint that sends a beta test notification for a build.
 
 

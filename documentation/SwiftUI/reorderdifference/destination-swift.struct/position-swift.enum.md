@@ -1,7 +1,8 @@
 # ReorderDifference.Destination.Position
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The position within the destination collection.
 
@@ -24,24 +25,25 @@ enum Position
 ## Topics
 
 ### Destination positions
-- [ReorderDifference.Destination.Position.before(_:)](reorderdifference/destination-swift.struct/position-swift.enum/before(_:).md)
+- [ReorderDifference.Destination.Position.before(_:)](./position-swift.enum/before%28_%29.md)
   The position of the item with the associated identifier in its collection. Move source items to the index of this item.
-- [ReorderDifference.Destination.Position.end](reorderdifference/destination-swift.struct/position-swift.enum/end.md)
+- [ReorderDifference.Destination.Position.end](./position-swift.enum/end.md)
   The end of the collection. Append source items to the end of the collection.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var collectionID: CollectionID](reorderdifference/destination-swift.struct/collectionid.md)
+### Getting destination details
+- [var collectionID: CollectionID](./collectionid.md)
   The collection that contains the destination’s position.
-- [var position: ReorderDifference<ItemID, CollectionID>.Destination.Position](reorderdifference/destination-swift.struct/position-swift.property.md)
+- [var position: ReorderDifference<ItemID, CollectionID>.Destination.Position](./position-swift.property.md)
   The identifier position in the collection where the sources should be moved to.
 
 

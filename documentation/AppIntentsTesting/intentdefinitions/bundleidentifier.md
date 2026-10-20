@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the app target under test.
 
@@ -22,7 +23,8 @@ let bundleIdentifier: String
 
 ## See Also
 
-- [init(bundleIdentifier: String)](intentdefinitions/init(bundleidentifier:).md)
+### Creating an intent definition
+- [init(bundleIdentifier: String)](./init%28bundleidentifier%29.md)
   Creates a new collection of definitions for intents that the specified app bundle contains.
 
 

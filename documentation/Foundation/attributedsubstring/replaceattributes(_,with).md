@@ -1,7 +1,8 @@
 # replaceAttributes(_:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the attributed substring’s attributes with those in a specified attribute container.
 
@@ -27,11 +28,12 @@ mutating func replaceAttributes(_ attributes: AttributeContainer, with others: A
 
 ## See Also
 
-- [func setAttributes(AttributeContainer)](attributedsubstring/setattributes(_:).md)
+### Applying and Modifying Attributes
+- [func setAttributes(AttributeContainer)](./setattributes%28_%29.md)
   Sets the attributed substring’s attributes to those in a specified attribute container.
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedsubstring/mergeattributes(_:mergepolicy:).md)
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
+- [AttributedString.AttributeMergePolicy](../attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
 
 

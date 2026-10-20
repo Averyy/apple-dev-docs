@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new line fragment with from data in an unarchiver.
 
@@ -18,15 +19,20 @@ Creates a new line fragment with from data in an unarchiver.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
-- `aDecoder`: A decoder that conforms to the [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) protocol.
+- `aDecoder`: A decoder that conforms to the [`NSCoder`](../../Foundation/nscoder.md) protocol.
 
 ## See Also
 
-- [init(attributedString: NSAttributedString, range: NSRange)](nstextlinefragment/init(attributedstring:range:).md)
+### Creating line fragments
+- [init(attributedString: NSAttributedString, range: NSRange)](./init%28attributedstring,range%29.md)
   Creates a new line fragment from the attributed string for the range of characters you specify.
-- [convenience init(string: String, attributes: [NSAttributedString.Key : Any], range: NSRange)](nstextlinefragment/init(string:attributes:range:).md)
+- [convenience init(string: String, attributes: [NSAttributedString.Key : Any], range: NSRange)](./init%28string,attributes,range%29.md)
   Creates a new line fragment using the string, attributes, and range you provide.
 
 

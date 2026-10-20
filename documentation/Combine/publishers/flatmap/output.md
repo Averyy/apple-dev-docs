@@ -1,7 +1,8 @@
 # Publishers.FlatMap.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses the output type declared by the new publisher.
 
 ## See Also
 
-- [Publishers.FlatMap.Failure](publishers/flatmap/failure.md)
+### Declaring supporting types
+- [Publishers.FlatMap.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

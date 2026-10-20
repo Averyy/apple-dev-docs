@@ -1,7 +1,8 @@
 # deleteAfterSuccessfulDownload
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value indicating whether to delete the file from the device after a successful download.
 
@@ -18,23 +19,28 @@ A Boolean value indicating whether to delete the file from the device after a su
 static let deleteAfterSuccessfulDownload: ICDownloadOption
 ```
 
+```c
+extern ICDownloadOption const ICDeleteAfterSuccessfulDownload;
+```
+
 #### Discussion
 
-Specify this value as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
+Specify this value as an [`NSNumber`](../../Foundation/nsnumber.md) object.
 
 ## See Also
 
-- [static let downloadsDirectoryURL: ICDownloadOption](icdownloadoption/downloadsdirectoryurl.md)
+### Download Options
+- [static let downloadsDirectoryURL: ICDownloadOption](./downloadsdirectoryurl.md)
   A writable directory where the downloaded files should be saved.
-- [static let saveAsFilename: ICDownloadOption](icdownloadoption/saveasfilename.md)
+- [static let saveAsFilename: ICDownloadOption](./saveasfilename.md)
   The name to be used for the downloaded file.
-- [static let savedFilename: ICDownloadOption](icdownloadoption/savedfilename.md)
+- [static let savedFilename: ICDownloadOption](./savedfilename.md)
   The actual name of the saved file.
-- [static let savedAncillaryFiles: ICDownloadOption](icdownloadoption/savedancillaryfiles.md)
+- [static let savedAncillaryFiles: ICDownloadOption](./savedancillaryfiles.md)
   An array of files associated with the file being downloaded.
-- [static let overwrite: ICDownloadOption](icdownloadoption/overwrite.md)
+- [static let overwrite: ICDownloadOption](./overwrite.md)
   A Boolean value indicating whether the downloaded file should overwrite an existing file with the same name and extension.
-- [static let sidecarFiles: ICDownloadOption](icdownloadoption/sidecarfiles.md)
+- [static let sidecarFiles: ICDownloadOption](./sidecarfiles.md)
   A Boolean value indicating whether to download all sidecar files along with the media file.
 
 

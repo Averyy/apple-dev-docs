@@ -1,7 +1,8 @@
 # scribbleInteraction(_:shouldBeginAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the delegate should allow writing at a specific location in the view.
 
@@ -14,6 +15,10 @@ Returns a Boolean value that indicates whether the delegate should allow writing
 
 ```swift
 optional func scribbleInteraction(_ interaction: UIScribbleInteraction, shouldBeginAt location: CGPoint) -> Bool
+```
+
+```objc
+- (BOOL) scribbleInteraction:(UIScribbleInteraction *) interaction shouldBeginAtLocation:(CGPoint) location;
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ This callback can also return `false` for views that handle Apple Pencil events 
 ## Parameters
 
 - `interaction`: The text view asking if it can start receiving user input.
-- `location`: The location of the text view as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the view’s coordinate system.
+- `location`: The location of the text view as a [`CGPoint`](../../CoreFoundation/cgpoint.md) in the view’s coordinate system.
 
 ## See Also
 
-- [func scribbleInteractionShouldDelayFocus(UIScribbleInteraction) -> Bool](uiscribbleinteractiondelegate/scribbleinteractionshoulddelayfocus(_:).md)
+### Allowing and controlling Scribble interactions
+- [func scribbleInteractionShouldDelayFocus(UIScribbleInteraction) -> Bool](./scribbleinteractionshoulddelayfocus%28_%29.md)
   Tells the delegate to delay focusing the text input view.
 
 

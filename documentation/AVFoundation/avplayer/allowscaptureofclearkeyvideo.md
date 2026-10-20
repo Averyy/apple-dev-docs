@@ -1,7 +1,8 @@
 # allowsCaptureOfClearKeyVideo
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the video output of ClearKey Encrypted Video can be captured
 
@@ -19,6 +20,10 @@ Indicates whether the video output of ClearKey Encrypted Video can be captured
 ```swift
 nonisolated
 var allowsCaptureOfClearKeyVideo: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL allowsCaptureOfClearKeyVideo;
 ```
 
 #### Discussion

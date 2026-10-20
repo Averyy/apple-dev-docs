@@ -1,7 +1,8 @@
 # sceneUnderstanding
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene-understanding options for the view.
 
@@ -18,7 +19,7 @@ var sceneUnderstanding: ARView.Environment.SceneUnderstanding { mutating get set
 
 ## Mentions
 
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](../../realitykit-scene-understanding.md)
 
 
 ---

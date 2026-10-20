@@ -1,7 +1,8 @@
 # kFFTRadix5
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 Specifies a radix of 5.
 
@@ -10,7 +11,7 @@ Specifies a radix of 5.
 
 ## Declaration
 
-```swift
+```c
 kFFTRadix5 = 2
 ```
 

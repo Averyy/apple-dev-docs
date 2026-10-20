@@ -1,14 +1,15 @@
 # GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterGroup.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterGroup.Data
 ```
 
@@ -20,7 +21,7 @@ object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterGroup.D
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterGroups`
 
 
 ---

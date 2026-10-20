@@ -1,7 +1,8 @@
 # SAErrorDomain
 
 **Framework**: SafetyKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for error objects that SafetyKit produces.
 
@@ -18,11 +19,16 @@ The domain for error objects that SafetyKit produces.
 let SAErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain SAErrorDomain;
+```
+
 ## See Also
 
-- [SAError.Code](saerror/code.md)
+### Handling errors
+- [SAError.Code](./saerror/code.md)
   Codes for identifying errors in SafetyKit.
-- [struct SAError](saerror.md)
+- [struct SAError](./saerror.md)
   An error reported by SafetyKit.
 
 

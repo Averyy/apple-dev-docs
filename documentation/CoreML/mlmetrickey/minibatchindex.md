@@ -1,7 +1,8 @@
 # miniBatchIndex
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key you use to access the mini-batch index (an `Int64` value) within an epoch.
 
@@ -20,15 +21,20 @@ The key you use to access the mini-batch index (an `Int64` value) within an epoc
 class var miniBatchIndex: MLMetricKey { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MLMetricKey * miniBatchIndex;
+```
+
 #### Discussion
 
-Use this key to fetch the mini-batch index value in the [`metrics`](mlupdatecontext/metrics.md) dictionary.
+Use this key to fetch the mini-batch index value in the [`metrics`](../mlupdatecontext/metrics.md) dictionary.
 
 ## See Also
 
-- [class var lossValue: MLMetricKey](mlmetrickey/lossvalue.md)
+### Getting the keys
+- [class var lossValue: MLMetricKey](./lossvalue.md)
   The key you use to access the current loss (a `float` value).
-- [class var epochIndex: MLMetricKey](mlmetrickey/epochindex.md)
+- [class var epochIndex: MLMetricKey](./epochindex.md)
   The key you use to access the epoch index (an `Int64` value).
 
 

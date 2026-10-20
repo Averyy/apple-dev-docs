@@ -1,7 +1,8 @@
 # CMGyroData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single measurement of the device’s rotation rate.
 
@@ -19,40 +20,45 @@ A single measurement of the device’s rotation rate.
 class CMGyroData
 ```
 
+```objc
+@interface CMGyroData : CMLogItem
+```
+
 #### Overview
 
-An application receives or samples `CMGyroData` objects at regular intervals after calling the [`startGyroUpdates(to:withHandler:)`](cmmotionmanager/startgyroupdates(to:withhandler:).md) method or the [`startGyroUpdates()`](cmmotionmanager/startgyroupdates().md) method of the [`CMMotionManager`](cmmotionmanager.md) class.
+An application receives or samples `CMGyroData` objects at regular intervals after calling the [`startGyroUpdates(to:withHandler:)`](./cmmotionmanager/startgyroupdates%28to,withhandler%29.md) method or the [`startGyroUpdates()`](./cmmotionmanager/startgyroupdates%28%29.md) method of the [`CMMotionManager`](./cmmotionmanager.md) class.
 
 ## Topics
 
 ### Getting the Rotation Rate
-- [var rotationRate: CMRotationRate](cmgyrodata/rotationrate.md)
+- [var rotationRate: CMRotationRate](./cmgyrodata/rotationrate.md)
   The rotation rate as measured by the device’s gyroscope.
-- [struct CMRotationRate](cmrotationrate.md)
+- [struct CMRotationRate](./cmrotationrate.md)
   The type of structures representing a measurement of rotation rate.
-- [class CMRotationRateData](cmrotationratedata.md)
+- [class CMRotationRateData](./cmrotationratedata.md)
   A data object that contains a single rotation-rate measurement.
-- [class CMRecordedRotationRateData](cmrecordedrotationratedata.md)
+- [class CMRecordedRotationRateData](./cmrecordedrotationratedata.md)
   A data object that contains a single rotation-rate measurement at a specific time.
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting raw gyroscope events](getting-raw-gyroscope-events.md)
+### Gyroscopes
+- [Getting raw gyroscope events](./getting-raw-gyroscope-events.md)
   Retrieve data from the onboard gyroscopes.
 
 

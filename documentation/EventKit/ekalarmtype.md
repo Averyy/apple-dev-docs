@@ -1,17 +1,18 @@
 # EKAlarmType
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies what type of action occurs when the alarm triggers.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,37 +20,42 @@ A value that specifies what type of action occurs when the alarm triggers.
 enum EKAlarmType
 ```
 
+```c
+enum EKAlarmType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKAlarmType.display](ekalarmtype/display.md)
+- [EKAlarmType.display](./ekalarmtype/display.md)
   The alarm displays a message.
-- [EKAlarmType.audio](ekalarmtype/audio.md)
+- [EKAlarmType.audio](./ekalarmtype/audio.md)
   The alarm plays a sound.
-- [EKAlarmType.procedure](ekalarmtype/procedure.md)
+- [EKAlarmType.procedure](./ekalarmtype/procedure.md)
   The alarm opens a URL.
-- [EKAlarmType.email](ekalarmtype/email.md)
+- [EKAlarmType.email](./ekalarmtype/email.md)
   The alarm sends an email.
 ### Initializers
-- [init?(rawValue: Int)](ekalarmtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekalarmtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: EKAlarmType](ekalarm/type.md)
+### Triggering Alarm Actions
+- [var type: EKAlarmType](./ekalarm/type.md)
   The type of action to trigger when the alarm fires.
-- [var emailAddress: String?](ekalarm/emailaddress.md)
+- [var emailAddress: String?](./ekalarm/emailaddress.md)
   The recipient of an email to send when the alarm triggers.
-- [var soundName: String?](ekalarm/soundname.md)
+- [var soundName: String?](./ekalarm/soundname.md)
   The name of the sound to play when the alarm triggers.
 
 

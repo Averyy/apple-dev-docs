@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an instance that can be used to begin parsing `CodeUnit`s at any Unicode scalar boundary.
 

@@ -1,12 +1,13 @@
 # newPassword
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A new password.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A new password.
 static let newPassword: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeNewPassword;
+```
+
 ## See Also
 
-- [static let username: WKTextContentType](wktextcontenttype/username.md)
+### Login Credentials
+- [static let username: WKTextContentType](./username.md)
   An account or login name.
-- [static let password: WKTextContentType](wktextcontenttype/password.md)
+- [static let password: WKTextContentType](./password.md)
   An existing password.
-- [static let oneTimeCode: WKTextContentType](wktextcontenttype/onetimecode.md)
+- [static let oneTimeCode: WKTextContentType](./onetimecode.md)
   A one-time code.
 
 

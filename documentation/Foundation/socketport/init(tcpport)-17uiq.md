@@ -1,7 +1,8 @@
 # init(TCPPort:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.0+

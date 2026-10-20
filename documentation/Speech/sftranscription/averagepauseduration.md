@@ -1,16 +1,19 @@
 # averagePauseDuration
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average pause duration between words, measured in seconds.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 14.5
+- iPadOS 13.0+ - Deprecated in 14.5
+- Mac Catalyst 13.0+ - Deprecated in 14.5
+- macOS 10.15+ - Deprecated in 11.3
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: averagePauseDuration is moved to SFSpeechRecognitionMetadata
 
 ## Declaration
 
@@ -18,9 +21,14 @@ The average pause duration between words, measured in seconds.
 var averagePauseDuration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval averagePauseDuration;
+```
+
 ## See Also
 
-- [var speakingRate: Double](sftranscription/speakingrate.md)
+### Deprecated
+- [var speakingRate: Double](./speakingrate.md)
   The number of words spoken per minute.
 
 

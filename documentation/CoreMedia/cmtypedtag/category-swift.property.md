@@ -1,7 +1,8 @@
 # category
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category of the tag.
 
@@ -22,7 +23,8 @@ final let category: CMTypedTag<TypedValue>.Category
 
 ## See Also
 
-- [var value: TypedValue](cmtypedtag/value.md)
+### Inspecting Typed Tags
+- [var value: TypedValue](./value.md)
   The value of the tag, represented as its appropriate type.
 
 

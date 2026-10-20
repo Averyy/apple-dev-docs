@@ -1,7 +1,8 @@
 # TotalWiFiDownloadMetric
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric that measures the total data downloaded over WiFi.
 
@@ -19,31 +20,32 @@ struct TotalWiFiDownloadMetric
 
 #### Discussion
 
-This metric corresponds to the [`MetricResult.totalWiFiDownload(_:)`](metricresult/totalwifidownload(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
+This metric corresponds to the [`MetricResult.totalWiFiDownload(_:)`](./metricresult/totalwifidownload%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 
 ## Topics
 
 ### Measurements
-- [let value: Measurement<UnitInformationStorage>](totalwifidownloadmetric/value.md)
+- [let value: Measurement<UnitInformationStorage>](./totalwifidownloadmetric/value.md)
   The total amount of data downloaded over the WiFi connection.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct TotalWiFiUploadMetric](totalwifiuploadmetric.md)
+### Network metrics
+- [struct TotalWiFiUploadMetric](./totalwifiuploadmetric.md)
   A metric that measures the total data uploaded over WiFi.
-- [struct TotalCellularUploadMetric](totalcellularuploadmetric.md)
+- [struct TotalCellularUploadMetric](./totalcellularuploadmetric.md)
   A metric that measures the total data uploaded over a cellular connection.
-- [struct TotalCellularDownloadMetric](totalcellulardownloadmetric.md)
+- [struct TotalCellularDownloadMetric](./totalcellulardownloadmetric.md)
   A metric that measures the total data downloaded over a cellular connection.
 
 

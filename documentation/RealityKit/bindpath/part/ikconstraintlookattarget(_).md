@@ -1,7 +1,8 @@
 # BindPath.Part.ikConstraintLookAtTarget(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A path component to an IK solver’s constraint target look at position.
 

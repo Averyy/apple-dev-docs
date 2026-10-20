@@ -3,7 +3,7 @@
 **Framework**: TVMLKit JS  
 **Kind**: clconst
 
-The corresponding value is the [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) object representing the state of a failed SSL handshake. This key is only present in the [`NSURLErrorDomain`](https://developer.apple.com/documentation/foundation/nsurlerrordomain).
+The corresponding value is the [`SecTrust`](../../../Security/sectrust.md) object representing the state of a failed SSL handshake. This key is only present in the [`NSURLErrorDomain`](../../../Foundation/nsurlerrordomain.md).
 
 
 ---

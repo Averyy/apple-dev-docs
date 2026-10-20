@@ -1,7 +1,8 @@
 # MSCriticalMessagingAuthorizationStatus.approved
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person has approved a request to use the Critical Messaging API.
 
@@ -21,9 +22,10 @@ The framework returns this value when someone approves a request to use the API.
 
 ## See Also
 
-- [MSCriticalMessagingAuthorizationStatus.unknown](mscriticalmessagingauthorizationstatus/unknown.md)
+### Authorization statuses
+- [MSCriticalMessagingAuthorizationStatus.unknown](./unknown.md)
   The authorization status is unknown.
-- [MSCriticalMessagingAuthorizationStatus.denied](mscriticalmessagingauthorizationstatus/denied.md)
+- [MSCriticalMessagingAuthorizationStatus.denied](./denied.md)
   A person has denied permission to use the Critical Messaging API.
 
 

@@ -1,7 +1,8 @@
 # .>=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Pointwise compare greater than or equal to.
 
@@ -19,6 +20,8 @@ Pointwise compare greater than or equal to.
 ```swift
 static func .>= (a: SIMD4<Scalar>, b: SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>
 ```
+
+Available when `Scalar` is `Float16`.
 
 #### Discussion
 

@@ -1,16 +1,17 @@
 # UIPageViewController.SpineLocation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Locations for the spine.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,47 +19,52 @@ Locations for the spine.
 enum SpineLocation
 ```
 
+```c
+enum UIPageViewControllerSpineLocation : NSInteger;
+```
+
 #### Overview
 
-To set the spine location, wrap one of these constants in an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object and set it as the value for the [`spineLocation`](uipageviewcontroller/optionskey/spinelocation.md) key in the options dictionary passed to the [`init(transitionStyle:navigationOrientation:options:)`](uipageviewcontroller/init(transitionstyle:navigationorientation:options:).md) method.
+To set the spine location, wrap one of these constants in an [`NSNumber`](../../Foundation/nsnumber.md) object and set it as the value for the [`spineLocation`](./optionskey/spinelocation.md) key in the options dictionary passed to the [`init(transitionStyle:navigationOrientation:options:)`](./init%28transitionstyle,navigationorientation,options%29.md) method.
 
 ## Topics
 
 ### Constants
-- [UIPageViewController.SpineLocation.none](uipageviewcontroller/spinelocation-swift.enum/none.md)
+- [UIPageViewController.SpineLocation.none](./spinelocation-swift.enum/none.md)
   No spine.
-- [UIPageViewController.SpineLocation.min](uipageviewcontroller/spinelocation-swift.enum/min.md)
+- [UIPageViewController.SpineLocation.min](./spinelocation-swift.enum/min.md)
   Spine at the left or top edge of the screen.
-- [UIPageViewController.SpineLocation.mid](uipageviewcontroller/spinelocation-swift.enum/mid.md)
+- [UIPageViewController.SpineLocation.mid](./spinelocation-swift.enum/mid.md)
   Spine in the middle or the screen.
-- [UIPageViewController.SpineLocation.max](uipageviewcontroller/spinelocation-swift.enum/max.md)
+- [UIPageViewController.SpineLocation.max](./spinelocation-swift.enum/max.md)
   Spine at the right or bottom edge of the screen.
 ### Initializers
-- [init?(rawValue: Int)](uipageviewcontroller/spinelocation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./spinelocation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var navigationOrientation: UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.property.md)
+### Display Options
+- [var navigationOrientation: UIPageViewController.NavigationOrientation](./navigationorientation-swift.property.md)
   The direction along which navigation occurs.
-- [UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.enum.md)
+- [UIPageViewController.NavigationOrientation](./navigationorientation-swift.enum.md)
   Orientations for page-turn transitions.
-- [var spineLocation: UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.property.md)
+- [var spineLocation: UIPageViewController.SpineLocation](./spinelocation-swift.property.md)
   The location of the spine.
-- [var transitionStyle: UIPageViewController.TransitionStyle](uipageviewcontroller/transitionstyle-swift.property.md)
+- [var transitionStyle: UIPageViewController.TransitionStyle](./transitionstyle-swift.property.md)
   The style used to transition between view controllers.
-- [UIPageViewController.TransitionStyle](uipageviewcontroller/transitionstyle-swift.enum.md)
+- [UIPageViewController.TransitionStyle](./transitionstyle-swift.enum.md)
   Styles for the page-turn transition.
-- [var isDoubleSided: Bool](uipageviewcontroller/isdoublesided.md)
+- [var isDoubleSided: Bool](./isdoublesided.md)
   A Boolean value that indicates whether content appears on the back of pages.
 
 

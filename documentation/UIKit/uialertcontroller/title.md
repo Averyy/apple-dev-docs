@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the alert.
 
@@ -9,7 +10,7 @@ The title of the alert.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The title of the alert.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 #### Discussion
 
 The title string is displayed prominently in the alert or action sheet. You should use this string to get the user’s attention and communicate the reason for displaying the alert.
 
 ## See Also
 
-- [var message: String?](uialertcontroller/message.md)
+### Configuring the alert
+- [var message: String?](./message.md)
   Descriptive text that provides more details about the reason for the alert.
-- [var preferredStyle: UIAlertController.Style](uialertcontroller/preferredstyle.md)
+- [var preferredStyle: UIAlertController.Style](./preferredstyle.md)
   The style of the alert controller.
-- [UIAlertController.Style](uialertcontroller/style.md)
+- [UIAlertController.Style](./style.md)
   Constants indicating the type of alert to display.
 
 

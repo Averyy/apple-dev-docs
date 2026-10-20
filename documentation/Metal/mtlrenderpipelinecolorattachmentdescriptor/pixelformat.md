@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the color attachment’s texture.
 
@@ -10,7 +11,7 @@ The pixel format of the color attachment’s texture.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ The pixel format of the color attachment’s texture.
 var pixelFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLPixelFormat pixelFormat;
+```
+
 ## Mentions
 
-- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+- [Using the Metal 4 compilation API](../using-the-metal-4-compilation-api.md)
 
 #### Discussion
 
@@ -29,11 +34,13 @@ The pixel format of the rendering pipeline state needs to be set to match the pi
 
 ## See Also
 
-- [Metal Shading Language Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [var writeMask: MTLColorWriteMask](mtlrenderpipelinecolorattachmentdescriptor/writemask.md)
+### Related Documentation
+- [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Configuring render pipeline states
+- [var writeMask: MTLColorWriteMask](./writemask.md)
   A bitmask that restricts which color channels are written into the texture.
-- [struct MTLColorWriteMask](mtlcolorwritemask.md)
+- [struct MTLColorWriteMask](../mtlcolorwritemask.md)
   Values used to specify a mask to permit or restrict writing to color channels of a color value.
 
 

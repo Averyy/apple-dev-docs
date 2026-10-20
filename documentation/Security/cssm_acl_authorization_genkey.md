@@ -1,7 +1,8 @@
 # CSSM_ACL_AUTHORIZATION_GENKEY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ACL_AUTHORIZATION_GENKEY: Int { get }
+```
+
+```c
+CSSM_ACL_AUTHORIZATION_GENKEY
 ```
 
 

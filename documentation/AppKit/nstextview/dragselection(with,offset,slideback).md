@@ -1,12 +1,13 @@
 # dragSelection(with:offset:slideBack:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins dragging the current selected text range.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Begins dragging the current selected text range.
 func dragSelection(with event: NSEvent, offset mouseOffset: NSSize, slideBack: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) dragSelectionWithEvent:(NSEvent *) event offset:(NSSize) mouseOffset slideBack:(BOOL) slideBack;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drag can be successfully initiated, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the drag can be successfully initiated, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -26,15 +31,16 @@ Primarily for subclasses, who can override it to intervene at the beginning of a
 
 - `event`: The event that initiated dragging the selection.
 - `mouseOffset`: The cursor’s current location relative to the mouse-down `event`.
-- `slideBack`: [`true`](https://developer.apple.com/documentation/swift/true) if the image being dragged should slide back to its original position if the drag does not succeed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+- `slideBack`: [`true`](../../Swift/true.md) if the image being dragged should slide back to its original position if the drag does not succeed, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func dragImageForSelection(with: NSEvent, origin: NSPointPointer?) -> NSImage?](nstextview/dragimageforselection(with:origin:).md)
+### Dragging
+- [func dragImageForSelection(with: NSEvent, origin: NSPointPointer?) -> NSImage?](./dragimageforselection%28with,origin%29.md)
   Returns an appropriate drag image for the drag initiated by the specified event.
-- [func dragOperation(for: any NSDraggingInfo, type: NSPasteboard.PasteboardType) -> NSDragOperation](nstextview/dragoperation(for:type:).md)
+- [func dragOperation(for: any NSDraggingInfo, type: NSPasteboard.PasteboardType) -> NSDragOperation](./dragoperation%28for,type%29.md)
   Returns the type of drag operation that should be performed if the image were released now.
-- [var acceptsGlyphInfo: Bool](nstextview/acceptsglyphinfo.md)
+- [var acceptsGlyphInfo: Bool](./acceptsglyphinfo.md)
   A Boolean value that indicates whether the receiver accepts the glyph info attribute.
 
 

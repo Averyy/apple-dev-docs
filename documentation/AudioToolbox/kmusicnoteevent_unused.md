@@ -1,15 +1,16 @@
 # kMusicNoteEvent_Unused
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kMusicNoteEvent_Unused: UInt32 { get }
 ```
 
+```c
+kMusicNoteEvent_Unused
+```
+
 ## See Also
 
-- [var kMusicNoteEvent_UseGroupInstrument: UInt32](kmusicnoteevent_usegroupinstrument.md)
+### Constants
+- [var kMusicNoteEvent_UseGroupInstrument: UInt32](./kmusicnoteevent_usegroupinstrument.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # moveUpdate(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates this buffer slice’s initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
 
@@ -20,6 +21,8 @@ Updates this buffer slice’s initialized memory by moving every element from th
 func moveUpdate<Element>(fromContentsOf source: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index where Base == UnsafeMutableBufferPointer<Element>
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Return Value
 
 An index one past the index of the last element updated.
@@ -32,7 +35,7 @@ The returned index is one past the index of the last element updated. If `source
 
 > **Note**: The memory regions referenced by `source` and this buffer slice must not overlap.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 ## Parameters
 

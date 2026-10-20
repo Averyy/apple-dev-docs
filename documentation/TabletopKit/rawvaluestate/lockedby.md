@@ -1,7 +1,8 @@
 # lockedBy
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the player who exclusively controls the equipment.
 
@@ -16,7 +17,8 @@ var lockedBy: PlayerIdentifier?
 
 ## See Also
 
-- [var seatControl: ControllingSeats](rawvaluestate/seatcontrol.md)
+### Controlling the equipment
+- [var seatControl: ControllingSeats](./seatcontrol.md)
   The seats that can manipulate or interact with the equipment.
 
 

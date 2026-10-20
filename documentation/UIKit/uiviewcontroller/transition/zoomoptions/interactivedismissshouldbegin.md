@@ -1,7 +1,8 @@
 # interactiveDismissShouldBegin
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that determines whether an interactive dismissal can begin.
 
@@ -18,9 +19,14 @@ A closure that determines whether an interactive dismissal can begin.
 var interactiveDismissShouldBegin: ((UIViewController.Transition.ZoomOptions.InteractionContext) -> Bool)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) BOOL (^interactiveDismissShouldBegin)(UIZoomTransitionInteractionContext *);
+```
+
 ## See Also
 
-- [UIViewController.Transition.ZoomOptions.InteractionContext](uiviewcontroller/transition/zoomoptions/interactioncontext.md)
+### Accessing the animation state
+- [UIViewController.Transition.ZoomOptions.InteractionContext](./interactioncontext.md)
   Data you can use to determine whether an interactive dismissal can begin.
 
 

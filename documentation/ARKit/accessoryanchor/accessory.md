@@ -1,7 +1,8 @@
 # accessory
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Accessory tracked by this anchor.
 

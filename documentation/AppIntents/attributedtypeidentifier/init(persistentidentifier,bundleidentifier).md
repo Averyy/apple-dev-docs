@@ -1,7 +1,8 @@
 # init(persistentIdentifier:bundleIdentifier:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new attributed type identifier.
 

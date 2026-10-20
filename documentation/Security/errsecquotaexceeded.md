@@ -1,7 +1,8 @@
 # errSecQuotaExceeded
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The quota was exceeded.
 
@@ -18,6 +19,10 @@ The quota was exceeded.
 
 ```swift
 var errSecQuotaExceeded: OSStatus { get }
+```
+
+```c
+errSecQuotaExceeded
 ```
 
 

@@ -1,11 +1,12 @@
 # Encodable Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any Encoder) throws](ordinalencoder/transformer/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes an ordinal encoding transformer.
 
 

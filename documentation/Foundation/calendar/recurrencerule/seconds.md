@@ -1,7 +1,8 @@
 # seconds
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which seconds of the minute the event should repeat. Valid values between 0 and 60
 

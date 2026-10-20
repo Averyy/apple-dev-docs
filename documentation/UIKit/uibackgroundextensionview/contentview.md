@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content view to extend to fill the `UIBackgroundExtensionView`.
 
@@ -16,6 +17,10 @@ The content view to extend to fill the `UIBackgroundExtensionView`.
 
 ```swift
 var contentView: UIView? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIView * contentView;
 ```
 
 #### Discussion

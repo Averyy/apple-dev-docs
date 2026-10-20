@@ -1,7 +1,8 @@
 # MACaptionAppearanceDisplayType.alwaysOn
 
 **Framework**: Media Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The most robust available captioning track should always be displayed, whether subtitles, CC, or SDH. This option is selected by a switch labeled “Closed Captions + SDH” (on the Subtitles & Captioning page of iOS) and “Prefer Closed Captions and SDH” checkbox (on the Captions pane of the Accessibility options in macOS).
 
@@ -19,11 +20,16 @@ The most robust available captioning track should always be displayed, whether s
 case alwaysOn
 ```
 
+```c
+kMACaptionAppearanceDisplayTypeAlwaysOn
+```
+
 ## See Also
 
-- [MACaptionAppearanceDisplayType.forcedOnly](macaptionappearancedisplaytype/forcedonly.md)
+### Constants
+- [MACaptionAppearanceDisplayType.forcedOnly](./forcedonly.md)
   Do not display captions unless they are forced for translation.
-- [MACaptionAppearanceDisplayType.automatic](macaptionappearancedisplaytype/automatic.md)
+- [MACaptionAppearanceDisplayType.automatic](./automatic.md)
   If the language of the audio track differs from the system locale, then captions matching the system locale should be displayed (if available). If the language of the audio and the language of the system locale match, no captions are shown.
 
 

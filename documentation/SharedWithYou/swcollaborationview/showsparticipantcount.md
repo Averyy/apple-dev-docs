@@ -1,7 +1,8 @@
 # showsParticipantCount
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the collaboration button should show the participant count. Defaults to YES.
 
@@ -16,6 +17,10 @@ Whether the collaboration button should show the participant count. Defaults to 
 
 ```swift
 var showsParticipantCount: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL showsParticipantCount;
 ```
 
 

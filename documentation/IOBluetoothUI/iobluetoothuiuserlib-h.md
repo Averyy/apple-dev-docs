@@ -1,6 +1,7 @@
 # IOBluetoothUIUserLib.h
 
-**Framework**: IOBluetooth UI
+**Framework**: IOBluetooth UI  
+**Role**: API Collection
 
 ##### Included Headers
 
@@ -9,13 +10,14 @@
 ## Topics
 
 ### Constants
-- [typealias IOBluetoothServiceBrowserControllerOptions](iobluetoothservicebrowsercontrolleroptions.md)
+- [typealias IOBluetoothServiceBrowserControllerOptions](./iobluetoothservicebrowsercontrolleroptions.md)
 
 ## See Also
 
-- [IOBluetoothUI Enumerations](iobluetoothui-enumerations.md)
-- [IOBluetoothUI Constants](iobluetoothui-constants.md)
-- [IOBluetoothUI Functions](iobluetoothui-functions.md)
+### Reference
+- [IOBluetoothUI Enumerations](./iobluetoothui-enumerations.md)
+- [IOBluetoothUI Constants](./iobluetoothui-constants.md)
+- [IOBluetoothUI Functions](./iobluetoothui-functions.md)
 
 
 ---

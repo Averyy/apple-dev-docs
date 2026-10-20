@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short LENGTHADJUST_SPACING;
 ```
 
 ## See Also
 
-- [LENGTHADJUST_SPACINGANDGLYPHS](svgtextcontentelement/1632147-lengthadjust_spacingandglyphs.md)
-- [LENGTHADJUST_UNKNOWN](svgtextcontentelement/1632240-lengthadjust_unknown.md)
+### Miscellaneous
+- [LENGTHADJUST_SPACINGANDGLYPHS](./api-1632147-lengthadjust_spacingandglyphs.md)
+- [LENGTHADJUST_UNKNOWN](./api-1632240-lengthadjust_unknown.md)
 
 
 ---

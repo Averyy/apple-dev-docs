@@ -1,7 +1,8 @@
 # resultsLimit
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of results that the operation fetches.
 
@@ -20,15 +21,20 @@ The maximum number of results that the operation fetches.
 var resultsLimit: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger resultsLimit;
+```
+
 #### Discussion
 
 Use this property to limit the number of changes this operation returns. When the operation reaches the limit, it updates the change token and returns it to indicate that more results are available.
 
 ## See Also
 
-- [var fetchAllChanges: Bool](ckfetchdatabasechangesoperation/fetchallchanges.md)
+### Configuring the Operation
+- [var fetchAllChanges: Bool](./fetchallchanges.md)
   A Boolean value that indicates whether to send repeated requests to the server.
-- [var previousServerChangeToken: CKServerChangeToken?](ckfetchdatabasechangesoperation/previousserverchangetoken.md)
+- [var previousServerChangeToken: CKServerChangeToken?](./previousserverchangetoken.md)
   The server change token.
 
 

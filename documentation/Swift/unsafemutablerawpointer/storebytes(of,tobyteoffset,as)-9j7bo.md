@@ -1,7 +1,8 @@
 # storeBytes(of:toByteOffset:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores the given value’s bytes into raw memory at the specified offset.
 

@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance between two points.
 
@@ -18,6 +19,10 @@ Returns the distance between two points.
 
 ```swift
 func distance(to other: Point3D) -> Double
+```
+
+```c
+static double SPPoint3DDistanceToPoint(SPPoint3D point, SPPoint3D other);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # mutableContainersAndLeaves
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Causes the returned property list to have mutable containers and leaves.
 
@@ -20,9 +21,14 @@ Causes the returned property list to have mutable containers and leaves.
 static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptions { get }
 ```
 
+```c
+NSPropertyListMutableContainersAndLeaves
+```
+
 ## See Also
 
-- [static var mutableContainers: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainers.md)
+### Constants
+- [static var mutableContainers: PropertyListSerialization.MutabilityOptions](./mutablecontainers.md)
   Causes the returned property list to have mutable containers but immutable leaves.
 
 

@@ -1,7 +1,8 @@
 # invalidPixelFormat
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The requested pixel format is not supported for the CVBuffer type.
 

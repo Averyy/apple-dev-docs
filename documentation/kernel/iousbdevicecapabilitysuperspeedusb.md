@@ -1,7 +1,8 @@
 # IOUSBDeviceCapabilitySuperSpeedUSB
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for the SuperSpeed USB device capability.
 
@@ -10,7 +11,7 @@ The structure for the SuperSpeed USB device capability.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBDeviceCapabilitySuperSpeedUSB IOUSBDeviceCapabilitySuperSpeedUSB;
 ```
 
@@ -21,61 +22,63 @@ See USB 3.2, 9.6.2.2 for more information.
 ## Topics
 
 ### Getting the Properties
-- [bLength](iousbdevicecapabilitysuperspeedusb/1546178-blength.md)
+- [bLength](./iousbdevicecapabilitysuperspeedusb/api-1546178-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicecapabilitysuperspeedusb/1546105-bdescriptortype.md)
+- [bDescriptorType](./iousbdevicecapabilitysuperspeedusb/api-1546105-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilitysuperspeedusb/1546372-bdevcapabilitytype.md)
+- [bDevCapabilityType](./iousbdevicecapabilitysuperspeedusb/api-1546372-bdevcapabilitytype.md)
   The capability type.
-- [bmAttributes](iousbdevicecapabilitysuperspeedusb/1546119-bmattributes.md)
+- [bmAttributes](./iousbdevicecapabilitysuperspeedusb/api-1546119-bmattributes.md)
   A bitmap encoding of supported device-level features.
-- [wSpeedsSupported](iousbdevicecapabilitysuperspeedusb/1546097-wspeedssupported.md)
+- [wSpeedsSupported](./iousbdevicecapabilitysuperspeedusb/api-1546097-wspeedssupported.md)
   The SuperSpeed supported speeds.
-- [bFunctionalitySupport](iousbdevicecapabilitysuperspeedusb/1546009-bfunctionalitysupport.md)
+- [bFunctionalitySupport](./iousbdevicecapabilitysuperspeedusb/api-1546009-bfunctionalitysupport.md)
   The lowest speed at which all the functionality that the device supports is available to the user.
-- [bU1DevExitLat](iousbdevicecapabilitysuperspeedusb/1545910-bu1devexitlat.md)
+- [bU1DevExitLat](./iousbdevicecapabilitysuperspeedusb/api-1545910-bu1devexitlat.md)
   The exit latency of a U1 device.
-- [wU2DevExitLat](iousbdevicecapabilitysuperspeedusb/1546374-wu2devexitlat.md)
+- [wU2DevExitLat](./iousbdevicecapabilitysuperspeedusb/api-1546374-wu2devexitlat.md)
   The exit latency of a U2 device.
 
 ## See Also
 
-- [IOUSBPlatformCapabilityDescriptor](iousbplatformcapabilitydescriptor.md)
+### Capability Descriptors
+- [IOUSBPlatformCapabilityDescriptor](./iousbplatformcapabilitydescriptor.md)
   The structure for the platform capability descriptor.
-- [IOUSBPlatformCapabilityDescriptorPtr](iousbplatformcapabilitydescriptorptr.md)
+- [IOUSBPlatformCapabilityDescriptorPtr](./iousbplatformcapabilitydescriptorptr.md)
   A pointer to a USB platform capability descriptor.
-- [IOUSBDeviceCapabilityBillboard](iousbdevicecapabilitybillboard.md)
+- [IOUSBDeviceCapabilityBillboard](./iousbdevicecapabilitybillboard.md)
   The structure for the billboard device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfig](iousbdevicecapabilitybillboardaltconfig.md)
+- [IOUSBDeviceCapabilityBillboardAltConfig](./iousbdevicecapabilitybillboardaltconfig.md)
   The structure for the billboard alternative configuration device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](iousbdevicecapabilitybillboardaltconfigcompatibility.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](./iousbdevicecapabilitybillboardaltconfigcompatibility.md)
   The structure for the billboard alternative configuration compatibility device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigPtr](iousbdevicecapabilitybillboardaltconfigptr.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigPtr](./iousbdevicecapabilitybillboardaltconfigptr.md)
   A pointer to a USB device capability billboard alternative configuration structure.
-- [IOUSBDeviceCapabilityBillboardAltMode](iousbdevicecapabilitybillboardaltmode.md)
+- [IOUSBDeviceCapabilityBillboardAltMode](./iousbdevicecapabilitybillboardaltmode.md)
   The structure for the billboard alternative mode device capability.
-- [IOUSBDeviceCapabilityBillboardAltModePtr](iousbdevicecapabilitybillboardaltmodeptr.md)
+- [IOUSBDeviceCapabilityBillboardAltModePtr](./iousbdevicecapabilitybillboardaltmodeptr.md)
   A pointer to a USB device capability billboard alternative mode structure.
-- [IOUSBDeviceCapabilityBillboardPtr](iousbdevicecapabilitybillboardptr.md)
+- [IOUSBDeviceCapabilityBillboardPtr](./iousbdevicecapabilitybillboardptr.md)
   A pointer to a USB device capability billboard object.
-- [IOUSBDeviceCapabilityContainerID](iousbdevicecapabilitycontainerid.md)
+- [IOUSBDeviceCapabilityContainerID](./iousbdevicecapabilitycontainerid.md)
   The structure for the container ID device capability.
-- [IOUSBDeviceCapabilityContainerIDPtr](iousbdevicecapabilitycontaineridptr.md)
+- [IOUSBDeviceCapabilityContainerIDPtr](./iousbdevicecapabilitycontaineridptr.md)
   A pointer to a USB device capability container ID.
-- [IOUSBDeviceCapabilityDescriptorHeader](iousbdevicecapabilitydescriptorheader.md)
+- [IOUSBDeviceCapabilityDescriptorHeader](./iousbdevicecapabilitydescriptorheader.md)
   The device capability descriptor header.
-- [IOUSBDeviceCapabilityDescriptorHeaderPtr](iousbdevicecapabilitydescriptorheaderptr.md)
+- [IOUSBDeviceCapabilityDescriptorHeaderPtr](./iousbdevicecapabilitydescriptorheaderptr.md)
   A pointer to a device capability descriptor header.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](iousbdevicecapabilitysuperspeedplususb.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](./iousbdevicecapabilitysuperspeedplususb.md)
   The structure for the SuperSpeedPlus USB device capability.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSBPtr](iousbdevicecapabilitysuperspeedplususbptr.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSBPtr](./iousbdevicecapabilitysuperspeedplususbptr.md)
   A pointer to a SuperSpeedPlus USB device capability structure.
-- [IOUSBDeviceCapabilitySuperSpeedUSBPtr](iousbdevicecapabilitysuperspeedusbptr.md)
+- [IOUSBDeviceCapabilitySuperSpeedUSBPtr](./iousbdevicecapabilitysuperspeedusbptr.md)
   A pointer to a SuperSpeed USB device capability structure.
-- [IOUSBDeviceCapabilityUSB2Extension](iousbdevicecapabilityusb2extension.md)
+- [IOUSBDeviceCapabilityUSB2Extension](./iousbdevicecapabilityusb2extension.md)
   The structure for the USB 2.0 extension device capability.
-- [IOUSBDeviceCapabilityUSB2ExtensionPtr](iousbdevicecapabilityusb2extensionptr.md)
+- [IOUSBDeviceCapabilityUSB2ExtensionPtr](./iousbdevicecapabilityusb2extensionptr.md)
   A pointer to a USB 2.0 extension device capability structure.
+### Related Documentation
 - [IOUSBDeviceCapabilitySuperSpeedUSB](../iokit/usb_h_user-space/iousbdevicecapabilitysuperspeedusb.md)
 
 

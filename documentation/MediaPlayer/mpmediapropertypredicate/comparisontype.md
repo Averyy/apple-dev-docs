@@ -1,7 +1,8 @@
 # comparisonType
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of matching comparison that the media property predicate performs when you invoke a query.
 
@@ -17,15 +18,20 @@ The type of matching comparison that the media property predicate performs when 
 var comparisonType: MPMediaPredicateComparison { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPMediaPredicateComparison comparisonType;
+```
+
 #### Discussion
 
-For comparison types, see [`MPMediaPredicateComparison`](mpmediapredicatecomparison.md).
+For comparison types, see [`MPMediaPredicateComparison`](../mpmediapredicatecomparison.md).
 
 ## See Also
 
-- [var property: String](mpmediapropertypredicate/property.md)
+### Examining media property predicates
+- [var property: String](./property.md)
   The property that the media property predicate uses when you invoke a query.
-- [var value: Any?](mpmediapropertypredicate/value.md)
+- [var value: Any?](./value.md)
   The value that the media property predicate matches against when you invoke a query.
 
 

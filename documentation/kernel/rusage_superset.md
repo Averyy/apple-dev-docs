@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rusage_superset {
     ...
 };
@@ -17,8 +17,8 @@ struct rusage_superset {
 ## Topics
 
 ### Instance Properties
-- [ri](rusage_superset/1577547-ri.md)
-- [ru](rusage_superset/1577596-ru.md)
+- [ri](./rusage_superset/api-1577547-ri.md)
+- [ru](./rusage_superset/api-1577596-ru.md)
 
 
 ---

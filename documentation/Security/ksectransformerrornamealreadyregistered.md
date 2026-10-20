@@ -1,7 +1,8 @@
 # kSecTransformErrorNameAlreadyRegistered
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A custom transform of a particular name has already been registered.
 
@@ -9,7 +10,7 @@ A custom transform of a particular name has already been registered.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -18,6 +19,10 @@ A custom transform of a particular name has already been registered.
 
 ```swift
 var kSecTransformErrorNameAlreadyRegistered: CFIndex { get }
+```
+
+```c
+kSecTransformErrorNameAlreadyRegistered
 ```
 
 

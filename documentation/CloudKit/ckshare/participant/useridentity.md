@@ -1,7 +1,8 @@
 # userIdentity
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identity of the participant.
 
@@ -19,6 +20,10 @@ The identity of the participant.
 ```swift
 @NSCopying
 var userIdentity: CKUserIdentity { get }
+```
+
+```objc
+@property (copy, readonly) CKUserIdentity * userIdentity;
 ```
 
 #### Discussion

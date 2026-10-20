@@ -1,13 +1,14 @@
 # PKVehicleConnectionSessionConnectionState.disconnected
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 8.5+
 
@@ -15,6 +16,10 @@
 
 ```swift
 case disconnected
+```
+
+```c
+PKVehicleConnectionSessionConnectionStateDisconnected
 ```
 
 

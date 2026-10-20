@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A uniform type identifier for the file.
 

@@ -1,7 +1,8 @@
 # dismiss
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action that dismisses the current presentation.
 
@@ -22,20 +23,20 @@ var dismiss: DismissAction { get }
 
 ## Mentions
 
-- [Managing search interface activation](managing-search-interface-activation.md)
+- [Managing search interface activation](../managing-search-interface-activation.md)
 
 #### Discussion
 
-Use this environment value to get the [`DismissAction`](dismissaction.md) instance for the current [`Environment`](environment.md). Then call the instance to perform the dismissal. You call the instance directly because it defines a [`callAsFunction()`](dismissaction/callasfunction().md) method that Swift calls when you call the instance.
+Use this environment value to get the [`DismissAction`](../dismissaction.md) instance for the current [`Environment`](../environment.md). Then call the instance to perform the dismissal. You call the instance directly because it defines a [`callAsFunction()`](../dismissaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 
 You can use this action to:
 
 - Dismiss a modal presentation, like a sheet or a popover.
-- Pop the current view from a [`NavigationStack`](navigationstack.md).
+- Pop the current view from a [`NavigationStack`](../navigationstack.md).
 
-On apps targetting iOS 18 and aligned releases, you also use the dismiss action to pop the implicit stack of a collapsed [`NavigationSplitView`](navigationsplitview.md), or clear the equivalent state in an expanded split view.
+On apps targetting iOS 18 and aligned releases, you also use the dismiss action to pop the implicit stack of a collapsed [`NavigationSplitView`](../navigationsplitview.md), or clear the equivalent state in an expanded split view.
 
-The specific behavior of the action depends on where you call it from. For example, you can create a button that calls the [`DismissAction`](dismissaction.md) inside a view that acts as a sheet:
+The specific behavior of the action depends on where you call it from. For example, you can create a button that calls the [`DismissAction`](../dismissaction.md) inside a view that acts as a sheet:
 
 ```swift
 private struct SheetContents: View {
@@ -66,7 +67,7 @@ private struct DetailView: View {
 }
 ```
 
-Be sure that you define the action in the appropriate environment. For example, don’t reorganize the `DetailView` in the example above so that it creates the `dismiss` property and calls it from the [`sheet(item:onDismiss:content:)`](view/sheet(item:ondismiss:content:).md) view modifier’s `content` closure:
+Be sure that you define the action in the appropriate environment. For example, don’t reorganize the `DetailView` in the example above so that it creates the `dismiss` property and calls it from the [`sheet(item:onDismiss:content:)`](../view/sheet%28item,ondismiss,content%29.md) view modifier’s `content` closure:
 
 ```swift
 private struct DetailView: View {
@@ -88,17 +89,18 @@ private struct DetailView: View {
 
 If you do this, the sheet fails to dismiss because the action applies to the environment where you declared it, which is that of the detail view, rather than the sheet. In fact, in macOS and iPadOS, if the `DetailView` is the root view of a window, the dismiss action closes the window instead.
 
-The dismiss action has no effect on a view that isn’t currently presented. If you need to query whether SwiftUI is currently presenting a view, read the [`isPresented`](environmentvalues/ispresented.md) environment value.
+The dismiss action has no effect on a view that isn’t currently presented. If you need to query whether SwiftUI is currently presenting a view, read the [`isPresented`](./ispresented.md) environment value.
 
-> **Note**: While the dismiss action can be used to a close window that you create with [`WindowGroup`](windowgroup.md) or [`Window`](window.md), prefer [`DismissWindowAction`](dismisswindowaction.md) for that use case instead.
+> **Note**: While the dismiss action can be used to a close window that you create with [`WindowGroup`](../windowgroup.md) or [`Window`](../window.md), prefer [`DismissWindowAction`](../dismisswindowaction.md) for that use case instead.
 
 ## See Also
 
-- [var isPresented: Bool](environmentvalues/ispresented.md)
+### Dismissing a presentation
+- [var isPresented: Bool](./ispresented.md)
   A Boolean value that indicates whether the view associated with this environment is currently presented.
-- [struct DismissAction](dismissaction.md)
+- [struct DismissAction](../dismissaction.md)
   An action that dismisses a presentation.
-- [func interactiveDismissDisabled(Bool) -> some View](view/interactivedismissdisabled(_:).md)
+- [func interactiveDismissDisabled(Bool) -> some View](../view/interactivedismissdisabled%28_%29.md)
   Conditionally prevents interactive dismissal of presentations like popovers, sheets, and inspectors.
 
 

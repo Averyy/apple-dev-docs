@@ -1,7 +1,8 @@
 # BoatTerminal
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The name and location of a boat terminal.
 
@@ -10,19 +11,20 @@ The name and location of a boat terminal.
 
 ## Declaration
 
-```swift
+```
 object BoatTerminal
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `BoatTerminal`
 - `address` (PostalAddress) *(required)*: The location of the boat terminal.
 - `name` (string) *(required)*: The name of the boat terminal.
 
 ## See Also
 
-- [object BoatTrip](boattrip.md)
+### Defining a Boat Reservation
+- [object BoatTrip](./boattrip.md)
   Location and scheduling information for a boat trip.
 
 

@@ -1,7 +1,8 @@
 # blur(radius:opaque:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a Gaussian blur to the view.
 
@@ -35,9 +36,10 @@ Use `blur(radius:opaque:)` to apply a gaussian blur effect to the rendering of t
 
 ## See Also
 
-- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](visualeffect/distortioneffect(_:maxsampleoffset:isenabled:).md)
+### Applying other effects
+- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](./distortioneffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new visual effect that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
-- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](visualeffect/layereffect(_:maxsampleoffset:isenabled:).md)
+- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](./layereffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new visual effect that applies `shader` to `self` as a filter on the raster layer created from `self`.
 
 

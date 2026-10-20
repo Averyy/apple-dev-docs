@@ -1,7 +1,8 @@
 # OpenImmersiveSpaceAction.Result
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The outcome of an attempt to open an immersive space.
 
@@ -18,20 +19,20 @@ enum Result
 ## Topics
 
 ### Getting the result
-- [OpenImmersiveSpaceAction.Result.opened](openimmersivespaceaction/result/opened.md)
+- [OpenImmersiveSpaceAction.Result.opened](./result/opened.md)
   The immersive space opened.
-- [OpenImmersiveSpaceAction.Result.userCancelled](openimmersivespaceaction/result/usercancelled.md)
+- [OpenImmersiveSpaceAction.Result.userCancelled](./result/usercancelled.md)
   The immersive space didn’t open because the user cancelled the operation.
-- [OpenImmersiveSpaceAction.Result.error](openimmersivespaceaction/result/error.md)
+- [OpenImmersiveSpaceAction.Result.error](./result/error.md)
   The system was unable to open the immersive space.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

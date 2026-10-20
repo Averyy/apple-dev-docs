@@ -1,7 +1,8 @@
 # localizedStringsBundle
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 
@@ -21,13 +22,18 @@ The bundle that contains the localized strings to be used by the AVPlayerInterst
 var localizedStringsBundle: Bundle? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSBundle * localizedStringsBundle;
+```
+
 #### Discussion
 
 If the value of the property is nil, any UI elements triggered by the AVPlayerInterstitialEventController, such as the skip button, may contain a generic label based on the implementation of the UI that’s in use. To ensure the best available user experience in various playback configurations, including external playback, set a value for this property that provides localized translations of skip control labels.
 
 ## See Also
 
-- [var localizedStringsTableName: String?](avplayerinterstitialeventcontroller/localizedstringstablename.md)
+### Accessing strings
+- [var localizedStringsTableName: String?](./localizedstringstablename.md)
   The name of the table in the bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 
 

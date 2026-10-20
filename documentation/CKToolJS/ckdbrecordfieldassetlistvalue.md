@@ -1,7 +1,8 @@
 # CKDBRecordFieldAssetListValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A field value that contains an array of assets.
 
@@ -10,7 +11,7 @@ A field value that contains an array of assets.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldAssetListValue {
 	string type;
 	CKDBAsset[]? value;
@@ -30,14 +31,15 @@ import type { CKDBRecordFieldAssetListValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldassetlistvalue/type.md)
+- [type](./ckdbrecordfieldassetlistvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldassetlistvalue/value.md)
+- [value](./ckdbrecordfieldassetlistvalue/value.md)
   The array of asset objects in this record field.
 
 ## See Also
 
-- [CKDBRecordFieldAssetValue](ckdbrecordfieldassetvalue.md)
+### Assets
+- [CKDBRecordFieldAssetValue](./ckdbrecordfieldassetvalue.md)
   The value of the field of the type asset.
 
 

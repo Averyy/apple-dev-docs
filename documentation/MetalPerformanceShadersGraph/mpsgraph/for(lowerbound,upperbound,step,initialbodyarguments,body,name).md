@@ -1,7 +1,8 @@
 # for(lowerBound:upperBound:step:initialBodyArguments:body:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a for loop operation, The lower and upper bounds specify a half-open range: the range includes the lower bound but does not include the upper bound.
 
@@ -17,6 +18,10 @@ Adds a for loop operation, The lower and upper bounds specify a half-open range:
 
 ```swift
 func `for`(lowerBound: MPSGraphTensor, upperBound: MPSGraphTensor, step: MPSGraphTensor, initialBodyArguments: [MPSGraphTensor], body: @escaping MPSGraphForLoopBodyBlock, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) forLoopWithLowerBound:(MPSGraphTensor *) lowerBound upperBound:(MPSGraphTensor *) upperBound step:(MPSGraphTensor *) step initialBodyArguments:(NSArray<MPSGraphTensor *> *) initialBodyArguments body:(MPSGraphForLoopBodyBlock) body name:(NSString *) name;
 ```
 
 #### Return Value

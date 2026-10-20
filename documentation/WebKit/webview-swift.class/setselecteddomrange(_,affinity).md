@@ -1,12 +1,13 @@
 # setSelectedDOMRange(_:affinity:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects a range of nodes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,18 +15,24 @@ Selects a range of nodes.
 func setSelectedDOMRange(_ range: DOMRange!, affinity selectionAffinity: NSSelectionAffinity)
 ```
 
+```objc
+- (void) setSelectedDOMRange:(DOMRange *) range affinity:(NSSelectionAffinity) selectionAffinity;
+```
+
 ## Parameters
 
 - `range`: The range of nodes to select. If `range` is `nil`, the current selection is cleared. This method raises a `DOMRangeExcepton` if the range has been detached or refers to nodes not displayed by the receiver.
-- `selectionAffinity`: See the [`selectionAffinity`](webview-swift.class/selectionaffinity.md) property for information on selection affinity.
+- `selectionAffinity`: See the [`selectionAffinity`](./selectionaffinity.md) property for information on selection affinity.
 
 ## See Also
 
-- [func editableDOMRange(for: NSPoint) -> DOMRange!](webview-swift.class/editabledomrange(for:).md)
+### Related Documentation
+- [func editableDOMRange(for: NSPoint) -> DOMRange!](./editabledomrange%28for%29.md)
   Returns the editable DOM object located at a given point.
-- [var selectedDOMRange: DOMRange!](webview-swift.class/selecteddomrange.md)
+### Selecting Content in the Document
+- [var selectedDOMRange: DOMRange!](./selecteddomrange.md)
   The range of the current selection.
-- [var selectionAffinity: NSSelectionAffinity](webview-swift.class/selectionaffinity.md)
+- [var selectionAffinity: NSSelectionAffinity](./selectionaffinity.md)
   The current selection affinity.
 
 

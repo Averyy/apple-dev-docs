@@ -1,7 +1,8 @@
 # CGContentToneMappingInfo.LightLevel
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,14 +22,14 @@ enum LightLevel
 ## Topics
 
 ### Enumeration Cases
-- [CGContentToneMappingInfo.LightLevel.nits(_:)](cgcontenttonemappinginfo-swift.enum/lightlevel/nits(_:).md)
-- [CGContentToneMappingInfo.LightLevel.relative(_:)](cgcontenttonemappinginfo-swift.enum/lightlevel/relative(_:).md)
+- [CGContentToneMappingInfo.LightLevel.nits(_:)](./lightlevel/nits%28_%29.md)
+- [CGContentToneMappingInfo.LightLevel.relative(_:)](./lightlevel/relative%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

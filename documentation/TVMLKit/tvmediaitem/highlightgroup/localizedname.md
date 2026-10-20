@@ -1,12 +1,15 @@
 # localizedName
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of a highlight group.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The name of a highlight group.
 var localizedName: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * localizedName;
+```
+
 ## See Also
 
-- [var highlights: [TVMediaItem.Highlight]](tvmediaitem/highlightgroup/highlights.md)
+### Accessing the Highlights
+- [var highlights: [TVMediaItem.Highlight]](./highlights.md)
   An array of the individual highlights that make up a group.
-- [TVMediaItem.Highlight](tvmediaitem/highlight.md)
+- [TVMediaItem.Highlight](../highlight.md)
   An object that describes a media item highlight.
 
 

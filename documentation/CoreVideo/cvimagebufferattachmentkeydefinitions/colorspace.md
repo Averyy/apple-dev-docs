@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Color space of the image buffer.
 

@@ -1,7 +1,8 @@
 # collectionView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection view object currently using this layout object.
 
@@ -9,7 +10,7 @@ The collection view object currently using this layout object.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The collection view object currently using this layout object.
 var collectionView: UICollectionView? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UICollectionView * collectionView;
+```
+
 #### Discussion
 
 The collection view object sets the value of this property when a new layout object is assigned to it.
 
 ## See Also
 
-- [var collectionViewContentSize: CGSize](uicollectionviewlayout/collectionviewcontentsize.md)
+### Getting the collection view information
+- [var collectionViewContentSize: CGSize](./collectionviewcontentsize.md)
   The width and height of the collection view’s contents.
 
 

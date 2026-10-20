@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the countdown.
 
@@ -18,9 +19,10 @@ var title: LocalizedStringResource
 
 ## See Also
 
-- [init(title: LocalizedStringResource, pauseButton: AlarmButton?)](alarmpresentation/countdown-swift.struct/init(title:pausebutton:).md)
+### Creates a pause button
+- [init(title: LocalizedStringResource, pauseButton: AlarmButton?)](./init%28title,pausebutton%29.md)
   Creates a countdown with an optional pause button.
-- [var pauseButton: AlarmButton?](alarmpresentation/countdown-swift.struct/pausebutton.md)
+- [var pauseButton: AlarmButton?](./pausebutton.md)
   The pause button for a countdown timer.
 
 

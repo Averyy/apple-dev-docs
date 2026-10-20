@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifnet_traffic_rule_action_steer {
     ...
 };
@@ -17,8 +17,8 @@ struct ifnet_traffic_rule_action_steer {
 ## Topics
 
 ### Instance Properties
-- [ras_common](ifnet_traffic_rule_action_steer/3944299-ras_common.md)
-- [ras_qset_id](ifnet_traffic_rule_action_steer/3944300-ras_qset_id.md)
+- [ras_common](./ifnet_traffic_rule_action_steer/api-3944299-ras_common.md)
+- [ras_qset_id](./ifnet_traffic_rule_action_steer/api-3944300-ras_qset_id.md)
 
 
 ---

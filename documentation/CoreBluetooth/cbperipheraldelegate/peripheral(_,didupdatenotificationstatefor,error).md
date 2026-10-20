@@ -1,7 +1,8 @@
 # peripheral(_:didUpdateNotificationStateFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the peripheral received a request to start or stop providing notifications for a specified characteristic’s value.
 
@@ -20,9 +21,13 @@ Tells the delegate that the peripheral received a request to start or stop provi
 optional func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateFor characteristic: CBCharacteristic, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`setNotifyValue(_:for:)`](../cbperipheral/setnotifyvalue%28_,for%29.md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHubPortSetPowerOff](1643677-anonymous/khubportsetpoweroff.md)
-- [kHubPortSetPowerOn](1643677-anonymous/khubportsetpoweron.md)
-- [kHubSupportsGangPower](1643677-anonymous/khubsupportsgangpower.md)
-- [kHubSupportsIndividualPortPower](1643677-anonymous/khubsupportsindividualportpower.md)
+- [kHubPortSetPowerOff](./api-1643677-anonymous/khubportsetpoweroff.md)
+- [kHubPortSetPowerOn](./api-1643677-anonymous/khubportsetpoweron.md)
+- [kHubSupportsGangPower](./api-1643677-anonymous/khubsupportsgangpower.md)
+- [kHubSupportsIndividualPortPower](./api-1643677-anonymous/khubsupportsindividualportpower.md)
 
 
 ---

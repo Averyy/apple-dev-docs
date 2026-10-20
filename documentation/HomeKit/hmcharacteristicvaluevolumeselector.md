@@ -1,7 +1,8 @@
 # HMCharacteristicValueVolumeSelector
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of incremental volume alteration.
 
@@ -19,25 +20,29 @@ Types of incremental volume alteration.
 enum HMCharacteristicValueVolumeSelector
 ```
 
+```c
+enum HMCharacteristicValueVolumeSelector : NSInteger;
+```
+
 ## Topics
 
 ### Volume cases
-- [HMCharacteristicValueVolumeSelector.volumeDecrement](hmcharacteristicvaluevolumeselector/volumedecrement.md)
+- [HMCharacteristicValueVolumeSelector.volumeDecrement](./hmcharacteristicvaluevolumeselector/volumedecrement.md)
   A decrease in volume.
-- [HMCharacteristicValueVolumeSelector.volumeIncrement](hmcharacteristicvaluevolumeselector/volumeincrement.md)
+- [HMCharacteristicValueVolumeSelector.volumeIncrement](./hmcharacteristicvaluevolumeselector/volumeincrement.md)
   An increase in volume.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluevolumeselector/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluevolumeselector/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # node
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var node: SCNNode { get }
+```
+
+```objc
+@property (nonatomic, readonly) SCNNode * node;
 ```
 
 

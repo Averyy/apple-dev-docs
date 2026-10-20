@@ -1,7 +1,8 @@
 # MTLVertexFormat.char3Normalized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A three-component vector with 8-bit, normalized, signed integer values.
 
@@ -10,7 +11,7 @@ A three-component vector with 8-bit, normalized, signed integer values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A three-component vector with 8-bit, normalized, signed integer values.
 case char3Normalized
 ```
 
+```c
+MTLVertexFormatChar3Normalized
+```
+
 ## See Also
 
-- [MTLVertexFormat.charNormalized](mtlvertexformat/charnormalized.md)
+### 8-bit normalized integer formats
+- [MTLVertexFormat.charNormalized](./charnormalized.md)
   An 8-bit, normalized, signed integer value.
-- [MTLVertexFormat.char2Normalized](mtlvertexformat/char2normalized.md)
+- [MTLVertexFormat.char2Normalized](./char2normalized.md)
   A two-component vector with 8-bit, normalized, signed integer values.
-- [MTLVertexFormat.char4Normalized](mtlvertexformat/char4normalized.md)
+- [MTLVertexFormat.char4Normalized](./char4normalized.md)
   A four-component vector with 8-bit, normalized, signed integer values.
-- [MTLVertexFormat.ucharNormalized](mtlvertexformat/ucharnormalized.md)
+- [MTLVertexFormat.ucharNormalized](./ucharnormalized.md)
   An 8-bit, normalized, unsigned integer value.
-- [MTLVertexFormat.uchar2Normalized](mtlvertexformat/uchar2normalized.md)
+- [MTLVertexFormat.uchar2Normalized](./uchar2normalized.md)
   A two-component vector with 8-bit, normalized, unsigned integer values.
-- [MTLVertexFormat.uchar3Normalized](mtlvertexformat/uchar3normalized.md)
+- [MTLVertexFormat.uchar3Normalized](./uchar3normalized.md)
   A three-component vector with 8-bit, normalized, unsigned integer values.
-- [MTLVertexFormat.uchar4Normalized](mtlvertexformat/uchar4normalized.md)
+- [MTLVertexFormat.uchar4Normalized](./uchar4normalized.md)
   A four-component vector with 8-bit, normalized, unsigned integer values.
 
 

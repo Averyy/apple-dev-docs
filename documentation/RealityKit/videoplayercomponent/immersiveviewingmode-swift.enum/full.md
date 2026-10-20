@@ -1,7 +1,8 @@
 # VideoPlayerComponent.ImmersiveViewingMode.full
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A viewing mode that renders immersive video covering the viewer’s entire field of view.
 

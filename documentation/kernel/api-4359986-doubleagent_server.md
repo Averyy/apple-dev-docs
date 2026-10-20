@@ -1,14 +1,15 @@
 # doubleagent_server
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t doubleagent_server(mach_msg_header_t *InHeadP, mach_msg_header_t *OutHeadP);
 ```
 

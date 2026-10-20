@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that determines whether to post-process the results of a scan.
 
@@ -19,7 +20,8 @@ An object that determines whether to post-process the results of a scan.
 
 ## See Also
 
-- [var captureSession: RoomCaptureSession!](roomcaptureview/capturesession.md)
+### Reacting to scan events
+- [var captureSession: RoomCaptureSession!](./capturesession.md)
   An object that notifies a delegate of particular events in the room-scanning life cycle.
 
 

@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a drawing object and populates it with previously drawn content.
 
@@ -28,9 +29,10 @@ This initializer creates a new canvas object initialized with the specified data
 
 ## See Also
 
-- [init<S>(strokes: S)](pkdrawing-swift.struct/init(strokes:).md)
+### Creating a drawing object
+- [init<S>(strokes: S)](./init%28strokes%29.md)
   Creates a drawing object and populates it with a sequence of strokes the user provides.
-- [init()](pkdrawing-swift.struct/init.md)
+- [init()](./init%28%29.md)
   Creates an empty drawing object.
 
 

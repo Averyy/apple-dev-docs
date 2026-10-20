@@ -1,7 +1,8 @@
 # MediaController
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,28 +10,28 @@
 
 ## Declaration
 
-```swift
+```
 interface MediaController
 ```
 
 ## Topics
 
 ### Instance Properties
-- [buffered](mediacontroller/1633186-buffered.md)
-- [currentTime](mediacontroller/1631781-currenttime.md)
-- [defaultPlaybackRate](mediacontroller/1629992-defaultplaybackrate.md)
-- [duration](mediacontroller/1631926-duration.md)
-- [muted](mediacontroller/1631416-muted.md)
-- [paused](mediacontroller/1630033-paused.md)
-- [playbackRate](mediacontroller/1631001-playbackrate.md)
-- [playbackState](mediacontroller/1630179-playbackstate.md)
-- [played](mediacontroller/1632471-played.md)
-- [seekable](mediacontroller/1630355-seekable.md)
-- [volume](mediacontroller/1630095-volume.md)
+- [buffered](./mediacontroller/api-1633186-buffered.md)
+- [currentTime](./mediacontroller/api-1631781-currenttime.md)
+- [defaultPlaybackRate](./mediacontroller/api-1629992-defaultplaybackrate.md)
+- [duration](./mediacontroller/api-1631926-duration.md)
+- [muted](./mediacontroller/api-1631416-muted.md)
+- [paused](./mediacontroller/api-1630033-paused.md)
+- [playbackRate](./mediacontroller/api-1631001-playbackrate.md)
+- [playbackState](./mediacontroller/api-1630179-playbackstate.md)
+- [played](./mediacontroller/api-1632471-played.md)
+- [seekable](./mediacontroller/api-1630355-seekable.md)
+- [volume](./mediacontroller/api-1630095-volume.md)
 ### Instance Methods
-- [pause](mediacontroller/1633779-pause.md)
-- [play](mediacontroller/1629788-play.md)
-- [unpause](mediacontroller/1633627-unpause.md)
+- [pause](./mediacontroller/api-1633779-pause.md)
+- [play](./mediacontroller/api-1629788-play.md)
+- [unpause](./mediacontroller/api-1633627-unpause.md)
 
 ## Relationships
 

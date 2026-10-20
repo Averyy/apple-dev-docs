@@ -1,6 +1,8 @@
 # Origami: Crafting a dynamic tutorial for Apple Intelligence
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Sample Code  
+**Download**: [OrigamiCraftingADynamicTutorialForAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/417a6afa58b7/OrigamiCraftingADynamicTutorialForAppleIntelligence.zip)
 
 Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 
@@ -16,15 +18,15 @@ Build interactive experiences with Foundation Models and Private Cloud Compute u
 
 Picking up a new craft can be time-consuming, and the Origami app eases you into the art of folding paper into intricate shapes using an easy-to-follow tutorial as your guide. But it’s not just about folding paper; you can use Origami to learn any craft you can make from supplies you have on hand, like crocheting, knitting, or sewing.
 
-![A screenshot of the Origami app’s Brainstorm view showing the person’s supply photos alongside generated craft-project ideas.](/images/com.apple.foundationmodels/origami-hero@2x.png)
+![A screenshot of the Origami app’s Brainstorm view showing the person’s supply photos alongside generated craft-project ideas.](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/origami-hero@2x.png)
 
 You start by providing a photograph or two of your supplies or inspiration and asking Origami what you can make from them. Origami responds with craft project ideas. You then pick one of the suggested projects, follow a tutorial, and photograph your work at each step so the app can coach you.
 
 Those two interactions rely on multimodal prompting: *Brainstorm* turns photos of your supplies or inspiration into project ideas, and *Coach* compares a progress photo to the current step and tells you how you’re doing as you work through a tutorial.
 
-Brainstorm and Coach use [`LanguageModelSession`](languagemodelsession.md) to accept images and text. You attach a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) to a [`Prompt`](prompt.md), add the text that frames it, and the session returns a [`Generable`](generable.md) value you can render. The picture isn’t a side channel that feeds a separate vision step. It sits in the prompt as a peer to the text and the same model processes the two together.
+Brainstorm and Coach use [`LanguageModelSession`](./languagemodelsession.md) to accept images and text. You attach a [`CGImage`](../CoreGraphics/cgimage.md) to a [`Prompt`](./prompt.md), add the text that frames it, and the session returns a [`Generable`](./generable.md) value you can render. The picture isn’t a side channel that feeds a separate vision step. It sits in the prompt as a peer to the text and the same model processes the two together.
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 For best performance, run Origami on device to experience Apple Intelligence and Private Cloud Compute (PCC). You need a device that supports Apple Intelligence, running iOS 27, iPadOS 27, or macOS 27 or later.
 
@@ -33,19 +35,19 @@ Before you build and run Origami, turn on Apple Intelligence:
 - On iOS and iPadOS, open Settings > Apple Intelligence & Siri.
 - On macOS, open System Settings > Apple Intelligence & Siri.
 
-By default, Origami runs every mode on the on-device [`SystemLanguageModel`](systemlanguagemodel.md), so the project builds and runs without additional configuration. To route Brainstorm and Coach through PCC instead, see [`Adopt Private Cloud Compute`](origami-crafting-a-dynamic-tutorial-for-apple-intelligence#Adopt-Private-Cloud-Compute.md).
+By default, Origami runs every mode on the on-device [`SystemLanguageModel`](./systemlanguagemodel.md), so the project builds and runs without additional configuration. To route Brainstorm and Coach through PCC instead, see [Adopt Private Cloud Compute](./origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md#Adopt-Private-Cloud-Compute).
 
 Origami works with images you choose from your Photos library. The project provides a folder called `Sample Photos` that contains images you can add to your library to use with the app.
 
-#### Configure a Session for Each Task
+#### Configure a session for each task
 
-Origami runs a single long-lived [`LanguageModelSession`](languagemodelsession.md) and switches its configuration based on what the app is doing. The sample defines three modes:
+Origami runs a single long-lived [`LanguageModelSession`](./languagemodelsession.md) and switches its configuration based on what the app is doing. The sample defines three modes:
 
 - `.brainstorm` mode runs with a high temperature, so the model produces fresh, varied ideas each time.
 - `.tutorial` mode powers two things: generating the tutorial steps, and Coach checking a progress photo against the current step.
-- `.term` mode runs a fast, on-device [`SystemLanguageModel`](systemlanguagemodel.md) for terminology lookups.
+- `.term` mode runs a fast, on-device [`SystemLanguageModel`](./systemlanguagemodel.md) for terminology lookups.
 
-A [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) called `OrchestratorProfile` returns a different [`LanguageModelSession.Profile`](languagemodelsession/profile.md) for each mode. Switching modes reconfigures the session in place rather than spinning up a new one.
+A [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md) called `OrchestratorProfile` returns a different [`LanguageModelSession.Profile`](./languagemodelsession/profile.md) for each mode. Switching modes reconfigures the session in place rather than spinning up a new one.
 
 Each mode pairs its own instructions with a model and a different *temperature*. Temperature controls how much the model varies its responses. A higher value makes its output more varied and creative, and a lower value keeps it more focused and predictable.
 
@@ -95,7 +97,7 @@ struct OrchestratorProfile: LanguageModelSession.DynamicProfile {
 }
 ```
 
-The instructions for each mode are a [`DynamicInstructions`](dynamicinstructions.md) value, not a plain string. That lets the instructions live next to the feature that owns them and gives them access to the current `orchestrator`:
+The instructions for each mode are a [`DynamicInstructions`](./dynamicinstructions.md) value, not a plain string. That lets the instructions live next to the feature that owns them and gives them access to the current `orchestrator`:
 
 ```swift
 struct BrainstormInstructions: DynamicInstructions {
@@ -128,11 +130,11 @@ struct BrainstormInstructions: DynamicInstructions {
 
 The full sample applies the same on-device branching to `.brainstorm`, dropping the higher temperature and using the on-device model when PCC isn’t configured. The on-device `.tutorial` and `.term` paths go a step further and shorten their transcript history to fit the smaller context window.
 
-A dynamic profile keeps mode-specific configuration in one place and out of the code that sends prompts. For more information, see [`Composing dynamic sessions with instructions and profiles`](composing-dynamic-sessions-with-instructions-and-profiles.md).
+A dynamic profile keeps mode-specific configuration in one place and out of the code that sends prompts. For more information, see [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md).
 
 #### Adopt Private Cloud Compute
 
-Origami runs every mode on the on-device [`SystemLanguageModel`](systemlanguagemodel.md) by default, so the project builds and runs without additional configuration. To route Brainstorm, the tutorial generator, and Coach through Private Cloud Compute (PCC) instead, swap the `serverModel` initializer in `OrchestratorProfile` to [`PrivateCloudComputeLanguageModel`](privatecloudcomputelanguagemodel.md) and add the managed PCC entitlement to your build:
+Origami runs every mode on the on-device [`SystemLanguageModel`](./systemlanguagemodel.md) by default, so the project builds and runs without additional configuration. To route Brainstorm, the tutorial generator, and Coach through Private Cloud Compute (PCC) instead, swap the `serverModel` initializer in `OrchestratorProfile` to [`PrivateCloudComputeLanguageModel`](./privatecloudcomputelanguagemodel.md) and add the managed PCC entitlement to your build:
 
 ```swift
 var serverModel = PrivateCloudComputeLanguageModel()
@@ -140,11 +142,11 @@ var serverModel = PrivateCloudComputeLanguageModel()
 
 When `serverModel` is the PCC model, `.tutorial` activates `.reasoningLevel(.deep)` for harder analyses, and Coach inherits that configuration when it reuses the tutorial profile. On device, the sample takes a simpler path and shortens transcript history to fit the smaller context window.
 
-For PCC eligibility and details on requesting access to the managed entitlement, see [`Adding server-side intelligence with Private Cloud Compute`](adding-server-side-intelligence-with-private-cloud-compute.md).
+For PCC eligibility and details on requesting access to the managed entitlement, see [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md).
 
-#### Attach Photos to a Prompt
+#### Attach photos to a prompt
 
-Origami uses a small pattern throughout: wrap a `UIImage` or `NSImage` in an [`Attachment`](attachment.md), give it a label, and place it in a [`Prompt`](prompt.md). `Photo.toPrompt()` does exactly that and returns a prompt that contains a single image attachment:
+Origami uses a small pattern throughout: wrap a `UIImage` or `NSImage` in an [`Attachment`](./attachment.md), give it a label, and place it in a [`Prompt`](./prompt.md). `Photo.toPrompt()` does exactly that and returns a prompt that contains a single image attachment:
 
 ```swift
 func toPrompt() async throws -> Prompt {
@@ -164,11 +166,11 @@ func toPrompt() async throws -> Prompt {
 }
 ```
 
-The label matters as much as the image. Here, `idString` uses `"Photo_\(id.uuidString.prefix(6))"` to set the label as a stable, per-photo identifier so each photo carries a name the model can refer to. [`label(_:)`](attachment/label(_:).md) lets the model point back to a specific photo in its structured output instead of describing pictures by position or guesswork.
+The label matters as much as the image. Here, `idString` uses `"Photo_\(id.uuidString.prefix(6))"` to set the label as a stable, per-photo identifier so each photo carries a name the model can refer to. [`label(_:)`](./attachment/label%28_%29.md) lets the model point back to a specific photo in its structured output instead of describing pictures by position or guesswork.
 
 > **Note**: The label needs to be a stable string that the model can quote back; it doesn’t have to be numeric or sequential.
 
-A prompt holds more than one element, and an image attachment is a first-class member of that sequence. The `streamProjectImageAnalysis` extension on [`LanguageModelSession`](languagemodelsession.md) builds one prompt from a block of framing text followed by every unanalyzed photo, then returns a streaming structured response:
+A prompt holds more than one element, and an image attachment is a first-class member of that sequence. The `streamProjectImageAnalysis` extension on [`LanguageModelSession`](./languagemodelsession.md) builds one prompt from a block of framing text followed by every unanalyzed photo, then returns a streaming structured response:
 
 ```swift
 extension LanguageModelSession {
@@ -196,11 +198,11 @@ extension LanguageModelSession {
 }
 ```
 
-The text and images go in together as one prompt, in one call. The framework accepts a variety of image types, handles image orientation, and provides tools for reading text and barcodes found in a picture. For more information, see [`Analyzing images with multimodal prompting`](analyzing-images-with-multimodal-prompting.md).
+The text and images go in together as one prompt, in one call. The framework accepts a variety of image types, handles image orientation, and provides tools for reading text and barcodes found in a picture. For more information, see [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md).
 
-#### Shape the Response Into Swift Types
+#### Shape the response into Swift types
 
-A multimodal prompt’s response comes back as a typed value the app renders directly. Origami marks its result types with `@Generable` and annotates fields with `@Guide` to steer the model. The analysis types tie each result back to the photo that produced it through an [`ImageReference`](imagereference.md):
+A multimodal prompt’s response comes back as a typed value the app renders directly. Origami marks its result types with `@Generable` and annotates fields with `@Guide` to steer the model. The analysis types tie each result back to the photo that produced it through an [`ImageReference`](./imagereference.md):
 
 ```swift
 @Generable
@@ -227,7 +229,7 @@ struct BrainstormIdeaList {
 }
 ```
 
-The [`ImageReference`](imagereference.md) field closes the loop. Its [`attachmentLabel`](imagereference/attachmentlabel.md) matches the stable label set in `toPrompt()`, so the schema expresses a relationship; this analysis belongs to that photo. The input picture and the output structure stay connected by name. A `@Guide(.minimumCount(3))` on `ideas` asks the model for at least three results, and the `ImageCategory` enumeration gives the model a fixed set of purposes to choose from:
+The [`ImageReference`](./imagereference.md) field closes the loop. Its [`attachmentLabel`](./imagereference/attachmentlabel.md) matches the stable label set in `toPrompt()`, so the schema expresses a relationship; this analysis belongs to that photo. The input picture and the output structure stay connected by name. A `@Guide(.minimumCount(3))` on `ideas` asks the model for at least three results, and the `ImageCategory` enumeration gives the model a fixed set of purposes to choose from:
 
 ```swift
 @Generable
@@ -238,9 +240,9 @@ enum ImageCategory: String, Codable {
 }
 ```
 
-Describing the output as types lets the model fill in a structure instead of providing freeform text. For more information, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
+Describing the output as types lets the model fill in a structure instead of providing freeform text. For more information, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Generate Ideas From Inspiration Photos
+#### Generate ideas from inspiration photos
 
 Brainstorm runs two passes on the same session. The first pass is `streamProjectImageAnalysis`, which classifies each photo into the session’s context and streams back an `ImageAnalysisList`. Because that call places the photos into the session’s transcript, the model has already seen them by the time the second pass runs. The second pass asks for ideas with a short, text-only prompt:
 
@@ -254,16 +256,16 @@ try await brainstorm.processStream(stream)
 
 The phrase “with this” refers to images the session already holds, so the idea prompt carries no attachments of its own. Splitting the work into an analysis pass and an idea pass keeps each prompt focused, and the session’s memory of the photos ties the two together.
 
-#### Coach Progress From a Photo
+#### Coach progress from a photo
 
 In Origami, Coach is built from two pieces working together:
 
 - The response streams back as plain text that the UI renders as it arrives.
-- A `MovePhotoToStepTool` tool call advances the tutorial when the model determines the step is complete. For more on tool calls, see [`Expanding generation with tool calling`](expanding-generation-with-tool-calling.md).
+- A `MovePhotoToStepTool` tool call advances the tutorial when the model determines the step is complete. For more on tool calls, see [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md).
 
 The walkthrough that follows takes a different approach by encapsulating the entire response as a structured `@Generable` value with a Boolean classifier field. Both approaches work; the choice depends on whether you want free-form prose or schema-shaped output.
 
-![A screenshot of Coach reading the person’s progress photo and showing structured feedback alongside the current tutorial step’s instructions.](/images/com.apple.foundationmodels/origami-coach@2x.png)
+![A screenshot of Coach reading the person’s progress photo and showing structured feedback alongside the current tutorial step’s instructions.](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/origami-coach@2x.png)
 
 In this approach, Coach sends the same kind of multimodal prompt as Brainstorm, aimed at a different question: whether the person’s latest progress photo matches what the current tutorial step asks for. The prompt, which uses the same `toPrompt()` idiom Brainstorm uses, builds from the step number, the step’s text, an instruction to compare the photo against that step’s goal, and the person’s progress photos:
 
@@ -310,11 +312,11 @@ A Boolean field with a strict guide acts as a small classifier: the app advances
 
 The `isCurrentStepComplete` field only gates step advancement; the model still produces feedback sections when the photo doesn’t match, so the person sees what went wrong even when Coach holds the tutorial in place.
 
-Because the photos come from people, the sample designs for refusals and guardrail violations so the app responds gracefully when the model declines. For more information, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
+Because the photos come from people, the sample designs for refusals and guardrail violations so the app responds gracefully when the model declines. For more information, see [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md).
 
-#### Stream Partial Results
+#### Stream partial results
 
-The same [`LanguageModelSession.ResponseStream`](languagemodelsession/responsestream.md) API supports different presentation patterns. Brainstorm shows ideas progressively as they finalize. Its `processStream` walks the [`PartiallyGenerated`](generable/partiallygenerated.md) value and advances an index, filling in each idea as more text streams in:
+The same [`LanguageModelSession.ResponseStream`](./languagemodelsession/responsestream.md) API supports different presentation patterns. Brainstorm shows ideas progressively as they finalize. Its `processStream` walks the [`PartiallyGenerated`](./generable/partiallygenerated.md) value and advances an index, filling in each idea as more text streams in:
 
 ```swift
 func processStream(
@@ -353,11 +355,11 @@ func processStream(_ stream: LanguageModelSession.ResponseStream<CoachFeedback>)
 }
 ```
 
-Animate responses when partial output reads well, and buffer them when it doesn’t. Streaming consumes context as the response grows, so a long-running session tracks its budget across turns. For more information, see [`Managing the context window`](managing-the-context-window.md).
+Animate responses when partial output reads well, and buffer them when it doesn’t. Streaming consumes context as the response grows, so a long-running session tracks its budget across turns. For more information, see [Managing the context window](./managing-the-context-window.md).
 
-#### Go Further with Origami
+#### Go further with Origami
 
-The same building blocks reach beyond Brainstorm and Coach. A separate, on-device session backed by [`SystemLanguageModel`](systemlanguagemodel.md) powers a tap-to-explain terminology feature. After the app generates a tutorial, it makes a one-shot `respond(to:generating:)` call to pull out the terms worth explaining along the way. Origami uses the same prompt-and-decode API described earlier, just on a smaller model.
+The same building blocks reach beyond Brainstorm and Coach. A separate, on-device session backed by [`SystemLanguageModel`](./systemlanguagemodel.md) powers a tap-to-explain terminology feature. After the app generates a tutorial, it makes a one-shot `respond(to:generating:)` call to pull out the terms worth explaining along the way. Origami uses the same prompt-and-decode API described earlier, just on a smaller model.
 
 ```swift
 let response = try await session.respond(
@@ -366,21 +368,22 @@ let response = try await session.respond(
 )
 ```
 
-Origami also draws on other parts of the Foundation Models framework, like tool calling and key-value caching. To learn more, see [`Expanding generation with tool calling`](expanding-generation-with-tool-calling.md) and [`Optimizing key-value caching in language model sessions`](optimizing-key-value-caching-in-language-model-sessions.md).
+Origami also draws on other parts of the Foundation Models framework, like tool calling and key-value caching. To learn more, see [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md) and [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md).
 
 ## See Also
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+### Dynamic profiles
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
   Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
-- [protocol DynamicInstructions](dynamicinstructions.md)
+- [protocol DynamicInstructions](./dynamicinstructions.md)
   A type that represents dynamic instructions.
-- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+- [struct DynamicInstructionsForEach](./dynamicinstructionsforeach.md)
   Dynamic instructions that produce content for each element of a collection.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
+- [LanguageModelSession.DynamicProfileModifier](./languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
-- [LanguageModelSession.Profile](languagemodelsession/profile.md)
+- [LanguageModelSession.Profile](./languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 
 

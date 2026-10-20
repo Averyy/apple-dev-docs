@@ -1,21 +1,22 @@
 # BetaAppReviewSubmissionBuildLinkageResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewSubmissionBuildLinkageResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaAppReviewSubmissionBuildLinkageResponse.Data](betaappreviewsubmissionbuildlinkageresponse/data-data.dictionary.md)
+- [object BetaAppReviewSubmissionBuildLinkageResponse.Data](./betaappreviewsubmissionbuildlinkageresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -24,17 +25,18 @@ object BetaAppReviewSubmissionBuildLinkageResponse
 
 ## See Also
 
-- [object BetaAppReviewSubmission](betaappreviewsubmission.md)
+### Objects and Data Types
+- [object BetaAppReviewSubmission](./betaappreviewsubmission.md)
   A submission of a build to Apple’s beta app review process, required before external testing.
-- [object BetaAppReviewSubmissionCreateRequest](betaappreviewsubmissioncreaterequest.md)
+- [object BetaAppReviewSubmissionCreateRequest](./betaappreviewsubmissioncreaterequest.md)
   The request body you use to create a Beta App Review Submission.
-- [object BetaAppReviewSubmissionResponse](betaappreviewsubmissionresponse.md)
+- [object BetaAppReviewSubmissionResponse](./betaappreviewsubmissionresponse.md)
   The response body for endpoints that submit a build for beta app review.
-- [object BetaAppReviewSubmissionWithoutIncludesResponse](betaappreviewsubmissionwithoutincludesresponse.md)
+- [object BetaAppReviewSubmissionWithoutIncludesResponse](./betaappreviewsubmissionwithoutincludesresponse.md)
   A response containing a single beta app review submission, without related resources.
-- [object BetaAppReviewSubmissionsResponse](betaappreviewsubmissionsresponse.md)
+- [object BetaAppReviewSubmissionsResponse](./betaappreviewsubmissionsresponse.md)
   The response body for endpoints that list beta app review submissions.
-- [type BetaReviewState](betareviewstate.md)
+- [type BetaReviewState](./betareviewstate.md)
   String that indicates the review state of a beta app.
 
 

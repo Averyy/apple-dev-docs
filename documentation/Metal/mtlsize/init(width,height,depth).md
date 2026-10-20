@@ -1,17 +1,18 @@
 # init(width:height:depth:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a size instance with values for its width, height, and depth properties.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ init(width: Int, height: Int, depth: Int)
 
 ## See Also
 
-- [init()](mtlsize/init.md)
+### Creating a size instance
+- [init()](./init%28%29.md)
   Creates a default size instance by setting the initial values for its width, height, and depth properties to zero.
-- [func MTLSizeMake(Int, Int, Int) -> MTLSize](mtlsizemake(_:_:_:).md)
+- [func MTLSizeMake(Int, Int, Int) -> MTLSize](../mtlsizemake%28_,_,_%29.md)
   Creates a size instance with values for its width, height, and depth properties.
 
 

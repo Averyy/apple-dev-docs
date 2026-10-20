@@ -1,7 +1,8 @@
 # directionPadContents(label:size:style:direction:controller:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The direction pad contents for the specified label, size, style, and direction.
 
@@ -14,6 +15,10 @@ The direction pad contents for the specified label, size, style, and direction.
 
 ```swift
 class func directionPadContents(label: TCControlLabel, size: CGSize, style: TCControlContents.DpadElementStyle, direction: TCControlContents.DpadDirection, controller: TCTouchController) -> TCControlContents
+```
+
+```objc
++ (TCControlContents *) directionPadContentsForLabel:(TCControlLabel *) label size:(CGSize) size style:(TCControlContentsDpadElementStyle) style direction:(TCControlContentsDpadDirection) direction controller:(TCTouchController *) controller;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ The `TCControlContents` for the direction pad.
 
 ## See Also
 
-- [TCControlContents.DpadDirection](tccontrolcontents/dpaddirection.md)
+### Accessing directional pad contents
+- [TCControlContents.DpadDirection](./dpaddirection.md)
   Defines the direction of a direction pad visual.
-- [TCControlContents.DpadElementStyle](tccontrolcontents/dpadelementstyle.md)
+- [TCControlContents.DpadElementStyle](./dpadelementstyle.md)
   Defines the visual style of the individual up/down/left/right elements of a direction pad.
 
 

@@ -1,7 +1,8 @@
 # LayerRenderer.Configuration
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that stores the texture formats, layout information, and other details you use to configure your rendering loop code.
 
@@ -17,65 +18,66 @@ struct Configuration
 
 ## Mentions
 
-- [Defining layer renderer quality](defining-layer-renderer-quality.md)
+- [Defining layer renderer quality](../defining-layer-renderer-quality.md)
 
 #### Overview
 
-A [`LayerRenderer.Configuration`](layerrenderer/configuration-swift.struct.md) type stores the configuration options for your app’s [`LayerRenderer`](layerrenderer.md) object. When configuring your app’s [`CompositorLayer`](compositorlayer.md) type, use this type to specify information about the texture layouts, pixel formats, and rendering options you want. The system uses the provided information to initialize the [`LayerRenderer`](layerrenderer.md) object. It also uses the information to create the Metal textures and other data structures that you use for each frame of content.
+A [`LayerRenderer.Configuration`](./configuration-swift.struct.md) type stores the configuration options for your app’s [`LayerRenderer`](../layerrenderer.md) object. When configuring your app’s [`CompositorLayer`](../compositorlayer.md) type, use this type to specify information about the texture layouts, pixel formats, and rendering options you want. The system uses the provided information to initialize the [`LayerRenderer`](../layerrenderer.md) object. It also uses the information to create the Metal textures and other data structures that you use for each frame of content.
 
-You don’t create this type directly. When implementing the [`makeConfiguration(capabilities:configuration:)`](compositorlayerconfiguration/makeconfiguration(capabilities:configuration:).md) method of your [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) type, the system passes a set of default configuration values for you to modify.
+You don’t create this type directly. When implementing the [`makeConfiguration(capabilities:configuration:)`](../compositorlayerconfiguration/makeconfiguration%28capabilities,configuration%29.md) method of your [`CompositorLayerConfiguration`](../compositorlayerconfiguration.md) type, the system passes a set of default configuration values for you to modify.
 
 ## Topics
 
 ### Configuring the color textures
-- [var colorFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/colorformat.md)
+- [var colorFormat: MTLPixelFormat](./configuration-swift.struct/colorformat.md)
   The pixel format to use for color textures.
-- [var colorUsage: MTLTextureUsage](layerrenderer/configuration-swift.struct/colorusage.md)
+- [var colorUsage: MTLTextureUsage](./configuration-swift.struct/colorusage.md)
   The texture usage value to apply to the layer’s color textures.
 ### Configuring the depth information
-- [var depthFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/depthformat.md)
+- [var depthFormat: MTLPixelFormat](./configuration-swift.struct/depthformat.md)
   The pixel format to use for the layer’s depth textures.
-- [var depthUsage: MTLTextureUsage](layerrenderer/configuration-swift.struct/depthusage.md)
+- [var depthUsage: MTLTextureUsage](./configuration-swift.struct/depthusage.md)
   The texture usage value to apply to the layer’s depth textures.
-- [var defaultDepthRange: SIMD2<Float>](layerrenderer/configuration-swift.struct/defaultdepthrange.md)
+- [var defaultDepthRange: SIMD2<Float>](./configuration-swift.struct/defaultdepthrange.md)
   The distances to the far and near clipping planes that define the bounds of your content.
 ### Configuring the texture layout
-- [var layout: LayerRenderer.Layout](layerrenderer/configuration-swift.struct/layout.md)
+- [var layout: LayerRenderer.Layout](./configuration-swift.struct/layout.md)
   The layout being used by the layer.
-- [LayerRenderer.Layout](layerrenderer/layout.md)
+- [LayerRenderer.Layout](./layout.md)
   Constants that specify the organization of the textures you use for drawing.
 ### Configuring the foveation setting
-- [var isFoveationEnabled: Bool](layerrenderer/configuration-swift.struct/isfoveationenabled.md)
+- [var isFoveationEnabled: Bool](./configuration-swift.struct/isfoveationenabled.md)
   A value that indicates if the layer is using variable rasterization rates.
-- [var generateFlippedRasterizationRateMaps: Bool](layerrenderer/configuration-swift.struct/generateflippedrasterizationratemaps.md)
+- [var generateFlippedRasterizationRateMaps: Bool](./configuration-swift.struct/generateflippedrasterizationratemaps.md)
   A Boolean value that indicates whether the layer renderer provides rasterization rate maps flipped around the y-axis.
 ### Configurating the render context
-- [var drawableRenderContextStencilFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/drawablerendercontextstencilformat.md)
+- [var drawableRenderContextStencilFormat: MTLPixelFormat](./configuration-swift.struct/drawablerendercontextstencilformat.md)
   The metal pixel format matching that of the stencil texture used in the layer renderer drawable’s render context.
-- [var drawableRenderContextRasterSampleCount: Int](layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md)
+- [var drawableRenderContextRasterSampleCount: Int](./configuration-swift.struct/drawablerendercontextrastersamplecount.md)
   The multisample antialiasing sample count used for rendering.
 ### Configuring quality level
-- [var maxRenderQuality: LayerRenderer.RenderQuality](layerrenderer/configuration-swift.struct/maxrenderquality.md)
+- [var maxRenderQuality: LayerRenderer.RenderQuality](./configuration-swift.struct/maxrenderquality.md)
   The max render quality the layer can use when drawing to the drawables.
 ### Instance Properties
-- [var supportsMTL4: Bool](layerrenderer/configuration-swift.struct/supportsmtl4.md)
+- [var supportsMTL4: Bool](./configuration-swift.struct/supportsmtl4.md)
   Whether the layer supports drawing using Metal4, if false assumed to be using Metal3.
-- [var trackingAreasFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/trackingareasformat.md)
+- [var trackingAreasFormat: MTLPixelFormat](./configuration-swift.struct/trackingareasformat.md)
   The pixel format used when creating the tracking areas textures for the layer.
-- [var trackingAreasUsage: MTLTextureUsage](layerrenderer/configuration-swift.struct/trackingareasusage.md)
+- [var trackingAreasUsage: MTLTextureUsage](./configuration-swift.struct/trackingareasusage.md)
   The texture usage value used when creating the tracking areas textures for the layer.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [var configuration: LayerRenderer.Configuration](layerrenderer/configuration-swift.property.md)
+### Configuring the layer renderer
+- [var configuration: LayerRenderer.Configuration](./configuration-swift.property.md)
   The configuration details for the specified layer.
-- [LayerRenderer.Capabilities](layerrenderer/capabilities.md)
+- [LayerRenderer.Capabilities](./capabilities.md)
   The color formats, depth formats, and features that you can use to configure your rendering engine.
 
 

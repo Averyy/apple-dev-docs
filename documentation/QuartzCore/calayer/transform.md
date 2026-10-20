@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform applied to the layer’s contents. Animatable.
 
@@ -19,17 +20,22 @@ The transform applied to the layer’s contents. Animatable.
 var transform: CATransform3D { get set }
 ```
 
+```objc
+@property CATransform3D transform;
+```
+
 #### Discussion
 
 This property is set to the identity transform by default. Any transformations you apply to the layer occur relative to the layer’s anchor point.
 
 ## See Also
 
-- [var sublayerTransform: CATransform3D](calayer/sublayertransform.md)
+### Managing the layer’s transform
+- [var sublayerTransform: CATransform3D](./sublayertransform.md)
   Specifies the transform to apply to sublayers when rendering. Animatable.
-- [func affineTransform() -> CGAffineTransform](calayer/affinetransform.md)
+- [func affineTransform() -> CGAffineTransform](./affinetransform%28%29.md)
   Returns an affine version of the layer’s transform.
-- [func setAffineTransform(CGAffineTransform)](calayer/setaffinetransform(_:).md)
+- [func setAffineTransform(CGAffineTransform)](./setaffinetransform%28_%29.md)
   Sets the layer’s transform to the specified affine transform.
 
 

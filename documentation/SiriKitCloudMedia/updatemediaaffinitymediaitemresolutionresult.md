@@ -1,7 +1,8 @@
 # UpdateMediaAffinityMediaItemResolutionResult
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media item that matches an update media affinity intent, or information about why your service can’t provide a media item.
 
@@ -10,25 +11,27 @@ A media item that matches an update media affinity intent, or information about 
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityMediaItemResolutionResult
 ```
 
 ## Topics
 
 ### Specifying the Result
-- [object UpdateMediaAffinityMediaItemResolutionResult.Success](updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.md)
+- [object UpdateMediaAffinityMediaItemResolutionResult.Success](./updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.md)
   A media item that successfully matches the intent.
-- [object UpdateMediaAffinityMediaItemResolutionResult.Unsupported](updatemediaaffinitymediaitemresolutionresult/unsupported-data.dictionary.md)
+- [object UpdateMediaAffinityMediaItemResolutionResult.Unsupported](./updatemediaaffinitymediaitemresolutionresult/unsupported-data.dictionary.md)
   The reason your service can’t update information about the requested media item.
-- [object UpdateMediaAffinityMediaItemResolutionResult.Disambiguation](updatemediaaffinitymediaitemresolutionresult/disambiguation-data.dictionary.md)
+- [object UpdateMediaAffinityMediaItemResolutionResult.Disambiguation](./updatemediaaffinitymediaitemresolutionresult/disambiguation-data.dictionary.md)
   A result that requires the user to choose from multiple media items before proceeding.
-- [object UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired](updatemediaaffinitymediaitemresolutionresult/confirmationrequired-data.dictionary.md)
+- [object UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired](./updatemediaaffinitymediaitemresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before proceeding.
 
 ## Properties
 
 - `class` (string): The specific type of result.
+
+  **Allowed Values**: `UpdateMediaAffinityMediaItemResolutionResult`
 - `success` (UpdateMediaAffinityMediaItemResolutionResult.Success): A media item that successfully matches the intent.
 - `confirmationRequired` (UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired): A media item for the user to confirm as a match.
 - `disambiguation` (UpdateMediaAffinityMediaItemResolutionResult.Disambiguation): Multiple media items for the user to choose from.
@@ -37,13 +40,14 @@ object UpdateMediaAffinityMediaItemResolutionResult
 ## Relationships
 
 ### Inherits From
-- [IntentResolutionResult](intentresolutionresult.md)
+- [IntentResolutionResult](./intentresolutionresult.md)
 
 ## See Also
 
-- [object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse](updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.md)
+### Identifying the Intended Media Items
+- [object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse](./updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.md)
   Your service’s response to a request to resolve media items in an update media affinity intent.
-- [type UpdateMediaAffinityMediaItemUnsupportedReason](updatemediaaffinitymediaitemunsupportedreason.md)
+- [type UpdateMediaAffinityMediaItemUnsupportedReason](./updatemediaaffinitymediaitemunsupportedreason.md)
   Reasons the media service can’t update information about the media item.
 
 

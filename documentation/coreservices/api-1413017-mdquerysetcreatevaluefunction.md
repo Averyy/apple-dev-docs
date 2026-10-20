@@ -1,7 +1,8 @@
 # MDQuerySetCreateValueFunction(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the function used to create the value objects of the MDQuery.
 
@@ -12,6 +13,10 @@ Sets the function used to create the value objects of the MDQuery.
 
 ```swift
 func MDQuerySetCreateValueFunction(_ query: MDQuery!, _ func: MDQueryCreateValueFunction!, _ context: UnsafeMutableRawPointer!, _ cb: UnsafePointer<CFArrayCallBacks>!)
+```
+
+```c
+void MDQuerySetCreateValueFunction(MDQueryRef query, MDQueryCreateValueFunction func, void *context, const CFArrayCallBacks *cb);
 ```
 
 #### Discussion
@@ -27,9 +32,10 @@ Values created after a create function is set will be created using the newly sp
 
 ## See Also
 
-- [func MDQuerySetCreateResultFunction(MDQuery!, MDQueryCreateResultFunction!, UnsafeMutableRawPointer!, UnsafePointer<CFArrayCallBacks>!)](1413064-mdquerysetcreateresultfunction.md)
+### Setting Callback Functions
+- [func MDQuerySetCreateResultFunction(MDQuery!, MDQueryCreateResultFunction!, UnsafeMutableRawPointer!, UnsafePointer<CFArrayCallBacks>!)](./api-1413064-mdquerysetcreateresultfunction.md)
   Sets the function used to create the result objects of the MDQuery.
-- [func MDQuerySetSortComparator(MDQuery!, MDQuerySortComparatorFunction!, UnsafeMutableRawPointer!)](1413087-mdquerysetsortcomparator.md)
+- [func MDQuerySetSortComparator(MDQuery!, MDQuerySortComparatorFunction!, UnsafeMutableRawPointer!)](./api-1413087-mdquerysetsortcomparator.md)
   Sets the function used to sort the results of an MDQuery.
 
 

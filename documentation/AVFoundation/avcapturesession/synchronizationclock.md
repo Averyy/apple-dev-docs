@@ -1,7 +1,8 @@
 # synchronizationClock
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A clock to use for output synchronization.
 
@@ -19,11 +20,15 @@ A clock to use for output synchronization.
 var synchronizationClock: CMClock? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CMClockRef synchronizationClock;
+```
+
 #### Discussion
 
-All capture output sample buffer timestamps are on the synchronization clock’s timebase. Use this clock in conjunction with the clock from an [`AVCaptureInput.Port`](avcaptureinput/port.md) object to synchronize capture output with external data sources such as Core Motion samples.
+All capture output sample buffer timestamps are on the synchronization clock’s timebase. Use this clock in conjunction with the clock from an [`AVCaptureInput.Port`](../avcaptureinput/port.md) object to synchronize capture output with external data sources such as Core Motion samples.
 
-The example below shows how to reverse synchronize the output timestamps to the original timestamps in the [`captureOutput(_:didOutput:from:)`](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md) method:
+The example below shows how to reverse synchronize the output timestamps to the original timestamps in the [`captureOutput(_:didOutput:from:)`](../avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) method:
 
 ```swift
 func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -44,7 +49,8 @@ This property is key-value observable.
 
 ## See Also
 
-- [var masterClock: CMClock?](avcapturesession/masterclock.md)
+### Synchronizing output
+- [var masterClock: CMClock?](./masterclock.md)
   A clock object used for output synchronization.
 
 

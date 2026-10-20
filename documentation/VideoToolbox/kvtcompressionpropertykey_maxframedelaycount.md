@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_MaxFrameDelayCount
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of frames that a compressor is allowed to hold before it must output a compressed frame.
 
@@ -19,22 +20,27 @@ The maximum number of frames that a compressor is allowed to hold before it must
 let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_MaxFrameDelayCount;
+```
+
 #### Discussion
 
-This value limits the number of frames that may be held in the compression window. If the maximum frame delay count is M, then before the call to encode frame N returns, frame N-M must have been emitted. The default is [`kVTUnlimitedFrameDelayCount`](kvtunlimitedframedelaycount.md), which sets no limit on the compression window.
+This value limits the number of frames that may be held in the compression window. If the maximum frame delay count is M, then before the call to encode frame N returns, frame N-M must have been emitted. The default is [`kVTUnlimitedFrameDelayCount`](./kvtunlimitedframedelaycount.md), which sets no limit on the compression window.
 
 ## Topics
 
 ### Delay Counts
-- [var kVTUnlimitedFrameDelayCount: Int](kvtunlimitedframedelaycount.md)
+- [var kVTUnlimitedFrameDelayCount: Int](./kvtunlimitedframedelaycount.md)
   Indicates that no limit should be set on the compression window.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString](kvtcompressionpropertykey_maxh264slicebytes.md)
+### Runtime Restrictions
+- [let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString](./kvtcompressionpropertykey_maxh264slicebytes.md)
   The maximum slice size for H.264 encoding.
-- [let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString](kvtcompressionpropertykey_maximizepowerefficiency.md)
-- [let kVTCompressionPropertyKey_RealTime: CFString](kvtcompressionpropertykey_realtime.md)
+- [let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString](./kvtcompressionpropertykey_maximizepowerefficiency.md)
+- [let kVTCompressionPropertyKey_RealTime: CFString](./kvtcompressionpropertykey_realtime.md)
   A Boolean value indicating whether it’s recommended that the video encoder perform compression in real time.
 
 

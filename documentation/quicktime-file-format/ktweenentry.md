@@ -1,9 +1,12 @@
 # kTweenEntry
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 A tween atom, which can be either a single tween atom, a tween atom in a tween sequence, or an interpolation tween atom.
+
+> **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
 #### Overview
 
@@ -36,15 +39,16 @@ If this atom specifies an interpolation tween track, it can contain either of th
 
 ## See Also
 
-- [kTweenStartOffset](ktweenstartoffset.md)
+### General tween atoms
+- [kTweenStartOffset](./ktweenstartoffset.md)
   An atom that specifies a time offset from the start of the tween media sample to the start of the tween atom.
-- [kTweenDuration](ktweenduration.md)
+- [kTweenDuration](./ktweenduration.md)
   An atom that specifies the duration of a tween operation.
-- [kTweenData](ktweendata.md)
+- [kTweenData](./ktweendata.md)
   An atom that contains data for a tween atom.
-- [kNameAtom](knameatom.md)
+- [kNameAtom](./knameatom.md)
   An atom that specifies the name of a tween atom.
-- [kTweenType](ktweentype.md)
+- [kTweenType](./ktweentype.md)
   An atom that specifies the tween type, which is the data type of the data for the tween operation.
 
 

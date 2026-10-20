@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets the value associated with the specified attachment.
 
@@ -22,9 +23,10 @@ subscript(key: String) -> CMAttachmentBearerAttachments.Value? { get set }
 
 ## See Also
 
-- [subscript(CMSampleBuffer.AttachmentKey) -> CMAttachmentBearerAttachments.Value?](cmattachmentbearerattachments/subscript(_:)-74jgw.md)
+### Accessing Attachments
+- [subscript(CMSampleBuffer.AttachmentKey) -> CMAttachmentBearerAttachments.Value?](./subscript%28_%29-74jgw.md)
   Gets the value associated with the specified attachment key.
-- [CMAttachmentBearerAttachments.Value](cmattachmentbearerattachments/value.md)
+- [CMAttachmentBearerAttachments.Value](./value.md)
   An enumeration of attachment values.
 
 

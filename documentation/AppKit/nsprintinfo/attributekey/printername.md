@@ -1,12 +1,13 @@
 # printerName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An `NSString` object that specifies the name of a printer.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ An `NSString` object that specifies the name of a printer.
 static let printerName: NSPrintInfo.AttributeKey
 ```
 
+```c
+extern NSPrintInfoAttributeKey const NSPrintPrinterName;
+```
+
 ## See Also
 
-- [static let allPages: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/allpages.md)
+### Other Attributes
+- [static let allPages: NSPrintInfo.AttributeKey](./allpages.md)
   An `NSNumber` object containing a Boolean value that specifies whether to include all pages.
-- [static let copies: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/copies.md)
+- [static let copies: NSPrintInfo.AttributeKey](./copies.md)
   An `NSNumber` object containing an integer—the number of copies to spool.
-- [static let detailedErrorReporting: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/detailederrorreporting.md)
+- [static let detailedErrorReporting: NSPrintInfo.AttributeKey](./detailederrorreporting.md)
   An `NSNumber` object containing a Boolean value that specifies whether to produce detailed error reports.
-- [static let faxNumber: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/faxnumber.md)
+- [static let faxNumber: NSPrintInfo.AttributeKey](./faxnumber.md)
   An `NSString` object that specifies a fax number.
-- [static let firstPage: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/firstpage.md)
+- [static let firstPage: NSPrintInfo.AttributeKey](./firstpage.md)
   An `NSNumber` object containing an integer value that specifies the first page in the print job.
-- [static let headerAndFooter: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/headerandfooter.md)
+- [static let headerAndFooter: NSPrintInfo.AttributeKey](./headerandfooter.md)
   An `NSNumber` object containing a Boolean value that specifies whether to include a header and footer.
-- [static let jobDisposition: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/jobdisposition.md)
+- [static let jobDisposition: NSPrintInfo.AttributeKey](./jobdisposition.md)
   An `NSString` object that specifies the job disposition.
-- [static let jobSavingFileNameExtensionHidden: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/jobsavingfilenameextensionhidden.md)
+- [static let jobSavingFileNameExtensionHidden: NSPrintInfo.AttributeKey](./jobsavingfilenameextensionhidden.md)
   An `NSNumber` object containing a Boolean value that specifies whether to hide the job’s file name extension.
-- [static let jobSavingURL: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/jobsavingurl.md)
-  An `NSURL` containing the location to which the job file will be saved when the [`jobDisposition`](nsprintinfo/jobdisposition-swift.property.md) is [`save`](nsprintinfo/jobdisposition-swift.struct/save.md).
-- [static let lastPage: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/lastpage.md)
+- [static let jobSavingURL: NSPrintInfo.AttributeKey](./jobsavingurl.md)
+  An `NSURL` containing the location to which the job file will be saved when the [`jobDisposition`](../jobdisposition-swift.property.md) is [`save`](../jobdisposition-swift.struct/save.md).
+- [static let lastPage: NSPrintInfo.AttributeKey](./lastpage.md)
   An `NSNumber` object containing an integer value that specifies the last page in the print job.
-- [static let mustCollate: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/mustcollate.md)
+- [static let mustCollate: NSPrintInfo.AttributeKey](./mustcollate.md)
   An `NSNumber` object containing a Boolean value that specifies whether to collate output.
-- [static let pagesAcross: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/pagesacross.md)
+- [static let pagesAcross: NSPrintInfo.AttributeKey](./pagesacross.md)
   An `NSNumber` object that specifies the number of logical pages to be tiled horizontally on a physical sheet of paper.
-- [static let pagesDown: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/pagesdown.md)
+- [static let pagesDown: NSPrintInfo.AttributeKey](./pagesdown.md)
   An `NSNumber` object that specifies the number of logical pages to be tiled vertically on a physical sheet of paper.
-- [static let printer: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/printer.md)
+- [static let printer: NSPrintInfo.AttributeKey](./printer.md)
   An `NSPrinter` object—the printer to use.
-- [static let reversePageOrder: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/reversepageorder.md)
+- [static let reversePageOrder: NSPrintInfo.AttributeKey](./reversepageorder.md)
   An `NSNumber` object containing a Boolean value that specifies whether to print pages in reverse order.
 
 

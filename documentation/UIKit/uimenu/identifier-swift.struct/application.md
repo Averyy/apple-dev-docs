@@ -1,7 +1,8 @@
 # application
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard app menu.
 
@@ -18,17 +19,22 @@ The standard app menu.
 static let application: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuApplication;
+```
+
 ## See Also
 
-- [static let file: UIMenu.Identifier](uimenu/identifier-swift.struct/file.md)
+### Top-level menus
+- [static let file: UIMenu.Identifier](./file.md)
   The standard File menu.
-- [static let edit: UIMenu.Identifier](uimenu/identifier-swift.struct/edit.md)
+- [static let edit: UIMenu.Identifier](./edit.md)
   The standard Edit menu.
-- [static let view: UIMenu.Identifier](uimenu/identifier-swift.struct/view.md)
+- [static let view: UIMenu.Identifier](./view.md)
   The standard View menu.
-- [static let window: UIMenu.Identifier](uimenu/identifier-swift.struct/window.md)
+- [static let window: UIMenu.Identifier](./window.md)
   The standard Window menu.
-- [static let help: UIMenu.Identifier](uimenu/identifier-swift.struct/help.md)
+- [static let help: UIMenu.Identifier](./help.md)
   The standard Help menu.
 
 

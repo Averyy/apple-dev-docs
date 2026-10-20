@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -18,9 +19,12 @@
 init?(_ range: NSRange)
 ```
 
+Available when `Bound` is `Int`.
+
 ## See Also
 
-- [init?(NSRange)](range/init(_:)-1q7lu.md)
+### Working with Foundation Ranges
+- [init?(NSRange)](./init%28_%29-1q7lu.md)
 
 
 ---

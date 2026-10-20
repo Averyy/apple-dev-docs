@@ -1,7 +1,8 @@
 # stopSpeaking(at:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops speech at the boundary you specify.
 
@@ -10,7 +11,7 @@ Stops speech at the boundary you specify.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Stops speech at the boundary you specify.
 func stopSpeaking(at boundary: AVSpeechBoundary) -> Bool
 ```
 
+```objc
+- (BOOL) stopSpeakingAtBoundary:(AVSpeechBoundary) boundary;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if speech stops; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if speech stops; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,13 +39,14 @@ Unlike pausing a speech synthesizer, which can resume after a pause, stopping th
 
 ## See Also
 
-- [func speak(AVSpeechUtterance)](avspeechsynthesizer/speak(_:).md)
+### Controlling speech
+- [func speak(AVSpeechUtterance)](./speak%28_%29.md)
   Adds the utterance you specify to the speech synthesizer’s queue.
-- [func continueSpeaking() -> Bool](avspeechsynthesizer/continuespeaking.md)
+- [func continueSpeaking() -> Bool](./continuespeaking%28%29.md)
   Resumes speech from its paused point.
-- [func pauseSpeaking(at: AVSpeechBoundary) -> Bool](avspeechsynthesizer/pausespeaking(at:).md)
+- [func pauseSpeaking(at: AVSpeechBoundary) -> Bool](./pausespeaking%28at%29.md)
   Pauses speech at the boundary you specify.
-- [enum AVSpeechBoundary](avspeechboundary.md)
+- [enum AVSpeechBoundary](../avspeechboundary.md)
   Specifies when to pause or stop speech.
 
 

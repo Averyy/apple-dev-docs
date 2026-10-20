@@ -1,7 +1,8 @@
 # vImageLookupTable_Planar8toPlanar24(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Uses a lookup table to transform an 8-bit planar image to an 8-bit-per-channel, three-channel interleaved image.
 
@@ -20,9 +21,13 @@ Uses a lookup table to transform an 8-bit planar image to an 8-bit-per-channel, 
 func vImageLookupTable_Planar8toPlanar24(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ table: UnsafePointer<UInt32>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageLookupTable_Planar8toPlanar24(const vImage_Buffer *src, const vImage_Buffer *dest, const uint32_t table[256], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -118,16 +123,17 @@ printf("[%d, %d, %d,  %d, %d, %d,  %d, %d, %d,  %d, %d, %d,  %d, %d, %d]\n",
 
 - `src`: The source vImage buffer.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `table`: A lookup table that contains 256 [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t) values. The upper 24 bits of each value stores the red, green, and blue values.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `table`: A lookup table that contains 256 [`uint32_t`](../kernel/uint32_t.md) values. The upper 24 bits of each value stores the red, green, and blue values.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageLookupTable_Planar8toPlanar48(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt64>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar48(_:_:_:_:).md)
+### Transforming planar-to-interleaved with a lookup table
+- [func vImageLookupTable_Planar8toPlanar48(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt64>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar48%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to a 16-bit-per-channel, three-channel interleaved image.
-- [func vImageLookupTable_Planar8toPlanar96(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_FFFF>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar96(_:_:_:_:).md)
+- [func vImageLookupTable_Planar8toPlanar96(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_FFFF>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar96%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, three-channel interleaved image.
-- [func vImageLookupTable_Planar8toPlanar128(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_FFFF>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar128(_:_:_:_:).md)
+- [func vImageLookupTable_Planar8toPlanar128(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_FFFF>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar128%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, four-channel interleaved image.
 
 

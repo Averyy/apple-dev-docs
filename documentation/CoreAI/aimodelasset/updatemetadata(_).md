@@ -1,7 +1,8 @@
 # updateMetadata(_:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the asset metadata.
 
@@ -35,7 +36,8 @@ try asset.updateMetadata { metadata in
 
 ## See Also
 
-- [func removeDerivedArtifacts() throws](aimodelasset/removederivedartifacts.md)
+### Modifying an asset
+- [func removeDerivedArtifacts() throws](./removederivedartifacts%28%29.md)
   Removes all derived artifacts for the model’s program.
 
 

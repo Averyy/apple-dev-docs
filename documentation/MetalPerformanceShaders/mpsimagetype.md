@@ -1,17 +1,18 @@
 # MPSImageType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that define a Metal Performance Shaders image type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,26 @@ Options that define a Metal Performance Shaders image type.
 struct MPSImageType
 ```
 
+```c
+typedef enum { ... } MPSImageType;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mpsimagetype/init(_:).md)
-- [init(rawValue: UInt32)](mpsimagetype/init(rawvalue:).md)
+- [init(UInt32)](./mpsimagetype/init%28_%29.md)
+- [init(rawValue: UInt32)](./mpsimagetype/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](mpsimagetype/rawvalue.md)
+- [var rawValue: UInt32](./mpsimagetype/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

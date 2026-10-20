@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,8 +11,10 @@
 - Mac Catalyst 13.0+ - Deprecated
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
-- visionOS ?+
+- visionOS
 - watchOS 6.0+ - Deprecated
+
+> **Deprecated**: Use `vDSP.DiscreteFourierTransform`.
 
 ## Declaration
 

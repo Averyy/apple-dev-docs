@@ -1,7 +1,8 @@
 # FinancialConnectionUIExtension
 
 **Framework**: FinanceKitUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -17,15 +18,15 @@ protocol FinancialConnectionUIExtension : AppExtension, FinancialConnectionUIExt
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : FinancialConnectionUIExtensionScene](financialconnectionuiextension/body-swift.associatedtype.md)
+- [associatedtype Body : FinancialConnectionUIExtensionScene](./financialconnectionuiextension/body-swift.associatedtype.md)
 ### Instance Properties
-- [var body: Self.Body](financialconnectionuiextension/body-swift.property.md)
+- [var body: Self.Body](./financialconnectionuiextension/body-swift.property.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [FinancialConnectionUIExtensionProviding](financialconnectionuiextensionproviding.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [FinancialConnectionUIExtensionProviding](./financialconnectionuiextensionproviding.md)
 
 
 ---

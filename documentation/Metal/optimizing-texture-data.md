@@ -1,6 +1,7 @@
 # Optimizing texture data
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Optimize a texture’s data to improve GPU or CPU access.
 
@@ -8,18 +9,18 @@ Optimize a texture’s data to improve GPU or CPU access.
 
 By default, Metal attempts to optimize a texture’s data for both GPU and CPU memory operations based on the texture’s storage mode and usage options. You can improve a texture’s performance on the GPU or CPU by optimizing the texture’s data for either use case. You can also opt out of optimization altogether. Optimizing a texture’s performance for one use can decrease that texture’s performance for another.
 
-Before optimizing texture data, carefully consider the storage modes and usage options for your textures. For guidance on resource storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md). For guidance on texture usage options, see [`MTLTextureUsage`](mtltextureusage.md).
+Before optimizing texture data, carefully consider the storage modes and usage options for your textures. For guidance on resource storage modes, see [Setting resource storage modes](./setting-resource-storage-modes.md). For guidance on texture usage options, see [`MTLTextureUsage`](./mtltextureusage.md).
 
 > **Note**:  Metal may not be able to optimize some textures for specific hardware and ignores optimization API calls for those textures.
 
-##### Optimize Texture Data for Gpu Access
+##### Optimize texture data for GPU access
 
 By default, Metal attempts to optimize texture data for GPU access if it meets any of these conditions:
 
-- You create the texture with an [`MTLStorageMode.private`](mtlstoragemode/private.md) mode.
-- You create the texture with an [`renderTarget`](mtltextureusage/rendertarget.md) option.
+- You create the texture with an [`MTLStorageMode.private`](./mtlstoragemode/private.md) mode.
+- You create the texture with an [`renderTarget`](./mtltextureusage/rendertarget.md) option.
 
-If the texture doesn’t meet any of these conditions, you can optimize your texture data explicitly. After you create your texture and populate its contents, encode and commit an [`optimizeContentsForGPUAccess(texture:)`](mtlblitcommandencoder/optimizecontentsforgpuaccess(texture:).md) or [`optimizeContentsForGPUAccess(texture:slice:level:)`](mtlblitcommandencoder/optimizecontentsforgpuaccess(texture:slice:level:).md) command.
+If the texture doesn’t meet any of these conditions, you can optimize your texture data explicitly. After you create your texture and populate its contents, encode and commit an [`optimizeContentsForGPUAccess(texture:)`](./mtlblitcommandencoder/optimizecontentsforgpuaccess%28texture%29.md) or [`optimizeContentsForGPUAccess(texture:slice:level:)`](./mtlblitcommandencoder/optimizecontentsforgpuaccess%28texture,slice,level%29.md) command.
 
 **Swift**:
 
@@ -81,16 +82,16 @@ id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 [commandBuffer commit];
 ```
 
-To optimize a drawable from an [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) for GPU access, set the view’s [`framebufferOnly`](https://developer.apple.com/documentation/metalkit/mtkview/framebufferonly) property to [`true`](https://developer.apple.com/documentation/swift/true). This property configures the texture exclusively as a render target and displayable resource.
+To optimize a drawable from an [`MTKView`](../MetalKit/mtkview.md) for GPU access, set the view’s [`framebufferOnly`](../MetalKit/mtkview/framebufferonly.md) property to [`true`](../Swift/true.md). This property configures the texture exclusively as a render target and displayable resource.
 
-##### Optimize Texture Data for Cpu Access
+##### Optimize texture data for CPU access
 
 By default, Metal attempts to optimize texture data for CPU access if it meets both of these conditions:
 
-- You create the texture with an [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md) mode.
-- You write to the texture with the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) or [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) method.
+- You create the texture with an [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](./mtlstoragemode/managed.md) mode.
+- You write to the texture with the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](./mtltexture/replace%28region,mipmaplevel,withbytes,bytesperrow%29.md) or [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](./mtltexture/replace%28region,mipmaplevel,slice,withbytes,bytesperrow,bytesperimage%29.md) method.
 
-If you don’t meet both of these conditions, you can optimize your texture data explicitly. After you create your texture and populate its contents, encode and commit an [`optimizeContentsForCPUAccess(texture:)`](mtlblitcommandencoder/optimizecontentsforcpuaccess(texture:).md) or [`optimizeContentsForCPUAccess(texture:slice:level:)`](mtlblitcommandencoder/optimizecontentsforcpuaccess(texture:slice:level:).md) command.
+If you don’t meet both of these conditions, you can optimize your texture data explicitly. After you create your texture and populate its contents, encode and commit an [`optimizeContentsForCPUAccess(texture:)`](./mtlblitcommandencoder/optimizecontentsforcpuaccess%28texture%29.md) or [`optimizeContentsForCPUAccess(texture:slice:level:)`](./mtlblitcommandencoder/optimizecontentsforcpuaccess%28texture,slice,level%29.md) command.
 
 **Swift**:
 
@@ -148,26 +149,26 @@ id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 [commandBuffer commit];
 ```
 
-##### Apply Lossless Compression to a Texture on Apple Gpus
+##### Apply lossless compression to a texture on Apple GPUs
 
-Lossless compression is a specific form of GPU optimization that Metal applies to a texture without discarding any of its data. Memory operations with textures that apply lossless compression typically need less memory bandwidth than equivalent memory operations with the same texture without compression. However, the overall memory footprint of a texture with lossless compression might increase slightly because it needs to store compression metadata. On devices that support [`MTLGPUFamily.apple5`](mtlgpufamily/apple5.md), Metal attempts to apply lossless compression to a texture if it meets the following conditions:
+Lossless compression is a specific form of GPU optimization that Metal applies to a texture without discarding any of its data. Memory operations with textures that apply lossless compression typically need less memory bandwidth than equivalent memory operations with the same texture without compression. However, the overall memory footprint of a texture with lossless compression might increase slightly because it needs to store compression metadata. On devices that support [`MTLGPUFamily.apple5`](./mtlgpufamily/apple5.md), Metal attempts to apply lossless compression to a texture if it meets the following conditions:
 
 - The texture’s pixel format doesn’t apply block-compression, such as PVRTC, ASTC, or BC.
-- The texture’s usage options don’t include [`unknown`](mtltextureusage/unknown.md), [`shaderWrite`](mtltextureusage/shaderwrite.md), or [`pixelFormatView`](mtltextureusage/pixelformatview.md).
-- The texture doesn’t use any underlying [`MTLBuffer`](mtlbuffer.md) instance, such as a texture that comes from a buffer’s [`makeTexture(descriptor:offset:bytesPerRow:)`](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md) method.
+- The texture’s usage options don’t include [`unknown`](./mtltextureusage/unknown.md), [`shaderWrite`](./mtltextureusage/shaderwrite.md), or [`pixelFormatView`](./mtltextureusage/pixelformatview.md).
+- The texture doesn’t use any underlying [`MTLBuffer`](./mtlbuffer.md) instance, such as a texture that comes from a buffer’s [`makeTexture(descriptor:offset:bytesPerRow:)`](./mtlbuffer/maketexture%28descriptor,offset,bytesperrow%29.md) method.
 
 Additionally, if you meet both of the following conditions, you can optimize your texture data explicitly so Metal can apply lossless compression:
 
-- You create the texture with an [`MTLStorageMode.shared`](mtlstoragemode/shared.md) mode.
-- You write to the texture with the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) or [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) method.
+- You create the texture with an [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) mode.
+- You write to the texture with the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](./mtltexture/replace%28region,mipmaplevel,withbytes,bytesperrow%29.md) or [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](./mtltexture/replace%28region,mipmaplevel,slice,withbytes,bytesperrow,bytesperimage%29.md) method.
 
-For guidance, see [`Optimize texture data for GPU access`](optimizing-texture-data#Optimize-texture-data-for-GPU-access.md).
+For guidance, see [Optimize texture data for GPU access](./optimizing-texture-data.md#Optimize-texture-data-for-GPU-access).
 
-##### Opt Out of Texture Data Optimization for Gpu Access
+##### Opt out of texture data optimization for GPU access
 
 In some cases, your texture data may benefit from opting out of optimization for GPU access, for example, when optimization regresses your app’s performance (particularly for render target read-backs on the CPU).
 
-First, create a texture descriptor and set its [`allowGPUOptimizedContents`](mtltexturedescriptor/allowgpuoptimizedcontents.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+First, create a texture descriptor and set its [`allowGPUOptimizedContents`](./mtltexturedescriptor/allowgpuoptimizedcontents.md) property to [`false`](../Swift/false.md).
 
 **Swift**:
 
@@ -194,7 +195,7 @@ MTLTextureDescriptor *textureDescriptor =
 textureDescriptor.allowGPUOptimizedContents = NO;
 ```
 
-Then, set the texture descriptor’s [`storageMode`](mtltexturedescriptor/storagemode.md) property to [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md).
+Then, set the texture descriptor’s [`storageMode`](./mtltexturedescriptor/storagemode.md) property to [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](./mtlstoragemode/managed.md).
 
 **Swift**:
 
@@ -237,18 +238,19 @@ id <MTLTexture> texture = [device newTextureWithDescriptor:textureDescriptor];
 
 ## See Also
 
-- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
+### Texture basics
+- [Understanding color-renderable pixel format sizes](./understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [protocol MTLTexture](mtltexture.md)
+- [protocol MTLTexture](./mtltexture.md)
   A resource that holds formatted image data.
-- [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
-- [class MTLTextureDescriptor](mtltexturedescriptor.md)
+- [enum MTLTextureCompressionType](./mtltexturecompressiontype.md)
+- [class MTLTextureDescriptor](./mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
+- [class MTKTextureLoader](../MetalKit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
-- [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
+- [class MTLSharedTextureHandle](./mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.
-- [enum MTLPixelFormat](mtlpixelformat.md)
+- [enum MTLPixelFormat](./mtlpixelformat.md)
   The data formats that describe the organization and characteristics of individual pixels in a texture.
 
 

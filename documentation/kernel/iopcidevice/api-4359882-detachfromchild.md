@@ -1,14 +1,15 @@
 # detachFromChild
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+ - Deprecated in 15.0
 
 ## Declaration
 
-```swift
+```cpp
 virtual void detachFromChild(IORegistryEntry *child, const IORegistryPlane *plane);
 ```
 

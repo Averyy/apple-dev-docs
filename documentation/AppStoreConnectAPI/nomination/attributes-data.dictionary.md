@@ -1,14 +1,15 @@
 # Nomination.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object Nomination.Attributes
 ```
 
@@ -26,10 +27,10 @@ object Nomination.Attributes
 - `preOrderEnabled` (boolean)
 - `publishEndDate` (date-time)
 - `publishStartDate` (date-time)
-- `state` (string)
+- `state` (string): **Allowed Values**: `DRAFT`, `SUBMITTED`, `ARCHIVED`
 - `submittedDate` (date-time)
 - `supplementalMaterialsUris` ([uri])
-- `type` (string)
+- `type` (string): **Allowed Values**: `APP_LAUNCH`, `APP_ENHANCEMENTS`, `NEW_CONTENT`
 
 
 ---

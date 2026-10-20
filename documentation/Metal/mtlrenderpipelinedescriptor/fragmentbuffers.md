@@ -1,7 +1,8 @@
 # fragmentBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the buffer mutability options for a render pipeline’s fragment function.
 
@@ -19,9 +20,13 @@ An array that contains the buffer mutability options for a render pipeline’s f
 var fragmentBuffers: MTLPipelineBufferDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLPipelineBufferDescriptorArray * fragmentBuffers;
+```
+
 #### Discussion
 
-This property returns an array of [`MTLPipelineBufferDescriptor`](mtlpipelinebufferdescriptor.md) instances, where each element corresponds to the index in the buffer argument table for the render pipeline’s fragment function.
+This property returns an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) instances, where each element corresponds to the index in the buffer argument table for the render pipeline’s fragment function.
 
 ```objective-c
 // Indicate the fragment buffer at index 8 is immutable while setting up the render pipeline.
@@ -38,7 +43,8 @@ renderEncoder = [_commandBuffer renderCommandEncoderWithDescriptor:_renderPassDe
 
 ## See Also
 
-- [var vertexBuffers: MTLPipelineBufferDescriptorArray](mtlrenderpipelinedescriptor/vertexbuffers.md)
+### Specifying buffer mutability
+- [var vertexBuffers: MTLPipelineBufferDescriptorArray](./vertexbuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s vertex function.
 
 

@@ -1,7 +1,8 @@
 # requestedLicenseIDList
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the list of license ID the client has requested a renwal for. used only when action is “renew”
 
@@ -13,7 +14,7 @@ var requestedLicenseIDList: [UInt64] { get }
 
 ## Mentions
 
-- [Renewing and revoking app licenses](renewing-and-revoking-app-licenses.md)
+- [Renewing and revoking app licenses](../renewing-and-revoking-app-licenses.md)
 
 
 ---

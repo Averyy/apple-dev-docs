@@ -1,7 +1,8 @@
 # homeDirectory(forUser:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the home directory for the specified user.
 
@@ -30,9 +31,10 @@ The home directory for the specified user.
 
 ## See Also
 
-- [static func currentDirectory() -> URL](url/currentdirectory.md)
+### Accessing home and user directories
+- [static func currentDirectory() -> URL](./currentdirectory%28%29.md)
   Returns the working directory of the current process.
-- [static var homeDirectory: URL](url/homedirectory.md)
+- [static var homeDirectory: URL](./homedirectory.md)
   The home directory for the current user.
 
 

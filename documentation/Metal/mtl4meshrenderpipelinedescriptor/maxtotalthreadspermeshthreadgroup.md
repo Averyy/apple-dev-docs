@@ -1,7 +1,8 @@
 # maxTotalThreadsPerMeshThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the largest number of threads the pipeline state can execute in a single mesh shader threadgroup dispatch.
 
@@ -19,9 +20,13 @@ Controls the largest number of threads the pipeline state can execute in a singl
 var maxTotalThreadsPerMeshThreadgroup: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerMeshThreadgroup;
+```
+
 #### Discussion
 
-This number represents the maximum size of the product of the components of parameter `threadsPerMeshThreadgroup` that Metal can use when drawing with this pipeline in mesh shader dispatch methods, such as [`drawMeshThreadgroups(threadgroupsPerGrid:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:)`](mtl4rendercommandencoder/drawmeshthreadgroups(threadgroupspergrid:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md).
+This number represents the maximum size of the product of the components of parameter `threadsPerMeshThreadgroup` that Metal can use when drawing with this pipeline in mesh shader dispatch methods, such as [`drawMeshThreadgroups(threadgroupsPerGrid:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:)`](../mtl4rendercommandencoder/drawmeshthreadgroups%28threadgroupspergrid,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md).
 
 The compiler’s optimizer can use the value of this property to generate more efficient code, specifically when the value doesn’t exceed the thread execution width of the underlying GPU.
 
@@ -29,7 +34,7 @@ The default value of this property is `0`, thish indicates that the Metal Shader
 
 When you specify both the `[[max_total_threads_per_threadgroup(N)]]` attribute and this property, you are responsible for making sure these values match.
 
-Additionally, you are responsible for ensuring this value doesn’t exceed the “maximum threads per threadgroup” device limit documented in the “Metal Feature Set Tables” PDF: [`https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
+Additionally, you are responsible for ensuring this value doesn’t exceed the “maximum threads per threadgroup” device limit documented in the “Metal Feature Set Tables” PDF: [https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
 
 ---

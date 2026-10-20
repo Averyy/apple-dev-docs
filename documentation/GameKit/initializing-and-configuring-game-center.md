@@ -1,6 +1,7 @@
 # Initializing and configuring Game Center
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: Article
 
 Enable Game Center, configure features, and test them locally in your Xcode project.
 
@@ -10,7 +11,7 @@ Game Center is a social gaming network that helps players discover your games ac
 
 After you enable Game Center, you can configure the features you want to use in your game — like leaderboards, achievements, activites, and challenges — right in Xcode or in App Store Connect.
 
-For more information about the Game Center service, see [`Overview of Game Center`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-game-center).
+For more information about the Game Center service, see [Overview of Game Center](https://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-game-center).
 
 #### Enable Game Center
 
@@ -22,11 +23,11 @@ Add the Game Center capability to your project, so you can configure gameplay fe
 4. Click the add capability button (+ Capability) in the toolbar.
 5. Add the Game Center capability by double-clicking on it.
 
-![A screenshot showing the Xcode project with the Game Center capability selected in the Library.](/images/com.apple.gamekit/xcode-game-center-compatibility@2x.png)
+![A screenshot showing the Xcode project with the Game Center capability selected in the Library.](https://developer.apple.com/tutorials/images/com.apple.gamekit/xcode-game-center-compatibility@2x.png)
 
 For Mac targets, ensure that you enable both Incoming Connections and Outgoing Connections in the App Sandbox capability under Network.
 
-#### Configure Game Center Features
+#### Configure Game Center features
 
 Use a GameKit bundle file to configure achievements, activities, challenges, leaderboards, and leaderboard sets. You need to configure these features in Xcode before you can access them in your code and begin testing them. When you configure resources, you can organize the list in the way you want Game Center to present them.
 
@@ -39,7 +40,7 @@ Begin configuring the feature you want by creating a GameKit bundle file:
 5. In the sheet that appears, enter a name for the configuration and select the appropriate targets.
 6. Click Create.
 
-![A screenshot showing the Xcode project with a GameKit configuration file selected. It shows details for an example challenge.](/images/com.apple.gamekit/xcode-challenge-fastest-clear-time@2x.png)
+![A screenshot showing the Xcode project with a GameKit configuration file selected. It shows details for an example challenge.](https://developer.apple.com/tutorials/images/com.apple.gamekit/xcode-challenge-fastest-clear-time@2x.png)
 
 When you’re ready to deploy your configuration updates, sync them with App Store Connect. If you already configured features in App Store Connect, you can sync your existing configuration with the GameKit bundle file:
 
@@ -51,9 +52,9 @@ When you’re ready to deploy your configuration updates, sync them with App Sto
 
 The details for the resource then appear in the editor at right. If you already pushed your configuration changes to App Store Connect, removing a resource from the local configuration file doesn’t remove it from App Store Connect.
 
-If you don’t have an app record in App Store Connect, create one so you can sync your configuration while you develop your game. To create an app record in App Store Connect that matches your App ID in your developer account, see [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/) in App Store Connect Help. To enable Game Center for versions of your app, see the “Enable app version for Game Center” section of [`Manage an app version for Game Center`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/manage-an-app-version-for-game-center/).
+If you don’t have an app record in App Store Connect, create one so you can sync your configuration while you develop your game. To create an app record in App Store Connect that matches your App ID in your developer account, see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/) in App Store Connect Help. To enable Game Center for versions of your app, see the “Enable app version for Game Center” section of [Manage an app version for Game Center](https://developer.apple.com/help/app-store-connect/configure-game-center/manage-an-app-version-for-game-center/).
 
-#### Test Game Center Features By Using the Game Progress Manager
+#### Test Game Center features by using the Game Progress Manager
 
 Use Game Progress Manager to test your game features locally during development by modifying properties, reporting updates, and resetting resources. You can also use it to test features and deep links to your game.
 
@@ -65,7 +66,7 @@ Before testing your GameKit configuration, turn on Debug Mode in Xcode:
 4. Scroll down to GameKit Configuration, and click the Enable Debug Mode checkbox.
 5. Click Close.
 
-![A screenshot showing Game Progress Manager that lists three achievements, with one in a selected state. The details panel on the right shows a progress percent — set at 50% — that you can configure for the selected achievement.](/images/com.apple.gamekit/xcode-progress-manager-achievements@2x.png)
+![A screenshot showing Game Progress Manager that lists three achievements, with one in a selected state. The details panel on the right shows a progress percent — set at 50% — that you can configure for the selected achievement.](https://developer.apple.com/tutorials/images/com.apple.gamekit/xcode-progress-manager-achievements@2x.png)
 
 To test your configuration, open Game Progress Manager in Xcode:
 
@@ -83,7 +84,7 @@ After selecting the device and app, choose the Game Center feature you want to t
 
 To reset the progress for your Game Center resource, click the reset button at the top of the Game Progress Manager. You can’t access previous occurrences of a resource after resetting the Game Progress Manager.
 
-#### Initialize the Local Player
+#### Initialize the local player
 
 In your game, you need to initialize the local player before you can use any GameKit APIs and Game Center services. Game Center isn’t a single sign-on (SSO) authentication service, so don’t use it for authentication. When you initialize the player, you connect the player with the Game Center services.
 
@@ -92,7 +93,7 @@ The best time to initialize Game Center is when the player launches your game, s
 - Checks whether you configured your game for Game Center
 - Verifies the credentials of the player and ensures their account is ready for use
 
-To initialize the player, set [`authenticateHandler`](gklocalplayer/authenticatehandler.md) on the shared instance of [`GKLocalPlayer`](gklocalplayer.md) that represents the player of your game:
+To initialize the player, set [`authenticateHandler`](./gklocalplayer/authenticatehandler.md) on the shared instance of [`GKLocalPlayer`](./gklocalplayer.md) that represents the player of your game:
 
 ```swift
 GKLocalPlayer.local.authenticateHandler = { viewController, error in
@@ -100,17 +101,18 @@ GKLocalPlayer.local.authenticateHandler = { viewController, error in
 }
 ```
 
-For more information about initializing a local player, see [`Authenticating a player`](authenticating-a-player.md).
+For more information about initializing a local player, see [Authenticating a player](./authenticating-a-player.md).
 
-You use the handler to initialize Game Center. If you need to authenticate a person with your own server, continue the flow with [`fetchItems(forIdentityVerificationSignature:)`](gklocalplayer/fetchitems(foridentityverificationsignature:).md).
+You use the handler to initialize Game Center. If you need to authenticate a person with your own server, continue the flow with [`fetchItems(forIdentityVerificationSignature:)`](./gklocalplayer/fetchitems%28foridentityverificationsignature%29.md).
 
 ## See Also
 
-- [Authenticating a player](authenticating-a-player.md)
+### Essentials
+- [Authenticating a player](./authenticating-a-player.md)
   Confirm player credentials and device capabilities and check for account restrictions.
-- [Improving the player experience for games with large downloads](improving-the-player-experience-for-games-with-large-downloads.md)
+- [Improving the player experience for games with large downloads](./improving-the-player-experience-for-games-with-large-downloads.md)
   Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.
-- [Game Center Entitlement](../bundleresources/entitlements/com.apple.developer.game-center.md)
+- [Game Center Entitlement](../BundleResources/entitlements/com.apple.developer.game-center.md)
   A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
 
 

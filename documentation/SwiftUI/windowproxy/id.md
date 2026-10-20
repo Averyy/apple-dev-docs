@@ -1,7 +1,8 @@
 # id
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID for the window, if one was provided.
 

@@ -1,7 +1,8 @@
 # updateConstraintsIfNeeded()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the constraints for the receiving view and its subviews.
 
@@ -9,13 +10,17 @@ Updates the constraints for the receiving view and its subviews.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func updateConstraintsIfNeeded()
+```
+
+```objc
+- (void) updateConstraintsIfNeeded;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ Subclasses should not override this method.
 
 ## See Also
 
-- [func needsUpdateConstraints() -> Bool](uiview/needsupdateconstraints.md)
+### Triggering Auto Layout
+- [func needsUpdateConstraints() -> Bool](./needsupdateconstraints%28%29.md)
   A Boolean value that determines whether the view’s constraints need updating.
-- [func setNeedsUpdateConstraints()](uiview/setneedsupdateconstraints.md)
+- [func setNeedsUpdateConstraints()](./setneedsupdateconstraints%28%29.md)
   Controls whether the view’s constraints need updating.
-- [func updateConstraints()](uiview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Updates constraints for the view.
 
 

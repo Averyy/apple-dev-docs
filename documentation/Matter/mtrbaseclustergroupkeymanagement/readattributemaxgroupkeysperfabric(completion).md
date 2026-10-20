@@ -1,7 +1,8 @@
 # readAttributeMaxGroupKeysPerFabric(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxGroupKeysPerFabric(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxGroupKeysPerFabric() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxGroupKeysPerFabricWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

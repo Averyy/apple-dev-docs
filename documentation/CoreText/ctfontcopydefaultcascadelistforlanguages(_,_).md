@@ -1,7 +1,8 @@
 # CTFontCopyDefaultCascadeListForLanguages(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves an ordered list of font substitution preferences.
 
@@ -20,9 +21,13 @@ Retrieves an ordered list of font substitution preferences.
 func CTFontCopyDefaultCascadeListForLanguages(_ font: CTFont, _ languagePrefList: CFArray?) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCopyDefaultCascadeListForLanguages(CTFontRef font, CFArrayRef languagePrefList);
+```
+
 #### Return Value
 
-An ordered list of [`CTFontDescriptor`](ctfontdescriptor.md)s for font fallback according to the given language preferences.
+An ordered list of [`CTFontDescriptor`](./ctfontdescriptor.md)s for font fallback according to the given language preferences.
 
 #### Discussion
 
@@ -33,21 +38,22 @@ The font alternatives in the cascade list match the original font’s style, wei
 ## Parameters
 
 - `font`: The font reference.
-- `languagePrefList`: The language preference list, an ordered array of [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring)s of ISO language codes.
+- `languagePrefList`: The language preference list, an ordered array of [`CFString`](../CoreFoundation/cfstring.md)s of ISO language codes.
 
 ## See Also
 
-- [func CTFontCopyFontDescriptor(CTFont) -> CTFontDescriptor](ctfontcopyfontdescriptor(_:).md)
+### Getting Font Data
+- [func CTFontCopyFontDescriptor(CTFont) -> CTFontDescriptor](./ctfontcopyfontdescriptor%28_%29.md)
   Returns the normalized font descriptor for the given font reference.
-- [func CTFontCopyAttribute(CTFont, CFString) -> CFTypeRef?](ctfontcopyattribute(_:_:).md)
+- [func CTFontCopyAttribute(CTFont, CFString) -> CFTypeRef?](./ctfontcopyattribute%28_,_%29.md)
   Returns the value associated with an arbitrary attribute of the given font.
-- [func CTFontGetSize(CTFont) -> CGFloat](ctfontgetsize(_:).md)
+- [func CTFontGetSize(CTFont) -> CGFloat](./ctfontgetsize%28_%29.md)
   Returns the point size of the given font.
-- [func CTFontGetMatrix(CTFont) -> CGAffineTransform](ctfontgetmatrix(_:).md)
+- [func CTFontGetMatrix(CTFont) -> CGAffineTransform](./ctfontgetmatrix%28_%29.md)
   Returns the transformation matrix of the given font.
-- [func CTFontGetSymbolicTraits(CTFont) -> CTFontSymbolicTraits](ctfontgetsymbolictraits(_:).md)
+- [func CTFontGetSymbolicTraits(CTFont) -> CTFontSymbolicTraits](./ctfontgetsymbolictraits%28_%29.md)
   Returns the symbolic traits of the given font.
-- [func CTFontCopyTraits(CTFont) -> CFDictionary](ctfontcopytraits(_:).md)
+- [func CTFontCopyTraits(CTFont) -> CFDictionary](./ctfontcopytraits%28_%29.md)
   Returns the traits dictionary of the given font.
 
 

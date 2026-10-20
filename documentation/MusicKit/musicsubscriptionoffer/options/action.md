@@ -1,7 +1,8 @@
 # action
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action for the subscription offers entry point.
 
@@ -19,7 +20,7 @@ var action: MusicSubscriptionOffer.Action
 
 #### Discussion
 
-Defaults to [`subscribe`](musicsubscriptionoffer/action/subscribe.md).
+Defaults to [`subscribe`](../action/subscribe.md).
 
 
 ---

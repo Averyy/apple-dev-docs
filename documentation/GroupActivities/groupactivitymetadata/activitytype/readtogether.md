@@ -1,7 +1,8 @@
 # readTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared reading activity, such as reading a book together.
 

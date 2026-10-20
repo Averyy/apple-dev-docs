@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.sessionBusy
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the session is busy due to a pending request.
 

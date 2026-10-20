@@ -1,7 +1,8 @@
 # IntentParameter.Dispersion
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,26 +19,29 @@
 enum Dispersion
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitDispersion>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Dispersion.partsPerMillion](intentparameter/dispersion/partspermillion.md)
+- [IntentParameter.Dispersion.partsPerMillion](./dispersion/partspermillion.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Dispersion?](intentparameter/unit-9rnvi.md)
-- [var defaultUnit: IntentParameter<Value>.Dispersion?](intentparameter/defaultunit-tk2s.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-1bmpc.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-8ge3z.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Dispersion?](./unit-9rnvi.md)
+- [var defaultUnit: IntentParameter<Value>.Dispersion?](./defaultunit-tk2s.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-1bmpc.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-8ge3z.md)
 
 
 ---

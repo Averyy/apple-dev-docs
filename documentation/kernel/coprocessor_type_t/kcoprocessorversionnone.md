@@ -1,14 +1,15 @@
 # kCoprocessorVersionNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```c
 kCoprocessorVersionNone = 0x00000000
 ```
 

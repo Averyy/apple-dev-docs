@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region that defines the geographic scope of the search.
 
@@ -20,27 +21,32 @@ The region that defines the geographic scope of the search.
 var region: MKCoordinateRegion { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKCoordinateRegion region;
+```
+
 #### Discussion
 
 Use this property to limit search results to the specified geographic area. The default value of this property is a region that spans the entire world.
 
 ## See Also
 
-- [var addressFilter: MKAddressFilter?](mklocalsearchcompleter/addressfilter.md)
+### Specifying the query attributes
+- [var addressFilter: MKAddressFilter?](./addressfilter.md)
   A filter that lists which address options to include or exclude in search results.
-- [var queryFragment: String](mklocalsearchcompleter/queryfragment.md)
+- [var queryFragment: String](./queryfragment.md)
   The search string that you want completions for.
-- [var regionPriority: MKLocalSearchRegionPriority](mklocalsearchcompleter/regionpriority.md)
+- [var regionPriority: MKLocalSearchRegionPriority](./regionpriority.md)
   A value that indicates the importance of the configured region.
-- [var resultTypes: MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttypes.md)
+- [var resultTypes: MKLocalSearchCompleter.ResultType](./resulttypes.md)
   The types of search completions to include.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklocalsearchcompleter/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   A filter that lists point of interest categories to include or exclude in the search.
-- [var filterType: MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.property.md)
+- [var filterType: MKLocalSearchCompleter.FilterType](./filtertype-swift.property.md)
   The filter options for the search results.
-- [MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.enum.md)
+- [MKLocalSearchCompleter.FilterType](./filtertype-swift.enum.md)
   Constants indicating the types of search completions to return.
-- [MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype.md)
+- [MKLocalSearchCompleter.ResultType](./resulttype.md)
   Options that indicate types of search completions.
 
 

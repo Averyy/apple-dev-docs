@@ -1,7 +1,8 @@
 # requiredUserInfoKeys
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of keys that represent the minimal information about the activity that should be stored for later restoration.
 
@@ -20,19 +21,24 @@ A set of keys that represent the minimal information about the activity that sho
 var requiredUserInfoKeys: Set<String>? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSSet<NSString *> * requiredUserInfoKeys;
+```
+
 ## Mentions
 
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
 #### Discussion
 
-The keys come from the [`userInfo`](nsuseractivity/userinfo.md) property.
+The keys come from the [`userInfo`](./userinfo.md) property.
 
 ## See Also
 
-- [var userInfo: [AnyHashable : Any]?](nsuseractivity/userinfo.md)
+### Specifying activity-related data
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary containing app-specific state information needed to continue an activity on another device.
-- [func addUserInfoEntries(from: [AnyHashable : Any])](nsuseractivity/adduserinfoentries(from:).md)
+- [func addUserInfoEntries(from: [AnyHashable : Any])](./adduserinfoentries%28from%29.md)
   Adds the contents of the specified dictionary to the user info dictionary.
 
 

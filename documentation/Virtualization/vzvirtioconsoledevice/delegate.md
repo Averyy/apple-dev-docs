@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the console device.
 
@@ -14,11 +15,16 @@ The delegate object for the console device.
 weak var delegate: (any VZVirtioConsoleDeviceDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<VZVirtioConsoleDeviceDelegate> delegate;
+```
+
 ## See Also
 
-- [var ports: VZVirtioConsolePortArray](vzvirtioconsoledevice/ports.md)
+### Configuring the console
+- [var ports: VZVirtioConsolePortArray](./ports.md)
   The array of console ports that a specific device uses.
-- [protocol VZVirtioConsoleDeviceDelegate](vzvirtioconsoledevicedelegate.md)
+- [protocol VZVirtioConsoleDeviceDelegate](../vzvirtioconsoledevicedelegate.md)
   Optional methods that you use to respond when a console port opens or closes in the virtual machine.
 
 

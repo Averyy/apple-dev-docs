@@ -1,7 +1,8 @@
 # init(positions:triangleIndices:materials:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reverb mesh resource from a list of positions, triangle indices, and material indices.
 
@@ -35,7 +36,7 @@ let mesh = try ReverbMeshResource(
 
 - `positions`: The vertex positions of the mesh.
 - `triangleIndices`: The triangle indices that reference positions in the `positions` array.
-- `materials`: An array of material indices, one per triangle, that map each face to a material in the [`Audio.Material`](audio/material.md) array provided to [`simulated(mesh:materials:)`](reverb/simulated(mesh:materials:).md).
+- `materials`: An array of material indices, one per triangle, that map each face to a material in the [`Audio.Material`](../audio/material.md) array provided to [`simulated(mesh:materials:)`](../reverb/simulated%28mesh,materials%29.md).
 
 
 ---

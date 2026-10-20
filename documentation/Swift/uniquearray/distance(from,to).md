@@ -1,7 +1,8 @@
 # distance(from:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance between two indices.
 
@@ -28,7 +29,7 @@ The distance between `start` and `end`.
 
 > **Note**: To improve performance, this method does not validate that the given index is valid before offseting it. Index validation is deferred until the resulting index is used to access an element. This optimization may be removed in future versions; do not rely on it.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

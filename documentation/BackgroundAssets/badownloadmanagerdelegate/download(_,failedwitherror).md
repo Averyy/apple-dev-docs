@@ -1,7 +1,8 @@
 # download(_:failedWithError:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate about a failed asset download.
 
@@ -19,6 +20,10 @@ Informs the delegate about a failed asset download.
 optional func download(_ download: BADownload, failedWithError error: any Error)
 ```
 
+```objc
+- (void) download:(BADownload *) download failedWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `download`: The failed asset download.
@@ -26,7 +31,8 @@ optional func download(_ download: BADownload, failedWithError error: any Error)
 
 ## See Also
 
-- [func download(BADownload, finishedWithFileURL: URL)](badownloadmanagerdelegate/download(_:finishedwithfileurl:).md)
+### Processing concluded downloads
+- [func download(BADownload, finishedWithFileURL: URL)](./download%28_,finishedwithfileurl%29.md)
   Informs the delegate about a finished asset download and provides the on-disk location.
 
 

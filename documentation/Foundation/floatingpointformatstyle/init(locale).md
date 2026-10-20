@@ -1,7 +1,8 @@
 # init(locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a floating-point format style that uses the given locale.
 
@@ -22,7 +23,7 @@ init(locale: Locale = .autoupdatingCurrent)
 
 #### Discussion
 
-Create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) when you intend to apply a given style to multiple floating-point values. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the [`Double`](https://developer.apple.com/documentation/swift/double) values in an array.
+Create a [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) when you intend to apply a given style to multiple floating-point values. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the [`Double`](../../Swift/double.md) values in an array.
 
 ```swift
 let enUSstyle = FloatingPointFormatStyle<Double>(locale: Locale(identifier: "en_US"))
@@ -31,11 +32,11 @@ let formattedNums = nums.map { enUSstyle.format($0) } // ["100.1", "1,000.2", "1
 
 ```
 
-To format a single integer, you can use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted(_:)-83x4n), passing in an instance of [`FloatingPointFormatStyle`](floatingpointformatstyle.md).
+To format a single integer, you can use the [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md) instance method [`formatted(_:)`](../../Swift/binaryfloatingpoint/formatted%28_%29-83x4n.md), passing in an instance of [`FloatingPointFormatStyle`](../floatingpointformatstyle.md).
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing floating-point values. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
+- `locale`: The locale to use when formatting or parsing floating-point values. Defaults to [`autoupdatingCurrent`](../locale/autoupdatingcurrent.md).
 
 
 ---

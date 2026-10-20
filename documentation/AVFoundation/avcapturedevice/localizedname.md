@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized device name for display in the user interface.
 
@@ -19,21 +20,26 @@ A localized device name for display in the user interface.
 var localizedName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedName;
+```
+
 ## See Also
 
-- [var uniqueID: String](avcapturedevice/uniqueid.md)
+### Identifying a device
+- [var uniqueID: String](./uniqueid.md)
   An identifier that uniquely identifies the device.
-- [var modelID: String](avcapturedevice/modelid.md)
+- [var modelID: String](./modelid.md)
   A model identifier for the device.
-- [var manufacturer: String](avcapturedevice/manufacturer.md)
+- [var manufacturer: String](./manufacturer.md)
   A human-readable string for the manufacturer of the device.
-- [var deviceType: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.property.md)
+- [var deviceType: AVCaptureDevice.DeviceType](./devicetype-swift.property.md)
   The type of device, such as a built-in microphone or wide-angle camera.
-- [AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct.md)
+- [AVCaptureDevice.DeviceType](./devicetype-swift.struct.md)
   A structure that defines the device types the framework supports.
-- [var position: AVCaptureDevice.Position](avcapturedevice/position-swift.property.md)
+- [var position: AVCaptureDevice.Position](./position-swift.property.md)
   The physical position of the capture device hardware.
-- [AVCaptureDevice.Position](avcapturedevice/position-swift.enum.md)
+- [AVCaptureDevice.Position](./position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 
 

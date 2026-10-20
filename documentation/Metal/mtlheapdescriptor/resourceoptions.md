@@ -1,7 +1,8 @@
 # resourceOptions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The combined behavior for any resources you allocate from the heaps you create with this descriptor.
 
@@ -19,23 +20,28 @@ The combined behavior for any resources you allocate from the heaps you create w
 var resourceOptions: MTLResourceOptions { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLResourceOptions resourceOptions;
+```
+
 #### Discussion
 
-This property aggregates the values of [`storageMode`](mtlheapdescriptor/storagemode.md), [`cpuCacheMode`](mtlheapdescriptor/cpucachemode.md), and [`hazardTrackingMode`](mtlheapdescriptor/hazardtrackingmode.md). Any modifications you make to this property affect the other properties, and vice versa.
+This property aggregates the values of [`storageMode`](./storagemode.md), [`cpuCacheMode`](./cpucachemode.md), and [`hazardTrackingMode`](./hazardtrackingmode.md). Any modifications you make to this property affect the other properties, and vice versa.
 
 ## See Also
 
-- [var type: MTLHeapType](mtlheapdescriptor/type.md)
+### Configuring a heap
+- [var type: MTLHeapType](./type.md)
   The memory placement strategy for any resources you allocate from the heaps you create with this descriptor.
-- [var storageMode: MTLStorageMode](mtlheapdescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The storage mode for the heaps you create with this descriptor.
-- [var cpuCacheMode: MTLCPUCacheMode](mtlheapdescriptor/cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](./cpucachemode.md)
   The CPU cache behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheapdescriptor/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   The hazard tracking behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var size: Int](mtlheapdescriptor/size.md)
+- [var size: Int](./size.md)
   The total amount of memory, in bytes, for the heaps you create with this descriptor.
-- [var sparsePageSize: MTLSparsePageSize](mtlheapdescriptor/sparsepagesize.md)
+- [var sparsePageSize: MTLSparsePageSize](./sparsepagesize.md)
   The page size for any resources you allocate from the heaps you create with this descriptor.
 
 

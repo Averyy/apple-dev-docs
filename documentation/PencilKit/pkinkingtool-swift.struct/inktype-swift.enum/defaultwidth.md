@@ -1,7 +1,8 @@
 # defaultWidth
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default line width for the specified tool type.
 
@@ -20,7 +21,8 @@ var defaultWidth: CGFloat { get }
 
 ## See Also
 
-- [var validWidthRange: ClosedRange<CGFloat>](pkinkingtool-swift.struct/inktype-swift.enum/validwidthrange.md)
+### Getting the width information
+- [var validWidthRange: ClosedRange<CGFloat>](./validwidthrange.md)
   The range of widths allowed for an ink of this type.
 
 

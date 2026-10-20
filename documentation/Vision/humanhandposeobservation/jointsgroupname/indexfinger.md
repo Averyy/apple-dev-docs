@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointsGroupName.indexFinger
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the index finger.
 
@@ -21,13 +22,14 @@ case indexFinger
 
 ## See Also
 
-- [HumanHandPoseObservation.JointsGroupName.littleFinger](humanhandposeobservation/jointsgroupname/littlefinger.md)
+### Getting the group name
+- [HumanHandPoseObservation.JointsGroupName.littleFinger](./littlefinger.md)
   A joint name that represents the little finger.
-- [HumanHandPoseObservation.JointsGroupName.middleFinger](humanhandposeobservation/jointsgroupname/middlefinger.md)
+- [HumanHandPoseObservation.JointsGroupName.middleFinger](./middlefinger.md)
   A joint name that represents the middle finger.
-- [HumanHandPoseObservation.JointsGroupName.ringFinger](humanhandposeobservation/jointsgroupname/ringfinger.md)
+- [HumanHandPoseObservation.JointsGroupName.ringFinger](./ringfinger.md)
   A joint name that represents the ring finger.
-- [HumanHandPoseObservation.JointsGroupName.thumb](humanhandposeobservation/jointsgroupname/thumb.md)
+- [HumanHandPoseObservation.JointsGroupName.thumb](./thumb.md)
   A joint name that represents the thumb.
 
 

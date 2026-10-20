@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the model parameters for a random forest regressor that’s suitable for output during debugging.
 
@@ -21,9 +22,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlrandomforestregressor/modelparameters-swift.struct/description.md)
+### Describing parameters
+- [var description: String](./description.md)
   A text representation of the model parameters for a random forest regressor.
-- [var playgroundDescription: Any](mlrandomforestregressor/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the model parameters for a random forest regressor shown in a playground.
 
 

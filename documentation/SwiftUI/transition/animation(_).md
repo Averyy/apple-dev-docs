@@ -1,7 +1,8 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches an animation to this transition.
 
@@ -23,7 +24,8 @@ Attaches an animation to this transition.
 
 ## See Also
 
-- [static var properties: TransitionProperties](transition/properties.md)
+### Configuring a transition
+- [static var properties: TransitionProperties](./properties.md)
   Returns the properties this transition type has.
 
 

@@ -1,7 +1,8 @@
 # Calendar.SearchDirection.backward
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Search for a date earlier in time than the start date.
 
@@ -22,7 +23,8 @@ case backward
 
 ## See Also
 
-- [Calendar.SearchDirection.forward](calendar/searchdirection/forward.md)
+### Enumeration Cases
+- [Calendar.SearchDirection.forward](./forward.md)
   Search for a date later in time than the start date.
 
 

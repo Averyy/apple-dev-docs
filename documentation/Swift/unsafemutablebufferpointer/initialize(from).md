@@ -1,7 +1,8 @@
 # initialize(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer’s memory with the given elements.
 

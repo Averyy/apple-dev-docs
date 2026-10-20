@@ -1,7 +1,8 @@
 # schedule
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The schedule determines when the alarm alerts.
 
@@ -22,7 +23,8 @@ If no schedule is supplied then the alarm will begin counting down immediately.
 
 ## See Also
 
-- [Alarm.Schedule](alarm/schedule-swift.enum.md)
+### Setting an alarm schedule
+- [Alarm.Schedule](./schedule-swift.enum.md)
   A list of all types of schedules that the framework supports.
 
 

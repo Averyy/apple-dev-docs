@@ -1,7 +1,8 @@
 # AudioTrack
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioTrack
 ```
 
 ## Topics
 
 ### Instance Properties
-- [enabled](audiotrack/1633040-enabled.md)
-- [id](audiotrack/1632821-id.md)
-- [kind](audiotrack/1629225-kind.md)
-- [label](audiotrack/1631072-label.md)
-- [language](audiotrack/1630609-language.md)
-- [sourceBuffer](audiotrack/1631202-sourcebuffer.md)
+- [enabled](./audiotrack/api-1633040-enabled.md)
+- [id](./audiotrack/api-1632821-id.md)
+- [kind](./audiotrack/api-1629225-kind.md)
+- [label](./audiotrack/api-1631072-label.md)
+- [language](./audiotrack/api-1630609-language.md)
+- [sourceBuffer](./audiotrack/api-1631202-sourcebuffer.md)
 
 
 ---

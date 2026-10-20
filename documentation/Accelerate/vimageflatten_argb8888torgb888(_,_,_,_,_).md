@@ -1,7 +1,8 @@
 # vImageFlatten_ARGB8888ToRGB888(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Flattens an 8-bit-per-channel ARGB buffer against a solid background to produce an 8-bit-per-channel RGB result.
 
@@ -20,19 +21,23 @@ Flattens an 8-bit-per-channel ARGB buffer against a solid background to produce 
 func vImageFlatten_ARGB8888ToRGB888(_: UnsafePointer<vImage_Buffer>, _: UnsafePointer<vImage_Buffer>, _: UnsafePointer<UInt8>, _: Bool, _: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageFlatten_ARGB8888ToRGB888(const vImage_Buffer *, const vImage_Buffer *, const Pixel_8888 , bool , vImage_Flags );
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
 ##### Parameters
 
 - **argb8888Src**: The source vImage buffer.
-- **rgb888dest**: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- **rgb888dest**: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - **backgroundColor**: A pixel value that defines the solid background color.
 - **isImagePremultiplied**: A Boolean value that specifes whether the source image has premultiplied alpha.
-- **flags**: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- **flags**: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 The function uses the following calculation to flatten the source image:
 
@@ -45,9 +50,10 @@ The function uses the following calculation to flatten the source image:
 
 ## See Also
 
-- [func vImageFlatten_BGRA8888ToRGB888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, Bool, vImage_Flags) -> vImage_Error](vimageflatten_bgra8888torgb888(_:_:_:_:_:).md)
+### Flattening 4-channel, 8-bit images to three channels
+- [func vImageFlatten_BGRA8888ToRGB888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, Bool, vImage_Flags) -> vImage_Error](./vimageflatten_bgra8888torgb888%28_,_,_,_,_%29.md)
   Flattens an 8-bit-per-channel BGRA buffer against a solid background to produce an 8-bit-per-channel RGB result.
-- [func vImageFlatten_RGBA8888ToRGB888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, Bool, vImage_Flags) -> vImage_Error](vimageflatten_rgba8888torgb888(_:_:_:_:_:).md)
+- [func vImageFlatten_RGBA8888ToRGB888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, Bool, vImage_Flags) -> vImage_Error](./vimageflatten_rgba8888torgb888%28_,_,_,_,_%29.md)
   Flattens an 8-bit-per-channel RGBA buffer against a solid background to produce an 8-bit-per-channel RGB result.
 
 

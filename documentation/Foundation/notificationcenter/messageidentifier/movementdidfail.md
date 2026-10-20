@@ -1,7 +1,8 @@
 # movementDidFail
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,8 @@
 ```swift
 static var movementDidFail: NotificationCenter.BaseMessageIdentifier<UIFocusSystem.MovementDidFailMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIFocusSystem.MovementDidFailMessage>`.
 
 
 ---

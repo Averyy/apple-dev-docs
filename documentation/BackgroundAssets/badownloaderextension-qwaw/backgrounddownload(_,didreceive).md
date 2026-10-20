@@ -2,6 +2,7 @@
 
 **Framework**: Background Assets  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,10 +19,19 @@
 func backgroundDownload(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ```
 
+## Default Implementations
+
+### BADownloaderExtension Implementations
+- [func backgroundDownload(BADownload, didReceive: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)](./backgrounddownload%28_,didreceive%29-5vjx7.md)
+  Download is about to begin but requires an authentication challenge to continue.
+- [func backgroundDownload(BADownload, didReceive: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)](./backgrounddownload%28_,didreceive%29-7qfcp.md)
+  Handles an authentication challenge.
+
 ## See Also
 
-- [func backgroundDownload(BADownload, finishedWithFileURL: URL)](badownloaderextension-qwaw/backgrounddownload(_:finishedwithfileurl:).md)
-- [func backgroundDownload(BADownload, failedWithError: any Error)](badownloaderextension-qwaw/backgrounddownload(_:failedwitherror:).md)
+### Processing downloads
+- [func backgroundDownload(BADownload, finishedWithFileURL: URL)](./backgrounddownload%28_,finishedwithfileurl%29.md)
+- [func backgroundDownload(BADownload, failedWithError: any Error)](./backgrounddownload%28_,failedwitherror%29.md)
 
 
 ---

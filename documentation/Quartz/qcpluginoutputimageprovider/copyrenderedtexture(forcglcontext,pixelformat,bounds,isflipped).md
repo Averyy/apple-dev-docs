@@ -1,17 +1,24 @@
 # copyRenderedTexture(forCGLContext:pixelFormat:bounds:isFlipped:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the name of an OpenGL texture of type `GL_TEXTURE_RECTANGLE_EXT` that contains a subregion of the image in a given pixel format.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Quartz Composer OpenGL API deprecated. (Define QC_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 optional func copyRenderedTexture(forCGLContext cgl_ctx: CGLContextObj!, pixelFormat format: String!, bounds: NSRect, isFlipped flipped: UnsafeMutablePointer<ObjCBool>!) -> GLuint
+```
+
+```objc
+- (GLuint) copyRenderedTextureForCGLContext:(CGLContextObj) cgl_ctx pixelFormat:(NSString *) format bounds:(NSRect) bounds isFlipped:(BOOL *) flipped;
 ```
 
 #### Return Value
@@ -27,15 +34,16 @@ Implement this method if you want to create the texture yourself or use framebuf
 - `cgl_ctx`: The CGL context to render to.
 - `format`: A string that represents the pixel format of the texture.
 - `bounds`: The bounds of the subregion of the image.
-- `flipped`: Set to [`true`](https://developer.apple.com/documentation/swift/true) on output if the contents of the returned texture are vertically flipped.
+- `flipped`: Set to [`true`](../../Swift/true.md) on output if the contents of the returned texture are vertically flipped.
 
 ## See Also
 
-- [func render(toBuffer: UnsafeMutableRawPointer!, withBytesPerRow: Int, pixelFormat: String!, forBounds: NSRect) -> Bool](qcpluginoutputimageprovider/render(tobuffer:withbytesperrow:pixelformat:forbounds:).md)
+### Rendering an Image to a Destination
+- [func render(toBuffer: UnsafeMutableRawPointer!, withBytesPerRow: Int, pixelFormat: String!, forBounds: NSRect) -> Bool](./render%28tobuffer,withbytesperrow,pixelformat,forbounds%29.md)
   Renders a subregion of the image into  the supplied memory buffer using the specified pixel format.
-- [func render(withCGLContext: CGLContextObj!, forBounds: NSRect) -> Bool](qcpluginoutputimageprovider/render(withcglcontext:forbounds:).md)
+- [func render(withCGLContext: CGLContextObj!, forBounds: NSRect) -> Bool](./render%28withcglcontext,forbounds%29.md)
   Renders a subregion of the image to the provided CGL context.
-- [func releaseRenderedTexture(GLuint, forCGLContext: CGLContextObj!)](qcpluginoutputimageprovider/releaserenderedtexture(_:forcglcontext:).md)
+- [func releaseRenderedTexture(GLuint, forCGLContext: CGLContextObj!)](./releaserenderedtexture%28_,forcglcontext%29.md)
   Releases the previously copied texture.
 
 

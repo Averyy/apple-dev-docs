@@ -1,7 +1,8 @@
 # init(cadence:inputSpec:outputSpec:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 specify your own cadence and read / write options
 

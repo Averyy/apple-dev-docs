@@ -1,7 +1,8 @@
 # hv_vm_config_get_el2_enabled(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Return a status value that indicates whether the VM configuration enables support for Exception Level 2 (EL2).
 
@@ -14,9 +15,13 @@ Return a status value that indicates whether the VM configuration enables suppor
 func hv_vm_config_get_el2_enabled(_ config: hv_vm_config_t, _ el2_enabled: UnsafeMutablePointer<Bool>) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vm_config_get_el2_enabled(hv_vm_config_t config, bool *el2_enabled);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 ## Parameters
 
@@ -25,9 +30,10 @@ func hv_vm_config_get_el2_enabled(_ config: hv_vm_config_t, _ el2_enabled: Unsaf
 
 ## See Also
 
-- [func hv_vm_config_get_el2_supported(UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vm_config_get_el2_supported(_:).md)
+### Nested virtualization
+- [func hv_vm_config_get_el2_supported(UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vm_config_get_el2_supported%28_%29.md)
   Returns a status value that indicates whether the current platform supports Exception Level 2 (EL2).
-- [func hv_vm_config_set_el2_enabled(hv_vm_config_t, Bool) -> hv_return_t](hv_vm_config_set_el2_enabled(_:_:).md)
+- [func hv_vm_config_set_el2_enabled(hv_vm_config_t, Bool) -> hv_return_t](./hv_vm_config_set_el2_enabled%28_,_%29.md)
   Sets whether the specified VM configuration enables support for Exception Level 2 (EL2).
 
 

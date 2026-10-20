@@ -1,7 +1,8 @@
 # CBConnectPeripheralOptionEnableTransportBridgingKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option to bridge classic Bluetooth technology profiles, if already connected over Bluetooth Low Energy.
 
@@ -19,25 +20,30 @@ An option to bridge classic Bluetooth technology profiles, if already connected 
 let CBConnectPeripheralOptionEnableTransportBridgingKey: String
 ```
 
+```c
+extern NSString * const CBConnectPeripheralOptionEnableTransportBridgingKey;
+```
+
 #### Discussion
 
 This option tells the system to connect non-GATT profiles on classic Bluetooth devices, if there is a low energy GATT connection to the same device.
 
-The value associated with this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) as a Boolean value. A `true` value instructs the system to bring up classic transport profiles when a low energy transport peripheral connects. A `false` value tells the system not to use the profiles.
+The value associated with this key is an [`NSNumber`](../Foundation/nsnumber.md) as a Boolean value. A `true` value instructs the system to bring up classic transport profiles when a low energy transport peripheral connects. A `false` value tells the system not to use the profiles.
 
 ## See Also
 
-- [let CBConnectPeripheralOptionEnableAutoReconnect: String](cbconnectperipheraloptionenableautoreconnect.md)
+### Options
+- [let CBConnectPeripheralOptionEnableAutoReconnect: String](./cbconnectperipheraloptionenableautoreconnect.md)
   A Boolean value that specifies whether the system automatically reconnects with a peripheral.
-- [let CBConnectPeripheralOptionNotifyOnConnectionKey: String](cbconnectperipheraloptionnotifyonconnectionkey.md)
+- [let CBConnectPeripheralOptionNotifyOnConnectionKey: String](./cbconnectperipheraloptionnotifyonconnectionkey.md)
   A Boolean value that specifies whether the system should display an alert when connecting a peripheral in the background.
-- [let CBConnectPeripheralOptionNotifyOnDisconnectionKey: String](cbconnectperipheraloptionnotifyondisconnectionkey.md)
+- [let CBConnectPeripheralOptionNotifyOnDisconnectionKey: String](./cbconnectperipheraloptionnotifyondisconnectionkey.md)
   A Boolean value that specifies whether the system should display an alert when disconnecting a peripheral in the background.
-- [let CBConnectPeripheralOptionNotifyOnNotificationKey: String](cbconnectperipheraloptionnotifyonnotificationkey.md)
+- [let CBConnectPeripheralOptionNotifyOnNotificationKey: String](./cbconnectperipheraloptionnotifyonnotificationkey.md)
   A Boolean value that specifies whether the system should display an alert for any notification sent by a peripheral.
-- [let CBConnectPeripheralOptionRequiresANCS: String](cbconnectperipheraloptionrequiresancs.md)
+- [let CBConnectPeripheralOptionRequiresANCS: String](./cbconnectperipheraloptionrequiresancs.md)
   An option to require Apple Notification Center Service (ANCS) when connecting a device.
-- [let CBConnectPeripheralOptionStartDelayKey: String](cbconnectperipheraloptionstartdelaykey.md)
+- [let CBConnectPeripheralOptionStartDelayKey: String](./cbconnectperipheraloptionstartdelaykey.md)
   An option that indicates a delay before the system makes a connection.
 
 

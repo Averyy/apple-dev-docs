@@ -1,7 +1,8 @@
 # errSecBufferTooSmall
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The buffer is too small.
 
@@ -18,6 +19,10 @@ The buffer is too small.
 
 ```swift
 var errSecBufferTooSmall: OSStatus { get }
+```
+
+```c
+errSecBufferTooSmall
 ```
 
 

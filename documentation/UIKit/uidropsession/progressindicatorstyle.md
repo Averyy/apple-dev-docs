@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drop-progress indicator style associated with the drop session.
@@ -18,9 +19,13 @@ The drop-progress indicator style associated with the drop session.
 var progressIndicatorStyle: UIDropSessionProgressIndicatorStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIDropSessionProgressIndicatorStyle progressIndicatorStyle;
+```
+
 #### Discussion
 
-This property determines the type of progress indicator displayed when the drop operation takes a significant amount of time. The [`UIDropSessionProgressIndicatorStyle.default`](uidropsessionprogressindicatorstyle/default.md) style indicates that a progress indicator is shown by the system. If you prefer to show your own progress indicator, set this property to [`UIDropSessionProgressIndicatorStyle.none`](uidropsessionprogressindicatorstyle/none.md).
+This property determines the type of progress indicator displayed when the drop operation takes a significant amount of time. The [`UIDropSessionProgressIndicatorStyle.default`](../uidropsessionprogressindicatorstyle/default.md) style indicates that a progress indicator is shown by the system. If you prefer to show your own progress indicator, set this property to [`UIDropSessionProgressIndicatorStyle.none`](../uidropsessionprogressindicatorstyle/none.md).
 
 
 ---

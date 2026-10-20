@@ -1,7 +1,8 @@
 # vertex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents all vertex shader stage work in a render pass.
 
@@ -19,15 +20,20 @@ Represents all vertex shader stage work in a render pass.
 static var vertex: MTLStages { get }
 ```
 
+```c
+MTLStageVertex
+```
+
 ## See Also
 
-- [static var fragment: MTLStages](mtlstages/fragment.md)
+### Render pass stages
+- [static var fragment: MTLStages](./fragment.md)
   Represents all fragment shader stage work in a render pass.
-- [static var tile: MTLStages](mtlstages/tile.md)
+- [static var tile: MTLStages](./tile.md)
   Represents all tile shading stage work in a render pass.
-- [static var object: MTLStages](mtlstages/object.md)
+- [static var object: MTLStages](./object.md)
   Represents all object shader stage work in a render pass.
-- [static var mesh: MTLStages](mtlstages/mesh.md)
+- [static var mesh: MTLStages](./mesh.md)
   Represents all mesh shader stage work work in a render pass.
 
 

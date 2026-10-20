@@ -1,23 +1,28 @@
 # CFNotificationCenterAddObserver(_:_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers an observer to receive notifications.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNotificationCenterAddObserver(_ center: CFNotificationCenter!, _ observer: UnsafeRawPointer!, _ callBack: CFNotificationCallback!, _ name: CFString!, _ object: UnsafeRawPointer!, _ suspensionBehavior: CFNotificationSuspensionBehavior)
+```
+
+```c
+extern void CFNotificationCenterAddObserver(CFNotificationCenterRef center, const void *observer, CFNotificationCallback callBack, CFStringRef name, const void *object, CFNotificationSuspensionBehavior suspensionBehavior);
 ```
 
 #### Discussion
@@ -31,17 +36,25 @@ If you need to control which thread processes a notification, your callback func
 - `center`: The notification center to which to add the observer.
 - `observer`: The observer. In macOS 10.3 and later, this parameter may be `NULL`.
 - `callBack`: The callback function to call when `object` posts the notification named `name`.
-- `name`: The name of the notification to observe. If `NULL`, `callback` is called for any notification posted by `object`. If `center` is a Darwin notification center, this value must *not* be `NULL`.
-- `object`: The object to observe. For distributed notifications, `object` must be a CFString object. If `NULL`, `callback` is called when a notification named `name` is posted by any object. If `center` is a Darwin notification center, this value is ignored.
-- `suspensionBehavior`: Flag indicating how notifications should be handled when the application is in the background. See [`CFNotificationSuspensionBehavior`](cfnotificationsuspensionbehavior.md) for the list of available values. If `center` is a Darwin notification center, this value is ignored.
+- `name`: The name of the notification to observe. If `NULL`, `callback` is called for any notification posted by `object`.
+
+  If `center` is a Darwin notification center, this value must *not* be `NULL`.
+- `object`: The object to observe. For distributed notifications, `object` must be a CFString object. If `NULL`, `callback` is called when a notification named `name` is posted by any object.
+
+  If `center` is a Darwin notification center, this value is ignored.
+- `suspensionBehavior`: Flag indicating how notifications should be handled when the application is in the background. See [`CFNotificationSuspensionBehavior`](./cfnotificationsuspensionbehavior.md) for the list of available values.
+
+  If `center` is a Darwin notification center, this value is ignored.
 
 ## See Also
 
-- [class CFRunLoopSource](cfrunloopsource.md)
-- [class CFMessagePort](cfmessageport.md)
-- [func CFNotificationCenterRemoveEveryObserver(CFNotificationCenter!, UnsafeRawPointer!)](cfnotificationcenterremoveeveryobserver(_:_:).md)
+### Related Documentation
+- [class CFRunLoopSource](./cfrunloopsource.md)
+- [class CFMessagePort](./cfmessageport.md)
+### Adding and Removing Observers
+- [func CFNotificationCenterRemoveEveryObserver(CFNotificationCenter!, UnsafeRawPointer!)](./cfnotificationcenterremoveeveryobserver%28_,_%29.md)
   Stops an observer from receiving any notifications from any object.
-- [func CFNotificationCenterRemoveObserver(CFNotificationCenter!, UnsafeRawPointer!, CFNotificationName!, UnsafeRawPointer!)](cfnotificationcenterremoveobserver(_:_:_:_:).md)
+- [func CFNotificationCenterRemoveObserver(CFNotificationCenter!, UnsafeRawPointer!, CFNotificationName!, UnsafeRawPointer!)](./cfnotificationcenterremoveobserver%28_,_,_,_%29.md)
   Stops an observer from receiving certain notifications.
 
 

@@ -1,7 +1,8 @@
 # body
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the device activity report.
 

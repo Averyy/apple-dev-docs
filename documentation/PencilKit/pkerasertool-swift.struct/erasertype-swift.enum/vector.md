@@ -1,7 +1,8 @@
 # PKEraserTool.EraserType.vector
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An eraser that removes an entire drawn line.
 
@@ -24,9 +25,10 @@ When a vector eraser touches any portion of a drawn line, it removes the entire 
 
 ## See Also
 
-- [PKEraserTool.EraserType.bitmap](pkerasertool-swift.struct/erasertype-swift.enum/bitmap.md)
+### Eraser types
+- [PKEraserTool.EraserType.bitmap](./bitmap.md)
   An eraser that removes only those portions of the drawing it touches.
-- [PKEraserTool.EraserType.fixedWidthBitmap](pkerasertool-swift.struct/erasertype-swift.enum/fixedwidthbitmap.md)
+- [PKEraserTool.EraserType.fixedWidthBitmap](./fixedwidthbitmap.md)
 
 
 ---

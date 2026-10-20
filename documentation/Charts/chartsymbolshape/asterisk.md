@@ -1,7 +1,8 @@
 # asterisk
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Asterisk symbol.
 
@@ -19,6 +20,8 @@ Asterisk symbol.
 ```swift
 static var asterisk: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

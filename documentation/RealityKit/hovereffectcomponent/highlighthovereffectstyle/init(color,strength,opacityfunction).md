@@ -1,7 +1,8 @@
 # init(color:strength:opacityFunction:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new highlight effect with a color and strength.
 
@@ -12,6 +13,12 @@ Creates a new highlight effect with a color and strength.
 
 ```swift
 init(color: NSColor? = nil, strength: Float = 1.0, opacityFunction: HoverEffectComponent.OpacityFunction)
+```
+
+**Other overloads**:
+
+```swift
+init(color: UIColor? = nil, strength: Float = 1.0, opacityFunction: HoverEffectComponent.OpacityFunction)
 ```
 
 

@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute.AnnouncementPriority.low
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Announcements are queued and spoken when other speech utterances have completed.
 

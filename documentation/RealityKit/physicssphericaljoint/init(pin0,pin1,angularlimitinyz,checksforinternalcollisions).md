@@ -1,7 +1,8 @@
 # init(pin0:pin1:angularLimitInYZ:checksForInternalCollisions:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new spherical joint.
 
@@ -30,7 +31,7 @@ If `angularLimitInYZ` is undefined, `pin1` has full 360º rotational freedom in 
 - `pin0`: The local position and orientation on the first entity.
 - `pin1`: The local position and orientation on the second entity.
 - `angularLimitInYZ`: A maximum value of rotation in radians from the y and z axes if defined.
-- `checksForInternalCollisions`: A Boolean that indicates whether the joint checks for collisions between the two [`Entity`](entity.md) instances.
+- `checksForInternalCollisions`: A Boolean that indicates whether the joint checks for collisions between the two [`Entity`](../entity.md) instances.
 
 
 ---

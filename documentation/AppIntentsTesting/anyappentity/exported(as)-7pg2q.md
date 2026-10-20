@@ -1,7 +1,8 @@
 # exported(as:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this entity as a transferable intent value type.
 
@@ -28,7 +29,7 @@ An instance of the requested type.
 
 Use this for types that conform to both `Transferable` and `IntentValueConvertible`, such as `IntentPerson`. The entity must declare a `ValueRepresentation` for the requested type.
 
-> **Note**: If the entity does not support the requested value conversion.
+> **Throws**: If the entity does not support the requested value conversion.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # modificationDate
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the modification date of the annotation.
 
@@ -19,25 +20,31 @@ Returns the modification date of the annotation.
 var modificationDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDate * modificationDate;
+```
+
 #### Return Value
 
 The modification date of the annotation, or `NULL` if there is no modification date.
 
 ## See Also
 
-- [class PDFAnnotation](pdfannotation.md)
+### Related Documentation
+- [class PDFAnnotation](../pdfannotation.md)
   An annotation in a PDF document.
-- [var page: PDFPage?](pdfannotation/page.md)
+### Accessing Information About an Annotation
+- [var page: PDFPage?](./page.md)
   Returns the page that the annotation is associated with.
-- [var userName: String?](pdfannotation/username.md)
+- [var userName: String?](./username.md)
   Returns the name of the user who created the annotation.
-- [var type: String?](pdfannotation/type.md)
+- [var type: String?](./type.md)
   Returns the type of the annotation.
-- [var action: PDFAction?](pdfannotation/action.md)
+- [var action: PDFAction?](./action.md)
   An object that represents an action for a PDF element, such as a link annotation.
-- [class PDFAction](pdfaction.md)
+- [class PDFAction](../pdfaction.md)
   An action that is performed when, for example, a PDF annotation is activated or an outline item is clicked.
-- [class PDFDestination](pdfdestination.md)
+- [class PDFDestination](../pdfdestination.md)
   A `PDFDestination` object describes a point on a PDF page.
 
 

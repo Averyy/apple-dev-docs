@@ -1,7 +1,8 @@
 # userDeclinedAddingUser
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating the user canceled the add user operation.
 
@@ -21,13 +22,14 @@ static var userDeclinedAddingUser: HMError.Code { get }
 
 ## See Also
 
-- [static var userDeclinedRemovingUser: HMError.Code](hmerror/userdeclinedremovinguser.md)
+### Detecting user errors
+- [static var userDeclinedRemovingUser: HMError.Code](./userdeclinedremovinguser.md)
   An error indicating the user canceled the remove user operation.
-- [static var userDeclinedInvite: HMError.Code](hmerror/userdeclinedinvite.md)
+- [static var userDeclinedInvite: HMError.Code](./userdeclinedinvite.md)
   An error indicating the user declined the invitation.
-- [static var userIDNotEmailAddress: HMError.Code](hmerror/useridnotemailaddress.md)
+- [static var userIDNotEmailAddress: HMError.Code](./useridnotemailaddress.md)
   An error indicating the user’s ID is not a valid email address.
-- [static var userManagementFailed: HMError.Code](hmerror/usermanagementfailed.md)
+- [static var userManagementFailed: HMError.Code](./usermanagementfailed.md)
   A user management error not covered by the other errors.
 
 

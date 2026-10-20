@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var string: UnsafePointer<CChar>!
+```
+
+```c
+const char * string;
 ```
 
 

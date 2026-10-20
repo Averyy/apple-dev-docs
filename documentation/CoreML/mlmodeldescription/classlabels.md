@@ -1,7 +1,8 @@
 # classLabels
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of labels, which can be either strings or a numbers, for classifier models.
 
@@ -20,11 +21,16 @@ An array of labels, which can be either strings or a numbers, for classifier mod
 var classLabels: [Any]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<id> * classLabels;
+```
+
 ## See Also
 
-- [var metadata: [MLModelMetadataKey : Any]](mlmodeldescription/metadata.md)
+### Accessing metadata
+- [var metadata: [MLModelMetadataKey : Any]](./metadata.md)
   A dictionary of the model’s creation information, such as its description, author, version, and license.
-- [struct MLModelMetadataKey](mlmodelmetadatakey.md)
+- [struct MLModelMetadataKey](../mlmodelmetadatakey.md)
   The set of keys the model uses to store values in its metadata dictionary.
 
 

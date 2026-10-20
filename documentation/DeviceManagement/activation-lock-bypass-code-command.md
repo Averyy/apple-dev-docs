@@ -1,7 +1,8 @@
 # Activation Lock Bypass Code
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the code to bypass Activation Lock on a device.
 
@@ -14,13 +15,13 @@ Get the code to bypass Activation Lock on a device.
 
 ## Mentions
 
-- [Creating and using bypass codes](creating-and-using-bypass-codes.md)
+- [Creating and using bypass codes](./creating-and-using-bypass-codes.md)
 
 #### Discussion
 
 This command allows organizations to retrieve the device’s bypass code. Organizations can use the bypass code to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password.
 
-Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [`Creating and using bypass codes`](creating-and-using-bypass-codes.md).
+Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [Creating and using bypass codes](./creating-and-using-bypass-codes.md).
 
 A device creates a new bypass code when:
 
@@ -28,7 +29,7 @@ A device creates a new bypass code when:
 - Erasing and not restoring the device from a backup.
 - Erasing and restoring the device from a backup from a different device.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +39,7 @@ A device creates a new bypass code when:
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -80,9 +81,9 @@ A device creates a new bypass code when:
 ## Topics
 
 ### Commands and responses
-- [object ActivationLockBypassCodeCommand](activationlockbypasscodecommand.md)
+- [object ActivationLockBypassCodeCommand](./activationlockbypasscodecommand.md)
   The command to get the code to bypass Activation Lock on a device.
-- [object ActivationLockBypassCodeResponse](activationlockbypasscoderesponse.md)
+- [object ActivationLockBypassCodeResponse](./activationlockbypasscoderesponse.md)
   A response from the device after it processes the command to get the code to bypass Activation Lock on a device.
 
 ## Endpoint
@@ -91,17 +92,25 @@ A device creates a new bypass code when:
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ActivationLockBypassCodeCommand`
+
 The request object the server returns for the Activation Lock Bypass Code Command.
+
+## Responses
+
+- `200` OK (`ActivationLockBypassCodeResponse`, `application/xml`): The response object the system returns for the Activation Lock Bypass Code Command.
 
 ## See Also
 
-- [Security Info](security-info-command.md)
+### Security
+- [Security Info](./security-info-command.md)
   Get security-related information about a device.
-- [Certificate List](certificate-list-command.md)
+- [Certificate List](./certificate-list-command.md)
   Get a list of installed certificates on a device.
-- [Clear Activation Lock Bypass Code](clear-activation-lock-bypass-code-command.md)
+- [Clear Activation Lock Bypass Code](./clear-activation-lock-bypass-code-command.md)
   Clear the Activation Lock bypass code on a device.
-- [Rotate FileVault Key](rotate-filevault-key-command.md)
+- [Rotate FileVault Key](./rotate-filevault-key-command.md)
   Change the FileVault primary password on a device.
 
 

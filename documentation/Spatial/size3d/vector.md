@@ -1,7 +1,8 @@
 # vector
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -18,15 +19,20 @@
 var vector: simd_double3 { get set }
 ```
 
+```c
+simd_double3 vector;
+```
+
 ## See Also
 
-- [var width: Double](size3d/width.md)
+### Inspecting a 3D size’s properties
+- [var width: Double](./width.md)
   The width value.
-- [var height: Double](size3d/height.md)
+- [var height: Double](./height.md)
   The height value.
-- [var depth: Double](size3d/depth.md)
+- [var depth: Double](./depth.md)
   The depth value.
-- [var size: Size3D](size3d/size.md)
+- [var size: Size3D](./size.md)
   The size value.
 
 

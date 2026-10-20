@@ -1,7 +1,8 @@
 # excludedWindowIDs
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of window IDs to exclude from the sharing picker.
 
@@ -17,15 +18,16 @@ var excludedWindowIDs: Array<Int>
 
 #### Discussion
 
-> ❗ **Important**:  Using an invalid window ID can cause an error. Use window values returned from Core Graphics methods such as [`CGWindowListCopyWindowInfo(_:_:)`](https://developer.apple.com/documentation/coregraphics/cgwindowlistcopywindowinfo(_:_:)) to provide window IDs to exclude from the picker.
+> ❗ **Important**:  Using an invalid window ID can cause an error. Use window values returned from Core Graphics methods such as [`CGWindowListCopyWindowInfo(_:_:)`](../../CoreGraphics/cgwindowlistcopywindowinfo%28_,_%29.md) to provide window IDs to exclude from the picker.
 
 ## See Also
 
-- [var allowedPickerModes: SCContentSharingPickerMode](sccontentsharingpickerconfiguration-swift.struct/allowedpickermodes.md)
+### Control streaming selections
+- [var allowedPickerModes: SCContentSharingPickerMode](./allowedpickermodes.md)
   The content-selection modes supported by the picker.
-- [var allowsChangingSelectedContent: Bool](sccontentsharingpickerconfiguration-swift.struct/allowschangingselectedcontent.md)
+- [var allowsChangingSelectedContent: Bool](./allowschangingselectedcontent.md)
   A Boolean value that indicates if the present stream can change to a different source.
-- [var excludedBundleIDs: Array<String>](sccontentsharingpickerconfiguration-swift.struct/excludedbundleids.md)
+- [var excludedBundleIDs: Array<String>](./excludedbundleids.md)
   A list of bundle IDs to exclude from the sharing picker.
 
 

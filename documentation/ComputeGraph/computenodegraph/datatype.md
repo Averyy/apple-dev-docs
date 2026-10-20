@@ -1,7 +1,8 @@
 # ComputeNodeGraph.DataType
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,7 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,19 +22,19 @@ struct DataType
 ## Topics
 
 ### Initializers
-- [init(MTLDataType)](computenodegraph/datatype/init(_:).md)
+- [init(MTLDataType)](./datatype/init%28_%29.md)
 ### Instance Properties
-- [var gpuType: MTLDataType](computenodegraph/datatype/gputype.md)
+- [var gpuType: MTLDataType](./datatype/gputype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

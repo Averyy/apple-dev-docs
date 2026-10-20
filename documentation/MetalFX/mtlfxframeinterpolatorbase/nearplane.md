@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The near plane distance that corresponds to the frustrum that renders the scene into the color buffer.
@@ -17,6 +18,10 @@ The near plane distance that corresponds to the frustrum that renders the scene 
 
 ```swift
 var nearPlane: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float nearPlane;
 ```
 
 

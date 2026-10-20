@@ -1,14 +1,15 @@
 # get_address_from_kext_map
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 vm_offset_t get_address_from_kext_map(vm_size_t fsize);
 ```
 

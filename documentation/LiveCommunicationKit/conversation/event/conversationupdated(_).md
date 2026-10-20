@@ -1,7 +1,8 @@
 # Conversation.Event.conversationUpdated(_:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Updates a conversation’s attributes and capabilities.
 
@@ -20,11 +21,11 @@ case conversationUpdated(Conversation.Update)
 
 ## See Also
 
-- [Conversation.Event.conversationConnected(_:)](conversation/event/conversationconnected(_:).md)
+- [Conversation.Event.conversationConnected(_:)](./conversationconnected%28_%29.md)
   Informs that system that conversation successfully connected at a point in time.
-- [case conversationEnded(Date, Conversation.EndedReason)](conversation/event/conversationended(_:_:).md)
+- [case conversationEnded(Date, Conversation.EndedReason)](./conversationended%28_,_%29.md)
   Informs that system that a conversation ended at a point in time with a reason.
-- [Conversation.Event.conversationStartedConnecting(_:)](conversation/event/conversationstartedconnecting(_:).md)
+- [Conversation.Event.conversationStartedConnecting(_:)](./conversationstartedconnecting%28_%29.md)
   Informs the system that a conversation has started to connect participants at a point in time.
 
 

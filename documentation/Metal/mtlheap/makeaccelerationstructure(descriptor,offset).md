@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,11 +19,16 @@
 func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor, offset: Int) -> (any MTLAccelerationStructure)?
 ```
 
+```objc
+- (id<MTLAccelerationStructure>) newAccelerationStructureWithDescriptor:(MTLAccelerationStructureDescriptor *) descriptor offset:(NSUInteger) offset;
+```
+
 ## See Also
 
-- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(size:).md)
-- [func makeAccelerationStructure(size: Int, offset: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(size:offset:).md)
-- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(descriptor:).md)
+### Creating acceleration structure from a heap
+- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](./makeaccelerationstructure%28size%29.md)
+- [func makeAccelerationStructure(size: Int, offset: Int) -> (any MTLAccelerationStructure)?](./makeaccelerationstructure%28size,offset%29.md)
+- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](./makeaccelerationstructure%28descriptor%29.md)
 
 
 ---

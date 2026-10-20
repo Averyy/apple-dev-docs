@@ -1,12 +1,15 @@
 # requirement
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dependency requirement of the package dependency.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
+
+> **Deprecated**: use kind instead
 
 ## Declaration
 
@@ -16,15 +19,16 @@ var requirement: Package.Dependency.Requirement { get }
 
 ## See Also
 
-- [let traits: Set<Package.Dependency.Trait>](package/dependency/traits.md)
+### Declaring Requirements
+- [let traits: Set<Package.Dependency.Trait>](./traits.md)
   The dependencies traits configuration.
-- [Package.Dependency.Trait](package/dependency/trait.md)
+- [Package.Dependency.Trait](./trait.md)
   An enabled trait of a dependency.
-- [Package.Dependency.RegistryRequirement](package/dependency/registryrequirement.md)
+- [Package.Dependency.RegistryRequirement](./registryrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [Package.Dependency.SourceControlRequirement](package/dependency/sourcecontrolrequirement.md)
+- [Package.Dependency.SourceControlRequirement](./sourcecontrolrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [Package.Dependency.Requirement](package/dependency/requirement-swift.enum.md)
+- [Package.Dependency.Requirement](./requirement-swift.enum.md)
   An enum that represents the requirement for a package dependency.
 
 

@@ -1,7 +1,8 @@
 # argmax()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the element with the highest value, ignoring missing elements.
 
@@ -20,9 +21,12 @@ Returns the index of the element with the highest value, ignoring missing elemen
 func argmax() -> Int?
 ```
 
+Available when `WrappedElement` conforms to `Comparable`.
+
 ## See Also
 
-- [func argmin() -> Int?](column/argmin.md)
+### Finding an Element Index
+- [func argmin() -> Int?](./argmin%28%29.md)
   Returns the index of the element with the lowest value, ignoring missing elements.
 
 

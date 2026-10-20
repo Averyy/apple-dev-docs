@@ -1,7 +1,8 @@
 # NSSpeechRecognitionUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting to send user data to Apple’s speech recognition servers.
 
@@ -11,17 +12,19 @@ A message that tells people why the app is requesting to send user data to Apple
 - macOS 10.15+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSSpeechRecognitionUsageDescription` (Privacy - Speech Recognition Usage Description)
+- **Type**: string
 
 #### Discussion
 
-> ❗ **Important**:  Include this key if your app uses the Speech framework. This applies regardless of whether you set [`requiresOnDeviceRecognition`](https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/requiresondevicerecognition) to `true` or `false`. If this key isn’t present, your app crashes when it calls [`requestAuthorization(_:)`](https://developer.apple.com/documentation/speech/sfspeechrecognizer/requestauthorization(_:)).
+> ❗ **Important**:  Include this key if your app uses the Speech framework. This applies regardless of whether you set [`requiresOnDeviceRecognition`](../../Speech/sfspeechrecognitionrequest/requiresondevicerecognition.md) to `true` or `false`. If this key isn’t present, your app crashes when it calls [`requestAuthorization(_:)`](../../Speech/sfspeechrecognizer/requestauthorization%28_%29.md).
 
 ## See Also
 
-- [Asking Permission to Use Speech Recognition](../speech/asking-permission-to-use-speech-recognition.md)
+### Speech
+- [Asking Permission to Use Speech Recognition](../../Speech/asking-permission-to-use-speech-recognition.md)
   Ask the user’s permission to perform speech recognition using Apple’s servers.
 
 

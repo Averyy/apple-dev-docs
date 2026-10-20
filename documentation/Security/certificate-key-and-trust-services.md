@@ -12,29 +12,30 @@ The certificate, key, and trust services API is a collection of functions and da
 - **Policies and trust services.** When you receive a certificate, before you can use the embedded public key, you have to answer the question, “Can I trust this certificate?” You conduct an evaluation of trust according to a set of criteria, or a trust policy.
 - **Cryptographic keys.** After you have a key whose origin you trust, you can begin to conduct cryptographic operations, such as encryption or data signing and verification. These operations in turn typically serve a larger purpose, such as authenticating a user, transmitting data securely, or verifying that a block of data is unaltered since being sealed with a signature.
 
-> **Note**:  Rely on the classes of the [`Security Interface`](https://developer.apple.com/documentation/securityinterface) framework to ensure a consistent experience when displaying certificates and trust settings to the user and when the user chooses among identities or modifies keychain settings.
+> **Note**:  Rely on the classes of the [Security Interface](../SecurityInterface/SecurityInterface.md) framework to ensure a consistent experience when displaying certificates and trust settings to the user and when the user chooses among identities or modifies keychain settings.
 
 ## Topics
 
 ### API Components
-- [Certificates](certificates.md)
+- [Certificates](./certificates.md)
   Manage digital certificates.
-- [Keys](keys.md)
+- [Keys](./keys.md)
   Generate, store, and use cryptographic keys.
-- [Identities](identities.md)
+- [Identities](./identities.md)
   Combine certificates and cryptographic keys into identities.
-- [Policies](policies.md)
+- [Policies](./policies.md)
   Obtain policies for establishing trust.
-- [Trust](trust.md)
+- [Trust](./trust.md)
   Evaluate trust based on a given policy.
 ### Thread Safety
-- [Working with Concurrency](working-with-concurrency.md)
+- [Working with Concurrency](./working-with-concurrency.md)
   Learn about thread safety issues related to the certificate, key, and trust services API.
 
 ## See Also
 
-- [Cryptographic Services Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172)
-- [Security Interface](../securityinterface/securityinterface.md)
+### Related Documentation
+- [Cryptographic Services Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172)
+- [Security Interface](../SecurityInterface/SecurityInterface.md)
   Provide user interface elements for security features such as authorization, access to digital certificates, and access to items in keychains.
 
 

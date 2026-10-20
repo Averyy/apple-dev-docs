@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct data_in_code_entry {
     ...
 };
@@ -17,9 +17,9 @@ struct data_in_code_entry {
 ## Topics
 
 ### Instance Properties
-- [kind](data_in_code_entry/1525928-kind.md)
-- [length](data_in_code_entry/1525247-length.md)
-- [offset](data_in_code_entry/1525931-offset.md)
+- [kind](./data_in_code_entry/api-1525928-kind.md)
+- [length](./data_in_code_entry/api-1525247-length.md)
+- [offset](./data_in_code_entry/api-1525931-offset.md)
 
 
 ---

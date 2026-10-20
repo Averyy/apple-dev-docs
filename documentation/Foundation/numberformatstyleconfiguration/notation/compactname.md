@@ -1,7 +1,8 @@
 # compactName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A locale-appropriate compact name notation.
 
@@ -32,9 +33,10 @@ let compactNameFormatted = 1234.formatted(.number
 
 ## See Also
 
-- [static var automatic: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/automatic.md)
+### Notations
+- [static var automatic: NumberFormatStyleConfiguration.Notation](./automatic.md)
   A notation that automatically provides locale-appropriate behavior.
-- [static var scientific: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/scientific.md)
+- [static var scientific: NumberFormatStyleConfiguration.Notation](./scientific.md)
   A notation constant that formats values with scientific notation.
 
 

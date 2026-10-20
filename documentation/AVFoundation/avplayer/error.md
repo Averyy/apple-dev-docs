@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error that caused a failure.
 
@@ -21,15 +22,20 @@ nonisolated
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
-By default, this value is `nil`. If a player reaches a [`AVPlayer.Status.failed`](avplayer/status-swift.enum/failed.md), the system populates this value with an error that describes the failure.
+By default, this value is `nil`. If a player reaches a [`AVPlayer.Status.failed`](./status-swift.enum/failed.md), the system populates this value with an error that describes the failure.
 
 ## See Also
 
-- [var status: AVPlayer.Status](avplayer/status-swift.property.md)
+### Determining player readiness
+- [var status: AVPlayer.Status](./status-swift.property.md)
   A value that indicates the readiness of a player object for playback.
-- [AVPlayer.Status](avplayer/status-swift.enum.md)
+- [AVPlayer.Status](./status-swift.enum.md)
   Status values that indicate whether a player can successfully play media.
 
 

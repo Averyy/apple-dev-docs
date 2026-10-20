@@ -1,14 +1,15 @@
 # kHostControllerToHostFlowControlOff
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kHostControllerToHostFlowControlOff = 0x00
 ```
 

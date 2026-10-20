@@ -1,7 +1,8 @@
 # write(_:toBufferCallback:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates speech for the utterance and invokes the callback with the audio buffer.
 
@@ -20,6 +21,10 @@ Generates speech for the utterance and invokes the callback with the audio buffe
 func write(_ utterance: AVSpeechUtterance, toBufferCallback bufferCallback: @escaping AVSpeechSynthesizer.BufferCallback)
 ```
 
+```objc
+- (void) writeUtterance:(AVSpeechUtterance *) utterance toBufferCallback:(AVSpeechSynthesizerBufferCallback) bufferCallback;
+```
+
 #### Discussion
 
 Call this method to receive audio buffers to store or further process synthesized speech.
@@ -31,19 +36,20 @@ Call this method to receive audio buffers to store or further process synthesize
 
 ## See Also
 
-- [var usesApplicationAudioSession: Bool](avspeechsynthesizer/usesapplicationaudiosession.md)
+### Directing speech output
+- [var usesApplicationAudioSession: Bool](./usesapplicationaudiosession.md)
   A Boolean value that specifies whether the app manages the audio session.
-- [var mixToTelephonyUplink: Bool](avspeechsynthesizer/mixtotelephonyuplink.md)
+- [var mixToTelephonyUplink: Bool](./mixtotelephonyuplink.md)
   A Boolean value that specifies whether to send synthesized speech to an active call.
-- [var outputChannels: [AVAudioSessionChannelDescription]?](avspeechsynthesizer/outputchannels.md)
+- [var outputChannels: [AVAudioSessionChannelDescription]?](./outputchannels.md)
   An array of audio session channels to route generated speech.
-- [AVSpeechSynthesizer.BufferCallback](avspeechsynthesizer/buffercallback.md)
+- [AVSpeechSynthesizer.BufferCallback](./buffercallback.md)
   A type that defines a callback that receives a buffer of generated speech.
-- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](avspeechsynthesizer/write(_:tobuffercallback:tomarkercallback:).md)
+- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](./write%28_,tobuffercallback,tomarkercallback%29.md)
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
-- [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
+- [AVSpeechSynthesizer.MarkerCallback](./markercallback.md)
   A type that defines a callback that receives speech markers.
-- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+- [class AVSpeechSynthesisMarker](../avspeechsynthesismarker.md)
   An object that contains information about the synthesized audio.
 
 

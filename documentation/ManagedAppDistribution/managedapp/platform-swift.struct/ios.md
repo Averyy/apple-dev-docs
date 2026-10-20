@@ -1,7 +1,8 @@
 # iOS
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 iOS is a supported platform.
 

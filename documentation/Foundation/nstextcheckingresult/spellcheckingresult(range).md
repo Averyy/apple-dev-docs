@@ -1,7 +1,8 @@
 # spellCheckingResult(range:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the range of a misspelled word.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the range of a misspelled word.
 class func spellCheckingResult(range: NSRange) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) spellCheckingResultWithRange:(NSRange) range;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`spelling`](nstextcheckingresult/checkingtype/spelling.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`spelling`](./checkingtype/spelling.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [class func correctionCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult](nstextcheckingresult/correctioncheckingresult(range:replacementstring:).md)
+### Text Checking Results for Spelling
+- [class func correctionCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult](./correctioncheckingresult%28range,replacementstring%29.md)
   Creates and returns a text checking result after detecting a possible correction.
 
 

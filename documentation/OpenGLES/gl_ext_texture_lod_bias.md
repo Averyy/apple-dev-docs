@@ -1,7 +1,8 @@
 # GL_EXT_texture_lod_bias
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_EXT_texture_lod_bias: Int32 { get }
+```
+
+```c
+#define GL_EXT_texture_lod_bias
 ```
 
 

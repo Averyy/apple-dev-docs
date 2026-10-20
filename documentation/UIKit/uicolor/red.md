@@ -1,7 +1,8 @@
 # red
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A color object with RGB values of `1.0`, `0.0`, and `0.0`, and an alpha value of `1.0`.
 
@@ -9,7 +10,7 @@ A color object with RGB values of `1.0`, `0.0`, and `0.0`, and an alpha value of
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,33 +20,38 @@ A color object with RGB values of `1.0`, `0.0`, and `0.0`, and an alpha value of
 class var red: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * redColor;
+```
+
 ## See Also
 
-- [class var black: UIColor](uicolor/black.md)
+### Fixed colors
+- [class var black: UIColor](./black.md)
   A color object in the sRGB color space with a grayscale value of `0.0` and an alpha value of `1.0`.
-- [class var blue: UIColor](uicolor/blue.md)
+- [class var blue: UIColor](./blue.md)
   A color object with RGB values of `0.0`, `0.0`, and `1.0`, and an alpha value of `1.0`.
-- [class var brown: UIColor](uicolor/brown.md)
+- [class var brown: UIColor](./brown.md)
   A color object with RGB values of `0.6`, `0.4`, and `0.2`, and an alpha value of `1.0`.
-- [class var cyan: UIColor](uicolor/cyan.md)
+- [class var cyan: UIColor](./cyan.md)
   A color object with RGB values of `0.0`, `1.0`, and `1.0`, and an alpha value of `1.0`.
-- [class var darkGray: UIColor](uicolor/darkgray.md)
+- [class var darkGray: UIColor](./darkgray.md)
   A color object with a grayscale value of 1/3 and an alpha value of `1.0`.
-- [class var gray: UIColor](uicolor/gray.md)
+- [class var gray: UIColor](./gray.md)
   A color object with a grayscale value of `0.5` and an alpha value of `1.0`.
-- [class var green: UIColor](uicolor/green.md)
+- [class var green: UIColor](./green.md)
   A color object with RGB values of `0.0`, `1.0`, and `0.0`, and an alpha value of `1.0`.
-- [class var lightGray: UIColor](uicolor/lightgray.md)
+- [class var lightGray: UIColor](./lightgray.md)
   A color object with a grayscale value of 2/3 and an alpha value of `1.0`.
-- [class var magenta: UIColor](uicolor/magenta.md)
+- [class var magenta: UIColor](./magenta.md)
   A color object with RGB values of `1.0`, `0.0`, and `1.0`, and an alpha value of `1.0`.
-- [class var orange: UIColor](uicolor/orange.md)
+- [class var orange: UIColor](./orange.md)
   A color object with RGB values of `1.0`, `0.5`, and `0.0`, and an alpha value of `1.0`.
-- [class var purple: UIColor](uicolor/purple.md)
+- [class var purple: UIColor](./purple.md)
   A color object with RGB values of `0.5`, `0.0`, and `0.5`, and an alpha value of `1.0`.
-- [class var white: UIColor](uicolor/white.md)
+- [class var white: UIColor](./white.md)
   A color object with a grayscale value of `1.0` and an alpha value of `1.0`.
-- [class var yellow: UIColor](uicolor/yellow.md)
+- [class var yellow: UIColor](./yellow.md)
   A color object with RGB values of `1.0`, `1.0`, and `0.0`, and an alpha value of `1.0`.
 
 

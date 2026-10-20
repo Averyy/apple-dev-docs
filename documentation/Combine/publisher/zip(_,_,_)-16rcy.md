@@ -1,7 +1,8 @@
 # zip(_:_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines elements from three other publishers and delivers groups of elements as tuples.
 
@@ -26,9 +27,9 @@ A publisher that emits groups of elements from the upstream publishers as tuples
 
 #### Discussion
 
-Use [`zip(_:_:_:)`](publisher/zip(_:_:_:)-16rcy.md) to return a new publisher that combines the elements from three other publishers to publish a tuple to the downstream subscriber. The returned publisher waits until all four publishers have emitted an event, then delivers the oldest unconsumed event from each publisher as a tuple to the subscriber.
+Use [`zip(_:_:_:)`](./zip%28_,_,_%29-16rcy.md) to return a new publisher that combines the elements from three other publishers to publish a tuple to the downstream subscriber. The returned publisher waits until all four publishers have emitted an event, then delivers the oldest unconsumed event from each publisher as a tuple to the subscriber.
 
-In this example, several [`PassthroughSubject`](passthroughsubject.md) instances emit values; [`zip(_:_:_:)`](publisher/zip(_:_:_:)-16rcy.md) receives the oldest unconsumed value from each publisher and combines them into a tuple that it republishes to the downstream:
+In this example, several [`PassthroughSubject`](../passthroughsubject.md) instances emit values; [`zip(_:_:_:)`](./zip%28_,_,_%29-16rcy.md) receives the oldest unconsumed value from each publisher and combines them into a tuple that it republishes to the downstream:
 
 ```swift
 let numbersPub = PassthroughSubject<Int, Never>()
@@ -63,15 +64,16 @@ If any upstream publisher finishes successfully or fails with an error, so too d
 
 ## See Also
 
-- [func zip<P>(P) -> Publishers.Zip<Self, P>](publisher/zip(_:).md)
+### Collecting and republishing the oldest unconsumed elements from multiple publishers
+- [func zip<P>(P) -> Publishers.Zip<Self, P>](./zip%28_%29.md)
   Combines elements from another publisher and deliver pairs of elements as tuples.
-- [func zip<P, T>(P, (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.Zip<Self, P>, T>](publisher/zip(_:_:)-4xn21.md)
+- [func zip<P, T>(P, (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.Zip<Self, P>, T>](./zip%28_,_%29-4xn21.md)
   Combines elements from another publisher and delivers a transformed output.
-- [func zip<P, Q>(P, Q) -> Publishers.Zip3<Self, P, Q>](publisher/zip(_:_:)-8d7k7.md)
+- [func zip<P, Q>(P, Q) -> Publishers.Zip3<Self, P, Q>](./zip%28_,_%29-8d7k7.md)
   Combines elements from two other publishers and delivers groups of elements as tuples.
-- [func zip<P, Q, T>(P, Q, (Self.Output, P.Output, Q.Output) -> T) -> Publishers.Map<Publishers.Zip3<Self, P, Q>, T>](publisher/zip(_:_:_:)-9yqi1.md)
+- [func zip<P, Q, T>(P, Q, (Self.Output, P.Output, Q.Output) -> T) -> Publishers.Map<Publishers.Zip3<Self, P, Q>, T>](./zip%28_,_,_%29-9yqi1.md)
   Combines elements from two other publishers and delivers a transformed output.
-- [func zip<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.Zip4<Self, P, Q, R>, T>](publisher/zip(_:_:_:_:).md)
+- [func zip<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.Zip4<Self, P, Q, R>, T>](./zip%28_,_,_,_%29.md)
   Combines elements from three other publishers and delivers a transformed output.
 
 

@@ -1,7 +1,8 @@
 # topControlPoint
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bezier control point of the vertex’s top edge.
 

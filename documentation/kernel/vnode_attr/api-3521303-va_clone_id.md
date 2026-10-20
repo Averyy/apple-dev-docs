@@ -1,14 +1,15 @@
 # va_clone_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 uint64_t va_clone_id;
 ```
 

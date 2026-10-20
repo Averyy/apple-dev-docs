@@ -1,7 +1,8 @@
 # TransformedShape
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A shape with an affine transform applied to it.
 
@@ -24,27 +25,28 @@ struct TransformedShape<Content> where Content : Shape
 ## Topics
 
 ### Creating a transformed shape
-- [init(shape: Content, transform: CGAffineTransform)](transformedshape/init(shape:transform:).md)
+- [init(shape: Content, transform: CGAffineTransform)](./transformedshape/init%28shape,transform%29.md)
 ### Getting the shape’s characteristics
-- [var shape: Content](transformedshape/shape.md)
-- [var transform: CGAffineTransform](transformedshape/transform.md)
+- [var shape: Content](./transformedshape/shape.md)
+- [var transform: CGAffineTransform](./transformedshape/transform.md)
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct ScaledShape](scaledshape.md)
+### Transforming a shape
+- [struct ScaledShape](./scaledshape.md)
   A shape with a scale transform applied to it.
-- [struct RotatedShape](rotatedshape.md)
+- [struct RotatedShape](./rotatedshape.md)
   A shape with a rotation transform applied to it.
-- [struct OffsetShape](offsetshape.md)
+- [struct OffsetShape](./offsetshape.md)
   A shape with a translation offset transform applied to it.
 
 

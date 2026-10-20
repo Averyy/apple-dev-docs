@@ -1,14 +1,15 @@
 # kIOATAFeature48BitLBA
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOATAFeature48BitLBA = 0x10
 ```
 

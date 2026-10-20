@@ -1,16 +1,17 @@
 # init(putBytes:releaseConsumer:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(putBytes: CGDataConsumerPutBytesCallback?, releaseConsumer: CGDataConsumerR
 
 ## See Also
 
-- [init()](cgdataconsumercallbacks/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

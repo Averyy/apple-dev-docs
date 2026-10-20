@@ -1,7 +1,8 @@
 # randomSeed
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,21 +20,22 @@ var randomSeed: Int
 
 ## See Also
 
-- [var columnSubsample: Double](mlboostedtreeregressor/modelparameters-swift.struct/columnsubsample.md)
+### Accessing parameters
+- [var columnSubsample: Double](./columnsubsample.md)
   Must be in the range (0, 1).
-- [var earlyStoppingRounds: Int?](mlboostedtreeregressor/modelparameters-swift.struct/earlystoppingrounds.md)
+- [var earlyStoppingRounds: Int?](./earlystoppingrounds.md)
   Validation data must be specified for an early stop.
-- [var maxDepth: Int](mlboostedtreeregressor/modelparameters-swift.struct/maxdepth.md)
-- [var maxIterations: Int](mlboostedtreeregressor/modelparameters-swift.struct/maxiterations.md)
-- [var minChildWeight: Double](mlboostedtreeregressor/modelparameters-swift.struct/minchildweight.md)
-- [var minLossReduction: Double](mlboostedtreeregressor/modelparameters-swift.struct/minlossreduction.md)
-- [var rowSubsample: Double](mlboostedtreeregressor/modelparameters-swift.struct/rowsubsample.md)
+- [var maxDepth: Int](./maxdepth.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var minChildWeight: Double](./minchildweight.md)
+- [var minLossReduction: Double](./minlossreduction.md)
+- [var rowSubsample: Double](./rowsubsample.md)
   Must be in the range (0, 1).
-- [var stepSize: Double](mlboostedtreeregressor/modelparameters-swift.struct/stepsize.md)
+- [var stepSize: Double](./stepsize.md)
   Must be in the range (0, 1).
-- [var validationData: MLDataTable?](mlboostedtreeregressor/modelparameters-swift.struct/validationdata-swift.property.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var validation: MLBoostedTreeRegressor.ModelParameters.ValidationData](mlboostedtreeregressor/modelparameters-swift.struct/validation.md)
+- [var validation: MLBoostedTreeRegressor.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

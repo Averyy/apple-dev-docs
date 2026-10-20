@@ -1,7 +1,8 @@
 # NFCVASResponse.ErrorCode.incorrectData
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case incorrectData
+```
+
+```c
+NFCVASErrorCodeIncorrectData
 ```
 
 

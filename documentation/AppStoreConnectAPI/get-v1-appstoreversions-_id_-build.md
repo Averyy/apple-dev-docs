@@ -1,7 +1,8 @@
 # Read the build information of an app store version
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the build that is attached to a specific App Store version.
 
@@ -14,13 +15,31 @@ Get the build that is attached to a specific App Store version.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Store version resource ID from the [`List all app store versions for an app`](./get-v1-apps-_id_-appstoreversions.md) response.
+
+### Query Parameters
+
 - `fields[builds]` ([string]): Additional fields to include for each build resource returned by the response.
+
+  **Allowed Values**: `version`, `uploadedDate`, `expirationDate`, `expired`, `minOsVersion`, `lsMinimumSystemVersion`, `computedMinMacOsVersion`, `computedMinVisionOsVersion`, `iconAssetToken`, `processingState`, `buildAudienceType`, `usesNonExemptEncryption`, `preReleaseVersion`, `individualTesters`, `betaGroups`, `betaBuildLocalizations`, `appEncryptionDeclaration`, `betaAppReviewSubmission`, `app`, `buildBetaDetail`, `appStoreVersion`, `icons`, `buildBundles`, `buildUpload`, `perfPowerMetrics`, `diagnosticSignatures`
+
+## Responses
+
+- `200` OK (`BuildWithoutIncludesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Get the build id for an app store version](get-v1-appstoreversions-_id_-relationships-build.md)
+### Attaching a Build to a Version
+- [Get the build id for an app store version](./get-v1-appstoreversions-_id_-relationships-build.md)
   Get the ID of the build that is attached to a specific App Store version.
-- [Modify the build for an app store version](patch-v1-appstoreversions-_id_-relationships-build.md)
+- [Modify the build for an app store version](./patch-v1-appstoreversions-_id_-relationships-build.md)
   Change the build that is attached to a specific App Store version.
 
 

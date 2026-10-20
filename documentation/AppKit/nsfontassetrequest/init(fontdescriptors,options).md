@@ -1,7 +1,8 @@
 # init(fontDescriptors:options:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.13+
@@ -12,9 +13,14 @@
 init(fontDescriptors: [NSFontDescriptor], options: NSFontAssetRequest.Options = [])
 ```
 
+```objc
+- (instancetype) initWithFontDescriptors:(NSArray<NSFontDescriptor *> *) fontDescriptors options:(NSFontAssetRequestOptions) options;
+```
+
 ## See Also
 
-- [NSFontAssetRequest.Options](nsfontassetrequest/options.md)
+### Creating a Font Asset Request
+- [NSFontAssetRequest.Options](./options.md)
 
 
 ---

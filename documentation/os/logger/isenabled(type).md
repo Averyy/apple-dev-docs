@@ -1,7 +1,8 @@
 # isEnabled(type:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the Logger can emit log messages for a given log type. This allows for more granular control over logging based on the log level.
 
@@ -11,7 +12,7 @@ Checks if the Logger can emit log messages for a given log type. This allows for
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

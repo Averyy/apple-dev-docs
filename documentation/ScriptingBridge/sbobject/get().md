@@ -1,7 +1,8 @@
 # get()
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces evaluation of the receiver, causing the real object to be returned immediately.
 
@@ -15,9 +16,13 @@ Forces evaluation of the receiver, causing the real object to be returned immedi
 func get() -> Any?
 ```
 
+```objc
+- (id) get;
+```
+
 #### Return Value
 
-For most properties, the result is a Foundation object such as an `NSString`. For properties with no Foundation equivalent, the result is an `NSAppleEventDescriptor` or another [`SBObject`](sbobject.md) for most elements.
+For most properties, the result is a Foundation object such as an `NSString`. For properties with no Foundation equivalent, the result is an `NSAppleEventDescriptor` or another [`SBObject`](../sbobject.md) for most elements.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom attributes that you can associate with the scene.
 
@@ -18,9 +19,14 @@ Custom attributes that you can associate with the scene.
 var userInfo: [String : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * userInfo;
+```
+
 ## See Also
 
-- [var stateRestorationActivity: NSUserActivity?](uiscenesession/staterestorationactivity.md)
+### Getting additional session information
+- [var stateRestorationActivity: NSUserActivity?](./staterestorationactivity.md)
   An activity object you can use to restore the previous contents of your scene’s interface.
 
 

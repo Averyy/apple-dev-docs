@@ -1,7 +1,8 @@
 # init(passesArchiveData:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init?(passesArchiveData: Data)
+```
+
+```objc
+- (instancetype) initWithPassesArchiveData:(NSData *) passesArchiveData;
 ```
 
 

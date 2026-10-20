@@ -1,7 +1,8 @@
 # BindTarget.ScenePath
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A bind path for a particular scene.
 
@@ -11,7 +12,7 @@ A bind path for a particular scene.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,26 +22,27 @@ struct ScenePath
 
 #### Overview
 
-This structure defines an absolute bind path for a scene. You determine the scene that a particular instance references by specifying the scene’s name as the argument to [`BindPath.Part.scene(_:)`](bindpath/part/scene(_:).md).
+This structure defines an absolute bind path for a scene. You determine the scene that a particular instance references by specifying the scene’s name as the argument to [`BindPath.Part.scene(_:)`](../bindpath/part/scene%28_%29.md).
 
 ## Topics
 
 ### Accessing the anchor entity
-- [func anchorEntity(String) -> BindTarget.EntityPath](bindtarget/scenepath/anchorentity(_:).md)
+- [func anchorEntity(String) -> BindTarget.EntityPath](./scenepath/anchorentity%28_%29.md)
   A path for the scene’s anchor entity.
 ### Accessing the bind target
-- [var `self`: BindTarget](bindtarget/scenepath/self.md)
+- [var `self`: BindTarget](./scenepath/self.md)
   A bind target for the scene.
 
 ## See Also
 
-- [static func scene(String) -> BindTarget.ScenePath](bindtarget/scene(_:).md)
+### Targeting entities and scenes
+- [static func scene(String) -> BindTarget.ScenePath](./scene%28_%29.md)
   Generates a bind path from a particular scene.
-- [static func anchorEntity(String) -> BindTarget.EntityPath](bindtarget/anchorentity(_:).md)
+- [static func anchorEntity(String) -> BindTarget.EntityPath](./anchorentity%28_%29.md)
   Generates a complex bind path from a particular anchor entity in the scene.
-- [static func entity(String) -> BindTarget.EntityPath](bindtarget/entity(_:).md)
+- [static func entity(String) -> BindTarget.EntityPath](./entity%28_%29.md)
   Generates a complex bind path from a particular child entity of the current entity.
-- [BindTarget.EntityPath](bindtarget/entitypath.md)
+- [BindTarget.EntityPath](./entitypath.md)
   A bind path context for a particular entity.
 
 

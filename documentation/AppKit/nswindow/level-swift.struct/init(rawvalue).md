@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a window level using the given raw value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [init(Int)](nswindow/level-swift.struct/init(_:).md)
+### Creating a Window Level
+- [init(Int)](./init%28_%29.md)
   Creates a window level using the given integer value.
 
 

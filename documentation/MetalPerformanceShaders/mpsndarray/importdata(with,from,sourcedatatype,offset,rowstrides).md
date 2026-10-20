@@ -1,7 +1,8 @@
 # importData(with:from:sourceDataType:offset:rowStrides:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func importData(with cmdBuf: any MTLCommandBuffer, from buffer: any MTLBuffer, sourceDataType: MPSDataType, offset: Int, rowStrides: UnsafeMutablePointer<Int>?)
+```
+
+```objc
+- (void) importDataWithCommandBuffer:(id<MTLCommandBuffer>) cmdBuf fromBuffer:(id<MTLBuffer>) buffer sourceDataType:(MPSDataType) sourceDataType offset:(NSUInteger) offset rowStrides:(NSInteger *) rowStrides;
 ```
 
 

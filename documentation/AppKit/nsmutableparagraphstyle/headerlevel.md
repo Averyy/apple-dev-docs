@@ -1,7 +1,8 @@
 # headerLevel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The paragraph’s header level for HTML generation.
 
@@ -12,6 +13,10 @@ The paragraph’s header level for HTML generation.
 
 ```swift
 var headerLevel: Int { get set }
+```
+
+```objc
+@property NSInteger headerLevel;
 ```
 
 #### Discussion

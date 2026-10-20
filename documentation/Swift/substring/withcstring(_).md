@@ -1,7 +1,8 @@
 # withCString(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of UTF-8 code units.
 

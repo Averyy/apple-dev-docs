@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the bottom edge of the view.
 
@@ -22,15 +23,16 @@ static let bottom: Alignment
 
 #### Discussion
 
-This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`bottom`](verticalalignment/bottom.md) vertical guide:
+This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`bottom`](../verticalalignment/bottom.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-bottom-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-bottom-1-iOS@2x.png)
 
 ## See Also
 
-- [static let bottomLeading: Alignment](alignment/bottomleading.md)
+### Getting bottom guides
+- [static let bottomLeading: Alignment](./bottomleading.md)
   A guide that marks the bottom and leading edges of the view.
-- [static let bottomTrailing: Alignment](alignment/bottomtrailing.md)
+- [static let bottomTrailing: Alignment](./bottomtrailing.md)
   A guide that marks the bottom and trailing edges of the view.
 
 

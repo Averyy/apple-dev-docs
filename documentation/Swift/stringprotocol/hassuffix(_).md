@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,12 @@
 ```swift
 func hasSuffix(_ suffix: String) -> Bool
 ```
+
+## Default Implementations
+
+### StringProtocol Implementations
+- [func hasSuffix<Suffix>(Suffix) -> Bool](./hassuffix%28_%29-13eus.md)
+  Returns a Boolean value indicating whether the string ends with the specified suffix.
 
 
 ---

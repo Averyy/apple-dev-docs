@@ -1,7 +1,8 @@
 # fallbackPlacement
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A fallback placement to use when the original container isn’t in the view controller hierarchy.
 
@@ -20,7 +21,8 @@ The system places the expanded experience over the scene of the original contain
 
 ## See Also
 
-- [AVExperienceController.ExpandedConfiguration.Placement](avexperiencecontroller/expandedconfiguration/placement.md)
+### Specifying placement
+- [AVExperienceController.ExpandedConfiguration.Placement](./placement.md)
   A structure that represents where the video will be experienced.
 
 

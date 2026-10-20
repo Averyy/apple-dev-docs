@@ -1,6 +1,7 @@
 # Applying geometric transforms to images
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Reflect, shear, rotate, and scale image buffers using vImage.
 
@@ -8,19 +9,19 @@ Reflect, shear, rotate, and scale image buffers using vImage.
 
 The vImage library provides a suite of functions to apply different geometric transforms to images. The image below shows examples of reflect, scale, rotate, and composite translate-rotate-scale transforms:
 
-![Four variations of the same photograph of flowers. The first is horizontally reflected. The second is scaled down. The third is rotated clockwise. The fourth is rotated counterclockwise and scaled down to fit within its bounding box.](/images/com.apple.accelerate/media-3682459@2x.png)
+![Four variations of the same photograph of flowers. The first is horizontally reflected. The second is scaled down. The third is rotated clockwise. The fourth is rotated counterclockwise and scaled down to fit within its bounding box.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682459@2x.png)
 
-By default, vImage uses the Lanczos-3 algorithm when resampling. If you need the higher-quality results of the Lanczos-5 algorithm and don’t mind slightly slower performance, pass the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag to the geometric transform operations.
+By default, vImage uses the Lanczos-3 algorithm when resampling. If you need the higher-quality results of the Lanczos-5 algorithm and don’t mind slightly slower performance, pass the [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) flag to the geometric transform operations.
 
 The vImage geometry operations don’t work in-place, that is, you can’t use the same buffer as the source and destination.
 
-If you’re applying a geometric transform to an image with premultiplied alpha, you may see artifacts in high-frequency regions of the image. To avoid these artifacts, call [`vImageUnpremultiplyData_ARGB8888(_:_:_:)`](vimageunpremultiplydata_argb8888(_:_:_:).md) to remove the premultiplied alpha value from the image data before the operation. After the operation, call [`vImagePremultiplyData_ARGB8888(_:_:_:)`](vimagepremultiplydata_argb8888(_:_:_:).md) to premultiply the result.
+If you’re applying a geometric transform to an image with premultiplied alpha, you may see artifacts in high-frequency regions of the image. To avoid these artifacts, call [`vImageUnpremultiplyData_ARGB8888(_:_:_:)`](./vimageunpremultiplydata_argb8888%28_,_,_%29.md) to remove the premultiplied alpha value from the image data before the operation. After the operation, call [`vImagePremultiplyData_ARGB8888(_:_:_:)`](./vimagepremultiplydata_argb8888%28_,_,_%29.md) to premultiply the result.
 
-##### Reflect a Vimage Buffer
+##### Reflect a vImage buffer
 
 The vImage reflect functions generate either a vertical or a horizontal reflection of the image. The image below shows the original buffer contents and the contents after vertical reflection:
 
-![Two variations of the same photograph of a rocky landscape. The second image is vertically reflected so that it appears upside down.](/images/com.apple.accelerate/media-3682698@2x.png)
+![Two variations of the same photograph of a rocky landscape. The second image is vertically reflected so that it appears upside down.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682698@2x.png)
 
 The destination buffer you pass to the vImage reflect functions needs to be the same size as the source buffer. The code below uses a precondition to ensure that both buffer sizes match:
 
@@ -57,13 +58,13 @@ void verticalReflectBuffer(const vImage_Buffer *source,
 }
 ```
 
-To learn more about reflection functions, see [`Image reflection`](image-reflection.md).
+To learn more about reflection functions, see [Image reflection](./image-reflection.md).
 
-##### Shear a Vimage Buffer
+##### Shear a vImage buffer
 
-The vImage shear functions scale and offset an image in one dimension. These functions accept a resampling filter that you use for fine control over the resampling algorithm. For more information on resampling, see [`Reducing artifacts with custom resampling filters`](reducing-artifacts-with-custom-resampling-filters.md).
+The vImage shear functions scale and offset an image in one dimension. These functions accept a resampling filter that you use for fine control over the resampling algorithm. For more information on resampling, see [Reducing artifacts with custom resampling filters](./reducing-artifacts-with-custom-resampling-filters.md).
 
-![A sheared photograph of flowers. The image appears as a diagonal stripe across its background.](/images/com.apple.accelerate/media-3682695@2x.png)
+![A sheared photograph of flowers. The image appears as a diagonal stripe across its background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682695@2x.png)
 
 Control the amount of shear by specifying the `shearSlope` parameter. The functions define the shear slope as `deltaᵧ/deltaₓ` that’s the slope for a linear function `y = slope * x`. The `verticalShearBuffer(source:destination:byAngleInDegrees:verticalScale:backgroundColor:)` function accepts the shear as an angle in degrees and performs the transform.
 
@@ -157,15 +158,15 @@ verticalShearBuffer(source: sourceImageBuffer,
 
 On return, the destination buffer contains the image below:
 
-![A sheared photograph of a rocky landscape. The image appears as a diagonal stripe across its background.](/images/com.apple.accelerate/media-3682697@2x.png)
+![A sheared photograph of a rocky landscape. The image appears as a diagonal stripe across its background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682697@2x.png)
 
-To learn more about shearing functions, see [`Image shearing`](image-shearing.md).
+To learn more about shearing functions, see [Image shearing](./image-shearing.md).
 
-##### Rotate a Vimage Buffer By Multiples of 90%c2%b0
+##### Rotate a vImage buffer by multiples of 90°
 
 The vImage library provides 90° rotation functions that perform a simple 0°, 90°, 180°, or 270° rotation of an image around its center. The image below shows a buffer’s contents without any rotation, rotated 90° counterclockwise, rotated 180°, and rotated 90° clockwise:
 
-![Four variations of a photograph of a flower, rotated in 90 degree counterclockwise increments.](/images/com.apple.accelerate/media-3682700@2x.png)
+![Four variations of a photograph of a flower, rotated in 90 degree counterclockwise increments.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682700@2x.png)
 
 Note that the 90° and 270° rotations don’t rotate around the true center of the image when the parity (that is, whether an integer is even or odd) of the source width and destination height don’t match. The same is true if the parity of the source height and destination width don’t match.
 
@@ -261,13 +262,13 @@ vImage_Buffer *rotateNinety(const vImage_Buffer *source, int rotation) {
 }
 ```
 
-To learn more about rotation functions, see [`Image rotation`](image-rotation.md).
+To learn more about rotation functions, see [Image rotation](./image-rotation.md).
 
-##### Rotate a Vimage Buffer By an Arbitrary Angle
+##### Rotate a vImage buffer by an arbitrary angle
 
 The vImage library provides rotation functions that rotate an image by any angle around its center. The image below shows a buffer rotated 60° counterclockwise:
 
-![A rotated photograph of some squashes.](/images/com.apple.accelerate/media-3682702@2x.png)
+![A rotated photograph of some squashes.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682702@2x.png)
 
 The function below rotates a buffer by the specified angle and writes the result to the destination:
 
@@ -313,13 +314,13 @@ void rotateBuffer(const vImage_Buffer *source,
 }
 ```
 
-##### Scale a Vimage Buffer
+##### Scale a vImage buffer
 
 The vImage library provides functions to scale the contents of an image buffer. The scaling can either be uniform, where the operation preserves the image’s aspect ratio, or nonuniform, where the operation stretches or condenses the image. The image below shows four scaled versions of the same photograph, with the second and third image scaled nonuniformly:
 
-![Four variations of a scaled photograph of flowers.](/images/com.apple.accelerate/media-3682710@2x.png)
+![Four variations of a scaled photograph of flowers.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682710@2x.png)
 
-The vImage scale functions accept source and destination buffers as parameters and rescale the source to fill the destination buffer. The function below wraps [`vImageScale_ARGB8888(_:_:_:_:)`](vimagescale_argb8888(_:_:_:_:).md) to provide a simple interface to the scale operation:
+The vImage scale functions accept source and destination buffers as parameters and rescale the source to fill the destination buffer. The function below wraps [`vImageScale_ARGB8888(_:_:_:_:)`](./vimagescale_argb8888%28_,_,_,_%29.md) to provide a simple interface to the scale operation:
 
 **Swift**:
 
@@ -348,25 +349,25 @@ void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
 }
 ```
 
-To learn more about scaling functions, see [`Image scaling`](image-scaling.md).
+To learn more about scaling functions, see [Image scaling](./image-scaling.md).
 
-##### Apply a Simple Affine Transformation to a Vimage Buffer
+##### Apply a simple affine transformation to a vImage buffer
 
 Use an affine transformation to apply composite transformation, such as a scale and a translate.
 
 A 3-by-3 matrix represents an affine transformation.
 
-![A 3-by-3 matrix.](/images/com.apple.accelerate/media-3682473@2x.png)
+![A 3-by-3 matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682473@2x.png)
 
-Because the third column is always `(0,0,1)`, the [`vImage_CGAffineTransform`](vimage_cgaffinetransform.md) data structure contains values for only the first two columns.
+Because the third column is always `(0,0,1)`, the [`vImage_CGAffineTransform`](./vimage_cgaffinetransform.md) data structure contains values for only the first two columns.
 
 To perform a scale transformation, set the *a* and *d* parameters of the matrix to the required scale.
 
-![A 3-by-3 matrix for scaling.](/images/com.apple.accelerate/media-3682474@2x.png)
+![A 3-by-3 matrix for scaling.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682474@2x.png)
 
 To perform the translate transformation, set the *tx* and *ty* parameters of the matrix to the required offset.
 
-![A 3 by 3 matrix for translation.](/images/com.apple.accelerate/media-3682475@2x.png)
+![A 3 by 3 matrix for translation.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682475@2x.png)
 
 The `scaleAndCenterBuffer(source:destination:to:backgroundColor:)` function accepts a scale parameter and sets that parameter as the *a* and *d* parameters of the matrix.
 
@@ -445,15 +446,15 @@ void scaleAndCenterBuffer(const vImage_Buffer *source,
 
 The image below shows the result of applying `scaleAndCenterBuffer(_:to:backgroundColor:)` with a scale of `0.25`:
 
-![A photograph of flowers that is scaled down against a colored background.](/images/com.apple.accelerate/media-3682477@2x.png)
+![A photograph of flowers that is scaled down against a colored background.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682477@2x.png)
 
-To learn more about affine transformation functions, see [`Applying affine transformations to images`](applying-affine-transformations-to-images.md).
+To learn more about affine transformation functions, see [Applying affine transformations to images](./applying-affine-transformations-to-images.md).
 
-##### Apply a Complex Affine Transformation to a Vimage Buffer
+##### Apply a complex affine transformation to a vImage buffer
 
-For complex transformations, [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) allows you to concatenate a series of transformations. For example, to rotate and scale an image to fit within its unrotated bounding box, your code needs to translate, rotate, scale, and translate again.
+For complex transformations, [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) allows you to concatenate a series of transformations. For example, to rotate and scale an image to fit within its unrotated bounding box, your code needs to translate, rotate, scale, and translate again.
 
-The `rotateAndScaleBuffer(source:destination:byAngleInDegrees:backgroundColor:)` function uses [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to build the matrix required to rotate and scale an image to fit inside the bounding box of the destination buffer.
+The `rotateAndScaleBuffer(source:destination:byAngleInDegrees:backgroundColor:)` function uses [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) to build the matrix required to rotate and scale an image to fit inside the bounding box of the destination buffer.
 
 **Swift**:
 
@@ -556,9 +557,9 @@ void rotateAndScaleBuffer(const vImage_Buffer *source,
 
 The image below shows the result of applying `rotateAndScaleBuffer(_:byAngleInDegrees:backgroundColor:)` with an angle of 30°:
 
-![A rotated photograph of flowers that is scaled down to fit within its bounding box.](/images/com.apple.accelerate/media-3682479@2x.png)
+![A rotated photograph of flowers that is scaled down to fit within its bounding box.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682479@2x.png)
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 The vImage rotate, scale, and affine transform functions use multiple-pass algorithms that save intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional, temporary storage.
 
@@ -591,7 +592,7 @@ void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
 }
 ```
 
-In cases where your code calls the function frequently (for example, when processing video), create and manage this temporary buffer yourself and reuse it across function calls. Reusing a buffer avoids vImage allocating the temporary storage with each call. Pass [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) to your geometry function to calculate the size, in bytes, of the temporary buffer, and use that value to allocate an [`UnsafeMutableRawPointer`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer) structure.
+In cases where your code calls the function frequently (for example, when processing video), create and manage this temporary buffer yourself and reuse it across function calls. Reusing a buffer avoids vImage allocating the temporary storage with each call. Pass [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) to your geometry function to calculate the size, in bytes, of the temporary buffer, and use that value to allocate an [`UnsafeMutableRawPointer`](../Swift/unsafemutablerawpointer.md) structure.
 
 The version of the `scaleBuffer()` function below shows an example of creating a temporary buffer:
 
@@ -655,23 +656,24 @@ void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
 
 ## See Also
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+### Image Processing Essentials
+- [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
   Pass image data between Core Graphics and vImage to create and manipulate images.
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md)
   Initialize vImage buffers from Core Graphics images.
-- [Creating a Core Graphics Image from a vImage Buffer](creating-a-core-graphics-image-from-a-vimage-buffer.md)
+- [Creating a Core Graphics Image from a vImage Buffer](./creating-a-core-graphics-image-from-a-vimage-buffer.md)
   Create displayable representations of vImage buffers.
-- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md)
   Resize an image with vImage.
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
   Combine two images by using blend modes to create a single output.
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md)
   Limit the effect of vImage operations to rectangular regions of interest.
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
   Improve your app’s performance by converting image buffer formats from interleaved to planar.
-- [vImage](vimage-library.md)
+- [vImage](./vimage-library.md)
   Manipulate large images using the CPU’s vector processor.
 
 

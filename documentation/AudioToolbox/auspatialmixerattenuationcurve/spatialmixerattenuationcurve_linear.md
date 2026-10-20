@@ -1,15 +1,16 @@
 # AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Linear
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 case spatialMixerAttenuationCurve_Linear
 ```
 
+```c
+kSpatialMixerAttenuationCurve_Linear
+```
+
 ## See Also
 
-- [AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Exponential](auspatialmixerattenuationcurve/spatialmixerattenuationcurve_exponential.md)
-- [AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Inverse](auspatialmixerattenuationcurve/spatialmixerattenuationcurve_inverse.md)
-- [AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Power](auspatialmixerattenuationcurve/spatialmixerattenuationcurve_power.md)
+### Constants
+- [AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Exponential](./spatialmixerattenuationcurve_exponential.md)
+- [AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Inverse](./spatialmixerattenuationcurve_inverse.md)
+- [AUSpatialMixerAttenuationCurve.spatialMixerAttenuationCurve_Power](./spatialmixerattenuationcurve_power.md)
 
 
 ---

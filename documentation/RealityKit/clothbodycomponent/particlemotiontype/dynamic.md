@@ -1,7 +1,8 @@
 # dynamic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Dynamic particles are moved exclusively by the simulation, and ignore changes to the entity transform.
 

@@ -1,14 +1,15 @@
 # kBluetoothAMPManagerDiscoverResponseControllerStatusNoCapacity
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothAMPManagerDiscoverResponseControllerStatusNoCapacity = 0x02
 ```
 

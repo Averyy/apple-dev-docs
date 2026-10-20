@@ -1,7 +1,8 @@
 # partCount
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of parts (all parts) in the hvgl table
 

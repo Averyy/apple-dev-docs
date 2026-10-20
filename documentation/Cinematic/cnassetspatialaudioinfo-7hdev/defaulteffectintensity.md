@@ -1,14 +1,15 @@
 # defaultEffectIntensity
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 default effect intensity value as provided by the system. Supported range is [0.0-1.0]
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 - tvOS 26.0+
 

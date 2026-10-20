@@ -1,7 +1,8 @@
 # SKOverlay.Position.bottomRaised
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the overlay is at a raised position at the bottom of the screen.
 
@@ -17,13 +18,18 @@ Specifies that the overlay is at a raised position at the bottom of the screen.
 case bottomRaised
 ```
 
+```c
+SKOverlayPositionBottomRaised
+```
+
 #### Discussion
 
-Use this position in case your app uses a [`UITabBar`](https://developer.apple.com/documentation/uikit/uitabbar).
+Use this position in case your app uses a [`UITabBar`](../../../UIKit/uitabbar.md).
 
 ## See Also
 
-- [SKOverlay.Position.bottom](skoverlay/position/bottom.md)
+### Describing the Overlay’s Position
+- [SKOverlay.Position.bottom](./bottom.md)
   Specifies that the overlay is at the bottom of the screen.
 
 

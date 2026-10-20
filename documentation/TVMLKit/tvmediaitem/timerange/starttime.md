@@ -1,12 +1,15 @@
 # startTime
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time in a media item that determines when a time range begins.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The time in a media item that determines when a time range begins.
 var startTime: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval startTime;
+```
+
 ## See Also
 
-- [var endTime: TimeInterval](tvmediaitem/timerange/endtime.md)
+### Defining the Time Range
+- [var endTime: TimeInterval](./endtime.md)
   The time in a media item that determines when a time range ends.
-- [var duration: TimeInterval](tvmediaitem/timerange/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration of a time range in a media item.
 
 

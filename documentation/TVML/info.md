@@ -27,35 +27,36 @@ The `info` element displays displays grouped sets of data in either table or lis
 </infoList>
 ```
 
-##### Subelements of Info
+##### Subelements of info
 
-- [`button`](button.md)
-- [`description`](description.md)
-- [`header`](header.md)
-- [`row`](row.md)
-- [`text`](text.md)
+- [button](./button.md)
+- [description](./description.md)
+- [header](./header.md)
+- [row](./row.md)
+- [text](./text.md)
 
-##### Elements That Use Info
+##### Elements that Use info
 
-- [`infoList`](infolist.md)
-- [`infoTable`](infotable.md)
+- [infoList](./infolist.md)
+- [infoTable](./infotable.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [tv-line-spacing](tv-line-spacing.md)
+- [tv-line-spacing](./tv-line-spacing.md)
   Specifies the amount of space between lines of text.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [productInfo](productinfo.md)
+### General Information Elements
+- [productInfo](./productinfo.md)
   Contains general information about a product.
 
 

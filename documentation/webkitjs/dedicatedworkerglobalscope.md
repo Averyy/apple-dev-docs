@@ -1,7 +1,8 @@
 # DedicatedWorkerGlobalScope
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface DedicatedWorkerGlobalScope
 ```
 
 ## Topics
 
 ### Instance Properties
-- [onmessage](dedicatedworkerglobalscope/1633794-onmessage.md)
+- [onmessage](./dedicatedworkerglobalscope/api-1633794-onmessage.md)
 ### Instance Methods
-- [postMessage](dedicatedworkerglobalscope/1633534-postmessage.md)
+- [postMessage](./dedicatedworkerglobalscope/api-1633534-postmessage.md)
 
 ## Relationships
 
 ### Inherits From
-- [WorkerGlobalScope](workerglobalscope.md)
+- [WorkerGlobalScope](./workerglobalscope.md)
 
 
 ---

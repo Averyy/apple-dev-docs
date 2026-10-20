@@ -1,7 +1,8 @@
 # GetLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the length of the memory block in bytes.
 
@@ -11,11 +12,11 @@ Returns the length of the memory block in bytes.
 
 ## Declaration
 
-```swift
+```c
 uint64_t GetLength(void);
 ```
 
-#### Return_value
+#### Return Value
 
 The number of bytes in the memory block.
 
@@ -25,9 +26,10 @@ The length represents the number of bytes that are accessible to the current pro
 
 ## See Also
 
-- [- GetAddress](iomemorymap/3180656-getaddress.md)
+### Getting the Map Attributes
+- [- GetAddress](./api-3180656-getaddress.md)
   Returns the address of the memory block.
-- [- GetOffset](iomemorymap/3438204-getoffset.md)
+- [- GetOffset](./api-3438204-getoffset.md)
   Returns the offset from the original start of the memory block.
 
 

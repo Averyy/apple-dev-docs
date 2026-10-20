@@ -1,7 +1,8 @@
 # selectableMediaSelectionOptions(in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the media selection options in the specified media selection group that can produce content.
 
@@ -18,6 +19,10 @@ Returns the media selection options in the specified media selection group that 
 
 ```swift
 func selectableMediaSelectionOptions(in mediaSelectionGroup: AVMediaSelectionGroup) -> [AVMediaSelectionOption]
+```
+
+```objc
+- (NSArray<AVMediaSelectionOption *> *) selectableMediaSelectionOptionsInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
 #### Return Value

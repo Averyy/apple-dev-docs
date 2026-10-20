@@ -1,7 +1,8 @@
 # windowForSharingRequest(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Method called to get the window to share once sharing is confirmed, after a request is initiated by requestSharingOfWindowUsingPreview:title:completionHandler:. Implement this on the delegate of the requesting window
 
@@ -13,6 +14,10 @@ Method called to get the window to share once sharing is confirmed, after a requ
 ```swift
 @MainActor
 optional func windowForSharingRequest(from window: NSWindow) -> NSWindow?
+```
+
+```objc
+- (NSWindow *) windowForSharingRequestFromWindow:(NSWindow *) window;
 ```
 
 

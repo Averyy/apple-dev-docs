@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source to return an app entity identifier for a particular item in the outline view.
@@ -24,6 +25,12 @@ The app entity identifier for the item at the specified location in the outline 
 
 - `outlineView`: The outline-view object asking for the app entity identifier.
 - `item`: The specified item in the outline view.
+
+## Default Implementations
+
+### NSTableViewAppIntentsDataSource Implementations
+- [func outlineView(NSOutlineView, appEntityIdentifierFor: Any?) -> EntityIdentifier?](./outlineview%28_,appentityidentifierfor%29-9r6op.md)
+  Asks the data source to return an app entity identifier for a particular item in the outline view.
 
 
 ---

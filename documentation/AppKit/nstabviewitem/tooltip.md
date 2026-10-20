@@ -1,7 +1,8 @@
 # toolTip
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the tooltip displayed for the tab view item.
 
@@ -12,6 +13,10 @@ Sets the tooltip displayed for the tab view item.
 
 ```swift
 var toolTip: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * toolTip;
 ```
 
 ## Parameters

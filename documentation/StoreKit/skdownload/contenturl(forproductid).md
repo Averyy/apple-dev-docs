@@ -1,13 +1,16 @@
 # contentURL(forProductID:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the local location for the previously downloaded flie.
 
 **Availability**:
-- Mac Catalyst 13.0+
-- macOS 10.8+
+- Mac Catalyst 13.0+ - Deprecated in 16.0
+- macOS 10.8+ - Deprecated in 13.0
+
+> **Deprecated**: Hosted content is no longer supported.
 
 ## Declaration
 
@@ -15,9 +18,13 @@ Returns the local location for the previously downloaded flie.
 class func contentURL(forProductID productID: String) -> URL?
 ```
 
+```objc
++ (NSURL *) contentURLForProductID:(NSString *) productID;
+```
+
 ## Mentions
 
-- [Unlocking purchased content](unlocking-purchased-content.md)
+- [Unlocking purchased content](../unlocking-purchased-content.md)
 
 #### Return Value
 
@@ -33,7 +40,8 @@ Use this method to locate the content on subsequent launches of your app.
 
 ## See Also
 
-- [class func deleteContent(forProductID: String)](skdownload/deletecontent(forproductid:).md)
+### Managing Downloaded Content
+- [class func deleteContent(forProductID: String)](./deletecontent%28forproductid%29.md)
   Deletes the previously downloaded file.
 
 

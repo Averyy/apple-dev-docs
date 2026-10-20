@@ -1,7 +1,8 @@
 # panel(_:didSelect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 `NSSavePanel`: Optional — Sent when the user changes the current type. `NSOpenPanel`: Not sent.
 
@@ -13,6 +14,10 @@
 ```swift
 @MainActor
 optional func panel(_ sender: Any, didSelect type: UTType?)
+```
+
+```objc
+- (void) panel:(id) sender didSelectType:(UTType *) type;
 ```
 
 

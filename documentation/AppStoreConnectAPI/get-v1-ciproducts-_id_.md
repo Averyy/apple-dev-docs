@@ -1,7 +1,8 @@
 # Read xcode cloud product information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific Xcode Cloud product.
 
@@ -16,7 +17,7 @@ The example request below retrieves information about a specific Xcode Cloud pro
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.comv1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469
 ```
 
@@ -82,33 +83,59 @@ GET https://api.appstoreconnect.apple.comv1/ciProducts/1987a0d5-a64d-4799-b7d2-a
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Products resource.
+
+### Query Parameters
+
 - `fields[ciProducts]` ([string]): Additional fields to include for each Products resource returned by the response.
+
+  **Allowed Values**: `name`, `createdDate`, `productType`, `app`, `bundleId`, `workflows`, `primaryRepositories`, `additionalRepositories`, `buildRuns`
 - `fields[scmRepositories]` ([string]): Additional fields to include for each Products resource returned by the response.
+
+  **Allowed Values**: `lastAccessedDate`, `httpCloneUrl`, `sshCloneUrl`, `ownerName`, `repositoryName`, `scmProvider`, `defaultBranch`, `gitReferences`, `pullRequests`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `app`, `bundleId`, `primaryRepositories`
 - `limit[primaryRepositories]` (integer): The number of included Products resources to return if the primary repositories relationship is included.
+
+  **Maximum**: `50`
 - `fields[apps]` ([string]): Additional fields to include for each Products resource returned by the response.
-- `fields[bundleIds]` ([string])
+
+  **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
+- `fields[bundleIds]` ([string]): **Allowed Values**: `name`, `platform`, `identifier`, `seedId`, `profiles`, `bundleIdCapabilities`, `app`
+
+## Responses
+
+- `200` OK (`CiProductResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all xcode cloud products](get-v1-ciproducts.md)
+### Getting Xcode Cloud Products
+- [List all xcode cloud products](./get-v1-ciproducts.md)
   Get a list of all products you created in Xcode Cloud.
-- [List all additional repositories for an xcode cloud product](get-v1-ciproducts-_id_-additionalrepositories.md)
+- [List all additional repositories for an xcode cloud product](./get-v1-ciproducts-_id_-additionalrepositories.md)
   List all additional Git repositories you associated with an Xcode Cloud product.
-- [List additional repository IDs for a CI product](get-v1-ciproducts-_id_-relationships-additionalrepositories.md)
-- [Read app information for an xcode cloud product](get-v1-ciproducts-_id_-app.md)
+- [List additional repository IDs for a CI product](./get-v1-ciproducts-_id_-relationships-additionalrepositories.md)
+- [Read app information for an xcode cloud product](./get-v1-ciproducts-_id_-app.md)
   Get the app in App Store Connect that’s related to an Xcode Cloud product.
-- [Get the app ID for a CI product](get-v1-ciproducts-_id_-relationships-app.md)
-- [List all xcode cloud builds for an xcode cloud product](get-v1-ciproducts-_id_-buildruns.md)
+- [Get the app ID for a CI product](./get-v1-ciproducts-_id_-relationships-app.md)
+- [List all xcode cloud builds for an xcode cloud product](./get-v1-ciproducts-_id_-buildruns.md)
   List all builds Xcode Cloud performed for a specific product.
-- [List build run IDs for a CI product](get-v1-ciproducts-_id_-relationships-buildruns.md)
-- [List all primary git repositories for an xcode cloud product](get-v1-ciproducts-_id_-primaryrepositories.md)
+- [List build run IDs for a CI product](./get-v1-ciproducts-_id_-relationships-buildruns.md)
+- [List all primary git repositories for an xcode cloud product](./get-v1-ciproducts-_id_-primaryrepositories.md)
   List all primary Git repositories for a specific Xcode Cloud product.
-- [List primary repository IDs for a CI product](get-v1-ciproducts-_id_-relationships-primaryrepositories.md)
-- [List all workflows for an xcode cloud product](get-v1-ciproducts-_id_-workflows.md)
+- [List primary repository IDs for a CI product](./get-v1-ciproducts-_id_-relationships-primaryrepositories.md)
+- [List all workflows for an xcode cloud product](./get-v1-ciproducts-_id_-workflows.md)
   List all workflows for a specific Xcode Cloud product.
-- [List workflow IDs for a CI product](get-v1-ciproducts-_id_-relationships-workflows.md)
-- [Read the xcode cloud product for an app](get-v1-apps-_id_-ciproduct.md)
+- [List workflow IDs for a CI product](./get-v1-ciproducts-_id_-relationships-workflows.md)
+- [Read the xcode cloud product for an app](./get-v1-apps-_id_-ciproduct.md)
   Get the Xcode Cloud product information for an app you build with Xcode Cloud.
 
 

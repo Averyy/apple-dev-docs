@@ -1,7 +1,8 @@
 # init(radius:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a circular obstacle with the specified radius.
 
@@ -19,6 +20,10 @@ Initializes a circular obstacle with the specified radius.
 init(radius: Float)
 ```
 
+```objc
+- (instancetype) initWithRadius:(float) radius;
+```
+
 #### Return Value
 
 A circular obstacle.
@@ -27,7 +32,7 @@ A circular obstacle.
 
 To make agents avoid the obstacle, create a goal with the goalToAvoidObstacles:timeBeforeCollisionToAvoid: method.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

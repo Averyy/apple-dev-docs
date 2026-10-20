@@ -1,7 +1,8 @@
 # default
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default customization behavior.
 
@@ -26,9 +27,10 @@ Items with this behavior start in the toolbar and can be moved or removed from t
 
 ## See Also
 
-- [static var disabled: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/disabled.md)
+### Getting customization behaviors
+- [static var disabled: ToolbarCustomizationBehavior](./disabled.md)
   The disabled customization behavior.
-- [static var reorderable: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/reorderable.md)
+- [static var reorderable: ToolbarCustomizationBehavior](./reorderable.md)
   The reorderable customization behavior.
 
 

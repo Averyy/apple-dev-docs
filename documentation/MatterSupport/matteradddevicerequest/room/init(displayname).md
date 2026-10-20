@@ -1,7 +1,8 @@
 # init(displayName:)
 
 **Framework**: MatterSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new room.
 
@@ -10,7 +11,7 @@ Creates a new room.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ init(displayName: String)
 
 ## See Also
 
-- [init(from: any Decoder) throws](matteradddevicerequest/init(from:).md)
+### Creating the room
+- [init(from: any Decoder) throws](../init%28from%29.md)
   Create the request from a decoder.
 
 

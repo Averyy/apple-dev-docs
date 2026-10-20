@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,7 +16,8 @@ func sendMessageUnreliably(_ message: Data, to: Set<Self.Peer>, completion: @esc
 
 ## See Also
 
-- [func sendMessage(Data, to: Set<Self.Peer>, completion: (TabletopSendMessageResult) -> Void)](tabletopnetworksessioncoordinator/sendmessage(_:to:completion:).md)
+### Sending messages between peers
+- [func sendMessage(Data, to: Set<Self.Peer>, completion: (TabletopSendMessageResult) -> Void)](./sendmessage%28_,to,completion%29.md)
 
 
 ---

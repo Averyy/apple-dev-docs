@@ -1,7 +1,8 @@
 # prefersScrollingExpandsWhenScrolledToEdge
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether scrolling expands the sheet to a larger detent.
 
@@ -16,15 +17,20 @@ A Boolean value that determines whether scrolling expands the sheet to a larger 
 var prefersScrollingExpandsWhenScrolledToEdge: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL prefersScrollingExpandsWhenScrolledToEdge;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which means if the sheet can expand to a larger detent than [`selectedDetentIdentifier`](uisheetpresentationcontroller/selecteddetentidentifier.md), scrolling up in the sheet increases its detent instead of scrolling the sheet’s content. After the sheet reaches its largest detent, scrolling begins.
+The default value is [`true`](../../Swift/true.md), which means if the sheet can expand to a larger detent than [`selectedDetentIdentifier`](./selecteddetentidentifier.md), scrolling up in the sheet increases its detent instead of scrolling the sheet’s content. After the sheet reaches its largest detent, scrolling begins.
 
-Set this value to [`false`](https://developer.apple.com/documentation/swift/false) if you want to avoid letting a scroll gesture expand the sheet. For example, you can set this value on a nonmodal sheet to avoid obscuring the content underneath the sheet.
+Set this value to [`false`](../../Swift/false.md) if you want to avoid letting a scroll gesture expand the sheet. For example, you can set this value on a nonmodal sheet to avoid obscuring the content underneath the sheet.
 
 ## See Also
 
-- [var largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier?](uisheetpresentationcontroller/largestundimmeddetentidentifier.md)
+### Managing user interaction
+- [var largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier?](./largestundimmeddetentidentifier.md)
   The largest detent that doesn’t dim the view underneath the sheet.
 
 

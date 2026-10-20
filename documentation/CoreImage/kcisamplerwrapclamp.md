@@ -1,7 +1,8 @@
 # kCISamplerWrapClamp
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Coordinates are clamped to the extent.
 
@@ -19,13 +20,18 @@ Coordinates are clamped to the extent.
 let kCISamplerWrapClamp: String
 ```
 
+```c
+extern NSString * const kCISamplerWrapClamp;
+```
+
 ## See Also
 
-- [let kCISamplerWrapBlack: String](kcisamplerwrapblack.md)
+### Constants
+- [let kCISamplerWrapBlack: String](./kcisamplerwrapblack.md)
   Pixels are transparent black.
-- [let kCISamplerFilterNearest: String](kcisamplerfilternearest.md)
+- [let kCISamplerFilterNearest: String](./kcisamplerfilternearest.md)
   Nearest neighbor sampling.
-- [let kCISamplerFilterLinear: String](kcisamplerfilterlinear.md)
+- [let kCISamplerFilterLinear: String](./kcisamplerfilterlinear.md)
   Bilinear interpolation.
 
 

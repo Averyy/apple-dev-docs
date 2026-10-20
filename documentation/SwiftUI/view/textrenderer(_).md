@@ -1,7 +1,8 @@
 # textRenderer(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new view such that any text views within it will use `renderer` to draw themselves.
 
@@ -31,13 +32,14 @@ A new view that will use `renderer` to draw its text views.
 
 ## See Also
 
-- [Creating visual effects with SwiftUI](creating-visual-effects-with-swiftui.md)
+### Rendering text
+- [Creating visual effects with SwiftUI](../creating-visual-effects-with-swiftui.md)
   Add scroll effects, rich color treatments, custom transitions, and advanced effects using shaders and a text renderer.
-- [protocol TextAttribute](textattribute.md)
+- [protocol TextAttribute](../textattribute.md)
   A value that you can attach to text views and that text renderers can query.
-- [protocol TextRenderer](textrenderer.md)
+- [protocol TextRenderer](../textrenderer.md)
   A value that can replace the default text view rendering behavior.
-- [struct TextProxy](textproxy.md)
+- [struct TextProxy](../textproxy.md)
   A proxy for a text view that custom text renderers use.
 
 

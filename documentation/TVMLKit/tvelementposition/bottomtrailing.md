@@ -1,17 +1,24 @@
 # TVElementPosition.bottomTrailing
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Position the element in the bottom-trailing edge of the containing element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 case bottomTrailing
+```
+
+```c
+TVElementPositionBottomTrailing
 ```
 
 #### Discussion
@@ -20,35 +27,36 @@ For left-to-right languages, the trailing edge is the right edge. For right-to-l
 
 ## See Also
 
-- [TVElementPosition.undefined](tvelementposition/undefined.md)
+### Constants
+- [TVElementPosition.undefined](./undefined.md)
   The position has not been defined.
-- [TVElementPosition.center](tvelementposition/center.md)
+- [TVElementPosition.center](./center.md)
   Position the element in the center of its containing element.
-- [TVElementPosition.top](tvelementposition/top.md)
+- [TVElementPosition.top](./top.md)
   Position the element at the top of the containing element.
-- [TVElementPosition.bottom](tvelementposition/bottom.md)
+- [TVElementPosition.bottom](./bottom.md)
   Position the element at the bottom of the containing element.
-- [TVElementPosition.left](tvelementposition/left.md)
+- [TVElementPosition.left](./left.md)
   Position the element along the left side of the containing element.
-- [TVElementPosition.right](tvelementposition/right.md)
+- [TVElementPosition.right](./right.md)
   Position the element along the right side of the containing element.
-- [TVElementPosition.topLeft](tvelementposition/topleft.md)
+- [TVElementPosition.topLeft](./topleft.md)
   Position the element in the top-left of the containing element.
-- [TVElementPosition.topRight](tvelementposition/topright.md)
+- [TVElementPosition.topRight](./topright.md)
   Position the element in the top-right of the containing element.
-- [TVElementPosition.bottomLeft](tvelementposition/bottomleft.md)
+- [TVElementPosition.bottomLeft](./bottomleft.md)
   Position the element in the bottom-left of the containing element.
-- [TVElementPosition.bottomRight](tvelementposition/bottomright.md)
+- [TVElementPosition.bottomRight](./bottomright.md)
   Position the element in the bottom-right of the containing element.
-- [TVElementPosition.header](tvelementposition/header.md)
+- [TVElementPosition.header](./header.md)
   Position the element in the header area of the containing element.
-- [TVElementPosition.footer](tvelementposition/footer.md)
+- [TVElementPosition.footer](./footer.md)
   Position the element in the footer area of the containing element.
-- [TVElementPosition.leading](tvelementposition/leading.md)
+- [TVElementPosition.leading](./leading.md)
   Position the element in the leading edge of the containing element.
-- [TVElementPosition.trailing](tvelementposition/trailing.md)
+- [TVElementPosition.trailing](./trailing.md)
   Position the element in the trailing edge of the containing element.
-- [TVElementPosition.topLeading](tvelementposition/topleading.md)
+- [TVElementPosition.topLeading](./topleading.md)
   Position the element in the top-leading edge of the containing element.
 
 

@@ -1,18 +1,19 @@
 # InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Offers.Discounts
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Offers.Discounts
 ```
 
 ## Properties
 
 - `billingPlanType` (string)
-- `modeType` (string)
+- `modeType` (string): **Allowed Values**: `FreeTrial`, `PayAsYouGo`, `PayUpFront`, `PayUpFrontSeasonPass`
 - `numOfPeriods` (int32)
 - `price` (number)
 - `priceFormatted` (string)

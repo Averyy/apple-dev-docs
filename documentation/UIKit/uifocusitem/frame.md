@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The geometric frame of the item.
@@ -19,9 +20,13 @@ The geometric frame of the item.
 var frame: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect frame;
+```
+
 #### Discussion
 
-The item’s frame must be expressed in the coordinate space of the [`UIFocusItemContainer`](uifocusitemcontainer.md) that contains it.
+The item’s frame must be expressed in the coordinate space of the [`UIFocusItemContainer`](../uifocusitemcontainer.md) that contains it.
 
 
 ---

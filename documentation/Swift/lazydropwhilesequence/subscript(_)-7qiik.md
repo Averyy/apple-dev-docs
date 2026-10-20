@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous subrange of the collection’s elements.
 
@@ -20,6 +21,8 @@ Accesses a contiguous subrange of the collection’s elements.
 subscript(bounds: Range<Self.Index>) -> Slice<Self> { get }
 ```
 
+Available when `SubSequence` is `Slice<Self>`.
+
 #### Overview
 
 The accessed slice uses the same indices for the same elements as the original collection. Always use the slice’s `startIndex` property instead of assuming that its indices start at a particular value.
@@ -37,7 +40,7 @@ print(streets[index!])
 // Prints "Evarts"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

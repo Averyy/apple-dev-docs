@@ -1,7 +1,8 @@
 # GetClockDomain
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the clock domain value of the clock device.
 
@@ -10,7 +11,7 @@ Gets the clock domain value of the clock device.
 
 ## Declaration
 
-```swift
+```c
 uint32_t GetClockDomain();
 ```
 
@@ -20,7 +21,8 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetClockDomain](iouservideoclockdevice/setclockdomain.md)
+### Working with the clock domain
+- [SetClockDomain](./setclockdomain.md)
   Sets the clock domain value of the clock device.
 
 

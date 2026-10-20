@@ -1,7 +1,8 @@
 # backgroundStyle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional style that overrides the default system background style when set.
 
@@ -22,29 +23,30 @@ var backgroundStyle: AnyShapeStyle? { get set }
 
 ## See Also
 
-- [func border<S>(S, width: CGFloat) -> some View](view/border(_:width:).md)
+### Styling content
+- [func border<S>(S, width: CGFloat) -> some View](../view/border%28_,width%29.md)
   Adds a border to this view with the specified style and width.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](../view/foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](../view/foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](../view/foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+- [func backgroundStyle<S>(S) -> some View](../view/backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](../shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](../anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct Gradient](gradient.md)
+- [struct Gradient](../gradient.md)
   A color gradient represented as an array of color stops, each having a parametric location value.
-- [struct MeshGradient](meshgradient.md)
+- [struct MeshGradient](../meshgradient.md)
   A two-dimensional gradient defined by a 2D grid of positioned colors.
-- [struct AnyGradient](anygradient.md)
+- [struct AnyGradient](../anygradient.md)
   A color gradient.
-- [struct ShadowStyle](shadowstyle.md)
+- [struct ShadowStyle](../shadowstyle.md)
   A style to use when rendering shadows.
-- [struct Glass](glass.md)
+- [struct Glass](../glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

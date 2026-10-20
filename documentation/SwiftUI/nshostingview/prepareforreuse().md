@@ -1,7 +1,8 @@
 # prepareForReuse()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,9 +16,10 @@
 
 ## See Also
 
-- [init(rootView: Content)](nshostingview/init(rootview:).md)
+### Creating a hosting view
+- [init(rootView: Content)](./init%28rootview%29.md)
   Creates a hosting view object that wraps the specified SwiftUI view.
-- [init?(coder: NSCoder)](nshostingview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a hosting view object from the contents of the specified archive.
 
 

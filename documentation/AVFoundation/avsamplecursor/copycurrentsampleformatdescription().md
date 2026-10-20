@@ -1,7 +1,8 @@
 # copyCurrentSampleFormatDescription()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the format description of the sample at the cursor’s current position.
 
@@ -20,39 +21,44 @@ Returns the format description of the sample at the cursor’s current position.
 func copyCurrentSampleFormatDescription() -> CMFormatDescription
 ```
 
+```objc
+- (CMFormatDescriptionRef) copyCurrentSampleFormatDescription;
+```
+
 #### Return Value
 
 The current sample’s format description.
 
 ## See Also
 
-- [var currentChunkInfo: AVSampleCursorChunkInfo](avsamplecursor/currentchunkinfo.md)
+### Getting sample information
+- [var currentChunkInfo: AVSampleCursorChunkInfo](./currentchunkinfo.md)
   A value that provides information about the chunk of samples to which the current sample belongs.
-- [struct AVSampleCursorChunkInfo](avsamplecursorchunkinfo.md)
+- [struct AVSampleCursorChunkInfo](../avsamplecursorchunkinfo.md)
   A value that provides information about a chunk of media samples.
-- [var currentChunkStorageRange: AVSampleCursorStorageRange](avsamplecursor/currentchunkstoragerange.md)
+- [var currentChunkStorageRange: AVSampleCursorStorageRange](./currentchunkstoragerange.md)
   The sample range in the storage container to load together with the current sample as a chunk.
-- [struct AVSampleCursorStorageRange](avsamplecursorstoragerange.md)
+- [struct AVSampleCursorStorageRange](../avsamplecursorstoragerange.md)
   A structure that indicates the offset and length of storage for a media sample or its chunk.
-- [var currentChunkStorageURL: URL?](avsamplecursor/currentchunkstorageurl.md)
+- [var currentChunkStorageURL: URL?](./currentchunkstorageurl.md)
   The URL of the storage container of the current sample and other samples to load in the same operation as a chunk.
-- [var currentSampleDependencyInfo: AVSampleCursorDependencyInfo](avsamplecursor/currentsampledependencyinfo.md)
+- [var currentSampleDependencyInfo: AVSampleCursorDependencyInfo](./currentsampledependencyinfo.md)
   The dependency information that describes relationships between a media sample and other media samples in the same sample sequence.
-- [struct AVSampleCursorDependencyInfo](avsamplecursordependencyinfo.md)
+- [struct AVSampleCursorDependencyInfo](../avsamplecursordependencyinfo.md)
   A value for describing dependencies between a media sample and other media samples in the same sample sequence.
-- [var currentSampleDuration: CMTime](avsamplecursor/currentsampleduration.md)
+- [var currentSampleDuration: CMTime](./currentsampleduration.md)
   The decode duration of the sample at the cursor’s current position.
-- [var currentSampleIndexInChunk: Int64](avsamplecursor/currentsampleindexinchunk.md)
+- [var currentSampleIndexInChunk: Int64](./currentsampleindexinchunk.md)
   The index of the current sample within the chunk to which it belongs.
-- [var currentSampleStorageRange: AVSampleCursorStorageRange](avsamplecursor/currentsamplestoragerange.md)
+- [var currentSampleStorageRange: AVSampleCursorStorageRange](./currentsamplestoragerange.md)
   The offset and length of the current sample in the current chunk storage URL.
-- [var currentSampleSyncInfo: AVSampleCursorSyncInfo](avsamplecursor/currentsamplesyncinfo.md)
+- [var currentSampleSyncInfo: AVSampleCursorSyncInfo](./currentsamplesyncinfo.md)
   The synchronization information for the current sample for consideration when resynchronizing a decoder.
-- [struct AVSampleCursorSyncInfo](avsamplecursorsyncinfo.md)
+- [struct AVSampleCursorSyncInfo](../avsamplecursorsyncinfo.md)
   A structure that describes the attributes of media samples to consider when resynchronizing a decoder.
-- [var currentSampleAudioDependencyInfo: AVSampleCursorAudioDependencyInfo](avsamplecursor/currentsampleaudiodependencyinfo.md)
+- [var currentSampleAudioDependencyInfo: AVSampleCursorAudioDependencyInfo](./currentsampleaudiodependencyinfo.md)
   The independent decodability information for the audio sample.
-- [var currentSampleDependencyAttachments: [AnyHashable : Any]?](avsamplecursor/currentsampledependencyattachments.md)
+- [var currentSampleDependencyAttachments: [AnyHashable : Any]?](./currentsampledependencyattachments.md)
   A dictionary of dependency-related sample buffer attachments.
 
 

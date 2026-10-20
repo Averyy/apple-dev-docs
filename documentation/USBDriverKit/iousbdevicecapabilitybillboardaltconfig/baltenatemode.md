@@ -1,21 +1,23 @@
 # bAltenateMode
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bAltenateMode;
 ```
 
 ## See Also
 
-- [wSVID](iousbdevicecapabilitybillboardaltconfig/wsvid.md)
-- [iAlternateModeString](iousbdevicecapabilitybillboardaltconfig/ialternatemodestring.md)
+### Accessing the Descriptor Properties
+- [wSVID](./wsvid.md)
+- [iAlternateModeString](./ialternatemodestring.md)
 
 
 ---

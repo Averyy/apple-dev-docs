@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture object that provides image data for sampling.
 
@@ -19,15 +20,20 @@ The texture object that provides image data for sampling.
 var texture: MDLTexture? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLTexture * texture;
+```
+
 #### Discussion
 
-A [`MDLTexture`](mdltexture.md) object describes texture image data.
+A [`MDLTexture`](../mdltexture.md) object describes texture image data.
 
 ## See Also
 
-- [var hardwareFilter: MDLTextureFilter?](mdltexturesampler/hardwarefilter.md)
+### Working with Texture Parameters
+- [var hardwareFilter: MDLTextureFilter?](./hardwarefilter.md)
   An object that describes filtering modes for sampling from the texture.
-- [var transform: MDLTransform?](mdltexturesampler/transform.md)
+- [var transform: MDLTransform?](./transform.md)
   The transformation to be applied to texture coordinate data before sampling from the texture.
 
 

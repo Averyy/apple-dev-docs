@@ -1,7 +1,8 @@
 # init(adjacency:tileDefinitions:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new tile group rule with adjacency rules and tile definitions.
 
@@ -18,6 +19,10 @@ Initializes a new tile group rule with adjacency rules and tile definitions.
 
 ```swift
 init(adjacency: SKTileAdjacencyMask, tileDefinitions: [SKTileDefinition])
+```
+
+```objc
+- (instancetype) initWithAdjacency:(SKTileAdjacencyMask) adjacency tileDefinitions:(NSArray<SKTileDefinition *> *) tileDefinitions;
 ```
 
 #### Return Value

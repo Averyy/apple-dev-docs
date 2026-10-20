@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an option set from a sequence of options.
 

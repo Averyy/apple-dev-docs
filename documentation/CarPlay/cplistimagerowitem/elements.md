@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of elements used to draw visible elements.
 
@@ -14,6 +15,10 @@ The array of elements used to draw visible elements.
 
 ```swift
 var elements: [CPListImageRowItemElement] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<CPListImageRowItemElement *> * elements;
 ```
 
 

@@ -1,13 +1,14 @@
 # reserved
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused field reserved for future use.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ An unused field reserved for future use.
 var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+uint8_t reserved[64];
+```
+
 ## See Also
 
-- [var file: UnsafeMutablePointer<es_file_t>](es_event_uipc_connect_t/file.md)
+### Inspecting Event Properties
+- [var file: UnsafeMutablePointer<es_file_t>](./file.md)
   The socket file bound to the socket.
-- [var domain: Int32](es_event_uipc_connect_t/domain.md)
+- [var domain: Int32](./domain.md)
   The communications domain of the socket.
-- [var type: Int32](es_event_uipc_connect_t/type.md)
+- [var type: Int32](./type.md)
   The type of the socket.
-- [var `protocol`: Int32](es_event_uipc_connect_t/protocol.md)
+- [var `protocol`: Int32](./protocol.md)
   The protocol of the socket.
 
 

@@ -1,14 +1,15 @@
 # nd_rd_dst
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct in6_addr nd_rd_dst;
 ```
 

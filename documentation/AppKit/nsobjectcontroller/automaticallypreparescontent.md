@@ -1,12 +1,13 @@
 # automaticallyPreparesContent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that shows whether the receiver automatically creates and inserts new content objects automatically when loading from a nib file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean that shows whether the receiver automatically creates and inserts new 
 var automaticallyPreparesContent: Bool { get set }
 ```
 
+```objc
+@property BOOL automaticallyPreparesContent;
+```
+
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) and the receiver is not using a managed object context, [`prepareContent()`](nsobjectcontroller/preparecontent().md) is used to create the content object. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) and a managed object context is set, the initial content is fetched from the managed object context using the current fetch predicate. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If `flag` is [`true`](../../Swift/true.md) and the receiver is not using a managed object context, [`prepareContent()`](./preparecontent%28%29.md) is used to create the content object. If `flag` is [`true`](../../Swift/true.md) and a managed object context is set, the initial content is fetched from the managed object context using the current fetch predicate. The default is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var content: Any?](nsobjectcontroller/content.md)
+### Managing content
+- [var content: Any?](./content.md)
   The receiver’s content object.
-- [func prepareContent()](nsobjectcontroller/preparecontent.md)
+- [func prepareContent()](./preparecontent%28%29.md)
   Typically overridden by subclasses that require additional control over the creation of new objects.
 
 

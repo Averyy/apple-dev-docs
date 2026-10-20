@@ -1,14 +1,17 @@
 # serviceSubscriberCellularProviders
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains carrier information about each service.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
+- iOS 12.0+ - Deprecated in 16.0
+- iPadOS 12.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+
+> **Deprecated**: Deprecated with no replacement
 
 ## Declaration
 
@@ -16,25 +19,30 @@ A dictionary that contains carrier information about each service.
 var serviceSubscriberCellularProviders: [String : CTCarrier]? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSDictionary<NSString *,CTCarrier *> * serviceSubscriberCellularProviders;
+```
+
 #### Discussion
 
-The keys for the [`serviceSubscriberCellularProviders`](cttelephonynetworkinfo/servicesubscribercellularproviders.md) dictionary are [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which represents a service. Each entry in the dictionary is a [`CTCarrier`](ctcarrier.md) object, which contains information about the subscriber’s home cellular service provider.
+The keys for the [`serviceSubscriberCellularProviders`](./servicesubscribercellularproviders.md) dictionary are [`NSString`](../../Foundation/nsstring.md) objects, each of which represents a service. Each entry in the dictionary is a [`CTCarrier`](../ctcarrier.md) object, which contains information about the subscriber’s home cellular service provider.
 
 > **Note**:  In this context, the “home” provider is the one with which the user has a cellular plan, as opposed to a roaming provider.
 
-Although the actual value of a key isn’t important, you can also use it to get the current radio access technology associated with the service. To do so, pass the key to the [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) dictionary.
+Although the actual value of a key isn’t important, you can also use it to get the current radio access technology associated with the service. To do so, pass the key to the [`serviceCurrentRadioAccessTechnology`](./servicecurrentradioaccesstechnology.md) dictionary.
 
 ## See Also
 
-- [var currentRadioAccessTechnology: String?](cttelephonynetworkinfo/currentradioaccesstechnology.md)
+### Deprecated
+- [var currentRadioAccessTechnology: String?](./currentradioaccesstechnology.md)
   The current radio access technology registered with the device.
-- [var subscriberCellularProvider: CTCarrier?](cttelephonynetworkinfo/subscribercellularprovider.md)
+- [var subscriberCellularProvider: CTCarrier?](./subscribercellularprovider.md)
   Information about the user’s cellular service provider.
-- [var subscriberCellularProviderDidUpdateNotifier: ((CTCarrier) -> Void)?](cttelephonynetworkinfo/subscribercellularproviderdidupdatenotifier.md)
+- [var subscriberCellularProviderDidUpdateNotifier: ((CTCarrier) -> Void)?](./subscribercellularproviderdidupdatenotifier.md)
   A block dispatched when the user’s cellular service provider information changes.
-- [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
+- [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](./servicesubscribercellularprovidersdidupdatenotifier.md)
   A block dispatched when there are updates to the user’s cellular provider information for any service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 
 

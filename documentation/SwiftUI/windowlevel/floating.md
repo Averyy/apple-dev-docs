@@ -1,7 +1,8 @@
 # floating
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Floating window level.
 

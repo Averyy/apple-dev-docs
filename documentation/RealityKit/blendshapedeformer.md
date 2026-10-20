@@ -1,7 +1,8 @@
 # BlendShapeDeformer
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A blend-shape deformation that interpolates between N meshes according to a weighted sum. Consumes information from the `BlendShapeWeightsComponent`
 
@@ -22,25 +23,26 @@ struct BlendShapeDeformer
 ## Topics
 
 ### Initializers
-- [init()](blendshapedeformer/init.md)
+- [init()](./blendshapedeformer/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [MeshDeformer](meshdeformer.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [MeshDeformer](./meshdeformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MeshDeformerComponent](meshdeformercomponent.md)
+### Deformers
+- [struct MeshDeformerComponent](./meshdeformercomponent.md)
   The component that applies mesh deformations to an `Entity`.
-- [protocol MeshDeformer](meshdeformer.md)
+- [protocol MeshDeformer](./meshdeformer.md)
   An interface for all deformation types in a deformation definition, both built-in and custom. The users overrides all functions to implement a custom `MeshDeformer`, and can in general ignore all but the constructors for built-in deformers.
-- [struct SkinningDeformer](skinningdeformer.md)
+- [struct SkinningDeformer](./skinningdeformer.md)
   A deformation that binds a 3D mesh to an underlying skeleton.
 
 

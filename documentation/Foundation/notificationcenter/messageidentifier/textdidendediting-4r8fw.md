@@ -1,7 +1,8 @@
 # textDidEndEditing
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,10 +17,13 @@
 static var textDidEndEditing: NotificationCenter.BaseMessageIdentifier<UITextField.TextDidEndEditingMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UITextField.TextDidEndEditingMessage>`.
+
 ## See Also
 
-- [static var textDidBeginEditing: NotificationCenter.BaseMessageIdentifier<UITextField.TextDidBeginEditingMessage>](notificationcenter/messageidentifier/textdidbeginediting-7lt1k.md)
-- [static var textDidChange: NotificationCenter.BaseMessageIdentifier<UITextField.TextDidChangeMessage>](notificationcenter/messageidentifier/textdidchange-9363k.md)
+### Identifying UIKit text field messages
+- [static var textDidBeginEditing: NotificationCenter.BaseMessageIdentifier<UITextField.TextDidBeginEditingMessage>](./textdidbeginediting-7lt1k.md)
+- [static var textDidChange: NotificationCenter.BaseMessageIdentifier<UITextField.TextDidChangeMessage>](./textdidchange-9363k.md)
 
 
 ---

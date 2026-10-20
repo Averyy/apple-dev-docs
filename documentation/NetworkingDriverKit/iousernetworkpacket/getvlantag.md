@@ -1,14 +1,15 @@
 # getVlanTag
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 bool getVlanTag(uint16_t *vlanTag) const;
 ```
 

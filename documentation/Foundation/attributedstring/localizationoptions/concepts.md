@@ -1,7 +1,8 @@
 # concepts
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inflection concepts for achieving automatic grammar agreement during localization.
 

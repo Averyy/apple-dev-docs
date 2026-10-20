@@ -1,7 +1,8 @@
 # BNNS.ResizeLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer object that wraps a resize filter and manages its deinitialization.
 
@@ -11,8 +12,10 @@ A layer object that wraps a resize filter and manages its deinitialization.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,24 +26,25 @@ class ResizeLayer
 ## Topics
 
 ### Creating a Resize Layer
-- [convenience init?(interpolationMethod: BNNS.InterpolationMethod, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, alignsCorners: Bool, filterParameters: BNNSFilterParameters?)](bnns/resizelayer/init(interpolationmethod:input:output:alignscorners:filterparameters:).md)
+- [convenience init?(interpolationMethod: BNNS.InterpolationMethod, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, alignsCorners: Bool, filterParameters: BNNSFilterParameters?)](./resizelayer/init%28interpolationmethod,input,output,alignscorners,filterparameters%29.md)
   Returns a new resize layer.
 ### Specifying an Interpolation Method
-- [BNNS.InterpolationMethod](bnns/interpolationmethod.md)
+- [BNNS.InterpolationMethod](./interpolationmethod.md)
   Constants that specify interpolation methods for resize operations.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.UnaryLayer](bnns/unarylayer.md)
+- [BNNS.UnaryLayer](./unarylayer.md)
 
 ## See Also
 
-- [struct BNNSInterpolationMethod](bnnsinterpolationmethod.md)
+### Resize layers
+- [struct BNNSInterpolationMethod](../bnnsinterpolationmethod.md)
   Constants that describe interpolation methods.
-- [struct BNNSLayerParametersResize](bnnslayerparametersresize.md)
+- [struct BNNSLayerParametersResize](../bnnslayerparametersresize.md)
   A structure that contains the parameters of a resize layer.
-- [func BNNSFilterCreateLayerResize(UnsafePointer<BNNSLayerParametersResize>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerresize(_:_:).md)
+- [func BNNSFilterCreateLayerResize(UnsafePointer<BNNSLayerParametersResize>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayerresize%28_,_%29.md)
   Returns a new resize layer.
 
 

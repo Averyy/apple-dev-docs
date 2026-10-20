@@ -1,7 +1,8 @@
 # init(blockPredicate:action:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rule whose predicate is evaluated and action is executed through the specified blocks.
 
@@ -19,17 +20,23 @@ Creates a rule whose predicate is evaluated and action is executed through the s
 convenience init(blockPredicate predicate: @escaping (GKRuleSystem) -> Bool, action: @escaping (GKRuleSystem) -> Void)
 ```
 
+```objc
++ (instancetype) ruleWithBlockPredicate:(BOOL (^)(GKRuleSystem *)) predicate action:(void (^)(GKRuleSystem *)) action;
+```
+
 #### Return Value
 
 A new rule object.
 
 #### Discussion
 
-Rules created using this method can run arbitrary code in their predicate and action, but do not encode their predicate or action when archiving with the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class. For archivable rules, use the [`GKRule`](gkrule.md) methods listed in Creating Data-Driven Rules.
+Rules created using this method can run arbitrary code in their predicate and action, but do not encode their predicate or action when archiving with the [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md) class. For archivable rules, use the [`GKRule`](../gkrule.md) methods listed in Creating Data-Driven Rules.
 
 ## Parameters
 
-- `action`: A block to be invoked after the rule’s predicate is satisfied. The block takes a single parameter: - **system**: The rule system in whose context the rule is executing its action.
+- `action`: A block to be invoked after the rule’s predicate is satisfied. The block takes a single parameter:
+
+  - **system**: The rule system in whose context the rule is executing its action.
 
 
 ---

@@ -1,7 +1,8 @@
 # AUDIO_UNIT_VERSION
 
 **Framework**: Audio Unit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var AUDIO_UNIT_VERSION: Int32 { get }
+```
+
+```c
+#define AUDIO_UNIT_VERSION
 ```
 
 

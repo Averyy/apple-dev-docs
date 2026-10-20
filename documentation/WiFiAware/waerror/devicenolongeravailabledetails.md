@@ -1,7 +1,8 @@
 # WAError.DeviceNoLongerAvailableDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the unavailable device.
 
@@ -19,14 +20,15 @@ struct DeviceNoLongerAvailableDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case deviceNoLongerAvailable(WAError.DeviceNoLongerAvailableDetails)](waerror/devicenolongeravailable(_:).md)
+### Checking for unavailable device
+- [case deviceNoLongerAvailable(WAError.DeviceNoLongerAvailableDetails)](./devicenolongeravailable%28_%29.md)
   An error that occurs if a device is no longer available.
 
 

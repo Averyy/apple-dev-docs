@@ -1,7 +1,8 @@
 # NWParameters.PrivacyContext.ResolverConfiguration.https(_:serverAddresses:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A DNS-over-HTTPS resolver configuration.
 
@@ -22,11 +23,12 @@ case https(URL, serverAddresses: [NWEndpoint])
 
 #### Discussion
 
-The URL describes the location of the DNS server, such as “https://dnsserver.example.net/dns-query”. See [`RFC 8484`](https://developer.apple.comhttps://tools.ietf.org/html/rfc8484) for more details. The associated server addresses you provide are hints for which well-known DNS server addresses to use.
+The URL describes the location of the DNS server, such as “https://dnsserver.example.net/dns-query”. See [RFC 8484](https://tools.ietf.org/html/rfc8484) for more details. The associated server addresses you provide are hints for which well-known DNS server addresses to use.
 
 ## See Also
 
-- [NWParameters.PrivacyContext.ResolverConfiguration.tls(_:serverAddresses:)](nwparameters/privacycontext/resolverconfiguration/tls(_:serveraddresses:).md)
+### Resolver Types
+- [NWParameters.PrivacyContext.ResolverConfiguration.tls(_:serverAddresses:)](./tls%28_,serveraddresses%29.md)
   A DNS-over-TLS resolver configuration.
 
 

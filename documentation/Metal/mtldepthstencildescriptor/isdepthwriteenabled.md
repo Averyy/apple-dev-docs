@@ -1,7 +1,8 @@
 # isDepthWriteEnabled
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether depth values can be written to the depth attachment.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether depth values can be written to the depth 
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ A Boolean value that indicates whether depth values can be written to the depth 
 var isDepthWriteEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isDepthWriteEnabled) BOOL depthWriteEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which indicates the depth attachment is read-only.
+The default value is [`false`](../../Swift/false.md), which indicates the depth attachment is read-only.
 
 ## See Also
 
-- [var depthCompareFunction: MTLCompareFunction](mtldepthstencildescriptor/depthcomparefunction.md)
+### Specifying depth operations
+- [var depthCompareFunction: MTLCompareFunction](./depthcomparefunction.md)
   The comparison that is performed between a fragment’s depth value and the depth value in the attachment, which determines whether to discard the fragment.
 
 

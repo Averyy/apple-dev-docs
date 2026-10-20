@@ -1,7 +1,8 @@
 # MLHandPoseClassifier.ModelParameters.ValidationData.split(strategy:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a validation dataset by randomly selecting a portion of the hand pose classifier task’s training dataset with a split strategy.
 
@@ -20,13 +21,14 @@ case split(strategy: MLSplitStrategy)
 
 ## Parameters
 
-- `strategy`: An [`MLSplitStrategy`](mlsplitstrategy.md) instance.
+- `strategy`: An [`MLSplitStrategy`](../../../mlsplitstrategy.md) instance.
 
 ## See Also
 
-- [MLHandPoseClassifier.ModelParameters.ValidationData.dataSource(_:)](mlhandposeclassifier/modelparameters-swift.struct/validationdata/datasource(_:).md)
+### Designating validation data
+- [MLHandPoseClassifier.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   Creates a validation dataset from a data source.
-- [MLHandPoseClassifier.ModelParameters.ValidationData.none](mlhandposeclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLHandPoseClassifier.ModelParameters.ValidationData.none](./none.md)
   Creates an empty validation dataset, which tells the task to skip the model validation phase in a training session.
 
 

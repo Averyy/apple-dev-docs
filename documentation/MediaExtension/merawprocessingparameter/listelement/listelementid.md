@@ -1,7 +1,8 @@
 # listElementID
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique number in the list which represents this list option.
 
@@ -12,6 +13,10 @@ A unique number in the list which represents this list option.
 
 ```swift
 var listElementID: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger listElementID;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # sourceAppSigningIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the signing identifier of the source application.
 
@@ -18,15 +19,20 @@ A string that contains the signing identifier of the source application.
 var sourceAppSigningIdentifier: String { get }
 ```
 
+```objc
+@property (readonly) NSString * sourceAppSigningIdentifier;
+```
+
 #### Discussion
 
 For all apps that are signed in the standard way using Xcode, this value is identical to the app’s bundle identifier.
 
 ## See Also
 
-- [var sourceAppUniqueIdentifier: Data](neflowmetadata/sourceappuniqueidentifier.md)
+### Getting source app information
+- [var sourceAppUniqueIdentifier: Data](./sourceappuniqueidentifier.md)
   A data instance that contains a unique hash value for the source application.
-- [var sourceAppAuditToken: Data?](neflowmetadata/sourceappaudittoken.md)
+- [var sourceAppAuditToken: Data?](./sourceappaudittoken.md)
   The audit token of the source application of the flow.
 
 

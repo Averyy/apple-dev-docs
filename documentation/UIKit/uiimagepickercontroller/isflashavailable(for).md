@@ -1,7 +1,8 @@
 # isFlashAvailable(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Queries whether the specified camera has flash illumination capability.
 
@@ -16,21 +17,27 @@ Queries whether the specified camera has flash illumination capability.
 class func isFlashAvailable(for cameraDevice: UIImagePickerController.CameraDevice) -> Bool
 ```
 
+```objc
++ (BOOL) isFlashAvailableForCameraDevice:(UIImagePickerControllerCameraDevice) cameraDevice;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `cameraDevice` can use flash illumination, or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](../../Swift/true.md) if `cameraDevice` can use flash illumination, or [`false`](../../Swift/false.md) if it cannot.
 
 ## Parameters
 
-- `cameraDevice`: A [`UIImagePickerController.CameraDevice`](uiimagepickercontroller/cameradevice-swift.enum.md) constant indicating the camera whose flash capability you want to know.
+- `cameraDevice`: A [`UIImagePickerController.CameraDevice`](./cameradevice-swift.enum.md) constant indicating the camera whose flash capability you want to know.
 
 ## See Also
 
-- [var cameraDevice: UIImagePickerController.CameraDevice](uiimagepickercontroller/cameradevice-swift.property.md)
+### Related Documentation
+- [var cameraDevice: UIImagePickerController.CameraDevice](./cameradevice-swift.property.md)
   The camera used by the image picker controller.
-- [var cameraFlashMode: UIImagePickerController.CameraFlashMode](uiimagepickercontroller/cameraflashmode-swift.property.md)
+### Configuring the flash behavior
+- [var cameraFlashMode: UIImagePickerController.CameraFlashMode](./cameraflashmode-swift.property.md)
   The flash mode used by the active camera.
-- [UIImagePickerController.CameraFlashMode](uiimagepickercontroller/cameraflashmode-swift.enum.md)
+- [UIImagePickerController.CameraFlashMode](./cameraflashmode-swift.enum.md)
   Constants that specify the flash mode to use with the active camera.
 
 

@@ -1,7 +1,8 @@
 # shiftIndexesStarting(at:by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shifts a group of indexes to the left or the right within the receiver.
 
@@ -18,6 +19,10 @@ Shifts a group of indexes to the left or the right within the receiver.
 
 ```swift
 func shiftIndexesStarting(at index: Int, by delta: Int)
+```
+
+```objc
+- (void) shiftIndexesStartingAtIndex:(NSUInteger) index by:(NSInteger) delta;
 ```
 
 #### Discussion

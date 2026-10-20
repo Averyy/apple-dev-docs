@@ -1,7 +1,8 @@
 # errSecCertificateExpired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An expired certificate was detected.
 
@@ -20,9 +21,13 @@ An expired certificate was detected.
 var errSecCertificateExpired: OSStatus { get }
 ```
 
+```c
+errSecCertificateExpired
+```
+
 ## Mentions
 
-- [Discovering Why a Trust Evaluation Failed](discovering-why-a-trust-evaluation-failed.md)
+- [Discovering Why a Trust Evaluation Failed](./discovering-why-a-trust-evaluation-failed.md)
 
 
 ---

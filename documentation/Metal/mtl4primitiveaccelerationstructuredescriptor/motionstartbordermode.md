@@ -1,7 +1,8 @@
 # motionStartBorderMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the behavior when the ray-tracing system samples the acceleration structure before the motion start time.
 
@@ -19,9 +20,13 @@ Configures the behavior when the ray-tracing system samples the acceleration str
 var motionStartBorderMode: MTLMotionBorderMode { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMotionBorderMode motionStartBorderMode;
+```
+
 #### Discussion
 
-Use this property to control the behavior when the ray-tracing system samples the acceleration structure at a time prior to the one you set for [`motionStartTime`](mtl4primitiveaccelerationstructuredescriptor/motionstarttime.md).
+Use this property to control the behavior when the ray-tracing system samples the acceleration structure at a time prior to the one you set for [`motionStartTime`](./motionstarttime.md).
 
 The default value of this property is `MTLMotionBorderModeClamp`.
 

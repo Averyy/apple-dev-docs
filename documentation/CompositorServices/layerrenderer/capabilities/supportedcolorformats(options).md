@@ -1,7 +1,8 @@
 # supportedColorFormats(options:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of formats that the layer supports for its color textures
 

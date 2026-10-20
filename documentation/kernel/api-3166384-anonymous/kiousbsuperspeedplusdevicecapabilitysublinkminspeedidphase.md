@@ -1,14 +1,15 @@
 # kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase = IOUSBBitRangePhase(0, 3)
 ```
 

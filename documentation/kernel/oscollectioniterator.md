@@ -1,14 +1,15 @@
 # OSCollectionIterator
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class OSCollectionIterator : OSIterator
 ```
 
@@ -31,46 +32,47 @@ OSCollectionIterator provides no concurrency protection.
 ## Topics
 
 ### Miscellaneous
-- [free](oscollectioniterator/1808113-free.md)
+- [free](./oscollectioniterator/api-1808113-free.md)
   Releases or deallocates any resources used by the OSCollectionIterator object.
-- [getNextObject](oscollectioniterator/1808125-getnextobject.md)
+- [getNextObject](./oscollectioniterator/api-1808125-getnextobject.md)
   Advances to and returns the next object in the iteration.
-- [initWithCollection](oscollectioniterator/1808147-initwithcollection.md)
+- [initWithCollection](./oscollectioniterator/api-1808147-initwithcollection.md)
   Initializes an OSCollectionIterator for the provided collection object.
-- [isValid](oscollectioniterator/1808157-isvalid.md)
+- [isValid](./oscollectioniterator/api-1808157-isvalid.md)
   Checks that the collection hasn't been modified during iteration.
-- [reset](oscollectioniterator/1808170-reset.md)
+- [reset](./oscollectioniterator/api-1808170-reset.md)
   Resets the iterator to the beginning of the collection, as if it had just been created.
-- [withCollection](oscollectioniterator/1808183-withcollection.md)
+- [withCollection](./oscollectioniterator/api-1808183-withcollection.md)
   Creates and initializes an OSCollectionIterator for the provided collection object.
 ### Instance Methods
-- [- free](oscollectioniterator/1542649-free.md)
-- [- getMetaClass](oscollectioniterator/1542654-getmetaclass.md)
-- [- getNextObject](oscollectioniterator/1542659-getnextobject.md)
-- [- initWithCollection](oscollectioniterator/1542661-initwithcollection.md)
-- [- isValid](oscollectioniterator/1542655-isvalid.md)
-- [- reset](oscollectioniterator/1542652-reset.md)
+- [- free](./oscollectioniterator/api-1542649-free.md)
+- [- getMetaClass](./oscollectioniterator/api-1542654-getmetaclass.md)
+- [- getNextObject](./oscollectioniterator/api-1542659-getnextobject.md)
+- [- initWithCollection](./oscollectioniterator/api-1542661-initwithcollection.md)
+- [- isValid](./oscollectioniterator/api-1542655-isvalid.md)
+- [- reset](./oscollectioniterator/api-1542652-reset.md)
 ### Type Methods
-- [+ withCollection](oscollectioniterator/1542657-withcollection.md)
+- [+ withCollection](./oscollectioniterator/api-1542657-withcollection.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSIterator](ositerator.md)
+- [OSIterator](./ositerator.md)
 
 ## See Also
 
-- [OSArray](osarray.md)
+### Collections
+- [OSArray](./osarray.md)
   OSArray provides an indexed store of objects.
-- [OSDictionary](osdictionary.md)
+- [OSDictionary](./osdictionary.md)
   OSDictionary provides an associative store using strings for keys.
-- [OSSet](osset.md)
+- [OSSet](./osset.md)
   OSSet provides an unordered set store of objects.
-- [OSOrderedSet](osorderedset.md)
+- [OSOrderedSet](./osorderedset.md)
   OSOrderedSet provides an ordered set store of objects.
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
   The abstract superclass for Libkern collections.
-- [OSIterator](ositerator.md)
+- [OSIterator](./ositerator.md)
   The abstract superclass for Libkern iterators.
 
 

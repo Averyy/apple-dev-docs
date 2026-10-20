@@ -1,7 +1,8 @@
 # product(alongAxes:keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the product along the specified axes.
 
@@ -18,6 +19,12 @@ Returns the product along the specified axes.
 
 ```swift
 func product(alongAxes axes: Int..., keepRank: Bool = false) -> MLTensor
+```
+
+**Other overloads**:
+
+```swift
+func product(alongAxes axes: [Int], keepRank: Bool = false) -> MLTensor
 ```
 
 #### Return Value
@@ -40,7 +47,8 @@ await y.shapedArray(of: Float.self) // is [48.0 105.0]
 
 ## See Also
 
-- [func product(keepRank: Bool) -> MLTensor](mltensor/product(keeprank:).md)
+### Accessing the product along an axes
+- [func product(keepRank: Bool) -> MLTensor](./product%28keeprank%29.md)
   Returns the product along all axes.
 
 

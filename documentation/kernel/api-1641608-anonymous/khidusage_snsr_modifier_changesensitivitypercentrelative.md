@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Modifier_ChangeSensitivityPercentRelative
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Modifier_ChangeSensitivityPercentRelative = 0xE
 ```
 

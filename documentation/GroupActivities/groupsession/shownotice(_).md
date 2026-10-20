@@ -1,7 +1,8 @@
 # showNotice(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Posts an event to the system, which displays the information in the system UI.
 
@@ -19,6 +20,8 @@ Posts an event to the system, which displays the information in the system UI.
 final func showNotice(_ event: GroupSessionEvent)
 ```
 
+Available when `ActivityType` conforms to `GroupActivity`.
+
 #### Discussion
 
 Call this method to update the system’s UI with information about session-related events. For example, a music-listening app might post an event to notify the group that a participant stopped playback. The system displays the event information only on the current device, and doesn’t forward events to other devices.
@@ -29,7 +32,8 @@ Call this method to update the system’s UI with information about session-rela
 
 ## See Also
 
-- [struct GroupSessionEvent](groupsessionevent.md)
+### Notifying participants of playback changes
+- [struct GroupSessionEvent](../groupsessionevent.md)
   A session-related event that appears in the system UI.
 
 

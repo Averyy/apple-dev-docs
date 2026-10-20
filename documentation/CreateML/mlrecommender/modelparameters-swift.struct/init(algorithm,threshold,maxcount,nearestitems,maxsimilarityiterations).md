@@ -1,12 +1,13 @@
 # init(algorithm:threshold:maxCount:nearestItems:maxSimilarityIterations:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of recommender configuration parameters.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,9 +17,10 @@ init(algorithm: MLRecommender.ModelAlgorithmType = .itemSimilarity(.cosine), thr
 
 ## See Also
 
-- [init(algorithm: MLRecommender.ModelAlgorithmType, threshold: Double, maxCount: Int, nearestItemsDataFrame: DataFrame?, maxSimilarityIterations: Int)](mlrecommender/modelparameters-swift.struct/init(algorithm:threshold:maxcount:nearestitemsdataframe:maxsimilarityiterations:).md)
+### Creating parameters
+- [init(algorithm: MLRecommender.ModelAlgorithmType, threshold: Double, maxCount: Int, nearestItemsDataFrame: DataFrame?, maxSimilarityIterations: Int)](./init%28algorithm,threshold,maxcount,nearestitemsdataframe,maxsimilarityiterations%29.md)
   Creates a new set of recommender configuration parameters.
-- [MLRecommender.ModelAlgorithmType](mlrecommender/modelalgorithmtype.md)
+- [MLRecommender.ModelAlgorithmType](../modelalgorithmtype.md)
   The algorithms a recommender can use to make recommendations.
 
 

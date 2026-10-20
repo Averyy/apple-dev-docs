@@ -1,13 +1,14 @@
 # path
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file’s path.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ The file’s path.
 var path: es_string_token_t
 ```
 
+```c
+es_string_token_t path;
+```
+
 ## See Also
 
-- [var path_truncated: Bool](es_file_t/path_truncated.md)
+### Inspecting File Properties
+- [var path_truncated: Bool](./path_truncated.md)
   A Boolean value that indicates whether Endpoint Security truncated the path string.
-- [var stat: stat](es_file_t/stat.md)
+- [var stat: stat](./stat.md)
   The file’s metadata, such as file size, user and group identifiers, and access and modification dates.
 
 

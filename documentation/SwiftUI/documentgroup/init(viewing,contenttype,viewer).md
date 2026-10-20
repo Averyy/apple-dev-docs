@@ -1,7 +1,8 @@
 # init(viewing:contentType:viewer:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a document group for viewing documents that store a specific model type.
 
@@ -16,6 +17,15 @@ Instantiates a document group for viewing documents that store a specific model 
 ```swift
 nonisolated
 init(viewing modelType: any PersistentModel.Type, contentType: UTType, viewer: @escaping () -> Content)
+```
+
+Available when `Document` is `ModelDocument` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(viewing modelTypes: [any PersistentModel.Type], contentType: UTType, viewer: @escaping () -> Content)
 ```
 
 #### Discussion
@@ -35,7 +45,7 @@ init(viewing modelType: any PersistentModel.Type, contentType: UTType, viewer: @
  }
 ```
 
-> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app). Also, remember to specify the supported Document types in the `Info.plist` as well.
+> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [Defining file and data types for your app](../../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md). Also, remember to specify the supported Document types in the `Info.plist` as well.
 
 ## Parameters
 
@@ -45,7 +55,8 @@ init(viewing modelType: any PersistentModel.Type, contentType: UTType, viewer: @
 
 ## See Also
 
-- [init(viewing: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: () -> Content)](documentgroup/init(viewing:migrationplan:viewer:).md)
+### Viewing a document backed by a persistent store
+- [init(viewing: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: () -> Content)](./init%28viewing,migrationplan,viewer%29.md)
   Instantiates a document group for viewing documents described by the last `Schema` in the migration plan.
 
 

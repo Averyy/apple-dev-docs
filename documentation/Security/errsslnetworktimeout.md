@@ -1,7 +1,8 @@
 # errSSLNetworkTimeout
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Network timeout triggered.
 
@@ -18,6 +19,10 @@ Network timeout triggered.
 
 ```swift
 var errSSLNetworkTimeout: OSStatus { get }
+```
+
+```c
+errSSLNetworkTimeout
 ```
 
 

@@ -1,7 +1,8 @@
 # FSEventStreamGetDeviceBeingWatched(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventStreamGetDeviceBeingWatched(_ streamRef: ConstFSEventStreamRef) -> dev_t
 ```
 
-#### Return_value
+```c
+dev_t FSEventStreamGetDeviceBeingWatched(ConstFSEventStreamRef streamRef);
+```
+
+#### Return Value
 
 The dev_t for a device-relative stream, otherwise 0.
 

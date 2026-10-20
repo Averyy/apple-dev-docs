@@ -1,17 +1,22 @@
 # epsOperation(with:inside:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func epsOperation(with view: NSView, inside rect: NSRect, to data: NSMutableData?) -> NSPrintOperation
+```
+
+```objc
++ (NSPrintOperation *) EPSOperationWithView:(NSView *) view insideRect:(NSRect) rect toData:(NSMutableData *) data;
 ```
 
 #### Return Value
@@ -30,23 +35,25 @@ The new `NSPrintOperation` object uses the default `NSPrintInfo` object. This me
 
 ## See Also
 
-- [class NSPrintOperation](nsprintoperation.md)
+### Related Documentation
+- [class NSPrintOperation](../nsprintoperation.md)
   An object that controls operations that generate Encapsulated PostScript (EPS) code, Portable Document Format (PDF) code, or print jobs.
-- [func run() -> Bool](nsprintoperation/run.md)
+- [func run() -> Bool](./run%28%29.md)
   Runs the print operation on the current thread.
-- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:to:printinfo:).md)
+### Creating the Printing Operation Object
+- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](./epsoperation%28with,inside,to,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view using the specified print settings.
-- [class func epsOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:topath:printinfo:).md)
+- [class func epsOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](./epsoperation%28with,inside,topath,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view and write the resulting data to the specified file.
-- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:to:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData) -> NSPrintOperation](./pdfoperation%28with,inside,to%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view.
-- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:to:printinfo:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](./pdfoperation%28with,inside,to,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view using the specified print settings.
-- [class func pdfOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:topath:printinfo:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](./pdfoperation%28with,inside,topath,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view and write the resulting data to the specified file.
-- [init(view: NSView)](nsprintoperation/init(view:).md)
+- [init(view: NSView)](./init%28view%29.md)
   Creates and returns an print operation object ready to control the printing of the specified view.
-- [init(view: NSView, printInfo: NSPrintInfo)](nsprintoperation/init(view:printinfo:).md)
+- [init(view: NSView, printInfo: NSPrintInfo)](./init%28view,printinfo%29.md)
   Creates and returns an print operation object ready to control the printing of the specified view using custom print settings.
 
 

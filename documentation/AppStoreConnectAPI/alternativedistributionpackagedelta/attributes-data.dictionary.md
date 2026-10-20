@@ -1,7 +1,8 @@
 # AlternativeDistributionPackageDelta.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution package delta resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an alternative distribution package delta resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageDelta.Attributes
 ```
 

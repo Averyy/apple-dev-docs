@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,14 +18,19 @@
 var offset: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger offset;
+```
+
 ## See Also
 
-- [var data: any MTLBuffer](mpsvector/data.md)
-- [var dataType: MPSDataType](mpsvector/datatype.md)
-- [var device: any MTLDevice](mpsvector/device.md)
-- [var length: Int](mpsvector/length.md)
-- [var vectorBytes: Int](mpsvector/vectorbytes.md)
-- [var vectors: Int](mpsvector/vectors.md)
+### Instance Properties
+- [var data: any MTLBuffer](./data.md)
+- [var dataType: MPSDataType](./datatype.md)
+- [var device: any MTLDevice](./device.md)
+- [var length: Int](./length.md)
+- [var vectorBytes: Int](./vectorbytes.md)
+- [var vectors: Int](./vectors.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # trueNegativeCount(of:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of times a label was not in the predicted or ground truth collections.
 
@@ -20,6 +21,8 @@ Returns the number of times a label was not in the predicted or ground truth col
 func trueNegativeCount(of label: Label) -> Int
 ```
 
+Available when `Label` conforms to `Hashable`.
+
 #### Return Value
 
 The true negative count.
@@ -34,19 +37,20 @@ If the label does not have a confidence threshold, the true negative count is 0.
 
 ## See Also
 
-- [func count(of: Label) -> Int](multilabelclassificationmetrics/count(of:).md)
+### Computing and scoring
+- [func count(of: Label) -> Int](./count%28of%29.md)
   Returns the number of times a label appeared in the ground truth collection.
-- [func f1Score(for: Label) -> Float](multilabelclassificationmetrics/f1score(for:).md)
+- [func f1Score(for: Label) -> Float](./f1score%28for%29.md)
   Computes the F1 score from predicted and ground truth values.
-- [func falseNegativeCount(of: Label) -> Int](multilabelclassificationmetrics/falsenegativecount(of:).md)
+- [func falseNegativeCount(of: Label) -> Int](./falsenegativecount%28of%29.md)
   Returns the number of times a true label was not predicted.
-- [func falsePositiveCount(of: Label) -> Int](multilabelclassificationmetrics/falsepositivecount(of:).md)
+- [func falsePositiveCount(of: Label) -> Int](./falsepositivecount%28of%29.md)
   Returns the number of times the predicted label did not match the true label.
-- [func precisionScore(for: Label) -> Float](multilabelclassificationmetrics/precisionscore(for:).md)
+- [func precisionScore(for: Label) -> Float](./precisionscore%28for%29.md)
   Computes the precision score for a class label.
-- [func recallScore(for: Label) -> Float](multilabelclassificationmetrics/recallscore(for:).md)
+- [func recallScore(for: Label) -> Float](./recallscore%28for%29.md)
   Computes the recall score for a class label.
-- [func truePositiveCount(of: Label) -> Int](multilabelclassificationmetrics/truepositivecount(of:).md)
+- [func truePositiveCount(of: Label) -> Int](./truepositivecount%28of%29.md)
   Returns the number of times the predicted label matched the true label.
 
 

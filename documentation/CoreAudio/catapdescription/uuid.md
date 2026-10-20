@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var uuid: UUID { get set }
+```
+
+```objc
+@property (atomic, copy) NSUUID * UUID;
 ```
 
 #### Discussion

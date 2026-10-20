@@ -1,7 +1,8 @@
 # NetworkVPNVPNPlugin
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a VPN using the VPN plugin sub-type.
 
@@ -15,7 +16,7 @@ The declaration to configure a VPN using the VPN plugin sub-type.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNVPNPlugin
 ```
 
@@ -23,7 +24,7 @@ object NetworkVPNVPNPlugin
 
 Specify `com.apple.configuration.network.vpn.vpn-plugin` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +36,7 @@ Specify `com.apple.configuration.network.vpn.vpn-plugin` as the declaration type
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Examples
+##### Configuration examples
 
 **Password**:
 
@@ -82,21 +83,21 @@ This configuration sets up a VPN plugin using a certificate identity asset for a
 ## Topics
 
 ### Objects
-- [object NetworkVPNVPNPluginAuthenticationObject](networkvpnvpnpluginauthenticationobject.md)
+- [object NetworkVPNVPNPluginAuthenticationObject](./networkvpnvpnpluginauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNVPNPluginDNSObject](networkvpnvpnplugindnsobject.md)
+- [object NetworkVPNVPNPluginDNSObject](./networkvpnvpnplugindnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNVPNPluginIdleObject](networkvpnvpnpluginidleobject.md)
+- [object NetworkVPNVPNPluginIdleObject](./networkvpnvpnpluginidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNVPNPluginNetworkRoutingObject](networkvpnvpnpluginnetworkroutingobject.md)
+- [object NetworkVPNVPNPluginNetworkRoutingObject](./networkvpnvpnpluginnetworkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNVPNPluginOnDemandObject](networkvpnvpnpluginondemandobject.md)
+- [object NetworkVPNVPNPluginOnDemandObject](./networkvpnvpnpluginondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNVPNPluginProviderObject](networkvpnvpnpluginproviderobject.md)
+- [object NetworkVPNVPNPluginProviderObject](./networkvpnvpnpluginproviderobject.md)
   Specifies details about the provider.
-- [object NetworkVPNVPNPluginProxiesObject](networkvpnvpnpluginproxiesobject.md)
+- [object NetworkVPNVPNPluginProxiesObject](./networkvpnvpnpluginproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNVPNPluginVendorConfigObject](networkvpnvpnpluginvendorconfigobject.md)
+- [object NetworkVPNVPNPluginVendorConfigObject](./networkvpnvpnpluginvendorconfigobject.md)
   The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 
 ## Properties
@@ -105,49 +106,58 @@ This configuration sets up a VPN plugin using a certificate identity asset for a
 - `DNS` (NetworkVPNVPNPluginDNSObject): A dictionary to use for all VPN types.
 - `HostName` (string) *(required)*: The IP address or hostname of the VPN server.
 - `Idle` (NetworkVPNVPNPluginIdleObject): Specifies details about how the system handles idle VPN connections.
-- `NetworkRouting` (NetworkVPNVPNPluginNetworkRoutingObject): Specifies details about how the VPN routes different types of network traffic. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `NetworkRouting` (NetworkVPNVPNPluginNetworkRoutingObject): Specifies details about how the VPN routes different types of network traffic.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 - `OnDemand` (NetworkVPNVPNPluginOnDemandObject): Specifies details about how the system controls on-demand VPN.
 - `Provider` (NetworkVPNVPNPluginProviderObject): Specifies details about the provider.
 - `Proxies` (NetworkVPNVPNPluginProxiesObject): The dictionary to use to configure `Proxies` for use with `VPN`.
-- `SubType` (string) *(required)*: An identifier for a vendor-specified configuration dictionary. If the configuration targets a VPN solution that uses a VPN plugin, then this field contains the bundle identifier of the plugin. Here are some examples: - Cisco AnyConnect: `com.cisco.anyconnect.applevpn.plugin`
-- Juniper SSL: `net.juniper.sslvpn`
-- F5 SSL: `com.f5.F5-Edge-Client.vpnplugin`
-- SonicWALL Mobile Connect: `com.sonicwall.SonicWALL-SSLVPN.vpnplugin`
-- ``Aruba VIA: `com.arubanetworks.aruba-via.vpnplugin` If the configuration targets a VPN solution that uses a network extension provider, then this field contains the bundle identifier of the app that contains the provider. Contact the VPN solution vendor for the value of the identifier.
+- `SubType` (string) *(required)*: An identifier for a vendor-specified configuration dictionary.
+
+  If the configuration targets a VPN solution that uses a VPN plugin, then this field contains the bundle identifier of the plugin. Here are some examples:
+
+  - Cisco AnyConnect: `com.cisco.anyconnect.applevpn.plugin`
+  - Juniper SSL: `net.juniper.sslvpn`
+  - F5 SSL: `com.f5.F5-Edge-Client.vpnplugin`
+  - SonicWALL Mobile Connect: `com.sonicwall.SonicWALL-SSLVPN.vpnplugin`
+  - ``Aruba VIA: `com.arubanetworks.aruba-via.vpnplugin`
+
+  If the configuration targets a VPN solution that uses a network extension provider, then this field contains the bundle identifier of the app that contains the provider. Contact the VPN solution vendor for the value of the identifier.
 - `VendorConfig` (NetworkVPNVPNPluginVendorConfigObject): The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 - `VisibleName` (string) *(required)*: The name of the VPN connection that the system displays on the device.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

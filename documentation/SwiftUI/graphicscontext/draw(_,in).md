@@ -1,7 +1,8 @@
 # draw(_:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a resolved symbol into the context, using the specified rectangle as a layout frame.
 
@@ -20,20 +21,31 @@ Draws a resolved symbol into the context, using the specified rectangle as a lay
 func draw(_ symbol: GraphicsContext.ResolvedSymbol, in rect: CGRect)
 ```
 
+**Other overloads**:
+
+```swift
+func draw(_ text: GraphicsContext.ResolvedText, in rect: CGRect)
+```
+
+```swift
+func draw(_ text: Text, in rect: CGRect)
+```
+
 #### Discussion
 
 The current context state defines the full drawing operation. For example, the current transformation and clip shapes affect how SwiftUI draws the symbol.
 
 ## Parameters
 
-- `symbol`: The [`GraphicsContext.ResolvedSymbol`](graphicscontext/resolvedsymbol.md) to draw. Get a resolved symbol by calling [`resolveSymbol(id:)`](graphicscontext/resolvesymbol(id:).md) with the identifier that you use to tag the corresponding child view during [`Canvas`](canvas.md) initialization.
+- `symbol`: The [`GraphicsContext.ResolvedSymbol`](./resolvedsymbol.md) to draw. Get a resolved symbol by calling [`resolveSymbol(id:)`](./resolvesymbol%28id%29.md) with the identifier that you use to tag the corresponding child view during [`Canvas`](../canvas.md) initialization.
 - `rect`: The rectangle in the current user space to draw the symbol in.
 
 ## See Also
 
-- [func draw(_:in:style:)](graphicscontext/draw(_:in:style:).md)
+### Drawing images, text, and views
+- [func draw(_:in:style:)](./draw%28_,in,style%29.md)
   Draws a resolved image into the context, using the specified rectangle as a layout frame.
-- [func draw(_:at:anchor:)](graphicscontext/draw(_:at:anchor:).md)
+- [func draw(_:at:anchor:)](./draw%28_,at,anchor%29.md)
   Draws a resolved image into the context, aligning an anchor within the image to a point in the context.
 
 

@@ -1,7 +1,8 @@
 # BAContentRequest.install
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content request resulting from the installation of the app.
 
@@ -19,13 +20,18 @@ A content request resulting from the installation of the app.
 case install
 ```
 
+```c
+BAContentRequestInstall
+```
+
 ## See Also
 
-- [BAContentRequest.periodic](bacontentrequest/periodic.md)
+### Content request types
+- [BAContentRequest.periodic](./periodic.md)
   A content request resulting from a system request for updated content within the app.
-- [BAContentRequest.update](bacontentrequest/update.md)
+- [BAContentRequest.update](./update.md)
   A content request resulting from an update of the app.
-- [BAContentRequest.languageChange](bacontentrequest/languagechange.md)
+- [BAContentRequest.languageChange](./languagechange.md)
   A content request resulting from someone changing the app’s preferred language.
 
 

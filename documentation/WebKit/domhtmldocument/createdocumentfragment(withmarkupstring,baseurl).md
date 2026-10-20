@@ -1,7 +1,8 @@
 # createDocumentFragment(withMarkupString:baseURL:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a document fragment containing the given HTML markup.
 
@@ -12,6 +13,10 @@ Creates a document fragment containing the given HTML markup.
 
 ```swift
 func createDocumentFragment(withMarkupString markupString: String!, baseURL: URL!) -> DOMDocumentFragment!
+```
+
+```objc
+- (DOMDocumentFragment *) createDocumentFragmentWithMarkupString:(NSString *) markupString baseURL:(NSURL *) baseURL;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ This is a convenience method for the `createDocumentFragment` method in `DOMDocu
 
 ## See Also
 
-- [func createDocumentFragment(withText: String!) -> DOMDocumentFragment!](domhtmldocument/createdocumentfragment(withtext:).md)
+### Creating Document Fragments
+- [func createDocumentFragment(withText: String!) -> DOMDocumentFragment!](./createdocumentfragment%28withtext%29.md)
   Creates a document fragment containing the given text.
 
 

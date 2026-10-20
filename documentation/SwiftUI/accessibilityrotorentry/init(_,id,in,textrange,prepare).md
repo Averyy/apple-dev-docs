@@ -1,7 +1,8 @@
 # init(_:id:in:textRange:prepare:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Rotor entry with a specific label, identifier and namespace, and with an optional range.
 
@@ -21,6 +22,16 @@ Create a Rotor entry with a specific label, identifier and namespace, and with a
 init(_ label: LocalizedStringResource, id: ID, in namespace: Namespace.ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
 ```
 
+**Other overloads**:
+
+```swift
+init(_ label: Text, id: ID, in namespace: Namespace.ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
+```
+
+```swift
+init(_ labelKey: LocalizedStringKey, id: ID, in namespace: Namespace.ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
+```
+
 ## Parameters
 
 - `label`: Localized string used to show this Rotor entry to users.
@@ -31,7 +42,8 @@ init(_ label: LocalizedStringResource, id: ID, in namespace: Namespace.ID, textR
 
 ## See Also
 
-- [init<L>(L, ID, in: Namespace.ID, textRange: Range<String.Index>?, prepare: () -> Void)](accessibilityrotorentry/init(_:_:in:textrange:prepare:).md)
+### Creating an identified rotor entry in a namespace
+- [init<L>(L, ID, in: Namespace.ID, textRange: Range<String.Index>?, prepare: () -> Void)](./init%28_,_,in,textrange,prepare%29.md)
   Create a Rotor entry with a specific label, identifier and namespace, and with an optional range.
 
 

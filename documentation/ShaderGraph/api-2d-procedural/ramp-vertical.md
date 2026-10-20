@@ -1,7 +1,8 @@
 # Ramp Vertical
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A top-to-bottom linear value ramp (gradient) generator.
 
@@ -15,6 +16,126 @@ A top-to-bottom linear value ramp (gradient) generator.
 
 #### Parameter Types
 
+**Ramp Vertical (float)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Float |
+| `Bottom` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Ramp Vertical (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Vector3f |
+| `Bottom` | Vector3f |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Ramp Vertical (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Vector4f |
+| `Bottom` | Vector4f |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Ramp Vertical (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Color4 |
+| `Bottom` | Color4 |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Ramp Vertical (vector2h)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Vector2h |
+| `Bottom` | Vector2h |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2h |
+
+**Ramp Vertical (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Vector2f |
+| `Bottom` | Vector2f |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Ramp Vertical (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Color3 |
+| `Bottom` | Color3 |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Ramp Vertical (vector3h)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Vector3h |
+| `Bottom` | Vector3h |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3h |
+
+**Ramp Vertical (vector4h)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Vector4h |
+| `Bottom` | Vector4h |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4h |
+
+**Ramp Vertical (half)**:
+
+| Input | Type |
+| --- | --- |
+| `Top` | Half |
+| `Bottom` | Half |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
 #### Parameter Descriptions
 
 - **`Top`**: The top value of the interpolation.
@@ -25,27 +146,28 @@ A top-to-bottom linear value ramp (gradient) generator.
 
 This node uses interpolation to create a vertical ramp or gradient from two values. Any point within the output ramp is a mix of the two values. A given point is more similar to the value that its vertical position is closer to. Below is a an example of a simple node graph that uses `Ramp Vertical` to create a color gradient:
 
-![None](/images/ShaderGraph-Docs/RampVerticalGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/RampVerticalGraph.png)
 
 The image below shows the resulting texture, along with the color values on either side:
 
-![None](/images/ShaderGraph-Docs/RampVerticalMaterial.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/RampVerticalMaterial.png)
 
 ## See Also
 
-- [Ramp Horizontal](2d-procedural/ramp-horizontal.md)
+### Nodes
+- [Ramp Horizontal](./ramp-horizontal.md)
   A left-to-right linear value ramp (gradient) generator.
-- [Ramp 4 Corners](2d-procedural/ramp-4-corners.md)
+- [Ramp 4 Corners](./ramp-4-corners.md)
   A four-point linear value ramp (gradient) generator.
-- [Split Horizontal](2d-procedural/split-horizontal.md)
+- [Split Horizontal](./split-horizontal.md)
   A left-to-right split matte, split at a specified U value.
-- [Split Vertical](2d-procedural/split-vertical.md)
+- [Split Vertical](./split-vertical.md)
   A top-to-bottom split matte, split at a specified V value.
-- [Noise 2D](2d-procedural/noise-2d.md)
+- [Noise 2D](./noise-2d.md)
   A 2D Perlin noise generator.
-- [Cellular Noise 2D](2d-procedural/cellular-noise-2d.md)
+- [Cellular Noise 2D](./cellular-noise-2d.md)
   A 2D cellular noise generator.
-- [Worley Noise 2D](2d-procedural/worley-noise-2d.md)
+- [Worley Noise 2D](./worley-noise-2d.md)
   A 2D Worley noise generator.
 
 

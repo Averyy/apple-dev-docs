@@ -1,7 +1,8 @@
 # FloatingPointClassification.negativeInfinity
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value equal to `-infinity`.
 

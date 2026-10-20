@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.MaxPool3d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.MaxPool3d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.MaxPool3d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.MaxPool3d
-
 **class MaxPool3d(*kernel_size: int | Tuple[int, int, int]*, *stride: int | Tuple[int, int, int] | None = None*, *padding: int | Tuple[int, int, int] | None = 0*)**
 : Applies 3-dimensional max pooling.
 Spatially downsamples the input by taking the maximum of a sliding window
@@ -55,12 +28,13 @@ padding to apply to the input. The padding is applied on both sides
 of the depth, height and width axis. Default: `0`.
 
 Examples
->>> import mlx.core as mx
->>> import mlx.nn.layers as nn
->>> x = mx.random.normal(shape=(8, 16, 32, 32, 4))
->>> pool = nn.MaxPool3d(kernel_size=2, stride=2)
->>> pool(x)
+
+  ```
+  >>> import mlx.core as mx
+  >>> import mlx.nn.layers as nn
+  >>> x = mx.random.normal(shape=(8, 16, 32, 32, 4))
+  >>> pool = nn.MaxPool3d(kernel_size=2, stride=2)
+  >>> pool(x)
+  ```
 
 Methods
-
-** Contents

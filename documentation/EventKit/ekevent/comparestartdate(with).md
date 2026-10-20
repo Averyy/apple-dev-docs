@@ -1,7 +1,8 @@
 # compareStartDate(with:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the start date of the receiving event with the start date of another event.
 
@@ -19,17 +20,21 @@ Compares the start date of the receiving event with the start date of another ev
 func compareStartDate(with other: EKEvent) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) compareStartDateWithEvent:(EKEvent *) other;
+```
+
 ## Mentions
 
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
 #### Return Value
 
-Returns [`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedascending) if the start date of the receiver precedes the start date of `other`. Returns [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedsame) if the start dates of the two events are identical. Returns [`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/foundation/comparisonresult/ordereddescending) if the start date of the receiver comes after the start date of `other`.
+Returns [`ComparisonResult.orderedAscending`](../../Foundation/comparisonresult/orderedascending.md) if the start date of the receiver precedes the start date of `other`. Returns [`ComparisonResult.orderedSame`](../../Foundation/comparisonresult/orderedsame.md) if the start dates of the two events are identical. Returns [`ComparisonResult.orderedDescending`](../../Foundation/comparisonresult/ordereddescending.md) if the start date of the receiver comes after the start date of `other`.
 
 #### Discussion
 
-You can pass the selector for this method to the NSArray method [`sortedArray(using:)`](https://developer.apple.com/documentation/foundation/nsarray/sortedarray(using:)-9nhh9) to create an array of events sorted by start date.
+You can pass the selector for this method to the NSArray method [`sortedArray(using:)`](../../Foundation/nsarray/sortedarray%28using%29-9nhh9.md) to create an array of events sorted by start date.
 
 ## Parameters
 

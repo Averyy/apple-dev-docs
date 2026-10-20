@@ -1,7 +1,8 @@
 # rounded(rule:increment:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified rounding rule and increment.
 
@@ -26,7 +27,7 @@ A floating-point format style modified to use the specified rounding rule and in
 
 #### Discussion
 
-The following example creates a default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) for the `en_US` locale, and modifies its rounding behavior. It uses the [`FloatingPointRoundingRule.up`](https://developer.apple.com/documentation/swift/floatingpointroundingrule/up) rounding rule, and an increment of `0.25`. It then applies this style to an array of floating-point values, rounding them to the next greater increment of 0.25.
+The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and modifies its rounding behavior. It uses the [`FloatingPointRoundingRule.up`](../../Swift/floatingpointroundingrule/up.md) rounding rule, and an increment of `0.25`. It then applies this style to an array of floating-point values, rounding them to the next greater increment of 0.25.
 
 ```swift
 let roundedStyle = FloatingPointFormatStyle<Double>(locale: Locale(identifier: "en_US"))
@@ -42,23 +43,24 @@ let roundedNums = nums.map { roundedStyle.format($0) } // ["1.00", "1.25", "1.25
 
 ## See Also
 
-- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(FloatingPointFormatStyle<Value>.Configuration.Grouping) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/grouping(_:).md)
+- [func grouping(FloatingPointFormatStyle<Value>.Configuration.Grouping) -> FloatingPointFormatStyle<Value>](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/locale(_:).md)
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(FloatingPointFormatStyle<Value>.Configuration.Notation) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/notation(_:).md)
+- [func notation(FloatingPointFormatStyle<Value>.Configuration.Notation) -> FloatingPointFormatStyle<Value>](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(FloatingPointFormatStyle<Value>.Configuration.Precision) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/precision(_:).md)
+- [func precision(FloatingPointFormatStyle<Value>.Configuration.Precision) -> FloatingPointFormatStyle<Value>](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func scale(Double) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/scale(_:).md)
+- [func scale(Double) -> FloatingPointFormatStyle<Value>](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: FloatingPointFormatStyle<Value>.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/sign(strategy:).md)
+- [func sign(strategy: FloatingPointFormatStyle<Value>.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
-- [FloatingPointFormatStyle.Configuration](floatingpointformatstyle/configuration.md)
+- [FloatingPointFormatStyle.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

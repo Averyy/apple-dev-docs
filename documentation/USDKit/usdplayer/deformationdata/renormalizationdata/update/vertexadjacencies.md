@@ -1,7 +1,8 @@
 # vertexAdjacencies
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Changed vertex adjacency data.
 

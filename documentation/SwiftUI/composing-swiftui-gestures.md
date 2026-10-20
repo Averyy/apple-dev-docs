@@ -1,6 +1,7 @@
 # Composing SwiftUI gestures
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Combine gestures to create complex interactions.
 
@@ -14,11 +15,11 @@ When you add multiple gestures to your app’s view hierarchy, you need to decid
 
 When you combine gesture modifiers simultaneously, SwiftUI must recognize all subgesture patterns at the same time for it to recognize the combining gesture. When you sequence gesture modifiers one after the other, SwiftUI must recognize each subgesture in order. Finally, when you combine gestures exclusively, SwiftUI recognizes the entire gesture pattern when SwiftUI only recognizes one subgesture but not the others.
 
-##### Sequence One Gesture After Another
+##### Sequence one gesture after another
 
-When you sequence one gesture after another, SwiftUI recognizes the first gesture before it recognizes the second. For example, to require a long press before the user can drag a view, you sequence a [`DragGesture`](draggesture.md) after a [`LongPressGesture`](longpressgesture.md).
+When you sequence one gesture after another, SwiftUI recognizes the first gesture before it recognizes the second. For example, to require a long press before the user can drag a view, you sequence a [`DragGesture`](./draggesture.md) after a [`LongPressGesture`](./longpressgesture.md).
 
-###### Model Sequenced Gesture States
+###### Model sequenced gesture states
 
 To make it easier to track complicated states, use an enumeration that captures all of the states you need to configure your views. In the following example, there are three important states: no interaction (`inactive`), long press in progress (`pressing`), and dragging (`dragging`).
 
@@ -63,7 +64,7 @@ struct DraggableCircle: View {
     ...
 ```
 
-###### Create Gestures and Update the Ui State
+###### Create gestures and update the UI state
 
 When you sequence two gestures, the callbacks capture the state of both gestures. In the update callback, the new `value` uses an enumeration to represent the combination of the possible gesture states. The code below converts the underlying gesture states into the high-level `DragState` enumeration defined above.
 
@@ -116,17 +117,18 @@ When the user begins pressing the view, the drag state changes to `pressing` and
 
 ## See Also
 
-- [func simultaneousGesture<T>(T, including: GestureMask) -> some View](view/simultaneousgesture(_:including:).md)
+### Combining gestures
+- [func simultaneousGesture<T>(T, including: GestureMask) -> some View](./view/simultaneousgesture%28_,including%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](view/simultaneousgesture(_:isenabled:).md)
+- [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](./view/simultaneousgesture%28_,isenabled%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [func simultaneousGesture<T>(T, name: String, isEnabled: Bool) -> some View](view/simultaneousgesture(_:name:isenabled:).md)
+- [func simultaneousGesture<T>(T, name: String, isEnabled: Bool) -> some View](./view/simultaneousgesture%28_,name,isenabled%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [struct SequenceGesture](sequencegesture.md)
+- [struct SequenceGesture](./sequencegesture.md)
   A gesture that’s a sequence of two gestures.
-- [struct SimultaneousGesture](simultaneousgesture.md)
+- [struct SimultaneousGesture](./simultaneousgesture.md)
   A gesture containing two gestures that can happen at the same time with neither of them preceding the other.
-- [struct ExclusiveGesture](exclusivegesture.md)
+- [struct ExclusiveGesture](./exclusivegesture.md)
   A gesture that consists of two gestures where only one of them can succeed.
 
 

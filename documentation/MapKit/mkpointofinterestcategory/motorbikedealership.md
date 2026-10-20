@@ -1,7 +1,8 @@
 # motorbikeDealership
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let motorbikeDealership: MKPointOfInterestCategory
+```
+
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryMotorbikeDealership;
 ```
 
 

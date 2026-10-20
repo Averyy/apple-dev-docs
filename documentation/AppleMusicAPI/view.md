@@ -1,7 +1,8 @@
 # View
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A to-one or to-many relationship view from one resource object to others representing interesting associations.
 
@@ -10,16 +11,16 @@ A to-one or to-many relationship view from one resource object to others represe
 
 ## Declaration
 
-```swift
+```
 object View
 ```
 
 ## Topics
 
 ### Related Objects
-- [object View.Attributes](view/attributes-data.dictionary.md)
+- [object View.Attributes](./view/attributes-data.dictionary.md)
   Attributes representing the metadata of the view.
-- [object View.Meta](view/meta-data.dictionary.md)
+- [object View.Meta](./view/meta-data.dictionary.md)
   Information about the request or response.
 
 ## Properties

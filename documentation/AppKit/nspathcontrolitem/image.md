@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
@@ -12,11 +13,16 @@
 var image: NSImage? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSImage * image;
+```
+
 ## See Also
 
-- [var attributedTitle: NSAttributedString](nspathcontrolitem/attributedtitle.md)
-- [var title: String](nspathcontrolitem/title.md)
-- [var url: URL?](nspathcontrolitem/url.md)
+### Instance Properties
+- [var attributedTitle: NSAttributedString](./attributedtitle.md)
+- [var title: String](./title.md)
+- [var url: URL?](./url.md)
 
 
 ---

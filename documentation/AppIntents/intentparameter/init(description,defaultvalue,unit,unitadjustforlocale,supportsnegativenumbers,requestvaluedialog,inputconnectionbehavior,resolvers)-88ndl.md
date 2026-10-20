@@ -1,7 +1,8 @@
 # init(description:defaultValue:unit:unitAdjustForLocale:supportsNegativeNumbers:requestValueDialog:inputConnectionBehavior:resolvers:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter that specifies the unit for the measurement.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter that specifies the unit for the measurement.
 ```swift
 convenience init<Spec>(description: LocalizedStringResource? = nil, defaultValue: Double? = nil, unit: IntentParameter<Value>.Dispersion, unitAdjustForLocale: Bool = false, supportsNegativeNumbers: Bool = true, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, @ResolverSpecificationBuilder<Value.UnwrappedType> resolvers: @escaping () -> Spec) where Spec : ResolverSpecification
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitDispersion>`.
 
 ## Parameters
 

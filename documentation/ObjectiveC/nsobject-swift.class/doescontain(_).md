@@ -1,13 +1,14 @@
 # doesContain(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the receiver contains a given object.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Returns a Boolean value that indicates whether the receiver contains a given obj
 func doesContain(_ object: Any) -> Bool
 ```
 
+```objc
+- (BOOL) doesContain:(id) object;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the receiver contains `object`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the receiver contains `object`, otherwise [`NO`](../no.md).
 
 #### Discussion
 
-Currently, [`doesContain(_:)`](nsobject-swift.class/doescontain(_:).md) messages are never sent to any object from within Cocoa itself.
+Currently, [`doesContain(_:)`](./doescontain%28_%29.md) messages are never sent to any object from within Cocoa itself.
 
-The default implementation for this method provided by `NSObject` returns [`YES`](yes.md) if the receiver is actually an `NSArray` object and an [`indexOfObjectIdentical(to:)`](https://developer.apple.com/documentation/foundation/nsarray/indexofobjectidentical(to:)) message sent to the same object would return something other than `NSNotFound`.
+The default implementation for this method provided by `NSObject` returns [`YES`](../yes.md) if the receiver is actually an `NSArray` object and an [`indexOfObjectIdentical(to:)`](../../Foundation/nsarray/indexofobjectidentical%28to%29.md) message sent to the same object would return something other than `NSNotFound`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # rotate
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allows rotation.
 
@@ -20,15 +21,16 @@ static let rotate: MarkupInteractions
 
 ## See Also
 
-- [static let resize: MarkupInteractions](markupinteractions/resize.md)
+### Configuring interactions
+- [static let resize: MarkupInteractions](./resize.md)
   Allows resizing.
-- [static let move: MarkupInteractions](markupinteractions/move.md)
+- [static let move: MarkupInteractions](./move.md)
   Allows moving.
-- [static let delete: MarkupInteractions](markupinteractions/delete.md)
+- [static let delete: MarkupInteractions](./delete.md)
   Allows deletion.
-- [static let style: MarkupInteractions](markupinteractions/style.md)
+- [static let style: MarkupInteractions](./style.md)
   Allows style changes.
-- [static let select: MarkupInteractions](markupinteractions/select.md)
+- [static let select: MarkupInteractions](./select.md)
   Allows selection.
 
 

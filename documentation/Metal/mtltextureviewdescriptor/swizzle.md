@@ -1,7 +1,8 @@
 # swizzle
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var swizzle: MTLTextureSwizzleChannels { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLTextureSwizzleChannels swizzle;
 ```
 
 #### Discussion

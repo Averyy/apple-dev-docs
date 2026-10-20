@@ -1,7 +1,8 @@
 # arrayView(with:descriptor:aliasing:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func arrayView(with cmdBuf: any MTLCommandBuffer, descriptor: MPSNDArrayDescriptor, aliasing: MPSAliasingStrategy) -> MPSNDArray?
+```
+
+```objc
+- (MPSNDArray *) arrayViewWithCommandBuffer:(id<MTLCommandBuffer>) cmdBuf descriptor:(MPSNDArrayDescriptor *) descriptor aliasing:(MPSAliasingStrategy) aliasing;
 ```
 
 

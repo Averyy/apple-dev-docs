@@ -1,7 +1,8 @@
 # crownTouched
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system records the ECG data when the person touches the crown.
 
@@ -16,9 +17,14 @@ The system records the ECG data when the person touches the crown.
 static var crownTouched: SRElectrocardiogramData.Flags { get }
 ```
 
+```c
+SRElectrocardiogramDataFlagsCrownTouched
+```
+
 ## See Also
 
-- [static var signalInvalid: SRElectrocardiogramData.Flags](srelectrocardiogramdata/flags-swift.struct/signalinvalid.md)
+### Getting context or events
+- [static var signalInvalid: SRElectrocardiogramData.Flags](./signalinvalid.md)
   An invalid sensor signal occurs in the ECG data.
 
 

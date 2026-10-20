@@ -1,14 +1,15 @@
 # kobject_description_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef char kobject_description_t[512];
 ```
 

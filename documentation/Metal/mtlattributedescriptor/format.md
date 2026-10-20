@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the attribute’s data.
 
@@ -19,13 +20,18 @@ The format of the attribute’s data.
 var format: MTLAttributeFormat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MTLAttributeFormat format;
+```
+
 ## See Also
 
-- [var bufferIndex: Int](mtlattributedescriptor/bufferindex.md)
+### Defining attribute location
+- [var bufferIndex: Int](./bufferindex.md)
   The index in the buffer argument table for the buffer that contains the data for this attribute.
-- [var offset: Int](mtlattributedescriptor/offset.md)
+- [var offset: Int](./offset.md)
   The offset, in bytes, from the start of the buffer that contains the attribute data to the start of the data itself.
-- [enum MTLAttributeFormat](mtlattributeformat.md)
+- [enum MTLAttributeFormat](../mtlattributeformat.md)
   The data format options for acceleration structures.
 
 

@@ -1,7 +1,8 @@
 # SecKeychainAttributeList
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A list of keychain attributes.
 
@@ -14,21 +15,25 @@ A list of keychain attributes.
 struct SecKeychainAttributeList
 ```
 
+```c
+struct SecKeychainAttributeList;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var attr: UnsafeMutablePointer<SecKeychainAttribute>?](seckeychainattributelist/attr.md)
+- [var attr: UnsafeMutablePointer<SecKeychainAttribute>?](./seckeychainattributelist/attr.md)
   A pointer to the first keychain attribute in the array.
-- [var count: UInt32](seckeychainattributelist/count.md)
+- [var count: UInt32](./seckeychainattributelist/count.md)
   The number of keychain attributes in the array.
 ### Initializers
-- [init()](seckeychainattributelist/init.md)
-- [init(count: UInt32, attr: UnsafeMutablePointer<SecKeychainAttribute>?)](seckeychainattributelist/init(count:attr:).md)
+- [init()](./seckeychainattributelist/init%28%29.md)
+- [init(count: UInt32, attr: UnsafeMutablePointer<SecKeychainAttribute>?)](./seckeychainattributelist/init%28count,attr%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

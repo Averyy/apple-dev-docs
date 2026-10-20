@@ -1,7 +1,8 @@
 # resize(_:sizeTensor:scaleOffsetTensor:mode:layout:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resamples input images to given size using the provided scale and offset. Destination indices are computed using
 
@@ -17,6 +18,10 @@ Resamples input images to given size using the provided scale and offset. Destin
 
 ```swift
 func resize(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTensor, scaleOffsetTensor scaleOffset: MPSGraphTensor, mode: MPSGraphResizeMode, layout: MPSGraphTensorNamedDataLayout, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleOffsetTensor:(MPSGraphTensor *) scaleOffset mode:(MPSGraphResizeMode) mode layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
 #### Return Value

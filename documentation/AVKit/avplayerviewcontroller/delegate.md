@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the player view controller.
 
@@ -16,6 +17,10 @@ The delegate object for the player view controller.
 
 ```swift
 weak var delegate: (any AVPlayerViewControllerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<AVPlayerViewControllerDelegate> delegate;
 ```
 
 

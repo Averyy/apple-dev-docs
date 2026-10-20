@@ -1,7 +1,8 @@
 # AssistantSchemas.CameraIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer camera functionality.
 
@@ -23,24 +24,24 @@ protocol CameraIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var openInCaptureMode: some AssistantSchemas.Intent](assistantschemas/cameraintent/openincapturemode.md)
+- [var openInCaptureMode: some AssistantSchemas.Intent](./cameraintent/openincapturemode.md)
   The app intent conforms to the schema for opening the app’s camera functionality, ready to capture a photo or video.
-- [var setDevice: some AssistantSchemas.Intent](assistantschemas/cameraintent/setdevice.md)
+- [var setDevice: some AssistantSchemas.Intent](./cameraintent/setdevice.md)
   The app intent conforms to the schema for choosing a device to capture a photo.
-- [var startCapture: some AssistantSchemas.Intent](assistantschemas/cameraintent/startcapture.md)
+- [var startCapture: some AssistantSchemas.Intent](./cameraintent/startcapture.md)
   The app intent conforms to the schema for starting the capture of a photo or video.
-- [var stopCapture: some AssistantSchemas.Intent](assistantschemas/cameraintent/stopcapture.md)
+- [var stopCapture: some AssistantSchemas.Intent](./cameraintent/stopcapture.md)
   The app intent conforms to the schema for stopping the capture of a photo or video.
-- [var switchDevice: some AssistantSchemas.Intent](assistantschemas/cameraintent/switchdevice.md)
+- [var switchDevice: some AssistantSchemas.Intent](./cameraintent/switchdevice.md)
   The app intent conforms to the schema for switching between cameras or devices.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

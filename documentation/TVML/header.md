@@ -15,41 +15,42 @@ The `header` element displays additional information that describes its containi
 </header>
 ```
 
-##### Subelements of Header
+##### Subelements of header
 
-- [`badge`](badge.md)
-- [`description`](description.md)
-- [`text`](text.md)
-- [`title`](title.md)
+- [badge](./badge.md)
+- [description](./description.md)
+- [text](./text.md)
+- [title](./title.md)
 
-##### Elements That Use Header
+##### Elements that Use header
 
-- [`grid`](grid.md)
-- [`info`](info.md)
-- [`list`](list.md)
-- [`section`](section.md)
-- [`shelf`](shelf.md)
+- [grid](./grid.md)
+- [info](./info.md)
+- [list](./list.md)
+- [section](./section.md)
+- [shelf](./shelf.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [footer](footer.md)
+### Header and Footer Elements
+- [footer](./footer.md)
   Contains information displayed at the bottom of an element.
 
 

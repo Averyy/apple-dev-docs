@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user-visible string representing the record.
 
@@ -14,9 +15,14 @@ A user-visible string representing the record.
 var displayName: String! { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * displayName;
+```
+
 ## See Also
 
-- [var uniqueId: String!](abrecord-swift.class/uniqueid.md)
+### Getting Identifying Information
+- [var uniqueId: String!](./uniqueid.md)
   Returns the unique ID for a record.
 
 

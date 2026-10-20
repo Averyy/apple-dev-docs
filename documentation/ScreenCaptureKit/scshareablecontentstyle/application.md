@@ -1,7 +1,8 @@
 # SCShareableContentStyle.application
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stream is currently presenting one or more applications.
 
@@ -15,13 +16,18 @@ The stream is currently presenting one or more applications.
 case application
 ```
 
+```c
+SCShareableContentStyleApplication
+```
+
 ## See Also
 
-- [SCShareableContentStyle.display](scshareablecontentstyle/display.md)
+### Content styles
+- [SCShareableContentStyle.display](./display.md)
   The stream is currently presenting a complete display.
-- [SCShareableContentStyle.none](scshareablecontentstyle/none.md)
+- [SCShareableContentStyle.none](./none.md)
   The stream isn’t currently presenting any content.
-- [SCShareableContentStyle.window](scshareablecontentstyle/window.md)
+- [SCShareableContentStyle.window](./window.md)
   The stream is currently presenting one or more windows.
 
 

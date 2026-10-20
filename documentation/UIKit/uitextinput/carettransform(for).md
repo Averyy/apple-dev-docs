@@ -1,7 +1,8 @@
 # caretTransform(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the transform to apply to the caret prior to drawing.
 
@@ -18,6 +19,10 @@ Returns the transform to apply to the caret prior to drawing.
 optional func caretTransform(for position: UITextPosition) -> CGAffineTransform
 ```
 
+```objc
+- (CGAffineTransform) caretTransformForPosition:(UITextPosition *) position;
+```
+
 #### Return Value
 
 The transform to apply to the caret during drawing.
@@ -32,7 +37,8 @@ Use this method to provide the text system with the same transform you apply to 
 
 ## See Also
 
-- [func caretRect(for: UITextPosition) -> CGRect](uitextinput/caretrect(for:).md)
+### Providing the caret layout information
+- [func caretRect(for: UITextPosition) -> CGRect](./caretrect%28for%29.md)
   Returns a rectangle to draw the caret at a specified insertion point.
 
 

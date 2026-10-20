@@ -1,7 +1,8 @@
 # kSecRandomDefault
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An alias for the default random number generator.
 
@@ -20,9 +21,13 @@ An alias for the default random number generator.
 let kSecRandomDefault: SecRandomRef
 ```
 
+```c
+extern SecRandomRef const kSecRandomDefault;
+```
+
 #### Discussion
 
-When passed to the [`SecRandomCopyBytes(_:_:_:)`](secrandomcopybytes(_:_:_:).md) function as the random number generator reference, this constant indicates that the default number generator should be used.
+When passed to the [`SecRandomCopyBytes(_:_:_:)`](./secrandomcopybytes%28_,_,_%29.md) function as the random number generator reference, this constant indicates that the default number generator should be used.
 
 This constant is a synonym for `NULL`.
 

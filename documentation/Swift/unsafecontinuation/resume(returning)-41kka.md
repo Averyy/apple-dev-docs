@@ -1,7 +1,8 @@
 # resume(returning:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task that’s awaiting the continuation by returning the given value.
 

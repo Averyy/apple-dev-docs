@@ -1,7 +1,8 @@
 # runModal(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the Print panel and runs the modal loop using the specified printing information.
 
@@ -14,6 +15,10 @@ Displays the Print panel and runs the modal loop using the specified printing in
 func runModal(with printInfo: NSPrintInfo) -> Int
 ```
 
+```objc
+- (NSInteger) runModalWithPrintInfo:(NSPrintInfo *) printInfo;
+```
+
 #### Return Value
 
 `NSCancelButton` if the user clicks the Cancel button; otherwise `NSOKButton`.
@@ -24,8 +29,9 @@ func runModal(with printInfo: NSPrintInfo) -> Int
 
 ## See Also
 
-- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](nsprintpanel/beginsheet(using:on:completionhandler:).md)
-- [func runModal() -> Int](nsprintpanel/runmodal.md)
+### Running the Panel
+- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](./beginsheet%28using,on,completionhandler%29.md)
+- [func runModal() -> Int](./runmodal%28%29.md)
   Displays the Print panel and begins the modal loop.
 
 

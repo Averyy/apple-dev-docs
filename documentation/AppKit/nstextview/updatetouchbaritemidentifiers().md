@@ -1,7 +1,8 @@
 # updateTouchBarItemIdentifiers()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+
@@ -12,11 +13,16 @@
 func updateTouchBarItemIdentifiers()
 ```
 
+```objc
+- (void) updateTouchBarItemIdentifiers;
+```
+
 ## See Also
 
-- [var allowsCharacterPickerTouchBarItem: Bool](nstextview/allowscharacterpickertouchbaritem.md)
-- [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](nstextview/candidatelisttouchbaritem.md)
-- [func updateTextTouchBarItems()](nstextview/updatetexttouchbaritems.md)
+### Interacting with the Touch Bar
+- [var allowsCharacterPickerTouchBarItem: Bool](./allowscharacterpickertouchbaritem.md)
+- [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](./candidatelisttouchbaritem.md)
+- [func updateTextTouchBarItems()](./updatetexttouchbaritems%28%29.md)
 
 
 ---

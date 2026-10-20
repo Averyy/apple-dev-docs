@@ -1,7 +1,8 @@
 # sortOrder
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Default sorting order by name.
 
@@ -19,13 +20,26 @@ Default sorting order by name.
 var sortOrder: CNContactSortOrder { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) CNContactSortOrder sortOrder;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) CNContactSortOrder sortOrder;
+```
+
 #### Discussion
 
 Sort order is determined by the operating system’s configured language or overridden by the user.
 
 ## See Also
 
-- [var countryCode: String](cncontactsuserdefaults/countrycode.md)
+### Getting the Default Values
+- [var countryCode: String](./countrycode.md)
   An ISO country code.
 
 

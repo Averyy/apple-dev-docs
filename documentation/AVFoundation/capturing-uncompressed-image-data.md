@@ -1,6 +1,7 @@
 # Capturing uncompressed image data
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Get processed image data without compression to use for filtering or lossless output.
 
@@ -10,11 +11,11 @@ Typical photography workflows save images in a compressed format such as HEIF/HE
 
 > **Note**:  Uncompressed image data is not to be confused with unprocessed, or RAW, image data. RAW data is minimally altered data direct from a camera’s image sensor. Uncompressed image data has been processed to create a displayable image, but hasn’t been compressed to create a small file.
 
-In iOS, capturing uncompressed image data requires minor changes to the basic photography workflow covered in [`Capturing still and Live Photos`](capturing-still-and-live-photos.md).
+In iOS, capturing uncompressed image data requires minor changes to the basic photography workflow covered in [Capturing still and Live Photos](./capturing-still-and-live-photos.md).
 
-##### Choose Uncompressed Format Settings
+##### Choose uncompressed format settings
 
-To capture in an uncompressed format, create a photo settings object with [`init(format:)`](avcapturephotosettings/init(format:).md). In the format dictionary, specify the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) with one of the values listed in the photo output’s [`availablePhotoPixelFormatTypes`](avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array. The example below chooses a 32-bit BGRA pixel format, which is useful in some GPU processing workflows:
+To capture in an uncompressed format, create a photo settings object with [`init(format:)`](./avcapturephotosettings/init%28format%29.md). In the format dictionary, specify the [`kCVPixelBufferPixelFormatTypeKey`](../CoreVideo/kcvpixelbufferpixelformattypekey.md) with one of the values listed in the photo output’s [`availablePhotoPixelFormatTypes`](./avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array. The example below chooses a 32-bit BGRA pixel format, which is useful in some GPU processing workflows:
 
 ```swift
 // Choose a 32-bit BGRA pixel format and verify the camera supports it.
@@ -32,9 +33,9 @@ self.photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
 
 ```
 
-##### Handle Results
+##### Handle results
 
-As with other formats, you receive uncompressed data capture results to your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method as an [`AVCapturePhoto`](avcapturephoto.md) object. To access the uncompressed pixel data directly, use the photo’s [`pixelBuffer`](avcapturephoto/pixelbuffer.md) property.
+As with other formats, you receive uncompressed data capture results to your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method as an [`AVCapturePhoto`](./avcapturephoto.md) object. To access the uncompressed pixel data directly, use the photo’s [`pixelBuffer`](./avcapturephoto/pixelbuffer.md) property.
 
 For example, the following code applies a Core Image filter directly to the pixel buffer and writes the filtered image to a PNG file:
 
@@ -60,15 +61,16 @@ class UncompressedCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
 }
 ```
 
-Alternatively, to get an uncompressed photo ready for writing to a file, use the photo’s [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md) method to get the data formatted as a TIFF file.
+Alternatively, to get an uncompressed photo ready for writing to a file, use the photo’s [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) method to get the data formatted as a TIFF file.
 
 ## See Also
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+### More capture options
+- [Capturing photos with depth](./capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](./capturing-a-bracketed-photo-sequence.md)
   Capture several photos at once, varying parameters like exposure duration or light sensitivity.
-- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
+- [Capturing thumbnail and preview images](./capturing-thumbnail-and-preview-images.md)
   Enable delivery of reduced-size images with the main image in a photo capture.
 
 

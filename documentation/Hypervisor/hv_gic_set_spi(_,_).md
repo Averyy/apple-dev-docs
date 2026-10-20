@@ -1,7 +1,8 @@
 # hv_gic_set_spi(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Triggers a shared peripheral interrupt (SPI).
 
@@ -14,15 +15,19 @@ Triggers a shared peripheral interrupt (SPI).
 func hv_gic_set_spi(_ intid: UInt32, _ level: Bool) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_gic_set_spi(uint32_t intid, bool level);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) on success; otherwise, an error code.
+[`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
 #### Discussion
 
-Setting a level value causes level interrupts. To cause an edge interrupt, call this method with a level of [`true`](https://developer.apple.com/documentation/swift/true). The framework ignores a level of [`false`](https://developer.apple.com/documentation/swift/false) for an edge interrupt.
+Setting a level value causes level interrupts. To cause an edge interrupt, call this method with a level of [`true`](../Swift/true.md). The framework ignores a level of [`false`](../Swift/false.md) for an edge interrupt.
 
-An interrupt identifier outside of [`hv_gic_get_spi_interrupt_range(_:_:)`](hv_gic_get_spi_interrupt_range(_:_:).md) or in the message signaled interrupt (MSI) range returns a [`HV_BAD_ARGUMENT`](hv_bad_argument.md) error code.
+An interrupt identifier outside of [`hv_gic_get_spi_interrupt_range(_:_:)`](./hv_gic_get_spi_interrupt_range%28_,_%29.md) or in the message signaled interrupt (MSI) range returns a [`HV_BAD_ARGUMENT`](./hv_bad_argument.md) error code.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ An interrupt identifier outside of [`hv_gic_get_spi_interrupt_range(_:_:)`](hv_g
 
 ## See Also
 
-- [func hv_gic_send_msi(hv_ipa_t, UInt32) -> hv_return_t](hv_gic_send_msi(_:_:).md)
+### Sending interrupts
+- [func hv_gic_send_msi(hv_ipa_t, UInt32) -> hv_return_t](./hv_gic_send_msi%28_,_%29.md)
   Sends a message signaled interrupt (MSI).
 
 

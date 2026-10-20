@@ -1,17 +1,22 @@
 # IOBluetoothHandsFreeIndicatorRoam
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The command string you use to show a roaming status indicator on a phone.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 let IOBluetoothHandsFreeIndicatorRoam: String
+```
+
+```c
+extern NSString * const IOBluetoothHandsFreeIndicatorRoam;
 ```
 
 #### Discussion
@@ -23,9 +28,10 @@ The possible values for the roaming status indicator are:
 
 ## See Also
 
-- [let IOBluetoothHandsFreeIndicatorSignal: String](iobluetoothhandsfreeindicatorsignal.md)
+### Phone Network Connection
+- [let IOBluetoothHandsFreeIndicatorSignal: String](./iobluetoothhandsfreeindicatorsignal.md)
   The command string you use to show a signal strength indicator on a phone.
-- [let IOBluetoothHandsFreeIndicatorService: String](iobluetoothhandsfreeindicatorservice.md)
+- [let IOBluetoothHandsFreeIndicatorService: String](./iobluetoothhandsfreeindicatorservice.md)
   The command string you use to show a carrier network connection indicator on a phone.
 
 

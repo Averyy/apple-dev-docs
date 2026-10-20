@@ -1,14 +1,15 @@
 # cancel()
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the current request from the relying party.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(intent:phrases:shortTitle:systemImageName:parameterPresentation:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an App Shortcut with phrases that run the app intent, a title, an image, and specified parameters.
 
@@ -11,7 +12,7 @@ Initializes an App Shortcut with phrases that run the app intent, a title, an im
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -34,9 +35,10 @@ Use this initializer to create an App Shortcut for your app intent that people d
 
 ## See Also
 
-- [init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource, systemImageName: String)](appshortcut/init(intent:phrases:shorttitle:systemimagename:)-8yntq.md)
+### Creating an app shortcut
+- [init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource, systemImageName: String)](./init%28intent,phrases,shorttitle,systemimagename%29-8yntq.md)
   Initializes an App Shortcut with phrases that run the app intent, a title, and an image.
-- [init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource?, systemImageName: String?)](appshortcut/init(intent:phrases:shorttitle:systemimagename:)-2hk1x.md)
+- [init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource?, systemImageName: String?)](./init%28intent,phrases,shorttitle,systemimagename%29-2hk1x.md)
   Initializes an App Shortcut with phrases that run the app intent, a title, and an image.
 
 

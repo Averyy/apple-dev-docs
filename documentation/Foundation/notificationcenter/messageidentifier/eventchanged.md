@@ -1,7 +1,8 @@
 # eventChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static var eventChanged: NotificationCenter.BaseMessageIdentifier<NSPersistentCloudKitContainer.EventChangedMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSPersistentCloudKitContainer.EventChangedMessage>`.
 
 
 ---

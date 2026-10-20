@@ -1,7 +1,8 @@
 # HTMLAllCollection
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLAllCollection
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](htmlallcollection/1629914-length.md)
+- [length](./htmlallcollection/api-1629914-length.md)
 ### Instance Methods
-- [item](htmlallcollection/1633998-item.md)
-- [namedItem](htmlallcollection/1629359-nameditem.md)
-- [tags](htmlallcollection/1630242-tags.md)
+- [item](./htmlallcollection/api-1633998-item.md)
+- [namedItem](./htmlallcollection/api-1629359-nameditem.md)
+- [tags](./htmlallcollection/api-1630242-tags.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DirectionalLightComponent.Shadow.ShadowMapCullMode
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -19,11 +20,12 @@ typealias ShadowMapCullMode = MaterialParameterTypes.FaceCulling
 
 ## See Also
 
-- [struct DirectionalLightComponent](directionallightcomponent.md)
+### Directional lights and their shadows
+- [struct DirectionalLightComponent](../../directionallightcomponent.md)
   A component that defines a directional light source.
-- [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
+- [DirectionalLightComponent.Shadow](../shadow.md)
   A directional light component that adds shadows to entities that it illuminates
-- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype.md)
+- [DirectionalLightComponent.Shadow.ShadowProjectionType](./shadowprojectiontype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PermissionResult.askToApprove(didSend:)
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user tapped “Ask to Approve” and sent the message.
 

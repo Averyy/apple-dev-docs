@@ -1,7 +1,8 @@
 # MLCustomModel
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that defines the behavior of a custom model.
 
@@ -20,9 +21,13 @@ An interface that defines the behavior of a custom model.
 protocol MLCustomModel
 ```
 
+```objc
+@protocol MLCustomModel
+```
+
 #### Overview
 
-To integrate your custom model with Core ML, adopt the [`MLCustomModel`](mlcustommodel.md) protocol in the implementation of your custom model. If you use a Swift class for your custom implementation, make it accessible to Core ML by using the `@objc(`*name*`)` attribute.
+To integrate your custom model with Core ML, adopt the [`MLCustomModel`](./mlcustommodel.md) protocol in the implementation of your custom model. If you use a Swift class for your custom implementation, make it accessible to Core ML by using the `@objc(`*name*`)` attribute.
 
 ```swift
 @objc(MyCustomModel)
@@ -36,15 +41,15 @@ This defines the Objective-C name for the class, which Core ML needs to access y
 ## Topics
 
 ### Creating the model
-- [init(modelDescription: MLModelDescription, parameters: [String : Any]) throws](mlcustommodel/init(modeldescription:parameters:).md)
+- [init(modelDescription: MLModelDescription, parameters: [String : Any]) throws](./mlcustommodel/init%28modeldescription,parameters%29.md)
   Creates a custom model with the given description and parameters.
 ### Making predictions
-- [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider](mlcustommodel/prediction(from:options:).md)
+- [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider](./mlcustommodel/prediction%28from,options%29.md)
   Predicts output values from the given input features.
-- [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](mlcustommodel/predictions(from:options:).md)
+- [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](./mlcustommodel/predictions%28from,options%29.md)
   Predicts output values from the given batch of input features.
 ### Initializers
-- [init(modelDescription: MLModelDescription, parameterDictionary: [String : Any]) throws](mlcustommodel/init(modeldescription:parameterdictionary:).md)
+- [init(modelDescription: MLModelDescription, parameterDictionary: [String : Any]) throws](./mlcustommodel/init%28modeldescription,parameterdictionary%29.md)
 
 
 ---

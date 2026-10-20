@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Transport Extension  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The accessory associated with this feature session.
@@ -14,6 +15,12 @@ The accessory associated with this feature session.
 ```swift
 var accessory: ASAccessory { get }
 ```
+
+## Default Implementations
+
+### AccessoryFeatureSession Implementations
+- [var accessory: ASAccessory](./accessory-33dc1.md)
+  The accessory associated with this feature session.
 
 
 ---

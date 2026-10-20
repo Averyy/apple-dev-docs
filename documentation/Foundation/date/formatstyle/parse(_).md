@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses a string into a date.
 
@@ -26,7 +27,7 @@ An instance of `Date` parsed from the input string.
 
 #### Discussion
 
-The [`parse(_:)`](date/formatstyle/parse(_:).md) instance method attempts to parse a provided string into an instance of date using the source date format style. The function throws an error if it can’t parse the input string into a date instance.
+The [`parse(_:)`](./parse%28_%29.md) instance method attempts to parse a provided string into an instance of date using the source date format style. The function throws an error if it can’t parse the input string into a date instance.
 
 The date format style guides parsing the date instance from an input string, as the example below illustrates.
 
@@ -55,9 +56,10 @@ let yourBirthday = try? birthdayFormatStyle.parse(yourBirthdayString)
 
 ## See Also
 
-- [var parseStrategy: Date.FormatStyle](date/formatstyle/parsestrategy.md)
+### Parsing Dates
+- [var parseStrategy: Date.FormatStyle](./parsestrategy.md)
   The strategy used to parse a string into a date.
-- [struct ParseStrategy](date/parsestrategy.md)
+- [struct ParseStrategy](../parsestrategy.md)
   Options for parsing string representations of dates to create a `Date` instance.
 
 

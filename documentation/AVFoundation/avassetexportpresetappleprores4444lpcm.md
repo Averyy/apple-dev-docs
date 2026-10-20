@@ -1,7 +1,8 @@
 # AVAssetExportPresetAppleProRes4444LPCM
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A preset to export a QuickTime movie with Apple ProRes 4444 video and LPCM audio.
 
@@ -17,9 +18,14 @@ A preset to export a QuickTime movie with Apple ProRes 4444 video and LPCM audio
 let AVAssetExportPresetAppleProRes4444LPCM: String
 ```
 
+```c
+extern NSString * const AVAssetExportPresetAppleProRes4444LPCM;
+```
+
 ## See Also
 
-- [let AVAssetExportPresetAppleProRes422LPCM: String](avassetexportpresetappleprores422lpcm.md)
+### Apple ProRes presets
+- [let AVAssetExportPresetAppleProRes422LPCM: String](./avassetexportpresetappleprores422lpcm.md)
   A preset to export a QuickTime movie with Apple ProRes 422 video and LPCM audio.
 
 

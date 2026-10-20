@@ -7,7 +7,7 @@ for use by disk drivers, clients of IOATADevice only. IOATADevice and IOATAContr
 
 ## Declaration
 
-```swift
+```c
 void* refCon2;
 ```
 
@@ -15,9 +15,10 @@ void* refCon2;
 
 ## See Also
 
-- [refCon](ioatacommand/refcon.md)
+### Instance Variables
+- [refCon](./refcon.md)
   for use by disk drivers, clients of IOATADevice only. IOATADevice and IOATAControllers shall not use this field in any manner.
-- [fExpansionData](ioatacommand/fexpansiondata.md)
+- [fExpansionData](./fexpansiondata.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSDecompressionFailedError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error code value that indicates a failure to decompress data using the provided algorithm.
 
@@ -22,17 +23,18 @@ var NSDecompressionFailedError: Int { get }
 
 ## See Also
 
-- [func compressed(using: NSData.CompressionAlgorithm) throws -> Self](nsdata/compressed(using:).md)
+### Compressing and Decompressing Data
+- [func compressed(using: NSData.CompressionAlgorithm) throws -> Self](./nsdata/compressed%28using%29.md)
   Returns a new data object by compressing the data object’s bytes.
-- [func decompressed(using: NSData.CompressionAlgorithm) throws -> Self](nsdata/decompressed(using:).md)
+- [func decompressed(using: NSData.CompressionAlgorithm) throws -> Self](./nsdata/decompressed%28using%29.md)
   Returns a new data object by decompressing data object’s bytes.
-- [NSData.CompressionAlgorithm](nsdata/compressionalgorithm.md)
+- [NSData.CompressionAlgorithm](./nsdata/compressionalgorithm.md)
   An algorithm that indicates how to compress or decompress data.
-- [var NSCompressionErrorMaximum: Int](nscompressionerrormaximum-swift.var.md)
+- [var NSCompressionErrorMaximum: Int](./nscompressionerrormaximum-swift.var.md)
   The end of the range of error codes reserved for compression errors.
-- [var NSCompressionErrorMinimum: Int](nscompressionerrorminimum-swift.var.md)
+- [var NSCompressionErrorMinimum: Int](./nscompressionerrorminimum-swift.var.md)
   The start of the range of error codes reserved for compression errors.
-- [var NSCompressionFailedError: Int](nscompressionfailederror-swift.var.md)
+- [var NSCompressionFailedError: Int](./nscompressionfailederror-swift.var.md)
   An error code value that indicates a failure to compress data using the provided algorithm.
 
 

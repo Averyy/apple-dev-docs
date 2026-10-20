@@ -1,7 +1,8 @@
 # textView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text container’s text view.
 
@@ -14,6 +15,10 @@ The text container’s text view.
 weak var textView: NSTextView? { get set }
 ```
 
+```objc
+@property (weak, nullable) NSTextView * textView;
+```
+
 #### Discussion
 
 A text container doesn’t need a text view to calculate line fragment rectangles, but must have one to display text.
@@ -22,10 +27,11 @@ You can use this property to disconnect a text view from a group of text system 
 
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nstextcontainer/layoutmanager.md)
+### Managing text components
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   The text container’s layout manager.
-- [var textLayoutManager: NSTextLayoutManager?](nstextcontainer/textlayoutmanager.md)
-- [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
+- [var textLayoutManager: NSTextLayoutManager?](./textlayoutmanager.md)
+- [func replaceLayoutManager(NSLayoutManager)](./replacelayoutmanager%28_%29.md)
   Replaces the layout manager for the group of text system objects that contains the text container.
 
 

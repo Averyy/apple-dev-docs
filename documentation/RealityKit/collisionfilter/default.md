@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default collision filter.
 
@@ -11,7 +12,7 @@ The default collision filter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ static let `default`: CollisionFilter
 
 #### Discussion
 
-Entities with a [`default`](collisionfilter/default.md) collision filter have a [`group`](collisionfilter/group.md) of [`default`](collisiongroup/default.md) and a [`mask`](collisionfilter/mask.md) of [`all`](collisiongroup/all.md).
+Entities with a [`default`](./default.md) collision filter have a [`group`](./group.md) of [`default`](../collisiongroup/default.md) and a [`mask`](./mask.md) of [`all`](../collisiongroup/all.md).
 
 ## See Also
 
-- [init(group: CollisionGroup, mask: CollisionGroup)](collisionfilter/init(group:mask:).md)
+### Creating a collision filter
+- [init(group: CollisionGroup, mask: CollisionGroup)](./init%28group,mask%29.md)
   Creates a collision filter.
-- [static let sensor: CollisionFilter](collisionfilter/sensor.md)
+- [static let sensor: CollisionFilter](./sensor.md)
   A collision filter for an entity that collides with everything.
 
 

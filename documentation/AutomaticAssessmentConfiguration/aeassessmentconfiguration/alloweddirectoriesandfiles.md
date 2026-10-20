@@ -1,7 +1,8 @@
 # allowedDirectoriesAndFiles
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of directories and files that remain visible in the Finder during an assessment.
 
@@ -13,6 +14,10 @@ The set of directories and files that remain visible in the Finder during an ass
 
 ```swift
 var allowedDirectoriesAndFiles: Set<URL>? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSSet<NSURL *> * allowedDirectoriesAndFiles;
 ```
 
 #### Discussion

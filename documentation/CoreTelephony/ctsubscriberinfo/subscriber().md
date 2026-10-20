@@ -1,14 +1,17 @@
 # subscriber()
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the cellular network subscribers.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 6.0+
+- iOS 6.0+ - Deprecated in 12.1
+- iPadOS 6.0+ - Deprecated in 12.1
+- Mac Catalyst 6.0+ - Deprecated in 12.1
+
+> **Deprecated**: Use [`subscribers()`](./subscribers%28%29.md) instead.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ Returns the cellular network subscribers.
 class func subscriber() -> CTSubscriber
 ```
 
+```objc
++ (CTSubscriber *) subscriber;
+```
+
 #### Return Value
 
-An array of [`CTSubscriber`](ctsubscriber.md) instances.
+An array of [`CTSubscriber`](../ctsubscriber.md) instances.
 
 ## See Also
 
-- [class func subscribers() -> [CTSubscriber]](ctsubscriberinfo/subscribers.md)
+### Getting Subscriber Information
+- [class func subscribers() -> [CTSubscriber]](./subscribers%28%29.md)
   Returns the cellular network subscribers.
 
 

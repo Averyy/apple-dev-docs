@@ -1,7 +1,8 @@
 # sizeMultiplierAtEndOfLifespan
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 At the end of the particle lifespan, the particle’s size will be it’s initial size times this multiplier. Defaults to 0.1.
 

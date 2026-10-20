@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The index path at which to insert the item into the table view.
@@ -16,6 +17,10 @@ The index path at which to insert the item into the table view.
 
 ```swift
 var destinationIndexPath: IndexPath? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSIndexPath * destinationIndexPath;
 ```
 
 

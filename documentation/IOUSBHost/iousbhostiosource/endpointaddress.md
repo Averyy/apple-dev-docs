@@ -1,7 +1,8 @@
 # endpointAddress
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pipe or stream’s endpoint address.
 
@@ -15,11 +16,16 @@ The pipe or stream’s endpoint address.
 var endpointAddress: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger endpointAddress;
+```
+
 ## See Also
 
-- [var deviceAddress: Int](iousbhostiosource/deviceaddress.md)
+### Obtaining Device Information
+- [var deviceAddress: Int](./deviceaddress.md)
   The device’s bus address.
-- [var hostInterface: IOUSBHostInterface](iousbhostiosource/hostinterface.md)
+- [var hostInterface: IOUSBHostInterface](./hostinterface.md)
   The interface for the input/output source.
 
 

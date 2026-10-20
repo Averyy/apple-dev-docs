@@ -1,7 +1,8 @@
 # configurationRemoved
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An operation the system invokes when the extension configuration is removed from the system.
 
@@ -16,6 +17,10 @@ An operation the system invokes when the extension configuration is removed from
 
 ```swift
 static let configurationRemoved: ASAuthorizationProviderAuthorizationOperation
+```
+
+```c
+extern ASAuthorizationProviderAuthorizationOperation const ASAuthorizationProviderAuthorizationOperationConfigurationRemoved;
 ```
 
 

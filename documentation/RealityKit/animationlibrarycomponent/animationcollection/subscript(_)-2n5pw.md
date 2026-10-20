@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses animations in the collection within an index range.
 
@@ -19,6 +20,16 @@ Accesses animations in the collection within an index range.
 subscript(bounds: Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(key: String) -> AnimationResource? { get set }
+```
+
+```swift
+subscript(position: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element { get }
+```
+
 #### Return Value
 
 A subsequence of animation resources in the range of `bounds`.
@@ -29,13 +40,14 @@ A subsequence of animation resources in the range of `bounds`.
 
 ## See Also
 
-- [subscript(String) -> AnimationResource?](animationlibrarycomponent/animationcollection/subscript(_:)-4sfyo.md)
+### Accessing animations
+- [subscript(String) -> AnimationResource?](./subscript%28_%29-4sfyo.md)
   Accesses a single animation in the collection with a key.
-- [subscript(AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element](animationlibrarycomponent/animationcollection/subscript(_:)-45p83.md)
+- [subscript(AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element](./subscript%28_%29-45p83.md)
   Accesses a single animation in the collection at an index.
-- [AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subsequence.md)
+- [AnimationLibraryComponent.AnimationCollection.SubSequence](./subsequence.md)
   A sequence that represents a contiguous subrange of animations in the collection.
-- [AnimationLibraryComponent.AnimationCollection.Element](animationlibrarycomponent/animationcollection/element.md)
+- [AnimationLibraryComponent.AnimationCollection.Element](./element.md)
   A key-value pair from the collection consisting of the name of an animation and the animation itself.
 
 

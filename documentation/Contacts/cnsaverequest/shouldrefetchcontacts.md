@@ -1,7 +1,8 @@
 # shouldRefetchContacts
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to refetch the added and updated contacts after the save request executes.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether to refetch the added and updated contacts
 var shouldRefetchContacts: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL shouldRefetchContacts;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), so the save request refetches added and updated contacts. Set to [`false`](https://developer.apple.com/documentation/swift/false) to suppress the refetch behavior and reduce the save request’s execution time.
+The default value is [`true`](../../Swift/true.md), so the save request refetches added and updated contacts. Set to [`false`](../../Swift/false.md) to suppress the refetch behavior and reduce the save request’s execution time.
 
 ## See Also
 
-- [var transactionAuthor: String?](cnsaverequest/transactionauthor.md)
+### Configuring the save request
+- [var transactionAuthor: String?](./transactionauthor.md)
   A string that identifies the author of the transaction.
 
 

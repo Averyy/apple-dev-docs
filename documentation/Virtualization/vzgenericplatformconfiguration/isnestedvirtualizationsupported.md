@@ -1,7 +1,8 @@
 # isNestedVirtualizationSupported
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that describes whether the platform configuration supports nested virtualization.
 
@@ -14,11 +15,15 @@ A Boolean value that describes whether the platform configuration supports neste
 class var isNestedVirtualizationSupported: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isNestedVirtualizationSupported) BOOL nestedVirtualizationSupported;
+```
+
 #### Discussion
 
 > ❗ **Important**:  Nested virtualization is available for Mac with the M3 chip, and later.
 
-Use this property to check whether support is available for the platform. As the following example shows, if the framework supports nested virtualization on the host, use [`isNestedVirtualizationEnabled`](vzgenericplatformconfiguration/isnestedvirtualizationenabled.md) to enable the feature:
+Use this property to check whether support is available for the platform. As the following example shows, if the framework supports nested virtualization on the host, use [`isNestedVirtualizationEnabled`](./isnestedvirtualizationenabled.md) to enable the feature:
 
 **Swift**:
 
@@ -38,11 +43,12 @@ if (needsNestedVirtualization && VZGenericPlatformConfiguration.isNestedVirtuali
 
 ## See Also
 
-- [var machineIdentifier: VZGenericMachineIdentifier](vzgenericplatformconfiguration/machineidentifier.md)
+### Identifying the platform configuration
+- [var machineIdentifier: VZGenericMachineIdentifier](./machineidentifier.md)
   A value that represents a unique identifier for the virtual machine.
-- [var isNestedVirtualizationEnabled: Bool](vzgenericplatformconfiguration/isnestedvirtualizationenabled.md)
+- [var isNestedVirtualizationEnabled: Bool](./isnestedvirtualizationenabled.md)
   A Boolean value that indicates whether nested virtualization is in an enabled state.
-- [class VZGenericMachineIdentifier](vzgenericmachineidentifier.md)
+- [class VZGenericMachineIdentifier](../vzgenericmachineidentifier.md)
   An object that represents a unique identifier for a virtual machine.
 
 

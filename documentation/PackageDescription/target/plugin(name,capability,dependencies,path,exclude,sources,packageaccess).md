@@ -1,7 +1,8 @@
 # plugin(name:capability:dependencies:path:exclude:sources:packageAccess:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Defines a new package plug-in target.
 
@@ -24,7 +25,7 @@ A plug-in target provides custom build commands to SwiftPM (and to any IDEs base
 
 The capability determines what kind of build commands it can add. Besides determining at what point in the build those commands run, the capability determines the context that is available to the plug-in and the kinds of commands it can create.
 
-In the initial version of this proposal, three capabilities are provided: prebuild, build tool, and postbuild. For more information, see the declaration of each capability under [`Target.PluginCapability`](target/plugincapability-swift.enum.md).
+In the initial version of this proposal, three capabilities are provided: prebuild, build tool, and postbuild. For more information, see the declaration of each capability under [`Target.PluginCapability`](./plugincapability-swift.enum.md).
 
 The package plug-in itself is implemented using a Swift script that is invoked for each target that uses it. The script is invoked after the package graph has been resolved, but before the build system creates its dependency graph. It’s also invoked after changes to the target or the build parameters.
 
@@ -44,15 +45,16 @@ The package plug-in may specify the executable or binary targets that provide th
 
 ## See Also
 
-- [var pluginCapability: Target.PluginCapability?](target/plugincapability-swift.property.md)
+### Creating a Plugin Target
+- [var pluginCapability: Target.PluginCapability?](./plugincapability-swift.property.md)
   The capability provided by a package plug-in target.
-- [Target.PluginCapability](target/plugincapability-swift.enum.md)
+- [Target.PluginCapability](./plugincapability-swift.enum.md)
   The different types of capability that a plug-in can provide.
-- [enum PluginCommandIntent](plugincommandintent.md)
+- [enum PluginCommandIntent](../plugincommandintent.md)
   The intended use case of the command plug-in.
-- [enum PluginPermission](pluginpermission.md)
+- [enum PluginPermission](../pluginpermission.md)
   The type of permission a plug-in requires.
-- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](target/plugin(name:capability:dependencies:path:exclude:sources:).md)
+- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](./plugin%28name,capability,dependencies,path,exclude,sources%29.md)
   Defines a new package plugin target.
 
 

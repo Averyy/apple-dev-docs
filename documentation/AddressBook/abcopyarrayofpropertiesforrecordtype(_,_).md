@@ -1,17 +1,22 @@
 # ABCopyArrayOfPropertiesForRecordType(_:_:)
 
 **Framework**: Address Book  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array containing the names of all the properties for the specified record type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ABCopyArrayOfPropertiesForRecordType(_ addressBook: ABAddressBookRef!, _ recordType: CFString!) -> Unmanaged<CFArray>!
+```
+
+```c
+extern CFArrayRefABCopyArrayOfPropertiesForRecordType(ABAddressBookRef addressBook, CFStringRef recordType);
 ```
 
 #### Return Value
@@ -25,15 +30,16 @@ An new array containing the names (CFString objects) of all the properties in `r
 
 ## See Also
 
-- [func ABAddPropertiesAndTypes(ABAddressBookRef!, CFString!, CFDictionary!) -> CFIndex](abaddpropertiesandtypes(_:_:_:).md)
+### Properties
+- [func ABAddPropertiesAndTypes(ABAddressBookRef!, CFString!, CFDictionary!) -> CFIndex](./abaddpropertiesandtypes%28_,_,_%29.md)
   Adds the given properties to all the records of the specified type in the Address Book database, and returns the number of properties successfully added.
-- [func ABCopyLocalizedPropertyOrLabel(CFString!) -> Unmanaged<CFString>!](abcopylocalizedpropertyorlabel(_:).md)
+- [func ABCopyLocalizedPropertyOrLabel(CFString!) -> Unmanaged<CFString>!](./abcopylocalizedpropertyorlabel%28_%29.md)
   Returns the localized version of a built in property,label, or key.
-- [func ABLocalizedPropertyOrLabel(String!) -> String!](ablocalizedpropertyorlabel(_:).md)
+- [func ABLocalizedPropertyOrLabel(String!) -> String!](./ablocalizedpropertyorlabel%28_%29.md)
   Returns the localized version of a built in property, label, or key.
-- [func ABRemoveProperties(ABAddressBookRef!, CFString!, CFArray!) -> CFIndex](abremoveproperties(_:_:_:).md)
+- [func ABRemoveProperties(ABAddressBookRef!, CFString!, CFArray!) -> CFIndex](./abremoveproperties%28_,_,_%29.md)
   Removes the given properties from all the records of this type in the Address Book database, and returns the number of properties successfully removed.
-- [func ABTypeOfProperty(ABAddressBookRef!, CFString!, CFString!) -> ABPropertyType](abtypeofproperty(_:_:_:).md)
+- [func ABTypeOfProperty(ABAddressBookRef!, CFString!, CFString!) -> ABPropertyType](./abtypeofproperty%28_,_,_%29.md)
   Returns the type of a given property for a given record.
 
 

@@ -1,12 +1,13 @@
 # Creating a Shape Node from an Array of Points
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Create jagged or smooth shapes from the same array of points.
 
 #### Overview
 
-An [`SKShapeNode`](skshapenode.md) object can be initialized with an array of points describing a path. The [`init(splinePoints:count:)`](skshapenode/init(splinepoints:count:).md) method can smoothly interpolate between these points to create a curve rather than the series of straight lines created by [`init(points:count:)`](skshapenode/init(points:count:).md). The following Swift code shows how to create two shape nodes using the same array of points for both initializers.
+An [`SKShapeNode`](./skshapenode.md) object can be initialized with an array of points describing a path. The [`init(splinePoints:count:)`](./skshapenode/init%28splinepoints,count%29.md) method can smoothly interpolate between these points to create a curve rather than the series of straight lines created by [`init(points:count:)`](./skshapenode/init%28points,count%29.md). The following Swift code shows how to create two shape nodes using the same array of points for both initializers.
 
 ```swift
 var points = [CGPoint(x: 0, y: 0),               
@@ -22,13 +23,14 @@ let splineShapeNode = SKShapeNode(splinePoints: &points,
 
 The following image shows `linearShapeNode` in blue and `splineShapeNode` in red.
 
-![Shape nodes created from points](/images/com.apple.spritekit/media-2975239@2x.png)
+![Shape nodes created from points](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2975239@2x.png)
 
 ## See Also
 
-- [convenience init(points: UnsafeMutablePointer<CGPoint>, count: Int)](skshapenode/init(points:count:).md)
+### Creating a Shape from an Array of Points
+- [convenience init(points: UnsafeMutablePointer<CGPoint>, count: Int)](./skshapenode/init%28points,count%29.md)
   Creates a shape node from a series of points.
-- [convenience init(splinePoints: UnsafeMutablePointer<CGPoint>, count: Int)](skshapenode/init(splinepoints:count:).md)
+- [convenience init(splinePoints: UnsafeMutablePointer<CGPoint>, count: Int)](./skshapenode/init%28splinepoints,count%29.md)
   Creates a shape node from a series of spline points.
 
 

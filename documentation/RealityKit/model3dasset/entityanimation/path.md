@@ -1,7 +1,8 @@
 # path
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path to the animation resource in the entity hierarchy (such as, root/diver/walk).
 

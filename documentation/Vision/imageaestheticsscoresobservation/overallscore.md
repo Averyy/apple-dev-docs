@@ -1,7 +1,8 @@
 # overallScore
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A score which incorporates aesthetic score, failure score, and utility labels.
 
@@ -26,9 +27,10 @@ This returns a value within the range of `-1` and `1`, where `-1` is least desir
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let isUtility: Bool](imageaestheticsscoresobservation/isutility.md)
+- [let isUtility: Bool](./isutility.md)
   A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 

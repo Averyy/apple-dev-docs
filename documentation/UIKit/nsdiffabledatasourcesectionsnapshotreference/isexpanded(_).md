@@ -1,7 +1,8 @@
 # isExpanded(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the item with the specified identifier is in an expanded state.
 
@@ -18,15 +19,20 @@ Indicates whether the item with the specified identifier is in an expanded state
 func isExpanded(_ item: Any) -> Bool
 ```
 
+```objc
+- (BOOL) isExpanded:(ItemIdentifierType) item;
+```
+
 #### Discussion
 
 This expansion state persists along with the section snapshot.
 
 ## See Also
 
-- [func expandItems([Any])](nsdiffabledatasourcesectionsnapshotreference/expanditems(_:).md)
+### Expanding and collapsing items
+- [func expandItems([Any])](./expanditems%28_%29.md)
   Expands the specified items in the section snapshot.
-- [func collapseItems([Any])](nsdiffabledatasourcesectionsnapshotreference/collapseitems(_:).md)
+- [func collapseItems([Any])](./collapseitems%28_%29.md)
   Collapses the specified items in the section snapshot.
 
 

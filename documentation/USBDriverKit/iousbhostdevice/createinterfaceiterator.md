@@ -1,7 +1,8 @@
 # CreateInterfaceIterator
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an iterator to get the list of interfaces from the device.
 
@@ -10,17 +11,17 @@ Creates an iterator to get the list of interfaces from the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CreateInterfaceIterator(uintptr_t *ref);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-Use this method to create an iterator for the [`IOUSBHostInterface`](iousbhostinterface.md) children belonging to this device. Pass the value you receive in the `ref` parameter to the [`CopyInterface`](iousbhostdevice/copyinterface.md) method when fetching the interfaces.
+Use this method to create an iterator for the [`IOUSBHostInterface`](../iousbhostinterface.md) children belonging to this device. Pass the value you receive in the `ref` parameter to the [`CopyInterface`](./copyinterface.md) method when fetching the interfaces.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ Use this method to create an iterator for the [`IOUSBHostInterface`](iousbhostin
 
 ## See Also
 
-- [CopyInterface](iousbhostdevice/copyinterface.md)
+### Iterating Over the Device Interfaces
+- [CopyInterface](./copyinterface.md)
   Gets the next host interface child associated with this device.
-- [DestroyInterfaceIterator](iousbhostdevice/destroyinterfaceiterator.md)
+- [DestroyInterfaceIterator](./destroyinterfaceiterator.md)
   Destroys an interface iterator that you created.
 
 

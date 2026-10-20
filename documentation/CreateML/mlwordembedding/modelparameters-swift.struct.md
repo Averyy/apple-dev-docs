@@ -1,7 +1,8 @@
 # MLWordEmbedding.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The model configuration parameters.
 
@@ -17,41 +18,42 @@ struct ModelParameters
 ## Topics
 
 ### Creating parameters
-- [init(language: NLLanguage?, revision: Int)](mlwordembedding/modelparameters-swift.struct/init(language:revision:).md)
+- [init(language: NLLanguage?, revision: Int)](./modelparameters-swift.struct/init%28language,revision%29.md)
   Creates model parameters.
 ### Accessing parameters
-- [var revision: Int](mlwordembedding/modelparameters-swift.struct/revision.md)
+- [var revision: Int](./modelparameters-swift.struct/revision.md)
   The revision of the word embedding.
-- [var language: NLLanguage?](mlwordembedding/modelparameters-swift.struct/language.md)
+- [var language: NLLanguage?](./modelparameters-swift.struct/language.md)
   The language of the word embedding.
 ### Describing parameters
-- [var description: String](mlwordembedding/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the word embedding parameters.
-- [var debugDescription: String](mlwordembedding/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the word embedding parameters that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordembedding/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the word embedding parameters shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlwordembedding/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlwordembedding/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlwordembedding/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(dictionary: [String : [Double]], parameters: MLWordEmbedding.ModelParameters) throws](mlwordembedding/init(dictionary:parameters:).md)
+### Creating a word embedding
+- [init(dictionary: [String : [Double]], parameters: MLWordEmbedding.ModelParameters) throws](./init%28dictionary,parameters%29.md)
   Creates a word embedding.
-- [let modelParameters: MLWordEmbedding.ModelParameters](mlwordembedding/modelparameters-swift.property.md)
+- [let modelParameters: MLWordEmbedding.ModelParameters](./modelparameters-swift.property.md)
   The model configuration parameters.
 
 

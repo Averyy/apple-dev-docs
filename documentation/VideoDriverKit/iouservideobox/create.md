@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Static factory method to allocate and initialize a user video box.
 
@@ -10,7 +11,7 @@ Static factory method to allocate and initialize a user video box.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoBox> Create(IOUserVideoDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
@@ -30,9 +31,10 @@ If `IOUserVideoBox` is subclassed to override behavior, don’t use this method 
 
 ## See Also
 
-- [init](iouservideobox/init.md)
+### Creating a video box
+- [init](./init.md)
   Initializes a video box.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
 
 

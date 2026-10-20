@@ -1,7 +1,8 @@
 # SquareAzimuth.back
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Has an orientation with an horizontal angle equal to `180°`
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFWSWVers_KPF](1645960-anonymous/kiofwswvers_kpf.md)
-- [kIOFWSpecID_AAPL](1645960-anonymous/kiofwspecid_aapl.md)
+- [kIOFWSWVers_KPF](./api-1645960-anonymous/kiofwswvers_kpf.md)
+- [kIOFWSpecID_AAPL](./api-1645960-anonymous/kiofwspecid_aapl.md)
 
 
 ---

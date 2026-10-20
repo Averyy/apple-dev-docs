@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt32 channelID;
 ```
 
@@ -15,11 +15,12 @@ The ID of the channel this control affects - may be kIOAudioControlChannelIDAll 
 
 ## See Also
 
-- [workLoop](ioaudiocontrol/workloop.md)
-- [userClients](ioaudiocontrol/userclients.md)
-- [isStarted](ioaudiocontrol/isstarted.md)
-- [controlID](ioaudiocontrol/controlid.md)
-- [commandGate](ioaudiocontrol/commandgate.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [userClients](./userclients.md)
+- [isStarted](./isstarted.md)
+- [controlID](./controlid.md)
+- [commandGate](./commandgate.md)
 
 
 ---

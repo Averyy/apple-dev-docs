@@ -1,7 +1,8 @@
 # HKMetadataKeyHeartRateRecoveryTestType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type of test that the source used to calculate a person’s heart-rate recovery.
 
@@ -19,30 +20,35 @@ The type of test that the source used to calculate a person’s heart-rate recov
 let HKMetadataKeyHeartRateRecoveryTestType: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyHeartRateRecoveryTestType;
+```
+
 #### Discussion
 
-Use this metadata key to identify the type of test that the [`HKSource`](hksource.md) used to calculate the value for a [`heartRateRecoveryOneMinute`](hkquantitytypeidentifier/heartraterecoveryoneminute.md) sample.
+Use this metadata key to identify the type of test that the [`HKSource`](./hksource.md) used to calculate the value for a [`heartRateRecoveryOneMinute`](./hkquantitytypeidentifier/heartraterecoveryoneminute.md) sample.
 
 ## Topics
 
 ### Heart rate recovery tests
-- [enum HKHeartRateRecoveryTestType](hkheartraterecoverytesttype.md)
+- [enum HKHeartRateRecoveryTestType](./hkheartraterecoverytesttype.md)
   The test that measured a person’s heart-rate recovery.
 
 ## See Also
 
-- [let HKMetadataKeyBodyTemperatureSensorLocation: String](hkmetadatakeybodytemperaturesensorlocation.md)
+### Vitals Sensors Keys
+- [let HKMetadataKeyBodyTemperatureSensorLocation: String](./hkmetadatakeybodytemperaturesensorlocation.md)
   The location where a specific body temperature reading was taken.
-- [let HKMetadataKeyHeartRateSensorLocation: String](hkmetadatakeyheartratesensorlocation.md)
+- [let HKMetadataKeyHeartRateSensorLocation: String](./hkmetadatakeyheartratesensorlocation.md)
   The location where a specific heart rate reading was taken.
-- [let HKMetadataKeyHeartRateMotionContext: String](hkmetadatakeyheartratemotioncontext.md)
+- [let HKMetadataKeyHeartRateMotionContext: String](./hkmetadatakeyheartratemotioncontext.md)
   The user’s activity level when the heart rate sample was measured.
-- [let HKPredicateKeyPathAverageHeartRate: String](hkpredicatekeypathaverageheartrate.md)
+- [let HKPredicateKeyPathAverageHeartRate: String](./hkpredicatekeypathaverageheartrate.md)
   The key path for the sample’s average heart rate.
-- [let HKMetadataKeyHeartRateRecoveryActivityDuration: String](hkmetadatakeyheartraterecoveryactivityduration.md)
-- [let HKMetadataKeyHeartRateRecoveryActivityType: String](hkmetadatakeyheartraterecoveryactivitytype.md)
-- [let HKMetadataKeyHeartRateRecoveryMaxObservedRecoveryHeartRate: String](hkmetadatakeyheartraterecoverymaxobservedrecoveryheartrate.md)
-- [let HKMetadataKeyVO2MaxTestType: String](hkmetadatakeyvo2maxtesttype.md)
+- [let HKMetadataKeyHeartRateRecoveryActivityDuration: String](./hkmetadatakeyheartraterecoveryactivityduration.md)
+- [let HKMetadataKeyHeartRateRecoveryActivityType: String](./hkmetadatakeyheartraterecoveryactivitytype.md)
+- [let HKMetadataKeyHeartRateRecoveryMaxObservedRecoveryHeartRate: String](./hkmetadatakeyheartraterecoverymaxobservedrecoveryheartrate.md)
+- [let HKMetadataKeyVO2MaxTestType: String](./hkmetadatakeyvo2maxtesttype.md)
   The method used to calculate the user’s VO2 max rate.
 
 

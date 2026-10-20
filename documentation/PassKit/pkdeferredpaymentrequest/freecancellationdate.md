@@ -1,7 +1,8 @@
 # freeCancellationDate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date before which you must cancel a deferred payment without incurring any cancellation charges.
 
@@ -18,17 +19,22 @@ The date before which you must cancel a deferred payment without incurring any c
 var freeCancellationDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSDate * freeCancellationDate;
+```
+
 #### Discussion
 
-If you set [`freeCancellationDate`](pkdeferredpaymentrequest/freecancellationdate.md), you need to set [`freeCancellationDateTimeZone`](pkdeferredpaymentrequest/freecancellationdatetimezone.md) as well.
+If you set [`freeCancellationDate`](./freecancellationdate.md), you need to set [`freeCancellationDateTimeZone`](./freecancellationdatetimezone.md) as well.
 
 ## See Also
 
-- [var billingAgreement: String?](pkdeferredpaymentrequest/billingagreement.md)
+### Describing a deferred payment
+- [var billingAgreement: String?](./billingagreement.md)
   The localized billing agreement the framework displays to the user prior to payment authorization.
-- [var paymentDescription: String](pkdeferredpaymentrequest/paymentdescription.md)
+- [var paymentDescription: String](./paymentdescription.md)
   A description of the deferred payment.
-- [var freeCancellationDateTimeZone: TimeZone?](pkdeferredpaymentrequest/freecancellationdatetimezone.md)
+- [var freeCancellationDateTimeZone: TimeZone?](./freecancellationdatetimezone.md)
   The time zone at the destination location of the payment.
 
 

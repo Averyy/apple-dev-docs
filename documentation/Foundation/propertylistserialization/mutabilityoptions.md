@@ -1,7 +1,8 @@
 # PropertyListSerialization.MutabilityOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These constants specify mutability options in property lists.
 
@@ -20,34 +21,39 @@ These constants specify mutability options in property lists.
 struct MutabilityOptions
 ```
 
+```c
+enum NSPropertyListMutabilityOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var mutableContainers: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainers.md)
+- [static var mutableContainers: PropertyListSerialization.MutabilityOptions](./mutabilityoptions/mutablecontainers.md)
   Causes the returned property list to have mutable containers but immutable leaves.
-- [static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainersandleaves.md)
+- [static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptions](./mutabilityoptions/mutablecontainersandleaves.md)
   Causes the returned property list to have mutable containers and leaves.
 ### Initializers
-- [init(rawValue: UInt)](propertylistserialization/mutabilityoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mutabilityoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [PropertyListSerialization.PropertyListFormat](propertylistserialization/propertylistformat.md)
+### Constants
+- [PropertyListSerialization.PropertyListFormat](./propertylistformat.md)
   These constants are used to specify a property list serialization format.
-- [PropertyListSerialization.ReadOptions](propertylistserialization/readoptions.md)
-  The only read options supported are described in [`PropertyListSerialization.MutabilityOptions`](propertylistserialization/mutabilityoptions.md).
+- [PropertyListSerialization.ReadOptions](./readoptions.md)
+  The only read options supported are described in [`PropertyListSerialization.MutabilityOptions`](./mutabilityoptions.md).
 
 
 ---

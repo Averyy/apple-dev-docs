@@ -1,7 +1,8 @@
 # appStore
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The App Store item.
 
@@ -13,6 +14,10 @@ The App Store item.
 
 ```swift
 static let appStore: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemAppStore;
 ```
 
 

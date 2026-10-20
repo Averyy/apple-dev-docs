@@ -1,7 +1,8 @@
 # MKTileOverlayRenderer
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The renderer for a tile overlay that handles the drawing of bitmap images on the map surface.
 
@@ -19,36 +20,41 @@ The renderer for a tile overlay that handles the drawing of bitmap images on the
 class MKTileOverlayRenderer
 ```
 
+```objc
+@interface MKTileOverlayRenderer : MKOverlayRenderer
+```
+
 #### Overview
 
 You create instances of this class when tile overlays become visible on the map view. A renderer works closely with its associated tile overlay object to coordinate the loading and drawing of tiles at appropriate times.
 
-For information about how to specify the tiles to display on the map, see [`MKTileOverlay`](mktileoverlay.md).
+For information about how to specify the tiles to display on the map, see [`MKTileOverlay`](./mktileoverlay.md).
 
 ## Topics
 
 ### Creating a tile renderer
-- [init(tileOverlay: MKTileOverlay)](mktileoverlayrenderer/init(tileoverlay:).md)
+- [init(tileOverlay: MKTileOverlay)](./mktileoverlayrenderer/init%28tileoverlay%29.md)
   Initializes and returns a tile renderer with the specified overlay object.
 ### Reloading the tile data
-- [func reloadData()](mktileoverlayrenderer/reloaddata.md)
+- [func reloadData()](./mktileoverlayrenderer/reloaddata%28%29.md)
   Forces the tile overlay renderer to reload and redisplay the tiles.
 
 ## Relationships
 
 ### Inherits From
-- [MKOverlayRenderer](mkoverlayrenderer.md)
+- [MKOverlayRenderer](./mkoverlayrenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKTileOverlay](mktileoverlay.md)
+### Tiled image overlays
+- [class MKTileOverlay](./mktileoverlay.md)
   An overlay that covers an area of the map with tiles of bitmap images.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s delegate.
 
@@ -20,15 +21,20 @@ The receiver’s delegate.
 weak var delegate: (any MKMapViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MKMapViewDelegate> delegate;
+```
+
 #### Discussion
 
 A map view sends messages to its delegate regarding the loading of map data and changes in the portion of the map it displays. The delegate also manages the annotation views that highlight points of interest on the map.
 
-The delegate needs to implement the methods of the [`MKMapViewDelegate`](mkmapviewdelegate.md) protocol.
+The delegate needs to implement the methods of the [`MKMapViewDelegate`](../mkmapviewdelegate.md) protocol.
 
 ## See Also
 
-- [protocol MKMapViewDelegate](mkmapviewdelegate.md)
+### Customizing the map view behavior
+- [protocol MKMapViewDelegate](../mkmapviewdelegate.md)
   Optional methods that you use to receive map-related update messages.
 
 

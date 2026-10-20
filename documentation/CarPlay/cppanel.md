@@ -1,7 +1,8 @@
 # CPPanel
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that provides the common behaviors for panels you display on top of your app’s content.
 
@@ -16,36 +17,40 @@ A type that provides the common behaviors for panels you display on top of your 
 class CPPanel
 ```
 
+```objc
+@interface CPPanel : NSObject
+```
+
 #### Overview
 
-The `CPPanel` type defines the default behaviors for panels you display in your app. You don’t create or present this type directly. Instead, instantiate one of the defined subclasses and present that type from your app’s interface. For example, create a [`CPMapPanel`](cpmappanel.md) and configure it with navigation-related data, and present it from a [`CPMapTemplate`](cpmaptemplate.md) to overlay that information on top of your custom map.
+The `CPPanel` type defines the default behaviors for panels you display in your app. You don’t create or present this type directly. Instead, instantiate one of the defined subclasses and present that type from your app’s interface. For example, create a [`CPMapPanel`](./cpmappanel.md) and configure it with navigation-related data, and present it from a [`CPMapTemplate`](./cpmaptemplate.md) to overlay that information on top of your custom map.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cppanel/init(coder:).md)
+- [init?(coder: NSCoder)](./cppanel/init%28coder%29.md)
 ### Instance Properties
-- [var showsCloseButton: Bool](cppanel/showsclosebutton.md)
+- [var showsCloseButton: Bool](./cppanel/showsclosebutton.md)
   A Boolean value that indicates whether the panel displays a close button.
 ### Type Properties
-- [class var maximumPanelItemsCount: Int](cppanel/maximumpanelitemscount.md)
+- [class var maximumPanelItemsCount: Int](./cppanel/maximumpanelitemscount.md)
   The maximum number of items the panel is able to display.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CPMapPanel](cpmappanel.md)
+- [CPMapPanel](./cpmappanel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

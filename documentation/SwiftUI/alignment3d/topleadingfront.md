@@ -1,7 +1,8 @@
 # topLeadingFront
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide representing a point at the leading edge of the horizontal axis, top of the vertical axis, and front of the depth axis.
 

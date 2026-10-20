@@ -1,7 +1,8 @@
 # init(amount:currency:region:action:style:partners:fallback:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a view displaying Pay Later Promotional information given a configuration
 

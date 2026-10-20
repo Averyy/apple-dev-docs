@@ -1,7 +1,8 @@
 # Metric
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A named metric that carries a result value.
 
@@ -22,9 +23,9 @@ struct Metric
 
 ## Mentions
 
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
 #### Overview
 
@@ -40,53 +41,54 @@ let result = metric.passing(rationale: "Exact match")
 ## Topics
 
 ### Creating a metric
-- [init(String)](metric/init(_:).md)
+- [init(String)](./metric/init%28_%29.md)
   Creates a metric with just a name.
 ### Producing results
-- [func passing(rationale: String?) -> Metric](metric/passing(rationale:).md)
+- [func passing(rationale: String?) -> Metric](./metric/passing%28rationale%29.md)
   Returns a metric with a passing result.
-- [func failing(rationale: String?) -> Metric](metric/failing(rationale:).md)
+- [func failing(rationale: String?) -> Metric](./metric/failing%28rationale%29.md)
   Returns a metric with a failing result.
-- [func scoring(Double, rationale: String?) -> Metric](metric/scoring(_:rationale:).md)
+- [func scoring(Double, rationale: String?) -> Metric](./metric/scoring%28_,rationale%29.md)
   Returns a metric with a numeric result.
-- [func ignore(rationale: String?) -> Metric](metric/ignore(rationale:).md)
+- [func ignore(rationale: String?) -> Metric](./metric/ignore%28rationale%29.md)
   Returns a metric with an ignored result, excluded from aggregation.
 ### Inspecting a result
-- [let name: String](metric/name.md)
+- [let name: String](./metric/name.md)
   The name of the metric, used as the DataFrame column name.
-- [let value: Metric.Value](metric/value-swift.property.md)
+- [let value: Metric.Value](./metric/value-swift.property.md)
   The result value of this metric.
-- [var doubleValue: Double?](metric/doublevalue.md)
+- [var doubleValue: Double?](./metric/doublevalue.md)
   The numeric value of this metric.
-- [let rationale: String?](metric/rationale.md)
+- [let rationale: String?](./metric/rationale.md)
   An optional rationale describing the result.
-- [Metric.Value](metric/value-swift.enum.md)
+- [Metric.Value](./metric/value-swift.enum.md)
   A metric result value.
 ### Type Properties
-- [static let toolsAllPass: Metric](metric/toolsallpass.md)
-  A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](toolcallevaluator.md).
-- [static let toolsPercentagePass: Metric](metric/toolspercentagepass.md)
-  A convenience metric for the partial score result of a [`ToolCallEvaluator`](toolcallevaluator.md).
+- [static let toolsAllPass: Metric](./metric/toolsallpass.md)
+  A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](./toolcallevaluator.md).
+- [static let toolsPercentagePass: Metric](./metric/toolspercentagepass.md)
+  A convenience metric for the partial score result of a [`ToolCallEvaluator`](./toolcallevaluator.md).
 ### Default Implementations
-- [CustomStringConvertible Implementations](metric/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./metric/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing specific, measurable criteria in an evaluation suite](designing-evaluation-criteria.md)
+### Metrics and evaluators
+- [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
   Define quality for your feature by choosing measurable criteria, scoring approaches, and ground-truth strategies.
-- [struct Evaluator](evaluator.md)
+- [struct Evaluator](./evaluator.md)
   A closure-based evaluator.
-- [struct MetricsAggregator](metricsaggregator.md)
+- [struct MetricsAggregator](./metricsaggregator.md)
   A utility for computing aggregate statistics from evaluation metrics.
 
 

@@ -1,7 +1,8 @@
 # proxyType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s proxy type.
 
@@ -20,27 +21,32 @@ The receiver’s proxy type.
 var proxyType: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * proxyType;
+```
+
 #### Discussion
 
-This value is `nil` if the receiver does not represent a proxy protection space. The supported proxy types are listed in [`NSURLProtectionSpace proxy types`](nsurlprotectionspace-proxy-types.md).
+This value is `nil` if the receiver does not represent a proxy protection space. The supported proxy types are listed in [NSURLProtectionSpace proxy types](../nsurlprotectionspace-proxy-types.md).
 
 ## See Also
 
-- [var authenticationMethod: String](urlprotectionspace/authenticationmethod.md)
+### Getting protection space properties
+- [var authenticationMethod: String](./authenticationmethod.md)
   The authentication method used by the receiver.
-- [var distinguishedNames: [Data]?](urlprotectionspace/distinguishednames.md)
+- [var distinguishedNames: [Data]?](./distinguishednames.md)
   The acceptable certificate-issuing authorities for client certificate authentication.
-- [var host: String](urlprotectionspace/host.md)
+- [var host: String](./host.md)
   The receiver’s host.
-- [var port: Int](urlprotectionspace/port.md)
+- [var port: Int](./port.md)
   The receiver’s port.
-- [var `protocol`: String?](urlprotectionspace/protocol.md)
+- [var `protocol`: String?](./protocol.md)
   The receiver’s protocol.
-- [var realm: String?](urlprotectionspace/realm.md)
+- [var realm: String?](./realm.md)
   The receiver’s authentication realm
-- [var receivesCredentialSecurely: Bool](urlprotectionspace/receivescredentialsecurely.md)
+- [var receivesCredentialSecurely: Bool](./receivescredentialsecurely.md)
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
-- [var serverTrust: SecTrust?](urlprotectionspace/servertrust.md)
+- [var serverTrust: SecTrust?](./servertrust.md)
   A representation of the server’s SSL transaction state.
 
 

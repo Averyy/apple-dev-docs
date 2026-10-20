@@ -1,7 +1,8 @@
 # sparse_extract_sparse_column_double(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts values from a specified column of a double-precision sparse matrix.
 
@@ -20,9 +21,13 @@ Extracts values from a specified column of a double-precision sparse matrix.
 func sparse_extract_sparse_column_double(_ A: sparse_matrix_double!, _ column: sparse_index, _ row_start: sparse_index, _ row_end: UnsafeMutablePointer<sparse_index>!, _ nz: sparse_dimension, _ val: UnsafeMutablePointer<Double>!, _ indx: UnsafeMutablePointer<sparse_index>!) -> sparse_status
 ```
 
+```c
+sparse_status sparse_extract_sparse_column_double(sparse_matrix_double A, sparse_index column, sparse_index row_start, sparse_index *row_end, sparse_dimension nz, double * restrictval, sparse_index * restrictindx);
+```
+
 #### Return Value
 
-On success `val` and `jndx` have been updated with the nonzero values of the `column`’th row, `row_end` holds the row index of the next nonzero value, and the number of nonzero values written are returned.  If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned and `val` and `jndx` are unchanged.
+On success `val` and `jndx` have been updated with the nonzero values of the `column`’th row, `row_end` holds the row index of the next nonzero value, and the number of nonzero values written are returned.  If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `val` and `jndx` are unchanged.
 
 #### Discussion
 
@@ -32,7 +37,7 @@ Extract the first `nz` values of the column beginning at `A[column,row_start]` f
 
 ## Parameters
 
-- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_double(_:_:)`](sparse_matrix_create_double(_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_double(_:_:)`](./sparse_matrix_create_double%28_,_%29.md). [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned if not met.
 - `column`: The column for value extraction.
 - `row_start`: The index of the row to start extraction.
 - `row_end`: On return, holds the row index of the next nonzero value.
@@ -42,16 +47,17 @@ Extract the first `nz` values of the column beginning at `A[column,row_start]` f
 
 ## See Also
 
-- [func sparse_extract_sparse_row_double(sparse_matrix_double!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, UnsafeMutablePointer<Double>!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_row_double(_:_:_:_:_:_:_:).md)
+### Value extraction
+- [func sparse_extract_sparse_row_double(sparse_matrix_double!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, UnsafeMutablePointer<Double>!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_row_double%28_,_,_,_,_,_,_%29.md)
   Extracts values from a specified row of a double-precision sparse matrix.
-- [func sparse_extract_sparse_row_float(sparse_matrix_float!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_row_float(_:_:_:_:_:_:_:).md)
+- [func sparse_extract_sparse_row_float(sparse_matrix_float!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_row_float%28_,_,_,_,_,_,_%29.md)
   Extracts values from a specified row of a single-precision sparse matrix.
-- [func sparse_extract_sparse_column_float(sparse_matrix_float!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_column_float(_:_:_:_:_:_:_:).md)
+- [func sparse_extract_sparse_column_float(sparse_matrix_float!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_column_float%28_,_,_,_,_,_,_%29.md)
   Extracts values from a specified column of a single-precision sparse matrix.
-- [func sparse_extract_sparse_column_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_column_double_complex(_:_:_:_:_:_:_:).md)
-- [func sparse_extract_sparse_column_float_complex(sparse_matrix_float_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_column_float_complex(_:_:_:_:_:_:_:).md)
-- [func sparse_extract_sparse_row_float_complex(sparse_matrix_float_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_row_float_complex(_:_:_:_:_:_:_:).md)
-- [func sparse_extract_sparse_row_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](sparse_extract_sparse_row_double_complex(_:_:_:_:_:_:_:).md)
+- [func sparse_extract_sparse_column_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_column_double_complex%28_,_,_,_,_,_,_%29.md)
+- [func sparse_extract_sparse_column_float_complex(sparse_matrix_float_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_column_float_complex%28_,_,_,_,_,_,_%29.md)
+- [func sparse_extract_sparse_row_float_complex(sparse_matrix_float_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_row_float_complex%28_,_,_,_,_,_,_%29.md)
+- [func sparse_extract_sparse_row_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, UnsafeMutablePointer<sparse_index>!, sparse_dimension, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> sparse_status](./sparse_extract_sparse_row_double_complex%28_,_,_,_,_,_,_%29.md)
 
 
 ---

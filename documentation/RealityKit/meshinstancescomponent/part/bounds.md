@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box to encompass all of the instances this group part draws.
 
@@ -21,9 +22,9 @@ var bounds: BoundingBox?
 
 #### Discussion
 
-If bounds is `nil`, RealityKit calculates a bounding box for you each time you update your instances within [`LowLevelInstanceData`](lowlevelinstancedata.md).
+If bounds is `nil`, RealityKit calculates a bounding box for you each time you update your instances within [`LowLevelInstanceData`](../../lowlevelinstancedata.md).
 
-Automatic bounds calculation is not supported when [`LowLevelInstanceData`](lowlevelinstancedata.md) is updated via [`replace(using:)`](lowlevelinstancedata/replace(using:).md). Provide a non-nil bounds value when updating instances with Metal.
+Automatic bounds calculation is not supported when [`LowLevelInstanceData`](../../lowlevelinstancedata.md) is updated via [`replace(using:)`](../../lowlevelinstancedata/replace%28using%29.md). Provide a non-nil bounds value when updating instances with Metal.
 
 
 ---

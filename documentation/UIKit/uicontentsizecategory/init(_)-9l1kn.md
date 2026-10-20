@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content size category from the specified SwiftUI content size category.
 
@@ -10,7 +11,7 @@ Creates a content size category from the specified SwiftUI content size category
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ init(_ sizeCategory: ContentSizeCategory?)
 
 ## See Also
 
-- [init(rawValue: String)](uicontentsizecategory/init(rawvalue:).md)
+### Font size category creation
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [init(DynamicTypeSize?)](uicontentsizecategory/init(_:)-abz4.md)
+- [init(DynamicTypeSize?)](./init%28_%29-abz4.md)
   Creates a content size category from the specified SwiftUI Dynamic Type size.
 
 

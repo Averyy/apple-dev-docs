@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var angle: Float](cikaleidoscope/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the reflection.
-- [var center: CGPoint](cikaleidoscope/center.md)
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the effect.
-- [var count: Int](cikaleidoscope/count.md)
+- [var count: Int](./count.md)
   The number of reflections in the pattern.
 
 

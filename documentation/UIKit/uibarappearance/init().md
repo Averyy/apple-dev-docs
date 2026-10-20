@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new bar appearance object containing default values.
 
@@ -18,17 +19,22 @@ Creates a new bar appearance object containing default values.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new bar appearance object containing default values for the current device idiom.
 
 ## See Also
 
-- [init(idiom: UIUserInterfaceIdiom)](uibarappearance/init(idiom:).md)
+### Creating a custom bar appearance object
+- [init(idiom: UIUserInterfaceIdiom)](./init%28idiom%29.md)
   Creates a new bar appearance object that targets the specified idiom.
-- [init(barAppearance: UIBarAppearance)](uibarappearance/init(barappearance:).md)
+- [init(barAppearance: UIBarAppearance)](./init%28barappearance%29.md)
   Creates a new bar appearance object by copying relevant data from the specified appearance object.
-- [init(coder: NSCoder)](uibarappearance/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an appearance object from data in an unarchiver.
 
 

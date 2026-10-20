@@ -1,7 +1,8 @@
 # RequestDescriptor.generateForegroundInstanceMaskRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a generate foreground instance mask request.
 
@@ -22,11 +23,12 @@ case generateForegroundInstanceMaskRequest(GenerateForegroundInstanceMaskRequest
 
 ## See Also
 
-- [case trackTranslationalImageRegistrationRequest(TrackTranslationalImageRegistrationRequest.Revision)](requestdescriptor/tracktranslationalimageregistrationrequest(_:).md)
+### Getting the image alignment, feature print, and background removal descriptor
+- [case trackTranslationalImageRegistrationRequest(TrackTranslationalImageRegistrationRequest.Revision)](./tracktranslationalimageregistrationrequest%28_%29.md)
   A descriptor that describes a track translational image request.
-- [case trackHomographicImageRegistrationRequest(TrackHomographicImageRegistrationRequest.Revision)](requestdescriptor/trackhomographicimageregistrationrequest(_:).md)
+- [case trackHomographicImageRegistrationRequest(TrackHomographicImageRegistrationRequest.Revision)](./trackhomographicimageregistrationrequest%28_%29.md)
   A descriptor that describes a track homographic image request.
-- [case generateImageFeaturePrintRequest(GenerateImageFeaturePrintRequest.Revision)](requestdescriptor/generateimagefeatureprintrequest(_:).md)
+- [case generateImageFeaturePrintRequest(GenerateImageFeaturePrintRequest.Revision)](./generateimagefeatureprintrequest%28_%29.md)
   A descriptor that describes a generate image feature print request.
 
 

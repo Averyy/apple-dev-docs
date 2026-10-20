@@ -1,7 +1,8 @@
 # addObserver(_:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addObserver(_ observer: any LAEnvironment.Observer)
+```
+
+```objc
+- (void) addObserver:(id<LAEnvironmentObserver>) observer;
 ```
 
 #### Discussion

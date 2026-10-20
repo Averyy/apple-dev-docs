@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 ## Declaration
 

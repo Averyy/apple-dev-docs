@@ -1,9 +1,10 @@
 # closeReasonUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The `userInfo` key containing the reason for the [`willCloseNotification`](nspopover/willclosenotification.md).
+The `userInfo` key containing the reason for the [`willCloseNotification`](./willclosenotification.md).
 
 **Availability**:
 - macOS 10.7+
@@ -14,13 +15,18 @@ The `userInfo` key containing the reason for the [`willCloseNotification`](nspop
 class let closeReasonUserInfoKey: String
 ```
 
+```c
+extern NSString * const NSPopoverCloseReasonKey;
+```
+
 ## See Also
 
-- [NSPopover.Behavior](nspopover/behavior-swift.enum.md)
+### Constants
+- [NSPopover.Behavior](./behavior-swift.enum.md)
   The appearance and disappearance behavior of a popover.
-- [NSPopover.CloseReason](nspopover/closereason.md)
-  Values that specify the reason for the [`willCloseNotification`](nspopover/willclosenotification.md) notification.
-- [NSPopover.Appearance](nspopover/appearance-swift.enum.md)
+- [NSPopover.CloseReason](./closereason.md)
+  Values that specify the reason for the [`willCloseNotification`](./willclosenotification.md) notification.
+- [NSPopover.Appearance](./appearance-swift.enum.md)
   The set of predefined appearances for a popover.
 
 

@@ -1,7 +1,8 @@
 # MKDirections.Request
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The start and end points of a route, along with the planned mode of transportation.
 
@@ -20,95 +21,100 @@ The start and end points of a route, along with the planned mode of transportati
 class Request
 ```
 
+```objc
+@interface MKDirectionsRequest : NSObject
+```
+
 #### Overview
 
-You use an [`MKDirections.Request`](mkdirections/request.md) object when requesting or providing directions. If your app provides directions, use this class to decode the URL that the Maps app sends to you. If you need to request directions from Apple, pass an instance of this class to an [`MKDirections`](mkdirections.md) object. For example, an app that provides subway directions might request walking directions to and from relevant subway stations.
+You use an [`MKDirections.Request`](./request.md) object when requesting or providing directions. If your app provides directions, use this class to decode the URL that the Maps app sends to you. If you need to request directions from Apple, pass an instance of this class to an [`MKDirections`](../mkdirections.md) object. For example, an app that provides subway directions might request walking directions to and from relevant subway stations.
 
-Prior to iOS 14, for apps that provide directions, you receive direction-related URLs in your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:))method. Upon receiving a URL, call the [`isDirectionsRequest(_:)`](mkdirections/request/isdirectionsrequest(_:).md) method of this class to determine whether the URL relates to routing directions. If it does, create an instance of this class using the provided URL and extract the map items associated with the start and end points.
+Prior to iOS 14, for apps that provide directions, you receive direction-related URLs in your app delegate’s [`application(_:open:options:)`](../../UIKit/uiapplicationdelegate/application%28_,open,options%29.md)method. Upon receiving a URL, call the [`isDirectionsRequest(_:)`](./request/isdirectionsrequest%28_%29.md) method of this class to determine whether the URL relates to routing directions. If it does, create an instance of this class using the provided URL and extract the map items associated with the start and end points.
 
-> **Note**:  Prior to iOS 14, to provide routing directions, your app needs to include special keys in its `Info.plist` file and be able to handle URLs that the Maps app sends to it. These keys indicate a special URL type that you app needs to handle. For information about how to implement this support, see [`Location and Maps Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497).
+> **Note**:  Prior to iOS 14, to provide routing directions, your app needs to include special keys in its `Info.plist` file and be able to handle URLs that the Maps app sends to it. These keys indicate a special URL type that you app needs to handle. For information about how to implement this support, see [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497).
 
 ## Topics
 
 ### Creating a directions request object
-- [class func isDirectionsRequest(URL) -> Bool](mkdirections/request/isdirectionsrequest(_:).md)
+- [class func isDirectionsRequest(URL) -> Bool](./request/isdirectionsrequest%28_%29.md)
   Returns a Boolean value that indicates whether the specified URL contains a directions request.
-- [init(contentsOfURL: URL)](mkdirections/request/init(contentsofurl:).md)
+- [init(contentsOfURL: URL)](./request/init%28contentsofurl%29.md)
   Creates and returns a directions request object using the specified URL.
 ### Accessing the start and end points
-- [var source: MKMapItem?](mkdirections/request/source.md)
+- [var source: MKMapItem?](./request/source.md)
   The starting point for routing directions.
-- [var destination: MKMapItem?](mkdirections/request/destination.md)
+- [var destination: MKMapItem?](./request/destination.md)
   The end point for routing directions.
 ### Specifying transportation options
-- [var transportType: MKDirectionsTransportType](mkdirections/request/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./request/transporttype.md)
   The type of conveyance that the directions apply to.
-- [var highwayPreference: MKDirections.RoutePreference](mkdirections/request/highwaypreference.md)
+- [var highwayPreference: MKDirections.RoutePreference](./request/highwaypreference.md)
   The value that indicates whether the framework uses or avoids highways when providing directions.
-- [var tollPreference: MKDirections.RoutePreference](mkdirections/request/tollpreference.md)
+- [var tollPreference: MKDirections.RoutePreference](./request/tollpreference.md)
   The value that indicates whether the framework avoids routes that have tolls when providing directions.
-- [MKDirections.RoutePreference](mkdirections/routepreference.md)
+- [MKDirections.RoutePreference](./routepreference.md)
   Options that modify how the framework selects routes when calculating directions.
-- [var requestsAlternateRoutes: Bool](mkdirections/request/requestsalternateroutes.md)
+- [var requestsAlternateRoutes: Bool](./request/requestsalternateroutes.md)
   A Boolean value that indicates whether your app requests multiple routes when they’re available.
-- [var departureDate: Date?](mkdirections/request/departuredate.md)
+- [var departureDate: Date?](./request/departuredate.md)
   The departure date for the trip.
-- [var arrivalDate: Date?](mkdirections/request/arrivaldate.md)
+- [var arrivalDate: Date?](./request/arrivaldate.md)
   The arrival date for the trip.
 ### Constants
-- [struct MKDirectionsTransportType](mkdirectionstransporttype.md)
+- [struct MKDirectionsTransportType](../mkdirectionstransporttype.md)
   Constants that specify the type of conveyance to use.
 ### Launch options
-- [let MKLaunchOptionsCameraKey: String](mklaunchoptionscamerakey.md)
+- [let MKLaunchOptionsCameraKey: String](../mklaunchoptionscamerakey.md)
   The virtual camera to use for viewing the map.
-- [let MKLaunchOptionsDirectionsModeCycling: String](mklaunchoptionsdirectionsmodecycling.md)
+- [let MKLaunchOptionsDirectionsModeCycling: String](../mklaunchoptionsdirectionsmodecycling.md)
   Cycling directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeDefault: String](mklaunchoptionsdirectionsmodedefault.md)
+- [let MKLaunchOptionsDirectionsModeDefault: String](../mklaunchoptionsdirectionsmodedefault.md)
   Directions that match the user’s preferred transportation type.
-- [let MKLaunchOptionsDirectionsModeDriving: String](mklaunchoptionsdirectionsmodedriving.md)
+- [let MKLaunchOptionsDirectionsModeDriving: String](../mklaunchoptionsdirectionsmodedriving.md)
   Driving directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeKey: String](mklaunchoptionsdirectionsmodekey.md)
+- [let MKLaunchOptionsDirectionsModeKey: String](../mklaunchoptionsdirectionsmodekey.md)
   The mode of transportation.
-- [let MKLaunchOptionsDirectionsModeTransit: String](mklaunchoptionsdirectionsmodetransit.md)
+- [let MKLaunchOptionsDirectionsModeTransit: String](../mklaunchoptionsdirectionsmodetransit.md)
   Public transit directions between the specified start and end points.
-- [let MKLaunchOptionsDirectionsModeWalking: String](mklaunchoptionsdirectionsmodewalking.md)
+- [let MKLaunchOptionsDirectionsModeWalking: String](../mklaunchoptionsdirectionsmodewalking.md)
   Walking directions between the specified start and end points.
-- [let MKLaunchOptionsMapCenterKey: String](mklaunchoptionsmapcenterkey.md)
+- [let MKLaunchOptionsMapCenterKey: String](../mklaunchoptionsmapcenterkey.md)
   The coordinate value on which to center the map.
-- [let MKLaunchOptionsMapSpanKey: String](mklaunchoptionsmapspankey.md)
+- [let MKLaunchOptionsMapSpanKey: String](../mklaunchoptionsmapspankey.md)
   The amount of the map to display.
-- [let MKLaunchOptionsMapTypeKey: String](mklaunchoptionsmaptypekey.md)
+- [let MKLaunchOptionsMapTypeKey: String](../mklaunchoptionsmaptypekey.md)
   The type of map (standard, satellite, or hybrid) to display.
-- [let MKLaunchOptionsShowsTrafficKey: String](mklaunchoptionsshowstraffickey.md)
+- [let MKLaunchOptionsShowsTrafficKey: String](../mklaunchoptionsshowstraffickey.md)
   A Boolean value that indicates whether to display traffic information.
 ### Initializers
-- [init(contentsOf: URL)](mkdirections/request/init(contentsof:).md)
+- [init(contentsOf: URL)](./request/init%28contentsof%29.md)
 ### Default Implementations
-- [Request Implementations](mkdirections/request/request-implementations.md)
+- [Request Implementations](./request/request-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKDirections](mkdirections.md)
+### Directions
+- [class MKDirections](../mkdirections.md)
   A utility object that computes directions and travel-time information based on the route information you provide.
-- [MKDirections.Response](mkdirections/response.md)
+- [MKDirections.Response](./response.md)
   The route information that Apple servers return in response to your request for directions.
-- [MKDirections.ETAResponse](mkdirections/etaresponse.md)
+- [MKDirections.ETAResponse](./etaresponse.md)
   The travel-time information that Apple servers return.
-- [class MKRoute](mkroute.md)
+- [class MKRoute](../mkroute.md)
   A single route between a requested start and end point.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](../mkroute/step.md)
   One portion of an overall route.
 
 

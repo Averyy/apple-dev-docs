@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in a nonempty dictionary.
 
@@ -20,11 +21,13 @@ The position of the first element in a nonempty dictionary.
 var startIndex: Dictionary<Key, Value>.Index { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 
-> **Note**: Amortized O(1) if the dictionary does not wrap a bridged `NSDictionary`. If the dictionary wraps a bridged `NSDictionary`, the performance is unspecified.
+> **Complexity**: Amortized O(1) if the dictionary does not wrap a bridged `NSDictionary`. If the dictionary wraps a bridged `NSDictionary`, the performance is unspecified.
 
 
 ---

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of a custom animation.
 
@@ -22,9 +23,9 @@ var state: AnimationState<Value>
 
 #### Discussion
 
-An instance of [`CustomAnimation`](customanimation.md) uses this property to read and write state values as the animation runs.
+An instance of [`CustomAnimation`](../customanimation.md) uses this property to read and write state values as the animation runs.
 
-An alternative to using the `state` property in a custom animation is to create an [`AnimationStateKey`](animationstatekey.md) type and extend [`AnimationContext`](animationcontext.md) with a custom property that returns the state as a custom type. For example, the following code creates a state key named `PausableState`. It’s convenient to store state values in the key type, so the `PausableState` structure includes properties for the stored state values `paused` and `pauseTime`.
+An alternative to using the `state` property in a custom animation is to create an [`AnimationStateKey`](../animationstatekey.md) type and extend [`AnimationContext`](../animationcontext.md) with a custom property that returns the state as a custom type. For example, the following code creates a state key named `PausableState`. It’s convenient to store state values in the key type, so the `PausableState` structure includes properties for the stored state values `paused` and `pauseTime`.
 
 ```swift
 private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
@@ -35,7 +36,7 @@ private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
 }
 ```
 
-To provide access to the pausable state, the following code extends `AnimationContext` to include the `pausableState` property. This property returns an instance of the custom `PausableState` structure stored in [`state`](animationcontext/state.md), and it can also store a new `PausableState` instance in `state`.
+To provide access to the pausable state, the following code extends `AnimationContext` to include the `pausableState` property. This property returns an instance of the custom `PausableState` structure stored in [`state`](./state.md), and it can also store a new `PausableState` instance in `state`.
 
 ```swift
 extension AnimationContext {
@@ -46,7 +47,7 @@ extension AnimationContext {
 }
 ```
 
-Now a custom animation can use the `pausableState` property instead of the [`state`](animationcontext/state.md) property as a convenient way to read and write state values as the animation runs.
+Now a custom animation can use the `pausableState` property instead of the [`state`](./state.md) property as a convenient way to read and write state values as the animation runs.
 
 ```swift
 struct PausableAnimation: CustomAnimation {

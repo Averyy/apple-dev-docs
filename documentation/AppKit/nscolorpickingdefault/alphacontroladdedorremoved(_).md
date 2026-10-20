@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sent when the color panel’s opacity controls have been hidden or displayed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,11 +17,15 @@ Sent when the color panel’s opacity controls have been hidden or displayed.
 func alphaControlAddedOrRemoved(_ sender: Any?)
 ```
 
+```objc
+- (void) alphaControlAddedOrRemoved:(id) sender;
+```
+
 #### Discussion
 
 This method is invoked automatically when the opacity slider of the `NSColorPanel` is added or removed; you never invoke this method directly.
 
-If the color picker has its own opacity controls, it should hide or display them, depending on whether the sender’s [`showsAlpha`](nscolorpanel/showsalpha.md) method returns [`false`](https://developer.apple.com/documentation/swift/false) or [`true`](https://developer.apple.com/documentation/swift/true).
+If the color picker has its own opacity controls, it should hide or display them, depending on whether the sender’s [`showsAlpha`](../nscolorpanel/showsalpha.md) method returns [`false`](../../Swift/false.md) or [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -28,7 +33,8 @@ If the color picker has its own opacity controls, it should hide or display them
 
 ## See Also
 
-- [func viewSizeChanged(Any?)](nscolorpickingdefault/viewsizechanged(_:).md)
+### Handling Events
+- [func viewSizeChanged(Any?)](./viewsizechanged%28_%29.md)
   Tells the recever when the color panel’s view size changes in a way that might affect the color picker.
 
 

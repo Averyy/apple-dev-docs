@@ -1,7 +1,8 @@
 # init(JSValueRef:inContext:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a JavaScript value object from the equivalent C representation.
 
@@ -34,7 +35,8 @@ See `JSValueRef` for the C JavaScriptCore API.
 
 ## See Also
 
-- [var jsValueRef: JSValueRef!](jsvalue/jsvalueref.md)
+### Working with the C JavaScriptCore API
+- [var jsValueRef: JSValueRef!](./jsvalueref.md)
   Returns the C representation of the JavaScript value.
 
 

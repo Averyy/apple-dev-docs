@@ -1,7 +1,8 @@
 # KeyframeEffect
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface KeyframeEffect
 ```
 
 ## Relationships
 
 ### Inherits From
-- [AnimationEffect](animationeffect.md)
+- [AnimationEffect](./animationeffect.md)
 
 
 ---

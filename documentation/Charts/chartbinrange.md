@@ -1,7 +1,8 @@
 # ChartBinRange
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The range of data that a single bin of a chart represents.
 
@@ -27,19 +28,20 @@ All bins except the last for a particular chart represent an open range, meaning
 ## Topics
 
 ### Instance Properties
-- [let lowerBound: Bound](chartbinrange/lowerbound.md)
-- [let upperBound: Bound](chartbinrange/upperbound.md)
+- [let lowerBound: Bound](./chartbinrange/lowerbound.md)
+- [let upperBound: Bound](./chartbinrange/upperbound.md)
 
 ## Relationships
 
 ### Conforms To
-- [RangeExpression](../swift/rangeexpression.md)
+- [RangeExpression](../Swift/rangeexpression.md)
 
 ## See Also
 
-- [struct NumberBins](numberbins.md)
+### Data bins
+- [struct NumberBins](./numberbins.md)
   A collection of bins for a chart that plots data against numbers.
-- [struct DateBins](datebins.md)
+- [struct DateBins](./datebins.md)
   A collection of bins for a chart that plots data against dates.
 
 

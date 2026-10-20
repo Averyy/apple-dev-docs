@@ -1,12 +1,17 @@
 # init(contentsOfFile:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 ## Declaration
 
 ```swift
 convenience init(contentsOfFile url: URL)
+```
+
+```objc
++ (instancetype) attachmentWithContentsOfFileAtURL:(NSURL *) url;
 ```
 
 #### Discussion

@@ -1,18 +1,19 @@
 # CFMachPortCreateWithPort(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a CFMachPort object for a pre-existing native Mach port.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a CFMachPort object for a pre-existing native Mach port.
 func CFMachPortCreateWithPort(_ allocator: CFAllocator!, _ portNum: mach_port_t, _ callout: CFMachPortCallBack!, _ context: UnsafeMutablePointer<CFMachPortContext>!, _ shouldFreeInfo: UnsafeMutablePointer<DarwinBoolean>!) -> CFMachPort!
 ```
 
+```c
+extern CFMachPortRefCFMachPortCreateWithPort(CFAllocatorRef allocator, mach_port_t portNum, CFMachPortCallBack callout, CFMachPortContext *context, Boolean *shouldFreeInfo);
+```
+
 #### Return Value
 
-The new CFMachPort object or `NULL` on failure. If a CFMachPort object already exists for `portNum`, the function returns the pre-existing object instead of creating a new object; the `context` and `callout` parameters are ignored in this case. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The new CFMachPort object or `NULL` on failure. If a CFMachPort object already exists for `portNum`, the function returns the pre-existing object instead of creating a new object; the `context` and `callout` parameters are ignored in this case. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -30,7 +35,7 @@ The CFMachPort object does not take full ownership of the send and receive right
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `portNum`: The native Mach port to use.
 - `callout`: The callback function invoked when a message is received on the Mach port.
 - `context`: A structure holding contextual information for the Mach port. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call.
@@ -38,7 +43,8 @@ The CFMachPort object does not take full ownership of the send and receive right
 
 ## See Also
 
-- [func CFMachPortCreate(CFAllocator!, CFMachPortCallBack!, UnsafeMutablePointer<CFMachPortContext>!, UnsafeMutablePointer<DarwinBoolean>!) -> CFMachPort!](cfmachportcreate(_:_:_:_:).md)
+### Creating a CFMachPort Object
+- [func CFMachPortCreate(CFAllocator!, CFMachPortCallBack!, UnsafeMutablePointer<CFMachPortContext>!, UnsafeMutablePointer<DarwinBoolean>!) -> CFMachPort!](./cfmachportcreate%28_,_,_,_%29.md)
   Creates a CFMachPort object with a new Mach port.
 
 

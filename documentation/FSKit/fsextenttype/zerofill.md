@@ -1,7 +1,8 @@
 # FSExtentType.zeroFill
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An extent type to indicate uninitialized data.
 
@@ -14,15 +15,20 @@ An extent type to indicate uninitialized data.
 case zeroFill
 ```
 
+```c
+FSExtentTypeZeroFill
+```
+
 #### Discussion
 
 Only use this extent type in file systems that support sparse files, and only then to represent ranges in the file that aren’t allocated yet.
 
 ## See Also
 
-- [FSExtentType.data](fsextenttype/data.md)
+### Working with extent types
+- [FSExtentType.data](./data.md)
   An extent type to indicate valid data.
-- [FSExtentType.readOnly](fsextenttype/readonly.md)
+- [FSExtentType.readOnly](./readonly.md)
   An extent type to indicate read-only data.
 
 

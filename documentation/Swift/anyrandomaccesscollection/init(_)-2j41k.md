@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `AnyRandomAccessCollection` having the same underlying collection as `other`.
 
@@ -24,7 +25,7 @@ init?(_ other: AnyBidirectionalCollection<Element>)
 
 If the underlying collection stored by `other` does not satisfy `RandomAccessCollection`, the result is `nil`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

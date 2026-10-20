@@ -1,7 +1,8 @@
 # conflictingSnapshots
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original property values of objects in violation of the constraint.
 
@@ -20,17 +21,22 @@ The original property values of objects in violation of the constraint.
 var conflictingSnapshots: [[AnyHashable : Any]] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSDictionary *> * conflictingSnapshots;
+```
+
 ## See Also
 
-- [var conflictingObjects: [NSManagedObject]](nsconstraintconflict/conflictingobjects.md)
+### Inspecting a Conflict
+- [var conflictingObjects: [NSManagedObject]](./conflictingobjects.md)
   The managed objects that are in conflict.
-- [var constraint: [String]](nsconstraintconflict/constraint.md)
+- [var constraint: [String]](./constraint.md)
   The constraint that has been violated.
-- [var constraintValues: [String : Any]](nsconstraintconflict/constraintvalues.md)
+- [var constraintValues: [String : Any]](./constraintvalues.md)
   The values that the conflicting objects had when the conflict was created.
-- [var databaseObject: NSManagedObject?](nsconstraintconflict/databaseobject.md)
+- [var databaseObject: NSManagedObject?](./databaseobject.md)
   The object whose database row is using constraint values.
-- [var databaseSnapshot: [String : Any]?](nsconstraintconflict/databasesnapshot.md)
+- [var databaseSnapshot: [String : Any]?](./databasesnapshot.md)
   The values currently stored in the database.
 
 

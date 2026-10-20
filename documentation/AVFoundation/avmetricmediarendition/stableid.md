@@ -1,7 +1,8 @@
 # stableID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,13 +19,18 @@
 var stableID: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * stableID;
+```
+
 #### Discussion
 
 Provides ID corresponding to the rendition. This is equivalent to the STABLE-RENDITION-ID in the HLS playlist. If not available, value is nil.
 
 ## See Also
 
-- [var url: URL?](avmetricmediarendition/url.md)
+### Inspecting the rendition
+- [var url: URL?](./url.md)
 
 
 ---

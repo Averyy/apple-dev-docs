@@ -1,7 +1,8 @@
 # activationRequest(forExtensionWithIdentifier:queue:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a request to activate a System Extension.
 
@@ -14,9 +15,13 @@ Creates a request to activate a System Extension.
 class func activationRequest(forExtensionWithIdentifier identifier: String, queue: dispatch_queue_t) -> Self
 ```
 
+```objc
++ (instancetype) activationRequestForExtension:(NSString *) identifier queue:(dispatch_queue_t) queue;
+```
+
 ## Mentions
 
-- [Installing System Extensions and Drivers](installing-system-extensions-and-drivers.md)
+- [Installing System Extensions and Drivers](../installing-system-extensions-and-drivers.md)
 
 #### Return Value
 
@@ -37,7 +42,8 @@ An activation request may succeed, but also indicate that the extension requires
 
 ## See Also
 
-- [class func deactivationRequest(forExtensionWithIdentifier: String, queue: dispatch_queue_t) -> Self](ossystemextensionrequest/deactivationrequest(forextensionwithidentifier:queue:).md)
+### Creating Requests
+- [class func deactivationRequest(forExtensionWithIdentifier: String, queue: dispatch_queue_t) -> Self](./deactivationrequest%28forextensionwithidentifier,queue%29.md)
   Creates a request to deactivate a System Extension.
 
 

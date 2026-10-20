@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialPRFRegistrationOutput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type to represent outputs of the web authentication PRF extension, when requesting them during a registration.
 
@@ -27,29 +28,30 @@ Don’t store or export these keys. Derive these keys only as the result of an a
 ## Topics
 
 ### Creating an outputs instance
-- [init(first: SymmetricKey, second: SymmetricKey?)](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/init(first:second:).md)
+- [init(first: SymmetricKey, second: SymmetricKey?)](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/init%28first,second%29.md)
   Initializes an object representing the outputs of the web authentication PRF extension.
 ### Determining PRF support
-- [let isSupported: Bool](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/issupported.md)
+- [let isSupported: Bool](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/issupported.md)
   A Boolean value that indicates whether the newly created passkey supports the PRF extension.
 ### Using defined support values
-- [static var supported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/supported.md)
+- [static var supported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/supported.md)
   A Boolean value that indicates the newly created passkey supports the PRF extension.
-- [static var unsupported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/unsupported.md)
+- [static var unsupported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/unsupported.md)
   A Boolean value that indicates the newly created passkey doesn’t support the PRF extension.
 ### Accessing symmetric keys
-- [let first: SymmetricKey?](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/first.md)
+- [let first: SymmetricKey?](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/first.md)
   A symmetric key that’s unique to the passkey and derives from the first input, if specified.
-- [let second: SymmetricKey?](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/second.md)
+- [let second: SymmetricKey?](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/second.md)
   A second symmetric key that’s unique to the passkey, and derives from the second input, if specified.
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](aspasskeyregistrationcredentialextensionoutput-swift.struct/largeblob.md)
+### Inspecting properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](./aspasskeyregistrationcredentialextensionoutput-swift.struct/largeblob.md)
   The output for a large binary object operation during passkey registration.
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](./asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md)
   The result of the large binary object support check, resulting from a passkey registration response.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](aspasskeyregistrationcredentialextensionoutput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](./aspasskeyregistrationcredentialextensionoutput-swift.struct/prf.md)
   The outputs of the WebAuthn PRF extension in passkey registration requests.
 
 

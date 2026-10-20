@@ -1,7 +1,8 @@
 # effectiveGeometry
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current values for the window scene’s geometry in system space.
 
@@ -18,24 +19,29 @@ The current values for the window scene’s geometry in system space.
 var effectiveGeometry: UIWindowScene.Geometry { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIWindowSceneGeometry * effectiveGeometry;
+```
+
 #### Discussion
 
-This property is key-value observing (KVO) compliant. Observing [`effectiveGeometry`](uiwindowscene/effectivegeometry.md) is the recommended way to receive notifications of changes to the window scene’s geometry. These changes can occur because of user interaction or as a result of the system resolving a geometry request.
+This property is key-value observing (KVO) compliant. Observing [`effectiveGeometry`](./effectivegeometry.md) is the recommended way to receive notifications of changes to the window scene’s geometry. These changes can occur because of user interaction or as a result of the system resolving a geometry request.
 
 ## See Also
 
-- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](uiwindowscene/requestgeometryupdate(_:errorhandler:).md)
+### Working with window geometry
+- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](./requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
-- [UIWindowScene.Geometry](uiwindowscene/geometry.md)
+- [UIWindowScene.Geometry](./geometry.md)
   An object that provides geometry information about the window scene.
-- [UIWindowScene.GeometryPreferences](uiwindowscene/geometrypreferences.md)
+- [UIWindowScene.GeometryPreferences](./geometrypreferences.md)
   An abstract superclass for representing window scene geometry preferences.
-- [UIWindowScene.GeometryPreferences.iOS](uiwindowscene/geometrypreferences/ios.md)
+- [UIWindowScene.GeometryPreferences.iOS](./geometrypreferences/ios.md)
   An object that represents the geometry preferences for a window scene in an iOS app.
-- [UIWindowScene.GeometryPreferences.Mac](uiwindowscene/geometrypreferences/mac.md)
+- [UIWindowScene.GeometryPreferences.Mac](./geometrypreferences/mac.md)
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
-- [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
-- [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+- [UIWindowScene.GeometryPreferences.Vision](./geometrypreferences/vision.md)
+- [let UIProposedSceneSizeNoPreference: CGFloat](../uiproposedscenesizenopreference.md)
   Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 

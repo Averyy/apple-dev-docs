@@ -1,7 +1,8 @@
 # CMSampleBufferGetTotalSampleSize(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the total size in bytes of sample data in a sample buffer.
 
@@ -20,6 +21,10 @@ Returns the total size in bytes of sample data in a sample buffer.
 func CMSampleBufferGetTotalSampleSize(_ sbuf: CMSampleBuffer) -> Int
 ```
 
+```c
+extern size_t CMSampleBufferGetTotalSampleSize(CMSampleBufferRef sbuf);
+```
+
 #### Return Value
 
 Total size in bytes of sample data in the `CMSampleBuffer`. If there are no sample sizes in this `CMSampleBuffer`, a size of 0 will be returned.
@@ -30,11 +35,12 @@ Total size in bytes of sample data in the `CMSampleBuffer`. If there are no samp
 
 ## See Also
 
-- [func CMSampleBufferGetNumSamples(CMSampleBuffer) -> CMItemCount](cmsamplebuffergetnumsamples(_:).md)
+### Inspecting Size Information
+- [func CMSampleBufferGetNumSamples(CMSampleBuffer) -> CMItemCount](./cmsamplebuffergetnumsamples%28_%29.md)
   Returns the number of media samples in a sample buffer.
-- [func CMSampleBufferGetSampleSize(CMSampleBuffer, at: CMItemIndex) -> Int](cmsamplebuffergetsamplesize(_:at:).md)
+- [func CMSampleBufferGetSampleSize(CMSampleBuffer, at: CMItemIndex) -> Int](./cmsamplebuffergetsamplesize%28_,at%29.md)
   Returns the size in bytes of a specified sample in a sample buffer.
-- [func CMSampleBufferGetSampleSizeArray(CMSampleBuffer, entryCount: CMItemCount, arrayToFill: UnsafeMutablePointer<Int>?, entriesNeededOut: UnsafeMutablePointer<CMItemCount>?) -> OSStatus](cmsamplebuffergetsamplesizearray(_:entrycount:arraytofill:entriesneededout:).md)
+- [func CMSampleBufferGetSampleSizeArray(CMSampleBuffer, entryCount: CMItemCount, arrayToFill: UnsafeMutablePointer<Int>?, entriesNeededOut: UnsafeMutablePointer<CMItemCount>?) -> OSStatus](./cmsamplebuffergetsamplesizearray%28_,entrycount,arraytofill,entriesneededout%29.md)
   Retrieves an array of sample sizes that represents each sample in a sample buffer.
 
 

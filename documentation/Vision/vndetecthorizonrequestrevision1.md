@@ -1,7 +1,8 @@
 # VNDetectHorizonRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the horizon detection request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the horizon detection request.
 
 ```swift
 var VNDetectHorizonRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNDetectHorizonRequestRevision1;
 ```
 
 

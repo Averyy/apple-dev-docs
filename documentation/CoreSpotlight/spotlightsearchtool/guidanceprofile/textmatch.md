@@ -1,7 +1,8 @@
 # textMatch
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to perform keyword-based text matching on your content.
 
@@ -24,15 +25,16 @@ Set the value of this property is `true` to give the model the option to perform
 
 ## See Also
 
-- [var contentType: Bool?](spotlightsearchtool/guidanceprofile/contenttype.md)
+### Specifying the supported search techniques
+- [var contentType: Bool?](./contenttype.md)
   A Boolean value that indicates whether to determine matches using an item’s type.
-- [var dates: Bool?](spotlightsearchtool/guidanceprofile/dates.md)
+- [var dates: Bool?](./dates.md)
   A Boolean value that indicates whether to determine matches using date or time values.
-- [var numericMatch: Bool?](spotlightsearchtool/guidanceprofile/numericmatch.md)
+- [var numericMatch: Bool?](./numericmatch.md)
   A Boolean value that indicates whether to determine matches using numerical values.
-- [var people: Bool?](spotlightsearchtool/guidanceprofile/people.md)
+- [var people: Bool?](./people.md)
   A Boolean value that indicates whether to determine matches using the presence of specific people.
-- [var similarityMatch: Bool?](spotlightsearchtool/guidanceprofile/similaritymatch.md)
+- [var similarityMatch: Bool?](./similaritymatch.md)
   A Boolean value that indicates whether to perform semantic similarity matching on your content.
 
 

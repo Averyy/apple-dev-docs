@@ -1,7 +1,8 @@
 # init(scope:element:dictionary:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with the scope, element, and dictionary for the preset.
 
@@ -19,9 +20,13 @@ Creates an event with the scope, element, and dictionary for the preset.
 init(scope: UInt32, element: UInt32, dictionary presetDictionary: [AnyHashable : Any])
 ```
 
+```objc
+- (instancetype) initWithScope:(UInt32) scope element:(UInt32) element dictionary:(NSDictionary *) presetDictionary;
+```
+
 #### Discussion
 
-The system copies the dictionary you specify and isn’t editable once it creates the event. The `scope` parameter must be [`kAudioUnitScope_Global`](https://developer.apple.com/documentation/audiotoolbox/kaudiounitscope_global), and the element index should be `0`.
+The system copies the dictionary you specify and isn’t editable once it creates the event. The `scope` parameter must be [`kAudioUnitScope_Global`](../../AudioToolbox/kaudiounitscope_global.md), and the element index should be `0`.
 
 ## Parameters
 

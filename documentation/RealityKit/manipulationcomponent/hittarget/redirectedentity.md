@@ -1,7 +1,8 @@
 # redirectedEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity to redirect the interaction to.
 

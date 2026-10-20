@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,9 +14,14 @@
 func performEditingTransaction(for textStorage: NSTextStorage, using transaction: () -> Void)
 ```
 
+```objc
+- (void) performEditingTransactionForTextStorage:(NSTextStorage *) textStorage usingBlock:(void (^)()) transaction;
+```
+
 ## See Also
 
-- [func processEditing(for: NSTextStorage, edited: NSTextStorageEditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](nstextstorageobserving/processediting(for:edited:range:changeinlength:invalidatedrange:).md)
+### Managing the editing process
+- [func processEditing(for: NSTextStorage, edited: NSTextStorageEditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](./processediting%28for,edited,range,changeinlength,invalidatedrange%29.md)
 
 
 ---

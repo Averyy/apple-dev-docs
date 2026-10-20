@@ -1,7 +1,8 @@
 # primaryActivityItem
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Adds an activity item to an activity and sets it as the primary activity item.
 
@@ -18,17 +19,22 @@ Adds an activity item to an activity and sets it as the primary activity item.
 var primaryActivityItem: CLSActivityItem? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CLSActivityItem * primaryActivityItem;
+```
+
 ## Mentions
 
-- [Recording additional metrics about a completed task](recording-additional-metrics-about-a-completed-task.md)
+- [Recording additional metrics about a completed task](../recording-additional-metrics-about-a-completed-task.md)
 
 ## See Also
 
-- [func addAdditionalActivityItem(CLSActivityItem)](clsactivity/addadditionalactivityitem(_:).md)
+### Managing activity items
+- [func addAdditionalActivityItem(CLSActivityItem)](./addadditionalactivityitem%28_%29.md)
   Adds an activity item to an activity.
-- [var additionalActivityItems: [CLSActivityItem]](clsactivity/additionalactivityitems.md)
+- [var additionalActivityItems: [CLSActivityItem]](./additionalactivityitems.md)
   The list of activity items associated with an activity.
-- [func removeAllActivityItems()](clsactivity/removeallactivityitems.md)
+- [func removeAllActivityItems()](./removeallactivityitems%28%29.md)
   Deletes all activity items associated with the current activity.
 
 

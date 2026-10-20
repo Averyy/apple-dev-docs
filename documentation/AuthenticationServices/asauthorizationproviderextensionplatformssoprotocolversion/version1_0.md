@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version1_0
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,9 +13,14 @@
 case version1_0
 ```
 
+```c
+ASAuthorizationProviderExtensionPlatformSSOProtocolVersion1_0
+```
+
 ## See Also
 
-- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version2_0](asauthorizationproviderextensionplatformssoprotocolversion/version2_0.md)
+### Enumeration Cases
+- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version2_0](./version2_0.md)
 
 
 ---

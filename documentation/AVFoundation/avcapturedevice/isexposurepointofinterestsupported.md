@@ -1,7 +1,8 @@
 # isExposurePointOfInterestSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports a point of interest for exposure.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the device supports a point of interest f
 var isExposurePointOfInterestSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isExposurePointOfInterestSupported) BOOL exposurePointOfInterestSupported;
+```
+
 #### Discussion
 
 This property is key-value observable.
 
 ## See Also
 
-- [var exposurePointOfInterest: CGPoint](avcapturedevice/exposurepointofinterest.md)
+### Setting an exposure point of interest
+- [var exposurePointOfInterest: CGPoint](./exposurepointofinterest.md)
   The point of interest for exposure.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses an item for nil checking and assigning to intent parameters without casting.
 

@@ -1,7 +1,8 @@
 # isFinished
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of completion of work. If `completedCount` >= `totalCount`, the value will be `true`.
 

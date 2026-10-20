@@ -1,10 +1,11 @@
 # timeZone
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 static var timeZone: NSDatePicker.ElementFlags { get }
 ```
 
+```c
+NSDatePickerElementFlagTimeZone
+```
+
 ## See Also
 
-- [static var era: NSDatePicker.ElementFlags](nsdatepicker/elementflags/era.md)
-- [static var hourMinute: NSDatePicker.ElementFlags](nsdatepicker/elementflags/hourminute.md)
-- [static var hourMinuteSecond: NSDatePicker.ElementFlags](nsdatepicker/elementflags/hourminutesecond.md)
-- [static var yearMonth: NSDatePicker.ElementFlags](nsdatepicker/elementflags/yearmonth.md)
-- [static var yearMonthDay: NSDatePicker.ElementFlags](nsdatepicker/elementflags/yearmonthday.md)
+### Constants
+- [static var era: NSDatePicker.ElementFlags](./era.md)
+- [static var hourMinute: NSDatePicker.ElementFlags](./hourminute.md)
+- [static var hourMinuteSecond: NSDatePicker.ElementFlags](./hourminutesecond.md)
+- [static var yearMonth: NSDatePicker.ElementFlags](./yearmonth.md)
+- [static var yearMonthDay: NSDatePicker.ElementFlags](./yearmonthday.md)
 
 
 ---

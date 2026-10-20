@@ -1,7 +1,8 @@
 # typeAERecord
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 List of keyword-specified descriptors.
 

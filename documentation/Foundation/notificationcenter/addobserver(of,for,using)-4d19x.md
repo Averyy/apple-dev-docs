@@ -1,7 +1,8 @@
 # addObserver(of:for:using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an observer to a center for messages delivered on the main actor with a given subject and identifier.
 
@@ -32,19 +33,20 @@ A token representing the observation registration with the given notification ce
 
 ## See Also
 
-- [func addObserver<Identifier, Message>(of: Message.Subject.Type, for: Identifier, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-90os.md)
+### Observing concurrency-safe notifications
+- [func addObserver<Identifier, Message>(of: Message.Subject.Type, for: Identifier, using: (Message) -> Void) -> NotificationCenter.ObservationToken](./addobserver%28of,for,using%29-90os.md)
   Adds an observer to a center for messages delivered on the main actor with a given subject and identifier.
-- [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-56bn4.md)
+- [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) -> Void) -> NotificationCenter.ObservationToken](./addobserver%28of,for,using%29-56bn4.md)
   Adds an observer to a center for messages delivered on the main actor with a given subject and message type.
-- [func addObserver<Identifier, Message>(of: Message.Subject, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-twm3.md)
+- [func addObserver<Identifier, Message>(of: Message.Subject, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](./addobserver%28of,for,using%29-twm3.md)
   Adds an observer to a center for messages delivered asynchronously with a given subject and identifier.
-- [func addObserver<Identifier, Message>(of: Message.Subject.Type, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-t1wr.md)
+- [func addObserver<Identifier, Message>(of: Message.Subject.Type, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](./addobserver%28of,for,using%29-t1wr.md)
   Adds an observer to a center for messages delivered asynchronously with a given subject and message type.
-- [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-64uw3.md)
+- [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](./addobserver%28of,for,using%29-64uw3.md)
   Adds an observer to a center for messages delivered asynchronously with a given subject and message type.
-- [func removeObserver(NotificationCenter.ObservationToken)](notificationcenter/removeobserver(_:)-2gmm0.md)
+- [func removeObserver(NotificationCenter.ObservationToken)](./removeobserver%28_%29-2gmm0.md)
   Stops the observation represented by the given observation token.
-- [NotificationCenter.ObservationToken](notificationcenter/observationtoken.md)
+- [NotificationCenter.ObservationToken](./observationtoken.md)
   A unique token representing a single observer registration in a notification center.
 
 

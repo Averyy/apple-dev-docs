@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.invalidResourceCodeSignature
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that a resource failed the bundle’s code signature checks.
 
@@ -16,6 +17,10 @@ Indicates that a resource failed the bundle’s code signature checks.
 
 ```swift
 case invalidResourceCodeSignature
+```
+
+```c
+WKWebExtensionErrorInvalidResourceCodeSignature
 ```
 
 

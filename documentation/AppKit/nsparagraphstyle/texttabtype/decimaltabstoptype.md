@@ -1,12 +1,15 @@
 # NSParagraphStyle.TextTabType.decimalTabStopType
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A tab stop that aligns columns of numbers to each number’s decimal point.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use NSTextAlignment-based API.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A tab stop that aligns columns of numbers to each number’s decimal point.
 case decimalTabStopType
 ```
 
+```c
+NSDecimalTabStopType
+```
+
 ## See Also
 
-- [NSParagraphStyle.TextTabType.leftTabStopType](nsparagraphstyle/texttabtype/lefttabstoptype.md)
+### Constants
+- [NSParagraphStyle.TextTabType.leftTabStopType](./lefttabstoptype.md)
   A left-aligned tab stop.
-- [NSParagraphStyle.TextTabType.rightTabStopType](nsparagraphstyle/texttabtype/righttabstoptype.md)
+- [NSParagraphStyle.TextTabType.rightTabStopType](./righttabstoptype.md)
   A right-aligned tab stop.
-- [NSParagraphStyle.TextTabType.centerTabStopType](nsparagraphstyle/texttabtype/centertabstoptype.md)
+- [NSParagraphStyle.TextTabType.centerTabStopType](./centertabstoptype.md)
   A center-aligned tab stop.
 
 

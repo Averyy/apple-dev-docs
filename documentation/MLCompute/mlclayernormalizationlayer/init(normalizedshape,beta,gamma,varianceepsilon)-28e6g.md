@@ -1,16 +1,19 @@
 # init(normalizedShape:beta:gamma:varianceEpsilon:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a normalization layer with a shape, optional beta and gamma tensors, and variance epsilon you specify.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.0
+- iPadOS 14.5+ - Deprecated in 17.0
+- Mac Catalyst 14.5+ - Deprecated in 17.0
+- macOS 11.3+ - Deprecated in 14.0
+- tvOS 14.5+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -27,7 +30,8 @@ convenience init?(normalizedShape: [Int], beta: MLCTensor?, gamma: MLCTensor?, v
 
 ## See Also
 
-- [convenience init?(normalizedShape: [Int], beta: MLCTensor, gamma: MLCTensor, varianceEpsilon: Float)](mlclayernormalizationlayer/init(normalizedshape:beta:gamma:varianceepsilon:)-5i2aa.md)
+### Creating Layer Normalization Layers
+- [convenience init?(normalizedShape: [Int], beta: MLCTensor, gamma: MLCTensor, varianceEpsilon: Float)](./init%28normalizedshape,beta,gamma,varianceepsilon%29-5i2aa.md)
   Creates a normalization layer with a shape, beta and gamma tensors, and variance epsilon you specify.
 
 

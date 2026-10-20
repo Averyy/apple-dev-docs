@@ -1,7 +1,8 @@
 # writeAttributeNullableOctetString(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeNullableOctetString(withValue value: Data?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeNullableOctetString(withValue value: Data?) async throws
+```
+
+```objc
+- (void) writeAttributeNullableOctetStringWithValue:(NSData *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

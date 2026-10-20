@@ -1,7 +1,8 @@
 # asset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset associated with the media selection.
 
@@ -18,6 +19,10 @@ The asset associated with the media selection.
 
 ```swift
 weak var asset: AVAsset? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) AVAsset * asset;
 ```
 
 

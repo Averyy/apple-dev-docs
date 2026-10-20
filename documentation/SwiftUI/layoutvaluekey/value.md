@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the key’s value.
@@ -23,11 +24,12 @@ associatedtype Value
 
 #### Discussion
 
-Swift typically infers this type from your implementation of the [`defaultValue`](layoutvaluekey/defaultvalue.md) property, so you don’t have to define it explicitly.
+Swift typically infers this type from your implementation of the [`defaultValue`](./defaultvalue.md) property, so you don’t have to define it explicitly.
 
 ## See Also
 
-- [static var defaultValue: Self.Value](layoutvaluekey/defaultvalue.md)
+### Providing a default value
+- [static var defaultValue: Self.Value](./defaultvalue.md)
   The default value of the key.
 
 

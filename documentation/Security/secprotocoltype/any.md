@@ -1,7 +1,8 @@
 # SecProtocolType.any
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that any protocol is acceptable.
 
@@ -13,6 +14,10 @@ Indicates that any protocol is acceptable.
 
 ```swift
 case any
+```
+
+```c
+kSecProtocolTypeAny
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # SpatialEventCollection.Event.ID
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that uniquely identifies an event over the course of its lifetime.
 
@@ -22,20 +23,21 @@ struct ID
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var timestamp: TimeInterval](spatialeventcollection/event/timestamp.md)
+### Identifying the event
+- [var timestamp: TimeInterval](./timestamp.md)
   The time the event was processed.
-- [var id: SpatialEventCollection.Event.ID](spatialeventcollection/event/id-swift.property.md)
+- [var id: SpatialEventCollection.Event.ID](./id-swift.property.md)
   An identifier that uniquely identifies the event over its lifetime.
-- [var kind: SpatialEventCollection.Event.Kind](spatialeventcollection/event/kind-swift.property.md)
+- [var kind: SpatialEventCollection.Event.Kind](./kind-swift.property.md)
   The event’s input source.
-- [SpatialEventCollection.Event.Kind](spatialeventcollection/event/kind-swift.enum.md)
+- [SpatialEventCollection.Event.Kind](./kind-swift.enum.md)
   The possible input sources or modes of an event.
-- [var modifierKeys: EventModifiers](spatialeventcollection/event/modifierkeys.md)
+- [var modifierKeys: EventModifiers](./modifierkeys.md)
   The set of active modifier keys at the time of this event.
 
 

@@ -1,14 +1,15 @@
 # SC_Scatter
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __SC_Scatter {
     ...
 } SC_Scatter;
@@ -17,10 +18,10 @@ typedef struct __SC_Scatter {
 ## Topics
 
 ### Instance Properties
-- [base](sc_scatter/2869913-base.md)
-- [count](sc_scatter/2869969-count.md)
-- [spare](sc_scatter/2869930-spare.md)
-- [targetOffset](sc_scatter/2869928-targetoffset.md)
+- [base](./sc_scatter/api-2869913-base.md)
+- [count](./sc_scatter/api-2869969-count.md)
+- [spare](./sc_scatter/api-2869930-spare.md)
+- [targetOffset](./sc_scatter/api-2869928-targetoffset.md)
 
 
 ---

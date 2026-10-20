@@ -1,7 +1,8 @@
 # MTLTensorError.Code.invalidDescriptor
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tensor descriptor is invalid.
 
@@ -17,6 +18,10 @@ The tensor descriptor is invalid.
 
 ```swift
 case invalidDescriptor
+```
+
+```c
+MTLTensorErrorInvalidDescriptor
 ```
 
 

@@ -1,7 +1,8 @@
 # product(keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the product along all axes.
 
@@ -39,7 +40,8 @@ await y.shapedArray(of: Float.self) // is [5040.0]
 
 ## See Also
 
-- [func product(alongAxes:keepRank:)](mltensor/product(alongaxes:keeprank:).md)
+### Accessing the product along an axes
+- [func product(alongAxes:keepRank:)](./product%28alongaxes,keeprank%29.md)
   Returns the product along the specified axes.
 
 

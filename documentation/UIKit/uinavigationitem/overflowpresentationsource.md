@@ -1,7 +1,8 @@
 # overflowPresentationSource
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item you can use as an anchor to present a custom UI from the overflow menu button.
 
@@ -17,13 +18,18 @@ The item you can use as an anchor to present a custom UI from the overflow menu 
 var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) id<UIPopoverPresentationControllerSourceItem> overflowPresentationSource;
+```
+
 #### Discussion
 
 If the overflow menu button for the navigation item is visible, this property returns a non-`nil` item that you can use as a presentation source — for example, to present a custom popover that anchors to the overflow menu button. Otherwise, this property returns `nil`.
 
 ## See Also
 
-- [var additionalOverflowItems: UIDeferredMenuElement?](uinavigationitem/additionaloverflowitems.md)
+### Working with the overflow menu
+- [var additionalOverflowItems: UIDeferredMenuElement?](./additionaloverflowitems.md)
   Additional items to present in the overflow menu.
 
 

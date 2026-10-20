@@ -1,7 +1,8 @@
 # contentSource
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,16 +19,21 @@
 var contentSource: AVAudioContentSource { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudioContentSource contentSource;
+```
+
 #### Discussion
 
 Index to select a pre-defined content source type that describes the content type and how it was generated.  Note: This is only supported when compressing audio to formats which support it.
 
 ## See Also
 
-- [var audioSyncPacketFrequency: Int](avaudioconverter/audiosyncpacketfrequency.md)
-- [enum AVAudioContentSource](avaudiocontentsource.md)
-- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](avaudioconverter/dynamicrangecontrolconfiguration.md)
-- [enum AVAudioDynamicRangeControlConfiguration](avaudiodynamicrangecontrolconfiguration.md)
+### Managing packet dependencies
+- [var audioSyncPacketFrequency: Int](./audiosyncpacketfrequency.md)
+- [enum AVAudioContentSource](../avaudiocontentsource.md)
+- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](./dynamicrangecontrolconfiguration.md)
+- [enum AVAudioDynamicRangeControlConfiguration](../avaudiodynamicrangecontrolconfiguration.md)
 
 
 ---

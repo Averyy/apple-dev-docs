@@ -1,7 +1,8 @@
 # size
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the asset in bytes.
 
@@ -10,7 +11,7 @@ The size of the asset in bytes.
 
 ## Declaration
 
-```swift
+```
 attribute Int64? size;
 ```
 

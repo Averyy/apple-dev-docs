@@ -1,6 +1,7 @@
 # Adding comments to tests
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: Article
 
 Add comments to provide useful information about tests.
 
@@ -16,7 +17,7 @@ Test code is no different and can benefit from explanatory code comments, but of
 
 Seeing comments related to tests in these contexts can help diagnose issues more quickly. Comments can be added to test declarations and the testing library will automatically capture and show them when issues are recorded.
 
-#### Add a Code Comment to a Test
+#### Add a code comment to a test
 
 To include a comment on a test or suite, write an ordinary Swift code comment immediately before its `@Test` or `@Suite` attribute:
 
@@ -42,34 +43,35 @@ The following language comment styles are supported:
 | `/* ... */` | Block comment |
 | `/** ... */` | Documentation block comment |
 
-##### Comment Formatting
+##### Comment formatting
 
 Test comments which are automatically added from source code comments preserve their original formatting, including any prefixes like `//` or `/**`. This is because the whitespace and formatting of comments can be meaningful in some circumstances or aid in understanding the comment — for example, when a comment includes an example code snippet or diagram.
 
-#### Use Test Comments Effectively
+#### Use test comments effectively
 
 As in normal code, comments on tests are generally most useful when they:
 
 - Add information that isn’t obvious from reading the code
 - Provide useful information about the operation or motivation of a test
 
-If a test is related to a bug or issue, consider using the [`Bug`](bug.md) trait instead of comments. For more information, see [`Associating bugs with tests`](associatingbugs.md).
+If a test is related to a bug or issue, consider using the [`Bug`](./bug.md) trait instead of comments. For more information, see [Associating bugs with tests](./associatingbugs.md).
 
 ## See Also
 
-- [Adding tags to tests](addingtags.md)
+### Annotating tests
+- [Adding tags to tests](./addingtags.md)
   Use tags to provide semantic information for organization, filtering, and customizing appearances.
-- [Associating bugs with tests](associatingbugs.md)
+- [Associating bugs with tests](./associatingbugs.md)
   Associate bugs uncovered or verified by tests.
-- [Interpreting bug identifiers](bugidentifiers.md)
+- [Interpreting bug identifiers](./bugidentifiers.md)
   Examine how the testing library interprets bug identifiers provided by developers.
-- [macro Tag()](tag().md)
+- [macro Tag()](./tag%28%29.md)
   Declare a tag that can be applied to a test function or test suite.
-- [static func bug(String, Comment?) -> Self](trait/bug(_:_:).md)
+- [static func bug(String, Comment?) -> Self](./trait/bug%28_,_%29.md)
   Constructs a bug to track with a test.
-- [static func bug(String?, id: String, Comment?) -> Self](trait/bug(_:id:_:)-10yf5.md)
+- [static func bug(String?, id: String, Comment?) -> Self](./trait/bug%28_,id,_%29-10yf5.md)
   Constructs a bug to track with a test.
-- [static func bug(String?, id: some Numeric, Comment?) -> Self](trait/bug(_:id:_:)-3vtpl.md)
+- [static func bug(String?, id: some Numeric, Comment?) -> Self](./trait/bug%28_,id,_%29-3vtpl.md)
   Constructs a bug to track with a test.
 
 

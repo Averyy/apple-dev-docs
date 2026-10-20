@@ -1,7 +1,8 @@
 # isSharable
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether records in this zone can be shared.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether records in this zone can be shared.
 
 ## Declaration
 
-```swift
+```
 attribute boolean? isSharable;
 ```
 

@@ -1,7 +1,8 @@
 # sessionIsRoot
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A bit that indicates the session is the root session.
 
@@ -13,6 +14,10 @@ A bit that indicates the session is the root session.
 
 ```swift
 static var sessionIsRoot: SessionAttributeBits { get }
+```
+
+```c
+sessionIsRoot
 ```
 
 

@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font feature key with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 4.0+
 
 ## Declaration
@@ -21,7 +22,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](uifontdescriptor/featurekey/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a font feature key.
 
 

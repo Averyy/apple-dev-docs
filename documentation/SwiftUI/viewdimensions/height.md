@@ -1,7 +1,8 @@
 # height
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s height.
 
@@ -22,7 +23,8 @@ var height: CGFloat { get }
 
 ## See Also
 
-- [var width: CGFloat](viewdimensions/width.md)
+### Getting dimensions
+- [var width: CGFloat](./width.md)
   The view’s width.
 
 

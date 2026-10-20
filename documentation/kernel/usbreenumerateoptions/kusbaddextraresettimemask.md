@@ -1,7 +1,8 @@
 # kUSBAddExtraResetTimeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask to request extra time after reset.
 
@@ -10,7 +11,7 @@ The mask to request extra time after reset.
 
 ## Declaration
 
-```swift
+```c
 kUSBAddExtraResetTimeMask = ( 1 << kUSBAddExtraResetTimeBit)
 ```
 

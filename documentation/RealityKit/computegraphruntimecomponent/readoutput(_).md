@@ -1,7 +1,8 @@
 # readOutput(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the output buffer for the port at the given address.
 

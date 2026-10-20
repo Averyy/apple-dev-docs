@@ -1,7 +1,8 @@
 # setObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool setObject(const OSMetaClassBase *anObject);
+```
+
+*macOS*
+
+```cpp
 virtual bool setObject(const OSMetaClassBase *anObject);
 ```
 

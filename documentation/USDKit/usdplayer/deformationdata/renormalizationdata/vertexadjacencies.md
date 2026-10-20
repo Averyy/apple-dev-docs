@@ -1,7 +1,8 @@
 # vertexAdjacencies
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flattened list of triangle face indices adjacent to each vertex.
 

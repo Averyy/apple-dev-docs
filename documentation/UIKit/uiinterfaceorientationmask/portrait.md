@@ -1,15 +1,16 @@
 # portrait
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view controller supports a portrait interface orientation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,19 +18,24 @@ The view controller supports a portrait interface orientation.
 static var portrait: UIInterfaceOrientationMask { get }
 ```
 
+```c
+UIInterfaceOrientationMaskPortrait
+```
+
 ## See Also
 
-- [static var landscapeLeft: UIInterfaceOrientationMask](uiinterfaceorientationmask/landscapeleft.md)
+### Constants
+- [static var landscapeLeft: UIInterfaceOrientationMask](./landscapeleft.md)
   The view controller supports a landscape-left interface orientation.
-- [static var landscapeRight: UIInterfaceOrientationMask](uiinterfaceorientationmask/landscaperight.md)
+- [static var landscapeRight: UIInterfaceOrientationMask](./landscaperight.md)
   The view controller supports a landscape-right interface orientation.
-- [static var portraitUpsideDown: UIInterfaceOrientationMask](uiinterfaceorientationmask/portraitupsidedown.md)
+- [static var portraitUpsideDown: UIInterfaceOrientationMask](./portraitupsidedown.md)
   The view controller supports an upside-down portrait interface orientation.
-- [static var landscape: UIInterfaceOrientationMask](uiinterfaceorientationmask/landscape.md)
+- [static var landscape: UIInterfaceOrientationMask](./landscape.md)
   The view controller supports both landscape-left and landscape-right interface orientation.
-- [static var all: UIInterfaceOrientationMask](uiinterfaceorientationmask/all.md)
+- [static var all: UIInterfaceOrientationMask](./all.md)
   The view controller supports all interface orientations.
-- [static var allButUpsideDown: UIInterfaceOrientationMask](uiinterfaceorientationmask/allbutupsidedown.md)
+- [static var allButUpsideDown: UIInterfaceOrientationMask](./allbutupsidedown.md)
   The view controller supports all but the upside-down portrait interface orientation.
 
 

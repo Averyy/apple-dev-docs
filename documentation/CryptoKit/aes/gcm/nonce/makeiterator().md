@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of the nonce.
 

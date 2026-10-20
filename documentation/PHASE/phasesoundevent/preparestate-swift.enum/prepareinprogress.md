@@ -1,17 +1,18 @@
 # PHASESoundEvent.PrepareState.prepareInProgress
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the sound event prepares for playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Indicates that the sound event prepares for playback.
 case prepareInProgress
 ```
 
+```c
+PHASESoundEventPrepareStatePrepareInProgress
+```
+
 ## See Also
 
-- [PHASESoundEvent.PrepareState.prepareNotStarted](phasesoundevent/preparestate-swift.enum/preparenotstarted.md)
+### States
+- [PHASESoundEvent.PrepareState.prepareNotStarted](./preparenotstarted.md)
   Indicates that the sound event awaits preparation.
-- [PHASESoundEvent.PrepareState.prepared](phasesoundevent/preparestate-swift.enum/prepared.md)
+- [PHASESoundEvent.PrepareState.prepared](./prepared.md)
   Indicates that the sound event preparation is complete.
 
 

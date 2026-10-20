@@ -1,7 +1,8 @@
 # MusicUnderstandingError
 
 **Framework**: Music Understanding  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs during a music understanding session.
 
@@ -23,26 +24,26 @@ enum MusicUnderstandingError
 ## Topics
 
 ### Types of error cases
-- [MusicUnderstandingError.emptyAnalysisSet](musicunderstandingerror/emptyanalysisset.md)
+- [MusicUnderstandingError.emptyAnalysisSet](./musicunderstandingerror/emptyanalysisset.md)
   The error that occurs when someone requests and analysis of an empty analysis set.
-- [MusicUnderstandingError.internalError](musicunderstandingerror/internalerror.md)
+- [MusicUnderstandingError.internalError](./musicunderstandingerror/internalerror.md)
   The error that occurs when an unexpected internal failure prevents the session from completing.
-- [MusicUnderstandingError.invalidAsset](musicunderstandingerror/invalidasset.md)
+- [MusicUnderstandingError.invalidAsset](./musicunderstandingerror/invalidasset.md)
   The error that occurs when someone initializes a session with an invalid asset.
-- [MusicUnderstandingError.sessionInProgress](musicunderstandingerror/sessioninprogress.md)
+- [MusicUnderstandingError.sessionInProgress](./musicunderstandingerror/sessioninprogress.md)
   The error that occurs when someone requests analysis while a session is already in progress.
 ### Enumeration Cases
-- [MusicUnderstandingError.hasProtectedContent](musicunderstandingerror/hasprotectedcontent.md)
+- [MusicUnderstandingError.hasProtectedContent](./musicunderstandingerror/hasprotectedcontent.md)
   The error that occurs when a session is initialized with an `AVAsset` whose content is protected by DRM and cannot be decoded for analysis.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

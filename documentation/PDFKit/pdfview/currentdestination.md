@@ -1,7 +1,8 @@
 # currentDestination
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a `PDFDestination` object representing the current page and the current point in the view specified in page space.
 
@@ -19,19 +20,25 @@ Returns a `PDFDestination` object representing the current page and the current 
 var currentDestination: PDFDestination? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) PDFDestination * currentDestination;
+```
+
 #### Discussion
 
 Page space is a 72 dpi coordinate system with the origin at the lower-left corner of the current page.
 
 ## See Also
 
-- [func go(to: PDFDestination)](pdfview/go(to:)-5lh5d.md)
+### Related Documentation
+- [func go(to: PDFDestination)](./go%28to%29-5lh5d.md)
   Navigates to the specified destination.
-- [var currentPage: PDFPage?](pdfview/currentpage.md)
+### Navigating Within a Document
+- [var currentPage: PDFPage?](./currentpage.md)
   Returns the current page.
-- [var visiblePages: [PDFPage]](pdfview/visiblepages.md)
+- [var visiblePages: [PDFPage]](./visiblepages.md)
   Returns an array of `PDFPage` objects that represent the currently visible pages.
-- [Navigation](navigation.md)
+- [Navigation](../navigation.md)
   Operations for moving through page history and seeking to a page in a document.
 
 

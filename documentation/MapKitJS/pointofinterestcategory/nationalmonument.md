@@ -1,7 +1,8 @@
 # NationalMonument
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for national monuments.
 
@@ -10,7 +11,7 @@ The point-of-interest category for national monuments.
 
 ## Declaration
 
-```swift
+```
 readonly NationalMonument: "NationalMonument";
 ```
 

@@ -1,7 +1,8 @@
 # interSectionSpacing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space between the sections in the layout.
 
@@ -18,15 +19,20 @@ The amount of space between the sections in the layout.
 var interSectionSpacing: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat interSectionSpacing;
+```
+
 #### Discussion
 
 The default value of this property is `0.0`.
 
 ## See Also
 
-- [var contentInsetsReference: UIContentInsetsReference](uicollectionviewcompositionallayoutconfiguration/contentinsetsreference.md)
+### Configuring spacing
+- [var contentInsetsReference: UIContentInsetsReference](./contentinsetsreference.md)
   The boundary to reference when defining content insets.
-- [enum UIContentInsetsReference](uicontentinsetsreference.md)
+- [enum UIContentInsetsReference](../uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
 
 

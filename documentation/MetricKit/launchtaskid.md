@@ -1,7 +1,8 @@
 # LaunchTaskID
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for a task measured as part of an extended app launch.
 
@@ -19,7 +20,7 @@ struct LaunchTaskID
 
 #### Discussion
 
-`LaunchTaskID` is `RawRepresentable` and `ExpressibleByStringLiteral`. You can pass a string literal directly as the `id` argument to [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-48k2s.md) or [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-jnu1.md):
+`LaunchTaskID` is `RawRepresentable` and `ExpressibleByStringLiteral`. You can pass a string literal directly as the `id` argument to [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-48k2s.md) or [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-jnu1.md):
 
 ```swift
 await manager.trackLaunchTask(id: "initial-data-load") {
@@ -32,19 +33,20 @@ Choose unique, descriptive names for each task you track. The system uses the ID
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StateReportingDomain](statereportingdomain.md)
+### App state reporting
+- [struct StateReportingDomain](./statereportingdomain.md)
   A value that identifies a reporting scope for segmenting metric data.
 
 

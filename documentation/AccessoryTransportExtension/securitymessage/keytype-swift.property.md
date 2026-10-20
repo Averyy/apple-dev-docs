@@ -1,7 +1,8 @@
 # keyType
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of key carried by this message.
 
@@ -16,9 +17,10 @@ let keyType: SecurityMessage.KeyType
 
 ## See Also
 
-- [let key: Data](securitymessage/key.md)
+### Accessing key material
+- [let key: Data](./key.md)
   The key data carried by this message.
-- [SecurityMessage.KeyType](securitymessage/keytype-swift.enum.md)
+- [SecurityMessage.KeyType](./keytype-swift.enum.md)
   A type that identifies the key material a security message carries.
 
 

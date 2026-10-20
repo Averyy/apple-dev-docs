@@ -1,7 +1,8 @@
 # AdGroupTargeting.Country
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Country-level geographic targeting.
 
@@ -10,13 +11,13 @@ Country-level geographic targeting.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargeting.Country
 ```
 
 #### Discussion
 
-Country IDs are returned by [`Search Geo Locations`](searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](gets-a-list-of-geo-locations.md) (`supplySource=APPSTORE`). Used with App Store campaigns. Uses the [`TargetingData`](targetingdata.md) `include`/`exclude` shape.
+Country IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md) (`supplySource=APPSTORE`). Used with App Store campaigns. Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 
 ```json
 "country": {

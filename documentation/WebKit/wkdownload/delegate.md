@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object you use to track download progress and handle redirects, authentication challenges, and failures.
 
@@ -18,11 +19,16 @@ An object you use to track download progress and handle redirects, authenticatio
 weak var delegate: (any WKDownloadDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<WKDownloadDelegate> delegate;
+```
+
 ## See Also
 
-- [func cancel(((Data?) -> Void)?)](wkdownload/cancel(_:).md)
+### Managing the download
+- [func cancel(((Data?) -> Void)?)](./cancel%28_%29.md)
   Cancels the download, and optionally captures data so that you can resume the download later.
-- [WKDownload.RedirectPolicy](wkdownload/redirectpolicy.md)
+- [WKDownload.RedirectPolicy](./redirectpolicy.md)
   An enumeration with cases that indicate whether to proceed with a redirect.
 
 

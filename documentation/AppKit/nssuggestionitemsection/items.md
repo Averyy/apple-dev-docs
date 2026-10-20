@@ -1,7 +1,8 @@
 # items
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items that appear in this section
 

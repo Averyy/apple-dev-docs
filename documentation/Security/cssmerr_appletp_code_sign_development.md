@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_CODE_SIGN_DEVELOPMENT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_CODE_SIGN_DEVELOPMENT: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_CODE_SIGN_DEVELOPMENT
 ```
 
 

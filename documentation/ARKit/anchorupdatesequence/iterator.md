@@ -1,7 +1,8 @@
 # AnchorUpdateSequence.Iterator
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 1.0+
@@ -15,15 +16,15 @@ struct Iterator<TypeOfAnchor> where TypeOfAnchor : Anchor
 ## Topics
 
 ### Instance Methods
-- [func next() async -> AnchorUpdateSequence<AnchorType>.Iterator<TypeOfAnchor>.Element?](anchorupdatesequence/iterator/next.md)
+- [func next() async -> AnchorUpdateSequence<AnchorType>.Iterator<TypeOfAnchor>.Element?](./iterator/next%28%29.md)
   Asynchronously retrieve the next anchor update.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncIteratorProtocol](../../Swift/asynciteratorprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

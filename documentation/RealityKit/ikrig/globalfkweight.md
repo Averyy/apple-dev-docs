@@ -1,7 +1,8 @@
 # globalFkWeight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The solver global weight for the forward kinematics demands.
 
@@ -21,7 +22,7 @@ var globalFkWeight: Float
 
 #### Discussion
 
-This weight is a multiplier for each joint’s [`fkWeightPerAxis`](ikrig/joint/fkweightperaxis.md).
+This weight is a multiplier for each joint’s [`fkWeightPerAxis`](./joint/fkweightperaxis.md).
 
 The recommended value range is the closed range `[0, 1]`, where `0` means no FK demands influence, and `1` is no rig level modification.
 

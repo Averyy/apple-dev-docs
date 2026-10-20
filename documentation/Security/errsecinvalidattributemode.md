@@ -1,7 +1,8 @@
 # errSecInvalidAttributeMode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A mode attribute is not valid.
 
@@ -18,6 +19,10 @@ A mode attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeMode: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeMode
 ```
 
 

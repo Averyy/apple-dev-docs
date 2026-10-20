@@ -1,7 +1,8 @@
 # ForceMode.velocity
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A direct adjustment to a body’s linear or angular velocity, independent of its mass or inertia.
 
@@ -21,9 +22,9 @@ case velocity
 
 #### Discussion
 
-The quantity that user sets via [`setForce(_:index:)`](forceeffectparameters/setforce(_:index:).md) has the units of distance / time. `velocity` mode causes a change in velocity independent of a body’s mass.
+The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of distance / time. `velocity` mode causes a change in velocity independent of a body’s mass.
 
-The quantity that user sets via [`setTorque(_:index:)`](forceeffectparameters/settorque(_:index:).md) has the units of 1 / time or radian / time. `velocity` mode causes a change in angular velocity independent of a body’s mass or inertia.
+The quantity that user sets via [`setTorque(_:index:)`](../forceeffectparameters/settorque%28_,index%29.md) has the units of 1 / time or radian / time. `velocity` mode causes a change in angular velocity independent of a body’s mass or inertia.
 
 
 ---

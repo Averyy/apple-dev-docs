@@ -1,14 +1,15 @@
 # xb_seek
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int xb_seek(struct xdrbuf *, size_t);
 ```
 

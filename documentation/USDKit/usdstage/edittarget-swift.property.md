@@ -1,7 +1,8 @@
 # editTarget
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination for authoring operations on this stage.
 
@@ -21,7 +22,8 @@ var editTarget: USDStage.EditTarget { get nonmutating set }
 
 ## See Also
 
-- [USDStage.EditTarget](usdstage/edittarget-swift.struct.md)
+### Setting the edit target
+- [USDStage.EditTarget](./edittarget-swift.struct.md)
   A destination for authoring operations on a stage.
 
 

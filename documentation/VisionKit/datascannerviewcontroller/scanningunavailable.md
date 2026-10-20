@@ -1,7 +1,8 @@
 # DataScannerViewController.ScanningUnavailable
 
 **Framework**: VisionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible reasons the data scanner is unavailable.
 
@@ -19,29 +20,31 @@ enum ScanningUnavailable
 ## Topics
 
 ### Unavailable errors
-- [DataScannerViewController.ScanningUnavailable.unsupported](datascannerviewcontroller/scanningunavailable/unsupported.md)
+- [DataScannerViewController.ScanningUnavailable.unsupported](./scanningunavailable/unsupported.md)
   The data scanner isn’t supported on this device.
-- [DataScannerViewController.ScanningUnavailable.cameraRestricted](datascannerviewcontroller/scanningunavailable/camerarestricted.md)
+- [DataScannerViewController.ScanningUnavailable.cameraRestricted](./scanningunavailable/camerarestricted.md)
   The data scanner isn’t available due to user restrictions on the use of the camera.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func dataScanner(DataScannerViewController, becameUnavailableWithError: DataScannerViewController.ScanningUnavailable)](datascannerviewcontrollerdelegate/datascanner(_:becameunavailablewitherror:).md)
+### Related Documentation
+- [func dataScanner(DataScannerViewController, becameUnavailableWithError: DataScannerViewController.ScanningUnavailable)](../datascannerviewcontrollerdelegate/datascanner%28_,becameunavailablewitherror%29.md)
   Responds when the data scanner becomes unavailable and stops scanning.
-- [class var isSupported: Bool](datascannerviewcontroller/issupported.md)
+### Handling availability
+- [class var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the device supports data scanning.
-- [class var isAvailable: Bool](datascannerviewcontroller/isavailable.md)
+- [class var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether a person grants your app access to the camera and doesn’t have any restrictions to using the camera.
-- [class var supportedTextRecognitionLanguages: [String]](datascannerviewcontroller/supportedtextrecognitionlanguages.md)
+- [class var supportedTextRecognitionLanguages: [String]](./supportedtextrecognitionlanguages.md)
   The identifiers for the languages that the data scanner recognizes.
 
 

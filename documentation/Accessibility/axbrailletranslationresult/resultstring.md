@@ -1,7 +1,8 @@
 # resultString
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resulting string after translation or back-translation.
 
@@ -18,6 +19,10 @@ The resulting string after translation or back-translation.
 
 ```swift
 var resultString: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * resultString;
 ```
 
 

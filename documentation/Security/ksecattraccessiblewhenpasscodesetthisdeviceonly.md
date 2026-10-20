@@ -1,7 +1,8 @@
 # kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data in the keychain can only be accessed when the device is unlocked. Only available if a passcode is set on the device.
 
@@ -20,9 +21,13 @@ The data in the keychain can only be accessed when the device is unlocked. Only 
 let kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly;
+```
+
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # buttonRepeatBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
 
@@ -34,7 +35,7 @@ Button {
 .buttonRepeatBehavior(.enabled)
 ```
 
-This affects all system button styles, as well as automatically affects custom `ButtonStyle` conforming types. This does not automatically apply to custom `PrimitiveButtonStyle` conforming types, and the [`buttonRepeatBehavior`](environmentvalues/buttonrepeatbehavior.md) value should be used to adjust their custom gestures as appropriate.
+This affects all system button styles, as well as automatically affects custom `ButtonStyle` conforming types. This does not automatically apply to custom `PrimitiveButtonStyle` conforming types, and the [`buttonRepeatBehavior`](../environmentvalues/buttonrepeatbehavior.md) value should be used to adjust their custom gestures as appropriate.
 
 ## Parameters
 
@@ -42,23 +43,24 @@ This affects all system button styles, as well as automatically affects custom `
 
 ## See Also
 
-- [struct Button](button.md)
+### Creating buttons
+- [struct Button](../button.md)
   A control that initiates an action.
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+- [func buttonStyle(_:)](./buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [func buttonBorderShape(ButtonBorderShape) -> some View](view/buttonbordershape(_:).md)
+- [func buttonBorderShape(ButtonBorderShape) -> some View](./buttonbordershape%28_%29.md)
   Sets the border shape for buttons in this view.
-- [struct ButtonBorderShape](buttonbordershape.md)
+- [struct ButtonBorderShape](../buttonbordershape.md)
   A shape used to draw a button’s border.
-- [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
+- [struct ButtonRepeatBehavior](../buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](../environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](../buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
-- [struct ButtonRole](buttonrole.md)
+- [struct ButtonRole](../buttonrole.md)
   A value that describes the purpose of a button.
 
 

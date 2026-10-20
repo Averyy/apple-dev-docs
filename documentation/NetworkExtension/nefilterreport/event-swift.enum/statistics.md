@@ -1,7 +1,8 @@
 # NEFilterReport.Event.statistics
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type of event indicating the report is for the latest statistics of the flow.
 
@@ -14,13 +15,18 @@ A type of event indicating the report is for the latest statistics of the flow.
 case statistics
 ```
 
+```c
+NEFilterReportEventStatistics
+```
+
 ## See Also
 
-- [NEFilterReport.Event.newFlow](nefilterreport/event-swift.enum/newflow.md)
+### Event Types
+- [NEFilterReport.Event.newFlow](./newflow.md)
   A type of event indicating the report is for a new flow.
-- [NEFilterReport.Event.dataDecision](nefilterreport/event-swift.enum/datadecision.md)
+- [NEFilterReport.Event.dataDecision](./datadecision.md)
   A type of event indicating the report is about a pass/block decision made after analyzing some amount of a flow’s data.
-- [NEFilterReport.Event.flowClosed](nefilterreport/event-swift.enum/flowclosed.md)
+- [NEFilterReport.Event.flowClosed](./flowclosed.md)
   A type of event indicating the report is for a flow’s closing.
 
 

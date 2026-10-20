@@ -1,7 +1,8 @@
 # MKReverseGeocodingRequest
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that looks up address strings for the provided geographic coordinates.
 
@@ -20,9 +21,13 @@ A class that looks up address strings for the provided geographic coordinates.
 class MKReverseGeocodingRequest
 ```
 
+```objc
+@interface MKReverseGeocodingRequest : NSObject
+```
+
 #### Discussion
 
-Use this class to look up an address by a coordinate you provide. This example shows how to use a [`Task`](https://developer.apple.com/documentation/swift/task) modifier on a SwiftUI view to reverse geocodes an array of coordinates to the corresponding addresses that MapKit returns in an array of [`MKMapItem`](mkmapitem.md) objects.
+Use this class to look up an address by a coordinate you provide. This example shows how to use a [`Task`](../Swift/task.md) modifier on a SwiftUI view to reverse geocodes an array of coordinates to the corresponding addresses that MapKit returns in an array of [`MKMapItem`](./mkmapitem.md) objects.
 
 ```swift
 
@@ -69,39 +74,40 @@ Use this class to look up an address by a coordinate you provide. This example s
 ## Topics
 
 ### Creating a request object
-- [init?(location: CLLocation)](mkreversegeocodingrequest/init(location:).md)
+- [init?(location: CLLocation)](./mkreversegeocodingrequest/init%28location%29.md)
   Initializes a new reverse geocoder request object with the provided location.
 ### Getting the reverse geocoder’s state
-- [var isLoading: Bool](mkreversegeocodingrequest/isloading.md)
+- [var isLoading: Bool](./mkreversegeocodingrequest/isloading.md)
   A Boolean value that indicates whether the current reverse geocoding request is in a loading state.
-- [var isCancelled: Bool](mkreversegeocodingrequest/iscancelled.md)
+- [var isCancelled: Bool](./mkreversegeocodingrequest/iscancelled.md)
   A Boolean value that indicates whether the current reverse geocoding request is in a cancelled state.
-- [var location: CLLocation](mkreversegeocodingrequest/location.md)
+- [var location: CLLocation](./mkreversegeocodingrequest/location.md)
   The location provided to the initializer.
 ### Controlling the reverse geocoder’s operation
-- [func cancel()](mkreversegeocodingrequest/cancel.md)
+- [func cancel()](./mkreversegeocodingrequest/cancel%28%29.md)
   A method you call to cancel a reverse geocoding request that’s in progress.
 ### Getting information about map items and the reverse geocoder’s locale’
-- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](mkreversegeocodingrequest/getmapitems(completionhandler:).md)
+- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](./mkreversegeocodingrequest/getmapitems%28completionhandler%29.md)
   Returns the map items relevant to the reverse geocoded location.
-- [var preferredLocale: Locale?](mkreversegeocodingrequest/preferredlocale.md)
+- [var preferredLocale: Locale?](./mkreversegeocodingrequest/preferredlocale.md)
   A value that indicates the preferred locale for the addresses the request returns, or `nil` if the framework should use the device locale.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKGeocodingRequest](mkgeocodingrequest.md)
+### Geocoding
+- [class MKGeocodingRequest](./mkgeocodingrequest.md)
   A class that looks up a geographic coordinate using the provided string.
 
 

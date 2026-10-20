@@ -1,7 +1,8 @@
 # TabularTransformerToEstimatorAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tabular estimator that always returns a predefined tabular transformer.
 
@@ -23,34 +24,35 @@ struct TabularTransformerToEstimatorAdaptor<Transformer> where Transformer : Tab
 ## Topics
 
 ### Creating an estimator
-- [init(Transformer)](tabulartransformertoestimatoradaptor/init(_:).md)
+- [init(Transformer)](./tabulartransformertoestimatoradaptor/init%28_%29.md)
   Creates a trivial tabular estimator.
 ### Getting the transformer
-- [let transformer: Transformer](tabulartransformertoestimatoradaptor/transformer.md)
+- [let transformer: Transformer](./tabulartransformertoestimatoradaptor/transformer.md)
   A pre-defined tabular transformer.
 ### Encoding and decoding
-- [func encode(Transformer, to: inout any EstimatorEncoder) throws](tabulartransformertoestimatoradaptor/encode(_:to:).md)
+- [func encode(Transformer, to: inout any EstimatorEncoder) throws](./tabulartransformertoestimatoradaptor/encode%28_,to%29.md)
   Does nothing since this tabular estimator uses a pre-defined tabular transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](tabulartransformertoestimatoradaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](./tabulartransformertoestimatoradaptor/decode%28from%29.md)
   Returns the pre-defined tabular transformer.
 ### Fitting
-- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Transformer](tabulartransformertoestimatoradaptor/fitted(to:eventhandler:).md)
+- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Transformer](./tabulartransformertoestimatoradaptor/fitted%28to,eventhandler%29.md)
   Returns the pre-defined tabular transformer.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TabularEstimator](tabularestimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TabularEstimator](./tabularestimator.md)
 
 ## See Also
 
-- [struct TabularEstimatorToSupervisedAdaptor](tabularestimatortosupervisedadaptor.md)
+### Tabular adaptors
+- [struct TabularEstimatorToSupervisedAdaptor](./tabularestimatortosupervisedadaptor.md)
   An adaptor that exposes a tabular estimator as a tabular supervised estimator.
-- [struct TabularTransformerToUpdatableEstimatorAdaptor](tabulartransformertoupdatableestimatoradaptor.md)
+- [struct TabularTransformerToUpdatableEstimatorAdaptor](./tabulartransformertoupdatableestimatoradaptor.md)
   An updatable tabular estimator that always returns a predefined transformer.
-- [struct UpdatableTabularEstimatorToSupervisedAdaptor](updatabletabularestimatortosupervisedadaptor.md)
+- [struct UpdatableTabularEstimatorToSupervisedAdaptor](./updatabletabularestimatortosupervisedadaptor.md)
   An adaptor that exposes an updatable tabular estimator as an updatable supervised tabular estimator.
 
 

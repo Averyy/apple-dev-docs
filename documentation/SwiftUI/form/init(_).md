@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a form based on a form style configuration.
 
@@ -20,6 +21,8 @@ Creates a form based on a form style configuration.
 nonisolated
 init(_ configuration: FormStyleConfiguration)
 ```
+
+Available when `Content` is `FormStyleConfiguration.Content`.
 
 ## Parameters
 

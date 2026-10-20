@@ -1,7 +1,8 @@
 # NEVPNIKEAuthenticationMethod
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Internet Key Exchange (IKE) authentication methods used to authenticate with the IPSec server.
 
@@ -19,39 +20,44 @@ Internet Key Exchange (IKE) authentication methods used to authenticate with the
 enum NEVPNIKEAuthenticationMethod
 ```
 
+```c
+enum NEVPNIKEAuthenticationMethod : NSInteger;
+```
+
 ## Topics
 
 ### Authentication methods
-- [NEVPNIKEAuthenticationMethod.none](nevpnikeauthenticationmethod/none.md)
-  Do not authenticate with the IPSec server. Note that extended authentication may still be performed if the [`useExtendedAuthentication`](nevpnprotocolipsec/useextendedauthentication.md) property is set. This value is only valid for IKE version 2 (IKEv2)
-- [NEVPNIKEAuthenticationMethod.certificate](nevpnikeauthenticationmethod/certificate.md)
-  Use a certificate and private key as the authentication credential. The certificate and private key set in the [`identityReference`](nevpnprotocol/identityreference.md) or [`identityData`](nevpnprotocol/identitydata.md) property will be used.
-- [NEVPNIKEAuthenticationMethod.sharedSecret](nevpnikeauthenticationmethod/sharedsecret.md)
-  Use a shared secret as the authentication credential. The shared secret set in the [`sharedSecretReference`](nevpnprotocolipsec/sharedsecretreference.md) property will be used.
+- [NEVPNIKEAuthenticationMethod.none](./nevpnikeauthenticationmethod/none.md)
+  Do not authenticate with the IPSec server. Note that extended authentication may still be performed if the [`useExtendedAuthentication`](./nevpnprotocolipsec/useextendedauthentication.md) property is set. This value is only valid for IKE version 2 (IKEv2)
+- [NEVPNIKEAuthenticationMethod.certificate](./nevpnikeauthenticationmethod/certificate.md)
+  Use a certificate and private key as the authentication credential. The certificate and private key set in the [`identityReference`](./nevpnprotocol/identityreference.md) or [`identityData`](./nevpnprotocol/identitydata.md) property will be used.
+- [NEVPNIKEAuthenticationMethod.sharedSecret](./nevpnikeauthenticationmethod/sharedsecret.md)
+  Use a shared secret as the authentication credential. The shared secret set in the [`sharedSecretReference`](./nevpnprotocolipsec/sharedsecretreference.md) property will be used.
 ### Initializers
-- [init?(rawValue: Int)](nevpnikeauthenticationmethod/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nevpnikeauthenticationmethod/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var authenticationMethod: NEVPNIKEAuthenticationMethod](nevpnprotocolipsec/authenticationmethod.md)
+### Accessing IPSec properties
+- [var authenticationMethod: NEVPNIKEAuthenticationMethod](./nevpnprotocolipsec/authenticationmethod.md)
   The method used to authenticate the device with the IPSec server. For IKE version 2, when using extended authentication, this authentication method only affects how the client validates the authentication payload presented by the server.
-- [var useExtendedAuthentication: Bool](nevpnprotocolipsec/useextendedauthentication.md)
+- [var useExtendedAuthentication: Bool](./nevpnprotocolipsec/useextendedauthentication.md)
   A flag indicating if extended authentication will be negotiated.
-- [var sharedSecretReference: Data?](nevpnprotocolipsec/sharedsecretreference.md)
+- [var sharedSecretReference: Data?](./nevpnprotocolipsec/sharedsecretreference.md)
   A persistent keychain reference to a keychain item containing the IKE shared secret.
-- [var localIdentifier: String?](nevpnprotocolipsec/localidentifier.md)
+- [var localIdentifier: String?](./nevpnprotocolipsec/localidentifier.md)
   A string identifying the iOS or macOS device for authentication purposes
-- [var remoteIdentifier: String?](nevpnprotocolipsec/remoteidentifier.md)
+- [var remoteIdentifier: String?](./nevpnprotocolipsec/remoteidentifier.md)
   A string identifying the IPSec server for authentication purposes
 
 

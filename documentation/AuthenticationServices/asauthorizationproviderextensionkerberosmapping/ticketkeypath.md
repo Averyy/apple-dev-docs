@@ -1,7 +1,8 @@
 # ticketKeyPath
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keypath in the response JSON that uses this set of mappings.
 
@@ -14,23 +15,28 @@ The keypath in the response JSON that uses this set of mappings.
 var ticketKeyPath: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * ticketKeyPath;
+```
+
 #### Discussion
 
 If the response tokens from the login contain this keypath, the system uses this mapping to create a Kerberos ticket. The expected response is a JSON dictionary with the supplied key names containing Kerberos ticket values.
 
 ## See Also
 
-- [var clientNameKeyName: String?](asauthorizationproviderextensionkerberosmapping/clientnamekeyname.md)
+### Getting the properties
+- [var clientNameKeyName: String?](./clientnamekeyname.md)
   The key name of the Kerberos client name string.
-- [var encryptionKeyTypeKeyName: String?](asauthorizationproviderextensionkerberosmapping/encryptionkeytypekeyname.md)
+- [var encryptionKeyTypeKeyName: String?](./encryptionkeytypekeyname.md)
   The key name of the Kerberos session key type number.
-- [var messageBufferKeyName: String?](asauthorizationproviderextensionkerberosmapping/messagebufferkeyname.md)
+- [var messageBufferKeyName: String?](./messagebufferkeyname.md)
   The key name of the Base 64-encoded Kerberos AS-REP string.
-- [var realmKeyName: String?](asauthorizationproviderextensionkerberosmapping/realmkeyname.md)
+- [var realmKeyName: String?](./realmkeyname.md)
   The key name of the Kerberos realm string.
-- [var serviceNameKeyName: String?](asauthorizationproviderextensionkerberosmapping/servicenamekeyname.md)
+- [var serviceNameKeyName: String?](./servicenamekeyname.md)
   The key name of the Kerberos service name string.
-- [var sessionKeyKeyName: String?](asauthorizationproviderextensionkerberosmapping/sessionkeykeyname.md)
+- [var sessionKeyKeyName: String?](./sessionkeykeyname.md)
   The key name of the Kerberos session key.
 
 

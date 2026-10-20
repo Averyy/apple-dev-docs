@@ -1,7 +1,8 @@
 # imageData
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data object containing the raw image data.
 
@@ -14,15 +15,20 @@ The data object containing the raw image data.
 var imageData: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * imageData;
+```
+
 #### Discussion
 
-The value in this property is set using the [`init(imageData:)`](wkimage/init(imagedata:).md) method. For image objects created using other methods, this property is `nil`.
+The value in this property is set using the [`init(imageData:)`](./init%28imagedata%29.md) method. For image objects created using other methods, this property is `nil`.
 
 ## See Also
 
-- [var image: UIImage?](wkimage/image.md)
+### Getting the Image Data
+- [var image: UIImage?](./image.md)
   The UIKit image object
-- [var imageName: String?](wkimage/imagename.md)
+- [var imageName: String?](./imagename.md)
   The name of the image to load from the Watch app’s bundle.
 
 

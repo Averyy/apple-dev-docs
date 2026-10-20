@@ -1,7 +1,8 @@
 # allPoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ var allPoints: FaceObservation.Landmarks2D.Region { get }
 
 ## See Also
 
-- [FaceObservation.Landmarks2D.Region](faceobservation/landmarks2d/region.md)
+### Getting all landmarks
+- [FaceObservation.Landmarks2D.Region](./region.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(parentItemIdentifier:filename:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a location with the filename of the folder in a specified parent.
 
@@ -12,6 +13,10 @@ Initialize a location with the filename of the folder in a specified parent.
 
 ```swift
 init(parentItemIdentifier: NSFileProviderItemIdentifier, filename: String)
+```
+
+```objc
+- (instancetype) initWithParentItemIdentifier:(NSFileProviderItemIdentifier) parentItemIdentifier filename:(NSString *) filename;
 ```
 
 #### Discussion

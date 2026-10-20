@@ -1,14 +1,15 @@
 # kIOPSFamilyCodeUnsupportedRegion
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 kIOPSFamilyCodeUnsupportedRegion = iokit_family_err(sub_iokit_pmu, 9)
 ```
 

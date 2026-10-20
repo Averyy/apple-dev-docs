@@ -1,6 +1,8 @@
 # Displaying a point cloud using scene depth
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [DisplayingAPointCloudUsingSceneDepth.zip](https://docs-assets.developer.apple.com/published/65122f236185/DisplayingAPointCloudUsingSceneDepth.zip)
 
 Present a visualization of the physical environment by placing points based a scene’s depth data.
 
@@ -11,23 +13,23 @@ Present a visualization of the physical environment by placing points based a sc
 
 #### Overview
 
-Depth Cloud is an app that uses [`Metal`](https://developer.apple.com/documentation/metal) to display a camera feed by placing a collection of points in the physical environment, according to depth information from the device’s LiDAR Scanner. For every distance sample in the session’s periodic depth reading [`depthMap`](ardepthdata/depthmap.md), the app places a virtual dot at that location in the physical environment, with the final result resembling a *point cloud*. Depth Cloud colors the cloud according to ARKit’s camera image [`capturedImage`](arframe/capturedimage.md).
+Depth Cloud is an app that uses [Metal](../Metal/Metal.md) to display a camera feed by placing a collection of points in the physical environment, according to depth information from the device’s LiDAR Scanner. For every distance sample in the session’s periodic depth reading [`depthMap`](./ardepthdata/depthmap.md), the app places a virtual dot at that location in the physical environment, with the final result resembling a *point cloud*. Depth Cloud colors the cloud according to ARKit’s camera image [`capturedImage`](./arframe/capturedimage.md).
 
 For every entry in the depth map — and therefore, for every dot in the cloud — the sample app checks the corresponding pixel in the camera image and assigns the pixel’s color to the dot. When the user views the point cloud straight on, the app’s display appears nearly identical to a camera feed. To demonstrate the cloud’s 3D shape, the sample app continuously rotates the cloud to change its viewing angle with respect to the user.
 
 The following figure illustrates a point cloud from a single frame of data, rotated on the y-axis to reveal a dark area behind the apple where the current sensor readings lack color and depth information.
 
-![A figure that compares the look of the physical environment with the app's display. An image on the left, labeled \"Camera image,\" depicts the physical environment as viewed by the device's camera; an apple rests on a desk by a window with blinds that are half open. An image on the right, labeled \"Point cloud from scene depth,\" depicts a stippling of dots on a black background that models the look of the physical environment. The stippling tips 45 degrees around the y-axis to reveal an area behind the apple that's dark because it contains no dots.](/images/com.apple.arkit/point-cloud-from-scene-depth-annotated.jpg)
+![A figure that compares the look of the physical environment with the app's display. An image on the left, labeled \"Camera image,\" depicts the physical environment as viewed by the device's camera; an apple rests on a desk by a window with blinds that are half open. An image on the right, labeled \"Point cloud from scene depth,\" depicts a stippling of dots on a black background that models the look of the physical environment. The stippling tips 45 degrees around the y-axis to reveal an area behind the apple that's dark because it contains no dots.](https://developer.apple.com/tutorials/images/com.apple.arkit/point-cloud-from-scene-depth-annotated.jpg)
 
-The app cycles through depth *confidence* values (see [`confidenceMap`](ardepthdata/confidencemap.md), enlarges the depth buffer, and toggles ARKit’s smooth depth option [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md). By applying the user’s selections to the point cloud live, the user can see the difference that the settings make throughout the experience.
+The app cycles through depth *confidence* values (see [`confidenceMap`](./ardepthdata/confidencemap.md), enlarges the depth buffer, and toggles ARKit’s smooth depth option [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md). By applying the user’s selections to the point cloud live, the user can see the difference that the settings make throughout the experience.
 
-> **Note**: WWDC20 session [`10611: Explore ARKit 4`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10611/) references a prior version of this sample app that accumulates points in a cloud. For the original version of the app as shown in the session, clone the initial commit from the Git repository in the download’s root folder.
+> **Note**: WWDC20 session [10611: Explore ARKit 4](https://developer.apple.com/wwdc20/10611/) references a prior version of this sample app that accumulates points in a cloud. For the original version of the app as shown in the session, clone the initial commit from the Git repository in the download’s root folder.
 
-For a practical application of ARKit’s depth data, see [`Creating a fog effect using scene depth`](creating-a-fog-effect-using-scene-depth.md).
+For a practical application of ARKit’s depth data, see [Creating a fog effect using scene depth](./creating-a-fog-effect-using-scene-depth.md).
 
-#### Set Up a Camera Feed
+#### Set up a camera feed
 
-To display a camera feed, the sample project defines a SwiftUI [`Scene`](https://developer.apple.com/documentation/swiftui/scene) whose [`body`](https://developer.apple.com/documentation/swiftui/scene/body-swift.property) contains a single window. To abstract view code from window code, the sample project wraps all of its display in a single [`View`](https://developer.apple.com/documentation/swiftui/view) called `MetalDepthView`.
+To display a camera feed, the sample project defines a SwiftUI [`Scene`](../SwiftUI/scene.md) whose [`body`](../SwiftUI/scene/body-swift.property.md) contains a single window. To abstract view code from window code, the sample project wraps all of its display in a single [`View`](../SwiftUI/view.md) called `MetalDepthView`.
 
 ```swift
 @main
@@ -43,9 +45,9 @@ Because Depth Cloud draws graphics using Metal, the sample project displays the 
 arData.colorImage = frame.capturedImage
 ```
 
-#### Ensure Device Support and Start a Session
+#### Ensure device support and start a session
 
-Devices require the LiDAR Scanner to access the scene’s depth. In the depth-visualization view’s [`body`](https://developer.apple.com/documentation/swiftui/scene/body-swift.property) definition, the app prevents running an unsupported configuration by checking if the device supports scene depth.
+Devices require the LiDAR Scanner to access the scene’s depth. In the depth-visualization view’s [`body`](../SwiftUI/scene/body-swift.property.md) definition, the app prevents running an unsupported configuration by checking if the device supports scene depth.
 
 ```swift
 if !ARWorldTrackingConfiguration.supportsFrameSemantics([.sceneDepth, .smoothedSceneDepth]) {
@@ -58,7 +60,7 @@ To separate data acquisition from its display, the sample app wraps ARKit calls 
 var arProvider: ARProvider = ARProvider()
 ```
 
-The AR provider runs a world-tracking configuration and requests information about the scene’s depth by configuring the scene-depth frame semantics (see [`sceneDepth`](arconfiguration/framesemantics-swift.struct/scenedepth.md). and [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md)).
+The AR provider runs a world-tracking configuration and requests information about the scene’s depth by configuring the scene-depth frame semantics (see [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md). and [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md)).
 
 ```swift
 let config = ARWorldTrackingConfiguration()
@@ -66,9 +68,9 @@ config.frameSemantics = [.sceneDepth, .smoothedSceneDepth]
 arSession.run(config)
 ```
 
-#### Access the Scenes Depth
+#### Access the scene’s depth
 
-In response to the configuration’s scene-depth frame semantics, the framework defines the frame’s [`depthMap`](ardepthdata/depthmap.md) properties of [`sceneDepth`](arconfiguration/framesemantics-swift.struct/scenedepth.md) and [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md). on the session’s [`currentFrame`](arsession/currentframe.md).
+In response to the configuration’s scene-depth frame semantics, the framework defines the frame’s [`depthMap`](./ardepthdata/depthmap.md) properties of [`sceneDepth`](./arconfiguration/framesemantics-swift.struct/scenedepth.md) and [`smoothedSceneDepth`](./arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md). on the session’s [`currentFrame`](./arsession/currentframe.md).
 
 ```swift
 func session(_ session: ARSession, didUpdate frame: ARFrame) {
@@ -96,7 +98,7 @@ colorCbCrContent.texture = lastArData?.colorImage?.texture(withFormat: .rg8Unorm
                                                            addToCache: textureCache!)!
 ```
 
-#### Convert Camera Data
+#### Convert camera data
 
 In the `pointCloudVertexShader` function (see the sample project’s `shaders.metal` file), the sample project creates a point for every value in the depth texture and determines the point’s color by sampling that depth-texture value’s position in the camera image. Each vertex calculates its `x` and `y` location in the camera image by converting its position in the one-dimensional vertex array, to a 2D position in the depth texture.
 
@@ -121,11 +123,11 @@ half2 uv = colorCbCrtexture.sample(textureSampler, out.coor).rg - half2(0.5h, 0.
 half4 rgbaResult = half4(y + 1.402h * uv.y, y - 0.7141h * uv.y - 0.3441h * uv.x, y + 1.772h * uv.x, 1.0h);
 ```
 
-> **Note**: For brevity, the sample project demonstrates YUV to RGB conversion inline. To see an example that extracts static conversion factors to a 4 x 4 matrix, see [`Displaying an AR Experience with Metal`](displaying-an-ar-experience-with-metal.md).
+> **Note**: For brevity, the sample project demonstrates YUV to RGB conversion inline. To see an example that extracts static conversion factors to a 4 x 4 matrix, see [Displaying an AR Experience with Metal](./displaying-an-ar-experience-with-metal.md).
 
-#### Set Up the Point Cloud View
+#### Set up the point cloud view
 
-To display a camera feed by using a point cloud, the project defines a [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) object, `MetalPointCloud`, which contains an [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) that displays Metal content.
+To display a camera feed by using a point cloud, the project defines a [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) object, `MetalPointCloud`, which contains an [`MTKView`](../MetalKit/mtkview.md) that displays Metal content.
 
 ```swift
 struct MetalPointCloud: UIViewRepresentable {
@@ -143,7 +145,7 @@ HStack() {
                         width: geometry.size.width / 2, title: "")
 ```
 
-As representable of [`UIView`](https://developer.apple.com/documentation/uikit/uiview), the Metal texture view defines a coordinator, `CoordinatorPointCloud`.
+As representable of [`UIView`](../UIKit/uiview.md), the Metal texture view defines a coordinator, `CoordinatorPointCloud`.
 
 ```swift
 func makeCoordinator() -> CoordinatorPointCloud {
@@ -157,7 +159,7 @@ The point cloud coordinator extends `MTKCoordinator`, which the sample shares ac
 final class CoordinatorPointCloud: MTKCoordinator {
 ```
 
-As an [`MTKViewDelegate`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate), `MTKCoordinator` handles relevant events that occur throughout the Metal view life cycle.
+As an [`MTKViewDelegate`](../MetalKit/mtkviewdelegate.md), `MTKCoordinator` handles relevant events that occur throughout the Metal view life cycle.
 
 ```swift
 class MTKCoordinator: NSObject, MTKViewDelegate {
@@ -171,7 +173,7 @@ func makeUIView(context: UIViewRepresentableContext<MetalPointCloud>) -> MTKView
     mtkView.delegate = context.coordinator
 ```
 
-At runtime, the display link then calls the Metal coordinator’s [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) implementation to issue CPU-side rendering commands.
+At runtime, the display link then calls the Metal coordinator’s [`draw(in:)`](../MetalKit/mtkviewdelegate/draw%28in%29.md) implementation to issue CPU-side rendering commands.
 
 ```swift
 override func draw(in view: MTKView) {
@@ -180,7 +182,7 @@ override func draw(in view: MTKView) {
     guard arData.lastArData != nil else {
 ```
 
-#### Display the Point Cloud with Gpu Code
+#### Display the point cloud with gpu code
 
 The sample project draws the point cloud on the GPU. The point cloud view packages up several textures that its corresponding GPU code requires as input.
 
@@ -260,11 +262,11 @@ else
     return in.color;
 ```
 
-#### Change the Clouds Orientation to Convey Depth
+#### Change the cloud’s orientation to convey depth
 
 As the user views the point cloud straight on, it appears visually equivalent to the 2D camera image. But, when the sample app rotates the point cloud slightly, the 3D shape of the point cloud becomes apparent to the user.
 
-![A figure that compares the look of the point cloud from different angles. An image on the left, labeled \"Viewing the point cloud straight on,\" depicts a stippling of dots on a black background that models the look of the physical environment; an apple rests on a desk by a window with blinds that are half open. An image in the middle, labeled \"Rotating the point cloud clockwise about the y-axis,\" depicts the stippling tipped 45 degrees clockwise to reveal a dark area cast to the right of the apple that contains no dots. An image on the right, labeled \"Rotating the point cloud counter clockwise about the y-axis,\" depicts the stippling tipped 45 degrees counter clockwise to reveal a dark area cast to the left of the apple that contains no dots.](/images/com.apple.arkit/perspective-change.jpg)
+![A figure that compares the look of the point cloud from different angles. An image on the left, labeled \"Viewing the point cloud straight on,\" depicts a stippling of dots on a black background that models the look of the physical environment; an apple rests on a desk by a window with blinds that are half open. An image in the middle, labeled \"Rotating the point cloud clockwise about the y-axis,\" depicts the stippling tipped 45 degrees clockwise to reveal a dark area cast to the right of the apple that contains no dots. An image on the right, labeled \"Rotating the point cloud counter clockwise about the y-axis,\" depicts the stippling tipped 45 degrees counter clockwise to reveal a dark area cast to the left of the apple that contains no dots.](https://developer.apple.com/tutorials/images/com.apple.arkit/perspective-change.jpg)
 
 The point cloud’s screen position is a factor of its projection matrix. In the sample project’s `calcCurrentPMVMatrix` function (see `MetalPointCloud.swift`), the function sets up a basic matrix.
 
@@ -293,11 +295,11 @@ return pmv
 //#-end-code-li
 ```
 
-#### Enlarge the Depth Buffer
+#### Enlarge the depth buffer
 
 ARKit’s depth map contains precise, low-resolution depth values for objects in the camera feed. To create the illusion of a high-resolution depth map, the sample app offers UI to enlarge the depth map using Metal Performance Shaders (MPS). By filling in gaps in the framework’s depth information, the enlarged depth buffer creates the illusion of more depth information in the scene.
 
-![A figure that compares the look of the point cloud before and after enlarging the depth buffer. An image on the left, labeled \"Point cloud from scene depth,\" depicts a stippling of dots on a black background that models the look of the physical environment; an apple rests on a desk by a window with blinds that are half open. The stippling tips 45 degrees counter clockwise to reveal a dark area cast to the left of the apple that contains no dots. An image on the right, labeled \"Point cloud from enlarged scene depth,\" depicts a similar scene. More dots compose the stippling, which fills in gaps in the drawing. The dark area to the left of the apple is much less prominent.](/images/com.apple.arkit/point-cloud-from-enlarged-scene-depth-annotated.jpg)
+![A figure that compares the look of the point cloud before and after enlarging the depth buffer. An image on the left, labeled \"Point cloud from scene depth,\" depicts a stippling of dots on a black background that models the look of the physical environment; an apple rests on a desk by a window with blinds that are half open. The stippling tips 45 degrees counter clockwise to reveal a dark area cast to the left of the apple that contains no dots. An image on the right, labeled \"Point cloud from enlarged scene depth,\" depicts a similar scene. More dots compose the stippling, which fills in gaps in the drawing. The dark area to the left of the apple is much less prominent.](https://developer.apple.com/tutorials/images/com.apple.arkit/point-cloud-from-enlarged-scene-depth-annotated.jpg)
 
 The sample project uses MPS to enlarge the depth buffer; see the `ARDataProvider.swift` file. The `ARProvider` class initializer creates a guided filter to enlarge the depth buffer.
 
@@ -330,13 +332,13 @@ After encoding the bilinear scale and guided filters, the AR provider sets the e
 depthContent.texture = destDepthTexture
 ```
 
-#### Display Depth and Confidence
+#### Display depth and confidence
 
 In addition to the point cloud visualization, the sample app adds simultaneous depth distance and confidence visualizations. The user refers to either visualization at any time during the experience to better grasp the accuracy of the LiDAR Scanner’s reading of the physical environment.
 
-![A figure that shows three different app views. An image on the left, labeled \"Point cloud,\" depicts a stippling of dots on a black background that models the look of the physical environment; an apple rests on a desk by a window with blinds that are half open. An image in the middle, labeled \"Depth visualization,\" displays the features of the environment using a range of colors. Features close to the camera are dark blue, such as the close edge of the desk and the blinds. Further away features are light blue, such as the wall and window. The most distant environment features are yellow and red, such as the obscured areas beyond the window. An image on the right, labeled \"Confidence visualization,\" depicts the features of the physical environment using three colors. The desk and wall areas are blue, indicating the app's confidence in their depth accuracy. The blinds are green, indicating a slight doubt in their depth accuracy. The areas extending beyond the window are red, indicating the most doubt in depth value accuracy.]](/images/com.apple.arkit/depth-and-confidence-annotated.jpg)
+![A figure that shows three different app views. An image on the left, labeled \"Point cloud,\" depicts a stippling of dots on a black background that models the look of the physical environment; an apple rests on a desk by a window with blinds that are half open. An image in the middle, labeled \"Depth visualization,\" displays the features of the environment using a range of colors. Features close to the camera are dark blue, such as the close edge of the desk and the blinds. Further away features are light blue, such as the wall and window. The most distant environment features are yellow and red, such as the obscured areas beyond the window. An image on the right, labeled \"Confidence visualization,\" depicts the features of the physical environment using three colors. The desk and wall areas are blue, indicating the app's confidence in their depth accuracy. The blinds are green, indicating a slight doubt in their depth accuracy. The areas extending beyond the window are red, indicating the most doubt in depth value accuracy.]](https://developer.apple.com/tutorials/images/com.apple.arkit/depth-and-confidence-annotated.jpg)
 
-To display the depth and confidence visualizations, Depth Cloud defines a [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) object, `MetalTextureView`, which contains an [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) that displays Metal content (see the project’s `MetalTextureView.swift` file). This setup is similar to `MetalDepthView`, except that the sample app stores the view’s displayable content in a single texture.
+To display the depth and confidence visualizations, Depth Cloud defines a [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) object, `MetalTextureView`, which contains an [`MTKView`](../MetalKit/mtkview.md) that displays Metal content (see the project’s `MetalTextureView.swift` file). This setup is similar to `MetalDepthView`, except that the sample app stores the view’s displayable content in a single texture.
 
 ```swift
 encoder.setFragmentTexture(content.texture, index: 0)
@@ -421,13 +423,14 @@ fragment half4 planeFragmentShaderConfidence(ColorInOut in [[stage_in]], texture
 
 ## See Also
 
-- [Creating a fog effect using scene depth](creating-a-fog-effect-using-scene-depth.md)
+### Video Frame Analysis
+- [Creating a fog effect using scene depth](./creating-a-fog-effect-using-scene-depth.md)
   Apply virtual fog to the physical environment.
-- [class ARFrame](arframe.md)
+- [class ARFrame](./arframe.md)
   A video image captured as part of a session with position-tracking information.
-- [class ARPointCloud](arpointcloud.md)
+- [class ARPointCloud](./arpointcloud.md)
   A collection of points in the world coordinate space of the AR session.
-- [class ARDepthData](ardepthdata.md)
+- [class ARDepthData](./ardepthdata.md)
   An object that describes the distance to regions of the real world from the plane of the camera.
 
 

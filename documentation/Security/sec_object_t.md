@@ -1,7 +1,8 @@
 # sec_object_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `sec_object` is a generic, ARC-able type wrapper for common CoreFoundation Security types.
 
@@ -18,6 +19,10 @@ A `sec_object` is a generic, ARC-able type wrapper for common CoreFoundation Sec
 
 ```swift
 typealias sec_object_t = any OS_sec_object
+```
+
+```c
+typedef NSObject<OS_sec_object> * sec_object_t;
 ```
 
 

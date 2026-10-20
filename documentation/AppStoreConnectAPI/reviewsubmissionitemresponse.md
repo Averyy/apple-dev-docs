@@ -1,7 +1,8 @@
 # ReviewSubmissionItemResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify a single review submission item.
 
@@ -10,23 +11,24 @@ The response body for endpoints that create, read, or modify a single review sub
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemResponse
 ```
 
 ## Properties
 
 - `data` (ReviewSubmissionItem) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `AppAssetLibraryImage`, `AppAssetLibraryVideo`, `AppCustomProductPageVersion`, `AppEvent`, `AppStoreVersionExperiment`, `AppStoreVersion`, `BackgroundAssetVersion`, `GameCenterAchievementVersionV2`, `GameCenterActivityVersion`, `GameCenterChallengeVersion`, `GameCenterLeaderboardSetVersionV2`, `GameCenterLeaderboardVersionV2`, `InAppPurchaseVersion`, `SubscriptionGroupVersion`, `SubscriptionVersion`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object ReviewSubmissionItemCreateRequest](reviewsubmissionitemcreaterequest.md)
+### Objects
+- [object ReviewSubmissionItemCreateRequest](./reviewsubmissionitemcreaterequest.md)
   The request body you use to create a review submission item.
-- [object ReviewSubmissionItemUpdateRequest](reviewsubmissionitemupdaterequest.md)
+- [object ReviewSubmissionItemUpdateRequest](./reviewsubmissionitemupdaterequest.md)
   The request body you use to update a review submission item update request.
-- [object ReviewSubmissionItemsResponse](reviewsubmissionitemsresponse.md)
+- [object ReviewSubmissionItemsResponse](./reviewsubmissionitemsresponse.md)
   The response body for endpoints that list items in a review submission.
 
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the sound asset.
 
@@ -19,13 +20,18 @@ The URL of the sound asset.
 var url: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * url;
+```
+
 #### Discussion
 
-This property has a value when an app creates the asset with [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).md); otherwise the value is `nil`.
+This property has a value when an app creates the asset with [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](../phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md); otherwise the value is `nil`.
 
 ## See Also
 
-- [var data: Data?](phasesoundasset/data.md)
+### Accessing Sound Data
+- [var data: Data?](./data.md)
   A storage buffer for the sound asset.
 
 

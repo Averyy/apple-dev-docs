@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kMaxAsyncArgs: Int](kmaxasyncargs.md)
-- [var kOSAsyncCompleteMessageID: Int](kosasynccompletemessageid.md)
-- [var kOSNotificationMessageID: Int](kosnotificationmessageid.md)
+- [var kMaxAsyncArgs: Int](../kmaxasyncargs.md)
+- [var kOSAsyncCompleteMessageID: Int](../kosasynccompletemessageid.md)
+- [var kOSNotificationMessageID: Int](../kosnotificationmessageid.md)
 
 
 ---

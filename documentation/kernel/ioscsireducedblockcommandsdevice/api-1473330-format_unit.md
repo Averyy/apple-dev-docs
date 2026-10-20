@@ -1,14 +1,15 @@
 # FORMAT_UNIT
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool FORMAT_UNIT(SCSITaskIdentifier request, SCSICmdField1Bit IMMED, SCSICmdField1Bit PROGRESS, SCSICmdField1Bit PERCENT_TIME, SCSICmdField1Bit INCREMENT);
 ```
 

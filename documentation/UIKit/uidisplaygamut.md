@@ -1,7 +1,8 @@
 # UIDisplayGamut
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the gamut of the current display.
 
@@ -18,33 +19,38 @@ Constants that indicate the gamut of the current display.
 enum UIDisplayGamut
 ```
 
+```c
+enum UIDisplayGamut : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIDisplayGamut.unspecified](uidisplaygamut/unspecified.md)
+- [UIDisplayGamut.unspecified](./uidisplaygamut/unspecified.md)
   An unspecified gamut value.
-- [UIDisplayGamut.SRGB](uidisplaygamut/srgb.md)
+- [UIDisplayGamut.SRGB](./uidisplaygamut/srgb.md)
   The sRGB display gamut.
-- [UIDisplayGamut.P3](uidisplaygamut/p3.md)
+- [UIDisplayGamut.P3](./uidisplaygamut/p3.md)
   The P3 display gamut.
 ### Initializers
-- [init?(rawValue: Int)](uidisplaygamut/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uidisplaygamut/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var displayScale: CGFloat](uitraitcollection/displayscale.md)
+### Retrieving display-related traits
+- [var displayScale: CGFloat](./uitraitcollection/displayscale.md)
   The display scale of the trait collection.
-- [var displayGamut: UIDisplayGamut](uitraitcollection/displaygamut.md)
+- [var displayGamut: UIDisplayGamut](./uitraitcollection/displaygamut.md)
   The gamut of the current display.
 
 

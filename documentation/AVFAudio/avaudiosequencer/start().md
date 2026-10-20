@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the sequencer’s player.
 
@@ -19,15 +20,20 @@ Starts the sequencer’s player.
 func start() throws
 ```
 
+```objc
+- (BOOL) startAndReturnError:(NSError **) outError;
+```
+
 #### Discussion
 
-If you don’t call [`prepareToPlay()`](avaudiosequencer/preparetoplay().md), the framework calls it and then starts the player.
+If you don’t call [`prepareToPlay()`](./preparetoplay%28%29.md), the framework calls it and then starts the player.
 
 ## See Also
 
-- [func prepareToPlay()](avaudiosequencer/preparetoplay.md)
+### Operating an audio sequencer
+- [func prepareToPlay()](./preparetoplay%28%29.md)
   Gets ready to play the sequence by prerolling all events.
-- [func stop()](avaudiosequencer/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the sequencer’s player.
 
 

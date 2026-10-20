@@ -1,7 +1,8 @@
 # UIMenuSystem.FindElementGroupConfiguration.Style.search
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefer a minimal set of find elements, only consisting of elements to search content in the app.
 
@@ -16,6 +17,10 @@ Prefer a minimal set of find elements, only consisting of elements to search con
 
 ```swift
 case search
+```
+
+```c
+UIMenuSystemFindElementGroupConfigurationStyleSearch
 ```
 
 

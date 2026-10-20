@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a builder with a list of tools expression.
 
@@ -20,19 +21,31 @@ Creates a builder with a list of tools expression.
 static func buildExpression(_ tools: [any Tool]) -> some DynamicInstructions
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildExpression<T>(_ expression: T) -> T where T : DynamicInstructions
+```
+
+```swift
+static func buildExpression<T>(_ expression: T) -> some DynamicInstructions where T : Tool
+```
+
 ## See Also
 
-- [static func buildBlock() -> EmptyDynamicInstructions](dynamicinstructionsbuilder/buildblock.md)
+### Building dynamic instructions
+- [static func buildBlock() -> EmptyDynamicInstructions](./buildblock%28%29.md)
   Creates a builder with an empty block.
-- [static buildBlock(_:)](dynamicinstructionsbuilder/buildblock(_:).md)
+- [static buildBlock(_:)](./buildblock%28_%29.md)
   Creates a builder with a block.
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> ConditionalDynamicInstructions<TrueContent, FalseContent>](dynamicinstructionsbuilder/buildeither(first:).md)
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> ConditionalDynamicInstructions<TrueContent, FalseContent>](./buildeither%28first%29.md)
   Creates a builder with the first component.
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> ConditionalDynamicInstructions<TrueContent, FalseContent>](dynamicinstructionsbuilder/buildeither(second:).md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> ConditionalDynamicInstructions<TrueContent, FalseContent>](./buildeither%28second%29.md)
   Creates a builder with the second component.
-- [static func buildOptional<Content>(Content?) -> Content?](dynamicinstructionsbuilder/buildoptional(_:).md)
+- [static func buildOptional<Content>(Content?) -> Content?](./buildoptional%28_%29.md)
   Creates a builder with an optional component.
-- [static func buildLimitedAvailability(some DynamicInstructions) -> AnyDynamicInstructions](dynamicinstructionsbuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(some DynamicInstructions) -> AnyDynamicInstructions](./buildlimitedavailability%28_%29.md)
   Creates a builder with limited availability dynamic instructions.
 
 

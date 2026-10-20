@@ -1,12 +1,13 @@
 # bidiProcessingEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether bidirectional text processing is enabled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns whether bidirectional text processing is enabled.
 var bidiProcessingEnabled: Bool { get set }
 ```
 
+```objc
+@property BOOL bidiProcessingEnabled;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if bidirectional text processing is enabled, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if bidirectional text processing is enabled, [`false`](../../Swift/false.md) otherwise.
 
 
 ---

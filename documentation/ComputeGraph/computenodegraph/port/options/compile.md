@@ -1,7 +1,8 @@
 # compile
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Port affects compilation.
 
@@ -12,7 +13,7 @@ Port affects compilation.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ static let compile: ComputeNodeGraph.Port.Options
 
 #### Discussion
 
-Changes to [`compile`](computenodegraph/port/options/compile.md) values require recompiling the pipeline
+Changes to [`compile`](./compile.md) values require recompiling the pipeline
 
 
 ---

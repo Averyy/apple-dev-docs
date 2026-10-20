@@ -1,7 +1,8 @@
 # keywordsAttribute
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An optional array of text strings containing keywords for the document.
 
@@ -19,21 +20,26 @@ An optional array of text strings containing keywords for the document.
 static let keywordsAttribute: PDFDocumentAttribute
 ```
 
+```c
+extern PDFDocumentAttribute const PDFDocumentKeywordsAttribute;
+```
+
 ## See Also
 
-- [static let authorAttribute: PDFDocumentAttribute](pdfdocumentattribute/authorattribute.md)
+### Getting Document Attributes
+- [static let authorAttribute: PDFDocumentAttribute](./authorattribute.md)
   An optional text string containing the name of the author of the document.
-- [static let creationDateAttribute: PDFDocumentAttribute](pdfdocumentattribute/creationdateattribute.md)
+- [static let creationDateAttribute: PDFDocumentAttribute](./creationdateattribute.md)
   An optional text string containing the document’s creation date.
-- [static let creatorAttribute: PDFDocumentAttribute](pdfdocumentattribute/creatorattribute.md)
+- [static let creatorAttribute: PDFDocumentAttribute](./creatorattribute.md)
   An optional text string containing the name of the application that created the document content.
-- [static let modificationDateAttribute: PDFDocumentAttribute](pdfdocumentattribute/modificationdateattribute.md)
+- [static let modificationDateAttribute: PDFDocumentAttribute](./modificationdateattribute.md)
   An optional text string containing the document’s last-modified date.
-- [static let producerAttribute: PDFDocumentAttribute](pdfdocumentattribute/producerattribute.md)
+- [static let producerAttribute: PDFDocumentAttribute](./producerattribute.md)
   An optional text string containing the name of the application that produced the PDF data for the document.
-- [static let subjectAttribute: PDFDocumentAttribute](pdfdocumentattribute/subjectattribute.md)
+- [static let subjectAttribute: PDFDocumentAttribute](./subjectattribute.md)
   An optional text string containing a description of the subject of the document.
-- [static let titleAttribute: PDFDocumentAttribute](pdfdocumentattribute/titleattribute.md)
+- [static let titleAttribute: PDFDocumentAttribute](./titleattribute.md)
   An optional text string containing the title of the document.
 
 

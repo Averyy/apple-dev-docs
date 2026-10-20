@@ -1,7 +1,8 @@
 # draw(in:frame:options:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the entire paper contents in the specified rectangle.
 

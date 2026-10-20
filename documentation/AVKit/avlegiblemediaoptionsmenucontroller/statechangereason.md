@@ -1,7 +1,8 @@
 # AVLegibleMediaOptionsMenuController.StateChangeReason
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.4+
@@ -16,44 +17,49 @@
 enum StateChangeReason
 ```
 
+```c
+enum AVLegibleMediaOptionsMenuStateChangeReason : NSInteger;
+```
+
 #### Overview
 
-```None
+```
 		An enum set, describing the different reasons for changing the menu state.
 ```
 
-```None
+```
 		Describes a non specified menu state change reason.
 ```
 
-```None
+```
 		Describes a menu state change reason due language mismatch.
 ```
 
 ## Topics
 
 ### Creating a reason
-- [init?(rawValue: Int)](avlegiblemediaoptionsmenucontroller/statechangereason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./statechangereason/init%28rawvalue%29.md)
 ### Reasons
-- [AVLegibleMediaOptionsMenuController.StateChangeReason.none](avlegiblemediaoptionsmenucontroller/statechangereason/none.md)
-- [AVLegibleMediaOptionsMenuController.StateChangeReason.languageMismatch](avlegiblemediaoptionsmenucontroller/statechangereason/languagemismatch.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason.none](./statechangereason/none.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason.languageMismatch](./statechangereason/languagemismatch.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](avlegiblemediaoptionsmenucontroller/menu(contents:).md)
-- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
-- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
-- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+### Managing the menu
+- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](./menu%28contents%29.md)
+- [var menuState: AVLegibleMediaOptionsMenuState](./menustate.md)
+- [AVLegibleMediaOptionsMenuController.MenuContents](./menucontents.md)
+- [struct AVLegibleMediaOptionsMenuState](../avlegiblemediaoptionsmenustate.md)
 
 
 ---

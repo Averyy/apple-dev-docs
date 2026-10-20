@@ -1,7 +1,8 @@
 # MTRStorage
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.4+
@@ -18,23 +19,27 @@
 protocol MTRStorage : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRStorage <NSObject>
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](./onboarding-a-matter-device.md)
 
 ## Topics
 
 ### Instance Methods
-- [func removeStorageData(forKey: String) -> Bool](mtrstorage/removestoragedata(forkey:).md)
-- [func setStorageData(Data, forKey: String) -> Bool](mtrstorage/setstoragedata(_:forkey:).md)
-- [func storageData(forKey: String) -> Data?](mtrstorage/storagedata(forkey:).md)
+- [func removeStorageData(forKey: String) -> Bool](./mtrstorage/removestoragedata%28forkey%29.md)
+- [func setStorageData(Data, forKey: String) -> Bool](./mtrstorage/setstoragedata%28_,forkey%29.md)
+- [func storageData(forKey: String) -> Data?](./mtrstorage/storagedata%28forkey%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MTRPersistentStorageDelegate](mtrpersistentstoragedelegate.md)
+- [MTRPersistentStorageDelegate](./mtrpersistentstoragedelegate.md)
 
 
 ---

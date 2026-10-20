@@ -1,7 +1,8 @@
 # MPSCNNGroupNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,34 +18,38 @@
 class MPSCNNGroupNormalization
 ```
 
+```objc
+@interface MPSCNNGroupNormalization : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnngroupnormalization/init(coder:device:).md)
-- [init(device: any MTLDevice, dataSource: any MPSCNNGroupNormalizationDataSource)](mpscnngroupnormalization/init(device:datasource:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnngroupnormalization/init%28coder,device%29.md)
+- [init(device: any MTLDevice, dataSource: any MPSCNNGroupNormalizationDataSource)](./mpscnngroupnormalization/init%28device,datasource%29.md)
 ### Instance Properties
-- [var dataSource: any MPSCNNGroupNormalizationDataSource](mpscnngroupnormalization/datasource.md)
-- [var epsilon: Float](mpscnngroupnormalization/epsilon.md)
+- [var dataSource: any MPSCNNGroupNormalizationDataSource](./mpscnngroupnormalization/datasource.md)
+- [var epsilon: Float](./mpscnngroupnormalization/epsilon.md)
 ### Instance Methods
-- [func reloadGammaAndBeta(with: any MTLCommandBuffer, gammaAndBetaState: MPSCNNNormalizationGammaAndBetaState)](mpscnngroupnormalization/reloadgammaandbeta(with:gammaandbetastate:).md)
-- [func reloadGammaAndBetaFromDataSource()](mpscnngroupnormalization/reloadgammaandbetafromdatasource.md)
-- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNGroupNormalizationGradientState?](mpscnngroupnormalization/resultstate(sourceimage:sourcestates:destinationimage:).md)
-- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNGroupNormalizationGradientState?](mpscnngroupnormalization/temporaryresultstate(commandbuffer:sourceimage:sourcestates:destinationimage:).md)
+- [func reloadGammaAndBeta(with: any MTLCommandBuffer, gammaAndBetaState: MPSCNNNormalizationGammaAndBetaState)](./mpscnngroupnormalization/reloadgammaandbeta%28with,gammaandbetastate%29.md)
+- [func reloadGammaAndBetaFromDataSource()](./mpscnngroupnormalization/reloadgammaandbetafromdatasource%28%29.md)
+- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNGroupNormalizationGradientState?](./mpscnngroupnormalization/resultstate%28sourceimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNGroupNormalizationGradientState?](./mpscnngroupnormalization/temporaryresultstate%28commandbuffer,sourceimage,sourcestates,destinationimage%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

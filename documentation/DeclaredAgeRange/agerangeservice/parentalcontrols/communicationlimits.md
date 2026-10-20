@@ -1,7 +1,8 @@
 # communicationLimits
 
 **Framework**: Declared Age Range  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the system limits communication features for the minor.
 

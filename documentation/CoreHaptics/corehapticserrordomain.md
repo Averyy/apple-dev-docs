@@ -1,7 +1,8 @@
 # CoreHapticsErrorDomain
 
 **Framework**: Core Haptics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string representation of the haptic error domain.
 
@@ -9,7 +10,7 @@ A string representation of the haptic error domain.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,11 +20,16 @@ A string representation of the haptic error domain.
 let CoreHapticsErrorDomain: String
 ```
 
+```c
+static NSErrorDomain CoreHapticsErrorDomain;
+```
+
 ## See Also
 
-- [struct CHHapticError](chhapticerror.md)
+### Haptic errors
+- [struct CHHapticError](./chhapticerror.md)
   A structure that represents a framework error.
-- [CHHapticError.Code](chhapticerror/code.md)
+- [CHHapticError.Code](./chhapticerror/code.md)
   Error codes for framework operations.
 
 

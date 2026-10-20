@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate closure used to evaluate whether two elements are duplicates.
 
@@ -22,7 +23,8 @@ let predicate: (Publishers.RemoveDuplicates<Upstream>.Output, Publishers.RemoveD
 
 ## See Also
 
-- [let upstream: Upstream](publishers/removeduplicates/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

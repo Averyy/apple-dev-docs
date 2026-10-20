@@ -1,7 +1,8 @@
 # artwork
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A single image that’s associated with the media item.
 
@@ -19,27 +20,32 @@ A single image that’s associated with the media item.
 var artwork: MPMediaItemArtwork? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) MPMediaItemArtwork * artwork;
+```
+
 #### Discussion
 
 An image that’s displayed with the media item. A song would have an album cover image, whereas a movie could have a movie poster image associated with it.
 
 ## See Also
 
-- [var isContainer: Bool](mpcontentitem/iscontainer.md)
+### Retrieving information about a media item
+- [var isContainer: Bool](./iscontainer.md)
   A Boolean value that indicates whether a media item is container of other items.
-- [var isExplicitContent: Bool](mpcontentitem/isexplicitcontent.md)
+- [var isExplicitContent: Bool](./isexplicitcontent.md)
   A Boolean value that indicates whether the media item contains explicit content.
-- [var identifier: String](mpcontentitem/identifier.md)
+- [var identifier: String](./identifier.md)
   The unique identifier for the media item.
-- [var isPlayable: Bool](mpcontentitem/isplayable.md)
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether a media item is able to be played.
-- [var isStreamingContent: Bool](mpcontentitem/isstreamingcontent.md)
+- [var isStreamingContent: Bool](./isstreamingcontent.md)
   A Boolean value that indicates whether the content item is streaming content.
-- [var playbackProgress: Float](mpcontentitem/playbackprogress.md)
+- [var playbackProgress: Float](./playbackprogress.md)
   The amount of content played for the media item.
-- [var subtitle: String?](mpcontentitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A secondary designator for the media item.
-- [var title: String?](mpcontentitem/title.md)
+- [var title: String?](./title.md)
   The public name of the media item.
 
 

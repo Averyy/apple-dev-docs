@@ -1,14 +1,15 @@
 # macOS Tahoe 26.1 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.1 SDK provides support to develop apps for Mac computers running Tahoe 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [`Xcode 26.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_1-release-notes).
+The macOS 26.1 SDK provides support to develop apps for Mac computers running Tahoe 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [Xcode 26.1 Release Notes](../Xcode-Release-Notes/xcode-26_1-release-notes.md).
 
-##### Apple Tv App
+##### Apple TV app
 
 ###### Resolved Issues
 
@@ -28,17 +29,19 @@ The macOS 26.1 SDK provides support to develop apps for Mac computers running Ta
 - Fixed: Game controller input might be delayed when many tasks are submitted to the default global concurrent queue.  (159163570)
 - Fixed: Non-UI processes might not receive game controller input after setting `GCController. shouldMonitorBackgroundEvents` to `true`.  (160974748) (FB20307654)
 
-##### Sudo
+##### sudo
 
 ###### Resolved Issues
 
 - Fixed: There are now added security checks when loading the `/etc/sudoers` configuration and `/etc/sudoers.d` folder. When the owner is not set to `root`, the configuration is ignored and sudo might not work.  (155330149) (FB18698477)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
-- Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases. You must recompile your app against the 26.1 SDK to receive this fix.  (158236264) (FB19613386)
+- Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases.
+
+  You must recompile your app against the 26.1 SDK to receive this fix.  (158236264) (FB19613386)
 
 ##### Virtualization
 
@@ -48,17 +51,18 @@ The macOS 26.1 SDK provides support to develop apps for Mac computers running Ta
 
 ## See Also
 
-- [macOS Tahoe 26.6 Release Notes](macos-26_6-release-notes.md)
+### macOS 26
+- [macOS Tahoe 26.6 Release Notes](./macos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.5 Release Notes](macos-26_5-release-notes.md)
+- [macOS Tahoe 26.5 Release Notes](./macos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.4 Release Notes](macos-26_4-release-notes.md)
+- [macOS Tahoe 26.4 Release Notes](./macos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
+- [macOS Tahoe 26.3 Release Notes](./macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.2 Release Notes](macos-26_2-release-notes.md)
+- [macOS Tahoe 26.2 Release Notes](./macos-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26 Release Notes](macos-26-release-notes.md)
+- [macOS Tahoe 26 Release Notes](./macos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

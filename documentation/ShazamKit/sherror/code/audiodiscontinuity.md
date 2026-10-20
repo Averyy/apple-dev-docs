@@ -1,7 +1,8 @@
 # SHError.Code.audioDiscontinuity
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate the use of noncontiguous audio to request a match.
 
@@ -20,9 +21,14 @@ The error code to indicate the use of noncontiguous audio to request a match.
 case audioDiscontinuity
 ```
 
+```c
+SHErrorCodeAudioDiscontinuity
+```
+
 ## See Also
 
-- [SHError.Code.invalidAudioFormat](sherror/code/invalidaudioformat.md)
+### Audio format errors
+- [SHError.Code.invalidAudioFormat](./invalidaudioformat.md)
   The error code to indicate an unsupported audio format.
 
 

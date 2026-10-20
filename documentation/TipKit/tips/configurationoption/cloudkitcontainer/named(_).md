@@ -1,7 +1,8 @@
 # named(_:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Syncs the TipKit datastore using the specified CloudKit container.
 

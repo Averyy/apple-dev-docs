@@ -1,7 +1,8 @@
 # actualTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actual time in the video timeline at which the image generator creates the image.
 
@@ -21,13 +22,14 @@ var actualTime: CMTime { get throws }
 
 #### Discussion
 
-This value may differ from the [`requestedTime`](avassetimagegenerator/images/element/requestedtime.md) depending on the configuration of the image generator’s [`requestedTimeToleranceBefore`](avassetimagegenerator/requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](avassetimagegenerator/requestedtimetoleranceafter.md) properties.
+This value may differ from the [`requestedTime`](./requestedtime.md) depending on the configuration of the image generator’s [`requestedTimeToleranceBefore`](../../requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](../../requestedtimetoleranceafter.md) properties.
 
 ## See Also
 
-- [var image: CGImage](avassetimagegenerator/images/element/image.md)
+### Accessing image data
+- [var image: CGImage](./image.md)
   An image for a requested time.
-- [var requestedTime: CMTime](avassetimagegenerator/images/element/requestedtime.md)
+- [var requestedTime: CMTime](./requestedtime.md)
   A time in the video timeline at which you request an image.
 
 

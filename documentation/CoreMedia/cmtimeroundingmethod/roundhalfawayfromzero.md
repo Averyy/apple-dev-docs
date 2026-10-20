@@ -1,7 +1,8 @@
 # CMTimeRoundingMethod.roundHalfAwayFromZero
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds half away from zero.
 
@@ -20,6 +21,10 @@ Rounds half away from zero.
 case roundHalfAwayFromZero
 ```
 
+```c
+kCMTimeRoundingMethod_RoundHalfAwayFromZero
+```
+
 #### Discussion
 
 This method rounds toward zero if the absolute value is less than `0.5`, and away from `0` if it’s greater than or equal to `0.5`.
@@ -28,15 +33,16 @@ This is the default rounding method.
 
 ## See Also
 
-- [CMTimeRoundingMethod.roundAwayFromZero](cmtimeroundingmethod/roundawayfromzero.md)
+### Rounding Methods
+- [CMTimeRoundingMethod.roundAwayFromZero](./roundawayfromzero.md)
   Rounds away from zero.
-- [CMTimeRoundingMethod.roundTowardZero](cmtimeroundingmethod/roundtowardzero.md)
+- [CMTimeRoundingMethod.roundTowardZero](./roundtowardzero.md)
   Rounds toward zero.
-- [CMTimeRoundingMethod.quickTime](cmtimeroundingmethod/quicktime.md)
+- [CMTimeRoundingMethod.quickTime](./quicktime.md)
   Rounds using the QuickTime method.
-- [CMTimeRoundingMethod.roundTowardPositiveInfinity](cmtimeroundingmethod/roundtowardpositiveinfinity.md)
+- [CMTimeRoundingMethod.roundTowardPositiveInfinity](./roundtowardpositiveinfinity.md)
   Rounds toward positive infinity.
-- [CMTimeRoundingMethod.roundTowardNegativeInfinity](cmtimeroundingmethod/roundtowardnegativeinfinity.md)
+- [CMTimeRoundingMethod.roundTowardNegativeInfinity](./roundtowardnegativeinfinity.md)
   Rounds toward negative infinity.
 
 

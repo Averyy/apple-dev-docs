@@ -1,6 +1,7 @@
 # Localizing Apple Pay Buttons Using CSS
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Set the language of an Apple Pay button.
 
@@ -16,7 +17,8 @@ Localizing Apple Pay buttons is available starting in macOS 10.12.1 and iOS 10.1
 
 ## See Also
 
-- [Styling the Apple Pay Button Using CSS](styling-the-apple-pay-button-using-css.md)
+### Styling the Apple Pay Button
+- [Styling the Apple Pay Button Using CSS](./styling-the-apple-pay-button-using-css.md)
   Choose a button color and size to suit your webpage.
 
 

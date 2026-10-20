@@ -1,7 +1,8 @@
 # applinks
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The root object for a universal links service definition.
 
@@ -65,13 +66,13 @@ Add the JSON code to your `apple-app-site-association` file along with the app i
 ## Topics
 
 ### Universal links definitions
-- [object applinks.Details](applinks/details-swift.dictionary.md)
+- [object applinks.Details](./applinks/details-swift.dictionary.md)
   A list of apps and the universal links they handle for a domain.
 ### Pattern-matching defaults
-- [object applinks.Defaults](applinks/defaults-swift.dictionary.md)
+- [object applinks.Defaults](./applinks/defaults-swift.dictionary.md)
   An object that defines the default settings to use for universal links pattern matching.
 ### Substitution variables
-- [object applinks.SubstitutionVariables](applinks/substitutionvariables-swift.dictionary.md)
+- [object applinks.SubstitutionVariables](./applinks/substitutionvariables-swift.dictionary.md)
   A list of named strings and an associated array of string values that define custom substitution variables to use for URL pattern matching.
 
 ## Properties

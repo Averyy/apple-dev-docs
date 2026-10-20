@@ -1,18 +1,19 @@
 # mbuf_getcluster
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_getcluster(mbuf_how_t how, mbuf_type_t type, size_t size, mbuf_t *mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success, errno error on failure. If you specified NULL for the mbuf, any intermediate mbuf that may have been allocated will be freed. If you specify an mbuf value in *mbuf, mbuf_mclget will not free it. EINVAL - Invalid parameter ENOMEM - Not enough memory available ENOTSUP - The caller had requested greater than 4096 bytes cluster and the system is unable to fulfill it due to the lack of jumbo clusters support based on the configuration. In this case, the caller is advised to use 4096 bytes or smaller during subsequent requests.
 

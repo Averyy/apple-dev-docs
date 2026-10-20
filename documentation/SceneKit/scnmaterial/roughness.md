@@ -1,23 +1,28 @@
 # roughness
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides color values to determine the apparent smoothness of the surface.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var roughness: SCNMaterialProperty { get }
+```
+
+```objc
+@property (nonatomic, readonly) SCNMaterialProperty * roughness;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ This property measures only the total intensity of color values; texture content
 
 This property approximates the level of microscopic detail—for example tiny bumps and cracks—in a surface. By approximating these “microfacets” as a single term, this property helps produce lighting calculations that resemble the energy-conserving laws of real-world physics, resulting in more realistic variation between matte and shiny surfaces. Lower values (darker colors) cause the material to appear shiny, with well-defined specular highlights. Higher values (brighter colors) cause specular highlights to spread out and the diffuse color of the material to become more retroreflective.
 
-This property applies only when the material’s [`lightingModel`](scnmaterial/lightingmodel-swift.property.md) value is [`physicallyBased`](scnmaterial/lightingmodel-swift.struct/physicallybased.md).
+This property applies only when the material’s [`lightingModel`](./lightingmodel-swift.property.md) value is [`physicallyBased`](./lightingmodel-swift.struct/physicallybased.md).
 
 ## See Also
 
-- [var diffuse: SCNMaterialProperty](scnmaterial/diffuse.md)
+### Visual Properties for Physically Based Shading
+- [var diffuse: SCNMaterialProperty](./diffuse.md)
   An object that manages the material’s diffuse response to lighting.
-- [var metalness: SCNMaterialProperty](scnmaterial/metalness.md)
+- [var metalness: SCNMaterialProperty](./metalness.md)
   An object that provides color values to determine how metallic the material’s surface appears.
 
 

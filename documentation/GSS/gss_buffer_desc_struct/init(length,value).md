@@ -1,7 +1,8 @@
 # init(length:value:)
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new buffer with the given array of elements.
 
@@ -25,7 +26,8 @@ init(length: Int, value: UnsafeMutableRawPointer!)
 
 ## See Also
 
-- [init()](gss_buffer_desc_struct/init.md)
+### Initialization
+- [init()](./init%28%29.md)
   Initialize a new, empty buffer.
 
 

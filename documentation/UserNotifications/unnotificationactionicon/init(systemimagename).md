@@ -1,7 +1,8 @@
 # init(systemImageName:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action icon by using a system symbol image.
 
@@ -20,17 +21,22 @@ Creates an action icon by using a system symbol image.
 convenience init(systemImageName: String)
 ```
 
+```objc
++ (instancetype) iconWithSystemImageName:(NSString *) systemImageName;
+```
+
 #### Return Value
 
 An action icon that the system initializes with the system symbol image that your app specifies.
 
 ## Parameters
 
-- `systemImageName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images. Download this app from the design resources page at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com/design/resources/).
+- `systemImageName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images. Download this app from the design resources page at [developer.apple.com](https://developer.apple.com/design/resources/).
 
 ## See Also
 
-- [convenience init(templateImageName: String)](unnotificationactionicon/init(templateimagename:).md)
+### Essentials
+- [convenience init(templateImageName: String)](./init%28templateimagename%29.md)
   Creates an action icon based on an image in your app’s bundle, preferably in an asset catalog.
 
 

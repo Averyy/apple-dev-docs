@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that represents the content of the `ControlGroup`.
 
@@ -21,7 +22,8 @@ let content: ControlGroupStyleConfiguration.Content
 
 ## See Also
 
-- [ControlGroupStyleConfiguration.Content](controlgroupstyleconfiguration/content-swift.struct.md)
+### Configuring the content
+- [ControlGroupStyleConfiguration.Content](./content-swift.struct.md)
   A type-erased content of a `ControlGroup`.
 
 

@@ -1,18 +1,19 @@
 # DispatchSourceUserDataAdd
 
 **Framework**: Dispatch  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A dispatch source that coalesces data you provide using an AND operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,37 +23,38 @@ protocol DispatchSourceUserDataAdd : DispatchSourceProtocol, Sendable
 
 #### Overview
 
-You do not adopt this protocol in your objects. Instead, use the [`makeUserDataAddSource(queue:)`](dispatchsource/makeuserdataaddsource(queue:).md) method to create an object that adopts this protocol.
+You do not adopt this protocol in your objects. Instead, use the [`makeUserDataAddSource(queue:)`](./dispatchsource/makeuserdataaddsource%28queue%29.md) method to create an object that adopts this protocol.
 
-To add custom data to the dispatch source, call the [`add(data:)`](dispatchsourceuserdataadd/add(data:).md) method.
+To add custom data to the dispatch source, call the [`add(data:)`](./dispatchsourceuserdataadd/add%28data%29.md) method.
 
 ## Topics
 
 ### Getting the Event Data
-- [func add(data: UInt)](dispatchsourceuserdataadd/add(data:).md)
+- [func add(data: UInt)](./dispatchsourceuserdataadd/add%28data%29.md)
   Adds the value to the current pending data.
 
 ## Relationships
 
 ### Inherits From
-- [DispatchSourceProtocol](dispatchsourceprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DispatchSourceProtocol](./dispatchsourceprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DispatchSource](dispatchsource.md)
+- [DispatchSource](./dispatchsource.md)
 
 ## See Also
 
-- [class func makeUserDataAddSource(queue: DispatchQueue?) -> any DispatchSourceUserDataAdd](dispatchsource/makeuserdataaddsource(queue:).md)
+### Creating a Custom Source
+- [class func makeUserDataAddSource(queue: DispatchQueue?) -> any DispatchSourceUserDataAdd](./dispatchsource/makeuserdataaddsource%28queue%29.md)
   Creates a new dispatch source object that you use to coalesce custom app data using an AND operator.
-- [class func makeUserDataOrSource(queue: DispatchQueue?) -> any DispatchSourceUserDataOr](dispatchsource/makeuserdataorsource(queue:).md)
+- [class func makeUserDataOrSource(queue: DispatchQueue?) -> any DispatchSourceUserDataOr](./dispatchsource/makeuserdataorsource%28queue%29.md)
   Creates a new dispatch source object that you use to coalesce custom app data using an OR operator.
-- [class func makeUserDataReplaceSource(queue: DispatchQueue?) -> any DispatchSourceUserDataReplace](dispatchsource/makeuserdatareplacesource(queue:).md)
+- [class func makeUserDataReplaceSource(queue: DispatchQueue?) -> any DispatchSourceUserDataReplace](./dispatchsource/makeuserdatareplacesource%28queue%29.md)
   Creates a new dispatch source object that you use to track custom app data.
-- [protocol DispatchSourceUserDataOr](dispatchsourceuserdataor.md)
+- [protocol DispatchSourceUserDataOr](./dispatchsourceuserdataor.md)
   A dispatch source that coalesces data you provide using an OR operation.
-- [protocol DispatchSourceUserDataReplace](dispatchsourceuserdatareplace.md)
+- [protocol DispatchSourceUserDataReplace](./dispatchsourceuserdatareplace.md)
   A dispatch source that replaces any pending data with the new value you provide.
 
 

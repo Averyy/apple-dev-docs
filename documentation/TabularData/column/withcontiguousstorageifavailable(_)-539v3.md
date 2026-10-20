@@ -1,7 +1,8 @@
 # withContiguousStorageIfAvailable(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method always returns `nil` without calling `body`.
 

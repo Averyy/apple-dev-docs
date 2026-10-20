@@ -1,7 +1,8 @@
 # HMCharacteristicValuePositionState.closing
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The position is moving towards minimum value.
 
@@ -19,11 +20,16 @@ The position is moving towards minimum value.
 case closing
 ```
 
+```c
+HMCharacteristicValuePositionStateClosing
+```
+
 ## See Also
 
-- [HMCharacteristicValuePositionState.opening](hmcharacteristicvaluepositionstate/opening.md)
+### Position States
+- [HMCharacteristicValuePositionState.opening](./opening.md)
   The position is moving towards maximum value.
-- [HMCharacteristicValuePositionState.stopped](hmcharacteristicvaluepositionstate/stopped.md)
+- [HMCharacteristicValuePositionState.stopped](./stopped.md)
   The accessory isn’t moving.
 
 

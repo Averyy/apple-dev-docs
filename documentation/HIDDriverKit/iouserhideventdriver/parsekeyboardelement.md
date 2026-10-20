@@ -1,17 +1,18 @@
 # parseKeyboardElement
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses an element to see if it contains keyboard-related information.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool parseKeyboardElement(IOHIDElement *element);
 ```
 
@@ -29,15 +30,16 @@ This method checks the element to determine if it contains keyboard data suitabl
 
 ## See Also
 
-- [parseElements](iouserhideventdriver/parseelements.md)
+### Parsing the Element Hierarchy
+- [parseElements](./parseelements.md)
   Parses the specified array of elements.
-- [parsePointerElement](iouserhideventdriver/parsepointerelement.md)
+- [parsePointerElement](./parsepointerelement.md)
   Parses an element to see if it supports pointer usages.
-- [parseDigitizerElement](iouserhideventdriver/parsedigitizerelement.md)
+- [parseDigitizerElement](./parsedigitizerelement.md)
   Parses an element to see if it supports digitizer usages.
-- [parseScrollElement](iouserhideventdriver/parsescrollelement.md)
+- [parseScrollElement](./parsescrollelement.md)
   Parses an element to see if it supports scroll usages.
-- [parseLEDElement](iouserhideventdriver/parseledelement.md)
+- [parseLEDElement](./parseledelement.md)
   Parses an element to see if it supports LED usages.
 
 

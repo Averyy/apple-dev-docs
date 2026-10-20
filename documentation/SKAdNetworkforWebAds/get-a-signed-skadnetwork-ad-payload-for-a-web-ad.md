@@ -1,7 +1,8 @@
 # Get a Signed Web Ad Impression Payload
 
 **Framework**: SKAdNetwork for Web Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 An endpoint you provide to receive requests from devices to serve signed ad interactions.
 
@@ -10,8 +11,8 @@ An endpoint you provide to receive requests from devices to serve signed ad inte
 
 ## Mentions
 
-- [Creating an attributable ad link](creating-an-attributable-ad-link.md)
-- [Generating a signature for attributable web ads](generating-a-signature-for-attributable-web-ads.md)
+- [Creating an attributable ad link](./creating-an-attributable-ad-link.md)
+- [Generating a signature for attributable web ads](./generating-a-signature-for-attributable-web-ads.md)
 
 #### Discussion
 
@@ -19,7 +20,7 @@ You implement this endpoint on your server to provide signed SKAdNetwork ad payl
 
 To receive requests at this endpoint, your server needs to support the Transport Layer Security (TLS) 1.2 protocol or later.
 
-The following is an example of an [`AdImpressionRequest`](adimpressionrequest.md) payload:
+The following is an example of an [`AdImpressionRequest`](./adimpressionrequest.md) payload:
 
 ```json
 {
@@ -30,7 +31,7 @@ The following is an example of an [`AdImpressionRequest`](adimpressionrequest.md
 }
 ```
 
-A corresponding [`AdImpressionResponse`](adimpressionresponse.md) to send in response to this payload is as follows:
+A corresponding [`AdImpressionResponse`](./adimpressionresponse.md) to send in response to this payload is as follows:
 
 ```json
 {
@@ -45,9 +46,9 @@ A corresponding [`AdImpressionResponse`](adimpressionresponse.md) to send in res
 }
 ```
 
-> ❗ **Important**:  The `attributionSourceNonce` in a web ad, the `source_nonce` in an [`AdImpressionRequest`](adimpressionrequest.md), and the `nonce` in an [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
+> ❗ **Important**:  The `attributionSourceNonce` in a web ad, the `source_nonce` in an [`AdImpressionRequest`](./adimpressionrequest.md), and the `nonce` in an [`AdImpressionResponse`](./adimpressionresponse.md) all represent the same UUID, but the encoding varies.
 
-The device uses the same encoding as `attributionSourceNonce` for the `source_nonce` value in the [`AdImpressionRequest`](adimpressionrequest.md). However, you use the dash-separated string representation of the UUID for the `nonce` value in an [`AdImpressionResponse`](adimpressionresponse.md).
+The device uses the same encoding as `attributionSourceNonce` for the `source_nonce` value in the [`AdImpressionRequest`](./adimpressionrequest.md). However, you use the dash-separated string representation of the UUID for the `nonce` value in an [`AdImpressionResponse`](./adimpressionresponse.md).
 
 ## Endpoint
 
@@ -55,11 +56,19 @@ The device uses the same encoding as `attributionSourceNonce` for the `source_no
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `AdImpressionRequest`
+
 The request that devices send to this endpoint, asking for the web ad impression from the ad network’s server.
+
+## Responses
+
+- `200` OK (`AdImpressionResponse`, `application/json`): The response you provide that contains a signed payload for the clicked web ad.
 
 ## See Also
 
-- [object AdImpressionRequest](adimpressionrequest.md)
+### Receiving a request for a web ad  payload
+- [object AdImpressionRequest](./adimpressionrequest.md)
   The request body that devices send to fetch the web ad impression from the ad network’s server.
 
 

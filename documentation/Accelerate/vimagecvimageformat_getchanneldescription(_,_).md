@@ -1,7 +1,8 @@
 # vImageCVImageFormat_GetChannelDescription(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the channel description for a particular channel type.
 
@@ -20,13 +21,17 @@ Returns the channel description for a particular channel type.
 func vImageCVImageFormat_GetChannelDescription(_ format: vImageConstCVImageFormat, _ type: vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!
 ```
 
+```c
+const vImageChannelDescription *vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormatRef format, vImageBufferTypeCode type);
+```
+
 #### Return Value
 
-A pointer to a [`vImageChannelDescription`](vimagechanneldescription.md) structure that contains the channel description.
+A pointer to a [`vImageChannelDescription`](./vimagechanneldescription.md) structure that contains the channel description.
 
 #### Discussion
 
-The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelDescription(_:_:)`](vimagecvimageformat_getchanneldescription(_:_:).md):
+The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelDescription(_:_:)`](./vimagecvimageformat_getchanneldescription%28_,_%29.md):
 
 **Swift**:
 
@@ -53,19 +58,21 @@ const vImageChannelDescription *channelDescription =
 ## Parameters
 
 - `format`: The Core Video image format to query.
-- `type`: The type of the channel that you want information about. For example, [`kvImageBufferTypeCode_Luminance`](kvimagebuffertypecode_luminance.md).
+- `type`: The type of the channel that you want information about. For example, [`kvImageBufferTypeCode_Luminance`](./kvimagebuffertypecode_luminance.md).
 
 ## See Also
 
-- [func channelDescription(bufferType: vImage.BufferType) -> vImageChannelDescription?](vimagecvimageformat/channeldescription(buffertype:).md)
+### Related Documentation
+- [func channelDescription(bufferType: vImage.BufferType) -> vImageChannelDescription?](./vimagecvimageformat/channeldescription%28buffertype%29.md)
   Returns the range and clamp limits for a specified channel in a Core Video image format.
-- [func vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormat) -> UInt32](vimagecvimageformat_getchannelcount(_:).md)
+### Querying and setting channel information
+- [func vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormat) -> UInt32](./vimagecvimageformat_getchannelcount%28_%29.md)
   Returns the number of channels, including alpha, for the Core Video image format.
-- [func vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormat, UnsafePointer<vImageChannelDescription>, vImageBufferTypeCode) -> vImage_Error](vimagecvimageformat_copychanneldescription(_:_:_:).md)
+- [func vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormat, UnsafePointer<vImageChannelDescription>, vImageBufferTypeCode) -> vImage_Error](./vimagecvimageformat_copychanneldescription%28_,_,_%29.md)
   Copies the channel description for a particular channel type to an image format.
-- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](vimagecvimageformat_getchannelnames(_:).md)
+- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](./vimagecvimageformat_getchannelnames%28_%29.md)
   Returns the names of the channels of a Core Video image format.
-- [struct vImageChannelDescription](vimagechanneldescription.md)
+- [struct vImageChannelDescription](./vimagechanneldescription.md)
   A description of the range and clamp limits for a pixel format.
 
 

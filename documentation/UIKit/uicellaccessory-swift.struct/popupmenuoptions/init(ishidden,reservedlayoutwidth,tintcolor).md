@@ -1,7 +1,8 @@
 # init(isHidden:reservedLayoutWidth:tintColor:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a popup menu accessory options structure.
 
@@ -9,7 +10,7 @@ Creates a popup menu accessory options structure.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

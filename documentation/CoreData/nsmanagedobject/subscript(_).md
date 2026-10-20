@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Data  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 18.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

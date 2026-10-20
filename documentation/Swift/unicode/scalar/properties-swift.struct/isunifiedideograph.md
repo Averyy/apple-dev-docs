@@ -1,7 +1,8 @@
 # isUnifiedIdeograph
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is one of the unified CJK ideographs in the Unicode Standard.
 
@@ -24,7 +25,7 @@ var isUnifiedIdeograph: Bool { get }
 
 This property is false for CJK punctuation and symbols, as well as for compatibility ideographs (which canonically decompose to unified ideographs).
 
-This property corresponds to the “Unified_Ideograph” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Unified_Ideograph” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

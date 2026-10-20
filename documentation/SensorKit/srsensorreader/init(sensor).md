@@ -1,19 +1,26 @@
 # init(sensor:)
 
 **Framework**: SensorKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new sensor reader object.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
 ```swift
 init(sensor: SRSensor)
+```
+
+```objc
+- (instancetype) initWithSensor:(SRSensor) sensor;
 ```
 
 ## Parameters
@@ -22,9 +29,10 @@ init(sensor: SRSensor)
 
 ## See Also
 
-- [struct SRSensor](srsensor.md)
+### Creating a sensor reader
+- [struct SRSensor](../srsensor.md)
   The sensors an app can read.
-- [var sensor: SRSensor](srsensorreader/sensor.md)
+- [var sensor: SRSensor](./sensor.md)
   The particular sensor that this object reads.
 
 

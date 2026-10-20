@@ -1,18 +1,19 @@
 # kCFPropertyListReadCorruptError
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Signifies an error parsing a property list.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Signifies an error parsing a property list.
 var kCFPropertyListReadCorruptError: CFIndex { get }
 ```
 
+```c
+kCFPropertyListReadCorruptError
+```
+
 ## See Also
 
-- [var kCFPropertyListReadUnknownVersionError: CFIndex](kcfpropertylistreadunknownversionerror.md)
+### Constants
+- [var kCFPropertyListReadUnknownVersionError: CFIndex](./kcfpropertylistreadunknownversionerror.md)
   Signifies the version number in the property list is unknown.
-- [var kCFPropertyListReadStreamError: CFIndex](kcfpropertylistreadstreamerror.md)
+- [var kCFPropertyListReadStreamError: CFIndex](./kcfpropertylistreadstreamerror.md)
   Signifies a stream error reading a property list.
-- [var kCFPropertyListWriteStreamError: CFIndex](kcfpropertylistwritestreamerror.md)
+- [var kCFPropertyListWriteStreamError: CFIndex](./kcfpropertylistwritestreamerror.md)
   Signifies a stream error writing a property list.
 
 

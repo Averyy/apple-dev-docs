@@ -1,7 +1,8 @@
 # CurrentWeather.CurrentWeatherData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The current weather object.
 
@@ -10,7 +11,7 @@ The current weather object.
 
 ## Declaration
 
-```swift
+```
 object CurrentWeather.CurrentWeatherData
 ```
 
@@ -36,7 +37,7 @@ object CurrentWeather.CurrentWeatherData
 ## Relationships
 
 ### Inherited By
-- [CurrentWeather](currentweather.md)
+- [CurrentWeather](../currentweather.md)
 
 
 ---

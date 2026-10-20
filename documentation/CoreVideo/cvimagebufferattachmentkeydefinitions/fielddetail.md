@@ -1,7 +1,8 @@
 # fieldDetail
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The order of interlaced video data in the image buffer.
 

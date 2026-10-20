@@ -1,7 +1,8 @@
 # byLayer
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that makes each layer appear separately.
 
@@ -22,7 +23,8 @@ var byLayer: AppearSymbolEffect { get }
 
 ## See Also
 
-- [var wholeSymbol: AppearSymbolEffect](appearsymboleffect/wholesymbol.md)
+### Determining effect scope
+- [var wholeSymbol: AppearSymbolEffect](./wholesymbol.md)
   An effect that makes all layers appear simultaneously.
 
 

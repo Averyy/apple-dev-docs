@@ -1,7 +1,8 @@
 # init(activityItemsConfiguration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new activity view controller object that acts on the specified configuration.
 
@@ -17,13 +18,18 @@ Initializes a new activity view controller object that acts on the specified con
 convenience init(activityItemsConfiguration: any UIActivityItemsConfigurationReading)
 ```
 
+```objc
+- (instancetype) initWithActivityItemsConfiguration:(id<UIActivityItemsConfigurationReading>) activityItemsConfiguration;
+```
+
 ## See Also
 
-- [init(activityItems: [Any], applicationActivities: [UIActivity]?)](uiactivityviewcontroller/init(activityitems:applicationactivities:).md)
+### Initializing the activity view controller
+- [init(activityItems: [Any], applicationActivities: [UIActivity]?)](./init%28activityitems,applicationactivities%29.md)
   Initializes a new activity view controller object that acts on the specified data.
-- [class UIActivityItemsConfiguration](uiactivityitemsconfiguration.md)
+- [class UIActivityItemsConfiguration](../uiactivityitemsconfiguration.md)
   A configuration that allows a responder to export data through a variety of interactions.
-- [protocol UIActivityItemsConfigurationReading](uiactivityitemsconfigurationreading.md)
+- [protocol UIActivityItemsConfigurationReading](../uiactivityitemsconfigurationreading.md)
   A set of methods adopted by an object so that the object can act as an activity items configuration.
 
 

@@ -1,7 +1,8 @@
 # location
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parametric location of the stop.
 
@@ -26,7 +27,8 @@ This value must be in the range `[0, 1]`.
 
 ## See Also
 
-- [var color: Color](gradient/stop/color.md)
+### Configuring a gradient stop
+- [var color: Color](./color.md)
   The color for the stop.
 
 

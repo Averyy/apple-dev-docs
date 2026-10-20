@@ -1,7 +1,8 @@
 # OSLAdjustMarksUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLAdjustMarksProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLAdjustMarksP
 typealias OSLAdjustMarksUPP = OSLAdjustMarksProcPtr
 ```
 
+```c
+typedef OSLAdjustMarksProcPtr OSLAdjustMarksUPP;
+```
+
 #### Discussion
 
-For a description of an adjust marks callback function, see [`OSLAdjustMarksProcPtr`](osladjustmarksprocptr.md). 
+For a description of an adjust marks callback function, see [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md). 
 
 
 ---

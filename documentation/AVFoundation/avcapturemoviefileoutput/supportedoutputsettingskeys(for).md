@@ -1,7 +1,8 @@
 # supportedOutputSettingsKeys(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of supported keys to use in the output settings dictionary.
 
@@ -17,9 +18,13 @@ Returns a list of supported keys to use in the output settings dictionary.
 func supportedOutputSettingsKeys(for connection: AVCaptureConnection) -> [String]
 ```
 
+```objc
+- (NSArray<NSString *> *) supportedOutputSettingsKeysForConnection:(AVCaptureConnection *) connection;
+```
+
 #### Return Value
 
-An array of keys that can be set in the [`setOutputSettings(_:for:)`](avcapturemoviefileoutput/setoutputsettings(_:for:).md)method.
+An array of keys that can be set in the [`setOutputSettings(_:for:)`](./setoutputsettings%28_,for%29.md)method.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ An array of keys that can be set in the [`setOutputSettings(_:for:)`](avcapturem
 
 ## See Also
 
-- [func outputSettings(for: AVCaptureConnection) -> [String : Any]](avcapturemoviefileoutput/outputsettings(for:).md)
+### Managing output settings
+- [func outputSettings(for: AVCaptureConnection) -> [String : Any]](./outputsettings%28for%29.md)
   Returns the settings the output uses to encode media from the specified connection.
-- [func setOutputSettings([String : Any]?, for: AVCaptureConnection)](avcapturemoviefileoutput/setoutputsettings(_:for:).md)
+- [func setOutputSettings([String : Any]?, for: AVCaptureConnection)](./setoutputsettings%28_,for%29.md)
   Sets the options the output uses to encode media from the given connection while recording.
-- [var availableVideoCodecTypes: [AVVideoCodecType]](avcapturemoviefileoutput/availablevideocodectypes.md)
+- [var availableVideoCodecTypes: [AVVideoCodecType]](./availablevideocodectypes.md)
   The video codecs types the output supports for recording movie files.
 
 

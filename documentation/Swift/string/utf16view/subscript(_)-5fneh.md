@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous subrange of the collection’s elements.
 
@@ -37,7 +38,7 @@ print(streets[index!])
 // Prints "Evarts"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

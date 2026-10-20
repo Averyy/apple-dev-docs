@@ -1,6 +1,7 @@
 # Implementing coalesced touch support in an app
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Learn how to create a simple app that handles coalesced touches.
 
@@ -8,9 +9,9 @@ Learn how to create a simple app that handles coalesced touches.
 
 The following image shows a simple drawing app that captures touches and renders the resulting path onscreen. The app tracks all touches reported by UIKit, including coalesced touches. The app builds the path by drawing line segments from one touch point to the next.
 
-![A screenshot of an app that uses coalesced touches to perform high-accuracy drawing.](/images/com.apple.uikit/implementing-coalesced-touch-support-in-an-app-1@2x.png)
+![A screenshot of an app that uses coalesced touches to perform high-accuracy drawing.](https://developer.apple.com/tutorials/images/com.apple.uikit/implementing-coalesced-touch-support-in-an-app-1@2x.png)
 
-##### Provide Storage for the Touches
+##### Provide storage for the touches
 
 The main view of the app uses incoming touch events to build a set of `Stroke` objects. The following image shows the definition of the `Stroke` class and the associated `StrokeSample` class, which store information about each touch event.
 
@@ -49,9 +50,9 @@ class StrokeCollection {
 }
 ```
 
-##### Retrieve the Coalesced Touches
+##### Retrieve the coalesced touches
 
-The following code shows the portion of the main drawing view that creates new `Stroke` objects. The view doesn’t support multitouch, so only the first touch event needs to be tracked. The [`touchesBegan(_:with:)`](uiresponder/touchesbegan(_:with:).md) method creates a new stroke object and marks it as the active stroke. New touch data is added to the active stroke until the [`touchesEnded(_:with:)`](uiresponder/touchesended(_:with:).md) method is called, at which point the stroke is accepted into the stroke collection. If the touch sequence is interrupted for any reason, the [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) method abandons the currently active stroke.
+The following code shows the portion of the main drawing view that creates new `Stroke` objects. The view doesn’t support multitouch, so only the first touch event needs to be tracked. The [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md) method creates a new stroke object and marks it as the active stroke. New touch data is added to the active stroke until the [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md) method is called, at which point the stroke is accepted into the stroke collection. If the touch sequence is interrupted for any reason, the [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) method abandons the currently active stroke.
 
 ```swift
 class DrawingView : UIView {
@@ -127,7 +128,7 @@ func addSamples(for touches: [UITouch]) {
 }
 ```
 
-> **Note**:  When capturing drawing input from Apple Pencil, you can use the [`preciseLocation(in:)`](uitouch/preciselocation(in:).md) method instead of the [`location(in:)`](uitouch/location(in:)-8rd36.md) method to get more precise touch information. Use the [`preciseLocation(in:)`](uitouch/preciselocation(in:).md) method only for capturing drawing-related input. For general interactions with your interface, continue to get the touch location using the [`location(in:)`](uitouch/location(in:)-8rd36.md) method.
+> **Note**:  When capturing drawing input from Apple Pencil, you can use the [`preciseLocation(in:)`](./uitouch/preciselocation%28in%29.md) method instead of the [`location(in:)`](./uitouch/location%28in%29-8rd36.md) method to get more precise touch information. Use the [`preciseLocation(in:)`](./uitouch/preciselocation%28in%29.md) method only for capturing drawing-related input. For general interactions with your interface, continue to get the touch location using the [`location(in:)`](./uitouch/location%28in%29-8rd36.md) method.
 
 The remaining methods of the `DrawingView` class take the touch samples and turn them into the rendered output. The app’s Clear button releases the view’s current `StrokeCollection` object and creates a new one.
 

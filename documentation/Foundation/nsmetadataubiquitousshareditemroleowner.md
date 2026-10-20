@@ -1,7 +1,8 @@
 # NSMetadataUbiquitousSharedItemRoleOwner
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current user is the owner of the shared item.
 
@@ -18,9 +19,14 @@ The current user is the owner of the shared item.
 let NSMetadataUbiquitousSharedItemRoleOwner: String
 ```
 
+```c
+extern NSString * const NSMetadataUbiquitousSharedItemRoleOwner;
+```
+
 ## See Also
 
-- [let NSMetadataUbiquitousSharedItemRoleParticipant: String](nsmetadataubiquitousshareditemroleparticipant.md)
+### iCloud Sharing Role Values
+- [let NSMetadataUbiquitousSharedItemRoleParticipant: String](./nsmetadataubiquitousshareditemroleparticipant.md)
   The current user is a participant of the shared item.
 
 

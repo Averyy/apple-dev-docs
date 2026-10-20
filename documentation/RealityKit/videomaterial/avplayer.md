@@ -1,7 +1,8 @@
 # avPlayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material’s video playback controller.
 
@@ -11,7 +12,7 @@ The material’s video playback controller.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ myMaterial.avPlayer.play()
 
 ## See Also
 
-- [var controller: VideoPlaybackController](videomaterial/controller.md)
+### Controlling playback
+- [var controller: VideoPlaybackController](./controller.md)
   An object that configures framework-specific video options.
 
 

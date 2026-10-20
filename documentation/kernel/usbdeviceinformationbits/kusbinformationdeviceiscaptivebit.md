@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsCaptiveBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The USB device has directly attached to its hub and isn’t removable.
 
@@ -10,7 +11,7 @@ The USB device has directly attached to its hub and isn’t removable.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsCaptiveBit = 0
 ```
 

@@ -1,7 +1,8 @@
 # largeSubtitleTextAttributes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default text attributes to apply to the subtitle when it’s rendered under the large title.
 
@@ -16,9 +17,14 @@ The default text attributes to apply to the subtitle when it’s rendered under 
 var largeSubtitleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * largeSubtitleTextAttributes;
+```
+
 ## See Also
 
-- [var subtitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/subtitletextattributes.md)
+### Configuring the subtitle
+- [var subtitleTextAttributes: [NSAttributedString.Key : Any]](./subtitletextattributes.md)
   The default text attributes to apply to the subtitle rendered in the navigation bar.
 
 

@@ -1,7 +1,8 @@
 # matchFound
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the web view found a match during the search.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether the web view found a match during the sea
 var matchFound: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL matchFound;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the web view found a match, or [`false`](https://developer.apple.com/documentation/swift/false) if it didn’t.
+The value of this property is [`true`](../../Swift/true.md) if the web view found a match, or [`false`](../../Swift/false.md) if it didn’t.
 
 
 ---

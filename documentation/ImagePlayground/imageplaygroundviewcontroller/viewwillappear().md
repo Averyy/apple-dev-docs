@@ -1,7 +1,8 @@
 # viewWillAppear()
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view controller that its view is about to be added to a view hierarchy.
 
@@ -21,9 +22,10 @@ The view controller uses this method to configure its interface.
 
 ## See Also
 
-- [func viewDidLoad()](imageplaygroundviewcontroller/viewdidload.md)
+### Managing the view
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Called after the controller’s view is loaded into memory.
-- [func viewDidDisappear()](imageplaygroundviewcontroller/viewdiddisappear.md)
+- [func viewDidDisappear()](./viewdiddisappear%28%29.md)
   Notifies the view controller that its view is about to be removed from a view hierarchy.
 
 

@@ -1,7 +1,8 @@
 # SettingsResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -16,7 +17,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object SettingsResponse.ErrorChainItem
 ```
 
@@ -29,7 +30,8 @@ object SettingsResponse.ErrorChainItem
 
 ## See Also
 
-- [object SettingsResponse.Settings](settingsresponse/settings-data.dictionary.md)
+### Objects
+- [object SettingsResponse.Settings](./settings-data.dictionary.md)
   A dictionary that describes the results of configuring settings on a device.
 
 

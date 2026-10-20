@@ -1,7 +1,8 @@
 # SRError
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that SensorKit reports.
 
@@ -19,34 +20,35 @@ struct SRError
 ## Topics
 
 ### Inspecting Error Information
-- [static var errorDomain: String](srerror/errordomain.md)
+- [static var errorDomain: String](./srerror/errordomain.md)
 ### Identifying an Error Cause
-- [static var promptDeclined: SRError.Code](srerror/promptdeclined.md)
+- [static var promptDeclined: SRError.Code](./srerror/promptdeclined.md)
   Occurs when the user cancels the sensor approval workflow.
-- [static var dataInaccessible: SRError.Code](srerror/datainaccessible.md)
+- [static var dataInaccessible: SRError.Code](./srerror/datainaccessible.md)
   Occurs when the app can’t access the sensor’s data.
-- [static var fetchRequestInvalid: SRError.Code](srerror/fetchrequestinvalid.md)
+- [static var fetchRequestInvalid: SRError.Code](./srerror/fetchrequestinvalid.md)
   Occurs when the app misconfigures a fetch request.
-- [static var invalidEntitlement: SRError.Code](srerror/invalidentitlement.md)
+- [static var invalidEntitlement: SRError.Code](./srerror/invalidentitlement.md)
   Occurs when the app lacks the required entitlement.
-- [static var noAuthorization: SRError.Code](srerror/noauthorization.md)
+- [static var noAuthorization: SRError.Code](./srerror/noauthorization.md)
   Occurs when the user declines sensor access in the Settings app.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SRErrorDomain: String](srerrordomain.md)
+### Interpreting Errors
+- [let SRErrorDomain: String](./srerrordomain.md)
   An error domain that’s unique to the framework.
-- [SRError.Code](srerror/code.md)
+- [SRError.Code](./srerror/code.md)
   The kinds of problems that stop a recording or a fetch.
 
 

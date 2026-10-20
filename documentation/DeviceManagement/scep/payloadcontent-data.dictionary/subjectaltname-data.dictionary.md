@@ -1,7 +1,8 @@
 # SCEP.PayloadContent.SubjectAltName
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 An optional dictionary that provides values required by the CA for issuing a certificate.
 
@@ -16,7 +17,7 @@ An optional dictionary that provides values required by the CA for issuing a cer
 
 ## Declaration
 
-```swift
+```
 object SCEP.PayloadContent.SubjectAltName
 ```
 

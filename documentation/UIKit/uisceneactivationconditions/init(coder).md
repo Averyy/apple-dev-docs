@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Restores an activation conditions object from the specified archive.
 
@@ -18,13 +19,18 @@ Restores an activation conditions object from the specified archive.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 #### Return Value
 
 An activation conditions object containing the archived condition information.
 
 ## See Also
 
-- [init()](uisceneactivationconditions/init.md)
+### Creating an activation conditions object
+- [init()](./init%28%29.md)
   Creates a new activation conditions object.
 
 

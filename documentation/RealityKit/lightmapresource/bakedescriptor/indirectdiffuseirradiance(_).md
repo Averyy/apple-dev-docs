@@ -1,7 +1,8 @@
 # LightmapResource.BakeDescriptor.indirectDiffuseIrradiance(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,9 +20,10 @@ case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDes
 
 ## See Also
 
-- [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](lightmapresource/bakedescriptor/finalshadedcolor(_:).md)
-- [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](lightmapresource/bakedescriptor/ambientocclusion(_:).md)
-- [var bakeType: LightmapResource.BakeType](lightmapresource/bakedescriptor/baketype.md)
+### Specifying the bake type
+- [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](./finalshadedcolor%28_%29.md)
+- [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](./ambientocclusion%28_%29.md)
+- [var bakeType: LightmapResource.BakeType](./baketype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # subscript(metric:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a metric column using the metric’s name
 

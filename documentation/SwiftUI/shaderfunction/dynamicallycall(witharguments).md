@@ -1,7 +1,8 @@
 # dynamicallyCall(withArguments:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new shader by applying the provided argument values to the referenced function.
 
@@ -31,9 +32,10 @@ which creates a shader passing the value `42` to the first unbound parameter of 
 
 ## See Also
 
-- [var library: ShaderLibrary](shaderfunction/library.md)
+### Configuring a function
+- [var library: ShaderLibrary](./library.md)
   The shader library storing the function.
-- [var name: String](shaderfunction/name.md)
+- [var name: String](./name.md)
   The name of the shader function in the library.
 
 

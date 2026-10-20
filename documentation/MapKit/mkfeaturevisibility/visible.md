@@ -1,7 +1,8 @@
 # MKFeatureVisibility.visible
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating that the feature is visible.
 
@@ -19,11 +20,16 @@ A constant indicating that the feature is visible.
 case visible
 ```
 
+```c
+MKFeatureVisibilityVisible
+```
+
 ## See Also
 
-- [MKFeatureVisibility.adaptive](mkfeaturevisibility/adaptive.md)
+### Visibility options
+- [MKFeatureVisibility.adaptive](./adaptive.md)
   A constant indicating that the feature adapts to the current map state.
-- [MKFeatureVisibility.hidden](mkfeaturevisibility/hidden.md)
+- [MKFeatureVisibility.hidden](./hidden.md)
   A constant indicating that the feature is hidden.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -20,11 +21,17 @@
 func cachedSnapshots(for persistentIdentifiers: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]
 ```
 
+## Default Implementations
+
+### DataStore Implementations
+- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](./cachedsnapshots%28for,editingstate%29-8e689.md)
+
 ## See Also
 
-- [func initializeState(for: EditingState)](datastore/initializestate(for:).md)
-- [struct EditingState](editingstate.md)
-- [func invalidateState(for: EditingState)](datastore/invalidatestate(for:).md)
+### Sharing cached data between model contexts
+- [func initializeState(for: EditingState)](./initializestate%28for%29.md)
+- [struct EditingState](../editingstate.md)
+- [func invalidateState(for: EditingState)](./invalidatestate%28for%29.md)
 
 
 ---

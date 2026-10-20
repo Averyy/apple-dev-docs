@@ -1,7 +1,8 @@
 # init(shape:dataType:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multidimensional array with a shape and type.
 
@@ -20,9 +21,13 @@ Creates a multidimensional array with a shape and type.
 init(shape: [NSNumber], dataType: MLMultiArrayDataType) throws
 ```
 
+```objc
+- (instancetype) initWithShape:(NSArray<NSNumber *> *) shape dataType:(MLMultiArrayDataType) dataType error:(NSError **) error;
+```
+
 #### Discussion
 
-This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) method (Objective-C).
+This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](../../ObjectiveC/nsobject-swift.class/dealloc.md) method (Objective-C).
 
 The following code creates a 3 x 3 multiarray and sets its contents to the value 3.14159.
 
@@ -85,21 +90,22 @@ NSLog(@"After: %@\n", multiarray3x3);
 ## Parameters
 
 - `shape`: An integer array that has an element for each dimension in a multiarray that represents its length.
-- `dataType`: An element type defined by [`MLMultiArrayDataType`](mlmultiarraydatatype.md).
+- `dataType`: An element type defined by [`MLMultiArrayDataType`](../mlmultiarraydatatype.md).
 
 ## See Also
 
-- [convenience(_:)](mlmultiarray/init(_:).md)
+### Creating a multiarray
+- [convenience(_:)](./init%28_%29.md)
   An MLMultiArray constructed with the FixedWidthInteger elements of the collection converted to Int32.
-- [convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])](mlmultiarray/init(shape:datatype:strides:).md)
+- [convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])](./init%28shape,datatype,strides%29.md)
   Creates the object with specified strides.
-- [init(dataPointer: UnsafeMutableRawPointer, shape: [NSNumber], dataType: MLMultiArrayDataType, strides: [NSNumber], deallocator: ((UnsafeMutableRawPointer) -> Void)?) throws](mlmultiarray/init(datapointer:shape:datatype:strides:deallocator:).md)
+- [init(dataPointer: UnsafeMutableRawPointer, shape: [NSNumber], dataType: MLMultiArrayDataType, strides: [NSNumber], deallocator: ((UnsafeMutableRawPointer) -> Void)?) throws](./init%28datapointer,shape,datatype,strides,deallocator%29.md)
   Creates a multiarray from a data pointer.
-- [convenience init(byConcatenatingMultiArrays: [MLMultiArray], alongAxis: Int, dataType: MLMultiArrayDataType)](mlmultiarray/init(byconcatenatingmultiarrays:alongaxis:datatype:).md)
+- [convenience init(byConcatenatingMultiArrays: [MLMultiArray], alongAxis: Int, dataType: MLMultiArrayDataType)](./init%28byconcatenatingmultiarrays,alongaxis,datatype%29.md)
   Merges an array of multiarrays into one multiarray along an axis.
-- [init(pixelBuffer: CVPixelBuffer, shape: [NSNumber])](mlmultiarray/init(pixelbuffer:shape:).md)
+- [init(pixelBuffer: CVPixelBuffer, shape: [NSNumber])](./init%28pixelbuffer,shape%29.md)
   Creates a multiarray sharing the surface of a pixel buffer.
-- [enum MLMultiArrayDataType](mlmultiarraydatatype.md)
+- [enum MLMultiArrayDataType](../mlmultiarraydatatype.md)
   Constants that define the underlying element types a multiarray can store.
 
 

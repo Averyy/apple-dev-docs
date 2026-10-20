@@ -1,7 +1,8 @@
 # FoveatedStreamingProviderMessageChannel
 
 **Framework**: Foveated Streaming  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A message channel between the host app and a streaming provider extension.
 
@@ -17,36 +18,36 @@ final class FoveatedStreamingProviderMessageChannel
 
 #### Overview
 
-Message channels are created by the framework when the host app opens a channel and delivered to the extension via [`openMessageChannel(_:)`](foveatedstreamingextension/openmessagechannel(_:).md). Provider extensions do not construct values of this type directly.
+Message channels are created by the framework when the host app opens a channel and delivered to the extension via [`openMessageChannel(_:)`](./foveatedstreamingextension/openmessagechannel%28_%29.md). Provider extensions do not construct values of this type directly.
 
 A channel unifies both directions of message flow:
 
-- Messages the host app sends to the extension arrive on [`receivedMessages`](foveatedstreamingprovidermessagechannel/receivedmessages.md).
-- Data the extension receives from the streaming endpoint is delivered to the host app via [`send(_:)`](foveatedstreamingprovidermessagechannel/send(_:).md).
+- Messages the host app sends to the extension arrive on [`receivedMessages`](./foveatedstreamingprovidermessagechannel/receivedmessages.md).
+- Data the extension receives from the streaming endpoint is delivered to the host app via [`send(_:)`](./foveatedstreamingprovidermessagechannel/send%28_%29.md).
 
 ## Topics
 
 ### Instance Properties
-- [var channelStatus: FoveatedStreamingSession.MessageChannel.ChannelStatus](foveatedstreamingprovidermessagechannel/channelstatus.md)
+- [var channelStatus: FoveatedStreamingSession.MessageChannel.ChannelStatus](./foveatedstreamingprovidermessagechannel/channelstatus.md)
   The current status of this channel.
-- [let id: FoveatedStreamingSession.MessageChannel.ID](foveatedstreamingprovidermessagechannel/id.md)
+- [let id: FoveatedStreamingSession.MessageChannel.ID](./foveatedstreamingprovidermessagechannel/id.md)
   The identifier of this channel.
-- [var receivedMessages: some AsyncSequence<Data, Never>](foveatedstreamingprovidermessagechannel/receivedmessages.md)
+- [var receivedMessages: some AsyncSequence<Data, Never>](./foveatedstreamingprovidermessagechannel/receivedmessages.md)
   The messages the host app has sent to the extension.
 ### Instance Methods
-- [func close()](foveatedstreamingprovidermessagechannel/close.md)
-  Closes the channel and finishes [`receivedMessages`](foveatedstreamingprovidermessagechannel/receivedmessages.md).
-- [func send(Data)](foveatedstreamingprovidermessagechannel/send(_:).md)
+- [func close()](./foveatedstreamingprovidermessagechannel/close%28%29.md)
+  Closes the channel and finishes [`receivedMessages`](./foveatedstreamingprovidermessagechannel/receivedmessages.md).
+- [func send(Data)](./foveatedstreamingprovidermessagechannel/send%28_%29.md)
   Sends data received from the streaming endpoint to the host app.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # supportedJointNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joint names the request supports.
 
@@ -21,7 +22,8 @@ final var supportedJointNames: [HumanBodyPose3DObservation.JointName] { get }
 
 ## See Also
 
-- [var supportedJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](detecthumanbodypose3drequest/supportedjointsgroupnames.md)
+### Configuring a request
+- [var supportedJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](./supportedjointsgroupnames.md)
   The joint group names the request supports.
 
 

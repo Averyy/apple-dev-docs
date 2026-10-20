@@ -1,7 +1,8 @@
 # NEAppPushErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain string for local push errors.
 
@@ -17,11 +18,16 @@ The error domain string for local push errors.
 let NEAppPushErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NEAppPushErrorDomain;
+```
+
 ## See Also
 
-- [struct NEAppPushManagerError](neapppushmanagererror-swift.struct.md)
+### Handling errors
+- [struct NEAppPushManagerError](./neapppushmanagererror-swift.struct.md)
   An error that the push manager encounters.
-- [NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/code.md)
+- [NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/code.md)
   Error codes that the local push API declares.
 
 

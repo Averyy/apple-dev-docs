@@ -1,7 +1,8 @@
 # kIOMainPortDefault
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 15.0+
@@ -14,6 +15,10 @@
 
 ```swift
 let kIOMainPortDefault: mach_port_t
+```
+
+```c
+const mach_port_t kIOMainPortDefault;
 ```
 
 

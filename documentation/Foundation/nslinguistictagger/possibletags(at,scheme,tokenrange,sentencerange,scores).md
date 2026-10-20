@@ -1,23 +1,30 @@
 # possibleTags(at:scheme:tokenRange:sentenceRange:scores:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of possible tags for the given scheme at the specified range, supplying matching scores.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 27.2
+- iPadOS 5.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.7+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: All NSLinguisticTagger API should be replaced with NaturalLanguage.framework API
 
 ## Declaration
 
 ```swift
 func possibleTags(at charIndex: Int, scheme tagScheme: String, tokenRange: NSRangePointer?, sentenceRange: NSRangePointer?, scores: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) possibleTagsAtIndex:(NSUInteger) charIndex scheme:(NSString *) tagScheme tokenRange:(NSRangePointer) tokenRange sentenceRange:(NSRangePointer) sentenceRange scores:(NSArray<NSValue *> **) scores;
 ```
 
 #### Return Value
@@ -31,7 +38,7 @@ Calling this method is not recommended; for most use cases, this information is 
 ## Parameters
 
 - `charIndex`: The position of the initial character.
-- `tagScheme`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
+- `tagScheme`: The tag scheme. See [`NSLinguisticTagScheme`](../nslinguistictagscheme.md) for possible values.
 - `tokenRange`: The token range.
 - `sentenceRange`: The range of the sentence.
 - `scores`: Returns by reference an array of numeric scores indicating the likelihood that the range matches the tag scheme.

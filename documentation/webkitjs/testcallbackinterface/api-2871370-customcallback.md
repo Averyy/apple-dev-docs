@@ -1,14 +1,15 @@
 # customCallback
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 long customCallback(
     Class5 class5Param, 
     Class6 class6Param

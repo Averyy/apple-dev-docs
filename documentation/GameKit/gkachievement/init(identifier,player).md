@@ -1,7 +1,8 @@
 # init(identifier:player:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an achievement for a player.
 
@@ -20,9 +21,13 @@ Initializes an achievement for a player.
 init(identifier: String, player: GKPlayer)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier player:(GKPlayer *) player;
+```
+
 ## Mentions
 
-- [Rewarding players with achievements](rewarding-players-with-achievements.md)
+- [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ An achievement for a player, or `nil` if an error occurs.
 
 #### Discussion
 
-Before creating an achievement, use the [`loadAchievements(completionHandler:)`](gkachievement/loadachievements(completionhandler:).md) method to load the achievements that are in progress. If the achievement you want to report progress on isn’t in the array that GameKit passes to the handler, use this method to initialize the achievement, but only when reporting progress for a participant at the end of a turn-based match. Otherwise, use the [`init(identifier:)`](gkachievement/init(identifier:).md) method to initialize the achievement.
+Before creating an achievement, use the [`loadAchievements(completionHandler:)`](./loadachievements%28completionhandler%29.md) method to load the achievements that are in progress. If the achievement you want to report progress on isn’t in the array that GameKit passes to the handler, use this method to initialize the achievement, but only when reporting progress for a participant at the end of a turn-based match. Otherwise, use the [`init(identifier:)`](./init%28identifier%29.md) method to initialize the achievement.
 
 ## Parameters
 
@@ -39,9 +44,10 @@ Before creating an achievement, use the [`loadAchievements(completionHandler:)`]
 
 ## See Also
 
-- [class func loadAchievements(completionHandler: (([GKAchievement]?, (any Error)?) -> Void)?)](gkachievement/loadachievements(completionhandler:).md)
+### Loading and Initializing Achievements
+- [class func loadAchievements(completionHandler: (([GKAchievement]?, (any Error)?) -> Void)?)](./loadachievements%28completionhandler%29.md)
   Loads the achievements that you previously reported the player making progress toward.
-- [init(identifier: String)](gkachievement/init(identifier:).md)
+- [init(identifier: String)](./init%28identifier%29.md)
   Initializes an achievement for the local player.
 
 

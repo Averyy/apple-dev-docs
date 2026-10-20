@@ -1,7 +1,8 @@
 # relativeVolume
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var relativeVolume: Double { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) double relativeVolume;
 ```
 
 #### Discussion

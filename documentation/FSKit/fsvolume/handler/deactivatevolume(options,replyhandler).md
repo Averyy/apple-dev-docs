@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tears down a previously initialized volume instance.
@@ -12,7 +13,15 @@ Tears down a previously initialized volume instance.
 ## Declaration
 
 ```swift
+func deactivateVolume(options: FSDeactivateOptions = [], replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func deactivateVolume(options: FSDeactivateOptions = []) async throws
+```
+
+```objc
+- (void) deactivateVolumeWithOptions:(FSDeactivateOptions) options replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 #### Discussion
@@ -21,7 +30,7 @@ Set up your implementation to release any resources allocated for the volume ins
 
 Avoid performing any I/O in this method. Prior to calling this method, FSKit has already issued a sync call to perform any cleanup-related I/O.
 
-FSKit unmounts any mounted volume with a call to [`unmount(replyHandler:)`](fsvolume/handler/unmount(replyhandler:).md) prior to the deactivate callback.
+FSKit unmounts any mounted volume with a call to [`unmount(replyHandler:)`](./unmount%28replyhandler%29.md) prior to the deactivate callback.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # kAEFinderEvents
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An event that the Finder accepts.
 

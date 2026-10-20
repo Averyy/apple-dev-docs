@@ -1,7 +1,8 @@
 # AVMetricPlayerItemSeekDidCompleteEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents when the playback seek completes.
 
@@ -20,34 +21,39 @@ An event that represents when the playback seek completes.
 class AVMetricPlayerItemSeekDidCompleteEvent
 ```
 
+```objc
+@interface AVMetricPlayerItemSeekDidCompleteEvent : AVMetricPlayerItemRateChangeEvent
+```
+
 ## Topics
 
 ### Inspecting the event
-- [var didSeekInBuffer: Bool](avmetricplayeritemseekdidcompleteevent/didseekinbuffer.md)
+- [var didSeekInBuffer: Bool](./avmetricplayeritemseekdidcompleteevent/didseekinbuffer.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricPlayerItemRateChangeEvent](avmetricplayeritemratechangeevent.md)
+- [AVMetricPlayerItemRateChangeEvent](./avmetricplayeritemratechangeevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+### Transport control
+- [class AVMetricPlayerItemPlaybackSummaryEvent](./avmetricplayeritemplaybacksummaryevent.md)
   An event that represents the combined metrics for the entire playback session.
-- [class AVMetricPlayerItemRateChangeEvent](avmetricplayeritemratechangeevent.md)
+- [class AVMetricPlayerItemRateChangeEvent](./avmetricplayeritemratechangeevent.md)
   An event that represents when the playback rate changes.
-- [class AVMetricPlayerItemSeekEvent](avmetricplayeritemseekevent.md)
+- [class AVMetricPlayerItemSeekEvent](./avmetricplayeritemseekevent.md)
   An event that represents when a playback seek occurs.
 
 

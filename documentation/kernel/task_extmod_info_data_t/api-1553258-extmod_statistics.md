@@ -1,14 +1,15 @@
 # extmod_statistics
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 vm_extmod_statistics_data_t extmod_statistics;
 ```
 

@@ -1,7 +1,8 @@
 # TranslationSession
 
 **Framework**: Translation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that performs translations between a pair of languages.
 
@@ -19,9 +20,9 @@ class TranslationSession
 
 #### Overview
 
-This class provides a flexible way for you to translate one or more lines of text at a time. There are two ways in which you can initialize a `TranslationSession`. One way you can obtain an instance of this class is by adding a `.translationTask()` to a SwiftUI view within your app. You can either add a [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) or a [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:)) function to the SwiftUI view containing the content you want to translate, like a [`Text`](https://developer.apple.com/documentation/swiftui/text) view. After adding the task, the function passes you an instance of a translation session in its `action` closure. With this instance, you can use one or more of the translate functions to translate a single string or multiple strings of text.
+This class provides a flexible way for you to translate one or more lines of text at a time. There are two ways in which you can initialize a `TranslationSession`. One way you can obtain an instance of this class is by adding a `.translationTask()` to a SwiftUI view within your app. You can either add a [`translationTask(_:action:)`](../SwiftUI/view/translationtask%28_,action%29.md) or a [`translationTask(source:target:action:)`](../SwiftUI/view/translationtask%28source,target,action%29.md) function to the SwiftUI view containing the content you want to translate, like a [`Text`](../SwiftUI/text.md) view. After adding the task, the function passes you an instance of a translation session in its `action` closure. With this instance, you can use one or more of the translate functions to translate a single string or multiple strings of text.
 
-Another way for contexts where there’s no UI, you can directly initialize the TranslationSession using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md) to translate between languages. This initializer requires that you specify which source language you use and throws an error if the languages aren’t already installed on the person’s device.
+Another way for contexts where there’s no UI, you can directly initialize the TranslationSession using [`init(installedSource:target:)`](./translationsession/init%28installedsource,target%29.md) to translate between languages. This initializer requires that you specify which source language you use and throws an error if the languages aren’t already installed on the person’s device.
 
 The following example demonstrates how to translate a single string of text within a SwiftUI view:
 
@@ -55,60 +56,61 @@ struct TranslationExample: View {
 ## Topics
 
 ### Initalizing a translation session
-- [convenience init(installedSource: Locale.Language, target: Locale.Language?)](translationsession/init(installedsource:target:).md)
+- [convenience init(installedSource: Locale.Language, target: Locale.Language?)](./translationsession/init%28installedsource,target%29.md)
   Creates a translation session to translate between a given source and target language already installed on device.
-- [convenience init(installedSource: Locale.Language, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/init(installedsource:target:preferredstrategy:).md)
+- [convenience init(installedSource: Locale.Language, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](./translationsession/init%28installedsource,target,preferredstrategy%29.md)
   Creates a translation session to translate between a given source and target language already installed on device.
 ### Preparing for translation
-- [TranslationSession.Configuration](translationsession/configuration.md)
+- [TranslationSession.Configuration](./translationsession/configuration.md)
   A type containing the information to use when performing a translation.
-- [func prepareTranslation() async throws](translationsession/preparetranslation.md)
+- [func prepareTranslation() async throws](./translationsession/preparetranslation%28%29.md)
   Asks for permission to download translation languages without doing any translations.
 ### Getting the language configuration
-- [let sourceLanguage: Locale.Language?](translationsession/sourcelanguage.md)
+- [let sourceLanguage: Locale.Language?](./translationsession/sourcelanguage.md)
   The input language to translate from.
-- [let targetLanguage: Locale.Language?](translationsession/targetlanguage.md)
+- [let targetLanguage: Locale.Language?](./translationsession/targetlanguage.md)
   The output language to translate into.
 ### Translating the text
-- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+- [func translate(AttributedString) async throws -> TranslationSession.Response](./translationsession/translate%28_%29-59zi2.md)
   Translates a formatted string of text, preserving formatting in the translation.
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
+- [func translate(String) async throws -> TranslationSession.Response](./translationsession/translate%28_%29-4m20l.md)
   Translates a single string of text.
-- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
+- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](./translationsession/translate%28batch%29.md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.
-- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](translationsession/translations(from:).md)
+- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](./translationsession/translations%28from%29.md)
   Translates multiple strings of text of the same language, returning the results all at once when complete.
-- [TranslationSession.Request](translationsession/request.md)
+- [TranslationSession.Request](./translationsession/request.md)
   A translation request containing a single item of text to translate.
-- [TranslationSession.Response](translationsession/response.md)
+- [TranslationSession.Response](./translationsession/response.md)
   The response to a translation request.
-- [TranslationSession.BatchResponse](translationsession/batchresponse.md)
+- [TranslationSession.BatchResponse](./translationsession/batchresponse.md)
   A type that provides asynchronous access to translation responses.
 ### Accessing the session properties
-- [var canRequestDownloads: Bool](translationsession/canrequestdownloads.md)
+- [var canRequestDownloads: Bool](./translationsession/canrequestdownloads.md)
   A boolean value that indicates whether a translation session can request language downloads.
-- [var isReady: Bool](translationsession/isready.md)
+- [var isReady: Bool](./translationsession/isready.md)
   A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
-- [var preferredStrategy: TranslationSession.Strategy](translationsession/preferredstrategy.md)
+- [var preferredStrategy: TranslationSession.Strategy](./translationsession/preferredstrategy.md)
   The preferred translation strategy configured for the session.
 ### Canceling a translation session
-- [func cancel()](translationsession/cancel.md)
+- [func cancel()](./translationsession/cancel%28%29.md)
   Attempts to stop all ongoing work for the translation session.
 ### Configuring translation strategy
-- [TranslationSession.Strategy](translationsession/strategy.md)
+- [TranslationSession.Strategy](./translationsession/strategy.md)
   The preferred model to handle translations in your app.
 
 ## See Also
 
-- [Translating text within your app](translating-text-within-your-app.md)
+### Essentials
+- [Translating text within your app](./translating-text-within-your-app.md)
   Display simple system translations and create custom translation experiences.
-- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View\n](../swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View\n](../SwiftUI/view/translationpresentation%28ispresented,text,attachmentanchor,arrowedge,replacementaction%29.md)
   Presents a translation popover when a given condition is true.
 - [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View
-](../swiftui/view/translationtask(_:action:).md)
+](../SwiftUI/view/translationtask%28_,action%29.md)
   Adds a task to perform before this view appears or when the translation configuration changes.
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View
-](../swiftui/view/translationtask(source:target:action:).md)
+](../SwiftUI/view/translationtask%28source,target,action%29.md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
 
 

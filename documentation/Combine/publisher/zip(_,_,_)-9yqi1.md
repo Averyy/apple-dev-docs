@@ -1,7 +1,8 @@
 # zip(_:_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines elements from two other publishers and delivers a transformed output.
 
@@ -26,9 +27,9 @@ A publisher that uses the `transform` closure to emit new elements, produced by 
 
 #### Discussion
 
-Use [`zip(_:_:_:)`](publisher/zip(_:_:_:)-9yqi1.md) to return a new publisher that combines the elements from two other publishers using a transformation you specify to publish a new value to the downstream subscriber. The returned publisher waits until all three publishers have emitted an event, then delivers the oldest unconsumed event from each publisher together that the operator uses in the transformation.
+Use [`zip(_:_:_:)`](./zip%28_,_,_%29-9yqi1.md) to return a new publisher that combines the elements from two other publishers using a transformation you specify to publish a new value to the downstream subscriber. The returned publisher waits until all three publishers have emitted an event, then delivers the oldest unconsumed event from each publisher together that the operator uses in the transformation.
 
-In this example, `numbersPub`, `lettersPub` and `emojiPub` are each a [`PassthroughSubject`](passthroughsubject.md) that emit values; [`zip(_:_:_:)`](publisher/zip(_:_:_:)-9yqi1.md) receives the oldest value from each publisher and uses the `Int` from `numbersPub` and publishes a string that repeats the [`String`](https://developer.apple.com/documentation/swift/string) from `lettersPub` and `emojiPub` that many times.
+In this example, `numbersPub`, `lettersPub` and `emojiPub` are each a [`PassthroughSubject`](../passthroughsubject.md) that emit values; [`zip(_:_:_:)`](./zip%28_,_,_%29-9yqi1.md) receives the oldest value from each publisher and uses the `Int` from `numbersPub` and publishes a string that repeats the [`String`](../../Swift/string.md) from `lettersPub` and `emojiPub` that many times.
 
 ```swift
 let numbersPub = PassthroughSubject<Int, Never>()
@@ -64,15 +65,16 @@ If any upstream publisher finishes successfully or fails with an error, so too d
 
 ## See Also
 
-- [func zip<P>(P) -> Publishers.Zip<Self, P>](publisher/zip(_:).md)
+### Collecting and republishing the oldest unconsumed elements from multiple publishers
+- [func zip<P>(P) -> Publishers.Zip<Self, P>](./zip%28_%29.md)
   Combines elements from another publisher and deliver pairs of elements as tuples.
-- [func zip<P, T>(P, (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.Zip<Self, P>, T>](publisher/zip(_:_:)-4xn21.md)
+- [func zip<P, T>(P, (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.Zip<Self, P>, T>](./zip%28_,_%29-4xn21.md)
   Combines elements from another publisher and delivers a transformed output.
-- [func zip<P, Q>(P, Q) -> Publishers.Zip3<Self, P, Q>](publisher/zip(_:_:)-8d7k7.md)
+- [func zip<P, Q>(P, Q) -> Publishers.Zip3<Self, P, Q>](./zip%28_,_%29-8d7k7.md)
   Combines elements from two other publishers and delivers groups of elements as tuples.
-- [func zip<P, Q, R>(P, Q, R) -> Publishers.Zip4<Self, P, Q, R>](publisher/zip(_:_:_:)-16rcy.md)
+- [func zip<P, Q, R>(P, Q, R) -> Publishers.Zip4<Self, P, Q, R>](./zip%28_,_,_%29-16rcy.md)
   Combines elements from three other publishers and delivers groups of elements as tuples.
-- [func zip<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.Zip4<Self, P, Q, R>, T>](publisher/zip(_:_:_:_:).md)
+- [func zip<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.Zip4<Self, P, Q, R>, T>](./zip%28_,_,_,_%29.md)
   Combines elements from three other publishers and delivers a transformed output.
 
 

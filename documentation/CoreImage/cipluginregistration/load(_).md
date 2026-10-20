@@ -2,17 +2,22 @@
 
 **Framework**: Core Image  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Loads and initializes an image unit, performing custom tasks as needed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func load(_ host: UnsafeMutableRawPointer!) -> Bool
+```
+
+```objc
+- (BOOL) load:(void *) host;
 ```
 
 #### Return Value
@@ -29,8 +34,9 @@ The `load` method is called once by the host to initialize the image unit when t
 
 ## See Also
 
-- [Core Image Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
-- [Image Unit Tutorial](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
+### Related Documentation
+- [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+- [Image Unit Tutorial](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
 
 
 ---

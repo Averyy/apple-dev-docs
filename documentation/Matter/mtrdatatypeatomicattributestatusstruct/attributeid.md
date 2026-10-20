@@ -1,7 +1,8 @@
 # attributeID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var attributeID: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * attributeID;
 ```
 
 

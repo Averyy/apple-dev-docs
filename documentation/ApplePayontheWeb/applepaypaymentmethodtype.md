@@ -1,7 +1,8 @@
 # ApplePayPaymentMethodType
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A string that represents the type of the payment method.
 
@@ -11,7 +12,7 @@ A string that represents the type of the payment method.
 
 ## Declaration
 
-```swift
+```
 enum ApplePayPaymentMethodType
 ```
 
@@ -30,14 +31,15 @@ The payment method type can be one of the following string values:
 ## Topics
 
 ### Enumeration Cases
-- [credit](applepaypaymentmethodtype/credit.md)
-- [debit](applepaypaymentmethodtype/debit.md)
-- [prepaid](applepaypaymentmethodtype/prepaid.md)
-- [store](applepaypaymentmethodtype/store.md)
+- [credit](./applepaypaymentmethodtype/credit.md)
+- [debit](./applepaypaymentmethodtype/debit.md)
+- [prepaid](./applepaypaymentmethodtype/prepaid.md)
+- [store](./applepaypaymentmethodtype/store.md)
 
 ## See Also
 
-- [paymentMethodType](applepaymodifier/paymentmethodtype.md)
+### Payment method type
+- [paymentMethodType](./applepaymodifier/paymentmethodtype.md)
   The type of card the customer uses to complete the transaction.
 
 

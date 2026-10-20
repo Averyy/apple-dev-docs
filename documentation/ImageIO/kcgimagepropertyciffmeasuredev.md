@@ -1,7 +1,8 @@
 # kCGImagePropertyCIFFMeasuredEV
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The measured exposure value.
 
@@ -20,13 +21,18 @@ The measured exposure value.
 let kCGImagePropertyCIFFMeasuredEV: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyCIFFMeasuredEV;
+```
+
 ## See Also
 
-- [let kCGImagePropertyCIFFWhiteBalanceIndex: CFString](kcgimagepropertyciffwhitebalanceindex.md)
+### Exposure
+- [let kCGImagePropertyCIFFWhiteBalanceIndex: CFString](./kcgimagepropertyciffwhitebalanceindex.md)
   The white balance index.
-- [let kCGImagePropertyCIFFFlashExposureComp: CFString](kcgimagepropertyciffflashexposurecomp.md)
+- [let kCGImagePropertyCIFFFlashExposureComp: CFString](./kcgimagepropertyciffflashexposurecomp.md)
   The flash exposure compensation.
-- [let kCGImagePropertyCIFFMeteringMode: CFString](kcgimagepropertyciffmeteringmode.md)
+- [let kCGImagePropertyCIFFMeteringMode: CFString](./kcgimagepropertyciffmeteringmode.md)
   The metering mode.
 
 

@@ -1,7 +1,8 @@
 # isCapturing
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Metal commands are being captured.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether Metal commands are being captured.
 
 ```swift
 var isCapturing: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL isCapturing;
 ```
 
 

@@ -1,7 +1,8 @@
 # addRoom(withName:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new room with the specified name.
 
@@ -14,24 +15,35 @@ Creates a new room with the specified name.
 ## Declaration
 
 ```swift
+func addRoom(withName roomName: String, completionHandler completion: @escaping @Sendable (HMRoom?, (any Error)?) -> Void)
+```
+
+```swift
 func addRoom(named roomName: String) async throws -> HMRoom
+```
+
+```objc
+- (void) addRoomWithName:(NSString *) roomName completionHandler:(void (^)(HMRoom *room, NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `roomName`: The name of the new room. Must not be `nil`, and must not be the name of a room already in the home.
-- `completion`: The block executed after the request is processed. - **room**: The newly created room.
-- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **room**: The newly created room.
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var rooms: [HMRoom]](hmhome/rooms.md)
+### Dividing a house into rooms
+- [var rooms: [HMRoom]](./rooms.md)
   An array of the rooms created and managed by the user.
-- [func roomForEntireHome() -> HMRoom](hmhome/roomforentirehome.md)
+- [func roomForEntireHome() -> HMRoom](./roomforentirehome%28%29.md)
   A room that represents all parts of the home that don’t have a more specific room to represent them.
-- [func removeRoom(HMRoom, completionHandler: ((any Error)?) -> Void)](hmhome/removeroom(_:completionhandler:).md)
+- [func removeRoom(HMRoom, completionHandler: ((any Error)?) -> Void)](./removeroom%28_,completionhandler%29.md)
   Removes a room from the home.
-- [class HMRoom](hmroom.md)
+- [class HMRoom](../hmroom.md)
   The smallest subdivision of a home’s space.
 
 

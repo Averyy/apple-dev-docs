@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that instructs the GPU to update a fence, which signals passes waiting on the fence.
 
@@ -15,23 +16,36 @@ Encodes a command that instructs the GPU to update a fence, which signals passes
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func update(_ fence: any MTLFence)
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional func update(_ fence: any MTLFence)
+```
+
+```objc
+- (void) updateFence:(id<MTLFence>) fence;
 ```
 
 #### Discussion
 
 Fences maintain order to prevent GPU data hazards as the GPU runs various passes within the same command queue. This encoded command notifies any passes waiting for `fence`.
 
-The GPU driver evaluates the fences that apply to the pass and the commands that depend on those fences when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
+The GPU driver evaluates the fences that apply to the pass and the commands that depend on those fences when your app commits the enclosing [`MTLCommandBuffer`](../mtlcommandbuffer.md).
 
 ## Parameters
 
-- `fence`: An [`MTLFence`](mtlfence.md) instance to update.
+- `fence`: An [`MTLFence`](../mtlfence.md) instance to update.
 
 ## See Also
 
-- [func wait(for: any MTLFence)](mtlresourcestatecommandencoder/wait(for:).md)
+### Performing fence operations
+- [func wait(for: any MTLFence)](./wait%28for%29.md)
   Encodes a command that instructs the GPU to pause before starting the resource state commands until another pass updates a fence.
 
 

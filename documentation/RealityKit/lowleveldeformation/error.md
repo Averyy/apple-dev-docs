@@ -1,7 +1,8 @@
 # LowLevelDeformation.Error
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The error type thrown by every throwing method and initializer.
 
@@ -20,16 +21,17 @@ struct Error
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func encode(into: any MTLComputeCommandEncoder) throws](lowleveldeformation/encode(into:).md)
+### Encoding deformation work
+- [func encode(into: any MTLComputeCommandEncoder) throws](./encode%28into%29.md)
   Encodes the configured deformation passes into the given command encoder.
-- [LowLevelDeformation.Pipeline](lowleveldeformation/pipeline.md)
+- [LowLevelDeformation.Pipeline](./pipeline.md)
   A compiled compute pipeline for a specific combination of mesh layouts and deformer stages.
 
 

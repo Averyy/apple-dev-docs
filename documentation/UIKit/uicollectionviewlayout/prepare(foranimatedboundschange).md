@@ -1,21 +1,26 @@
 # prepare(forAnimatedBoundsChange:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the layout object for animated changes to the view’s bounds or the insertion or deletion of items.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func prepare(forAnimatedBoundsChange oldBounds: CGRect)
+```
+
+```objc
+- (void) prepareForAnimatedBoundsChange:(CGRect) oldBounds;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ You can also use this method to perform additional animations. Any animations yo
 
 ## See Also
 
-- [func finalizeAnimatedBoundsChange()](uicollectionviewlayout/finalizeanimatedboundschange.md)
+### Coordinating animated changes
+- [func finalizeAnimatedBoundsChange()](./finalizeanimatedboundschange%28%29.md)
   Cleans up after any animated changes to the view’s bounds or after the insertion or deletion of items.
 
 

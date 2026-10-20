@@ -1,7 +1,8 @@
 # SecRequirementType.libraryRequirementType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 What libraries this code may link against.
 
@@ -13,6 +14,10 @@ What libraries this code may link against.
 
 ```swift
 case libraryRequirementType
+```
+
+```c
+kSecLibraryRequirementType
 ```
 
 

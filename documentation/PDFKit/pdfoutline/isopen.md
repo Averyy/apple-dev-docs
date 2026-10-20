@@ -1,7 +1,8 @@
 # isOpen
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether the outline object is initially disclosed.
 
@@ -19,9 +20,13 @@ Returns a Boolean value that indicates whether the outline object is initially d
 var isOpen: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL isOpen;
+```
+
 #### Discussion
 
-Calling `isOpen` on an outline object that has no children always returns [`false`](https://developer.apple.com/documentation/swift/false). Calling `isOpen` on the root outline object always returns [`true`](https://developer.apple.com/documentation/swift/true).
+Calling `isOpen` on an outline object that has no children always returns [`false`](../../Swift/false.md). Calling `isOpen` on the root outline object always returns [`true`](../../Swift/true.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # forRemovedItems
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to process deactivation for open-unlinked items at the moment of last close.
 
@@ -14,11 +15,16 @@ An option to process deactivation for open-unlinked items at the moment of last 
 static var forRemovedItems: FSVolume.ItemDeactivationOptions { get }
 ```
 
+```c
+FSItemDeactivationForRemovedItems
+```
+
 ## See Also
 
-- [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/forpreallocateditems.md)
+### Declaring deactivation options
+- [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](./forpreallocateditems.md)
   An option to process deactivation for for files with preallocated space.
-- [static var always: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/always.md)
+- [static var always: FSVolume.ItemDeactivationOptions](./always.md)
   An option to always perform deactivation calls.
 
 

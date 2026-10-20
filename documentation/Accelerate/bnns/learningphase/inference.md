@@ -1,7 +1,8 @@
 # BNNS.LearningPhase.inference
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The layer apply context is inference.
 
@@ -11,8 +12,10 @@ The layer apply context is inference.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ case inference
 
 ## See Also
 
-- [BNNS.LearningPhase.training](bnns/learningphase/training.md)
+### Learning Phases
+- [BNNS.LearningPhase.training](./training.md)
   The layer apply context is training.
 
 

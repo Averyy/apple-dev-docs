@@ -1,7 +1,8 @@
 # retrievePeripherals(withIdentifiers:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of known peripherals by their identifiers.
 
@@ -20,17 +21,22 @@ Returns a list of known peripherals by their identifiers.
 func retrievePeripherals(withIdentifiers identifiers: [UUID]) -> [CBPeripheral]
 ```
 
+```objc
+- (NSArray<CBPeripheral *> *) retrievePeripheralsWithIdentifiers:(NSArray<NSUUID *> *) identifiers;
+```
+
 #### Return Value
 
 A list of peripherals that the central manager is able to match to the provided identifiers.
 
 ## Parameters
 
-- `identifiers`: A list of peripheral identifiers (represented by [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) objects) from which [`CBPeripheral`](cbperipheral.md) objects can be retrieved.
+- `identifiers`: A list of peripheral identifiers (represented by [`NSUUID`](../../Foundation/nsuuid.md) objects) from which [`CBPeripheral`](../cbperipheral.md) objects can be retrieved.
 
 ## See Also
 
-- [func retrieveConnectedPeripherals(withServices: [CBUUID]) -> [CBPeripheral]](cbcentralmanager/retrieveconnectedperipherals(withservices:).md)
+### Retrieving Lists of Peripherals
+- [func retrieveConnectedPeripherals(withServices: [CBUUID]) -> [CBPeripheral]](./retrieveconnectedperipherals%28withservices%29.md)
   Returns a list of the peripherals connected to the system whose services match a given set of criteria.
 
 

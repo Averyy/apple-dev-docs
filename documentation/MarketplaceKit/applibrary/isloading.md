@@ -1,7 +1,8 @@
 # isLoading
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the library is currently loading apps.
 
@@ -18,13 +19,14 @@ final var isLoading: Bool { get }
 
 ## See Also
 
-- [AppLibrary.App](applibrary/app.md)
+### Installing apps as a marketplace
+- [AppLibrary.App](./app.md)
   Information about an app that someone installs from a marketplace, including its ID and installation status.
-- [AppLibrary.InstallationRequest](applibrary/installationrequest.md)
+- [AppLibrary.InstallationRequest](./installationrequest.md)
   A request to install an app distribution package for a given account.
-- [var installingApps: Set<AppLibrary.App>](applibrary/installingapps.md)
+- [var installingApps: Set<AppLibrary.App>](./installingapps.md)
   The set of apps that are pending installation completion.
-- [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](applibrary/requestappinstallation(_:).md)
+- [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](./requestappinstallation%28_%29.md)
   Requests the installation of the given app distribution package for the given account.
 
 

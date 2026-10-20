@@ -1,18 +1,21 @@
 # BNNSFilterCreateLayerPermute(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new permute layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns a new permute layer.
 func BNNSFilterCreateLayerPermute(_ layer_params: UnsafePointer<BNNSLayerParametersPermute>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateLayerPermute(const BNNSLayerParametersPermute *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use a permute layer to copy one tensor to another while permuting the order of the axes. For example, given a [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md) tensor containing the following values:
+Use a permute layer to copy one tensor to another while permuting the order of the axes. For example, given a [`BNNSDataLayoutImageCHW`](./bnnsdatalayoutimagechw.md) tensor containing the following values:
 
 ```swift
 let sourceData: [Int8] = [ 1,  2,
@@ -68,7 +75,7 @@ On return, `destinationData` contains `[1, 10, 3, 30, 2, 20, 4, 40]`.
 
 The following figure shows the source data on the left, and the permute result on the right:
 
-![Figure that shows a three dimensional tensor before and after permutation. The original tensor is shown on the left, with axis zero running left to right, axis one running top to bottom, and axis two running front to back. The permuted tensor is shown on the right, with axis zero running front to back, axis one running top to bottom, and axis two running left to right.](/images/com.apple.accelerate/media-3633102@2x.png)
+![Figure that shows a three dimensional tensor before and after permutation. The original tensor is shown on the left, with axis zero running left to right, axis one running top to bottom, and axis two running front to back. The permuted tensor is shown on the right, with axis zero running front to back, axis one running top to bottom, and axis two running left to right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3633102@2x.png)
 
 ## Parameters
 
@@ -77,11 +84,12 @@ The following figure shows the source data on the left, and the permute result o
 
 ## See Also
 
-- [class PermuteLayer](bnns/permutelayer.md)
+### Permute layers
+- [class PermuteLayer](./bnns/permutelayer.md)
   A layer object that wraps a permute filter and manages its deinitialization.
-- [struct BNNSLayerParametersPermute](bnnslayerparameterspermute.md)
+- [struct BNNSLayerParametersPermute](./bnnslayerparameterspermute.md)
   A structure that contains the parameters of a permute layer.
-- [func BNNSPermuteFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int) -> Int32](bnnspermutefilterapplybackwardbatch(_:_:_:_:_:_:).md)
+- [func BNNSPermuteFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int) -> Int32](./bnnspermutefilterapplybackwardbatch%28_,_,_,_,_,_%29.md)
   Applies a permute filter backward to generate gradients.
 
 

@@ -1,7 +1,8 @@
 # activate(delegate:)
 
 **Framework**: Core HID  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activate a newly created virtual device to begin receiving notifications and enable functionality.
 
@@ -16,17 +17,18 @@ func activate(delegate: any HIDVirtualDeviceDelegate)
 
 #### Discussion
 
-Many functions won’t run, and notifications won’t be received using the [`HIDVirtualDeviceDelegate`](hidvirtualdevicedelegate.md) until activate has run successfully. A device cannot be activated twice.
+Many functions won’t run, and notifications won’t be received using the [`HIDVirtualDeviceDelegate`](../hidvirtualdevicedelegate.md) until activate has run successfully. A device cannot be activated twice.
 
 ## Parameters
 
-- `delegate`: The [`HIDVirtualDeviceDelegate`](hidvirtualdevicedelegate.md) that receives incoming set/get report requests. Only one delegate is associated with the device, but many devices can be associated with the delegate.
+- `delegate`: The [`HIDVirtualDeviceDelegate`](../hidvirtualdevicedelegate.md) that receives incoming set/get report requests. Only one delegate is associated with the device, but many devices can be associated with the delegate.
 
 ## See Also
 
-- [init?(properties: HIDVirtualDevice.Properties)](hidvirtualdevice/init(properties:).md)
+### Create a HID virtual device
+- [init?(properties: HIDVirtualDevice.Properties)](./init%28properties%29.md)
   Creates a virtual HID device.
-- [let deviceReference: HIDDeviceClient.DeviceReference](hidvirtualdevice/devicereference.md)
+- [let deviceReference: HIDDeviceClient.DeviceReference](./devicereference.md)
   The reference to the virtual HID device.
 
 

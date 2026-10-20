@@ -1,7 +1,8 @@
 # plannedDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The planned duration of the event.
 
@@ -20,19 +21,24 @@ The planned duration of the event.
 var plannedDuration: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CMTime plannedDuration;
+```
+
 #### Discussion
 
-The default value is [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
+The default value is [`zero`](../../CoreMedia/cmtime/zero.md).
 
 ## See Also
 
-- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.property.md)
+### Inspecting timeline occupancy
+- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](./timelineoccupancy-swift.property.md)
   An event’s occupancy on the integrated timeline.
-- [AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.enum.md)
+- [AVPlayerInterstitialEvent.TimelineOccupancy](./timelineoccupancy-swift.enum.md)
   Constants that specify how an event occupies time on an integrated timeline.
-- [var supplementsPrimaryContent: Bool](avplayerinterstitialevent/supplementsprimarycontent.md)
+- [var supplementsPrimaryContent: Bool](./supplementsprimarycontent.md)
   A Boolean value that indicates whether an event supplements the primary content and should present with the primary item.
-- [var contentMayVary: Bool](avplayerinterstitialevent/contentmayvary.md)
+- [var contentMayVary: Bool](./contentmayvary.md)
   A Boolean value that indicates whether an event’s content is dynamic and the server may respond with different interstitial assets for other participants in a coordinated playback session.
 
 

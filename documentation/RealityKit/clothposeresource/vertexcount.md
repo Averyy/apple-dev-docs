@@ -1,7 +1,8 @@
 # vertexCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of vertices in the pose resource.
 
@@ -18,9 +19,10 @@ final var vertexCount: Int { get }
 
 ## See Also
 
-- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothposeresource/withpositions(_:).md)
+### Accessing pose positions
+- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./withpositions%28_%29.md)
   Provides access to the positions of all the vertices within a callback.
-- [func position(at: UInt32) -> SIMD3<Float>](clothposeresource/position(at:).md)
+- [func position(at: UInt32) -> SIMD3<Float>](./position%28at%29.md)
   Returns the position of the vertex at the given index.
 
 

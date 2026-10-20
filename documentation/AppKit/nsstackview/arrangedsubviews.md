@@ -1,7 +1,8 @@
 # arrangedSubviews
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of views arranged by the stack view.
 
@@ -14,17 +15,22 @@ The array of views arranged by the stack view.
 var arrangedSubviews: [NSView] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<__kindof NSView *> * arrangedSubviews;
+```
+
 #### Discussion
 
-The stack view ensures that the contents of this array are always a subset of its [`subviews`](nsview/subviews.md) array.
+The stack view ensures that the contents of this array are always a subset of its [`subviews`](../nsview/subviews.md) array.
 
 ## See Also
 
-- [func addArrangedSubview(NSView)](nsstackview/addarrangedsubview(_:).md)
+### Managing the Arranged Subviews
+- [func addArrangedSubview(NSView)](./addarrangedsubview%28_%29.md)
   Adds the specified view to the end of the arranged subviews list.
-- [func insertArrangedSubview(NSView, at: Int)](nsstackview/insertarrangedsubview(_:at:).md)
+- [func insertArrangedSubview(NSView, at: Int)](./insertarrangedsubview%28_,at%29.md)
   Adds the provided view to the array of arranged subviews at the specified index.
-- [func removeArrangedSubview(NSView)](nsstackview/removearrangedsubview(_:).md)
+- [func removeArrangedSubview(NSView)](./removearrangedsubview%28_%29.md)
   Removes the provided view from the stack’s array of arranged subviews.
 
 

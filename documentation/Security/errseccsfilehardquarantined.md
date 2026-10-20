@@ -1,7 +1,8 @@
 # errSecCSFileHardQuarantined
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 File open or execution not allowed.
 
@@ -13,6 +14,10 @@ File open or execution not allowed.
 
 ```swift
 var errSecCSFileHardQuarantined: OSStatus { get }
+```
+
+```c
+errSecCSFileHardQuarantined
 ```
 
 #### Discussion

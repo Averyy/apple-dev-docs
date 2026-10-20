@@ -1,12 +1,13 @@
 # NSPopUpButton.ArrowPosition
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants are defined for use with the [`arrowPosition`](nspopupbuttoncell/arrowposition.md) property.
+These constants are defined for use with the [`arrowPosition`](../nspopupbuttoncell/arrowposition.md) property.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,31 @@ These constants are defined for use with the [`arrowPosition`](nspopupbuttoncell
 enum ArrowPosition
 ```
 
+```c
+enum NSPopUpArrowPosition : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSPopUpButton.ArrowPosition.noArrow](nspopupbutton/arrowposition/noarrow.md)
+- [NSPopUpButton.ArrowPosition.noArrow](./arrowposition/noarrow.md)
   Does not display any arrow in the control.
-- [NSPopUpButton.ArrowPosition.arrowAtCenter](nspopupbutton/arrowposition/arrowatcenter.md)
-  Arrow is centered vertically, pointing toward the [`preferredEdge`](nspopupbuttoncell/preferrededge.md).
-- [NSPopUpButton.ArrowPosition.arrowAtBottom](nspopupbutton/arrowposition/arrowatbottom.md)
-  Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](nspopupbuttoncell/preferrededge.md).
+- [NSPopUpButton.ArrowPosition.arrowAtCenter](./arrowposition/arrowatcenter.md)
+  Arrow is centered vertically, pointing toward the [`preferredEdge`](../nspopupbuttoncell/preferrededge.md).
+- [NSPopUpButton.ArrowPosition.arrowAtBottom](./arrowposition/arrowatbottom.md)
+  Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](../nspopupbuttoncell/preferrededge.md).
 ### Initializers
-- [init?(rawValue: UInt)](nspopupbutton/arrowposition/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./arrowposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

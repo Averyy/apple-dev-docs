@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The virtual node representing this graph’s inputs.
 
@@ -19,7 +20,7 @@ final var arguments: ShaderGraph.Node { get }
 
 #### Discussion
 
-Connect edges from this node to internal nodes to route graph-level input values into the graph. Its output ports correspond to the [`inputs`](shadergraph/inputs.md) declared on this graph.
+Connect edges from this node to internal nodes to route graph-level input values into the graph. Its output ports correspond to the [`inputs`](./inputs.md) declared on this graph.
 
 
 ---

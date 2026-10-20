@@ -1,7 +1,8 @@
 # AppsReportingCreative.CreativeType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The visual format and placement context of the creative at report time.
 
@@ -10,9 +11,14 @@ The visual format and placement context of the creative at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingCreative.CreativeType
 ```
+
+## Possible Values
+
+- `CUSTOM_PRODUCT_PAGE`: An App Store creative using a Custom Product Page.
+- `DEFAULT_PRODUCT_PAGE`: An App Store creative using the app’s Default Product Page.
 
 #### Discussion
 

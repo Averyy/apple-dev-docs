@@ -1,7 +1,8 @@
 # NSPrivacyTrackingDomains
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A list of the internet domains your app or third-party SDK uses for tracking.
 
@@ -14,17 +15,19 @@ A list of the internet domains your app or third-party SDK uses for tracking.
 - visionOS 1.0+
 - watchOS 10.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `NSPrivacyTrackingDomains` (Privacy Tracking Domains)
+- **Type**: array of string 
 
 #### Overview
 
-If the user has not granted tracking permission through the App Tracking Transparency framework, network requests to these domains fail and your app receives an error. To provide a list of internet domains in `NSPrivacyTrackingDomains`, set [`NSPrivacyTracking`](app-privacy-configuration/nsprivacytracking.md) to `true`. For more information, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
+If the user has not granted tracking permission through the App Tracking Transparency framework, network requests to these domains fail and your app receives an error. To provide a list of internet domains in `NSPrivacyTrackingDomains`, set [`NSPrivacyTracking`](./nsprivacytracking.md) to `true`. For more information, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/).
 
 ## See Also
 
-- [NSPrivacyTracking](app-privacy-configuration/nsprivacytracking.md)
+### Declaring tracking
+- [NSPrivacyTracking](./nsprivacytracking.md)
   A Boolean value that indicates whether your app or third-party SDK uses data for tracking.
 
 

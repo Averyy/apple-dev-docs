@@ -1,25 +1,28 @@
 # GameCenterLeaderboardRelease
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A record indicating that a Game Center leaderboard has been released to players, making it visible in the game.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardRelease
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardRelease.Attributes](gamecenterleaderboardrelease/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardRelease.Attributes](./gamecenterleaderboardrelease/attributes-data.dictionary.md)
   Attributes that describe a leaderboard resource.
-- [object GameCenterLeaderboardRelease.Relationships](gamecenterleaderboardrelease/relationships-data.dictionary.md)
+- [object GameCenterLeaderboardRelease.Relationships](./gamecenterleaderboardrelease/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,17 +31,18 @@ object GameCenterLeaderboardRelease
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterLeaderboardRelease.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardReleases`
 
 ## See Also
 
-- [object GameCenterLeaderboardReleaseCreateRequest](gamecenterleaderboardreleasecreaterequest.md)
+### Objects
+- [object GameCenterLeaderboardReleaseCreateRequest](./gamecenterleaderboardreleasecreaterequest.md)
   The request body you use to create a leaderboard release.
-- [object GameCenterLeaderboardReleaseResponse](gamecenterleaderboardreleaseresponse.md)
+- [object GameCenterLeaderboardReleaseResponse](./gamecenterleaderboardreleaseresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard release.
-- [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
+- [object GameCenterLeaderboardReleasesResponse](./gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
-- [object GameCenterLeaderboardReleasesLinkagesResponse](gamecenterleaderboardreleaseslinkagesresponse.md)
+- [object GameCenterLeaderboardReleasesLinkagesResponse](./gamecenterleaderboardreleaseslinkagesresponse.md)
 
 
 ---

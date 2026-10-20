@@ -1,7 +1,8 @@
 # QualityOfService.default
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -18,16 +19,21 @@
 case `default`
 ```
 
+```c
+NSQualityOfServiceDefault
+```
+
 #### Discussion
 
 Indicates no explicit quality of service information. Whenever possible, an appropriate quality of service is determined from available sources. Otherwise, some quality of service level between `NSQualityOfServiceUserInteractive` and `NSQualityOfServiceUtility` is used.
 
 ## See Also
 
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
+### Constants
+- [QualityOfService.userInteractive](./userinteractive.md)
+- [QualityOfService.userInitiated](./userinitiated.md)
+- [QualityOfService.utility](./utility.md)
+- [QualityOfService.background](./background.md)
 
 
 ---

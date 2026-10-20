@@ -1,7 +1,8 @@
 # headerProminence(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the header prominence for this view.
 
@@ -41,9 +42,10 @@ List {
 
 ## See Also
 
-- [var headerProminence: Prominence](environmentvalues/headerprominence.md)
+### Configuring headers
+- [var headerProminence: Prominence](../environmentvalues/headerprominence.md)
   The prominence to apply to section headers within a view.
-- [enum Prominence](prominence.md)
+- [enum Prominence](../prominence.md)
   A type indicating the prominence of a view hierarchy.
 
 

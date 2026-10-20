@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the Safari Reading List singleton object.
 
@@ -15,6 +16,10 @@ Returns the Safari Reading List singleton object.
 
 ```swift
 class func `default`() -> SSReadingList?
+```
+
+```objc
++ (SSReadingList *) defaultReadingList;
 ```
 
 #### Return Value

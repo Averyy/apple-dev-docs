@@ -1,7 +1,8 @@
 # init(rawRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-384 private key for signing from a collection of bytes.
 
@@ -26,13 +27,14 @@ init<Bytes>(rawRepresentation: Bytes) throws where Bytes : ContiguousBytes
 
 ## See Also
 
-- [init(compactRepresentable: Bool)](p384/signing/privatekey/init(compactrepresentable:).md)
+### Creating a private key
+- [init(compactRepresentable: Bool)](./init%28compactrepresentable%29.md)
   Creates a random P-384 private key for signing.
-- [init<Bytes>(derRepresentation: Bytes) throws](p384/signing/privatekey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./init%28derrepresentation%29.md)
   Creates a P-384 private key for signing from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p384/signing/privatekey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./init%28pemrepresentation%29.md)
   Creates a P-384 private key for signing from a Privacy-Enhanced Mail PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p384/signing/privatekey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./init%28x963representation%29.md)
   Creates a P-384 private key for signing from an ANSI x9.63 representation.
 
 

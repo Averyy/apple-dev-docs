@@ -1,15 +1,16 @@
 # MTLPackedFloatQuaternion
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,40 +18,45 @@
 struct MTLPackedFloatQuaternion
 ```
 
+```c
+typedef struct MTLPackedFloatQuaternion { ... } MTLPackedFloatQuaternion;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mtlpackedfloatquaternion/init.md)
-- [init(x: Float, y: Float, z: Float, w: Float)](mtlpackedfloatquaternion/init(x:y:z:w:).md)
+- [init()](./mtlpackedfloatquaternion/init%28%29.md)
+- [init(x: Float, y: Float, z: Float, w: Float)](./mtlpackedfloatquaternion/init%28x,y,z,w%29.md)
 ### Instance Properties
-- [var w: Float](mtlpackedfloatquaternion/w.md)
-- [var x: Float](mtlpackedfloatquaternion/x.md)
-- [var y: Float](mtlpackedfloatquaternion/y.md)
-- [var z: Float](mtlpackedfloatquaternion/z.md)
+- [var w: Float](./mtlpackedfloatquaternion/w.md)
+- [var x: Float](./mtlpackedfloatquaternion/x.md)
+- [var y: Float](./mtlpackedfloatquaternion/y.md)
+- [var z: Float](./mtlpackedfloatquaternion/z.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
+### Structures
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [struct MTLBinaryArchiveError](./mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
-- [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
+- [struct MTLCommandBufferError](./mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
-- [struct MTLComponentTransform](mtlcomponenttransform.md)
-- [struct MTLCounterSampleBufferError](mtlcountersamplebuffererror-swift.struct.md)
+- [struct MTLComponentTransform](./mtlcomponenttransform.md)
+- [struct MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct.md)
   The error codes that indicate why a GPU driver can’t create a counter sample buffer.
-- [struct MTLDynamicLibraryError](mtldynamiclibraryerror-swift.struct.md)
+- [struct MTLDynamicLibraryError](./mtldynamiclibraryerror-swift.struct.md)
   Errors when compiling dynamic libraries.
-- [struct MTLIOError](mtlioerror-swift.struct.md)
+- [struct MTLIOError](./mtlioerror-swift.struct.md)
   The categories of errors for creating an input/output file handle.
-- [struct MTLStitchedLibraryOptions](mtlstitchedlibraryoptions.md)
-- [struct NSDeviceCertification](nsdevicecertification.md)
-- [struct NSProcessPerformanceProfile](nsprocessperformanceprofile.md)
+- [struct MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions.md)
+- [struct NSDeviceCertification](./nsdevicecertification.md)
+- [struct NSProcessPerformanceProfile](./nsprocessperformanceprofile.md)
   A value describing the device’s performance profile.
 
 

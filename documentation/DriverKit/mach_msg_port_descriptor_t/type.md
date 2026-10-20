@@ -1,26 +1,28 @@
 # type
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 mach_msg_descriptor_type_t type;
 ```
 
 ## See Also
 
-- [disposition](mach_msg_port_descriptor_t/disposition.md)
-- [name](mach_msg_port_descriptor_t/name.md)
-- [pad1](mach_msg_port_descriptor_t/pad1.md)
-- [pad2](mach_msg_port_descriptor_t/pad2.md)
+### Getting the Properties
+- [disposition](./disposition.md)
+- [name](./name.md)
+- [pad1](./pad1.md)
+- [pad2](./pad2.md)
 
 
 ---

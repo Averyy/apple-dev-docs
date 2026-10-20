@@ -1,6 +1,7 @@
 # Building a universal macOS binary
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Create macOS apps and other executables that run natively on both Apple silicon and Intel-based Mac computers.
 
@@ -28,17 +29,17 @@ Turn all of your compiled code into universal binaries, not just apps. The follo
 
 Xcode 12.2 and later is a requirement for building universal binaries. Earlier versions of Xcode don’t contain the support needed to build and test universal versions of your macOS code.
 
-Download the latest public version of Xcode from the App Store. Download prerelease versions of Xcode from [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
+Download the latest public version of Xcode from the App Store. Download prerelease versions of Xcode from [developer.apple.com](https://developer.apple.com).
 
 ##### Update the Architecture List in Your Xcode Projects
 
 Xcode 12.2 and later automatically adds the arm64 architecture to the list of standard architectures for all macOS binaries, including apps and libraries. During the debugging and testing process, Xcode builds only for the current system architecture by default. However, it automatically builds a universal binary for the release version of your code.
 
-![A screenshot of Xcode that shows the Architectures build setting with the standard architectures selected.](/images/com.apple.Apple-Silicon/building-a-universal-macos-binary-1@2x.png)
+![A screenshot of Xcode that shows the Architectures build setting with the standard architectures selected.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/building-a-universal-macos-binary-1@2x.png)
 
 If you customized the Architectures build setting in your Xcode project, remove your customizations and use the Standard Architectures setting instead.
 
-For additional information about Xcode build settings and how to configure them, see [`Configure build settings`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev04b3a04ba).
+For additional information about Xcode build settings and how to configure them, see [Configure build settings](https://help.apple.com/xcode/mac/current/#/dev04b3a04ba).
 
 ##### Update the Architecture List of Custom Makefiles
 
@@ -55,7 +56,7 @@ universal_app: x86_app arm_app
     lipo -create -output universal_app x86_app arm_app
 ```
 
-##### Wrap Platform Specific Code with Conditional Compilation Macros
+##### Wrap Platform-Specific Code with Conditional Compilation Macros
 
 When writing code for a specific platform or processor type, isolate that code using the appropriate conditional compilation statements. For C-based code, the system defines a set of macros for you to use in `/usr/include/TargetConditionals.h`. The Swift language also supports conditional compilation using conditional compilation blocks.
 
@@ -121,7 +122,7 @@ In Objective-C, implement the same code as shown below.
 #endif
 ```
 
-For the complete list of conditional compilation macros, see the `/usr/include/TargetConditionals.h` header file in the appropriate SDK. For a list of Swift compilation conditions and arguments, see [`Conditional Compilation Block`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Statements.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+For the complete list of conditional compilation macros, see the `/usr/include/TargetConditionals.h` header file in the appropriate SDK. For a list of Swift compilation conditions and arguments, see [Conditional Compilation Block](https://docs.swift.org/swift-book/ReferenceManual/Statements.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
 ##### Build Your Target
 
@@ -142,21 +143,22 @@ x86_64 arm64
 
 To obtain more information about each architecture, pass the `-detailed_info` argument to `lipo`.
 
-For information about how to determine whether your app is running as a translated binary, see [`Determine whether your app is running as a translated binary`](about-the-rosetta-translation-environment#Determine-whether-your-app-is-running-as-a-translated-binary.md).
+For information about how to determine whether your app is running as a translated binary, see [Determine whether your app is running as a translated binary](./about-the-rosetta-translation-environment.md#Determine-whether-your-app-is-running-as-a-translated-binary).
 
 ##### Specify the Launch Behavior of Your App
 
 For universal binaries, the system prefers to execute the slice that is native to the current platform. On an Intel-based Mac computer, the system always executes the `x86_64` slice of the binary. On Apple silicon, the system prefers to execute the `arm64` slice when one is present. Users can force the system to run the app under Rosetta translation by enabling the appropriate option from the app’s Get Info window in the Finder.
 
-If you never want users to run your app under Rosetta translation, add the [`LSRequiresNativeExecution`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsrequiresnativeexecution) key to your app’s `Info.plist` file. When that key is present and set to `YES`, the system prevents your app from running under translation. In addition, the system removes the Rosetta translation option from your app’s Get Info window. Don’t include this key until you verify that your app runs correctly on both Apple silicon and Intel-based Mac computers.
+If you never want users to run your app under Rosetta translation, add the [`LSRequiresNativeExecution`](../BundleResources/information-property-list/lsrequiresnativeexecution.md) key to your app’s `Info.plist` file. When that key is present and set to `YES`, the system prevents your app from running under translation. In addition, the system removes the Rosetta translation option from your app’s Get Info window. Don’t include this key until you verify that your app runs correctly on both Apple silicon and Intel-based Mac computers.
 
-If you want to prioritize one architecture, without preventing users from running your app under translation, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsarchitecturepriority) key to your app’s `Info.plist` file. The value of this key is an ordered array of strings, which define the priority order for selecting an architecture.
+If you want to prioritize one architecture, without preventing users from running your app under translation, add the [`LSArchitecturePriority`](../BundleResources/information-property-list/lsarchitecturepriority.md) key to your app’s `Info.plist` file. The value of this key is an ordered array of strings, which define the priority order for selecting an architecture.
 
-> **Note**: If an app doesn’t contain an executable binary, the system may run it under Rosetta translation as a precautionary measure to prevent potential runtime issues. For example, the system runs script-only apps under Rosetta translation. If you verified that your app runs correctly on both Apple silicon and Intel-based Mac computers, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsarchitecturepriority) key to your app’s `Info.plist` file and list the `arm64` architecture first.
+> **Note**: If an app doesn’t contain an executable binary, the system may run it under Rosetta translation as a precautionary measure to prevent potential runtime issues. For example, the system runs script-only apps under Rosetta translation. If you verified that your app runs correctly on both Apple silicon and Intel-based Mac computers, add the [`LSArchitecturePriority`](../BundleResources/information-property-list/lsarchitecturepriority.md) key to your app’s `Info.plist` file and list the `arm64` architecture first.
 
 ## See Also
 
-- [Porting your macOS apps to Apple silicon](porting-your-macos-apps-to-apple-silicon.md)
+### Essentials
+- [Porting your macOS apps to Apple silicon](./porting-your-macos-apps-to-apple-silicon.md)
   Create a version of your macOS app that runs on both Apple silicon and Intel-based Mac computers.
 
 

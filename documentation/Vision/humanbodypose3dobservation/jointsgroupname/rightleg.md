@@ -1,7 +1,8 @@
 # HumanBodyPose3DObservation.JointsGroupName.rightLeg
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,11 +20,12 @@ case rightLeg
 
 ## See Also
 
-- [HumanBodyPose3DObservation.JointsGroupName.head](humanbodypose3dobservation/jointsgroupname/head.md)
-- [HumanBodyPose3DObservation.JointsGroupName.leftArm](humanbodypose3dobservation/jointsgroupname/leftarm.md)
-- [HumanBodyPose3DObservation.JointsGroupName.leftLeg](humanbodypose3dobservation/jointsgroupname/leftleg.md)
-- [HumanBodyPose3DObservation.JointsGroupName.rightArm](humanbodypose3dobservation/jointsgroupname/rightarm.md)
-- [HumanBodyPose3DObservation.JointsGroupName.torso](humanbodypose3dobservation/jointsgroupname/torso.md)
+### Getting the group names
+- [HumanBodyPose3DObservation.JointsGroupName.head](./head.md)
+- [HumanBodyPose3DObservation.JointsGroupName.leftArm](./leftarm.md)
+- [HumanBodyPose3DObservation.JointsGroupName.leftLeg](./leftleg.md)
+- [HumanBodyPose3DObservation.JointsGroupName.rightArm](./rightarm.md)
+- [HumanBodyPose3DObservation.JointsGroupName.torso](./torso.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AXCustomContent.Importance
 
 **Framework**: Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Objects that control the timing of content output.
 
@@ -20,37 +21,42 @@ Objects that control the timing of content output.
 enum Importance
 ```
 
+```c
+enum AXCustomContentImportance : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a content importance enumeration
-- [init?(rawValue: UInt)](axcustomcontent/importance-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./importance-swift.enum/init%28rawvalue%29.md)
 ### Setting content importance
-- [AXCustomContent.Importance.default](axcustomcontent/importance-swift.enum/default.md)
+- [AXCustomContent.Importance.default](./importance-swift.enum/default.md)
   Output the content to the user on demand.
-- [AXCustomContent.Importance.high](axcustomcontent/importance-swift.enum/high.md)
+- [AXCustomContent.Importance.high](./importance-swift.enum/high.md)
   Output the content to the user immediately.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var label: String](axcustomcontent/label.md)
+### Defining custom content
+- [var label: String](./label.md)
   A localized string that identifies the label for this content.
-- [var attributedLabel: NSAttributedString](axcustomcontent/attributedlabel.md)
+- [var attributedLabel: NSAttributedString](./attributedlabel.md)
   A localized attributed string that identifies the label for this content.
-- [var value: String](axcustomcontent/value.md)
+- [var value: String](./value.md)
   A localized string that provides a value for the label.
-- [var attributedValue: NSAttributedString](axcustomcontent/attributedvalue.md)
+- [var attributedValue: NSAttributedString](./attributedvalue.md)
   A localized attributed string that provides a value for the label.
-- [var importance: AXCustomContent.Importance](axcustomcontent/importance-swift.property.md)
+- [var importance: AXCustomContent.Importance](./importance-swift.property.md)
   An object that determines when to output custom accessibility content.
 
 

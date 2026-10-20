@@ -1,14 +1,15 @@
 # lockdown_handler_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*lockdown_handler_t)(void *);
 ```
 

@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from a single value.
 
@@ -20,13 +21,13 @@ init(floatLiteral value: Float)
 
 #### Discussion
 
-RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](../../physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](../../physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners.](/images/com.apple.RealityKit/CustomMaterial-Specular-swift-struct-init(floatLiteral:)-1@2x.png)
+![An illustration showing a sphere and a cube with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/CustomMaterial-Specular-swift-struct-init(floatLiteral:)-1@2x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core physically based rendering (PBR) properties, you can create additional realistic effects by augmenting the specular highlights.
 
-This initializer creates a [`PhysicallyBasedMaterial.Specular`](physicallybasedmaterial/specular-swift.struct.md) object from a single value that applies to the entire material. The specular [`scale`](custommaterial/specular-swift.struct/scale.md) value is available to the material’s surface shader, but RealityKit doesn’t create additional specular highlights unless the surface shader function calls `params.surface().set_specular()`.
+This initializer creates a [`PhysicallyBasedMaterial.Specular`](../../physicallybasedmaterial/specular-swift.struct.md) object from a single value that applies to the entire material. The specular [`scale`](./scale.md) value is available to the material’s surface shader, but RealityKit doesn’t create additional specular highlights unless the surface shader function calls `params.surface().set_specular()`.
 
 The following Metal code demonstrates using the specular `scale` value in a surface shader function:
 
@@ -42,9 +43,10 @@ The following Metal code demonstrates using the specular `scale` value in a surf
 
 ## See Also
 
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/specular-swift.struct/init(scale:texture:).md)
+### Creating a specular object
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object from a single value, a UV-mapped texture, or both.
-- [init(PhysicallyBasedMaterial.Specular)](custommaterial/specular-swift.struct/init(_:).md)
+- [init(PhysicallyBasedMaterial.Specular)](./init%28_%29.md)
   Creates an object from a physically based material’s specular property.
 
 

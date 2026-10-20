@@ -1,18 +1,19 @@
 # DispatchQoS.QoSClass.unspecified
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The absence of a quality-of-service class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ case unspecified
 
 ## See Also
 
-- [DispatchQoS.QoSClass.userInteractive](dispatchqos/qosclass-swift.enum/userinteractive.md)
+### Getting the Quality-of-Service Class
+- [DispatchQoS.QoSClass.userInteractive](./userinteractive.md)
   The quality-of-service class for user-interactive tasks, such as animations, event handling, or updating your app’s user interface.
-- [DispatchQoS.QoSClass.userInitiated](dispatchqos/qosclass-swift.enum/userinitiated.md)
+- [DispatchQoS.QoSClass.userInitiated](./userinitiated.md)
   The quality-of-service class for tasks that prevent the user from actively using your app.
-- [DispatchQoS.QoSClass.default](dispatchqos/qosclass-swift.enum/default.md)
+- [DispatchQoS.QoSClass.default](./default.md)
   The default quality-of-service class.
-- [DispatchQoS.QoSClass.utility](dispatchqos/qosclass-swift.enum/utility.md)
+- [DispatchQoS.QoSClass.utility](./utility.md)
   The quality-of-service class for tasks that the user does not track actively.
-- [DispatchQoS.QoSClass.background](dispatchqos/qosclass-swift.enum/background.md)
+- [DispatchQoS.QoSClass.background](./background.md)
   The quality-of-service class for maintenance or cleanup tasks that you create.
 
 

@@ -1,7 +1,8 @@
 # init(_:systemImage:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tab that you can use in a tab view using a system image for the tab item’s image, and a localized string key label.
 
@@ -20,6 +21,18 @@ Creates a new tab that you can use in a tab view using a system image for the ta
 init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
+Available when `Value` is `Never`, `Content` conforms to `View`, and `Label` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+init(_ titleResource: LocalizedStringResource, systemImage: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
+```
+
+```swift
+init<S>(_ title: S, systemImage: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel, S : StringProtocol
+```
+
 ## Parameters
 
 - `titleKey`: The localized string key label for the tab’s tab item.
@@ -28,11 +41,12 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder conten
 
 ## See Also
 
-- [init(_:systemImage:value:content:)](tab/init(_:systemimage:value:content:).md)
+### Creating a tab with system symbol
+- [init(_:systemImage:value:content:)](./init%28_,systemimage,value,content%29.md)
   Creates a tab that the tab view presents when the tab view’s selection matches the tab’s value using a system image for the tab’s tab item image, with a localized string key label.
-- [init(_:systemImage:role:content:)](tab/init(_:systemimage:role:content:).md)
+- [init(_:systemImage:role:content:)](./init%28_,systemimage,role,content%29.md)
   Creates a new tab that you can use in a tab view using a system image for the tab item’s image, and a localized string key label.
-- [init(_:systemImage:value:role:content:)](tab/init(_:systemimage:value:role:content:).md)
+- [init(_:systemImage:value:role:content:)](./init%28_,systemimage,value,role,content%29.md)
   Creates a tab that the tab view presents when the tab view’s selection matches the tab’s value using a system image for the tab’s tab item image, with a localized string key label.
 
 

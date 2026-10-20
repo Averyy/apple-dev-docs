@@ -1,7 +1,8 @@
 # NSScrubberLayout
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that describes the layout of items within a scrubber control.
 
@@ -15,70 +16,75 @@ An abstract class that describes the layout of items within a scrubber control.
 class NSScrubberLayout
 ```
 
+```objc
+@interface NSScrubberLayout : NSObject
+```
+
 #### Overview
 
-To determine the layout of items in a scrubber, use one of the built-in subclasses ([`NSScrubberProportionalLayout`](nsscrubberproportionallayout.md) or [`NSScrubberFlowLayout`](nsscrubberflowlayout.md)), or create a custom subclass to implement your own layout.
+To determine the layout of items in a scrubber, use one of the built-in subclasses ([`NSScrubberProportionalLayout`](./nsscrubberproportionallayout.md) or [`NSScrubberFlowLayout`](./nsscrubberflowlayout.md)), or create a custom subclass to implement your own layout.
 
 ## Topics
 
 ### Creating a scrubber layout
-- [init()](nsscrubberlayout/init.md)
+- [init()](./nsscrubberlayout/init%28%29.md)
   Initializes and returns a newly allocated scrubber layout object from code.
-- [init(coder: NSCoder)](nsscrubberlayout/init(coder:).md)
+- [init(coder: NSCoder)](./nsscrubberlayout/init%28coder%29.md)
   Initializes and returns a newly allocated scrubber layout object from a storyboard or nib file.
 ### Configuring a scrubber layout
-- [class var layoutAttributesClass: AnyClass](nsscrubberlayout/layoutattributesclass.md)
+- [class var layoutAttributesClass: AnyClass](./nsscrubberlayout/layoutattributesclass.md)
   A property containing a class that describes layout attributes.
-- [var scrubber: NSScrubber?](nsscrubberlayout/scrubber.md)
+- [var scrubber: NSScrubber?](./nsscrubberlayout/scrubber.md)
   The scrubber control that this layout is assigned to.
-- [var visibleRect: NSRect](nsscrubberlayout/visiblerect.md)
+- [var visibleRect: NSRect](./nsscrubberlayout/visiblerect.md)
   The currently visible rectangle, in the coordinate space of the scrubber content.
-- [func invalidateLayout()](nsscrubberlayout/invalidatelayout.md)
+- [func invalidateLayout()](./nsscrubberlayout/invalidatelayout%28%29.md)
   Signals that the layout has been invalidated, and that the scrubber control should perform a new layout pass.
 ### Subclassing a scrubber layout
-- [func prepare()](nsscrubberlayout/prepare.md)
+- [func prepare()](./nsscrubberlayout/prepare%28%29.md)
   Gives you an opportunity to perform layout calculations when the scrubber’s layout is invalidated.
-- [var scrubberContentSize: NSSize](nsscrubberlayout/scrubbercontentsize.md)
+- [var scrubberContentSize: NSSize](./nsscrubberlayout/scrubbercontentsize.md)
   The size required to contain all elements within the scrubber.
-- [func layoutAttributesForItem(at: Int) -> NSScrubberLayoutAttributes?](nsscrubberlayout/layoutattributesforitem(at:).md)
+- [func layoutAttributesForItem(at: Int) -> NSScrubberLayoutAttributes?](./nsscrubberlayout/layoutattributesforitem%28at%29.md)
   The layout attributes for the item with the specified index.
-- [func layoutAttributesForItems(in: NSRect) -> Set<NSScrubberLayoutAttributes>](nsscrubberlayout/layoutattributesforitems(in:).md)
+- [func layoutAttributesForItems(in: NSRect) -> Set<NSScrubberLayoutAttributes>](./nsscrubberlayout/layoutattributesforitems%28in%29.md)
   The set of layout attributes for all items within the provided rectangle.
-- [var shouldInvalidateLayoutForSelectionChange: Bool](nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md)
+- [var shouldInvalidateLayoutForSelectionChange: Bool](./nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md)
   Determines whether the scrubber should refresh its layout when the selection changes.
-- [var shouldInvalidateLayoutForHighlightChange: Bool](nsscrubberlayout/shouldinvalidatelayoutforhighlightchange.md)
+- [var shouldInvalidateLayoutForHighlightChange: Bool](./nsscrubberlayout/shouldinvalidatelayoutforhighlightchange.md)
   Determines whether the scrubber should refresh its layout when an item is highlighted.
-- [func shouldInvalidateLayoutForChange(fromVisibleRect: NSRect, toVisibleRect: NSRect) -> Bool](nsscrubberlayout/shouldinvalidatelayoutforchange(fromvisiblerect:tovisiblerect:).md)
+- [func shouldInvalidateLayoutForChange(fromVisibleRect: NSRect, toVisibleRect: NSRect) -> Bool](./nsscrubberlayout/shouldinvalidatelayoutforchange%28fromvisiblerect,tovisiblerect%29.md)
   Determines whether the scrubber should refresh its layout in response to a change of its visible region.
-- [var automaticallyMirrorsInRightToLeftLayout: Bool](nsscrubberlayout/automaticallymirrorsinrighttoleftlayout.md)
+- [var automaticallyMirrorsInRightToLeftLayout: Bool](./nsscrubberlayout/automaticallymirrorsinrighttoleftlayout.md)
   Determines whether the scrubber mirrors its layout for right-to-left layouts.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSScrubberFlowLayout](nsscrubberflowlayout.md)
-- [NSScrubberProportionalLayout](nsscrubberproportionallayout.md)
+- [NSScrubberFlowLayout](./nsscrubberflowlayout.md)
+- [NSScrubberProportionalLayout](./nsscrubberproportionallayout.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSScrubberFlowLayout](nsscrubberflowlayout.md)
+### Scrubber layouts
+- [class NSScrubberFlowLayout](./nsscrubberflowlayout.md)
   A concrete layout object that arranges items end-to-end in a linear strip.
-- [protocol NSScrubberFlowLayoutDelegate](nsscrubberflowlayoutdelegate.md)
+- [protocol NSScrubberFlowLayoutDelegate](./nsscrubberflowlayoutdelegate.md)
   A protocol that a scrubber delegate can adopt to provide the size of an item.
-- [class NSScrubberProportionalLayout](nsscrubberproportionallayout.md)
+- [class NSScrubberProportionalLayout](./nsscrubberproportionallayout.md)
   A concrete layout object that sizes each item to some fraction of the scrubber’s visible size.
-- [class NSScrubberLayoutAttributes](nsscrubberlayoutattributes.md)
+- [class NSScrubberLayoutAttributes](./nsscrubberlayoutattributes.md)
   The layout of a scrubber item.
 
 

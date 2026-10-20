@@ -1,7 +1,8 @@
 # Locale.HourCycle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the hour cycle used in a locale, like one-to-twelve or zero-to-twenty-three.
 
@@ -23,37 +24,38 @@ enum HourCycle
 ## Topics
 
 ### Using defined hour cycles
-- [Locale.HourCycle.zeroToEleven](locale/hourcycle-swift.enum/zerotoeleven.md)
+- [Locale.HourCycle.zeroToEleven](./hourcycle-swift.enum/zerotoeleven.md)
   A twelve hour cycle, counted from 0 to 11.
-- [Locale.HourCycle.oneToTwelve](locale/hourcycle-swift.enum/onetotwelve.md)
+- [Locale.HourCycle.oneToTwelve](./hourcycle-swift.enum/onetotwelve.md)
   A twelve hour cycle, counted from 1 to 12.
-- [Locale.HourCycle.zeroToTwentyThree](locale/hourcycle-swift.enum/zerototwentythree.md)
+- [Locale.HourCycle.zeroToTwentyThree](./hourcycle-swift.enum/zerototwentythree.md)
   A twenty-four hour cycle, counted from 0 to 23.
-- [Locale.HourCycle.oneToTwentyFour](locale/hourcycle-swift.enum/onetotwentyfour.md)
+- [Locale.HourCycle.oneToTwentyFour](./hourcycle-swift.enum/onetotwentyfour.md)
   A twenty-four hour cycle, counted from 1 to 24.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var firstDayOfWeek: Locale.Weekday](locale/firstdayofweek.md)
+### Getting date and time components
+- [var firstDayOfWeek: Locale.Weekday](./firstdayofweek.md)
   The first day of the week as represented by this locale.
-- [Locale.Weekday](locale/weekday.md)
+- [Locale.Weekday](./weekday.md)
   A type that represents weekdays, used for indicating a locale’s first day of the week.
-- [var hourCycle: Locale.HourCycle](locale/hourcycle-swift.property.md)
+- [var hourCycle: Locale.HourCycle](./hourcycle-swift.property.md)
   The hour cycle used by the locale, like one-to-twelve or zero-to-twenty-three.
-- [var timeZone: TimeZone?](locale/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone associated with the locale, if any.
 
 

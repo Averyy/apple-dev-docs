@@ -1,9 +1,10 @@
 # LowLevelDeformation.Mesh
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A handle to the input or output vertex data of a [`LowLevelDeformation`](lowleveldeformation.md).
+A handle to the input or output vertex data of a [`LowLevelDeformation`](../lowleveldeformation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -20,20 +21,21 @@ struct Mesh
 ## Topics
 
 ### Setting vertex data
-- [func setVertices(any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws](lowleveldeformation/mesh/setvertices(_:offset:semantic:).md)
+- [func setVertices(any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws](./mesh/setvertices%28_,offset,semantic%29.md)
   Binds a Metal buffer to the vertex attribute with the specified semantic.
 
 ## See Also
 
-- [var input: LowLevelDeformation.Mesh](lowleveldeformation/input.md)
+### Accessing mesh data
+- [var input: LowLevelDeformation.Mesh](./input.md)
   The input vertex data for this deformation.
-- [var output: LowLevelDeformation.Mesh](lowleveldeformation/output.md)
+- [var output: LowLevelDeformation.Mesh](./output.md)
   The output vertex data for this deformation.
-- [var vertexCount: Int](lowleveldeformation/vertexcount.md)
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the mesh.
-- [LowLevelDeformation.VertexSemantic](lowleveldeformation/vertexsemantic.md)
+- [LowLevelDeformation.VertexSemantic](./vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
-- [LowLevelDeformation.VertexAttribute](lowleveldeformation/vertexattribute.md)
+- [LowLevelDeformation.VertexAttribute](./vertexattribute.md)
   An object that describes the format and stride of a single vertex attribute.
 
 

@@ -1,16 +1,17 @@
 # sampleMode
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The upsampling algorithm type.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The upsampling algorithm type.
 var sampleMode: MLCSampleMode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLCSampleMode sampleMode;
+```
+
 ## See Also
 
-- [var shape: [Int]](mlcupsamplelayer/shape-61n1u.md)
+### Inspecting Upsample Layers
+- [var shape: [Int]](./shape-61n1u.md)
   An array that contains the dimensions of the result tensor.
-- [var alignsCorners: Bool](mlcupsamplelayer/alignscorners.md)
+- [var alignsCorners: Bool](./alignscorners.md)
   A Boolean that indicates whether the layer aligns the corner pixels of the input and output tensors.
 
 

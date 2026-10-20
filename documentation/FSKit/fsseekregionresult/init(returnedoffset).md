@@ -1,7 +1,8 @@
 # init(returnedOffset:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for a region-seeking operation.
 
@@ -12,6 +13,10 @@ Creates a result for a region-seeking operation.
 
 ```swift
 init(returnedOffset: off_t)
+```
+
+```objc
+- (instancetype) initWithReturnedOffset:(off_t) returnedOffset;
 ```
 
 #### Return Value

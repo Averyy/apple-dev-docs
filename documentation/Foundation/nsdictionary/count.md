@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of entries in the dictionary.
 
@@ -18,6 +19,10 @@ The number of entries in the dictionary.
 
 ```swift
 var count: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger count;
 ```
 
 

@@ -1,7 +1,8 @@
 # minificationFilterBias
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bias factor used by the minification filter to determine the levels of detail.
 
@@ -19,23 +20,28 @@ The bias factor used by the minification filter to determine the levels of detai
 var minificationFilterBias: Float { get set }
 ```
 
+```objc
+@property float minificationFilterBias;
+```
+
 #### Discussion
 
-This value is used by the [`minificationFilter`](calayer/minificationfilter.md) when it is set to [`trilinear`](calayercontentsfilter/trilinear.md).
+This value is used by the [`minificationFilter`](./minificationfilter.md) when it is set to [`trilinear`](../calayercontentsfilter/trilinear.md).
 
 The default value of this property is `0.0`.
 
 ## See Also
 
-- [var filters: [Any]?](calayer/filters.md)
+### Layer filters
+- [var filters: [Any]?](./filters.md)
   An array of Core Image filters to apply to the contents of the layer and its sublayers. Animatable.
-- [var compositingFilter: Any?](calayer/compositingfilter.md)
+- [var compositingFilter: Any?](./compositingfilter.md)
   A CoreImage filter used to composite the layer and the content behind it. Animatable.
-- [var backgroundFilters: [Any]?](calayer/backgroundfilters.md)
+- [var backgroundFilters: [Any]?](./backgroundfilters.md)
   An array of Core Image filters to apply to the content immediately behind the layer. Animatable.
-- [var minificationFilter: CALayerContentsFilter](calayer/minificationfilter.md)
+- [var minificationFilter: CALayerContentsFilter](./minificationfilter.md)
   The filter used when reducing the size of the content.
-- [var magnificationFilter: CALayerContentsFilter](calayer/magnificationfilter.md)
+- [var magnificationFilter: CALayerContentsFilter](./magnificationfilter.md)
   The filter used when increasing the size of the content.
 
 

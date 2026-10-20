@@ -1,23 +1,28 @@
 # release
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The callback used to release values as they are removed from the collection. If `NULL`, values are not released. See [`CFBagReleaseCallBack`](cfbagreleasecallback.md) for a description of this callback.
+The callback used to release values as they are removed from the collection. If `NULL`, values are not released. See [`CFBagReleaseCallBack`](../cfbagreleasecallback.md) for a description of this callback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var release: CFBagReleaseCallBack!
+```
+
+```c
+CFBagReleaseCallBack release;
 ```
 
 

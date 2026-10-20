@@ -1,17 +1,20 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the export session.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.0+ - Deprecated in 18.0
+- iPadOS 4.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`states(updateInterval:)`](./states%28updateinterval%29.md) instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ The status of the export session.
 var status: AVAssetExportSession.Status { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAssetExportSessionStatus status;
+```
+
 #### Discussion
 
-For possible values, see [`AVAssetExportSession.Status`](avassetexportsession/status-swift.enum.md).
+For possible values, see [`AVAssetExportSession.Status`](./status-swift.enum.md).
 
 This value is key-value observable.
 

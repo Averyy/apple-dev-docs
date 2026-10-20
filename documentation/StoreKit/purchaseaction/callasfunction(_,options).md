@@ -1,7 +1,8 @@
 # callAsFunction(_:options:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts an Apple In-App Purchase for the indicated product and purchase options.
 
@@ -23,20 +24,20 @@ Starts an Apple In-App Purchase for the indicated product and purchase options.
 
 #### Return Value
 
-The result of the purchase, [`Product.PurchaseResult`](product/purchaseresult.md).
+The result of the purchase, [`Product.PurchaseResult`](../product/purchaseresult.md).
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`PurchaseAction`](purchaseaction.md) structure with the `product` and `options` as arguments.
+Don’t call this method directly. SwiftUI calls it when you call the [`PurchaseAction`](../purchaseaction.md) structure with the `product` and `options` as arguments.
 
-This method may throw a [`Product.PurchaseError`](product/purchaseerror.md) or [`StoreKitError`](storekiterror.md).
+This method may throw a [`Product.PurchaseError`](../product/purchaseerror.md) or [`StoreKitError`](../storekiterror.md).
 
-For information about how Swift uses the [`callAsFunction(_:options:)`](purchaseaction/callasfunction(_:options:).md) method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
+For information about how Swift uses the [`callAsFunction(_:options:)`](./callasfunction%28_,options%29.md) method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
 
 ## Parameters
 
-- `product`: The Apple In-App Purchase [`Product`](product.md) the customer is purchasing.
-- `options`: A set of options you may associate with the purchase ([`Product.PurchaseOption`](product/purchaseoption.md)).
+- `product`: The Apple In-App Purchase [`Product`](../product.md) the customer is purchasing.
+- `options`: A set of options you may associate with the purchase ([`Product.PurchaseOption`](../product/purchaseoption.md)).
 
 
 ---

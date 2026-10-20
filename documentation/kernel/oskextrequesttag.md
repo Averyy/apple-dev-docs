@@ -1,7 +1,8 @@
 # OSKextRequestTag
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Identifies a kext request made to user space.
 
@@ -10,17 +11,18 @@ Identifies a kext request made to user space.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t OSKextRequestTag;
 ```
 
 ## See Also
 
-- [OSAsyncReference](osasyncreference.md)
-- [OSAsyncReference64](osasyncreference64.md)
-- [OSContainer](oscontainer.md)
-- [OSIterator](ositerator-8m.md)
-- [OSType](ostype.md)
+### Typedefs
+- [OSAsyncReference](./osasyncreference.md)
+- [OSAsyncReference64](./osasyncreference64.md)
+- [OSContainer](./oscontainer.md)
+- [OSIterator](./ositerator-8m.md)
+- [OSType](./ostype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying parameters used when training the model.
 
@@ -21,9 +22,10 @@ let modelParameters: MLRandomForestRegressor.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mlrandomforestregressor/model.md)
+### Inspecting a random forest regressor
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [MLRandomForestRegressor.ModelParameters](mlrandomforestregressor/modelparameters-swift.struct.md)
+- [MLRandomForestRegressor.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 
 

@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value for the z-axis of the quaternion.
 
@@ -19,13 +20,18 @@ The value for the z-axis of the quaternion.
 var z: Double
 ```
 
+```c
+double z;
+```
+
 ## See Also
 
-- [var x: Double](gcquaternion/x.md)
+### Getting Quaternion Values
+- [var x: Double](./x.md)
   The value for the x-axis of the quaternion.
-- [var y: Double](gcquaternion/y.md)
+- [var y: Double](./y.md)
   The value for the y-axis of the quaternion.
-- [var w: Double](gcquaternion/w.md)
+- [var w: Double](./w.md)
   The value for the w-axis of the quaternion.
 
 

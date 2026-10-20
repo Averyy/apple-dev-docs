@@ -1,7 +1,8 @@
 # assetInfo
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset info dictionary authored on this prim.
 

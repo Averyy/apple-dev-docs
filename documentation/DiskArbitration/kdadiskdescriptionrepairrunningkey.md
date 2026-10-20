@@ -1,7 +1,8 @@
 # kDADiskDescriptionRepairRunningKey
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 26.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let kDADiskDescriptionRepairRunningKey: CFString
+```
+
+```c
+extern CFStringRef const kDADiskDescriptionRepairRunningKey;
 ```
 
 

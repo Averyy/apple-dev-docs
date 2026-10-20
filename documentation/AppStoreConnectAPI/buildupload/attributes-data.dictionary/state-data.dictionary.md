@@ -1,7 +1,8 @@
 # BuildUpload.Attributes.State
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The state of a build upload including any errors and warnings.
 
@@ -10,7 +11,7 @@ The state of a build upload including any errors and warnings.
 
 ## Declaration
 
-```swift
+```
 object BuildUpload.Attributes.State
 ```
 

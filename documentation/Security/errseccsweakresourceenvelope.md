@@ -1,7 +1,8 @@
 # errSecCSWeakResourceEnvelope
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The resource envelope is obsolete (version 1 signature).
 
@@ -13,6 +14,10 @@ The resource envelope is obsolete (version 1 signature).
 
 ```swift
 var errSecCSWeakResourceEnvelope: OSStatus { get }
+```
+
+```c
+errSecCSWeakResourceEnvelope
 ```
 
 

@@ -1,7 +1,8 @@
 # slice(at:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
@@ -40,7 +41,7 @@ func incrementRegion(
 }
 ```
 
-> **Note**: If you need to avoid `consuming` the view which this is called on, you can use [`mutatingSlice(at:)`](ndarray/mutablerawview/mutatingslice(at:)-5ts4w.md).
+> **Note**: If you need to avoid `consuming` the view which this is called on, you can use [`mutatingSlice(at:)`](./mutatingslice%28at%29-5ts4w.md).
 
 ## Parameters
 
@@ -48,11 +49,12 @@ func incrementRegion(
 
 ## See Also
 
-- [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableRawView](ndarray/mutablerawview/slice(at:)-47fbq.md)
+### Slicing the view
+- [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableRawView](./slice%28at%29-47fbq.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableRawView](ndarray/mutablerawview/mutatingslice(at:)-5tnq5.md)
+- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableRawView](./mutatingslice%28at%29-5tnq5.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableRawView](ndarray/mutablerawview/mutatingslice(at:)-5ts4w.md)
+- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableRawView](./mutatingslice%28at%29-5ts4w.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 

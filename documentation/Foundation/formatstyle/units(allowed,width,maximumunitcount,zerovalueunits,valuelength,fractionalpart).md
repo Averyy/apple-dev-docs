@@ -1,7 +1,8 @@
 # units(allowed:width:maximumUnitCount:zeroValueUnits:valueLength:fractionalPart:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a style for formatting a duration that uses the specified units.
 
@@ -20,15 +21,17 @@ Returns a style for formatting a duration that uses the specified units.
 static func units(allowed units: Set<Duration.UnitsFormatStyle.Unit> = [.hours, .minutes, .seconds], width: Duration.UnitsFormatStyle.UnitWidth = .abbreviated, maximumUnitCount: Int? = nil, zeroValueUnits: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy = .hide, valueLength: Int? = nil, fractionalPart: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy = .hide) -> Self
 ```
 
+Available when `Self` is `Duration.UnitsFormatStyle`.
+
 #### Return Value
 
 A duration units format style that uses the specified units.
 
 #### Discussion
 
-Use the dot-notation form of this type method when the call point allows the use of [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/swift/duration/unitsformatstyle). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/duration/formatted(_:)) method of [`Duration`](https://developer.apple.com/documentation/swift/duration).
+Use the dot-notation form of this type method when the call point allows the use of [`Duration.UnitsFormatStyle`](../../Swift/duration/unitsformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/duration/formatted%28_%29.md) method of [`Duration`](../../Swift/duration.md).
 
-The following example creates a duration to represent 1 hour, 10 minutes, 32 seconds, and 400 milliseconds. It then creates a [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/swift/duration/unitsformatstyle) to show the hours, minutes, seconds, and milliseconds parts, with a wide width that presents the full name of each unit.
+The following example creates a duration to represent 1 hour, 10 minutes, 32 seconds, and 400 milliseconds. It then creates a [`Duration.UnitsFormatStyle`](../../Swift/duration/unitsformatstyle.md) to show the hours, minutes, seconds, and milliseconds parts, with a wide width that presents the full name of each unit.
 
 ```swift
 let duration = Duration.seconds(70 * 60 + 32) + Duration.milliseconds(400)
@@ -50,13 +53,14 @@ let formatted = duration.formatted(
 
 ## See Also
 
-- [static var timeDuration: Date.ComponentsFormatStyle](formatstyle/timeduration.md)
+### Applying duration styles
+- [static var timeDuration: Date.ComponentsFormatStyle](./timeduration.md)
   A style for formatting a duration expressed as a range of dates.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](../date/componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
-- [static func time(pattern: Duration.TimeFormatStyle.Pattern) -> Self](formatstyle/time(pattern:).md)
+- [static func time(pattern: Duration.TimeFormatStyle.Pattern) -> Self](./time%28pattern%29.md)
   Returns a style for formatting a duration using a provided pattern.
-- [static func units<ValueRange>(allowed: Set<Duration.UnitsFormatStyle.Unit>, width: Duration.UnitsFormatStyle.UnitWidth, maximumUnitCount: Int?, zeroValueUnits: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy, valueLengthLimits: ValueRange, fractionalPart: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy) -> Self](formatstyle/units(allowed:width:maximumunitcount:zerovalueunits:valuelengthlimits:fractionalpart:).md)
+- [static func units<ValueRange>(allowed: Set<Duration.UnitsFormatStyle.Unit>, width: Duration.UnitsFormatStyle.UnitWidth, maximumUnitCount: Int?, zeroValueUnits: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy, valueLengthLimits: ValueRange, fractionalPart: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy) -> Self](./units%28allowed,width,maximumunitcount,zerovalueunits,valuelengthlimits,fractionalpart%29.md)
   Returns a style for formatting a duration range that uses the specified units, with padding/truncating behavior defined as a range.
 
 

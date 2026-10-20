@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides behavior for the Safari view controller’s Done and Action buttons.
 
@@ -16,13 +17,18 @@ An object that provides behavior for the Safari view controller’s Done and Act
 weak var delegate: (any SFSafariViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<SFSafariViewControllerDelegate> delegate;
+```
+
 #### Discussion
 
-Provide a [`SFSafariViewControllerDelegate`](sfsafariviewcontrollerdelegate.md) object to respond to the Done and Action buttons.
+Provide a [`SFSafariViewControllerDelegate`](../sfsafariviewcontrollerdelegate.md) object to respond to the Done and Action buttons.
 
 ## See Also
 
-- [protocol SFSafariViewControllerDelegate](sfsafariviewcontrollerdelegate.md)
+### Responding to View Controller Interaction
+- [protocol SFSafariViewControllerDelegate](../sfsafariviewcontrollerdelegate.md)
   A protocol used to implement custom event handling for a Safari view controller.
 
 

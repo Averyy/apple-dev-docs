@@ -1,7 +1,8 @@
 # assigned
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user has access to this transaction through an organization.
 

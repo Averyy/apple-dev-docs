@@ -1,22 +1,27 @@
 # secondUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring time, using second units with the provided prefix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func secondUnit(with prefix: HKMetricPrefix) -> Self
+```
+
+```objc
++ (instancetype) secondUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
 #### Return Value
@@ -41,17 +46,18 @@ HKUnit *ms = [HKUnit secondUnitWithMetricPrefix:HKMetricPrefixMilli];
 
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 ## See Also
 
-- [class func second() -> Self](hkunit/second.md)
+### Constructing time units
+- [class func second() -> Self](./second%28%29.md)
   Returns a HealthKit unit for measuring time in seconds.
-- [class func minute() -> Self](hkunit/minute.md)
+- [class func minute() -> Self](./minute%28%29.md)
   Returns a HealthKit unit for measuring time in minutes.
-- [class func hour() -> Self](hkunit/hour.md)
+- [class func hour() -> Self](./hour%28%29.md)
   Returns a HealthKit unit for measuring time in hours.
-- [class func day() -> Self](hkunit/day.md)
+- [class func day() -> Self](./day%28%29.md)
   Returns a HealthKit unit for measuring time in days.
 
 

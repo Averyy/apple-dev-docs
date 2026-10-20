@@ -1,7 +1,8 @@
 # connection(_:needNewBodyStream:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an `NSURLConnection` needs to retransmit a request that has a body stream to provide a new, unopened stream.
 
@@ -18,6 +19,10 @@ Called when an `NSURLConnection` needs to retransmit a request that has a body s
 
 ```swift
 optional func connection(_ connection: NSURLConnection, needNewBodyStream request: URLRequest) -> InputStream?
+```
+
+```objc
+- (NSInputStream *) connection:(NSURLConnection *) connection needNewBodyStream:(NSURLRequest *) request;
 ```
 
 #### Return Value
@@ -38,7 +43,8 @@ By implementing this delegate method, the client opts out of automatic spooling,
 
 ## See Also
 
-- [func connection(NSURLConnection, willSend: URLRequest, redirectResponse: URLResponse?) -> URLRequest?](nsurlconnectiondatadelegate/connection(_:willsend:redirectresponse:).md)
+### Handling Redirects
+- [func connection(NSURLConnection, willSend: URLRequest, redirectResponse: URLResponse?) -> URLRequest?](./connection%28_,willsend,redirectresponse%29.md)
   Sent when the connection determines that it must change URLs in order to continue loading a request.
 
 

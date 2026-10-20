@@ -1,14 +1,15 @@
 # sadb_spirange_min
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t sadb_spirange_min;
 ```
 

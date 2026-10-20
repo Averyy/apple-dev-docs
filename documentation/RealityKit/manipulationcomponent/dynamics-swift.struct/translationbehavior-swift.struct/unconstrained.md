@@ -1,7 +1,8 @@
 # unconstrained
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Rotation is unconstrained in all axes.
 

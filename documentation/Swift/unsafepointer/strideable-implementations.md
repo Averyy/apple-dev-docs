@@ -1,18 +1,19 @@
 # Strideable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func + (Self, Self.Stride) -> Self](unsafepointer/+(_:_:)-5q1dp.md)
-- [static func + (Self.Stride, Self) -> Self](unsafepointer/+(_:_:)-7xyjl.md)
-- [static func += (inout Self, Self.Stride)](unsafepointer/+=(_:_:).md)
-- [static func - (Self, Self) -> Self.Stride](unsafepointer/-(_:_:)-2mzyc.md)
-- [static func - (Self, Self.Stride) -> Self](unsafepointer/-(_:_:)-7vacg.md)
-- [static func -= (inout Self, Self.Stride)](unsafepointer/-=(_:_:).md)
+- [static func + (Self, Self.Stride) -> Self](./plus%28_,_%29-5q1dp.md)
+- [static func + (Self.Stride, Self) -> Self](./plus%28_,_%29-7xyjl.md)
+- [static func += (inout Self, Self.Stride)](./pluseq%28_,_%29.md)
+- [static func - (Self, Self) -> Self.Stride](./minus%28_,_%29-2mzyc.md)
+- [static func - (Self, Self.Stride) -> Self](./minus%28_,_%29-7vacg.md)
+- [static func -= (inout Self, Self.Stride)](./minuseq%28_,_%29.md)
 ### Type Aliases
-- [UnsafePointer.Stride](unsafepointer/stride.md)
+- [UnsafePointer.Stride](./stride.md)
   A type that represents the distance between two values.
 
 

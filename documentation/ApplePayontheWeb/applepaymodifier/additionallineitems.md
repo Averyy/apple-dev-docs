@@ -1,7 +1,8 @@
 # additionalLineItems
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of line items that explain additional charges and discounts.
 
@@ -11,13 +12,13 @@ A set of line items that explain additional charges and discounts.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayLineItem> additionalLineItems;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
+- [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
 #### Discussion
 
@@ -25,7 +26,8 @@ A line item can describe an additional charge or discount, and can consist of po
 
 ## See Also
 
-- [total](applepaymodifier/total.md)
+### Payment line items
+- [total](./total.md)
   A line item that represents the total payment.
 
 

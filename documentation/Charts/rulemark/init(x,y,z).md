@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a horizontal or vertical rule mark for a  3D chart.
 

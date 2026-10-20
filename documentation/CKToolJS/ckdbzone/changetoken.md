@@ -1,7 +1,8 @@
 # changeToken
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The client change token for the zone.
 
@@ -10,7 +11,7 @@ The client change token for the zone.
 
 ## Declaration
 
-```swift
+```
 attribute string? changeToken;
 ```
 

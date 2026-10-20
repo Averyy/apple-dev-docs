@@ -1,7 +1,8 @@
 # icon(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the extension’s icon image for the specified size.
 
@@ -14,8 +15,28 @@ Returns the extension’s icon image for the specified size.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+func icon(for size: CGSize) -> UIImage?
+```
+
+*macOS*
+
 ```swift
 func icon(for size: CGSize) -> NSImage?
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (UIImage *) iconForSize:(CGSize) size;
+```
+
+*macOS*
+
+```objc
+- (NSImage *) iconForSize:(CGSize) size;
 ```
 
 #### Return Value
@@ -32,7 +53,8 @@ This icon should represent the extension in settings or other areas that show th
 
 ## See Also
 
-- [func actionIcon(for: CGSize) -> UIImage?](wkwebextension/actionicon(for:).md)
+### Related Documentation
+- [func actionIcon(for: CGSize) -> UIImage?](./actionicon%28for%29.md)
   Returns the default action icon for the specified size.
 
 

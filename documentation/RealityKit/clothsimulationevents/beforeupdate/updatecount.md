@@ -1,7 +1,8 @@
 # updateCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of updates in the simulation including the next update that immediately follows this event.
 
@@ -18,7 +19,8 @@ let updateCount: UInt64
 
 ## See Also
 
-- [let simulationEntity: Entity](clothsimulationevents/beforeupdate/simulationentity.md)
+### Inspecting the update
+- [let simulationEntity: Entity](./simulationentity.md)
   The entity that has the simulation component that this event originates from.
 
 

@@ -1,7 +1,8 @@
 # GCColor
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The color of a device light.
 
@@ -19,39 +20,44 @@ The color of a device light.
 class GCColor
 ```
 
+```objc
+@interface GCColor : NSObject
+```
+
 ## Topics
 
 ### Creating colors
-- [init(red: Float, green: Float, blue: Float)](gccolor/init(red:green:blue:).md)
+- [init(red: Float, green: Float, blue: Float)](./gccolor/init%28red,green,blue%29.md)
   Creates a color with the specified red, green, and blue values.
 ### Setting color values
-- [var red: Float](gccolor/red.md)
+- [var red: Float](./gccolor/red.md)
   The normalized value of the red component ranging from 0 to 1.
-- [var green: Float](gccolor/green.md)
+- [var green: Float](./gccolor/green.md)
   The normalized value of the green component ranging from 0 to 1.
-- [var blue: Float](gccolor/blue.md)
+- [var blue: Float](./gccolor/blue.md)
   The normalized value of the blue component ranging from 0 to 1.
 ### Initializers
-- [init?(coder: NSCoder)](gccolor/init(coder:).md)
+- [init?(coder: NSCoder)](./gccolor/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var color: GCColor](gcdevicelight/color.md)
+### Getting the light’s color
+- [var color: GCColor](./gcdevicelight/color.md)
   The color of a device’s light.
 
 

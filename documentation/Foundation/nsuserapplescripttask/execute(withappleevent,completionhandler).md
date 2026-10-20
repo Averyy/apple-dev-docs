@@ -1,7 +1,8 @@
 # execute(withAppleEvent:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Execute the AppleScript script by sending it the specified Apple event.
 
@@ -11,7 +12,15 @@ Execute the AppleScript script by sending it the specified Apple event.
 ## Declaration
 
 ```swift
+func execute(withAppleEvent event: NSAppleEventDescriptor?, completionHandler handler: NSUserAppleScriptTask.CompletionHandler? = nil)
+```
+
+```swift
 func execute(withAppleEvent event: NSAppleEventDescriptor?) async throws -> NSAppleEventDescriptor
+```
+
+```objc
+- (void) executeWithAppleEvent:(NSAppleEventDescriptor *) event completionHandler:(NSUserAppleScriptTaskCompletionHandler) handler;
 ```
 
 #### Discussion
@@ -25,11 +34,12 @@ If the script completed normally, the completion handler’s `error` parameter w
 ## Parameters
 
 - `event`: The Apple event.
-- `handler`: The completion handler Block that returns the result or an error. See [`NSUserAppleScriptTask.CompletionHandler`](nsuserapplescripttask/completionhandler.md).
+- `handler`: The completion handler Block that returns the result or an error. See [`NSUserAppleScriptTask.CompletionHandler`](./completionhandler.md).
 
 ## See Also
 
-- [init(url: URL) throws](nsuserscripttask/init(url:)-2qgls.md)
+### Related Documentation
+- [init(url: URL) throws](../nsuserscripttask/init%28url%29-2qgls.md)
   Return a user script task instance given a URL for a script file.
 
 

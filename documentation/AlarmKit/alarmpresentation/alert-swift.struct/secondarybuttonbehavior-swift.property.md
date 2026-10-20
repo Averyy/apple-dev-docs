@@ -1,7 +1,8 @@
 # secondaryButtonBehavior
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The defined behavior of the second button.
 
@@ -22,9 +23,10 @@ You can define the button to switch back to a countdown for a snoozed alarm or r
 
 ## See Also
 
-- [var secondaryButton: AlarmButton?](alarmpresentation/alert-swift.struct/secondarybutton.md)
+### Creating a second button
+- [var secondaryButton: AlarmButton?](./secondarybutton.md)
   The appearance of the secondary button.
-- [AlarmPresentation.Alert.SecondaryButtonBehavior](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md)
+- [AlarmPresentation.Alert.SecondaryButtonBehavior](./secondarybuttonbehavior-swift.enum.md)
   Describes the behaviour of the second button.
 
 

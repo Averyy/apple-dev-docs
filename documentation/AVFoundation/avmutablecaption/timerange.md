@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range over which the system presents the caption.
 
@@ -17,9 +18,14 @@ The time range over which the system presents the caption.
 var timeRange: CMTimeRange { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CMTimeRange timeRange;
+```
+
 ## See Also
 
-- [var text: String](avmutablecaption/text.md)
+### Configuring text and timing
+- [var text: String](./text.md)
   The caption text.
 
 

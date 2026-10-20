@@ -1,18 +1,19 @@
 # now()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the current time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ static func now() -> DispatchWallTime
 
 ## See Also
 
-- [static let distantFuture: DispatchWallTime](dispatchwalltime/distantfuture.md)
+### Getting Well-Known Times
+- [static let distantFuture: DispatchWallTime](./distantfuture.md)
   A time in the distant future.
 
 

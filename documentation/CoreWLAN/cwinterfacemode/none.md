@@ -1,7 +1,8 @@
 # CWInterfaceMode.none
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Interface is not in any mode.
 
@@ -14,13 +15,18 @@ Interface is not in any mode.
 case none
 ```
 
+```c
+kCWInterfaceModeNone
+```
+
 ## See Also
 
-- [CWInterfaceMode.station](cwinterfacemode/station.md)
+### Constants
+- [CWInterfaceMode.station](./station.md)
   Interface is participating in an infrastructure network as a non-AP station.
-- [CWInterfaceMode.IBSS](cwinterfacemode/ibss.md)
+- [CWInterfaceMode.IBSS](./ibss.md)
   Interface is participating in an IBSS network.
-- [CWInterfaceMode.hostAP](cwinterfacemode/hostap.md)
+- [CWInterfaceMode.hostAP](./hostap.md)
   Interface is participating in an infrastructure network as an access point.
 
 

@@ -1,13 +1,14 @@
 # es_muted_process_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes a process’s muted events.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,31 +16,36 @@ A structure that describes a process’s muted events.
 struct es_muted_process_t
 ```
 
+```c
+typedef struct { ... } es_muted_process_t;
+```
+
 ## Topics
 
 ### Accessing Muted Processes
-- [var audit_token: audit_token_t](es_muted_process_t/audit_token.md)
+- [var audit_token: audit_token_t](./es_muted_process_t/audit_token.md)
   The audit token associated with a muted process.
-- [var events: UnsafePointer<es_event_type_t>!](es_muted_process_t/events.md)
+- [var events: UnsafePointer<es_event_type_t>!](./es_muted_process_t/events.md)
   An array containing the muted event types.
-- [struct es_event_type_t](es_event_type_t.md)
+- [struct es_event_type_t](./es_event_type_t.md)
   A type used to identify a message’s event type and subscribe to events of that type.
-- [var event_count: Int](es_muted_process_t/event_count.md)
+- [var event_count: Int](./es_muted_process_t/event_count.md)
   The number of elements in the muted events array.
 ### Initializers
-- [init()](es_muted_process_t/init.md)
-- [init(audit_token: audit_token_t, event_count: Int, events: UnsafePointer<es_event_type_t>!)](es_muted_process_t/init(audit_token:event_count:events:).md)
+- [init()](./es_muted_process_t/init%28%29.md)
+- [init(audit_token: audit_token_t, event_count: Int, events: UnsafePointer<es_event_type_t>!)](./es_muted_process_t/init%28audit_token,event_count,events%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [var processes: UnsafePointer<es_muted_process_t>!](es_muted_processes_t/processes.md)
+### Accessing Muted Processes
+- [var processes: UnsafePointer<es_muted_process_t>!](./es_muted_processes_t/processes.md)
   An array containing the muted processes.
-- [var count: Int](es_muted_processes_t/count.md)
+- [var count: Int](./es_muted_processes_t/count.md)
   The number of elements in the processes array.
 
 

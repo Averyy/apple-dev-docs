@@ -1,7 +1,8 @@
 # ensureCapacity
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,14 +10,23 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual uint32_t ensureCapacity(uint32_t newCapacity);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int ensureCapacity(unsigned int newCapacity);
 ```
 
 ## See Also
 
-- [- getCount](oscollection/3438148-getcount.md)
-- [- getCapacity](oscollection/3438147-getcapacity.md)
+### Inspecting a Collection
+- [- getCount](./api-3438148-getcount.md)
+- [- getCapacity](./api-3438147-getcapacity.md)
 
 
 ---

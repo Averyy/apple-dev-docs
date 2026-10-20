@@ -1,9 +1,10 @@
 # bitsPerBlock
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Number of bits per pixel. If [`blockSize`](cvpixelformatdescription/pixellayout/blocksize.md) is greater than (1, 1) then this represents bits per block.
+Number of bits per pixel. If [`blockSize`](./blocksize.md) is greater than (1, 1) then this represents bits per block.
 
 **Availability**:
 - iOS 26.0+

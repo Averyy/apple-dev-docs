@@ -1,7 +1,8 @@
 # FlattenSequence.Iterator.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element traversed by the iterator.
 
@@ -19,6 +20,8 @@ The type of element traversed by the iterator.
 ```swift
 typealias Element = Base.Element.Element
 ```
+
+Available when `Base` conforms to `Sequence` and `Base.Element` conforms to `Sequence`.
 
 
 ---

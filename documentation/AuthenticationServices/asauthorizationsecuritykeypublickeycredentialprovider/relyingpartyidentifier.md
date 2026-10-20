@@ -1,7 +1,8 @@
 # relyingPartyIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The domain name of the service to authorize against.
 
@@ -17,11 +18,16 @@ The domain name of the service to authorize against.
 var relyingPartyIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * relyingPartyIdentifier;
+```
+
 ## See Also
 
-- [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationsecuritykeypublickeycredentialprovider/createcredentialassertionrequest(challenge:).md)
+### Creating the request
+- [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](./createcredentialassertionrequest%28challenge%29.md)
   Creates an assertion request with a challenge.
-- [func createCredentialRegistrationRequest(challenge: Data, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationsecuritykeypublickeycredentialprovider/createcredentialregistrationrequest(challenge:displayname:name:userid:).md)
+- [func createCredentialRegistrationRequest(challenge: Data, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28challenge,displayname,name,userid%29.md)
   Creates a registration request with a challenge, display name, and user ID.
 
 

@@ -1,7 +1,8 @@
 # NEVPNError
 
 **Framework**: Network Extension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an error encountered while configuring or using a VPN.
 
@@ -22,33 +23,33 @@ struct NEVPNError
 ## Topics
 
 ### Inspecting error properties
-- [NEVPNError.Code](nevpnerror-swift.struct/code.md)
+- [NEVPNError.Code](./nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
 ### Error codes
-- [static var configurationDisabled: NEVPNError.Code](nevpnerror-swift.struct/configurationdisabled.md)
+- [static var configurationDisabled: NEVPNError.Code](./nevpnerror-swift.struct/configurationdisabled.md)
   An error code that indicates the VPN configuration associated with the VPN manager isn’t enabled.
-- [static var configurationInvalid: NEVPNError.Code](nevpnerror-swift.struct/configurationinvalid.md)
+- [static var configurationInvalid: NEVPNError.Code](./nevpnerror-swift.struct/configurationinvalid.md)
   An error code that indicates the VPN configuration associated with the VPN manager object is invalid.
-- [static var connectionFailed: NEVPNError.Code](nevpnerror-swift.struct/connectionfailed.md)
+- [static var connectionFailed: NEVPNError.Code](./nevpnerror-swift.struct/connectionfailed.md)
   An error code that indicates the connection to the VPN server failed.
-- [static var configurationStale: NEVPNError.Code](nevpnerror-swift.struct/configurationstale.md)
+- [static var configurationStale: NEVPNError.Code](./nevpnerror-swift.struct/configurationstale.md)
   An error code that indicates another process modfied the VPN configuration since the last time the app loaded the configuration.
-- [static var configurationReadWriteFailed: NEVPNError.Code](nevpnerror-swift.struct/configurationreadwritefailed.md)
+- [static var configurationReadWriteFailed: NEVPNError.Code](./nevpnerror-swift.struct/configurationreadwritefailed.md)
   An error code that indicates an error occurred while reading or writing the Network Extension preferences.
-- [static var configurationUnknown: NEVPNError.Code](nevpnerror-swift.struct/configurationunknown.md)
+- [static var configurationUnknown: NEVPNError.Code](./nevpnerror-swift.struct/configurationunknown.md)
   An error code that indicates that unspecified error occurred.
 ### Type Properties
-- [static var errorDomain: String](nevpnerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./nevpnerror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

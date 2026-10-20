@@ -1,7 +1,8 @@
 # imageWidth
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Physical width of active image if known, in millimeters, otherwise zero.
 
@@ -10,7 +11,7 @@ Physical width of active image if known, in millimeters, otherwise zero.
 
 ## Declaration
 
-```swift
+```c
 UInt16 imageWidth;
 ```
 

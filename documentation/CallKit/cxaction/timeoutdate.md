@@ -1,7 +1,8 @@
 # timeoutDate
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time after which the action cannot be completed.
 
@@ -18,11 +19,16 @@ The time after which the action cannot be completed.
 var timeoutDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * timeoutDate;
+```
+
 ## See Also
 
-- [var uuid: UUID](cxaction/uuid.md)
+### Accessing Action Attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier for the action.
-- [var isComplete: Bool](cxaction/iscomplete.md)
+- [var isComplete: Bool](./iscomplete.md)
   A Boolean value that indicates whether the action has been performed by the provider.
 
 

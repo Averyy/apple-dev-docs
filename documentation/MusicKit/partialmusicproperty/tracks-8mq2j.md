@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the tracks in the playlist.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the tracks in the playl
 ```swift
 static let tracks: MusicRelationshipProperty<Playlist, Track>
 ```
+
+Available when `Root` is `Playlist`.
 
 
 ---

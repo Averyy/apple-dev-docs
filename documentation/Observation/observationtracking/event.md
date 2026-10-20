@@ -1,7 +1,8 @@
 # ObservationTracking.Event
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,12 +22,12 @@ struct Event
 ## Topics
 
 ### Structures
-- [ObservationTracking.Event.Kind](observationtracking/event/kind-swift.struct.md)
+- [ObservationTracking.Event.Kind](./event/kind-swift.struct.md)
 ### Instance Properties
-- [var kind: ObservationTracking.Event.Kind](observationtracking/event/kind-swift.property.md)
+- [var kind: ObservationTracking.Event.Kind](./event/kind-swift.property.md)
 ### Instance Methods
-- [func cancel()](observationtracking/event/cancel.md)
-- [func matches(PartialKeyPath<some Observable>) -> Bool](observationtracking/event/matches(_:).md)
+- [func cancel()](./event/cancel%28%29.md)
+- [func matches(PartialKeyPath<some Observable>) -> Bool](./event/matches%28_%29.md)
 
 
 ---

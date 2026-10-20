@@ -1,12 +1,13 @@
 # iOS & iPadOS 26.4 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4. The SDK comes bundled with Xcode 26.4. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4. The SDK comes bundled with Xcode 26.4. For information on the compatibility requirements for Xcode 26.4, see [Xcode 26.4 Release Notes](../Xcode-Release-Notes/xcode-26_4-release-notes.md).
 
 ##### Accessory Notifications
 
@@ -18,9 +19,11 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
+- Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808)
 
-##### Audioaccessorykit
+  **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
+
+##### AudioAccessoryKit
 
 ###### Known Issues
 
@@ -65,7 +68,9 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Resolved Issues
 
-- Fixed: Multiple processes leak `CFRunLoopSource` objects when Automatic proxy configuration (PAC) or Auto proxy discovery are configured. For clients of the `CFNetworkExecuteProxyAutoConfigurationURL` and `CFNetworkExecuteProxyAutoConfigurationScript` API, please check to make sure your process is not working around the leak by overreleasing the `CFRunLoopSourceRef` returned by those functions or the `CFArrayRef` and `CFErrorRef` passed to the completion.  (166839810) (FB21376045)
+- Fixed: Multiple processes leak `CFRunLoopSource` objects when Automatic proxy configuration (PAC) or Auto proxy discovery are configured.
+
+  For clients of the `CFNetworkExecuteProxyAutoConfigurationURL` and `CFNetworkExecuteProxyAutoConfigurationScript` API, please check to make sure your process is not working around the leak by overreleasing the `CFRunLoopSourceRef` returned by those functions or the `CFArrayRef` and `CFErrorRef` passed to the completion.  (166839810) (FB21376045)
 
 ##### Reality Composer
 
@@ -73,17 +78,17 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 - Reality Composer iOS can no longer export projects as `.reality` or USDZ. Opening export menu results in an empty panel.  (170091896)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- New fields [`revocationType`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationtype-swift.property) and [`revocationPercentage`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationpercentage) have been added to [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction).  (148858551)
+- New fields [revocationType](../StoreKit/transaction/revocationtype-swift.property.md) and [revocationPercentage](../StoreKit/transaction/revocationpercentage.md) have been added to [Transaction](../StoreKit/transaction.md).  (148858551)
 
 ###### Resolved Issues
 
 - Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
@@ -91,9 +96,13 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142) **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
+- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties.
 
-##### Uikit
+  For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142)
+
+  **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
+
+##### UIKit
 
 ###### Resolved Issues
 
@@ -101,17 +110,18 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
-- [iOS & iPadOS 26.6 Release Notes](ios-ipados-26_6-release-notes.md)
+### iOS & iPadOS 26
+- [iOS & iPadOS 26.6 Release Notes](./ios-ipados-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.5 Release Notes](ios-ipados-26_5-release-notes.md)
+- [iOS & iPadOS 26.5 Release Notes](./ios-ipados-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.3 Release Notes](ios-ipados-26_3-release-notes.md)
+- [iOS & iPadOS 26.3 Release Notes](./ios-ipados-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.2 Release Notes](ios-ipados-26_2-release-notes.md)
+- [iOS & iPadOS 26.2 Release Notes](./ios-ipados-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.1 Release Notes](ios-ipados-26_1-release-notes.md)
+- [iOS & iPadOS 26.1 Release Notes](./ios-ipados-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26 Release Notes](ios-ipados-26-release-notes.md)
+- [iOS & iPadOS 26 Release Notes](./ios-ipados-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # verticalPreferred
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The item supports both horizontal and vertical bars, and prefers a vertical placement when both horizontal and vertical bars are present.
 
@@ -18,9 +19,10 @@ static let verticalPreferred: ToolbarItemAxisBehavior
 
 ## See Also
 
-- [static let automatic: ToolbarItemAxisBehavior](toolbaritemaxisbehavior/automatic.md)
+### Getting behavior options
+- [static let automatic: ToolbarItemAxisBehavior](./automatic.md)
   The automatic axis behavior.
-- [static let horizontalOnly: ToolbarItemAxisBehavior](toolbaritemaxisbehavior/horizontalonly.md)
+- [static let horizontalOnly: ToolbarItemAxisBehavior](./horizontalonly.md)
   The item only supports horizontal bars. If an item only supports horizontal bars and no horizontal bars are present, the item is not shown.
 
 

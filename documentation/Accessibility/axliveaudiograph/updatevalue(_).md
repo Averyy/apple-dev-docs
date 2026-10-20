@@ -1,7 +1,8 @@
 # updateValue(_:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the pitch of the audio graph’s tone.
 
@@ -18,6 +19,10 @@ Sets the pitch of the audio graph’s tone.
 
 ```swift
 class func updateValue(_ value: Double)
+```
+
+```objc
++ (void) updateValue:(double) value;
 ```
 
 ## Parameters

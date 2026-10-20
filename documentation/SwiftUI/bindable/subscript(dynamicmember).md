@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a binding to the value of a given key path.
 
@@ -22,9 +23,10 @@ subscript<Subject>(dynamicMember keyPath: ReferenceWritableKeyPath<Value, Subjec
 
 ## See Also
 
-- [var wrappedValue: Value](bindable/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value](./wrappedvalue.md)
   The wrapped object.
-- [var projectedValue: Bindable<Value>](bindable/projectedvalue.md)
+- [var projectedValue: Bindable<Value>](./projectedvalue.md)
   The bindable wrapper for the object that creates bindings to its properties using dynamic member lookup.
 
 

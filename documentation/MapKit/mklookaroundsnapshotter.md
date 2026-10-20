@@ -1,7 +1,8 @@
 # MKLookAroundSnapshotter
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A utility class that you use to create a static image from a LookAround scene.
 
@@ -18,45 +19,50 @@ A utility class that you use to create a static image from a LookAround scene.
 class MKLookAroundSnapshotter
 ```
 
+```objc
+@interface MKLookAroundSnapshotter : NSObject
+```
+
 ## Topics
 
 ### Creating a snapshotter object
-- [init(scene: MKLookAroundScene, options: MKLookAroundSnapshotter.Options)](mklookaroundsnapshotter/init(scene:options:).md)
+- [init(scene: MKLookAroundScene, options: MKLookAroundSnapshotter.Options)](./mklookaroundsnapshotter/init%28scene,options%29.md)
   Create a new snapshotter object with the scene and options you specify.
 ### Starting and stopping a snapshot
-- [func cancel()](mklookaroundsnapshotter/cancel.md)
+- [func cancel()](./mklookaroundsnapshotter/cancel%28%29.md)
   Cancels an in-progress snapshot request.
-- [func getSnapshotWithCompletionHandler((MKLookAroundSnapshotter.Snapshot?, (any Error)?) -> Void)](mklookaroundsnapshotter/getsnapshotwithcompletionhandler(_:).md)
+- [func getSnapshotWithCompletionHandler((MKLookAroundSnapshotter.Snapshot?, (any Error)?) -> Void)](./mklookaroundsnapshotter/getsnapshotwithcompletionhandler%28_%29.md)
   Requests a new snapshot and calls the completion handler you provide.
 ### Monitoring the progress of a snaphot
-- [var isLoading: Bool](mklookaroundsnapshotter/isloading.md)
+- [var isLoading: Bool](./mklookaroundsnapshotter/isloading.md)
   A Boolean value that indicates whether the snapshot request is loading.
 ### Customizing the snapshot
-- [MKLookAroundSnapshotter.Options](mklookaroundsnapshotter/options.md)
+- [MKLookAroundSnapshotter.Options](./mklookaroundsnapshotter/options.md)
   Values you use to customize LookAround snapshots.
 ### Accessing snapshot imagery
-- [MKLookAroundSnapshotter.Snapshot](mklookaroundsnapshotter/snapshot.md)
+- [MKLookAroundSnapshotter.Snapshot](./mklookaroundsnapshotter/snapshot.md)
   An object that contains a snapshot image.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKLookAroundScene](mklookaroundscene.md)
+### Exploring at street level
+- [class MKLookAroundScene](./mklookaroundscene.md)
   A utility class that encapsulates information the framework requires to retrieve and display a specific Look Around location’s imagery.
-- [class MKLookAroundSceneRequest](mklookaroundscenerequest.md)
+- [class MKLookAroundSceneRequest](./mklookaroundscenerequest.md)
   A class you use to request a LookAround scene at the location you specify.
-- [class MKLookAroundViewController](mklookaroundviewcontroller.md)
+- [class MKLookAroundViewController](./mklookaroundviewcontroller.md)
   A class that manages the presentation and display of a LookAround view.
 
 

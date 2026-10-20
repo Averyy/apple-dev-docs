@@ -1,7 +1,8 @@
 # isMutedForAudio
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the engine mutes audio.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the engine mutes audio.
 var isMutedForAudio: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL isMutedForAudio;
+```
+
 ## See Also
 
-- [var playsAudioOnly: Bool](chhapticengine/playsaudioonly.md)
+### Modifying Playback Properties
+- [var playsAudioOnly: Bool](./playsaudioonly.md)
   A Boolean value that indicates whether the engine ignores haptic events and plays audio events only.
-- [var playsHapticsOnly: Bool](chhapticengine/playshapticsonly.md)
+- [var playsHapticsOnly: Bool](./playshapticsonly.md)
   A Boolean value that indicates whether the engine ignores audio events.
-- [var isMutedForHaptics: Bool](chhapticengine/ismutedforhaptics.md)
+- [var isMutedForHaptics: Bool](./ismutedforhaptics.md)
   A Boolean value that indicates whether the engine mutes haptics.
 
 

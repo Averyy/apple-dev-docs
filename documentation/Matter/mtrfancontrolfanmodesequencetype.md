@@ -1,16 +1,19 @@
 # MTRFanControlFanModeSequenceType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 17.0
+- iPadOS 16.1+ - Deprecated in 17.0
+- Mac Catalyst 16.1+ - Deprecated in 17.0
+- macOS 13.0+ - Deprecated in 14.0
+- tvOS 16.1+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 10.0
+
+> **Deprecated**: Please use MTRFanControlFanModeSequence
 
 ## Declaration
 
@@ -18,27 +21,31 @@
 enum MTRFanControlFanModeSequenceType
 ```
 
+```c
+enum MTRFanControlFanModeSequenceType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRFanControlFanModeSequenceType.offLowHigh](mtrfancontrolfanmodesequencetype/offlowhigh.md)
-- [MTRFanControlFanModeSequenceType.offLowHighAuto](mtrfancontrolfanmodesequencetype/offlowhighauto.md)
-- [MTRFanControlFanModeSequenceType.offLowMedHigh](mtrfancontrolfanmodesequencetype/offlowmedhigh.md)
-- [MTRFanControlFanModeSequenceType.offLowMedHighAuto](mtrfancontrolfanmodesequencetype/offlowmedhighauto.md)
-- [MTRFanControlFanModeSequenceType.offOn](mtrfancontrolfanmodesequencetype/offon.md)
-- [MTRFanControlFanModeSequenceType.offOnAuto](mtrfancontrolfanmodesequencetype/offonauto.md)
+- [MTRFanControlFanModeSequenceType.offLowHigh](./mtrfancontrolfanmodesequencetype/offlowhigh.md)
+- [MTRFanControlFanModeSequenceType.offLowHighAuto](./mtrfancontrolfanmodesequencetype/offlowhighauto.md)
+- [MTRFanControlFanModeSequenceType.offLowMedHigh](./mtrfancontrolfanmodesequencetype/offlowmedhigh.md)
+- [MTRFanControlFanModeSequenceType.offLowMedHighAuto](./mtrfancontrolfanmodesequencetype/offlowmedhighauto.md)
+- [MTRFanControlFanModeSequenceType.offOn](./mtrfancontrolfanmodesequencetype/offon.md)
+- [MTRFanControlFanModeSequenceType.offOnAuto](./mtrfancontrolfanmodesequencetype/offonauto.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrfancontrolfanmodesequencetype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrfancontrolfanmodesequencetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

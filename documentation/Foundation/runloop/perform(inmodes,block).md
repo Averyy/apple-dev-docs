@@ -1,7 +1,8 @@
 # perform(inModes:block:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a block that the run loop invokes when it’s running in any of the specified modes.
 
@@ -20,6 +21,10 @@ Schedules a block that the run loop invokes when it’s running in any of the sp
 func perform(inModes modes: [RunLoop.Mode], block: @escaping @Sendable () -> Void)
 ```
 
+```objc
+- (void) performInModes:(NSArray<NSString *> *) modes block:(void (^)()) block;
+```
+
 ## Parameters
 
 - `modes`: An array of modes in which the run loop invokes the block.
@@ -27,13 +32,14 @@ func perform(inModes modes: [RunLoop.Mode], block: @escaping @Sendable () -> Voi
 
 ## See Also
 
-- [func perform(() -> Void)](runloop/perform(_:).md)
+### Scheduling and Canceling Tasks
+- [func perform(() -> Void)](./perform%28_%29.md)
   Schedules a block that the run loop invokes.
-- [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](runloop/perform(_:target:argument:order:modes:).md)
+- [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](./perform%28_,target,argument,order,modes%29.md)
   Schedules the sending of a message on the receiver.
-- [func cancelPerform(Selector, target: Any, argument: Any?)](runloop/cancelperform(_:target:argument:).md)
+- [func cancelPerform(Selector, target: Any, argument: Any?)](./cancelperform%28_,target,argument%29.md)
   Cancels the sending of a previously scheduled message.
-- [func cancelPerformSelectors(withTarget: Any)](runloop/cancelperformselectors(withtarget:).md)
+- [func cancelPerformSelectors(withTarget: Any)](./cancelperformselectors%28withtarget%29.md)
   Cancels all outstanding ordered performs scheduled with a given target.
 
 

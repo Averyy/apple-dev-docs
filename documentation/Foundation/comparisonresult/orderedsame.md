@@ -1,7 +1,8 @@
 # ComparisonResult.orderedSame
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The two operands are equal.
 
@@ -20,11 +21,16 @@ The two operands are equal.
 case orderedSame
 ```
 
+```c
+NSOrderedSame
+```
+
 ## See Also
 
-- [ComparisonResult.orderedAscending](comparisonresult/orderedascending.md)
+### Constants
+- [ComparisonResult.orderedAscending](./orderedascending.md)
   The left operand is smaller than the right operand.
-- [ComparisonResult.orderedDescending](comparisonresult/ordereddescending.md)
+- [ComparisonResult.orderedDescending](./ordereddescending.md)
   The left operand is greater than the right operand.
 
 

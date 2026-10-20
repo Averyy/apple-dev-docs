@@ -1,7 +1,8 @@
 # buttonIconOnly
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that an icon-only button, without text, has been pressed (touch down).
 

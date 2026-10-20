@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rpath_command {
     ...
 };
@@ -17,9 +17,9 @@ struct rpath_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](rpath_command/1525802-cmd.md)
-- [cmdsize](rpath_command/1525254-cmdsize.md)
-- [path](rpath_command/1525472-path.md)
+- [cmd](./rpath_command/api-1525802-cmd.md)
+- [cmdsize](./rpath_command/api-1525254-cmdsize.md)
+- [path](./rpath_command/api-1525472-path.md)
 
 
 ---

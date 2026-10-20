@@ -1,17 +1,22 @@
 # getUUIDValue()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the data element is a UUID (type 3), it returns the value as an IOBluetoothSDPUUID.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getUUIDValue() -> IOBluetoothSDPUUID!
+```
+
+```objc
+- (IOBluetoothSDPUUID *) getUUIDValue;
 ```
 
 #### Return Value

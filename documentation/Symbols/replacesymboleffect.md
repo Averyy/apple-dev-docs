@@ -1,7 +1,8 @@
 # ReplaceSymbolEffect
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that replaces the layers of one symbol-based image with those of another.
 
@@ -31,67 +32,68 @@ A replace transition animates the change from one symbol image to another. You c
 ## Topics
 
 ### Accessing symbol effects
-- [var downUp: ReplaceSymbolEffect](replacesymboleffect/downup-swift.property.md)
+- [var downUp: ReplaceSymbolEffect](./replacesymboleffect/downup-swift.property.md)
   An effect that replaces a symbol by scaling it down, and scaling a different symbol up.
-- [var offUp: ReplaceSymbolEffect](replacesymboleffect/offup-swift.property.md)
+- [var offUp: ReplaceSymbolEffect](./replacesymboleffect/offup-swift.property.md)
   An effect that replaces a symbol by removing it, and scaling a different symbol up.
-- [var upUp: ReplaceSymbolEffect](replacesymboleffect/upup-swift.property.md)
+- [var upUp: ReplaceSymbolEffect](./replacesymboleffect/upup-swift.property.md)
   An effect that replaces a symbol by scaling it up, and scaling a different symbol up.
 ### Determining effect scope
-- [var byLayer: ReplaceSymbolEffect](replacesymboleffect/bylayer.md)
+- [var byLayer: ReplaceSymbolEffect](./replacesymboleffect/bylayer.md)
   An effect that replaces each layer separately.
-- [var wholeSymbol: ReplaceSymbolEffect](replacesymboleffect/wholesymbol.md)
+- [var wholeSymbol: ReplaceSymbolEffect](./replacesymboleffect/wholesymbol.md)
   An effect that replaces all layers simultaneously.
 ### Accessing the configuration
-- [var configuration: SymbolEffectConfiguration](replacesymboleffect/configuration.md)
+- [var configuration: SymbolEffectConfiguration](./replacesymboleffect/configuration.md)
   The configuration for the effect.
 ### Structures
-- [ReplaceSymbolEffect.MagicReplace](replacesymboleffect/magicreplace.md)
+- [ReplaceSymbolEffect.MagicReplace](./replacesymboleffect/magicreplace.md)
   A symbol effect applies the MagicReplace animation to symbol images.
 ### Instance Methods
-- [func magic(fallback: ReplaceSymbolEffect) -> ReplaceSymbolEffect.MagicReplace](replacesymboleffect/magic(fallback:).md)
+- [func magic(fallback: ReplaceSymbolEffect) -> ReplaceSymbolEffect.MagicReplace](./replacesymboleffect/magic%28fallback%29.md)
   Returns an effect preferring MagicReplace and a configured ReplaceEffect if MagicReplace is not possible.
 ### Type Properties
-- [static var downUp: ReplaceSymbolEffect](replacesymboleffect/downup-swift.type.property.md)
+- [static var downUp: ReplaceSymbolEffect](./replacesymboleffect/downup-swift.type.property.md)
   Returns an effect requesting the Down-Up variant of the Replace animation.
-- [static var offUp: ReplaceSymbolEffect](replacesymboleffect/offup-swift.type.property.md)
+- [static var offUp: ReplaceSymbolEffect](./replacesymboleffect/offup-swift.type.property.md)
   Returns an effect requesting the Off-Up variant of the Replace animation.
-- [static var upUp: ReplaceSymbolEffect](replacesymboleffect/upup-swift.type.property.md)
+- [static var upUp: ReplaceSymbolEffect](./replacesymboleffect/upup-swift.type.property.md)
   Returns an effect requesting the Up-Up variant of the Replace animation.
 
 ## Relationships
 
 ### Conforms To
-- [ContentTransitionSymbolEffect](contenttransitionsymboleffect.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SymbolEffect](symboleffect.md)
+- [ContentTransitionSymbolEffect](./contenttransitionsymboleffect.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SymbolEffect](./symboleffect.md)
 
 ## See Also
 
-- [struct AppearSymbolEffect](appearsymboleffect.md)
+### Symbol effect types
+- [struct AppearSymbolEffect](./appearsymboleffect.md)
   A type that makes the layers of a symbol-based image appear separately or as a whole.
-- [struct AutomaticSymbolEffect](automaticsymboleffect.md)
+- [struct AutomaticSymbolEffect](./automaticsymboleffect.md)
   A type that applies the default animation to a symbol-based image in a context-sensitive manner.
-- [struct BounceSymbolEffect](bouncesymboleffect.md)
+- [struct BounceSymbolEffect](./bouncesymboleffect.md)
   A type that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
-- [struct DisappearSymbolEffect](disappearsymboleffect.md)
+- [struct DisappearSymbolEffect](./disappearsymboleffect.md)
   A type that makes the layers of a symbol-based image disappear separately or as a whole.
-- [struct PulseSymbolEffect](pulsesymboleffect.md)
+- [struct PulseSymbolEffect](./pulsesymboleffect.md)
   A type that fades the opacity of some or all layers in a symbol-based image.
-- [struct ScaleSymbolEffect](scalesymboleffect.md)
+- [struct ScaleSymbolEffect](./scalesymboleffect.md)
   A type that scales the layers in a symbol-based image separately or as a whole.
-- [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
+- [struct VariableColorSymbolEffect](./variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
-- [struct BreatheSymbolEffect](breathesymboleffect.md)
+- [struct BreatheSymbolEffect](./breathesymboleffect.md)
   A symbol effect that applies the Breathe animation to symbol images.
-- [struct RotateSymbolEffect](rotatesymboleffect.md)
+- [struct RotateSymbolEffect](./rotatesymboleffect.md)
   A symbol effect that applies the Rotate animation to symbol images.
-- [struct WiggleSymbolEffect](wigglesymboleffect.md)
+- [struct WiggleSymbolEffect](./wigglesymboleffect.md)
   A symbol effect that applies the Wiggle animation to symbol images.
 
 

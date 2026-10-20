@@ -1,7 +1,8 @@
 # xpc_activity_copy_criteria(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an XPC dictionary that describes the execution criteria of an activity.
 
@@ -14,13 +15,18 @@ Returns an XPC dictionary that describes the execution criteria of an activity.
 func xpc_activity_copy_criteria(_ activity: xpc_activity_t) -> xpc_object_t?
 ```
 
+```c
+extern xpc_object_txpc_activity_copy_criteria(xpc_activity_t activity);
+```
+
 #### Discussion
 
 Returns `NULL` in cases where the activity has already completed, for example, when checking in to an event that finished and wasn’t rescheduled.
 
 ## See Also
 
-- [func xpc_activity_set_criteria(xpc_activity_t, xpc_object_t)](xpc_activity_set_criteria(_:_:).md)
+### Execution criteria
+- [func xpc_activity_set_criteria(xpc_activity_t, xpc_object_t)](./xpc_activity_set_criteria%28_,_%29.md)
   Modifies the execution criteria of an activity.
 
 

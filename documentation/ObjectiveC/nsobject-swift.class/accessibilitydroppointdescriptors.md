@@ -1,7 +1,8 @@
 # accessibilityDropPointDescriptors
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of location descriptor objects that you use to define where drops are possible on this element.
 
@@ -18,6 +19,10 @@ An array of location descriptor objects that you use to define where drops are p
 var accessibilityDropPointDescriptors: [UIAccessibilityLocationDescriptor]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<UIAccessibilityLocationDescriptor *> * accessibilityDropPointDescriptors;
+```
+
 #### Discussion
 
 To restore the default automatic behavior for this property, assign or return the default value of `nil`.
@@ -26,7 +31,8 @@ To restore the default automatic behavior for this property, assign or return th
 
 ## See Also
 
-- [var accessibilityDragSourceDescriptors: [UIAccessibilityLocationDescriptor]?](nsobject-swift.class/accessibilitydragsourcedescriptors.md)
+### Fine-Tuning Drag and Drop
+- [var accessibilityDragSourceDescriptors: [UIAccessibilityLocationDescriptor]?](./accessibilitydragsourcedescriptors.md)
   An array of location descriptor objects that you use to define what drags are possible from this element.
 
 

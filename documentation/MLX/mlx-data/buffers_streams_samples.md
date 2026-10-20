@@ -6,26 +6,9 @@ url: https://ml-explore.github.io/mlx-data/build/html/buffers_streams_samples.ht
 
 # Buffers, Streams and Samples
 
-**
-
-- [.rst](_sources/buffers_streams_samples.rst)
-- **
-
-.pdf
-
-**
-
-# Buffers, Streams and Samples
-
- Table of contents 
-
-## Contents
-
-# Buffers, Streams and Samples
-
 In MLX data there are three main concepts that you need to know about buffers,
-streams and samples. For instance, [buffer_from_vector()](python/_autosummary/mlx.data.buffer_from_vector.html#mlx.data.buffer_from_vector) and
-[stream_csv_reader()](python/_autosummary/mlx.data.stream_csv_reader.html#mlx.data.stream_csv_reader) return a buffer and stream respectively and
+streams and samples. For instance, [buffer_from_vector()](python/_autosummary/mlx.data.buffer_from_vector.md#mlx.data.buffer_from_vector) and
+[stream_csv_reader()](python/_autosummary/mlx.data.stream_csv_reader.md#mlx.data.stream_csv_reader) return a buffer and stream respectively and
 are often the beginning of a data pipeline written in MLX data.
 
 ## Samples
@@ -35,7 +18,7 @@ contain. In MLX data **samples** are dictionaries that map string keys to array
 values. In C++ they are simply instances of `std::unordered_map<std::string,
 std::shared_ptr<mlx::data::Array>>` or simply `mlx::data::Sample` and in
 Python they are a dictionary from strings to anything that implements the
-[buffer protocol](https://docs.python.org/3/c-api/buffer.md).
+[buffer protocol](https://docs.python.org/3/c-api/buffer.html).
 
 ```
 # This is a valid sample
@@ -60,7 +43,7 @@ iterated upon.
 
 Buffers allow to define operations on their samples that create other buffers
 lazily evaluated. For instance if we have a `Buffer` that
-contains samples of image filenames, calling [Buffer.load_image()](python/_autosummary/mlx.data.Buffer.load_image.html#mlx.data.Buffer.load_image)
+contains samples of image filenames, calling [Buffer.load_image()](python/_autosummary/mlx.data.Buffer.load_image.md#mlx.data.Buffer.load_image)
 would create a buffer that loads the images **when accessed** and not in
 advance in memory. For a full list of supported operations check out
 `Buffer`.
@@ -68,7 +51,7 @@ advance in memory. For a full list of supported operations check out
 The API of `Buffer` is mirrored in C++ and Python and it would be trivial to
 port a pipeline from one to the other.
 
-The easiest way to make a buffer is to use [buffer_from_vector()](python/_autosummary/mlx.data.buffer_from_vector.html#mlx.data.buffer_from_vector) which
+The easiest way to make a buffer is to use [buffer_from_vector()](python/_autosummary/mlx.data.buffer_from_vector.md#mlx.data.buffer_from_vector) which
 makes a `Buffer` from a list of samples. It can be used for instance to
 make a buffer from a list of files as follows:
 
@@ -113,11 +96,11 @@ how many lines each file would have prior to reading it.
 Once again, the API of `Stream` is mirrored in C++ and Python and it would be
 trivial to port a pipeline from one to the other.
 
-The easiest way to make a stream is from file using [stream_csv_reader()](python/_autosummary/mlx.data.stream_csv_reader.html#mlx.data.stream_csv_reader)
-and [stream_line_reader()](python/_autosummary/mlx.data.stream_line_reader.html#mlx.data.stream_line_reader) or from a `Buffer` by calling its
-[Buffer.to_stream()](python/_autosummary/mlx.data.Buffer.to_stream.html#mlx.data.Buffer.to_stream) method.
+The easiest way to make a stream is from file using [stream_csv_reader()](python/_autosummary/mlx.data.stream_csv_reader.md#mlx.data.stream_csv_reader)
+and [stream_line_reader()](python/_autosummary/mlx.data.stream_line_reader.md#mlx.data.stream_line_reader) or from a `Buffer` by calling its
+[Buffer.to_stream()](python/_autosummary/mlx.data.Buffer.to_stream.md#mlx.data.Buffer.to_stream) method.
 
-Notably streams enable prefetching ([Stream.prefetch()](python/_autosummary/mlx.data.Stream.prefetch.html#mlx.data.Stream.prefetch)) for efficient
+Notably streams enable prefetching ([Stream.prefetch()](python/_autosummary/mlx.data.Stream.prefetch.md#mlx.data.Stream.prefetch)) for efficient
 iteration. This prefetching is not deterministic. Continuing the example from above:
 
 ```
@@ -137,8 +120,8 @@ dset = (
 sample = next(dset)
 ```
 
-If deterministic prefetching is required, [Buffer.ordered_prefetch()](python/_autosummary/mlx.data.Buffer.ordered_prefetch.html#mlx.data.Buffer.ordered_prefetch) can replace
-[Buffer.to_stream()](python/_autosummary/mlx.data.Buffer.to_stream.html#mlx.data.Buffer.to_stream).
+If deterministic prefetching is required, [Buffer.ordered_prefetch()](python/_autosummary/mlx.data.Buffer.ordered_prefetch.md#mlx.data.Buffer.ordered_prefetch) can replace
+[Buffer.to_stream()](python/_autosummary/mlx.data.Buffer.to_stream.md#mlx.data.Buffer.to_stream).
 
 ```
 # We can define the rest of the processing pipeline using streams.
@@ -155,5 +138,3 @@ dset = (
 # Now we can iterate over dset
 sample = next(dset)
 ```
-
-** Contents

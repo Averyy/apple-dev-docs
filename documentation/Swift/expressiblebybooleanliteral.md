@@ -1,7 +1,8 @@
 # ExpressibleByBooleanLiteral
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized with the Boolean literals `true` and `false`.
 
@@ -29,26 +30,27 @@ To add `ExpressibleByBooleanLiteral` conformance to your custom type, implement 
 ## Topics
 
 ### Associated Types
-- [associatedtype BooleanLiteralType : _ExpressibleByBuiltinBooleanLiteral](expressiblebybooleanliteral/booleanliteraltype.md)
+- [associatedtype BooleanLiteralType : _ExpressibleByBuiltinBooleanLiteral](./expressiblebybooleanliteral/booleanliteraltype.md)
   A type that represents a Boolean literal, such as `Bool`.
 ### Initializers
-- [init(booleanLiteral: Self.BooleanLiteralType)](expressiblebybooleanliteral/init(booleanliteral:).md)
+- [init(booleanLiteral: Self.BooleanLiteralType)](./expressiblebybooleanliteral/init%28booleanliteral%29.md)
   Creates an instance initialized to the given Boolean value.
 
 ## Relationships
 
 ### Conforming Types
-- [Bool](bool.md)
+- [Bool](./bool.md)
 
 ## See Also
 
-- [protocol ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
+### Value Literals
+- [protocol ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
   A type that can be initialized with an integer literal.
-- [protocol ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
+- [protocol ExpressibleByFloatLiteral](./expressiblebyfloatliteral.md)
   A type that can be initialized with a floating-point literal.
-- [protocol ExpressibleByNilLiteral](expressiblebynilliteral.md)
+- [protocol ExpressibleByNilLiteral](./expressiblebynilliteral.md)
   A type that can be initialized using the nil literal, `nil`.
-- [struct StaticBigInt](staticbigint.md)
+- [struct StaticBigInt](./staticbigint.md)
   An immutable arbitrary-precision signed integer.
 
 

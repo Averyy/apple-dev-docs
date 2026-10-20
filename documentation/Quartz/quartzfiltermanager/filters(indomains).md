@@ -1,7 +1,8 @@
 # filters(inDomains:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 class func filters(inDomains domains: [Any]!) -> [Any]!
+```
+
+```objc
++ (NSArray *) filtersInDomains:(NSArray *) domains;
 ```
 
 

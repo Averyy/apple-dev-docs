@@ -1,66 +1,67 @@
 # Xcode updates
 
-**Framework**: Updates
+**Framework**: Updates  
+**Role**: Article
 
 Learn about important changes to Xcode.
 
 #### Overview
 
-Browse notable changes in [`Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode).
+Browse notable changes in [Xcode](../Xcode/Xcode.md).
 
 #### September 2026
 
 The latest version of Xcode includes the following new features.
 
-##### Projects and Workspaces
+##### Projects and workspaces
 
-- Start using the new JSON project configuration file format that’s version-control-friendly, human-readable, and editable by coding intelligence agents. For more information, see [`Updating your Xcode project configuration file format`](https://developer.apple.com/documentation/xcode/updating-your-xcode-project-configuration-file-format).
+- Start using the new JSON project configuration file format that’s version-control-friendly, human-readable, and editable by coding intelligence agents. For more information, see [Updating your Xcode project configuration file format](../Xcode/updating-your-xcode-project-configuration-file-format.md).
 
-##### Devices and Simulators
+##### Devices and simulators
 
-- Test your app on iPhone Duo in the preview canvas and Device Hub. For more information, see [`Interacting with previews in the canvas`](https://developer.apple.com/documentation/xcode/interacting-with-previews-in-the-canvas) and [`Interacting with your app in Device Hub`](https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-device-hub).
+- Test your app on iPhone Duo in the preview canvas and Device Hub. For more information, see [Interacting with previews in the canvas](../Xcode/interacting-with-previews-in-the-canvas.md) and [Interacting with your app in Device Hub](../Xcode/interacting-with-your-app-in-device-hub.md).
 
 #### June 2026
 
 Xcode 27 includes the following new features.
 
-##### Projects and Workspaces
+##### Projects and workspaces
 
-- Create common projects more quickly, such as a SwiftUI app and a Swift playground, customize the toolbar, and apply themes to your workspace or specific projects using the new Appearance settings. Edit Markdown files with the new visual editor. For more information, see [`Customizing your workspace using themes`](https://developer.apple.com/documentation/xcode/customizing-your-workspace-using-themes) and [`What’s new in Xcode`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/258/).
+- Create common projects more quickly, such as a SwiftUI app and a Swift playground, customize the toolbar, and apply themes to your workspace or specific projects using the new Appearance settings. Edit Markdown files with the new visual editor. For more information, see [Customizing your workspace using themes](../Xcode/customizing-your-workspace-using-themes.md) and [What’s new in Xcode](https://developer.apple.com/videos/play/wwdc2026/258/).
 
-##### Coding Intelligence
+##### Coding intelligence
 
-- Xcode fully integrates coding intelligence in your workspace, letting you start multiple conversations from anywhere and lay out the new transcript and artifacts panes alongside other editor panes. For more information, see [`Writing code with intelligence in Xcode`](https://developer.apple.com/documentation/xcode/writing-code-with-intelligence-in-xcode).
-- Use agents that iterate and refine your app more independently, and use Xcode’s built-in guidance, skills, and expertise, such as Apple Documentation Search. For more information, see [`Setting up coding intelligence`](https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence).
-- Enter plan mode to go from a drawing of your interface to in-depth design documents before you modify any code. For more information, see [`Xcode, agents, and you`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/259/).
-- In a conversation with an agent, tell it to localize your app, and Xcode adds languages, string catalogs, and translations for you. For more information, see [`Localizing your app using agents`](https://developer.apple.com/documentation/xcode/localizing-your-app-using-agents).
-- Give agents more context, manage the commands, tools, and skills they use, and install external plug-ins to expand their abilities. For more information, see [`Extending and customizing agents`](https://developer.apple.com/documentation/xcode/extending-and-customizing-agents).
+- Xcode fully integrates coding intelligence in your workspace, letting you start multiple conversations from anywhere and lay out the new transcript and artifacts panes alongside other editor panes. For more information, see [Writing code with intelligence in Xcode](../Xcode/writing-code-with-intelligence-in-xcode.md).
+- Use agents that iterate and refine your app more independently, and use Xcode’s built-in guidance, skills, and expertise, such as Apple Documentation Search. For more information, see [Setting up coding intelligence](../Xcode/setting-up-coding-intelligence.md).
+- Enter plan mode to go from a drawing of your interface to in-depth design documents before you modify any code. For more information, see [Xcode, agents, and you](https://developer.apple.com/videos/play/wwdc2026/259/).
+- In a conversation with an agent, tell it to localize your app, and Xcode adds languages, string catalogs, and translations for you. For more information, see [Localizing your app using agents](../Xcode/localizing-your-app-using-agents.md).
+- Give agents more context, manage the commands, tools, and skills they use, and install external plug-ins to expand their abilities. For more information, see [Extending and customizing agents](../Xcode/extending-and-customizing-agents.md).
 
-##### Asset Management
+##### Asset management
 
-- Use Icon Composer to adjust the strength of refraction in your icon layers, choose how highlights align with each layer, and preview your icon in previous operating system releases. For more information, see [`Creating your app icon using Icon Composer`](https://developer.apple.com/documentation/xcode/creating-your-app-icon-using-icon-composer).
+- Use Icon Composer to adjust the strength of refraction in your icon layers, choose how highlights align with each layer, and preview your icon in previous operating system releases. For more information, see [Creating your app icon using Icon Composer](../Xcode/creating-your-app-icon-using-icon-composer.md).
 
-##### Devices and Simulators
+##### Devices and simulators
 
-- Use the new Device Hub to run your app on simulated and physical devices and to view screens and interact with physical devices on your Mac. Using the device inspector, configure their environments and access their contents, including downloading diagnostics. For more information, see [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub).
+- Use the new Device Hub to run your app on simulated and physical devices and to view screens and interact with physical devices on your Mac. Using the device inspector, configure their environments and access their contents, including downloading diagnostics. For more information, see [Device Hub](../Xcode/device-hub.md).
 
 ##### Instruments
 
-- Explore CPU profiles in Instruments using three complementary view modes: Call Tree, Flame Graph, and Top Functions. Additionally, use Run Comparison to measure the impact of code changes by comparing two profiles. For more information, see [`Analyzing CPU profiles with call tree views`](https://developer.apple.com/documentation/xcode/analyzing-cpu-profiles-with-call-tree-views).
+- Explore CPU profiles in Instruments using three complementary view modes: Call Tree, Flame Graph, and Top Functions. Additionally, use Run Comparison to measure the impact of code changes by comparing two profiles. For more information, see [Analyzing CPU profiles with call tree views](../Xcode/analyzing-cpu-profiles-with-call-tree-views.md).
 
 ##### Organizer
 
-- Prioritize performance work using the new Insights overview in Xcode Organizer, which surfaces high-impact regressions across metrics and diagnostic reports for your app in one place. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-shipping-app).
+- Prioritize performance work using the new Insights overview in Xcode Organizer, which surfaces high-impact regressions across metrics and diagnostic reports for your app in one place. For more information, see [Analyzing the performance of your shipping app](../Xcode/analyzing-the-performance-of-your-shipping-app.md).
 - Get coding intelligence triage recommendations directly from Organizer reports. After selecting a hang, crash, battery, launch time, or disk write report, click Generate Recommendations in the Inspector to have Xcode start a new conversation in the coding assistant with the report’s context as the prompt.
-- Compare your app’s performance metrics against goals derived from similar apps and your app’s own historical performance. Xcode Organizer displays a recommended goal value as a dashed line on metric charts when your app’s current values exceed the target. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-shipping-app).
-- Monitor your app’s storage footprint across releases using the Storage pane in Xcode Organizer. Compare your app’s usage against similar apps. For more information, see [`Monitoring your app’s storage metrics`](https://developer.apple.com/documentation/xcode/monitoring-your-app-s-storage-metrics).
-- Track animation hitches across all animated interactions — including scrolling, transitions, and other continuous motion — using the Hitches metric in Xcode Organizer. For more information, see [`Analyzing responsiveness issues in your shipping app`](https://developer.apple.com/documentation/xcode/analyzing-responsiveness-issues-in-your-shipping-app).
+- Compare your app’s performance metrics against goals derived from similar apps and your app’s own historical performance. Xcode Organizer displays a recommended goal value as a dashed line on metric charts when your app’s current values exceed the target. For more information, see [Analyzing the performance of your shipping app](../Xcode/analyzing-the-performance-of-your-shipping-app.md).
+- Monitor your app’s storage footprint across releases using the Storage pane in Xcode Organizer. Compare your app’s usage against similar apps. For more information, see [Monitoring your app’s storage metrics](../Xcode/monitoring-your-app-s-storage-metrics.md).
+- Track animation hitches across all animated interactions — including scrolling, transitions, and other continuous motion — using the Hitches metric in Xcode Organizer. For more information, see [Analyzing responsiveness issues in your shipping app](../Xcode/analyzing-responsiveness-issues-in-your-shipping-app.md).
 
 ##### Xcode Cloud
 
-- Configure Xcode Cloud for building and testing your app without joining the Apple Developer Program. For more information, see [`Getting started with Xcode Cloud`](https://developer.apple.com/documentation/xcode/getting-started-with-xcode-cloud).
-- Easily add a workflow to distribute your app through TestFlight. For more information, see [`Distributing your Xcode Cloud builds through TestFlight`](https://developer.apple.com/documentation/xcode/distributing-your-xcode-cloud-builds-through-testflight).
-- Xcode Cloud supports webhooks and additional repositories. For more information, see [`Configuring webhooks in Xcode Cloud`](https://developer.apple.com/documentation/xcode/configuring-webhooks-in-xcode-cloud) and [`Making dependencies available to Xcode Cloud`](https://developer.apple.com/documentation/xcode/making-dependencies-available-to-xcode-cloud).
+- Configure Xcode Cloud for building and testing your app without joining the Apple Developer Program. For more information, see [Getting started with Xcode Cloud](../Xcode/getting-started-with-xcode-cloud.md).
+- Easily add a workflow to distribute your app through TestFlight. For more information, see [Distributing your Xcode Cloud builds through TestFlight](../Xcode/distributing-your-xcode-cloud-builds-through-testflight.md).
+- Xcode Cloud supports webhooks and additional repositories. For more information, see [Configuring webhooks in Xcode Cloud](../Xcode/configuring-webhooks-in-xcode-cloud.md) and [Making dependencies available to Xcode Cloud](../Xcode/making-dependencies-available-to-xcode-cloud.md).
 
 #### February 2026
 
@@ -68,8 +69,8 @@ Xcode 26.3 includes the following new features.
 
 ##### Intelligence
 
-- In the coding assistant, choose agentic coding tools from OpenAI and Anthropic to autonomously complete tasks, including building and testing your app. For more information, see [`Setting up coding intelligence`](https://developer.apple.com/documentation/xcode/setting-up-coding-intelligence).
-- In Intelligence settings, you can give other agentic coding tools access to Xcode capabilities that use the Model Context Protocol (MCP) service. For more information, see [`Giving external agents access to Xcode`](https://developer.apple.com/documentation/xcode/giving-external-agents-access-to-xcode).
+- In the coding assistant, choose agentic coding tools from OpenAI and Anthropic to autonomously complete tasks, including building and testing your app. For more information, see [Setting up coding intelligence](../Xcode/setting-up-coding-intelligence.md).
+- In Intelligence settings, you can give other agentic coding tools access to Xcode capabilities that use the Model Context Protocol (MCP) service. For more information, see [Giving external agents access to Xcode](../Xcode/giving-external-agents-access-to-xcode.md).
 
 #### June 2025
 
@@ -77,49 +78,49 @@ Xcode 26 includes the following new features.
 
 ##### Optimizations
 
-- Download components, such as Metal toolchains and Simulator runtimes, only when Xcode detects that you need them. For more information, see [`Downloading and installing additional Xcode components`](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components).
+- Download components, such as Metal toolchains and Simulator runtimes, only when Xcode detects that you need them. For more information, see [Downloading and installing additional Xcode components](../Xcode/downloading-and-installing-additional-xcode-components.md).
 - Download smaller Simulator runtimes that no longer contain Intel-based Mac support by default.
 
-##### Workspace and Editing
+##### Workspace and editing
 
 - In the source editor, add as many tabs as you want, and pin files to a tab.
 - Find clusters of words across files in your project using the Multiple Words search option in the Find navigator. Enter a set of words and Xcode finds the clusters in proximity to each other across your files, sorting the occurrences by relevance.
 - Use Voice Control to instruct Xcode and write Swift code. Voice Control understands Swift syntax, adds spaces where needed, and enters expressions correctly.
-- Use Icon Composer to create a single file representation of your app icon for iOS, iPadOS, macOS, and watchOS. Take full advantage of the new material and appearances on these platforms. For more information, see [`Creating your app icon using Icon Composer`](https://developer.apple.com/documentation/xcode/creating-your-app-icon-using-icon-composer).
+- Use Icon Composer to create a single file representation of your app icon for iOS, iPadOS, macOS, and watchOS. Take full advantage of the new material and appearances on these platforms. For more information, see [Creating your app icon using Icon Composer](../Xcode/creating-your-app-icon-using-icon-composer.md).
 
 ##### Intelligence
 
-- Use a coding assistant to explain, write, and fix Swift code for you from prompts and project files in Xcode. You can configure models in the Intelligence settings and switch between them in the coding assistant. For more information, see [`Writing code with intelligence in Xcode`](https://developer.apple.com/documentation/xcode/writing-code-with-intelligence-in-xcode).
-- Use the playground macro to quickly iterate on code snippets directly in Xcode and display the live execution results in a canvas tab. Ask the coding assistant to generate playgrounds for you about symbols in your project. For more information, see [`Running code snippets using the playground macro`](https://developer.apple.com/documentation/xcode/running-code-snippets-using-the-playground-macro).
+- Use a coding assistant to explain, write, and fix Swift code for you from prompts and project files in Xcode. You can configure models in the Intelligence settings and switch between them in the coding assistant. For more information, see [Writing code with intelligence in Xcode](../Xcode/writing-code-with-intelligence-in-xcode.md).
+- Use the playground macro to quickly iterate on code snippets directly in Xcode and display the live execution results in a canvas tab. Ask the coding assistant to generate playgrounds for you about symbols in your project. For more information, see [Running code snippets using the playground macro](../Xcode/running-code-snippets-using-the-playground-macro.md).
 - In the source editor, use the Coding Tools popover for common actions to selected code, such as explain, document, and generate a preview or playground. Enter a prompt about the code in the text field.
 - When using code completion in the source editor, click the disclosure triangle to select one of multiple signatures for a base method.
 - For issues and warnings that appear in the Issue navigator and source editor, such as deprecation warnings, click the Generate button in the Fix-It popover to let the coding assistant fix it for you.
 
-##### String Catalogs
+##### String catalogs
 
 - Add localized strings to string catalogs and access them in code using type-safe Swift symbols that also appear in code completion.
 - Let Xcode use on-device models to generate comments for localized strings in your code that assist translators.
 
-##### Debugging and Performance
+##### Debugging and performance
 
 - When debugging Swift concurrency code, step into or out of an `await` call to follow a task onto a new thread.
 - Add a missing usage description key to your project directly from the debugger when your app stops abruptly because it accesses a private resource without the person’s permission. The debugger takes you to the Signing & Capabilities pane where you can edit all the usage description keys in one place.
-- Use the SwiftUI template in Instruments to find long-running view body updates and other performance issues in your SwiftUI views. For more information, see [`Understanding and improving SwiftUI performance`](https://developer.apple.com/documentation/xcode/understanding-and-improving-swiftui-performance).
-- Identify situations where your app causes a device to consume high amounts of energy with the Power Profiler instrument. For more information, see [`Measuring your app’s power use with Power Profiler`](https://developer.apple.com/documentation/xcode/measuring-your-app-s-power-use-with-power-profiler).
+- Use the SwiftUI template in Instruments to find long-running view body updates and other performance issues in your SwiftUI views. For more information, see [Understanding and improving SwiftUI performance](../Xcode/understanding-and-improving-swiftui-performance.md).
+- Identify situations where your app causes a device to consume high amounts of energy with the Power Profiler instrument. For more information, see [Measuring your app’s power use with Power Profiler](../Xcode/measuring-your-app-s-power-use-with-power-profiler.md).
 - Discover and analyze situations where your app doesn’t use the processor at highest effectiveness with the CPU Counters instrument.
 
 ##### Organizer
 
-- Compare your apps metrics with recommended values in the Metrics Organizer. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-shipping-app).
+- Compare your apps metrics with recommended values in the Metrics Organizer. For more information, see [Analyzing the performance of your shipping app](../Xcode/analyzing-the-performance-of-your-shipping-app.md).
 - Prioritize performance work by identifying trending insights in the Metrics Organizer.
 
 ##### Security
 
-- Adopt Enhanced Security in your apps and extensions to take advantage of compiler and runtime capabilities that can help to address some security issues. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).
+- Adopt Enhanced Security in your apps and extensions to take advantage of compiler and runtime capabilities that can help to address some security issues. For more information, see [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md).
 
 ##### Testing
 
-- Use the improved UI automation recording feature to build UI tests for your app. For more information, see [`Recording UI automation for testing`](https://developer.apple.com/documentation/xcuiautomation/recording-ui-automation-for-testing).
+- Use the improved UI automation recording feature to build UI tests for your app. For more information, see [Recording UI automation for testing](../XCUIAutomation/recording-ui-automation-for-testing.md).
 - Use Thread Performance Checker to detect situations where your tests use main-thread-only APIs on background threads or where your tests create background tasks that depend on tasks with lower quality of service.
 
 #### June 2024
@@ -147,16 +148,16 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, macOS 15, tvOS 18, and watchOS 11,
 
 - Iterate designs quickly with the improved SwiftUI preview. Leverage new preview APIs for declaring state and reusing data across previews.
 
-##### Asset Management
+##### Asset management
 
 - Add new Dark and Tinted app icons for iOS.
 
-##### Devices and Simulator
+##### Devices and simulator
 
 - Test FaceTime and SharePlay experiences for visionOS using the upgraded Xcode simulator.
 - Get started with your projects more quickly with a smaller, more efficient Xcode. Simulator updates resume even after your download gets interrupted, and the new Settings -> Components panel helps you manage your downloadable components.
 
-##### Performance and Metrics
+##### Performance and metrics
 
 - Identify areas of launch time improvement. Discover where your iOS app spends its time at launch with the launch diagnostics that come with Xcode Organizer.
 - Use signature trend insights to understand how the impact of disk usage issues changes over time for your iOS app.
@@ -172,7 +173,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, macOS 15, tvOS 18, and watchOS 11,
 - Leverage the `@DebugDescription` macro to convert compatible Swift `debugDescription` properties into LLDB type summaries.
 - Debug devices remotely from the command line in LLDB with the `device` command.
 
-##### Projects and Workspaces
+##### Projects and workspaces
 
 - Leverage the New Empty File feature from the Project Navigator’s context menu to quickly create a new Swift file without any confirmation dialogs.
 - Leverage the Copy, Paste, and Duplicate feature from the Edit menu to create a new file from an existing file.
@@ -186,7 +187,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, macOS 15, tvOS 18, and watchOS 11,
 - View coverage data from test runs in Xcode Cloud by opening the build report under the Reports navigator in Xcode and navigating to Coverage.
 - Configure webhooks that connect Xcode Cloud to other services and tools.
 
-##### Storekit Testing in Xcode
+##### StoreKit testing in Xcode
 
 - Configure app policies, such as user license agreements and localized privacy policies, to display in StoreKit views using the `StoreKit.configuration` file.
 - Configure win-back offers in the `StoreKit.configuration` file to test win-back offers for autorenewable subscriptions.
@@ -195,7 +196,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, macOS 15, tvOS 18, and watchOS 11,
 
 - Use new features in the string catalog, such as inline diagnostics and the ability to mark strings as not to be translated, and jump between source code and translations for improved localization workflows.
 
-##### Build System
+##### Build system
 
 - Discover improved parallelism, more detailed compile time error messages, and improved debugger performance with explicit modules.
 - Enable low-overhead security-critical checks at runtime with the hardened C++ standard library.
@@ -211,26 +212,28 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, macOS 15, tvOS 18, and watchOS 11,
 
 Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10, and the following new features.
 
-##### Xcode Ide
+##### Xcode IDE
 
-- Install just the platforms you need. Platform runtimes are separated into individual installations. Select the platforms you develop for when you download Xcode from the developer website or when you launch Xcode for the first time. You can add or remove platform runtimes at any time. See [`Downloading and installing additional Xcode components`](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components).
-- Access and configure capabilities granted for your team through App Store Connect right in your Xcode project settings. See [`Capabilities`](https://developer.apple.com/documentation/xcode/capabilities).
+- Install just the platforms you need. Platform runtimes are separated into individual installations. Select the platforms you develop for when you download Xcode from the developer website or when you launch Xcode for the first time. You can add or remove platform runtimes at any time. See [Downloading and installing additional Xcode components](../Xcode/downloading-and-installing-additional-xcode-components.md).
+- Access and configure capabilities granted for your team through App Store Connect right in your Xcode project settings. See [Capabilities](../Xcode/capabilities.md).
 - Use the new Integrate menu to stage and commit source code repository changes, and to create and manage your Xcode Cloud workflows.
-- Generate privacy reports for app archives based on privacy manifests in your app and third-party SDKs your app links to. See [`Describing data use in privacy manifests`](https://developer.apple.com/documentation/bundleresources/describing-data-use-in-privacy-manifests).
-- Verify the code signature of XCFrameworks in your project. The Xcode build system fails with an error if the signature changes or is removed. See [`Verifying the origin of your XCFrameworks`](https://developer.apple.com/documentation/xcode/verifying-the-origin-of-your-xcframeworks).
+- Generate privacy reports for app archives based on privacy manifests in your app and third-party SDKs your app links to. See [Describing data use in privacy manifests](../BundleResources/describing-data-use-in-privacy-manifests.md).
+- Verify the code signature of XCFrameworks in your project. The Xcode build system fails with an error if the signature changes or is removed. See [Verifying the origin of your XCFrameworks](../Xcode/verifying-the-origin-of-your-xcframeworks.md).
 
-> **Note**: Session 10165: [`What’s new in Xcode 15`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10165)
+> **Related sessions from WWDC23**: Session 10165: [What’s new in Xcode 15](https://developer.apple.com/videos/play/wwdc2023/10165)
 
 ##### Code
 
 - Use code completion more effectively. Xcode uses more sources of input for code completion, prioritizes completions based on context, and improves the display of parameter options.
-- View the expanded form of your Swift macros in the source editor, and set breakpoints in code that a macro generates. For more information about Swift macros, see [`Applying Macros`](https://developer.apple.com/documentation/swift/applying-macros).
+- View the expanded form of your Swift macros in the source editor, and set breakpoints in code that a macro generates. For more information about Swift macros, see [Applying Macros](../Swift/applying-macros.md).
 - Create bookmarks for lines of code and saved queries. Create to-do lists by organizing bookmarks into groups, and mark items complete as you address them.
 - View and stage changes in the gallery view in the source editor.
-- Validate the ability to link with modules at build time. Module verification is enabled by default, but you can enable and disable verification by setting `Enable Module Verifier` in build settings. See [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference).
-- Use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds. See [`Configuring your project to use mergeable libraries`](https://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries).
+- Validate the ability to link with modules at build time. Module verification is enabled by default, but you can enable and disable verification by setting `Enable Module Verifier` in build settings. See [Build settings reference](../Xcode/build-settings-reference.md).
+- Use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds. See [Configuring your project to use mergeable libraries](../Xcode/configuring-your-project-to-use-mergeable-libraries.md).
 
-> **Note**: Session 10166: [`Write Swift macros`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10166) Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10268)
+> **Related sessions from WWDC23**: Session 10166: [Write Swift macros](https://developer.apple.com/videos/play/wwdc2023/10166)
+>
+> Session 10268: [Meet mergeable libraries](https://developer.apple.com/videos/play/wwdc2023/10268)
 
 ##### Interface
 
@@ -238,10 +241,10 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10,
 - Choose between devices connected to your Mac or from Simulator runtimes when rendering previews. From the Preview canvas, choose the device or Simulator runtime from the popup menu.
 - Interact with your macOS app’s interface in the Preview canvas — similar to how you can on other platforms — to test controls, logic, animations, and text input.
 - Select entries from a widget’s timeline in the WidgetKit preview to view transition animations between those entries.
-- Use a string catalog to localize and translate all your app’s text in a visual editor right in Xcode. Host translations, configure pluralization messages for different regions and locales, and change how text appears on different devices, all in one place. See [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog).
+- Use a string catalog to localize and translate all your app’s text in a visual editor right in Xcode. Host translations, configure pluralization messages for different regions and locales, and change how text appears on different devices, all in one place. See [Localizing and varying text with a string catalog](../Xcode/localizing-and-varying-text-with-a-string-catalog.md).
 - Automatically generate symbols for assets in your asset catalogs so you don’t need to reference those assets by string names.
 
-> **Note**: Session 10252: [`Build programmatic UI using Xcode Previews`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10252)
+> **Related sessions from WWDC23**: Session 10252: [Build programmatic UI using Xcode Previews](https://developer.apple.com/videos/play/wwdc2023/10252)
 
 ##### Documentation
 
@@ -250,9 +253,9 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10,
 - Produce richer documentation. DocC now supports videos, more layout configuration options, and theming.
 - Use DocC to document Swift extensions.
 
-> **Note**: Session 10244: [`Create rich documentation with Swift DocC`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10244)
+> **Related sessions from WWDC23**: Session 10244: [Create rich documentation with Swift DocC](https://developer.apple.com/videos/play/wwdc2023/10244)
 
-##### Tuning and Debugging
+##### Tuning and debugging
 
 - Locate the most relevant `os_log` for debugging with the new structured debug console. The console provides insight into the origin of logs and lets you filter by metadata in addition to log messages. Jump right to your source code from individual log messages. Metadata and source code information for `os_log` messages is available for devices and Simulator runtimes running macOS 13.3 and later, iOS 17 and later, iPadOS 17 and later, watchOS 10 and later, and tvOS 17 and later.
 - Diagnose testing issues more quickly and easily. Test reports include new insights that help you correlate failures between tests and configurations, so you can identify common underlying issues. Reports also include videos that help you inspect and diagnose issues with your view hierarchy.
@@ -262,49 +265,52 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10,
 - Connect and communicate wirelessly between a Mac running Xcode or Instruments and Apple Watch Series 6 and later when using the new device connectivity stack. The initial pairing process and some other tools, such as Console and Accessibility Inspector, still require the watch’s companion phone with a wired connection to a Mac.
 - Xcode 15 no longer supports developing on Apple Watch (1st generation), Apple Watch Series 1, and Apple Watch Series 2 that are paired to iPhones running iOS 17 and later.
 
-> **Note**: Session 10226: [`Debug with structured logging`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10226) Session 10175: [`Fix failures faster with Xcode test reports`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10175)
+> **Related sessions from WWDC23**: Session 10226: [Debug with structured logging](https://developer.apple.com/videos/play/wwdc2023/10226)
+>
+> Session 10175: [Fix failures faster with Xcode test reports](https://developer.apple.com/videos/play/wwdc2023/10175)
 
-##### Distribution and Continuous Integration
+##### Distribution and continuous integration
 
-- Use streamlined options in the Xcode Organizer window to distribute your app using recommended settings. Choose from several preconfigured methods of distribution or create a custom configuration for your needs.  See [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases).
-- Notarize macOS apps in Xcode Cloud. See [`Creating a workflow that builds your app for distribution`](https://developer.apple.com/documentation/xcode/creating-a-workflow-that-builds-your-app-for-distribution).
-- Add text files to your Xcode project to provide notes to beta testers about what to test through Xcode Cloud. See [`Including notes for testers with a beta release of your app`](https://developer.apple.com/documentation/xcode/including-notes-for-testers-with-a-beta-release-of-your-app).
-- Provide feedback on issues you encounter when building with Xcode Cloud. The system prepopulates the feedback form with build-specific context and attachments Apple can use to triage a bug. See [`Reporting feedback for Xcode Cloud`](https://developer.apple.com/documentation/xcode/reporting-feedback-for-xcode-cloud).
+- Use streamlined options in the Xcode Organizer window to distribute your app using recommended settings. Choose from several preconfigured methods of distribution or create a custom configuration for your needs.  See [Distributing your app for beta testing and releases](../Xcode/distributing-your-app-for-beta-testing-and-releases.md).
+- Notarize macOS apps in Xcode Cloud. See [Creating a workflow that builds your app for distribution](../Xcode/creating-a-workflow-that-builds-your-app-for-distribution.md).
+- Add text files to your Xcode project to provide notes to beta testers about what to test through Xcode Cloud. See [Including notes for testers with a beta release of your app](../Xcode/including-notes-for-testers-with-a-beta-release-of-your-app.md).
+- Provide feedback on issues you encounter when building with Xcode Cloud. The system prepopulates the feedback form with build-specific context and attachments Apple can use to triage a bug. See [Reporting feedback for Xcode Cloud](../Xcode/reporting-feedback-for-xcode-cloud.md).
 - Xcode Server is no longer available as a part of Xcode. Use Xcode Cloud instead.
 
-> **Note**: Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
+> **Related sessions from WWDC23**: Session 10224: [Simplify distribution in Xcode and Xcode Cloud](https://developer.apple.com/videos/play/wwdc2023/10224)
 
 ## See Also
 
-- [Accelerate updates](accelerate.md)
+### Technology and frameworks
+- [Accelerate updates](./accelerate.md)
   Learn about important changes to Accelerate.
-- [Accessibility updates](accessibility.md)
+- [Accessibility updates](./accessibility.md)
   Learn about important changes to Accessibility.
-- [ActivityKit updates](activitykit.md)
+- [ActivityKit updates](./activitykit.md)
   Learn about important changes in ActivityKit.
-- [AdAttributionKit Updates](adattributionkit.md)
+- [AdAttributionKit Updates](./adattributionkit.md)
   Learn about important changes to AdAttributionKit.
-- [App Clips updates](appclips.md)
+- [App Clips updates](./appclips.md)
   Learn about important changes in App Clips.
-- [App Intents updates](appintents.md)
+- [App Intents updates](./appintents.md)
   Learn about important changes in App Intents.
-- [AppKit updates](appkit.md)
+- [AppKit updates](./appkit.md)
   Learn about important changes to AppKit.
-- [Apple Intelligence updates](apple-intelligence.md)
+- [Apple Intelligence updates](./apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
-- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+- [AppleMapsServerAPI Updates](./applemapsserverapi.md)
   Learn about important changes to AppleMapsServerAPI.
-- [Apple Pencil updates](applepencil.md)
+- [Apple Pencil updates](./applepencil.md)
   Learn about important changes to Apple Pencil.
-- [ARKit updates](arkit.md)
+- [ARKit updates](./arkit.md)
   Learn about important changes to ARKit.
-- [Audio Toolbox updates](audiotoolbox.md)
+- [Audio Toolbox updates](./audiotoolbox.md)
   Learn about important changes to Audio Toolbox.
-- [AuthenticationServices updates](authenticationservices.md)
+- [AuthenticationServices updates](./authenticationservices.md)
   Learn about important changes to AuthenticationServices.
-- [AVFAudio updates](avfaudio.md)
+- [AVFAudio updates](./avfaudio.md)
   Learn about important changes to AVFAudio.
-- [AVFoundation updates](avfoundation.md)
+- [AVFoundation updates](./avfoundation.md)
   Learn about important changes to AVFoundation.
 
 

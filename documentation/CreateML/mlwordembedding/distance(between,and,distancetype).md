@@ -1,7 +1,8 @@
 # distance(between:and:distanceType:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the distance between two strings in the vocabulary space.
 
@@ -26,13 +27,14 @@ The distance
 
 ## See Also
 
-- [func prediction(from: String, maxCount: Int, maxDistance: Double, distanceType: NLDistanceType) throws -> [(text: String, distance: Double)]](mlwordembedding/prediction(from:maxcount:maxdistance:distancetype:).md)
+### Testing a word embedding
+- [func prediction(from: String, maxCount: Int, maxDistance: Double, distanceType: NLDistanceType) throws -> [(text: String, distance: Double)]](./prediction%28from,maxcount,maxdistance,distancetype%29.md)
   Predicts neighbors.
-- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
+- [enum NLDistanceType](../../NaturalLanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
-- [func contains(String) -> Bool](mlwordembedding/contains(_:).md)
+- [func contains(String) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the vocabulary contains the given string.
-- [func vector(for: String) -> [Double]?](mlwordembedding/vector(for:).md)
+- [func vector(for: String) -> [Double]?](./vector%28for%29.md)
   Accesses the vector associated with the given string in the vocabulary.
 
 

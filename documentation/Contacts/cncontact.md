@@ -1,7 +1,8 @@
 # CNContact
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable object that stores information about a single contact, such as the contact’s first name, phone numbers, and addresses.
 
@@ -19,155 +20,160 @@ An immutable object that stores information about a single contact, such as the 
 class CNContact
 ```
 
+```objc
+@interface CNContact : NSObject
+```
+
 #### Overview
 
 A `CNContact` object stores an immutable copy of a contact’s information, so you cannot change the information in this object directly. Contact objects are thread-safe, so you may access them from any thread of your app.
 
-To modify a contact’s information, call the [`mutableCopy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablecopy()) method to obtain a [`CNMutableContact`](cnmutablecontact.md) object with the same information. After modifying the mutable contact, save your changes back to the contacts database using the [`CNContactStore`](cncontactstore.md) object.
+To modify a contact’s information, call the [`mutableCopy()`](../ObjectiveC/nsobject-swift.class/mutablecopy%28%29.md) method to obtain a [`CNMutableContact`](./cnmutablecontact.md) object with the same information. After modifying the mutable contact, save your changes back to the contacts database using the [`CNContactStore`](./cncontactstore.md) object.
 
-Every contact in the contacts database has a unique ID, which you access using the [`identifier`](cncontact/identifier.md) property. The mutable and immutable versions of the same contact have the same identifier.
+Every contact in the contacts database has a unique ID, which you access using the [`identifier`](./cncontact/identifier.md) property. The mutable and immutable versions of the same contact have the same identifier.
 
 ## Topics
 
 ### Identifying the Contact
-- [var identifier: String](cncontact/identifier.md)
+- [var identifier: String](./cncontact/identifier.md)
   A value that uniquely identifies a contact on the device.
-- [var contactType: CNContactType](cncontact/contacttype.md)
+- [var contactType: CNContactType](./cncontact/contacttype.md)
   An enum identifying the contact type.
-- [enum CNContactType](cncontacttype.md)
+- [enum CNContactType](./cncontacttype.md)
   The types a contact can be.
 ### Getting Name Information
-- [var namePrefix: String](cncontact/nameprefix.md)
+- [var namePrefix: String](./cncontact/nameprefix.md)
   The name prefix of the contact.
-- [var givenName: String](cncontact/givenname.md)
+- [var givenName: String](./cncontact/givenname.md)
   The given name of the contact.
-- [var middleName: String](cncontact/middlename.md)
+- [var middleName: String](./cncontact/middlename.md)
   The middle name of the contact.
-- [var familyName: String](cncontact/familyname.md)
+- [var familyName: String](./cncontact/familyname.md)
   The family name of the contact.
-- [var previousFamilyName: String](cncontact/previousfamilyname.md)
+- [var previousFamilyName: String](./cncontact/previousfamilyname.md)
   A string for the previous family name of the contact.
-- [var nameSuffix: String](cncontact/namesuffix.md)
+- [var nameSuffix: String](./cncontact/namesuffix.md)
   The name suffix of the contact.
-- [var nickname: String](cncontact/nickname.md)
+- [var nickname: String](./cncontact/nickname.md)
   The nickname of the contact.
-- [var phoneticGivenName: String](cncontact/phoneticgivenname.md)
+- [var phoneticGivenName: String](./cncontact/phoneticgivenname.md)
   The phonetic given name of the contact.
-- [var phoneticMiddleName: String](cncontact/phoneticmiddlename.md)
+- [var phoneticMiddleName: String](./cncontact/phoneticmiddlename.md)
   The phonetic middle name of the contact.
-- [var phoneticFamilyName: String](cncontact/phoneticfamilyname.md)
+- [var phoneticFamilyName: String](./cncontact/phoneticfamilyname.md)
   A string for the phonetic family name of the contact.
 ### Getting Work Information
-- [var jobTitle: String](cncontact/jobtitle.md)
+- [var jobTitle: String](./cncontact/jobtitle.md)
   The contact’s job title.
-- [var departmentName: String](cncontact/departmentname.md)
+- [var departmentName: String](./cncontact/departmentname.md)
   The name of the department associated with the contact.
-- [var organizationName: String](cncontact/organizationname.md)
+- [var organizationName: String](./cncontact/organizationname.md)
   The name of the organization associated with the contact.
-- [var phoneticOrganizationName: String](cncontact/phoneticorganizationname.md)
+- [var phoneticOrganizationName: String](./cncontact/phoneticorganizationname.md)
   The phonetic name of the organization associated with the contact.
 ### Getting Addresses
-- [var postalAddresses: [CNLabeledValue<CNPostalAddress>]](cncontact/postaladdresses.md)
+- [var postalAddresses: [CNLabeledValue<CNPostalAddress>]](./cncontact/postaladdresses.md)
   An array of labeled postal addresses for a contact.
-- [var emailAddresses: [CNLabeledValue<NSString>]](cncontact/emailaddresses.md)
+- [var emailAddresses: [CNLabeledValue<NSString>]](./cncontact/emailaddresses.md)
   An array of labeled email addresses for the contact.
-- [var urlAddresses: [CNLabeledValue<NSString>]](cncontact/urladdresses.md)
+- [var urlAddresses: [CNLabeledValue<NSString>]](./cncontact/urladdresses.md)
   An array of labeled URL addresses for a contact.
 ### Getting Phone Information
-- [var phoneNumbers: [CNLabeledValue<CNPhoneNumber>]](cncontact/phonenumbers.md)
+- [var phoneNumbers: [CNLabeledValue<CNPhoneNumber>]](./cncontact/phonenumbers.md)
   An array of labeled phone numbers for a contact.
 ### Getting Social Profiles
-- [var socialProfiles: [CNLabeledValue<CNSocialProfile>]](cncontact/socialprofiles.md)
+- [var socialProfiles: [CNLabeledValue<CNSocialProfile>]](./cncontact/socialprofiles.md)
   An array of labeled social profiles for a contact.
 ### Getting Birthday Information
-- [var birthday: DateComponents?](cncontact/birthday.md)
+- [var birthday: DateComponents?](./cncontact/birthday.md)
   A date component for the Gregorian birthday of the contact.
-- [var nonGregorianBirthday: DateComponents?](cncontact/nongregorianbirthday.md)
+- [var nonGregorianBirthday: DateComponents?](./cncontact/nongregorianbirthday.md)
   A date component for the non-Gregorian birthday of the contact.
-- [var dates: [CNLabeledValue<NSDateComponents>]](cncontact/dates.md)
+- [var dates: [CNLabeledValue<NSDateComponents>]](./cncontact/dates.md)
   An array containing labeled Gregorian dates.
 ### Getting Notes
-- [var note: String](cncontact/note.md)
+- [var note: String](./cncontact/note.md)
   A string containing notes for the contact.
 ### Getting Contact Images
-- [var imageData: Data?](cncontact/imagedata.md)
+- [var imageData: Data?](./cncontact/imagedata.md)
   The profile picture of a contact.
-- [var thumbnailImageData: Data?](cncontact/thumbnailimagedata.md)
+- [var thumbnailImageData: Data?](./cncontact/thumbnailimagedata.md)
   The thumbnail version of the contact’s profile picture.
-- [var imageDataAvailable: Bool](cncontact/imagedataavailable.md)
+- [var imageDataAvailable: Bool](./cncontact/imagedataavailable.md)
   A Boolean indicating whether a contact has a profile picture.
 ### Getting Related Information
-- [var contactRelations: [CNLabeledValue<CNContactRelation>]](cncontact/contactrelations.md)
+- [var contactRelations: [CNLabeledValue<CNContactRelation>]](./cncontact/contactrelations.md)
   An array of labeled relations for the contact.
-- [var instantMessageAddresses: [CNLabeledValue<CNInstantMessageAddress>]](cncontact/instantmessageaddresses.md)
+- [var instantMessageAddresses: [CNLabeledValue<CNInstantMessageAddress>]](./cncontact/instantmessageaddresses.md)
   An array of labeled IM addresses for the contact.
 ### Localizing Contact Data
-- [class func localizedString(forKey: String) -> String](cncontact/localizedstring(forkey:).md)
+- [class func localizedString(forKey: String) -> String](./cncontact/localizedstring%28forkey%29.md)
   Returns a string containing the localized contact property name.
 ### Comparing Contacts
-- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](cncontact/descriptorforallcomparatorkeys.md)
+- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](./cncontact/descriptorforallcomparatorkeys%28%29.md)
   Fetches all the keys required for the contact sort comparator.
-- [class func comparator(forNameSortOrder: CNContactSortOrder) -> Comparator](cncontact/comparator(fornamesortorder:).md)
+- [class func comparator(forNameSortOrder: CNContactSortOrder) -> Comparator](./cncontact/comparator%28fornamesortorder%29.md)
   Returns a comparator to sort contacts with the specified order.
-- [func isUnifiedWithContact(withIdentifier: String) -> Bool](cncontact/isunifiedwithcontact(withidentifier:).md)
+- [func isUnifiedWithContact(withIdentifier: String) -> Bool](./cncontact/isunifiedwithcontact%28withidentifier%29.md)
   Returns a Boolean indicating whether the current contact is a unified contact and includes a contact with the specified identifier.
-- [enum CNContactSortOrder](cncontactsortorder.md)
+- [enum CNContactSortOrder](./cncontactsortorder.md)
   Indicates the sorting order for contacts.
 ### Checking the Availability of Data
-- [func isKeyAvailable(String) -> Bool](cncontact/iskeyavailable(_:).md)
+- [func isKeyAvailable(String) -> Bool](./cncontact/iskeyavailable%28_%29.md)
   Determines whether the contact property value for the specified key is fetched.
-- [func areKeysAvailable([any CNKeyDescriptor]) -> Bool](cncontact/arekeysavailable(_:).md)
+- [func areKeysAvailable([any CNKeyDescriptor]) -> Bool](./cncontact/arekeysavailable%28_%29.md)
   Determines whether all contact property values for the specified keys are fetched.
 ### Getting Search Predicates
-- [class func predicateForContacts(matchingName: String) -> NSPredicate](cncontact/predicateforcontacts(matchingname:).md)
+- [class func predicateForContacts(matchingName: String) -> NSPredicate](./cncontact/predicateforcontacts%28matchingname%29.md)
   Returns a predicate to find the contacts matching the specified name.
-- [class func predicateForContacts(withIdentifiers: [String]) -> NSPredicate](cncontact/predicateforcontacts(withidentifiers:).md)
+- [class func predicateForContacts(withIdentifiers: [String]) -> NSPredicate](./cncontact/predicateforcontacts%28withidentifiers%29.md)
   Returns a predicate to find the contacts matching the specified identifiers.
-- [class func predicateForContactsInGroup(withIdentifier: String) -> NSPredicate](cncontact/predicateforcontactsingroup(withidentifier:).md)
+- [class func predicateForContactsInGroup(withIdentifier: String) -> NSPredicate](./cncontact/predicateforcontactsingroup%28withidentifier%29.md)
   Returns a predicate to find the contacts that are members in the specified group.
-- [class func predicateForContactsInContainer(withIdentifier: String) -> NSPredicate](cncontact/predicateforcontactsincontainer(withidentifier:).md)
+- [class func predicateForContactsInContainer(withIdentifier: String) -> NSPredicate](./cncontact/predicateforcontactsincontainer%28withidentifier%29.md)
   Returns a predicate to find the contacts in the specified container.
-- [class func predicateForContacts(matching: CNPhoneNumber) -> NSPredicate](cncontact/predicateforcontacts(matching:).md)
+- [class func predicateForContacts(matching: CNPhoneNumber) -> NSPredicate](./cncontact/predicateforcontacts%28matching%29.md)
   Returns a predicate to find the contacts whose phone number matches the specified value.
-- [class func predicateForContacts(matchingEmailAddress: String) -> NSPredicate](cncontact/predicateforcontacts(matchingemailaddress:).md)
+- [class func predicateForContacts(matchingEmailAddress: String) -> NSPredicate](./cncontact/predicateforcontacts%28matchingemailaddress%29.md)
   Returns a predicate to find the contacts whose email address matches the specified value.
 ### Initializers
-- [init?(coder: NSCoder)](cncontact/init(coder:).md)
+- [init?(coder: NSCoder)](./cncontact/init%28coder%29.md)
 ### Instance Properties
-- [var debugDescription: String](cncontact/debugdescription.md)
-- [var description: String](cncontact/description.md)
-- [var shortDebugDescription: String](cncontact/shortdebugdescription.md)
+- [var debugDescription: String](./cncontact/debugdescription.md)
+- [var description: String](./cncontact/description.md)
+- [var shortDebugDescription: String](./cncontact/shortdebugdescription.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CNMutableContact](cnmutablecontact.md)
+- [CNMutableContact](./cnmutablecontact.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
-- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSItemProviderReading](../Foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../Foundation/nsitemproviderwriting.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CNMutableContact](cnmutablecontact.md)
+### Contact data
+- [class CNMutableContact](./cnmutablecontact.md)
   A mutable object that stores information about a single contact, such as the contact’s first name, phone numbers, and addresses.
-- [Data Objects](data-objects.md)
+- [Data Objects](./data-objects.md)
   Access contact-related data, such as the user’s postal address and phone number.
-- [Contact Keys](contact-keys.md)
+- [Contact Keys](./contact-keys.md)
   Specify contact-related properties during fetch operations.
 
 

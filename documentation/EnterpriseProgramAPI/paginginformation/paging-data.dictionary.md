@@ -1,13 +1,14 @@
 # PagingInformation.Paging
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Paging details such as the total number of resources and the per-page limit.
 
 ## Declaration
 
-```swift
+```
 object PagingInformation.Paging
 ```
 

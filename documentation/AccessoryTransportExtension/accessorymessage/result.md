@@ -1,7 +1,8 @@
 # AccessoryMessage.Result
 
 **Framework**: Accessory Transport Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of results for message transmission.
 
@@ -16,19 +17,20 @@ enum Result
 
 #### Overview
 
-Pass values of this type to completion handlers in [`AccessoryTransportSession.EventHandler`](accessorytransportsession/eventhandler.md) and [`AccessorySecuritySession.EventHandler`](accessorysecuritysession/eventhandler.md) methods to indicate transmission outcomes.
+Pass values of this type to completion handlers in [`AccessoryTransportSession.EventHandler`](../accessorytransportsession/eventhandler.md) and [`AccessorySecuritySession.EventHandler`](../accessorysecuritysession/eventhandler.md) methods to indicate transmission outcomes.
 
 ## Topics
 
 ### Identifying result types
-- [AccessoryMessage.Result.success](accessorymessage/result/success.md)
+- [AccessoryMessage.Result.success](./result/success.md)
   A result indicating successful message transmission to the accessory.
-- [case failure(AccessoryMessage.Error)](accessorymessage/result/failure(_:).md)
+- [case failure(AccessoryMessage.Error)](./result/failure%28_%29.md)
   A result indicating message transmission failed.
 
 ## See Also
 
-- [AccessoryMessage.Error](accessorymessage/error.md)
+### Assessing outcomes
+- [AccessoryMessage.Error](./error.md)
   An enumeration of errors that can occur during message transmission.
 
 

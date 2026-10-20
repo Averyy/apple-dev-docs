@@ -1,7 +1,8 @@
 # categories
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique values to encode
 
@@ -22,7 +23,8 @@ var categories: Set<Category?>
 
 ## See Also
 
-- [func category(at: Int) -> Category?](ordinalencoder/transformer/category(at:).md)
+### Getting the categories
+- [func category(at: Int) -> Category?](./category%28at%29.md)
   Retrieves the category at the ordinal encoding index.
 
 

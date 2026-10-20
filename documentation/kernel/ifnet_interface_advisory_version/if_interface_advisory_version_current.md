@@ -1,14 +1,15 @@
 # IF_INTERFACE_ADVISORY_VERSION_CURRENT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IF_INTERFACE_ADVISORY_VERSION_CURRENT = IF_INTERFACE_ADVISORY_VERSION_2
 ```
 

@@ -1,7 +1,8 @@
 # FromToByAction.DecodingErrors
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,19 +18,21 @@
 enum DecodingErrors
 ```
 
+Available when `Value` conforms to `AnimatableData`.
+
 ## Topics
 
 ### Enumeration Cases
-- [FromToByAction.DecodingErrors.unsupportedValueType](fromtobyaction/decodingerrors/unsupportedvaluetype.md)
+- [FromToByAction.DecodingErrors.unsupportedValueType](./decodingerrors/unsupportedvaluetype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

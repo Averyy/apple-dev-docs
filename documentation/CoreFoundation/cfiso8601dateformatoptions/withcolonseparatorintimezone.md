@@ -1,7 +1,8 @@
 # withColonSeparatorInTimeZone
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,20 +19,25 @@
 static var withColonSeparatorInTimeZone: CFISO8601DateFormatOptions { get }
 ```
 
+```c
+kCFISO8601DateFormatWithColonSeparatorInTimeZone
+```
+
 ## See Also
 
-- [static var withColonSeparatorInTime: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withcolonseparatorintime.md)
-- [static var withDashSeparatorInDate: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withdashseparatorindate.md)
-- [static var withDay: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withday.md)
-- [static var withFullDate: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withfulldate.md)
-- [static var withFullTime: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withfulltime.md)
-- [static var withInternetDateTime: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withinternetdatetime.md)
-- [static var withMonth: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withmonth.md)
-- [static var withSpaceBetweenDateAndTime: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withspacebetweendateandtime.md)
-- [static var withTime: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withtime.md)
-- [static var withTimeZone: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withtimezone.md)
-- [static var withWeekOfYear: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withweekofyear.md)
-- [static var withYear: CFISO8601DateFormatOptions](cfiso8601dateformatoptions/withyear.md)
+### Constants
+- [static var withColonSeparatorInTime: CFISO8601DateFormatOptions](./withcolonseparatorintime.md)
+- [static var withDashSeparatorInDate: CFISO8601DateFormatOptions](./withdashseparatorindate.md)
+- [static var withDay: CFISO8601DateFormatOptions](./withday.md)
+- [static var withFullDate: CFISO8601DateFormatOptions](./withfulldate.md)
+- [static var withFullTime: CFISO8601DateFormatOptions](./withfulltime.md)
+- [static var withInternetDateTime: CFISO8601DateFormatOptions](./withinternetdatetime.md)
+- [static var withMonth: CFISO8601DateFormatOptions](./withmonth.md)
+- [static var withSpaceBetweenDateAndTime: CFISO8601DateFormatOptions](./withspacebetweendateandtime.md)
+- [static var withTime: CFISO8601DateFormatOptions](./withtime.md)
+- [static var withTimeZone: CFISO8601DateFormatOptions](./withtimezone.md)
+- [static var withWeekOfYear: CFISO8601DateFormatOptions](./withweekofyear.md)
+- [static var withYear: CFISO8601DateFormatOptions](./withyear.md)
 
 
 ---

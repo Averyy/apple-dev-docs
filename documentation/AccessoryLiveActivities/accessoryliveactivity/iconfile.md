@@ -1,7 +1,8 @@
 # AccessoryLiveActivity.IconFile
 
 **Framework**: Accessory Live Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An on-demand reference to the app icon of the app that started the Live Activity.
 
@@ -17,23 +18,24 @@ struct IconFile
 
 #### Overview
 
-The system loads the app icon file asynchronously using the [`url`](accessoryliveactivity/iconfile/url.md).
+The system loads the app icon file asynchronously using the [`url`](./iconfile/url.md).
 
 ## Topics
 
 ### Accessing file data
-- [var url: URL](accessoryliveactivity/iconfile/url.md)
+- [var url: URL](./iconfile/url.md)
   A URL that locates the icon file’s data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let sourceBundleIcon: AccessoryLiveActivity.IconFile?](accessoryliveactivity/sourcebundleicon.md)
+### Accessing the app’s icon
+- [let sourceBundleIcon: AccessoryLiveActivity.IconFile?](./sourcebundleicon.md)
   The icon of the app that initiated the Live Activity.
 
 

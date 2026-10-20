@@ -1,17 +1,22 @@
 # init(byReferencingFile:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object using the specified file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init?(byReferencingFile fileName: String)
+```
+
+```objc
+- (instancetype) initByReferencingFile:(NSString *) fileName;
 ```
 
 #### Return Value
@@ -24,11 +29,11 @@ This method initializes the image object lazily. It does not actually open the s
 
 The `filename` parameter should include the file extension that identifies the type of the image data. The mechanism that actually creates the image representation for `filename` looks for an `NSImageRep` subclass that handles that data type from among those registered with `NSImage`.
 
-Because this method doesn’t actually create image representations for the image data, your app should do error checking before attempting to use the image; one way to do so is by accessing the [`isValid`](nsimage/isvalid.md) property to check whether the image can be drawn.
+Because this method doesn’t actually create image representations for the image data, your app should do error checking before attempting to use the image; one way to do so is by accessing the [`isValid`](./isvalid.md) property to check whether the image can be drawn.
 
-This method invokes [`setDataRetained:`](nsimage/setdataretained:.md) with an argument of [`true`](https://developer.apple.com/documentation/swift/true), thus enabling it to hold onto its filename. When archiving an image created with this method, only the image’s filename is written to the archive.
+This method invokes [`setDataRetained:`](./setdataretained_.md) with an argument of [`true`](../../Swift/true.md), thus enabling it to hold onto its filename. When archiving an image created with this method, only the image’s filename is written to the archive.
 
-If the cached version of the image uses less memory than the original image data, AppKit deletes the original data and uses the cached image. (This can occur for images whose resolution is greater than 72 dpi.) If you resize the image by less than 50%, AppKit loads the data in again from the file. If you expect to delete the file or change its contents, use [`init(contentsOfFile:)`](nsimage/init(contentsoffile:).md) instead.
+If the cached version of the image uses less memory than the original image data, AppKit deletes the original data and uses the cached image. (This can occur for images whose resolution is greater than 72 dpi.) If you resize the image by less than 50%, AppKit loads the data in again from the file. If you expect to delete the file or change its contents, use [`init(contentsOfFile:)`](./init%28contentsoffile%29.md) instead.
 
 ## Parameters
 
@@ -36,11 +41,12 @@ If the cached version of the image uses less memory than the original image data
 
 ## See Also
 
-- [convenience init(byReferencing: URL)](nsimage/init(byreferencing:).md)
+### Creating Images from Resource Files
+- [convenience init(byReferencing: URL)](./init%28byreferencing%29.md)
   Initializes and returns an image object using the specified URL.
-- [convenience init?(contentsOfFile: String)](nsimage/init(contentsoffile:).md)
+- [convenience init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes and returns an image object with the contents of the specified file.
-- [convenience init?(contentsOf: URL)](nsimage/init(contentsof:).md)
+- [convenience init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes and returns an image object with the contents of the specified URL.
 
 

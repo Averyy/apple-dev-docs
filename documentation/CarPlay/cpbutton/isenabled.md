@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the button is in an enabled state.
 
@@ -16,15 +17,20 @@ A Boolean value that determines whether the button is in an enabled state.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-When [`false`](https://developer.apple.com/documentation/swift/false), CarPlay doesn’t call the button’s handler, and it changes the button’s appearance to reflect its disabled state.
+When [`false`](../../Swift/false.md), CarPlay doesn’t call the button’s handler, and it changes the button’s appearance to reflect its disabled state.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var title: String?](cpbutton/title.md)
+### Configuring the Button’s Attributes
+- [var title: String?](./title.md)
   The button’s title.
 
 

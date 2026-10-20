@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message describing the reason for the failure.
 
@@ -19,7 +20,8 @@ var failureReason: String? { get }
 
 ## See Also
 
-- [var errorDescription: String?](translationerror/errordescription.md)
+### Describing errors
+- [var errorDescription: String?](./errordescription.md)
   A localized message describing the error.
 
 

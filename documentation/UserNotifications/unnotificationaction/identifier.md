@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique string that your app uses to identify the action.
 
@@ -19,15 +20,28 @@ The unique string that your app uses to identify the action.
 var identifier: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
 When the user selects an action, the system reports the value of this string to your app. Because your app handles all actions by using a single delegate method, the identifier strings for all of your app’s actions must be unique.
 
 ## See Also
 
-- [var title: String](unnotificationaction/title.md)
+### Getting Information
+- [var title: String](./title.md)
   The localized string to use as the title of the action.
-- [var icon: UNNotificationActionIcon?](unnotificationaction/icon.md)
+- [var icon: UNNotificationActionIcon?](./icon.md)
   The icon associated with the action.
 
 

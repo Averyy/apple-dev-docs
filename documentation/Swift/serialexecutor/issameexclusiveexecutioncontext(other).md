@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 If this executor has complex equality semantics, and the runtime needs to compare two executors, it will first attempt the usual pointer-based equality / check, / and if it fails it will compare the types of both executors, if they are the same, / it will finally invoke this method, in an attempt to let the executor itself decide / if this and the `other` executor represent the same serial, exclusive, isolation context.
@@ -31,11 +32,19 @@ This method must be implemented with great care, as wrongly returning `true` wou
 
 This check is not used when performing executor switching.
 
-This check is used when performing [`assertIsolated(_:file:line:)`](actor/assertisolated(_:file:line:).md), [`preconditionIsolated(_:file:line:)`](actor/preconditionisolated(_:file:line:).md), [`assumeIsolated(_:file:line:)`](actor/assumeisolated(_:file:line:).md) and similar APIs which assert about the same “exclusive serial execution context”.
+This check is used when performing [`assertIsolated(_:file:line:)`](../actor/assertisolated%28_,file,line%29.md), [`preconditionIsolated(_:file:line:)`](../actor/preconditionisolated%28_,file,line%29.md), [`assumeIsolated(_:file:line:)`](../actor/assumeisolated%28_,file,line%29.md) and similar APIs which assert about the same “exclusive serial execution context”.
 
 ## Parameters
 
 - `other`: The executor to compare with.
+
+## Default Implementations
+
+### SerialExecutor Implementations
+- [func isSameExclusiveExecutionContext(other: Self) -> Bool](./issameexclusiveexecutioncontext%28other%29-1dj7u.md)
+  If this executor has complex equality semantics, and the runtime needs to compare two executors, it will first attempt the usual pointer-based equality / check, / and if it fails it will compare the types of both executors, if they are the same, / it will finally invoke this method, in an attempt to let the executor itself decide / if this and the `other` executor represent the same serial, exclusive, isolation context.
+- [func isSameExclusiveExecutionContext(other: Self) -> Bool](./issameexclusiveexecutioncontext%28other%29-2dhzl.md)
+  If this executor has complex equality semantics, and the runtime needs to compare two executors, it will first attempt the usual pointer-based equality / check, / and if it fails it will compare the types of both executors, if they are the same, / it will finally invoke this method, in an attempt to let the executor itself decide / if this and the `other` executor represent the same serial, exclusive, isolation context.
 
 
 ---

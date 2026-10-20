@@ -1,7 +1,8 @@
 # transliterateChinese(forText:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts text between traditional and simplified Chinese.
 
@@ -17,9 +18,13 @@ Converts text between traditional and simplified Chinese.
 func transliterateChinese(forText text: String)
 ```
 
+```objc
+- (void) transliterateChineseForText:(NSString *) text;
+```
+
 #### Discussion
 
-Call this method to invoke the system’s standard transliteration behavior, for example, when your browser text view receives [`transliterateChinese(_:)`](berespondereditactions/transliteratechinese(_:).md).
+Call this method to invoke the system’s standard transliteration behavior, for example, when your browser text view receives [`transliterateChinese(_:)`](../berespondereditactions/transliteratechinese%28_%29.md).
 
 ## Parameters
 
@@ -27,7 +32,8 @@ Call this method to invoke the system’s standard transliteration behavior, for
 
 ## See Also
 
-- [func translate(text: String, from: CGRect)](betextinteraction/translate(text:from:).md)
+### Translation and transliteration
+- [func translate(text: String, from: CGRect)](./translate%28text,from%29.md)
   Presents a translation of the text.
 
 

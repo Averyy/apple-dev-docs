@@ -1,7 +1,8 @@
 # init(asset:timebase:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new sample buffer generator.
 
@@ -18,6 +19,10 @@ Creates a new sample buffer generator.
 
 ```swift
 init(asset: AVAsset, timebase: CMTimebase?)
+```
+
+```objc
+- (instancetype) initWithAsset:(AVAsset *) asset timebase:(CMTimebaseRef) timebase;
 ```
 
 #### Return Value

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the line number that contains the insertion point.
@@ -17,35 +18,36 @@ func setAccessibilityInsertionPointLineNumber(_ accessibilityInsertionPointLineN
 
 ## See Also
 
-- [func accessibilityInsertionPointLineNumber() -> Int](nsaccessibilityprotocol/accessibilityinsertionpointlinenumber.md)
+### Configuring text elements
+- [func accessibilityInsertionPointLineNumber() -> Int](./accessibilityinsertionpointlinenumber%28%29.md)
   Returns the line number that contains the insertion point.
-- [func accessibilityNumberOfCharacters() -> Int](nsaccessibilityprotocol/accessibilitynumberofcharacters.md)
+- [func accessibilityNumberOfCharacters() -> Int](./accessibilitynumberofcharacters%28%29.md)
   Returns the number of characters in the text.
-- [func setAccessibilityNumberOfCharacters(Int)](nsaccessibilityprotocol/setaccessibilitynumberofcharacters(_:).md)
+- [func setAccessibilityNumberOfCharacters(Int)](./setaccessibilitynumberofcharacters%28_%29.md)
   Sets the number of characters in the text.
-- [func accessibilityPlaceholderValue() -> String?](nsaccessibilityprotocol/accessibilityplaceholdervalue.md)
+- [func accessibilityPlaceholderValue() -> String?](./accessibilityplaceholdervalue%28%29.md)
   Returns the placeholder value for the accessibility element.
-- [func setAccessibilityPlaceholderValue(String?)](nsaccessibilityprotocol/setaccessibilityplaceholdervalue(_:).md)
+- [func setAccessibilityPlaceholderValue(String?)](./setaccessibilityplaceholdervalue%28_%29.md)
   Sets the placeholder value for the accessibility element.
-- [func accessibilitySelectedText() -> String?](nsaccessibilityprotocol/accessibilityselectedtext.md)
+- [func accessibilitySelectedText() -> String?](./accessibilityselectedtext%28%29.md)
   Returns the currently selected text.
-- [func setAccessibilitySelectedText(String?)](nsaccessibilityprotocol/setaccessibilityselectedtext(_:).md)
+- [func setAccessibilitySelectedText(String?)](./setaccessibilityselectedtext%28_%29.md)
   Sets the currently selected text.
-- [func accessibilitySelectedTextRange() -> NSRange](nsaccessibilityprotocol/accessibilityselectedtextrange.md)
+- [func accessibilitySelectedTextRange() -> NSRange](./accessibilityselectedtextrange%28%29.md)
   Returns the range of the currently selected text.
-- [func setAccessibilitySelectedTextRange(NSRange)](nsaccessibilityprotocol/setaccessibilityselectedtextrange(_:).md)
+- [func setAccessibilitySelectedTextRange(NSRange)](./setaccessibilityselectedtextrange%28_%29.md)
   Sets the range of the currently selected text.
-- [func accessibilitySelectedTextRanges() -> [NSValue]?](nsaccessibilityprotocol/accessibilityselectedtextranges.md)
+- [func accessibilitySelectedTextRanges() -> [NSValue]?](./accessibilityselectedtextranges%28%29.md)
   Returns an array of ranges for the currently selected text.
-- [func setAccessibilitySelectedTextRanges([NSValue]?)](nsaccessibilityprotocol/setaccessibilityselectedtextranges(_:).md)
+- [func setAccessibilitySelectedTextRanges([NSValue]?)](./setaccessibilityselectedtextranges%28_%29.md)
   Sets an array of ranges for the currently selected text.
-- [func accessibilitySharedCharacterRange() -> NSRange](nsaccessibilityprotocol/accessibilitysharedcharacterrange.md)
+- [func accessibilitySharedCharacterRange() -> NSRange](./accessibilitysharedcharacterrange%28%29.md)
   Returns the range of characters that the accessibility element displays.
-- [func setAccessibilitySharedCharacterRange(NSRange)](nsaccessibilityprotocol/setaccessibilitysharedcharacterrange(_:).md)
+- [func setAccessibilitySharedCharacterRange(NSRange)](./setaccessibilitysharedcharacterrange%28_%29.md)
   Sets the range of characters that the accessibility element displays.
-- [func accessibilitySharedTextUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitysharedtextuielements.md)
+- [func accessibilitySharedTextUIElements() -> [Any]?](./accessibilitysharedtextuielements%28%29.md)
   Returns the other elements that share text with the accessibility element.
-- [func setAccessibilitySharedTextUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitysharedtextuielements(_:).md)
+- [func setAccessibilitySharedTextUIElements([Any]?)](./setaccessibilitysharedtextuielements%28_%29.md)
   Sets the other elements that share text with the accessibility element.
 
 

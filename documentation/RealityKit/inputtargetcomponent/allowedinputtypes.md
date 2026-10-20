@@ -1,7 +1,8 @@
 # allowedInputTypes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of input types this component’s entity can receive.
 

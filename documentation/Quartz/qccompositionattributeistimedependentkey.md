@@ -1,10 +1,13 @@
 # QCCompositionAttributeIsTimeDependentKey
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -12,11 +15,16 @@
 let QCCompositionAttributeIsTimeDependentKey: String
 ```
 
+```c
+extern NSString * const QCCompositionAttributeIsTimeDependentKey;
+```
+
 ## See Also
 
-- [let QCPlugInAttributeCategoriesKey: String](qcpluginattributecategorieskey.md)
-- [let QCPlugInAttributeCopyrightKey: String](qcpluginattributecopyrightkey.md)
-- [let QCPlugInAttributeExamplesKey: String](qcpluginattributeexampleskey.md)
+### Deprecated constants
+- [let QCPlugInAttributeCategoriesKey: String](./qcpluginattributecategorieskey.md)
+- [let QCPlugInAttributeCopyrightKey: String](./qcpluginattributecopyrightkey.md)
+- [let QCPlugInAttributeExamplesKey: String](./qcpluginattributeexampleskey.md)
 
 
 ---

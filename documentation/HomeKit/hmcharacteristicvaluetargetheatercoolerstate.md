@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetHeaterCoolerState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the target state of a device that heats or cools.
 
@@ -19,27 +20,31 @@ Possible values for the target state of a device that heats or cools.
 enum HMCharacteristicValueTargetHeaterCoolerState
 ```
 
+```c
+enum HMCharacteristicValueTargetHeaterCoolerState : NSInteger;
+```
+
 ## Topics
 
 ### Target State
-- [HMCharacteristicValueTargetHeaterCoolerState.automatic](hmcharacteristicvaluetargetheatercoolerstate/automatic.md)
+- [HMCharacteristicValueTargetHeaterCoolerState.automatic](./hmcharacteristicvaluetargetheatercoolerstate/automatic.md)
   The accessory should choose whether to heat or cool.
-- [HMCharacteristicValueTargetHeaterCoolerState.heat](hmcharacteristicvaluetargetheatercoolerstate/heat.md)
+- [HMCharacteristicValueTargetHeaterCoolerState.heat](./hmcharacteristicvaluetargetheatercoolerstate/heat.md)
   The accessory should operate as a heater.
-- [HMCharacteristicValueTargetHeaterCoolerState.cool](hmcharacteristicvaluetargetheatercoolerstate/cool.md)
+- [HMCharacteristicValueTargetHeaterCoolerState.cool](./hmcharacteristicvaluetargetheatercoolerstate/cool.md)
   The accessory should operate as a cooler.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetheatercoolerstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetheatercoolerstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

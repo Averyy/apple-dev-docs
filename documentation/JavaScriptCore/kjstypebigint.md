@@ -1,7 +1,8 @@
 # kJSTypeBigInt
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var kJSTypeBigInt: JSType { get }
+```
+
+```c
+kJSTypeBigInt
 ```
 
 

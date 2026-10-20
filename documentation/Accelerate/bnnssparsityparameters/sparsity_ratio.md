@@ -1,7 +1,8 @@
 # sparsity_ratio
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var sparsity_ratio: (UInt32, UInt32)
+```
+
+```c
+uint32_t sparsity_ratio[2];
 ```
 
 

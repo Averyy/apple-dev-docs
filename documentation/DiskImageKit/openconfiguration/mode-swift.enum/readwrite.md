@@ -1,7 +1,8 @@
 # OpenConfiguration.Mode.readWrite
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Open the disk-image with read-write permissions.
 

@@ -1,7 +1,8 @@
 # face
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that identifies face metadata.
 
@@ -16,6 +17,10 @@ A constant that identifies face metadata.
 
 ```swift
 static let face: AVMetadataObject.ObjectType
+```
+
+```c
+extern AVMetadataObjectType const AVMetadataObjectTypeFace;
 ```
 
 #### Discussion

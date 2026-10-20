@@ -1,7 +1,8 @@
 # init(planarBuffers:pixelFormat:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized buffer by copying the specified planar buffers.
 
@@ -11,7 +12,7 @@ Returns an initialized buffer by copying the specified planar buffers.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Returns an initialized buffer by copying the specified planar buffers.
 ```swift
 init(planarBuffers: [vImage.PixelBuffer<Format.PlanarPixelFormat>], pixelFormat: Format.Type = Format.self)
 ```
+
+Available when `Format` conforms to `MultiplePlanePixelFormat`.
 
 #### Discussion
 

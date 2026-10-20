@@ -1,7 +1,8 @@
 # CSSM_SAMPLE_TYPE_PROCESS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_SAMPLE_TYPE_PROCESS: Int { get }
+```
+
+```c
+CSSM_SAMPLE_TYPE_PROCESS
 ```
 
 

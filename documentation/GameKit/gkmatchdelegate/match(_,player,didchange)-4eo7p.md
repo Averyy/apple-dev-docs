@@ -1,20 +1,25 @@
 # match(_:player:didChange:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when a player connects or disconnects from a match.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 8.0
+- iPadOS 4.1+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 optional func match(_ match: GKMatch, player playerID: String, didChange state: GKPlayerConnectionState)
+```
+
+```objc
+- (void) match:(GKMatch *) match player:(NSString *) playerID didChangeState:(GKPlayerConnectionState) state;
 ```
 
 #### Discussion
@@ -29,9 +34,10 @@ Implement this method to be notified when players connect to or disconnect from 
 
 ## See Also
 
-- [func match(GKMatch, didReceive: Data, fromPlayer: String)](gkmatchdelegate/match(_:didreceive:fromplayer:).md)
+### Deprecated Methods and Properties
+- [func match(GKMatch, didReceive: Data, fromPlayer: String)](./match%28_,didreceive,fromplayer%29.md)
   Handles when a player receives data in a match.
-- [func match(GKMatch, shouldReinvitePlayer: String) -> Bool](gkmatchdelegate/match(_:shouldreinviteplayer:).md)
+- [func match(GKMatch, shouldReinvitePlayer: String) -> Bool](./match%28_,shouldreinviteplayer%29.md)
   Handles when a player disconnects from a two-player match.
 
 

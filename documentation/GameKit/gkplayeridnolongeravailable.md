@@ -1,7 +1,8 @@
 # GKPlayerIDNoLongerAvailable
 
 **Framework**: GameKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for a player ID that’s no longer available.
 
@@ -19,19 +20,24 @@ A constant for a player ID that’s no longer available.
 let GKPlayerIDNoLongerAvailable: String
 ```
 
+```c
+extern NSString * const GKPlayerIDNoLongerAvailable;
+```
+
 #### Discussion
 
 Deprecated methods that previously returned the player ID return this constant.
 
 ## See Also
 
-- [var gamePlayerID: String](gkplayer/gameplayerid.md)
+### Identifying the player
+- [var gamePlayerID: String](./gkplayer/gameplayerid.md)
   A unique identifier for a player of the game.
-- [var teamPlayerID: String](gkplayer/teamplayerid.md)
+- [var teamPlayerID: String](./gkplayer/teamplayerid.md)
   A unique identifier for a player of all the games that you distribute using your developer account.
-- [func scopedIDsArePersistent() -> Bool](gkplayer/scopedidsarepersistent.md)
+- [func scopedIDsArePersistent() -> Bool](./gkplayer/scopedidsarepersistent%28%29.md)
   Returns a Boolean value depending on whether the player identifiers are persistent across game instances or unique to the game instance.
-- [var playerID: String](gkplayer/playerid.md)
+- [var playerID: String](./gkplayer/playerid.md)
   A unique identifier for a player of the game.
 
 

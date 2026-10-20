@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configure the options to use at binary function creation time.
 
@@ -17,6 +18,10 @@ Configure the options to use at binary function creation time.
 
 ```swift
 var options: MTL4BinaryFunctionOptions { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BinaryFunctionOptions options;
 ```
 
 

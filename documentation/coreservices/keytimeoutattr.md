@@ -1,7 +1,8 @@
 # keyTimeoutAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Length of time, in ticks, that the client will wait for a reply or a result from the server.
 

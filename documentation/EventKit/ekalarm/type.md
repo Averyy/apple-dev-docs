@@ -1,7 +1,8 @@
 # type
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of action to trigger when the alarm fires.
 
@@ -14,17 +15,22 @@ The type of action to trigger when the alarm fires.
 var type: EKAlarmType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) EKAlarmType type;
+```
+
 #### Discussion
 
-To set the type of alarm, define one of [`emailAddress`](ekalarm/emailaddress.md), [`soundName`](ekalarm/soundname.md), or [`url`](ekalarm/url.md).
+To set the type of alarm, define one of [`emailAddress`](./emailaddress.md), [`soundName`](./soundname.md), or [`url`](./url.md).
 
 ## See Also
 
-- [enum EKAlarmType](ekalarmtype.md)
+### Triggering Alarm Actions
+- [enum EKAlarmType](../ekalarmtype.md)
   A value that specifies what type of action occurs when the alarm triggers.
-- [var emailAddress: String?](ekalarm/emailaddress.md)
+- [var emailAddress: String?](./emailaddress.md)
   The recipient of an email to send when the alarm triggers.
-- [var soundName: String?](ekalarm/soundname.md)
+- [var soundName: String?](./soundname.md)
   The name of the sound to play when the alarm triggers.
 
 

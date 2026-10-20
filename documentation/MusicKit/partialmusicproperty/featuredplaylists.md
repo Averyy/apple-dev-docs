@@ -1,7 +1,8 @@
 # featuredPlaylists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of the artist’s playlists.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of the arti
 ```swift
 static let featuredPlaylists: MusicRelationshipProperty<Artist, Playlist>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

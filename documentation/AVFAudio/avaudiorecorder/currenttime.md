@@ -1,7 +1,8 @@
 # currentTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time, in seconds, since the beginning of the recording.
 
@@ -20,13 +21,18 @@ The time, in seconds, since the beginning of the recording.
 var currentTime: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval currentTime;
+```
+
 #### Discussion
 
 The value of this property is `0` when you call it on a stopped audio recorder.
 
 ## See Also
 
-- [var deviceCurrentTime: TimeInterval](avaudiorecorder/devicecurrenttime.md)
+### Accessing recorder timing
+- [var deviceCurrentTime: TimeInterval](./devicecurrenttime.md)
   The time, in seconds, of the host audio device.
 
 

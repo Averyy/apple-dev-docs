@@ -1,7 +1,8 @@
 # variantSets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Variant sets defined inside this variant (nested variation).
 

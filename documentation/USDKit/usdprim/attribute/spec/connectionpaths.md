@@ -1,7 +1,8 @@
 # connectionPaths
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored connection paths, or `nil` if none authored.
 

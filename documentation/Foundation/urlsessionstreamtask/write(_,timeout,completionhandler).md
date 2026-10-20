@@ -1,7 +1,8 @@
 # write(_:timeout:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously writes the specified data to the stream, and calls a handler upon completion.
 
@@ -17,7 +18,15 @@ Asynchronously writes the specified data to the stream, and calls a handler upon
 ## Declaration
 
 ```swift
+func write(_ data: Data, timeout: TimeInterval, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func write(_ data: Data, timeout: TimeInterval) async throws
+```
+
+```objc
+- (void) writeData:(NSData *) data timeout:(NSTimeInterval) timeout completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -28,11 +37,16 @@ There is no guarantee that the remote side of the stream has received all of the
 
 - `data`: The data to be written.
 - `timeout`: A timeout for writing bytes. If the write is not completed within the specified interval, the write is canceled and the `completionHandler` is called with an error. Pass `0` to prevent a write from timing out.
-- `completionHandler`: The completion handler to call when all bytes are written, or an error occurs. This handler is executed on the delegate queue. This completion handler takes the following parameter: - **`error`**: An error object that indicates why the write failed, or `nil` if the write was successful.
+- `completionHandler`: The completion handler to call when all bytes are written, or an error occurs. This handler is executed on the delegate queue.
+
+  This completion handler takes the following parameter:
+
+  - **`error`**: An error object that indicates why the write failed, or `nil` if the write was successful.
 
 ## See Also
 
-- [func readData(ofMinLength: Int, maxLength: Int, timeout: TimeInterval, completionHandler: (Data?, Bool, (any Error)?) -> Void)](urlsessionstreamtask/readdata(ofminlength:maxlength:timeout:completionhandler:).md)
+### Reading and writing data
+- [func readData(ofMinLength: Int, maxLength: Int, timeout: TimeInterval, completionHandler: (Data?, Bool, (any Error)?) -> Void)](./readdata%28ofminlength,maxlength,timeout,completionhandler%29.md)
   Asynchronously reads a number of bytes from the stream, and calls a handler upon completion.
 
 

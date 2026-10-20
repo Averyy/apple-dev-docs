@@ -1,7 +1,8 @@
 # maximumActionButtonCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of action buttons that can be displayed in the header.
 
@@ -14,6 +15,10 @@ The maximum number of action buttons that can be displayed in the header.
 
 ```swift
 class var maximumActionButtonCount: Int { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) NSInteger maximumActionButtonCount;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # kvImageHalfInterpolation
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Partial linear interpolation.
 
@@ -10,7 +11,7 @@ Partial linear interpolation.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ Partial linear interpolation.
 var kvImageHalfInterpolation: vImage_InterpolationMethod { get }
 ```
 
+```c
+kvImageHalfInterpolation
+```
+
 ## See Also
 
-- [var kvImageNoInterpolation: vImage_InterpolationMethod](kvimagenointerpolation.md)
+### Interpolation method constants
+- [var kvImageNoInterpolation: vImage_InterpolationMethod](./kvimagenointerpolation.md)
   Nearest neighbor interpolation.
-- [var kvImageFullInterpolation: vImage_InterpolationMethod](kvimagefullinterpolation.md)
+- [var kvImageFullInterpolation: vImage_InterpolationMethod](./kvimagefullinterpolation.md)
   Full linear interpolation.
 
 

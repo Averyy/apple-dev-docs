@@ -1,7 +1,8 @@
 # writeAttributeNumberOfRinses(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeNumberOfRinses(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeNumberOfRinses(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeNumberOfRinsesWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

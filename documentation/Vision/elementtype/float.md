@@ -1,7 +1,8 @@
 # ElementType.float
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ case float
 
 ## See Also
 
-- [ElementType.double](elementtype/double.md)
+### Getting the element types
+- [ElementType.double](./double.md)
 
 
 ---

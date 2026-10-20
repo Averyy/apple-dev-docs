@@ -1,7 +1,8 @@
 # isUserAuthenticationEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of system user authentication.
 
@@ -14,6 +15,10 @@ The current status of system user authentication.
 
 ```swift
 var isUserAuthenticationEnabled: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isUserAuthenticationEnabled) BOOL userAuthenticationEnabled;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # PreferredColorSchemeKey
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A key for specifying the preferred color scheme.
 
@@ -22,12 +23,12 @@ struct PreferredColorSchemeKey
 
 #### Overview
 
-Don’t use this key directly. Instead, set a preferred color scheme for a view using the [`preferredColorScheme(_:)`](view/preferredcolorscheme(_:).md) view modifier. Get the current color scheme for a view by accessing the [`colorScheme`](environmentvalues/colorscheme.md) value.
+Don’t use this key directly. Instead, set a preferred color scheme for a view using the [`preferredColorScheme(_:)`](./view/preferredcolorscheme%28_%29.md) view modifier. Get the current color scheme for a view by accessing the [`colorScheme`](./environmentvalues/colorscheme.md) value.
 
 ## Relationships
 
 ### Conforms To
-- [PreferenceKey](preferencekey.md)
+- [PreferenceKey](./preferencekey.md)
 
 
 ---

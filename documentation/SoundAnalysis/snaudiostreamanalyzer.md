@@ -1,7 +1,8 @@
 # SNAudioStreamAnalyzer
 
 **Framework**: Sound Analysis  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you create to analyze a stream of audio data and provide the results to your app.
 
@@ -20,55 +21,60 @@ An object you create to analyze a stream of audio data and provide the results t
 class SNAudioStreamAnalyzer
 ```
 
+```objc
+@interface SNAudioStreamAnalyzer : NSObject
+```
+
 ## Mentions
 
-- [Classifying Sounds in an Audio Stream](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
 
 #### Overview
 
-Run an [`SNRequest`](snrequest.md) on an audio stream by creating an `SNAudioStreamAnalyzer`. You can run the same sound analysis request on multiple stream analyzers, and each analyzer can process multiple requests. An audio file analyzer generates an [`SNResult`](snresult.md) each time any of its active requests recognizes a sound.
+Run an [`SNRequest`](./snrequest.md) on an audio stream by creating an `SNAudioStreamAnalyzer`. You can run the same sound analysis request on multiple stream analyzers, and each analyzer can process multiple requests. An audio file analyzer generates an [`SNResult`](./snresult.md) each time any of its active requests recognizes a sound.
 
 ## Topics
 
 ### Creating an Analyzer
-- [init(format: AVAudioFormat)](snaudiostreamanalyzer/init(format:).md)
+- [init(format: AVAudioFormat)](./snaudiostreamanalyzer/init%28format%29.md)
   Creates a new audio stream analyzer.
 ### Managing Requests
-- [func add(any SNRequest, withObserver: any SNResultsObserving) throws](snaudiostreamanalyzer/add(_:withobserver:).md)
+- [func add(any SNRequest, withObserver: any SNResultsObserving) throws](./snaudiostreamanalyzer/add%28_,withobserver%29.md)
   Adds a new analysis request to the audio stream analyzer.
-- [protocol SNRequest](snrequest.md)
+- [protocol SNRequest](./snrequest.md)
   A protocol that represents sound analysis requests.
-- [protocol SNResultsObserving](snresultsobserving.md)
+- [protocol SNResultsObserving](./snresultsobserving.md)
   The interface your app implements to receive the results of an analysis request.
-- [func remove(any SNRequest)](snaudiostreamanalyzer/remove(_:).md)
+- [func remove(any SNRequest)](./snaudiostreamanalyzer/remove%28_%29.md)
   Removes an existing request from the audio stream analyzer.
-- [func removeAllRequests()](snaudiostreamanalyzer/removeallrequests.md)
+- [func removeAllRequests()](./snaudiostreamanalyzer/removeallrequests%28%29.md)
   Removes all the sound analysis requests from the audio stream analyzer.
 ### Analyzing Data
-- [func analyze(AVAudioBuffer, atAudioFramePosition: AVAudioFramePosition)](snaudiostreamanalyzer/analyze(_:ataudioframeposition:).md)
+- [func analyze(AVAudioBuffer, atAudioFramePosition: AVAudioFramePosition)](./snaudiostreamanalyzer/analyze%28_,ataudioframeposition%29.md)
   Adds a new audio buffer to the analyzer’s larger stream buffer.
-- [func completeAnalysis()](snaudiostreamanalyzer/completeanalysis.md)
+- [func completeAnalysis()](./snaudiostreamanalyzer/completeanalysis%28%29.md)
   Notifies the analyzer when it receives the final audio buffer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+### Audio analyzers
+- [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)
   Identify individual sounds in a file, such as a recording, with an audio file analyzer.
-- [class SNAudioFileAnalyzer](snaudiofileanalyzer.md)
+- [class SNAudioFileAnalyzer](./snaudiofileanalyzer.md)
   An analyzer that runs sound classification requests on an audio file.
-- [Classifying Sounds in an Audio Stream](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
   Identify individual sounds in an audio data stream, such as from a microphone, with an audio stream analyzer.
 
 

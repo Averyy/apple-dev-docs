@@ -1,14 +1,15 @@
 # SecureDTFindNodeWithPropertyEqualToValue
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int SecureDTFindNodeWithPropertyEqualToValue(const char *const propertyName, const void *const propertyValue, const size_t propertyValueSize, const DeviceTreeNode **const devicetreeNode);
 ```
 

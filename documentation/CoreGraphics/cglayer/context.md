@@ -1,7 +1,8 @@
 # context
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the graphics context associated with a layer object.
 
@@ -10,7 +11,7 @@ Returns the graphics context associated with a layer object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Returns the graphics context associated with a layer object.
 var context: CGContext? { get }
 ```
 
+```c
+extern CGContextRefCGLayerGetContext(CGLayerRef layer);
+```
+
 #### Discussion
 
 The context that’s returned is the context for the layer itself, not the context that you specified when you created the layer.
 
 ## See Also
 
-- [var size: CGSize](cglayer/size.md)
+### Examining a Layer
+- [var size: CGSize](./size.md)
   Returns the width and height of a layer object.
 
 

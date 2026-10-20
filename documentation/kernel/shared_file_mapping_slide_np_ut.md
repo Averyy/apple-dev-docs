@@ -1,14 +1,15 @@
 # shared_file_mapping_slide_np_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.2+
 
 ## Declaration
 
-```swift
+```c
 typedef shared_file_mapping_slide_np_t shared_file_mapping_slide_np_ut;
 ```
 

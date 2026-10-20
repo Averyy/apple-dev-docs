@@ -1,7 +1,8 @@
 # workoutBuilder(_:didEnd:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the current workout activity has ended.
 
@@ -18,6 +19,10 @@ Tells the delegate that the current workout activity has ended.
 optional func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didEnd workoutActivity: HKWorkoutActivity)
 ```
 
+```objc
+- (void) workoutBuilder:(HKLiveWorkoutBuilder *) workoutBuilder didEndActivity:(HKWorkoutActivity *) workoutActivity;
+```
+
 ## Parameters
 
 - `workoutBuilder`: The workout builder that received the new activity.
@@ -25,7 +30,8 @@ optional func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didEnd work
 
 ## See Also
 
-- [func workoutBuilder(HKLiveWorkoutBuilder, didBegin: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didbegin:).md)
+### Receiving activity updates
+- [func workoutBuilder(HKLiveWorkoutBuilder, didBegin: HKWorkoutActivity)](./workoutbuilder%28_,didbegin%29.md)
   Tells the delegate that a new workout activity has started.
 
 

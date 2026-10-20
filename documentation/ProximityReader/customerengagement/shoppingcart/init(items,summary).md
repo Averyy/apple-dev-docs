@@ -1,7 +1,8 @@
 # init(items:summary:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shopping cart summary.
 

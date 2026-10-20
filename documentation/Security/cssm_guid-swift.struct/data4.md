@@ -1,7 +1,8 @@
 # Data4
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var Data4: (uint8, uint8, uint8, uint8, uint8, uint8, uint8, uint8)
+```
+
+```c
+uint8 Data4[8];
 ```
 
 

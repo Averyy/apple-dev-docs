@@ -1,7 +1,8 @@
 # SWCollaborationView
 
 **Framework**: Shared with You  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that contains the collaboration content and options.
 
@@ -19,9 +20,21 @@ A view that contains the collaboration content and options.
 class SWCollaborationView
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@interface SWCollaborationView : UIView
+```
+
+*macOS*
+
+```objc
+@interface SWCollaborationView : NSView
+```
+
 ## Mentions
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 
 #### Overview
 
@@ -30,92 +43,92 @@ The system presents an `SWCollaborationView` that displays participants and shar
 ## Topics
 
 ### Creating a collaboration view
-- [init(itemProvider: NSItemProvider)](swcollaborationview/init(itemprovider:).md)
+- [init(itemProvider: NSItemProvider)](./swcollaborationview/init%28itemprovider%29.md)
   Creates and initializes a collaboration view.
 ### Accessing view attributes
-- [var activeParticipantCount: Int](swcollaborationview/activeparticipantcount.md)
+- [var activeParticipantCount: Int](./swcollaborationview/activeparticipantcount.md)
   The number of participants in a collaboration.
-- [var cloudSharingDelegate: (any UICloudSharingControllerDelegate)?](swcollaborationview/cloudsharingdelegate.md)
+- [var cloudSharingDelegate: (any UICloudSharingControllerDelegate)?](./swcollaborationview/cloudsharingdelegate.md)
   The delegate object for the cloud-sharing controller.
-- [var delegate: (any SWCollaborationViewDelegate)?](swcollaborationview/delegate.md)
+- [var delegate: (any SWCollaborationViewDelegate)?](./swcollaborationview/delegate.md)
   The delegate object for the collaboration view.
-- [var headerImage: UIImage](swcollaborationview/headerimage.md)
+- [var headerImage: UIImage](./swcollaborationview/headerimage.md)
   The image that the system displays in the header.
-- [var headerSubtitle: String](swcollaborationview/headersubtitle.md)
+- [var headerSubtitle: String](./swcollaborationview/headersubtitle.md)
   The subtitle that the system displays in the header.
-- [var headerTitle: String](swcollaborationview/headertitle.md)
+- [var headerTitle: String](./swcollaborationview/headertitle.md)
   The title that the system displays in the header.
-- [var manageButtonTitle: String](swcollaborationview/managebuttontitle.md)
+- [var manageButtonTitle: String](./swcollaborationview/managebuttontitle.md)
   The manage button title that the system displays in the header.
-- [var menuFormRepresentation: NSMenuItem](swcollaborationview/menuformrepresentation-3sffe.md)
+- [var menuFormRepresentation: NSMenuItem](./swcollaborationview/menuformrepresentation-3sffe.md)
   Returns a menu item suitable to display the collaboration detail view from the toolbar overflow menu.
-- [var menuFormRepresentation: NSMenuItem](swcollaborationview/menuformrepresentation-55skx.md)
+- [var menuFormRepresentation: NSMenuItem](./swcollaborationview/menuformrepresentation-55skx.md)
   Returns a menu item suitable to display the collaboration detail view from the toolbar overflow menu.
 ### Setting view attributes
-- [func setContent(UIView)](swcollaborationview/setcontent(_:).md)
+- [func setContent(UIView)](./swcollaborationview/setcontent%28_%29.md)
   Sets the content view.
-- [func setDetailViewListContent<ListContent>(ListContent)](swcollaborationview/setdetailviewlistcontent(_:)-88gy5.md)
+- [func setDetailViewListContent<ListContent>(ListContent)](./swcollaborationview/setdetailviewlistcontent%28_%29-88gy5.md)
   Sets the detail view for the list content.
-- [func setDetailViewListContent<ListContent>(() -> ListContent)](swcollaborationview/setdetailviewlistcontent(_:)-8ml1c.md)
+- [func setDetailViewListContent<ListContent>(() -> ListContent)](./swcollaborationview/setdetailviewlistcontent%28_%29-8ml1c.md)
   Sets the detail view for the list content from view builder closures.
-- [func setShowManageButton(Bool)](swcollaborationview/setshowmanagebutton(_:).md)
+- [func setShowManageButton(Bool)](./swcollaborationview/setshowmanagebutton%28_%29.md)
   A Boolean value the system uses to show or hide the default manage-participants button in the collaboration popover.
 ### Dismissing the popover
-- [func dismissPopover((() -> Void)?)](swcollaborationview/dismisspopover(_:).md)
+- [func dismissPopover((() -> Void)?)](./swcollaborationview/dismisspopover%28_%29.md)
   Dismisses the popover.
 ### Customizing the cloud-sharing behavior
-- [var cloudSharingControllerDelegate: (any UICloudSharingControllerDelegate)?](swcollaborationview/cloudsharingcontrollerdelegate.md)
+- [var cloudSharingControllerDelegate: (any UICloudSharingControllerDelegate)?](./swcollaborationview/cloudsharingcontrollerdelegate.md)
   A reference to an object that conforms to the CloudKit sharing controller delegate protocol.
-- [var cloudSharingServiceDelegate: (any NSCloudSharingServiceDelegate)?](swcollaborationview/cloudsharingservicedelegate.md)
+- [var cloudSharingServiceDelegate: (any NSCloudSharingServiceDelegate)?](./swcollaborationview/cloudsharingservicedelegate.md)
   A reference to an object that conforms to the cloud-sharing service delegate protocol.
 ### Instance Properties
-- [var pendingAccessRequestsCount: Int](swcollaborationview/pendingaccessrequestscount.md)
-- [var showsParticipantCount: Bool](swcollaborationview/showsparticipantcount.md)
+- [var pendingAccessRequestsCount: Int](./swcollaborationview/pendingaccessrequestscount.md)
+- [var showsParticipantCount: Bool](./swcollaborationview/showsparticipantcount.md)
   Whether the collaboration button should show the participant count. Defaults to YES.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
-- [UIView](../uikit/uiview.md)
+- [NSView](../AppKit/nsview.md)
+- [UIView](../UIKit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # URL.ParseStrategy
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A parse strategy for creating URLs from formatted strings.
 
@@ -22,7 +23,7 @@ struct ParseStrategy
 
 #### Overview
 
-Create an explicit [`URL.ParseStrategy`](url/parsestrategy.md) to parse multiple strings according to the same parse strategy. The following example creates a customized strategy, then applies it to multiple URL candidate strings.
+Create an explicit [`URL.ParseStrategy`](./parsestrategy.md) to parse multiple strings according to the same parse strategy. The following example creates a customized strategy, then applies it to multiple URL candidate strings.
 
 ```swift
 let strategy = URL.ParseStrategy(
@@ -44,7 +45,7 @@ let urlStrings = [
 let urls = urlStrings.map { try? strategy.parse($0) } // [nil, nil, nil, Optional(https://example.com/path?key4=value4), Optional(https://example.com/path?key5=value5)]
 ```
 
-You don’t need to instantiate a parse strategy instance to parse a single string. Instead, use the URL initializer [`init(_:strategy:)`](url/init(_:strategy:).md), passing in a string to parse and a customized strategy, typically created with one of the static accessors. The following example parses a URL string, with a custom strategy that provides a default value for the port component if the source string doesn’t specify one.
+You don’t need to instantiate a parse strategy instance to parse a single string. Instead, use the URL initializer [`init(_:strategy:)`](./init%28_,strategy%29.md), passing in a string to parse and a customized strategy, typically created with one of the static accessors. The following example parses a URL string, with a custom strategy that provides a default value for the port component if the source string doesn’t specify one.
 
 ```swift
 let urlString = "https://internal.example.com/path/to/endpoint?key=value"
@@ -56,61 +57,62 @@ let url = try? URL(urlString, strategy: .url
 ## Topics
 
 ### Creating a URL parse strategy
-- [init(scheme: URL.ParseStrategy.ComponentParseStrategy<String>, user: URL.ParseStrategy.ComponentParseStrategy<String>, password: URL.ParseStrategy.ComponentParseStrategy<String>, host: URL.ParseStrategy.ComponentParseStrategy<String>, port: URL.ParseStrategy.ComponentParseStrategy<Int>, path: URL.ParseStrategy.ComponentParseStrategy<String>, query: URL.ParseStrategy.ComponentParseStrategy<String>, fragment: URL.ParseStrategy.ComponentParseStrategy<String>)](url/parsestrategy/init(scheme:user:password:host:port:path:query:fragment:).md)
+- [init(scheme: URL.ParseStrategy.ComponentParseStrategy<String>, user: URL.ParseStrategy.ComponentParseStrategy<String>, password: URL.ParseStrategy.ComponentParseStrategy<String>, host: URL.ParseStrategy.ComponentParseStrategy<String>, port: URL.ParseStrategy.ComponentParseStrategy<Int>, path: URL.ParseStrategy.ComponentParseStrategy<String>, query: URL.ParseStrategy.ComponentParseStrategy<String>, fragment: URL.ParseStrategy.ComponentParseStrategy<String>)](./parsestrategy/init%28scheme,user,password,host,port,path,query,fragment%29.md)
   Creates a URL parse strategy with the specified component-parsing behaviors.
-- [URL.ParseStrategy.ComponentParseStrategy](url/parsestrategy/componentparsestrategy.md)
+- [URL.ParseStrategy.ComponentParseStrategy](./parsestrategy/componentparsestrategy.md)
   The strategy used to parse one component of a URL.
 ### Customizing strategy behavior
-- [func scheme(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/scheme(_:).md)
+- [func scheme(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/scheme%28_%29.md)
   Modifies a parse strategy to parse a URL’s scheme component in accordance with the provided behavior.
-- [func user(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/user(_:).md)
+- [func user(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/user%28_%29.md)
   Modifies a parse strategy to parse a URL’s user component in accordance with the provided behavior.
-- [func password(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/password(_:).md)
+- [func password(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/password%28_%29.md)
   Modifies a parse strategy to parse a URL’s password component in accordance with the provided behavior.
-- [func host(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/host(_:).md)
+- [func host(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/host%28_%29.md)
   Modifies a parse strategy to parse a URL’s host component in accordance with the provided behavior.
-- [func port(URL.ParseStrategy.ComponentParseStrategy<Int>) -> URL.ParseStrategy](url/parsestrategy/port(_:).md)
+- [func port(URL.ParseStrategy.ComponentParseStrategy<Int>) -> URL.ParseStrategy](./parsestrategy/port%28_%29.md)
   Modifies a parse strategy to parse a URL’s port component in accordance with the provided behavior.
-- [func path(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/path(_:).md)
+- [func path(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/path%28_%29.md)
   Modifies a parse strategy to parse a URL’s path component in accordance with the provided behavior.
-- [func query(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/query(_:).md)
+- [func query(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/query%28_%29.md)
   Modifies a parse strategy to parse a URL’s query component in accordance with the provided behavior.
-- [func fragment(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/fragment(_:).md)
+- [func fragment(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./parsestrategy/fragment%28_%29.md)
   Modifies a parse strategy to parse a URL’s fragment component in accordance with the provided behavior.
-- [URL.ParseStrategy.ComponentParseStrategy](url/parsestrategy/componentparsestrategy.md)
+- [URL.ParseStrategy.ComponentParseStrategy](./parsestrategy/componentparsestrategy.md)
   The strategy used to parse one component of a URL.
 ### Parsing strings
-- [func parse(String) throws -> URL](url/parsestrategy/parse(_:).md)
+- [func parse(String) throws -> URL](./parsestrategy/parse%28_%29.md)
   Parses a URL string in accordance with this strategy and returns the parsed value.
 ### Locating URLs with regular expressions
-- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: URL)?](url/parsestrategy/consuming(_:startingat:in:).md)
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: URL)?](./parsestrategy/consuming%28_,startingat,in%29.md)
   Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Supporting Types
-- [URL.ParseStrategy.RegexOutput](url/parsestrategy/regexoutput.md)
+- [URL.ParseStrategy.RegexOutput](./parsestrategy/regexoutput.md)
   The type returned when capturing matching substrings with this strategy.
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](url/parsestrategy/customconsumingregexcomponent-implementations.md)
-- [ParseStrategy Implementations](url/parsestrategy/parsestrategy-implementations.md)
-- [RegexComponent Implementations](url/parsestrategy/regexcomponent-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./parsestrategy/customconsumingregexcomponent-implementations.md)
+- [ParseStrategy Implementations](./parsestrategy/parsestrategy-implementations.md)
+- [RegexComponent Implementations](./parsestrategy/regexcomponent-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ParseStrategy](parsestrategy.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseStrategy](../parsestrategy.md)
+- [RegexComponent](../../Swift/regexcomponent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var parseStrategy: URL.ParseStrategy](url/formatstyle/parsestrategy.md)
+### Parsing URLs
+- [var parseStrategy: URL.ParseStrategy](./formatstyle/parsestrategy.md)
   The parse strategy used by this format style.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to provide the frame of an element.
@@ -10,7 +11,7 @@ Asks the delegate to provide the frame of an element.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,7 +30,8 @@ Returns the frame for the element, in the view coordinate system of the interact
 
 ## See Also
 
-- [func indirectScribbleInteraction(any UIInteraction, requestElementsIn: CGRect, completion: ([Self.ElementIdentifier]) -> Void)](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:requestelementsin:completion:).md)
+### Finding Elements and Frames
+- [func indirectScribbleInteraction(any UIInteraction, requestElementsIn: CGRect, completion: ([Self.ElementIdentifier]) -> Void)](./indirectscribbleinteraction%28_,requestelementsin,completion%29.md)
   Asks the delegate to return the locations of text input elements inside the specified rectangle of the view.
 
 

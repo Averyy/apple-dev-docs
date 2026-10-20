@@ -1,7 +1,8 @@
 # PHASEGeneratorNodeDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for nodes that provide audio data to generate sound.
 
@@ -19,62 +20,67 @@ A base class for nodes that provide audio data to generate sound.
 class PHASEGeneratorNodeDefinition
 ```
 
+```objc
+@interface PHASEGeneratorNodeDefinition : PHASESoundEventNodeDefinition
+```
+
 #### Overview
 
-This class encapsulates shared logic for subclasses that provide audio data to a mixer for sound output, namely [`PHASESamplerNodeDefinition`](phasesamplernodedefinition.md) and [`PHASEPushStreamNodeDefinition`](phasepushstreamnodedefinition.md).
+This class encapsulates shared logic for subclasses that provide audio data to a mixer for sound output, namely [`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md) and [`PHASEPushStreamNodeDefinition`](./phasepushstreamnodedefinition.md).
 
 ## Topics
 
 ### Calibrating Loudness
-- [func setCalibrationMode(calibrationMode: PHASECalibrationMode, level: Double)](phasegeneratornodedefinition/setcalibrationmode(calibrationmode:level:).md)
+- [func setCalibrationMode(calibrationMode: PHASECalibrationMode, level: Double)](./phasegeneratornodedefinition/setcalibrationmode%28calibrationmode,level%29.md)
   Selects a loudness correction strategy and reference level.
-- [var calibrationMode: PHASECalibrationMode](phasegeneratornodedefinition/calibrationmode.md)
+- [var calibrationMode: PHASECalibrationMode](./phasegeneratornodedefinition/calibrationmode.md)
   A sound pressure level strategy for loudness correction.
-- [var level: Double](phasegeneratornodedefinition/level.md)
+- [var level: Double](./phasegeneratornodedefinition/level.md)
   The node’s loudness.
 ### Defining an Output Strategy
-- [var mixerDefinition: PHASEMixerDefinition](phasegeneratornodedefinition/mixerdefinition.md)
+- [var mixerDefinition: PHASEMixerDefinition](./phasegeneratornodedefinition/mixerdefinition.md)
   An object that combines audio layers for the node’s output.
 ### Joining a Group
-- [var group: PHASEGroup?](phasegeneratornodedefinition/group.md)
+- [var group: PHASEGroup?](./phasegeneratornodedefinition/group.md)
   A group this node conforms to for gain and rate control.
 ### Controlling Audio Playback
-- [var rate: Double](phasegeneratornodedefinition/rate.md)
+- [var rate: Double](./phasegeneratornodedefinition/rate.md)
   A playback speed for the node’s audio.
-- [var rateMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasegeneratornodedefinition/ratemetaparameterdefinition.md)
+- [var rateMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./phasegeneratornodedefinition/ratemetaparameterdefinition.md)
   A meta parameter that dynamically changes the audio’s rate.
-- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasegeneratornodedefinition/gainmetaparameterdefinition.md)
+- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./phasegeneratornodedefinition/gainmetaparameterdefinition.md)
   A meta parameter that dynamically changes the audio’s loudness.
 
 ## Relationships
 
 ### Inherits From
-- [PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
 ### Inherited By
-- [PHASEPullStreamNodeDefinition](phasepullstreamnodedefinition.md)
-- [PHASEPushStreamNodeDefinition](phasepushstreamnodedefinition.md)
-- [PHASESamplerNodeDefinition](phasesamplernodedefinition.md)
+- [PHASEPullStreamNodeDefinition](./phasepullstreamnodedefinition.md)
+- [PHASEPushStreamNodeDefinition](./phasepushstreamnodedefinition.md)
+- [PHASESamplerNodeDefinition](./phasesamplernodedefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESamplerNodeDefinition](phasesamplernodedefinition.md)
+### Audio-Providing Nodes
+- [class PHASESamplerNodeDefinition](./phasesamplernodedefinition.md)
   A node that plays complete audio data.
-- [enum PHASEPlaybackMode](phaseplaybackmode.md)
+- [enum PHASEPlaybackMode](./phaseplaybackmode.md)
   Loop options for audio playback.
-- [class PHASEPushStreamNodeDefinition](phasepushstreamnodedefinition.md)
+- [class PHASEPushStreamNodeDefinition](./phasepushstreamnodedefinition.md)
   A node that plays a sequence of audio buffers.
-- [class PHASEPushStreamNode](phasepushstreamnode.md)
+- [class PHASEPushStreamNode](./phasepushstreamnode.md)
   An audio stream you manage to provide a sound buffer data.
-- [struct PHASEPushStreamBufferOptions](phasepushstreambufferoptions.md)
+- [struct PHASEPushStreamBufferOptions](./phasepushstreambufferoptions.md)
   Options that inform PHASE of an audio-stream buffer’s playback priority.
-- [enum PHASECalibrationMode](phasecalibrationmode.md)
+- [enum PHASECalibrationMode](./phasecalibrationmode.md)
   Calibration options for sound pressure level.
 
 

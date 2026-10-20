@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from an image texture.
 
@@ -11,7 +12,7 @@ Creates an object from an image texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(texture: PhysicallyBasedMaterial.Texture? = nil)
 
 ## See Also
 
-- [init(CustomMaterial.AmbientOcclusion)](physicallybasedmaterial/ambientocclusion-swift.struct/init(_:).md)
+### Creating an ambient occlusion object
+- [init(CustomMaterial.AmbientOcclusion)](./init%28_%29.md)
   Creates an object from a custom material’s ambient occlusion property.
 
 

@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a run loop scheduler time calculated by advancing this instance’s time by the given interval.
 
@@ -30,9 +31,10 @@ A dispatch queue time advanced by the given interval from this instance’s time
 
 ## See Also
 
-- [RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride.md)
+### Working with Scheduler Time Intervals
+- [RunLoop.SchedulerTimeType.Stride](./stride.md)
   The interval by which run loop times advance.
-- [func distance(to: RunLoop.SchedulerTimeType) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/distance(to:).md)
+- [func distance(to: RunLoop.SchedulerTimeType) -> RunLoop.SchedulerTimeType.Stride](./distance%28to%29.md)
   Returns the distance to another run loop scheduler time.
 
 

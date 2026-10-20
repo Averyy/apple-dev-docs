@@ -1,7 +1,8 @@
 # DeviceActivityEvent
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that represents an application, category, or website activity.
 
@@ -23,40 +24,41 @@ Device activity is the amount of time an application, category, or web domain is
 ## Topics
 
 ### Creating an Event
-- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents)](deviceactivityevent/init(applications:categories:webdomains:threshold:).md)
+- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents)](./deviceactivityevent/init%28applications,categories,webdomains,threshold%29.md)
   Creates a new event.
-- [DeviceActivityEvent.Name](deviceactivityevent/name.md)
+- [DeviceActivityEvent.Name](./deviceactivityevent/name.md)
   The unique name of an event.
-- [var includesAllActivity: Bool](deviceactivityevent/includesallactivity.md)
+- [var includesAllActivity: Bool](./deviceactivityevent/includesallactivity.md)
   A Boolean value that indicates whether the event includes all applications, categories, and web domains.
 ### Including Objects in an Event
-- [var applications: Set<ApplicationToken>](deviceactivityevent/applications.md)
+- [var applications: Set<ApplicationToken>](./deviceactivityevent/applications.md)
   The applications that the event includes.
-- [var categories: Set<ActivityCategoryToken>](deviceactivityevent/categories.md)
+- [var categories: Set<ActivityCategoryToken>](./deviceactivityevent/categories.md)
   The categories that the event includes.
-- [var webDomains: Set<WebDomainToken>](deviceactivityevent/webdomains.md)
+- [var webDomains: Set<WebDomainToken>](./deviceactivityevent/webdomains.md)
   The web domains that the event includes.
-- [var threshold: DateComponents](deviceactivityevent/threshold.md)
+- [var threshold: DateComponents](./deviceactivityevent/threshold.md)
   The amount of time to monitor the provided applications, categories, and web domains.
 ### Initializers
-- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents, includesPastActivity: Bool)](deviceactivityevent/init(applications:categories:webdomains:threshold:includespastactivity:).md)
+- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents, includesPastActivity: Bool)](./deviceactivityevent/init%28applications,categories,webdomains,threshold,includespastactivity%29.md)
   Creates a new event.
 ### Instance Properties
-- [var includesPastActivity: Bool](deviceactivityevent/includespastactivity.md)
+- [var includesPastActivity: Bool](./deviceactivityevent/includespastactivity.md)
   Whether the system takes into account the person’s device activity before your app starts monitoring the event.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct DeviceActivityName](deviceactivityname.md)
+### Manage activities
+- [struct DeviceActivityName](./deviceactivityname.md)
   The unique name of an activity.
-- [struct DeviceActivitySchedule](deviceactivityschedule.md)
+- [struct DeviceActivitySchedule](./deviceactivityschedule.md)
   A calendar-based schedule for when to monitor a device’s activity.
-- [struct DeviceActivityCenter](deviceactivitycenter.md)
+- [struct DeviceActivityCenter](./deviceactivitycenter.md)
   A class that enables an application’s extension to start monitoring scheduled device activity.
 
 

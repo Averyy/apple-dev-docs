@@ -1,7 +1,8 @@
 # CiStartConditionFileMatcher
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A path pattern filter applied to an Xcode Cloud workflow start condition, restricting triggers to changes in specific files or directories.
 
@@ -10,7 +11,7 @@ A path pattern filter applied to an Xcode Cloud workflow start condition, restri
 
 ## Declaration
 
-```swift
+```
 object CiStartConditionFileMatcher
 ```
 

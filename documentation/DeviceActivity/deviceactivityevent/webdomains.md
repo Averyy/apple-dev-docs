@@ -1,7 +1,8 @@
 # webDomains
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web domains that the event includes.
 
@@ -18,11 +19,12 @@ var webDomains: Set<WebDomainToken> { get }
 
 ## See Also
 
-- [var applications: Set<ApplicationToken>](deviceactivityevent/applications.md)
+### Including Objects in an Event
+- [var applications: Set<ApplicationToken>](./applications.md)
   The applications that the event includes.
-- [var categories: Set<ActivityCategoryToken>](deviceactivityevent/categories.md)
+- [var categories: Set<ActivityCategoryToken>](./categories.md)
   The categories that the event includes.
-- [var threshold: DateComponents](deviceactivityevent/threshold.md)
+- [var threshold: DateComponents](./threshold.md)
   The amount of time to monitor the provided applications, categories, and web domains.
 
 

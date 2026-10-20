@@ -1,7 +1,8 @@
 # securityInformation
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains encryption and digital signature information about the message content.
 
@@ -14,9 +15,14 @@ An object that contains encryption and digital signature information about the m
 var securityInformation: MEMessageSecurityInformation { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) MEMessageSecurityInformation * securityInformation;
+```
+
 ## See Also
 
-- [var rawData: Data?](medecodedmessage/rawdata.md)
+### Decoding Messages
+- [var rawData: Data?](./rawdata.md)
   The decoded MIME data for a message.
 
 

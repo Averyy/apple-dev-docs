@@ -1,7 +1,8 @@
 # requiredAuthorizations
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of authorization types the object-tracking provider requires.
 
@@ -16,7 +17,8 @@ static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 
 ## See Also
 
-- [static var isSupported: Bool](objecttrackingprovider/issupported.md)
+### Checking availability
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether a device supports the object-tracking provider.
 
 

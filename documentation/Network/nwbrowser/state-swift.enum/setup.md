@@ -1,7 +1,8 @@
 # NWBrowser.State.setup
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The browser has been initialized but not started.
 
@@ -22,11 +23,12 @@ case setup
 
 ## See Also
 
-- [NWBrowser.State.ready](nwbrowser/state-swift.enum/ready.md)
+### States
+- [NWBrowser.State.ready](./ready.md)
   The browser is registered for discovering services.
-- [NWBrowser.State.failed(_:)](nwbrowser/state-swift.enum/failed(_:).md)
+- [NWBrowser.State.failed(_:)](./failed%28_%29.md)
   The browser has encountered a fatal error.
-- [NWBrowser.State.cancelled](nwbrowser/state-swift.enum/cancelled.md)
+- [NWBrowser.State.cancelled](./cancelled.md)
   The browser has been canceled.
 
 

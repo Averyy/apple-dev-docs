@@ -1,21 +1,26 @@
 # dequantized(to:scale:bias:axis:)
 
 **Framework**: ML Compute  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a tensor you quantize to a 32-bit floating-point tensor.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 func dequantized(to type: MLCDataType, scale: MLCTensor, bias: MLCTensor, axis: Int) -> MLCTensor?
+```
+
+```objc
+- (MLCTensor *) tensorByDequantizingToType:(MLCDataType) type scale:(MLCTensor *) scale bias:(MLCTensor *) bias axis:(NSInteger) axis;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ A tensor the system dequantizes.
 
 #### Discussion
 
-> ❗ **Important**:  The tensor type must be [`MLCDataType.float32`](mlcdatatype/float32.md).
+> ❗ **Important**:  The tensor type must be [`MLCDataType.float32`](../mlcdatatype/float32.md).
 
 ## Parameters
 
@@ -35,11 +40,12 @@ A tensor the system dequantizes.
 
 ## See Also
 
-- [func quantized(to: MLCDataType, scale: Float, bias: Int) -> MLCTensor?](mlctensor/quantized(to:scale:bias:).md)
+### Converting Tensors
+- [func quantized(to: MLCDataType, scale: Float, bias: Int) -> MLCTensor?](./quantized%28to,scale,bias%29.md)
   Converts a 32-bit floating-point tensor with the scale and bias you specify.
-- [func quantized(to: MLCDataType, scale: MLCTensor, bias: MLCTensor, axis: Int) -> MLCTensor?](mlctensor/quantized(to:scale:bias:axis:).md)
+- [func quantized(to: MLCDataType, scale: MLCTensor, bias: MLCTensor, axis: Int) -> MLCTensor?](./quantized%28to,scale,bias,axis%29.md)
   Converts a 32-bit floating-point tensor with the scale and bias you specify.
-- [func dequantized(to: MLCDataType, scale: MLCTensor, zeroPoint: MLCTensor) -> MLCTensor?](mlctensor/dequantized(to:scale:zeropoint:).md)
+- [func dequantized(to: MLCDataType, scale: MLCTensor, zeroPoint: MLCTensor) -> MLCTensor?](./dequantized%28to,scale,zeropoint%29.md)
   Converts a tensor you quantize to a 32-bit floating-point tensor.
 
 

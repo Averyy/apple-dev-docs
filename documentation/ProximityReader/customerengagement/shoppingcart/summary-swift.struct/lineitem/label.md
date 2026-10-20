@@ -1,7 +1,8 @@
 # label
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The summary line label.
 

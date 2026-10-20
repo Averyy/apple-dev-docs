@@ -1,7 +1,8 @@
 # phrase
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -19,7 +20,8 @@ let phrase: String
 
 ## See Also
 
-- [let count: Int](sfcustomlanguagemodeldata/phrasecount/count.md)
+### Inspecting the weighted phrase
+- [let count: Int](./count.md)
 
 
 ---

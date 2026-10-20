@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Intersects the `IndexSet` with `other`.
 
@@ -22,15 +23,16 @@ func intersection(_ other: IndexSet) -> IndexSet
 
 ## See Also
 
-- [func formIntersection(IndexSet)](indexset/formintersection(_:).md)
+### Combining Index Sets
+- [func formIntersection(IndexSet)](./formintersection%28_%29.md)
   Intersects the `IndexSet` with `other`.
-- [func formSymmetricDifference(IndexSet)](indexset/formsymmetricdifference(_:).md)
+- [func formSymmetricDifference(IndexSet)](./formsymmetricdifference%28_%29.md)
   Exclusive or the `IndexSet` with `other`.
-- [func formUnion(IndexSet)](indexset/formunion(_:).md)
+- [func formUnion(IndexSet)](./formunion%28_%29.md)
   Union the `IndexSet` with `other`.
-- [func symmetricDifference(IndexSet) -> IndexSet](indexset/symmetricdifference(_:).md)
+- [func symmetricDifference(IndexSet) -> IndexSet](./symmetricdifference%28_%29.md)
   Exclusive or the `IndexSet` with `other`.
-- [func union(IndexSet) -> IndexSet](indexset/union(_:).md)
+- [func union(IndexSet) -> IndexSet](./union%28_%29.md)
   Union the `IndexSet` with `other`.
 
 

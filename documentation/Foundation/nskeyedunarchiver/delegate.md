@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s delegate.
 
@@ -18,6 +19,10 @@ The receiver’s delegate.
 
 ```swift
 unowned(unsafe) var delegate: (any NSKeyedUnarchiverDelegate)? { get set }
+```
+
+```objc
+@property (assign, nullable) id<NSKeyedUnarchiverDelegate> delegate;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(id:makeContent:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a window group with an identifier.
 
@@ -20,6 +21,8 @@ Creates a window group with an identifier.
 @export(implementation)
 nonisolated init(id: String, @ContentBuilder makeContent: @escaping () -> Content)
 ```
+
+Available when `Content` conforms to `View`.
 
 #### Discussion
 

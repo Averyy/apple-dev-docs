@@ -1,6 +1,7 @@
 # CVImageBuffer
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 An interface for managing different types of image data.
 
@@ -11,104 +12,106 @@ Core Video image buffers provides a convenient interface for managing different 
 ## Topics
 
 ### Inspecting image buffers
-- [func CVImageBufferGetCleanRect(CVImageBuffer) -> CGRect](cvimagebuffergetcleanrect(_:).md)
+- [func CVImageBufferGetCleanRect(CVImageBuffer) -> CGRect](./cvimagebuffergetcleanrect%28_%29.md)
   Returns the source rectangle of a Core Video image buffer that represents the clean aperture of the buffer in encoded pixels.
-- [func CVImageBufferGetColorSpace(CVImageBuffer) -> Unmanaged<CGColorSpace>?](cvimagebuffergetcolorspace(_:).md)
+- [func CVImageBufferGetColorSpace(CVImageBuffer) -> Unmanaged<CGColorSpace>?](./cvimagebuffergetcolorspace%28_%29.md)
   Returns the color space of a Core Video image buffer.
-- [func CVImageBufferGetDisplaySize(CVImageBuffer) -> CGSize](cvimagebuffergetdisplaysize(_:).md)
+- [func CVImageBufferGetDisplaySize(CVImageBuffer) -> CGSize](./cvimagebuffergetdisplaysize%28_%29.md)
   Returns the nominal output display size, in square pixels, of a Core Video image buffer.
-- [func CVImageBufferGetEncodedSize(CVImageBuffer) -> CGSize](cvimagebuffergetencodedsize(_:).md)
+- [func CVImageBufferGetEncodedSize(CVImageBuffer) -> CGSize](./cvimagebuffergetencodedsize%28_%29.md)
   Returns the full encoded dimensions of a Core Video image buffer.
-- [func CVImageBufferIsFlipped(CVImageBuffer) -> Bool](cvimagebufferisflipped(_:).md)
+- [func CVImageBufferIsFlipped(CVImageBuffer) -> Bool](./cvimagebufferisflipped%28_%29.md)
   Returns a Boolean value indicating whether the image is vertically flipped.
 ### Creating color spaces
-- [func CVImageBufferCreateColorSpaceFromAttachments(CFDictionary) -> Unmanaged<CGColorSpace>?](cvimagebuffercreatecolorspacefromattachments(_:).md)
+- [func CVImageBufferCreateColorSpaceFromAttachments(CFDictionary) -> Unmanaged<CGColorSpace>?](./cvimagebuffercreatecolorspacefromattachments%28_%29.md)
   Attempts to create a Core Graphics color space from the image buffer’s attachments that you specify.
 ### Protocols
-- [protocol CVImageBufferRepresentable](cvimagebufferrepresentable.md)
+- [protocol CVImageBufferRepresentable](./cvimagebufferrepresentable.md)
   CVImageBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVImageBuffer type.
-- [protocol CVImageBufferAttachmentKeyDefinitions](cvimagebufferattachmentkeydefinitions.md)
+- [protocol CVImageBufferAttachmentKeyDefinitions](./cvimagebufferattachmentkeydefinitions.md)
   A namespace for image buffer attachment keys.
 ### Data types
-- [typealias CVImageBuffer](cvimagebuffer.md)
+- [typealias CVImageBuffer](./cvimagebuffer.md)
   A reference to a Core Video image buffer.
-- [struct CVImageSize](cvimagesize.md)
+- [struct CVImageSize](./cvimagesize.md)
   Size of image buffer expressed as pixel count.
-- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
-- [struct CVImageCleanAperture](cvimagecleanaperture.md)
+- [enum CVImageBufferOriginPosition](./cvimagebufferoriginposition.md)
+- [struct CVImageCleanAperture](./cvimagecleanaperture.md)
   An image’s clean aperture is a region of video to display.
-- [struct CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
+- [struct CVImagePixelAspectRatio](./cvimagepixelaspectratio.md)
   Aspect ratio of each pixel in the image buffer.
-- [struct CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
+- [struct CVImageDisplayMaskRectangle](./cvimagedisplaymaskrectangle.md)
   Specifies the rectangular display area within the image.
-- [struct CVImageStereoDisplayMaskRectangle](cvimagestereodisplaymaskrectangle.md)
+- [struct CVImageStereoDisplayMaskRectangle](./cvimagestereodisplaymaskrectangle.md)
   Specifies the rectangular display area within a view of stereo image.
-- [struct CVImageChromaField](cvimagechromafield.md)
+- [struct CVImageChromaField](./cvimagechromafield.md)
   Information about chroma field in the 2VUY format image data.
 ### Color and signal characteristics
-- [enum CVImageColorPrimaries](cvimagecolorprimaries.md)
+- [enum CVImageColorPrimaries](./cvimagecolorprimaries.md)
   Color primaries describe the gamut used for the rendering intent of an image.
-- [enum CVImageTransferFunction](cvimagetransferfunction.md)
-  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](cvimagetransferfunction/itu_r_709_2.md) transfer function.
-- [enum CVImageLogTransferFunction](cvimagelogtransferfunction.md)
+- [enum CVImageTransferFunction](./cvimagetransferfunction.md)
+  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](./cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](./cvimagetransferfunction/itu_r_709_2.md) transfer function.
+- [enum CVImageLogTransferFunction](./cvimagelogtransferfunction.md)
   Identifies the specific log curve transfer function or gamma of the content.
-- [enum CVImageYCbCrMatrix](cvimageycbcrmatrix.md)
+- [enum CVImageYCbCrMatrix](./cvimageycbcrmatrix.md)
   Indicates color matrix used for converting image buffer from YCbCr to RGB.
-- [enum CVImageAlphaChannelMode](cvimagealphachannelmode.md)
-- [enum CVImageFieldDetail](cvimagefielddetail.md)
+- [enum CVImageAlphaChannelMode](./cvimagealphachannelmode.md)
+- [enum CVImageFieldDetail](./cvimagefielddetail.md)
 ### Converting between strings and integer code points
-- [func CVColorPrimariesGetIntegerCodePointForString(CFString?) -> Int32](cvcolorprimariesgetintegercodepointforstring(_:).md)
+- [func CVColorPrimariesGetIntegerCodePointForString(CFString?) -> Int32](./cvcolorprimariesgetintegercodepointforstring%28_%29.md)
   Returns the standard integer code point corresponding to the Core Video color primaries constant string that you specify.
-- [func CVColorPrimariesGetStringForIntegerCodePoint(Int32) -> Unmanaged<CFString>?](cvcolorprimariesgetstringforintegercodepoint(_:).md)
+- [func CVColorPrimariesGetStringForIntegerCodePoint(Int32) -> Unmanaged<CFString>?](./cvcolorprimariesgetstringforintegercodepoint%28_%29.md)
   Returns the Core Video color primaries string corresponding to the standard integer code point that you specify.
-- [func CVTransferFunctionGetIntegerCodePointForString(CFString?) -> Int32](cvtransferfunctiongetintegercodepointforstring(_:).md)
+- [func CVTransferFunctionGetIntegerCodePointForString(CFString?) -> Int32](./cvtransferfunctiongetintegercodepointforstring%28_%29.md)
   Returns the standard integer code point corresponding to the Core Video transfer function string that you specify.
-- [func CVTransferFunctionGetStringForIntegerCodePoint(Int32) -> Unmanaged<CFString>?](cvtransferfunctiongetstringforintegercodepoint(_:).md)
+- [func CVTransferFunctionGetStringForIntegerCodePoint(Int32) -> Unmanaged<CFString>?](./cvtransferfunctiongetstringforintegercodepoint%28_%29.md)
   Returns the Core Video transfer function string corresponding to the standard integer code point that you specify.
-- [func CVYCbCrMatrixGetIntegerCodePointForString(CFString?) -> Int32](cvycbcrmatrixgetintegercodepointforstring(_:).md)
+- [func CVYCbCrMatrixGetIntegerCodePointForString(CFString?) -> Int32](./cvycbcrmatrixgetintegercodepointforstring%28_%29.md)
   Returns the standard integer code point corresponding to the Core Video YCbCr matrix string that you specify.
-- [func CVYCbCrMatrixGetStringForIntegerCodePoint(Int32) -> Unmanaged<CFString>?](cvycbcrmatrixgetstringforintegercodepoint(_:).md)
+- [func CVYCbCrMatrixGetStringForIntegerCodePoint(Int32) -> Unmanaged<CFString>?](./cvycbcrmatrixgetstringforintegercodepoint%28_%29.md)
   Returns the Core Video YCbCr matrix string corresponding to the standard integer code point that you specify.
 ### Constants
-- [Image Buffer Attachment Keys](image-buffer-attachment-keys.md)
+- [Image Buffer Attachment Keys](./image-buffer-attachment-keys.md)
   Keys that describe the attachment types associated with image buffers.
-- [Image Buffer Clean Aperture Keys](image-buffer-clean-aperture-keys.md)
+- [Image Buffer Clean Aperture Keys](./image-buffer-clean-aperture-keys.md)
   Keys that describe the clean aperture of an image buffer.
-- [Image Buffer Pixel Aspect Ratio Keys](image-buffer-pixel-aspect-ratio-keys.md)
+- [Image Buffer Pixel Aspect Ratio Keys](./image-buffer-pixel-aspect-ratio-keys.md)
   Keys that describe the pixel aspect ratio of an image buffer.
-- [Image Buffer Display Dimensions Keys](image-buffer-display-dimensions-keys.md)
+- [Image Buffer Display Dimensions Keys](./image-buffer-display-dimensions-keys.md)
   Keys that describe the display dimensions of an image buffer.
-- [Image Buffer Field Detail Constants](image-buffer-field-detail-constants.md)
+- [Image Buffer Field Detail Constants](./image-buffer-field-detail-constants.md)
   Constants that indicate the field order of interlaced video in an image buffer.
-- [Image Buffer YCbCr Matrix Constants](image-buffer-ycbcr-matrix-constants.md)
+- [Image Buffer YCbCr Matrix Constants](./image-buffer-ycbcr-matrix-constants.md)
   Constants that indicate the type of conversion matrix Core Video uses when it converts image buffer data from the YCbCr color space to the RGB color space.
-- [Image Buffer Color Primaries Constants](image-buffer-color-primaries-constants.md)
+- [Image Buffer Color Primaries Constants](./image-buffer-color-primaries-constants.md)
   Constants that indicate the color primaries gamut for the image buffer.
-- [Image Buffer Transfer Function Constants](image-buffer-transfer-function-constants.md)
+- [Image Buffer Transfer Function Constants](./image-buffer-transfer-function-constants.md)
   Constants that indicate the transfer function for the image buffer.
-- [Image Buffer Chroma Location Constants](image-buffer-chroma-location-constants.md)
+- [Image Buffer Chroma Location Constants](./image-buffer-chroma-location-constants.md)
   Constants that indicate locations for chroma samples in the image buffer.
-- [Image Buffer Chroma Subsampling Constants](image-buffer-chroma-subsampling-constants.md)
+- [Image Buffer Chroma Subsampling Constants](./image-buffer-chroma-subsampling-constants.md)
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
-- [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
+- [Image Buffer Display Mask Rectangle Keys](./image-buffer-display-mask-rectangle-keys.md)
   Keys that describe the display dimensions of an image buffer mask.
-- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](./kcvimagebufferdisplaymaskrectanglekey.md)
   Specifies the rectangular display area within the image.
-- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](./kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
   Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
-- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](./kcvimagebufferdisplaymaskrectanglestereorightkey.md)
   Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 ## See Also
 
-- [Core Video Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
-- [CVBuffer](cvbuffer-nfm.md)
+### Related Documentation
+- [Core Video Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
+### Data Processing
+- [CVBuffer](./cvbuffer-nfm.md)
   An abstract base class that defines how to interact with data buffers.
-- [CVPixelBuffer](cvpixelbuffer-q2e.md)
+- [CVPixelBuffer](./cvpixelbuffer-q2e.md)
   An image buffer that holds pixels in main memory.
-- [CVPixelBufferPool](cvpixelbufferpool-77o.md)
+- [CVPixelBufferPool](./cvpixelbufferpool-77o.md)
   A utility object for managing a recyclable set of pixel buffer objects.
-- [CVPixelFormatDescription](cvpixelformatdescription-42p.md)
+- [CVPixelFormatDescription](./cvpixelformatdescription-42p.md)
   An API that provides functions and types for defining custom pixel formats.
 
 

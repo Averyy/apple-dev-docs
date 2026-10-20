@@ -1,7 +1,8 @@
 # maximumAccessoriesOfTypeInHome
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The home already has the maximum number of accessories of the given type.
 
@@ -21,9 +22,10 @@ static var maximumAccessoriesOfTypeInHome: HMError.Code { get }
 
 ## See Also
 
-- [static var roomForHomeCannotBeInZone: HMError.Code](hmerror/roomforhomecannotbeinzone.md)
+### Detecting home and room errors
+- [static var roomForHomeCannotBeInZone: HMError.Code](./roomforhomecannotbeinzone.md)
   An attempt to add the room that represents the entire home to a zone.
-- [static var roomForHomeCannotBeUpdated: HMError.Code](hmerror/roomforhomecannotbeupdated.md)
+- [static var roomForHomeCannotBeUpdated: HMError.Code](./roomforhomecannotbeupdated.md)
   An attempt to change the room that represents the entire home.
 
 

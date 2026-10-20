@@ -1,7 +1,8 @@
 # MLActivityClassifier
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A model you train to classify motion sensor data.
 
@@ -20,82 +21,82 @@ An activity classifier is a machine-learning model that your app can use to cate
 
 You create an activity classifier by gathering a training dataset of a device’s motion sensors, such as the accelerometer and gyroscope on an Apple Watch. For example, you can create an activity classifier that recognizes a person waving, shaking hands, or throwing a ball by gathering the motion-sensor data from people performing those activities.
 
-Evaluate your trained activity classifier by calling [`evaluation(on:featureColumns:labelColumn:recordingFileColumn:)`](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-1ib5p.md) [`evaluation(on:)`](mlsoundclassifier/evaluation(on:)-7fmux.md) with a dataset that’s completely distinct from the training and validation datasets. Inspect the metrics the method returns and decide whether the activity classifier performs with enough accuracy. For example, you can assess how often the activity classifier confuses a person waving for shaking hands, or vice versa. If the classifier makes too many mistakes, you can train another classifier with different parameters, or with a training dataset that has more or better motion-sensor examples.
+Evaluate your trained activity classifier by calling [`evaluation(on:featureColumns:labelColumn:recordingFileColumn:)`](./mlactivityclassifier/evaluation%28on,featurecolumns,labelcolumn,recordingfilecolumn%29-1ib5p.md) [`evaluation(on:)`](./mlsoundclassifier/evaluation%28on%29-7fmux.md) with a dataset that’s completely distinct from the training and validation datasets. Inspect the metrics the method returns and decide whether the activity classifier performs with enough accuracy. For example, you can assess how often the activity classifier confuses a person waving for shaking hands, or vice versa. If the classifier makes too many mistakes, you can train another classifier with different parameters, or with a training dataset that has more or better motion-sensor examples.
 
 When you’re satisfied with an activity classifier, save it as a Core ML model file, and add it to your Xcode project. Use it to predict the user’s activity based on the motion-sensor data your app captures from the user’s device.
 
 ## Topics
 
 ### Training an activity classifier asynchronously
-- [static train(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)](mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:).md)
+- [static train(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)](./mlactivityclassifier/train%28trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters%29.md)
   Begins an asynchronous activity classifier training session with a training dataset represented by a data source.
-- [static makeTrainingSession(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)](mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:).md)
+- [static makeTrainingSession(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)](./mlactivityclassifier/maketrainingsession%28trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters%29.md)
   Creates an asynchronous training session for an activity classifier.
-- [static func resume(MLTrainingSession<MLActivityClassifier>) throws -> MLJob<MLActivityClassifier>](mlactivityclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLActivityClassifier>) throws -> MLJob<MLActivityClassifier>](./mlactivityclassifier/resume%28_%29.md)
   Begins or continues an asynchronous activity classifier training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActivityClassifier>](mlactivityclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActivityClassifier>](./mlactivityclassifier/restoretrainingsession%28sessionparameters%29.md)
   Creates an asynchronous training session for an activity classifier by restoring an existing training session’s state from its parameters.
 ### Creating an activity classifier from a checkpoint
-- [init(checkpoint: MLCheckpoint) throws](mlactivityclassifier/init(checkpoint:).md)
+- [init(checkpoint: MLCheckpoint) throws](./mlactivityclassifier/init%28checkpoint%29.md)
   Creates an activity classifier from a training session checkpoint.
 ### Training an activity classifier synchronously
-- [init(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:)](mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:).md)
+- [init(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:)](./mlactivityclassifier/init%28trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters%29.md)
   Creates an activity classifier with a training dataset represented by a data source.
 ### Evaluating an activity classifier
-- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](./mlactivityclassifier/evaluation%28on,featurecolumns,labelcolumn,recordingfilecolumn%29.md)
   Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
-- [var trainingMetrics: MLClassifierMetrics](mlactivityclassifier/trainingmetrics.md)
+- [var trainingMetrics: MLClassifierMetrics](./mlactivityclassifier/trainingmetrics.md)
   Measurements of the activity classifier’s performance on the training dataset.
-- [var validationMetrics: MLClassifierMetrics](mlactivityclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./mlactivityclassifier/validationmetrics.md)
   Measurements of the activity classifier’s performance on the validation dataset.
-- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](./mlactivityclassifier/evaluation%28on,featurecolumns,labelcolumn,recordingfilecolumn%29.md)
   Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
 ### Testing an activity classifier
-- [func predictions(from:perWindowPrediction:)](mlactivityclassifier/predictions(from:perwindowprediction:).md)
+- [func predictions(from:perWindowPrediction:)](./mlactivityclassifier/predictions%28from,perwindowprediction%29.md)
   Predict activities from new observations.
 ### Saving an activity classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlactivityclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlactivityclassifier/write%28to,metadata%29.md)
   Exports the activity classifier as a Core ML model file.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlactivityclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlactivityclassifier/write%28tofile,metadata%29.md)
   Exports the activity classifier as a Core ML model file.
 ### Inspecting an activity classifier model
-- [var model: MLModel](mlactivityclassifier/model.md)
+- [var model: MLModel](./mlactivityclassifier/model.md)
   The underlying Core ML model of the activity classifier stored in memory.
-- [let modelParameters: MLActivityClassifier.ModelParameters](mlactivityclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLActivityClassifier.ModelParameters](./mlactivityclassifier/modelparameters-swift.property.md)
   The model configuration parameters the activity classifier used during its training session.
-- [var featureColumns: [String]](mlactivityclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./mlactivityclassifier/featurecolumns.md)
   The names of the feature columns the activity classifier used during its training session.
-- [var labelColumn: String](mlactivityclassifier/labelcolumn.md)
+- [var labelColumn: String](./mlactivityclassifier/labelcolumn.md)
   The name of the label column the activity classifier used during its training session.
-- [var recordingFileColumn: String](mlactivityclassifier/recordingfilecolumn.md)
+- [var recordingFileColumn: String](./mlactivityclassifier/recordingfilecolumn.md)
   The name of the column that contains the data files the activity classifier used during its training session.
 ### Describing an activity classifier
-- [var description: String](mlactivityclassifier/description.md)
+- [var description: String](./mlactivityclassifier/description.md)
   A text representation of the activity classifier.
-- [var debugDescription: String](mlactivityclassifier/debugdescription.md)
+- [var debugDescription: String](./mlactivityclassifier/debugdescription.md)
   A text representation of the activity classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlactivityclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlactivityclassifier/playgrounddescription.md)
   A description of the activity classifier shown in a playground.
 ### Supporting types
-- [MLActivityClassifier.DataSource](mlactivityclassifier/datasource.md)
+- [MLActivityClassifier.DataSource](./mlactivityclassifier/datasource.md)
   A data source for an activity classifier.
-- [MLActivityClassifier.ModelParameters](mlactivityclassifier/modelparameters-swift.struct.md)
+- [MLActivityClassifier.ModelParameters](./mlactivityclassifier/modelparameters-swift.struct.md)
   Model training parameters that direct the training process for an activity classifier model.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlactivityclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlactivityclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlactivityclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlactivityclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlactivityclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlactivityclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

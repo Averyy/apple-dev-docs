@@ -1,18 +1,23 @@
 # tokenFieldCell(_:editingStringForRepresentedObject:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to provide a string to be edited as a proxy for the represented object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, editingStringForRepresentedObject representedObject: Any) -> String?
+```
+
+```objc
+- (NSString *) tokenFieldCell:(NSTokenFieldCell *) tokenFieldCell editingStringForRepresentedObject:(id) representedObject;
 ```
 
 #### Return Value
@@ -26,11 +31,12 @@ A string that’s an editable proxy of the represented object, or `nil` if the t
 
 ## See Also
 
-- [func tokenFieldCell(NSTokenFieldCell, completionsForSubstring: String, indexOfToken: Int, indexOfSelectedItem: UnsafeMutablePointer<Int>) -> [Any]](nstokenfieldcelldelegate/tokenfieldcell(_:completionsforsubstring:indexoftoken:indexofselecteditem:).md)
+### Editing a Tokenized Strings
+- [func tokenFieldCell(NSTokenFieldCell, completionsForSubstring: String, indexOfToken: Int, indexOfSelectedItem: UnsafeMutablePointer<Int>) -> [Any]](./tokenfieldcell%28_,completionsforsubstring,indexoftoken,indexofselecteditem%29.md)
   Allows the delegate to provide an array of appropriate completions for the contents of the receiver.
-- [func tokenFieldCell(NSTokenFieldCell, representedObjectForEditing: String) -> Any?](nstokenfieldcelldelegate/tokenfieldcell(_:representedobjectforediting:).md)
+- [func tokenFieldCell(NSTokenFieldCell, representedObjectForEditing: String) -> Any?](./tokenfieldcell%28_,representedobjectforediting%29.md)
   Allows the delegate to provide a represented object for the string being edited.
-- [func tokenFieldCell(NSTokenFieldCell, shouldAdd: [Any], at: Int) -> [Any]](nstokenfieldcelldelegate/tokenfieldcell(_:shouldadd:at:).md)
+- [func tokenFieldCell(NSTokenFieldCell, shouldAdd: [Any], at: Int) -> [Any]](./tokenfieldcell%28_,shouldadd,at%29.md)
   Allows the delegate to validate the tokens to be added to the receiver at a given index.
 
 

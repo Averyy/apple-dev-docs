@@ -1,7 +1,8 @@
 # sparse_extract_block_float(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts values from a specified block of a single-precision matrix.
 
@@ -20,9 +21,13 @@ Extracts values from a specified block of a single-precision matrix.
 func sparse_extract_block_float(_ A: sparse_matrix_float!, _ bi: sparse_index, _ bj: sparse_index, _ row_stride: sparse_dimension, _ col_stride: sparse_dimension, _ val: UnsafeMutablePointer<Float>!) -> sparse_status
 ```
 
+```c
+sparse_status sparse_extract_block_float(sparse_matrix_float A, sparse_index bi, sparse_index bj, sparse_dimension row_stride, sparse_dimension col_stride, float * restrictval);
+```
+
 #### Return Value
 
-On success [`SPARSE_SUCCESS`](sparse_success.md) is return and val has been updated with the block from block index `bi,bj`. If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned and `val` is unchanged.
+On success [`SPARSE_SUCCESS`](./sparse_success.md) is return and val has been updated with the block from block index `bi,bj`. If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `val` is unchanged.
 
 #### Discussion
 
@@ -32,7 +37,7 @@ Extract the `bi,bj`’th block from the sparse matrix `A`.
 
 ## Parameters
 
-- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_block_create_float(_:_:_:_:)`](sparse_matrix_block_create_float(_:_:_:_:).md) or [`sparse_matrix_variable_block_create_float(_:_:_:_:)`](sparse_matrix_variable_block_create_float(_:_:_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_block_create_float(_:_:_:_:)`](./sparse_matrix_block_create_float%28_,_,_,_%29.md) or [`sparse_matrix_variable_block_create_float(_:_:_:_:)`](./sparse_matrix_variable_block_create_float%28_,_,_,_%29.md). [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
 - `bi`: The block row index for value extraction. Indices are 0 based (first block of matrix is `A[0,0]`).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
 - `bj`: The block column index for value extraction. Indices are 0 based (first block of matrix is `A[0,0]`).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
 - `row_stride`: The row stride in number of elements to move from one row to the next for the block `val`.
@@ -41,10 +46,11 @@ Extract the `bi,bj`’th block from the sparse matrix `A`.
 
 ## See Also
 
-- [func sparse_extract_block_double(sparse_matrix_double!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, UnsafeMutablePointer<Double>!) -> sparse_status](sparse_extract_block_double(_:_:_:_:_:_:).md)
+### Value extraction
+- [func sparse_extract_block_double(sparse_matrix_double!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, UnsafeMutablePointer<Double>!) -> sparse_status](./sparse_extract_block_double%28_,_,_,_,_,_%29.md)
   Extracts values from a specified block of a double-precision matrix.
-- [func sparse_extract_block_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, OpaquePointer!) -> sparse_status](sparse_extract_block_double_complex(_:_:_:_:_:_:).md)
-- [func sparse_extract_block_float_complex(sparse_matrix_float_complex!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, OpaquePointer!) -> sparse_status](sparse_extract_block_float_complex(_:_:_:_:_:_:).md)
+- [func sparse_extract_block_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, OpaquePointer!) -> sparse_status](./sparse_extract_block_double_complex%28_,_,_,_,_,_%29.md)
+- [func sparse_extract_block_float_complex(sparse_matrix_float_complex!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, OpaquePointer!) -> sparse_status](./sparse_extract_block_float_complex%28_,_,_,_,_,_%29.md)
 
 
 ---

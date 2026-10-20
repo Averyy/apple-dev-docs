@@ -1,7 +1,8 @@
 # instancing
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag indicating that function signature uses instancing.
 
@@ -19,15 +20,20 @@ A flag indicating that function signature uses instancing.
 static var instancing: MTLIntersectionFunctionSignature { get }
 ```
 
+```c
+MTLIntersectionFunctionSignatureInstancing
+```
+
 #### Discussion
 
 The corresponding MSL function needs to contain the `instancing` tag in its declaration.
 
 ## See Also
 
-- [static var triangleData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/triangledata.md)
+### Specifying the intersection function signature
+- [static var triangleData: MTLIntersectionFunctionSignature](./triangledata.md)
   A flag indicating that function signature uses triangle data.
-- [static var worldSpaceData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/worldspacedata.md)
+- [static var worldSpaceData: MTLIntersectionFunctionSignature](./worldspacedata.md)
   A flag indicating that function signature uses world space data.
 
 

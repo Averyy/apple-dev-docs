@@ -1,7 +1,8 @@
 # OSLCompareUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLCompareProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLCompareProcP
 typealias OSLCompareUPP = OSLCompareProcPtr
 ```
 
+```c
+typedef OSLCompareProcPtr OSLCompareUPP;
+```
+
 #### Discussion
 
-For a description of a compare callback function, see [`OSLCompareProcPtr`](oslcompareprocptr.md). 
+For a description of a compare callback function, see [`OSLCompareProcPtr`](./oslcompareprocptr.md). 
 
 
 ---

@@ -1,7 +1,8 @@
 # EmptyContent
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Content which contains nothing.
 
@@ -32,7 +33,8 @@ DSLs should use `EmptyContent` in situations where a content type defines one or
 
 ## See Also
 
-- [struct TupleContent](tuplecontent.md)
+### Supporting content types
+- [struct TupleContent](./tuplecontent.md)
   Content created from a tuple of content to be treated as siblings.
 
 

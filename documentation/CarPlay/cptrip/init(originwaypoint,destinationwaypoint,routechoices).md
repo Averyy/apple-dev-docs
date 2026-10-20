@@ -1,7 +1,8 @@
 # init(originWaypoint:destinationWaypoint:routeChoices:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a @c CPTrip with an origin waypoint, destination waypoint, and route choices.
 
@@ -14,6 +15,10 @@ Initialize a @c CPTrip with an origin waypoint, destination waypoint, and route 
 
 ```swift
 init(originWaypoint origin: CPNavigationWaypoint, destinationWaypoint destination: CPNavigationWaypoint, routeChoices: [CPRouteChoice])
+```
+
+```objc
+- (instancetype) initWithOriginWaypoint:(CPNavigationWaypoint *) origin destinationWaypoint:(CPNavigationWaypoint *) destination routeChoices:(NSArray<CPRouteChoice *> *) routeChoices;
 ```
 
 

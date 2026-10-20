@@ -1,7 +1,8 @@
 # refreshCurrentPreviewItem()
 
 **Framework**: Quick Look UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the preview panel to recompute the preview of the current preview item.
 
@@ -14,17 +15,22 @@ Asks the preview panel to recompute the preview of the current preview item.
 func refreshCurrentPreviewItem()
 ```
 
+```objc
+- (void) refreshCurrentPreviewItem;
+```
+
 ## See Also
 
-- [var dataSource: (any QLPreviewPanelDataSource)!](qlpreviewpanel/datasource.md)
+### Managing the Preview Items
+- [var dataSource: (any QLPreviewPanelDataSource)!](./datasource.md)
   The preview panel data source.
-- [func reloadData()](qlpreviewpanel/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Asks the preview panel to reload its data from its data source.
-- [var currentPreviewItemIndex: Int](qlpreviewpanel/currentpreviewitemindex.md)
+- [var currentPreviewItemIndex: Int](./currentpreviewitemindex.md)
   The index of the current preview item.
-- [var currentPreviewItem: (any QLPreviewItem)!](qlpreviewpanel/currentpreviewitem.md)
+- [var currentPreviewItem: (any QLPreviewItem)!](./currentpreviewitem.md)
   The currently previewed item.
-- [var displayState: Any!](qlpreviewpanel/displaystate.md)
+- [var displayState: Any!](./displaystate.md)
   The preview panel’s display state.
 
 

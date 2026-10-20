@@ -1,33 +1,35 @@
 # CopyMemory
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A private method that the dispatch source uses to copy memory.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CopyMemory(IOMemoryDescriptor **memory);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 ## See Also
 
-- [CopyDataAvailableHandler](iodataqueuedispatchsource/copydataavailablehandler.md)
+### Performing Internal Tasks
+- [CopyDataAvailableHandler](./copydataavailablehandler.md)
   A private method that the dispatch source uses to detect enqueued data.
-- [CopyDataServicedHandler](iodataqueuedispatchsource/copydataservicedhandler.md)
+- [CopyDataServicedHandler](./copydataservicedhandler.md)
   A private method that the dispatch source uses to detect dequeued data.
-- [CheckForWork](iodataqueuedispatchsource/checkforwork.md)
+- [CheckForWork](./checkforwork.md)
   Checks for events to handle.
 
 

@@ -1,14 +1,15 @@
 # ledger_tag_network_volatile
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 int64_t ledger_tag_network_volatile;
 ```
 

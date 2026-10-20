@@ -1,7 +1,8 @@
 # Get All Station Genres
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch all station genres for a given storefront.
 
@@ -10,13 +11,13 @@ Fetch all station genres for a given storefront.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/station-genres
 ```
 
@@ -188,23 +189,37 @@ https://api.music.apple.com/v1/catalog/us/station-genres
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `offset` (string): The offset to use for a paginated request.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`StationGenresResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object StationGenres](stationgenres.md)
+### Related Documentation
+- [object StationGenres](./stationgenres.md)
   A resource object that represents a station genre.
-- [object StationGenresResponse](stationgenresresponse.md)
+- [object StationGenresResponse](./stationgenresresponse.md)
   The response to a specific station genres resource request.
-- [Get a Station Genre](get-a-station-genre.md)
+### Requesting a Catalog Station Genre
+- [Get a Station Genre](./get-a-station-genre.md)
   Fetch a station genre by using its identifier.
-- [Get a Station Genre’s Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-i4r0.md)
+- [Get a Station Genre’s Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-i4r0.md)
   Fetch a station genre’s relationship by using its identifier.
-- [Get Multiple Stations Genres](get-multiple-stations-genres.md)
+- [Get Multiple Stations Genres](./get-multiple-stations-genres.md)
   Fetch one or more station genres by using their identifiers.
 
 

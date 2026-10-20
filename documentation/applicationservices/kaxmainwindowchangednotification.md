@@ -1,7 +1,8 @@
 # kAXMainWindowChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The main window has changed.
 
@@ -12,6 +13,10 @@ The main window has changed.
 
 ```swift
 var kAXMainWindowChangedNotification: String { get }
+```
+
+```c
+#define kAXMainWindowChangedNotification
 ```
 
 

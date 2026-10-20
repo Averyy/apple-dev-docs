@@ -1,7 +1,8 @@
 # init(unsafeUninitializedShape:initializingWith:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shaped array slice from a shape and a closure that initializes its memory.
 

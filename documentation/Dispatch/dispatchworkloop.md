@@ -1,7 +1,8 @@
 # DispatchWorkloop
 
 **Framework**: Dispatch  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.0+
@@ -21,23 +22,23 @@ class DispatchWorkloop
 ## Topics
 
 ### Structures
-- [DispatchWorkloop.Attributes](dispatchworkloop/attributes.md)
+- [DispatchWorkloop.Attributes](./dispatchworkloop/attributes.md)
 ### Initializers
-- [convenience init(label: String, attributes: DispatchWorkloop.Attributes, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency, osWorkgroup: WorkGroup?)](dispatchworkloop/init(label:attributes:autoreleasefrequency:osworkgroup:).md)
+- [convenience init(label: String, attributes: DispatchWorkloop.Attributes, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency, osWorkgroup: WorkGroup?)](./dispatchworkloop/init%28label,attributes,autoreleasefrequency,osworkgroup%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Equatable](../swift/equatable.md)
-- [Executor](../swift/executor.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Scheduler](../combine/scheduler.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SerialExecutor](../swift/serialexecutor.md)
-- [TaskExecutor](../swift/taskexecutor.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Equatable](../Swift/equatable.md)
+- [Executor](../Swift/executor.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Scheduler](../Combine/scheduler.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SerialExecutor](../Swift/serialexecutor.md)
+- [TaskExecutor](../Swift/taskexecutor.md)
 
 
 ---

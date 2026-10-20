@@ -1,14 +1,15 @@
 # Create
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Create(IOService *provider, const char *propertiesKey, IOService **result, OSDispatchMethod supermethod);
 ```
 

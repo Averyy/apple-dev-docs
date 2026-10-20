@@ -1,7 +1,8 @@
 # PaymentCardReaderError.storeAndForwardSessionExpired
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework can’t execute more reads using the current Store and Forward session, because it’s expired.
 

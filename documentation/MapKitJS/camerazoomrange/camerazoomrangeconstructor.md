@@ -1,7 +1,8 @@
 # new CameraZoomRange()
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Constructs an instance of a camera zoom range object with no minimum or maximum camera distance.
 
@@ -10,7 +11,7 @@ Constructs an instance of a camera zoom range object with no minimum or maximum 
 
 ## Declaration
 
-```swift
+```
 constructor();
 ```
 
@@ -18,13 +19,14 @@ constructor();
 
 The zoom range describes the minimum and maximum camera distance in meters.
 
-> **Note**: Calling the constructor with no arguments creates a [`CameraZoomRange`](camerazoomrange.md) instance that doesn’t constrain the camera.
+> **Note**: Calling the constructor with no arguments creates a [`CameraZoomRange`](../camerazoomrange.md) instance that doesn’t constrain the camera.
 
 ## See Also
 
-- [new CameraZoomRange(rangeParams)](camerazoomrange/camerazoomrangeconstructor1.md)
+### Defining a zoom range
+- [new CameraZoomRange(rangeParams)](./camerazoomrangeconstructor1.md)
   Creates an instance of a camera zoom range object with an object literal.
-- [new CameraZoomRange(min, max)](camerazoomrange/camerazoomrangeconstructor2.md)
+- [new CameraZoomRange(min, max)](./camerazoomrangeconstructor2.md)
   Creates an instance of a camera zoom range object with the specified numeric arguments that specify minimum and maximum camera distances.
 
 

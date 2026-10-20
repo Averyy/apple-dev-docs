@@ -1,7 +1,8 @@
 # LibraryPlaylistsTracksRelationshipResponse.Meta
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the meta information for response to a library playlists tracks relationship request.
 
@@ -10,7 +11,7 @@ An object that represents the meta information for response to a library playlis
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistsTracksRelationshipResponse.Meta
 ```
 

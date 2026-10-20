@@ -1,11 +1,12 @@
 # Hashable Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func hash(into: inout Hasher)](entity/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of the entity by feeding them into the given hash function.
 
 

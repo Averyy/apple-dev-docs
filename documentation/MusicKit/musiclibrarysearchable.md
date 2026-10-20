@@ -1,7 +1,8 @@
 # MusicLibrarySearchable
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for music items that your app can fetch by using a library search request.
 
@@ -23,15 +24,15 @@ protocol MusicLibrarySearchable : MusicItem
 ## Relationships
 
 ### Inherits From
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Album](album.md)
-- [Artist](artist.md)
-- [MusicVideo](musicvideo.md)
-- [Playlist](playlist.md)
-- [Song](song.md)
+- [Album](./album.md)
+- [Artist](./artist.md)
+- [MusicVideo](./musicvideo.md)
+- [Playlist](./playlist.md)
+- [Song](./song.md)
 
 
 ---

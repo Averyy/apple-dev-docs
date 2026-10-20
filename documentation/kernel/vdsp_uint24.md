@@ -1,21 +1,22 @@
 # vDSP_uint24
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vDSP_uint24 vDSP_uint24;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bytes](vdsp_uint24/1532212-bytes.md)
+- [bytes](./vdsp_uint24/api-1532212-bytes.md)
 
 
 ---

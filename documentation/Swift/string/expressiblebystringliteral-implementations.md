@@ -1,15 +1,16 @@
 # ExpressibleByStringLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](string/init(extendedgraphemeclusterliteral:).md)
-- [init(stringLiteral: String)](string/init(stringliteral:).md)
+- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](./init%28extendedgraphemeclusterliteral%29.md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates an instance initialized to the given string value.
 ### Type Aliases
-- [typealias StringLiteralType](string/stringliteraltype.md)
+- [typealias StringLiteralType](./stringliteraltype.md)
   A type that represents a string literal.
 
 

@@ -1,7 +1,8 @@
 # hoverEffectPhaseOverride(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new effect with the given `HoverEffectPhaseOverride` applied to this effect.
 

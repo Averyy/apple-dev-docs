@@ -1,19 +1,20 @@
 # InApps.Attributes
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InApps.Attributes.Artwork](inapps/attributes-data.dictionary/artwork-data.dictionary.md)
-- [object InApps.Attributes.EditorialArtwork](inapps/attributes-data.dictionary/editorialartwork-data.dictionary.md)
+- [object InApps.Attributes.Artwork](./attributes-data.dictionary/artwork-data.dictionary.md)
+- [object InApps.Attributes.EditorialArtwork](./attributes-data.dictionary/editorialartwork-data.dictionary.md)
 
 ## Properties
 

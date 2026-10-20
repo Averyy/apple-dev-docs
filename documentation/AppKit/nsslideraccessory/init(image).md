@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -11,8 +12,28 @@
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+init(image: UIImage)
+```
+
+*macOS*
+
 ```swift
 init(image: NSImage)
+```
+
+*Mac Catalyst*
+
+```objc
++ (NSSliderAccessory *) accessoryWithImage:(UIImage *) image;
+```
+
+*macOS*
+
+```objc
++ (NSSliderAccessory *) accessoryWithImage:(NSImage *) image;
 ```
 
 

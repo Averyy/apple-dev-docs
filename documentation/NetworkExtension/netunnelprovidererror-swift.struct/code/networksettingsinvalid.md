@@ -1,7 +1,8 @@
 # NETunnelProviderError.Code.networkSettingsInvalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided tunnel network settings are invalid.
 
@@ -19,11 +20,16 @@ The provided tunnel network settings are invalid.
 case networkSettingsInvalid
 ```
 
+```c
+NETunnelProviderErrorNetworkSettingsInvalid
+```
+
 ## See Also
 
-- [NETunnelProviderError.Code.networkSettingsCanceled](netunnelprovidererror-swift.struct/code/networksettingscanceled.md)
+### Error codes
+- [NETunnelProviderError.Code.networkSettingsCanceled](./networksettingscanceled.md)
   The request to set or clear the tunnel network settings was canceled.
-- [NETunnelProviderError.Code.networkSettingsFailed](netunnelprovidererror-swift.struct/code/networksettingsfailed.md)
+- [NETunnelProviderError.Code.networkSettingsFailed](./networksettingsfailed.md)
   The request to set or clear the tunnel network settings failed.
 
 

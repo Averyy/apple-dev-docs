@@ -1,9 +1,10 @@
 # kAXUnderlineTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-A `CFNumberRef` value that describes the underline style (see [`AXUnderlineStyle`](axunderlinestyle.md) for possible values).
+A `CFNumberRef` value that describes the underline style (see [`AXUnderlineStyle`](./axunderlinestyle.md) for possible values).
 
 **Availability**:
 - macOS 10.4+
@@ -12,6 +13,10 @@ A `CFNumberRef` value that describes the underline style (see [`AXUnderlineStyle
 
 ```swift
 var kAXUnderlineTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXUnderlineTextAttribute;
 ```
 
 #### Discussion

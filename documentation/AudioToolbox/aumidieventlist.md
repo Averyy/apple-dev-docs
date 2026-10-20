@@ -1,15 +1,16 @@
 # AUMIDIEventList
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,27 +18,32 @@
 struct AUMIDIEventList
 ```
 
+```c
+typedef struct AUMIDIEventList { ... } AUMIDIEventList;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](aumidieventlist/init.md)
-- [init(next: UnsafeMutablePointer<AURenderEvent>?, eventSampleTime: AUEventSampleTime, eventType: AURenderEventType, reserved: UInt8, cable: UInt8, eventList: MIDIEventList)](aumidieventlist/init(next:eventsampletime:eventtype:reserved:cable:eventlist:).md)
+- [init()](./aumidieventlist/init%28%29.md)
+- [init(next: UnsafeMutablePointer<AURenderEvent>?, eventSampleTime: AUEventSampleTime, eventType: AURenderEventType, reserved: UInt8, cable: UInt8, eventList: MIDIEventList)](./aumidieventlist/init%28next,eventsampletime,eventtype,reserved,cable,eventlist%29.md)
 ### Instance Properties
-- [var cable: UInt8](aumidieventlist/cable.md)
-- [var eventList: MIDIEventList](aumidieventlist/eventlist.md)
-- [var eventSampleTime: AUEventSampleTime](aumidieventlist/eventsampletime.md)
-- [var eventType: AURenderEventType](aumidieventlist/eventtype.md)
-- [var next: UnsafeMutablePointer<AURenderEvent>?](aumidieventlist/next.md)
-- [var reserved: UInt8](aumidieventlist/reserved.md)
+- [var cable: UInt8](./aumidieventlist/cable.md)
+- [var eventList: MIDIEventList](./aumidieventlist/eventlist.md)
+- [var eventSampleTime: AUEventSampleTime](./aumidieventlist/eventsampletime.md)
+- [var eventType: AURenderEventType](./aumidieventlist/eventtype.md)
+- [var next: UnsafeMutablePointer<AURenderEvent>?](./aumidieventlist/next.md)
+- [var reserved: UInt8](./aumidieventlist/reserved.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct AudioConverterOptions](audioconverteroptions.md)
+### Structures
+- [struct AudioConverterOptions](./audioconverteroptions.md)
 
 
 ---

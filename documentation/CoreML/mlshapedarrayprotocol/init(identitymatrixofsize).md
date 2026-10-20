@@ -1,7 +1,8 @@
 # init(identityMatrixOfSize:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize as an identity matrix.
 
@@ -20,6 +21,14 @@ Initialize as an identity matrix.
 init(identityMatrixOfSize size: Int)
 ```
 
+Available when `Scalar` conforms to `BinaryFloatingPoint` and `Scalar.RawSignificand` conforms to `FixedWidthInteger`.
+
+**Other overloads**:
+
+```swift
+init(identityMatrixOfSize size: Int)
+```
+
 #### Discussion
 
 The initializer creates a shaped array of shape size x size where the contents are zeros except array[scalarAt: x, x], which are ones.
@@ -30,17 +39,18 @@ The initializer creates a shaped array of shape size x size where the contents a
 
 ## See Also
 
-- [init<S>(scalars: S, shape: [Int])](mlshapedarrayprotocol/init(scalars:shape:).md)
+### Creating a shaped array type
+- [init<S>(scalars: S, shape: [Int])](./init%28scalars,shape%29.md)
   Creates a shaped array type from an array of values.
-- [init(repeating: Self.Scalar, shape: [Int])](mlshapedarrayprotocol/init(repeating:shape:).md)
+- [init(repeating: Self.Scalar, shape: [Int])](./init%28repeating,shape%29.md)
   Creates a shaped array type that initializes every element to the same value.
-- [init(randomScalarsIn:shape:)](mlshapedarrayprotocol/init(randomscalarsin:shape:).md)
+- [init(randomScalarsIn:shape:)](./init%28randomscalarsin,shape%29.md)
   Initialize the shaped array with random scalar values.
-- [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], deallocator: Data.Deallocator)](mlshapedarrayprotocol/init(bytesnocopy:shape:deallocator:).md)
+- [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], deallocator: Data.Deallocator)](./init%28bytesnocopy,shape,deallocator%29.md)
   Creates a shaped array type from a data pointer.
-- [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], strides: [Int], deallocator: Data.Deallocator)](mlshapedarrayprotocol/init(bytesnocopy:shape:strides:deallocator:).md)
+- [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], strides: [Int], deallocator: Data.Deallocator)](./init%28bytesnocopy,shape,strides,deallocator%29.md)
   Creates a shaped array type from a data pointer with memory strides.
-- [init(unsafeUninitializedShape: [Int], initializingWith: (inout UnsafeMutableBufferPointer<Self.Scalar>, [Int]) throws -> Void) rethrows](mlshapedarrayprotocol/init(unsafeuninitializedshape:initializingwith:).md)
+- [init(unsafeUninitializedShape: [Int], initializingWith: (inout UnsafeMutableBufferPointer<Self.Scalar>, [Int]) throws -> Void) rethrows](./init%28unsafeuninitializedshape,initializingwith%29.md)
   Creates a shaped array type from a shape and a closure that initializes its memory.
 
 

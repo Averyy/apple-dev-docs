@@ -1,7 +1,8 @@
 # SRError.Code
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kinds of problems that stop a recording or a fetch.
 
@@ -16,37 +17,42 @@ The kinds of problems that stop a recording or a fetch.
 enum Code
 ```
 
+```c
+enum SRErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [SRError.Code.promptDeclined](srerror/code/promptdeclined.md)
+- [SRError.Code.promptDeclined](./code/promptdeclined.md)
   Occurs when the user cancels the sensor approval workflow.
-- [SRError.Code.dataInaccessible](srerror/code/datainaccessible.md)
+- [SRError.Code.dataInaccessible](./code/datainaccessible.md)
   Occurs when the app can’t access the sensor’s data.
-- [SRError.Code.fetchRequestInvalid](srerror/code/fetchrequestinvalid.md)
+- [SRError.Code.fetchRequestInvalid](./code/fetchrequestinvalid.md)
   Occurs when the app misconfigures a fetch request.
-- [SRError.Code.invalidEntitlement](srerror/code/invalidentitlement.md)
+- [SRError.Code.invalidEntitlement](./code/invalidentitlement.md)
   Occurs when the app lacks the required entitlement.
-- [SRError.Code.noAuthorization](srerror/code/noauthorization.md)
+- [SRError.Code.noAuthorization](./code/noauthorization.md)
   Occurs when the user declines sensor access in the Settings app.
 ### Creating an error
-- [init?(rawValue: Int)](srerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SRErrorDomain: String](srerrordomain.md)
+### Interpreting Errors
+- [let SRErrorDomain: String](../srerrordomain.md)
   An error domain that’s unique to the framework.
-- [struct SRError](srerror.md)
+- [struct SRError](../srerror.md)
   An error that SensorKit reports.
 
 

@@ -1,7 +1,8 @@
 # newLineItems
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional list of updated line items.
 
@@ -11,7 +12,7 @@ An optional list of updated line items.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayLineItem> newLineItems;
 ```
 
@@ -21,9 +22,10 @@ Supply an updated list of line items if the change in the shipping method caused
 
 ## See Also
 
-- [newTotal](applepayshippingmethodupdate/newtotal.md)
+### Updating shipping method properties
+- [newTotal](./newtotal.md)
   The new total that results from a change in the shipping method.
-- [newShippingMethods](applepayshippingmethodupdate/newshippingmethods.md)
+- [newShippingMethods](./newshippingmethods.md)
   An updated list of new shipping methods.
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceError.timeout
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request timed out.
 

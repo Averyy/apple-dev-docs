@@ -1,7 +1,8 @@
 # EPWROFF
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Intelligent device errors. Device power is off.
 

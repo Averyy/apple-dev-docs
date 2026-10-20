@@ -1,7 +1,8 @@
 # AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the supported ducking levels.
 
@@ -18,35 +19,40 @@ Constants that define the supported ducking levels.
 enum Level
 ```
 
+```c
+enum AVAudioVoiceProcessingOtherAudioDuckingLevel : NSInteger;
+```
+
 ## Topics
 
 ### Creating a ducking level
-- [init?(rawValue: Int)](avaudiovoiceprocessingotheraudioduckingconfiguration/level/init(rawvalue:).md)
+- [init?(rawValue: Int)](./level/init%28rawvalue%29.md)
 ### Choosing a ducking level
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.default](avaudiovoiceprocessingotheraudioduckingconfiguration/level/default.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.default](./level/default.md)
   The default ducking level for typical voice chat.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.max](avaudiovoiceprocessingotheraudioduckingconfiguration/level/max.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.max](./level/max.md)
   Applies maximum ducking to other audio.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.mid](avaudiovoiceprocessingotheraudioduckingconfiguration/level/mid.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.mid](./level/mid.md)
   Applies medium ducking to other audio.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.min](avaudiovoiceprocessingotheraudioduckingconfiguration/level/min.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.min](./level/min.md)
   Applies minimum ducking to other audio.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var enableAdvancedDucking: ObjCBool](avaudiovoiceprocessingotheraudioduckingconfiguration/enableadvancedducking.md)
+### Configuring ducking
+- [var enableAdvancedDucking: ObjCBool](./enableadvancedducking.md)
   Enables advanced ducking which ducks other audio based on the presence of voice activity from local and remote chat participants.
-- [var duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](avaudiovoiceprocessingotheraudioduckingconfiguration/duckinglevel.md)
+- [var duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](./duckinglevel.md)
   The ducking level of other audio.
 
 

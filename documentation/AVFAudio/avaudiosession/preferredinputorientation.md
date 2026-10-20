@@ -1,7 +1,8 @@
 # preferredInputOrientation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio session’s preferred stereo input orientation.
 
@@ -17,13 +18,18 @@ The audio session’s preferred stereo input orientation.
 var preferredInputOrientation: AVAudioSession.StereoOrientation { get }
 ```
 
+```objc
+@property (readonly) AVAudioStereoOrientation preferredInputOrientation;
+```
+
 ## See Also
 
-- [var inputOrientation: AVAudioSession.StereoOrientation](avaudiosession/inputorientation.md)
+### Enabling stereo recording
+- [var inputOrientation: AVAudioSession.StereoOrientation](./inputorientation.md)
   An orientation value that dictates which directions represent left and right when capturing audio from a built-in microphone configured for stereo recording.
-- [func setPreferredInputOrientation(AVAudioSession.StereoOrientation) throws](avaudiosession/setpreferredinputorientation(_:).md)
+- [func setPreferredInputOrientation(AVAudioSession.StereoOrientation) throws](./setpreferredinputorientation%28_%29.md)
   Sets the audio session’s preferred stereo input orientation.
-- [AVAudioSession.StereoOrientation](avaudiosession/stereoorientation.md)
+- [AVAudioSession.StereoOrientation](./stereoorientation.md)
   Constants that define the supported stereo orientations.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an HTTP cookie property key using the given string.
 
@@ -24,7 +25,7 @@ init(_ rawValue: String)
 
 You can use this initializer to create HTTP cookie property keys that aren’t already represented by the predefined constants.
 
-This convenience initializer is identical to [`init(rawValue:)`](httpcookiepropertykey/init(rawvalue:).md).
+This convenience initializer is identical to [`init(rawValue:)`](./init%28rawvalue%29.md).
 
 ## Parameters
 
@@ -32,7 +33,8 @@ This convenience initializer is identical to [`init(rawValue:)`](httpcookieprope
 
 ## See Also
 
-- [init(rawValue: String)](httpcookiepropertykey/init(rawvalue:).md)
+### Creating custom cookie property keys
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates an HTTP cookie property key using the given string.
 
 

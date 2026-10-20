@@ -1,7 +1,8 @@
 # CInterop.PlatformChar
 
 **Framework**: System  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The platform’s preferred character type. On Unix, this is an 8-bit C `char` (which may be signed or unsigned, depending on platform). On Windows, this is `UInt16` (a “wide” character).
 

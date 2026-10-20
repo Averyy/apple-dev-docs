@@ -1,6 +1,7 @@
 # Viewing the Finished Article for Advanced Design Tutorial 2
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 See the full JSON code from this tutorial.
 
@@ -8,7 +9,7 @@ See the full JSON code from this tutorial.
 
 This page brings together everything from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
-You can copy this template (which is also the `article.json` file in `News_Design_Tutorial_Advanced_Article_2`) and modify it to create your own News articles with varied layout and positioning. See [`Download the Article Bundle Examples`](setting-up-the-advanced-tutorials#Download-the-Article-Bundle-Examples.md). To preview this article, see [`Preview the Article Bundle Examples`](setting-up-the-introductory-tutorial#Preview-the-Article-Bundle-Examples.md).
+You can copy this template (which is also the `article.json` file in `News_Design_Tutorial_Advanced_Article_2`) and modify it to create your own News articles with varied layout and positioning. See [Download the Article Bundle Examples](./setting-up-the-advanced-tutorials.md#Download-the-Article-Bundle-Examples). To preview this article, see [Preview the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Preview-the-Article-Bundle-Examples).
 
 > **Note**:  If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
 
@@ -608,27 +609,28 @@ You can copy this template (which is also the `article.json` file in `News_Desig
 
 ##### Previous
 
-[`Adding a Scene`](adding-a-scene.md)
+[Adding a Scene](./adding-a-scene.md)
 
 ##### Next
 
-[`Giving the Article a Dark Color Scheme`](giving-the-article-a-dark-color-scheme.md)
+[Giving the Article a Dark Color Scheme](./giving-the-article-a-dark-color-scheme.md)
 
 ## See Also
 
-- [Creating a Complex, Layered Header](creating-a-complex-layered-header.md)
+### Advanced Design Tutorial 2: Layout and Positioning
+- [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)
   Layer a title and heading in front of an image, with their colors optimized for legibility.
-- [Creating a Floating Caption](creating-a-floating-caption.md)
+- [Creating a Floating Caption](./creating-a-floating-caption.md)
   Position a caption in the wide right margin of your article.
-- [Creating an Inset Pull Quote](creating-an-inset-pull-quote.md)
+- [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md)
   Wrap article body text around an inset pull quote.
-- [Creating an Inset Photo](creating-an-inset-photo.md)
+- [Creating an Inset Photo](./creating-an-inset-photo.md)
   Wrap article body text around an inset photo.
-- [Adding Color to Text Ranges](adding-color-to-text-ranges.md)
+- [Adding Color to Text Ranges](./adding-color-to-text-ranges.md)
   Create text in color by using HTML to refer to TextStyle objects.
-- [Adding Animations](adding-animations.md)
+- [Adding Animations](./adding-animations.md)
   Use animations to affect how parts of your article come into view the first time they appear.
-- [Adding a Scene](adding-a-scene.md)
+- [Adding a Scene](./adding-a-scene.md)
   Control how the article’s opening section comes into view.
 
 

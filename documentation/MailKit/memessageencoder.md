@@ -1,7 +1,8 @@
 # MEMessageEncoder
 
 **Framework**: MailKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that encrypts or digitally signs outgoing messages.
 
@@ -14,26 +15,31 @@ An object that encrypts or digitally signs outgoing messages.
 protocol MEMessageEncoder : NSObjectProtocol
 ```
 
+```objc
+@protocol MEMessageEncoder <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func encode(MEMessage, composeContext: MEComposeContext, completionHandler: (MEMessageEncodingResult) -> Void)](memessageencoder/encode(_:composecontext:completionhandler:).md)
-- [func getEncodingStatus(for: MEMessage, composeContext: MEComposeContext, completionHandler: (MEOutgoingMessageEncodingStatus) -> Void)](memessageencoder/getencodingstatus(for:composecontext:completionhandler:).md)
+- [func encode(MEMessage, composeContext: MEComposeContext, completionHandler: (MEMessageEncodingResult) -> Void)](./memessageencoder/encode%28_,composecontext,completionhandler%29.md)
+- [func getEncodingStatus(for: MEMessage, composeContext: MEComposeContext, completionHandler: (MEOutgoingMessageEncodingStatus) -> Void)](./memessageencoder/getencodingstatus%28for,composecontext,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MEMessageSecurityHandler](memessagesecurityhandler.md)
+- [MEMessageSecurityHandler](./memessagesecurityhandler.md)
 
 ## See Also
 
-- [class MEEncodedOutgoingMessage](meencodedoutgoingmessage.md)
+### Encrypting and Signing Messages
+- [class MEEncodedOutgoingMessage](./meencodedoutgoingmessage.md)
   An object that contains the signed or encrypted representation of a message’s RFC 2822 data.
-- [class MEOutgoingMessageEncodingStatus](meoutgoingmessageencodingstatus.md)
+- [class MEOutgoingMessageEncodingStatus](./meoutgoingmessageencodingstatus.md)
   An object that contains information about security measures the user can apply when composing a message.
-- [class MEMessageEncodingResult](memessageencodingresult.md)
+- [class MEMessageEncodingResult](./memessageencodingresult.md)
   An object that contains a signed or encrypted message, or errors that indicate failure to encode the message.
 
 

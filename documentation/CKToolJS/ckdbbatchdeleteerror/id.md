@@ -1,7 +1,8 @@
 # id
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the resource that failed to be deleted.
 
@@ -10,7 +11,7 @@ The identifier for the resource that failed to be deleted.
 
 ## Declaration
 
-```swift
+```
 attribute string id;
 ```
 

@@ -1,7 +1,8 @@
 # temporaryResultState(commandBuffer:sourceImages:sourceStates:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImages sourceImage: [MPSImage], sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?
+```
+
+```objc
+- (MPSState *) temporaryResultStateForCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceImages:(NSArray<MPSImage *> *) sourceImage sourceStates:(NSArray<MPSState *> *) sourceStates destinationImage:(MPSImage *) destinationImage;
 ```
 
 

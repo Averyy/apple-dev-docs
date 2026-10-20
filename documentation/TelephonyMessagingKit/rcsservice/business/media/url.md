@@ -1,7 +1,8 @@
 # url
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 URL for media.
 
@@ -16,7 +17,8 @@ let url: URL
 
 ## See Also
 
-- [let sha256Digest: String?](rcsservice/business/media/sha256digest.md)
+### Accessing media properties
+- [let sha256Digest: String?](./sha256digest.md)
   Fingerprint that can be used to verify the integrity of the media referred to by `url`.
 
 

@@ -8,49 +8,50 @@ Manage the simulated and physical devices that you use to test your app.
 
 You manage all the devices that appear in Xcode as run destinations using Device Hub.
 
-Run your app on simulated devices in Device Hub to quickly evaluate new features and fix bugs, and to see how your interface works on devices that you don’t have physical access to. Run your app on physical devices to test features or services that have hardware dependencies or investigating performance issues. For more information, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
+Run your app on simulated devices in Device Hub to quickly evaluate new features and fix bugs, and to see how your interface works on devices that you don’t have physical access to. Run your app on physical devices to test features or services that have hardware dependencies or investigating performance issues. For more information, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md).
 
-![A screenshot of the Device Hub expanded window showing the sidebar on the left with available devices, the canvas in the middle running an iPhone simulator, and the inspector on the right showing an app installed.](/images/com.apple.Xcode/device-hub-anatomy@2x.png)
+![A screenshot of the Device Hub expanded window showing the sidebar on the left with available devices, the canvas in the middle running an iPhone simulator, and the inspector on the right showing an app installed.](https://developer.apple.com/tutorials/images/com.apple.Xcode/device-hub-anatomy@2x.png)
 
-In Xcode, when you run your app on a simulated or physical device, Device Hub opens a compact window showing your app on a device screen where you can interact with it using your Mac controls. For physical devices, you can interact with the view in Device Hub and the physical device simultaneously. For more information, see [`Interacting with your app in Device Hub`](interacting-with-your-app-in-device-hub.md).
+In Xcode, when you run your app on a simulated or physical device, Device Hub opens a compact window showing your app on a device screen where you can interact with it using your Mac controls. For physical devices, you can interact with the view in Device Hub and the physical device simultaneously. For more information, see [Interacting with your app in Device Hub](./interacting-with-your-app-in-device-hub.md).
 
 For more controls, expand the Device Hub compact window to show the sidebar, canvas, and inspector areas separately. Use the inspector to change the appearance of a device, get basic information (such as the name, operating system version, and device ID), download diagnostic files, and more.
 
-To manage your simulated and physical devices, select a device in the sidebar to see the status in the canvas. To add physical devices, use Device Hub to pair devices wirelessly or using a cable connected to your Mac. For more information, see [`Managing your simulated and physical devices in Device Hub`](managing-your-simulated-and-physical-devices-in-device-hub.md).
+To manage your simulated and physical devices, select a device in the sidebar to see the status in the canvas. To add physical devices, use Device Hub to pair devices wirelessly or using a cable connected to your Mac. For more information, see [Managing your simulated and physical devices in Device Hub](./managing-your-simulated-and-physical-devices-in-device-hub.md).
 
 ## Topics
 
 ### Essentials
-- [Running your app on simulated or physical devices](running-your-app-on-simulated-or-physical-devices.md)
+- [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Managing your simulated and physical devices in Device Hub](managing-your-simulated-and-physical-devices-in-device-hub.md)
+- [Managing your simulated and physical devices in Device Hub](./managing-your-simulated-and-physical-devices-in-device-hub.md)
   Add custom simulators and pair physical devices with your Mac so you can choose them as run destinations in Xcode.
-- [Enabling Developer Mode on a device](enabling-developer-mode-on-a-device.md)
+- [Enabling Developer Mode on a device](./enabling-developer-mode-on-a-device.md)
   Grant or deny permission for locally installed apps to run in iOS, iPadOS, watchOS, and visionOS.
 ### Device interactions
-- [Configuring the environment of a simulated device](configuring-the-environment-of-a-simulated-device.md)
+- [Configuring the environment of a simulated device](./configuring-the-environment-of-a-simulated-device.md)
   Modify the settings of a simulated device.
-- [Interacting with your app in Device Hub](interacting-with-your-app-in-device-hub.md)
+- [Interacting with your app in Device Hub](./interacting-with-your-app-in-device-hub.md)
   Use Device Hub to control interactions with your apps on simulated and physical devices.
-- [Interacting with your visionOS app in Device Hub](interacting-with-your-visionos-app-in-device-hub.md)
+- [Interacting with your visionOS app in Device Hub](./interacting-with-your-visionos-app-in-device-hub.md)
   Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
-- [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
+- [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
-- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+- [Interacting with devices using the command line](./interacting-with-devices-using-the-command-line.md)
   Manage simulated and physical devices from the command line.
 ### Device details
-- [Locating device identifiers](locating-device-identifiers.md)
+- [Locating device identifiers](./locating-device-identifiers.md)
   Get the unique identifier for a device before registering it in your developer account.
-- [Managing apps on devices](managing-apps-on-devices.md)
+- [Managing apps on devices](./managing-apps-on-devices.md)
   Find, add, and remove apps installed for testing on simulated and physical devices.
 
 ## See Also
 
-- [Debugging](debugging.md)
+### Tuning and debugging
+- [Debugging](./debugging.md)
   Identify and address issues in your app using the Xcode debugger, Xcode Organizer, Metal debugger, and Instruments.
-- [Performance and metrics](performance-and-metrics.md)
+- [Performance and metrics](./performance-and-metrics.md)
   Measure, investigate, and address the use of system resources and issues impacting performance using Instruments and Xcode Organizer.
-- [Testing](testing.md)
+- [Testing](./testing.md)
   Develop and run tests to detect logic failures, UI problems, and performance regressions.
 
 

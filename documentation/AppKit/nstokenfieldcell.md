@@ -1,12 +1,13 @@
 # NSTokenFieldCell
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A text field cell subclass that enables tokenized editing of an array of objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,55 +15,60 @@ A text field cell subclass that enables tokenized editing of an array of objects
 class NSTokenFieldCell
 ```
 
+```objc
+@interface NSTokenFieldCell : NSTextFieldCell
+```
+
 #### Overview
 
-[`NSTokenFieldCell`](nstokenfieldcell.md) is a subclass of [`NSTextFieldCell`](nstextfieldcell.md) that provides tokenized editing of an array of objects similar to the address field in the Mail app. The objects may be strings or objects that can be represented as strings. A single token field cell can be presented in an [`NSTokenField`](nstokenfield.md) control.
+[`NSTokenFieldCell`](./nstokenfieldcell.md) is a subclass of [`NSTextFieldCell`](./nstextfieldcell.md) that provides tokenized editing of an array of objects similar to the address field in the Mail app. The objects may be strings or objects that can be represented as strings. A single token field cell can be presented in an [`NSTokenField`](./nstokenfield.md) control.
 
 ## Topics
 
 ### Managing the Token Style
-- [var tokenStyle: NSTokenField.TokenStyle](nstokenfieldcell/tokenstyle.md)
+- [var tokenStyle: NSTokenField.TokenStyle](./nstokenfieldcell/tokenstyle.md)
   The token style of the receiver.
 ### Managing the Tokenizing Character Set
-- [class var defaultTokenizingCharacterSet: CharacterSet](nstokenfieldcell/defaulttokenizingcharacterset.md)
+- [class var defaultTokenizingCharacterSet: CharacterSet](./nstokenfieldcell/defaulttokenizingcharacterset.md)
   Returns the default tokenizing character set.
-- [var tokenizingCharacterSet: CharacterSet!](nstokenfieldcell/tokenizingcharacterset.md)
+- [var tokenizingCharacterSet: CharacterSet!](./nstokenfieldcell/tokenizingcharacterset.md)
   The receiver’s tokenizing character set to a given character set.
 ### Configuring the Completion Delay
-- [var completionDelay: TimeInterval](nstokenfieldcell/completiondelay.md)
+- [var completionDelay: TimeInterval](./nstokenfieldcell/completiondelay.md)
   The receiver’s completion delay to a given delay.
-- [class var defaultCompletionDelay: TimeInterval](nstokenfieldcell/defaultcompletiondelay.md)
+- [class var defaultCompletionDelay: TimeInterval](./nstokenfieldcell/defaultcompletiondelay.md)
   Returns the default completion delay.
 ### Managing the Delegate
-- [var delegate: (any NSTokenFieldCellDelegate)?](nstokenfieldcell/delegate.md)
+- [var delegate: (any NSTokenFieldCellDelegate)?](./nstokenfieldcell/delegate.md)
   The receiver’s delegate.
 ### Constants
-- [NSTokenField.TokenStyle](nstokenfield/tokenstyle-swift.enum.md)
-  The NSTokenStyle constants define how tokens are displayed and editable in the `NSTokenFieldCell`. These values are used by [`tokenStyle`](nstokenfieldcell/tokenstyle.md) and the delegate method [`tokenFieldCell(_:styleForRepresentedObject:)`](nstokenfieldcelldelegate/tokenfieldcell(_:styleforrepresentedobject:).md).
+- [NSTokenField.TokenStyle](./nstokenfield/tokenstyle-swift.enum.md)
+  The NSTokenStyle constants define how tokens are displayed and editable in the `NSTokenFieldCell`. These values are used by [`tokenStyle`](./nstokenfieldcell/tokenstyle.md) and the delegate method [`tokenFieldCell(_:styleForRepresentedObject:)`](./nstokenfieldcelldelegate/tokenfieldcell%28_,styleforrepresentedobject%29.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSTextFieldCell](nstextfieldcell.md)
+- [NSTextFieldCell](./nstextfieldcell.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NSTokenFieldCellDelegate](nstokenfieldcelldelegate.md)
-  A set of optional methods implemented by delegates of [`NSTokenFieldCell`](nstokenfieldcell.md) objects to work with tokenized strings.
+### Cell
+- [protocol NSTokenFieldCellDelegate](./nstokenfieldcelldelegate.md)
+  A set of optional methods implemented by delegates of [`NSTokenFieldCell`](./nstokenfieldcell.md) objects to work with tokenized strings.
 
 
 ---

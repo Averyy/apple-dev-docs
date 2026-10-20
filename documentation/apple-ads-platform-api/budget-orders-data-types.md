@@ -1,6 +1,7 @@
 # Budget Order Data Types
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Track budget order status, status reasons, and payment model with these enumerated types.
 
@@ -9,18 +10,19 @@ Track budget order status, status reasons, and payment model with these enumerat
 
 ## Topics
 
-- [type PaymentModel](paymentmodel.md)
+- [type PaymentModel](./paymentmodel.md)
   Enumeration of billing models that determine payment method and budget availability for an ad account.
-- [type BudgetSystemStatus](budgetsystemstatus.md)
+- [type BudgetSystemStatus](./budgetsystemstatus.md)
   The system-derived operational state of a budget order.
-- [type BudgetSystemStatusReason](budgetsystemstatusreason.md)
+- [type BudgetSystemStatusReason](./budgetsystemstatusreason.md)
   A reason code that explains why a budget or budget order has its current system status.
 
 ## See Also
 
-- [Budget Orders Endpoints](budget-orders-endpoints.md)
+### Budget Orders
+- [Budget Orders Endpoints](./budget-orders-endpoints.md)
   Create, retrieve, update, and delete budget orders through these endpoints.
-- [Budget Order Data Objects](budget-orders-data-objects.md)
+- [Budget Order Data Objects](./budget-orders-data-objects.md)
   Build budget order and campaign assignment requests, and read budget order and invoice detail responses.
 
 

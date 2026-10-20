@@ -1,7 +1,8 @@
 # CMSampleBuffer.DynamicContent.taggedBuffers(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

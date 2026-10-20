@@ -1,7 +1,8 @@
 # favorites
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Font collection of the user’s preferred font descriptors.
 
@@ -14,13 +15,18 @@ Font collection of the user’s preferred font descriptors.
 static let favorites: NSFontCollection.Name
 ```
 
+```c
+extern NSFontCollectionName const NSFontCollectionFavorites;
+```
+
 ## See Also
 
-- [static let allFonts: NSFontCollection.Name](nsfontcollection/name/allfonts.md)
+### Type Properties
+- [static let allFonts: NSFontCollection.Name](./allfonts.md)
   All fonts in the system.
-- [static let user: NSFontCollection.Name](nsfontcollection/name/user.md)
+- [static let user: NSFontCollection.Name](./user.md)
   Per-user unmodifiable collection.
-- [static let recentlyUsed: NSFontCollection.Name](nsfontcollection/name/recentlyused.md)
+- [static let recentlyUsed: NSFontCollection.Name](./recentlyused.md)
   Font collection automatically maintained by NSFontManager.
 
 

@@ -1,7 +1,8 @@
 # moreByArtist
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of additional music videos by the artist.
 

@@ -1,7 +1,8 @@
 # configurationURL
 
 **Framework**: Media Setup  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path to access the configuration endpoint of your streaming media service for HomePod.
 
@@ -17,15 +18,20 @@ The path to access the configuration endpoint of your streaming media service fo
 var configurationURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSURL * configurationURL;
+```
+
 ## See Also
 
-- [var authorizationTokenURL: URL?](msserviceaccount/authorizationtokenurl.md)
+### Providing Parameters for an OAuth Request
+- [var authorizationTokenURL: URL?](./authorizationtokenurl.md)
   A URL the system can access to request an OAuth token for the user’s HomePod speakers.
-- [var authorizationScope: String?](msserviceaccount/authorizationscope.md)
+- [var authorizationScope: String?](./authorizationscope.md)
   A list of permissions for the token request.
-- [var clientID: String?](msserviceaccount/clientid.md)
+- [var clientID: String?](./clientid.md)
   A user identifier for the token request.
-- [var clientSecret: String?](msserviceaccount/clientsecret.md)
+- [var clientSecret: String?](./clientsecret.md)
   A string that authenticates the user’s setup request.
 
 

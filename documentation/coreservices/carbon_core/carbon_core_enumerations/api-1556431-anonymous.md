@@ -5,15 +5,15 @@
 ## Topics
 
 ### Constants
-- [var kInternetLocationAppleShareIcon: Int](kinternetlocationappleshareicon.md)
-- [var kInternetLocationAppleTalkZoneIcon: Int](kinternetlocationappletalkzoneicon.md)
-- [var kInternetLocationFTPIcon: Int](kinternetlocationftpicon.md)
-- [var kInternetLocationFileIcon: Int](kinternetlocationfileicon.md)
-- [var kInternetLocationGenericIcon: Int](kinternetlocationgenericicon.md)
-- [var kInternetLocationHTTPIcon: Int](kinternetlocationhttpicon.md)
-- [var kInternetLocationMailIcon: Int](kinternetlocationmailicon.md)
-- [var kInternetLocationNSLNeighborhoodIcon: Int](kinternetlocationnslneighborhoodicon.md)
-- [var kInternetLocationNewsIcon: Int](kinternetlocationnewsicon.md)
+- [var kInternetLocationAppleShareIcon: Int](../../kinternetlocationappleshareicon.md)
+- [var kInternetLocationAppleTalkZoneIcon: Int](../../kinternetlocationappletalkzoneicon.md)
+- [var kInternetLocationFTPIcon: Int](../../kinternetlocationftpicon.md)
+- [var kInternetLocationFileIcon: Int](../../kinternetlocationfileicon.md)
+- [var kInternetLocationGenericIcon: Int](../../kinternetlocationgenericicon.md)
+- [var kInternetLocationHTTPIcon: Int](../../kinternetlocationhttpicon.md)
+- [var kInternetLocationMailIcon: Int](../../kinternetlocationmailicon.md)
+- [var kInternetLocationNSLNeighborhoodIcon: Int](../../kinternetlocationnslneighborhoodicon.md)
+- [var kInternetLocationNewsIcon: Int](../../kinternetlocationnewsicon.md)
 
 
 ---

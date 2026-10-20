@@ -1,7 +1,8 @@
 # init(device:destinationDataType:seed:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device destinationDataType:(MPSDataType) destinationDataType seed:(NSUInteger) seed;
 ```
 
 

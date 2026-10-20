@@ -1,7 +1,8 @@
 # inputIndex(forResultIndex:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Maps a location in the resultString to where it came from in the input string.
 

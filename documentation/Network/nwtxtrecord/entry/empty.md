@@ -1,7 +1,8 @@
 # NWTXTRecord.Entry.empty
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The key is mapped to an empty value.
 
@@ -22,9 +23,10 @@ case empty
 
 ## See Also
 
-- [NWTXTRecord.Entry.none](nwtxtrecord/entry/none.md)
+### Entry Types
+- [NWTXTRecord.Entry.none](./none.md)
   The key is not mapped to any value.
-- [NWTXTRecord.Entry.string(_:)](nwtxtrecord/entry/string(_:).md)
+- [NWTXTRecord.Entry.string(_:)](./string%28_%29.md)
   The key is mapped to a string.
 
 

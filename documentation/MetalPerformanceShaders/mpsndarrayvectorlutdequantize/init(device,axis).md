@@ -1,7 +1,8 @@
 # init(device:axis:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, axis: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device axis:(NSUInteger) axis;
 ```
 
 

@@ -1,7 +1,8 @@
 # unresolvedConflictVersionsOfItem(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of version objects that are currently in conflict for the specified URL.
 
@@ -20,6 +21,10 @@ Returns an array of version objects that are currently in conflict for the speci
 class func unresolvedConflictVersionsOfItem(at url: URL) -> [NSFileVersion]?
 ```
 
+```objc
++ (NSArray<NSFileVersion *> *) unresolvedConflictVersionsOfItemAtURL:(NSURL *) url;
+```
+
 #### Return Value
 
 An array of `NSFileVersion` objects that represent the versions in conflict or `nil` if the file at URL does not exist.
@@ -30,9 +35,10 @@ An array of `NSFileVersion` objects that represent the versions in conflict or `
 
 ## See Also
 
-- [var isConflict: Bool](nsfileversion/isconflict.md)
+### Handling Version Conflicts
+- [var isConflict: Bool](./isconflict.md)
   A Boolean value indicating whether the contents of the version are in conflict with the contents of another version.
-- [var isResolved: Bool](nsfileversion/isresolved.md)
+- [var isResolved: Bool](./isresolved.md)
   A Boolean value that indicates if the version object is in conflict or not.
 
 

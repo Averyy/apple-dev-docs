@@ -1,7 +1,8 @@
 # forceDelete
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes one or more records regardless of conflicts.
 
@@ -10,7 +11,7 @@ Deletes one or more records regardless of conflicts.
 
 ## Declaration
 
-```swift
+```
 RecordsBatchBuilder forceDelete(
 	CloudKit.Record|CloudKit.Record[] records
 );
@@ -22,11 +23,12 @@ The object that received this method call.
 
 ## Parameters
 
-- `records`: A [`CloudKit.Record`](cloudkit.record.md) dictionary representing the record to delete, if you are deleting a single record. If you are deleting multiple records, this parameter is an array of [`CloudKit.Record`](cloudkit.record.md) dictionaries. The `recordChangeTag` key is not required in the [`CloudKit.Record`](cloudkit.record.md) dictionaries.
+- `records`: A [`CloudKit.Record`](../cloudkit.record.md) dictionary representing the record to delete, if you are deleting a single record. If you are deleting multiple records, this parameter is an array of [`CloudKit.Record`](../cloudkit.record.md) dictionaries. The `recordChangeTag` key is not required in the [`CloudKit.Record`](../cloudkit.record.md) dictionaries.
 
 ## See Also
 
-- [delete](cloudkit.recordsbatchbuilder/delete.md)
+### Deleting Records
+- [delete](./delete.md)
   Deletes one or more records.
 
 

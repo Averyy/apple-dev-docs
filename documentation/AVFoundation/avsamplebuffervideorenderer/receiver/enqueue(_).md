@@ -1,7 +1,8 @@
 # enqueue(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends until the receiver is ready for more media data, then enqueues a sample buffer in order to render its contents.
 
@@ -26,7 +27,7 @@ The result of the enqueue operation.
 
 #### Discussion
 
-> **Note**: `CancellationError` if the Task was cancelled.
+> **Throws**: `CancellationError` if the Task was cancelled.
 
 ## Parameters
 
@@ -34,9 +35,10 @@ The result of the enqueue operation.
 
 ## See Also
 
-- [func enqueueImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult](avsamplebuffervideorenderer/receiver/enqueueimmediately(_:).md)
+### Enqueuing sample buffers
+- [func enqueueImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult](./enqueueimmediately%28_%29.md)
   Enqueues a sample buffer in order to render its contents, without waiting for the renderer to become ready for more media data.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult](avsamplebuffervideorenderer/receiver/enqueueresult.md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult](./enqueueresult.md)
   A value indicating the result of a call to `enqueue(_:)` or `enqueueImmediately(_:)`.
 
 

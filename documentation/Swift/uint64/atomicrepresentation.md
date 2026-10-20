@@ -1,7 +1,8 @@
 # UInt64.AtomicRepresentation
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 

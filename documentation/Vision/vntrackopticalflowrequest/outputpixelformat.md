@@ -1,7 +1,8 @@
 # outputPixelFormat
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format type of the output value.
 
@@ -19,17 +20,22 @@ The pixel format type of the output value.
 var outputPixelFormat: OSType { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) OSType outputPixelFormat;
+```
+
 #### Discussion
 
-The valid values are [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent32float) and [`kCVPixelFormatType_TwoComponent16Half`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent16half). The default value is [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent32float).
+The valid values are [`kCVPixelFormatType_TwoComponent32Float`](../../CoreVideo/kcvpixelformattype_twocomponent32float.md) and [`kCVPixelFormatType_TwoComponent16Half`](../../CoreVideo/kcvpixelformattype_twocomponent16half.md). The default value is [`kCVPixelFormatType_TwoComponent32Float`](../../CoreVideo/kcvpixelformattype_twocomponent32float.md).
 
 ## See Also
 
-- [var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy](vntrackopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring the Request
+- [var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The level of accuracy to compute the optical flow.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy](vntrackopticalflowrequest/computationaccuracy-swift.enum.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   Computational accuracy options.
-- [var keepNetworkOutput: Bool](vntrackopticalflowrequest/keepnetworkoutput.md)
+- [var keepNetworkOutput: Bool](./keepnetworkoutput.md)
   A Boolean value that indicates the raw pixel buffer continues to emit from the network.
 
 

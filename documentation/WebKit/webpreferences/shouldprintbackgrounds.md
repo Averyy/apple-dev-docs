@@ -1,12 +1,13 @@
 # shouldPrintBackgrounds
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether or not the web view should include backgrounds when printing.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean that indicates whether or not the web view should include backgrounds 
 var shouldPrintBackgrounds: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldPrintBackgrounds;
+```
+
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) if the web view should print backgrounds, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Set to [`true`](../../Swift/true.md) if the web view should print backgrounds, otherwise [`false`](../../Swift/false.md).
 
 
 ---

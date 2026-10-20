@@ -1,7 +1,8 @@
 # CMXYZColor
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains values for a color specified in XYZ color space.
 
@@ -14,6 +15,12 @@ Contains values for a color specified in XYZ color space.
 struct CMXYZColor
 ```
 
+```c
+typedef struct CMXYZColor {
+    ...
+} CMXYZColor;
+```
+
 #### Overview
 
 Three color component values defined by the `CMXYZComponent` type definition combine to form a color value specified in the XYZ color space. The color value is defined by the `CMXYZColor` type definition.
@@ -23,12 +30,12 @@ Your application uses the `CMXYZColor` data structure to specify a color value i
 ## Topics
 
 ### Initializers
-- [init()](cmxyzcolor/1462111-init.md)
-- [init(X: CMXYZComponent, Y: CMXYZComponent, Z: CMXYZComponent)](cmxyzcolor/1459192-init.md)
+- [init()](./cmxyzcolor/api-1462111-init.md)
+- [init(X: CMXYZComponent, Y: CMXYZComponent, Z: CMXYZComponent)](./cmxyzcolor/api-1459192-init.md)
 ### Instance Properties
-- [var X: CMXYZComponent](cmxyzcolor/1458784-x.md)
-- [var Y: CMXYZComponent](cmxyzcolor/1463301-y.md)
-- [var Z: CMXYZComponent](cmxyzcolor/1460905-z.md)
+- [var X: CMXYZComponent](./cmxyzcolor/api-1458784-x.md)
+- [var Y: CMXYZComponent](./cmxyzcolor/api-1463301-y.md)
+- [var Z: CMXYZComponent](./cmxyzcolor/api-1460905-z.md)
 
 
 ---

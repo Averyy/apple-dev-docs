@@ -1,7 +1,8 @@
 # reanchor(_:preservingWorldTransform:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the entity’s anchoring, preserving either the world transform or the local transform.
 
@@ -11,7 +12,9 @@ Changes the entity’s anchoring, preserving either the world transform or the l
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+ - Deprecated
+- visionOS - Deprecated
+
+> **Deprecated**: reanchor(_:preservingWorldTransform:) is not supported on visionOS
 
 ## Declaration
 

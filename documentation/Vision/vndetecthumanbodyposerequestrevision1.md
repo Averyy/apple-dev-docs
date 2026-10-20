@@ -1,7 +1,8 @@
 # VNDetectHumanBodyPoseRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the body pose detection request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the body pose detection request.
 
 ```swift
 var VNDetectHumanBodyPoseRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNDetectHumanBodyPoseRequestRevision1;
 ```
 
 

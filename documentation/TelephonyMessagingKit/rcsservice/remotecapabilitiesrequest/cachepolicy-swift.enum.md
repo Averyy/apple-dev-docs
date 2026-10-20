@@ -1,7 +1,8 @@
 # RCSService.RemoteCapabilitiesRequest.CachePolicy
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing the cache policy to use in requests.
 
@@ -17,31 +18,32 @@ enum CachePolicy
 ## Topics
 
 ### Accessing cache policies
-- [RCSService.RemoteCapabilitiesRequest.CachePolicy.cacheOnly](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.enum/cacheonly.md)
+- [RCSService.RemoteCapabilitiesRequest.CachePolicy.cacheOnly](./cachepolicy-swift.enum/cacheonly.md)
   Load from local cache.
-- [RCSService.RemoteCapabilitiesRequest.CachePolicy.cacheOrRemote](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.enum/cacheorremote.md)
+- [RCSService.RemoteCapabilitiesRequest.CachePolicy.cacheOrRemote](./cachepolicy-swift.enum/cacheorremote.md)
   Load from local cache if available, otherwise load from remote.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/remotecapabilitiesrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var handle: RCSHandle](rcsservice/remotecapabilitiesrequest/handle.md)
+- [var handle: RCSHandle](./handle.md)
   The RCS handle, typically a phone number.
-- [var cachePolicy: RCSService.RemoteCapabilitiesRequest.CachePolicy](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.property.md)
+- [var cachePolicy: RCSService.RemoteCapabilitiesRequest.CachePolicy](./cachepolicy-swift.property.md)
   Cache policy to use for request.
 
 

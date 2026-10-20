@@ -1,7 +1,8 @@
 # init(selection:in:displayedComponents:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects a `Date` in a closed range.
 
@@ -20,6 +21,20 @@ nonisolated
 init(selection: Binding<Date>, in range: ClosedRange<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(selection: Binding<Date>, in range: PartialRangeFrom<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ContentBuilder label: () -> Label)
+```
+
+```swift
+nonisolated
+init(selection: Binding<Date>, in range: PartialRangeThrough<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ContentBuilder label: () -> Label)
+```
+
 ## Parameters
 
 - `selection`: The date value being displayed and selected.
@@ -29,7 +44,8 @@ init(selection: Binding<Date>, in range: ClosedRange<Date>, displayedComponents:
 
 ## See Also
 
-- [init(_:selection:in:displayedComponents:)](datepicker/init(_:selection:in:displayedcomponents:).md)
+### Creating a date picker for specific dates
+- [init(_:selection:in:displayedComponents:)](./init%28_,selection,in,displayedcomponents%29.md)
   Creates an instance that selects a `Date` in a closed range.
 
 

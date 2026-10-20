@@ -1,18 +1,19 @@
 # data
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of double-precision, floating-point values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The array of double-precision, floating-point values.
 var data: UnsafeMutablePointer<Double>
 ```
 
+```c
+double * data;
+```
+
 ## See Also
 
-- [var count: Int32](densevector_double/count.md)
+### Inspecting a Vector’s Structure and Data
+- [var count: Int32](./count.md)
   The number of items in the vector.
 
 

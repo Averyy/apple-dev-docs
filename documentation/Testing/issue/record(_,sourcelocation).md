@@ -1,20 +1,23 @@
 # record(_:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Records an issue that a test encounters while it’s running.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
+
+> **Deprecated**: Use record(_:severity:sourceLocation:) instead.
 
 ## Declaration
 
@@ -29,7 +32,7 @@ The issue that was recorded.
 
 #### Discussion
 
-Use this function if, while running a test, an issue occurs that cannot be represented as an expectation (using the [`expect(_:_:sourceLocation:)`](expect(_:_:sourcelocation:).md) or [`require(_:_:sourceLocation:)`](require(_:_:sourcelocation:)-5l63q.md) macros.)
+Use this function if, while running a test, an issue occurs that cannot be represented as an expectation (using the [`expect(_:_:sourceLocation:)`](../expect%28_,_,sourcelocation%29.md) or [`require(_:_:sourceLocation:)`](../require%28_,_,sourcelocation%29-5l63q.md) macros.)
 
 ## Parameters
 

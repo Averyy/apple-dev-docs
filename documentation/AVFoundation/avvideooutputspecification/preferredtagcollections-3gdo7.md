@@ -1,7 +1,8 @@
 # preferredTagCollections
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.2+
@@ -20,10 +21,11 @@ var preferredTagCollections: [[CMTag]] { get }
 
 ## See Also
 
-- [var defaultOutputSettings: [String : any Sendable]?](avvideooutputspecification/defaultoutputsettings.md)
-- [func setOutputSettings([String : any Sendable]?, for: [CMTag])](avvideooutputspecification/setoutputsettings(_:for:).md)
-- [var defaultPixelBufferAttributes: [String : Any]?](avvideooutputspecification/defaultpixelbufferattributes.md)
-- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](avvideooutputspecification/setoutputpixelbufferattributes(_:for:).md)
+### Configuring the specification
+- [var defaultOutputSettings: [String : any Sendable]?](./defaultoutputsettings.md)
+- [func setOutputSettings([String : any Sendable]?, for: [CMTag])](./setoutputsettings%28_,for%29.md)
+- [var defaultPixelBufferAttributes: [String : Any]?](./defaultpixelbufferattributes.md)
+- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](./setoutputpixelbufferattributes%28_,for%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # floor(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the floor operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the floor operation to the input tensor elements.
 
 ```swift
 func floor(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) floorWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

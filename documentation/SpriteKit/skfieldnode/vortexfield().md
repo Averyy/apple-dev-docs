@@ -1,7 +1,8 @@
 # vortexField()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a field node that applies a perpendicular force to physics bodies.
 
@@ -20,39 +21,44 @@ Creates a field node that applies a perpendicular force to physics bodies.
 class func vortexField() -> SKFieldNode
 ```
 
+```objc
++ (SKFieldNode *) vortexField;
+```
+
 #### Return Value
 
 A new vortex field node.
 
 #### Discussion
 
-The strength of the field measures the acceleration of the field in meters per second squared (meaning that similar to gravity, all physics bodies are affected equally). The physics body is accelerated along the perpendicular of the line between the field node’s position and the position of the physics body. A positive field strength indicates the body is accelerated in a counter-clockwise direction. The [`falloff`](skfieldnode/falloff.md) property of a vortex field node is set by default to `2`.
+The strength of the field measures the acceleration of the field in meters per second squared (meaning that similar to gravity, all physics bodies are affected equally). The physics body is accelerated along the perpendicular of the line between the field node’s position and the position of the physics body. A positive field strength indicates the body is accelerated in a counter-clockwise direction. The [`falloff`](./falloff.md) property of a vortex field node is set by default to `2`.
 
 ## See Also
 
-- [class func dragField() -> SKFieldNode](skfieldnode/dragfield.md)
+### Creating Field Nodes
+- [class func dragField() -> SKFieldNode](./dragfield%28%29.md)
   Creates a field node that applies a force that resists the motion of physics bodies.
-- [class func electricField() -> SKFieldNode](skfieldnode/electricfield.md)
+- [class func electricField() -> SKFieldNode](./electricfield%28%29.md)
   Creates a field node that applies an electrical force proportional to the electrical charge of physics bodies.
-- [class func linearGravityField(withVector: vector_float3) -> SKFieldNode](skfieldnode/lineargravityfield(withvector:).md)
+- [class func linearGravityField(withVector: vector_float3) -> SKFieldNode](./lineargravityfield%28withvector%29.md)
   Creates a field node that accelerates physics bodies in a specific direction.
-- [class func magneticField() -> SKFieldNode](skfieldnode/magneticfield.md)
+- [class func magneticField() -> SKFieldNode](./magneticfield%28%29.md)
   Creates a field node that applies a magnetic force based on the velocity and electrical charge of the physics bodies.
-- [class func noiseField(withSmoothness: CGFloat, animationSpeed: CGFloat) -> SKFieldNode](skfieldnode/noisefield(withsmoothness:animationspeed:).md)
+- [class func noiseField(withSmoothness: CGFloat, animationSpeed: CGFloat) -> SKFieldNode](./noisefield%28withsmoothness,animationspeed%29.md)
   Creates a field node that applies a randomized acceleration to physics bodies.
-- [class func radialGravityField() -> SKFieldNode](skfieldnode/radialgravityfield.md)
+- [class func radialGravityField() -> SKFieldNode](./radialgravityfield%28%29.md)
   Creates a field node that accelerates physics bodies toward the field node.
-- [class func springField() -> SKFieldNode](skfieldnode/springfield.md)
+- [class func springField() -> SKFieldNode](./springfield%28%29.md)
   Creates a field node that applies a spring-like force that pulls physics bodies toward the field node.
-- [class func turbulenceField(withSmoothness: CGFloat, animationSpeed: CGFloat) -> SKFieldNode](skfieldnode/turbulencefield(withsmoothness:animationspeed:).md)
+- [class func turbulenceField(withSmoothness: CGFloat, animationSpeed: CGFloat) -> SKFieldNode](./turbulencefield%28withsmoothness,animationspeed%29.md)
   Creates a field node that applies a randomized acceleration to physics bodies.
-- [class func velocityField(with: SKTexture) -> SKFieldNode](skfieldnode/velocityfield(with:).md)
+- [class func velocityField(with: SKTexture) -> SKFieldNode](./velocityfield%28with%29.md)
   Creates a field node that sets the velocity of physics bodies that enter the node’s area based on the pixel values of a texture.
-- [class func velocityField(withVector: vector_float3) -> SKFieldNode](skfieldnode/velocityfield(withvector:).md)
+- [class func velocityField(withVector: vector_float3) -> SKFieldNode](./velocityfield%28withvector%29.md)
   Creates a field node that gives physics bodies a constant velocity.
-- [class func customField(evaluationBlock: SKFieldForceEvaluator) -> SKFieldNode](skfieldnode/customfield(evaluationblock:).md)
+- [class func customField(evaluationBlock: SKFieldForceEvaluator) -> SKFieldNode](./customfield%28evaluationblock%29.md)
   Creates a field node that calculates and applies a custom force to the physics body.
-- [typealias SKFieldForceEvaluator](skfieldforceevaluator.md)
+- [typealias SKFieldForceEvaluator](../skfieldforceevaluator.md)
   The definition for a custom block that processes a single physics body’s interaction with the field.
 
 

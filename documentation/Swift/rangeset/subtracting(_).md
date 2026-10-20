@@ -1,7 +1,8 @@
 # subtracting(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new set containing the contents of this range set that are not also in the given range set.
 
@@ -19,6 +20,8 @@ Returns a new set containing the contents of this range set that are not also in
 ```swift
 func subtracting(_ other: RangeSet<Bound>) -> RangeSet<Bound>
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

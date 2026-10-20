@@ -1,7 +1,8 @@
 # CMSampleBuffer.Flags
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags that customize the behavior of framework operations.
 
@@ -23,25 +24,26 @@ struct Flags
 ## Topics
 
 ### Flags
-- [static let audioBufferListAssure16ByteAlignment: CMSampleBuffer.Flags](cmsamplebuffer/flags/audiobufferlistassure16bytealignment.md)
+- [static let audioBufferListAssure16ByteAlignment: CMSampleBuffer.Flags](./flags/audiobufferlistassure16bytealignment.md)
   Ensure memory involved in audio buffer lists is 16-byte aligned.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [CMSampleBuffer.Error](cmsamplebuffer/error.md)
+### Constants
+- [CMSampleBuffer.Error](./error.md)
   A structure that defines errors that occur during framework operations.
-- [CMSampleBuffer.NotificationKey](cmsamplebuffer/notificationkey.md)
+- [CMSampleBuffer.NotificationKey](./notificationkey.md)
   A key for sample buffer notifications.
 
 

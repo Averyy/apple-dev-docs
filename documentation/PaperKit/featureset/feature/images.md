@@ -1,7 +1,8 @@
 # FeatureSet.Feature.images
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Supports image elements.
 
@@ -20,11 +21,12 @@ case images
 
 ## See Also
 
-- [FeatureSet.Feature.stickers](featureset/feature/stickers.md)
+### Describing element features
+- [FeatureSet.Feature.stickers](./stickers.md)
   Supports inserting stickers.
-- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
+- [FeatureSet.Feature.loupes](./loupes.md)
   Supports loupe elements.
-- [FeatureSet.Feature.links](featureset/feature/links.md)
+- [FeatureSet.Feature.links](./links.md)
   Supports link elements.
 
 

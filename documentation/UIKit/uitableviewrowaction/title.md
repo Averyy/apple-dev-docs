@@ -1,14 +1,17 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the action button.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 13.0
+- iPadOS 8.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UITableViewRowAction`](../uitableviewrowaction.md).
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The title of the action button.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var style: UITableViewRowAction.Style](uitableviewrowaction/style-swift.property.md)
+### Configuring the action’s appearance
+- [var style: UITableViewRowAction.Style](./style-swift.property.md)
   The style applied to the action button.
-- [UITableViewRowAction.Style](uitableviewrowaction/style-swift.enum.md)
+- [UITableViewRowAction.Style](./style-swift.enum.md)
   Constants that specify the appearance of action buttons.
-- [var backgroundColor: UIColor?](uitableviewrowaction/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the action button.
-- [var backgroundEffect: UIVisualEffect?](uitableviewrowaction/backgroundeffect.md)
+- [var backgroundEffect: UIVisualEffect?](./backgroundeffect.md)
   The visual effect to apply to the button.
 
 

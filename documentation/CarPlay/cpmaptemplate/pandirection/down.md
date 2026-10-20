@@ -1,7 +1,8 @@
 # down
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user panned the map downward.
 
@@ -16,13 +17,18 @@ The user panned the map downward.
 static var down: CPMapTemplate.PanDirection { get }
 ```
 
+```c
+CPPanDirectionDown
+```
+
 ## See Also
 
-- [static var left: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/left.md)
+### Pan Directions
+- [static var left: CPMapTemplate.PanDirection](./left.md)
   The user panned the map to the left.
-- [static var right: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/right.md)
+- [static var right: CPMapTemplate.PanDirection](./right.md)
   The user panned the map to the right.
-- [static var up: CPMapTemplate.PanDirection](cpmaptemplate/pandirection/up.md)
+- [static var up: CPMapTemplate.PanDirection](./up.md)
   The user panned the map upward.
 
 

@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view to embed in glass.
 
@@ -12,6 +13,10 @@ The view to embed in glass.
 
 ```swift
 var contentView: NSView? { get set }
+```
+
+```objc
+@property (strong, nullable) NSView * contentView;
 ```
 
 #### Discussion

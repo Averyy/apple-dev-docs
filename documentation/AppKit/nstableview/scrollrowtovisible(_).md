@@ -1,17 +1,22 @@
 # scrollRowToVisible(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the view so the specified row is visible.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func scrollRowToVisible(_ row: Int)
+```
+
+```objc
+- (void) scrollRowToVisible:(NSInteger) row;
 ```
 
 ## Parameters
@@ -20,9 +25,11 @@ func scrollRowToVisible(_ row: Int)
 
 ## See Also
 
-- [func scroll(to: NSPoint)](nsclipview/scroll(to:).md)
+### Related Documentation
+- [func scroll(to: NSPoint)](../nsclipview/scroll%28to%29.md)
   Changes the origin of the clip view’s bounds rectangle to `newOrigin`.
-- [func scrollColumnToVisible(Int)](nstableview/scrollcolumntovisible(_:).md)
+### Scrolling
+- [func scrollColumnToVisible(Int)](./scrollcolumntovisible%28_%29.md)
   Scrolls the view so the specified column is visible.
 
 

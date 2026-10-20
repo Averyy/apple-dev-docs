@@ -1,7 +1,8 @@
 # Activities.Relationships.ActivitiesPlaylistsRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship between the activity and its playlists.
 
@@ -10,7 +11,7 @@ A relationship between the activity and its playlists.
 
 ## Declaration
 
-```swift
+```
 object Activities.Relationships.ActivitiesPlaylistsRelationship
 ```
 

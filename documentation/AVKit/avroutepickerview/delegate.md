@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the route picker.
 
@@ -18,9 +19,14 @@ The delegate object for the route picker.
 weak var delegate: (any AVRoutePickerViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<AVRoutePickerViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVRoutePickerViewDelegate](avroutepickerviewdelegate.md)
+### Configuring the delegate
+- [protocol AVRoutePickerViewDelegate](../avroutepickerviewdelegate.md)
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
 
 

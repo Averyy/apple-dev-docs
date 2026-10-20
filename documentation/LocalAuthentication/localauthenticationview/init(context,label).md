@@ -1,7 +1,8 @@
 # init(context:label:)
 
 **Framework**: Local Authentication  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a local authentication view with a label and required context.
 
@@ -22,9 +23,10 @@ Creates a local authentication view with a label and required context.
 
 ## See Also
 
-- [init<S>(S, context: LAContext)](localauthenticationview/init(_:context:)-9xeoo.md)
+### Authenticating with a context you supply
+- [init<S>(S, context: LAContext)](./init%28_,context%29-9xeoo.md)
   Creates a local authentication view with a required context.
-- [init(LocalizedStringKey, context: LAContext)](localauthenticationview/init(_:context:)-676qx.md)
+- [init(LocalizedStringKey, context: LAContext)](./init%28_,context%29-676qx.md)
   Creates a local authentication view with a localizable title and required context.
 
 

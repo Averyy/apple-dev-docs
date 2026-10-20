@@ -1,7 +1,8 @@
 # VZUSBMassStorageDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a hot-pluggable USB mass storage device.
 
@@ -14,34 +15,40 @@ A class that represents a hot-pluggable USB mass storage device.
 class VZUSBMassStorageDevice
 ```
 
+```objc
+@interface VZUSBMassStorageDevice : VZStorageDevice
+```
+
 #### Overview
 
-Create this device either by instantiating it directly and passing [`VZUSBMassStorageDeviceConfiguration`](vzusbmassstoragedeviceconfiguration.md) to its initializer, or instantiating a `VZUSBMassStorageDeviceConfiguration` in a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md). Direct instantiation creates an object that you can pass to [`attach(device:completionHandler:)`](vzusbcontroller/attach(device:completionhandler:).md). Instantiation through `VZUSBMassStorageDeviceConfiguration` makes the device available in the [`usbDevices`](vzusbcontroller/usbdevices.md) property.
+Create this device either by instantiating it directly and passing [`VZUSBMassStorageDeviceConfiguration`](./vzusbmassstoragedeviceconfiguration.md) to its initializer, or instantiating a `VZUSBMassStorageDeviceConfiguration` in a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md). Direct instantiation creates an object that you can pass to [`attach(device:completionHandler:)`](./vzusbcontroller/attach%28device,completionhandler%29.md). Instantiation through `VZUSBMassStorageDeviceConfiguration` makes the device available in the [`usbDevices`](./vzusbcontroller/usbdevices.md) property.
 
 ## Topics
 
 ### Creating a USB mass storage device
-- [init(configuration: VZUSBMassStorageDeviceConfiguration)](vzusbmassstoragedevice/init(configuration:).md)
+- [init(configuration: VZUSBMassStorageDeviceConfiguration)](./vzusbmassstoragedevice/init%28configuration%29.md)
   Creates a USB mass storage device with the provided configuration.
 
 ## Relationships
 
 ### Inherits From
-- [VZStorageDevice](vzstoragedevice.md)
+- [VZStorageDevice](./vzstoragedevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VZUSBDevice](vzusbdevice.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VZUSBDevice](./vzusbdevice.md)
 
 ## See Also
 
-- [class VZUSBController](vzusbcontroller.md)
+### Related Documentation
+- [class VZUSBController](./vzusbcontroller.md)
   A class that represents a USB controller in a VM.
-- [class VZUSBPassthroughDevice](vzusbpassthroughdevice.md)
+### Storage Devices
+- [class VZUSBPassthroughDevice](./vzusbpassthroughdevice.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that allows the framework to choose an appropriate callout style automatically.
 
@@ -20,11 +21,12 @@ static var automatic: MapItemDetailSelectionAccessoryStyle { get }
 
 ## See Also
 
-- [static var callout: MapItemDetailSelectionAccessoryStyle](mapitemdetailselectionaccessorystyle/callout.md)
+### Accessory styles
+- [static var callout: MapItemDetailSelectionAccessoryStyle](./callout.md)
   The accessory, shown as an annotation callout on the map.
-- [static var caption: MapItemDetailSelectionAccessoryStyle](mapitemdetailselectionaccessorystyle/caption.md)
+- [static var caption: MapItemDetailSelectionAccessoryStyle](./caption.md)
   An “Open in Apple Maps” link below the content’s label.
-- [static var sheet: MapItemDetailSelectionAccessoryStyle](mapitemdetailselectionaccessorystyle/sheet.md)
+- [static var sheet: MapItemDetailSelectionAccessoryStyle](./sheet.md)
   The map item detail sheet.
 
 

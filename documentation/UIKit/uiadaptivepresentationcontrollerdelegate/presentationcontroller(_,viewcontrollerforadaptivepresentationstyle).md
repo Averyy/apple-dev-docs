@@ -1,7 +1,8 @@
 # presentationController(_:viewControllerForAdaptivePresentationStyle:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the view controller to display when adapting to the specified presentation style.
 
@@ -9,13 +10,17 @@ Asks the delegate for the view controller to display when adapting to the specif
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func presentationController(_ controller: UIPresentationController, viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController?
+```
+
+```objc
+- (UIViewController *) presentationController:(UIPresentationController *) controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle) style;
 ```
 
 #### Return Value

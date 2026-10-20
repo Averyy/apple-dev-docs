@@ -1,7 +1,8 @@
 # init(bundleIdentifier:onInterruption:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Launches a web content process asynchronously.
 
@@ -18,7 +19,7 @@ init(bundleIdentifier: String? = nil, onInterruption: @escaping () -> Void) asyn
 
 #### Discussion
 
-Initializing a [`WebContentProcess`](webcontentprocess.md) object launches a new instance of a web content extension. Control returns from this method only after the process for the new web content extension launches.
+Initializing a [`WebContentProcess`](../webcontentprocess.md) object launches a new instance of a web content extension. Control returns from this method only after the process for the new web content extension launches.
 
 ## Parameters
 
@@ -27,7 +28,8 @@ Initializing a [`WebContentProcess`](webcontentprocess.md) object launches a new
 
 ## See Also
 
-- [func invalidate()](webcontentprocess/invalidate.md)
+### Creating and invalidating extension processes
+- [func invalidate()](./invalidate%28%29.md)
   Stops the web content process.
 
 

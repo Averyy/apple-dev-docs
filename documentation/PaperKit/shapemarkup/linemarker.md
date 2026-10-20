@@ -1,7 +1,8 @@
 # ShapeMarkup.LineMarker
 
 **Framework**: PaperKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A marker that can be attached to a line.
 
@@ -21,24 +22,25 @@ enum LineMarker
 ## Topics
 
 ### Enumeration Cases
-- [ShapeMarkup.LineMarker.arrow](shapemarkup/linemarker/arrow.md)
+- [ShapeMarkup.LineMarker.arrow](./linemarker/arrow.md)
   An arrow marker pointing in the direction of the line.
-- [ShapeMarkup.LineMarker.none](shapemarkup/linemarker/none.md)
+- [ShapeMarkup.LineMarker.none](./linemarker/none.md)
   No marker.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var startLineMarker: ShapeMarkup.LineMarker](shapemarkup/startlinemarker.md)
+### Configuring line markers
+- [var startLineMarker: ShapeMarkup.LineMarker](./startlinemarker.md)
   The line marker used at the start of an open shape path.
-- [var endLineMarker: ShapeMarkup.LineMarker](shapemarkup/endlinemarker.md)
+- [var endLineMarker: ShapeMarkup.LineMarker](./endlinemarker.md)
   The line marker used at the end of an open shape path.
 
 

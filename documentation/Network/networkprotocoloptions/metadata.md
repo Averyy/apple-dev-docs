@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:

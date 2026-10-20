@@ -1,7 +1,8 @@
 # allowReadOnly
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option that gives participants read-only permission to the shared data.
 
@@ -17,17 +18,22 @@ The option that gives participants read-only permission to the shared data.
 static var allowReadOnly: UICloudSharingController.PermissionOptions { get }
 ```
 
+```c
+UICloudSharingPermissionAllowReadOnly
+```
+
 #### Discussion
 
-To give the user the option to prevent other people from editing the shared data, include the [`allowReadOnly`](uicloudsharingcontroller/permissionoptions/allowreadonly.md) option when setting the [`availablePermissions`](uicloudsharingcontroller/availablepermissions.md) property on the [`UICloudSharingController`](uicloudsharingcontroller.md) instance.
+To give the user the option to prevent other people from editing the shared data, include the [`allowReadOnly`](./allowreadonly.md) option when setting the [`availablePermissions`](../availablepermissions.md) property on the [`UICloudSharingController`](../../uicloudsharingcontroller.md) instance.
 
 ## See Also
 
-- [static var allowPublic: UICloudSharingController.PermissionOptions](uicloudsharingcontroller/permissionoptions/allowpublic.md)
+### Constants
+- [static var allowPublic: UICloudSharingController.PermissionOptions](./allowpublic.md)
   The option that grants access to anyone who has the share link.
-- [static var allowPrivate: UICloudSharingController.PermissionOptions](uicloudsharingcontroller/permissionoptions/allowprivate.md)
+- [static var allowPrivate: UICloudSharingController.PermissionOptions](./allowprivate.md)
   The option that restricts access to people who have been invited.
-- [static var allowReadWrite: UICloudSharingController.PermissionOptions](uicloudsharingcontroller/permissionoptions/allowreadwrite.md)
+- [static var allowReadWrite: UICloudSharingController.PermissionOptions](./allowreadwrite.md)
   The option that gives participants read/write permission to the shared data.
 
 

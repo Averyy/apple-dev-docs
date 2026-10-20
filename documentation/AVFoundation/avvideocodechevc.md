@@ -1,16 +1,17 @@
 # AVVideoCodecHEVC
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to access the name of the HEVC codec used to encode the video.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
+- iOS 11.0+ - Deprecated in 11.0 (renamed: AVVideoCodecType.hevc)
+- iPadOS 11.0+ - Deprecated in 11.0 (renamed: AVVideoCodecType.hevc)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: AVVideoCodecType.hevc)
+- macOS 10.13+ - Deprecated in 10.13 (renamed: AVVideoCodecType.hevc)
+- tvOS 11.0+ - Deprecated in 11.0 (renamed: AVVideoCodecType.hevc)
 
 ## Declaration
 
@@ -18,15 +19,20 @@ A key to access the name of the HEVC codec used to encode the video.
 let AVVideoCodecHEVC: String
 ```
 
+```c
+extern NSString * const AVVideoCodecHEVC;
+```
+
 ## See Also
 
-- [let AVVideoCodecH264: String](avvideocodech264.md)
+### Deprecated
+- [let AVVideoCodecH264: String](./avvideocodech264.md)
   A key to access the name of the H.264 codec for compressing video.
-- [let AVVideoCodecJPEG: String](avvideocodecjpeg.md)
+- [let AVVideoCodecJPEG: String](./avvideocodecjpeg.md)
   A key to access the name of the JPEG codec for compressing video.
-- [let AVVideoCodecAppleProRes422: String](avvideocodecappleprores422.md)
+- [let AVVideoCodecAppleProRes422: String](./avvideocodecappleprores422.md)
   A key to access the name of the Apple ProRes422 codec used to encode the video.
-- [let AVVideoCodecAppleProRes4444: String](avvideocodecappleprores4444.md)
+- [let AVVideoCodecAppleProRes4444: String](./avvideocodecappleprores4444.md)
   A key to access the name of the Apple ProRes4444 codec used to encode the video.
 
 

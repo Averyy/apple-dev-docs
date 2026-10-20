@@ -1,13 +1,14 @@
 # data
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data buffer.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ A data buffer.
 var data: UnsafePointer<UInt8>!
 ```
 
+```c
+const uint8_t * data;
+```
+
 ## See Also
 
-- [var size: Int](es_token_t/size.md)
+### Inspecting the Token
+- [var size: Int](./size.md)
   The size of the data buffer, in bytes.
 
 

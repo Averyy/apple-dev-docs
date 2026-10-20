@@ -1,7 +1,8 @@
 # visualIntelligence
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the visual intelligence domain.
 
@@ -16,6 +17,8 @@ The collection of intent schemas in the visual intelligence domain.
 ```swift
 static var visualIntelligence: some AppSchema.VisualIntelligenceIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

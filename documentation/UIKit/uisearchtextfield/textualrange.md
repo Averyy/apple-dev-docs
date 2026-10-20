@@ -1,7 +1,8 @@
 # textualRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of the field’s text content.
 
@@ -17,13 +18,18 @@ The range of the field’s text content.
 var textualRange: UITextRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITextRange * textualRange;
+```
+
 #### Discussion
 
-Both tokens and text are included in the range from [`beginningOfDocument`](uitextinput/beginningofdocument.md) to [`endOfDocument`](uitextinput/endofdocument.md). This property provides convenient access to just the text.
+Both tokens and text are included in the range from [`beginningOfDocument`](../uitextinput/beginningofdocument.md) to [`endOfDocument`](../uitextinput/endofdocument.md). This property provides convenient access to just the text.
 
 ## See Also
 
-- [func replaceTextualPortion(of: UITextRange, with: UISearchToken, at: Int)](uisearchtextfield/replacetextualportion(of:with:at:).md)
+### Converting text into tokens
+- [func replaceTextualPortion(of: UITextRange, with: UISearchToken, at: Int)](./replacetextualportion%28of,with,at%29.md)
   Converts text in a search field into a search token.
 
 

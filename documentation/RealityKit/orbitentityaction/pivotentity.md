@@ -1,7 +1,8 @@
 # pivotEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that the target entity orbits around.
 

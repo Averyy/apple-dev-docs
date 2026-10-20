@@ -1,7 +1,8 @@
 # isContiguous
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,13 +21,14 @@ var isContiguous: Bool { get }
 
 ## See Also
 
-- [func copyDataBytes(to: UnsafeMutableRawBufferPointer) throws](cmblockbufferprotocol/copydatabytes(to:).md)
-- [func dataBytes() throws -> Data](cmblockbufferprotocol/databytes.md)
-- [func fillDataBytes(with: UInt8) throws](cmblockbufferprotocol/filldatabytes(with:).md)
-- [func replaceDataBytes(with: UnsafeRawBufferPointer) throws](cmblockbufferprotocol/replacedatabytes(with:).md)
-- [func makeContiguous(allocator: CMBlockBuffer.CustomBlockAllocator, deallocator: CMBlockBuffer.CustomBlockDeallocator, flags: CMBlockBuffer.Flags) throws -> CMBlockBuffer](cmblockbufferprotocol/makecontiguous(allocator:deallocator:flags:).md)
-- [func makeContiguous(allocator: CFAllocator?, flags: CMBlockBuffer.Flags) throws -> CMBlockBuffer](cmblockbufferprotocol/makecontiguous(allocator:flags:).md)
-- [func withContiguousStorage<R>((UnsafeRawBufferPointer) throws -> R) throws -> R](cmblockbufferprotocol/withcontiguousstorage(_:).md)
+### Modifying a Block Buffer
+- [func copyDataBytes(to: UnsafeMutableRawBufferPointer) throws](./copydatabytes%28to%29.md)
+- [func dataBytes() throws -> Data](./databytes%28%29.md)
+- [func fillDataBytes(with: UInt8) throws](./filldatabytes%28with%29.md)
+- [func replaceDataBytes(with: UnsafeRawBufferPointer) throws](./replacedatabytes%28with%29.md)
+- [func makeContiguous(allocator: CMBlockBuffer.CustomBlockAllocator, deallocator: CMBlockBuffer.CustomBlockDeallocator, flags: CMBlockBuffer.Flags) throws -> CMBlockBuffer](./makecontiguous%28allocator,deallocator,flags%29.md)
+- [func makeContiguous(allocator: CFAllocator?, flags: CMBlockBuffer.Flags) throws -> CMBlockBuffer](./makecontiguous%28allocator,flags%29.md)
+- [func withContiguousStorage<R>((UnsafeRawBufferPointer) throws -> R) throws -> R](./withcontiguousstorage%28_%29.md)
 
 
 ---

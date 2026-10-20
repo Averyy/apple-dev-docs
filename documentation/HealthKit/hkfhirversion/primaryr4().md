@@ -1,7 +1,8 @@
 # primaryR4()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the primary Release 4 (R4) version.
 
@@ -18,11 +19,16 @@ Returns the primary Release 4 (R4) version.
 class func primaryR4() -> Self
 ```
 
+```objc
++ (instancetype) primaryR4Version;
+```
+
 ## See Also
 
-- [convenience init(fromVersionString: String) throws](hkfhirversion/init(fromversionstring:).md)
+### Creating Version Objects
+- [convenience init(fromVersionString: String) throws](./init%28fromversionstring%29.md)
   Creates an FHIR version object from a string representation of the version.
-- [class func primaryDSTU2() -> Self](hkfhirversion/primarydstu2.md)
+- [class func primaryDSTU2() -> Self](./primarydstu2%28%29.md)
   Returns the primary Second Draft Standard for Trial Use (DSTU2) version.
 
 

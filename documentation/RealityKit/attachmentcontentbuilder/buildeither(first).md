@@ -1,7 +1,8 @@
 # buildEither(first:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides support for “if” statements in multi-statement closures, producing conditional content for the “then” branch.
 

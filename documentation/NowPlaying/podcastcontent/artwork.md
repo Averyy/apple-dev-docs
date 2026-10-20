@@ -1,7 +1,8 @@
 # artwork
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Artwork for this content.
 

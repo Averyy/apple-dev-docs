@@ -1,7 +1,8 @@
 # inline
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The inline mode.
 
@@ -26,11 +27,12 @@ In iOS, tvOS, and watchOS this mode displays the title with a smaller size in th
 
 ## See Also
 
-- [static var automatic: ToolbarTitleDisplayMode](toolbartitledisplaymode/automatic.md)
+### Getting display modes
+- [static var automatic: ToolbarTitleDisplayMode](./automatic.md)
   The automatic mode.
-- [static var inlineLarge: ToolbarTitleDisplayMode](toolbartitledisplaymode/inlinelarge.md)
+- [static var inlineLarge: ToolbarTitleDisplayMode](./inlinelarge.md)
   The inline large mode.
-- [static var large: ToolbarTitleDisplayMode](toolbartitledisplaymode/large.md)
+- [static var large: ToolbarTitleDisplayMode](./large.md)
   The large mode.
 
 

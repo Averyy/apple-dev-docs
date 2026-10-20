@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,8 +18,8 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kIOFBNotifyPriority_Max](2880395-anonymous/kiofbnotifypriority_max.md)
-- [kIOFBNotifyPriority_Min](2880395-anonymous/kiofbnotifypriority_min.md)
+- [kIOFBNotifyPriority_Max](./api-2880395-anonymous/kiofbnotifypriority_max.md)
+- [kIOFBNotifyPriority_Min](./api-2880395-anonymous/kiofbnotifypriority_min.md)
 
 
 ---

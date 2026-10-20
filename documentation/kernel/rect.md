@@ -1,14 +1,15 @@
 # Rect
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct Rect {
     ...
 } Rect;
@@ -17,13 +18,13 @@ typedef struct Rect {
 ## Topics
 
 ### Instance Properties
-- [bottom](rect/1401532-bottom.md)
+- [bottom](./rect/api-1401532-bottom.md)
   The vertical coordinate of the lower-right point of the rectangle.
-- [left](rect/1401403-left.md)
+- [left](./rect/api-1401403-left.md)
   The horizontal coordinate of the upper-left point of the rectangle.
-- [right](rect/1401437-right.md)
+- [right](./rect/api-1401437-right.md)
   The horizontal coordinate of the lower-right point of the rectangle.
-- [top](rect/1401419-top.md)
+- [top](./rect/api-1401419-top.md)
   The vertical coordinate of the upper-left point of the rectangle.
 
 

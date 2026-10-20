@@ -1,7 +1,8 @@
 # leftEdgePoints
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Inset points on the left edge of the rectangle.
 

@@ -1,7 +1,8 @@
 # smsMode
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the device’s SMS mode.
 
@@ -12,6 +13,10 @@ Return the device’s SMS mode.
 
 ```swift
 var smsMode: IOBluetoothSMSMode { get }
+```
+
+```objc
+@property (readonly) IOBluetoothSMSMode SMSMode;
 ```
 
 #### Return Value

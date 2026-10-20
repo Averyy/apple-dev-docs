@@ -1,7 +1,8 @@
 # maximumHeaderGridButtonCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of grid buttons that may appear in a @c CPListTemplate.
 
@@ -14,6 +15,10 @@ The maximum number of grid buttons that may appear in a @c CPListTemplate.
 
 ```swift
 class var maximumHeaderGridButtonCount: Int { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) NSUInteger maximumHeaderGridButtonCount;
 ```
 
 #### Discussion

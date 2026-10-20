@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The download’s execution priority.
 
@@ -19,10 +20,15 @@ The download’s execution priority.
 var priority: BADownload.Priority { get }
 ```
 
+```objc
+@property (readonly) BADownloaderPriority priority;
+```
+
 ## See Also
 
-- [var isEssential: Bool](badownload/isessential.md)
-- [BADownload.Priority](badownload/priority-swift.struct.md)
+### Determining the priority
+- [var isEssential: Bool](./isessential.md)
+- [BADownload.Priority](./priority-swift.struct.md)
   A type that determines the execution priority of a scheduled asset download.
 
 

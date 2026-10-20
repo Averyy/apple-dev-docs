@@ -1,14 +1,17 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s delegate or `nil` if it doesn’t have a delegate.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIAlertView`](../uialertview.md).
 
 ## Declaration
 
@@ -16,19 +19,24 @@ The receiver’s delegate or `nil` if it doesn’t have a delegate.
 weak var delegate: AnyObject? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id delegate;
+```
+
 #### Discussion
 
-See [`UIAlertViewDelegate`](uialertviewdelegate.md) for the methods this delegate should implement.
+See [`UIAlertViewDelegate`](../uialertviewdelegate.md) for the methods this delegate should implement.
 
 ## See Also
 
-- [var alertViewStyle: UIAlertViewStyle](uialertview/alertviewstyle.md)
+### Setting properties
+- [var alertViewStyle: UIAlertViewStyle](./alertviewstyle.md)
   The kind of alert displayed to the user.
-- [var title: String](uialertview/title.md)
+- [var title: String](./title.md)
   The string that appears in the receiver’s title bar.
-- [var message: String?](uialertview/message.md)
+- [var message: String?](./message.md)
   Descriptive text that provides more details than the title.
-- [var isVisible: Bool](uialertview/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the receiver is displayed.
 
 

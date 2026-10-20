@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -16,9 +17,10 @@ static let defaultResolverSpecification: EmptyResolverSpecification<SystemShortc
 
 ## See Also
 
-- [SystemShortcut.Specification](systemshortcut/specification.md)
-- [SystemShortcut.ValueType](systemshortcut/valuetype.md)
-- [SystemShortcut.UnwrappedType](systemshortcut/unwrappedtype.md)
+### Resolving the type
+- [SystemShortcut.Specification](./specification.md)
+- [SystemShortcut.ValueType](./valuetype.md)
+- [SystemShortcut.UnwrappedType](./unwrappedtype.md)
 
 
 ---

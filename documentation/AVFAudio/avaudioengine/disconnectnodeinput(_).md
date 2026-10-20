@@ -1,7 +1,8 @@
 # disconnectNodeInput(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all input connections of the node.
 
@@ -20,6 +21,10 @@ Removes all input connections of the node.
 func disconnectNodeInput(_ node: AVAudioNode)
 ```
 
+```objc
+- (void) disconnectNodeInput:(AVAudioNode *) node;
+```
+
 #### Discussion
 
 Connections break on each of the audio node’s input buses.
@@ -30,18 +35,19 @@ Connections break on each of the audio node’s input buses.
 
 ## See Also
 
-- [func connectNode(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:format:).md)
-- [func connectNode(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:frombus:tobus:format:).md)
-- [func connectNode(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:frombus:format:).md)
-- [func connect(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?)](avaudioengine/connect(_:to:format:).md)
+### Connecting and disconnecting audio nodes
+- [func connectNode(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?) throws](./connectnode%28_,to,format%29.md)
+- [func connectNode(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?) throws](./connectnode%28_,to,frombus,tobus,format%29.md)
+- [func connectNode(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?) throws](./connectnode%28_,to,frombus,format%29.md)
+- [func connect(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?)](./connect%28_,to,format%29.md)
   Establishes a connection between two nodes.
-- [func connect(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:tobus:format:).md)
+- [func connect(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?)](./connect%28_,to,frombus,tobus,format%29.md)
   Establishes a connection between two nodes, specifying the input and output busses.
-- [func disconnectNodeInput(AVAudioNode, bus: AVAudioNodeBus)](avaudioengine/disconnectnodeinput(_:bus:).md)
+- [func disconnectNodeInput(AVAudioNode, bus: AVAudioNodeBus)](./disconnectnodeinput%28_,bus%29.md)
   Removes the input connection of a node on the specified bus.
-- [func disconnectNodeOutput(AVAudioNode)](avaudioengine/disconnectnodeoutput(_:).md)
+- [func disconnectNodeOutput(AVAudioNode)](./disconnectnodeoutput%28_%29.md)
   Removes all output connections of a node.
-- [func disconnectNodeOutput(AVAudioNode, bus: AVAudioNodeBus)](avaudioengine/disconnectnodeoutput(_:bus:).md)
+- [func disconnectNodeOutput(AVAudioNode, bus: AVAudioNodeBus)](./disconnectnodeoutput%28_,bus%29.md)
   Removes the output connection of a node on the specified bus.
 
 

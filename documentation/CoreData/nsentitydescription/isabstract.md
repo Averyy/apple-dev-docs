@@ -1,7 +1,8 @@
 # isAbstract
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver represents an abstract entity.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the receiver represents an abstract entit
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ A Boolean value that indicates whether the receiver represents an abstract entit
 var isAbstract: Bool { get set }
 ```
 
+```objc
+@property (getter=isAbstract) BOOL abstract;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents an abstract entity, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver represents an abstract entity, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents an abstract entity, otherwise [`false`](https://developer.apple.com/documentation/swift/false). An abstract entity might be Shape, with concrete sub-entities such as Rectangle, Triangle, and Circle.
+[`true`](../../Swift/true.md) if the receiver represents an abstract entity, otherwise [`false`](../../Swift/false.md). An abstract entity might be Shape, with concrete sub-entities such as Rectangle, Triangle, and Circle.
 
 ##### Special Considerations
 
@@ -34,17 +39,18 @@ Setting whether an entity is abstract raises an exception if the receiver’s mo
 
 ## See Also
 
-- [var name: String?](nsentitydescription/name.md)
+### Getting descriptive information
+- [var name: String?](./name.md)
   The entity name of the receiver.
-- [var managedObjectModel: NSManagedObjectModel](nsentitydescription/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel](./managedobjectmodel.md)
   The managed object model with which the receiver is associated.
-- [var managedObjectClassName: String!](nsentitydescription/managedobjectclassname.md)
+- [var managedObjectClassName: String!](./managedobjectclassname.md)
   The name of the class that represents the receiver’s entity.
-- [var renamingIdentifier: String?](nsentitydescription/renamingidentifier.md)
+- [var renamingIdentifier: String?](./renamingidentifier.md)
   The renaming identifier for the receiver.
-- [var userInfo: [AnyHashable : Any]?](nsentitydescription/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info dictionary of the receiver.
-- [var coreSpotlightDisplayNameExpression: NSExpression](nsentitydescription/corespotlightdisplaynameexpression.md)
+- [var coreSpotlightDisplayNameExpression: NSExpression](./corespotlightdisplaynameexpression.md)
   The expression that computes the CoreSpotlight display name for instances of the entity.
 
 

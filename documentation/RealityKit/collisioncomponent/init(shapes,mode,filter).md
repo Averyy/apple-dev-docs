@@ -1,7 +1,8 @@
 # init(shapes:mode:filter:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collision component with the given collision shape, mode, and filter parameters.
 
@@ -11,7 +12,7 @@ Creates a collision component with the given collision shape, mode, and filter p
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

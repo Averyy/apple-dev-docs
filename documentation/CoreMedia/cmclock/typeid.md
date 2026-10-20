@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Core Foundation identifier that corresponds to the clock structure.
 
@@ -22,7 +23,8 @@ static var typeID: CFTypeID { get }
 
 ## See Also
 
-- [var time: CMTime](cmclock/time.md)
+### Inspecting a Clock
+- [var time: CMTime](./time.md)
   The current time.
 
 

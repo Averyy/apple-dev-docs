@@ -1,7 +1,8 @@
 # Event Status
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve the status of an asynchronous event.
 
@@ -10,10 +11,10 @@ Retrieve the status of an asynchronous event.
 
 ## Mentions
 
-- [Handling error responses](handling-error-responses.md)
-- [Managing assets](managing-assets.md)
-- [Managing users](managing-users.md)
-- [Subscribing to notifications](subscribing-to-notifications.md)
+- [Handling error responses](./handling-error-responses.md)
+- [Managing assets](./managing-assets.md)
+- [Managing users](./managing-users.md)
+- [Subscribing to notifications](./subscribing-to-notifications.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ Retrieve the status of an asynchronous event.
 
 **Request**:
 
-```None
+```
 ?eventId=1905643d-1afb-4c2d-ad74-1b268e92c880
 ```
 
@@ -41,9 +42,9 @@ Retrieve the status of an asynchronous event.
 ## Topics
 
 ### Response
-- [object StatusResponse](statusresponse.md)
+- [object StatusResponse](./statusresponse.md)
   The status of an asynchronous event.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 ## Endpoint
@@ -52,7 +53,16 @@ Retrieve the status of an asynchronous event.
 
 ## Parameters
 
+### Query Parameters
+
 - `eventId` (string): The unique identifier for the asynchronous event.
+
+## Responses
+
+- `200` OK (`StatusResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
 
 
 ---

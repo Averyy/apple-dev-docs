@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:scaleFactor:inputType:usePrecomputedFlow:qualityPrioritization:revision:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new super-resolution scaler processor configuration.
 
@@ -17,6 +18,10 @@ Creates a new super-resolution scaler processor configuration.
 init?(frameWidth: Int, frameHeight: Int, scaleFactor: Int, inputType: VTSuperResolutionScalerConfiguration.InputType, usePrecomputedFlow: Bool, qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritization, revision: VTSuperResolutionScalerConfiguration.Revision)
 ```
 
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight scaleFactor:(NSInteger) scaleFactor inputType:(VTSuperResolutionScalerConfigurationInputType) inputType usePrecomputedFlow:(BOOL) usePrecomputedFlow qualityPrioritization:(VTSuperResolutionScalerConfigurationQualityPrioritization) qualityPrioritization revision:(VTSuperResolutionScalerConfigurationRevision) revision;
+```
+
 #### Discussion
 
 This processor increases resolution of an image or video. Returns `nil` if dimensions are out of range or revision is unsupported.
@@ -28,7 +33,7 @@ This processor increases resolution of an image or video. Returns `nil` if dimen
 - `scaleFactor`: Indicates the scale factor between input and output.
 - `inputType`: Indicates the type of input, either video or image.
 - `usePrecomputedFlow`: Boolean value to indicate that you provide optical flow; if false, this configuration computes the optical flow on the fly.
-- `qualityPrioritization`: A level you use to prioritize quality or performance; for more information about supported levels, see [`VTSuperResolutionScalerConfiguration.QualityPrioritization`](vtsuperresolutionscalerconfiguration/qualityprioritization-swift.enum.md).
+- `qualityPrioritization`: A level you use to prioritize quality or performance; for more information about supported levels, see [`VTSuperResolutionScalerConfiguration.QualityPrioritization`](./qualityprioritization-swift.enum.md).
 - `revision`: The specific algorithm or configuration revision you use to perform the request.
 
 

@@ -1,7 +1,8 @@
 # preferredParticipantForExternalPlayback
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant that has priority to play on external playback interfaces.
 
@@ -15,6 +16,10 @@ The participant that has priority to play on external playback interfaces.
 
 ```swift
 weak var preferredParticipantForExternalPlayback: (any AVRoutingPlaybackParticipant)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<AVRoutingPlaybackParticipant> preferredParticipantForExternalPlayback;
 ```
 
 #### Discussion

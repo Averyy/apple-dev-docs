@@ -1,18 +1,19 @@
 # CTFontUIFontType.miniEmphasizedSystem
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The miniature system font for emphasis.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ The miniature system font for emphasis.
 case miniEmphasizedSystem
 ```
 
+```c
+kCTFontUIFontMiniEmphasizedSystem
+```
+
 ## See Also
 
-- [CTFontUIFontType.none](ctfontuifonttype/none.md)
+### Constants
+- [CTFontUIFontType.none](./none.md)
   The user-interface font type isn’t specified.
-- [CTFontUIFontType.user](ctfontuifonttype/user.md)
+- [CTFontUIFontType.user](./user.md)
   The default font for documents and other text whose font the user can typically change.
-- [CTFontUIFontType.userFixedPitch](ctfontuifonttype/userfixedpitch.md)
+- [CTFontUIFontType.userFixedPitch](./userfixedpitch.md)
   The default font for documents and other text under the user’s control when that font is fixed-pitch.
-- [CTFontUIFontType.system](ctfontuifonttype/system.md)
+- [CTFontUIFontType.system](./system.md)
   The system font for standard user-interface items, such as button labels and menu items.
-- [CTFontUIFontType.emphasizedSystem](ctfontuifonttype/emphasizedsystem.md)
+- [CTFontUIFontType.emphasizedSystem](./emphasizedsystem.md)
   The system font for emphasis in alerts.
-- [CTFontUIFontType.smallSystem](ctfontuifonttype/smallsystem.md)
+- [CTFontUIFontType.smallSystem](./smallsystem.md)
   The standard small system font for informative text in alerts, column headings in lists, help tags, and small controls.
-- [CTFontUIFontType.smallEmphasizedSystem](ctfontuifonttype/smallemphasizedsystem.md)
+- [CTFontUIFontType.smallEmphasizedSystem](./smallemphasizedsystem.md)
   The small system font for emphasis.
-- [CTFontUIFontType.miniSystem](ctfontuifonttype/minisystem.md)
+- [CTFontUIFontType.miniSystem](./minisystem.md)
   The standard miniature system font for mini controls and utility window labels and text.
-- [CTFontUIFontType.views](ctfontuifonttype/views.md)
+- [CTFontUIFontType.views](./views.md)
   The default view font for text in lists and tables.
-- [CTFontUIFontType.application](ctfontuifonttype/application.md)
+- [CTFontUIFontType.application](./application.md)
   The default font for text documents.
-- [CTFontUIFontType.label](ctfontuifonttype/label.md)
+- [CTFontUIFontType.label](./label.md)
   The font for labels and tick marks on full-size sliders.
-- [CTFontUIFontType.menuTitle](ctfontuifonttype/menutitle.md)
+- [CTFontUIFontType.menuTitle](./menutitle.md)
   The font for menu titles.
-- [CTFontUIFontType.menuItem](ctfontuifonttype/menuitem.md)
+- [CTFontUIFontType.menuItem](./menuitem.md)
   The font for menu items.
-- [CTFontUIFontType.menuItemMark](ctfontuifonttype/menuitemmark.md)
+- [CTFontUIFontType.menuItemMark](./menuitemmark.md)
   The font to draw menu-item marks.
-- [CTFontUIFontType.menuItemCmdKey](ctfontuifonttype/menuitemcmdkey.md)
+- [CTFontUIFontType.menuItemCmdKey](./menuitemcmdkey.md)
   The font for menu-item command-key equivalents.
 
 

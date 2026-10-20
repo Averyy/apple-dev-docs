@@ -1,7 +1,8 @@
 # TerritoryAvailabilityUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a territory availability update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a territory availability update request.
 
 ## Declaration
 
-```swift
+```
 object TerritoryAvailabilityUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object TerritoryAvailabilityUpdateRequest.Data.Attributes](territoryavailabilityupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object TerritoryAvailabilityUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a territory availability update request resource.
 
 ## Properties
 
 - `attributes` (TerritoryAvailabilityUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `territoryAvailabilities`
 
 
 ---

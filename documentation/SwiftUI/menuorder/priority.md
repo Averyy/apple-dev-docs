@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Keep the first items closest to user’s interaction point.
 
@@ -19,9 +20,10 @@ static let priority: MenuOrder
 
 ## See Also
 
-- [static let automatic: MenuOrder](menuorder/automatic.md)
+### Getting menu orders
+- [static let automatic: MenuOrder](./automatic.md)
   The ordering of the menu chosen by the system for the current context.
-- [static let fixed: MenuOrder](menuorder/fixed.md)
+- [static let fixed: MenuOrder](./fixed.md)
   Order items from top to bottom.
 
 

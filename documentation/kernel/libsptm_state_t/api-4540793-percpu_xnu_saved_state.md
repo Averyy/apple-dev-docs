@@ -1,14 +1,15 @@
 # percpu_xnu_saved_state
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 const void *percpu_xnu_saved_state;
 ```
 

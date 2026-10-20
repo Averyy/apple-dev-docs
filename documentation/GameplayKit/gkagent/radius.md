@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The agent’s radius.
 
@@ -19,6 +20,10 @@ The agent’s radius.
 var radius: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float radius;
+```
+
 #### Discussion
 
 Goals that involve an agent’s position relative to other agents make use of this property. For example, a goal created with the goalToAvoidAgents:timeBeforeCollisionToAvoid: method will attempt to move an agent such that its radius does not overlap with those of the other specified agents.
@@ -27,11 +32,12 @@ Goals that involve an agent’s position relative to other agents make use of th
 
 ## See Also
 
-- [var mass: Float](gkagent/mass.md)
+### Constraining an Agent’s Movement
+- [var mass: Float](./mass.md)
   The resistance of the agent to changes in speed or direction.
-- [var maxAcceleration: Float](gkagent/maxacceleration.md)
+- [var maxAcceleration: Float](./maxacceleration.md)
   The upper limit to changes in the agent’s speed or direction.
-- [var maxSpeed: Float](gkagent/maxspeed.md)
+- [var maxSpeed: Float](./maxspeed.md)
   The agent’s maximum forward speed, in units per second.
 
 

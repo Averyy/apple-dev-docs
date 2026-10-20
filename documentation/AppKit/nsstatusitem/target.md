@@ -1,7 +1,8 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives the status item’s action message when someone clicks the status item.
 
@@ -14,13 +15,18 @@ The object that receives the status item’s action message when someone clicks 
 weak var target: AnyObject? { get set }
 ```
 
+```objc
+@property (weak, nullable) id target;
+```
+
 #### Discussion
 
 If the status item has a menu set, clicking the status item doesn’t send the action to the target; instead, the click causes the menu to appear.
 
 ## See Also
 
-- [var action: Selector?](nsstatusitem/action.md)
+### Configuring target-action behavior
+- [var action: Selector?](./action.md)
   The selector the status item sends to its target when someone clicks the status item.
 
 

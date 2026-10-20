@@ -1,7 +1,8 @@
 # gridButtons
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of grid buttons displayed on the template.
 
@@ -14,6 +15,10 @@ The array of grid buttons displayed on the template.
 
 ```swift
 var gridButtons: [CPGridButton] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<CPGridButton *> * gridButtons;
 ```
 
 

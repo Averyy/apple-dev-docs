@@ -1,7 +1,8 @@
 # GameCenterChallengeImage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An image asset used to represent a Game Center challenge in the player interface.
 
@@ -10,14 +11,14 @@ An image asset used to represent a Game Center challenge in the player interface
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImage
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeImage.Attributes](gamecenterchallengeimage/attributes-data.dictionary.md)
+- [object GameCenterChallengeImage.Attributes](./gamecenterchallengeimage/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
 
 ## Properties
@@ -25,18 +26,19 @@ object GameCenterChallengeImage
 - `attributes` (GameCenterChallengeImage.Attributes)
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallengeImages`
 
 ## See Also
 
-- [object GameCenterChallengeImageCreateRequest](gamecenterchallengeimagecreaterequest.md)
+### Objects
+- [object GameCenterChallengeImageCreateRequest](./gamecenterchallengeimagecreaterequest.md)
   The request body for uploading an image asset for a Game Center challenge.
-- [object GameCenterChallengeImageResponse](gamecenterchallengeimageresponse.md)
+- [object GameCenterChallengeImageResponse](./gamecenterchallengeimageresponse.md)
   A response containing a single image asset for a Game Center challenge.
-- [object GameCenterChallengeImageUpdateRequest](gamecenterchallengeimageupdaterequest.md)
+- [object GameCenterChallengeImageUpdateRequest](./gamecenterchallengeimageupdaterequest.md)
   The request body you use to update a challenge.
-- [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
-- [object GameCenterChallengeVersionDefaultImageLinkageResponse](gamecenterchallengeversiondefaultimagelinkageresponse.md)
+- [object GameCenterChallengeLocalizationImageLinkageResponse](./gamecenterchallengelocalizationimagelinkageresponse.md)
+- [object GameCenterChallengeVersionDefaultImageLinkageResponse](./gamecenterchallengeversiondefaultimagelinkageresponse.md)
 
 
 ---

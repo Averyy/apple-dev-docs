@@ -1,6 +1,7 @@
 # Compositing images with alpha blending
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Combine two images by using alpha blending to create a single output.
 
@@ -10,13 +11,13 @@ vImage provides a suite of functions for compositing two source images into one 
 
 The figure below shows the alpha composite of an image of a building with a transparent background over an image of a texture. The transparent part of the building image has an alpha of zero, indicating the background layer is fully visible.
 
-![Three photographs. Two smaller photographs are stacked on the left and an arrow points to a larger photograph on the right. The photograph on the top left is of a skyscraper against a transparent background. The photograph on the bottom left is of a rusty metal texture. The larger photograph on the right shows the skyscraper composited over the texture.](/images/com.apple.accelerate/media-3696647@2x.png)
+![Three photographs. Two smaller photographs are stacked on the left and an arrow points to a larger photograph on the right. The photograph on the top left is of a skyscraper against a transparent background. The photograph on the bottom left is of a rusty metal texture. The larger photograph on the right shows the skyscraper composited over the texture.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3696647@2x.png)
 
-##### Perform an Alpha Composite
+##### Perform an alpha composite
 
-Use the [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) function to blend two images when the top image contains alpha information (for example, when compositing text over a photograph). The images that you pass to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) need to have the premultiplied alpha information in the first channel.
+Use the [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](./vimagepremultipliedalphablend_argb8888%28_,_,_,_%29.md) function to blend two images when the top image contains alpha information (for example, when compositing text over a photograph). The images that you pass to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](./vimagepremultipliedalphablend_argb8888%28_,_,_,_%29.md) need to have the premultiplied alpha information in the first channel.
 
-The following function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances and returns the result as a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance:
+The following function performs an alpha composite of two [`CGImage`](../CoreGraphics/cgimage.md) instances and returns the result as a [`CGImage`](../CoreGraphics/cgimage.md) instance:
 
 **Swift**:
 
@@ -142,7 +143,7 @@ CGImageRef alphaComposite(CGImageRef topImage, CGImageRef bottomImage) {
 }
 ```
 
-Because the blending function [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) requires that the alpha channel source buffers are first, the code calls `convertToARGB(_:alphaInfo:)` to ensure the correct ordering. The `convertToARGB(_:alphaInfo:)` function checks the channel ordering from the source image’s alpha information and permutes the channels if the ordering isn’t alpha-first.
+Because the blending function [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](./vimagepremultipliedalphablend_argb8888%28_,_,_,_%29.md) requires that the alpha channel source buffers are first, the code calls `convertToARGB(_:alphaInfo:)` to ensure the correct ordering. The `convertToARGB(_:alphaInfo:)` function checks the channel ordering from the source image’s alpha information and permutes the channels if the ordering isn’t alpha-first.
 
 **Swift**:
 
@@ -176,7 +177,7 @@ void convertToARGB(const vImage_Buffer *buffer, CGImageAlphaInfo alphaInfo) {
 }
 ```
 
-The `premultiply(_:alphaInfo:)` function uses a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance’s alpha information to determine whether an image contains premultiplied alpha. This function ensures that the top layer that the function passes to the composite operation contains premultiplied pixels.
+The `premultiply(_:alphaInfo:)` function uses a [`CGImage`](../CoreGraphics/cgimage.md) instance’s alpha information to determine whether an image contains premultiplied alpha. This function ensures that the top layer that the function passes to the composite operation contains premultiplied pixels.
 
 **Swift**:
 
@@ -206,7 +207,7 @@ void premultiply(const vImage_Buffer *buffer, CGImageAlphaInfo alphaInfo) {
 }
 ```
 
-##### Perform an Alpha Composite with a Single Alpha Value
+##### Perform an alpha composite with a single alpha value
 
 vImage provides functions to perform an alpha composite using a single alpha value. The functions apply the constant alpha value you supply combined with the top image’s existing alpha to the top layer’s color channels and alpha channels. For each pixel, the constant alpha functions perform the following operation:
 
@@ -215,7 +216,7 @@ destColor = (srcTopColor * constAlpha * 255  + (255*255 - srcTopAlpha * constAlp
 destAlpha =  (srcTopAlpha * constAlpha * 255 + (255*255 - srcTopAlpha * constAlpha) * srcBottomAlpha + 127*255 ) / (255*255);
 ```
 
-To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) in the code listing in [`Compositing images with alpha blending`](compositing-images-with-alpha-blending.md) with the following code:
+To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](./vimagepremultipliedalphablend_argb8888%28_,_,_,_%29.md) in the code listing in [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md) with the following code:
 
 **Swift**:
 
@@ -239,19 +240,19 @@ vImagePremultipliedConstAlphaBlend_ARGB8888(&topImageBuffer,
                                             kvImageNoFlags);
 ```
 
-The following image shows the result of compositing with [`vImagePremultipliedConstAlphaBlend_ARGB8888(_:_:_:_:_:)`](vimagepremultipliedconstalphablend_argb8888(_:_:_:_:_:).md) using a constant alpha with a value of `191`. The background of the building remains transparent, but the parts of the image that were originally opaque now show some of the lower layer.
+The following image shows the result of compositing with [`vImagePremultipliedConstAlphaBlend_ARGB8888(_:_:_:_:_:)`](./vimagepremultipliedconstalphablend_argb8888%28_,_,_,_,_%29.md) using a constant alpha with a value of `191`. The background of the building remains transparent, but the parts of the image that were originally opaque now show some of the lower layer.
 
-![A photograph of a skyscraper composited against a rusty metal texture. The metal texture is partially visible through the skyscraper image.](/images/com.apple.accelerate/media-3686488@2x.png)
+![A photograph of a skyscraper composited against a rusty metal texture. The metal texture is partially visible through the skyscraper image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3686488@2x.png)
 
-##### Perform an Alpha Composite with an Overwritten Alpha Channel
+##### Perform an alpha composite with an overwritten alpha channel
 
-Use the [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](vimageoverwritechannels_argb8888(_:_:_:_:_:).md) function to overwrite an image’s alpha channel. The following shows an example of setting a radial gradient as the alpha channel of an image to produce a vignette style blend:
+Use the [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](./vimageoverwritechannels_argb8888%28_,_,_,_,_%29.md) function to overwrite an image’s alpha channel. The following shows an example of setting a radial gradient as the alpha channel of an image to produce a vignette style blend:
 
-![Four photographs. One  photograph at the top left is of a skyscraper against a transparent background, two  photographs are stacked in the middle, and an arrow points to a photograph on the right. The top-middle photograph is a radial gradient with white at its center and black at the edges, and the bottom-middle photograph is a rusty metal texture. The photograph on the right is a composite with the skyscraper visible at the center, and the rusty metal texture visible at the edge.](/images/com.apple.accelerate/media-3702587@2x.png)
+![Four photographs. One  photograph at the top left is of a skyscraper against a transparent background, two  photographs are stacked in the middle, and an arrow points to a photograph on the right. The top-middle photograph is a radial gradient with white at its center and black at the edges, and the bottom-middle photograph is a rusty metal texture. The photograph on the right is a composite with the skyscraper visible at the center, and the rusty metal texture visible at the edge.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3702587@2x.png)
 
-The [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](vimageoverwritechannels_argb8888(_:_:_:_:_:).md) function requires buffers with nonpremultiplied alpha.
+The [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](./vimageoverwritechannels_argb8888%28_,_,_,_,_%29.md) function requires buffers with nonpremultiplied alpha.
 
-The `radialComposite(topImage:bottomImage:)` function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances with a procedural radial gradient.
+The `radialComposite(topImage:bottomImage:)` function performs an alpha composite of two [`CGImage`](../CoreGraphics/cgimage.md) instances with a procedural radial gradient.
 
 **Swift**:
 
@@ -488,23 +489,24 @@ func makeRadialGradient(_ destination: inout vImage_Buffer) {
 
 ## See Also
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+### Image Processing Essentials
+- [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
   Pass image data between Core Graphics and vImage to create and manipulate images.
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md)
   Initialize vImage buffers from Core Graphics images.
-- [Creating a Core Graphics Image from a vImage Buffer](creating-a-core-graphics-image-from-a-vimage-buffer.md)
+- [Creating a Core Graphics Image from a vImage Buffer](./creating-a-core-graphics-image-from-a-vimage-buffer.md)
   Create displayable representations of vImage buffers.
-- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md)
   Resize an image with vImage.
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
   Combine two images by using blend modes to create a single output.
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md)
   Limit the effect of vImage operations to rectangular regions of interest.
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
   Improve your app’s performance by converting image buffer formats from interleaved to planar.
-- [vImage](vimage-library.md)
+- [vImage](./vimage-library.md)
   Manipulate large images using the CPU’s vector processor.
 
 

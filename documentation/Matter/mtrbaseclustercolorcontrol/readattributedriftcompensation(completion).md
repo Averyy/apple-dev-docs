@@ -1,7 +1,8 @@
 # readAttributeDriftCompensation(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeDriftCompensation(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeDriftCompensation() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeDriftCompensationWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

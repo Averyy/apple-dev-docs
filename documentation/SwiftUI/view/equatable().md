@@ -1,7 +1,8 @@
 # equatable()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents the view from updating its child view when its new value is the same as its old value.
 
@@ -21,11 +22,14 @@ nonisolated
 func equatable() -> EquatableView<Self>
 ```
 
+Available when `Self` conforms to `Equatable`.
+
 ## See Also
 
-- [func id<ID>(ID) -> some View](view/id(_:).md)
+### Managing the view hierarchy
+- [func id<ID>(ID) -> some View](./id%28_%29.md)
   Binds a view’s identity to the given proxy value.
-- [func tag<V>(V, includeOptional: Bool) -> some View](view/tag(_:includeoptional:).md)
+- [func tag<V>(V, includeOptional: Bool) -> some View](./tag%28_,includeoptional%29.md)
   Sets the unique tag value of this view.
 
 

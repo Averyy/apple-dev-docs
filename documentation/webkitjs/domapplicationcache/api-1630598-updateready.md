@@ -11,7 +11,7 @@ Resources have finished downloading and the new cache is ready to be used.
 
 ## Declaration
 
-```swift
+```
 const unsigned short UPDATEREADY;
 ```
 

@@ -1,7 +1,8 @@
 # init(textMatch:similarityMatch:numericMatch:dates:people:contentType:attributes:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

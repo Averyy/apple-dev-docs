@@ -1,7 +1,8 @@
 # ActivityAuthorizationError
 
 **Framework**: ActivityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that indicates why the request to start a Live Activity failed.
 
@@ -18,73 +19,74 @@ enum ActivityAuthorizationError
 ## Topics
 
 ### Error codes
-- [ActivityAuthorizationError.attributesTooLarge](activityauthorizationerror/attributestoolarge.md)
+- [ActivityAuthorizationError.attributesTooLarge](./activityauthorizationerror/attributestoolarge.md)
   The provided Live Activity attributes exceeded the maximum size of 4KB.
-- [ActivityAuthorizationError.denied](activityauthorizationerror/denied.md)
+- [ActivityAuthorizationError.denied](./activityauthorizationerror/denied.md)
   A person deactivated Live Activities in Settings.
-- [ActivityAuthorizationError.globalMaximumExceeded](activityauthorizationerror/globalmaximumexceeded.md)
+- [ActivityAuthorizationError.globalMaximumExceeded](./activityauthorizationerror/globalmaximumexceeded.md)
   The device reached the maximum number of ongoing Live Activities.
-- [ActivityAuthorizationError.malformedActivityIdentifier](activityauthorizationerror/malformedactivityidentifier.md)
+- [ActivityAuthorizationError.malformedActivityIdentifier](./activityauthorizationerror/malformedactivityidentifier.md)
   The provided activity identifier is malformed.
-- [ActivityAuthorizationError.missingProcessIdentifier](activityauthorizationerror/missingprocessidentifier.md)
+- [ActivityAuthorizationError.missingProcessIdentifier](./activityauthorizationerror/missingprocessidentifier.md)
   The process that tried to start the Live Activity is missing a process identifier.
-- [ActivityAuthorizationError.persistenceFailure](activityauthorizationerror/persistencefailure.md)
+- [ActivityAuthorizationError.persistenceFailure](./activityauthorizationerror/persistencefailure.md)
   The system couldn’t persist the Live Activity.
-- [ActivityAuthorizationError.reconnectNotPermitted](activityauthorizationerror/reconnectnotpermitted.md)
+- [ActivityAuthorizationError.reconnectNotPermitted](./activityauthorizationerror/reconnectnotpermitted.md)
   The process that tried to recreate the Live Activity is not the process that originally created the Live Activity.
-- [ActivityAuthorizationError.targetMaximumExceeded](activityauthorizationerror/targetmaximumexceeded.md)
+- [ActivityAuthorizationError.targetMaximumExceeded](./activityauthorizationerror/targetmaximumexceeded.md)
   The app has already started the maximum number of concurrent Live Activities.
-- [ActivityAuthorizationError.unentitled](activityauthorizationerror/unentitled.md)
+- [ActivityAuthorizationError.unentitled](./activityauthorizationerror/unentitled.md)
   The app doesn’t have the required entitlement to start a Live Activity.
-- [ActivityAuthorizationError.unsupported](activityauthorizationerror/unsupported.md)
+- [ActivityAuthorizationError.unsupported](./activityauthorizationerror/unsupported.md)
   The device doesn’t support Live Activities.
-- [ActivityAuthorizationError.unsupportedTarget](activityauthorizationerror/unsupportedtarget.md)
+- [ActivityAuthorizationError.unsupportedTarget](./activityauthorizationerror/unsupportedtarget.md)
   The app doesn’t have the required entitlement to start a Live Activities.
-- [ActivityAuthorizationError.visibility](activityauthorizationerror/visibility.md)
+- [ActivityAuthorizationError.visibility](./activityauthorizationerror/visibility.md)
   The app tried to start the Live Activity while it was in the background.
 ### Getting error information
-- [var failureReason: String?](activityauthorizationerror/failurereason.md)
+- [var failureReason: String?](./activityauthorizationerror/failurereason.md)
   A string that describes the error that occurred.
-- [var recoverySuggestion: String?](activityauthorizationerror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./activityauthorizationerror/recoverysuggestion.md)
   A localized message that describes how to recover from the error.
 ### Protocol confirmation
-- [var errorCode: Int](activityauthorizationerror/errorcode.md)
+- [var errorCode: Int](./activityauthorizationerror/errorcode.md)
   An integer value that represents the error code.
-- [static var errorDomain: String](activityauthorizationerror/errordomain.md)
+- [static var errorDomain: String](./activityauthorizationerror/errordomain.md)
   The domain for errors that can happen when starting a Live Activity.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:).md)
+### Starting a Live Activity
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype%29.md)
   Requests and starts a standard Live Activity.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype,style%29.md)
   Requests and starts a Live Activity.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:start:).md)
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype,style,alertconfiguration,start%29.md)
   Requests and schedules a Live Activity for a specific date.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).md)
-- [let attributes: Attributes](activity/attributes.md)
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype,style,alertconfiguration,startdate%29.md)
+- [let attributes: Attributes](./activity/attributes.md)
   A set of attributes that describe a Live Activity and its content.
-- [protocol ActivityAttributes](activityattributes.md)
+- [protocol ActivityAttributes](./activityattributes.md)
   The protocol you implement to describe the content of a Live Activity.
-- [enum ActivityStyle](activitystyle.md)
-- [var content: ActivityContent<Activity<Attributes>.ContentState>](activity/content.md)
+- [enum ActivityStyle](./activitystyle.md)
+- [var content: ActivityContent<Activity<Attributes>.ContentState>](./activity/content.md)
   The dynamic content of a Live Activity.
-- [struct ActivityContent](activitycontent.md)
+- [struct ActivityContent](./activitycontent.md)
   A structure that describes the state and configuration of a Live Activity.
-- [typealias ContentState](activity/contentstate-swift.typealias.md)
+- [typealias ContentState](./activity/contentstate-swift.typealias.md)
   The type alias for the structure that describes the dynamic content of a Live Activity.
-- [struct PushType](pushtype.md)
+- [struct PushType](./pushtype.md)
   The structure that offers constants you use to configure a Live Activity to receive updates through ActivityKit push notifications.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new background activity session.
 

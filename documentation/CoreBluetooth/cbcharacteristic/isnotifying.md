@@ -1,7 +1,8 @@
 # isNotifying
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the characteristic is currently notifying a subscribed central of its value.
 
@@ -20,29 +21,34 @@ A Boolean value that indicates whether the characteristic is currently notifying
 var isNotifying: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isNotifying;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if you enabled notifications or indications for the characteristic by successfully calling the [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md) method of the [`CBPeripheral`](cbperipheral.md) class. In this case, the peripheral updates its connected central that whenever the characteristic’s value changes.
+This value is [`true`](../../Swift/true.md) if you enabled notifications or indications for the characteristic by successfully calling the [`setNotifyValue(_:for:)`](../cbperipheral/setnotifyvalue%28_,for%29.md) method of the [`CBPeripheral`](../cbperipheral.md) class. In this case, the peripheral updates its connected central that whenever the characteristic’s value changes.
 
-If the value of the property is [`false`](https://developer.apple.com/documentation/swift/false), notifications (or indications) aren’t enabled for the characteristic, and the peripheral doesn’t update its connected central when the characteristic’s value changes.
+If the value of the property is [`false`](../../Swift/false.md), notifications (or indications) aren’t enabled for the characteristic, and the peripheral doesn’t update its connected central when the characteristic’s value changes.
 
 ## Topics
 
 ### Related Documentation
-- [func setNotifyValue(Bool, for: CBCharacteristic)](cbperipheral/setnotifyvalue(_:for:).md)
+- [func setNotifyValue(Bool, for: CBCharacteristic)](../cbperipheral/setnotifyvalue%28_,for%29.md)
   Sets notifications or indications for the value of a specified characteristic.
 
 ## See Also
 
-- [var value: Data?](cbcharacteristic/value.md)
+### Accessing Characteristic Data
+- [var value: Data?](./value.md)
   The value of the characteristic.
-- [var descriptors: [CBDescriptor]?](cbcharacteristic/descriptors.md)
+- [var descriptors: [CBDescriptor]?](./descriptors.md)
   A list of the descriptors discovered in this characteristic.
-- [var properties: CBCharacteristicProperties](cbcharacteristic/properties.md)
+- [var properties: CBCharacteristicProperties](./properties.md)
   The properties of the characteristic.
-- [struct CBCharacteristicProperties](cbcharacteristicproperties.md)
+- [struct CBCharacteristicProperties](../cbcharacteristicproperties.md)
   Values that represent the possible properties of a characteristic.
-- [var isBroadcasted: Bool](cbcharacteristic/isbroadcasted.md)
+- [var isBroadcasted: Bool](./isbroadcasted.md)
   A Boolean value that indicates whether the characteristic the service broadcasts this characteristic.
 
 

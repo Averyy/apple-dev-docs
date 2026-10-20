@@ -1,7 +1,8 @@
 # send(_:endOfStream:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send fixed width integer on a connection. This may be called before the connection is ready, in which case the send will be enqueued until the connection is ready to send.
 
@@ -19,6 +20,8 @@ Send fixed width integer on a connection. This may be called before the connecti
 ```swift
 func send<Value>(_ value: Value, endOfStream: Bool = false, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws where Value : NetworkFixedWidthInteger
 ```
+
+Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
 ## Parameters
 

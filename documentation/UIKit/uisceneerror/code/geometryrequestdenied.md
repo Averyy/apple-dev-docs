@@ -1,7 +1,8 @@
 # UISceneError.Code.geometryRequestDenied
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the geometry request is valid but the system denied the request.
 
@@ -18,13 +19,18 @@ An error that indicates the geometry request is valid but the system denied the 
 case geometryRequestDenied
 ```
 
+```c
+UISceneErrorCodeGeometryRequestDenied
+```
+
 ## See Also
 
-- [UISceneError.Code.multipleScenesNotSupported](uisceneerror/code/multiplescenesnotsupported.md)
+### Error codes
+- [UISceneError.Code.multipleScenesNotSupported](./multiplescenesnotsupported.md)
   An error that indicates multiple scenes aren’t supported.
-- [UISceneError.Code.requestDenied](uisceneerror/code/requestdenied.md)
+- [UISceneError.Code.requestDenied](./requestdenied.md)
   An error that indicates the request was denied.
-- [UISceneError.Code.geometryRequestUnsupported](uisceneerror/code/geometryrequestunsupported.md)
+- [UISceneError.Code.geometryRequestUnsupported](./geometryrequestunsupported.md)
   An error that indicates the geometry request is invalid or unsupported.
 
 

@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.presentmentIntentAssertionTimeout
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The presentment intent assertion timed out.
 

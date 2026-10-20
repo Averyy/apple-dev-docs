@@ -1,7 +1,8 @@
 # add(_:queue:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Delegate to the device controller as well as the Queue on which the Delegate callbacks will be triggered
 
@@ -18,6 +19,10 @@ Adds a Delegate to the device controller as well as the Queue on which the Deleg
 
 ```swift
 func add(_ delegate: any MTRDeviceControllerDelegate, queue: dispatch_queue_t)
+```
+
+```objc
+- (void) addDeviceControllerDelegate:(id<MTRDeviceControllerDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
 #### Discussion

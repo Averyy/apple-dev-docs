@@ -1,7 +1,8 @@
 # SofaType.rectangular
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sofa shape that resembles a rectangle.
 
@@ -18,13 +19,14 @@ case rectangular
 
 ## See Also
 
-- [SofaType.singleSeat](sofatype/singleseat.md)
+### Choosing a sofa type
+- [SofaType.singleSeat](./singleseat.md)
   A sofa that resembles a loveseat.
-- [SofaType.lShaped](sofatype/lshaped.md)
+- [SofaType.lShaped](./lshaped.md)
   A sofa shape that resembles the letter L.
-- [SofaType.lShapedExtension](sofatype/lshapedextension.md)
+- [SofaType.lShapedExtension](./lshapedextension.md)
   The short side of the L-shape sofa.
-- [SofaType.unidentified](sofatype/unidentified.md)
+- [SofaType.unidentified](./unidentified.md)
   An uncategorized sofa shape.
 
 

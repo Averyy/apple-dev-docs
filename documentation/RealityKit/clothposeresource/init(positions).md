@@ -1,7 +1,8 @@
 # init(positions:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cloth pose resource with the given vertex positions.
 
@@ -19,7 +20,7 @@ convenience init(positions: [SIMD3<Float>]) throws
 
 ## Parameters
 
-- `positions`: The positions to assign to the vertices of a matching [`ClothMeshResource`](clothmeshresource.md).
+- `positions`: The positions to assign to the vertices of a matching [`ClothMeshResource`](../clothmeshresource.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # generateMipmaps
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key used to specify whether the texture loader should generate mipmaps for the texture.
 
@@ -19,19 +20,24 @@ A key used to specify whether the texture loader should generate mipmaps for the
 static let generateMipmaps: MTKTextureLoader.Option
 ```
 
+```c
+extern MTKTextureLoaderOption const MTKTextureLoaderOptionGenerateMipmaps;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a boolean value.
+The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a boolean value.
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the resulting texture will be created with mipmaps. If the file being loaded contains data for mipmaps (such as in a PVR or KTX file), specifying this option will overwrite the existing mipmap data in the loaded texture.
+If the value is [`true`](../../../Swift/true.md), the resulting texture will be created with mipmaps. If the file being loaded contains data for mipmaps (such as in a PVR or KTX file), specifying this option will overwrite the existing mipmap data in the loaded texture.
 
-This option can be used only if the pixel format of the texture is filterable and color-renderable; see the [`Pixel Format Capabilities`](https://developer.apple.comhttps://developer.apple.com/metal/capabilities/) for more information.
+This option can be used only if the pixel format of the texture is filterable and color-renderable; see the [Pixel Format Capabilities](https://developer.apple.com/metal/capabilities/) for more information.
 
-This option also implies that [`allocateMipmaps`](mtktextureloader/option/allocatemipmaps.md) is [`true`](https://developer.apple.com/documentation/swift/true). Specifying this option causes the [`MTKTextureLoader`](mtktextureloader.md) object to submit work to the GPU on your behalf.
+This option also implies that [`allocateMipmaps`](./allocatemipmaps.md) is [`true`](../../../Swift/true.md). Specifying this option causes the [`MTKTextureLoader`](../../mtktextureloader.md) object to submit work to the GPU on your behalf.
 
 ## See Also
 
-- [static let allocateMipmaps: MTKTextureLoader.Option](mtktextureloader/option/allocatemipmaps.md)
+### Specifying Mipmap Options
+- [static let allocateMipmaps: MTKTextureLoader.Option](./allocatemipmaps.md)
   A key used to specify whether the texture loader should allocate memory for mipmaps in the texture.
 
 

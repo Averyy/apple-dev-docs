@@ -1,7 +1,8 @@
 # converted(to:intent:options:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new color in a different color space that matches the provided color.
 
@@ -18,6 +19,10 @@ Creates a new color in a different color space that matches the provided color.
 
 ```swift
 func converted(to _: CGColorSpace, intent: CGColorRenderingIntent, options: CFDictionary?) -> CGColor?
+```
+
+```c
+extern CGColorRefCGColorCreateCopyByMatchingToColorSpace(CGColorSpaceRef , CGColorRenderingIntent intent, CGColorRef color, CFDictionaryRef options);
 ```
 
 ##### Parameters
@@ -38,7 +43,8 @@ To create the new color, this method creates a `CFColorConverterRef` using the o
 
 ## See Also
 
-- [class let conversionTRCSize: CFString](cgcolor/conversiontrcsize.md)
+### Converting Between Color Spaces
+- [class let conversionTRCSize: CFString](./conversiontrcsize.md)
 
 
 ---

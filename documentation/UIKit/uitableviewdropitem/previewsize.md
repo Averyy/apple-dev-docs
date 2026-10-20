@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size of the drag item’s preview.
@@ -18,13 +19,18 @@ The size of the drag item’s preview.
 var previewSize: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize previewSize;
+```
+
 #### Discussion
 
 You might use this property when configuring animations. If the item doesn’t have an associated preview, this property is set to `CGSizeZero`.
 
 ## See Also
 
-- [var sourceIndexPath: IndexPath?](uitableviewdropitem/sourceindexpath.md)
+### Getting the item information
+- [var sourceIndexPath: IndexPath?](./sourceindexpath.md)
   The index path of the item in the table view, if any.
 
 

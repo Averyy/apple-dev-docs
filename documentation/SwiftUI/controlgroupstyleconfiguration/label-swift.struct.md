@@ -1,9 +1,10 @@
 # ControlGroupStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A type-erased label of a [`ControlGroup`](controlgroup.md).
+A type-erased label of a [`ControlGroup`](../controlgroup.md).
 
 **Availability**:
 - iOS 16.0+
@@ -23,12 +24,13 @@ A type-erased label of a [`ControlGroup`](controlgroup.md).
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: ControlGroupStyleConfiguration.Label](controlgroupstyleconfiguration/label-swift.property.md)
-  A view that provides the optional label of the [`ControlGroup`](controlgroup.md).
+### Configuring the label
+- [let label: ControlGroupStyleConfiguration.Label](./label-swift.property.md)
+  A view that provides the optional label of the [`ControlGroup`](../controlgroup.md).
 
 
 ---

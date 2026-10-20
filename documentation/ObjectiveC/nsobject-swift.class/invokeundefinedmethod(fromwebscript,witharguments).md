@@ -1,7 +1,8 @@
 # invokeUndefinedMethod(fromWebScript:withArguments:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles undefined method invocation from the scripting environment.
 
@@ -12,6 +13,10 @@ Handles undefined method invocation from the scripting environment.
 
 ```swift
 func invokeUndefinedMethod(fromWebScript name: String!, withArguments arguments: [Any]!) -> Any!
+```
+
+```objc
+- (id) invokeUndefinedMethodFromWebScript:(NSString *) name withArguments:(NSArray *) arguments;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ This method is invoked when a script attempts to invoke a method not directly ex
 
 ## See Also
 
-- [func invokeDefaultMethod(withArguments: [Any]!) -> Any!](nsobject-swift.class/invokedefaultmethod(witharguments:).md)
+### Invoking methods
+- [func invokeDefaultMethod(withArguments: [Any]!) -> Any!](./invokedefaultmethod%28witharguments%29.md)
   Executes when a script attempts to invoke a method on an exposed object directly.
 
 

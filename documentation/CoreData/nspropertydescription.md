@@ -1,7 +1,8 @@
 # NSPropertyDescription
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a single property belonging to an entity.
 
@@ -10,7 +11,7 @@ A description of a single property belonging to an entity.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ A description of a single property belonging to an entity.
 class NSPropertyDescription
 ```
 
+```objc
+@interface NSPropertyDescription : NSObject
+```
+
 #### Overview
 
-A property describes a single value within an object managed by the Core Data Framework. There are different types of property, each represented by a subclass which encapsulates the specific property behavior—see [`NSAttributeDescription`](nsattributedescription.md), [`NSRelationshipDescription`](nsrelationshipdescription.md), and [`NSFetchedPropertyDescription`](nsfetchedpropertydescription.md).
+A property describes a single value within an object managed by the Core Data Framework. There are different types of property, each represented by a subclass which encapsulates the specific property behavior—see [`NSAttributeDescription`](./nsattributedescription.md), [`NSRelationshipDescription`](./nsrelationshipdescription.md), and [`NSFetchedPropertyDescription`](./nsfetchedpropertydescription.md).
 
 Note that a property name cannot be the same as any no-parameter method name of `NSObject` or `NSManagedObject`. For example, you cannot give a property the name “description”. There are hundreds of methods on `NSObject` which may conflict with property names—and this list can grow without warning from frameworks or other libraries. You should avoid very general words (like “font”, and “color”) and words or phrases which overlap with Cocoa paradigms (such as “isEditing” and “objectSpecifier”).
 
@@ -35,66 +40,67 @@ Property descriptions are editable until they are used by an object graph manage
 ## Topics
 
 ### Accessing Features of a Property
-- [var entity: NSEntityDescription](nspropertydescription/entity.md)
+- [var entity: NSEntityDescription](./nspropertydescription/entity.md)
   The entity description of the receiver.
-- [var isIndexed: Bool](nspropertydescription/isindexed.md)
+- [var isIndexed: Bool](./nspropertydescription/isindexed.md)
   A Boolean value that indicates whether the receiver should be indexed for searching.
-- [var isOptional: Bool](nspropertydescription/isoptional.md)
+- [var isOptional: Bool](./nspropertydescription/isoptional.md)
   A Boolean value that indicates whether the receiver is optional.
-- [var isTransient: Bool](nspropertydescription/istransient.md)
+- [var isTransient: Bool](./nspropertydescription/istransient.md)
   A Boolean value that indicates whether the receiver is transient.
-- [var name: String](nspropertydescription/name.md)
+- [var name: String](./nspropertydescription/name.md)
   The name of the receiver.
-- [var userInfo: [AnyHashable : Any]?](nspropertydescription/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./nspropertydescription/userinfo.md)
   The user info dictionary of the receiver.
 ### Supporting Validation
-- [var validationPredicates: [NSPredicate]](nspropertydescription/validationpredicates.md)
+- [var validationPredicates: [NSPredicate]](./nspropertydescription/validationpredicates.md)
   The validation predicates of the receiver.
-- [var validationWarnings: [Any]](nspropertydescription/validationwarnings.md)
+- [var validationWarnings: [Any]](./nspropertydescription/validationwarnings.md)
   The error strings associated with the receiver’s validation predicates.
-- [func setValidationPredicates([NSPredicate]?, withValidationWarnings: [String]?)](nspropertydescription/setvalidationpredicates(_:withvalidationwarnings:).md)
+- [func setValidationPredicates([NSPredicate]?, withValidationWarnings: [String]?)](./nspropertydescription/setvalidationpredicates%28_,withvalidationwarnings%29.md)
   Sets the validation predicates and warnings of the receiver.
 ### Supporting Versioning
-- [var versionHash: Data](nspropertydescription/versionhash.md)
+- [var versionHash: Data](./nspropertydescription/versionhash.md)
   The version hash for the receiver.
-- [var versionHashModifier: String?](nspropertydescription/versionhashmodifier.md)
+- [var versionHashModifier: String?](./nspropertydescription/versionhashmodifier.md)
   The version hash modifier for the receiver.
-- [var renamingIdentifier: String?](nspropertydescription/renamingidentifier.md)
+- [var renamingIdentifier: String?](./nspropertydescription/renamingidentifier.md)
   The renaming identifier for the receiver.
 ### Specifying Spotlight Support
-- [var isIndexedBySpotlight: Bool](nspropertydescription/isindexedbyspotlight.md)
+- [var isIndexedBySpotlight: Bool](./nspropertydescription/isindexedbyspotlight.md)
   A Boolean value that indicates whether Core Data adds the property’s value to the Core Spotlight index.
-- [var isStoredInExternalRecord: Bool](nspropertydescription/isstoredinexternalrecord.md)
+- [var isStoredInExternalRecord: Bool](./nspropertydescription/isstoredinexternalrecord.md)
   A Boolean value that indicates whether to write the property’s data in an external record file that corresponds to the managed object.
 ### Initializers
-- [init?(coder: NSCoder)](nspropertydescription/init(coder:).md)
+- [init?(coder: NSCoder)](./nspropertydescription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSAttributeDescription](nsattributedescription.md)
-- [NSExpressionDescription](nsexpressiondescription.md)
-- [NSFetchedPropertyDescription](nsfetchedpropertydescription.md)
-- [NSRelationshipDescription](nsrelationshipdescription.md)
+- [NSAttributeDescription](./nsattributedescription.md)
+- [NSExpressionDescription](./nsexpressiondescription.md)
+- [NSFetchedPropertyDescription](./nsfetchedpropertydescription.md)
+- [NSRelationshipDescription](./nsrelationshipdescription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSAttributeDescription](nsattributedescription.md)
+### Standard attributes
+- [class NSAttributeDescription](./nsattributedescription.md)
   A description of a single attribute belonging to an entity.
-- [enum NSAttributeType](nsattributetype.md)
+- [enum NSAttributeType](./nsattributetype.md)
   The types of attribute that Core Data supports.
-- [class NSRelationshipDescription](nsrelationshipdescription.md)
+- [class NSRelationshipDescription](./nsrelationshipdescription.md)
   A description of a relationship between two entities.
 
 

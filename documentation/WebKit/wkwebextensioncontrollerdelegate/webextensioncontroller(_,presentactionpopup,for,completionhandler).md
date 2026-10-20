@@ -1,7 +1,8 @@
 # webExtensionController(_:presentActionPopup:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a popup is requested to be displayed for a specific action.
 
@@ -15,14 +16,22 @@ Called when a popup is requested to be displayed for a specific action.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, presentActionPopup action: WKWebExtension.Action, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, presentActionPopup action: WKWebExtension.Action, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller presentPopupForAction:(WKWebExtensionAction *) action forExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-This method is called in response to the extension’s scripts or when invoking [`performAction(for:)`](wkwebextensioncontext/performaction(for:).md) if the action has a popup.
+This method is called in response to the extension’s scripts or when invoking [`performAction(for:)`](../wkwebextensioncontext/performaction%28for%29.md) if the action has a popup.
 
-The associated tab, if applicable, can be located through the [`associatedTab`](wkwebextension/action/associatedtab.md) property of the `action` parameter. This delegate method is called when the web view for the popup is fully loaded and ready to display. Implementing this method is needed if the app intends to support programmatically showing the popup by the extension, although it is recommended for handling both programmatic and user-initiated cases.
+The associated tab, if applicable, can be located through the [`associatedTab`](../wkwebextension/action/associatedtab.md) property of the `action` parameter. This delegate method is called when the web view for the popup is fully loaded and ready to display. Implementing this method is needed if the app intends to support programmatically showing the popup by the extension, although it is recommended for handling both programmatic and user-initiated cases.
 
 ## Parameters
 

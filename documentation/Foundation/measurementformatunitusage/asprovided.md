@@ -1,7 +1,8 @@
 # asProvided
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A usage of the formatted measurement that reflects the units that you used to create the measurement.
 
@@ -22,7 +23,8 @@ static var asProvided: MeasurementFormatUnitUsage<UnitType> { get }
 
 ## See Also
 
-- [static var general: MeasurementFormatUnitUsage<UnitType>](measurementformatunitusage/general.md)
+### Selecting a General Format for a Measurement Unit
+- [static var general: MeasurementFormatUnitUsage<UnitType>](./general.md)
   A general usage of the formatted measurement.
 
 

@@ -1,23 +1,30 @@
 # default()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default payment queue instance.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 3.0+ - Deprecated in 18.0
+- iPadOS 3.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 class func `default`() -> Self
+```
+
+```objc
++ (instancetype) defaultQueue;
 ```
 
 #### Return Value

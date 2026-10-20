@@ -1,7 +1,8 @@
 # init(forSupplementaryViewOfKind:with:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a layout attributes object for a supplementary view based on the specified information.
 
@@ -14,13 +15,17 @@ Creates and returns a layout attributes object for a supplementary view based on
 convenience init(forSupplementaryViewOfKind elementKind: NSCollectionView.SupplementaryElementKind, with indexPath: IndexPath)
 ```
 
+```objc
++ (instancetype) layoutAttributesForSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) elementKind withIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
 A new layout attributes object configured with the initial attributes for the supplementary view.
 
 #### Discussion
 
-Call this method when you need to create a layout attributes object for a supplementary view in a collection view. Supplementary views are a secondary type of content that display data related to a specific section. For example, header and footer views in a grid layout implemented using supplementary views. This method uses the parameters to set the initial values of the [`indexPath`](nscollectionviewlayoutattributes/indexpath.md) and [`representedElementKind`](nscollectionviewlayoutattributes/representedelementkind.md) properties the returned object.
+Call this method when you need to create a layout attributes object for a supplementary view in a collection view. Supplementary views are a secondary type of content that display data related to a specific section. For example, header and footer views in a grid layout implemented using supplementary views. This method uses the parameters to set the initial values of the [`indexPath`](./indexpath.md) and [`representedElementKind`](./representedelementkind.md) properties the returned object.
 
 ## Parameters
 
@@ -29,13 +34,14 @@ Call this method when you need to create a layout attributes object for a supple
 
 ## See Also
 
-- [convenience init(forItemWith: IndexPath)](nscollectionviewlayoutattributes/init(foritemwith:).md)
+### Creating Layout Attributes
+- [convenience init(forItemWith: IndexPath)](./init%28foritemwith%29.md)
   Creates and returns a layout attributes object for the item at the specified index path.
-- [convenience init(forDecorationViewOfKind: NSCollectionView.DecorationElementKind, with: IndexPath)](nscollectionviewlayoutattributes/init(fordecorationviewofkind:with:).md)
+- [convenience init(forDecorationViewOfKind: NSCollectionView.DecorationElementKind, with: IndexPath)](./init%28fordecorationviewofkind,with%29.md)
   Creates and returns a layout attributes object for a decoration view based on the specified information.
-- [convenience init(forInterItemGapBefore: IndexPath)](nscollectionviewlayoutattributes/init(forinteritemgapbefore:).md)
+- [convenience init(forInterItemGapBefore: IndexPath)](./init%28forinteritemgapbefore%29.md)
   Creates and returns a layout attributes object for an inter-item gap view at the specified index path.
-- [NSCollectionView.DecorationElementKind](nscollectionview/decorationelementkind.md)
+- [NSCollectionView.DecorationElementKind](../nscollectionview/decorationelementkind.md)
 
 
 ---

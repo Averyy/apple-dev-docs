@@ -1,7 +1,8 @@
 # forwardingStatus(for:)
 
 **Framework**: Accessory Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the current notification forwarding status for an accessory.
 

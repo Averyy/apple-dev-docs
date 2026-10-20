@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWDCLCycleEvent](1645953-anonymous/kfwdclcycleevent.md)
-- [kFWDCLImmediateEvent](1645953-anonymous/kfwdclimmediateevent.md)
-- [kFWDCLSyBitsEvent](1645953-anonymous/kfwdclsybitsevent.md)
+- [kFWDCLCycleEvent](./api-1645953-anonymous/kfwdclcycleevent.md)
+- [kFWDCLImmediateEvent](./api-1645953-anonymous/kfwdclimmediateevent.md)
+- [kFWDCLSyBitsEvent](./api-1645953-anonymous/kfwdclsybitsevent.md)
 
 
 ---

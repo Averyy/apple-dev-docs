@@ -1,10 +1,11 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,7 +15,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nsrulerview/unitname/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
 
 
 ---

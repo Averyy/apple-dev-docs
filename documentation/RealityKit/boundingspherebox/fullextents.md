@@ -1,7 +1,8 @@
 # fullExtents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full extents of the optional axis-aligned bounding box.
 
@@ -19,13 +20,14 @@ var fullExtents: SIMD3<Float>? { get set }
 
 #### Discussion
 
-The full extents are equal to twice the [`halfExtents`](boundingspherebox/halfextents.md).
+The full extents are equal to twice the [`halfExtents`](./halfextents.md).
 
 ## See Also
 
-- [var center: SIMD3<Float>](boundingspherebox/center.md)
+### Accessing the dimensions
+- [var center: SIMD3<Float>](./center.md)
   The center of the bounding volume in model space.
-- [var halfExtents: SIMD3<Float>?](boundingspherebox/halfextents.md)
+- [var halfExtents: SIMD3<Float>?](./halfextents.md)
   The half-extents of the optional axis-aligned bounding box.
 
 

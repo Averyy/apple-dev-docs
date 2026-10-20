@@ -1,7 +1,8 @@
 # audioTimeStamp
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time as an audio timestamp.
 
@@ -18,6 +19,10 @@ The time as an audio timestamp.
 
 ```swift
 var audioTimeStamp: AudioTimeStamp { get }
+```
+
+```objc
+@property (nonatomic, readonly) AudioTimeStamp audioTimeStamp;
 ```
 
 #### Discussion

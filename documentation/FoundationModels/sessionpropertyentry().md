@@ -1,7 +1,8 @@
 # SessionPropertyEntry()
 
 **Framework**: Foundation Models  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 27.0+
@@ -20,15 +21,16 @@
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
 
 ## See Also
 
-- [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
+### Custom session properties
+- [LanguageModelSession.SessionProperty](./languagemodelsession/sessionproperty.md)
   A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
-- [protocol SessionPropertyKey](sessionpropertykey.md)
+- [protocol SessionPropertyKey](./sessionpropertykey.md)
   A protocol for defining a custom session property key.
-- [class SessionPropertyValues](sessionpropertyvalues.md)
+- [class SessionPropertyValues](./sessionpropertyvalues.md)
   A container for property values.
 
 

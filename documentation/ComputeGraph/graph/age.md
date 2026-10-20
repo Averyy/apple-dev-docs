@@ -1,13 +1,14 @@
 # graph::age
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the age of the graph in seconds.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The age of the graph in seconds
 
 The age represents the total elapsed time since the graph was created or reset. This value continuously increases and is useful for time-based animations and effects.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/graph__age.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/graph__age.svg)
 
 
 ---

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the activity in its life cycle.
 
@@ -17,13 +18,14 @@ let state: ActivityState
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
 ## See Also
 
-- [let content: AccessoryLiveActivity.Content?](accessoryliveactivity/content-swift.property.md)
+### Accessing the activity’s state and content
+- [let content: AccessoryLiveActivity.Content?](./content-swift.property.md)
   The updated content of the forwarded Live Activity.
-- [AccessoryLiveActivity.Content](accessoryliveactivity/content-swift.struct.md)
+- [AccessoryLiveActivity.Content](./content-swift.struct.md)
   The content of an alert for a forwarded Live Activity.
 
 

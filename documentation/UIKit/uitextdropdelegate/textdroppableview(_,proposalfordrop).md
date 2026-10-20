@@ -1,7 +1,8 @@
 # textDroppableView(_:proposalForDrop:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the text view can accept a drop operation.
 
@@ -15,6 +16,10 @@ Asks the delegate if the text view can accept a drop operation.
 
 ```swift
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, proposalForDrop drop: any UITextDropRequest) -> UITextDropProposal
+```
+
+```objc
+- (UITextDropProposal *) textDroppableView:(UIView<UITextDroppable> *) textDroppableView proposalForDrop:(id<UITextDropRequest>) drop;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ Because this method is called frequently, it’s important for your implementati
 
 ## See Also
 
-- [func textDroppableView(any UIView & UITextDroppable, willBecomeEditableForDrop: any UITextDropRequest) -> UITextDropEditability](uitextdropdelegate/textdroppableview(_:willbecomeeditablefordrop:).md)
+### Accepting a drop activity
+- [func textDroppableView(any UIView & UITextDroppable, willBecomeEditableForDrop: any UITextDropRequest) -> UITextDropEditability](./textdroppableview%28_,willbecomeeditablefordrop%29.md)
   Asks the delegate if a noneditable text view can accept a drop operation.
 
 

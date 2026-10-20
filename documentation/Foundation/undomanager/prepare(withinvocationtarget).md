@@ -1,7 +1,8 @@
 # prepare(withInvocationTarget:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the undo manager for invocation-based undo with the given target as the subject of the next undo operation.
 
@@ -20,19 +21,26 @@ Prepares the undo manager for invocation-based undo with the given target as the
 func prepare(withInvocationTarget target: Any) -> Any
 ```
 
+```objc
+- (id) prepareWithInvocationTarget:(id) target;
+```
+
 #### Return Value
 
 A proxy object that forwards messages to the undo manager for recording as undo actions.
 
 ## Parameters
 
-- `target`: The target of the undo operation. The undo manager maintains a weak reference to `target`.
+- `target`: The target of the undo operation.
+
+  The undo manager maintains a weak reference to `target`.
 
 ## See Also
 
-- [func registerUndo<TargetType>(withTarget: TargetType, handler: (TargetType) -> Void)](undomanager/registerundo(withtarget:handler:).md)
+### Registering undo operations
+- [func registerUndo<TargetType>(withTarget: TargetType, handler: (TargetType) -> Void)](./registerundo%28withtarget,handler%29.md)
   Registers the specified closure to implement a single undo operation that the target receives.
-- [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](undomanager/registerundo(withtarget:selector:object:).md)
+- [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](./registerundo%28withtarget,selector,object%29.md)
   Registers the selector of the specified target to implement a single undo operation that the target receives.
 
 

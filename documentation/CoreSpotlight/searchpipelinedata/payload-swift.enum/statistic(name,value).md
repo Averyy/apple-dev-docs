@@ -1,7 +1,8 @@
 # SearchPipelineData.Payload.statistic(name:value:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scalar value with a stastical calculation your stage produced.
 
@@ -24,17 +25,18 @@ Use this type to specify summation, average, minimum, maximum, median, or standa
 
 ## See Also
 
-- [SearchPipelineData.Payload.items(_:)](searchpipelinedata/payload-swift.enum/items(_:).md)
+### Getting the payload data
+- [SearchPipelineData.Payload.items(_:)](./items%28_%29.md)
   The array of searchable items your stage produced.
-- [SearchPipelineData.Payload.scoredItems(_:)](searchpipelinedata/payload-swift.enum/scoreditems(_:).md)
+- [SearchPipelineData.Payload.scoredItems(_:)](./scoreditems%28_%29.md)
   The scored searchable items your stage produced.
-- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
+- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](./groupeditems%28_%29.md)
   A dictionary that maps searchable attributes to the items that contain them.
-- [SearchPipelineData.Payload.text(_:)](searchpipelinedata/payload-swift.enum/text(_:).md)
+- [SearchPipelineData.Payload.text(_:)](./text%28_%29.md)
   An text summary or analysis your stage produced.
-- [SearchPipelineData.Payload.count(_:)](searchpipelinedata/payload-swift.enum/count(_:).md)
+- [SearchPipelineData.Payload.count(_:)](./count%28_%29.md)
   A scalar count of items your stage produced.
-- [SearchPipelineData.Payload.table(_:)](searchpipelinedata/payload-swift.enum/table(_:).md)
+- [SearchPipelineData.Payload.table(_:)](./table%28_%29.md)
   Tabulated data your stage produced.
 
 

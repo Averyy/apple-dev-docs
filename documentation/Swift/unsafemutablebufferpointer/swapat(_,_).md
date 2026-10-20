@@ -1,7 +1,8 @@
 # swapAt(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exchanges the values at the specified indices of the buffer.
 

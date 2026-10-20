@@ -1,7 +1,8 @@
 # init(configuration:primaryAction:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new button with the specified configuration and registers the primary action event.
 
@@ -10,7 +11,7 @@ Creates a new button with the specified configuration and registers the primary 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,11 +27,12 @@ If the primary action contains a title or an image, this method copies them to t
 ## Parameters
 
 - `configuration`: The button configuration.
-- `primaryAction`: The action to perform for the [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control event.
+- `primaryAction`: The action to perform for the [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control event.
 
 ## See Also
 
-- [UIButton.Configuration](uibutton/configuration-swift.struct.md)
+### Creating buttons from a configuration object
+- [UIButton.Configuration](./configuration-swift.struct.md)
   A configuration that specifies the appearance and behavior of a button and its contents.
 
 

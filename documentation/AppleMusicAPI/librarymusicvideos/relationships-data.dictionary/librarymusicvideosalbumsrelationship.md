@@ -1,7 +1,8 @@
 # LibraryMusicVideos.Relationships.LibraryMusicVideosAlbumsRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the library music video to its albums in the library.
 
@@ -10,7 +11,7 @@ A relationship from the library music video to its albums in the library.
 
 ## Declaration
 
-```swift
+```
 object LibraryMusicVideos.Relationships.LibraryMusicVideosAlbumsRelationship
 ```
 
@@ -22,9 +23,10 @@ object LibraryMusicVideos.Relationships.LibraryMusicVideosAlbumsRelationship
 
 ## See Also
 
-- [object LibraryMusicVideos.Relationships.LibraryMusicVideosArtistsRelationship](librarymusicvideos/relationships-data.dictionary/librarymusicvideosartistsrelationship.md)
+### Related Objects
+- [object LibraryMusicVideos.Relationships.LibraryMusicVideosArtistsRelationship](./librarymusicvideosartistsrelationship.md)
   A relationship from the library music video to its artists in the library.
-- [object LibraryMusicVideos.Relationships.LibraryMusicVideosCatalogRelationship](librarymusicvideos/relationships-data.dictionary/librarymusicvideoscatalogrelationship.md)
+- [object LibraryMusicVideos.Relationships.LibraryMusicVideosCatalogRelationship](./librarymusicvideoscatalogrelationship.md)
   A relationship from the library music video to its associated catalog content.
 
 

@@ -1,7 +1,8 @@
 # init(image:frame:rotation:opacity:contentsBounds:accessibilityDescription:allowedInteractions:id:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new image markup from the specified parameters.
 
@@ -31,9 +32,10 @@ Image content is shown scaled to fill.
 
 ## See Also
 
-- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:orientation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:).md)
+### Creating an image markup
+- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](./init%28image,frame,rotation,orientation,opacity,contentsbounds,accessibilitydescription,allowedinteractions,id%29.md)
   Initializes and returns a new image markup from the specified parameters.
-- [init?(image: UIImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-8y6o9.md)
+- [init?(image: UIImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](./init%28image,frame,rotation,opacity,contentsbounds,accessibilitydescription,allowedinteractions,id%29-8y6o9.md)
   Initializes and returns a new image markup from the specified parameters.
 
 

@@ -1,7 +1,8 @@
 # attribute(of:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks an object for specific attribute types.
 
@@ -27,7 +28,8 @@ if chairType == .dining { /* ... */ }
 
 ## See Also
 
-- [var attributes: [any CapturedRoomAttribute]](capturedroom/object/attributes.md)
+### Describing an object
+- [var attributes: [any CapturedRoomAttribute]](./attributes.md)
   A collection of details that describe a particular object in the room.
 
 

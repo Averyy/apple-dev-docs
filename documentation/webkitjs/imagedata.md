@@ -1,7 +1,8 @@
 # ImageData
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface ImageData
 ```
 
 ## Topics
 
 ### Instance Properties
-- [data](imagedata/2871044-data.md)
-- [height](imagedata/1631352-height.md)
-- [width](imagedata/1632719-width.md)
+- [data](./imagedata/api-2871044-data.md)
+- [height](./imagedata/api-1631352-height.md)
+- [width](./imagedata/api-1632719-width.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # not(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the logical NOT operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the logical NOT operation to the input tensor elements.
 
 ```swift
 func not(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) notWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

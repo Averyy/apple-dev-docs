@@ -1,7 +1,8 @@
 # isForFoodEnergyUse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the energy value is used to measure food energy.
 
@@ -20,25 +21,30 @@ A Boolean value that indicates whether the energy value is used to measure food 
 var isForFoodEnergyUse: Bool { get set }
 ```
 
+```objc
+@property (getter=isForFoodEnergyUse) BOOL forFoodEnergyUse;
+```
+
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the energy is used to measure food energy; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If set to [`true`](https://developer.apple.com/documentation/swift/true), [`EnergyFormatter.Unit.kilocalorie`](energyformatter/unit/kilocalorie.md) may be represented using “C” instead of “kcal”. By default, this property returns [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the energy is used to measure food energy; otherwise, [`false`](../../Swift/false.md). If set to [`true`](../../Swift/true.md), [`EnergyFormatter.Unit.kilocalorie`](./unit/kilocalorie.md) may be represented using “C” instead of “kcal”. By default, this property returns [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](energyformatter/getobjectvalue(_:for:errordescription:).md)
+### Formatting Energy Strings
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSEnergyFormatter` class.
-- [var numberFormatter: NumberFormatter!](energyformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./numberformatter.md)
   The number formatter used to format the numbers in energy strings.
-- [func string(fromJoules: Double) -> String](energyformatter/string(fromjoules:).md)
+- [func string(fromJoules: Double) -> String](./string%28fromjoules%29.md)
   Returns an energy string for the provided value.
-- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted energy string for the given value and unit.
-- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](energyformatter/unitstring(fromjoules:usedunit:).md)
+- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](./unitstring%28fromjoules,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](energyformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

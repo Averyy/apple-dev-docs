@@ -1,7 +1,8 @@
 # standardErrorContent
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All bytes written to the standard error stream of the exit test before it exited.
 
@@ -17,11 +18,11 @@ var standardErrorContent: [UInt8]
 
 #### Discussion
 
-The value of this property may contain any arbitrary sequence of bytes, including sequences that are not valid UTF-8 and cannot be decoded by [`String.init(cString:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/string/init(cstring:)-6kr8s). Consider using [`String.init(validating:as:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/string/init(validating:as:)-84qr9) instead.
+The value of this property may contain any arbitrary sequence of bytes, including sequences that are not valid UTF-8 and cannot be decoded by [String.init(cString:)](../../../Swift/string/init%28cstring%29-6kr8s.md). Consider using [String.init(validating:as:)](../../../Swift/string/init%28validating,as%29-84qr9.md) instead.
 
-When checking the value of this property, keep in mind that the standard output stream is globally accessible, and any code running in an exit test may write to it including the operating system and any third-party dependencies you have declared in your package. Rather than comparing the value of this property with [`==`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/array/==(_:_:)), use [`contains(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/collection/contains(_:)) to check if expected output is present.
+When checking the value of this property, keep in mind that the standard output stream is globally accessible, and any code running in an exit test may write to it including the operating system and any third-party dependencies you have declared in your package. Rather than comparing the value of this property with [==](../../../Swift/array/eqeq%28_,_%29.md), use [contains(_:)](../../../Swift/collection/contains%28_%29.md) to check if expected output is present.
 
-To enable gathering output from the standard error stream during an exit test, pass `\.standardErrorContent` in the `observedValues` argument of [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](expect(processexitswith:observing:_:sourcelocation:performing:).md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](require(processexitswith:observing:_:sourcelocation:performing:).md).
+To enable gathering output from the standard error stream during an exit test, pass `\.standardErrorContent` in the `observedValues` argument of [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](../../expect%28processexitswith,observing,_,sourcelocation,performing%29.md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](../../require%28processexitswith,observing,_,sourcelocation,performing%29.md).
 
 If you did not request standard error content when running an exit test, the value of this property is the empty array.
 

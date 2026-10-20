@@ -1,7 +1,8 @@
 # currentModel
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reference that represents the migration’s source model.
 
@@ -20,13 +21,18 @@ The reference that represents the migration’s source model.
 var currentModel: NSManagedObjectModelReference { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectModelReference * currentModel;
+```
+
 #### Discussion
 
 Core Data sets this property to the `currentModel` parameter you specify when creating the migration stage.
 
 ## See Also
 
-- [var nextModel: NSManagedObjectModelReference](nscustommigrationstage/nextmodel.md)
+### Accessing model references
+- [var nextModel: NSManagedObjectModelReference](./nextmodel.md)
   The reference that represents the migration’s destination model.
 
 

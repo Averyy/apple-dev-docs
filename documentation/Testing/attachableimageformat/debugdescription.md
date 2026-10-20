@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Swift 6.3+

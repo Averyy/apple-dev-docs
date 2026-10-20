@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current authorization status for accessing the sensor data.
 

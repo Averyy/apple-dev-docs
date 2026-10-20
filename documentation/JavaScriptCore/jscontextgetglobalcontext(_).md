@@ -1,7 +1,8 @@
 # JSContextGetGlobalContext(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the global context of a JavaScript execution context.
 
@@ -17,6 +18,10 @@ Gets the global context of a JavaScript execution context.
 
 ```swift
 func JSContextGetGlobalContext(_ ctx: JSContextRef!) -> JSGlobalContextRef!
+```
+
+```c
+JSGlobalContextRefJSContextGetGlobalContext(JSContextRef ctx);
 ```
 
 #### Return Value

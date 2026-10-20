@@ -1,16 +1,26 @@
 # owningController
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+@MainActor
+@objc @preconcurrency var owningController: UIViewController?
+```
+
+*macOS*
 
 ```swift
 @MainActor
@@ -19,9 +29,10 @@
 
 ## See Also
 
-- [var auAudioUnit: AUAudioUnit?](augenericviewinternal/auaudiounit.md)
-- [var paramObserverToken: AUParameterObserverToken?](augenericviewinternal/paramobservertoken.md)
-- [var showSingleClumpIndex: Int?](augenericviewinternal/showsingleclumpindex.md)
+### Instance Properties
+- [var auAudioUnit: AUAudioUnit?](./auaudiounit.md)
+- [var paramObserverToken: AUParameterObserverToken?](./paramobservertoken.md)
+- [var showSingleClumpIndex: Int?](./showsingleclumpindex.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # drawEquipment
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - visionOS 2.0+
@@ -14,8 +15,9 @@ static let drawEquipment: DebugDrawOptions
 
 ## See Also
 
-- [static let drawSeats: DebugDrawOptions](debugdrawoptions/drawseats.md)
-- [static let drawTable: DebugDrawOptions](debugdrawoptions/drawtable.md)
+### Setting the types of items
+- [static let drawSeats: DebugDrawOptions](./drawseats.md)
+- [static let drawTable: DebugDrawOptions](./drawtable.md)
 
 
 ---

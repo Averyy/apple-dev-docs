@@ -1,7 +1,8 @@
 # setActionIsDiscardable(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the next undo or redo action is discardable.
 
@@ -20,23 +21,28 @@ Sets whether the next undo or redo action is discardable.
 func setActionIsDiscardable(_ discardable: Bool)
 ```
 
+```objc
+- (void) setActionIsDiscardable:(BOOL) discardable;
+```
+
 #### Discussion
 
 Specifies that the latest undo action may be safely discarded when a document can not be saved for any reason.
 
 An example might be an undo action that changes the viewable area of a document.
 
-To find out if an undo group contains only discardable actions, look for the `NSUndoManagerGroupIsDiscardableKey` in the [`userInfo`](nsnotification/userinfo.md) dictionary of the [`NSUndoManagerWillCloseUndoGroup`](nsnotification/name-swift.struct/nsundomanagerwillcloseundogroup.md).
+To find out if an undo group contains only discardable actions, look for the `NSUndoManagerGroupIsDiscardableKey` in the [`userInfo`](../nsnotification/userinfo.md) dictionary of the [`NSUndoManagerWillCloseUndoGroup`](../nsnotification/name-swift.struct/nsundomanagerwillcloseundogroup.md).
 
 ## Parameters
 
-- `discardable`: Specifies if the action is discardable. [`true`](https://developer.apple.com/documentation/swift/true) if the next undo or redo action can be discarded; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+- `discardable`: Specifies if the action is discardable. [`true`](../../Swift/true.md) if the next undo or redo action can be discarded; [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var undoActionIsDiscardable: Bool](undomanager/undoactionisdiscardable.md)
+### Using discardable undo and redo actions
+- [var undoActionIsDiscardable: Bool](./undoactionisdiscardable.md)
   A Boolean value that indicates whether the next undo action is discardable.
-- [var redoActionIsDiscardable: Bool](undomanager/redoactionisdiscardable.md)
+- [var redoActionIsDiscardable: Bool](./redoactionisdiscardable.md)
   A Boolean value that indicates whether the next redo action is discardable.
 
 

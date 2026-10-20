@@ -1,14 +1,15 @@
 # rip6s_opackets
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_quad_t rip6s_opackets;
 ```
 

@@ -1,7 +1,8 @@
 # init(overlapFactor:featureExtractor:featureExtractionTimeWindowSize:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the parameters for a feature-extraction session.
 
@@ -26,7 +27,8 @@ init(overlapFactor: Double = __Defaults.overlapFactor, featureExtractor: MLSound
 
 ## See Also
 
-- [init(overlapFactor: Double, featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType)](mlsoundclassifier/featureextractionparameters/init(overlapfactor:featureextractor:).md)
+### Creating feature extraction parameters
+- [init(overlapFactor: Double, featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType)](./init%28overlapfactor,featureextractor%29.md)
   Creates the parameters for a feature-extraction session with a default time window size.
 
 

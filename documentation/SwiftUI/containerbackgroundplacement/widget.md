@@ -1,7 +1,8 @@
 # widget
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The container background placement for a widget.
 
@@ -21,14 +22,15 @@ static let widget: ContainerBackgroundPlacement
 
 #### Discussion
 
-Pass the container background placement to the [`containerBackground(_:for:)`](view/containerbackground(_:for:).md) function to configure the background of your widgets.
+Pass the container background placement to the [`containerBackground(_:for:)`](../view/containerbackground%28_,for%29.md) function to configure the background of your widgets.
 
 ## See Also
 
-- [static let navigation: ContainerBackgroundPlacement](containerbackgroundplacement/navigation.md)
-  A background placement inside a [`NavigationStack`](navigationstack.md) or [`NavigationSplitView`](navigationsplitview.md).
-- [static let tabView: ContainerBackgroundPlacement](containerbackgroundplacement/tabview.md)
-  A background placement inside a [`TabView`](tabview.md).
+### Getting placements
+- [static let navigation: ContainerBackgroundPlacement](./navigation.md)
+  A background placement inside a [`NavigationStack`](../navigationstack.md) or [`NavigationSplitView`](../navigationsplitview.md).
+- [static let tabView: ContainerBackgroundPlacement](./tabview.md)
+  A background placement inside a [`TabView`](../tabview.md).
 
 
 ---

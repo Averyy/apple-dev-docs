@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration of a conversation manager.
 
@@ -20,9 +21,10 @@ final let configuration: ConversationManager.Configuration
 
 ## See Also
 
-- [convenience init(configuration: ConversationManager.Configuration)](conversationmanager/init(configuration:).md)
+### Creating the manager
+- [convenience init(configuration: ConversationManager.Configuration)](./init%28configuration%29.md)
   Creates a new conversation manager with a given conversation.
-- [ConversationManager.Configuration](conversationmanager/configuration-swift.struct.md)
+- [ConversationManager.Configuration](./configuration-swift.struct.md)
   Configuration options for a conversation manager.
 
 

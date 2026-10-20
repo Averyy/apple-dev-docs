@@ -1,7 +1,8 @@
 # GetAudioObjectForObjectID
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a pointer to an audio object, given the object’s identifier.
 
@@ -10,23 +11,24 @@ Gets a pointer to an audio object, given the object’s identifier.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<IOUserAudioObject> GetAudioObjectForObjectID(IOUserAudioObjectID in_object_id);
 ```
 
 #### Return Value
 
-An `OSSharedPtr` to an [`IOUserAudioObject`](iouseraudioobject.md) if `in_object_id` was found.
+An `OSSharedPtr` to an [`IOUserAudioObject`](../iouseraudioobject.md) if `in_object_id` was found.
 
 ## Parameters
 
-- `in_object_id`: The [`IOUserAudioObjectID`](audiodriverkit/iouseraudioobjectid.md) of an object previously added to the driver.
+- `in_object_id`: The [`IOUserAudioObjectID`](../audiodriverkit-page/iouseraudioobjectid.md) of an object previously added to the driver.
 
 ## See Also
 
-- [AddObject](iouseraudiodriver/addobject.md)
+### Working with Audio Objects
+- [AddObject](./addobject.md)
   Adds an audio object to the driver.
-- [RemoveObject](iouseraudiodriver/removeobject.md)
+- [RemoveObject](./removeobject.md)
   Removes an audio object from the driver.
 
 

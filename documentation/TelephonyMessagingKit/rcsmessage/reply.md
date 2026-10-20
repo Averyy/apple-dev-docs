@@ -1,7 +1,8 @@
 # RCSMessage.Reply
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a reply to an RCS message.
 
@@ -17,24 +18,24 @@ struct Reply
 ## Topics
 
 ### Initializers
-- [init(targetMessageID: RCSMessageID, content: RCSMessage.Reply.Content)](rcsmessage/reply/init(targetmessageid:content:).md)
+- [init(targetMessageID: RCSMessageID, content: RCSMessage.Reply.Content)](./reply/init%28targetmessageid,content%29.md)
   Creates a reply instance with the message identifier and content.
 ### Instance Properties
-- [var content: RCSMessage.Reply.Content](rcsmessage/reply/content-swift.property.md)
+- [var content: RCSMessage.Reply.Content](./reply/content-swift.property.md)
   The content of the reply.
-- [var targetMessageID: RCSMessageID](rcsmessage/reply/targetmessageid.md)
+- [var targetMessageID: RCSMessageID](./reply/targetmessageid.md)
   The target message ID for the reply.
 ### Enumerations
-- [RCSMessage.Reply.Content](rcsmessage/reply/content-swift.enum.md)
+- [RCSMessage.Reply.Content](./reply/content-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

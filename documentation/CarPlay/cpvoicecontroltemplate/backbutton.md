@@ -1,7 +1,8 @@
 # backButton
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 var backButton: CPBarButton? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPBarButton * backButton;
 ```
 
 

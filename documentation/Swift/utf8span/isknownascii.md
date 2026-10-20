@@ -1,7 +1,8 @@
 # isKnownASCII
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether contents are known to be all-ASCII. A return value of `true` means that all code units are ASCII. A return value of `false` means there *may* be non-ASCII content.
 
@@ -26,7 +27,7 @@ ASCII-ness is checked and remembered during UTF-8 validation, so this is often e
 
 For example, a UTF-8 span generated from a `String` that at some point contained non-ASCII content would report false for `isKnownASCII`, even if that String had subsequent mutation operations that removed any non-ASCII content.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

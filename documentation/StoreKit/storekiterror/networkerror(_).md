@@ -1,7 +1,8 @@
 # StoreKitError.networkError(_:)
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A network error occurred.
 
@@ -22,17 +23,18 @@ case networkError(URLError)
 
 ## See Also
 
-- [StoreKitError.systemError(_:)](storekiterror/systemerror(_:).md)
+### StoreKit Error Codes
+- [StoreKitError.systemError(_:)](./systemerror%28_%29.md)
   A system error occurred.
-- [StoreKitError.userCancelled](storekiterror/usercancelled.md)
+- [StoreKitError.userCancelled](./usercancelled.md)
   The user canceled.
-- [StoreKitError.notAvailableInStorefront](storekiterror/notavailableinstorefront.md)
+- [StoreKitError.notAvailableInStorefront](./notavailableinstorefront.md)
   The function isn’t available on devices configured for this storefront.
-- [StoreKitError.notEntitled](storekiterror/notentitled.md)
+- [StoreKitError.notEntitled](./notentitled.md)
   The app doesn’t have the appropriate entitlements to use the functionality.
-- [StoreKitError.unknown](storekiterror/unknown.md)
+- [StoreKitError.unknown](./unknown.md)
   An unknown error occurred.
-- [StoreKitError.unsupported](storekiterror/unsupported.md)
+- [StoreKitError.unsupported](./unsupported.md)
   The operation doesn’t support this product.
 
 

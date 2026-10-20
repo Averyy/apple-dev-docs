@@ -1,7 +1,8 @@
 # copy(destinationBuffer:pixelSize:flags:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the contents of a vImage buffer to the specified destination buffer.
 
@@ -11,7 +12,7 @@ Copies the contents of a vImage buffer to the specified destination buffer.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

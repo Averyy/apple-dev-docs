@@ -1,7 +1,8 @@
 # vfs_ioattr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get I/O attributes associated with a mounpoint.
 
@@ -10,11 +11,11 @@ Get I/O attributes associated with a mounpoint.
 
 ## Declaration
 
-```swift
+```c
 void vfs_ioattr(mount_t mp, struct vfsioattr *ioattrp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

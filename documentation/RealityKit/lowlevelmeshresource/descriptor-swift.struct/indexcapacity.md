@@ -1,7 +1,8 @@
 # indexCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of indices to allocate space for.
 

@@ -7,13 +7,13 @@ Constructs an OSArray of IODeviceMemory instances, each describing one physical 
 
 ## Declaration
 
-```swift
+```c
 static OSArray * arrayFromList( 
  InitElement list[], 
  IOItemCount count );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a created OSArray of IODeviceMemory objects, to be released by the caller, or zero on failure.
 
@@ -28,9 +28,10 @@ This method creates IODeviceMemory instances for each physical range passed in a
 
 ## See Also
 
-- [withRange](iodevicememory/1811085-withrange.md)
+### Miscellaneous
+- [withRange](./api-1811085-withrange.md)
   Constructs an IODeviceMemory instance, describing one physical range.
-- [withSubRange](iodevicememory/1811112-withsubrange.md)
+- [withSubRange](./api-1811112-withsubrange.md)
   Constructs an IODeviceMemory instance, describing a subset of an existing IODeviceMemory range.
 
 

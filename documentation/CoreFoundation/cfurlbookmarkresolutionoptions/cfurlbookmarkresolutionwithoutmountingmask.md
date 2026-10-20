@@ -1,7 +1,8 @@
 # cfurlBookmarkResolutionWithoutMountingMask
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 4.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var cfurlBookmarkResolutionWithoutMountingMask: CFURLBookmarkResolutionOptions { get }
+```
+
+```c
+kCFURLBookmarkResolutionWithoutMountingMask
 ```
 
 

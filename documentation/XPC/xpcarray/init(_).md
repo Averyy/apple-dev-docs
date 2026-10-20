@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new array that contains the given XPC object.
 
@@ -11,7 +12,7 @@ Creates a new array that contains the given XPC object.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ init(_ value: xpc_object_t)
 
 ## Parameters
 
-- `value`: An XPC object. The object’s type must be [`XPC_TYPE_ARRAY`](xpc_type_array-swift.var.md).
+- `value`: An XPC object. The object’s type must be [`XPC_TYPE_ARRAY`](../xpc_type_array-swift.var.md).
 
 ## See Also
 
-- [init()](xpcarray/init.md)
+### Creating an array
+- [init()](./init%28%29.md)
   Creates a new, empty array.
-- [func copy(into: XPCArray)](xpcarray/copy(into:).md)
+- [func copy(into: XPCArray)](./copy%28into%29.md)
   Copies the elements of the array to a different array.
 
 

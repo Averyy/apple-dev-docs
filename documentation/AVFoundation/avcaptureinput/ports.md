@@ -1,7 +1,8 @@
 # ports
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ports available on a capture input.
 
@@ -18,13 +19,18 @@ The ports available on a capture input.
 var ports: [AVCaptureInput.Port] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureInputPort *> * ports;
+```
+
 #### Discussion
 
-Individual ports post an [`formatDescriptionDidChangeNotification`](avcaptureinput/port/formatdescriptiondidchangenotification.md) notification when their [`formatDescription`](avcaptureinput/port/formatdescription.md) changes.
+Individual ports post an [`formatDescriptionDidChangeNotification`](./port/formatdescriptiondidchangenotification.md) notification when their [`formatDescription`](./port/formatdescription.md) changes.
 
 ## See Also
 
-- [AVCaptureInput.Port](avcaptureinput/port.md)
+### Accessing ports
+- [AVCaptureInput.Port](./port.md)
   An object that represents a stream of data that a capture input provides.
 
 

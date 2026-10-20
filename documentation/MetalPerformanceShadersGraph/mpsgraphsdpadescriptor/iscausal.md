@@ -1,9 +1,10 @@
 # isCausal
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-When YES, a causal (lower-triangular) mask is applied so that each query position attends only to key positions at or before it. Mutually exclusive with [`maskTensor`](mpsgraphsdpadescriptor/masktensor.md).
+When YES, a causal (lower-triangular) mask is applied so that each query position attends only to key positions at or before it. Mutually exclusive with [`maskTensor`](./masktensor.md).
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@ When YES, a causal (lower-triangular) mask is applied so that each query positio
 
 ```swift
 var isCausal: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL isCausal;
 ```
 
 

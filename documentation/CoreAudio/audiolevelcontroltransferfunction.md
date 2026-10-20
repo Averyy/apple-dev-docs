@@ -1,11 +1,12 @@
 # AudioLevelControlTransferFunction
 
 **Framework**: Core Audio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,55 +14,60 @@
 enum AudioLevelControlTransferFunction
 ```
 
+```c
+enum AudioLevelControlTransferFunction : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [AudioLevelControlTransferFunction.tranferFunction10Over1](audiolevelcontroltransferfunction/tranferfunction10over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction11Over1](audiolevelcontroltransferfunction/tranferfunction11over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction12Over1](audiolevelcontroltransferfunction/tranferfunction12over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction1Over2](audiolevelcontroltransferfunction/tranferfunction1over2.md)
-- [AudioLevelControlTransferFunction.tranferFunction1Over3](audiolevelcontroltransferfunction/tranferfunction1over3.md)
-- [AudioLevelControlTransferFunction.tranferFunction2Over1](audiolevelcontroltransferfunction/tranferfunction2over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction3Over1](audiolevelcontroltransferfunction/tranferfunction3over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction3Over2](audiolevelcontroltransferfunction/tranferfunction3over2.md)
-- [AudioLevelControlTransferFunction.tranferFunction3Over4](audiolevelcontroltransferfunction/tranferfunction3over4.md)
-- [AudioLevelControlTransferFunction.tranferFunction4Over1](audiolevelcontroltransferfunction/tranferfunction4over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction5Over1](audiolevelcontroltransferfunction/tranferfunction5over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction6Over1](audiolevelcontroltransferfunction/tranferfunction6over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction7Over1](audiolevelcontroltransferfunction/tranferfunction7over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction8Over1](audiolevelcontroltransferfunction/tranferfunction8over1.md)
-- [AudioLevelControlTransferFunction.tranferFunction9Over1](audiolevelcontroltransferfunction/tranferfunction9over1.md)
-- [AudioLevelControlTransferFunction.tranferFunctionLinear](audiolevelcontroltransferfunction/tranferfunctionlinear.md)
+- [AudioLevelControlTransferFunction.tranferFunction10Over1](./audiolevelcontroltransferfunction/tranferfunction10over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction11Over1](./audiolevelcontroltransferfunction/tranferfunction11over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction12Over1](./audiolevelcontroltransferfunction/tranferfunction12over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction1Over2](./audiolevelcontroltransferfunction/tranferfunction1over2.md)
+- [AudioLevelControlTransferFunction.tranferFunction1Over3](./audiolevelcontroltransferfunction/tranferfunction1over3.md)
+- [AudioLevelControlTransferFunction.tranferFunction2Over1](./audiolevelcontroltransferfunction/tranferfunction2over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction3Over1](./audiolevelcontroltransferfunction/tranferfunction3over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction3Over2](./audiolevelcontroltransferfunction/tranferfunction3over2.md)
+- [AudioLevelControlTransferFunction.tranferFunction3Over4](./audiolevelcontroltransferfunction/tranferfunction3over4.md)
+- [AudioLevelControlTransferFunction.tranferFunction4Over1](./audiolevelcontroltransferfunction/tranferfunction4over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction5Over1](./audiolevelcontroltransferfunction/tranferfunction5over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction6Over1](./audiolevelcontroltransferfunction/tranferfunction6over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction7Over1](./audiolevelcontroltransferfunction/tranferfunction7over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction8Over1](./audiolevelcontroltransferfunction/tranferfunction8over1.md)
+- [AudioLevelControlTransferFunction.tranferFunction9Over1](./audiolevelcontroltransferfunction/tranferfunction9over1.md)
+- [AudioLevelControlTransferFunction.tranferFunctionLinear](./audiolevelcontroltransferfunction/tranferfunctionlinear.md)
 ### Initializers
-- [init?(rawValue: UInt32)](audiolevelcontroltransferfunction/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./audiolevelcontroltransferfunction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Anonymous](1580748-anonymous.md)
-- [Anonymous](1580731-anonymous.md)
-- [Anonymous](1580722-anonymous.md)
-- [Anonymous](1580720-anonymous.md)
-- [Anonymous](1580736-anonymous.md)
-- [Anonymous](1580737-anonymous.md)
-- [Anonymous](1580746-anonymous.md)
-- [Anonymous](1580723-anonymous.md)
-- [Anonymous](1580747-anonymous.md)
-- [Anonymous](1580749-anonymous.md)
-- [Anonymous](1580719-anonymous.md)
-- [Anonymous](1580715-anonymous.md)
-- [Anonymous](1580740-anonymous.md)
-- [Anonymous](1580741-anonymous.md)
-- [Anonymous](1580726-anonymous.md)
+### Enumerations
+- [Anonymous](./api-1580748-anonymous.md)
+- [Anonymous](./api-1580731-anonymous.md)
+- [Anonymous](./api-1580722-anonymous.md)
+- [Anonymous](./api-1580720-anonymous.md)
+- [Anonymous](./api-1580736-anonymous.md)
+- [Anonymous](./api-1580737-anonymous.md)
+- [Anonymous](./api-1580746-anonymous.md)
+- [Anonymous](./api-1580723-anonymous.md)
+- [Anonymous](./api-1580747-anonymous.md)
+- [Anonymous](./api-1580749-anonymous.md)
+- [Anonymous](./api-1580719-anonymous.md)
+- [Anonymous](./api-1580715-anonymous.md)
+- [Anonymous](./api-1580740-anonymous.md)
+- [Anonymous](./api-1580741-anonymous.md)
+- [Anonymous](./api-1580726-anonymous.md)
 
 
 ---

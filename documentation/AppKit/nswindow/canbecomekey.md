@@ -1,12 +1,13 @@
 # canBecomeKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window can become the key window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ A Boolean value that indicates whether the window can become the key window.
 var canBecomeKey: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canBecomeKeyWindow;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window can become the key window, otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the window can become the key window, otherwise, [`false`](../../Swift/false.md).
 
-Attempts to make the window the key window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window’s style mask includes the [`titled`](nswindow/stylemask-swift.struct/titled.md) flag, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Attempts to make the window the key window are abandoned if the value of this property is [`false`](../../Swift/false.md). The value of this property is [`true`](../../Swift/true.md) if the window’s style mask includes the [`titled`](./stylemask-swift.struct/titled.md) flag, or [`false`](../../Swift/false.md) otherwise.
 
-> **Note**:  To make a window key without including the `titled` flag in its style mask, override this property in an [`NSWindow`](nswindow.md) subclass to return [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  To make a window key without including the `titled` flag in its style mask, override this property in an [`NSWindow`](../nswindow.md) subclass to return [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isKeyWindow: Bool](nswindow/iskeywindow.md)
+### Managing Key Status
+- [var isKeyWindow: Bool](./iskeywindow.md)
   A Boolean value that indicates whether the window is the key window for the application.
-- [func makeKey()](nswindow/makekey.md)
+- [func makeKey()](./makekey%28%29.md)
   Makes the window the key window.
-- [func makeKeyAndOrderFront(Any?)](nswindow/makekeyandorderfront(_:).md)
+- [func makeKeyAndOrderFront(Any?)](./makekeyandorderfront%28_%29.md)
   Moves the window to the front of the screen list, within its level, and makes it the key window; that is, it shows the window.
-- [func becomeKey()](nswindow/becomekey.md)
+- [func becomeKey()](./becomekey%28%29.md)
   Informs the window that it has become the key window.
-- [func resignKey()](nswindow/resignkey.md)
+- [func resignKey()](./resignkey%28%29.md)
   Resigns the window’s key window status.
 
 

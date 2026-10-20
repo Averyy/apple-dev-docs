@@ -1,11 +1,12 @@
 # ExpressibleByDictionaryLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(dictionaryLiteral: (Key, Value)...)](dictionary/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (Key, Value)...)](./init%28dictionaryliteral%29.md)
   Creates a dictionary initialized with a dictionary literal.
 
 

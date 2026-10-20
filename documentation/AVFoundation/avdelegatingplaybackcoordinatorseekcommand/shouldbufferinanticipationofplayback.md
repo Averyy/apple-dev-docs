@@ -1,7 +1,8 @@
 # shouldBufferInAnticipationOfPlayback
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player starts buffering in anticipation of a request to begin playback.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the player starts buffering in anticipati
 var shouldBufferInAnticipationOfPlayback: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL shouldBufferInAnticipationOfPlayback;
+```
+
 ## See Also
 
-- [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorseekcommand/anticipatedplaybackrate.md)
+### Accessing command details
+- [var anticipatedPlaybackRate: Float](./anticipatedplaybackrate.md)
   The rate at which the coordinator expects playback to resume.
-- [var itemTime: CMTime](avdelegatingplaybackcoordinatorseekcommand/itemtime.md)
+- [var itemTime: CMTime](./itemtime.md)
   The time to seek to in the item timeline.
-- [var completionDueDate: Date?](avdelegatingplaybackcoordinatorseekcommand/completionduedate.md)
+- [var completionDueDate: Date?](./completionduedate.md)
   The deadline by which the coordinator expects the delegate to handle the command.
 
 

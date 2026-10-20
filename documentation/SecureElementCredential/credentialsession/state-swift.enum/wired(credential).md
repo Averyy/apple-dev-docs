@@ -1,7 +1,8 @@
 # CredentialSession.State.wired(credential:)
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state for performing wired operations with a given credential.
 
@@ -17,11 +18,11 @@ case wired(credential: CredentialSession.Credential)
 
 ## Mentions
 
-- [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
+- [Accessing and using secure element credentials](../../accessing-and-using-secure-element-credentials.md)
 
 #### Discussion
 
-In the wired state, the session can call [`transceive(_:)`](credentialsession/transceive(_:).md) to exchange data with the selected credential.
+In the wired state, the session can call [`transceive(_:)`](../transceive%28_%29.md) to exchange data with the selected credential.
 
 ## Parameters
 
@@ -29,13 +30,14 @@ In the wired state, the session can call [`transceive(_:)`](credentialsession/tr
 
 ## See Also
 
-- [CredentialSession.State.management](credentialsession/state-swift.enum/management.md)
+### Credential session states
+- [CredentialSession.State.management](./management.md)
   The state for managing the credential session.
-- [case cardEmulation(credential: CredentialSession.Credential)](credentialsession/state-swift.enum/cardemulation(credential:).md)
+- [case cardEmulation(credential: CredentialSession.Credential)](./cardemulation%28credential%29.md)
   The state for performing card emulation with a given credential.
-- [CredentialSession.Credential](credentialsession/credential.md)
+- [CredentialSession.Credential](../credential.md)
   Information about a credential that a credential session retrieves from the Secure Element.
-- [CredentialSession.State.invalid](credentialsession/state-swift.enum/invalid.md)
+- [CredentialSession.State.invalid](./invalid.md)
   The state of an invalid credential session.
 
 

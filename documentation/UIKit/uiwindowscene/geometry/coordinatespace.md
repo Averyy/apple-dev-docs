@@ -1,7 +1,8 @@
 # coordinateSpace
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate space of the scene
 
@@ -18,13 +19,18 @@ The coordinate space of the scene
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<UICoordinateSpace> coordinateSpace;
+```
+
 ## See Also
 
-- [var systemFrame: CGRect](uiwindowscene/geometry/systemframe.md)
+### Accessing scene geometry
+- [var systemFrame: CGRect](./systemframe.md)
   The current frame of the scene, in system coordinates.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/geometry/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   The current interface orientation for the scene.
-- [var isInterfaceOrientationLocked: Bool](uiwindowscene/geometry/isinterfaceorientationlocked.md)
+- [var isInterfaceOrientationLocked: Bool](./isinterfaceorientationlocked.md)
   If the scene’s interface orientation is locked and preventing changes. To express a preference for this value, override  `UIViewController`’s `prefersInterfaceOrientationLocked`.
 
 

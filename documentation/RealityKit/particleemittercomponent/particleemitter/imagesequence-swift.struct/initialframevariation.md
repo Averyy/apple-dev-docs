@@ -1,7 +1,8 @@
 # initialFrameVariation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a plus/minus range (in frames) from which a value is randomly selected to offset `initialFrame`.
 

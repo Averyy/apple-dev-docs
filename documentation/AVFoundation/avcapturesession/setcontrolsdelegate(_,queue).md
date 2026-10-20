@@ -1,7 +1,8 @@
 # setControlsDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a delegate object for the system to call when it activates and presents controls.
 
@@ -18,9 +19,13 @@ Sets a delegate object for the system to call when it activates and presents con
 func setControlsDelegate(_ controlsDelegate: (any AVCaptureSessionControlsDelegate)?, queue controlsDelegateCallbackQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setControlsDelegate:(id<AVCaptureSessionControlsDelegate>) controlsDelegate queue:(dispatch_queue_t) controlsDelegateCallbackQueue;
+```
+
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+- [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
 #### Discussion
 
@@ -29,27 +34,30 @@ People interact with capture controls by performing specific gestures to enable 
 ## Parameters
 
 - `controlsDelegate`: An object that adopts the controls delegate protocol.
-- `controlsDelegateCallbackQueue`: A serial dispatch queue on which to call the delegate methods. You must specify a serial queue to ensure callbacks occur in order. This argument must not be `nil` unless the `controlsDelegate` argument is also `nil;` otherwise, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
+- `controlsDelegateCallbackQueue`: A serial dispatch queue on which to call the delegate methods. You must specify a serial queue to ensure callbacks occur in order.
+
+  This argument must not be `nil` unless the `controlsDelegate` argument is also `nil;` otherwise, the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 
-- [var supportsControls: Bool](avcapturesession/supportscontrols.md)
+### Configuring capture controls
+- [var supportsControls: Bool](./supportscontrols.md)
   A Boolean value that indicates whether a capture session supports controls.
-- [var maxControlsCount: Int](avcapturesession/maxcontrolscount.md)
+- [var maxControlsCount: Int](./maxcontrolscount.md)
   The maximum number of controls a capture session supports.
-- [var controls: [AVCaptureControl]](avcapturesession/controls.md)
+- [var controls: [AVCaptureControl]](./controls.md)
   The controls that allow configuring the camera system from device hardware.
-- [func canAddControl(AVCaptureControl) -> Bool](avcapturesession/canaddcontrol(_:).md)
+- [func canAddControl(AVCaptureControl) -> Bool](./canaddcontrol%28_%29.md)
   Returns a Boolean value that indicates whether a capture session add the specified control.
-- [func addControl(AVCaptureControl)](avcapturesession/addcontrol(_:).md)
+- [func addControl(AVCaptureControl)](./addcontrol%28_%29.md)
   Adds a control to a capture session.
-- [func removeControl(AVCaptureControl)](avcapturesession/removecontrol(_:).md)
+- [func removeControl(AVCaptureControl)](./removecontrol%28_%29.md)
   Removes a control from a capture session.
-- [protocol AVCaptureSessionControlsDelegate](avcapturesessioncontrolsdelegate.md)
+- [protocol AVCaptureSessionControlsDelegate](../avcapturesessioncontrolsdelegate.md)
   A protocol that defines the interface to respond to capture control activation and presentation events.
-- [var controlsDelegate: (any AVCaptureSessionControlsDelegate)?](avcapturesession/controlsdelegate.md)
+- [var controlsDelegate: (any AVCaptureSessionControlsDelegate)?](./controlsdelegate.md)
   A delegate object that observes changes to the state of capture controls.
-- [var controlsDelegateCallbackQueue: dispatch_queue_t?](avcapturesession/controlsdelegatecallbackqueue.md)
+- [var controlsDelegateCallbackQueue: dispatch_queue_t?](./controlsdelegatecallbackqueue.md)
   The dispatch queue on which the system calls controls delegate methods.
 
 

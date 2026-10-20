@@ -1,7 +1,8 @@
 # jpeg
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The JPEG image format with maximum encoding quality.
 

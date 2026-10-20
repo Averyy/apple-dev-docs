@@ -1,7 +1,8 @@
 # readAttributeTestInProgress(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTestInProgress(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTestInProgress() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTestInProgressWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

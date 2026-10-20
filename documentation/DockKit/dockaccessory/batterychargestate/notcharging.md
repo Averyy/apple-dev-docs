@@ -1,7 +1,8 @@
 # DockAccessory.BatteryChargeState.notCharging
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The battery is not charging.
 

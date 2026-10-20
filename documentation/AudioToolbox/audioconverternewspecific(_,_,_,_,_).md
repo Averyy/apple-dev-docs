@@ -1,7 +1,8 @@
 # AudioConverterNewSpecific(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new audio converter object using a specified codec.
 
@@ -19,13 +20,17 @@ Creates a new audio converter object using a specified codec.
 func AudioConverterNewSpecific(_ inSourceFormat: UnsafePointer<AudioStreamBasicDescription>, _ inDestinationFormat: UnsafePointer<AudioStreamBasicDescription>, _ inNumberClassDescriptions: UInt32, _ inClassDescriptions: UnsafePointer<AudioClassDescription>, _ outAudioConverter: UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioConverterNewSpecific(const AudioStreamBasicDescription *inSourceFormat, const AudioStreamBasicDescription *inDestinationFormat, UInt32 inNumberClassDescriptions, const AudioClassDescription *inClassDescriptions, AudioConverterRef*outAudioConverter);
+```
+
 #### Return Value
 
 A  result code.
 
 #### Discussion
 
-This function is identical to [`AudioConverterNew(_:_:_:)`](audioconverternew(_:_:_:).md) function, except that your application may explicitly choose which codec to instantiate if there is more than one choice.
+This function is identical to [`AudioConverterNew(_:_:_:)`](./audioconverternew%28_,_,_%29.md) function, except that your application may explicitly choose which codec to instantiate if there is more than one choice.
 
 ## Parameters
 
@@ -37,11 +42,12 @@ This function is identical to [`AudioConverterNew(_:_:_:)`](audioconverternew(_:
 
 ## See Also
 
-- [func AudioConverterNew(UnsafePointer<AudioStreamBasicDescription>, UnsafePointer<AudioStreamBasicDescription>, UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus](audioconverternew(_:_:_:).md)
+### Managing Audio Converter Objects
+- [func AudioConverterNew(UnsafePointer<AudioStreamBasicDescription>, UnsafePointer<AudioStreamBasicDescription>, UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus](./audioconverternew%28_,_,_%29.md)
   Creates a new audio converter object based on specified audio formats.
-- [func AudioConverterReset(AudioConverterRef) -> OSStatus](audioconverterreset(_:).md)
+- [func AudioConverterReset(AudioConverterRef) -> OSStatus](./audioconverterreset%28_%29.md)
   Resets an audio converter object, clearing and flushing its buffers.
-- [func AudioConverterDispose(AudioConverterRef) -> OSStatus](audioconverterdispose(_:).md)
+- [func AudioConverterDispose(AudioConverterRef) -> OSStatus](./audioconverterdispose%28_%29.md)
   Disposes of an audio converter object.
 
 

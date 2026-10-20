@@ -1,7 +1,8 @@
 # coordinateSpace(on:at:timeCode:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a coordinate space anchored to the closest rendered ancestor of `path`.
 

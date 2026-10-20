@@ -1,17 +1,22 @@
 # sharedSystemTypesetter(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shared instance of a reentrant typesetter that implements typesetting with the specified behavior.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func sharedSystemTypesetter(for behavior: NSLayoutManager.TypesetterBehavior) -> Any
+```
+
+```objc
++ (id) sharedSystemTypesetterForBehavior:(NSTypesetterBehavior) behavior;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ A shared instance of a reentrant typesetter that implements typesetting with the
 
 #### Discussion
 
-Possible return values are described in the [`NSLayoutManager.TypesetterBehavior`](nslayoutmanager/typesetterbehavior-swift.enum.md) section for [`NSLayoutManager`](nslayoutmanager.md).
+Possible return values are described in the [`NSLayoutManager.TypesetterBehavior`](../nslayoutmanager/typesetterbehavior-swift.enum.md) section for [`NSLayoutManager`](../nslayoutmanager.md).
 
 ## Parameters
 
@@ -28,9 +33,11 @@ Possible return values are described in the [`NSLayoutManager.TypesetterBehavior
 
 ## See Also
 
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](nstypesetter/typesetterbehavior.md)
+### Related Documentation
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](./typesetterbehavior.md)
   Returns the current typesetter behavior.
-- [class var sharedSystemTypesetter: NSTypesetter](nstypesetter/sharedsystemtypesetter.md)
+### Getting a typesetter
+- [class var sharedSystemTypesetter: NSTypesetter](./sharedsystemtypesetter.md)
   Returns a shared instance of a reentrant typesetter.
 
 

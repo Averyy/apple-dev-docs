@@ -1,7 +1,8 @@
 # GetBootstrapTokenRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The get bootstrap token request details.
 
@@ -14,22 +15,27 @@ The get bootstrap token request details.
 
 ## Declaration
 
-```swift
+```
 object GetBootstrapTokenRequest
 ```
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
 ## Properties
 
-- `AwaitingConfiguration` (boolean): If `true`, the device is awaiting a [`Device Configured`](device-configured-command.md) command before proceeding through Setup Assistant.
+- `AwaitingConfiguration` (boolean): If `true`, the device is awaiting a [`Device Configured`](./device-configured-command.md) command before proceeding through Setup Assistant.
+
+  **Default**: `false`
 - `MessageType` (string) *(required)*: The message type, which requires a value of `GetBootstrapToken`.
+
+  **Allowed Values**: `GetBootstrapToken`
 
 ## See Also
 
-- [object GetBootstrapTokenResponse](getbootstraptokenresponse.md)
+### Requests and responses
+- [object GetBootstrapTokenResponse](./getbootstraptokenresponse.md)
   The get bootstrap token response details.
 
 

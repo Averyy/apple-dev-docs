@@ -1,7 +1,8 @@
 # requiredContentVersion
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of PencilKit necessary to use the ink.
 
@@ -20,7 +21,7 @@ var requiredContentVersion: PKContentVersion { get }
 
 ## Mentions
 
-- [Supporting backward compatibility for ink types](supporting-backward-compatibility-for-ink-types.md)
+- [Supporting backward compatibility for ink types](../supporting-backward-compatibility-for-ink-types.md)
 
 
 ---

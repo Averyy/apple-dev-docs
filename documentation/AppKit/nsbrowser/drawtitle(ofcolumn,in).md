@@ -1,17 +1,22 @@
 # drawTitle(ofColumn:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the title for the specified column within the given rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawTitle(ofColumn column: Int, in rect: NSRect)
+```
+
+```objc
+- (void) drawTitleOfColumn:(NSInteger) column inRect:(NSRect) rect;
 ```
 
 ## Parameters
@@ -21,15 +26,16 @@ func drawTitle(ofColumn column: Int, in rect: NSRect)
 
 ## See Also
 
-- [func title(ofColumn: Int) -> String?](nsbrowser/title(ofcolumn:).md)
+### Accessing Column Titles
+- [func title(ofColumn: Int) -> String?](./title%28ofcolumn%29.md)
   Returns the title displayed for the given column.
-- [func setTitle(String, ofColumn: Int)](nsbrowser/settitle(_:ofcolumn:).md)
+- [func setTitle(String, ofColumn: Int)](./settitle%28_,ofcolumn%29.md)
   Sets the title of the given column.
-- [var isTitled: Bool](nsbrowser/istitled.md)
+- [var isTitled: Bool](./istitled.md)
   A Boolean that indicates whether columns display titles.
-- [var titleHeight: CGFloat](nsbrowser/titleheight.md)
+- [var titleHeight: CGFloat](./titleheight.md)
   The height of the column titles for the browser.
-- [func titleFrame(ofColumn: Int) -> NSRect](nsbrowser/titleframe(ofcolumn:).md)
+- [func titleFrame(ofColumn: Int) -> NSRect](./titleframe%28ofcolumn%29.md)
   Returns the bounds of the title frame for the specified column.
 
 

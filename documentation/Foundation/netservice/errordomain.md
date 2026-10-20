@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This key identifies the originator of the error, which is either the `NSNetService` object or the mach network layer. For most errors, you should not need the value provided by this key.
 
@@ -19,9 +20,14 @@ This key identifies the originator of the error, which is either the `NSNetServi
 class let errorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NSNetServicesErrorDomain;
+```
+
 ## See Also
 
-- [class let errorCode: String](netservice/errorcode-swift.type.property.md)
+### Constants
+- [class let errorCode: String](./errorcode-swift.type.property.md)
   This key identifies the error that occurred during the most recent operation.
 
 

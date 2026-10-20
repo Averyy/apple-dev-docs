@@ -1,7 +1,8 @@
 # IntentValueExpression
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a lazily evaluated intent value.
 
@@ -27,14 +28,15 @@ struct IntentValueExpression
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IntentValueQuery](intentvaluequery.md)
+### Intent queries
+- [protocol IntentValueQuery](./intentvaluequery.md)
   A query that provides entity values to the system; for example, for visual intelligence search.
-- [struct IntentValueContainer](intentvaluecontainer.md)
+- [struct IntentValueContainer](./intentvaluecontainer.md)
   A container that stores a value that supports intent value conversion.
 
 

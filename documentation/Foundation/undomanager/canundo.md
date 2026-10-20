@@ -1,7 +1,8 @@
 # canUndo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the manager has any actions to undo.
 
@@ -20,19 +21,25 @@ A Boolean value that indicates whether the manager has any actions to undo.
 var canUndo: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canUndo;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the manager has any actions to undo, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the manager has any actions to undo, otherwise [`false`](../../Swift/false.md).
 
-The return value doesn’t mean you can safely invoke [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md)—you may have to close open undo groups first.
+The return value doesn’t mean you can safely invoke [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md)—you may have to close open undo groups first.
 
 ## See Also
 
-- [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](undomanager/registerundo(withtarget:selector:object:).md)
+### Related Documentation
+- [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](./registerundo%28withtarget,selector,object%29.md)
   Registers the selector of the specified target to implement a single undo operation that the target receives.
-- [func enableUndoRegistration()](undomanager/enableundoregistration.md)
+- [func enableUndoRegistration()](./enableundoregistration%28%29.md)
   Enables the recording of undo operations.
-- [var canRedo: Bool](undomanager/canredo.md)
+### Checking undo ability
+- [var canRedo: Bool](./canredo.md)
   A Boolean value that indicates whether the manager has any actions to redo.
 
 

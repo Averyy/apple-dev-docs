@@ -1,7 +1,8 @@
 # kMDItemTextContent
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Contains a text representation of the content of the document. Data in multiple fields should be combined using a whitespace character as a separator. A CFString.
 
@@ -12,6 +13,10 @@ Contains a text representation of the content of the document. Data in multiple 
 
 ```swift
 let kMDItemTextContent: CFString!
+```
+
+```c
+const CFStringRef kMDItemTextContent;
 ```
 
 #### Discussion

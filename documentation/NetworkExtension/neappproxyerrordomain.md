@@ -1,7 +1,8 @@
 # NEAppProxyErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain used for app proxy errors.
 
@@ -18,13 +19,18 @@ The domain used for app proxy errors.
 let NEAppProxyErrorDomain: String
 ```
 
+```c
+extern NSString * const NEAppProxyErrorDomain;
+```
+
 ## See Also
 
-- [struct NEAppProxyFlowError](neappproxyflowerror-swift.struct.md)
+### Errors
+- [struct NEAppProxyFlowError](./neappproxyflowerror-swift.struct.md)
   An error that the app proxy flow encounters.
-- [NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/code.md)
+- [NEAppProxyFlowError.Code](./neappproxyflowerror-swift.struct/code.md)
   Error codes that the app proxy flow API declares.
-- [struct NEAppProxyFlowError](neappproxyflowerror-swift.struct.md)
+- [struct NEAppProxyFlowError](./neappproxyflowerror-swift.struct.md)
   An error that the app proxy flow encounters.
 
 

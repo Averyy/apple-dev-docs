@@ -1,7 +1,8 @@
 # AudioCodecAppendInputData(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Appends audio data to the codec’s input buffer.
 
@@ -19,6 +20,10 @@ Appends audio data to the codec’s input buffer.
 func AudioCodecAppendInputData(_ inCodec: AudioCodec, _ inInputData: UnsafeRawPointer, _ ioInputDataByteSize: UnsafeMutablePointer<UInt32>, _ ioNumberPackets: UnsafeMutablePointer<UInt32>, _ inPacketDescription: UnsafePointer<AudioStreamPacketDescription>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioCodecAppendInputData(AudioCodec inCodec, const void *inInputData, UInt32 *ioInputDataByteSize, UInt32 *ioNumberPackets, const AudioStreamPacketDescription *inPacketDescription);
+```
+
 #### Return Value
 
 Returns `NoErr` if successful. Returns `kAudioCodecStateError` if the codec has not been initialized. See `Result Codes` for other possible values.
@@ -27,13 +32,13 @@ Returns `NoErr` if successful. Returns `kAudioCodecStateError` if the codec has 
 
 A packet is the smallest, indivisible block of data for a given audio format. For linear PCM (pulse-code modulated) data, each packet contains exactly one frame, where a frame is a set of samples representing one sample for each channel. For compressed audio data formats, the number of frames in a packet depends on the encoding. For example, a packet of AAC represents 1024 frames of PCM. In some formats, the number of frames per packet varies. For such formats, you must include an array of `AudioStreamPacketDescription` structures that describes the packet layout.
 
-Input data can be fed into an encoder and some decoders in blocks of any size (even byte by byte). However, if the encoded format of the input data fed to a decoder has a variable number of frames per packet, the data must be provided in multiples of whole packets. A codec’s properties provide information about allowable types of input and output, minimum and maximum buffer sizes, and so forth. Use the [`AudioCodecGetProperty(_:_:_:_:)`](audiocodecgetproperty(_:_:_:_:).md) function to read a codec’s properties. The properties are described in [`Global Codec Properties`](1494121-global-codec-properties.md) and [`Instance Codec Properties`](1494111-instance-codec-properties.md).
+Input data can be fed into an encoder and some decoders in blocks of any size (even byte by byte). However, if the encoded format of the input data fed to a decoder has a variable number of frames per packet, the data must be provided in multiples of whole packets. A codec’s properties provide information about allowable types of input and output, minimum and maximum buffer sizes, and so forth. Use the [`AudioCodecGetProperty(_:_:_:_:)`](./audiocodecgetproperty%28_,_,_,_%29.md) function to read a codec’s properties. The properties are described in [Global Codec Properties](./api-1494121-global-codec-properties.md) and [Instance Codec Properties](./api-1494111-instance-codec-properties.md).
 
-The combination of the [`AudioCodecAppendInputData(_:_:_:_:_:)`](audiocodecappendinputdata(_:_:_:_:_:).md) and [`AudioCodecProduceOutputPackets(_:_:_:_:_:_:)`](audiocodecproduceoutputpackets(_:_:_:_:_:_:).md) functions implement a “push-pull” model of data handling. First, the input data is pushed into the codec, then the resulting output data is pulled out of that same codec.
+The combination of the [`AudioCodecAppendInputData(_:_:_:_:_:)`](./audiocodecappendinputdata%28_,_,_,_,_%29.md) and [`AudioCodecProduceOutputPackets(_:_:_:_:_:_:)`](./audiocodecproduceoutputpackets%28_,_,_,_,_,_%29.md) functions implement a “push-pull” model of data handling. First, the input data is pushed into the codec, then the resulting output data is pulled out of that same codec.
 
 ## Parameters
 
-- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](https://developer.apple.com/documentation/coreservices/1516552-findnextcomponent) and OpenAComponent) to obtain an audio codec object.
+- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](../coreservices/api-1516552-findnextcomponent.md) and OpenAComponent) to obtain an audio codec object.
 - `inInputData`: The audio data to be sent to the codec.  Indicate there is no more data to process by passing a buffer of `0`bytes.
 - `ioInputDataByteSize`: On input, the size in bytes of the data pointed to by the `inInputData` parameter. On output, the number of bytes the codec actually appended to its input buffer.
 - `ioNumberPackets`: On input, the number of elements in the `inPacketDescription` array. Pass `NULL` for this parameter if the input data has a constant number of frames per packet. On return, the number of packets actually processed by the codec.
@@ -41,11 +46,13 @@ The combination of the [`AudioCodecAppendInputData(_:_:_:_:_:)`](audiocodecappen
 
 ## See Also
 
-- [func AudioCodecInitialize(AudioCodec, UnsafePointer<AudioStreamBasicDescription>?, UnsafePointer<AudioStreamBasicDescription>?, UnsafeRawPointer?, UInt32) -> OSStatus](audiocodecinitialize(_:_:_:_:_:).md)
+### Related Documentation
+- [func AudioCodecInitialize(AudioCodec, UnsafePointer<AudioStreamBasicDescription>?, UnsafePointer<AudioStreamBasicDescription>?, UnsafeRawPointer?, UInt32) -> OSStatus](./audiocodecinitialize%28_,_,_,_,_%29.md)
   Sets up the specified codec to perform a data format translation.
-- [func AudioCodecGetProperty(AudioCodec, AudioCodecPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiocodecgetproperty(_:_:_:_:).md)
+- [func AudioCodecGetProperty(AudioCodec, AudioCodecPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiocodecgetproperty%28_,_,_,_%29.md)
   Retrieves the value of a codec property.
-- [func AudioCodecProduceOutputPackets(AudioCodec, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, UnsafeMutablePointer<UInt32>) -> OSStatus](audiocodecproduceoutputpackets(_:_:_:_:_:_:).md)
+### Accessing the Data
+- [func AudioCodecProduceOutputPackets(AudioCodec, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, UnsafeMutablePointer<UInt32>) -> OSStatus](./audiocodecproduceoutputpackets%28_,_,_,_,_,_%29.md)
   Retrieves output data from a codec.
 
 

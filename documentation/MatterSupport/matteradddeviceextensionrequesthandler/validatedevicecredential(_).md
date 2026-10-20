@@ -1,7 +1,8 @@
 # validateDeviceCredential(_:)
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs verification and attestation checks.
 
@@ -10,7 +11,7 @@ Performs verification and attestation checks.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,11 +27,12 @@ This is the first callback that the system invokes during the setup flow. It run
 
 ## See Also
 
-- [func configureDevice(named: String, in: MatterAddDeviceRequest.Room?) async](matteradddeviceextensionrequesthandler/configuredevice(named:in:).md)
+### Configuring and validating the device
+- [func configureDevice(named: String, in: MatterAddDeviceRequest.Room?) async](./configuredevice%28named,in%29.md)
   Configures the device with selected attributes.
-- [MatterAddDeviceExtensionRequestHandler.DeviceCredential](matteradddeviceextensionrequesthandler/devicecredential.md)
+- [MatterAddDeviceExtensionRequestHandler.DeviceCredential](./devicecredential.md)
   A collection of device credentials the device presents during commissioning.
-- [func rooms(in: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]](matteradddeviceextensionrequesthandler/rooms(in:).md)
+- [func rooms(in: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]](./rooms%28in%29.md)
   Provides rooms that correspond to a home in the device setup.
 
 

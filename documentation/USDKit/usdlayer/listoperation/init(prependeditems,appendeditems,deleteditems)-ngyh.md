@@ -1,7 +1,8 @@
 # init(prependedItems:appendedItems:deletedItems:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -11,11 +12,15 @@
 - tvOS 27.0+
 - visionOS 27.0+
 
+> **Deprecated**: Use ListOperation<UInt32> for uint or ListOperation<UInt64> for uint64.
+
 ## Declaration
 
 ```swift
 init(prependedItems: [UInt] = [], appendedItems: [UInt] = [], deletedItems: [UInt] = [])
 ```
+
+Available when `T` is `UInt`.
 
 
 ---

@@ -1,7 +1,8 @@
 # ModelJudgePrompt
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration for how a model evaluator constructs its prompt.
 
@@ -22,7 +23,7 @@ struct ModelJudgePrompt<Input> where Input : ModelSampleProtocol
 
 ## Mentions
 
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
 
 #### Overview
 
@@ -32,38 +33,39 @@ let prompt = ModelJudgePrompt<ModelSample<String>>(
 )
 ```
 
-`ModelJudgePrompt` bundles the instructions, response presentation, and reference-data injection into a single composable value. Use it with [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to customize how the model judge sees the evaluation.
+`ModelJudgePrompt` bundles the instructions, response presentation, and reference-data injection into a single composable value. Use it with [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) to customize how the model judge sees the evaluation.
 
 ## Topics
 
 ### Creating a prompt configuration
-- [init(instructions: String, evaluationTarget: ((Input.ExpectedValue) -> String)?, reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?)](modeljudgeprompt/init(instructions:evaluationtarget:reference:).md)
+- [init(instructions: String, evaluationTarget: ((Input.ExpectedValue) -> String)?, reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?)](./modeljudgeprompt/init%28instructions,evaluationtarget,reference%29.md)
   Creates a model prompt configuration.
-- [static var defaultInstructions: String](modeljudgeprompt/defaultinstructions.md)
+- [static var defaultInstructions: String](./modeljudgeprompt/defaultinstructions.md)
   The default system instructions used when no custom instructions are provided.
 ### Customizing judge input
-- [let instructions: String](modeljudgeprompt/instructions.md)
+- [let instructions: String](./modeljudgeprompt/instructions.md)
   The system instructions for the model judge.
-- [let evaluationTarget: ((Input.ExpectedValue) -> String)?](modeljudgeprompt/evaluationtarget.md)
+- [let evaluationTarget: ((Input.ExpectedValue) -> String)?](./modeljudgeprompt/evaluationtarget.md)
   An optional closure that converts the model’s response to a string for the model prompt.
-- [let reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?](modeljudgeprompt/reference.md)
+- [let reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?](./modeljudgeprompt/reference.md)
   An optional closure that provides labeled reference data to include in the model prompt.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+### Model-judge evaluations
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
   Configure model-judge evaluators that produce scores you correlate with human review.
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
   Score subjective qualities like tone, accuracy, and relevance that programmatic checks cannot measure.
-- [struct ModelJudgeEvaluator](modeljudgeevaluator.md)
+- [struct ModelJudgeEvaluator](./modeljudgeevaluator.md)
   An evaluator that uses a language model as a judge to score responses.
-- [struct ScoreDimension](scoredimension.md)
+- [struct ScoreDimension](./scoredimension.md)
   A named scoring dimension for a model evaluator.
 
 

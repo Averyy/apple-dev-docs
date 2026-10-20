@@ -1,7 +1,8 @@
 # NavigationMeshResource.FlagGroup
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of Flags.
 
@@ -22,38 +23,39 @@ struct FlagGroup
 ## Topics
 
 ### Modifying flags
-- [func setFlag(NavigationMeshResource.Flag)](navigationmeshresource/flaggroup/setflag(_:).md)
-  Sets a specific flag in the [`NavigationMeshResource.FlagGroup`](navigationmeshresource/flaggroup.md).
-- [func unsetFlag(NavigationMeshResource.Flag)](navigationmeshresource/flaggroup/unsetflag(_:).md)
-  Unsets a specific flag in the [`NavigationMeshResource.FlagGroup`](navigationmeshresource/flaggroup.md).
+- [func setFlag(NavigationMeshResource.Flag)](./flaggroup/setflag%28_%29.md)
+  Sets a specific flag in the [`NavigationMeshResource.FlagGroup`](./flaggroup.md).
+- [func unsetFlag(NavigationMeshResource.Flag)](./flaggroup/unsetflag%28_%29.md)
+  Unsets a specific flag in the [`NavigationMeshResource.FlagGroup`](./flaggroup.md).
 ### Initializers
-- [init(UInt64)](navigationmeshresource/flaggroup/init(_:).md)
+- [init(UInt64)](./flaggroup/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NavigationMeshResource.Configuration](navigationmeshresource/configuration-swift.struct.md)
+### Supporting types
+- [NavigationMeshResource.Configuration](./configuration-swift.struct.md)
   The NavigationMeshResource configuration that defines how the mesh is created.
-- [NavigationMeshResource.Area](navigationmeshresource/area.md)
+- [NavigationMeshResource.Area](./area.md)
   An identifier for different areas on a Navigation Mesh.
-- [NavigationMeshResource.Flag](navigationmeshresource/flag.md)
+- [NavigationMeshResource.Flag](./flag.md)
   An identifier for different flags on a Navigation Mesh.
-- [NavigationMeshResource.OffMeshConnection](navigationmeshresource/offmeshconnection.md)
+- [NavigationMeshResource.OffMeshConnection](./offmeshconnection.md)
   A container for the data associated with an off-mesh connection.
-- [NavigationMeshResource.HeightData](navigationmeshresource/heightdata-swift.struct.md)
+- [NavigationMeshResource.HeightData](./heightdata-swift.struct.md)
   A container for the detailed height data of the NavigationMeshResource.
-- [NavigationMeshResource.Layer](navigationmeshresource/layer-swift.struct.md)
-  An identifier for a Navigation Mesh, used by a [`NavigationComponent`](navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
-- [NavigationMeshResource.PathNode](navigationmeshresource/pathnode.md)
+- [NavigationMeshResource.Layer](./layer-swift.struct.md)
+  An identifier for a Navigation Mesh, used by a [`NavigationComponent`](../navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
+- [NavigationMeshResource.PathNode](./pathnode.md)
   A container for the path node data.
 
 

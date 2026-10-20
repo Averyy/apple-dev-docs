@@ -1,7 +1,8 @@
 # PhysicsSimulationComponent.CollisionOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The options set that defines how a physics simulation reports collisions.
 
@@ -22,23 +23,23 @@ struct CollisionOptions
 ## Topics
 
 ### Type Properties
-- [static let all: PhysicsSimulationComponent.CollisionOptions](physicssimulationcomponent/collisionoptions-swift.struct/all.md)
+- [static let all: PhysicsSimulationComponent.CollisionOptions](./collisionoptions-swift.struct/all.md)
   Reports collisions between kinematic objects and both static and kinematic objects.
-- [static let none: PhysicsSimulationComponent.CollisionOptions](physicssimulationcomponent/collisionoptions-swift.struct/none.md)
+- [static let none: PhysicsSimulationComponent.CollisionOptions](./collisionoptions-swift.struct/none.md)
   Opts out of reporting collisions.
-- [static let reportKinematicVsKinematic: PhysicsSimulationComponent.CollisionOptions](physicssimulationcomponent/collisionoptions-swift.struct/reportkinematicvskinematic.md)
+- [static let reportKinematicVsKinematic: PhysicsSimulationComponent.CollisionOptions](./collisionoptions-swift.struct/reportkinematicvskinematic.md)
   Reports collisions between kinematic objects.
-- [static let reportKinematicVsStatic: PhysicsSimulationComponent.CollisionOptions](physicssimulationcomponent/collisionoptions-swift.struct/reportkinematicvsstatic.md)
+- [static let reportKinematicVsStatic: PhysicsSimulationComponent.CollisionOptions](./collisionoptions-swift.struct/reportkinematicvsstatic.md)
   Reports collisions between kinematic objects and static objects.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PredicateExpressions.Conditional
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,24 +22,24 @@ struct Conditional<Test, If, Else> where Test : PredicateExpression, If : Predic
 ## Topics
 
 ### Initializers
-- [init(test: Test, trueBranch: If, falseBranch: Else)](predicateexpressions/conditional/init(test:truebranch:falsebranch:).md)
+- [init(test: Test, trueBranch: If, falseBranch: Else)](./conditional/init%28test,truebranch,falsebranch%29.md)
 ### Instance Properties
-- [let falseBranch: Else](predicateexpressions/conditional/falsebranch.md)
-- [let test: Test](predicateexpressions/conditional/test.md)
-- [let trueBranch: If](predicateexpressions/conditional/truebranch.md)
+- [let falseBranch: Else](./conditional/falsebranch.md)
+- [let test: Test](./conditional/test.md)
+- [let trueBranch: If](./conditional/truebranch.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

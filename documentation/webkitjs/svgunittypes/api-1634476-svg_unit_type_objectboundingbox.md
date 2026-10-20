@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_UNIT_TYPE_OBJECTBOUNDINGBOX;
 ```
 
 ## See Also
 
-- [SVG_UNIT_TYPE_UNKNOWN](svgunittypes/1629252-svg_unit_type_unknown.md)
-- [SVG_UNIT_TYPE_USERSPACEONUSE](svgunittypes/1630577-svg_unit_type_userspaceonuse.md)
+### Miscellaneous
+- [SVG_UNIT_TYPE_UNKNOWN](./api-1629252-svg_unit_type_unknown.md)
+- [SVG_UNIT_TYPE_USERSPACEONUSE](./api-1630577-svg_unit_type_userspaceonuse.md)
 
 
 ---

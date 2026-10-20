@@ -1,7 +1,8 @@
 # store(in:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores this cancellable instance in the specified set.
 
@@ -22,11 +23,12 @@ func store(in set: inout Set<AnyCancellable>)
 
 ## Parameters
 
-- `set`: The set in which to store this [`Cancellable`](cancellable.md).
+- `set`: The set in which to store this [`Cancellable`](../cancellable.md).
 
 ## See Also
 
-- [func store<C>(in: inout C)](cancellable/store(in:)-35vnt.md)
+### Storing instances
+- [func store<C>(in: inout C)](./store%28in%29-35vnt.md)
   Stores this cancellable instance in the specified collection.
 
 

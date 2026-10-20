@@ -1,11 +1,12 @@
 # init(service:identity:identity_type:update_type:instigator_token:instigator:responsible_token:responsible:right:reason:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

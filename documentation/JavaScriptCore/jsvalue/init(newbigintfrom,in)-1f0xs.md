@@ -1,7 +1,8 @@
 # init(newBigIntFrom:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init?(newBigIntFrom string: String, in context: JSContext)
+```
+
+```objc
++ (JSValue *) valueWithNewBigIntFromString:(NSString *) string inContext:(JSContext *) context;
 ```
 
 #### Return Value

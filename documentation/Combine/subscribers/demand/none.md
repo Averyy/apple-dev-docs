@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A request for no elements from the publisher.
 
@@ -26,7 +27,8 @@ This is equivalent to `Demand.max(0)`.
 
 ## See Also
 
-- [static let unlimited: Subscribers.Demand](subscribers/demand/unlimited.md)
+### Using special demands
+- [static let unlimited: Subscribers.Demand](./unlimited.md)
   A request for as many values as the publisher can produce.
 
 

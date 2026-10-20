@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Sets the identifier for a media item.
 
@@ -17,6 +18,10 @@ Sets the identifier for a media item.
 
 ```swift
 init(identifier: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
 #### Return Value

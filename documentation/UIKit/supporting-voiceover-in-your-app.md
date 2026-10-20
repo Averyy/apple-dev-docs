@@ -1,6 +1,7 @@
 # Supporting VoiceOver in your app
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Add VoiceOver support to make your iOS app more accessible to users who are blind or have low vision.
 
@@ -10,15 +11,15 @@ VoiceOver is a gesture-based screen reader that enables people to experience the
 
 With a few steps, you can make your app VoiceOver-accessible in Xcode or programmatically. By increasing accessibility, you open your app to a wider audience, and make it easier for everyone to use.
 
-![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighting the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the iCloud section header.](/images/com.apple.uikit/supporting-voiceover-in-your-app@2x.png)
+![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighting the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the iCloud section header.](https://developer.apple.com/tutorials/images/com.apple.uikit/supporting-voiceover-in-your-app@2x.png)
 
-##### Audit Your App with Voiceover on
+##### Audit your app with VoiceOver on
 
 To test the accessibility of your app, turn on VoiceOver and navigate through the interface. By using your app with VoiceOver on, you can establish a baseline of its accessibility. To start auditing, choose Settings > Accessibility > VoiceOver, and enable VoiceOver. Then, open your app and use the specified action whenever you want to test VoiceOver.
 
 Auditing reveals which elements are accessible with VoiceOver and which aren’t, and shows you if VoiceOver navigation is clear and logical. Keep track of which elements aren’t accessible, and create a list of improvements for adding better VoiceOver support.
 
-##### Navigate with Voiceover on
+##### Navigate with VoiceOver on
 
 To audit your app with VoiceOver on, you use VoiceOver’s unique set of gestures to navigate your app. For testing, there are five key gestures that you may use:
 
@@ -28,11 +29,11 @@ To audit your app with VoiceOver on, you use VoiceOver’s unique set of gesture
 - Swipe up with two fingers to read everything onscreen.
 - Three-finger triple-tap to turn Screen Curtain on and off.
 
-To learn more, see [`Operate iPhone using VoiceOver gestures`](https://developer.apple.comhttps://support.apple.com/guide/iphone/operate-iphone-using-voiceover-gestures-iph3e2e2329/ios).
+To learn more, see [Operate iPhone using VoiceOver gestures](https://support.apple.com/guide/iphone/operate-iphone-using-voiceover-gestures-iph3e2e2329/ios).
 
 To replicate the experience of someone who is solely relying on VoiceOver, test your app using Screen Curtain. As the name implies, Screen Curtain blacks out the entire screen. You can still navigate using VoiceOver gestures, but you can’t see the elements on the screen.
 
-##### Identify Common Accessibility Issues
+##### Identify common accessibility issues
 
 To audit your app, check that you can access every element and that the ordering of those elements is what you intend. Take note of which elements VoiceOver can or can’t access. Also, pay attention when you find it difficult to perform a task because you assume it’s reliant on visuals. For example, when you’re navigating back to your app’s initial view, or you’re sharing content with another app or user, how can you use VoiceOver to make it accessible? While auditing your app, here are some common issues to look for:
 
@@ -42,23 +43,23 @@ To audit your app, check that you can access every element and that the ordering
 
 When you know which areas need improvements, start adding greater VoiceOver support to your app.
 
-##### Update Your Apps Accessibility
+##### Update your app’s accessibility
 
-For elements that aren’t accessible to VoiceOver, start by improving their accessibility labels and hints. The [`accessibilityLabel`](uiaccessibilityelement/accessibilitylabel.md) property provides descriptive text that VoiceOver reads when the user selects an element, and the [`accessibilityHint`](uiaccessibilityelement/accessibilityhint.md) property provides additional context (or actions) for the selected element.
+For elements that aren’t accessible to VoiceOver, start by improving their accessibility labels and hints. The [`accessibilityLabel`](./uiaccessibilityelement/accessibilitylabel.md) property provides descriptive text that VoiceOver reads when the user selects an element, and the [`accessibilityHint`](./uiaccessibilityelement/accessibilityhint.md) property provides additional context (or actions) for the selected element.
 
-Accessibility labels are very important because they provide the text that VoiceOver reads. A good accessibility label is short and informative. It’s important to note that a [`UILabel`](uilabel.md) and an [`accessibilityLabel`](uiaccessibilityelement/accessibilitylabel.md) are different things. By default, VoiceOver reads the text for standard [`UIKit`](UIKit.md) controls, such as [`UILabel`](uilabel.md) and [`UIButton`](uibutton.md). However, these controls can also have corresponding [`accessibilityLabel`](uiaccessibilityelement/accessibilitylabel.md) properties to add more detail about the label or button.
+Accessibility labels are very important because they provide the text that VoiceOver reads. A good accessibility label is short and informative. It’s important to note that a [`UILabel`](./uilabel.md) and an [`accessibilityLabel`](./uiaccessibilityelement/accessibilitylabel.md) are different things. By default, VoiceOver reads the text for standard [UIKit](./UIKit.md) controls, such as [`UILabel`](./uilabel.md) and [`UIButton`](./uibutton.md). However, these controls can also have corresponding [`accessibilityLabel`](./uiaccessibilityelement/accessibilitylabel.md) properties to add more detail about the label or button.
 
 Depending on the context, hints aren’t always necessary. In some cases, the label provides enough context. If you feel like you’re saying too much in an accessibility label, consider moving that text into a hint.
 
 To ensure that users understand the intent of your interface, you might need to set some accessibility labels manually. You can set accessibility labels and hints in Xcode’s Identity inspector, or programmatically.
 
-##### Add Accessibility Labels and Hints Using the Identity Inspector
+##### Add accessibility labels and hints using the Identity inspector
 
 When using standard UIKit controls, assign accessibility labels and hints in Xcode using the Identity inspector’s Accessibility pane. To improve accessibility, you make an element accessible by selecting the Accessibility Enabled option. For example, the play button in a music app might include the following label and hint:
 
-![An Xcode screenshot showing the Accessibility pane of the Identity inspector. This pane has a checkbox to enable accessibility, and three text fields to enter text for an object’s label, hint, and identifier. The Accessibility Enabled option is in a selected state. The Label field says Play Song, the Hint field says Play the selected song, and the Identifier field is blank.](/images/com.apple.uikit/media-3023633@2x.png)
+![An Xcode screenshot showing the Accessibility pane of the Identity inspector. This pane has a checkbox to enable accessibility, and three text fields to enter text for an object’s label, hint, and identifier. The Accessibility Enabled option is in a selected state. The Label field says Play Song, the Hint field says Play the selected song, and the Identifier field is blank.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3023633@2x.png)
 
-##### Add Accessibility Labels and Hints Programmatically
+##### Add accessibility labels and hints programmatically
 
 There are times when adding accessibility labels and hints in Xcode isn’t enough, such as when you’re working with custom UI elements that VoiceOver doesn’t automatically recognize, or if you’re using variables as part of your accessibility labels. In those situations, you need to set the accessibility labels or hints programmatically. You specify that an element is an accessibility element, and then create a corresponding accessibility label and hint.
 
@@ -75,15 +76,15 @@ score.accessibilityLabel = "score: \(currentScore)"
 score.accessibilityHint = "Your current score" 
 ```
 
-##### Simplify Your Accessibility Information
+##### Simplify your accessibility information
 
 VoiceOver reads in the direction of the device’s language. For example, VoiceOver reads English from left-to-right and it reads Arabic and Farsi from right-to-left. If you vertically stack labels in a UI, or display text in a table, VoiceOver may not read the labels in the correct order. You can programmatically group accessibility elements to ensure that VoiceOver reads them as you intend. For example, if you’re creating an app that stacks a title and a value to display a person’s name and email address, depending on their order in the interface, VoiceOver may not read those elements together. Group the elements to ensure that you’re creating a clear context.
 
-![Two side-by-side diagrams demonstrating how VoiceOver reads ungrouped and grouped labels. The left diagram contains two stacks of ungrouped labels depicting a person’s name and email address. The first stack consists of the Name label with the person’s name below, and the second stack consists of the Email label with the email address below. VoiceOver reads these four items in a top-left, top-right, bottom-left, and bottom-right sequence — Name label, Email label, person’s name, email address. The right diagram consists of two label groups. The first group contains the Name label and the person’s name, and the second group contains the Email label and the email address. VoiceOver reads the first group before reading the second group.](/images/com.apple.uikit/media-3023631@2x.png)
+![Two side-by-side diagrams demonstrating how VoiceOver reads ungrouped and grouped labels. The left diagram contains two stacks of ungrouped labels depicting a person’s name and email address. The first stack consists of the Name label with the person’s name below, and the second stack consists of the Email label with the email address below. VoiceOver reads these four items in a top-left, top-right, bottom-left, and bottom-right sequence — Name label, Email label, person’s name, email address. The right diagram consists of two label groups. The first group contains the Name label and the person’s name, and the second group contains the Email label and the email address. VoiceOver reads the first group before reading the second group.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3023631@2x.png)
 
 In the image above, there are four labels on the left that VoiceOver reads from the leading to the trailing edge, in this case, left-to-right. Although every element is accessible to VoiceOver, this doesn’t provide the best user experience. On the right, VoiceOver reads the grouped labels in the intended order, which allows clear navigation.
 
-To group the labels, create a [`UIAccessibilityElement`](uiaccessibilityelement.md) and add the information you want to group together.
+To group the labels, create a [`UIAccessibilityElement`](./uiaccessibilityelement.md) and add the information you want to group together.
 
 ```swift
 var elements = [UIAccessibilityElement]()
@@ -97,9 +98,10 @@ Including an accessibility label for each element and grouping elements allows p
 
 ## See Also
 
-- [UIAccessibility](uiaccessibility-protocol.md)
+### Essentials
+- [UIAccessibility](./uiaccessibility-protocol.md)
   A set of methods that provides accessibility information about views and controls in an app’s user interface.
-- [UIAccessibilityContainer](uiaccessibilitycontainer.md)
+- [UIAccessibilityContainer](./uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
 
 

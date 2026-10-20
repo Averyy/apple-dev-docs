@@ -1,7 +1,8 @@
 # number
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version number of the operating system (e.g., “26.5”).
 

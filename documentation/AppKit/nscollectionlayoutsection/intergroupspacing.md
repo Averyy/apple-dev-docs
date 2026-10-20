@@ -1,7 +1,8 @@
 # interGroupSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space between the groups in the section.
 
@@ -14,9 +15,14 @@ The amount of space between the groups in the section.
 var interGroupSpacing: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat interGroupSpacing;
+```
+
 ## See Also
 
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutsection/contentinsets.md)
+### Configuring section spacing
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The amount of space between the content of the section and its boundaries.
 
 

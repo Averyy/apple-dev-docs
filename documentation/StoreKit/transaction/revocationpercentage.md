@@ -1,7 +1,8 @@
 # revocationPercentage
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
 
@@ -39,7 +40,7 @@ If the purchase had a quantity greater than 1, this percentage applies to the fu
 | 40% | 40000 |
 | 100% | 100000 |
 
-> **Note**: This property is not present for Advanced Commerce transactions, which use [`amount`](transaction/advancedcommerceinfo-swift.struct/refund/amount.md) instead.
+> **Note**: This property is not present for Advanced Commerce transactions, which use [`amount`](./advancedcommerceinfo-swift.struct/refund/amount.md) instead.
 
 
 ---

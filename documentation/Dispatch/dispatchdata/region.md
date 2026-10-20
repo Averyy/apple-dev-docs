@@ -1,7 +1,8 @@
 # DispatchData.Region
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 2.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 2.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration
@@ -21,24 +22,25 @@ struct Region
 ## Topics
 
 ### Accessing the Region
-- [subscript(DispatchData.Index) -> UInt8](dispatchdata/subscript(_:).md)
+- [subscript(DispatchData.Index) -> UInt8](./subscript%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [ContiguousBytes](../../Foundation/contiguousbytes.md)
+- [DataProtocol](../../Foundation/dataprotocol.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [subscript(DispatchData.Index) -> UInt8](dispatchdata/subscript(_:).md)
-- [func region(location: Int) -> (data: DispatchData, offset: Int)](dispatchdata/region(location:).md)
+### Accessing Buffer Data
+- [subscript(DispatchData.Index) -> UInt8](./subscript%28_%29.md)
+- [func region(location: Int) -> (data: DispatchData, offset: Int)](./region%28location%29.md)
 
 
 ---

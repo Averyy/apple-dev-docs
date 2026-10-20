@@ -1,7 +1,8 @@
 # HKMetadataKeyElevationAscended
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the cumulative elevation ascended during a workout.
 
@@ -19,17 +20,22 @@ A key that indicates the cumulative elevation ascended during a workout.
 let HKMetadataKeyElevationAscended: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyElevationAscended;
+```
+
 #### Discussion
 
-Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](hkquantity.md) object with a length unit.
+Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](./hkquantity.md) object with a length unit.
 
-HealthKit assigns this metadata key to the segments it automatically creates for [`HKWorkoutActivityType.downhillSkiing`](hkworkoutactivitytype/downhillskiing.md) and [`HKWorkoutActivityType.snowboarding`](hkworkoutactivitytype/snowboarding.md) workout sessions (Apple Watch Series 3 only).
+HealthKit assigns this metadata key to the segments it automatically creates for [`HKWorkoutActivityType.downhillSkiing`](./hkworkoutactivitytype/downhillskiing.md) and [`HKWorkoutActivityType.snowboarding`](./hkworkoutactivitytype/snowboarding.md) workout sessions (Apple Watch Series 3 only).
 
 ## See Also
 
-- [let HKMetadataKeyAlpineSlopeGrade: String](hkmetadatakeyalpineslopegrade.md)
+### Skiing and Snowboarding
+- [let HKMetadataKeyAlpineSlopeGrade: String](./hkmetadatakeyalpineslopegrade.md)
   A key that indicates the percent slope of a ski run.
-- [let HKMetadataKeyElevationDescended: String](hkmetadatakeyelevationdescended.md)
+- [let HKMetadataKeyElevationDescended: String](./hkmetadatakeyelevationdescended.md)
   A key that indicates the cumulative elevation descended during a workout.
 
 

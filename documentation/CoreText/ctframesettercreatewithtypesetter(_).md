@@ -1,7 +1,8 @@
 # CTFramesetterCreateWithTypesetter(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a framesetter directly from a typesetter.
 
@@ -20,6 +21,10 @@ Creates a framesetter directly from a typesetter.
 func CTFramesetterCreateWithTypesetter(_ typesetter: CTTypesetter) -> CTFramesetter
 ```
 
+```c
+extern CTFramesetterRefCTFramesetterCreateWithTypesetter(CTTypesetterRef typesetter);
+```
+
 #### Return Value
 
 This function returns a reference to a `CTFramesetter` object.
@@ -34,7 +39,8 @@ Each framesetter uses a typesetter internally to perform line breaking and other
 
 ## See Also
 
-- [func CTFramesetterCreateWithAttributedString(CFAttributedString) -> CTFramesetter](ctframesettercreatewithattributedstring(_:).md)
+### Creating a Framesetter
+- [func CTFramesetterCreateWithAttributedString(CFAttributedString) -> CTFramesetter](./ctframesettercreatewithattributedstring%28_%29.md)
   Creates an immutable framesetter object from an attributed string.
 
 

@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of a document segmentation request.
 
@@ -19,9 +20,14 @@ The results of a document segmentation request.
 var results: [VNRectangleObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNRectangleObservation *> * results;
+```
+
 ## See Also
 
-- [class VNRectangleObservation](vnrectangleobservation.md)
+### Accessing the Results
+- [class VNRectangleObservation](../vnrectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
 
 

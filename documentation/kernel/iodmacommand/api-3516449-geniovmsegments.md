@@ -1,14 +1,15 @@
 # genIOVMSegments
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 IOReturn genIOVMSegments(uint32_t op, InternalSegmentFunction outSegFunc, void *reference, UInt64 *offsetP, void *segmentsP, UInt32 *numSegmentsP);
 ```
 

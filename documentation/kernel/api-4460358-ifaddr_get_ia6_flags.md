@@ -1,14 +1,15 @@
 # ifaddr_get_ia6_flags
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 errno_t ifaddr_get_ia6_flags(ifaddr_t ifaddr, u_int32_t *out_flags);
 ```
 

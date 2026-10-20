@@ -1,7 +1,8 @@
 # isUpgraded
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the user upgraded to another subscription.
 
@@ -22,19 +23,20 @@ let isUpgraded: Bool
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 #### Discussion
 
-If [`isUpgraded`](transaction/isupgraded.md) is `true`, the user has upgraded the subscription represented by this transaction to another subscription. This value appears in the transaction only when the value is `true`. To determine the service that the customer is entitled to, look for another transaction that has a subscription with a higher level of service.
+If [`isUpgraded`](./isupgraded.md) is `true`, the user has upgraded the subscription represented by this transaction to another subscription. This value appears in the transaction only when the value is `true`. To determine the service that the customer is entitled to, look for another transaction that has a subscription with a higher level of service.
 
 ## See Also
 
-- [let ownershipType: Transaction.OwnershipType](transaction/ownershiptype-swift.property.md)
+### Getting purchase details
+- [let ownershipType: Transaction.OwnershipType](./ownershiptype-swift.property.md)
   A value that indicates whether the transaction was purchased by the user, or is made available to them through Family Sharing.
-- [Transaction.OwnershipType](transaction/ownershiptype-swift.struct.md)
+- [Transaction.OwnershipType](./ownershiptype-swift.struct.md)
   The types the system uses to describe whether the user purchased the product or it’s available to them through Family Sharing.
-- [let purchasedQuantity: Int](transaction/purchasedquantity.md)
+- [let purchasedQuantity: Int](./purchasedquantity.md)
   The number of consumable products purchased.
 
 

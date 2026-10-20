@@ -1,7 +1,8 @@
 # edit
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard Edit menu.
 
@@ -18,17 +19,22 @@ The standard Edit menu.
 static let edit: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuEdit;
+```
+
 ## See Also
 
-- [static let application: UIMenu.Identifier](uimenu/identifier-swift.struct/application.md)
+### Top-level menus
+- [static let application: UIMenu.Identifier](./application.md)
   The standard app menu.
-- [static let file: UIMenu.Identifier](uimenu/identifier-swift.struct/file.md)
+- [static let file: UIMenu.Identifier](./file.md)
   The standard File menu.
-- [static let view: UIMenu.Identifier](uimenu/identifier-swift.struct/view.md)
+- [static let view: UIMenu.Identifier](./view.md)
   The standard View menu.
-- [static let window: UIMenu.Identifier](uimenu/identifier-swift.struct/window.md)
+- [static let window: UIMenu.Identifier](./window.md)
   The standard Window menu.
-- [static let help: UIMenu.Identifier](uimenu/identifier-swift.struct/help.md)
+- [static let help: UIMenu.Identifier](./help.md)
   The standard Help menu.
 
 

@@ -1,7 +1,8 @@
 # init(mixerDefinition:format:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)
+```
+
+```objc
+- (instancetype) initWithMixerDefinition:(PHASEMixerDefinition *) mixerDefinition format:(AVAudioFormat *) format;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of the store that you make calls through.
 

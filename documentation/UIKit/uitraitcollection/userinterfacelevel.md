@@ -1,7 +1,8 @@
 # userInterfaceLevel
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elevation level of the interface.
 
@@ -17,40 +18,45 @@ The elevation level of the interface.
 var userInterfaceLevel: UIUserInterfaceLevel { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIUserInterfaceLevel userInterfaceLevel;
+```
+
 #### Discussion
 
-Levels create a visual separation between different parts of your UI. Window content typically appears at the [`UIUserInterfaceLevel.base`](uiuserinterfacelevel/base.md) level. When you want parts of your UI to stand out from the underlying background, assign the [`UIUserInterfaceLevel.elevated`](uiuserinterfacelevel/elevated.md) level to them. For example, the system assigns the [`UIUserInterfaceLevel.elevated`](uiuserinterfacelevel/elevated.md) level to alerts and popovers.
+Levels create a visual separation between different parts of your UI. Window content typically appears at the [`UIUserInterfaceLevel.base`](../uiuserinterfacelevel/base.md) level. When you want parts of your UI to stand out from the underlying background, assign the [`UIUserInterfaceLevel.elevated`](../uiuserinterfacelevel/elevated.md) level to them. For example, the system assigns the [`UIUserInterfaceLevel.elevated`](../uiuserinterfacelevel/elevated.md) level to alerts and popovers.
 
 ## See Also
 
-- [var userInterfaceStyle: UIUserInterfaceStyle](uitraitcollection/userinterfacestyle.md)
+### Retrieving interface-related traits
+- [var userInterfaceStyle: UIUserInterfaceStyle](./userinterfacestyle.md)
   The style associated with the user interface.
-- [enum UIUserInterfaceStyle](uiuserinterfacestyle.md)
+- [enum UIUserInterfaceStyle](../uiuserinterfacestyle.md)
   Constants that indicate the interface style for the app.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uitraitcollection/userinterfaceidiom.md)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](./userinterfaceidiom.md)
   The user interface idiom of the trait collection.
-- [enum UIUserInterfaceIdiom](uiuserinterfaceidiom.md)
+- [enum UIUserInterfaceIdiom](../uiuserinterfaceidiom.md)
   Constants that indicate the interface type for the device or an object that has a trait environment, such as a view and view controller.
-- [enum UIUserInterfaceLevel](uiuserinterfacelevel.md)
+- [enum UIUserInterfaceLevel](../uiuserinterfacelevel.md)
   Constants that indicate the visual level for content in the window.
-- [var layoutDirection: UITraitEnvironmentLayoutDirection](uitraitcollection/layoutdirection.md)
+- [var layoutDirection: UITraitEnvironmentLayoutDirection](./layoutdirection.md)
   The layout direction associated with the current environment.
-- [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
+- [enum UITraitEnvironmentLayoutDirection](../uitraitenvironmentlayoutdirection.md)
   Constants that indicate the layout direction associated with the current environment.
-- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
-- [var accessibilityContrast: UIAccessibilityContrast](uitraitcollection/accessibilitycontrast.md)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](./resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
+- [var accessibilityContrast: UIAccessibilityContrast](./accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
-- [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
+- [enum UIAccessibilityContrast](../uiaccessibilitycontrast.md)
   Constants that indicate the accessibility contrast setting.
-- [var legibilityWeight: UILegibilityWeight](uitraitcollection/legibilityweight.md)
+- [var legibilityWeight: UILegibilityWeight](./legibilityweight.md)
   The font weight to apply to text.
-- [enum UILegibilityWeight](uilegibilityweight.md)
+- [enum UILegibilityWeight](../uilegibilityweight.md)
   Constants that indicate the weight to apply to text in your interface.
-- [var activeAppearance: UIUserInterfaceActiveAppearance](uitraitcollection/activeappearance.md)
+- [var activeAppearance: UIUserInterfaceActiveAppearance](./activeappearance.md)
   A property that indicates whether a scene has an active appearance.
-- [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
+- [enum UIUserInterfaceActiveAppearance](../uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
-- [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uitraitcollection/toolbaritempresentationsize.md)
+- [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](./toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
 
 

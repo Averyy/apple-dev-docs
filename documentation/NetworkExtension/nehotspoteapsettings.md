@@ -1,7 +1,8 @@
 # NEHotspotEAPSettings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Extensible Authentication Protocol settings for configuring WPA and WPA2 enterprise Wi-Fi networks.
 
@@ -17,59 +18,64 @@ Extensible Authentication Protocol settings for configuring WPA and WPA2 enterpr
 class NEHotspotEAPSettings
 ```
 
+```objc
+@interface NEHotspotEAPSettings : NSObject
+```
+
 ## Topics
 
 ### Accessing EAP properties
-- [var isTLSClientCertificateRequired: Bool](nehotspoteapsettings/istlsclientcertificaterequired.md)
+- [var isTLSClientCertificateRequired: Bool](./nehotspoteapsettings/istlsclientcertificaterequired.md)
   A Boolean value indicating whether a network requires two-factor authentication or allows zero-factor authentication.
-- [var trustedServerNames: [String]](nehotspoteapsettings/trustedservernames.md)
+- [var trustedServerNames: [String]](./nehotspoteapsettings/trustedservernames.md)
   An array of server certificate common name strings used to verify a server’s certificate.
-- [var supportedEAPTypes: [NSNumber]](nehotspoteapsettings/supportedeaptypes.md)
+- [var supportedEAPTypes: [NSNumber]](./nehotspoteapsettings/supportedeaptypes.md)
   An array of supported EAP types.
-- [NEHotspotEAPSettings.EAPType](nehotspoteapsettings/eaptype.md)
-  The EAP types that may be specified in [`supportedEAPTypes`](nehotspoteapsettings/supportedeaptypes.md).
-- [var username: String](nehotspoteapsettings/username.md)
+- [NEHotspotEAPSettings.EAPType](./nehotspoteapsettings/eaptype.md)
+  The EAP types that may be specified in [`supportedEAPTypes`](./nehotspoteapsettings/supportedeaptypes.md).
+- [var username: String](./nehotspoteapsettings/username.md)
   The user name string for EAP authentication, encoded as UTF-8.
-- [var password: String](nehotspoteapsettings/password.md)
+- [var password: String](./nehotspoteapsettings/password.md)
   The password component of the IEEE 802.1X authentication credential.
-- [var preferredTLSVersion: NEHotspotEAPSettings.TLSVersion](nehotspoteapsettings/preferredtlsversion.md)
+- [var preferredTLSVersion: NEHotspotEAPSettings.TLSVersion](./nehotspoteapsettings/preferredtlsversion.md)
   The Transport Layer Security (TLS) version to use during a TLS authentication handshake.
-- [NEHotspotEAPSettings.TLSVersion](nehotspoteapsettings/tlsversion.md)
-  The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](nehotspoteapsettings/preferredtlsversion.md).
-- [var outerIdentity: String](nehotspoteapsettings/outeridentity.md)
+- [NEHotspotEAPSettings.TLSVersion](./nehotspoteapsettings/tlsversion.md)
+  The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](./nehotspoteapsettings/preferredtlsversion.md).
+- [var outerIdentity: String](./nehotspoteapsettings/outeridentity.md)
   The identity string to be used in the EAP-Identity/Response packet during outer EAP authentication.
-- [var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationType](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.property.md)
+- [var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationType](./nehotspoteapsettings/ttlsinnerauthenticationtype-swift.property.md)
   The inner-layer authentication protocol used by a TTLS module.
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md)
-  The TTLS Inner Authentication Types that may be specified by [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md).
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType](./nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md)
+  The TTLS Inner Authentication Types that may be specified by [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](./nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md).
 ### Setting Keychain-based EAP Properties
-- [func setIdentity(SecIdentity) -> Bool](nehotspoteapsettings/setidentity(_:).md)
+- [func setIdentity(SecIdentity) -> Bool](./nehotspoteapsettings/setidentity%28_%29.md)
   Sets the client identity for EAP authentication.
-- [func setTrustedServerCertificates([Any]) -> Bool](nehotspoteapsettings/settrustedservercertificates(_:).md)
+- [func setTrustedServerCertificates([Any]) -> Bool](./nehotspoteapsettings/settrustedservercertificates%28_%29.md)
   Sets trusted EAP server certificates for an enterprise Wi-Fi or Hotspot 2.0 network.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEHotspotConfigurationManager](nehotspotconfigurationmanager.md)
+### Wi-Fi network configuration
+- [class NEHotspotConfigurationManager](./nehotspotconfigurationmanager.md)
   A manager that applies and removes hotspot configurations of Wi-Fi networks.
-- [class NEHotspotConfiguration](nehotspotconfiguration.md)
+- [class NEHotspotConfiguration](./nehotspotconfiguration.md)
   Configuration settings for a Wi-Fi network.
-- [class NEHotspotHS20Settings](nehotspoths20settings.md)
+- [class NEHotspotHS20Settings](./nehotspoths20settings.md)
   Settings for configuring Hotspot 2.0 Wi-Fi networks.
 
 

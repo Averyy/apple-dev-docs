@@ -1,17 +1,22 @@
 # trackKnob(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tracks the knob and sends action messages to the receiver’s target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func trackKnob(with event: NSEvent)
+```
+
+```objc
+- (void) trackKnob:(NSEvent *) event;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This method is invoked automatically when the receiver receives `theEvent` mouse
 
 ## See Also
 
-- [var hitPart: NSScroller.Part](nsscroller/hitpart.md)
+### Event Handling
+- [var hitPart: NSScroller.Part](./hitpart.md)
   A part code indicating the manner in which the scrolling should be performed.
 
 

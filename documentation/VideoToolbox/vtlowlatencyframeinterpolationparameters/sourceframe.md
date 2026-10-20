@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Source frame that you provided when creating the low-latency frame interpolation parameters object.
 
@@ -19,11 +20,16 @@ Source frame that you provided when creating the low-latency frame interpolation
 var sourceFrame: VTFrameProcessorFrame { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTFrameProcessorFrame * sourceFrame;
+```
+
 ## See Also
 
-- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+### Inspecting the parameters
+- [var previousFrame: VTFrameProcessorFrame](./previousframe.md)
   Previous frame that you provided when creating the low-latency frame interpolation parameters object.
-- [var interpolationPhase: [Float]](vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
+- [var interpolationPhase: [Float]](./interpolationphase-886vi.md)
 
 
 ---

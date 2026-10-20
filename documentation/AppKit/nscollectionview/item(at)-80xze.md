@@ -1,7 +1,8 @@
 # item(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the collection view item for the represented object at the specified index.
 
@@ -14,13 +15,17 @@ Returns the collection view item for the represented object at the specified ind
 func item(at index: Int) -> NSCollectionViewItem?
 ```
 
+```objc
+- (NSCollectionViewItem *) itemAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 An instance of `NSCollectionViewItem`.
 
 #### Discussion
 
-Rather than using the [`NSCollectionViewItem`](nscollectionviewitem.md) instance returned by this method to determine the frame of the collection item’s view you should use [`content`](nscollectionview/content.md), it is significantly more efficient.
+Rather than using the [`NSCollectionViewItem`](../nscollectionviewitem.md) instance returned by this method to determine the frame of the collection item’s view you should use [`content`](./content.md), it is significantly more efficient.
 
 ## Parameters
 
@@ -28,15 +33,16 @@ Rather than using the [`NSCollectionViewItem`](nscollectionviewitem.md) instance
 
 ## See Also
 
-- [var selectionIndexes: IndexSet](nscollectionview/selectionindexes.md)
+### Legacy Collection View Support
+- [var selectionIndexes: IndexSet](./selectionindexes.md)
   The indexes of the currently selected items.
-- [func frameForItem(at: Int) -> NSRect](nscollectionview/frameforitem(at:).md)
+- [func frameForItem(at: Int) -> NSRect](./frameforitem%28at%29.md)
   Returns the frame of the collection view item at the specified index.
-- [func frameForItem(at: Int, withNumberOfItems: Int) -> NSRect](nscollectionview/frameforitem(at:withnumberofitems:).md)
+- [func frameForItem(at: Int, withNumberOfItems: Int) -> NSRect](./frameforitem%28at,withnumberofitems%29.md)
   Returns the frame of an item based on the number of items in the collection view.
-- [func draggingImageForItems(at: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](nscollectionview/draggingimageforitems(at:with:offset:)-951w7.md)
+- [func draggingImageForItems(at: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](./draggingimageforitems%28at,with,offset%29-951w7.md)
   This method computes and returns an image to use for dragging.
-- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nscollectionview/setdraggingsourceoperationmask(_:forlocal:).md)
+- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](./setdraggingsourceoperationmask%28_,forlocal%29.md)
   Configures the drag operation mask.
 
 

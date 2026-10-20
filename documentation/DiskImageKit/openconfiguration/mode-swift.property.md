@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode in which to open the disk image.
 

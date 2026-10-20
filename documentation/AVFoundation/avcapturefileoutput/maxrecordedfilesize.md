@@ -1,7 +1,8 @@
 # maxRecordedFileSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size, in bytes, of the data that should be recorded by the receiver.
 
@@ -18,27 +19,32 @@ The maximum size, in bytes, of the data that should be recorded by the receiver.
 var maxRecordedFileSize: Int64 { get set }
 ```
 
+```objc
+@property (nonatomic) int64_t maxRecordedFileSize;
+```
+
 #### Discussion
 
-This property specifies a hard limit on the data size of recorded files. Recording is stopped when the limit is reached and the [`fileOutput(_:didFinishRecordingTo:from:error:)`](avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:).md) delegate method is invoked with an appropriate error. The default value of this property is `0`, which indicates no limit.
+This property specifies a hard limit on the data size of recorded files. Recording is stopped when the limit is reached and the [`fileOutput(_:didFinishRecordingTo:from:error:)`](../avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md) delegate method is invoked with an appropriate error. The default value of this property is `0`, which indicates no limit.
 
 ## See Also
 
-- [var delegate: (any AVCaptureFileOutputDelegate)?](avcapturefileoutput/delegate.md)
+### Setting file output properties
+- [var delegate: (any AVCaptureFileOutputDelegate)?](./delegate.md)
   The delegate object for the capture file output.
-- [var maxRecordedDuration: CMTime](avcapturefileoutput/maxrecordedduration.md)
+- [var maxRecordedDuration: CMTime](./maxrecordedduration.md)
   The longest duration allowed for the recording.
-- [var minFreeDiskSpaceLimit: Int64](avcapturefileoutput/minfreediskspacelimit.md)
+- [var minFreeDiskSpaceLimit: Int64](./minfreediskspacelimit.md)
   The minimum amount of free space, in bytes, required for recording to continue on a given volume.
-- [var outputFileURL: URL?](avcapturefileoutput/outputfileurl.md)
+- [var outputFileURL: URL?](./outputfileurl.md)
   The URL to which output is directed.
-- [var recordedDuration: CMTime](avcapturefileoutput/recordedduration.md)
+- [var recordedDuration: CMTime](./recordedduration.md)
   Indicates the duration of the media recorded to the current output file.
-- [var recordedFileSize: Int64](avcapturefileoutput/recordedfilesize.md)
+- [var recordedFileSize: Int64](./recordedfilesize.md)
   Indicates the size, in bytes, of the data recorded to the current output file.
-- [var isRecording: Bool](avcapturefileoutput/isrecording.md)
+- [var isRecording: Bool](./isrecording.md)
   Indicates whether recording is in progress.
-- [var isRecordingPaused: Bool](avcapturefileoutput/isrecordingpaused.md)
+- [var isRecordingPaused: Bool](./isrecordingpaused.md)
   Indicates whether recording to the current output file is paused.
 
 

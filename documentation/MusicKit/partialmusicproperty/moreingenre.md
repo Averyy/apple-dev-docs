@@ -1,7 +1,8 @@
 # moreInGenre
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A identifier of the association property that returns a collection of music videos in the same genre as this music video.
 
@@ -19,6 +20,8 @@ A identifier of the association property that returns a collection of music vide
 ```swift
 static let moreInGenre: MusicRelationshipProperty<MusicVideo, MusicVideo>
 ```
+
+Available when `Root` is `MusicVideo`.
 
 
 ---

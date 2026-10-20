@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Something went wrong.
 
@@ -13,6 +14,8 @@ Something went wrong.
 - tvOS 18.0+
 - visionOS 2.0+
 - watchOS 11.0+
+
+> **Deprecated**: Prefer throwing an AppIntentError with a clear description
 
 ## Declaration
 

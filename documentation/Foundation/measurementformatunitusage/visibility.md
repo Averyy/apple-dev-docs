@@ -1,7 +1,8 @@
 # visibility
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Describes the distance of visibility
 
@@ -19,6 +20,8 @@ Describes the distance of visibility
 ```swift
 static var visibility: MeasurementFormatUnitUsage<UnitLength> { get }
 ```
+
+Available when `UnitType` is `UnitLength`.
 
 
 ---

@@ -1,7 +1,8 @@
 # cameraOriginMatrix
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform from the skeleton hip to the camera.
 
@@ -21,13 +22,14 @@ let cameraOriginMatrix: simd_float4x4
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let bodyHeight: Measurement<UnitLength>](humanbodypose3dobservation/bodyheight.md)
+- [let bodyHeight: Measurement<UnitLength>](./bodyheight.md)
   The estimated human body height, in meters.
-- [HumanBodyPose3DObservation.EstimationTechnique](humanbodypose3dobservation/estimationtechnique.md)
+- [HumanBodyPose3DObservation.EstimationTechnique](./estimationtechnique.md)
   Constants that identify body height estimation techniques.
-- [let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique](humanbodypose3dobservation/heightestimationtechnique.md)
+- [let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique](./heightestimationtechnique.md)
   The technique the framework uses to estimate body height.
 
 

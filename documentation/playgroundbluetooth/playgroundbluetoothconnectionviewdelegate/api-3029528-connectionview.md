@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a connected peripheral is about to be disconnected.
@@ -20,6 +21,12 @@ func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, willDis
 
 - `connectionView`: The connection view currently displaying the connection to this peripheral.
 - `peripheral`: The peripheral facing emminent disconnection.
+
+## Default Implementations
+
+### PlaygroundBluetoothConnectionViewDelegate Implementations
+- [func connectionView(PlaygroundBluetoothConnectionView, willDisconnectFrom: CBPeripheral)](./api-3029529-connectionview.md)
+  Tells the delegate that a connected peripheral is about to be disconnected.
 
 
 ---

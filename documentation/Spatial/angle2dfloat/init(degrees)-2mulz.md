@@ -1,7 +1,8 @@
 # init(degrees:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new angle from floating-point degrees.
 

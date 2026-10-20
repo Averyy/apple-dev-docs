@@ -1,7 +1,8 @@
 # CKDBCreateRecordRequestBody
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the request to create a new record.
 
@@ -10,7 +11,7 @@ An object that represents the request to create a new record.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBCreateRecordRequestBody {
 	string? recordName;
 	string recordType;
@@ -37,51 +38,52 @@ import type { CKDBCreateRecordRequestBody } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [createShortGuid](ckdbcreaterecordrequestbody/createshortguid.md)
+- [createShortGuid](./ckdbcreaterecordrequestbody/createshortguid.md)
   A Boolean value that indicates whether to create a short GUID for sharing this record.
-- [fields](ckdbcreaterecordrequestbody/fields.md)
+- [fields](./ckdbcreaterecordrequestbody/fields.md)
   The dictionary of key-value pairs whose keys are the record field names and values are field-value dictionaries.
-- [forRecord](ckdbcreaterecordrequestbody/forrecord.md)
-- [parent](ckdbcreaterecordrequestbody/parent.md)
-- [participants](ckdbcreaterecordrequestbody/participants.md)
+- [forRecord](./ckdbcreaterecordrequestbody/forrecord.md)
+- [parent](./ckdbcreaterecordrequestbody/parent.md)
+- [participants](./ckdbcreaterecordrequestbody/participants.md)
   The array of participants in the shared record.
-- [publicPermission](ckdbcreaterecordrequestbody/publicpermission.md)
-- [recordName](ckdbcreaterecordrequestbody/recordname.md)
+- [publicPermission](./ckdbcreaterecordrequestbody/publicpermission.md)
+- [recordName](./ckdbcreaterecordrequestbody/recordname.md)
   The unique name used to identify the record within a zone.
-- [recordType](ckdbcreaterecordrequestbody/recordtype.md)
-- [share](ckdbcreaterecordrequestbody/share.md)
+- [recordType](./ckdbcreaterecordrequestbody/recordtype.md)
+- [share](./ckdbcreaterecordrequestbody/share.md)
 
 ## See Also
 
-- [CKDBAsset](ckdbasset.md)
+### Structures
+- [CKDBAsset](./ckdbasset.md)
   An object that represents an asset uploaded to CloudKit.
-- [CKDBAssetUploadUrlResponse](ckdbassetuploadurlresponse.md)
+- [CKDBAssetUploadUrlResponse](./ckdbassetuploadurlresponse.md)
   An object that represents the results of creating an asset upload URL.
-- [CKDBChangeMetadata](ckdbchangemetadata.md)
+- [CKDBChangeMetadata](./ckdbchangemetadata.md)
   An object that represents metadata about a record change via creation or modification.
-- [CKDBCreateAssetUploadUrlRequestBody](ckdbcreateassetuploadurlrequestbody.md)
+- [CKDBCreateAssetUploadUrlRequestBody](./ckdbcreateassetuploadurlrequestbody.md)
   An object that represents the request for creating an asset upload URL.
-- [CKDBCreateZoneRequestBody](ckdbcreatezonerequestbody.md)
+- [CKDBCreateZoneRequestBody](./ckdbcreatezonerequestbody.md)
   An object that represents the request to create a new zone.
-- [CKDBDeleteRecordsByQueryRequestBody](ckdbdeleterecordsbyqueryrequestbody.md)
+- [CKDBDeleteRecordsByQueryRequestBody](./ckdbdeleterecordsbyqueryrequestbody.md)
   An object that represents the request to delete multiple records that match a query.
-- [CKDBDeletedRecordResult](ckdbdeletedrecordresult.md)
+- [CKDBDeletedRecordResult](./ckdbdeletedrecordresult.md)
   An object that represents a deleted record result.
-- [CKDBErrorRecordResult](ckdberrorrecordresult.md)
+- [CKDBErrorRecordResult](./ckdberrorrecordresult.md)
   An object that represents a record lookup failure.
-- [CKDBExistingRecordResult](ckdbexistingrecordresult.md)
+- [CKDBExistingRecordResult](./ckdbexistingrecordresult.md)
   An object that represents a successful record result.
-- [CKDBForRecord](ckdbforrecord.md)
+- [CKDBForRecord](./ckdbforrecord.md)
   An object that represents a record that is being shared.
-- [CKDBLocation](ckdblocation.md)
+- [CKDBLocation](./ckdblocation.md)
   An object that represents a location field value.
-- [CKDBLookupRecordsRequestBody](ckdblookuprecordsrequestbody.md)
+- [CKDBLookupRecordsRequestBody](./ckdblookuprecordsrequestbody.md)
   An object that represents the request for looking up multiple records by record name.
-- [CKDBLookupRecordsResponse](ckdblookuprecordsresponse.md)
+- [CKDBLookupRecordsResponse](./ckdblookuprecordsresponse.md)
   An object that represents the results of a batch record lookup operation.
-- [CKDBModifyRecordRequestBody](ckdbmodifyrecordrequestbody.md)
+- [CKDBModifyRecordRequestBody](./ckdbmodifyrecordrequestbody.md)
   An object that represents the request for updating an existing record.
-- [CKDBNullableReference](ckdbnullablereference.md)
+- [CKDBNullableReference](./ckdbnullablereference.md)
   An object that represents a reference to another record.
 
 

@@ -1,7 +1,8 @@
 # isEligible
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that indicates whether the current system supports card session functionality.
 
@@ -18,11 +19,12 @@ static var isEligible: Bool { get async }
 
 #### Discussion
 
-Query this property before calling [`init()`](cardsession/init().md) to avoid showing a system card session UI on ineligible devices.
+Query this property before calling [`init()`](./init%28%29.md) to avoid showing a system card session UI on ineligible devices.
 
 ## See Also
 
-- [class var isSupported: Bool](cardsession/issupported.md)
+### Determining card session availability
+- [class var isSupported: Bool](./issupported.md)
   A property that indicates whether the current device supports card session functionality.
 
 

@@ -1,7 +1,8 @@
 # lineDash
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An array of line and gap lengths for creating a dashed line.
 
@@ -10,7 +11,7 @@ An array of line and gap lengths for creating a dashed line.
 
 ## Declaration
 
-```swift
+```
 lineDash?: number[];
 ```
 
@@ -20,13 +21,14 @@ This property provides an array to use as the line’s dash pattern where the nu
 
 ## See Also
 
-- [lineCap](styleconstructoroptions/linecap.md)
+### Setting line styles
+- [lineCap](./linecap.md)
   The style to use when drawing line endings.
-- [lineDashOffset](styleconstructoroptions/linedashoffset.md)
+- [lineDashOffset](./linedashoffset.md)
   The number of CSS pixels to use as the offset when drawing a line’s dash pattern.
-- [lineJoin](styleconstructoroptions/linejoin.md)
+- [lineJoin](./linejoin.md)
   The style to use when drawing joins between line segments.
-- [lineWidth](styleconstructoroptions/linewidth.md)
+- [lineWidth](./linewidth.md)
   The width of a line’s stroke, in CSS pixels.
 
 

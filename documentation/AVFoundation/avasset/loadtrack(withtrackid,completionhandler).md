@@ -1,7 +1,8 @@
 # loadTrack(withTrackID:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a track that contains the specified identifier.
 
@@ -17,24 +18,35 @@ Loads a track that contains the specified identifier.
 ## Declaration
 
 ```swift
+func loadTrack(withTrackID trackID: CMPersistentTrackID, completionHandler: @escaping @Sendable (AVAssetTrack?, (any Error)?) -> Void)
+```
+
+```swift
 func loadTrack(withTrackID trackID: CMPersistentTrackID) async throws -> AVAssetTrack?
+```
+
+```objc
+- (void) loadTrackWithTrackID:(CMPersistentTrackID) trackID completionHandler:(void (^)(AVAssetTrack *, NSError *)) completionHandler;
 ```
 
 ## Parameters
 
 - `trackID`: The identifier of the track to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **track**: The loaded track, or `nil` if no track with the specified identifier exists or if an error occurs.
-- **error**: An error object if the request fails; otherwise, `nil`.
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+
+  - **track**: The loaded track, or `nil` if no track with the specified identifier exists or if an error occurs.
+  - **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 
-- [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](avpartialasyncproperty/tracks-48zyw.md)
+### Loading tracks
+- [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](../avpartialasyncproperty/tracks-48zyw.md)
   The tracks of media that an asset contains.
-- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avasset/loadtracks(withmediatype:completionhandler:).md)
+- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](./loadtracks%28withmediatype,completionhandler%29.md)
   Loads tracks that contain media of a specified type.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avasset/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](./loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
-- [func findUnusedTrackID(completionHandler: (CMPersistentTrackID, (any Error)?) -> Void)](avasset/findunusedtrackid(completionhandler:).md)
+- [func findUnusedTrackID(completionHandler: (CMPersistentTrackID, (any Error)?) -> Void)](./findunusedtrackid%28completionhandler%29.md)
   Loads an identifier that no other track in the asset uses.
 
 

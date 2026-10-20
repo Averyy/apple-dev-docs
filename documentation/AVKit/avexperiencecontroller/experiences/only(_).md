@@ -1,7 +1,8 @@
 # only(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a set of experiences for the provided list.
 
@@ -24,7 +25,8 @@ Use this method when the use case requires a specific set of experiences.
 
 ## See Also
 
-- [static func recommended<C>(excluding: C, including: C) -> AVExperienceController.Experiences](avexperiencecontroller/experiences/recommended(excluding:including:).md)
+### Defining experiences
+- [static func recommended<C>(excluding: C, including: C) -> AVExperienceController.Experiences](./recommended%28excluding,including%29.md)
   Returns the recommended set of experiences.
 
 

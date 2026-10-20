@@ -1,7 +1,8 @@
 # providePreview(for:completionHandler:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+optional func providePreview(for request: QLFilePreviewRequest, completionHandler handler: @escaping @Sendable (QLPreviewReply?, (any Error)?) -> Void)
+```
+
+```swift
 optional func providePreview(for request: QLFilePreviewRequest) async throws -> QLPreviewReply
+```
+
+```objc
+- (void) providePreviewForFileRequest:(QLFilePreviewRequest *) request completionHandler:(void (^)(QLPreviewReply *reply, NSError *error)) handler;
 ```
 
 #### Discussion

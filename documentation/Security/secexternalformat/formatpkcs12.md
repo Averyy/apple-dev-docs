@@ -1,7 +1,8 @@
 # SecExternalFormat.formatPKCS12
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Set of certificates and private keys. PKCS12 is the Personal Information Exchange Syntax from RSA Security, Inc.
 
@@ -12,6 +13,10 @@ Set of certificates and private keys. PKCS12 is the Personal Information Exchang
 
 ```swift
 case formatPKCS12
+```
+
+```c
+kSecFormatPKCS12
 ```
 
 

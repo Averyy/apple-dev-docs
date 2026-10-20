@@ -1,7 +1,8 @@
 # SCEPCredentialSubjectAltNameObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The subject’s alternative name for the certificate.
 
@@ -16,7 +17,7 @@ The subject’s alternative name for the certificate.
 
 ## Declaration
 
-```swift
+```
 object SCEPCredentialSubjectAltNameObject
 ```
 

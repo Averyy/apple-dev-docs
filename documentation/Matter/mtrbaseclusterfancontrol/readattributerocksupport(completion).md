@@ -1,7 +1,8 @@
 # readAttributeRockSupport(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRockSupport(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRockSupport() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRockSupportWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

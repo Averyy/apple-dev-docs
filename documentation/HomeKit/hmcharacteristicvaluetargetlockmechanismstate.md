@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetLockMechanismState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the state of a locking device.
 
@@ -19,29 +20,34 @@ Values that indicate the state of a locking device.
 enum HMCharacteristicValueTargetLockMechanismState
 ```
 
+```c
+enum HMCharacteristicValueTargetLockMechanismState : NSInteger;
+```
+
 ## Topics
 
 ### Lock Mechanism States
-- [HMCharacteristicValueTargetLockMechanismState.secured](hmcharacteristicvaluetargetlockmechanismstate/secured.md)
+- [HMCharacteristicValueTargetLockMechanismState.secured](./hmcharacteristicvaluetargetlockmechanismstate/secured.md)
   A secured lock mechanism.
-- [HMCharacteristicValueTargetLockMechanismState.unsecured](hmcharacteristicvaluetargetlockmechanismstate/unsecured.md)
+- [HMCharacteristicValueTargetLockMechanismState.unsecured](./hmcharacteristicvaluetargetlockmechanismstate/unsecured.md)
   An unsecured lock mechanism.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetlockmechanismstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetlockmechanismstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HMCharacteristicValueLockMechanismState](hmcharacteristicvaluelockmechanismstate.md)
+### Values
+- [enum HMCharacteristicValueLockMechanismState](./hmcharacteristicvaluelockmechanismstate.md)
   Possible values for the state of a lock mechanism.
 
 

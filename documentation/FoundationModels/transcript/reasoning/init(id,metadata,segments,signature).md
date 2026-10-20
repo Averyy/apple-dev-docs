@@ -1,7 +1,8 @@
 # init(id:metadata:segments:signature:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reasoning entry that contains the segments you provide.
 

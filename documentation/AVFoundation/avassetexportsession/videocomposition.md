@@ -1,7 +1,8 @@
 # videoComposition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional object that provides instructions for how to composite frames of video.
 
@@ -20,6 +21,10 @@ An optional object that provides instructions for how to composite frames of vid
 var videoComposition: AVVideoComposition? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
+```
+
 #### Discussion
 
 The default value is `nil`.
@@ -28,7 +33,8 @@ This property is key-value observable.
 
 ## See Also
 
-- [var customVideoCompositor: (any AVVideoCompositing)?](avassetexportsession/customvideocompositor.md)
+### Configuring video output
+- [var customVideoCompositor: (any AVVideoCompositing)?](./customvideocompositor.md)
   An optional custom object to use when compositing video frames.
 
 

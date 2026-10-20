@@ -1,7 +1,8 @@
 # itemLoadingToken
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A token to determine which item to return.
 
@@ -14,13 +15,18 @@ A token to determine which item to return.
 var itemLoadingToken: NSAccessibilityLoadingToken? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSAccessibilityLoadingToken itemLoadingToken;
+```
+
 ## See Also
 
-- [var targetElement: (any NSAccessibilityElementProtocol)?](nsaccessibilitycustomrotor/itemresult/targetelement.md)
+### Identifying an Item Result
+- [var targetElement: (any NSAccessibilityElementProtocol)?](./targetelement.md)
   A target element that references an element to message for accessibility properties.
-- [var targetRange: NSRange](nsaccessibilitycustomrotor/itemresult/targetrange.md)
+- [var targetRange: NSRange](./targetrange.md)
   A range that specifies the area of interest for text-based elements.
-- [var customLabel: String?](nsaccessibilitycustomrotor/itemresult/customlabel.md)
+- [var customLabel: String?](./customlabel.md)
   A localized label to use instead of the default item label to describe the item result.
 
 

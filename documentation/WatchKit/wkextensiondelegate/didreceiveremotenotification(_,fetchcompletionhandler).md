@@ -1,17 +1,26 @@
 # didReceiveRemoteNotification(_:fetchCompletionHandler:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a background notification has arrived.
 
 **Availability**:
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 9.2
 
 ## Declaration
 
 ```swift
+optional func didReceiveRemoteNotification(_ userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (WKBackgroundFetchResult) -> Void)
+```
+
+```swift
 optional func didReceiveRemoteNotification(_ userInfo: [AnyHashable : Any]) async -> WKBackgroundFetchResult
+```
+
+```objc
+- (void) didReceiveRemoteNotification:(NSDictionary *) userInfo fetchCompletionHandler:(void (^)(WKBackgroundFetchResult result)) completionHandler;
 ```
 
 #### Discussion
@@ -22,20 +31,21 @@ Use the background execution time to process the notification and download its a
 
 Background notifications are low priority, and the system limits these notifications based on the power considerations of the target device. APNs doesn’t guarantee that a device will receive push notifications, and apps that use significant amounts of power or time when processing background notifications may not receive background time to process future notifications.
 
-For more information, see [`Pushing background updates to your App`](https://developer.apple.com/documentation/usernotifications/pushing-background-updates-to-your-app).
+For more information, see [Pushing background updates to your App](../../UserNotifications/pushing-background-updates-to-your-app.md).
 
 ## Parameters
 
-- `userInfo`: A dictionary that contains data from the notification payload. The notification originates as a JSON-defined dictionary that WatchKit converts to a dictionary type; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull). For more information about the contents of the notification payload, see [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification).
-- `completionHandler`: The block to execute after the download operation completes. When calling this block, pass the fetch result that best describes your download operation. For a list of possible values, see the [`WKBackgroundFetchResult`](wkbackgroundfetchresult.md) type.
+- `userInfo`: A dictionary that contains data from the notification payload. The notification originates as a JSON-defined dictionary that WatchKit converts to a dictionary type; the dictionary may contain only property-list objects plus [`NSNull`](../../Foundation/nsnull.md). For more information about the contents of the notification payload, see [Generating a remote notification](../../UserNotifications/generating-a-remote-notification.md).
+- `completionHandler`: The block to execute after the download operation completes. When calling this block, pass the fetch result that best describes your download operation. For a list of possible values, see the [`WKBackgroundFetchResult`](../wkbackgroundfetchresult.md) type.
 
 ## See Also
 
-- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](wkextensiondelegate/didregisterforremotenotifications(withdevicetoken:).md)
+### Managing remote notifications
+- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](./didregisterforremotenotifications%28withdevicetoken%29.md)
   Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
-- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](wkextensiondelegate/didfailtoregisterforremotenotificationswitherror(_:).md)
+- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](./didfailtoregisterforremotenotificationswitherror%28_%29.md)
   Tells the delegate that Apple Push Notification service (APNs) cannot successfully complete the registration process.
-- [enum WKBackgroundFetchResult](wkbackgroundfetchresult.md)
+- [enum WKBackgroundFetchResult](../wkbackgroundfetchresult.md)
   The result of an attempt to download the content associated with a remote notification.
 
 

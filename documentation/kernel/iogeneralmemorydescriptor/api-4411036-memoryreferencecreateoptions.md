@@ -1,14 +1,15 @@
 # memoryReferenceCreateOptions
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.5+
 
 ## Declaration
 
-```swift
+```c
 IOOptionBits memoryReferenceCreateOptions(IOOptionBits options, IOMemoryMap *map);
 ```
 

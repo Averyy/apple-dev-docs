@@ -1,18 +1,19 @@
 # CFPlugInCreate(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a CFPlugIn given its URL.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a CFPlugIn given its URL.
 func CFPlugInCreate(_ allocator: CFAllocator!, _ plugInURL: CFURL!) -> CFPlugIn!
 ```
 
+```c
+extern CFPlugInRefCFPlugInCreate(CFAllocatorRef allocator, CFURLRef plugInURL);
+```
+
 #### Return Value
 
-A new plug-in. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new plug-in. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ A new plug-in. Ownership follows the [`The Create Rule`](https://developer.apple
 
 ## See Also
 
-- [func CFPlugInInstanceCreate(CFAllocator!, CFUUID!, CFUUID!) -> UnsafeMutableRawPointer!](cfplugininstancecreate(_:_:_:).md)
+### Creating Plug-ins
+- [func CFPlugInInstanceCreate(CFAllocator!, CFUUID!, CFUUID!) -> UnsafeMutableRawPointer!](./cfplugininstancecreate%28_,_,_%29.md)
   Creates a `CFPlugIn` instance of a given type using a given factory.
 
 

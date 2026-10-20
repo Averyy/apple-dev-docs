@@ -1,7 +1,8 @@
 # AVAudioUnitDistortionPreset.speechGoldenPi
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A preset that represents a golden pi distortion.
 
@@ -10,7 +11,7 @@ A preset that represents a golden pi distortion.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A preset that represents a golden pi distortion.
 case speechGoldenPi
 ```
 
+```c
+AVAudioUnitDistortionPresetSpeechGoldenPi
+```
+
 ## See Also
 
-- [AVAudioUnitDistortionPreset.speechAlienChatter](avaudiounitdistortionpreset/speechalienchatter.md)
+### Choosing a speech preset
+- [AVAudioUnitDistortionPreset.speechAlienChatter](./speechalienchatter.md)
   A preset that represents an alien chatter distortion.
-- [AVAudioUnitDistortionPreset.speechCosmicInterference](avaudiounitdistortionpreset/speechcosmicinterference.md)
+- [AVAudioUnitDistortionPreset.speechCosmicInterference](./speechcosmicinterference.md)
   A preset that represents a cosmic interference distortion.
-- [AVAudioUnitDistortionPreset.speechRadioTower](avaudiounitdistortionpreset/speechradiotower.md)
+- [AVAudioUnitDistortionPreset.speechRadioTower](./speechradiotower.md)
   A preset that represents a radio tower distortion.
-- [AVAudioUnitDistortionPreset.speechWaves](avaudiounitdistortionpreset/speechwaves.md)
+- [AVAudioUnitDistortionPreset.speechWaves](./speechwaves.md)
   A preset that represents a speech wave distortion.
 
 

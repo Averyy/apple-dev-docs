@@ -1,7 +1,8 @@
 # encoded(using:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a column by encoding each element’s value.
 
@@ -20,13 +21,15 @@ Generates a column by encoding each element’s value.
 func encoded<Encoder>(using encoder: Encoder) throws -> Column<Encoder.Output> where Encoder : TopLevelEncoder
 ```
 
+Available when `WrappedElement` conforms to `Encodable`.
+
 #### Return Value
 
 A new column of encoded values.
 
 #### Discussion
 
-> **Note**: `ColumnEncodingError` when the encoder fails to encode an element.
+> **Throws**: `ColumnEncodingError` when the encoder fails to encode an element.
 
 ## Parameters
 

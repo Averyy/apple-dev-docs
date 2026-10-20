@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the indices stored in the index buffer.
 
@@ -19,9 +20,14 @@ The data type of the indices stored in the index buffer.
 var indexType: MTLIndexType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MTLIndexType indexType;
+```
+
 ## See Also
 
-- [var indexBufferIndex: Int](mtlstageinputoutputdescriptor/indexbufferindex.md)
+### Declaring index buffers for indirect compute commands
+- [var indexBufferIndex: Int](./indexbufferindex.md)
   The location of the index buffer for a compute function using indexed thread addressing.
 
 

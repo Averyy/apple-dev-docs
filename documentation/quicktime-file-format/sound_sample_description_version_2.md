@@ -1,13 +1,14 @@
 # Sound sample description version 2 ('stsd')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An updated sound sample description that adds high resolution audio.
 
 ## Mentions
 
-- [QuickTime File Format change log](revision_history.md)
+- [QuickTime File Format change log](./revision_history.md)
 
 #### Overview
 
@@ -25,11 +26,11 @@ Some definitions for sound sample description version 2:
 - Audio Packet: For compressed audio, an audio packet is the natural compressed access unit of that format. For uncompressed audio, an audio packet is simply one LPCM frame.
 - Fields prefixed by `const`: Note the three sound sample description v2 fields whose names start with `const`. These fields are only nonzero if the value is a constant. A zero in each field implies that the value is variable. For example: AAC audio would have a zero in `constBytesPerAudioPacket` because AAC has variable sized audio packets. Codecs with variable duration audio packets set a zero in `constLPCMFramesPerAudioPacket`.
 
-#### Lpcm Flag Values
+#### LPCM flag values
 
 The formatSpecificFlags field carries flags significant to the layout and formatting of audio streams defined in the Core Audio underpinnings for sound sample description v2. These are enumerated in the Apple QuickTime/CoreAudioFormat.h interface file and are subject to a fuller interpretation in the context of the AudioStreamBasicDescription data type. See the CoreAudio, “Core Audio Framework Reference” in the OS X Developer Library.
 
-```None
+```
 enum
 {
     kAudioFormatFlagIsFloat                  = (1 << 0),  // 0x1
@@ -62,50 +63,51 @@ enum
 ## Topics
 
 ### Data fields
-- [Sample description size](sound_sample_description_version_2/sample_description_size.md)
+- [Sample description size](./sound_sample_description_version_2/sample_description_size.md)
   A 32-bit integer indicating the number of bytes in the sample description.
-- [Data format](sound_sample_description_version_2/data_format.md)
+- [Data format](./sound_sample_description_version_2/data_format.md)
   A 32-bit integer indicating the format of the stored data.
-- [Reserved](sound_sample_description_version_2/reserved.md)
+- [Reserved](./sound_sample_description_version_2/reserved.md)
   Six bytes.
-- [Data reference index](sound_sample_description_version_2/data_reference_index.md)
+- [Data reference index](./sound_sample_description_version_2/data_reference_index.md)
   A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description.
-- [Version](sound_sample_description_version_2/version.md)
+- [Version](./sound_sample_description_version_2/version.md)
   A 16-bit integer that holds the sample description version.
-- [Revision level](sound_sample_description_version_2/revision_level.md)
+- [Revision level](./sound_sample_description_version_2/revision_level.md)
   A 16-bit integer.
-- [Vendor](sound_sample_description_version_2/vendor.md)
+- [Vendor](./sound_sample_description_version_2/vendor.md)
   A 32-bit integer.
-- [always3](sound_sample_description_version_2/always3.md)
+- [always3](./sound_sample_description_version_2/always3.md)
   A 16-bit integer field.
-- [always16](sound_sample_description_version_2/always16.md)
+- [always16](./sound_sample_description_version_2/always16.md)
   A 16-bit integer field.
-- [alwaysMinus2](sound_sample_description_version_2/alwaysminus2.md)
+- [alwaysMinus2](./sound_sample_description_version_2/alwaysminus2.md)
   A 16-bit integer field.
-- [always0](sound_sample_description_version_2/always0.md)
+- [always0](./sound_sample_description_version_2/always0.md)
   A 16-bit integer field.
-- [always65536](sound_sample_description_version_2/always65536.md)
+- [always65536](./sound_sample_description_version_2/always65536.md)
   A 32-bit integer field.
-- [sizeOfStructOnly](sound_sample_description_version_2/sizeofstructonly.md)
+- [sizeOfStructOnly](./sound_sample_description_version_2/sizeofstructonly.md)
   A 32-bit integer field providing the offset to sound sample description structure’s extensions.
-- [numAudioChannels](sound_sample_description_version_2/numaudiochannels.md)
+- [numAudioChannels](./sound_sample_description_version_2/numaudiochannels.md)
   A 32-bit integer field set to the number of audio channels.
-- [always7F000000](sound_sample_description_version_2/always7f000000.md)
+- [always7F000000](./sound_sample_description_version_2/always7f000000.md)
   A 32-bit integer field.
-- [constBitsPerChannel](sound_sample_description_version_2/constbitsperchannel.md)
+- [constBitsPerChannel](./sound_sample_description_version_2/constbitsperchannel.md)
   A 32-bit integer field which is set only if constant and only for uncompressed audio.
-- [formatSpecificFlags](sound_sample_description_version_2/formatspecificflags.md)
+- [formatSpecificFlags](./sound_sample_description_version_2/formatspecificflags.md)
   A 32-bit integer field which carries LPCM flag values.
-- [constBytesPerAudioPacket](sound_sample_description_version_2/constbytesperaudiopacket.md)
+- [constBytesPerAudioPacket](./sound_sample_description_version_2/constbytesperaudiopacket.md)
   A 32-bit unsigned integer set to the number of bytes per packet only if this value is constant.
-- [constLPCMFramesPerAudioPacket](sound_sample_description_version_2/constlpcmframesperaudiopacket.md)
+- [constLPCMFramesPerAudioPacket](./sound_sample_description_version_2/constlpcmframesperaudiopacket.md)
   A 32-bit unsigned integer set to the number of PCM frames per packet only if this value is constant.
 
 ## See Also
 
-- [Sound sample description version 0 ('stsd')](sound_sample_description_version_0.md)
+### Using sample descriptions
+- [Sound sample description version 0 ('stsd')](./sound_sample_description_version_0.md)
   A sound sample description that supports only uncompressed audio in raw or twos-complement format.
-- [Sound sample description version 1 ('stsd')](sound_sample_description_version_1.md)
+- [Sound sample description version 1 ('stsd')](./sound_sample_description_version_1.md)
   An extended sound sample description that supports compressed audio, and includes the ability to add atoms to the sound description.
 
 

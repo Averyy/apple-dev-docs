@@ -1,7 +1,8 @@
 # MLRecommender.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The algorithms a recommender can use to make recommendations.
 
@@ -17,36 +18,37 @@ enum ModelAlgorithmType
 ## Topics
 
 ### Recommender algorithms
-- [MLRecommender.ModelAlgorithmType.itemSimilarity(_:)](mlrecommender/modelalgorithmtype/itemsimilarity(_:).md)
+- [MLRecommender.ModelAlgorithmType.itemSimilarity(_:)](./modelalgorithmtype/itemsimilarity%28_%29.md)
   An algorithm that compares the similarity from item to item.
-- [MLRecommender.SimilarityType](mlrecommender/similaritytype.md)
+- [MLRecommender.SimilarityType](./similaritytype.md)
   The metric by which the recommender computes item similarity.
 ### Algorithm descriptions
-- [var description: String](mlrecommender/modelalgorithmtype/description.md)
+- [var description: String](./modelalgorithmtype/description.md)
   A text representation of the recommender algorithm.
-- [var debugDescription: String](mlrecommender/modelalgorithmtype/debugdescription.md)
+- [var debugDescription: String](./modelalgorithmtype/debugdescription.md)
   A text representation of the recommender algorithm that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlrecommender/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelalgorithmtype/playgrounddescription.md)
   A description of the recommender algorithm shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlrecommender/modelalgorithmtype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlrecommender/modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlrecommender/modelalgorithmtype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelalgorithmtype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelalgorithmtype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLRecommender.SimilarityType](mlrecommender/similaritytype.md)
+### Supporting types
+- [MLRecommender.SimilarityType](./similaritytype.md)
   The metric by which the recommender computes item similarity.
 
 

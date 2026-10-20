@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A dictionary of `CFStringRef` keysand values for environment variables to set in the launched process.The value of this field can be `NULL`.
 
@@ -12,6 +13,10 @@ A dictionary of `CFStringRef` keysand values for environment variables to set in
 
 ```swift
 var environment: Unmanaged<CFDictionary>!
+```
+
+```c
+CFDictionaryRef environment;
 ```
 
 

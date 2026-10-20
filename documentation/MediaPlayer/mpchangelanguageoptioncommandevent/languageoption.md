@@ -1,7 +1,8 @@
 # languageOption
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested language option to change.
 
@@ -20,15 +21,20 @@ The requested language option to change.
 var languageOption: MPNowPlayingInfoLanguageOption { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPNowPlayingInfoLanguageOption * languageOption;
+```
+
 #### Discussion
 
-The supplied language option may be the Automatic Legible Language Option, which requests the best legible language based on the user’s preferences. See [`isAutomaticLegibleLanguageOption()`](mpnowplayinginfolanguageoption/isautomaticlegiblelanguageoption().md).
+The supplied language option may be the Automatic Legible Language Option, which requests the best legible language based on the user’s preferences. See [`isAutomaticLegibleLanguageOption()`](../mpnowplayinginfolanguageoption/isautomaticlegiblelanguageoption%28%29.md).
 
 ## See Also
 
-- [var setting: MPChangeLanguageOptionSetting](mpchangelanguageoptioncommandevent/setting.md)
+### Changing the language option
+- [var setting: MPChangeLanguageOptionSetting](./setting.md)
   The extent of the language setting change.
-- [enum MPChangeLanguageOptionSetting](mpchangelanguageoptionsetting.md)
+- [enum MPChangeLanguageOptionSetting](../mpchangelanguageoptionsetting.md)
   The states that determine when language option changes take effect.
 
 

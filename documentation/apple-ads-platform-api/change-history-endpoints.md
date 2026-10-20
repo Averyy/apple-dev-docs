@@ -1,6 +1,7 @@
 # Change History Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Query audit summaries and retrieve change detail records for entities in an ad account.
 
@@ -11,7 +12,7 @@ Query audit summaries and retrieve change detail records for entities in an ad a
 
 Change History provides a chronological log of every create, update, and delete operation performed on campaign entities within an ad account. Each entry captures what changed, which entity the change affected, who made the change, and when it occurred. Use it alongside the Reports API to correlate configuration changes with shifts in campaign performance.
 
-> ❗ **Important**: The query endpoint’s summary rows don’t carry a ready-to-use `detailId` by default. If you plan to look up field-level changes with the detail endpoint, set `options.metadata` to `latest` or `snapshot` on the query request so each row’s `metas` array includes a `detailId` you can pass straight to `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](get-change-details-by-detailid.md)). See Interpret the Response below for the full explanation.
+> ❗ **Important**: The query endpoint’s summary rows don’t carry a ready-to-use `detailId` by default. If you plan to look up field-level changes with the detail endpoint, set `options.metadata` to `latest` or `snapshot` on the query request so each row’s `metas` array includes a `detailId` you can pass straight to `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](./get-change-details-by-detailid.md)). See Interpret the Response below for the full explanation.
 
 #### Review the Endpoints
 
@@ -19,8 +20,8 @@ Change History exposes two endpoints: one to query audit summaries and one to re
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/change-history/query` | Queries audit summaries grouped by transaction, returning one row per (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination with a `count` of entity changes for that grouping. See [`Query Change History`](query-audit-summary-_-grouped-by-transaction.md) for details. |
-| `GET` | `/v1/change-history/{detailId}` | Retrieves field-level before and after values for a single entity change. See [`Get Change History Detail`](get-change-details-by-detailid.md) for details. |
+| `POST` | `/v1/change-history/query` | Queries audit summaries grouped by transaction, returning one row per (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination with a `count` of entity changes for that grouping. See [`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md) for details. |
+| `GET` | `/v1/change-history/{detailId}` | Retrieves field-level before and after values for a single entity change. See [`Get Change History Detail`](./get-change-details-by-detailid.md) for details. |
 
 ##### Structure the Request
 
@@ -29,19 +30,21 @@ The change history query endpoint uses a different schema from other `/query` en
 - `filters`: array of filter conditions. Every query request requires a time-range filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
 - `sorting`: array of sort objects, each with a `field` and `order` direction (`ASC` or `DESC`).
 - `pagination`: `offset` and `pageSize` to control result pages.
-- `options`: additional query controls. - `needTotals`: defaults to `"true"`. Set to `"false"` to skip the COUNT query and reduce response time, so `pagination.totalCount` is `0`.
-- `timeZone`: controls how the API interprets `eventTime` filter values, using `UTC` (default) or `ORTZ` (converted to UTC server-side using the org’s configured timezone).
-- `metadata`: controls which entity metadata appears in change detail responses, using `none` (default, no metadata), `latest` (joins current entity metadata), or `snapshot` (uses metadata captured at the time of the event).
+- `options`: additional query controls.
+
+  - `needTotals`: defaults to `"true"`. Set to `"false"` to skip the COUNT query and reduce response time, so `pagination.totalCount` is `0`.
+  - `timeZone`: controls how the API interprets `eventTime` filter values, using `UTC` (default) or `ORTZ` (converted to UTC server-side using the org’s configured timezone).
+  - `metadata`: controls which entity metadata appears in change detail responses, using `none` (default, no metadata), `latest` (joins current entity metadata), or `snapshot` (uses metadata captured at the time of the event).
 
 ##### Interpret the Response
 
 All change history endpoints return a `dataType` field that identifies the response object type. The query endpoint returns `"dataType": "AuditSummary"` and the detail endpoint returns `"dataType": "ChangeDetail"`.
 
-Each [`AuditSummary`](auditsummary.md) row represents one transaction grouping. The `count` field indicates how many entity changes of that entity type, user, and transaction grouping the row contains.
+Each [`AuditSummary`](./auditsummary.md) row represents one transaction grouping. The `count` field indicates how many entity changes of that entity type, user, and transaction grouping the row contains.
 
-An `AuditSummary` row alone doesn’t carry the `detailId` needed to look up field-level changes: the detail endpoint’s `detailId` is a composite `EntityType.entityId.txnId` string, and a summary row has `entityType` and `transactionId` but not `entityId`. To get a ready-to-use `detailId`, set `options.metadata` to `latest` or `snapshot` on the query request. Each resulting row’s `metas` array then includes one entry per changed entity, and you can pass each entry’s `detailId` field directly to `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](get-change-details-by-detailid.md)). See [`AuditSummary`](auditsummary.md) for the full `metas` shape and the metadata option behavior.
+An `AuditSummary` row alone doesn’t carry the `detailId` needed to look up field-level changes: the detail endpoint’s `detailId` is a composite `EntityType.entityId.txnId` string, and a summary row has `entityType` and `transactionId` but not `entityId`. To get a ready-to-use `detailId`, set `options.metadata` to `latest` or `snapshot` on the query request. Each resulting row’s `metas` array then includes one entry per changed entity, and you can pass each entry’s `detailId` field directly to `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](./get-change-details-by-detailid.md)). See [`AuditSummary`](./auditsummary.md) for the full `metas` shape and the metadata option behavior.
 
-Each [`ChangeDetails`](changedetails.md) record represents a single entity change within a transaction and contains a `details` array of [`ActivityDetail`](activitydetail.md) objects. Each [`ActivityDetail`](activitydetail.md) holds a `changes` array of field change objects, where each entry captures the `field` name, `oldValues`, and `newValues` as string arrays.
+Each [`ChangeDetails`](./changedetails.md) record represents a single entity change within a transaction and contains a `details` array of [`ActivityDetail`](./activitydetail.md) objects. Each [`ActivityDetail`](./activitydetail.md) holds a `changes` array of field change objects, where each entry captures the `field` name, `oldValues`, and `newValues` as string arrays.
 
 ##### Filter Results
 
@@ -88,18 +91,19 @@ The `eventType` field describes the nature of the change in a transaction. The e
 
 ## Topics
 
-- [Query Change History](query-audit-summary-_-grouped-by-transaction.md)
+- [Query Change History](./query-audit-summary-_-grouped-by-transaction.md)
   Query audit summaries grouped by transaction across a specified time range.
-- [Get Change History Detail](get-change-details-by-detailid.md)
+- [Get Change History Detail](./get-change-details-by-detailid.md)
   Retrieve field-level before and after values for a single entity change by its detail ID.
 
 ## See Also
 
-- [Change History Response Objects](change-history-response-objects.md)
+### Change History
+- [Change History Response Objects](./change-history-response-objects.md)
   Parse the audit summary and change detail objects returned by change history endpoints.
-- [Change History Query Objects](change-history-query-objects.md)
+- [Change History Query Objects](./change-history-query-objects.md)
   Build the filter, sort, and pagination inputs for change history query requests.
-- [Change History Enumerations](change-history-enumerations.md)
+- [Change History Enumerations](./change-history-enumerations.md)
   Look up the enumerated values accepted in change history query and response fields.
 
 

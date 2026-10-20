@@ -1,16 +1,19 @@
 # AdGroupResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A container for the ad group response body.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object AdGroupResponse
 ```
 
@@ -22,11 +25,12 @@ object AdGroupResponse
 
 ## See Also
 
-- [object AdGroup](adgroup.md)
+### Ad Group Request and Response Objects
+- [object AdGroup](./adgroup.md)
   The response to ad group requests.
-- [object AdGroupUpdate](adgroupupdate.md)
+- [object AdGroupUpdate](./adgroupupdate.md)
   The list of ad group fields that are updatable.
-- [object AdGroupListResponse](adgrouplistresponse.md)
+- [object AdGroupListResponse](./adgrouplistresponse.md)
   The response details of ad group requests.
 
 

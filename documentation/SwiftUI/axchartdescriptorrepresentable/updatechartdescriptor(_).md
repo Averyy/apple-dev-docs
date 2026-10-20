@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Update the existing `AXChartDescriptor` for your view, based on changes in your view or in the `Environment`.
@@ -25,9 +26,16 @@ func updateChartDescriptor(_ descriptor: AXChartDescriptor)
 
 This will be called as needed, when accessibility needs your `AXChartDescriptor` for VoiceOver. It will only be called if the inputs to your views, or a relevant part of the `Environment`, have changed.
 
+## Default Implementations
+
+### AXChartDescriptorRepresentable Implementations
+- [func updateChartDescriptor(AXChartDescriptor)](./updatechartdescriptor%28_%29-7cxy6.md)
+  Update the existing `AXChartDescriptor` for your view, based on changes in your view or in the `Environment`.
+
 ## See Also
 
-- [func makeChartDescriptor() -> AXChartDescriptor](axchartdescriptorrepresentable/makechartdescriptor.md)
+### Managing a descriptor
+- [func makeChartDescriptor() -> AXChartDescriptor](./makechartdescriptor%28%29.md)
   Create the `AXChartDescriptor` for this view, and return it.
 
 

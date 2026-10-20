@@ -1,7 +1,8 @@
 # TVContentItemImageShape.HDTV
 
 **Framework**: TV Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The content is high-definition television content with a width:height ratio of `16:9`.
 
@@ -14,19 +15,24 @@ The content is high-definition television content with a width:height ratio of `
 case HDTV
 ```
 
+```c
+TVContentItemImageShapeHDTV
+```
+
 ## See Also
 
-- [TVContentItemImageShape.none](tvcontentitemimageshape/none.md)
+### Constants
+- [TVContentItemImageShape.none](./none.md)
   The content has no particular shape.
-- [TVContentItemImageShape.poster](tvcontentitemimageshape/poster.md)
+- [TVContentItemImageShape.poster](./poster.md)
   The content has a width:height ratio of `2:3`.
-- [TVContentItemImageShape.square](tvcontentitemimageshape/square.md)
+- [TVContentItemImageShape.square](./square.md)
   The content has a width:height ratio of `1:1`.
-- [TVContentItemImageShape.SDTV](tvcontentitemimageshape/sdtv.md)
+- [TVContentItemImageShape.SDTV](./sdtv.md)
   The content is standard-definition television content with a width:height ratio of `4:3`.
-- [TVContentItemImageShape.wide](tvcontentitemimageshape/wide.md)
+- [TVContentItemImageShape.wide](./wide.md)
   The content has a width:height ratio of `8:3`.
-- [TVContentItemImageShape.extraWide](tvcontentitemimageshape/extrawide.md)
+- [TVContentItemImageShape.extraWide](./extrawide.md)
   The content has a width:height ratio of `80:27`.
 
 

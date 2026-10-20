@@ -1,7 +1,8 @@
 # SpatialEventCollection.Event.Kind.pencil
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event generated from a pencil making contact with content.
 

@@ -1,7 +1,8 @@
 # WKInterfaceVolumeControl.Origin.companion
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Audio playing on iPhone.
 
@@ -14,11 +15,16 @@ Audio playing on iPhone.
 case companion
 ```
 
+```c
+WKInterfaceVolumeControlOriginCompanion
+```
+
 ## See Also
 
-- [WKInterfaceVolumeControl.Origin.local](wkinterfacevolumecontrol/origin/local.md)
+### Audio Sources
+- [WKInterfaceVolumeControl.Origin.local](./local.md)
   Audio playing on Apple Watch.
-- [WKInterfaceVolumeControl.Origin.local](wkinterfacevolumecontrol/origin/local.md)
+- [WKInterfaceVolumeControl.Origin.local](./local.md)
   Audio playing on Apple Watch.
 
 

@@ -1,7 +1,8 @@
 # CKSyncEngine.SendChangesContext
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context of an attempt to send changes to the server.
 
@@ -11,7 +12,7 @@ The context of an attempt to send changes to the server.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,41 +23,42 @@ struct SendChangesContext
 
 #### Overview
 
-A sync engine has two ways to send changes to iCloud — periodically, in cooperation with the system scheduler, and manually, whenever your app invokes the [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) method. This type provides information about a single attempt to send changes that includes both the reason for the attempt and any additional options in use by the attempt.
+A sync engine has two ways to send changes to iCloud — periodically, in cooperation with the system scheduler, and manually, whenever your app invokes the [`sendChanges(_:)`](./sendchanges%28_%29.md) method. This type provides information about a single attempt to send changes that includes both the reason for the attempt and any additional options in use by the attempt.
 
 ## Topics
 
 ### Accessing specific attributes
-- [let reason: CKSyncEngine.SyncReason](cksyncengine-5sie5/sendchangescontext/reason.md)
+- [let reason: CKSyncEngine.SyncReason](./sendchangescontext/reason.md)
   The reason for the send operation.
-- [CKSyncEngine.SyncReason](cksyncengine-5sie5/syncreason.md)
+- [CKSyncEngine.SyncReason](./syncreason.md)
   Describes the reason for a sync operation.
-- [enum CKSyncEngineSyncReason](cksyncenginesyncreason.md)
+- [enum CKSyncEngineSyncReason](../cksyncenginesyncreason.md)
   Describes the reason for a sync operation.
-- [let options: CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangescontext/options.md)
+- [let options: CKSyncEngine.SendChangesOptions](./sendchangescontext/options.md)
   The options being used for this attempt to send changes.
-- [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
+- [CKSyncEngine.SendChangesOptions](./sendchangesoptions.md)
   A set of options to use when sending changes to the server.
 ### Debugging the context
-- [var description: String](cksyncengine-5sie5/sendchangescontext/description.md)
+- [var description: String](./sendchangescontext/description.md)
   The textual description of the context that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/sendchangescontext/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./sendchangescontext/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func nextRecordZoneChangeBatch(CKSyncEngine.SendChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.RecordZoneChangeBatch?](cksyncenginedelegate-1q7g8/nextrecordzonechangebatch(_:syncengine:).md)
+### Sending changes
+- [func nextRecordZoneChangeBatch(CKSyncEngine.SendChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.RecordZoneChangeBatch?](../cksyncenginedelegate-1q7g8/nextrecordzonechangebatch%28_,syncengine%29.md)
   Asks the delegate to provide the next set of record changes to send to the server.
-- [CKSyncEngine.RecordZoneChangeBatch](cksyncengine-5sie5/recordzonechangebatch.md)
+- [CKSyncEngine.RecordZoneChangeBatch](./recordzonechangebatch.md)
   A type that contains the record changes for a single send operation.
 
 

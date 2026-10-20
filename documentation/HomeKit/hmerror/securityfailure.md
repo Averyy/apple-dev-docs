@@ -1,7 +1,8 @@
 # securityFailure
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A security failure.
 
@@ -21,23 +22,24 @@ static var securityFailure: HMError.Code { get }
 
 ## See Also
 
-- [static var invalidOrMissingAuthorizationData: HMError.Code](hmerror/invalidormissingauthorizationdata.md)
+### Detecting authorization errors
+- [static var invalidOrMissingAuthorizationData: HMError.Code](./invalidormissingauthorizationdata.md)
   An error indicating the authorization data is invalid or missing.
-- [static var locationForHomeDisabled: HMError.Code](hmerror/locationforhomedisabled.md)
+- [static var locationForHomeDisabled: HMError.Code](./locationforhomedisabled.md)
   An error indicating the home’s location is disabled.
-- [static var homeAccessNotAuthorized: HMError.Code](hmerror/homeaccessnotauthorized.md)
+- [static var homeAccessNotAuthorized: HMError.Code](./homeaccessnotauthorized.md)
   An error indicating access to the home is not authorized.
-- [static var insufficientPrivileges: HMError.Code](hmerror/insufficientprivileges.md)
+- [static var insufficientPrivileges: HMError.Code](./insufficientprivileges.md)
   An error indicating insufficient privileges for the operation.
-- [static var messageAuthenticationFailed: HMError.Code](hmerror/messageauthenticationfailed.md)
+- [static var messageAuthenticationFailed: HMError.Code](./messageauthenticationfailed.md)
   A message authentication failure.
-- [static var notAuthorizedForLocationServices: HMError.Code](hmerror/notauthorizedforlocationservices.md)
+- [static var notAuthorizedForLocationServices: HMError.Code](./notauthorizedforlocationservices.md)
   An error indicating location services are not authorized.
-- [static var notAuthorizedForMicrophoneAccess: HMError.Code](hmerror/notauthorizedformicrophoneaccess.md)
+- [static var notAuthorizedForMicrophoneAccess: HMError.Code](./notauthorizedformicrophoneaccess.md)
   An error indicating microphone access is not authorized.
-- [static var notSignedIntoiCloud: HMError.Code](hmerror/notsignedintoicloud.md)
+- [static var notSignedIntoiCloud: HMError.Code](./notsignedintoicloud.md)
   An error indicating the user is not signed into iCloud.
-- [static var ownershipFailure: HMError.Code](hmerror/ownershipfailure.md)
+- [static var ownershipFailure: HMError.Code](./ownershipfailure.md)
   The ownership code did not match.
 
 

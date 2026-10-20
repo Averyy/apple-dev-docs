@@ -1,7 +1,8 @@
 # category
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category of the region.
 

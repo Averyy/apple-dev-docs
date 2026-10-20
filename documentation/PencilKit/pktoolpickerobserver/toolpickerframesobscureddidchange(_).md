@@ -1,7 +1,8 @@
 # toolPickerFramesObscuredDidChange(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer when the area that the tool picker obscures changes.
 
@@ -17,13 +18,18 @@ Tells the observer when the area that the tool picker obscures changes.
 optional func toolPickerFramesObscuredDidChange(_ toolPicker: PKToolPicker)
 ```
 
+```objc
+- (void) toolPickerFramesObscuredDidChange:(PKToolPicker *) toolPicker;
+```
+
 ## Parameters
 
 - `toolPicker`: The tool picker whose configuration changed.
 
 ## See Also
 
-- [func toolPickerVisibilityDidChange(PKToolPicker)](pktoolpickerobserver/toolpickervisibilitydidchange(_:).md)
+### Monitoring visibility changes
+- [func toolPickerVisibilityDidChange(PKToolPicker)](./toolpickervisibilitydidchange%28_%29.md)
   Tells the observer when a person shows or hides the tool picker.
 
 

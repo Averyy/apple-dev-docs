@@ -1,7 +1,8 @@
 # addTypeIdentifiers(forAccepting:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Expands the array of accepted UTIs for a paste configuration, based on those declared as supported by a specified class.
 
@@ -17,19 +18,24 @@ Expands the array of accepted UTIs for a paste configuration, based on those dec
 func addTypeIdentifiers(forAccepting aClass: any NSItemProviderReading.Type)
 ```
 
+```objc
+- (void) addTypeIdentifiersForAcceptingClass:(Class<NSItemProviderReading> *) aClass;
+```
+
 #### Discussion
 
-This method uses the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/readabletypeidentifiersforitemprovider), implemented on `aClass`, to determine the uniform type identifiers (UTIs) to add to the paste configuration’s [`acceptableTypeIdentifiers`](uipasteconfiguration/acceptabletypeidentifiers.md) array.
+This method uses the property [`readableTypeIdentifiersForItemProvider`](../../Foundation/nsitemproviderreading/readabletypeidentifiersforitemprovider.md), implemented on `aClass`, to determine the uniform type identifiers (UTIs) to add to the paste configuration’s [`acceptableTypeIdentifiers`](./acceptabletypeidentifiers.md) array.
 
 ## Parameters
 
-- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) protocol.
+- `aClass`: A class conforming to the [`NSItemProviderReading`](../../Foundation/nsitemproviderreading.md) protocol.
 
 ## See Also
 
-- [func addAcceptableTypeIdentifiers([String])](uipasteconfiguration/addacceptabletypeidentifiers(_:).md)
+### Adding acceptable type identifiers
+- [func addAcceptableTypeIdentifiers([String])](./addacceptabletypeidentifiers%28_%29.md)
   Adds an array of UTI strings to a paste configuration, increasing the variety of types the paste configuration accepts.
-- [func addTypeIdentifiers<T>(forAccepting: T.Type)](uipasteconfiguration/addtypeidentifiers(foraccepting:)-8af7o.md)
+- [func addTypeIdentifiers<T>(forAccepting: T.Type)](./addtypeidentifiers%28foraccepting%29-8af7o.md)
 
 
 ---

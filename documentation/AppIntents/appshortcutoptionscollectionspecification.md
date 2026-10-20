@@ -1,7 +1,8 @@
 # AppShortcutOptionsCollectionSpecification
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,21 +22,22 @@ protocol AppShortcutOptionsCollectionSpecification<Value> : Sendable, Sequence w
 ## Topics
 
 ### Associated Types
-- [associatedtype Value : _IntentValue](appshortcutoptionscollectionspecification/value.md)
+- [associatedtype Value : _IntentValue](./appshortcutoptionscollectionspecification/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct AppShortcutOptionsCollection](appshortcutoptionscollection.md)
+### App Shortcut options
+- [struct AppShortcutOptionsCollection](./appshortcutoptionscollection.md)
   Represents a collection of options for parameters of an App Shortcut.
-- [protocol AppShortcutOptionsCollectionProtocol](appshortcutoptionscollectionprotocol.md)
-- [enum AppShortcutOptionsCollectionSpecificationBuilder](appshortcutoptionscollectionspecificationbuilder.md)
+- [protocol AppShortcutOptionsCollectionProtocol](./appshortcutoptionscollectionprotocol.md)
+- [enum AppShortcutOptionsCollectionSpecificationBuilder](./appshortcutoptionscollectionspecificationbuilder.md)
 
 
 ---

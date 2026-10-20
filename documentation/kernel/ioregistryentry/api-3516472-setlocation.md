@@ -1,14 +1,15 @@
 # setLocation
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setLocation(const char *location, const IORegistryPlane *plane);
 ```
 

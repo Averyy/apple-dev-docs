@@ -1,7 +1,8 @@
 # vfs_setmaxsymlen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set the maximum length of a symbolic link on a filesystem.
 
@@ -10,11 +11,11 @@ Set the maximum length of a symbolic link on a filesystem.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setmaxsymlen(mount_t mp, uint32_t symlen);
 ```
 
-#### Return_value
+#### Return Value
 
 Max symlink length.
 

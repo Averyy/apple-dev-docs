@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the function argument.
 
@@ -17,6 +18,10 @@ The data type of the function argument.
 
 ```swift
 var dataType: MTLDataType { get }
+```
+
+```objc
+@property (readonly) MTLDataType dataType;
 ```
 
 

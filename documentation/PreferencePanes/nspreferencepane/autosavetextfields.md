@@ -1,7 +1,8 @@
 # autoSaveTextFields
 
 **Framework**: Preference Panes  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether text fields save their values before changing preference panes.
 
@@ -15,17 +16,22 @@ A Boolean value that indicates whether text fields save their values before chan
 var autoSaveTextFields: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL autoSaveTextFields;
+```
+
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), text fields are forced to give up their responder status before [`shouldUnselect`](nspreferencepane/shouldunselect.md) is called on the preference pane. If it is [`false`](https://developer.apple.com/documentation/swift/false), the preference pane is responsible for forcing text fields to give up their responder status before saving them. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is [`true`](../../Swift/true.md), text fields are forced to give up their responder status before [`shouldUnselect`](./shouldunselect.md) is called on the preference pane. If it is [`false`](../../Swift/false.md), the preference pane is responsible for forcing text fields to give up their responder status before saving them. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var firstKeyView: NSView?](nspreferencepane/firstkeyview.md)
+### Handling keyboard focus
+- [var firstKeyView: NSView?](./firstkeyview.md)
   The first view in the keyboard focus chain.
-- [var initialKeyView: NSView?](nspreferencepane/initialkeyview.md)
+- [var initialKeyView: NSView?](./initialkeyview.md)
   The view that should have keyboard focus when the pane is selected.
-- [var lastKeyView: NSView?](nspreferencepane/lastkeyview.md)
+- [var lastKeyView: NSView?](./lastkeyview.md)
   The last view in the keyboard focus chain.
 
 

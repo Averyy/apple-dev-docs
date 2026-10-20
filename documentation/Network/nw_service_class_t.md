@@ -1,7 +1,8 @@
 # nw_service_class_t
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Levels of service quality that can be used with a connection.
 
@@ -20,70 +21,75 @@ Levels of service quality that can be used with a connection.
 struct nw_service_class_t
 ```
 
+```c
+typedef enum { ... } nw_service_class_t;
+```
+
 ## Topics
 
 ### Creating a service class instance
-- [init(UInt32)](nw_service_class_t/init(_:).md)
+- [init(UInt32)](./nw_service_class_t/init%28_%29.md)
   Creates an instance of the service class structure.
-- [init(rawValue: UInt32)](nw_service_class_t/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./nw_service_class_t/init%28rawvalue%29.md)
   Creates an instance of the service class structure.
 ### Service classes
-- [var nw_service_class_best_effort: nw_service_class_t](nw_service_class_best_effort.md)
+- [var nw_service_class_best_effort: nw_service_class_t](./nw_service_class_best_effort.md)
   Default priority traffic.
-- [var nw_service_class_background: nw_service_class_t](nw_service_class_background.md)
+- [var nw_service_class_background: nw_service_class_t](./nw_service_class_background.md)
   Bulk traffic, or traffic that can be deprioritized behind foreground traffic.
-- [var nw_service_class_interactive_video: nw_service_class_t](nw_service_class_interactive_video.md)
+- [var nw_service_class_interactive_video: nw_service_class_t](./nw_service_class_interactive_video.md)
   Interactive video traffic.
-- [var nw_service_class_interactive_voice: nw_service_class_t](nw_service_class_interactive_voice.md)
+- [var nw_service_class_interactive_voice: nw_service_class_t](./nw_service_class_interactive_voice.md)
   Interactive voice traffic.
-- [var nw_service_class_responsive_data: nw_service_class_t](nw_service_class_responsive_data.md)
+- [var nw_service_class_responsive_data: nw_service_class_t](./nw_service_class_responsive_data.md)
   Responsive user-data traffic.
-- [var nw_service_class_signaling: nw_service_class_t](nw_service_class_signaling.md)
+- [var nw_service_class_signaling: nw_service_class_t](./nw_service_class_signaling.md)
   Signaling control traffic.
 ### Accessing the raw value
-- [var rawValue: UInt32](nw_service_class_t/rawvalue.md)
+- [var rawValue: UInt32](./nw_service_class_t/rawvalue.md)
   The raw value of this instance.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct nw_connection_group_state_t](nw_connection_group_state_t.md)
+### C Network Structures
+- [struct nw_connection_group_state_t](./nw_connection_group_state_t.md)
   States that indicate whether you can use a connection group to send and receive messages.
-- [struct nw_browser_state_t](nw_browser_state_t.md)
+- [struct nw_browser_state_t](./nw_browser_state_t.md)
   States indicating whether a browser is able to discover services.
-- [struct nw_connection_state_t](nw_connection_state_t.md)
+- [struct nw_connection_state_t](./nw_connection_state_t.md)
   States indicating whether a connection can be used to send and receive data.
-- [struct nw_data_transfer_report_state_t](nw_data_transfer_report_state_t.md)
+- [struct nw_data_transfer_report_state_t](./nw_data_transfer_report_state_t.md)
   States indicating whether a data transfer report is collected yet.
-- [struct nw_endpoint_type_t](nw_endpoint_type_t.md)
+- [struct nw_endpoint_type_t](./nw_endpoint_type_t.md)
   The type of a network endpoint, such as a host or a service.
-- [struct nw_error_domain_t](nw_error_domain_t.md)
+- [struct nw_error_domain_t](./nw_error_domain_t.md)
   The error domain for errors used by the Network framework.
-- [struct nw_ethernet_channel_state_t](nw_ethernet_channel_state_t.md)
+- [struct nw_ethernet_channel_state_t](./nw_ethernet_channel_state_t.md)
   States indicating whether an Ethernet channel is able to send and receive frames.
-- [struct nw_framer_start_result_t](nw_framer_start_result_t.md)
+- [struct nw_framer_start_result_t](./nw_framer_start_result_t.md)
   Results that you send to indicate the disposition of your protocol after the start handler is invoked.
-- [struct nw_interface_type_t](nw_interface_type_t.md)
+- [struct nw_interface_type_t](./nw_interface_type_t.md)
   Types of network interfaces, based on their link layer media types.
-- [struct nw_ip_ecn_flag_t](nw_ip_ecn_flag_t.md)
+- [struct nw_ip_ecn_flag_t](./nw_ip_ecn_flag_t.md)
   Flag values for Explicit Congestion Notifications in IP packets.
-- [struct nw_ip_local_address_preference_t](nw_ip_local_address_preference_t.md)
+- [struct nw_ip_local_address_preference_t](./nw_ip_local_address_preference_t.md)
   Types of local addresses that can be selected, such as temporary or stable.
-- [struct nw_ip_version_t](nw_ip_version_t.md)
+- [struct nw_ip_version_t](./nw_ip_version_t.md)
   IP versions to require on connections and listeners.
-- [struct nw_listener_state_t](nw_listener_state_t.md)
+- [struct nw_listener_state_t](./nw_listener_state_t.md)
   States indicating whether a listener is able to accept incoming connections.
-- [struct nw_multipath_service_t](nw_multipath_service_t.md)
+- [struct nw_multipath_service_t](./nw_multipath_service_t.md)
   Modes in which a connection can support multipath protocols.
-- [struct nw_parameters_expired_dns_behavior_t](nw_parameters_expired_dns_behavior_t.md)
+- [struct nw_parameters_expired_dns_behavior_t](./nw_parameters_expired_dns_behavior_t.md)
   Options for configuring how expired DNS answers should be used.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the style transfer model.
 
@@ -20,9 +21,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlstyletransfer/debugdescription.md)
+### Describing a style transfer model
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the style transfer model that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlstyletransfer/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the style transfer model shown in a playground.
 
 

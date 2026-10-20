@@ -1,7 +1,8 @@
 # object(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a the value associated with a given key.
 
@@ -20,6 +21,10 @@ Returns a the value associated with a given key.
 func object(forKey aKey: KeyType?) -> ObjectType?
 ```
 
+```objc
+- (ObjectType) objectForKey:(KeyType) aKey;
+```
+
 #### Return Value
 
 The value associated with `aKey`, or `nil` if no value is associated with `aKey`.
@@ -30,11 +35,12 @@ The value associated with `aKey`, or `nil` if no value is associated with `aKey`
 
 ## See Also
 
-- [func keyEnumerator() -> NSEnumerator](nsmaptable/keyenumerator.md)
+### Accessing Content
+- [func keyEnumerator() -> NSEnumerator](./keyenumerator%28%29.md)
   Returns an enumerator object that lets you access each key in the map table.
-- [func objectEnumerator() -> NSEnumerator?](nsmaptable/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator?](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each value in the map table.
-- [var count: Int](nsmaptable/count.md)
+- [var count: Int](./count.md)
   The number of key-value pairs in the map table.
 
 

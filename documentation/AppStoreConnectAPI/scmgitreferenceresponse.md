@@ -1,7 +1,8 @@
 # ScmGitReferenceResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single SCM Git reference in Xcode Cloud.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single SCM Git reference in Xcode Cl
 
 ## Declaration
 
-```swift
+```
 object ScmGitReferenceResponse
 ```
 
@@ -22,9 +23,10 @@ object ScmGitReferenceResponse
 
 ## See Also
 
-- [object ScmGitReference](scmgitreference.md)
+### Objects
+- [object ScmGitReference](./scmgitreference.md)
   A Git branch, tag, or commit reference in a source code repository connected to Xcode Cloud.
-- [object ScmGitReferencesResponse](scmgitreferencesresponse.md)
+- [object ScmGitReferencesResponse](./scmgitreferencesresponse.md)
   The response body for endpoints that list Git references in an Xcode Cloud repository.
 
 

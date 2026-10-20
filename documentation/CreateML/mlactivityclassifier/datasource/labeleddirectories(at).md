@@ -1,7 +1,8 @@
 # MLActivityClassifier.DataSource.labeledDirectories(at:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An activity classifier data source that uses a directory of directories that contain sensor data files.
 
@@ -22,15 +23,16 @@ Create a data source by organizing each activity’s data files into a directory
 
 For example, to organize data files for an activity classifier that recognizes walking, jogging, and running, start by creating directories named “walk”, “jog”, and “run”. Place all the files of walking sensor data into the “walk” directory, and so on.
 
-Next, gather all the activity directories into a directory and pass its [`URL`](https://developer.apple.com/documentation/foundation/url) to [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
+Next, gather all the activity directories into a directory and pass its [`URL`](../../../Foundation/url.md) to [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](./labeleddirectories%28at%29.md).
 
 ## Parameters
 
-- `at`: A [`URL`](https://developer.apple.com/documentation/foundation/url) of a directory in the file system that contains directories, each named with an activity label for the sensor data files.
+- `at`: A [`URL`](../../../Foundation/url.md) of a directory in the file system that contains directories, each named with an activity label for the sensor data files.
 
 ## See Also
 
-- [case directoryWithDataAndAnnotation(at: URL, annotationFileName: String, timeStampColumn: String, labelStartTimeColumn: String, labelEndTimeColumn: String)](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md)
+### Creating a data source
+- [case directoryWithDataAndAnnotation(at: URL, annotationFileName: String, timeStampColumn: String, labelStartTimeColumn: String, labelEndTimeColumn: String)](./directorywithdataandannotation%28at,annotationfilename,timestampcolumn,labelstarttimecolumn,labelendtimecolumn%29.md)
   An activity classifier data source that uses a directory that contains sensor data files and one annotation file.
 
 

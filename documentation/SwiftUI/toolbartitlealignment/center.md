@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The title is center-aligned.
 
@@ -22,7 +23,7 @@ static let center: ToolbarTitleAlignment
 
 #### Discussion
 
-Unlike [`automatic`](toolbartitlealignment/automatic.md), this never falls back to the default alignment.
+Unlike [`automatic`](./automatic.md), this never falls back to the default alignment.
 
 
 ---

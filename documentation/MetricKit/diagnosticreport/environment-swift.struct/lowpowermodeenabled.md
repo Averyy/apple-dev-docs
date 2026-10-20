@@ -1,7 +1,8 @@
 # lowPowerModeEnabled
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether low power mode is enabled on the device.
 

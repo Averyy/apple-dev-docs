@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces the elements in a menu with the elements returned by the specified handler block.
@@ -19,9 +20,13 @@ Replaces the elements in a menu with the elements returned by the specified hand
 func replaceChildren(ofMenu parentIdentifier: UIMenu.Identifier, from childrenBlock: ([UIMenuElement]) -> [UIMenuElement])
 ```
 
+```objc
+- (void) replaceChildrenOfMenuForIdentifier:(UIMenuIdentifier) parentIdentifier fromChildrenBlock:(NSArray<UIMenuElement *> * (^)(NSArray<UIMenuElement *> *)) childrenBlock;
+```
+
 #### Discussion
 
-Use this method to add, remove, and rearrange the children elements of a menu. For example, the following code listing uses this method to insert a Copy HTML menu element before Paste in the [`standardEdit`](uimenu/identifier-swift.struct/standardedit.md) menu.
+Use this method to add, remove, and rearrange the children elements of a menu. For example, the following code listing uses this method to insert a Copy HTML menu element before Paste in the [`standardEdit`](../uimenu/identifier-swift.struct/standardedit.md) menu.
 
 ```swift
 builder.replaceChildren(ofMenu: .standardEdit) { (oldChildren) -> [UIMenuElement] in
@@ -54,7 +59,9 @@ builder.replaceChildren(ofMenu: .standardEdit) { (oldChildren) -> [UIMenuElement
 ## Parameters
 
 - `parentIdentifier`: The identifier of the menu containing the children to replace.
-- `childrenBlock`: A handler that returns the menu elements that replace the children in the menu associated with `parentIdentifier`. This handler has the following parameter: - **`oldChildren`**: The array of menu elements to replace.
+- `childrenBlock`: A handler that returns the menu elements that replace the children in the menu associated with `parentIdentifier`. This handler has the following parameter:
+
+  - **`oldChildren`**: The array of menu elements to replace.
 
 
 ---

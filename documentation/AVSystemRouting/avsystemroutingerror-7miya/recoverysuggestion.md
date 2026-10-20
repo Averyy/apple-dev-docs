@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized suggestion for how to recover from the error.
 

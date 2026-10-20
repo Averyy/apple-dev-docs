@@ -1,33 +1,36 @@
 # ID Verifier - Data Transfer
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `com.apple.developer.proximity-reader.identity.read`
+- **Type**: dictionary
 
 ## Topics
 
 ### Property List Keys
-- [document-elements](entitlements/com.apple.developer.proximity-reader.identity.read/document-elements.md)
-- [document-types](entitlements/com.apple.developer.proximity-reader.identity.read/document-types.md)
+- [document-elements](./com.apple.developer.proximity-reader.identity.read/document-elements.md)
+- [document-types](./com.apple.developer.proximity-reader.identity.read/document-types.md)
 
 ## See Also
 
-- [Pass Type IDs Entitlement](entitlements/com.apple.developer.pass-type-identifiers.md)
+### Wallet
+- [Pass Type IDs Entitlement](./com.apple.developer.pass-type-identifiers.md)
   A list of identifiers that specify pass types that your app can access in Wallet.
-- [Merchant IDs Entitlement](entitlements/com.apple.developer.in-app-payments.md)
+- [Merchant IDs Entitlement](./com.apple.developer.in-app-payments.md)
   A list of merchant IDs your app uses for Apple Pay support.
-- [com.apple.developer.in-app-identity-presentment](entitlements/com.apple.developer.in-app-identity-presentment.md)
+- [com.apple.developer.in-app-identity-presentment](./com.apple.developer.in-app-identity-presentment.md)
   An entitlement that verifies age or identity.
-- [com.apple.developer.in-app-identity-presentment.merchant-identifiers](entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers.md)
+- [com.apple.developer.in-app-identity-presentment.merchant-identifiers](./com.apple.developer.in-app-identity-presentment.merchant-identifiers.md)
   An entitlement for the merchant identifier associated with the in-app identity presentment entitlement.
-- [ID Verifier - Display Only](entitlements/com.apple.developer.proximity-reader.identity.display.md)
+- [ID Verifier - Display Only](./com.apple.developer.proximity-reader.identity.display.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # usesSceneTimeBase
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For animations attached to SceneKit objects, a Boolean value that determines whether the animation is evaluated using the scene time or the system time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,15 @@ For animations attached to SceneKit objects, a Boolean value that determines whe
 var usesSceneTimeBase: Bool { get set }
 ```
 
+```objc
+@property BOOL usesSceneTimeBase;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), animation timing is governed by the currentTime property of the view, layer, or custom renderer responsible for drawing the scene. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](../../Swift/true.md), animation timing is governed by the currentTime property of the view, layer, or custom renderer responsible for drawing the scene. The default value is [`false`](../../Swift/false.md).
 
-To attach animations to SceneKit objects, see [`SCNAnimatable`](https://developer.apple.com/documentation/scenekit/scnanimatable).
+To attach animations to SceneKit objects, see [`SCNAnimatable`](../../SceneKit/scnanimatable.md).
 
 
 ---

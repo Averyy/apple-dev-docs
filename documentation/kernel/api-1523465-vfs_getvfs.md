@@ -1,7 +1,8 @@
 # vfs_getvfs
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Given a filesystem ID, look up a mount structure.
 
@@ -10,11 +11,11 @@ Given a filesystem ID, look up a mount structure.
 
 ## Declaration
 
-```swift
+```c
 mount_t vfs_getvfs(fsid_t *fsid);
 ```
 
-#### Return_value
+#### Return Value
 
 Mountpoint if found, else NULL. Note unmounting mountpoints can be returned.
 

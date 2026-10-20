@@ -1,7 +1,8 @@
 # GKLeaderboard.LeaderboardType.recurring
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A leaderboard that recurs, allowing players a fresh start to compete and earn higher ranks in each ocurrence.
 
@@ -20,9 +21,14 @@ A leaderboard that recurs, allowing players a fresh start to compete and earn hi
 case recurring
 ```
 
+```c
+GKLeaderboardTypeRecurring
+```
+
 ## See Also
 
-- [GKLeaderboard.LeaderboardType.classic](gkleaderboard/leaderboardtype/classic.md)
+### Constants
+- [GKLeaderboard.LeaderboardType.classic](./classic.md)
   A leaderboard that never expires, showing all-time rankings of all players.
 
 

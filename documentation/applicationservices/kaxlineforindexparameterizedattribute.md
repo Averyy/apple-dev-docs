@@ -1,7 +1,8 @@
 # kAXLineForIndexParameterizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Given an indexed character, the line number of the text associated with this accessibility object that contains the character.
 
@@ -12,6 +13,10 @@ Given an indexed character, the line number of the text associated with this acc
 
 ```swift
 var kAXLineForIndexParameterizedAttribute: String { get }
+```
+
+```c
+#define kAXLineForIndexParameterizedAttribute
 ```
 
 

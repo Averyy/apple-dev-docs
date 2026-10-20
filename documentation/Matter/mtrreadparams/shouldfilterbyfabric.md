@@ -1,7 +1,8 @@
 # shouldFilterByFabric
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var shouldFilterByFabric: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=shouldFilterByFabric) BOOL filterByFabric;
 ```
 
 

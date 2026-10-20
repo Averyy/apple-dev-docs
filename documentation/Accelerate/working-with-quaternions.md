@@ -1,6 +1,7 @@
 # Working with Quaternions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Rotate points around the surface of a sphere, and interpolate between them.
 
@@ -43,7 +44,7 @@ The following examples show a few common uses of quaternions.
 
 The following illustration shows a point, defined by `originVector`, rotated over the surface of a sphere by 60º about the x axis.
 
-![Image showing a point rotated over the surface of a sphere.](/images/com.apple.accelerate/media-2970089@2x.png)
+![Image showing a point rotated over the surface of a sphere.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2970089@2x.png)
 
 To apply this rotation, you define the vector to be rotated and the quaternion that represents the rotation:
 
@@ -74,7 +75,7 @@ One of the advantages quaternions have over matrices when representing rotations
 
 The following image shows the spherical linear interpolation along the shortest arc between `q0` and `q1`, and along the longest arc between `q1` and `q2`.
 
-![Image showing the shortest and longest arcs between points on a sphere.](/images/com.apple.accelerate/media-2969367@2x.png)
+![Image showing the shortest and longest arcs between points on a sphere.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2969367@2x.png)
 
 The following code shows how the three points are defined in the preceding image:
 
@@ -123,7 +124,7 @@ To interpolate between multiple quaternions that define positions on the surface
 
 The following image illustrates a series of quaternions that define positions on the surface of a sphere, shown as points, and a line that shows the smooth interpolation between them.
 
-![Image showing a spline passing through multiple points on a sphere.](/images/com.apple.accelerate/media-2969368@2x.png)
+![Image showing a spline passing through multiple points on a sphere.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2969368@2x.png)
 
 Much like [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db), [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) accepts the two quaternions to interpolate between, but also requires the surrounding two quaternions. Given an array of quaternions named `rotations`, the following code iterates over each element, adding a line segment at each interpolated value to build the smooth line shown in the preceding image:
 
@@ -144,15 +145,16 @@ for i in 1 ... rotations.count - 3 {
 
 ## See Also
 
-- [Working with Vectors](working-with-vectors.md)
+### Vectors, Matrices, and Quaternions
+- [Working with Vectors](./working-with-vectors.md)
   Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values.
-- [Working with Matrices](working-with-matrices.md)
+- [Working with Matrices](./working-with-matrices.md)
   Solve simultaneous equations and transform points in space.
-- [Rotating a cube by transforming its vertices](rotating-a-cube-by-transforming-its-vertices.md)
+- [Rotating a cube by transforming its vertices](./rotating-a-cube-by-transforming-its-vertices.md)
   Rotate a cube through a series of keyframes using quaternion interpolation to transition between them.
-- [simd](simd-library.md)
+- [simd](./simd-library.md)
   Perform computations on small vectors and matrices.
-- [vForce](vforce-library.md)
+- [vForce](./vforce-library.md)
   Perform transcendental and trigonometric functions on vectors of any length.
 
 

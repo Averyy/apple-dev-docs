@@ -1,7 +1,8 @@
 # world
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Category representing the whold world.
 

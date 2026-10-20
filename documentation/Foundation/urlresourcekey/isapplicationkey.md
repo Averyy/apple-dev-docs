@@ -1,7 +1,8 @@
 # isApplicationKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 `true` if resource is an application (Read-only, value type boolean `NSNumber`).
 
@@ -20,9 +21,14 @@
 static let isApplicationKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLIsApplicationKey;
+```
+
 ## See Also
 
-- [static let applicationIsScriptableKey: URLResourceKey](urlresourcekey/applicationisscriptablekey.md)
+### Application keys
+- [static let applicationIsScriptableKey: URLResourceKey](./applicationisscriptablekey.md)
   `true` if the resource is scriptable. Only applies to applications (Read-only, value type boolean `NSNumber`).
 
 

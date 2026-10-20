@@ -1,7 +1,8 @@
 # Publishers.TryContainsWhere.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces Boolean elements.
 
 ## See Also
 
-- [Publishers.TryContainsWhere.Failure](publishers/trycontainswhere/failure.md)
+### Declaring supporting types
+- [Publishers.TryContainsWhere.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

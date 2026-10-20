@@ -1,17 +1,22 @@
 # accessibilityVisibleCells()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the visible cells for the table.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func accessibilityVisibleCells() -> [Any]?
+```
+
+```objc
+- (NSArray *) accessibilityVisibleCells;
 ```
 
 #### Return Value
@@ -20,33 +25,34 @@ An array containing the currently visible cells.
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleCells`](nsaccessibility-c.protocol/accessibilityvisiblecells.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleCells`](../nsaccessibility-c.protocol/accessibilityvisiblecells.md) property.
 
 ## See Also
 
-- [func accessibilityColumnHeaderUIElements() -> [Any]?](nsaccessibilitytable/accessibilitycolumnheaderuielements.md)
+### Supporting Accessibility
+- [func accessibilityColumnHeaderUIElements() -> [Any]?](./accessibilitycolumnheaderuielements%28%29.md)
   Returns the column header accessibility elements for the table.
-- [func accessibilityColumns() -> [Any]?](nsaccessibilitytable/accessibilitycolumns.md)
+- [func accessibilityColumns() -> [Any]?](./accessibilitycolumns%28%29.md)
   Returns the column accessibility elements for the table.
-- [func accessibilityLabel() -> String?](nsaccessibilitytable/accessibilitylabel.md)
+- [func accessibilityLabel() -> String?](./accessibilitylabel%28%29.md)
   Returns a short description of the table.
-- [func accessibilityRowHeaderUIElements() -> [Any]?](nsaccessibilitytable/accessibilityrowheaderuielements.md)
+- [func accessibilityRowHeaderUIElements() -> [Any]?](./accessibilityrowheaderuielements%28%29.md)
   Returns the row header accessibility elements for the table.
-- [func accessibilityRows() -> [any NSAccessibilityRow]?](nsaccessibilitytable/accessibilityrows.md)
+- [func accessibilityRows() -> [any NSAccessibilityRow]?](./accessibilityrows%28%29.md)
   Returns the row accessibility elements for the table.
-- [func accessibilitySelectedCells() -> [Any]?](nsaccessibilitytable/accessibilityselectedcells.md)
+- [func accessibilitySelectedCells() -> [Any]?](./accessibilityselectedcells%28%29.md)
   The currently selected cells for the table.
-- [func accessibilitySelectedColumns() -> [Any]?](nsaccessibilitytable/accessibilityselectedcolumns.md)
+- [func accessibilitySelectedColumns() -> [Any]?](./accessibilityselectedcolumns%28%29.md)
   Returns the currently selected columns for the table.
-- [func accessibilitySelectedRows() -> [any NSAccessibilityRow]?](nsaccessibilitytable/accessibilityselectedrows.md)
+- [func accessibilitySelectedRows() -> [any NSAccessibilityRow]?](./accessibilityselectedrows%28%29.md)
   Returns the currently selected rows for the table.
-- [func accessibilityVisibleColumns() -> [Any]?](nsaccessibilitytable/accessibilityvisiblecolumns.md)
+- [func accessibilityVisibleColumns() -> [Any]?](./accessibilityvisiblecolumns%28%29.md)
   Returns the visible columns for the table.
-- [func accessibilityVisibleRows() -> [any NSAccessibilityRow]?](nsaccessibilitytable/accessibilityvisiblerows.md)
+- [func accessibilityVisibleRows() -> [any NSAccessibilityRow]?](./accessibilityvisiblerows%28%29.md)
   Returns the visible rows for the table.
-- [func setAccessibilitySelectedRows([any NSAccessibilityRow])](nsaccessibilitytable/setaccessibilityselectedrows(_:).md)
+- [func setAccessibilitySelectedRows([any NSAccessibilityRow])](./setaccessibilityselectedrows%28_%29.md)
   Sets the table’s currently selected rows.
-- [func accessibilityHeaderGroup() -> String?](nsaccessibilitytable/accessibilityheadergroup.md)
+- [func accessibilityHeaderGroup() -> String?](./accessibilityheadergroup%28%29.md)
   Returns the header group for the table.
 
 

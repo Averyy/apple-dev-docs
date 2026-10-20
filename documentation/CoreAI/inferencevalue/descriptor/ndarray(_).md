@@ -1,7 +1,8 @@
 # InferenceValue.Descriptor.ndArray(_:)
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +19,8 @@ case ndArray(NDArrayDescriptor)
 
 ## See Also
 
-- [InferenceValue.Descriptor.image(_:)](inferencevalue/descriptor/image(_:).md)
+### Defining value descriptors
+- [InferenceValue.Descriptor.image(_:)](./image%28_%29.md)
 
 
 ---

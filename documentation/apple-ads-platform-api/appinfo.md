@@ -1,7 +1,8 @@
 # AppInfo
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single app search result.
 
@@ -10,7 +11,7 @@ A single app search result.
 
 ## Declaration
 
-```swift
+```
 object AppInfo
 ```
 
@@ -42,15 +43,15 @@ The `AppInfo` object represents one app returned from the search apps endpoint. 
 
 ## See Also
 
-- [object AppLocaleDetails](applocaledetails.md)
+- [object AppLocaleDetails](./applocaledetails.md)
   Localized content for an app’s Default Product Page.
-- [object AppsSearchResponse](appssearchresponse.md)
+- [object AppsSearchResponse](./appssearchresponse.md)
   Apps search response envelope.
-- [object AppLocaleDetailsQueryResponse](applocaledetailsqueryresponse.md)
+- [object AppLocaleDetailsQueryResponse](./applocaledetailsqueryresponse.md)
   Paginated response object for app locale detail queries.
-- [object AppSupportedLanguages](appsupportedlanguages.md)
+- [object AppSupportedLanguages](./appsupportedlanguages.md)
   App supported and default languages for an App Store country or region.
-- [object AppSupportedLanguagesQueryResponse](appsupportedlanguagesqueryresponse.md)
+- [object AppSupportedLanguagesQueryResponse](./appsupportedlanguagesqueryresponse.md)
   Paginated response object for the supported app languages query.
 
 

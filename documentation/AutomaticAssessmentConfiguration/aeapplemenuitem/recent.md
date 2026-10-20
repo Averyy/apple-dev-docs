@@ -1,7 +1,8 @@
 # recent
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Recent Items item.
 
@@ -13,6 +14,10 @@ The Recent Items item.
 
 ```swift
 static let recent: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemRecent;
 ```
 
 

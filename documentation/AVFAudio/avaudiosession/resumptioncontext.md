@@ -1,7 +1,8 @@
 # AVAudioSession.ResumptionContext
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides context when resumption becomes available.
 
@@ -19,39 +20,44 @@ An object that provides context when resumption becomes available.
 class ResumptionContext
 ```
 
+```objc
+@interface AVAudioSessionResumptionContext : NSObject
+```
+
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../handling-audio-interruptions.md)
 
 ## Topics
 
 ### Getting the recommendation
-- [var recommendation: AVAudioSession.ResumptionRecommendation](avaudiosession/resumptioncontext/recommendation.md)
+- [var recommendation: AVAudioSession.ResumptionRecommendation](./resumptioncontext/recommendation.md)
   The system’s recommendation on whether to resume playback.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVAudioSession.DeactivationContext](avaudiosession/deactivationcontext.md)
+### Getting activation context details
+- [AVAudioSession.DeactivationContext](./deactivationcontext.md)
   An object that describes why and how the audio session deactivated.
-- [AVAudioSession.DeactivationSource](avaudiosession/deactivationsource.md)
+- [AVAudioSession.DeactivationSource](./deactivationsource.md)
   The source of the audio session deactivation.
-- [AVAudioSession.InterruptionContext](avaudiosession/interruptioncontext.md)
+- [AVAudioSession.InterruptionContext](./interruptioncontext.md)
   An object that provides context about an audio session interruption.
-- [AVAudioSession.ResumptionRecommendation](avaudiosession/resumptionrecommendation.md)
+- [AVAudioSession.ResumptionRecommendation](./resumptionrecommendation.md)
   The system’s recommendation on whether to resume playback.
 
 

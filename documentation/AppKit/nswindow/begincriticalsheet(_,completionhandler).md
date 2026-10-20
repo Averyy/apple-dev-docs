@@ -1,7 +1,8 @@
 # beginCriticalSheet(_:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a document-modal session and presents the specified critical sheet.
 
@@ -11,7 +12,15 @@ Starts a document-modal session and presents the specified critical sheet.
 ## Declaration
 
 ```swift
+func beginCriticalSheet(_ sheetWindow: NSWindow, completionHandler handler: ((NSApplication.ModalResponse) -> Void)? = nil)
+```
+
+```swift
 func beginCriticalSheet(_ sheetWindow: NSWindow) async -> NSApplication.ModalResponse
+```
+
+```objc
+- (void) beginCriticalSheet:(NSWindow *) sheetWindow completionHandler:(void (^)(NSModalResponse returnCode)) handler;
 ```
 
 #### Discussion
@@ -20,7 +29,7 @@ This method displays the sheet—on top of the window’s current sheet, if one 
 
 If the window already has a sheet when this method runs, the existing sheet is temporarily disabled while the critical sheet is presented. When the critical sheet is dismissed, the previously presented sheet continues its standard operation.
 
-The sheet’s window never displays a title, regardless of its [`title`](nswindow/title.md) string, its [`titleVisibility`](nswindow/titlevisibility-swift.property.md) value, or whether its style mask includes the [`titled`](nswindow/stylemask-swift.struct/titled.md) flag.
+The sheet’s window never displays a title, regardless of its [`title`](./title.md) string, its [`titleVisibility`](./titlevisibility-swift.property.md) value, or whether its style mask includes the [`titled`](./stylemask-swift.struct/titled.md) flag.
 
 ## Parameters
 
@@ -29,19 +38,20 @@ The sheet’s window never displays a title, regardless of its [`title`](nswindo
 
 ## See Also
 
-- [var attachedSheet: NSWindow?](nswindow/attachedsheet.md)
+### Managing Sheets
+- [var attachedSheet: NSWindow?](./attachedsheet.md)
   The sheet attached to the window.
-- [var isSheet: Bool](nswindow/issheet.md)
+- [var isSheet: Bool](./issheet.md)
   A Boolean value that indicates whether the window has ever run as a modal sheet.
-- [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/beginsheet(_:completionhandler:).md)
+- [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./beginsheet%28_,completionhandler%29.md)
   Starts a document-modal session and presents—or queues for presentation—a sheet.
-- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+- [func endSheet(NSWindow)](./endsheet%28_%29-4dmmq.md)
   Ends a document-modal session and dismisses the specified sheet.
-- [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
+- [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](./endsheet%28_,returncode%29.md)
   Ends a document-modal session and dismisses the specified sheet.
-- [var sheetParent: NSWindow?](nswindow/sheetparent.md)
+- [var sheetParent: NSWindow?](./sheetparent.md)
   The window to which the sheet is attached.
-- [var sheets: [NSWindow]](nswindow/sheets.md)
+- [var sheets: [NSWindow]](./sheets.md)
   An array of the sheets currently attached to the window.
 
 

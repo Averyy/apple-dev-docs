@@ -1,7 +1,8 @@
 # modifyForecastRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ModifyForecastRequest
 
@@ -17,7 +18,15 @@ Command ModifyForecastRequest
 ## Declaration
 
 ```swift
+func modifyForecastRequest(with params: MTRDeviceEnergyManagementClusterModifyForecastRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func modifyForecastRequest(with params: MTRDeviceEnergyManagementClusterModifyForecastRequestParams) async throws
+```
+
+```objc
+- (void) modifyForecastRequestWithParams:(MTRDeviceEnergyManagementClusterModifyForecastRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

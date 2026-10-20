@@ -1,7 +1,8 @@
 # GLKQuaternionIdentity
 
 **Framework**: GLKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An identity quaternion.
 
@@ -15,6 +16,10 @@ An identity quaternion.
 
 ```swift
 let GLKQuaternionIdentity: GLKQuaternion
+```
+
+```c
+extern const GLKQuaternion GLKQuaternionIdentity;
 ```
 
 

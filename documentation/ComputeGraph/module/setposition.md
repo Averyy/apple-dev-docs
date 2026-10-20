@@ -1,13 +1,14 @@
 # module::setPosition
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the position of an element to the specified coordinates.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::setPosition(float3 position)
 
 Use this function to move an element to a specific location in 3D space, replacing its current position.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__setPosition.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setPosition.svg)
 
 ## Parameters
 

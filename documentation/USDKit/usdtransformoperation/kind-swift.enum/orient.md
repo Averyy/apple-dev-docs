@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.orient
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quaternion orientation.
 

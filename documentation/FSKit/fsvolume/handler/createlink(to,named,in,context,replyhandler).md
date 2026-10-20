@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new hard link.
@@ -12,12 +13,20 @@ Creates a new hard link.
 ## Declaration
 
 ```swift
+func createLink(to item: FSItem, named name: FSFileName, in directory: FSItem, context: FSContext, replyHandler reply: @escaping @Sendable (FSCreateLinkResult?, (any Error)?) -> Void)
+```
+
+```swift
 func createLink(to item: FSItem, named name: FSFileName, in directory: FSItem, context: FSContext) async throws -> FSCreateLinkResult
+```
+
+```objc
+- (void) createLinkToItem:(FSItem *) item named:(FSFileName *) name inDirectory:(FSItem *) directory context:(FSContext *) context replyHandler:(void (^)(FSCreateLinkResult *result, NSError *error)) reply;
 ```
 
 #### Discussion
 
-If creating the link fails, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and the following error codes:
+If creating the link fails, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](../../../Foundation/nsposixerrordomain.md) and the following error codes:
 
 - `EEXIST` if there’s already an item named `name` in the directory.
 - `EMLINK` if creating the link would exceed the maximum number of hard links supported on `item`.
@@ -29,19 +38,20 @@ If creating the link fails, complete the request with an error with a domain of 
 - `name`: The name for the new link.
 - `directory`: The directory in which to create the link.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
-- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateLinkResult`](fscreatelinkresult.md) containing the [`FSFileName`](fsfilename.md) of the newly-created link, the [`FSItem.Attributes`](fsitem/attributes.md) of the linked item, the updated [`FSItem.Attributes`](fsitem/attributes.md) of the parent directory, and the volume’s updated free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateLinkResult`](fscreatelinkresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateLinkResult`](../../fscreatelinkresult.md) containing the [`FSFileName`](../../fsfilename.md) of the newly-created link, the [`FSItem.Attributes`](../../fsitem/attributes.md) of the linked item, the updated [`FSItem.Attributes`](../../fsitem/attributes.md) of the parent directory, and the volume’s updated free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateLinkResult`](../../fscreatelinkresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [class FSCreateLinkResult](fscreatelinkresult.md)
+### Working with links
+- [class FSCreateLinkResult](../../fscreatelinkresult.md)
   The result of a create-link call.
-- [func createSymbolicLink(named: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, linkContents: FSFileName, context: FSContext, replyHandler: (FSCreateSymlinkResult?, (any Error)?) -> Void)](fsvolume/handler/createsymboliclink(named:in:attributes:linkcontents:context:replyhandler:).md)
+- [func createSymbolicLink(named: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, linkContents: FSFileName, context: FSContext, replyHandler: (FSCreateSymlinkResult?, (any Error)?) -> Void)](./createsymboliclink%28named,in,attributes,linkcontents,context,replyhandler%29.md)
   Creates a new symbolic link.
-- [class FSCreateSymlinkResult](fscreatesymlinkresult.md)
+- [class FSCreateSymlinkResult](../../fscreatesymlinkresult.md)
   The result of a create-symlink call.
-- [func readSymbolicLink(FSItem, context: FSContext, replyHandler: (FSReadSymlinkResult?, (any Error)?) -> Void)](fsvolume/handler/readsymboliclink(_:context:replyhandler:).md)
+- [func readSymbolicLink(FSItem, context: FSContext, replyHandler: (FSReadSymlinkResult?, (any Error)?) -> Void)](./readsymboliclink%28_,context,replyhandler%29.md)
   Reads a symbolic link.
-- [class FSReadSymlinkResult](fsreadsymlinkresult.md)
+- [class FSReadSymlinkResult](../../fsreadsymlinkresult.md)
   The result of a read-symlink call.
 
 

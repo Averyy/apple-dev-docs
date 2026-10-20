@@ -6,21 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/xgboost-conversion.h
 
 # XGBoost
 
-**
-
-- [.md](../_sources/source/xgboost-conversion.md)
-- **
-
-.pdf
-
-**
-
-# XGBoost
-
- Table of contents 
-
-# XGBoost
-
 You can convert a trained [XGBoost](https://en.wikipedia.org/wiki/XGBoost) model to Core ML format using [xgboost.convert()](https://apple.github.io/coremltools/source/coremltools.converters.xgboost.html#coremltools.converters.xgboost._tree.convert):
 
 ```

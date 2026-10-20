@@ -1,7 +1,8 @@
 # init(model:_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core ML request.
 

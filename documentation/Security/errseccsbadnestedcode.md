@@ -1,7 +1,8 @@
 # errSecCSBadNestedCode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The nested code is modified or invalid.
 
@@ -13,6 +14,10 @@ The nested code is modified or invalid.
 
 ```swift
 var errSecCSBadNestedCode: OSStatus { get }
+```
+
+```c
+errSecCSBadNestedCode
 ```
 
 

@@ -1,13 +1,14 @@
 # matrix4x4h::transformDirection
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Transforms a half-precision direction vector by a 4x4 matrix, ignoring translation.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The transformed 3D direction vector.
 
 Multiplies the vector by the matrix with a `w` component of `0.0`, so only rotation and scale are applied. This is appropriate for normals, tangents, and other direction vectors that should not be affected by the matrix’s translational component.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/matrix4x4h__transformDirection.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/matrix4x4h__transformDirection.svg)
 
 ## Parameters
 

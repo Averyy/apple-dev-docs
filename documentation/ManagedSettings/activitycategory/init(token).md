@@ -1,7 +1,8 @@
 # init(token:)
 
 **Framework**: Managed Settings  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the representation with the provided token.
 

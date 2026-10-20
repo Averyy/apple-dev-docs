@@ -1,12 +1,15 @@
 # attributesForPropertyPort(withKey:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a dictionary that contains strings for the user interface that describe the optional attributes for ports created from properties.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns a dictionary that contains strings for the user interface that describe 
 class func attributesForPropertyPort(withKey key: String!) -> [AnyHashable : Any]!
 ```
 
+```objc
++ (NSDictionary *) attributesForPropertyPortWithKey:(NSString *) key;
+```
+
 #### Return Value
 
-A dictionary that contains key-value pairs for the port’s attributes. The keys must be one or more of the constants defined in [`Input and Output Port Attributes`](input-and-output-port-attributes.md).
+A dictionary that contains key-value pairs for the port’s attributes. The keys must be one or more of the constants defined in [Input and Output Port Attributes](../input-and-output-port-attributes.md).
 
 #### Discussion
 
@@ -28,7 +35,8 @@ It’s recommended that you implement this method to enhance the experience of t
 
 ## See Also
 
-- [class func attributes() -> [AnyHashable : Any]!](qcplugin/attributes.md)
+### Defining Patch and Property Port Attributes
+- [class func attributes() -> [AnyHashable : Any]!](./attributes%28%29.md)
   Returns a dictionary that contains strings for the user interface that describe the custom patch.
 
 

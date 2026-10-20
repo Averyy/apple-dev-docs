@@ -1,7 +1,8 @@
 # subsurfaceScatterAnisotropy
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,15 +20,16 @@ var subsurfaceScatterAnisotropy: PhysicallyBasedMaterial.SubsurfaceScatterAnisot
 
 ## See Also
 
-- [var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.struct.md)
-- [var subsurfaceWeight: PhysicallyBasedMaterial.SubsurfaceWeight](physicallybasedmaterial/subsurfaceweight-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceWeight](physicallybasedmaterial/subsurfaceweight-swift.struct.md)
-- [var subsurfaceRadius: PhysicallyBasedMaterial.SubsurfaceRadius](physicallybasedmaterial/subsurfaceradius-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceRadius](physicallybasedmaterial/subsurfaceradius-swift.struct.md)
-- [var subsurfaceRadiusScale: PhysicallyBasedMaterial.SubsurfaceRadiusScale](physicallybasedmaterial/subsurfaceradiusscale-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceRadiusScale](physicallybasedmaterial/subsurfaceradiusscale-swift.struct.md)
-- [PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](physicallybasedmaterial/subsurfacescatteranisotropy-swift.struct.md)
+### Configuring subsurface scattering
+- [var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor](./subsurfacecolor-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceColor](./subsurfacecolor-swift.struct.md)
+- [var subsurfaceWeight: PhysicallyBasedMaterial.SubsurfaceWeight](./subsurfaceweight-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceWeight](./subsurfaceweight-swift.struct.md)
+- [var subsurfaceRadius: PhysicallyBasedMaterial.SubsurfaceRadius](./subsurfaceradius-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceRadius](./subsurfaceradius-swift.struct.md)
+- [var subsurfaceRadiusScale: PhysicallyBasedMaterial.SubsurfaceRadiusScale](./subsurfaceradiusscale-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceRadiusScale](./subsurfaceradiusscale-swift.struct.md)
+- [PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](./subsurfacescatteranisotropy-swift.struct.md)
 
 
 ---

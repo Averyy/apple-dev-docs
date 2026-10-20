@@ -1,7 +1,8 @@
 # usage
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options that describe how you intend to use the acceleration structure.
 
@@ -17,6 +18,10 @@ The options that describe how you intend to use the acceleration structure.
 
 ```swift
 var usage: MTLAccelerationStructureUsage { get set }
+```
+
+```objc
+@property (nonatomic) MTLAccelerationStructureUsage usage;
 ```
 
 

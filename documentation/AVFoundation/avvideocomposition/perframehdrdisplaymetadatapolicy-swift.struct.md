@@ -1,7 +1,8 @@
 # AVVideoComposition.PerFrameHDRDisplayMetadataPolicy
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the policy for handling of per frame HDR metadata.
 
@@ -18,6 +19,10 @@ A type that defines the policy for handling of per frame HDR metadata.
 struct PerFrameHDRDisplayMetadataPolicy
 ```
 
+```c
+typedef NSString * AVVideoCompositionPerFrameHDRDisplayMetadataPolicy;
+```
+
 #### Discussion
 
 Use this type to specify what HDR display metadata to attach to the rendered frame.
@@ -25,26 +30,27 @@ Use this type to specify what HDR display metadata to attach to the rendered fra
 ## Topics
 
 ### Policies
-- [static let propagate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct/propagate.md)
+- [static let propagate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./perframehdrdisplaymetadatapolicy-swift.struct/propagate.md)
   A policy that passes HDR metadata through, if present on the composed frame.
-- [static let generate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct/generate.md)
+- [static let generate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./perframehdrdisplaymetadatapolicy-swift.struct/generate.md)
   A video composition may generate HDR metadata and attach it to the rendered frame.
 ### Initializers
-- [init(rawValue: String)](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./perframehdrdisplaymetadatapolicy-swift.struct/init%28rawvalue%29.md)
   Creates a policy with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avmutablevideocomposition/perframehdrdisplaymetadatapolicy.md)
+### Configuring HDR metadata
+- [var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](../avmutablevideocomposition/perframehdrdisplaymetadatapolicy.md)
   Configures the policy for display of HDR display metadata on the rendered frame.
 
 

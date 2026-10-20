@@ -1,7 +1,8 @@
 # IOUSBHIDReportDesc
 
 **Framework**: USBDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the USB HID Report Descriptor header.
 
@@ -10,24 +11,25 @@ A structure that defines the USB HID Report Descriptor header.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBHIDReportDesc;
 ```
 
 #### Overview
 
-See the USB HID Specification at [`http://www.usb.org`](https://developer.apple.comhttp://www.usb.org).
+See the USB HID Specification at [http://www.usb.org](http://www.usb.org).
 
 ## Topics
 
 ### Accessing the Descriptor Properties
-- [hidDescriptorType](iousbhidreportdesc/hiddescriptortype.md)
-- [hidDescriptorLengthLo](iousbhidreportdesc/hiddescriptorlengthlo.md)
-- [hidDescriptorLengthHi](iousbhidreportdesc/hiddescriptorlengthhi.md)
+- [hidDescriptorType](./iousbhidreportdesc/hiddescriptortype.md)
+- [hidDescriptorLengthLo](./iousbhidreportdesc/hiddescriptorlengthlo.md)
+- [hidDescriptorLengthHi](./iousbhidreportdesc/hiddescriptorlengthhi.md)
 
 ## See Also
 
-- [IOUSBHIDDescriptor](iousbhiddescriptor.md)
+### HID Descriptors
+- [IOUSBHIDDescriptor](./iousbhiddescriptor.md)
   A structure that defines the USB HID Descriptor.
 
 

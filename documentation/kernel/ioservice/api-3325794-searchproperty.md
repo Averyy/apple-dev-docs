@@ -1,14 +1,15 @@
 # SearchProperty
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SearchProperty(const char *name, const char *plane, uint64_t options, OSContainer **property, OSDispatchMethod supermethod);
 ```
 

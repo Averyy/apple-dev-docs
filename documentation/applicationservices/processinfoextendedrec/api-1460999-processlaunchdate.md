@@ -1,7 +1,8 @@
 # processLaunchDate
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var processLaunchDate: UInt32
+```
+
+```c
+UInt32 processLaunchDate;
 ```
 
 

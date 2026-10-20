@@ -1,7 +1,8 @@
 # executable
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an executable.
 
@@ -24,13 +25,14 @@ static var executable: UTType { get }
 
 The identifier for this type is `public.executable`.
 
-This type conforms to [`UTTypeItem`](uttypeitem.md).
+This type conforms to [`UTTypeItem`](../uttypeitem.md).
 
 ## See Also
 
-- [static var unixExecutable: UTType](uttype-swift.struct/unixexecutable.md)
+### Executables
+- [static var unixExecutable: UTType](./unixexecutable.md)
   A type that represents a UNIX executable.
-- [static var exe: UTType](uttype-swift.struct/exe.md)
+- [static var exe: UTType](./exe.md)
   A type that represents a Windows executable.
 
 

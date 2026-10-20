@@ -1,7 +1,8 @@
 # impulse
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Impulse, the force over time of the collision, in newton-seconds
 

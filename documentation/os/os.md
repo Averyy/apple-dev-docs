@@ -1,13 +1,14 @@
 # os
 
 **Framework**: os  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Coordinate the scheduling and synchronization of your app’s tasks, and log information to the console to diagnose issues.
 
 **Availability**:
 - iOS 8.0+
-- iPadOS ?+
+- iPadOS
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
@@ -17,18 +18,18 @@ Coordinate the scheduling and synchronization of your app’s tasks, and log inf
 ## Topics
 
 ### Logs
-- [Logging](logging.md)
+- [Logging](./logging.md)
   Capture telemetry from your app for debugging and performance analysis using the unified logging system.
 ### Task Management
-- [Synchronization](synchronization.md)
+- [Synchronization](./synchronization.md)
   Access low-level synchronization mechanisms to control state across threads.
 ### Deprecated
-- [Deprecated Symbols](deprecated-symbols.md)
+- [Deprecated Symbols](./deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Reference
-- [os Constants](os-constants.md)
+- [os Constants](./os-constants.md)
 ### Variables
-- [var OS_LOG_STRING_SECTION: String](os_log_string_section.md)
+- [var OS_LOG_STRING_SECTION: String](./os_log_string_section.md)
 
 
 ---

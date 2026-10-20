@@ -1,7 +1,8 @@
 # MIDIDriverKit
 
 **Framework**: MIDIDriverKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Develop drivers for MIDI devices.
 
@@ -10,30 +11,30 @@ Develop drivers for MIDI devices.
 
 #### Overview
 
-Use the MIDIDriverKit framework to implement a MIDI driver extension that communicates with Core MIDI. The framework handles all user-client communication between your driver extension and the Core MIDI server so you don’t need to implement a MIDI driver plug-in. You can also leverage other transport-based driver extension frameworks, such as [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit), in your implementation.
+Use the MIDIDriverKit framework to implement a MIDI driver extension that communicates with Core MIDI. The framework handles all user-client communication between your driver extension and the Core MIDI server so you don’t need to implement a MIDI driver plug-in. You can also leverage other transport-based driver extension frameworks, such as [USBDriverKit](../USBDriverKit/USBDriverKit.md), in your implementation.
 
 ## Topics
 
 ### Essentials
-- [Creating a MIDI device driver](creating-a-midi-device-driver.md)
+- [Creating a MIDI device driver](./creating-a-midi-device-driver.md)
   Implement a configurable virtual MIDI driver as a driver extension that runs in user space in macOS and iPadOS.
-- [com.apple.developer.driverkit.family.midi](../bundleresources/entitlements/com.apple.developer.driverkit.family.midi.md)
+- [com.apple.developer.driverkit.family.midi](../BundleResources/entitlements/com.apple.developer.driverkit.family.midi.md)
   A Boolean value that indicates whether to match the driver against devices that support MIDI.
 ### Classes
-- [IOUserMIDIDestination](iousermididestination.md)
-- [IOUserMIDIDevice](iousermididevice.md)
-- [IOUserMIDIDriver](iousermididriver.md)
-- [IOUserMIDIEndpoint](iousermidiendpoint.md)
-- [IOUserMIDIEntity](iousermidientity.md)
-- [IOUserMIDIObject](iousermidiobject.md)
-- [IOUserMIDISource](iousermidisource.md)
+- [IOUserMIDIDestination](./iousermididestination.md)
+- [IOUserMIDIDevice](./iousermididevice.md)
+- [IOUserMIDIDriver](./iousermididriver.md)
+- [IOUserMIDIEndpoint](./iousermidiendpoint.md)
+- [IOUserMIDIEntity](./iousermidientity.md)
+- [IOUserMIDIObject](./iousermidiobject.md)
+- [IOUserMIDISource](./iousermidisource.md)
 ### Reference
-- [MIDIDriverKit Constants](mididriverkit-constants.md)
-- [MIDIDriverKit Data Types](mididriverkit-data-types.md)
+- [MIDIDriverKit Constants](./mididriverkit-constants.md)
+- [MIDIDriverKit Data Types](./mididriverkit-data-types.md)
 ### Namespaces
-- [MIDIDriverKit](mididriverkit.md)
+- [MIDIDriverKit](./mididriverkit-page.md)
 ### Macros
-- [kIOUserMIDIDriverUserClientType](kiousermididriveruserclienttype.md)
+- [kIOUserMIDIDriverUserClientType](./kiousermididriveruserclienttype.md)
 
 
 ---

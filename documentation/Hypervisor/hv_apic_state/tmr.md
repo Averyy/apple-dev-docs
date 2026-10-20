@@ -1,15 +1,20 @@
 # tmr
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tmr: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t tmr[8];
 ```
 
 

@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](visionrequest/description.md)
+- [var description: String](./description.md)
   A textual representation of this instance.
 
 

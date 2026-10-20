@@ -1,7 +1,8 @@
 # Deviation.normal
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The most recently observed value is about the same as the value it is being compared against.
 

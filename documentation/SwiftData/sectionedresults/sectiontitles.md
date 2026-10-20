@@ -1,7 +1,8 @@
 # sectionTitles
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The section titles in order.
 

@@ -1,7 +1,8 @@
 # startFetchingMetadata(for:completionHandler:)
 
 **Framework**: Link Presentation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches metadata for the given `NSURLRequest`.
 
@@ -17,14 +18,22 @@ Fetches metadata for the given `NSURLRequest`.
 ## Declaration
 
 ```swift
+func startFetchingMetadata(for request: URLRequest, completionHandler: @escaping @Sendable (LPLinkMetadata?, (any Error)?) -> Void)
+```
+
+```swift
 func startFetchingMetadata(for request: URLRequest) async throws -> LPLinkMetadata
+```
+
+```objc
+- (void) startFetchingMetadataForRequest:(NSURLRequest *) request completionHandler:(void (^)(LPLinkMetadata *metadata, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Call this method once per [`LPMetadataProvider`](lpmetadataprovider.md) instance. If you attempt to fetch metadata multiple times on a single [`LPMetadataProvider`](lpmetadataprovider.md) instance, it throws an error.
+Call this method once per [`LPMetadataProvider`](../lpmetadataprovider.md) instance. If you attempt to fetch metadata multiple times on a single [`LPMetadataProvider`](../lpmetadataprovider.md) instance, it throws an error.
 
-The completion handler executes on a background queue. Dispatch any necessary UI updates back to the main queue. When the completion handler returns, it deletes any file URLs returned in the resulting [`LPLinkMetadata`](lplinkmetadata.md).
+The completion handler executes on a background queue. Dispatch any necessary UI updates back to the main queue. When the completion handler returns, it deletes any file URLs returned in the resulting [`LPLinkMetadata`](../lplinkmetadata.md).
 
 
 ---

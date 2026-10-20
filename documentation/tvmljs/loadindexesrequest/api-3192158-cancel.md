@@ -1,7 +1,8 @@
 # cancel
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 Cancels the load request.
 
@@ -10,7 +11,7 @@ Cancels the load request.
 
 ## Declaration
 
-```swift
+```
 attribute  cancel;
 ```
 

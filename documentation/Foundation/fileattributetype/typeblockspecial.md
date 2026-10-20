@@ -1,7 +1,8 @@
 # typeBlockSpecial
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A block special file.
 
@@ -20,19 +21,24 @@ A block special file.
 static let typeBlockSpecial: FileAttributeType
 ```
 
+```c
+extern NSFileAttributeType const NSFileTypeBlockSpecial;
+```
+
 ## See Also
 
-- [static let typeCharacterSpecial: FileAttributeType](fileattributetype/typecharacterspecial.md)
+### Accessing File Type Attributes
+- [static let typeCharacterSpecial: FileAttributeType](./typecharacterspecial.md)
   A character special file.
-- [static let typeDirectory: FileAttributeType](fileattributetype/typedirectory.md)
+- [static let typeDirectory: FileAttributeType](./typedirectory.md)
   A directory.
-- [static let typeRegular: FileAttributeType](fileattributetype/typeregular.md)
+- [static let typeRegular: FileAttributeType](./typeregular.md)
   A regular file.
-- [static let typeSocket: FileAttributeType](fileattributetype/typesocket.md)
+- [static let typeSocket: FileAttributeType](./typesocket.md)
   A socket.
-- [static let typeSymbolicLink: FileAttributeType](fileattributetype/typesymboliclink.md)
+- [static let typeSymbolicLink: FileAttributeType](./typesymboliclink.md)
   A symbolic link.
-- [static let typeUnknown: FileAttributeType](fileattributetype/typeunknown.md)
+- [static let typeUnknown: FileAttributeType](./typeunknown.md)
   A file whose type is unknown.
 
 

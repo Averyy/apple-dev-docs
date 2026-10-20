@@ -1,17 +1,22 @@
 # keyEquivalent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key-equivalent character of the button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var keyEquivalent: String { get set }
+```
+
+```objc
+@property (copy) NSString * keyEquivalent;
 ```
 
 #### Discussion
@@ -24,11 +29,13 @@ To display a key equivalent on a button, set the image and alternate image to `n
 
 ## See Also
 
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nsbutton/performkeyequivalent(with:).md)
+### Related Documentation
+- [func performKeyEquivalent(with: NSEvent) -> Bool](./performkeyequivalent%28with%29.md)
   Checks the button’s key equivalent against the specified event and, if they match, simulates the button being clicked.
-- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
+- [var keyEquivalentFont: NSFont?](../nsbuttoncell/keyequivalentfont.md)
   The font used to draw the button’s key equivalent.
-- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbutton/keyequivalentmodifiermask.md)
+### Accessing key equivalents
+- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](./keyequivalentmodifiermask.md)
   The mask specifying the modifier keys for the button’s key equivalent.
 
 

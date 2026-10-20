@@ -1,19 +1,26 @@
 # ENExposureDetectionSummary
 
 **Framework**: Exposure Notification  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A summary of exposures.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 class ENExposureDetectionSummary
+```
+
+```objc
+@interface ENExposureDetectionSummary : NSObject
 ```
 
 #### Overview
@@ -23,40 +30,41 @@ class ENExposureDetectionSummary
 ## Topics
 
 ### Exposure Criteria
-- [var attenuationDurations: [NSNumber]](enexposuredetectionsummary/attenuationdurations.md)
+- [var attenuationDurations: [NSNumber]](./enexposuredetectionsummary/attenuationdurations.md)
   An array of durations at specific radio signal attenuations.
-- [var daysSinceLastExposure: Int](enexposuredetectionsummary/dayssincelastexposure.md)
+- [var daysSinceLastExposure: Int](./enexposuredetectionsummary/dayssincelastexposure.md)
   Number of days since the most recent exposure.
-- [var matchedKeyCount: UInt64](enexposuredetectionsummary/matchedkeycount.md)
+- [var matchedKeyCount: UInt64](./enexposuredetectionsummary/matchedkeycount.md)
   The number of keys that matched for an exposure detection.
-- [var maximumRiskScore: ENRiskScore](enexposuredetectionsummary/maximumriskscore.md)
+- [var maximumRiskScore: ENRiskScore](./enexposuredetectionsummary/maximumriskscore.md)
   The vaue that represents the highest risk score of all exposure incidents.
-- [var maximumRiskScoreFullRange: Double](enexposuredetectionsummary/maximumriskscorefullrange.md)
+- [var maximumRiskScoreFullRange: Double](./enexposuredetectionsummary/maximumriskscorefullrange.md)
   The value that represents the highest, full-range risk score of all the exposures for the user.
-- [var riskScoreSumFullRange: Double](enexposuredetectionsummary/riskscoresumfullrange.md)
+- [var riskScoreSumFullRange: Double](./enexposuredetectionsummary/riskscoresumfullrange.md)
   The sum of the full-range risk scores for all exposures for the user.
-- [var metadata: [AnyHashable : Any]?](enexposuredetectionsummary/metadata.md)
+- [var metadata: [AnyHashable : Any]?](./enexposuredetectionsummary/metadata.md)
   The metadata associated with the summary.
-- [var daySummaries: [ENExposureDaySummary]](enexposuredetectionsummary/daysummaries.md)
+- [var daySummaries: [ENExposureDaySummary]](./enexposuredetectionsummary/daysummaries.md)
   The summary of each day that contains an exposure.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ENExposureDaySummary](enexposuredaysummary.md)
+### Summaries
+- [class ENExposureDaySummary](./enexposuredaysummary.md)
   The summary of exposure information for a single day.
-- [class ENExposureSummaryItem](enexposuresummaryitem.md)
+- [class ENExposureSummaryItem](./enexposuresummaryitem.md)
   The summary of exposures for a specific time period or report type.
 
 

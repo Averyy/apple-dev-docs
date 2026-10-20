@@ -1,7 +1,8 @@
 # AssistiveAccess
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that presents an interface appropriate for Assistive Access on iOS and iPadOS. On other platforms, this scene is unused.
 
@@ -24,21 +25,22 @@ struct AssistiveAccess<Content> where Content : View
 ## Topics
 
 ### Initializers
-- [init(content: () -> Content)](assistiveaccess/init(content:).md)
+- [init(content: () -> Content)](./assistiveaccess/init%28content%29.md)
   Creates an Assistive Access scene.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [var accessibilityAssistiveAccessEnabled: Bool](environmentvalues/accessibilityassistiveaccessenabled.md)
+### Using assistive access
+- [var accessibilityAssistiveAccessEnabled: Bool](./environmentvalues/accessibilityassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
-- [func assistiveAccessNavigationIcon(Image) -> some View](view/assistiveaccessnavigationicon(_:).md)
+- [func assistiveAccessNavigationIcon(Image) -> some View](./view/assistiveaccessnavigationicon%28_%29.md)
   Configures the view’s icon for purposes of navigation.
-- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](view/assistiveaccessnavigationicon(systemimage:).md)
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](./view/assistiveaccessnavigationicon%28systemimage%29.md)
   Configures the view’s icon for purposes of navigation.
 
 

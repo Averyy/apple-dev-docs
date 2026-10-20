@@ -1,6 +1,7 @@
 # Creating an input map
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Describe and name sources with an input map.
 
@@ -10,7 +11,7 @@ The input map is another QT atom container that you attach to the effects track.
 
 An input map works in concert with track reference atoms in the source tracks. A track reference atom of type `kTrackModifierReference` is added to each source track, which causes that source track’s output to be redirected to the effects track. An input map is added to the effects track to identify the source tracks and give a name to each source, such as `'srcA'` and `'srcB'`. The effect can then refer to the sources by name, specifying that `'srcB'` should slide in over `'srcA'`, for example.
 
-#### Structure of an Input Map
+#### Structure of an input map
 
 The input map contains a set of atoms that refer to the tracks used as sources for the effect. Each source track is represented by one track reference atom of type `kTrackModifierInput`.
 
@@ -24,7 +25,7 @@ The child atom of type `kTrackModifierType` indicates the type of the track bein
 
 You refer to a `kTrackModifierInput` atom by its index number, which is returned by the `AddTrackReference` function when you create the atom.
 
-#### Building Input Maps
+#### Building input maps
 
 The first step in creating an input map is to create a new `QTAtomContainer` to hold the map. You use the standard QuickTime container creation function.
 
@@ -63,11 +64,12 @@ This process is repeated for each source for the effect.
 
 ## See Also
 
-- [Structure of an effect description](structure_of_an_effect_description.md)
+### Effect descriptions
+- [Structure of an effect description](./structure_of_an_effect_description.md)
   An effect description is the sole media sample for an effect track.
-- [Required atoms of an effects description](required_atoms_of_an_effects_description.md)
+- [Required atoms of an effects description](./required_atoms_of_an_effects_description.md)
   Specify the required atoms for your effects description.
-- [Parameter atoms of an effects description](parameter_atoms_of_an_effects_description.md)
+- [Parameter atoms of an effects description](./parameter_atoms_of_an_effects_description.md)
   Customize your effect with parameter atoms.
 
 

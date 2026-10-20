@@ -1,7 +1,8 @@
 # init(_:startTime:endTime:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entry of the playback queue with a playable music item, and optional start and end times.
 

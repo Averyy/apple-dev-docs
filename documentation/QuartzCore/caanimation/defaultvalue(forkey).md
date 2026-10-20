@@ -1,7 +1,8 @@
 # defaultValue(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the default value of the property with the specified key.
 
@@ -17,6 +18,10 @@ Specifies the default value of the property with the specified key.
 
 ```swift
 class func defaultValue(forKey key: String) -> Any?
+```
+
+```objc
++ (id) defaultValueForKey:(NSString *) key;
 ```
 
 #### Return Value

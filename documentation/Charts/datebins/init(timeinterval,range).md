@@ -1,7 +1,8 @@
 # init(timeInterval:range:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates uniform bins covering the given range. The first bin starts at the lower bound of the range.
 

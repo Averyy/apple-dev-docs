@@ -1,7 +1,8 @@
 # init(checkpoint:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logistic regression classifier from a checkpoint.
 
@@ -21,7 +22,7 @@ init(checkpoint: MLCheckpoint) throws
 
 #### Discussion
 
-> **Note**: `MLCreateError` if the checkpoint can’t be loaded.
+> **Throws**: `MLCreateError` if the checkpoint can’t be loaded.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # motionTransformBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer containing transformation information for instance motion keyframes, formatted according to the motion transform type.
 
@@ -17,6 +18,10 @@ A buffer containing transformation information for instance motion keyframes, fo
 
 ```swift
 var motionTransformBuffer: MTL4BufferRange { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BufferRange motionTransformBuffer;
 ```
 
 #### Discussion

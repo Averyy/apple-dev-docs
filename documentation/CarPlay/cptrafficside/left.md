@@ -1,7 +1,8 @@
 # CPTrafficSide.left
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the traffic drives on the left side of the roadway.
 
@@ -16,9 +17,14 @@ Indicates the traffic drives on the left side of the roadway.
 case left
 ```
 
+```c
+CPTrafficSideLeft
+```
+
 ## See Also
 
-- [CPTrafficSide.right](cptrafficside/right.md)
+### Lane statuses
+- [CPTrafficSide.right](./right.md)
   Indicates the traffic drives on the right side of the roadway.
 
 

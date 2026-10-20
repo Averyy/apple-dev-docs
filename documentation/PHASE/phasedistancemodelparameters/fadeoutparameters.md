@@ -1,7 +1,8 @@
 # fadeOutParameters
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A distance over which the framework fades out the mixer’s sound.
 
@@ -19,11 +20,15 @@ A distance over which the framework fades out the mixer’s sound.
 var fadeOutParameters: PHASEDistanceModelFadeOutParameters? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PHASEDistanceModelFadeOutParameters * fadeOutParameters;
+```
+
 #### Discussion
 
-As a sound source’s distance between the listener approaches the value of this property, the framework gradually lowers the sound’s volume to `0`. Beyond this distance, PHASE culls the sound. This property offers an additional fade out that the framework applies on top of the spatial mixer’s [`distanceModelParameters`](phasespatialmixerdefinition/distancemodelparameters.md).
+As a sound source’s distance between the listener approaches the value of this property, the framework gradually lowers the sound’s volume to `0`. Beyond this distance, PHASE culls the sound. This property offers an additional fade out that the framework applies on top of the spatial mixer’s [`distanceModelParameters`](../phasespatialmixerdefinition/distancemodelparameters.md).
 
-The framework calculates distance as the difference between the listener’s position and the sound-source position, scaled by the engine’s [`unitsPerMeter`](phaseengine/unitspermeter.md).
+The framework calculates distance as the difference between the listener’s position and the sound-source position, scaled by the engine’s [`unitsPerMeter`](../phaseengine/unitspermeter.md).
 
 
 ---

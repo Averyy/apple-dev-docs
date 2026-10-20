@@ -1,15 +1,16 @@
 # kAUNBandEQProperty_BiquadCoefficients
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAUNBandEQProperty_BiquadCoefficients: AudioUnitPropertyID { get }
 ```
 
+```c
+kAUNBandEQProperty_BiquadCoefficients
+```
+
 ## See Also
 
-- [var kAUNBandEQProperty_MaxNumberOfBands: AudioUnitPropertyID](kaunbandeqproperty_maxnumberofbands.md)
-- [var kAUNBandEQProperty_NumberOfBands: AudioUnitPropertyID](kaunbandeqproperty_numberofbands.md)
+### Constants
+- [var kAUNBandEQProperty_MaxNumberOfBands: AudioUnitPropertyID](./kaunbandeqproperty_maxnumberofbands.md)
+- [var kAUNBandEQProperty_NumberOfBands: AudioUnitPropertyID](./kaunbandeqproperty_numberofbands.md)
 
 
 ---

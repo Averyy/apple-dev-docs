@@ -1,7 +1,8 @@
 # aspectRatio
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An aspect ratio.
 
@@ -16,13 +17,18 @@ An aspect ratio.
 var aspectRatio: AVCaptureDevice.AspectRatio { get }
 ```
 
+```objc
+@property (atomic, readonly) AVCaptureAspectRatio aspectRatio;
+```
+
 #### Discussion
 
-One of the enumerated aspect ratios  suitable for use with the [`AVCaptureDevice`](avcapturedevice.md) dynamic aspect ratio APIs.
+One of the enumerated aspect ratios  suitable for use with the [`AVCaptureDevice`](../avcapturedevice.md) dynamic aspect ratio APIs.
 
 ## See Also
 
-- [var zoomFactor: Float](avcaptureframing/zoomfactor.md)
+### Inspecting a framing
+- [var zoomFactor: Float](./zoomfactor.md)
   A zoom factor.
 
 

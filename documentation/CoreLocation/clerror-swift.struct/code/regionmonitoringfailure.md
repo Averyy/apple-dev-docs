@@ -1,7 +1,8 @@
 # CLError.Code.regionMonitoringFailure
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the location manager failed to monitor a registered region.
 
@@ -20,17 +21,22 @@ A constant that indicates the location manager failed to monitor a registered re
 case regionMonitoringFailure
 ```
 
+```c
+kCLErrorRegionMonitoringFailure
+```
+
 #### Discussion
 
 Monitoring can fail if the app exceeds the maximum number of regions that it can monitor simultaneously. Monitoring can also fail if the region’s radius distance is too large.
 
 ## See Also
 
-- [CLError.Code.regionMonitoringDenied](clerror-swift.struct/code/regionmonitoringdenied.md)
+### Getting region monitoring errors
+- [CLError.Code.regionMonitoringDenied](./regionmonitoringdenied.md)
   A constant that indicates the user denied access to the region monitoring service.
-- [CLError.Code.regionMonitoringSetupDelayed](clerror-swift.struct/code/regionmonitoringsetupdelayed.md)
+- [CLError.Code.regionMonitoringSetupDelayed](./regionmonitoringsetupdelayed.md)
   A constant that indicates Core Location failed to initialize the region monitoring feature.
-- [CLError.Code.regionMonitoringResponseDelayed](clerror-swift.struct/code/regionmonitoringresponsedelayed.md)
+- [CLError.Code.regionMonitoringResponseDelayed](./regionmonitoringresponsedelayed.md)
   A constant that indicates Core Location will deliver events but they may be delayed.
 
 

@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.Status.Statuses
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that listens for new subscription status information.
 
@@ -23,15 +24,16 @@ struct Statuses
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../../../Swift/asyncsequence.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var updates: Product.SubscriptionInfo.Status.Statuses](product/subscriptioninfo/status-swift.struct/updates.md)
+### Monitoring subscription status changes
+- [static var updates: Product.SubscriptionInfo.Status.Statuses](./updates.md)
   The asynchronous sequence that emits status information when a subscription’s status changes.
-- [static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInfo.Status])>](product/subscriptioninfo/status-swift.struct/all.md)
+- [static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInfo.Status])>](./all.md)
 
 
 ---

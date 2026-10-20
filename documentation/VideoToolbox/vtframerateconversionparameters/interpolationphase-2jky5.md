@@ -1,7 +1,8 @@
 # interpolationPhase
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of floating-point values that indicate which intervals to insert a frame between the current and next frame.
 
@@ -23,15 +24,16 @@ Array size indicates how many frames are needed to interpolate and needs to matc
 
 ## See Also
 
-- [var sourceFrame: VTFrameProcessorFrame](vtframerateconversionparameters/sourceframe.md)
+### Inspecting the parameters
+- [var sourceFrame: VTFrameProcessorFrame](./sourceframe.md)
   The current source frame.
-- [var nextFrame: VTFrameProcessorFrame?](vtframerateconversionparameters/nextframe.md)
+- [var nextFrame: VTFrameProcessorFrame?](./nextframe.md)
   The next source frame in presentation time order.
-- [var opticalFlow: VTFrameProcessorOpticalFlow?](vtframerateconversionparameters/opticalflow.md)
+- [var opticalFlow: VTFrameProcessorOpticalFlow?](./opticalflow.md)
   A property that defines the optical flow for an object.
-- [var submissionMode: VTFrameRateConversionParameters.SubmissionMode](vtframerateconversionparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTFrameRateConversionParameters.SubmissionMode](./submissionmode-swift.property.md)
   A value describing the processing request in a parameters submission object.
-- [VTFrameRateConversionParameters.SubmissionMode](vtframerateconversionparameters/submissionmode-swift.enum.md)
+- [VTFrameRateConversionParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
 
 

@@ -1,7 +1,8 @@
 # init(steps:iterations:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new interval block, in which the workout repeats the provided steps the specified number of times.
 

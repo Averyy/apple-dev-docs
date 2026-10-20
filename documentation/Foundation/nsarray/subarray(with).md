@@ -1,7 +1,8 @@
 # subarray(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new array containing the receiving array’s elements that fall within the limits specified by a given range.
 
@@ -18,6 +19,10 @@ Returns a new array containing the receiving array’s elements that fall within
 
 ```swift
 func subarray(with range: NSRange) -> [Any]
+```
+
+```objc
+- (NSArray<id> *) subarrayWithRange:(NSRange) range;
 ```
 
 #### Return Value
@@ -46,11 +51,12 @@ halfArray = [wholeArray subarrayWithRange:theRange];
 
 ## See Also
 
-- [func adding(Any) -> [Any]](nsarray/adding(_:).md)
+### Deriving New Arrays
+- [func adding(Any) -> [Any]](./adding%28_%29.md)
   Returns a new array that is a copy of the receiving array with a given object added to the end.
-- [func addingObjects(from: [Any]) -> [Any]](nsarray/addingobjects(from:).md)
+- [func addingObjects(from: [Any]) -> [Any]](./addingobjects%28from%29.md)
   Returns a new array that is a copy of the receiving array with the objects contained in another array added to the end.
-- [func filtered(using: NSPredicate) -> [Any]](nsarray/filtered(using:).md)
+- [func filtered(using: NSPredicate) -> [Any]](./filtered%28using%29.md)
   Evaluates a given predicate against each object in the receiving array and returns a new array containing the objects for which the predicate returns true.
 
 

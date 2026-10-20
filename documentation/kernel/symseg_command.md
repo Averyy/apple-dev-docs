@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct symseg_command {
     ...
 };
@@ -17,10 +17,10 @@ struct symseg_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](symseg_command/1525927-cmd.md)
-- [cmdsize](symseg_command/1525568-cmdsize.md)
-- [offset](symseg_command/1525912-offset.md)
-- [size](symseg_command/1525914-size.md)
+- [cmd](./symseg_command/api-1525927-cmd.md)
+- [cmdsize](./symseg_command/api-1525568-cmdsize.md)
+- [offset](./symseg_command/api-1525912-offset.md)
+- [size](./symseg_command/api-1525914-size.md)
 
 
 ---

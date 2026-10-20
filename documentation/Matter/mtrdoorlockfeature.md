@@ -1,7 +1,8 @@
 # MTRDoorLockFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,45 +19,49 @@
 struct MTRDoorLockFeature
 ```
 
+```c
+enum MTRDoorLockFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrdoorlockfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrdoorlockfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var credentialsOTA: MTRDoorLockFeature](mtrdoorlockfeature/credentialsota.md)
-- [static var credentialsOverTheAirAccess: MTRDoorLockFeature](mtrdoorlockfeature/credentialsovertheairaccess.md)
-- [static var doorPositionSensor: MTRDoorLockFeature](mtrdoorlockfeature/doorpositionsensor.md)
-- [static var faceCredentials: MTRDoorLockFeature](mtrdoorlockfeature/facecredentials.md)
-- [static var fingerCredentials: MTRDoorLockFeature](mtrdoorlockfeature/fingercredentials.md)
-- [static var holidaySchedules: MTRDoorLockFeature](mtrdoorlockfeature/holidayschedules.md)
-- [static var logging: MTRDoorLockFeature](mtrdoorlockfeature/logging.md)
-- [static var notification: MTRDoorLockFeature](mtrdoorlockfeature/notification.md)
-- [static var notifications: MTRDoorLockFeature](mtrdoorlockfeature/notifications.md)
-- [static var pinCredential: MTRDoorLockFeature](mtrdoorlockfeature/pincredential.md)
-- [static var pinCredentials: MTRDoorLockFeature](mtrdoorlockfeature/pincredentials.md)
-- [static var rfidCredential: MTRDoorLockFeature](mtrdoorlockfeature/rfidcredential.md)
-- [static var rfidCredentials: MTRDoorLockFeature](mtrdoorlockfeature/rfidcredentials.md)
-- [static var user: MTRDoorLockFeature](mtrdoorlockfeature/user.md)
-- [static var usersManagement: MTRDoorLockFeature](mtrdoorlockfeature/usersmanagement.md)
-- [static var weekDayAccessSchedules: MTRDoorLockFeature](mtrdoorlockfeature/weekdayaccessschedules.md)
-- [static var weekDaySchedules: MTRDoorLockFeature](mtrdoorlockfeature/weekdayschedules.md)
-- [static var yearDayAccessSchedules: MTRDoorLockFeature](mtrdoorlockfeature/yeardayaccessschedules.md)
-- [static var yearDaySchedules: MTRDoorLockFeature](mtrdoorlockfeature/yeardayschedules.md)
-- [static var aliroBLEUWB: MTRDoorLockFeature](mtrdoorlockfeature/alirobleuwb.md)
-- [static var aliroProvisioning: MTRDoorLockFeature](mtrdoorlockfeature/aliroprovisioning.md)
-- [static var unbolt: MTRDoorLockFeature](mtrdoorlockfeature/unbolt.md)
+- [static var credentialsOTA: MTRDoorLockFeature](./mtrdoorlockfeature/credentialsota.md)
+- [static var credentialsOverTheAirAccess: MTRDoorLockFeature](./mtrdoorlockfeature/credentialsovertheairaccess.md)
+- [static var doorPositionSensor: MTRDoorLockFeature](./mtrdoorlockfeature/doorpositionsensor.md)
+- [static var faceCredentials: MTRDoorLockFeature](./mtrdoorlockfeature/facecredentials.md)
+- [static var fingerCredentials: MTRDoorLockFeature](./mtrdoorlockfeature/fingercredentials.md)
+- [static var holidaySchedules: MTRDoorLockFeature](./mtrdoorlockfeature/holidayschedules.md)
+- [static var logging: MTRDoorLockFeature](./mtrdoorlockfeature/logging.md)
+- [static var notification: MTRDoorLockFeature](./mtrdoorlockfeature/notification.md)
+- [static var notifications: MTRDoorLockFeature](./mtrdoorlockfeature/notifications.md)
+- [static var pinCredential: MTRDoorLockFeature](./mtrdoorlockfeature/pincredential.md)
+- [static var pinCredentials: MTRDoorLockFeature](./mtrdoorlockfeature/pincredentials.md)
+- [static var rfidCredential: MTRDoorLockFeature](./mtrdoorlockfeature/rfidcredential.md)
+- [static var rfidCredentials: MTRDoorLockFeature](./mtrdoorlockfeature/rfidcredentials.md)
+- [static var user: MTRDoorLockFeature](./mtrdoorlockfeature/user.md)
+- [static var usersManagement: MTRDoorLockFeature](./mtrdoorlockfeature/usersmanagement.md)
+- [static var weekDayAccessSchedules: MTRDoorLockFeature](./mtrdoorlockfeature/weekdayaccessschedules.md)
+- [static var weekDaySchedules: MTRDoorLockFeature](./mtrdoorlockfeature/weekdayschedules.md)
+- [static var yearDayAccessSchedules: MTRDoorLockFeature](./mtrdoorlockfeature/yeardayaccessschedules.md)
+- [static var yearDaySchedules: MTRDoorLockFeature](./mtrdoorlockfeature/yeardayschedules.md)
+- [static var aliroBLEUWB: MTRDoorLockFeature](./mtrdoorlockfeature/alirobleuwb.md)
+- [static var aliroProvisioning: MTRDoorLockFeature](./mtrdoorlockfeature/aliroprovisioning.md)
+- [static var unbolt: MTRDoorLockFeature](./mtrdoorlockfeature/unbolt.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

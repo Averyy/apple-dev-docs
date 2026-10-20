@@ -1,7 +1,8 @@
 # fractional(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom format style representing the fractional seconds component of a date.
 
@@ -30,7 +31,8 @@ Returns the numerical representation of the fractional component of the second.
 
 ## See Also
 
-- [static func milliseconds(Int) -> Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction/milliseconds(_:).md)
+### Modifying a Second Fraction
+- [static func milliseconds(Int) -> Date.FormatStyle.Symbol.SecondFraction](./milliseconds%28_%29.md)
   Creates a custom format style representing the milliseconds elapsed in a day.
 
 

@@ -1,14 +1,15 @@
 # hv_volatile_state_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef enum hv_volatile_state_t : unsigned int {
     ...
 } hv_volatile_state_t;
@@ -17,7 +18,7 @@ typedef enum hv_volatile_state_t : unsigned int {
 ## Topics
 
 ### Constants
-- [HV_DEBUG_STATE](hv_volatile_state_t/hv_debug_state.md)
+- [HV_DEBUG_STATE](./hv_volatile_state_t/hv_debug_state.md)
 
 
 ---

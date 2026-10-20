@@ -1,7 +1,8 @@
 # activity
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout activity type.
 
@@ -20,11 +21,12 @@ var activity: HKWorkoutActivityType { get set }
 
 ## See Also
 
-- [var location: HKWorkoutSessionLocationType](pacerworkout/location.md)
+### Accessing workout data
+- [var location: HKWorkoutSessionLocationType](./location.md)
   The workout location.
-- [var distance: Measurement<UnitLength>](pacerworkout/distance.md)
+- [var distance: Measurement<UnitLength>](./distance.md)
   A length measurement representing the distance goal.
-- [var time: Measurement<UnitDuration>](pacerworkout/time.md)
+- [var time: Measurement<UnitDuration>](./time.md)
   A time measurement representing the time goal.
 
 

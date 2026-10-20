@@ -1,7 +1,8 @@
 # MLHandActionClassifier.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A dataset a hand action classifier task uses to validate the model during a training session.
 
@@ -21,18 +22,19 @@ enum ValidationData
 ## Topics
 
 ### Designating validation data
-- [MLHandActionClassifier.ModelParameters.ValidationData.dataSource(_:)](mlhandactionclassifier/modelparameters-swift.struct/validationdata/datasource(_:).md)
+- [MLHandActionClassifier.ModelParameters.ValidationData.dataSource(_:)](./validationdata/datasource%28_%29.md)
   Creates a validation dataset from a data source.
-- [MLHandActionClassifier.ModelParameters.ValidationData.split(strategy:)](mlhandactionclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+- [MLHandActionClassifier.ModelParameters.ValidationData.split(strategy:)](./validationdata/split%28strategy%29.md)
   Creates a validation dataset by randomly selecting a portion of the hand action classifier task’s training dataset with a split strategy.
-- [MLHandActionClassifier.ModelParameters.ValidationData.none](mlhandactionclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLHandActionClassifier.ModelParameters.ValidationData.none](./validationdata/none.md)
   Creates an empty validation dataset, which tells the task to skip the model validation phase in a training session.
 
 ## See Also
 
-- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+### Parameter supporting types
+- [MLHandActionClassifier.VideoAugmentationOptions](../videoaugmentationoptions.md)
   Options a hand action classification training session can use to generate additional training data from the videos you provide.
-- [MLHandActionClassifier.ModelParameters.ModelAlgorithmType](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
+- [MLHandActionClassifier.ModelParameters.ModelAlgorithmType](./modelalgorithmtype.md)
   The hand action classifier training algorithm options.
 
 

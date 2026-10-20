@@ -1,7 +1,8 @@
 # VTPixelTransferSessionGetTypeID()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the Core Foundation type identifier for the pixel transfer session.
 
@@ -17,6 +18,10 @@ Retrieves the Core Foundation type identifier for the pixel transfer session.
 
 ```swift
 func VTPixelTransferSessionGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID VTPixelTransferSessionGetTypeID();
 ```
 
 #### Return Value

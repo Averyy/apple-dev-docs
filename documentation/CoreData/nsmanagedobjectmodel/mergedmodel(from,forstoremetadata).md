@@ -1,7 +1,8 @@
 # mergedModel(from:forStoreMetadata:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a merged model from a specified array for the version information in provided metadata.
 
@@ -10,7 +11,7 @@ Returns a merged model from a specified array for the version information in pro
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Returns a merged model from a specified array for the version information in pro
 class func mergedModel(from bundles: [Bundle]?, forStoreMetadata metadata: [String : Any]) -> NSManagedObjectModel?
 ```
 
+```objc
++ (NSManagedObjectModel *) mergedModelFromBundles:(NSArray<NSBundle *> *) bundles forStoreMetadata:(NSDictionary<NSString *,id> *) metadata;
+```
+
 #### Return Value
 
 The managed object model used to create the store for the metadata. If a model cannot be created to match the version information specified by `metadata`, returns `nil`.
 
 #### Discussion
 
-This method is a companion to [`mergedModel(from:)`](nsmanagedobjectmodel/mergedmodel(from:).md).
+This method is a companion to [`mergedModel(from:)`](./mergedmodel%28from%29.md).
 
 ## Parameters
 
@@ -35,15 +40,16 @@ This method is a companion to [`mergedModel(from:)`](nsmanagedobjectmodel/merged
 
 ## See Also
 
-- [convenience init?(contentsOf: URL)](nsmanagedobjectmodel/init(contentsof:).md)
+### Creating a managed object model
+- [convenience init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes the managed object model using the model file at the specified URL.
-- [init()](nsmanagedobjectmodel/init.md)
+- [init()](./init%28%29.md)
   Initializes an empty managed object model.
-- [class func mergedModel(from: [Bundle]?) -> NSManagedObjectModel?](nsmanagedobjectmodel/mergedmodel(from:).md)
+- [class func mergedModel(from: [Bundle]?) -> NSManagedObjectModel?](./mergedmodel%28from%29.md)
   Returns a model created by merging all the models found in given bundles.
-- [init?(byMerging: [NSManagedObjectModel]?)](nsmanagedobjectmodel/init(bymerging:).md)
+- [init?(byMerging: [NSManagedObjectModel]?)](./init%28bymerging%29.md)
   Creates a single model from an array of existing models.
-- [init?(byMerging: [NSManagedObjectModel], forStoreMetadata: [String : Any])](nsmanagedobjectmodel/init(bymerging:forstoremetadata:).md)
+- [init?(byMerging: [NSManagedObjectModel], forStoreMetadata: [String : Any])](./init%28bymerging,forstoremetadata%29.md)
   Returns, for the version information in given metadata, a model merged from a given array of models.
 
 

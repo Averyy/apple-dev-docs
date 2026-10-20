@@ -1,7 +1,8 @@
 # kLSUnknownType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value to supply as the file type (for example,to the `LSGetApplicationForInfo` function)if no file type information is available.
 

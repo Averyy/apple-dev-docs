@@ -1,18 +1,19 @@
 # init(latitudeDelta:longitudeDelta:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`MKCoordinateSpan`](mkcoordinatespan.md) from the specified values.
+Creates a new [`MKCoordinateSpan`](../mkcoordinatespan.md) from the specified values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ A span with the specified delta values.
 
 ## See Also
 
-- [init()](mkcoordinatespan/init.md)
+### Creating a coordinate span
+- [init()](./init%28%29.md)
   Creates a coordinate span that represents a width and height on a map.
 
 

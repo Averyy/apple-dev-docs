@@ -1,7 +1,8 @@
 # NormalizedCircle
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The center point and radius of a 2D circle.
 
@@ -23,39 +24,40 @@ struct NormalizedCircle
 ## Topics
 
 ### Creating a normalized circle
-- [init(center: NormalizedPoint, radius: CGFloat)](normalizedcircle/init(center:radius:).md)
+- [init(center: NormalizedPoint, radius: CGFloat)](./normalizedcircle/init%28center,radius%29.md)
   Creates a circle with the specified center and radius.
-- [static var zero: NormalizedCircle](normalizedcircle/zero.md)
+- [static var zero: NormalizedCircle](./normalizedcircle/zero.md)
   A circle object centered at the origin, with a radius of zero.
 ### Inspecting a normalized circle
-- [let center: NormalizedPoint](normalizedcircle/center.md)
+- [let center: NormalizedPoint](./normalizedcircle/center.md)
   The circle’s center point.
-- [let radius: CGFloat](normalizedcircle/radius.md)
+- [let radius: CGFloat](./normalizedcircle/radius.md)
   The circle’s radius.
 ### Determining whether the circle contains a point
-- [func contains(NormalizedPoint) -> Bool](normalizedcircle/contains(_:).md)
+- [func contains(NormalizedPoint) -> Bool](./normalizedcircle/contains%28_%29.md)
   Returns a Boolean value that indicates whether this circle, including its boundary, contains the specified point.
-- [func contains(NormalizedPoint, inCircumferentialRingOfWidth: CGFloat) -> Bool](normalizedcircle/contains(_:incircumferentialringofwidth:).md)
+- [func contains(NormalizedPoint, inCircumferentialRingOfWidth: CGFloat) -> Bool](./normalizedcircle/contains%28_,incircumferentialringofwidth%29.md)
   Returns a Boolean value that indicates whether a ring around this circle’s circumference contains the specified point.
 ### Getting the bounding circle
-- [static func boundingCircle(for: [NormalizedPoint]) -> NormalizedCircle](normalizedcircle/boundingcircle(for:).md)
+- [static func boundingCircle(for: [NormalizedPoint]) -> NormalizedCircle](./normalizedcircle/boundingcircle%28for%29.md)
   Creates the smallest circle that encloses the points you specify.
 
 ## See Also
 
-- [struct NormalizedPoint](normalizedpoint.md)
+### Image locations and regions
+- [struct NormalizedPoint](./normalizedpoint.md)
   A point in a 2D coordinate system.
-- [struct NormalizedRect](normalizedrect.md)
+- [struct NormalizedRect](./normalizedrect.md)
   The location and dimensions of a rectangle.
-- [typealias NormalizedRegion](normalizedregion.md)
+- [typealias NormalizedRegion](./normalizedregion.md)
   A polygon composed of normalized points.
-- [protocol BoundingBoxProviding](boundingboxproviding.md)
+- [protocol BoundingBoxProviding](./boundingboxproviding.md)
   A protocol for objects that have a bounding box.
-- [protocol BoundingRegionProviding](boundingregionproviding.md)
+- [protocol BoundingRegionProviding](./boundingregionproviding.md)
   A protocol for objects that have a defined boundary in an image.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+- [protocol QuadrilateralProviding](./quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
-- [enum CoordinateOrigin](coordinateorigin.md)
+- [enum CoordinateOrigin](./coordinateorigin.md)
   The origin of a coordinate system relative to an image.
 
 

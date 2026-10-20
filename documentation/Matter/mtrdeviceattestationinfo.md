@@ -1,7 +1,8 @@
 # MTRDeviceAttestationInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,31 +19,35 @@
 class MTRDeviceAttestationInfo
 ```
 
+```objc
+@interface MTRDeviceAttestationInfo : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(deviceAttestationChallenge: Data, nonce: Data, elementsTLV: Data, elementsSignature: Data, deviceAttestationCertificate: Data, productAttestationIntermediateCertificate: Data, certificationDeclaration: Data, firmwareInfo: Data)](mtrdeviceattestationinfo/init(deviceattestationchallenge:nonce:elementstlv:elementssignature:deviceattestationcertificate:productattestationintermediatecertificate:certificationdeclaration:firmwareinfo:).md)
+- [init(deviceAttestationChallenge: Data, nonce: Data, elementsTLV: Data, elementsSignature: Data, deviceAttestationCertificate: Data, productAttestationIntermediateCertificate: Data, certificationDeclaration: Data, firmwareInfo: Data)](./mtrdeviceattestationinfo/init%28deviceattestationchallenge,nonce,elementstlv,elementssignature,deviceattestationcertificate,productattestationintermediatecertificate,certificationdeclaration,firmwareinfo%29.md)
 ### Instance Properties
-- [var certificationDeclaration: Data](mtrdeviceattestationinfo/certificationdeclaration.md)
-- [var challenge: Data](mtrdeviceattestationinfo/challenge.md)
-- [var deviceAttestationCertificate: Data](mtrdeviceattestationinfo/deviceattestationcertificate.md)
-- [var elementsSignature: Data](mtrdeviceattestationinfo/elementssignature.md)
-- [var elementsTLV: Data](mtrdeviceattestationinfo/elementstlv.md)
-- [var firmwareInfo: Data?](mtrdeviceattestationinfo/firmwareinfo.md)
-- [var nonce: Data](mtrdeviceattestationinfo/nonce.md)
-- [var productAttestationIntermediateCertificate: Data](mtrdeviceattestationinfo/productattestationintermediatecertificate.md)
+- [var certificationDeclaration: Data](./mtrdeviceattestationinfo/certificationdeclaration.md)
+- [var challenge: Data](./mtrdeviceattestationinfo/challenge.md)
+- [var deviceAttestationCertificate: Data](./mtrdeviceattestationinfo/deviceattestationcertificate.md)
+- [var elementsSignature: Data](./mtrdeviceattestationinfo/elementssignature.md)
+- [var elementsTLV: Data](./mtrdeviceattestationinfo/elementstlv.md)
+- [var firmwareInfo: Data?](./mtrdeviceattestationinfo/firmwareinfo.md)
+- [var nonce: Data](./mtrdeviceattestationinfo/nonce.md)
+- [var productAttestationIntermediateCertificate: Data](./mtrdeviceattestationinfo/productattestationintermediatecertificate.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SKOverlay.Configuration
 
 **Framework**: StoreKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for all classes that represent an overlay’s attributes.
 
@@ -17,30 +18,35 @@ The abstract superclass for all classes that represent an overlay’s attributes
 class Configuration
 ```
 
+```objc
+@interface SKOverlayConfiguration : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [SKOverlay.AppClipConfiguration](skoverlay/appclipconfiguration.md)
-- [SKOverlay.AppConfiguration](skoverlay/appconfiguration.md)
+- [SKOverlay.AppClipConfiguration](./appclipconfiguration.md)
+- [SKOverlay.AppConfiguration](./appconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(configuration: SKOverlay.Configuration)](skoverlay/init(configuration:).md)
+### Creating an overlay
+- [init(configuration: SKOverlay.Configuration)](./init%28configuration%29.md)
   Creates an overlay you use to recommend another app on the App Store.
-- [var configuration: SKOverlay.Configuration](skoverlay/configuration-swift.property.md)
+- [var configuration: SKOverlay.Configuration](./configuration-swift.property.md)
   An overlay’s attributes; for example, its position on the screen.
-- [SKOverlay.AppConfiguration](skoverlay/appconfiguration.md)
+- [SKOverlay.AppConfiguration](./appconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend another app on the App Store.
-- [SKOverlay.AppClipConfiguration](skoverlay/appclipconfiguration.md)
+- [SKOverlay.AppClipConfiguration](./appclipconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend an App Clip’s corresponding full app.
 
 

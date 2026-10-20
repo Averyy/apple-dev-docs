@@ -1,7 +1,8 @@
 # contactPredicate
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate to use with the Contacts framework to retrieve the corresponding contact instance.
 
@@ -19,23 +20,28 @@ A predicate to use with the Contacts framework to retrieve the corresponding con
 var contactPredicate: NSPredicate { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSPredicate * contactPredicate;
+```
+
 #### Discussion
 
-Use this property to get a predicate that you can use with a [`CNContactStore`](https://developer.apple.com/documentation/contacts/cncontactstore) to fetch a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) instance for this participant, if one exists.
+Use this property to get a predicate that you can use with a [`CNContactStore`](../../Contacts/cncontactstore.md) to fetch a [`CNContact`](../../Contacts/cncontact.md) instance for this participant, if one exists.
 
 ## See Also
 
-- [var isCurrentUser: Bool](ekparticipant/iscurrentuser.md)
+### Accessing Participant Properties
+- [var isCurrentUser: Bool](./iscurrentuser.md)
   A Boolean value indicating whether this participant represents the owner of this account.
-- [var name: String?](ekparticipant/name.md)
+- [var name: String?](./name.md)
   The participant’s name.
-- [var participantRole: EKParticipantRole](ekparticipant/participantrole.md)
+- [var participantRole: EKParticipantRole](./participantrole.md)
   The participant’s role in the event.
-- [var participantStatus: EKParticipantStatus](ekparticipant/participantstatus.md)
+- [var participantStatus: EKParticipantStatus](./participantstatus.md)
   The participant’s attendance status.
-- [var participantType: EKParticipantType](ekparticipant/participanttype.md)
+- [var participantType: EKParticipantType](./participanttype.md)
   The participant’s type.
-- [var url: URL](ekparticipant/url.md)
+- [var url: URL](./url.md)
   The URL representing this participant.
 
 

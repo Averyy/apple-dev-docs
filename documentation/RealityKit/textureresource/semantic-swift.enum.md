@@ -1,7 +1,8 @@
 # TextureResource.Semantic
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object for specifying the intended use of a texture.
 
@@ -11,7 +12,7 @@ An object for specifying the intended use of a texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,40 +29,41 @@ This object specifies the intended use of the texture by an individual property.
 ## Topics
 
 ### Specifying intended use
-- [TextureResource.Semantic.raw](textureresource/semantic-swift.enum/raw.md)
+- [TextureResource.Semantic.raw](./semantic-swift.enum/raw.md)
   Use the texture unmodified.
-- [TextureResource.Semantic.color](textureresource/semantic-swift.enum/color.md)
+- [TextureResource.Semantic.color](./semantic-swift.enum/color.md)
   Use the texture to store colors data.
-- [TextureResource.Semantic.hdrColor](textureresource/semantic-swift.enum/hdrcolor.md)
+- [TextureResource.Semantic.hdrColor](./semantic-swift.enum/hdrcolor.md)
   Use the texture to store a high-dynamic range image.
-- [TextureResource.Semantic.normal](textureresource/semantic-swift.enum/normal.md)
+- [TextureResource.Semantic.normal](./semantic-swift.enum/normal.md)
   Use the texture to store surface normals.
-- [TextureResource.Semantic.scalar](textureresource/semantic-swift.enum/scalar.md)
+- [TextureResource.Semantic.scalar](./semantic-swift.enum/scalar.md)
   Use the texture to store a single value in each pixel.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
+### Texture resources
+- [Generating procedural textures](../../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [class TextureResource](textureresource.md)
+- [class TextureResource](../textureresource.md)
   A representation of a texture.
-- [TextureResource.CreateOptions](textureresource/createoptions.md)
+- [TextureResource.CreateOptions](./createoptions.md)
   An object that holds texture resource creation options.
-- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+- [TextureResource.SamplingQuality](./samplingquality.md)
   An object for controlling the texture-sampling quality.
-- [TextureResource.MipmapsMode](textureresource/mipmapsmode.md)
+- [TextureResource.MipmapsMode](./mipmapsmode.md)
   An enumeration for specifying how to allocate and generate mipmaps for a texture.
 
 

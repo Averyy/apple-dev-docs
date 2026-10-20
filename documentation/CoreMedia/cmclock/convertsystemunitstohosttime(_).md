@@ -1,7 +1,8 @@
 # convertSystemUnitsToHostTime(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a host time from native units to a time structure.
 
@@ -26,7 +27,8 @@ static func convertSystemUnitsToHostTime(_ systemUnits: UInt64) -> CMTime
 
 ## See Also
 
-- [static func convertHostTimeToSystemUnits(CMTime) -> UInt64](cmclock/converthosttimetosystemunits(_:).md)
+### Converting Time
+- [static func convertHostTimeToSystemUnits(CMTime) -> UInt64](./converthosttimetosystemunits%28_%29.md)
   Converts a host time from a time structure to the host time’s native units.
 
 

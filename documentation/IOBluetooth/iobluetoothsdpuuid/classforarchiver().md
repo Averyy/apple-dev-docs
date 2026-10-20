@@ -1,15 +1,20 @@
 # classForArchiver()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func classForArchiver() -> AnyClass!
+```
+
+```objc
+- (Class) classForArchiver;
 ```
 
 

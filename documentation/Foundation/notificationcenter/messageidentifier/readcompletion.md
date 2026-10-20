@@ -1,7 +1,8 @@
 # readCompletion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a file handle having read the currently available data from a file or communication channel.
 
@@ -20,17 +21,20 @@ An identifier for a message about a file handle having read the currently availa
 static var readCompletion: NotificationCenter.BaseMessageIdentifier<FileHandle.ReadCompletionMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<FileHandle.ReadCompletionMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileHandle.ReadCompletionMessage`](filehandle/readcompletionmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileHandle.ReadCompletionMessage`](../../filehandle/readcompletionmessage.md).
 
 ## See Also
 
-- [static var connectionAccepted: NotificationCenter.BaseMessageIdentifier<FileHandle.ConnectionAcceptedMessage>](notificationcenter/messageidentifier/connectionaccepted.md)
+### Identifying file handle messages
+- [static var connectionAccepted: NotificationCenter.BaseMessageIdentifier<FileHandle.ConnectionAcceptedMessage>](./connectionaccepted.md)
   An identifier for a message about a file handle accepting a connection.
-- [static var dataAvailable: NotificationCenter.BaseMessageIdentifier<FileHandle.DataAvailableMessage>](notificationcenter/messageidentifier/dataavailable.md)
+- [static var dataAvailable: NotificationCenter.BaseMessageIdentifier<FileHandle.DataAvailableMessage>](./dataavailable.md)
   An identifier for a message about a file handle having data available for reading.
-- [static var readToEndOfFileCompletion: NotificationCenter.BaseMessageIdentifier<FileHandle.ReadToEndOfFileCompletionMessage>](notificationcenter/messageidentifier/readtoendoffilecompletion.md)
+- [static var readToEndOfFileCompletion: NotificationCenter.BaseMessageIdentifier<FileHandle.ReadToEndOfFileCompletionMessage>](./readtoendoffilecompletion.md)
   An identifier for a message about a file handle having reached the end of a file or communication channel.
 
 

@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity’s local orientation, allowing observation of its rotation.
 

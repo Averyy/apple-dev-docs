@@ -1,7 +1,8 @@
 # errSSLHostNameMismatch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The host name you connected with does not match any of the host names allowed by the certificate.
 
@@ -20,9 +21,13 @@ The host name you connected with does not match any of the host names allowed by
 var errSSLHostNameMismatch: OSStatus { get }
 ```
 
+```c
+errSSLHostNameMismatch
+```
+
 #### Discussion
 
-This is commonly caused by an incorrect value for the [`kCFStreamSSLPeerName`](https://developer.apple.com/documentation/cfnetwork/kcfstreamsslpeername) property within the dictionary associated with the stream’s [`kCFStreamPropertySSLSettings`](https://developer.apple.com/documentation/cfnetwork/kcfstreampropertysslsettings) key.
+This is commonly caused by an incorrect value for the [`kCFStreamSSLPeerName`](../CFNetwork/kcfstreamsslpeername.md) property within the dictionary associated with the stream’s [`kCFStreamPropertySSLSettings`](../CFNetwork/kcfstreampropertysslsettings.md) key.
 
 
 ---

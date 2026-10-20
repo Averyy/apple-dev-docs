@@ -1,7 +1,8 @@
 # isVirtualDeviceConstituentPhotoDeliveryEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the photo output delivers photos from constituent cameras of a virtual device.
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether the photo output delivers photos from con
 var isVirtualDeviceConstituentPhotoDeliveryEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isVirtualDeviceConstituentPhotoDeliveryEnabled) BOOL virtualDeviceConstituentPhotoDeliveryEnabled;
+```
+
 #### Discussion
 
-You can only set this value to [`true`](https://developer.apple.com/documentation/swift/true) when [`isVirtualDeviceConstituentPhotoDeliverySupported`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliverysupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+You can only set this value to [`true`](../../Swift/true.md) when [`isVirtualDeviceConstituentPhotoDeliverySupported`](./isvirtualdeviceconstituentphotodeliverysupported.md) is [`true`](../../Swift/true.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 > ❗ **Important**:  Virtual device constituent photo delivery requires a lengthy reconfiguration of the capture render pipeline, so enable this property prior to starting the capture session.
 
 ## See Also
 
-- [var isVirtualDeviceFusionSupported: Bool](avcapturephotooutput/isvirtualdevicefusionsupported.md)
+### Configuring virtual device capture
+- [var isVirtualDeviceFusionSupported: Bool](./isvirtualdevicefusionsupported.md)
   A Boolean value that indicates whether the device supports virtual device image fusion.
-- [var isVirtualDeviceConstituentPhotoDeliverySupported: Bool](avcapturephotooutput/isvirtualdeviceconstituentphotodeliverysupported.md)
+- [var isVirtualDeviceConstituentPhotoDeliverySupported: Bool](./isvirtualdeviceconstituentphotodeliverysupported.md)
   A Boolean value that indicates whether the photo output configuration supports delivery of photos from constituent cameras of a virtual device.
 
 

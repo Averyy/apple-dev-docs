@@ -1,7 +1,8 @@
 # isDisjoint(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether this range set set has no members in common with the given set.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether this range set set has no members
 ```swift
 func isDisjoint(_ other: RangeSet<Bound>) -> Bool
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new Metal library synchronously.
@@ -20,6 +21,10 @@ Creates a new Metal library synchronously.
 func makeLibrary(descriptor: MTL4LibraryDescriptor) throws -> any MTLLibrary
 ```
 
+```objc
+- (id<MTLLibrary>) newLibraryWithDescriptor:(MTL4LibraryDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
 A Metal library instance upon success, `nil` otherwise.
@@ -27,6 +32,12 @@ A Metal library instance upon success, `nil` otherwise.
 ## Parameters
 
 - `descriptor`: A description of the library to create.
+
+## Default Implementations
+
+### MTL4Compiler Implementations
+- [func makeLibrary(descriptor: MTL4LibraryDescriptor) async throws -> any MTLLibrary](./makelibrary%28descriptor%29-6c46o.md)
+  Creates a new Metal library asynchronously.
 
 
 ---

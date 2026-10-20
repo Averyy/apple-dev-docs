@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Euclidean distance transform that runs on a specified device.
 
@@ -19,13 +20,18 @@ Creates a Euclidean distance transform that runs on a specified device.
 init(device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device;
+```
+
 ## Parameters
 
 - `device`: The device that the filter runs on.
 
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageeuclideandistancetransform/init(coder:device:).md)
+### Creating a Euclidean distance transform
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
   Creates a Euclidean distance transform that uses a specified decoder for your data and runs on a specified device.
 
 

@@ -1,7 +1,8 @@
 # init(centered:stroke:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an axis grid line with the given properties.
 

@@ -1,7 +1,8 @@
 # play(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays or pauses a composition in a view.
 
@@ -15,6 +16,10 @@ Plays or pauses a composition in a view.
 func play(_ sender: Any!)
 ```
 
+```objc
+- (void) play:(id) sender;
+```
+
 #### Discussion
 
 This method starts rendering a composition if it is not already rendering, pauses a composition that is rendering, or resumes rendering for a composition whose rendering is paused. The method is invoked when the user clicks a button or issues a command from some other user interface element, such as a menu.
@@ -25,9 +30,10 @@ This method starts rendering a composition if it is not already rendering, pause
 
 ## See Also
 
-- [func start(Any!)](qcview/start(_:).md)
+### Using Interface Builder
+- [func start(Any!)](./start%28_%29.md)
   Starts rendering a composition in a view.
-- [func stop(Any!)](qcview/stop(_:).md)
+- [func stop(Any!)](./stop%28_%29.md)
   Stops rendering a composition in a view.
 
 

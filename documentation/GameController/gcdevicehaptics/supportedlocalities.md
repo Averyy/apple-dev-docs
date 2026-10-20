@@ -1,7 +1,8 @@
 # supportedLocalities
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locations of haptic actuators on the device.
 
@@ -19,9 +20,14 @@ The locations of haptic actuators on the device.
 var supportedLocalities: Set<GCHapticsLocality> { get }
 ```
 
+```objc
+@property (copy, readonly) NSSet<NSString *> * supportedLocalities;
+```
+
 ## See Also
 
-- [struct GCHapticsLocality](gchapticslocality.md)
+### Getting the localities
+- [struct GCHapticsLocality](../gchapticslocality.md)
   The location of one or more haptics actuators on a game controller.
 
 

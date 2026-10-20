@@ -1,7 +1,8 @@
 # sizeInBytes
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the data that the user event represents.
 
@@ -17,6 +18,10 @@ The size of the data that the user event represents.
 
 ```swift
 var sizeInBytes: UInt32 { get }
+```
+
+```objc
+@property (readonly) UInt32 sizeInBytes;
 ```
 
 

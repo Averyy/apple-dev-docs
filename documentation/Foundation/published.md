@@ -1,7 +1,8 @@
 # Published
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for the Combine framework’s type that publishes a property marked with an attribute.
 
@@ -22,7 +23,8 @@ typealias Published = Published
 
 ## See Also
 
-- [typealias ObservableObject](observableobject.md)
+### Combine Integration
+- [typealias ObservableObject](./observableobject.md)
   A type alias for the Combine framework’s type for an object with a publisher that emits before the object has changed.
 
 

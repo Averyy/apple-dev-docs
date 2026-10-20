@@ -1,7 +1,8 @@
 # CSSM_PKCS_OAEP_PSOURCE_NONE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_PKCS_OAEP_PSOURCE_NONE: Int { get }
+```
+
+```c
+CSSM_PKCS_OAEP_PSOURCE_NONE
 ```
 
 

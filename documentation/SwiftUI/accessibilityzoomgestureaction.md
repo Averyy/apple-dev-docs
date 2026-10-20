@@ -1,7 +1,8 @@
 # AccessibilityZoomGestureAction
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Position and direction information of a zoom gesture that someone performs with an assistive technology like VoiceOver.
 
@@ -23,35 +24,36 @@ struct AccessibilityZoomGestureAction
 ## Topics
 
 ### Getting the action’s direction
-- [let direction: AccessibilityZoomGestureAction.Direction](accessibilityzoomgestureaction/direction-swift.property.md)
+- [let direction: AccessibilityZoomGestureAction.Direction](./accessibilityzoomgestureaction/direction-swift.property.md)
   The zoom gesture’s direction.
-- [AccessibilityZoomGestureAction.Direction](accessibilityzoomgestureaction/direction-swift.enum.md)
+- [AccessibilityZoomGestureAction.Direction](./accessibilityzoomgestureaction/direction-swift.enum.md)
   A direction that matches the movement of a zoom gesture performed by an assistive technology, such as a swipe up and down in Voiceover’s zoom rotor.
 ### Getting location information
-- [let location: UnitPoint](accessibilityzoomgestureaction/location.md)
+- [let location: UnitPoint](./accessibilityzoomgestureaction/location.md)
   The zoom gesture’s activation point, normalized to the accessibility element’s frame.
-- [let point: CGPoint](accessibilityzoomgestureaction/point.md)
+- [let point: CGPoint](./accessibilityzoomgestureaction/point.md)
   The zoom gesture’s activation point within the window’s coordinate space.
 
 ## See Also
 
-- [func accessibilityActivationPoint(_:)](view/accessibilityactivationpoint(_:).md)
+### Making gestures accessible
+- [func accessibilityActivationPoint(_:)](./view/accessibilityactivationpoint%28_%29.md)
   The activation point for an element is the location assistive technologies use to initiate gestures.
-- [func accessibilityActivationPoint(_:isEnabled:)](view/accessibilityactivationpoint(_:isenabled:).md)
+- [func accessibilityActivationPoint(_:isEnabled:)](./view/accessibilityactivationpoint%28_,isenabled%29.md)
   The activation point for an element is the location assistive technologies use to initiate gestures.
-- [func accessibilityDragPoint(_:description:)](view/accessibilitydragpoint(_:description:).md)
+- [func accessibilityDragPoint(_:description:)](./view/accessibilitydragpoint%28_,description%29.md)
   The point an assistive technology should use to begin a drag interaction.
-- [func accessibilityDragPoint(_:description:isEnabled:)](view/accessibilitydragpoint(_:description:isenabled:).md)
+- [func accessibilityDragPoint(_:description:isEnabled:)](./view/accessibilitydragpoint%28_,description,isenabled%29.md)
   The point an assistive technology should use to begin a drag interaction.
-- [func accessibilityDropPoint(_:description:)](view/accessibilitydroppoint(_:description:).md)
+- [func accessibilityDropPoint(_:description:)](./view/accessibilitydroppoint%28_,description%29.md)
   The point an assistive technology should use to end a drag interaction.
-- [func accessibilityDropPoint(_:description:isEnabled:)](view/accessibilitydroppoint(_:description:isenabled:).md)
+- [func accessibilityDropPoint(_:description:isEnabled:)](./view/accessibilitydroppoint%28_,description,isenabled%29.md)
   The point an assistive technology should use to end a drag interaction.
-- [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitydirecttouch(_:options:).md)
+- [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilitydirecttouch%28_,options%29.md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
-- [func accessibilityZoomAction((AccessibilityZoomGestureAction) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityzoomaction(_:).md)
+- [func accessibilityZoomAction((AccessibilityZoomGestureAction) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityzoomaction%28_%29.md)
   Adds an accessibility zoom action to the view. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action.
-- [struct AccessibilityDirectTouchOptions](accessibilitydirecttouchoptions.md)
+- [struct AccessibilityDirectTouchOptions](./accessibilitydirecttouchoptions.md)
   An option set that defines the functionality of a view’s direct touch area.
 
 

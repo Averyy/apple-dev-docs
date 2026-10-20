@@ -1,7 +1,8 @@
 # threshold
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alpha threshold for clipping the stroke rendering for supported inks.
 
@@ -16,6 +17,10 @@ The alpha threshold for clipping the stroke rendering for supported inks.
 
 ```swift
 var threshold: CGFloat { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGFloat threshold;
 ```
 
 #### Discussion

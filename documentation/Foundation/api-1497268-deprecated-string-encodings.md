@@ -1,16 +1,18 @@
 # Deprecated String Encodings
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var NSProprietaryStringEncoding: UInt](nsproprietarystringencoding.md)
+- [var NSProprietaryStringEncoding: UInt](./nsproprietarystringencoding.md)
   Installation-specific encoding.
 
 ## See Also
 
-- [class NSLinguisticTagger](nslinguistictagger.md)
+### Deprecated
+- [class NSLinguisticTagger](./nslinguistictagger.md)
   Analyze natural language text to tag part of speech and lexical class, identify names, perform lemmatization, and determine the language and script.
 
 

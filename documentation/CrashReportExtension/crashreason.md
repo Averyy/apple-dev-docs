@@ -1,7 +1,8 @@
 # CrashReason
 
 **Framework**: CrashReportExtension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Context information about the crash being reported
 
@@ -9,9 +10,9 @@ Context information about the crash being reported
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,23 +23,24 @@ struct CrashReason
 ## Topics
 
 ### Creating a crash reason
-- [init(exception: Int32, codes: [UInt64])](crashreason/init(exception:codes:).md)
+- [init(exception: Int32, codes: [UInt64])](./crashreason/init%28exception,codes%29.md)
   Creates a crash reason instance with the given parameters.
 ### Inpecting crash reason properties
-- [let codes: [UInt64]](crashreason/codes.md)
+- [let codes: [UInt64]](./crashreason/codes.md)
   An array of exception-specific codes providing additional details.
-- [let exception: Int32](crashreason/exception.md)
+- [let exception: Int32](./crashreason/exception.md)
   The Mach exception type.
 
 ## See Also
 
-- [var reason: CrashReason](crashedprocess/reason.md)
+### Accessing process properties
+- [var reason: CrashReason](./crashedprocess/reason.md)
   Contextual information about the reported crash.
-- [var binaryImages: [BinaryImageInfo]](crashedprocess/binaryimages.md)
+- [var binaryImages: [BinaryImageInfo]](./crashedprocess/binaryimages.md)
   A list of binary images from the crashed process.
-- [struct BinaryImageInfo](binaryimageinfo.md)
+- [struct BinaryImageInfo](./binaryimageinfo.md)
   A type that represents a binary image loaded in the crashed process.
-- [var corpsePort: mach_port_t](crashedprocess/corpseport.md)
+- [var corpsePort: mach_port_t](./crashedprocess/corpseport.md)
   A property that provides a Mach port to the crashed process.
 
 

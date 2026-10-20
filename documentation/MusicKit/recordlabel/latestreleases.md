@@ -1,7 +1,8 @@
 # latestReleases
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of the most recent releases for the record label.
 

@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm or implementation the request uses.
 
@@ -22,9 +23,10 @@ let revision: DetectBarcodesRequest.Revision
 
 ## See Also
 
-- [static let supportedRevisions: [DetectBarcodesRequest.Revision]](detectbarcodesrequest/supportedrevisions.md)
+### Getting the revision
+- [static let supportedRevisions: [DetectBarcodesRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
-- [DetectBarcodesRequest.Revision](detectbarcodesrequest/revision-swift.enum.md)
+- [DetectBarcodesRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

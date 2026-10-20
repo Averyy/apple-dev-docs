@@ -1,7 +1,8 @@
 # one
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A decimal number equivalent to the number 1.0.
 
@@ -21,15 +22,20 @@ A decimal number equivalent to the number 1.0.
 class var one: NSDecimalNumber { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSDecimalNumber * one;
+```
+
 #### Return Value
 
 An `NSDecimalNumber` object equivalent to the number 1.0.
 
 ## See Also
 
-- [class var zero: NSDecimalNumber](nsdecimalnumber/zero.md)
+### Creating a Decimal Number
+- [class var zero: NSDecimalNumber](./zero.md)
   A decimal number equivalent to the number 0.0.
-- [class var notANumber: NSDecimalNumber](nsdecimalnumber/notanumber.md)
+- [class var notANumber: NSDecimalNumber](./notanumber.md)
   A decimal number that specifies no number.
 
 

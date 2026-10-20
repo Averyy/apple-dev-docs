@@ -1,7 +1,8 @@
 # SymbolEffectOptions
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that configure how effects apply to symbol-based images.
 
@@ -23,43 +24,43 @@ struct SymbolEffectOptions
 ## Topics
 
 ### Accessing effect options
-- [static var `default`: SymbolEffectOptions](symboleffectoptions/default.md)
+- [static var `default`: SymbolEffectOptions](./symboleffectoptions/default.md)
   The default set of effect options.
 ### Configuring repeating effects
-- [var repeating: SymbolEffectOptions](symboleffectoptions/repeating-swift.property.md)
+- [var repeating: SymbolEffectOptions](./symboleffectoptions/repeating-swift.property.md)
   A set of effect options that prefers to repeat indefinitely.
-- [static var repeating: SymbolEffectOptions](symboleffectoptions/repeating-swift.type.property.md)
+- [static var repeating: SymbolEffectOptions](./symboleffectoptions/repeating-swift.type.property.md)
   A default set of effect options that prefers to repeat indefinitely.
-- [var nonRepeating: SymbolEffectOptions](symboleffectoptions/nonrepeating-swift.property.md)
+- [var nonRepeating: SymbolEffectOptions](./symboleffectoptions/nonrepeating-swift.property.md)
   A set of effect options that prefers to not repeat.
-- [static var nonRepeating: SymbolEffectOptions](symboleffectoptions/nonrepeating-swift.type.property.md)
+- [static var nonRepeating: SymbolEffectOptions](./symboleffectoptions/nonrepeating-swift.type.property.md)
   A default set of effect options that prefers to not repeat.
-- [func `repeat`(Int?) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-314sv.md)
+- [func `repeat`(Int?) -> SymbolEffectOptions](./symboleffectoptions/repeat%28_%29-314sv.md)
   Creates a set of effect options with a preferred repeat count.
-- [static func `repeat`(Int?) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-33816.md)
+- [static func `repeat`(Int?) -> SymbolEffectOptions](./symboleffectoptions/repeat%28_%29-33816.md)
   A default set of effect options with a preferred repeat count.
 ### Configuring effect speed
-- [func speed(Double) -> SymbolEffectOptions](symboleffectoptions/speed(_:)-swift.method.md)
+- [func speed(Double) -> SymbolEffectOptions](./symboleffectoptions/speed%28_%29-swift.method.md)
   Creates a set of effect options with a preferred speed multiplier.
-- [static func speed(Double) -> SymbolEffectOptions](symboleffectoptions/speed(_:)-swift.type.method.md)
+- [static func speed(Double) -> SymbolEffectOptions](./symboleffectoptions/speed%28_%29-swift.type.method.md)
   A default set of effect options with a preferred speed multiplier.
 ### Structures
-- [SymbolEffectOptions.RepeatBehavior](symboleffectoptions/repeatbehavior.md)
+- [SymbolEffectOptions.RepeatBehavior](./symboleffectoptions/repeatbehavior.md)
   The behavior to use when requesting any repetition on a `SymbolEffect`.
 ### Instance Methods
-- [func `repeat`(SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-316cr.md)
+- [func `repeat`(SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions](./symboleffectoptions/repeat%28_%29-316cr.md)
   Creates a set of symbol effect options that repeats with a preferred behavior.
 ### Type Methods
-- [static func `repeat`(SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-3klm2.md)
+- [static func `repeat`(SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions](./symboleffectoptions/repeat%28_%29-3klm2.md)
   Sets the preferred repeat behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

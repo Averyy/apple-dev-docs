@@ -1,7 +1,8 @@
 # usdz
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents Universal Scene Description Package content.
 
@@ -24,13 +25,14 @@ static var usdz: UTType { get }
 
 The identifier for this type is `com.pixar.universal-scene-description-mobile`.
 
-This type conforms to [`UTType3DContent`](uttype3dcontent.md) and [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTType3DContent`](../uttype3dcontent.md) and [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var threeDContent: UTType](uttype-swift.struct/threedcontent.md)
+### 3D content
+- [static var threeDContent: UTType](./threedcontent.md)
   A base type that represents 3D content.
-- [static var usd: UTType](uttype-swift.struct/usd.md)
+- [static var usd: UTType](./usd.md)
   A type that represents Universal Scene Description content.
 
 

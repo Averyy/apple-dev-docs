@@ -1,7 +1,8 @@
 # down
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that bounces the symbol downward.
 
@@ -22,7 +23,8 @@ var down: BounceSymbolEffect { get }
 
 ## See Also
 
-- [var up: BounceSymbolEffect](bouncesymboleffect/up.md)
+### Accessing symbol effects
+- [var up: BounceSymbolEffect](./up.md)
   An effect that bounces the symbol upward.
 
 

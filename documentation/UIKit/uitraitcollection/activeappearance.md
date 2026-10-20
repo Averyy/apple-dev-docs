@@ -1,7 +1,8 @@
 # activeAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that indicates whether a scene has an active appearance.
 
@@ -18,11 +19,15 @@ A property that indicates whether a scene has an active appearance.
 var activeAppearance: UIUserInterfaceActiveAppearance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIUserInterfaceActiveAppearance activeAppearance;
+```
+
 #### Discussion
 
-`activeAppearance` describes whether a scene is frontmost; it doesn’t describe a scene’s life-cycle state. A scene that isn’t frontmost can remain in the [`UIScene.ActivationState.foregroundActive`](uiscene/activationstate-swift.enum/foregroundactive.md) activation state as long as it can still receive user interaction. Its activation state changes to [`UIScene.ActivationState.foregroundInactive`](uiscene/activationstate-swift.enum/foregroundinactive.md) only when a system interruption takes over interaction. This can happen because of Control Center, an alert, Siri, App Switcher, or another app’s window covering it in windowed apps. Use [`UIScene.ActivationState`](uiscene/activationstate-swift.enum.md) to decide when to save view state, and use `activeAppearance` to detect when a scene is no longer frontmost.
+`activeAppearance` describes whether a scene is frontmost; it doesn’t describe a scene’s life-cycle state. A scene that isn’t frontmost can remain in the [`UIScene.ActivationState.foregroundActive`](../uiscene/activationstate-swift.enum/foregroundactive.md) activation state as long as it can still receive user interaction. Its activation state changes to [`UIScene.ActivationState.foregroundInactive`](../uiscene/activationstate-swift.enum/foregroundinactive.md) only when a system interruption takes over interaction. This can happen because of Control Center, an alert, Siri, App Switcher, or another app’s window covering it in windowed apps. Use [`UIScene.ActivationState`](../uiscene/activationstate-swift.enum.md) to decide when to save view state, and use `activeAppearance` to detect when a scene is no longer frontmost.
 
-Because `activeAppearance` belongs to a scene’s trait collection, each scene has its own value, even in apps that support multiple scenes. To detect when a scene becomes frontmost, register for changes to this trait by calling [`registerForTraitChanges(_:handler:)`](uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:).md) on the window scene, or on any view or view controller in its hierarchy.
+Because `activeAppearance` belongs to a scene’s trait collection, each scene has its own value, even in apps that support multiple scenes. To detect when a scene becomes frontmost, register for changes to this trait by calling [`registerForTraitChanges(_:handler:)`](../uitraitchangeobservable-67e94/registerfortraitchanges%28_,handler%29.md) on the window scene, or on any view or view controller in its hierarchy.
 
 In Mac apps built with Mac Catalyst, Stage Manager on iPad, and a windowed app on iPad, the value is `.active` when the window is focused (the key window) and `.inactive` when it isn’t. A window that another app’s window covers keeps an `.active` appearance as long as it remains the focused window.
 
@@ -30,34 +35,35 @@ In iOS and in a full-screen app on iPad, the value reflects whether the app itse
 
 ## See Also
 
-- [var userInterfaceStyle: UIUserInterfaceStyle](uitraitcollection/userinterfacestyle.md)
+### Retrieving interface-related traits
+- [var userInterfaceStyle: UIUserInterfaceStyle](./userinterfacestyle.md)
   The style associated with the user interface.
-- [enum UIUserInterfaceStyle](uiuserinterfacestyle.md)
+- [enum UIUserInterfaceStyle](../uiuserinterfacestyle.md)
   Constants that indicate the interface style for the app.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uitraitcollection/userinterfaceidiom.md)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](./userinterfaceidiom.md)
   The user interface idiom of the trait collection.
-- [enum UIUserInterfaceIdiom](uiuserinterfaceidiom.md)
+- [enum UIUserInterfaceIdiom](../uiuserinterfaceidiom.md)
   Constants that indicate the interface type for the device or an object that has a trait environment, such as a view and view controller.
-- [var userInterfaceLevel: UIUserInterfaceLevel](uitraitcollection/userinterfacelevel.md)
+- [var userInterfaceLevel: UIUserInterfaceLevel](./userinterfacelevel.md)
   The elevation level of the interface.
-- [enum UIUserInterfaceLevel](uiuserinterfacelevel.md)
+- [enum UIUserInterfaceLevel](../uiuserinterfacelevel.md)
   Constants that indicate the visual level for content in the window.
-- [var layoutDirection: UITraitEnvironmentLayoutDirection](uitraitcollection/layoutdirection.md)
+- [var layoutDirection: UITraitEnvironmentLayoutDirection](./layoutdirection.md)
   The layout direction associated with the current environment.
-- [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
+- [enum UITraitEnvironmentLayoutDirection](../uitraitenvironmentlayoutdirection.md)
   Constants that indicate the layout direction associated with the current environment.
-- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
-- [var accessibilityContrast: UIAccessibilityContrast](uitraitcollection/accessibilitycontrast.md)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](./resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
+- [var accessibilityContrast: UIAccessibilityContrast](./accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
-- [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
+- [enum UIAccessibilityContrast](../uiaccessibilitycontrast.md)
   Constants that indicate the accessibility contrast setting.
-- [var legibilityWeight: UILegibilityWeight](uitraitcollection/legibilityweight.md)
+- [var legibilityWeight: UILegibilityWeight](./legibilityweight.md)
   The font weight to apply to text.
-- [enum UILegibilityWeight](uilegibilityweight.md)
+- [enum UILegibilityWeight](../uilegibilityweight.md)
   Constants that indicate the weight to apply to text in your interface.
-- [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
+- [enum UIUserInterfaceActiveAppearance](../uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
-- [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uitraitcollection/toolbaritempresentationsize.md)
+- [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](./toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
 
 

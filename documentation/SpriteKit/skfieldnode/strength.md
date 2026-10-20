@@ -1,7 +1,8 @@
 # strength
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strength of the field.
 
@@ -20,9 +21,13 @@ The strength of the field.
 var strength: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float strength;
+```
+
 ## Mentions
 
-- [Adding Physics Fields to a Scene](adding-physics-fields-to-a-scene.md)
+- [Adding Physics Fields to a Scene](../adding-physics-fields-to-a-scene.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ The default value is `1.0`. There’s no specific unit of measurement for this p
 
 ## See Also
 
-- [var falloff: Float](skfieldnode/falloff.md)
+### Configuring the Strength of the Field
+- [var falloff: Float](./falloff.md)
   The exponent that defines the rate of decay for the strength of the field as the distance increases between the node and the physics body being affected.
 
 

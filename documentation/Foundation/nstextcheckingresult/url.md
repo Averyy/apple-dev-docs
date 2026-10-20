@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a type checking result.
 
@@ -20,9 +21,14 @@ The URL of a type checking result.
 var url: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * URL;
+```
+
 ## See Also
 
-- [class func linkCheckingResult(range: NSRange, url: URL) -> NSTextCheckingResult](nstextcheckingresult/linkcheckingresult(range:url:).md)
+### Text Checking Results for URLs
+- [class func linkCheckingResult(range: NSRange, url: URL) -> NSTextCheckingResult](./linkcheckingresult%28range,url%29.md)
   Creates and returns a text checking result with the specified URL.
 
 

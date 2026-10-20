@@ -1,17 +1,18 @@
 # AVPlayerItemLegibleOutput.TextStylingResolution
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text styling resolution.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,29 +20,34 @@ A text styling resolution.
 struct TextStylingResolution
 ```
 
+```c
+typedef NSString * AVPlayerItemLegibleOutputTextStylingResolution;
+```
+
 ## Topics
 
 ### Text styling options
-- [static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct/default.md)
+- [static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution](./textstylingresolution-swift.struct/default.md)
   The text styling information is the same level of information that AVFoundation uses within a player layer.
-- [static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct/sourceandrulesonly.md)
+- [static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution](./textstylingresolution-swift.struct/sourceandrulesonly.md)
   The level of resolution excludes styling provided by the user-level Media Accessibility settings.
 ### Initializers
-- [init(rawValue: String)](avplayeritemlegibleoutput/textstylingresolution-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./textstylingresolution-swift.struct/init%28rawvalue%29.md)
   Creates a text styling resolution structure with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textStylingResolution: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.property.md)
+### Configuring text styling
+- [var textStylingResolution: AVPlayerItemLegibleOutput.TextStylingResolution](./textstylingresolution-swift.property.md)
   A string identifier indicating the degree of text styling to be applied to attributed strings vended by the  object.
 
 

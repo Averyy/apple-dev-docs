@@ -1,7 +1,8 @@
 # trimStart
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional time, in seconds, at which the animation plays.
 
@@ -23,7 +24,7 @@ var trimStart: TimeInterval? { get set }
 
 This property is `nil` by default, which plays the animation with `time` = `0`. If you set a value, the animation edits the duration according to the specified beginning time.
 
-If you set a negative value for this property, the duration increases and the additional animation data fills in based on the [`fillMode`](animationview/fillmode.md) you choose.
+If you set a negative value for this property, the duration increases and the additional animation data fills in based on the [`fillMode`](../animationview/fillmode.md) you choose.
 
 
 ---

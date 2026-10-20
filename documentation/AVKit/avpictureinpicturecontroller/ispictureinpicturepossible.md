@@ -1,7 +1,8 @@
 # isPictureInPicturePossible
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Picture in Picture playback is currently possible.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether Picture in Picture playback is currently 
 var isPictureInPicturePossible: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPictureInPicturePossible) BOOL pictureInPicturePossible;
+```
+
 ## Mentions
 
-- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
+- [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
 #### Discussion
 
@@ -31,11 +36,12 @@ This property is key-value observable.
 
 ## See Also
 
-- [class func isPictureInPictureSupported() -> Bool](avpictureinpicturecontroller/ispictureinpicturesupported.md)
+### Accessing Picture in Picture state
+- [class func isPictureInPictureSupported() -> Bool](./ispictureinpicturesupported%28%29.md)
   Returns a Boolean value that indicates whether the current device supports Picture in Picture.
-- [var isPictureInPictureActive: Bool](avpictureinpicturecontroller/ispictureinpictureactive.md)
+- [var isPictureInPictureActive: Bool](./ispictureinpictureactive.md)
   A Boolean value that indicates whether the Picture in Picture window is onscreen.
-- [var isPictureInPictureSuspended: Bool](avpictureinpicturecontroller/ispictureinpicturesuspended.md)
+- [var isPictureInPictureSuspended: Bool](./ispictureinpicturesuspended.md)
   A Boolean value that indicates whether the system suspends the controller’s Picture in Picture window.
 
 

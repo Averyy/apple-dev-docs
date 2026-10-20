@@ -1,7 +1,8 @@
 # textLayoutOrientation(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the layout orientation at the location you specify.
 
@@ -14,9 +15,13 @@ Returns the layout orientation at the location you specify.
 optional func textLayoutOrientation(at location: any NSTextLocation) -> NSTextSelectionNavigation.LayoutOrientation
 ```
 
+```objc
+- (NSTextSelectionNavigationLayoutOrientation) textLayoutOrientationAtLocation:(id<NSTextLocation>) location;
+```
+
 #### Return Value
 
-Returns an [`NSTextSelectionNavigation.LayoutOrientation`](nstextselectionnavigation/layoutorientation.md) that describes the orientation of the layout.
+Returns an [`NSTextSelectionNavigation.LayoutOrientation`](../nstextselectionnavigation/layoutorientation.md) that describes the orientation of the layout.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ Returns an [`NSTextSelectionNavigation.LayoutOrientation`](nstextselectionnaviga
 
 ## See Also
 
-- [func baseWritingDirection(at: any NSTextLocation) -> NSTextSelectionNavigation.WritingDirection](nstextselectiondatasource/basewritingdirection(at:).md)
+### Changing the characteristics of the selection
+- [func baseWritingDirection(at: any NSTextLocation) -> NSTextSelectionNavigation.WritingDirection](./basewritingdirection%28at%29.md)
   Returns the base writing direction at the location you specify.
-- [NSTextSelectionNavigation.WritingDirection](nstextselectionnavigation/writingdirection.md)
+- [NSTextSelectionNavigation.WritingDirection](../nstextselectionnavigation/writingdirection.md)
   Values that describe the writing direction inside a text selection.
-- [NSTextSelectionNavigation.LayoutOrientation](nstextselectionnavigation/layoutorientation.md)
+- [NSTextSelectionNavigation.LayoutOrientation](../nstextselectionnavigation/layoutorientation.md)
   Values that describe the possible layout orientations.
 
 

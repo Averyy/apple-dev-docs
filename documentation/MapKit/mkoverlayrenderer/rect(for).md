@@ -1,7 +1,8 @@
 # rect(for:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle in the overlay renderer’s drawing area corresponding to the specified rectangle on the map.
 
@@ -19,13 +20,17 @@ Returns the rectangle in the overlay renderer’s drawing area corresponding to 
 func rect(for mapRect: MKMapRect) -> CGRect
 ```
 
+```objc
+- (CGRect) rectForMapRect:(MKMapRect) mapRect;
+```
+
 #### Return Value
 
 The rectangle in the overlay’s drawing area that corresponds to the map rectangle.
 
 #### Discussion
 
-You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](mkoverlayrenderer/draw(_:zoomscale:in:).md) method.
+You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](./draw%28_,zoomscale,in%29.md) method.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](mko
 
 ## See Also
 
-- [func point(for: MKMapPoint) -> CGPoint](mkoverlayrenderer/point(for:).md)
+### Converting points on the map
+- [func point(for: MKMapPoint) -> CGPoint](./point%28for%29.md)
   Returns the point in the overlay renderer’s drawing area corresponding to the specified point on the map.
-- [func mapPoint(for: CGPoint) -> MKMapPoint](mkoverlayrenderer/mappoint(for:).md)
+- [func mapPoint(for: CGPoint) -> MKMapPoint](./mappoint%28for%29.md)
   Returns the point on the map that corresponds to the specified point in the overlay renderer’s drawing area.
-- [func mapRect(for: CGRect) -> MKMapRect](mkoverlayrenderer/maprect(for:).md)
+- [func mapRect(for: CGRect) -> MKMapRect](./maprect%28for%29.md)
   Returns the rectangle on the map that corresponds to the specified rectangle in the overlay renderer’s drawing area.
 
 

@@ -1,7 +1,8 @@
 # kSpeechDictionaryAbbreviations
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The set of custom pronunciations for abbreviations.
 
@@ -12,6 +13,10 @@ The set of custom pronunciations for abbreviations.
 
 ```swift
 let kSpeechDictionaryAbbreviations: CFString
+```
+
+```c
+const CFStringRef kSpeechDictionaryAbbreviations;
 ```
 
 

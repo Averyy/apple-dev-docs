@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDeclROMtables](1644577-anonymous/kdeclromtables.md)
-- [kDetailedTimingFormat](1644577-anonymous/kdetailedtimingformat.md)
+- [kDeclROMtables](./api-1644577-anonymous/kdeclromtables.md)
+- [kDetailedTimingFormat](./api-1644577-anonymous/kdetailedtimingformat.md)
 
 
 ---

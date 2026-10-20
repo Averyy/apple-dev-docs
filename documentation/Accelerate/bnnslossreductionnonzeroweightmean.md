@@ -1,7 +1,8 @@
 # BNNSLossReductionNonZeroWeightMean
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Sums the loss of all samples in the batch and divides by the number of non-zero weights.
 
@@ -20,24 +21,29 @@ Sums the loss of all samples in the batch and divides by the number of non-zero 
 var BNNSLossReductionNonZeroWeightMean: BNNSLossReductionFunction { get }
 ```
 
+```c
+BNNSLossReductionNonZeroWeightMean
+```
+
 #### Discussion
 
-[`BNNSLossReductionNonZeroWeightMean`](bnnslossreductionnonzeroweightmean.md) sums the loss of all samples in the batch and divides by number of non-zero weights.
+[`BNNSLossReductionNonZeroWeightMean`](./bnnslossreductionnonzeroweightmean.md) sums the loss of all samples in the batch and divides by number of non-zero weights.
 
 Non-zero weighted mean reduction returns 0 in case all weights are zero.
 
 ## See Also
 
-- [var rawValue: UInt32](bnnslossreductionfunction/rawvalue.md)
-- [init(UInt32)](bnnslossreductionfunction/init(_:).md)
-- [init(rawValue: UInt32)](bnnslossreductionfunction/init(rawvalue:).md)
-- [var BNNSLossReductionMean: BNNSLossReductionFunction](bnnslossreductionmean.md)
+### Reduction Functions
+- [var rawValue: UInt32](./bnnslossreductionfunction/rawvalue.md)
+- [init(UInt32)](./bnnslossreductionfunction/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnslossreductionfunction/init%28rawvalue%29.md)
+- [var BNNSLossReductionMean: BNNSLossReductionFunction](./bnnslossreductionmean.md)
   Sums the loss of all samples in the batch and divides by the number of samples.
-- [var BNNSLossReductionSum: BNNSLossReductionFunction](bnnslossreductionsum.md)
+- [var BNNSLossReductionSum: BNNSLossReductionFunction](./bnnslossreductionsum.md)
   Sums the loss of all samples in the batch.
-- [var BNNSLossReductionWeightedMean: BNNSLossReductionFunction](bnnslossreductionweightedmean.md)
+- [var BNNSLossReductionWeightedMean: BNNSLossReductionFunction](./bnnslossreductionweightedmean.md)
   Sums the loss of all samples in the batch and divides by the sum of all weights.
-- [var BNNSLossReductionNone: BNNSLossReductionFunction](bnnslossreductionnone.md)
+- [var BNNSLossReductionNone: BNNSLossReductionFunction](./bnnslossreductionnone.md)
   Returns the loss without any reduction.
 
 

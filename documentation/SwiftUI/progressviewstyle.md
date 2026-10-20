@@ -1,7 +1,8 @@
 # ProgressViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that applies standard interaction behavior to all progress views within a view hierarchy.
 
@@ -23,7 +24,7 @@ A type that applies standard interaction behavior to all progress views within a
 
 #### Overview
 
-To configure the current progress view style for a view hierarchy, use the [`progressViewStyle(_:)`](view/progressviewstyle(_:).md) modifier.
+To configure the current progress view style for a view hierarchy, use the [`progressViewStyle(_:)`](./view/progressviewstyle%28_%29.md) modifier.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -44,45 +45,46 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in progress view styles
-- [static var automatic: DefaultProgressViewStyle](progressviewstyle/automatic.md)
+- [static var automatic: DefaultProgressViewStyle](./progressviewstyle/automatic.md)
   The default progress view style in the current context of the view being styled.
-- [static var circular: CircularProgressViewStyle](progressviewstyle/circular.md)
+- [static var circular: CircularProgressViewStyle](./progressviewstyle/circular.md)
   The style of a progress view that uses a circular gauge to indicate the partial completion of an activity.
-- [static var linear: LinearProgressViewStyle](progressviewstyle/linear.md)
+- [static var linear: LinearProgressViewStyle](./progressviewstyle/linear.md)
   A progress view that visually indicates its progress using a horizontal bar.
 ### Creating custom progress view styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](progressviewstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./progressviewstyle/makebody%28configuration%29.md)
   Creates a view representing the body of a progress view.
-- [ProgressViewStyle.Configuration](progressviewstyle/configuration.md)
+- [ProgressViewStyle.Configuration](./progressviewstyle/configuration.md)
   A type alias for the properties of a progress view instance.
-- [associatedtype Body : View](progressviewstyle/body.md)
+- [associatedtype Body : View](./progressviewstyle/body.md)
   A view representing the body of a progress view.
 ### Supporting types
-- [struct DefaultProgressViewStyle](defaultprogressviewstyle.md)
+- [struct DefaultProgressViewStyle](./defaultprogressviewstyle.md)
   The default progress view style in the current context of the view being styled.
-- [struct CircularProgressViewStyle](circularprogressviewstyle.md)
+- [struct CircularProgressViewStyle](./circularprogressviewstyle.md)
   A progress view that uses a circular gauge to indicate the partial completion of an activity.
-- [struct LinearProgressViewStyle](linearprogressviewstyle.md)
+- [struct LinearProgressViewStyle](./linearprogressviewstyle.md)
   A progress view that visually indicates its progress using a horizontal bar.
 
 ## Relationships
 
 ### Conforming Types
-- [CircularProgressViewStyle](circularprogressviewstyle.md)
-- [DefaultProgressViewStyle](defaultprogressviewstyle.md)
-- [LinearProgressViewStyle](linearprogressviewstyle.md)
+- [CircularProgressViewStyle](./circularprogressviewstyle.md)
+- [DefaultProgressViewStyle](./defaultprogressviewstyle.md)
+- [LinearProgressViewStyle](./linearprogressviewstyle.md)
 
 ## See Also
 
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+### Styling indicators
+- [func gaugeStyle<S>(S) -> some View](./view/gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [protocol GaugeStyle](gaugestyle.md)
+- [protocol GaugeStyle](./gaugestyle.md)
   Defines the implementation of all gauge instances within a view hierarchy.
-- [struct GaugeStyleConfiguration](gaugestyleconfiguration.md)
+- [struct GaugeStyleConfiguration](./gaugestyleconfiguration.md)
   The properties of a gauge instance.
-- [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
+- [func progressViewStyle<S>(S) -> some View](./view/progressviewstyle%28_%29.md)
   Sets the style for progress views in this view.
-- [struct ProgressViewStyleConfiguration](progressviewstyleconfiguration.md)
+- [struct ProgressViewStyleConfiguration](./progressviewstyleconfiguration.md)
   The properties of a progress view instance.
 
 

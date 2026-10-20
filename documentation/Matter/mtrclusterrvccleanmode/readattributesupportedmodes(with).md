@@ -1,7 +1,8 @@
 # readAttributeSupportedModes(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeSupportedModes(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeSupportedModesWithParams:(MTRReadParams *) params;
 ```
 
 

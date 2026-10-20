@@ -1,7 +1,8 @@
 # UIScene.WillDeactivateMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct WillDeactivateMessage
 ## Topics
 
 ### Initializers
-- [init(scene: UIScene)](uiscene/willdeactivatemessage/init(scene:).md)
+- [init(scene: UIScene)](./willdeactivatemessage/init%28scene%29.md)
 ### Instance Properties
-- [var scene: UIScene](uiscene/willdeactivatemessage/scene.md)
+- [var scene: UIScene](./willdeactivatemessage/scene.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # perPageContentInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The margins for each printed page.
 
@@ -17,19 +18,24 @@ The margins for each printed page.
 var perPageContentInsets: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets perPageContentInsets;
+```
+
 #### Discussion
 
-This property specifies the margins to apply to each printed page. All margins are respected, so the top inset value represents the top margin of every page, the left inset value represents the left margin of every page, and so on. If the per-page insets are smaller than the printable area of the page, or smaller than the printable area after the values in the [`contentInsets`](uiprintformatter/contentinsets.md) property are applied, the value in this property is effectively ignored.
+This property specifies the margins to apply to each printed page. All margins are respected, so the top inset value represents the top margin of every page, the left inset value represents the left margin of every page, and so on. If the per-page insets are smaller than the printable area of the page, or smaller than the printable area after the values in the [`contentInsets`](./contentinsets.md) property are applied, the value in this property is effectively ignored.
 
-The default value of this property is [`zero`](uiedgeinsets/zero.md).
+The default value of this property is [`zero`](../uiedgeinsets/zero.md).
 
 ## See Also
 
-- [var maximumContentHeight: CGFloat](uiprintformatter/maximumcontentheight.md)
+### Laying out the content
+- [var maximumContentHeight: CGFloat](./maximumcontentheight.md)
   The maximum height of the content area.
-- [var maximumContentWidth: CGFloat](uiprintformatter/maximumcontentwidth.md)
+- [var maximumContentWidth: CGFloat](./maximumcontentwidth.md)
   The maximum width of the content area.
-- [var contentInsets: UIEdgeInsets](uiprintformatter/contentinsets.md)
+- [var contentInsets: UIEdgeInsets](./contentinsets.md)
   The distances the edges of content are inset from the printing rectangle.
 
 

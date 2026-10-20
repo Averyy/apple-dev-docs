@@ -1,7 +1,8 @@
 # NSFileProviderServiceName
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The name used to identify a File Provider service.
 
@@ -20,6 +21,10 @@ The name used to identify a File Provider service.
 struct NSFileProviderServiceName
 ```
 
+```c
+typedef NSString * NSFileProviderServiceName;
+```
+
 #### Discussion
 
 The team providing the protocol also defines the name. To create a new service’s name:
@@ -27,30 +32,31 @@ The team providing the protocol also defines the name. To create a new service�
 - Use reverse domain name notation for the interfaces name (for example, `com.example.MyInterface`).
 - (Optional) Incorporate versioning by appending a version number to the end of the name (`com.example.MyInterface.v2`).
 
-For more information on defining a service’s protocol, see [`Defining the Service’s Protocol`](nsfileproviderservice#Defining-the-Services-Protocol.md).
+For more information on defining a service’s protocol, see [Defining the Service’s Protocol](./nsfileproviderservice.md#Defining-the-Services-Protocol).
 
 ## Topics
 
 ### Initializers
-- [init(String)](nsfileproviderservicename/init(_:).md)
+- [init(String)](./nsfileproviderservicename/init%28_%29.md)
   Instantiates a new service name from the provided string.
-- [init(rawValue: String)](nsfileproviderservicename/init(rawvalue:).md)
+- [init(rawValue: String)](./nsfileproviderservicename/init%28rawvalue%29.md)
   Instantiates a new service name from the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func getFileProviderServicesForItem(at: URL, completionHandler: ([NSFileProviderServiceName : NSFileProviderService]?, (any Error)?) -> Void)](filemanager/getfileproviderservicesforitem(at:completionhandler:).md)
+### Accessing file provider services
+- [func getFileProviderServicesForItem(at: URL, completionHandler: ([NSFileProviderServiceName : NSFileProviderService]?, (any Error)?) -> Void)](./filemanager/getfileproviderservicesforitem%28at,completionhandler%29.md)
   Returns the services provided by the File Provider extension that manages the item at the given URL.
-- [class NSFileProviderService](nsfileproviderservice.md)
+- [class NSFileProviderService](./nsfileproviderservice.md)
   A service that provides a custom communication channel between your app and a File Provider extension.
 
 

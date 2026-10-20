@@ -1,7 +1,8 @@
 # CKSyncEngine.SendChangesOptions
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of options to use when sending changes to the server.
 
@@ -11,7 +12,7 @@ A set of options to use when sending changes to the server.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,41 +24,42 @@ struct SendChangesOptions
 ## Topics
 
 ### Managing attributes
-- [var description: String](cksyncengine-5sie5/sendchangesoptions/description.md)
+- [var description: String](./sendchangesoptions/description.md)
   A textual description of the options that’s suitable for logging.
-- [var operationGroup: CKOperationGroup](cksyncengine-5sie5/sendchangesoptions/operationgroup.md)
+- [var operationGroup: CKOperationGroup](./sendchangesoptions/operationgroup.md)
   The operation group to use for the underlying CloudKit operations.
 ### Debugging options
-- [var description: String](cksyncengine-5sie5/sendchangesoptions/description.md)
+- [var description: String](./sendchangesoptions/description.md)
   A textual description of the options that’s suitable for logging.
 ### Initializers
-- [init(scope: CKSyncEngine.SendChangesOptions.Scope, operationGroup: CKOperationGroup?)](cksyncengine-5sie5/sendchangesoptions/init(scope:operationgroup:).md)
+- [init(scope: CKSyncEngine.SendChangesOptions.Scope, operationGroup: CKOperationGroup?)](./sendchangesoptions/init%28scope,operationgroup%29.md)
   Creates a new set of send changes options.
 ### Instance Properties
-- [var scope: CKSyncEngine.SendChangesOptions.Scope](cksyncengine-5sie5/sendchangesoptions/scope-swift.property.md)
+- [var scope: CKSyncEngine.SendChangesOptions.Scope](./sendchangesoptions/scope-swift.property.md)
   The scope of the changes to send.
 ### Enumerations
-- [CKSyncEngine.SendChangesOptions.Scope](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum.md)
+- [CKSyncEngine.SendChangesOptions.Scope](./sendchangesoptions/scope-swift.enum.md)
   The scope for sending changes to the server.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/sendchangesoptions/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./sendchangesoptions/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func fetchChanges(CKSyncEngine.FetchChangesOptions) async throws](cksyncengine-5sie5/fetchchanges(_:).md)
+### Invoking manual sync operations
+- [func fetchChanges(CKSyncEngine.FetchChangesOptions) async throws](./fetchchanges%28_%29.md)
   Fetches pending remote changes from the server.
-- [CKSyncEngine.FetchChangesOptions](cksyncengine-5sie5/fetchchangesoptions.md)
+- [CKSyncEngine.FetchChangesOptions](./fetchchangesoptions.md)
   A set of options to use when fetching changes from the server.
-- [func sendChanges(CKSyncEngine.SendChangesOptions) async throws](cksyncengine-5sie5/sendchanges(_:).md)
+- [func sendChanges(CKSyncEngine.SendChangesOptions) async throws](./sendchanges%28_%29.md)
   Sends pending local changes to the server.
 
 

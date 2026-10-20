@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: GameplayKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the component at the specified index in the system’s list of components.
 
@@ -19,17 +20,21 @@ Returns the component at the specified index in the system’s list of component
 subscript(idx: Int) -> ComponentType { get }
 ```
 
+```objc
+- (ComponentType) objectAtIndexedSubscript:(NSUInteger) idx;
+```
+
 #### Return Value
 
-The component at the specified index in the [`components`](gkcomponentsystem/components.md) array.
+The component at the specified index in the [`components`](./components.md) array.
 
 #### Discussion
 
-This method is equivalent to accessing objects by index in the [`components`](gkcomponentsystem/components.md) array, but allows access using subscript syntax on the component system itself.
+This method is equivalent to accessing objects by index in the [`components`](./components.md) array, but allows access using subscript syntax on the component system itself.
 
 ## Parameters
 
-- `idx`: A valid index to the [`components`](gkcomponentsystem/components.md) array.
+- `idx`: A valid index to the [`components`](./components.md) array.
 
 
 ---

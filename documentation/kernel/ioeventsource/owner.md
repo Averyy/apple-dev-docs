@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 OSObject *owner;
 ```
 
@@ -15,12 +15,13 @@ The owner object called when an event has been delivered.
 
 ## See Also
 
-- [workLoop](ioeventsource/workloop.md)
-- [reserved](ioeventsource/reserved.md)
-- [refcon](ioeventsource/refcon.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [enabled](ioeventsource/enabled.md)
-- [action](ioeventsource/action-8l7.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [reserved](./reserved.md)
+- [refcon](./refcon.md)
+- [eventChainNext](./eventchainnext.md)
+- [enabled](./enabled.md)
+- [action](./action-8l7.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # informativeText()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the informative text currently displayed in the panel.
 
@@ -14,17 +15,22 @@ Returns the informative text currently displayed in the panel.
 func informativeText() -> String!
 ```
 
+```objc
+- (NSString *) informativeText;
+```
+
 ## See Also
 
-- [func setAlternateButtonTitle(String!)](sfchooseidentitypanel/setalternatebuttontitle(_:).md)
+### Customizing the Appearance of the Sheet or Panel
+- [func setAlternateButtonTitle(String!)](./setalternatebuttontitle%28_%29.md)
   Customizes the title of the alternate button.
-- [func setDefaultButtonTitle(String!)](sfchooseidentitypanel/setdefaultbuttontitle(_:).md)
+- [func setDefaultButtonTitle(String!)](./setdefaultbuttontitle%28_%29.md)
   Customizes the title of the default button.
-- [func setPolicies(Any!)](sfchooseidentitypanel/setpolicies(_:).md)
+- [func setPolicies(Any!)](./setpolicies%28_%29.md)
   Specifies one or more policies that apply to the displayed certificates.
-- [func policies() -> [Any]!](sfchooseidentitypanel/policies.md)
+- [func policies() -> [Any]!](./policies%28%29.md)
   Returns an array of policies used to evaluate the status of the displayed certificates.
-- [func setInformativeText(String!)](sfchooseidentitypanel/setinformativetext(_:).md)
+- [func setInformativeText(String!)](./setinformativetext%28_%29.md)
   Sets the optional informative text displayed in the panel.
 
 

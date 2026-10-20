@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -20,9 +21,10 @@ func removeAll()
 
 ## See Also
 
-- [func append(ArchiveHeader.EntryXATBlob.ExtendedAttribute)](archiveheader/entryxatblob/append(_:).md)
-- [func remove(at: Int) -> ArchiveHeader.EntryXATBlob.ExtendedAttribute](archiveheader/entryxatblob/remove(at:).md)
-- [func withAAEncodedData<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](archiveheader/entryxatblob/withaaencodeddata(_:).md)
+### Collection Requirements
+- [func append(ArchiveHeader.EntryXATBlob.ExtendedAttribute)](./append%28_%29.md)
+- [func remove(at: Int) -> ArchiveHeader.EntryXATBlob.ExtendedAttribute](./remove%28at%29.md)
+- [func withAAEncodedData<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](./withaaencodeddata%28_%29.md)
 
 
 ---

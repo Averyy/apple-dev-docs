@@ -1,7 +1,8 @@
 # externalForces
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The external forces applied to the particles in the body (in Newtons).
 
@@ -22,11 +23,12 @@ By default, the external forces are set to the zero vector.
 
 ## See Also
 
-- [ClothBodyComponent.ExternalForce](clothbodycomponent/externalforce.md)
+### Applying external forces
+- [ClothBodyComponent.ExternalForce](./externalforce.md)
   An external force applied to a single particle, in Newtons.
-- [var inflationConstraint: ClothBodyComponent.InflationConstraint?](clothbodycomponent/inflationconstraint-swift.property.md)
+- [var inflationConstraint: ClothBodyComponent.InflationConstraint?](./inflationconstraint-swift.property.md)
   An optional inflation constraint for representing inflatable bodies (must be watertight).
-- [ClothBodyComponent.InflationConstraint](clothbodycomponent/inflationconstraint-swift.struct.md)
+- [ClothBodyComponent.InflationConstraint](./inflationconstraint-swift.struct.md)
   Configuration for an inflatable cloth body.
 
 

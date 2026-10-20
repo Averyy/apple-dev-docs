@@ -1,13 +1,14 @@
 # isLike(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the receiver is “like” another given object.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Returns a Boolean value that indicates whether the receiver is “like” anothe
 func isLike(_ object: String) -> Bool
 ```
 
+```objc
+- (BOOL) isLike:(NSString *) object;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the receiver is considered to be “like” `object`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the receiver is considered to be “like” `object`, otherwise [`NO`](../no.md).
 
 #### Discussion
 
-Currently, [`isLike(_:)`](nsobject-swift.class/islike(_:).md) messages are never sent to any object from within Cocoa itself.
+Currently, [`isLike(_:)`](./islike%28_%29.md) messages are never sent to any object from within Cocoa itself.
 
-The default implementation for this method provided by `NSObject` method returns [`NO`](no.md). `NSString` also provides an implementation of this method, which returns [`YES`](yes.md) if the receiver matches a pattern described by `object`.
+The default implementation for this method provided by `NSObject` method returns [`NO`](../no.md). `NSString` also provides an implementation of this method, which returns [`YES`](../yes.md) if the receiver matches a pattern described by `object`.
 
 ## Parameters
 

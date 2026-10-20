@@ -1,7 +1,8 @@
 # init(title:body:sound:)
 
 **Framework**: ActivityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new alert configuration for a Live Activity update.
 
@@ -23,13 +24,14 @@ init(title: LocalizedStringResource, body: LocalizedStringResource, sound: Alert
 
 ## See Also
 
-- [var title: LocalizedStringResource](alertconfiguration/title.md)
+### Configuring Live Activity alerts
+- [var title: LocalizedStringResource](./title.md)
   A short title that describes the purpose of the Live Activity update on Apple Watch.
-- [var body: LocalizedStringResource](alertconfiguration/body.md)
+- [var body: LocalizedStringResource](./body.md)
   The main text that appears on the alert for a Live Activity update on Apple Watch.
-- [var sound: AlertConfiguration.AlertSound](alertconfiguration/sound.md)
+- [var sound: AlertConfiguration.AlertSound](./sound.md)
   The sound the system plays when the Live Activity alert appears on a person’s device.
-- [AlertConfiguration.AlertSound](alertconfiguration/alertsound.md)
+- [AlertConfiguration.AlertSound](./alertsound.md)
   An object that describes the sound to play for a Live Activity update alert.
 
 

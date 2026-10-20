@@ -1,7 +1,8 @@
 # flushCollection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Removes and drops references to all members of array.
 
@@ -11,21 +12,22 @@ Removes and drops references to all members of array.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void flushCollection(void);
 ```
 
 ## See Also
 
-- [+ withArray](osarray/3180823-witharray.md)
+### Creating an Array
+- [+ withArray](./api-3180823-witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [+ withCapacity](osarray/3180824-withcapacity.md)
+- [+ withCapacity](./api-3180824-withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [+ withObjects](osarray/3180825-withobjects.md)
+- [+ withObjects](./api-3180825-withobjects.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [- merge](osarray/3180819-merge.md)
+- [- merge](./api-3180819-merge.md)
   Appends all members of an array to this array.
-- [- free](osarray/3180811-free.md)
+- [- free](./api-3180811-free.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # qr
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that identifies the QR symbology.
 
@@ -18,17 +19,22 @@ A constant that identifies the QR symbology.
 static let qr: AVMetadataObject.ObjectType
 ```
 
+```c
+extern AVMetadataObjectType const AVMetadataObjectTypeQRCode;
+```
+
 ## See Also
 
-- [static let aztec: AVMetadataObject.ObjectType](avmetadataobject/objecttype/aztec.md)
+### 2D codes
+- [static let aztec: AVMetadataObject.ObjectType](./aztec.md)
   A constant that identifies the Aztec symbology.
-- [static let dataMatrix: AVMetadataObject.ObjectType](avmetadataobject/objecttype/datamatrix.md)
+- [static let dataMatrix: AVMetadataObject.ObjectType](./datamatrix.md)
   A constant that identifies the DataMatrix symbology.
-- [static let microPDF417: AVMetadataObject.ObjectType](avmetadataobject/objecttype/micropdf417.md)
+- [static let microPDF417: AVMetadataObject.ObjectType](./micropdf417.md)
   A constant that identifies the Micro PDF417 symbology.
-- [static let microQR: AVMetadataObject.ObjectType](avmetadataobject/objecttype/microqr.md)
+- [static let microQR: AVMetadataObject.ObjectType](./microqr.md)
   A constant that identifies the Micro QR symbology.
-- [static let pdf417: AVMetadataObject.ObjectType](avmetadataobject/objecttype/pdf417.md)
+- [static let pdf417: AVMetadataObject.ObjectType](./pdf417.md)
   A constant that identifies the PDF417 symbology.
 
 

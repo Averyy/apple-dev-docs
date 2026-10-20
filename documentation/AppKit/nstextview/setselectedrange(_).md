@@ -1,12 +1,13 @@
 # setSelectedRange(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the specified range of characters in response to user action.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Selects the specified range of characters in response to user action.
 func setSelectedRange(_ charRange: NSRange)
 ```
 
+```objc
+- (void) setSelectedRange:(NSRange) charRange;
+```
+
 #### Discussion
 
-Calling this method resets the [`selectionGranularity`](nstextview/selectiongranularity.md) property to [`NSSelectionGranularity.selectByCharacter`](nsselectiongranularity/selectbycharacter.md) and the [`selectionAffinity`](nstextview/selectionaffinity.md) property to [`NSSelectionAffinity.upstream`](nsselectionaffinity/upstream.md).
+Calling this method resets the [`selectionGranularity`](./selectiongranularity.md) property to [`NSSelectionGranularity.selectByCharacter`](../nsselectiongranularity/selectbycharacter.md) and the [`selectionAffinity`](./selectionaffinity.md) property to [`NSSelectionAffinity.upstream`](../nsselectionaffinity/upstream.md).
 
 ## Parameters
 
@@ -24,29 +29,30 @@ Calling this method resets the [`selectionGranularity`](nstextview/selectiongran
 
 ## See Also
 
-- [var selectedRanges: [NSValue]](nstextview/selectedranges.md)
+### Managing the selection
+- [var selectedRanges: [NSValue]](./selectedranges.md)
   An array containing the ranges of characters selected in the receiver’s layout manager.
-- [func setSelectedRange(NSRange, affinity: NSSelectionAffinity, stillSelecting: Bool)](nstextview/setselectedrange(_:affinity:stillselecting:).md)
+- [func setSelectedRange(NSRange, affinity: NSSelectionAffinity, stillSelecting: Bool)](./setselectedrange%28_,affinity,stillselecting%29.md)
   Sets the selection to a range of characters in response to user action.
-- [func setSelectedRanges([NSValue], affinity: NSSelectionAffinity, stillSelecting: Bool)](nstextview/setselectedranges(_:affinity:stillselecting:).md)
+- [func setSelectedRanges([NSValue], affinity: NSSelectionAffinity, stillSelecting: Bool)](./setselectedranges%28_,affinity,stillselecting%29.md)
   Sets the selection to the characters in an array of ranges in response to user action.
-- [var selectionAffinity: NSSelectionAffinity](nstextview/selectionaffinity.md)
+- [var selectionAffinity: NSSelectionAffinity](./selectionaffinity.md)
   The preferred direction of selection.
-- [var selectionGranularity: NSSelectionGranularity](nstextview/selectiongranularity.md)
+- [var selectionGranularity: NSSelectionGranularity](./selectiongranularity.md)
   The selection granularity for subsequent extension of a selection.
-- [var insertionPointColor: NSColor!](nstextview/insertionpointcolor.md)
+- [var insertionPointColor: NSColor!](./insertionpointcolor.md)
   The color of the insertion point.
-- [func updateInsertionPointStateAndRestartTimer(Bool)](nstextview/updateinsertionpointstateandrestarttimer(_:).md)
+- [func updateInsertionPointStateAndRestartTimer(Bool)](./updateinsertionpointstateandrestarttimer%28_%29.md)
   Updates the insertion point’s location and optionally restarts the blinking cursor timer.
-- [var selectedTextAttributes: [NSAttributedString.Key : Any]](nstextview/selectedtextattributes.md)
+- [var selectedTextAttributes: [NSAttributedString.Key : Any]](./selectedtextattributes.md)
   The attributes used to indicate the selection.
-- [var markedTextAttributes: [NSAttributedString.Key : Any]?](nstextview/markedtextattributes.md)
+- [var markedTextAttributes: [NSAttributedString.Key : Any]?](./markedtextattributes.md)
   The attributes used to draw marked text.
-- [var linkTextAttributes: [NSAttributedString.Key : Any]?](nstextview/linktextattributes.md)
+- [var linkTextAttributes: [NSAttributedString.Key : Any]?](./linktextattributes.md)
   The attributes used to draw the onscreen presentation of link text.
-- [func characterIndexForInsertion(at: NSPoint) -> Int](nstextview/characterindexforinsertion(at:).md)
+- [func characterIndexForInsertion(at: NSPoint) -> Int](./characterindexforinsertion%28at%29.md)
   Returns a character index appropriate for placing a zero-length selection for an insertion point associated with the mouse at the given point.
-- [func updateCandidates()](nstextview/updatecandidates.md)
+- [func updateCandidates()](./updatecandidates%28%29.md)
 
 
 ---

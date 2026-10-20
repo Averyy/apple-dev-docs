@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The date for WidgetKit to render a widget.
@@ -22,7 +23,8 @@ var date: Date { get }
 
 ## See Also
 
-- [var relevance: TimelineEntryRelevance?](timelineentry/relevance.md)
+### Configuring Timeline Entry Properties
+- [var relevance: TimelineEntryRelevance?](./relevance.md)
   The relevance of a widget’s content to the user.
 
 

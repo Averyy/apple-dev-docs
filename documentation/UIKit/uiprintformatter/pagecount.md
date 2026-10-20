@@ -1,7 +1,8 @@
 # pageCount
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of pages to print.
 
@@ -17,13 +18,18 @@ The number of pages to print.
 var pageCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger pageCount;
+```
+
 #### Discussion
 
 `UIPrintFormatter` calculates this value based on the layout metrics and content.
 
 ## See Also
 
-- [var startPage: Int](uiprintformatter/startpage.md)
+### Managing pagination
+- [var startPage: Int](./startpage.md)
   The index of the first page that the print formatter lays out.
 
 

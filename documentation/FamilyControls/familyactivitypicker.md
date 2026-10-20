@@ -1,7 +1,8 @@
 # FamilyActivityPicker
 
 **Framework**: Family Controls  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 
@@ -18,7 +19,7 @@ A view in which users specify applications, web domains, and categories without 
 
 #### Overview
 
-To prompt the user for their selection, create a binding to a [`FamilyActivitySelection`](familyactivityselection.md) instance, and use the binding to create a [`FamilyActivityPicker`](familyactivitypicker.md) instance. You can then display the picker like any SwiftUI view.
+To prompt the user for their selection, create a binding to a [`FamilyActivitySelection`](./familyactivityselection.md) instance, and use the binding to create a [`FamilyActivityPicker`](./familyactivitypicker.md) instance. You can then display the picker like any SwiftUI view.
 
 ```swift
 struct ExampleView: View {
@@ -47,7 +48,7 @@ struct ExampleView: View {
 
 > **Note**: A `FamilyActivityPicker` shown on a parent device only displays applications and websites from authorized child devices within the Family Sharing Group. A `FamilyActivityPicker` shown on an individually authorized device includes applications and websites from that same device.
 
-To streamline this process, call  the [`familyActivityPicker(isPresented:selection:)`](https://developer.apple.com/documentation/swiftui/view/familyactivitypicker(ispresented:selection:)) modifier on a view in your user interface. This modifier displays the picker view as a sheet over your user interface when the `isPresented` binding is `true`.
+To streamline this process, call  the [`familyActivityPicker(isPresented:selection:)`](../SwiftUI/view/familyactivitypicker%28ispresented,selection%29.md) modifier on a view in your user interface. This modifier displays the picker view as a sheet over your user interface when the `isPresented` binding is `true`.
 
 ```swift
 struct ExampleView: View {
@@ -69,35 +70,36 @@ struct ExampleView: View {
 
 When you present the `FamilyActivityPicker`, the system displays a view where the user can select categories, applications, and web domains. As soon as the user confirms their selection, the system updates the `FamilyActivitySelection` binding with the user’s selections. To protect the user’s privacy, the system uses opaque values to represent the selections.
 
-Your app passes the selected values to the appropriate instances and methods from the [`Managed Settings`](https://developer.apple.com/documentation/managedsettings) and [`Device Activity`](https://developer.apple.com/documentation/deviceactivity) frameworks.
+Your app passes the selected values to the appropriate instances and methods from the [Managed Settings](../ManagedSettings/ManagedSettings.md) and [Device Activity](../DeviceActivity/DeviceActivity.md) frameworks.
 
 ## Topics
 
 ### Creating activity pickers
-- [init(selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(selection:).md)
+- [init(selection: Binding<FamilyActivitySelection>)](./familyactivitypicker/init%28selection%29.md)
   Creates a new activity picker.
-- [init(headerText: String?, footerText: String?, selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(headertext:footertext:selection:).md)
+- [init(headerText: String?, footerText: String?, selection: Binding<FamilyActivitySelection>)](./familyactivitypicker/init%28headertext,footertext,selection%29.md)
   Creates a new activity picker with optional header and footer text.
 - [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
-](../swiftui/view/familyactivitypicker(title:headertext:footertext:ispresented:selection:).md)
+](../SwiftUI/view/familyactivitypicker%28title,headertext,footertext,ispresented,selection%29.md)
   Present an activity picker sheet for selecting apps and websites to manage.
 ### Accessing the content
-- [var body: some View](familyactivitypicker/body.md)
+- [var body: some View](./familyactivitypicker/body.md)
   The content of this view.
 ### Adding view modifiers
-- [View Modifiers](familyactivitypicker-view-modifiers.md)
+- [View Modifiers](./familyactivitypicker-view-modifiers.md)
   Apply standard modifiers to configure the family activity picker view and the views it contains.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct FamilyActivitySelection](familyactivityselection.md)
+### Activity selections
+- [struct FamilyActivitySelection](./familyactivityselection.md)
   A collection of applications, categories, and web domains selected by the user.
 
 

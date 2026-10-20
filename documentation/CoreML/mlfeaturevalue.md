@@ -1,7 +1,8 @@
 # MLFeatureValue
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A generic wrapper around an underlying value and the value’s type.
 
@@ -20,148 +21,153 @@ A generic wrapper around an underlying value and the value’s type.
 class MLFeatureValue
 ```
 
+```objc
+@interface MLFeatureValue : NSObject
+```
+
 #### Overview
 
-A Core ML *feature value* wraps an underlying value and bundles it with that value’s type, which is one of the types that [`MLFeatureType`](mlfeaturetype.md) defines. Apps typically access feature values indirectly by using the methods in the wrapper class Xcode automatically generates for Core ML model files.
+A Core ML *feature value* wraps an underlying value and bundles it with that value’s type, which is one of the types that [`MLFeatureType`](./mlfeaturetype.md) defines. Apps typically access feature values indirectly by using the methods in the wrapper class Xcode automatically generates for Core ML model files.
 
-If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and consume [`MLFeatureProvider`](mlfeatureprovider.md) instances. For each prediction, Core ML accepts a feature provider for its inputs, and generates a separate feature provider for its outputs. The input feature provider contains one `MLFeatureValue` instance per input, and the output feature provider contains one per output. See [`MLFeatureDescription`](mlfeaturedescription.md) for more information about the model input and output features.
+If your app accesses an [`MLModel`](./mlmodel.md) directly, it must create and consume [`MLFeatureProvider`](./mlfeatureprovider.md) instances. For each prediction, Core ML accepts a feature provider for its inputs, and generates a separate feature provider for its outputs. The input feature provider contains one `MLFeatureValue` instance per input, and the output feature provider contains one per output. See [`MLFeatureDescription`](./mlfeaturedescription.md) for more information about the model input and output features.
 
 ## Topics
 
 ### Creating a feature value
-- [convenience init(MLSendableFeatureValue)](mlfeaturevalue/init(_:).md)
+- [convenience init(MLSendableFeatureValue)](./mlfeaturevalue/init%28_%29.md)
   Creates a feature value from a sendable feature value.
 ### Creating numeric feature values
-- [convenience init(int64: Int64)](mlfeaturevalue/init(int64:).md)
+- [convenience init(int64: Int64)](./mlfeaturevalue/init%28int64%29.md)
   Creates a feature value that contains an integer.
-- [convenience init(double: Double)](mlfeaturevalue/init(double:).md)
+- [convenience init(double: Double)](./mlfeaturevalue/init%28double%29.md)
   Creates a feature value that contains a double.
 ### Creating string feature values
-- [convenience init(string: String)](mlfeaturevalue/init(string:).md)
+- [convenience init(string: String)](./mlfeaturevalue/init%28string%29.md)
   Creates a feature value that contains a string.
 ### Creating multidimensional feature values
-- [convenience init(multiArray: MLMultiArray)](mlfeaturevalue/init(multiarray:).md)
+- [convenience init(multiArray: MLMultiArray)](./mlfeaturevalue/init%28multiarray%29.md)
   Creates a feature value that contains a multidimensional array.
-- [convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>)](mlfeaturevalue/init(shapedarray:).md)
+- [convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>)](./mlfeaturevalue/init%28shapedarray%29.md)
   Creates a feature value that contains a shaped array.
 ### Creating collection feature values
-- [convenience init(dictionary: [AnyHashable : NSNumber]) throws](mlfeaturevalue/init(dictionary:).md)
+- [convenience init(dictionary: [AnyHashable : NSNumber]) throws](./mlfeaturevalue/init%28dictionary%29.md)
   Creates a feature value that contains a dictionary of numbers.
-- [convenience init(sequence: MLSequence)](mlfeaturevalue/init(sequence:).md)
+- [convenience init(sequence: MLSequence)](./mlfeaturevalue/init%28sequence%29.md)
   Creates a feature value that contains a sequence.
 ### Creating image feature values
-- [convenience init(pixelBuffer: CVPixelBuffer)](mlfeaturevalue/init(pixelbuffer:).md)
+- [convenience init(pixelBuffer: CVPixelBuffer)](./mlfeaturevalue/init%28pixelbuffer%29.md)
   Creates a feature value that contains an image from a pixel buffer.
-- [convenience init(CGImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:)-2zg43.md)
+- [convenience init(CGImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,pixelswide,pixelshigh,pixelformattype,options%29-2zg43.md)
   Creates a feature value that contains an image defined by a core graphics image and its size and pixel format.
-- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:pixelswide:pixelshigh:pixelformattype:options:)-4nme0.md)
+- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,orientation,pixelswide,pixelshigh,pixelformattype,options%29-4nme0.md)
   Creates a feature value that contains an image defined by a core graphics image and its orientation, size, and pixel format.
-- [convenience init(CGImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:constraint:options:)-1j00l.md)
+- [convenience init(CGImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,constraint,options%29-1j00l.md)
   Creates a feature value that contains an image defined by a core graphics image and a constraint.
-- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:constraint:options:)-87vk0.md)
+- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,orientation,constraint,options%29-87vk0.md)
   Creates a feature value that contains an image defined by a core graphics image, an orientation, and a constraint.
-- [convenience init(imageAtURL: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageaturl:pixelswide:pixelshigh:pixelformattype:options:).md)
+- [convenience init(imageAtURL: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageaturl,pixelswide,pixelshigh,pixelformattype,options%29.md)
   Creates a feature value that contains an image defined by an image URL and the image’s size and pixel format.
-- [convenience init(imageAtURL: URL, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageaturl:orientation:pixelswide:pixelshigh:pixelformattype:options:).md)
+- [convenience init(imageAtURL: URL, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageaturl,orientation,pixelswide,pixelshigh,pixelformattype,options%29.md)
   Creates a feature value that contains an image defined by an image URL and the image’s orientation, size, and pixel format.
-- [convenience init(imageAtURL: URL, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageaturl:constraint:options:).md)
+- [convenience init(imageAtURL: URL, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageaturl,constraint,options%29.md)
   Creates a feature value that contains an image defined by an image URL and a constraint.
-- [convenience init(imageAtURL: URL, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageaturl:orientation:constraint:options:).md)
+- [convenience init(imageAtURL: URL, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageaturl,orientation,constraint,options%29.md)
   Creates a feature value that contains an image defined by an image URL, an orientation, and a constraint.
-- [class MLImageConstraint](mlimageconstraint.md)
+- [class MLImageConstraint](./mlimageconstraint.md)
   The width, height, and pixel format constraints of an image feature.
-- [MLFeatureValue.ImageOption](mlfeaturevalue/imageoption.md)
+- [MLFeatureValue.ImageOption](./mlfeaturevalue/imageoption.md)
   The initializer options you use to crop and scale an image when creating an image feature value.
 ### Creating undefined feature values
-- [convenience init(undefined: MLFeatureType)](mlfeaturevalue/init(undefined:).md)
+- [convenience init(undefined: MLFeatureType)](./mlfeaturevalue/init%28undefined%29.md)
   Creates a feature value with a type that represents an undefined or missing value.
 ### Accessing the feature’s type
-- [var type: MLFeatureType](mlfeaturevalue/type.md)
+- [var type: MLFeatureType](./mlfeaturevalue/type.md)
   The type of the feature value.
 ### Accessing the feature’s value
-- [var isUndefined: Bool](mlfeaturevalue/isundefined.md)
+- [var isUndefined: Bool](./mlfeaturevalue/isundefined.md)
   A Boolean value that indicates whether the feature value is undefined or missing.
-- [var int64Value: Int64](mlfeaturevalue/int64value.md)
+- [var int64Value: Int64](./mlfeaturevalue/int64value.md)
   The underlying integer of the feature value.
-- [var doubleValue: Double](mlfeaturevalue/doublevalue.md)
+- [var doubleValue: Double](./mlfeaturevalue/doublevalue.md)
   The underlying double of the feature value.
-- [var stringValue: String](mlfeaturevalue/stringvalue.md)
+- [var stringValue: String](./mlfeaturevalue/stringvalue.md)
   The underlying string of the feature value.
-- [var imageBufferValue: CVPixelBuffer?](mlfeaturevalue/imagebuffervalue.md)
+- [var imageBufferValue: CVPixelBuffer?](./mlfeaturevalue/imagebuffervalue.md)
   The underlying image of the feature value as a pixel buffer.
-- [func shapedArrayValue<Scalar>(of: Scalar.Type) -> MLShapedArray<Scalar>?](mlfeaturevalue/shapedarrayvalue(of:).md)
+- [func shapedArrayValue<Scalar>(of: Scalar.Type) -> MLShapedArray<Scalar>?](./mlfeaturevalue/shapedarrayvalue%28of%29.md)
   Returns the underlying shaped array of the feature value.
-- [var multiArrayValue: MLMultiArray?](mlfeaturevalue/multiarrayvalue.md)
+- [var multiArrayValue: MLMultiArray?](./mlfeaturevalue/multiarrayvalue.md)
   The underlying multiarray of the feature value.
-- [var sequenceValue: MLSequence?](mlfeaturevalue/sequencevalue.md)
+- [var sequenceValue: MLSequence?](./mlfeaturevalue/sequencevalue.md)
   The underlying sequence of the feature value.
-- [var dictionaryValue: [AnyHashable : NSNumber]](mlfeaturevalue/dictionaryvalue.md)
+- [var dictionaryValue: [AnyHashable : NSNumber]](./mlfeaturevalue/dictionaryvalue.md)
   The underlying dictionary of the feature value.
 ### Comparing feature values
-- [func isEqual(to: MLFeatureValue) -> Bool](mlfeaturevalue/isequal(to:).md)
+- [func isEqual(to: MLFeatureValue) -> Bool](./mlfeaturevalue/isequal%28to%29.md)
   Returns a Boolean value that indicates whether a feature value is equal to another.
 ### Supporting types
-- [enum MLFeatureType](mlfeaturetype.md)
+- [enum MLFeatureType](./mlfeaturetype.md)
   The possible types for feature values, input features, and output features.
-- [struct MLShapedArray](mlshapedarray.md)
+- [struct MLShapedArray](./mlshapedarray.md)
   A machine learning collection type that stores scalar values in a multidimensional array.
-- [protocol MLShapedArrayProtocol](mlshapedarrayprotocol.md)
+- [protocol MLShapedArrayProtocol](./mlshapedarrayprotocol.md)
   An interface that defines a shaped array type.
-- [class MLMultiArray](mlmultiarray.md)
+- [class MLMultiArray](./mlmultiarray.md)
   A machine learning collection type that stores numeric values in an array with multiple dimensions.
-- [class MLSequence](mlsequence.md)
+- [class MLSequence](./mlsequence.md)
   A machine learning collection type that stores a series of strings or integers.
 ### Initializers
-- [convenience init(cgImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:constraint:options:)-30mu4.md)
+- [convenience init(cgImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,constraint,options%29-30mu4.md)
   Construct image feature value from CGImage, using the size and type information required by feature description (orientation is assumed to be kCGImagePropertyOrientationUp)
-- [convenience init(cgImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:constraint:options:)-1djlw.md)
+- [convenience init(cgImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,orientation,constraint,options%29-1djlw.md)
   Construct image feature value from CGImage w/ specified orientation, using the size and type information required by feature description
-- [convenience init(cgImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:pixelswide:pixelshigh:pixelformattype:options:)-8i6j0.md)
+- [convenience init(cgImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,orientation,pixelswide,pixelshigh,pixelformattype,options%29-8i6j0.md)
   Construct image feature value from CGImage w/ specified orientation
-- [convenience init(cgImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:)-1pdp4.md)
+- [convenience init(cgImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28cgimage,pixelswide,pixelshigh,pixelformattype,options%29-1pdp4.md)
   Construct image feature value from CGImage (orientation is assumed to be kCGImagePropertyOrientationUp)
-- [init?(coder: NSCoder)](mlfeaturevalue/init(coder:).md)
-- [convenience init(imageAt: URL, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:constraint:options:).md)
+- [init?(coder: NSCoder)](./mlfeaturevalue/init%28coder%29.md)
+- [convenience init(imageAt: URL, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageat,constraint,options%29.md)
   Construct image feature value from an image on disk, using a model specified image constraint. Orientation is read from Exif if avaiable
-- [convenience init(imageAt: URL, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:orientation:constraint:options:).md)
+- [convenience init(imageAt: URL, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageat,orientation,constraint,options%29.md)
   Construct image feature value from an image on disk using a model specified image constraint. The passed in orientation supersedes any in the file
-- [convenience init(imageAt: URL, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:orientation:pixelswide:pixelshigh:pixelformattype:options:).md)
+- [convenience init(imageAt: URL, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageat,orientation,pixelswide,pixelshigh,pixelformattype,options%29.md)
   Construct image feature value from an image on disk. The passed in orientation supersedes any in the file
-- [convenience init(imageAt: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:pixelswide:pixelshigh:pixelformattype:options:).md)
+- [convenience init(imageAt: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](./mlfeaturevalue/init%28imageat,pixelswide,pixelshigh,pixelformattype,options%29.md)
   Construct image feature value from an image on disk. Orientation is read from Exif if avaiable
 ### Default Implementations
-- [MLFeatureValue Implementations](mlfeaturevalue/mlfeaturevalue-implementations.md)
+- [MLFeatureValue Implementations](./mlfeaturevalue/mlfeaturevalue-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Making Predictions with a Sequence of Inputs](making-predictions-with-a-sequence-of-inputs.md)
+### Model inputs and outputs
+- [Making Predictions with a Sequence of Inputs](./making-predictions-with-a-sequence-of-inputs.md)
   Integrate a recurrent neural network model to process sequences of inputs.
-- [struct MLSendableFeatureValue](mlsendablefeaturevalue.md)
+- [struct MLSendableFeatureValue](./mlsendablefeaturevalue.md)
   A sendable feature value.
-- [protocol MLFeatureProvider](mlfeatureprovider.md)
+- [protocol MLFeatureProvider](./mlfeatureprovider.md)
   An interface that represents a collection of values for either a model’s input or its output.
-- [class MLDictionaryFeatureProvider](mldictionaryfeatureprovider.md)
+- [class MLDictionaryFeatureProvider](./mldictionaryfeatureprovider.md)
   A convenience wrapper for the given dictionary of data.
-- [protocol MLBatchProvider](mlbatchprovider.md)
+- [protocol MLBatchProvider](./mlbatchprovider.md)
   An interface that represents a collection of feature providers.
-- [class MLArrayBatchProvider](mlarraybatchprovider.md)
+- [class MLArrayBatchProvider](./mlarraybatchprovider.md)
   A convenience wrapper for batches of feature providers.
-- [class MLModelAsset](mlmodelasset.md)
+- [class MLModelAsset](./mlmodelasset.md)
   An abstraction of a compiled Core ML model asset.
 
 

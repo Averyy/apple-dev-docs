@@ -1,7 +1,8 @@
 # init(maximumDescriptions:)
 
 **Framework**: Core Audio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `ManagedAudioChannelLayout` that can hold up to `maximumDescriptions`.
 
@@ -11,7 +12,7 @@ Creates a new `ManagedAudioChannelLayout` that can hold up to `maximumDescriptio
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

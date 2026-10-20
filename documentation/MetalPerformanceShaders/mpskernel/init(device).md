@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new kernel object.
 
@@ -19,9 +20,13 @@ Initializes a new kernel object.
 init(device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device;
+```
+
 ## Mentions
 
-- [The MPSKernel Class](the-mpskernel-class.md)
+- [The MPSKernel Class](../the-mpskernel-class.md)
 
 #### Return Value
 
@@ -29,7 +34,7 @@ An initialized kernel object.
 
 #### Discussion
 
-This method fails if the device is not supported. Query the [`MPSSupportsMTLDevice(_:)`](mpssupportsmtldevice(_:).md) function to determine whether the device is supported.
+This method fails if the device is not supported. Query the [`MPSSupportsMTLDevice(_:)`](../mpssupportsmtldevice%28_%29.md) function to determine whether the device is supported.
 
 ## Parameters
 
@@ -37,7 +42,8 @@ This method fails if the device is not supported. Query the [`MPSSupportsMTLDevi
 
 ## See Also
 
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpskernel/copy(with:device:).md)
+### Methods
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./copy%28with,device%29.md)
   Makes a copy of this kernel object for a new device.
 
 

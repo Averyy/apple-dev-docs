@@ -1,7 +1,8 @@
 # gestureRecognizerShouldBegin(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if a gesture recognizer should begin interpreting touches.
 
@@ -9,7 +10,7 @@ Asks the delegate if a gesture recognizer should begin interpreting touches.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,30 @@ Asks the delegate if a gesture recognizer should begin interpreting touches.
 optional func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 
+```objc
+- (BOOL) gestureRecognizerShouldBegin:(UIGestureRecognizer *) gestureRecognizer;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) (the default) to tell the gesture recognizer to proceed with interpreting touches, [`false`](https://developer.apple.com/documentation/swift/false) to prevent it from attempting to recognize its gesture.
+[`true`](../../Swift/true.md) (the default) to tell the gesture recognizer to proceed with interpreting touches, [`false`](../../Swift/false.md) to prevent it from attempting to recognize its gesture.
 
 #### Discussion
 
-This method is called when a gesture recognizer attempts to transition out of the [`UIGestureRecognizer.State.possible`](uigesturerecognizer/state-swift.enum/possible.md) state. Returning [`false`](https://developer.apple.com/documentation/swift/false) causes the gesture recognizer to transition to the [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) state.
+This method is called when a gesture recognizer attempts to transition out of the [`UIGestureRecognizer.State.possible`](../uigesturerecognizer/state-swift.enum/possible.md) state. Returning [`false`](../../Swift/false.md) causes the gesture recognizer to transition to the [`UIGestureRecognizer.State.failed`](../uigesturerecognizer/state-swift.enum/failed.md) state.
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md). This gesture-recognizer object is about to begin processing touches to determine if its gesture is occurring.
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](../uigesturerecognizer.md). This gesture-recognizer object is about to begin processing touches to determine if its gesture is occurring.
 
 ## See Also
 
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md)
+### Regulating gesture recognition
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool](./gesturerecognizer%28_,shouldreceive%29-16fuh.md)
   Asks the delegate if a gesture recognizer should receive an object representing a touch.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-73vzu.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool](./gesturerecognizer%28_,shouldreceive%29-73vzu.md)
   Asks the delegate if a gesture recognizer should receive an object representing a press.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIEvent) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-evxd.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIEvent) -> Bool](./gesturerecognizer%28_,shouldreceive%29-evxd.md)
   Asks the delegate if a gesture recognizer should receive an object representing a touch or press event.
 
 

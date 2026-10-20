@@ -1,7 +1,8 @@
 # CSSuggestion.SuggestionKind
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The suggestion type that determines how the system handles a suggestion.
 
@@ -18,37 +19,42 @@ The suggestion type that determines how the system handles a suggestion.
 enum SuggestionKind
 ```
 
+```c
+enum CSSuggestionKind : NSInteger;
+```
+
 #### Overview
 
-Suggestions that the system returns from the query handler have [`CSSuggestion.SuggestionKind.default`](cssuggestion/suggestionkind-swift.enum/default.md).
+Suggestions that the system returns from the query handler have [`CSSuggestion.SuggestionKind.default`](./suggestionkind-swift.enum/default.md).
 
 ## Topics
 
 ### Suggestion types
-- [CSSuggestion.SuggestionKind.none](cssuggestion/suggestionkind-swift.enum/none.md)
+- [CSSuggestion.SuggestionKind.none](./suggestionkind-swift.enum/none.md)
   Blocks the system from displaying the suggestion.
-- [CSSuggestion.SuggestionKind.custom](cssuggestion/suggestionkind-swift.enum/custom.md)
+- [CSSuggestion.SuggestionKind.custom](./suggestionkind-swift.enum/custom.md)
   Sorts the custom suggestions together.
-- [CSSuggestion.SuggestionKind.default](cssuggestion/suggestionkind-swift.enum/default.md)
+- [CSSuggestion.SuggestionKind.default](./suggestionkind-swift.enum/default.md)
   Displays the suggestion normally.
 ### Initializers
-- [init?(rawValue: Int)](cssuggestion/suggestionkind-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./suggestionkind-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var localizedAttributedSuggestion: AttributedString](cssuggestion/localizedattributedsuggestion-3ssly.md)
+### Setting suggestion attributes
+- [var localizedAttributedSuggestion: AttributedString](./localizedattributedsuggestion-3ssly.md)
   An attributed string for the localized suggestion.
-- [var suggestionKind: CSSuggestion.SuggestionKind](cssuggestion/suggestionkind-swift.property.md)
+- [var suggestionKind: CSSuggestion.SuggestionKind](./suggestionkind-swift.property.md)
   The type of suggestion.
 
 

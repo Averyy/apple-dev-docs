@@ -1,7 +1,8 @@
 # isFromSameTeam(andMatchesSigningIdentifier:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a requirement that the peer is signed with the same team identifier as the current process. If provided, additionally requires that the peer has the specified signing identifier.
 

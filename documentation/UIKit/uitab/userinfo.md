@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom object associated with the tab.
 
@@ -18,11 +19,16 @@ A custom object associated with the tab.
 var userInfo: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
+```
+
 ## See Also
 
-- [var parent: UITabGroup?](uitab/parent.md)
+### Accessing context
+- [var parent: UITabGroup?](./parent.md)
   The containing tab group.
-- [var tabBarController: UITabBarController?](uitab/tabbarcontroller.md)
+- [var tabBarController: UITabBarController?](./tabbarcontroller.md)
   The containing tab bar controller.
 
 

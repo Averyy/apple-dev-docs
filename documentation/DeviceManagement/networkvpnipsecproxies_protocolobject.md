@@ -1,7 +1,8 @@
 # NetworkVPNIPSecProxies_ProtocolObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 
@@ -14,16 +15,16 @@ The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSecProxies_ProtocolObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNIPSecProxies_Protocol_HTTPObject](networkvpnipsecproxies_protocol_httpobject.md)
+- [object NetworkVPNIPSecProxies_Protocol_HTTPObject](./networkvpnipsecproxies_protocol_httpobject.md)
   The dictionary to use to configure the HTTP (non-TLS) server.
-- [object NetworkVPNIPSecProxies_Protocol_HTTPSObject](networkvpnipsecproxies_protocol_httpsobject.md)
+- [object NetworkVPNIPSecProxies_Protocol_HTTPSObject](./networkvpnipsecproxies_protocol_httpsobject.md)
   The dictionary to use to configure the HTTPS (TLS) server.
 
 ## Properties

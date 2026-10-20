@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer sample direction.
 
@@ -20,27 +21,32 @@ The buffer sample direction.
 var direction: AVSampleBufferRequest.Direction { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AVSampleBufferRequestDirection direction;
+```
+
 #### Discussion
 
-The default value is [`AVSampleBufferRequest.Direction.none`](avsamplebufferrequest/direction-swift.enum/none.md).
+The default value is [`AVSampleBufferRequest.Direction.none`](./direction-swift.enum/none.md).
 
 ## See Also
 
-- [AVSampleBufferRequest.Direction](avsamplebufferrequest/direction-swift.enum.md)
+### Configuring sample buffer request parameters
+- [AVSampleBufferRequest.Direction](./direction-swift.enum.md)
   The modes that describe the buffer request direction.
-- [var limitCursor: AVSampleCursor?](avsamplebufferrequest/limitcursor.md)
+- [var limitCursor: AVSampleCursor?](./limitcursor.md)
   The limiting position for sample loading.
-- [var maxSampleCount: Int](avsamplebufferrequest/maxsamplecount.md)
+- [var maxSampleCount: Int](./maxsamplecount.md)
   The maximum number of samples to load.
-- [var mode: AVSampleBufferRequest.Mode](avsamplebufferrequest/mode-swift.property.md)
+- [var mode: AVSampleBufferRequest.Mode](./mode-swift.property.md)
   The sample buffer request mode.
-- [AVSampleBufferRequest.Mode](avsamplebufferrequest/mode-swift.enum.md)
+- [AVSampleBufferRequest.Mode](./mode-swift.enum.md)
   The modes in which a sample buffer generator processes a request.
-- [var overrideTime: CMTime](avsamplebufferrequest/overridetime.md)
+- [var overrideTime: CMTime](./overridetime.md)
   The deadline for sample data and output PTS for the sample buffer.
-- [var preferredMinSampleCount: Int](avsamplebufferrequest/preferredminsamplecount.md)
+- [var preferredMinSampleCount: Int](./preferredminsamplecount.md)
   The preferred minimum number of samples to load.
-- [var startCursor: AVSampleCursor](avsamplebufferrequest/startcursor.md)
+- [var startCursor: AVSampleCursor](./startcursor.md)
   The starting cursor position.
 
 

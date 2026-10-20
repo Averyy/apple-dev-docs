@@ -1,7 +1,8 @@
 # never
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Never minimize the tab bar.
 

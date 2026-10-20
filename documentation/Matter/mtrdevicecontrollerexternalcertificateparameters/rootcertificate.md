@@ -1,7 +1,8 @@
 # rootCertificate
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root certificate we were initialized with.
 
@@ -18,6 +19,10 @@ The root certificate we were initialized with.
 
 ```swift
 var rootCertificate: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) MTRCertificateDERBytes rootCertificate;
 ```
 
 

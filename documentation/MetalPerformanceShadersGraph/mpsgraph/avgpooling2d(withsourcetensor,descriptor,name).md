@@ -1,7 +1,8 @@
 # avgPooling2D(withSourceTensor:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 2D average-pooling operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 2D average-pooling operation and returns the result tensor.
 
 ```swift
 func avgPooling2D(withSourceTensor source: MPSGraphTensor, descriptor: MPSGraphPooling2DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) avgPooling2DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: OSLog  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -18,9 +19,14 @@
 convenience init(scope: OSLogStore.Scope) throws
 ```
 
+```objc
++ (instancetype) storeWithScope:(OSLogStoreScope) scope error:(NSError **) error;
+```
+
 ## See Also
 
-- [init()](oslogstore/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

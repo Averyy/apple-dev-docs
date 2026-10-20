@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance with the representable value that’s closest to the given integer.
@@ -40,11 +41,18 @@ let y = UInt(clamping: -500)
 
 - `source`: An integer to convert to this type.
 
+## Default Implementations
+
+### BinaryInteger Implementations
+- [init<Other>(clamping: Other)](./init%28clamping%29-6bply.md)
+  Creates a new instance with the representable value that’s closest to the given integer.
+
 ## See Also
 
-- [init<T>(T)](binaryinteger/init(_:)-8gmdl.md)
+### Converting Integers
+- [init<T>(T)](./init%28_%29-8gmdl.md)
   Creates a new instance from the given integer.
-- [init<T>(truncatingIfNeeded: T)](binaryinteger/init(truncatingifneeded:).md)
+- [init<T>(truncatingIfNeeded: T)](./init%28truncatingifneeded%29.md)
   Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
 
 

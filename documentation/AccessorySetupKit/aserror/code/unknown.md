@@ -1,7 +1,8 @@
 # ASError.Code.unknown
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An underlying failure with an unknown cause.
 
@@ -13,6 +14,10 @@ An underlying failure with an unknown cause.
 
 ```swift
 case unknown
+```
+
+```c
+ASErrorCodeUnknown
 ```
 
 

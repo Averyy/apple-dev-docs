@@ -1,7 +1,8 @@
 # trigger(gameActivityDefinitionID:handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the game activity creation view for the provided activity definition ID.
 
@@ -14,7 +15,15 @@ Displays the game activity creation view for the provided activity definition ID
 ## Declaration
 
 ```swift
+func trigger(gameActivityDefinitionID: String, handler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func trigger(gameActivityDefinitionID: String) async
+```
+
+```objc
+- (void) triggerAccessPointWithGameActivityDefinitionID:(NSString *) gameActivityDefinitionID handler:(void (^)()) handler;
 ```
 
 

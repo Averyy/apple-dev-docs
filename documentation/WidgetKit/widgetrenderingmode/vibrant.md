@@ -1,7 +1,8 @@
 # vibrant
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system desaturates the widget, making a monochrome version that it uses to create an adaptive, vibrant effect.
 
@@ -21,9 +22,9 @@ static let vibrant: WidgetRenderingMode
 
 ## Mentions
 
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
+- [Developing a WidgetKit strategy](../developing-a-widgetkit-strategy.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Displaying the right widget background](../displaying-the-right-widget-background.md)
 
 #### Discussion
 
@@ -31,9 +32,10 @@ The system displays vibrant widgets on the Lock Screen on iPhone.
 
 ## See Also
 
-- [static let fullColor: WidgetRenderingMode](widgetrenderingmode/fullcolor.md)
+### Rendering modes
+- [static let fullColor: WidgetRenderingMode](./fullcolor.md)
   The system renders the widget in full color.
-- [static let accented: WidgetRenderingMode](widgetrenderingmode/accented.md)
+- [static let accented: WidgetRenderingMode](./accented.md)
   The system divides the widget’s view hierarchy into an accent group and a default group, applying a different color to each group.
 
 

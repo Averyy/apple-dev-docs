@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Feedback.environmentLowLight
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lighting in the environment is low, which can degrade reconstruction quality. Auto-capture still proceeds but reconstruction quality may suffer.  It is advised to increase lighting.
 

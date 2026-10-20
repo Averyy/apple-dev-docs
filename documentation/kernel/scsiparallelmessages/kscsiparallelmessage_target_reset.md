@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_TARGET_RESET
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_TARGET_RESET = 0x0C
 ```
 

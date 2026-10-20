@@ -1,7 +1,8 @@
 # MetricManager.LaunchTaskError.Reason
 
 **Framework**: MetricKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that describes why a launch task tracking operation failed.
 
@@ -20,35 +21,36 @@ enum Reason
 ## Topics
 
 ### Error reasons
-- [MetricManager.LaunchTaskError.Reason.invalidID](metricmanager/launchtaskerror/reason-swift.enum/invalidid.md)
+- [MetricManager.LaunchTaskError.Reason.invalidID](./reason-swift.enum/invalidid.md)
   The task ID is a null value or exceeds the maximum 128 character length.
-- [MetricManager.LaunchTaskError.Reason.maxCountExceeded](metricmanager/launchtaskerror/reason-swift.enum/maxcountexceeded.md)
+- [MetricManager.LaunchTaskError.Reason.maxCountExceeded](./reason-swift.enum/maxcountexceeded.md)
   Exceeded the maximum number of tasks.
-- [MetricManager.LaunchTaskError.Reason.pastDeadline](metricmanager/launchtaskerror/reason-swift.enum/pastdeadline.md)
+- [MetricManager.LaunchTaskError.Reason.pastDeadline](./reason-swift.enum/pastdeadline.md)
   The start call was made too late.
-- [MetricManager.LaunchTaskError.Reason.duplicateTask](metricmanager/launchtaskerror/reason-swift.enum/duplicatetask.md)
+- [MetricManager.LaunchTaskError.Reason.duplicateTask](./reason-swift.enum/duplicatetask.md)
   A task with the same ID has already been started.
-- [MetricManager.LaunchTaskError.Reason.taskUnknown](metricmanager/launchtaskerror/reason-swift.enum/taskunknown.md)
+- [MetricManager.LaunchTaskError.Reason.taskUnknown](./reason-swift.enum/taskunknown.md)
   The task hasn’t been started or has already been finished.
-- [MetricManager.LaunchTaskError.Reason.internalFailure](metricmanager/launchtaskerror/reason-swift.enum/internalfailure.md)
+- [MetricManager.LaunchTaskError.Reason.internalFailure](./reason-swift.enum/internalfailure.md)
   Internal failures happened inside the framework.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let taskID: LaunchTaskID](metricmanager/launchtaskerror/taskid.md)
+### Error details
+- [let taskID: LaunchTaskID](./taskid.md)
   The task ID that caused the error
-- [let reason: MetricManager.LaunchTaskError.Reason](metricmanager/launchtaskerror/reason-swift.property.md)
+- [let reason: MetricManager.LaunchTaskError.Reason](./reason-swift.property.md)
   The reason for the error
 
 

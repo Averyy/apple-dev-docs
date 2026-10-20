@@ -1,7 +1,8 @@
 # mouse
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mouse object that was previously the current mouse.
 

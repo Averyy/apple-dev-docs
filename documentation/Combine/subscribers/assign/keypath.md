@@ -1,7 +1,8 @@
 # keyPath
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path that indicates the property to assign.
 
@@ -22,7 +23,8 @@ final let keyPath: ReferenceWritableKeyPath<Root, Input>
 
 ## See Also
 
-- [var object: Root?](subscribers/assign/object.md)
+### Inspecting the assigned property
+- [var object: Root?](./object.md)
   The object that contains the property to assign.
 
 

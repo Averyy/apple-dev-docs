@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional texture containing your game’s custom UI that this frame interpolator evaluates.
@@ -19,11 +20,15 @@ An optional texture containing your game’s custom UI that this frame interpola
 var uiTexture: (any MTLTexture)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, setter=setUITexture:, nullable) id<MTLTexture> uiTexture;
+```
+
 #### Discussion
 
-The frame interpolator uses this property to overlay your custom UI on any frame data it produces into [`outputTexture`](mtlfxframeinterpolatorbase/outputtexture.md).
+The frame interpolator uses this property to overlay your custom UI on any frame data it produces into [`outputTexture`](./outputtexture.md).
 
-Use property [`isUITextureComposited`](mtlfxframeinterpolatorbase/isuitexturecomposited.md) to indicate to this frame interpolator if this texture contains a precomposition of [`colorTexture`](mtlfxframeinterpolatorbase/colortexture.md)and UI.
+Use property [`isUITextureComposited`](./isuitexturecomposited.md) to indicate to this frame interpolator if this texture contains a precomposition of [`colorTexture`](./colortexture.md)and UI.
 
 
 ---

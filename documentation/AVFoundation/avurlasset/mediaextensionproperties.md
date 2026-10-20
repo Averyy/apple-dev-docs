@@ -1,7 +1,8 @@
 # mediaExtensionProperties
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties of the media extension format reader that decodes the asset.
 
@@ -14,13 +15,18 @@ The properties of the media extension format reader that decodes the asset.
 var mediaExtensionProperties: AVMediaExtensionProperties? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVMediaExtensionProperties * mediaExtensionProperties;
+```
+
 #### Discussion
 
 If the system decodes the asset using a MediaExtension format reader, the property value contains a valid object that describes the extension. Otherwise, this property value is `nil`.
 
 ## See Also
 
-- [class AVMediaExtensionProperties](avmediaextensionproperties.md)
+### Accessing Media Extension properties
+- [class AVMediaExtensionProperties](../avmediaextensionproperties.md)
   An object that describes a Media Extension.
 
 

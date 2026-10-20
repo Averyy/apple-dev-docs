@@ -1,7 +1,8 @@
 # PredicateExpressions.KeyPath
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,26 +22,26 @@ struct KeyPath<Root, Output> where Root : PredicateExpression
 ## Topics
 
 ### Initializers
-- [init(root: Root, keyPath: any KeyPath<Root.Output, Output> & Sendable)](predicateexpressions/keypath/init(root:keypath:).md)
+- [init(root: Root, keyPath: any KeyPath<Root.Output, Output> & Sendable)](./keypath/init%28root,keypath%29.md)
 ### Instance Properties
-- [let keyPath: any KeyPath<Root.Output, Output> & Sendable](predicateexpressions/keypath/keypath.md)
-- [var kind: PredicateExpressions.KeyPath<Root, Output>.CommonKeyPathKind?](predicateexpressions/keypath/kind.md)
-- [let root: Root](predicateexpressions/keypath/root.md)
+- [let keyPath: any KeyPath<Root.Output, Output> & Sendable](./keypath/keypath.md)
+- [var kind: PredicateExpressions.KeyPath<Root, Output>.CommonKeyPathKind?](./keypath/kind.md)
+- [let root: Root](./keypath/root.md)
 ### Enumerations
-- [PredicateExpressions.KeyPath.CommonKeyPathKind](predicateexpressions/keypath/commonkeypathkind.md)
+- [PredicateExpressions.KeyPath.CommonKeyPathKind](./keypath/commonkeypathkind.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

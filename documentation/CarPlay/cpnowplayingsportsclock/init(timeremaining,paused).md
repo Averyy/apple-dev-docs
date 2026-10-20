@@ -1,7 +1,8 @@
 # init(timeRemaining:paused:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Represents an amount of time remaining in the event, or play period of the event (quarter/inning/period).
 
@@ -14,6 +15,10 @@ Represents an amount of time remaining in the event, or play period of the event
 
 ```swift
 init(timeRemaining: TimeInterval, paused: Bool)
+```
+
+```objc
+- (instancetype) initWithTimeRemaining:(NSTimeInterval) timeRemaining paused:(BOOL) paused;
 ```
 
 #### Discussion

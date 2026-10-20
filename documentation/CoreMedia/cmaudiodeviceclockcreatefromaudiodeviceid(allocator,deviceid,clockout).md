@@ -1,7 +1,8 @@
 # CMAudioDeviceClockCreateFromAudioDeviceID(allocator:deviceID:clockOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a clock that tracks playback through a Core Audio device with the specified identifier.
 
@@ -14,21 +15,26 @@ Creates a clock that tracks playback through a Core Audio device with the specif
 func CMAudioDeviceClockCreateFromAudioDeviceID(allocator: CFAllocator?, deviceID: AudioDeviceID, clockOut: UnsafeMutablePointer<CMClock?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMAudioDeviceClockCreateFromAudioDeviceID(CFAllocatorRef allocator, AudioDeviceID deviceID, CMClockRef*clockOut);
+```
+
 #### Overview
 
-> ❗ **Important**: In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release the clock returned in `clockOut`.
+> ❗ **Important**: In Objective-C, you’re responsible for calling [`CFRelease`](../CoreFoundation/cfrelease.md) to release the clock returned in `clockOut`.
 
 ## Parameters
 
-- `allocator`: Allocator for the new clock; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) or `NULL` to use the default allocator.
-- `deviceID`: The [`AudioDeviceID`](https://developer.apple.com/documentation/coreaudio/audiodeviceid) of the device for which to create a clock.
+- `allocator`: Allocator for the new clock; pass [`kCFAllocatorDefault`](../CoreFoundation/kcfallocatordefault.md) or `NULL` to use the default allocator.
+- `deviceID`: The [`AudioDeviceID`](../CoreAudio/audiodeviceid.md) of the device for which to create a clock.
 - `clockOut`: Upon return, a pointer to the newly created clock.
 
 ## See Also
 
-- [func CMAudioClockCreate(allocator: CFAllocator?, clockOut: UnsafeMutablePointer<CMClock?>) -> OSStatus](cmaudioclockcreate(allocator:clockout:).md)
+### Creating Audio Clocks
+- [func CMAudioClockCreate(allocator: CFAllocator?, clockOut: UnsafeMutablePointer<CMClock?>) -> OSStatus](./cmaudioclockcreate%28allocator,clockout%29.md)
   Creates a clock that advances at the same rate as audio output.
-- [func CMAudioDeviceClockCreate(allocator: CFAllocator?, deviceUID: CFString?, clockOut: UnsafeMutablePointer<CMClock?>) -> OSStatus](cmaudiodeviceclockcreate(allocator:deviceuid:clockout:).md)
+- [func CMAudioDeviceClockCreate(allocator: CFAllocator?, deviceUID: CFString?, clockOut: UnsafeMutablePointer<CMClock?>) -> OSStatus](./cmaudiodeviceclockcreate%28allocator,deviceuid,clockout%29.md)
   Creates a clock that tracks playback through a Core Audio device with the specified unique identifier.
 
 

@@ -1,7 +1,8 @@
 # findBarPosition
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the find bar.
 
@@ -14,9 +15,13 @@ The position of the find bar.
 var findBarPosition: NSScrollView.FindBarPosition { get set }
 ```
 
+```objc
+@property NSScrollViewFindBarPosition findBarPosition;
+```
+
 #### Discussion
 
-See [`NSScrollView.FindBarPosition`](nsscrollview/findbarposition-swift.enum.md) for possible values.
+See [`NSScrollView.FindBarPosition`](./findbarposition-swift.enum.md) for possible values.
 
 
 ---

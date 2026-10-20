@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the text layout manager object.
 
@@ -14,9 +15,14 @@ The delegate for the text layout manager object.
 weak var delegate: (any NSTextLayoutManagerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextLayoutManagerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSTextLayoutManagerDelegate](nstextlayoutmanagerdelegate.md)
+### Managing the layout process
+- [protocol NSTextLayoutManagerDelegate](../nstextlayoutmanagerdelegate.md)
   Optional methods that delegates implement to respond to layout changes.
 
 

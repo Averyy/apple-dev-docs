@@ -1,14 +1,15 @@
 # kIORPCVersion190615Reply
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIORPCVersion190615Reply = (mach_msg_id_t) 0x4da2b68d
 ```
 

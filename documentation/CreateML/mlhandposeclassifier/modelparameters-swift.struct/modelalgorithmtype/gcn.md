@@ -1,7 +1,8 @@
 # MLHandPoseClassifier.ModelParameters.ModelAlgorithmType.gcn
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Selects the graph convolutional neural-network algorithm for a hand pose classifier.
 

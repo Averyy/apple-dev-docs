@@ -1,7 +1,8 @@
 # requestSceneSessionRefresh(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the system to update any system UI associated with the specified scene.
 
@@ -18,6 +19,10 @@ Asks the system to update any system UI associated with the specified scene.
 func requestSceneSessionRefresh(_ sceneSession: UISceneSession)
 ```
 
+```objc
+- (void) requestSceneSessionRefresh:(UISceneSession *) sceneSession;
+```
+
 #### Discussion
 
 Call this method when your scene is in the background and any part of your scene’s visible appearance changes. For example, call this method after updating your scene’s content to let the system know your scene’s snapshot requires refreshing. You don’t need to call this method when your scene is running in the foreground.
@@ -28,15 +33,16 @@ Call this method when your scene is in the background and any part of your scene
 
 ## See Also
 
-- [func activateSceneSession(for: UISceneSessionActivationRequest, errorHandler: ((any Error) -> Void)?)](uiapplication/activatescenesession(for:errorhandler:).md)
+### Managing a scene’s life cycle
+- [func activateSceneSession(for: UISceneSessionActivationRequest, errorHandler: ((any Error) -> Void)?)](./activatescenesession%28for,errorhandler%29.md)
   Asks the system to activate an existing scene or create a new scene and associate it with your app.
-- [func requestSceneSessionDestruction(UISceneSession, options: UISceneDestructionRequestOptions?, errorHandler: ((any Error) -> Void)?)](uiapplication/requestscenesessiondestruction(_:options:errorhandler:).md)
+- [func requestSceneSessionDestruction(UISceneSession, options: UISceneDestructionRequestOptions?, errorHandler: ((any Error) -> Void)?)](./requestscenesessiondestruction%28_,options,errorhandler%29.md)
   Asks the system to dismiss an existing scene and remove it from the app switcher.
-- [struct UISceneSessionActivationRequest](uiscenesessionactivationrequest-swift.struct.md)
+- [struct UISceneSessionActivationRequest](../uiscenesessionactivationrequest-swift.struct.md)
   A collection of properties that you use to request activation of a scene.
-- [UIScene.ActivationRequestOptions](uiscene/activationrequestoptions.md)
+- [UIScene.ActivationRequestOptions](../uiscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating the session associated with a scene.
-- [class UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
+- [class UISceneDestructionRequestOptions](../uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
 
 

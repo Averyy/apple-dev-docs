@@ -1,7 +1,8 @@
 # UIHostingSceneDelegate
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 
@@ -34,7 +35,7 @@ class HostingSceneDelegate: UIHostingSceneDelegate {
 }
 ```
 
-Use a class conforming to [`UIHostingSceneDelegate`](uihostingscenedelegate.md) to  activate a scene by its ID or presented value with `UISceneSessionActivationRequest`:
+Use a class conforming to [`UIHostingSceneDelegate`](./uihostingscenedelegate.md) to  activate a scene by its ID or presented value with `UISceneSessionActivationRequest`:
 
 ```swift
 if let requestWithID = UISceneSessionActivationRequest(
@@ -76,27 +77,28 @@ class AppDelegate: UIApplicationDelegate {
 ## Topics
 
 ### Associated Types
-- [associatedtype RootScene : Scene](uihostingscenedelegate/rootscene-swift.associatedtype.md)
+- [associatedtype RootScene : Scene](./uihostingscenedelegate/rootscene-swift.associatedtype.md)
 ### Type Properties
-- [static var rootScene: Self.RootScene](uihostingscenedelegate/rootscene-swift.type.property.md)
+- [static var rootScene: Self.RootScene](./uihostingscenedelegate/rootscene-swift.type.property.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UISceneDelegate](../uikit/uiscenedelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UISceneDelegate](../UIKit/uiscenedelegate.md)
 
 ## See Also
 
-- [Using SwiftUI with UIKit](../uikit/using-swiftui-with-uikit.md)
+### Displaying SwiftUI views in UIKit
+- [Using SwiftUI with UIKit](../UIKit/using-swiftui-with-uikit.md)
   Learn how to incorporate SwiftUI views into a UIKit app.
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class UIHostingController](uihostingcontroller.md)
+- [class UIHostingController](./uihostingcontroller.md)
   A UIKit view controller that manages a SwiftUI view hierarchy.
-- [struct UIHostingControllerSizingOptions](uihostingcontrollersizingoptions.md)
+- [struct UIHostingControllerSizingOptions](./uihostingcontrollersizingoptions.md)
   Options for how a hosting controller tracks its content’s size.
-- [struct UIHostingConfiguration](uihostingconfiguration.md)
+- [struct UIHostingConfiguration](./uihostingconfiguration.md)
   A content configuration suitable for hosting a hierarchy of SwiftUI views.
 
 

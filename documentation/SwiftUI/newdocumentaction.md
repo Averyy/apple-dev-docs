@@ -1,7 +1,8 @@
 # NewDocumentAction
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that presents a new document.
 
@@ -17,7 +18,7 @@ An action that presents a new document.
 
 #### Overview
 
-Use the [`newDocument`](environmentvalues/newdocument.md) environment value to get the instance of this structure for a given [`Environment`](environment.md). Then call the instance to present a new document. You call the instance directly because it defines a [`callAsFunction(_:)`](newdocumentaction/callasfunction(_:).md) method that Swift calls when you call the instance.
+Use the [`newDocument`](./environmentvalues/newdocument.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to present a new document. You call the instance directly because it defines a [`callAsFunction(_:)`](./newdocumentaction/callasfunction%28_%29.md) method that Swift calls when you call the instance.
 
 For example, you can define a button that creates a new document from the selected text:
 
@@ -35,31 +36,32 @@ struct NewDocumentFromSelection: View {
 }
 ```
 
-The above example assumes that you define a `TextDocument` that conforms to the [`FileDocument`](filedocument.md) or [`ReferenceFileDocument`](referencefiledocument.md) protocol, and a [`DocumentGroup`](documentgroup.md) that handles the associated file type.
+The above example assumes that you define a `TextDocument` that conforms to the [`FileDocument`](./filedocument.md) or [`ReferenceFileDocument`](./referencefiledocument.md) protocol, and a [`DocumentGroup`](./documentgroup.md) that handles the associated file type.
 
 ## Topics
 
 ### Calling the action
-- [func callAsFunction(_:)](newdocumentaction/callasfunction(_:).md)
+- [func callAsFunction(_:)](./newdocumentaction/callasfunction%28_%29.md)
   Presents a new document window.
-- [func callAsFunction(contentType: UTType)](newdocumentaction/callasfunction(contenttype:).md)
+- [func callAsFunction(contentType: UTType)](./newdocumentaction/callasfunction%28contenttype%29.md)
   Presents a new document window.
-- [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](newdocumentaction/callasfunction(contenttype:preparedocument:).md)
+- [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](./newdocumentaction/callasfunction%28contenttype,preparedocument%29.md)
   Presents a new document window with preset contents.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var newDocument: NewDocumentAction](environmentvalues/newdocument.md)
+### Opening a document programmatically
+- [var newDocument: NewDocumentAction](./environmentvalues/newdocument.md)
   An action in the environment that presents a new document.
-- [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
+- [var openDocument: OpenDocumentAction](./environmentvalues/opendocument.md)
   An action in the environment that presents an existing document.
-- [struct OpenDocumentAction](opendocumentaction.md)
+- [struct OpenDocumentAction](./opendocumentaction.md)
   An action that presents an existing document.
 
 

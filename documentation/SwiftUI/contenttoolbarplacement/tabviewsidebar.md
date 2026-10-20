@@ -1,7 +1,8 @@
 # tabViewSidebar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tab view sidebar. This is present on certain platforms when using the `.sidebarAdaptable` tab view style.
 

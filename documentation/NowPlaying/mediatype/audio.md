@@ -1,7 +1,8 @@
 # MediaType.audio
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Audio-only content, such as music, podcasts, or audiobooks.
 

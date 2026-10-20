@@ -1,7 +1,8 @@
 # deviceUsageReport
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sensor that provides information about device usage.
 
@@ -16,17 +17,22 @@ A sensor that provides information about device usage.
 static let deviceUsageReport: SRSensor
 ```
 
+```c
+extern SRSensor const SRSensorDeviceUsageReport;
+```
+
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRDeviceUsageReport`](srdeviceusagereport.md).
+The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRDeviceUsageReport`](../srdeviceusagereport.md).
 
-You need to provide a reason to record the device usage by adding the [`SRSensorUsageDeviceUsage`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagedeviceusage) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
+You need to provide a reason to record the device usage by adding the [`SRSensorUsageDeviceUsage`](../../BundleResources/information-property-list/nssensorkitusagedetail/srsensorusagedeviceusage.md) dictionary to the [`NSSensorKitUsageDetail`](../../BundleResources/information-property-list/nssensorkitusagedetail.md) key in the information property list.
 
 ## See Also
 
-- [static let keyboardMetrics: SRSensor](srsensor/keyboardmetrics.md)
+### Reading device sensors
+- [static let keyboardMetrics: SRSensor](./keyboardmetrics.md)
   A sensor that provides information about keyboard usage.
-- [static let onWristState: SRSensor](srsensor/onwriststate.md)
+- [static let onWristState: SRSensor](./onwriststate.md)
   A sensor that describes the watch’s position on the wrist.
 
 

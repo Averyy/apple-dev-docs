@@ -1,16 +1,17 @@
 # init()
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(messageID: MIDINotificationMessageID, messageSize: UInt32)](midinotification/init(messageid:messagesize:).md)
+### Initializers
+- [init(messageID: MIDINotificationMessageID, messageSize: UInt32)](./init%28messageid,messagesize%29.md)
 
 
 ---

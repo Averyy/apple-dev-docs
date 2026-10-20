@@ -1,7 +1,8 @@
 # kAXScrollAreaRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An accessibility object that displays data managed by scrolling controls.
 
@@ -12,6 +13,10 @@ An accessibility object that displays data managed by scrolling controls.
 
 ```swift
 var kAXScrollAreaRole: String { get }
+```
+
+```c
+#define kAXScrollAreaRole
 ```
 
 

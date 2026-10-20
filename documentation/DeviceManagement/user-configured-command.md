@@ -1,7 +1,8 @@
 # User Configured
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Inform the device that it can continue past Setup Assistant and finish login.
 
@@ -14,7 +15,7 @@ Inform the device that it can continue past Setup Assistant and finish login.
 
 Refer to the following sections to determine supported channels and requirements.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,9 +28,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object UserConfiguredCommand](userconfiguredcommand.md)
+- [object UserConfiguredCommand](./userconfiguredcommand.md)
   The command to inform the device that it can continue past Setup Assistant and finish login.
-- [object UserConfiguredResponse](userconfiguredresponse.md)
+- [object UserConfiguredResponse](./userconfiguredresponse.md)
   A response from the device after it processes the command to inform the device that it can continue past Setup Assistant and finish login.
 
 ## Endpoint
@@ -38,15 +39,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `UserConfiguredCommand`
+
 The request object the server returns for the User Configured Command.
+
+## Responses
+
+- `200` OK (`UserConfiguredResponse`, `application/xml`): The response object the system returns for the User Configured Command.
 
 ## See Also
 
-- [Device Information](device-information-command.md)
+### Device details
+- [Device Information](./device-information-command.md)
   Get detailed information about a device.
-- [Device Configured](device-configured-command.md)
+- [Device Configured](./device-configured-command.md)
   Inform the device that it can allow the user to continue in Setup Assistant.
-- [Restrictions](restrictions-command.md)
+- [Restrictions](./restrictions-command.md)
   Get a list of restrictions on the device.
 
 

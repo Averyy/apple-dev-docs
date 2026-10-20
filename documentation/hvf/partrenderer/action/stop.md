@@ -1,7 +1,8 @@
 # PartRenderer.Action.stop
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Stop rendering
 

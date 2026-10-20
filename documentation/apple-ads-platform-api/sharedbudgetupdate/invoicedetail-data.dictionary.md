@@ -1,7 +1,8 @@
 # SharedBudgetUpdate.InvoiceDetail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Invoice billing contact details supplied when updating a budget order.
 
@@ -10,7 +11,7 @@ Invoice billing contact details supplied when updating a budget order.
 
 ## Declaration
 
-```swift
+```
 object SharedBudgetUpdate.InvoiceDetail
 ```
 
@@ -18,7 +19,7 @@ object SharedBudgetUpdate.InvoiceDetail
 
 All fields are optional, allowing partial updates to an existing invoice detail record. Only include the fields you want to change.
 
-See [`InvoiceDetailUpdate`](invoicedetailupdate.md) for the full field reference.
+See [`InvoiceDetailUpdate`](../invoicedetailupdate.md) for the full field reference.
 
 ## Properties
 

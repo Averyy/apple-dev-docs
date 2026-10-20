@@ -1,7 +1,8 @@
 # Target.TargetType.macro
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A target that provides a Swift macro.
 

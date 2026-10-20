@@ -1,7 +1,8 @@
 # BetaTesterInvitationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for the endpoint that sends a TestFlight invitation to a beta tester.
 
@@ -10,7 +11,7 @@ The response body for the endpoint that sends a TestFlight invitation to a beta 
 
 ## Declaration
 
-```swift
+```
 object BetaTesterInvitationResponse
 ```
 
@@ -21,11 +22,13 @@ object BetaTesterInvitationResponse
 
 ## See Also
 
-- [Send an invitation to a beta tester](post-v1-betatesterinvitations.md)
+### Related Documentation
+- [Send an invitation to a beta tester](./post-v1-betatesterinvitations.md)
   Send or resend an invitation to a beta tester to test a specified app.
-- [object BetaTesterInvitation](betatesterinvitation.md)
+### Objects
+- [object BetaTesterInvitation](./betatesterinvitation.md)
   A pending email invitation sent to recruit someone as a TestFlight beta tester for an app.
-- [object BetaTesterInvitationCreateRequest](betatesterinvitationcreaterequest.md)
+- [object BetaTesterInvitationCreateRequest](./betatesterinvitationcreaterequest.md)
   The request body you use to create a Beta Tester Invitation.
 
 

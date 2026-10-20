@@ -1,15 +1,22 @@
 # NSDrawer.State.closedState
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
 ```swift
 case closedState
+```
+
+```c
+NSDrawerClosedState
 ```
 
 #### Discussion
@@ -18,9 +25,10 @@ The drawer is closed (not visible onscreen).
 
 ## See Also
 
-- [NSDrawer.State.openingState](nsdrawer/state-swift.enum/openingstate.md)
-- [NSDrawer.State.openState](nsdrawer/state-swift.enum/openstate.md)
-- [NSDrawer.State.closingState](nsdrawer/state-swift.enum/closingstate.md)
+### Constants
+- [NSDrawer.State.openingState](./openingstate.md)
+- [NSDrawer.State.openState](./openstate.md)
+- [NSDrawer.State.closingState](./closingstate.md)
 
 
 ---

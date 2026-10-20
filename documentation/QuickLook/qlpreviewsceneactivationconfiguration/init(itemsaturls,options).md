@@ -1,7 +1,8 @@
 # init(itemsAtURLs:options:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

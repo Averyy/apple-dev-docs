@@ -1,7 +1,8 @@
 # kLSQuarantineTypeKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A symbolic string identifying the reason for the quarantine.
 
@@ -14,19 +15,24 @@ A symbolic string identifying the reason for the quarantine.
 let kLSQuarantineTypeKey: CFString
 ```
 
+```c
+const CFStringRef kLSQuarantineTypeKey;
+```
+
 #### Discussion
 
 ## See Also
 
-- [let kLSQuarantineAgentBundleIdentifierKey: CFString](klsquarantineagentbundleidentifierkey.md)
+### Understanding the Quarantine Properties Dictionary
+- [let kLSQuarantineAgentBundleIdentifierKey: CFString](./klsquarantineagentbundleidentifierkey.md)
   The bundle identifier of the quarantining agent.
-- [let kLSQuarantineAgentNameKey: CFString](klsquarantineagentnamekey.md)
+- [let kLSQuarantineAgentNameKey: CFString](./klsquarantineagentnamekey.md)
   The app name of the quarantining agent.
-- [let kLSQuarantineTimeStampKey: CFString](klsquarantinetimestampkey.md)
+- [let kLSQuarantineTimeStampKey: CFString](./klsquarantinetimestampkey.md)
   The date and time of the item’s quarantine.
-- [let kLSQuarantineDataURLKey: CFString](klsquarantinedataurlkey.md)
+- [let kLSQuarantineDataURLKey: CFString](./klsquarantinedataurlkey.md)
   The actual URL of the quarantined item.
-- [let kLSQuarantineOriginURLKey: CFString](klsquarantineoriginurlkey.md)
+- [let kLSQuarantineOriginURLKey: CFString](./klsquarantineoriginurlkey.md)
   The URL of the resource originally hosting the quarantined item.
 
 

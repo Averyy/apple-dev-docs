@@ -1,7 +1,8 @@
 # condensedAbbreviated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Uses the abbreviated form but condensed if possible. For example, “2hr 10min”, “2小時10分鐘”
 

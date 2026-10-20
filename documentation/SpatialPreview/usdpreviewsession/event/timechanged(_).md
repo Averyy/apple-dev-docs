@@ -1,13 +1,14 @@
 # USDPreviewSession.Event.timeChanged(_:)
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The USD animation timecode has changed
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short title for the challenge definition.
 
@@ -20,11 +21,16 @@ A short title for the challenge definition.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var details: String?](gkchallengedefinition/details.md)
+### Getting the display properties and image
+- [var details: String?](./details.md)
   A more detailed description of the challenge definition.
-- [func loadImage(completionHandler: (UIImage?, (any Error)?) -> Void)](gkchallengedefinition/loadimage(completionhandler:).md)
+- [func loadImage(completionHandler: (UIImage?, (any Error)?) -> Void)](./loadimage%28completionhandler%29.md)
   Loads the image set on the challenge definition, which may be `nil` if none was set.
 
 

@@ -1,7 +1,8 @@
 # HKAuthorizationStatus.sharingAuthorized
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has explicitly authorized your app to save data of the specified type.
 
@@ -19,11 +20,16 @@ The user has explicitly authorized your app to save data of the specified type.
 case sharingAuthorized
 ```
 
+```c
+HKAuthorizationStatusSharingAuthorized
+```
+
 ## See Also
 
-- [HKAuthorizationStatus.notDetermined](hkauthorizationstatus/notdetermined.md)
+### Constants
+- [HKAuthorizationStatus.notDetermined](./notdetermined.md)
   The user has not yet chosen to authorize access to the specified data type.
-- [HKAuthorizationStatus.sharingDenied](hkauthorizationstatus/sharingdenied.md)
+- [HKAuthorizationStatus.sharingDenied](./sharingdenied.md)
   The user has explicitly denied your app permission to save data of the specified type.
 
 

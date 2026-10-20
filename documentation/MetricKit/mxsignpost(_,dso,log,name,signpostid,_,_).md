@@ -1,7 +1,8 @@
 # mxSignpost(_:dso:log:name:signpostID:_:_:)
 
 **Framework**: MetricKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
 
@@ -20,29 +21,32 @@ func mxSignpost(_ type: OSSignpostType, dso: UnsafeRawPointer = #dsohandle, log:
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Call this function to mark a custom metric, custom metric start time, or custom metric end time in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md), the `type` of the event, a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit). Don’t alter the parameters `dso`, `signpostID`, or `format`.
+Call this function to mark a custom metric, custom metric start time, or custom metric end time in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](./mxmetricmanager/makeloghandle%28category%29.md), the `type` of the event, a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](../os/os_signpost_event_emit.md). Don’t alter the parameters `dso`, `signpostID`, or `format`.
 
 ## Parameters
 
-- `type`: A value that represents the type of the signpost: - **`event`**: A single custom metric.
-- **`begin`**: The start time of a custom metric.
-- **`end`**: The end time of a custom metric.
+- `type`: A value that represents the type of the signpost:
+
+  - **`event`**: A single custom metric.
+  - **`begin`**: The start time of a custom metric.
+  - **`end`**: The end time of a custom metric.
 - `dso`: A parameter for internal system use.
-- `log`: A log for the category of the event that was created previously using [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md).
+- `log`: A log for the category of the event that was created previously using [`makeLogHandle(category:)`](./mxmetricmanager/makeloghandle%28category%29.md).
 - `name`: A string containing the developer-assigned name of the custom event.
 - `signpostID`: A parameter for internal system use.
 - `format`: A parameter for internal system use.
-- `arguments`: The variable arguments for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit).
+- `arguments`: The variable arguments for [`os_signpost_event_emit`](../os/os_signpost_event_emit.md).
 
 ## See Also
 
-- [struct SignpostIntervalMetric](signpostintervalmetric.md)
+### Signpost and custom metrics
+- [struct SignpostIntervalMetric](./signpostintervalmetric.md)
   A metric that measures the duration and count of custom signpost intervals.
-- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md)
+- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpostanimationintervalbegin%28dso,log,name,signpostid,_,_%29.md)
   Posts the start time of an animation interval to the log system.
 
 

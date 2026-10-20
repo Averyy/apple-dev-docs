@@ -1,7 +1,8 @@
 # componentNotCaptured
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This component has not been captured.
 
@@ -17,16 +18,17 @@ var componentNotCaptured: Int { get }
 
 ## See Also
 
-- [var invalidComponentID: Int](invalidcomponentid.md)
+### Result Codes
+- [var invalidComponentID: Int](./invalidcomponentid.md)
   Invalid component ID.
-- [var validInstancesExist: Int](validinstancesexist.md)
+- [var validInstancesExist: Int](./validinstancesexist.md)
   This component has open connections.
-- [var componentDontRegister: Int](componentdontregister.md)
-- [var unresolvedComponentDLLErr: Int](unresolvedcomponentdllerr.md)
-- [var retryComponentRegistrationErr: Int](retrycomponentregistrationerr.md)
-- [var badComponentSelector: Int](badcomponentselector.md)
+- [var componentDontRegister: Int](./componentdontregister.md)
+- [var unresolvedComponentDLLErr: Int](./unresolvedcomponentdllerr.md)
+- [var retryComponentRegistrationErr: Int](./retrycomponentregistrationerr.md)
+- [var badComponentSelector: Int](./badcomponentselector.md)
   Component does not support the specified request code.
-- [var badComponentInstance: Int](badcomponentinstance.md)
+- [var badComponentInstance: Int](./badcomponentinstance.md)
   Invalid component  passed to Component Manager.
 
 

@@ -1,7 +1,8 @@
 # keyboardShortcut(_:modifiers:localization:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a keyboard shortcut and assigns it to the modified control.
 
@@ -31,7 +32,7 @@ If multiple controls are associated with the same shortcut, the first one found 
 
 Provide a `localization` value to specify how this shortcut should be localized. Given that `key` is always defined in relation to the US-English keyboard layout, it might be hard to reach on different international layouts. For example the shortcut `⌘[` works well for the US layout but is hard to reach for German users, where `[` is available by pressing `⌥5`, making users type `⌥⌘5`. The automatic keyboard shortcut remapping re-assigns the shortcut to an appropriate replacement, `⌘Ö` in this case.
 
-Certain shortcuts carry information about directionality. For instance, `⌘[` can reveal a previous view. Following the layout direction of the UI, this shortcut will be automatically mirrored to `⌘]`. However, this does not apply to items such as “Align Left `⌘{`”, which will be “left” independently of the layout direction. When the shortcut shouldn’t follow the directionality of the UI, but rather be the same in both right-to-left and left-to-right directions, using [`withoutMirroring`](keyboardshortcut/localization-swift.struct/withoutmirroring.md) will prevent the system from flipping it.
+Certain shortcuts carry information about directionality. For instance, `⌘[` can reveal a previous view. Following the layout direction of the UI, this shortcut will be automatically mirrored to `⌘]`. However, this does not apply to items such as “Align Left `⌘{`”, which will be “left” independently of the layout direction. When the shortcut shouldn’t follow the directionality of the UI, but rather be the same in both right-to-left and left-to-right directions, using [`withoutMirroring`](../keyboardshortcut/localization-swift.struct/withoutmirroring.md) will prevent the system from flipping it.
 
 ```swift
 var body: some Commands {
@@ -48,21 +49,22 @@ var body: some Commands {
 }
 ```
 
-Lastly, providing the option [`custom`](keyboardshortcut/localization-swift.struct/custom.md) disables the automatic localization for this shortcut to tell the system that internationalization is taken care of in a different way.
+Lastly, providing the option [`custom`](../keyboardshortcut/localization-swift.struct/custom.md) disables the automatic localization for this shortcut to tell the system that internationalization is taken care of in a different way.
 
 ## See Also
 
-- [func keyboardShortcut(_:)](view/keyboardshortcut(_:).md)
+### Creating keyboard shortcuts
+- [func keyboardShortcut(_:)](./keyboardshortcut%28_%29.md)
   Assigns a keyboard shortcut to the modified control.
-- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers) -> some View](view/keyboardshortcut(_:modifiers:).md)
+- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers) -> some View](./keyboardshortcut%28_,modifiers%29.md)
   Defines a keyboard shortcut and assigns it to the modified control.
-- [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)
+- [var keyboardShortcut: KeyboardShortcut?](../environmentvalues/keyboardshortcut.md)
   The keyboard shortcut that buttons in this environment will be triggered with.
-- [struct KeyboardShortcut](keyboardshortcut.md)
+- [struct KeyboardShortcut](../keyboardshortcut.md)
   Keyboard shortcuts describe combinations of keys on a keyboard that the user can press in order to activate a button or toggle.
-- [struct KeyEquivalent](keyequivalent.md)
+- [struct KeyEquivalent](../keyequivalent.md)
   Key equivalents consist of a letter, punctuation, or function key that can be combined with an optional set of modifier keys to specify a keyboard shortcut.
-- [struct EventModifiers](eventmodifiers.md)
+- [struct EventModifiers](../eventmodifiers.md)
   A set of key modifiers that you can add to a gesture.
 
 

@@ -1,7 +1,8 @@
 # newMultiTokenContexts
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of updated multitoken contexts for a multimerchant payment request.
 
@@ -11,17 +12,18 @@ An array of updated multitoken contexts for a multimerchant payment request.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayPaymentTokenContext> newMultiTokenContexts;
 ```
 
 #### Discussion
 
-Provide this object to update the [`multiTokenContexts`](applepaypaymentrequest/multitokencontexts.md) value in the original [`ApplePayPaymentRequest`](applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
+Provide this object to update the [`multiTokenContexts`](../applepaypaymentrequest/multitokencontexts.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
 
 ## See Also
 
-- [ApplePayPaymentTokenContext](applepaypaymenttokencontext.md)
+### Updating multitoken or multimerchant payments
+- [ApplePayPaymentTokenContext](../applepaypaymenttokencontext.md)
   A dictionary that defines the context for a single payment token in a payment request for multimerchant payments.
 
 

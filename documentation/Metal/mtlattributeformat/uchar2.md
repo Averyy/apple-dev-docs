@@ -1,7 +1,8 @@
 # MTLAttributeFormat.uchar2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 8-bit, unsigned integer values.
 
@@ -19,21 +20,26 @@ A two-component vector with 8-bit, unsigned integer values.
 case uchar2
 ```
 
+```c
+MTLAttributeFormatUChar2
+```
+
 ## See Also
 
-- [MTLAttributeFormat.char](mtlattributeformat/char.md)
+### 8-bit integer formats
+- [MTLAttributeFormat.char](./char.md)
   An 8-bit, signed integer value.
-- [MTLAttributeFormat.char2](mtlattributeformat/char2.md)
+- [MTLAttributeFormat.char2](./char2.md)
   A two-component vector with 8-bit, signed integer values.
-- [MTLAttributeFormat.char3](mtlattributeformat/char3.md)
+- [MTLAttributeFormat.char3](./char3.md)
   A three-component vector with 8-bit, signed integer values.
-- [MTLAttributeFormat.char4](mtlattributeformat/char4.md)
+- [MTLAttributeFormat.char4](./char4.md)
   A four-component vector with 8-bit, signed integer values.
-- [MTLAttributeFormat.uchar](mtlattributeformat/uchar.md)
+- [MTLAttributeFormat.uchar](./uchar.md)
   An 8-bit, unsigned integer value.
-- [MTLAttributeFormat.uchar3](mtlattributeformat/uchar3.md)
+- [MTLAttributeFormat.uchar3](./uchar3.md)
   A three-component vector with 8-bit, unsigned integer values.
-- [MTLAttributeFormat.uchar4](mtlattributeformat/uchar4.md)
+- [MTLAttributeFormat.uchar4](./uchar4.md)
   A four-component vector with 8-bit, unsigned integer values.
 
 

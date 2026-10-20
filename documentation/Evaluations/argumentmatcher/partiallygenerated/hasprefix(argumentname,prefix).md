@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.hasPrefix(argumentName:prefix:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated has-prefix argument matcher.
 

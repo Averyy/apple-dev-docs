@@ -1,7 +1,8 @@
 # atIndex(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the descriptor at the specified (one-based) position in the receiving descriptor list.
 
@@ -15,6 +16,10 @@ Returns the descriptor at the specified (one-based) position in the receiving de
 func atIndex(_ index: Int) -> NSAppleEventDescriptor?
 ```
 
+```objc
+- (NSAppleEventDescriptor *) descriptorAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
 The descriptor from the specified position (one-based) in the descriptor list, or `nil` if the specified descriptor cannot be obtained.
@@ -25,9 +30,10 @@ The descriptor from the specified position (one-based) in the descriptor list, o
 
 ## See Also
 
-- [func insert(NSAppleEventDescriptor, at: Int)](nsappleeventdescriptor/insert(_:at:).md)
+### Working With List Descriptors
+- [func insert(NSAppleEventDescriptor, at: Int)](./insert%28_,at%29.md)
   Inserts a descriptor at the specified (one-based) position in the receiving descriptor list, replacing the existing descriptor, if any, at that position.
-- [func remove(at: Int)](nsappleeventdescriptor/remove(at:).md)
+- [func remove(at: Int)](./remove%28at%29.md)
   Removes the descriptor at the specified (one-based) position in the receiving descriptor list.
 
 

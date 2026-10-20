@@ -1,7 +1,8 @@
 # showsItemsWithProtectedAssets
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the media item picker displays protected assets.
 
@@ -16,19 +17,24 @@ A Boolean value that specifies whether the media item picker displays protected 
 var showsItemsWithProtectedAssets: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsItemsWithProtectedAssets;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media item picker displays media items with DRM. The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When set to [`true`](../../Swift/true.md), the media item picker displays media items with DRM. The default value for this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsPickingMultipleItems: Bool](mpmediapickercontroller/allowspickingmultipleitems.md)
+### Using a media item picker
+- [var allowsPickingMultipleItems: Bool](./allowspickingmultipleitems.md)
   A Boolean value specifying the default selection behavior for a media item picker.
-- [var showsCloudItems: Bool](mpmediapickercontroller/showsclouditems.md)
+- [var showsCloudItems: Bool](./showsclouditems.md)
   A Boolean value specifying whether to display iCloud Media Library items for a media picker.
-- [var mediaTypes: MPMediaType](mpmediapickercontroller/mediatypes.md)
+- [var mediaTypes: MPMediaType](./mediatypes.md)
   The media types that media item picker presents.
-- [var prompt: String?](mpmediapickercontroller/prompt.md)
+- [var prompt: String?](./prompt.md)
   A prompt, for the user, that appears above the navigation bar buttons.
 
 

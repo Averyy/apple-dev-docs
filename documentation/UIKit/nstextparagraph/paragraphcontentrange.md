@@ -1,7 +1,8 @@
 # paragraphContentRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the range of the paragraph in the containing text’s attributed string.
 
@@ -18,15 +19,20 @@ Returns the range of the paragraph in the containing text’s attributed string.
 var paragraphContentRange: NSTextRange? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSTextRange * paragraphContentRange;
+```
+
 #### Discussion
 
-The containing text is [`NSTextContentStorage`](nstextcontentstorage.md)’s [`attributedString`](nstextcontentstorage/attributedstring.md).
+The containing text is [`NSTextContentStorage`](../nstextcontentstorage.md)’s [`attributedString`](../nstextcontentstorage/attributedstring.md).
 
 ## See Also
 
-- [var attributedString: NSAttributedString](nstextparagraph/attributedstring.md)
+### Getting paragraph characteristics
+- [var attributedString: NSAttributedString](./attributedstring.md)
   Returns the source attributed string.
-- [var paragraphSeparatorRange: NSTextRange?](nstextparagraph/paragraphseparatorrange.md)
+- [var paragraphSeparatorRange: NSTextRange?](./paragraphseparatorrange.md)
   Returns the range of the paragraph separator in the containing text’s attributed string.
 
 

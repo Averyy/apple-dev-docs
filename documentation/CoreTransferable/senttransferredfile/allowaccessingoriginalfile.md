@@ -1,7 +1,8 @@
 # allowAccessingOriginalFile
 
 **Framework**: Core Transferable  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver can read and write the original file. When set to `false`, the receiver can only gain access to a copy of the file.
 
@@ -22,9 +23,10 @@ let allowAccessingOriginalFile: Bool
 
 ## See Also
 
-- [init(URL, allowAccessingOriginalFile: Bool)](senttransferredfile/init(_:allowaccessingoriginalfile:).md)
+### Configuring a file transfer
+- [init(URL, allowAccessingOriginalFile: Bool)](./init%28_,allowaccessingoriginalfile%29.md)
   Creates a description of a file from the perspective of the sender.
-- [let file: URL](senttransferredfile/file.md)
+- [let file: URL](./file.md)
   A URL that describes the location of the file.
 
 

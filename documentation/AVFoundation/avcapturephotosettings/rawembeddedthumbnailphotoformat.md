@@ -1,7 +1,8 @@
 # rawEmbeddedThumbnailPhotoFormat
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary describing the format for delivery of raw thumbnail images embedded in photo file output.
 
@@ -17,21 +18,26 @@ A dictionary describing the format for delivery of raw thumbnail images embedded
 var rawEmbeddedThumbnailPhotoFormat: [String : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * rawEmbeddedThumbnailPhotoFormat;
+```
+
 ## Mentions
 
-- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 ## See Also
 
-- [var previewPhotoFormat: [String : Any]?](avcapturephotosettings/previewphotoformat.md)
+### Enabling preview and thumbnail delivery
+- [var previewPhotoFormat: [String : Any]?](./previewphotoformat.md)
   A dictionary describing the format for delivery of preview-sized images alongside the main photo.
-- [var availablePreviewPhotoPixelFormatTypes: [OSType]](avcapturephotosettings/availablepreviewphotopixelformattypes-30d9.md)
+- [var availablePreviewPhotoPixelFormatTypes: [OSType]](./availablepreviewphotopixelformattypes-30d9.md)
   An array of available of pixel format types available to specify a preview photo format.
-- [var embeddedThumbnailPhotoFormat: [String : Any]?](avcapturephotosettings/embeddedthumbnailphotoformat.md)
+- [var embeddedThumbnailPhotoFormat: [String : Any]?](./embeddedthumbnailphotoformat.md)
   A dictionary describing the format for delivery of thumbnail images embedded in photo file output.
-- [var availableRawEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](avcapturephotosettings/availablerawembeddedthumbnailphotocodectypes.md)
+- [var availableRawEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](./availablerawembeddedthumbnailphotocodectypes.md)
   An array of video codec types compatible with the photo settings for embedding raw thumbnail images in photo file output.
-- [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](avcapturephotosettings/availableembeddedthumbnailphotocodectypes.md)
+- [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](./availableembeddedthumbnailphotocodectypes.md)
   An array of video codec types compatible with the photo settings for embedding thumbnail images in photo file output.
 
 

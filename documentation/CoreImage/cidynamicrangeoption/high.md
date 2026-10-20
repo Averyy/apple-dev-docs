@@ -1,7 +1,8 @@
 # high
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use High dynamic range.
 
@@ -19,15 +20,20 @@ Use High dynamic range.
 static let high: CIDynamicRangeOption
 ```
 
+```c
+extern CIDynamicRangeOption const kCIDynamicRangeHigh;
+```
+
 #### Discussion
 
 The provides the best HDR quality and needs to be reserved for situations where the user is focused on the media, such as larger views in an image editing/viewing app, or annotating/drawing with HDR colors
 
 ## See Also
 
-- [static let standard: CIDynamicRangeOption](cidynamicrangeoption/standard.md)
+### Enumeration Cases
+- [static let standard: CIDynamicRangeOption](./standard.md)
   Use Standard dynamic range.
-- [static let constrainedHigh: CIDynamicRangeOption](cidynamicrangeoption/constrainedhigh.md)
+- [static let constrainedHigh: CIDynamicRangeOption](./constrainedhigh.md)
   Use extended dynamic range, but brightness is modulated to optimize for co-existence with other composited content.
 
 

@@ -1,6 +1,7 @@
 # Removing atoms from an atom container
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Remove atoms from an atom container.
 
@@ -49,13 +50,14 @@ for (i = 1; i <= kNumOverrideSamples; i++)
 
 ## See Also
 
-- [Creating new atoms](creating_new_atoms.md)
+### Managing atoms
+- [Creating new atoms](./creating_new_atoms.md)
   Create new atoms and insert them in a QT atom container.
-- [Copying existing atoms](copying_existing_atoms.md)
+- [Copying existing atoms](./copying_existing_atoms.md)
   Copy existing atoms within an atom container.
-- [Retrieving atoms from an atom container](retrieving_atoms_from_an_atom_container.md)
+- [Retrieving atoms from an atom container](./retrieving_atoms_from_an_atom_container.md)
   Retrieve information about the types of a parent atom’s children, search for a specific atom, and retrieve a leaf atom’s data.
-- [Modifying atoms](modifying_atoms.md)
+- [Modifying atoms](./modifying_atoms.md)
   Modify attributes or data associated with an atom in an atom container.
 
 

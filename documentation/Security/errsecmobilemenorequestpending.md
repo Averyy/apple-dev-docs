@@ -1,7 +1,8 @@
 # errSecMobileMeNoRequestPending
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 MobileMe has no request pending.
 
@@ -18,6 +19,10 @@ MobileMe has no request pending.
 
 ```swift
 var errSecMobileMeNoRequestPending: OSStatus { get }
+```
+
+```c
+errSecMobileMeNoRequestPending
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the text field’s text (or tokens) have changed and when the text field is going to display a new list of suggestion items.
@@ -20,7 +21,7 @@ func textField(_ textField: NSTextField, provideUpdatedSuggestions responseHandl
 
 Read the contents of `textField` to determine what suggestions to provide. For example:
 
-```None
+```
 func textField(
     _ textField: NSTextField,
     provideUpdatedSuggestions responseHandler: @escaping ((ItemResponse) -> Void)
@@ -49,7 +50,7 @@ func textField(
 
 If some of the suggestions are time-consuming to compute, or need to be fetched from an asynchronous/remote source, call `responseHandler` an additional time when that data has been fetched and processed.
 
-```None
+```
 func textField(
     _ textField: NSTextField,
     provideUpdatedSuggestions responseHandler: @escaping ((ItemResponse) -> Void)

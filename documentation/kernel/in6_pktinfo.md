@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct in6_pktinfo {
     ...
 };
@@ -17,8 +17,8 @@ struct in6_pktinfo {
 ## Topics
 
 ### Instance Properties
-- [ipi6_addr](in6_pktinfo/1527725-ipi6_addr.md)
-- [ipi6_ifindex](in6_pktinfo/1527707-ipi6_ifindex.md)
+- [ipi6_addr](./in6_pktinfo/api-1527725-ipi6_addr.md)
+- [ipi6_ifindex](./in6_pktinfo/api-1527707-ipi6_ifindex.md)
 
 
 ---

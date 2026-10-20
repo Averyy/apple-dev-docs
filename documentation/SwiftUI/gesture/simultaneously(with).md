@@ -1,7 +1,8 @@
 # simultaneously(with:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines a gesture with another gesture to create a new gesture that recognizes both gestures at the same time.
 
@@ -31,9 +32,10 @@ A gesture with two simultaneous gestures.
 
 ## See Also
 
-- [func sequenced<Other>(before: Other) -> SequenceGesture<Self, Other>](gesture/sequenced(before:).md)
+### Composing gestures
+- [func sequenced<Other>(before: Other) -> SequenceGesture<Self, Other>](./sequenced%28before%29.md)
   Sequences a gesture with another one to create a new gesture, which results in the second gesture only receiving events after the first gesture succeeds.
-- [func exclusively<Other>(before: Other) -> ExclusiveGesture<Self, Other>](gesture/exclusively(before:).md)
+- [func exclusively<Other>(before: Other) -> ExclusiveGesture<Self, Other>](./exclusively%28before%29.md)
   Combines two gestures exclusively to create a new gesture where only one gesture succeeds, giving precedence to the first gesture.
 
 

@@ -1,7 +1,8 @@
 # XCUIVoiceOverServiceErrorDomain
 
 **Framework**: XCUIAutomation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Error domain for XCUIVoiceOverService errors.
 
@@ -19,6 +20,10 @@ Error domain for XCUIVoiceOverService errors.
 
 ```swift
 let XCUIVoiceOverServiceErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const XCUIVoiceOverServiceErrorDomain;
 ```
 
 

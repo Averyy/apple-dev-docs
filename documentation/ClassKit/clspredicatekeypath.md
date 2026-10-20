@@ -1,7 +1,8 @@
 # CLSPredicateKeyPath
 
 **Framework**: ClassKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The set of possible key paths you use to search for contexts.
 
@@ -18,45 +19,50 @@ The set of possible key paths you use to search for contexts.
 struct CLSPredicateKeyPath
 ```
 
+```c
+typedef NSString * CLSPredicateKeyPath;
+```
+
 #### Discussion
 
-Use these predicate key paths when constructing a predicate to send to the [`contexts(matching:completion:)`](clsdatastore/contexts(matching:completion:).md) method.
+Use these predicate key paths when constructing a predicate to send to the [`contexts(matching:completion:)`](./clsdatastore/contexts%28matching,completion%29.md) method.
 
 ## Topics
 
 ### Predicate key paths
-- [static let dateCreated: CLSPredicateKeyPath](clspredicatekeypath/datecreated.md)
+- [static let dateCreated: CLSPredicateKeyPath](./clspredicatekeypath/datecreated.md)
   The date on which the context was created.
-- [static let identifier: CLSPredicateKeyPath](clspredicatekeypath/identifier.md)
+- [static let identifier: CLSPredicateKeyPath](./clspredicatekeypath/identifier.md)
   The context’s identifier.
-- [static let parent: CLSPredicateKeyPath](clspredicatekeypath/parent.md)
+- [static let parent: CLSPredicateKeyPath](./clspredicatekeypath/parent.md)
   The context’s direct ancestor in the context hierarchy.
-- [static let title: CLSPredicateKeyPath](clspredicatekeypath/title.md)
+- [static let title: CLSPredicateKeyPath](./clspredicatekeypath/title.md)
   The human readable name of the context.
-- [static let topic: CLSPredicateKeyPath](clspredicatekeypath/topic.md)
+- [static let topic: CLSPredicateKeyPath](./clspredicatekeypath/topic.md)
   The context’s topic.
-- [static let universalLinkURL: CLSPredicateKeyPath](clspredicatekeypath/universallinkurl.md)
+- [static let universalLinkURL: CLSPredicateKeyPath](./clspredicatekeypath/universallinkurl.md)
   The context’s universal URL link.
 ### Initializing a predicate key path
-- [init(String)](clspredicatekeypath/init(_:).md)
+- [init(String)](./clspredicatekeypath/init%28_%29.md)
   Initializes a predicate key path.
-- [init(rawValue: String)](clspredicatekeypath/init(rawvalue:).md)
+- [init(rawValue: String)](./clspredicatekeypath/init%28rawvalue%29.md)
   Initializes a predicate key path with the given value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func contexts(matchingIdentifierPath: [String], completion: ([CLSContext], (any Error)?) -> Void)](clsdatastore/contexts(matchingidentifierpath:completion:).md)
+### Finding contexts that match criteria
+- [func contexts(matchingIdentifierPath: [String], completion: ([CLSContext], (any Error)?) -> Void)](./clsdatastore/contexts%28matchingidentifierpath,completion%29.md)
   Fetches all the contexts along a given identifier path.
-- [func contexts(matching: NSPredicate, completion: ([CLSContext], (any Error)?) -> Void)](clsdatastore/contexts(matching:completion:).md)
+- [func contexts(matching: NSPredicate, completion: ([CLSContext], (any Error)?) -> Void)](./clsdatastore/contexts%28matching,completion%29.md)
   Fetches all the contexts matching a predicate.
 
 

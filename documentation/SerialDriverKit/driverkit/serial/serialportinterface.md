@@ -1,28 +1,29 @@
 # SerialPortInterface
 
 **Framework**: SerialDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 struct SerialPortInterface;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [rxCI](driverkit/serial/serialportinterface/rxci.md)
-- [rxPI](driverkit/serial/serialportinterface/rxpi.md)
-- [rxqlogsz](driverkit/serial/serialportinterface/rxqlogsz.md)
-- [rxqoffset](driverkit/serial/serialportinterface/rxqoffset.md)
-- [txCI](driverkit/serial/serialportinterface/txci.md)
-- [txPI](driverkit/serial/serialportinterface/txpi.md)
-- [txqlogsz](driverkit/serial/serialportinterface/txqlogsz.md)
-- [txqoffset](driverkit/serial/serialportinterface/txqoffset.md)
+- [rxCI](./serialportinterface/rxci.md)
+- [rxPI](./serialportinterface/rxpi.md)
+- [rxqlogsz](./serialportinterface/rxqlogsz.md)
+- [rxqoffset](./serialportinterface/rxqoffset.md)
+- [txCI](./serialportinterface/txci.md)
+- [txPI](./serialportinterface/txpi.md)
+- [txqlogsz](./serialportinterface/txqlogsz.md)
+- [txqoffset](./serialportinterface/txqoffset.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AVAudio3DMixingRenderingAlgorithm.HRTF
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A high-quality algorithm that uses filtering to emulate 3D space in headphones.
 
@@ -10,7 +11,7 @@ A high-quality algorithm that uses filtering to emulate 3D space in headphones.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ A high-quality algorithm that uses filtering to emulate 3D space in headphones.
 case HRTF
 ```
 
+```c
+AVAudio3DMixingRenderingAlgorithmHRTF
+```
+
 #### Discussion
 
 The head-related transfer function is a CPU-intensive algorithm.
 
 ## See Also
 
-- [AVAudio3DMixingRenderingAlgorithm.auto](avaudio3dmixingrenderingalgorithm/auto.md)
+### Choosing a rendering algorithm
+- [AVAudio3DMixingRenderingAlgorithm.auto](./auto.md)
   Automatically selects the highest-quality rendering algorithm available for the current playback hardware.
-- [AVAudio3DMixingRenderingAlgorithm.equalPowerPanning](avaudio3dmixingrenderingalgorithm/equalpowerpanning.md)
+- [AVAudio3DMixingRenderingAlgorithm.equalPowerPanning](./equalpowerpanning.md)
   An algorithm that pans the data of the mixer bus into a stereo field.
-- [AVAudio3DMixingRenderingAlgorithm.HRTFHQ](avaudio3dmixingrenderingalgorithm/hrtfhq.md)
+- [AVAudio3DMixingRenderingAlgorithm.HRTFHQ](./hrtfhq.md)
   A higher-quality head-related transfer function rendering algorithm.
-- [AVAudio3DMixingRenderingAlgorithm.soundField](avaudio3dmixingrenderingalgorithm/soundfield.md)
+- [AVAudio3DMixingRenderingAlgorithm.soundField](./soundfield.md)
   An algorithm that renders to multichannel hardware.
-- [AVAudio3DMixingRenderingAlgorithm.sphericalHead](avaudio3dmixingrenderingalgorithm/sphericalhead.md)
+- [AVAudio3DMixingRenderingAlgorithm.sphericalHead](./sphericalhead.md)
   An algorithm that emulates 3D space in headphones by simulating interaural time delays and other spatial cues.
-- [AVAudio3DMixingRenderingAlgorithm.stereoPassThrough](avaudio3dmixingrenderingalgorithm/stereopassthrough.md)
+- [AVAudio3DMixingRenderingAlgorithm.stereoPassThrough](./stereopassthrough.md)
   An algorithm to use when the source data doesn’t need localization.
 
 

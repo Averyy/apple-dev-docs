@@ -1,7 +1,8 @@
 # string(forType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value for the specified type as a string.
 
@@ -14,6 +15,10 @@ Returns the value for the specified type as a string.
 func string(forType type: NSPasteboard.PasteboardType) -> String?
 ```
 
+```objc
+- (NSString *) stringForType:(NSPasteboardType) type;
+```
+
 #### Return Value
 
 The value for the specified type as a string.
@@ -24,9 +29,10 @@ The value for the specified type as a string.
 
 ## See Also
 
-- [func data(forType: NSPasteboard.PasteboardType) -> Data?](nspasteboarditem/data(fortype:).md)
+### Getting values
+- [func data(forType: NSPasteboard.PasteboardType) -> Data?](./data%28fortype%29.md)
   Returns the value for the specified type as a data object.
-- [func propertyList(forType: NSPasteboard.PasteboardType) -> Any?](nspasteboarditem/propertylist(fortype:).md)
+- [func propertyList(forType: NSPasteboard.PasteboardType) -> Any?](./propertylist%28fortype%29.md)
   Returns the value for the specified type as a property list.
 
 

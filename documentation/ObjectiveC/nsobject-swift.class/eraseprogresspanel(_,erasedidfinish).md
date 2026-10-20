@@ -1,17 +1,22 @@
 # eraseProgressPanel(_:eraseDidFinish:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification sent by the panel before display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func eraseProgressPanel(_ theErasePanel: DREraseProgressPanel!, eraseDidFinish erase: DRErase!) -> Bool
+```
+
+```objc
+- (BOOL) eraseProgressPanel:(DREraseProgressPanel *) theErasePanel eraseDidFinish:(DRErase *) erase;
 ```
 
 #### Discussion

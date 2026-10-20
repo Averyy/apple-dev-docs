@@ -1,7 +1,8 @@
 # TopLevel.PayloadContentItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload-specific content for this profile.
 
@@ -16,7 +17,7 @@ The payload-specific content for this profile.
 
 ## Declaration
 
-```swift
+```
 object TopLevel.PayloadContentItem
 ```
 
@@ -26,7 +27,8 @@ object TopLevel.PayloadContentItem
 
 ## See Also
 
-- [object TopLevel.ConsentText](toplevel/consenttext-data.dictionary.md)
+### Objects
+- [object TopLevel.ConsentText](./consenttext-data.dictionary.md)
   The dictionary of consent agreements per language.
 
 

@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The linear velocity of each rigid body.
 

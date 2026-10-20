@@ -1,7 +1,8 @@
 # selectedColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color selected by the user.
 
@@ -17,17 +18,22 @@ The color selected by the user.
 var selectedColor: UIColor { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIColor * selectedColor;
+```
+
 ## See Also
 
-- [var delegate: (any UIColorPickerViewControllerDelegate)?](uicolorpickerviewcontroller/delegate.md)
+### Configuring the color picker view controller
+- [var delegate: (any UIColorPickerViewControllerDelegate)?](./delegate.md)
   The delegate that receives updates about the color selection.
-- [protocol UIColorPickerViewControllerDelegate](uicolorpickerviewcontrollerdelegate.md)
+- [protocol UIColorPickerViewControllerDelegate](../uicolorpickerviewcontrollerdelegate.md)
   The delegate protocol to inform about changes in color selection.
-- [var maximumLinearExposure: CGFloat](uicolorpickerviewcontroller/maximumlinearexposure.md)
+- [var maximumLinearExposure: CGFloat](./maximumlinearexposure.md)
   The maximum exposure to apply to a color when returned by the color picker.
-- [var supportsAlpha: Bool](uicolorpickerviewcontroller/supportsalpha.md)
+- [var supportsAlpha: Bool](./supportsalpha.md)
   A Boolean value that enables alpha value control.
-- [var supportsEyedropper: Bool](uicolorpickerviewcontroller/supportseyedropper.md)
+- [var supportsEyedropper: Bool](./supportseyedropper.md)
   If set to `NO` the eyedropper functionality is not supported for this color picker.
 
 

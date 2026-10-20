@@ -1,7 +1,8 @@
 # script
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents any scripting language source.
 
@@ -24,29 +25,30 @@ static var script: UTType { get }
 
 The identifier for this type is `public.script`.
 
-This type conforms to [`UTTypeSourceCode`](uttypesourcecode.md).
+This type conforms to [`UTTypeSourceCode`](../uttypesourcecode.md).
 
 ## See Also
 
-- [static var appleScript: UTType](uttype-swift.struct/applescript.md)
+### Scripted programming language sources
+- [static var appleScript: UTType](./applescript.md)
   A type that represents an AppleScript text-based script.
-- [static var javaScript: UTType](uttype-swift.struct/javascript.md)
+- [static var javaScript: UTType](./javascript.md)
   A type that represents JavaScript source code.
-- [static var osaScript: UTType](uttype-swift.struct/osascript.md)
+- [static var osaScript: UTType](./osascript.md)
   A type that represents an Open Scripting Architecture binary script.
-- [static var osaScriptBundle: UTType](uttype-swift.struct/osascriptbundle.md)
+- [static var osaScriptBundle: UTType](./osascriptbundle.md)
   A type that represents an Open Scripting Architecture script bundle.
-- [static var makefile: UTType](uttype-swift.struct/makefile.md)
+- [static var makefile: UTType](./makefile.md)
   A type that represents a Makefile.
-- [static var shellScript: UTType](uttype-swift.struct/shellscript.md)
+- [static var shellScript: UTType](./shellscript.md)
   A base type that represents a shell script.
-- [static var pythonScript: UTType](uttype-swift.struct/pythonscript.md)
+- [static var pythonScript: UTType](./pythonscript.md)
   A type that represents a Python script.
-- [static var rubyScript: UTType](uttype-swift.struct/rubyscript.md)
+- [static var rubyScript: UTType](./rubyscript.md)
   A type that represents a Ruby script.
-- [static var perlScript: UTType](uttype-swift.struct/perlscript.md)
+- [static var perlScript: UTType](./perlscript.md)
   A type that represents a Perl script.
-- [static var phpScript: UTType](uttype-swift.struct/phpscript.md)
+- [static var phpScript: UTType](./phpscript.md)
   A type that represents a PHP script.
 
 

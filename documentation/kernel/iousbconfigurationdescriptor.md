@@ -1,7 +1,8 @@
 # IOUSBConfigurationDescriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for storing a USB configuration descriptor.
 
@@ -10,7 +11,7 @@ The structure for storing a USB configuration descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBConfigurationDescriptor IOUSBConfigurationDescriptor;
 ```
 
@@ -23,31 +24,33 @@ For more information about this descriptor type, see USB 3.2, 9.6.3.
 ## Topics
 
 ### Getting the Properties
-- [bLength](iousbconfigurationdescriptor/1546137-blength.md)
+- [bLength](./iousbconfigurationdescriptor/api-1546137-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbconfigurationdescriptor/1546155-bdescriptortype.md)
+- [bDescriptorType](./iousbconfigurationdescriptor/api-1546155-bdescriptortype.md)
   The type of the descriptor.
-- [wTotalLength](iousbconfigurationdescriptor/1546253-wtotallength.md)
+- [wTotalLength](./iousbconfigurationdescriptor/api-1546253-wtotallength.md)
   The total length of the descriptor, including the length of all related interface, endpoint, and vendor-specific descriptors.
-- [bNumInterfaces](iousbconfigurationdescriptor/1546162-bnuminterfaces.md)
+- [bNumInterfaces](./iousbconfigurationdescriptor/api-1546162-bnuminterfaces.md)
   The number of interfaces this configuration supports.
-- [bConfigurationValue](iousbconfigurationdescriptor/1546567-bconfigurationvalue.md)
+- [bConfigurationValue](./iousbconfigurationdescriptor/api-1546567-bconfigurationvalue.md)
   The value to use when selecting this configuration.
-- [iConfiguration](iousbconfigurationdescriptor/1546218-iconfiguration.md)
+- [iConfiguration](./iousbconfigurationdescriptor/api-1546218-iconfiguration.md)
   The index of the string descriptor that describes this configuration.
-- [bmAttributes](iousbconfigurationdescriptor/1546539-bmattributes.md)
+- [bmAttributes](./iousbconfigurationdescriptor/api-1546539-bmattributes.md)
   A bit mask indicating the configuration’s characteristics.
-- [MaxPower](iousbconfigurationdescriptor/1545938-maxpower.md)
+- [MaxPower](./iousbconfigurationdescriptor/api-1545938-maxpower.md)
   The maximum power consumption of the USB device expressed in 2 milliamp units.
 
 ## See Also
 
-- [IOUSBConfigurationDescHeader](iousbconfigurationdescheader.md)
+### Configuration Descriptors
+- [IOUSBConfigurationDescHeader](./iousbconfigurationdescheader.md)
   The header of a configuration descriptor.
-- [IOUSBConfigurationDescriptorPtr](iousbconfigurationdescriptorptr.md)
+- [IOUSBConfigurationDescriptorPtr](./iousbconfigurationdescriptorptr.md)
   A pointer to a configuration descriptor.
-- [IOUSBConfigurationDescHeaderPtr](iousbconfigurationdescheaderptr.md)
+- [IOUSBConfigurationDescHeaderPtr](./iousbconfigurationdescheaderptr.md)
   A pointer to a configuration descriptor header.
+### Related Documentation
 - [IOUSBConfigurationDescriptor](../iokit/usb_h_user-space/iousbconfigurationdescriptor.md)
 
 

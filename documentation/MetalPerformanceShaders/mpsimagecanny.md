@@ -1,7 +1,8 @@
 # MPSImageCanny
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 14.0+
@@ -17,33 +18,37 @@
 class MPSImageCanny
 ```
 
+```objc
+@interface MPSImageCanny : MPSUnaryImageKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagecanny/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsimagecanny/init(device:).md)
-- [init(device: any MTLDevice, linearToGrayScaleTransform: UnsafePointer<Float>, sigma: Float)](mpsimagecanny/init(device:lineartograyscaletransform:sigma:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagecanny/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsimagecanny/init%28device%29.md)
+- [init(device: any MTLDevice, linearToGrayScaleTransform: UnsafePointer<Float>, sigma: Float)](./mpsimagecanny/init%28device,lineartograyscaletransform,sigma%29.md)
 ### Instance Properties
-- [var colorTransform: UnsafePointer<Float>](mpsimagecanny/colortransform.md)
-- [var highThreshold: Float](mpsimagecanny/highthreshold.md)
-- [var lowThreshold: Float](mpsimagecanny/lowthreshold.md)
-- [var sigma: Float](mpsimagecanny/sigma.md)
-- [var useFastMode: Bool](mpsimagecanny/usefastmode.md)
+- [var colorTransform: UnsafePointer<Float>](./mpsimagecanny/colortransform.md)
+- [var highThreshold: Float](./mpsimagecanny/highthreshold.md)
+- [var lowThreshold: Float](./mpsimagecanny/lowthreshold.md)
+- [var sigma: Float](./mpsimagecanny/sigma.md)
+- [var useFastMode: Bool](./mpsimagecanny/usefastmode.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

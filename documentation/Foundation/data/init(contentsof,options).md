@@ -1,7 +1,8 @@
 # init(contentsOf:options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates data by reading from the specified URL.
 
@@ -22,7 +23,7 @@ init(contentsOf url: URL, options: Data.ReadingOptions = []) throws
 
 #### Discussion
 
-> **Note**: An error in the Cocoa domain, if `url` cannot be read.
+> **Throws**: An error in the Cocoa domain, if `url` cannot be read.
 
 ## Parameters
 

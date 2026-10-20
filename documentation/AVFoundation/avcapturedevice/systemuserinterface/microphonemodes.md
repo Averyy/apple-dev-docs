@@ -1,7 +1,8 @@
 # AVCaptureDevice.SystemUserInterface.microphoneModes
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system user interface for selecting microphone modes.
 
@@ -18,9 +19,14 @@ The system user interface for selecting microphone modes.
 case microphoneModes
 ```
 
+```c
+AVCaptureSystemUserInterfaceMicrophoneModes
+```
+
 ## See Also
 
-- [AVCaptureDevice.SystemUserInterface.videoEffects](avcapturedevice/systemuserinterface/videoeffects.md)
+### User interfaces
+- [AVCaptureDevice.SystemUserInterface.videoEffects](./videoeffects.md)
   The system user interface for changing the state of video effects.
 
 

@@ -1,7 +1,8 @@
 # websiteDataStore
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to get and set the site’s cookies and to track the cached data objects.
 

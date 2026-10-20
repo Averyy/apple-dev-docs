@@ -1,7 +1,8 @@
 # HKCategoryValue.notApplicable
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A category value for types that don’t have a defined value.
 
@@ -17,6 +18,10 @@ A category value for types that don’t have a defined value.
 
 ```swift
 case notApplicable
+```
+
+```c
+HKCategoryValueNotApplicable
 ```
 
 

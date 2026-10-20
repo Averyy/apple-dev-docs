@@ -1,7 +1,8 @@
 # FramerProtocol
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Framer protocols allow custom framing and serialization of messages on a connection.
 
@@ -27,7 +28,7 @@ A Network Framer is an instance of a protocol in a connection’s protocol stack
 ## Topics
 
 ### Type Properties
-- [static var definition: NWProtocolFramer.Definition](framerprotocol/definition.md)
+- [static var definition: NWProtocolFramer.Definition](./framerprotocol/definition.md)
 
 
 ---

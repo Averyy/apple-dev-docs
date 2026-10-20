@@ -1,14 +1,15 @@
 # memory_mapped_core_debug
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t memory_mapped_core_debug;
 ```
 

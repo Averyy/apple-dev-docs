@@ -1,7 +1,8 @@
 # Gradient.Stop
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 One color stop in the gradient.
 
@@ -24,27 +25,28 @@ struct Stop
 ## Topics
 
 ### Creating a gradient stop
-- [init(color: Color, location: CGFloat)](gradient/stop/init(color:location:).md)
+- [init(color: Color, location: CGFloat)](./stop/init%28color,location%29.md)
   Creates a color stop with a color and location.
 ### Configuring a gradient stop
-- [var color: Color](gradient/stop/color.md)
+- [var color: Color](./stop/color.md)
   The color for the stop.
-- [var location: CGFloat](gradient/stop/location.md)
+- [var location: CGFloat](./stop/location.md)
   The parametric location of the stop.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(stops: [Gradient.Stop])](gradient/init(stops:).md)
+### Creating a gradient from stops
+- [init(stops: [Gradient.Stop])](./init%28stops%29.md)
   Creates a gradient from an array of color stops.
-- [var stops: [Gradient.Stop]](gradient/stops.md)
+- [var stops: [Gradient.Stop]](./stops.md)
   The array of color stops.
 
 

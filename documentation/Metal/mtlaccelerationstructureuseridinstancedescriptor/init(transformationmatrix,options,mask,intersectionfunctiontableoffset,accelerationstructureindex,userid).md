@@ -1,7 +1,8 @@
 # init(transformationMatrix:options:mask:intersectionFunctionTableOffset:accelerationStructureIndex:userID:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new acceleration structure instance.
 
@@ -30,7 +31,8 @@ init(transformationMatrix: MTLPackedFloat4x3, options: MTLAccelerationStructureI
 
 ## See Also
 
-- [init()](mtlaccelerationstructureuseridinstancedescriptor/init.md)
+### Creating an instance descriptor
+- [init()](./init%28%29.md)
   Creates a default acceleration structure instance.
 
 

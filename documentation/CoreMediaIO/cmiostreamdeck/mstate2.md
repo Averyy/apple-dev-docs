@@ -1,7 +1,8 @@
 # mState2
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 var mState2: UInt32
+```
+
+```c
+UInt32 mState2;
 ```
 
 

@@ -1,7 +1,8 @@
 # mapTemplateDidBeginZoomGesture(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the zoom gesture started.
 
@@ -16,9 +17,13 @@ Tells the delegate that the zoom gesture started.
 optional func mapTemplateDidBeginZoomGesture(_ mapTemplate: CPMapTemplate)
 ```
 
+```objc
+- (void) mapTemplateDidBeginZoomGesture:(CPMapTemplate *) mapTemplate;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 
 
 ---

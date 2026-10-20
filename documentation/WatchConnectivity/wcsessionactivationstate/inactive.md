@@ -1,7 +1,8 @@
 # WCSessionActivationState.inactive
 
 **Framework**: Watch Connectivity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session was active but is transitioning to the deactivated state. The session’s delegate object may still receive data while in this state, but it is a programmer error to try to send data to the counterpart app.
 
@@ -18,11 +19,16 @@ The session was active but is transitioning to the deactivated state. The sessio
 case inactive
 ```
 
+```c
+WCSessionActivationStateInactive
+```
+
 ## See Also
 
-- [WCSessionActivationState.notActivated](wcsessionactivationstate/notactivated.md)
+### Constants
+- [WCSessionActivationState.notActivated](./notactivated.md)
   The session is not activated. When in this state, no communication occurs between the Watch app and iOS app. It is a programmer error to try to send data to the counterpart app while in this state.
-- [WCSessionActivationState.activated](wcsessionactivationstate/activated.md)
+- [WCSessionActivationState.activated](./activated.md)
   The session is active and the Watch app and iOS app may communicate with each other freely.
 
 

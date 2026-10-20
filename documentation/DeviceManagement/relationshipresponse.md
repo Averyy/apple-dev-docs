@@ -1,18 +1,19 @@
 # RelationshipResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object RelationshipResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object RelationshipResponse.Meta](relationshipresponse/meta-data.dictionary.md)
+- [object RelationshipResponse.Meta](./relationshipresponse/meta-data.dictionary.md)
 
 ## Properties
 
@@ -22,8 +23,9 @@ object RelationshipResponse
 
 ## See Also
 
-- [Fetch a apps resource's relationship](fetch-a-apps-resource's-relationship.md)
-- [Fetch a books resource's relationship](fetch-a-books-resource's-relationship.md)
+### Fetching relationships
+- [Fetch a apps resource's relationship](./fetch-a-apps-resources-relationship.md)
+- [Fetch a books resource's relationship](./fetch-a-books-resources-relationship.md)
 
 
 ---

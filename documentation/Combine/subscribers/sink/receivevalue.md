@@ -1,7 +1,8 @@
 # receiveValue
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute on receipt of a value.
 
@@ -22,7 +23,8 @@ final var receiveValue: (Input) -> Void { get }
 
 ## See Also
 
-- [var receiveCompletion: (Subscribers.Completion<Failure>) -> Void](subscribers/sink/receivecompletion.md)
+### Inspecting subscriber properties
+- [var receiveCompletion: (Subscribers.Completion<Failure>) -> Void](./receivecompletion.md)
   The closure to execute on completion.
 
 

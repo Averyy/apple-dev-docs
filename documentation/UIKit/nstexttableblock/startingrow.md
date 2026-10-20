@@ -1,7 +1,8 @@
 # startingRow
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -17,11 +18,16 @@
 var startingRow: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger startingRow;
+```
+
 ## See Also
 
-- [var rowSpan: Int](nstexttableblock/rowspan.md)
-- [var startingColumn: Int](nstexttableblock/startingcolumn.md)
-- [var columnSpan: Int](nstexttableblock/columnspan.md)
+### Accessing cell position
+- [var rowSpan: Int](./rowspan.md)
+- [var startingColumn: Int](./startingcolumn.md)
+- [var columnSpan: Int](./columnspan.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: XPC  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that represents a response to an incoming request.
@@ -12,7 +13,7 @@ A type that represents a response to an incoming request.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,9 +24,10 @@ associatedtype Output
 
 ## See Also
 
-- [func handleIncomingRequest(Self.Input) -> Self.Output?](xpcpeerhandler/handleincomingrequest(_:).md)
+### Receiving client messages
+- [func handleIncomingRequest(Self.Input) -> Self.Output?](./handleincomingrequest%28_%29.md)
   A closure that receives a message from a client and optionally provides a reply.
-- [associatedtype Input](xpcpeerhandler/input.md)
+- [associatedtype Input](./input.md)
   A type that represents a message from a client.
 
 

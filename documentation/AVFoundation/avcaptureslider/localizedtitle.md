@@ -1,7 +1,8 @@
 # localizedTitle
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized title that describes the control’s action.
 
@@ -18,9 +19,14 @@ A localized title that describes the control’s action.
 var localizedTitle: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * localizedTitle;
+```
+
 ## See Also
 
-- [var symbolName: String](avcaptureslider/symbolname.md)
+### Inspecting presentation attributes
+- [var symbolName: String](./symbolname.md)
   The name of the SF Symbol that represents this control.
 
 

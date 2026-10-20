@@ -1,7 +1,8 @@
 # Manipulable.InputDevice.Kind
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the kind of an input device.
 
@@ -17,23 +18,23 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [Manipulable.InputDevice.Kind.directPinch](manipulable/inputdevice/kind-swift.enum/directpinch.md)
+- [Manipulable.InputDevice.Kind.directPinch](./kind-swift.enum/directpinch.md)
   A pinching hand in close proximity to content.
-- [Manipulable.InputDevice.Kind.indirectPinch](manipulable/inputdevice/kind-swift.enum/indirectpinch.md)
+- [Manipulable.InputDevice.Kind.indirectPinch](./kind-swift.enum/indirectpinch.md)
   An indirectly targeted pinching hand.
-- [Manipulable.InputDevice.Kind.pointer](manipulable/inputdevice/kind-swift.enum/pointer.md)
+- [Manipulable.InputDevice.Kind.pointer](./kind-swift.enum/pointer.md)
   A click-based, indirect input device.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

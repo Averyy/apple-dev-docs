@@ -1,7 +1,8 @@
 # VisualFidelityData
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Visual fidelity data containing device fit and field of view verification.
 
@@ -17,33 +18,34 @@ struct VisualFidelityData
 ## Topics
 
 ### Operators
-- [static func == (VisualFidelityData, VisualFidelityData) -> Bool](visualfidelitydata/==(_:_:).md)
+- [static func == (VisualFidelityData, VisualFidelityData) -> Bool](./visualfidelitydata/eqeq%28_,_%29.md)
   Compares two visual fidelity data instances for equality.
 ### Instance Properties
-- [var description: String](visualfidelitydata/description.md)
+- [var description: String](./visualfidelitydata/description.md)
   A textual representation of this visual fidelity data.
-- [var deviceFitStatus: DeviceFitStatus](visualfidelitydata/devicefitstatus.md)
+- [var deviceFitStatus: DeviceFitStatus](./visualfidelitydata/devicefitstatus.md)
   The device fit validation status.
-- [var isFieldOfViewValid: Bool](visualfidelitydata/isfieldofviewvalid.md)
+- [var isFieldOfViewValid: Bool](./visualfidelitydata/isfieldofviewvalid.md)
   Indicates whether the field of view (FoV) is valid.
-- [var timestamp: TimeInterval](visualfidelitydata/timestamp.md)
+- [var timestamp: TimeInterval](./visualfidelitydata/timestamp.md)
   The timestamp when this validation data was captured.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VisualFidelityProvider](visualfidelityprovider.md)
+### Visual Fidelity
+- [class VisualFidelityProvider](./visualfidelityprovider.md)
   A data provider that delivers visual fidelity monitoring data.
-- [struct FieldOfViewAnchor](fieldofviewanchor.md)
+- [struct FieldOfViewAnchor](./fieldofviewanchor.md)
   An anchor representing a set of field of view (FoV) boundary polygon points in immersive space.
-- [enum DeviceFitStatus](devicefitstatus.md)
+- [enum DeviceFitStatus](./devicefitstatus.md)
   Device fit validation status indicating the user’s eye position relative to the optimal device fit range.
 
 

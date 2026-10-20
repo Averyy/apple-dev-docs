@@ -1,7 +1,8 @@
 # reportInterval
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of iterations the session completes before it reports its progress.
 
@@ -21,11 +22,12 @@ var reportInterval: Int
 
 ## See Also
 
-- [let sessionDirectory: URL?](mltrainingsessionparameters/sessiondirectory.md)
+### Configuring the session’s parameters
+- [let sessionDirectory: URL?](./sessiondirectory.md)
   The location in the file system where the session stores its progress.
-- [var checkpointInterval: Int](mltrainingsessionparameters/checkpointinterval.md)
+- [var checkpointInterval: Int](./checkpointinterval.md)
   The number of iterations the session completes before it saves a checkpoint.
-- [var iterations: Int](mltrainingsessionparameters/iterations.md)
+- [var iterations: Int](./iterations.md)
   The maximum number of iterations for the training session.
 
 

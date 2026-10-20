@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](mlcreateerror/description.md)
+- [var description: String](./description.md)
   A human-readable description of the error.
 
 

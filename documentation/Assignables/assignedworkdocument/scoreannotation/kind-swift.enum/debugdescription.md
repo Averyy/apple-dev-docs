@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance, suitable for debugging.
 
@@ -9,7 +10,7 @@ A textual representation of this instance, suitable for debugging.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

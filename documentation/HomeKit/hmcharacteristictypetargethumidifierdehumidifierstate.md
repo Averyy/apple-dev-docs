@@ -1,7 +1,8 @@
 # HMCharacteristicTypeTargetHumidifierDehumidifierState
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The state that a humidifier or dehumidifier accessory should try to achieve.
 
@@ -19,27 +20,32 @@ The state that a humidifier or dehumidifier accessory should try to achieve.
 let HMCharacteristicTypeTargetHumidifierDehumidifierState: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeTargetHumidifierDehumidifierState;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueTargetHumidifierDehumidifierState`](hmcharacteristicvaluetargethumidifierdehumidifierstate.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueTargetHumidifierDehumidifierState`](./hmcharacteristicvaluetargethumidifierdehumidifierstate.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueTargetHumidifierDehumidifierState](hmcharacteristicvaluetargethumidifierdehumidifierstate.md)
+- [enum HMCharacteristicValueTargetHumidifierDehumidifierState](./hmcharacteristicvaluetargethumidifierdehumidifierstate.md)
   Possible values for the target humidifier or dehumidifier state.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentRelativeHumidity: String](hmcharacteristictypecurrentrelativehumidity.md)
+### Humidity
+- [let HMCharacteristicTypeCurrentRelativeHumidity: String](./hmcharacteristictypecurrentrelativehumidity.md)
   The current relative humidity measured by the accessory.
-- [let HMCharacteristicTypeTargetRelativeHumidity: String](hmcharacteristictypetargetrelativehumidity.md)
+- [let HMCharacteristicTypeTargetRelativeHumidity: String](./hmcharacteristictypetargetrelativehumidity.md)
   The target relative humidity for the accessory to achieve.
-- [let HMCharacteristicTypeCurrentHumidifierDehumidifierState: String](hmcharacteristictypecurrenthumidifierdehumidifierstate.md)
+- [let HMCharacteristicTypeCurrentHumidifierDehumidifierState: String](./hmcharacteristictypecurrenthumidifierdehumidifierstate.md)
   The current state of a humidifier or dehumidifier accessory.
-- [let HMCharacteristicTypeHumidifierThreshold: String](hmcharacteristictypehumidifierthreshold.md)
+- [let HMCharacteristicTypeHumidifierThreshold: String](./hmcharacteristictypehumidifierthreshold.md)
   The humidity below which a humidifier should begin to work.
-- [let HMCharacteristicTypeDehumidifierThreshold: String](hmcharacteristictypedehumidifierthreshold.md)
+- [let HMCharacteristicTypeDehumidifierThreshold: String](./hmcharacteristictypedehumidifierthreshold.md)
   The humidity above which a dehumidifier should begin to work.
 
 

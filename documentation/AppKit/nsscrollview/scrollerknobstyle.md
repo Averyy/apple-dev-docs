@@ -1,7 +1,8 @@
 # scrollerKnobStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The knob style of scroll views that use the overlay scroller style.
 
@@ -14,15 +15,20 @@ The knob style of scroll views that use the overlay scroller style.
 var scrollerKnobStyle: NSScroller.KnobStyle { get set }
 ```
 
+```objc
+@property NSScrollerKnobStyle scrollerKnobStyle;
+```
+
 #### Discussion
 
-See [`NSScroller.KnobStyle`](nsscroller/knobstyle-swift.enum.md) for possible values.
+See [`NSScroller.KnobStyle`](../nsscroller/knobstyle-swift.enum.md) for possible values.
 
 Applicable only to scroll views that use overlay scrollers.
 
 ## See Also
 
-- [var scrollerStyle: NSScroller.Style](nsscrollview/scrollerstyle.md)
+### Scroller Style
+- [var scrollerStyle: NSScroller.Style](./scrollerstyle.md)
   The scroller style used by the scroll view.
 
 

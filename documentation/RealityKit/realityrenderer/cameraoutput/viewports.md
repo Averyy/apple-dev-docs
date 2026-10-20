@@ -1,7 +1,8 @@
 # viewports
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Viewports to use for rendering with a camera.
 

@@ -1,7 +1,8 @@
 # ModelContext.NotificationKey.insertedIdentifiers
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A set of values identifying the context’s inserted models.
 
@@ -23,15 +24,16 @@ case insertedIdentifiers
 
 ## See Also
 
-- [ModelContext.NotificationKey.deletedIdentifiers](modelcontext/notificationkey/deletedidentifiers.md)
+### Accessing notification keys
+- [ModelContext.NotificationKey.deletedIdentifiers](./deletedidentifiers.md)
   A set of values identifying the context’s deleted models.
-- [ModelContext.NotificationKey.invalidatedAllIdentifiers](modelcontext/notificationkey/invalidatedallidentifiers.md)
+- [ModelContext.NotificationKey.invalidatedAllIdentifiers](./invalidatedallidentifiers.md)
   A set of values identifying the context’s invalidated models.
-- [ModelContext.NotificationKey.updatedIdentifiers](modelcontext/notificationkey/updatedidentifiers.md)
+- [ModelContext.NotificationKey.updatedIdentifiers](./updatedidentifiers.md)
   A set of values identifying the context’s updated models.
-- [ModelContext.NotificationKey.queryGeneration](modelcontext/notificationkey/querygeneration.md)
+- [ModelContext.NotificationKey.queryGeneration](./querygeneration.md)
   A token that indicates which generation of the model store SwiftData is using.
-- [ModelContext.NotificationKey.historyTokens](modelcontext/notificationkey/historytokens.md)
+- [ModelContext.NotificationKey.historyTokens](./historytokens.md)
   A history token representing the persistent store state after the save.
 
 

@@ -1,7 +1,8 @@
 # UIMenuElement.State.mixed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating the menu element is in the “mixed” state.
 
@@ -18,15 +19,20 @@ A constant indicating the menu element is in the “mixed” state.
 case mixed
 ```
 
+```c
+UIMenuElementStateMixed
+```
+
 #### Discussion
 
-A [`UIMenuElement.State.mixed`](uimenuelement/state/mixed.md) state is one that’s neither “on” or “off”. The menu system displays a mixed-mark, such as a checkmark or hyphen, next to the menu element.
+A [`UIMenuElement.State.mixed`](./mixed.md) state is one that’s neither “on” or “off”. The menu system displays a mixed-mark, such as a checkmark or hyphen, next to the menu element.
 
 ## See Also
 
-- [UIMenuElement.State.off](uimenuelement/state/off.md)
+### States
+- [UIMenuElement.State.off](./off.md)
   A constant indicating the menu element is in the “off” state.
-- [UIMenuElement.State.on](uimenuelement/state/on.md)
+- [UIMenuElement.State.on](./on.md)
   A constant indicating the menu element is in the “on” state.
 
 

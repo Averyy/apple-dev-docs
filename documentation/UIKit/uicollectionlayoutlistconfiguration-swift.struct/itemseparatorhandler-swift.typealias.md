@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.ItemSeparatorHandler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that provides granular control over list separator appearance.
 
@@ -9,7 +10,7 @@ A closure that provides granular control over list separator appearance.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,18 +24,19 @@ The configuration to use for the separators at `indexPath`.
 
 ## Parameters
 
-- `indexPath`: The [`IndexPath`](https://developer.apple.com/documentation/foundation/indexpath) of the cell to configure separators for.
+- `indexPath`: The [`IndexPath`](../../Foundation/indexpath.md) of the cell to configure separators for.
 - `sectionSeparatorConfiguration`: The list section’s separator configuration for the cell at `indexPath`. This configuration contains the values for separator visibility and insets according to the current state of the item.
 
 ## See Also
 
-- [var showsSeparators: Bool](uicollectionlayoutlistconfiguration-swift.struct/showsseparators.md)
+### Configuring separators
+- [var showsSeparators: Bool](./showsseparators.md)
   A Boolean value that determines whether the list shows separators between cells.
-- [var separatorConfiguration: UIListSeparatorConfiguration](uicollectionlayoutlistconfiguration-swift.struct/separatorconfiguration.md)
+- [var separatorConfiguration: UIListSeparatorConfiguration](./separatorconfiguration.md)
   The section’s preferred configuration for list separators.
-- [struct UIListSeparatorConfiguration](uilistseparatorconfiguration-swift.struct.md)
+- [struct UIListSeparatorConfiguration](../uilistseparatorconfiguration-swift.struct.md)
   A configuration that controls the list separator appearance in a list section.
-- [var itemSeparatorHandler: UICollectionLayoutListConfiguration.ItemSeparatorHandler?](uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.property.md)
+- [var itemSeparatorHandler: UICollectionLayoutListConfiguration.ItemSeparatorHandler?](./itemseparatorhandler-swift.property.md)
   The closure that provides granular control over the list separator appearance of each item.
 
 

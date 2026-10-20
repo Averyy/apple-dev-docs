@@ -1,7 +1,8 @@
 # SchedulerTimeIntervalConvertible
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides a scheduler with an expression for relative time.
 
@@ -23,27 +24,28 @@ protocol SchedulerTimeIntervalConvertible
 ## Topics
 
 ### Converting seconds to scheduler time intervals
-- [static func microseconds(Int) -> Self](schedulertimeintervalconvertible/microseconds(_:).md)
+- [static func microseconds(Int) -> Self](./schedulertimeintervalconvertible/microseconds%28_%29.md)
   Converts the specified number of microseconds into an instance of this scheduler time type.
-- [static func milliseconds(Int) -> Self](schedulertimeintervalconvertible/milliseconds(_:).md)
+- [static func milliseconds(Int) -> Self](./schedulertimeintervalconvertible/milliseconds%28_%29.md)
   Converts the specified number of milliseconds into an instance of this scheduler time type.
-- [static func nanoseconds(Int) -> Self](schedulertimeintervalconvertible/nanoseconds(_:).md)
+- [static func nanoseconds(Int) -> Self](./schedulertimeintervalconvertible/nanoseconds%28_%29.md)
   Converts the specified number of nanoseconds into an instance of this scheduler time type.
-- [static func seconds(Double) -> Self](schedulertimeintervalconvertible/seconds(_:)-2cv8t.md)
+- [static func seconds(Double) -> Self](./schedulertimeintervalconvertible/seconds%28_%29-2cv8t.md)
   Converts the specified number of seconds, as a floating-point value, into an instance of this scheduler time type.
-- [static func seconds(Int) -> Self](schedulertimeintervalconvertible/seconds(_:)-3g8ay.md)
+- [static func seconds(Int) -> Self](./schedulertimeintervalconvertible/seconds%28_%29-3g8ay.md)
   Converts the specified number of seconds into an instance of this scheduler time type.
 
 ## Relationships
 
 ### Conforming Types
-- [ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride.md)
+- [ImmediateScheduler.SchedulerTimeType.Stride](./immediatescheduler/schedulertimetype/stride.md)
 
 ## See Also
 
-- [protocol Scheduler](scheduler.md)
+### Schedulers
+- [protocol Scheduler](./scheduler.md)
   A protocol that defines when and how to execute a closure.
-- [struct ImmediateScheduler](immediatescheduler.md)
+- [struct ImmediateScheduler](./immediatescheduler.md)
   A scheduler for performing synchronous actions.
 
 

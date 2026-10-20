@@ -1,6 +1,7 @@
 # DNS proxy provider
 
-**Framework**: Network Extension
+**Framework**: Network Extension  
+**Role**: API Collection
 
 Create an on-device DNS proxy using a custom protocol.
 
@@ -12,34 +13,35 @@ A DNS proxy provider is an app extension that implements DNS proxying. You shoul
 - Talk to a DNS proxying service using DNS over HTTPS (DoH) or DNS over TLS (DoT)
 - Implement a completely custom DNS proxying protocol
 
-For detailed information about DNS proxy provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment).
+For detailed information about DNS proxy provider deployment options, see [TN3134: Network Extension provider deployment](../Technotes/tn3134-network-extension-provider-deployment.md).
 
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../BundleResources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### Provider
-- [class NEDNSProxyProvider](nednsproxyprovider.md)
+- [class NEDNSProxyProvider](./nednsproxyprovider.md)
   The principal class for a DNS proxy provider app extension.
-- [class NEDNSSettings](nednssettings.md)
+- [class NEDNSSettings](./nednssettings.md)
   The DNS resolver settings of a network tunnel or a system-wide configuration.
 ### Handling flows
-- [class NEAppProxyTCPFlow](neappproxytcpflow.md)
+- [class NEAppProxyTCPFlow](./neappproxytcpflow.md)
   An object for reading and writing data to and from a TCP connection being proxied by the provider.
-- [class NEAppProxyUDPFlow](neappproxyudpflow.md)
+- [class NEAppProxyUDPFlow](./neappproxyudpflow.md)
   An object for reading and writing data to and from a UDP conversation being proxied by the provider.
-- [class NEAppProxyFlow](neappproxyflow.md)
+- [class NEAppProxyFlow](./neappproxyflow.md)
   An abstract base class shared by NEAppProxyTCPFlow and NEAppProxyUDPFlow.
 ### Configuration
-- [class NEDNSProxyManager](nednsproxymanager.md)
+- [class NEDNSProxyManager](./nednsproxymanager.md)
   An object to create and manage an DNS proxy provider’s configuration.
-- [class NEDNSProxyProviderProtocol](nednsproxyproviderprotocol.md)
+- [class NEDNSProxyProviderProtocol](./nednsproxyproviderprotocol.md)
   Configuration parameters for a DNS proxy.
 
 ## See Also
 
-- [DNS settings](dns-settings.md)
+### DNS configurations
+- [DNS settings](./dns-settings.md)
   Create and manage a system-wide DNS configuration that uses built-in encrypted DNS protocols.
 
 

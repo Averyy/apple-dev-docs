@@ -1,7 +1,8 @@
 # init(mediaType:outputSettings:sourceFormatHint:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an input that appends sample buffers of the specified type and format hint to the output file.
 
@@ -19,6 +20,10 @@ Creates an input that appends sample buffers of the specified type and format hi
 init(mediaType: AVMediaType, outputSettings: [String : Any]?, sourceFormatHint: CMFormatDescription?)
 ```
 
+```objc
+- (instancetype) initWithMediaType:(AVMediaType) mediaType outputSettings:(NSDictionary<NSString *,id> *) outputSettings sourceFormatHint:(CMFormatDescriptionRef) sourceFormatHint;
+```
+
 #### Discussion
 
 To guarantee successful file writing, ensure that sample buffers you append are of the specified format.
@@ -26,12 +31,15 @@ To guarantee successful file writing, ensure that sample buffers you append are 
 ## Parameters
 
 - `mediaType`: The type of media that an input accepts.
-- `outputSettings`: The settings to use for encoding the media you append to the output. Create an output settings dictionary manually, or use [`AVOutputSettingsAssistant`](avoutputsettingsassistant.md) to create preset-based settings.
-- `sourceFormatHint`: A hint about the format of the media data to append. The input uses the source format hint to fill in missing output settings. If you specify a hint, you only need to specify [`AVFormatIDKey`](https://developer.apple.com/documentation/avfaudio/avformatidkey) for the audio output settings, and [`AVVideoCodecKey`](avvideocodeckey.md) is the only required key for video output settings. The system raises an error if the format description isn’t valid for the indicated media type.
+- `outputSettings`: The settings to use for encoding the media you append to the output. Create an output settings dictionary manually, or use [`AVOutputSettingsAssistant`](../avoutputsettingsassistant.md) to create preset-based settings.
+- `sourceFormatHint`: A hint about the format of the media data to append. The input uses the source format hint to fill in missing output settings. If you specify a hint, you only need to specify [`AVFormatIDKey`](../../AVFAudio/avformatidkey.md) for the audio output settings, and [`AVVideoCodecKey`](../avvideocodeckey.md) is the only required key for video output settings.
+
+  The system raises an error if the format description isn’t valid for the indicated media type.
 
 ## See Also
 
-- [convenience init(mediaType: AVMediaType, outputSettings: [String : Any]?)](avassetwriterinput/init(mediatype:outputsettings:).md)
+### Creating an input
+- [convenience init(mediaType: AVMediaType, outputSettings: [String : Any]?)](./init%28mediatype,outputsettings%29.md)
   Creates an input to append sample buffers of the specified type to the output file.
 
 

@@ -1,7 +1,8 @@
 # UITextInlinePredictionType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify the behavior of inline text predictions for a text-entry area.
 
@@ -18,47 +19,52 @@ Constants that identify the behavior of inline text predictions for a text-entry
 enum UITextInlinePredictionType
 ```
 
+```c
+enum UITextInlinePredictionType : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`inlinePredictionType`](uitextinputtraits/inlinepredictiontype.md) property.
+Use these constants with the [`inlinePredictionType`](./uitextinputtraits/inlinepredictiontype.md) property.
 
 ## Topics
 
 ### Constants
-- [UITextInlinePredictionType.default](uitextinlinepredictiontype/default.md)
+- [UITextInlinePredictionType.default](./uitextinlinepredictiontype/default.md)
   A constant that determines the behavior of inline text predictions according to the context.
-- [UITextInlinePredictionType.no](uitextinlinepredictiontype/no.md)
+- [UITextInlinePredictionType.no](./uitextinlinepredictiontype/no.md)
   A constant that turns off inline text predictions.
-- [UITextInlinePredictionType.yes](uitextinlinepredictiontype/yes.md)
+- [UITextInlinePredictionType.yes](./uitextinlinepredictiontype/yes.md)
   A constant that turns on inline text predictions.
 ### Initializers
-- [init?(rawValue: Int)](uitextinlinepredictiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uitextinlinepredictiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var autocapitalizationType: UITextAutocapitalizationType](uitextinputtraits/autocapitalizationtype.md)
+### Managing spelling and autocorrection
+- [var autocapitalizationType: UITextAutocapitalizationType](./uitextinputtraits/autocapitalizationtype.md)
   The autocapitalization style for the text object.
-- [enum UITextAutocapitalizationType](uitextautocapitalizationtype.md)
+- [enum UITextAutocapitalizationType](./uitextautocapitalizationtype.md)
   The autocapitalization behavior of a text-based view.
-- [var autocorrectionType: UITextAutocorrectionType](uitextinputtraits/autocorrectiontype.md)
+- [var autocorrectionType: UITextAutocorrectionType](./uitextinputtraits/autocorrectiontype.md)
   The autocorrection style for the text object.
-- [enum UITextAutocorrectionType](uitextautocorrectiontype.md)
+- [enum UITextAutocorrectionType](./uitextautocorrectiontype.md)
   The autocorrection behavior of a text-based view.
-- [var spellCheckingType: UITextSpellCheckingType](uitextinputtraits/spellcheckingtype.md)
+- [var spellCheckingType: UITextSpellCheckingType](./uitextinputtraits/spellcheckingtype.md)
   The spell-checking style for the text object.
-- [enum UITextSpellCheckingType](uitextspellcheckingtype.md)
+- [enum UITextSpellCheckingType](./uitextspellcheckingtype.md)
   The spell-checking behavior of a text-based view.
-- [var inlinePredictionType: UITextInlinePredictionType](uitextinputtraits/inlinepredictiontype.md)
+- [var inlinePredictionType: UITextInlinePredictionType](./uitextinputtraits/inlinepredictiontype.md)
   The behavior of inline text predictions for a text-entry area.
 
 

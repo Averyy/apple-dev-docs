@@ -1,7 +1,8 @@
 # widgetAccentable(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the view and all of its subviews to the accented group.
 

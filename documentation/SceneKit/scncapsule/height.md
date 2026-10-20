@@ -1,23 +1,28 @@
 # height
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the capsule along its y-axis. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var height: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat height;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The capsule is centered in its local coordinate system. For example, if a capsul
 
 If the height is zero or less, or less than twice the cap radius, the geometry is empty. The default height is `2.0`.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var capRadius: CGFloat](scncapsule/capradius.md)
+### Adjusting a Capsule’s Dimensions
+- [var capRadius: CGFloat](./capradius.md)
   The radius both of the capsule’s circular center cross section and of its hemispherical ends. Animatable.
 
 

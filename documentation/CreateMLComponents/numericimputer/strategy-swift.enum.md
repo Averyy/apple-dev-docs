@@ -1,7 +1,8 @@
 # NumericImputer.Strategy
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An imputation strategy.
 
@@ -23,24 +24,25 @@ enum Strategy
 ## Topics
 
 ### Imputer strategies
-- [NumericImputer.Strategy.constant(_:)](numericimputer/strategy-swift.enum/constant(_:).md)
+- [NumericImputer.Strategy.constant(_:)](./strategy-swift.enum/constant%28_%29.md)
   Imputation strategy that replaces missing elements with a constant.
-- [NumericImputer.Strategy.mean](numericimputer/strategy-swift.enum/mean.md)
+- [NumericImputer.Strategy.mean](./strategy-swift.enum/mean.md)
   Imputation strategy that replaces missing elements with the mean.
-- [NumericImputer.Strategy.median](numericimputer/strategy-swift.enum/median.md)
+- [NumericImputer.Strategy.median](./strategy-swift.enum/median.md)
   Imputation strategy that replaces missing elements with the median.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func fitted<S>(to: S, eventHandler: EventHandler?) -> NumericImputer<Element>.Transformer](numericimputer/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted<S>(to: S, eventHandler: EventHandler?) -> NumericImputer<Element>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a numeric imputer to a sequence of elements.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

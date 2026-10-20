@@ -1,11 +1,12 @@
 # MTRThreadOperationalDataset Implementations
 
-**Framework**: Matter
+**Framework**: Matter  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(networkName: String, extendedPANID: Data, masterKey: Data, PSKc: Data, channel: UInt16, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channel:panid:)-4hjuw.md)
+- [init?(networkName: String, extendedPANID: Data, masterKey: Data, PSKc: Data, channel: UInt16, panID: Data)](./init%28networkname,extendedpanid,masterkey,pskc,channel,panid%29-4hjuw.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # sendsCommonMediaClientDataAsHTTPHeaders
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to enable attaching Common Media Client Data as HTTP request headers.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether to enable attaching Common Media Client D
 var sendsCommonMediaClientDataAsHTTPHeaders: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL sendsCommonMediaClientDataAsHTTPHeaders;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 
 ---

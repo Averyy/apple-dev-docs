@@ -1,7 +1,8 @@
 # medication
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the specific medication a person is tracking.
 
@@ -18,6 +19,10 @@ A reference to the specific medication a person is tracking.
 ```swift
 @NSCopying
 var medication: HKMedicationConcept { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) HKMedicationConcept * medication;
 ```
 
 #### Discussion

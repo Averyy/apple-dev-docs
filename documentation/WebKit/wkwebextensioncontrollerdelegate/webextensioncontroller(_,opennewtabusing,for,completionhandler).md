@@ -1,7 +1,8 @@
 # webExtensionController(_:openNewTabUsing:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests a new tab to be opened.
 
@@ -15,7 +16,15 @@ Called when an extension context requests a new tab to be opened.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, openNewTabUsing configuration: WKWebExtension.TabConfiguration, for extensionContext: WKWebExtensionContext, completionHandler: @escaping ((any WKWebExtensionTab)?, (any Error)?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, openNewTabUsing configuration: WKWebExtension.TabConfiguration, for extensionContext: WKWebExtensionContext) async throws -> (any WKWebExtensionTab)?
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller openNewTabUsingConfiguration:(WKWebExtensionTabConfiguration *) configuration forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(id<WKWebExtensionTab>newTab, NSError *error)) completionHandler;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # rpcServerTerminated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Return from RPC indicating the target server was terminated before it successfully replied.
 

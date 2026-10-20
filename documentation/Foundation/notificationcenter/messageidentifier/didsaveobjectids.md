@@ -1,7 +1,8 @@
 # didSaveObjectIDs
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static var didSaveObjectIDs: NotificationCenter.BaseMessageIdentifier<NSManagedObjectContext.DidSaveObjectIDsMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSManagedObjectContext.DidSaveObjectIDsMessage>`.
 
 
 ---

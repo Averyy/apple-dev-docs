@@ -1,7 +1,8 @@
 # ornament(visibility:attachmentAnchor:contentAlignment:ornament:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents an ornament.
 
@@ -35,7 +36,8 @@ Text("A view with an ornament")
 
 ## See Also
 
-- [struct OrnamentAttachmentAnchor](ornamentattachmentanchor.md)
+### Creating an ornament
+- [struct OrnamentAttachmentAnchor](../ornamentattachmentanchor.md)
   An attachment anchor for an ornament.
 
 

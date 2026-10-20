@@ -1,7 +1,8 @@
 # AsyncUnicodeScalarSequence.Element
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of elements produced by this asynchronous sequence.
 
@@ -22,7 +23,7 @@ typealias Element = UnicodeScalar
 
 #### Discussion
 
-[`AsyncUnicodeScalarSequence`](asyncunicodescalarsequence.md) produces elements of type [`UnicodeScalar`](https://developer.apple.com/documentation/swift/unicodescalar).
+[`AsyncUnicodeScalarSequence`](../asyncunicodescalarsequence.md) produces elements of type [`UnicodeScalar`](../../Swift/unicodescalar.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(uuidBytes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new UUID with the given bytes.
 
@@ -20,6 +21,10 @@ Initializes a new UUID with the given bytes.
 convenience init(uuidBytes bytes: UnsafePointer<UInt8>?)
 ```
 
+```objc
+- (instancetype) initWithUUIDBytes:(const uuid_t) bytes;
+```
+
 #### Return Value
 
 A new UUID object.
@@ -30,9 +35,10 @@ A new UUID object.
 
 ## See Also
 
-- [init()](nsuuid/init.md)
+### Creating UUIDs
+- [init()](./init%28%29.md)
   Initializes a new UUID with RFC 4122 version 4 random bytes.
-- [convenience init?(uuidString: String)](nsuuid/init(uuidstring:)-8t9n3.md)
+- [convenience init?(uuidString: String)](./init%28uuidstring%29-8t9n3.md)
   Initializes a new UUID with the formatted string.
 
 

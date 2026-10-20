@@ -1,7 +1,8 @@
 # distanceFromHome
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location’s distance from the home-category location.
 
@@ -16,15 +17,20 @@ The location’s distance from the home-category location.
 var distanceFromHome: CLLocationDistance { get }
 ```
 
+```objc
+@property (readonly) CLLocationDistance distanceFromHome;
+```
+
 ## See Also
 
-- [var arrivalDateInterval: DateInterval](srvisit/arrivaldateinterval.md)
+### Accessing Visit Information
+- [var arrivalDateInterval: DateInterval](./arrivaldateinterval.md)
   A range of time within which the user arrives at a location of interest.
-- [var departureDateInterval: DateInterval](srvisit/departuredateinterval.md)
+- [var departureDateInterval: DateInterval](./departuredateinterval.md)
   A range of time within which the user departs from a location of interest.
-- [var locationCategory: SRVisit.LocationCategory](srvisit/locationcategory-swift.property.md)
+- [var locationCategory: SRVisit.LocationCategory](./locationcategory-swift.property.md)
   The location’s type.
-- [SRVisit.LocationCategory](srvisit/locationcategory-swift.enum.md)
+- [SRVisit.LocationCategory](./locationcategory-swift.enum.md)
   Types of locations.
 
 

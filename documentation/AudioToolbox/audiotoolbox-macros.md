@@ -1,11 +1,12 @@
 # Macros
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [var AUDIO_UNIT_VERSION: Int32](audio_unit_version.md)
+- [var AUDIO_UNIT_VERSION: Int32](./audio_unit_version.md)
 
 
 ---

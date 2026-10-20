@@ -1,7 +1,8 @@
 # MTRClusterStateCacheContainer
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,22 +19,26 @@
 class MTRClusterStateCacheContainer
 ```
 
+```objc
+@interface MTRClusterStateCacheContainer : NSObject
+```
+
 ## Topics
 
 ### Instance Methods
-- [func readAttributes(withEndpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrclusterstatecachecontainer/readattributes(withendpointid:clusterid:attributeid:queue:completion:).md)
+- [func readAttributes(withEndpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrclusterstatecachecontainer/readattributes%28withendpointid,clusterid,attributeid,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

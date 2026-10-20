@@ -1,7 +1,8 @@
 # performOperation
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Perform an operation on the memory descriptor's memory.
 
@@ -10,11 +11,11 @@ Perform an operation on the memory descriptor's memory.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn performOperation(IOOptionBits options, IOByteCount offset, IOByteCount length);
 ```
 
-#### Return_value
+#### Return Value
 
 An IOReturn code.
 
@@ -24,15 +25,20 @@ This method performs some operation on a range of the memory descriptor's memory
 
 ## Parameters
 
-- `options`: The operation to perform on the memory: kIOMemoryIncoherentIOFlush - pass this option to store to memory and flush any data in the processor cache for the memory range, with synchronization to ensure the data has passed through all levels of processor cache. It may not be supported on all architectures. This type of flush may be used for non-coherent I/O such as AGP - it is NOT required for PCI coherent operations. The memory descriptor must have been previously prepared. kIOMemoryIncoherentIOStore - pass this option to store to memory any data in the processor cache for the memory range, with synchronization to ensure the data has passed through all levels of processor cache. It may not be supported on all architectures. This type of flush may be used for non-coherent I/O such as AGP - it is NOT required for PCI coherent operations. The memory descriptor must have been previously prepared.
+- `options`: The operation to perform on the memory:
+
+  kIOMemoryIncoherentIOFlush - pass this option to store to memory and flush any data in the processor cache for the memory range, with synchronization to ensure the data has passed through all levels of processor cache. It may not be supported on all architectures. This type of flush may be used for non-coherent I/O such as AGP - it is NOT required for PCI coherent operations. The memory descriptor must have been previously prepared.
+
+  kIOMemoryIncoherentIOStore - pass this option to store to memory any data in the processor cache for the memory range, with synchronization to ensure the data has passed through all levels of processor cache. It may not be supported on all architectures. This type of flush may be used for non-coherent I/O such as AGP - it is NOT required for PCI coherent operations. The memory descriptor must have been previously prepared.
 - `offset`: A byte offset into the memory descriptor's memory.
 - `length`: The length of the data range.
 
 ## See Also
 
-- [performOperation](iomemorydescriptor/1812840-performoperation.md)
+### Operating on the Memory
+- [performOperation](./api-1812840-performoperation.md)
   Perform an operation on the memory descriptor's memory.
-- [- dmaCommandOperation](iomemorydescriptor/1442040-dmacommandoperation.md)
+- [- dmaCommandOperation](./api-1442040-dmacommandoperation.md)
 
 
 ---

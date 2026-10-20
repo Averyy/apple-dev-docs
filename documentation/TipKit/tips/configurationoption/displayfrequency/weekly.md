@@ -1,7 +1,8 @@
 # weekly
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A weekly display frequency.
 

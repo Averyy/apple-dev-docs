@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the column slice.
 
@@ -22,9 +23,10 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var description: String](discontiguouscolumnslice/description.md)
+### Describing a Column Slice
+- [var description: String](./description.md)
   A text representation of the column slice.
-- [var debugDescription: String](discontiguouscolumnslice/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the column slice suitable for debugging.
 
 

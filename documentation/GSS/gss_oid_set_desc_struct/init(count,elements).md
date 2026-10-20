@@ -1,7 +1,8 @@
 # init(count:elements:)
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new object identifier set with the given identifiers.
 
@@ -25,7 +26,8 @@ init(count: Int, elements: gss_OID!)
 
 ## See Also
 
-- [init()](gss_oid_set_desc_struct/init.md)
+### Initialization
+- [init()](./init%28%29.md)
   Initialize a new, empty object identifier set.
 
 

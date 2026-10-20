@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBBillboardAltModeConfigSuccess](1643529-anonymous/kusbbillboardaltmodeconfigsuccess.md)
-- [kUSBBillboardConfigNotAttempted](1643529-anonymous/kusbbillboardconfignotattempted.md)
-- [kUSBBillboardConfigUnsuccessful](1643529-anonymous/kusbbillboardconfigunsuccessful.md)
-- [kUSBBillboardUnspecifiedError](1643529-anonymous/kusbbillboardunspecifiederror.md)
+- [kUSBBillboardAltModeConfigSuccess](./api-1643529-anonymous/kusbbillboardaltmodeconfigsuccess.md)
+- [kUSBBillboardConfigNotAttempted](./api-1643529-anonymous/kusbbillboardconfignotattempted.md)
+- [kUSBBillboardConfigUnsuccessful](./api-1643529-anonymous/kusbbillboardconfigunsuccessful.md)
+- [kUSBBillboardUnspecifiedError](./api-1643529-anonymous/kusbbillboardunspecifiederror.md)
 
 
 ---

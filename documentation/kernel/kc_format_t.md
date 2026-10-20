@@ -1,14 +1,15 @@
 # kc_format_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum kc_format : unsigned int {
     ...
 } kc_format_t;
@@ -17,11 +18,11 @@ typedef enum kc_format : unsigned int {
 ## Topics
 
 ### Constants
-- [KCFormatDynamic](kc_format_t/kcformatdynamic.md)
-- [KCFormatFileset](kc_format_t/kcformatfileset.md)
-- [KCFormatKCGEN](kc_format_t/kcformatkcgen.md)
-- [KCFormatStatic](kc_format_t/kcformatstatic.md)
-- [KCFormatUnknown](kc_format_t/kcformatunknown.md)
+- [KCFormatDynamic](./kc_format_t/kcformatdynamic.md)
+- [KCFormatFileset](./kc_format_t/kcformatfileset.md)
+- [KCFormatKCGEN](./kc_format_t/kcformatkcgen.md)
+- [KCFormatStatic](./kc_format_t/kcformatstatic.md)
+- [KCFormatUnknown](./kc_format_t/kcformatunknown.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MPSImageEDLines
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.4+
@@ -17,37 +18,41 @@
 class MPSImageEDLines
 ```
 
+```objc
+@interface MPSImageEDLines : MPSKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageedlines/init(coder:device:).md)
-- [init(device: any MTLDevice, gaussianSigma: Float, minLineLength: UInt16, maxLines: Int, detailRatio: UInt16, gradientThreshold: Float, lineErrorThreshold: Float, mergeLocalityThreshold: Float)](mpsimageedlines/init(device:gaussiansigma:minlinelength:maxlines:detailratio:gradientthreshold:lineerrorthreshold:mergelocalitythreshold:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimageedlines/init%28coder,device%29.md)
+- [init(device: any MTLDevice, gaussianSigma: Float, minLineLength: UInt16, maxLines: Int, detailRatio: UInt16, gradientThreshold: Float, lineErrorThreshold: Float, mergeLocalityThreshold: Float)](./mpsimageedlines/init%28device,gaussiansigma,minlinelength,maxlines,detailratio,gradientthreshold,lineerrorthreshold,mergelocalitythreshold%29.md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimageedlines/cliprectsource.md)
-- [var detailRatio: UInt16](mpsimageedlines/detailratio.md)
-- [var gaussianSigma: Float](mpsimageedlines/gaussiansigma.md)
-- [var gradientThreshold: Float](mpsimageedlines/gradientthreshold.md)
-- [var lineErrorThreshold: Float](mpsimageedlines/lineerrorthreshold.md)
-- [var maxLines: Int](mpsimageedlines/maxlines.md)
-- [var mergeLocalityThreshold: Float](mpsimageedlines/mergelocalitythreshold.md)
-- [var minLineLength: UInt16](mpsimageedlines/minlinelength.md)
+- [var clipRectSource: MTLRegion](./mpsimageedlines/cliprectsource.md)
+- [var detailRatio: UInt16](./mpsimageedlines/detailratio.md)
+- [var gaussianSigma: Float](./mpsimageedlines/gaussiansigma.md)
+- [var gradientThreshold: Float](./mpsimageedlines/gradientthreshold.md)
+- [var lineErrorThreshold: Float](./mpsimageedlines/lineerrorthreshold.md)
+- [var maxLines: Int](./mpsimageedlines/maxlines.md)
+- [var mergeLocalityThreshold: Float](./mpsimageedlines/mergelocalitythreshold.md)
+- [var minLineLength: UInt16](./mpsimageedlines/minlinelength.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: (any MTLTexture)?, endpointBuffer: any MTLBuffer, endpointOffset: Int)](mpsimageedlines/encode(to:sourcetexture:destinationtexture:endpointbuffer:endpointoffset:).md)
+- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: (any MTLTexture)?, endpointBuffer: any MTLBuffer, endpointOffset: Int)](./mpsimageedlines/encode%28to,sourcetexture,destinationtexture,endpointbuffer,endpointoffset%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

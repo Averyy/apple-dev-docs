@@ -1,16 +1,19 @@
 # promotionalOffer(offerID:signature:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
-- macOS 14.4+
-- tvOS 17.4+
-- visionOS 1.1+
-- watchOS 10.4+
+- iOS 17.4+ - Deprecated in 26.0
+- iPadOS 17.4+ - Deprecated in 26.0
+- Mac Catalyst 17.4+ - Deprecated in 26.0
+- macOS 14.4+ - Deprecated in 26.0
+- tvOS 17.4+ - Deprecated in 26.0
+- visionOS 1.1+ - Deprecated in 26.0
+- watchOS 10.4+ - Deprecated in 26.0
+
+> **Deprecated**: Sign promotional offers with JWS and use promotionalOffer(_:compactJWS:) instead
 
 ## Declaration
 
@@ -20,13 +23,14 @@ static func promotionalOffer(offerID: String, signature: Product.SubscriptionOff
 
 ## See Also
 
-- [static func appAccountToken(UUID) -> Product.PurchaseOption](product/purchaseoption/appaccounttoken(_:).md)
+### Setting the purchase options
+- [static func appAccountToken(UUID) -> Product.PurchaseOption](./appaccounttoken%28_%29.md)
   Sets a UUID to associate the purchase with an account in your system.
-- [static func winBackOffer(Product.SubscriptionOffer) -> Product.PurchaseOption](product/purchaseoption/winbackoffer(_:).md)
+- [static func winBackOffer(Product.SubscriptionOffer) -> Product.PurchaseOption](./winbackoffer%28_%29.md)
   Sets a win-back offer to apply to the purchase.
-- [static func promotionalOffer(offerID: String, keyID: String, nonce: UUID, signature: Data, timestamp: Int) -> Product.PurchaseOption](product/purchaseoption/promotionaloffer(offerid:keyid:nonce:signature:timestamp:).md)
+- [static func promotionalOffer(offerID: String, keyID: String, nonce: UUID, signature: Data, timestamp: Int) -> Product.PurchaseOption](./promotionaloffer%28offerid,keyid,nonce,signature,timestamp%29.md)
   Applies a promotional offer for an auto-renewable subscription.
-- [static func quantity(Int) -> Product.PurchaseOption](product/purchaseoption/quantity(_:).md)
+- [static func quantity(Int) -> Product.PurchaseOption](./quantity%28_%29.md)
   Indicates the quantity of items the customer is purchasing.
 
 

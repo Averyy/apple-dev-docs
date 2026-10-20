@@ -1,18 +1,19 @@
 # SPARSE_UPPER_SYMMETRIC
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A symmetric matrix with values derived from the upper triangle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A symmetric matrix with values derived from the upper triangle.
 var SPARSE_UPPER_SYMMETRIC: sparse_matrix_property { get }
 ```
 
+```c
+SPARSE_UPPER_SYMMETRIC
+```
+
 ## See Also
 
-- [var SPARSE_UPPER_TRIANGULAR: sparse_matrix_property](sparse_upper_triangular.md)
+### Constants
+- [var SPARSE_UPPER_TRIANGULAR: sparse_matrix_property](./sparse_upper_triangular.md)
   An upper triangular matrix.
-- [var SPARSE_LOWER_TRIANGULAR: sparse_matrix_property](sparse_lower_triangular.md)
+- [var SPARSE_LOWER_TRIANGULAR: sparse_matrix_property](./sparse_lower_triangular.md)
   A lower triangular matrix.
-- [var SPARSE_LOWER_SYMMETRIC: sparse_matrix_property](sparse_lower_symmetric.md)
+- [var SPARSE_LOWER_SYMMETRIC: sparse_matrix_property](./sparse_lower_symmetric.md)
   A symmetric matrix with values derived from the lower triangle.
 
 

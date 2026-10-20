@@ -1,7 +1,8 @@
 # silu()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Sigmoid Linear Unit (SiLU) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Sigmoid Linear Unit (SiLU) activation operation to the current graph.
 ```swift
 func silu() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

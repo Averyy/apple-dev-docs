@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,17 +18,17 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkMaxStreams](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkmaxstreams.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkMaxStreamsPhase](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkmaxstreamsphase.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkReserved](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkreserved.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkReservedPhase](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkreservedphase.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocMult](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocmult.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocMultPhase](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocmultphase.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocReserved](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocreserved.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocReservedPhase](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocreservedphase.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorMaxBurst](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptormaxburst.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorMaxBurstPhase](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptormaxburstphase.md)
-- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorSSPIsocCompanion](3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorsspisoccompanion.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkMaxStreams](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkmaxstreams.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkMaxStreamsPhase](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkmaxstreamsphase.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkReserved](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkreserved.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorBulkReservedPhase](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorbulkreservedphase.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocMult](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocmult.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocMultPhase](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocmultphase.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocReserved](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocreserved.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorIsocReservedPhase](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorisocreservedphase.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorMaxBurst](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptormaxburst.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorMaxBurstPhase](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptormaxburstphase.md)
+- [StandardUSB::kSuperSpeedEndpointCompanionDescriptorSSPIsocCompanion](./api-3793789-anonymous/standardusb_ksuperspeedendpointcompaniondescriptorsspisoccompanion.md)
 
 
 ---

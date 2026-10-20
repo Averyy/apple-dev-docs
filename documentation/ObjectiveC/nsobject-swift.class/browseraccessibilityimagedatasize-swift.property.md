@@ -1,7 +1,8 @@
 # browserAccessibilityImageDataSize
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the native pixel dimensions of the image represented by this element, or `CGSize.zero` if this element does not represent an image.
 

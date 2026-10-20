@@ -1,25 +1,26 @@
 # InApps.Relationships.InAppsAppRelationship.Apps
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes](./apps/attributes-data.dictionary.md)
 
 ## Properties
 
 - `attributes` (InApps.Relationships.InAppsAppRelationship.Apps.Attributes)
 - `href` (string) *(required)*
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `apps`
 
 
 ---

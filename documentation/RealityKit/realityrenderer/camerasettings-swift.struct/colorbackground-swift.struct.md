@@ -1,7 +1,8 @@
 # RealityRenderer.CameraSettings.ColorBackground
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines the background
 
@@ -22,9 +23,9 @@ struct ColorBackground
 ## Topics
 
 ### Type Methods
-- [static func color(CGColor) -> RealityRenderer.CameraSettings.ColorBackground](realityrenderer/camerasettings-swift.struct/colorbackground-swift.struct/color(_:).md)
+- [static func color(CGColor) -> RealityRenderer.CameraSettings.ColorBackground](./colorbackground-swift.struct/color%28_%29.md)
   Use a solid color as background.
-- [static func outputTexture() -> RealityRenderer.CameraSettings.ColorBackground](realityrenderer/camerasettings-swift.struct/colorbackground-swift.struct/outputtexture.md)
+- [static func outputTexture() -> RealityRenderer.CameraSettings.ColorBackground](./colorbackground-swift.struct/outputtexture%28%29.md)
   Use the corresponding `CameraOutput` colorTexture as background.
 
 

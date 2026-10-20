@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The scope of the search in your app’s content.
@@ -12,7 +13,7 @@ The scope of the search in your app’s content.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -23,7 +24,14 @@ static var searchScopes: Self.Criteria.SearchScopes { get }
 
 #### Discussion
 
-Use this property to indicate the portions of your content the type searches. The type of this property depends on the search criteria you use. For example, if your app intent supports [`StringSearchCriteria`](stringsearchcriteria.md), the value of this type is an array of [`StringSearchScope`](stringsearchscope.md) values.
+Use this property to indicate the portions of your content the type searches. The type of this property depends on the search criteria you use. For example, if your app intent supports [`StringSearchCriteria`](../stringsearchcriteria.md), the value of this type is an array of [`StringSearchScope`](../stringsearchscope.md) values.
+
+## Default Implementations
+
+### ShowInAppSearchResultsIntent Implementations
+- [static var searchScopes: [StringSearchScope]](./searchscopes-5p2sw.md)
+  A default value that helps the system understand the scope of an app intent that shows the results of a string-based search.
+- [static var searchScopes: Void](./searchscopes-7ve8b.md)
 
 
 ---

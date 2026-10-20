@@ -1,14 +1,17 @@
 # unknownPersonViewDelegate
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unknown-person view controller delegate.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use +[CNContactViewController viewControllerForUnknownContact:] from ContactsUI.framework instead
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The unknown-person view controller delegate.
 unowned(unsafe) var unknownPersonViewDelegate: (any ABUnknownPersonViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) id<ABUnknownPersonViewControllerDelegate> unknownPersonViewDelegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`ABUnknownPersonViewControllerDelegate`](abunknownpersonviewcontrollerdelegate.md) protocol.
+The delegate must adopt the [`ABUnknownPersonViewControllerDelegate`](../abunknownpersonviewcontrollerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol ABUnknownPersonViewControllerDelegate](abunknownpersonviewcontrollerdelegate.md)
+### Responding to View Controller Interactions
+- [protocol ABUnknownPersonViewControllerDelegate](../abunknownpersonviewcontrollerdelegate.md)
   The methods you use to respond to events in an unknown person view controller.
 
 

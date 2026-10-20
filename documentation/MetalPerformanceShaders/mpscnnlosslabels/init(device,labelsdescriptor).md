@@ -1,7 +1,8 @@
 # init(device:labelsDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(device: any MTLDevice, labelsDescriptor: MPSCNNLossDataDescriptor)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device labelsDescriptor:(MPSCNNLossDataDescriptor *) labelsDescriptor;
 ```
 
 

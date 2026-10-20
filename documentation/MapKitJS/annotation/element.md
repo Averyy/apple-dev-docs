@@ -1,7 +1,8 @@
 # element
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotation’s element in the DOM.
 
@@ -10,14 +11,15 @@ The annotation’s element in the DOM.
 
 ## Declaration
 
-```swift
+```
 get element(): HTMLElement;
 set element(_: HTMLElement);
 ```
 
 ## See Also
 
-- [map](annotation/map.md)
+### Getting the map and element
+- [map](./map.md)
   The map that the framework adds the annotation to.
 
 

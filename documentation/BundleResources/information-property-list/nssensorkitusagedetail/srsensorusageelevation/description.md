@@ -1,7 +1,8 @@
 # Description
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An explanatory string that details the manner in which your study uses the sensor’s data.
 
@@ -9,9 +10,10 @@ An explanatory string that details the manner in which your study uses the senso
 - iOS 15.4+
 - iPadOS 15.4+
 
+## Details
 
-
-**Type**: string
+- **Name**: `Description`
+- **Type**: string
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # labeledSounds()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a dictionary of the data source’s labeled audio files.
 

@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a thumbnail with an image.
 
@@ -14,6 +15,10 @@ Initialize a thumbnail with an image.
 
 ```swift
 init(image: UIImage)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image;
 ```
 
 ## Parameters

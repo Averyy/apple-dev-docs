@@ -2,22 +2,29 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the store action options for the stencil attachment.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.13+ - Deprecated in 27.0
+- tvOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Store action options have no effect on Apple Silicon
 
 ## Declaration
 
 ```swift
 func setStencilStoreActionOptions(_ storeActionOptions: MTLStoreActionOptions)
+```
+
+```objc
+- (void) setStencilStoreActionOptions:(MTLStoreActionOptions) storeActionOptions;
 ```
 
 ## Parameters
@@ -26,15 +33,16 @@ func setStencilStoreActionOptions(_ storeActionOptions: MTLStoreActionOptions)
 
 ## See Also
 
-- [func setColorStoreAction(MTLStoreAction, index: Int)](mtlrendercommandencoder/setcolorstoreaction(_:index:).md)
+### Configuring the actions for attachments
+- [func setColorStoreAction(MTLStoreAction, index: Int)](./setcolorstoreaction%28_,index%29.md)
   Configures the store action for a color attachment.
-- [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](mtlrendercommandencoder/setcolorstoreactionoptions(_:index:).md)
+- [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](./setcolorstoreactionoptions%28_,index%29.md)
   Configures the store action options for a color attachment.
-- [func setDepthStoreAction(MTLStoreAction)](mtlrendercommandencoder/setdepthstoreaction(_:).md)
+- [func setDepthStoreAction(MTLStoreAction)](./setdepthstoreaction%28_%29.md)
   Configures the store action for the depth attachment.
-- [func setDepthStoreActionOptions(MTLStoreActionOptions)](mtlrendercommandencoder/setdepthstoreactionoptions(_:).md)
+- [func setDepthStoreActionOptions(MTLStoreActionOptions)](./setdepthstoreactionoptions%28_%29.md)
   Configures the store action options for the depth attachment.
-- [func setStencilStoreAction(MTLStoreAction)](mtlrendercommandencoder/setstencilstoreaction(_:).md)
+- [func setStencilStoreAction(MTLStoreAction)](./setstencilstoreaction%28_%29.md)
   Configures the store action for the stencil attachment.
 
 

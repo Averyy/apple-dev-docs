@@ -1,7 +1,8 @@
 # init(_:image:isOn:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle that generates its label from a localized string resource and image resource.
 
@@ -21,9 +22,23 @@ Creates a toggle that generates its label from a localized string resource and i
 nonisolated init(_ titleResource: LocalizedStringResource, image: ImageResource, isOn: Binding<Bool>)
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, image: ImageResource, isOn: Binding<Bool>)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, image: ImageResource, isOn: Binding<Bool>) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. See `Text` for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf. See `Text` for more information about localizing strings.
 
 ## Parameters
 
@@ -33,11 +48,12 @@ This initializer creates a [`Text`](text.md) view on your behalf. See `Text` for
 
 ## See Also
 
-- [init(_:isOn:)](toggle/init(_:ison:).md)
+### Creating a toggle
+- [init(_:isOn:)](./init%28_,ison%29.md)
   Creates a toggle that generates its label from a localized string resource.
-- [init(isOn: Binding<Bool>, label: () -> Label)](toggle/init(ison:label:).md)
+- [init(isOn: Binding<Bool>, label: () -> Label)](./init%28ison,label%29.md)
   Creates a toggle that displays a custom label.
-- [init(_:systemImage:isOn:)](toggle/init(_:systemimage:ison:).md)
+- [init(_:systemImage:isOn:)](./init%28_,systemimage,ison%29.md)
   Creates a toggle that generates its label from a localized string key and system image.
 
 

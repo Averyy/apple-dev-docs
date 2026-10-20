@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Synchronization
+**Framework**: Synchronization  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (WordPair, WordPair) -> Bool](wordpair/==(_:_:).md)
+- [static func == (WordPair, WordPair) -> Bool](./eqeq%28_,_%29.md)
   Compares two values of this type to determine if they are equivalent to each other.
 
 

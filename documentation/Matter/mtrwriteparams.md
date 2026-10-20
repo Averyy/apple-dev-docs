@@ -1,7 +1,8 @@
 # MTRWriteParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,28 +19,32 @@
 class MTRWriteParams
 ```
 
+```objc
+@interface MTRWriteParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var dataVersion: NSNumber?](mtrwriteparams/dataversion.md)
-- [var timedWriteTimeout: NSNumber?](mtrwriteparams/timedwritetimeout.md)
+- [var dataVersion: NSNumber?](./mtrwriteparams/dataversion.md)
+- [var timedWriteTimeout: NSNumber?](./mtrwriteparams/timedwritetimeout.md)
 ### Initializers
-- [init?(coder: NSCoder)](mtrwriteparams/init(coder:).md)
+- [init?(coder: NSCoder)](./mtrwriteparams/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

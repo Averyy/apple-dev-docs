@@ -1,7 +1,8 @@
 # metadata(definition:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access connection-wide protocol metadata on the connection. This allows access to state for protocols like TCP and TLS that have long-term state.
 

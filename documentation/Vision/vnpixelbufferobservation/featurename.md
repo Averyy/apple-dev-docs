@@ -1,7 +1,8 @@
 # featureName
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A feature name that the CoreML model defines.
 
@@ -19,13 +20,18 @@ A feature name that the CoreML model defines.
 var featureName: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * featureName;
+```
+
 #### Discussion
 
-This value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the observation isn’t the result of a [`VNCoreMLRequest`](vncoremlrequest.md) operation.
+This value is [`nil`](../../ObjectiveC/nil-227m0.md) if the observation isn’t the result of a [`VNCoreMLRequest`](../vncoremlrequest.md) operation.
 
 ## See Also
 
-- [var pixelBuffer: CVPixelBuffer](vnpixelbufferobservation/pixelbuffer.md)
+### Parsing Observation Content
+- [var pixelBuffer: CVPixelBuffer](./pixelbuffer.md)
   The image that results from a request with image output.
 
 

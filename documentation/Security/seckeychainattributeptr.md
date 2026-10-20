@@ -1,7 +1,8 @@
 # SecKeychainAttributePtr
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A pointer to a keychain attribute structure.
 
@@ -12,6 +13,10 @@ A pointer to a keychain attribute structure.
 
 ```swift
 typealias SecKeychainAttributePtr = UnsafeMutablePointer<SecKeychainAttribute>
+```
+
+```c
+typedef SecKeychainAttribute * SecKeychainAttributePtr;
 ```
 
 

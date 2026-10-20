@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a session with the specified session configuration.
 
@@ -20,21 +21,28 @@ Creates a session with the specified session configuration.
 init(configuration: URLSessionConfiguration)
 ```
 
+```objc
++ (NSURLSession *) sessionWithConfiguration:(NSURLSessionConfiguration *) configuration;
+```
+
 #### Discussion
 
-Calling this method is equivalent to calling [`init(configuration:delegate:delegateQueue:)`](urlsession/init(configuration:delegate:delegatequeue:).md) with a `nil` delegate and queue.
+Calling this method is equivalent to calling [`init(configuration:delegate:delegateQueue:)`](./init%28configuration,delegate,delegatequeue%29.md) with a `nil` delegate and queue.
 
 ## Parameters
 
-- `configuration`: A configuration object that specifies certain behaviors, such as caching policies, timeouts, proxies, pipelining, TLS versions to support, cookie policies, credential storage, and so on. See [`URLSessionConfiguration`](urlsessionconfiguration.md) for more information.
+- `configuration`: A configuration object that specifies certain behaviors, such as caching policies, timeouts, proxies, pipelining, TLS versions to support, cookie policies, credential storage, and so on.
+
+  See [`URLSessionConfiguration`](../urlsessionconfiguration.md) for more information.
 
 ## See Also
 
-- [init(configuration: URLSessionConfiguration, delegate: (any URLSessionDelegate)?, delegateQueue: OperationQueue?)](urlsession/init(configuration:delegate:delegatequeue:).md)
+### Creating a session
+- [init(configuration: URLSessionConfiguration, delegate: (any URLSessionDelegate)?, delegateQueue: OperationQueue?)](./init%28configuration,delegate,delegatequeue%29.md)
   Creates a session with the specified session configuration, delegate, and operation queue.
-- [class URLSessionConfiguration](urlsessionconfiguration.md)
+- [class URLSessionConfiguration](../urlsessionconfiguration.md)
   A configuration object that defines behavior and policies for a URL session.
-- [var configuration: URLSessionConfiguration](urlsession/configuration.md)
+- [var configuration: URLSessionConfiguration](./configuration.md)
   A copy of the configuration object for this session.
 
 

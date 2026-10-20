@@ -1,7 +1,8 @@
 # RCSService.Business.WelcomeMessage.Content.card(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Card content.
 

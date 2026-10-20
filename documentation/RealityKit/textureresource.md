@@ -1,7 +1,8 @@
 # TextureResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a texture.
 
@@ -11,7 +12,7 @@ A representation of a texture.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ A representation of a texture.
 
 ## Mentions
 
-- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+- [Rendering high-fidelity characters](./rendering-high-fidelity-characters.md)
 
 #### Overview
 
@@ -33,153 +34,154 @@ Assign texture resources to material parameters to provide color and fine surfac
 ## Topics
 
 ### Creating a texture resource
-- [TextureResource.Contents](textureresource/contents.md)
+- [TextureResource.Contents](./textureresource/contents.md)
   An object that references the pixel data for each mipmap level of a texture.
-- [TextureResource.Format](textureresource/format.md)
+- [TextureResource.Format](./textureresource/format.md)
   The pixel format and encoding of a texture.
-- [TextureResource.Compression](textureresource/compression.md)
+- [TextureResource.Compression](./textureresource/compression.md)
   The compression to apply when importing an image as a texture.
 ### Creating a 2D texture resource
-- [TextureResource.Dimensions2D](textureresource/dimensions2d.md)
+- [TextureResource.Dimensions2D](./textureresource/dimensions2d.md)
   The dimensions of a 2D texture.
 ### Creating a cube texture resource
-- [TextureResource.DimensionsCube](textureresource/dimensionscube.md)
+- [TextureResource.DimensionsCube](./textureresource/dimensionscube.md)
   The dimensions of the cube texture.
 ### Creating a 2D array texture resource
-- [TextureResource.Dimensions2DArray](textureresource/dimensions2darray.md)
+- [TextureResource.Dimensions2DArray](./textureresource/dimensions2darray.md)
   The dimensions of the 2D array texture.
 ### Creating a 3D texture resource
-- [TextureResource.Dimensions3D](textureresource/dimensions3d.md)
+- [TextureResource.Dimensions3D](./textureresource/dimensions3d.md)
   The dimensions of the 3D texture.
 ### Loading a texture
-- [convenience init(named: String, in: Bundle?) async throws](textureresource/init(named:in:).md)
+- [convenience init(named: String, in: Bundle?) async throws](./textureresource/init%28named,in%29.md)
   Asynchronously loads a texture resource from a bundle.
-- [convenience init(named: String, in: Bundle?, options: TextureResource.CreateOptions) async throws](textureresource/init(named:in:options:).md)
+- [convenience init(named: String, in: Bundle?, options: TextureResource.CreateOptions) async throws](./textureresource/init%28named,in,options%29.md)
   Asynchronously loads a texture resource from a bundle with options.
-- [convenience init(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) async throws](textureresource/init(contentsof:withname:options:).md)
+- [convenience init(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) async throws](./textureresource/init%28contentsof,withname,options%29.md)
   Asynchronously creates a texture resource from a file URL with creation options.
-- [convenience init(contentsOf: URL, withName: String?) async throws](textureresource/init(contentsof:withname:).md)
+- [convenience init(contentsOf: URL, withName: String?) async throws](./textureresource/init%28contentsof,withname%29.md)
   Asynchronously creates a texture resource from a file URL.
-- [static func load(named: String, in: Bundle?) throws -> TextureResource](textureresource/load(named:in:).md)
+- [static func load(named: String, in: Bundle?) throws -> TextureResource](./textureresource/load%28named,in%29.md)
   Returns a texture resource by synchronously loading it from a bundle.
-- [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(named:in:options:).md)
+- [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](./textureresource/load%28named,in,options%29.md)
   Returns a texture resource by synchronously loading it from a bundle with options.
-- [static func load(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(contentsof:withname:options:).md)
+- [static func load(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](./textureresource/load%28contentsof,withname,options%29.md)
   Synchronously loads a texture resource from a URL with options.
-- [static func load(contentsOf: URL, withName: String?) throws -> TextureResource](textureresource/load(contentsof:withname:).md)
+- [static func load(contentsOf: URL, withName: String?) throws -> TextureResource](./textureresource/load%28contentsof,withname%29.md)
   Synchronously loads a texture resource from a URL.
-- [static func loadAsync(named: String, in: Bundle?) -> LoadRequest<TextureResource>](textureresource/loadasync(named:in:).md)
+- [static func loadAsync(named: String, in: Bundle?) -> LoadRequest<TextureResource>](./textureresource/loadasync%28named,in%29.md)
   Returns a load request that creates a texture resource by asynchronously loading it from a bundle.
-- [static func loadAsync(named: String, in: Bundle?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/loadasync(named:in:options:).md)
+- [static func loadAsync(named: String, in: Bundle?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./textureresource/loadasync%28named,in,options%29.md)
   Returns a load request that creates a texture resource by asynchronously loading it from a bundle with options.
-- [static func loadAsync(contentsOf: URL, withName: String?) -> LoadRequest<TextureResource>](textureresource/loadasync(contentsof:withname:).md)
+- [static func loadAsync(contentsOf: URL, withName: String?) -> LoadRequest<TextureResource>](./textureresource/loadasync%28contentsof,withname%29.md)
   Asynchronously loads a texture resource from a URL.
 ### Describing the texture
-- [var textureType: MTLTextureType](textureresource/texturetype.md)
+- [var textureType: MTLTextureType](./textureresource/texturetype.md)
   The dimension and arrangement of the texture image data.
-- [var pixelFormat: MTLPixelFormat](textureresource/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./textureresource/pixelformat.md)
   The texture’s pixel format.
-- [var height: Int](textureresource/height.md)
+- [var height: Int](./textureresource/height.md)
   The height of the texture image, in pixels.
-- [var width: Int](textureresource/width.md)
+- [var width: Int](./textureresource/width.md)
   The width of the texture image, in pixels.
-- [var depth: Int](textureresource/depth.md)
+- [var depth: Int](./textureresource/depth.md)
   The depth of the texture image, in pixels.
-- [var arrayLength: Int](textureresource/arraylength.md)
+- [var arrayLength: Int](./textureresource/arraylength.md)
   The number of slices in the texture array.
-- [var mipmapLevelCount: Int](textureresource/mipmaplevelcount.md)
+- [var mipmapLevelCount: Int](./textureresource/mipmaplevelcount.md)
   The number of mipmaps for the texture.
-- [var semantic: TextureResource.Semantic?](textureresource/semantic-swift.property.md)
+- [var semantic: TextureResource.Semantic?](./textureresource/semantic-swift.property.md)
   The intended usage of the texture resource.
 ### Drawing the texture
-- [var drawableQueue: TextureResource.DrawableQueue?](textureresource/drawablequeue-swift.property.md)
+- [var drawableQueue: TextureResource.DrawableQueue?](./textureresource/drawablequeue-swift.property.md)
   The drawable queue that replaces the texture.
 ### Copying the texture
-- [func copy(to: any MTLTexture) throws](textureresource/copy(to:)-jfbi.md)
+- [func copy(to: any MTLTexture) throws](./textureresource/copy%28to%29-jfbi.md)
   Copies texture data to another texture.
-- [func copyAsync(to: any MTLTexture, completionHandler: ((any Error)?) -> Void)](textureresource/copyasync(to:completionhandler:).md)
+- [func copyAsync(to: any MTLTexture, completionHandler: ((any Error)?) -> Void)](./textureresource/copyasync%28to,completionhandler%29.md)
   Asynchronously copies texture data to another texture.
 ### Modifying the texture
-- [func replace(withDrawables: TextureResource.DrawableQueue)](textureresource/replace(withdrawables:).md)
+- [func replace(withDrawables: TextureResource.DrawableQueue)](./textureresource/replace%28withdrawables%29.md)
   Dynamically replaces the texture with a drawable queue.
-- [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](textureresource/replace(withimage:options:).md)
+- [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](./textureresource/replace%28withimage,options%29.md)
   Dynamically replaces the texture with a Core Graphics image.
-- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](textureresource/replace(using:options:).md)
+- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](./textureresource/replace%28using,options%29.md)
   Asynchronously replaces the texture with a Core Graphics image.
-- [func replace(with: LowLevelTexture)](textureresource/replace(with:).md)
+- [func replace(with: LowLevelTexture)](./textureresource/replace%28with%29.md)
   Replaces a texture resource with a low-level texture.
 ### Deprecated
-- [static func generate(from: CGImage, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/generate(from:withname:options:).md)
+- [static func generate(from: CGImage, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](./textureresource/generate%28from,withname,options%29.md)
   Synchronously creates a texture resource from an in-memory Core Graphics image.
-- [static func generateAsync(from: CGImage, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/generateasync(from:withname:options:).md)
+- [static func generateAsync(from: CGImage, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./textureresource/generateasync%28from,withname,options%29.md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
-- [func replaceAsync(withImage: CGImage, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/replaceasync(withimage:options:).md)
+- [func replaceAsync(withImage: CGImage, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./textureresource/replaceasync%28withimage,options%29.md)
   Asynchronously replaces the texture with a Core Graphics image.
-- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](textureresource/generate(from:named:options:).md)
+- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](./textureresource/generate%28from,named,options%29.md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
-- [static func loadAsync(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/loadasync(contentsof:withname:options:).md)
+- [static func loadAsync(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./textureresource/loadasync%28contentsof,withname,options%29.md)
   Asynchronously loads a texture resource from a URL with options.
 ### Classes
-- [TextureResource.Drawable](textureresource/drawable.md)
+- [TextureResource.Drawable](./textureresource/drawable.md)
   A drawable associated with a drawable queue
-- [TextureResource.DrawableQueue](textureresource/drawablequeue-swift.class.md)
+- [TextureResource.DrawableQueue](./textureresource/drawablequeue-swift.class.md)
   A drawable queue that may be used to update a texture resource dynamically
 ### Structures
-- [TextureResource.CreateOptions](textureresource/createoptions.md)
+- [TextureResource.CreateOptions](./textureresource/createoptions.md)
   An object that holds texture resource creation options.
 ### Initializers
-- [convenience(cubeFromEquirectangular:named:quality:faceSize:options:)](textureresource/init(cubefromequirectangular:named:quality:facesize:options:).md)
+- [convenience(cubeFromEquirectangular:named:quality:faceSize:options:)](./textureresource/init%28cubefromequirectangular,named,quality,facesize,options%29.md)
   Asynchronously creates a cube texture resource from an equirectangular image.
-- [convenience(cubeFromImage:named:options:)](textureresource/init(cubefromimage:named:options:).md)
+- [convenience(cubeFromImage:named:options:)](./textureresource/init%28cubefromimage,named,options%29.md)
   Asynchronously creates a cube texture resource from a 2D image of cube faces.
-- [convenience(dimensions:format:contents:)](textureresource/init(dimensions:format:contents:).md)
+- [convenience(dimensions:format:contents:)](./textureresource/init%28dimensions,format,contents%29.md)
   Asynchronously creates a 2D texture resource from a pixel Metal buffer, or data.
-- [convenience(from:)](textureresource/init(from:).md)
+- [convenience(from:)](./textureresource/init%28from%29.md)
   Asynchronously creates a texture resource from a low-level texture.
-- [convenience(image:withName:options:)](textureresource/init(image:withname:options:).md)
+- [convenience(image:withName:options:)](./textureresource/init%28image,withname,options%29.md)
   Asynchronously creates a texture resource from an in-memory Core Graphics image.
 ### Instance Methods
-- [func copy(to:)](textureresource/copy(to:).md)
+- [func copy(to:)](./textureresource/copy%28to%29.md)
   Asynchronously copies texture data to another texture.
 ### Type Aliases
-- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+- [TextureResource.SamplingQuality](./textureresource/samplingquality.md)
   An object for controlling the texture-sampling quality.
 ### Type Methods
-- [static cube(slices:named:options:)](textureresource/cube(slices:named:options:).md)
+- [static cube(slices:named:options:)](./textureresource/cube%28slices,named,options%29.md)
   Asynchronously creates a cube texture resource from face images.
-- [static texture2DArray(slices:named:options:)](textureresource/texture2darray(slices:named:options:).md)
+- [static texture2DArray(slices:named:options:)](./textureresource/texture2darray%28slices,named,options%29.md)
   Asynchronously creates a 2D texture array by generating it from images.
-- [static texture3D(slices:named:options:)](textureresource/texture3d(slices:named:options:).md)
+- [static texture3D(slices:named:options:)](./textureresource/texture3d%28slices,named,options%29.md)
   Asynchronously creates a 3D texture by generating it from images.
 ### Enumerations
-- [TextureResource.MipmapsMode](textureresource/mipmapsmode.md)
+- [TextureResource.MipmapsMode](./textureresource/mipmapsmode.md)
   An enumeration for specifying how to allocate and generate mipmaps for a texture.
-- [TextureResource.Semantic](textureresource/semantic-swift.enum.md)
+- [TextureResource.Semantic](./textureresource/semantic-swift.enum.md)
   An object for specifying the intended use of a texture.
 ### Default Implementations
-- [Equatable Implementations](textureresource/equatable-implementations.md)
+- [Equatable Implementations](./textureresource/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
+### Texture resources
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [TextureResource.CreateOptions](textureresource/createoptions.md)
+- [TextureResource.CreateOptions](./textureresource/createoptions.md)
   An object that holds texture resource creation options.
-- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+- [TextureResource.SamplingQuality](./textureresource/samplingquality.md)
   An object for controlling the texture-sampling quality.
-- [TextureResource.MipmapsMode](textureresource/mipmapsmode.md)
+- [TextureResource.MipmapsMode](./textureresource/mipmapsmode.md)
   An enumeration for specifying how to allocate and generate mipmaps for a texture.
-- [TextureResource.Semantic](textureresource/semantic-swift.enum.md)
+- [TextureResource.Semantic](./textureresource/semantic-swift.enum.md)
   An object for specifying the intended use of a texture.
 
 

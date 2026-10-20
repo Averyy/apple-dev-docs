@@ -1,7 +1,8 @@
 # readAttributeListInt8u(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeListInt8u(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeListInt8u() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeListInt8uWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

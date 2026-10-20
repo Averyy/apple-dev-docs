@@ -1,7 +1,8 @@
 # mass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mass of each rigid body,
 

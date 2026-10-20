@@ -1,7 +1,8 @@
 # loudness
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measure of the audio level in decibels.
 
@@ -16,9 +17,14 @@ The measure of the audio level in decibels.
 var loudness: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double loudness;
+```
+
 ## See Also
 
-- [var timeRange: CMTimeRange](sraudiolevel/timerange.md)
+### Getting metrics
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range in the audio stream that the level applies to.
 
 

@@ -1,18 +1,19 @@
 # SKPhysicsJoint
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for objects that connect physics bodies.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,68 +21,73 @@ The abstract superclass for objects that connect physics bodies.
 class SKPhysicsJoint
 ```
 
+```objc
+@interface SKPhysicsJoint : NSObject
+```
+
 ## Mentions
 
-- [Getting Started with Physics](getting-started-with-physics.md)
+- [Getting Started with Physics](./getting-started-with-physics.md)
 
 #### Overview
 
-An [`SKPhysicsJoint`](skphysicsjoint.md) object connects two physics bodies so that they are simulated together by the physics world. You never instantiate objects of this class directly; instead, you instantiate one of the subclasses that defines the kind of joint you want to make.
+An [`SKPhysicsJoint`](./skphysicsjoint.md) object connects two physics bodies so that they are simulated together by the physics world. You never instantiate objects of this class directly; instead, you instantiate one of the subclasses that defines the kind of joint you want to make.
 
 ## Topics
 
 ### Connecting Bodies with Joints
-- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
+- [Connecting Bodies with Joints](./connecting-bodies-with-joints.md)
   Add joints to nodes in your scene.
 ### Disconnecting Bodies from Joints
-- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
+- [Disconnecting Bodies from Joints](./disconnecting-bodies-from-joints.md)
   Disconnect joints from nodes in your scene.
 ### Accessing or Setting a Joint’s Bodies
-- [var bodyA: SKPhysicsBody](skphysicsjoint/bodya.md)
+- [var bodyA: SKPhysicsBody](./skphysicsjoint/bodya.md)
   The first body connected by the joint.
-- [var bodyB: SKPhysicsBody](skphysicsjoint/bodyb.md)
+- [var bodyB: SKPhysicsBody](./skphysicsjoint/bodyb.md)
   The second body connected by the joint.
 ### Reading the Stress and Speed that Are Currently Applied to a Joint
-- [var reactionForce: CGVector](skphysicsjoint/reactionforce.md)
+- [var reactionForce: CGVector](./skphysicsjoint/reactionforce.md)
   The instantaneous reaction force, in newtons, currently being directed at the anchor point.
-- [var reactionTorque: CGFloat](skphysicsjoint/reactiontorque.md)
+- [var reactionTorque: CGFloat](./skphysicsjoint/reactiontorque.md)
   Instantaneous reaction torque, in newton-meters,  currently being directed at the anchor point.
 ### Initializers
-- [init?(coder: NSCoder)](skphysicsjoint/init(coder:).md)
+- [init?(coder: NSCoder)](./skphysicsjoint/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [SKPhysicsJointFixed](skphysicsjointfixed.md)
-- [SKPhysicsJointLimit](skphysicsjointlimit.md)
-- [SKPhysicsJointPin](skphysicsjointpin.md)
-- [SKPhysicsJointSliding](skphysicsjointsliding.md)
-- [SKPhysicsJointSpring](skphysicsjointspring.md)
+- [SKPhysicsJointFixed](./skphysicsjointfixed.md)
+- [SKPhysicsJointLimit](./skphysicsjointlimit.md)
+- [SKPhysicsJointPin](./skphysicsjointpin.md)
+- [SKPhysicsJointSliding](./skphysicsjointsliding.md)
+- [SKPhysicsJointSpring](./skphysicsjointspring.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Working with Inverse Kinematics](working-with-inverse-kinematics.md)
+### Physics Joints
+- [Working with Inverse Kinematics](./working-with-inverse-kinematics.md)
   Gain fine-tuned control of objects that are connected by joints.
-- [class SKPhysicsJointFixed](skphysicsjointfixed.md)
+- [class SKPhysicsJointFixed](./skphysicsjointfixed.md)
   A joint that fuses two physics bodies together at a reference point.
-- [class SKPhysicsJointLimit](skphysicsjointlimit.md)
+- [class SKPhysicsJointLimit](./skphysicsjointlimit.md)
   A joint that imposes a maximum distance between two physics bodies, as if they were connected by a rope.
-- [class SKPhysicsJointPin](skphysicsjointpin.md)
+- [class SKPhysicsJointPin](./skphysicsjointpin.md)
   A joint that pins together two physics bodies, allowing independent rotation.
-- [class SKPhysicsJointSliding](skphysicsjointsliding.md)
+- [class SKPhysicsJointSliding](./skphysicsjointsliding.md)
   A joint that allows two physics bodies to slide along an axis.
-- [class SKPhysicsJointSpring](skphysicsjointspring.md)
+- [class SKPhysicsJointSpring](./skphysicsjointspring.md)
   A joint that simulates a spring connecting two physics bodies.
 
 

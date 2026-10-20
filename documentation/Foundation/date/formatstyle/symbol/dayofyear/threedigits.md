@@ -1,7 +1,8 @@
 # threeDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom format style portraying the three-digit numeric day of the year, zero-padded if necessary.
 
@@ -26,9 +27,10 @@ For example, `001`, `018`, `317`.
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear/defaultdigits.md)
+### Modifying a Day of Year Value
+- [static var defaultDigits: Date.FormatStyle.Symbol.DayOfYear](./defaultdigits.md)
   Custom format style portraying the minimum number of digits that represents the numeric day of the year.
-- [static var twoDigits: Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.DayOfYear](./twodigits.md)
   Custom format style portraying the two-digit numeric day of the year, zero-padded if necessary.
 
 

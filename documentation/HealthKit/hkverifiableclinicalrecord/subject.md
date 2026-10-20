@@ -1,7 +1,8 @@
 # subject
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Data about the person whose clinical data the card contains.
 
@@ -17,6 +18,10 @@ Data about the person whose clinical data the card contains.
 ```swift
 @NSCopying
 var subject: HKVerifiableClinicalRecordSubject { get }
+```
+
+```objc
+@property (copy, readonly) HKVerifiableClinicalRecordSubject * subject;
 ```
 
 

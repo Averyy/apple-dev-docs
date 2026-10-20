@@ -1,7 +1,8 @@
 # titleAndIcon
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A label style that shows both the title and icon of the label using a system-standard layout.
 
@@ -21,9 +22,11 @@ A label style that shows both the title and icon of the label using a system-sta
 nonisolated static var titleAndIcon: TitleAndIconLabelStyle { get }
 ```
 
+Available when `Self` is `TitleAndIconLabelStyle`.
+
 ## Mentions
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Discussion
 
@@ -49,11 +52,12 @@ The relative layout of the title and icon is dependent on the context it is disp
 
 ## See Also
 
-- [static var automatic: DefaultLabelStyle](labelstyle/automatic.md)
+### Getting built-in label styles
+- [static var automatic: DefaultLabelStyle](./automatic.md)
   A label style that resolves its appearance automatically based on the current context.
-- [static var iconOnly: IconOnlyLabelStyle](labelstyle/icononly.md)
+- [static var iconOnly: IconOnlyLabelStyle](./icononly.md)
   A label style that only displays the icon of the label.
-- [static var titleOnly: TitleOnlyLabelStyle](labelstyle/titleonly.md)
+- [static var titleOnly: TitleOnlyLabelStyle](./titleonly.md)
   A label style that only displays the title of the label.
 
 

@@ -1,7 +1,8 @@
 # hasDisplayModeTable
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the device view is being displayed in table mode.
 
@@ -14,13 +15,18 @@ Returns whether the device view is being displayed in table mode.
 var hasDisplayModeTable: Bool { get set }
 ```
 
+```objc
+@property BOOL hasDisplayModeTable;
+```
+
 ## See Also
 
-- [var iconSize: Int](ikcameradeviceview/iconsize.md)
+### View Display Mode
+- [var iconSize: Int](./iconsize.md)
   Specifies the icon size.
-- [var mode: IKCameraDeviceViewDisplayMode](ikcameradeviceview/mode.md)
+- [var mode: IKCameraDeviceViewDisplayMode](./mode.md)
   Specifies the display mode of the camera device view.
-- [var hasDisplayModeIcon: Bool](ikcameradeviceview/hasdisplaymodeicon.md)
+- [var hasDisplayModeIcon: Bool](./hasdisplaymodeicon.md)
   Returns whether the device view is being displayed in icon mode.
 
 

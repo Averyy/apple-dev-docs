@@ -1,12 +1,13 @@
 # init(urlString:title:lastVisitedTimeInterval:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver with a URL,`URLString`, a title specified by `title` and the last time this item was visited specified by `time` title, and time last visited.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Initializes the receiver with a URL,`URLString`, a title specified by `title` an
 init!(urlString URLString: String!, title: String!, lastVisitedTimeInterval time: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithURLString:(NSString *) URLString title:(NSString *) title lastVisitedTimeInterval:(NSTimeInterval) time;
+```
+
 #### Discussion
 
-WebKit normally creates WebHistoryItem objects for you but on occasion you might want to create an item and add it to the WebBackForwardList yourself. Note that when an instance is first initialized the strings returned by [`urlString`](webhistoryitem/urlstring.md) and [`originalURLString`](webhistoryitem/originalurlstring.md) are the same.
+WebKit normally creates WebHistoryItem objects for you but on occasion you might want to create an item and add it to the WebBackForwardList yourself. Note that when an instance is first initialized the strings returned by [`urlString`](./urlstring.md) and [`originalURLString`](./originalurlstring.md) are the same.
 
 ## See Also
 
-- [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
+### Related Documentation
+- [WebKit Objective-C Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
 
 
 ---

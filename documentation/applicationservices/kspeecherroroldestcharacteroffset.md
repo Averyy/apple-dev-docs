@@ -1,9 +1,10 @@
 # kSpeechErrorOldestCharacterOffset
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The position in the text string of the first error that occurred since the last call to the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) function with the `kSpeechErrorsProperty` property.
+The position in the text string of the first error that occurred since the last call to the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) function with the `kSpeechErrorsProperty` property.
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ The position in the text string of the first error that occurred since the last 
 
 ```swift
 let kSpeechErrorOldestCharacterOffset: CFString
+```
+
+```c
+const CFStringRef kSpeechErrorOldestCharacterOffset;
 ```
 
 

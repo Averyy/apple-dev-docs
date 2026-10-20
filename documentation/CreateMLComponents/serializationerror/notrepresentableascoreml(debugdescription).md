@@ -1,7 +1,8 @@
 # SerializationError.notRepresentableAsCoreML(debugDescription:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the transformer cannot be represented as a CoreML model.
 
@@ -22,9 +23,10 @@ case notRepresentableAsCoreML(debugDescription: String)
 
 ## See Also
 
-- [SerializationError.packageAlreadyExists(_:)](serializationerror/packagealreadyexists(_:).md)
+### Analyzing the error
+- [SerializationError.packageAlreadyExists(_:)](./packagealreadyexists%28_%29.md)
   An error that indicates that the package already exists at the URL.
-- [SerializationError.packageNotFound(_:)](serializationerror/packagenotfound(_:).md)
+- [SerializationError.packageNotFound(_:)](./packagenotfound%28_%29.md)
   An error that indicates that the package at specified URL was not found.
 
 

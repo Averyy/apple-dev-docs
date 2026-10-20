@@ -1,7 +1,8 @@
 # AnnotatedFeatureProvider
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An adaptor that converts a regular estimator to a tabular estimator by selecting features and annotations from columns.
 
@@ -26,7 +27,7 @@ Tabular estimators use multiple features columns as input. When there is a singl
 
 When using `AnnotatedFeatureProvider`, make sure to handle missing values before using a non-tabular estimator that takes non-optional values. This example includes an `OptionalUnwrapper` transformer.
 
-```None
+```
 let concatenation = ColumnConcatenator<Float>(
     columnSelection: .include(columnNames: ["type", "region"]),
     concatenatedColumnName: "features"
@@ -43,53 +44,54 @@ let task = concatenation.appending(regression)
 ## Topics
 
 ### Creating the provider
-- [init(Base, annotationsColumnName: String, featuresColumnName: String, resultsColumnName: String)](annotatedfeatureprovider/init(_:annotationscolumnname:featurescolumnname:resultscolumnname:).md)
+- [init(Base, annotationsColumnName: String, featuresColumnName: String, resultsColumnName: String)](./annotatedfeatureprovider/init%28_,annotationscolumnname,featurescolumnname,resultscolumnname%29.md)
   Creates an adaptor that converts a regular estimator to a tabular estimator.
 ### Getting the properties
-- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](annotatedfeatureprovider/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](./annotatedfeatureprovider/annotationcolumnid.md)
   The annotation column identifier.
-- [AnnotatedFeatureProvider.Annotation](annotatedfeatureprovider/annotation.md)
+- [AnnotatedFeatureProvider.Annotation](./annotatedfeatureprovider/annotation.md)
   The annotation type.
-- [var base: Base](annotatedfeatureprovider/base.md)
+- [var base: Base](./annotatedfeatureprovider/base.md)
   The base estimator.
-- [var featuresColumnName: String](annotatedfeatureprovider/featurescolumnname.md)
+- [var featuresColumnName: String](./annotatedfeatureprovider/featurescolumnname.md)
   The features column name.
-- [var resultsColumnName: String](annotatedfeatureprovider/resultscolumnname.md)
+- [var resultsColumnName: String](./annotatedfeatureprovider/resultscolumnname.md)
   The results column name.
 ### Encoding and decoding
-- [func encode(AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer, to: inout any EstimatorEncoder) throws](annotatedfeatureprovider/encode(_:to:).md)
+- [func encode(AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer, to: inout any EstimatorEncoder) throws](./annotatedfeatureprovider/encode%28_,to%29.md)
   Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer](annotatedfeatureprovider/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer](./annotatedfeatureprovider/decode%28from%29.md)
   Decodes a previously fitted transformer.
 ### Fitting
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> ColumnSelectorTransformer<Base.Transformer, UnwrappedInput>](annotatedfeatureprovider/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> ColumnSelectorTransformer<Base.Transformer, UnwrappedInput>](./annotatedfeatureprovider/fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a data frame
-- [AnnotatedFeatureProvider.Transformer](annotatedfeatureprovider/transformer.md)
+- [AnnotatedFeatureProvider.Transformer](./annotatedfeatureprovider/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [UpdatableSupervisedTabularEstimator Implementations](annotatedfeatureprovider/updatablesupervisedtabularestimator-implementations.md)
+- [UpdatableSupervisedTabularEstimator Implementations](./annotatedfeatureprovider/updatablesupervisedtabularestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedTabularEstimator](supervisedtabularestimator.md)
-- [UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedTabularEstimator](./supervisedtabularestimator.md)
+- [UpdatableSupervisedTabularEstimator](./updatablesupervisedtabularestimator.md)
 
 ## See Also
 
-- [struct AnnotatedFiles](annotatedfiles.md)
+### Annotations
+- [struct AnnotatedFiles](./annotatedfiles.md)
   An annotated files collection.
-- [struct AnnotatedBatch](annotatedbatch.md)
+- [struct AnnotatedBatch](./annotatedbatch.md)
   A batch of annotated examples for fitting a supervised estimator.
-- [struct AnnotatedFeature](annotatedfeature.md)
+- [struct AnnotatedFeature](./annotatedfeature.md)
   An annotated example for fitting a supervised estimator.
-- [struct AnnotatedPrediction](annotatedprediction.md)
+- [struct AnnotatedPrediction](./annotatedprediction.md)
   An annotated prediction.
-- [struct DataFrameTemporalAnnotationParameters](dataframetemporalannotationparameters.md)
+- [struct DataFrameTemporalAnnotationParameters](./dataframetemporalannotationparameters.md)
   Annotation parameters for the dataframe containing temporal annotations.
 
 

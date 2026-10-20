@@ -1,7 +1,8 @@
 # angularLimitInYZ
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A cone-shaped limit of rotational freedom.
 

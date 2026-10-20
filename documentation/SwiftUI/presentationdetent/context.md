@@ -1,7 +1,8 @@
 # PresentationDetent.Context
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information that you use to calculate the presentation’s height.
 
@@ -24,19 +25,20 @@ struct Context
 ## Topics
 
 ### Getting the height
-- [var maxDetentValue: CGFloat](presentationdetent/context/maxdetentvalue.md)
+- [var maxDetentValue: CGFloat](./context/maxdetentvalue.md)
   The height that the presentation appears in.
 ### Supporting types
-- [subscript<T>(dynamicMember _: KeyPath<EnvironmentValues, T>) -> T](presentationdetent/context/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<EnvironmentValues, T>) -> T](./context/subscript%28dynamicmember%29.md)
   Returns the value specified by the keyPath from the environment.
 
 ## See Also
 
-- [static func custom<D>(D.Type) -> PresentationDetent](presentationdetent/custom(_:).md)
+### Creating custom detents
+- [static func custom<D>(D.Type) -> PresentationDetent](./custom%28_%29.md)
   A custom detent with a calculated height.
-- [static func fraction(CGFloat) -> PresentationDetent](presentationdetent/fraction(_:).md)
+- [static func fraction(CGFloat) -> PresentationDetent](./fraction%28_%29.md)
   A custom detent with the specified fractional height.
-- [static func height(CGFloat) -> PresentationDetent](presentationdetent/height(_:).md)
+- [static func height(CGFloat) -> PresentationDetent](./height%28_%29.md)
   A custom detent with the specified height.
 
 

@@ -1,7 +1,8 @@
 # init(color:intensity:innerAngleInDegrees:outerAngleInDegrees:attenuationRadius:attenuationFalloffExponent:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a spotlight with the given parameters.
 
@@ -9,6 +10,12 @@ Creates a spotlight with the given parameters.
 - macOS 15.0+
 
 ## Declaration
+
+```swift
+init(color: SpotLightComponent.Color = .white, intensity: Float = 6740.94, innerAngleInDegrees: Float = 45.0, outerAngleInDegrees: Float = 60.0, attenuationRadius: Float = 10.0, attenuationFalloffExponent: Float = 2.0)
+```
+
+**Other overloads**:
 
 ```swift
 init(color: SpotLightComponent.Color = .white, intensity: Float = 6740.94, innerAngleInDegrees: Float = 45.0, outerAngleInDegrees: Float = 60.0, attenuationRadius: Float = 10.0, attenuationFalloffExponent: Float = 2.0)

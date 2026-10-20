@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared object that stores rights.
 
@@ -18,9 +19,14 @@ A shared object that stores rights.
 class var shared: LARightStore { get }
 ```
 
+```objc
+@property (class, readonly) LARightStore * sharedStore;
+```
+
 ## See Also
 
-- [func right(forIdentifier: String, completion: (LAPersistedRight?, (any Error)?) -> Void)](larightstore/right(foridentifier:completion:).md)
+### Accessing rights
+- [func right(forIdentifier: String, completion: (LAPersistedRight?, (any Error)?) -> Void)](./right%28foridentifier,completion%29.md)
   Fetches a previously stored right from the shared right store.
 
 

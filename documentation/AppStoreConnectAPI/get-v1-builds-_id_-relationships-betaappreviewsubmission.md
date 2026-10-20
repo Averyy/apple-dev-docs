@@ -1,7 +1,8 @@
 # Get the beta app review submission ID for a build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -12,11 +13,23 @@
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `200` OK (`BuildBetaAppReviewSubmissionLinkageResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read the beta app review submission of a build](get-v1-builds-_id_-betaappreviewsubmission.md)
+### Checking Beta Review Submission Status
+- [Read the beta app review submission of a build](./get-v1-builds-_id_-betaappreviewsubmission.md)
   Get the beta app review submission status for a specific build.
 
 

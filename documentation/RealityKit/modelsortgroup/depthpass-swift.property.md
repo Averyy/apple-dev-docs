@@ -1,7 +1,8 @@
 # depthPass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A depth pass that controls when the renderer draws the depth of model entities in the group relative to their color.
 

@@ -1,7 +1,8 @@
 # width
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The proposed horizontal size measured in points.
 
@@ -26,7 +27,8 @@ A value of `nil` represents an unspecified width proposal, which a view interpre
 
 ## See Also
 
-- [var height: CGFloat?](proposedviewsize/height.md)
+### Getting the proposal’s dimensions
+- [var height: CGFloat?](./height.md)
   The proposed vertical size measured in points.
 
 

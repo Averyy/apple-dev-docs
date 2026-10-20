@@ -1,7 +1,8 @@
 # init(url:fileType:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new object that writes media data to a container file at the output URL.
 
@@ -19,6 +20,10 @@ Returns a new object that writes media data to a container file at the output UR
 convenience init(url outputURL: URL, fileType outputFileType: AVFileType) throws
 ```
 
+```objc
++ (instancetype) assetWriterWithURL:(NSURL *) outputURL fileType:(AVFileType) outputFileType error:(NSError **) outError;
+```
+
 #### Return Value
 
 A new asset writer.
@@ -34,9 +39,10 @@ Writing fails if a file already exists at the output URL.
 
 ## See Also
 
-- [init(outputURL: URL, fileType: AVFileType) throws](avassetwriter/init(outputurl:filetype:).md)
+### Creating an asset writer
+- [init(outputURL: URL, fileType: AVFileType) throws](./init%28outputurl,filetype%29.md)
   Creates an object that writes media data to a container file at the output URL.
-- [init(contentType: UTType)](avassetwriter/init(contenttype:).md)
+- [init(contentType: UTType)](./init%28contenttype%29.md)
   Creates an object that outputs segment data in a specified container format.
 
 

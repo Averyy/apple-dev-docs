@@ -1,7 +1,8 @@
 # init(judge:dimensions:scoringMode:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multi-metric evaluator with default prompt configuration.
 
@@ -16,6 +17,14 @@ Creates a multi-metric evaluator with default prompt configuration.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
+
+```swift
+init(judge: any LanguageModel = SystemLanguageModel(), dimensions: [ScoreDimension], scoringMode: ScoringMode = .discrete)
+```
+
+*watchOS*
+
 ```swift
 init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode = .discrete)
 ```
@@ -28,7 +37,8 @@ init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: Scorin
 
 ## See Also
 
-- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](modeljudgeevaluator/init(judge:dimensions:scoringmode:prompt:).md)
+### Creating a multi-dimension evaluator
+- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./init%28judge,dimensions,scoringmode,prompt%29.md)
   Creates a multi-metric evaluator with a custom judge prompt.
 
 

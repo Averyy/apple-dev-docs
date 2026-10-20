@@ -1,7 +1,8 @@
 # remoteLanguage
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote participant’s language.
 
@@ -17,9 +18,10 @@ final let remoteLanguage: Locale.Language
 
 ## See Also
 
-- [let isTranslating: Bool](settranslatingaction/istranslating.md)
+### Accessing action attributes
+- [let isTranslating: Bool](./istranslating.md)
   A value that indicates whether to start or stop translation.
-- [let localLanguage: Locale.Language](settranslatingaction/locallanguage.md)
+- [let localLanguage: Locale.Language](./locallanguage.md)
   The local participant’s language.
 
 

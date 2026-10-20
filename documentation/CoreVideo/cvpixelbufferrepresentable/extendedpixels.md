@@ -1,7 +1,8 @@
 # extendedPixels
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Padding pixels around this pixel buffer
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dictionary initialized from data in the provided unarchiver.
 
@@ -18,6 +19,10 @@ Creates a dictionary initialized from data in the provided unarchiver.
 
 ```swift
 init?(coder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
 ## Parameters

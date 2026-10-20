@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 
 # mlx.core.mean
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.mean.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.mean
-
- Table of contents 
-
-## Contents
-
-# mlx.core.mean
-
-**mean(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**mean(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Compute the mean(s) over the given axes.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Optional axis or
 axes to reduce over. If unspecified this defaults
 to reducing over the entire array.
@@ -49,6 +22,4 @@ Returns:
 The output array of means.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

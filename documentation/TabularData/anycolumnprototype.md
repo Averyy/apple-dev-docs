@@ -1,7 +1,8 @@
 # AnyColumnPrototype
 
 **Framework**: TabularData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A prototype that creates type-erased columns.
 
@@ -23,19 +24,20 @@ protocol AnyColumnPrototype
 ## Topics
 
 ### Naming a Prototype Column
-- [var name: String](anycolumnprototype/name.md)
+- [var name: String](./anycolumnprototype/name.md)
   The name of the column.
 ### Creating Columns
-- [func makeColumn(capacity: Int) -> AnyColumn](anycolumnprototype/makecolumn(capacity:).md)
+- [func makeColumn(capacity: Int) -> AnyColumn](./anycolumnprototype/makecolumn%28capacity%29.md)
   Creates a type-erased column.
 
 ## See Also
 
-- [struct AnyColumn](anycolumn.md)
+### Type-Erased Columns
+- [struct AnyColumn](./anycolumn.md)
   A type-erased column.
-- [struct AnyColumnSlice](anycolumnslice.md)
+- [struct AnyColumnSlice](./anycolumnslice.md)
   A type-erased column slice.
-- [protocol AnyColumnProtocol](anycolumnprotocol.md)
+- [protocol AnyColumnProtocol](./anycolumnprotocol.md)
   A type that represents a type-erased column.
 
 

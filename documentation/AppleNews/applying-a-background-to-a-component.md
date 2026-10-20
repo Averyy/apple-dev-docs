@@ -1,6 +1,7 @@
 # Applying a Background to a Component
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Change the appearance of the backgrounds in your article.
 
@@ -17,19 +18,20 @@ To set a background for a component, use the `fill` property in the [`ComponentS
 
 ## See Also
 
-- [object ImageFill](../applenewsformat/imagefill.md)
+### Backgrounds for Components
+- [object ImageFill](https://developer.apple.com/documentation/applenewsformat/imagefill)
   The object for adding an image background fill to a component.
-- [object RepeatableImageFill](../applenewsformat/repeatableimagefill.md)
+- [object RepeatableImageFill](https://developer.apple.com/documentation/applenewsformat/repeatableimagefill)
   The object for adding a background image that Apple News can repeat.
-- [object VideoFill](../applenewsformat/videofill.md)
+- [object VideoFill](https://developer.apple.com/documentation/applenewsformat/videofill)
   The object for adding a video background fill to a component.
-- [object LinearGradientFill](../applenewsformat/lineargradientfill.md)
+- [object LinearGradientFill](https://developer.apple.com/documentation/applenewsformat/lineargradientfill)
   The object for displaying a linear gradient as a component background.
-- [object GradientFill](../applenewsformat/gradientfill.md)
+- [object GradientFill](https://developer.apple.com/documentation/applenewsformat/gradientfill)
   The properties all gradient fill types share.
-- [object Fill](../applenewsformat/fill.md)
+- [object Fill](https://developer.apple.com/documentation/applenewsformat/fill)
   The object for setting a fill type and attachment for a component’s background fill.
-- [object ColorStop](../applenewsformat/colorstop.md)
+- [object ColorStop](https://developer.apple.com/documentation/applenewsformat/colorstop)
   The object for specifying the color and location for a color stop in a gradient.
 
 

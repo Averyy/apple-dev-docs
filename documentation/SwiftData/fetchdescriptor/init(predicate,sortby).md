@@ -1,7 +1,8 @@
 # init(predicate:sortBy:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fetch descriptor with the specified predicate that, optionally, arranges the fetched models in a particular order.
 
@@ -23,7 +24,7 @@ init(predicate: Predicate<T>? = nil, sortBy: [SortDescriptor<T>] = [])
 
 #### Discussion
 
-If you don’t specify a predicate, any fetch using this descriptor will return all models of the associated type. If you expect the number of fetched models to be high, use [`fetchLimit`](fetchdescriptor/fetchlimit.md) and [`fetchOffset`](fetchdescriptor/fetchoffset.md) to break those results into smaller, more efficient batches.
+If you don’t specify a predicate, any fetch using this descriptor will return all models of the associated type. If you expect the number of fetched models to be high, use [`fetchLimit`](./fetchlimit.md) and [`fetchOffset`](./fetchoffset.md) to break those results into smaller, more efficient batches.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ If you don’t specify a predicate, any fetch using this descriptor will return 
 
 ## See Also
 
-- [struct Predicate](../foundation/predicate.md)
+### Creating a fetch descriptor
+- [struct Predicate](../../Foundation/predicate.md)
   A logical condition used to test a set of input values for searching or filtering.
-- [struct SortDescriptor](../foundation/sortdescriptor.md)
+- [struct SortDescriptor](../../Foundation/sortdescriptor.md)
   A serializable description of how to sort numerics and strings.
 
 

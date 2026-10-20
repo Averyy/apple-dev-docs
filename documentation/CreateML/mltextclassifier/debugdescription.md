@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the text classifier that’s suitable for output during debugging.
 
@@ -20,11 +21,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var model: MLModel](mltextclassifier/model.md)
+### Describing a text classifier
+- [var model: MLModel](./model.md)
   The underlying Core ML model of the text classifier.
-- [var description: String](mltextclassifier/description.md)
+- [var description: String](./description.md)
   A text representation of the text classifier.
-- [var playgroundDescription: Any](mltextclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the text classifier in a playground.
 
 

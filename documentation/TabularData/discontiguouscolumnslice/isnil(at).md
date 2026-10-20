@@ -1,7 +1,8 @@
 # isNil(at:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean that indicates whether the element at the index is missing.
 
@@ -26,15 +27,16 @@ func isNil(at index: Int) -> Bool
 
 ## See Also
 
-- [var name: String](discontiguouscolumnslice/name.md)
+### Inspecting a Column Slice
+- [var name: String](./name.md)
   The name of the slice’s parent column.
-- [var count: Int](discontiguouscolumnslice/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column slice.
-- [var wrappedElementType: any Any.Type](discontiguouscolumnslice/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
-- [func argmin() -> Int?](discontiguouscolumnslice/argmin.md)
+- [func argmin() -> Int?](./argmin%28%29.md)
   Returns the index of the element with the lowest value, ignoring missing elements.
-- [func argmax() -> Int?](discontiguouscolumnslice/argmax.md)
+- [func argmax() -> Int?](./argmax%28%29.md)
   Returns the index of the element with the highest value, ignoring missing elements.
 
 

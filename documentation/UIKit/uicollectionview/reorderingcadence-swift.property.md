@@ -1,7 +1,8 @@
 # reorderingCadence
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The speed at which items in the collection view are reordered to show potential drop locations.
 
@@ -17,19 +18,24 @@ The speed at which items in the collection view are reordered to show potential 
 var reorderingCadence: UICollectionView.ReorderingCadence { get set }
 ```
 
+```objc
+@property (nonatomic) UICollectionViewReorderingCadence reorderingCadence;
+```
+
 #### Discussion
 
-The default value in this property is [`UICollectionView.ReorderingCadence.immediate`](uicollectionview/reorderingcadence-swift.enum/immediate.md). You might specify a slower cadence when you want to prevent the reordering of items from being a distraction to the user. For example, you might slow it down if immediate reordering makes it more difficult to drop items at the correct location.
+The default value in this property is [`UICollectionView.ReorderingCadence.immediate`](./reorderingcadence-swift.enum/immediate.md). You might specify a slower cadence when you want to prevent the reordering of items from being a distraction to the user. For example, you might slow it down if immediate reordering makes it more difficult to drop items at the correct location.
 
 ## See Also
 
-- [var dropDelegate: (any UICollectionViewDropDelegate)?](uicollectionview/dropdelegate.md)
+### Managing drop interactions
+- [var dropDelegate: (any UICollectionViewDropDelegate)?](./dropdelegate.md)
   The delegate object that manages the dropping of items into the collection view.
-- [protocol UICollectionViewDropDelegate](uicollectionviewdropdelegate.md)
+- [protocol UICollectionViewDropDelegate](../uicollectionviewdropdelegate.md)
   The interface for handling drops in a collection view.
-- [var hasActiveDrop: Bool](uicollectionview/hasactivedrop.md)
+- [var hasActiveDrop: Bool](./hasactivedrop.md)
   A Boolean value that indicates whether the collection view is currently tracking a drop session.
-- [UICollectionView.ReorderingCadence](uicollectionview/reorderingcadence-swift.enum.md)
+- [UICollectionView.ReorderingCadence](./reorderingcadence-swift.enum.md)
   Constants indicating the speed at which collection view items are reorganized during a drop.
 
 

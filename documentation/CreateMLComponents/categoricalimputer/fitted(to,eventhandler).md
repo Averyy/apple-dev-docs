@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a categorical imputer to a sequence of elements.
 
@@ -31,9 +32,10 @@ The fitted transformer.
 
 ## See Also
 
-- [protocol Transformer](transformer.md)
+### Fitting
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
-- [CategoricalImputer.Strategy](categoricalimputer/strategy-swift.enum.md)
+- [CategoricalImputer.Strategy](./strategy-swift.enum.md)
   An imputation strategy.
 
 

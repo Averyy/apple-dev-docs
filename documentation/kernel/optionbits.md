@@ -1,14 +1,15 @@
 # OptionBits
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.9
 
 ## Declaration
 
-```swift
+```c
 typedef UInt32 OptionBits;
 ```
 

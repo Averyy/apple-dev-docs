@@ -1,7 +1,8 @@
 # requestSceneSessionDestruction(_:options:errorHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the system to dismiss an existing scene and remove it from the app switcher.
 
@@ -18,27 +19,34 @@ Asks the system to dismiss an existing scene and remove it from the app switcher
 func requestSceneSessionDestruction(_ sceneSession: UISceneSession, options: UISceneDestructionRequestOptions?, errorHandler: ((any Error) -> Void)? = nil)
 ```
 
+```objc
+- (void) requestSceneSessionDestruction:(UISceneSession *) sceneSession options:(UISceneDestructionRequestOptions *) options errorHandler:(void (^)(NSError *error)) errorHandler;
+```
+
 #### Discussion
 
-If the specified scene is onscreen, calling this method dismisses it using the specified options. The method sends a disconnect notification to the scene and then calls your app delegate’s [`application(_:didDiscardSceneSessions:)`](uiapplicationdelegate/application(_:diddiscardscenesessions:).md) method.
+If the specified scene is onscreen, calling this method dismisses it using the specified options. The method sends a disconnect notification to the scene and then calls your app delegate’s [`application(_:didDiscardSceneSessions:)`](../uiapplicationdelegate/application%28_,diddiscardscenesessions%29.md) method.
 
 ## Parameters
 
 - `sceneSession`: The session whose scene you want to remove from the screen and app switcher.
-- `options`: Information for the system to use when dismissing the scene. For information about how to create this object, see [`UISceneDestructionRequestOptions`](uiscenedestructionrequestoptions.md).
-- `errorHandler`: An error handler block to execute if a problem occurs. The method does not execute this block when it successfully dismisses the scene. This block has no return value and has the following parameter: - **error**: The [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object describing the problem that occurred.
+- `options`: Information for the system to use when dismissing the scene. For information about how to create this object, see [`UISceneDestructionRequestOptions`](../uiscenedestructionrequestoptions.md).
+- `errorHandler`: An error handler block to execute if a problem occurs. The method does not execute this block when it successfully dismisses the scene. This block has no return value and has the following parameter:
+
+  - **error**: The [`NSError`](../../Foundation/nserror.md) object describing the problem that occurred.
 
 ## See Also
 
-- [func activateSceneSession(for: UISceneSessionActivationRequest, errorHandler: ((any Error) -> Void)?)](uiapplication/activatescenesession(for:errorhandler:).md)
+### Managing a scene’s life cycle
+- [func activateSceneSession(for: UISceneSessionActivationRequest, errorHandler: ((any Error) -> Void)?)](./activatescenesession%28for,errorhandler%29.md)
   Asks the system to activate an existing scene or create a new scene and associate it with your app.
-- [func requestSceneSessionRefresh(UISceneSession)](uiapplication/requestscenesessionrefresh(_:).md)
+- [func requestSceneSessionRefresh(UISceneSession)](./requestscenesessionrefresh%28_%29.md)
   Asks the system to update any system UI associated with the specified scene.
-- [struct UISceneSessionActivationRequest](uiscenesessionactivationrequest-swift.struct.md)
+- [struct UISceneSessionActivationRequest](../uiscenesessionactivationrequest-swift.struct.md)
   A collection of properties that you use to request activation of a scene.
-- [UIScene.ActivationRequestOptions](uiscene/activationrequestoptions.md)
+- [UIScene.ActivationRequestOptions](../uiscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating the session associated with a scene.
-- [class UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
+- [class UISceneDestructionRequestOptions](../uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
 
 

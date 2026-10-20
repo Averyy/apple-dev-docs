@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An empty settings object.
 
@@ -13,6 +14,10 @@ An empty settings object.
 
 ```swift
 class var `default`: ASAccessorySettings { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) ASAccessorySettings * defaultSettings;
 ```
 
 

@@ -1,15 +1,20 @@
 # kBluetoothDeviceNameMaxLength
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kBluetoothDeviceNameMaxLength: Int { get }
+```
+
+```c
+kBluetoothDeviceNameMaxLength
 ```
 
 

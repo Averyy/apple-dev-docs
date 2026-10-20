@@ -1,7 +1,8 @@
 # stackView(_:didReattach:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the stack view has automatically reattached one or more previously-detached views.
 
@@ -15,9 +16,13 @@ Called when the stack view has automatically reattached one or more previously-d
 optional func stackView(_ stackView: NSStackView, didReattach views: [NSView])
 ```
 
+```objc
+- (void) stackView:(NSStackView *) stackView didReattachViews:(NSArray<NSView *> *) views;
+```
+
 #### Discussion
 
-To configure a custom class to respond to the automatic reattachment of views to a stack view’s view hierarchy, implement this method in the class. This method is not called when your code explicitly adds a view to a stack view’s [`views`](nsstackview/views.md) array.
+To configure a custom class to respond to the automatic reattachment of views to a stack view’s view hierarchy, implement this method in the class. This method is not called when your code explicitly adds a view to a stack view’s [`views`](../nsstackview/views.md) array.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ To configure a custom class to respond to the automatic reattachment of views to
 
 ## See Also
 
-- [func stackView(NSStackView, willDetach: [NSView])](nsstackviewdelegate/stackview(_:willdetach:).md)
+### Responding to View Detachment and Reattachment
+- [func stackView(NSStackView, willDetach: [NSView])](./stackview%28_,willdetach%29.md)
   Called when the stack view is about to automatically detach one or more of its views.
 
 

@@ -1,7 +1,8 @@
 # pointOnPage
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A DOM point with the coordinate of the event on the page.
 
@@ -10,13 +11,13 @@ A DOM point with the coordinate of the event on the page.
 
 ## Declaration
 
-```swift
+```
 readonly pointOnPage: DOMPoint;
 ```
 
 #### Discussion
 
-You can use this property — which is an `(x, y)` coordinate — to derive a latitude and longitude coordinate on the map using [`convertPointOnPageToCoordinate()`](map/convertpointonpagetocoordinate.md).
+You can use this property — which is an `(x, y)` coordinate — to derive a latitude and longitude coordinate on the map using [`convertPointOnPageToCoordinate()`](../map/convertpointonpagetocoordinate.md).
 
 
 ---

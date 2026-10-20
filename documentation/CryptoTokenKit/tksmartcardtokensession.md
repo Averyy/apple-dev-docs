@@ -1,7 +1,8 @@
 # TKSmartCardTokenSession
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A token session that is based on a smart card token.
 
@@ -20,43 +21,48 @@ A token session that is based on a smart card token.
 class TKSmartCardTokenSession
 ```
 
+```objc
+@interface TKSmartCardTokenSession : TKTokenSession
+```
+
 ## Mentions
 
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
 
 #### Overview
 
-You can use the [`smartCard`](tksmartcardtokensession/smartcard.md) property to access and send APDUs to the underlying smart card.
+You can use the [`smartCard`](./tksmartcardtokensession/smartcard.md) property to access and send APDUs to the underlying smart card.
 
 ## Topics
 
 ### Accessing the Smart Card
-- [var smartCard: TKSmartCard](tksmartcardtokensession/smartcard.md)
+- [var smartCard: TKSmartCard](./tksmartcardtokensession/smartcard.md)
   The smart card for the active exclusive session and selected application.
 ### Instance Methods
-- [func getSmartCard() throws -> TKSmartCard](tksmartcardtokensession/getsmartcard.md)
+- [func getSmartCard() throws -> TKSmartCard](./tksmartcardtokensession/getsmartcard%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [TKTokenSession](tktokensession.md)
+- [TKTokenSession](./tktokensession.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+### Smart Card App Extensions
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
   Grant access to user accounts and the keychain by creating a smart card app extension.
-- [Configuring Smart Card Authentication](configuring-smart-card-authentication.md)
+- [Configuring Smart Card Authentication](./configuring-smart-card-authentication.md)
   Set preferences for smart card authentication operations, including those on managed devices.
-- [class TKSmartCardTokenDriver](tksmartcardtokendriver.md)
+- [class TKSmartCardTokenDriver](./tksmartcardtokendriver.md)
   The driver that acts as an entry point for smart card app extensions.
-- [class TKSmartCardToken](tksmartcardtoken.md)
+- [class TKSmartCardToken](./tksmartcardtoken.md)
   A representation of a smart card based cryptographic token.
 
 

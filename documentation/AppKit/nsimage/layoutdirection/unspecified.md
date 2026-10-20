@@ -1,7 +1,8 @@
 # NSImage.LayoutDirection.unspecified
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified layout direction.
 
@@ -14,11 +15,16 @@ An unspecified layout direction.
 case unspecified
 ```
 
+```c
+NSImageLayoutDirectionUnspecified
+```
+
 ## See Also
 
-- [NSImage.LayoutDirection.leftToRight](nsimage/layoutdirection/lefttoright.md)
+### Layout Directions
+- [NSImage.LayoutDirection.leftToRight](./lefttoright.md)
   A left-to-right layout direction.
-- [NSImage.LayoutDirection.rightToLeft](nsimage/layoutdirection/righttoleft.md)
+- [NSImage.LayoutDirection.rightToLeft](./righttoleft.md)
   A right-to-left layout direction.
 
 

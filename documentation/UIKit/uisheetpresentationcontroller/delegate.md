@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the sheet presentation controller.
 
@@ -17,9 +18,14 @@ The delegate of the sheet presentation controller.
 weak var delegate: (any UISheetPresentationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UISheetPresentationControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UISheetPresentationControllerDelegate](uisheetpresentationcontrollerdelegate.md)
+### Managing the delegate
+- [protocol UISheetPresentationControllerDelegate](../uisheetpresentationcontrollerdelegate.md)
   The interface that an object implements to respond to size changes in a sheet presentation controller.
 
 

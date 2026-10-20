@@ -1,7 +1,8 @@
 # canAddPaymentPass()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the app can add cards to Apple Pay.
 
@@ -17,9 +18,13 @@ Returns a Boolean value that indicates whether the app can add cards to Apple Pa
 class func canAddPaymentPass() -> Bool
 ```
 
+```objc
++ (BOOL) canAddPaymentPass;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the app can add cards to Apple Pay.
+[`true`](../../Swift/true.md) if the app can add cards to Apple Pay.
 
 
 ---

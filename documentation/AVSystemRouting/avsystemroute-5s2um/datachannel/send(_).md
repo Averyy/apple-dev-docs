@@ -1,7 +1,8 @@
 # send(_:)
 
 **Framework**: AVSystemRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends data to a remote application.
 
@@ -18,14 +19,14 @@ final func send(_ data: Data) async throws
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](../../routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](../../routing-media-to-third-party-devices.md)
 
 #### Discussion
 
 Calling this function again before a previous send completes is safe; multiple send operations can be in-flight concurrently.
 
-> **Note**: An error if the send operation fails.
+> **Throws**: An error if the send operation fails.
 
 ## Parameters
 

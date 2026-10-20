@@ -1,7 +1,8 @@
 # URL.FormatStyle.ComponentDisplayOption
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that indicates whether a formatted URL should include a component.
 
@@ -23,35 +24,36 @@ struct ComponentDisplayOption
 ## Topics
 
 ### Display options
-- [static var always: URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/always.md)
+- [static var always: URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption/always.md)
   A display option that always displays the component.
-- [static var never: URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/never.md)
+- [static var never: URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption/never.md)
   A display option that never displays the component.
-- [static var omitIfHTTPFamily: URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/omitifhttpfamily.md)
+- [static var omitIfHTTPFamily: URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption/omitifhttpfamily.md)
   A display option that omits the component if the URL scheme is any flavor of HTTP.
-- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/displaywhen(_:matches:).md)
+- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption/displaywhen%28_,matches%29.md)
   Returns a display option that displays the component when a specified component meets the specified requirements.
-- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/omitwhen(_:matches:).md)
+- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption/omitwhen%28_,matches%29.md)
   Returns a display option that omits the component when a specified component meets the specified requirements.
-- [URL.FormatStyle.Component](url/formatstyle/component.md)
+- [URL.FormatStyle.Component](./component.md)
   An enumeration of the components of a URL, for use in creating format style options that depend on a component’s value.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(scheme: URL.FormatStyle.ComponentDisplayOption, user: URL.FormatStyle.ComponentDisplayOption, password: URL.FormatStyle.ComponentDisplayOption, host: URL.FormatStyle.HostDisplayOption, port: URL.FormatStyle.ComponentDisplayOption, path: URL.FormatStyle.ComponentDisplayOption, query: URL.FormatStyle.ComponentDisplayOption, fragment: URL.FormatStyle.ComponentDisplayOption)](url/formatstyle/init(scheme:user:password:host:port:path:query:fragment:).md)
+### Creating a URL format style
+- [init(scheme: URL.FormatStyle.ComponentDisplayOption, user: URL.FormatStyle.ComponentDisplayOption, password: URL.FormatStyle.ComponentDisplayOption, host: URL.FormatStyle.HostDisplayOption, port: URL.FormatStyle.ComponentDisplayOption, path: URL.FormatStyle.ComponentDisplayOption, query: URL.FormatStyle.ComponentDisplayOption, fragment: URL.FormatStyle.ComponentDisplayOption)](./init%28scheme,user,password,host,port,path,query,fragment%29.md)
   Creates a URL format style with the given display options.
-- [URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption.md)
+- [URL.FormatStyle.HostDisplayOption](./hostdisplayoption.md)
   A type that indicates whether a formatted URL should include the host component.
 
 

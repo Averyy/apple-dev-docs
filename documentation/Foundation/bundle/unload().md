@@ -1,7 +1,8 @@
 # unload()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unloads the code associated with the receiver.
 
@@ -20,9 +21,13 @@ Unloads the code associated with the receiver.
 func unload() -> Bool
 ```
 
+```objc
+- (BOOL) unload;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bundle was successfully unloaded or was not already loaded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the bundle could not be unloaded.
+[`true`](../../Swift/true.md) if the bundle was successfully unloaded or was not already loaded; otherwise, [`false`](../../Swift/false.md) if the bundle could not be unloaded.
 
 #### Discussion
 
@@ -32,21 +37,22 @@ It is the responsibility of the caller to ensure that no in-memory objects or da
 
 ##### Special Considerations
 
-Prior to OS X version 10.5, code could not be unloaded once loaded, and this method would always return [`false`](https://developer.apple.com/documentation/swift/false). In macOS 10.5 and later, you can unload a bundle’s executable code using this method.
+Prior to OS X version 10.5, code could not be unloaded once loaded, and this method would always return [`false`](../../Swift/false.md). In macOS 10.5 and later, you can unload a bundle’s executable code using this method.
 
 ## See Also
 
-- [var executableArchitectures: [NSNumber]?](bundle/executablearchitectures.md)
+### Loading code from a bundle
+- [var executableArchitectures: [NSNumber]?](./executablearchitectures.md)
   An array of numbers indicating the architecture types supported by the bundle’s executable.
-- [func preflight() throws](bundle/preflight.md)
+- [func preflight() throws](./preflight%28%29.md)
   Returns a Boolean value indicating whether the bundle’s executable code could be loaded successfully.
-- [func load() -> Bool](bundle/load.md)
+- [func load() -> Bool](./load%28%29.md)
   Dynamically loads the bundle’s executable code into a running program, if the code has not already been loaded.
-- [func loadAndReturnError() throws](bundle/loadandreturnerror.md)
+- [func loadAndReturnError() throws](./loadandreturnerror%28%29.md)
   Loads the bundle’s executable code and returns any errors.
-- [var isLoaded: Bool](bundle/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   The load status of a bundle.
-- [Mach-O Architecture](1495005-mach-o-architecture.md)
+- [Mach-O Architecture](../api-1495005-mach-o-architecture.md)
   Constants that describe the CPU types that a bundle’s executable code supports.
 
 

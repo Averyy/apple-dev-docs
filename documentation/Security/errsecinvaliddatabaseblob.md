@@ -1,7 +1,8 @@
 # errSecInvalidDatabaseBlob
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified database has an invalid blob.
 
@@ -18,6 +19,10 @@ The specified database has an invalid blob.
 
 ```swift
 var errSecInvalidDatabaseBlob: OSStatus { get }
+```
+
+```c
+errSecInvalidDatabaseBlob
 ```
 
 

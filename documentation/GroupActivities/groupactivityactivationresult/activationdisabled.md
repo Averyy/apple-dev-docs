@@ -1,7 +1,8 @@
 # GroupActivityActivationResult.activationDisabled
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates the user disabled the automatic sharing of activities, or prefers to perform the activity locally.
 
@@ -25,9 +26,10 @@ Use the available context to determine the best way to proceed with this action.
 
 ## See Also
 
-- [GroupActivityActivationResult.activationPreferred](groupactivityactivationresult/activationpreferred.md)
+### Getting the activation results
+- [GroupActivityActivationResult.activationPreferred](./activationpreferred.md)
   A result that indicates the user wants to share the activity with the group.
-- [GroupActivityActivationResult.cancelled](groupactivityactivationresult/cancelled.md)
+- [GroupActivityActivationResult.cancelled](./cancelled.md)
   A result that indicates the user canceled the activation request.
 
 

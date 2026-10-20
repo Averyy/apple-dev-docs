@@ -1,7 +1,8 @@
 # makeRelationship(named:custom:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a relationship with the given name on this prim, or returns the existing relationship if one already exists.
 

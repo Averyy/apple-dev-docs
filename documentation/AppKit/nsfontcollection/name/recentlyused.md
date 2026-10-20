@@ -1,7 +1,8 @@
 # recentlyUsed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Font collection automatically maintained by NSFontManager.
 
@@ -14,13 +15,18 @@ Font collection automatically maintained by NSFontManager.
 static let recentlyUsed: NSFontCollection.Name
 ```
 
+```c
+extern NSFontCollectionName const NSFontCollectionRecentlyUsed;
+```
+
 ## See Also
 
-- [static let allFonts: NSFontCollection.Name](nsfontcollection/name/allfonts.md)
+### Type Properties
+- [static let allFonts: NSFontCollection.Name](./allfonts.md)
   All fonts in the system.
-- [static let user: NSFontCollection.Name](nsfontcollection/name/user.md)
+- [static let user: NSFontCollection.Name](./user.md)
   Per-user unmodifiable collection.
-- [static let favorites: NSFontCollection.Name](nsfontcollection/name/favorites.md)
+- [static let favorites: NSFontCollection.Name](./favorites.md)
   Font collection of the user’s preferred font descriptors.
 
 

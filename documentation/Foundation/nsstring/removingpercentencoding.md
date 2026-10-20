@@ -1,7 +1,8 @@
 # removingPercentEncoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a new string made from the receiver by replacing all percent encoded sequences with the matching UTF-8 characters.
 
@@ -20,6 +21,10 @@ Returns a new string made from the receiver by replacing all percent encoded seq
 var removingPercentEncoding: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * stringByRemovingPercentEncoding;
+```
+
 #### Return Value
 
 A new string with the percent-encoded sequences removed, or `nil` if the receiver contains an invalid percent-encoding sequence.
@@ -30,11 +35,13 @@ A new string with the percent-encoded sequences removed, or `nil` if the receive
 
 ## See Also
 
-- [func replacingPercentEscapes(using: UInt) -> String?](nsstring/replacingpercentescapes(using:).md)
+### Related Documentation
+- [func replacingPercentEscapes(using: UInt) -> String?](./replacingpercentescapes%28using%29.md)
   Returns a new string made by replacing in the receiver all percent escapes with the matching characters as determined by a given encoding.
-- [func addingPercentEscapes(using: UInt) -> String?](nsstring/addingpercentescapes(using:).md)
+- [func addingPercentEscapes(using: UInt) -> String?](./addingpercentescapes%28using%29.md)
   Returns a representation of the receiver using a given encoding to determine the percent escapes necessary to convert the receiver into a legal URL string.
-- [func addingPercentEncoding(withAllowedCharacters: CharacterSet) -> String?](nsstring/addingpercentencoding(withallowedcharacters:).md)
+### Working with URL Strings
+- [func addingPercentEncoding(withAllowedCharacters: CharacterSet) -> String?](./addingpercentencoding%28withallowedcharacters%29.md)
   Returns a new string made from the receiver by replacing all characters not in the specified set with percent-encoded characters.
 
 

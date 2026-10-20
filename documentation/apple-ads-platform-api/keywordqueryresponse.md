@@ -1,7 +1,8 @@
 # KeywordQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for a Keyword query, containing matched results and pagination metadata.
 
@@ -10,7 +11,7 @@ The response object for a Keyword query, containing matched results and paginati
 
 ## Declaration
 
-```swift
+```
 object KeywordQueryResponse
 ```
 
@@ -71,18 +72,18 @@ To narrow results to a specific ad group, campaign, or set of keyword IDs, use t
 ## Properties
 
 - `result` ([Keyword]): Array of matching `Keyword` objects. Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the query result, indicating total count and offset for offset-based navigation through large result sets. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error details if the request failed. See [`Error`](error.md). Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the query result, indicating total count and offset for offset-based navigation through large result sets. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error details if the request failed. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Keyword](keyword.md)
+- [object Keyword](./keyword.md)
   The targeting unit that connects a user’s search query to the ad group’s ads.
-- [object KeywordCreate](keywordcreate.md)
+- [object KeywordCreate](./keywordcreate.md)
   The request body for creating a new Keyword object.
-- [object KeywordUpdate](keywordupdate.md)
+- [object KeywordUpdate](./keywordupdate.md)
   The request body for updating an existing Keyword object.
-- [object KeywordResponse](keywordresponse.md)
+- [object KeywordResponse](./keywordresponse.md)
   The response object for a Keyword operation.
 
 

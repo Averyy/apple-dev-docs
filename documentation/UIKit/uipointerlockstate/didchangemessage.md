@@ -1,7 +1,8 @@
 # UIPointerLockState.DidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,16 +19,16 @@ struct DidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(scene: UIScene, pointerLockState: UIPointerLockState)](uipointerlockstate/didchangemessage/init(scene:pointerlockstate:).md)
+- [init(scene: UIScene, pointerLockState: UIPointerLockState)](./didchangemessage/init%28scene,pointerlockstate%29.md)
 ### Instance Properties
-- [var pointerLockState: UIPointerLockState](uipointerlockstate/didchangemessage/pointerlockstate.md)
-- [var scene: UIScene](uipointerlockstate/didchangemessage/scene.md)
+- [var pointerLockState: UIPointerLockState](./didchangemessage/pointerlockstate.md)
+- [var scene: UIScene](./didchangemessage/scene.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

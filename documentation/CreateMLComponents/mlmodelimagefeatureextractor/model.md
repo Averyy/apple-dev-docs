@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CoreML model with .mlmodel extension.
 
@@ -29,9 +30,10 @@ This model should satisfy the following requirements:
 
 ## See Also
 
-- [let inputName: String](mlmodelimagefeatureextractor/inputname.md)
+### Getting the properties
+- [let inputName: String](./inputname.md)
   The model’s input feature name.
-- [let outputName: String](mlmodelimagefeatureextractor/outputname.md)
+- [let outputName: String](./outputname.md)
   The model’s output feature name.
 
 

@@ -1,18 +1,19 @@
 # threadingModel
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The BLAS and LAPACK threading model.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - macOS 15.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ static var threadingModel: BLAS.ThreadingModel { get set }
 
 ## See Also
 
-- [struct ThreadingModel](blas/threadingmodel-swift.struct.md)
+### Setting the BLAS and LAPACK threading model
+- [struct ThreadingModel](./threadingmodel-swift.struct.md)
   Constants that describe the BLAS and LAPACK threading model.
 
 

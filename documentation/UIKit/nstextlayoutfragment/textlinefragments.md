@@ -1,7 +1,8 @@
 # textLineFragments
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of text line fragments.
 
@@ -18,17 +19,22 @@ An array of text line fragments.
 var textLineFragments: [NSTextLineFragment] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSTextLineFragment *> * textLineFragments;
+```
+
 #### Discussion
 
-Valid when [`NSTextLayoutFragment.State.layoutAvailable`](nstextlayoutfragment/state-swift.enum/layoutavailable.md). This property is KVO-compliant.
+Valid when [`NSTextLayoutFragment.State.layoutAvailable`](./state-swift.enum/layoutavailable.md). This property is KVO-compliant.
 
 ## See Also
 
-- [NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions.md)
+### Getting line fragments
+- [NSTextLayoutFragment.EnumerationOptions](./enumerationoptions.md)
   Values that describe options for enumerating text layout fragments.
-- [func textLineFragment(for: any NSTextLocation, isUpstreamAffinity: Bool) -> NSTextLineFragment?](nstextlayoutfragment/textlinefragment(for:isupstreamaffinity:).md)
+- [func textLineFragment(for: any NSTextLocation, isUpstreamAffinity: Bool) -> NSTextLineFragment?](./textlinefragment%28for,isupstreamaffinity%29.md)
   Returns a text line fragment from a specific text location in the document.
-- [func textLineFragment(forVerticalOffset: CGFloat, requiresExactMatch: Bool) -> NSTextLineFragment?](nstextlayoutfragment/textlinefragment(forverticaloffset:requiresexactmatch:).md)
+- [func textLineFragment(forVerticalOffset: CGFloat, requiresExactMatch: Bool) -> NSTextLineFragment?](./textlinefragment%28forverticaloffset,requiresexactmatch%29.md)
   Returns the text line fragment for the vertical offset you provide, or the closest text line fragment beyond the vertical offset.
 
 

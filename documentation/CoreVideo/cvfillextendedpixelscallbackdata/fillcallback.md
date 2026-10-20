@@ -1,7 +1,8 @@
 # fillCallBack
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 4.0+
@@ -18,11 +19,16 @@
 var fillCallBack: CVFillExtendedPixelsCallBack?
 ```
 
+```c
+CVFillExtendedPixelsCallBack fillCallBack;
+```
+
 ## See Also
 
-- [var refCon: UnsafeMutableRawPointer?](cvfillextendedpixelscallbackdata/refcon.md)
+### Properties
+- [var refCon: UnsafeMutableRawPointer?](./refcon.md)
   A pointer to application-defined data that is passed to your custom pixel fill function.
-- [var version: CFIndex](cvfillextendedpixelscallbackdata/version.md)
+- [var version: CFIndex](./version.md)
   The version of this fill algorithm.
 
 

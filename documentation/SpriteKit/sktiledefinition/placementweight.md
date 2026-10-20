@@ -1,7 +1,8 @@
 # placementWeight
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placement weight of the tile definition.
 
@@ -20,15 +21,20 @@ The placement weight of the tile definition.
 var placementWeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger placementWeight;
+```
+
 #### Discussion
 
-This value is used to determine how likely this tile definition is to be chosen for placement when a [`SKTileGroupRule`](sktilegrouprule.md) has multiple tile definitions assigned to it. A higher value relative to the other definitions assigned to the rule make it more likely for this definition to be selected; lower values make it less likely. Defaults to 1. When set to 0, the definition will never be chosen as long as there is at least one other definition with a [`placementWeight`](sktiledefinition/placementweight.md) above 0.
+This value is used to determine how likely this tile definition is to be chosen for placement when a [`SKTileGroupRule`](../sktilegrouprule.md) has multiple tile definitions assigned to it. A higher value relative to the other definitions assigned to the rule make it more likely for this definition to be selected; lower values make it less likely. Defaults to 1. When set to 0, the definition will never be chosen as long as there is at least one other definition with a [`placementWeight`](./placementweight.md) above 0.
 
 ## See Also
 
-- [var name: String?](sktiledefinition/name.md)
+### Reading or Adjusting a Tile’s Instance Properties
+- [var name: String?](./name.md)
   A name associated with the tile definition.
-- [var size: CGSize](sktiledefinition/size.md)
+- [var size: CGSize](./size.md)
   The size of the tile definition in points.
 
 

@@ -1,7 +1,8 @@
 # extensionName
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dictionary key for the localized extension name.
 
@@ -14,19 +15,24 @@ A dictionary key for the localized extension name.
 static let extensionName: VTExtensionPropertiesKey
 ```
 
+```c
+extern VTExtensionPropertiesKey const kVTExtensionProperties_ExtensionNameKey;
+```
+
 #### Discussion
 
 This key points to a `CFStringRef` value with the localized extension name.
 
 ## See Also
 
-- [static let containingBundleName: VTExtensionPropertiesKey](vtextensionpropertieskey/containingbundlename.md)
+### Keys
+- [static let containingBundleName: VTExtensionPropertiesKey](./containingbundlename.md)
   A dictionary key for the extension host application localized name.
-- [static let containingBundleURL: VTExtensionPropertiesKey](vtextensionpropertieskey/containingbundleurl.md)
+- [static let containingBundleURL: VTExtensionPropertiesKey](./containingbundleurl.md)
   A dictionary key for the URL of the extension host application.
-- [static let extensionIdentifier: VTExtensionPropertiesKey](vtextensionpropertieskey/extensionidentifier.md)
+- [static let extensionIdentifier: VTExtensionPropertiesKey](./extensionidentifier.md)
   A dictionary key for the video decoder extension identifier.
-- [static let extensionURL: VTExtensionPropertiesKey](vtextensionpropertieskey/extensionurl.md)
+- [static let extensionURL: VTExtensionPropertiesKey](./extensionurl.md)
   A dictionary key for the URL of the extension.
 
 

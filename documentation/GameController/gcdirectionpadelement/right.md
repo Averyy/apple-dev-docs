@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The input object that represents the right button on the directional pad.
@@ -20,13 +21,18 @@ The input object that represents the right button on the directional pad.
 var right: any GCLinearInput & GCPressedStateInput { get }
 ```
 
+```objc
+@property (readonly) id<GCLinearInput,GCPressedStateInput> right;
+```
+
 ## See Also
 
-- [var left: any GCLinearInput & GCPressedStateInput](gcdirectionpadelement/left.md)
+### Directional buttons
+- [var left: any GCLinearInput & GCPressedStateInput](./left.md)
   The input object that represents the left button on the directional pad.
-- [var up: any GCLinearInput & GCPressedStateInput](gcdirectionpadelement/up.md)
+- [var up: any GCLinearInput & GCPressedStateInput](./up.md)
   The input object that represents the up button on the directional pad.
-- [var down: any GCLinearInput & GCPressedStateInput](gcdirectionpadelement/down.md)
+- [var down: any GCLinearInput & GCPressedStateInput](./down.md)
   The input object that represents the down button on the directional pad.
 
 

@@ -1,7 +1,8 @@
 # from
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the animated property before the animation starts.
 

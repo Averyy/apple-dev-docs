@@ -1,7 +1,8 @@
 # SubscriptionGroupSubmissionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription group submission.
 
@@ -10,20 +11,20 @@ The request body you use to create a subscription group submission.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupSubmissionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupSubmissionCreateRequest.Data.Relationships](subscriptiongroupsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object SubscriptionGroupSubmissionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `relationships` (SubscriptionGroupSubmissionCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroupSubmissions`
 
 
 ---

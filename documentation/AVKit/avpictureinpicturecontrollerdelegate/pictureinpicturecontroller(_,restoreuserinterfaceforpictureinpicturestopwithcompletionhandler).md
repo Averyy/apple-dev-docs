@@ -1,7 +1,8 @@
 # pictureInPictureController(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to restore the user interface before Picture in Picture stops.
 
@@ -16,12 +17,20 @@ Tells the delegate to restore the user interface before Picture in Picture stops
 ## Declaration
 
 ```swift
+optional func pictureInPictureController(_ pictureInPictureController: AVPictureInPictureController, restoreUserInterfaceForPictureInPictureStopWithCompletionHandler completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func pictureInPictureController(_ pictureInPictureController: AVPictureInPictureController) async -> Bool
+```
+
+```objc
+- (void) pictureInPictureController:(AVPictureInPictureController *) pictureInPictureController restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:(void (^)(BOOL restored)) completionHandler;
 ```
 
 ## Mentions
 
-- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
+- [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
 #### Discussion
 

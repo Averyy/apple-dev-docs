@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message that describes the reason for the failure.
 
@@ -16,11 +17,12 @@ var failureReason: String? { get }
 
 ## See Also
 
-- [var code: ObjectTrackingProvider.Error.Code](objecttrackingprovider/error/code-swift.property.md)
+### Describing an error
+- [var code: ObjectTrackingProvider.Error.Code](./code-swift.property.md)
   The error code.
-- [ObjectTrackingProvider.Error.Code](objecttrackingprovider/error/code-swift.enum.md)
+- [ObjectTrackingProvider.Error.Code](./code-swift.enum.md)
   The enumeration of object-tracking provider error codes.
-- [var errorDescription: String?](objecttrackingprovider/error/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized message that describes an error.
 
 

@@ -1,7 +1,8 @@
 # challenge
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A single-use challenge to be signed by the created passkey.
 

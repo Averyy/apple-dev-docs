@@ -1,29 +1,30 @@
 # Deprecated Symbols
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: API Collection
 
 Map protocols and view modifiers that are no longer supported.
 
 ## Topics
 
 ### Initializers
-- [init(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:).md)
+- [init(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](./map/init%28coordinateregion,interactionmodes,showsuserlocation,usertrackingmode%29.md)
   Creates a map that displays a coordinate region and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
+- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](./map/init%28coordinateregion,interactionmodes,showsuserlocation,usertrackingmode,annotationitems,annotationcontent%29.md)
   Creates a map that displays a coordinate region with annotations, and optionally configures available interactions, user location, and tracking behavior.
-- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:).md)
+- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](./map/init%28maprect,interactionmodes,showsuserlocation,usertrackingmode%29.md)
   Creates a map that displays a map rectangle and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
+- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](./map/init%28maprect,interactionmodes,showsuserlocation,usertrackingmode,annotationitems,annotationcontent%29.md)
   Creates a map that displays a map rectangle with annotations, and optionally configures available interactions, user location, and tracking behavior.
 ### Structures
-- [struct MapAnnotation](mapannotation.md)
+- [struct MapAnnotation](./mapannotation.md)
   A customizable annotation that marks a map location.
-- [struct MapMarker](mapmarker.md)
+- [struct MapMarker](./mapmarker.md)
   A balloon-shaped annotation used to indicate the location on a map.
-- [struct MapPin](mappin.md)
+- [struct MapPin](./mappin.md)
   A pin-shaped annotation used to indicate a location on a map.
 ### Enumerations
-- [enum MapUserTrackingMode](mapusertrackingmode.md)
+- [enum MapUserTrackingMode](./mapusertrackingmode.md)
   The modes available for user tracking.
 
 

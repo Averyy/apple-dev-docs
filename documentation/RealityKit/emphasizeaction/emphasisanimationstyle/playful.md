@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisAnimationStyle.playful
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Animates with whimsical motion.
 

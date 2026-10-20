@@ -1,7 +1,8 @@
 # objectController()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object controller for the bindings between the filter and its view.
 
@@ -14,13 +15,18 @@ Returns the object controller for the bindings between the filter and its view.
 func objectController() -> NSObjectController!
 ```
 
+```objc
+- (NSObjectController *) objectController;
+```
+
 #### Return Value
 
 The object controller for the bindings between the filter and its view.
 
 ## See Also
 
-- [func filter() -> CIFilter!](ikfilteruiview/filter.md)
+### Getting Data from the Filter View
+- [func filter() -> CIFilter!](./filter%28%29.md)
   Returns the Core Image filter associated with the view.
 
 

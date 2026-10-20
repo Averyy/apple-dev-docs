@@ -1,7 +1,8 @@
 # storageURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that points to a writable storage directory.
 
@@ -20,15 +21,20 @@ A URL that points to a writable storage directory.
 var storageURL: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * storageURL;
+```
+
 #### Discussion
 
 The writable directory stores expired session reports.
 
 ## See Also
 
-- [var keySystem: AVContentKeySystem](avcontentkeysession/keysystem.md)
+### Inspecting the session
+- [var keySystem: AVContentKeySystem](./keysystem.md)
   The type of key system used to retrieve keys.
-- [struct AVContentKeySystem](avcontentkeysystem.md)
+- [struct AVContentKeySystem](../avcontentkeysystem.md)
   A key-delivery method for a content key session.
 
 

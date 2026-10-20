@@ -1,7 +1,8 @@
 # WKInterfaceObjectRepresentable.Context
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - watchOS 6.0+
@@ -14,9 +15,10 @@ typealias Context = WKInterfaceObjectRepresentableContext<Self>
 
 ## See Also
 
-- [func makeWKInterfaceObject(context: Self.Context) -> Self.WKInterfaceObjectType](wkinterfaceobjectrepresentable/makewkinterfaceobject(context:).md)
+### Creating and updating the interface object
+- [func makeWKInterfaceObject(context: Self.Context) -> Self.WKInterfaceObjectType](./makewkinterfaceobject%28context%29.md)
   Creates a WatchKit interface object and configures its initial state.
-- [func updateWKInterfaceObject(Self.WKInterfaceObjectType, context: Self.Context)](wkinterfaceobjectrepresentable/updatewkinterfaceobject(_:context:).md)
+- [func updateWKInterfaceObject(Self.WKInterfaceObjectType, context: Self.Context)](./updatewkinterfaceobject%28_,context%29.md)
   Updates the presented WatchKit interface object (and its coordinator) to the latest configuration.
 
 

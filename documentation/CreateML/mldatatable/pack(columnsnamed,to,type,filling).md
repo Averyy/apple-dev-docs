@@ -1,7 +1,8 @@
 # pack(columnsNamed:to:type:filling:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new data table with an additional column that contains the combined values of the given columns.
 
@@ -25,7 +26,7 @@ A new data table.
 
 #### Discussion
 
-This function performs the inverse of [`unpack(columnNamed:valueTypes:indexSubset:keySubset:)`](mldatatable/unpack(columnnamed:valuetypes:indexsubset:keysubset:).md).
+This function performs the inverse of [`unpack(columnNamed:valueTypes:indexSubset:keySubset:)`](./unpack%28columnnamed,valuetypes,indexsubset,keysubset%29.md).
 
 ## Parameters
 
@@ -36,7 +37,8 @@ This function performs the inverse of [`unpack(columnNamed:valueTypes:indexSubse
 
 ## See Also
 
-- [MLDataTable.PackType](mldatatable/packtype.md)
+### Compacting columns
+- [MLDataTable.PackType](./packtype.md)
   The storage operations for combining multiple columns into one.
 
 

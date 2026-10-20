@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty fetch operation.
 
@@ -20,13 +21,18 @@ Creates an empty fetch operation.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-You must set [`apiToken`](ckfetchwebauthtokenoperation/apitoken.md) before you execute the operation or add it to a queue.
+You must set [`apiToken`](./apitoken.md) before you execute the operation or add it to a queue.
 
 ## See Also
 
-- [convenience init(apiToken: String)](ckfetchwebauthtokenoperation/init(apitoken:)-14712.md)
+### Creating a Fetch Token Operation
+- [convenience init(apiToken: String)](./init%28apitoken%29-14712.md)
   Creates a fetch operation for the specified API token.
 
 

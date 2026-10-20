@@ -1,7 +1,8 @@
 # prepareToAnalyze(in:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the analyzer to begin work with minimal startup delay.
 
@@ -29,7 +30,8 @@ The analyzer normally performs some configuration lazily as the first audio inpu
 
 ## See Also
 
-- [func prepareToAnalyze(in: AVAudioFormat?, withProgressReadyHandler: sending ((Progress) -> Void)?) async throws](speechanalyzer/preparetoanalyze(in:withprogressreadyhandler:).md)
+### Improving responsiveness
+- [func prepareToAnalyze(in: AVAudioFormat?, withProgressReadyHandler: sending ((Progress) -> Void)?) async throws](./preparetoanalyze%28in,withprogressreadyhandler%29.md)
   Prepares the analyzer to begin work with minimal startup delay, reporting the progress of that preparation.
 
 

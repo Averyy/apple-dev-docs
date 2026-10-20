@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human readable description of the entity.
 
@@ -11,7 +12,7 @@ A human readable description of the entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ A human readable description of the entity.
 
 ## See Also
 
-- [var scene: Scene?](entity/scene.md)
+### Inspecting an entity
+- [var scene: Scene?](./scene.md)
   The scene that owns the entity.
-- [var name: String](entity/name.md)
+- [var name: String](./name.md)
   The name of the entity.
-- [func findEntity(named: String) -> Entity?](entity/findentity(named:).md)
+- [func findEntity(named: String) -> Entity?](./findentity%28named%29.md)
   Recursively searches all descendant entities for one with the given name.
 
 

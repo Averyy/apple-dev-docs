@@ -1,7 +1,8 @@
 # VZVirtioConsoleDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a Virtio console device in a virtual machine.
 
@@ -14,33 +15,39 @@ A class that represents a Virtio console device in a virtual machine.
 class VZVirtioConsoleDevice
 ```
 
+```objc
+@interface VZVirtioConsoleDevice : VZConsoleDevice
+```
+
 ## Topics
 
 ### Configuring the console
-- [var ports: VZVirtioConsolePortArray](vzvirtioconsoledevice/ports.md)
+- [var ports: VZVirtioConsolePortArray](./vzvirtioconsoledevice/ports.md)
   The array of console ports that a specific device uses.
-- [var delegate: (any VZVirtioConsoleDeviceDelegate)?](vzvirtioconsoledevice/delegate.md)
+- [var delegate: (any VZVirtioConsoleDeviceDelegate)?](./vzvirtioconsoledevice/delegate.md)
   The delegate object for the console device.
-- [protocol VZVirtioConsoleDeviceDelegate](vzvirtioconsoledevicedelegate.md)
+- [protocol VZVirtioConsoleDeviceDelegate](./vzvirtioconsoledevicedelegate.md)
   Optional methods that you use to respond when a console port opens or closes in the virtual machine.
 
 ## Relationships
 
 ### Inherits From
-- [VZConsoleDevice](vzconsoledevice.md)
+- [VZConsoleDevice](./vzconsoledevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZConsoleDeviceConfiguration](vzconsoledeviceconfiguration.md)
+### Related Documentation
+- [class VZConsoleDeviceConfiguration](./vzconsoledeviceconfiguration.md)
   The base class for a console device configuration.
-- [class VZConsoleDevice](vzconsoledevice.md)
+### Devices
+- [class VZConsoleDevice](./vzconsoledevice.md)
   A class that represents a console device in a VM.
 
 

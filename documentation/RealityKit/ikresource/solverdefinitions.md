@@ -1,7 +1,8 @@
 # solverDefinitions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Getter for the deserialized resource contents as a collection of solver definitions.
 

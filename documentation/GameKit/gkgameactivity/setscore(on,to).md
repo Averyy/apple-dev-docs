@@ -1,7 +1,8 @@
 # setScore(on:to:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a score of a leaderboard for a player.
 
@@ -19,19 +20,24 @@ Set a score of a leaderboard for a player.
 func setScore(on leaderboard: GKLeaderboard, to score: Int)
 ```
 
+```objc
+- (void) setScoreOnLeaderboard:(GKLeaderboard *) leaderboard toScore:(NSInteger) score;
+```
+
 #### Discussion
 
 The framewowrk submits the score to the leaderboard when the activity ends.
 
 ## See Also
 
-- [var leaderboardScores: Set<GKLeaderboardScore>](gkgameactivity/leaderboardscores.md)
+### Getting and removing leaderboard scores
+- [var leaderboardScores: Set<GKLeaderboardScore>](./leaderboardscores.md)
   All leaderboard scores that have been associated with this activity.
-- [func score(on: GKLeaderboard) -> GKLeaderboardScore?](gkgameactivity/score(on:).md)
+- [func score(on: GKLeaderboard) -> GKLeaderboardScore?](./score%28on%29.md)
   Get the leaderboard score from a specific leaderboard of the local player if previously set.
-- [func setScore(on: GKLeaderboard, to: Int, context: Int)](gkgameactivity/setscore(on:to:context:).md)
+- [func setScore(on: GKLeaderboard, to: Int, context: Int)](./setscore%28on,to,context%29.md)
   Set a score of a leaderboard with a context for a player.
-- [func removeScores(from: [GKLeaderboard])](gkgameactivity/removescores(from:).md)
+- [func removeScores(from: [GKLeaderboard])](./removescores%28from%29.md)
   Removes all scores from leaderboards for a player if exist.
 
 

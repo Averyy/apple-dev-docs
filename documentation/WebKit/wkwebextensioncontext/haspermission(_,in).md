@@ -1,7 +1,8 @@
 # hasPermission(_:in:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks the specified permission against the currently granted permissions in a specific tab.
 
@@ -18,6 +19,10 @@ Checks the specified permission against the currently granted permissions in a s
 func hasPermission(_ permission: WKWebExtension.Permission, in tab: (any WKWebExtensionTab)?) -> Bool
 ```
 
+```objc
+- (BOOL) hasPermission:(WKWebExtensionPermission) permission inTab:(id<WKWebExtensionTab>) tab;
+```
+
 #### Discussion
 
 Permissions can be granted on a per-tab basis. When the tab is known, permission checks should always use this method.
@@ -29,13 +34,14 @@ Permissions can be granted on a per-tab basis. When the tab is known, permission
 
 ## See Also
 
-- [var currentPermissions: Set<WKWebExtension.Permission>](wkwebextensioncontext/currentpermissions.md)
+### Related Documentation
+- [var currentPermissions: Set<WKWebExtension.Permission>](./currentpermissions.md)
   The currently granted permissions that have not expired.
-- [func hasPermission(WKWebExtension.Permission) -> Bool](wkwebextensioncontext/haspermission(_:).md)
+- [func hasPermission(WKWebExtension.Permission) -> Bool](./haspermission%28_%29.md)
   Checks the specified permission against the currently granted permissions.
-- [func permissionStatus(for: WKWebExtension.Permission) -> WKWebExtensionContext.PermissionStatus](wkwebextensioncontext/permissionstatus(for:)-3qq2w.md)
+- [func permissionStatus(for: WKWebExtension.Permission) -> WKWebExtensionContext.PermissionStatus](./permissionstatus%28for%29-3qq2w.md)
   Checks the specified permission against the currently denied, granted, and requested permissions.
-- [func permissionStatus(for: WKWebExtension.Permission, in: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus](wkwebextensioncontext/permissionstatus(for:in:)-4h82n.md)
+- [func permissionStatus(for: WKWebExtension.Permission, in: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus](./permissionstatus%28for,in%29-4h82n.md)
   Checks the specified permission against the currently denied, granted, and requested permissions.
 
 

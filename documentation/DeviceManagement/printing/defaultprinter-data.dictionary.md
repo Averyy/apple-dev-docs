@@ -1,7 +1,8 @@
 # Printing.DefaultPrinter
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A default printer for the user.
 
@@ -10,7 +11,7 @@ A default printer for the user.
 
 ## Declaration
 
-```swift
+```
 object Printing.DefaultPrinter
 ```
 
@@ -21,7 +22,8 @@ object Printing.DefaultPrinter
 
 ## See Also
 
-- [object Printing.UserPrinterList](printing/userprinterlist-data.dictionary.md)
+### Objects
+- [object Printing.UserPrinterList](./userprinterlist-data.dictionary.md)
   A list of printer dictionaries.
 
 

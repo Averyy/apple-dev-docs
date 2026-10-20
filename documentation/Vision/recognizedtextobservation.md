@@ -1,7 +1,8 @@
 # RecognizedTextObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains information about both the location and content of text and glyphs that the framework recognizes in an image.
 
@@ -22,43 +23,43 @@ struct RecognizedTextObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNRecognizedTextObservation)](recognizedtextobservation/init(_:).md)
+- [init(VNRecognizedTextObservation)](./recognizedtextobservation/init%28_%29.md)
   Creates a recognized text observation.
 ### Inspecting an observation
-- [var boundingRegion: NormalizedRegion](recognizedtextobservation/boundingregion.md)
+- [var boundingRegion: NormalizedRegion](./recognizedtextobservation/boundingregion.md)
   The bounding region of the text.
-- [let isTitle: Bool](recognizedtextobservation/istitle.md)
+- [let isTitle: Bool](./recognizedtextobservation/istitle.md)
   Whether this text is the title of the document.
-- [let recognitionLanguages: [Locale.Language]](recognizedtextobservation/recognitionlanguages.md)
+- [let recognitionLanguages: [Locale.Language]](./recognizedtextobservation/recognitionlanguages.md)
   The languages in which the recognized text was written.
-- [let shouldWrapToNextLine: Bool?](recognizedtextobservation/shouldwraptonextline.md)
+- [let shouldWrapToNextLine: Bool?](./recognizedtextobservation/shouldwraptonextline.md)
   Whether the text continues on the next line.
-- [let textDirection: RecognizedTextObservation.Direction?](recognizedtextobservation/textdirection.md)
-- [RecognizedTextObservation.Direction](recognizedtextobservation/direction.md)
+- [let textDirection: RecognizedTextObservation.Direction?](./recognizedtextobservation/textdirection.md)
+- [RecognizedTextObservation.Direction](./recognizedtextobservation/direction.md)
   An enum representing which direction the text is read.
-- [var transcript: String](recognizedtextobservation/transcript.md)
+- [var transcript: String](./recognizedtextobservation/transcript.md)
   The top text candidate as a string.
 ### Getting the recognized text
-- [func topCandidates(Int) -> [RecognizedText]](recognizedtextobservation/topcandidates(_:).md)
+- [func topCandidates(Int) -> [RecognizedText]](./recognizedtextobservation/topcandidates%28_%29.md)
   Requests the top candidates for a recognized text string.
-- [struct RecognizedText](recognizedtext.md)
+- [struct RecognizedText](./recognizedtext.md)
   Text recognized in an image through a text recognition request.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [QuadrilateralProviding](quadrilateralproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [QuadrilateralProviding](./quadrilateralproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

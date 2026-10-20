@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Input color texture you set for the scaler that supports the correct color texture usage options.
@@ -18,6 +19,10 @@ Input color texture you set for the scaler that supports the correct color textu
 
 ```swift
 var colorTexture: (any MTLTexture)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> colorTexture;
 ```
 
 

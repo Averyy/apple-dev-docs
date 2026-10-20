@@ -1,12 +1,15 @@
 # validationData
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data represented as a `MLDataTable`.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 10.15
+
+> **Deprecated**: Use the validation property instead.
 
 ## Declaration
 
@@ -20,11 +23,12 @@ var validationData: MLDataTable? { get set }
 
 ## See Also
 
-- [var convergenceThreshold: Double](mlsupportvectorclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mlsupportvectorclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var maxIterations: Int](mlsupportvectorclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var penalty: Double](mlsupportvectorclassifier/modelparameters-swift.struct/penalty.md)
-- [var validation: MLSupportVectorClassifier.ModelParameters.ValidationData](mlsupportvectorclassifier/modelparameters-swift.struct/validation.md)
+### Accessing parameters
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var penalty: Double](./penalty.md)
+- [var validation: MLSupportVectorClassifier.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

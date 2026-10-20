@@ -1,7 +1,8 @@
 # strides
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines strides for spatial dimensions.
 
@@ -17,6 +18,10 @@ The property that defines strides for spatial dimensions.
 
 ```swift
 var strides: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) MPSShape * strides;
 ```
 
 #### Discussion

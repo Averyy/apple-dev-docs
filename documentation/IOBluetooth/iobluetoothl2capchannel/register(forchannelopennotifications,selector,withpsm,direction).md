@@ -1,17 +1,22 @@
 # register(forChannelOpenNotifications:selector:withPSM:direction:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allows a client to register for L2CAP channel open notifications for certain types of L2CAP channels.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func register(forChannelOpenNotifications object: Any!, selector: Selector!, withPSM psm: BluetoothL2CAPPSM, direction inDirection: IOBluetoothUserNotificationChannelDirection) -> IOBluetoothUserNotification!
+```
+
+```objc
++ (IOBluetoothUserNotification *) registerForChannelOpenNotifications:(id) object selector:(SEL) selector withPSM:(BluetoothL2CAPPSM) psm direction:(IOBluetoothUserNotificationChannelDirection) inDirection;
 ```
 
 #### Return Value

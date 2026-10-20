@@ -1,7 +1,8 @@
 # StatusMigrationAssistantReport
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the state of a completed migration.
 
@@ -10,13 +11,13 @@ The status item that reports the state of a completed migration.
 
 ## Declaration
 
-```swift
+```
 object StatusMigrationAssistantReport
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ object StatusMigrationAssistantReport
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -49,7 +50,7 @@ object StatusMigrationAssistantReport
 ## Topics
 
 ### Objects
-- [object StatusMigrationAssistantReportMigrationAssistantReportObject](statusmigrationassistantreportmigrationassistantreportobject.md)
+- [object StatusMigrationAssistantReportMigrationAssistantReportObject](./statusmigrationassistantreportmigrationassistantreportobject.md)
   The Migration Assistant migration status.
 
 ## Properties
@@ -58,7 +59,8 @@ object StatusMigrationAssistantReport
 
 ## See Also
 
-- [object StatusMigrationAssistantState](statusmigrationassistantstate.md)
+### Migration assisstant items
+- [object StatusMigrationAssistantState](./statusmigrationassistantstate.md)
   A status item that shows the device’s current migration state.
 
 

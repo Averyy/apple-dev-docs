@@ -1,7 +1,8 @@
 # id
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the recognized item.
 

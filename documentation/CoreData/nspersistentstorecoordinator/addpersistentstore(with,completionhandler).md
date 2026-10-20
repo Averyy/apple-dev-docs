@@ -1,7 +1,8 @@
 # addPersistentStore(with:completionHandler:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a persistent store using the provided description.
 
@@ -20,6 +21,10 @@ Adds a persistent store using the provided description.
 func addPersistentStore(with storeDescription: NSPersistentStoreDescription, completionHandler block: @escaping (NSPersistentStoreDescription, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) addPersistentStoreWithDescription:(NSPersistentStoreDescription *) storeDescription completionHandler:(void (^)(NSPersistentStoreDescription *, NSError *)) block;
+```
+
 ## Parameters
 
 - `storeDescription`: A description object used to create and load a persistent store.
@@ -27,11 +32,12 @@ func addPersistentStore(with storeDescription: NSPersistentStoreDescription, com
 
 ## See Also
 
-- [func addPersistentStore(type: NSPersistentStore.StoreType, configuration: String?, at: URL, options: [AnyHashable : Any]?) throws -> NSPersistentStore](nspersistentstorecoordinator/addpersistentstore(type:configuration:at:options:).md)
+### Adding or removing a store
+- [func addPersistentStore(type: NSPersistentStore.StoreType, configuration: String?, at: URL, options: [AnyHashable : Any]?) throws -> NSPersistentStore](./addpersistentstore%28type,configuration,at,options%29.md)
   Adds a specific type of persistent store at the provided location.
-- [func addPersistentStore(ofType: String, configurationName: String?, at: URL?, options: [AnyHashable : Any]?) throws -> NSPersistentStore](nspersistentstorecoordinator/addpersistentstore(oftype:configurationname:at:options:).md)
+- [func addPersistentStore(ofType: String, configurationName: String?, at: URL?, options: [AnyHashable : Any]?) throws -> NSPersistentStore](./addpersistentstore%28oftype,configurationname,at,options%29.md)
   Adds a specific type of persistent store at the provided location.
-- [func remove(NSPersistentStore) throws](nspersistentstorecoordinator/remove(_:).md)
+- [func remove(NSPersistentStore) throws](./remove%28_%29.md)
   Removes the specified persistent store from the coordinator.
 
 

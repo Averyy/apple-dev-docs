@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -19,6 +20,11 @@
 ```swift
 func validate() throws
 ```
+
+## Default Implementations
+
+### DataStoreConfiguration Implementations
+- [func validate() throws](./validate%28%29-7u64l.md)
 
 
 ---

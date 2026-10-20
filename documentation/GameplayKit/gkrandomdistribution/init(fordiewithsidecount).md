@@ -1,7 +1,8 @@
 # init(forDieWithSideCount:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random distribution equivalent to a die with the specified number of sides.
 
@@ -19,13 +20,17 @@ Creates a random distribution equivalent to a die with the specified number of s
 convenience init(forDieWithSideCount sideCount: Int)
 ```
 
+```objc
++ (instancetype) distributionForDieWithSideCount:(NSInteger) sideCount;
+```
+
 #### Return Value
 
 A uniform random distribution that produces values in the range `[1, sideCount]`.
 
 #### Discussion
 
-Creating a random source with this method is equivalent to calling the [`init(randomSource:lowestValue:highestValue:)`](gkrandomdistribution/init(randomsource:lowestvalue:highestvalue:).md) initializer, passing a new instance of the [`GKARC4RandomSource`](gkarc4randomsource.md) class for the `source` parameter, and passing 1 and `sideCount` for the `lowestValue` and `highestValue` parameters. Because the newly created distribution uses its own [`GKRandomSource`](gkrandomsource.md) instance, the random behavior of the distribution is independent from that of other randomizers.
+Creating a random source with this method is equivalent to calling the [`init(randomSource:lowestValue:highestValue:)`](./init%28randomsource,lowestvalue,highestvalue%29.md) initializer, passing a new instance of the [`GKARC4RandomSource`](../gkarc4randomsource.md) class for the `source` parameter, and passing 1 and `sideCount` for the `lowestValue` and `highestValue` parameters. Because the newly created distribution uses its own [`GKRandomSource`](../gkrandomsource.md) instance, the random behavior of the distribution is independent from that of other randomizers.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ Creating a random source with this method is equivalent to calling the [`init(ra
 
 ## See Also
 
-- [class func d6() -> Self](gkrandomdistribution/d6.md)
+### Creating Specific Random Distributions
+- [class func d6() -> Self](./d6%28%29.md)
   Creates a random distribution equivalent to a six-sided die.
-- [class func d20() -> Self](gkrandomdistribution/d20.md)
+- [class func d20() -> Self](./d20%28%29.md)
   Creates a random distribution equivalent to a twenty-sided die.
 
 

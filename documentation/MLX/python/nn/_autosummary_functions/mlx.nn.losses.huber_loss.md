@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.losses.huber_loss
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary_functions/mlx.nn.losses.huber_loss.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.losses.huber_loss
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.losses.huber_loss
-
 **class huber_loss(*inputs: array*, *targets: array*, *delta: float = 1.0*, *reduction: Literal['none', 'mean', 'sum'] = 'none'*)**
 : Computes the Huber loss between inputs and targets.
 
@@ -44,8 +17,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 Parameters:
 
-**inputs** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted values.
-**targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The target values.
+**inputs** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The predicted values.
+**targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The target values.
 **delta** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The threshold at which to change between L1 and L2
 loss. Default: `1.0`.
 **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
@@ -55,6 +28,4 @@ Returns:
 The computed Huber loss.
 
 Return type:
-[array](../../_autosummary/mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](../../_autosummary/mlx.core.array.md#mlx.core.array)

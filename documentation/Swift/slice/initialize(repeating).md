@@ -1,7 +1,8 @@
 # initialize(repeating:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes every element in this buffer slice’s memory to a copy of the given value.
 
@@ -19,6 +20,8 @@ Initializes every element in this buffer slice’s memory to a copy of the given
 ```swift
 func initialize<Element>(repeating repeatedValue: Element) where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Discussion
 

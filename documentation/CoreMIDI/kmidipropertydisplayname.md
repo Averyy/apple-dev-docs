@@ -1,7 +1,8 @@
 # kMIDIPropertyDisplayName
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user-visible name for an endpoint that combines the device and endpoint names.
 
@@ -18,13 +19,18 @@ The user-visible name for an endpoint that combines the device and endpoint name
 let kMIDIPropertyDisplayName: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyDisplayName;
+```
+
 #### Discussion
 
-For objects other than endpoints, the display name is the same as its [`kMIDIPropertyName`](kmidipropertyname.md) value.
+For objects other than endpoints, the display name is the same as its [`kMIDIPropertyName`](./kmidipropertyname.md) value.
 
 ## See Also
 
-- [let kMIDIPropertyImage: CFString](kmidipropertyimage.md)
+### Presentation
+- [let kMIDIPropertyImage: CFString](./kmidipropertyimage.md)
   The full path to a device icon on the system.
 
 

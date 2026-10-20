@@ -1,14 +1,15 @@
 # guidanceState
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifies the provided guidance and its usability by the load device
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ let guidanceState: ElectricHVACLoadEvent.Session.GuidanceState
 
 ## See Also
 
-- [ElectricHVACLoadEvent.Session.GuidanceState](electrichvacloadevent/session-swift.struct/guidancestate-swift.struct.md)
+### Identifying the guidance state
+- [ElectricHVACLoadEvent.Session.GuidanceState](./guidancestate-swift.struct.md)
   Identifies the provided guidance and its usability by the load device
 
 

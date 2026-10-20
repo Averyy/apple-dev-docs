@@ -1,7 +1,8 @@
 # bottomPadding
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,13 +13,18 @@
 var bottomPadding: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat bottomPadding;
+```
+
 ## See Also
 
-- [var topPadding: CGFloat](nsgridrow/toppadding.md)
-- [var height: CGFloat](nsgridrow/height.md)
-- [var rowAlignment: NSGridRow.Alignment](nsgridrow/rowalignment.md)
-- [var yPlacement: NSGridCell.Placement](nsgridrow/yplacement.md)
-- [NSGridRow.Alignment](nsgridrow/alignment.md)
+### Formatting the Row
+- [var topPadding: CGFloat](./toppadding.md)
+- [var height: CGFloat](./height.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
+- [NSGridRow.Alignment](./alignment.md)
 
 
 ---

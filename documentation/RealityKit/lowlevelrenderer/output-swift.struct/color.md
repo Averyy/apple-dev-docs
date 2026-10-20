@@ -1,7 +1,8 @@
 # color
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color output texture. Corresponds to `MTLRenderPassColorAttachmentDescriptor.texture`.
 

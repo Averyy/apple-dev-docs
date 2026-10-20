@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty section snapshot.
 
@@ -18,15 +19,20 @@ Creates an empty section snapshot.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [func ofParentItem(Any) -> NSDiffableDataSourceSectionSnapshotReference](nsdiffabledatasourcesectionsnapshotreference/ofparentitem(_:).md)
+### Creating a section snapshot
+- [func ofParentItem(Any) -> NSDiffableDataSourceSectionSnapshotReference](./ofparentitem%28_%29.md)
   Creates a section snapshot containing the child items of the specified parent item, excluding the parent item.
-- [func ofParentItem(Any, includingParentItem: Bool) -> NSDiffableDataSourceSectionSnapshotReference](nsdiffabledatasourcesectionsnapshotreference/ofparentitem(_:includingparentitem:).md)
+- [func ofParentItem(Any, includingParentItem: Bool) -> NSDiffableDataSourceSectionSnapshotReference](./ofparentitem%28_,includingparentitem%29.md)
   Creates a section snapshot containing the child items of the specified parent item, including the parent item.
-- [func appendItems([Any])](nsdiffabledatasourcesectionsnapshotreference/appenditems(_:).md)
+- [func appendItems([Any])](./appenditems%28_%29.md)
   Adds the specified items to the section snapshot.
-- [func appendItems([Any], intoParentItem: Any?)](nsdiffabledatasourcesectionsnapshotreference/appenditems(_:intoparentitem:).md)
+- [func appendItems([Any], intoParentItem: Any?)](./appenditems%28_,intoparentitem%29.md)
   Adds the specified items as child items of the specified parent item in the section snapshot.
 
 

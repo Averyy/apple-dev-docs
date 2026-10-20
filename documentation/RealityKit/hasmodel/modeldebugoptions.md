@@ -1,7 +1,8 @@
 # modelDebugOptions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the debug visualization of this model.
 
@@ -11,7 +12,7 @@ Configures the debug visualization of this model.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

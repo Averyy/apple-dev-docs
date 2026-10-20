@@ -1,6 +1,7 @@
 # Deploying software updates using declarative management
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Use declarative configurations to deploy and manage software updates on managed devices.
 
@@ -10,7 +11,7 @@ Instead of initiating software updates on managed devices on-demand, you can use
 
 #### Use the Apple Software Lookup Service
 
-The Apple Software Lookup Service (available at ([`https://gdmf.apple.com/v2/pmv`](https://developer.apple.comhttps://gdmf.apple.com/v2/pmv)) is the official resource to obtain a list of publicly available updates, upgrades, and Background Security Improvements. It allows a device management service to query releases as soon as Apple publishes them, and calculate applicability for each hardware model in a timely and accurate manner.
+The Apple Software Lookup Service (available at ([https://gdmf.apple.com/v2/pmv](https://gdmf.apple.com/v2/pmv)) is the official resource to obtain a list of publicly available updates, upgrades, and Background Security Improvements. It allows a device management service to query releases as soon as Apple publishes them, and calculate applicability for each hardware model in a timely and accurate manner.
 
 The JSON response contains three lists of available software releases:
 
@@ -18,7 +19,7 @@ The JSON response contains three lists of available software releases:
 - `AssetSets`: This list is a subset of `PublicAssetSets` and contains all the releases available for device management services to push to devices.
 - `PublicBackgroundSecurityImprovements`: This list contains Background Security Improvement releases currently available for Apple devices.
 
-Each element in the list contains the `ProductVersion` number and `Build` of the operating system, the `PostingDate` when the release was published, the `ExpirationDate`, and a list of `SupportedDevices` for that release. The device list matches the `ProductName` or `PRODUCT` value from the device, which is returned in a [`DeviceInformationResponse`](deviceinformationresponse.md), the initial [`Authenticate`](authenticate.md) request, or in the [`MachineInfo`](machineinfo.md) when the device tries to enroll.
+Each element in the list contains the `ProductVersion` number and `Build` of the operating system, the `PostingDate` when the release was published, the `ExpirationDate`, and a list of `SupportedDevices` for that release. The device list matches the `ProductName` or `PRODUCT` value from the device, which is returned in a [`DeviceInformationResponse`](./deviceinformationresponse.md), the initial [`Authenticate`](./authenticate.md) request, or in the [`MachineInfo`](./machineinfo.md) when the device tries to enroll.
 
 The expiration date, typically set to 180 days after the posting date, defines the date the signing of the update expires. An expired update can’t be installed on devices anymore. When subsequent updates are made available, previous updates might have their expiration dates updated. If an expiration date isn’t provided, the update has yet to expire. An update has expired only when it has an expiration date in the past.
 
@@ -56,25 +57,25 @@ The following is an example entry from the Apple Software Lookup Service:
 
 Use the product version list to determine which versions are later than the deviceʼs current operating system version, and are applicable to a specific device. Then provide that list of versions to the administrator as potential operating system update candidates.
 
-#### Send a Status Report to the Device Management Service
+#### Send a status report to the device management service
 
-To receive updates for status items as they change, the device management service needs to subscribe to each status report by sending a [`ManagementStatusSubscriptions`](managementstatussubscriptions.md) declaration to the device. The device then sends a `StatusReport` to the device management service when a [`ManagementStatusSubscriptions`](managementstatussubscriptions.md) declaration becomes active, if the status of a subscribed item changes, and every 24 hours.
+To receive updates for status items as they change, the device management service needs to subscribe to each status report by sending a [`ManagementStatusSubscriptions`](./managementstatussubscriptions.md) declaration to the device. The device then sends a `StatusReport` to the device management service when a [`ManagementStatusSubscriptions`](./managementstatussubscriptions.md) declaration becomes active, if the status of a subscribed item changes, and every 24 hours.
 
 For the purposes of monitoring operating system versions and software update status, the device management service may want to subscribe to the following status reports:
 
 | Status report | Description |
 | --- | --- |
-| [`StatusDeviceOperatingSystemBuildVersion`](statusdeviceoperatingsystembuildversion.md) | The operating system’s build version on the device (for example, 21E219). |
-| [`StatusDeviceOperatingSystemVersion`](statusdeviceoperatingsystemversion.md) | The operating system’s version in use on the device (for example, 17.4). |
-| [`StatusDeviceOperatingSystemSupplementalBuildVersion`](statusdeviceoperatingsystemsupplementalbuildversion.md) | The operating system’s build and Background Security Improvement versions in use on the device, for example (20A123a or 20F75c). |
-| [`StatusDeviceOperatingSystemSupplementalExtraVersion`](statusdeviceoperatingsystemsupplementalextraversion.md) | The operating system’s Background Security Improvement version in use on the device (for example, a). |
-| [`StatusSoftwareUpdatePendingVersion`](statussoftwareupdatependingversion.md) | A dictionary that contains the build and operating system versions of the software update that’s pending on the device. |
-| [`StatusSoftwareUpdateInstallState`](statussoftwareupdateinstallstate.md) | The software update installation status, which has one of values listed below. |
-| [`StatusSoftwareUpdateInstallReason`](statussoftwareupdateinstallreason.md) | A dictionary with details about the reason for a pending software update. |
-| [`StatusSoftwareUpdateFailureReason`](statussoftwareupdatefailurereason.md) | Details about a software update failure. The details include the number of times the software update has failed, last failure timestamp, and the failure reason. |
-| [`StatusSoftwareUpdateBetaEnrollment`](statussoftwareupdatebetaenrollment.md) | The device’s enrolled beta program name, or an empty string if there is no enrolled beta program. |
+| [`StatusDeviceOperatingSystemBuildVersion`](./statusdeviceoperatingsystembuildversion.md) | The operating system’s build version on the device (for example, 21E219). |
+| [`StatusDeviceOperatingSystemVersion`](./statusdeviceoperatingsystemversion.md) | The operating system’s version in use on the device (for example, 17.4). |
+| [`StatusDeviceOperatingSystemSupplementalBuildVersion`](./statusdeviceoperatingsystemsupplementalbuildversion.md) | The operating system’s build and Background Security Improvement versions in use on the device, for example (20A123a or 20F75c). |
+| [`StatusDeviceOperatingSystemSupplementalExtraVersion`](./statusdeviceoperatingsystemsupplementalextraversion.md) | The operating system’s Background Security Improvement version in use on the device (for example, a). |
+| [`StatusSoftwareUpdatePendingVersion`](./statussoftwareupdatependingversion.md) | A dictionary that contains the build and operating system versions of the software update that’s pending on the device. |
+| [`StatusSoftwareUpdateInstallState`](./statussoftwareupdateinstallstate.md) | The software update installation status, which has one of values listed below. |
+| [`StatusSoftwareUpdateInstallReason`](./statussoftwareupdateinstallreason.md) | A dictionary with details about the reason for a pending software update. |
+| [`StatusSoftwareUpdateFailureReason`](./statussoftwareupdatefailurereason.md) | Details about a software update failure. The details include the number of times the software update has failed, last failure timestamp, and the failure reason. |
+| [`StatusSoftwareUpdateBetaEnrollment`](./statussoftwareupdatebetaenrollment.md) | The device’s enrolled beta program name, or an empty string if there is no enrolled beta program. |
 
-The [`StatusSoftwareUpdateInstallState`](statussoftwareupdateinstallstate.md) can have one of the following values:
+The [`StatusSoftwareUpdateInstallState`](./statussoftwareupdateinstallstate.md) can have one of the following values:
 
 - `none`: There’s no software update pending, and any previous software update succeeded.
 - `waiting`: A software update is waiting to start.
@@ -83,7 +84,7 @@ The [`StatusSoftwareUpdateInstallState`](statussoftwareupdateinstallstate.md) ca
 - `installing`: The device is installing the software update.
 - `failed`: The software update failed.
 
-The [`StatusSoftwareUpdateInstallReason`](statussoftwareupdateinstallreason.md) can have one of the following values:
+The [`StatusSoftwareUpdateInstallReason`](./statussoftwareupdateinstallreason.md) can have one of the following values:
 
 - `system-settings`: It was initiated from Settings (on iOS, iPadOS, and tvOS) or System Settings (on macOS).
 - `install-tonight`: It was initiated by an install tonight action.
@@ -94,13 +95,13 @@ The [`StatusSoftwareUpdateInstallReason`](statussoftwareupdateinstallreason.md) 
 - `mdm`: It was initiated by a device management command.
 - `declaration: It was initiated by a declarative device management configuration.
 
-In addition to the other reports, device management services may also want to make [`StatusSoftwareUpdateInstallReason`](statussoftwareupdateinstallreason.md) available to administrator for support purposes, and to provide additional insight into how an update occurs. You can use this dictionary to determine whether a user initiates the update, the update happens automatically, or a software update enforcement declaration initiates it.
+In addition to the other reports, device management services may also want to make [`StatusSoftwareUpdateInstallReason`](./statussoftwareupdateinstallreason.md) available to administrator for support purposes, and to provide additional insight into how an update occurs. You can use this dictionary to determine whether a user initiates the update, the update happens automatically, or a software update enforcement declaration initiates it.
 
-#### Request a Specific Minimum Software Version During Enrollment
+#### Request a specific minimum software version during enrollment
 
-If a device supports this capability, it returns an `MDM_CAN_REQUEST_SOFTWARE_UPDATE` key, set to `true`, in the [`MachineInfo`](machineinfo.md) data that it sends in the initial HTTP `POST` request to the device management service when the device detects a management configuration in Setup Assistant.
+If a device supports this capability, it returns an `MDM_CAN_REQUEST_SOFTWARE_UPDATE` key, set to `true`, in the [`MachineInfo`](./machineinfo.md) data that it sends in the initial HTTP `POST` request to the device management service when the device detects a management configuration in Setup Assistant.
 
-In addition, devices provide the following fields in the [`MachineInfo`](machineinfo.md) data which are relevant for software update management:
+In addition, devices provide the following fields in the [`MachineInfo`](./machineinfo.md) data which are relevant for software update management:
 
 - `VERSION`
 - `OS_VERSION`
@@ -113,7 +114,7 @@ Based on the provided information, the device management service can decide whet
 - If a device management service chooses *not* to enforce a software update, it simply returns the enrollment profile in response to the HTTP `POST` request, as it does to allow the enrollment to proceed.
 - If the device management service chooses to enforce a software update, it needs to return an HTTP response with the 403 status code, and include a JSON or XML object in the response body (the HTTP `Content-Type` response header needs to be set to `application/json` or `application/xml`, respectively).
 
-After receiving this error response, the device attempts to update to the specified version. If the update succeeds, the device restarts and the user needs to go through Setup Assistant again. The next [`MachineInfo`](machineinfo.md) HTTP `POST` request from the device to the device management service shows the updated operating system version, and the service can then proceed with enrollment. If the update fails, an error message displays to the user, and the Remote Management pane appears in Setup Assistant again.
+After receiving this error response, the device attempts to update to the specified version. If the update succeeds, the device restarts and the user needs to go through Setup Assistant again. The next [`MachineInfo`](./machineinfo.md) HTTP `POST` request from the device to the device management service shows the updated operating system version, and the service can then proceed with enrollment. If the update fails, an error message displays to the user, and the Remote Management pane appears in Setup Assistant again.
 
 The response schema is defined in the table below.
 
@@ -136,17 +137,17 @@ If you specify only `OSVersion`, a device automatically downloads and installs a
 
 > ❗ **Important**:  Before macOS 15, only releases from the `PublicAssetSets` and `PublicBackgroundSecurityImprovements` lists can be specified. In macOS 15, assets from `AssetSets` can also be used.
 
-#### Device Management Settings for Software Updates
+#### Device management settings for software updates
 
-The [`SoftwareUpdateSettings`](softwareupdatesettings.md) declaration consists of dictionaries that can be used to configure various aspects of the software update behavior.
+The [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration consists of dictionaries that can be used to configure various aspects of the software update behavior.
 
 After a device management service distributes different keys across multiple declarations, a device merges the settings of all active software update settings declarations. If multiple declarations configure the same key, the merge behavior depends on the individual key, which is outlined in the tables below.
 
-#### Configure Automatic Software Updates with Device Management
+#### Configure automatic software updates with device management
 
-The [`SoftwareUpdateSettings`](softwareupdatesettings.md) declaration offers a dictionary to define the automatic software update behavior on supervised iPhone, iPad, Mac, and Apple TV devices.
+The [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration offers a dictionary to define the automatic software update behavior on supervised iPhone, iPad, Mac, and Apple TV devices.
 
-#### How a Device Management Service Handles Background Security Improvements
+#### How a device management service handles Background Security Improvements
 
 Background Security Improvements always apply to the latest update of an operating system, which becomes the base version of the Background Security Improvement. For example, if an iPhone has operating system version iOS 17.2 installed, then it applies the 17.2 (a) supplemental update, if one is available. In iOS 18, iPadOS 18, and macOS 15, combined updates have been made available, which allow a software update to include any available Background Security Improvements.
 
@@ -159,19 +160,19 @@ In iOS 18, iPadOS 18, and macOS 15, a device management service can specify eith
 
 These two approaches apply to the software update enforcement configuration, and to the enforced minimum version during Automated Device Enrollment.
 
-The [`SoftwareUpdateSettings`](softwareupdatesettings.md) declaration can also be used to configure the Background Security Improvement behavior on supervised iPhone, iPad, and Mac devices.
+The [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration can also be used to configure the Background Security Improvement behavior on supervised iPhone, iPad, and Mac devices.
 
-#### Defer a Software Update with Device Management
+#### Defer a software update with device management
 
-Deferring a software update or upgrade from 1 to 90 days is done using the [`SoftwareUpdateSettings`](softwareupdatesettings.md) declaration on supervised iPhone, iPad, and Mac devices.
+Deferring a software update or upgrade from 1 to 90 days is done using the [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration on supervised iPhone, iPad, and Mac devices.
 
 A configured deferral defines the number of days before an organization offers a release to users after it becomes publicly available. Independent of a configured deferral, a device management service can still enforce a specific software update, upgrade, or Background Security Improvement on managed devices.
 
 > **Note**:  Deferring software updates also defers any Background Security Improvements that are dependent on that version.
 
-#### Enforce Software Updates with Device Management
+#### Enforce software updates with device management
 
-To enforce a software update by a certain time on devices that enroll using Device Enrollment or Automated Device Enrollment, device management services can apply the [`SoftwareUpdateEnforcementSpecific`](softwareupdateenforcementspecific.md) declaration.
+To enforce a software update by a certain time on devices that enroll using Device Enrollment or Automated Device Enrollment, device management services can apply the [`SoftwareUpdateEnforcementSpecific`](./softwareupdateenforcementspecific.md) declaration.
 
 If a configuration gets applied to a device that specifies an operating system or build version that’s the same as, or older than the current device version, the device returns an error in the status report.
 
@@ -214,21 +215,22 @@ The operating system automatically installs any available Background Security Im
 
 The `Notifications` key changes the default notification behavior to show only a notification 1 hour before the enforcement time and the restart countdown.
 
-#### Use the Bootstrap Token for Mac Computers with Apple Silicon
+#### Use the bootstrap token for Mac computers with Apple silicon
 
-To authorize an enforced software update on a supervised Mac computer with Apple silicon, a device management service can request and escrow a bootstrap token. This allows for a completely seamless software update experience, and avoids the need for user interaction as part of the process. When needed, the device uses a [`GetBootstrapTokenRequest`](getbootstraptokenrequest.md) to retrieve the bootstrap token from the device management service.
+To authorize an enforced software update on a supervised Mac computer with Apple silicon, a device management service can request and escrow a bootstrap token. This allows for a completely seamless software update experience, and avoids the need for user interaction as part of the process. When needed, the device uses a [`GetBootstrapTokenRequest`](./getbootstraptokenrequest.md) to retrieve the bootstrap token from the device management service.
 
-In the first step, the device management service determines whether the device supports a bootstrap token using the [`SecurityInfoCommand`](securityinfocommand.md). If the response includes a `BootstrapTokenRequiredForSoftwareUpdate` that’s set to `true`, the device can use a bootstrap token to authorize a software update.
+In the first step, the device management service determines whether the device supports a bootstrap token using the [`SecurityInfoCommand`](./securityinfocommand.md). If the response includes a `BootstrapTokenRequiredForSoftwareUpdate` that’s set to `true`, the device can use a bootstrap token to authorize a software update.
 
-To create a bootstrap token, the device management service needs to add `com.apple.mdm.bootstraptoken` to the `ServerCapabilities` array in the [`MDM`](mdm.md) profile.
+To create a bootstrap token, the device management service needs to add `com.apple.mdm.bootstraptoken` to the `ServerCapabilities` array in the [`MDM`](./mdm.md) profile.
 
-After the device receives the bootstrap token, it creates a bootstrap token the next time a secure token-enabled user logs in. It then reaches out to the check-in endpoint of the device management service and escrows the token using a [`Set Bootstrap Token`](set-bootstrap-token.md) request.
+After the device receives the bootstrap token, it creates a bootstrap token the next time a secure token-enabled user logs in. It then reaches out to the check-in endpoint of the device management service and escrows the token using a [`Set Bootstrap Token`](./set-bootstrap-token.md) request.
 
 ## See Also
 
-- [Phases of software update enforcement](phases-of-software-update-enforcement.md)
+### Software updates
+- [Phases of software update enforcement](./phases-of-software-update-enforcement.md)
   Enforcing software updates on Apple devices goes through specific phases.
-- [Enrolling a device in a beta program](enrolling-a-device-in-a-beta-program.md)
+- [Enrolling a device in a beta program](./enrolling-a-device-in-a-beta-program.md)
   Use program tokens to manage beta program enrollment.
 
 

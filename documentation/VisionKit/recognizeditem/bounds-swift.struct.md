@@ -1,7 +1,8 @@
 # RecognizedItem.Bounds
 
 **Framework**: VisionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the four corners of a recognized item.
 
@@ -19,24 +20,25 @@ struct Bounds
 ## Topics
 
 ### Getting the corners of items
-- [var topLeft: CGPoint](recognizeditem/bounds-swift.struct/topleft.md)
+- [var topLeft: CGPoint](./bounds-swift.struct/topleft.md)
   The upper-left corner of the recognized item in view coordinates.
-- [var topRight: CGPoint](recognizeditem/bounds-swift.struct/topright.md)
+- [var topRight: CGPoint](./bounds-swift.struct/topright.md)
   The upper-right corner of the recognized item in view coordinates.
-- [var bottomRight: CGPoint](recognizeditem/bounds-swift.struct/bottomright.md)
+- [var bottomRight: CGPoint](./bounds-swift.struct/bottomright.md)
   The lower-right corner of the recognized item in view coordinates.
-- [var bottomLeft: CGPoint](recognizeditem/bounds-swift.struct/bottomleft.md)
+- [var bottomLeft: CGPoint](./bounds-swift.struct/bottomleft.md)
   The lower-left corner of the recognized item in view coordinates.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bounds: RecognizedItem.Bounds](recognizeditem/bounds-swift.property.md)
+### Item location
+- [var bounds: RecognizedItem.Bounds](./bounds-swift.property.md)
   The four corners of the recognized item in view coordinates.
 
 

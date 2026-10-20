@@ -1,14 +1,15 @@
 # set_es
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 void set_es(uint16_t es);
 ```
 

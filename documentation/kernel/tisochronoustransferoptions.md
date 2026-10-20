@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum tIsochronousTransferOptions : unsigned int {
     ...
 };
@@ -17,7 +17,7 @@ enum tIsochronousTransferOptions : unsigned int {
 ## Topics
 
 ### Constants
-- [kIsochronousTransferOptionsNone](tisochronoustransferoptions/kisochronoustransferoptionsnone.md)
+- [kIsochronousTransferOptionsNone](./tisochronoustransferoptions/kisochronoustransferoptionsnone.md)
 
 
 ---

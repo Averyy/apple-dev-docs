@@ -1,7 +1,8 @@
 # builtInOuterUltraWideCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.1+
@@ -12,6 +13,10 @@
 
 ```swift
 static let builtInOuterUltraWideCamera: AVCaptureDevice.DeviceType
+```
+
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInOuterUltraWideCamera;
 ```
 
 #### Discussion

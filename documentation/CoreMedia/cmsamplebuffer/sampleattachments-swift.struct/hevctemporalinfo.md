@@ -1,7 +1,8 @@
 # hevcTemporalInfo
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates a video frame’s level within a hierarchical frame dependency structure.
 

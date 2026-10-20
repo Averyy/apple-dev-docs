@@ -1,7 +1,8 @@
 # reserved1
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved; set to 0.
 
@@ -12,6 +13,10 @@ Reserved; set to 0.
 
 ```swift
 var reserved1: Int16
+```
+
+```c
+short reserved1;
 ```
 
 

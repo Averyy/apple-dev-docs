@@ -1,7 +1,8 @@
 # IOUSBHostCINormalTransferData1BufferPhase
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,11 +14,16 @@
 var IOUSBHostCINormalTransferData1BufferPhase: UInt { get }
 ```
 
+```c
+IOUSBHostCINormalTransferData1BufferPhase
+```
+
 ## See Also
 
-- [var IOUSBHostCINormalTransferData0Length: Int](iousbhostcinormaltransferdata0length.md)
-- [var IOUSBHostCINormalTransferData0LengthPhase: Int](iousbhostcinormaltransferdata0lengthphase.md)
-- [var IOUSBHostCINormalTransferData1Buffer: UInt](iousbhostcinormaltransferdata1buffer.md)
+### Constants
+- [var IOUSBHostCINormalTransferData0Length: Int](./iousbhostcinormaltransferdata0length.md)
+- [var IOUSBHostCINormalTransferData0LengthPhase: Int](./iousbhostcinormaltransferdata0lengthphase.md)
+- [var IOUSBHostCINormalTransferData1Buffer: UInt](./iousbhostcinormaltransferdata1buffer.md)
 
 
 ---

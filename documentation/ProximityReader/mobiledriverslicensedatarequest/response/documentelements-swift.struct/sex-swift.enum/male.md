@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.male
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the mobile driver’s license holder is male as defined in ISO/IEC 5218.
 

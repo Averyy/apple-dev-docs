@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func transform(forSourceImage image: MPSImage, handle: (any MPSHandle)?) -> MPSScaleTransform
+```
+
+```objc
+- (MPSScaleTransform) transformForSourceImage:(MPSImage *) image handle:(id<MPSHandle>) handle;
 ```
 
 

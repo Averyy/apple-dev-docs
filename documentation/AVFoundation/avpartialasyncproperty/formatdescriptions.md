@@ -1,7 +1,8 @@
 # formatDescriptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The format descriptions of the media samples that a track references.
 
@@ -20,15 +21,17 @@ The format descriptions of the media samples that a track references.
 static var formatDescriptions: AVAsyncProperty<Root, [CMFormatDescription]> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-The array contains [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) objects that indicate the format of media samples the track references.
+The array contains [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) objects that indicate the format of media samples the track references.
 
-Asset tracks typically present uniform media (for example, media that uses the same encoding settings) and contain a single format description. However, in some cases, an asset track may contain multiple format descriptions. For example, an H.264-encoded video track may have some segments that use the Main profile and others that use the High profile. Also, an individual [`AVCompositionTrack`](avcompositiontrack.md), which subclasses [`AVAssetTrack`](avassettrack.md), may contain audio or video segments using different codecs.
+Asset tracks typically present uniform media (for example, media that uses the same encoding settings) and contain a single format description. However, in some cases, an asset track may contain multiple format descriptions. For example, an H.264-encoded video track may have some segments that use the Main profile and others that use the High profile. Also, an individual [`AVCompositionTrack`](../avcompositiontrack.md), which subclasses [`AVAssetTrack`](../avassettrack.md), may contain audio or video segments using different codecs.
 
-You can use [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) to access low-level details about the media the track references. For example, you can retrieve the details of track’s media type and subtype as the code below shows:
+You can use [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) to access low-level details about the media the track references. For example, you can retrieve the details of track’s media type and subtype as the code below shows:
 
 ```swift
 extension AVAssetTrack {
@@ -72,17 +75,18 @@ extension FourCharCode {
 
 ## See Also
 
-- [static var isPlayable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isplayable-6txa5.md)
+### Loading track information
+- [static var isPlayable: AVAsyncProperty<Root, Bool>](./isplayable-6txa5.md)
   A Boolean value that indicates whether the track is playable in the current environment.
-- [static var isDecodable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isdecodable.md)
+- [static var isDecodable: AVAsyncProperty<Root, Bool>](./isdecodable.md)
   A Boolean value that indicates whether the track is decodable in the current environment.
-- [static var isEnabled: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isenabled.md)
+- [static var isEnabled: AVAsyncProperty<Root, Bool>](./isenabled.md)
   A Boolean value that indicates whether the track is in an enabled state.
-- [static var isSelfContained: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isselfcontained.md)
+- [static var isSelfContained: AVAsyncProperty<Root, Bool>](./isselfcontained.md)
   A Boolean value that indicates whether the track references sample data only within its container file.
-- [static var totalSampleDataLength: AVAsyncProperty<Root, Int64>](avpartialasyncproperty/totalsampledatalength.md)
+- [static var totalSampleDataLength: AVAsyncProperty<Root, Int64>](./totalsampledatalength.md)
   The total number of bytes of sample data the track requires.
-- [static var mediaCharacteristics: AVAsyncProperty<Root, [AVMediaCharacteristic]>](avpartialasyncproperty/mediacharacteristics.md)
+- [static var mediaCharacteristics: AVAsyncProperty<Root, [AVMediaCharacteristic]>](./mediacharacteristics.md)
   The media characteristics for the track.
 
 

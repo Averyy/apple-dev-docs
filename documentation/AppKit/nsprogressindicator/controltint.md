@@ -1,12 +1,15 @@
 # controlTint
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The progress indicator’s control tint.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 14.0
+
+> **Deprecated**: The controlTint property is not respected on 10.15 and later
 
 ## Declaration
 
@@ -14,13 +17,18 @@ The progress indicator’s control tint.
 var controlTint: NSControlTint { get set }
 ```
 
+```objc
+@property NSControlTint controlTint;
+```
+
 #### Discussion
 
-See [`NSCell`](nscell.md) for possible values.
+See [`NSCell`](../nscell.md) for possible values.
 
 ## See Also
 
-- [var isBezeled: Bool](nsprogressindicator/isbezeled.md)
+### Deprecated properties
+- [var isBezeled: Bool](./isbezeled.md)
   A Boolean that indicates whether the progress indicator’s frame has a three-dimensional bezel.
 
 

@@ -1,12 +1,15 @@
 # TVPlaylist
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of media items associated with the Apple TV JavaScript player.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,43 +17,48 @@ A collection of media items associated with the Apple TV JavaScript player.
 class TVPlaylist
 ```
 
+```objc
+@interface TVPlaylist : NSObject
+```
+
 #### Overview
 
-A `TVPlaylist` object contains read-only information about a playlist associated with the JavaScript player. You can use this information with your own custom [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) objects exposed through a [`TVPlayer`](tvplayer.md) object. For example, you can retrieve album information from the JavaScript player and play the track through a `TVPlayer` object.
+A `TVPlaylist` object contains read-only information about a playlist associated with the JavaScript player. You can use this information with your own custom [`AVPlayer`](../AVFoundation/avplayer.md) objects exposed through a [`TVPlayer`](./tvplayer.md) object. For example, you can retrieve album information from the JavaScript player and play the track through a `TVPlayer` object.
 
 ## Topics
 
 ### Retrieving Playlist Information
-- [var mediaItems: [TVMediaItem]](tvplaylist/mediaitems.md)
+- [var mediaItems: [TVMediaItem]](./tvplaylist/mediaitems.md)
   An array of media items contained in the playlist.
-- [var userInfo: [String : Any]?](tvplaylist/userinfo.md)
+- [var userInfo: [String : Any]?](./tvplaylist/userinfo.md)
   User-defined metadata, like a developer-specific identifier, for a playlist.
-- [var repeatMode: TVPlaylist.RepeatMode](tvplaylist/repeatmode-swift.property.md)
+- [var repeatMode: TVPlaylist.RepeatMode](./tvplaylist/repeatmode-swift.property.md)
   A mode that determines how media items are replayed.
-- [TVPlaylist.RepeatMode](tvplaylist/repeatmode-swift.enum.md)
+- [TVPlaylist.RepeatMode](./tvplaylist/repeatmode-swift.enum.md)
   The modes that indicate how or whether media items can be replayed.
-- [var endAction: TVPlaylist.EndAction](tvplaylist/endaction-swift.property.md)
+- [var endAction: TVPlaylist.EndAction](./tvplaylist/endaction-swift.property.md)
   An action that causes media playback to end.
-- [TVPlaylist.EndAction](tvplaylist/endaction-swift.enum.md)
+- [TVPlaylist.EndAction](./tvplaylist/endaction-swift.enum.md)
   The actions that cause media playback to end.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TVMediaItem](tvmediaitem.md)
+### Custom Player
+- [class TVMediaItem](./tvmediaitem.md)
   A single audio or video item associated with the Apple TV JavaScript player.
-- [class TVPlayer](tvplayer.md)
+- [class TVPlayer](./tvplayer.md)
   A customizable native media player used to control playback from the JavaScript player used in an Apple TV client-server app.
 
 

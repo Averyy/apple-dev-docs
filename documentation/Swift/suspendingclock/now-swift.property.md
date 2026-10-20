@@ -1,7 +1,8 @@
 # now
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current instant accounting for machine suspension.
 

@@ -1,21 +1,26 @@
 # bindAndWriteData(_:forInputs:to:batchSize:synchronous:)
 
 **Framework**: ML Compute  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates the given data with the input tensors, and if the device is a GPU, also copies the data to the device memory.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 func bindAndWriteData(_ inputsData: [String : MLCTensorData], forInputs inputTensors: [String : MLCTensor], to device: MLCDevice, batchSize: Int, synchronous: Bool) -> Bool
+```
+
+```objc
+- (BOOL) bindAndWriteData:(NSDictionary<NSString *,MLCTensorData *> *) inputsData forInputs:(NSDictionary<NSString *,MLCTensor *> *) inputTensors toDevice:(MLCDevice *) device batchSize:(NSUInteger) batchSize synchronous:(BOOL) synchronous;
 ```
 
 #### Return Value
@@ -40,7 +45,8 @@ Use asynchronous execution for better performance, except when testing or debugg
 
 ## See Also
 
-- [func bindAndWriteData([String : MLCTensorData], forInputs: [String : MLCTensor], to: MLCDevice, synchronous: Bool) -> Bool](mlcgraph/bindandwritedata(_:forinputs:to:synchronous:).md)
+### Associating Data with Input Tensors
+- [func bindAndWriteData([String : MLCTensorData], forInputs: [String : MLCTensor], to: MLCDevice, synchronous: Bool) -> Bool](./bindandwritedata%28_,forinputs,to,synchronous%29.md)
   Associates the given data with the input tensors, and if the device is a GPU, also copies the data to the device memory.
 
 

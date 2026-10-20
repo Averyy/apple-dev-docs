@@ -1,7 +1,8 @@
 # UIPointerEffect.automatic(_:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pointer content effect with the given preview’s view.
 
@@ -9,7 +10,7 @@ A pointer content effect with the given preview’s view.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

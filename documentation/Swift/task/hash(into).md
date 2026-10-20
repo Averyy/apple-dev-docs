@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -20,6 +21,8 @@ Hashes the essential components of this value by feeding them into the given has
 func hash(into hasher: inout Hasher)
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 #### Discussion
 
 Implement this method to conform to the `Hashable` protocol. The components used for hashing must be the same as the components compared in your type’s `==` operator implementation. Call `hasher.combine(_:)` with each of these components.
@@ -32,11 +35,12 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 ## See Also
 
-- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
+### Comparing Tasks
+- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](task/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](task/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

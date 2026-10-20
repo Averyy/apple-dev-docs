@@ -1,7 +1,8 @@
 # ImageAttachmentContent
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that holds image data.
 
@@ -21,22 +22,23 @@ struct ImageAttachmentContent
 
 #### Overview
 
-You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](attachment.md) initializers to attach a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e), or image file URL.
+You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](./attachment.md) initializers to attach a [`CGImage`](../CoreGraphics/cgimage.md), [`CIImage`](../CoreImage/ciimage.md), [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md), or image file URL.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
+### Prompt attachments
+- [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
   Analyze and extract information from images by combining them with descriptive text prompts.
-- [struct Attachment](attachment.md)
+- [struct Attachment](./attachment.md)
   An asset provided to the model.
-- [struct ImageReference](imagereference.md)
+- [struct ImageReference](./imagereference.md)
   A reference to an image in a session’s transcript.
 
 

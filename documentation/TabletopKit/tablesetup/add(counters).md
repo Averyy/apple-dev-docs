@@ -1,7 +1,8 @@
 # add(counters:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ mutating func add(counters: some Sequence<ScoreCounter>)
 
 ## See Also
 
-- [func add(counter: ScoreCounter)](tablesetup/add(counter:).md)
+### Adding counters to keep score
+- [func add(counter: ScoreCounter)](./add%28counter%29.md)
 
 
 ---

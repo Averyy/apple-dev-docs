@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Private Cloud Compute language model instance.
 

@@ -1,16 +1,17 @@
 # UITouch.Phase.cancelled
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system canceled tracking for a touch, for example, when the user moves the device against their face.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,21 +19,26 @@ The system canceled tracking for a touch, for example, when the user moves the d
 case cancelled
 ```
 
+```c
+UITouchPhaseCancelled
+```
+
 ## See Also
 
-- [UITouch.Phase.began](uitouch/phase-swift.enum/began.md)
+### Constants
+- [UITouch.Phase.began](./began.md)
   A touch for a given event has pressed down on the screen.
-- [UITouch.Phase.moved](uitouch/phase-swift.enum/moved.md)
+- [UITouch.Phase.moved](./moved.md)
   A touch for a given event has moved over the screen.
-- [UITouch.Phase.stationary](uitouch/phase-swift.enum/stationary.md)
+- [UITouch.Phase.stationary](./stationary.md)
   A touch for a given event is pressed down on the screen, but hasn’t moved since the previous event.
-- [UITouch.Phase.ended](uitouch/phase-swift.enum/ended.md)
+- [UITouch.Phase.ended](./ended.md)
   A touch for a given event has lifted from the screen.
-- [UITouch.Phase.regionEntered](uitouch/phase-swift.enum/regionentered.md)
+- [UITouch.Phase.regionEntered](./regionentered.md)
   A touch for a given event has entered a window on the screen.
-- [UITouch.Phase.regionMoved](uitouch/phase-swift.enum/regionmoved.md)
+- [UITouch.Phase.regionMoved](./regionmoved.md)
   A touch for the given event is within a window on the screen, but has not yet pressed down.
-- [UITouch.Phase.regionExited](uitouch/phase-swift.enum/regionexited.md)
+- [UITouch.Phase.regionExited](./regionexited.md)
   A touch for a given event has left a window on the screen.
 
 

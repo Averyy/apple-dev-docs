@@ -1,7 +1,8 @@
 # tileTensor(_:withMultiplier:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a tile operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a tile operation and returns the result tensor.
 
 ```swift
 func tileTensor(_ tensor: MPSGraphTensor, withMultiplier multiplier: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) tileTensor:(MPSGraphTensor *) tensor withMultiplier:(MPSShape *) multiplier name:(NSString *) name;
 ```
 
 #### Return Value

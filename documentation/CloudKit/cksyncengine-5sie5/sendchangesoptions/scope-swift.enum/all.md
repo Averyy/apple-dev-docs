@@ -1,7 +1,8 @@
 # CKSyncEngine.SendChangesOptions.Scope.all
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Send changes for all zones.
 
@@ -11,7 +12,7 @@ Send changes for all zones.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

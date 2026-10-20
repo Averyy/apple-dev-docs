@@ -1,7 +1,8 @@
 # MLDataTable.ColumnNames
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of the names of the columns in a data table.
 
@@ -22,28 +23,29 @@ struct ColumnNames
 ## Topics
 
 ### Accessing columns
-- [subscript(_:)](mldatatable/subscript(_:).md)
+- [subscript(_:)](./subscript%28_%29.md)
   Retrieves or adds an untyped column with the specified name.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var columnNames: MLDataTable.ColumnNames](mldatatable/columnnames-swift.property.md)
+### Getting information about a data table’s columns
+- [var columnNames: MLDataTable.ColumnNames](./columnnames-swift.property.md)
   The names of the columns in the data table.
-- [var columnTypes: [String : MLDataValue.ValueType]](mldatatable/columntypes.md)
+- [var columnTypes: [String : MLDataValue.ValueType]](./columntypes.md)
   The type of the data in each column.
 
 

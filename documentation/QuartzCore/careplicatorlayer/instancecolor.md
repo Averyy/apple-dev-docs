@@ -1,7 +1,8 @@
 # instanceColor
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the color used to multiply the source object. Animatable.
 
@@ -19,19 +20,24 @@ Defines the color used to multiply the source object. Animatable.
 var instanceColor: CGColor? { get set }
 ```
 
+```objc
+@property (nullable) CGColorRef instanceColor;
+```
+
 #### Discussion
 
 Defaults to opaque white.
 
 ## See Also
 
-- [var instanceRedOffset: Float](careplicatorlayer/instanceredoffset.md)
+### Accessing Instance Color Values
+- [var instanceRedOffset: Float](./instanceredoffset.md)
   Defines the offset added to the red component of the color for each replicated instance. Animatable.
-- [var instanceGreenOffset: Float](careplicatorlayer/instancegreenoffset.md)
+- [var instanceGreenOffset: Float](./instancegreenoffset.md)
   Defines the offset added to the green component of the color for each replicated instance. Animatable.
-- [var instanceBlueOffset: Float](careplicatorlayer/instanceblueoffset.md)
+- [var instanceBlueOffset: Float](./instanceblueoffset.md)
   Defines the offset added to the blue component of the color for each replicated instance. Animatable.
-- [var instanceAlphaOffset: Float](careplicatorlayer/instancealphaoffset.md)
+- [var instanceAlphaOffset: Float](./instancealphaoffset.md)
   Defines the offset added to the alpha component of the color for each replicated instance. Animatable.
 
 

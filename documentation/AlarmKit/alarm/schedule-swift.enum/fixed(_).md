@@ -1,7 +1,8 @@
 # Alarm.Schedule.fixed(_:)
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A one-shot alarm that fires at a specific time, not a time relative to the current time zone.
 
@@ -22,9 +23,10 @@ You can use `fixed` for events where the time won’t vary based on where the pe
 
 ## See Also
 
-- [Alarm.Schedule.Relative](alarm/schedule-swift.enum/relative.md)
+### Setting an alarm schedule
+- [Alarm.Schedule.Relative](./relative.md)
   An object that describes when an alarm alerts, relative to the device’s timezone.
-- [case relative(Alarm.Schedule.Relative)](alarm/schedule-swift.enum/relative(_:).md)
+- [case relative(Alarm.Schedule.Relative)](./relative%28_%29.md)
   An alarm that can repeat and fire at a time relative to the device’s current time zone.
 
 

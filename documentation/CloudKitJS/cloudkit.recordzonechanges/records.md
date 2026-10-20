@@ -1,7 +1,8 @@
 # records
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The records that changed.
 
@@ -10,7 +11,7 @@ The records that changed.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.Record[] records;
 ```
 

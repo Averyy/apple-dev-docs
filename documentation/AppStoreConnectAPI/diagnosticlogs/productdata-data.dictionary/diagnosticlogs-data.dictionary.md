@@ -1,7 +1,8 @@
 # diagnosticLogs.ProductData.DiagnosticLogs
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The call stack representation and metadata of the diagnostic log.
 
@@ -10,16 +11,16 @@ The call stack representation and metadata of the diagnostic log.
 
 ## Declaration
 
-```swift
+```
 object diagnosticLogs.ProductData.DiagnosticLogs
 ```
 
 ## Topics
 
 ### Objects
-- [object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary/callstacktree-data.dictionary.md)
+- [object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree](./diagnosticlogs-data.dictionary/callstacktree-data.dictionary.md)
   The call stack representation of the diagnostic logs for single or multiple threads.
-- [object diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary/diagnosticmetadata-data.dictionary.md)
+- [object diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData](./diagnosticlogs-data.dictionary/diagnosticmetadata-data.dictionary.md)
   Information about the diagnostic log including app version and build information, event details, OS, device type, and platform, and disk writes.
 
 ## Properties
@@ -29,11 +30,12 @@ object diagnosticLogs.ProductData.DiagnosticLogs
 
 ## See Also
 
-- [object diagnosticLogs.ProductData.DiagnosticInsights](diagnosticlogs/productdata-data.dictionary/diagnosticinsights-data.dictionary.md)
+### Objects
+- [object diagnosticLogs.ProductData.DiagnosticInsights](./diagnosticinsights-data.dictionary.md)
   Information about an insight including a descriptive string, category, and URL.
-- [type DiagnosticInsightDirection](diagnosticinsightdirection.md)
+- [type DiagnosticInsightDirection](../../diagnosticinsightdirection.md)
   A string that describes the diagnostic insight direction.
-- [type DiagnosticInsightType](diagnosticinsighttype.md)
+- [type DiagnosticInsightType](../../diagnosticinsighttype.md)
   A string that desribes the diagnostic insight type.
 
 

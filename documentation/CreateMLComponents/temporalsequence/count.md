@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of elements in the sequence if available, calculated nondestructively.

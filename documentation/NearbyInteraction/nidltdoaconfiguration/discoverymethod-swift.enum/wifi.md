@@ -1,7 +1,8 @@
 # NIDLTDOAConfiguration.DiscoveryMethod.wifi
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A method to discover DL-TDOA anchors using Wi-Fi.
 
@@ -16,9 +17,14 @@ A method to discover DL-TDOA anchors using Wi-Fi.
 case wifi
 ```
 
+```c
+NIDLTDOADiscoveryMethodWiFi
+```
+
 ## See Also
 
-- [NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy](nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md)
+### Specifying the discovery technology
+- [NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy](./bluetoothlowenergy.md)
   A method to discover DL-TDOA anchors using Bluetooth Low Energy.
 
 

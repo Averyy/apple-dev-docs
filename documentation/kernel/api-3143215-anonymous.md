@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBHostOpenOptionSelectAlternateSetting](3143215-anonymous/kusbhostopenoptionselectalternatesetting.md)
-- [kUSBHostOpenOptionUserClientSession](3143215-anonymous/kusbhostopenoptionuserclientsession.md)
+- [kUSBHostOpenOptionSelectAlternateSetting](./api-3143215-anonymous/kusbhostopenoptionselectalternatesetting.md)
+- [kUSBHostOpenOptionUserClientSession](./api-3143215-anonymous/kusbhostopenoptionuserclientsession.md)
 
 
 ---

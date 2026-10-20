@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the given element exists in the set.
@@ -44,9 +45,16 @@ if primes.contains(x) {
 
 - `member`: An element to look for in the set.
 
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func contains(Self) -> Bool](./contains%28_%29-xkyd.md)
+  Returns a Boolean value that indicates whether a given element is a member of the option set.
+
 ## See Also
 
-- [associatedtype Element](setalgebra/element.md)
+### Testing for Membership
+- [associatedtype Element](./element.md)
   A type for which the conforming type provides a containment test.
 
 

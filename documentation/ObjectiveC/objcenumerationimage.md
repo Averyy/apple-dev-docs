@@ -1,7 +1,8 @@
 # ObjCEnumerationImage
 
 **Framework**: Objective-C Runtime  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,21 +22,22 @@ enum ObjCEnumerationImage
 ## Topics
 
 ### Enumeration Cases
-- [ObjCEnumerationImage.dynamicClasses](objcenumerationimage/dynamicclasses.md)
-- [ObjCEnumerationImage.image(_:)](objcenumerationimage/image(_:).md)
-- [ObjCEnumerationImage.machHeader(_:)](objcenumerationimage/machheader(_:).md)
+- [ObjCEnumerationImage.dynamicClasses](./objcenumerationimage/dynamicclasses.md)
+- [ObjCEnumerationImage.image(_:)](./objcenumerationimage/image%28_%29.md)
+- [ObjCEnumerationImage.machHeader(_:)](./objcenumerationimage/machheader%28_%29.md)
 
 ## See Also
 
-- [var OBJC_CLEAR_RESIDENT_STACK: Int](objc_clear_resident_stack.md)
-- [var OBJC_COLLECT_IF_NEEDED: Int](objc_collect_if_needed.md)
-- [var OBJC_EXHAUSTIVE_COLLECTION: Int](objc_exhaustive_collection.md)
-- [var OBJC_FULL_COLLECTION: Int](objc_full_collection.md)
-- [var OBJC_GENERATIONAL_COLLECTION: Int](objc_generational_collection.md)
-- [var OBJC_RATIO_COLLECTION: Int](objc_ratio_collection.md)
-- [var OBJC_SYNC_NOT_OWNING_THREAD_ERROR: Int](objc_sync_not_owning_thread_error.md)
-- [var OBJC_SYNC_SUCCESS: Int](objc_sync_success.md)
-- [var OBJC_WAIT_UNTIL_DONE: Int](objc_wait_until_done.md)
+### Enumerations
+- [var OBJC_CLEAR_RESIDENT_STACK: Int](./objc_clear_resident_stack.md)
+- [var OBJC_COLLECT_IF_NEEDED: Int](./objc_collect_if_needed.md)
+- [var OBJC_EXHAUSTIVE_COLLECTION: Int](./objc_exhaustive_collection.md)
+- [var OBJC_FULL_COLLECTION: Int](./objc_full_collection.md)
+- [var OBJC_GENERATIONAL_COLLECTION: Int](./objc_generational_collection.md)
+- [var OBJC_RATIO_COLLECTION: Int](./objc_ratio_collection.md)
+- [var OBJC_SYNC_NOT_OWNING_THREAD_ERROR: Int](./objc_sync_not_owning_thread_error.md)
+- [var OBJC_SYNC_SUCCESS: Int](./objc_sync_success.md)
+- [var OBJC_WAIT_UNTIL_DONE: Int](./objc_wait_until_done.md)
 
 
 ---

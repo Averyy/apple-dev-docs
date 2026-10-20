@@ -1,14 +1,15 @@
 # estimatedCompletionTime
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An estimated time of when charging completes.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ let estimatedCompletionTime: Date
 
 ## See Also
 
-- [let stateOfCharge: Int](electricvehiclestatusevent/chargingtarget-swift.struct/stateofcharge.md)
+### Getting target information
+- [let stateOfCharge: Int](./stateofcharge.md)
   Target state of charge for this charging session (0-100)
-- [let scheduledStartTime: Date](electricvehiclestatusevent/chargingtarget-swift.struct/scheduledstarttime.md)
+- [let scheduledStartTime: Date](./scheduledstarttime.md)
   A scheduled time for when charging starts.
-- [let estimatedRangeAtTarget: Measurement<UnitLength>?](electricvehiclestatusevent/chargingtarget-swift.struct/estimatedrangeattarget.md)
+- [let estimatedRangeAtTarget: Measurement<UnitLength>?](./estimatedrangeattarget.md)
   An estimated range of driving distance for the target state of charge.
 
 

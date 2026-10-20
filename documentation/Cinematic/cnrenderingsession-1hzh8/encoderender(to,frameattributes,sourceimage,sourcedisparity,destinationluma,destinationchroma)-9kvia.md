@@ -1,16 +1,19 @@
 # encodeRender(to:frameAttributes:sourceImage:sourceDisparity:destinationLuma:destinationChroma:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a command to render a shallow depth of field (SDoF) image to two metal textures as luma and chroma.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst ?+
-- macOS 14.0+
-- tvOS 17.0+
+- iOS 17.0+ - Deprecated in 27.0
+- iPadOS 17.0+ - Deprecated in 27.0
+- Mac Catalyst
+- macOS 14.0+ - Deprecated in 27.0
+- tvOS 17.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use method using CVReadOnlyPixelBuffer: encodeRender(to:frameAttributes:sourceImage:sourceDisparity:destinationLuma:destinationChroma:)
 
 ## Declaration
 

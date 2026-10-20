@@ -1,7 +1,8 @@
 # init(region:retainedElements:nonRetainedElements:issuerIdentifiers:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mobile national ID card raw data request with issuer identifiers.
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that encodes data to be transmitted with the message.
 
@@ -14,6 +15,10 @@ A URL that encodes data to be transmitted with the message.
 
 ```swift
 var url: URL? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSURL * URL;
 ```
 
 #### Discussion
@@ -58,21 +63,22 @@ By default, this property is set to `nil`.
 
 ## See Also
 
-- [var accessibilityLabel: String?](msmessage/accessibilitylabel.md)
+### Message Properties
+- [var accessibilityLabel: String?](./accessibilitylabel.md)
   A localized string that describes the message.
-- [var error: (any Error)?](msmessage/error.md)
+- [var error: (any Error)?](./error.md)
   An error object describing why the system failed to send the message.
-- [var isPending: Bool](msmessage/ispending.md)
+- [var isPending: Bool](./ispending.md)
   A Boolean value that indicates whether the message is pending or whether it has been sent or received.
-- [var layout: MSMessageLayout?](msmessage/layout.md)
+- [var layout: MSMessageLayout?](./layout.md)
   A layout object that defines the message’s appearance.
-- [var senderParticipantIdentifier: UUID](msmessage/senderparticipantidentifier.md)
+- [var senderParticipantIdentifier: UUID](./senderparticipantidentifier.md)
   A UUID identifying the participant that sent the message.
-- [var session: MSSession?](msmessage/session.md)
+- [var session: MSSession?](./session.md)
   The session that this message belongs to.
-- [var shouldExpire: Bool](msmessage/shouldexpire.md)
+- [var shouldExpire: Bool](./shouldexpire.md)
   A Boolean value that determines whether the message should expire after being read.
-- [var summaryText: String?](msmessage/summarytext.md)
+- [var summaryText: String?](./summarytext.md)
   A succinct description of the message.
 
 

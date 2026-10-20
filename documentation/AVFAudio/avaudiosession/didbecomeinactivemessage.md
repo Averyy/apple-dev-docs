@@ -1,7 +1,8 @@
 # AVAudioSession.DidBecomeInactiveMessage
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,24 +20,25 @@ struct DidBecomeInactiveMessage
 
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../handling-audio-interruptions.md)
 
 ## Topics
 
 ### Getting the deactivation result
-- [let deactivationResult: AVAudioSession.DeactivationResult](avaudiosession/didbecomeinactivemessage/deactivationresult.md)
+- [let deactivationResult: AVAudioSession.DeactivationResult](./didbecomeinactivemessage/deactivationresult.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVAudioSession.DidBecomeActiveMessage](avaudiosession/didbecomeactivemessage.md)
-- [AVAudioSession.ResumptionRecommendationMessage](avaudiosession/resumptionrecommendationmessage.md)
-- [AVAudioSession.DeactivationResult](avaudiosession/deactivationresult.md)
+### Handling activation messages
+- [AVAudioSession.DidBecomeActiveMessage](./didbecomeactivemessage.md)
+- [AVAudioSession.ResumptionRecommendationMessage](./resumptionrecommendationmessage.md)
+- [AVAudioSession.DeactivationResult](./deactivationresult.md)
   Type-safe representation of audio session deactivation results.
 
 

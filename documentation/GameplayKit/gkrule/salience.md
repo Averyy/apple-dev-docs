@@ -1,7 +1,8 @@
 # salience
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The importance of the rule relative to others in a rule system’s agenda.
 
@@ -19,11 +20,15 @@ The importance of the rule relative to others in a rule system’s agenda.
 var salience: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger salience;
+```
+
 #### Discussion
 
-A [`GKRuleSystem`](gkrulesystem.md) object evaluates the rules in its [`agenda`](gkrulesystem/agenda.md) list in order of decreasing salience.
+A [`GKRuleSystem`](../gkrulesystem.md) object evaluates the rules in its [`agenda`](../gkrulesystem/agenda.md) list in order of decreasing salience.
 
-Typically, you set the salience of a rule before calling the [`add(_:)`](gkrulesystem/add(_:)-76jb5.md) or [`add(_:)`](gkrulesystem/add(_:)-7u5zw.md) method, so that the system can insert the new rule into its agenda at the proper position. Changing the salience of a rule already in a rule system does not affect its order in the current agenda, but it does affect the order of the new agenda the rule system builds when you call its [`reset()`](gkrulesystem/reset().md) method.
+Typically, you set the salience of a rule before calling the [`add(_:)`](../gkrulesystem/add%28_%29-76jb5.md) or [`add(_:)`](../gkrulesystem/add%28_%29-7u5zw.md) method, so that the system can insert the new rule into its agenda at the proper position. Changing the salience of a rule already in a rule system does not affect its order in the current agenda, but it does affect the order of the new agenda the rule system builds when you call its [`reset()`](../gkrulesystem/reset%28%29.md) method.
 
 
 ---

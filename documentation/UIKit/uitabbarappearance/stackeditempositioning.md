@@ -1,7 +1,8 @@
 # stackedItemPositioning
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scheme to use when positioning stacked items within the tab bar.
 
@@ -18,17 +19,22 @@ The scheme to use when positioning stacked items within the tab bar.
 var stackedItemPositioning: UITabBar.ItemPositioning { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UITabBarItemPositioning stackedItemPositioning;
+```
+
 #### Discussion
 
 Use this property to specify whether you want the items centered in the available space or distributed across the entire width of the tab bar.
 
 ## See Also
 
-- [var stackedLayoutAppearance: UITabBarItemAppearance](uitabbarappearance/stackedlayoutappearance.md)
+### Configuring stacked item appearances
+- [var stackedLayoutAppearance: UITabBarItemAppearance](./stackedlayoutappearance.md)
   The appearance attributes for items with a stacked layout.
-- [var stackedItemSpacing: CGFloat](uitabbarappearance/stackeditemspacing.md)
+- [var stackedItemSpacing: CGFloat](./stackeditemspacing.md)
   The amount of space to insert between stacked tab bar items.
-- [var stackedItemWidth: CGFloat](uitabbarappearance/stackeditemwidth.md)
+- [var stackedItemWidth: CGFloat](./stackeditemwidth.md)
   The width of stacked items in the tab bar.
 
 

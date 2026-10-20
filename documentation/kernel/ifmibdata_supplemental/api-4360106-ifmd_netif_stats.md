@@ -1,14 +1,15 @@
 # ifmd_netif_stats
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 struct if_netif_stats ifmd_netif_stats;
 ```
 

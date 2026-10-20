@@ -1,7 +1,8 @@
 # stopMonitoringAllEvents()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregister for all Wi-Fi event notifications.
 
@@ -14,6 +15,10 @@ Unregister for all Wi-Fi event notifications.
 func stopMonitoringAllEvents() throws
 ```
 
+```objc
+- (BOOL) stopMonitoringAllEventsAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
 Use this method when you no longer want to receive any Wi-Fi notifications from the client.
@@ -22,9 +27,10 @@ Use this method when you no longer want to receive any Wi-Fi notifications from 
 
 ## See Also
 
-- [func startMonitoringEvent(with: CWEventType) throws](cwwificlient/startmonitoringevent(with:).md)
+### Monitoring Events
+- [func startMonitoringEvent(with: CWEventType) throws](./startmonitoringevent%28with%29.md)
   Register for specific Wi-Fi event notifications.
-- [func stopMonitoringEvent(with: CWEventType) throws](cwwificlient/stopmonitoringevent(with:).md)
+- [func stopMonitoringEvent(with: CWEventType) throws](./stopmonitoringevent%28with%29.md)
   Unregister for specific Wi-Fi event notifications.
 
 

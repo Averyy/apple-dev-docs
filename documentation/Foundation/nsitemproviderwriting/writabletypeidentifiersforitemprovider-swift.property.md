@@ -1,7 +1,8 @@
 # writableTypeIdentifiersForItemProvider
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of UTI strings representing the types of data that can be loaded for an item provider.
 
@@ -20,15 +21,28 @@ An array of UTI strings representing the types of data that can be loaded for an
 optional var writableTypeIdentifiersForItemProvider: [String] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * writableTypeIdentifiersForItemProvider;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<NSString *> * writableTypeIdentifiersForItemProvider;
+```
+
 #### Discussion
 
 Provide uniform type identifiers (UTIs) in order from highest fidelity to lowest. If your app employs a native data representation, place that first in the array.
 
-Use the instance version of this property when you initialize an item provider with an object. As possible, implement this property to provide an extended array of UTIs based on the object. For example, for an [`NSURL`](nsurl.md) object, your implementation could offer the `public.file-url` UTI, in addition to the `public.url` UTI, if your implementation detects that the stored URL uses the `file://` scheme.
+Use the instance version of this property when you initialize an item provider with an object. As possible, implement this property to provide an extended array of UTIs based on the object. For example, for an [`NSURL`](../nsurl.md) object, your implementation could offer the `public.file-url` UTI, in addition to the `public.url` UTI, if your implementation detects that the stored URL uses the `file://` scheme.
 
 ## See Also
 
-- [static var writableTypeIdentifiersForItemProvider: [String]](nsitemproviderwriting/writabletypeidentifiersforitemprovider-swift.type.property.md)
+### Getting the writable type identifiers
+- [static var writableTypeIdentifiersForItemProvider: [String]](./writabletypeidentifiersforitemprovider-swift.type.property.md)
   An array of UTI strings representing the types of data that can be loaded for an item provider.
 
 

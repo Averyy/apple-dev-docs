@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SpawnOccasion.onDeath
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The spawned effect starts at the death of a main particle.
 

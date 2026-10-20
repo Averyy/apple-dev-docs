@@ -1,23 +1,28 @@
 # rotate(toAxisAngle:duration:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that rotates the node to an absolute angle around a specified axis.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func rotate(toAxisAngle axisAngle: SCNVector4, duration: TimeInterval) -> SCNAction
+```
+
+```objc
++ (SCNAction *) rotateToAxisAngle:(SCNVector4) axisAngle duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`rotation`](scnnode/rotation.md) property animates to the new angle.
+When the action executes, the node’s [`rotation`](../scnnode/rotation.md) property animates to the new angle.
 
 This action is not reversible; the reverse of this action has the same duration but does not change anything.
 
@@ -37,13 +42,14 @@ This action is not reversible; the reverse of this action has the same duration 
 
 ## See Also
 
-- [class func rotateBy(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval) -> SCNAction](scnaction/rotateby(x:y:z:duration:).md)
+### Creating Actions That Rotate a Node
+- [class func rotateBy(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval) -> SCNAction](./rotateby%28x,y,z,duration%29.md)
   Creates an action that rotates the node in each of the three principal axes by angles relative to its current orientation.
-- [class func rotateTo(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval) -> SCNAction](scnaction/rotateto(x:y:z:duration:).md)
+- [class func rotateTo(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval) -> SCNAction](./rotateto%28x,y,z,duration%29.md)
   Creates an action that rotates the node to absolute angles in each of the three principal axes.
-- [class func rotateTo(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval, usesShortestUnitArc: Bool) -> SCNAction](scnaction/rotateto(x:y:z:duration:usesshortestunitarc:).md)
+- [class func rotateTo(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval, usesShortestUnitArc: Bool) -> SCNAction](./rotateto%28x,y,z,duration,usesshortestunitarc%29.md)
   Creates an action that rotates the node to absolute angles in each of the three principal axes.
-- [class func rotate(by: CGFloat, around: SCNVector3, duration: TimeInterval) -> SCNAction](scnaction/rotate(by:around:duration:).md)
+- [class func rotate(by: CGFloat, around: SCNVector3, duration: TimeInterval) -> SCNAction](./rotate%28by,around,duration%29.md)
   Creates an action that rotates the node by an angle around a specified axis.
 
 

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var state: MTRDeviceState { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTRDeviceState state;
 ```
 
 

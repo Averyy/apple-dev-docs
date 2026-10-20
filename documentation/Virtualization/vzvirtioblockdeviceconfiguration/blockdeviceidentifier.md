@@ -1,7 +1,8 @@
 # blockDeviceIdentifier
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that identifies the VIRTIO block device.
 
@@ -14,11 +15,15 @@ The string that identifies the VIRTIO block device.
 var blockDeviceIdentifier: String { get set }
 ```
 
+```objc
+@property (copy) NSString * blockDeviceIdentifier;
+```
+
 #### Discussion
 
 Use `blockDeviceIdentifier` to name devices so they’re more discoverable in the Linux guest. The identifier must be an ASCII encodable string of 20 bytes or less.
 
-Validate the identifier string using [`validateBlockDeviceIdentifier(_:)`](vzvirtioblockdeviceconfiguration/validateblockdeviceidentifier(_:).md) before attempting to set this property, for example:
+Validate the identifier string using [`validateBlockDeviceIdentifier(_:)`](./validateblockdeviceidentifier%28_%29.md) before attempting to set this property, for example:
 
 ```swift
 let idString = "ProjectData"

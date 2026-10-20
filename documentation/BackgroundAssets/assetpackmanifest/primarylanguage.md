@@ -1,7 +1,8 @@
 # primaryLanguage
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s primary language as configured in App Store Connect.
 
@@ -25,9 +26,10 @@ If no available localized asset packs match the current preferred languages, the
 
 ## See Also
 
-- [var availableLanguages: [Locale.Language]](assetpackmanifest/availablelanguages.md)
+### Inspecting asset pack localization
+- [var availableLanguages: [Locale.Language]](./availablelanguages.md)
   The languages for which asset packs in this manifest are localized.
-- [var resolvedLanguage: Locale.Language?](assetpackmanifest/resolvedlanguage.md)
+- [var resolvedLanguage: Locale.Language?](./resolvedlanguage.md)
   The language that best matches current preferences and for which a localized asset pack is available locally.
 
 

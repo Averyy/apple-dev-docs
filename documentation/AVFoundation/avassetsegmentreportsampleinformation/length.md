@@ -1,7 +1,8 @@
 # length
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the sample data.
 
@@ -19,13 +20,18 @@ The length of the sample data.
 var length: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger length;
+```
+
 ## See Also
 
-- [var presentationTimeStamp: CMTime](avassetsegmentreportsampleinformation/presentationtimestamp.md)
+### Inspecting the information
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The presentation timestamp (PTS) of a sample.
-- [var offset: Int](avassetsegmentreportsampleinformation/offset.md)
+- [var offset: Int](./offset.md)
   The offset of a sample in the segment.
-- [var isSyncSample: Bool](avassetsegmentreportsampleinformation/issyncsample.md)
+- [var isSyncSample: Bool](./issyncsample.md)
   A Boolean value that indicates whether the sample is a key frame.
 
 

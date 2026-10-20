@@ -1,7 +1,8 @@
 # scan(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func scan<T>(_ initialResult: T, _ nextPartialResult: (T, Result<Success, Failure>.Publisher.Output) -> T) -> Result<T, Failure>.Publisher
 ```
+
+Available when `Failure` conforms to `Error`.
 
 
 ---

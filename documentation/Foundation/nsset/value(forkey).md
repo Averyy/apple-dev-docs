@@ -1,7 +1,8 @@
 # value(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return a set containing the results of invoking `valueForKey:` on each of the receiving set’s members.
 
@@ -20,6 +21,10 @@ Return a set containing the results of invoking `valueForKey:` on each of the re
 func value(forKey key: String) -> Any
 ```
 
+```objc
+- (id) valueForKey:(NSString *) key;
+```
+
 #### Return Value
 
 A set containing the results of invoking `valueForKey:` (with the argument `key`) on each of the receiving set’s members.
@@ -34,13 +39,14 @@ The returned set might not have the same number of members as the receiving set.
 
 ## See Also
 
-- [func isSubset(of: Set<AnyHashable>) -> Bool](nsset/issubset(of:).md)
+### Comparing Sets
+- [func isSubset(of: Set<AnyHashable>) -> Bool](./issubset%28of%29.md)
   Returns a Boolean value that indicates whether every object in the receiving set is also present in another given set.
-- [func intersects(Set<AnyHashable>) -> Bool](nsset/intersects(_:).md)
+- [func intersects(Set<AnyHashable>) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether at least one object in the receiving set is also present in another given set.
-- [func isEqual(to: Set<AnyHashable>) -> Bool](nsset/isequal(to:).md)
+- [func isEqual(to: Set<AnyHashable>) -> Bool](./isequal%28to%29.md)
   Compares the receiving set to another set.
-- [func setValue(Any?, forKey: String)](nsset/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Invokes `setValue:forKey:` on each of the set’s members.
 
 

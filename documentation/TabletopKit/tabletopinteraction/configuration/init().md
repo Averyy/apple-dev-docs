@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.2+
@@ -14,8 +15,9 @@ init()
 
 ## See Also
 
-- [init(allowedDestinations: TabletopInteraction.AllowedDestinations)](tabletopinteraction/configuration/init(alloweddestinations:).md)
-- [init(allowedDestinations: TabletopInteraction.AllowedDestinations, hoverAlignment: TabletopInteraction.HoverAlignmentBehavior)](tabletopinteraction/configuration/init(alloweddestinations:hoveralignment:).md)
+### Creating a configuration
+- [init(allowedDestinations: TabletopInteraction.AllowedDestinations)](./init%28alloweddestinations%29.md)
+- [init(allowedDestinations: TabletopInteraction.AllowedDestinations, hoverAlignment: TabletopInteraction.HoverAlignmentBehavior)](./init%28alloweddestinations,hoveralignment%29.md)
 
 
 ---

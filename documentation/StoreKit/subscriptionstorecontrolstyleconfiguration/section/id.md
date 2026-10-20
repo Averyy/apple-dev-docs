@@ -1,7 +1,8 @@
 # SubscriptionStoreControlStyleConfiguration.Section.ID
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The stable identity of a section of subscription options.
 
@@ -23,8 +24,8 @@ struct ID
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

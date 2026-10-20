@@ -1,7 +1,8 @@
 # DeviceActivityReport
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
 
@@ -19,7 +20,7 @@ A view that reports the user’s application, category, and web domain activity 
 
 #### Overview
 
-When you create a report, the system asks your app’s device activity report extension to provide a [`View`](https://developer.apple.com/documentation/swiftui/view) representing the user’s device activity. To protect the user’s privacy, your extension runs in a sandbox. This sandbox prevents your extension from making network requests or moving sensitive content outside the extension’s address space. The extension point identifier for all device activity report extensions is `com.apple.deviceactivityui.report-extension`. You can configure a report with a custom context and filter, and then display the report like any SwiftUI view.
+When you create a report, the system asks your app’s device activity report extension to provide a [`View`](../SwiftUI/view.md) representing the user’s device activity. To protect the user’s privacy, your extension runs in a sandbox. This sandbox prevents your extension from making network requests or moving sensitive content outside the extension’s address space. The extension point identifier for all device activity report extensions is `com.apple.deviceactivityui.report-extension`. You can configure a report with a custom context and filter, and then display the report like any SwiftUI view.
 
 ```swift
 struct ExampleView: View {
@@ -79,34 +80,35 @@ struct ExampleView: View {
 }
 ```
 
-The system will only provide your extension with device activity data if the user has authorized your app for family controls on their device or on the device(s) of children in their iCloud family. See [`AuthorizationCenter`](https://developer.apple.com/documentation/familycontrols/authorizationcenter) for more details.
+The system will only provide your extension with device activity data if the user has authorized your app for family controls on their device or on the device(s) of children in their iCloud family. See [`AuthorizationCenter`](../FamilyControls/authorizationcenter.md) for more details.
 
 ## Topics
 
 ### Structures
-- [DeviceActivityReport.Context](deviceactivityreport/context.md)
+- [DeviceActivityReport.Context](./deviceactivityreport/context.md)
   A context indicating how your device activity report extension should configure its `DeviceActivityReportView`.
 ### Initializers
-- [init(DeviceActivityReport.Context, filter: DeviceActivityFilter)](deviceactivityreport/init(_:filter:).md)
+- [init(DeviceActivityReport.Context, filter: DeviceActivityFilter)](./deviceactivityreport/init%28_,filter%29.md)
   Creates a new device activity report.
 ### Instance Properties
-- [var body: some View](deviceactivityreport/body.md)
+- [var body: some View](./deviceactivityreport/body.md)
   The content of the device activity report.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [protocol DeviceActivityReportExtension](deviceactivityreportextension.md)
+### Report activity
+- [protocol DeviceActivityReportExtension](./deviceactivityreportextension.md)
   An app extension that reports device activity data.
-- [protocol DeviceActivityReportScene](deviceactivityreportscene.md)
+- [protocol DeviceActivityReportScene](./deviceactivityreportscene.md)
   Defines a custom device activity report scene.
-- [struct DeviceActivityReportBuilder](deviceactivityreportbuilder.md)
+- [struct DeviceActivityReportBuilder](./deviceactivityreportbuilder.md)
   A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.
 
 

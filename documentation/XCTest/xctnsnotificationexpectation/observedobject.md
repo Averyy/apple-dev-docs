@@ -1,7 +1,8 @@
 # observedObject
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object by which the notification must be posted, or nil if the notification can be posted by any object.
 
@@ -11,11 +12,16 @@ The object by which the notification must be posted, or nil if the notification 
 var observedObject: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id observedObject;
+```
+
 ## See Also
 
-- [var notificationName: NSNotification.Name](xctnsnotificationexpectation/notificationname.md)
+### Expectation Properties
+- [var notificationName: NSNotification.Name](./notificationname.md)
   The name of the notification that the expectation is waiting for.
-- [var notificationCenter: NotificationCenter](xctnsnotificationexpectation/notificationcenter.md)
+- [var notificationCenter: NotificationCenter](./notificationcenter.md)
   The notification center from which the notification must be posted.
 
 

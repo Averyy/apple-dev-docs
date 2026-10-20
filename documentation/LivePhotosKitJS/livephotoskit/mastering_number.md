@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```
 const String MASTERING_NUMBER;
 ```
 

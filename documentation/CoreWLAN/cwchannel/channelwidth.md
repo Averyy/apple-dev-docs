@@ -1,7 +1,8 @@
 # channelWidth
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel width.
 
@@ -14,11 +15,16 @@ The channel width.
 var channelWidth: CWChannelWidth { get }
 ```
 
+```objc
+@property (readonly) CWChannelWidth channelWidth;
+```
+
 ## See Also
 
-- [var channelBand: CWChannelBand](cwchannel/channelband.md)
+### Instance Properties
+- [var channelBand: CWChannelBand](./channelband.md)
   The channel band.
-- [var channelNumber: Int](cwchannel/channelnumber.md)
+- [var channelNumber: Int](./channelnumber.md)
   The channel number.
 
 

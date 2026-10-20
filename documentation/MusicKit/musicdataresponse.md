@@ -1,7 +1,8 @@
 # MusicDataResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object containing results for a data request.
 
@@ -23,26 +24,27 @@ struct MusicDataResponse
 ## Topics
 
 ### Instance Properties
-- [let data: Data](musicdataresponse/data.md)
+- [let data: Data](./musicdataresponse/data.md)
   The raw data returned by the Apple Music API endpoint for the originating data request.
-- [let urlResponse: HTTPURLResponse](musicdataresponse/urlresponse.md)
+- [let urlResponse: HTTPURLResponse](./musicdataresponse/urlresponse.md)
   The URL response returned by the Apple Music API endpoint for the originating data request.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MusicDataRequest](musicdatarequest.md)
+### General Purpose Data Request
+- [struct MusicDataRequest](./musicdatarequest.md)
   A request for loading data from an arbitrary Apple Music API endpoint.
 
 

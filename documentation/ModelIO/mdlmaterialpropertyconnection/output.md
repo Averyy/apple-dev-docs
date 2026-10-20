@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 weak var output: MDLMaterialProperty? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) MDLMaterialProperty * output;
 ```
 
 

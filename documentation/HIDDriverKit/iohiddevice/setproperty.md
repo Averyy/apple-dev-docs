@@ -1,17 +1,18 @@
 # setProperty
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the specified property on the corresponding kernel object.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setProperty(OSObject *key, OSObject *value);
 ```
 

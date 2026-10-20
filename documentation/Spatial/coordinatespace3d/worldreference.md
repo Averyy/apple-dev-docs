@@ -1,7 +1,8 @@
 # worldReference
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A coordinate space that represents the world root for all other coordinate spaces.
 
@@ -19,6 +20,8 @@ A coordinate space that represents the world root for all other coordinate space
 ```swift
 static var worldReference: WorldReferenceCoordinateSpace { get }
 ```
+
+Available when `Self` is `WorldReferenceCoordinateSpace`.
 
 
 ---

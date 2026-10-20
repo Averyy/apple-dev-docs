@@ -1,7 +1,8 @@
 # Visibility.automatic
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element may be visible or hidden depending on the policies of the component accepting the visibility configuration.
 
@@ -26,9 +27,10 @@ For example, some components employ different automatic behavior depending on fa
 
 ## See Also
 
-- [Visibility.visible](visibility/visible.md)
+### Getting visibility options
+- [Visibility.visible](./visible.md)
   The element may be visible.
-- [Visibility.hidden](visibility/hidden.md)
+- [Visibility.hidden](./hidden.md)
   The element may be hidden.
 
 

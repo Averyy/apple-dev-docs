@@ -1,7 +1,8 @@
 # WebContentFilter.AllowListBookmarksItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The bookmark in the allow list of the web content filter.
 
@@ -13,7 +14,7 @@ The bookmark in the allow list of the web content filter.
 
 ## Declaration
 
-```swift
+```
 object WebContentFilter.AllowListBookmarksItem
 ```
 
@@ -24,11 +25,12 @@ object WebContentFilter.AllowListBookmarksItem
 
 ## See Also
 
-- [object WebContentFilter.URLFilterParameters](webcontentfilter/urlfilterparameters-data.dictionary.md)
+### Objects
+- [object WebContentFilter.URLFilterParameters](./urlfilterparameters-data.dictionary.md)
   A dictionary containing URL filter parameters.
-- [object WebContentFilter.VendorConfig](webcontentfilter/vendorconfig-data.dictionary.md)
+- [object WebContentFilter.VendorConfig](./vendorconfig-data.dictionary.md)
   A custom dictionary for the filtering service plug-in.
-- [object WebContentFilter.WhitelistedBookmarksItem](webcontentfilter/whitelistedbookmarksitem.md)
+- [object WebContentFilter.WhitelistedBookmarksItem](./whitelistedbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
 
 

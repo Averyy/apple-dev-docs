@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the zone that this notification belongs to.
 
@@ -10,17 +11,18 @@ The identifier of the zone that this notification belongs to.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.ZoneID zoneID;
 ```
 
 ## See Also
 
-- [containerIdentifier](cloudkit.notification/containeridentifier.md)
+### Getting Identifiers
+- [containerIdentifier](./containeridentifier.md)
   The identifier of the container that generated this notification.
-- [notificationID](cloudkit.notification/notificationid.md)
+- [notificationID](./notificationid.md)
   A unique identifier for this notification.
-- [subscriptionID](cloudkit.notification/subscriptionid.md)
+- [subscriptionID](./subscriptionid.md)
   The identifier for the associated subscription.
 
 

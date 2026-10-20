@@ -1,7 +1,8 @@
 # init(format:locale:timeZone:calendar:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

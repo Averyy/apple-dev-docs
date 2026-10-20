@@ -1,7 +1,8 @@
 # size
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the menu in screen coordinates
 
@@ -14,6 +15,10 @@ The size of the menu in screen coordinates
 var size: NSSize { get }
 ```
 
+```objc
+@property (readonly) NSSize size;
+```
+
 #### Discussion
 
 This property contains a value of type `NSSize`, indicating the size of the menu in screen coordinates.
@@ -22,7 +27,8 @@ The menu may draw at a smaller size when shown, depending on its positioning and
 
 ## See Also
 
-- [var minimumWidth: CGFloat](nsmenu/minimumwidth.md)
+### Configuring Menu Size
+- [var minimumWidth: CGFloat](./minimumwidth.md)
   The minimum width of the menu in screen coordinates.
 
 

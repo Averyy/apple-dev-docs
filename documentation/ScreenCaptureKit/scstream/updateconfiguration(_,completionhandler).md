@@ -1,7 +1,8 @@
 # updateConfiguration(_:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the stream with a new configuration.
 
@@ -12,7 +13,15 @@ Updates the stream with a new configuration.
 ## Declaration
 
 ```swift
+func updateConfiguration(_ streamConfig: SCStreamConfiguration, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func updateConfiguration(_ streamConfig: SCStreamConfiguration) async throws
+```
+
+```objc
+- (void) updateConfiguration:(SCStreamConfiguration *) streamConfig completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters
@@ -22,7 +31,8 @@ func updateConfiguration(_ streamConfig: SCStreamConfiguration) async throws
 
 ## See Also
 
-- [func updateContentFilter(SCContentFilter, completionHandler: (((any Error)?) -> Void)?)](scstream/updatecontentfilter(_:completionhandler:).md)
+### Updating stream configuration
+- [func updateContentFilter(SCContentFilter, completionHandler: (((any Error)?) -> Void)?)](./updatecontentfilter%28_,completionhandler%29.md)
   Updates the stream by applying a new content filter.
 
 

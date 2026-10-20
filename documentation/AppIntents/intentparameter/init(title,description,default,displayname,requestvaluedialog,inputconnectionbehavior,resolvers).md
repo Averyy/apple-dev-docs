@@ -1,7 +1,8 @@
 # init(title:description:default:displayName:requestValueDialog:inputConnectionBehavior:resolvers:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter that can convert the selected value.
 
@@ -11,7 +12,7 @@ Creates an app intent parameter that can convert the selected value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Creates an app intent parameter that can convert the selected value.
 ```swift
 convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource? = nil, default defaultValue: Value.UnwrappedType? = nil, displayName: Bool.IntentDisplayName? = nil, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, @ResolverSpecificationBuilder<Value.UnwrappedType> resolvers: @escaping () -> Spec) where Spec : ResolverSpecification
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Bool`.
 
 ## Parameters
 
@@ -32,7 +35,8 @@ convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStr
 
 ## See Also
 
-- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, displayName: Bool.IntentDisplayName?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:default:displayname:requestvaluedialog:inputconnectionbehavior:).md)
+### Creating an intent parameter
+- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, displayName: Bool.IntentDisplayName?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./init%28title,description,default,displayname,requestvaluedialog,inputconnectionbehavior%29.md)
   Creates an app intent parameter.
 
 

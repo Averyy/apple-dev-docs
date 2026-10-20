@@ -1,7 +1,8 @@
 # addAnnotations(annotations)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an array of annotations to the map.
 
@@ -10,7 +11,7 @@ Adds an array of annotations to the map.
 
 ## Declaration
 
-```swift
+```
 addAnnotations(annotations: Annotation[]): Annotation[];
 ```
 
@@ -20,9 +21,9 @@ Returns the array of annotations.
 
 #### Discussion
 
-The map shows annotations that have their [`animates`](annotation/animates.md) property set to `true` in a staggered manner, in order of latitude.
+The map shows annotations that have their [`animates`](../annotation/animates.md) property set to `true` in a staggered manner, in order of latitude.
 
-> **Note**:  MapKitJS immediately adds the annotations to the [`annotations`](map/annotations.md) array, then visually displays them on the map.
+> **Note**:  MapKitJS immediately adds the annotations to the [`annotations`](./annotations.md) array, then visually displays them on the map.
 
 ## Parameters
 
@@ -30,19 +31,20 @@ The map shows annotations that have their [`animates`](annotation/animates.md) p
 
 ## See Also
 
-- [annotations](map/annotations.md)
+### Annotating the map
+- [annotations](./annotations.md)
   An array of all the annotations on the map.
-- [selectedAnnotation](map/selectedannotation.md)
+- [selectedAnnotation](./selectedannotation.md)
   The selected annotation.
-- [annotationForCluster](map/annotationforcluster.md)
+- [annotationForCluster](./annotationforcluster.md)
   A delegate method for modifying an annotation that represents a group of annotations that the framework combines into a cluster.
-- [annotationsInMapRect(mapRect)](map/annotationsinmaprect.md)
+- [annotationsInMapRect(mapRect)](./annotationsinmaprect.md)
   Returns the list of annotation objects within the specified map rectangle.
-- [addAnnotation(annotation)](map/addannotation.md)
+- [addAnnotation(annotation)](./addannotation.md)
   Adds an annotation to the map.
-- [removeAnnotation(annotation)](map/removeannotation.md)
+- [removeAnnotation(annotation)](./removeannotation.md)
   Removes an annotation from the map.
-- [removeAnnotations(annotations)](map/removeannotations.md)
+- [removeAnnotations(annotations)](./removeannotations.md)
   Removes multiple annotations from the map.
 
 

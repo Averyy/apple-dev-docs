@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the decision tree classifier that’s suitable for output during debugging.
 
@@ -21,9 +22,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mldecisiontreeclassifier/description.md)
+### Describing a decision tree classifier
+- [var description: String](./description.md)
   A text representation of the decision tree classifier.
-- [var playgroundDescription: Any](mldecisiontreeclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the decision tree classifier shown in a playground.
 
 

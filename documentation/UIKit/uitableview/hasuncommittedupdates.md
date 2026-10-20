@@ -1,7 +1,8 @@
 # hasUncommittedUpdates
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the table view’s appearance contains changes that aren’t present in its data source.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether the table view’s appearance contains ch
 var hasUncommittedUpdates: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasUncommittedUpdates;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the table view contains placeholder cells or is handling a drop and is in the middle of reordering its rows. When this property is [`true`](https://developer.apple.com/documentation/swift/true), avoid making any significant changes to the table view. Specifically, don’t call [`reloadData()`](uitableview/reloaddata().md), which forces the table to delete any uncommitted changes before retrieving fresh data from the data source object.
+The value of this property is [`true`](../../Swift/true.md) when the table view contains placeholder cells or is handling a drop and is in the middle of reordering its rows. When this property is [`true`](../../Swift/true.md), avoid making any significant changes to the table view. Specifically, don’t call [`reloadData()`](./reloaddata%28%29.md), which forces the table to delete any uncommitted changes before retrieving fresh data from the data source object.
 
 ## See Also
 
-- [func reconfigureRows(at: [IndexPath])](uitableview/reconfigurerows(at:).md)
+### Reloading the table view
+- [func reconfigureRows(at: [IndexPath])](./reconfigurerows%28at%29.md)
   Updates the data for the rows at the index paths you specify, preserving the existing cells for the rows.
-- [func reloadData()](uitableview/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads the rows and sections of the table view.
-- [func reloadRows(at: [IndexPath], with: UITableView.RowAnimation)](uitableview/reloadrows(at:with:).md)
+- [func reloadRows(at: [IndexPath], with: UITableView.RowAnimation)](./reloadrows%28at,with%29.md)
   Reloads the specified rows using the provided animation effect.
-- [func reloadSections(IndexSet, with: UITableView.RowAnimation)](uitableview/reloadsections(_:with:).md)
+- [func reloadSections(IndexSet, with: UITableView.RowAnimation)](./reloadsections%28_,with%29.md)
   Reloads the specified sections using the provided animation effect.
-- [func reloadSectionIndexTitles()](uitableview/reloadsectionindextitles.md)
+- [func reloadSectionIndexTitles()](./reloadsectionindextitles%28%29.md)
   Reloads the items in the index bar along the right side of the table view.
 
 

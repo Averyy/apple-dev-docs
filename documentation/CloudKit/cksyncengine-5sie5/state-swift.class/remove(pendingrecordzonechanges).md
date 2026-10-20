@@ -1,7 +1,8 @@
 # remove(pendingRecordZoneChanges:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified record zone changes from the state.
 
@@ -11,7 +12,7 @@ Removes the specified record zone changes from the state.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -30,15 +31,16 @@ Use this method when you no longer want the sync engine to send certain pending 
 
 ## See Also
 
-- [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/add(pendingdatabasechanges:).md)
+### Manipulating pending changes
+- [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](./add%28pendingdatabasechanges%29.md)
   Adds the specified database changes to the state.
-- [func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/remove(pendingdatabasechanges:).md)
+- [func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](./remove%28pendingdatabasechanges%29.md)
   Removes the specified database changes from the state.
-- [CKSyncEngine.PendingDatabaseChange](cksyncengine-5sie5/pendingdatabasechange.md)
+- [CKSyncEngine.PendingDatabaseChange](../pendingdatabasechange.md)
   Describes an unsent database modification.
-- [func add(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](cksyncengine-5sie5/state-swift.class/add(pendingrecordzonechanges:).md)
+- [func add(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](./add%28pendingrecordzonechanges%29.md)
   Adds the specified record zone changes to the state.
-- [CKSyncEngine.PendingRecordZoneChange](cksyncengine-5sie5/pendingrecordzonechange.md)
+- [CKSyncEngine.PendingRecordZoneChange](../pendingrecordzonechange.md)
   Describes an unsent record modification.
 
 

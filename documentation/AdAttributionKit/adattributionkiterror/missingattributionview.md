@@ -1,7 +1,8 @@
 # AdAttributionKitError.missingAttributionView
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribution failed due to a missing attribution view.
 

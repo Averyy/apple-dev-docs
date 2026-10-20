@@ -1,18 +1,19 @@
 # UnsafeMutableAudioBufferListPointer
 
 **Framework**: Core Audio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper for a pointer to an `AudioBufferList`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,39 +28,40 @@ Like `UnsafeMutablePointer`, this type provides no automated memory management a
 ## Topics
 
 ### Initializers
-- [init(UnsafeMutablePointer<AudioBufferList>)](unsafemutableaudiobufferlistpointer/init(_:)-4a7c5.md)
+- [init(UnsafeMutablePointer<AudioBufferList>)](./unsafemutableaudiobufferlistpointer/init%28_%29-4a7c5.md)
   Construct from an `AudioBufferList` pointer.
-- [init?(UnsafeMutablePointer<AudioBufferList>?)](unsafemutableaudiobufferlistpointer/init(_:)-6qwfh.md)
+- [init?(UnsafeMutablePointer<AudioBufferList>?)](./unsafemutableaudiobufferlistpointer/init%28_%29-6qwfh.md)
   Construct from an `AudioBufferList` pointer.
 ### Instance Properties
-- [var count: Int](unsafemutableaudiobufferlistpointer/count.md)
+- [var count: Int](./unsafemutableaudiobufferlistpointer/count.md)
   The number of `AudioBuffer`s in the `AudioBufferList` (`mNumberBuffers`).
-- [var unsafeMutablePointer: UnsafeMutablePointer<AudioBufferList>](unsafemutableaudiobufferlistpointer/unsafemutablepointer.md)
+- [var unsafeMutablePointer: UnsafeMutablePointer<AudioBufferList>](./unsafemutableaudiobufferlistpointer/unsafemutablepointer.md)
   The pointer to the wrapped `AudioBufferList`.
-- [var unsafePointer: UnsafePointer<AudioBufferList>](unsafemutableaudiobufferlistpointer/unsafepointer.md)
+- [var unsafePointer: UnsafePointer<AudioBufferList>](./unsafemutableaudiobufferlistpointer/unsafepointer.md)
   The pointer to the wrapped `AudioBufferList`.
 ### Default Implementations
-- [MutableCollection Implementations](unsafemutableaudiobufferlistpointer/mutablecollection-implementations.md)
-- [RandomAccessCollection Implementations](unsafemutableaudiobufferlistpointer/randomaccesscollection-implementations.md)
+- [MutableCollection Implementations](./unsafemutableaudiobufferlistpointer/mutablecollection-implementations.md)
+- [RandomAccessCollection Implementations](./unsafemutableaudiobufferlistpointer/randomaccesscollection-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct AudioHardwareIOProcStreamUsage](audiohardwareioprocstreamusage.md)
+### Structures
+- [struct AudioHardwareIOProcStreamUsage](./audiohardwareioprocstreamusage.md)
   This structure describes which streams a given AudioDeviceIOProc will use. It is used in conjunction with kAudioDevicePropertyIOProcStreamUsage.
-- [struct AudioObjectPropertyAddress](audioobjectpropertyaddress.md)
+- [struct AudioObjectPropertyAddress](./audioobjectpropertyaddress.md)
   An AudioObjectPropertyAddress collects the three parts that identify a specific property together in a struct for easy transmission.
-- [struct AudioStreamRangedDescription](audiostreamrangeddescription.md)
+- [struct AudioStreamRangedDescription](./audiostreamrangeddescription.md)
   This structure allows a specific sample rate range to be associated with an AudioStreamBasicDescription that specifies its sample rate as kAudioStreamAnyRate.
 
 

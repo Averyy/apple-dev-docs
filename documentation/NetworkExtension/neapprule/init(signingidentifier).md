@@ -1,7 +1,8 @@
 # init(signingIdentifier:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an app rule that matches an app with a given signing identifier.
 
@@ -17,6 +18,10 @@ Create an app rule that matches an app with a given signing identifier.
 init(signingIdentifier: String)
 ```
 
+```objc
+- (instancetype) initWithSigningIdentifier:(NSString *) signingIdentifier;
+```
+
 #### Return Value
 
 A newly-initialized `NEAppRule` object.
@@ -27,7 +32,8 @@ A newly-initialized `NEAppRule` object.
 
 ## See Also
 
-- [init(signingIdentifier: String, designatedRequirement: String)](neapprule/init(signingidentifier:designatedrequirement:).md)
+### Initializing an app rule
+- [init(signingIdentifier: String, designatedRequirement: String)](./init%28signingidentifier,designatedrequirement%29.md)
   Create an app rule that matches an app with a given signing identifier and a given designated requirement.
 
 

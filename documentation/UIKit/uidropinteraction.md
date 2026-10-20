@@ -1,7 +1,8 @@
 # UIDropInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction to enable dropping of items onto a view, employing a delegate to instantiate objects and respond to calls from the drop session.
 
@@ -18,45 +19,50 @@ An interaction to enable dropping of items onto a view, employing a delegate to 
 class UIDropInteraction
 ```
 
+```objc
+@interface UIDropInteraction : NSObject
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
 ## Topics
 
 ### Initializing drop interactions
-- [init(delegate: any UIDropInteractionDelegate)](uidropinteraction/init(delegate:).md)
+- [init(delegate: any UIDropInteractionDelegate)](./uidropinteraction/init%28delegate%29.md)
   Initializes a drop interaction object with a custom delegate object.
 ### Managing drop interactions
-- [var delegate: (any UIDropInteractionDelegate)?](uidropinteraction/delegate.md)
+- [var delegate: (any UIDropInteractionDelegate)?](./uidropinteraction/delegate.md)
   An object that configures and controls a drop interaction.
-- [protocol UIDropInteractionDelegate](uidropinteractiondelegate.md)
+- [protocol UIDropInteractionDelegate](./uidropinteractiondelegate.md)
   The interface for configuring and controlling a drop interaction.
 ### Allowing simultaneous drops
-- [var allowsSimultaneousDropSessions: Bool](uidropinteraction/allowssimultaneousdropsessions.md)
+- [var allowsSimultaneousDropSessions: Bool](./uidropinteraction/allowssimultaneousdropsessions.md)
   A Boolean value that specifies whether the drop interaction handles more than one simultaneous drop session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [protocol UIDragInteractionDelegate](uidraginteractiondelegate.md)
+### Drag and drop interactions
+- [protocol UIDragInteractionDelegate](./uidraginteractiondelegate.md)
   The interface for configuring and controlling a drag interaction.
-- [protocol UIDropInteractionDelegate](uidropinteractiondelegate.md)
+- [protocol UIDropInteractionDelegate](./uidropinteractiondelegate.md)
   The interface for configuring and controlling a drop interaction.
-- [class UIDragInteraction](uidraginteraction.md)
+- [class UIDragInteraction](./uidraginteraction.md)
   An interaction to enable dragging of items from a view, employing a delegate to provide drag items and to respond to calls from the drag session.
 
 

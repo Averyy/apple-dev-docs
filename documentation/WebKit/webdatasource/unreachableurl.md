@@ -1,17 +1,22 @@
 # unreachableURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data source’s unreachable URL.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var unreachableURL: URL! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSURL * unreachableURL;
 ```
 
 #### Discussion

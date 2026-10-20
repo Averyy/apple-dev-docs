@@ -1,7 +1,8 @@
 # timeStamp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The frame’s observed completion time.
 
@@ -10,7 +11,7 @@ The frame’s observed completion time.
 
 ## Declaration
 
-```swift
+```c
 uint64_t timeStamp;
 ```
 
@@ -20,13 +21,14 @@ Interrupt latency and system load may result in more than one frame completing w
 
 ## See Also
 
-- [status](iousbisochronousframe/3294856-status.md)
+### Getting the Frame Properties
+- [status](./api-3294856-status.md)
   The completion status for this individual frame.
-- [requestCount](iousbisochronousframe/3294855-requestcount.md)
+- [requestCount](./api-3294855-requestcount.md)
   The number of bytes to transfer for this frame.
-- [completeCount](iousbisochronousframe/3294854-completecount.md)
+- [completeCount](./api-3294854-completecount.md)
   The number of bytes that the system actually transferred for this frame.
-- [reserved](iousbisochronousframe/3377598-reserved.md)
+- [reserved](./api-3377598-reserved.md)
   Reserved for future use.
 
 

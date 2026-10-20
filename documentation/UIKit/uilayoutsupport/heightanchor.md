@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A layout anchor representing the guide’s height.
@@ -19,15 +20,20 @@ A layout anchor representing the guide’s height.
 var heightAnchor: NSLayoutDimension { get }
 ```
 
+```objc
+@property (strong, readonly) NSLayoutDimension * heightAnchor;
+```
+
 #### Discussion
 
-Use this anchor to create constraints with the guide’s height. You can only combine this anchor with other [`NSLayoutDimension`](nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](nslayoutanchor.md).
+Use this anchor to create constraints with the guide’s height. You can only combine this anchor with other [`NSLayoutDimension`](../nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 
 ## See Also
 
-- [var bottomAnchor: NSLayoutYAxisAnchor](uilayoutsupport/bottomanchor.md)
+### Creating constraints using layout anchors
+- [var bottomAnchor: NSLayoutYAxisAnchor](./bottomanchor.md)
   A layout anchor representing the guide’s bottom edge.
-- [var topAnchor: NSLayoutYAxisAnchor](uilayoutsupport/topanchor.md)
+- [var topAnchor: NSLayoutYAxisAnchor](./topanchor.md)
   A layout anchor representing the guide’s top edge.
 
 

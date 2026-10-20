@@ -1,7 +1,8 @@
 # WKInterfaceAuthorizationAppleIDButton.Style.white
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A white button with black lettering.
 
@@ -14,11 +15,16 @@ A white button with black lettering.
 case white
 ```
 
+```c
+WKInterfaceAuthorizationAppleIDButtonStyleWhite
+```
+
 ## See Also
 
-- [WKInterfaceAuthorizationAppleIDButton.Style.default](wkinterfaceauthorizationappleidbutton/style/default.md)
+### Styles
+- [WKInterfaceAuthorizationAppleIDButton.Style.default](./default.md)
   The system’s default button style.
-- [WKInterfaceAuthorizationAppleIDButton.Style.default](wkinterfaceauthorizationappleidbutton/style/default.md)
+- [WKInterfaceAuthorizationAppleIDButton.Style.default](./default.md)
   The system’s default button style.
 
 

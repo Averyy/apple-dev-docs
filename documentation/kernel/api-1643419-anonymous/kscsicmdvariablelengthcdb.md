@@ -1,14 +1,15 @@
 # kSCSICmdVariableLengthCDB
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSICmdVariableLengthCDB = 0x7F
 ```
 

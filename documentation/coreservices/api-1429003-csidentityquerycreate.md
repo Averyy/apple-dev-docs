@@ -1,7 +1,8 @@
 # CSIdentityQueryCreate(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityQueryCreate(_ allocator: CFAllocator!, _ identityClass: CSIdentityClass, _ authority: CSIdentityAuthority!) -> Unmanaged<CSIdentityQuery>!
+```
+
+```c
+CSIdentityQueryRef CSIdentityQueryCreate(CFAllocatorRef allocator, CSIdentityClass identityClass, CSIdentityAuthorityRef authority);
 ```
 
 

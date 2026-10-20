@@ -1,7 +1,8 @@
 # PersistentIdentifier.ID
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the stable identity of a SwiftData model.
 
@@ -23,18 +24,19 @@ struct ID
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let id: PersistentIdentifier.ID](persistentidentifier/id-swift.property.md)
+### Accessing identity information
+- [let id: PersistentIdentifier.ID](./id-swift.property.md)
   The value that uniquely identifies the associated model within the containing store.
-- [var storeIdentifier: String?](persistentidentifier/storeidentifier.md)
+- [var storeIdentifier: String?](./storeidentifier.md)
   The identifier of the store that contains the associated model.
-- [var entityName: String](persistentidentifier/entityname.md)
+- [var entityName: String](./entityname.md)
   The entity name for the associated model.
 
 

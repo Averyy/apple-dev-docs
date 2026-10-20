@@ -2,15 +2,20 @@
 
 **Framework**: IOBluetooth  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sdpQueryComplete(_ device: IOBluetoothDevice!, status: IOReturn)
+```
+
+```objc
+- (void) sdpQueryComplete:(IOBluetoothDevice *) device status:(IOReturn) status;
 ```
 
 

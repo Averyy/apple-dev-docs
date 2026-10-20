@@ -1,7 +1,8 @@
 # AudioConverterNew(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new audio converter object based on specified audio formats.
 
@@ -17,6 +18,10 @@ Creates a new audio converter object based on specified audio formats.
 
 ```swift
 func AudioConverterNew(_ inSourceFormat: UnsafePointer<AudioStreamBasicDescription>, _ inDestinationFormat: UnsafePointer<AudioStreamBasicDescription>, _ outAudioConverter: UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus
+```
+
+```c
+extern OSStatus AudioConverterNew(const AudioStreamBasicDescription *inSourceFormat, const AudioStreamBasicDescription *inDestinationFormat, AudioConverterRef*outAudioConverter);
 ```
 
 #### Return Value
@@ -45,11 +50,12 @@ Encoding and decoding between linear PCM and compressed formats is supported. Fu
 
 ## See Also
 
-- [func AudioConverterNewSpecific(UnsafePointer<AudioStreamBasicDescription>, UnsafePointer<AudioStreamBasicDescription>, UInt32, UnsafePointer<AudioClassDescription>, UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus](audioconverternewspecific(_:_:_:_:_:).md)
+### Managing Audio Converter Objects
+- [func AudioConverterNewSpecific(UnsafePointer<AudioStreamBasicDescription>, UnsafePointer<AudioStreamBasicDescription>, UInt32, UnsafePointer<AudioClassDescription>, UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus](./audioconverternewspecific%28_,_,_,_,_%29.md)
   Creates a new audio converter object using a specified codec.
-- [func AudioConverterReset(AudioConverterRef) -> OSStatus](audioconverterreset(_:).md)
+- [func AudioConverterReset(AudioConverterRef) -> OSStatus](./audioconverterreset%28_%29.md)
   Resets an audio converter object, clearing and flushing its buffers.
-- [func AudioConverterDispose(AudioConverterRef) -> OSStatus](audioconverterdispose(_:).md)
+- [func AudioConverterDispose(AudioConverterRef) -> OSStatus](./audioconverterdispose%28_%29.md)
   Disposes of an audio converter object.
 
 

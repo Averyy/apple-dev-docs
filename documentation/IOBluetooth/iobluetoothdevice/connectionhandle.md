@@ -1,17 +1,22 @@
 # connectionHandle
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the connection handle for the baseband connection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var connectionHandle: BluetoothConnectionHandle { get }
+```
+
+```objc
+@property (assign, readonly) BluetoothConnectionHandle connectionHandle;
 ```
 
 #### Discussion

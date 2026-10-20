@@ -1,7 +1,8 @@
 # init(kernelWidth:kernelHeight:inputFeatureChannels:outputFeatureChannels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 convenience init(kernelWidth: Int, kernelHeight: Int, inputFeatureChannels: Int, outputFeatureChannels: Int)
 ```
 
+```objc
++ (instancetype) cnnConvolutionDescriptorWithKernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight inputFeatureChannels:(NSUInteger) inputFeatureChannels outputFeatureChannels:(NSUInteger) outputFeatureChannels;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](mpscnnconvolutiondescriptor/init(coder:).md)
-- [convenience init(kernelWidth: Int, kernelHeight: Int, inputFeatureChannels: Int, outputFeatureChannels: Int, neuronFilter: MPSCNNNeuron?)](mpscnnconvolutiondescriptor/init(kernelwidth:kernelheight:inputfeaturechannels:outputfeaturechannels:neuronfilter:).md)
+### Type Methods
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [convenience init(kernelWidth: Int, kernelHeight: Int, inputFeatureChannels: Int, outputFeatureChannels: Int, neuronFilter: MPSCNNNeuron?)](./init%28kernelwidth,kernelheight,inputfeaturechannels,outputfeaturechannels,neuronfilter%29.md)
   Creates a convolution descriptor with an optional neuron filter.
 
 

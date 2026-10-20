@@ -1,17 +1,22 @@
 # isTransmissionPaused()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns TRUE if flow control is off.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isTransmissionPaused() -> Bool
+```
+
+```objc
+- (BOOL) isTransmissionPaused;
 ```
 
 #### Return Value

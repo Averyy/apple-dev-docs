@@ -1,7 +1,8 @@
 # doubleToFloat(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns single-precision values converted from a double-precision source.
 
@@ -11,7 +12,7 @@ Returns single-precision values converted from a double-precision source.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ static func doubleToFloat<U>(_ source: U) -> [Float] where U : AccelerateBuffer,
 
 ## See Also
 
-- [static func floatToDouble<U>(U) -> [Double]](vdsp/floattodouble(_:).md)
+### Conversion between floating-point types
+- [static func floatToDouble<U>(U) -> [Double]](./floattodouble%28_%29.md)
   Returns double-precision values converted from a single-precision source.
-- [static func convertElements<U, V>(of: U, to: inout V)](vdsp/convertelements(of:to:)-2ejgr.md)
+- [static func convertElements<U, V>(of: U, to: inout V)](./convertelements%28of,to%29-2ejgr.md)
   Converts single-precision values to double-precision values.
-- [static func convertElements<U, V>(of: U, to: inout V)](vdsp/convertelements(of:to:)-698ye.md)
+- [static func convertElements<U, V>(of: U, to: inout V)](./convertelements%28of,to%29-698ye.md)
   Converts double-precision values to single-precision values.
 
 

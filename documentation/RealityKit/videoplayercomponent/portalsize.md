@@ -1,7 +1,8 @@
 # portalSize
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the portal window for immersive video playback, in meters.
 
@@ -16,7 +17,7 @@ var portalSize: SIMD2<Float> { get set }
 
 #### Discussion
 
-Use this property to control the dimensions of the portal window when [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) is [`VideoPlayerComponent.ImmersiveViewingMode.portal`](videoplayercomponent/immersiveviewingmode-swift.enum/portal.md). The first component specifies the width and the second component specifies the height, both in meters.
+Use this property to control the dimensions of the portal window when [`desiredImmersiveViewingMode`](./desiredimmersiveviewingmode.md) is [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./immersiveviewingmode-swift.enum/portal.md). The first component specifies the width and the second component specifies the height, both in meters.
 
 The default value is `[1.0, 0.5625]`, which produces a 16:9 aspect ratio.
 

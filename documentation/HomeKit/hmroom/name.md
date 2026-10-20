@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the room.
 
@@ -19,15 +20,20 @@ The name of the room.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 #### Discussion
 
 Allow the user to choose room names. Room names must be unique within a home.
 
 ## See Also
 
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmroom/updatename(_:completionhandler:).md)
+### Identifying a room
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the room.
-- [var uniqueIdentifier: UUID](hmroom/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   The unique identifier for a room.
 
 

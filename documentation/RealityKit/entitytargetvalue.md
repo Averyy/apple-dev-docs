@@ -1,7 +1,8 @@
 # EntityTargetValue
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value containing an original gesture value along with a targeted entity.
 
@@ -21,9 +22,9 @@ struct EntityTargetValue<Value>
 
 #### Overview
 
-Spatial data from a [`location`](https://developer.apple.com/documentation/swiftui/draggesture/value/location) returned by a gesture can be converted to and from the entity using functions defined in [`RealityCoordinateSpaceConverting`](realitycoordinatespaceconverting.md).
+Spatial data from a [`location`](../SwiftUI/draggesture/value/location.md) returned by a gesture can be converted to and from the entity using functions defined in [`RealityCoordinateSpaceConverting`](./realitycoordinatespaceconverting.md).
 
-For example, here’s how to convert [`location`](https://developer.apple.com/documentation/swiftui/draggesture/value/location) from a [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) to the parent of an [`Entity`](entity.md):
+For example, here’s how to convert [`location`](../SwiftUI/draggesture/value/location.md) from a [`DragGesture`](../SwiftUI/draggesture.md) to the parent of an [`Entity`](./entity.md):
 
 ```swift
 DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { state, value, _ in
@@ -37,35 +38,36 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
 ## Topics
 
 ### Accessing gesture info
-- [var entity: Entity](entitytargetvalue/entity.md)
+- [var entity: Entity](./entitytargetvalue/entity.md)
   The targeted entity.
-- [var gestureValue: Value](entitytargetvalue/gesturevalue.md)
+- [var gestureValue: Value](./entitytargetvalue/gesturevalue.md)
   The gesture value updated by the gesture.
-- [subscript<T>(dynamicMember _: KeyPath<Value, T>) -> T](entitytargetvalue/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<Value, T>) -> T](./entitytargetvalue/subscript%28dynamicmember%29.md)
 ### Instance Methods
-- [func unproject(CGPoint, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> SIMD3<Float>?](entitytargetvalue/unproject(_:from:to:).md)
+- [func unproject(CGPoint, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> SIMD3<Float>?](./entitytargetvalue/unproject%28_,from,to%29.md)
   Unproject `point` from a 2D coordinate space into 3D world coordinates.
-- [func unproject(KeyPath<Value, CGPoint>, to: some RealityCoordinateSpace) -> SIMD3<Float>?](entitytargetvalue/unproject(_:to:).md)
+- [func unproject(KeyPath<Value, CGPoint>, to: some RealityCoordinateSpace) -> SIMD3<Float>?](./entitytargetvalue/unproject%28_,to%29.md)
   Unproject a 2D point from the gesture value into 3D world coordinates.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
-- [RealityCoordinateSpaceProjecting](realitycoordinatespaceprojecting.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [RealityCoordinateSpaceConverting](./realitycoordinatespaceconverting.md)
+- [RealityCoordinateSpaceProjecting](./realitycoordinatespaceprojecting.md)
 
 ## See Also
 
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+### Direct and indirect gestures
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [struct InputTargetComponent](inputtargetcomponent.md)
+- [struct InputTargetComponent](./inputtargetcomponent.md)
   A component that gives an entity the ability to receive system input.
-- [struct ManipulationComponent](manipulationcomponent.md)
+- [struct ManipulationComponent](./manipulationcomponent.md)
   A component that adds fluid and immersive interactive behaviors and effects.
-- [struct GestureComponent](gesturecomponent.md)
+- [struct GestureComponent](./gesturecomponent.md)
   A component attaching a UI gesture to an entity.
 
 

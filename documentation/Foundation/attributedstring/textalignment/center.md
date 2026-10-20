@@ -1,7 +1,8 @@
 # AttributedString.TextAlignment.center
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The horizontal center of each line is aligned to the horizontal center of the container.
 

@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of all anchor updates.
 
@@ -16,9 +17,10 @@ final var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor> { get }
 
 ## See Also
 
-- [var description: String](environmentlightestimationprovider/description.md)
+### Inspecting the environment light estimation provider
+- [var description: String](./description.md)
   A textual representation of this environment light estimation provider.
-- [var state: DataProviderState](environmentlightestimationprovider/state.md)
+- [var state: DataProviderState](./state.md)
   The state of an environment light estimation provider.
 
 

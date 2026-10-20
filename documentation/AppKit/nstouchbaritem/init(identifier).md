@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new item with the specified identifier.
 
@@ -17,15 +18,20 @@ Creates a new item with the specified identifier.
 init(identifier: NSTouchBarItem.Identifier)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSTouchBarItemIdentifier) identifier;
+```
+
 #### Discussion
 
 The designated initializer. The identifier must be globally unique for every item, except for space items.
 
 ## See Also
 
-- [NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct.md)
+### Creating a bar item
+- [NSTouchBarItem.Identifier](./identifier-swift.struct.md)
   An identifier for an item in the Touch Bar.
-- [init?(coder: NSCoder)](nstouchbaritem/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns a new item from a storyboard or nib file.
 
 

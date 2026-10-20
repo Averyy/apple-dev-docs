@@ -1,14 +1,15 @@
 # upl_valid_page
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 boolean_t upl_valid_page(upl_page_info_t *upl, int index);
 ```
 

@@ -1,7 +1,8 @@
 # HasValueComparisonOperator.hasAnyValue
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operator that determines if the parameter has a value.
 
@@ -11,7 +12,7 @@ An operator that determines if the parameter has a value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case hasAnyValue
 
 ## See Also
 
-- [HasValueComparisonOperator.hasNoValue](hasvaluecomparisonoperator/hasnovalue.md)
+### Value operators
+- [HasValueComparisonOperator.hasNoValue](./hasnovalue.md)
   An operator that determines if the parameter’s empty.
 
 

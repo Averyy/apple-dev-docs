@@ -1,14 +1,15 @@
 # kFWAVCAsyncPlug8
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWAVCAsyncPlug8 = 0xa8
 ```
 

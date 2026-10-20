@@ -1,7 +1,8 @@
 # components
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The components an entity manages, enabling observation of their presence and values.
 

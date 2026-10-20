@@ -1,7 +1,8 @@
 # init(forReading:commonFormat:interleaved:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Opens a file for reading using the specified processing format.
 
@@ -20,6 +21,10 @@ Opens a file for reading using the specified processing format.
 init(forReading fileURL: URL, commonFormat format: AVAudioCommonFormat, interleaved: Bool) throws
 ```
 
+```objc
+- (instancetype) initForReading:(NSURL *) fileURL commonFormat:(AVAudioCommonFormat) format interleaved:(BOOL) interleaved error:(NSError **) outError;
+```
+
 #### Return Value
 
 A new `AVAudioFile` instance you use for reading.
@@ -36,13 +41,14 @@ The processing format refers to the buffers it reads from the file. The system r
 
 ## See Also
 
-- [init(forReading: URL) throws](avaudiofile/init(forreading:).md)
+### Creating an audio file
+- [init(forReading: URL) throws](./init%28forreading%29.md)
   Opens a file for reading using the standard, deinterleaved floating point format.
-- [init(forWriting: URL, settings: [String : Any]) throws](avaudiofile/init(forwriting:settings:).md)
+- [init(forWriting: URL, settings: [String : Any]) throws](./init%28forwriting,settings%29.md)
   Opens a file for writing using the specified settings.
-- [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forwriting:settings:commonformat:interleaved:).md)
+- [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](./init%28forwriting,settings,commonformat,interleaved%29.md)
   Opens a file for writing using a specified processing format and settings.
-- [init()](avaudiofile/init.md)
+- [init()](./init%28%29.md)
 
 
 ---

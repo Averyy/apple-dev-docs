@@ -1,20 +1,27 @@
 # printRect()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deprecated.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
+
+> **Deprecated**: Use the [`printableRect`](./printablerect.md) property instead.
 
 ## Declaration
 
 ```swift
 func printRect() -> CGRect
+```
+
+```objc
+- (CGRect) printRect;
 ```
 
 

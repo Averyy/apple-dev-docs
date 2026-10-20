@@ -1,7 +1,8 @@
 # widgetTexture(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the widget texture for this widget.
 

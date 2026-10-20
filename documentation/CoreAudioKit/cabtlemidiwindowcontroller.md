@@ -1,7 +1,8 @@
 # CABTLEMIDIWindowController
 
 **Framework**: CoreAudioKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A window controller that displays nearby Bluetooth-based MIDI peripherals.
 
@@ -14,30 +15,35 @@ A window controller that displays nearby Bluetooth-based MIDI peripherals.
 class CABTLEMIDIWindowController
 ```
 
+```objc
+@interface CABTLEMIDIWindowController : NSWindowController
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSWindowController](../appkit/nswindowcontroller.md)
+- [NSWindowController](../AppKit/nswindowcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CABTMIDICentralViewController](cabtmidicentralviewcontroller.md)
+### Bluetooth Devices
+- [class CABTMIDICentralViewController](./cabtmidicentralviewcontroller.md)
   A view controller that displays nearby Bluetooth-based MIDI peripherals.
-- [class CABTMIDILocalPeripheralViewController](cabtmidilocalperipheralviewcontroller.md)
+- [class CABTMIDILocalPeripheralViewController](./cabtmidilocalperipheralviewcontroller.md)
   A view controller that advertises an iOS device as a Bluetooth-based MIDI peripheral.
 
 

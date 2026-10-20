@@ -1,19 +1,20 @@
 # OSArray
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for an ordered, random-access collection of objects.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class OSArray;
 ```
 
@@ -30,93 +31,94 @@ OSArray provides no concurrency protection; it’s up to the usage context to pr
 ## Topics
 
 ### Creating an Array
-- [withArray](osarray/witharray.md)
+- [withArray](./osarray/witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [withCapacity](osarray/withcapacity.md)
+- [withCapacity](./osarray/withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [withObjects](osarray/withobjects.md)
+- [withObjects](./osarray/withobjects.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [OSArrayCreate](osarraycreate.md)
-- [merge](osarray/merge.md)
+- [OSArrayCreate](./osarraycreate.md)
+- [merge](./osarray/merge.md)
   Appends all members of an array to this array.
-- [free](osarray/free.md)
-- [flushCollection](osarray/flushcollection.md)
+- [free](./osarray/free.md)
+- [flushCollection](./osarray/flushcollection.md)
   Removes and drops references to all members of array.
 ### Accessing Elements
-- [getObject](osarray/getobject.md)
+- [getObject](./osarray/getobject.md)
   Returns a member of the array.
-- [getLastObject](osarray/getlastobject.md)
+- [getLastObject](./osarray/getlastobject.md)
   Returns the last member of the array.
-- [getNextIndexOfObject](osarray/getnextindexofobject.md)
+- [getNextIndexOfObject](./osarray/getnextindexofobject.md)
   Searches the array for an object.
-- [setObject](osarray/setobject-3bore.md)
+- [setObject](./osarray/setobject-3bore.md)
   Appends an object as the last member of the array.
-- [setObject](osarray/setobject-4ys3x.md)
+- [setObject](./osarray/setobject-4ys3x.md)
   Sets an object as the member of the array at a given index.
-- [iterateObjects](osarray/iterateobjects.md)
+- [iterateObjects](./osarray/iterateobjects.md)
   Iterates the array calling a callback block for each member.
-- [replaceObject](osarray/replaceobject.md)
+- [replaceObject](./osarray/replaceobject.md)
   Removes a current member of the array and replaces it with another object.
-- [removeObject](osarray/removeobject.md)
+- [removeObject](./osarray/removeobject.md)
   Removes a current member of the array.
-- [OSArrayAppendValue](osarrayappendvalue.md)
-- [OSArrayReplaceValue](osarrayreplacevalue.md)
+- [OSArrayAppendValue](./osarrayappendvalue.md)
+- [OSArrayReplaceValue](./osarrayreplacevalue.md)
 ### Getting and Setting Values
-- [OSArrayGetValue](osarraygetvalue.md)
-- [OSArrayGetStringValue](osarraygetstringvalue.md)
-- [OSArrayGetUInt64Value](osarraygetuint64value.md)
-- [OSArraySetValue](osarraysetvalue.md)
-- [OSArraySetStringValue](osarraysetstringvalue.md)
-- [OSArraySetUInt64Value](osarraysetuint64value.md)
-- [Array Indices](3180989-array_indices.md)
-- [OSArrayPtr](osarrayptr.md)
+- [OSArrayGetValue](./osarraygetvalue.md)
+- [OSArrayGetStringValue](./osarraygetstringvalue.md)
+- [OSArrayGetUInt64Value](./osarraygetuint64value.md)
+- [OSArraySetValue](./osarraysetvalue.md)
+- [OSArraySetStringValue](./osarraysetstringvalue.md)
+- [OSArraySetUInt64Value](./osarraysetuint64value.md)
+- [Array Indices](./api-3180989-array_indices.md)
+- [OSArrayPtr](./osarrayptr.md)
 ### Inspecting an Array
-- [getCount](osarray/getcount.md)
+- [getCount](./osarray/getcount.md)
   Returns count of members in array.
-- [getCapacity](osarray/getcapacity.md)
+- [getCapacity](./osarray/getcapacity.md)
   Returns count of currently allocated capacity for members in array.
-- [ensureCapacity](osarray/ensurecapacity.md)
+- [ensureCapacity](./osarray/ensurecapacity.md)
   Allocates capacity for members in array.
-- [OSArrayGetCount](osarraygetcount.md)
+- [OSArrayGetCount](./osarraygetcount.md)
 ### Modifying the Array Contents
-- [OSArrayApply](osarrayapply.md)
-- [OSArrayApplier](osarrayapplier.md)
+- [OSArrayApply](./osarrayapply.md)
+- [OSArrayApplier](./osarrayapplier.md)
 ### Comparing Arrays
-- [isEqualTo](osarray/isequalto-5w7om.md)
+- [isEqualTo](./osarray/isequalto-5w7om.md)
   Compares all members of two arrays with isEqualTo().
-- [isEqualTo](osarray/isequalto-93qxy.md)
+- [isEqualTo](./osarray/isequalto-93qxy.md)
   Compares the array with an OSObject
 
 ## Relationships
 
 ### Inherits From
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
 ### Inherited By
-- [OSSet](osset.md)
+- [OSSet](./osset.md)
 
 ## See Also
 
-- [OSDictionary](osdictionary.md)
+### Registry data types
+- [OSDictionary](./osdictionary.md)
   A container for a collection with elements that are key-value pairs.
-- [OSBoolean](osboolean.md)
+- [OSBoolean](./osboolean.md)
   A container for a true or false value.
-- [OSData](osdata.md)
+- [OSData](./osdata.md)
   A container for untyped data.
-- [OSNumber](osnumber.md)
+- [OSNumber](./osnumber.md)
   A container for an integer value.
-- [OSString](osstring.md)
+- [OSString](./osstring.md)
   A container for managing an array of characters.
-- [OSSerialization](osserialization.md)
+- [OSSerialization](./osserialization.md)
   A container for one or more objects, serialized in a binary data format that is suitable for messaging.
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
   The base class for DriverKit collection objects.
-- [OSContainer](oscontainer.md)
+- [OSContainer](./oscontainer.md)
   The base class for DriverKit data objects.
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
   The base class for DriverKit objects
-- [OSSymbol](ossymbol.md)
+- [OSSymbol](./ossymbol.md)
   A container for managing an array of characters.
-- [IOFixed](iofixed.md)
+- [IOFixed](./iofixed.md)
   A fixed-point number.
 
 

@@ -1,7 +1,8 @@
 # authoredPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored path string — the value as written in the USD file.
 

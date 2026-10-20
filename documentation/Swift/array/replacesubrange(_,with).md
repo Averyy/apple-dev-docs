@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a range of elements with the elements in the specified collection.
 
@@ -37,7 +38,7 @@ If you pass a zero-length range as the `subrange` parameter, this method inserts
 
 Likewise, if you pass a zero-length collection as the `newElements` parameter, this method removes the elements in the given subrange without replacement. Calling the `removeSubrange(_:)` method instead is preferred.
 
-> **Note**: O(*n* + *m*), where *n* is length of the array and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the array, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of the array and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the array, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 
@@ -46,15 +47,16 @@ Likewise, if you pass a zero-length collection as the `newElements` parameter, t
 
 ## See Also
 
-- [func append(Element)](array/append(_:).md)
+### Adding Elements
+- [func append(Element)](./append%28_%29.md)
   Adds a new element at the end of the array.
-- [func insert(Element, at: Int)](array/insert(_:at:).md)
+- [func insert(Element, at: Int)](./insert%28_,at%29.md)
   Inserts a new element at the specified position.
-- [func insert<C>(contentsOf: C, at: Self.Index)](array/insert(contentsof:at:).md)
+- [func insert<C>(contentsOf: C, at: Self.Index)](./insert%28contentsof,at%29.md)
   Inserts the elements of a sequence into the collection at the specified position.
-- [func replaceSubrange<C, R>(R, with: C)](array/replacesubrange(_:with:)-7293p.md)
+- [func replaceSubrange<C, R>(R, with: C)](./replacesubrange%28_,with%29-7293p.md)
   Replaces the specified subrange of elements with the given collection.
-- [func reserveCapacity(Int)](array/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of elements.
 
 

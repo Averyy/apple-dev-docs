@@ -1,10 +1,11 @@
 # isContextHelpModeActive
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 class var isContextHelpModeActive: Bool { get set }
 ```
 
+```objc
+@property (class, getter=isContextHelpModeActive) BOOL contextHelpModeActive;
+```
+
 ## See Also
 
-- [func contextHelp(for: Any) -> NSAttributedString?](nshelpmanager/contexthelp(for:).md)
+### Displaying Context-Sensitive Help
+- [func contextHelp(for: Any) -> NSAttributedString?](./contexthelp%28for%29.md)
   Returns context-sensitive help for an object.
-- [func showContextHelp(for: Any, locationHint: NSPoint) -> Bool](nshelpmanager/showcontexthelp(for:locationhint:).md)
+- [func showContextHelp(for: Any, locationHint: NSPoint) -> Bool](./showcontexthelp%28for,locationhint%29.md)
   Displays the context-sensitive help for a given object at or near the point on the screen specified by a given point.
-- [NSHelpManager.ContextHelpKey](nshelpmanager/contexthelpkey.md)
+- [NSHelpManager.ContextHelpKey](./contexthelpkey.md)
 
 
 ---

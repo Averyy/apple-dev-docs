@@ -1,7 +1,8 @@
 # Algorithm.lz4
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The LZ4 compression algorithm, which is recommended for fast compression.
 
@@ -11,7 +12,7 @@ The LZ4 compression algorithm, which is recommended for fast compression.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -34,7 +35,8 @@ If you are implementing a wrapper for a raw LZ4 decoder, keep in mind that a com
 
 ## See Also
 
-- [var COMPRESSION_LZ4: compression_algorithm](compression_lz4.md)
+### Related Documentation
+- [var COMPRESSION_LZ4: compression_algorithm](../compression_lz4.md)
   The LZ4 compression algorithm for fast compression.
 
 

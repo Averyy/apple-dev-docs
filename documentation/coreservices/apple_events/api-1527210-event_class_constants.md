@@ -15,7 +15,7 @@ AppleScript defines suites that provide terminology for Text, Database, Macintos
 ## Topics
 
 ### Constants
-- [var kCoreEventClass: DescType](kcoreeventclass.md)
+- [var kCoreEventClass: DescType](../kcoreeventclass.md)
   An Apple event sent by the Mac OS; applications that present a graphical interface to the user should be able to any events sent by the Mac OS that apply to the application.
 
 

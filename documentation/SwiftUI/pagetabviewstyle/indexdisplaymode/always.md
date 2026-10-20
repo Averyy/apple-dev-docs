@@ -1,7 +1,8 @@
 # always
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Always display an index view regardless of page count
 
@@ -21,9 +22,10 @@ static let always: PageTabViewStyle.IndexDisplayMode
 
 ## See Also
 
-- [static let automatic: PageTabViewStyle.IndexDisplayMode](pagetabviewstyle/indexdisplaymode/automatic.md)
+### Getting the modes
+- [static let automatic: PageTabViewStyle.IndexDisplayMode](./automatic.md)
   Displays an index view when there are more than one page
-- [static let never: PageTabViewStyle.IndexDisplayMode](pagetabviewstyle/indexdisplaymode/never.md)
+- [static let never: PageTabViewStyle.IndexDisplayMode](./never.md)
   Never display an index view
 
 

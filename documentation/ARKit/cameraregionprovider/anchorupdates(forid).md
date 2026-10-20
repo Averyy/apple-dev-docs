@@ -1,7 +1,8 @@
 # anchorUpdates(forID:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An async sequence of anchor updates for a specific anchor.
 

@@ -1,7 +1,8 @@
 # renderingMode
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current audio session’s rendering mode.
 
@@ -17,26 +18,31 @@ The current audio session’s rendering mode.
 var renderingMode: AVAudioSession.RenderingMode { get }
 ```
 
+```objc
+@property (readonly) AVAudioSessionRenderingMode renderingMode;
+```
+
 #### Discussion
 
-The value of this property is [`AVAudioSession.RenderingMode.notApplicable`](avaudiosession/renderingmode-swift.enum/notapplicable.md) in the following cases:
+The value of this property is [`AVAudioSession.RenderingMode.notApplicable`](./renderingmode-swift.enum/notapplicable.md) in the following cases:
 
-- The currently selected port isn’t of type [`carAudio`](avaudiosession/port/caraudio.md) or, in iOS 18 and later, [`airPlay`](avaudiosession/port/airplay.md).
-- Your app uses a playback API other than [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) or [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer).
+- The currently selected port isn’t of type [`carAudio`](./port/caraudio.md) or, in iOS 18 and later, [`airPlay`](./port/airplay.md).
+- Your app uses a playback API other than [`AVPlayer`](../../AVFoundation/avplayer.md) or [`AVSampleBufferAudioRenderer`](../../AVFoundation/avsamplebufferaudiorenderer.md).
 - Playback isn’t currently active.
 - The audio session is inactive, muted, or not eligible for Now Playing.
 
 ## See Also
 
-- [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
+### Inspecting rendering capabilities
+- [AVAudioSession.RenderingMode](./renderingmode-swift.enum.md)
   Audio session rendering mode identifiers.
-- [class let renderingModeChangeNotification: NSNotification.Name](avaudiosession/renderingmodechangenotification.md)
+- [class let renderingModeChangeNotification: NSNotification.Name](./renderingmodechangenotification.md)
   A notification the system posts when the rendering mode changes.
-- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](avaudiosession/supportedoutputchannellayouts.md)
+- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](./supportedoutputchannellayouts.md)
   The array of channel layouts that the current route supports.
-- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
+- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](./renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
-- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](./spatialplaybackcapabilitieschangednotification.md)
   A notification the system posts when its spatial playback capabilities change.
 
 

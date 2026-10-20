@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure builder using the specified options.
 
@@ -26,7 +27,8 @@ Pass the `StructureBuilder/ConfigurationOptions/beautifyObjects` option to enhan
 
 ## See Also
 
-- [StructureBuilder.ConfigurationOptions](structurebuilder/configurationoptions.md)
+### Creating a structure builder
+- [StructureBuilder.ConfigurationOptions](./configurationoptions.md)
   Options that configure a structure builder.
 
 

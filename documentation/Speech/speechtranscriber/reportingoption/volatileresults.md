@@ -1,7 +1,8 @@
 # SpeechTranscriber.ReportingOption.volatileResults
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Provides tentative results for an audio range in addition to the finalized result.
 
@@ -25,9 +26,10 @@ The transcriber will deliver several results for an audio range as it refines th
 
 ## See Also
 
-- [SpeechTranscriber.ReportingOption.alternativeTranscriptions](speechtranscriber/reportingoption/alternativetranscriptions.md)
+### Reporting options
+- [SpeechTranscriber.ReportingOption.alternativeTranscriptions](./alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
-- [SpeechTranscriber.ReportingOption.fastResults](speechtranscriber/reportingoption/fastresults.md)
+- [SpeechTranscriber.ReportingOption.fastResults](./fastresults.md)
   Biases the transcriber towards responsiveness, yielding faster but also less accurate results.
 
 

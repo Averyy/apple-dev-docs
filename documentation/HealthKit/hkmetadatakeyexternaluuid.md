@@ -1,7 +1,8 @@
 # HKMetadataKeyExternalUUID
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A unique identifier for an HKObject that is set by its source.
 
@@ -19,18 +20,23 @@ A unique identifier for an HKObject that is set by its source.
 let HKMetadataKeyExternalUUID: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyExternalUUID;
+```
+
 #### Discussion
 
 This key takes a string value. This value is independent of the UUID assigned to the object by the HealthKit store. You can assign your own UUID to any HealthKit objects you create. Use these IDs to uniquely identify objects in your application. You typically use the UUID from the corresponding data entry on your server. This lets you create multiple copies of that data across multiple devices. Each copy shares the same external UUID.
 
 ## See Also
 
-- [let HKMetadataKeyTimeZone: String](hkmetadatakeytimezone.md)
+### General Keys
+- [let HKMetadataKeyTimeZone: String](./hkmetadatakeytimezone.md)
   The user’s time zone when the HealthKit object was created.
-- [let HKMetadataKeyWasUserEntered: String](hkmetadatakeywasuserentered.md)
+- [let HKMetadataKeyWasUserEntered: String](./hkmetadatakeywasuserentered.md)
   A key that indicates whether the sample was entered by the user.
-- [let HKMetadataKeyQuantityClampedToLowerBound: String](hkmetadatakeyquantityclampedtolowerbound.md)
-- [let HKMetadataKeyQuantityClampedToUpperBound: String](hkmetadatakeyquantityclampedtoupperbound.md)
+- [let HKMetadataKeyQuantityClampedToLowerBound: String](./hkmetadatakeyquantityclampedtolowerbound.md)
+- [let HKMetadataKeyQuantityClampedToUpperBound: String](./hkmetadatakeyquantityclampedtoupperbound.md)
 
 
 ---

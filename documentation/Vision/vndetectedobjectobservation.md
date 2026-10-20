@@ -1,7 +1,8 @@
 # VNDetectedObjectObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observation that provides the position and extent of an image feature that an image- analysis request detects.
 
@@ -19,56 +20,61 @@ An observation that provides the position and extent of an image feature that an
 class VNDetectedObjectObservation
 ```
 
+```objc
+@interface VNDetectedObjectObservation : VNObservation
+```
+
 #### Overview
 
-This class is the observation type that [`VNTrackObjectRequest`](vntrackobjectrequest.md) generates. It represents an object that the Vision request detects and tracks.
+This class is the observation type that [`VNTrackObjectRequest`](./vntrackobjectrequest.md) generates. It represents an object that the Vision request detects and tracks.
 
 ## Topics
 
 ### Creating an Observation
-- [convenience init(boundingBox: CGRect)](vndetectedobjectobservation/init(boundingbox:).md)
+- [convenience init(boundingBox: CGRect)](./vndetectedobjectobservation/init%28boundingbox%29.md)
   Creates an observation with a bounding box.
-- [convenience init(requestRevision: Int, boundingBox: CGRect)](vndetectedobjectobservation/init(requestrevision:boundingbox:).md)
+- [convenience init(requestRevision: Int, boundingBox: CGRect)](./vndetectedobjectobservation/init%28requestrevision,boundingbox%29.md)
   Creates an observation with a revision number and bounding box.
 ### Locating a Detected Object
-- [var boundingBox: CGRect](vndetectedobjectobservation/boundingbox.md)
+- [var boundingBox: CGRect](./vndetectedobjectobservation/boundingbox.md)
   The bounding box of the object that the request detects.
 ### Accessing an Image Mask
-- [var globalSegmentationMask: VNPixelBufferObservation?](vndetectedobjectobservation/globalsegmentationmask.md)
+- [var globalSegmentationMask: VNPixelBufferObservation?](./vndetectedobjectobservation/globalsegmentationmask.md)
   A resulting pixel buffer from a request to generate a segmentation mask for an image.
 
 ## Relationships
 
 ### Inherits From
-- [VNObservation](vnobservation.md)
+- [VNObservation](./vnobservation.md)
 ### Inherited By
-- [VNFaceObservation](vnfaceobservation.md)
-- [VNHumanObservation](vnhumanobservation.md)
-- [VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
-- [VNRectangleObservation](vnrectangleobservation.md)
+- [VNFaceObservation](./vnfaceobservation.md)
+- [VNHumanObservation](./vnhumanobservation.md)
+- [VNRecognizedObjectObservation](./vnrecognizedobjectobservation.md)
+- [VNRectangleObservation](./vnrectangleobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Tracking the User’s Face in Real Time](tracking-the-user-s-face-in-real-time.md)
+### Object tracking
+- [Tracking the User’s Face in Real Time](./tracking-the-user-s-face-in-real-time.md)
   Detect and track faces from the selfie cam feed in real time.
-- [Tracking Multiple Objects or Rectangles in Video](tracking-multiple-objects-or-rectangles-in-video.md)
+- [Tracking Multiple Objects or Rectangles in Video](./tracking-multiple-objects-or-rectangles-in-video.md)
   Apply Vision algorithms to track objects or rectangles throughout a video.
-- [class VNTrackingRequest](vntrackingrequest.md)
+- [class VNTrackingRequest](./vntrackingrequest.md)
   The abstract superclass for image-analysis requests that track unique features across multiple images or video frames.
-- [class VNTrackRectangleRequest](vntrackrectanglerequest.md)
+- [class VNTrackRectangleRequest](./vntrackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
-- [class VNTrackObjectRequest](vntrackobjectrequest.md)
+- [class VNTrackObjectRequest](./vntrackobjectrequest.md)
   An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
 
 

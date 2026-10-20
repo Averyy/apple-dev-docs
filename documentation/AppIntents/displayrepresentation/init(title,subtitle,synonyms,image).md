@@ -1,7 +1,8 @@
 # init(title:subtitle:synonyms:image:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a display representation whose image is produced lazily by the given closure.
 

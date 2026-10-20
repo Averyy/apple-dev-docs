@@ -1,10 +1,11 @@
 # kAudioUnitParameterFlag_Output
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kAudioUnitParameterFlag_Output: Int { get }
 ```
 
+```c
+kAudioUnitParameterFlag_Output
+```
+
 ## See Also
 
-- [var kAudioUnitParameterFlag_Global: Int](kaudiounitparameterflag_global.md)
-- [var kAudioUnitParameterFlag_Group: Int](kaudiounitparameterflag_group.md)
-- [var kAudioUnitParameterFlag_Input: Int](kaudiounitparameterflag_input.md)
+### Constants
+- [var kAudioUnitParameterFlag_Global: Int](./kaudiounitparameterflag_global.md)
+- [var kAudioUnitParameterFlag_Group: Int](./kaudiounitparameterflag_group.md)
+- [var kAudioUnitParameterFlag_Input: Int](./kaudiounitparameterflag_input.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # getGammaTableByIndex
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getGammaTableByIndex(UInt32 *channelCount, UInt32 *dataCount, UInt32 *dataWidth, void **data);
 ```
 

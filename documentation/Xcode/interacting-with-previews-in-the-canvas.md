@@ -1,6 +1,7 @@
 # Interacting with previews in the canvas
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use the canvas controls to test your view’s appearance and behavior on different devices and configurations.
 
@@ -10,43 +11,43 @@ Previews let you interact with your views and identify interface issues without 
 
 To view previews, in the Project navigator, select an interface file that contains a preview macro. Xcode opens the file in the source editor on the right. To display the preview in the file, click Show Canvas in the upper-right corner of the project window toolbar. If the canvas is paused, click the Restart button to run the preview.
 
-![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor showing the file containing multiple preview macros in the middle, and the canvas showing the tab bar on the top with color scheme variants below on the right.](/images/com.apple.Xcode/show-previews-in-canvas@2x.png)
+![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor showing the file containing multiple preview macros in the middle, and the canvas showing the tab bar on the top with color scheme variants below on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/show-previews-in-canvas@2x.png)
 
 If you add multiple preview and playground macros to a file, you can switch between them using the tabs that appear at the top of the canvas. Xcode uses the name that you pass to the macro as the label for that preview.
 
-For more information on adding previews and playgrounds, see [`Adding previews to your interface files`](adding-previews-to-your-interface-files.md) and [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
+For more information on adding previews and playgrounds, see [Adding previews to your interface files](./adding-previews-to-your-interface-files.md) and [Running code snippets using the playground macro](./running-code-snippets-using-the-playground-macro.md).
 
-#### Interact with Your View in Live Mode
+#### Interact with your view in live mode
 
 Use live mode to test control logic, animations, text entry, and responses to asynchronous code. The behavior of a live mode preview is similar to running your app on a simulated or physical device.
 
 To switch to live mode, click the Live button in the lower-left corner of the canvas and interact with the single device preview that appears. This is the default mode for new previews that you add to your interface files.
 
-![A cropped screenshot of the canvas toolbar on the bottom-left under the preview that shows the location of the live mode button.](/images/com.apple.Xcode/live-mode@2x.png)
+![A cropped screenshot of the canvas toolbar on the bottom-left under the preview that shows the location of the live mode button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/live-mode@2x.png)
 
-#### Change the Preview Screen Size
+#### Change the preview screen size
 
 To verify that your interface adjusts for different device sizes, you can change the preview to an arbitrary size without switching device types.
 
 Click the Resizable button in the lower-left corner of the canvas. Then drag a handle on the top, bottom, or sides of the preview to resize the screen. Alternatively, enter dimensions for the screen at the bottom of the canvas.
 
-![A screenshot of the project window with an interface file selected in the Project navigator on the left, a preview macro in the file highlighted in the middle, and resizable mode showing the handles on each side of the preview in the canvas on the right.](/images/com.apple.Xcode/resize-preview-screen@2x.png)
+![A screenshot of the project window with an interface file selected in the Project navigator on the left, a preview macro in the file highlighted in the middle, and resizable mode showing the handles on each side of the preview in the canvas on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/resize-preview-screen@2x.png)
 
-#### Highlight Code Using Selectable Mode
+#### Highlight code using selectable mode
 
 Use selectable mode to display preview code while interacting with it in the canvas.
 
 To highlight the code for an element in the source editor, click the Selectable button in the lower-left corner of the canvas, and double-click the element in the canvas. Xcode highlights both the element in the canvas and the corresponding code in the source editor.
 
-![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro highlighted in the middle, and the canvas in selectable mode on the right.](/images/com.apple.Xcode/highlight-code-in-selectable-mode@2x.png)
+![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro highlighted in the middle, and the canvas in selectable mode on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/highlight-code-in-selectable-mode@2x.png)
 
 Then you can change the code for the element in the source editor and see the results immediately in the canvas.
 
-#### Compare Different View Configurations
+#### Compare different view configurations
 
 Use variant mode to compare your view in different configurations side by side. For example, test how well your view supports different device orientations, text sizes for accessibility, and displays on iPhone Duo.
 
-![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro in the middle, and the canvas showing display variants on iPhone Duo on the right.](/images/com.apple.Xcode/preview-display-variants@2x.png)
+![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro in the middle, and the canvas showing display variants on iPhone Duo on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/preview-display-variants@2x.png)
 
 Click the Variant button in the lower-left corner of the canvas and choose a variant option from the pop-up menu:
 
@@ -59,7 +60,7 @@ Click the Variant button in the lower-left corner of the canvas and choose a var
 
 To show one of many variants, choose one of the menu options above and select the variant in the canvas. Then use the drop-down menu in the upper-left corner to switch between variants. To display all variants again, click the arrow on the left of the drop-down menu.
 
-#### Test Views with Different Device Settings
+#### Test views with different device settings
 
 Choose a specific device from the Preview Device pop-up menu in the lower-right corner of the canvas, such as an iPhone or My Mac. Then select device-specific options from the Device Settings button in the lower-right corner of the canvas.
 
@@ -70,23 +71,24 @@ For example, to see how your view looks in dark appearance, landscape right orie
 3. Toggle Orientation on and select Landscape Right under Orientation.
 4. Toggle Dynamic Type on, and move the Dynamic Type slider to the X Large text setting.
 
-![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro highlighted in the middle, and the canvas showing orientation variants in dark appearance device settings on the right.](/images/com.apple.Xcode/change-device-settings@2x.png)
+![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro highlighted in the middle, and the canvas showing orientation variants in dark appearance device settings on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/change-device-settings@2x.png)
 
 To reproduce interface issues, try turning on a combination of variant and device settings. For example, to see how your view adapts to different languages, select Orientation Variants from Variants. The canvas shows multiple orientations of your view. Then turn Language on and select a localization in Device Settings.
 
-#### Capture Screenshots of Previews
+#### Capture screenshots of previews
 
 To take a screenshot, click the Screenshot button in the lower-right corner of the canvas. In the sheet that appears, enter a file name, choose a location, and click Save.
 
 ## See Also
 
-- [Creating an Xcode project for an app](creating-an-xcode-project-for-an-app.md)
+### Essentials
+- [Creating an Xcode project for an app](./creating-an-xcode-project-for-an-app.md)
   Set up a new project to start developing your app.
-- [Adding previews to your interface files](adding-previews-to-your-interface-files.md)
+- [Adding previews to your interface files](./adding-previews-to-your-interface-files.md)
   Write code to test your views on different devices and configurations without needing to run your app.
-- [Running your app on simulated or physical devices](running-your-app-on-simulated-or-physical-devices.md)
+- [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Xcode updates](../updates/xcode.md)
+- [Xcode updates](../Updates/xcode.md)
   Learn about important changes to Xcode.
 
 

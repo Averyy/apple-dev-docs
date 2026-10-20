@@ -1,7 +1,8 @@
 # contentAttributeSet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of properties that describe the activity.
 
@@ -19,25 +20,30 @@ A set of properties that describe the activity.
 var contentAttributeSet: CSSearchableItemAttributeSet? { get set }
 ```
 
+```objc
+@property (copy, nullable) CSSearchableItemAttributeSet * contentAttributeSet;
+```
+
 ## Mentions
 
-- [Creating a user activity object](creating-a-user-activity-object.md)
+- [Creating a user activity object](../creating-a-user-activity-object.md)
 
 #### Discussion
 
-A [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset) object encapsulates the set of properties you want to display for a searchable activity.
+A [`CSSearchableItemAttributeSet`](../../CoreSpotlight/cssearchableitemattributeset.md) object encapsulates the set of properties you want to display for a searchable activity.
 
 ## See Also
 
-- [var activityType: String](nsuseractivity/activitytype.md)
+### Describing the activity
+- [var activityType: String](./activitytype.md)
   The user activity object’s activity type.
-- [var title: String?](nsuseractivity/title.md)
+- [var title: String?](./title.md)
   An optional, user-visible title for this activity, such as a document name or web page title.
-- [var keywords: Set<String>](nsuseractivity/keywords.md)
+- [var keywords: Set<String>](./keywords.md)
   A set of localized keywords that can help users find the activity in search results.
-- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](nsuseractivity/persistentidentifier.md)
+- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](./persistentidentifier.md)
   A unique and persistent value you use to identify the activity.
-- [typealias NSUserActivityPersistentIdentifier](nsuseractivitypersistentidentifier.md)
+- [typealias NSUserActivityPersistentIdentifier](../nsuseractivitypersistentidentifier.md)
   The type that defines a persistent identifier value for an activity.
 
 

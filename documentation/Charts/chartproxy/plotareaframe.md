@@ -1,18 +1,19 @@
 # plotAreaFrame
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An anchor to the frame of the chart’s plot.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
+- iOS 16.0+ - Deprecated in 17.0 (renamed: plotFrame)
+- iPadOS 16.0+ - Deprecated in 17.0 (renamed: plotFrame)
+- Mac Catalyst 16.0+ - Deprecated in 17.0 (renamed: plotFrame)
+- macOS 13.0+ - Deprecated in 14.0 (renamed: plotFrame)
+- tvOS 16.0+ - Deprecated in 17.0 (renamed: plotFrame)
 - visionOS 1.0+
-- watchOS 9.0+
+- watchOS 9.0+ - Deprecated in 10.0 (renamed: plotFrame)
 
 ## Declaration
 

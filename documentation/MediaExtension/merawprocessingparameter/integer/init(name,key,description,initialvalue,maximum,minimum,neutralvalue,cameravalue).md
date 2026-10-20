@@ -1,7 +1,8 @@
 # init(name:key:description:initialValue:maximum:minimum:neutralValue:cameraValue:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer parameter object.
 

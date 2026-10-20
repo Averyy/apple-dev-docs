@@ -1,14 +1,15 @@
 # IOUserNetworkPacketQueueCompatId
 
 **Framework**: NetworkingDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserNetworkPacketQueueCompatId;
 ```
 

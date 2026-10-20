@@ -1,7 +1,8 @@
 # compactMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the non-`nil` results of mapping the given transformation over this sequence.
 
@@ -24,7 +25,7 @@ func compactMap<ElementOfResult>(_ transform: @escaping (Self.Elements.Element) 
 
 Use this method to receive a sequence of non-optional values when your transformation produces an optional value.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

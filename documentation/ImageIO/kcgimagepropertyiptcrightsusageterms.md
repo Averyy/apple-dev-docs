@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCRightsUsageTerms
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The usage rights for the image.
 
@@ -20,9 +21,14 @@ The usage rights for the image.
 let kCGImagePropertyIPTCRightsUsageTerms: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCRightsUsageTerms;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCCopyrightNotice: CFString](kcgimagepropertyiptccopyrightnotice.md)
+### Copyright
+- [let kCGImagePropertyIPTCCopyrightNotice: CFString](./kcgimagepropertyiptccopyrightnotice.md)
   The copyright notice.
 
 

@@ -1,23 +1,25 @@
 # OSPrintBacktrace
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 void OSPrintBacktrace(void);
 ```
 
 ## See Also
 
-- [backtrace](1644760-backtrace.md)
-- [backtrace_user](2202280-backtrace_user.md)
-- [OSReportWithBacktrace](1593374-osreportwithbacktrace.md)
-- [OSBacktrace](1593371-osbacktrace.md)
+### Backtrace
+- [backtrace](./api-1644760-backtrace.md)
+- [backtrace_user](./api-2202280-backtrace_user.md)
+- [OSReportWithBacktrace](./api-1593374-osreportwithbacktrace.md)
+- [OSBacktrace](./api-1593371-osbacktrace.md)
 
 
 ---

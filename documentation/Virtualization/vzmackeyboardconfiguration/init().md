@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Mac keyboard configuration.
 
@@ -12,6 +13,10 @@ Creates a new Mac keyboard configuration.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

@@ -1,7 +1,8 @@
 # CSSM_ERRCODE_OBJECT_ACL_NOT_SUPPORTED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ERRCODE_OBJECT_ACL_NOT_SUPPORTED: Int { get }
+```
+
+```c
+CSSM_ERRCODE_OBJECT_ACL_NOT_SUPPORTED
 ```
 
 

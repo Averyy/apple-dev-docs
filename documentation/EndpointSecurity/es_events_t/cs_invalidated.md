@@ -1,18 +1,23 @@
 # cs_invalidated
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates the invalidation of a process’s code signing status.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var cs_invalidated: es_event_cs_invalidated_t { get set }
+```
+
+```c
+es_event_cs_invalidated_t cs_invalidated;
 ```
 
 

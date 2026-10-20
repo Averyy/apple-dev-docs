@@ -1,7 +1,8 @@
 # BehaviorTreeActionHandler
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
 
@@ -53,29 +54,30 @@ MyActionHandler.register { event in
 ## Topics
 
 ### Responding to action progress
-- [func actionStartedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionstartedwithresult(event:).md)
-- [func actionUpdatedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionupdatedwithresult(event:).md)
-- [func actionPausedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionpausedwithresult(event:).md)
-- [func actionResumedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionresumedwithresult(event:).md)
+- [func actionStartedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionstartedwithresult%28event%29.md)
+- [func actionUpdatedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionupdatedwithresult%28event%29.md)
+- [func actionPausedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionpausedwithresult%28event%29.md)
+- [func actionResumedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionresumedwithresult%28event%29.md)
 ### Responding to action completion
-- [func actionEndedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionendedwithresult(event:).md)
-- [func actionTerminatedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionterminatedwithresult(event:).md)
-- [func actionSkippedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionskippedwithresult(event:).md)
+- [func actionEndedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionendedwithresult%28event%29.md)
+- [func actionTerminatedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionterminatedwithresult%28event%29.md)
+- [func actionSkippedWithResult(event: Self.EventType) -> ActionResult?](./behaviortreeactionhandler/actionskippedwithresult%28event%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [ActionHandlerProtocol](actionhandlerprotocol.md)
+- [ActionHandlerProtocol](./actionhandlerprotocol.md)
 
 ## See Also
 
-- [struct BehaviorTreeComponent](behaviortreecomponent.md)
+### Behavior trees
+- [struct BehaviorTreeComponent](./behaviortreecomponent.md)
   Manages which behavior tree is active for the component’s entity.
-- [class BehaviorTreeResource](behaviortreeresource.md)
+- [class BehaviorTreeResource](./behaviortreeresource.md)
   An immutable representation of a behavior tree.
-- [protocol BehaviorTreeAction](behaviortreeaction.md)
+- [protocol BehaviorTreeAction](./behaviortreeaction.md)
   A protocol that defines an action that a behavior tree action node can use.
-- [enum ActionResult](actionresult.md)
+- [enum ActionResult](./actionresult.md)
   Status values that an action can report back to the animation system.
 
 

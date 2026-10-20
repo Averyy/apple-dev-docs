@@ -1,7 +1,8 @@
 # webViewWebContentProcessDidTerminate(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the web view’s content process was terminated.
 
@@ -18,6 +19,10 @@ Tells the delegate that the web view’s content process was terminated.
 optional func webViewWebContentProcessDidTerminate(_ webView: WKWebView)
 ```
 
+```objc
+- (void) webViewWebContentProcessDidTerminate:(WKWebView *) webView;
+```
+
 #### Discussion
 
 Web views use a separate process to render and manage web content. WebKit calls this method when the process for the specified web view terminates for any reason.
@@ -28,9 +33,10 @@ Web views use a separate process to render and manage web content. WebKit calls 
 
 ## See Also
 
-- [func webView(WKWebView, didFail: WKNavigation!, withError: any Error)](wknavigationdelegate/webview(_:didfail:witherror:).md)
+### Responding to navigation errors
+- [func webView(WKWebView, didFail: WKNavigation!, withError: any Error)](./webview%28_,didfail,witherror%29.md)
   Tells the delegate that an error occurred during navigation.
-- [func webView(WKWebView, didFailProvisionalNavigation: WKNavigation!, withError: any Error)](wknavigationdelegate/webview(_:didfailprovisionalnavigation:witherror:).md)
+- [func webView(WKWebView, didFailProvisionalNavigation: WKNavigation!, withError: any Error)](./webview%28_,didfailprovisionalnavigation,witherror%29.md)
   Tells the delegate that an error occurred during the early navigation process.
 
 

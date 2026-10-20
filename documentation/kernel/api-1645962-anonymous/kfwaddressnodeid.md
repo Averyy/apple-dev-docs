@@ -1,14 +1,15 @@
 # kFWAddressNodeID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWAddressNodeID = FWBitRange (26, 31) << kCSRNodeIDPhase
 ```
 

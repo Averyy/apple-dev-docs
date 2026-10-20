@@ -1,7 +1,8 @@
 # init(path:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an `NSDistributedLock` object to use as the lock the file-system entry specified by a given path.
 
@@ -15,6 +16,10 @@ Initializes an `NSDistributedLock` object to use as the lock the file-system ent
 init?(path: String)
 ```
 
+```objc
+- (instancetype) initWithPath:(NSString *) path;
+```
+
 #### Return Value
 
 An `NSDistributedLock` object initialized to use as the locking object the file-system entry specified by `path`.
@@ -25,7 +30,7 @@ For applications to use the lock, `path` must be accessible to—and writable by
 
 ## Parameters
 
-- `path`: All of `path` up to the last component itself must exist. You can use [`FileManager`](filemanager.md) to create (and set permissions) for any nonexistent intermediate directories.
+- `path`: All of `path` up to the last component itself must exist. You can use [`FileManager`](../filemanager.md) to create (and set permissions) for any nonexistent intermediate directories.
 
 
 ---

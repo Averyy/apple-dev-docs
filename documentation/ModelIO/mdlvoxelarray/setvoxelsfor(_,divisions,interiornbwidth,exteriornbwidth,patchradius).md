@@ -1,12 +1,13 @@
 # setVoxelsFor(_:divisions:interiorNBWidth:exteriorNBWidth:patchRadius:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets voxel values in the array to model the volume of the specified mesh and creates voxel shells for the specified distances from the object’s surface.
 
 **Availability**:
-- macOS 10.11+
+- macOS 10.11+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Sets voxel values in the array to model the volume of the specified mesh and cre
 func setVoxelsFor(_ mesh: MDLMesh, divisions: Int32, interiorNBWidth: Float, exteriorNBWidth: Float, patchRadius: Float)
 ```
 
+```objc
+- (void) setVoxelsForMesh:(MDLMesh *) mesh divisions:(int) divisions interiorNBWidth:(float) interiorNBWidth exteriorNBWidth:(float) exteriorNBWidth patchRadius:(float) patchRadius;
+```
+
 #### Discussion
 
-When you add a mesh to a voxel array, Model I/O analyzes the mesh to determine the volume of the 3D object it models. This method discretizes that volume by dividing the mesh’s [`boundingBox`](mdlasset/boundingbox.md) coordinates into a three-dimensional grid. The `divisions` parameter determines the height of the grid in voxels. A single voxel is a cubic unit, so the width and depth of the grid in voxels is proportional to its height and the bounding box of the mesh.
+When you add a mesh to a voxel array, Model I/O analyzes the mesh to determine the volume of the 3D object it models. This method discretizes that volume by dividing the mesh’s [`boundingBox`](../mdlasset/boundingbox.md) coordinates into a three-dimensional grid. The `divisions` parameter determines the height of the grid in voxels. A single voxel is a cubic unit, so the width and depth of the grid in voxels is proportional to its height and the bounding box of the mesh.
 
-After dividing the bounding box into a grid, Model I/O generates a shell of voxels at the grid positions corresponding to points on the mesh’s surface. Each voxel is a [`MDLVoxelIndex`](mdlvoxelindex.md) value whose x, y, and z coordinates locate the voxel in the grid, and whose w coordinate value is 0, indicating that the voxel is on the surface of the object.
+After dividing the bounding box into a grid, Model I/O generates a shell of voxels at the grid positions corresponding to points on the mesh’s surface. Each voxel is a [`MDLVoxelIndex`](../mdlvoxelindex.md) value whose x, y, and z coordinates locate the voxel in the grid, and whose w coordinate value is 0, indicating that the voxel is on the surface of the object.
 
 If you pass a value greater than zero for the `interiorNBWidth` or `exteriorNBWidth` parameter, this method also generates voxel data for the grid positions within or outside of the surface. For example, if you pass an `interiorNBWidth` value of `2.5`, Model I/O generates concentric shells of voxels inside the surface such that the distance from each voxel to the surface is no greater than 2.5 units. For those voxels, the w coordinate indicates how many shells lie between that voxel and the surface shell.
 
@@ -34,9 +39,10 @@ After generating voxel data for the specified mesh, this method adds that data t
 
 ## See Also
 
-- [func setVoxelAtIndex(MDLVoxelIndex)](mdlvoxelarray/setvoxelatindex(_:).md)
+### Modifying Voxels
+- [func setVoxelAtIndex(MDLVoxelIndex)](./setvoxelatindex%28_%29.md)
   Sets voxel characteristics at the specified index in the array.
-- [func setVoxelsFor(MDLMesh, divisions: Int32, interiorShells: Int32, exteriorShells: Int32, patchRadius: Float)](mdlvoxelarray/setvoxelsfor(_:divisions:interiorshells:exteriorshells:patchradius:).md)
+- [func setVoxelsFor(MDLMesh, divisions: Int32, interiorShells: Int32, exteriorShells: Int32, patchRadius: Float)](./setvoxelsfor%28_,divisions,interiorshells,exteriorshells,patchradius%29.md)
   Sets voxel values in the array to model the volume of the specified mesh and creates the specified number of voxel shells.
 
 

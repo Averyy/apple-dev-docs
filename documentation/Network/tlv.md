@@ -1,7 +1,8 @@
 # TLV
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Type-Length-Value (TLV) framing protocol.
 
@@ -29,19 +30,19 @@ Supports sending and receiving messages.
 ## Topics
 
 ### Initializers
-- [init<BelowProtocol>(() -> BelowProtocol)](tlv/init(_:)-8ka4w.md)
-- [init<BelowProtocol>(() -> BelowProtocol)](tlv/init(_:)-8qsbh.md)
-- [init<T, L, BelowProtocol>(type: T.Type, length: L.Type, () -> BelowProtocol)](tlv/init(type:length:_:)-7awe.md)
+- [init<BelowProtocol>(() -> BelowProtocol)](./tlv/init%28_%29-8ka4w.md)
+- [init<BelowProtocol>(() -> BelowProtocol)](./tlv/init%28_%29-8qsbh.md)
+- [init<T, L, BelowProtocol>(type: T.Type, length: L.Type, () -> BelowProtocol)](./tlv/init%28type,length,_%29-7awe.md)
   Create TLV with the specified sizes for the type and length fields.
-- [init<T, L, BelowProtocol>(type: T.Type, length: L.Type, () -> BelowProtocol)](tlv/init(type:length:_:)-h8s.md)
+- [init<T, L, BelowProtocol>(type: T.Type, length: L.Type, () -> BelowProtocol)](./tlv/init%28type,length,_%29-h8s.md)
   Create TLV with the specified sizes for the type and length fields.
 
 ## Relationships
 
 ### Conforms To
-- [MessageProtocol](messageprotocol.md)
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [MessageProtocol](./messageprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 
 
 ---

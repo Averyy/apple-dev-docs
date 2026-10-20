@@ -1,7 +1,8 @@
 # assistiveAccess
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Apply the visual style used in Assistive Access on iOS and iPadOS. On other platforms, this is a no-op.
 
@@ -20,6 +21,8 @@ Apply the visual style used in Assistive Access on iOS and iPadOS. On other plat
 @MainActor
 static var assistiveAccess: PreviewTrait<Preview.ViewTraits> { get }
 ```
+
+Available when `T` is `Preview.ViewTraits`.
 
 
 ---

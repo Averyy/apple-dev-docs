@@ -1,7 +1,8 @@
 # MTRDeviceState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -18,24 +19,28 @@
 enum MTRDeviceState
 ```
 
+```c
+enum MTRDeviceState : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDeviceState.reachable](mtrdevicestate/reachable.md)
-- [MTRDeviceState.unknown](mtrdevicestate/unknown.md)
-- [MTRDeviceState.unreachable](mtrdevicestate/unreachable.md)
+- [MTRDeviceState.reachable](./mtrdevicestate/reachable.md)
+- [MTRDeviceState.unknown](./mtrdevicestate/unknown.md)
+- [MTRDeviceState.unreachable](./mtrdevicestate/unreachable.md)
 ### Initializers
-- [init?(rawValue: UInt)](mtrdevicestate/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtrdevicestate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

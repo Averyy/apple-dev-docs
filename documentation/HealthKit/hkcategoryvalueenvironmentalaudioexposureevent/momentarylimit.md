@@ -1,7 +1,8 @@
 # HKCategoryValueEnvironmentalAudioExposureEvent.momentaryLimit
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A brief exposure to a loud environment.
 
@@ -17,6 +18,10 @@ A brief exposure to a loud environment.
 
 ```swift
 case momentaryLimit
+```
+
+```c
+HKCategoryValueEnvironmentalAudioExposureEventMomentaryLimit
 ```
 
 

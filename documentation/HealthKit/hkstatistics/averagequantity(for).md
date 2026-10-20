@@ -1,7 +1,8 @@
 # averageQuantity(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the average value from all the samples that match the query and that were created by the specified source.
 
@@ -19,39 +20,45 @@ Returns the average value from all the samples that match the query and that wer
 func averageQuantity(for source: HKSource) -> HKQuantity?
 ```
 
+```objc
+- (HKQuantity *) averageQuantityForSource:(HKSource *) source;
+```
+
 #### Return Value
 
-If both the [`discreteAverage`](hkstatisticsoptions/discreteaverage.md) option and the [`separateBySource`](hkstatisticsoptions/separatebysource.md) option were set, this method returns a quantity object. This object contains the average value from all the samples that match the query and that were created by the specified source. If the statistics options were not both set, this method returns `nil`
+If both the [`discreteAverage`](../hkstatisticsoptions/discreteaverage.md) option and the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option were set, this method returns a quantity object. This object contains the average value from all the samples that match the query and that were created by the specified source. If the statistics options were not both set, this method returns `nil`
 
 ## Parameters
 
-- `source`: A data source from the statistics object’s [`sources`](hkstatistics/sources.md) array.
+- `source`: A data source from the statistics object’s [`sources`](./sources.md) array.
 
 ## See Also
 
-- [var endDate: Date](hkstatistics/enddate.md)
+### Related Documentation
+- [var endDate: Date](./enddate.md)
   The end of the time period included in these statistics.
-- [var sources: [HKSource]?](hkstatistics/sources.md)
+- [var sources: [HKSource]?](./sources.md)
   An array containing all the sources contributing to these statistics.
-- [var startDate: Date](hkstatistics/startdate.md)
+- [var startDate: Date](./startdate.md)
   The start of the time period included in these statistics.
-- [func averageQuantity() -> HKQuantity?](hkstatistics/averagequantity.md)
+### Getting Statistics Data
+- [func averageQuantity() -> HKQuantity?](./averagequantity%28%29.md)
   Returns the average value from all the samples that match the query.
-- [func maximumQuantity() -> HKQuantity?](hkstatistics/maximumquantity.md)
+- [func maximumQuantity() -> HKQuantity?](./maximumquantity%28%29.md)
   Returns the maximum value from all the samples that match the query.
-- [func maximumQuantity(for: HKSource) -> HKQuantity?](hkstatistics/maximumquantity(for:).md)
+- [func maximumQuantity(for: HKSource) -> HKQuantity?](./maximumquantity%28for%29.md)
   Returns the maximum value from all the samples that match the query and that were created by the specified source.
-- [func minimumQuantity() -> HKQuantity?](hkstatistics/minimumquantity.md)
+- [func minimumQuantity() -> HKQuantity?](./minimumquantity%28%29.md)
   Returns the minimum value from all the samples that match the query.
-- [func minimumQuantity(for: HKSource) -> HKQuantity?](hkstatistics/minimumquantity(for:).md)
+- [func minimumQuantity(for: HKSource) -> HKQuantity?](./minimumquantity%28for%29.md)
   Returns the minimum value from all the samples that match the query and that were created by the specified source.
-- [func sumQuantity() -> HKQuantity?](hkstatistics/sumquantity.md)
+- [func sumQuantity() -> HKQuantity?](./sumquantity%28%29.md)
   Returns the sum of all the samples that match the query.
-- [func sumQuantity(for: HKSource) -> HKQuantity?](hkstatistics/sumquantity(for:).md)
+- [func sumQuantity(for: HKSource) -> HKQuantity?](./sumquantity%28for%29.md)
   Returns the sum of all the samples that match the query and that were created by the specified source.
-- [func duration() -> HKQuantity?](hkstatistics/duration.md)
+- [func duration() -> HKQuantity?](./duration%28%29.md)
   Returns the total duration covering all the samples that match the query.
-- [func duration(for: HKSource) -> HKQuantity?](hkstatistics/duration(for:).md)
+- [func duration(for: HKSource) -> HKQuantity?](./duration%28for%29.md)
   Returns the total duration covering all the samples created by the specified source that also match the query.
 
 

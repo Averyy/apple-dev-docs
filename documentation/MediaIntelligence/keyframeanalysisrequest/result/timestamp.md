@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp of the key frame.
 

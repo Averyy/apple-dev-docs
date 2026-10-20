@@ -1,7 +1,8 @@
 # kICPhHost
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kICPhHost: String { get }
+```
+
+```c
+#define kICPhHost
 ```
 
 

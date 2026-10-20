@@ -1,7 +1,8 @@
 # ciphertext
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encrypted data.
 
@@ -22,9 +23,10 @@ var ciphertext: Data { get }
 
 ## See Also
 
-- [var nonce: ChaChaPoly.Nonce](chachapoly/sealedbox/nonce.md)
+### Inspecting the component elements
+- [var nonce: ChaChaPoly.Nonce](./nonce.md)
   The nonce used to encrypt the data.
-- [var tag: Data](chachapoly/sealedbox/tag.md)
+- [var tag: Data](./tag.md)
   An authentication tag.
 
 

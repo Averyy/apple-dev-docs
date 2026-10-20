@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key of the contact property.
 
@@ -19,17 +20,30 @@ The key of the contact property.
 var key: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * key;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * key;
+```
+
 #### Discussion
 
 This property is used for properties that may or may not be in labeled arrays.
 
 ## See Also
 
-- [var value: Any?](cncontactproperty/value.md)
+### Getting the Property Information
+- [var value: Any?](./value.md)
   The value of the property.
-- [var label: String?](cncontactproperty/label.md)
+- [var label: String?](./label.md)
   The label of the labeled value of the property array.
-- [var identifier: String?](cncontactproperty/identifier.md)
+- [var identifier: String?](./identifier.md)
   The identifier of the labeled value in the array of labeled.
 
 

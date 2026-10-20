@@ -1,7 +1,8 @@
 # IOCommand
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 This class is an abstract class which represents an I/O command.
 
@@ -11,7 +12,7 @@ This class is an abstract class which represents an I/O command.
 
 ## Declaration
 
-```swift
+```cpp
 class IOCommand : OSObject
 ```
 
@@ -22,29 +23,30 @@ This class is an abstract class which represents an I/O command passed from a de
 ## Topics
 
 ### Instance Variables
-- [fCommandChain](iocommand/fcommandchain.md)
+- [fCommandChain](./iocommand/fcommandchain.md)
 ### Instance Methods
-- [- CommandChain](../driverkit/iocommand/commandchain.md)
-- [- free](../driverkit/iocommand/free.md)
-- [- getMetaClass](iocommand/1528522-getmetaclass.md)
-- [- init](iocommand/1528524-init.md)
+- [- CommandChain](../DriverKit/iocommand/commandchain.md)
+- [- free](../DriverKit/iocommand/free.md)
+- [- getMetaClass](./iocommand/api-1528522-getmetaclass.md)
+- [- init](./iocommand/api-1528524-init.md)
 ### Type Methods
-- [+ FromChain](../driverkit/iocommand/fromchain.md)
+- [+ FromChain](../DriverKit/iocommand/fromchain.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](../driverkit/osobject.md)
-- [OSObject](osobject.md)
+- [OSObject](../DriverKit/osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOCommandPool](iocommandpool.md)
+### Base Types
+- [IOCommandPool](./iocommandpool.md)
   Manipulates a pool of commands which inherit from IOCommand.
-- [IOCommandGate](iocommandgate.md)
+- [IOCommandGate](./iocommandgate.md)
   Single-threaded work-loop client request mechanism.
-- [IODispatchSource](iodispatchsource.md)
-- [IOEventSource](ioeventsource.md)
+- [IODispatchSource](./iodispatchsource.md)
+- [IOEventSource](./ioeventsource.md)
   Abstract class for all work-loop event sources.
 
 

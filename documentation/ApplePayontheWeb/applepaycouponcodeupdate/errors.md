@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of errors resulting from the coupon code update.
 
@@ -11,7 +12,7 @@ A list of errors resulting from the coupon code update.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayError> errors;
 ```
 
@@ -19,15 +20,16 @@ sequence <ApplePayError> errors;
 
 List the errors in order of importance.
 
-For information on the possible errors, see [`ApplePayError`](applepayerror.md).
+For information on the possible errors, see [`ApplePayError`](../applepayerror.md).
 
 ## See Also
 
-- [newLineItems](applepaycouponcodeupdate/newlineitems.md)
+### Setting updated transaction details
+- [newLineItems](./newlineitems.md)
   The list of updated line items incorporating the coupon code update.
-- [newShippingMethods](applepaycouponcodeupdate/newshippingmethods.md)
+- [newShippingMethods](./newshippingmethods.md)
   The list of available shipping methods.
-- [newTotal](applepaycouponcodeupdate/newtotal.md)
+- [newTotal](./newtotal.md)
   The updated total resulting from the coupon code update.
 
 

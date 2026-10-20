@@ -1,7 +1,8 @@
 # RCSMessage.Reaction.Operation.addEmoji(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation type for adding one or more emoji reactions.
 

@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeAudioGatewayFeatures
 
 **Framework**: IOBluetooth  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,50 +13,55 @@
 enum IOBluetoothHandsFreeAudioGatewayFeatures
 ```
 
+```c
+enum IOBluetoothHandsFreeAudioGatewayFeatures : uint32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [IOBluetoothHandsFreeAudioGatewayFeatures.attachedNumberToVoiceTag](iobluetoothhandsfreeaudiogatewayfeatures/attachednumbertovoicetag.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.codecNegotiation](iobluetoothhandsfreeaudiogatewayfeatures/codecnegotiation.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.ecAndOrNRFunction](iobluetoothhandsfreeaudiogatewayfeatures/ecandornrfunction.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallControl](iobluetoothhandsfreeaudiogatewayfeatures/enhancedcallcontrol.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallStatus](iobluetoothhandsfreeaudiogatewayfeatures/enhancedcallstatus.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.extendedErrorResultCodes](iobluetoothhandsfreeaudiogatewayfeatures/extendederrorresultcodes.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.inBandRingTone](iobluetoothhandsfreeaudiogatewayfeatures/inbandringtone.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.none](iobluetoothhandsfreeaudiogatewayfeatures/none.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.rejectCallCapability](iobluetoothhandsfreeaudiogatewayfeatures/rejectcallcapability.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.threeWayCalling](iobluetoothhandsfreeaudiogatewayfeatures/threewaycalling.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.voiceRecognition](iobluetoothhandsfreeaudiogatewayfeatures/voicerecognition.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.attachedNumberToVoiceTag](./iobluetoothhandsfreeaudiogatewayfeatures/attachednumbertovoicetag.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.codecNegotiation](./iobluetoothhandsfreeaudiogatewayfeatures/codecnegotiation.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.ecAndOrNRFunction](./iobluetoothhandsfreeaudiogatewayfeatures/ecandornrfunction.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallControl](./iobluetoothhandsfreeaudiogatewayfeatures/enhancedcallcontrol.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallStatus](./iobluetoothhandsfreeaudiogatewayfeatures/enhancedcallstatus.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.extendedErrorResultCodes](./iobluetoothhandsfreeaudiogatewayfeatures/extendederrorresultcodes.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.inBandRingTone](./iobluetoothhandsfreeaudiogatewayfeatures/inbandringtone.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.none](./iobluetoothhandsfreeaudiogatewayfeatures/none.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.rejectCallCapability](./iobluetoothhandsfreeaudiogatewayfeatures/rejectcallcapability.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.threeWayCalling](./iobluetoothhandsfreeaudiogatewayfeatures/threewaycalling.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.voiceRecognition](./iobluetoothhandsfreeaudiogatewayfeatures/voicerecognition.md)
 ### Initializers
-- [init?(rawValue: UInt32)](iobluetoothhandsfreeaudiogatewayfeatures/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./iobluetoothhandsfreeaudiogatewayfeatures/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct BluetoothAMPCommandRejectReason](bluetoothampcommandrejectreason.md)
-- [struct BluetoothAMPCreatePhysicalLinkResponseStatus](bluetoothampcreatephysicallinkresponsestatus.md)
-- [struct BluetoothAMPDisconnectPhysicalLinkResponseStatus](bluetoothampdisconnectphysicallinkresponsestatus.md)
-- [struct BluetoothAMPDiscoverResponseControllerStatus](bluetoothampdiscoverresponsecontrollerstatus.md)
-- [struct BluetoothAMPGetAssocResponseStatus](bluetoothampgetassocresponsestatus.md)
-- [struct BluetoothAMPGetInfoResponseStatus](bluetoothampgetinforesponsestatus.md)
-- [struct BluetoothAMPManagerCode](bluetoothampmanagercode.md)
-- [struct BluetoothHCIPowerState](bluetoothhcipowerstate.md)
-- [struct BluetoothL2CAPCommandCode](bluetoothl2capcommandcode.md)
-- [struct BluetoothL2CAPCommandRejectReason](bluetoothl2capcommandrejectreason.md)
-- [struct BluetoothL2CAPConfigurationOption](bluetoothl2capconfigurationoption.md)
-- [struct BluetoothL2CAPConfigurationResult](bluetoothl2capconfigurationresult.md)
-- [struct BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](bluetoothl2capconfigurationretransmissionandflowcontrolflags.md)
-- [struct BluetoothL2CAPConnectionResult](bluetoothl2capconnectionresult.md)
-- [struct BluetoothL2CAPConnectionStatus](bluetoothl2capconnectionstatus.md)
+### Enumerations
+- [struct BluetoothAMPCommandRejectReason](./bluetoothampcommandrejectreason.md)
+- [struct BluetoothAMPCreatePhysicalLinkResponseStatus](./bluetoothampcreatephysicallinkresponsestatus.md)
+- [struct BluetoothAMPDisconnectPhysicalLinkResponseStatus](./bluetoothampdisconnectphysicallinkresponsestatus.md)
+- [struct BluetoothAMPDiscoverResponseControllerStatus](./bluetoothampdiscoverresponsecontrollerstatus.md)
+- [struct BluetoothAMPGetAssocResponseStatus](./bluetoothampgetassocresponsestatus.md)
+- [struct BluetoothAMPGetInfoResponseStatus](./bluetoothampgetinforesponsestatus.md)
+- [struct BluetoothAMPManagerCode](./bluetoothampmanagercode.md)
+- [struct BluetoothHCIPowerState](./bluetoothhcipowerstate.md)
+- [struct BluetoothL2CAPCommandCode](./bluetoothl2capcommandcode.md)
+- [struct BluetoothL2CAPCommandRejectReason](./bluetoothl2capcommandrejectreason.md)
+- [struct BluetoothL2CAPConfigurationOption](./bluetoothl2capconfigurationoption.md)
+- [struct BluetoothL2CAPConfigurationResult](./bluetoothl2capconfigurationresult.md)
+- [struct BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](./bluetoothl2capconfigurationretransmissionandflowcontrolflags.md)
+- [struct BluetoothL2CAPConnectionResult](./bluetoothl2capconnectionresult.md)
+- [struct BluetoothL2CAPConnectionStatus](./bluetoothl2capconnectionstatus.md)
 
 
 ---

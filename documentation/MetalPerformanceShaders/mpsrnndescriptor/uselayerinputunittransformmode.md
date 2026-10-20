@@ -1,7 +1,8 @@
 # useLayerInputUnitTransformMode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var useLayerInputUnitTransformMode: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL useLayerInputUnitTransformMode;
+```
+
 ## See Also
 
-- [var inputFeatureChannels: Int](mpsrnndescriptor/inputfeaturechannels.md)
-- [var layerSequenceDirection: MPSRNNSequenceDirection](mpsrnndescriptor/layersequencedirection.md)
-- [var outputFeatureChannels: Int](mpsrnndescriptor/outputfeaturechannels.md)
-- [var useFloat32Weights: Bool](mpsrnndescriptor/usefloat32weights.md)
+### Instance Properties
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
+- [var layerSequenceDirection: MPSRNNSequenceDirection](./layersequencedirection.md)
+- [var outputFeatureChannels: Int](./outputfeaturechannels.md)
+- [var useFloat32Weights: Bool](./usefloat32weights.md)
 
 
 ---

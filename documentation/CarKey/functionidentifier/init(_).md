@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: CarKey  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new function identifier with the specified value.
 
@@ -28,7 +29,8 @@ A new function identifier type.
 
 ## See Also
 
-- [init(rawValue: Int)](functionidentifier/init(rawvalue:).md)
+### Creating a Function Identifier
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates and returns a new function identifier with the specified value.
 
 

@@ -1,7 +1,8 @@
 # setUserInstanceUID(_:forUserUDAMVersion:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the UID and Version number for the user data.
 
@@ -16,6 +17,10 @@ Set the UID and Version number for the user data.
 
 ```swift
 func setUserInstanceUID(_ uuid: UUID, forUserUDAMVersion version: NSNumber)
+```
+
+```objc
+- (void) setUserInstanceUID:(NSUUID *) uuid forUserUDAMVersion:(NSNumber *) version;
 ```
 
 #### Discussion

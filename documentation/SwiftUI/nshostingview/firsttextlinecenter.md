@@ -1,7 +1,8 @@
 # firstTextLineCenter
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
@@ -15,11 +16,12 @@
 
 ## See Also
 
-- [var intrinsicContentSize: NSSize](nshostingview/intrinsiccontentsize.md)
-- [func setFrameSize(NSSize)](nshostingview/setframesize(_:).md)
-- [var firstBaselineOffsetFromTop: CGFloat](nshostingview/firstbaselineoffsetfromtop.md)
-- [var lastBaselineOffsetFromBottom: CGFloat](nshostingview/lastbaselineoffsetfrombottom.md)
-- [var sizingOptions: NSHostingSizingOptions](nshostingview/sizingoptions.md)
+### Modifying the frame rectangle
+- [var intrinsicContentSize: NSSize](./intrinsiccontentsize.md)
+- [func setFrameSize(NSSize)](./setframesize%28_%29.md)
+- [var firstBaselineOffsetFromTop: CGFloat](./firstbaselineoffsetfromtop.md)
+- [var lastBaselineOffsetFromBottom: CGFloat](./lastbaselineoffsetfrombottom.md)
+- [var sizingOptions: NSHostingSizingOptions](./sizingoptions.md)
   The options for how the hosting view creates and updates constraints based on the size of its SwiftUI content.
 
 

@@ -1,7 +1,8 @@
 # NSCollectionLayoutEdgeSpacing
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the space around the edges of items in a collection view.
 
@@ -15,6 +16,10 @@ An object that defines the space around the edges of items in a collection view.
 class NSCollectionLayoutEdgeSpacing
 ```
 
+```objc
+@interface NSCollectionLayoutEdgeSpacing : NSObject
+```
+
 #### Overview
 
 You use edge spacing to create additional spacing around the edges of an item to adjust the position of the item in relation to its container and other items.
@@ -23,48 +28,49 @@ The leading and trailing spaces within edge spacing differ in left-to-right vers
 
 The following diagram shows the difference between adding 2 points of trailing edge spacing in a left-to-right versus a right-to-left environment.
 
-![Two diagrams that compare edge spacing in a left-to-right and a right-to-left environment. Both diagrams show a group of three square items in a row. The first diagram, labeled trailing in left-to-right environment, shows trailing space on the right of each item, implying that leading space is on the left. The second diagram, labeled trailing in right-to-left environment, shows trailing space on the left of each item, implying that leading space is on the right.](/images/com.apple.appkit/media-3570381@2x.png)
+![Two diagrams that compare edge spacing in a left-to-right and a right-to-left environment. Both diagrams show a group of three square items in a row. The first diagram, labeled trailing in left-to-right environment, shows trailing space on the right of each item, implying that leading space is on the left. The second diagram, labeled trailing in right-to-left environment, shows trailing space on the left of each item, implying that leading space is on the right.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3570381@2x.png)
 
 ## Topics
 
 ### Creating edge spacing
-- [convenience init(leading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)](nscollectionlayoutedgespacing/init(leading:top:trailing:bottom:).md)
+- [convenience init(leading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)](./nscollectionlayoutedgespacing/init%28leading,top,trailing,bottom%29.md)
   Creates an edge spacing object with the specified leading, top, trailing, and bottom spacing.
 ### Getting the edge spacing
-- [var leading: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/leading.md)
+- [var leading: NSCollectionLayoutSpacing?](./nscollectionlayoutedgespacing/leading.md)
   The leading edge spacing value.
-- [var top: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/top.md)
+- [var top: NSCollectionLayoutSpacing?](./nscollectionlayoutedgespacing/top.md)
   The top edge spacing value.
-- [var trailing: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/trailing.md)
+- [var trailing: NSCollectionLayoutSpacing?](./nscollectionlayoutedgespacing/trailing.md)
   The trailing edge spacing value.
-- [var bottom: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/bottom.md)
+- [var bottom: NSCollectionLayoutSpacing?](./nscollectionlayoutedgespacing/bottom.md)
   The bottom edge spacing value.
 ### Initializers
-- [convenience init(forLeading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)](nscollectionlayoutedgespacing/init(forleading:top:trailing:bottom:).md)
+- [convenience init(forLeading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)](./nscollectionlayoutedgespacing/init%28forleading,top,trailing,bottom%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSCollectionLayoutDimension](nscollectionlayoutdimension.md)
+### Size and spacing
+- [class NSCollectionLayoutDimension](./nscollectionlayoutdimension.md)
   An individual dimension representing an item’s width or height in a collection view.
-- [class NSCollectionLayoutSize](nscollectionlayoutsize.md)
+- [class NSCollectionLayoutSize](./nscollectionlayoutsize.md)
   The width and the height of an item in a collection view.
-- [class NSCollectionLayoutSpacing](nscollectionlayoutspacing.md)
+- [class NSCollectionLayoutSpacing](./nscollectionlayoutspacing.md)
   An object that defines the space between or around items in a collection view.
-- [protocol NSCollectionLayoutContainer](nscollectionlayoutcontainer.md)
+- [protocol NSCollectionLayoutContainer](./nscollectionlayoutcontainer.md)
   A protocol used to provide information about the size and content insets of a layout’s container.
 
 

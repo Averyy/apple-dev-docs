@@ -1,14 +1,16 @@
 # TVTextHighlightStyleShowOnHighlight
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: Article
 
 Any text that is longer than the available space will scroll across the screen.
 
 ## See Also
 
-- [TVTextHighlightStyleMarqueeOnHighlight](tvtexthighlightstylemarqueeonhighlight.md)
+### Constants
+- [TVTextHighlightStyleMarqueeOnHighlight](./tvtexthighlightstylemarqueeonhighlight.md)
   Any text that is longer than the available space is truncated.
-- [TVTextHighlightStyleMarqueeAndShowOnHighlight](tvtexthighlightstylemarqueeandshowonhighlight.md)
+- [TVTextHighlightStyleMarqueeAndShowOnHighlight](./tvtexthighlightstylemarqueeandshowonhighlight.md)
   The text will scroll across the screen if the text is longer than the available space.
 
 

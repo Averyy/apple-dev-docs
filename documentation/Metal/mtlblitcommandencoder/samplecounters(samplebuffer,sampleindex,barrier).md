@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that samples the GPU’s hardware counters during a blit pass and stores the data in a counter sample buffer.
@@ -20,9 +21,13 @@ Encodes a command that samples the GPU’s hardware counters during a blit pass 
 func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)
 ```
 
+```objc
+- (void) sampleCountersInBuffer:(id<MTLCounterSampleBuffer>) sampleBuffer atSampleIndex:(NSUInteger) sampleIndex withBarrier:(BOOL) barrier;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
@@ -38,7 +43,8 @@ Inserting a barrier ensures that any work you encode with this encoder is comple
 
 ## See Also
 
-- [func resolveCounters(any MTLCounterSampleBuffer, range: Range<Int>, destinationBuffer: any MTLBuffer, destinationOffset: Int)](mtlblitcommandencoder/resolvecounters(_:range:destinationbuffer:destinationoffset:).md)
+### Sampling counters
+- [func resolveCounters(any MTLCounterSampleBuffer, range: Range<Int>, destinationBuffer: any MTLBuffer, destinationOffset: Int)](./resolvecounters%28_,range,destinationbuffer,destinationoffset%29.md)
   Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
 
 

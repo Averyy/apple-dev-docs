@@ -1,7 +1,8 @@
 # CodingKey
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be used as a key for encoding and decoding.
 
@@ -23,37 +24,38 @@ protocol CodingKey : CustomDebugStringConvertible, CustomStringConvertible, Send
 ## Topics
 
 ### Initializers
-- [init?(intValue: Int)](codingkey/init(intvalue:).md)
+- [init?(intValue: Int)](./codingkey/init%28intvalue%29.md)
   Creates a new instance from the specified integer.
-- [init?(stringValue: String)](codingkey/init(stringvalue:).md)
+- [init?(stringValue: String)](./codingkey/init%28stringvalue%29.md)
   Creates a new instance from the given string.
 ### Instance Properties
-- [var intValue: Int?](codingkey/intvalue.md)
+- [var intValue: Int?](./codingkey/intvalue.md)
   The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).
-- [var stringValue: String](codingkey/stringvalue.md)
+- [var stringValue: String](./codingkey/stringvalue.md)
   The string to use in a named collection (e.g. a string-keyed dictionary).
 
 ## Relationships
 
 ### Inherits From
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [Encoding and Decoding Custom Types](../foundation/encoding-and-decoding-custom-types.md)
+### Custom Encoding and Decoding
+- [Encoding and Decoding Custom Types](../Foundation/encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable](codable.md)
+- [typealias Codable](./codable.md)
   A type that can convert itself into and out of an external representation.
-- [protocol Encodable](encodable.md)
+- [protocol Encodable](./encodable.md)
   A type that can encode itself to an external representation.
-- [protocol Decodable](decodable.md)
+- [protocol Decodable](./decodable.md)
   A type that can decode itself from an external representation.
-- [protocol CodingKeyRepresentable](codingkeyrepresentable.md)
+- [protocol CodingKeyRepresentable](./codingkeyrepresentable.md)
   A type that can be converted to and from a coding key.
-- [struct CodingUserInfoKey](codinguserinfokey.md)
+- [struct CodingUserInfoKey](./codinguserinfokey.md)
   A user-defined key for providing context during encoding and decoding.
 
 

@@ -1,7 +1,8 @@
 # BNNS.ConvolutionType.transposed
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Transposed convolution.
 
@@ -11,8 +12,10 @@ Transposed convolution.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ case transposed
 
 ## See Also
 
-- [BNNS.ConvolutionType.standard](bnns/convolutiontype/standard.md)
+### Convolution Types
+- [BNNS.ConvolutionType.standard](./standard.md)
   Standard convolution.
 
 

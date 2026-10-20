@@ -1,7 +1,8 @@
 # group
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group that the component’s entity belongs to.
 
@@ -21,7 +22,7 @@ var group: ModelSortGroup { get set }
 
 #### Discussion
 
-The renderer only draws entities with the same [`ModelSortGroup`](modelsortgroup.md) relative to each other.
+The renderer only draws entities with the same [`ModelSortGroup`](../modelsortgroup.md) relative to each other.
 
 > **Note**: Membership only applies to the entity that directly owns this component, but not to its descendants.
 

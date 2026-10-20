@@ -1,7 +1,8 @@
 # levels
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The engagement level of each segment in the video.
 
@@ -21,15 +22,16 @@ let levels: [(timeRange: CMTimeRange, level: Float)]
 
 ## Mentions
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+- [Finding the best moments in a video](../../finding-the-best-moments-in-a-video.md)
 
 #### Discussion
 
-Each element pairs a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) with a floating-point level value from `0` (least engaging) to `9` (most engaging). The array covers every segment in the video, not just the highlights.
+Each element pairs a [`CMTimeRange`](../../../CoreMedia/cmtimerange.md) with a floating-point level value from `0` (least engaging) to `9` (most engaging). The array covers every segment in the video, not just the highlights.
 
 ## See Also
 
-- [let highlights: [CMTimeRange]](highlightanalysisrequest/result/highlights.md)
+### Inspecting the result
+- [let highlights: [CMTimeRange]](./highlights.md)
   The time ranges the framework identifies as highlights.
 
 

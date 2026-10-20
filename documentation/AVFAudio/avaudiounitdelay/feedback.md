@@ -1,7 +1,8 @@
 # feedback
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of the output signal that feeds back into the delay line.
 
@@ -19,17 +20,22 @@ The amount of the output signal that feeds back into the delay line.
 var feedback: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float feedback;
+```
+
 #### Discussion
 
 You specify the feedback as a percentage. The default value is `50%`. The valid range of values is `-100%` to `100%`.
 
 ## See Also
 
-- [var delayTime: TimeInterval](avaudiounitdelay/delaytime.md)
+### Configuring the delay
+- [var delayTime: TimeInterval](./delaytime.md)
   The time for the input signal to reach the output.
-- [var lowPassCutoff: Float](avaudiounitdelay/lowpasscutoff.md)
+- [var lowPassCutoff: Float](./lowpasscutoff.md)
   The cutoff frequency above which high frequency content rolls off, in hertz.
-- [var wetDryMix: Float](avaudiounitdelay/wetdrymix.md)
+- [var wetDryMix: Float](./wetdrymix.md)
   The blend of the wet and dry signals.
 
 

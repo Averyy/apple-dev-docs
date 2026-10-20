@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,7 +15,8 @@ init(rawValue: UInt64)
 
 ## See Also
 
-- [init(type: NSEvent.EventType)](nsevent/eventtypemask/init(type:).md)
+### Creating an Event Mask
+- [init(type: NSEvent.EventType)](./init%28type%29.md)
   Returns the event mask for the specified type.
 
 

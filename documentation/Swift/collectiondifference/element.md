@@ -1,7 +1,8 @@
 # CollectionDifference.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the sequence’s elements.
 

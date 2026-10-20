@@ -1,7 +1,8 @@
 # extensionDidFinishLaunching()
 
 **Framework**: XcodeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the extension that it successfully launched and may begin to receive editor commands.
 
@@ -12,6 +13,10 @@ Tells the extension that it successfully launched and may begin to receive edito
 
 ```swift
 optional func extensionDidFinishLaunching()
+```
+
+```objc
+- (void) extensionDidFinishLaunching;
 ```
 
 #### Discussion

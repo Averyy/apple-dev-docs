@@ -1,7 +1,8 @@
 # view
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content view for the menu item.
 
@@ -14,9 +15,13 @@ The content view for the menu item.
 var view: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * view;
+```
+
 #### Discussion
 
-A menu item with a view does not draw its title, state, font, or other standard drawing attributes, and assigns drawing responsibility entirely to the view. Keyboard equivalents and type-select continue to use the key equivalent and title as normal. For more information, see [`NSMenuItem`](nsmenuitem.md).
+A menu item with a view does not draw its title, state, font, or other standard drawing attributes, and assigns drawing responsibility entirely to the view. Keyboard equivalents and type-select continue to use the key equivalent and title as normal. For more information, see [`NSMenuItem`](../nsmenuitem.md).
 
 By default, a menu item has a `nil` view.
 

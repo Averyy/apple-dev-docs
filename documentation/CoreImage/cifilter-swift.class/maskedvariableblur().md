@@ -1,7 +1,8 @@
 # maskedVariableBlur()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Blurs a specified portion of an image.
 
@@ -19,9 +20,13 @@ Blurs a specified portion of an image.
 class func maskedVariableBlur() -> any CIFilter & CIMaskedVariableBlur
 ```
 
+```objc
++ (CIFilter<CIMaskedVariableBlur> *) maskedVariableBlurFilter;
+```
+
 ## Mentions
 
-- [Selectively Focusing on an Image](selectively-focusing-on-an-image.md)
+- [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
 #### Return Value
 
@@ -33,9 +38,9 @@ This method applies the masked variable blur to an image. The effect blurs the i
 
 The masked variable blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`mask`**: An image that masks an area on the input image with the type [`CIImage`](ciimage.md).
-- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`mask`**: An image that masks an area on the input image with the type [`CIImage`](../ciimage.md).
+- **`inputImage`**: A [`CIImage`](../ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a blur to the bottom of the input image:
 
@@ -55,35 +60,36 @@ func maskedVariableBlur(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Three images, with two images on the left arranged vertically and a third image on the right vertically centered. The top left image contains a photo of the Golden Gate Bridge with a clear sky in the background. The bottom left image contains a white to black gradient with white at the bottom and black at the top. The right image shows the result of applying the masked variable blur filter using the two images on the left as inputs. The resulting image has a strong blur at the bottom that reduces to zero blur at the top.](/images/com.apple.coreimage/media-4334872@2x.png)
+![Three images, with two images on the left arranged vertically and a third image on the right vertically centered. The top left image contains a photo of the Golden Gate Bridge with a clear sky in the background. The bottom left image contains a white to black gradient with white at the bottom and black at the top. The right image shows the result of applying the masked variable blur filter using the two images on the left as inputs. The resulting image has a strong blur at the bottom that reduces to zero blur at the top.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4334872@2x.png)
 
 ## See Also
 
-- [class func bokehBlur() -> any CIFilter & CIBokehBlur](cifilter-swift.class/bokehblur.md)
+### Filters
+- [class func bokehBlur() -> any CIFilter & CIBokehBlur](./bokehblur%28%29.md)
   Applies a bokeh effect to an image.
-- [class func boxBlur() -> any CIFilter & CIBoxBlur](cifilter-swift.class/boxblur.md)
+- [class func boxBlur() -> any CIFilter & CIBoxBlur](./boxblur%28%29.md)
   Applies a square-shaped blur to an area of an image.
-- [class func discBlur() -> any CIFilter & CIDiscBlur](cifilter-swift.class/discblur.md)
+- [class func discBlur() -> any CIFilter & CIDiscBlur](./discblur%28%29.md)
   Applies a circle-shaped blur to an area of an image.
-- [class func gaussianBlur() -> any CIFilter & CIGaussianBlur](cifilter-swift.class/gaussianblur.md)
+- [class func gaussianBlur() -> any CIFilter & CIGaussianBlur](./gaussianblur%28%29.md)
   Blurs an image with a Gaussian distribution pattern.
-- [class func median() -> any CIFilter & CIMedian](cifilter-swift.class/median.md)
+- [class func median() -> any CIFilter & CIMedian](./median%28%29.md)
   Calculates the median of an image to refine detail.
-- [class func morphologyGradient() -> any CIFilter & CIMorphologyGradient](cifilter-swift.class/morphologygradient.md)
+- [class func morphologyGradient() -> any CIFilter & CIMorphologyGradient](./morphologygradient%28%29.md)
   Detects and highlights edges of objects.
-- [class func morphologyMaximum() -> any CIFilter & CIMorphologyMaximum](cifilter-swift.class/morphologymaximum.md)
+- [class func morphologyMaximum() -> any CIFilter & CIMorphologyMaximum](./morphologymaximum%28%29.md)
   Blurs a circular area by enlarging contrasting pixels.
-- [class func morphologyMinimum() -> any CIFilter & CIMorphologyMinimum](cifilter-swift.class/morphologyminimum.md)
+- [class func morphologyMinimum() -> any CIFilter & CIMorphologyMinimum](./morphologyminimum%28%29.md)
   Blurs a circular area by reducing contrasting pixels.
-- [class func morphologyRectangleMaximum() -> any CIFilter & CIMorphologyRectangleMaximum](cifilter-swift.class/morphologyrectanglemaximum.md)
+- [class func morphologyRectangleMaximum() -> any CIFilter & CIMorphologyRectangleMaximum](./morphologyrectanglemaximum%28%29.md)
   Blurs a rectangular area by enlarging contrasting pixels.
-- [class func morphologyRectangleMinimum() -> any CIFilter & CIMorphologyRectangleMinimum](cifilter-swift.class/morphologyrectangleminimum.md)
+- [class func morphologyRectangleMinimum() -> any CIFilter & CIMorphologyRectangleMinimum](./morphologyrectangleminimum%28%29.md)
   Blurs a rectangular area by reducing contrasting pixels.
-- [class func motionBlur() -> any CIFilter & CIMotionBlur](cifilter-swift.class/motionblur.md)
+- [class func motionBlur() -> any CIFilter & CIMotionBlur](./motionblur%28%29.md)
   Creates motion blur on an image.
-- [class func noiseReduction() -> any CIFilter & CINoiseReduction](cifilter-swift.class/noisereduction.md)
+- [class func noiseReduction() -> any CIFilter & CINoiseReduction](./noisereduction%28%29.md)
   Reduces noise by sharpening the edges of objects.
-- [class func zoomBlur() -> any CIFilter & CIZoomBlur](cifilter-swift.class/zoomblur.md)
+- [class func zoomBlur() -> any CIFilter & CIZoomBlur](./zoomblur%28%29.md)
   Creates a zoom blur centered around a single point on the image.
 
 

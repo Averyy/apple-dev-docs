@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes contained by the data object.
 
@@ -20,9 +21,14 @@ The number of bytes contained by the data object.
 var length: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger length;
+```
+
 ## See Also
 
-- [func isEqual(to: Data) -> Bool](nsdata/isequal(to:).md)
+### Testing Data
+- [func isEqual(to: Data) -> Bool](./isequal%28to%29.md)
   Returns a Boolean value indicating whether this data object is the same as another.
 
 

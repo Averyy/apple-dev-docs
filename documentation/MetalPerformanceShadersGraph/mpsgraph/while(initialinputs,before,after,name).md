@@ -1,7 +1,8 @@
 # while(initialInputs:before:after:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a while loop operation.
 
@@ -17,6 +18,10 @@ Adds a while loop operation.
 
 ```swift
 func `while`(initialInputs: [MPSGraphTensor], before: @escaping MPSGraphWhileBeforeBlock, after: @escaping MPSGraphWhileAfterBlock, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) whileWithInitialInputs:(NSArray<MPSGraphTensor *> *) initialInputs before:(MPSGraphWhileBeforeBlock) before after:(MPSGraphWhileAfterBlock) after name:(NSString *) name;
 ```
 
 #### Return Value

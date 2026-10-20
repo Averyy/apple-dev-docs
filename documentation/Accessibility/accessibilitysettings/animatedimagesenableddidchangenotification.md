@@ -1,7 +1,8 @@
 # animatedImagesEnabledDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the system setting for playing animated images changes.
 
@@ -22,9 +23,10 @@ static var animatedImagesEnabledDidChangeNotification: Notification.Name { get }
 
 ## See Also
 
-- [Animated images](animated-images.md)
+### Pausing animated images
+- [Animated images](../animated-images.md)
   Pause animations in animated images in your app when people turn off the Animated Images setting.
-- [static var animatedImagesEnabled: Bool](accessibilitysettings/animatedimagesenabled.md)
+- [static var animatedImagesEnabled: Bool](./animatedimagesenabled.md)
   A Boolean value that indicates whether the system setting for playing animated images is on.
 
 

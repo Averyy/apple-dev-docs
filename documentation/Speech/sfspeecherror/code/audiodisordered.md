@@ -1,7 +1,8 @@
 # audioDisordered
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The audio input time-code overlaps or precedes prior audio input.
 
@@ -21,7 +22,8 @@ static var audioDisordered: SFSpeechError.Code { get }
 
 ## See Also
 
-- [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
+### Audio input errors
+- [SFSpeechError.Code.audioReadFailed](./audioreadfailed.md)
   The audio source could not be read.
 
 

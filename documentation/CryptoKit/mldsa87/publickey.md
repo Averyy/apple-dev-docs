@@ -1,7 +1,8 @@
 # MLDSA87.PublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The public key for MLDSA87.
 
@@ -23,26 +24,27 @@ struct PublicKey
 ## Topics
 
 ### Creating a public key
-- [init<D>(rawRepresentation: D) throws](mldsa87/publickey/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./publickey/init%28rawrepresentation%29.md)
   Parses a public key from a serialized representation.
 ### Getting the raw representation
-- [var rawRepresentation: Data](mldsa87/publickey/rawrepresentation.md)
+- [var rawRepresentation: Data](./publickey/rawrepresentation.md)
   A serialized representation of the public key.
 ### Instance Methods
-- [func isValidSignature<S, D>(S, for: D) -> Bool](mldsa87/publickey/isvalidsignature(_:for:).md)
+- [func isValidSignature<S, D>(S, for: D) -> Bool](./publickey/isvalidsignature%28_,for%29.md)
   Verifies a MLDSA87 signature.
-- [func isValidSignature<S, D, C>(S, for: D, context: C) -> Bool](mldsa87/publickey/isvalidsignature(_:for:context:).md)
+- [func isValidSignature<S, D, C>(S, for: D, context: C) -> Bool](./publickey/isvalidsignature%28_,for,context%29.md)
   Verifies a MLDSA87 signature, in a specific context.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLDSA87.PrivateKey](mldsa87/privatekey.md)
+### Keys
+- [MLDSA87.PrivateKey](./privatekey.md)
   The private key for MLDSA87.
 
 

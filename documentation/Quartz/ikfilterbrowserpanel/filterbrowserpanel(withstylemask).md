@@ -1,7 +1,8 @@
 # filterBrowserPanel(withStyleMask:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a shared instance of the `IKFilterBrowserPanel` class.
 
@@ -12,6 +13,10 @@ Creates a shared instance of the `IKFilterBrowserPanel` class.
 
 ```swift
 class func filterBrowserPanel(withStyleMask styleMask: UInt32) -> Any!
+```
+
+```objc
++ (id) filterBrowserPanelWithStyleMask:(unsigned int) styleMask;
 ```
 
 #### Return Value

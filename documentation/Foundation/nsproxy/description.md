@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the real class name and the id of the receiver as a hexadecimal number.
 
@@ -20,11 +21,16 @@ A string containing the real class name and the id of the receiver as a hexadeci
 var description: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * description;
+```
+
 ## See Also
 
-- [class func `class`() -> AnyClass](nsproxy/class.md)
+### Describing a Proxy Class or Object
+- [class func `class`() -> AnyClass](./class%28%29.md)
   Returns `self` (the class object).
-- [var debugDescription: String](nsproxy/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A string containing a human-readable description of the receiver suitable for debugging.
 
 

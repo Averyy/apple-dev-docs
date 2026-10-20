@@ -1,7 +1,8 @@
 # calculateStatisticsAlways
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 static var calculateStatisticsAlways: MPSCNNBatchNormalizationFlags { get }
+```
+
+```c
+MPSCNNBatchNormalizationFlagsCalculateStatisticsAlways
 ```
 
 

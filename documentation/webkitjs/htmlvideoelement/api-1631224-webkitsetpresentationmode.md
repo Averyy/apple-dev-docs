@@ -1,7 +1,8 @@
 # webkitSetPresentationMode
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Sets the presentation mode for video playback. 
 
@@ -11,7 +12,7 @@ Sets the presentation mode for video playback.
 
 ## Declaration
 
-```swift
+```
 void webkitSetPresentationMode(
     VideoPresentationMode mode
 );
@@ -19,11 +20,12 @@ void webkitSetPresentationMode(
 
 ## See Also
 
-- [webkitSupportsPresentationMode](htmlvideoelement/1629816-webkitsupportspresentationmode.md)
+### Displaying Presentation Mode
+- [webkitSupportsPresentationMode](./api-1629816-webkitsupportspresentationmode.md)
   A Boolean value indicating whether the video can be played in presentation mode.
-- [webkitPresentationMode](htmlvideoelement/1631913-webkitpresentationmode.md)
+- [webkitPresentationMode](./api-1631913-webkitpresentationmode.md)
   A property indicating the presentation mode. 
-- [playsInline](htmlvideoelement/2528111-playsinline.md)
+- [playsInline](./api-2528111-playsinline.md)
   A Boolean value indicating whether the video plays inline.
 
 

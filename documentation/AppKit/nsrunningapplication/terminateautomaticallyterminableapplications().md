@@ -1,7 +1,8 @@
 # terminateAutomaticallyTerminableApplications()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Terminates invisibly running applications as if triggered by system memory pressure.
 
@@ -14,17 +15,22 @@ Terminates invisibly running applications as if triggered by system memory press
 class func terminateAutomaticallyTerminableApplications()
 ```
 
+```objc
++ (void) terminateAutomaticallyTerminableApplications;
+```
+
 #### Discussion
 
 This method is intended for installer applications and similar applications to ensure that nothing is unexpectedly relying on the files they’re replacing.
 
 ## See Also
 
-- [func forceTerminate() -> Bool](nsrunningapplication/forceterminate.md)
+### Terminating applications
+- [func forceTerminate() -> Bool](./forceterminate%28%29.md)
   Attempts to force the receiver to quit.
-- [func terminate() -> Bool](nsrunningapplication/terminate.md)
+- [func terminate() -> Bool](./terminate%28%29.md)
   Attempts to quit the receiver normally.
-- [var isTerminated: Bool](nsrunningapplication/isterminated.md)
+- [var isTerminated: Bool](./isterminated.md)
   Indicates that the receiver’s application has terminated.
 
 

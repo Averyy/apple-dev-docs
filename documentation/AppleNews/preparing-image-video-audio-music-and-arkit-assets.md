@@ -1,6 +1,7 @@
 # Preparing Image, Video, Audio, Music, and ARKit Assets
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Add media assets to your article.
 
@@ -16,7 +17,7 @@ When you use such files, you provide the encoded URL in an Apple News Format pro
 
 > ❗ **Important**:  The maximum allowable file size for your article bundle, including remote and local media assets, is 450 MB. Verify that the total size of your article bundle doesn’t exceed this limit.
 
-##### Provide the Url in an Apple News Format Property
+##### Provide the URL in an Apple News Format Property
 
 To include an asset in your article, provide a well-formatted and encoded URL to specify the location of the asset file.
 
@@ -96,7 +97,7 @@ Follow the steps below to include a [`Video`](https://developer.apple.com/docume
 
 **Use the URL property to specify the location of the video file**. The video URL should begin with `https://` (preferred) or `http://`.
 
-**Use supported HLS formats.** M3U playlist is the preferred format. For more information about HLS, see the iOS developer documentation about [`HTTP Live Streaming`](https://developer.apple.comhttps://developer.apple.com/streaming/).
+**Use supported HLS formats.** M3U playlist is the preferred format. For more information about HLS, see the iOS developer documentation about [HTTP Live Streaming](https://developer.apple.com/streaming/).
 
 ##### Prepare a Video for Feeds
 
@@ -111,7 +112,7 @@ To add a video to your article, specify the `videoURL` property to the [`Metadat
 
 **Use the same image for the Metadata** `thumbnailURL` **property.** Provide the same `thumbnailURL` property value to the [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object and the [`Video`](https://developer.apple.com/documentation/applenewsformat/video) component’s `stillURL`. Using the same image ensures that playback continues seamlessly from a video playing in the feed to the same video that plays when the article opens.
 
-**Use supported HLS formats**. M3U playlist is the preferred format. For more information about HLS, see [`HTTP Live Streaming`](https://developer.apple.comhttps://developer.apple.com/streaming/).
+**Use supported HLS formats**. M3U playlist is the preferred format. For more information about HLS, see [HTTP Live Streaming](https://developer.apple.com/streaming/).
 
 ##### Prepare an Audio Asset
 
@@ -128,9 +129,10 @@ Configure the [`Audio`](https://developer.apple.com/documentation/applenewsforma
 
 ## See Also
 
-- [Specifying Measurements for Components](specifying-measurements-for-components.md)
+### Component Measurements and Media Guidelines
+- [Specifying Measurements for Components](./specifying-measurements-for-components.md)
   Specify the units of measure to use for margins, minimum heights, and other dimensions.
-- [type SupportedUnits](../applenewsformat/supportedunits.md)
+- [type SupportedUnits](https://developer.apple.com/documentation/applenewsformat/supportedunits)
   The units of measurement Apple News Format supports.
 
 

@@ -1,6 +1,7 @@
 # About the Common Media Application Format with HTTP Live Streaming (HLS)
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Learn the Common Media Application Format as it applies to HLS.
 
@@ -30,17 +31,17 @@ The CMAF Hypothetical Reference Model defines how tracks can be delivered, combi
 
 **CMAF Track File:** A complete track in one ISO_BMFF file.
 
-![Flow diagram showing the relationship between specified CMAF objects and non-specified CMAF objects. Manifests have resources that point to addressable CMAF media objects.](/images/com.apple.HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls-1@2x.png)
+![Flow diagram showing the relationship between specified CMAF objects and non-specified CMAF objects. Manifests have resources that point to addressable CMAF media objects.](https://developer.apple.com/tutorials/images/com.apple.HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls-1@2x.png)
 
-##### Support for Cmaf
+##### Support for CMAF
 
-Apple’s HLS specification is a published RFC, [`RFC 8216`](https://developer.apple.comhttps://www.rfc-editor.org/info/rfc8216). However, HLS continues to evolve, so there’s an updated draft specification — [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
+Apple’s HLS specification is a published RFC, [RFC 8216](https://www.rfc-editor.org/info/rfc8216). However, HLS continues to evolve, so there’s an updated draft specification — [draft-pantos-hls-rfc8216bis](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
 
 The HLS specification defined support for fragmented MPEG-4 Segments (ISO_BMFF) in September 2016. Clients based on earlier revisions will likely not be able to handle CMAF content. Apple hardware running iOS 10.0, macOS 10.12, and tvOS 10.0 or later OS versions should support CMAF content.
 
-> **Note**: HLS was originally specified in [`draft-pantos-http-live-streaming`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-http-live-streaming). That document was superseded by RFC 8216.
+> **Note**: HLS was originally specified in [draft-pantos-http-live-streaming](https://tools.ietf.org/html/draft-pantos-http-live-streaming). That document was superseded by RFC 8216.
 
-##### Manifests Resources and Cmaf Presentations
+##### Manifests, resources, and CMAF presentations
 
 In HLS, the role of the Manifest is divided between the HLS Multivariant Playlist and the Media Playlists it references. They describe a single CMAF Presentation or a sequence of CMAF Presentations.
 
@@ -48,7 +49,7 @@ In an HLS Multivariant Playlist, `EXT-X-STREAM-INF` tags define different tiers 
 
 Because CMAF Segments can’t, in general, contain multiple media types, `EXT-X-MEDIA` tags need to be used to associate audio and subtitle Playlists with video, which is usually in the `EXT-X-STREAM-INF` tag’s Media Playlist. The same Rendition can be used by several `EXT-X-STREAM-INF` tags; for instance, multiple video tiers can specify the same audio Rendition. Alternately, higher bit rate video tiers can specify separate, higher bit rate audio Renditions so that audio quality scales with video quality.
 
-##### Cmaf Tracks Segments Headers and Fragments
+##### CMAF Tracks, Segments, Headers, and Fragments
 
 There should be one HLS Media Playlist per CMAF Track. In HLS Media Playlists, CMAF Segments are used as HLS Segments. There has to be an `EXT-X-MAP` tag applied to each HLS Segment; the tag points to a CMAF Header that’s appropriate for all CMAF Fragments inside the HLS Segment. Since all CMAF Fragments are independently decodable, their HLS Playlists should contain an `EXT-X-INDEPENDENT-SEGMENTS` tag. When the media is encrypted, EXT-X-SESSION-KEY tags should be included in the Multivariant Playlist to enable prefetching of keys.
 
@@ -56,7 +57,7 @@ The `EXT-X-BYTERANGE` tag can be used to indicate that an HLS Segment is a byte 
 
 Media Segments inside `EXT-X-I-FRAMES-ONLY` Playlists start on a CMAF Fragment boundary.
 
-The` EXT-X-DISCONTINUITY` tag can be used to concatenate multiple CMAF Tracks of the same media type in a Media Playlist. Each discontinuity demarcates a boundary between successive CMAF Presentations. A discontinuity allows the resetting of presentation timestamps and other characteristics. Many changes can require a discontinuity, for example, switching from Sample Encryption to unencrypted. A new `EXT-X-MAP` tag is usually required after a discontinuity. For further information, see the [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
+The` EXT-X-DISCONTINUITY` tag can be used to concatenate multiple CMAF Tracks of the same media type in a Media Playlist. Each discontinuity demarcates a boundary between successive CMAF Presentations. A discontinuity allows the resetting of presentation timestamps and other characteristics. Many changes can require a discontinuity, for example, switching from Sample Encryption to unencrypted. A new `EXT-X-MAP` tag is usually required after a discontinuity. For further information, see the [HLS specification](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
 
 > **Note**: For fragmented MPEG-4 Segments, an `EXT-X-KEY` tag with a `METHOD=SAMPLE-AES` attribute indicates that the Segment is encrypted using the `‘cbcs’` scheme  in ISO/IEC 23001-7.
 
@@ -68,27 +69,27 @@ You can include one or more Event Message boxes (`‘emsg’`) in each segment. 
 - **`value`**: The URI that defines the semantics of the ID field. Any relative URI is considered to be relative to `scheme_id_uri`.
 - **`message_data`**: Contains data compatible with ID3 version 2.x.x.
 
-##### Cmaf Switching Sets
+##### CMAF Switching Sets
 
 Each Track in a video CMAF Switching Set should appear in the Multivariant Playlist as a Media Playlist URI prefixed by an `EXT-X-STREAM-INF` tag describing it. The `EXT-X-STREAM-INF` tag should also specify any other renditions, such as audio that are intended to play with the video by indicating an appropriate `EXT-X-MEDIA GROUP-ID`.
 
 Each Track in an audio CMAF Switching Set should be represented in the Multivariant Playlist by an `EXT-X-MEDIA` tag. The URI attribute of the `EXT-X-MEDIA` tag should be a URI to that Track’s Media Playlist. It has to have a `GROUP-ID` attribute that allows it to be associated with one or more `EXT-X-STREAM-INF` tags, which specify video tiers.
 
-##### Cmaf Selection Sets
+##### CMAF Selection Sets
 
 In HLS, when multiple codecs are offered, `EXT-X-STREAM-INF` tags in the Multivariant Playlist are typically arranged in sets of parallel tiers, for example, `low-bitrate-codec-A`,` high-bitrate-codec-A`, `low-bitrate-codec-B`, `high-bitrate-codec-B`.
 
 CMAF Selection Sets generally offer either alternate encodings of the same source content (for example, encoded with different codecs) or homogenous encodings of different versions of the source content (for example, different audio language tracks).
 
-For Selection Sets offering codec variants, each Switching Set in the Selection Set should appear as a set of `EXT-X-STREAM-INF` tags, for video, or a set of `EXT-X-MEDIA` tags, for other media types. See [`CMAF Switching Sets`](about-the-common-media-application-format-with-http-live-streaming-hls#CMAF-Switching-Sets.md).
+For Selection Sets offering codec variants, each Switching Set in the Selection Set should appear as a set of `EXT-X-STREAM-INF` tags, for video, or a set of `EXT-X-MEDIA` tags, for other media types. See [CMAF Switching Sets](./about-the-common-media-application-format-with-http-live-streaming-hls.md#CMAF-Switching-Sets).
 
-For Selection Sets offering source variants, each Track of a member Switching Set should appear as an `EXT-X-MEDIA` tag. Tracks encoded with the same settings should get the same `EXT-X-MEDIA GROUP-ID`. For example, a Selection Set containing French and English Switching Sets, with just one Track in each Switching Set, should appear as two `EXT-X-MEDIA` tags with the same `GROUP-ID`. For more `EXT_X_MEDIA` tag rules, see [`RFC 8216`](https://developer.apple.comhttps://www.rfc-editor.org/info/rfc8216) and [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
+For Selection Sets offering source variants, each Track of a member Switching Set should appear as an `EXT-X-MEDIA` tag. Tracks encoded with the same settings should get the same `EXT-X-MEDIA GROUP-ID`. For example, a Selection Set containing French and English Switching Sets, with just one Track in each Switching Set, should appear as two `EXT-X-MEDIA` tags with the same `GROUP-ID`. For more `EXT_X_MEDIA` tag rules, see [RFC 8216](https://www.rfc-editor.org/info/rfc8216) and [HTTP Live Streaming 2nd Edition](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
 
-##### Cmaf Presentation Profiles
+##### CMAF Presentation Profiles
 
 The CMAF specification defines three presentation profiles: unencrypted, encrypted with `‘cbcs’`, and encrypted with `‘cenc’`. HLS supports unencrypted and encrypted with `‘cbcs’`.
 
-##### Hls Example
+##### HLS example
 
 In this example, there’s a video CMAF Track containing 29.97 fps video in 60-frame GOPs, each 2.002 seconds long. Each GOP forms a CMAF Fragment. The CMAF Fragments, V1, V2, V3, V4, and V5, total 10.010 seconds of video. Their CMAF Header is `VH`.
 
@@ -191,23 +192,24 @@ This example illustrates how CMAF Selection Sets can appear as separate Renditio
 
 ## See Also
 
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](hls-authoring-specification-for-apple-devices.md)
+### Specifications and other documents
+- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
   Learn the requirements for live and on-demand audio and video content delivery using HLS.
-- [HLS for Apple Podcasts](hls-for-podcasts.md)
+- [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
-- [Using content protection systems with HLS](using-content-protection-systems-with-hls.md)
+- [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)
   Adding encryption keys to media playlists
-- [Enabling Low-Latency HTTP Live Streaming (HLS)](enabling-low-latency-http-live-streaming-hls.md)
+- [Enabling Low-Latency HTTP Live Streaming (HLS)](./enabling-low-latency-http-live-streaming-hls.md)
   Add Low-Latency HLS to your content streams to maintain scalability.
-- [Links to additional specifications and videos](links-to-additional-specifications-and-videos.md)
+- [Links to additional specifications and videos](./links-to-additional-specifications-and-videos.md)
   Review additional specifications and documents.
-- [Videos about HLS](videos-about-hls.md)
+- [Videos about HLS](./videos-about-hls.md)
   Review informational videos about HTTP Live Streaming.
-- [Providing metadata for xHE-AAC video soundtracks](providing-metadata-for-xhe-aac-video-soundtracks.md)
+- [Providing metadata for xHE-AAC video soundtracks](./providing-metadata-for-xhe-aac-video-soundtracks.md)
   Ensure volume normalization by including metadata for loudness and dynamic range control.
-- [Adjusting anchor loudness](adjusting-anchor-loudness.md)
+- [Adjusting anchor loudness](./adjusting-anchor-loudness.md)
   Adjust anchor loudness when measurements of speech-gated loudness for a full mix may be inaccurate, such as when speech activity is low.
-- [Providing JavaScript Object Notation (JSON) chapters](providing-javascript-object-notation-json-chapters.md)
+- [Providing JavaScript Object Notation (JSON) chapters](./providing-javascript-object-notation-json-chapters.md)
   Prepare JSON chapters for HTTP Live Streaming.
 
 

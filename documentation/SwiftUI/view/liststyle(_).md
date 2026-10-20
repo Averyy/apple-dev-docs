@@ -1,7 +1,8 @@
 # listStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for lists within this view.
 
@@ -23,9 +24,10 @@ func listStyle<S>(_ style: S) -> some View where S : ListStyle
 
 ## See Also
 
-- [Displaying data in lists](displaying-data-in-lists.md)
+### Creating a list
+- [Displaying data in lists](../displaying-data-in-lists.md)
   Visualize collections of data with platform-appropriate appearance.
-- [struct List](list.md)
+- [struct List](../list.md)
   A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
 
 

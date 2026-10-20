@@ -1,7 +1,8 @@
 # MTKMeshBufferAllocator
 
 **Framework**: MetalKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface for allocating a MetalKit buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
 
@@ -19,39 +20,44 @@ An interface for allocating a MetalKit buffer that backs the vertex data of a Mo
 class MTKMeshBufferAllocator
 ```
 
+```objc
+@interface MTKMeshBufferAllocator : NSObject
+```
+
 ## Topics
 
 ### Initialization
-- [init(device: any MTLDevice)](mtkmeshbufferallocator/init(device:).md)
+- [init(device: any MTLDevice)](./mtkmeshbufferallocator/init%28device%29.md)
   Initializes a new allocator object.
 ### Device
-- [var device: any MTLDevice](mtkmeshbufferallocator/device.md)
+- [var device: any MTLDevice](./mtkmeshbufferallocator/device.md)
   The device used to create Metal objects.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLMeshBufferAllocator](../modelio/mdlmeshbufferallocator.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLMeshBufferAllocator](../ModelIO/mdlmeshbufferallocator.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTKMesh](mtkmesh.md)
+### Model Handling
+- [class MTKMesh](./mtkmesh.md)
   A container for the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBuffer](mtkmeshbuffer.md)
+- [class MTKMeshBuffer](./mtkmeshbuffer.md)
   A buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKSubmesh](mtksubmesh.md)
+- [class MTKSubmesh](./mtksubmesh.md)
   A container for the index data of a Model I/O submesh, suitable for use in a Metal app.
-- [Conversion Functions](conversion-functions.md)
+- [Conversion Functions](./conversion-functions.md)
   Convert between Metal and Model I/O vertex representations.
-- [Model Errors](model-errors.md)
+- [Model Errors](./model-errors.md)
   Learn about errors thrown by model handling methods.
 
 

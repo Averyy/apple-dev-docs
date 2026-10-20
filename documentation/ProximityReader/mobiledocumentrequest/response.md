@@ -2,6 +2,7 @@
 
 **Framework**: ProximityReader  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that represents the response type of the request.

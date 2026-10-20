@@ -1,7 +1,8 @@
 # type
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key encryption type.
 
@@ -18,11 +19,16 @@ The key encryption type.
 var type: OM_uint32
 ```
 
+```c
+OM_uint32 type;
+```
+
 ## See Also
 
-- [var data: UnsafeMutableRawPointer?](gss_krb5_lucid_key/data.md)
+### Key Members
+- [var data: UnsafeMutableRawPointer?](./data.md)
   The actual key data.
-- [var length: OM_uint32](gss_krb5_lucid_key/length.md)
+- [var length: OM_uint32](./length.md)
   The length of the key data.
 
 

@@ -1,7 +1,8 @@
 # centerPoint
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 centerPoint is a CPLocationCoordinate3D representing the primary coordinate location of the waypoint.
 
@@ -14,6 +15,10 @@ centerPoint is a CPLocationCoordinate3D representing the primary coordinate loca
 
 ```swift
 var centerPoint: CPLocationCoordinate3D { get }
+```
+
+```objc
+@property (nonatomic, readonly) CPLocationCoordinate3D centerPoint;
 ```
 
 

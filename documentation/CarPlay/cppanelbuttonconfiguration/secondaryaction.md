@@ -1,7 +1,8 @@
 # secondaryAction
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional action button to display in the panel.
 
@@ -15,6 +16,10 @@ An optional action button to display in the panel.
 ```swift
 @NSCopying
 var secondaryAction: CPTextButton? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) CPTextButton * secondaryAction;
 ```
 
 #### Discussion

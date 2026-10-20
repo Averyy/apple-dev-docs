@@ -1,7 +1,8 @@
 # PreviewModifierContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type-erased content of a preview.
 
@@ -24,13 +25,14 @@ struct PreviewModifierContent
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [macro Previewable()](previewable().md)
+### Customizing a preview
+- [macro Previewable()](./previewable%28%29.md)
   Tag allowing a dynamic property to appear inline in a preview.
-- [protocol PreviewModifier](previewmodifier.md)
+- [protocol PreviewModifier](./previewmodifier.md)
   A type that defines an environment in which previews can appear.
 
 

@@ -1,7 +1,8 @@
 # InAppPurchasePrice.Relationships.InAppPurchasePricePoint.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an In-App Purchase price.
 
@@ -10,14 +11,14 @@ The request body you use to update an In-App Purchase price.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchasePrice.Relationships.InAppPurchasePricePoint.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchasePricePoints`
 
 
 ---

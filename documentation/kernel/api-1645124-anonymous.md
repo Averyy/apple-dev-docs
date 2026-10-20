@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHardwareCursorDescriptorMajorVersion](1645124-anonymous/khardwarecursordescriptormajorversion.md)
-- [kHardwareCursorDescriptorMinorVersion](1645124-anonymous/khardwarecursordescriptorminorversion.md)
+- [kHardwareCursorDescriptorMajorVersion](./api-1645124-anonymous/khardwarecursordescriptormajorversion.md)
+- [kHardwareCursorDescriptorMinorVersion](./api-1645124-anonymous/khardwarecursordescriptorminorversion.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # toolbarVisibility(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the visibility of a bar managed by SwiftUI.
 
@@ -23,7 +24,7 @@ func toolbarVisibility(_ visibility: Visibility, for bars: ToolbarPlacement...) 
 
 #### Discussion
 
-The preferred visibility flows up to the nearest container that renders a bar. This could be a [`NavigationView`](navigationview.md) or [`TabView`](tabview.md) in iOS, or the root view of a [`WindowGroup`](windowgroup.md) in macOS.
+The preferred visibility flows up to the nearest container that renders a bar. This could be a [`NavigationView`](../navigationview.md) or [`TabView`](../tabview.md) in iOS, or the root view of a [`WindowGroup`](../windowgroup.md) in macOS.
 
 This examples shows a view that hides the navigation bar on iOS, or the window toolbar items on macOS.
 
@@ -34,7 +35,7 @@ NavigationView {
 }
 ```
 
-To hide the entire titlebar on macOS, use this modifier with [`windowToolbar`](toolbarplacement/windowtoolbar.md) placement.
+To hide the entire titlebar on macOS, use this modifier with [`windowToolbar`](../toolbarplacement/windowtoolbar.md) placement.
 
 ```swift
 NavigationView {
@@ -43,7 +44,7 @@ NavigationView {
 }
 ```
 
-You can provide multiple [`ToolbarPlacement`](toolbarplacement.md) instances to hide multiple bars at once.
+You can provide multiple [`ToolbarPlacement`](../toolbarplacement.md) instances to hide multiple bars at once.
 
 ```swift
 TabView {
@@ -55,24 +56,25 @@ TabView {
 }
 ```
 
-> **Note**: In macOS, if you provide [`ToolbarCommands`](toolbarcommands.md) to the scene of your app, this modifier disables the toolbar visibility command while the value of the modifier is not [`automatic`](toolbarplacement/automatic.md).
+> **Note**: In macOS, if you provide [`ToolbarCommands`](../toolbarcommands.md) to the scene of your app, this modifier disables the toolbar visibility command while the value of the modifier is not [`automatic`](../toolbarplacement/automatic.md).
 
 Depending on the specified bars, the requested visibility may not be able to be fulfilled.
 
 ## Parameters
 
 - `visibility`: The preferred visibility of the bar.
-- `bars`: The bars to update the visibility of or [`automatic`](toolbarplacement/automatic.md) if empty.
+- `bars`: The bars to update the visibility of or [`automatic`](../toolbarplacement/automatic.md) if empty.
 
 ## See Also
 
-- [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
+### Setting toolbar visibility
+- [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](./toolbarbackgroundvisibility%28_,for%29.md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
-- [struct ToolbarPlacement](toolbarplacement.md)
+- [struct ToolbarPlacement](../toolbarplacement.md)
   The placement of a toolbar.
-- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+- [struct ContentToolbarPlacement](../contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](./toolbar%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
 
 

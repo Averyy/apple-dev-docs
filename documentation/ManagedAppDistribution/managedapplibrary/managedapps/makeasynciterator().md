@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces results from this asynchronous sequence.
 
@@ -20,9 +21,10 @@ func makeAsyncIterator() -> ManagedAppLibrary.ManagedApps.AsyncIterator
 
 ## See Also
 
-- [ManagedAppLibrary.ManagedApps.AsyncIterator](managedapplibrary/managedapps/asynciterator.md)
+### Obtaining managed apps
+- [ManagedAppLibrary.ManagedApps.AsyncIterator](./asynciterator.md)
   The iterator for managed apps.
-- [ManagedAppLibrary.ManagedApps.Element](managedapplibrary/managedapps/element.md)
+- [ManagedAppLibrary.ManagedApps.Element](./element.md)
   The type of element this asynchronous sequence produces.
 
 

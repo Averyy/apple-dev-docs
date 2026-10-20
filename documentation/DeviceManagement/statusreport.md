@@ -1,7 +1,8 @@
 # StatusReport
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Provides details about an error for an item in a status report.
 
@@ -16,15 +17,15 @@ Provides details about an error for an item in a status report.
 
 ## Declaration
 
-```swift
+```
 object StatusReport
 ```
 
 ## Mentions
 
-- [Installing packages](installing-packages.md)
-- [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
+- [Installing packages](./installing-packages.md)
+- [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
+- [Processing status for managed apps](./processing-status-for-managed-apps.md)
 
 #### Discussion
 
@@ -33,8 +34,8 @@ The device sends a status report when a subscribed status item changes. The repo
 ## Topics
 
 ### Dictionaries
-- [object StatusReport.Error](statusreport/error.md)
-- [object StatusReport.StatusItems](statusreport/statusitems-data.dictionary.md)
+- [object StatusReport.Error](./statusreport/error.md)
+- [object StatusReport.StatusItems](./statusreport/statusitems-data.dictionary.md)
 
 ## Properties
 
@@ -42,9 +43,12 @@ The device sends a status report when a subscribed status item changes. The repo
 - `Errors` ([StatusReport.Error]) *(required)*: An array of errors for this status report.
 - `FullReport` (boolean): The system sets this to `true` to indicate that the status report contains the full set of current status, and is not an incremental report. A full status report includes the full set of items in any status array item, not just the changes. Servers use this to replace their entire status for the device, rather than do an incremental update to the existing status. The system sets this to `true` when sending a “safety sync” status report, which is typically sent every 24 hours or so.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object StatusReason](statusreason.md)
+### Status report
+- [object StatusReason](./statusreason.md)
   Provides details about an error for an item in a status report.
 
 

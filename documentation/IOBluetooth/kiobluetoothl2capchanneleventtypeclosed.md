@@ -1,10 +1,11 @@
 # kIOBluetoothL2CAPChannelEventTypeClosed
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kIOBluetoothL2CAPChannelEventTypeClosed: IOBluetoothL2CAPChannelEventType { get }
 ```
 
+```c
+kIOBluetoothL2CAPChannelEventTypeClosed
+```
+
 ## See Also
 
-- [var kIOBluetoothL2CAPChannelEventTypeData: IOBluetoothL2CAPChannelEventType](kiobluetoothl2capchanneleventtypedata.md)
-- [var kIOBluetoothL2CAPChannelEventTypeOpenComplete: IOBluetoothL2CAPChannelEventType](kiobluetoothl2capchanneleventtypeopencomplete.md)
-- [var kIOBluetoothL2CAPChannelEventTypeQueueSpaceAvailable: IOBluetoothL2CAPChannelEventType](kiobluetoothl2capchanneleventtypequeuespaceavailable.md)
-- [var kIOBluetoothL2CAPChannelEventTypeReconfigured: IOBluetoothL2CAPChannelEventType](kiobluetoothl2capchanneleventtypereconfigured.md)
-- [var kIOBluetoothL2CAPChannelEventTypeWriteComplete: IOBluetoothL2CAPChannelEventType](kiobluetoothl2capchanneleventtypewritecomplete.md)
+### Constants
+- [var kIOBluetoothL2CAPChannelEventTypeData: IOBluetoothL2CAPChannelEventType](./kiobluetoothl2capchanneleventtypedata.md)
+- [var kIOBluetoothL2CAPChannelEventTypeOpenComplete: IOBluetoothL2CAPChannelEventType](./kiobluetoothl2capchanneleventtypeopencomplete.md)
+- [var kIOBluetoothL2CAPChannelEventTypeQueueSpaceAvailable: IOBluetoothL2CAPChannelEventType](./kiobluetoothl2capchanneleventtypequeuespaceavailable.md)
+- [var kIOBluetoothL2CAPChannelEventTypeReconfigured: IOBluetoothL2CAPChannelEventType](./kiobluetoothl2capchanneleventtypereconfigured.md)
+- [var kIOBluetoothL2CAPChannelEventTypeWriteComplete: IOBluetoothL2CAPChannelEventType](./kiobluetoothl2capchanneleventtypewritecomplete.md)
 
 
 ---

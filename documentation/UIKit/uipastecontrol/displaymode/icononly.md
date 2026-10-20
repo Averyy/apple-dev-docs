@@ -1,7 +1,8 @@
 # UIPasteControl.DisplayMode.iconOnly
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A display mode for an icon button.
 
@@ -17,15 +18,20 @@ A display mode for an icon button.
 case iconOnly
 ```
 
+```c
+UIPasteControlDisplayModeIconOnly
+```
+
 #### Discussion
 
-The icon looks like a sheet of paper above a clipboard. The value you set for [`baseForegroundColor`](uipastecontrol/configuration-swift.class/baseforegroundcolor.md) colors the icon.
+The icon looks like a sheet of paper above a clipboard. The value you set for [`baseForegroundColor`](../configuration-swift.class/baseforegroundcolor.md) colors the icon.
 
 ## See Also
 
-- [UIPasteControl.DisplayMode.iconAndLabel](uipastecontrol/displaymode/iconandlabel.md)
+### Choosing a display mode
+- [UIPasteControl.DisplayMode.iconAndLabel](./iconandlabel.md)
   A display mode for a button that composes an icon and a textual label.
-- [UIPasteControl.DisplayMode.labelOnly](uipastecontrol/displaymode/labelonly.md)
+- [UIPasteControl.DisplayMode.labelOnly](./labelonly.md)
   A display mode for a textual label.
 
 

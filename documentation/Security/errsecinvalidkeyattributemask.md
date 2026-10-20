@@ -1,7 +1,8 @@
 # errSecInvalidKeyAttributeMask
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key attribute mask is not valid.
 
@@ -18,6 +19,10 @@ The key attribute mask is not valid.
 
 ```swift
 var errSecInvalidKeyAttributeMask: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyAttributeMask
 ```
 
 

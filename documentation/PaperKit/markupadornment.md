@@ -1,7 +1,8 @@
 # MarkupAdornment
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A visual adornment that appears on top of markup content within a markup view controller.
 
@@ -25,41 +26,41 @@ You use a markup adornment to display an image-based overlay that you can positi
 ## Topics
 
 ### Creating an adornment
-- [init(id: UUID, anchor: MarkupAdornment.Anchor, imageConfiguration: MarkupAdornment.ImageConfiguration, dragRegion: MarkupAdornment.DragRegion, scalesWithZoom: Bool)](markupadornment/init(id:anchor:imageconfiguration:dragregion:scaleswithzoom:).md)
+- [init(id: UUID, anchor: MarkupAdornment.Anchor, imageConfiguration: MarkupAdornment.ImageConfiguration, dragRegion: MarkupAdornment.DragRegion, scalesWithZoom: Bool)](./markupadornment/init%28id,anchor,imageconfiguration,dragregion,scaleswithzoom%29.md)
   Creates a new markup adornment with the specified configuration.
 ### Anchoring the adornment
-- [MarkupAdornment.Anchor](markupadornment/anchor-swift.struct.md)
+- [MarkupAdornment.Anchor](./markupadornment/anchor-swift.struct.md)
   The positioning reference point for an adornment within the markup canvas.
-- [var anchor: MarkupAdornment.Anchor](markupadornment/anchor-swift.property.md)
+- [var anchor: MarkupAdornment.Anchor](./markupadornment/anchor-swift.property.md)
   The anchor that positions the adornment.
 ### Configuring the image
-- [MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.struct.md)
+- [MarkupAdornment.ImageConfiguration](./markupadornment/imageconfiguration-swift.struct.md)
   The visual appearance configuration for a markup adornment.
-- [var imageConfiguration: MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.property.md)
+- [var imageConfiguration: MarkupAdornment.ImageConfiguration](./markupadornment/imageconfiguration-swift.property.md)
   The image to display as the adornment.
 ### Controlling interactions
-- [MarkupAdornment.DragRegion](markupadornment/dragregion-swift.struct.md)
+- [MarkupAdornment.DragRegion](./markupadornment/dragregion-swift.struct.md)
   The movement behavior and interaction constraints for a markup adornment.
-- [var dragRegion: MarkupAdornment.DragRegion](markupadornment/dragregion-swift.property.md)
+- [var dragRegion: MarkupAdornment.DragRegion](./markupadornment/dragregion-swift.property.md)
   The constraints that define where a person can drag this adornment.
-- [var scalesWithZoom: Bool](markupadornment/scaleswithzoom.md)
+- [var scalesWithZoom: Bool](./markupadornment/scaleswithzoom.md)
   A Boolean value that indicates whether the adornment scales with the zoom level or remains fixed in the base coordinate system.
 ### Identifying markup
-- [var id: UUID](markupadornment/id.md)
+- [var id: UUID](./markupadornment/id.md)
   A unique identifier for this adornment.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

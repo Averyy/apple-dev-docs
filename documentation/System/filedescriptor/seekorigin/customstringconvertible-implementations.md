@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](filedescriptor/seekorigin/description.md)
+- [var description: String](./description.md)
   A textual representation of the seek origin.
 
 

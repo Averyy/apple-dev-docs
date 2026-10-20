@@ -1,7 +1,8 @@
 # UITextField.TextDidEndEditingMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,16 +20,16 @@ struct TextDidEndEditingMessage
 ## Topics
 
 ### Initializers
-- [init(reason: UITextField.DidEndEditingReason?, textField: UITextField)](uitextfield/textdidendeditingmessage/init(reason:textfield:).md)
+- [init(reason: UITextField.DidEndEditingReason?, textField: UITextField)](./textdidendeditingmessage/init%28reason,textfield%29.md)
 ### Instance Properties
-- [var reason: UITextField.DidEndEditingReason?](uitextfield/textdidendeditingmessage/reason.md)
-- [var textField: UITextField](uitextfield/textdidendeditingmessage/textfield.md)
+- [var reason: UITextField.DidEndEditingReason?](./textdidendeditingmessage/reason.md)
+- [var textField: UITextField](./textdidendeditingmessage/textfield.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

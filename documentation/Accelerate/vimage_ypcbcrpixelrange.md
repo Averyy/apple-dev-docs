@@ -1,23 +1,28 @@
 # vImage_YpCbCrPixelRange
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The description of range and clamping information for YpCbCr pixel formats.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct vImage_YpCbCrPixelRange
+```
+
+```c
+typedef struct vImage_YpCbCrPixelRange { ... } vImage_YpCbCrPixelRange;
 ```
 
 #### Overview
@@ -63,44 +68,45 @@ The bias is the prebias for YUV to RGB and the postbias for RGB to YUV.
 ## Topics
 
 ### Creating a Pixel Range
-- [init(Yp_bias: Int32, CbCr_bias: Int32, YpRangeMax: Int32, CbCrRangeMax: Int32, YpMax: Int32, YpMin: Int32, CbCrMax: Int32, CbCrMin: Int32)](vimage_ypcbcrpixelrange/init(yp_bias:cbcr_bias:yprangemax:cbcrrangemax:ypmax:ypmin:cbcrmax:cbcrmin:).md)
+- [init(Yp_bias: Int32, CbCr_bias: Int32, YpRangeMax: Int32, CbCrRangeMax: Int32, YpMax: Int32, YpMin: Int32, CbCrMax: Int32, CbCrMin: Int32)](./vimage_ypcbcrpixelrange/init%28yp_bias,cbcr_bias,yprangemax,cbcrrangemax,ypmax,ypmin,cbcrmax,cbcrmin%29.md)
   Returns a structure describing range and clamping information for Y’CbCr pixel formats.
-- [init()](vimage_ypcbcrpixelrange/init.md)
+- [init()](./vimage_ypcbcrpixelrange/init%28%29.md)
 ### Pixel Range Properties
-- [var Yp_bias: Int32](vimage_ypcbcrpixelrange/yp_bias.md)
+- [var Yp_bias: Int32](./vimage_ypcbcrpixelrange/yp_bias.md)
   The encoding for `Y' = 0.0` for this video format (varies by bit depth).
-- [var CbCr_bias: Int32](vimage_ypcbcrpixelrange/cbcr_bias.md)
+- [var CbCr_bias: Int32](./vimage_ypcbcrpixelrange/cbcr_bias.md)
   The encoding for `{Cb, Cr} = 0.0` for this video format.
-- [var YpRangeMax: Int32](vimage_ypcbcrpixelrange/yprangemax.md)
+- [var YpRangeMax: Int32](./vimage_ypcbcrpixelrange/yprangemax.md)
   The encoding for `Y' = 1.0` for this video format.
-- [var CbCrRangeMax: Int32](vimage_ypcbcrpixelrange/cbcrrangemax.md)
+- [var CbCrRangeMax: Int32](./vimage_ypcbcrpixelrange/cbcrrangemax.md)
   The encoding for `{Cb, Cr} = 0.5` for this video format.
-- [var YpMax: Int32](vimage_ypcbcrpixelrange/ypmax.md)
+- [var YpMax: Int32](./vimage_ypcbcrpixelrange/ypmax.md)
   The encoding for the maximum allowed Y’ value.
-- [var YpMin: Int32](vimage_ypcbcrpixelrange/ypmin.md)
+- [var YpMin: Int32](./vimage_ypcbcrpixelrange/ypmin.md)
   The encoding of the minimum allowed Y’ value.
-- [var CbCrMax: Int32](vimage_ypcbcrpixelrange/cbcrmax.md)
+- [var CbCrMax: Int32](./vimage_ypcbcrpixelrange/cbcrmax.md)
   The encoding of the maximum allowed `{Cb, Cr}` value.
-- [var CbCrMin: Int32](vimage_ypcbcrpixelrange/cbcrmin.md)
+- [var CbCrMin: Int32](./vimage_ypcbcrpixelrange/cbcrmin.md)
   The encoding of the minimum allowed `{Cb, Cr}` value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func vImageConvert_ARGBToYpCbCr_GenerateConversion(UnsafePointer<vImage_ARGBToYpCbCrMatrix>, UnsafePointer<vImage_YpCbCrPixelRange>, UnsafeMutablePointer<vImage_ARGBToYpCbCr>, vImageARGBType, vImageYpCbCrType, vImage_Flags) -> vImage_Error](vimageconvert_argbtoypcbcr_generateconversion(_:_:_:_:_:_:).md)
+### Generating conversion information
+- [func vImageConvert_ARGBToYpCbCr_GenerateConversion(UnsafePointer<vImage_ARGBToYpCbCrMatrix>, UnsafePointer<vImage_YpCbCrPixelRange>, UnsafeMutablePointer<vImage_ARGBToYpCbCr>, vImageARGBType, vImageYpCbCrType, vImage_Flags) -> vImage_Error](./vimageconvert_argbtoypcbcr_generateconversion%28_,_,_,_,_,_%29.md)
   Generates the information that describes the conversion from ARGB to YpCbCr.
-- [struct vImageYpCbCrType](vimageypcbcrtype.md)
+- [struct vImageYpCbCrType](./vimageypcbcrtype.md)
   Constants that describe the encoding of a YpCbCr image for conversions between RGB and YpCbCr.
-- [struct vImageARGBType](vimageargbtype.md)
+- [struct vImageARGBType](./vimageargbtype.md)
   Constants that describe the encoding of an ARGB image for conversions between RGB and YpCbCr.
-- [struct vImage_ARGBToYpCbCrMatrix](vimage_argbtoypcbcrmatrix.md)
+- [struct vImage_ARGBToYpCbCrMatrix](./vimage_argbtoypcbcrmatrix.md)
   The 3 x 3 matrix that the vImage library uses to convert from RGB to YpCbCr.
-- [struct vImage_ARGBToYpCbCr](vimage_argbtoypcbcr.md)
+- [struct vImage_ARGBToYpCbCr](./vimage_argbtoypcbcr.md)
   The information that describes the conversion from ARGB to YpCbCr.
 
 

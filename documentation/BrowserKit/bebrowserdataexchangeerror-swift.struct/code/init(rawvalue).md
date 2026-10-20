@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an error code with a value that represents the underlying type of error.
 

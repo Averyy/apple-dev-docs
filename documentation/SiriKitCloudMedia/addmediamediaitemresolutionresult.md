@@ -1,7 +1,8 @@
 # AddMediaMediaItemResolutionResult
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media item that matches an add media intent, or information about why your service can’t provide a media item.
 
@@ -10,7 +11,7 @@ A media item that matches an add media intent, or information about why your ser
 
 ## Declaration
 
-```swift
+```
 object AddMediaMediaItemResolutionResult
 ```
 
@@ -21,22 +22,24 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Topics
 
 ### Providing a Media Item
-- [object AddMediaMediaItemResolutionResult.Success](addmediamediaitemresolutionresult/success-data.dictionary.md)
+- [object AddMediaMediaItemResolutionResult.Success](./addmediamediaitemresolutionresult/success-data.dictionary.md)
   A media item that successfully matches the intent.
 ### Reporting a Problem
-- [object AddMediaMediaItemResolutionResult.Unsupported](addmediamediaitemresolutionresult/unsupported-data.dictionary.md)
+- [object AddMediaMediaItemResolutionResult.Unsupported](./addmediamediaitemresolutionresult/unsupported-data.dictionary.md)
   The reason your service can’t add the media item to the user’s library or to a playlist.
-- [type AddMediaMediaItemUnsupportedReason](addmediamediaitemunsupportedreason.md)
+- [type AddMediaMediaItemUnsupportedReason](./addmediamediaitemunsupportedreason.md)
   Reasons the media service can’t add the media item to the user’s library or to a playlist.
 ### Clarifying a Possible Match
-- [object AddMediaMediaItemResolutionResult.ConfirmationRequired](addmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)
+- [object AddMediaMediaItemResolutionResult.ConfirmationRequired](./addmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before you add it to their library or to a playlist.
-- [object AddMediaMediaItemResolutionResult.Disambiguation](addmediamediaitemresolutionresult/disambiguation-data.dictionary.md)
+- [object AddMediaMediaItemResolutionResult.Disambiguation](./addmediamediaitemresolutionresult/disambiguation-data.dictionary.md)
   A result that requires the user to choose which media item they want to add to their library or to a playlist.
 
 ## Properties
 
 - `class` (string): The specific type of result.
+
+  **Allowed Values**: `AddMediaMediaItemResolutionResult`
 - `success` (AddMediaMediaItemResolutionResult.Success): A media item that successfully matches the intent.
 - `confirmationRequired` (AddMediaMediaItemResolutionResult.ConfirmationRequired): A media item for the user to confirm.
 - `disambiguation` (AddMediaMediaItemResolutionResult.Disambiguation): Multiple media items for the user to choose from.
@@ -45,11 +48,12 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Relationships
 
 ### Inherits From
-- [IntentResolutionResult](intentresolutionresult.md)
+- [IntentResolutionResult](./intentresolutionresult.md)
 
 ## See Also
 
-- [object AddMediaIntentHandlingResolveMediaItemsInvocationResponse](addmediaintenthandlingresolvemediaitemsinvocationresponse.md)
+### Identifying a Media Item
+- [object AddMediaIntentHandlingResolveMediaItemsInvocationResponse](./addmediaintenthandlingresolvemediaitemsinvocationresponse.md)
   Your service’s response to a request to resolve media items in an update media affinity intent.
 
 

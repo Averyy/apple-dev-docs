@@ -1,7 +1,8 @@
 # actualScaleFactor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actual scale factor that the system applied to the font during drawing.
 
@@ -19,17 +20,22 @@ The actual scale factor that the system applied to the font during drawing.
 var actualScaleFactor: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat actualScaleFactor;
+```
+
 #### Discussion
 
-If you specified a custom value in the [`minimumScaleFactor`](nsstringdrawingcontext/minimumscalefactor.md) property, when drawing is complete, this property contains the actual scale factor value that was used to draw the string.
+If you specified a custom value in the [`minimumScaleFactor`](./minimumscalefactor.md) property, when drawing is complete, this property contains the actual scale factor value that was used to draw the string.
 
 ## See Also
 
-- [var minimumScaleFactor: CGFloat](nsstringdrawingcontext/minimumscalefactor.md)
+### Accessing the scale factors
+- [var minimumScaleFactor: CGFloat](./minimumscalefactor.md)
   The scale factor that determines the smallest font size to use during drawing.
-- [var minimumTrackingAdjustment: CGFloat](nsstringdrawingcontext/minimumtrackingadjustment.md)
+- [var minimumTrackingAdjustment: CGFloat](./minimumtrackingadjustment.md)
   The smallest amount of space, in points, to maintain between characters.
-- [var actualTrackingAdjustment: CGFloat](nsstringdrawingcontext/actualtrackingadjustment.md)
+- [var actualTrackingAdjustment: CGFloat](./actualtrackingadjustment.md)
   The actual tracking value that the system applied during drawing.
 
 

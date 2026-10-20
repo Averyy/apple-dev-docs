@@ -1,7 +1,8 @@
 # init(origin:size:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle from simd vectors that describe the origin and size.
 

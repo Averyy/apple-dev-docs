@@ -1,7 +1,8 @@
 # saveText
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that executable’s text segment should be kept in swap space even after it exits.
 
@@ -26,9 +27,10 @@ For more information, see the `chmod(2)` man page’s discussion of `S_ISVTX` (t
 
 ## See Also
 
-- [static var setUserID: FilePermissions](filepermissions/setuserid.md)
+### Special Permissions
+- [static var setUserID: FilePermissions](./setuserid.md)
   Indicates that the file is executed as the owner.
-- [static var setGroupID: FilePermissions](filepermissions/setgroupid.md)
+- [static var setGroupID: FilePermissions](./setgroupid.md)
   Indicates that the file is executed as the group.
 
 

@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kOSAsyncRefCount: Int](kosasyncrefcount.md)
-- [var kOSAsyncRefSize: Int](kosasyncrefsize.md)
+- [var kOSAsyncRefCount: Int](../kosasyncrefcount.md)
+- [var kOSAsyncRefSize: Int](../kosasyncrefsize.md)
 
 
 ---

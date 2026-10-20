@@ -1,7 +1,8 @@
 # init(range:chunkSize:maximumRetries:retryInterval:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(range: NSRange, chunkSize: Int, maximumRetries: Int, retryInterval: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithRange:(NSRange) range chunkSize:(NSUInteger) chunkSize maximumRetries:(NSUInteger) maximumRetries retryInterval:(NSTimeInterval) retryInterval;
 ```
 
 ## Parameters

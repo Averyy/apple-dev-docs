@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated distance to the user’s focal point, in meters.
 

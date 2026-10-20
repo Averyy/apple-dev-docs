@@ -1,16 +1,18 @@
 # Image I/O Macros
 
-**Framework**: Image I/O
+**Framework**: Image I/O  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [var IIO_HAS_IOSURFACE: Int32](iio_has_iosurface.md)
+- [var IIO_HAS_IOSURFACE: Int32](./iio_has_iosurface.md)
 
 ## See Also
 
-- [Image I/O Constants](image-i-o-constants.md)
-- [Image I/O Functions](image-i-o-functions.md)
+### Reference
+- [Image I/O Constants](./image-i-o-constants.md)
+- [Image I/O Functions](./image-i-o-functions.md)
 
 
 ---

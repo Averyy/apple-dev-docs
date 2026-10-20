@@ -1,7 +1,8 @@
 # MusicCatalogSearchResponse.TopResult.playlist(_:)
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An item that corresponds to a playlist.
 

@@ -1,7 +1,8 @@
 # TKTokenOperation.decryptData
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,16 +19,21 @@
 case decryptData
 ```
 
+```c
+TKTokenOperationDecryptData
+```
+
 #### Discussion
 
 Decrypt data using a private key
 
 ## See Also
 
-- [TKTokenOperation.none](tktokenoperation/none.md)
-- [TKTokenOperation.readData](tktokenoperation/readdata.md)
-- [TKTokenOperation.signData](tktokenoperation/signdata.md)
-- [TKTokenOperation.performKeyExchange](tktokenoperation/performkeyexchange.md)
+### Constants
+- [TKTokenOperation.none](./none.md)
+- [TKTokenOperation.readData](./readdata.md)
+- [TKTokenOperation.signData](./signdata.md)
+- [TKTokenOperation.performKeyExchange](./performkeyexchange.md)
 
 
 ---

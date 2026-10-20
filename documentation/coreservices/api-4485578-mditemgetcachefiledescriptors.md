@@ -1,7 +1,8 @@
 # MDItemGetCacheFileDescriptors(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDItemGetCacheFileDescriptors(_ items: CFArray!, _ completionHandler: ((CFArray?) -> Void)!)
+```
+
+```c
+void MDItemGetCacheFileDescriptors(CFArrayRef items, void (^completionHandler)(CFArrayRef array));
 ```
 
 

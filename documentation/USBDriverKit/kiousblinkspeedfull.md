@@ -1,14 +1,15 @@
 # kIOUSBLinkSpeedFull
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBLinkSpeedFull
 ```
 

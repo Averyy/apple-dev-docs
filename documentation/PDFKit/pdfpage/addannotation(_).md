@@ -1,7 +1,8 @@
 # addAnnotation(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified annotation object to the page.
 
@@ -19,15 +20,20 @@ Adds the specified annotation object to the page.
 func addAnnotation(_ annotation: PDFAnnotation)
 ```
 
+```objc
+- (void) addAnnotation:(PDFAnnotation *) annotation;
+```
+
 ## See Also
 
-- [var annotations: [PDFAnnotation]](pdfpage/annotations.md)
+### Working with Annotations
+- [var annotations: [PDFAnnotation]](./annotations.md)
   Returns an array containing the page’s annotations.
-- [var displaysAnnotations: Bool](pdfpage/displaysannotations.md)
+- [var displaysAnnotations: Bool](./displaysannotations.md)
   Returns a Boolean value indicating whether annotations are displayed for the page.
-- [func removeAnnotation(PDFAnnotation)](pdfpage/removeannotation(_:).md)
+- [func removeAnnotation(PDFAnnotation)](./removeannotation%28_%29.md)
   Removes the specified annotation from the page.
-- [func annotation(at: CGPoint) -> PDFAnnotation?](pdfpage/annotation(at:).md)
+- [func annotation(at: CGPoint) -> PDFAnnotation?](./annotation%28at%29.md)
   Returns the annotation, if there is one, at the specified point.
 
 

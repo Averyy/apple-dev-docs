@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Consume this value to access the underlying pixel buffer.
 
@@ -20,7 +21,7 @@ var pixelBuffer: CVMutablePixelBuffer? { get }
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 #### Return Value
 
@@ -28,9 +29,10 @@ The underlying pixel buffer or `nil` if this was not an image value.
 
 ## See Also
 
-- [var kind: InferenceValue.Kind](inferencevalue/kind-swift.property.md)
+### Inspecting a value
+- [var kind: InferenceValue.Kind](./kind-swift.property.md)
   The kind of data this value contains.
-- [var ndArray: NDArray?](inferencevalue/ndarray.md)
+- [var ndArray: NDArray?](./ndarray.md)
   The array that the value wraps.
 
 

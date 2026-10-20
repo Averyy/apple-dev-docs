@@ -1,7 +1,8 @@
 # viabilityNotifications
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of service viability notifications produced by the service.
 
@@ -16,13 +17,14 @@ final var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotific
 
 #### Discussion
 
-Use a `for`-`await`-`in` loop to receive [`RCSService.ViabilityNotification`](rcsservice/viabilitynotification.md) instances from this property.
+Use a `for`-`await`-`in` loop to receive [`RCSService.ViabilityNotification`](./viabilitynotification.md) instances from this property.
 
 ## See Also
 
-- [func isViable(for: CellularServiceID) -> Bool](rcsservice/isviable(for:).md)
+### Determining service viabililty
+- [func isViable(for: CellularServiceID) -> Bool](./isviable%28for%29.md)
   Queries whether the device can perform RCS operations at this time.
-- [RCSService.ViabilityNotification](rcsservice/viabilitynotification.md)
+- [RCSService.ViabilityNotification](./viabilitynotification.md)
   A notification that indicates whether RCS is viable for a given cellular service.
 
 

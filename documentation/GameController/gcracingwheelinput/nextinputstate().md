@@ -1,7 +1,8 @@
 # nextInputState()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next input state of the racing wheel from the queue.
 
@@ -13,6 +14,10 @@ Returns the next input state of the racing wheel from the queue.
 
 ```swift
 func nextInputState() -> (any GCRacingWheelInputState & GCDevicePhysicalInputStateDiff)?
+```
+
+```objc
+- (GCRacingWheelInputState<GCDevicePhysicalInputStateDiff> *) nextInputState;
 ```
 
 #### Return Value

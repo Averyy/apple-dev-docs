@@ -1,15 +1,16 @@
 # AUMIDIEventListBlock
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 typealias AUMIDIEventListBlock = (AUEventSampleTime, UInt8, UnsafePointer<MIDIEventList>) -> OSStatus
 ```
 
+```c
+typedef int (^)(long long, unsigned char, const struct MIDIEventList *) __attribute__((nonblocking)) AUMIDIEventListBlock;
+```
+
 ## See Also
 
-- [typealias AudioFileComponentGetUserDataAtOffsetProc](audiofilecomponentgetuserdataatoffsetproc.md)
-- [typealias AudioFileComponentGetUserDataSize64Proc](audiofilecomponentgetuserdatasize64proc.md)
-- [typealias CallHostBlock](callhostblock.md)
+### Data Types
+- [typealias AudioFileComponentGetUserDataAtOffsetProc](./audiofilecomponentgetuserdataatoffsetproc.md)
+- [typealias AudioFileComponentGetUserDataSize64Proc](./audiofilecomponentgetuserdatasize64proc.md)
+- [typealias CallHostBlock](./callhostblock.md)
 
 
 ---

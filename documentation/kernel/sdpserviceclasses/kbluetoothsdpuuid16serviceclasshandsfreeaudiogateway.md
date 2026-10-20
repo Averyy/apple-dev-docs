@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassHandsFreeAudioGateway
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassHandsFreeAudioGateway = 0x111F
 ```
 

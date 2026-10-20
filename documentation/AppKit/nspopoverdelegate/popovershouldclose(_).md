@@ -1,7 +1,8 @@
 # popoverShouldClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows a delegate to override a close request.
 
@@ -15,9 +16,13 @@ Allows a delegate to override a close request.
 optional func popoverShouldClose(_ popover: NSPopover) -> Bool
 ```
 
+```objc
+- (BOOL) popoverShouldClose:(NSPopover *) popover;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the popover should close, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the popover should close, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -31,17 +36,18 @@ If there is no delegate or the delegate does not implement this method the defau
 
 ## See Also
 
-- [func popoverWillShow(Notification)](nspopoverdelegate/popoverwillshow(_:).md)
+### Popover Visibility
+- [func popoverWillShow(Notification)](./popoverwillshow%28_%29.md)
   Invoked when the popover will show.
-- [func popoverDidShow(Notification)](nspopoverdelegate/popoverdidshow(_:).md)
+- [func popoverDidShow(Notification)](./popoverdidshow%28_%29.md)
   Invoked when the popover has been shown.
-- [func popoverWillClose(Notification)](nspopoverdelegate/popoverwillclose(_:).md)
+- [func popoverWillClose(Notification)](./popoverwillclose%28_%29.md)
   Invoked when the popover is about to close.
-- [func popoverDidClose(Notification)](nspopoverdelegate/popoverdidclose(_:).md)
+- [func popoverDidClose(Notification)](./popoverdidclose%28_%29.md)
   Invoked when the popover did close.
-- [func popoverDidDetach(NSPopover)](nspopoverdelegate/popoverdiddetach(_:).md)
+- [func popoverDidDetach(NSPopover)](./popoverdiddetach%28_%29.md)
   Indicates that a popover has been released while it’s in an implicitly detached state.
-- [func popoverShouldDetach(NSPopover) -> Bool](nspopoverdelegate/popovershoulddetach(_:).md)
+- [func popoverShouldDetach(NSPopover) -> Bool](./popovershoulddetach%28_%29.md)
   Returns a Boolean value that indicates whether a popover should detach from its positioning view and become a separate window.
 
 

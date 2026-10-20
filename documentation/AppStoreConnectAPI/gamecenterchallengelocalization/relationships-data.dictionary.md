@@ -1,7 +1,8 @@
 # GameCenterChallengeLocalization.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeLocalization.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeLocalization.Relationships.Image](gamecenterchallengelocalization/relationships-data.dictionary/image-data.dictionary.md)
-- [object GameCenterChallengeLocalization.Relationships.Version](gamecenterchallengelocalization/relationships-data.dictionary/version-data.dictionary.md)
+- [object GameCenterChallengeLocalization.Relationships.Image](./relationships-data.dictionary/image-data.dictionary.md)
+- [object GameCenterChallengeLocalization.Relationships.Version](./relationships-data.dictionary/version-data.dictionary.md)
 
 ## Properties
 

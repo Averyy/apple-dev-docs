@@ -1396,7 +1396,7 @@ in the way that works best for you.
 
 You can define your own singleton global actors
 using the `@globalActor` attribute,
-as described in [globalActor](Attributes.md#globalActor).
+as described in [globalActor](../ReferenceManual/Attributes.md#globalActor).
 
 <!--
   OUTLINE

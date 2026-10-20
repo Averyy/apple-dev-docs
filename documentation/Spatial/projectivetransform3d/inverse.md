@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The projective transform’s inverse.
 
@@ -11,7 +12,7 @@ The projective transform’s inverse.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ var inverse: ProjectiveTransform3D? { get }
 
 ## See Also
 
-- [var scaleComponent: Size3D](projectivetransform3d/scalecomponent.md)
+### Inspecting a 3D projective transform’s properties
+- [var scaleComponent: Size3D](./scalecomponent.md)
   The scale component of the projective transform.
-- [var translation: Vector3D](projectivetransform3d/translation.md)
+- [var translation: Vector3D](./translation.md)
   The translation component of the projective transform.
-- [var matrix: simd_double4x4](projectivetransform3d/matrix.md)
+- [var matrix: simd_double4x4](./matrix.md)
   The projective transform’s underlying matrix.
 
 

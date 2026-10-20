@@ -1,7 +1,8 @@
 # lineSpacing(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the amount of space between lines of text in this view.
 
@@ -25,7 +26,7 @@ func lineSpacing(_ lineSpacing: CGFloat) -> some View
 
 Use `lineSpacing(_:)` to set the amount of spacing from the bottom of one line to the top of the next for text elements in the view.
 
-In the [`Text`](text.md) view in the example below, 10 points separate the bottom of one line to the top of the next as the text field wraps inside this view. Applying `lineSpacing(_:)` to a view hierarchy applies the line spacing to all text elements contained in the view.
+In the [`Text`](../text.md) view in the example below, 10 points separate the bottom of one line to the top of the next as the text field wraps inside this view. Applying `lineSpacing(_:)` to a view hierarchy applies the line spacing to all text elements contained in the view.
 
 ```swift
 Text("This is a string in a TextField with 10 point spacing applied between the bottom of one line and the top of the next.")
@@ -33,7 +34,7 @@ Text("This is a string in a TextField with 10 point spacing applied between the 
     .lineSpacing(10)
 ```
 
-![A screenshot showing the effects of setting line spacing on the text](/images/com.apple.SwiftUI/SwiftUI-view-lineSpacing@2x.png)
+![A screenshot showing the effects of setting line spacing on the text](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-view-lineSpacing@2x.png)
 
 ## Parameters
 
@@ -41,11 +42,12 @@ Text("This is a string in a TextField with 10 point spacing applied between the 
 
 ## See Also
 
-- [var lineSpacing: CGFloat](environmentvalues/linespacing.md)
+### Formatting multiline text
+- [var lineSpacing: CGFloat](../environmentvalues/linespacing.md)
   The distance in points between the bottom of one line fragment and the top of the next.
-- [func multilineTextAlignment(TextAlignment) -> some View](view/multilinetextalignment(_:).md)
+- [func multilineTextAlignment(TextAlignment) -> some View](./multilinetextalignment%28_%29.md)
   Sets the alignment of a text view that contains multiple lines of text.
-- [var multilineTextAlignment: TextAlignment](environmentvalues/multilinetextalignment.md)
+- [var multilineTextAlignment: TextAlignment](../environmentvalues/multilinetextalignment.md)
   An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
 
 

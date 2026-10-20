@@ -1,7 +1,8 @@
 # init(vasMerchants:localizedVASType:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request to read loyalty card service information.
 

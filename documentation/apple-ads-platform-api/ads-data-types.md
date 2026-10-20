@@ -1,6 +1,7 @@
 # Ads Data Types
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Reference the enumerations and scalar types used by ad objects and endpoints.
 
@@ -9,22 +10,23 @@ Reference the enumerations and scalar types used by ad objects and endpoints.
 
 ## Topics
 
-- [type AdStatus](adstatus.md)
+- [type AdStatus](./adstatus.md)
   Enumeration of advertiser-configurable serving states for an ad.
-- [type AdSystemStatus](adsystemstatus.md)
+- [type AdSystemStatus](./adsystemstatus.md)
   Enumeration of system-evaluated delivery states for an ad.
-- [type AdDisplayStatus](addisplaystatus.md)
+- [type AdDisplayStatus](./addisplaystatus.md)
   Rolled-up delivery state for an ad, combining advertiser settings and system conditions into a single user-facing label.
-- [type AdSystemStatusReason](adsystemstatusreason.md)
+- [type AdSystemStatusReason](./adsystemstatusreason.md)
   A reason code explaining why an ad is not currently running.
-- [type AdSystemLimitedStatusReason](adsystemlimitedstatusreason.md)
+- [type AdSystemLimitedStatusReason](./adsystemlimitedstatusreason.md)
   A reason code indicating that an ad is running but at reduced delivery capacity due to a policy condition.
 
 ## See Also
 
-- [Ads Endpoints](ads-endpoints.md)
+### Ads
+- [Ads Endpoints](./ads-endpoints.md)
   Create, retrieve, update, and delete ads using these endpoints.
-- [Ads Data Objects](ads-data-objects.md)
+- [Ads Data Objects](./ads-data-objects.md)
   Reference the request and response objects used by ad endpoints.
 
 

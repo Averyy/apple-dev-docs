@@ -1,7 +1,8 @@
 # Transcript.Prompt
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A prompt from the user to the model.
 
@@ -26,44 +27,45 @@ Prompts typically contain content sourced directly from the user, though you may
 ## Topics
 
 ### Creating a prompt
-- [init(id: String, segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?)](transcript/prompt/init(id:segments:options:responseformat:).md)
+- [init(id: String, segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?)](./prompt/init%28id,segments,options,responseformat%29.md)
   Creates a prompt.
-- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](transcript/prompt/init(id:metadata:segments:options:responseformat:contextoptions:).md)
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](./prompt/init%28id,metadata,segments,options,responseformat,contextoptions%29.md)
   Creates a prompt.
 ### Inspecting a prompt
-- [var id: String](transcript/prompt/id.md)
+- [var id: String](./prompt/id.md)
   The identifier of the prompt.
-- [var responseFormat: Transcript.ResponseFormat?](transcript/prompt/responseformat.md)
+- [var responseFormat: Transcript.ResponseFormat?](./prompt/responseformat.md)
   An optional response format that describes the desired output structure.
-- [var segments: [Transcript.Segment]](transcript/prompt/segments.md)
+- [var segments: [Transcript.Segment]](./prompt/segments.md)
   Ordered prompt segments.
-- [var options: GenerationOptions](transcript/prompt/options.md)
+- [var options: GenerationOptions](./prompt/options.md)
   Generation options associated with the prompt.
-- [var contextOptions: ContextOptions](transcript/prompt/contextoptions.md)
+- [var contextOptions: ContextOptions](./prompt/contextoptions.md)
   Configuration of the prompt.
-- [var metadata: [String : GeneratedContent]](transcript/prompt/metadata.md)
+- [var metadata: [String : GeneratedContent]](./prompt/metadata.md)
   Metadata provided as part of this prompt.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.Entry](transcript/entry.md)
+### Transcript entries
+- [Transcript.Entry](./entry.md)
   An entry in a transcript.
-- [Transcript.Instructions](transcript/instructions.md)
+- [Transcript.Instructions](./instructions.md)
   Instructions you provide to the model that define its behavior.
-- [Transcript.Response](transcript/response.md)
+- [Transcript.Response](./response.md)
   A response from the model.
-- [Transcript.Reasoning](transcript/reasoning.md)
+- [Transcript.Reasoning](./reasoning.md)
   A reasoning entry from the model.
 
 

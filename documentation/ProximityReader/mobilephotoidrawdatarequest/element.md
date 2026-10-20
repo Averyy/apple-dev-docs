@@ -1,7 +1,8 @@
 # MobilePhotoIDRawDataRequest.Element
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing an element that you can request from a photo ID.
 
@@ -19,49 +20,50 @@ struct Element
 ## Topics
 
 ### Type Properties
-- [static let address: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/address.md)
+- [static let address: MobilePhotoIDRawDataRequest.Element](./element/address.md)
   The photo ID holder’s address on record with the issuer.
-- [static let age: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/age.md)
+- [static let age: MobilePhotoIDRawDataRequest.Element](./element/age.md)
   The photo ID holder’s age in years.
-- [static let dateOfBirth: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/dateofbirth.md)
+- [static let dateOfBirth: MobilePhotoIDRawDataRequest.Element](./element/dateofbirth.md)
   The date of birth of the photo ID holder.
-- [static let documentExpirationDate: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/documentexpirationdate.md)
+- [static let documentExpirationDate: MobilePhotoIDRawDataRequest.Element](./element/documentexpirationdate.md)
   The document’s expiration date.
-- [static let documentIssueDate: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/documentissuedate.md)
+- [static let documentIssueDate: MobilePhotoIDRawDataRequest.Element](./element/documentissuedate.md)
   The document’s issue date.
-- [static let documentNumber: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/documentnumber.md)
+- [static let documentNumber: MobilePhotoIDRawDataRequest.Element](./element/documentnumber.md)
   The document’s number, as defined by the document’s issuing authority.
-- [static let familyName: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/familyname.md)
+- [static let familyName: MobilePhotoIDRawDataRequest.Element](./element/familyname.md)
   The photo ID holder’s family name or last name.
-- [static let givenName: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/givenname.md)
+- [static let givenName: MobilePhotoIDRawDataRequest.Element](./element/givenname.md)
   The photo ID holder’s given name or first name.
-- [static let issuingAuthority: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/issuingauthority.md)
+- [static let issuingAuthority: MobilePhotoIDRawDataRequest.Element](./element/issuingauthority.md)
   The state or government that issued the identity document.
-- [static let name: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/name.md)
+- [static let name: MobilePhotoIDRawDataRequest.Element](./element/name.md)
   The photo ID holder’s name.
-- [static let portrait: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/portrait.md)
+- [static let portrait: MobilePhotoIDRawDataRequest.Element](./element/portrait.md)
   The portrait of the photo ID holder on record with the issuer.
-- [static let sex: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/sex.md)
+- [static let sex: MobilePhotoIDRawDataRequest.Element](./element/sex.md)
   The photo ID holder’s sex.
 ### Type Methods
-- [static func ageAtLeast(Int) -> MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/ageatleast(_:).md)
+- [static func ageAtLeast(Int) -> MobilePhotoIDRawDataRequest.Element](./element/ageatleast%28_%29.md)
   A Boolean value that indicates whether the photo ID holder’s age is at least the given age.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(retainedElements: [MobilePhotoIDRawDataRequest.Element], nonRetainedElements: [MobilePhotoIDRawDataRequest.Element])](mobilephotoidrawdatarequest/init(retainedelements:nonretainedelements:).md)
+### Creating a raw data request
+- [init(retainedElements: [MobilePhotoIDRawDataRequest.Element], nonRetainedElements: [MobilePhotoIDRawDataRequest.Element])](./init%28retainedelements,nonretainedelements%29.md)
   Returns a photo ID raw data request.
-- [var nonRetainedElements: [MobilePhotoIDRawDataRequest.Element]](mobilephotoidrawdatarequest/nonretainedelements.md)
+- [var nonRetainedElements: [MobilePhotoIDRawDataRequest.Element]](./nonretainedelements.md)
   The document elements you’re requesting and intend to retain no longer than is necessary to process the result in realtime.
-- [var retainedElements: [MobilePhotoIDRawDataRequest.Element]](mobilephotoidrawdatarequest/retainedelements.md)
+- [var retainedElements: [MobilePhotoIDRawDataRequest.Element]](./retainedelements.md)
   The document elements you’re requesting and intend to retain for an indefinite period of time.
 
 

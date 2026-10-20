@@ -1,23 +1,30 @@
 # stringValue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the metadata item as a string.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 4.0+ - Deprecated in 16.0
+- iPadOS 4.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.7+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 9.0
+
+> **Deprecated**: Load the value of [`stringValue`](../avpartialasyncproperty/stringvalue.md) asynchronously instead.
 
 ## Declaration
 
 ```swift
 var stringValue: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * stringValue;
 ```
 
 #### Discussion
@@ -26,15 +33,16 @@ This value is `nil` if the system can’t represent the value as a string.
 
 ## See Also
 
-- [var value: (any NSCopying & NSObjectProtocol)?](avmetadataitem/value.md)
+### Accessing values
+- [var value: (any NSCopying & NSObjectProtocol)?](./value.md)
   The value of the metadata item.
-- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](avmetadataitem/extraattributes.md)
+- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](./extraattributes.md)
   A dictionary of additional attributes for a metadata item.
-- [var numberValue: NSNumber?](avmetadataitem/numbervalue.md)
+- [var numberValue: NSNumber?](./numbervalue.md)
   The value of the metadata item as a number.
-- [var dateValue: Date?](avmetadataitem/datevalue.md)
+- [var dateValue: Date?](./datevalue.md)
   The value of the metadata item as a date.
-- [var dataValue: Data?](avmetadataitem/datavalue.md)
+- [var dataValue: Data?](./datavalue.md)
   The value of the metadata item as a data value.
 
 

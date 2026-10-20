@@ -1,7 +1,8 @@
 # listenerPosition
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The listener’s position in the 3D environment.
 
@@ -19,17 +20,22 @@ The listener’s position in the 3D environment.
 var listenerPosition: AVAudio3DPoint { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudio3DPoint listenerPosition;
+```
+
 #### Discussion
 
 The system specifies the coordinates in meters.
 
 ## See Also
 
-- [var listenerAngularOrientation: AVAudio3DAngularOrientation](avaudioenvironmentnode/listenerangularorientation.md)
+### Positioning the listener
+- [var listenerAngularOrientation: AVAudio3DAngularOrientation](./listenerangularorientation.md)
   The listener’s angular orientation in the environment.
-- [var listenerVectorOrientation: AVAudio3DVectorOrientation](avaudioenvironmentnode/listenervectororientation.md)
+- [var listenerVectorOrientation: AVAudio3DVectorOrientation](./listenervectororientation.md)
   The listener’s vector orientation in the environment.
-- [var isListenerHeadTrackingEnabled: Bool](avaudioenvironmentnode/islistenerheadtrackingenabled.md)
+- [var isListenerHeadTrackingEnabled: Bool](./islistenerheadtrackingenabled.md)
   A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
 
 

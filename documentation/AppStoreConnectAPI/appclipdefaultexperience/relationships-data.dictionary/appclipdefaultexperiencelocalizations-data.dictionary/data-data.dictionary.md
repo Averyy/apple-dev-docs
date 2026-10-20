@@ -1,7 +1,8 @@
 # AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Default App Clip Experience Localizations resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Default App Clip Experience Localizations resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizati
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Default App Clip Experience Localizations resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipDefaultExperienceLocalizations`
 
 
 ---

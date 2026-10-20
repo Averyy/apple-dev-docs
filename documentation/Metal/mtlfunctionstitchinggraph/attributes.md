@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of attributes to configure how the Metal device object generates the new stitched function.
 
@@ -19,13 +20,18 @@ A list of attributes to configure how the Metal device object generates the new 
 var attributes: [any MTLFunctionStitchingAttribute] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLFunctionStitchingAttribute>> * attributes;
+```
+
 ## See Also
 
-- [var functionName: String](mtlfunctionstitchinggraph/functionname.md)
+### Configuring a function graph
+- [var functionName: String](./functionname.md)
   The name of the new stitched function.
-- [var nodes: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchinggraph/nodes.md)
+- [var nodes: [MTLFunctionStitchingFunctionNode]](./nodes.md)
   The nodes in the function’s call graph.
-- [var outputNode: MTLFunctionStitchingFunctionNode?](mtlfunctionstitchinggraph/outputnode.md)
+- [var outputNode: MTLFunctionStitchingFunctionNode?](./outputnode.md)
   The node with the output that’s the output of the new stitched function.
 
 

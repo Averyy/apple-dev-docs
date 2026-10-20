@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that indicates the reason for the error.
 
@@ -10,7 +11,7 @@ A string that indicates the reason for the error.
 
 ## Declaration
 
-```swift
+```
 attribute string reason;
 ```
 

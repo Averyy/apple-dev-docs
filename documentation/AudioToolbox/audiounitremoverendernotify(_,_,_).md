@@ -1,7 +1,8 @@
 # AudioUnitRemoveRenderNotify(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregisters a previously-registered render listener callback function.
 
@@ -19,6 +20,10 @@ Unregisters a previously-registered render listener callback function.
 func AudioUnitRemoveRenderNotify(_ inUnit: AudioUnit, _ inProc: AURenderCallback, _ inProcUserData: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioUnitRemoveRenderNotify(AudioUnit inUnit, AURenderCallback inProc, void *inProcUserData);
+```
+
 #### Return Value
 
 A result code.
@@ -31,13 +36,14 @@ A result code.
 
 ## See Also
 
-- [func AudioUnitRender(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](audiounitrender(_:_:_:_:_:_:).md)
+### Rendering the Audio
+- [func AudioUnitRender(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](./audiounitrender%28_,_,_,_,_,_%29.md)
   Initiates a rendering cycle for an audio unit.
-- [func AudioUnitAddRenderNotify(AudioUnit, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](audiounitaddrendernotify(_:_:_:).md)
+- [func AudioUnitAddRenderNotify(AudioUnit, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](./audiounitaddrendernotify%28_,_,_%29.md)
   Registers a callback to receive audio unit render notifications.
-- [typealias AURenderCallback](aurendercallback.md)
+- [typealias AURenderCallback](./aurendercallback.md)
   Called by the system when an audio unit requires input samples, or before and after a render operation.
-- [struct AudioUnitRenderActionFlags](audiounitrenderactionflags.md)
+- [struct AudioUnitRenderActionFlags](./audiounitrenderactionflags.md)
   Flags for configuring audio unit rendering.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets a delegate that can handle request failures for the Call Directory extension context object.
 
@@ -15,6 +16,10 @@ Sets a delegate that can handle request failures for the Call Directory extensio
 
 ```swift
 weak var delegate: (any CXCallDirectoryExtensionContextDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<CXCallDirectoryExtensionContextDelegate> delegate;
 ```
 
 

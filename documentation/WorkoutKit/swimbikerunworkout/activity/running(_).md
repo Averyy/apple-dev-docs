@@ -1,7 +1,8 @@
 # SwimBikeRunWorkout.Activity.running(_:)
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A running workout activity, with the specified location type.
 
@@ -24,9 +25,10 @@ case running(HKWorkoutSessionLocationType)
 
 ## See Also
 
-- [case cycling(HKWorkoutSessionLocationType)](swimbikerunworkout/activity/cycling(_:).md)
+### Setting valid activities
+- [case cycling(HKWorkoutSessionLocationType)](./cycling%28_%29.md)
   A cycling workout activity, with the specified location type.
-- [case swimming(HKWorkoutSwimmingLocationType)](swimbikerunworkout/activity/swimming(_:).md)
+- [case swimming(HKWorkoutSwimmingLocationType)](./swimming%28_%29.md)
   A swimming workout activity, with the specified location type.
 
 

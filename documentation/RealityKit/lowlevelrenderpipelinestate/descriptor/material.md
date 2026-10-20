@@ -1,7 +1,8 @@
 # material
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compiled material for this pipeline state.
 

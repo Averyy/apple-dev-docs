@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that represents the absence of any problems.
 
@@ -21,15 +22,16 @@ static var none: MTLBinaryArchiveError.Code { get }
 
 ## See Also
 
-- [static var invalidFile: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/invalidfile.md)
+### Error codes
+- [static var invalidFile: MTLBinaryArchiveError.Code](./invalidfile.md)
   An error code that indicates an app is using an invalid reference to an archive file, typically related to a URL.
-- [static var compilationFailure: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/compilationfailure.md)
+- [static var compilationFailure: MTLBinaryArchiveError.Code](./compilationfailure.md)
   An error code that indicates the archive’s inability to compile its contents, typically when serializing it to a URL.
-- [static var unexpectedElement: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/unexpectedelement.md)
+- [static var unexpectedElement: MTLBinaryArchiveError.Code](./unexpectedelement.md)
   An error code that indicates a problem with a configuration, typically in a descriptor or an archive’s inability to add linked functions.
-- [static var internalError: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/internalerror.md)
+- [static var internalError: MTLBinaryArchiveError.Code](./internalerror.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/code.md)
+- [MTLBinaryArchiveError.Code](./code.md)
   Error codes when creating binary archives of compiled shader code.
 
 

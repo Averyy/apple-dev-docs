@@ -1,7 +1,8 @@
 # uniformMatrix4x3fv
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void uniformMatrix4x3fv(
     WebGLUniformLocation? location, 
     GLboolean transpose, 

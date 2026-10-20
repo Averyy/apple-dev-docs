@@ -1,7 +1,8 @@
 # ImageRotator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image rotating transformer.
 
@@ -21,54 +22,55 @@ struct ImageRotator
 
 ## Mentions
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+- [Augmenting images to expand your training data](./augmenting-images-to-expand-your-training-data.md)
 
 ## Topics
 
 ### Creating the transformer
-- [init(angle: Double)](imagerotator/init(angle:).md)
+- [init(angle: Double)](./imagerotator/init%28angle%29.md)
   Creates a transformer that rotates an image by a specified angle.
 ### Getting the angle
-- [var angle: Double](imagerotator/angle.md)
+- [var angle: Double](./imagerotator/angle.md)
   The angle, in radians, by which to rotate the coordinate space of the specified context. Positive values rotate counterclockwise and negative values rotate clockwise.
 ### Performing the transformation
-- [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imagerotator/applied(to:eventhandler:).md)
+- [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](./imagerotator/applied%28to,eventhandler%29.md)
   Rotates the image and then scales and crops the rotated image to fit the extent of the input image.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+### Image components
+- [Augmenting images to expand your training data](./augmenting-images-to-expand-your-training-data.md)
   Improve your model by using transformed versions of your training images.
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+- [Creating a multi-label image classifier](./creating-a-multi-label-image-classifier.md)
   Train a machine learning model to assign multiple labels to an image.
-- [struct ImageReader](imagereader.md)
+- [struct ImageReader](./imagereader.md)
   An image file reader.
-- [protocol ImageFeatureExtractor](imagefeatureextractor.md)
+- [protocol ImageFeatureExtractor](./imagefeatureextractor.md)
   A transformer that takes an image and outputs image features.
-- [struct ImageCropper](imagecropper.md)
+- [struct ImageCropper](./imagecropper.md)
   An image crop transformer.
-- [struct ImageScaler](imagescaler.md)
+- [struct ImageScaler](./imagescaler.md)
   An image scaling transformer.
-- [struct ImageFeaturePrint](imagefeatureprint.md)
+- [struct ImageFeaturePrint](./imagefeatureprint.md)
   ImageFeaturePrint image feature extractor.
-- [struct ImageBlur](imageblur.md)
+- [struct ImageBlur](./imageblur.md)
   An image blurring transformer.
-- [struct ImageColorTransformer](imagecolortransformer.md)
+- [struct ImageColorTransformer](./imagecolortransformer.md)
   An image color transformer.
-- [struct ImageExposureAdjuster](imageexposureadjuster.md)
+- [struct ImageExposureAdjuster](./imageexposureadjuster.md)
   An image exposure adjusting transformer.
-- [struct ImageFlipper](imageflipper.md)
+- [struct ImageFlipper](./imageflipper.md)
   An image flipper transformer.
-- [struct RandomImageNoiseGenerator](randomimagenoisegenerator.md)
+- [struct RandomImageNoiseGenerator](./randomimagenoisegenerator.md)
   A transformer that adds random noise to an image.
-- [struct MLModelImageFeatureExtractor](mlmodelimagefeatureextractor.md)
+- [struct MLModelImageFeatureExtractor](./mlmodelimagefeatureextractor.md)
   An image feature extractor provided by an MLModel.
 
 

@@ -1,7 +1,8 @@
 # oidAnsip521r1
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let oidAnsip521r1: DERItem
+```
+
+```c
+extern const DERItem oidAnsip521r1;
 ```
 
 

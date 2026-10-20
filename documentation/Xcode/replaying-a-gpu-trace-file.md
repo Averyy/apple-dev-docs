@@ -1,18 +1,19 @@
 # Replaying a GPU trace file
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Debug and profile your app’s performance using a GPU trace file in the Metal debugger.
 
 #### Overview
 
-Replaying a GPU trace file allows you to debug and profile previously captured GPU commands using the Metal debugger. For more information, see [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md) or [`Capturing a Metal workload programmatically`](capturing-a-metal-workload-programmatically.md).
+Replaying a GPU trace file allows you to debug and profile previously captured GPU commands using the Metal debugger. For more information, see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md) or [Capturing a Metal workload programmatically](./capturing-a-metal-workload-programmatically.md).
 
 To replay a GPU trace file, open it in Xcode. Before clicking Replay, you can configure which device to use (if there’s more than one available), as well as configure whether to run with profiling.
 
-![An Xcode screenshot of the Replay GPU Trace dialog with options to begin replaying a GPU trace file.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-replay@2x.png)
+![An Xcode screenshot of the Replay GPU Trace dialog with options to begin replaying a GPU trace file.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-replay@2x.png)
 
-##### Configure Replay
+##### Configure replay
 
 If you have multiple devices, you need to select a device before you can replay the GPU trace file. Xcode automatically selects the most compatible device, but you can select a different device using the Device popover.
 
@@ -22,17 +23,18 @@ You can optionally enable the Profile GPU Trace option to have Xcode automatical
 
 ## See Also
 
-- [Capturing a Metal workload in Xcode](capturing-a-metal-workload-in-xcode.md)
+### Essentials
+- [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)
   Analyze your app’s performance by configuring your project to use the Metal debugger.
-- [Capturing a Metal workload programmatically](capturing-a-metal-workload-programmatically.md)
+- [Capturing a Metal workload programmatically](./capturing-a-metal-workload-programmatically.md)
   Analyze your app’s performance by invoking Metal’s frame capture.
-- [Investigating visual artifacts](investigating-visual-artifacts.md)
+- [Investigating visual artifacts](./investigating-visual-artifacts.md)
   Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
-- [Optimizing GPU performance](optimizing-gpu-performance.md)
+- [Optimizing GPU performance](./optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
-- [Debugging with interactive command-line tools](debugging-with-interactive-command-line-tools.md)
+- [Debugging with interactive command-line tools](./debugging-with-interactive-command-line-tools.md)
   Investigate rendering issues in GPU traces without leaving the Terminal.
-- [Investigating GPU issues with AI agents](investigating-gpu-issues-with-ai-agents.md)
+- [Investigating GPU issues with AI agents](./investigating-gpu-issues-with-ai-agents.md)
   Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
 

@@ -1,6 +1,7 @@
 # Enabling Complications for Your watchOS App
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: Article
 
 Set up your watchOS app’s complications.
 
@@ -12,13 +13,13 @@ Before adding complications to the Apple Watch face, you must enable support for
 
 Check Include Complications to enable complications when creating a new watchOS app, as shown in the figure below.
 
-![The option sheet with the Include Complications option enabled.](/images/com.apple.clockkit/media-3570873@2x.png)
+![The option sheet with the Include Complications option enabled.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3570873@2x.png)
 
 When you include complications, Xcode creates and configures a complication data source for your app. The data source includes stubs for many of the methods required to configure your complications, populate your timeline, and provide placeholders. Xcode also creates a group in your extension’s assets catalog for static placeholder images.
 
 ##### Add Complications to an Existing App
 
-To add complications to an existing watchOS app, you need to create these items yourself. Start by creating a class that adopts the [`CLKComplicationDataSource`](clkcomplicationdatasource.md) protocol.
+To add complications to an existing watchOS app, you need to create these items yourself. Start by creating a class that adopts the [`CLKComplicationDataSource`](./clkcomplicationdatasource.md) protocol.
 
 ```swift
 import Foundation
@@ -34,23 +35,25 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
 Next, add a Complication group to your extension’s assets catalog (if one doesn’t already exist). Open the `Assets.xcassets` file and select Editor > Add Assets > watchOS > New Watch Complication Placeholder, as in the figure below.
 
-![A screenshot of the Complication group in the extension’s assets catalog.](/images/com.apple.clockkit/media-3570878@2x.png)
+![A screenshot of the Complication group in the extension’s assets catalog.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3570878@2x.png)
 
 Finally, select your app in the Project navigator, and open the extension’s General tab. In the Complication Configuration set the Data Source Class and Complication Group to the class and asset catalog group you just created.
 
-![A screenshot that shows the complication configuration settings, with the data source and asset group specified.](/images/com.apple.clockkit/media-3570877@2x.png)
+![A screenshot that shows the complication configuration settings, with the data source and asset group specified.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3570877@2x.png)
 
 ## See Also
 
-- [Declaring complications for your app](declaring-complications-for-your-app.md)
+### Related Documentation
+- [Declaring complications for your app](./declaring-complications-for-your-app.md)
   Define the complications that your app supports.
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
   Package your app-specific data into a template and create a timeline entry for that template.
-- [Loading future timeline events](loading-future-timeline-events.md)
+- [Loading future timeline events](./loading-future-timeline-events.md)
   Preserve battery life and improve performance on the watch by providing a timeline with expected data and updates.
-- [Keeping your complications up to date](keeping-your-complications-up-to-date.md)
+- [Keeping your complications up to date](./keeping-your-complications-up-to-date.md)
   Replace or extend the data in your complication’s timeline.
-- [Adding Placeholders for Your Complication](adding-placeholders-for-your-complication.md)
+### Configure Complications
+- [Adding Placeholders for Your Complication](./adding-placeholders-for-your-complication.md)
   Provide the placeholders that users see when adding your complication to a watch face.
 
 

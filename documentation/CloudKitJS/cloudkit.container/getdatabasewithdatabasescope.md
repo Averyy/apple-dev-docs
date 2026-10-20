@@ -1,7 +1,8 @@
 # getDatabaseWithDatabaseScope
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the specified (public, private, or shared) database.
 
@@ -10,7 +11,7 @@ Returns the specified (public, private, or shared) database.
 
 ## Declaration
 
-```swift
+```
 CloudKit.Database getDatabaseWithDatabaseScope(
 	CloudKit.DatabaseScope databaseScope
 );
@@ -30,11 +31,12 @@ This is a convenience method that you can use instead of the specific properties
 
 ## See Also
 
-- [publicCloudDatabase](cloudkit.container/publicclouddatabase.md)
+### Getting the Public and Private Databases
+- [publicCloudDatabase](./publicclouddatabase.md)
   The database containing the data shared by all users.
-- [privateCloudDatabase](cloudkit.container/privateclouddatabase.md)
+- [privateCloudDatabase](./privateclouddatabase.md)
   The database containing the user’s private data.
-- [sharedCloudDatabase](cloudkit.container/sharedclouddatabase.md)
+- [sharedCloudDatabase](./sharedclouddatabase.md)
   The database containing shared records accepted by the current user.
 
 

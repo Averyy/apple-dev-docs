@@ -1,15 +1,16 @@
 # MPSQuadrilateralAccelerationStructure
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 17.0
+- iPadOS 13.0+ - Deprecated in 17.0
+- Mac Catalyst 13.0+ - Deprecated in 17.0
+- macOS 10.15+ - Deprecated in 14.0
+- tvOS 13.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,25 +18,29 @@
 class MPSQuadrilateralAccelerationStructure
 ```
 
+```objc
+@interface MPSQuadrilateralAccelerationStructure : MPSPolygonAccelerationStructure
+```
+
 ## Topics
 
 ### Instance Properties
-- [var quadrilateralCount: Int](mpsquadrilateralaccelerationstructure/quadrilateralcount.md)
+- [var quadrilateralCount: Int](./mpsquadrilateralaccelerationstructure/quadrilateralcount.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSPolygonAccelerationStructure](mpspolygonaccelerationstructure.md)
+- [MPSPolygonAccelerationStructure](./mpspolygonaccelerationstructure.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

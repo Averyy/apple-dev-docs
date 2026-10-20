@@ -1,7 +1,8 @@
 # WKWebExtension.MatchPattern.Error.Code.invalidScheme
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the scheme component was invalid.
 
@@ -16,6 +17,10 @@ Indicates that the scheme component was invalid.
 
 ```swift
 case invalidScheme
+```
+
+```c
+WKWebExtensionMatchPatternErrorInvalidScheme
 ```
 
 

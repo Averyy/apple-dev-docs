@@ -1,7 +1,8 @@
 # order
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant that specify the Euler angle order.
 
@@ -18,6 +19,10 @@ A constant that specify the Euler angle order.
 
 ```swift
 var order: __SPEulerAngleOrder
+```
+
+```c
+SPEulerAngleOrder order;
 ```
 
 

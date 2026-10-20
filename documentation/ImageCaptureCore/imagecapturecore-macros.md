@@ -1,12 +1,14 @@
 # ImageCaptureCore Macros
 
-**Framework**: ImageCaptureCore
+**Framework**: ImageCaptureCore  
+**Role**: API Collection
 
 ## See Also
 
-- [ImageCaptureCore Constants](imagecapturecore-constants.md)
-- [ImageCaptureCore Data Types](imagecapturecore-data-types.md)
-- [ImageCaptureCore Enumerations](imagecapturecore-enumerations.md)
+### Articles
+- [ImageCaptureCore Constants](./imagecapturecore-constants.md)
+- [ImageCaptureCore Data Types](./imagecapturecore-data-types.md)
+- [ImageCaptureCore Enumerations](./imagecapturecore-enumerations.md)
 
 
 ---

@@ -1,16 +1,17 @@
 # start
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var start: AVMusicTimeStamp
 
 ## See Also
 
-- [var length: AVMusicTimeStamp](avbeatrange-swift.typealias/length.md)
+### Range bounds
+- [var length: AVMusicTimeStamp](./length.md)
 
 
 ---

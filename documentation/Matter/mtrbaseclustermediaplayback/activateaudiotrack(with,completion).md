@@ -1,7 +1,8 @@
 # activateAudioTrack(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ActivateAudioTrack
 
@@ -17,7 +18,15 @@ Command ActivateAudioTrack
 ## Declaration
 
 ```swift
+func activateAudioTrack(with params: MTRMediaPlaybackClusterActivateAudioTrackParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func activateAudioTrack(with params: MTRMediaPlaybackClusterActivateAudioTrackParams) async throws
+```
+
+```objc
+- (void) activateAudioTrackWithParams:(MTRMediaPlaybackClusterActivateAudioTrackParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

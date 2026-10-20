@@ -1,7 +1,8 @@
 # parameterOutOfRange
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 You passed a parameter to a function that’s outside the range of allowed values.
 
@@ -22,11 +23,12 @@ static let parameterOutOfRange: NSError
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmsimplequeue/error/allocationfailed.md)
+### Errors
+- [static let allocationFailed: NSError](./allocationfailed.md)
   The system failed to allocate memory.
-- [static let queueIsFull: NSError](cmsimplequeue/error/queueisfull.md)
+- [static let queueIsFull: NSError](./queueisfull.md)
   An operation failed because the queue is full.
-- [static let requiredParameterMissing: NSError](cmsimplequeue/error/requiredparametermissing.md)
+- [static let requiredParameterMissing: NSError](./requiredparametermissing.md)
   You failed to pass a required parameter to a function.
 
 

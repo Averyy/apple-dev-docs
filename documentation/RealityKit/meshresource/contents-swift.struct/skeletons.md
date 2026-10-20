@@ -1,7 +1,8 @@
 # skeletons
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Table of skeletons.
 

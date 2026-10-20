@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData.BlendShapeData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Blend shape targets and weights for morph-target deformation.
 
@@ -22,19 +23,19 @@ struct BlendShapeData
 ## Topics
 
 ### Structures
-- [USDPlayer.DeformationData.BlendShapeData.Update](usdplayer/deformationdata/blendshapedata/update.md)
+- [USDPlayer.DeformationData.BlendShapeData.Update](./blendshapedata/update.md)
   Delta update carrying only the blend shape fields that changed since the last frame.
 ### Instance Properties
-- [let positionOffsets: [[SIMD3<Float>]]](usdplayer/deformationdata/blendshapedata/positionoffsets.md)
+- [let positionOffsets: [[SIMD3<Float>]]](./blendshapedata/positionoffsets.md)
   Per-vertex position delta vectors for each blend shape target.
-- [let weights: [Float]](usdplayer/deformationdata/blendshapedata/weights.md)
+- [let weights: [Float]](./blendshapedata/weights.md)
   Weight values controlling each blend shape target’s influence.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

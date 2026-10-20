@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIODMAMapOptionBypassed](1645905-anonymous/kiodmamapoptionbypassed.md)
-- [kIODMAMapOptionIterateOnly](1645905-anonymous/kiodmamapoptioniterateonly.md)
-- [kIODMAMapOptionMapped](1645905-anonymous/kiodmamapoptionmapped.md)
-- [kIODMAMapOptionNoCacheStore](1645905-anonymous/kiodmamapoptionnocachestore.md)
-- [kIODMAMapOptionNonCoherent](1645905-anonymous/kiodmamapoptionnoncoherent.md)
-- [kIODMAMapOptionOnChip](1645905-anonymous/kiodmamapoptiononchip.md)
-- [kIODMAMapOptionTypeMask](1645905-anonymous/kiodmamapoptiontypemask.md)
-- [kIODMAMapOptionUnmapped](1645905-anonymous/kiodmamapoptionunmapped.md)
-- [kIODMAMapOptionDextOwner](1645905-anonymous/kiodmamapoptiondextowner.md)
+- [kIODMAMapOptionBypassed](./api-1645905-anonymous/kiodmamapoptionbypassed.md)
+- [kIODMAMapOptionIterateOnly](./api-1645905-anonymous/kiodmamapoptioniterateonly.md)
+- [kIODMAMapOptionMapped](./api-1645905-anonymous/kiodmamapoptionmapped.md)
+- [kIODMAMapOptionNoCacheStore](./api-1645905-anonymous/kiodmamapoptionnocachestore.md)
+- [kIODMAMapOptionNonCoherent](./api-1645905-anonymous/kiodmamapoptionnoncoherent.md)
+- [kIODMAMapOptionOnChip](./api-1645905-anonymous/kiodmamapoptiononchip.md)
+- [kIODMAMapOptionTypeMask](./api-1645905-anonymous/kiodmamapoptiontypemask.md)
+- [kIODMAMapOptionUnmapped](./api-1645905-anonymous/kiodmamapoptionunmapped.md)
+- [kIODMAMapOptionDextOwner](./api-1645905-anonymous/kiodmamapoptiondextowner.md)
 
 
 ---

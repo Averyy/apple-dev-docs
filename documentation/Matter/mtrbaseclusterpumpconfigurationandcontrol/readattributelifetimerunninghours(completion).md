@@ -1,7 +1,8 @@
 # readAttributeLifetimeRunningHours(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLifetimeRunningHours(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLifetimeRunningHours() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeLifetimeRunningHoursWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

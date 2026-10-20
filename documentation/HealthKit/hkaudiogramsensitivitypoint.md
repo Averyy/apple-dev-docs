@@ -1,7 +1,8 @@
 # HKAudiogramSensitivityPoint
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A hearing sensitivity reading associated with a hearing test.
 
@@ -19,43 +20,48 @@ A hearing sensitivity reading associated with a hearing test.
 class HKAudiogramSensitivityPoint
 ```
 
+```objc
+@interface HKAudiogramSensitivityPoint : NSObject
+```
+
 ## Topics
 
 ### Creating Sensitivity Points
-- [convenience init(frequency: HKQuantity, leftEarSensitivity: HKQuantity?, rightEarSensitivity: HKQuantity?) throws](hkaudiogramsensitivitypoint/init(frequency:leftearsensitivity:rightearsensitivity:).md)
+- [convenience init(frequency: HKQuantity, leftEarSensitivity: HKQuantity?, rightEarSensitivity: HKQuantity?) throws](./hkaudiogramsensitivitypoint/init%28frequency,leftearsensitivity,rightearsensitivity%29.md)
   Creates a new sensitivity point.
 ### Accessing Data
-- [var frequency: HKQuantity](hkaudiogramsensitivitypoint/frequency.md)
+- [var frequency: HKQuantity](./hkaudiogramsensitivitypoint/frequency.md)
   The frequency tested in the hearing test.
-- [var leftEarSensitivity: HKQuantity?](hkaudiogramsensitivitypoint/leftearsensitivity.md)
+- [var leftEarSensitivity: HKQuantity?](./hkaudiogramsensitivitypoint/leftearsensitivity.md)
   The sensitivity of the left ear.
-- [var rightEarSensitivity: HKQuantity?](hkaudiogramsensitivitypoint/rightearsensitivity.md)
+- [var rightEarSensitivity: HKQuantity?](./hkaudiogramsensitivitypoint/rightearsensitivity.md)
   The sensitivity of the right ear.
 ### Initializers
-- [init?(coder: NSCoder)](hkaudiogramsensitivitypoint/init(coder:).md)
-- [convenience init(frequency: HKQuantity, tests: [HKAudiogramSensitivityTest]) throws](hkaudiogramsensitivitypoint/init(frequency:tests:).md)
+- [init?(coder: NSCoder)](./hkaudiogramsensitivitypoint/init%28coder%29.md)
+- [convenience init(frequency: HKQuantity, tests: [HKAudiogramSensitivityTest]) throws](./hkaudiogramsensitivitypoint/init%28frequency,tests%29.md)
 ### Instance Properties
-- [var tests: [HKAudiogramSensitivityTest]](hkaudiogramsensitivitypoint/tests.md)
+- [var tests: [HKAudiogramSensitivityTest]](./hkaudiogramsensitivitypoint/tests.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKAudiogramSample](hkaudiogramsample.md)
+### Audiograms
+- [class HKAudiogramSample](./hkaudiogramsample.md)
   A sample that stores an audiogram.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueJammedStatus.none
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory isn’t jammed.
 
@@ -19,9 +20,14 @@ The accessory isn’t jammed.
 case none
 ```
 
+```c
+HMCharacteristicValueJammedStatusNone
+```
+
 ## See Also
 
-- [HMCharacteristicValueJammedStatus.jammed](hmcharacteristicvaluejammedstatus/jammed.md)
+### Jammed Status
+- [HMCharacteristicValueJammedStatus.jammed](./jammed.md)
   The accessory is jammed and can’t move.
 
 

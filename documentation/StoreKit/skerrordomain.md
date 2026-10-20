@@ -1,7 +1,8 @@
 # SKErrorDomain
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain name for StoreKit errors.
 
@@ -20,18 +21,23 @@ The error domain name for StoreKit errors.
 let SKErrorDomain: String
 ```
 
+```c
+extern NSString * const SKErrorDomain;
+```
+
 ## Mentions
 
-- [Handling errors](handling-errors.md)
-- [Processing a transaction](processing-a-transaction.md)
+- [Handling errors](./handling-errors.md)
+- [Processing a transaction](./processing-a-transaction.md)
 
 ## See Also
 
-- [Handling errors](handling-errors.md)
+### Errors
+- [Handling errors](./handling-errors.md)
   Determine the underlying cause of errors that result from StoreKit requests.
-- [SKError.Code](skerror/code.md)
+- [SKError.Code](./skerror/code.md)
   Error codes for StoreKit errors.
-- [struct SKError](skerror.md)
+- [struct SKError](./skerror.md)
   StoreKit error descriptions, codes, and domains.
 
 

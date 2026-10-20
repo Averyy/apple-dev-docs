@@ -1,16 +1,17 @@
 # MLCTensorOptimizerDeviceData
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of the device memory associated with a tensor that an optimizer uses.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,36 +19,41 @@ An encapsulation of the device memory associated with a tensor that an optimizer
 class MLCTensorOptimizerDeviceData
 ```
 
+```objc
+@interface MLCTensorOptimizerDeviceData : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var tensorID: Int](mlctensor/tensorid.md)
+### Inspecting Tensors
+- [var tensorID: Int](./mlctensor/tensorid.md)
   A number that uniquely identifies the tensor, which the framework assigns when it creates a tensor.
-- [var descriptor: MLCTensorDescriptor](mlctensor/descriptor.md)
+- [var descriptor: MLCTensorDescriptor](./mlctensor/descriptor.md)
   The configuration object you use to create a tensor.
-- [var data: Data?](mlctensor/data.md)
+- [var data: Data?](./mlctensor/data.md)
   The tensor data.
-- [var label: String](mlctensor/label.md)
+- [var label: String](./mlctensor/label.md)
   A string that identifes this tensor.
-- [var device: MLCDevice?](mlctensor/device.md)
+- [var device: MLCDevice?](./mlctensor/device.md)
   The device associated with this tensor.
-- [var optimizerData: [MLCTensorData]](mlctensor/optimizerdata.md)
+- [var optimizerData: [MLCTensorData]](./mlctensor/optimizerdata.md)
   An array that contains optimizer buffers you specify when you create a tensor parameter.
-- [var optimizerDeviceData: [MLCTensorOptimizerDeviceData]](mlctensor/optimizerdevicedata.md)
+- [var optimizerDeviceData: [MLCTensorOptimizerDeviceData]](./mlctensor/optimizerdevicedata.md)
   An array that contains the device optimizer buffers you specify.
-- [var hasValidNumerics: Bool](mlctensor/hasvalidnumerics.md)
+- [var hasValidNumerics: Bool](./mlctensor/hasvalidnumerics.md)
   A Boolean that indicates whether a tensor contains NaN or INF values.
 
 

@@ -1,7 +1,8 @@
 # UIDocumentBrowserViewControllerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol you implement to respond as the user interacts with the document browser.
 
@@ -17,46 +18,52 @@ The protocol you implement to respond as the user interacts with the document br
 protocol UIDocumentBrowserViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIDocumentBrowserViewControllerDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
-- [Adding custom actions and activities](adding-custom-actions-and-activities.md)
-- [Customizing the document browser](customizing-the-browser.md)
+- [Customizing a document-based app’s launch experience](./customizing-a-document-based-app-s-launch-experience.md)
+- [Adding custom actions and activities](./adding-custom-actions-and-activities.md)
+- [Customizing the document browser](./customizing-the-browser.md)
 
 ## Topics
 
 ### Creating new documents
-- [func documentBrowser(UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler: (URL?, UIDocumentBrowserViewController.ImportMode) -> Void)](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler: (URL?, UIDocumentBrowserViewController.ImportMode) -> Void)](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md)
   Asks the delegate to create a new document.
-- [UIDocumentBrowserViewController.ImportMode](uidocumentbrowserviewcontroller/importmode.md)
+- [UIDocumentBrowserViewController.ImportMode](./uidocumentbrowserviewcontroller/importmode.md)
   The document browser’s import modes.
-- [func documentBrowser(UIDocumentBrowserViewController, didImportDocumentAt: URL, toDestinationURL: URL)](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, didImportDocumentAt: URL, toDestinationURL: URL)](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didimportdocumentat,todestinationurl%29.md)
   Tells the delegate that a document has been successfully imported.
-- [func documentBrowser(UIDocumentBrowserViewController, failedToImportDocumentAt: URL, error: (any Error)?)](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, failedToImportDocumentAt: URL, error: (any Error)?)](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,failedtoimportdocumentat,error%29.md)
   Tells the delegate that the document browser failed to import the specified document.
 ### Selecting documents
-- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentsAt: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumentsat:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentsAt: [URL])](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didpickdocumentsat%29.md)
   Tells the delegate that the user has selected one or more documents.
-- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentURLs: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumenturls:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentURLs: [URL])](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didpickdocumenturls%29.md)
   Tells the delegate that the user has selected one or more documents.
 ### Working with the browser’s activity view
-- [func documentBrowser(UIDocumentBrowserViewController, willPresent: UIActivityViewController)](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:willpresent:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, willPresent: UIActivityViewController)](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,willpresent%29.md)
   Tells the delegate that the document browser will display an activity view.
-- [func documentBrowser(UIDocumentBrowserViewController, applicationActivitiesForDocumentURLs: [URL]) -> [UIActivity]](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:applicationactivitiesfordocumenturls:).md)
+- [func documentBrowser(UIDocumentBrowserViewController, applicationActivitiesForDocumentURLs: [URL]) -> [UIActivity]](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,applicationactivitiesfordocumenturls%29.md)
   Asks the delegate for additional activities when displaying an activity view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+### Related Documentation
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [var delegate: (any UIDocumentBrowserViewControllerDelegate)?](uidocumentbrowserviewcontroller/delegate.md)
+### Responding to browser events
+- [var delegate: (any UIDocumentBrowserViewControllerDelegate)?](./uidocumentbrowserviewcontroller/delegate.md)
   The document browser’s delegate.
-- [func importDocument(at: URL, nextToDocumentAt: URL, mode: UIDocumentBrowserViewController.ImportMode, completionHandler: (URL?, (any Error)?) -> Void)](uidocumentbrowserviewcontroller/importdocument(at:nexttodocumentat:mode:completionhandler:).md)
+- [func importDocument(at: URL, nextToDocumentAt: URL, mode: UIDocumentBrowserViewController.ImportMode, completionHandler: (URL?, (any Error)?) -> Void)](./uidocumentbrowserviewcontroller/importdocument%28at,nexttodocumentat,mode,completionhandler%29.md)
   Imports a document into the same location as an existing document.
 
 

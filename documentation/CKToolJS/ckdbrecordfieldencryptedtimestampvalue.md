@@ -1,7 +1,8 @@
 # CKDBRecordFieldEncryptedTimestampValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the encrypted field of type timestamp.
 
@@ -10,7 +11,7 @@ The value of the encrypted field of type timestamp.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldEncryptedTimestampValue {
 	string type;
 	date? value;
@@ -30,18 +31,19 @@ import type { CKDBRecordFieldEncryptedTimestampValue } from "@apple/cktool.datab
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldencryptedtimestampvalue/type.md)
+- [type](./ckdbrecordfieldencryptedtimestampvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldencryptedtimestampvalue/value.md)
+- [value](./ckdbrecordfieldencryptedtimestampvalue/value.md)
   A string in date-time format.
 
 ## See Also
 
-- [CKDBRecordFieldTimestampValue](ckdbrecordfieldtimestampvalue.md)
+### Timestamps
+- [CKDBRecordFieldTimestampValue](./ckdbrecordfieldtimestampvalue.md)
   The value of the field of type timestamp.
-- [CKDBRecordFieldTimestampListValue](ckdbrecordfieldtimestamplistvalue.md)
+- [CKDBRecordFieldTimestampListValue](./ckdbrecordfieldtimestamplistvalue.md)
   The value of the field of type timestamp list.
-- [CKDBRecordFieldEncryptedTimestampListValue](ckdbrecordfieldencryptedtimestamplistvalue.md)
+- [CKDBRecordFieldEncryptedTimestampListValue](./ckdbrecordfieldencryptedtimestamplistvalue.md)
   The value of the encrypted field of type timestamp.
 
 

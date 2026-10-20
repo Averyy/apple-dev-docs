@@ -1,7 +1,8 @@
 # RCSService.GroupChatParticipantsRemovedEvent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event triggered when participants are removed from a group.
 
@@ -17,35 +18,36 @@ struct GroupChatParticipantsRemovedEvent
 ## Topics
 
 ### Accessing event properties
-- [let cellularServiceID: CellularServiceID](rcsservice/groupchatparticipantsremovedevent/cellularserviceid.md)
+- [let cellularServiceID: CellularServiceID](./groupchatparticipantsremovedevent/cellularserviceid.md)
   Cellular service identifier associated with this event.
-- [let groupHandle: RCSHandle.Group](rcsservice/groupchatparticipantsremovedevent/grouphandle.md)
+- [let groupHandle: RCSHandle.Group](./groupchatparticipantsremovedevent/grouphandle.md)
   The group handle from which participants were removed.
-- [let removedParticipants: [RCSHandle.URI]](rcsservice/groupchatparticipantsremovedevent/removedparticipants.md)
+- [let removedParticipants: [RCSHandle.URI]](./groupchatparticipantsremovedevent/removedparticipants.md)
   Array of handles indicating the participants that were removed.
-- [let removedBy: RCSHandle.URI](rcsservice/groupchatparticipantsremovedevent/removedby.md)
+- [let removedBy: RCSHandle.URI](./groupchatparticipantsremovedevent/removedby.md)
   Handle of device that performed the operation.
-- [let removedCurrentUser: Bool](rcsservice/groupchatparticipantsremovedevent/removedcurrentuser.md)
+- [let removedCurrentUser: Bool](./groupchatparticipantsremovedevent/removedcurrentuser.md)
   Whether the current user was removed from the group.
 ### Supporting RCS encryption
-- [let isEndToEndEncrypted: Bool](rcsservice/groupchatparticipantsremovedevent/isendtoendencrypted.md)
+- [let isEndToEndEncrypted: Bool](./groupchatparticipantsremovedevent/isendtoendencrypted.md)
   A Boolean value that indicates whether the associated group is end-to-end encrypted.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RCSService.GroupChatEndedEvent](rcsservice/groupchatendedevent.md)
+### Supporting types
+- [RCSService.GroupChatEndedEvent](./groupchatendedevent.md)
   Event triggered when a group chat is ended.
-- [RCSService.GroupChatParticipantsAddedEvent](rcsservice/groupchatparticipantsaddedevent.md)
+- [RCSService.GroupChatParticipantsAddedEvent](./groupchatparticipantsaddedevent.md)
   Event triggered when participants are added to a group.
-- [RCSService.GroupChatStartedEvent](rcsservice/groupchatstartedevent.md)
+- [RCSService.GroupChatStartedEvent](./groupchatstartedevent.md)
   Event triggered when group chat is started.
-- [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
+- [RCSService.GroupChatSubjectUpdatedEvent](./groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
 
 

@@ -1,9 +1,10 @@
 # kSpeechErrorOldest
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The error code of the first error that occurred since the last call to the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) function with the `kSpeechErrorsProperty` property. 
+The error code of the first error that occurred since the last call to the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) function with the `kSpeechErrorsProperty` property. 
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ The error code of the first error that occurred since the last call to the [`Cop
 
 ```swift
 let kSpeechErrorOldest: CFString
+```
+
+```c
+const CFStringRef kSpeechErrorOldest;
 ```
 
 

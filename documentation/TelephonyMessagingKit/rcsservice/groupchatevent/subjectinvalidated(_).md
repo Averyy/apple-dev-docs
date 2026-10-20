@@ -1,7 +1,8 @@
 # RCSService.GroupChatEvent.subjectInvalidated(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.5+

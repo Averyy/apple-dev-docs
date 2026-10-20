@@ -1,7 +1,8 @@
 # RenderingExtensionFeature.coreML
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rendering extension feature that enables the CoreML framework.
 

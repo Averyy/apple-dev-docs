@@ -1,14 +1,15 @@
 # icmp6_ni_hdr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct icmp6_hdr icmp6_ni_hdr;
 ```
 

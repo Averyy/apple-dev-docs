@@ -1,7 +1,8 @@
 # vDSP.DFTTransformType
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Discrete Fourier transform types.
 
@@ -11,7 +12,7 @@ Discrete Fourier transform types.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,20 +24,21 @@ enum DFTTransformType
 ## Topics
 
 ### Enumeration Cases
-- [vDSP.DFTTransformType.complexComplex](vdsp/dfttransformtype/complexcomplex.md)
-- [vDSP.DFTTransformType.complexReal](vdsp/dfttransformtype/complexreal.md)
+- [vDSP.DFTTransformType.complexComplex](./dfttransformtype/complexcomplex.md)
+- [vDSP.DFTTransformType.complexReal](./dfttransformtype/complexreal.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [class DiscreteFourierTransform](vdsp/discretefouriertransform.md)
+### Objects that simplify discrete Fourier transforms
+- [class DiscreteFourierTransform](./discretefouriertransform.md)
   An object that provides forward and inverse discrete Fourier transforms on single- or double-precision collections of interleaved or split-complex data.
-- [class DFT](vdsp/dft.md)
+- [class DFT](./dft.md)
   A single- and double-precision discrete Fourier transform.
 
 

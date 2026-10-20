@@ -1,7 +1,8 @@
 # startAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func startAction(with params: MTRActionsClusterStartActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startAction(with params: MTRActionsClusterStartActionParams) async throws
+```
+
+```objc
+- (void) startActionWithParams:(MTRActionsClusterStartActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

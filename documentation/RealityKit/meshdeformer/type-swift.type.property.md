@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 Provide a unique identifier for type of deformer. There can only be one `deform` function associated with each type String. However, each `deform` can vary greatly based on run time options and input.
@@ -20,9 +21,16 @@ Provide a unique identifier for type of deformer. There can only be one `deform`
 static var type: String { get }
 ```
 
+## Default Implementations
+
+### MeshDeformer Implementations
+- [var type: String](./type-8vjw9.md)
+  default implementation provided, returns `Self.type`
+
 ## See Also
 
-- [var type: String](meshdeformer/type-nxsx.md)
+### Identifying the deformer
+- [var type: String](./type-nxsx.md)
   provide a unique identifier for type of deformer, default implementation provided
 
 

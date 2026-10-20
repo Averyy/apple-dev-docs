@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMaxSelfIDs](1642806-anonymous/kmaxselfids.md)
-- [kSelfIDPacketSize](1642806-anonymous/kselfidpacketsize.md)
+- [kMaxSelfIDs](./api-1642806-anonymous/kmaxselfids.md)
+- [kSelfIDPacketSize](./api-1642806-anonymous/kselfidpacketsize.md)
 
 
 ---

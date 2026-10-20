@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new button with the specified frame.
 
@@ -9,7 +10,7 @@ Creates a new button with the specified frame.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Creates a new button with the specified frame.
 init(frame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame;
+```
+
 ## Parameters
 
 - `frame`: The frame rectangle for the view, measured in points.
 
 ## See Also
 
-- [convenience init(frame: CGRect, primaryAction: UIAction?)](uibutton/init(frame:primaryaction:).md)
+### Creating buttons
+- [convenience init(frame: CGRect, primaryAction: UIAction?)](./init%28frame,primaryaction%29.md)
   Creates a new button with the specified frame, registers the primary action event, and sets the title and image to the action’s title and image.
-- [init?(coder: NSCoder)](uibutton/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new button with data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # AlternativeDistributionPackageVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage](alternativedistributionpackageversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary.md)
-- [object AlternativeDistributionPackageVersion.Relationships.Deltas](alternativedistributionpackageversion/relationships-data.dictionary/deltas-data.dictionary.md)
-- [object AlternativeDistributionPackageVersion.Relationships.Variants](alternativedistributionpackageversion/relationships-data.dictionary/variants-data.dictionary.md)
+- [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage](./relationships-data.dictionary/alternativedistributionpackage-data.dictionary.md)
+- [object AlternativeDistributionPackageVersion.Relationships.Deltas](./relationships-data.dictionary/deltas-data.dictionary.md)
+- [object AlternativeDistributionPackageVersion.Relationships.Variants](./relationships-data.dictionary/variants-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object AlternativeDistributionPackageVersion.Relationships
 
 ## See Also
 
-- [object AlternativeDistributionPackageVersion.Attributes](alternativedistributionpackageversion/attributes-data.dictionary.md)
+### Objects
+- [object AlternativeDistributionPackageVersion.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an alternative distribution package version resource.
 
 

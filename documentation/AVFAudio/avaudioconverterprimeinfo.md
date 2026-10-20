@@ -1,18 +1,19 @@
 # AVAudioConverterPrimeInfo
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Priming information for audio conversion.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,32 +21,37 @@ Priming information for audio conversion.
 struct AVAudioConverterPrimeInfo
 ```
 
+```c
+typedef struct AVAudioConverterPrimeInfo { ... } AVAudioConverterPrimeInfo;
+```
+
 ## Topics
 
 ### Creating priming information
-- [init()](avaudioconverterprimeinfo/init.md)
+- [init()](./avaudioconverterprimeinfo/init%28%29.md)
   Creates a priming information instance.
-- [init(leadingFrames: AVAudioFrameCount, trailingFrames: AVAudioFrameCount)](avaudioconverterprimeinfo/init(leadingframes:trailingframes:).md)
+- [init(leadingFrames: AVAudioFrameCount, trailingFrames: AVAudioFrameCount)](./avaudioconverterprimeinfo/init%28leadingframes,trailingframes%29.md)
   Creates a priming information instance with the specified leading and trailing frames.
 ### Getting frame properties
-- [var leadingFrames: AVAudioFrameCount](avaudioconverterprimeinfo/leadingframes.md)
+- [var leadingFrames: AVAudioFrameCount](./avaudioconverterprimeinfo/leadingframes.md)
   The number of leading (previous) input frames the converter requires to perform a high-quality conversion.
-- [var trailingFrames: AVAudioFrameCount](avaudioconverterprimeinfo/trailingframes.md)
+- [var trailingFrames: AVAudioFrameCount](./avaudioconverterprimeinfo/trailingframes.md)
   The number of trailing input frames, past the end input frame, the converter requires to perform a high-quality conversion.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var primeInfo: AVAudioConverterPrimeInfo](avaudioconverter/primeinfo.md)
+### Getting priming information
+- [var primeInfo: AVAudioConverterPrimeInfo](./avaudioconverter/primeinfo.md)
   The number of priming frames the converter uses.
-- [var primeMethod: AVAudioConverterPrimeMethod](avaudioconverter/primemethod.md)
+- [var primeMethod: AVAudioConverterPrimeMethod](./avaudioconverter/primemethod.md)
   The priming method the sample rate converter or decoder uses.
-- [enum AVAudioConverterPrimeMethod](avaudioconverterprimemethod.md)
+- [enum AVAudioConverterPrimeMethod](./avaudioconverterprimemethod.md)
   Options for the prime method property.
 
 

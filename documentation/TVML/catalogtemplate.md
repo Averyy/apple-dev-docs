@@ -8,7 +8,7 @@ Displays groups of items along one side of a page and images of a group’s cont
 
 Use the `catalogTemplate` element to display information about groups of like products; for example, a movie catalog that provides categories for dramas, comedies, and all movies. Each group of products is contained in its own section and displayed along the left side of the screen. Images depicting the products contained within a selected group are displayed in the related content area on the right side of the screen. The following figure shows the basic layout for a `catalogTemplate` page. The theme for the catalog template defaults to the system preference.
 
-![Layout diagram showing a banner area at the top, three section areas on the left side, and a related content area on the right.](/images/com.apple.TVML/catalogtemplate-1@2x.png)
+![Layout diagram showing a banner area at the top, three section areas on the left side, and a related content area on the right.](https://developer.apple.com/tutorials/images/com.apple.TVML/catalogtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -39,11 +39,11 @@ The following listing shows the main elements of the `catalogTemplate` element i
 
 ###### Element Descriptions
 
-- **[`banner`](banner.md)**: Information describing what the catalog contains, such as movies.
-- **[`header`](header.md)**: Information describing what one section of the page contains.
-- **[`list`](list.md)**: Element containing all content in the template page, except banner information.
-- **[`listItemLockup`](listitemlockup.md)**: Element containing all information that relates to one list item on the left side of the page, including the item title and label, as well as related content.
-- **[`section`](section.md)**: An area of the page containing related elements that are grouped together as one element for layout purposes.
+- **[banner](./banner.md)**: Information describing what the catalog contains, such as movies.
+- **[header](./header.md)**: Information describing what one section of the page contains.
+- **[list](./list.md)**: Element containing all content in the template page, except banner information.
+- **[listItemLockup](./listitemlockup.md)**: Element containing all information that relates to one list item on the left side of the page, including the item title and label, as well as related content.
+- **[section](./section.md)**: An area of the page containing related elements that are grouped together as one element for layout purposes.
 
 ##### Example
 
@@ -125,53 +125,54 @@ The following listing shows the TVML for a `catalogTemplate` example. The exampl
 
 The following figure shows the output for the above example:
 
-![Screenshot showing several movie posters on the right and a list of movie categories on the left.](/images/com.apple.TVML/catalogtemplate-2@2x.png)
+![Screenshot showing several movie posters on the right and a list of movie categories on the left.](https://developer.apple.com/tutorials/images/com.apple.TVML/catalogtemplate-2@2x.png)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [alertTemplate](alerttemplate.md)
+### Full-Page Templates
+- [alertTemplate](./alerttemplate.md)
   Displays important information to the user.
-- [compilationTemplate](compilationtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
   Displays information about a single media item and its components.
-- [descriptiveAlertTemplate](descriptivealerttemplate.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
   Displays large amounts of important information to the user.
-- [divTemplate](divtemplate.md)
+- [divTemplate](./divtemplate.md)
   Provides the ability to create pages that don’t conform to a layout defined by another template.
-- [formTemplate](formtemplate.md)
+- [formTemplate](./formtemplate.md)
   Provides the ability to gather information from the user.
-- [listTemplate](listtemplate.md)
+- [listTemplate](./listtemplate.md)
   Displays a list of items along one side of a page and the corresponding image on the other side.
-- [loadingTemplate](loadingtemplate.md)
+- [loadingTemplate](./loadingtemplate.md)
   Displays a spinner and description on the screen.
-- [mainTemplate](maintemplate.md)
+- [mainTemplate](./maintemplate.md)
   Displays user options for a media item.
-- [menuBarTemplate](menubartemplate.md)
+- [menuBarTemplate](./menubartemplate.md)
   Creates a page with items along the top and related information below.
-- [oneupTemplate](oneuptemplate.md)
+- [oneupTemplate](./oneuptemplate.md)
   Creates a page that allows users to navigate between full-screen images.
-- [paradeTemplate](paradetemplate.md)
+- [paradeTemplate](./paradetemplate.md)
   Displays a groups of items along one side of a page and scrolling images on the other side.
-- [productBundleTemplate](productbundletemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
   Displays information for a group of related media items.
-- [productTemplate](producttemplate.md)
+- [productTemplate](./producttemplate.md)
   Displays detailed information about a single product.
-- [ratingTemplate](ratingtemplate.md)
+- [ratingTemplate](./ratingtemplate.md)
   Displays a rating for an item.
-- [searchTemplate](searchtemplate.md)
+- [searchTemplate](./searchtemplate.md)
   Searches for a media item based on user input.
 
 

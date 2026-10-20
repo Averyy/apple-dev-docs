@@ -1,7 +1,8 @@
 # gridColumnAlignment(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides the default horizontal alignment of the grid column that the view appears in.
 
@@ -27,7 +28,7 @@ A view that uses the specified horizontal alignment, and that causes all cells i
 
 #### Discussion
 
-You set a default alignment for the cells in a grid in both vertical and horizontal dimensions when you create the grid with the [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](grid/init(alignment:horizontalspacing:verticalspacing:content:).md) initializer. However, you can use the `gridColumnAlignment(_:)` modifier to override the horizontal alignment of a column within the grid. The following example sets a grid’s alignment to [`leadingFirstTextBaseline`](alignment/leadingfirsttextbaseline.md), and then sets the first column to use [`trailing`](horizontalalignment/trailing.md) alignment:
+You set a default alignment for the cells in a grid in both vertical and horizontal dimensions when you create the grid with the [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](../grid/init%28alignment,horizontalspacing,verticalspacing,content%29.md) initializer. However, you can use the `gridColumnAlignment(_:)` modifier to override the horizontal alignment of a column within the grid. The following example sets a grid’s alignment to [`leadingFirstTextBaseline`](../alignment/leadingfirsttextbaseline.md), and then sets the first column to use [`trailing`](../horizontalalignment/trailing.md) alignment:
 
 ```swift
 Grid(alignment: .leadingFirstTextBaseline) {
@@ -53,27 +54,28 @@ Grid(alignment: .leadingFirstTextBaseline) {
 
 This creates the layout of a typical macOS configuration view, with the trailing edge of the first column flush with the leading edge of the second column:
 
-![A screenshot of a configuration view, arranged in a grid. The grid](/images/com.apple.SwiftUI/View-gridColumnAlignment-1-macOS@2x.png)
+![A screenshot of a configuration view, arranged in a grid. The grid](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-gridColumnAlignment-1-macOS@2x.png)
 
 Add the modifier to only one cell in a column. The grid automatically aligns all cells in that column the same way. You get undefined behavior if you apply different alignments to different cells in the same column.
 
-To override row alignment, see [`init(alignment:content:)`](gridrow/init(alignment:content:).md). To override alignment for a single cell, see [`gridCellAnchor(_:)`](view/gridcellanchor(_:).md).
+To override row alignment, see [`init(alignment:content:)`](../gridrow/init%28alignment,content%29.md). To override alignment for a single cell, see [`gridCellAnchor(_:)`](./gridcellanchor%28_%29.md).
 
 ## Parameters
 
-- `guide`: The [`HorizontalAlignment`](horizontalalignment.md) guide to use for the grid column that the view appears in.
+- `guide`: The [`HorizontalAlignment`](../horizontalalignment.md) guide to use for the grid column that the view appears in.
 
 ## See Also
 
-- [struct Grid](grid.md)
+### Statically arranging views in two dimensions
+- [struct Grid](../grid.md)
   A container view that arranges other views in a two dimensional layout.
-- [struct GridRow](gridrow.md)
+- [struct GridRow](../gridrow.md)
   A horizontal row in a two dimensional grid container.
-- [func gridCellColumns(Int) -> some View](view/gridcellcolumns(_:).md)
+- [func gridCellColumns(Int) -> some View](./gridcellcolumns%28_%29.md)
   Tells a view that acts as a cell in a grid to span the specified number of columns.
-- [func gridCellAnchor(UnitPoint) -> some View](view/gridcellanchor(_:).md)
+- [func gridCellAnchor(UnitPoint) -> some View](./gridcellanchor%28_%29.md)
   Specifies a custom alignment anchor for a view that acts as a grid cell.
-- [func gridCellUnsizedAxes(Axis.Set) -> some View](view/gridcellunsizedaxes(_:).md)
+- [func gridCellUnsizedAxes(Axis.Set) -> some View](./gridcellunsizedaxes%28_%29.md)
   Asks grid layouts not to offer the view extra size in the specified axes.
 
 

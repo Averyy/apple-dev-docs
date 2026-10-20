@@ -1,7 +1,8 @@
 # Handle.Kind
 
 **Framework**: LiveCommunicationKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that define the handle that identifies a participant in a conversation.
 
@@ -21,29 +22,30 @@ enum Kind
 ## Topics
 
 ### Types
-- [Handle.Kind.emailAddress](handle/kind/emailaddress.md)
+- [Handle.Kind.emailAddress](./kind/emailaddress.md)
   An email address.
-- [Handle.Kind.phoneNumber](handle/kind/phonenumber.md)
+- [Handle.Kind.phoneNumber](./kind/phonenumber.md)
   A phone number.
-- [Handle.Kind.generic](handle/kind/generic.md)
+- [Handle.Kind.generic](./kind/generic.md)
   An unspecified handle type.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: Handle.Kind](handle/type.md)
+### Type
+- [var type: Handle.Kind](./type.md)
   The type of the handle; for example a phone number or email address.
 
 

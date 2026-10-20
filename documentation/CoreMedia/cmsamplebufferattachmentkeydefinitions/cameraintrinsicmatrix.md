@@ -1,7 +1,8 @@
 # cameraIntrinsicMatrix
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Provides the 3x3 camera intrinsic matrix applied to the current sample buffer.
 

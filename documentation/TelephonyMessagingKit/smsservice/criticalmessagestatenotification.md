@@ -1,7 +1,8 @@
 # SMSService.CriticalMessageStateNotification
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about a critical SMS message.
 
@@ -17,25 +18,26 @@ struct CriticalMessageStateNotification
 ## Topics
 
 ### Accessing message properties
-- [let cellularServiceID: CellularServiceID](smsservice/criticalmessagestatenotification/cellularserviceid.md)
+- [let cellularServiceID: CellularServiceID](./criticalmessagestatenotification/cellularserviceid.md)
   The cellular service identifier associated with the notification.
-- [let messageID: SMSMessageID](smsservice/criticalmessagestatenotification/messageid.md)
+- [let messageID: SMSMessageID](./criticalmessagestatenotification/messageid.md)
   The identifier of the critical message.
-- [let state: SMSService.CriticalMessageStateNotification.State](smsservice/criticalmessagestatenotification/state-swift.property.md)
+- [let state: SMSService.CriticalMessageStateNotification.State](./criticalmessagestatenotification/state-swift.property.md)
   The state of the critical message.
-- [SMSService.CriticalMessageStateNotification.State](smsservice/criticalmessagestatenotification/state-swift.enum.md)
+- [SMSService.CriticalMessageStateNotification.State](./criticalmessagestatenotification/state-swift.enum.md)
   An enumeration of possible states of a critical message.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var criticalMessageStateNotifications: some AsyncSequence<SMSService.CriticalMessageStateNotification, Never>](smsservice/criticalmessagestatenotifications.md)
+### Handling critical state changes
+- [var criticalMessageStateNotifications: some AsyncSequence<SMSService.CriticalMessageStateNotification, Never>](./criticalmessagestatenotifications.md)
   An asynchronous sequence of critical message state notifications.
 
 

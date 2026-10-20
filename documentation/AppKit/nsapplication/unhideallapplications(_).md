@@ -1,17 +1,22 @@
 # unhideAllApplications(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unhides all apps, including the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func unhideAllApplications(_ sender: Any?)
+```
+
+```objc
+- (void) unhideAllApplications:(id) sender;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ This action causes each app to order its windows to the front, which could obscu
 
 ## See Also
 
-- [func hideOtherApplications(Any?)](nsapplication/hideotherapplications(_:).md)
+### Hiding apps
+- [func hideOtherApplications(Any?)](./hideotherapplications%28_%29.md)
   Hides all apps, except the receiver.
 
 

@@ -1,7 +1,8 @@
 # session
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session to which the request belongs.
 

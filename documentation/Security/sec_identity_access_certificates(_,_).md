@@ -1,7 +1,8 @@
 # sec_identity_access_certificates(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_identity_access_certificates(_ identity: sec_identity_t, _ handler: @escaping (sec_certificate_t) -> Void) -> Bool
+```
+
+```c
+bool sec_identity_access_certificates(sec_identity_t identity, void (^handler)(sec_certificate_t certificate));
 ```
 
 #### Return Value

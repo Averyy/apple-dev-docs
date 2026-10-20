@@ -1,7 +1,8 @@
 # init(title:customIndexingKey:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent entity property.
 
@@ -17,6 +18,8 @@ Creates an app intent entity property.
 ```swift
 convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitSpeed>`.
 
 ## Parameters
 

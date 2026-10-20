@@ -1,7 +1,8 @@
 # temperature
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The water temperature.
 
@@ -18,11 +19,16 @@ The water temperature.
 var temperature: Measurement<UnitTemperature> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSMeasurement<NSUnitTemperature *> * temperature;
+```
+
 ## See Also
 
-- [var date: Date](cmwatertemperature/date.md)
+### Accessing the data
+- [var date: Date](./date.md)
   The time and date when the system recorded the measurements.
-- [var temperatureUncertainty: Measurement<UnitTemperature>](cmwatertemperature/temperatureuncertainty.md)
+- [var temperatureUncertainty: Measurement<UnitTemperature>](./temperatureuncertainty.md)
   The amount of uncertainty in the measurement of the water temperature.
 
 

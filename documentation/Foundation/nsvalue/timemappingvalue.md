@@ -1,7 +1,8 @@
 # timeMappingValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CoreMedia time mapping structure representation of the value.
 
@@ -20,19 +21,25 @@ The CoreMedia time mapping structure representation of the value.
 var timeMappingValue: CMTimeMapping { get }
 ```
 
+```objc
+@property (readonly) CMTimeMapping CMTimeMappingValue;
+```
+
 ## See Also
 
-- [struct CMTimeMapping](../coremedia/cmtimemapping.md)
+### Related Documentation
+- [struct CMTimeMapping](../../CoreMedia/cmtimemapping.md)
   A structure that maps a segment of a source time range to a target time range.
-- [init(CMTime: CMTime)](nsvalue/init(cmtime:).md)
+### Working with Media Time Values
+- [init(CMTime: CMTime)](./init%28cmtime%29.md)
   Creates a new value object containing the specified CoreMedia time structure.
-- [init(CMTimeRange: CMTimeRange)](nsvalue/init(cmtimerange:).md)
+- [init(CMTimeRange: CMTimeRange)](./init%28cmtimerange%29.md)
   Creates a new value object containing the specified CoreMedia time range structure.
-- [init(CMTimeMapping: CMTimeMapping)](nsvalue/init(cmtimemapping:).md)
+- [init(CMTimeMapping: CMTimeMapping)](./init%28cmtimemapping%29.md)
   Creates a new value object containing the specified CoreMedia time mapping structure.
-- [var timeValue: CMTime](nsvalue/timevalue.md)
+- [var timeValue: CMTime](./timevalue.md)
   The CoreMedia time structure representation of the value.
-- [var timeRangeValue: CMTimeRange](nsvalue/timerangevalue.md)
+- [var timeRangeValue: CMTimeRange](./timerangevalue.md)
   The CoreMedia time range structure representation of the value.
 
 

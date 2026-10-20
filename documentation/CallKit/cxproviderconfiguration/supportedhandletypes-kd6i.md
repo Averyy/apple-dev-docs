@@ -1,7 +1,8 @@
 # supportedHandleTypes
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported handle types.
 
@@ -21,17 +22,18 @@ final var supportedHandleTypes: Set<CXHandle.HandleType> { get set }
 
 #### Discussion
 
-For possible values, see [`CXHandle.HandleType`](cxhandle/handletype.md).
+For possible values, see [`CXHandle.HandleType`](../cxhandle/handletype.md).
 
 ## See Also
 
-- [var maximumCallGroups: Int](cxproviderconfiguration/maximumcallgroups.md)
+### Configuring Call Capabilities
+- [var maximumCallGroups: Int](./maximumcallgroups.md)
   The maximum number of call groups.
-- [var maximumCallsPerCallGroup: Int](cxproviderconfiguration/maximumcallspercallgroup.md)
+- [var maximumCallsPerCallGroup: Int](./maximumcallspercallgroup.md)
   The maximum number of calls per call group.
-- [var supportsVideo: Bool](cxproviderconfiguration/supportsvideo.md)
+- [var supportsVideo: Bool](./supportsvideo.md)
   A Boolean value that indicates whether the provider supports video in addition to audio.
-- [var includesCallsInRecents: Bool](cxproviderconfiguration/includescallsinrecents.md)
+- [var includesCallsInRecents: Bool](./includescallsinrecents.md)
   A Boolean value that indicates whether the provider includes a call in the system’s Recents list after the call ends.
 
 

@@ -1,7 +1,8 @@
 # intervalCount
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of interval units that make up the total payment interval.
 
@@ -19,13 +20,18 @@ The number of interval units that make up the total payment interval.
 var intervalCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger intervalCount;
+```
+
 #### Discussion
 
-The default value is `1`, which requests a recurring payment every one [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md).
+The default value is `1`, which requests a recurring payment every one [`intervalUnit`](./intervalunit.md).
 
 ## See Also
 
-- [var intervalUnit: NSCalendar.Unit](pkrecurringpaymentsummaryitem/intervalunit.md)
+### Setting the payment interval
+- [var intervalUnit: NSCalendar.Unit](./intervalunit.md)
   The amount of time – in calendar units such as day, month, or year – that represents a fraction of the total payment interval.
 
 

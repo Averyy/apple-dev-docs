@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMPSLocationLeft](1645026-anonymous/kiopmpslocationleft.md)
-- [kIOPMPSLocationRight](1645026-anonymous/kiopmpslocationright.md)
+- [kIOPMPSLocationLeft](./api-1645026-anonymous/kiopmpslocationleft.md)
+- [kIOPMPSLocationRight](./api-1645026-anonymous/kiopmpslocationright.md)
 
 
 ---

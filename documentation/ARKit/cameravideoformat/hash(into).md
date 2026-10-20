@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this camera video format.
 

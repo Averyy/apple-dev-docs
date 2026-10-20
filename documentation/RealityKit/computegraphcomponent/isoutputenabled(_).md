@@ -1,7 +1,8 @@
 # isOutputEnabled(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the enabled state of an output identified by ID
 

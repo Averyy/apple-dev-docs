@@ -1,7 +1,8 @@
 # ClothQueryVolumeEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of events that a cloth query volume publishes during its lifetime.
 
@@ -19,16 +20,17 @@ enum ClothQueryVolumeEvents
 ## Topics
 
 ### Receiving intersection events
-- [ClothQueryVolumeEvents.NewBodyIntersections](clothqueryvolumeevents/newbodyintersections.md)
+- [ClothQueryVolumeEvents.NewBodyIntersections](./clothqueryvolumeevents/newbodyintersections.md)
   An event type that a cloth query volume publishes (before simulation update) when cloth bodies intersect it.
 
 ## See Also
 
-- [enum ClothSimulationEvents](clothsimulationevents.md)
+### Cloth events
+- [enum ClothSimulationEvents](./clothsimulationevents.md)
   Types of events that a cloth simulation publishes during its lifetime.
-- [enum ClothBodyEvents](clothbodyevents.md)
+- [enum ClothBodyEvents](./clothbodyevents.md)
   Types of events that a cloth body publishes during its lifetime.
-- [enum ClothColliderEvents](clothcolliderevents.md)
+- [enum ClothColliderEvents](./clothcolliderevents.md)
   Types of events that a cloth collider publishes during its lifetime.
 
 

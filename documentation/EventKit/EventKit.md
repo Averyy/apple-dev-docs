@@ -1,7 +1,8 @@
 # EventKit
 
 **Framework**: EventKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Create, view, and edit calendar and reminder events.
 
@@ -15,75 +16,75 @@ Create, view, and edit calendar and reminder events.
 
 #### Overview
 
-The EventKit framework provides access to calendar and reminders data so people can create, retrieve, and edit calendar items in your app. In iOS, [`EventKit UI`](https://developer.apple.com/documentation/eventkitui) provides user interfaces you can implement in your app so people can create and edit calendar items.
+The EventKit framework provides access to calendar and reminders data so people can create, retrieve, and edit calendar items in your app. In iOS, [EventKit UI](../EventKitUI/EventKitUI.md) provides user interfaces you can implement in your app so people can create and edit calendar items.
 
 You can use EventKit to set up alarms and create recurring events. And if a change to the Calendar database occurs from outside your app, EventKit detects the change and sends a notification, allowing your app to stay up to date.
 
 ## Topics
 
 ### Essentials
-- [Accessing the event store](accessing-the-event-store.md)
+- [Accessing the event store](./accessing-the-event-store.md)
   Request access to a person’s calendar data through the event store.
-- [class EKEventStore](ekeventstore.md)
+- [class EKEventStore](./ekeventstore.md)
   An object that accesses a person’s calendar events and reminders and supports the scheduling of new events.
-- [Accessing Calendar using EventKit and EventKitUI](accessing-calendar-using-eventkit-and-eventkitui.md)
+- [Accessing Calendar using EventKit and EventKitUI](./accessing-calendar-using-eventkit-and-eventkitui.md)
   Choose and implement the appropriate Calendar access level in your app.
 ### Events and reminders
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating events and reminders](./creating-events-and-reminders.md)
   Create and modify events and reminders in a person’s database.
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Retrieving events and reminders](./retrieving-events-and-reminders.md)
   Fetch events and reminders from the Calendar database.
-- [Updating with notifications](updating-with-notifications.md)
+- [Updating with notifications](./updating-with-notifications.md)
   Register for notifications about changes and keep your app up to date.
-- [Managing location-based reminders](managing-location-based-reminders.md)
+- [Managing location-based reminders](./managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
-- [class EKEvent](ekevent.md)
+- [class EKEvent](./ekevent.md)
   A class that represents an event in a calendar.
-- [class EKReminder](ekreminder.md)
+- [class EKReminder](./ekreminder.md)
   A class that represents a reminder in a calendar.
 ### Calendars
-- [class EKCalendar](ekcalendar.md)
+- [class EKCalendar](./ekcalendar.md)
   A class that represents a calendar in EventKit.
-- [class EKParticipant](ekparticipant.md)
+- [class EKParticipant](./ekparticipant.md)
   A class that represents person, group, or room invited to a calendar event.
 ### Recurrence
-- [Creating a recurring event](creating-a-recurring-event.md)
+- [Creating a recurring event](./creating-a-recurring-event.md)
   Set up an event or reminder that repeats.
-- [class EKRecurrenceDayOfWeek](ekrecurrencedayofweek.md)
+- [class EKRecurrenceDayOfWeek](./ekrecurrencedayofweek.md)
   A class that represents the day of the week.
-- [class EKRecurrenceEnd](ekrecurrenceend.md)
+- [class EKRecurrenceEnd](./ekrecurrenceend.md)
   A class that defines the end of a recurrence rule.
-- [class EKRecurrenceRule](ekrecurrencerule.md)
+- [class EKRecurrenceRule](./ekrecurrencerule.md)
   A class that describes the pattern for a recurring event.
 ### Alarms
-- [Setting an alarm](setting-an-alarm.md)
+- [Setting an alarm](./setting-an-alarm.md)
   Alert users of events and reminders with an alarm.
-- [class EKAlarm](ekalarm.md)
+- [class EKAlarm](./ekalarm.md)
   A class that represents an alarm.
-- [class EKStructuredLocation](ekstructuredlocation.md)
+- [class EKStructuredLocation](./ekstructuredlocation.md)
   `A` class that specifies a geofence to activate the alarm of a calendar item.
 ### Common objects
-- [class EKCalendarItem](ekcalendaritem.md)
+- [class EKCalendarItem](./ekcalendaritem.md)
   An abstract superclass for calendar events and reminders.
-- [class EKObject](ekobject.md)
+- [class EKObject](./ekobject.md)
   An abstract superclass for all EventKit classes that have persistent instances.
-- [class EKSource](eksource.md)
+- [class EKSource](./eksource.md)
   An abstract superclass that represents the account a calendar belongs to.
 ### Virtual conferences
-- [Implementing a virtual conference extension](implementing-a-virtual-conference-extension.md)
+- [Implementing a virtual conference extension](./implementing-a-virtual-conference-extension.md)
   Support adding a virtual conference room to an event in Calendar.
-- [class EKVirtualConferenceProvider](ekvirtualconferenceprovider.md)
+- [class EKVirtualConferenceProvider](./ekvirtualconferenceprovider.md)
   An object that associates virtual conferencing details with an event object in a user’s calendar.
-- [class EKVirtualConferenceDescriptor](ekvirtualconferencedescriptor.md)
+- [class EKVirtualConferenceDescriptor](./ekvirtualconferencedescriptor.md)
   Details about a virtual conference that uses a custom room type.
-- [class EKVirtualConferenceRoomTypeDescriptor](ekvirtualconferenceroomtypedescriptor.md)
+- [class EKVirtualConferenceRoomTypeDescriptor](./ekvirtualconferenceroomtypedescriptor.md)
   Details about a room where virtual conferences take place.
 ### Errors
-- [struct EKError](ekerror.md)
+- [struct EKError](./ekerror.md)
   An EventKit error.
-- [EKError.Code](ekerror/code.md)
+- [EKError.Code](./ekerror/code.md)
   Error codes for EventKit errors.
-- [let EKErrorDomain: String](ekerrordomain.md)
+- [let EKErrorDomain: String](./ekerrordomain.md)
   A string that identifies the EventKit error domain.
 
 

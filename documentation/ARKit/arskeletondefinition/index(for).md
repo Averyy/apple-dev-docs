@@ -1,7 +1,8 @@
 # index(for:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index for a given joint identifier.
 
@@ -22,11 +23,12 @@ This function returns `NSNotFound` if an invalid joint name is passed in.
 
 ## See Also
 
-- [var jointNames: [String]](arskeletondefinition/jointnames.md)
+### Getting Joint Information
+- [var jointNames: [String]](./jointnames.md)
   A collection of unique joint names.
-- [var jointCount: Int](arskeletondefinition/jointcount.md)
+- [var jointCount: Int](./jointcount.md)
   The skeleton’s total number of joints.
-- [var parentIndices: [Int]](arskeletondefinition/parentindices-u2u9.md)
+- [var parentIndices: [Int]](./parentindices-u2u9.md)
   The parent index for each joint.
 
 

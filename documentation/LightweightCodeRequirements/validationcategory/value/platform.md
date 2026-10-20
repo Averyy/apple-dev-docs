@@ -1,7 +1,8 @@
 # platform
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the code is signed by Apple or allowed by a loaded trustcache.
 

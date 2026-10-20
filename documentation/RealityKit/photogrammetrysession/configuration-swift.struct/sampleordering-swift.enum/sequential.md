@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.SampleOrdering.sequential
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Images are in sequential order.
 
@@ -19,7 +20,8 @@ case sequential
 
 ## See Also
 
-- [PhotogrammetrySession.Configuration.SampleOrdering.unordered](photogrammetrysession/configuration-swift.struct/sampleordering-swift.enum/unordered.md)
+### Specifying sample ordering
+- [PhotogrammetrySession.Configuration.SampleOrdering.unordered](./unordered.md)
   Images aren’t in sequential order.
 
 

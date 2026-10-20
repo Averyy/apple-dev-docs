@@ -1,7 +1,8 @@
 # isEligible
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates at runtime whether the app can use this API for external purchases.
 
@@ -22,25 +23,25 @@ static var isEligible: Bool { get async }
 
 ## Mentions
 
-- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+- [Testing transactions that use custom link tokens](../testing-transactions-that-use-custom-link-tokens.md)
 
 #### Discussion
 
 Check this value if your app configures any of the following entitlements:
 
-- [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions)
-- [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link)
-- [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming)
+- [`StoreKit external purchases or offers entitlement`](../../BundleResources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+- [`com.apple.developer.storekit.external-purchase-link`](../../BundleResources/entitlements/com.apple.developer.storekit.external-purchase-link.md)
+- [`com.apple.developer.storekit.external-purchase-link-streaming`](../../BundleResources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming.md)
 
-If [`isEligible`](externalpurchasecustomlink/iseligible.md) is `true`, your app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API.
+If [`isEligible`](./iseligible.md) is `true`, your app can use the [`ExternalPurchaseCustomLink`](../externalpurchasecustomlink.md) API.
 
 This value is `true` if all the following conditions are met:
 
 - The current App Store storefront allows external purchases and the person can make purchases.
 - Your app configures any of the entitlements listed above.
-- Your app configures the current App Store storefront in the property list key associated with the entitlement, [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasecustomlinkregions) or [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselinkstreamingregions), or has an entitlement that includes the current App Store storefront.
+- Your app configures the current App Store storefront in the property list key associated with the entitlement, [`SKExternalPurchaseCustomLinkRegions`](../../BundleResources/information-property-list/skexternalpurchasecustomlinkregions.md) or [`SKExternalPurchaseLinkStreamingRegions`](../../BundleResources/information-property-list/skexternalpurchaselinkstreamingregions.md), or has an entitlement that includes the current App Store storefront.
 
-If [`isEligible`](externalpurchasecustomlink/iseligible.md) is `false`, don’t use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API. The methods of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API throw errors at runtime when [`isEligible`](externalpurchasecustomlink/iseligible.md) is `false`.
+If [`isEligible`](./iseligible.md) is `false`, don’t use the [`ExternalPurchaseCustomLink`](../externalpurchasecustomlink.md) API. The methods of the [`ExternalPurchaseCustomLink`](../externalpurchasecustomlink.md) API throw errors at runtime when [`isEligible`](./iseligible.md) is `false`.
 
 
 ---

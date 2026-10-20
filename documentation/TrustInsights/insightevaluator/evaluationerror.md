@@ -1,7 +1,8 @@
 # InsightEvaluator.EvaluationError
 
 **Framework**: Trust Insights  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors the framework can return if there are errors processing an evaluation request.
 
@@ -18,44 +19,45 @@ Errors the framework can return if there are errors processing an evaluation req
 ## Topics
 
 ### Evaluation errors
-- [InsightEvaluator.EvaluationError.contextInvalid(_:)](insightevaluator/evaluationerror/contextinvalid(_:).md)
+- [InsightEvaluator.EvaluationError.contextInvalid(_:)](./evaluationerror/contextinvalid%28_%29.md)
   An error that indicates the framework couldn’t produce an evaluation for the provided context.
-- [InsightEvaluator.EvaluationError.denied](insightevaluator/evaluationerror/denied.md)
+- [InsightEvaluator.EvaluationError.denied](./evaluationerror/denied.md)
   An error that indicates evaluations are unavailable due to a person’s options.
-- [InsightEvaluator.EvaluationError.localError](insightevaluator/evaluationerror/localerror.md)
+- [InsightEvaluator.EvaluationError.localError](./evaluationerror/localerror.md)
   An error that indicates the framework couldn’t complete the evaluation.
-- [InsightEvaluator.EvaluationError.notAvailable](insightevaluator/evaluationerror/notavailable.md)
+- [InsightEvaluator.EvaluationError.notAvailable](./evaluationerror/notavailable.md)
   An error that indicates evaluations are not available on this device.
-- [InsightEvaluator.EvaluationError.rateLimitExceeded](insightevaluator/evaluationerror/ratelimitexceeded.md)
+- [InsightEvaluator.EvaluationError.rateLimitExceeded](./evaluationerror/ratelimitexceeded.md)
   An error that indicates the framework has received too many requests.
-- [InsightEvaluator.EvaluationError.serverError](insightevaluator/evaluationerror/servererror.md)
+- [InsightEvaluator.EvaluationError.serverError](./evaluationerror/servererror.md)
   An error that indicates the framework couldn’t complete the evaluation due to server or network issues.
 ### Enumeration Cases
-- [InsightEvaluator.EvaluationError.payloadSecurityError](insightevaluator/evaluationerror/payloadsecurityerror.md)
+- [InsightEvaluator.EvaluationError.payloadSecurityError](./evaluationerror/payloadsecurityerror.md)
   Server returned payload contains security related error and should not be trusted. This may indicate that the payload has been tampered with.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [InsightEvaluator.InsightContext](insightevaluator/insightcontext.md)
+### Requesting an evaluation
+- [InsightEvaluator.InsightContext](./insightcontext.md)
   A structure that provides details about the evaluations to request and provides information the framework requires for the evaluation to take place.
-- [InsightEvaluator.InsightRequest](insightevaluator/insightrequest.md)
+- [InsightEvaluator.InsightRequest](./insightrequest.md)
   A structure you use to make a request for a specific insight.
-- [InsightEvaluator.InsightRequestProtocol](insightevaluator/insightrequestprotocol.md)
+- [InsightEvaluator.InsightRequestProtocol](./insightrequestprotocol.md)
   A protocol that insight evaluation types conform to.
-- [InsightEvaluator.ModelVersion](insightevaluator/modelversion.md)
+- [InsightEvaluator.ModelVersion](./modelversion.md)
   Values that define the required model version of the insight.
-- [InsightEvaluator.OperationCategory](insightevaluator/operationcategory.md)
+- [InsightEvaluator.OperationCategory](./operationcategory.md)
   Values that represent the types of operation it’s possible to request evaluations for.
 
 

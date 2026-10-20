@@ -1,7 +1,8 @@
 # CGFloat.NativeType
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The native type used to store the `CGFloat`.
 
@@ -11,7 +12,7 @@ The native type used to store the `CGFloat`.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ typealias NativeType = Double
 
 #### Discussion
 
-The native type used to store the [`CGFloat`](cgfloat-swift.struct.md), which is [`Float`](https://developer.apple.com/documentation/swift/float) on 32-bit architectures and [`Double`](https://developer.apple.com/documentation/swift/double) on 64-bit architectures.
+The native type used to store the [`CGFloat`](../cgfloat-swift.struct.md), which is [`Float`](../../Swift/float.md) on 32-bit architectures and [`Double`](../../Swift/double.md) on 64-bit architectures.
 
 
 ---

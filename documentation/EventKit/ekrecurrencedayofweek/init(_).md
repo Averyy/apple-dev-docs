@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a day of the week with a given day.
 
@@ -19,6 +20,10 @@ Creates and returns a day of the week with a given day.
 convenience init(_ dayOfTheWeek: EKWeekday)
 ```
 
+```objc
++ (instancetype) dayOfWeek:(EKWeekday) dayOfTheWeek;
+```
+
 #### Return Value
 
 The new day of the week.
@@ -33,11 +38,12 @@ The week number of the returned day of the week is `0`.
 
 ## See Also
 
-- [enum EKWeekday](ekweekday.md)
+### Creating a Day of the Week
+- [enum EKWeekday](../ekweekday.md)
   The day of the week.
-- [convenience init(EKWeekday, weekNumber: Int)](ekrecurrencedayofweek/init(_:weeknumber:).md)
+- [convenience init(EKWeekday, weekNumber: Int)](./init%28_,weeknumber%29.md)
   Creates and returns an autoreleased day of the week with a given day and week number.
-- [init(dayOfTheWeek: EKWeekday, weekNumber: Int)](ekrecurrencedayofweek/init(dayoftheweek:weeknumber:).md)
+- [init(dayOfTheWeek: EKWeekday, weekNumber: Int)](./init%28dayoftheweek,weeknumber%29.md)
   Initializes and returns a day of the week with a given day and week number.
 
 

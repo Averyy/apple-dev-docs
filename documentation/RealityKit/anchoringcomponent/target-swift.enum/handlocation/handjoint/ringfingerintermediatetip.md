@@ -1,7 +1,8 @@
 # ringFingerIntermediateTip
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the intermediate tip of the ring finger.
 

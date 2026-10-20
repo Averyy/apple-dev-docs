@@ -1,7 +1,8 @@
 # LanguageAvailability.Status.installed
 
 **Framework**: Translation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework supports the language or language pairing and has it downloaded and ready for use in a translation.
 
@@ -19,9 +20,10 @@ case installed
 
 ## See Also
 
-- [LanguageAvailability.Status.supported](languageavailability/status/supported.md)
+### Checking availability status
+- [LanguageAvailability.Status.supported](./supported.md)
   The framework supports the language or language pairing, but can’t yet use it.
-- [LanguageAvailability.Status.unsupported](languageavailability/status/unsupported.md)
+- [LanguageAvailability.Status.unsupported](./unsupported.md)
   The framework doesn’t support the language or language pairing.
 
 

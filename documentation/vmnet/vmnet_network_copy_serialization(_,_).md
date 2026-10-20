@@ -1,7 +1,8 @@
 # vmnet_network_copy_serialization(_:_:)
 
 **Framework**: vmnet  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Serializes a vmnet network to an XPC object.
 
@@ -13,6 +14,10 @@ Serializes a vmnet network to an XPC object.
 
 ```swift
 func vmnet_network_copy_serialization(_ network: vmnet_network_ref, _ status: UnsafeMutablePointer<vmnet_return_t>?) -> xpc_object_t?
+```
+
+```c
+xpc_object_tvmnet_network_copy_serialization(vmnet_network_ref network, vmnet_return_t *status);
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ Use `vmnet_network_create_with_serialization` to create a new network object fro
 
 ## See Also
 
-- [func vmnet_network_create(vmnet_network_configuration_ref, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create(_:_:).md)
+### Creating a network configuration
+- [func vmnet_network_create(vmnet_network_configuration_ref, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](./vmnet_network_create%28_,_%29.md)
   Creates a vmnet network based on the provided configuration.
-- [func vmnet_network_configuration_create(vmnet_mode_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_configuration_ref?](vmnet_network_configuration_create(_:_:).md)
+- [func vmnet_network_configuration_create(vmnet_mode_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_configuration_ref?](./vmnet_network_configuration_create%28_,_%29.md)
   Creates a network configuration object with the specified operating mode.
-- [func vmnet_network_create_with_serialization(xpc_object_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create_with_serialization(_:_:).md)
+- [func vmnet_network_create_with_serialization(xpc_object_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](./vmnet_network_create_with_serialization%28_,_%29.md)
   Creates a vmnet network from an XPC object you obtained from calling the vmnet networkcopy serialization API.
 
 

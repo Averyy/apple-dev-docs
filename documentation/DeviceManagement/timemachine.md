@@ -1,7 +1,8 @@
 # TimeMachine
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Time Machine.
 
@@ -10,7 +11,7 @@ The payload that configures Time Machine.
 
 ## Declaration
 
-```swift
+```
 object TimeMachine
 ```
 
@@ -18,7 +19,7 @@ object TimeMachine
 
 Specify `com.apple.MCX.TimeMachine` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.MCX.TimeMachine` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -83,33 +84,44 @@ Specify `com.apple.MCX.TimeMachine` as the payload type.
 ## Properties
 
 - `AutoBackup` (boolean): If `true`, performs automatic backups at regular intervals.
+
+  **Default**: `true`
 - `BackupAllVolumes` (boolean): If `true`, backs up only the startup volume by default.
+
+  **Default**: `false`
 - `BackupDestURL` (string) *(required)*: The URL of the backup destination.
 - `BackupSizeMB` (integer): The backup size limit, in megabytes. Set to 0 for unlimited.
+
+  **Default**: `0`
 - `BackupSkipSys` (boolean): If `true`, skips system files and folders by default.
+
+  **Default**: `false`
 - `BasePaths` ([string]): The list of paths to back up besides the startup volume.
 - `MobileBackups` (boolean): If `true`, create local backup snapshots when not connected to the network.
+
+  **Default**: `true`
 - `SkipPaths` ([string]): The path to skip from start volume.
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Desktop](desktop.md)
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
 
 

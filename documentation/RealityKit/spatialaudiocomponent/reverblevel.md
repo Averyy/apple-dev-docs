@@ -1,7 +1,8 @@
 # reverbLevel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of reverberated signal that an entity emits.
 

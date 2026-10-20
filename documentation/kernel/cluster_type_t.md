@@ -1,14 +1,15 @@
 # cluster_type_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum cluster_type_t : unsigned int {
     ...
 } cluster_type_t;
@@ -17,10 +18,10 @@ typedef enum cluster_type_t : unsigned int {
 ## Topics
 
 ### Constants
-- [CLUSTER_TYPE_E](cluster_type_t/cluster_type_e.md)
-- [CLUSTER_TYPE_P](cluster_type_t/cluster_type_p.md)
-- [CLUSTER_TYPE_SMP](cluster_type_t/cluster_type_smp.md)
-- [MAX_CPU_TYPES](cluster_type_t/max_cpu_types.md)
+- [CLUSTER_TYPE_E](./cluster_type_t/cluster_type_e.md)
+- [CLUSTER_TYPE_P](./cluster_type_t/cluster_type_p.md)
+- [CLUSTER_TYPE_SMP](./cluster_type_t/cluster_type_smp.md)
+- [MAX_CPU_TYPES](./cluster_type_t/max_cpu_types.md)
 
 
 ---

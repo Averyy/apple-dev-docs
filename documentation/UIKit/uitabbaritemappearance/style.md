@@ -1,21 +1,26 @@
 # UITabBarItemAppearance.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the layout of a tab bar item’s content.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum Style
+```
+
+```c
+enum UITabBarItemAppearanceStyle : NSInteger;
 ```
 
 #### Overview
@@ -25,28 +30,29 @@ A tab bar adjusts the layout of each item’s icon and title string based on the
 ## Topics
 
 ### Item layout
-- [UITabBarItemAppearance.Style.stacked](uitabbaritemappearance/style/stacked.md)
+- [UITabBarItemAppearance.Style.stacked](./style/stacked.md)
   A vertically stacked icon and title.
-- [UITabBarItemAppearance.Style.inline](uitabbaritemappearance/style/inline.md)
+- [UITabBarItemAppearance.Style.inline](./style/inline.md)
   A side-by-side layout of the icon and title, suitable for use in regular-width environments.
-- [UITabBarItemAppearance.Style.compactInline](uitabbaritemappearance/style/compactinline.md)
+- [UITabBarItemAppearance.Style.compactInline](./style/compactinline.md)
   A side-by-side layout of the icon and title, suitable for use in compact-width environments.
 ### Initializers
-- [init?(rawValue: Int)](uitabbaritemappearance/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func configureWithDefault(for: UITabBarItemAppearance.Style)](uitabbaritemappearance/configurewithdefault(for:).md)
+### Resetting the appearance properties
+- [func configureWithDefault(for: UITabBarItemAppearance.Style)](./configurewithdefault%28for%29.md)
   Configures the tab bar item appearance object with appropriate values for the specified style.
 
 

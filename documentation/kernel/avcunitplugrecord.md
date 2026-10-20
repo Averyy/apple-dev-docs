@@ -1,14 +1,15 @@
 # AVCUnitPlugRecord
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _AVCUnitPlugRecord {
     ...
 } AVCUnitPlugRecord;
@@ -17,23 +18,24 @@ typedef struct _AVCUnitPlugRecord {
 ## Topics
 
 ### Instance Properties
-- [connectionCount](avcunitplugrecord/1571615-connectioncount.md)
+- [connectionCount](./avcunitplugrecord/api-1571615-connectioncount.md)
 
 ## See Also
 
-- [IOFireWireAVCAsynchronousCommand](iofirewireavcasynchronouscommand.md)
-- [IOFireWireAVCTargetSpace](iofirewireavctargetspace.md)
+### AVC Support
+- [IOFireWireAVCAsynchronousCommand](./iofirewireavcasynchronouscommand.md)
+- [IOFireWireAVCTargetSpace](./iofirewireavctargetspace.md)
   object to centralize the AVC Target mode support
-- [IOFireWireAVCCommand](iofirewireavccommand.md)
-- [AVCCommandHandlerInfo](avccommandhandlerinfo.md)
-- [AVCConnectionRecord](avcconnectionrecord.md)
-- [AVCSubunitInfo](avcsubunitinfo.md)
-- [AVCConnectTargetPlugsInParams](avcconnecttargetplugsinparams.md)
-- [AVCConnectTargetPlugsOutParams](avcconnecttargetplugsoutparams.md)
-- [AVCGetTargetPlugConnectionInParams](avcgettargetplugconnectioninparams.md)
-- [AVCGetTargetPlugConnectionOutParams](avcgettargetplugconnectionoutparams.md)
-- [AVCSubunitPlugRecord](avcsubunitplugrecord.md)
-- [AVCUnitPlugs](avcunitplugs.md)
+- [IOFireWireAVCCommand](./iofirewireavccommand.md)
+- [AVCCommandHandlerInfo](./avccommandhandlerinfo.md)
+- [AVCConnectionRecord](./avcconnectionrecord.md)
+- [AVCSubunitInfo](./avcsubunitinfo.md)
+- [AVCConnectTargetPlugsInParams](./avcconnecttargetplugsinparams.md)
+- [AVCConnectTargetPlugsOutParams](./avcconnecttargetplugsoutparams.md)
+- [AVCGetTargetPlugConnectionInParams](./avcgettargetplugconnectioninparams.md)
+- [AVCGetTargetPlugConnectionOutParams](./avcgettargetplugconnectionoutparams.md)
+- [AVCSubunitPlugRecord](./avcsubunitplugrecord.md)
+- [AVCUnitPlugs](./avcunitplugs.md)
 
 
 ---

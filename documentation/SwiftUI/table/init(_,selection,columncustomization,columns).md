@@ -1,7 +1,8 @@
 # init(_:selection:columnCustomization:columns:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a table that computes its rows based on a collection of identifiable data, that supports selecting multiple rows, and that has dynamically customizable columns.
 
@@ -19,9 +20,18 @@ nonisolated
 init<Data>(_ data: Data, selection: Binding<Set<Value.ID>>, columnCustomization: Binding<TableColumnCustomization<Value>>, @TableColumnBuilder<Value, Never> columns: () -> Columns) where Rows == TableForEachContent<Data>, Data : RandomAccessCollection, Columns.TableRowValue == Data.Element
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<Data>(_ data: Data, selection: Binding<Value.ID?>, columnCustomization: Binding<TableColumnCustomization<Value>>, @TableColumnBuilder<Value, Never> columns: () -> Columns) where Rows == TableForEachContent<Data>, Data : RandomAccessCollection, Columns.TableRowValue == Data.Element
+```
+
 #### Discussion
 
-Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](tablecolumncontent/customizationid(_:).md).
+Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](../tablecolumncontent/customizationid%28_%29.md).
 
 ## Parameters
 
@@ -32,11 +42,12 @@ Each column in the table that should participate in customization is required to
 
 ## See Also
 
-- [init<Data>(Data, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](table/init(_:columncustomization:columns:).md)
+### Creating a table with customizable columns
+- [init<Data>(Data, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](./init%28_,columncustomization,columns%29.md)
   Creates a table that computes its rows based on a collection of identifiable data and has dynamically customizable columns.
-- [init(_:selection:sortOrder:columnCustomization:columns:)](table/init(_:selection:sortorder:columncustomization:columns:).md)
+- [init(_:selection:sortOrder:columnCustomization:columns:)](./init%28_,selection,sortorder,columncustomization,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data, supports selecting multiple rows, and has dynamically customizable columns.
-- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](table/init(_:sortorder:columncustomization:columns:).md)
+- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](./init%28_,sortorder,columncustomization,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data and has dynamically customizable columns.
 
 

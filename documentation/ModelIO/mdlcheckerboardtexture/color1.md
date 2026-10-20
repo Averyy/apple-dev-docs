@@ -1,7 +1,8 @@
 # color1
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color for half of the squares in the checkerboard pattern.
 
@@ -19,17 +20,22 @@ The color for half of the squares in the checkerboard pattern.
 var color1: CGColor? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) CGColorRef color1;
+```
+
 #### Discussion
 
 This color appears in the top left square of the generated pattern, and in alternate squares thereafter.
 
-Changing the [`divisions`](mdlcheckerboardtexture/divisions.md), [`color1`](mdlcheckerboardtexture/color1.md), or [`color2`](mdlcheckerboardtexture/color2.md) properties invalidates the cache, causing Model I/O to regenerate texel data the next time it is needed.
+Changing the [`divisions`](./divisions.md), [`color1`](./color1.md), or [`color2`](./color2.md) properties invalidates the cache, causing Model I/O to regenerate texel data the next time it is needed.
 
 ## See Also
 
-- [var color2: CGColor?](mdlcheckerboardtexture/color2.md)
+### Configuring the Checkerboard Pattern
+- [var color2: CGColor?](./color2.md)
   The color for the other half of the squares in the checkerboard pattern.
-- [var divisions: Float](mdlcheckerboardtexture/divisions.md)
+- [var divisions: Float](./divisions.md)
   The number of squares along each dimension in the checkerboard pattern.
 
 

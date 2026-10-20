@@ -1,7 +1,8 @@
 # bindMemory(to:capacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds the memory to the specified type and returns a typed pointer to the bound memory.
 

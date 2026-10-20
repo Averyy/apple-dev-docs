@@ -1,7 +1,8 @@
 # init(text:textColor:backgroundColor:alignment:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an overlay with properties that control the overlay’s appearance and text contents.
 
@@ -14,6 +15,10 @@ Initialize an overlay with properties that control the overlay’s appearance an
 
 ```swift
 init(text: String, textColor: UIColor, backgroundColor: UIColor, alignment: CPImageOverlay.Alignment)
+```
+
+```objc
+- (instancetype) initWithText:(NSString *) text textColor:(UIColor *) textColor backgroundColor:(UIColor *) backgroundColor alignment:(CPImageOverlayAlignment) alignment;
 ```
 
 ## Parameters

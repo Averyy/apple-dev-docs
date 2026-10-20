@@ -1,7 +1,8 @@
 # MTROccupancySensingOccupancySensorType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.5+
@@ -18,25 +19,29 @@
 enum MTROccupancySensingOccupancySensorType
 ```
 
+```c
+enum MTROccupancySensingOccupancySensorType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTROccupancySensingOccupancySensorType.PIR](mtroccupancysensingoccupancysensortype/pir.md)
-- [MTROccupancySensingOccupancySensorType.physicalContact](mtroccupancysensingoccupancysensortype/physicalcontact.md)
-- [MTROccupancySensingOccupancySensorType.pirAndUltrasonic](mtroccupancysensingoccupancysensortype/pirandultrasonic.md)
-- [MTROccupancySensingOccupancySensorType.ultrasonic](mtroccupancysensingoccupancysensortype/ultrasonic.md)
+- [MTROccupancySensingOccupancySensorType.PIR](./mtroccupancysensingoccupancysensortype/pir.md)
+- [MTROccupancySensingOccupancySensorType.physicalContact](./mtroccupancysensingoccupancysensortype/physicalcontact.md)
+- [MTROccupancySensingOccupancySensorType.pirAndUltrasonic](./mtroccupancysensingoccupancysensortype/pirandultrasonic.md)
+- [MTROccupancySensingOccupancySensorType.ultrasonic](./mtroccupancysensingoccupancysensortype/ultrasonic.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtroccupancysensingoccupancysensortype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtroccupancysensingoccupancysensortype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # videoDimension
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Video resolution
 

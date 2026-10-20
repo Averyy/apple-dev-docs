@@ -1,21 +1,22 @@
 # SubscriptionGroupCreateRequest.Data.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupCreateRequest.Data.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupCreateRequest.Data.Relationships.App.Data](subscriptiongroupcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionGroupCreateRequest.Data.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The request body you use to create a subscription group.
 
 ## Properties

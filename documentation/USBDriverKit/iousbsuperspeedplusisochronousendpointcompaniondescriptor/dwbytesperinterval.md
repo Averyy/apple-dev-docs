@@ -1,22 +1,24 @@
 # dwBytesPerInterval
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t dwBytesPerInterval;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedplusisochronousendpointcompaniondescriptor/blength.md)
-- [bDescriptorType](iousbsuperspeedplusisochronousendpointcompaniondescriptor/bdescriptortype.md)
-- [wReserved](iousbsuperspeedplusisochronousendpointcompaniondescriptor/wreserved.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [wReserved](./wreserved.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GCInputMicroGamepadButtonMenu
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the micro gamepad’s menu button.
 
@@ -19,17 +20,23 @@ The name of the micro gamepad’s menu button.
 let GCInputMicroGamepadButtonMenu: String
 ```
 
+```c
+extern NSString * const GCInputMicroGamepadButtonMenu;
+```
+
 #### Discussion
 
 For the first-generation Siri Remote, this represents the menu button. For the second-generation Siri Remote, this represents the back button.
 
 ## See Also
 
-- [var buttonMenu: GCControllerButtonInput](gcmicrogamepad/buttonmenu.md)
+### Related Documentation
+- [var buttonMenu: GCControllerButtonInput](./gcmicrogamepad/buttonmenu.md)
   The menu face button that players use to enter the main menu and pause the game.
-- [let GCInputMicroGamepadButtonA: String](gcinputmicrogamepadbuttona.md)
+### Micro gamepad button names
+- [let GCInputMicroGamepadButtonA: String](./gcinputmicrogamepadbuttona.md)
   The name of the micro gamepad’s primary button.
-- [let GCInputMicroGamepadButtonX: String](gcinputmicrogamepadbuttonx.md)
+- [let GCInputMicroGamepadButtonX: String](./gcinputmicrogamepadbuttonx.md)
   The name of the micro gamepad’s secondary button.
 
 

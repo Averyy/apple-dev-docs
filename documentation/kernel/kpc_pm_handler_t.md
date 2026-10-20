@@ -1,14 +1,15 @@
 # kpc_pm_handler_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*kpc_pm_handler_t)(boolean_t);
 ```
 

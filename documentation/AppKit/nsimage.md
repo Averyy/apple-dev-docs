@@ -1,7 +1,8 @@
 # NSImage
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A high-level interface for manipulating image data.
 
@@ -9,7 +10,7 @@ A high-level interface for manipulating image data.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,15 +18,19 @@ A high-level interface for manipulating image data.
 class NSImage
 ```
 
+```objc
+@interface NSImage : NSObject
+```
+
 #### Overview
 
-You use instances of [`NSImage`](nsimage.md) to load existing images, create new images, and draw the resulting image data into your views. Although you use this class predominantly for image-related operations, the class itself knows little about the underlying image data. Instead, it works in conjunction with one or more image representation objects (subclasses of [`NSImageRep`](nsimagerep.md)) to manage and render the image data. For the most part, these interactions are transparent.
+You use instances of [`NSImage`](./nsimage.md) to load existing images, create new images, and draw the resulting image data into your views. Although you use this class predominantly for image-related operations, the class itself knows little about the underlying image data. Instead, it works in conjunction with one or more image representation objects (subclasses of [`NSImageRep`](./nsimagerep.md)) to manage and render the image data. For the most part, these interactions are transparent.
 
 The  class serves many purposes, providing support for the following tasks:
 
 - Loading images stored on disk or at a specified URL.
 - Drawing images into a view or graphics context.
-- Providing the contents of a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object.
+- Providing the contents of a [`CALayer`](../QuartzCore/calayer.md) object.
 - Creating new images based on a series of captured drawing commands.
 - Producing versions of the image in a different format.
 
@@ -33,9 +38,9 @@ The `NSImage` class itself is capable of managing image data in a variety of for
 
 ##### Using Images with Core Animation Layers
 
-Although you can assign an `NSImage` object directly to the [`contents`](https://developer.apple.com/documentation/quartzcore/calayer/contents) property of a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object, doing so may not always yield the best results. Instead of using your image object, you can use the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method to obtain an object that you can use for your layer’s contents. The image created by that method serves as the contents of a layer, which also supports all of the layer’s gravity modes. By contrast, the `NSImage` class supports only the [`resize`](https://developer.apple.com/documentation/quartzcore/calayercontentsgravity/resize), [`resizeAspect`](https://developer.apple.com/documentation/quartzcore/calayercontentsgravity/resizeaspect), and [`resizeAspectFill`](https://developer.apple.com/documentation/quartzcore/calayercontentsgravity/resizeaspectfill) modes.
+Although you can assign an `NSImage` object directly to the [`contents`](../QuartzCore/calayer/contents.md) property of a [`CALayer`](../QuartzCore/calayer.md) object, doing so may not always yield the best results. Instead of using your image object, you can use the [`layerContents(forContentsScale:)`](./nsimage/layercontents%28forcontentsscale%29.md) method to obtain an object that you can use for your layer’s contents. The image created by that method serves as the contents of a layer, which also supports all of the layer’s gravity modes. By contrast, the `NSImage` class supports only the [`resize`](../QuartzCore/calayercontentsgravity/resize.md), [`resizeAspect`](../QuartzCore/calayercontentsgravity/resizeaspect.md), and [`resizeAspectFill`](../QuartzCore/calayercontentsgravity/resizeaspectfill.md) modes.
 
-Before calling the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method, use the [`recommendedLayerContentsScale(_:)`](nsimage/recommendedlayercontentsscale(_:).md) method to get the recommended scale factor for the resulting image. The code listing below shows a typical example that uses the scale factor of a window’s backing store as the desired scale factor. From that scale factor, the code gets the scale factor for the specified image object and creates an object that you assign to the layer. You might use this code for images that fit the layer bounds precisely or for which you rely on the [`contentsGravity`](https://developer.apple.com/documentation/quartzcore/calayer/contentsgravity) property of the layer to position or scale the image.
+Before calling the [`layerContents(forContentsScale:)`](./nsimage/layercontents%28forcontentsscale%29.md) method, use the [`recommendedLayerContentsScale(_:)`](./nsimage/recommendedlayercontentsscale%28_%29.md) method to get the recommended scale factor for the resulting image. The code listing below shows a typical example that uses the scale factor of a window’s backing store as the desired scale factor. From that scale factor, the code gets the scale factor for the specified image object and creates an object that you assign to the layer. You might use this code for images that fit the layer bounds precisely or for which you rely on the [`contentsGravity`](../QuartzCore/calayer/contentsgravity.md) property of the layer to position or scale the image.
 
 Listing 1. Assigning an image to a layer
 
@@ -54,215 +59,216 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 ## Topics
 
 ### Creating Images by Name
-- [Configuring and displaying symbol images in your UI](../uikit/configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
-- [init?(named: NSImage.Name)](nsimage/init(named:).md)
+- [init?(named: NSImage.Name)](./nsimage/init%28named%29.md)
   Returns the image object associated with the specified name.
-- [convenience init?(systemSymbolName: String, accessibilityDescription: String?)](nsimage/init(systemsymbolname:accessibilitydescription:).md)
+- [convenience init?(systemSymbolName: String, accessibilityDescription: String?)](./nsimage/init%28systemsymbolname,accessibilitydescription%29.md)
   Creates a symbol image with the system symbol name and accessibility description you specify.
-- [convenience init?(systemSymbolName: String, variableValue: Double, accessibilityDescription: String?)](nsimage/init(systemsymbolname:variablevalue:accessibilitydescription:).md)
+- [convenience init?(systemSymbolName: String, variableValue: Double, accessibilityDescription: String?)](./nsimage/init%28systemsymbolname,variablevalue,accessibilitydescription%29.md)
   Creates a symbol image with the system symbol name and variable value you specify.
-- [convenience init?(symbolName: String, variableValue: Double)](nsimage/init(symbolname:variablevalue:).md)
+- [convenience init?(symbolName: String, variableValue: Double)](./nsimage/init%28symbolname,variablevalue%29.md)
   Creates a symbol image with the symbol name and variable value you specify.
-- [convenience init?(symbolName: String, bundle: Bundle?, variableValue: Double)](nsimage/init(symbolname:bundle:variablevalue:).md)
+- [convenience init?(symbolName: String, bundle: Bundle?, variableValue: Double)](./nsimage/init%28symbolname,bundle,variablevalue%29.md)
   Creates a symbol image with the specified symbol name and variable value.
-- [convenience init(resource: ImageResource)](nsimage/init(resource:).md)
+- [convenience init(resource: ImageResource)](./nsimage/init%28resource%29.md)
   Initialize a `NSImage` with an image resource.
-- [func setName(NSImage.Name?) -> Bool](nsimage/setname(_:).md)
+- [func setName(NSImage.Name?) -> Bool](./nsimage/setname%28_%29.md)
   Registers the image object under the specified name.
-- [func name() -> NSImage.Name?](nsimage/name.md)
+- [func name() -> NSImage.Name?](./nsimage/name%28%29.md)
   Returns the name associated with the image, if any.
-- [typealias Name](nsimage/name-swift.typealias.md)
+- [typealias Name](./nsimage/name-swift.typealias.md)
   Named images, defined by the system or you, for use in your app.
-- [convenience init(imageLiteralResourceName: String)](nsimage/init(imageliteralresourcename:).md)
+- [convenience init(imageLiteralResourceName: String)](./nsimage/init%28imageliteralresourcename%29.md)
   Creates an image initialized with the specified resource name.
 ### Creating Dynamically Drawn Images
-- [convenience init(size: NSSize, flipped: Bool, drawingHandler: (NSRect) -> Bool)](nsimage/init(size:flipped:drawinghandler:).md)
+- [convenience init(size: NSSize, flipped: Bool, drawingHandler: (NSRect) -> Bool)](./nsimage/init%28size,flipped,drawinghandler%29.md)
   Creates and returns an image object whose contents are drawn using the specified block.
 ### Creating Images from Resource Files
-- [convenience init?(byReferencingFile: String)](nsimage/init(byreferencingfile:).md)
+- [convenience init?(byReferencingFile: String)](./nsimage/init%28byreferencingfile%29.md)
   Initializes and returns an image object using the specified file.
-- [convenience init(byReferencing: URL)](nsimage/init(byreferencing:).md)
+- [convenience init(byReferencing: URL)](./nsimage/init%28byreferencing%29.md)
   Initializes and returns an image object using the specified URL.
-- [convenience init?(contentsOfFile: String)](nsimage/init(contentsoffile:).md)
+- [convenience init?(contentsOfFile: String)](./nsimage/init%28contentsoffile%29.md)
   Initializes and returns an image object with the contents of the specified file.
-- [convenience init?(contentsOf: URL)](nsimage/init(contentsof:).md)
+- [convenience init?(contentsOf: URL)](./nsimage/init%28contentsof%29.md)
   Initializes and returns an image object with the contents of the specified URL.
 ### Creating Images from Existing Data
-- [convenience init?(data: Data)](nsimage/init(data:).md)
+- [convenience init?(data: Data)](./nsimage/init%28data%29.md)
   Initializes and returns an image object using the provided image data.
-- [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
+- [convenience init?(dataIgnoringOrientation: Data)](./nsimage/init%28dataignoringorientation%29.md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
+- [convenience init(cgImage: CGImage, size: NSSize)](./nsimage/init%28cgimage,size%29-8oznv.md)
   Creates a new image using the contents of the provided image.
-- [convenience init?(pasteboard: NSPasteboard)](nsimage/init(pasteboard:).md)
+- [convenience init?(pasteboard: NSPasteboard)](./nsimage/init%28pasteboard%29.md)
   Initializes and returns an image object with data from the specified pasteboard.
-- [init(coder: NSCoder)](nsimage/init(coder:).md)
+- [init(coder: NSCoder)](./nsimage/init%28coder%29.md)
   Initializes and returns an image object from data in an unarchiver.
 ### Creating Empty Images
-- [init(size: NSSize)](nsimage/init(size:).md)
+- [init(size: NSSize)](./nsimage/init%28size%29.md)
   Initializes and returns an image object with the specified dimensions.
 ### Creating Symbol Images
-- [func withSymbolConfiguration(NSImage.SymbolConfiguration) -> NSImage?](nsimage/withsymbolconfiguration(_:).md)
+- [func withSymbolConfiguration(NSImage.SymbolConfiguration) -> NSImage?](./nsimage/withsymbolconfiguration%28_%29.md)
   Creates a new symbol image with the specified configuration.
-- [NSImage.SymbolConfiguration](nsimage/symbolconfiguration-swift.class.md)
+- [NSImage.SymbolConfiguration](./nsimage/symbolconfiguration-swift.class.md)
   An object that contains the specific font, style, and weight attributes to apply to a symbol image.
 ### Getting the Symbol Image Configuration
-- [var symbolConfiguration: NSImage.SymbolConfiguration](nsimage/symbolconfiguration-swift.property.md)
+- [var symbolConfiguration: NSImage.SymbolConfiguration](./nsimage/symbolconfiguration-swift.property.md)
   The configuration details for a symbol image.
 ### Managing Loading and Drawing of Images
-- [var delegate: (any NSImageDelegate)?](nsimage/delegate.md)
+- [var delegate: (any NSImageDelegate)?](./nsimage/delegate.md)
   The image’s delegate object.
-- [protocol NSImageDelegate](nsimagedelegate.md)
+- [protocol NSImageDelegate](./nsimagedelegate.md)
   A set of optional methods that you can use to respond to drawing failures and manage incremental loads.
 ### Setting Attributes of Images
-- [var size: NSSize](nsimage/size.md)
+- [var size: NSSize](./nsimage/size.md)
   The size of the image.
-- [var isTemplate: Bool](nsimage/istemplate.md)
+- [var isTemplate: Bool](./nsimage/istemplate.md)
   A Boolean value that determines whether the image represents a template image.
-- [var isTemplate: Bool](nsimage/istemplate.md)
+- [var isTemplate: Bool](./nsimage/istemplate.md)
   A Boolean value that determines whether the image represents a template image.
 ### Determining Supported Types of Images
-- [class func canInit(with: NSPasteboard) -> Bool](nsimage/caninit(with:).md)
+- [class func canInit(with: NSPasteboard) -> Bool](./nsimage/caninit%28with%29.md)
   Tests whether the image can create an instance of itself using pasteboard data.
-- [class var imageTypes: [String]](nsimage/imagetypes.md)
+- [class var imageTypes: [String]](./nsimage/imagetypes.md)
   Returns an array of UTI strings identifying the image types supported by the registered image representation objects, either directly or through a user-installed filter service.
-- [class var imageUnfilteredTypes: [String]](nsimage/imageunfilteredtypes.md)
+- [class var imageUnfilteredTypes: [String]](./nsimage/imageunfilteredtypes.md)
   Returns an array of UTI strings identifying the image types supported directly by the registered image representation objects.
 ### Working with Representations of Images
-- [func addRepresentation(NSImageRep)](nsimage/addrepresentation(_:).md)
+- [func addRepresentation(NSImageRep)](./nsimage/addrepresentation%28_%29.md)
   Adds the specified image representation object to the image.
-- [func addRepresentations([NSImageRep])](nsimage/addrepresentations(_:).md)
+- [func addRepresentations([NSImageRep])](./nsimage/addrepresentations%28_%29.md)
   Adds an array of image representation objects to the image.
-- [var representations: [NSImageRep]](nsimage/representations.md)
+- [var representations: [NSImageRep]](./nsimage/representations.md)
   An array containing all of the image object’s image representations.
-- [func removeRepresentation(NSImageRep)](nsimage/removerepresentation(_:).md)
+- [func removeRepresentation(NSImageRep)](./nsimage/removerepresentation%28_%29.md)
   Removes and releases the specified image representation.
-- [func bestRepresentation(for: NSRect, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?) -> NSImageRep?](nsimage/bestrepresentation(for:context:hints:).md)
+- [func bestRepresentation(for: NSRect, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?) -> NSImageRep?](./nsimage/bestrepresentation%28for,context,hints%29.md)
   Returns the best representation of the image for the specified rectangle using the provided hints.
-- [NSImageRep.HintKey](nsimagerep/hintkey.md)
+- [NSImageRep.HintKey](./nsimagerep/hintkey.md)
   Constants for the keys to include in a hints dictionary when drawing the image.
-- [NSImage.LayoutDirection](nsimage/layoutdirection.md)
+- [NSImage.LayoutDirection](./nsimage/layoutdirection.md)
   Constants that describe the layout direction for the image.
 ### Setting the Representation Selection Criteria for Images
-- [var prefersColorMatch: Bool](nsimage/preferscolormatch.md)
+- [var prefersColorMatch: Bool](./nsimage/preferscolormatch.md)
   A Boolean value that indicates whether the image prefers to choose image representations using color-matching or resolution-matching.
-- [var usesEPSOnResolutionMismatch: Bool](nsimage/usesepsonresolutionmismatch.md)
+- [var usesEPSOnResolutionMismatch: Bool](./nsimage/usesepsonresolutionmismatch.md)
   A Boolean value that indicates whether EPS representations are preferred when no other representations match the resolution of the device.
-- [var matchesOnMultipleResolution: Bool](nsimage/matchesonmultipleresolution.md)
+- [var matchesOnMultipleResolution: Bool](./nsimage/matchesonmultipleresolution.md)
   A Boolean value that indicates whether image representations whose resolution is an integral multiple of the device resolution are a match.
 ### Drawing Images
-- [func draw(in: NSRect)](nsimage/draw(in:).md)
+- [func draw(in: NSRect)](./nsimage/draw%28in%29.md)
   Draws the image in the specified rectangle.
-- [func draw(at: NSPoint, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](nsimage/draw(at:from:operation:fraction:).md)
+- [func draw(at: NSPoint, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](./nsimage/draw%28at,from,operation,fraction%29.md)
   Draws all or part of the image at the specified point in the current coordinate system.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](nsimage/draw(in:from:operation:fraction:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](./nsimage/draw%28in,from,operation,fraction%29.md)
   Draws all or part of the image in the specified rectangle in the current coordinate system.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?)](nsimage/draw(in:from:operation:fraction:respectflipped:hints:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?)](./nsimage/draw%28in,from,operation,fraction,respectflipped,hints%29.md)
   Draws all or part of the image in the specified rectangle respecting the hints and the orientation of the current coordinate system.
-- [func drawRepresentation(NSImageRep, in: NSRect) -> Bool](nsimage/drawrepresentation(_:in:).md)
+- [func drawRepresentation(NSImageRep, in: NSRect) -> Bool](./nsimage/drawrepresentation%28_,in%29.md)
   Draws the image using the specified image representation object.
-- [enum NSCompositingOperation](nscompositingoperation.md)
+- [enum NSCompositingOperation](./nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
 ### Managing Drawing Options
-- [var isValid: Bool](nsimage/isvalid.md)
+- [var isValid: Bool](./nsimage/isvalid.md)
   A Boolean value that indicates whether it is possible to draw an image representation.
-- [var backgroundColor: NSColor](nsimage/backgroundcolor.md)
+- [var backgroundColor: NSColor](./nsimage/backgroundcolor.md)
   The background color for the image.
-- [var capInsets: NSEdgeInsets](nsimage/capinsets.md)
+- [var capInsets: NSEdgeInsets](./nsimage/capinsets.md)
   The cap insets for the image.
-- [var resizingMode: NSImage.ResizingMode](nsimage/resizingmode-swift.property.md)
+- [var resizingMode: NSImage.ResizingMode](./nsimage/resizingmode-swift.property.md)
   The resizing mode for the image.
-- [NSImage.ResizingMode](nsimage/resizingmode-swift.enum.md)
+- [NSImage.ResizingMode](./nsimage/resizingmode-swift.enum.md)
   Constants that describe the resizing mode for the image.
 ### Working with Alignment Metadata
-- [var alignmentRect: NSRect](nsimage/alignmentrect.md)
+- [var alignmentRect: NSRect](./nsimage/alignmentrect.md)
   A rectangle that you can use to position the image during layout.
 ### Managing Caching Options
-- [var cacheMode: NSImage.CacheMode](nsimage/cachemode-swift.property.md)
+- [var cacheMode: NSImage.CacheMode](./nsimage/cachemode-swift.property.md)
   The image’s caching mode.
-- [func recache()](nsimage/recache.md)
+- [func recache()](./nsimage/recache%28%29.md)
   Invalidates and frees offscreen caches of all image representations.
-- [NSImage.CacheMode](nsimage/cachemode-swift.enum.md)
+- [NSImage.CacheMode](./nsimage/cachemode-swift.enum.md)
   Constants that specify the caching policy on a per-image basis.
 ### Producing TIFF Data for Images
-- [var tiffRepresentation: Data?](nsimage/tiffrepresentation.md)
+- [var tiffRepresentation: Data?](./nsimage/tiffrepresentation.md)
   A data object containing TIFF data for all of the image representations in the image.
-- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](nsimage/tiffrepresentation(using:factor:).md)
+- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](./nsimage/tiffrepresentation%28using,factor%29.md)
   Returns a data object that contains TIFF data with the specified compression settings for all of the image representations in the image.
 ### Producing Core Graphics Images
-- [func cgImage(forProposedRect: UnsafeMutablePointer<NSRect>?, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?) -> CGImage?](nsimage/cgimage(forproposedrect:context:hints:).md)
+- [func cgImage(forProposedRect: UnsafeMutablePointer<NSRect>?, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?) -> CGImage?](./nsimage/cgimage%28forproposedrect,context,hints%29.md)
   Returns a Core Graphics image based on the contents of the current image object.
 ### Hit-Testing Images
-- [func hitTest(NSRect, withDestinationRect: NSRect, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?, flipped: Bool) -> Bool](nsimage/hittest(_:withdestinationrect:context:hints:flipped:).md)
+- [func hitTest(NSRect, withDestinationRect: NSRect, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?, flipped: Bool) -> Bool](./nsimage/hittest%28_,withdestinationrect,context,hints,flipped%29.md)
   Returns whether the destination rectangle would intersect a non-transparent portion of the image.
 ### Managing Image Accessibility
-- [var accessibilityDescription: String?](nsimage/accessibilitydescription.md)
+- [var accessibilityDescription: String?](./nsimage/accessibilitydescription.md)
   The image’s accessibility description.
 ### Using Images with Core Animation
-- [func layerContents(forContentsScale: CGFloat) -> Any](nsimage/layercontents(forcontentsscale:).md)
+- [func layerContents(forContentsScale: CGFloat) -> Any](./nsimage/layercontents%28forcontentsscale%29.md)
   Returns an object that may be used as the contents of a layer.
-- [func recommendedLayerContentsScale(CGFloat) -> CGFloat](nsimage/recommendedlayercontentsscale(_:).md)
+- [func recommendedLayerContentsScale(CGFloat) -> CGFloat](./nsimage/recommendedlayercontentsscale%28_%29.md)
   Returns the recommended layer contents scale for this image.
 ### Managing Axis Matching
-- [var matchesOnlyOnBestFittingAxis: Bool](nsimage/matchesonlyonbestfittingaxis.md)
+- [var matchesOnlyOnBestFittingAxis: Bool](./nsimage/matchesonlyonbestfittingaxis.md)
   A Boolean value that indicates whether the image matches only on the best fitting axis.
 ### Localizing Images
-- [func withLocale(Locale?) -> NSImage](nsimage/withlocale(_:).md)
+- [func withLocale(Locale?) -> NSImage](./nsimage/withlocale%28_%29.md)
   Creates and returns a new image with the specified locale.
-- [var locale: Locale?](nsimage/locale.md)
+- [var locale: Locale?](./nsimage/locale.md)
   The image’s preferred locale for resolving representations, if one has been specified using `-imageWithLocale:`. Otherwise, `nil`.
 ### Enumerations
-- [NSImage.DynamicRange](nsimage/dynamicrange.md)
+- [NSImage.DynamicRange](./nsimage/dynamicrange.md)
   Describes how High Dynamic Range (HDR) image content displays.
 ### Deprecated
-- [Deprecated symbols](nsimage-deprecated-symbols.md)
+- [Deprecated symbols](./nsimage-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [convenience init(CGImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-15zeh.md)
-- [convenience init(byReferencingURL: URL)](nsimage/init(byreferencingurl:).md)
-- [convenience init?(contentsOfURL: URL)](nsimage/init(contentsofurl:).md)
+- [convenience init(CGImage: CGImage, size: NSSize)](./nsimage/init%28cgimage,size%29-15zeh.md)
+- [convenience init(byReferencingURL: URL)](./nsimage/init%28byreferencingurl%29.md)
+- [convenience init?(contentsOfURL: URL)](./nsimage/init%28contentsofurl%29.md)
 ### Default Implementations
-- [NSPasteboardReading Implementations](nsimage/nspasteboardreading-implementations.md)
+- [NSPasteboardReading Implementations](./nsimage/nspasteboardreading-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [AttachableAsImage](../testing/attachableasimage.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
-- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSPasteboardReading](nspasteboardreading.md)
-- [NSPasteboardWriting](nspasteboardwriting.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transferable](../coretransferable/transferable.md)
+- [AttachableAsImage](../Testing/attachableasimage.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSItemProviderReading](../Foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../Foundation/nsitemproviderwriting.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSPasteboardReading](./nspasteboardreading.md)
+- [NSPasteboardWriting](./nspasteboardwriting.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transferable](../CoreTransferable/transferable.md)
 
 ## See Also
 
-- [Providing images for different appearances](../uikit/providing-images-for-different-appearances.md)
+### Images
+- [Providing images for different appearances](../UIKit/providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
-- [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Continuity Camera in Your Mac App](./supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
-- [Supporting HDR images in your app](../uikit/supporting-hdr-images-in-your-app.md)
+- [Supporting HDR images in your app](../UIKit/supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
-- [Applying Apple HDR effect to your photos](applying-apple-hdr-effect-to-your-photos.md)
+- [Applying Apple HDR effect to your photos](./applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.
-- [protocol NSImageDelegate](nsimagedelegate.md)
+- [protocol NSImageDelegate](./nsimagedelegate.md)
   A set of optional methods that you can use to respond to drawing failures and manage incremental loads.
-- [class NSImageRep](nsimagerep.md)
+- [class NSImageRep](./nsimagerep.md)
   A semiabstract superclass that provides subclasses that you use to draw an image from a particular type of source data.
 
 

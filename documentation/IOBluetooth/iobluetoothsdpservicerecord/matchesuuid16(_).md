@@ -1,17 +1,22 @@
 # matchesUUID16(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns TRUE the UUID16 is found in the target service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func matchesUUID16(_ uuid16: BluetoothSDPUUID16) -> Bool
+```
+
+```objc
+- (BOOL) matchesUUID16:(BluetoothSDPUUID16) uuid16;
 ```
 
 #### Return Value

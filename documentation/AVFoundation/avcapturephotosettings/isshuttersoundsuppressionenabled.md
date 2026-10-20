@@ -1,7 +1,8 @@
 # isShutterSoundSuppressionEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to suppress the built-in shutter sound when capturing a photo.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether to suppress the built-in shutter sound wh
 var isShutterSoundSuppressionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isShutterSoundSuppressionEnabled) BOOL shutterSoundSuppressionEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to suppress the photo output’s built-in shutter sound for this request. The photo output throws an invalid argument exception when calling [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) if its [`isShutterSoundSuppressionSupported`](avcapturephotooutput/isshuttersoundsuppressionsupported.md) property returns [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to suppress the photo output’s built-in shutter sound for this request. The photo output throws an invalid argument exception when calling [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) if its [`isShutterSoundSuppressionSupported`](../avcapturephotooutput/isshuttersoundsuppressionsupported.md) property returns [`false`](../../Swift/false.md).
 
 
 ---

@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](partialrangefrom/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

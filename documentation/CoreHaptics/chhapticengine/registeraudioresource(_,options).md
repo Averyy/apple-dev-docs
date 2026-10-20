@@ -1,7 +1,8 @@
 # registerAudioResource(_:options:)
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers an external audio to use as a custom waveform.
 
@@ -19,9 +20,13 @@ Registers an external audio to use as a custom waveform.
 func registerAudioResource(_ resourceURL: URL, options: [AnyHashable : Any] = [:]) throws -> CHHapticAudioResourceID
 ```
 
+```objc
+- (CHHapticAudioResourceID) registerAudioResource:(NSURL *) resourceURL options:(NSDictionary *) options error:(NSError **) outError;
+```
+
 ## Mentions
 
-- [Preparing your app to play haptics](preparing-your-app-to-play-haptics.md)
+- [Preparing your app to play haptics](../preparing-your-app-to-play-haptics.md)
 
 #### Return Value
 
@@ -33,7 +38,7 @@ Before you initialize a Core Haptics event with your own audio file, use this me
 
 Input the value that this method returns when creating the dictionary or event representation of a haptic pattern.
 
-> **Note**:  In an Apple Haptics and Audio File (AHAP), you specify audio files by their path, as opposed to their registered resource URL. For more information, see [`Representing haptic patterns in AHAP files`](representing-haptic-patterns-in-ahap-files.md).
+> **Note**:  In an Apple Haptics and Audio File (AHAP), you specify audio files by their path, as opposed to their registered resource URL. For more information, see [Representing haptic patterns in AHAP files](../representing-haptic-patterns-in-ahap-files.md).
 
 ## Parameters
 
@@ -43,18 +48,19 @@ Input the value that this method returns when creating the dictionary or event r
 ## Topics
 
 ### Audio Resource Keys
-- [let CHHapticAudioResourceKeyLoopEnabled: String](chhapticaudioresourcekeyloopenabled.md)
+- [let CHHapticAudioResourceKeyLoopEnabled: String](../chhapticaudioresourcekeyloopenabled.md)
   A key for a Boolean value that indicates whether to loop audio playback.
-- [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](chhapticaudioresourcekeyusevolumeenvelope.md)
+- [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](../chhapticaudioresourcekeyusevolumeenvelope.md)
   A key for a Boolean value that indicates whether audio file playback fades in and out using an envelope.
-- [typealias CHHapticAudioResourceKey](chhapticaudioresourcekey.md)
+- [typealias CHHapticAudioResourceKey](../chhapticaudioresourcekey.md)
   A type alias for a key that identifies the playback behavior of an audio resource.
 
 ## See Also
 
-- [func unregisterAudioResource(CHHapticAudioResourceID) throws](chhapticengine/unregisteraudioresource(_:).md)
+### Registering Audio Resources
+- [func unregisterAudioResource(CHHapticAudioResourceID) throws](./unregisteraudioresource%28_%29.md)
   Unregisters an external audio file that you previously registered with the engine.
-- [typealias CHHapticAudioResourceID](chhapticaudioresourceid.md)
+- [typealias CHHapticAudioResourceID](../chhapticaudioresourceid.md)
   A type that identifies a custom audio resource.
 
 

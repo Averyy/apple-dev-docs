@@ -1,7 +1,8 @@
 # bInterfaceNumber
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zero-based index of this interface in the current configuration.
 
@@ -10,27 +11,28 @@ The zero-based index of this interface in the current configuration.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bInterfaceNumber;
 ```
 
 ## See Also
 
-- [bLength](iousbinterfacedescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The size of this descriptor in bytes.
-- [bDescriptorType](iousbinterfacedescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   A constant value indicating an interface descriptor.
-- [bAlternateSetting](iousbinterfacedescriptor/balternatesetting.md)
+- [bAlternateSetting](./balternatesetting.md)
   The alternative setting for the interface.
-- [bNumEndpoints](iousbinterfacedescriptor/bnumendpoints.md)
+- [bNumEndpoints](./bnumendpoints.md)
   The number of endpoints that this interface uses.
-- [bInterfaceClass](iousbinterfacedescriptor/binterfaceclass.md)
+- [bInterfaceClass](./binterfaceclass.md)
   The class code indicating the behavior of this interface.
-- [bInterfaceSubClass](iousbinterfacedescriptor/binterfacesubclass.md)
+- [bInterfaceSubClass](./binterfacesubclass.md)
   The subclass code that further defines the behavior of this interface.
-- [bInterfaceProtocol](iousbinterfacedescriptor/binterfaceprotocol.md)
+- [bInterfaceProtocol](./binterfaceprotocol.md)
   The protocol that this interface supports.
-- [iInterface](iousbinterfacedescriptor/iinterface.md)
+- [iInterface](./iinterface.md)
   The index of a string descriptor that describes this interface.
 
 

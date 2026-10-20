@@ -1,16 +1,17 @@
 # kScsiUserParallelTaskCurrentVersion1
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Version 1 of the parallel task structure.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kScsiUserParallelTaskCurrentVersion1
 ```
 

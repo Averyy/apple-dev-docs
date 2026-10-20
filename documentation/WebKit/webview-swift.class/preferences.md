@@ -1,12 +1,15 @@
 # preferences
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s preferences.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
@@ -14,11 +17,17 @@ The receiver’s preferences.
 var preferences: WebPreferences! { get set }
 ```
 
+```objc
+@property (nonatomic, strong) WebPreferences * preferences;
+```
+
 ## See Also
 
-- [class func standard() -> WebPreferences!](webpreferences/standard.md)
+### Related Documentation
+- [class func standard() -> WebPreferences!](../webpreferences/standard%28%29.md)
   Returns the standard set of preferences that may be used by all WebView objects.
-- [var preferencesIdentifier: String!](webview-swift.class/preferencesidentifier.md)
+### Getting and Setting Preferences
+- [var preferencesIdentifier: String!](./preferencesidentifier.md)
   The identifier of the receiver’s preferences.
 
 

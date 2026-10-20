@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates an existing group in the contact store.
 
@@ -18,6 +19,10 @@ Updates an existing group in the contact store.
 func update(_ group: CNMutableGroup)
 ```
 
+```objc
+- (void) updateGroup:(CNMutableGroup *) group;
+```
+
 #### Discussion
 
 The group to be updated must already exist in the contact store. If it does not, the update request fails, the `CNErrorCodeRecordDoesNotExist` error is thrown, and the `CNErrorUserInfoAffectedRecordsKey` array is updated to contain that object.
@@ -28,13 +33,14 @@ The group to be updated must already exist in the contact store. If it does not,
 
 ## See Also
 
-- [func add(CNMutableGroup, toContainerWithIdentifier: String?)](cnsaverequest/add(_:tocontainerwithidentifier:)-4ikaa.md)
+### Saving group changes
+- [func add(CNMutableGroup, toContainerWithIdentifier: String?)](./add%28_,tocontainerwithidentifier%29-4ikaa.md)
   Adds a group to the contact store.
-- [func delete(CNMutableGroup)](cnsaverequest/delete(_:)-29lsm.md)
+- [func delete(CNMutableGroup)](./delete%28_%29-29lsm.md)
   Deletes a group from the contact store.
-- [func addMember(CNContact, to: CNGroup)](cnsaverequest/addmember(_:to:).md)
+- [func addMember(CNContact, to: CNGroup)](./addmember%28_,to%29.md)
   Adds a contact as a member of a group.
-- [func removeMember(CNContact, from: CNGroup)](cnsaverequest/removemember(_:from:).md)
+- [func removeMember(CNContact, from: CNGroup)](./removemember%28_,from%29.md)
   Removes a contact as a member of a group.
 
 

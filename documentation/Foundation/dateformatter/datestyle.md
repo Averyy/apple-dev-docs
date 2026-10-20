@@ -1,7 +1,8 @@
 # dateStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date style of the receiver.
 
@@ -20,17 +21,22 @@ The date style of the receiver.
 var dateStyle: DateFormatter.Style { get set }
 ```
 
+```objc
+@property NSDateFormatterStyle dateStyle;
+```
+
 ## See Also
 
-- [var timeStyle: DateFormatter.Style](dateformatter/timestyle.md)
+### Managing Formats and Styles
+- [var timeStyle: DateFormatter.Style](./timestyle.md)
   The time style of the receiver.
-- [var dateFormat: String!](dateformatter/dateformat.md)
+- [var dateFormat: String!](./dateformat.md)
   The date format string used by the receiver.
-- [func setLocalizedDateFormatFromTemplate(String)](dateformatter/setlocalizeddateformatfromtemplate(_:).md)
+- [func setLocalizedDateFormatFromTemplate(String)](./setlocalizeddateformatfromtemplate%28_%29.md)
   Sets the date format from a template using the specified locale for the receiver.
-- [class func dateFormat(fromTemplate: String, options: Int, locale: Locale?) -> String?](dateformatter/dateformat(fromtemplate:options:locale:).md)
+- [class func dateFormat(fromTemplate: String, options: Int, locale: Locale?) -> String?](./dateformat%28fromtemplate,options,locale%29.md)
   Returns a localized date format string representing the given date format components arranged appropriately for the specified locale.
-- [var formattingContext: Formatter.Context](dateformatter/formattingcontext.md)
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   The capitalization formatting context used when formatting a date.
 
 

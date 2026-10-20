@@ -1,7 +1,8 @@
 # MTLAttributeDescriptorArray
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An array of attribute descriptor objects.
 
@@ -19,37 +20,42 @@ An array of attribute descriptor objects.
 class MTLAttributeDescriptorArray
 ```
 
+```objc
+@interface MTLAttributeDescriptorArray : NSObject
+```
+
 #### Overview
 
-An [`MTLAttributeDescriptorArray`](mtlattributedescriptorarray.md) defines the data format and index binding for the attribute argument table, using [`MTLAttributeDescriptor`](mtlattributedescriptor.md) instances.
+An [`MTLAttributeDescriptorArray`](./mtlattributedescriptorarray.md) defines the data format and index binding for the attribute argument table, using [`MTLAttributeDescriptor`](./mtlattributedescriptor.md) instances.
 
 ## Topics
 
 ### Accessing attribute state objects
-- [subscript(Int) -> MTLAttributeDescriptor!](mtlattributedescriptorarray/subscript(_:).md)
+- [subscript(Int) -> MTLAttributeDescriptor!](./mtlattributedescriptorarray/subscript%28_%29.md)
   Returns the state of the specified attribute.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var stageInputDescriptor: MTLStageInputOutputDescriptor?](mtlcomputepipelinedescriptor/stageinputdescriptor.md)
+### Configuring compute pass inputs
+- [var stageInputDescriptor: MTLStageInputOutputDescriptor?](./mtlcomputepipelinedescriptor/stageinputdescriptor.md)
   The organization of input and output data for the next kernel call.
-- [class MTLAttributeDescriptor](mtlattributedescriptor.md)
+- [class MTLAttributeDescriptor](./mtlattributedescriptor.md)
   A descriptor of an argument’s format and where its data is in memory.
-- [class MTLBufferLayoutDescriptor](mtlbufferlayoutdescriptor.md)
+- [class MTLBufferLayoutDescriptor](./mtlbufferlayoutdescriptor.md)
   A description of how a compute function fetches input data for an attribute.
-- [class MTLBufferLayoutDescriptorArray](mtlbufferlayoutdescriptorarray.md)
+- [class MTLBufferLayoutDescriptorArray](./mtlbufferlayoutdescriptorarray.md)
   An array of buffer layout descriptor objects.
 
 

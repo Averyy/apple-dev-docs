@@ -1,7 +1,8 @@
 # GameCenterActivityLocalizationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a activity.
 
@@ -10,21 +11,21 @@ The request body you use to update a activity.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityLocalizationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityLocalizationUpdateRequest.Data.Attributes](gamecenteractivitylocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterActivityLocalizationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
 
 ## Properties
 
 - `attributes` (GameCenterActivityLocalizationUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterActivityLocalizations`
 
 
 ---

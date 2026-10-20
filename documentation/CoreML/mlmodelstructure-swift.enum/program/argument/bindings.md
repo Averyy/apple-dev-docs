@@ -1,7 +1,8 @@
 # bindings
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bindings.
 

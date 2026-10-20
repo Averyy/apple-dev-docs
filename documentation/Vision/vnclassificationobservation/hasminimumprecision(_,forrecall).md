@@ -1,7 +1,8 @@
 # hasMinimumPrecision(_:forRecall:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the observation for a specific recall has a minimum precision value.
 
@@ -19,6 +20,10 @@ Determines whether the observation for a specific recall has a minimum precision
 func hasMinimumPrecision(_ minimumPrecision: Float, forRecall recall: Float) -> Bool
 ```
 
+```objc
+- (BOOL) hasMinimumPrecision:(float) minimumPrecision forRecall:(float) recall;
+```
+
 #### Return Value
 
 A Boolean indicating whether or not this classification observation provides a minimum percentage of relevant results that meet the desired recall criterion.
@@ -30,9 +35,10 @@ A Boolean indicating whether or not this classification observation provides a m
 
 ## See Also
 
-- [var hasPrecisionRecallCurve: Bool](vnclassificationobservation/hasprecisionrecallcurve.md)
+### Measuring Confidence and Precision
+- [var hasPrecisionRecallCurve: Bool](./hasprecisionrecallcurve.md)
   A Boolean variable indicating whether the observation contains precision and recall curves.
-- [func hasMinimumRecall(Float, forPrecision: Float) -> Bool](vnclassificationobservation/hasminimumrecall(_:forprecision:).md)
+- [func hasMinimumRecall(Float, forPrecision: Float) -> Bool](./hasminimumrecall%28_,forprecision%29.md)
   Determines whether the observation for a specific precision has a minimum recall value.
 
 

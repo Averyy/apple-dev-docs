@@ -1,7 +1,8 @@
 # RejectionReasonResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for a rejection reason operation.
 
@@ -10,7 +11,7 @@ The response object for a rejection reason operation.
 
 ## Declaration
 
-```swift
+```
 object RejectionReasonResponse
 ```
 
@@ -44,22 +45,23 @@ The API returns `RejectionReasonResponse` as the envelope when you retrieve reje
 
 ## Properties
 
-- `result` (CreativeRejectionReason): The rejection reason record describing why an ad creative was rejected during review. See [`CreativeRejectionReason`](creativerejectionreason.md) for the full field reference, including `creativeId` and `reasonLevel`. Read-only.
-- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md).
+- `result` (CreativeRejectionReason): The rejection reason record describing why an ad creative was rejected during review. See [`CreativeRejectionReason`](./creativerejectionreason.md) for the full field reference, including `creativeId` and `reasonLevel`. Read-only.
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](./error.md).
 
 ## See Also
 
-- [App Eligibility Endpoints](app-eligibility-endpoints.md)
+### Related Documentation
+- [App Eligibility Endpoints](./app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
-- [object EligibilityQueryRequest](eligibilityqueryrequest.md)
+- [object EligibilityQueryRequest](./eligibilityqueryrequest.md)
   The request body for querying app eligibility.
-- [object EligibilityQueryResponse](eligibilityqueryresponse.md)
+- [object EligibilityQueryResponse](./eligibilityqueryresponse.md)
   The paginated response object for an app eligibility query.
-- [object AppDetailsResponse](appdetailsresponse.md)
+- [object AppDetailsResponse](./appdetailsresponse.md)
   The response object for a get app details operation.
-- [object AppDetails](appdetails.md)
+- [object AppDetails](./appdetails.md)
   Application details and metadata.
-- [object EligibilityResponse](eligibilityresponse.md)
+- [object EligibilityResponse](./eligibilityresponse.md)
   The response object describing an app’s eligibility for a specific supply placement, supply source, country or region, and device class.
 
 

@@ -1,7 +1,8 @@
 # AppShortcutsBuilder
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 
@@ -11,7 +12,7 @@ A result builder that allows you to declaratively describe the App Shortcuts tha
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,34 +25,35 @@ enum AppShortcutsBuilder
 ## Topics
 
 ### Building App Shortcuts
-- [static func buildBlock() -> [AppShortcut]](appshortcutsbuilder/buildblock.md)
-- [static func buildBlock(AppShortcut...) -> [AppShortcut]](appshortcutsbuilder/buildblock(_:)-110ow.md)
-- [static func buildBlock([AppShortcut]...) -> [AppShortcut]](appshortcutsbuilder/buildblock(_:)-8xfbe.md)
-- [static func buildExpression(AppShortcut) -> AppShortcut](appshortcutsbuilder/buildexpression(_:)-31qci.md)
-- [static func buildExpression(AppShortcut) -> [AppShortcut]](appshortcutsbuilder/buildexpression(_:)-9u47j.md)
-- [static func buildLimitedAvailability([AppShortcut]) -> any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker](appshortcutsbuilder/buildlimitedavailability(_:).md)
-- [static func buildOptional((any _AppShortcutsContentEmitterMarker & _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](appshortcutsbuilder/buildoptional(_:)-3pbr9.md)
-- [static func buildOptional((any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](appshortcutsbuilder/buildoptional(_:)-4urzx.md)
+- [static func buildBlock() -> [AppShortcut]](./appshortcutsbuilder/buildblock%28%29.md)
+- [static func buildBlock(AppShortcut...) -> [AppShortcut]](./appshortcutsbuilder/buildblock%28_%29-110ow.md)
+- [static func buildBlock([AppShortcut]...) -> [AppShortcut]](./appshortcutsbuilder/buildblock%28_%29-8xfbe.md)
+- [static func buildExpression(AppShortcut) -> AppShortcut](./appshortcutsbuilder/buildexpression%28_%29-31qci.md)
+- [static func buildExpression(AppShortcut) -> [AppShortcut]](./appshortcutsbuilder/buildexpression%28_%29-9u47j.md)
+- [static func buildLimitedAvailability([AppShortcut]) -> any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker](./appshortcutsbuilder/buildlimitedavailability%28_%29.md)
+- [static func buildOptional((any _AppShortcutsContentEmitterMarker & _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](./appshortcutsbuilder/buildoptional%28_%29-3pbr9.md)
+- [static func buildOptional((any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](./appshortcutsbuilder/buildoptional%28_%29-4urzx.md)
 
 ## See Also
 
-- [struct AppShortcut](appshortcut.md)
+### App Shortcut definition
+- [struct AppShortcut](./appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
-- [struct AppShortcutPhrase](appshortcutphrase.md)
+- [struct AppShortcutPhrase](./appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
-- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
+- [enum AppShortcutPhraseToken](./appshortcutphrasetoken.md)
   Dynamic values you can include in the spoken phrases that run your shortcut.
-- [struct NegativeAppShortcutPhrase](negativeappshortcutphrase.md)
+- [struct NegativeAppShortcutPhrase](./negativeappshortcutphrase.md)
   An object that represents a negative phrase.
-- [struct NegativeAppShortcutPhrases](negativeappshortcutphrases.md)
+- [struct NegativeAppShortcutPhrases](./negativeappshortcutphrases.md)
   This is a set of negative phrases, which will all be added to the app-level negative training set. All the training data specified here, will be used to completely bypass your app
-- [NSAppIconActionTintColorName](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md)
+- [NSAppIconActionTintColorName](../BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md)
   The tint color to apply to text and symbols in the App Shortcuts platter.
-- [NSAppIconComplementingColorNames](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
+- [NSAppIconComplementingColorNames](../BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
   The names of the colors to use for the background of the App Shortcuts platter.
-- [enum ShortcutTileColor](shortcuttilecolor.md)
+- [enum ShortcutTileColor](./shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
-- [protocol AppShortcutsContent](appshortcutscontent.md)
+- [protocol AppShortcutsContent](./appshortcutscontent.md)
 
 
 ---

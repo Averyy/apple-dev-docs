@@ -1,7 +1,8 @@
 # errAuthorizationToolExecuteFailure
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The tool failed to execute.
 
@@ -13,6 +14,10 @@ The tool failed to execute.
 
 ```swift
 var errAuthorizationToolExecuteFailure: OSStatus { get }
+```
+
+```c
+errAuthorizationToolExecuteFailure
 ```
 
 

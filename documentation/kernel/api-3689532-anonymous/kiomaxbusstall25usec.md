@@ -1,7 +1,8 @@
 # kIOMaxBusStall25usec
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIOMaxBusStall25usec = 25000
 ```
 

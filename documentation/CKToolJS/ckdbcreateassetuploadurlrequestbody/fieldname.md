@@ -1,7 +1,8 @@
 # fieldName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The field name for this asset.
 
@@ -10,7 +11,7 @@ The field name for this asset.
 
 ## Declaration
 
-```swift
+```
 attribute string fieldName;
 ```
 

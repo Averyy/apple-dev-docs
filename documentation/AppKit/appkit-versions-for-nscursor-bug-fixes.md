@@ -1,6 +1,7 @@
 # AppKit Versions for NSCursor Bug Fixes
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 The version of the AppKit framework containing a specific bug fix.
 

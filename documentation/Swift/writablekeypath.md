@@ -1,7 +1,8 @@
 # WritableKeyPath
 
 **Framework**: Swift  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A key path that supports reading from and writing to the resulting value.
 
@@ -23,17 +24,18 @@ class WritableKeyPath<Root, Value>
 ## Relationships
 
 ### Inherits From
-- [KeyPath](keypath.md)
+- [KeyPath](./keypath.md)
 ### Inherited By
-- [ReferenceWritableKeyPath](referencewritablekeypath.md)
+- [ReferenceWritableKeyPath](./referencewritablekeypath.md)
 ### Conforms To
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
 
 ## See Also
 
-- [class ReferenceWritableKeyPath](referencewritablekeypath.md)
+### Writable Key Paths
+- [class ReferenceWritableKeyPath](./referencewritablekeypath.md)
   A key path that supports reading from and writing to the resulting value with reference semantics.
 
 

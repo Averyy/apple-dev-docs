@@ -1,7 +1,8 @@
 # devices
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the list of MTRDevice instances that this controller has loaded into memory. Returns an empty array if no devices are in memory.
 
@@ -18,6 +19,10 @@ Returns the list of MTRDevice instances that this controller has loaded into mem
 
 ```swift
 var devices: [MTRDevice] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<MTRDevice *> * devices;
 ```
 
 

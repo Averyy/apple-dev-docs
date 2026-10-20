@@ -1,7 +1,8 @@
 # sign(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sign of the input tensor elements.
 
@@ -17,6 +18,10 @@ Returns the sign of the input tensor elements.
 
 ```swift
 func sign(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) signWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

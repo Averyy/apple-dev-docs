@@ -1,7 +1,8 @@
 # GCGamepadValueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Signature for the block executed if any element in the gamepad profile changes value.
 
@@ -19,6 +20,10 @@ Signature for the block executed if any element in the gamepad profile changes v
 typealias GCGamepadValueChangedHandler = (GCGamepad, GCControllerElement) -> Void
 ```
 
+```c
+typedef void (^)(GCGamepad *, GCControllerElement *) GCGamepadValueChangedHandler;
+```
+
 #### Discussion
 
 The block parameters are defined as follows:
@@ -28,7 +33,7 @@ The block parameters are defined as follows:
 
 If multiple elements change values at the same time, the block is called once for each element that changed. The block is called only for the elements directly attached to the profile object; if a child element of one of those elements changes values, the block is called for the parent.
 
-This block type is used by the [`valueChangedHandler`](gcgamepad/valuechangedhandler.md) property.
+This block type is used by the [`valueChangedHandler`](./gcgamepad/valuechangedhandler.md) property.
 
 
 ---

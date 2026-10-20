@@ -1,7 +1,8 @@
 # Publishers.Contains.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s failure type.
 
 ## See Also
 
-- [Publishers.Contains.Output](publishers/contains/output-swift.typealias.md)
+### Declaring supporting types
+- [Publishers.Contains.Output](./output-swift.typealias.md)
   The kind of values published by this publisher.
 
 

@@ -1,7 +1,8 @@
 # init(user:password:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a password credential.
 
@@ -18,6 +19,10 @@ Initializes a password credential.
 
 ```swift
 init(user: String, password: String)
+```
+
+```objc
+- (instancetype) initWithUser:(NSString *) user password:(NSString *) password;
 ```
 
 ## Parameters

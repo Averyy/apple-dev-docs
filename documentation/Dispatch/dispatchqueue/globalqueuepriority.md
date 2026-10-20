@@ -1,18 +1,19 @@
 # DispatchQueue.GlobalQueuePriority
 
 **Framework**: Dispatch  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Legacy constants for queue priorities.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -23,22 +24,23 @@ enum GlobalQueuePriority
 ## Topics
 
 ### Priorities
-- [DispatchQueue.GlobalQueuePriority.default](dispatchqueue/globalqueuepriority/default.md)
-- [DispatchQueue.GlobalQueuePriority.high](dispatchqueue/globalqueuepriority/high.md)
-- [DispatchQueue.GlobalQueuePriority.low](dispatchqueue/globalqueuepriority/low.md)
-- [DispatchQueue.GlobalQueuePriority.background](dispatchqueue/globalqueuepriority/background.md)
+- [DispatchQueue.GlobalQueuePriority.default](./globalqueuepriority/default.md)
+- [DispatchQueue.GlobalQueuePriority.high](./globalqueuepriority/high.md)
+- [DispatchQueue.GlobalQueuePriority.low](./globalqueuepriority/low.md)
+- [DispatchQueue.GlobalQueuePriority.background](./globalqueuepriority/background.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func global(priority: DispatchQueue.GlobalQueuePriority) -> DispatchQueue](dispatchqueue/global(priority:).md)
+### Deprecated
+- [class func global(priority: DispatchQueue.GlobalQueuePriority) -> DispatchQueue](./global%28priority%29.md)
 
 
 ---

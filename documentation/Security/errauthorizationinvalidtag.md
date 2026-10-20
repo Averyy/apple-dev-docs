@@ -1,7 +1,8 @@
 # errAuthorizationInvalidTag
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The tag parameter is invalid.
 
@@ -13,6 +14,10 @@ The tag parameter is invalid.
 
 ```swift
 var errAuthorizationInvalidTag: OSStatus { get }
+```
+
+```c
+errAuthorizationInvalidTag
 ```
 
 

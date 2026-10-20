@@ -1,7 +1,8 @@
 # kVTDecompressionProperty_FieldMode_DeinterlaceFields
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,12 +18,17 @@
 let kVTDecompressionProperty_FieldMode_DeinterlaceFields: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionProperty_FieldMode_DeinterlaceFields;
+```
+
 ## See Also
 
-- [let kVTDecompressionProperty_FieldMode_BothFields: CFString](kvtdecompressionproperty_fieldmode_bothfields.md)
-- [let kVTDecompressionProperty_FieldMode_BottomFieldOnly: CFString](kvtdecompressionproperty_fieldmode_bottomfieldonly.md)
-- [let kVTDecompressionProperty_FieldMode_SingleField: CFString](kvtdecompressionproperty_fieldmode_singlefield.md)
-- [let kVTDecompressionProperty_FieldMode_TopFieldOnly: CFString](kvtdecompressionproperty_fieldmode_topfieldonly.md)
+### Field Modes
+- [let kVTDecompressionProperty_FieldMode_BothFields: CFString](./kvtdecompressionproperty_fieldmode_bothfields.md)
+- [let kVTDecompressionProperty_FieldMode_BottomFieldOnly: CFString](./kvtdecompressionproperty_fieldmode_bottomfieldonly.md)
+- [let kVTDecompressionProperty_FieldMode_SingleField: CFString](./kvtdecompressionproperty_fieldmode_singlefield.md)
+- [let kVTDecompressionProperty_FieldMode_TopFieldOnly: CFString](./kvtdecompressionproperty_fieldmode_topfieldonly.md)
 
 
 ---

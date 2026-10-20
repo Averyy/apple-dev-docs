@@ -1,7 +1,8 @@
 # IsLikelyBeingCoachedInsight.Value.high
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates there’s a high risk that a third party is coaching a person in some form.
 
@@ -17,9 +18,10 @@ case high
 
 ## See Also
 
-- [IsLikelyBeingCoachedInsight.Value.medium](islikelybeingcoachedinsight/value/medium.md)
+### Enumeration Cases - generated
+- [IsLikelyBeingCoachedInsight.Value.medium](./medium.md)
   A result that indicates there’s a medium chance that a third party is coaching a person in some form.
-- [IsLikelyBeingCoachedInsight.Value.unknown](islikelybeingcoachedinsight/value/unknown.md)
+- [IsLikelyBeingCoachedInsight.Value.unknown](./unknown.md)
   A result that indicates a lack of evidence as to whether or not coaching is occurring.
 
 

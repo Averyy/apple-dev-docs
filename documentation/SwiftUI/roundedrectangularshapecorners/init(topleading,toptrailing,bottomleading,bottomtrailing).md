@@ -1,7 +1,8 @@
 # init(topLeading:topTrailing:bottomLeading:bottomTrailing:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create corner styles with per-corner styles.
 

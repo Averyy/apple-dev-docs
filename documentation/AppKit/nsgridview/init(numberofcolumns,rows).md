@@ -1,7 +1,8 @@
 # init(numberOfColumns:rows:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly allocated grid view object with the specified number of columns and rows.
 
@@ -14,6 +15,10 @@ Creates a newly allocated grid view object with the specified number of columns 
 convenience init(numberOfColumns columnCount: Int, rows rowCount: Int)
 ```
 
+```objc
++ (instancetype) gridViewWithNumberOfColumns:(NSInteger) columnCount rows:(NSInteger) rowCount;
+```
+
 ## Parameters
 
 - `columnCount`: The number of columns for this grid view.
@@ -21,11 +26,12 @@ convenience init(numberOfColumns columnCount: Int, rows rowCount: Int)
 
 ## See Also
 
-- [convenience init(views: [[NSView]])](nsgridview/init(views:).md)
+### Creating a Grid View
+- [convenience init(views: [[NSView]])](./init%28views%29.md)
   Creates a newly allocated grid view object with the specified array of arrays of views.
-- [init(frame: NSRect)](nsgridview/init(frame:).md)
+- [init(frame: NSRect)](./init%28frame%29.md)
   Creates a newly allocated grid view object with the specified frame rectangle.
-- [init?(coder: NSCoder)](nsgridview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a newly allocated grid view object from the coder.
 
 

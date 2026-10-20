@@ -1,7 +1,8 @@
 # TCControlLayoutAnchor.center
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anchors to the center, relative to the screen size.
 
@@ -16,23 +17,28 @@ Anchors to the center, relative to the screen size.
 case center
 ```
 
+```c
+TCControlLayoutAnchorCenter
+```
+
 ## See Also
 
-- [TCControlLayoutAnchor.bottomCenter](tccontrollayoutanchor/bottomcenter.md)
+### Anchors
+- [TCControlLayoutAnchor.bottomCenter](./bottomcenter.md)
   Anchors to the bottom-center, relative to the screen size.
-- [TCControlLayoutAnchor.bottomLeft](tccontrollayoutanchor/bottomleft.md)
+- [TCControlLayoutAnchor.bottomLeft](./bottomleft.md)
   Anchors to the bottom-left corner, relative to the screen size.
-- [TCControlLayoutAnchor.bottomRight](tccontrollayoutanchor/bottomright.md)
+- [TCControlLayoutAnchor.bottomRight](./bottomright.md)
   Anchors to the bottom-right corner, relative to the screen size.
-- [TCControlLayoutAnchor.centerLeft](tccontrollayoutanchor/centerleft.md)
+- [TCControlLayoutAnchor.centerLeft](./centerleft.md)
   Anchors to the center-left, relative to the screen size.
-- [TCControlLayoutAnchor.centerRight](tccontrollayoutanchor/centerright.md)
+- [TCControlLayoutAnchor.centerRight](./centerright.md)
   Anchors to the center-right, relative to the screen size.
-- [TCControlLayoutAnchor.topCenter](tccontrollayoutanchor/topcenter.md)
+- [TCControlLayoutAnchor.topCenter](./topcenter.md)
   Anchors to the top-center, relative to the screen size.
-- [TCControlLayoutAnchor.topLeft](tccontrollayoutanchor/topleft.md)
+- [TCControlLayoutAnchor.topLeft](./topleft.md)
   Anchors to the top-left corner, relative to the screen size.
-- [TCControlLayoutAnchor.topRight](tccontrollayoutanchor/topright.md)
+- [TCControlLayoutAnchor.topRight](./topright.md)
   Anchors to the top-right corner, relative to the screen size.
 
 

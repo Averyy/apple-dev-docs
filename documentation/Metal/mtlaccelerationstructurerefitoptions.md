@@ -1,7 +1,8 @@
 # MTLAccelerationStructureRefitOptions
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -17,47 +18,52 @@
 struct MTLAccelerationStructureRefitOptions
 ```
 
+```c
+enum MTLAccelerationStructureRefitOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mtlaccelerationstructurerefitoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlaccelerationstructurerefitoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var perPrimitiveData: MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions/perprimitivedata.md)
-- [static var vertexData: MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions/vertexdata.md)
+- [static var perPrimitiveData: MTLAccelerationStructureRefitOptions](./mtlaccelerationstructurerefitoptions/perprimitivedata.md)
+- [static var vertexData: MTLAccelerationStructureRefitOptions](./mtlaccelerationstructurerefitoptions/vertexdata.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+### Acceleration structures
+- [Improving ray-tracing data access using per-primitive data](./improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
-- [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
+- [protocol MTLAccelerationStructure](./mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
-- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+- [class MTL4AccelerationStructureDescriptor](./mtl4accelerationstructuredescriptor.md)
   Base class for Metal 4 acceleration structure descriptors.
-- [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
+- [class MTLAccelerationStructureDescriptor](./mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
-- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+- [class MTL4PrimitiveAccelerationStructureDescriptor](./mtl4primitiveaccelerationstructuredescriptor.md)
   Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
-- [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
+- [class MTLPrimitiveAccelerationStructureDescriptor](./mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
-- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+- [class MTL4InstanceAccelerationStructureDescriptor](./mtl4instanceaccelerationstructuredescriptor.md)
   Descriptor for an instance acceleration structure.
-- [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
+- [class MTLInstanceAccelerationStructureDescriptor](./mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
-- [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
+- [protocol MTLAccelerationStructureCommandEncoder](./mtlaccelerationstructurecommandencoder.md)
   Encodes commands that build and refit acceleration structures for a single pass.
-- [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)
+- [struct MTLAccelerationStructureUsage](./mtlaccelerationstructureusage.md)
   Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 
 

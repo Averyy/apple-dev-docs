@@ -1,6 +1,8 @@
 # Displaying an updating path of a user’s location history
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: Sample Code  
+**Download**: [DisplayingAnUpdatingPathOfAUsersLocationHistory.zip](https://docs-assets.developer.apple.com/published/c00f1c04d71b/DisplayingAnUpdatingPathOfAUsersLocationHistory.zip)
 
 Continually update a MapKit overlay displaying the path a user travels.
 
@@ -14,22 +16,11 @@ Continually update a MapKit overlay displaying the path a user travels.
 
 Travel History is a sample app that allows a user to track their location history, and displays a live-updating path of that history on a map. The app combines location updates from Core Location with a custom MapKit overlay for the location history. MapKit draws the user’s path using a custom MapKit overlay renderer.
 
-For this sample app to show a path, it needs to receive a stream of location updates. Install the app on a device, and take a walk with it recording locations. Alternately, use one of the routes in the iOS simulator, such as Freeway Drive or City Bicycle Ride. To set a route in the iOS simulator, see [`Set a location or route`](https://developer.apple.comhttps://help.apple.com/simulator/mac/current/#/devc6eac95d6).
+For this sample app to show a path, it needs to receive a stream of location updates. Install the app on a device, and take a walk with it recording locations. Alternately, use one of the routes in the iOS simulator, such as Freeway Drive or City Bicycle Ride. To set a route in the iOS simulator, see [Set a location or route](https://help.apple.com/simulator/mac/current/#/devc6eac95d6).
 
-##### Configure a Location Manager to Receive Location Updates
+##### Configure a location manager to receive location updates
 
-Before recording the user’s path, the app asks the user for permission to access location data while the app is running. After the user grants location authorization, a `CLLocationManager` receives a stream of location updates as the user travels. The app also receives location updates while in the background by setting the [`allowsBackgroundLocationUpdates`](https://developer.apple.com/documentation/corelocation/cllocationmanager/allowsbackgroundlocationupdates) property of [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) to `true`. This combination of when-in-use authorization and background updates allows the app to receive location updates while in the background, and the system displays a location service indicator when the app isn’t in the foreground.
-
-```swift
-locationManager.requestWhenInUseAuthorization()
-
-/// Enable the app to collect location updates while it's in the background.
-locationManager.allowsBackgroundLocationUpdates = true
-```
-
-The app sets a default value for the [`desiredAccuracy`](https://developer.apple.com/documentation/corelocation/cllocationmanager/desiredaccuracy) property on the location manager. This value is customizable in a menu to demonstrate how the value of this property affects the accuracy of the recorded data. Lower accuracy values allow the device to conserve power and have less impact on the device’s battery life. For example, if this app is for hiking, it needs high-accuracy data to capture a detailed path for the user’s hiking route, requiring [`kCLLocationAccuracyBest`](https://developer.apple.com/documentation/corelocation/kcllocationaccuracybest) to facilitate the required detail. In contrast, if the app tracks overall progress between a start and end point without needing the exact path taken, using a lower accuracy value, such as [`kCLLocationAccuracyKilometer`](https://developer.apple.com/documentation/corelocation/kcllocationaccuracykilometer) or [`kCLLocationAccuracyThreeKilometers`](https://developer.apple.com/documentation/corelocation/kcllocationaccuracythreekilometers), is a better choice because it conserves power.
-
-The app also sets a default value for the [`activityType`](https://developer.apple.com/documentation/corelocation/cllocationmanager/activitytype) property, and is configurable in a menu. This property provides a hint to Core Location about the type of travel the device encounters while monitoring location. For example, if someone uses this app often while running, it sets `activityType` to [`CLActivityType.fitness`](https://developer.apple.com/documentation/corelocation/clactivitytype/fitness). If they use it for providing driving directions, it sets `activityType` to [`CLActivityType.automotiveNavigation`](https://developer.apple.com/documentation/corelocation/clactivitytype/automotivenavigation) so that Core Location makes small adjustments to the reported location to match known roads.
+Before recording the user’s path, the app asks the user for permission to access location data while the app is running. After the user grants location authorization, a `CLLocationManager` receives a stream of location updates as the user travels. The app also receives location updates while in the background by setting the [`allowsBackgroundLocationUpdates`](../CoreLocation/cllocationmanager/allowsbackgroundlocationupdates.md) property of [`CLLocationManager`](../CoreLocation/cllocationmanager.md) to `true`. This combination of when-in-use authorization and background updates allows the app to receive location updates while in the background, and the system displays a location service indicator when the app isn’t in the foreground.
 
 ```swift
 locationManager.requestWhenInUseAuthorization()
@@ -38,7 +29,18 @@ locationManager.requestWhenInUseAuthorization()
 locationManager.allowsBackgroundLocationUpdates = true
 ```
 
-After the app calls [`startUpdatingLocation()`](https://developer.apple.com/documentation/corelocation/cllocationmanager/startupdatinglocation()) on the location manager, Core Location provides location updates to the location manager’s delegate. Then the app forwards the location updates to other functions in the app responsible for maintaining the user’s location history.
+The app sets a default value for the [`desiredAccuracy`](../CoreLocation/cllocationmanager/desiredaccuracy.md) property on the location manager. This value is customizable in a menu to demonstrate how the value of this property affects the accuracy of the recorded data. Lower accuracy values allow the device to conserve power and have less impact on the device’s battery life. For example, if this app is for hiking, it needs high-accuracy data to capture a detailed path for the user’s hiking route, requiring [`kCLLocationAccuracyBest`](../CoreLocation/kcllocationaccuracybest.md) to facilitate the required detail. In contrast, if the app tracks overall progress between a start and end point without needing the exact path taken, using a lower accuracy value, such as [`kCLLocationAccuracyKilometer`](../CoreLocation/kcllocationaccuracykilometer.md) or [`kCLLocationAccuracyThreeKilometers`](../CoreLocation/kcllocationaccuracythreekilometers.md), is a better choice because it conserves power.
+
+The app also sets a default value for the [`activityType`](../CoreLocation/cllocationmanager/activitytype.md) property, and is configurable in a menu. This property provides a hint to Core Location about the type of travel the device encounters while monitoring location. For example, if someone uses this app often while running, it sets `activityType` to [`fitness`](../CoreLocation/clactivitytype/fitness.md). If they use it for providing driving directions, it sets `activityType` to [`automotiveNavigation`](../CoreLocation/clactivitytype/automotivenavigation.md) so that Core Location makes small adjustments to the reported location to match known roads.
+
+```swift
+locationManager.requestWhenInUseAuthorization()
+
+/// Enable the app to collect location updates while it's in the background.
+locationManager.allowsBackgroundLocationUpdates = true
+```
+
+After the app calls [`startUpdatingLocation`](../CoreLocation/cllocationmanager/startupdatinglocation%28%29.md) on the location manager, Core Location provides location updates to the location manager’s delegate. Then the app forwards the location updates to other functions in the app responsible for maintaining the user’s location history.
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -56,13 +58,13 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-##### Define a Custom Map Overlay Data Object
+##### Define a custom map overlay data object
 
-MapKit treats overlay data as static when using the system-provided overlay classes, such as [`MKPolyline`](mkpolyline.md). For example, apps that only need to show a path with a static set of coordinates, such as the path a user took in the distant past, can use `MKPolyline`. Because this app continually updates with new data, it implements its own data class, called `BreadcrumbPath`, conforming to the [`MKOverlay`](mkoverlay.md) protocol, rather than using `MKPolyline`. `BreadcrumbPath` maintains an array of location *crumbs* comprising the user’s location history.
+MapKit treats overlay data as static when using the system-provided overlay classes, such as [`MKPolyline`](./mkpolyline.md). For example, apps that only need to show a path with a static set of coordinates, such as the path a user took in the distant past, can use `MKPolyline`. Because this app continually updates with new data, it implements its own data class, called `BreadcrumbPath`, conforming to the [`MKOverlay`](./mkoverlay.md) protocol, rather than using `MKPolyline`. `BreadcrumbPath` maintains an array of location *crumbs* comprising the user’s location history.
 
-When drawing an overlay on the map, MapKit uses the overlay’s [`boundingMapRect`](mkoverlay/boundingmaprect.md) to determine when the overlay is visible. Because this app can’t determine the extent of the path the user might track on the map, `BreadcrumbPath` declares its `boundingMapRect` as [`world`](mkmaprect/world.md). In an app that has well-defined usage patterns, such as a hiking app for use within a national park, the `boundingMapRect` might consist of a large area the path is likely to remain within, such as the bounds of the national park.
+When drawing an overlay on the map, MapKit uses the overlay’s [`boundingMapRect`](./mkoverlay/boundingmaprect.md) to determine when the overlay is visible. Because this app can’t determine the extent of the path the user might track on the map, `BreadcrumbPath` declares its `boundingMapRect` as [`world`](./mkmaprect/world.md). In an app that has well-defined usage patterns, such as a hiking app for use within a national park, the `boundingMapRect` might consist of a large area the path is likely to remain within, such as the bounds of the national park.
 
-When the app adds a new location, `BreadcrumbPath` validates that the information in [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) is usable for its purposes. Each app that maintains a location history needs to define criteria for ensuring a location update is usable based on the app’s specific needs.
+When the app adds a new location, `BreadcrumbPath` validates that the information in [`CLLocation`](../CoreLocation/cllocation.md) is usable for its purposes. Each app that maintains a location history needs to define criteria for ensuring a location update is usable based on the app’s specific needs.
 
 ```swift
 private func isNewLocationUsable(_ newLocation: CLLocation, breadcrumbData: BreadcrumbData) -> Bool {
@@ -103,7 +105,7 @@ private func isNewLocationUsable(_ newLocation: CLLocation, breadcrumbData: Brea
 }
 ```
 
-After `BreadcrumbPath` validates that a location is usable, it updates its data structures to include the new location. One of the properties of `BreadcrumbPath` is `pathBounds`, the bounding rectangle containing all of the locations for the overlay. Unlike `boundingMapRect`, `pathBounds` changes its value as the app adds locations to the overlay. A custom overlay renderer reads the value of `pathBounds` from multiple threads concurrently, so `BreadcrumbPath` uses [`OSAllocatedUnfairLock`](https://developer.apple.com/documentation/os/osallocatedunfairlock) to protect reading of this property from data races.
+After `BreadcrumbPath` validates that a location is usable, it updates its data structures to include the new location. One of the properties of `BreadcrumbPath` is `pathBounds`, the bounding rectangle containing all of the locations for the overlay. Unlike `boundingMapRect`, `pathBounds` changes its value as the app adds locations to the overlay. A custom overlay renderer reads the value of `pathBounds` from multiple threads concurrently, so `BreadcrumbPath` uses [`OSAllocatedUnfairLock`](../os/osallocatedunfairlock.md) to protect reading of this property from data races.
 
 ```swift
 /// This is a lock protecting the `locations` and `bounds` properties that define the breadcrumb path from data races.
@@ -125,9 +127,9 @@ var pathBounds: MKMapRect {
 }
 ```
 
-##### Implement a Custom Overlay Renderer to Display the Path
+##### Implement a custom overlay renderer to display the path
 
-To implement a custom overlay renderer object that complements the custom overlay data object, the app subclasses [`MKOverlayRenderer`](mkoverlayrenderer.md). To determine whether an overlay has content to draw, MapKit queries the [`canDraw(_:zoomScale:)`](mkoverlayrenderer/candraw(_:zoomscale:).md) method of an overlay renderer. The `BreadcrumbPathRenderer` class in this sample overrides this method to check whether the provided [`MKMapRect`](mkmaprect.md) intersects the `pathBounds` property of the `BreadcrumbPath` object.
+To implement a custom overlay renderer object that complements the custom overlay data object, the app subclasses [`MKOverlayRenderer`](./mkoverlayrenderer.md). To determine whether an overlay has content to draw, MapKit queries the [`canDraw(_:zoomScale:)`](./mkoverlayrenderer/candraw%28_,zoomscale%29.md) method of an overlay renderer. The `BreadcrumbPathRenderer` class in this sample overrides this method to check whether the provided [`MKMapRect`](./mkmaprect.md) intersects the `pathBounds` property of the `BreadcrumbPath` object.
 
 ```swift
 override func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool {
@@ -135,7 +137,7 @@ override func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool {
 }
 ```
 
-A custom overlay renderer also needs to implement the [`draw(_:zoomScale:in:)`](mkoverlayrenderer/draw(_:zoomscale:in:).md) method to draw the requested section of the overlay. The app draws only the portion of the overlay within the bounds of the provided `MKMapRect` into the provided [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext).
+A custom overlay renderer also needs to implement the [`draw(_:zoomScale:in:)`](./mkoverlayrenderer/draw%28_,zoomscale,in%29.md) method to draw the requested section of the overlay. The app draws only the portion of the overlay within the bounds of the provided `MKMapRect` into the provided [`CGContext`](../CoreGraphics/cgcontext.md).
 
 ```swift
 override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
@@ -162,9 +164,9 @@ override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGC
 }
 ```
 
-##### Request That the Map Update the Overlay
+##### Request that the map update the overlay
 
-When the sample app receives a location update, it adds the location to the custom overlay by calling a method that `BreadcrumbPath` defines. This method returns information indicating the result of adding the location to the overlay. When successful, the app calls [`setNeedsDisplay(_:)`](mkoverlayrenderer/setneedsdisplay(_:).md) on the custom overlay renderer to trigger a redraw of the overlay within the region of the map where the user traveled.
+When the sample app receives a location update, it adds the location to the custom overlay by calling a method that `BreadcrumbPath` defines. This method returns information indicating the result of adding the location to the overlay. When successful, the app calls [`setNeedsDisplay(_:)`](./mkoverlayrenderer/setneedsdisplay%28_%29.md) on the custom overlay renderer to trigger a redraw of the overlay within the region of the map where the user traveled.
 
 ```swift
 /**
@@ -211,7 +213,8 @@ let result = breadcrumbs.addLocation(newLocation)
 
 ## See Also
 
-- [Displaying overlays on a map](displaying-overlays-on-a-map.md)
+### Samples
+- [Displaying overlays on a map](./displaying-overlays-on-a-map.md)
   Add regions of layered content to a map view.
 
 

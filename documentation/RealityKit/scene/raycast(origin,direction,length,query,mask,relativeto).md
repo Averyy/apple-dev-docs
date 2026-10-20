@@ -1,7 +1,8 @@
 # raycast(origin:direction:length:query:mask:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a ray cast against all the geometry in the scene for a ray of a given origin, direction, and length.
 
@@ -11,7 +12,7 @@ Performs a ray cast against all the geometry in the scene for a ray of a given o
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,9 +27,9 @@ An array of collision cast hit results. Each hit indicates where the ray, starti
 
 #### Discussion
 
-The method ignores entities that lack a [`CollisionComponent`](collisioncomponent.md).
+The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 
-The [`normal`](collisioncasthit/normal.md) property on returned result objects contains the surface normal at the point of intersection with the entity’s collision shape.
+The [`normal`](../collisioncasthit/normal.md) property on returned result objects contains the surface normal at the point of intersection with the entity’s collision shape.
 
 The following are some details to keep in mind.
 
@@ -46,13 +47,14 @@ The following are some details to keep in mind.
 
 ## See Also
 
-- [func raycast(from: SIMD3<Float>, to: SIMD3<Float>, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/raycast(from:to:query:mask:relativeto:).md)
+### Detecting intersections
+- [func raycast(from: SIMD3<Float>, to: SIMD3<Float>, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](./raycast%28from,to,query,mask,relativeto%29.md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
-- [func convexCast(convexShape: ShapeResource, fromPosition: SIMD3<Float>, fromOrientation: simd_quatf, toPosition: SIMD3<Float>, toOrientation: simd_quatf, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/convexcast(convexshape:fromposition:fromorientation:toposition:toorientation:query:mask:relativeto:).md)
+- [func convexCast(convexShape: ShapeResource, fromPosition: SIMD3<Float>, fromOrientation: simd_quatf, toPosition: SIMD3<Float>, toOrientation: simd_quatf, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](./convexcast%28convexshape,fromposition,fromorientation,toposition,toorientation,query,mask,relativeto%29.md)
   Performs a convex shape cast against all the geometry in the scene.
-- [func pixelCast(from: SIMD3<Float>, to: SIMD3<Float>) async throws -> PixelCastHit?](scene/pixelcast(from:to:).md)
+- [func pixelCast(from: SIMD3<Float>, to: SIMD3<Float>) async throws -> PixelCastHit?](./pixelcast%28from,to%29.md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
-- [func pixelCast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float) async throws -> PixelCastHit?](scene/pixelcast(origin:direction:length:).md)
+- [func pixelCast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float) async throws -> PixelCastHit?](./pixelcast%28origin,direction,length%29.md)
   Performs a ray cast against all the geometry in the scene for a ray of a given origin, direction, and length.
 
 

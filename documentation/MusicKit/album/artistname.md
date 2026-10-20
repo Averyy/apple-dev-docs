@@ -1,7 +1,8 @@
 # artistName
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The artist’s name.
 
@@ -22,7 +23,7 @@ var artistName: String { get }
 
 #### Discussion
 
-You can find more precise information about this album’s artists in the [`artists`](album/artists.md) relationship, which, unlike [`artistName`](album/artistname.md), requires that you load it explicitly using the [`with(_:)`](musicpropertycontainer/with(_:).md) method, as in the following example:
+You can find more precise information about this album’s artists in the [`artists`](./artists.md) relationship, which, unlike [`artistName`](./artistname.md), requires that you load it explicitly using the [`with(_:)`](../musicpropertycontainer/with%28_%29.md) method, as in the following example:
 
 ```swift
     let detailedAlbum = try await album.with([.artists])

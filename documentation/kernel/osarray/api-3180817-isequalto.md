@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares all members of two arrays with isEqualTo().
 
@@ -11,11 +12,19 @@ Compares all members of two arrays with isEqualTo().
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool isEqualTo(const OSArray *anArray);
+```
+
+*macOS*
+
+```cpp
 virtual bool isEqualTo(const OSArray *anArray);
 ```
 
-#### Return_value
+#### Return Value
 
 true if both arrays have equal counts and all members compare successfully with isEqualTo.
 
@@ -29,7 +38,8 @@ If the arrays have equal counts, each member is compared with the other at the s
 
 ## See Also
 
-- [- isEqualTo](osarray/3433839-isequalto.md)
+### Comparing Arrays
+- [- isEqualTo](./api-3433839-isequalto.md)
   Compares the array with an OSObject
 
 

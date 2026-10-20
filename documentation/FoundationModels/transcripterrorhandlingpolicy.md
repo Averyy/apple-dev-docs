@@ -1,7 +1,8 @@
 # TranscriptErrorHandlingPolicy
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for controlling how a language model session manages the transcript when errors occur.
 
@@ -22,20 +23,21 @@ struct TranscriptErrorHandlingPolicy
 ## Topics
 
 ### Error handling policies
-- [static let preserveTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/preservetranscript.md)
+- [static let preserveTranscript: TranscriptErrorHandlingPolicy](./transcripterrorhandlingpolicy/preservetranscript.md)
   A policy that keeps the current transcript as is.
-- [static let revertTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/reverttranscript.md)
+- [static let revertTranscript: TranscriptErrorHandlingPolicy](./transcripterrorhandlingpolicy/reverttranscript.md)
   A policy that reverts the transcript back to the state it was in just before the most recent request.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy?](languagemodelsession/transcripterrorhandlingpolicy.md)
+### Configuring the transcript error handling policy
+- [var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy?](./languagemodelsession/transcripterrorhandlingpolicy.md)
   The session’s policy for managing the transcript when errors occur.
 
 

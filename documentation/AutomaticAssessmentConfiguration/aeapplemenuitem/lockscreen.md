@@ -1,7 +1,8 @@
 # lockScreen
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Lock Screen item.
 
@@ -13,6 +14,10 @@ The Lock Screen item.
 
 ```swift
 static let lockScreen: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemLockScreen;
 ```
 
 

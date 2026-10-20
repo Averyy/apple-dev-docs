@@ -1,6 +1,8 @@
 # Add Home Screen quick actions
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [AddHomeScreenQuickActions.zip](https://docs-assets.developer.apple.com/published/e75c7b34d8fd/AddHomeScreenQuickActions.zip)
 
 Expose commonly used functionality with static or dynamic 3D Touch Home Screen quick actions.
 
@@ -14,13 +16,13 @@ Expose commonly used functionality with static or dynamic 3D Touch Home Screen q
 
 On the Home screen of a device running iOS 13 or later, apps can display Home Screen quick actions when users touch and hold the app icon (on a 3D Touch device, users press briefly on the icon).
 
-Each Home Screen quick action includes a title, an icon on the left or right (depending on your app’s position on the Home Screen), and an optional subtitle. Define quick actions statically at build time from the app’s `Info.plist` or dynamically configured at runtime. For information about the types of functionality you might expose using quick actions, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions).
+Each Home Screen quick action includes a title, an icon on the left or right (depending on your app’s position on the Home Screen), and an optional subtitle. Define quick actions statically at build time from the app’s `Info.plist` or dynamically configured at runtime. For information about the types of functionality you might expose using quick actions, see the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions).
 
 The app in this sample project is a basic contact manager that allows users to view and edit a small set of contacts. The initial view controller shows a list of contacts in a table view. Tapping any contact shows a detail screen where you can edit the name and email address, or tap to turn on the Favorite switch.
 
 When you press the sample app’s Home Screen icon, several Home Screen quick actions are displayed. The first two give access to search and sharing functionality, and the rest provide shortcuts to favorite contacts.
 
-##### Define Static Quick Actions
+##### Define static quick actions
 
 If the quick actions appropriate for an app never change, define them as static quick actions using the project’s `Info.plist` file. This sample project defines two static quick actions: one for searching and one for sharing. The `UIApplicationShortcutItems` key in the `Info.plist` file contains an array of two dictionaries that represent the two static quick actions.
 
@@ -52,13 +54,13 @@ If the quick actions appropriate for an app never change, define them as static 
 
 The value for `UIApplicationShortcutItemType` must be a unique string that the system passes to your app when a user invokes the quick action. When processing the selected quick action, the unique item type distinguishes between the defined quick actions.
 
-For information about other `Info.plist` keys available for configuring Home Screen quick actions, see [`UIApplicationShortcutItems`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationshortcutitems).
+For information about other `Info.plist` keys available for configuring Home Screen quick actions, see [`UIApplicationShortcutItems`](../BundleResources/information-property-list/uiapplicationshortcutitems.md).
 
-##### Define Dynamic Quick Actions
+##### Define dynamic quick actions
 
-Dynamic quick actions depend on specific data or state of the app. Configure dynamic Home Screen quick actions by setting the [`shortcutItems`](uiapplication/shortcutitems.md) property of the shared [`UIApplication`](uiapplication.md) instance to an array of [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md) objects.
+Dynamic quick actions depend on specific data or state of the app. Configure dynamic Home Screen quick actions by setting the [`shortcutItems`](./uiapplication/shortcutitems.md) property of the shared [`UIApplication`](./uiapplication.md) instance to an array of [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.md) objects.
 
-Set dynamic screen quick actions at any point, but the sample sets them in the [`sceneWillResignActive(_:)`](uiscenedelegate/scenewillresignactive(_:).md) function of the scene delegate. During the transition to a background state is a good time to update any dynamic quick actions, because the system executes this code before the user returns to the Home Screen.
+Set dynamic screen quick actions at any point, but the sample sets them in the [`sceneWillResignActive(_:)`](./uiscenedelegate/scenewillresignactive%28_%29.md) function of the scene delegate. During the transition to a background state is a good time to update any dynamic quick actions, because the system executes this code before the user returns to the Home Screen.
 
 ```swift
 func sceneWillResignActive(_ scene: UIScene) {
@@ -74,9 +76,9 @@ func sceneWillResignActive(_ scene: UIScene) {
 }
 ```
 
-Don’t limit the number of quick actions provided to the [`shortcutItems`](uiapplication/shortcutitems.md) property, because the system displays only the number of items that fit the screen. For this reason, the implementation of `favoriteContacts` on the `ContactsData` class returns all contacts that have the `favorite` property set to `true`.
+Don’t limit the number of quick actions provided to the [`shortcutItems`](./uiapplication/shortcutitems.md) property, because the system displays only the number of items that fit the screen. For this reason, the implementation of `favoriteContacts` on the `ContactsData` class returns all contacts that have the `favorite` property set to `true`.
 
-##### Define Quick Action Icons
+##### Define quick action icons
 
 Define quick action icons with the `UIApplicationShortcutIcon` class in two different ways: with a template image or SF Symbol.
 
@@ -114,9 +116,9 @@ To support older versions of iOS, you can specify multiple icon-related keys in 
 
 iOS prefers the symbol name icon if it’s defined, otherwise, the icon file if defined, otherwise the last choice is the icon type.
 
-##### Pass Data with a Quick Action
+##### Pass data with a quick action
 
-The dynamic quick actions in this sample all have the same [`type`](uiapplicationshortcutitem/type.md) because they all perform the same action. However, the contact information associated with each is different and the sample passes it through to the [`userInfo`](uiapplicationshortcutitem/userinfo.md) dictionary.
+The dynamic quick actions in this sample all have the same [`type`](./uiapplicationshortcutitem/type.md) because they all perform the same action. However, the contact information associated with each is different and the sample passes it through to the [`userInfo`](./uiapplicationshortcutitem/userinfo.md) dictionary.
 
 ```swift
 var quickActionUserInfo: [String: NSSecureCoding] {
@@ -128,15 +130,15 @@ var quickActionUserInfo: [String: NSSecureCoding] {
 }
 ```
 
-Static Home Screen quick actions can also pass [`userInfo`](uiapplicationshortcutitem/userinfo.md) data by including it in the `UIApplicationShortcutItemUserInfo` key in the app’s `Info.plist` file.
+Static Home Screen quick actions can also pass [`userInfo`](./uiapplicationshortcutitem/userinfo.md) data by including it in the `UIApplicationShortcutItemUserInfo` key in the app’s `Info.plist` file.
 
-All the values the sample passes as [`userInfo`](uiapplicationshortcutitem/userinfo.md) conform to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding).
+All the values the sample passes as [`userInfo`](./uiapplicationshortcutitem/userinfo.md) conform to [`NSSecureCoding`](../Foundation/nssecurecoding.md).
 
-##### Respond to Quick Actions
+##### Respond to quick actions
 
 When someone initiates a Home Screen quick action, the app is notified in one of these ways:
 
-- If the app isn’t already loaded, it’s launched and passes details of the shortcut item in through the `connectionOptions` parameter of the [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) function.
+- If the app isn’t already loaded, it’s launched and passes details of the shortcut item in through the `connectionOptions` parameter of the [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md) function.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -150,7 +152,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-- If your app is already loaded, the system calls the [`windowScene(_:performActionFor:completionHandler:)`](uiwindowscenedelegate/windowscene(_:performactionfor:completionhandler:).md) function of your scene delegate.
+- If your app is already loaded, the system calls the [`windowScene(_:performActionFor:completionHandler:)`](./uiwindowscenedelegate/windowscene%28_,performactionfor,completionhandler%29.md) function of your scene delegate.
 
 ```swift
 func windowScene(_ windowScene: UIWindowScene,
@@ -163,7 +165,7 @@ func windowScene(_ windowScene: UIWindowScene,
 
 When this sample handles the quick action, it shows an alert, but in a real-world app the actual functionality would be executed.
 
-##### Debug Quick Actions on App Launch
+##### Debug quick actions on app launch
 
 For Xcode to debug quick actions on app launch, an app needs to have the target’s scheme configured. Follow these instructions to debug quick actions at launch:
 
@@ -181,11 +183,12 @@ The debugger pauses the app at the breakpoint.
 
 ## See Also
 
-- [class UIApplicationShortcutItem](uiapplicationshortcutitem.md)
+### Home Screen quick actions
+- [class UIApplicationShortcutItem](./uiapplicationshortcutitem.md)
   An application shortcut item, also called a Home Screen dynamic quick action, that specifies a user-initiated action for your app.
-- [class UIApplicationShortcutIcon](uiapplicationshortcuticon.md)
+- [class UIApplicationShortcutIcon](./uiapplicationshortcuticon.md)
   An image you can optionally associate with a Home Screen quick action to improve its appearance and usability.
-- [class UIMutableApplicationShortcutItem](uimutableapplicationshortcutitem.md)
+- [class UIMutableApplicationShortcutItem](./uimutableapplicationshortcutitem.md)
   A mutable Home Screen dynamic quick action, which is an item that specifies a configurable user-initiated action for your app.
 
 

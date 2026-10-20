@@ -1,7 +1,8 @@
 # CTFontCollectionCopyOptions
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Option bits for use with CTFontCollectionCopyFontAttribute(s).
 
@@ -20,32 +21,37 @@ Option bits for use with CTFontCollectionCopyFontAttribute(s).
 struct CTFontCollectionCopyOptions
 ```
 
+```c
+enum CTFontCollectionCopyOptions : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [static var standardSort: CTFontCollectionCopyOptions](ctfontcollectioncopyoptions/standardsort.md)
+- [static var standardSort: CTFontCollectionCopyOptions](./ctfontcollectioncopyoptions/standardsort.md)
   Passing this option indicates that the return values should be sorted in standard UI order, suitable for display to the user. This is the same sorting behavior used by `NSFontPanel` and Font Book.
-- [static var unique: CTFontCollectionCopyOptions](ctfontcollectioncopyoptions/unique.md)
+- [static var unique: CTFontCollectionCopyOptions](./ctfontcollectioncopyoptions/unique.md)
   Passing this option indicates that duplicate values should be removed from the results.
 ### Initializers
-- [init(rawValue: UInt32)](ctfontcollectioncopyoptions/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./ctfontcollectioncopyoptions/init%28rawvalue%29.md)
   Creates a copy options structure with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [let kCTFontCollectionRemoveDuplicatesOption: CFString](kctfontcollectionremoveduplicatesoption.md)
+### Constants
+- [let kCTFontCollectionRemoveDuplicatesOption: CFString](./kctfontcollectionremoveduplicatesoption.md)
 
 
 ---

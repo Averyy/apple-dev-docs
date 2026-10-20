@@ -1,7 +1,8 @@
 # JSStringRetain(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retains a JavaScript string.
 
@@ -19,23 +20,28 @@ Retains a JavaScript string.
 func JSStringRetain(_ string: JSStringRef!) -> JSStringRef!
 ```
 
+```c
+JSStringRefJSStringRetain(JSStringRef string);
+```
+
 #### Return Value
 
-A [`JSStringRef`](jsstringref.md) that is the same as `string`.
+A [`JSStringRef`](./jsstringref.md) that is the same as `string`.
 
 ## Parameters
 
-- `string`: The [`JSStringRef`](jsstringref.md) to retain.
+- `string`: The [`JSStringRef`](./jsstringref.md) to retain.
 
 ## See Also
 
-- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](jsstringcreatewithcharacters(_:_:).md)
+### Creating a JavaScript String
+- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](./jsstringcreatewithcharacters%28_,_%29.md)
   Creates a JavaScript string from a buffer of Unicode characters.
-- [typealias JSChar](jschar.md)
+- [typealias JSChar](./jschar.md)
   A Unicode character.
-- [func JSStringCreateWithUTF8CString(UnsafePointer<CChar>!) -> JSStringRef!](jsstringcreatewithutf8cstring(_:).md)
+- [func JSStringCreateWithUTF8CString(UnsafePointer<CChar>!) -> JSStringRef!](./jsstringcreatewithutf8cstring%28_%29.md)
   Creates a JavaScript string from a null-terminated UTF-8 string.
-- [func JSStringRelease(JSStringRef!)](jsstringrelease(_:).md)
+- [func JSStringRelease(JSStringRef!)](./jsstringrelease%28_%29.md)
   Releases a JavaScript string.
 
 

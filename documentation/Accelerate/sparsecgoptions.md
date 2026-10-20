@@ -1,18 +1,19 @@
 # SparseCGOptions
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for creating a conjugate gradient (CG) method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,42 +21,47 @@ Options for creating a conjugate gradient (CG) method.
 struct SparseCGOptions
 ```
 
+```c
+typedef struct { ... } SparseCGOptions;
+```
+
 #### Overview
 
 Use CG to solve *Ax = b* when *A* is symmetric positive-definite. The method may break down or fail to converge if *A* isn’t positive-definite.
 
-For square, full-rank, unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md). For rectangular or singular systems, use [`SparseLSMR(_:)`](sparselsmr(_:).md).
+For square, full-rank, unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](./sparsegmres%28_%29.md). For rectangular or singular systems, use [`SparseLSMR(_:)`](./sparselsmr%28_%29.md).
 
 ## Topics
 
 ### Initializers
-- [init()](sparsecgoptions/init.md)
+- [init()](./sparsecgoptions/init%28%29.md)
   Returns a new CG options structure.
-- [init(reportError: ((UnsafePointer<CChar>) -> Void)?, maxIterations: Int32, atol: Double, rtol: Double, reportStatus: ((UnsafePointer<CChar>) -> Void)?)](sparsecgoptions/init(reporterror:maxiterations:atol:rtol:reportstatus:).md)
+- [init(reportError: ((UnsafePointer<CChar>) -> Void)?, maxIterations: Int32, atol: Double, rtol: Double, reportStatus: ((UnsafePointer<CChar>) -> Void)?)](./sparsecgoptions/init%28reporterror,maxiterations,atol,rtol,reportstatus%29.md)
   Returns a new CG options structure using the specified parameters.
 ### Inspecting CG Options
-- [var atol: Double](sparsecgoptions/atol.md)
+- [var atol: Double](./sparsecgoptions/atol.md)
   The absolute convergence tolerance.
-- [var maxIterations: Int32](sparsecgoptions/maxiterations.md)
+- [var maxIterations: Int32](./sparsecgoptions/maxiterations.md)
   The maximum number of iterations to perform.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparsecgoptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./sparsecgoptions/reporterror.md)
   An optional error-reporting routine.
-- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](sparsecgoptions/reportstatus.md)
+- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](./sparsecgoptions/reportstatus.md)
   The function to report status.
-- [var rtol: Double](sparsecgoptions/rtol.md)
+- [var rtol: Double](./sparsecgoptions/rtol.md)
   The relative convergence tolerance.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func SparseConjugateGradient() -> SparseIterativeMethod](sparseconjugategradient().md)
+### Sparse Iterative Methods for Symmetric Positive-Definite Coefficient Matrices
+- [func SparseConjugateGradient() -> SparseIterativeMethod](./sparseconjugategradient%28%29.md)
   Returns a conjugate gradient (CG) method.
-- [func SparseConjugateGradient(SparseCGOptions) -> SparseIterativeMethod](sparseconjugategradient(_:).md)
+- [func SparseConjugateGradient(SparseCGOptions) -> SparseIterativeMethod](./sparseconjugategradient%28_%29.md)
   Returns a conjugate gradient (CG) method with specified options.
 
 

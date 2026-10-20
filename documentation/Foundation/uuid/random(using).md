@@ -1,7 +1,8 @@
 # random(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a new random UUID.
 

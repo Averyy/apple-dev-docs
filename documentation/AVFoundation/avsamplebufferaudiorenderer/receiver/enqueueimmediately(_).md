@@ -1,7 +1,8 @@
 # enqueueImmediately(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enqueues a sample buffer in order to render its contents, without waiting for the renderer to become ready for more media data.
 
@@ -30,9 +31,10 @@ The result of the enqueue operation.
 
 ## See Also
 
-- [func enqueue(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult](avsamplebufferaudiorenderer/receiver/enqueue(_:).md)
+### Enqueuing sample buffers
+- [func enqueue(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult](./enqueue%28_%29.md)
   Suspends until the receiver is ready for more media data, then enqueues a sample buffer in order to render its contents.
-- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult](avsamplebufferaudiorenderer/receiver/enqueueresult.md)
+- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult](./enqueueresult.md)
   A value indicating the result of a call to `enqueue(_:)` or `enqueueImmediately(_:)`.
 
 

@@ -1,7 +1,8 @@
 # encodedSize
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Full encoded dimensions of a CVImageBuffer.  For example, for an NTSC DV frame this would be 720x480
 

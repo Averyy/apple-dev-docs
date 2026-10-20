@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the task associated with the request.
 
@@ -18,9 +19,14 @@ The identifier of the task associated with the request.
 var identifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var earliestBeginDate: Date?](bgtaskrequest/earliestbegindate.md)
+### Configuring a Task Request
+- [var earliestBeginDate: Date?](./earliestbegindate.md)
   The earliest date and time at which to run the task.
 
 

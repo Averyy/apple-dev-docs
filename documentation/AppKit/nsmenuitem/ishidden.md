@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the menu item is hidden.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the menu item is hidden.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
 Hidden menu items (or items with a hidden superitem) do not appear in a menu and do not participate in command key matching.
 
 ## See Also
 
-- [var isHiddenOrHasHiddenAncestor: Bool](nsmenuitem/ishiddenorhashiddenancestor.md)
+### Managing hidden status
+- [var isHiddenOrHasHiddenAncestor: Bool](./ishiddenorhashiddenancestor.md)
   A Boolean value that indicates whether the menu item or any of its superitems is hidden.
 
 

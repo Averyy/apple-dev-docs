@@ -1,20 +1,23 @@
 # Allowed Domains
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The domains that a Safari extension is allowed access to.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `Allowed Domains`
+- **Type**: array of string 
 
 ## See Also
 
-- [Level](information-property-list/nsextension/sfsafariwebsiteaccess/level.md)
+### Access Configuration
+- [Level](./level.md)
   The level of a Safari extension’s website access.
 
 

@@ -1,7 +1,8 @@
 # LAPersistedRight
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A right that gates access to a key and a secret.
 
@@ -18,13 +19,17 @@ A right that gates access to a key and a secret.
 class LAPersistedRight
 ```
 
+```objc
+@interface LAPersistedRight : LARight
+```
+
 #### Overview
 
-An [`LAPersistedRight`](lapersistedright.md) is a right that’s backed by a unique key in the Secure Enclave with an access control list that matches the authorization requirements of the right. You can access the key that backs a right to perform cryptographic operations like encryption, decryption, signing, and verification.
+An [`LAPersistedRight`](./lapersistedright.md) is a right that’s backed by a unique key in the Secure Enclave with an access control list that matches the authorization requirements of the right. You can access the key that backs a right to perform cryptographic operations like encryption, decryption, signing, and verification.
 
-You can use the key that backs an [`LAPersistedRight`](lapersistedright.md) to perform both public key and private key operations, but private key operations — like decryption, signing, and key exchange — are only available after you authorize the right. Public key operations like encryption and verification are always available.
+You can use the key that backs an [`LAPersistedRight`](./lapersistedright.md) to perform both public key and private key operations, but private key operations — like decryption, signing, and key exchange — are only available after you authorize the right. Public key operations like encryption and verification are always available.
 
-The following generates a right with the default authorization requirements, stores it in the [`shared`](larightstore/shared.md) [`LARightStore`](larightstore.md), and exports the public key so that you can use it to verify signatures that the corresponding private key produces:
+The following generates a right with the default authorization requirements, stores it in the [`shared`](./larightstore/shared.md) [`LARightStore`](./larightstore.md), and exports the public key so that you can use it to verify signatures that the corresponding private key produces:
 
 ```swift
 func generateClientKeys() async throws -> Data {
@@ -54,28 +59,29 @@ The signature operation occurs after verifying that the user has the proper auth
 ## Topics
 
 ### Accessing persistent data
-- [var key: LAPrivateKey](lapersistedright/key.md)
+- [var key: LAPrivateKey](./lapersistedright/key.md)
   The private key that’s persisted by the right.
-- [var secret: LASecret](lapersistedright/secret.md)
+- [var secret: LASecret](./lapersistedright/secret.md)
   The data kept secret by the right.
 
 ## Relationships
 
 ### Inherits From
-- [LARight](laright.md)
+- [LARight](./laright.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class LARightStore](larightstore.md)
+### Persistence
+- [class LARightStore](./larightstore.md)
   A container for data protected by a right.
-- [class LASecret](lasecret.md)
+- [class LASecret](./lasecret.md)
   Data that’s protected by a persisted right.
 
 

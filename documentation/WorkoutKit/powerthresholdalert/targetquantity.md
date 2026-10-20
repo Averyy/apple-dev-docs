@@ -1,7 +1,8 @@
 # targetQuantity
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A HealthKit quantity that represents the target power threshold.
 
@@ -20,7 +21,8 @@ var targetQuantity: HKQuantity { get }
 
 ## See Also
 
-- [var target: Measurement<UnitPower>](powerthresholdalert/target.md)
+### Accessing alert data
+- [var target: Measurement<UnitPower>](./target.md)
   The target measurement using power units.
 
 

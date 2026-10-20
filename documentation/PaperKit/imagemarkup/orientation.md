@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation of the image content.
 
@@ -20,13 +21,14 @@ var orientation: CGImagePropertyOrientation { get set }
 
 ## See Also
 
-- [var image: CGImage?](imagemarkup/image.md)
+### Accessing image content
+- [var image: CGImage?](./image.md)
   The image content displayed by this markup.
-- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+- [func replaceImage(with: URL) throws](./replaceimage%28with%29-10qzi.md)
   Replaces the contents of this image markup with an image file.
-- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+- [func replaceImage(with: CGImage)](./replaceimage%28with%29-6eb53.md)
   Replaces the contents of this image markup with a `CGImage`.
-- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+- [var contentsBounds: CGRect](./contentsbounds.md)
   The portion of the image to display, in normalized coordinates.
 
 

@@ -1,7 +1,8 @@
 # supportsDevice(_:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the spatial scaler works with a GPU.
 
@@ -19,9 +20,13 @@ Returns a Boolean value that indicates whether the spatial scaler works with a G
 class func supportsDevice(_ device: any MTLDevice) -> Bool
 ```
 
+```objc
++ (BOOL) supportsDevice:(id<MTLDevice>) device;
+```
+
 ## Parameters
 
-- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents a GPU.
+- `device`: An [`MTLDevice`](../../Metal/mtldevice.md) instance that represents a GPU.
 
 
 ---

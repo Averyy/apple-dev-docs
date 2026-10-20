@@ -1,7 +1,8 @@
 # MapContent
 
 **Framework**: MapKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol used to construct map content such as controls, markers, and annotations.
 
@@ -11,7 +12,7 @@ A protocol used to construct map content such as controls, markers, and annotati
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,62 +25,63 @@ A protocol used to construct map content such as controls, markers, and annotati
 ## Topics
 
 ### Accessing the view body
-- [var body: Self.Body](mapcontent/body-swift.property.md)
+- [var body: Self.Body](./mapcontent/body-swift.property.md)
   The content and behavior of the view.
 ### Supplying annotation titles
-- [func annotationTitles(Visibility) -> some MapContent](mapcontent/annotationtitles(_:).md)
+- [func annotationTitles(Visibility) -> some MapContent](./mapcontent/annotationtitles%28_%29.md)
   Sets the visibility of titles for markers and annotations.
-- [func annotationSubtitles(Visibility) -> some MapContent](mapcontent/annotationsubtitles(_:).md)
+- [func annotationSubtitles(Visibility) -> some MapContent](./mapcontent/annotationsubtitles%28_%29.md)
   Sets the visibility of subtitles for markers and annotations.
 ### Setting the content style
-- [func foregroundStyle(some ShapeStyle) -> some MapContent](mapcontent/foregroundstyle(_:).md)
+- [func foregroundStyle(some ShapeStyle) -> some MapContent](./mapcontent/foregroundstyle%28_%29.md)
   Specifies the shape style used to fill content in drawing map overlays.
-- [func tint<S>(S) -> some MapContent](mapcontent/tint(_:).md)
+- [func tint<S>(S) -> some MapContent](./mapcontent/tint%28_%29.md)
   The tint shape style to apply to map content.
 ### Setting stroke properties
-- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
+- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](./mapcontent/stroke%28_,linewidth%29.md)
   Applies the given shape style to drawn map overlays using the line width you specify.
-- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](mapcontent/stroke(_:style:).md)
+- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](./mapcontent/stroke%28_,style%29.md)
   Applies the given shape style to drawn map overlays using the stroke style you specify.
-- [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)
+- [func stroke(lineWidth: CGFloat) -> some MapContent](./mapcontent/stroke%28linewidth%29.md)
   Applies the given stoke drawn map overlays using the line width you specify.
-- [func strokeStyle(style: StrokeStyle) -> some MapContent](mapcontent/strokestyle(style:).md)
+- [func strokeStyle(style: StrokeStyle) -> some MapContent](./mapcontent/strokestyle%28style%29.md)
   Applies the given stroke style to drawn map overlays.
 ### Setting the overlay level
-- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](mapcontent/mapoverlaylevel(level:).md)
+- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](./mapcontent/mapoverlaylevel%28level%29.md)
   Specifies the position of overlays relative to other map content.
 ### Associated types
-- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+- [associatedtype Body : MapContent](./mapcontent/body-swift.associatedtype.md)
   The content and behavior of the view.
 ### Displaying place information
-- [func mapItemDetailSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some MapContent](mapcontent/mapitemdetailselectionaccessory(_:).md)
+- [func mapItemDetailSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some MapContent](./mapcontent/mapitemdetailselectionaccessory%28_%29.md)
   Specifies the selection accessory to display for the selected map item content.
 ### Instance Methods
-- [func tag<V>(V) -> some MapContent](mapcontent/tag(_:).md)
+- [func tag<V>(V) -> some MapContent](./mapcontent/tag%28_%29.md)
   Sets the unique tag value of this piece of map content.
 
 ## Relationships
 
 ### Inherited By
-- [DynamicMapContent](dynamicmapcontent.md)
+- [DynamicMapContent](./dynamicmapcontent.md)
 ### Conforming Types
-- [Annotation](annotation.md)
-- [AnyMapContent](anymapcontent.md)
-- [EmptyMapContent](emptymapcontent.md)
-- [MapCircle](mapcircle.md)
-- [MapPolygon](mappolygon.md)
-- [MapPolyline](mappolyline.md)
-- [Marker](marker.md)
-- [TupleMapContent](tuplemapcontent.md)
-- [UserAnnotation](userannotation.md)
+- [Annotation](./annotation.md)
+- [AnyMapContent](./anymapcontent.md)
+- [EmptyMapContent](./emptymapcontent.md)
+- [MapCircle](./mapcircle.md)
+- [MapPolygon](./mappolygon.md)
+- [MapPolyline](./mappolyline.md)
+- [Marker](./marker.md)
+- [TupleMapContent](./tuplemapcontent.md)
+- [UserAnnotation](./userannotation.md)
 
 ## See Also
 
-- [protocol DynamicMapContent](dynamicmapcontent.md)
+### Protocols
+- [protocol DynamicMapContent](./dynamicmapcontent.md)
   A  type of view that generates views from an underlying collection of data.
-- [struct MapContentBuilder](mapcontentbuilder.md)
+- [struct MapContentBuilder](./mapcontentbuilder.md)
   A result builder that creates map content from closures you provide.
-- [struct MapContentView](mapcontentview.md)
+- [struct MapContentView](./mapcontentview.md)
   A view that contains content that displays on a map at a specific position, and that responds to specific interactions you specify.
 
 

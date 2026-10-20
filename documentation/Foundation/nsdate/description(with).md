@@ -1,7 +1,8 @@
 # description(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of the date using the given locale.
 
@@ -20,6 +21,10 @@ Returns a string representation of the date using the given locale.
 func description(with locale: Any?) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale;
+```
+
 #### Return Value
 
 A string representation of the receiver, using the given locale, or if the locale argument is `nil`, in the international format `YYYY-MM-DD HH:MM:SS ±HHMM`, where `±HHMM` represents the time zone offset in hours and minutes from UTC (for example, “`2001-03-24 10:45:32 +0600`”)
@@ -30,13 +35,18 @@ In OS X v10.4 and earlier, `localeDictionary` is an `NSDictionary` object contai
 
 ## Parameters
 
-- `locale`: An `NSLocale` object. If you pass `nil`, `NSDate` formats the date in the same way as the [`description`](nsdate/description.md) property. In OS X v10.4 and earlier, this parameter was an `NSDictionary` object. If you pass in an `NSDictionary` object in OS X v10.5, `NSDate` uses the default user locale—the same as if you passed in `[NSLocale currentLocale].`
+- `locale`: An `NSLocale` object.
+
+  If you pass `nil`, `NSDate` formats the date in the same way as the [`description`](./description.md) property.
+
+  In OS X v10.4 and earlier, this parameter was an `NSDictionary` object. If you pass in an `NSDictionary` object in OS X v10.5, `NSDate` uses the default user locale—the same as if you passed in `[NSLocale currentLocale].`
 
 ## See Also
 
-- [var description: String](nsdate/description.md)
+### Describing Dates
+- [var description: String](./description.md)
   A string representation of the date object.
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](nsdate/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for this object.
 
 

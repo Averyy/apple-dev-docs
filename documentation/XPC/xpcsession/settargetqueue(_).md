@@ -1,7 +1,8 @@
 # setTargetQueue(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the target dispatch queue on an inactive session for processing messages.
 
@@ -11,7 +12,7 @@ Sets the target dispatch queue on an inactive session for processing messages.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,23 +27,24 @@ func setTargetQueue(_ targetQueue: DispatchQueue)
 
 ## See Also
 
-- [convenience init<Message>(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:incomingmessagehandler:cancellationhandler:)-407h2.md)
+### Creating a session
+- [convenience init<Message>(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28xpcservice,targetqueue,options,incomingmessagehandler,cancellationhandler%29-407h2.md)
   Establishes a connection to an XPC service with the name and decodable message handler you specify.
-- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:incomingmessagehandler:cancellationhandler:)-9f4u0.md)
+- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28xpcservice,targetqueue,options,incomingmessagehandler,cancellationhandler%29-9f4u0.md)
   Establishes a connection to an XPC service with the name and received message handler you specify.
-- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:incomingmessagehandler:cancellationhandler:)-bel3.md)
+- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28xpcservice,targetqueue,options,incomingmessagehandler,cancellationhandler%29-bel3.md)
   Establishes a connection to an XPC service with the name and dictionary message handler you specify.
-- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:cancellationhandler:).md)
+- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28xpcservice,targetqueue,options,cancellationhandler%29.md)
   Establishes a connection to an XPC service with the name you specify.
-- [convenience init<Message>(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:incomingmessagehandler:cancellationhandler:)-l3rz.md)
+- [convenience init<Message>(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28machservice,targetqueue,options,incomingmessagehandler,cancellationhandler%29-l3rz.md)
   Establishes a connection to a launch agent or launch daemon with the name and decodable message handler you specify.
-- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:incomingmessagehandler:cancellationhandler:)-2xuyi.md)
+- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28machservice,targetqueue,options,incomingmessagehandler,cancellationhandler%29-2xuyi.md)
   Establishes a connection to a launch agent or launch daemon with the name and received message handler you specify.
-- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:incomingmessagehandler:cancellationhandler:)-6jz7y.md)
+- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28machservice,targetqueue,options,incomingmessagehandler,cancellationhandler%29-6jz7y.md)
   Establishes a connection to a launch agent or launch daemon with the name and dictionary message handler you specify.
-- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:cancellationhandler:).md)
+- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, cancellationHandler: ((XPCRichError) -> Void)?) throws](./init%28machservice,targetqueue,options,cancellationhandler%29.md)
   Establishes a connection to a launch agent or launch daemon with the name you specify.
-- [XPCSession.InitializationOptions](xpcsession/initializationoptions.md)
+- [XPCSession.InitializationOptions](./initializationoptions.md)
   Options that control the session’s configuration.
 
 

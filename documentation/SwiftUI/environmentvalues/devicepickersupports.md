@@ -1,7 +1,8 @@
 # devicePickerSupports
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Checks for support to present a DevicePicker.
 
@@ -16,7 +17,8 @@ var devicePickerSupports: DevicePickerSupportedAction { get }
 
 ## See Also
 
-- [struct DevicePicker](../devicediscoveryui/devicepicker.md)
+### Interacting with networked devices
+- [struct DevicePicker](../../DeviceDiscoveryUI/devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 
 

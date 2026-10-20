@@ -1,7 +1,8 @@
 # MTLCaptureDestination
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kinds of destinations for captured command data.
 
@@ -19,33 +20,38 @@ The kinds of destinations for captured command data.
 enum MTLCaptureDestination
 ```
 
+```c
+enum MTLCaptureDestination : NSInteger;
+```
+
 ## Topics
 
 ### Choosing a destination
-- [MTLCaptureDestination.developerTools](mtlcapturedestination/developertools.md)
+- [MTLCaptureDestination.developerTools](./mtlcapturedestination/developertools.md)
   An option specifying that data should be captured to Xcode and that execution should stop in Xcode after the data is captured.
-- [MTLCaptureDestination.gpuTraceDocument](mtlcapturedestination/gputracedocument.md)
+- [MTLCaptureDestination.gpuTraceDocument](./mtlcapturedestination/gputracedocument.md)
   An option specifying that the captured command data should be saved to a GPU trace document.
 ### Initializers
-- [init?(rawValue: Int)](mtlcapturedestination/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlcapturedestination/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLCaptureDescriptor](mtlcapturedescriptor.md)
+### Frame capture
+- [class MTLCaptureDescriptor](./mtlcapturedescriptor.md)
   A configuration for a Metal capture session.
-- [class MTLCaptureManager](mtlcapturemanager.md)
+- [class MTLCaptureManager](./mtlcapturemanager.md)
   An instance you use to capture Metal command data in your app.
-- [protocol MTLCaptureScope](mtlcapturescope.md)
+- [protocol MTLCaptureScope](./mtlcapturescope.md)
   A type that can programmatically customize a GPU frame capture.
 
 

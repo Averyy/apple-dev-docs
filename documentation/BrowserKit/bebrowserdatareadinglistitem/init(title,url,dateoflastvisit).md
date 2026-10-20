@@ -1,7 +1,8 @@
 # init(title:url:dateOfLastVisit:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a reading list item with the given content and access metadata.
 
@@ -13,6 +14,10 @@ Initializes a reading list item with the given content and access metadata.
 
 ```swift
 init(title: String, url: URL, dateOfLastVisit: Date?)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title url:(NSURL *) url dateOfLastVisit:(NSDate *) dateOfLastVisit;
 ```
 
 ## Parameters

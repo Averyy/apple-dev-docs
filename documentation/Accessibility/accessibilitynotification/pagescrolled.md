@@ -1,7 +1,8 @@
 # AccessibilityNotification.PageScrolled
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A notification that an app posts when a scroll action completes.
 
@@ -22,25 +23,26 @@ struct PageScrolled
 
 #### Overview
 
-Include an announcement value, such as [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring), for an assistive app to announce. When an assistive app repeatedly receives the same scroll position value, it indicates to the user that scrolling can’t continue due to a border or boundary.
+Include an announcement value, such as [`String`](../../Swift/string.md) or [`AttributedString`](../../Foundation/attributedstring.md), for an assistive app to announce. When an assistive app repeatedly receives the same scroll position value, it indicates to the user that scrolling can’t continue due to a border or boundary.
 
 ## Topics
 
 ### Creating a page scroll notification
-- [init(String)](accessibilitynotification/pagescrolled/init(_:)-28520.md)
+- [init(String)](./pagescrolled/init%28_%29-28520.md)
   Creates a page scroll notification with a string.
-- [init(AttributedString)](accessibilitynotification/pagescrolled/init(_:)-39fee.md)
+- [init(AttributedString)](./pagescrolled/init%28_%29-39fee.md)
   Creates a page scroll notification with an attributed string value.
-- [init(NSAttributedString)](accessibilitynotification/pagescrolled/init(_:)-2lkx.md)
+- [init(NSAttributedString)](./pagescrolled/init%28_%29-2lkx.md)
   Creates a page scroll notification with an attributed string object.
 
 ## See Also
 
-- [AccessibilityNotification.Announcement](accessibilitynotification/announcement.md)
+### Notifications
+- [AccessibilityNotification.Announcement](./announcement.md)
   A notification that an app posts when it needs to convey an announcement to an assistive app.
-- [AccessibilityNotification.LayoutChanged](accessibilitynotification/layoutchanged.md)
+- [AccessibilityNotification.LayoutChanged](./layoutchanged.md)
   A notification that an app posts when the layout of a screen changes.
-- [AccessibilityNotification.ScreenChanged](accessibilitynotification/screenchanged.md)
+- [AccessibilityNotification.ScreenChanged](./screenchanged.md)
   A notification that an app posts when a new view appears that occupies a major portion of the screen.
 
 

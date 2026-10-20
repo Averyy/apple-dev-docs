@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 var qualityLevel: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger qualityLevel;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cipersonsegmentation/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
 
 
 ---

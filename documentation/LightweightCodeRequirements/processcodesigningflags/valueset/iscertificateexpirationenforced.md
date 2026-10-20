@@ -1,7 +1,8 @@
 # isCertificateExpirationEnforced
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the signature on this code should be treated as invalid if the certificate it was signed with expired.
 

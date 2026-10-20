@@ -1,7 +1,8 @@
 # always
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The scrollable view always bounces.
 
@@ -26,9 +27,10 @@ The scrollable view always bounces along the specified axis, regardless of the s
 
 ## See Also
 
-- [static var automatic: ScrollBounceBehavior](scrollbouncebehavior/automatic.md)
+### Bounce behaviors
+- [static var automatic: ScrollBounceBehavior](./automatic.md)
   The automatic behavior.
-- [static var basedOnSize: ScrollBounceBehavior](scrollbouncebehavior/basedonsize.md)
+- [static var basedOnSize: ScrollBounceBehavior](./basedonsize.md)
   The scrollable view bounces when its content is large enough to require scrolling.
 
 

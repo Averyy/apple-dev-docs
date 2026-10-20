@@ -1,7 +1,8 @@
 # LivePhotosKit.Errors
 
 **Framework**: LivePhotosKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The errors that can occur when playing a LivePhoto.
 
@@ -10,7 +11,7 @@ The errors that can occur when playing a LivePhoto.
 
 ## Declaration
 
-```swift
+```
 interface LivePhotosKit.Errors {
 	const number PHOTO_FAILED_TO_LOAD;
 	const number VIDEO_FAILED_TO_LOAD;
@@ -20,14 +21,15 @@ interface LivePhotosKit.Errors {
 ## Topics
 
 ### Enumeration Cases
-- [VIDEO_FAILED_TO_LOAD](livephotoskit.errors/video_failed_to_load.md)
+- [VIDEO_FAILED_TO_LOAD](./livephotoskit.errors/video_failed_to_load.md)
   Video asset failed to load.
-- [PHOTO_FAILED_TO_LOAD](livephotoskit.errors/photo_failed_to_load.md)
+- [PHOTO_FAILED_TO_LOAD](./livephotoskit.errors/photo_failed_to_load.md)
   Photo asset failed to load.
 
 ## See Also
 
-- [LivePhotosKit.PlaybackStyle](livephotoskit.playbackstyle.md)
+### Enumerations
+- [LivePhotosKit.PlaybackStyle](./livephotoskit.playbackstyle.md)
   Possible playback styles.
 
 

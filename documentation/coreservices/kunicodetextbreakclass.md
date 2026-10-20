@@ -1,7 +1,8 @@
 # kUnicodeTextBreakClass
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Identifies the class of Unicode utility operations that find text boundaries.
 

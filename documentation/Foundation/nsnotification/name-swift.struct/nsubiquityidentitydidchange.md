@@ -1,7 +1,8 @@
 # NSUbiquityIdentityDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sent after the iCloud (“ubiquity”) identity has changed.
 
@@ -20,11 +21,15 @@ Sent after the iCloud (“ubiquity”) identity has changed.
 static let NSUbiquityIdentityDidChange: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSUbiquityIdentityDidChangeNotification;
+```
+
 #### Discussion
 
 The system generates this notification when the user logs into or out of an iCloud account or enables or disables the syncing of documents and data. This notification is your cue to update caches and any interface elements displaying iCloud–related content. For example, hide all references to iCloud files when the user logs out of iCloud.
 
-When your app receives this notification, get the new token from the [`ubiquityIdentityToken`](filemanager/ubiquityidentitytoken.md) instance property. The value of that token is `nil` if the user disabled iCloud or logged out. There is no `userInfo` dictionary.
+When your app receives this notification, get the new token from the [`ubiquityIdentityToken`](../../filemanager/ubiquityidentitytoken.md) instance property. The value of that token is `nil` if the user disabled iCloud or logged out. There is no `userInfo` dictionary.
 
 
 ---

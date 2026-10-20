@@ -1,7 +1,8 @@
 # focusSizeIncrease
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inset or outset values specifying your content’s size increase when in focus.
 
@@ -14,15 +15,20 @@ The inset or outset values specifying your content’s size increase when in foc
 var focusSizeIncrease: NSDirectionalEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSDirectionalEdgeInsets focusSizeIncrease;
+```
+
 #### Discussion
 
 Use negative values for a size increase. The values contribute to the lockup view’s intrinsic content size and guide layout update when focus state changes.
 
 ## See Also
 
-- [var contentSize: CGSize](tvlockupview/contentsize.md)
+### Setting view size
+- [var contentSize: CGSize](./contentsize.md)
   The size of the content view.
-- [var contentViewInsets: NSDirectionalEdgeInsets](tvlockupview/contentviewinsets.md)
+- [var contentViewInsets: NSDirectionalEdgeInsets](./contentviewinsets.md)
   The spacing between the content view and its peer and containing views.
 
 

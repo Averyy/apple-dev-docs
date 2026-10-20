@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date a subscription expires.
 
@@ -20,15 +21,20 @@ The date a subscription expires.
 var expirationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * expirationDate;
+```
+
 #### Discussion
 
 The test environment sets the expiration date based on the subscription settings in your active StoreKit configuration file.
 
 ## See Also
 
-- [var purchaseDate: Date](sktesttransaction/purchasedate.md)
+### Getting Dates
+- [var purchaseDate: Date](./purchasedate.md)
   The date of purchase for the transaction.
-- [var cancelDate: Date?](sktesttransaction/canceldate.md)
+- [var cancelDate: Date?](./canceldate.md)
   The date when the system refunded the transaction.
 
 

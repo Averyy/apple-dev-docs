@@ -1,7 +1,8 @@
 # baseURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base URL.
 
@@ -26,17 +27,18 @@ If the URL is itself absolute, then this value is `nil`.
 
 ## See Also
 
-- [var absoluteString: String](url/absolutestring.md)
+### Accessing URL representations
+- [var absoluteString: String](./absolutestring.md)
   The absolute string for the URL.
-- [var absoluteURL: URL](url/absoluteurl.md)
+- [var absoluteURL: URL](./absoluteurl.md)
   The absolute URL.
-- [var relativePath: String](url/relativepath.md)
+- [var relativePath: String](./relativepath.md)
   The relative path of the URL if the URL conforms to RFC 3986, otherwise nil.
-- [var relativeString: String](url/relativestring.md)
+- [var relativeString: String](./relativestring.md)
   The relative portion of a URL.
-- [var standardized: URL](url/standardized.md)
+- [var standardized: URL](./standardized.md)
   A version of the URL with any instances of “..” or “.” resolved in its path.
-- [var standardizedFileURL: URL](url/standardizedfileurl.md)
+- [var standardizedFileURL: URL](./standardizedfileurl.md)
   A standardized version of the path of a file URL.
 
 

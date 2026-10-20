@@ -1,12 +1,13 @@
 # NSCell.CellType.textCellType
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cell displays text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Cell displays text.
 case textCellType
 ```
 
+```c
+NSTextCellType
+```
+
 ## See Also
 
-- [NSCell.CellType.nullCellType](nscell/celltype/nullcelltype.md)
+### Constants
+- [NSCell.CellType.nullCellType](./nullcelltype.md)
   Cell displays nothing.
-- [NSCell.CellType.imageCellType](nscell/celltype/imagecelltype.md)
+- [NSCell.CellType.imageCellType](./imagecelltype.md)
   Cell displays images.
 
 

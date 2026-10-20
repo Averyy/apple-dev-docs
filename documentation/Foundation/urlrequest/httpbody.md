@@ -1,7 +1,8 @@
 # httpBody
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data sent as the message body of a request, such as for an HTTP POST request.
 
@@ -22,13 +23,14 @@ var httpBody: Data? { get set }
 
 ## See Also
 
-- [var httpMethod: String?](urlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String?](./httpmethod.md)
   The HTTP request method.
-- [var url: URL?](urlrequest/url.md)
+- [var url: URL?](./url.md)
   The URL of the request.
-- [var httpBodyStream: InputStream?](urlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The stream used to deliver the HTTP body.
-- [var mainDocumentURL: URL?](urlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL associated with this request.
 
 

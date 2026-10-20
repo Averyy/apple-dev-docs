@@ -1,7 +1,8 @@
 # scrubber(_:didSelectItemAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the item at the specified index was selected.
 
@@ -15,6 +16,10 @@ Tells the delegate that the item at the specified index was selected.
 optional func scrubber(_ scrubber: NSScrubber, didSelectItemAt selectedIndex: Int)
 ```
 
+```objc
+- (void) scrubber:(NSScrubber *) scrubber didSelectItemAtIndex:(NSInteger) selectedIndex;
+```
+
 ## Parameters
 
 - `scrubber`: The scrubber object that is notifying you of the selection change.
@@ -22,7 +27,8 @@ optional func scrubber(_ scrubber: NSScrubber, didSelectItemAt selectedIndex: In
 
 ## See Also
 
-- [func scrubber(NSScrubber, didHighlightItemAt: Int)](nsscrubberdelegate/scrubber(_:didhighlightitemat:).md)
+### Handling item selection and highlighting
+- [func scrubber(NSScrubber, didHighlightItemAt: Int)](./scrubber%28_,didhighlightitemat%29.md)
   Tells the delegate that the item at the specified index was highlighted.
 
 

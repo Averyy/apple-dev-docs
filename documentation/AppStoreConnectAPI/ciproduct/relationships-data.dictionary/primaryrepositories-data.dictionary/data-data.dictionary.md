@@ -1,7 +1,8 @@
 # CiProduct.Relationships.PrimaryRepositories.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Repositories resource that represents the productâ€™s primary repositories.
 
@@ -10,7 +11,7 @@ The type and ID of a related Repositories resource that represents the productâ€
 
 ## Declaration
 
-```swift
+```
 object CiProduct.Relationships.PrimaryRepositories.Data
 ```
 
@@ -18,6 +19,8 @@ object CiProduct.Relationships.PrimaryRepositories.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Repositories resource that represents the primary repository.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `scmRepositories`
 
 
 ---

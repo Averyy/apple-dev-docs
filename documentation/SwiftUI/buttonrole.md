@@ -1,7 +1,8 @@
 # ButtonRole
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that describes the purpose of a button.
 
@@ -22,7 +23,7 @@ struct ButtonRole
 
 #### Overview
 
-A button role provides a description of a button’s purpose.  For example, the [`destructive`](buttonrole/destructive.md) role indicates that a button performs a destructive action, like delete user data:
+A button role provides a description of a button’s purpose.  For example, the [`destructive`](./buttonrole/destructive.md) role indicates that a button performs a destructive action, like delete user data:
 
 ```swift
 Button("Delete", role: .destructive) { delete() }
@@ -31,42 +32,43 @@ Button("Delete", role: .destructive) { delete() }
 ## Topics
 
 ### Getting button roles
-- [static let cancel: ButtonRole](buttonrole/cancel.md)
+- [static let cancel: ButtonRole](./buttonrole/cancel.md)
   A role that indicates a button that cancels an operation.
-- [static let destructive: ButtonRole](buttonrole/destructive.md)
+- [static let destructive: ButtonRole](./buttonrole/destructive.md)
   A role that indicates a destructive button.
 ### Type Properties
-- [static let close: ButtonRole](buttonrole/close.md)
+- [static let close: ButtonRole](./buttonrole/close.md)
   A role that indicates a button that closes the current operation.
-- [static let confirm: ButtonRole](buttonrole/confirm.md)
+- [static let confirm: ButtonRole](./buttonrole/confirm.md)
   A role that indicates a button that confirms an operation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Button](button.md)
+### Creating buttons
+- [struct Button](./button.md)
   A control that initiates an action.
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+- [func buttonStyle(_:)](./view/buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [func buttonBorderShape(ButtonBorderShape) -> some View](view/buttonbordershape(_:).md)
+- [func buttonBorderShape(ButtonBorderShape) -> some View](./view/buttonbordershape%28_%29.md)
   Sets the border shape for buttons in this view.
-- [struct ButtonBorderShape](buttonbordershape.md)
+- [struct ButtonBorderShape](./buttonbordershape.md)
   A shape used to draw a button’s border.
-- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
+- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](./view/buttonrepeatbehavior%28_%29.md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
+- [struct ButtonRepeatBehavior](./buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](./environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./view/buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](./buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
 
 

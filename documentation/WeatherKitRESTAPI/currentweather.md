@@ -1,7 +1,8 @@
 # CurrentWeather
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The current weather conditions for the specified location.
 
@@ -10,27 +11,28 @@ The current weather conditions for the specified location.
 
 ## Declaration
 
-```swift
+```
 object CurrentWeather
 ```
 
 ## Topics
 
 ### Getting the current weather
-- [object CurrentWeather.CurrentWeatherData](currentweather/currentweatherdata.md)
+- [object CurrentWeather.CurrentWeatherData](./currentweather/currentweatherdata.md)
   The current weather object.
 
 ## Relationships
 
 ### Inherits From
-- [CurrentWeather.CurrentWeatherData](currentweather/currentweatherdata.md)
-- [ProductData](productdata.md)
+- [CurrentWeather.CurrentWeatherData](./currentweather/currentweatherdata.md)
+- [ProductData](./productdata.md)
 
 ## See Also
 
-- [object Metadata](metadata.md)
+### Obtaining current weather information
+- [object Metadata](./metadata.md)
   Descriptive information about the weather data.
-- [object ProductData](productdata.md)
+- [object ProductData](./productdata.md)
   A base type for all weather data.
 
 

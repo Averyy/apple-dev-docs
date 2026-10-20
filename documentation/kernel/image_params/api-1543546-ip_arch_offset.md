@@ -1,14 +1,15 @@
 # ip_arch_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 user_size_t ip_arch_offset;
 ```
 

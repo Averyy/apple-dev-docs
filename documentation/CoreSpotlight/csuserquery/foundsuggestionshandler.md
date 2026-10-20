@@ -1,7 +1,8 @@
 # foundSuggestionsHandler
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to execute when the query delivers a new batch of suggested items.
 
@@ -18,23 +19,28 @@ The block to execute when the query delivers a new batch of suggested items.
 var foundSuggestionsHandler: (([CSSuggestion]) -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^foundSuggestionsHandler)(NSArray<CSSuggestion *> *suggestions);
+```
+
 ## Mentions
 
-- [Building a search interface for your app](building-a-search-interface-for-your-app.md)
+- [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
 #### Discussion
 
-Specify a value for this property only if you start your query with the [`start()`](csuserquery/start().md) method. While the query runs, the query object executes the provided closure one or more times to deliver suggested completions for the current search term. Use your handler to retrieve the suggested completions and update your app’s search interface. The query object stops delivering suggested items when it runs out of suggestions or reaches the maximum number found in the [`maxSuggestionCount`](csuserquerycontext/maxsuggestioncount.md) property of the query configuration parameters.
+Specify a value for this property only if you start your query with the [`start()`](./start%28%29.md) method. While the query runs, the query object executes the provided closure one or more times to deliver suggested completions for the current search term. Use your handler to retrieve the suggested completions and update your app’s search interface. The query object stops delivering suggested items when it runs out of suggestions or reaches the maximum number found in the [`maxSuggestionCount`](../csuserquerycontext/maxsuggestioncount.md) property of the query configuration parameters.
 
-If you start the query by accessing the [`responses`](csuserquery/responses-swift.property.md) property, the query object doesn’t execute the block in this property.
+If you start the query by accessing the [`responses`](./responses-swift.property.md) property, the query object doesn’t execute the block in this property.
 
 ## See Also
 
-- [func start()](csuserquery/start.md)
+### Executing the query with handler blocks
+- [func start()](./start%28%29.md)
   Starts searching the index for items that match the current query string and parameters.
-- [func cancel()](csuserquery/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the current query operation.
-- [var foundSuggestionCount: Int](csuserquery/foundsuggestioncount.md)
+- [var foundSuggestionCount: Int](./foundsuggestioncount.md)
   The number of suggested items the query found so far.
 
 

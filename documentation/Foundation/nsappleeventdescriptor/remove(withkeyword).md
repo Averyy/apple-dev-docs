@@ -1,7 +1,8 @@
 # remove(withKeyword:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the receiver’s descriptor identified by the specified keyword.
 
@@ -15,6 +16,10 @@ Removes the receiver’s descriptor identified by the specified keyword.
 func remove(withKeyword keyword: AEKeyword)
 ```
 
+```objc
+- (void) removeDescriptorWithKeyword:(AEKeyword) keyword;
+```
+
 #### Discussion
 
 The receiver must be an Apple event or Apple event record. Currently provides no indication if an error occurs.
@@ -25,11 +30,12 @@ The receiver must be an Apple event or Apple event record. Currently provides no
 
 ## See Also
 
-- [func forKeyword(AEKeyword) -> NSAppleEventDescriptor?](nsappleeventdescriptor/forkeyword(_:).md)
+### Working With Record Descriptors
+- [func forKeyword(AEKeyword) -> NSAppleEventDescriptor?](./forkeyword%28_%29.md)
   Returns the receiver’s descriptor for the specified keyword.
-- [func keywordForDescriptor(at: Int) -> AEKeyword](nsappleeventdescriptor/keywordfordescriptor(at:).md)
+- [func keywordForDescriptor(at: Int) -> AEKeyword](./keywordfordescriptor%28at%29.md)
   Returns the keyword for the descriptor at the specified (one-based) position in the receiver.
-- [func setDescriptor(NSAppleEventDescriptor, forKeyword: AEKeyword)](nsappleeventdescriptor/setdescriptor(_:forkeyword:).md)
+- [func setDescriptor(NSAppleEventDescriptor, forKeyword: AEKeyword)](./setdescriptor%28_,forkeyword%29.md)
   Adds a descriptor, identified by a keyword, to the receiver.
 
 

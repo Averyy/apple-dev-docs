@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An AudioStreamBasicDescription that describes the current data format for the tap. This is the format of the data that will be accessible in any aggregate device that contains the tap.
 

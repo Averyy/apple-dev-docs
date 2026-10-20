@@ -1,7 +1,8 @@
 # ASAuthorization.OpenIDOperation
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The kinds of operations that you can perform with OpenID authentication.
 
@@ -20,39 +21,44 @@ The kinds of operations that you can perform with OpenID authentication.
 struct OpenIDOperation
 ```
 
+```c
+typedef NSString * ASAuthorizationOpenIDOperation;
+```
+
 #### Discussion
 
-Use one of these values as the [`requestedOperation`](asauthorizationopenidrequest/requestedoperation.md) property in an OpenID request that you make with an instance of either [`ASAuthorizationAppleIDRequest`](asauthorizationappleidrequest.md) or [`ASAuthorizationSingleSignOnRequest`](asauthorizationsinglesignonrequest.md).
+Use one of these values as the [`requestedOperation`](../asauthorizationopenidrequest/requestedoperation.md) property in an OpenID request that you make with an instance of either [`ASAuthorizationAppleIDRequest`](../asauthorizationappleidrequest.md) or [`ASAuthorizationSingleSignOnRequest`](../asauthorizationsinglesignonrequest.md).
 
 ## Topics
 
 ### Operation Types
-- [static let operationLogin: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationlogin.md)
+- [static let operationLogin: ASAuthorization.OpenIDOperation](./openidoperation/operationlogin.md)
   An operation used to authenticate a user.
-- [static let operationRefresh: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationrefresh.md)
+- [static let operationRefresh: ASAuthorization.OpenIDOperation](./openidoperation/operationrefresh.md)
   An operation that refreshes the logged-in user’s credentials.
-- [static let operationLogout: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationlogout.md)
+- [static let operationLogout: ASAuthorization.OpenIDOperation](./openidoperation/operationlogout.md)
   An operation that ends an authenticated session.
-- [static let operationImplicit: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationimplicit.md)
+- [static let operationImplicit: ASAuthorization.OpenIDOperation](./openidoperation/operationimplicit.md)
   An operation that depends on the particular kind of credential provider.
 ### Creating an Operation
-- [init(String)](asauthorization/openidoperation/init(_:).md)
+- [init(String)](./openidoperation/init%28_%29.md)
   Creates an operation from the given string.
-- [init(rawValue: String)](asauthorization/openidoperation/init(rawvalue:).md)
+- [init(rawValue: String)](./openidoperation/init%28rawvalue%29.md)
   Creates an operation from the given string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var requestedOperation: ASAuthorization.OpenIDOperation](asauthorizationopenidrequest/requestedoperation.md)
+### Setting the Operation
+- [var requestedOperation: ASAuthorization.OpenIDOperation](../asauthorizationopenidrequest/requestedoperation.md)
   The OpenID authentication operation you want this request to perform.
 
 

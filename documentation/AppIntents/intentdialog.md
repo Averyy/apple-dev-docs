@@ -1,7 +1,8 @@
 # IntentDialog
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
 
@@ -11,7 +12,7 @@ The text you want the system to display, or speak, when requesting a value, aski
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,8 +23,8 @@ struct IntentDialog
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
-- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+- [Creating your first app intent](./creating-your-first-app-intent.md)
+- [Displaying static and interactive snippets](./displaying-static-and-interactive-snippets.md)
 
 #### Overview
 
@@ -32,40 +33,41 @@ When someone performs an action with Siri AI that invokes your app intent, the s
 ## Topics
 
 ### Creating a dialog
-- [init(LocalizedStringResource)](intentdialog/init(_:).md)
+- [init(LocalizedStringResource)](./intentdialog/init%28_%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](intentdialog/init(full:supporting:).md)
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](./intentdialog/init%28full,supporting%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [init(full: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:systemimagename:).md)
+- [init(full: LocalizedStringResource, systemImageName: String)](./intentdialog/init%28full,systemimagename%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:supporting:systemimagename:).md)
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](./intentdialog/init%28full,supporting,systemimagename%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../Swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IntentResult](intentresult.md)
+### Results
+- [protocol IntentResult](./intentresult.md)
   A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
-- [struct IntentResultContainer](intentresultcontainer.md)
+- [struct IntentResultContainer](./intentresultcontainer.md)
   An object that represents the output of a completed intent.
-- [protocol ProvidesDialog](providesdialog.md)
+- [protocol ProvidesDialog](./providesdialog.md)
   The result of performing an action that delivers a dialog back to the initiator of the action.
-- [protocol ReturnsValue](returnsvalue.md)
+- [protocol ReturnsValue](./returnsvalue.md)
   The result of performing an action that delivers a value back to the initiator.
-- [protocol ShowsSnippetView](showssnippetview.md)
+- [protocol ShowsSnippetView](./showssnippetview.md)
   The result of performing an action that delivers a view back to the initiator of the action.
-- [protocol ResultsCollection](resultscollection.md)
+- [protocol ResultsCollection](./resultscollection.md)
   A protocol representing a collection of returned items with support for sectioning.
-- [protocol OpensIntent](opensintent.md)
+- [protocol OpensIntent](./opensintent.md)
   A result type that indicates your app intent returns another app intent.
 
 

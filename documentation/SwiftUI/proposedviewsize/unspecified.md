@@ -1,7 +1,8 @@
 # unspecified
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The proposed size with both dimensions left unspecified.
 
@@ -22,13 +23,14 @@ static let unspecified: ProposedViewSize
 
 #### Discussion
 
-Both dimensions contain `nil` in this size proposal. Subviews of a custom layout return their ideal size when you propose this value using the [`dimensions(in:)`](layoutsubview/dimensions(in:).md) method. A custom layout should also return its ideal size from the [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md) method for this value.
+Both dimensions contain `nil` in this size proposal. Subviews of a custom layout return their ideal size when you propose this value using the [`dimensions(in:)`](../layoutsubview/dimensions%28in%29.md) method. A custom layout should also return its ideal size from the [`sizeThatFits(proposal:subviews:cache:)`](../layout/sizethatfits%28proposal,subviews,cache%29.md) method for this value.
 
 ## See Also
 
-- [static let zero: ProposedViewSize](proposedviewsize/zero.md)
+### Getting standard proposals
+- [static let zero: ProposedViewSize](./zero.md)
   A size proposal that contains zero in both dimensions.
-- [static let infinity: ProposedViewSize](proposedviewsize/infinity.md)
+- [static let infinity: ProposedViewSize](./infinity.md)
   A size proposal that contains infinity in both dimensions.
 
 

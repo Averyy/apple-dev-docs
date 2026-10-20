@@ -1,7 +1,8 @@
 # timing
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the Emitter timing method.
 

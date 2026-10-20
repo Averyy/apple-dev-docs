@@ -1,14 +1,15 @@
 # tvtoabstime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 uint64_t tvtoabstime(struct timeval *);
 ```
 

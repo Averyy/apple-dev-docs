@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm or implementation the request uses.
 
@@ -22,9 +23,10 @@ let revision: DetectFaceCaptureQualityRequest.Revision
 
 ## See Also
 
-- [static let supportedRevisions: [DetectFaceCaptureQualityRequest.Revision]](detectfacecapturequalityrequest/supportedrevisions.md)
+### Getting the revision
+- [static let supportedRevisions: [DetectFaceCaptureQualityRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
-- [DetectFaceCaptureQualityRequest.Revision](detectfacecapturequalityrequest/revision-swift.enum.md)
+- [DetectFaceCaptureQualityRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

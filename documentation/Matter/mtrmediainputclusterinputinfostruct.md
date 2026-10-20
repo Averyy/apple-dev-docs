@@ -1,7 +1,8 @@
 # MTRMediaInputClusterInputInfoStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTRMediaInputClusterInputInfoStruct
 ```
 
+```objc
+@interface MTRMediaInputClusterInputInfoStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var descriptionString: String](mtrmediainputclusterinputinfostruct/descriptionstring.md)
-- [var index: NSNumber](mtrmediainputclusterinputinfostruct/index.md)
-- [var inputType: NSNumber](mtrmediainputclusterinputinfostruct/inputtype.md)
-- [var name: String](mtrmediainputclusterinputinfostruct/name.md)
+- [var descriptionString: String](./mtrmediainputclusterinputinfostruct/descriptionstring.md)
+- [var index: NSNumber](./mtrmediainputclusterinputinfostruct/index.md)
+- [var inputType: NSNumber](./mtrmediainputclusterinputinfostruct/inputtype.md)
+- [var name: String](./mtrmediainputclusterinputinfostruct/name.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRMediaInputClusterInputInfo](mtrmediainputclusterinputinfo.md)
+- [MTRMediaInputClusterInputInfo](./mtrmediainputclusterinputinfo.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

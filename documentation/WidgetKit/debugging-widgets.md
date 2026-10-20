@@ -1,6 +1,7 @@
 # Debugging widgets
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Set environment variables in Xcode to control your widget’s configuration in the debugger.
 
@@ -18,21 +19,21 @@ To debug accessory widgets that appear on the iPhone Lock Screen or as complicat
 
 To configure a specific widget configuration, use the Arguments pane of the widget extension’s scheme, shown here, to set environment variables as described below.
 
-![Screenshot showing Xcode’s Arguments pane with environment variables.](/images/com.apple.WidgetKit/Debugging-Environment-Variables@2x.png)
+![Screenshot showing Xcode’s Arguments pane with environment variables.](https://developer.apple.com/tutorials/images/com.apple.WidgetKit/Debugging-Environment-Variables@2x.png)
 
-Additionally, use Xcode previews for iOS widgets as described in [`Previewing widgets and Live Activities in Xcode`](previewing-widgets-and-live-activities-in-xcode.md).
+Additionally, use Xcode previews for iOS widgets as described in [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md).
 
-#### Debug Specific Widget Configurations
+#### Debug specific widget configurations
 
 To debug a specific family of your widget that’s not an accessory widget, edit the scheme for your widget extension target and set the `_XCWidgetFamily` environment variable to `small`, `medium`, `large`, or `extralarge`.
 
-If your widget extension supports multiple widgets using [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle), select the specific widget to debug by setting `_XCWidgetKind` to a string that matches the `kind` property of the widget’s configuration.
+If your widget extension supports multiple widgets using [`WidgetBundle`](../SwiftUI/widgetbundle.md), select the specific widget to debug by setting `_XCWidgetKind` to a string that matches the `kind` property of the widget’s configuration.
 
-#### Debug Watch Complications
+#### Debug watch complications
 
-Debugging a watch complication you create with WidgetKit works the same as debugging a complication you create with ClockKit. To learn more about testing complications, see [`Creating complications for your watchOS app`](https://developer.apple.com/documentation/clockkit/creating-complications-for-your-watchos-app).
+Debugging a watch complication you create with WidgetKit works the same as debugging a complication you create with ClockKit. To learn more about testing complications, see [Creating complications for your watchOS app](../ClockKit/creating-complications-for-your-watchos-app.md).
 
-#### Debug Mac Widgets
+#### Debug Mac widgets
 
 The WidgetKit Simulator app provides a flexible way to see all your widget configurations in one place. Running your widget in the WidgetKit Simulator app lets you:
 
@@ -47,11 +48,12 @@ To select the default view the WidgetKit Simulator app shows when you start a de
 
 ## See Also
 
-- [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
+### Debugging
+- [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
   Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
-- [Preview macros](preview-macros.md)
+- [Preview macros](./preview-macros.md)
   Use Swift macros to create widget previews in Xcode.
-- [struct WidgetPreviewContext](widgetpreviewcontext.md)
+- [struct WidgetPreviewContext](./widgetpreviewcontext.md)
   A specification for the context of a widget preview.
 
 

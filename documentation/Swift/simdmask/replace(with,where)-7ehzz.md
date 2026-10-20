@@ -1,7 +1,8 @@
 # replace(with:where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces elements of this vector with elements of `other` in the lanes where `mask` is `true`.
 
@@ -19,6 +20,8 @@ Replaces elements of this vector with elements of `other` in the lanes where `ma
 ```swift
 mutating func replace(with other: SIMDMask<Storage>, where mask: SIMDMask<Storage>)
 ```
+
+Available when `Storage` is `SIMD2<Int64>`.
 
 #### Discussion
 

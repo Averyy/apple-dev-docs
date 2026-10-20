@@ -1,7 +1,8 @@
 # IsIconRefComposite(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.15
@@ -10,6 +11,10 @@
 
 ```swift
 func IsIconRefComposite(_ compositeIconRef: IconRef!, _ backgroundIconRef: UnsafeMutablePointer<IconRef?>!, _ foregroundIconRef: UnsafeMutablePointer<IconRef?>!) -> OSErr
+```
+
+```c
+OSErr IsIconRefComposite(IconRef compositeIconRef, IconRef *backgroundIconRef, IconRef *foregroundIconRef);
 ```
 
 

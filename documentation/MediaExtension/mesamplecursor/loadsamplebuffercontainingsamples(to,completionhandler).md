@@ -1,7 +1,8 @@
 # loadSampleBufferContainingSamples(to:completionHandler:)
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds a sample buffer that contains the samples at the cursor that you specify.
 
@@ -11,12 +12,20 @@ Builds a sample buffer that contains the samples at the cursor that you specify.
 ## Declaration
 
 ```swift
+optional func loadSampleBufferContainingSamples(to endSampleCursor: (any MESampleCursor)?, completionHandler: @escaping @Sendable (CMSampleBuffer?, (any Error)?) -> Void)
+```
+
+```swift
 optional func loadSampleBufferContainingSamples(to endSampleCursor: (any MESampleCursor)?) async throws -> CMSampleBuffer
+```
+
+```objc
+- (void) loadSampleBufferContainingSamplesToEndCursor:(id<MESampleCursor>) endSampleCursor completionHandler:(void (^)(CMSampleBufferRef newSampleBuffer, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Plugin format readers that don’t implement [`sampleLocation()`](mesamplecursor/samplelocation().md) or that always load sample data to answer cursor queries need to implement this method. If a plug-in format reader implements [`sampleLocation()`](mesamplecursor/samplelocation().md), implementing [`loadSampleBufferContainingSamples(to:completionHandler:)`](mesamplecursor/loadsamplebuffercontainingsamples(to:completionhandler:).md) is optional.
+Plugin format readers that don’t implement [`sampleLocation()`](./samplelocation%28%29.md) or that always load sample data to answer cursor queries need to implement this method. If a plug-in format reader implements [`sampleLocation()`](./samplelocation%28%29.md), implementing [`loadSampleBufferContainingSamples(to:completionHandler:)`](./loadsamplebuffercontainingsamples%28to,completionhandler%29.md) is optional.
 
 If there’s no sample data between the sample cursor and `endSampleCursor`, the sample buffer is empty. If an error occurs, the sample buffer is `nil`.
 
@@ -29,9 +38,10 @@ If there’s no sample data between the sample cursor and `endSampleCursor`, the
 
 ## See Also
 
-- [func chunkDetails() throws -> MESampleCursorChunk](mesamplecursor/chunkdetails.md)
+### Sending samples to a pipeline
+- [func chunkDetails() throws -> MESampleCursorChunk](./chunkdetails%28%29.md)
   Returns information about the chunk that holds the sample indicated by the cursor.
-- [func sampleLocation() throws -> MESampleLocation](mesamplecursor/samplelocation.md)
+- [func sampleLocation() throws -> MESampleLocation](./samplelocation%28%29.md)
   Returns the location and byte source of the sample indicated by the cursor.
 
 

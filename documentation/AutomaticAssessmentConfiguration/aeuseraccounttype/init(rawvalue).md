@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 27.0+

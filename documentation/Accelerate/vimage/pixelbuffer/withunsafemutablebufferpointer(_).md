@@ -1,7 +1,8 @@
 # withUnsafeMutableBufferPointer(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the buffer’s mutable contiguous storage.
 
@@ -11,7 +12,7 @@ Calls the given closure with a pointer to the buffer’s mutable contiguous stor
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Calls the given closure with a pointer to the buffer’s mutable contiguous stor
 ```swift
 func withUnsafeMutableBufferPointer<R>(_ body: (inout UnsafeMutableBufferPointer<Format.ComponentType>) throws -> R) rethrows -> R
 ```
+
+Available when `Format` conforms to `StaticPixelFormat`.
 
 #### Return Value
 
@@ -32,7 +35,7 @@ You can use this function to simplify interoperation with other libraries and fr
 
 ##### Add Text to a Pixel Buffer
 
-The following code creates a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](https://developer.apple.com/documentation/coretext/ctlinedraw(_:_:)):
+The following code creates a [`CGContext`](../../../CoreGraphics/cgcontext.md) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](../../../CoreText/ctlinedraw%28_,_%29.md):
 
 ```swift
 let srcImage =  imageLiteral(resourceName: " ... ").cgImage(
@@ -92,11 +95,11 @@ let result = buffer.makeCGImage(cgImageFormat: cgImageFormat)!
 
 On return, the buffer contains the original image with a text overlay.
 
-![A photograph of twigs and branches with the text vImage Pixel Buffer added to the bottom left corner.](/images/com.apple.accelerate/media-3978480@2x.png)
+![A photograph of twigs and branches with the text vImage Pixel Buffer added to the bottom left corner.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3978480@2x.png)
 
 ##### Fill a Pixel Buffer with Random Values
 
-The following code uses Accelerate’s [`BNNS`](bnns.md) library to fill a pixel buffer with random values:
+The following code uses Accelerate’s [`BNNS`](../../bnns.md) library to fill a pixel buffer with random values:
 
 ```swift
 let buffer = vImage.PixelBuffer(
@@ -126,11 +129,11 @@ buffer.withUnsafeMutableBufferPointer { bufferPtr in
 
 On return, the buffer contains random color values.
 
-![A square image of random noise.](/images/com.apple.accelerate/media-3978494@2x.png)
+![A square image of random noise.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3978494@2x.png)
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/swift/unsafemutablebufferpointer) parameter that points to the contiguous storage for the pixel buffer.
+- `body`: A closure with an [`UnsafeMutableBufferPointer`](../../../Swift/unsafemutablebufferpointer.md) parameter that points to the contiguous storage for the pixel buffer.
 
 
 ---

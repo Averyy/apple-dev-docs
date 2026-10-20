@@ -1,7 +1,8 @@
 # dateTimeSeparator(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the character that specifies the date and time components.
 
@@ -26,9 +27,9 @@ An ISO 8601 date format style with the provided date and time component separato
 
 #### Discussion
 
-Possible values of [`Date.ISO8601FormatStyle.DateTimeSeparator`](date/iso8601formatstyle/datetimeseparator-swift.enum.md) are [`Date.ISO8601FormatStyle.DateTimeSeparator.space`](date/iso8601formatstyle/datetimeseparator-swift.enum/space.md) and [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](date/iso8601formatstyle/datetimeseparator-swift.enum/standard.md).
+Possible values of [`Date.ISO8601FormatStyle.DateTimeSeparator`](./datetimeseparator-swift.enum.md) are [`Date.ISO8601FormatStyle.DateTimeSeparator.space`](./datetimeseparator-swift.enum/space.md) and [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](./datetimeseparator-swift.enum/standard.md).
 
-The following example shows a variety of [`Date.ISO8601FormatStyle.DateTimeSeparator`](date/iso8601formatstyle/datetimeseparator-swift.enum.md) formats applied to an ISO 8601 date format.
+The following example shows a variety of [`Date.ISO8601FormatStyle.DateTimeSeparator`](./datetimeseparator-swift.enum.md) formats applied to an ISO 8601 date format.
 
 ```swift
 let meetingDate = Date() // Jun 23, 2021 at 10:21 AM
@@ -37,9 +38,9 @@ meetingDate.formatted(.iso8601.dateSeparator(.dash)) // 20210623T152135Z
 meetingDate.formatted(.iso8601) // 20210623T152135Z
 ```
 
-If no format is specified as a parameter, the [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](date/iso8601formatstyle/datetimeseparator-swift.enum/standard.md) case is the default format.
+If no format is specified as a parameter, the [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](./datetimeseparator-swift.enum/standard.md) case is the default format.
 
-For more information about ISO 8601 formatted dates, see the [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md).
+For more information about ISO 8601 formatted dates, see the [`Date.ISO8601FormatStyle`](../iso8601formatstyle.md).
 
 ## Parameters
 
@@ -47,11 +48,12 @@ For more information about ISO 8601 formatted dates, see the [`Date.ISO8601Forma
 
 ## See Also
 
-- [var dateSeparator: Date.ISO8601FormatStyle.DateSeparator](date/iso8601formatstyle/dateseparator-swift.property.md)
+### Modifying an ISO 8601 Format Style
+- [var dateSeparator: Date.ISO8601FormatStyle.DateSeparator](./dateseparator-swift.property.md)
   The character used to separate the components of a date.
-- [var dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator](date/iso8601formatstyle/datetimeseparator-swift.property.md)
+- [var dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator](./datetimeseparator-swift.property.md)
   The character used to separate the date and time components of an ISO 8601 string representation of a date.
-- [var timeZone: TimeZone](date/iso8601formatstyle/timezone.md)
+- [var timeZone: TimeZone](./timezone.md)
   The time zone used to create and parse date representations.
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a handle from an encoded representation.
 

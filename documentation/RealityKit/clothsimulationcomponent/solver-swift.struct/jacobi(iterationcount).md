@@ -1,7 +1,8 @@
 # jacobi(iterationCount:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Jacobi solver for a cloth simulation.
 
@@ -29,7 +30,7 @@ Before considering changing the solver to improve performance or power consumpti
 - Reducing the number of vertices, and making sure triangles are as regular as possible in edge length across all bodies in the simulation.
 - If possible, replace cloth mesh colliders with implicit colliders like spheres, boxes, etc.
 - Set the Laplacian damping of all bodies to zero.
-- Set [`crossTetherStiffness`](clothbodymaterial/crosstetherstiffness.md) and [`bendStiffness`](clothbodymaterial/bendstiffness.md) to zero for all the bodies.
+- Set [`crossTetherStiffness`](../../clothbodymaterial/crosstetherstiffness.md) and [`bendStiffness`](../../clothbodymaterial/bendstiffness.md) to zero for all the bodies.
 
 But if you need to improve performance and you think you can tolerate even a bit more stretching in your bodies, you can experiment with Jacobi. Always take actual performance measurements when doing performance-related changes, as the impact of different approaches may vary greatly depending on your specific scene.
 
@@ -39,7 +40,8 @@ But if you need to improve performance and you think you can tolerate even a bit
 
 ## See Also
 
-- [static func gaussSeidel(iterationCount: Int) -> ClothSimulationComponent.Solver](clothsimulationcomponent/solver-swift.struct/gaussseidel(iterationcount:).md)
+### Creating a solver
+- [static func gaussSeidel(iterationCount: Int) -> ClothSimulationComponent.Solver](./gaussseidel%28iterationcount%29.md)
   Gauss-Seidel solver for a cloth simulation.
 
 

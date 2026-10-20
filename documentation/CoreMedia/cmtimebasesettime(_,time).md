@@ -1,7 +1,8 @@
 # CMTimebaseSetTime(_:time:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the current time of a timebase.
 
@@ -20,19 +21,24 @@ Sets the current time of a timebase.
 func CMTimebaseSetTime(_ timebase: CMTimebase, time: CMTime) -> OSStatus
 ```
 
+```c
+extern OSStatus CMTimebaseSetTime(CMTimebaseRef timebase, CMTime time);
+```
+
 ## See Also
 
-- [func CMTimebaseGetTime(CMTimebase) -> CMTime](cmtimebasegettime(_:).md)
+### Getting and Setting Time
+- [func CMTimebaseGetTime(CMTimebase) -> CMTime](./cmtimebasegettime%28_%29.md)
   Returns the current time from a timebase.
-- [func CMTimebaseGetTimeWithTimeScale(CMTimebase, timescale: CMTimeScale, method: CMTimeRoundingMethod) -> CMTime](cmtimebasegettimewithtimescale(_:timescale:method:).md)
+- [func CMTimebaseGetTimeWithTimeScale(CMTimebase, timescale: CMTimeScale, method: CMTimeRoundingMethod) -> CMTime](./cmtimebasegettimewithtimescale%28_,timescale,method%29.md)
   Returns the current time from a timebase in the specified timescale.
-- [func CMTimebaseGetTimeAndRate(CMTimebase, timeOut: UnsafeMutablePointer<CMTime>?, rateOut: UnsafeMutablePointer<Float64>?) -> OSStatus](cmtimebasegettimeandrate(_:timeout:rateout:).md)
+- [func CMTimebaseGetTimeAndRate(CMTimebase, timeOut: UnsafeMutablePointer<CMTime>?, rateOut: UnsafeMutablePointer<Float64>?) -> OSStatus](./cmtimebasegettimeandrate%28_,timeout,rateout%29.md)
   Returns the current time and rate of a timebase.
-- [func CMTimebaseSetSourceClock(CMTimebase, CMClock) -> OSStatus](cmtimebasesetsourceclock(_:_:).md)
+- [func CMTimebaseSetSourceClock(CMTimebase, CMClock) -> OSStatus](./cmtimebasesetsourceclock%28_,_%29.md)
   Sets the source clock of a timebase.
-- [func CMTimebaseSetSourceTimebase(CMTimebase, CMTimebase) -> OSStatus](cmtimebasesetsourcetimebase(_:_:).md)
+- [func CMTimebaseSetSourceTimebase(CMTimebase, CMTimebase) -> OSStatus](./cmtimebasesetsourcetimebase%28_,_%29.md)
   Sets the source timebase of a timebase.
-- [func CMTimebaseSetAnchorTime(CMTimebase, timebaseTime: CMTime, immediateSourceTime: CMTime) -> OSStatus](cmtimebasesetanchortime(_:timebasetime:immediatesourcetime:).md)
+- [func CMTimebaseSetAnchorTime(CMTimebase, timebaseTime: CMTime, immediateSourceTime: CMTime) -> OSStatus](./cmtimebasesetanchortime%28_,timebasetime,immediatesourcetime%29.md)
   Sets the time of a timebase at a particular host time.
 
 

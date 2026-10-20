@@ -1,7 +1,8 @@
 # errSecCRLBadURI
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list has a bad uniform resource identifier.
 
@@ -18,6 +19,10 @@ The certificate revocation list has a bad uniform resource identifier.
 
 ```swift
 var errSecCRLBadURI: OSStatus { get }
+```
+
+```c
+errSecCRLBadURI
 ```
 
 

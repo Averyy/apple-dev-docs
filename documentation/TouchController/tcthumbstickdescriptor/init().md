@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new thumbstick descriptor with default values.
 
@@ -14,6 +15,10 @@ Creates a new thumbstick descriptor with default values.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

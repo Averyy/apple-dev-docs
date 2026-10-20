@@ -1,14 +1,15 @@
 # atm_memory_descriptor_array_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef atm_memory_descriptor_t *atm_memory_descriptor_array_t;
 ```
 

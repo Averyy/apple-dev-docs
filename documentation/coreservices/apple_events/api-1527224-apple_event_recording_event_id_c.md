@@ -11,13 +11,13 @@ These constants are available only in version 1.0.1 and later of the Apple Event
 ## Topics
 
 ### Constants
-- [var kAEStartRecording: AEEventID](kaestartrecording.md)
-- [var kAEStopRecording: AEEventID](kaestoprecording.md)
-- [var kAENotifyStartRecording: AEEventID](kaenotifystartrecording.md)
+- [var kAEStartRecording: AEEventID](../kaestartrecording.md)
+- [var kAEStopRecording: AEEventID](../kaestoprecording.md)
+- [var kAENotifyStartRecording: AEEventID](../kaenotifystartrecording.md)
   An event that notifies an application that recording has been turned on.
-- [var kAENotifyStopRecording: AEEventID](kaenotifystoprecording.md)
+- [var kAENotifyStopRecording: AEEventID](../kaenotifystoprecording.md)
   An event that notifies an application that recording has been turned off.
-- [var kAENotifyRecording: AEEventID](kaenotifyrecording.md)
+- [var kAENotifyRecording: AEEventID](../kaenotifyrecording.md)
 
 
 ---

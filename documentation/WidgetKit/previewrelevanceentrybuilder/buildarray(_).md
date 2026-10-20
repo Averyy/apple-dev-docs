@@ -1,7 +1,8 @@
 # buildArray(_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - watchOS 26.0+
@@ -14,9 +15,10 @@ static func buildArray(_ components: [[Entry]]) -> [Entry]
 
 ## See Also
 
-- [static func buildExpression(Entry) -> [Entry]](previewrelevanceentrybuilder/buildexpression(_:).md)
-- [static func buildPartialBlock(first: [Entry]) -> [Entry]](previewrelevanceentrybuilder/buildpartialblock(first:).md)
-- [static func buildPartialBlock(accumulated: [Entry], next: [Entry]) -> [Entry]](previewrelevanceentrybuilder/buildpartialblock(accumulated:next:).md)
+### Previewing relevance widgets
+- [static func buildExpression(Entry) -> [Entry]](./buildexpression%28_%29.md)
+- [static func buildPartialBlock(first: [Entry]) -> [Entry]](./buildpartialblock%28first%29.md)
+- [static func buildPartialBlock(accumulated: [Entry], next: [Entry]) -> [Entry]](./buildpartialblock%28accumulated,next%29.md)
 
 
 ---

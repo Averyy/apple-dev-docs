@@ -1,7 +1,8 @@
 # distanceAttenuationModel
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance attenuation model that describes the drop-off in gain as the source moves away from the listener.
 
@@ -20,13 +21,18 @@ The distance attenuation model that describes the drop-off in gain as the source
 var distanceAttenuationModel: AVAudioEnvironmentDistanceAttenuationModel { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudioEnvironmentDistanceAttenuationModel distanceAttenuationModel;
+```
+
 #### Discussion
 
-The default value is the [`AVAudioEnvironmentDistanceAttenuationModel.inverse`](avaudioenvironmentdistanceattenuationmodel/inverse.md) attenuation model.
+The default value is the [`AVAudioEnvironmentDistanceAttenuationModel.inverse`](../avaudioenvironmentdistanceattenuationmodel/inverse.md) attenuation model.
 
 ## See Also
 
-- [enum AVAudioEnvironmentDistanceAttenuationModel](avaudioenvironmentdistanceattenuationmodel.md)
+### Choosing an attenuation model
+- [enum AVAudioEnvironmentDistanceAttenuationModel](../avaudioenvironmentdistanceattenuationmodel.md)
   Types of distance attenuation models.
 
 

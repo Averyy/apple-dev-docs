@@ -1,7 +1,8 @@
 # constrainedHigh
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use extended dynamic range, but brightness is modulated to optimize for co-existence with other composited content.
 
@@ -19,15 +20,20 @@ Use extended dynamic range, but brightness is modulated to optimize for co-exist
 static let constrainedHigh: CIDynamicRangeOption
 ```
 
+```c
+extern CIDynamicRangeOption const kCIDynamicRangeConstrainedHigh;
+```
+
 #### Discussion
 
 For best results, images should contain `contentAverageLightLevel` metadata.
 
 ## See Also
 
-- [static let standard: CIDynamicRangeOption](cidynamicrangeoption/standard.md)
+### Enumeration Cases
+- [static let standard: CIDynamicRangeOption](./standard.md)
   Use Standard dynamic range.
-- [static let high: CIDynamicRangeOption](cidynamicrangeoption/high.md)
+- [static let high: CIDynamicRangeOption](./high.md)
   Use High dynamic range.
 
 

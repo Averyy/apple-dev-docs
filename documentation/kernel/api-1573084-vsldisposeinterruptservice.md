@@ -1,23 +1,25 @@
 # VSLDisposeInterruptService
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 OSErr VSLDisposeInterruptService(InterruptServiceIDType serviceID);
 ```
 
 ## See Also
 
-- [agdcGTraceToken](3123025-agdcgtracetoken.md)
-- [VSLDoInterruptService](1573107-vsldointerruptservice.md)
-- [VSLNewInterruptService](1573117-vslnewinterruptservice.md)
-- [VSLPrepareCursorForHardwareCursor](1573096-vslpreparecursorforhardwarecurso.md)
+### Framebuffer Utilities
+- [agdcGTraceToken](./api-3123025-agdcgtracetoken.md)
+- [VSLDoInterruptService](./api-1573107-vsldointerruptservice.md)
+- [VSLNewInterruptService](./api-1573117-vslnewinterruptservice.md)
+- [VSLPrepareCursorForHardwareCursor](./api-1573096-vslpreparecursorforhardwarecurso.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # remove(_:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a port from the specified input mode of the run loop.
 
@@ -20,6 +21,10 @@ Removes a port from the specified input mode of the run loop.
 func remove(_ aPort: Port, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) removePort:(NSPort *) aPort forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 If you added the port to multiple input modes, you must remove it from each mode separately.
@@ -31,7 +36,8 @@ If you added the port to multiple input modes, you must remove it from each mode
 
 ## See Also
 
-- [func add(Port, forMode: RunLoop.Mode)](runloop/add(_:formode:)-6z982.md)
+### Managing Ports
+- [func add(Port, forMode: RunLoop.Mode)](./add%28_,formode%29-6z982.md)
   Adds a port as an input source to the specified mode of the run loop.
 
 

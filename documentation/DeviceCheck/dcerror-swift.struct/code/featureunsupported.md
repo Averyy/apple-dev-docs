@@ -1,7 +1,8 @@
 # DCError.Code.featureUnsupported
 
 **Framework**: DeviceCheck  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 DeviceCheck is unavailable on this device.
 
@@ -20,15 +21,20 @@ DeviceCheck is unavailable on this device.
 case featureUnsupported
 ```
 
+```c
+DCErrorFeatureUnsupported
+```
+
 ## See Also
 
-- [DCError.Code.invalidInput](dcerror-swift.struct/code/invalidinput.md)
+### Error codes
+- [DCError.Code.invalidInput](./invalidinput.md)
   An error code that indicates when your app provides data that isn’t formatted correctly.
-- [DCError.Code.invalidKey](dcerror-swift.struct/code/invalidkey.md)
+- [DCError.Code.invalidKey](./invalidkey.md)
   An error caused by a failed attempt to use the App Attest key.
-- [DCError.Code.serverUnavailable](dcerror-swift.struct/code/serverunavailable.md)
+- [DCError.Code.serverUnavailable](./serverunavailable.md)
   An error that indicates a failed attempt to contact the App Attest service during an attestation.
-- [DCError.Code.unknownSystemFailure](dcerror-swift.struct/code/unknownsystemfailure.md)
+- [DCError.Code.unknownSystemFailure](./unknownsystemfailure.md)
   A failure has occurred, such as the failure to generate a token.
 
 

@@ -1,7 +1,8 @@
 # ARKitCoordinateSpace
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object which represents an ARKit coordinate space.
 
@@ -18,36 +19,37 @@ struct ARKitCoordinateSpace
 ## Topics
 
 ### Instance Properties
-- [var ancestorSpace: WorldReferenceCoordinateSpace?](arkitcoordinatespace/ancestorspace.md)
+- [var ancestorSpace: WorldReferenceCoordinateSpace?](./arkitcoordinatespace/ancestorspace.md)
   The parent space of this ARKit coordinate space.
 ### Instance Methods
-- [func ancestorFromSpaceTransformFloat() -> ProjectiveTransform3DFloat](arkitcoordinatespace/ancestorfromspacetransformfloat.md)
+- [func ancestorFromSpaceTransformFloat() -> ProjectiveTransform3DFloat](./arkitcoordinatespace/ancestorfromspacetransformfloat%28%29.md)
   Get the transformation to ancestor space from this ARKit coordinate space.
 ### Enumerations
-- [ARKitCoordinateSpace.Correction](arkitcoordinatespace/correction.md)
+- [ARKitCoordinateSpace.Correction](./arkitcoordinatespace/correction.md)
   A correction type to apply on coordinate spaces returned from ARKit APIs.
 
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
-- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [CoordinateSpace3D](../Spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../Spatial/coordinatespace3dfloat.md)
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+### Setup
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol DataProvider](dataprovider.md)
+- [protocol DataProvider](./dataprovider.md)
   A source of live data from ARKit.
-- [enum DataProviderState](dataproviderstate.md)
+- [enum DataProviderState](./dataproviderstate.md)
   The possible states of a data provider.
-- [protocol Anchor](anchor.md)
+- [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
-- [protocol TrackableAnchor](trackableanchor.md)
+- [protocol TrackableAnchor](./trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
-- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+- [protocol ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
   A type that provides an ARKit coordinate space with an optional correction applied.
 
 

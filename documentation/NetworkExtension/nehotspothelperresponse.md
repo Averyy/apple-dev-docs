@@ -1,7 +1,8 @@
 # NEHotspotHelperResponse
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The hotspot helper’s response to a command.
 
@@ -17,34 +18,39 @@ The hotspot helper’s response to a command.
 class NEHotspotHelperResponse
 ```
 
+```objc
+@interface NEHotspotHelperResponse : NSObject
+```
+
 ## Topics
 
 ### Response properties
-- [func setNetwork(NEHotspotNetwork)](nehotspothelperresponse/setnetwork(_:).md)
+- [func setNetwork(NEHotspotNetwork)](./nehotspothelperresponse/setnetwork%28_%29.md)
   Set the network that conveys the confidence level.
-- [func setNetworkList([NEHotspotNetwork])](nehotspothelperresponse/setnetworklist(_:).md)
+- [func setNetworkList([NEHotspotNetwork])](./nehotspothelperresponse/setnetworklist%28_%29.md)
   Set the list of handled networks.
 ### Response delivery
-- [func deliver()](nehotspothelperresponse/deliver.md)
+- [func deliver()](./nehotspothelperresponse/deliver%28%29.md)
   Deliver the response to the system.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEHotspotHelperCommand](nehotspothelpercommand.md)
+### Commands
+- [class NEHotspotHelperCommand](./nehotspothelpercommand.md)
   A command for the hotspot helper to handle.
-- [class NEHotspotNetwork](nehotspotnetwork.md)
+- [class NEHotspotNetwork](./nehotspotnetwork.md)
   Information about a Wi-Fi network associated with a command or a response.
 
 

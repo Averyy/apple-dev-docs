@@ -1,7 +1,8 @@
 # PKPaymentRequest.MerchantCategoryCode
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An optional four-digit struct, in ISO 18245 format, that represents the type of goods or service the merchant provides for the transaction.
 
@@ -10,7 +11,7 @@ An optional four-digit struct, in ISO 18245 format, that represents the type of 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -26,23 +27,24 @@ The four-digit merchant category codes are in ISO 18245 format and range from 1 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [LosslessStringConvertible](../swift/losslessstringconvertible.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LosslessStringConvertible](../../Swift/losslessstringconvertible.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var merchantIdentifier: String](pkpaymentrequest/merchantidentifier.md)
+### Setting merchant information
+- [var merchantIdentifier: String](./merchantidentifier.md)
   Your merchant identifier.
-- [var merchantCapabilities: PKMerchantCapability](pkpaymentrequest/merchantcapabilities.md)
+- [var merchantCapabilities: PKMerchantCapability](./merchantcapabilities.md)
   A bit field of the payment-processing protocols and card types that you support.
-- [struct PKMerchantCapability](pkmerchantcapability.md)
+- [struct PKMerchantCapability](../pkmerchantcapability.md)
   Capabilities for processing payment.
 
 

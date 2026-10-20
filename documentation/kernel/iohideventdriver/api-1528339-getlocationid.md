@@ -1,14 +1,15 @@
 # getLocationID
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 getLocationID(void);
 ```
 

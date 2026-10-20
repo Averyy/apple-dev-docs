@@ -1,7 +1,8 @@
 # contains(_:inCircumferentialRingOfWidth:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if a ring around this circle’s circumference contains the specified point.
 
@@ -19,9 +20,13 @@ Determines if a ring around this circle’s circumference contains the specified
 func contains(_ point: VNPoint, inCircumferentialRingOfWidth ringWidth: Double) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(VNPoint *) point inCircumferentialRingOfWidth:(double) ringWidth;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the ring contains the specified point, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the ring contains the specified point, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ func contains(_ point: VNPoint, inCircumferentialRingOfWidth ringWidth: Double) 
 
 ## See Also
 
-- [var center: VNPoint](vncircle/center.md)
+### Inspecting a Circle
+- [var center: VNPoint](./center.md)
   The circle’s center point.
-- [var diameter: Double](vncircle/diameter.md)
+- [var diameter: Double](./diameter.md)
   The circle’s diameter.
-- [var radius: Double](vncircle/radius.md)
+- [var radius: Double](./radius.md)
   The circle’s radius.
-- [func contains(VNPoint) -> Bool](vncircle/contains(_:).md)
+- [func contains(VNPoint) -> Bool](./contains%28_%29.md)
   Determines if this circle, including its boundary, contains the specified point.
 
 

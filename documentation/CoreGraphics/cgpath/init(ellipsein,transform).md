@@ -1,7 +1,8 @@
 # init(ellipseIn:transform:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an immutable path of an ellipse.
 
@@ -10,7 +11,7 @@ Create an immutable path of an ellipse.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Create an immutable path of an ellipse.
 
 ```swift
 init(ellipseIn rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)
+```
+
+```c
+extern CGPathRefCGPathCreateWithEllipseInRect(CGRect rect, const CGAffineTransform *transform);
 ```
 
 #### Return Value
@@ -39,9 +44,10 @@ The ellipse forms a complete subpath of the path—that is, the ellipse drawing 
 
 ## See Also
 
-- [init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(rect:transform:).md)
+### Creating Graphics Paths
+- [init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)](./init%28rect,transform%29.md)
   Create an immutable path of a rectangle.
-- [init(roundedRect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(roundedrect:cornerwidth:cornerheight:transform:).md)
+- [init(roundedRect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)](./init%28roundedrect,cornerwidth,cornerheight,transform%29.md)
   Create an immutable path of a rounded rectangle.
 
 

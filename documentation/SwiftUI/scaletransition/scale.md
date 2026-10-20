@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to scale the view by.
 
@@ -22,9 +23,10 @@ var scale: Double
 
 ## See Also
 
-- [init(Double, anchor: UnitPoint)](scaletransition/init(_:anchor:).md)
+### Creating the transition
+- [init(Double, anchor: UnitPoint)](./init%28_,anchor%29.md)
   Creates a transition that scales the view by the specified amount.
-- [var anchor: UnitPoint](scaletransition/anchor.md)
+- [var anchor: UnitPoint](./anchor.md)
   The anchor point to scale the view around.
 
 

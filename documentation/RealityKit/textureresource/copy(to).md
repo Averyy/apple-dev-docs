@@ -1,7 +1,8 @@
 # copy(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously copies texture data to another texture.
 
@@ -20,15 +21,22 @@ Asynchronously copies texture data to another texture.
 @preconcurrency func copy(to texture: any MTLTexture) async throws
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func copy(to texture: any MTLTexture) throws
+```
+
 #### Discussion
 
 This method copies all available mipmap sizes to `texture`.
 
-It’s recommended that you provide a value for [`semantic`](textureresource/createoptions/semantic.md) when creating this resource. Specifying a semantic enables RealityKit to select an appropriate pixel format for the target texture.
+It’s recommended that you provide a value for [`semantic`](./createoptions/semantic.md) when creating this resource. Specifying a semantic enables RealityKit to select an appropriate pixel format for the target texture.
 
 ## Parameters
 
-- `texture`: The target texture for copying the data. It needs to have the same width and height as [`TextureResource`](textureresource.md), and [`shaderWrite`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderwrite) usage.
+- `texture`: The target texture for copying the data. It needs to have the same width and height as [`TextureResource`](../textureresource.md), and [`shaderWrite`](../../Metal/mtltextureusage/shaderwrite.md) usage.
 
 
 ---

@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the clock.
 

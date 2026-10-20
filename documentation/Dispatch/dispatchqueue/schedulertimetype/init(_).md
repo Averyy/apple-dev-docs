@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dispatch queue time type instance.
 
@@ -11,7 +12,7 @@ Creates a dispatch queue time type instance.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

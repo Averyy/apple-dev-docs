@@ -1,7 +1,8 @@
 # wifiAware(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure Wi-Fi Aware properties on an `NWParameters` object.
 

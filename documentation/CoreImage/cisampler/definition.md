@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The domain of definition (DOD) of the sampler
 
@@ -19,13 +20,18 @@ The domain of definition (DOD) of the sampler
 var definition: CIFilterShape { get }
 ```
 
+```objc
+@property (readonly) CIFilterShape * definition;
+```
+
 #### Discussion
 
 The DOD contains all nontransparent pixels produced by referencing the sampler.
 
 ## See Also
 
-- [var extent: CGRect](cisampler/extent.md)
+### Getting Information About the Sampler Object
+- [var extent: CGRect](./extent.md)
   The rectangle that specifies the extent of the sampler
 
 

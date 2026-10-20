@@ -1,7 +1,8 @@
 # previewRepresentableActivityItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSArray<id<NSPreviewRepresentableActivityItem>> * previewRepresentableActivityItems;
 ```
 
 

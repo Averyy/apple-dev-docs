@@ -1,7 +1,8 @@
 # CTFontDescriptorGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for Core Text font descriptor references.
 
@@ -20,9 +21,13 @@ Returns the type identifier for Core Text font descriptor references.
 func CTFontDescriptorGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID CTFontDescriptorGetTypeID();
+```
+
 #### Return Value
 
-The identifier for the [`CTFontDescriptor`](ctfontdescriptor.md) opaque type.
+The identifier for the [`CTFontDescriptor`](./ctfontdescriptor.md) opaque type.
 
 
 ---

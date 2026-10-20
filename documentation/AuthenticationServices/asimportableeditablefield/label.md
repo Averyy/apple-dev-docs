@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value describing the field, if any.
 
@@ -24,13 +25,14 @@ This value may be user-defined.
 
 ## See Also
 
-- [var id: Data?](asimportableeditablefield/id.md)
+### Accessing field properties
+- [var id: Data?](./id.md)
   A unique identifier for this editable field.
-- [var fieldType: ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.property.md)
+- [var fieldType: ASImportableEditableField.FieldType](./fieldtype-swift.property.md)
   The type of this editable field.
-- [ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.enum.md)
+- [ASImportableEditableField.FieldType](./fieldtype-swift.enum.md)
   An enumeration of editable field types.
-- [var value: String](asimportableeditablefield/value.md)
+- [var value: String](./value.md)
   The value stored in this editable field.
 
 

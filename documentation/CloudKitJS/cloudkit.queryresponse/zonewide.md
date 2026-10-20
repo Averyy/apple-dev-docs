@@ -1,7 +1,8 @@
 # zoneWide
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether all zones should be searched.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether all zones should be searched.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean zoneWide;
 ```
 
@@ -20,13 +21,14 @@ If `true`, all zones are searched. If `false`, only the default zone is searched
 
 ## See Also
 
-- [zoneID](cloudkit.queryresponse/zoneid.md)
-  A [`CloudKit.ZoneID`](cloudkit.zoneid.md) dictionary that identifies a record zone in the database.
-- [resultsLimit](cloudkit.queryresponse/resultslimit.md)
+### Accessing Request Properties
+- [zoneID](./zoneid.md)
+  A [`CloudKit.ZoneID`](../cloudkit.zoneid.md) dictionary that identifies a record zone in the database.
+- [resultsLimit](./resultslimit.md)
   The maximum number of records to fetch.
-- [continuationMarker](cloudkit.queryresponse/continuationmarker.md)
+- [continuationMarker](./continuationmarker.md)
   Marks the location of the last batch of results.
-- [desiredKeys](cloudkit.queryresponse/desiredkeys.md)
+- [desiredKeys](./desiredkeys.md)
   An array of strings containing record field names that limits the amount of data returned in this operation.
 
 

@@ -1,7 +1,8 @@
 # ApplyTargetCpaRecommendation
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request object for applying or dismissing a target CPA recommendation.
 
@@ -10,7 +11,7 @@ Request object for applying or dismissing a target CPA recommendation.
 
 ## Declaration
 
-```swift
+```
 object ApplyTargetCpaRecommendation
 ```
 
@@ -38,40 +39,42 @@ The `ApplyTargetCpaRecommendation` object is the request body for applying or di
 - `id` (string) *(required)*: The unique identifier of the recommendation to act on.
 - `promotedObjectId` (string) *(required)*: The ID of the promoted object. For `APPSTORE_APP`, this is the app Adam ID. For `BUSINESS_BRAND`, this is the brand ID.
 - `promotedObjectType` (string) *(required)*: The type of the promoted object.
-- `appliedTargetCPA` (RecommendationMoney): The target CPA value to apply. Overrides `recommendedTargetCPA` if provided. Ignored on dismiss. See [`Money`](recommendationmoney.md).
+
+  **Allowed Values**: `APPSTORE_APP`, `BUSINESS_BRAND`
+- `appliedTargetCPA` (RecommendationMoney): The target CPA value to apply. Overrides `recommendedTargetCPA` if provided. Ignored on dismiss. See [`Money`](./recommendationmoney.md).
 - `historyId` (string): Optional reference to a prior history record.
 
 ## See Also
 
-- [object TargetCpaRecommendation](targetcparecommendation.md)
+- [object TargetCpaRecommendation](./targetcparecommendation.md)
   A target CPA recommendation for a campaign using a Maximize Conversions bid strategy.
-- [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
+- [object TargetCpaRecommendationHistory](./targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
-- [object DailyCapRecommendation](dailycaprecommendation.md)
+- [object DailyCapRecommendation](./dailycaprecommendation.md)
   A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
-- [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
+- [object DailyCapRecommendationHistory](./dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
-- [object ApplyDailyCapRecommendation](applydailycaprecommendation.md)
+- [object ApplyDailyCapRecommendation](./applydailycaprecommendation.md)
   Request object for applying or dismissing a daily budget recommendation.
-- [object RecommendationResponseBody](recommendationresponsebody.md)
+- [object RecommendationResponseBody](./recommendationresponsebody.md)
   The standard response envelope for all Recommendations and Suggestions API endpoints.
-- [object RecommendationResponseError](recommendationresponseerror.md)
+- [object RecommendationResponseError](./recommendationresponseerror.md)
   Error information returned in the response body when a Recommendations or Suggestions request fails.
-- [object RecommendationResponseErrorDetail](recommendationresponseerrordetail.md)
+- [object RecommendationResponseErrorDetail](./recommendationresponseerrordetail.md)
   Granular error detail for a single field or condition within a failed Recommendations or Suggestions request.
-- [object RecommendationResponsePagination](recommendationresponsepagination.md)
+- [object RecommendationResponsePagination](./recommendationresponsepagination.md)
   Pagination metadata returned in list responses from Recommendations and Suggestions endpoints.
-- [object RecommendationMoney](recommendationmoney.md)
+- [object RecommendationMoney](./recommendationmoney.md)
   A monetary amount with currency used throughout the Recommendations and Suggestions APIs.
-- [object RecommendationApplyDailyBudgetResponse](recommendationapplydailybudgetresponse.md)
+- [object RecommendationApplyDailyBudgetResponse](./recommendationapplydailybudgetresponse.md)
   Response envelope returned when applying or dismissing a daily budget recommendation, containing the resulting history record(s).
-- [object RecommendationApplyTargetCpaResponse](recommendationapplytargetcparesponse.md)
+- [object RecommendationApplyTargetCpaResponse](./recommendationapplytargetcparesponse.md)
   Response envelope returned when applying or dismissing a target CPA recommendation, containing the resulting history record(s).
-- [object RecommendationBidStrategy](recommendationbidstrategy.md)
+- [object RecommendationBidStrategy](./recommendationbidstrategy.md)
   Bid strategy configuration (type, goal, and amount) associated with a recommendation.
-- [object RecommendationDismissDailyBudgetResponse](recommendationdismissdailybudgetresponse.md)
+- [object RecommendationDismissDailyBudgetResponse](./recommendationdismissdailybudgetresponse.md)
   Response envelope returned when dismissing a daily budget recommendation, containing the resulting history record(s).
-- [object RecommendationDismissTargetCpaResponse](recommendationdismisstargetcparesponse.md)
+- [object RecommendationDismissTargetCpaResponse](./recommendationdismisstargetcparesponse.md)
   Response envelope returned when dismissing a target CPA recommendation, containing the resulting history record(s).
 
 

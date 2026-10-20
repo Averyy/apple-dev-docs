@@ -1,7 +1,8 @@
 # iconSystemName
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name of the SF Symbol representing this authentication mechanism.
 
@@ -17,6 +18,10 @@ Name of the SF Symbol representing this authentication mechanism.
 
 ```swift
 var iconSystemName: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * iconSystemName;
 ```
 
 

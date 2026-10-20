@@ -1,7 +1,8 @@
 # argumentCategory
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of argument that corresponds to the placeholder.
 
@@ -20,13 +21,18 @@ The type of argument that corresponds to the placeholder.
 var argumentCategory: OSLogMessageComponent.ArgumentCategory { get }
 ```
 
+```objc
+@property (nonatomic, readonly) OSLogMessageComponentArgumentCategory argumentCategory;
+```
+
 ## See Also
 
-- [var argument: OSLogMessageComponent.Argument](oslogmessagecomponent/argument-swift.property.md)
+### Reading the Argument
+- [var argument: OSLogMessageComponent.Argument](./argument-swift.property.md)
   The argument passed into the message component.
-- [OSLogMessageComponent.Argument](oslogmessagecomponent/argument-swift.enum.md)
+- [OSLogMessageComponent.Argument](./argument-swift.enum.md)
   An object representing data that corresponds to an argument in a message payload.
-- [OSLogMessageComponent.ArgumentCategory](oslogmessagecomponent/argumentcategory-swift.enum.md)
+- [OSLogMessageComponent.ArgumentCategory](./argumentcategory-swift.enum.md)
   The data type corresponding to the argument provided in a message payload.
 
 

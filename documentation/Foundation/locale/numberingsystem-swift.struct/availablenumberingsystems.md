@@ -1,7 +1,8 @@
 # availableNumberingSystems
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of available numbering systems on the system.
 

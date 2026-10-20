@@ -1,7 +1,8 @@
 # SFSafariSettingsErrorDomain
 
 **Framework**: Safari Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let SFSafariSettingsErrorDomain: String
+```
+
+```c
+extern NSString * const SFSafariSettingsErrorDomain;
 ```
 
 

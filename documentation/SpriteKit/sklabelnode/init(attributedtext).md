@@ -1,7 +1,8 @@
 # init(attributedText:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new label object with an attributed text string.
 
@@ -20,6 +21,10 @@ Initializes a new label object with an attributed text string.
 convenience init(attributedText: NSAttributedString?)
 ```
 
+```objc
++ (instancetype) labelNodeWithAttributedText:(NSAttributedString *) attributedText;
+```
+
 #### Return Value
 
 A lable initialized from attributed text.
@@ -32,9 +37,10 @@ A lable initialized from attributed text.
 
 ## See Also
 
-- [init(fontNamed: String?)](sklabelnode/init(fontnamed:).md)
+### Creating a Label
+- [init(fontNamed: String?)](./init%28fontnamed%29.md)
   Initializes a new label object with a specified font.
-- [convenience init(text: String?)](sklabelnode/init(text:).md)
+- [convenience init(text: String?)](./init%28text%29.md)
   Initializes a new label object with a text string.
 
 

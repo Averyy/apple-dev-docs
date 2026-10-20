@@ -1,17 +1,22 @@
 # deviceClassMinor
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the minor service class of the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var deviceClassMinor: BluetoothDeviceClassMinor { get }
+```
+
+```objc
+@property (readonly) BluetoothDeviceClassMinor deviceClassMinor;
 ```
 
 #### Discussion

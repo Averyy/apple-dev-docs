@@ -1,23 +1,30 @@
 # BNNSApplyMultiheadAttention(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a mutihead attention filter to a set of input objects, writing the result to a set of output objects.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSApplyMultiheadAttention(_ F: BNNSFilter?, _ batch_size: Int, _ query: UnsafeRawPointer, _ query_stride: Int, _ key: UnsafeRawPointer, _ key_stride: Int, _ key_mask: UnsafePointer<BNNSNDArrayDescriptor>?, _ key_mask_stride: Int, _ value: UnsafeRawPointer, _ value_stride: Int, _ output: UnsafeMutableRawPointer, _ output_stride: Int, _ add_to_attention: UnsafePointer<BNNSNDArrayDescriptor>?, _ backprop_cache_size: UnsafeMutablePointer<Int>?, _ backprop_cache: UnsafeMutableRawPointer?, _ workspace_size: UnsafeMutablePointer<Int>?, _ workspace: UnsafeMutableRawPointer?) -> Int32
+```
+
+```c
+int BNNSApplyMultiheadAttention(BNNSFilter F, size_t batch_size, const void *query, size_t query_stride, const void *key, size_t key_stride, const BNNSNDArrayDescriptor *key_mask, size_t key_mask_stride, const void *value, size_t value_stride, void *output, size_t output_stride, const BNNSNDArrayDescriptor *add_to_attention, size_t *backprop_cache_size, void *backprop_cache, size_t *workspace_size, void *workspace);
 ```
 
 #### Discussion
@@ -46,13 +53,14 @@ Provide `key_mask` as a 1D tensor containing `source_length` elements. Where the
 
 ## See Also
 
-- [struct BNNSMHAProjectionParameters](bnnsmhaprojectionparameters.md)
+### Multihead attention layers
+- [struct BNNSMHAProjectionParameters](./bnnsmhaprojectionparameters.md)
   A structure that contains multihead attention projection parameters.
-- [struct BNNSLayerParametersMultiheadAttention](bnnslayerparametersmultiheadattention.md)
+- [struct BNNSLayerParametersMultiheadAttention](./bnnslayerparametersmultiheadattention.md)
   A structure that contains the parameters of a multihead attention layer.
-- [func BNNSFilterCreateLayerMultiheadAttention(UnsafePointer<BNNSLayerParametersMultiheadAttention>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayermultiheadattention(_:_:).md)
+- [func BNNSFilterCreateLayerMultiheadAttention(UnsafePointer<BNNSLayerParametersMultiheadAttention>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayermultiheadattention%28_,_%29.md)
   Returns a new multihead attention layer.
-- [func BNNSApplyMultiheadAttentionBackward(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>?, UnsafeRawPointer?, Int, UnsafePointer<BNNSNDArrayDescriptor>?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>?, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>?, UnsafePointer<BNNSNDArrayDescriptor>?, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>, Int, UnsafeMutableRawPointer?, UnsafeMutablePointer<Int>?, UnsafeMutableRawPointer?) -> Int32](bnnsapplymultiheadattentionbackward(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSApplyMultiheadAttentionBackward(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>?, UnsafeRawPointer?, Int, UnsafePointer<BNNSNDArrayDescriptor>?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>?, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>?, UnsafePointer<BNNSNDArrayDescriptor>?, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSMHAProjectionParameters>, Int, UnsafeMutableRawPointer?, UnsafeMutablePointer<Int>?, UnsafeMutableRawPointer?) -> Int32](./bnnsapplymultiheadattentionbackward%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a multihead attention filter backward to generate gradients.
 
 

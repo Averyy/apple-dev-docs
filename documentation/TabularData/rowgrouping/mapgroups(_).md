@@ -1,7 +1,8 @@
 # mapGroups(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a row grouping that applies a transformation closure to each group in the original.
 

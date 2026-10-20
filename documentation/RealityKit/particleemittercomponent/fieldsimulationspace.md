@@ -1,7 +1,8 @@
 # fieldSimulationSpace
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Field Simulation Space, either local or global
 

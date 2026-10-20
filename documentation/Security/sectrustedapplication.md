@@ -1,7 +1,8 @@
 # SecTrustedApplication
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that contains information about a trusted app.
 
@@ -14,15 +15,19 @@ An opaque type that contains information about a trusted app.
 class SecTrustedApplication
 ```
 
+```c
+typedef struct __SecTrustedApplication * SecTrustedApplicationRef;
+```
+
 #### Overview
 
-Use the [`SecTrustedApplicationCreateFromPath(_:_:)`](sectrustedapplicationcreatefrompath(_:_:).md) method to create a new trusted app instance.
+Use the [`SecTrustedApplicationCreateFromPath(_:_:)`](./sectrustedapplicationcreatefrompath%28_,_%29.md) method to create a new trusted app instance.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

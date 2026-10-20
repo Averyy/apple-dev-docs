@@ -1,14 +1,15 @@
 # CPUSTATE_SPTM_INTERRUPTED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 CPUSTATE_SPTM_INTERRUPTED
 ```
 

@@ -1,7 +1,8 @@
 # LAError.Code.authenticationFailed
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user failed to provide valid credentials.
 
@@ -19,18 +20,23 @@ The user failed to provide valid credentials.
 case authenticationFailed
 ```
 
+```c
+LAErrorAuthenticationFailed
+```
+
 ## See Also
 
-- [LAError.Code.invalidContext](laerror-swift.struct/code/invalidcontext.md)
+### Other errors
+- [LAError.Code.invalidContext](./invalidcontext.md)
   The context was previously invalidated.
-- [LAError.Code.invalidDimensions](laerror-swift.struct/code/invaliddimensions.md)
-- [LAError.Code.notInteractive](laerror-swift.struct/code/notinteractive.md)
+- [LAError.Code.invalidDimensions](./invaliddimensions.md)
+- [LAError.Code.notInteractive](./notinteractive.md)
   Displaying the required authentication user interface is forbidden.
-- [LAError.Code.passcodeNotSet](laerror-swift.struct/code/passcodenotset.md)
+- [LAError.Code.passcodeNotSet](./passcodenotset.md)
   A passcode isn’t set on the device.
-- [LAError.Code.userFallback](laerror-swift.struct/code/userfallback.md)
+- [LAError.Code.userFallback](./userfallback.md)
   The user tapped the fallback button in the authentication dialog, but no fallback is available for the authentication policy.
-- [LAError.Code.watchNotAvailable](laerror-swift.struct/code/watchnotavailable.md)
+- [LAError.Code.watchNotAvailable](./watchnotavailable.md)
   An attempt to authenticate with Apple Watch failed.
 
 

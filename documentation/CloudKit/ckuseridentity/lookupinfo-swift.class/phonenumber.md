@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s phone number.
 
@@ -20,11 +21,16 @@ The user’s phone number.
 var phoneNumber: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * phoneNumber;
+```
+
 ## See Also
 
-- [var emailAddress: String?](ckuseridentity/lookupinfo-swift.class/emailaddress.md)
+### Accessing the Criteria
+- [var emailAddress: String?](./emailaddress.md)
   The user’s email address.
-- [var userRecordID: CKRecord.ID?](ckuseridentity/lookupinfo-swift.class/userrecordid.md)
+- [var userRecordID: CKRecord.ID?](./userrecordid.md)
   The ID of the user record.
 
 

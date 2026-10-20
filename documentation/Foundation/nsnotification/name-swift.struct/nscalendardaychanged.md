@@ -1,7 +1,8 @@
 # NSCalendarDayChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that is posted whenever the calendar day of the system changes, as determined by the system calendar, locale, and time zone.
 
@@ -18,6 +19,10 @@ A notification that is posted whenever the calendar day of the system changes, a
 
 ```swift
 static let NSCalendarDayChanged: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const NSCalendarDayChangedNotification;
 ```
 
 #### Discussion

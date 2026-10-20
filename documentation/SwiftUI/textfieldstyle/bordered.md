@@ -1,9 +1,10 @@
 # bordered
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
+A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](../view/textinputbordershape%28_%29.md) modifier.
 
 **Availability**:
 - iOS 27.0+
@@ -21,11 +22,14 @@ A text field style with a system-defined border whose shape is determined by the
 static var bordered: BorderedTextFieldStyle { get }
 ```
 
+Available when `Self` is `BorderedTextFieldStyle`.
+
 ## See Also
 
-- [static var automatic: DefaultTextFieldStyle](textfieldstyle/automatic.md)
+### Getting built-in text field styles
+- [static var automatic: DefaultTextFieldStyle](./automatic.md)
   The default text field style, based on the text field’s context.
-- [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
+- [static var plain: PlainTextFieldStyle](./plain.md)
   A text field style with no decoration.
 
 

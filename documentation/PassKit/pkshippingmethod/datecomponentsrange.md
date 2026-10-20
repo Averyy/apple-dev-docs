@@ -1,7 +1,8 @@
 # dateComponentsRange
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An expected range of delivery or shipping dates for a package, or the time range when an item is available for pickup.
 
@@ -18,6 +19,10 @@ An expected range of delivery or shipping dates for a package, or the time range
 ```swift
 @NSCopying
 var dateComponentsRange: PKDateComponentsRange? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) PKDateComponentsRange * dateComponentsRange;
 ```
 
 #### Discussion
@@ -43,11 +48,12 @@ shippingMethod.dateComponentsRange = PKDateComponentsRange(start: startComponent
 
 ## See Also
 
-- [var detail: String?](pkshippingmethod/detail.md)
+### Working with shipping methods
+- [var detail: String?](./detail.md)
   A user-readable description of the shipping method.
-- [var identifier: String?](pkshippingmethod/identifier.md)
+- [var identifier: String?](./identifier.md)
   A unique identifier for the shipping method, used by the app.
-- [class PKDateComponentsRange](pkdatecomponentsrange.md)
+- [class PKDateComponentsRange](../pkdatecomponentsrange.md)
   An object that specifies the start and end dates for a range of time.
 
 

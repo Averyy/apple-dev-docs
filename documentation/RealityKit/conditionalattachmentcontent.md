@@ -1,7 +1,8 @@
 # ConditionalAttachmentContent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 1.0+
@@ -16,21 +17,22 @@ struct ConditionalAttachmentContent<TrueContent, FalseContent>
 ## Relationships
 
 ### Conforms To
-- [AttachmentContent](attachmentcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AttachmentContent](./attachmentcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [struct AttachmentContentBuilder](attachmentcontentbuilder.md)
+### Attachment types
+- [struct AttachmentContentBuilder](./attachmentcontentbuilder.md)
   A result builder that creates attachment content from closures.
-- [protocol AttachmentContent](attachmentcontent.md)
+- [protocol AttachmentContent](./attachmentcontent.md)
   A type that provides content for an attachment content builder.
-- [struct TuplePackAttachmentContent](tuplepackattachmentcontent.md)
-- [struct EmptyAttachmentContent](emptyattachmentcontent.md)
+- [struct TuplePackAttachmentContent](./tuplepackattachmentcontent.md)
+- [struct EmptyAttachmentContent](./emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.
-- [struct TupleAttachmentContent](tupleattachmentcontent.md)
-- [struct AnyAttachmentContent](anyattachmentcontent.md)
+- [struct TupleAttachmentContent](./tupleattachmentcontent.md)
+- [struct AnyAttachmentContent](./anyattachmentcontent.md)
   A type-erased attachment content.
 
 

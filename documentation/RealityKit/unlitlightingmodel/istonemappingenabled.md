@@ -1,7 +1,8 @@
 # isTonemappingEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to apply tonemapping to this material’s output.
 

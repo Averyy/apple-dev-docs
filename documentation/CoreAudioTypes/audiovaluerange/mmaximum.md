@@ -1,7 +1,8 @@
 # mMaximum
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value.
 
@@ -20,9 +21,14 @@ The maximum value.
 var mMaximum: Float64
 ```
 
+```c
+Float64 mMaximum;
+```
+
 ## See Also
 
-- [var mMinimum: Float64](audiovaluerange/mminimum.md)
+### Inspecting a range
+- [var mMinimum: Float64](./mminimum.md)
   The minimum value.
 
 

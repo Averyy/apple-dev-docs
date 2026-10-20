@@ -1,7 +1,8 @@
 # ASAuthorizationErrorDomain
 
 **Framework**: Authentication Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain of authorization errors.
 
@@ -20,11 +21,16 @@ The domain of authorization errors.
 let ASAuthorizationErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const ASAuthorizationErrorDomain;
+```
+
 ## See Also
 
-- [func authorizationController(controller: ASAuthorizationController, didCompleteWithError: any Error)](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md)
+### Handling Authorization Errors
+- [func authorizationController(controller: ASAuthorizationController, didCompleteWithError: any Error)](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md)
   Tells the delegate when authorization fails, and provides an error explaining why.
-- [struct ASAuthorizationError](asauthorizationerror-swift.struct.md)
+- [struct ASAuthorizationError](./asauthorizationerror-swift.struct.md)
   Errors that can occur during authorization.
 
 

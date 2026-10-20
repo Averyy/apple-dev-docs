@@ -1,7 +1,8 @@
 # HistoryChange
 
 **Framework**: SwiftData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe data history transactions.
 
@@ -24,36 +25,37 @@ enum HistoryChange
 ## Topics
 
 ### Operations
-- [case delete(any HistoryDelete)](historychange/delete(_:).md)
+- [case delete(any HistoryDelete)](./historychange/delete%28_%29.md)
   A value that indicates a delete operation.
-- [case insert(any HistoryInsert)](historychange/insert(_:).md)
+- [case insert(any HistoryInsert)](./historychange/insert%28_%29.md)
   A value that indicates an insertion operation.
-- [case update(any HistoryUpdate)](historychange/update(_:).md)
+- [case update(any HistoryUpdate)](./historychange/update%28_%29.md)
   A value that indicates an update operation.
 ### Getting information about a change
-- [var changedPersistentIdentifier: PersistentIdentifier](historychange/changedpersistentidentifier.md)
+- [var changedPersistentIdentifier: PersistentIdentifier](./historychange/changedpersistentidentifier.md)
   The persistent identifier of the change.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol HistoryDelete](historydelete.md)
+### History life cycle
+- [protocol HistoryDelete](./historydelete.md)
   An interface that enables a custom data store to delete items from the history of changes to its persisted models.
-- [protocol HistoryInsert](historyinsert.md)
-- [protocol HistoryToken](historytoken.md)
-- [protocol HistoryTransaction](historytransaction.md)
-- [protocol HistoryUpdate](historyupdate.md)
-- [struct HistoryTombstone](historytombstone.md)
-- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
-- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
-- [struct DefaultHistoryDelete](defaulthistorydelete.md)
-- [struct DefaultHistoryToken](defaulthistorytoken.md)
-- [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+- [protocol HistoryInsert](./historyinsert.md)
+- [protocol HistoryToken](./historytoken.md)
+- [protocol HistoryTransaction](./historytransaction.md)
+- [protocol HistoryUpdate](./historyupdate.md)
+- [struct HistoryTombstone](./historytombstone.md)
+- [struct DefaultHistoryInsert](./defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](./defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](./defaulthistorydelete.md)
+- [struct DefaultHistoryToken](./defaulthistorytoken.md)
+- [struct DefaultHistoryTransaction](./defaulthistorytransaction.md)
 
 
 ---

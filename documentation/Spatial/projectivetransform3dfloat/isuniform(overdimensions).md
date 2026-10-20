@@ -1,7 +1,8 @@
 # isUniform(overDimensions:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if the transform is affine and uniform over the specified dimensions.
 

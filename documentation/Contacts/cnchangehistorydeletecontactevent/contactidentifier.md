@@ -1,7 +1,8 @@
 # contactIdentifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies the contact that the user deleted.
 
@@ -17,6 +18,10 @@ A string that uniquely identifies the contact that the user deleted.
 
 ```swift
 var contactIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * contactIdentifier;
 ```
 
 

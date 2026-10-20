@@ -1,17 +1,22 @@
 # scrollRangeToVisible(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the specified range such that it is visible.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func scrollRangeToVisible(_ range: NSRange)
+```
+
+```objc
+- (void) scrollRangeToVisible:(NSRange) range;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ This method is used by all actions, but is not strictly required by any.
 
 ## See Also
 
-- [func contentView(at: Int, effectiveCharacterRange: NSRangePointer) -> NSView](nstextfinderclient/contentview(at:effectivecharacterrange:).md)
+### Determining and Displaying Text Locations
+- [func contentView(at: Int, effectiveCharacterRange: NSRangePointer) -> NSView](./contentview%28at,effectivecharacterrange%29.md)
   Returns the view the context is displayed in.
-- [func rects(forCharacterRange: NSRange) -> [NSValue]?](nstextfinderclient/rects(forcharacterrange:).md)
+- [func rects(forCharacterRange: NSRange) -> [NSValue]?](./rects%28forcharacterrange%29.md)
   An array containing the located text in the content view’s coordinate system.
-- [var visibleCharacterRanges: [NSValue]](nstextfinderclient/visiblecharacterranges.md)
+- [var visibleCharacterRanges: [NSValue]](./visiblecharacterranges.md)
   An array of visible character ranges.
 
 

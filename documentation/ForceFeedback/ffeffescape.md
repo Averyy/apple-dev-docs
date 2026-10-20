@@ -1,7 +1,8 @@
 # FFEFFESCAPE
 
 **Framework**: Force Feedback  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The FFEFFESCAPE structure passes hardware-specific data directly to the Force Feedback plugIn.
 
@@ -15,47 +16,52 @@ The FFEFFESCAPE structure passes hardware-specific data directly to the Force Fe
 struct FFEFFESCAPE
 ```
 
+```c
+struct FFEFFESCAPE;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](ffeffescape/init.md)
-- [init(dwSize: DWORD, dwCommand: DWORD, lpvInBuffer: UnsafeMutableRawPointer!, cbInBuffer: DWORD, lpvOutBuffer: UnsafeMutableRawPointer!, cbOutBuffer: DWORD)](ffeffescape/init(dwsize:dwcommand:lpvinbuffer:cbinbuffer:lpvoutbuffer:cboutbuffer:).md)
+- [init()](./ffeffescape/init%28%29.md)
+- [init(dwSize: DWORD, dwCommand: DWORD, lpvInBuffer: UnsafeMutableRawPointer!, cbInBuffer: DWORD, lpvOutBuffer: UnsafeMutableRawPointer!, cbOutBuffer: DWORD)](./ffeffescape/init%28dwsize,dwcommand,lpvinbuffer,cbinbuffer,lpvoutbuffer,cboutbuffer%29.md)
 ### Instance Properties
-- [var cbInBuffer: DWORD](ffeffescape/cbinbuffer.md)
+- [var cbInBuffer: DWORD](./ffeffescape/cbinbuffer.md)
   Specifies the size, in bytes, of the **lpvInBuffer** buffer.
-- [var cbOutBuffer: DWORD](ffeffescape/cboutbuffer.md)
+- [var cbOutBuffer: DWORD](./ffeffescape/cboutbuffer.md)
   On entry, specifies the size, in bytes, of the **lpvOutBuffer** buffer. On exit, specifies the number of bytes actually produced by the command.
-- [var dwCommand: DWORD](ffeffescape/dwcommand.md)
+- [var dwCommand: DWORD](./ffeffescape/dwcommand.md)
   Specifies a plugIn specific command number. Contact the hardware vendor for a list of valid commands and their parameters.
-- [var dwSize: DWORD](ffeffescape/dwsize.md)
+- [var dwSize: DWORD](./ffeffescape/dwsize.md)
   Size, in bytes, of this structure. This member must be initialized before the structure is used.
-- [var lpvInBuffer: UnsafeMutableRawPointer!](ffeffescape/lpvinbuffer.md)
+- [var lpvInBuffer: UnsafeMutableRawPointer!](./ffeffescape/lpvinbuffer.md)
   Buffer containing the data required to perform the operation.
-- [var lpvOutBuffer: UnsafeMutableRawPointer!](ffeffescape/lpvoutbuffer.md)
+- [var lpvOutBuffer: UnsafeMutableRawPointer!](./ffeffescape/lpvoutbuffer.md)
   Buffer in which the operation’s output data is returned.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct FFCAPABILITIES](ffcapabilities.md)
+### Data Types
+- [struct FFCAPABILITIES](./ffcapabilities.md)
   Used by the FFDeviceGetForceFeedbackCapabilities method to retrieve device force-feedback capabilities.
-- [struct FFCONDITION](ffcondition.md)
+- [struct FFCONDITION](./ffcondition.md)
   A structure containing type-specific information for certain effects.
-- [struct FFCONSTANTFORCE](ffconstantforce.md)
+- [struct FFCONSTANTFORCE](./ffconstantforce.md)
   Contains type-specific information for the CONSTANTFORCE effect.
-- [struct FFCUSTOMFORCE](ffcustomforce.md)
+- [struct FFCUSTOMFORCE](./ffcustomforce.md)
   Contains type-specific information for the CUSTOMFORCE effect.
-- [struct FFEFFECT](ffeffect.md)
+- [struct FFEFFECT](./ffeffect.md)
   UsUsed by the FFDeviceCreateEffect method to initialize a new effect object. It is also used by the FFEffectSetParameters and FFEffectGetParameters functions.
-- [struct FFENVELOPE](ffenvelope.md)
+- [struct FFENVELOPE](./ffenvelope.md)
   Used by the FFEFFECT structure to specify the optional envelope parameters for an effect.
-- [struct FFPERIODIC](ffperiodic.md)
+- [struct FFPERIODIC](./ffperiodic.md)
   A structure containing type-specific information for certain effects.
-- [struct FFRAMPFORCE](fframpforce.md)
+- [struct FFRAMPFORCE](./fframpforce.md)
   Contains type-specific information for the RAMPFORCE effect.
 
 

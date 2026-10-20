@@ -1,7 +1,8 @@
 # attenuationFalloffExponent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exponent value for the light’s intensity falloff-transition curve.
 
@@ -21,9 +22,10 @@ var attenuationFalloffExponent: Float { get set }
 
 ## See Also
 
-- [var attenuationRadius: Float](pointlightcomponent/attenuationradius.md)
+### Configuring the light
+- [var attenuationRadius: Float](./attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
-- [var intensity: Float](pointlightcomponent/intensity.md)
+- [var intensity: Float](./intensity.md)
   The intensity of the point light, measured in lumen.
 
 

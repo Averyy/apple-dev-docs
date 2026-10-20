@@ -1,17 +1,22 @@
 # drawSortIndicator(withFrame:in:ascending:priority:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a sorting indicator given a cell frame contained inside a view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawSortIndicator(withFrame cellFrame: NSRect, in controlView: NSView, ascending: Bool, priority: Int)
+```
+
+```objc
+- (void) drawSortIndicatorWithFrame:(NSRect) cellFrame inView:(NSView *) controlView ascending:(BOOL) ascending priority:(NSInteger) priority;
 ```
 
 #### Discussion
@@ -27,9 +32,11 @@ Override this method to customize the sorting user interface.
 
 ## See Also
 
-- [class NSTableHeaderCell](nstableheadercell.md)
+### Related Documentation
+- [class NSTableHeaderCell](../nstableheadercell.md)
   An object that a table header view uses to draw the content of the column headers.
-- [func sortIndicatorRect(forBounds: NSRect) -> NSRect](nstableheadercell/sortindicatorrect(forbounds:).md)
+### Drawing Sorting Indicators
+- [func sortIndicatorRect(forBounds: NSRect) -> NSRect](./sortindicatorrect%28forbounds%29.md)
   Returns the location to display the sorting indicator given `theRect`.
 
 

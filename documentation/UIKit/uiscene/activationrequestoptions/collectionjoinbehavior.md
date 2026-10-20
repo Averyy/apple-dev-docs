@@ -1,7 +1,8 @@
 # collectionJoinBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior that specifies how a new scene joins a scene collection.
 
@@ -14,13 +15,18 @@ The behavior that specifies how a new scene joins a scene collection.
 var collectionJoinBehavior: UISceneCollectionJoinBehavior { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) UISceneCollectionJoinBehavior collectionJoinBehavior;
+```
+
 #### Discussion
 
-A scene collection is a group of scenes that display together. In apps built with Mac Catalyst, you use this behavior to add windows to an [`NSWindowTabGroup`](https://developer.apple.com/documentation/appkit/nswindowtabgroup).
+A scene collection is a group of scenes that display together. In apps built with Mac Catalyst, you use this behavior to add windows to an [`NSWindowTabGroup`](../../../AppKit/nswindowtabgroup.md).
 
 ## See Also
 
-- [enum UISceneCollectionJoinBehavior](uiscenecollectionjoinbehavior.md)
+### Specifying collection join behavior
+- [enum UISceneCollectionJoinBehavior](../../uiscenecollectionjoinbehavior.md)
   A set of behaviors that specify how a new scene joins a scene collection.
 
 

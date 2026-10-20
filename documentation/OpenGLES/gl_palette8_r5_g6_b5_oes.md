@@ -1,7 +1,8 @@
 # GL_PALETTE8_R5_G6_B5_OES
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_PALETTE8_R5_G6_B5_OES: Int32 { get }
+```
+
+```c
+#define GL_PALETTE8_R5_G6_B5_OES
 ```
 
 

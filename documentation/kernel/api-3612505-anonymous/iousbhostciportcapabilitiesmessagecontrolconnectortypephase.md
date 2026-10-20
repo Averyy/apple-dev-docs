@@ -1,14 +1,15 @@
 # IOUSBHostCIPortCapabilitiesMessageControlConnectorTypePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIPortCapabilitiesMessageControlConnectorTypePhase = IOUSBBitRangePhase(24, 31)
 ```
 

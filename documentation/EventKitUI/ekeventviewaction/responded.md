@@ -1,7 +1,8 @@
 # EKEventViewAction.responded
 
 **Framework**: EventKit UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user responded to and saved a pending event invitation.
 
@@ -17,11 +18,16 @@ The user responded to and saved a pending event invitation.
 case responded
 ```
 
+```c
+EKEventViewActionResponded
+```
+
 ## See Also
 
-- [EKEventViewAction.done](ekeventviewaction/done.md)
+### Constants
+- [EKEventViewAction.done](./done.md)
   The user tapped the Done button.
-- [EKEventViewAction.deleted](ekeventviewaction/deleted.md)
+- [EKEventViewAction.deleted](./deleted.md)
   The user deleted the event.
 
 

@@ -1,7 +1,8 @@
 # translate
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Moves the origin of the canvas coordinate system.
 
@@ -11,7 +12,7 @@ Moves the origin of the canvas coordinate system.
 
 ## Declaration
 
-```swift
+```
 void translate(
     unrestricted float tx, 
     unrestricted float ty
@@ -29,13 +30,14 @@ The specified point x,y in the canvas coordinate system becomes the point 0,0 an
 
 ## See Also
 
-- [rotate](canvasrenderingcontext2d/1630553-rotate.md)
+### Changing the Coordinate System
+- [rotate](./api-1630553-rotate.md)
   Rotates the canvas coordinate system.
-- [scale](canvasrenderingcontext2d/1631799-scale.md)
+- [scale](./api-1631799-scale.md)
   Scales the canvas coordinate system horizontally and vertically.
-- [setTransform](canvasrenderingcontext2d/1630015-settransform.md)
+- [setTransform](./api-1630015-settransform.md)
   Sets the transformation matrix.
-- [transform](canvasrenderingcontext2d/1629911-transform.md)
+- [transform](./api-1629911-transform.md)
   Transforms the current transformation matrix using another matrix.
 
 

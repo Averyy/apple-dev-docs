@@ -1,7 +1,8 @@
 # noAttachmentFound
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,9 +17,10 @@ static var noAttachmentFound: SFError.Code { get }
 
 ## See Also
 
-- [static var loadingInterrupted: SFError.Code](sferror/loadinginterrupted.md)
-- [static var noExtensionFound: SFError.Code](sferror/noextensionfound.md)
-- [SFError.Code](sferror/code.md)
+### Error Codes
+- [static var loadingInterrupted: SFError.Code](./loadinginterrupted.md)
+- [static var noExtensionFound: SFError.Code](./noextensionfound.md)
+- [SFError.Code](./code.md)
   Messages that describe a content blocker or Safari app extension error.
 
 

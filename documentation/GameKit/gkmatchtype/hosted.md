@@ -1,7 +1,8 @@
 # GKMatchType.hosted
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match hosted on your private server.
 
@@ -20,15 +21,20 @@ A match hosted on your private server.
 case hosted
 ```
 
+```c
+GKMatchTypeHosted
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
 ## See Also
 
-- [GKMatchType.peerToPeer](gkmatchtype/peertopeer.md)
+### Types
+- [GKMatchType.peerToPeer](./peertopeer.md)
   A peer-to-peer match hosted by Game Center.
-- [GKMatchType.turnBased](gkmatchtype/turnbased.md)
+- [GKMatchType.turnBased](./turnbased.md)
   A turn-based match hosted by Game Center.
 
 

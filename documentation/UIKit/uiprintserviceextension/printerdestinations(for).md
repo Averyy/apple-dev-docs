@@ -1,7 +1,8 @@
 # printerDestinations(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for a printer destination that matches the print-job attributes.
 
@@ -17,13 +18,17 @@ Searches for a printer destination that matches the print-job attributes.
 func printerDestinations(for printInfo: UIPrintInfo) -> [UIPrinterDestination]
 ```
 
+```objc
+- (NSArray<UIPrinterDestination *> *) printerDestinationsForPrintInfo:(UIPrintInfo *) printInfo;
+```
+
 #### Return Value
 
 A printer or printers that fulfill the printing options in `printInfo`.
 
 #### Discussion
 
-This method inspects the [`UIPrintInfo`](uiprintinfo.md) record to determine which printers to display to the user.
+This method inspects the [`UIPrintInfo`](../uiprintinfo.md) record to determine which printers to display to the user.
 
 ## Parameters
 

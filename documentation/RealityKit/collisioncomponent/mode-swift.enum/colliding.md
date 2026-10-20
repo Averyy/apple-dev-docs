@@ -1,7 +1,8 @@
 # CollisionComponent.Mode.colliding
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An environmental collision object.
 

@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this expression has no patterns or references.
 

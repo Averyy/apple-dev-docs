@@ -1,7 +1,8 @@
 # initWith
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the private data structures associated with this class.
 
@@ -10,7 +11,7 @@ Initializes the private data structures associated with this class.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWith(IOBufferMemoryDescriptor *ifmd);
 ```
 
@@ -20,7 +21,7 @@ virtual bool initWith(IOBufferMemoryDescriptor *ifmd);
 
 #### Discussion
 
-Do not override or call this method. Instead, override the [`init`](https://developer.apple.com/documentation/usbserialdriverkit/iouserusbserial/init) method and use it to allocate memory for your driver’s data structures.
+Do not override or call this method. Instead, override the [`init`](../../USBSerialDriverKit/iouserusbserial/init.md) method and use it to allocate memory for your driver’s data structures.
 
 ## Parameters
 
@@ -28,13 +29,14 @@ Do not override or call this method. Instead, override the [`init`](https://deve
 
 ## See Also
 
-- [init](iouserserial/init.md)
+### Configuring the Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Start](iouserserial/start.md)
+- [Start](./start.md)
   Starts the current service and associates it with the specified provider.
-- [Stop](iouserserial/stop.md)
+- [Stop](./stop.md)
   Stops the service associated with the specified provider.
-- [free](iouserserial/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

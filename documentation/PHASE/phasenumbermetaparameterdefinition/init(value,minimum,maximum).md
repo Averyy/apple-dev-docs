@@ -1,7 +1,8 @@
 # init(value:minimum:maximum:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a specification for a metaparameter with the given numeric value and range.
 
@@ -19,6 +20,10 @@ Creates a specification for a metaparameter with the given numeric value and ran
 init(value: Double, minimum: Double, maximum: Double)
 ```
 
+```objc
+- (instancetype) initWithValue:(double) value minimum:(double) minimum maximum:(double) maximum;
+```
+
 ## Parameters
 
 - `value`: A default value for the metaparameter specification.
@@ -27,11 +32,12 @@ init(value: Double, minimum: Double, maximum: Double)
 
 ## See Also
 
-- [convenience init(value: Double)](phasenumbermetaparameterdefinition/init(value:).md)
+### Creating a Metaparameter Definition
+- [convenience init(value: Double)](./init%28value%29.md)
   Creates a specification for a metaparameter with the given numeric value.
-- [convenience init(value: Double, identifier: String)](phasenumbermetaparameterdefinition/init(value:identifier:).md)
+- [convenience init(value: Double, identifier: String)](./init%28value,identifier%29.md)
   Creates a specification for a named metaparameter with the given numeric value.
-- [convenience init(value: Double, minimum: Double, maximum: Double, identifier: String)](phasenumbermetaparameterdefinition/init(value:minimum:maximum:identifier:).md)
+- [convenience init(value: Double, minimum: Double, maximum: Double, identifier: String)](./init%28value,minimum,maximum,identifier%29.md)
   Creates a specification for a named metaparameter with the given numeric value and range.
 
 

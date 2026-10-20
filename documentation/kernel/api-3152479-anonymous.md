@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMemoryLedgerTagDefault](3152479-anonymous/kiomemoryledgertagdefault.md)
-- [kIOMemoryLedgerTagGraphics](3152479-anonymous/kiomemoryledgertaggraphics.md)
-- [kIOMemoryLedgerTagMedia](3152479-anonymous/kiomemoryledgertagmedia.md)
-- [kIOMemoryLedgerTagNeural](3152479-anonymous/kiomemoryledgertagneural.md)
-- [kIOmemoryLedgerTagNetwork](3152479-anonymous/kiomemoryledgertagnetwork.md)
+- [kIOMemoryLedgerTagDefault](./api-3152479-anonymous/kiomemoryledgertagdefault.md)
+- [kIOMemoryLedgerTagGraphics](./api-3152479-anonymous/kiomemoryledgertaggraphics.md)
+- [kIOMemoryLedgerTagMedia](./api-3152479-anonymous/kiomemoryledgertagmedia.md)
+- [kIOMemoryLedgerTagNeural](./api-3152479-anonymous/kiomemoryledgertagneural.md)
+- [kIOmemoryLedgerTagNetwork](./api-3152479-anonymous/kiomemoryledgertagnetwork.md)
 
 
 ---

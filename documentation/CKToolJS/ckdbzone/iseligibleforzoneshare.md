@@ -1,7 +1,8 @@
 # isEligibleForZoneShare
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether zone is eligible for Zone Share.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether zone is eligible for Zone Share.
 
 ## Declaration
 
-```swift
+```
 attribute boolean? isEligibleForZoneShare;
 ```
 

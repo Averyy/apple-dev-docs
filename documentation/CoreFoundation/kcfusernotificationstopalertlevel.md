@@ -1,7 +1,8 @@
 # kCFUserNotificationStopAlertLevel
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The notification is very serious.
 
@@ -14,17 +15,22 @@ The notification is very serious.
 var kCFUserNotificationStopAlertLevel: CFOptionFlags { get }
 ```
 
+```c
+kCFUserNotificationStopAlertLevel
+```
+
 #### Discussion
 
 A stop icon is displayed by default.
 
 ## See Also
 
-- [var kCFUserNotificationNoteAlertLevel: CFOptionFlags](kcfusernotificationnotealertlevel.md)
+### Constants
+- [var kCFUserNotificationNoteAlertLevel: CFOptionFlags](./kcfusernotificationnotealertlevel.md)
   The notification is not very serious.
-- [var kCFUserNotificationCautionAlertLevel: CFOptionFlags](kcfusernotificationcautionalertlevel.md)
+- [var kCFUserNotificationCautionAlertLevel: CFOptionFlags](./kcfusernotificationcautionalertlevel.md)
   The notification is somewhat serious.
-- [var kCFUserNotificationPlainAlertLevel: CFOptionFlags](kcfusernotificationplainalertlevel.md)
+- [var kCFUserNotificationPlainAlertLevel: CFOptionFlags](./kcfusernotificationplainalertlevel.md)
   The notification is not serious.
 
 

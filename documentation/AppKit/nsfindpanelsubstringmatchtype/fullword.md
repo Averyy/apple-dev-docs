@@ -1,15 +1,20 @@
 # NSFindPanelSubstringMatchType.fullWord
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case fullWord
+```
+
+```c
+NSFindPanelSubstringMatchTypeFullWord
 ```
 
 #### Discussion
@@ -18,9 +23,10 @@ Finds a word exactly matching the search string.
 
 ## See Also
 
-- [NSFindPanelSubstringMatchType.contains](nsfindpanelsubstringmatchtype/contains.md)
-- [NSFindPanelSubstringMatchType.startsWith](nsfindpanelsubstringmatchtype/startswith.md)
-- [NSFindPanelSubstringMatchType.endsWith](nsfindpanelsubstringmatchtype/endswith.md)
+### Constants
+- [NSFindPanelSubstringMatchType.contains](./contains.md)
+- [NSFindPanelSubstringMatchType.startsWith](./startswith.md)
+- [NSFindPanelSubstringMatchType.endsWith](./endswith.md)
 
 
 ---

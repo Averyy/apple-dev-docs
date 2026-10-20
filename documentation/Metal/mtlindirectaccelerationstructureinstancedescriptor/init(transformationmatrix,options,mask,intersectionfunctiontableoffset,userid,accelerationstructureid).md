@@ -1,7 +1,8 @@
 # init(transformationMatrix:options:mask:intersectionFunctionTableOffset:userID:accelerationStructureID:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

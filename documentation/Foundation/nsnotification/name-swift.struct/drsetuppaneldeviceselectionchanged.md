@@ -1,7 +1,8 @@
 # DRSetupPanelDeviceSelectionChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.2+

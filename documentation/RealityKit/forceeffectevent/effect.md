@@ -1,7 +1,8 @@
 # effect
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The force effect to update.
 

@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the elements of a sequence or collection to the end of this collection.
 
@@ -25,11 +26,12 @@ mutating func append<S>(contentsOf newElements: S) where S : Sequence, S.Element
 
 ## See Also
 
-- [func append(LowLevelMesh.PartsCollection.Element)](lowlevelmesh/partscollection/append(_:).md)
+### Updating collection contents
+- [func append(LowLevelMesh.PartsCollection.Element)](./append%28_%29.md)
   Adds an element to the end of the collection.
-- [func replaceAll<S>(S)](lowlevelmesh/partscollection/replaceall(_:).md)
+- [func replaceAll<S>(S)](./replaceall%28_%29.md)
   Replaces all mesh parts in this collection with those from the new sequence.
-- [func removeAll()](lowlevelmesh/partscollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Removes all mesh parts from this collection.
 
 

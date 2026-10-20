@@ -1,7 +1,8 @@
 # NEHotspotEvaluationProviderConfiguration
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that defines configuration options for use in NetworkExtension evaluation providers.
 
@@ -21,21 +22,22 @@ A class that defines configuration options for use in NetworkExtension evaluatio
 ## Relationships
 
 ### Inherits From
-- [NEAppExtensionConfiguration](neappextensionconfiguration.md)
+- [NEAppExtensionConfiguration](./neappextensionconfiguration.md)
 ### Conforms To
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NEHotspotManager](nehotspotmanager.md)
+### Hotspot helper extension
+- [class NEHotspotManager](./nehotspotmanager.md)
   A class that you use to enable or disable the hotspot evaluation and authentication provider extensions.
-- [protocol NEHotspotEvaluationProvider](nehotspotevaluationprovider.md)
+- [protocol NEHotspotEvaluationProvider](./nehotspotevaluationprovider.md)
   A protocol that defines methods and properties your extension implements to handle evaluate and filter scan list commands.
-- [protocol NEHotspotAuthenticationProvider](nehotspotauthenticationprovider.md)
+- [protocol NEHotspotAuthenticationProvider](./nehotspotauthenticationprovider.md)
   A protocol that defines methods that your extension adopts to start and stop the extension, and to handle commands to authenticate with the hotspot network.
-- [class NEHotspotAuthenticationProviderConfiguration](nehotspotauthenticationproviderconfiguration.md)
+- [class NEHotspotAuthenticationProviderConfiguration](./nehotspotauthenticationproviderconfiguration.md)
   A class that defines configuration options for use in NetworkExtension authentication providers.
 
 

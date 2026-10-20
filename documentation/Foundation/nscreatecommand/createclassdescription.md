@@ -1,7 +1,8 @@
 # createClassDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the class description for the class that is to be created.
 
@@ -15,14 +16,20 @@ Returns the class description for the class that is to be created.
 var createClassDescription: NSScriptClassDescription { get }
 ```
 
+```objc
+@property (retain, readonly) NSScriptClassDescription * createClassDescription;
+```
+
 #### Return Value
 
 The class description for the class that is to be created.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [var resolvedKeyDictionary: [String : Any]](nscreatecommand/resolvedkeydictionary.md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Getting information about a create command
+- [var resolvedKeyDictionary: [String : Any]](./resolvedkeydictionary.md)
   Returns a dictionary that contains the properties that were specified in the `make` Apple event command that has been converted to this `NSCreateCommand` object.
 
 

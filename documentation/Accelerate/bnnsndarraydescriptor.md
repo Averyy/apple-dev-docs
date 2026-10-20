@@ -1,18 +1,19 @@
 # BNNSNDArrayDescriptor
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the shape, stride, data type, and, optionally, the memory location of an n-dimensional array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ A structure that describes the shape, stride, data type, and, optionally, the me
 struct BNNSNDArrayDescriptor
 ```
 
+```c
+typedef struct { ... } BNNSNDArrayDescriptor;
+```
+
 #### Overview
 
-You use a [`BNNSNDArrayDescriptor`](bnnsndarraydescriptor.md) structure as the primary mechanism to pass the description of data to and from BNNS functions. The description may include a pointer to the memory location.
+You use a [`BNNSNDArrayDescriptor`](./bnnsndarraydescriptor.md) structure as the primary mechanism to pass the description of data to and from BNNS functions. The description may include a pointer to the memory location.
 
 For example, use the following code when you’re passing immutable weights to a convolution layer:
 
@@ -73,7 +78,7 @@ let inputDescriptor = BNNSNDArrayDescriptor(flags: flags,
                                            data_bias: 0)
 ```
 
-You don’t need to specify the data when, for example, you’re passing that data directly to [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](bnnsfilterapplybatch(_:_:_:_:_:_:).md). The following code creates [`BNNSNDArrayDescriptor`](bnnsndarraydescriptor.md) structures for the input and output of a convolution operation. The data property of both descriptors is nil, and the input and output data are passed directly to [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](bnnsfilterapplybatch(_:_:_:_:_:_:).md):
+You don’t need to specify the data when, for example, you’re passing that data directly to [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](./bnnsfilterapplybatch%28_,_,_,_,_,_%29.md). The following code creates [`BNNSNDArrayDescriptor`](./bnnsndarraydescriptor.md) structures for the input and output of a convolution operation. The data property of both descriptors is nil, and the input and output data are passed directly to [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](./bnnsfilterapplybatch%28_,_,_,_,_,_%29.md):
 
 ```swift
 let input: [Float] = [ ... ]
@@ -123,90 +128,91 @@ let error = BNNSFilterApplyBatch(convolutionLayer, 1,
 ## Topics
 
 ### Creating an Array Descriptor
-- [init(flags: BNNSNDArrayFlags, layout: BNNSDataLayout, size: (Int, Int, Int, Int, Int, Int, Int, Int), stride: (Int, Int, Int, Int, Int, Int, Int, Int), data: UnsafeMutableRawPointer?, data_type: BNNSDataType, table_data: UnsafeMutableRawPointer?, table_data_type: BNNSDataType, data_scale: Float, data_bias: Float)](bnnsndarraydescriptor/init(flags:layout:size:stride:data:data_type:table_data:table_data_type:data_scale:data_bias:).md)
+- [init(flags: BNNSNDArrayFlags, layout: BNNSDataLayout, size: (Int, Int, Int, Int, Int, Int, Int, Int), stride: (Int, Int, Int, Int, Int, Int, Int, Int), data: UnsafeMutableRawPointer?, data_type: BNNSDataType, table_data: UnsafeMutableRawPointer?, table_data_type: BNNSDataType, data_scale: Float, data_bias: Float)](./bnnsndarraydescriptor/init%28flags,layout,size,stride,data,data_type,table_data,table_data_type,data_scale,data_bias%29.md)
   Returns a new n-dimensional array descriptor with the specified parameters.
-- [init?(data: UnsafeMutableRawBufferPointer, scalarType: any BNNSScalar.Type, shape: BNNS.Shape)](bnnsndarraydescriptor/init(data:scalartype:shape:).md)
+- [init?(data: UnsafeMutableRawBufferPointer, scalarType: any BNNSScalar.Type, shape: BNNS.Shape)](./bnnsndarraydescriptor/init%28data,scalartype,shape%29.md)
   Returns a new n-dimensional array descriptor that references the same data as the specified raw pointer.
-- [init?<T>(data: UnsafeMutableBufferPointer<T>, shape: BNNS.Shape)](bnnsndarraydescriptor/init(data:shape:).md)
+- [init?<T>(data: UnsafeMutableBufferPointer<T>, shape: BNNS.Shape)](./bnnsndarraydescriptor/init%28data,shape%29.md)
   Returns a new n-dimensional array descriptor that references the same data as the specified pointer.
-- [init(dataType: BNNSDataType, shape: BNNS.Shape)](bnnsndarraydescriptor/init(datatype:shape:).md)
+- [init(dataType: BNNSDataType, shape: BNNS.Shape)](./bnnsndarraydescriptor/init%28datatype,shape%29.md)
   Returns a new n-dimensional array descriptor from the specified data type and shape.
-- [init()](bnnsndarraydescriptor/init.md)
+- [init()](./bnnsndarraydescriptor/init%28%29.md)
   Returns a new n-dimensional array descriptor.
 ### Specifying the Behavior of an N-Dimensional Array.
-- [struct BNNSNDArrayFlags](bnnsndarrayflags.md)
+- [struct BNNSNDArrayFlags](./bnnsndarrayflags.md)
   Options that control the behavior of an n-dimensional array.
 ### Accessing the Properties of an Array Descriptor
-- [var flags: BNNSNDArrayFlags](bnnsndarraydescriptor/flags.md)
+- [var flags: BNNSNDArrayFlags](./bnnsndarraydescriptor/flags.md)
   Flags that control some behaviors of the n-dimensional array.
-- [var layout: BNNSDataLayout](bnnsndarraydescriptor/layout.md)
+- [var layout: BNNSDataLayout](./bnnsndarraydescriptor/layout.md)
   The dimension of the n-dimensional array.
-- [var size: (Int, Int, Int, Int, Int, Int, Int, Int)](bnnsndarraydescriptor/size.md)
+- [var size: (Int, Int, Int, Int, Int, Int, Int, Int)](./bnnsndarraydescriptor/size.md)
   The number of values in each dimension.
-- [var stride: (Int, Int, Int, Int, Int, Int, Int, Int)](bnnsndarraydescriptor/stride.md)
+- [var stride: (Int, Int, Int, Int, Int, Int, Int, Int)](./bnnsndarraydescriptor/stride.md)
   The increment, in values, between consecutive elements in each dimension.
-- [var data: UnsafeMutableRawPointer?](bnnsndarraydescriptor/data.md)
+- [var data: UnsafeMutableRawPointer?](./bnnsndarraydescriptor/data.md)
   A pointer that is optional and points to the underlying data.
-- [var data_type: BNNSDataType](bnnsndarraydescriptor/data_type.md)
+- [var data_type: BNNSDataType](./bnnsndarraydescriptor/data_type.md)
   The data type of the n-dimensional array.
-- [var table_data: UnsafeMutableRawPointer?](bnnsndarraydescriptor/table_data.md)
+- [var table_data: UnsafeMutableRawPointer?](./bnnsndarraydescriptor/table_data.md)
   The lookup table for indexed data types.
-- [var table_data_type: BNNSDataType](bnnsndarraydescriptor/table_data_type.md)
+- [var table_data_type: BNNSDataType](./bnnsndarraydescriptor/table_data_type.md)
   The data type of the lookup table.
-- [var data_scale: Float](bnnsndarraydescriptor/data_scale.md)
+- [var data_scale: Float](./bnnsndarraydescriptor/data_scale.md)
   The scale you use to convert integer and unsigned integer data to floating point.
-- [var data_bias: Float](bnnsndarraydescriptor/data_bias.md)
+- [var data_bias: Float](./bnnsndarraydescriptor/data_bias.md)
   The bias you use to convert integer and unsigned integer data to floating point.
-- [var shape: BNNS.Shape](bnnsndarraydescriptor/shape.md)
+- [var shape: BNNS.Shape](./bnnsndarraydescriptor/shape.md)
   The shape of the n-dimensional array.
 ### Allocating and Deallocating Memory
-- [static func allocate<C>(initializingFrom: C, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocate(initializingfrom:shape:batchsize:).md)
+- [static func allocate<C>(initializingFrom: C, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocate%28initializingfrom,shape,batchsize%29.md)
   Returns a new n-dimensional array descriptor that’s initialized with a copy of the elements in the specified collection.
-- [static func allocate<Scalar>(randomUniformUsing: BNNS.RandomGenerator, range: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor?](bnnsndarraydescriptor/allocate(randomuniformusing:range:shape:batchsize:)-2rorb.md)
+- [static func allocate<Scalar>(randomUniformUsing: BNNS.RandomGenerator, range: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor?](./bnnsndarraydescriptor/allocate%28randomuniformusing,range,shape,batchsize%29-2rorb.md)
   Returns a new array descriptor that’s initialized with random integer values from the continuous uniform distribution.
-- [static func allocate<Scalar>(randomUniformUsing: BNNS.RandomGenerator, range: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor?](bnnsndarraydescriptor/allocate(randomuniformusing:range:shape:batchsize:)-761hg.md)
+- [static func allocate<Scalar>(randomUniformUsing: BNNS.RandomGenerator, range: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor?](./bnnsndarraydescriptor/allocate%28randomuniformusing,range,shape,batchsize%29-761hg.md)
   Returns a new array descriptor that’s initialized with random floating-point values from the continuous uniform distribution.
-- [static func allocate<Scalar>(randomIn: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocate(randomin:shape:batchsize:)-1697a.md)
+- [static func allocate<Scalar>(randomIn: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocate%28randomin,shape,batchsize%29-1697a.md)
   Returns a new n-dimensional array descriptor that’s initialized with random values within the specified range.
-- [static func allocate<Scalar>(randomIn: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocate(randomin:shape:batchsize:)-5a2p2.md)
+- [static func allocate<Scalar>(randomIn: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocate%28randomin,shape,batchsize%29-5a2p2.md)
   Returns a new n-dimensional array descriptor that’s initialized with random values within the specified range.
-- [static func allocate<Scalar, Generator>(randomIn: ClosedRange<Scalar>, using: inout Generator, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocate(randomin:using:shape:batchsize:)-5kbi8.md)
+- [static func allocate<Scalar, Generator>(randomIn: ClosedRange<Scalar>, using: inout Generator, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocate%28randomin,using,shape,batchsize%29-5kbi8.md)
   Returns a new array descriptor that’s initialized with random values within the specified range, using the given generator as a source for randomness.
-- [static func allocate<Scalar, Generator>(randomIn: ClosedRange<Scalar>, using: inout Generator, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocate(randomin:using:shape:batchsize:)-3w6ig.md)
+- [static func allocate<Scalar, Generator>(randomIn: ClosedRange<Scalar>, using: inout Generator, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocate%28randomin,using,shape,batchsize%29-3w6ig.md)
   Returns a new array descriptor that’s initialized with random values within the specified range, using the given generator as a source for randomness.
-- [static func allocate<T>(repeating: T, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocate(repeating:shape:batchsize:).md)
+- [static func allocate<T>(repeating: T, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocate%28repeating,shape,batchsize%29.md)
   Returns a new n-dimensional array descriptor that’s initialized with a single, repeated scalar value.
-- [static func allocateUninitialized(scalarType: any BNNSScalar.Type, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](bnnsndarraydescriptor/allocateuninitialized(scalartype:shape:batchsize:).md)
+- [static func allocateUninitialized(scalarType: any BNNSScalar.Type, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor](./bnnsndarraydescriptor/allocateuninitialized%28scalartype,shape,batchsize%29.md)
   Returns a new n-dimensional array descriptor that’s allocated with uninitialized memory.
-- [func deallocate()](bnnsndarraydescriptor/deallocate.md)
+- [func deallocate()](./bnnsndarraydescriptor/deallocate%28%29.md)
   Deallocates the memory block previously allocated to this n-dimensional array descriptor.
 ### Generating an Array from an Array Descriptor’s Data
-- [func makeArray<T>(of: T.Type, batchSize: Int) -> [T]?](bnnsndarraydescriptor/makearray(of:batchsize:).md)
+- [func makeArray<T>(of: T.Type, batchSize: Int) -> [T]?](./bnnsndarraydescriptor/makearray%28of,batchsize%29.md)
   Returns a new array that contains a copy of the n-dimensional array descriptor’s data.
 ### Initializers
-- [init?(data: UnsafeMutableRawBufferPointer, scalarType: any BNNSScalar.Type, shape: BNNS.Shape, batchSize: Int)](bnnsndarraydescriptor/init(data:scalartype:shape:batchsize:).md)
-- [init?<T>(data: UnsafeMutableBufferPointer<T>, shape: BNNS.Shape, batchSize: Int)](bnnsndarraydescriptor/init(data:shape:batchsize:).md)
+- [init?(data: UnsafeMutableRawBufferPointer, scalarType: any BNNSScalar.Type, shape: BNNS.Shape, batchSize: Int)](./bnnsndarraydescriptor/init%28data,scalartype,shape,batchsize%29.md)
+- [init?<T>(data: UnsafeMutableBufferPointer<T>, shape: BNNS.Shape, batchSize: Int)](./bnnsndarraydescriptor/init%28data,shape,batchsize%29.md)
 ### Instance Properties
-- [var dataSize: Int](bnnsndarraydescriptor/datasize.md)
+- [var dataSize: Int](./bnnsndarraydescriptor/datasize.md)
 ### Type Methods
-- [static func allocate<Scalar>(randomNormalUsing: BNNS.RandomGenerator, mean: Scalar, standardDeviation: Scalar, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor?](bnnsndarraydescriptor/allocate(randomnormalusing:mean:standarddeviation:shape:batchsize:).md)
+- [static func allocate<Scalar>(randomNormalUsing: BNNS.RandomGenerator, mean: Scalar, standardDeviation: Scalar, shape: BNNS.Shape, batchSize: Int) -> BNNSNDArrayDescriptor?](./bnnsndarraydescriptor/allocate%28randomnormalusing,mean,standarddeviation,shape,batchsize%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct BNNSLayerData](bnnslayerdata.md)
+### N-dimensional array descriptor essentials
+- [struct BNNSLayerData](./bnnslayerdata.md)
   A structure containing common layer parameters.
-- [BNNS.Shape](bnns/shape.md)
+- [BNNS.Shape](./bnns/shape.md)
   Constants that describe the size and data layout of an n-dimensional array descriptor.
-- [struct BNNSDataLayout](bnnsdatalayout.md)
+- [struct BNNSDataLayout](./bnnsdatalayout.md)
   Constants that describe the data type of an n-dimensional array.
-- [struct BNNSDataType](bnnsdatatype.md)
+- [struct BNNSDataType](./bnnsdatatype.md)
   BNNS Data Types.
-- [func BNNSDataLayoutGetRank(BNNSDataLayout) -> Int](bnnsdatalayoutgetrank(_:).md)
+- [func BNNSDataLayoutGetRank(BNNSDataLayout) -> Int](./bnnsdatalayoutgetrank%28_%29.md)
 
 
 ---

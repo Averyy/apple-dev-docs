@@ -1,10 +1,11 @@
 # init(data:URL:MIMEType:textEncodingName:frameName:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

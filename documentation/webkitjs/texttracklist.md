@@ -1,7 +1,8 @@
 # TextTrackList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface TextTrackList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](texttracklist/1630478-length.md)
-- [onaddtrack](texttracklist/1632931-onaddtrack.md)
-- [onchange](texttracklist/1629161-onchange.md)
-- [onremovetrack](texttracklist/1633680-onremovetrack.md)
+- [length](./texttracklist/api-1630478-length.md)
+- [onaddtrack](./texttracklist/api-1632931-onaddtrack.md)
+- [onchange](./texttracklist/api-1629161-onchange.md)
+- [onremovetrack](./texttracklist/api-1633680-onremovetrack.md)
 ### Instance Methods
-- [getTrackById](texttracklist/1634316-gettrackbyid.md)
-- [item](texttracklist/1629810-item.md)
+- [getTrackById](./texttracklist/api-1634316-gettrackbyid.md)
+- [item](./texttracklist/api-1629810-item.md)
 
 ## Relationships
 

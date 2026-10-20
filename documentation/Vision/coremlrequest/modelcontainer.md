@@ -1,7 +1,8 @@
 # modelContainer
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model to base the image analysis request on.
 
@@ -22,19 +23,20 @@ let modelContainer: CoreMLModelContainer
 
 #### Discussion
 
-This object wraps a [`Core ML`](https://developer.apple.com/documentation/coreml) model.
+This object wraps a [Core ML](../../CoreML/CoreML.md) model.
 
 ## See Also
 
-- [var supportedIdentifiers: [String]?](coremlrequest/supportedidentifiers.md)
+### Configuring a request
+- [var supportedIdentifiers: [String]?](./supportedidentifiers.md)
   The classification identifiers supported by the request.
-- [struct CoreMLModelContainer](coremlmodelcontainer.md)
+- [struct CoreMLModelContainer](../coremlmodelcontainer.md)
   A model container to use with an image-analysis request.
-- [enum ComputeStage](computestage.md)
+- [enum ComputeStage](../computestage.md)
   Types that represent the compute stage.
-- [var cropAndScaleAction: ImageCropAndScaleAction](coremlrequest/cropandscaleaction.md)
+- [var cropAndScaleAction: ImageCropAndScaleAction](./cropandscaleaction.md)
   An optional setting that tells the Vision algorithm how to scale an input image.
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+- [enum ImageCropAndScaleAction](../imagecropandscaleaction.md)
   A scale to apply to an input image before performing a request.
 
 

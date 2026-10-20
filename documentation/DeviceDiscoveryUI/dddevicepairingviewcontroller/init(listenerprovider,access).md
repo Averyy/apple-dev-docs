@@ -1,7 +1,8 @@
 # init(listenerProvider:access:)
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a device-pairing view controller with the provided listener and requested access level for device discovery.
 

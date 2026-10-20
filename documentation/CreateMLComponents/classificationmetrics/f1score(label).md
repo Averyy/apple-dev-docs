@@ -1,7 +1,8 @@
 # f1Score(label:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the F1 score for a class label.
 
@@ -20,6 +21,8 @@ Computes the F1 score for a class label.
 func f1Score(label: Label) -> Double
 ```
 
+Available when `Label` conforms to `Hashable`.
+
 #### Return Value
 
 The F1 score for the given label.
@@ -34,27 +37,28 @@ The balanced F-score, or F1 score, is computed as the harmonic mean of the preci
 
 ## See Also
 
-- [func makeConfusionMatrix() -> MLShapedArray<Float>](classificationmetrics/makeconfusionmatrix.md)
+### Computing and scoring
+- [func makeConfusionMatrix() -> MLShapedArray<Float>](./makeconfusionmatrix%28%29.md)
   Computes the confusion matrix.
-- [func precisionScore(label: Label) -> Double](classificationmetrics/precisionscore(label:).md)
+- [func precisionScore(label: Label) -> Double](./precisionscore%28label%29.md)
   Computes the precision score for a class label.
-- [func recallScore(label: Label) -> Double](classificationmetrics/recallscore(label:).md)
+- [func recallScore(label: Label) -> Double](./recallscore%28label%29.md)
   Computes the recall score for a class label.
-- [func count(label: Label) -> Int](classificationmetrics/count(label:).md)
+- [func count(label: Label) -> Int](./count%28label%29.md)
   Returns the number of times a label appeared in the ground truth collection.
-- [func count(predicted: Label) -> Int](classificationmetrics/count(predicted:).md)
+- [func count(predicted: Label) -> Int](./count%28predicted%29.md)
   Returns the number of times a label appeared in the predicted collection.
-- [func count(predicted: Label, label: Label) -> Int](classificationmetrics/count(predicted:label:).md)
+- [func count(predicted: Label, label: Label) -> Int](./count%28predicted,label%29.md)
   Returns the number of times a predicted, true label pair appeared in the label collections.
-- [func trueNegativeCount(of: Label) -> Int](classificationmetrics/truenegativecount(of:).md)
+- [func trueNegativeCount(of: Label) -> Int](./truenegativecount%28of%29.md)
   Returns the number of times a label was not in the predicted or ground truth collections.
-- [func truePositiveCount(of: Label) -> Int](classificationmetrics/truepositivecount(of:).md)
+- [func truePositiveCount(of: Label) -> Int](./truepositivecount%28of%29.md)
   Returns the number of times the predicted label matched the true label.
-- [func falseNegativeCount(of: Label) -> Int](classificationmetrics/falsenegativecount(of:).md)
+- [func falseNegativeCount(of: Label) -> Int](./falsenegativecount%28of%29.md)
   Returns the number of times a true label was not predicted.
-- [func falsePositiveCount(of: Label) -> Int](classificationmetrics/falsepositivecount(of:).md)
+- [func falsePositiveCount(of: Label) -> Int](./falsepositivecount%28of%29.md)
   Returns the number of times the predicted label did not match the true label.
-- [func mapLabels<T>((Label) throws -> T) rethrows -> ClassificationMetrics<T>](classificationmetrics/maplabels(_:).md)
+- [func mapLabels<T>((Label) throws -> T) rethrows -> ClassificationMetrics<T>](./maplabels%28_%29.md)
   Returns new classification metrics where the labels are the result of applying a transformation.
 
 

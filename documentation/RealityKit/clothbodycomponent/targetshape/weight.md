@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weight by which the body will be pulled towards this target shape.
 
@@ -22,7 +23,8 @@ Clamped between 0 and 1. A weight of 0 will effectively inactivate the target sh
 
 ## See Also
 
-- [var space: ClothCoordinateSpace](clothbodycomponent/targetshape/space.md)
+### Configuring the target shape
+- [var space: ClothCoordinateSpace](./space.md)
   The space in which the position constraints are defined.
 
 

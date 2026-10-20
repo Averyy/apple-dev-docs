@@ -1,7 +1,8 @@
 # preferredIOBlockSize
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Block size for file system I/O, in bytes
 

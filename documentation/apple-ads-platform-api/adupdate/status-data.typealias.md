@@ -1,7 +1,8 @@
 # AdUpdate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable status set when updating an ad.
 
@@ -10,9 +11,14 @@ Advertiser-configurable status set when updating an ad.
 
 ## Declaration
 
-```swift
+```
 string AdUpdate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: The advertiser has set the ad to run, so it can participate in auctions.
+- `PAUSED`: The advertiser has paused the ad, so it does not participate in auctions.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ Send `status: PAUSED` to stop an existing ad from competing in auctions, or `ENA
 }
 ```
 
-See [`AdStatus`](adstatus.md) for additional context.
+See [`AdStatus`](../adstatus.md) for additional context.
 
 
 ---

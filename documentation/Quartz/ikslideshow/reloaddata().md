@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data for a slideshow.
 
@@ -14,9 +15,14 @@ Reloads the data for a slideshow.
 func reloadData()
 ```
 
+```objc
+- (void) reloadData;
+```
+
 ## See Also
 
-- [func reloadItem(at: Int)](ikslideshow/reloaditem(at:).md)
+### Reloading Data
+- [func reloadItem(at: Int)](./reloaditem%28at%29.md)
   Reloads the data for a slideshow, starting at the specified index.
 
 

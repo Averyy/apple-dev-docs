@@ -1,7 +1,8 @@
 # operators
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the array of comparison predicate operators.
 
@@ -14,23 +15,28 @@ Returns the array of comparison predicate operators.
 var operators: [NSNumber]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSNumber *> * operators;
+```
+
 #### Return Value
 
-The array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects specifying the comparison predicate operators. See [`NSComparisonPredicate.Operator`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/operator) for possible values.
+The array of [`NSNumber`](../../Foundation/nsnumber.md) objects specifying the comparison predicate operators. See [`NSComparisonPredicate.Operator`](../../Foundation/nscomparisonpredicate/operator.md) for possible values.
 
 ## See Also
 
-- [var leftExpressions: [NSExpression]?](nspredicateeditorrowtemplate/leftexpressions.md)
+### Information About a Row Template
+- [var leftExpressions: [NSExpression]?](./leftexpressions.md)
   Returns the left hand expressions for the receiver.
-- [var rightExpressions: [NSExpression]?](nspredicateeditorrowtemplate/rightexpressions.md)
+- [var rightExpressions: [NSExpression]?](./rightexpressions.md)
   Returns the right hand expressions for the receiver.
-- [var compoundTypes: [NSNumber]?](nspredicateeditorrowtemplate/compoundtypes.md)
+- [var compoundTypes: [NSNumber]?](./compoundtypes.md)
   Returns the compound predicate types.
-- [var modifier: NSComparisonPredicate.Modifier](nspredicateeditorrowtemplate/modifier.md)
+- [var modifier: NSComparisonPredicate.Modifier](./modifier.md)
   Returns the comparison predicate modifier for the receiver.
-- [var options: Int](nspredicateeditorrowtemplate/options.md)
+- [var options: Int](./options.md)
   Returns the comparison predicate options.
-- [var rightExpressionAttributeType: NSAttributeType](nspredicateeditorrowtemplate/rightexpressionattributetype.md)
+- [var rightExpressionAttributeType: NSAttributeType](./rightexpressionattributetype.md)
   Returns the attribute type of the receiver’s right expression.
 
 

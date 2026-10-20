@@ -1,7 +1,8 @@
 # endLocationOnTable
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected end 2D location of the main interaction object
 
@@ -16,11 +17,12 @@ var endLocationOnTable: TableVisualState.Point2D? { get }
 
 ## See Also
 
-- [var pose: Pose3D](tabletopinteraction/value-swift.struct/pose.md)
+### Getting the position and location
+- [var pose: Pose3D](./pose.md)
   The current pose of the main interaction object
-- [var locationOnTable: TableVisualState.Point2D?](tabletopinteraction/value-swift.struct/locationontable.md)
+- [var locationOnTable: TableVisualState.Point2D?](./locationontable.md)
   The 2D location of the main interaction object
-- [var endLocation: Point3D?](tabletopinteraction/value-swift.struct/endlocation.md)
+- [var endLocation: Point3D?](./endlocation.md)
   The expected end location
 
 

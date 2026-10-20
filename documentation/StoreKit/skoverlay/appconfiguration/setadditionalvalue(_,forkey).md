@@ -1,7 +1,8 @@
 # setAdditionalValue(_:forKey:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an additional value for a key; for example, a value for measuring the effectiveness of an ad campaign.
 
@@ -17,9 +18,13 @@ Sets an additional value for a key; for example, a value for measuring the effec
 func setAdditionalValue(_ value: Any?, forKey key: String)
 ```
 
+```objc
+- (void) setAdditionalValue:(id) value forKey:(NSString *) key;
+```
+
 #### Discussion
 
-Set additional values to verify and associate an app installation with an ad campaign. For more information, see [`SKAdNetwork`](skadnetwork.md).
+Set additional values to verify and associate an app installation with an ad campaign. For more information, see [`SKAdNetwork`](../../skadnetwork.md).
 
 ## Parameters
 
@@ -28,11 +33,12 @@ Set additional values to verify and associate an app installation with an ad cam
 
 ## See Also
 
-- [var campaignToken: String?](skoverlay/appconfiguration/campaigntoken.md)
+### Verifying Advertising Campaigns
+- [var campaignToken: String?](./campaigntoken.md)
   A token you use to represent an ad campaign and measure its effectiveness.
-- [var providerToken: String?](skoverlay/appconfiguration/providertoken.md)
+- [var providerToken: String?](./providertoken.md)
   A token that represents the provider of an app promotion campaign, and that you use to measure the campaign’s effectiveness.
-- [func additionalValue(forKey: String) -> Any?](skoverlay/appconfiguration/additionalvalue(forkey:).md)
+- [func additionalValue(forKey: String) -> Any?](./additionalvalue%28forkey%29.md)
   Returns the object associated with the key.
 
 

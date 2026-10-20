@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 union wait {
     ...
 };
@@ -17,9 +17,9 @@ union wait {
 ## Topics
 
 ### Miscellaneous
-- [w_S](wait/1584948-w_s.md)
-- [w_T](wait/1584953-w_t.md)
-- [w_status](wait/1584946-w_status.md)
+- [w_S](./wait/api-1584948-w_s.md)
+- [w_T](./wait/api-1584953-w_t.md)
+- [w_status](./wait/api-1584946-w_status.md)
 
 
 ---

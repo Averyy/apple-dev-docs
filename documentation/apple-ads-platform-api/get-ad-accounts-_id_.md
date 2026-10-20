@@ -1,7 +1,8 @@
 # Get Ad Account by ID
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve the full details of a specific ad account by its ID.
 
@@ -16,7 +17,7 @@ This endpoint retrieves the full details of a specific ad account by its ID, inc
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/ad-accounts/123456789
 ```
 
@@ -55,15 +56,31 @@ GET https://api.ads.apple.com/v1/ad-accounts/123456789
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AdAccountResponse`, `application/json`): Successful operation. Returns [`AdAccountResponse`](./adaccountresponse.md) (`result`: [`AdAccount`](./adaccount.md)).
+- `400` Bad Request (`ErrorResponse`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`ErrorResponse`, `application/json`): Unauthorized.
+- `403` Forbidden (`ErrorResponse`, `application/json`): Forbidden.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`ErrorResponse`, `application/json`): Rate Limit Exceeded. See [Applying Rate Limits](./rate-limits.md).
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Create Ad Accounts](post-ad-accounts.md)
+- [Create Ad Accounts](./post-ad-accounts.md)
   Create a new ad account under a specified organization.
-- [Update Ad Accounts](put-ad-accounts-_id_.md)
+- [Update Ad Accounts](./put-ad-accounts-_id_.md)
   Update an ad account’s name or delegations.
-- [Get Advertiser Resources](get-advertiser-resources.md)
+- [Get Advertiser Resources](./get-advertiser-resources.md)
   Retrieve the advertiser resources available to your organization, filtered by resource type.
 
 

@@ -1,7 +1,8 @@
 # videoHeight
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the video in pixels.
 
@@ -15,21 +16,26 @@ The height of the video in pixels.
 var videoHeight: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSUInteger videoHeight;
+```
+
 ## See Also
 
-- [var videoWidth: Int](itlibmediaitemvideoinfo/videowidth.md)
+### Getting Video Information
+- [var videoWidth: Int](./videowidth.md)
   The width of the video in pixels.
-- [var series: String?](itlibmediaitemvideoinfo/series.md)
+- [var series: String?](./series.md)
   The name of the corresponding TV series, if the media item is an episode in a TV series.
-- [var sortSeries: String?](itlibmediaitemvideoinfo/sortseries.md)
+- [var sortSeries: String?](./sortseries.md)
   The sorting name of the corresponding TV series, if the media item is an episode in a TV series.
-- [var season: Int](itlibmediaitemvideoinfo/season.md)
+- [var season: Int](./season.md)
   The corresponding TV season, if the media item is an episode of a TV series.
-- [var isHD: Bool](itlibmediaitemvideoinfo/ishd.md)
+- [var isHD: Bool](./ishd.md)
   A Boolean value that indicates whether the video is high-definition.
-- [var episode: String?](itlibmediaitemvideoinfo/episode.md)
+- [var episode: String?](./episode.md)
   The name of the episode, if the media item is an episode of a TV series.
-- [var episodeOrder: Int](itlibmediaitemvideoinfo/episodeorder.md)
+- [var episodeOrder: Int](./episodeorder.md)
   The numerical order of the episode, if the media item is an episode of a TV series.
 
 

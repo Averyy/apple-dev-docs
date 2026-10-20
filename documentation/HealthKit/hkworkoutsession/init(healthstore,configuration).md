@@ -1,7 +1,8 @@
 # init(healthStore:configuration:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly instantiated workout session with an associated workout builder.
 
@@ -17,9 +18,14 @@ Returns a newly instantiated workout session with an associated workout builder.
 init(healthStore: HKHealthStore, configuration workoutConfiguration: HKWorkoutConfiguration) throws
 ```
 
+```objc
+- (instancetype) initWithHealthStore:(HKHealthStore *) healthStore configuration:(HKWorkoutConfiguration *) workoutConfiguration error:(NSError **) error;
+```
+
 ## See Also
 
-- [func associatedWorkoutBuilder() -> HKLiveWorkoutBuilder](hkworkoutsession/associatedworkoutbuilder.md)
+### Related Documentation
+- [func associatedWorkoutBuilder() -> HKLiveWorkoutBuilder](./associatedworkoutbuilder%28%29.md)
   Returns the live workout builder associated with the workout session.
 
 

@@ -1,7 +1,8 @@
 # everyEventMask
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If all the bits are set, your callback function is invoked whenever any event occurs.
 
@@ -13,6 +14,10 @@ If all the bits are set, your callback function is invoked whenever any event oc
 
 ```swift
 static var everyEventMask: SecKeychainEventMask { get }
+```
+
+```c
+kSecEveryEventMask
 ```
 
 

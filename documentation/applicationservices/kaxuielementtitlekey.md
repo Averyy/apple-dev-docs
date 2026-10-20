@@ -1,7 +1,8 @@
 # kAXUIElementTitleKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.15+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXUIElementTitleKey: String { get }
+```
+
+```c
+#define kAXUIElementTitleKey
 ```
 
 

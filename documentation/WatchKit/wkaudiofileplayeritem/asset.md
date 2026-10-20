@@ -1,17 +1,22 @@
 # asset
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio file asset being managed.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 var asset: WKAudioFileAsset { get }
+```
+
+```objc
+@property (nonatomic, readonly) WKAudioFileAsset * asset;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ This property is initialized with the asset you specified at creation time. You 
 
 ## See Also
 
-- [var status: WKAudioFilePlayerItemStatus](wkaudiofileplayeritem/status.md)
+### Getting Information About the Item
+- [var status: WKAudioFilePlayerItemStatus](./status.md)
   The status of the player item.
-- [var error: (any Error)?](wkaudiofileplayeritem/error.md)
+- [var error: (any Error)?](./error.md)
   An error that describes the cause of a failure.
 
 

@@ -1,7 +1,8 @@
 # supportedPlaybackRates
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported playback rates for a media item.
 
@@ -20,9 +21,13 @@ The supported playback rates for a media item.
 var supportedPlaybackRates: [NSNumber] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSNumber *> * supportedPlaybackRates;
+```
+
 #### Discussion
 
-Contains an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects. Each object is of type `float` and designates a supported playback rate. For example, a value of `2.0` would indicate the media item plays at double speed. Negative values are not supported.
+Contains an array of [`NSNumber`](../../Foundation/nsnumber.md) objects. Each object is of type `float` and designates a supported playback rate. For example, a value of `2.0` would indicate the media item plays at double speed. Negative values are not supported.
 
 
 ---

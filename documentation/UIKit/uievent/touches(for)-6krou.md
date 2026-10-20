@@ -1,7 +1,8 @@
 # touches(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the touch objects that are being delivered to the specified gesture recognizer.
 
@@ -9,7 +10,7 @@ Returns the touch objects that are being delivered to the specified gesture reco
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns the touch objects that are being delivered to the specified gesture reco
 func touches(for gesture: UIGestureRecognizer) -> Set<UITouch>?
 ```
 
+```objc
+- (NSSet<UITouch *> *) touchesForGestureRecognizer:(UIGestureRecognizer *) gesture;
+```
+
 #### Return Value
 
-A set of [`UITouch`](uitouch.md) objects representing the touches being delivered to the specified gesture recognizer for the event represented by the receiver.
+A set of [`UITouch`](../uitouch.md) objects representing the touches being delivered to the specified gesture recognizer for the event represented by the receiver.
 
 ## Parameters
 

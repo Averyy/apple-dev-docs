@@ -1,7 +1,8 @@
 # toString
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns a string representation of the matrix.
 
@@ -11,11 +12,11 @@ Returns a string representation of the matrix.
 
 ## Declaration
 
-```swift
+```
 DOMString toString();
 ```
 
-#### Return_value
+#### Return Value
 
 A string representation of the matrix’s values.
 

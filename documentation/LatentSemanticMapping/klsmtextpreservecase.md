@@ -1,13 +1,14 @@
 # kLSMTextPreserveCase
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option that specifies the parser shouldn’t change any words to lowercase.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ An option that specifies the parser shouldn’t change any words to lowercase.
 var kLSMTextPreserveCase: Int { get }
 ```
 
+```c
+kLSMTextPreserveCase
+```
+
 ## See Also
 
-- [var kLSMTextApplySpamHeuristics: Int](klsmtextapplyspamheuristics.md)
+### Constants
+- [var kLSMTextApplySpamHeuristics: Int](./klsmtextapplyspamheuristics.md)
   An option that specifies the parser should attempt to find words in hostile text.
-- [var kLSMTextPreserveAcronyms: Int](klsmtextpreserveacronyms.md)
+- [var kLSMTextPreserveAcronyms: Int](./klsmtextpreserveacronyms.md)
   An option that specifies the parser shouldn’t map all-uppercase words to lowercase.
 
 

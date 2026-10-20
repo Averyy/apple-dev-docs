@@ -1,7 +1,8 @@
 # instanceCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of instances this low-level instance data draws when set on a mesh instances component.
 
@@ -21,7 +22,7 @@ final var instanceCapacity: Int { get }
 
 #### Discussion
 
-[`instanceCount`](lowlevelinstancedata/instancecount.md) must be less than or equal to the `instanceCapacity` determined on initialization.
+[`instanceCount`](./instancecount.md) must be less than or equal to the `instanceCapacity` determined on initialization.
 
 
 ---

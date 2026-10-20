@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:usePrecomputedFlow:qualityPrioritization:revision:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new frame rate conversion configuration with specified flow width and height.
 
@@ -15,6 +16,10 @@ Creates a new frame rate conversion configuration with specified flow width and 
 
 ```swift
 init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization, revision: VTFrameRateConversionConfiguration.Revision)
+```
+
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight usePrecomputedFlow:(BOOL) usePrecomputedFlow qualityPrioritization:(VTFrameRateConversionConfigurationQualityPrioritization) qualityPrioritization revision:(VTFrameRateConversionConfigurationRevision) revision;
 ```
 
 #### Discussion

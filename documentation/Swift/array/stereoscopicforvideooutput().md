@@ -1,7 +1,8 @@
 # stereoscopicForVideoOutput()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a collection of CMTags with the required tags to describe basic stereoscopic video, where both left and right stereo eyes are present, e.g. kCMTagStereoLeftAndRight.
 
@@ -19,6 +20,8 @@ Creates a collection of CMTags with the required tags to describe basic stereosc
 ```swift
 static func stereoscopicForVideoOutput() -> [CMTag]
 ```
+
+Available when `Element` is `CMTag`.
 
 
 ---

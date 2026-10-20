@@ -1,7 +1,8 @@
 # setBorderRightColor(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBorderRightColor(_ borderRightColor: String!)
+```
+
+```objc
+- (void) setBorderRightColor:(NSString *) borderRightColor;
 ```
 
 

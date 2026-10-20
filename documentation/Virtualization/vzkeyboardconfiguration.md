@@ -1,7 +1,8 @@
 # VZKeyboardConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for a configuring a keyboard.
 
@@ -14,31 +15,36 @@ The base class for a configuring a keyboard.
 class VZKeyboardConfiguration
 ```
 
+```objc
+@interface VZKeyboardConfiguration : NSObject
+```
+
 #### Overview
 
-`VZKeyboardConfiguration` defines the abstract interface that defines a virtual keyboard that you connect to a guest operating system. Don’t instantiate `VZKeyboardConfiguration` directly, use one of its subclasses such as [`VZUSBKeyboardConfiguration`](vzusbkeyboardconfiguration.md) instead.
+`VZKeyboardConfiguration` defines the abstract interface that defines a virtual keyboard that you connect to a guest operating system. Don’t instantiate `VZKeyboardConfiguration` directly, use one of its subclasses such as [`VZUSBKeyboardConfiguration`](./vzusbkeyboardconfiguration.md) instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZMacKeyboardConfiguration](vzmackeyboardconfiguration.md)
-- [VZUSBKeyboardConfiguration](vzusbkeyboardconfiguration.md)
+- [VZMacKeyboardConfiguration](./vzmackeyboardconfiguration.md)
+- [VZUSBKeyboardConfiguration](./vzusbkeyboardconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacKeyboardConfiguration](vzmackeyboardconfiguration.md)
+### Keyboards
+- [class VZMacKeyboardConfiguration](./vzmackeyboardconfiguration.md)
   A device that defines the configuration for a Mac keyboard.
-- [class VZUSBKeyboardConfiguration](vzusbkeyboardconfiguration.md)
+- [class VZUSBKeyboardConfiguration](./vzusbkeyboardconfiguration.md)
   A device that defines the configuration for a USB keyboard.
 
 

@@ -1,7 +1,8 @@
 # instructions
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional instructions providing context to the model for this sample.
 
@@ -20,15 +21,18 @@ Optional instructions providing context to the model for this sample.
 var instructions: Instructions? { get }
 ```
 
+Available when `ExpectedValue` conforms to `Decodable`, `Encodable`, and `Sendable`.
+
 ## See Also
 
-- [var prompt: Prompt](modelsample/prompt.md)
+### Specifying the query
+- [var prompt: Prompt](./prompt.md)
   The user’s prompt for this sample.
-- [var promptDescription: String](modelsample/promptdescription.md)
+- [var promptDescription: String](./promptdescription.md)
   A text representation of the prompt, synthesized from its segments.
-- [var instructionsDescription: String?](modelsample/instructionsdescription.md)
+- [var instructionsDescription: String?](./instructionsdescription.md)
   A text representation of the instructions, synthesized from their segments.
-- [var input: ModelSampleInput](modelsample/input.md)
+- [var input: ModelSampleInput](./input.md)
   The bundled language model input (prompt, instructions, schema).
 
 

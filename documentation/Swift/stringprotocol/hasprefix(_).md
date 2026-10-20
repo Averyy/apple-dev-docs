@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,12 @@
 ```swift
 func hasPrefix(_ prefix: String) -> Bool
 ```
+
+## Default Implementations
+
+### StringProtocol Implementations
+- [func hasPrefix<Prefix>(Prefix) -> Bool](./hasprefix%28_%29-9c8b6.md)
+  Returns a Boolean value indicating whether the string begins with the specified prefix.
 
 
 ---

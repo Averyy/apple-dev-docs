@@ -1,6 +1,8 @@
 # Visualizing sound as an audio spectrogram
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [VisualizingSoundAsAnAudioSpectrogram.zip](https://docs-assets.developer.apple.com/published/f94b8999a49f/VisualizingSoundAsAnAudioSpectrogram.zip)
 
 Share image data between vDSP and vImage to visualize audio that a device microphone captures.
 
@@ -14,11 +16,11 @@ This sample code project captures audio from a macOS device’s microphone and u
 
 You can use audio spectrograms for signal analysis. For example, a spectrogram can help identify audio issues, such as low- or high-frequency noise, or short-impulse noises like clicks and pops that may not be immediately obvious to the human ear. Spectrograms can also assist in audio classification using neural networks for tasks such as bird song and speech recognition.
 
-The image below shows the audio spectrogram that this sample created from the *Stargate Opening* sound effect in [`GarageBand`](https://developer.apple.comhttps://www.apple.com/ios/garageband/). The horizontal axis represents time, and the vertical axis represents frequency. The sample calculates the color that represents amplitude using a procedurally generated multidimensional lookup table.
+The image below shows the audio spectrogram that this sample created from the *Stargate Opening* sound effect in [GarageBand](https://www.apple.com/ios/garageband/). The horizontal axis represents time, and the vertical axis represents frequency. The sample calculates the color that represents amplitude using a procedurally generated multidimensional lookup table.
 
-![A screenshot of an audio spectrogram showing a series of vertically stacked diagonal lines that rise and fall, representing the tones of the sampled sound effect.](/images/com.apple.accelerate/stargateOpening.jpeg)
+![A screenshot of an audio spectrogram showing a series of vertically stacked diagonal lines that rise and fall, representing the tones of the sampled sound effect.](https://developer.apple.com/tutorials/images/com.apple.accelerate/stargateOpening.jpeg)
 
-The sample creates an audio spectrogram by performing a discrete cosine transform (DCT) on audio samples. The DCT computes the frequency components of an audio signal and represents the audio as a series of amplitudes at the component frequencies. DCTs are related to Fourier transforms, but use real values rather than complex values. You can learn more about Fourier transforms at [`Finding the component frequencies in a composite sine wave`](finding-the-component-frequencies-in-a-composite-sine-wave.md).
+The sample creates an audio spectrogram by performing a discrete cosine transform (DCT) on audio samples. The DCT computes the frequency components of an audio signal and represents the audio as a series of amplitudes at the component frequencies. DCTs are related to Fourier transforms, but use real values rather than complex values. You can learn more about Fourier transforms at [Finding the component frequencies in a composite sine wave](./finding-the-component-frequencies-in-a-composite-sine-wave.md).
 
 The spectrogram scrolls horizontally so that the most recent sample renders on the right side of the device’s screen.
 
@@ -30,7 +32,7 @@ A vImage pixel buffer, `planarImageBuffer`, shares data with `frequencyDomainVal
 
 Before exploring the code, build and run the app to familiarize yourself with the different visual results it generates from different sounds.
 
-##### Define the Spectrogram Size
+##### Define the spectrogram size
 
 The sample defines two constants that specify the size of the spectrogram.
 
@@ -50,7 +52,7 @@ static let bufferCount = 768
 static let hopCount = 512
 ```
 
-##### Process the Audio Data
+##### Process the audio data
 
 The `processData(values:)` function processes the first `sampleCount` samples from  `rawAudioData` by performing the DCT and appending the frequency-domain representation data to the array that creates the vImage buffer and, ultimately, the audio spectrogram image.
 
@@ -68,7 +70,7 @@ var frequencyDomainBuffer = [Float](repeating: 0,
                                     count: sampleCount)
 ```
 
-The sample calls [`convertElements(of:to:)`](vdsp/convertelements(of:to:)-93xn9.md) to convert 16-bit integer audio samples to single-precision floating-point values.
+The sample calls [`convertElements(of:to:)`](./vdsp/convertelements%28of,to%29-93xn9.md) to convert 16-bit integer audio samples to single-precision floating-point values.
 
 ```swift
 vDSP.convertElements(of: values,
@@ -84,7 +86,7 @@ let hanningWindow = vDSP.window(ofType: Float.self,
                                 isHalfWindow: false)
 ```
 
-To learn more about using windows to reduce spectral leakage, see [`Reducing spectral leakage with windowing`](reducing-spectral-leakage-with-windowing.md).
+To learn more about using windows to reduce spectral leakage, see [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md).
 
 The following code multiplies the time-domain data by the Hann window and performs the forward DCT:
 
@@ -97,9 +99,9 @@ forwardDCT.transform(timeDomainBuffer,
                      result: &frequencyDomainBuffer)
 ```
 
-##### Define the Pseudocolor Multidimensional Lookup Tables
+##### Define the pseudocolor multidimensional lookup tables
 
-The following code creates a [`vImage.MultidimensionalLookupTable`](vimage/multidimensionallookuptable.md) that the sample uses to create the pseudocolor rendering. The function returns dark blue for low values, graduates through red, and returns full-brightness green for `1.0`:
+The following code creates a [`vImage.MultidimensionalLookupTable`](./vimage/multidimensionallookuptable.md) that the sample uses to create the pseudocolor rendering. The function returns dark blue for low values, graduates through red, and returns full-brightness green for `1.0`:
 
 ```swift
 static var multidimensionalLookupTable: vImage.MultidimensionalLookupTable = {
@@ -163,11 +165,11 @@ static var multidimensionalLookupTable: vImage.MultidimensionalLookupTable = {
 
 The following image shows the color that the function returns with inputs from `0.0` through `1.0`:
 
-![Image of a horizontal gradient that transitions from dark blue, through red, to green.](/images/com.apple.accelerate/brgColormap.png)
+![Image of a horizontal gradient that transitions from dark blue, through red, to green.](https://developer.apple.com/tutorials/images/com.apple.accelerate/brgColormap.png)
 
-##### Prepare the Vimage Pixel Buffers to Display the Audio Spectrogram
+##### Prepare the vImage pixel buffers to display the audio spectrogram
 
-To display the audio spectrogram, the app creates a temporary planar [`vImage.PixelBuffer`](vimage/pixelbuffer.md) that shares memory with the frequency-domain values.
+To display the audio spectrogram, the app creates a temporary planar [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) that shares memory with the frequency-domain values.
 
 The following code applies the multidimensional lookup table to the grayscale information in the temporary buffer to populate three planar buffers that represent the red, green, and blue channels. Because the vImage functions that generate a Core Graphics image from a pixel buffer require an interleaved buffer, the code interleaves the red, green, and blue buffer into `rgbImageBuffer`:
 
@@ -195,7 +197,7 @@ func makeAudioSpectrogramImage() -> CGImage {
 }
 ```
 
-##### Compute the Mel Spectrum Using Linear Algebra
+##### Compute the mel spectrum using linear algebra
 
 In addition to the linear audio spectrogram, the sample app provides a mode to render audio as a mel spectrogram. The `computeMelSpectrogram(values:)` function rescales the frequency-domain buffer from a linear scale to the mel scale.
 
@@ -212,11 +214,11 @@ The sample builds the filter bank from a series of overlapping triangular window
 
 The following image shows the linear audio spectrogram and the mel spectrogram of the same linearly increasing and decreasing tone. The tone starts at 20 Hz, rises to 22,050 Hz, and drops back to 20 Hz. The image shows that the audio spectrogram represents the objective signal, but the mel spectrogram mirrors human perception, that is, the curve flattens and indicates reduced differentiation between high frequencies.
 
-![A pair of images showing a linear audio spectrogram on the left and a mel audio spectrogram on the right. The shape of the linear spectrogram resembles a triangle. The shape of the mel spectrogram resembles a dome.](/images/com.apple.accelerate/linear_vs_mel.png)
+![A pair of images showing a linear audio spectrogram on the left and a mel audio spectrogram on the right. The shape of the linear spectrogram resembles a triangle. The shape of the mel spectrogram resembles a dome.](https://developer.apple.com/tutorials/images/com.apple.accelerate/linear_vs_mel.png)
 
 In this case, the mel spectrogram consists of 40 filters, so the spectrogram has a lower vertical resolution than the linear spectrogram.
 
-##### Define the Mel Frequencies
+##### Define the mel frequencies
 
 The sample creates an array, `melFilterBankFrequencies`, that contains the indices of `frequencyDomainBuffer` that represent the mel scale frequencies. For example, if the Nyquist frequency is 22,050 Hz and `frequencyDomainBuffer` contains 1024 elements, a value of 512 in `melFilterBankFrequencies` represents 11,025 Hz.
 
@@ -245,15 +247,15 @@ let melFilterBankFrequencies: [Int] = stride(from: minMel, to: maxMel, by: bankW
 
 The following line chart shows 16 generated mel frequencies as squares and the corresponding frequencies in hertz as circles:
 
-![A line chart with a vertical scale measured in hertz and a range of zero to 20,000. The chart contains two lines. A straight line represents 16 mel frequencies, and a curved line below the mel line represents the corresponding frequency in hertz.](/images/com.apple.accelerate/accelerate-mel-hertz_2x.png)
+![A line chart with a vertical scale measured in hertz and a range of zero to 20,000. The chart contains two lines. A straight line represents 16 mel frequencies, and a curved line below the mel line represents the corresponding frequency in hertz.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-mel-hertz_2x.png)
 
-##### Create the Filter Bank
+##### Create the filter bank
 
 The sample creates the filter bank matrix with `filterBankCount` rows and `sampleCount` columns. Each row contains a triangular window that starts at the previous frequency, peaks at the current frequency, and ends at the next frequency. For example, the following graphic illustrates the values for a filter bank that contains 16 values:
 
-![A graph of 16 stacked horizontal lines, each with a small triangle that indicates nonzero entries. The triangle of the top line is narrow and on the left. Each subsequent line has a slightly wider triangle, shifted to the right.](/images/com.apple.accelerate/accelerate-filter-bank_2x.png)
+![A graph of 16 stacked horizontal lines, each with a small triangle that indicates nonzero entries. The triangle of the top line is narrow and on the left. Each subsequent line has a slightly wider triangle, shifted to the right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-filter-bank_2x.png)
 
-The `static MelSpectrogram.populateFilterBank(_:melFilterBankFrequencies:)` function populates the `filterBank` array. The function uses [`vDSP_vgen`](vdsp_vgen.md) to generate the attack and decay phases of each triangle.
+The `static MelSpectrogram.populateFilterBank(_:melFilterBankFrequencies:)` function populates the `filterBank` array. The function uses [`vDSP_vgen`](./vdsp_vgen.md) to generate the attack and decay phases of each triangle.
 
 ```swift
 for i in 0 ..< melFilterBankFrequencies.count {
@@ -288,15 +290,15 @@ for i in 0 ..< melFilterBankFrequencies.count {
 }
 ```
 
-##### Use a Matrix Multiply to Compute the Mel Spectrogram
+##### Use a matrix multiply to compute the mel spectrogram
 
 The sample performs a matrix multiply of each frame of frequency-domain data with the filter bank to produce a frame of mel-scaled values.
 
 The following image shows the matrix multiply. The frame of 1024 frequency-domain values is multiplied by 16 overlapping triangular windows, returning the 16-element mel-scaled values.
 
-![A diagram showing the matrix multiply of the 1024-element frequency-domain array on the left multiplied by the filter bank in the center. The result is the 16-element mel spectrogram on the right.](/images/com.apple.accelerate/accelerate-matrix-multiply_2x.png)
+![A diagram showing the matrix multiply of the 1024-element frequency-domain array on the left multiplied by the filter bank in the center. The result is the 16-element mel spectrogram on the right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-matrix-multiply_2x.png)
 
-The following code uses [`cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) to perform the matrix multiply:
+The following code uses [`cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./cblas_sgemm%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) to perform the matrix multiply:
 
 ```swift
 values.withUnsafeBufferPointer { frequencyDomainValuesPtr in
@@ -318,13 +320,14 @@ On return, the sample adds the result of the matrix multiply in `sgemmResult` to
 
 ## See Also
 
-- [Applying biquadratic filters to a music loop](applying-biquadratic-filters-to-a-music-loop.md)
+### Audio Processing
+- [Applying biquadratic filters to a music loop](./applying-biquadratic-filters-to-a-music-loop.md)
   Change the frequency response of an audio signal using a cascaded biquadratic filter.
-- [Equalizing audio with discrete cosine transforms (DCTs)](equalizing-audio-with-discrete-cosine-transforms-dcts.md)
+- [Equalizing audio with discrete cosine transforms (DCTs)](./equalizing-audio-with-discrete-cosine-transforms-dcts.md)
   Change the frequency response of an audio signal by manipulating frequency-domain data.
-- [Biquadratic IIR filters](biquadratic-iir-filters.md)
+- [Biquadratic IIR filters](./biquadratic-iir-filters.md)
   Apply biquadratic filters to single-channel and multichannel data.
-- [Discrete Cosine transforms](discrete-cosine-transforms.md)
+- [Discrete Cosine transforms](./discrete-cosine-transforms.md)
   Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa.
 
 

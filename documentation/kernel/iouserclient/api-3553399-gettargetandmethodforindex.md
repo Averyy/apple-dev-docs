@@ -1,14 +1,15 @@
 # getTargetAndMethodForIndex
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOExternalMethod * getTargetAndMethodForIndex(OSSharedPtr<IOService> & targetP, UInt32 index);
 ```
 

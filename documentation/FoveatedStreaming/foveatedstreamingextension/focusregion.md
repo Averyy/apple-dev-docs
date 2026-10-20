@@ -1,7 +1,8 @@
 # FoveatedStreamingExtension.FocusRegion
 
 **Framework**: Foveated Streaming  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The approximate region where the person is looking.
 

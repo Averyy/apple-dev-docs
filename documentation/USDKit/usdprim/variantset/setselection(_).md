@@ -1,7 +1,8 @@
 # setSelection(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the variant selection.
 
@@ -21,7 +22,7 @@ func setSelection(_ variantName: String) throws
 
 #### Discussion
 
-> **Note**: An error if the selection cannot be set.
+> **Throws**: An error if the selection cannot be set.
 
 ## Parameters
 

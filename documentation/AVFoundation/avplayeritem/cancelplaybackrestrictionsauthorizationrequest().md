@@ -1,7 +1,8 @@
 # cancelPlaybackRestrictionsAuthorizationRequest()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a pending authorization request and dismisses the passcode entry, if displayed.
 
@@ -14,9 +15,14 @@ Cancels a pending authorization request and dismisses the passcode entry, if dis
 func cancelPlaybackRestrictionsAuthorizationRequest()
 ```
 
+```objc
+- (void) cancelPlaybackRestrictionsAuthorizationRequest;
+```
+
 ## See Also
 
-- [func requestPlaybackRestrictionsAuthorization((Bool, (any Error)?) -> Void)](avplayeritem/requestplaybackrestrictionsauthorization(_:).md)
+### Requesting playback authorization in tvOS
+- [func requestPlaybackRestrictionsAuthorization((Bool, (any Error)?) -> Void)](./requestplaybackrestrictionsauthorization%28_%29.md)
   Determines whether this item is subject to parental restrictions, and, if so, prompts the user to enter the restrictions passcode.
 
 

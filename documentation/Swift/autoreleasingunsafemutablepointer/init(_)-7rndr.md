@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Explicit construction from an UnsafeMutablePointer.
 
@@ -30,7 +31,8 @@ This is inherently unsafe; UnsafeMutablePointer assumes the referenced memory ha
 
 ## See Also
 
-- [init<U>(UnsafeMutablePointer<U>)](autoreleasingunsafemutablepointer/init(_:)-4mrz1.md)
+### Converting Pointers
+- [init<U>(UnsafeMutablePointer<U>)](./init%28_%29-4mrz1.md)
   Explicit construction from an UnsafeMutablePointer.
 
 

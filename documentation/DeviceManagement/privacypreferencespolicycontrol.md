@@ -1,7 +1,8 @@
 # PrivacyPreferencesPolicyControl
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures privacy preferences.
 
@@ -10,7 +11,7 @@ The payload that configures privacy preferences.
 
 ## Declaration
 
-```swift
+```
 object PrivacyPreferencesPolicyControl
 ```
 
@@ -18,7 +19,7 @@ object PrivacyPreferencesPolicyControl
 
 Specify `com.apple.TCC.configuration-profile-policy` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.TCC.configuration-profile-policy` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,7 +86,7 @@ Specify `com.apple.TCC.configuration-profile-policy` as the payload type.
 ## Topics
 
 ### Objects
-- [object PrivacyPreferencesPolicyControl.Services](privacypreferencespolicycontrol/services-data.dictionary.md)
+- [object PrivacyPreferencesPolicyControl.Services](./privacypreferencespolicycontrol/services-data.dictionary.md)
   The privacy policy control services dictionary that controls access on a per app basis.
 
 ## Properties

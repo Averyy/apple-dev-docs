@@ -1,7 +1,8 @@
 # Transcript.HistoryView.ArrayLiteralElement
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of entry an array literal contains when it creates a history view.
 

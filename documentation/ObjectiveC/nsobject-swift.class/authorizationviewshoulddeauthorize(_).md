@@ -1,7 +1,8 @@
 # authorizationViewShouldDeauthorize(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate when a user clicks the open lock icon.
 
@@ -14,13 +15,18 @@ Sent to the delegate when a user clicks the open lock icon.
 func authorizationViewShouldDeauthorize(_ view: SFAuthorizationView!) -> Bool
 ```
 
+```objc
+- (BOOL) authorizationViewShouldDeauthorize:(SFAuthorizationView *) view;
+```
+
 #### Discussion
 
-The delegate can react to this before deauthorization happens and avoid it by returning [`NO`](no.md). This delegate method is not called when you call the [`deauthorize(_:)`](https://developer.apple.com/documentation/securityinterface/sfauthorizationview/deauthorize(_:)) method.
+The delegate can react to this before deauthorization happens and avoid it by returning [`NO`](../no.md). This delegate method is not called when you call the [`deauthorize(_:)`](../../SecurityInterface/sfauthorizationview/deauthorize%28_%29.md) method.
 
 ## See Also
 
-- [func deauthorize(Any!) -> Bool](../securityinterface/sfauthorizationview/deauthorize(_:).md)
+### Related Documentation
+- [func deauthorize(Any!) -> Bool](../../SecurityInterface/sfauthorizationview/deauthorize%28_%29.md)
   Sets the authorization state to unauthorized and locks the lock icon in the view.
 
 

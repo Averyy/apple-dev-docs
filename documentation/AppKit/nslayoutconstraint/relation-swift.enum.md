@@ -1,12 +1,13 @@
 # NSLayoutConstraint.Relation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The relation between the first attribute and the modified second attribute in a constraint.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ The relation between the first attribute and the modified second attribute in a 
 enum Relation
 ```
 
+```c
+enum NSLayoutRelation : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSLayoutConstraint.Relation.lessThanOrEqual](nslayoutconstraint/relation-swift.enum/lessthanorequal.md)
+- [NSLayoutConstraint.Relation.lessThanOrEqual](./relation-swift.enum/lessthanorequal.md)
   The constraint requires the first attribute to be less than or equal to the modified second attribute.
-- [NSLayoutConstraint.Relation.equal](nslayoutconstraint/relation-swift.enum/equal.md)
+- [NSLayoutConstraint.Relation.equal](./relation-swift.enum/equal.md)
   The constraint requires the first attribute to be exactly equal to the modified second attribute.
-- [NSLayoutConstraint.Relation.greaterThanOrEqual](nslayoutconstraint/relation-swift.enum/greaterthanorequal.md)
+- [NSLayoutConstraint.Relation.greaterThanOrEqual](./relation-swift.enum/greaterthanorequal.md)
   The constraint requires the first attribute to be greater than or equal to the modified second attribute.
 ### Initializers
-- [init?(rawValue: Int)](nslayoutconstraint/relation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./relation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSLayoutConstraint.Attribute](nslayoutconstraint/attribute.md)
+### Constants
+- [NSLayoutConstraint.Attribute](./attribute.md)
   The part of the object’s visual representation that should be used to get the value for the constraint.
-- [NSLayoutConstraint.FormatOptions](nslayoutconstraint/formatoptions.md)
+- [NSLayoutConstraint.FormatOptions](./formatoptions.md)
   A bit mask that specifies both a part of an interface element to align and a direction for the alignment between two interface elements.
-- [NSLayoutConstraint.Orientation](nslayoutconstraint/orientation.md)
+- [NSLayoutConstraint.Orientation](./orientation.md)
   The layout constraint orientation, either horizontal or vertical, that the constraint uses to enforce layout between objects.
-- [struct NSEdgeInsets](../foundation/nsedgeinsets.md)
+- [struct NSEdgeInsets](../../Foundation/nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 
 

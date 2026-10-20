@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short, LLM-generated description of what the result represents.
 
@@ -24,13 +25,14 @@ Use this property to determine what information the model requested. For complex
 
 ## See Also
 
-- [let content: SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.property.md)
+### Getting the reply details
+- [let content: SpotlightSearchTool.SearchReply.Content](./content-swift.property.md)
   The result content — determines what to display and how.
-- [let status: SpotlightSearchTool.SearchReply.Status](spotlightsearchtool/searchreply/status-swift.property.md)
+- [let status: SpotlightSearchTool.SearchReply.Status](./status-swift.property.md)
   An indicator of whether the current query is complete or still in progress.
-- [SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Content](./content-swift.enum.md)
   What this set of results represents — determines display strategy.
-- [SpotlightSearchTool.SearchReply.Status](spotlightsearchtool/searchreply/status-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Status](./status-swift.enum.md)
 
 
 ---

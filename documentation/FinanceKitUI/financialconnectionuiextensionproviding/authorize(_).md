@@ -2,6 +2,7 @@
 
 **Framework**: FinanceKitUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

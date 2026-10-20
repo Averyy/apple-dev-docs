@@ -1,7 +1,8 @@
 # OffsetArray
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies offsets of ranges of text. Not typically used by developers.
 
@@ -15,14 +16,20 @@ Specifies offsets of ranges of text. Not typically used by developers.
 struct OffsetArray
 ```
 
+```c
+typedef struct OffsetArray {
+    ...
+} OffsetArray;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](offsetarray/1442543-init.md)
-- [init(fNumOfOffsets: Int16, fOffset: Int32)](offsetarray/1444181-init.md)
+- [init()](./offsetarray/api-1442543-init.md)
+- [init(fNumOfOffsets: Int16, fOffset: Int32)](./offsetarray/api-1444181-init.md)
 ### Instance Properties
-- [var fNumOfOffsets: Int16](offsetarray/1449726-fnumofoffsets.md)
-- [var fOffset: Int32](offsetarray/1447345-foffset.md)
+- [var fNumOfOffsets: Int16](./offsetarray/api-1449726-fnumofoffsets.md)
+- [var fOffset: Int32](./offsetarray/api-1447345-foffset.md)
 
 
 ---

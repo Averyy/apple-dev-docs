@@ -1,11 +1,12 @@
 # ODPacketEncryptionSSL
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,11 +14,16 @@
 var ODPacketEncryptionSSL: Int { get }
 ```
 
+```c
+ODPacketEncryptionSSL
+```
+
 ## See Also
 
-- [var ODPacketEncryptionAllow: Int](odpacketencryptionallow.md)
-- [var ODPacketEncryptionDisabled: Int](odpacketencryptiondisabled.md)
-- [var ODPacketEncryptionRequired: Int](odpacketencryptionrequired.md)
+### Constants
+- [var ODPacketEncryptionAllow: Int](./odpacketencryptionallow.md)
+- [var ODPacketEncryptionDisabled: Int](./odpacketencryptiondisabled.md)
+- [var ODPacketEncryptionRequired: Int](./odpacketencryptionrequired.md)
 
 
 ---

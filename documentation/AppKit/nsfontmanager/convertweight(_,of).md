@@ -1,17 +1,22 @@
 # convertWeight(_:of:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a font object whose weight is greater or lesser than that of the given font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func convertWeight(_ upFlag: Bool, of fontObj: NSFont) -> NSFont
+```
+
+```objc
+- (NSFont *) convertWeight:(BOOL) upFlag ofFont:(NSFont *) fontObj;
 ```
 
 #### Return Value
@@ -43,26 +48,28 @@ The `NSFontManager` implementation of this method refuses to convert a font’s 
 
 ## Parameters
 
-- `upFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), a heavier font is returned; if it’s [`false`](https://developer.apple.com/documentation/swift/false), a lighter font is returned.
+- `upFlag`: If [`true`](../../Swift/true.md), a heavier font is returned; if it’s [`false`](../../Swift/false.md), a lighter font is returned.
 - `fontObj`: The font whose weight is increased or decreased.
 
 ## See Also
 
-- [func convert(NSFont) -> NSFont](nsfontmanager/convert(_:).md)
+### Related Documentation
+- [func convert(NSFont) -> NSFont](./convert%28_%29.md)
   Converts the given font according to the object that initiated a font change, typically the Font panel or Font menu.
-- [func convert(NSFont, toFace: String) -> NSFont?](nsfontmanager/convert(_:toface:).md)
+### Converting Fonts Manually
+- [func convert(NSFont, toFace: String) -> NSFont?](./convert%28_,toface%29.md)
   Returns a font whose traits are as similar as possible to those of the given font except for the typeface, which is changed to the given typeface.
-- [func convert(NSFont, toFamily: String) -> NSFont](nsfontmanager/convert(_:tofamily:).md)
+- [func convert(NSFont, toFamily: String) -> NSFont](./convert%28_,tofamily%29.md)
   Returns a font whose traits are as similar as possible to those of the given font except for the font family, which is changed to the given family.
-- [func convert(NSFont, toHaveTrait: NSFontTraitMask) -> NSFont](nsfontmanager/convert(_:tohavetrait:).md)
+- [func convert(NSFont, toHaveTrait: NSFontTraitMask) -> NSFont](./convert%28_,tohavetrait%29.md)
   Returns a new version of the font object containing a single additional trait.
-- [func convert(NSFont, toNotHaveTrait: NSFontTraitMask) -> NSFont](nsfontmanager/convert(_:tonothavetrait:).md)
+- [func convert(NSFont, toNotHaveTrait: NSFontTraitMask) -> NSFont](./convert%28_,tonothavetrait%29.md)
   Returns a new version of a font object without the specified traits.
-- [func convert(NSFont, toSize: CGFloat) -> NSFont](nsfontmanager/convert(_:tosize:).md)
+- [func convert(NSFont, toSize: CGFloat) -> NSFont](./convert%28_,tosize%29.md)
   Returns a font object whose traits are the same as those of the given font, except for the size, which is changed to the given size.
-- [var currentFontAction: NSFontAction](nsfontmanager/currentfontaction.md)
+- [var currentFontAction: NSFontAction](./currentfontaction.md)
   The current font conversion action.
-- [func convertFontTraits(NSFontTraitMask) -> NSFontTraitMask](nsfontmanager/convertfonttraits(_:).md)
+- [func convertFontTraits(NSFontTraitMask) -> NSFontTraitMask](./convertfonttraits%28_%29.md)
   Converts font traits to a new traits mask value.
 
 

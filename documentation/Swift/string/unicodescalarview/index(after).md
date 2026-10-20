@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next consecutive location after `i`.
 
@@ -22,7 +23,7 @@ func index(after i: String.UnicodeScalarView.Index) -> String.UnicodeScalarView.
 
 #### Discussion
 
-> **Note**: The next location exists.
+> **Precondition**: The next location exists.
 
 
 ---

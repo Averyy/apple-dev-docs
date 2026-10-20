@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance that type-erases `view`.
 
@@ -23,7 +24,8 @@ init<V>(_ view: V) where V : View
 
 ## See Also
 
-- [init<V>(erasing: V)](anyview/init(erasing:).md)
+### Creating a view
+- [init<V>(erasing: V)](./init%28erasing%29.md)
 
 
 ---

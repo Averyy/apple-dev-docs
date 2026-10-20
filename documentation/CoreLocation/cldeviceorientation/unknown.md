@@ -1,7 +1,8 @@
 # CLDeviceOrientation.unknown
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The orientation is currently not known.
 
@@ -20,19 +21,24 @@ The orientation is currently not known.
 case unknown
 ```
 
+```c
+CLDeviceOrientationUnknown
+```
+
 ## See Also
 
-- [CLDeviceOrientation.portrait](cldeviceorientation/portrait.md)
+### Device Orientations
+- [CLDeviceOrientation.portrait](./portrait.md)
   The device is in portrait mode, with the device held upright and the home button at the bottom.
-- [CLDeviceOrientation.portraitUpsideDown](cldeviceorientation/portraitupsidedown.md)
+- [CLDeviceOrientation.portraitUpsideDown](./portraitupsidedown.md)
   The device is in portrait mode but upside down, with the device held upright and the home button at the top.
-- [CLDeviceOrientation.landscapeLeft](cldeviceorientation/landscapeleft.md)
+- [CLDeviceOrientation.landscapeLeft](./landscapeleft.md)
   The device is in landscape mode, with the device held upright and the home button on the right side.
-- [CLDeviceOrientation.landscapeRight](cldeviceorientation/landscaperight.md)
+- [CLDeviceOrientation.landscapeRight](./landscaperight.md)
   The device is in landscape mode, with the device held upright and the home button on the left side.
-- [CLDeviceOrientation.faceUp](cldeviceorientation/faceup.md)
+- [CLDeviceOrientation.faceUp](./faceup.md)
   The device is held parallel to the ground with the screen facing upwards.
-- [CLDeviceOrientation.faceDown](cldeviceorientation/facedown.md)
+- [CLDeviceOrientation.faceDown](./facedown.md)
   The device is held parallel to the ground with the screen facing downwards.
 
 

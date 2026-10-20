@@ -1,7 +1,8 @@
 # fileSystemSubType
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the file system’s subtype or flavor.
 
@@ -12,6 +13,10 @@ A property for the file system’s subtype or flavor.
 
 ```swift
 var fileSystemSubType: Int { get set }
+```
+
+```objc
+@property NSInteger fileSystemSubType;
 ```
 
 #### Discussion

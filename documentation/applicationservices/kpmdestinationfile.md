@@ -1,7 +1,8 @@
 # kPMDestinationFile
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies output to a file.
 

@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -32,7 +33,8 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 ## See Also
 
-- [var hashValue: Int](asyncstream/continuation/termination/hashvalue.md)
+### Hashing
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

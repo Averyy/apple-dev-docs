@@ -1,7 +1,8 @@
 # document
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CDA document.
 
@@ -18,17 +19,22 @@ The CDA document.
 var document: HKCDADocument? { get }
 ```
 
+```objc
+@property (readonly, nullable) HKCDADocument * document;
+```
+
 #### Discussion
 
-If the user is authorized to access the document’s data, this property contains an [`HKCDADocument`](hkcdadocument.md) object representing that data. Otherwise, it is set to `nil`.
+If the user is authorized to access the document’s data, this property contains an [`HKCDADocument`](../hkcdadocument.md) object representing that data. Otherwise, it is set to `nil`.
 
-The user is asked to authorize each CDA document the first time that document is returned by an [`HKDocumentQuery`](hkdocumentquery.md) query. The user can change the access permissions in the Health app.
+The user is asked to authorize each CDA document the first time that document is returned by an [`HKDocumentQuery`](../hkdocumentquery.md) query. The user can change the access permissions in the Health app.
 
-For samples returned by an [`HKSampleQuery`](hksamplequery.md) or an [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), this property is always set to `nil`. To access the document’s data from these samples, create a [`HKDocumentQuery`](hkdocumentquery.md) query for the sample’s UUID.
+For samples returned by an [`HKSampleQuery`](../hksamplequery.md) or an [`HKAnchoredObjectQuery`](../hkanchoredobjectquery.md), this property is always set to `nil`. To access the document’s data from these samples, create a [`HKDocumentQuery`](../hkdocumentquery.md) query for the sample’s UUID.
 
 ## See Also
 
-- [class HKCDADocument](hkcdadocument.md)
+### Accessing the Document
+- [class HKCDADocument](../hkcdadocument.md)
   An object representing a Clinical Document Architecture (CDA) document in HealthKit.
 
 

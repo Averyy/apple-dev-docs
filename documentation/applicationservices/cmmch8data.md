@@ -1,7 +1,8 @@
 # cmMCH8Data
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The eight-channel multichannel (HiFi) data color space.
 

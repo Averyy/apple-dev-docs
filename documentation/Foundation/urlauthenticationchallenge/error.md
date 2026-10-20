@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error object representing the last authentication failure.
 
@@ -20,13 +21,18 @@ The error object representing the last authentication failure.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
 This value is `nil` if the protocol doesn’t use errors to indicate an authentication failure.
 
 ## See Also
 
-- [var failureResponse: URLResponse?](urlauthenticationchallenge/failureresponse.md)
+### Related Documentation
+- [var failureResponse: URLResponse?](./failureresponse.md)
   The URL response object representing the last authentication failure.
 
 

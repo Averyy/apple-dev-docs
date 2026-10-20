@@ -1,7 +1,8 @@
 # upUp
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that replaces a symbol by scaling it up, and scaling a different symbol up.
 
@@ -26,9 +27,10 @@ The initial symbol scales up as it’s removed, and the new symbol scales up as 
 
 ## See Also
 
-- [var downUp: ReplaceSymbolEffect](replacesymboleffect/downup-swift.property.md)
+### Accessing symbol effects
+- [var downUp: ReplaceSymbolEffect](./downup-swift.property.md)
   An effect that replaces a symbol by scaling it down, and scaling a different symbol up.
-- [var offUp: ReplaceSymbolEffect](replacesymboleffect/offup-swift.property.md)
+- [var offUp: ReplaceSymbolEffect](./offup-swift.property.md)
   An effect that replaces a symbol by removing it, and scaling a different symbol up.
 
 

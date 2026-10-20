@@ -1,7 +1,8 @@
 # image(actions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an image from a set of drawing instructions.
 
@@ -18,27 +19,32 @@ Creates an image from a set of drawing instructions.
 func image(actions: (UIGraphicsImageRendererContext) -> Void) -> UIImage
 ```
 
+```objc
+- (UIImage *) imageWithActions:(UIGraphicsImageDrawingActions) actions;
+```
+
 #### Return Value
 
-A [`UIImage`](uiimage.md) object created by the supplied drawing actions.
+A [`UIImage`](../uiimage.md) object created by the supplied drawing actions.
 
 #### Discussion
 
-You provide a set of drawing instructions as the block argument to this method, and the method will return the resultant [`UIImage`](uiimage.md) object.
+You provide a set of drawing instructions as the block argument to this method, and the method will return the resultant [`UIImage`](../uiimage.md) object.
 
 You can call this method repeatedly to create multiple images, each of which has identical dimensions and format.
 
 ## Parameters
 
-- `actions`: A [`UIGraphicsImageRenderer.DrawingActions`](uigraphicsimagerenderer/drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
+- `actions`: A [`UIGraphicsImageRenderer.DrawingActions`](./drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
 
 ## See Also
 
-- [func jpegData(withCompressionQuality: CGFloat, actions: (UIGraphicsImageRendererContext) -> Void) -> Data](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md)
+### Creating images
+- [func jpegData(withCompressionQuality: CGFloat, actions: (UIGraphicsImageRendererContext) -> Void) -> Data](./jpegdata%28withcompressionquality,actions%29.md)
   Creates a JPEG-encoded image from a set of drawing instructions.
-- [func pngData(actions: (UIGraphicsImageRendererContext) -> Void) -> Data](uigraphicsimagerenderer/pngdata(actions:).md)
+- [func pngData(actions: (UIGraphicsImageRendererContext) -> Void) -> Data](./pngdata%28actions%29.md)
   Creates a PNG-encoded image from a set of drawing instructions.
-- [UIGraphicsImageRenderer.DrawingActions](uigraphicsimagerenderer/drawingactions.md)
+- [UIGraphicsImageRenderer.DrawingActions](./drawingactions.md)
   A closure for drawing an image.
 
 

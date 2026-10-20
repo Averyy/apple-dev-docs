@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of key-value pairs that the dictionary can contain without allocating new storage.
 
@@ -20,11 +21,14 @@ The total number of key-value pairs that the dictionary can contain without allo
 var capacity: Int { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 ## See Also
 
-- [var isEmpty: Bool](dictionary/isempty.md)
+### Inspecting a Dictionary
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the dictionary is empty.
-- [var count: Int](dictionary/count.md)
+- [var count: Int](./count.md)
   The number of key-value pairs in the dictionary.
 
 

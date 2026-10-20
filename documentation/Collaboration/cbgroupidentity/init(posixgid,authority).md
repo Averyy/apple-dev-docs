@@ -1,7 +1,8 @@
 # init(posixGID:authority:)
 
 **Framework**: Collaboration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the group identity with the given POSIX GID in the specified identity authority.
 
@@ -12,6 +13,10 @@ Returns the group identity with the given POSIX GID in the specified identity au
 
 ```swift
 init?(posixGID gid: gid_t, authority: CBIdentityAuthority)
+```
+
+```objc
++ (CBGroupIdentity *) groupIdentityWithPosixGID:(gid_t) gid authority:(CBIdentityAuthority *) authority;
 ```
 
 #### Return Value
@@ -25,7 +30,8 @@ The group identity object with the given GID in the specified identity authority
 
 ## See Also
 
-- [Identity Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/IdentityServices_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004490)
+### Related Documentation
+- [Identity Services Programming Guide](https://developer.apple.com/library/archive/documentation/Networking/Conceptual/IdentityServices_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004490)
 
 
 ---

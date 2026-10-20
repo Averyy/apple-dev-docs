@@ -1,7 +1,8 @@
 # HIShapeCreateIntersection(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateIntersection(_ inShape1: HIShape!, _ inShape2: HIShape!) -> Unmanaged<HIShape>!
+```
+
+```c
+HIShapeRef HIShapeCreateIntersection(HIShapeRef inShape1, HIShapeRef inShape2);
 ```
 
 

@@ -1,7 +1,8 @@
 # rpcProcedureUnavailable
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bad procedure for program.
 
@@ -22,7 +23,7 @@ static var rpcProcedureUnavailable: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,13 +33,14 @@ The corresponding C error is `EPROCUNAVAIL`.
 
 ## See Also
 
-- [static var rpcProgramUnavailable: Errno](errno/rpcprogramunavailable.md)
+### RPC Errors
+- [static var rpcProgramUnavailable: Errno](./rpcprogramunavailable.md)
   The remote procedure call (RPC) program isn’t available.
-- [static var rpcProgramVersionMismatch: Errno](errno/rpcprogramversionmismatch.md)
+- [static var rpcProgramVersionMismatch: Errno](./rpcprogramversionmismatch.md)
   The version of the remote procedure call (RPC) program is incorrect.
-- [static var rpcUnsuccessful: Errno](errno/rpcunsuccessful.md)
+- [static var rpcUnsuccessful: Errno](./rpcunsuccessful.md)
   The structure of the remote procedure call (RPC) is bad.
-- [static var rpcVersionMismatch: Errno](errno/rpcversionmismatch.md)
+- [static var rpcVersionMismatch: Errno](./rpcversionmismatch.md)
   The version of the remote procedure call (RPC) is incorrect.
 
 

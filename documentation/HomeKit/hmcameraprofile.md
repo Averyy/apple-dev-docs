@@ -1,7 +1,8 @@
 # HMCameraProfile
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A camera profile that interacts with an accessory’s camera.
 
@@ -19,6 +20,10 @@ A camera profile that interacts with an accessory’s camera.
 class HMCameraProfile
 ```
 
+```objc
+@interface HMCameraProfile : HMAccessoryProfile
+```
+
 #### Overview
 
 Each profile control is optional, because an individual camera vendor may not support all of the features defined by the HomeKit camera specifications.
@@ -26,51 +31,52 @@ Each profile control is optional, because an individual camera vendor may not su
 ## Topics
 
 ### Controlling camera settings
-- [var settingsControl: HMCameraSettingsControl?](hmcameraprofile/settingscontrol.md)
+- [var settingsControl: HMCameraSettingsControl?](./hmcameraprofile/settingscontrol.md)
   Controls the settings on the camera.
-- [class HMCameraSettingsControl](hmcamerasettingscontrol.md)
+- [class HMCameraSettingsControl](./hmcamerasettingscontrol.md)
   An object that represents the ability to control a camera’s settings.
-- [class HMCameraControl](hmcameracontrol.md)
+- [class HMCameraControl](./hmcameracontrol.md)
   An abstract class that represents a camera control.
 ### Playing audio
-- [var microphoneControl: HMCameraAudioControl?](hmcameraprofile/microphonecontrol.md)
+- [var microphoneControl: HMCameraAudioControl?](./hmcameraprofile/microphonecontrol.md)
   Controls the microphone settings on the camera.
-- [var speakerControl: HMCameraAudioControl?](hmcameraprofile/speakercontrol.md)
+- [var speakerControl: HMCameraAudioControl?](./hmcameraprofile/speakercontrol.md)
   Controls the speaker settings on the camera.
-- [class HMCameraAudioControl](hmcameraaudiocontrol.md)
+- [class HMCameraAudioControl](./hmcameraaudiocontrol.md)
   An object that controls a camera’s audio settings.
 ### Streaming
-- [var streamControl: HMCameraStreamControl?](hmcameraprofile/streamcontrol.md)
+- [var streamControl: HMCameraStreamControl?](./hmcameraprofile/streamcontrol.md)
   Controls the camera stream.
-- [class HMCameraStreamControl](hmcamerastreamcontrol.md)
+- [class HMCameraStreamControl](./hmcamerastreamcontrol.md)
   An object that can start and stop the camera stream and contains the view into which the stream is rendered.
 ### Capturing snapshots
-- [var snapshotControl: HMCameraSnapshotControl?](hmcameraprofile/snapshotcontrol.md)
+- [var snapshotControl: HMCameraSnapshotControl?](./hmcameraprofile/snapshotcontrol.md)
   Controls the camera’s snapshot function.
-- [class HMCameraSnapshotControl](hmcamerasnapshotcontrol.md)
+- [class HMCameraSnapshotControl](./hmcamerasnapshotcontrol.md)
   An object that can take an image snapshot from a camera.
 
 ## Relationships
 
 ### Inherits From
-- [HMAccessoryProfile](hmaccessoryprofile.md)
+- [HMAccessoryProfile](./hmaccessoryprofile.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var profiles: [HMAccessoryProfile]](hmaccessory/profiles.md)
+### Managing accessory profiles
+- [var profiles: [HMAccessoryProfile]](./hmaccessory/profiles.md)
   An array of profiles implemented by the accessory.
-- [class HMAccessoryProfile](hmaccessoryprofile.md)
+- [class HMAccessoryProfile](./hmaccessoryprofile.md)
   A profile that certain accessories implement.
-- [class HMNetworkConfigurationProfile](hmnetworkconfigurationprofile.md)
+- [class HMNetworkConfigurationProfile](./hmnetworkconfigurationprofile.md)
   A profile that provides information about network protection for an accessory.
 
 

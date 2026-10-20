@@ -1,7 +1,8 @@
 # accessibilityTraits
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The combination of traits that best characterize the accessibility element.
 
@@ -9,7 +10,7 @@ The combination of traits that best characterize the accessibility element.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The combination of traits that best characterize the accessibility element.
 var accessibilityTraits: UIAccessibilityTraits { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIAccessibilityTraits accessibilityTraits;
+```
+
 #### Discussion
 
-A trait describes a single aspect of an element’s behavior, state, or usage. Several traits are combined in this property (using an OR operation) to give a complete picture of the element to an assistive application. See “Accessibility Traits” in [`UIAccessibility`](uiaccessibility-protocol.md) for a complete list of traits.
+A trait describes a single aspect of an element’s behavior, state, or usage. Several traits are combined in this property (using an OR operation) to give a complete picture of the element to an assistive application. See “Accessibility Traits” in [UIAccessibility](../uiaccessibility-protocol.md) for a complete list of traits.
 
 UIKit provides an appropriate combination of traits for all standard controls and views. When combining traits for a custom accessibility element, be sure to:
 
@@ -29,15 +34,16 @@ UIKit provides an appropriate combination of traits for all standard controls an
 
 ## See Also
 
-- [var accessibilityLabel: String?](uiaccessibilityelement/accessibilitylabel.md)
+### Accessing the attributes of an accessibility element
+- [var accessibilityLabel: String?](./accessibilitylabel.md)
   A string that succinctly identifies the accessibility element.
-- [var accessibilityHint: String?](uiaccessibilityelement/accessibilityhint.md)
+- [var accessibilityHint: String?](./accessibilityhint.md)
   A string that briefly describes the result of performing an action on the accessibility element.
-- [var accessibilityValue: String?](uiaccessibilityelement/accessibilityvalue.md)
+- [var accessibilityValue: String?](./accessibilityvalue.md)
   A string that represents the current value of the accessibility element.
-- [var accessibilityFrame: CGRect](uiaccessibilityelement/accessibilityframe.md)
+- [var accessibilityFrame: CGRect](./accessibilityframe.md)
   The frame of the accessibility element, in screen coordinates.
-- [var accessibilityFrameInContainerSpace: CGRect](uiaccessibilityelement/accessibilityframeincontainerspace.md)
+- [var accessibilityFrameInContainerSpace: CGRect](./accessibilityframeincontainerspace.md)
   The frame of the accessibility element, in the coordinate space of its container view.
 
 

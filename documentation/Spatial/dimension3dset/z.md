@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The z-dimension.
 
@@ -11,7 +12,7 @@ The z-dimension.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static let z: Dimension3DSet
 
 ## See Also
 
-- [static let all: Dimension3DSet](dimension3dset/all.md)
+### Type properties
+- [static let all: Dimension3DSet](./all.md)
   All dimensions.
-- [static let x: Dimension3DSet](dimension3dset/x.md)
+- [static let x: Dimension3DSet](./x.md)
   The x-dimension.
-- [static let y: Dimension3DSet](dimension3dset/y.md)
+- [static let y: Dimension3DSet](./y.md)
   The y-dimension.
 
 

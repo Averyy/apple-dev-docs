@@ -1,7 +1,8 @@
 # MTLIOScratchBuffer
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol your app implements that wraps a Metal buffer instance to serve as scratch memory for an input/output command queue.
 
@@ -19,32 +20,37 @@ A protocol your app implements that wraps a Metal buffer instance to serve as sc
 protocol MTLIOScratchBuffer : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLIOScratchBuffer <NSObject>
+```
+
 #### Overview
 
-Your app can reintegrate an [`MTLIOScratchBuffer`](mtlioscratchbuffer.md) instance’s underlying memory back into a memory pool by overriding your type’s [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) method. The system calls the method when an input/output command queue no longer needs a scratch buffer.
+Your app can reintegrate an [`MTLIOScratchBuffer`](./mtlioscratchbuffer.md) instance’s underlying memory back into a memory pool by overriding your type’s [`dealloc`](../ObjectiveC/nsobject-swift.class/dealloc.md) method. The system calls the method when an input/output command queue no longer needs a scratch buffer.
 
 ## Topics
 
 ### Wrapping a buffer
-- [var buffer: any MTLBuffer](mtlioscratchbuffer/buffer.md)
+- [var buffer: any MTLBuffer](./mtlioscratchbuffer/buffer.md)
   A Metal buffer that serves as scratch memory for an input/output command queue.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLIOCommandQueue](mtliocommandqueue.md)
+### I/O command queues
+- [protocol MTLIOCommandQueue](./mtliocommandqueue.md)
   A command queue that schedules input/output commands for reading files in the file system, and writing to GPU resources and memory.
-- [class MTLIOCommandQueueDescriptor](mtliocommandqueuedescriptor.md)
+- [class MTLIOCommandQueueDescriptor](./mtliocommandqueuedescriptor.md)
   A configuration template you use to create a new input/output command queue.
-- [enum MTLIOPriority](mtliopriority.md)
+- [enum MTLIOPriority](./mtliopriority.md)
   Designates the priority for a new input/output command queue.
-- [enum MTLIOCommandQueueType](mtliocommandqueuetype.md)
+- [enum MTLIOCommandQueueType](./mtliocommandqueuetype.md)
   Designates the queue type for a new input/output command queue.
-- [protocol MTLIOScratchBufferAllocator](mtlioscratchbufferallocator.md)
+- [protocol MTLIOScratchBufferAllocator](./mtlioscratchbufferallocator.md)
   A protocol your app implements to provide scratch memory to an input/output command queue.
 
 

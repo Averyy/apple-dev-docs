@@ -1,17 +1,24 @@
 # compositionPickerView(_:didSelect:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom tasks when the selected composition in the composition picker view changes.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func compositionPickerView(_ pickerView: QCCompositionPickerView!, didSelect composition: QCComposition!)
+```
+
+```objc
+- (void) compositionPickerView:(QCCompositionPickerView *) pickerView didSelectComposition:(QCComposition *) composition;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AudioFileComponentGetPropertyInfo(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,14 +13,19 @@
 func AudioFileComponentGetPropertyInfo(_ inComponent: AudioFileComponent, _ inPropertyID: AudioFileComponentPropertyID, _ outPropertySize: UnsafeMutablePointer<UInt32>?, _ outWritable: UnsafeMutablePointer<UInt32>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileComponentGetPropertyInfo(AudioFileComponent inComponent, AudioFileComponentPropertyID inPropertyID, UInt32 *outPropertySize, UInt32 *outWritable);
+```
+
 ## See Also
 
-- [func AudioFileComponentGetProperty(AudioFileComponent, AudioFileComponentPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilecomponentgetproperty(_:_:_:_:).md)
-- [func AudioFileComponentSetProperty(AudioFileComponent, AudioFileComponentPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](audiofilecomponentsetproperty(_:_:_:_:).md)
-- [typealias AudioFileComponentGetPropertyInfoProc](audiofilecomponentgetpropertyinfoproc.md)
-- [typealias AudioFileComponentGetPropertyProc](audiofilecomponentgetpropertyproc.md)
-- [typealias AudioFileComponentSetPropertyProc](audiofilecomponentsetpropertyproc.md)
-- [Audio File Component Specific Properties](1404186-audio-file-component-specific-pr.md)
+### Accessing Properties
+- [func AudioFileComponentGetProperty(AudioFileComponent, AudioFileComponentPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilecomponentgetproperty%28_,_,_,_%29.md)
+- [func AudioFileComponentSetProperty(AudioFileComponent, AudioFileComponentPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./audiofilecomponentsetproperty%28_,_,_,_%29.md)
+- [typealias AudioFileComponentGetPropertyInfoProc](./audiofilecomponentgetpropertyinfoproc.md)
+- [typealias AudioFileComponentGetPropertyProc](./audiofilecomponentgetpropertyproc.md)
+- [typealias AudioFileComponentSetPropertyProc](./audiofilecomponentsetpropertyproc.md)
+- [Audio File Component Specific Properties](./api-1404186-audio-file-component-specific-pr.md)
 
 
 ---

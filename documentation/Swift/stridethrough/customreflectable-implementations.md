@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](stridethrough/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
 
 

@@ -1,24 +1,26 @@
 # getMetaClass
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual const OSMetaClass * getMetaClass(void);
 ```
 
 ## See Also
 
-- [- getAlignment](iodmacommand/1547755-getalignment.md)
-- [- getAlignmentInternalSegments](iodmacommand/1547737-getalignmentinternalsegments.md)
-- [- getAlignmentLength](iodmacommand/1547731-getalignmentlength.md)
-- [- getNumAddressBits](iodmacommand/1547735-getnumaddressbits.md)
-- [- setSpecification](iodmacommand/1547759-setspecification.md)
+### Getting Configuration Details
+- [- getAlignment](./api-1547755-getalignment.md)
+- [- getAlignmentInternalSegments](./api-1547737-getalignmentinternalsegments.md)
+- [- getAlignmentLength](./api-1547731-getalignmentlength.md)
+- [- getNumAddressBits](./api-1547735-getnumaddressbits.md)
+- [- setSpecification](./api-1547759-setspecification.md)
 
 
 ---

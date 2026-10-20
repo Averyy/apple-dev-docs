@@ -1,7 +1,8 @@
 # panel(_:displayNameFor:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 `NSSavePanel`: Optional — Sent when the content type popup is displayed and the save panel needs the display name for a type. If `nil` is returned, the save panel will display type’s `localizedDescription`. `NSOpenPanel`: Not sent.
 
@@ -13,6 +14,10 @@
 ```swift
 @MainActor
 optional func panel(_ sender: Any, displayNameFor type: UTType) -> String?
+```
+
+```objc
+- (NSString *) panel:(id) sender displayNameForType:(UTType *) type;
 ```
 
 

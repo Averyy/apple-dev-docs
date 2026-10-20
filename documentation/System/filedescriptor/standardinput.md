@@ -1,7 +1,8 @@
 # standardInput
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard input file descriptor, with a numeric value of 0.
 

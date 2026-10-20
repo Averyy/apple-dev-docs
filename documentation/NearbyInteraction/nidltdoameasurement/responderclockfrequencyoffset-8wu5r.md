@@ -1,7 +1,8 @@
 # responderClockFrequencyOffset
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clock frequency offset of the responder anchor relative to the initiator anchor.
 
@@ -23,9 +24,10 @@ The value is dimensionless because it expresses a ratio rather than an absolute 
 
 ## See Also
 
-- [var measurementType: NIDLTDOAMeasurementType](nidltdoameasurement/measurementtype.md)
+### Evaluating the message
+- [var measurementType: NIDLTDOAMeasurementType](./measurementtype.md)
   The type of anchor message that the measurement derives from.
-- [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
+- [var carrierFrequencyOffset: Double](./carrierfrequencyoffset.md)
   The drift, as a ratio, across the frequencies of the receiver and the anchor.
 
 

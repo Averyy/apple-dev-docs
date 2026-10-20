@@ -1,7 +1,8 @@
 # IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds the first USB 2.0 extension capability descriptor in a BOS descriptor.
 
@@ -10,7 +11,7 @@ Finds the first USB 2.0 extension capability descriptor in a BOS descriptor.
 
 ## Declaration
 
-```swift
+```c
 const IOUSBDeviceCapabilityUSB2Extension *IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
@@ -28,19 +29,20 @@ This method uses `getNextCapabilityDescriptorWithType` to fetch the first `USB20
 
 ## See Also
 
-- [IOUSBGetNextCapabilityDescriptor](iousbgetnextcapabilitydescriptor.md)
+### BOS Descriptors
+- [IOUSBGetNextCapabilityDescriptor](./iousbgetnextcapabilitydescriptor.md)
   Gets the next device capability descriptor in a BOS descriptor.
-- [IOUSBGetNextCapabilityDescriptorWithType](iousbgetnextcapabilitydescriptorwithtype.md)
+- [IOUSBGetNextCapabilityDescriptorWithType](./iousbgetnextcapabilitydescriptorwithtype.md)
   Finds the next descriptor matching a given type within a BOS descriptor.
-- [IOUSBGetSuperSpeedDeviceCapabilityDescriptor](iousbgetsuperspeeddevicecapabilitydescriptor.md)
+- [IOUSBGetSuperSpeedDeviceCapabilityDescriptor](./iousbgetsuperspeeddevicecapabilitydescriptor.md)
   Finds the first SuperSpeed device capability descriptor in a BOS descriptor.
-- [IOUSBGetSuperSpeedPlusDeviceCapabilityDescriptor](iousbgetsuperspeedplusdevicecapabilitydescriptor.md)
+- [IOUSBGetSuperSpeedPlusDeviceCapabilityDescriptor](./iousbgetsuperspeedplusdevicecapabilitydescriptor.md)
   Finds the first SuperSpeed Plus device capability descriptor in a BOS descriptor.
-- [IOUSBGetContainerIDDescriptor](iousbgetcontaineriddescriptor.md)
+- [IOUSBGetContainerIDDescriptor](./iousbgetcontaineriddescriptor.md)
   Finds the first Container ID capability descriptor in a BOS descriptor.
-- [IOUSBGetPlatformCapabilityDescriptor](iousbgetplatformcapabilitydescriptor.md)
+- [IOUSBGetPlatformCapabilityDescriptor](./iousbgetplatformcapabilitydescriptor.md)
   Finds the first platform capability descriptor in a BOS descriptor.
-- [IOUSBGetBillboardDescriptor](iousbgetbillboarddescriptor.md)
+- [IOUSBGetBillboardDescriptor](./iousbgetbillboarddescriptor.md)
   Finds the first billboard capability descriptor in a BOS descriptor.
 
 

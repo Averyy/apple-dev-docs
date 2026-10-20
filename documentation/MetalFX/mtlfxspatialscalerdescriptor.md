@@ -1,7 +1,8 @@
 # MTLFXSpatialScalerDescriptor
 
 **Framework**: MetalFX  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of properties that configure a spatial scaling effect, and a factory method that creates the effect.
 
@@ -19,55 +20,60 @@ A set of properties that configure a spatial scaling effect, and a factory metho
 class MTLFXSpatialScalerDescriptor
 ```
 
+```objc
+@interface MTLFXSpatialScalerDescriptor : NSObject
+```
+
 ## Topics
 
 ### Checking a GPU device’s scaling support
-- [class func supportsDevice(any MTLDevice) -> Bool](mtlfxspatialscalerdescriptor/supportsdevice(_:).md)
+- [class func supportsDevice(any MTLDevice) -> Bool](./mtlfxspatialscalerdescriptor/supportsdevice%28_%29.md)
   Returns a Boolean value that indicates whether the spatial scaler works with a GPU.
 ### Configuring a spatial scaler’s input
-- [var inputWidth: Int](mtlfxspatialscalerdescriptor/inputwidth.md)
+- [var inputWidth: Int](./mtlfxspatialscalerdescriptor/inputwidth.md)
   The width of the input color texture for the spatial scaler you create with this descriptor.
-- [var inputHeight: Int](mtlfxspatialscalerdescriptor/inputheight.md)
+- [var inputHeight: Int](./mtlfxspatialscalerdescriptor/inputheight.md)
   The height of the input color texture for the spatial scaler you create with this descriptor.
-- [var colorTextureFormat: MTLPixelFormat](mtlfxspatialscalerdescriptor/colortextureformat.md)
+- [var colorTextureFormat: MTLPixelFormat](./mtlfxspatialscalerdescriptor/colortextureformat.md)
   The pixel format of the input color texture for the spatial scaler you create with this descriptor.
-- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscalerdescriptor/colorprocessingmode.md)
+- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](./mtlfxspatialscalerdescriptor/colorprocessingmode.md)
   The color space of the input color texture for the spatial scaler you create with this descriptor.
 ### Configuring a spatial scaler’s output
-- [var outputWidth: Int](mtlfxspatialscalerdescriptor/outputwidth.md)
+- [var outputWidth: Int](./mtlfxspatialscalerdescriptor/outputwidth.md)
   The width of the output color texture for the spatial scaler you create with this descriptor.
-- [var outputHeight: Int](mtlfxspatialscalerdescriptor/outputheight.md)
+- [var outputHeight: Int](./mtlfxspatialscalerdescriptor/outputheight.md)
   The height of the output color texture for the spatial scaler you create with this descriptor.
-- [var outputTextureFormat: MTLPixelFormat](mtlfxspatialscalerdescriptor/outputtextureformat.md)
+- [var outputTextureFormat: MTLPixelFormat](./mtlfxspatialscalerdescriptor/outputtextureformat.md)
   The pixel format of the output color texture for the spatial scaler you create with this descriptor.
 ### Creating spatial scaler instances
-- [func makeSpatialScaler(device: any MTLDevice) -> (any MTLFXSpatialScaler)?](mtlfxspatialscalerdescriptor/makespatialscaler(device:).md)
+- [func makeSpatialScaler(device: any MTLDevice) -> (any MTLFXSpatialScaler)?](./mtlfxspatialscalerdescriptor/makespatialscaler%28device%29.md)
   Creates a spatial scaler instance from this descriptor’s current property values.
 ### Instance Methods
-- [func makeSpatialScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXSpatialScaler)?](mtlfxspatialscalerdescriptor/makespatialscaler(device:compiler:).md)
+- [func makeSpatialScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXSpatialScaler)?](./mtlfxspatialscalerdescriptor/makespatialscaler%28device,compiler%29.md)
   Creates a spatial scaler instance for a Metal device.
 ### Type Methods
-- [class func supportsMetal4FX(any MTLDevice) -> Bool](mtlfxspatialscalerdescriptor/supportsmetal4fx(_:).md)
+- [class func supportsMetal4FX(any MTLDevice) -> Bool](./mtlfxspatialscalerdescriptor/supportsmetal4fx%28_%29.md)
   Queries whether a Metal device supports spatial scaling compatible with Metal 4.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLFXSpatialScaler](mtlfxspatialscaler.md)
+### Spatial scaling
+- [protocol MTLFXSpatialScaler](./mtlfxspatialscaler.md)
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
-- [enum MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscalercolorprocessingmode.md)
+- [enum MTLFXSpatialScalerColorProcessingMode](./mtlfxspatialscalercolorprocessingmode.md)
   The color space modes for the input and output textures you use with a spatial scaling effect instance.
 
 

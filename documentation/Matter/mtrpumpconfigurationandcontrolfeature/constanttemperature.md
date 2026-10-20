@@ -1,7 +1,8 @@
 # constantTemperature
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var constantTemperature: MTRPumpConfigurationAndControlFeature { get }
+```
+
+```c
+MTRPumpConfigurationAndControlFeatureConstantTemperature
 ```
 
 

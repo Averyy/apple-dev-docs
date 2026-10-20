@@ -1,7 +1,8 @@
 # displayDidEndReconfiguration(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when the reconfiguration operation ends.
 
@@ -14,6 +15,10 @@ The method the framework calls when the reconfiguration operation ends.
 optional func displayDidEndReconfiguration(_ display: VZGraphicsDisplay)
 ```
 
+```objc
+- (void) displayDidEndReconfiguration:(VZGraphicsDisplay *) display;
+```
+
 #### Discussion
 
 Frame updates have arrived at the most recently requested display size and configuration.
@@ -22,11 +27,12 @@ The framework invokes this method on the VM’s queue.
 
 ## Parameters
 
-- `display`: The [`VZGraphicsDisplay`](vzgraphicsdisplay.md) whose state is changing.
+- `display`: The [`VZGraphicsDisplay`](../vzgraphicsdisplay.md) whose state is changing.
 
 ## See Also
 
-- [func displayDidBeginReconfiguration(VZGraphicsDisplay)](vzgraphicsdisplayobserver/displaydidbeginreconfiguration(_:).md)
+### Reacting to changes in display configuration
+- [func displayDidBeginReconfiguration(VZGraphicsDisplay)](./displaydidbeginreconfiguration%28_%29.md)
   The method the framework calls when the reconfiguration operation has begun.
 
 

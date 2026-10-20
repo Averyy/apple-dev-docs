@@ -1,7 +1,8 @@
 # makeDeformation(pipeline:descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a deformation bound to a compiled pipeline.
 
@@ -21,7 +22,7 @@ final func makeDeformation(pipeline: LowLevelDeformation.Pipeline, descriptor: L
 
 The pipeline must originate from this context.
 
-> **Note**: If the pipeline belongs to a different context, or if the descriptor is invalid.
+> **Throws**: If the pipeline belongs to a different context, or if the descriptor is invalid.
 
 ## Parameters
 

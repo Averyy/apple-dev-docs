@@ -1,7 +1,8 @@
 # LabeledToolbarItemGroupContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the view of a toolbar item group with a specified label.
 
@@ -23,12 +24,12 @@ struct LabeledToolbarItemGroupContent<Content, Label> where Content : View, Labe
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you build a [`ToolbarItemGroup`](toolbaritemgroup.md).
+You don’t create this type directly. SwiftUI creates it when you build a [`ToolbarItemGroup`](./toolbaritemgroup.md).
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

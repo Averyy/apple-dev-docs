@@ -1,7 +1,8 @@
 # formatDescription
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format description of the samples in the sample buffer.
 
@@ -19,6 +20,8 @@ The format description of the samples in the sample buffer.
 ```swift
 var formatDescription: CMFormatDescription { get set }
 ```
+
+Available when `Content` conforms to `CMSampleBuffer.ContentWithFormatDescription`.
 
 
 ---

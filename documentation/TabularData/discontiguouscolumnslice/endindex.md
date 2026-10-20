@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the final element in the column slice.
 
@@ -22,11 +23,12 @@ var endIndex: Int { get }
 
 ## See Also
 
-- [var startIndex: Int](discontiguouscolumnslice/startindex.md)
+### Retrieving an Index
+- [var startIndex: Int](./startindex.md)
   The index of the initial element in the column slice.
-- [func index(before: Int) -> Int](discontiguouscolumnslice/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the index immediately before an element index.
-- [func index(after: Int) -> Int](discontiguouscolumnslice/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the index immediately after an element index.
 
 

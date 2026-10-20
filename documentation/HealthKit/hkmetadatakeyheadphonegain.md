@@ -1,7 +1,8 @@
 # HKMetadataKeyHeadphoneGain
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.4+
@@ -17,11 +18,16 @@
 let HKMetadataKeyHeadphoneGain: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyHeadphoneGain;
+```
+
 ## See Also
 
-- [let HKMetadataKeyAudioExposureLevel: String](hkmetadatakeyaudioexposurelevel.md)
+### Audio Event Keys
+- [let HKMetadataKeyAudioExposureLevel: String](./hkmetadatakeyaudioexposurelevel.md)
   The audio level associated with an audio event.
-- [let HKMetadataKeyAudioExposureDuration: String](hkmetadatakeyaudioexposureduration.md)
+- [let HKMetadataKeyAudioExposureDuration: String](./hkmetadatakeyaudioexposureduration.md)
   The audio exposure event’s duration.
 
 

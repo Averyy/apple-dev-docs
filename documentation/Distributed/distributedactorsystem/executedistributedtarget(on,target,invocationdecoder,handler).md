@@ -1,7 +1,8 @@
 # executeDistributedTarget(on:target:invocationDecoder:handler:)
 
 **Framework**: Distributed  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepare and execute a call to the distributed function identified by the passed arguments, on the passed `actor`, and collect its results using the `ResultHandler`.
 
@@ -11,7 +12,7 @@ Prepare and execute a call to the distributed function identified by the passed 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,11 +31,13 @@ This method encapsulates multiple steps that are invoked in executing a distribu
 
 The reason for this API using a `ResultHandler` rather than returning values directly, is that thanks to this approach it can avoid any existential boxing, and can serve the most latency sensitive-use-cases.
 
-> **Note**: If the target location, invocation argument decoding, or some other mismatch between them happens. In general, this method is allowed to throw in any situation that might otherwise result in an illegal or unexpected invocation being performed. ```swift
-    Throws ``ExecuteDistributedTargetMissingAccessorError`` if the `target`
-    does not resolve to a valid distributed function accessor, i.e. the
-    call identifier is incorrect, corrupted, or simply not present in this process.
-```
+> **Throws**: If the target location, invocation argument decoding, or some other mismatch between them happens. In general, this method is allowed to throw in any situation that might otherwise result in an illegal or unexpected invocation being performed.
+>
+> ```swift
+>     Throws ``ExecuteDistributedTargetMissingAccessorError`` if the `target`
+>     does not resolve to a valid distributed function accessor, i.e. the
+>     call identifier is incorrect, corrupted, or simply not present in this process.
+> ```
 
 ## Parameters
 

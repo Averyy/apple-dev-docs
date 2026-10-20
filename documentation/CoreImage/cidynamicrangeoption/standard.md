@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use Standard dynamic range.
 
@@ -19,15 +20,20 @@ Use Standard dynamic range.
 static let standard: CIDynamicRangeOption
 ```
 
+```c
+extern CIDynamicRangeOption const kCIDynamicRangeStandard;
+```
+
 #### Discussion
 
 Images with `contentHeadroom` metadata will be tone mapped to a maximum pixel value of 1.0.
 
 ## See Also
 
-- [static let constrainedHigh: CIDynamicRangeOption](cidynamicrangeoption/constrainedhigh.md)
+### Enumeration Cases
+- [static let constrainedHigh: CIDynamicRangeOption](./constrainedhigh.md)
   Use extended dynamic range, but brightness is modulated to optimize for co-existence with other composited content.
-- [static let high: CIDynamicRangeOption](cidynamicrangeoption/high.md)
+- [static let high: CIDynamicRangeOption](./high.md)
   Use High dynamic range.
 
 

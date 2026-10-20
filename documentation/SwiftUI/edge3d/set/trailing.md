@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - visionOS 1.0+
@@ -14,15 +15,16 @@ static let trailing: Edge3D.Set
 
 ## See Also
 
-- [static let all: Edge3D.Set](edge3d/set/all.md)
-- [static let top: Edge3D.Set](edge3d/set/top.md)
-- [static let bottom: Edge3D.Set](edge3d/set/bottom.md)
-- [static let leading: Edge3D.Set](edge3d/set/leading.md)
-- [static let front: Edge3D.Set](edge3d/set/front.md)
-- [static let back: Edge3D.Set](edge3d/set/back.md)
-- [static let horizontal: Edge3D.Set](edge3d/set/horizontal.md)
-- [static let vertical: Edge3D.Set](edge3d/set/vertical.md)
-- [static let depth: Edge3D.Set](edge3d/set/depth.md)
+### Getting edge sets
+- [static let all: Edge3D.Set](./all.md)
+- [static let top: Edge3D.Set](./top.md)
+- [static let bottom: Edge3D.Set](./bottom.md)
+- [static let leading: Edge3D.Set](./leading.md)
+- [static let front: Edge3D.Set](./front.md)
+- [static let back: Edge3D.Set](./back.md)
+- [static let horizontal: Edge3D.Set](./horizontal.md)
+- [static let vertical: Edge3D.Set](./vertical.md)
+- [static let depth: Edge3D.Set](./depth.md)
 
 
 ---

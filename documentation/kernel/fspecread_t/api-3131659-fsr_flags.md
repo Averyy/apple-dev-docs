@@ -1,14 +1,15 @@
 # fsr_flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 unsigned int fsr_flags;
 ```
 

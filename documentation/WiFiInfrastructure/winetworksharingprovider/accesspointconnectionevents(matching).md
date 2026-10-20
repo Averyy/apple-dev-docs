@@ -1,7 +1,8 @@
 # accessPointConnectionEvents(matching:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an async sequence of access point events containing the currently connected access point(s) and future updates.
 
@@ -18,7 +19,7 @@ func accessPointConnectionEvents(matching predicate: Predicate<WINetworkSharingP
 
 #### Return Value
 
-An AsyncSequence that delivers [`WINetworkSharingProvider.AccessPointConnectionEvent`](winetworksharingprovider/accesspointconnectionevent.md) instances whenever your app extension needs to update its access point information.
+An AsyncSequence that delivers [`WINetworkSharingProvider.AccessPointConnectionEvent`](./accesspointconnectionevent.md) instances whenever your app extension needs to update its access point information.
 
 #### Discussion
 
@@ -30,9 +31,10 @@ Updates will be sent when the host joins or roams to a new Access Point, or when
 
 ## See Also
 
-- [WINetworkSharingProvider.AccessPointConnection](winetworksharingprovider/accesspointconnection.md)
+### Getting information about access point connections
+- [WINetworkSharingProvider.AccessPointConnection](./accesspointconnection.md)
   A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
-- [WINetworkSharingProvider.AccessPointConnectionEvent](winetworksharingprovider/accesspointconnectionevent.md)
+- [WINetworkSharingProvider.AccessPointConnectionEvent](./accesspointconnectionevent.md)
   An event that indicates an update to the available shared access points.
 
 

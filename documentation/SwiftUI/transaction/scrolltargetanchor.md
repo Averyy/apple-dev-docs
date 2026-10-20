@@ -1,7 +1,8 @@
 # scrollTargetAnchor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred alignment of the view within a scroll view’s visible region when scrolling to a view.
 
@@ -22,7 +23,7 @@ var scrollTargetAnchor: UnitPoint? { get set }
 
 #### Discussion
 
-Use this API in conjunction with a `ScrollViewProxy/scrollTo(_:anchor)` or when updating the binding provided to a [`scrollPosition(id:anchor:)`](view/scrollposition(id:anchor:).md).
+Use this API in conjunction with a `ScrollViewProxy/scrollTo(_:anchor)` or when updating the binding provided to a [`scrollPosition(id:anchor:)`](../view/scrollposition%28id,anchor%29.md).
 
 ```swift
 @Binding var position: Item.ID?
@@ -49,15 +50,16 @@ var body: some View {
 }
 ```
 
-When used with the [`scrollPosition(id:anchor:)`](view/scrollposition(id:anchor:).md) modifier, this value will be preferred over the anchor specified in the modifier for the current transaction.
+When used with the [`scrollPosition(id:anchor:)`](../view/scrollposition%28id,anchor%29.md) modifier, this value will be preferred over the anchor specified in the modifier for the current transaction.
 
 ## See Also
 
-- [var isContinuous: Bool](transaction/iscontinuous.md)
+### Getting information about a transaction
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value that indicates whether the transaction originated from an action that produces a sequence of values.
-- [var tracksVelocity: Bool](transaction/tracksvelocity.md)
+- [var tracksVelocity: Bool](./tracksvelocity.md)
   Whether this transaction will track the velocity of any animatable properties that change.
-- [subscript<K>(K.Type) -> K.Value](transaction/subscript(_:).md)
+- [subscript<K>(K.Type) -> K.Value](./subscript%28_%29.md)
   Accesses the transaction value associated with a custom key.
 
 

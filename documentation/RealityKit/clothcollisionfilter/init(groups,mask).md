@@ -1,7 +1,8 @@
 # init(groups:mask:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collision filter with the given groups and mask.
 

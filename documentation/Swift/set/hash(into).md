@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -20,17 +21,20 @@ Hashes the essential components of this value by feeding them into the given has
 func hash(into hasher: inout Hasher)
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components of this instance.
 
 ## See Also
 
-- [var description: String](set/description.md)
+### Describing a Set
+- [var description: String](./description.md)
   A string that represents the contents of the set.
-- [var debugDescription: String](set/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A string that represents the contents of the set, suitable for debugging.
-- [var customMirror: Mirror](set/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the set.
 
 

@@ -1,7 +1,8 @@
 # BodyTrackingComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component for tracking people in an AR session.
 
@@ -18,43 +19,44 @@ struct BodyTrackingComponent
 
 #### Overview
 
-Body tracking requires a compatible rigged model. For more information on creating a compatible model, see [`Rigging a Model for Motion Capture`](https://developer.apple.com/documentation/arkit/rigging-a-model-for-motion-capture).
+Body tracking requires a compatible rigged model. For more information on creating a compatible model, see [Rigging a Model for Motion Capture](../ARKit/rigging-a-model-for-motion-capture.md).
 
-For a sample app that uses body tracking, see [`Capturing Body Motion in 3D`](https://developer.apple.com/documentation/arkit/capturing-body-motion-in-3d)
+For a sample app that uses body tracking, see [Capturing Body Motion in 3D](../ARKit/capturing-body-motion-in-3d.md)
 
 ## Topics
 
 ### Creating a body tracking component
-- [init()](bodytrackingcomponent/init.md)
+- [init()](./bodytrackingcomponent/init%28%29.md)
   Creates a body-tracking component.
-- [init(BodyTrackingComponent.Target)](bodytrackingcomponent/init(_:).md)
+- [init(BodyTrackingComponent.Target)](./bodytrackingcomponent/init%28_%29.md)
   Creates a body-tracking component for the given target.
 ### Pausing body tracking
-- [var isPaused: Bool](bodytrackingcomponent/ispaused.md)
+- [var isPaused: Bool](./bodytrackingcomponent/ispaused.md)
   A Boolean that you can set to temporarily stop applying body tracking to the model and freeze the model in its current pose.
 ### Selecting a body to track
-- [var target: BodyTrackingComponent.Target](bodytrackingcomponent/target-swift.property.md)
+- [var target: BodyTrackingComponent.Target](./bodytrackingcomponent/target-swift.property.md)
   The body-tracking setting.
-- [BodyTrackingComponent.Target](bodytrackingcomponent/target-swift.enum.md)
+- [BodyTrackingComponent.Target](./bodytrackingcomponent/target-swift.enum.md)
   Body-tracking settings for selecting a person to track.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Creating an App for Face-Painting in AR](creating-an-app-for-face-painting-in-ar.md)
+### Body and face tracking
+- [Creating an App for Face-Painting in AR](./creating-an-app-for-face-painting-in-ar.md)
   Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
-- [Occluding virtual content with people](../arkit/occluding-virtual-content-with-people.md)
+- [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [class BodyTrackedEntity](bodytrackedentity.md)
+- [class BodyTrackedEntity](./bodytrackedentity.md)
   An entity used to animate a virtual character in an AR scene by tracking a real person.
-- [protocol HasBodyTracking](hasbodytracking.md)
+- [protocol HasBodyTracking](./hasbodytracking.md)
   An interface that enables the animation of a virtual character by tracking a real person in AR.
 
 

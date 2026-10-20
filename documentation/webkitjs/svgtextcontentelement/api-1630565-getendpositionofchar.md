@@ -1,7 +1,8 @@
 # getEndPositionOfChar
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 3.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 SVGPoint getEndPositionOfChar(
     optional unsigned long offset
 );

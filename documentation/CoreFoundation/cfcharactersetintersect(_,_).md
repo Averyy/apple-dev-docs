@@ -1,23 +1,28 @@
 # CFCharacterSetIntersect(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Forms an intersection of two character sets.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCharacterSetIntersect(_ theSet: CFMutableCharacterSet!, _ theOtherSet: CFCharacterSet!)
+```
+
+```c
+extern void CFCharacterSetIntersect(CFMutableCharacterSetRef theSet, CFCharacterSetRef theOtherSet);
 ```
 
 ## Parameters
@@ -27,9 +32,10 @@ func CFCharacterSetIntersect(_ theSet: CFMutableCharacterSet!, _ theOtherSet: CF
 
 ## See Also
 
-- [func CFCharacterSetInvert(CFMutableCharacterSet!)](cfcharactersetinvert(_:).md)
+### Logical Operations
+- [func CFCharacterSetInvert(CFMutableCharacterSet!)](./cfcharactersetinvert%28_%29.md)
   Inverts the content of a given character set.
-- [func CFCharacterSetUnion(CFMutableCharacterSet!, CFCharacterSet!)](cfcharactersetunion(_:_:).md)
+- [func CFCharacterSetUnion(CFMutableCharacterSet!, CFCharacterSet!)](./cfcharactersetunion%28_,_%29.md)
   Forms the union of two character sets.
 
 

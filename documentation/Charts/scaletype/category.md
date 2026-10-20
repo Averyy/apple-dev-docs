@@ -1,7 +1,8 @@
 # category
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scale that has discrete domain values as inputs.
 

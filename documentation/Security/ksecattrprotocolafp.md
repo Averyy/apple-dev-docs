@@ -1,7 +1,8 @@
 # kSecAttrProtocolAFP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 AFP over TCP.
 
@@ -18,6 +19,10 @@ AFP over TCP.
 
 ```swift
 let kSecAttrProtocolAFP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolAFP;
 ```
 
 

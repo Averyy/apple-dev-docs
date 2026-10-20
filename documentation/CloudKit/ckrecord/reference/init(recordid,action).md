@@ -1,7 +1,8 @@
 # init(recordID:action:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference object that points to the record with the specified ID.
 
@@ -10,7 +11,7 @@ Creates a reference object that points to the record with the specified ID.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Creates a reference object that points to the record with the specified ID.
 
 ```swift
 init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)
+```
+
+```objc
+- (instancetype) initWithRecordID:(CKRecordID *) recordID action:(CKReferenceAction) action;
 ```
 
 #### Return Value
@@ -33,13 +38,14 @@ When you create a reference object for use in a search predicate, the predicate 
 ## Parameters
 
 - `recordID`: The ID of the target record. This method throws an exception if you specify `nil` for this parameter.
-- `action`: The ownership option use between the target record and any records that incorporate this reference object. If you specify the [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md) option, the record that the `recordID` parameter references becomes the owner of (or acts as the parent of) any objects that use this reference object. For a list of possible values, see [`CKRecord.ReferenceAction`](ckrecord/referenceaction.md).
+- `action`: The ownership option use between the target record and any records that incorporate this reference object. If you specify the [`CKRecord.ReferenceAction.deleteSelf`](../referenceaction/deleteself.md) option, the record that the `recordID` parameter references becomes the owner of (or acts as the parent of) any objects that use this reference object. For a list of possible values, see [`CKRecord.ReferenceAction`](../referenceaction.md).
 
 ## See Also
 
-- [convenience init(record: CKRecord, action: CKRecord.ReferenceAction)](ckrecord/reference/init(record:action:).md)
+### Creating a Reference
+- [convenience init(record: CKRecord, action: CKRecord.ReferenceAction)](./init%28record,action%29.md)
   Creates a reference object that points to the specified record object.
-- [CKRecord.Reference.Action](ckrecord/reference/action-swift.typealias.md)
+- [CKRecord.Reference.Action](./action-swift.typealias.md)
   A type that represents additional actions that occur when deleting references.
 
 

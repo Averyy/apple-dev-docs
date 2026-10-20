@@ -1,9 +1,10 @@
 # stateEntryFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-An unsigned 16-bit integer specifying the format of the data in the `stateEntryData` field’s array. This should be 0 if the `stateEntryCount` field is set to 0. Currently available values are `kUCKeyStateEntryTerminalFormat` and `kUCKeyStateEntryRangeFormat`; see [`Key State Entry Formats`](carbon_core/unicode_utilities/1390376-key_state_entry_formats.md) for descriptions of these values.
+An unsigned 16-bit integer specifying the format of the data in the `stateEntryData` field’s array. This should be 0 if the `stateEntryCount` field is set to 0. Currently available values are `kUCKeyStateEntryTerminalFormat` and `kUCKeyStateEntryRangeFormat`; see [Key State Entry Formats](../carbon_core/unicode_utilities/api-1390376-key_state_entry_formats.md) for descriptions of these values.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the format of the data in the `stateEntryD
 
 ```swift
 var stateEntryFormat: UInt16
+```
+
+```c
+UInt16 stateEntryFormat;
 ```
 
 

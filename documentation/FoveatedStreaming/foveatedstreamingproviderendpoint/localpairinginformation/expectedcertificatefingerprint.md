@@ -1,7 +1,8 @@
 # expectedCertificateFingerprint
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SHA-256 fingerprint of the server’s TLS certificate, as attested by the session management protocol during a previous successful pairing.
 

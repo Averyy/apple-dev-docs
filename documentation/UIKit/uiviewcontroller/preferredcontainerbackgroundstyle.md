@@ -1,7 +1,8 @@
 # preferredContainerBackgroundStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 1.0+
@@ -12,11 +13,16 @@
 var preferredContainerBackgroundStyle: UIContainerBackgroundStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIContainerBackgroundStyle preferredContainerBackgroundStyle;
+```
+
 ## See Also
 
-- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](uiviewcontroller/childviewcontrollerforpreferredcontainerbackgroundstyle.md)
-- [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
-- [enum UIContainerBackgroundStyle](uicontainerbackgroundstyle.md)
+### Adjusting the container background style
+- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](./childviewcontrollerforpreferredcontainerbackgroundstyle.md)
+- [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](./setneedsupdateofpreferredcontainerbackgroundstyle%28%29.md)
+- [enum UIContainerBackgroundStyle](../uicontainerbackgroundstyle.md)
 
 
 ---

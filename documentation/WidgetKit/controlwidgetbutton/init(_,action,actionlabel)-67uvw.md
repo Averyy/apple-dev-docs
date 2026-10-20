@@ -1,7 +1,8 @@
 # init(_:action:actionLabel:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button template for a control.
 
@@ -18,6 +19,8 @@ Creates a button template for a control.
 @MainActor
 @preconcurrency init(_ titleKey: LocalizedStringKey, action: Action, @ViewBuilder actionLabel: @escaping (Bool) -> ActionLabel) where Action : AppIntent
 ```
+
+Available when `Label` is `Text` and `ActionLabel` conforms to `View`.
 
 #### Discussion
 
@@ -45,15 +48,16 @@ The example above produces a control button that appears in Control Center with 
 
 ## See Also
 
-- [init(action: Action, label: () -> Label)](controlwidgetbutton/init(action:label:)-77p8j.md)
+### Initializers
+- [init(action: Action, label: () -> Label)](./init%28action,label%29-77p8j.md)
   Creates a button template for a control.
-- [init(action: Action, label: () -> Label)](controlwidgetbutton/init(action:label:)-8oxxp.md)
+- [init(action: Action, label: () -> Label)](./init%28action,label%29-8oxxp.md)
   Creates a button template for a control that launches an app.
-- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(action:label:actionlabel:).md)
+- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](./init%28action,label,actionlabel%29.md)
   Creates a button template for a control.
-- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(action:label:actionlabel:).md)
+- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](./init%28action,label,actionlabel%29.md)
   Creates a button template for a control.
-- [init(some StringProtocol, action: Action, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(_:action:actionlabel:)-4sgji.md)
+- [init(some StringProtocol, action: Action, actionLabel: (Bool) -> ActionLabel)](./init%28_,action,actionlabel%29-4sgji.md)
   Creates a button template for a control.
 
 

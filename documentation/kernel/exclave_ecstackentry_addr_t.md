@@ -1,14 +1,15 @@
 # exclave_ecstackentry_addr_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t exclave_ecstackentry_addr_t;
 ```
 

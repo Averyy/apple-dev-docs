@@ -1,7 +1,8 @@
 # convolution2D(_:weights:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 2D (forward) convolution operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 2D (forward) convolution operation and returns the result tensor.
 
 ```swift
 func convolution2D(_ source: MPSGraphTensor, weights: MPSGraphTensor, descriptor: MPSGraphConvolution2DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) convolution2DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphConvolution2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

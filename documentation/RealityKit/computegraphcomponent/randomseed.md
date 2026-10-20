@@ -1,7 +1,8 @@
 # randomSeed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional fixed random seed for the simulation.
 

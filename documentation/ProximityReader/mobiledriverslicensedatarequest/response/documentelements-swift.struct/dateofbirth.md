@@ -1,7 +1,8 @@
 # dateOfBirth
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of birth of the mobile driver’s license holder.
 

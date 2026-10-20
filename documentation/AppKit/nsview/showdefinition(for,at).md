@@ -1,7 +1,8 @@
 # showDefinition(for:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows a window displaying the definition of the attributed string at the specified point.
 
@@ -12,6 +13,10 @@ Shows a window displaying the definition of the attributed string at the specifi
 
 ```swift
 func showDefinition(for attrString: NSAttributedString?, at textBaselineOrigin: NSPoint)
+```
+
+```objc
+- (void) showDefinitionForAttributedString:(NSAttributedString *) attrString atPoint:(NSPoint) textBaselineOrigin;
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ This method can be used for implementing the same functionality as the `NSTextVi
 
 ## See Also
 
-- [func showDefinition(for: NSAttributedString?, range: NSRange, options: [NSView.DefinitionOptionKey : Any]?, baselineOriginProvider: ((NSRange) -> NSPoint)?)](nsview/showdefinition(for:range:options:baselineoriginprovider:).md)
+### Displaying Definition Windows
+- [func showDefinition(for: NSAttributedString?, range: NSRange, options: [NSView.DefinitionOptionKey : Any]?, baselineOriginProvider: ((NSRange) -> NSPoint)?)](./showdefinition%28for,range,options,baselineoriginprovider%29.md)
   Shows a window displaying the definition of the specified range of the attributed string.
-- [NSView.DefinitionOptionKey](nsview/definitionoptionkey.md)
+- [NSView.DefinitionOptionKey](./definitionoptionkey.md)
   Keys to include in your definition.
-- [NSView.DefinitionPresentationType](nsview/definitionpresentationtype.md)
+- [NSView.DefinitionPresentationType](./definitionpresentationtype.md)
   Presentation options for the window.
 
 

@@ -1,7 +1,8 @@
 # isValidSignature(_:for:context:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Verifies a MLDSA65 signature, in a specific context.
 

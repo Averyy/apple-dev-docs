@@ -7,12 +7,12 @@ Start up the driver using the given provider.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool start(
  IOService *provider );
 ```
 
-#### Return_value
+#### Return Value
 
 True on success, or false otherwise.
 
@@ -26,11 +26,12 @@ IOHIDInterface will allocate resources. Before returning true to indicate succes
 
 ## See Also
 
-- [free](iohidinterface/1812725-free.md)
+### Miscellaneous
+- [free](./api-1812725-free.md)
   Free the IOHIDInterface object.
-- [init](iohidinterface/1812739-init.md)
+- [init](./api-1812739-init.md)
   Initialize an IOHIDInterface object.
-- [matchPropertyTable](iohidinterface/1812756-matchpropertytable.md)
+- [matchPropertyTable](./api-1812756-matchpropertytable.md)
   Called by the provider during a match
 
 

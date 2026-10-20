@@ -1,7 +1,8 @@
 # init(conversationUUID:isMuted:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action to mute or unmute a conversation.
 

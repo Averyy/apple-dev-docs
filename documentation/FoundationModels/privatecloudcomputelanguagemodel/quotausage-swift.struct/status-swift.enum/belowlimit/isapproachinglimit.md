@@ -1,7 +1,8 @@
 # isApproachingLimit
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether usage is nearing the usage limit.
 

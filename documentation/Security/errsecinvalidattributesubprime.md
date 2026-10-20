@@ -1,7 +1,8 @@
 # errSecInvalidAttributeSubprime
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A subprime attribute is not valid.
 
@@ -18,6 +19,10 @@ A subprime attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeSubprime: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeSubprime
 ```
 
 

@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates the classifier on the provided labeled data.
 
@@ -14,9 +15,15 @@ Evaluates the classifier on the provided labeled data.
 func evaluation(on labeledData: DataFrame) -> MLClassifierMetrics
 ```
 
+**Other overloads**:
+
+```swift
+func evaluation(on labeledData: MLDataTable) -> MLClassifierMetrics
+```
+
 #### Return Value
 
-Metrics that describe the classification errors ([`classificationError`](mlclassifiermetrics/classificationerror.md)), the precision and recall percentages ([`precisionRecall`](mlclassifiermetrics/precisionrecall.md)), and a table that describes how labels were misapplied ([`confusion`](mlclassifiermetrics/confusion.md)) on the provided data.
+Metrics that describe the classification errors ([`classificationError`](../mlclassifiermetrics/classificationerror.md)), the precision and recall percentages ([`precisionRecall`](../mlclassifiermetrics/precisionrecall.md)), and a table that describes how labels were misapplied ([`confusion`](../mlclassifiermetrics/confusion.md)) on the provided data.
 
 #### Discussion
 
@@ -28,9 +35,10 @@ Evaluation should be done on a testing data set that the model has not seen as p
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlclassifier/trainingmetrics.md)
+### Evaluating a classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mlclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 
 

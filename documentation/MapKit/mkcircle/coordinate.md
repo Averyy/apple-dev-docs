@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center point of the circular area, specified as a latitude and longitude.
 
@@ -20,11 +21,16 @@ The center point of the circular area, specified as a latitude and longitude.
 var coordinate: CLLocationCoordinate2D { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+```
+
 ## See Also
 
-- [var radius: CLLocationDistance](mkcircle/radius.md)
+### Accessing the overlay’s attributes
+- [var radius: CLLocationDistance](./radius.md)
   The radius of the circular area, in meters.
-- [var boundingMapRect: MKMapRect](mkcircle/boundingmaprect.md)
+- [var boundingMapRect: MKMapRect](./boundingmaprect.md)
   The bounding rectangle of the circular area.
 
 

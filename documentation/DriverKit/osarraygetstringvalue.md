@@ -1,29 +1,31 @@
 # OSArrayGetStringValue
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const char *OSArrayGetStringValue(OSArrayPtr obj, size_t index);
 ```
 
 ## See Also
 
-- [OSArrayGetValue](osarraygetvalue.md)
-- [OSArrayGetUInt64Value](osarraygetuint64value.md)
-- [OSArraySetValue](osarraysetvalue.md)
-- [OSArraySetStringValue](osarraysetstringvalue.md)
-- [OSArraySetUInt64Value](osarraysetuint64value.md)
-- [Array Indices](3180989-array_indices.md)
-- [OSArrayPtr](osarrayptr.md)
+### Getting and Setting Values
+- [OSArrayGetValue](./osarraygetvalue.md)
+- [OSArrayGetUInt64Value](./osarraygetuint64value.md)
+- [OSArraySetValue](./osarraysetvalue.md)
+- [OSArraySetStringValue](./osarraysetstringvalue.md)
+- [OSArraySetUInt64Value](./osarraysetuint64value.md)
+- [Array Indices](./api-3180989-array_indices.md)
+- [OSArrayPtr](./osarrayptr.md)
 
 
 ---

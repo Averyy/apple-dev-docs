@@ -1,7 +1,8 @@
 # AVAudioMixInputParametersTrackID
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Special value for the trackID property of AVAudioMixInputParameters.
 
@@ -20,33 +21,38 @@ Special value for the trackID property of AVAudioMixInputParameters.
 enum AVAudioMixInputParametersTrackID
 ```
 
+```c
+enum AVAudioMixInputParametersTrackID : CMPersistentTrackID;
+```
+
 ## Topics
 
 ### Creating a track identifier
-- [init?(rawValue: CMPersistentTrackID)](avaudiomixinputparameterstrackid/init(rawvalue:).md)
+- [init?(rawValue: CMPersistentTrackID)](./avaudiomixinputparameterstrackid/init%28rawvalue%29.md)
 ### Track identifiers
-- [AVAudioMixInputParametersTrackID.mixID](avaudiomixinputparameterstrackid/mixid.md)
+- [AVAudioMixInputParametersTrackID.mixID](./avaudiomixinputparameterstrackid/mixid.md)
   Indicates that the specified input parameters should be applied to the mix of all audio tracks rather than to a single specific audio track. This is particularly useful for setting up volume ramps or an audio tap for streaming playback.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioMix](avaudiomix.md)
+### Mixing
+- [class AVAudioMix](./avaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [class AVAudioMixInputParameters](avaudiomixinputparameters.md)
+- [class AVAudioMixInputParameters](./avaudiomixinputparameters.md)
   An object that represents the parameters that you apply when adding an audio track to a mix.
-- [class AVMutableAudioMix](avmutableaudiomix.md)
+- [class AVMutableAudioMix](./avmutableaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [class AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)
+- [class AVMutableAudioMixInputParameters](./avmutableaudiomixinputparameters.md)
   The parameters you use when adding an audio track to a mix.
 
 

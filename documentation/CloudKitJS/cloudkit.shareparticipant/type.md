@@ -1,7 +1,8 @@
 # type
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of participant.
 
@@ -10,7 +11,7 @@ Type of participant.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ShareParticipantType type;
 ```
 

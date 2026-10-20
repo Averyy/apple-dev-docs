@@ -1,7 +1,8 @@
 # errSecAlreadyLoggedIn
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user is already logged in.
 
@@ -18,6 +19,10 @@ The user is already logged in.
 
 ```swift
 var errSecAlreadyLoggedIn: OSStatus { get }
+```
+
+```c
+errSecAlreadyLoggedIn
 ```
 
 

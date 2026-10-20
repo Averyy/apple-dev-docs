@@ -1,7 +1,8 @@
 # AxisTick.Length
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the length of a tick.
 
@@ -23,22 +24,22 @@ struct Length
 ## Topics
 
 ### Type Properties
-- [static var automatic: AxisTick.Length](axistick/length/automatic.md)
+- [static var automatic: AxisTick.Length](./length/automatic.md)
   Automatically determines the tick length.
-- [static var label: AxisTick.Length](axistick/length/label.md)
+- [static var label: AxisTick.Length](./length/label.md)
   Describes a tick that extends to its associated label.
-- [static var longestLabel: AxisTick.Length](axistick/length/longestlabel.md)
+- [static var longestLabel: AxisTick.Length](./length/longestlabel.md)
   Describes a tick that extends to the longest label on the axis.
 ### Type Methods
-- [static func label(extendPastBy: CGFloat) -> AxisTick.Length](axistick/length/label(extendpastby:).md)
+- [static func label(extendPastBy: CGFloat) -> AxisTick.Length](./length/label%28extendpastby%29.md)
   Describes a tick that extends to its associated label, with the given additional length.
-- [static func longestLabel(extendPastBy: CGFloat) -> AxisTick.Length](axistick/length/longestlabel(extendpastby:).md)
+- [static func longestLabel(extendPastBy: CGFloat) -> AxisTick.Length](./length/longestlabel%28extendpastby%29.md)
   Describes a tick that extends to the longest label on the axis, with the given additional length.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
 
 
 ---

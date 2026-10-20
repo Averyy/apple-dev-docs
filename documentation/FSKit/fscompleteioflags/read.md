@@ -1,7 +1,8 @@
 # read
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that describes a read operation.
 
@@ -14,11 +15,16 @@ A flag that describes a read operation.
 static var read: FSCompleteIOFlags { get }
 ```
 
+```c
+FSCompleteIOFlagsRead
+```
+
 ## See Also
 
-- [static var write: FSCompleteIOFlags](fscompleteioflags/write.md)
+### Declaring I/O completion behaviors
+- [static var write: FSCompleteIOFlags](./write.md)
   A flag that describes a write operation.
-- [static var async: FSCompleteIOFlags](fscompleteioflags/async.md)
+- [static var async: FSCompleteIOFlags](./async.md)
   A flag that requests that the file system module flush metadata I/O asynchronously.
 
 

@@ -1,7 +1,8 @@
 # renewalBillingPlanType
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,10 +21,11 @@ let renewalBillingPlanType: SubscriptionInfo.BillingPlanType
 
 ## See Also
 
-- [let autoRenewPreference: String](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference.md)
-- [let renewalDate: Date](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewaldate.md)
-- [let renewalPrice: Decimal](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalprice.md)
-- [let willAutoRenew: Bool](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/willautorenew.md)
+### Instance Properties - generated
+- [let autoRenewPreference: String](./autorenewpreference.md)
+- [let renewalDate: Date](./renewaldate.md)
+- [let renewalPrice: Decimal](./renewalprice.md)
+- [let willAutoRenew: Bool](./willautorenew.md)
 
 
 ---

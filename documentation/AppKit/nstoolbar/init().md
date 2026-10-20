@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new toolbar with an empty identifier string.
 
@@ -17,13 +18,18 @@ Creates a new toolbar with an empty identifier string.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 The initialized toolbar object.
 
 ## See Also
 
-- [init(identifier: NSToolbar.Identifier)](nstoolbar/init(identifier:).md)
+### Creating an toolbar object
+- [init(identifier: NSToolbar.Identifier)](./init%28identifier%29.md)
   Creates a newly allocated toolbar with the specified identifier.
 
 

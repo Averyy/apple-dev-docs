@@ -1,7 +1,8 @@
 # zoomScale
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current scale factor applied to the scroll view’s content.
 

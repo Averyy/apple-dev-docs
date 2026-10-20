@@ -1,7 +1,8 @@
 # TKTokenSmartCardPINAuthOperation
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A Smart Card PIN authentication operation.
 
@@ -20,44 +21,49 @@ A Smart Card PIN authentication operation.
 class TKTokenSmartCardPINAuthOperation
 ```
 
+```objc
+@interface TKTokenSmartCardPINAuthOperation : TKTokenAuthOperation
+```
+
 ## Topics
 
 ### Configuring the Operation
-- [var pinFormat: TKSmartCardPINFormat](tktokensmartcardpinauthoperation/pinformat.md)
+- [var pinFormat: TKSmartCardPINFormat](./tktokensmartcardpinauthoperation/pinformat.md)
   The PIN format.
-- [var apduTemplate: Data?](tktokensmartcardpinauthoperation/apdutemplate.md)
+- [var apduTemplate: Data?](./tktokensmartcardpinauthoperation/apdutemplate.md)
   The template into which the PIN is filled in. `nil` by default.
-- [var pinByteOffset: Int](tktokensmartcardpinauthoperation/pinbyteoffset.md)
+- [var pinByteOffset: Int](./tktokensmartcardpinauthoperation/pinbyteoffset.md)
   The offset, in bytes, within the APDU template to mark the location for filling in the PIN.
-- [var smartCard: TKSmartCard?](tktokensmartcardpinauthoperation/smartcard.md)
+- [var smartCard: TKSmartCard?](./tktokensmartcardpinauthoperation/smartcard.md)
   A Smart Card to which the formatted APDU is sent in order to authenticate.
 ### Accessing the PIN
-- [var pin: String?](tktokensmartcardpinauthoperation/pin.md)
+- [var pin: String?](./tktokensmartcardpinauthoperation/pin.md)
   The PIN value resulting from performing the operation.
 
 ## Relationships
 
 ### Inherits From
-- [TKTokenAuthOperation](tktokenauthoperation.md)
+- [TKTokenAuthOperation](./tktokenauthoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func tokenSession(TKTokenSession, beginAuthFor: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation](tktokensessiondelegate/tokensession(_:beginauthfor:constraint:).md)
+### Authenticating
+- [func tokenSession(TKTokenSession, beginAuthFor: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation](./tktokensessiondelegate/tokensession%28_,beginauthfor,constraint%29.md)
   Tells the delegate that authentication has begun for the specified operation and constraint.
-- [typealias TKTokenOperationConstraint](tktokenoperationconstraint.md)
+- [typealias TKTokenOperationConstraint](./tktokenoperationconstraint.md)
   A token’s authentication constraint for a specific operation.
-- [class TKTokenAuthOperation](tktokenauthoperation.md)
+- [class TKTokenAuthOperation](./tktokenauthoperation.md)
   An authentication operation for a cryptographic token.
-- [class TKTokenPasswordAuthOperation](tktokenpasswordauthoperation.md)
+- [class TKTokenPasswordAuthOperation](./tktokenpasswordauthoperation.md)
   A password-based authentication operation.
 
 

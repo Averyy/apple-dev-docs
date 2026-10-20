@@ -1,7 +1,8 @@
 # task
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL session task that performs the data transfer.
 

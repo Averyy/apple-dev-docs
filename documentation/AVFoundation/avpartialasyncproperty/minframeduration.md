@@ -1,7 +1,8 @@
 # minFrameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The minimum duration of the track’s frames.
 
@@ -20,19 +21,22 @@ The minimum duration of the track’s frames.
 static var minFrameDuration: AVAsyncProperty<Root, CMTime> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 A track’s minimum frame duration is the reciprocal of its maximum frame rate. For example, a video track with a maximum frame rate of 30 frames per second has a minimum frame duration of 1/30, or 0.033 seconds.
 
-The value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) if the track can’t calculate its minimum frame duration, or if it’s unknown.
+The value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md) if the track can’t calculate its minimum frame duration, or if it’s unknown.
 
 ## See Also
 
-- [static var nominalFrameRate: AVAsyncProperty<Root, Float>](avpartialasyncproperty/nominalframerate.md)
+### Loading frame-based characteristics
+- [static var nominalFrameRate: AVAsyncProperty<Root, Float>](./nominalframerate.md)
   The frame rate of the track, in frames per second.
-- [static var requiresFrameReordering: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/requiresframereordering.md)
+- [static var requiresFrameReordering: AVAsyncProperty<Root, Bool>](./requiresframereordering.md)
   A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
 
 

@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture atlas from a set of image files.
 
@@ -20,9 +21,13 @@ Creates a texture atlas from a set of image files.
 convenience init(dictionary properties: [String : Any])
 ```
 
+```objc
++ (instancetype) atlasWithDictionary:(NSDictionary<NSString *,id> *) properties;
+```
+
 ## Mentions
 
-- [About Texture Atlases](about-texture-atlases.md)
+- [About Texture Atlases](../about-texture-atlases.md)
 
 #### Return Value
 
@@ -34,10 +39,10 @@ Normally, Xcode creates texture atlases at compile time from the image files inc
 
 The keys in the dictionary represent the names of the individual textures. The associated object for each key can be:
 
-- An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that contains a file system path to a file that contains the texture
-- An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object that contains a file system path to a file that contains the texture
-- A [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object
-- An [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) object
+- An [`NSString`](../../Foundation/nsstring.md) object that contains a file system path to a file that contains the texture
+- An [`NSURL`](../../Foundation/nsurl.md) object that contains a file system path to a file that contains the texture
+- A [`UIImage`](../../UIKit/uiimage.md) object
+- An [`NSImage`](../../AppKit/nsimage.md) object
 
 ## Parameters
 
@@ -45,7 +50,8 @@ The keys in the dictionary represent the names of the individual textures. The a
 
 ## See Also
 
-- [convenience init(named: String)](sktextureatlas/init(named:).md)
+### Creating a Texture Atlas Programmatically
+- [convenience init(named: String)](./init%28named%29.md)
   Creates a texture atlas from data stored in the app bundle.
 
 

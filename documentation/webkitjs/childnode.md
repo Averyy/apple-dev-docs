@@ -1,7 +1,8 @@
 # ChildNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface ChildNode
 ```
 
 ## Topics
 
 ### Instance Methods
-- [after](childnode/1777966-after.md)
-- [before](childnode/1777912-before.md)
-- [remove](childnode/1630714-remove.md)
-- [replaceWith](childnode/1777944-replacewith.md)
+- [after](./childnode/api-1777966-after.md)
+- [before](./childnode/api-1777912-before.md)
+- [remove](./childnode/api-1630714-remove.md)
+- [replaceWith](./childnode/api-1777944-replacewith.md)
 
 
 ---

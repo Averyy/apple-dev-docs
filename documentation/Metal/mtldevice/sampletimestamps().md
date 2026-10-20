@@ -1,7 +1,8 @@
 # sampleTimestamps()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Captures and returns a CPU timestamp and a GPU timestamp from the same moment in time.
 
@@ -11,7 +12,7 @@ Captures and returns a CPU timestamp and a GPU timestamp from the same moment in
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,8 +22,8 @@ func sampleTimestamps() -> (cpu: MTLTimestamp, gpu: MTLTimestamp)
 
 ## Mentions
 
-- [Converting GPU timestamps into CPU time](converting-gpu-timestamps-into-cpu-time.md)
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting GPU timestamps into CPU time](../converting-gpu-timestamps-into-cpu-time.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Return Value
 
@@ -33,7 +34,7 @@ A tuple that contains the CPU and GPU timestamps.
 
 #### Discussion
 
-For an example of how and when to use corresponding timestamps from the CPU and GPU, see [`Converting GPU timestamps into CPU time`](converting-gpu-timestamps-into-cpu-time.md).
+For an example of how and when to use corresponding timestamps from the CPU and GPU, see [Converting GPU timestamps into CPU time](../converting-gpu-timestamps-into-cpu-time.md).
 
 
 ---

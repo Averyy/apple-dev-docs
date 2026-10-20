@@ -1,6 +1,7 @@
 # Running tests serially or in parallel
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: Article
 
 Control whether tests run serially or in parallel.
 
@@ -8,9 +9,9 @@ Control whether tests run serially or in parallel.
 
 By default, tests run in parallel with respect to each other. Parallelization is accomplished by the testing library using task groups, and tests generally all run in the same process. The number of tests that run concurrently is controlled by the Swift runtime.
 
-#### Disabling Parallelization
+#### Disabling parallelization
 
-Parallelization can be disabled on a per-function or per-suite basis using the [`serialized`](trait/serialized.md) trait:
+Parallelization can be disabled on a per-function or per-suite basis using the [`serialized`](./trait/serialized.md) trait:
 
 ```swift
 @Test(.serialized, arguments: Food.allCases) func prepare(food: Food) {
@@ -39,7 +40,8 @@ This trait doesn’t affect the execution of a test relative to its peers or to 
 
 ## See Also
 
-- [static var serialized: ParallelizationTrait](trait/serialized.md)
+### Running tests serially or in parallel
+- [static var serialized: ParallelizationTrait](./trait/serialized.md)
   A trait that serializes the test to which it is applied.
 
 

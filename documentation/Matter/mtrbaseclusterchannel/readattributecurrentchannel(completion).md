@@ -1,7 +1,8 @@
 # readAttributeCurrentChannel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentChannel(completion: @escaping @Sendable (MTRChannelClusterChannelInfoStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentChannel() async throws -> MTRChannelClusterChannelInfoStruct
+```
+
+```objc
+- (void) readAttributeCurrentChannelWithCompletion:(void (^)(MTRChannelClusterChannelInfoStruct *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # viewDidDisappear(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view controller that its view was removed from a view hierarchy.
 
@@ -9,7 +10,7 @@ Notifies the view controller that its view was removed from a view hierarchy.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Notifies the view controller that its view was removed from a view hierarchy.
 func viewDidDisappear(_ animated: Bool)
 ```
 
+```objc
+- (void) viewDidDisappear:(BOOL) animated;
+```
+
 ## Mentions
 
-- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+- [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
 
 #### Discussion
 
@@ -28,25 +33,26 @@ You can override this method to perform additional tasks associated with dismiss
 
 ## Parameters
 
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the disappearance of the view was animated.
+- `animated`: If [`true`](../../Swift/true.md), the disappearance of the view was animated.
 
 ## See Also
 
-- [func viewWillAppear(Bool)](uiviewcontroller/viewwillappear(_:).md)
+### Responding to view-related events
+- [func viewWillAppear(Bool)](./viewwillappear%28_%29.md)
   Notifies the view controller that its view is about to be added to a view hierarchy.
-- [func viewIsAppearing(Bool)](uiviewcontroller/viewisappearing(_:).md)
+- [func viewIsAppearing(Bool)](./viewisappearing%28_%29.md)
   Notifies the view controller that the system is adding the view controller’s view to a view hierarchy.
-- [func viewDidAppear(Bool)](uiviewcontroller/viewdidappear(_:).md)
+- [func viewDidAppear(Bool)](./viewdidappear%28_%29.md)
   Notifies the view controller that its view was added to a view hierarchy.
-- [func viewWillDisappear(Bool)](uiviewcontroller/viewwilldisappear(_:).md)
+- [func viewWillDisappear(Bool)](./viewwilldisappear%28_%29.md)
   Notifies the view controller that its view is about to be removed from a view hierarchy.
-- [var isBeingDismissed: Bool](uiviewcontroller/isbeingdismissed.md)
+- [var isBeingDismissed: Bool](./isbeingdismissed.md)
   A Boolean value indicating whether the view controller is in the process of being dismissed by one of its ancestors.
-- [var isBeingPresented: Bool](uiviewcontroller/isbeingpresented.md)
+- [var isBeingPresented: Bool](./isbeingpresented.md)
   A Boolean value indicating whether the view controller in the process of being presented by one of its ancestors.
-- [var isMovingFromParent: Bool](uiviewcontroller/ismovingfromparent.md)
+- [var isMovingFromParent: Bool](./ismovingfromparent.md)
   A Boolean value indicating whether the view controller is moving from a parent view controller.
-- [var isMovingToParent: Bool](uiviewcontroller/ismovingtoparent.md)
+- [var isMovingToParent: Bool](./ismovingtoparent.md)
   A Boolean value indicating whether the view controller is moving to a parent view controller.
 
 

@@ -1,7 +1,8 @@
 # slotName
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Smart card slot name of the NFC slot that was created together with this session.
 
@@ -15,6 +16,10 @@ Smart card slot name of the NFC slot that was created together with this session
 
 ```swift
 var slotName: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * slotName;
 ```
 
 

@@ -1,7 +1,8 @@
 # primaryOffset
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the destination clip rectangle origin relative to the primary source buffer.
 
@@ -19,21 +20,26 @@ The position of the destination clip rectangle origin relative to the primary so
 var primaryOffset: MPSOffset { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSOffset primaryOffset;
+```
+
 #### Discussion
 
-The offset is defined to be the position of the `origin` value of [`clipRect`](mpsbinaryimagekernel/cliprect.md), in source coordinates.
+The offset is defined to be the position of the `origin` value of [`clipRect`](./cliprect.md), in source coordinates.
 
 The default value is `{0, 0, 0}`, indicating that the top left corners of the clip rectangle and the primary source image align.
 
 ## See Also
 
-- [var secondaryOffset: MPSOffset](mpsbinaryimagekernel/secondaryoffset.md)
+### Properties
+- [var secondaryOffset: MPSOffset](./secondaryoffset.md)
   The position of the destination clip rectangle origin relative to the secondary source buffer.
-- [var primaryEdgeMode: MPSImageEdgeMode](mpsbinaryimagekernel/primaryedgemode.md)
+- [var primaryEdgeMode: MPSImageEdgeMode](./primaryedgemode.md)
   The edge mode to use when texture reads stray off the edge of the primary source image.
-- [var secondaryEdgeMode: MPSImageEdgeMode](mpsbinaryimagekernel/secondaryedgemode.md)
+- [var secondaryEdgeMode: MPSImageEdgeMode](./secondaryedgemode.md)
   The edge mode to use when texture reads stray off the edge of the secondary source image.
-- [var clipRect: MTLRegion](mpsbinaryimagekernel/cliprect.md)
+- [var clipRect: MTLRegion](./cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the rectangle will be overwritten.
 
 

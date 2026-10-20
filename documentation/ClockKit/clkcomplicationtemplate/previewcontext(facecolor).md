@@ -1,12 +1,15 @@
 # previewContext(faceColor:)
 
 **Framework**: ClockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a view that Xcode can display as a preview.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -16,11 +19,12 @@ func previewContext(faceColor: CLKComplicationTemplate.PreviewFaceColor = .multi
 
 ## Parameters
 
-- `faceColor`: The tint color for the face. If you omit this parameter, it defaults to a full-color face. For a list of valid face colors, see [`CLKComplicationTemplate.PreviewFaceColor`](clkcomplicationtemplate/previewfacecolor.md).
+- `faceColor`: The tint color for the face. If you omit this parameter, it defaults to a full-color face. For a list of valid face colors, see [`CLKComplicationTemplate.PreviewFaceColor`](./previewfacecolor.md).
 
 ## See Also
 
-- [CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor.md)
+### Displaying Previews
+- [CLKComplicationTemplate.PreviewFaceColor](./previewfacecolor.md)
   The valid face colors for complication templates.
 
 

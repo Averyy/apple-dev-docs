@@ -1,7 +1,8 @@
 # open(inPlace:using:nonce:authenticating:tag:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
 

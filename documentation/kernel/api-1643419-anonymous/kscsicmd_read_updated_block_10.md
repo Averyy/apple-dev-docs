@@ -1,7 +1,8 @@
 # kSCSICmd_READ_UPDATED_BLOCK_10
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_READ_UPDATED_BLOCK_10 = 0x2D
 ```
 

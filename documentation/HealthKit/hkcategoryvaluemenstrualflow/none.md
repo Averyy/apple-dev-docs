@@ -1,17 +1,18 @@
 # HKCategoryValueMenstrualFlow.none
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No menstrual flow.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 13.0+
-- visionOS 1.0+
-- watchOS 5.0+
+- iOS 12.0+ - Deprecated in 18.0 (renamed: HKCategoryValueVaginalBleeding)
+- iPadOS 12.0+ - Deprecated in 18.0 (renamed: HKCategoryValueVaginalBleeding)
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: HKCategoryValueVaginalBleeding)
+- macOS 13.0+ - Deprecated in 15.0 (renamed: HKCategoryValueVaginalBleeding)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: HKCategoryValueVaginalBleeding)
+- watchOS 5.0+ - Deprecated in 11.0 (renamed: HKCategoryValueVaginalBleeding)
 
 ## Declaration
 
@@ -19,15 +20,20 @@ No menstrual flow.
 case none
 ```
 
+```c
+HKCategoryValueMenstrualFlowNone
+```
+
 ## See Also
 
-- [HKCategoryValueMenstrualFlow.unspecified](hkcategoryvaluemenstrualflow/unspecified.md)
+### Constants
+- [HKCategoryValueMenstrualFlow.unspecified](./unspecified.md)
   An unspecified amount of menstrual flow.
-- [HKCategoryValueMenstrualFlow.light](hkcategoryvaluemenstrualflow/light.md)
+- [HKCategoryValueMenstrualFlow.light](./light.md)
   Light menstrual flow.
-- [HKCategoryValueMenstrualFlow.medium](hkcategoryvaluemenstrualflow/medium.md)
+- [HKCategoryValueMenstrualFlow.medium](./medium.md)
   Medium menstrual flow.
-- [HKCategoryValueMenstrualFlow.heavy](hkcategoryvaluemenstrualflow/heavy.md)
+- [HKCategoryValueMenstrualFlow.heavy](./heavy.md)
   Heavy menstrual flow.
 
 

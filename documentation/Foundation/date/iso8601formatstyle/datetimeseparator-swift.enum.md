@@ -1,7 +1,8 @@
 # Date.ISO8601FormatStyle.DateTimeSeparator
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Type describing the character separating the date and time components of a date in an ISO 8601 date format.
 
@@ -23,31 +24,32 @@ enum DateTimeSeparator
 ## Topics
 
 ### Specifying ISO 8601 Format Style Date Time Separators
-- [Date.ISO8601FormatStyle.DateTimeSeparator.space](date/iso8601formatstyle/datetimeseparator-swift.enum/space.md)
+- [Date.ISO8601FormatStyle.DateTimeSeparator.space](./datetimeseparator-swift.enum/space.md)
   Specifies a space character separating date and time components in an ISO 8601 date format style.
-- [Date.ISO8601FormatStyle.DateTimeSeparator.standard](date/iso8601formatstyle/datetimeseparator-swift.enum/standard.md)
+- [Date.ISO8601FormatStyle.DateTimeSeparator.standard](./datetimeseparator-swift.enum/standard.md)
   Specifies no separator between the date and time components in an ISO 8601 date format style.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.ISO8601FormatStyle.DateSeparator](date/iso8601formatstyle/dateseparator-swift.enum.md)
+### Supporting Types
+- [Date.ISO8601FormatStyle.DateSeparator](./dateseparator-swift.enum.md)
   A type describing the character separating year, month, and day components of a date in an ISO 8601 date format.
-- [Date.ISO8601FormatStyle.TimeSeparator](date/iso8601formatstyle/timeseparator-swift.enum.md)
+- [Date.ISO8601FormatStyle.TimeSeparator](./timeseparator-swift.enum.md)
   Type describing the character separating the time components of a date in an ISO 8601 date format.
-- [Date.ISO8601FormatStyle.TimeZoneSeparator](date/iso8601formatstyle/timezoneseparator-swift.enum.md)
+- [Date.ISO8601FormatStyle.TimeZoneSeparator](./timezoneseparator-swift.enum.md)
   A type describing the character separating the time and time zone of a date in an ISO 8601 date format.
 
 

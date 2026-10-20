@@ -1,7 +1,8 @@
 # index(for:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the bin index for the given value.
 

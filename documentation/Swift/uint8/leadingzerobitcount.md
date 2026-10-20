@@ -1,7 +1,8 @@
 # leadingZeroBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of leading zeros in this value’s binary representation.
 

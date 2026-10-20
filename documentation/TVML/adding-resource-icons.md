@@ -1,6 +1,7 @@
 # Adding Resource Icons
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Add Apple-provided icons to buttons and as independent images.
 
@@ -19,21 +20,22 @@ Resource icons do not have different variants for dark and light themes. Use the
 
 ## See Also
 
-- [Button Icons](button-icons.md)
+### Resource Icons
+- [Button Icons](./button-icons.md)
   Icons that indicate the function of a button.
-- [Movie Rating Icons (United States)](movie-rating-icons-united-states.md)
+- [Movie Rating Icons (United States)](./movie-rating-icons-united-states.md)
   Icons that pertain to United States movie ratings.
-- [Television Rating Icons (United States)](television-rating-icons-united-states.md)
+- [Television Rating Icons (United States)](./television-rating-icons-united-states.md)
   Icons that pertain to United States television ratings.
-- [Rating Icons (New Zealand)](rating-icons-new-zealand.md)
+- [Rating Icons (New Zealand)](./rating-icons-new-zealand.md)
   Icons that pertain to New Zealand movie ratings.
-- [Rating Icons (United Kingdom)](rating-icons-united-kingdom.md)
+- [Rating Icons (United Kingdom)](./rating-icons-united-kingdom.md)
   Icons that pertain to United Kingdom movie ratings.
-- [Rating Icons (Brazil)](rating-icons-brazil.md)
+- [Rating Icons (Brazil)](./rating-icons-brazil.md)
   Icons that pertain to Brazil movie ratings.
-- [Rotten Tomatoes Rating Icons](rotten-tomatoes-rating-icons.md)
+- [Rotten Tomatoes Rating Icons](./rotten-tomatoes-rating-icons.md)
   Icons pertaining to the Rotten Tomatoes rating system.
-- [Miscellaneous Icons](miscellaneous-icons.md)
+- [Miscellaneous Icons](./miscellaneous-icons.md)
   Miscellaneous icons that don’t fall into a specific category.
 
 

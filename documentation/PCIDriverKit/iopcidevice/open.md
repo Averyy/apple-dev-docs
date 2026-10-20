@@ -1,40 +1,42 @@
 # Open
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a session to the PCI device.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Open(IOService *forClient, IOOptionBits options);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-This method gives the specified [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) object exclusive access to the PCI device. It also gives the service object access to the PCI device’s configuration and aperture space.
+This method gives the specified [`IOService`](../../DriverKit/ioservice.md) object exclusive access to the PCI device. It also gives the service object access to the PCI device’s configuration and aperture space.
 
 ## Parameters
 
-- `forClient`: The service object that is opening the session. Typically, you specify your driver’s custom [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) object.
+- `forClient`: The service object that is opening the session. Typically, you specify your driver’s custom [`IOService`](../../DriverKit/ioservice.md) object.
 - `options`: Additional options for opening the session.
 
 ## See Also
 
-- [init](iopcidevice/init.md)
+### Running the Service
+- [init](./init.md)
   Initializes the device.
-- [Close](iopcidevice/close.md)
+- [Close](./close.md)
   Closes the session to the PCI device.
-- [free](iopcidevice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the object.
 
 

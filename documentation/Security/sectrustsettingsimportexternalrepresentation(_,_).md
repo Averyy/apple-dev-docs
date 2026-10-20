@@ -1,7 +1,8 @@
 # SecTrustSettingsImportExternalRepresentation(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Imports trust settings into a trust domain.
 
@@ -15,9 +16,13 @@ Imports trust settings into a trust domain.
 func SecTrustSettingsImportExternalRepresentation(_ domain: SecTrustSettingsDomain, _ trustSettings: CFData) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSettingsImportExternalRepresentation(SecTrustSettingsDomain domain, CFDataRef trustSettings);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -25,8 +30,8 @@ Trust settings for a certificate are associated with the hash of the certificate
 
 ## Parameters
 
-- `domain`: The trust settings domain into which you want to import trust settings. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
-- `trustSettings`: An external representation of the trust settings (created by the [`SecTrustSettingsCreateExternalRepresentation(_:_:)`](sectrustsettingscreateexternalrepresentation(_:_:).md) function) that you want to import.
+- `domain`: The trust settings domain into which you want to import trust settings. For possible values, see [`SecTrustSettingsDomain`](./sectrustsettingsdomain.md).
+- `trustSettings`: An external representation of the trust settings (created by the [`SecTrustSettingsCreateExternalRepresentation(_:_:)`](./sectrustsettingscreateexternalrepresentation%28_,_%29.md) function) that you want to import.
 
 
 ---

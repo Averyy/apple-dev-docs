@@ -1,7 +1,8 @@
 # types
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of the first item on the pasteboard.
 
@@ -15,6 +16,10 @@ The types of the first item on the pasteboard.
 
 ```swift
 var types: [String] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * pasteboardTypes;
 ```
 
 #### Return Value
@@ -35,13 +40,14 @@ Starting in iOS 10, you can directly check which data types are present on a pas
 
 ## See Also
 
-- [func types(forItemSet: IndexSet?) -> [[String]]?](uipasteboard/types(foritemset:).md)
+### Determining types of pasteboard items
+- [func types(forItemSet: IndexSet?) -> [[String]]?](./types%28foritemset%29.md)
   Returns an array of representation types for each specified pasteboard item.
-- [func contains(pasteboardTypes: [String]) -> Bool](uipasteboard/contains(pasteboardtypes:).md)
+- [func contains(pasteboardTypes: [String]) -> Bool](./contains%28pasteboardtypes%29.md)
   Returns whether the pasteboard holds data of the specified representation type.
-- [func contains(pasteboardTypes: [String], inItemSet: IndexSet?) -> Bool](uipasteboard/contains(pasteboardtypes:initemset:).md)
+- [func contains(pasteboardTypes: [String], inItemSet: IndexSet?) -> Bool](./contains%28pasteboardtypes,initemset%29.md)
   Returns whether the specified pasteboard items contain data of the given representation types.
-- [func itemSet(withPasteboardTypes: [String]) -> IndexSet?](uipasteboard/itemset(withpasteboardtypes:).md)
+- [func itemSet(withPasteboardTypes: [String]) -> IndexSet?](./itemset%28withpasteboardtypes%29.md)
   Returns an index set identifying pasteboard items having the specified representation types.
 
 

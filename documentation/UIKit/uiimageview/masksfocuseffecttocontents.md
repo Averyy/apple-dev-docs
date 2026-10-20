@@ -1,7 +1,8 @@
 # masksFocusEffectToContents
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the floating focused appearance uses the image’s alpha channel.
 
@@ -14,17 +15,22 @@ A Boolean value indicating whether the floating focused appearance uses the imag
 var masksFocusEffectToContents: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL masksFocusEffectToContents;
+```
+
 #### Discussion
 
-Set this property to [`false`](https://developer.apple.com/documentation/swift/false) when using multi-layer images or when using images that are completely opaque. Set this property to [`true`](https://developer.apple.com/documentation/swift/true) only when the image view contains a single-layer image with transparency. When set to [`true`](https://developer.apple.com/documentation/swift/true), the system uses the image’s alpha channel to create an appropriate floating focused appearance. For example, the system masks the shadow based on the alpha channel of the image.
+Set this property to [`false`](../../Swift/false.md) when using multi-layer images or when using images that are completely opaque. Set this property to [`true`](../../Swift/true.md) only when the image view contains a single-layer image with transparency. When set to [`true`](../../Swift/true.md), the system uses the image’s alpha channel to create an appropriate floating focused appearance. For example, the system masks the shadow based on the alpha channel of the image.
 
 The aspect ratio of the image view and its displayed image must be the same. Rendering with transparency affects performance, so enable this option only when needed.
 
 ## See Also
 
-- [var adjustsImageWhenAncestorFocused: Bool](uiimageview/adjustsimagewhenancestorfocused.md)
+### Managing focus-related behaviors
+- [var adjustsImageWhenAncestorFocused: Bool](./adjustsimagewhenancestorfocused.md)
   A Boolean value that determines whether the image view responds when an ancestor gains focus.
-- [var focusedFrameGuide: UILayoutGuide](uiimageview/focusedframeguide.md)
+- [var focusedFrameGuide: UILayoutGuide](./focusedframeguide.md)
   The layout guide to use when the image view is focused.
 
 

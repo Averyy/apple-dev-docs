@@ -1,7 +1,8 @@
 # init(dictionaryRepresentation:)
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 7.0+
@@ -20,8 +21,9 @@ init?(dictionaryRepresentation dict: CFDictionary)
 
 ## See Also
 
-- [var dictionaryRepresentation: CFDictionary](cgsize/dictionaryrepresentation.md)
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](cgsize/customplaygroundquicklook.md)
+### Alternate Representations
+- [var dictionaryRepresentation: CFDictionary](./dictionaryrepresentation.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 
 

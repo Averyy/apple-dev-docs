@@ -1,7 +1,8 @@
 # handsFree(_:isServiceAvailable:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the service level indicator of the connected Bluetooth hands-free phone or headset has changed.
 
@@ -14,24 +15,29 @@ Tells the delegate the service level indicator of the connected Bluetooth hands-
 optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, isServiceAvailable: NSNumber!)
 ```
 
+```objc
+- (void) handsFree:(IOBluetoothHandsFreeDevice *) device isServiceAvailable:(NSNumber *) isServiceAvailable;
+```
+
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `isServiceAvailable`: The new service level. For possible values, see [`IOBluetoothHandsFreeIndicatorService`](iobluetoothhandsfreeindicatorservice.md).
+- `isServiceAvailable`: The new service level. For possible values, see [`IOBluetoothHandsFreeIndicatorService`](../iobluetoothhandsfreeindicatorservice.md).
 
 ## See Also
 
-- [func handsFree(IOBluetoothHandsFreeDevice!, callSetupMode: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:callsetupmode:).md)
+### Receiving Status Indicator Changes
+- [func handsFree(IOBluetoothHandsFreeDevice!, callSetupMode: NSNumber!)](./handsfree%28_,callsetupmode%29.md)
   Tells the delegate the call setup indicator of the connected Bluetooth hands-free phone or headset has changed.
-- [func handsFree(IOBluetoothHandsFreeDevice!, isCallActive: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:iscallactive:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, isCallActive: NSNumber!)](./handsfree%28_,iscallactive%29.md)
   Tells the delegate the active call indicator of the connected Bluetooth hands-free phone or headset has changed.
-- [func handsFree(IOBluetoothHandsFreeDevice!, signalStrength: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:signalstrength:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, signalStrength: NSNumber!)](./handsfree%28_,signalstrength%29.md)
   Tells the delegate the call setup signal strength indicator of the connected Bluetooth hands-free phone or headset has changed.
-- [func handsFree(IOBluetoothHandsFreeDevice!, callHoldState: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:callholdstate:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, callHoldState: NSNumber!)](./handsfree%28_,callholdstate%29.md)
   Tells the delegate the call held indicator of the connected Bluetooth hands-free phone or headset has changed.
-- [func handsFree(IOBluetoothHandsFreeDevice!, isRoaming: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:isroaming:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, isRoaming: NSNumber!)](./handsfree%28_,isroaming%29.md)
   Tells the delegate the roaming indicator of the connected Bluetooth hands-free phone or headset has changed.
-- [func handsFree(IOBluetoothHandsFreeDevice!, batteryCharge: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:batterycharge:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, batteryCharge: NSNumber!)](./handsfree%28_,batterycharge%29.md)
   Tells the delegate the battery level indicator of the connected Bluetooth hands-free phone or headset has changed.
 
 

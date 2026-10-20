@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the failure, keyed by name.
 
@@ -21,9 +22,10 @@ var metadata: [String : any Sendable]
 
 ## See Also
 
-- [var unsupportedContent: [Transcript.Entry]](languagemodelerror/unsupportedtranscriptcontent/unsupportedcontent.md)
+### Inspecting unsupported transcript content errors
+- [var unsupportedContent: [Transcript.Entry]](./unsupportedcontent.md)
   The transcript entries that the model can’t process.
-- [var debugDescription: String](languagemodelerror/unsupportedtranscriptcontent/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_EDGEMODE_UNKNOWN;
 ```
 
 ## See Also
 
-- [SVG_EDGEMODE_DUPLICATE](svgfegaussianblurelement/1633625-svg_edgemode_duplicate.md)
-- [SVG_EDGEMODE_NONE](svgfegaussianblurelement/1630831-svg_edgemode_none.md)
-- [SVG_EDGEMODE_WRAP](svgfegaussianblurelement/1633045-svg_edgemode_wrap.md)
+### Miscellaneous
+- [SVG_EDGEMODE_DUPLICATE](./api-1633625-svg_edgemode_duplicate.md)
+- [SVG_EDGEMODE_NONE](./api-1630831-svg_edgemode_none.md)
+- [SVG_EDGEMODE_WRAP](./api-1633045-svg_edgemode_wrap.md)
 
 
 ---

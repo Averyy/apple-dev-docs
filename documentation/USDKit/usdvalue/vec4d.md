@@ -1,7 +1,8 @@
 # USDValue.Vec4d
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 4-component double-precision vector.
 
@@ -23,38 +24,38 @@ struct Vec4d
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec4d/init.md)
+- [init()](./vec4d/init%28%29.md)
   Creates a zero vector.
-- [init(SIMD4<Double>)](usdvalue/vec4d/init(_:).md)
+- [init(SIMD4<Double>)](./vec4d/init%28_%29.md)
   Creates a vector from a `SIMD4<Double>`.
-- [init(Double, Double, Double, Double)](usdvalue/vec4d/init(_:_:_:_:).md)
+- [init(Double, Double, Double, Double)](./vec4d/init%28_,_,_,_%29.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD4<Double>](usdvalue/vec4d/simd.md)
+- [var simd: SIMD4<Double>](./vec4d/simd.md)
   The vector as a `SIMD4<Double>`.
-- [var w: Double](usdvalue/vec4d/w.md)
-- [var x: Double](usdvalue/vec4d/x.md)
-- [var y: Double](usdvalue/vec4d/y.md)
-- [var z: Double](usdvalue/vec4d/z.md)
+- [var w: Double](./vec4d/w.md)
+- [var x: Double](./vec4d/x.md)
+- [var y: Double](./vec4d/y.md)
+- [var z: Double](./vec4d/z.md)
 ### Subscripts
-- [subscript(Int) -> Double](usdvalue/vec4d/subscript(_:).md)
+- [subscript(Int) -> Double](./vec4d/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

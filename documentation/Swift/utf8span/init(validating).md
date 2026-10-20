@@ -1,7 +1,8 @@
 # init(validating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a UTF8Span containing `codeUnits`. Validates that the input is valid UTF-8, otherwise throws an error.
 
@@ -24,7 +25,7 @@ init(validating codeUnits: consuming Span<UInt8>) throws(UTF8.ValidationError)
 
 The resulting UTF8Span has the same lifetime constraints as `codeUnits`.
 
-> **Note**: O(n)
+> **Complexity**: O(n)
 
 
 ---

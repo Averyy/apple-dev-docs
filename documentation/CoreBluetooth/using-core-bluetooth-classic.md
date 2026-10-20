@@ -1,6 +1,8 @@
 # Using Core Bluetooth Classic
 
-**Framework**: Core Bluetooth
+**Framework**: Core Bluetooth  
+**Role**: Sample Code  
+**Download**: [UsingCoreBluetoothClassic.zip](https://docs-assets.developer.apple.com/published/887ceff61b84/UsingCoreBluetoothClassic.zip)
 
 Discover and communicate with a Bluetooth Classic device by using the Core Bluetooth APIs.
 
@@ -12,7 +14,7 @@ Discover and communicate with a Bluetooth Classic device by using the Core Bluet
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`901: What’s New in Core Bluetooth`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/901/).
+> **Note**: This sample code project is associated with WWDC 2019 session [901: What’s New in Core Bluetooth](https://developer.apple.com/videos/play/wwdc19/901/).
 
 
 ---

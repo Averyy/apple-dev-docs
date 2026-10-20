@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 enum StandardUSB30::tDeviceNotificationType : unsigned int {
     ...
 };
@@ -17,11 +17,11 @@ enum StandardUSB30::tDeviceNotificationType : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB30::kDeviceNotificationTypeBusIntervalAdjustment](standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypebusintervaladjustment.md)
-- [StandardUSB30::kDeviceNotificationTypeFunctionWake](standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypefunctionwake.md)
-- [StandardUSB30::kDeviceNotificationTypeHostRoleRequest](standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypehostrolerequest.md)
-- [StandardUSB30::kDeviceNotificationTypeLatencyTolerance](standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypelatencytolerance.md)
-- [StandardUSB30::kDeviceNotificationTypeSublinkSpeed](standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypesublinkspeed.md)
+- [StandardUSB30::kDeviceNotificationTypeBusIntervalAdjustment](./standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypebusintervaladjustment.md)
+- [StandardUSB30::kDeviceNotificationTypeFunctionWake](./standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypefunctionwake.md)
+- [StandardUSB30::kDeviceNotificationTypeHostRoleRequest](./standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypehostrolerequest.md)
+- [StandardUSB30::kDeviceNotificationTypeLatencyTolerance](./standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypelatencytolerance.md)
+- [StandardUSB30::kDeviceNotificationTypeSublinkSpeed](./standardusb30_tdevicenotificationtype/standardusb30_kdevicenotificationtypesublinkspeed.md)
 
 
 ---

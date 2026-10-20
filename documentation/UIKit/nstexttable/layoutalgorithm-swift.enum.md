@@ -1,7 +1,8 @@
 # NSTextTable.LayoutAlgorithm
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 6.0+
@@ -17,30 +18,35 @@
 enum LayoutAlgorithm
 ```
 
+```c
+enum NSTextTableLayoutAlgorithm : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSTextTable.LayoutAlgorithm.automatic](nstexttable/layoutalgorithm-swift.enum/automatic.md)
-- [NSTextTable.LayoutAlgorithm.fixed](nstexttable/layoutalgorithm-swift.enum/fixed.md)
+- [NSTextTable.LayoutAlgorithm.automatic](./layoutalgorithm-swift.enum/automatic.md)
+- [NSTextTable.LayoutAlgorithm.fixed](./layoutalgorithm-swift.enum/fixed.md)
 ### Initializers
-- [init?(rawValue: Int)](nstexttable/layoutalgorithm-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./layoutalgorithm-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var numberOfColumns: Int](nstexttable/numberofcolumns.md)
-- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.property.md)
-- [var collapsesBorders: Bool](nstexttable/collapsesborders.md)
-- [var hidesEmptyCells: Bool](nstexttable/hidesemptycells.md)
+### Configuring the table
+- [var numberOfColumns: Int](./numberofcolumns.md)
+- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.property.md)
+- [var collapsesBorders: Bool](./collapsesborders.md)
+- [var hidesEmptyCells: Bool](./hidesemptycells.md)
 
 
 ---

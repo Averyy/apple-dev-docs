@@ -1,7 +1,8 @@
 # changeShuffleMode(current:supported:_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a command that changes the shuffle mode for media playback.
 
@@ -28,13 +29,14 @@ static func changeShuffleMode(current: MediaCommand.ShuffleMode, supported: [Med
 
 ## See Also
 
-- [static func changePlaybackRate(supported: [Float], (Float) async throws -> Void) -> MediaCommand](mediacommand/changeplaybackrate(supported:_:).md)
+### Changing playback modes
+- [static func changePlaybackRate(supported: [Float], (Float) async throws -> Void) -> MediaCommand](./changeplaybackrate%28supported,_%29.md)
   Creates a command that changes the playback rate of the media.
-- [static func changeRepeatMode(current: MediaCommand.RepeatMode, supported: [MediaCommand.RepeatMode]?, (MediaCommand.RepeatMode) async throws -> Void) -> MediaCommand](mediacommand/changerepeatmode(current:supported:_:).md)
+- [static func changeRepeatMode(current: MediaCommand.RepeatMode, supported: [MediaCommand.RepeatMode]?, (MediaCommand.RepeatMode) async throws -> Void) -> MediaCommand](./changerepeatmode%28current,supported,_%29.md)
   Creates a command that changes the repeat mode for media playback.
-- [MediaCommand.RepeatMode](mediacommand/repeatmode.md)
+- [MediaCommand.RepeatMode](./repeatmode.md)
   The repeat mode for media playback.
-- [MediaCommand.ShuffleMode](mediacommand/shufflemode.md)
+- [MediaCommand.ShuffleMode](./shufflemode.md)
   The shuffle mode for media playback.
 
 

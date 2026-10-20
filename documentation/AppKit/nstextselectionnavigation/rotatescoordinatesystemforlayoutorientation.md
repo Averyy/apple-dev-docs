@@ -1,7 +1,8 @@
 # rotatesCoordinateSystemForLayoutOrientation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the framework rotates the coordinate system to match the layout orientation.
 
@@ -14,21 +15,26 @@ Determines if the framework rotates the coordinate system to match the layout or
 var rotatesCoordinateSystemForLayoutOrientation: Bool { get set }
 ```
 
+```objc
+@property BOOL rotatesCoordinateSystemForLayoutOrientation;
+```
+
 #### Discussion
 
-If set to `true`, the framework rotates the coordinate system for arguments passed to the navigation methods such as [`textSelections(interactingAt:inContainerAt:anchors:modifiers:selecting:bounds:)`](nstextselectionnavigation/textselections(interactingat:incontainerat:anchors:modifiers:selecting:bounds:).md): based on the text container layout orientation. Defaults to `false`.
+If set to `true`, the framework rotates the coordinate system for arguments passed to the navigation methods such as [`textSelections(interactingAt:inContainerAt:anchors:modifiers:selecting:bounds:)`](./textselections%28interactingat,incontainerat,anchors,modifiers,selecting,bounds%29.md): based on the text container layout orientation. Defaults to `false`.
 
 ## See Also
 
-- [var allowsNonContiguousRanges: Bool](nstextselectionnavigation/allowsnoncontiguousranges.md)
+### Selection characteristics
+- [var allowsNonContiguousRanges: Bool](./allowsnoncontiguousranges.md)
   Determines if the instance could produce selections with multiple noncontiguous selections.
-- [NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier.md)
+- [NSTextSelectionNavigation.Modifier](./modifier.md)
   Values that describe how the framework handles different kinds of selection modifiers.
-- [NSTextSelectionNavigation.Destination](nstextselectionnavigation/destination.md)
+- [NSTextSelectionNavigation.Destination](./destination.md)
   Values that affect how the framework handles navigation across different textual boundaries during a selection.
-- [NSTextSelectionNavigation.Direction](nstextselectionnavigation/direction.md)
+- [NSTextSelectionNavigation.Direction](./direction.md)
   Values that describe the direction of a selection.
-- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](nstextselectionnavigation/textselection(for:enclosing:incontainerat:).md)
+- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](./textselection%28for,enclosing,incontainerat%29.md)
   Returns a text selection that expands to the nearest boundaries for selection granularity and an enclosing point you specify.
 
 

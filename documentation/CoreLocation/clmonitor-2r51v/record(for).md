@@ -1,7 +1,8 @@
 # record(for:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A record that contains a condition and the most recent event your app receives.
 
@@ -19,7 +20,7 @@ func record(for identifier: String) -> CLMonitor.Record?
 
 #### Return Value
 
-Returns a [`CLMonitor.Record`](clmonitor-2r51v/record.md), or `nil` if the system can’t find the identifier.
+Returns a [`CLMonitor.Record`](./record.md), or `nil` if the system can’t find the identifier.
 
 ## Parameters
 
@@ -27,11 +28,12 @@ Returns a [`CLMonitor.Record`](clmonitor-2r51v/record.md), or `nil` if the syste
 
 ## See Also
 
-- [func add(any CLCondition, identifier: String)](clmonitor-2r51v/add(_:identifier:).md)
+### Adding and removing conditions
+- [func add(any CLCondition, identifier: String)](./add%28_,identifier%29.md)
   Adds the given condition for monitoring.
-- [func add(any CLCondition, identifier: String, assuming: CLMonitor.Event.State)](clmonitor-2r51v/add(_:identifier:assuming:).md)
+- [func add(any CLCondition, identifier: String, assuming: CLMonitor.Event.State)](./add%28_,identifier,assuming%29.md)
   Adds the monitoring condition with the identifier and initial state you specify.
-- [func remove(String)](clmonitor-2r51v/remove(_:).md)
+- [func remove(String)](./remove%28_%29.md)
   Removes the condition and its enclosed record associated with the identifier you provide.
 
 

@@ -1,7 +1,8 @@
 # IOUSBHIDDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a structure that defines the USB HID descriptor.
 
@@ -10,21 +11,22 @@ A pointer to a structure that defines the USB HID descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBHIDDescriptor *IOUSBHIDDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBHIDData](iousbhiddata.md)
+### HID Descriptors
+- [IOUSBHIDData](./iousbhiddata.md)
   Data related to the mouse and keyboard.
-- [IOUSBHIDDataPtr](iousbhiddataptr.md)
+- [IOUSBHIDDataPtr](./iousbhiddataptr.md)
   A pointer to a structure related to mouse and keyboard data.
-- [IOUSBHIDDescriptor](iousbhiddescriptor.md)
+- [IOUSBHIDDescriptor](./iousbhiddescriptor.md)
   A structure that defines the USB HID descriptor.
-- [IOUSBHIDReportDesc](iousbhidreportdesc.md)
+- [IOUSBHIDReportDesc](./iousbhidreportdesc.md)
   A structure that defines the USB HID report descriptor header.
-- [IOUSBHIDReportDescPtr](iousbhidreportdescptr.md)
+- [IOUSBHIDReportDescPtr](./iousbhidreportdescptr.md)
   A pointer to a structure that defines the USB HID report descriptor header.
 
 

@@ -1,16 +1,21 @@
 # existing_session
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var existing_session: Bool
+```
+
+```c
+bool existing_session;
 ```
 
 

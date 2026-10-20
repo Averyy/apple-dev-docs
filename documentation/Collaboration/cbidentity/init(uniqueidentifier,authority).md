@@ -1,7 +1,8 @@
 # init(uniqueIdentifier:authority:)
 
 **Framework**: Collaboration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 init?(uniqueIdentifier uuid: UUID, authority: CBIdentityAuthority)
+```
+
+```objc
++ (CBIdentity *) identityWithUniqueIdentifier:(NSUUID *) uuid authority:(CBIdentityAuthority *) authority;
 ```
 
 

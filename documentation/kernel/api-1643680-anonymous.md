@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,17 +18,17 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kCompoundDeviceBit](1643680-anonymous/kcompounddevicebit.md)
-- [kHubPortIndicatorBit](1643680-anonymous/khubportindicatorbit.md)
-- [kHubPortIndicatorMask](1643680-anonymous/khubportindicatormask.md)
-- [kHubTTThinkTimeMask](1643680-anonymous/khubttthinktimemask.md)
-- [kHubTTThinkTimeShift](1643680-anonymous/khubttthinktimeshift.md)
-- [kNoOverCurrentBit](1643680-anonymous/knoovercurrentbit.md)
-- [kNoPowerSwitchingBit](1643680-anonymous/knopowerswitchingbit.md)
-- [kPerPortOverCurrentBit](1643680-anonymous/kperportovercurrentbit.md)
-- [kPerPortSwitchingBit](1643680-anonymous/kperportswitchingbit.md)
-- [kUSBHubOvercurrentMask](1643680-anonymous/kusbhubovercurrentmask.md)
-- [kUSBHubOvercurrentShift](1643680-anonymous/kusbhubovercurrentshift.md)
+- [kCompoundDeviceBit](./api-1643680-anonymous/kcompounddevicebit.md)
+- [kHubPortIndicatorBit](./api-1643680-anonymous/khubportindicatorbit.md)
+- [kHubPortIndicatorMask](./api-1643680-anonymous/khubportindicatormask.md)
+- [kHubTTThinkTimeMask](./api-1643680-anonymous/khubttthinktimemask.md)
+- [kHubTTThinkTimeShift](./api-1643680-anonymous/khubttthinktimeshift.md)
+- [kNoOverCurrentBit](./api-1643680-anonymous/knoovercurrentbit.md)
+- [kNoPowerSwitchingBit](./api-1643680-anonymous/knopowerswitchingbit.md)
+- [kPerPortOverCurrentBit](./api-1643680-anonymous/kperportovercurrentbit.md)
+- [kPerPortSwitchingBit](./api-1643680-anonymous/kperportswitchingbit.md)
+- [kUSBHubOvercurrentMask](./api-1643680-anonymous/kusbhubovercurrentmask.md)
+- [kUSBHubOvercurrentShift](./api-1643680-anonymous/kusbhubovercurrentshift.md)
 
 
 ---

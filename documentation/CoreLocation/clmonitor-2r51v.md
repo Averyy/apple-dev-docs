@@ -1,7 +1,8 @@
 # CLMonitor
 
 **Framework**: Core Location  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that monitors the conditions you add to it.
 
@@ -19,7 +20,7 @@ actor CLMonitor
 
 ## Mentions
 
-- [Handling location updates in the background](handling-location-updates-in-the-background.md)
+- [Handling location updates in the background](./handling-location-updates-in-the-background.md)
 
 #### Overview
 
@@ -30,42 +31,42 @@ This service is unavailable in a compatible iPad or iPhone app running in vision
 ## Topics
 
 ### Creating a monitor
-- [init(String) async](clmonitor-2r51v/init(_:).md)
+- [init(String) async](./clmonitor-2r51v/init%28_%29.md)
   Creates a location monitor with the name you specify.
 ### Adding and removing conditions
-- [func add(any CLCondition, identifier: String)](clmonitor-2r51v/add(_:identifier:).md)
+- [func add(any CLCondition, identifier: String)](./clmonitor-2r51v/add%28_,identifier%29.md)
   Adds the given condition for monitoring.
-- [func add(any CLCondition, identifier: String, assuming: CLMonitor.Event.State)](clmonitor-2r51v/add(_:identifier:assuming:).md)
+- [func add(any CLCondition, identifier: String, assuming: CLMonitor.Event.State)](./clmonitor-2r51v/add%28_,identifier,assuming%29.md)
   Adds the monitoring condition with the identifier and initial state you specify.
-- [func record(for: String) -> CLMonitor.Record?](clmonitor-2r51v/record(for:).md)
+- [func record(for: String) -> CLMonitor.Record?](./clmonitor-2r51v/record%28for%29.md)
   A record that contains a condition and the most recent event your app receives.
-- [func remove(String)](clmonitor-2r51v/remove(_:).md)
+- [func remove(String)](./clmonitor-2r51v/remove%28_%29.md)
   Removes the condition and its enclosed record associated with the identifier you provide.
 ### Accessing the location monitor’s identifiers
-- [var identifiers: [String]](clmonitor-2r51v/identifiers.md)
+- [var identifiers: [String]](./clmonitor-2r51v/identifiers.md)
   An array that contains the identifiers of the conditions the framework is monitoring.
 ### Accessing the monitor’s events
-- [let events: CLMonitor.Events](clmonitor-2r51v/events-swift.property.md)
+- [let events: CLMonitor.Events](./clmonitor-2r51v/events-swift.property.md)
   An asynchronous sequence of events that represent the conditions the monitor object observes.
 ### Monitor conditions
-- [CLMonitor.BeaconIdentityCondition](clmonitor-2r51v/beaconidentitycondition.md)
+- [CLMonitor.BeaconIdentityCondition](./clmonitor-2r51v/beaconidentitycondition.md)
   A condition that describes the characteristics of a beacon.
-- [CLMonitor.CircularGeographicCondition](clmonitor-2r51v/circulargeographiccondition.md)
+- [CLMonitor.CircularGeographicCondition](./clmonitor-2r51v/circulargeographiccondition.md)
   A condition that describes a circular geographic area that a center point and radius define.
 ### Monitor events
-- [CLMonitor.Event](clmonitor-2r51v/event.md)
+- [CLMonitor.Event](./clmonitor-2r51v/event.md)
   An event object that the framework passes to the events sequence in the monitor.
-- [CLMonitor.Record](clmonitor-2r51v/record.md)
+- [CLMonitor.Record](./clmonitor-2r51v/record.md)
   A structure that represents a condition and its associated event information that the framework is monitoring.
-- [CLMonitor.Events](clmonitor-2r51v/events-swift.struct.md)
+- [CLMonitor.Events](./clmonitor-2r51v/events-swift.struct.md)
   A type that represents an asynchronous sequence of events.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(travelEstimates:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map panel item with travel estimate information.
 
@@ -14,6 +15,10 @@ Creates a map panel item with travel estimate information.
 
 ```swift
 init(travelEstimates: CPTravelEstimates, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithTravelEstimates:(CPTravelEstimates *) travelEstimates handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
 #### Return Value

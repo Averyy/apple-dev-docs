@@ -1,7 +1,8 @@
 # ObservationTracking.Token
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,7 +22,7 @@ struct Token
 ## Topics
 
 ### Instance Methods
-- [func cancel()](observationtracking/token/cancel.md)
+- [func cancel()](./token/cancel%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # WorldTrackingProvider.Error.Code.addWorldAnchorFailed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code for when a world-tracking provider can’t add a world anchor.
 
@@ -16,9 +17,10 @@ case addWorldAnchorFailed
 
 ## See Also
 
-- [WorldTrackingProvider.Error.Code.removeWorldAnchorFailed](worldtrackingprovider/error/code-swift.enum/removeworldanchorfailed.md)
+### Determining causes for tracking failures
+- [WorldTrackingProvider.Error.Code.removeWorldAnchorFailed](./removeworldanchorfailed.md)
   The error code for when a world-tracking provider can’t remove a world anchor.
-- [WorldTrackingProvider.Error.Code.worldAnchorLimitReached](worldtrackingprovider/error/code-swift.enum/worldanchorlimitreached.md)
+- [WorldTrackingProvider.Error.Code.worldAnchorLimitReached](./worldanchorlimitreached.md)
   The error code for when a world-tracking provider reaches its world anchor limit.
 
 

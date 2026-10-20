@@ -1,7 +1,8 @@
 # xcodeOverview.AppMetadata
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Metadata about the app that a performance overview describes.
 
@@ -10,7 +11,7 @@ Metadata about the app that a performance overview describes.
 
 ## Declaration
 
-```swift
+```
 object xcodeOverview.AppMetadata
 ```
 
@@ -23,9 +24,10 @@ object xcodeOverview.AppMetadata
 
 ## See Also
 
-- [object xcodeOverview.Insights](xcodeoverview/insights-data.dictionary.md)
+### Objects
+- [object xcodeOverview.Insights](./insights-data.dictionary.md)
   Performance insights for an app, including regressions and metrics that are trending up.
-- [object xcodeOverview.Signatures](xcodeoverview/signatures-data.dictionary.md)
+- [object xcodeOverview.Signatures](./signatures-data.dictionary.md)
   The top performance signatures for an app, such as its top hang, launch, and disk-write points.
 
 

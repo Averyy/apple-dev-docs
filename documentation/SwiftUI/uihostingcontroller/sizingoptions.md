@@ -1,7 +1,8 @@
 # sizingOptions
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options for how the hosting controller tracks changes to the size of its SwiftUI content.
 
@@ -25,10 +26,11 @@ The default value is the empty set.
 
 ## See Also
 
-- [func preferredContentSizeDidChange(forChildContentContainer: any UIContentContainer)](uihostingcontroller/preferredcontentsizedidchange(forchildcontentcontainer:).md)
-- [func sizeThatFits(in: CGSize) -> CGSize](uihostingcontroller/sizethatfits(in:).md)
+### Managing the size
+- [func preferredContentSizeDidChange(forChildContentContainer: any UIContentContainer)](./preferredcontentsizedidchange%28forchildcontentcontainer%29.md)
+- [func sizeThatFits(in: CGSize) -> CGSize](./sizethatfits%28in%29.md)
   Calculates and returns the most appropriate size for the current view.
-- [var safeAreaRegions: SafeAreaRegions](uihostingcontroller/safearearegions.md)
+- [var safeAreaRegions: SafeAreaRegions](./safearearegions.md)
   The safe area regions that this view controller adds to its view.
 
 

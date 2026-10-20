@@ -1,18 +1,19 @@
 # AVPlayerItem.Status.readyToPlay
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The item is ready to play.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The item is ready to play.
 case readyToPlay
 ```
 
+```c
+AVPlayerItemStatusReadyToPlay
+```
+
 ## Mentions
 
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](../../controlling-the-transport-behavior-of-a-player.md)
 
 ## See Also
 
-- [AVPlayerItem.Status.unknown](avplayeritem/status-swift.enum/unknown.md)
+### Player item statuses
+- [AVPlayerItem.Status.unknown](./unknown.md)
   The item’s status is unknown.
-- [AVPlayerItem.Status.failed](avplayeritem/status-swift.enum/failed.md)
+- [AVPlayerItem.Status.failed](./failed.md)
   The item no longer plays due to an error.
 
 

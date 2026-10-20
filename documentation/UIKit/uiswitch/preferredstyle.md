@@ -1,7 +1,8 @@
 # preferredStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred display style for the switch.
 
@@ -17,26 +18,31 @@ The preferred display style for the switch.
 var preferredStyle: UISwitch.Style { get set }
 ```
 
+```objc
+@property (nonatomic) UISwitchStyle preferredStyle;
+```
+
 ## Mentions
 
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-- [Displaying a checkbox in your Mac app built with Mac Catalyst](displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
+- [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
+- [Displaying a checkbox in your Mac app built with Mac Catalyst](../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
 #### Discussion
 
 Use this property to specify the display style that you prefer. If the style changes, the switch may generate a layout pass to update the display.
 
-The default style is [`UISwitch.Style.automatic`](uiswitch/style-swift.enum/automatic.md). For a list of styles, see [`UISwitch.Style`](uiswitch/style-swift.enum.md).
+The default style is [`UISwitch.Style.automatic`](./style-swift.enum/automatic.md). For a list of styles, see [`UISwitch.Style`](./style-swift.enum.md).
 
 ## See Also
 
-- [Displaying a checkbox in your Mac app built with Mac Catalyst](displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
+### Setting the display style
+- [Displaying a checkbox in your Mac app built with Mac Catalyst](../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
   Present a switch control as a Mac-style checkbox when your app runs in the Mac user interface idiom.
-- [var style: UISwitch.Style](uiswitch/style-swift.property.md)
+- [var style: UISwitch.Style](./style-swift.property.md)
   The display style for the switch.
-- [UISwitch.Style](uiswitch/style-swift.enum.md)
+- [UISwitch.Style](./style-swift.enum.md)
   Styles that determine the appearance of the switch.
-- [var title: String?](uiswitch/title.md)
+- [var title: String?](./title.md)
   The title displayed next to a checkbox-style switch.
 
 

@@ -1,18 +1,23 @@
 # SCScreenshotConfiguration.DynamicRange.sdr
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns a standard dynamic range image to the client.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case sdr
+```
+
+```c
+SCScreenshotDynamicRangeSDR
 ```
 
 

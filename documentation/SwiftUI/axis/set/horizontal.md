@@ -1,7 +1,8 @@
 # horizontal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ static let horizontal: Axis.Set
 
 ## See Also
 
-- [static let vertical: Axis.Set](axis/set/vertical.md)
+### Getting axis sets
+- [static let vertical: Axis.Set](./vertical.md)
 
 
 ---

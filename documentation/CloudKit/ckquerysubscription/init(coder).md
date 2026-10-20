@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query-based subscription from a serialized instance.
 
@@ -20,13 +21,18 @@ Creates a query-based subscription from a serialized instance.
 init(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: The coder for decoding the serialized query subscription.
 
 ## See Also
 
-- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, subscriptionID: CKSubscription.ID, options: CKQuerySubscription.Options)](ckquerysubscription/init(recordtype:predicate:subscriptionid:options:).md)
+### Creating a Subscription
+- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, subscriptionID: CKSubscription.ID, options: CKQuerySubscription.Options)](./init%28recordtype,predicate,subscriptionid,options%29.md)
   Creates a named query-based subscription that queries records of a specific type.
 
 

@@ -1,7 +1,8 @@
 # reductionProduct(with:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a reduction product operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a reduction product operation and returns the result tensor.
 
 ```swift
 func reductionProduct(with tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reductionProductWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

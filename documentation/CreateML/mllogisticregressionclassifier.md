@@ -1,7 +1,8 @@
 # MLLogisticRegressionClassifier
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A classifier that predicts a discrete target value as a function of data features.
 
@@ -22,78 +23,79 @@ struct MLLogisticRegressionClassifier
 ## Topics
 
 ### Training a logistic regression classifier asynchronously
-- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mllogisticregressionclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./mllogisticregressionclassifier/train%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Trains a logistic regression classifier.
-- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mllogisticregressionclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./mllogisticregressionclassifier/maketrainingsession%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func resume(MLTrainingSession<MLLogisticRegressionClassifier>) throws -> MLJob<MLLogisticRegressionClassifier>](mllogisticregressionclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLLogisticRegressionClassifier>) throws -> MLJob<MLLogisticRegressionClassifier>](./mllogisticregressionclassifier/resume%28_%29.md)
   Resumes a training session from the last checkpoint if available.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLogisticRegressionClassifier>](mllogisticregressionclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLogisticRegressionClassifier>](./mllogisticregressionclassifier/restoretrainingsession%28sessionparameters%29.md)
   Restores an existing training session.
 ### Creating a logistic regression classifier from a checkpoint
-- [init(checkpoint: MLCheckpoint) throws](mllogisticregressionclassifier/init(checkpoint:).md)
+- [init(checkpoint: MLCheckpoint) throws](./mllogisticregressionclassifier/init%28checkpoint%29.md)
   Creates a logistic regression classifier from a checkpoint.
 ### Training a logistic regression classifier synchronously
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mllogisticregressionclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./mllogisticregressionclassifier/init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a logistic regression classifier.
-- [var targetColumn: String](mllogisticregressionclassifier/targetcolumn.md)
+- [var targetColumn: String](./mllogisticregressionclassifier/targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mllogisticregressionclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./mllogisticregressionclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 ### Evaluating a logistic regression classifier
-- [func evaluation(on:)](mllogisticregressionclassifier/evaluation(on:).md)
+- [func evaluation(on:)](./mllogisticregressionclassifier/evaluation%28on%29.md)
   Evaluates the classifier on the provided labeled data.
-- [var trainingMetrics: MLClassifierMetrics](mllogisticregressionclassifier/trainingmetrics.md)
+- [var trainingMetrics: MLClassifierMetrics](./mllogisticregressionclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mllogisticregressionclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./mllogisticregressionclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 ### Testing a logistic regression classifier
-- [func predictions(from:)](mllogisticregressionclassifier/predictions(from:).md)
+- [func predictions(from:)](./mllogisticregressionclassifier/predictions%28from%29.md)
   Predicts a column of labels for the given testing data.
 ### Saving a logistic regression classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mllogisticregressionclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mllogisticregressionclassifier/write%28to,metadata%29.md)
   Exports a Core ML model file for use in your app.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mllogisticregressionclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mllogisticregressionclassifier/write%28tofile,metadata%29.md)
   Exports a Core ML model file for use in your app.
 ### Inspecting a boosted tree classifier
-- [var model: MLModel](mllogisticregressionclassifier/model.md)
+- [var model: MLModel](./mllogisticregressionclassifier/model.md)
   The Core ML model.
-- [MLLogisticRegressionClassifier.ModelParameters](mllogisticregressionclassifier/modelparameters-swift.struct.md)
+- [MLLogisticRegressionClassifier.ModelParameters](./mllogisticregressionclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
-- [let modelParameters: MLLogisticRegressionClassifier.ModelParameters](mllogisticregressionclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLLogisticRegressionClassifier.ModelParameters](./mllogisticregressionclassifier/modelparameters-swift.property.md)
   The underlying parameters used when training the model.
 ### Describing a logistic regression classifier
-- [var description: String](mllogisticregressionclassifier/description.md)
+- [var description: String](./mllogisticregressionclassifier/description.md)
   A text representation of the logistic regression classifier.
-- [var debugDescription: String](mllogisticregressionclassifier/debugdescription.md)
+- [var debugDescription: String](./mllogisticregressionclassifier/debugdescription.md)
   A text representation of the logistic regression classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mllogisticregressionclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mllogisticregressionclassifier/playgrounddescription.md)
   A description of the logistic regression classifier shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mllogisticregressionclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mllogisticregressionclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mllogisticregressionclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mllogisticregressionclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mllogisticregressionclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mllogisticregressionclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLDecisionTreeClassifier](mldecisiontreeclassifier.md)
+### Supporting classifier types
+- [struct MLDecisionTreeClassifier](./mldecisiontreeclassifier.md)
   A classifier that predicts the target by creating rules to split the data.
-- [struct MLRandomForestClassifier](mlrandomforestclassifier.md)
+- [struct MLRandomForestClassifier](./mlrandomforestclassifier.md)
   A classifier based on a collection of decision trees trained on subsets of the data.
-- [struct MLBoostedTreeClassifier](mlboostedtreeclassifier.md)
+- [struct MLBoostedTreeClassifier](./mlboostedtreeclassifier.md)
   A classifier based on a collection of decision trees combined with gradient boosting.
-- [struct MLSupportVectorClassifier](mlsupportvectorclassifier.md)
+- [struct MLSupportVectorClassifier](./mlsupportvectorclassifier.md)
   A classifier that predicts a binary target value by maximizing the separation between categories.
 
 

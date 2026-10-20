@@ -1,7 +1,8 @@
 # pause(id:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses the alarm with the specified ID if it’s in the countdown state.
 
@@ -18,7 +19,7 @@ func pause(id: Alarm.ID) throws
 
 #### Discussion
 
-The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mode.paused(_:)`](alarmpresentationstate/mode-swift.enum/paused(_:).md) state.
+The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mode.paused(_:)`](../alarmpresentationstate/mode-swift.enum/paused%28_%29.md) state.
 
 ## Parameters
 
@@ -26,13 +27,14 @@ The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mo
 
 ## See Also
 
-- [func cancel(id: Alarm.ID) throws](alarmmanager/cancel(id:).md)
+### Changing an alarm state
+- [func cancel(id: Alarm.ID) throws](./cancel%28id%29.md)
   Cancels the alarm with the specified ID.
-- [func countdown(id: Alarm.ID) throws](alarmmanager/countdown(id:).md)
+- [func countdown(id: Alarm.ID) throws](./countdown%28id%29.md)
   Performs a countdown for the alarm with the specified ID if it’s currently alerting.
-- [func resume(id: Alarm.ID) throws](alarmmanager/resume(id:).md)
+- [func resume(id: Alarm.ID) throws](./resume%28id%29.md)
   Resumes the alarm with the specified ID if it’s in the paused state.
-- [func stop(id: Alarm.ID) throws](alarmmanager/stop(id:).md)
+- [func stop(id: Alarm.ID) throws](./stop%28id%29.md)
   Stops the alarm with the specified ID.
 
 

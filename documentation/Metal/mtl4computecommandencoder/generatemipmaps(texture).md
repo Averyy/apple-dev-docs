@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that generates mipmaps for a texture instance from the base mipmap level up to the highest mipmap level.
@@ -20,13 +21,17 @@ Encodes a command that generates mipmaps for a texture instance from the base mi
 func generateMipmaps(texture: any MTLTexture)
 ```
 
+```objc
+- (void) generateMipmapsForTexture:(id<MTLTexture>) texture;
+```
+
 #### Discussion
 
-This method generates mipmaps for a mipmapped texture. The texture you provide needs to have a [`mipmapLevelCount`](mtltexture/mipmaplevelcount.md) greater than `1`, and a color-renderable or color-filterable [`pixelFormat`](mtltexture/pixelformat.md).
+This method generates mipmaps for a mipmapped texture. The texture you provide needs to have a [`mipmapLevelCount`](../mtltexture/mipmaplevelcount.md) greater than `1`, and a color-renderable or color-filterable [`pixelFormat`](../mtltexture/pixelformat.md).
 
 ## Parameters
 
-- `texture`: A mipmapped, color-renderable or color-filterable [`MTLTexture`](mtltexture.md) instance the command generates mipmaps for.
+- `texture`: A mipmapped, color-renderable or color-filterable [`MTLTexture`](../mtltexture.md) instance the command generates mipmaps for.
 
 
 ---

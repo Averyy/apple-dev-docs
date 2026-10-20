@@ -1,7 +1,8 @@
 # GSSCreateError(_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an error object based on GSS-API major and minor status codes.
 
@@ -18,33 +19,38 @@ Returns an error object based on GSS-API major and minor status codes.
 func GSSCreateError(_ mech: gss_const_OID, _ major_status: OM_uint32, _ minor_status: OM_uint32) -> Unmanaged<CFError>?
 ```
 
+```c
+CFErrorRefGSSCreateError(gss_const_OID mech, OM_uint32 major_status, OM_uint32 minor_status);
+```
+
 #### Return Value
 
-A [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) instance that corresponds to the failure described by the inputs. Release the error with [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) when you are done with it.
+A [`CFError`](../CoreFoundation/cferror.md) instance that corresponds to the failure described by the inputs. Release the error with [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it.
 
 ## Parameters
 
-- `mech`: The underlying mechanism in use. For example, use [`GSS_KRB5_MECHANISM`](gss_krb5_mechanism.md) for Kerberos. Use [`GSS_C_NO_OID`](gss_c_no_oid.md) if none is available.
+- `mech`: The underlying mechanism in use. For example, use [`GSS_KRB5_MECHANISM`](./gss_krb5_mechanism.md) for Kerberos. Use [`GSS_C_NO_OID`](./gss_c_no_oid.md) if none is available.
 - `major_status`: Major status code from a failed GSS-API function call.
 - `minor_status`: Minor status code from a failed GSS-API function call.
 
 ## See Also
 
-- [typealias OM_uint32](om_uint32.md)
+### Status and Error Creation
+- [typealias OM_uint32](./om_uint32.md)
   A 32-bit unsigned integer.
-- [typealias OM_uint64](om_uint64.md)
+- [typealias OM_uint64](./om_uint64.md)
   A 64-bit unsigned integer.
-- [typealias gss_uint32](gss_uint32.md)
+- [typealias gss_uint32](./gss_uint32.md)
   A 32-bit unsigned integer.
-- [typealias gss_status_id_t](gss_status_id_t.md)
+- [typealias gss_status_id_t](./gss_status_id_t.md)
   A pointer to a status result.
-- [var GSS_C_MECH_CODE: Int32](gss_c_mech_code.md)
+- [var GSS_C_MECH_CODE: Int32](./gss_c_mech_code.md)
   A flag that indicates the status code comes from a call to an underlying mechanism, such as Kerberos.
-- [var GSS_C_GSS_CODE: Int32](gss_c_gss_code.md)
+- [var GSS_C_GSS_CODE: Int32](./gss_c_gss_code.md)
   A flag that indicates the named status code comes from a GSS-API call.
-- [var GSS_S_COMPLETE: Int32](gss_s_complete.md)
+- [var GSS_S_COMPLETE: Int32](./gss_s_complete.md)
   The operation completed without error.
-- [func gss_display_status(UnsafeMutablePointer<OM_uint32>, OM_uint32, Int32, gss_OID?, UnsafeMutablePointer<OM_uint32>, gss_buffer_t) -> OM_uint32](gss_display_status(_:_:_:_:_:_:).md)
+- [func gss_display_status(UnsafeMutablePointer<OM_uint32>, OM_uint32, Int32, gss_OID?, UnsafeMutablePointer<OM_uint32>, gss_buffer_t) -> OM_uint32](./gss_display_status%28_,_,_,_,_,_%29.md)
   Returns a human readable string for a status code.
 
 

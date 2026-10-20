@@ -1,17 +1,18 @@
 # safe_allocation<T, Allocator, TrappingPolicy>
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 safe_allocation<T, Allocator, TrappingPolicy>(sa_detail::nullptr_t ) noexcept;
 ```
 

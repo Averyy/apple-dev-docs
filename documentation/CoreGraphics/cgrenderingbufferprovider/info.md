@@ -1,7 +1,8 @@
 # CGRenderingBufferProvider.Info
 
 **Framework**: Core Graphics  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -21,8 +22,8 @@ protocol Info : AnyObject
 ## Topics
 
 ### Instance Methods
-- [func lock() -> UnsafeMutableRawPointer?](cgrenderingbufferprovider/info/lock.md)
-- [func unlock(UnsafeMutableRawPointer)](cgrenderingbufferprovider/info/unlock(_:).md)
+- [func lock() -> UnsafeMutableRawPointer?](./info/lock%28%29.md)
+- [func unlock(UnsafeMutableRawPointer)](./info/unlock%28_%29.md)
 
 
 ---

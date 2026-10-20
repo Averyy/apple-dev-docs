@@ -1,7 +1,8 @@
 # bottomLeading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the bottom-leading corner inset.
 

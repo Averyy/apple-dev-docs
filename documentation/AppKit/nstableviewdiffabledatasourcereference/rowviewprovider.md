@@ -1,7 +1,8 @@
 # rowViewProvider
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that configures and returns the table view’s row views from the diffable data source.
 
@@ -14,17 +15,22 @@ The closure that configures and returns the table view’s row views from the di
 var rowViewProvider: NSTableViewDiffableDataSourceReferenceRowProvider? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSTableViewDiffableDataSourceRowProvider rowViewProvider;
+```
+
 #### Discussion
 
-This property replaces the [`tableView(_:rowViewForRow:)`](nstableviewdelegate/tableview(_:rowviewforrow:).md) delegate method.
+This property replaces the [`tableView(_:rowViewForRow:)`](../nstableviewdelegate/tableview%28_,rowviewforrow%29.md) delegate method.
 
 ## See Also
 
-- [var sectionHeaderViewProvider: NSTableViewDiffableDataSourceReferenceSectionHeaderViewProvider?](nstableviewdiffabledatasourcereference/sectionheaderviewprovider.md)
+### Creating Row and Section Views
+- [var sectionHeaderViewProvider: NSTableViewDiffableDataSourceReferenceSectionHeaderViewProvider?](./sectionheaderviewprovider.md)
   The closure that configures and returns the table view’s section header views from the diffable data source.
-- [typealias NSTableViewDiffableDataSourceReferenceRowProvider](nstableviewdiffabledatasourcereferencerowprovider.md)
+- [typealias NSTableViewDiffableDataSourceReferenceRowProvider](../nstableviewdiffabledatasourcereferencerowprovider.md)
   A closure that configures and returns a row view for a table view from its diffable data source.
-- [typealias NSTableViewDiffableDataSourceReferenceSectionHeaderViewProvider](nstableviewdiffabledatasourcereferencesectionheaderviewprovider.md)
+- [typealias NSTableViewDiffableDataSourceReferenceSectionHeaderViewProvider](../nstableviewdiffabledatasourcereferencesectionheaderviewprovider.md)
   A closure that configures and returns a section header view for a table view from its diffable data source.
 
 

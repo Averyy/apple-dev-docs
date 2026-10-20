@@ -1,14 +1,15 @@
 # kCDSectorSizeMode2Form1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kCDSectorSizeMode2Form1 = 2048
 ```
 

@@ -1,17 +1,18 @@
 # znear
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z coordinate of the near clipping plane of the viewport.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The z coordinate of the near clipping plane of the viewport.
 var znear: Double
 ```
 
+```c
+double znear;
+```
+
 ## See Also
 
-- [var originX: Double](mtlviewport/originx.md)
+### Specifying viewport boundaries
+- [var originX: Double](./originx.md)
   The x coordinate of the upper-left corner of the viewport.
-- [var originY: Double](mtlviewport/originy.md)
+- [var originY: Double](./originy.md)
   The y coordinate of the upper-left corner of the viewport.
-- [var width: Double](mtlviewport/width.md)
+- [var width: Double](./width.md)
   The width of the viewport, in pixels.
-- [var height: Double](mtlviewport/height.md)
+- [var height: Double](./height.md)
   The height of the viewport, in pixels.
-- [var zfar: Double](mtlviewport/zfar.md)
+- [var zfar: Double](./zfar.md)
   The z coordinate of the far clipping plane of the viewport.
 
 

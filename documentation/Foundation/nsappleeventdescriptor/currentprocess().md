@@ -1,7 +1,8 @@
 # currentProcess()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an application address descriptor using the current process.
 
@@ -12,6 +13,10 @@ Creates and returns an application address descriptor using the current process.
 
 ```swift
 class func currentProcess() -> NSAppleEventDescriptor
+```
+
+```objc
++ (NSAppleEventDescriptor *) currentProcessDescriptor;
 ```
 
 #### Discussion

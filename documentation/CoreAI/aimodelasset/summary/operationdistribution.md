@@ -1,7 +1,8 @@
 # operationDistribution
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distribution of operations in the model, each with a count.
 

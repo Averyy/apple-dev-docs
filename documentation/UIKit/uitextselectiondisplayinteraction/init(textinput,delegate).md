@@ -1,7 +1,8 @@
 # init(textInput:delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text selection display interaction object for the specified text view.
 
@@ -16,6 +17,10 @@ Creates a new text selection display interaction object for the specified text v
 
 ```swift
 init(textInput: any UITextInput, delegate: any UITextSelectionDisplayInteractionDelegate)
+```
+
+```objc
+- (instancetype) initWithTextInput:(id<UITextInput>) textInput delegate:(id<UITextSelectionDisplayInteractionDelegate>) delegate;
 ```
 
 ## Parameters

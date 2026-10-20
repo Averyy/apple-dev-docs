@@ -1,7 +1,8 @@
 # screenPoint(fromView:point:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the point in screen coordinates.
 
@@ -14,13 +15,18 @@ Returns the point in screen coordinates.
 static func screenPoint(fromView parentView: NSView, point: NSPoint) -> NSPoint
 ```
 
+```c
+extern NSPoint NSAccessibilityPointInView(NSView *parentView, NSPoint point);
+```
+
 #### Discussion
 
 Given a point in the specified view’s coordinates, it returns the same point in the screen’s coordinates.
 
 ## See Also
 
-- [static func screenRect(fromView: NSView, rect: NSRect) -> NSRect](nsaccessibility-swift.struct/screenrect(fromview:rect:).md)
+### Getting Screen Coordinates
+- [static func screenRect(fromView: NSView, rect: NSRect) -> NSRect](./screenrect%28fromview,rect%29.md)
   Returns the frame in screen coordinates.
 
 

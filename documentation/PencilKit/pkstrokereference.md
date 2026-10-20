@@ -1,7 +1,8 @@
 # PKStrokeReference
 
 **Framework**: PencilKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents the paths, boundaries and other properties of a stroke drawn on a canvas.
 
@@ -18,58 +19,62 @@ A class that represents the paths, boundaries and other properties of a stroke d
 class PKStrokeReference
 ```
 
+```objc
+@interface PKStroke : NSObject
+```
+
 ## Topics
 
 ### Creating a stroke object
-- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?)](pkstrokereference/init(ink:strokepath:transform:mask:).md)
+- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?)](./pkstrokereference/init%28ink,strokepath,transform,mask%29.md)
   Creates a stroke with the line properties, path, transform, and mask that you specify.
-- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32)](pkstrokereference/init(ink:strokepath:transform:mask:randomseed:).md)
+- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32)](./pkstrokereference/init%28ink,strokepath,transform,mask,randomseed%29.md)
   Creates a stroke with the line properties, path, transform, mask, and random seed that you specify.
 ### Getting the stroke properties
-- [var ink: PKInk](pkstrokereference/ink.md)
+- [var ink: PKInk](./pkstrokereference/ink.md)
   The line properties used to render this stroke.
-- [var mask: UIBezierPath?](pkstrokereference/mask.md)
+- [var mask: UIBezierPath?](./pkstrokereference/mask.md)
   The pretransform mask used to clip the rendering of the stroke.
-- [var maskedPathRanges: [__PKFloatRange]](pkstrokereference/maskedpathranges.md)
+- [var maskedPathRanges: [__PKFloatRange]](./pkstrokereference/maskedpathranges.md)
   The range of points in the stroke path reference that intersect the stroke’s mask.
-- [var path: PKStrokePath](pkstrokereference/path.md)
+- [var path: PKStrokePath](./pkstrokereference/path.md)
   The B-spline path that describes this stroke.
-- [var renderBounds: CGRect](pkstrokereference/renderbounds.md)
+- [var renderBounds: CGRect](./pkstrokereference/renderbounds.md)
   The bounds of the rendered stroke, including the width and line properties of the stroke after applying the transform.
-- [var transform: CGAffineTransform](pkstrokereference/transform.md)
+- [var transform: CGAffineTransform](./pkstrokereference/transform.md)
   The affine transform of the stroke after rendering.
-- [var randomSeed: UInt32](pkstrokereference/randomseed.md)
+- [var randomSeed: UInt32](./pkstrokereference/randomseed.md)
   An unsigned 32-bit integer to use as a random seed for drawing strokes that use randomized effects.
 ### Supporting backward compatibility
-- [var requiredContentVersion: PKContentVersion](pkstrokereference/requiredcontentversion.md)
+- [var requiredContentVersion: PKContentVersion](./pkstrokereference/requiredcontentversion.md)
   The version of PencilKit necessary to use the stroke.
 ### Initializers
-- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, strokeID: UUID, renderGroupID: UUID?, renderState: PKStrokeRenderStateReference?)](pkstrokereference/init(ink:strokepath:transform:mask:randomseed:strokeid:rendergroupid:renderstate:).md)
+- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, strokeID: UUID, renderGroupID: UUID?, renderState: PKStrokeRenderStateReference?)](./pkstrokereference/init%28ink,strokepath,transform,mask,randomseed,strokeid,rendergroupid,renderstate%29.md)
 ### Instance Properties
-- [var renderGroupID: UUID?](pkstrokereference/rendergroupid.md)
+- [var renderGroupID: UUID?](./pkstrokereference/rendergroupid.md)
   A UUID that groups strokes for wet-ink compositing with compatible inks such as marker.
-- [var renderState: PKStrokeRenderStateReference?](pkstrokereference/renderstate.md)
+- [var renderState: PKStrokeRenderStateReference?](./pkstrokereference/renderstate.md)
   The render details of the stroke, such as particle positioning. Uses default rendering when nil.
-- [var strokeID: UUID](pkstrokereference/strokeid.md)
+- [var strokeID: UUID](./pkstrokereference/strokeid.md)
   The unique identity of the stroke.
 ### Instance Methods
-- [func substroke(with: __PKFloatRange) -> PKStroke](pkstrokereference/substroke(with:).md)
+- [func substroke(with: __PKFloatRange) -> PKStroke](./pkstrokereference/substroke%28with%29.md)
   Returns a copy of the stroke containing the control points in the specified range.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

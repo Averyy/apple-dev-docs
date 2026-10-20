@@ -1,14 +1,15 @@
 # PE_halt_restart
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int (*PE_halt_restart)(unsigned int type);
 ```
 

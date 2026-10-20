@@ -1,7 +1,8 @@
 # init(identifier:previewProvider:actionProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu configuration object with the specified action and preview providers.
 
@@ -10,7 +11,7 @@ Creates a menu configuration object with the specified action and preview provid
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,9 +32,10 @@ A new menu configuration object with the specified provider blocks.
 
 ## See Also
 
-- [typealias UIContextMenuContentPreviewProvider](uicontextmenucontentpreviewprovider.md)
+### Creating the menu configuration object
+- [typealias UIContextMenuContentPreviewProvider](../uicontextmenucontentpreviewprovider.md)
   Returns the custom view controller to use when previewing your content.
-- [typealias UIContextMenuActionProvider](uicontextmenuactionprovider.md)
+- [typealias UIContextMenuActionProvider](../uicontextmenuactionprovider.md)
   Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
 
 

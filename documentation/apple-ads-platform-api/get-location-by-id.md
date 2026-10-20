@@ -1,7 +1,8 @@
 # Get a Location
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a single business location by its unique identifier.
 
@@ -37,7 +38,7 @@ Retrieving a location’s details is subject to brand ownership and status limit
 
 Retrieves a single location by its unique identifier. The response includes the full location object with address, coordinates, and eligibility status.
 
-```None
+```
 GET https://api.ads.apple.com/v1/locations/7205759403792794
 ```
 
@@ -84,11 +85,27 @@ GET https://api.ads.apple.com/v1/locations/7205759403792794
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`LocationResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query for Locations](query-locations.md)
+- [Query for Locations](./query-locations.md)
   Retrieve a paginated list of business locations using filters and sorting.
 
 

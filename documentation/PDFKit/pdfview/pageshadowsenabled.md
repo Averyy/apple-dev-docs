@@ -1,7 +1,8 @@
 # pageShadowsEnabled
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -17,12 +18,17 @@
 var pageShadowsEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, setter=enablePageShadows:) BOOL pageShadowsEnabled;
+```
+
 ## See Also
 
-- [var findInteraction: UIFindInteraction](pdfview/findinteraction.md)
-- [var isFindInteractionEnabled: Bool](pdfview/isfindinteractionenabled.md)
-- [var isInMarkupMode: Bool](pdfview/isinmarkupmode.md)
-- [var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)?](pdfview/pageoverlayviewprovider.md)
+### Instance Properties
+- [var findInteraction: UIFindInteraction](./findinteraction.md)
+- [var isFindInteractionEnabled: Bool](./isfindinteractionenabled.md)
+- [var isInMarkupMode: Bool](./isinmarkupmode.md)
+- [var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)?](./pageoverlayviewprovider.md)
 
 
 ---

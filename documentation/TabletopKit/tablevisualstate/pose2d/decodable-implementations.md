@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: TabletopKit
+**Framework**: TabletopKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](tablevisualstate/pose2d/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

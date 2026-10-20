@@ -1,7 +1,8 @@
 # errSecAppleAddAppACLSubject
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Adding an application ACL subject failed.
 
@@ -18,6 +19,10 @@ Adding an application ACL subject failed.
 
 ```swift
 var errSecAppleAddAppACLSubject: OSStatus { get }
+```
+
+```c
+errSecAppleAddAppACLSubject
 ```
 
 

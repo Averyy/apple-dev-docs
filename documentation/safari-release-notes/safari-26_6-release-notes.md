@@ -1,6 +1,7 @@
 # Safari 26.6 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released July 27, 2026 — 26.6 (20624.4.5)
 
@@ -8,7 +9,7 @@ Released July 27, 2026 — 26.6 (20624.4.5)
 
 Safari 26.6 is available for iOS 26.6, iPadOS 26.6, visionOS 26.6, macOS 26.6, macOS Sequoia, and macOS Sonoma.
 
-##### Css
+##### CSS
 
 ###### Resolved Issues
 
@@ -35,13 +36,13 @@ Safari 26.6 is available for iOS 26.6, iPadOS 26.6, visionOS 26.6, macOS 26.6, m
 
 - Fixed an issue where web extension service worker registration database files accumulated on each Safari launch, causing performance degradation. (175810627)
 
-##### Webassembly
+##### WebAssembly
 
 ###### New Features
 
 - Added `compileOptions` parameter to `WebAssembly.compileStreaming` and `WebAssembly.instantiateStreaming` for JS String Builtins support. (174858653)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -49,17 +50,18 @@ Safari 26.6 is available for iOS 26.6, iPadOS 26.6, visionOS 26.6, macOS 26.6, m
 
 ## See Also
 
-- [Safari 26.5 Release Notes](safari-26_5-release-notes.md)
+### Version 26
+- [Safari 26.5 Release Notes](./safari-26_5-release-notes.md)
   Released May 11, 2026 — 26.5 (20624.2.5)
-- [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
+- [Safari 26.4 Release Notes](./safari-26_4-release-notes.md)
   Released March 24, 2026 — 26.4 (20624.1.16)
-- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+- [Safari 26.3 Release Notes](./safari-26_3-release-notes.md)
   Released February 11, 2026 — 26.3 (20623.2.7)
-- [Safari 26.2 Release Notes](safari-26_2-release-notes.md)
+- [Safari 26.2 Release Notes](./safari-26_2-release-notes.md)
   Released December 12, 2025 — 26.2 (20623.1.14)
-- [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
+- [Safari 26.1 Release Notes](./safari-26_1-release-notes.md)
   Released November 3, 2025 — 26.1 (20622.2.11)
-- [Safari 26.0 Release Notes](safari-26-release-notes.md)
+- [Safari 26.0 Release Notes](./safari-26-release-notes.md)
   Released September 15, 2025 — 26 (20622.1.22)
 
 

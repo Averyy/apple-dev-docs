@@ -1,7 +1,8 @@
 # init(leftTeam:rightTeam:eventStatus:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a sports overlay with left and right team objects.
 
@@ -14,6 +15,10 @@ Initialize a sports overlay with left and right team objects.
 
 ```swift
 init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?)
+```
+
+```objc
+- (instancetype) initWithLeftTeam:(CPNowPlayingSportsTeam *) leftTeam rightTeam:(CPNowPlayingSportsTeam *) rightTeam eventStatus:(CPNowPlayingSportsEventStatus *) eventStatus;
 ```
 
 ## Parameters

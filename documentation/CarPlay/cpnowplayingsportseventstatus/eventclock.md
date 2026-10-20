@@ -1,7 +1,8 @@
 # eventClock
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event timer, if it applies to this event. See @c CPNowPlayingSportsClock.
 
@@ -15,6 +16,10 @@ The event timer, if it applies to this event. See @c CPNowPlayingSportsClock.
 ```swift
 @NSCopying
 var eventClock: CPNowPlayingSportsClock? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) CPNowPlayingSportsClock * eventClock;
 ```
 
 

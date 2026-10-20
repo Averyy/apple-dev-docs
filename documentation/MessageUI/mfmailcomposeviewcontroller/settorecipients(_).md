@@ -1,7 +1,8 @@
 # setToRecipients(_:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the initial recipients to include in the email’s To field.
 
@@ -17,6 +18,10 @@ Sets the initial recipients to include in the email’s To field.
 func setToRecipients(_ toRecipients: [String]?)
 ```
 
+```objc
+- (void) setToRecipients:(NSArray<NSString *> *) toRecipients;
+```
+
 #### Discussion
 
 This method replaces the previous recipients with the new ones listed in the `toRecipients` parameter. This method doesn’t filter out duplicate email addresses, so if duplicates are present, multiple copies of the email message may be sent to the same address.
@@ -25,21 +30,22 @@ Only call this method before you display the mail composition interface. Don’t
 
 ## Parameters
 
-- `toRecipients`: An array of [`String`](https://developer.apple.com/documentation/swift/string) objects, each containing the email address of a single recipient.
+- `toRecipients`: An array of [`String`](../../Swift/string.md) objects, each containing the email address of a single recipient.
 
 ## See Also
 
-- [func setSubject(String)](mfmailcomposeviewcontroller/setsubject(_:).md)
+### Setting mail fields programmatically
+- [func setSubject(String)](./setsubject%28_%29.md)
   Sets the initial text for the subject line of the email.
-- [func setCcRecipients([String]?)](mfmailcomposeviewcontroller/setccrecipients(_:).md)
+- [func setCcRecipients([String]?)](./setccrecipients%28_%29.md)
   Sets the initial recipients to include in the email’s Cc field.
-- [func setBccRecipients([String]?)](mfmailcomposeviewcontroller/setbccrecipients(_:).md)
+- [func setBccRecipients([String]?)](./setbccrecipients%28_%29.md)
   Sets the initial recipients to include in the email’s Bcc field.
-- [func setMessageBody(String, isHTML: Bool)](mfmailcomposeviewcontroller/setmessagebody(_:ishtml:).md)
+- [func setMessageBody(String, isHTML: Bool)](./setmessagebody%28_,ishtml%29.md)
   Sets the initial body text to include in the email.
-- [func addAttachmentData(Data, mimeType: String, fileName: String)](mfmailcomposeviewcontroller/addattachmentdata(_:mimetype:filename:).md)
+- [func addAttachmentData(Data, mimeType: String, fileName: String)](./addattachmentdata%28_,mimetype,filename%29.md)
   Adds the specified data as an attachment to the message.
-- [func setPreferredSendingEmailAddress(String)](mfmailcomposeviewcontroller/setpreferredsendingemailaddress(_:).md)
+- [func setPreferredSendingEmailAddress(String)](./setpreferredsendingemailaddress%28_%29.md)
   Sets the preferred email address to use in the From field, if such an address is available.
 
 

@@ -1,7 +1,8 @@
 # readAttributeRMSVoltage(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRMSVoltage(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRMSVoltage() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRMSVoltageWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

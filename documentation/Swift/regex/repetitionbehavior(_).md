@@ -1,7 +1,8 @@
 # repetitionBehavior(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a regular expression where quantifiers use the specified behavior by default.
 

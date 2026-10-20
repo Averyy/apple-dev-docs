@@ -1,13 +1,14 @@
 # graph::worldToLocal
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the transformation matrix from world space to local space.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A 4x4 transformation matrix for world-to-local conversion.
 
 This matrix transforms coordinates from the scene’s coordinate system to the graph’s local coordinate system. It is the inverse of the local-to-world matrix.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/graph__worldToLocal.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/graph__worldToLocal.svg)
 
 
 ---

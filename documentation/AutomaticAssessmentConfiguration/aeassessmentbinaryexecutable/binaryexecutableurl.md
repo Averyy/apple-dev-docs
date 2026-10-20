@@ -1,7 +1,8 @@
 # binaryExecutableURL
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On-disk path of the executable.
 
@@ -13,6 +14,10 @@ On-disk path of the executable.
 
 ```swift
 var binaryExecutableURL: URL { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * binaryExecutableURL;
 ```
 
 

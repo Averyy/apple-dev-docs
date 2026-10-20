@@ -1,7 +1,8 @@
 # loadView()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the custom view hierarchy that text attachment view subclasses implement.
 
@@ -16,6 +17,10 @@ Draws the custom view hierarchy that text attachment view subclasses implement.
 
 ```swift
 func loadView()
+```
+
+```objc
+- (void) loadView;
 ```
 
 #### Discussion

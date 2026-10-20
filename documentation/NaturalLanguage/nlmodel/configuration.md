@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A configuration describing the natural language model.
 
@@ -21,9 +22,14 @@ A configuration describing the natural language model.
 var configuration: NLModelConfiguration { get }
 ```
 
+```objc
+@property (copy, readonly) NLModelConfiguration * configuration;
+```
+
 ## See Also
 
-- [class NLModelConfiguration](nlmodelconfiguration.md)
+### Inspecting a model
+- [class NLModelConfiguration](../nlmodelconfiguration.md)
   The configuration parameters of a natural language model.
 
 

@@ -1,7 +1,8 @@
 # BEMediaEnvironment
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that identifies a media playback or streaming environment.
 
@@ -18,31 +19,32 @@ An object that identifies a media playback or streaming environment.
 
 #### Overview
 
-See [`BEMediaEnvironment`](bemediaenvironment-n91a.md).
+See [`BEMediaEnvironment`](./bemediaenvironment-n91a.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum ProcessCapability](processcapability.md)
+### Extension capabilities
+- [enum ProcessCapability](./processcapability.md)
   Capabilities of a helper extension process.
-- [class BEProcessCapability](beprocesscapability-76ijx.md)
+- [class BEProcessCapability](./beprocesscapability-76ijx.md)
   Capabilities of a helper extension process.
-- [struct MediaEnvironment](mediaenvironment.md)
+- [struct MediaEnvironment](./mediaenvironment.md)
   An object that identifies a media playback or streaming environment.
-- [class BEWebContentFilter](bewebcontentfilter.md)
+- [class BEWebContentFilter](./bewebcontentfilter.md)
   An object that represents a web content filter.
-- [enum RenderingExtensionFeature](renderingextensionfeature.md)
+- [enum RenderingExtensionFeature](./renderingextensionfeature.md)
   Features of a rendering extension.
 
 

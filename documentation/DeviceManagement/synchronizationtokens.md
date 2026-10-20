@@ -1,19 +1,20 @@
 # SynchronizationTokens
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The server’s synchronization token.
 
 ## Declaration
 
-```swift
+```
 object SynchronizationTokens
 ```
 
 ## Mentions
 
-- [Integrating declarative management](integrating-declarative-management.md)
+- [Integrating declarative management](./integrating-declarative-management.md)
 
 ## Properties
 

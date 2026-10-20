@@ -1,7 +1,8 @@
 # MLActivityClassifier.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Model training parameters that direct the training process for an activity classifier model.
 
@@ -17,47 +18,48 @@ struct ModelParameters
 ## Topics
 
 ### Creating parameters
-- [init(validation: MLActivityClassifier.ModelParameters.Validation, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](mlactivityclassifier/modelparameters-swift.struct/init(validation:batchsize:maximumiterations:predictionwindowsize:).md)
+- [init(validation: MLActivityClassifier.ModelParameters.Validation, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](./modelparameters-swift.struct/init%28validation,batchsize,maximumiterations,predictionwindowsize%29.md)
   Creates a set of activity classifier parameters that includes a validation dataset in a data source.
-- [init(validationData:batchSize:maximumIterations:predictionWindowSize:)](mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:).md)
+- [init(validationData:batchSize:maximumIterations:predictionWindowSize:)](./modelparameters-swift.struct/init%28validationdata,batchsize,maximumiterations,predictionwindowsize%29.md)
   Creates a set of activity classifier parameters that includes a validation dataset in a data source.
-- [MLActivityClassifier.ModelParameters.Validation](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum.md)
+- [MLActivityClassifier.ModelParameters.Validation](./modelparameters-swift.struct/validation-swift.enum.md)
   The source of a validation dataset for an activity classifier.
 ### Accessing the training parameters
-- [var validationData: MLDataTable?](mlactivityclassifier/modelparameters-swift.struct/validationdata.md)
+- [var validationData: MLDataTable?](./modelparameters-swift.struct/validationdata.md)
   The activity classifier’s validation dataset.
-- [var batchSize: Int?](mlactivityclassifier/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int?](./modelparameters-swift.struct/batchsize.md)
   The number of sequence chunks the training session uses per iteration.
-- [var maximumIterations: Int?](mlactivityclassifier/modelparameters-swift.struct/maximumiterations.md)
+- [var maximumIterations: Int?](./modelparameters-swift.struct/maximumiterations.md)
   The maximum number of iterations over the training data the training session uses.
-- [var predictionWindowSize: Int?](mlactivityclassifier/modelparameters-swift.struct/predictionwindowsize.md)
+- [var predictionWindowSize: Int?](./modelparameters-swift.struct/predictionwindowsize.md)
   The number of samples for each labeled activity.
-- [var validation: MLActivityClassifier.ModelParameters.Validation](mlactivityclassifier/modelparameters-swift.struct/validation-swift.property.md)
+- [var validation: MLActivityClassifier.ModelParameters.Validation](./modelparameters-swift.struct/validation-swift.property.md)
   The validation data source.
 ### Describing parameters
-- [var description: String](mlactivityclassifier/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the activity-model parameters.
-- [var debugDescription: String](mlactivityclassifier/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the activity-model parameters that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlactivityclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the activity-model parameters shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlactivityclassifier/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlactivityclassifier/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlactivityclassifier/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [MLActivityClassifier.DataSource](mlactivityclassifier/datasource.md)
+### Supporting types
+- [MLActivityClassifier.DataSource](./datasource.md)
   A data source for an activity classifier.
 
 

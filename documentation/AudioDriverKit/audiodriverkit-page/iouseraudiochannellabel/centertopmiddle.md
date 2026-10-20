@@ -1,7 +1,8 @@
 # CenterTopMiddle
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The center top middle channel.
 
@@ -10,19 +11,20 @@ The center top middle channel.
 
 ## Declaration
 
-```swift
+```c
 CenterTopMiddle
 ```
 
 ## See Also
 
-- [Center](audiodriverkit/iouseraudiochannellabel/center.md)
+### Center Channels
+- [Center](./center.md)
   The center channel.
-- [CenterTopFront](audiodriverkit/iouseraudiochannellabel/centertopfront.md)
+- [CenterTopFront](./centertopfront.md)
   The center top front channel.
-- [VerticalHeightCenter](audiodriverkit/iouseraudiochannellabel/verticalheightcenter.md)
+- [VerticalHeightCenter](./verticalheightcenter.md)
   A synonym for the top-center–front channel.
-- [CenterTopRear](audiodriverkit/iouseraudiochannellabel/centertoprear.md)
+- [CenterTopRear](./centertoprear.md)
   The center top rear channel.
 
 

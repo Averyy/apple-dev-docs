@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data set that projects sound of a certain frequency outward in the shape of a cone.
 
@@ -17,6 +18,10 @@ Creates a data set that projects sound of a certain frequency outward in the sha
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

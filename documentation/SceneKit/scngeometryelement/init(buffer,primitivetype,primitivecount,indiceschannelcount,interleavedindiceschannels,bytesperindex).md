@@ -1,21 +1,26 @@
 # init(buffer:primitiveType:primitiveCount:indicesChannelCount:interleavedIndicesChannels:bytesPerIndex:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(buffer: any MTLBuffer, primitiveType: SCNGeometryPrimitiveType, primitiveCount: Int, indicesChannelCount: Int, interleavedIndicesChannels: Bool, bytesPerIndex: Int)
+```
+
+```objc
++ (instancetype) geometryElementWithBuffer:(id<MTLBuffer>) buffer primitiveType:(SCNGeometryPrimitiveType) primitiveType primitiveCount:(NSInteger) primitiveCount indicesChannelCount:(NSInteger) indicesChannelCount interleavedIndicesChannels:(BOOL) interleavedIndicesChannels bytesPerIndex:(NSInteger) bytesPerIndex;
 ```
 
 

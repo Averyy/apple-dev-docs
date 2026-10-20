@@ -1,7 +1,8 @@
 # init(block:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 convenience init(block: @escaping @Sendable () -> Void)
+```
+
+```objc
+- (instancetype) initWithBlock:(void (^)()) block;
 ```
 
 

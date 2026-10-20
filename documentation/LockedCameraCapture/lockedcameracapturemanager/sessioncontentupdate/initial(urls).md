@@ -1,9 +1,10 @@
 # LockedCameraCaptureManager.SessionContentUpdate.initial(urls:)
 
 **Framework**: LockedCameraCapture  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-URLs to directories of the current session content available when beginning observation of [`sessionContentUpdates`](lockedcameracapturemanager/sessioncontentupdates.md).
+URLs to directories of the current session content available when beginning observation of [`sessionContentUpdates`](../sessioncontentupdates.md).
 
 **Availability**:
 - iOS 18.0+

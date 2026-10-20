@@ -1,7 +1,8 @@
 # littleMCP
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The little finger’s metacarpophalangeal (MCP) joint.
 
@@ -19,13 +20,18 @@ The little finger’s metacarpophalangeal (MCP) joint.
 static let littleMCP: VNHumanHandPoseObservation.JointName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameLittleMCP;
+```
+
 ## See Also
 
-- [static let littleTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littletip.md)
+### Little
+- [static let littleTip: VNHumanHandPoseObservation.JointName](./littletip.md)
   The tip of the little finger.
-- [static let littleDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littledip.md)
+- [static let littleDIP: VNHumanHandPoseObservation.JointName](./littledip.md)
   The little finger’s distal interphalangeal (DIP) joint.
-- [static let littlePIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littlepip.md)
+- [static let littlePIP: VNHumanHandPoseObservation.JointName](./littlepip.md)
   The little finger’s proximal interphalangeal (PIP) joint.
 
 

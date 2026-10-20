@@ -1,7 +1,8 @@
 # addressRepresentations
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address representations object that contains various address representations useful for display purposes.
 
@@ -18,6 +19,10 @@ The address representations object that contains various address representations
 
 ```swift
 var addressRepresentations: MKAddressRepresentations? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) MKAddressRepresentations * addressRepresentations;
 ```
 
 

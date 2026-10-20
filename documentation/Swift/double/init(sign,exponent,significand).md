@@ -1,7 +1,8 @@
 # init(sign:exponent:significand:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value from the given sign, exponent, and significand.
 
@@ -50,7 +51,7 @@ For any floating-point value `x` of type `F`, the result of the following is equ
 let x0 = F(sign: x.sign, exponent: x.exponent, significand: x.significand)
 ```
 
-This initializer implements the `scaleB` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This initializer implements the `scaleB` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
@@ -60,22 +61,23 @@ This initializer implements the `scaleB` operation defined by the [`IEEE 754 spe
 
 ## See Also
 
-- [init<Source>(Source)](double/init(_:)-1488d.md)
+### Converting Floating-Point Values
+- [init<Source>(Source)](./init%28_%29-1488d.md)
   Creates a new instance from the given value, rounded to the closest possible representation.
-- [init(Double)](double/init(_:)-o1k9.md)
+- [init(Double)](./init%28_%29-o1k9.md)
   Creates a new instance initialized to the given value.
-- [init(Float)](double/init(_:)-5h7qh.md)
+- [init(Float)](./init%28_%29-5h7qh.md)
   Creates a new instance that approximates the given value.
-- [init(Float16)](double/init(_:)-aeox.md)
+- [init(Float16)](./init%28_%29-aeox.md)
   Creates a new instance that approximates the given value.
-- [init(Float80)](double/init(_:)-9z7ob.md)
+- [init(Float80)](./init%28_%29-9z7ob.md)
   Creates a new instance that approximates the given value.
-- [init(CGFloat)](double/init(_:)-7ag2w.md)
-- [init(signOf: Double, magnitudeOf: Double)](double/init(signof:magnitudeof:).md)
+- [init(CGFloat)](./init%28_%29-7ag2w.md)
+- [init(signOf: Double, magnitudeOf: Double)](./init%28signof,magnitudeof%29.md)
   Creates a new floating-point value using the sign of one value and the magnitude of another.
-- [init<Source>(Source)](double/init(_:)-1oh9r.md)
+- [init<Source>(Source)](./init%28_%29-1oh9r.md)
   Creates a new value, rounded to the closest possible representation.
-- [init(truncating: NSNumber)](double/init(truncating:).md)
+- [init(truncating: NSNumber)](./init%28truncating%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # subscript(scalarAt:)
 
 **Framework**: Core AI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the element at a multi-dimensional `index`.
 
@@ -18,6 +19,8 @@ Access the element at a multi-dimensional `index`.
 subscript<let rank : Int>(scalarAt index: InlineArray<rank, Int>) -> Element { get set }
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Overview
 
 > **Note**: `rank` must be equal to the `rank` of this view.
@@ -28,7 +31,8 @@ subscript<let rank : Int>(scalarAt index: InlineArray<rank, Int>) -> Element { g
 
 ## See Also
 
-- [var contiguousElements: MutableSpan<Element>?](ndarray/mutableview/contiguouselements.md)
+### Accessing elements
+- [var contiguousElements: MutableSpan<Element>?](./contiguouselements.md)
   Returns a `MutableSpan` over the backing memory of this view if the memory is in a contiguous layout, otherwise returns `nil`.
 
 

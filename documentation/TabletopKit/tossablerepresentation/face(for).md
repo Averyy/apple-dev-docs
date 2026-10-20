@@ -1,7 +1,8 @@
 # face(for:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For the shape corresponding to this tossable representation, constructs the face in contact with the table when the equipment has the given resting orientation.
 
@@ -16,21 +17,22 @@ func face(for restingOrientation: Rotation3D) -> any TossableRepresentation.Toss
 
 ## See Also
 
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+### Getting the face
+- [TossableRepresentation.TossableFace](./tossableface.md)
   A protocol that represents a face of a tossable shape.
-- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
+- [TossableRepresentation.SphereFace](./sphereface.md)
   An object that represents an infinitely small area on the surface of a sphere (effectively a point).
-- [TossableRepresentation.CubeFace](tossablerepresentation/cubeface.md)
+- [TossableRepresentation.CubeFace](./cubeface.md)
   One of the faces of a cube
-- [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)
+- [TossableRepresentation.DecahedronFace](./decahedronface.md)
   One of the faces of an decahedron
-- [TossableRepresentation.DodecahedronFace](tossablerepresentation/dodecahedronface.md)
+- [TossableRepresentation.DodecahedronFace](./dodecahedronface.md)
   One of the faces of an dodecahedron
-- [TossableRepresentation.IcosahedronFace](tossablerepresentation/icosahedronface.md)
+- [TossableRepresentation.IcosahedronFace](./icosahedronface.md)
   One of the faces of an icosahedron
-- [TossableRepresentation.OctahedronFace](tossablerepresentation/octahedronface.md)
+- [TossableRepresentation.OctahedronFace](./octahedronface.md)
   One of the faces of an octahedron
-- [TossableRepresentation.TetrahedronFace](tossablerepresentation/tetrahedronface.md)
+- [TossableRepresentation.TetrahedronFace](./tetrahedronface.md)
   One of the faces of a tetrahedron
 
 

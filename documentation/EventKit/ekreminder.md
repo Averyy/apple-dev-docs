@@ -1,7 +1,8 @@
 # EKReminder
 
 **Framework**: EventKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a reminder in a calendar.
 
@@ -19,56 +20,61 @@ A class that represents a reminder in a calendar.
 class EKReminder
 ```
 
+```objc
+@interface EKReminder : EKCalendarItem
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating events and reminders](./creating-events-and-reminders.md)
 
 #### Overview
 
-Use the [`init(eventStore:)`](ekreminder/init(eventstore:).md) method to create a new reminder. Use the properties in the class to get and modify certain information about a reminder.
+Use the [`init(eventStore:)`](./ekreminder/init%28eventstore%29.md) method to create a new reminder. Use the properties in the class to get and modify certain information about a reminder.
 
 ## Topics
 
 ### Creating a Reminder
-- [init(eventStore: EKEventStore)](ekreminder/init(eventstore:).md)
+- [init(eventStore: EKEventStore)](./ekreminder/init%28eventstore%29.md)
   Creates and returns a new reminder in the given event store.
 ### Accessing Reminder Properties
-- [enum EKReminderPriority](ekreminderpriority.md)
+- [enum EKReminderPriority](./ekreminderpriority.md)
   The priority of the reminder.
-- [var priority: Int](ekreminder/priority.md)
+- [var priority: Int](./ekreminder/priority.md)
   The reminder’s priority.
-- [var startDateComponents: DateComponents?](ekreminder/startdatecomponents.md)
+- [var startDateComponents: DateComponents?](./ekreminder/startdatecomponents.md)
   The start date of the task.
-- [var dueDateComponents: DateComponents?](ekreminder/duedatecomponents.md)
+- [var dueDateComponents: DateComponents?](./ekreminder/duedatecomponents.md)
   The date by which the reminder should be completed.
-- [var isCompleted: Bool](ekreminder/iscompleted.md)
+- [var isCompleted: Bool](./ekreminder/iscompleted.md)
   A Boolean value determining whether or not the reminder is marked completed.
-- [var completionDate: Date?](ekreminder/completiondate.md)
+- [var completionDate: Date?](./ekreminder/completiondate.md)
   The date on which the reminder was completed.
 
 ## Relationships
 
 ### Inherits From
-- [EKCalendarItem](ekcalendaritem.md)
+- [EKCalendarItem](./ekcalendaritem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+### Events and reminders
+- [Creating events and reminders](./creating-events-and-reminders.md)
   Create and modify events and reminders in a person’s database.
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Retrieving events and reminders](./retrieving-events-and-reminders.md)
   Fetch events and reminders from the Calendar database.
-- [Updating with notifications](updating-with-notifications.md)
+- [Updating with notifications](./updating-with-notifications.md)
   Register for notifications about changes and keep your app up to date.
-- [Managing location-based reminders](managing-location-based-reminders.md)
+- [Managing location-based reminders](./managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
-- [class EKEvent](ekevent.md)
+- [class EKEvent](./ekevent.md)
   A class that represents an event in a calendar.
 
 

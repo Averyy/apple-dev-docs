@@ -1,7 +1,8 @@
 # kAXTrashDockItemSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The icon in the Dock that represents the Trash.
 
@@ -12,6 +13,10 @@ The icon in the Dock that represents the Trash.
 
 ```swift
 var kAXTrashDockItemSubrole: String { get }
+```
+
+```c
+#define kAXTrashDockItemSubrole
 ```
 
 

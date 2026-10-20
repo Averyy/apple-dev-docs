@@ -1,7 +1,8 @@
 # TextureResource.Drawable
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A drawable associated with a drawable queue
 
@@ -11,7 +12,7 @@ A drawable associated with a drawable queue
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,29 +23,30 @@ class Drawable
 ## Topics
 
 ### Working with a drawable
-- [var drawableQueue: TextureResource.DrawableQueue](textureresource/drawable/drawablequeue.md)
+- [var drawableQueue: TextureResource.DrawableQueue](./drawable/drawablequeue.md)
   The DrawableQueue that this Drawable is owned by
-- [var texture: any MTLTexture](textureresource/drawable/texture.md)
+- [var texture: any MTLTexture](./drawable/texture.md)
   A Metal texture object that contains the drawable’s contents.
-- [func present()](textureresource/drawable/present.md)
+- [func present()](./drawable/present%28%29.md)
   Presents the updated texture to the renderer as soon as possible.
 ### Instance Methods
-- [func presentOnSceneUpdate()](textureresource/drawable/presentonsceneupdate.md)
+- [func presentOnSceneUpdate()](./drawable/presentonsceneupdate%28%29.md)
   Presents the updated texture to the renderer atomically with the current scene update.
 
 ## See Also
 
-- [Rendering a windowed game in stereo](rendering-a-windowed-game-in-stereo.md)
+### Texture drawing
+- [Rendering a windowed game in stereo](../rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
-- [Creating a dynamic height and normal map with low-level texture](creating-a-dynamic-height-map-with-low-level-texture.md)
+- [Creating a dynamic height and normal map with low-level texture](../creating-a-dynamic-height-map-with-low-level-texture.md)
   Create a low-level texture and update its pixel data on the GPU to form a dynamic height and normal map.
-- [class LowLevelTexture](lowleveltexture.md)
+- [class LowLevelTexture](../lowleveltexture.md)
   A container for texture data allowing you to create and update textures using your own format.
-- [LowLevelTexture.Descriptor](lowleveltexture/descriptor-swift.struct.md)
+- [LowLevelTexture.Descriptor](../lowleveltexture/descriptor-swift.struct.md)
   An object that you use to configure new `LowLevelTexture` objects.
-- [TextureResource.DrawableQueue](textureresource/drawablequeue-swift.class.md)
+- [TextureResource.DrawableQueue](./drawablequeue-swift.class.md)
   A drawable queue that may be used to update a texture resource dynamically
-- [TextureResource.DrawableQueue.Descriptor](textureresource/drawablequeue-swift.class/descriptor.md)
+- [TextureResource.DrawableQueue.Descriptor](./drawablequeue-swift.class/descriptor.md)
   Describes the texture managed by the drawable queue
 
 

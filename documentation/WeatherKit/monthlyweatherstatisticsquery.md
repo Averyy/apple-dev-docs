@@ -1,7 +1,8 @@
 # MonthlyWeatherStatisticsQuery
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that encapsulates a generic monthly weather statistics dataset request.
 
@@ -26,23 +27,23 @@ Use the properties of this structure to create a monthly weather statistics quer
 
 Here’s how to get monthly weather statistics for New York City:
 
-```None
+```
 let (monthlyPrecipitationStatistics, monthlyTemperatureStatistics) = try await service.monthlyStatistics(for: newYork, spanning: interval, including: .precipitation, .temperature)
 ```
 
 ## Topics
 
 ### Type Properties
-- [static var precipitation: MonthlyWeatherStatisticsQuery<MonthPrecipitationStatistics>](monthlyweatherstatisticsquery/precipitation.md)
+- [static var precipitation: MonthlyWeatherStatisticsQuery<MonthPrecipitationStatistics>](./monthlyweatherstatisticsquery/precipitation.md)
   The monthly precipitation statistics query.
-- [static var temperature: MonthlyWeatherStatisticsQuery<MonthTemperatureStatistics>](monthlyweatherstatisticsquery/temperature.md)
+- [static var temperature: MonthlyWeatherStatisticsQuery<MonthTemperatureStatistics>](./monthlyweatherstatisticsquery/temperature.md)
   The monthly temperature statistics query.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

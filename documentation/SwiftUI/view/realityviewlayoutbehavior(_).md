@@ -1,7 +1,8 @@
 # realityViewLayoutBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 
@@ -39,13 +40,14 @@ struct ModelWrapperView: View {
 }
 ```
 
-See [`RealityViewLayoutOption`](https://developer.apple.com/documentation/realitykit/realityviewlayoutoption) for a list of options to pass into `realityViewLayoutBehavior(_:)`.
+See [`RealityViewLayoutOption`](../../RealityKit/realityviewlayoutoption.md) for a list of options to pass into `realityViewLayoutBehavior(_:)`.
 
 ## See Also
 
-- [var realityViewCameraControls: CameraControls](environmentvalues/realityviewcameracontrols.md)
+### Configuring camera controls
+- [var realityViewCameraControls: CameraControls](../environmentvalues/realityviewcameracontrols.md)
   The camera controls for the reality view.
-- [func realityViewCameraControls(CameraControls) -> some View](view/realityviewcameracontrols(_:).md)
+- [func realityViewCameraControls(CameraControls) -> some View](./realityviewcameracontrols%28_%29.md)
   Adds gestures that control the position and direction of a virtual camera.
 
 

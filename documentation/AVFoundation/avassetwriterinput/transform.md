@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform to use for display of the output’s visual media.
 
@@ -19,21 +20,26 @@ The transform to use for display of the output’s visual media.
 var transform: CGAffineTransform { get set }
 ```
 
+```objc
+@property (nonatomic) CGAffineTransform transform;
+```
+
 #### Discussion
 
-By default, the input uses the [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity) transform.
+By default, the input uses the [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md) transform.
 
 You can’t set this value after writing starts.
 
 ## See Also
 
-- [var naturalSize: CGSize](avassetwriterinput/naturalsize.md)
+### Configuring presentation
+- [var naturalSize: CGSize](./naturalsize.md)
   The natural display dimensions of the output’s visual media.
-- [var preferredVolume: Float](avassetwriterinput/preferredvolume.md)
+- [var preferredVolume: Float](./preferredvolume.md)
   The volume to prefer for playback of the output’s audio data.
-- [var mediaTimeScale: CMTimeScale](avassetwriterinput/mediatimescale.md)
+- [var mediaTimeScale: CMTimeScale](./mediatimescale.md)
   The time scale of the track in the output file.
-- [var marksOutputTrackAsEnabled: Bool](avassetwriterinput/marksoutputtrackasenabled.md)
+- [var marksOutputTrackAsEnabled: Bool](./marksoutputtrackasenabled.md)
   A Boolean value that indicates whether to enable a track in the output for playback and processing.
 
 

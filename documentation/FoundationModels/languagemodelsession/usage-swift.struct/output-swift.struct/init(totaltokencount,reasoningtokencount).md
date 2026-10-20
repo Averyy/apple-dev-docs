@@ -1,7 +1,8 @@
 # init(totalTokenCount:reasoningTokenCount:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an output token count.
 

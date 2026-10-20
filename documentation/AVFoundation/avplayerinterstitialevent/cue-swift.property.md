@@ -1,7 +1,8 @@
 # cue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A cue to schedule interstitial event playback at a predefined position during primary playback.
 
@@ -20,9 +21,14 @@ A cue to schedule interstitial event playback at a predefined position during pr
 var cue: AVPlayerInterstitialEvent.Cue { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) AVPlayerInterstitialEventCue cue;
+```
+
 ## See Also
 
-- [AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct.md)
+### Configuring cues
+- [AVPlayerInterstitialEvent.Cue](./cue-swift.struct.md)
   A structure that defines standard cues to play interstitial content.
 
 

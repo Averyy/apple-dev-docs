@@ -1,7 +1,8 @@
 # SecProtocolType.NNTPS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates NNTP over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates NNTP over TLS/SSL.
 
 ```swift
 case NNTPS
+```
+
+```c
+kSecProtocolTypeNNTPS
 ```
 
 

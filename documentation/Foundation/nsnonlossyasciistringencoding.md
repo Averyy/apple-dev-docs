@@ -1,7 +1,8 @@
 # NSNonLossyASCIIStringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 7-bit verbose ASCII to represent all Unicode characters.
 
@@ -20,19 +21,24 @@
 var NSNonLossyASCIIStringEncoding: UInt { get }
 ```
 
+```c
+NSNonLossyASCIIStringEncoding
+```
+
 ## See Also
 
-- [var NSASCIIStringEncoding: UInt](nsasciistringencoding.md)
+### 7- and 8-bit Encodings
+- [var NSASCIIStringEncoding: UInt](./nsasciistringencoding.md)
   Strict 7-bit ASCII encoding within 8-bit chars; ASCII values 0…127 only.
-- [var NSISOLatin1StringEncoding: UInt](nsisolatin1stringencoding.md)
+- [var NSISOLatin1StringEncoding: UInt](./nsisolatin1stringencoding.md)
   8-bit ISO Latin 1 encoding.
-- [var NSISOLatin2StringEncoding: UInt](nsisolatin2stringencoding.md)
+- [var NSISOLatin2StringEncoding: UInt](./nsisolatin2stringencoding.md)
   8-bit ISO Latin 2 encoding.
-- [var NSMacOSRomanStringEncoding: UInt](nsmacosromanstringencoding.md)
+- [var NSMacOSRomanStringEncoding: UInt](./nsmacosromanstringencoding.md)
   Classic Macintosh Roman encoding.
-- [var NSNEXTSTEPStringEncoding: UInt](nsnextstepstringencoding.md)
+- [var NSNEXTSTEPStringEncoding: UInt](./nsnextstepstringencoding.md)
   8-bit ASCII encoding with NEXTSTEP extensions.
-- [var NSSymbolStringEncoding: UInt](nssymbolstringencoding.md)
+- [var NSSymbolStringEncoding: UInt](./nssymbolstringencoding.md)
   8-bit Adobe Symbol encoding vector.
 
 

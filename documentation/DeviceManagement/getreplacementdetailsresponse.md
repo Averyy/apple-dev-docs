@@ -1,13 +1,14 @@
 # GetReplacementDetailsResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a replacement device, including the original device it replaces and the date the replacement occurred.
 
 ## Declaration
 
-```swift
+```
 object GetReplacementDetailsResponse
 ```
 

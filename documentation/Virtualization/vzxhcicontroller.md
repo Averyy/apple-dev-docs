@@ -1,7 +1,8 @@
 # VZXHCIController
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a USB Extensible Host Controller Interface (XHCI) controller in a VM.
 
@@ -14,25 +15,30 @@ A class that represents a USB Extensible Host Controller Interface (XHCI) contro
 class VZXHCIController
 ```
 
+```objc
+@interface VZXHCIController : VZUSBController
+```
+
 #### Overview
 
-Don’t create `VZXHCIController` objects directly. Instead, you create a `VZXHCIController` object at runtime though the [`usbControllers`](vzvirtualmachineconfiguration/usbcontrollers.md) property of the [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object by populating it with [`VZXHCIControllerConfiguration`](vzxhcicontrollerconfiguration.md) objects.
+Don’t create `VZXHCIController` objects directly. Instead, you create a `VZXHCIController` object at runtime though the [`usbControllers`](./vzvirtualmachineconfiguration/usbcontrollers.md) property of the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object by populating it with [`VZXHCIControllerConfiguration`](./vzxhcicontrollerconfiguration.md) objects.
 
 ## Relationships
 
 ### Inherits From
-- [VZUSBController](vzusbcontroller.md)
+- [VZUSBController](./vzusbcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZUSBController](vzusbcontroller.md)
+### Controllers
+- [class VZUSBController](./vzusbcontroller.md)
   A class that represents a USB controller in a VM.
 
 

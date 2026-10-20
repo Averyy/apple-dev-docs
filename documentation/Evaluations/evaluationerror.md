@@ -1,7 +1,8 @@
 # EvaluationError
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors thrown during an evaluation run.
 
@@ -33,26 +34,27 @@ do {
 ## Topics
 
 ### Enumeration Cases
-- [EvaluationError.duplicateMetricName(name:)](evaluationerror/duplicatemetricname(name:).md)
+- [EvaluationError.duplicateMetricName(name:)](./evaluationerror/duplicatemetricname%28name%29.md)
   Two evaluators — or a single evaluator returning multiple metrics — produced a metric with the same name for the same sample.
-- [EvaluationError.missingTranscript(evaluatorType:)](evaluationerror/missingtranscript(evaluatortype:).md)
+- [EvaluationError.missingTranscript(evaluatorType:)](./evaluationerror/missingtranscript%28evaluatortype%29.md)
   An evaluator received a subject without the required transcript.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum EvaluatorError](evaluatorerror.md)
+### Errors
+- [enum EvaluatorError](./evaluatorerror.md)
   A value that describes why an evaluator failed while scoring a produced subject.
-- [enum SubjectInferenceError](subjectinferenceerror.md)
+- [enum SubjectInferenceError](./subjectinferenceerror.md)
   A value that describes a failure to produce a subject for a sample.
-- [enum EvaluationResultsError](evaluationresultserror.md)
+- [enum EvaluationResultsError](./evaluationresultserror.md)
   Errors the framework throws when parsing evaluation results.
 
 

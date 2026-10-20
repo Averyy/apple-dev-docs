@@ -1,7 +1,8 @@
 # init(url:format:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio recorder with an audio format.
 
@@ -20,9 +21,13 @@ Creates an audio recorder with an audio format.
 init(url: URL, format: AVAudioFormat) throws
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url format:(AVAudioFormat *) format error:(NSError **) outError;
+```
+
 #### Return Value
 
-A new audio recorder, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an error occurred.
+A new audio recorder, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurred.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ A new audio recorder, or [`nil`](https://developer.apple.com/documentation/objec
 
 ## See Also
 
-- [init(url: URL, settings: [String : Any]) throws](avaudiorecorder/init(url:settings:)-5whyq.md)
+### Creating an audio recorder
+- [init(url: URL, settings: [String : Any]) throws](./init%28url,settings%29-5whyq.md)
   Creates an audio recorder with settings.
 
 

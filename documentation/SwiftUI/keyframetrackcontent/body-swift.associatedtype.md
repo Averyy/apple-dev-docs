@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -21,9 +22,10 @@ associatedtype Body : KeyframeTrackContent
 
 ## See Also
 
-- [var body: Self.Body](keyframetrackcontent/body-swift.property.md)
+### Creating a keyframe
+- [var body: Self.Body](./body-swift.property.md)
   The composition of content that comprise the keyframe track.
-- [associatedtype Value : Animatable = Self.Body.Value](keyframetrackcontent/value.md)
+- [associatedtype Value : Animatable = Self.Body.Value](./value.md)
 
 
 ---

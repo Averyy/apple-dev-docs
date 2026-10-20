@@ -1,6 +1,7 @@
 # Xcode 26.0.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -22,21 +23,22 @@ Xcode 26.0.1 includes Swift 6.2 and SDKs for iOS 26, iPadOS 26, tvOS 26, watchOS
 
 ## See Also
 
-- [Xcode 26.6 Release Notes](xcode-26_6-release-notes.md)
+### Xcode 26
+- [Xcode 26.6 Release Notes](./xcode-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.5 Release Notes](xcode-26_5-release-notes.md)
+- [Xcode 26.5 Release Notes](./xcode-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.4.1 Release Notes](xcode-26_4_1-release-notes.md)
+- [Xcode 26.4.1 Release Notes](./xcode-26_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.4 Release Notes](xcode-26_4-release-notes.md)
+- [Xcode 26.4 Release Notes](./xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.3 Release Notes](xcode-26_3-release-notes.md)
+- [Xcode 26.3 Release Notes](./xcode-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
+- [Xcode 26.2 Release Notes](./xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.1.1 Release Notes](xcode-26_1-release-notes.md)
+- [Xcode 26.1.1 Release Notes](./xcode-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26 Release Notes](xcode-26-release-notes.md)
+- [Xcode 26 Release Notes](./xcode-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

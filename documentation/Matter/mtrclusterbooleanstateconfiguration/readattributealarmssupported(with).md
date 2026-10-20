@@ -1,7 +1,8 @@
 # readAttributeAlarmsSupported(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeAlarmsSupported(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeAlarmsSupportedWithParams:(MTRReadParams *) params;
 ```
 
 

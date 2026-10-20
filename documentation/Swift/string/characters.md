@@ -1,7 +1,8 @@
 # characters
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view of the string’s contents as a collection of characters.
 

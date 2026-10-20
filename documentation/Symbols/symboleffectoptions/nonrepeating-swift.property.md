@@ -1,7 +1,8 @@
 # nonRepeating
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of effect options that prefers to not repeat.
 
@@ -22,15 +23,16 @@ var nonRepeating: SymbolEffectOptions { get }
 
 ## See Also
 
-- [var repeating: SymbolEffectOptions](symboleffectoptions/repeating-swift.property.md)
+### Configuring repeating effects
+- [var repeating: SymbolEffectOptions](./repeating-swift.property.md)
   A set of effect options that prefers to repeat indefinitely.
-- [static var repeating: SymbolEffectOptions](symboleffectoptions/repeating-swift.type.property.md)
+- [static var repeating: SymbolEffectOptions](./repeating-swift.type.property.md)
   A default set of effect options that prefers to repeat indefinitely.
-- [static var nonRepeating: SymbolEffectOptions](symboleffectoptions/nonrepeating-swift.type.property.md)
+- [static var nonRepeating: SymbolEffectOptions](./nonrepeating-swift.type.property.md)
   A default set of effect options that prefers to not repeat.
-- [func `repeat`(Int?) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-314sv.md)
+- [func `repeat`(Int?) -> SymbolEffectOptions](./repeat%28_%29-314sv.md)
   Creates a set of effect options with a preferred repeat count.
-- [static func `repeat`(Int?) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-33816.md)
+- [static func `repeat`(Int?) -> SymbolEffectOptions](./repeat%28_%29-33816.md)
   A default set of effect options with a preferred repeat count.
 
 

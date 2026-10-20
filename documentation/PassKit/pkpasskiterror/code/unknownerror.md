@@ -1,7 +1,8 @@
 # PKPassKitError.Code.unknownError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unknown error.
 
@@ -19,15 +20,20 @@ Unknown error.
 case unknownError
 ```
 
+```c
+PKUnknownError
+```
+
 ## See Also
 
-- [PKPassKitError.Code.invalidDataError](pkpasskiterror/code/invaliddataerror.md)
+### Error codes
+- [PKPassKitError.Code.invalidDataError](./invaliddataerror.md)
   Invalid pass data.
-- [PKPassKitError.Code.unsupportedVersionError](pkpasskiterror/code/unsupportedversionerror.md)
+- [PKPassKitError.Code.unsupportedVersionError](./unsupportedversionerror.md)
   Unsupported pass version.
-- [PKPassKitError.Code.invalidSignature](pkpasskiterror/code/invalidsignature.md)
+- [PKPassKitError.Code.invalidSignature](./invalidsignature.md)
   Invalid pass signature.
-- [PKPassKitError.Code.notEntitledError](pkpasskiterror/code/notentitlederror.md)
+- [PKPassKitError.Code.notEntitledError](./notentitlederror.md)
   Error caused by absence of the required entitlements for the given operation.
 
 

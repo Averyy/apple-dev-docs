@@ -1,7 +1,8 @@
 # compileContentRuleList(forIdentifier:encodedContentRuleList:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compiles the specified JSON content into a new rule list and adds it to the current data store.
 
@@ -15,19 +16,30 @@ Compiles the specified JSON content into a new rule list and adds it to the curr
 ## Declaration
 
 ```swift
+func compileContentRuleList(forIdentifier identifier: String!, encodedContentRuleList: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)
+```
+
+```swift
 func compileContentRuleList(forIdentifier identifier: String!, encodedContentRuleList: String!) async throws -> WKContentRuleList?
+```
+
+```objc
+- (void) compileContentRuleListForIdentifier:(NSString *) identifier encodedContentRuleList:(NSString *) encodedContentRuleList completionHandler:(void (^)(WKContentRuleList *, NSError *)) completionHandler;
 ```
 
 ## Parameters
 
 - `identifier`: A unique identifier for the new list. If a list with the specified identifier already exists in the store, this method overwrites the old rule list with the new content.
-- `encodedContentRuleList`: The JSON source for the new rule list. For information about how to format the JSON content, see [`Creating a content blocker`](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker).
-- `completionHandler`: A completion handler block to call after compilation finishes. This block has no return value and takes the following parameters: - **ruleList**: The [`WKContentRuleList`](wkcontentrulelist.md) object that encapsulates the compiled rules derived from the `encodedContentRuleList` parameter. This parameter is `nil` if an error occurs during compilation.
-- **error**: `nil` on success, or an error object if a problem occurred.
+- `encodedContentRuleList`: The JSON source for the new rule list. For information about how to format the JSON content, see [Creating a content blocker](../../SafariServices/creating-a-content-blocker.md).
+- `completionHandler`: A completion handler block to call after compilation finishes. This block has no return value and takes the following parameters:
+
+  - **ruleList**: The [`WKContentRuleList`](../wkcontentrulelist.md) object that encapsulates the compiled rules derived from the `encodedContentRuleList` parameter. This parameter is `nil` if an error occurs during compilation.
+  - **error**: `nil` on success, or an error object if a problem occurred.
 
 ## See Also
 
-- [func removeContentRuleList(forIdentifier: String!, completionHandler: (((any Error)?) -> Void)!)](wkcontentruleliststore/removecontentrulelist(foridentifier:completionhandler:).md)
+### Creating and Deleting Content Rule Lists
+- [func removeContentRuleList(forIdentifier: String!, completionHandler: (((any Error)?) -> Void)!)](./removecontentrulelist%28foridentifier,completionhandler%29.md)
   Removes a rule list from the current data store asynchronously.
 
 

@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver of the action.
 
@@ -11,7 +12,7 @@ The receiver of the action.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

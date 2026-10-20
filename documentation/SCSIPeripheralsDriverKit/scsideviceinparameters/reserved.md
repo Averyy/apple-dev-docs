@@ -1,7 +1,8 @@
 # reserved
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused field reserved for future use.
 
@@ -10,7 +11,7 @@ An unused field reserved for future use.
 
 ## Declaration
 
-```swift
+```c
 uint8_t reserved[11];
 ```
 

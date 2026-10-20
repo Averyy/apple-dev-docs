@@ -1,7 +1,8 @@
 # scanForward
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The source supports forward scanning at accelerated rates for fast-forward operations. Enables rapid progression through content at speeds greater than normal playback.
 
@@ -14,6 +15,10 @@ The source supports forward scanning at accelerated rates for fast-forward opera
 
 ```swift
 static var scanForward: AVPlaybackUserInterfaceSeekCapabilities { get }
+```
+
+```c
+AVPlaybackUserInterfaceSeekCapabilitiesScanForward
 ```
 
 

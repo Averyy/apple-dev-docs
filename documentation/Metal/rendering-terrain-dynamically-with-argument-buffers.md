@@ -1,6 +1,8 @@
 # Rendering terrain dynamically with argument buffers
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [RenderingTerrainDynamicallyWithArgumentBuffers.zip](https://docs-assets.developer.apple.com/published/56eb378e3977/RenderingTerrainDynamicallyWithArgumentBuffers.zip)
 
 Use argument buffers to render terrain in real time with a GPU-driven pipeline.
 
@@ -20,11 +22,11 @@ This sample demonstrates dynamic terrain generation on an outdoor landscape, usi
 - Grass
 - Sand
 
-![Screenshot of the sample app running to show the different habitats visually.](/images/com.apple.metal/dynamic-terrain-with-argument-buffers-1-screenshot.png)
+![Screenshot of the sample app running to show the different habitats visually.](https://developer.apple.com/tutorials/images/com.apple.metal/dynamic-terrain-with-argument-buffers-1-screenshot.png)
 
-> **Note**: This sample reduces the overhead of encoding commands on the CPU by using argument buffers. For an introduction to argument buffers, see the samples listed in [`Buffers`](buffers.md).
+> **Note**: This sample reduces the overhead of encoding commands on the CPU by using argument buffers. For an introduction to argument buffers, see the samples listed in [Buffers](./buffers.md).
 
-##### Getting Started
+##### Getting started
 
 The Xcode project contains schemes for running the sample in macOS and iOS. Metal isn’t supported in the iOS Simulator, so the iOS scheme requires a physical device that supports GPU family 4 to run the sample. The default scheme is macOS, which runs the sample as is on your Mac.
 
@@ -43,7 +45,7 @@ In iOS, use these controls to navigate the scene:
 
 > **Note**: The particle effects in this sample require a Mac that supports Tier 2 argument buffers. Particle effects aren’t available on iOS devices.
 
-##### Respond to Landscape Alterations
+##### Respond to landscape alterations
 
 The app determines the landscape’s initial topology from a static height map, `TerrainHeightMap.png`.
 
@@ -64,7 +66,7 @@ static void EvaluateTerrainAtLocation(float2 uv,
                                       thread float3 &outNormal)
 ```
 
-##### Define an Argument Buffer for Terrain Habitats
+##### Define an argument buffer for terrain habitats
 
 The sample defines a custom argument buffer structure, `TerrainHabitat`, that defines the elements of a terrain habitat.
 
@@ -124,7 +126,7 @@ struct TerrainParams
 
 `TerrainHabitat` is the specific argument buffer definition for a terrain habitat. However, because the app nests its definition within `TerrainParams`, the app sends the `TerrainParams` objects to the GPU pipeline.
 
-##### Render Terrain
+##### Render terrain
 
 The sample provides the GPU with the textures corresponding to various habitats. First, the sample calls the `useResource:usage:` method to indicate which textures the GPU uses.
 
@@ -171,7 +173,7 @@ BrdfProperties curSubLayerBrdf = sample_brdf(
                                              bitangent);
 ```
 
-##### Render Vegetation
+##### Render vegetation
 
 The sample passes the `terrainParamsBuffer` argument buffer to the vegetation render pass through an instance of `AAPLTerrainRenderer`. This data determines which type of vegetation to render at a given location. First, the sample calls the `setBuffer:offset:atIndex:` method to set the argument buffer for the vegetation render pass.
 
@@ -200,7 +202,7 @@ Finally, the sample uses this population index to render an instance of a partic
 vegetationSpawnInstance(pop_idx, world_matrix, float4(world_pos, radius), globalUniforms, instances, indirect);
 ```
 
-##### Render Particles
+##### Render particles
 
 The sample passes the `terrainParamsBuffer` argument buffer to the particle render pass through an instance of `AAPLTerrainRenderer`. This data determines which type of particles to render at a given location. First, the sample calls the `setBuffer:offset:atIndex:` method to set the argument buffer for the particle render pass.
 
@@ -241,23 +243,24 @@ data.texture = terrainParams.habitats [habitatIndex].diffSpecTextureArray;
 
 ## See Also
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+### Argument buffers
+- [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
   Optimize your app’s performance by grouping your resources into argument buffers.
-- [Managing groups of resources with argument buffers](managing-groups-of-resources-with-argument-buffers.md)
+- [Managing groups of resources with argument buffers](./managing-groups-of-resources-with-argument-buffers.md)
   Create argument buffers to organize related resources.
-- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
   Optimize resource performance within an argument buffer.
-- [Indexing argument buffers](indexing-argument-buffers.md)
+- [Indexing argument buffers](./indexing-argument-buffers.md)
   Assign resource indices within an argument buffer.
-- [Encoding argument buffers on the GPU](encoding-argument-buffers-on-the-gpu.md)
+- [Encoding argument buffers on the GPU](./encoding-argument-buffers-on-the-gpu.md)
   Use a compute pass to encode an argument buffer and access its arguments in a subsequent render pass.
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [class MTLArgumentDescriptor](mtlargumentdescriptor.md)
+- [class MTLArgumentDescriptor](./mtlargumentdescriptor.md)
   A representation of an argument within an argument buffer.
-- [protocol MTLArgumentEncoder](mtlargumentencoder.md)
+- [protocol MTLArgumentEncoder](./mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](./mtlattributestridestatic.md)
 
 
 ---

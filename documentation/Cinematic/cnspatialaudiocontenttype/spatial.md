@@ -1,7 +1,8 @@
 # CNSpatialAudioContentType.spatial
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Export settings to generate an asset with spatial audio and effect burned in
 
@@ -16,6 +17,10 @@ Export settings to generate an asset with spatial audio and effect burned in
 
 ```swift
 case spatial
+```
+
+```c
+CNSpatialAudioContentTypeSpatial
 ```
 
 

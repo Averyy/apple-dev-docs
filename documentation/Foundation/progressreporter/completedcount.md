@@ -1,7 +1,8 @@
 # completedCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The completed units of work. If `self` is indeterminate, the value will be 0.
 

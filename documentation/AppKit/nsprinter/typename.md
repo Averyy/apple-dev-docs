@@ -1,12 +1,13 @@
 # NSPrinter.TypeName
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type you use to describe a printer’s make and model.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,28 +15,33 @@ The type you use to describe a printer’s make and model.
 struct TypeName
 ```
 
+```c
+typedef NSString * NSPrinterTypeName;
+```
+
 ## Topics
 
 ### Initializers
-- [init(String)](nsprinter/typename/init(_:).md)
+- [init(String)](./typename/init%28_%29.md)
   Creates a printer type name.
-- [init(rawValue: String)](nsprinter/typename/init(rawvalue:).md)
+- [init(rawValue: String)](./typename/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var printerNames: [String]](nsprinter/printernames.md)
+### Getting General Printer Information
+- [class var printerNames: [String]](./printernames.md)
   Returns the names of all available printers.
-- [class var printerTypes: [NSPrinter.TypeName]](nsprinter/printertypes.md)
+- [class var printerTypes: [NSPrinter.TypeName]](./printertypes.md)
   Returns descriptions of the makes and models of all available printers.
 
 

@@ -1,7 +1,8 @@
 # MSStickerBrowserViewController
 
 **Framework**: Messages  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that provides dynamic content to the standard sticker browser.
 
@@ -16,75 +17,80 @@ A view controller that provides dynamic content to the standard sticker browser.
 class MSStickerBrowserViewController
 ```
 
+```objc
+@interface MSStickerBrowserViewController : UIViewController
+```
+
 #### Overview
 
-Use the [`MSStickerBrowserViewController`](msstickerbrowserviewcontroller.md) to present the standard sticker browser. This browser provides drag-and-drop functionality. The user can press and hold a sticker to peel it from the browser, then drag the sticker to any balloon in the transcript. The user can also tap stickers to add them to the Messages app’s input field.
+Use the [`MSStickerBrowserViewController`](./msstickerbrowserviewcontroller.md) to present the standard sticker browser. This browser provides drag-and-drop functionality. The user can press and hold a sticker to peel it from the browser, then drag the sticker to any balloon in the transcript. The user can also tap stickers to add them to the Messages app’s input field.
 
-By default, the sticker browser view controller acts as the data source for its [`MSStickerBrowserView`](msstickerbrowserview.md) view (see the [`stickerBrowserView`](msstickerbrowserviewcontroller/stickerbrowserview.md) property). This lets you dynamically change the list of stickers at runtime. You can also customize the size of the stickers inside the browser.
+By default, the sticker browser view controller acts as the data source for its [`MSStickerBrowserView`](./msstickerbrowserview.md) view (see the [`stickerBrowserView`](./msstickerbrowserviewcontroller/stickerbrowserview.md) property). This lets you dynamically change the list of stickers at runtime. You can also customize the size of the stickers inside the browser.
 
-##### Setting the Sticker Browser As Your Root View
+##### Setting the Sticker Browser as Your Root View
 
 To use the sticker browser view controller as your extension’s root view, perform the following steps:
 
-1. Create a custom subclass of the [`MSStickerBrowserViewController`](msstickerbrowserviewcontroller.md) class. For more information, see the subclassing notes.
-2. In Interface Builder, add a container view to your extension’s initial scene and pin it to fill the root view as desired. For more information on setting up a container view, see [`Configuring a Container in Interface Builder`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html#//apple_ref/doc/uid/TP40007457-CH11-SW20).
-3. In the Identity inspector, set the embedded view controller’s class to your custom [`MSStickerBrowserViewController`](msstickerbrowserviewcontroller.md) subclass.
+1. Create a custom subclass of the [`MSStickerBrowserViewController`](./msstickerbrowserviewcontroller.md) class. For more information, see the subclassing notes.
+2. In Interface Builder, add a container view to your extension’s initial scene and pin it to fill the root view as desired. For more information on setting up a container view, see [Configuring a Container in Interface Builder](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html#//apple_ref/doc/uid/TP40007457-CH11-SW20).
+3. In the Identity inspector, set the embedded view controller’s class to your custom [`MSStickerBrowserViewController`](./msstickerbrowserviewcontroller.md) subclass.
 
-By using an [`MSMessagesAppViewController`](msmessagesappviewcontroller.md) instance as the extension’s root view controller, this approach ensures that the root view controller can respond to important messages from the system, while the contained sticker browser view controller focuses on managing your stickers.
+By using an [`MSMessagesAppViewController`](./msmessagesappviewcontroller.md) instance as the extension’s root view controller, this approach ensures that the root view controller can respond to important messages from the system, while the contained sticker browser view controller focuses on managing your stickers.
 
 ##### Subclassing Notes
 
-By default, this controller sets itself as its sticker browser view’s data source. You must either provide another data source, or implement both [`numberOfStickers(in:)`](msstickerbrowserviewdatasource/numberofstickers(in:).md) and [`stickerBrowserView(_:stickerAt:)`](msstickerbrowserviewdatasource/stickerbrowserview(_:stickerat:).md).
+By default, this controller sets itself as its sticker browser view’s data source. You must either provide another data source, or implement both [`numberOfStickers(in:)`](./msstickerbrowserviewdatasource/numberofstickers%28in%29.md) and [`stickerBrowserView(_:stickerAt:)`](./msstickerbrowserviewdatasource/stickerbrowserview%28_,stickerat%29.md).
 
-For more information, see [`MSStickerBrowserViewDataSource`](msstickerbrowserviewdatasource.md).
+For more information, see [`MSStickerBrowserViewDataSource`](./msstickerbrowserviewdatasource.md).
 
 ## Topics
 
 ### Working with Stickers
-- [init(stickerSize: MSStickerSize)](msstickerbrowserviewcontroller/init(stickersize:).md)
+- [init(stickerSize: MSStickerSize)](./msstickerbrowserviewcontroller/init%28stickersize%29.md)
   Creates a new sticker browser view controller with stickers of the provided size.
-- [var stickerBrowserView: MSStickerBrowserView](msstickerbrowserviewcontroller/stickerbrowserview.md)
+- [var stickerBrowserView: MSStickerBrowserView](./msstickerbrowserviewcontroller/stickerbrowserview.md)
   The sticker browser view managed by this controller.
-- [var stickerSize: MSStickerSize](msstickerbrowserviewcontroller/stickersize.md)
+- [var stickerSize: MSStickerSize](./msstickerbrowserviewcontroller/stickersize.md)
   A constant that indicates the size of the stickers.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MSStickerBrowserViewDataSource](msstickerbrowserviewdatasource.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MSStickerBrowserViewDataSource](./msstickerbrowserviewdatasource.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
+### Custom sticker packs
+- [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](./adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
   Enable your Sticker pack or iMessage app in the media context.
-- [Adding your sticker packs to Messages](adding-your-sticker-packs-to-messages.md)
+- [Adding your sticker packs to Messages](./adding-your-sticker-packs-to-messages.md)
   Drag and drop your sticker pack into the Stickers asset catalog to let people access your stickers from Messages.
-- [class MSStickerBrowserView](msstickerbrowserview.md)
+- [class MSStickerBrowserView](./msstickerbrowserview.md)
   A browser view that displays a dynamically generated list of stickers.
-- [class MSStickerView](msstickerview.md)
+- [class MSStickerView](./msstickerview.md)
   A view for displaying a sticker.
-- [enum MSStickerSize](msstickersize.md)
+- [enum MSStickerSize](./msstickersize.md)
   The size of the stickers in the browser view.
 
 

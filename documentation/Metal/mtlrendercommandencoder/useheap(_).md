@@ -2,17 +2,20 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from a heap.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 16.0
+- iPadOS 11.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.13+ - Deprecated in 13.0
+- tvOS 11.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Call [`useHeap(_:stages:)`](./useheap%28_,stages%29.md) instead.
 
 ## Declaration
 
@@ -20,43 +23,48 @@ Ensures the shaders in the render pass’s subsequent draw commands have access 
 func useHeap(_ heap: any MTLHeap)
 ```
 
+```objc
+- (void) useHeap:(id<MTLHeap>) heap;
+```
+
 #### Discussion
 
 You can make the resources in `heap` *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access resources within `heap` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 
-The method’s applies the [`read`](mtlresourceusage/read.md) resource usage option to all of the resources within `heap`, except for textures. The method ignores any texture that has [`renderTarget`](mtltextureusage/rendertarget.md), [`shaderWrite`](mtltextureusage/shaderwrite.md), or both in its [`usage`](mtltexture/usage.md) property. For all other textures in `heap`, the method optimizes each texture’s memory layout for rendering with a sampler. However, your shaders can’t read from those textures by calling this method because the texture needs a different memory layout that’s suitable for reading.
+The method’s applies the [`read`](../mtlresourceusage/read.md) resource usage option to all of the resources within `heap`, except for textures. The method ignores any texture that has [`renderTarget`](../mtltextureusage/rendertarget.md), [`shaderWrite`](../mtltextureusage/shaderwrite.md), or both in its [`usage`](../mtltexture/usage.md) property. For all other textures in `heap`, the method optimizes each texture’s memory layout for rendering with a sampler. However, your shaders can’t read from those textures by calling this method because the texture needs a different memory layout that’s suitable for reading.
 
-> ❗ **Important**:  You can instruct Metal to allow a shader to read from texture or write to other resources in heap, by calling [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md).
+> ❗ **Important**:  You can instruct Metal to allow a shader to read from texture or write to other resources in heap, by calling [`useResource(_:usage:stages:)`](./useresource%28_,usage,stages%29.md).
 
-Methods that apply a usage option for resources (see [`Argument buffer resource preparation commands`](argument-buffer-resource-preparation-commands.md)) override any previous calls that apply to a resource. For example, you can change the usage option for buffer in `heap` to [`write`](mtlresourceusage/write.md) by passing it to [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) after calling this method. However, you can’t reverse the call order because this method resets the usage for all resources within `heap` to [`read`](mtlresourceusage/read.md), overriding previous calls to [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md).
+Methods that apply a usage option for resources (see [Argument buffer resource preparation commands](../argument-buffer-resource-preparation-commands.md)) override any previous calls that apply to a resource. For example, you can change the usage option for buffer in `heap` to [`write`](../mtlresourceusage/write.md) by passing it to [`useResource(_:usage:stages:)`](./useresource%28_,usage,stages%29.md) after calling this method. However, you can’t reverse the call order because this method resets the usage for all resources within `heap` to [`read`](../mtlresourceusage/read.md), overriding previous calls to [`useResource(_:usage:stages:)`](./useresource%28_,usage,stages%29.md).
 
-The method instructs Metal to apply hazard tracking for resources you allocate from a heap that you create with [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md). However, for untracked resources — which come from heaps you create with [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md) — you need to account for hazards by applying [`MTLFence`](mtlfence.md) or [`MTLEvent`](mtlevent.md) instances.
+The method instructs Metal to apply hazard tracking for resources you allocate from a heap that you create with [`MTLHazardTrackingMode.tracked`](../mtlhazardtrackingmode/tracked.md). However, for untracked resources — which come from heaps you create with [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md) — you need to account for hazards by applying [`MTLFence`](../mtlfence.md) or [`MTLEvent`](../mtlevent.md) instances.
 
-> **Note**:  The [`hazardTrackingMode`](mtlheapdescriptor/hazardtrackingmode.md) property of a new [`MTLHeapDescriptor`](mtlheapdescriptor.md) instance is [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md), which is equivalent to [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md) because heaps don’t track resources by default.
+> **Note**:  The [`hazardTrackingMode`](../mtlheapdescriptor/hazardtrackingmode.md) property of a new [`MTLHeapDescriptor`](../mtlheapdescriptor.md) instance is [`MTLHazardTrackingMode.default`](../mtlhazardtrackingmode/default.md), which is equivalent to [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md) because heaps don’t track resources by default.
 
-Apps typically call the method for heaps that have resources in argument buffers for a *bindless* implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call the method for heaps that have resources in argument buffers for a *bindless* implementation. For more information about argument buffers and bindless implementations, see [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md) and [Go bindless with Metal 3](https://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 
-- `heap`: An [`MTLHeap`](mtlheap.md) instance with resources that subsequent draw commands depend on.
+- `heap`: An [`MTLHeap`](../mtlheap.md) instance with resources that subsequent draw commands depend on.
 
 ## See Also
 
-- [func useResource(any MTLResource, usage: MTLResourceUsage)](mtlrendercommandencoder/useresource(_:usage:).md)
+### Deprecated methods
+- [func useResource(any MTLResource, usage: MTLResourceUsage)](./useresource%28_,usage%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
-- [func use(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:usage:stages:).md)
+- [func use(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](./use%28_,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
-- [func useResources([any MTLResource], usage: MTLResourceUsage)](mtlrendercommandencoder/useresources(_:usage:).md)
+- [func useResources([any MTLResource], usage: MTLResourceUsage)](./useresources%28_,usage%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
-- [func use(UnsafePointer<any MTLResource>, count: Int, usage: MTLResourceUsage, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:count:usage:stages:).md)
+- [func use(UnsafePointer<any MTLResource>, count: Int, usage: MTLResourceUsage, stages: MTLRenderStages)](./use%28_,count,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
-- [func use(any MTLHeap, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:stages:).md)
+- [func use(any MTLHeap, stages: MTLRenderStages)](./use%28_,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from a heap.
-- [func useHeaps([any MTLHeap])](mtlrendercommandencoder/useheaps(_:).md)
+- [func useHeaps([any MTLHeap])](./useheaps%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
-- [func use(UnsafePointer<any MTLHeap>, count: Int, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:count:stages:).md)
+- [func use(UnsafePointer<any MTLHeap>, count: Int, stages: MTLRenderStages)](./use%28_,count,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
-- [func textureBarrier()](mtlrendercommandencoder/texturebarrier.md)
+- [func textureBarrier()](./texturebarrier%28%29.md)
   Adds a barrier, which forces any texture read operations to wait until write operations to the same texture finish.
 
 

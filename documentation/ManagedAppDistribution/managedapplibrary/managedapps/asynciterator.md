@@ -1,7 +1,8 @@
 # ManagedAppLibrary.ManagedApps.AsyncIterator
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator for managed apps.
 
@@ -21,24 +22,25 @@ struct AsyncIterator
 ## Topics
 
 ### Iterating
-- [ManagedAppLibrary.ManagedApps.AsyncIterator.Element](managedapplibrary/managedapps/asynciterator/element.md)
+- [ManagedAppLibrary.ManagedApps.AsyncIterator.Element](./asynciterator/element.md)
   The type of element this asynchronous sequence produces.
-- [func next() async throws -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](managedapplibrary/managedapps/asynciterator/next.md)
+- [func next() async throws -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](./asynciterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 ### Instance Methods
-- [func next(isolation: isolated (any Actor)?) async throws(ManagedAppLibrary.ManagedApps.AsyncIterator.Failure) -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](managedapplibrary/managedapps/asynciterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(ManagedAppLibrary.ManagedApps.AsyncIterator.Failure) -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](./asynciterator/next%28isolation%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [ManagedAppLibrary.ManagedApps.Element](managedapplibrary/managedapps/element.md)
+### Obtaining managed apps
+- [ManagedAppLibrary.ManagedApps.Element](./element.md)
   The type of element this asynchronous sequence produces.
-- [func makeAsyncIterator() -> ManagedAppLibrary.ManagedApps.AsyncIterator](managedapplibrary/managedapps/makeasynciterator.md)
+- [func makeAsyncIterator() -> ManagedAppLibrary.ManagedApps.AsyncIterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
 
 

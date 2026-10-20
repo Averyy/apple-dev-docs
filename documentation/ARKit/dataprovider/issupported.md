@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the current runtime environment supports a particular provider type.
@@ -22,7 +23,8 @@ For example, data providers are not supported in Simulator.
 
 ## See Also
 
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](dataprovider/requiredauthorizations.md)
+### Inspecting a data provider type
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The kinds of authorization you need to use a particular data provider type.
 
 

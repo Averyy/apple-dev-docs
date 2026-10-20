@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides support for “if” statements with “available” macro clauses in multi-statement closures, producing conditional content for the “then” branch, such the conditionally-available branch.
 
@@ -30,13 +31,14 @@ Returns the conditional map content that meets the conditions the content builde
 
 ## See Also
 
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalMapContent<TrueContent, FalseContent>](mapcontentbuilder/buildeither(first:).md)
+### Conditionally building map content
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalMapContent<TrueContent, FalseContent>](./buildeither%28first%29.md)
   Compares content in a multistatement closure, resulting in use of the conditional content if the first argument you provide evaluates to  true.
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalMapContent<TrueContent, FalseContent>](mapcontentbuilder/buildeither(second:).md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalMapContent<TrueContent, FalseContent>](./buildeither%28second%29.md)
   Compares content in a multistatement closure, resulting in use of the conditional content if the second argument you provide evaluates to true.
-- [static func buildExpression<Content>(Content) -> Content](mapcontentbuilder/buildexpression(_:).md)
+- [static func buildExpression<Content>(Content) -> Content](./buildexpression%28_%29.md)
   Builds an expression within the map content builder.
-- [static func buildIf<Content>(Content?) -> Content?](mapcontentbuilder/buildif(_:).md)
+- [static func buildIf<Content>(Content?) -> Content?](./buildif%28_%29.md)
   Compares content in a multistatement closure, that produces an optional view that’s visible if the argument you provide evaluates to true.
 
 

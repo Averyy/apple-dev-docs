@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the transition should have an identity effect, i.e. not change the appearance of its view.
 
@@ -26,7 +27,8 @@ This is true in the `identity` phase.
 
 ## See Also
 
-- [var value: Double](transitionphase/value.md)
+### Getting phase characteristics
+- [var value: Double](./value.md)
   A value that can be used to multiply effects that are applied differently depending on the phase.
 
 

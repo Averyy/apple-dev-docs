@@ -1,7 +1,8 @@
 # cameraRelativePosition(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a position relative to the camera for the body joint you specify.
 
@@ -21,7 +22,7 @@ func cameraRelativePosition(_ jointName: VNHumanBodyPose3DObservation.JointName)
 
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
 #### Return Value
 
@@ -33,7 +34,8 @@ The joint position, in meters.
 
 ## See Also
 
-- [var cameraOriginMatrix: simd_float4x4](vnhumanbodypose3dobservation/cameraoriginmatrix.md)
+### Getting the Camera Position
+- [var cameraOriginMatrix: simd_float4x4](./cameraoriginmatrix.md)
   A transform from the skeleton hip to the camera.
 
 

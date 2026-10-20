@@ -1,7 +1,8 @@
 # leakyReLU(with:alpha:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the leaky rectified linear unit (ReLU) activation function on the input tensor.
 
@@ -19,9 +20,13 @@ Computes the leaky rectified linear unit (ReLU) activation function on the input
 func leakyReLU(with tensor: MPSGraphTensor, alpha: Double, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) leakyReLUWithTensor:(MPSGraphTensor *) tensor alpha:(double) alpha name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
 #### Discussion
 

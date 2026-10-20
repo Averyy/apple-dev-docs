@@ -1,7 +1,8 @@
 # SCStreamFrameInfo
 
 **Framework**: ScreenCaptureKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance that defines metadata keys for a stream frame.
 
@@ -19,9 +20,13 @@ An instance that defines metadata keys for a stream frame.
 struct SCStreamFrameInfo
 ```
 
+```c
+typedef NSString * SCStreamFrameInfo;
+```
+
 #### Overview
 
-Use [`SCStreamFrameInfo`](scstreamframeinfo.md) keys to retrieve values from the dictionary of metadata attached to the sample buffers that a stream produces. For example, you can retrieve the display time, content scale, and scaling factor, as shown below:
+Use [`SCStreamFrameInfo`](./scstreamframeinfo.md) keys to retrieve values from the dictionary of metadata attached to the sample buffers that a stream produces. For example, you can retrieve the display time, content scale, and scaling factor, as shown below:
 
 ```swift
 // A dictionary of attachments for a streamed sample buffer.
@@ -35,47 +40,48 @@ let scaleFactor = attachments[.scaleFactor] as? Double ?? 0.0
 ## Topics
 
 ### Frame information constants
-- [static let status: SCStreamFrameInfo](scstreamframeinfo/status.md)
+- [static let status: SCStreamFrameInfo](./scstreamframeinfo/status.md)
   A key to retrieve the status of a video frame.
-- [static let displayTime: SCStreamFrameInfo](scstreamframeinfo/displaytime.md)
+- [static let displayTime: SCStreamFrameInfo](./scstreamframeinfo/displaytime.md)
   A key to retrieve the display time of a video frame.
-- [static let scaleFactor: SCStreamFrameInfo](scstreamframeinfo/scalefactor.md)
+- [static let scaleFactor: SCStreamFrameInfo](./scstreamframeinfo/scalefactor.md)
   A key to retrieve the scale factor of a video frame.
-- [static let contentScale: SCStreamFrameInfo](scstreamframeinfo/contentscale.md)
+- [static let contentScale: SCStreamFrameInfo](./scstreamframeinfo/contentscale.md)
   A key to retrieve the content scale of a video frame.
-- [static let contentRect: SCStreamFrameInfo](scstreamframeinfo/contentrect.md)
+- [static let contentRect: SCStreamFrameInfo](./scstreamframeinfo/contentrect.md)
   A key to retrieve the content rectangle of a video frame.
-- [static let boundingRect: SCStreamFrameInfo](scstreamframeinfo/boundingrect.md)
+- [static let boundingRect: SCStreamFrameInfo](./scstreamframeinfo/boundingrect.md)
   A key to retrieve the bounding rectangle for a video frame.
-- [static let screenRect: SCStreamFrameInfo](scstreamframeinfo/screenrect.md)
+- [static let screenRect: SCStreamFrameInfo](./scstreamframeinfo/screenrect.md)
   A key to retrieve the onscreen location of captured content.
-- [static let dirtyRects: SCStreamFrameInfo](scstreamframeinfo/dirtyrects.md)
+- [static let dirtyRects: SCStreamFrameInfo](./scstreamframeinfo/dirtyrects.md)
   A key to retrieve the areas of a video frame that contain changes.
-- [static let presenterOverlayContentRect: SCStreamFrameInfo](scstreamframeinfo/presenteroverlaycontentrect.md)
+- [static let presenterOverlayContentRect: SCStreamFrameInfo](./scstreamframeinfo/presenteroverlaycontentrect.md)
 ### Initializers
-- [init(rawValue: String)](scstreamframeinfo/init(rawvalue:).md)
+- [init(rawValue: String)](./scstreamframeinfo/init%28rawvalue%29.md)
   Creates a new instance with a raw value.
 ### Type Properties
-- [static let videoOrientation: SCStreamFrameInfo](scstreamframeinfo/videoorientation.md)
+- [static let videoOrientation: SCStreamFrameInfo](./scstreamframeinfo/videoorientation.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol SCStreamOutput](scstreamoutput.md)
+### Output processing
+- [protocol SCStreamOutput](./scstreamoutput.md)
   A delegate protocol your app implements to receive capture stream output events.
-- [enum SCStreamOutputType](scstreamoutputtype.md)
+- [enum SCStreamOutputType](./scstreamoutputtype.md)
   Constants that represent output types for a stream frame.
-- [enum SCFrameStatus](scframestatus.md)
+- [enum SCFrameStatus](./scframestatus.md)
   Status values for a frame from a stream.
-- [class SCClipBufferingOutput](scclipbufferingoutput.md)
+- [class SCClipBufferingOutput](./scclipbufferingoutput.md)
 
 
 ---

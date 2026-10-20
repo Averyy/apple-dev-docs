@@ -1,7 +1,8 @@
 # catch(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles errors from an upstream publisher by replacing it with another publisher.
 
@@ -53,11 +54,12 @@ Backpressure note: This publisher passes through `request` and `cancel` to the u
 
 ## See Also
 
-- [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](publisher/assertnofailure(_:file:line:).md)
+### Handling errors
+- [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](./assertnofailure%28_,file,line%29.md)
   Raises a fatal error when its upstream publisher fails, and otherwise republishes all received input.
-- [func tryCatch<P>((Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P>](publisher/trycatch(_:).md)
+- [func tryCatch<P>((Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P>](./trycatch%28_%29.md)
   Handles errors from an upstream publisher by either replacing it with another publisher or throwing a new error.
-- [func retry(Int) -> Publishers.Retry<Self>](publisher/retry(_:).md)
+- [func retry(Int) -> Publishers.Retry<Self>](./retry%28_%29.md)
   Attempts to recreate a failed subscription with the upstream publisher up to the number of times you specify.
 
 

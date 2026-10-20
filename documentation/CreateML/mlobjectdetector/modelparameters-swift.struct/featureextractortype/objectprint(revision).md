@@ -1,7 +1,8 @@
 # MLObjectDetector.ModelParameters.FeatureExtractorType.objectPrint(revision:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor you use with a transfer-learning algorithm for object detectors.
 

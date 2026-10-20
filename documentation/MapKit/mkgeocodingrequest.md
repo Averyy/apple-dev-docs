@@ -1,7 +1,8 @@
 # MKGeocodingRequest
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that looks up a geographic coordinate using the provided string.
 
@@ -20,9 +21,13 @@ A class that looks up a geographic coordinate using the provided string.
 class MKGeocodingRequest
 ```
 
+```objc
+@interface MKGeocodingRequest : NSObject
+```
+
 #### Discussion
 
-Use this class to look up the coordinate for an address string you provide, for example if you want to display the location in a map. This example shows how to use a [`Task`](https://developer.apple.com/documentation/swift/task) modifier on a SwiftUI view to geocode an array of street addresses to the corresponding coordinates that MapKit returns in an array of [`MKMapItem`](mkmapitem.md) objects.
+Use this class to look up the coordinate for an address string you provide, for example if you want to display the location in a map. This example shows how to use a [`Task`](../Swift/task.md) modifier on a SwiftUI view to geocode an array of street addresses to the corresponding coordinates that MapKit returns in an array of [`MKMapItem`](./mkmapitem.md) objects.
 
 ```swift
 
@@ -67,41 +72,42 @@ struct MyGeocoderView: View {
 ## Topics
 
 ### Creating a geocoding request object
-- [init?(addressString: String)](mkgeocodingrequest/init(addressstring:).md)
+- [init?(addressString: String)](./mkgeocodingrequest/init%28addressstring%29.md)
   Initializes a new geocoder request object with the provided address string.
 ### Getting the geocoder’s state
-- [var isLoading: Bool](mkgeocodingrequest/isloading.md)
+- [var isLoading: Bool](./mkgeocodingrequest/isloading.md)
   A Boolean value that indicates whether the current geocoding request is in a loading state.
-- [var isCancelled: Bool](mkgeocodingrequest/iscancelled.md)
+- [var isCancelled: Bool](./mkgeocodingrequest/iscancelled.md)
   A Boolean value that indicates whether the current geocoding request is in a cancelled state.
 ### Controlling the geocoder’s operation
-- [func cancel()](mkgeocodingrequest/cancel.md)
+- [func cancel()](./mkgeocodingrequest/cancel%28%29.md)
   A function you call to cancel a geocoding request that’s in progress.
 ### Getting information about the geocoder
-- [var addressString: String](mkgeocodingrequest/addressstring.md)
+- [var addressString: String](./mkgeocodingrequest/addressstring.md)
   The string used to initialize the geocoder.
-- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](mkgeocodingrequest/getmapitems(completionhandler:).md)
+- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](./mkgeocodingrequest/getmapitems%28completionhandler%29.md)
   Returns the map items relevant to the geocoded location.
-- [var preferredLocale: Locale?](mkgeocodingrequest/preferredlocale.md)
+- [var preferredLocale: Locale?](./mkgeocodingrequest/preferredlocale.md)
   A value that indicates the default locale the geocoder should use when processing requests.
-- [var region: MKCoordinateRegion](mkgeocodingrequest/region.md)
+- [var region: MKCoordinateRegion](./mkgeocodingrequest/region.md)
   The geographic region for the framework to use as the bounds for the request; defaults to a region that covers the whole world.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKReverseGeocodingRequest](mkreversegeocodingrequest.md)
+### Geocoding
+- [class MKReverseGeocodingRequest](./mkreversegeocodingrequest.md)
   A class that looks up address strings for the provided geographic coordinates.
 
 

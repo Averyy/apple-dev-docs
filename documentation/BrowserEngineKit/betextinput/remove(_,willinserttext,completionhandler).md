@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes a placeholder object from the text input view.
@@ -15,7 +16,15 @@ Removes a placeholder object from the text input view.
 ## Declaration
 
 ```swift
+func remove(_ placeholder: UITextPlaceholder, willInsertText: Bool, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func remove(_ placeholder: UITextPlaceholder, willInsertText: Bool) async
+```
+
+```objc
+- (void) removeTextPlaceholder:(UITextPlaceholder *) placeholder willInsertText:(BOOL) willInsertText completionHandler:(void (^)()) completionHandler;
 ```
 
 

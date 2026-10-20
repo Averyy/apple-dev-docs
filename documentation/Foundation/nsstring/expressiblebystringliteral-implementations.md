@@ -1,11 +1,12 @@
 # ExpressibleByStringLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(stringLiteral: StaticString)](nsstring/init(stringliteral:).md)
+- [convenience init(stringLiteral: StaticString)](./init%28stringliteral%29.md)
   Create an instance initialized to `value`.
 
 

@@ -1,7 +1,8 @@
 # smartInsertDeleteType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration state for the smart insertion and deletion of space characters.
 
@@ -18,21 +19,26 @@ The configuration state for the smart insertion and deletion of space characters
 optional var smartInsertDeleteType: UITextSmartInsertDeleteType { get set }
 ```
 
+```objc
+@property (nonatomic) UITextSmartInsertDeleteType smartInsertDeleteType;
+```
+
 #### Discussion
 
-Use this property to configure whether UIKit may insert an extra space after a paste operation or delete one or two spaces after a cut or delete operation. The default value of this property is [`UITextSmartInsertDeleteType.default`](uitextsmartinsertdeletetype/default.md), which selectively enables the behavior based on the keyboard type.
+Use this property to configure whether UIKit may insert an extra space after a paste operation or delete one or two spaces after a cut or delete operation. The default value of this property is [`UITextSmartInsertDeleteType.default`](../uitextsmartinsertdeletetype/default.md), which selectively enables the behavior based on the keyboard type.
 
 ## See Also
 
-- [var smartQuotesType: UITextSmartQuotesType](uitextinputtraits/smartquotestype.md)
+### Configuring the autoformatting behaviors
+- [var smartQuotesType: UITextSmartQuotesType](./smartquotestype.md)
   The configuration state for smart quotes.
-- [enum UITextSmartQuotesType](uitextsmartquotestype.md)
+- [enum UITextSmartQuotesType](../uitextsmartquotestype.md)
   Constants that indicate whether to enable or disable smart quotes.
-- [var smartDashesType: UITextSmartDashesType](uitextinputtraits/smartdashestype.md)
+- [var smartDashesType: UITextSmartDashesType](./smartdashestype.md)
   The configuration state for smart dashes.
-- [enum UITextSmartDashesType](uitextsmartdashestype.md)
+- [enum UITextSmartDashesType](../uitextsmartdashestype.md)
   Constants that specify the automatic conversion behavior between hyphens and en or em dashes.
-- [enum UITextSmartInsertDeleteType](uitextsmartinsertdeletetype.md)
+- [enum UITextSmartInsertDeleteType](../uitextsmartinsertdeletetype.md)
   Constants that specify whether to automatically insert extra spaces after a paste operation or to delete them after a cut or delete operation.
 
 

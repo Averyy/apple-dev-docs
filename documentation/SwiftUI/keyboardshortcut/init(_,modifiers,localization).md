@@ -1,7 +1,8 @@
 # init(_:modifiers:localization:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new keyboard shortcut with the given key equivalent and set of modifier keys.
 
@@ -24,9 +25,10 @@ Use the `localization` parameter to specify a localization strategy for this sho
 
 ## See Also
 
-- [var localization: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.property.md)
+### Creating a localized shortcut
+- [var localization: KeyboardShortcut.Localization](./localization-swift.property.md)
   The localization strategy to apply to this shortcut.
-- [KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct.md)
+- [KeyboardShortcut.Localization](./localization-swift.struct.md)
   Options for how a keyboard shortcut participates in automatic localization.
 
 

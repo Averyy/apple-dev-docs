@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the specified rectangle intersects the overlay’s shape.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the specified rectangle intersect
 optional func intersects(_ mapRect: MKMapRect) -> Bool
 ```
 
+```objc
+- (BOOL) intersectsMapRect:(MKMapRect) mapRect;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if any part of the map rectangle intersects the receiver’s shape, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](../../Swift/true.md) if any part of the map rectangle intersects the receiver’s shape, or [`false`](../../Swift/false.md) if it doesn’t.
 
 #### Discussion
 

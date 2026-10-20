@@ -1,7 +1,8 @@
 # HKElectrocardiogramQueryDescriptor.Results
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits data about individual voltage measurements from an electrocardiogram sample.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that emits data about individual voltage measurements f
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,17 +23,18 @@ struct Results
 ## Topics
 
 ### Creating an Iterator
-- [HKElectrocardiogramQueryDescriptor.Results.Iterator](hkelectrocardiogramquerydescriptor/results/iterator.md)
+- [HKElectrocardiogramQueryDescriptor.Results.Iterator](./results/iterator.md)
   An iterator for accessing individual voltage measurements from the series.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func results(for: HKHealthStore) -> HKElectrocardiogramQueryDescriptor.Results](hkelectrocardiogramquerydescriptor/results(for:).md)
+### Running Queries
+- [func results(for: HKHealthStore) -> HKElectrocardiogramQueryDescriptor.Results](./results%28for%29.md)
   Runs a one-shot query that returns an asynchronous sequence of data representing individual heartbeats.
 
 

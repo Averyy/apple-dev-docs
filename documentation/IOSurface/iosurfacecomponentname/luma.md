@@ -1,7 +1,8 @@
 # IOSurfaceComponentName.luma
 
 **Framework**: IOSurface  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,15 +18,20 @@
 case luma
 ```
 
+```c
+kIOSurfaceComponentNameLuma
+```
+
 ## See Also
 
-- [IOSurfaceComponentName.alpha](iosurfacecomponentname/alpha.md)
-- [IOSurfaceComponentName.blue](iosurfacecomponentname/blue.md)
-- [IOSurfaceComponentName.chromaBlue](iosurfacecomponentname/chromablue.md)
-- [IOSurfaceComponentName.chromaRed](iosurfacecomponentname/chromared.md)
-- [IOSurfaceComponentName.green](iosurfacecomponentname/green.md)
-- [IOSurfaceComponentName.red](iosurfacecomponentname/red.md)
-- [IOSurfaceComponentName.unknown](iosurfacecomponentname/unknown.md)
+### Enumeration Cases
+- [IOSurfaceComponentName.alpha](./alpha.md)
+- [IOSurfaceComponentName.blue](./blue.md)
+- [IOSurfaceComponentName.chromaBlue](./chromablue.md)
+- [IOSurfaceComponentName.chromaRed](./chromared.md)
+- [IOSurfaceComponentName.green](./green.md)
+- [IOSurfaceComponentName.red](./red.md)
+- [IOSurfaceComponentName.unknown](./unknown.md)
 
 
 ---

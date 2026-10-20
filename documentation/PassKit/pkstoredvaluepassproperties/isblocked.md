@@ -1,7 +1,8 @@
 # isBlocked
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the pass issuer disabled a stored-value pass.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates the pass issuer disabled a stored-value pass.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ The pass issuer is responsible for blocking a stored-value pass according to the
 
 ## See Also
 
-- [var balances: [PKStoredValuePassBalance]](pkstoredvaluepassproperties/balances.md)
+### Reading the stored-value pass properties
+- [var balances: [PKStoredValuePassBalance]](./balances.md)
   The amount available for transactions for a service represented by a stored-value pass.
-- [var expirationDate: Date?](pkstoredvaluepassproperties/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The expiration date of a pass.
-- [var isBlacklisted: Bool](pkstoredvaluepassproperties/isblacklisted.md)
+- [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
 
 

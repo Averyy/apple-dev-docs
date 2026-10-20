@@ -1,7 +1,8 @@
 # FIMenuKind
 
 **Framework**: Finder Sync  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The different kinds of custom menus that the Finder Sync extension can provide.
 
@@ -14,29 +15,33 @@ The different kinds of custom menus that the Finder Sync extension can provide.
 enum FIMenuKind
 ```
 
+```c
+enum FIMenuKind : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [FIMenuKind.contextualMenuForItems](fimenukind/contextualmenuforitems.md)
+- [FIMenuKind.contextualMenuForItems](./fimenukind/contextualmenuforitems.md)
   A shortcut menu created when the user control-clicks on an item or a group of selected items inside the Finder window.
-- [FIMenuKind.contextualMenuForContainer](fimenukind/contextualmenuforcontainer.md)
+- [FIMenuKind.contextualMenuForContainer](./fimenukind/contextualmenuforcontainer.md)
   A shortcut menu created when the user control-clicks on the Finder window’s background.
-- [FIMenuKind.contextualMenuForSidebar](fimenukind/contextualmenuforsidebar.md)
+- [FIMenuKind.contextualMenuForSidebar](./fimenukind/contextualmenuforsidebar.md)
   A shortcut menu created when the user control-clicks on an item in the sidebar.
-- [FIMenuKind.toolbarItemMenu](fimenukind/toolbaritemmenu.md)
+- [FIMenuKind.toolbarItemMenu](./fimenukind/toolbaritemmenu.md)
   A menu created when the user clicks on the extension’s toolbar button.
 ### Initializers
-- [init?(rawValue: UInt)](fimenukind/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./fimenukind/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # sessionType
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -14,9 +15,14 @@
 var sessionType: SRTextInputSession.SessionType { get }
 ```
 
+```objc
+@property (readonly) SRTextInputSessionType sessionType;
+```
+
 ## See Also
 
-- [SRTextInputSession.SessionType](srtextinputsession/sessiontype-swift.enum.md)
+### Inspecting Text Source
+- [SRTextInputSession.SessionType](./sessiontype-swift.enum.md)
   Methods to input text during a session.
 
 

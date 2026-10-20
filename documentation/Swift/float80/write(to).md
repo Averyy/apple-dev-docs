@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes a textual representation of this instance into the given output stream.
 

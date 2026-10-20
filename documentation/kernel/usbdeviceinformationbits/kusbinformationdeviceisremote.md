@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsRemote
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 This device attaches to the controller through a remote connection.
 
@@ -10,7 +11,7 @@ This device attaches to the controller through a remote connection.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsRemote = 11
 ```
 

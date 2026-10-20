@@ -1,21 +1,22 @@
 # AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion.Data](appcustomproductpagelocalization/relationships-data.dictionary/appcustomproductpageversion-data.dictionary/data-data.dictionary.md)
+- [object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion.Data](./appcustomproductpageversion-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -23,8 +24,9 @@ object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersio
 
 ## See Also
 
-- [object AppCustomProductPageLocalization.Relationships.AppPreviewSets](appcustomproductpagelocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)
-- [object AppCustomProductPageLocalization.Relationships.AppScreenshotSets](appcustomproductpagelocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary.md)
+### Objects
+- [object AppCustomProductPageLocalization.Relationships.AppPreviewSets](./apppreviewsets-data.dictionary.md)
+- [object AppCustomProductPageLocalization.Relationships.AppScreenshotSets](./appscreenshotsets-data.dictionary.md)
 
 
 ---

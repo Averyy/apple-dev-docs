@@ -1,7 +1,8 @@
 # CKDatabase.DatabaseChange.Deletion.Reason.encryptedDataReset
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user chose to reset all encrypted data for their account.
 
@@ -11,7 +12,7 @@ The user chose to reset all encrypted data for their account.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

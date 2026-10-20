@@ -1,7 +1,8 @@
 # outputTextureMaps
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of texture maps to create in the model.
 
@@ -19,7 +20,7 @@ var outputTextureMaps: PhotogrammetrySession.Configuration.CustomDetailSpecifica
 
 This setting can reduce model size by only requesting maps that will be used on the target renderer. Example to get just color and normal maps:
 
-```None
+```
 var detailSpec = PhotogrammetrySession.Request.Detail.Specification()
 detailSpec.outputTextureMaps = [.diffuseColor, .normal]
 ```

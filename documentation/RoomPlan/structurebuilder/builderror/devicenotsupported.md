@@ -1,7 +1,8 @@
 # StructureBuilder.BuildError.deviceNotSupported
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the framework doesn’t support the user’s device.
 

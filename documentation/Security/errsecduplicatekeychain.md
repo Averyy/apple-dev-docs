@@ -1,7 +1,8 @@
 # errSecDuplicateKeychain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A keychain with the same name already exists.
 
@@ -18,6 +19,10 @@ A keychain with the same name already exists.
 
 ```swift
 var errSecDuplicateKeychain: OSStatus { get }
+```
+
+```c
+errSecDuplicateKeychain
 ```
 
 

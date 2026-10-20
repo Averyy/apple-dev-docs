@@ -1,23 +1,28 @@
 # gravity
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A vector that specifies the gravitational acceleration applied to physics bodies in the physics world.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var gravity: CGVector { get set }
+```
+
+```objc
+@property (nonatomic) CGVector gravity;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The components of this property are measured in meters per second. The default v
 
 ## See Also
 
-- [var speed: CGFloat](skphysicsworld/speed.md)
+### Configuring the Physics World
+- [var speed: CGFloat](./speed.md)
   The rate at which the simulation executes.
 
 

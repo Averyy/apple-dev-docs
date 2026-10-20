@@ -1,7 +1,8 @@
 # cellUpdateHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that updates the contents of the placeholder cell.
 
@@ -15,6 +16,10 @@ The block that updates the contents of the placeholder cell.
 
 ```swift
 var cellUpdateHandler: ((UITableViewCell) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^cellUpdateHandler)(UITableViewCell *);
 ```
 
 #### Discussion

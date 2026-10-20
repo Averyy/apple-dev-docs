@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The display name the system shows to represent this domain.
@@ -18,7 +19,8 @@ var displayName: String { get }
 
 ## See Also
 
-- [var identifier: String](contactproviderdomain/identifier.md)
+### Identifying the domain
+- [var identifier: String](./identifier.md)
   The identifier of the domain.
 
 

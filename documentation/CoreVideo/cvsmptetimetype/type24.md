@@ -1,7 +1,8 @@
 # CVSMPTETimeType.type24
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 24 frames per second (standard film).
 
@@ -20,21 +21,26 @@
 case type24
 ```
 
+```c
+kCVSMPTETimeType24
+```
+
 ## See Also
 
-- [CVSMPTETimeType.type25](cvsmptetimetype/type25.md)
+### Constants
+- [CVSMPTETimeType.type25](./type25.md)
   25 frames per second (standard PAL).
-- [CVSMPTETimeType.type2997](cvsmptetimetype/type2997.md)
+- [CVSMPTETimeType.type2997](./type2997.md)
   29.97 frames per second (standard NTSC).
-- [CVSMPTETimeType.type2997Drop](cvsmptetimetype/type2997drop.md)
+- [CVSMPTETimeType.type2997Drop](./type2997drop.md)
   29.97 drop frame.
-- [CVSMPTETimeType.type30](cvsmptetimetype/type30.md)
+- [CVSMPTETimeType.type30](./type30.md)
   30 frames per second.
-- [CVSMPTETimeType.type30Drop](cvsmptetimetype/type30drop.md)
+- [CVSMPTETimeType.type30Drop](./type30drop.md)
   30 drop frame.
-- [CVSMPTETimeType.type5994](cvsmptetimetype/type5994.md)
+- [CVSMPTETimeType.type5994](./type5994.md)
   59.94 frames per second.
-- [CVSMPTETimeType.type60](cvsmptetimetype/type60.md)
+- [CVSMPTETimeType.type60](./type60.md)
   60 frames per second.
 
 

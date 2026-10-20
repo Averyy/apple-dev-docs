@@ -1,7 +1,8 @@
 # onaudioprocess
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,13 +10,13 @@
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler onaudioprocess;
 ```
 
 #### Discussion
 
-This attribute uses [`AudioContext`](audionode/1631014-audiocontext.md), so you need to trigger this handler with a touch event. 
+This attribute uses [`AudioContext`](../audionode/api-1631014-audiocontext.md), so you need to trigger this handler with a touch event. 
 
 
 ---

@@ -1,7 +1,8 @@
 # setConstantValue(_:type:index:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a value for a function constant at a specific index.
 
@@ -17,6 +18,10 @@ Sets a value for a function constant at a specific index.
 
 ```swift
 func setConstantValue(_ value: UnsafeRawPointer, type: MTLDataType, index: Int)
+```
+
+```objc
+- (void) setConstantValue:(const void *) value type:(MTLDataType) type atIndex:(NSUInteger) index;
 ```
 
 #### Discussion
@@ -53,11 +58,13 @@ MTLFunctionConstantValues* constantValues = [MTLFunctionConstantValues new];
 
 ## See Also
 
-- [Metal Shading Language Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, withName: String)](mtlfunctionconstantvalues/setconstantvalue(_:type:withname:).md)
+### Related Documentation
+- [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Setting constant values
+- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, withName: String)](./setconstantvalue%28_,type,withname%29.md)
   Sets a value for a function constant with a specific name.
-- [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](mtlfunctionconstantvalues/setconstantvalues(_:type:range:).md)
+- [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](./setconstantvalues%28_,type,range%29.md)
   Sets values for a group of function constants within a specific index range.
 
 

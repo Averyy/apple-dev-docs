@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that handles the execution of the action.
 
@@ -14,11 +15,16 @@ The closure that handles the execution of the action.
 var handler: (() -> Bool)? { get set }
 ```
 
+```objc
+@property (copy, nullable) BOOL (^handler)();
+```
+
 ## See Also
 
-- [var target: (any NSObjectProtocol)?](nsaccessibilitycustomaction/target.md)
+### Getting the Action
+- [var target: (any NSObjectProtocol)?](./target.md)
   The object that performs the action through a selector.
-- [var selector: Selector?](nsaccessibilitycustomaction/selector.md)
+- [var selector: Selector?](./selector.md)
   The method to call on the target to perform the action.
 
 

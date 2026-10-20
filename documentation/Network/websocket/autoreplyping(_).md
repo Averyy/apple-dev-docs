@@ -1,7 +1,8 @@
 # autoReplyPing(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure the WebSocket protocol to automatically reply to pings.
 

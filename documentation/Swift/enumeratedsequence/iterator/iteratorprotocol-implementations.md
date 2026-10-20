@@ -1,14 +1,15 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> EnumeratedSequence<Base>.Iterator.Element?](enumeratedsequence/iterator/next.md)
+- [func next() -> EnumeratedSequence<Base>.Iterator.Element?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [EnumeratedSequence.Iterator.Element](enumeratedsequence/iterator/element.md)
+- [EnumeratedSequence.Iterator.Element](./element.md)
   The type of element returned by `next()`.
 
 

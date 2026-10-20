@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines whether to authorize an app to use this stream.
@@ -16,9 +17,13 @@ Determines whether to authorize an app to use this stream.
 func authorizedToStartStream(for client: CMIOExtensionClient) -> Bool
 ```
 
+```objc
+- (BOOL) authorizedToStartStreamForClient:(CMIOExtensionClient *) client;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you authorize the app; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you authorize the app; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -26,9 +31,10 @@ func authorizedToStartStream(for client: CMIOExtensionClient) -> Bool
 
 ## See Also
 
-- [func startStream() throws](cmioextensionstreamsource/startstream.md)
+### Managing a Stream
+- [func startStream() throws](./startstream%28%29.md)
   Starts the stream of media data.
-- [func stopStream() throws](cmioextensionstreamsource/stopstream.md)
+- [func stopStream() throws](./stopstream%28%29.md)
   Stops the stream of media data.
 
 

@@ -1,7 +1,8 @@
 # onOpenURL(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a handler to invoke in response to a URL that your app receives.
 
@@ -27,21 +28,22 @@ A view that handles incoming URLs.
 
 #### Discussion
 
-Use this view modifier to receive URLs in a particular scene within your app. The scene that SwiftUI routes the incoming URL to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md).
+Use this view modifier to receive URLs in a particular scene within your app. The scene that SwiftUI routes the incoming URL to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](../scene/handlesexternalevents%28matching%29.md).
 
-UI frameworks traditionally pass Universal Links to your app using an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity). However, SwiftUI passes a Universal Link to your app directly as a URL, which you receive using this modifier. To receive other user activities, like when your app participates in Handoff, use the [`onContinueUserActivity(_:perform:)`](view/oncontinueuseractivity(_:perform:).md) modifier instead.
+UI frameworks traditionally pass Universal Links to your app using an [`NSUserActivity`](../../Foundation/nsuseractivity.md). However, SwiftUI passes a Universal Link to your app directly as a URL, which you receive using this modifier. To receive other user activities, like when your app participates in Handoff, use the [`onContinueUserActivity(_:perform:)`](./oncontinueuseractivity%28_,perform%29.md) modifier instead.
 
-For more information about linking into your app, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content).
+For more information about linking into your app, see [Allowing apps and websites to link to your content](../../Xcode/allowing-apps-and-websites-to-link-to-your-content.md).
 
 ## Parameters
 
-- `action`: A closure that SwiftUI calls when your app receives a Universal Link or a custom [`URL`](https://developer.apple.com/documentation/foundation/url). The closure takes the URL as an input parameter.
+- `action`: A closure that SwiftUI calls when your app receives a Universal Link or a custom [`URL`](../../Foundation/url.md). The closure takes the URL as an input parameter.
 
 ## See Also
 
-- [var openURL: OpenURLAction](environmentvalues/openurl.md)
+### Sending and receiving URLs
+- [var openURL: OpenURLAction](../environmentvalues/openurl.md)
   An action that opens a URL.
-- [struct OpenURLAction](openurlaction.md)
+- [struct OpenURLAction](../openurlaction.md)
   An action that opens a URL.
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.slovakia
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Slovakia in the HID specification.
 

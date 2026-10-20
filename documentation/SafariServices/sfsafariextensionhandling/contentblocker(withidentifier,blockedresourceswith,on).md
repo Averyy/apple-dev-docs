@@ -1,7 +1,8 @@
 # contentBlocker(withIdentifier:blockedResourcesWith:on:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the handler which resources a content blocker blocked on a webpage.
 
@@ -12,6 +13,10 @@ Tells the handler which resources a content blocker blocked on a webpage.
 
 ```swift
 optional func contentBlocker(withIdentifier contentBlockerIdentifier: String, blockedResourcesWith urls: [URL], on page: SFSafariPage)
+```
+
+```objc
+- (void) contentBlockerWithIdentifier:(NSString *) contentBlockerIdentifier blockedResourcesWithURLs:(NSArray<NSURL *> *) urls onPage:(SFSafariPage *) page;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # countLimit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of objects the cache should hold.
 
@@ -20,6 +21,10 @@ The maximum number of objects the cache should hold.
 var countLimit: Int { get set }
 ```
 
+```objc
+@property NSUInteger countLimit;
+```
+
 #### Discussion
 
 If `0`, there is no count limit. The default value is `0`.
@@ -28,7 +33,8 @@ This is not a strict limit—if the cache goes over the limit, an object in the 
 
 ## See Also
 
-- [var totalCostLimit: Int](nscache/totalcostlimit.md)
+### Managing Cache Size
+- [var totalCostLimit: Int](./totalcostlimit.md)
   The maximum total cost that the cache can hold before it starts evicting objects.
 
 

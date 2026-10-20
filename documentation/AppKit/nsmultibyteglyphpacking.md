@@ -1,17 +1,22 @@
 # NSMultibyteGlyphPacking
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A constant for glyph packing.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
 
 ## Declaration
 
 ```swift
 enum NSMultibyteGlyphPacking
+```
+
+```c
+enum NSMultibyteGlyphPacking : NSUInteger;
 ```
 
 #### Overview
@@ -21,35 +26,36 @@ Cocoa stores all text data as Unicode. The text system converts Unicode into gly
 ## Topics
 
 ### Packing Options
-- [NSMultibyteGlyphPacking.nativeShortGlyphPacking](nsmultibyteglyphpacking/nativeshortglyphpacking.md)
+- [NSMultibyteGlyphPacking.nativeShortGlyphPacking](./nsmultibyteglyphpacking/nativeshortglyphpacking.md)
   The native format for macOS.
 ### Initializers
-- [init?(rawValue: UInt)](nsmultibyteglyphpacking/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsmultibyteglyphpacking/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Glyph Attributes](glyph-attributes.md)
+### Deprecated enumerations
+- [Glyph Attributes](./glyph-attributes.md)
   Attributes that are used only inside the glyph generation machinery, but must also be shared between components.
-- [enum NSOpenGLGlobalOption](nsopenglglobaloption.md)
+- [enum NSOpenGLGlobalOption](./nsopenglglobaloption.md)
   Constants that specify OpenGL options.
-- [Data Entry Types](data-entry-types.md)
+- [Data Entry Types](./data-entry-types.md)
   These constants specify how a cell formats numeric data.
-- [Anonymous](nsbuttontypes-anonymous.md)
-- [Additional Writing Directions](additional-writing-directions.md)
+- [Anonymous](./nsbuttontypes-anonymous.md)
+- [Additional Writing Directions](./additional-writing-directions.md)
   Constants that specify additional options when setting the writing direction of attributed strings.
-- [Return values for modal operations](return-values-for-modal-operations.md)
-  Historical return values for [`runModal(for:)`](nsapplication/runmodal(for:).md) and [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md).
-- [Tags of Views in the FontPanel](tags-of-views-in-the-fontpanel.md)
+- [Return values for modal operations](./return-values-for-modal-operations.md)
+  Historical return values for [`runModal(for:)`](./nsapplication/runmodal%28for%29.md) and [`runModalSession(_:)`](./nsapplication/runmodalsession%28_%29.md).
+- [Tags of Views in the FontPanel](./tags-of-views-in-the-fontpanel.md)
   These constants are obsolete and should not be used.
 
 

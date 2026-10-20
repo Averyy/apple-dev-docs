@@ -1,7 +1,8 @@
 # dateIssued
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the doctor issued the prescription.
 
@@ -19,13 +20,18 @@ The date when the doctor issued the prescription.
 var dateIssued: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * dateIssued;
+```
+
 ## See Also
 
-- [var prescriptionType: HKVisionPrescriptionType](hkvisionprescription/prescriptiontype.md)
+### Accessing the prescription data
+- [var prescriptionType: HKVisionPrescriptionType](./prescriptiontype.md)
   The type of vision prescription.
-- [enum HKVisionPrescriptionType](hkvisionprescriptiontype.md)
+- [enum HKVisionPrescriptionType](../hkvisionprescriptiontype.md)
   The type of vision prescription, for example a prescription for glasses or for contacts.
-- [var expirationDate: Date?](hkvisionprescription/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date when the prescription expires.
 
 

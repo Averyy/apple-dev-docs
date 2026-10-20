@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The type of this atom.
 
@@ -11,9 +12,10 @@ This field must be set to `'rmra'`.
 
 ## See Also
 
-- [Size](reference_movie_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this reference movie atom.
-- [Reference movie descriptor atom](reference_movie_atom/reference_movie_descriptor_atom.md)
+- [Reference movie descriptor atom](./reference_movie_descriptor_atom.md)
   A reference movie atom must contain at least one reference movie descriptor atom, and typically contains more than one.
 
 

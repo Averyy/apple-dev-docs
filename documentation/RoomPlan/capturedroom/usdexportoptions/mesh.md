@@ -1,7 +1,8 @@
 # mesh
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An export option that formats the output file as a collection of size-independant triangles that connect to form a mesh.
 
@@ -22,9 +23,10 @@ A mesh model stores elements as polygonal units. You infer element size based on
 
 ## See Also
 
-- [static let parametric: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/parametric.md)
+### Choosing an export option
+- [static let parametric: CapturedRoom.USDExportOptions](./parametric.md)
   An export option that formats the output file as a collection of size-dependent primitives.
-- [static let model: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/model.md)
+- [static let model: CapturedRoom.USDExportOptions](./model.md)
   An export option that formats the output file as a collection of 3D models.
 
 

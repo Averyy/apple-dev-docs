@@ -1,7 +1,8 @@
 # machineReadableCode
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that analyzes an image for machine-readable codes, such as QR codes.
 
@@ -20,7 +21,7 @@ static let machineReadableCode: ImageAnalyzer.AnalysisTypes
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../../enabling-live-text-interactions-with-images.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ Aztec, Codebar, Code 39 Checksum, Code 39, Code 39 Full ASCII, Code 39 Full ASCI
 
 ## See Also
 
-- [static let text: ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes/text.md)
+### Specifying types to find
+- [static let text: ImageAnalyzer.AnalysisTypes](./text.md)
   An option that analyzes an image for text.
-- [static let visualLookUp: ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes/visuallookup.md)
+- [static let visualLookUp: ImageAnalyzer.AnalysisTypes](./visuallookup.md)
   An option that analyzes an image for subjects that the framework can look up for more information.
 
 

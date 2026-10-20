@@ -1,6 +1,7 @@
 # Creating a Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Build a Safari web extension in Xcode.
 
@@ -8,7 +9,7 @@ Build a Safari web extension in Xcode.
 
 To create a Safari web extension, you create an Xcode project using the Safari Extension App template. The project includes the Safari web extension as a macOS or iOS app extension that users can download from the App Store and install in Safari. The Xcode project includes default web extension files, such as the manifest, script files for a content page and background page, files for the toolbar pop-up menu, and folders for images and internationalization.
 
-##### Create and Configure the Xcode Project
+##### Create and configure the Xcode project
 
 To create a new project in Xcode:
 
@@ -19,7 +20,7 @@ To create a new project in Xcode:
 
 Xcode then displays the “Choose options for your new project” dialog, as in the following figure:
 
-![A screenshot of the Choose options for your new project dialog in Xcode. The Product Name field is empty. The Team dropdown says Add account. The Organization Identifier is com.examples. The Bundle Identifier is com.examples.ProductName. The selected Type is Safari Web Extension. The selected Language is Swift. Include Tests is unchecked. The Next button is disabled.](/images/com.apple.safariservices/media-3744497@2x.png)
+![A screenshot of the Choose options for your new project dialog in Xcode. The Product Name field is empty. The Team dropdown says Add account. The Organization Identifier is com.examples. The Bundle Identifier is com.examples.ProductName. The selected Type is Safari Web Extension. The selected Language is Swift. Include Tests is unchecked. The Next button is disabled.](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-3744497@2x.png)
 
 Provide information in the dialog for Xcode to configure your project:
 
@@ -33,11 +34,11 @@ Provide information in the dialog for Xcode to configure your project:
 
 > **Note**:  XCTest doesn’t support unit tests for the JavaScript APIs that Safari web extensions use, or UI tests in Safari. Use XCTest if you build features in the iOS or macOS app container using Swift or Objective-C.
 
-##### Review the Generated Web Extension Files and Folders
+##### Review the generated web extension files and folders
 
 Xcode generates the project, provides default versions of the files you need to create your Safari web extension, and organizes them into the groups and folders illustrated in the following figure:
 
-![A screenshot of the Xcode Project navigator showing the HelloWorld Extension group expanded, and the Resources group inside it expanded. The Resources group contains a _locales folder, an images folder, and the manifest.json, background.js, content.js, popup.html, popup.css, and popup.js files.](/images/com.apple.safariservices/media-3744500@2x.png)
+![A screenshot of the Xcode Project navigator showing the HelloWorld Extension group expanded, and the Resources group inside it expanded. The Resources group contains a _locales folder, an images folder, and the manifest.json, background.js, content.js, popup.html, popup.css, and popup.js files.](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-3744500@2x.png)
 
 The project contains default versions of web extension files in the Resources group:
 
@@ -50,9 +51,9 @@ The project contains default versions of web extension files in the Resources gr
 
 > 💡 **Tip**:  To use your web extension in other browsers, repackage the files in the Resources group. The other files in the Xcode project are for the iOS or macOS app the system needs to use your web extension in Safari.
 
-See [`Running your Safari web extension`](running-your-safari-web-extension.md) to try out your web extension in Safari.
+See [Running your Safari web extension](./running-your-safari-web-extension.md) to try out your web extension in Safari.
 
-##### Replace the Default Icons and Toolbar Icons
+##### Replace the default icons and toolbar icons
 
 Xcode provides default icons and toolbar icons for your Safari web extension in the Resources > images folder. Safari uses the icon images in Preferences > Extensions to display in the list of icons that the user can select to see more detail about your extension. Safari uses the toolbar icon images when your extension has a pop-up webpage that the user can access from Safari’s toolbar.
 
@@ -60,15 +61,16 @@ Replace the default icons with icon images customized for your web extension. Us
 
 Replace the toolbar icons with a toolbar image customized for your web extension. Use a PNG format, and provide 16-, 19-, 32-, and 38-pixel sizes.
 
-Before you distribute your Safari web extension, create icons for the iOS and macOS apps that contain your extension, and add them to the AppIcon entries in the Assets.xcassets files for each platform. Your app icons should relate visually to your extension icon and toolbar icon. For more information about creating your app icons and detailed requirements, see [`Human Interface Guidelines > App icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/app-icon/).
+Before you distribute your Safari web extension, create icons for the iOS and macOS apps that contain your extension, and add them to the AppIcon entries in the Assets.xcassets files for each platform. Your app icons should relate visually to your extension icon and toolbar icon. For more information about creating your app icons and detailed requirements, see [Human Interface Guidelines > App icons](https://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/app-icon/).
 
 ## See Also
 
-- [Building and testing a Safari web extension](building-and-testing-a-safari-web-extension.md)
+### New extensions
+- [Building and testing a Safari web extension](./building-and-testing-a-safari-web-extension.md)
   Get started with Safari web extensions by creating one from the ground up, using any code editor.
-- [Modernizing Safari Web Extensions](modernizing-safari-web-extensions.md)
+- [Modernizing Safari Web Extensions](./modernizing-safari-web-extensions.md)
   Learn about enhancements to Safari Web Extensions.
-- [Developing a Safari Web Extension](developing-a-safari-web-extension.md)
+- [Developing a Safari Web Extension](./developing-a-safari-web-extension.md)
   Customize and enhance web pages by building a Safari web extension.
 
 

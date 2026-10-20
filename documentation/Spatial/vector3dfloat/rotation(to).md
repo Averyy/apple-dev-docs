@@ -1,7 +1,8 @@
 # rotation(to:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rotation from the normalized first vector to the normalized second vector.
 

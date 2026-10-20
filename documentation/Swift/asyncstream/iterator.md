@@ -1,7 +1,8 @@
 # AsyncStream.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The asynchronous iterator for iterating an asynchronous stream.
 
@@ -27,22 +28,23 @@ This type doesn’t conform to `Sendable`. Don’t use it from multiple concurre
 ## Topics
 
 ### Iterating over Elements
-- [func next() async -> Element?](asyncstream/iterator/next.md)
+- [func next() async -> Element?](./iterator/next%28%29.md)
   The next value from the asynchronous stream.
 ### Instance Methods
-- [func next(isolation: isolated (any Actor)?) async -> Element?](asyncstream/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async -> Element?](./iterator/next%28isolation%29.md)
   The next value from the asynchronous stream.
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncstream/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AsyncStream<Element>.Iterator](asyncstream/makeasynciterator.md)
+### Creating an Iterator
+- [func makeAsyncIterator() -> AsyncStream<Element>.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

@@ -1,7 +1,8 @@
 # currentPath
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network path the connection is using.
 
@@ -22,11 +23,12 @@ final var currentPath: NWPath? { get }
 
 ## See Also
 
-- [var pathUpdateHandler: ((NWPath) -> Void)?](nwconnection/pathupdatehandler.md)
+### Handling Path Updates
+- [var pathUpdateHandler: ((NWPath) -> Void)?](./pathupdatehandler.md)
   A handler that receives network path updates.
-- [var viabilityUpdateHandler: ((Bool) -> Void)?](nwconnection/viabilityupdatehandler.md)
+- [var viabilityUpdateHandler: ((Bool) -> Void)?](./viabilityupdatehandler.md)
   A handler that receives updates when data can be sent and received.
-- [var betterPathUpdateHandler: ((Bool) -> Void)?](nwconnection/betterpathupdatehandler.md)
+- [var betterPathUpdateHandler: ((Bool) -> Void)?](./betterpathupdatehandler.md)
   A handler that receives updates when an alternative network path is preferred over the current path.
 
 

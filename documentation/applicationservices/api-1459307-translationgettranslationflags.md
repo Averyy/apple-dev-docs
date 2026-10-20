@@ -1,7 +1,8 @@
 # TranslationGetTranslationFlags(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func TranslationGetTranslationFlags(_ inTranslation: Translation!, _ outTranslationFlags: UnsafeMutablePointer<TranslationFlags>!) -> OSStatus
+```
+
+```c
+OSStatus TranslationGetTranslationFlags(TranslationRef inTranslation, TranslationFlags *outTranslationFlags);
 ```
 
 

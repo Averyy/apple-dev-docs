@@ -1,7 +1,8 @@
 # init(start:end:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new time range with the start and end dates and times that you specify.
 
@@ -17,6 +18,10 @@ Creates a new time range with the start and end dates and times that you specify
 
 ```swift
 init?(start startDateComponents: DateComponents, end endDateComponents: DateComponents)
+```
+
+```objc
+- (instancetype) initWithStartDateComponents:(NSDateComponents *) startDateComponents endDateComponents:(NSDateComponents *) endDateComponents;
 ```
 
 ## Parameters

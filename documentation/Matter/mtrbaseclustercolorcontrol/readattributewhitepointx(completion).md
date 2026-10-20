@@ -1,7 +1,8 @@
 # readAttributeWhitePointX(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWhitePointX(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWhitePointX() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWhitePointXWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

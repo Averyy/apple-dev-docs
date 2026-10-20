@@ -1,7 +1,8 @@
 # terminationHandler
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A completion block the system invokes when the task completes.
 
@@ -14,11 +15,15 @@ A completion block the system invokes when the task completes.
 var terminationHandler: (@Sendable (Process) -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^)(NSTask *) terminationHandler;
+```
+
 #### Discussion
 
 The system passes the task object to the block to allow access to the task parameters, for example to determine if the task completed successfully.
 
-This block isn’t guaranteed to be fully executed prior to [`waitUntilExit()`](process/waituntilexit().md) returning.
+This block isn’t guaranteed to be fully executed prior to [`waitUntilExit()`](./waituntilexit%28%29.md) returning.
 
 
 ---

@@ -1,7 +1,8 @@
 # defaultAllocator()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 10.0+
@@ -17,9 +18,14 @@
 class func defaultAllocator() -> any MPSImageAllocator
 ```
 
+```objc
++ (id<MPSImageAllocator>) defaultAllocator;
+```
+
 ## See Also
 
-- [protocol MPSImageAllocator](mpsimageallocator.md)
+### Methods to Get an Image Allocator
+- [protocol MPSImageAllocator](../mpsimageallocator.md)
 
 
 ---

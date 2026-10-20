@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The module’s bundle identifier.
 
@@ -14,11 +15,16 @@ The module’s bundle identifier.
 var bundleIdentifier: String { get }
 ```
 
+```objc
+@property (readonly) NSString * bundleIdentifier;
+```
+
 ## See Also
 
-- [var url: URL](fsmoduleidentity/url.md)
+### Accessing module properties
+- [var url: URL](./url.md)
   The module’s URL.
-- [var isEnabled: Bool](fsmoduleidentity/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates if the module is enabled.
 
 

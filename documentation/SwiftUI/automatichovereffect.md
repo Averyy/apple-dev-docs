@@ -1,7 +1,8 @@
 # AutomaticHoverEffect
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default hover effect based on the surrounding context.
 
@@ -20,28 +21,29 @@ struct AutomaticHoverEffect
 
 #### Overview
 
-The automatic effect will resolve to any [`defaultHoverEffect(_:)`](view/defaulthovereffect(_:).md) applied to the current View hierarchy, or a system-defined effect if no default effect has been defined.
+The automatic effect will resolve to any [`defaultHoverEffect(_:)`](./view/defaulthovereffect%28_%29.md) applied to the current View hierarchy, or a system-defined effect if no default effect has been defined.
 
-You can also use [`automatic`](customhovereffect/automatic.md) to construct this hover effect.
+You can also use [`automatic`](./customhovereffect/automatic.md) to construct this hover effect.
 
 ## Topics
 
 ### Initializers
-- [init()](automatichovereffect/init.md)
+- [init()](./automatichovereffect/init%28%29.md)
   Creates an automatic hover effect.
 
 ## Relationships
 
 ### Conforms To
-- [CustomHoverEffect](customhovereffect.md)
+- [CustomHoverEffect](./customhovereffect.md)
 
 ## See Also
 
-- [struct EmptyHoverEffect](emptyhovereffect.md)
+### Supporting types
+- [struct EmptyHoverEffect](./emptyhovereffect.md)
   A base hover effect used to build additional effects.
-- [struct HighlightHoverEffect](highlighthovereffect.md)
+- [struct HighlightHoverEffect](./highlighthovereffect.md)
   A hover effect that highlights views using a light source to indicate position.
-- [struct LiftHoverEffect](lifthovereffect.md)
+- [struct LiftHoverEffect](./lifthovereffect.md)
   A hover effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
 

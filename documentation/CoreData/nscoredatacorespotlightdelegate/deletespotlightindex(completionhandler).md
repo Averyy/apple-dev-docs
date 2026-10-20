@@ -1,7 +1,8 @@
 # deleteSpotlightIndex(completionHandler:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes all searchable items from the configured index.
 
@@ -15,7 +16,15 @@ Deletes all searchable items from the configured index.
 ## Declaration
 
 ```swift
+func deleteSpotlightIndex(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func deleteSpotlightIndex() async throws
+```
+
+```objc
+- (void) deleteSpotlightIndexWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -24,15 +33,16 @@ The closure returns no value and takes only a single parameter, which is an erro
 
 Depending on the cause of the issue, an error can originate from Core Data or from Core Spotlight. Make sure your app can handle both scenarios.
 
-> **Note**:  You must call [`stopSpotlightIndexing()`](nscoredatacorespotlightdelegate/stopspotlightindexing().md) before you call this method; otherwise, Core Data immediately recreates the index.
+> **Note**:  You must call [`stopSpotlightIndexing()`](./stopspotlightindexing%28%29.md) before you call this method; otherwise, Core Data immediately recreates the index.
 
 ## See Also
 
-- [func attributeSet(for: NSManagedObject) -> CSSearchableItemAttributeSet?](nscoredatacorespotlightdelegate/attributeset(for:).md)
+### Managing the Index
+- [func attributeSet(for: NSManagedObject) -> CSSearchableItemAttributeSet?](./attributeset%28for%29.md)
   Returns the searchable attributes for the specified managed object.
-- [func startSpotlightIndexing()](nscoredatacorespotlightdelegate/startspotlightindexing.md)
+- [func startSpotlightIndexing()](./startspotlightindexing%28%29.md)
   Starts the indexing of the store’s entities.
-- [func stopSpotlightIndexing()](nscoredatacorespotlightdelegate/stopspotlightindexing.md)
+- [func stopSpotlightIndexing()](./stopspotlightindexing%28%29.md)
   Stops the indexing of the store’s entities.
 
 

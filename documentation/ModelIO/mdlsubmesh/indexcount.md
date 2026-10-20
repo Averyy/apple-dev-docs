@@ -1,7 +1,8 @@
 # indexCount
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of indices in the submesh’s index buffer.
 
@@ -19,21 +20,26 @@ The number of indices in the submesh’s index buffer.
 var indexCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger indexCount;
+```
+
 #### Discussion
 
 Use this index count when rendering the submesh.
 
 ## See Also
 
-- [var indexBuffer: any MDLMeshBuffer](mdlsubmesh/indexbuffer.md)
+### Working with a Submesh’s Index Buffer
+- [var indexBuffer: any MDLMeshBuffer](./indexbuffer.md)
   An object that provides index data for the submesh.
-- [var indexType: MDLIndexBitDepth](mdlsubmesh/indextype.md)
+- [var indexType: MDLIndexBitDepth](./indextype.md)
   The data type for each element in the submesh’s index buffer.
-- [var geometryType: MDLGeometryType](mdlsubmesh/geometrytype.md)
+- [var geometryType: MDLGeometryType](./geometrytype.md)
   The type of geometric primitives described by the submesh’s index buffer.
-- [var topology: MDLSubmeshTopology?](mdlsubmesh/topology.md)
+- [var topology: MDLSubmeshTopology?](./topology.md)
   A description of how the non-uniform layout of the submesh’s index buffer defines the shape of the mesh.
-- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](mdlsubmesh/indexbuffer(asindextype:).md)
+- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](./indexbuffer%28asindextype%29.md)
 
 
 ---

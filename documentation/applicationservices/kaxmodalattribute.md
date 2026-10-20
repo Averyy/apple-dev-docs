@@ -1,7 +1,8 @@
 # kAXModalAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the window represented by this accessibility object is modal. This attribute is recommended for all accessibility objects that represent windows.
 
@@ -12,6 +13,10 @@ Indicates whether the window represented by this accessibility object is modal. 
 
 ```swift
 var kAXModalAttribute: String { get }
+```
+
+```c
+#define kAXModalAttribute
 ```
 
 

@@ -1,7 +1,8 @@
 # controlTextDidEndEditing(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the control finished editing its text content and committed the changes.
 
@@ -15,11 +16,15 @@ Tells the delegate that the control finished editing its text content and commit
 optional func controlTextDidEndEditing(_ obj: Notification)
 ```
 
+```objc
+- (void) controlTextDidEndEditing:(NSNotification *) obj;
+```
+
 #### Discussion
 
 Use the key `“NSFieldEditor”` to obtain the field editor from the notification object’s `userInfo` dictionary.
 
-> **Note**:  If you call [`abortEditing()`](nscontrol/abortediting().md) to discard pending edits, the control doesn’t call [`controlTextDidEndEditing(_:)`](nscontroltexteditingdelegate/controltextdidendediting(_:).md).
+> **Note**:  If you call [`abortEditing()`](../nscontrol/abortediting%28%29.md) to discard pending edits, the control doesn’t call [`controlTextDidEndEditing(_:)`](./controltextdidendediting%28_%29.md).
 
 ## Parameters
 
@@ -27,9 +32,10 @@ Use the key `“NSFieldEditor”` to obtain the field editor from the notificati
 
 ## See Also
 
-- [func controlTextDidBeginEditing(Notification)](nscontroltexteditingdelegate/controltextdidbeginediting(_:).md)
+### Instance Methods
+- [func controlTextDidBeginEditing(Notification)](./controltextdidbeginediting%28_%29.md)
   Tells the delegate that the control started editing its text content.
-- [func controlTextDidChange(Notification)](nscontroltexteditingdelegate/controltextdidchange(_:).md)
+- [func controlTextDidChange(Notification)](./controltextdidchange%28_%29.md)
   Tells the delegate that the control made changes to its text content.
 
 

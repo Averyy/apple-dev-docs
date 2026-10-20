@@ -1,7 +1,8 @@
 # AVAudioRoutingArbiter.Category
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Categories that describe the general nature of your app’s audio use.
 
@@ -14,6 +15,10 @@ Categories that describe the general nature of your app’s audio use.
 enum Category
 ```
 
+```c
+enum AVAudioRoutingArbitrationCategory : NSInteger;
+```
+
 #### Overview
 
 The category provides context that helps the operating system arbitrate between Apple devices that are trying to take ownership of a Bluetooth audio route.
@@ -21,30 +26,31 @@ The category provides context that helps the operating system arbitrate between 
 ## Topics
 
 ### Creating a category
-- [init?(rawValue: Int)](avaudioroutingarbiter/category/init(rawvalue:).md)
+- [init?(rawValue: Int)](./category/init%28rawvalue%29.md)
 ### Choosing an arbitration category
-- [AVAudioRoutingArbiter.Category.playback](avaudioroutingarbiter/category/playback.md)
+- [AVAudioRoutingArbiter.Category.playback](./category/playback.md)
   The app plays audio.
-- [AVAudioRoutingArbiter.Category.playAndRecord](avaudioroutingarbiter/category/playandrecord.md)
+- [AVAudioRoutingArbiter.Category.playAndRecord](./category/playandrecord.md)
   The app plays and records audio.
-- [AVAudioRoutingArbiter.Category.playAndRecordVoice](avaudioroutingarbiter/category/playandrecordvoice.md)
+- [AVAudioRoutingArbiter.Category.playAndRecordVoice](./category/playandrecordvoice.md)
   The app uses Voice over IP (VoIP).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func begin(category: AVAudioRoutingArbiter.Category, completionHandler: (Bool, (any Error)?) -> Void)](avaudioroutingarbiter/begin(category:completionhandler:).md)
+### Joining AirPods automatic switching
+- [func begin(category: AVAudioRoutingArbiter.Category, completionHandler: (Bool, (any Error)?) -> Void)](./begin%28category,completionhandler%29.md)
   Begins routing arbitration to take ownership of a nearby Bluetooth audio route.
-- [func leave()](avaudioroutingarbiter/leave.md)
+- [func leave()](./leave%28%29.md)
   Stops an app’s participation in audio routing arbitration.
 
 

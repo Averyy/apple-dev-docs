@@ -1,18 +1,19 @@
 # asset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset provided during initialization.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The asset provided during initialization.
 var asset: AVAsset { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAsset * asset;
+```
+
 ## See Also
 
-- [var automaticallyLoadedAssetKeys: [String]](avplayeritem/automaticallyloadedassetkeys.md)
+### Accessing initialization parameters
+- [var automaticallyLoadedAssetKeys: [String]](./automaticallyloadedassetkeys.md)
   The array of asset keys to be automatically loaded before the player item is ready to play.
 
 

@@ -1,7 +1,8 @@
 # UIVerticalBarCompressionBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The automatic compression behavior.
 
@@ -18,15 +19,20 @@ The automatic compression behavior.
 case automatic
 ```
 
+```c
+UIVerticalBarCompressionBehaviorAutomatic
+```
+
 #### Discussion
 
 On iOS, this behavior prefers the tab bar.
 
 ## See Also
 
-- [UIVerticalBarCompressionBehavior.prefersBarItems](uiverticalbarcompressionbehavior/prefersbaritems.md)
+### Specifying a compression behavior
+- [UIVerticalBarCompressionBehavior.prefersBarItems](./prefersbaritems.md)
   A compression behavior that prefers keeping bar items visible.
-- [UIVerticalBarCompressionBehavior.prefersTabBar](uiverticalbarcompressionbehavior/preferstabbar.md)
+- [UIVerticalBarCompressionBehavior.prefersTabBar](./preferstabbar.md)
   A compression behavior that prefers keeping the tab bar visible.
 
 

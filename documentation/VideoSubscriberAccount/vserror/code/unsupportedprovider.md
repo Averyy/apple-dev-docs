@@ -1,7 +1,8 @@
 # VSError.Code.unsupportedProvider
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system doesn’t support the user’s subscription provider.
 
@@ -9,7 +10,7 @@ The system doesn’t support the user’s subscription provider.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,21 +20,26 @@ The system doesn’t support the user’s subscription provider.
 case unsupportedProvider
 ```
 
+```c
+VSErrorCodeUnsupportedProvider
+```
+
 ## See Also
 
-- [VSError.Code.accessNotGranted](vserror/code/accessnotgranted.md)
+### Error Codes
+- [VSError.Code.accessNotGranted](./accessnotgranted.md)
   The user hasn’t granted access to their subscription information.
-- [VSError.Code.invalidVerificationToken](vserror/code/invalidverificationtoken.md)
+- [VSError.Code.invalidVerificationToken](./invalidverificationtoken.md)
   The user’s subscription provider rejected the verification token that the app sent with the request.
-- [VSError.Code.providerRejected](vserror/code/providerrejected.md)
+- [VSError.Code.providerRejected](./providerrejected.md)
   The user’s subscription provider didn’t allow the request to proceed.
-- [VSError.Code.rejected](vserror/code/rejected.md)
+- [VSError.Code.rejected](./rejected.md)
   The system rejected the request.
-- [VSError.Code.serviceTemporarilyUnavailable](vserror/code/servicetemporarilyunavailable.md)
+- [VSError.Code.serviceTemporarilyUnavailable](./servicetemporarilyunavailable.md)
   The request failed due to a timeout or unreachable host, but a subsequent attempt might succeed.
-- [VSError.Code.unsupported](vserror/code/unsupported.md)
+- [VSError.Code.unsupported](./unsupported.md)
   The provider doesn’t support the feature the user requested in the device’s current region.
-- [VSError.Code.userCancelled](vserror/code/usercancelled.md)
+- [VSError.Code.userCancelled](./usercancelled.md)
   The user canceled the request.
 
 

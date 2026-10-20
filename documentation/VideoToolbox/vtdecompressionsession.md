@@ -1,7 +1,8 @@
 # VTDecompressionSession
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a decompression session.
 
@@ -19,6 +20,10 @@ A reference to a decompression session.
 class VTDecompressionSession
 ```
 
+```c
+typedef struct OpaqueVTDecompressionSession * VTDecompressionSessionRef;
+```
+
 #### Overview
 
 A decompression session supports the decompression of a sequence of video frames. The session is a reference-counted Core Foundation (CF) object.
@@ -26,19 +31,20 @@ A decompression session supports the decompression of a sequence of video frames
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct VTDecodeFrameFlags](vtdecodeframeflags.md)
+### Data Types
+- [struct VTDecodeFrameFlags](./vtdecodeframeflags.md)
   Flags to pass to a decompression session and the video decoder.
-- [struct VTDecodeInfoFlags](vtdecodeinfoflags.md)
+- [struct VTDecodeInfoFlags](./vtdecodeinfoflags.md)
   Flags that provide information about the status of a decode operation.
-- [typealias VTDecompressionOutputCallback](vtdecompressionoutputcallback.md)
+- [typealias VTDecompressionOutputCallback](./vtdecompressionoutputcallback.md)
   The prototype for the callback invoked when frame decompression is complete.
-- [struct VTDecompressionOutputCallbackRecord](vtdecompressionoutputcallbackrecord.md)
-- [typealias VTDecompressionOutputHandler](vtdecompressionoutputhandler.md)
+- [struct VTDecompressionOutputCallbackRecord](./vtdecompressionoutputcallbackrecord.md)
+- [typealias VTDecompressionOutputHandler](./vtdecompressionoutputhandler.md)
   The prototype for the block invoked when frame decompression is complete.
 
 

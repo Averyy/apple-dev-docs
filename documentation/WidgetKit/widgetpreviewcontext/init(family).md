@@ -1,7 +1,8 @@
 # init(family:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context for previewing a widget or a widget’s view.
 

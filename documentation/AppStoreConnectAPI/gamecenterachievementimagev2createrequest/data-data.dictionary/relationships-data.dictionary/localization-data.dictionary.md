@@ -1,7 +1,8 @@
 # GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the localization of the Game Center achievement image.
 
@@ -10,7 +11,7 @@ The data that describes the localization of the Game Center achievement image.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization
 ```
 
@@ -21,7 +22,7 @@ object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization.Data](gamecenterachievementimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization.Data](./localization-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

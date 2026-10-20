@@ -1,7 +1,8 @@
 # CMQuaternion
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type for a quaternion representing a measurement of attitude.
 
@@ -19,6 +20,10 @@ The type for a quaternion representing a measurement of attitude.
 struct CMQuaternion
 ```
 
+```c
+typedef struct { ... } CMQuaternion;
+```
+
 #### Overview
 
 A quaternion offers a way to parameterize attitude. If `q` is an instance of `CMQuaternion`, mathematically it represents the following unit quaternion: `q.x*i + q.y*j + q.z*k + q.w`. A unit quaternion represents a rotation of theta radians about the unit vector `{x,y,z}`, and `{q.x, q.y, q.z, q.w}` satisfies the following:
@@ -33,27 +38,28 @@ q.w = cos(theta / 2)
 ## Topics
 
 ### Initializing the Quaternion
-- [init()](cmquaternion/init.md)
-- [init(x: Double, y: Double, z: Double, w: Double)](cmquaternion/init(x:y:z:w:).md)
+- [init()](./cmquaternion/init%28%29.md)
+- [init(x: Double, y: Double, z: Double, w: Double)](./cmquaternion/init%28x,y,z,w%29.md)
 ### Getting the Quaternion Values
-- [var w: Double](cmquaternion/w.md)
+- [var w: Double](./cmquaternion/w.md)
   The value for the w axis.
-- [var x: Double](cmquaternion/x.md)
+- [var x: Double](./cmquaternion/x.md)
   The value for the x axis.
-- [var y: Double](cmquaternion/y.md)
+- [var y: Double](./cmquaternion/y.md)
   The value for the y axis.
-- [var z: Double](cmquaternion/z.md)
+- [var z: Double](./cmquaternion/z.md)
   The value for the z axis.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var quaternion: CMQuaternion](cmattitude/quaternion.md)
+### Getting a Mathematical Representation of Attitude as a Quaternion
+- [var quaternion: CMQuaternion](./cmattitude/quaternion.md)
   Returns a quaternion representing the device’s attitude.
 
 

@@ -1,6 +1,7 @@
 # Modifier tracks
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Create dynamic movies with modifier tracks that send data to another track.
 
@@ -14,7 +15,7 @@ Another use of modifier tracks is to store a series of sound volume levels, whic
 
 Because a modifier track can send its data to more than one track, you can easily synchronize actions between multiple tracks. For example, a single modifier track containing matrices as its samples can make two separate video tracks follow the same path.
 
-See [`Creating movies with modifier tracks`](creating_movies_with_modifier_tracks.md) for more information about using modifier tracks.
+See [Creating movies with modifier tracks](./creating_movies_with_modifier_tracks.md) for more information about using modifier tracks.
 
 #### Limitations of Spatial Modifier Tracks
 
@@ -26,13 +27,14 @@ If a track has to move through a larger area than that defined by the movie’s 
 
 ## See Also
 
-- [Creating movies with modifier tracks](creating_movies_with_modifier_tracks.md)
+### Track features
+- [Creating movies with modifier tracks](./creating_movies_with_modifier_tracks.md)
   Send data to another media handler instead of presenting media directly.
-- [Track references](track_references.md)
+- [Track references](./track_references.md)
   Relate a movie’s tracks to one another with track references.
-- [Chapter lists](chapter_lists.md)
+- [Chapter lists](./chapter_lists.md)
   A chapter list provides a set of named entry points into a movie.
-- [Streaming media](streaming_media.md)
+- [Streaming media](./streaming_media.md)
   Store streaming data in a streaming media track for QuickTime movies.
 
 

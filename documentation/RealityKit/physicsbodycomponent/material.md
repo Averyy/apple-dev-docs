@@ -1,7 +1,8 @@
 # material
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physics body’s material properties, like friction.
 
@@ -11,7 +12,7 @@ The physics body’s material properties, like friction.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ var material: PhysicsMaterialResource
 
 #### Discussion
 
-By default, the body’s material resource is set to [`default`](physicsmaterialresource/default.md), which provides a modest amount of friction and restitution (bounciness).
+By default, the body’s material resource is set to [`default`](../physicsmaterialresource/default.md), which provides a modest amount of friction and restitution (bounciness).
 
 
 ---

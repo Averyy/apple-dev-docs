@@ -1,15 +1,20 @@
 # lmpSubversion
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var lmpSubversion: BluetoothLMPSubversion
+```
+
+```c
+BluetoothLMPSubversion lmpSubversion;
 ```
 
 

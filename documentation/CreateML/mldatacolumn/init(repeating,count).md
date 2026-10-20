@@ -1,7 +1,8 @@
 # init(repeating:count:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new column with a repeating element.
 
@@ -19,9 +20,15 @@ Creates a new column with a repeating element.
 init(repeating repeatedValue: Element, count: Int)
 ```
 
+**Other overloads**:
+
+```swift
+init(repeating repeatedValue: MLDataValue, count: Int)
+```
+
 #### Discussion
 
-Use this initializer to create a column of repeating elements with any type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md), including integers, doubles, strings, arrays, and dictionaries.
+Use this initializer to create a column of repeating elements with any type that conforms to [`MLDataValueConvertible`](../mldatavalueconvertible.md), including integers, doubles, strings, arrays, and dictionaries.
 
 ```swift
 let three5s = MLDataColumn(repeating: 5, count: 3)
@@ -35,9 +42,10 @@ print(three5s) // Prints [5, 5, 5]
 
 ## See Also
 
-- [init<S>(S)](mldatacolumn/init(_:).md)
+### Creating a data column
+- [init<S>(S)](./init%28_%29.md)
   Creates a new column from a given sequence of elements.
-- [init()](mldatacolumn/init.md)
+- [init()](./init%28%29.md)
   Constructs an invalid Column.
 
 

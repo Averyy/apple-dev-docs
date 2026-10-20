@@ -1,7 +1,8 @@
 # USDPrim.ReferenceCollection
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Manages reference composition arcs on a prim.
 
@@ -22,31 +23,32 @@ struct ReferenceCollection
 ## Topics
 
 ### Instance Properties
-- [var prim: USDPrim](usdprim/referencecollection/prim.md)
+- [var prim: USDPrim](./referencecollection/prim.md)
   The prim that owns these reference arcs.
 ### Instance Methods
-- [func add(USDPrim.Reference, position: USDPrim.ListPosition) throws](usdprim/referencecollection/add(_:position:).md)
+- [func add(USDPrim.Reference, position: USDPrim.ListPosition) throws](./referencecollection/add%28_,position%29.md)
   Adds an existing reference arc to the prim.
-- [func add(to: USDLayer.Path?, from: String, layerOffset: USDLayer.TimeOffset, position: USDPrim.ListPosition) throws](usdprim/referencecollection/add(to:from:layeroffset:position:).md)
+- [func add(to: USDLayer.Path?, from: String, layerOffset: USDLayer.TimeOffset, position: USDPrim.ListPosition) throws](./referencecollection/add%28to,from,layeroffset,position%29.md)
   Adds an external reference arc.
-- [func add(to: USDLayer.Path, layerOffset: USDLayer.TimeOffset, position: USDPrim.ListPosition) throws](usdprim/referencecollection/add(to:layeroffset:position:).md)
+- [func add(to: USDLayer.Path, layerOffset: USDLayer.TimeOffset, position: USDPrim.ListPosition) throws](./referencecollection/add%28to,layeroffset,position%29.md)
   Adds an internal reference arc that targets a prim in the same layer stack.
-- [func clear() throws](usdprim/referencecollection/clear.md)
+- [func clear() throws](./referencecollection/clear%28%29.md)
   Removes all reference arcs from the prim.
-- [func remove(USDPrim.Reference) throws](usdprim/referencecollection/remove(_:).md)
+- [func remove(USDPrim.Reference) throws](./referencecollection/remove%28_%29.md)
   Removes a specific reference arc from the prim.
-- [func set([USDPrim.Reference]) throws](usdprim/referencecollection/set(_:).md)
+- [func set([USDPrim.Reference]) throws](./referencecollection/set%28_%29.md)
   Replaces all reference arcs with the specified list.
 
 ## See Also
 
-- [var references: USDPrim.ReferenceCollection](usdprim/references.md)
+### Composing references and payloads
+- [var references: USDPrim.ReferenceCollection](./references.md)
   The reference composition arcs on this prim.
-- [USDPrim.Reference](usdprim/reference.md)
+- [USDPrim.Reference](./reference.md)
   A reference to an external layer or asset.
-- [USDPrim.Payload](usdprim/payload.md)
+- [USDPrim.Payload](./payload.md)
   A payload to an external asset.
-- [USDPrim.ListPosition](usdprim/listposition.md)
+- [USDPrim.ListPosition](./listposition.md)
   Where a new composition arc should be inserted relative to existing arcs.
 
 

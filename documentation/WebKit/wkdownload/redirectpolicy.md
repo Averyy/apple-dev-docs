@@ -1,7 +1,8 @@
 # WKDownload.RedirectPolicy
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration with cases that indicate whether to proceed with a redirect.
 
@@ -18,31 +19,36 @@ An enumeration with cases that indicate whether to proceed with a redirect.
 enum RedirectPolicy
 ```
 
+```c
+enum WKDownloadRedirectPolicy : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKDownload.RedirectPolicy.allow](wkdownload/redirectpolicy/allow.md)
+- [WKDownload.RedirectPolicy.allow](./redirectpolicy/allow.md)
   Allow a redirect to proceed.
-- [WKDownload.RedirectPolicy.cancel](wkdownload/redirectpolicy/cancel.md)
+- [WKDownload.RedirectPolicy.cancel](./redirectpolicy/cancel.md)
   Cancel the redirect action.
 ### Initializers
-- [init?(rawValue: Int)](wkdownload/redirectpolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./redirectpolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var delegate: (any WKDownloadDelegate)?](wkdownload/delegate.md)
+### Managing the download
+- [var delegate: (any WKDownloadDelegate)?](./delegate.md)
   An object you use to track download progress and handle redirects, authentication challenges, and failures.
-- [func cancel(((Data?) -> Void)?)](wkdownload/cancel(_:).md)
+- [func cancel(((Data?) -> Void)?)](./cancel%28_%29.md)
   Cancels the download, and optionally captures data so that you can resume the download later.
 
 

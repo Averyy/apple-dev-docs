@@ -1,7 +1,8 @@
 # init(group:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Associates the widget kind with a group. When multiple widgets are in the same group, the system only suggests one member of the group simultaneously. Widgets in the same group are interpreted to contain redundant information, and therefore should not be presented together.
 
@@ -18,6 +19,8 @@ Associates the widget kind with a group. When multiple widgets are in the same g
 ```swift
 init(group: WidgetRelevanceGroup)
 ```
+
+Available when `Configuration` is `()`.
 
 #### Discussion
 

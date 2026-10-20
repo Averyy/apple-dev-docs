@@ -1,7 +1,8 @@
 # LayerFrameIndex
 
 **Framework**: Compositor Services  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A frame index in the layer’s timeline.
 
@@ -15,11 +16,16 @@ A frame index in the layer’s timeline.
 typealias LayerFrameIndex = UInt64
 ```
 
+```c
+typedef uint64_t cp_layer_frame_index_t;
+```
+
 ## See Also
 
-- [var frameIndex: LayerFrameIndex](layerrenderer/frame/frameindex.md)
+### Getting frame-related details
+- [var frameIndex: LayerFrameIndex](./layerrenderer/frame/frameindex.md)
   The sequential index number of a frame.
-- [typealias CompositorFrameIndex](compositorframeindex.md)
+- [typealias CompositorFrameIndex](./compositorframeindex.md)
   The sequential index for a frame in the compositor’s timeline.
 
 

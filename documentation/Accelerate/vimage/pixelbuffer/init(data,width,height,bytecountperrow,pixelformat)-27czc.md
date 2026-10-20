@@ -1,7 +1,8 @@
 # init(data:width:height:byteCountPerRow:pixelFormat:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Calculates the correct bytes per row and returns a new buffer that references existing data.
 
@@ -11,7 +12,7 @@ Calculates the correct bytes per row and returns a new buffer that references ex
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Calculates the correct bytes per row and returns a new buffer that references ex
 ```swift
 init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: Int? = nil, pixelFormat: Format.Type = Format.self)
 ```
+
+Available when `Format` conforms to `StaticPixelFormat`.
 
 #### Discussion
 
@@ -56,9 +59,10 @@ For example, the following code creates a 32-bit planar pixel buffer:
 
 ## See Also
 
-- [init<U>(pixelValues: U, size: vImage.Size, pixelFormat: Format.Type)](vimage/pixelbuffer/init(pixelvalues:size:pixelformat:).md)
+### Creating a pixel buffer from raw pixel data
+- [init<U>(pixelValues: U, size: vImage.Size, pixelFormat: Format.Type)](./init%28pixelvalues,size,pixelformat%29.md)
   Creates a new pixel buffer by copying the supplied collection of pixel values.
-- [init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: Int, pixelFormat: Format.Type)](vimage/pixelbuffer/init(data:width:height:bytecountperrow:pixelformat:)-zwzz.md)
+- [init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: Int, pixelFormat: Format.Type)](./init%28data,width,height,bytecountperrow,pixelformat%29-zwzz.md)
   Returns a new buffer that references existing data.
 
 

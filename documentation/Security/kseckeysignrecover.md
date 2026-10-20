@@ -1,7 +1,8 @@
 # kSecKeySignRecover
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32.
 
@@ -12,6 +13,10 @@ Type uint32.
 
 ```swift
 var kSecKeySignRecover: Int32 { get }
+```
+
+```c
+kSecKeySignRecover
 ```
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the random forest classifier.
 
@@ -21,9 +22,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlrandomforestclassifier/debugdescription.md)
+### Describing a random forest classifier
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the random forest classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlrandomforestclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the random forest classifier shown in a playground.
 
 

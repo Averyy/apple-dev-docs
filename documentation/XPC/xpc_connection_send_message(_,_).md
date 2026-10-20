@@ -1,7 +1,8 @@
 # xpc_connection_send_message(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sends a message over the connection to the destination service.
 
@@ -10,7 +11,7 @@ Sends a message over the connection to the destination service.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sends a message over the connection to the destination service.
 
 ```swift
 func xpc_connection_send_message(_ connection: xpc_connection_t, _ message: xpc_object_t)
+```
+
+```c
+extern void xpc_connection_send_message(xpc_connection_t connection, xpc_object_t message);
 ```
 
 #### Discussion
@@ -35,13 +40,14 @@ After extensive study, we have found that clients who are interested in the stat
 
 ## See Also
 
-- [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](xpc_connection_send_barrier(_:_:).md)
+### Messages
+- [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](./xpc_connection_send_barrier%28_,_%29.md)
   Issues a barrier against the connection’s message-send activity.
-- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
+- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](./xpc_connection_send_message_with_reply%28_,_,_,_%29.md)
   Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
-- [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](xpc_connection_send_message_with_reply_sync(_:_:).md)
+- [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](./xpc_connection_send_message_with_reply_sync%28_,_%29.md)
   Sends a message over the connection and blocks the caller until it receives a reply.
-- [func xpc_main(xpc_connection_handler_t) -> Never](xpc_main(_:).md)
+- [func xpc_main(xpc_connection_handler_t) -> Never](./xpc_main%28_%29.md)
   Starts listening for incoming connections and processes them with the specified event handler.
 
 

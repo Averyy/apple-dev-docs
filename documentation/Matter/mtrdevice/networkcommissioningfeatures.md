@@ -1,7 +1,8 @@
 # networkCommissioningFeatures
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Network commissioning features supported by the device.
 
@@ -18,6 +19,10 @@ Network commissioning features supported by the device.
 
 ```swift
 var networkCommissioningFeatures: MTRNetworkCommissioningFeature { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTRNetworkCommissioningFeature networkCommissioningFeatures;
 ```
 
 

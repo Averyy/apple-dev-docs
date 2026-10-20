@@ -1,7 +1,8 @@
 # macOS
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the macOS platform.
 
@@ -22,11 +23,12 @@ static let macOS: AppStore.Platform
 
 ## See Also
 
-- [static let iOS: AppStore.Platform](appstore/platform/ios.md)
+### Getting platform values
+- [static let iOS: AppStore.Platform](./ios.md)
   A value that indicates the iOS platform.
-- [static let tvOS: AppStore.Platform](appstore/platform/tvos.md)
+- [static let tvOS: AppStore.Platform](./tvos.md)
   A value that indicates the tvOS platform.
-- [static let visionOS: AppStore.Platform](appstore/platform/visionos.md)
+- [static let visionOS: AppStore.Platform](./visionos.md)
   A value that indicates the visionOS platform.
 
 

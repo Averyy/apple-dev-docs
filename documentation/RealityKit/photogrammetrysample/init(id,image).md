@@ -1,7 +1,8 @@
 # init(id:image:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new sample.
 
@@ -20,7 +21,11 @@ init(id: Int, image: CVPixelBuffer)
 ## Parameters
 
 - `id`: A unique identifier for the sample.  This `id` *must* be in the domain [0, 2147483647].
-- `image`: The image data in one of the following formats: - [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra) - [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32argb)
+- `image`: The image data in one of the following formats:
+
+  - [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md)
+
+    - [`kCVPixelFormatType_32ARGB`](../../CoreVideo/kcvpixelformattype_32argb.md)
 
 
 ---

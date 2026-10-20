@@ -1,7 +1,8 @@
 # NSTextSelectionManager
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that coordinates text selection behavior for custom text views.
 
@@ -15,50 +16,55 @@ An object that coordinates text selection behavior for custom text views.
 class NSTextSelectionManager
 ```
 
+```objc
+@interface NSTextSelectionManager : NSObject
+```
+
 #### Overview
 
-[`NSTextSelectionManager`](nstextselectionmanager.md) provides a centralized way to manage text selection interactions using a set of gesture recognizers. For keyboard-based selection, integrate [`NSTextSelectionNavigation`](nstextselectionnavigation.md) with your view. The selection manager works with a delegate to update and respond to selection changes, and with a data source to query the text layout system.
+[`NSTextSelectionManager`](./nstextselectionmanager.md) provides a centralized way to manage text selection interactions using a set of gesture recognizers. For keyboard-based selection, integrate [`NSTextSelectionNavigation`](./nstextselectionnavigation.md) with your view. The selection manager works with a delegate to update and respond to selection changes, and with a data source to query the text layout system.
 
 ## Topics
 
 ### Setting a delegate
-- [var delegate: (any NSTextSelectionManager.Delegate)?](nstextselectionmanager/delegate-swift.property.md)
+- [var delegate: (any NSTextSelectionManager.Delegate)?](./nstextselectionmanager/delegate-swift.property.md)
   The delegate of the text selection manager.
-- [NSTextSelectionManager.Delegate](nstextselectionmanager/delegate-swift.protocol.md)
+- [NSTextSelectionManager.Delegate](./nstextselectionmanager/delegate-swift.protocol.md)
   A set of methods that manage text selection state and let you customize selection behavior.
 ### Configuring text selection
-- [var textSelectionMode: NSTextSelectionManager.Mode](nstextselectionmanager/textselectionmode.md)
+- [var textSelectionMode: NSTextSelectionManager.Mode](./nstextselectionmanager/textselectionmode.md)
   The interaction mode for text selection.
-- [NSTextSelectionManager.Mode](nstextselectionmanager/mode.md)
+- [NSTextSelectionManager.Mode](./nstextselectionmanager/mode.md)
   Values for text selection interaction modes.
-- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](nstextselectionmanager/textselectiondatasource.md)
+- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](./nstextselectionmanager/textselectiondatasource.md)
   The data source that provides text layout information to the selection manager.
 ### Managing gesture recognizers
-- [var gesturesForFailureRequirements: [NSGestureRecognizer]](nstextselectionmanager/gesturesforfailurerequirements.md)
+- [var gesturesForFailureRequirements: [NSGestureRecognizer]](./nstextselectionmanager/gesturesforfailurerequirements.md)
   The gesture recognizers managed by the selection manager.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSTextRange](nstextrange.md)
+### Location and selection
+- [class NSTextRange](./nstextrange.md)
   A class that represents a contiguous range between two locations inside document contents.
-- [class NSTextSelection](nstextselection.md)
+- [class NSTextSelection](./nstextselection.md)
   A class that represents a single logical selection context that corresponds to an insertion point.
-- [class NSTextSelectionNavigation](nstextselectionnavigation.md)
+- [class NSTextSelectionNavigation](./nstextselectionnavigation.md)
   An interface you use to expose methods for obtaining results from actions performed on text selections.
-- [protocol NSTextLocation](nstextlocation.md)
+- [protocol NSTextLocation](./nstextlocation.md)
   An interface you implement that represents an abstract location inside your document’s content.
 
 

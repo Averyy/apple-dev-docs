@@ -1,7 +1,8 @@
 # BarcodeReaderTool
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool that scans machine-readable codes in an image.
 
@@ -39,24 +40,25 @@ let customTool = BarcodeReaderTool(
 )
 ```
 
-> **Note**:  [`BarcodeReaderTool`](barcodereadertool.md) isn’t available in Simulator.
+> **Note**:  [`BarcodeReaderTool`](./barcodereadertool.md) isn’t available in Simulator.
 
 ## Topics
 
 ### Creating a tool
-- [init(name: String?, description: String?)](barcodereadertool/init(name:description:).md)
+- [init(name: String?, description: String?)](./barcodereadertool/init%28name,description%29.md)
   Creates a tool for decoding machine-readable codes.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Tool](../foundationmodels/tool.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Tool](../FoundationModels/tool.md)
 
 ## See Also
 
-- [struct OCRTool](ocrtool.md)
+### Foundation Models integration
+- [struct OCRTool](./ocrtool.md)
   A tool that recognizes text in an image.
 
 

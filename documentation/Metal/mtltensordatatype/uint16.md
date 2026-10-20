@@ -1,7 +1,8 @@
 # MTLTensorDataType.uint16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit unsigned integer data type.
 
@@ -17,6 +18,10 @@ A 16-bit unsigned integer data type.
 
 ```swift
 case uint16
+```
+
+```c
+MTLTensorDataTypeUInt16
 ```
 
 

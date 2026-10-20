@@ -1,7 +1,8 @@
 # setMaximumTrackImage(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a maximum track image to the specified control states.
 
@@ -17,15 +18,19 @@ Assigns a maximum track image to the specified control states.
 func setMaximumTrackImage(_ image: UIImage?, for state: UIControl.State)
 ```
 
+```objc
+- (void) setMaximumTrackImage:(UIImage *) image forState:(UIControlState) state;
+```
+
 #### Discussion
 
-Because the movement of the slider’s thumb changes the width of the area occupied by the maximum track image, the image width must change accordingly. To accommodate this requirement, specify track images as stretchable images that can grow or shrink to fill the available space. For information about how to create stretchable images, see [`UIImage`](uiimage.md).
+Because the movement of the slider’s thumb changes the width of the area occupied by the maximum track image, the image width must change accordingly. To accommodate this requirement, specify track images as stretchable images that can grow or shrink to fill the available space. For information about how to create stretchable images, see [`UIImage`](../uiimage.md).
 
 When you specify a custom maximum track image, the slider ignores the custom maximum track tint color, if any.
 
 Sliders respond to user interaction with dynamic effects and appearance. If you use images to customize the appearance of the track, then the slider doesn’t apply the dynamic effects or alter the appearance.
 
-> ❗ **Important**:  This method isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uislider/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md) — calling it while in this state throws an exception.
+> ❗ **Important**:  This method isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](../uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](./behavioralstyle.md) is [`UIBehavioralStyle.mac`](../uibehavioralstyle/mac.md) — calling it while in this state throws an exception.
 
 ## Parameters
 
@@ -34,31 +39,32 @@ Sliders respond to user interaction with dynamic effects and appearance. If you 
 
 ## See Also
 
-- [var minimumValueImage: UIImage?](uislider/minimumvalueimage.md)
+### Changing the slider’s appearance
+- [var minimumValueImage: UIImage?](./minimumvalueimage.md)
   The image that represents the slider’s minimum value.
-- [var maximumValueImage: UIImage?](uislider/maximumvalueimage.md)
+- [var maximumValueImage: UIImage?](./maximumvalueimage.md)
   The image representing the slider’s maximum value.
-- [var minimumTrackTintColor: UIColor?](uislider/minimumtracktintcolor.md)
+- [var minimumTrackTintColor: UIColor?](./minimumtracktintcolor.md)
   The color used to tint the default minimum track images.
-- [var currentMinimumTrackImage: UIImage?](uislider/currentminimumtrackimage.md)
+- [var currentMinimumTrackImage: UIImage?](./currentminimumtrackimage.md)
   The minimum track image currently being used to render the slider.
-- [func minimumTrackImage(for: UIControl.State) -> UIImage?](uislider/minimumtrackimage(for:).md)
+- [func minimumTrackImage(for: UIControl.State) -> UIImage?](./minimumtrackimage%28for%29.md)
   Returns the minimum track image associated with the specified control state.
-- [func setMinimumTrackImage(UIImage?, for: UIControl.State)](uislider/setminimumtrackimage(_:for:).md)
+- [func setMinimumTrackImage(UIImage?, for: UIControl.State)](./setminimumtrackimage%28_,for%29.md)
   Assigns a minimum track image to the specified control states.
-- [var maximumTrackTintColor: UIColor?](uislider/maximumtracktintcolor.md)
+- [var maximumTrackTintColor: UIColor?](./maximumtracktintcolor.md)
   The color used to tint the default maximum track images.
-- [var currentMaximumTrackImage: UIImage?](uislider/currentmaximumtrackimage.md)
+- [var currentMaximumTrackImage: UIImage?](./currentmaximumtrackimage.md)
   Contains the maximum track image currently being used to render the slider.
-- [func maximumTrackImage(for: UIControl.State) -> UIImage?](uislider/maximumtrackimage(for:).md)
+- [func maximumTrackImage(for: UIControl.State) -> UIImage?](./maximumtrackimage%28for%29.md)
   Returns the maximum track image associated with the specified control state.
-- [var thumbTintColor: UIColor?](uislider/thumbtintcolor.md)
+- [var thumbTintColor: UIColor?](./thumbtintcolor.md)
   The color used to tint the default thumb images.
-- [var currentThumbImage: UIImage?](uislider/currentthumbimage.md)
+- [var currentThumbImage: UIImage?](./currentthumbimage.md)
   The thumb image currently being used to render the slider.
-- [func thumbImage(for: UIControl.State) -> UIImage?](uislider/thumbimage(for:).md)
+- [func thumbImage(for: UIControl.State) -> UIImage?](./thumbimage%28for%29.md)
   Returns the thumb image associated with the specified control state.
-- [func setThumbImage(UIImage?, for: UIControl.State)](uislider/setthumbimage(_:for:).md)
+- [func setThumbImage(UIImage?, for: UIControl.State)](./setthumbimage%28_,for%29.md)
   Assigns a thumb image to the specified control states.
 
 

@@ -1,7 +1,8 @@
 # JSPropertyDescriptorEnumerableKey
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Boolean value for this key determines whether the property appears when enumerating the JavaScript object’s properties.
 
@@ -19,17 +20,22 @@ The Boolean value for this key determines whether the property appears when enum
 let JSPropertyDescriptorEnumerableKey: String
 ```
 
+```c
+extern NSString * const JSPropertyDescriptorEnumerableKey;
+```
+
 ## See Also
 
-- [let JSPropertyDescriptorWritableKey: String](jspropertydescriptorwritablekey.md)
+### Constants
+- [let JSPropertyDescriptorWritableKey: String](./jspropertydescriptorwritablekey.md)
   The Boolean value for this key determines whether the property permits assignment with the JavaScript `=` operator.
-- [let JSPropertyDescriptorConfigurableKey: String](jspropertydescriptorconfigurablekey.md)
+- [let JSPropertyDescriptorConfigurableKey: String](./jspropertydescriptorconfigurablekey.md)
   The Boolean value for this key determines whether the property deleted from its JavaScript object or its descriptor changed.
-- [let JSPropertyDescriptorValueKey: String](jspropertydescriptorvaluekey.md)
+- [let JSPropertyDescriptorValueKey: String](./jspropertydescriptorvaluekey.md)
   The value for the property on the JavaScript object.
-- [let JSPropertyDescriptorGetKey: String](jspropertydescriptorgetkey.md)
+- [let JSPropertyDescriptorGetKey: String](./jspropertydescriptorgetkey.md)
   The JavaScript function to be invoked when reading the property.
-- [let JSPropertyDescriptorSetKey: String](jspropertydescriptorsetkey.md)
+- [let JSPropertyDescriptorSetKey: String](./jspropertydescriptorsetkey.md)
   The JavaScript function to be invoked when writing to the property.
 
 

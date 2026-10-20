@@ -1,7 +1,8 @@
 # addBuffer(_:name:to:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a data buffer that will be available to JavaScript through the `window.webkit.buffers` object.
 

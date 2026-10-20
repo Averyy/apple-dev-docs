@@ -1,7 +1,8 @@
 # applyTopK(k:input:bestValues:bestIndices:axis:batchSize:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies a top-k filter directly to an input.
 
@@ -11,7 +12,7 @@ Applies a top-k filter directly to an input.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -36,9 +37,11 @@ static func applyTopK(k: Int, input: BNNSNDArrayDescriptor, bestValues: BNNSNDAr
 
 ## See Also
 
-- [func BNNSDirectApplyTopK(Int, Int, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsdirectapplytopk(_:_:_:_:_:_:_:_:_:_:).md)
+### Related Documentation
+- [func BNNSDirectApplyTopK(Int, Int, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](../bnnsdirectapplytopk%28_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a top-k filter directly to an input.
-- [static func applyInTopK(k: Int, input: BNNSNDArrayDescriptor, testIndices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](bnns/applyintopk(k:input:testindices:output:axis:batchsize:filterparameters:).md)
+### Top-k layers
+- [static func applyInTopK(k: Int, input: BNNSNDArrayDescriptor, testIndices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](./applyintopk%28k,input,testindices,output,axis,batchsize,filterparameters%29.md)
   Applies an in-top-k filter directly to an input.
 
 

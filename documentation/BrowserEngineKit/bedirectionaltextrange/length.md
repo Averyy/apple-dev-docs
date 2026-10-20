@@ -1,7 +1,8 @@
 # length
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of characters included in the directional text range.
 
@@ -17,6 +18,10 @@ The number of characters included in the directional text range.
 var length: Int
 ```
 
+```c
+NSInteger length;
+```
+
 #### Discussion
 
 The sign of this value indicates a direction for the text selection:
@@ -26,7 +31,8 @@ The sign of this value indicates a direction for the text selection:
 
 ## See Also
 
-- [var offset: Int](bedirectionaltextrange/offset.md)
+### Measuring text range
+- [var offset: Int](./offset.md)
   The starting position of the directional text range within the text.
 
 

@@ -1,7 +1,8 @@
 # matching(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Includes only paired devices matching the provided live filter predicate.
 

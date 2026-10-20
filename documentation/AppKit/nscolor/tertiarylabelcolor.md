@@ -1,7 +1,8 @@
 # tertiaryLabelColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tertiary color to use for text labels.
 
@@ -14,17 +15,22 @@ The tertiary color to use for text labels.
 class var tertiaryLabelColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * tertiaryLabelColor;
+```
+
 #### Discussion
 
 Use this color for disabled text and for other less important text in your interface. You can also use it for other types of tertiary app content.
 
 ## See Also
 
-- [class var labelColor: NSColor](nscolor/labelcolor.md)
+### Label colors
+- [class var labelColor: NSColor](./labelcolor.md)
   The primary color to use for text labels.
-- [class var secondaryLabelColor: NSColor](nscolor/secondarylabelcolor.md)
+- [class var secondaryLabelColor: NSColor](./secondarylabelcolor.md)
   The secondary color to use for text labels.
-- [class var quaternaryLabelColor: NSColor](nscolor/quaternarylabelcolor.md)
+- [class var quaternaryLabelColor: NSColor](./quaternarylabelcolor.md)
   The quaternary color to use for text labels and separators.
 
 

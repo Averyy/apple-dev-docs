@@ -1,6 +1,7 @@
 # Distributing binary frameworks as Swift packages
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Make binaries available to other developers by creating Swift packages that include one or more XCFrameworks.
 
@@ -12,22 +13,22 @@ Carefully consider whether you want to distribute your code in binary form becau
 
 > **Note**: A Swift package can contain a mix of both source files and binaries. This use case is common for packages that contain source code that wraps closed-source binaries.
 
-##### Package Binaries As an Xcframework Bundle
+##### Package binaries as an XCFramework bundle
 
 To distribute code in binary form as a Swift package, create an XCFramework bundle, or *artifact*, that contains the binaries. Then, make the bundle available locally or on a server:
 
 - When you host the binaries on a server, create a ZIP archive with the XCFramework in its root directory and make it available publicly.
 - If the XCFramework is available locally and included in the package’s Git repository, you don’t need to create a compressed archive and can reference the XCFramework directly.
 
-To learn more about creating an XCFramework bundle, see [`Creating a multiplatform binary framework bundle`](creating-a-multi-platform-binary-framework-bundle.md).
+To learn more about creating an XCFramework bundle, see [Creating a multiplatform binary framework bundle](./creating-a-multi-platform-binary-framework-bundle.md).
 
-##### Declare a Binary Target in the Package Manifest
+##### Declare a binary target in the package manifest
 
-First, follow the process to create a new Swift package as described in [`Creating a standalone Swift package with Xcode`](creating-a-standalone-swift-package-with-xcode.md). Next, declare a *binary target* in your package manifest and make it part of a product, just like a target that contains source files. Ensure that the name of the binary target in the package manifest matches the artifact’s module name.
+First, follow the process to create a new Swift package as described in [Creating a standalone Swift package with Xcode](./creating-a-standalone-swift-package-with-xcode.md). Next, declare a *binary target* in your package manifest and make it part of a product, just like a target that contains source files. Ensure that the name of the binary target in the package manifest matches the artifact’s module name.
 
-To declare a remote, or *URL-based*, binary target, use [`binaryTarget(name:path:)`](https://developer.apple.com/documentation/packagedescription/target/binarytarget(name:path:)). To create the required [`checksum`](https://developer.apple.com/documentation/packagedescription/target/checksum), open the Terminal app, navigate to the root of the package, and run `swift package compute-checksum path/to/MyFramework.zip`. Xcode uses the checksum to verify that the hosted archive file matches the archive you declare in the manifest file. When developers add the package as a binary dependency to their project, and the remote archive’s checksum doesn’t match the checksum in the package manifest, Xcode displays an error.
+To declare a remote, or *URL-based*, binary target, use [`binaryTarget(name:path:)`](../PackageDescription/target/binarytarget%28name,path%29.md). To create the required [`checksum`](../PackageDescription/target/checksum.md), open the Terminal app, navigate to the root of the package, and run `swift package compute-checksum path/to/MyFramework.zip`. Xcode uses the checksum to verify that the hosted archive file matches the archive you declare in the manifest file. When developers add the package as a binary dependency to their project, and the remote archive’s checksum doesn’t match the checksum in the package manifest, Xcode displays an error.
 
-To declare a local, or *path-based*, binary target, use [`package(name:path:)`](https://developer.apple.com/documentation/packagedescription/package/dependency/package(name:path:)) and don’t generate a checksum. Instead, include the `.xcframework` bundle in the package’s Git repository.
+To declare a local, or *path-based*, binary target, use [`package(name:path:)`](../PackageDescription/package/dependency/package%28name,path%29.md) and don’t generate a checksum. Instead, include the `.xcframework` bundle in the package’s Git repository.
 
 The following package manifest for the MyLibrary package declares a library product that includes two binary targets: `SomeRemoteBinaryPackage`, a remote, URL-based binary target; and `SomeLocalBinaryPackage`, a local, path-based binary target.
 
@@ -73,17 +74,18 @@ let package = Package(
 
 ## See Also
 
-- [Creating a standalone Swift package with Xcode](creating-a-standalone-swift-package-with-xcode.md)
+### Package creation
+- [Creating a standalone Swift package with Xcode](./creating-a-standalone-swift-package-with-xcode.md)
   Bundle executable or shareable code into a standalone Swift package.
-- [Bundling resources with a Swift package](bundling-resources-with-a-swift-package.md)
+- [Bundling resources with a Swift package](./bundling-resources-with-a-swift-package.md)
   Add resource files to your Swift package and access them in your code.
-- [Localizing package resources](localizing-package-resources.md)
+- [Localizing package resources](./localizing-package-resources.md)
   Ensure that your Swift package provides localized resources for many locales.
-- [Developing a Swift package in tandem with an app](developing-a-swift-package-in-tandem-with-an-app.md)
+- [Developing a Swift package in tandem with an app](./developing-a-swift-package-in-tandem-with-an-app.md)
   Add your published Swift package as a local package to your app’s project and develop the package and the app in tandem.
-- [Organizing your code with local packages](organizing-your-code-with-local-packages.md)
+- [Organizing your code with local packages](./organizing-your-code-with-local-packages.md)
   Simplify maintenance, promote modularity, and encourage reuse by organizing your app’s code into local Swift packages.
-- [PackageDescription](../packagedescription/packagedescription.md)
+- [PackageDescription](../PackageDescription/PackageDescription.md)
   Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
 

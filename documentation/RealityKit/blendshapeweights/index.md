@@ -1,7 +1,8 @@
 # BlendShapeWeights.Index
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A position of an individual weight in the collection.
 

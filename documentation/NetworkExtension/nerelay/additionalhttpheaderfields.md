@@ -1,7 +1,8 @@
 # additionalHTTPHeaderFields
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of additional HTTP headers to send as part of `CONNECT` requests to the relay.
 
@@ -19,15 +20,20 @@ A dictionary of additional HTTP headers to send as part of `CONNECT` requests to
 var additionalHTTPHeaderFields: [String : String] { get set }
 ```
 
+```objc
+@property (copy) NSDictionary<NSString *,NSString *> * additionalHTTPHeaderFields;
+```
+
 ## See Also
 
-- [var identityData: Data?](nerelay/identitydata.md)
+### Configuring client properties
+- [var identityData: Data?](./identitydata.md)
   The PKCS12 data for the relay client authentication.
-- [var identityDataPassword: String?](nerelay/identitydatapassword.md)
+- [var identityDataPassword: String?](./identitydatapassword.md)
   The password the relay uses to decrypt the PKCS12 identity data.
-- [var syntheticDNSAnswerIPv4Prefix: String?](nerelay/syntheticdnsansweripv4prefix.md)
+- [var syntheticDNSAnswerIPv4Prefix: String?](./syntheticdnsansweripv4prefix.md)
   An IPv4 address prefix the relay uses to handle address info requests.
-- [var syntheticDNSAnswerIPv6Prefix: String?](nerelay/syntheticdnsansweripv6prefix.md)
+- [var syntheticDNSAnswerIPv6Prefix: String?](./syntheticdnsansweripv6prefix.md)
   An IPv6 address prefix the relay uses to handle address info requests.
 
 

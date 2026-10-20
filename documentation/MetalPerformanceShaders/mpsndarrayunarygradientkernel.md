@@ -1,7 +1,8 @@
 # MPSNDArrayUnaryGradientKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,31 +18,35 @@
 class MPSNDArrayUnaryGradientKernel
 ```
 
+```objc
+@interface MPSNDArrayUnaryGradientKernel : MPSNDArrayMultiaryGradientKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarrayunarygradientkernel/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsndarrayunarygradientkernel/init(device:).md)
+- [init(coder: NSCoder, device: any MTLDevice)](./mpsndarrayunarygradientkernel/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsndarrayunarygradientkernel/init%28device%29.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarrayunarygradientkernel/encode(to:sourcearray:sourcegradient:gradientstate:).md)
-- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarrayunarygradientkernel/encode(to:sourcearray:sourcegradient:gradientstate:destinationarray:).md)
+- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](./mpsndarrayunarygradientkernel/encode%28to,sourcearray,sourcegradient,gradientstate%29.md)
+- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](./mpsndarrayunarygradientkernel/encode%28to,sourcearray,sourcegradient,gradientstate,destinationarray%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayMultiaryGradientKernel](mpsndarraymultiarygradientkernel.md)
+- [MPSNDArrayMultiaryGradientKernel](./mpsndarraymultiarygradientkernel.md)
 ### Inherited By
-- [MPSNDArrayStridedSliceGradient](mpsndarraystridedslicegradient.md)
+- [MPSNDArrayStridedSliceGradient](./mpsndarraystridedslicegradient.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

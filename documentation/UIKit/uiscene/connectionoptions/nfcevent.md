@@ -1,7 +1,8 @@
 # nfcEvent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An event, such as a gesture or exposure to a card reader’s RF field, that creates a Near-Field Communication (NFC) scene.
 

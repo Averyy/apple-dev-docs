@@ -1,7 +1,8 @@
 # kSecMatchSubjectWholeString
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string to exactly match a certificate or identity’s subject.
 
@@ -14,9 +15,13 @@ A key whose value is a string to exactly match a certificate or identity’s sub
 let kSecMatchSubjectWholeString: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchSubjectWholeString;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). If provided, returned certificates or identities are limited to those whose subject is exactly equal to this string.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md). If provided, returned certificates or identities are limited to those whose subject is exactly equal to this string.
 
 
 ---

@@ -1,7 +1,8 @@
 # AudioRecordingIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An app intent that starts, stops or otherwise modifies audio recording state.
 
@@ -29,21 +30,22 @@ Adopt this protocol to create an app intent for audio recording functionality an
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SystemIntent](systemintent.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SystemIntent](./systemintent.md)
 
 ## See Also
 
-- [protocol AudioPlaybackIntent](audioplaybackintent.md)
+### Media actions
+- [protocol AudioPlaybackIntent](./audioplaybackintent.md)
   An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol CameraCaptureIntent](cameracaptureintent.md)
+- [protocol CameraCaptureIntent](./cameracaptureintent.md)
   Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
-- [protocol PlayVideoIntent](playvideointent.md)
+- [protocol PlayVideoIntent](./playvideointent.md)
   An intent that looks for videos based on a search term, then plays the content.
-- [enum VideoCategory](videocategory.md)
+- [enum VideoCategory](./videocategory.md)
 
 
 ---

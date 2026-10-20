@@ -1,7 +1,8 @@
 # ClothBodyComponent.PerSimulationVertexData
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Stores per-vertex data for all simulation vertices in a buffer.
 
@@ -18,13 +19,14 @@ typealias PerSimulationVertexData = PerClothVertexData
 
 ## See Also
 
-- [var visualMesh: LowLevelMesh?](clothbodycomponent/visualmesh.md)
+### Mapping the visual mesh
+- [var visualMesh: LowLevelMesh?](./visualmesh.md)
   The dynamically deforming visual mesh of the cloth body, which you may read but not modify.
-- [var visualMeshWeights: PerClothVertexData<Float>?](clothbodycomponent/visualmeshweights.md)
+- [var visualMeshWeights: PerClothVertexData<Float>?](./visualmeshweights.md)
   Optional weights by which the visual mesh should be deformed according to the simulation mesh.
-- [var materialNames: [String]](clothbodycomponent/materialnames.md)
+- [var materialNames: [String]](./materialnames.md)
   The names of the body materials used by this cloth body.
-- [ClothBodyComponent.PerVisualVertexData](clothbodycomponent/pervisualvertexdata.md)
+- [ClothBodyComponent.PerVisualVertexData](./pervisualvertexdata.md)
   Stores per-vertex data for all visual vertices in a buffer.
 
 

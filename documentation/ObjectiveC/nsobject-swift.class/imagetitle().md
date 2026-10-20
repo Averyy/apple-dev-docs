@@ -1,17 +1,22 @@
 # imageTitle()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the display title of the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func imageTitle() -> String!
+```
+
+```objc
+- (NSString *) imageTitle;
 ```
 
 #### Return Value

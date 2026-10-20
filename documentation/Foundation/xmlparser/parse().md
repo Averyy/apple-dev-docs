@@ -1,7 +1,8 @@
 # parse()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the event-driven parsing operation.
 
@@ -20,16 +21,21 @@ Starts the event-driven parsing operation.
 func parse() -> Bool
 ```
 
+```objc
+- (BOOL) parse;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parsing operation succeeds; [`false`](https://developer.apple.com/documentation/swift/false) if an error occurs or if the parsing operation aborts.
+[`true`](../../Swift/true.md) if the parsing operation succeeds; [`false`](../../Swift/false.md) if an error occurs or if the parsing operation aborts.
 
 ## See Also
 
-- [func abortParsing()](xmlparser/abortparsing.md)
+### Parsing
+- [func abortParsing()](./abortparsing%28%29.md)
   Stops the parser object.
-- [var parserError: (any Error)?](xmlparser/parsererror.md)
-  An [`NSError`](nserror.md) object from which you can obtain information about a parsing error.
+- [var parserError: (any Error)?](./parsererror.md)
+  An [`NSError`](../nserror.md) object from which you can obtain information about a parsing error.
 
 
 ---

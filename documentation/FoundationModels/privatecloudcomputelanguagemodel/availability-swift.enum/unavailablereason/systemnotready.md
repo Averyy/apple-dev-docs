@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Availability.UnavailableReason.systemNotReady
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system is not yet ready to serve PCC requests.
 
@@ -21,7 +22,8 @@ case systemNotReady
 
 ## See Also
 
-- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason.deviceNotEligible](privatecloudcomputelanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md)
+### Getting the unavailable reasons
+- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason.deviceNotEligible](./devicenoteligible.md)
   The device does not support Apple Intelligence.
 
 

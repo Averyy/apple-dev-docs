@@ -1,75 +1,77 @@
 # Stream Properties
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Stream property names that can be set or copied.
 
 #### Overview
 
-Use [`CFReadStreamCopyProperty(_:_:)`](cfreadstreamcopyproperty(_:_:).md) or [`CFWriteStreamCopyProperty(_:_:)`](cfwritestreamcopyproperty(_:_:).md) to read the property values. Use [`CFReadStreamSetProperty(_:_:_:)`](cfreadstreamsetproperty(_:_:_:).md) or [`CFWriteStreamSetProperty(_:_:_:)`](cfwritestreamsetproperty(_:_:_:).md) to set the property values.
+Use [`CFReadStreamCopyProperty(_:_:)`](./cfreadstreamcopyproperty%28_,_%29.md) or [`CFWriteStreamCopyProperty(_:_:)`](./cfwritestreamcopyproperty%28_,_%29.md) to read the property values. Use [`CFReadStreamSetProperty(_:_:_:)`](./cfreadstreamsetproperty%28_,_,_%29.md) or [`CFWriteStreamSetProperty(_:_:_:)`](./cfwritestreamsetproperty%28_,_,_%29.md) to set the property values.
 
 ## Topics
 
 ### Constants
-- [static let appendToFile: CFStreamPropertyKey!](cfstreampropertykey/appendtofile.md)
+- [static let appendToFile: CFStreamPropertyKey!](./cfstreampropertykey/appendtofile.md)
   Value is a `CFBoolean` value that indicates whether to append the written data to a file, if it already exists, rather than to replace its contents.
-- [static let dataWritten: CFStreamPropertyKey!](cfstreampropertykey/datawritten.md)
+- [static let dataWritten: CFStreamPropertyKey!](./cfstreampropertykey/datawritten.md)
   Value is a `CFData` object that contains all the bytes written to a writable memory stream. You cannot modify this value.
-- [static let fileCurrentOffset: CFStreamPropertyKey!](cfstreampropertykey/filecurrentoffset.md)
+- [static let fileCurrentOffset: CFStreamPropertyKey!](./cfstreampropertykey/filecurrentoffset.md)
   Value is a `CFNumber` object containing the current file offset.
-- [static let socketNativeHandle: CFStreamPropertyKey!](cfstreampropertykey/socketnativehandle.md)
-  Value is a `CFData` object that contains the native handle for a socket stream—of type [`CFSocketNativeHandle`](cfsocketnativehandle.md)—to which the socket stream is connected.
-- [static let socketRemoteHostName: CFStreamPropertyKey!](cfstreampropertykey/socketremotehostname.md)
+- [static let socketNativeHandle: CFStreamPropertyKey!](./cfstreampropertykey/socketnativehandle.md)
+  Value is a `CFData` object that contains the native handle for a socket stream—of type [`CFSocketNativeHandle`](./cfsocketnativehandle.md)—to which the socket stream is connected.
+- [static let socketRemoteHostName: CFStreamPropertyKey!](./cfstreampropertykey/socketremotehostname.md)
   Value is a `CFString` object containing the name of the host to which the socket stream is connected or `NULL` if unknown.
-- [static let socketRemotePortNumber: CFStreamPropertyKey!](cfstreampropertykey/socketremoteportnumber.md)
+- [static let socketRemotePortNumber: CFStreamPropertyKey!](./cfstreampropertykey/socketremoteportnumber.md)
   Value is a `CFNumber` object containing the remote port number to which the socket stream is connected or `NULL` if unknown.
-- [let kCFStreamPropertyShouldCloseNativeSocket: CFString](kcfstreampropertyshouldclosenativesocket.md)
+- [let kCFStreamPropertyShouldCloseNativeSocket: CFString](./kcfstreampropertyshouldclosenativesocket.md)
   Should Close Native Socket property key.
-- [let kCFStreamPropertySocketSecurityLevel: CFString](kcfstreampropertysocketsecuritylevel.md)
+- [let kCFStreamPropertySocketSecurityLevel: CFString](./kcfstreampropertysocketsecuritylevel.md)
   Socket Security Level property key.
-- [let kCFStreamPropertySSLPeerCertificates: CFString](../cfnetwork/kcfstreampropertysslpeercertificates.md)
+- [let kCFStreamPropertySSLPeerCertificates: CFString](../CFNetwork/kcfstreampropertysslpeercertificates.md)
   SSL Peer Certificates property key for copy operations, which return a `CFArray` object containing `SecCertificateRef` objects.
-- [let kCFStreamPropertySSLPeerTrust: CFString](../cfnetwork/kcfstreampropertysslpeertrust.md)
+- [let kCFStreamPropertySSLPeerTrust: CFString](../CFNetwork/kcfstreampropertysslpeertrust.md)
   SSL Peer Trust property key for copy operations, which return a `SecTrustRef` object containing the result of the SSL handshake.
-- [let kCFStreamPropertySSLSettings: CFString](../cfnetwork/kcfstreampropertysslsettings.md)
+- [let kCFStreamPropertySSLSettings: CFString](../CFNetwork/kcfstreampropertysslsettings.md)
   SSL Settings property key for set operations.
-- [let kCFStreamPropertySSLContext: CFString](../cfnetwork/kcfstreampropertysslcontext.md)
-- [let kCFStreamPropertySOCKSProxy: CFString](kcfstreampropertysocksproxy.md)
+- [let kCFStreamPropertySSLContext: CFString](../CFNetwork/kcfstreampropertysslcontext.md)
+- [let kCFStreamPropertySOCKSProxy: CFString](./kcfstreampropertysocksproxy.md)
   SOCKS proxy property key.
-- [let kCFStreamPropertyProxyLocalBypass: CFString](../cfnetwork/kcfstreampropertyproxylocalbypass.md)
+- [let kCFStreamPropertyProxyLocalBypass: CFString](../CFNetwork/kcfstreampropertyproxylocalbypass.md)
   Proxy Local Bypass property key.
-- [let kCFStreamPropertySocketRemoteHost: CFString](../cfnetwork/kcfstreampropertysocketremotehost.md)
+- [let kCFStreamPropertySocketRemoteHost: CFString](../CFNetwork/kcfstreampropertysocketremotehost.md)
   The key’s value is a `CFHostRef` for the remote host if it is known. If not, its value is `NULL`.
-- [let kCFStreamPropertySocketRemoteNetService: CFString](../cfnetwork/kcfstreampropertysocketremotenetservice.md)
+- [let kCFStreamPropertySocketRemoteNetService: CFString](../CFNetwork/kcfstreampropertysocketremotenetservice.md)
   The key’s value is a `CFNetServiceRef` for the remote network service if it is known. If not, its value is `NULL`.
-- [let kCFStreamNetworkServiceType: CFString](../cfnetwork/kcfstreamnetworkservicetype.md)
-  The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See doc://com.apple.documentation/documentation/corefoundation/stream-service-types for a list of possible values.
-- [let kCFStreamPropertyConnectionIsCellular: CFString](../cfnetwork/kcfstreampropertyconnectioniscellular.md)
+- [let kCFStreamNetworkServiceType: CFString](../CFNetwork/kcfstreamnetworkservicetype.md)
+  The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See https://developer.apple.com/documentation/corefoundation/stream-service-types for a list of possible values.
+- [let kCFStreamPropertyConnectionIsCellular: CFString](../CFNetwork/kcfstreampropertyconnectioniscellular.md)
   A boolean value indicating whether the stream is connected over a cellular (WWAN) interface. This is a read-only property, and is `false` until the connection has been established.
-- [let kCFStreamPropertyNoCellular: CFString](../cfnetwork/kcfstreampropertynocellular.md)
+- [let kCFStreamPropertyNoCellular: CFString](../CFNetwork/kcfstreampropertynocellular.md)
   A Boolean value indicating that the connection should not be established over a cellular (WWAN) connection. This value can only be set *before* you open the stream.
 
 ## See Also
 
-- [enum CFStreamStatus](cfstreamstatus.md)
+### Constants
+- [enum CFStreamStatus](./cfstreamstatus.md)
   Constants that describe the status of a stream.
-- [enum CFStreamErrorDomain](cfstreamerrordomain.md)
+- [enum CFStreamErrorDomain](./cfstreamerrordomain.md)
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
-- [CFStream Error Domain Constants (CFHost)](cfstream-error-domain-constants-cfhost.md)
+- [CFStream Error Domain Constants (CFHost)](./cfstream-error-domain-constants-cfhost.md)
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
-- [Error Subdomains](error-subdomains.md)
+- [Error Subdomains](./error-subdomains.md)
   Subdomains used to determine how to interpret an error in the `kCFStreamErrorDomainSOCKS` domain.
-- [Secure Sockets (SOCKS) Errors](../cfnetwork/1518266-secure-sockets-socks-errors.md)
+- [Secure Sockets (SOCKS) Errors](../CFNetwork/api-1518266-secure-sockets-socks-errors.md)
   Error codes returned by the `kCFStreamErrorDomainSOCKS` error domain.
-- [struct CFStreamEventType](cfstreameventtype.md)
+- [struct CFStreamEventType](./cfstreameventtype.md)
   Defines constants for stream-related events.
-- [CFStream Property SSL Settings Constants](cfstream-property-ssl-settings-constants.md)
+- [CFStream Property SSL Settings Constants](./cfstream-property-ssl-settings-constants.md)
   Constants for use in a `CFDictionary` object that is the value of the `kCFStreamPropertySSLSettings` stream property key.
-- [CFStream Socket Security Level Constants](cfstream-socket-security-level-constants.md)
+- [CFStream Socket Security Level Constants](./cfstream-socket-security-level-constants.md)
   Constants for setting the security level of a socket stream.
-- [CFStream SOCKS Proxy Key Constants](cfstream-socks-proxy-key-constants.md)
+- [CFStream SOCKS Proxy Key Constants](./cfstream-socks-proxy-key-constants.md)
   Constants for SOCKS Proxy `CFDictionary` keys.
-- [Stream Service Types](stream-service-types.md)
+- [Stream Service Types](./stream-service-types.md)
   String constants that specify the service type of a stream.
 
 

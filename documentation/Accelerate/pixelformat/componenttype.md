@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the pixel’s component.
@@ -12,7 +13,7 @@ The type of the pixel’s component.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

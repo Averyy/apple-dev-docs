@@ -1,16 +1,19 @@
 # splitSectionLengths
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the lengths of each split section.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -24,9 +27,10 @@ The layer splits the tensor into chunks along dimensions with sizes given in `sp
 
 ## See Also
 
-- [var dimension: Int](mlcsplitlayer/dimension.md)
+### Inspecting Split Layers
+- [var dimension: Int](./dimension.md)
   The dimension or axis along which to split the tensor.
-- [var splitCount: Int](mlcsplitlayer/splitcount.md)
+- [var splitCount: Int](./splitcount.md)
   The number of splits.
 
 

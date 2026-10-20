@@ -1,7 +1,8 @@
 # isLimitReached
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the usage limit has been reached.
 
@@ -21,9 +22,10 @@ var isLimitReached: Bool { get }
 
 ## See Also
 
-- [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.property.md)
+### Inspecting the quota limit
+- [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](./limitincreasesuggestion-swift.property.md)
   A suggestion the user can act on to increase their quota.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.struct.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](./limitincreasesuggestion-swift.struct.md)
   An offer that a user can act on to increase their quota for a language model.
 
 

@@ -1,16 +1,17 @@
 # UITextAlternativeStyle.lowConfidence
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates that the text input should highlight alternatives because the input text may be incorrect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ A constant that indicates that the text input should highlight alternatives beca
 case lowConfidence
 ```
 
+```c
+UITextAlternativeStyleLowConfidence
+```
+
 ## See Also
 
-- [UITextAlternativeStyle.none](uitextalternativestyle/none.md)
+### Constants
+- [UITextAlternativeStyle.none](./none.md)
   A constant that indicates that the text input shouldn’t highlight alternatives because the input text is expected to be correct.
 
 

@@ -1,7 +1,8 @@
 # readAttributeRouteTable(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRouteTable(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRouteTable() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeRouteTableWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

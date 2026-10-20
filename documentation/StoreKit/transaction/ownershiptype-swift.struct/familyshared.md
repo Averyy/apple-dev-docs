@@ -1,7 +1,8 @@
 # familyShared
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction belongs to a family member who benefits from the service.
 
@@ -22,15 +23,16 @@ static let familyShared: Transaction.OwnershipType
 
 ## Mentions
 
-- [Testing Family Sharing](testing-family-sharing.md)
+- [Testing Family Sharing](../../testing-family-sharing.md)
 
 #### Discussion
 
-For more information about Family Sharing, see [`Turn on Family Sharing for Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev45b03fab9).
+For more information about Family Sharing, see [Turn on Family Sharing for Apple In-App Purchases](https://help.apple.com/app-store-connect/#/dev45b03fab9).
 
 ## See Also
 
-- [static let purchased: Transaction.OwnershipType](transaction/ownershiptype-swift.struct/purchased.md)
+### Getting ownership types
+- [static let purchased: Transaction.OwnershipType](./purchased.md)
   The transaction belongs to the purchaser.
 
 

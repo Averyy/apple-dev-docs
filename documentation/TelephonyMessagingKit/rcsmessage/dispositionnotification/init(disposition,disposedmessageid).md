@@ -1,7 +1,8 @@
 # init(disposition:disposedMessageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a disposition notification content instance with the given disposition and a message identifier.
 

@@ -1,16 +1,17 @@
 # invalid
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Item metadata request completed with invalid result.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ static var invalid: ICReturnMetadataError.Code { get }
 
 ## See Also
 
-- [static var alreadyFetching: ICReturnMetadataError.Code](icreturnmetadataerror/alreadyfetching.md)
+### Error Codes
+- [static var alreadyFetching: ICReturnMetadataError.Code](./alreadyfetching.md)
   Item metadata request is being serviced.
-- [static var canceled: ICReturnMetadataError.Code](icreturnmetadataerror/canceled.md)
+- [static var canceled: ICReturnMetadataError.Code](./canceled.md)
   Item metadata request has been canceled.
-- [static var notAvailable: ICReturnMetadataError.Code](icreturnmetadataerror/notavailable.md)
+- [static var notAvailable: ICReturnMetadataError.Code](./notavailable.md)
   Item does not have metadata available.
-- [ICReturnMetadataError.Code](icreturnmetadataerror/code.md)
+- [ICReturnMetadataError.Code](./code.md)
 
 
 ---

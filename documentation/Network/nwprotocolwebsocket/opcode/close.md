@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Opcode.close
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A message indicating a close of the connection.
 
@@ -22,9 +23,10 @@ case close
 
 ## See Also
 
-- [NWProtocolWebSocket.Opcode.ping](nwprotocolwebsocket/opcode/ping.md)
+### Control Types
+- [NWProtocolWebSocket.Opcode.ping](./ping.md)
   A Ping message, which requests a Pong from the peer.
-- [NWProtocolWebSocket.Opcode.pong](nwprotocolwebsocket/opcode/pong.md)
+- [NWProtocolWebSocket.Opcode.pong](./pong.md)
   A Pong message in response to a Ping from the peer.
 
 

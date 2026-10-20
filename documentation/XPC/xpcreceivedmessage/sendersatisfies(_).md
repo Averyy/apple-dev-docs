@@ -1,7 +1,8 @@
 # senderSatisfies(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Check whether the sender of the received message satisfies the specified requirement.
 

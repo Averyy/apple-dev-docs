@@ -1,21 +1,26 @@
 # UIPageViewController.NavigationDirection
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Directions for page-turn transitions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum NavigationDirection
+```
+
+```c
+enum UIPageViewControllerNavigationDirection : NSInteger;
 ```
 
 #### Overview
@@ -27,31 +32,32 @@ For vertical navigation, pages turn from the bottom of the screen to the top as 
 ## Topics
 
 ### Constants
-- [UIPageViewController.NavigationDirection.forward](uipageviewcontroller/navigationdirection/forward.md)
+- [UIPageViewController.NavigationDirection.forward](./navigationdirection/forward.md)
   Navigation to the next page.
-- [UIPageViewController.NavigationDirection.reverse](uipageviewcontroller/navigationdirection/reverse.md)
+- [UIPageViewController.NavigationDirection.reverse](./navigationdirection/reverse.md)
   Navigation to the previous page.
 ### Initializers
-- [init?(rawValue: Int)](uipageviewcontroller/navigationdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./navigationdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setViewControllers([UIViewController]?, direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((Bool) -> Void)?)](uipageviewcontroller/setviewcontrollers(_:direction:animated:completion:).md)
+### Providing Content
+- [func setViewControllers([UIViewController]?, direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((Bool) -> Void)?)](./setviewcontrollers%28_,direction,animated,completion%29.md)
   Sets the view controllers to be displayed.
-- [var viewControllers: [UIViewController]?](uipageviewcontroller/viewcontrollers.md)
+- [var viewControllers: [UIViewController]?](./viewcontrollers.md)
   The view controllers displayed by the page view controller.
-- [var gestureRecognizers: [UIGestureRecognizer]](uipageviewcontroller/gesturerecognizers.md)
-  An array of [`UIGestureRecognizer`](uigesturerecognizer.md) objects that are configured to handle user interaction.
+- [var gestureRecognizers: [UIGestureRecognizer]](./gesturerecognizers.md)
+  An array of [`UIGestureRecognizer`](../uigesturerecognizer.md) objects that are configured to handle user interaction.
 
 
 ---

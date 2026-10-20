@@ -1,7 +1,8 @@
 # isLocal
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `true` if the directory version is local; otherwise `false`.
 
@@ -20,7 +21,8 @@ var isLocal: Bool { get }
 
 ## See Also
 
-- [var url: URL](gamesavesynceddirectory/version/url.md)
+### Accessing saved game state
+- [var url: URL](./url.md)
   The URL of a directory where you read and write game-save data.
 
 

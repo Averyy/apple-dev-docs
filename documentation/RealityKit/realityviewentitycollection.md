@@ -1,7 +1,8 @@
 # RealityViewEntityCollection
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of entities in a RealityView.
 
@@ -26,27 +27,28 @@ This collection is used by `RealityViewContent/entities`.
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [EntityCollection](entitycollection.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../Swift/collection.md)
+- [EntityCollection](./entitycollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityView](realityview.md)
+- [struct RealityView](./realityview.md)
   A view that contains RealityKit content.
-- [struct RealityViewContent](realityviewcontent.md)
+- [struct RealityViewContent](./realityviewcontent.md)
   The content of a visionOS reality view.
-- [struct RealityViewCameraContent](realityviewcameracontent.md)
+- [struct RealityViewCameraContent](./realityviewcameracontent.md)
   The content of a reality view that is displayed through a camera.
-- [protocol RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [protocol RealityViewContentProtocol](./realityviewcontentprotocol.md)
   A protocol representing the content of a reality view.
-- [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
+- [struct RealityViewDefaultPlaceholder](./realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
-- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+- [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

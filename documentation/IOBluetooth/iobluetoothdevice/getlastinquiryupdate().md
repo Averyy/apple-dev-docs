@@ -1,17 +1,22 @@
 # getLastInquiryUpdate()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the date/time of the last time the device was returned during an inquiry.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getLastInquiryUpdate() -> Date!
+```
+
+```objc
+- (NSDate *) getLastInquiryUpdate;
 ```
 
 #### Return Value

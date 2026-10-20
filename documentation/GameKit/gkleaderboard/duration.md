@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration from the start date that a recurring leaderboard occurrence accepts scores.
 
@@ -20,11 +21,16 @@ The duration from the start date that a recurring leaderboard occurrence accepts
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var startDate: Date?](gkleaderboard/startdate.md)
+### Accessing Recurring Leaderboard Properties
+- [var startDate: Date?](./startdate.md)
   The date and time a recurring leaderboard occurrence starts accepting scores.
-- [var nextStartDate: Date?](gkleaderboard/nextstartdate.md)
+- [var nextStartDate: Date?](./nextstartdate.md)
   The date and time the next recurring leaderboard occurrence starts accepting scores.
 
 

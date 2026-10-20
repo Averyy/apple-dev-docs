@@ -1,18 +1,21 @@
 # BNNSCompareTensor(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a tensor of Boolean type by comparing or performing a logical operation between two inputs.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns a tensor of Boolean type by comparing or performing a logical operation 
 func BNNSCompareTensor(_ in0: UnsafePointer<BNNSNDArrayDescriptor>, _ in1: UnsafePointer<BNNSNDArrayDescriptor>, _ op: BNNSRelationalOperator, _ out: UnsafeMutablePointer<BNNSNDArrayDescriptor>) -> Int32
 ```
 
+```c
+int BNNSCompareTensor(const BNNSNDArrayDescriptor *in0, const BNNSNDArrayDescriptor *in1, BNNSRelationalOperator op, BNNSNDArrayDescriptor *out);
+```
+
 #### Discussion
 
-Use relational operators, for example [`BNNSRelationalOperatorGreater`](bnnsrelationaloperatorgreater.md) and [`BNNSRelationalOperatorLess`](bnnsrelationaloperatorless.md), to compare floating-point elements. The following code compares the elements of two arrays of single-precision values for equality:
+Use relational operators, for example [`BNNSRelationalOperatorGreater`](./bnnsrelationaloperatorgreater.md) and [`BNNSRelationalOperatorLess`](./bnnsrelationaloperatorless.md), to compare floating-point elements. The following code compares the elements of two arrays of single-precision values for equality:
 
 ```swift
 let a: [Float] = [1, 2, 3, 4]
@@ -81,7 +88,7 @@ a.withUnsafeBufferPointer { aPtr in
 
 On return, `destination` contains the values `[false, false, true, false]`.
 
-Use logical operators, for example [`BNNSRelationalOperatorLogicalAND`](bnnsrelationaloperatorlogicaland.md) and [`BNNSRelationalOperatorLogicalOR`](bnnsrelationaloperatorlogicalor.md), to compare Boolean elements. The following code performs a logical AND operation on the elements of two arrays of Boolean values:
+Use logical operators, for example [`BNNSRelationalOperatorLogicalAND`](./bnnsrelationaloperatorlogicaland.md) and [`BNNSRelationalOperatorLogicalOR`](./bnnsrelationaloperatorlogicalor.md), to compare Boolean elements. The following code performs a logical AND operation on the elements of two arrays of Boolean values:
 
 ```swift
 
@@ -151,9 +158,10 @@ On return, `destination` contains the values `[false, false, false, true]`.
 
 ## See Also
 
-- [static func compare(BNNSNDArrayDescriptor, BNNSNDArrayDescriptor, using: BNNS.RelationalOperator, output: BNNSNDArrayDescriptor) throws](bnns/compare(_:_:using:output:).md)
+### Tensor comparison layers
+- [static func compare(BNNSNDArrayDescriptor, BNNSNDArrayDescriptor, using: BNNS.RelationalOperator, output: BNNSNDArrayDescriptor) throws](./bnns/compare%28_,_,using,output%29.md)
   Performs an elementwise comparison of two array descriptors using the specified relational operator.
-- [struct BNNSRelationalOperator](bnnsrelationaloperator.md)
+- [struct BNNSRelationalOperator](./bnnsrelationaloperator.md)
   Constants that describe relational operations.
 
 

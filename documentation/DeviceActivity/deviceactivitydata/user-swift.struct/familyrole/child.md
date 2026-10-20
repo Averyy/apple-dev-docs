@@ -1,7 +1,8 @@
 # DeviceActivityData.User.FamilyRole.child
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A child being managed by a parent or guardian in their iCloud family.
 
@@ -18,7 +19,8 @@ case child
 
 ## See Also
 
-- [DeviceActivityData.User.FamilyRole.individual](deviceactivitydata/user-swift.struct/familyrole/individual.md)
+### Defining family roles
+- [DeviceActivityData.User.FamilyRole.individual](./individual.md)
   A person who has authorized your app.
 
 

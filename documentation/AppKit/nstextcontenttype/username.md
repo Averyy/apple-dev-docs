@@ -1,7 +1,8 @@
 # username
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as an account or login name.
 
@@ -14,11 +15,16 @@ A property that defines the content in a text input area as an account or login 
 static let username: NSTextContentType
 ```
 
+```c
+extern NSTextContentType const NSTextContentTypeUsername;
+```
+
 ## See Also
 
-- [static let password: NSTextContentType](nstextcontenttype/password.md)
+### Managing accounts
+- [static let password: NSTextContentType](./password.md)
   A property that defines the content in a text input area as a password.
-- [static let newPassword: NSTextContentType](nstextcontenttype/newpassword.md)
+- [static let newPassword: NSTextContentType](./newpassword.md)
   A property that defines the content in a text input area as a new password.
 
 

@@ -1,7 +1,8 @@
 # MTRElectricalPowerMeasurementClusterMeasurementRangeStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,33 +19,37 @@
 class MTRElectricalPowerMeasurementClusterMeasurementRangeStruct
 ```
 
+```objc
+@interface MTRElectricalPowerMeasurementClusterMeasurementRangeStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var endSystime: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/endsystime.md)
-- [var endTimestamp: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/endtimestamp.md)
-- [var max: NSNumber](mtrelectricalpowermeasurementclustermeasurementrangestruct/max.md)
-- [var maxSystime: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/maxsystime.md)
-- [var maxTimestamp: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/maxtimestamp.md)
-- [var measurementType: NSNumber](mtrelectricalpowermeasurementclustermeasurementrangestruct/measurementtype.md)
-- [var min: NSNumber](mtrelectricalpowermeasurementclustermeasurementrangestruct/min.md)
-- [var minSystime: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/minsystime.md)
-- [var minTimestamp: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/mintimestamp.md)
-- [var startSystime: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/startsystime.md)
-- [var startTimestamp: NSNumber?](mtrelectricalpowermeasurementclustermeasurementrangestruct/starttimestamp.md)
+- [var endSystime: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/endsystime.md)
+- [var endTimestamp: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/endtimestamp.md)
+- [var max: NSNumber](./mtrelectricalpowermeasurementclustermeasurementrangestruct/max.md)
+- [var maxSystime: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/maxsystime.md)
+- [var maxTimestamp: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/maxtimestamp.md)
+- [var measurementType: NSNumber](./mtrelectricalpowermeasurementclustermeasurementrangestruct/measurementtype.md)
+- [var min: NSNumber](./mtrelectricalpowermeasurementclustermeasurementrangestruct/min.md)
+- [var minSystime: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/minsystime.md)
+- [var minTimestamp: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/mintimestamp.md)
+- [var startSystime: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/startsystime.md)
+- [var startTimestamp: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementrangestruct/starttimestamp.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

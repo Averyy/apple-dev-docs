@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the card’s type.
 
@@ -19,21 +20,26 @@ A value that represents the card’s type.
 var type: PKPaymentMethodType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PKPaymentMethodType type;
+```
+
 #### Discussion
 
-For a list of possible card types, see [`PKPaymentMethodType`](pkpaymentmethodtype.md).
+For a list of possible card types, see [`PKPaymentMethodType`](../pkpaymentmethodtype.md).
 
-> **Note**:  Some older cards might not have card type information. Those cards have the value [`PKPaymentMethodType.unknown`](pkpaymentmethodtype/unknown.md).
+> **Note**:  Some older cards might not have card type information. Those cards have the value [`PKPaymentMethodType.unknown`](../pkpaymentmethodtype/unknown.md).
 
 ## See Also
 
-- [enum PKPaymentMethodType](pkpaymentmethodtype.md)
+### Getting the payment method’s attributes
+- [enum PKPaymentMethodType](../pkpaymentmethodtype.md)
   The type of cards available in Apple Pay.
-- [var displayName: String?](pkpaymentmethod/displayname.md)
+- [var displayName: String?](./displayname.md)
   A string, suitable for display, that describes the card.
-- [var network: PKPaymentNetwork?](pkpaymentmethod/network.md)
+- [var network: PKPaymentNetwork?](./network.md)
   A string, suitable for display, that describes the payment network for the card.
-- [var billingAddress: CNContact?](pkpaymentmethod/billingaddress.md)
+- [var billingAddress: CNContact?](./billingaddress.md)
   The user’s billing address.
 
 

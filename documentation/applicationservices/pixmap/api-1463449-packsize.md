@@ -1,7 +1,8 @@
 # packSize
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the packed image in bytes. When the `packType` field contains the `value` 0, this field is always set to 0.
 
@@ -12,6 +13,10 @@ The size of the packed image in bytes. When the `packType` field contains the `v
 
 ```swift
 var packSize: Int32
+```
+
+```c
+SInt32 packSize;
 ```
 
 

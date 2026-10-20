@@ -1,14 +1,15 @@
 # init(sampleBuffer:sessionAttributes:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure representing a Cinematic rendering session based a sample buffer and session attributes.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

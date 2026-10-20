@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.B
 
 # mlx.nn.BatchNorm
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.BatchNorm.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.BatchNorm
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.BatchNorm
-
 **class BatchNorm(*num_features: int*, *eps: float = 1e-05*, *momentum: float = 0.1*, *affine: bool = True*, *track_running_stats: bool = True*)**
 : Applies Batch Normalization over a 2D, 3D or 4D input.
 Computes
@@ -62,15 +35,16 @@ transformation after the normalization. Default: `True`.
 running mean and variance. Default: `True`.
 
 Examples
->>> import mlx.core as mx
->>> import mlx.nn as nn
->>> x = mx.random.normal((5, 4))
->>> bn = nn.BatchNorm(num_features=4, affine=True)
->>> output = bn(x)
+
+  ```
+  >>> import mlx.core as mx
+  >>> import mlx.nn as nn
+  >>> x = mx.random.normal((5, 4))
+  >>> bn = nn.BatchNorm(num_features=4, affine=True)
+  >>> output = bn(x)
+  ```
 
 Methods
 
 `unfreeze`(*args, **kwargs)
 Wrap unfreeze to make sure that running_mean and var are always frozen parameters.
-
-** Contents

@@ -1,7 +1,8 @@
 # bouncy
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A spring animation with a predefined duration and higher amount of bounce.
 
@@ -23,15 +24,16 @@ static var bouncy: Animation { get }
 
 ## See Also
 
-- [static func bouncy(duration: TimeInterval, extraBounce: Double) -> Animation](animation/bouncy(duration:extrabounce:).md)
+### Getting built-in spring animations
+- [static func bouncy(duration: TimeInterval, extraBounce: Double) -> Animation](./bouncy%28duration,extrabounce%29.md)
   A spring animation with a predefined duration and higher amount of bounce that can be tuned.
-- [static var smooth: Animation](animation/smooth.md)
+- [static var smooth: Animation](./smooth.md)
   A smooth spring animation with a predefined duration and no bounce.
-- [static func smooth(duration: TimeInterval, extraBounce: Double) -> Animation](animation/smooth(duration:extrabounce:).md)
+- [static func smooth(duration: TimeInterval, extraBounce: Double) -> Animation](./smooth%28duration,extrabounce%29.md)
   A smooth spring animation with a predefined duration and no bounce that can be tuned.
-- [static var snappy: Animation](animation/snappy.md)
+- [static var snappy: Animation](./snappy.md)
   A spring animation with a predefined duration and small amount of bounce that feels more snappy.
-- [static func snappy(duration: TimeInterval, extraBounce: Double) -> Animation](animation/snappy(duration:extrabounce:).md)
+- [static func snappy(duration: TimeInterval, extraBounce: Double) -> Animation](./snappy%28duration,extrabounce%29.md)
   A spring animation with a predefined duration and small amount of bounce that feels more snappy and can be tuned.
 
 

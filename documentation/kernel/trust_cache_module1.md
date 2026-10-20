@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct trust_cache_module1 {
     ...
 };
@@ -17,10 +17,10 @@ struct trust_cache_module1 {
 ## Topics
 
 ### Instance Properties
-- [entries](trust_cache_module1/3000808-entries.md)
-- [num_entries](trust_cache_module1/3000809-num_entries.md)
-- [uuid](trust_cache_module1/3000810-uuid.md)
-- [version](trust_cache_module1/3000811-version.md)
+- [entries](./trust_cache_module1/api-3000808-entries.md)
+- [num_entries](./trust_cache_module1/api-3000809-num_entries.md)
+- [uuid](./trust_cache_module1/api-3000810-uuid.md)
+- [version](./trust_cache_module1/api-3000811-version.md)
 
 
 ---

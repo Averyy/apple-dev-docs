@@ -1,7 +1,8 @@
 # BetaCrashLog.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a beta crash log resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a beta crash log resource.
 
 ## Declaration
 
-```swift
+```
 object BetaCrashLog.Attributes
 ```
 

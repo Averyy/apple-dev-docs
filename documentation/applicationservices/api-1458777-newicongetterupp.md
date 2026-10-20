@@ -1,7 +1,8 @@
 # NewIconGetterUPP(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func NewIconGetterUPP(_ userRoutine: IconGetterProcPtr!) -> IconGetterUPP!
+```
+
+```c
+IconGetterUPP NewIconGetterUPP(IconGetterProcPtr userRoutine);
 ```
 
 

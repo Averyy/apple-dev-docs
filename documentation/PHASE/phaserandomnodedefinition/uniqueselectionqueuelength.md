@@ -1,7 +1,8 @@
 # uniqueSelectionQueueLength
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the unique selection queue.
 
@@ -17,6 +18,10 @@ The length of the unique selection queue.
 
 ```swift
 var uniqueSelectionQueueLength: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSInteger uniqueSelectionQueueLength;
 ```
 
 

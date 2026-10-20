@@ -1,16 +1,17 @@
 # Assignable Implementations
 
-**Framework**: Assignables
+**Framework**: Assignables  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func assign(to: AnyUserIdentity) throws -> AssignedWorkDocument](assignabledocument/assign(to:).md)
+- [func assign(to: AnyUserIdentity) throws -> AssignedWorkDocument](./assign%28to%29.md)
   Assign this document to a user.
-- [func makeAssignedWorkDocument() throws -> AssignedWorkDocument](assignabledocument/makeassignedworkdocument.md)
-  Create a new instance of an [`AssignedWorkDocument`](assignedworkdocument.md) based on this assignable document.
-- [func makeAssignedWorkDocument(id: String) throws -> AssignedWorkDocument](assignabledocument/makeassignedworkdocument(id:).md)
-  Create a new instance of an [`AssignedWorkDocument`](assignedworkdocument.md) based on this assignable document.
+- [func makeAssignedWorkDocument() throws -> AssignedWorkDocument](./makeassignedworkdocument%28%29.md)
+  Create a new instance of an [`AssignedWorkDocument`](../assignedworkdocument.md) based on this assignable document.
+- [func makeAssignedWorkDocument(id: String) throws -> AssignedWorkDocument](./makeassignedworkdocument%28id%29.md)
+  Create a new instance of an [`AssignedWorkDocument`](../assignedworkdocument.md) based on this assignable document.
 
 
 ---

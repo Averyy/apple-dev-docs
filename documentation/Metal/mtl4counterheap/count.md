@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Queries the number of entries in the heap.
@@ -18,6 +19,10 @@ Queries the number of entries in the heap.
 
 ```swift
 var count: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger count;
 ```
 
 

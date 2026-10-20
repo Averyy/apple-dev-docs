@@ -1,7 +1,8 @@
 # isFileViewerRequest
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request came from Finder or related system file browsers.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the request came from Finder or related s
 var isFileViewerRequest: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isFileViewerRequest;
+```
+
 ## See Also
 
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileproviderrequest/domainversion.md)
+### Accessing Application Information
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The version of the domain for the request.
-- [var requestingExecutable: URL?](nsfileproviderrequest/requestingexecutable.md)
+- [var requestingExecutable: URL?](./requestingexecutable.md)
   The URL of the requesting executable.
-- [var isSystemRequest: Bool](nsfileproviderrequest/issystemrequest.md)
+- [var isSystemRequest: Bool](./issystemrequest.md)
   A Boolean value that indicates whether the request came from a system process.
 
 

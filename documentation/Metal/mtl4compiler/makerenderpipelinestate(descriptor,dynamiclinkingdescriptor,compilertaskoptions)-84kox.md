@@ -1,7 +1,8 @@
 # makeRenderPipelineState(descriptor:dynamicLinkingDescriptor:compilerTaskOptions:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new render pipeline state synchronously.
 

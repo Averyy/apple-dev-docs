@@ -1,7 +1,8 @@
 # down
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the effect requesting an animation that moves back and forth vertically, starting by moving down.
 

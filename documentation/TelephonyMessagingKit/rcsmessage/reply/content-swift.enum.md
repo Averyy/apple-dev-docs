@@ -1,7 +1,8 @@
 # RCSMessage.Reply.Content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,21 +16,21 @@ enum Content
 ## Topics
 
 ### Enumeration Cases
-- [case fileTransfer(RCSMessage.FileTransfer)](rcsmessage/reply/content-swift.enum/filetransfer(_:).md)
+- [case fileTransfer(RCSMessage.FileTransfer)](./content-swift.enum/filetransfer%28_%29.md)
   A content type for file transfer content.
-- [case geolocationPush(RCSMessage.GeolocationPush)](rcsmessage/reply/content-swift.enum/geolocationpush(_:).md)
+- [case geolocationPush(RCSMessage.GeolocationPush)](./content-swift.enum/geolocationpush%28_%29.md)
   A content type for geolocation push content.
-- [RCSMessage.Reply.Content.text(_:)](rcsmessage/reply/content-swift.enum/text(_:).md)
+- [RCSMessage.Reply.Content.text(_:)](./content-swift.enum/text%28_%29.md)
   A content type for text content.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

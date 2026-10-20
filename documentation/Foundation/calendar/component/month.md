@@ -1,7 +1,8 @@
 # Calendar.Component.month
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifier for the month unit.
 
@@ -22,13 +23,14 @@ case month
 
 ## See Also
 
-- [Calendar.Component.era](calendar/component/era.md)
+### Specifying Years and Months
+- [Calendar.Component.era](./era.md)
   Identifier for the era unit.
-- [Calendar.Component.year](calendar/component/year.md)
+- [Calendar.Component.year](./year.md)
   Identifier for the year unit.
-- [Calendar.Component.yearForWeekOfYear](calendar/component/yearforweekofyear.md)
+- [Calendar.Component.yearForWeekOfYear](./yearforweekofyear.md)
   Identifier for the week-counting year unit.
-- [Calendar.Component.quarter](calendar/component/quarter.md)
+- [Calendar.Component.quarter](./quarter.md)
   Identifier for the quarter of the calendar.
 
 

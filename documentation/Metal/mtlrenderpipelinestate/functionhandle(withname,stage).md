@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Obtains a function handle for the a specific function this pipeline links at the Metal IR level.
@@ -18,6 +19,10 @@ Obtains a function handle for the a specific function this pipeline links at the
 
 ```swift
 func functionHandle(withName name: String, stage: MTLRenderStages) -> (any MTLFunctionHandle)?
+```
+
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithName:(NSString *) name stage:(MTLRenderStages) stage;
 ```
 
 #### Return Value

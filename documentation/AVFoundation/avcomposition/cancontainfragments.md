@@ -1,7 +1,8 @@
 # canContainFragments
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can extend the asset by fragments.
 
@@ -21,13 +22,14 @@ var canContainFragments: Bool { get }
 
 #### Discussion
 
-For QuickTime movie files and MPEG-4 files, the value is [`true`](https://developer.apple.com/documentation/swift/true) if an `mvex` box is present in the `moov` box. For those types, the `mvex` box signals the possible presence of later `moof` boxes.
+For QuickTime movie files and MPEG-4 files, the value is [`true`](../../Swift/true.md) if an `mvex` box is present in the `moov` box. For those types, the `mvex` box signals the possible presence of later `moof` boxes.
 
 ## See Also
 
-- [var containsFragments: Bool](avcomposition/containsfragments.md)
+### Determining fragment support
+- [var containsFragments: Bool](./containsfragments.md)
   A Boolean value that indicates whether at least one movie fragment extends the asset.
-- [var overallDurationHint: CMTime](avcomposition/overalldurationhint.md)
+- [var overallDurationHint: CMTime](./overalldurationhint.md)
   The total duration of fragments that currently exist, or may exist in the future.
 
 

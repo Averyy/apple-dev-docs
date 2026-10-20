@@ -1,7 +1,8 @@
 # ParameterOption
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the various customizations that you can make to a tip parameter.
 
@@ -23,20 +24,22 @@ struct ParameterOption
 ## Topics
 
 ### Type Properties
-- [static var transient: Tips.ParameterOption](tips/parameteroption/transient.md)
+- [static var transient: Tips.ParameterOption](./parameteroption/transient.md)
   An option that resets the parameter value the first time it is referenced.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Parameter](tips/parameter.md)
+### Related Documentation
+- [struct Parameter](./parameter.md)
   A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
-- [struct Parameter](tips/parameter.md)
+### Parameters
+- [struct Parameter](./parameter.md)
   A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
 
 

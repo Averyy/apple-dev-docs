@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that copies data from a texture to another.
@@ -20,18 +21,23 @@ Encodes a command that copies data from a texture to another.
 func copy(sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)
 ```
 
+```objc
+- (void) copyFromTexture:(id<MTLTexture>) sourceTexture toTexture:(id<MTLTexture>) destinationTexture;
+```
+
 ## Parameters
 
-- `sourceTexture`: An [`MTLTexture`](mtltexture.md) instance the command copies data from.
-- `destinationTexture`: Another [`MTLTexture`](mtltexture.md) instance the command copies the data into that has the same [`pixelFormat`](mtltexture/pixelformat.md) and [`sampleCount`](mtltexture/samplecount.md) as `sourceTexture`.
+- `sourceTexture`: An [`MTLTexture`](../mtltexture.md) instance the command copies data from.
+- `destinationTexture`: Another [`MTLTexture`](../mtltexture.md) instance the command copies the data into that has the same [`pixelFormat`](../mtltexture/pixelformat.md) and [`sampleCount`](../mtltexture/samplecount.md) as `sourceTexture`.
 
 ## See Also
 
-- [func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, destinationTensor: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtl4computecommandencoder/copy(sourcetensor:sourceorigin:sourcedimensions:destinationtensor:destinationorigin:destinationdimensions:).md)
+### Encoding texture copy commands
+- [func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, destinationTensor: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](./copy%28sourcetensor,sourceorigin,sourcedimensions,destinationtensor,destinationorigin,destinationdimensions%29.md)
   Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
-- [func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, destinationTexture: any MTLTexture, destinationSlice: Int, destinationLevel: Int, sliceCount: Int, levelCount: Int)](mtl4computecommandencoder/copy(sourcetexture:sourceslice:sourcelevel:destinationtexture:destinationslice:destinationlevel:slicecount:levelcount:).md)
+- [func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, destinationTexture: any MTLTexture, destinationSlice: Int, destinationLevel: Int, sliceCount: Int, levelCount: Int)](./copy%28sourcetexture,sourceslice,sourcelevel,destinationtexture,destinationslice,destinationlevel,slicecount,levelcount%29.md)
   Encodes a command that copies slices of a texture to slices of another texture.
-- [func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sourceOrigin: MTLOrigin, sourceSize: MTLSize, destinationTexture: any MTLTexture, destinationSlice: Int, destinationLevel: Int, destinationOrigin: MTLOrigin)](mtl4computecommandencoder/copy(sourcetexture:sourceslice:sourcelevel:sourceorigin:sourcesize:destinationtexture:destinationslice:destinationlevel:destinationorigin:).md)
+- [func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sourceOrigin: MTLOrigin, sourceSize: MTLSize, destinationTexture: any MTLTexture, destinationSlice: Int, destinationLevel: Int, destinationOrigin: MTLOrigin)](./copy%28sourcetexture,sourceslice,sourcelevel,sourceorigin,sourcesize,destinationtexture,destinationslice,destinationlevel,destinationorigin%29.md)
   Encodes a command that copies image data from a slice of a texture into a slice of another texture.
 
 

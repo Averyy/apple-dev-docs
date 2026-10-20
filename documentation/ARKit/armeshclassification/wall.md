@@ -1,7 +1,8 @@
 # ARMeshClassification.wall
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The face is a part of a real-world wall.
 
@@ -15,21 +16,26 @@ The face is a part of a real-world wall.
 case wall
 ```
 
+```c
+ARMeshClassificationWall
+```
+
 ## See Also
 
-- [ARMeshClassification.ceiling](armeshclassification/ceiling.md)
+### Options
+- [ARMeshClassification.ceiling](./ceiling.md)
   The face is a part of a real-world ceiling.
-- [ARMeshClassification.door](armeshclassification/door.md)
+- [ARMeshClassification.door](./door.md)
   The face is a part of a real-world door.
-- [ARMeshClassification.floor](armeshclassification/floor.md)
+- [ARMeshClassification.floor](./floor.md)
   The face is a part of a real-world floor.
-- [ARMeshClassification.none](armeshclassification/none.md)
+- [ARMeshClassification.none](./none.md)
   A face ARKit can’t classify.
-- [ARMeshClassification.seat](armeshclassification/seat.md)
+- [ARMeshClassification.seat](./seat.md)
   The face is a part of a real-world seat.
-- [ARMeshClassification.table](armeshclassification/table.md)
+- [ARMeshClassification.table](./table.md)
   The face is a part of a real-world table.
-- [ARMeshClassification.window](armeshclassification/window.md)
+- [ARMeshClassification.window](./window.md)
   The face is a part of a real-world window.
 
 

@@ -1,7 +1,8 @@
 # readAttributeNumberOfHolidaySchedulesSupported(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfHolidaySchedulesSupported(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfHolidaySchedulesSupported() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfHolidaySchedulesSupportedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

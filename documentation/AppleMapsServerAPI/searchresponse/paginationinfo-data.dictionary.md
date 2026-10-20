@@ -1,7 +1,8 @@
 # SearchResponse.PaginationInfo
 
 **Framework**: Apple Maps Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that returns a page of search responses.
 
@@ -10,7 +11,7 @@ An object that returns a page of search responses.
 
 ## Declaration
 
-```swift
+```
 object SearchResponse.PaginationInfo
 ```
 
@@ -23,7 +24,8 @@ object SearchResponse.PaginationInfo
 
 ## See Also
 
-- [object SearchResponse.Place](searchresponse/place.md)
+### Place information returned by a search
+- [object SearchResponse.Place](./place.md)
   A structure returned by a search that describes a place.
 
 

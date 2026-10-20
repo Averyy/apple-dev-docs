@@ -1,27 +1,28 @@
 # Classifying Sounds in an Audio Stream
 
-**Framework**: Sound Analysis
+**Framework**: Sound Analysis  
+**Role**: Article
 
 Identify individual sounds in an audio data stream, such as from a microphone, with an audio stream analyzer.
 
 #### Overview
 
-Use an [`SNAudioStreamAnalyzer`](snaudiostreamanalyzer.md) to recognize sounds, such as human speech, music, and singing, by processing an audio stream, such as from a microphone. For example, a sound recording app can use an audio stream analyzer to show a visual label for sounds the app identifies in real time.
+Use an [`SNAudioStreamAnalyzer`](./snaudiostreamanalyzer.md) to recognize sounds, such as human speech, music, and singing, by processing an audio stream, such as from a microphone. For example, a sound recording app can use an audio stream analyzer to show a visual label for sounds the app identifies in real time.
 
-This article builds on the [`Classifying Sounds in an Audio File`](classifying-sounds-in-an-audio-file.md) article, including:
+This article builds on the [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md) article, including:
 
-- Creating an [`SNClassifySoundRequest`](snclassifysoundrequest.md)
-- Implementing a type that conforms to [`SNResultsObserving`](snresultsobserving.md)
+- Creating an [`SNClassifySoundRequest`](./snclassifysoundrequest.md)
+- Implementing a type that conforms to [`SNResultsObserving`](./snresultsobserving.md)
 
 ##### Start an Audio Engine
 
-The [`Audio engine`](https://developer.apple.com/documentation/avfaudio/audio-engine) API simplifies audio-related tasks, including capturing audio data with a microphone.
+The [Audio engine](../AVFAudio/audio-engine.md) API simplifies audio-related tasks, including capturing audio data with a microphone.
 
 Capture audio data from the device’s default microphone:
 
-1. Create an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) instance.
-2. Save a reference to the microphone’s [`AVAudioFormat`](https://developer.apple.com/documentation/avfaudio/avaudioformat) instance.
-3. Begin the audio pipeline’s data flow by calling the engine’s [`start()`](https://developer.apple.com/documentation/avfaudio/avaudioengine/start()) method.
+1. Create an [`AVAudioEngine`](../AVFAudio/avaudioengine.md) instance.
+2. Save a reference to the microphone’s [`AVAudioFormat`](../AVFAudio/avaudioformat.md) instance.
+3. Begin the audio pipeline’s data flow by calling the engine’s [`start()`](../AVFAudio/avaudioengine/start%28%29.md) method.
 
 ```swift
 func startAudioEngine() {
@@ -41,24 +42,24 @@ func startAudioEngine() {
 }
 ```
 
-When you create an audio engine instance, its default [`inputNode`](https://developer.apple.com/documentation/avfaudio/avaudioengine/inputnode) accesses audio data from the device’s default microphone.
+When you create an audio engine instance, its default [`inputNode`](../AVFAudio/avaudioengine/inputnode.md) accesses audio data from the device’s default microphone.
 
-> ❗ **Important**:  To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key in your project’s `Info.plist` file.
+> ❗ **Important**:  To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) key in your project’s `Info.plist` file.
 
 ##### Create a Stream Analyzer
 
-Analyze the microphone audio by configuring an [`SNAudioStreamAnalyzer`](snaudiostreamanalyzer.md) to the input device’s native PCM (pulse code modulation) audio format.
+Analyze the microphone audio by configuring an [`SNAudioStreamAnalyzer`](./snaudiostreamanalyzer.md) to the input device’s native PCM (pulse code modulation) audio format.
 
 ```swift
 // Create a new stream analyzer.
 streamAnalyzer = SNAudioStreamAnalyzer(format: inputFormat)
 ```
 
-Audio stream analyzers only work with audio data in the PCM format, unlike [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) instances.
+Audio stream analyzers only work with audio data in the PCM format, unlike [`SNAudioFileAnalyzer`](./snaudiofileanalyzer.md) instances.
 
 > ❗ **Important**:  If the input device’s audio format changes, you must discard the current `SNAudioStreamAnalyzer` and create a new one that matches the input’s updated audio format.
 
-Create a sound classification request and a results observer (see [`Classifying Sounds in an Audio File`](classifying-sounds-in-an-audio-file.md)) and add them to the stream analyzer by calling [`add(_:withObserver:)`](snaudiostreamanalyzer/add(_:withobserver:).md).
+Create a sound classification request and a results observer (see [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)) and add them to the stream analyzer by calling [`add(_:withObserver:)`](./snaudiostreamanalyzer/add%28_,withobserver%29.md).
 
 ```swift
 // Add a sound classification request that reports to an observer.
@@ -94,15 +95,16 @@ func analyzeAudio(buffer: AVAudioBuffer, at time: AVAudioTime) {
 }
 ```
 
-The stream analyzer sends the results to your [`SNResultsObserving`](snresultsobserving.md) instance.
+The stream analyzer sends the results to your [`SNResultsObserving`](./snresultsobserving.md) instance.
 
 ## See Also
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+### Audio analyzers
+- [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)
   Identify individual sounds in a file, such as a recording, with an audio file analyzer.
-- [class SNAudioFileAnalyzer](snaudiofileanalyzer.md)
+- [class SNAudioFileAnalyzer](./snaudiofileanalyzer.md)
   An analyzer that runs sound classification requests on an audio file.
-- [class SNAudioStreamAnalyzer](snaudiostreamanalyzer.md)
+- [class SNAudioStreamAnalyzer](./snaudiostreamanalyzer.md)
   An object you create to analyze a stream of audio data and provide the results to your app.
 
 

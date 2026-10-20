@@ -1,7 +1,8 @@
 # TileOverlayImageCallback
 
 **Framework**: MapKit JS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A callback function that provides tile images for a tile overlay.
 
@@ -10,7 +11,7 @@ A callback function that provides tile images for a tile overlay.
 
 ## Declaration
 
-```swift
+```
 type TileOverlayImageCallback = (
     x: number,
     y: number,
@@ -24,11 +25,11 @@ type TileOverlayImageCallback = (
 
 When MapKit JS needs to display a tile, it invokes the callback with the parameters `x`, `y`, `z`, `scale`, and `data`. Return one of the following:
 
-- An [`ImageSource`](imagesource.md) such as an `HTMLCanvasElement` or `OffscreenCanvas` for synchronous tile rendering.
-- A `Promise` that resolves to an [`ImageSource`](imagesource.md) for asynchronous tile loading.
+- An [`ImageSource`](./imagesource.md) such as an `HTMLCanvasElement` or `OffscreenCanvas` for synchronous tile rendering.
+- A `Promise` that resolves to an [`ImageSource`](./imagesource.md) for asynchronous tile loading.
 - `null` to indicate there is no tile for the requested coordinates.
 
-The following example creates a [`TileOverlay`](tileoverlay.md) with a callback that draws each tile on a canvas:
+The following example creates a [`TileOverlay`](./tileoverlay.md) with a callback that draws each tile on a canvas:
 
 ```javascript
 const overlay = new mapkit.TileOverlay((x, y, z, scale) => {
@@ -50,15 +51,16 @@ const overlay = new mapkit.TileOverlay((x, y, z, scale) => {
 });
 ```
 
-See [`ImageSource`](imagesource.md) for cross-origin requirements.
+See [`ImageSource`](./imagesource.md) for cross-origin requirements.
 
 ## See Also
 
-- [new TileOverlay(imageForTile, options)](tileoverlay/tileoverlayconstructor.md)
+### Creating a tile overlay
+- [new TileOverlay(imageForTile, options)](./tileoverlay/tileoverlayconstructor.md)
   Creates a tile overlay with a URL template or image callback and style options.
-- [interface TileOverlayConstructorOptions](tileoverlayconstructoroptions.md)
+- [interface TileOverlayConstructorOptions](./tileoverlayconstructoroptions.md)
   Attributes for initializing a tile overlay, including minimum and maximum zoom, opacity, and custom data.
-- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+- [type TileOverlayUrlTemplate](./tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
 
 

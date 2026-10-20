@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an argument encoder for an argument buffer that’s one of this function’s arguments.
@@ -20,9 +21,13 @@ Creates an argument encoder for an argument buffer that’s one of this function
 func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder
 ```
 
+```objc
+- (id<MTLArgumentEncoder>) newArgumentEncoderWithBufferIndex:(NSUInteger) bufferIndex;
+```
+
 #### Discussion
 
-Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargumentencoder.md) object need to match the structure of the argument buffer located at the specified buffer index. If you want to interpret a regular structure as an argument buffer, at least one of the members of the structure needs to have an `[[id(n)]]` attribute.
+Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](../mtlargumentencoder.md) object need to match the structure of the argument buffer located at the specified buffer index. If you want to interpret a regular structure as an argument buffer, at least one of the members of the structure needs to have an `[[id(n)]]` attribute.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargum
 
 ## See Also
 
-- [func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedArgument?>?) -> any MTLArgumentEncoder](mtlfunction/makeargumentencoder(bufferindex:reflection:).md)
+### Creating argument encoders
+- [func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedArgument?>?) -> any MTLArgumentEncoder](./makeargumentencoder%28bufferindex,reflection%29.md)
   Creates an argument encoder and returns reflection information for an argument buffer that’s one of this function’s arguments
 
 

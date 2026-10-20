@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,22 +18,22 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDisplaySubPixelConfigurationDelta](1645123-anonymous/kdisplaysubpixelconfigurationdelta.md)
-- [kDisplaySubPixelConfigurationQuad](1645123-anonymous/kdisplaysubpixelconfigurationquad.md)
-- [kDisplaySubPixelConfigurationStripe](1645123-anonymous/kdisplaysubpixelconfigurationstripe.md)
-- [kDisplaySubPixelConfigurationStripeOffset](1645123-anonymous/kdisplaysubpixelconfigurationstripeoffset.md)
-- [kDisplaySubPixelConfigurationUndefined](1645123-anonymous/kdisplaysubpixelconfigurationundefined.md)
-- [kDisplaySubPixelLayoutBGR](1645123-anonymous/kdisplaysubpixellayoutbgr.md)
-- [kDisplaySubPixelLayoutQuadGBL](1645123-anonymous/kdisplaysubpixellayoutquadgbl.md)
-- [kDisplaySubPixelLayoutQuadGBR](1645123-anonymous/kdisplaysubpixellayoutquadgbr.md)
-- [kDisplaySubPixelLayoutRGB](1645123-anonymous/kdisplaysubpixellayoutrgb.md)
-- [kDisplaySubPixelLayoutUndefined](1645123-anonymous/kdisplaysubpixellayoutundefined.md)
-- [kDisplaySubPixelShapeElliptical](1645123-anonymous/kdisplaysubpixelshapeelliptical.md)
-- [kDisplaySubPixelShapeOval](1645123-anonymous/kdisplaysubpixelshapeoval.md)
-- [kDisplaySubPixelShapeRectangular](1645123-anonymous/kdisplaysubpixelshaperectangular.md)
-- [kDisplaySubPixelShapeRound](1645123-anonymous/kdisplaysubpixelshaperound.md)
-- [kDisplaySubPixelShapeSquare](1645123-anonymous/kdisplaysubpixelshapesquare.md)
-- [kDisplaySubPixelShapeUndefined](1645123-anonymous/kdisplaysubpixelshapeundefined.md)
+- [kDisplaySubPixelConfigurationDelta](./api-1645123-anonymous/kdisplaysubpixelconfigurationdelta.md)
+- [kDisplaySubPixelConfigurationQuad](./api-1645123-anonymous/kdisplaysubpixelconfigurationquad.md)
+- [kDisplaySubPixelConfigurationStripe](./api-1645123-anonymous/kdisplaysubpixelconfigurationstripe.md)
+- [kDisplaySubPixelConfigurationStripeOffset](./api-1645123-anonymous/kdisplaysubpixelconfigurationstripeoffset.md)
+- [kDisplaySubPixelConfigurationUndefined](./api-1645123-anonymous/kdisplaysubpixelconfigurationundefined.md)
+- [kDisplaySubPixelLayoutBGR](./api-1645123-anonymous/kdisplaysubpixellayoutbgr.md)
+- [kDisplaySubPixelLayoutQuadGBL](./api-1645123-anonymous/kdisplaysubpixellayoutquadgbl.md)
+- [kDisplaySubPixelLayoutQuadGBR](./api-1645123-anonymous/kdisplaysubpixellayoutquadgbr.md)
+- [kDisplaySubPixelLayoutRGB](./api-1645123-anonymous/kdisplaysubpixellayoutrgb.md)
+- [kDisplaySubPixelLayoutUndefined](./api-1645123-anonymous/kdisplaysubpixellayoutundefined.md)
+- [kDisplaySubPixelShapeElliptical](./api-1645123-anonymous/kdisplaysubpixelshapeelliptical.md)
+- [kDisplaySubPixelShapeOval](./api-1645123-anonymous/kdisplaysubpixelshapeoval.md)
+- [kDisplaySubPixelShapeRectangular](./api-1645123-anonymous/kdisplaysubpixelshaperectangular.md)
+- [kDisplaySubPixelShapeRound](./api-1645123-anonymous/kdisplaysubpixelshaperound.md)
+- [kDisplaySubPixelShapeSquare](./api-1645123-anonymous/kdisplaysubpixelshapesquare.md)
+- [kDisplaySubPixelShapeUndefined](./api-1645123-anonymous/kdisplaysubpixelshapeundefined.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(sequentialInfo:callbacks:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sequential-access data provider.
 
@@ -10,7 +11,7 @@ Creates a sequential-access data provider.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a sequential-access data provider.
 init?(sequentialInfo info: UnsafeMutableRawPointer?, callbacks: UnsafePointer<CGDataProviderSequentialCallbacks>)
 ```
 
+```c
+extern CGDataProviderRefCGDataProviderCreateSequential(void *info, const CGDataProviderSequentialCallbacks *callbacks);
+```
+
 #### Return Value
 
-A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](cgdataproviderrelease.md).
+A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](../cgdataproviderrelease.md).
 
 #### Discussion
 
@@ -31,19 +36,20 @@ You use this function to create a sequential-access data provider that uses call
 ## Parameters
 
 - `info`: A pointer to data of any type or `NULL`. When Core Graphics calls the functions specified in the `callbacks` parameter, it sends each of the functions this pointer.
-- `callbacks`: A pointer to a [`CGDataProviderSequentialCallbacks`](cgdataprovidersequentialcallbacks.md) structure that specifies the callback functions you implement to handle the data provider’s basic memory management.
+- `callbacks`: A pointer to a [`CGDataProviderSequentialCallbacks`](../cgdataprovidersequentialcallbacks.md) structure that specifies the callback functions you implement to handle the data provider’s basic memory management.
 
 ## See Also
 
-- [struct CGDataProviderSequentialCallbacks](cgdataprovidersequentialcallbacks.md)
+### Creating Sequential-Access Data Providers
+- [struct CGDataProviderSequentialCallbacks](../cgdataprovidersequentialcallbacks.md)
   Defines a structure containing pointers to client-defined callback functions that manage the sending of data for a sequential-access data provider.
-- [typealias CGDataProviderRewindCallback](cgdataproviderrewindcallback.md)
+- [typealias CGDataProviderRewindCallback](../cgdataproviderrewindcallback.md)
   A callback function that moves the current position in the data stream back to the beginning.
-- [typealias CGDataProviderGetBytesCallback](cgdataprovidergetbytescallback.md)
+- [typealias CGDataProviderGetBytesCallback](../cgdataprovidergetbytescallback.md)
   A callback function that copies from a provider data stream into a Core Graphics buffer.
-- [typealias CGDataProviderSkipForwardCallback](cgdataproviderskipforwardcallback.md)
+- [typealias CGDataProviderSkipForwardCallback](../cgdataproviderskipforwardcallback.md)
   A callback function that advances the current position in the data stream supplied by the provider.
-- [typealias CGDataProviderReleaseInfoCallback](cgdataproviderreleaseinfocallback.md)
+- [typealias CGDataProviderReleaseInfoCallback](../cgdataproviderreleaseinfocallback.md)
   A callback function that releases any private data or resources associated with the data provider.
 
 

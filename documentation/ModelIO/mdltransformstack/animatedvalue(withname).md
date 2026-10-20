@@ -1,7 +1,8 @@
 # animatedValue(withName:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func animatedValue(withName name: String) -> MDLAnimatedValue
+```
+
+```objc
+- (MDLAnimatedValue *) animatedValueWithName:(NSString *) name;
 ```
 
 

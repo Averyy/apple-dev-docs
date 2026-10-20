@@ -1,7 +1,8 @@
 # upArrow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The up arrow key.
 
@@ -16,23 +17,24 @@ static let upArrow: NSEvent.SpecialKey
 
 ## See Also
 
-- [static let downArrow: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/downarrow.md)
+### Getting the Navigation-Related Keys
+- [static let downArrow: NSEvent.SpecialKey](./downarrow.md)
   The down arrow key.
-- [static let leftArrow: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/leftarrow.md)
+- [static let leftArrow: NSEvent.SpecialKey](./leftarrow.md)
   The left arrow key.
-- [static let rightArrow: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/rightarrow.md)
+- [static let rightArrow: NSEvent.SpecialKey](./rightarrow.md)
   The right arrow key.
-- [static let pageUp: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/pageup.md)
+- [static let pageUp: NSEvent.SpecialKey](./pageup.md)
   The page up key.
-- [static let pageDown: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/pagedown.md)
+- [static let pageDown: NSEvent.SpecialKey](./pagedown.md)
   The page down key.
-- [static let home: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/home.md)
+- [static let home: NSEvent.SpecialKey](./home.md)
   The home key.
-- [static let end: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/end.md)
+- [static let end: NSEvent.SpecialKey](./end.md)
   The end key.
-- [static let prev: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/prev.md)
+- [static let prev: NSEvent.SpecialKey](./prev.md)
   The previous key.
-- [static let next: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/next.md)
+- [static let next: NSEvent.SpecialKey](./next.md)
   The next key.
 
 

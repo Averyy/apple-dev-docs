@@ -1,7 +1,8 @@
 # status
 
 **Framework**: VisionEntitlementServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Informs calling app whether or not the system has finished enabling the settings that are enabled by the App Compute Category Enterprise entitlement and if they are currently in force.  If they have been, it will return `.high`, otherwise it will return `.normal` If the app does not have the appropriate license to fetch this information it will return `.notAuthorized`
 

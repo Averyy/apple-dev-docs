@@ -1,7 +1,8 @@
 # anchorsMatchLineEndings(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a regular expression where the start and end of input anchors (`^` and `$`) also match against the start and end of a line.
 

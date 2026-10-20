@@ -1,7 +1,8 @@
 # billingContact
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The billing contact associated with the card.
 
@@ -11,13 +12,13 @@ The billing contact associated with the card.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentContact billingContact;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 10 Release Notes](apple-pay-on-the-web-version-10-release-notes.md)
+- [Apple Pay on the Web Version 10 Release Notes](../apple-pay-on-the-web-version-10-release-notes.md)
 
 #### Discussion
 
@@ -25,13 +26,14 @@ Before the user authorizes the transaction, you receive redacted billing contact
 
 ## See Also
 
-- [displayName](applepaypaymentmethod/displayname.md)
+### Accessing payment method data
+- [displayName](./displayname.md)
   A string, suitable for display, that describes the card.
-- [network](applepaypaymentmethod/network.md)
+- [network](./network.md)
   A string, suitable for display, that is the name of the payment network backing the card.
-- [type](applepaypaymentmethod/type.md)
+- [type](./type.md)
   A string value representing the card’s type of payment.
-- [paymentPass](applepaypaymentmethod/paymentpass.md)
+- [paymentPass](./paymentpass.md)
   The payment pass object currently selected to complete the payment.
 
 

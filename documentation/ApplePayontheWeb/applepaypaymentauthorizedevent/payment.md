@@ -1,7 +1,8 @@
 # payment
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authorized payment information for this transaction.
 
@@ -11,15 +12,15 @@ The authorized payment information for this transaction.
 
 ## Declaration
 
-```swift
+```
 readonly attribute ApplePayPayment payment;
 ```
 
 #### Discussion
 
-This attribute is contained by the [`onpaymentauthorized`](applepaysession/onpaymentauthorized.md) event. Access this attribute using the event parameter in the callback function; for example, `var payinfo = event.payment;`.
+This attribute is contained by the [`onpaymentauthorized`](../applepaysession/onpaymentauthorized.md) event. Access this attribute using the event parameter in the callback function; for example, `var payinfo = event.payment;`.
 
-[`ApplePayPayment`](applepaypayment.md)  contains `billingContact` and `shippingContact` if they were requested, and it also contains [`ApplePayPaymentToken`](applepaypaymenttoken.md).
+[`ApplePayPayment`](../applepaypayment.md)  contains `billingContact` and `shippingContact` if they were requested, and it also contains [`ApplePayPaymentToken`](../applepaypaymenttoken.md).
 
 
 ---

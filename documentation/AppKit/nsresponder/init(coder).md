@@ -1,17 +1,22 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new responder object with data in an unarchiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(coder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init()](nsresponder/init.md)
+### Creating Responders
+- [init()](./init%28%29.md)
   Creates a new responder object.
 
 

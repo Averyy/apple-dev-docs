@@ -1,7 +1,8 @@
 # systemLibrary(name:path:pkgConfig:providers:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a system library target.
 
@@ -24,9 +25,10 @@ Use system library targets to adapt a library installed on the system to work wi
 
 ## See Also
 
-- [let pkgConfig: String?](target/pkgconfig.md)
+### Creating a System Library Target
+- [let pkgConfig: String?](./pkgconfig.md)
   The name of the package configuration file, without extension, for the system library target.
-- [let providers: [SystemPackageProvider]?](target/providers.md)
+- [let providers: [SystemPackageProvider]?](./providers.md)
   The providers array for a system library target.
 
 

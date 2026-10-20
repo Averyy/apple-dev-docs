@@ -1,7 +1,8 @@
 # bufferIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the buffer to use for this layout.
 
@@ -19,7 +20,7 @@ var bufferIndex: Int { get set }
 
 #### Discussion
 
-Most usage scenarios use only one buffer. Use an index less than [`maxVertexBufferCount`](lowlevelmeshresource/descriptor-swift.struct/maxvertexbuffercount.md).
+Most usage scenarios use only one buffer. Use an index less than [`maxVertexBufferCount`](../descriptor-swift.struct/maxvertexbuffercount.md).
 
 
 ---

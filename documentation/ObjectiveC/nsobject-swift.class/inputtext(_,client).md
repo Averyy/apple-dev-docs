@@ -1,12 +1,13 @@
 # inputText(_:client:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles key down events that do not map to an action method.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Handles key down events that do not map to an action method.
 func inputText(_ string: String!, client sender: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) inputText:(NSString *) string client:(id) sender;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the input is accepted; otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the input is accepted; otherwise [`NO`](../no.md).
 
 #### Discussion
 
-An input method should implement this method when using key binding (that is, it implements [`didCommand(by:client:)`](nsobject-swift.class/didcommand(by:client:).md)).
+An input method should implement this method when using key binding (that is, it implements [`didCommand(by:client:)`](./didcommand%28by,client%29.md)).
 
 ## Parameters
 

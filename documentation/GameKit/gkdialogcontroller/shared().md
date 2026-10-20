@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves the shared instance of the dialog controller.
 
@@ -14,13 +15,17 @@ Retrieves the shared instance of the dialog controller.
 class func shared() -> GKDialogController
 ```
 
+```objc
++ (GKDialogController *) sharedDialogController;
+```
+
 #### Return Value
 
 The shared dialog controller.
 
 #### Discussion
 
-You can use the shared dialog controller or create your own [`GKDialogController`](gkdialogcontroller.md) object. For example, you can create separate [`GKDialogController`](gkdialogcontroller.md) objects for different windows.
+You can use the shared dialog controller or create your own [`GKDialogController`](../gkdialogcontroller.md) object. For example, you can create separate [`GKDialogController`](../gkdialogcontroller.md) objects for different windows.
 
 
 ---

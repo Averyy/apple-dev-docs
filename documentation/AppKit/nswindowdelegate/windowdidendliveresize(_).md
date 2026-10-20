@@ -1,7 +1,8 @@
 # windowDidEndLiveResize(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a live resize operation on the window has ended.
 
@@ -15,21 +16,26 @@ Tells the delegate that a live resize operation on the window has ended.
 optional func windowDidEndLiveResize(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidEndLiveResize:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 ## Parameters
 
-- `notification`: A notification named [`didEndLiveResizeNotification`](nswindow/didendliveresizenotification.md).
+- `notification`: A notification named [`didEndLiveResizeNotification`](../nswindow/didendliveresizenotification.md).
 
 ## See Also
 
-- [func windowWillResize(NSWindow, to: NSSize) -> NSSize](nswindowdelegate/windowwillresize(_:to:).md)
-  Tells the delegate that the window is being resized (whether by the user or through one of the `setFrame...` methods other than [`setFrame(_:display:)`](nswindow/setframe(_:display:).md)).
-- [func windowDidResize(Notification)](nswindowdelegate/windowdidresize(_:).md)
+### Sizing Windows
+- [func windowWillResize(NSWindow, to: NSSize) -> NSSize](./windowwillresize%28_,to%29.md)
+  Tells the delegate that the window is being resized (whether by the user or through one of the `setFrame...` methods other than [`setFrame(_:display:)`](../nswindow/setframe%28_,display%29.md)).
+- [func windowDidResize(Notification)](./windowdidresize%28_%29.md)
   Tells the delegate that the window has been resized.
-- [func windowWillStartLiveResize(Notification)](nswindowdelegate/windowwillstartliveresize(_:).md)
+- [func windowWillStartLiveResize(Notification)](./windowwillstartliveresize%28_%29.md)
   Tells the delegate that the window is about to be live resized.
 
 

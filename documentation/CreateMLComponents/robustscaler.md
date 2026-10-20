@@ -1,7 +1,8 @@
 # RobustScaler
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that scales the input using statistics that are robust to outliers.
 
@@ -23,33 +24,34 @@ struct RobustScaler<Element> where Element : BinaryFloatingPoint, Element : Deco
 ## Topics
 
 ### Creating an estimator
-- [init(quantileRange: ClosedRange<Element>)](robustscaler/init(quantilerange:).md)
+- [init(quantileRange: ClosedRange<Element>)](./robustscaler/init%28quantilerange%29.md)
   Creates a robust scaler.
 ### Getting the properties
-- [var quantileRange: ClosedRange<Element>](robustscaler/quantilerange.md)
+- [var quantileRange: ClosedRange<Element>](./robustscaler/quantilerange.md)
   The quantile range used to compute the scale.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> RobustScaler<Element>.Transformer](robustscaler/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> RobustScaler<Element>.Transformer](./robustscaler/fitted%28to,eventhandler%29.md)
   Fits a robust scaler to a sequence of elements.
 ### Default Implementations
-- [Estimator Implementations](robustscaler/estimator-implementations.md)
+- [Estimator Implementations](./robustscaler/estimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StandardScaler](standardscaler.md)
+### Scalers
+- [struct StandardScaler](./standardscaler.md)
   An estimator that standardizes the input by removing the mean and scaling to unit variance.
-- [struct MaxAbsScaler](maxabsscaler.md)
+- [struct MaxAbsScaler](./maxabsscaler.md)
   An estimator that scales the input values so that the maximum absolute value is 1.0.
-- [struct MinMaxScaler](minmaxscaler.md)
+- [struct MinMaxScaler](./minmaxscaler.md)
   An estimator that scales the input values so that they all lie in a closed range.
-- [struct NormalizationScaler](normalizationscaler.md)
+- [struct NormalizationScaler](./normalizationscaler.md)
   An estimator that normalizes the input values using a normalization strategy.
 
 

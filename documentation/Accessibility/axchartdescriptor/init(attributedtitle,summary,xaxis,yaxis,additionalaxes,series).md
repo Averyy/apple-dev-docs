@@ -1,7 +1,8 @@
 # init(attributedTitle:summary:xAxis:yAxis:additionalAxes:series:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a chart descriptor with the specified attributed title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
 
@@ -22,7 +23,8 @@ convenience init(attributedTitle: NSAttributedString? = nil, summary: String? = 
 
 ## See Also
 
-- [convenience init(title: String?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](axchartdescriptor/init(title:summary:xaxis:yaxis:additionalaxes:series:).md)
+### Creating a chart
+- [convenience init(title: String?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](./init%28title,summary,xaxis,yaxis,additionalaxes,series%29.md)
   Creates a chart descriptor with the specified title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
 
 

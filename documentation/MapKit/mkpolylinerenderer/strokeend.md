@@ -1,7 +1,8 @@
 # strokeEnd
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit distance along the line where the stroke ends.
 
@@ -19,13 +20,18 @@ The unit distance along the line where the stroke ends.
 var strokeEnd: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat strokeEnd;
+```
+
 #### Discussion
 
-Use this property and [`strokeStart`](mkpolylinerenderer/strokestart.md) to render a portion of the line. Use [`location(atPointIndex:)`](mkmultipoint/location(atpointindex:).md) to get unit distance locations for point indices along the line.
+Use this property and [`strokeStart`](./strokestart.md) to render a portion of the line. Use [`location(atPointIndex:)`](../mkmultipoint/location%28atpointindex%29.md) to get unit distance locations for point indices along the line.
 
 ## See Also
 
-- [var strokeStart: CGFloat](mkpolylinerenderer/strokestart.md)
+### Accessing the stroke
+- [var strokeStart: CGFloat](./strokestart.md)
   The unit distance along the line where the stroke starts.
 
 

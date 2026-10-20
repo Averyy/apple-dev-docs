@@ -1,14 +1,15 @@
 # GetMaxTransferUnit
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetMaxTransferUnit(uint32_t *mtu);
 ```
 

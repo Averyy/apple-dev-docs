@@ -1,7 +1,8 @@
 # nanoseconds(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct a `Duration` given a number of nanoseconds represented as a `BinaryInteger`.
 

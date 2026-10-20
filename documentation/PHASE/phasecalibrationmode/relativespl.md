@@ -1,17 +1,18 @@
 # PHASECalibrationMode.relativeSpl
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sound pressure level that’s tuned for the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A sound pressure level that’s tuned for the device.
 case relativeSpl
 ```
 
+```c
+PHASECalibrationModeRelativeSpl
+```
+
 ## See Also
 
-- [PHASECalibrationMode.absoluteSpl](phasecalibrationmode/absolutespl.md)
+### Modes
+- [PHASECalibrationMode.absoluteSpl](./absolutespl.md)
   A sound pressure level based on the current output device.
-- [PHASECalibrationMode.none](phasecalibrationmode/none.md)
+- [PHASECalibrationMode.none](./none.md)
   An option that specifies no loudness calibration.
 
 

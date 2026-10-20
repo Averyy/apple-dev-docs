@@ -1,7 +1,8 @@
 # MTLFXFrameInterpolatorBase
 
 **Framework**: MetalFX  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -16,113 +17,117 @@
 protocol MTLFXFrameInterpolatorBase : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLFXFrameInterpolatorBase <NSObject>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var aspectRatio: Float](mtlfxframeinterpolatorbase/aspectratio.md)
+- [var aspectRatio: Float](./mtlfxframeinterpolatorbase/aspectratio.md)
   The ratio between width and height of the screen.
-- [var colorTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/colortexture.md)
+- [var colorTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/colortexture.md)
   The color texture that this frame interpolator evaluates.
-- [var colorTextureFormat: MTLPixelFormat](mtlfxframeinterpolatorbase/colortextureformat.md)
+- [var colorTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatorbase/colortextureformat.md)
   The pixel format of the input color texture for this frame interpolator.
-- [var colorTextureUsage: MTLTextureUsage](mtlfxframeinterpolatorbase/colortextureusage.md)
+- [var colorTextureUsage: MTLTextureUsage](./mtlfxframeinterpolatorbase/colortextureusage.md)
   The minimal texture usage options that your app’s input color texture needs in order to support this frame interpolator.
-- [var contentHeight: Int](mtlfxframeinterpolatorbase/contentheight.md)
+- [var contentHeight: Int](./mtlfxframeinterpolatorbase/contentheight.md)
   The height, in pixels, of the content region within the input textures to process.
-- [var contentWidth: Int](mtlfxframeinterpolatorbase/contentwidth.md)
+- [var contentWidth: Int](./mtlfxframeinterpolatorbase/contentwidth.md)
   The width, in pixels, of the content region within the input textures to process.
-- [var deltaTime: Float](mtlfxframeinterpolatorbase/deltatime.md)
+- [var deltaTime: Float](./mtlfxframeinterpolatorbase/deltatime.md)
   The length of the time interval, in seconds, between time of current and previous frame.
-- [var depthContentOffsetX: Int](mtlfxframeinterpolatorbase/depthcontentoffsetx.md)
+- [var depthContentOffsetX: Int](./mtlfxframeinterpolatorbase/depthcontentoffsetx.md)
   The horizontal offset, in pixels, of the region within the depth texture to use as input.
-- [var depthContentOffsetY: Int](mtlfxframeinterpolatorbase/depthcontentoffsety.md)
+- [var depthContentOffsetY: Int](./mtlfxframeinterpolatorbase/depthcontentoffsety.md)
   The vertical offset, in pixels, of the region within the depth texture to use as input.
-- [var depthTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/depthtexture.md)
+- [var depthTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/depthtexture.md)
   The depth texture this frame interpolator evaluates.
-- [var depthTextureFormat: MTLPixelFormat](mtlfxframeinterpolatorbase/depthtextureformat.md)
+- [var depthTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatorbase/depthtextureformat.md)
   The pixel format of the input depth texture for this frame interpolator.
-- [var depthTextureUsage: MTLTextureUsage](mtlfxframeinterpolatorbase/depthtextureusage.md)
+- [var depthTextureUsage: MTLTextureUsage](./mtlfxframeinterpolatorbase/depthtextureusage.md)
   The minimal texture usage options that your app’s input depth texture needs in order to support this frame interpolator.
-- [var distortionHeight: Int](mtlfxframeinterpolatorbase/distortionheight.md)
+- [var distortionHeight: Int](./mtlfxframeinterpolatorbase/distortionheight.md)
   The height, in pixels, of the content region within the distortion texture to use as input.
-- [var distortionOffsetX: Int](mtlfxframeinterpolatorbase/distortionoffsetx.md)
+- [var distortionOffsetX: Int](./mtlfxframeinterpolatorbase/distortionoffsetx.md)
   The horizontal offset, in pixels, of the region within the distortion texture to use as input.
-- [var distortionOffsetY: Int](mtlfxframeinterpolatorbase/distortionoffsety.md)
+- [var distortionOffsetY: Int](./mtlfxframeinterpolatorbase/distortionoffsety.md)
   The vertical offset, in pixels, of the region within the distortion texture to use as input.
-- [var distortionTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/distortiontexture.md)
+- [var distortionTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/distortiontexture.md)
   A distortion field texture that the frame interpolator uses to correct barrel distortion.
-- [var distortionWidth: Int](mtlfxframeinterpolatorbase/distortionwidth.md)
+- [var distortionWidth: Int](./mtlfxframeinterpolatorbase/distortionwidth.md)
   The width, in pixels, of the content region within the distortion texture to use as input.
-- [var farPlane: Float](mtlfxframeinterpolatorbase/farplane.md)
+- [var farPlane: Float](./mtlfxframeinterpolatorbase/farplane.md)
   The far plane distance that corresponds to the frustrum that renders the scene into the color buffer.
-- [var fence: (any MTLFence)?](mtlfxframeinterpolatorbase/fence.md)
+- [var fence: (any MTLFence)?](./mtlfxframeinterpolatorbase/fence.md)
   An optional fence that this frame interpolator waits for and updates.
-- [var fieldOfView: Float](mtlfxframeinterpolatorbase/fieldofview.md)
+- [var fieldOfView: Float](./mtlfxframeinterpolatorbase/fieldofview.md)
   The vertical field of view angle, in degrees, of the camera that renders the scene into the color buffer.
-- [var inputHeight: Int](mtlfxframeinterpolatorbase/inputheight.md)
+- [var inputHeight: Int](./mtlfxframeinterpolatorbase/inputheight.md)
   The height, in pixels, of the input depth and motion texture for the frame interpolator.
-- [var inputWidth: Int](mtlfxframeinterpolatorbase/inputwidth.md)
+- [var inputWidth: Int](./mtlfxframeinterpolatorbase/inputwidth.md)
   The width, in pixels, of the input depth and motion texture for the frame interpolator.
-- [var isDepthReversed: Bool](mtlfxframeinterpolatorbase/isdepthreversed.md)
+- [var isDepthReversed: Bool](./mtlfxframeinterpolatorbase/isdepthreversed.md)
   A Boolean value that indicates whether the depth texture uses zero to represent the farthest distance.
-- [var isUITextureComposited: Bool](mtlfxframeinterpolatorbase/isuitexturecomposited.md)
+- [var isUITextureComposited: Bool](./mtlfxframeinterpolatorbase/isuitexturecomposited.md)
   A Boolean value that controls whether this frame interpolator interprets the color texture to include your game’s custom UI.
-- [var jitterOffsetX: Float](mtlfxframeinterpolatorbase/jitteroffsetx.md)
+- [var jitterOffsetX: Float](./mtlfxframeinterpolatorbase/jitteroffsetx.md)
   The horizontal component of the subpixel sampling coordinate you use to generate the color texture input.
-- [var jitterOffsetY: Float](mtlfxframeinterpolatorbase/jitteroffsety.md)
+- [var jitterOffsetY: Float](./mtlfxframeinterpolatorbase/jitteroffsety.md)
   The vertical component of the subpixel sampling coordinate you use to generate the color texture input.
-- [var motionContentOffsetX: Int](mtlfxframeinterpolatorbase/motioncontentoffsetx.md)
+- [var motionContentOffsetX: Int](./mtlfxframeinterpolatorbase/motioncontentoffsetx.md)
   The horizontal offset, in pixels, of the region within the motion texture to use as input.
-- [var motionContentOffsetY: Int](mtlfxframeinterpolatorbase/motioncontentoffsety.md)
+- [var motionContentOffsetY: Int](./mtlfxframeinterpolatorbase/motioncontentoffsety.md)
   The vertical offset, in pixels, of the region within the motion texture to use as input.
-- [var motionTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/motiontexture.md)
+- [var motionTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/motiontexture.md)
   The motion texture this frame interpolator evaluates.
-- [var motionTextureFormat: MTLPixelFormat](mtlfxframeinterpolatorbase/motiontextureformat.md)
+- [var motionTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatorbase/motiontextureformat.md)
   The pixel format of the input motion texture for this frame interpolator.
-- [var motionTextureUsage: MTLTextureUsage](mtlfxframeinterpolatorbase/motiontextureusage.md)
+- [var motionTextureUsage: MTLTextureUsage](./mtlfxframeinterpolatorbase/motiontextureusage.md)
   The minimal texture usage options that your app’s input motion texture needs in order to support this frame interpolator.
-- [var motionVectorScaleX: Float](mtlfxframeinterpolatorbase/motionvectorscalex.md)
+- [var motionVectorScaleX: Float](./mtlfxframeinterpolatorbase/motionvectorscalex.md)
   The horizontal scale factor the frame interpolator applies to the input motion texture.
-- [var motionVectorScaleY: Float](mtlfxframeinterpolatorbase/motionvectorscaley.md)
+- [var motionVectorScaleY: Float](./mtlfxframeinterpolatorbase/motionvectorscaley.md)
   The vertical scale factor the frame interpolator applies to the input motion texture.
-- [var nearPlane: Float](mtlfxframeinterpolatorbase/nearplane.md)
+- [var nearPlane: Float](./mtlfxframeinterpolatorbase/nearplane.md)
   The near plane distance that corresponds to the frustrum that renders the scene into the color buffer.
-- [var outputHeight: Int](mtlfxframeinterpolatorbase/outputheight.md)
+- [var outputHeight: Int](./mtlfxframeinterpolatorbase/outputheight.md)
   The height, in pixels, of the output color texture for the frame interpolator.
-- [var outputOffsetX: Int](mtlfxframeinterpolatorbase/outputoffsetx.md)
+- [var outputOffsetX: Int](./mtlfxframeinterpolatorbase/outputoffsetx.md)
   The horizontal offset, in pixels, of the region within the output texture to write results. For regions outside the contents of the colorTexture are copied.
-- [var outputOffsetY: Int](mtlfxframeinterpolatorbase/outputoffsety.md)
+- [var outputOffsetY: Int](./mtlfxframeinterpolatorbase/outputoffsety.md)
   The vertical offset, in pixels, of the region within the output texture to write results. . For regions outside the contents of the colorTexture are copied.
-- [var outputTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/outputtexture.md)
+- [var outputTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/outputtexture.md)
   The output texture into which this frame interpolator writes its output.
-- [var outputTextureFormat: MTLPixelFormat](mtlfxframeinterpolatorbase/outputtextureformat.md)
+- [var outputTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatorbase/outputtextureformat.md)
   The pixel format of the output color texture for this frame interpolator.
-- [var outputTextureUsage: MTLTextureUsage](mtlfxframeinterpolatorbase/outputtextureusage.md)
+- [var outputTextureUsage: MTLTextureUsage](./mtlfxframeinterpolatorbase/outputtextureusage.md)
   The minimal texture usage options that your app’s output color texture needs in order to support this frame interpolator.
-- [var outputWidth: Int](mtlfxframeinterpolatorbase/outputwidth.md)
+- [var outputWidth: Int](./mtlfxframeinterpolatorbase/outputwidth.md)
   The width, in pixels, of the output color texture for the frame interpolator.
-- [var prevColorTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/prevcolortexture.md)
+- [var prevColorTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/prevcolortexture.md)
   The previous color texture for this frame interpolator during the last call to encode work into a command buffer.
-- [var shouldResetHistory: Bool](mtlfxframeinterpolatorbase/shouldresethistory.md)
+- [var shouldResetHistory: Bool](./mtlfxframeinterpolatorbase/shouldresethistory.md)
   A Boolean property indicating whether to reset history.
-- [var uiTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/uitexture.md)
+- [var uiTexture: (any MTLTexture)?](./mtlfxframeinterpolatorbase/uitexture.md)
   An optional texture containing your game’s custom UI that this frame interpolator evaluates.
-- [var uiTextureFormat: MTLPixelFormat](mtlfxframeinterpolatorbase/uitextureformat.md)
+- [var uiTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatorbase/uitextureformat.md)
   The pixel format of the input UI texture for the frame interpolator.
-- [var uiTextureUsage: MTLTextureUsage](mtlfxframeinterpolatorbase/uitextureusage.md)
+- [var uiTextureUsage: MTLTextureUsage](./mtlfxframeinterpolatorbase/uitextureusage.md)
   The minimal texture usage options that your app’s input UI texture needs in order to support this frame interpolator.
-- [var viewToClipMatrix: simd_float4x4](mtlfxframeinterpolatorbase/viewtoclipmatrix.md)
+- [var viewToClipMatrix: simd_float4x4](./mtlfxframeinterpolatorbase/viewtoclipmatrix.md)
   The view-to-clip coordinates transformation matrix this frame interpolator uses as part of its operation.
-- [var worldToViewMatrix: simd_float4x4](mtlfxframeinterpolatorbase/worldtoviewmatrix.md)
+- [var worldToViewMatrix: simd_float4x4](./mtlfxframeinterpolatorbase/worldtoviewmatrix.md)
   The world-to-view transformation matrix this frame interpolator uses as part of its operation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MTL4FXFrameInterpolator](mtl4fxframeinterpolator.md)
-- [MTLFXFrameInterpolator](mtlfxframeinterpolator.md)
+- [MTL4FXFrameInterpolator](./mtl4fxframeinterpolator.md)
+- [MTLFXFrameInterpolator](./mtlfxframeinterpolator.md)
 
 
 ---

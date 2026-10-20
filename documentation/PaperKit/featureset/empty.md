@@ -1,7 +1,8 @@
 # empty
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A maximally empty feature set.
 
@@ -20,9 +21,10 @@ static var empty: FeatureSet { get }
 
 ## See Also
 
-- [static var version1: FeatureSet](featureset/version1.md)
+### Creating a feature set
+- [static var version1: FeatureSet](./version1.md)
   A new feature set supporting all features in version 1.
-- [static var latest: FeatureSet](featureset/latest.md)
+- [static var latest: FeatureSet](./latest.md)
   A new feature set supporting all features.
 
 

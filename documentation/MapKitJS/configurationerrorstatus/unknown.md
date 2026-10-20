@@ -1,7 +1,8 @@
 # Unknown
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status that indicates MapKit JS encountered an unknown error during initialization.
 
@@ -10,7 +11,7 @@ An error status that indicates MapKit JS encountered an unknown error during ini
 
 ## Declaration
 
-```swift
+```
 readonly Unknown: "Unknown";
 ```
 

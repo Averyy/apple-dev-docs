@@ -1,6 +1,7 @@
 # QuickTime metadata keys
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Use QuickTime keys to hold data in a Metadata atom.
 
@@ -43,23 +44,24 @@ In addition, QuickTime recommends the auxiliary keys shown in the following tabl
 
 ## See Also
 
-- [Extensibility](extensibility.md)
+### Types and usage
+- [Extensibility](./extensibility.md)
   Avoid issues building extensibility into your file.
-- [Localization list sets](localization_list_sets.md)
+- [Localization list sets](./localization_list_sets.md)
   Provide metadata for more than one country or language.
-- [Type indicator](type_indicator.md)
+- [Type indicator](./type_indicator.md)
   Four bytes that indicate a type of data that QuickTime supports.
-- [Locale indicator](locale_indicator.md)
+- [Locale indicator](./locale_indicator.md)
   A four-byte value that indicates a locale.
-- [Data ordering](data_ordering.md)
+- [Data ordering](./data_ordering.md)
   Represent multiple representations of the same information, differing either by language or storage type or by the size or nature of the data.
-- [Well-known types](well-known_types.md)
+- [Well-known types](./well-known_types.md)
   Basic data types.
-- [Location metadata](location_metadata.md)
+- [Location metadata](./location_metadata.md)
   Storing the location coordinates, as well as several auxiliary pieces of information about a location, as metadata.
-- [Direction definition](direction_definition.md)
+- [Direction definition](./direction_definition.md)
   Define a direction in metadata keys.
-- [Metadata handling](appendix_d_metadata_handling.md)
+- [Metadata handling](./appendix_d_metadata_handling.md)
   Handling metadata in other file formats.
 
 

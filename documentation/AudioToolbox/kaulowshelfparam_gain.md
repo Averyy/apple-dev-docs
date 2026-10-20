@@ -1,15 +1,16 @@
 # kAULowShelfParam_Gain
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kAULowShelfParam_Gain: AudioUnitParameterID { get }
 ```
 
+```c
+kAULowShelfParam_Gain
+```
+
 ## See Also
 
-- [var kAULowShelfParam_CutoffFrequency: AudioUnitParameterID](kaulowshelfparam_cutofffrequency.md)
+### Constants
+- [var kAULowShelfParam_CutoffFrequency: AudioUnitParameterID](./kaulowshelfparam_cutofffrequency.md)
 
 
 ---

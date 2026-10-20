@@ -1,6 +1,8 @@
 # Using HEVC video with alpha
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [UsingHEVCVideoWithAlpha.zip](https://docs-assets.developer.apple.com/published/b44b3ea82aec/UsingHEVCVideoWithAlpha.zip)
 
 Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 
@@ -10,15 +12,16 @@ Play, write, and export HEVC video with an alpha channel to add overlay effects 
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`506: HEVC Video with Alpha`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/506/).
+> **Note**: This sample code project is associated with WWDC 2019 session [506: HEVC Video with Alpha](https://developer.apple.com/videos/play/wwdc19/506/).
 
 ## See Also
 
-- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
+### Presentation
+- [Monitoring playback progress in your app](./monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [class AVPlayerLayer](avplayerlayer.md)
+- [class AVPlayerLayer](./avplayerlayer.md)
   An object that presents the visual contents of a player object.
-- [class AVSynchronizedLayer](avsynchronizedlayer.md)
+- [class AVSynchronizedLayer](./avsynchronizedlayer.md)
   A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback.
 
 

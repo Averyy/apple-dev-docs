@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialPRFAssertionOutput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type to represent outputs of the web authentication PRF extension, when requesting them during an assertion.
 
@@ -27,21 +28,22 @@ Don’t store or export these keys. Derive these keys only as the result of an a
 ## Topics
 
 ### Creating a PRF assertion output
-- [init(first: SymmetricKey, second: SymmetricKey?)](asauthorizationpublickeycredentialprfassertionoutput-swift.struct/init(first:second:).md)
+- [init(first: SymmetricKey, second: SymmetricKey?)](./asauthorizationpublickeycredentialprfassertionoutput-swift.struct/init%28first,second%29.md)
   Initializes an assertion output structure with one or two keys.
 ### Accessing symmetric keys
-- [let first: SymmetricKey](asauthorizationpublickeycredentialprfassertionoutput-swift.struct/first.md)
+- [let first: SymmetricKey](./asauthorizationpublickeycredentialprfassertionoutput-swift.struct/first.md)
   A symmetric key that’s unique to the passkey and derives from the first input.
-- [let second: SymmetricKey?](asauthorizationpublickeycredentialprfassertionoutput-swift.struct/second.md)
+- [let second: SymmetricKey?](./asauthorizationpublickeycredentialprfassertionoutput-swift.struct/second.md)
   A second symmetric key that’s unique to the passkey, and derives from the second input, if specified.
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/largeblob.md)
+### Inspecting properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](./aspasskeyassertioncredentialextensionoutput-swift.struct/largeblob.md)
   The output for a large binary object operation during passkey assertion.
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](./asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.md)
   A type to represent the output of the requested large binary object operation, which returns in a passkey sign-in response.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](./aspasskeyassertioncredentialextensionoutput-swift.struct/prf.md)
   The outputs of the WebAuthn PRF extension in passkey assertion requests.
 
 

@@ -1,7 +1,8 @@
 # delete
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An edit action that allows the user to delete one or more elements of a collection.
 
@@ -20,17 +21,20 @@ An edit action that allows the user to delete one or more elements of a collecti
 static var delete: EditActions<Data> { get }
 ```
 
+Available when `Data` conforms to `RangeReplaceableCollection`.
+
 ## See Also
 
-- [static var all: EditActions<Data>](editactions/all-45m4m.md)
+### Getting edit operations
+- [static var all: EditActions<Data>](./all-45m4m.md)
   All the edit actions available on this collection.
-- [static var all: EditActions<Data>](editactions/all-4dctm.md)
+- [static var all: EditActions<Data>](./all-4dctm.md)
   All the edit actions available on this collection.
-- [static var all: EditActions<Data>](editactions/all-4uyun.md)
+- [static var all: EditActions<Data>](./all-4uyun.md)
   All the edit actions available on this collection.
-- [static var all: EditActions<Data>](editactions/all-6ryvk.md)
+- [static var all: EditActions<Data>](./all-6ryvk.md)
   All the edit actions available on this collection.
-- [static var move: EditActions<Data>](editactions/move.md)
+- [static var move: EditActions<Data>](./move.md)
   An edit action that allows the user to move elements of a collection.
 
 

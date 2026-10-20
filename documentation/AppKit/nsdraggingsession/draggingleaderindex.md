@@ -1,7 +1,8 @@
 # draggingLeaderIndex
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the dragging item under the cursor.
 
@@ -14,11 +15,15 @@ The index of the dragging item under the cursor.
 var draggingLeaderIndex: Int { get set }
 ```
 
+```objc
+@property NSInteger draggingLeaderIndex;
+```
+
 #### Discussion
 
-The index is to an element in the array passed as the first parameter to the [`NSView`](nsview.md) method [`beginDraggingSession(with:event:source:)`](nsview/begindraggingsession(with:event:source:).md).
+The index is to an element in the array passed as the first parameter to the [`NSView`](../nsview.md) method [`beginDraggingSession(with:event:source:)`](../nsview/begindraggingsession%28with,event,source%29.md).
 
-The default is the [`NSDraggingItem`](nsdraggingitem.md) closest to the `location` field in the event parameter that was passed to the [`beginDraggingSession(with:event:source:)`](nsview/begindraggingsession(with:event:source:).md) method.
+The default is the [`NSDraggingItem`](../nsdraggingitem.md) closest to the `location` field in the event parameter that was passed to the [`beginDraggingSession(with:event:source:)`](../nsview/begindraggingsession%28with,event,source%29.md) method.
 
 
 ---

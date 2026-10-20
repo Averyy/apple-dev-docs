@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum eIOAcceleratorClientTypes : unsigned int {
     ...
 };
@@ -17,9 +17,9 @@ enum eIOAcceleratorClientTypes : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAccelNumClientTypes](eioacceleratorclienttypes/kioaccelnumclienttypes.md)
-- [kIOAccelSurfaceClientType](eioacceleratorclienttypes/kioaccelsurfaceclienttype.md)
-- [kIOAccelSurface2ClientType](eioacceleratorclienttypes/kioaccelsurface2clienttype.md)
+- [kIOAccelNumClientTypes](./eioacceleratorclienttypes/kioaccelnumclienttypes.md)
+- [kIOAccelSurfaceClientType](./eioacceleratorclienttypes/kioaccelsurfaceclienttype.md)
+- [kIOAccelSurface2ClientType](./eioacceleratorclienttypes/kioaccelsurface2clienttype.md)
 
 
 ---

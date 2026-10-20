@@ -1,7 +1,8 @@
 # timedMetadataGroup
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timed metadata group containing the Cinematic video metadata.
 
@@ -18,9 +19,13 @@ A timed metadata group containing the Cinematic video metadata.
 var timedMetadataGroup: AVTimedMetadataGroup? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVTimedMetadataGroup * timedMetadataGroup;
+```
+
 #### Discussion
 
-Append this group to an [`AVAssetWriterInputMetadataAdaptor`](avassetwriterinputmetadataadaptor.md) to write the Cinematic video metadata track.
+Append this group to an [`AVAssetWriterInputMetadataAdaptor`](../avassetwriterinputmetadataadaptor.md) to write the Cinematic video metadata track.
 
 
 ---

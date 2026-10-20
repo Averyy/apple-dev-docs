@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval for displaying an animated image.
 
@@ -9,7 +10,7 @@ The time interval for displaying an animated image.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,27 +20,32 @@ The time interval for displaying an animated image.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
+```
+
 #### Discussion
 
 For a non-animated image, the value of this property is `0.0`.
 
 ## See Also
 
-- [var imageOrientation: UIImage.Orientation](uiimage/imageorientation.md)
+### Accessing image attributes
+- [var imageOrientation: UIImage.Orientation](./imageorientation.md)
   The orientation of the receiver’s image.
-- [UIImage.Orientation](uiimage/orientation.md)
+- [UIImage.Orientation](./orientation.md)
   Constants that specify the intended display orientation for an image.
-- [var flipsForRightToLeftLayoutDirection: Bool](uiimage/flipsforrighttoleftlayoutdirection.md)
+- [var flipsForRightToLeftLayoutDirection: Bool](./flipsforrighttoleftlayoutdirection.md)
   A Boolean value that indicates whether the image flips in a right-to-left layout.
-- [var resizingMode: UIImage.ResizingMode](uiimage/resizingmode-swift.property.md)
+- [var resizingMode: UIImage.ResizingMode](./resizingmode-swift.property.md)
   The resizing mode of the image.
-- [UIImage.ResizingMode](uiimage/resizingmode-swift.enum.md)
+- [UIImage.ResizingMode](./resizingmode-swift.enum.md)
   Constants that specify the possible resizing modes for an image.
-- [var capInsets: UIEdgeInsets](uiimage/capinsets.md)
+- [var capInsets: UIEdgeInsets](./capinsets.md)
   The end-cap insets.
-- [var alignmentRectInsets: UIEdgeInsets](uiimage/alignmentrectinsets.md)
+- [var alignmentRectInsets: UIEdgeInsets](./alignmentrectinsets.md)
   The alignment metadata for positioning the image during layout.
-- [var isSymbolImage: Bool](uiimage/issymbolimage.md)
+- [var isSymbolImage: Bool](./issymbolimage.md)
   A Boolean value that indicates whether the image is a symbol.
 
 

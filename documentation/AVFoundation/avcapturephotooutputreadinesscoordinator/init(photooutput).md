@@ -1,7 +1,8 @@
 # init(photoOutput:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that helps coordinate user interface changes with a photo output that runs on a background queue.
 
@@ -16,6 +17,10 @@ Creates an object that helps coordinate user interface changes with a photo outp
 
 ```swift
 init(photoOutput: AVCapturePhotoOutput)
+```
+
+```objc
+- (instancetype) initWithPhotoOutput:(AVCapturePhotoOutput *) photoOutput;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # valueDescriptionProvider
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description to speak for a particular data value on the axis.
 
@@ -20,9 +21,13 @@ A description to speak for a particular data value on the axis.
 var valueDescriptionProvider: (Double) -> String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * (^valueDescriptionProvider)(double );
+```
+
 ## Mentions
 
-- [Representing chart data as an audio graph](representing-chart-data-as-an-audio-graph.md)
+- [Representing chart data as an audio graph](../representing-chart-data-as-an-audio-graph.md)
 
 #### Discussion
 

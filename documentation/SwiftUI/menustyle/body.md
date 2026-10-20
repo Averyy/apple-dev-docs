@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a menu.
@@ -22,9 +23,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](menustyle/makebody(configuration:).md)
+### Creating custom menu styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a menu.
-- [MenuStyle.Configuration](menustyle/configuration.md)
+- [MenuStyle.Configuration](./configuration.md)
   The properties of a menu.
 
 

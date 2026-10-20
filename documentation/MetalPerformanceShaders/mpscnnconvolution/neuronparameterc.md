@@ -1,15 +1,16 @@
 # neuronParameterC
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
-- macOS 10.13+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 10.0+ - Deprecated in 12.0
+- macOS 10.13+ - Deprecated in 10.14
+- tvOS 10.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,28 +18,33 @@
 var neuronParameterC: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float neuronParameterC;
+```
+
 ## See Also
 
-- [var inputFeatureChannels: Int](mpscnnconvolution/inputfeaturechannels.md)
+### Instance Properties
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
   The number of feature channels per pixel in the input image.
-- [var outputFeatureChannels: Int](mpscnnconvolution/outputfeaturechannels.md)
+- [var outputFeatureChannels: Int](./outputfeaturechannels.md)
   The number of feature channels per pixel in the output image.
-- [var groups: Int](mpscnnconvolution/groups.md)
+- [var groups: Int](./groups.md)
   The number of groups that the input and output channels are divided into.
-- [var subPixelScaleFactor: Int](mpscnnconvolution/subpixelscalefactor.md)
-- [var neuron: MPSCNNNeuron?](mpscnnconvolution/neuron.md)
+- [var subPixelScaleFactor: Int](./subpixelscalefactor.md)
+- [var neuron: MPSCNNNeuron?](./neuron.md)
   The neuron filter to be applied as part of the convolution operation.
-- [class MPSCNNNeuron](mpscnnneuron.md)
+- [class MPSCNNNeuron](../mpscnnneuron.md)
   A filter that applies a neuron activation function.
-- [var neuronType: MPSCNNNeuronType](mpscnnconvolution/neurontype.md)
-- [enum MPSCNNNeuronType](mpscnnneurontype.md)
+- [var neuronType: MPSCNNNeuronType](./neurontype.md)
+- [enum MPSCNNNeuronType](../mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
-- [var neuronParameterA: Float](mpscnnconvolution/neuronparametera.md)
-- [var neuronParameterB: Float](mpscnnconvolution/neuronparameterb.md)
-- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](mpscnnconvolution/accumulatorprecisionoption.md)
-- [var channelMultiplier: Int](mpscnnconvolution/channelmultiplier.md)
-- [var dataSource: any MPSCNNConvolutionDataSource](mpscnnconvolution/datasource.md)
-- [var fusedNeuronDescriptor: MPSNNNeuronDescriptor?](mpscnnconvolution/fusedneurondescriptor.md)
+- [var neuronParameterA: Float](./neuronparametera.md)
+- [var neuronParameterB: Float](./neuronparameterb.md)
+- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](./accumulatorprecisionoption.md)
+- [var channelMultiplier: Int](./channelmultiplier.md)
+- [var dataSource: any MPSCNNConvolutionDataSource](./datasource.md)
+- [var fusedNeuronDescriptor: MPSNNNeuronDescriptor?](./fusedneurondescriptor.md)
 
 
 ---

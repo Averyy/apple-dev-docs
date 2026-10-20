@@ -1,7 +1,8 @@
 # process(readingFrom:writingTo:selectUsing:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Processes archive elements between two archive streams.
 
@@ -11,7 +12,7 @@ Processes archive elements between two archive streams.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

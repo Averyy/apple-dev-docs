@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.Accuracy.undetermined
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Geo-tracking accuracy is undetermined.
 
@@ -15,17 +16,22 @@ Geo-tracking accuracy is undetermined.
 case undetermined
 ```
 
+```c
+ARGeoTrackingAccuracyUndetermined
+```
+
 #### Discussion
 
 This value indicates that because the session has not completed visual localization, geo-tracking accuracy is indeterminate.
 
 ## See Also
 
-- [ARGeoTrackingStatus.Accuracy.high](argeotrackingstatus/accuracy-swift.enum/high.md)
+### Accuracies
+- [ARGeoTrackingStatus.Accuracy.high](./high.md)
   Geo-tracking accuracy is high.
-- [ARGeoTrackingStatus.Accuracy.low](argeotrackingstatus/accuracy-swift.enum/low.md)
+- [ARGeoTrackingStatus.Accuracy.low](./low.md)
   Geo-tracking accuracy is low.
-- [ARGeoTrackingStatus.Accuracy.medium](argeotrackingstatus/accuracy-swift.enum/medium.md)
+- [ARGeoTrackingStatus.Accuracy.medium](./medium.md)
   Geo-tracking accuracy is average.
 
 

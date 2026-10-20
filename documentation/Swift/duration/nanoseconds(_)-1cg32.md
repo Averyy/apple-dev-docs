@@ -1,7 +1,8 @@
 # nanoseconds(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct a `Duration` given a number of nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
 

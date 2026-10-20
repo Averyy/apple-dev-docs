@@ -1,7 +1,8 @@
 # TitledSection
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A section you can use to request items from the library grouped by title.
 
@@ -22,27 +23,27 @@ struct TitledSection
 
 #### Overview
 
-For example, when you perform a library sectioned request of albums, the library sectioned response will contain albums grouped by the first letter of their title, and the [`title`](titledsection/title.md) property of this section will be equal to that first letter.
+For example, when you perform a library sectioned request of albums, the library sectioned response will contain albums grouped by the first letter of their title, and the [`title`](./titledsection/title.md) property of this section will be equal to that first letter.
 
 ## Topics
 
 ### Instance Properties
-- [var id: MusicItemID](titledsection/id.md)
+- [var id: MusicItemID](./titledsection/id.md)
   The unique identifier for the titled section.
-- [let title: String](titledsection/title.md)
+- [let title: String](./titledsection/title.md)
   The title of the section.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicLibrarySectionRequestable](musiclibrarysectionrequestable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MusicLibrarySectionRequestable](./musiclibrarysectionrequestable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

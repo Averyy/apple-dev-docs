@@ -1,7 +1,8 @@
 # IOPhysicalLength
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOPhysicalLength = IOPhysicalLength64
+```
+
+```c
+typedef IOPhysicalLength64 IOPhysicalLength;
 ```
 
 

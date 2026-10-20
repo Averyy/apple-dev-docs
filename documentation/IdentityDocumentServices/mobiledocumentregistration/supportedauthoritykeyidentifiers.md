@@ -1,14 +1,15 @@
 # supportedAuthorityKeyIdentifiers
 
 **Framework**: IdentityDocumentServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of authority key identifiers that correspond to relying party authorizers that are trusted by the document provider app.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

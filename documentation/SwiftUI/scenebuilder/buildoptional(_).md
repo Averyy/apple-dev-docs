@@ -1,7 +1,8 @@
 # buildOptional(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces an optional scene for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
 
@@ -23,7 +24,7 @@ static func buildOptional(_ scene: (any Scene & _LimitedAvailabilitySceneMarker)
 
 #### Discussion
 
-Conditional statements in a [`SceneBuilder`](scenebuilder.md) can contain an `if` statement but not an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
+Conditional statements in a [`SceneBuilder`](../scenebuilder.md) can contain an `if` statement but not an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 
 ```swift
 var body: some Scene {
@@ -37,10 +38,11 @@ var body: some Scene {
 
 ## See Also
 
-- [static buildBlock(_:)](scenebuilder/buildblock(_:).md)
-- [static func buildExpression<Content>(Content) -> Content](scenebuilder/buildexpression(_:).md)
+### Building content
+- [static buildBlock(_:)](./buildblock%28_%29.md)
+- [static func buildExpression<Content>(Content) -> Content](./buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static func buildLimitedAvailability(some Scene) -> any Scene & _LimitedAvailabilitySceneMarker](scenebuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(some Scene) -> any Scene & _LimitedAvailabilitySceneMarker](./buildlimitedavailability%28_%29.md)
   Processes scene content for a conditional compiler-control statement that performs an availability check.
 
 

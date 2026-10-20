@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short POSITION_UNAVAILABLE;
 ```
 
 ## See Also
 
-- [PERMISSION_DENIED](positionerror/1633363-permission_denied.md)
-- [TIMEOUT](positionerror/1630601-timeout.md)
+### Miscellaneous
+- [PERMISSION_DENIED](./api-1633363-permission_denied.md)
+- [TIMEOUT](./api-1630601-timeout.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Scripting Bridge
 
 **Framework**: Scripting Bridge  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Automate scriptable apps by sending and receiving Apple events.
 
@@ -16,15 +17,15 @@ Scripting Bridge is a technology that lets you control scriptable Apple and thir
 ## Topics
 
 ### Classes
-- [class SBApplication](sbapplication.md)
+- [class SBApplication](./sbapplication.md)
   The `SBApplication` class provides a mechanism enabling an Objective-C program to send Apple events to a scriptable application and receive Apple events in response. It thereby makes it possible for that program to control the application and exchange data with it. Scripting Bridge works by bridging data types between Apple event descriptors and Cocoa objects.
-- [class SBElementArray](sbelementarray.md)
-  `SBElementArray` is subclass of `NSMutableArray` that manages collections of related [`SBObject`](sbobject.md) objects. For example, when you ask the Finder for a list of disks, or ask iTunes for a list of playlists, you get the result back as an `SBElementArray` containing Scripting Bridge objects representing those items.
-- [class SBObject](sbobject.md)
+- [class SBElementArray](./sbelementarray.md)
+  `SBElementArray` is subclass of `NSMutableArray` that manages collections of related [`SBObject`](./sbobject.md) objects. For example, when you ask the Finder for a list of disks, or ask iTunes for a list of playlists, you get the result back as an `SBElementArray` containing Scripting Bridge objects representing those items.
+- [class SBObject](./sbobject.md)
   The `SBObject` class declares methods that can be invoked on any object in a scriptable application. It defines methods for getting elements and properties of an object, as well as setting a given object to a new value.
 ### Protocols
-- [protocol SBApplicationDelegate](sbapplicationdelegate.md)
-  This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](sbapplication.md) object.
+- [protocol SBApplicationDelegate](./sbapplicationdelegate.md)
+  This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](./sbapplication.md) object.
 
 
 ---

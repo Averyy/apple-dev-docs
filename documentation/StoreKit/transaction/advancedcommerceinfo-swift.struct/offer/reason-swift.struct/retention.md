@@ -1,7 +1,8 @@
 # retention
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -20,8 +21,9 @@ static let retention: Transaction.AdvancedCommerceInfo.Offer.Reason
 
 ## See Also
 
-- [static let acquisition: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/acquisition.md)
-- [static let winBack: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/winback.md)
+### Type Properties
+- [static let acquisition: Transaction.AdvancedCommerceInfo.Offer.Reason](./acquisition.md)
+- [static let winBack: Transaction.AdvancedCommerceInfo.Offer.Reason](./winback.md)
 
 
 ---

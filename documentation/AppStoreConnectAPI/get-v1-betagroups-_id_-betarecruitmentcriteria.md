@@ -1,7 +1,8 @@
 # Read Recruitment Criteria for a Beta Group
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the recruitment criteria information for a specific beta group.
 
@@ -14,23 +15,39 @@ Get the recruitment criteria information for a specific beta group.
 
 ## Parameters
 
-- `fields[betaRecruitmentCriteria]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the beta group resource ID from the [`List beta groups`](./get-v1-betagroups.md) response.
+
+### Query Parameters
+
+- `fields[betaRecruitmentCriteria]` ([string]): **Allowed Values**: `lastModifiedDate`, `deviceFamilyOsVersionFilters`
+
+## Responses
+
+- `200` OK (`BetaRecruitmentCriterionResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List beta groups](get-v1-betagroups.md)
+### Getting Beta Group Information
+- [List beta groups](./get-v1-betagroups.md)
   Find and list beta groups for all apps.
-- [Read beta group information](get-v1-betagroups-_id_.md)
+- [Read beta group information](./get-v1-betagroups-_id_.md)
   Get a specific beta group.
-- [Read the app information of a beta group](get-v1-betagroups-_id_-app.md)
+- [Read the app information of a beta group](./get-v1-betagroups-_id_-app.md)
   Get the app information for a specific beta group.
-- [Get the app ID for a beta group](get-v1-betagroups-_id_-relationships-app.md)
-- [Read Metrics for Beta Testers in a Beta Group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
+- [Get the app ID for a beta group](./get-v1-betagroups-_id_-relationships-app.md)
+- [Read Metrics for Beta Testers in a Beta Group](./get-v1-betagroups-_id_-metrics-betatesterusages.md)
   Get beta tester usage metrics for a beta group.
-- [List beta recruitment criterion IDs for a beta group](get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
-- [Read build compatibility for a beta group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
+- [List beta recruitment criterion IDs for a beta group](./get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
+- [Read build compatibility for a beta group](./get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
   Get the build compatibility information for a specific beta group.
-- [Get the compatible build check ID for a beta group recruitment criterion](get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
+- [Get the compatible build check ID for a beta group recruitment criterion](./get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
 
 
 ---

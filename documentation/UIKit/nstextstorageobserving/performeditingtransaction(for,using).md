@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs an editing transaction on the text storage.
@@ -19,6 +20,10 @@ Performs an editing transaction on the text storage.
 func performEditingTransaction(for textStorage: NSTextStorage, using transaction: () -> Void)
 ```
 
+```objc
+- (void) performEditingTransactionForTextStorage:(NSTextStorage *) textStorage usingBlock:(void (^)()) transaction;
+```
+
 ## Parameters
 
 - `textStorage`: The text storage.
@@ -26,7 +31,8 @@ func performEditingTransaction(for textStorage: NSTextStorage, using transaction
 
 ## See Also
 
-- [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](nstextstorageobserving/processediting(for:edited:range:changeinlength:invalidatedrange:).md)
+### Managing the editing process
+- [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](./processediting%28for,edited,range,changeinlength,invalidatedrange%29.md)
   Notifies the observer that the text storage has been edited.
 
 

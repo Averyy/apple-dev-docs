@@ -1,7 +1,8 @@
 # string(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a localized string representation of the provided measurement.
 
@@ -20,6 +21,10 @@ Creates and returns a localized string representation of the provided measuremen
 func string(from measurement: Measurement<Unit>) -> String
 ```
 
+```objc
+- (NSString *) stringFromMeasurement:(NSMeasurement *) measurement;
+```
+
 #### Return Value
 
 A user-readable string that represents the measurement.
@@ -30,9 +35,10 @@ A user-readable string that represents the measurement.
 
 ## See Also
 
-- [func string<UnitType>(from: Measurement<UnitType>) -> String](measurementformatter/string(from:)-6rcb1.md)
+### Converting Measurements
+- [func string<UnitType>(from: Measurement<UnitType>) -> String](./string%28from%29-6rcb1.md)
   Creates and returns a localized string representation of the provided measurement.
-- [func string(from: Unit) -> String](measurementformatter/string(from:)-4hwjz.md)
+- [func string(from: Unit) -> String](./string%28from%29-4hwjz.md)
   Creates and returns a localized string representation of the provided unit of measure.
 
 

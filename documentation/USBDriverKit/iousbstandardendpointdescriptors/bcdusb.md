@@ -1,7 +1,8 @@
 # bcdUSB
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The USB version supported by the device, specified as a binary-coded decimal value.
 
@@ -10,17 +11,18 @@ The USB version supported by the device, specified as a binary-coded decimal val
 
 ## Declaration
 
-```swift
+```c
 uint16_t bcdUSB;
 ```
 
 ## See Also
 
-- [descriptor](iousbstandardendpointdescriptors/descriptor.md)
+### Getting the Descriptors
+- [descriptor](./descriptor.md)
   A valid endpoint descriptor.
-- [ssCompanionDescriptor](iousbstandardendpointdescriptors/sscompaniondescriptor.md)
+- [ssCompanionDescriptor](./sscompaniondescriptor.md)
   The companion descriptor for super-speed devices.
-- [sspCompanionDescriptor](iousbstandardendpointdescriptors/sspcompaniondescriptor.md)
+- [sspCompanionDescriptor](./sspcompaniondescriptor.md)
   The companion descriptor for super-speed plus devices.
 
 

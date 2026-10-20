@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object to receive update events.
 
@@ -20,13 +21,18 @@ The delegate object to receive update events.
 weak var delegate: (any CLLocationManagerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CLLocationManagerDelegate> delegate;
+```
+
 #### Discussion
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 
 ## See Also
 
-- [protocol CLLocationManagerDelegate](cllocationmanagerdelegate.md)
+### Receiving data from location services
+- [protocol CLLocationManagerDelegate](../cllocationmanagerdelegate.md)
   The methods you use to receive events from an associated location-manager object.
 
 

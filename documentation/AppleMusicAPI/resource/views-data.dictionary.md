@@ -1,7 +1,8 @@
 # Resource.Views
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Views belonging to the resource.
 
@@ -10,7 +11,7 @@ Views belonging to the resource.
 
 ## Declaration
 
-```swift
+```
 object Resource.Views
 ```
 

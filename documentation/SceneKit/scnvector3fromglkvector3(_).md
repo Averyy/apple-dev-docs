@@ -1,23 +1,28 @@
 # SCNVector3FromGLKVector3(_:)
 
 **Framework**: SceneKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a three-element SceneKit vector structure corresponding to a GLKit vector structure.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func SCNVector3FromGLKVector3(_ vector: GLKVector3) -> SCNVector3
+```
+
+```c
+static SCNVector3 SCNVector3FromGLKVector3(GLKVector3 vector);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A three-element SceneKit vector structure representing the same vector as the in
 
 ## See Also
 
-- [func SCNVector3ToGLKVector3(SCNVector3) -> GLKVector3](scnvector3toglkvector3(_:).md)
+### Converting Vector Types
+- [func SCNVector3ToGLKVector3(SCNVector3) -> GLKVector3](./scnvector3toglkvector3%28_%29.md)
   Returns a three-element GLKit vector structure corresponding to a SceneKit vector structure.
 
 

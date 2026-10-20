@@ -1,14 +1,15 @@
 # lz4_hash_entry_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct lz4_hash_entry_t {
     ...
 } lz4_hash_entry_t;
@@ -17,8 +18,8 @@ typedef struct lz4_hash_entry_t {
 ## Topics
 
 ### Instance Properties
-- [offset](lz4_hash_entry_t/3728083-offset.md)
-- [word](lz4_hash_entry_t/3728084-word.md)
+- [offset](./lz4_hash_entry_t/api-3728083-offset.md)
+- [word](./lz4_hash_entry_t/api-3728084-word.md)
 
 
 ---

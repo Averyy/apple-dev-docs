@@ -1,7 +1,8 @@
 # addGraph(_:name:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addGraph(_ graph: GKGraph, name: String)
+```
+
+```objc
+- (void) addGraph:(GKGraph *) graph name:(NSString *) name;
 ```
 
 

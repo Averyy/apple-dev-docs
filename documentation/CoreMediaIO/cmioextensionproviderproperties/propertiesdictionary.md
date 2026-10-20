@@ -1,7 +1,8 @@
 # propertiesDictionary
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of properties for a provider.
 
@@ -15,13 +16,18 @@ A dictionary of properties for a provider.
 var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>] { get set }
 ```
 
+```objc
+@property (atomic, copy) NSDictionary<NSString *,CMIOExtensionPropertyState *> * propertiesDictionary;
+```
+
 ## See Also
 
-- [var name: String?](cmioextensionproviderproperties/name.md)
+### Managing Properties
+- [var name: String?](./name.md)
   The provider name.
-- [var manufacturer: String?](cmioextensionproviderproperties/manufacturer.md)
+- [var manufacturer: String?](./manufacturer.md)
   The provider manufacturer.
-- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](cmioextensionproviderproperties/setpropertystate(_:forproperty:).md)
+- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](./setpropertystate%28_,forproperty%29.md)
   Sets a state value for the specified property.
 
 

@@ -1,7 +1,8 @@
 # MTLIOCommandQueueType.serial
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets a new input/output command queue’s type to a queue that runs commands serially.
 
@@ -19,9 +20,14 @@ Sets a new input/output command queue’s type to a queue that runs commands ser
 case serial
 ```
 
+```c
+MTLIOCommandQueueTypeSerial
+```
+
 ## See Also
 
-- [MTLIOCommandQueueType.concurrent](mtliocommandqueuetype/concurrent.md)
+### I/O command queue types
+- [MTLIOCommandQueueType.concurrent](./concurrent.md)
   Sets a new input/output command queue’s type to a queue that runs commands concurrently.
 
 

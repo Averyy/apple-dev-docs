@@ -1,7 +1,8 @@
 # textScale(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a text scale to text in the view.
 
@@ -32,21 +33,22 @@ A view with the specified text scale applied.
 
 ## See Also
 
-- [func dynamicTypeSize(_:)](view/dynamictypesize(_:).md)
+### Adjusting text size
+- [func dynamicTypeSize(_:)](./dynamictypesize%28_%29.md)
   Sets the Dynamic Type size within the view to the given value.
-- [var dynamicTypeSize: DynamicTypeSize](environmentvalues/dynamictypesize.md)
+- [var dynamicTypeSize: DynamicTypeSize](../environmentvalues/dynamictypesize.md)
   The current Dynamic Type size.
-- [enum DynamicTypeSize](dynamictypesize.md)
+- [enum DynamicTypeSize](../dynamictypesize.md)
   A Dynamic Type size, which specifies how large scalable content should be.
-- [struct ScaledMetric](scaledmetric.md)
+- [struct ScaledMetric](../scaledmetric.md)
   A dynamic property that scales a numeric value.
-- [protocol TextVariantPreference](textvariantpreference.md)
+- [protocol TextVariantPreference](../textvariantpreference.md)
   A protocol for controlling the size variant of text views.
-- [struct FixedTextVariant](fixedtextvariant.md)
+- [struct FixedTextVariant](../fixedtextvariant.md)
   The default text variant preference that chooses the largest available variant.
-- [struct SizeDependentTextVariant](sizedependenttextvariant.md)
+- [struct SizeDependentTextVariant](../sizedependenttextvariant.md)
   The size dependent variant preference allows the text to take the available space into account when choosing the variant to display.
-- [enum ContentSizeCategory](contentsizecategory.md)
+- [enum ContentSizeCategory](../contentsizecategory.md)
   The sizes that you can specify for content.
 
 

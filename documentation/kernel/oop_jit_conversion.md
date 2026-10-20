@@ -1,14 +1,15 @@
 # oop_jit_conversion
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 const char *oop_jit_conversion[3];
 ```
 

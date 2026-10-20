@@ -1,7 +1,8 @@
 # title
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized title of the object.
 
@@ -12,6 +13,10 @@ The localized title of the object.
 
 ```swift
 var title: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new texture handle from a shareable texture.
@@ -18,6 +19,10 @@ Creates a new texture handle from a shareable texture.
 
 ```swift
 func makeSharedTextureHandle() -> MTLSharedTextureHandle?
+```
+
+```objc
+- (MTLSharedTextureHandle *) newSharedTextureHandle;
 ```
 
 #### Discussion

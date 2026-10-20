@@ -1,7 +1,8 @@
 # invalidProcessorSet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An argument applied to assert processor set privilege was not a processor set control port.
 

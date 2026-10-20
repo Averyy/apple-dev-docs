@@ -1,7 +1,8 @@
 # basedOnSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The scrollable view bounces when its content is large enough to require scrolling.
 
@@ -26,9 +27,10 @@ The scrollable view bounces along the specified axis if the size of the content 
 
 ## See Also
 
-- [static var automatic: ScrollBounceBehavior](scrollbouncebehavior/automatic.md)
+### Bounce behaviors
+- [static var automatic: ScrollBounceBehavior](./automatic.md)
   The automatic behavior.
-- [static var always: ScrollBounceBehavior](scrollbouncebehavior/always.md)
+- [static var always: ScrollBounceBehavior](./always.md)
   The scrollable view always bounces.
 
 

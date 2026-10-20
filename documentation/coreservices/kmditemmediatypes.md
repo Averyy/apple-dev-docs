@@ -1,7 +1,8 @@
 # kMDItemMediaTypes
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The media types present in the content. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The media types present in the content. A CFArray of CFStrings.
 
 ```swift
 let kMDItemMediaTypes: CFString!
+```
+
+```c
+const CFStringRef kMDItemMediaTypes;
 ```
 
 

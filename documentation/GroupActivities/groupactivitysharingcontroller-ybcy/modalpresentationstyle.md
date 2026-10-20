@@ -1,7 +1,8 @@
 # modalPresentationStyle
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation style for the view controller.
 
@@ -20,7 +21,7 @@ override dynamic var modalPresentationStyle: UIModalPresentationStyle { get set 
 
 #### Discussion
 
-This property always sets the presentation style for the view controller to [`UIModalPresentationStyle.pageSheet`](https://developer.apple.com/documentation/uikit/uimodalpresentationstyle/pagesheet).
+This property always sets the presentation style for the view controller to [`UIModalPresentationStyle.pageSheet`](../../UIKit/uimodalpresentationstyle/pagesheet.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # CMTimeRoundingMethod.roundTowardPositiveInfinity
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds toward positive infinity.
 
@@ -20,21 +21,26 @@ Rounds toward positive infinity.
 case roundTowardPositiveInfinity
 ```
 
+```c
+kCMTimeRoundingMethod_RoundTowardPositiveInfinity
+```
+
 #### Discussion
 
-This method rounds toward [`positiveInfinity`](cmtime/positiveinfinity.md) if the fraction isn’t equal to `0`.
+This method rounds toward [`positiveInfinity`](../cmtime/positiveinfinity.md) if the fraction isn’t equal to `0`.
 
 ## See Also
 
-- [CMTimeRoundingMethod.roundHalfAwayFromZero](cmtimeroundingmethod/roundhalfawayfromzero.md)
+### Rounding Methods
+- [CMTimeRoundingMethod.roundHalfAwayFromZero](./roundhalfawayfromzero.md)
   Rounds half away from zero.
-- [CMTimeRoundingMethod.roundAwayFromZero](cmtimeroundingmethod/roundawayfromzero.md)
+- [CMTimeRoundingMethod.roundAwayFromZero](./roundawayfromzero.md)
   Rounds away from zero.
-- [CMTimeRoundingMethod.roundTowardZero](cmtimeroundingmethod/roundtowardzero.md)
+- [CMTimeRoundingMethod.roundTowardZero](./roundtowardzero.md)
   Rounds toward zero.
-- [CMTimeRoundingMethod.quickTime](cmtimeroundingmethod/quicktime.md)
+- [CMTimeRoundingMethod.quickTime](./quicktime.md)
   Rounds using the QuickTime method.
-- [CMTimeRoundingMethod.roundTowardNegativeInfinity](cmtimeroundingmethod/roundtowardnegativeinfinity.md)
+- [CMTimeRoundingMethod.roundTowardNegativeInfinity](./roundtowardnegativeinfinity.md)
   Rounds toward negative infinity.
 
 

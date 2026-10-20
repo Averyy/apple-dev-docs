@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,35 +18,35 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [kIOKextSpinDump](1644087-anonymous/kiokextspindump.md)
-- [kIOLogAttach](1644087-anonymous/kiologattach.md)
-- [kIOLogCatalogue](1644087-anonymous/kiologcatalogue.md)
-- [kIOLogConfig](1644087-anonymous/kiologconfig.md)
-- [kIOLogDTree](1644087-anonymous/kiologdtree.md)
-- [kIOLogDebugPower](1644087-anonymous/kiologdebugpower.md)
-- [kIOLogHibernate](1644087-anonymous/kiologhibernate.md)
-- [kIOLogKextMemory](1644087-anonymous/kiologkextmemory.md)
-- [kIOLogMapping](1644087-anonymous/kiologmapping.md)
-- [kIOLogMatch](1644087-anonymous/kiologmatch.md)
-- [kIOLogMemory](1644087-anonymous/kiologmemory.md)
-- [kIOLogPMRootDomain](1644087-anonymous/kiologpmrootdomain.md)
-- [kIOLogPower](1644087-anonymous/kiologpower.md)
-- [kIOLogProbe](1644087-anonymous/kiologprobe.md)
-- [kIOLogRegister](1644087-anonymous/kiologregister.md)
-- [kIOLogServiceTree](1644087-anonymous/kiologservicetree.md)
-- [kIOLogStart](1644087-anonymous/kiologstart.md)
-- [kIOLogTracePower](1644087-anonymous/kiologtracepower.md)
-- [kIOLogYield](1644087-anonymous/kiologyield.md)
-- [kIONoFreeObjects](1644087-anonymous/kionofreeobjects.md)
-- [kIOSleepWakeWdogOff](1644087-anonymous/kiosleepwakewdogoff.md)
-- [kIOStatistics](1644087-anonymous/kiostatistics.md)
-- [kIOTracking](1644087-anonymous/kiotracking.md)
-- [kIOTrackingBoot](1644087-anonymous/kiotrackingboot.md)
-- [kIOWaitQuietBeforeRoot](1644087-anonymous/kiowaitquietbeforeroot.md)
-- [kIOWaitQuietPanics](1644087-anonymous/kiowaitquietpanics.md)
-- [kOSLogRegistryMods](1644087-anonymous/koslogregistrymods.md)
-- [kOSRegistryModsMode](1644087-anonymous/kosregistrymodsmode.md)
-- [kIOLogExclaves](1644087-anonymous/kiologexclaves.md)
+- [kIOKextSpinDump](./api-1644087-anonymous/kiokextspindump.md)
+- [kIOLogAttach](./api-1644087-anonymous/kiologattach.md)
+- [kIOLogCatalogue](./api-1644087-anonymous/kiologcatalogue.md)
+- [kIOLogConfig](./api-1644087-anonymous/kiologconfig.md)
+- [kIOLogDTree](./api-1644087-anonymous/kiologdtree.md)
+- [kIOLogDebugPower](./api-1644087-anonymous/kiologdebugpower.md)
+- [kIOLogHibernate](./api-1644087-anonymous/kiologhibernate.md)
+- [kIOLogKextMemory](./api-1644087-anonymous/kiologkextmemory.md)
+- [kIOLogMapping](./api-1644087-anonymous/kiologmapping.md)
+- [kIOLogMatch](./api-1644087-anonymous/kiologmatch.md)
+- [kIOLogMemory](./api-1644087-anonymous/kiologmemory.md)
+- [kIOLogPMRootDomain](./api-1644087-anonymous/kiologpmrootdomain.md)
+- [kIOLogPower](./api-1644087-anonymous/kiologpower.md)
+- [kIOLogProbe](./api-1644087-anonymous/kiologprobe.md)
+- [kIOLogRegister](./api-1644087-anonymous/kiologregister.md)
+- [kIOLogServiceTree](./api-1644087-anonymous/kiologservicetree.md)
+- [kIOLogStart](./api-1644087-anonymous/kiologstart.md)
+- [kIOLogTracePower](./api-1644087-anonymous/kiologtracepower.md)
+- [kIOLogYield](./api-1644087-anonymous/kiologyield.md)
+- [kIONoFreeObjects](./api-1644087-anonymous/kionofreeobjects.md)
+- [kIOSleepWakeWdogOff](./api-1644087-anonymous/kiosleepwakewdogoff.md)
+- [kIOStatistics](./api-1644087-anonymous/kiostatistics.md)
+- [kIOTracking](./api-1644087-anonymous/kiotracking.md)
+- [kIOTrackingBoot](./api-1644087-anonymous/kiotrackingboot.md)
+- [kIOWaitQuietBeforeRoot](./api-1644087-anonymous/kiowaitquietbeforeroot.md)
+- [kIOWaitQuietPanics](./api-1644087-anonymous/kiowaitquietpanics.md)
+- [kOSLogRegistryMods](./api-1644087-anonymous/koslogregistrymods.md)
+- [kOSRegistryModsMode](./api-1644087-anonymous/kosregistrymodsmode.md)
+- [kIOLogExclaves](./api-1644087-anonymous/kiologexclaves.md)
 
 
 ---

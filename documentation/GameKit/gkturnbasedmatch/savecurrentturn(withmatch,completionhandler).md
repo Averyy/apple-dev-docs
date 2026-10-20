@@ -1,7 +1,8 @@
 # saveCurrentTurn(withMatch:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves your match data in Game Center without ending the turn.
 
@@ -17,27 +18,40 @@ Saves your match data in Game Center without ending the turn.
 ## Declaration
 
 ```swift
+func saveCurrentTurn(withMatch matchData: Data, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func saveCurrentTurn(withMatch matchData: Data) async throws
+```
+
+```objc
+- (void) saveCurrentTurnWithMatchData:(NSData *) matchData completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
-Invoke this method only when the local player is the current participant. To receive turn-based events that this method generates, register a listener that conforms to the [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) protocol with the local player. See [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
+Invoke this method only when the local player is the current participant. To receive turn-based events that this method generates, register a listener that conforms to the [`GKTurnBasedEventListener`](../gkturnbasedeventlistener.md) protocol with the local player. See [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md).
 
 ## Parameters
 
 - `matchData`: Your game-specific data representing the match state. For example, include the current participant’s activity while taking their turn in this object. Don’t pass `nil` as this parameter.
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameter:
+
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [func endTurn(withNextParticipants: [GKTurnBasedParticipant], turnTimeout: TimeInterval, match: Data, completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/endturn(withnextparticipants:turntimeout:match:completionhandler:).md)
+### Ending Turns and Saving Data
+- [func endTurn(withNextParticipants: [GKTurnBasedParticipant], turnTimeout: TimeInterval, match: Data, completionHandler: (((any Error)?) -> Void)?)](./endturn%28withnextparticipants,turntimeout,match,completionhandler%29.md)
   Passes the turn from the current participant to the next participant.
-- [Turn Timeouts](turn-timeouts.md)
+- [Turn Timeouts](../turn-timeouts.md)
   A timeout for a player to take their turn.
 
 

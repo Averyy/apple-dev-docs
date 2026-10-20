@@ -1,7 +1,8 @@
 # Adaptive
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant indicating that feature visibility adapts to the current map state.
 
@@ -10,7 +11,7 @@ A constant indicating that feature visibility adapts to the current map state.
 
 ## Declaration
 
-```swift
+```
 readonly Adaptive: "adaptive";
 ```
 
@@ -37,9 +38,10 @@ map.showsZoomControl = false;
 
 ## See Also
 
-- [Hidden](featurevisibility/hidden.md)
+### Feature visibility values
+- [Hidden](./hidden.md)
   A constant indicating that the feature is always hidden.
-- [Visible](featurevisibility/visible.md)
+- [Visible](./visible.md)
   A constant indicating that the feature is always visible.
 
 

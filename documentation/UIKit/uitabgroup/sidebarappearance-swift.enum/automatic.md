@@ -1,7 +1,8 @@
 # UITabGroup.SidebarAppearance.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default appearance showing the group and its children appropriately depending on the group level it is in.
 
@@ -15,6 +16,10 @@ The default appearance showing the group and its children appropriately dependin
 
 ```swift
 case automatic
+```
+
+```c
+UITabGroupSidebarAppearanceAutomatic
 ```
 
 

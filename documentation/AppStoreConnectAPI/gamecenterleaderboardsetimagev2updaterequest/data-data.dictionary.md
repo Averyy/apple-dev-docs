@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetImageV2UpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard set image update request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard set image update re
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetImageV2UpdateRequest.Data
 ```
 
@@ -23,13 +24,13 @@ object GameCenterLeaderboardSetImageV2UpdateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetImageV2UpdateRequest.Data.Attributes](gamecenterleaderboardsetimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardSetImageV2UpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
 
 ## Properties
 
 - `attributes` (GameCenterLeaderboardSetImageV2UpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSetImages`
 
 
 ---

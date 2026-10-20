@@ -1,18 +1,19 @@
 # uniqueID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connection’s unique identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The connection’s unique identifier.
 var uniqueID: MIDIUniqueID
 ```
 
+```c
+MIDIUniqueID uniqueID;
+```
+
 ## See Also
 
-- [var endpointRef: MIDIEndpointRef](midithruconnectionendpoint/endpointref.md)
+### Configuring an Endpoint
+- [var endpointRef: MIDIEndpointRef](./endpointref.md)
   The endpoint reference.
 
 

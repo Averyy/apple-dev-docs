@@ -1,6 +1,7 @@
 # PhotoKit
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Technology
 
 Work with image and video assets that the Photos app manages, including those from iCloud Photos and Live Photos.
 
@@ -17,36 +18,36 @@ Work with image and video assets that the Photos app manages, including those fr
 
 PhotoKit is the combination of the Photos and PhotosUI frameworks. Using the capabilities of these two frameworks, you can access image and video assets that the Photos app manages. You might use PhotoKit to edit or display a person’s photos, or to manage collections of assets such as albums, Moments, and Shared Albums. The framework provides access to photos on the person’s device and in iCloud.
 
-![A flowchart showing the types of requests your app can make through PhotoKit to access photos stored in a person’s photo library. On the left are boxes labeled iCloud photos and Local photo library, with arrows pointing to and from PhotoKit. On the far right is an icon representing your app, with an arrow flowing to PhotoKit. Below PhotoKit is a list of outputs with icons, including Slideshow, Calendar, and Wall decor.](/images/com.apple.photokit/media-3030182@2x.png)
+![A flowchart showing the types of requests your app can make through PhotoKit to access photos stored in a person’s photo library. On the left are boxes labeled iCloud photos and Local photo library, with arrows pointing to and from PhotoKit. On the far right is an icon representing your app, with an arrow flowing to PhotoKit. Below PhotoKit is a list of outputs with icons, including Slideshow, Calendar, and Wall decor.](https://developer.apple.com/tutorials/images/com.apple.photokit/media-3030182@2x.png)
 
 ## Topics
 
 ### Frameworks
-- [Photos](../photos/photos.md)
+- [Photos](https://developer.apple.com/documentation/photos)
   Work with image and video assets that the Photos app manages, including those from iCloud Photos and Live Photos.
-- [PhotosUI](../photosui/photosui.md)
+- [PhotosUI](https://developer.apple.com/documentation/photosui)
   Present a person’s photo library using a picker interface, display Live Photos, or extend the Photos app with custom functionality.
 ### Sample code
-- [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
+- [Browsing and Modifying Photo Albums](./browsing-and-modifying-photo-albums.md)
   Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
-- [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
+- [Selecting Photos and Videos in iOS](./selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
-- [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)
+- [Bringing Photos picker to your SwiftUI app](./bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
-- [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)
+- [Implementing an inline Photos picker](./implementing-an-inline-photos-picker.md)
   Embed a system-provided, half-height Photos picker into your app’s view.
-- [Creating a Slideshow Project Extension for Photos](creating-a-slideshow-project-extension-for-photos.md)
+- [Creating a Slideshow Project Extension for Photos](./creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
 ### Articles
-- [Delivering an Enhanced Privacy Experience in Your Photos App](delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
+- [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
-- [Fetching Objects and Requesting Changes](fetching-objects-and-requesting-changes.md)
+- [Fetching Objects and Requesting Changes](./fetching-objects-and-requesting-changes.md)
   Get assets, asset collections, and collection lists matching a specified query.
-- [Loading and Caching Assets and Thumbnails](loading-and-caching-assets-and-thumbnails.md)
+- [Loading and Caching Assets and Thumbnails](./loading-and-caching-assets-and-thumbnails.md)
   Request image, video, or Live Photos content, and cache for quick reuse.
-- [Displaying Live Photos](displaying-live-photos.md)
+- [Displaying Live Photos](./displaying-live-photos.md)
   Provide the same interactive playback of Live Photos as in the iOS Photos app.
-- [Creating Photo Editing Extensions](creating-photo-editing-extensions.md)
+- [Creating Photo Editing Extensions](./creating-photo-editing-extensions.md)
   Provide custom functionality in the Photos app by bundling an app extension.
 
 

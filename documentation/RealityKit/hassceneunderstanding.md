@@ -1,7 +1,8 @@
 # HasSceneUnderstanding
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A specification that detects and reacts to features of the physical environment.
 
@@ -22,35 +23,36 @@ A specification that detects and reacts to features of the physical environment.
 ## Topics
 
 ### Understanding the scene
-- [var sceneUnderstanding: SceneUnderstandingComponent](hassceneunderstanding/sceneunderstanding.md)
+- [var sceneUnderstanding: SceneUnderstandingComponent](./hassceneunderstanding/sceneunderstanding.md)
   An entity component that detects and reacts to features of the physical environment.
 
 ## Relationships
 
 ### Inherits From
-- [Entity](entity.md)
+- [Entity](./entity.md)
 
 ## See Also
 
-- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
+### Scene reconstructions and analysis
+- [Creating a game with scene understanding](./creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
   Detect real-world objects and surfaces to create precise AR interactions.
-- [Visualizing and interacting with a reconstructed scene](../arkit/visualizing-and-interacting-with-a-reconstructed-scene.md)
+- [Visualizing and interacting with a reconstructed scene](../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../arkit/arworldtrackingconfiguration/scenereconstruction.md)
+- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../ARKit/arworldtrackingconfiguration/scenereconstruction.md)
   A flag that enables scene reconstruction.
-- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../arkit/arworldtrackingconfiguration/supportsscenereconstruction(_:).md)
+- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../ARKit/arworldtrackingconfiguration/supportsscenereconstruction%28_%29.md)
   Checks if the device supports scene reconstruction.
-- [struct SceneUnderstandingComponent](sceneunderstandingcomponent.md)
+- [struct SceneUnderstandingComponent](./sceneunderstandingcomponent.md)
   A component that specifies an entity is participating in the system’s scene-understanding features.
-- [ARView.Environment.SceneUnderstanding](arview/environment-swift.struct/sceneunderstanding-swift.struct.md)
+- [ARView.Environment.SceneUnderstanding](./arview/environment-swift.struct/sceneunderstanding-swift.struct.md)
   An object that holds scene-understanding options for the view.
-- [ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct.md)
+- [ARView.Environment.SceneUnderstanding.Options](./arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct.md)
   Available scene-understanding options.
-- [class SceneReconstructionProvider](../arkit/scenereconstructionprovider.md)
+- [class SceneReconstructionProvider](../ARKit/scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
-- [class ARSession](../arkit/arsession.md)
+- [class ARSession](../ARKit/arsession.md)
   The object that manages the major tasks associated with every AR experience, such as motion tracking, camera passthrough, and image analysis.
 
 

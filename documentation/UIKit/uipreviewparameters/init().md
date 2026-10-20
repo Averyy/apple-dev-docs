@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default set of preview parameters.
 
@@ -18,13 +19,18 @@ Creates a default set of preview parameters.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new preview parameters object.
 
 ## See Also
 
-- [convenience init(textLineRects: [NSValue])](uipreviewparameters/init(textlinerects:).md)
+### Creating preview parameters
+- [convenience init(textLineRects: [NSValue])](./init%28textlinerects%29.md)
   Creates a preview parameters object with information about the text you want to preview.
 
 

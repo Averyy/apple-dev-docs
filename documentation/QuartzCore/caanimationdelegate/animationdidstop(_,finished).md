@@ -1,7 +1,8 @@
 # animationDidStop(_:finished:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the animation has ended.
 
@@ -19,18 +20,23 @@ Tells the delegate the animation has ended.
 optional func animationDidStop(_ anim: CAAnimation, finished flag: Bool)
 ```
 
+```objc
+- (void) animationDidStop:(CAAnimation *) anim finished:(BOOL) flag;
+```
+
 #### Discussion
 
 The animation may have ended because it has completed its active duration or because it has been removed from the layer it is attached to. `flag` is true if the animation reached the end of its duration without being removed.
 
 ## Parameters
 
-- `anim`: The [`CAAnimation`](caanimation.md) object that has ended.
+- `anim`: The [`CAAnimation`](../caanimation.md) object that has ended.
 - `flag`: A flag indicating whether the animation has completed by reaching the end of its duration.
 
 ## See Also
 
-- [func animationDidStart(CAAnimation)](caanimationdelegate/animationdidstart(_:).md)
+### Customizing Start and Stop Times
+- [func animationDidStart(CAAnimation)](./animationdidstart%28_%29.md)
   Tells the delegate the animation has started.
 
 

@@ -1,7 +1,8 @@
 # captureResolution
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resolution at which to capture source content.
 
@@ -15,13 +16,18 @@ The resolution at which to capture source content.
 var captureResolution: SCCaptureResolutionType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) SCCaptureResolutionType captureResolution;
+```
+
 ## See Also
 
-- [var queueDepth: Int](scstreamconfiguration/queuedepth.md)
+### Configuring captured frames
+- [var queueDepth: Int](./queuedepth.md)
   The maximum number of frames for the queue to store.
-- [var minimumFrameInterval: CMTime](scstreamconfiguration/minimumframeinterval.md)
+- [var minimumFrameInterval: CMTime](./minimumframeinterval.md)
   The desired minimum time between frame updates, in seconds.
-- [enum SCCaptureResolutionType](sccaptureresolutiontype.md)
+- [enum SCCaptureResolutionType](../sccaptureresolutiontype.md)
   Available resolutions for content capture.
 
 

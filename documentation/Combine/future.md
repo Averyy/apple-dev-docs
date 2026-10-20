@@ -1,7 +1,8 @@
 # Future
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A publisher that eventually produces a single value and then finishes or fails.
 
@@ -22,11 +23,11 @@ final class Future<Output, Failure> where Failure : Error
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Overview
 
-Use a future to perform some work and then asynchronously publish a single element. You initialize the future with a closure that takes a [`Future.Promise`](future/promise.md); the closure calls the promise with a [`Result`](https://developer.apple.com/documentation/swift/result) that indicates either success or failure. In the success case, the future’s downstream subscriber receives the element prior to the publishing stream finishing normally. If the result is an error, publishing terminates with that error.
+Use a future to perform some work and then asynchronously publish a single element. You initialize the future with a closure that takes a [`Future.Promise`](./future/promise.md); the closure calls the promise with a [`Result`](../Swift/result.md) that indicates either success or failure. In the success case, the future’s downstream subscriber receives the element prior to the publishing stream finishing normally. If the result is an error, publishing terminates with that error.
 
 The following example shows a method that uses a future to asynchronously publish a random number after a brief delay:
 
@@ -41,7 +42,7 @@ func generateAsyncRandomNumberFromFuture() -> Future <Int, Never> {
 }
 ```
 
-To receive the published value, you use any Combine subscriber, such as a [`Subscribers.Sink`](subscribers/sink.md), like this:
+To receive the published value, you use any Combine subscriber, such as a [`Subscribers.Sink`](./subscribers/sink.md), like this:
 
 ```swift
 cancellable = generateAsyncRandomNumberFromFuture()
@@ -50,7 +51,7 @@ cancellable = generateAsyncRandomNumberFromFuture()
 
 ##### Integrating with Swift Concurrency
 
-To integrate with the `async`-`await` syntax in Swift 5.5, `Future` can provide its value to an awaiting caller. This is particularly useful because unlike other types that conform to [`Publisher`](publisher.md) and potentially publish many elements, a `Future` only publishes one element (or fails). By using the [`value`](future/value-9iwjz.md) property, the above call point looks like this:
+To integrate with the `async`-`await` syntax in Swift 5.5, `Future` can provide its value to an awaiting caller. This is particularly useful because unlike other types that conform to [`Publisher`](./publisher.md) and potentially publish many elements, a `Future` only publishes one element (or fails). By using the [`value`](./future/value-9iwjz.md) property, the above call point looks like this:
 
 ```swift
 let number = await generateAsyncRandomNumberFromFuture().value
@@ -61,7 +62,7 @@ print("Got random number \(number).")
 
 The `async`-`await` syntax in Swift can also replace the use of a future entirely, for the case where you want to perform some operation after an asynchronous task completes.
 
-You do this with the function [`withCheckedContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/swift/withcheckedcontinuation(isolation:function:_:)) and its throwing equivalent, [`withCheckedThrowingContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)). The following example performs the same asynchronous random number generation as the `Future` example above, but as an `async` method:
+You do this with the function [`withCheckedContinuation(isolation:function:_:)`](../Swift/withcheckedcontinuation%28isolation,function,_%29.md) and its throwing equivalent, [`withCheckedThrowingContinuation(isolation:function:_:)`](../Swift/withcheckedthrowingcontinuation%28isolation,function,_%29.md). The following example performs the same asynchronous random number generation as the `Future` example above, but as an `async` method:
 
 ```swift
 func generateAsyncRandomNumberFromContinuation() async -> Int {
@@ -80,37 +81,38 @@ The call point for this method doesn’t use a closure like the future’s sink 
 let asyncRandom = await generateAsyncRandomNumberFromContinuation()
 ```
 
-For more information on continuations, see the [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency) topic in the Swift standard library.
+For more information on continuations, see the [Concurrency](../Swift/concurrency.md) topic in the Swift standard library.
 
 ## Topics
 
 ### Creating a future
-- [init((Future<Output, Failure>.Promise) -> Void)](future/init(_:).md)
+- [init((Future<Output, Failure>.Promise) -> Void)](./future/init%28_%29.md)
   Creates a publisher that invokes a promise closure when the publisher emits an element.
-- [typealias Promise](future/promise.md)
+- [typealias Promise](./future/promise.md)
   A type that represents a closure to invoke in the future, when an element or error is available.
 ### Accessing the value asynchronously
-- [var value: Output](future/value-9iwjz.md)
+- [var value: Output](./future/value-9iwjz.md)
   The published value of the future, delivered asynchronously.
-- [var value: Output](future/value-5iprp.md)
+- [var value: Output](./future/value-5iprp.md)
   The published value of the future or an error, delivered asynchronously.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](./publisher.md)
 
 ## See Also
 
-- [struct Just](just.md)
+### Convenience Publishers
+- [struct Just](./just.md)
   A publisher that emits an output to each subscriber just once, and then finishes.
-- [struct Deferred](deferred.md)
+- [struct Deferred](./deferred.md)
   A publisher that awaits subscription before running the supplied closure to create a publisher for the new subscriber.
-- [struct Empty](empty.md)
+- [struct Empty](./empty.md)
   A publisher that never publishes any values, and optionally finishes immediately.
-- [struct Fail](fail.md)
+- [struct Fail](./fail.md)
   A publisher that immediately terminates with the specified error.
-- [struct Record](record.md)
+- [struct Record](./record.md)
   A publisher that allows for recording a series of inputs and a completion, for later playback to each subscriber.
 
 

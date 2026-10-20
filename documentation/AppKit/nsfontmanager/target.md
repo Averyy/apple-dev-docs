@@ -1,7 +1,8 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives action messages related to the font manager.
 
@@ -14,9 +15,14 @@ The object that receives action messages related to the font manager.
 weak var target: AnyObject? { get set }
 ```
 
+```objc
+@property (weak, nullable) id target;
+```
+
 ## See Also
 
-- [var action: Selector](nsfontmanager/action.md)
+### Accessing the Action Property
+- [var action: Selector](./action.md)
   The action sent to the first responder when the user selects a new font from the Font panel or chooses a command from the Font menu.
 
 

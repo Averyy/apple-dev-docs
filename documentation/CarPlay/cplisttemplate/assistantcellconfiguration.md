@@ -1,7 +1,8 @@
 # assistantCellConfiguration
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the configuration attributes for the assistant cell.
 
@@ -16,6 +17,10 @@ The object that provides the configuration attributes for the assistant cell.
 var assistantCellConfiguration: CPAssistantCellConfiguration? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CPAssistantCellConfiguration * assistantCellConfiguration;
+```
+
 #### Discussion
 
 > **Note**:  The Siri assistant cell is only available in audio and communication apps.
@@ -26,7 +31,8 @@ If you update this propertyâ€™s value, CarPlay automatically refreshes your appâ
 
 ## See Also
 
-- [class CPAssistantCellConfiguration](cpassistantcellconfiguration.md)
+### Managing the Assistant Cell
+- [class CPAssistantCellConfiguration](../cpassistantcellconfiguration.md)
   An object that provides the configuration attributes for the assistant cell.
 
 

@@ -1,7 +1,8 @@
 # gridCellUnsizedAxes(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks grid layouts not to offer the view extra size in the specified axes.
 
@@ -27,7 +28,7 @@ A view that doesn’t ask an enclosing grid for extra size in one or more axes.
 
 #### Discussion
 
-Use this modifier to prevent a flexible view from taking more space on the specified axes than the other cells in a row or column require. For example, consider the following [`Grid`](grid.md) that places a [`Divider`](divider.md) between two rows of content:
+Use this modifier to prevent a flexible view from taking more space on the specified axes than the other cells in a row or column require. For example, consider the following [`Grid`](../grid.md) that places a [`Divider`](../divider.md) between two rows of content:
 
 ```swift
 Grid {
@@ -45,9 +46,9 @@ Grid {
 
 The text and images all have ideal widths for their content. However, because a divider takes as much space as its parent offers, the grid fills the width of the display, expanding all the other cells to match:
 
-![A screenshot of items arranged in a grid. The upper-left](/images/com.apple.SwiftUI/View-gridCellUnsizedAxes-1-iOS@2x.png)
+![A screenshot of items arranged in a grid. The upper-left](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-gridCellUnsizedAxes-1-iOS@2x.png)
 
-You can prevent the grid from giving the divider more width than the other cells require by adding the modifier with the [`Axis.horizontal`](axis/horizontal.md) parameter:
+You can prevent the grid from giving the divider more width than the other cells require by adding the modifier with the [`Axis.horizontal`](../axis/horizontal.md) parameter:
 
 ```swift
 Divider()
@@ -56,23 +57,24 @@ Divider()
 
 This restores the grid to the width that it would have without the divider:
 
-![A screenshot of items arranged in a grid. The upper-left](/images/com.apple.SwiftUI/View-gridCellUnsizedAxes-2-iOS@2x.png)
+![A screenshot of items arranged in a grid. The upper-left](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-gridCellUnsizedAxes-2-iOS@2x.png)
 
 ## Parameters
 
-- `axes`: The dimensions in which the grid shouldn’t offer the view a share of any available space. This prevents a flexible view like a [`Spacer`](spacer.md), [`Divider`](divider.md), or [`Color`](color.md) from defining the size of a row or column.
+- `axes`: The dimensions in which the grid shouldn’t offer the view a share of any available space. This prevents a flexible view like a [`Spacer`](../spacer.md), [`Divider`](../divider.md), or [`Color`](../color.md) from defining the size of a row or column.
 
 ## See Also
 
-- [struct Grid](grid.md)
+### Statically arranging views in two dimensions
+- [struct Grid](../grid.md)
   A container view that arranges other views in a two dimensional layout.
-- [struct GridRow](gridrow.md)
+- [struct GridRow](../gridrow.md)
   A horizontal row in a two dimensional grid container.
-- [func gridCellColumns(Int) -> some View](view/gridcellcolumns(_:).md)
+- [func gridCellColumns(Int) -> some View](./gridcellcolumns%28_%29.md)
   Tells a view that acts as a cell in a grid to span the specified number of columns.
-- [func gridCellAnchor(UnitPoint) -> some View](view/gridcellanchor(_:).md)
+- [func gridCellAnchor(UnitPoint) -> some View](./gridcellanchor%28_%29.md)
   Specifies a custom alignment anchor for a view that acts as a grid cell.
-- [func gridColumnAlignment(HorizontalAlignment) -> some View](view/gridcolumnalignment(_:).md)
+- [func gridColumnAlignment(HorizontalAlignment) -> some View](./gridcolumnalignment%28_%29.md)
   Overrides the default horizontal alignment of the grid column that the view appears in.
 
 

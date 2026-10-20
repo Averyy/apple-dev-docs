@@ -1,7 +1,8 @@
 # statusBarManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration of the status bar.
 
@@ -17,13 +18,18 @@ The current configuration of the status bar.
 var statusBarManager: UIStatusBarManager? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIStatusBarManager * statusBarManager;
+```
+
 #### Discussion
 
 Use this object to get details about the status bar, such as whether it’s hidden.
 
 ## See Also
 
-- [class UIStatusBarManager](uistatusbarmanager.md)
+### Getting the status bar configuration
+- [class UIStatusBarManager](../uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
 
 

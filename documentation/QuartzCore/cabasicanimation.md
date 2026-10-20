@@ -1,7 +1,8 @@
 # CABasicAnimation
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides basic, single-keyframe animation capabilities for a layer property.
 
@@ -19,11 +20,15 @@ An object that provides basic, single-keyframe animation capabilities for a laye
 class CABasicAnimation
 ```
 
+```objc
+@interface CABasicAnimation : CAPropertyAnimation
+```
+
 #### Overview
 
-You create an instance of  [`CABasicAnimation`](cabasicanimation.md) using the inherited [`init(keyPath:)`](capropertyanimation/init(keypath:).md) method, specifying the key path of the property to be animated in the render tree.
+You create an instance of  [`CABasicAnimation`](./cabasicanimation.md) using the inherited [`init(keyPath:)`](./capropertyanimation/init%28keypath%29.md) method, specifying the key path of the property to be animated in the render tree.
 
-For example, you can animate a layer’s scalar (i.e. containing a single value) properties such as its [`opacity`](calayer/opacity.md). The following code fades in a layer by animating its opacity from `0` to `1`.
+For example, you can animate a layer’s scalar (i.e. containing a single value) properties such as its [`opacity`](./calayer/opacity.md). The following code fades in a layer by animating its opacity from `0` to `1`.
 
 ```swift
 let animation = CABasicAnimation(keyPath: "opacity") 
@@ -31,7 +36,7 @@ animation.fromValue = 0
 animation.toValue = 1
 ```
 
-Non-scalar properties, such as [`backgroundColor`](calayer/backgroundcolor.md), can also be animated. Core Animation will interpolate between the [`fromValue`](cabasicanimation/fromvalue.md) color and the [`toValue`](cabasicanimation/tovalue.md) color. The animation created in the following code fades a layer’s background color from red to blue.
+Non-scalar properties, such as [`backgroundColor`](./calayer/backgroundcolor.md), can also be animated. Core Animation will interpolate between the [`fromValue`](./cabasicanimation/fromvalue.md) color and the [`toValue`](./cabasicanimation/tovalue.md) color. The animation created in the following code fades a layer’s background color from red to blue.
 
 ```swift
 let animation = CABasicAnimation(keyPath: "backgroundColor")
@@ -39,7 +44,7 @@ animation.fromValue = NSColor.red.cgColor
 animation.toValue = NSColor.blue.cgColor
 ```
 
-If you want to animate the individual components of a non-scalar property with different values, you pass the values to [`toValue`](cabasicanimation/tovalue.md) and [`fromValue`](cabasicanimation/fromvalue.md) as arrays. The following animation moves a layer from `(0, 0)` to `(100, 100)`.
+If you want to animate the individual components of a non-scalar property with different values, you pass the values to [`toValue`](./cabasicanimation/tovalue.md) and [`fromValue`](./cabasicanimation/fromvalue.md) as arrays. The following animation moves a layer from `(0, 0)` to `(100, 100)`.
 
 ```swift
 let animation = CABasicAnimation(keyPath: "position")
@@ -47,7 +52,7 @@ animation.fromValue = [0, 0]
 animation.toValue = [100, 100]
 ```
 
-The `keyPath` can access the individual components of a property. For example, the following animation stretches a layer by animating its [`transform`](calayer/transform.md) object’s `x` from `1` to `2`.
+The `keyPath` can access the individual components of a property. For example, the following animation stretches a layer by animating its [`transform`](./calayer/transform.md) object’s `x` from `1` to `2`.
 
 ```swift
 let animation = CABasicAnimation(keyPath: "transform.scale.x")
@@ -57,64 +62,65 @@ animation.toValue = 2
 
 ##### Setting Interpolation Values
 
-The [`fromValue`](cabasicanimation/fromvalue.md), [`byValue`](cabasicanimation/byvalue.md) and [`toValue`](cabasicanimation/tovalue.md) properties define the values being interpolated between. All are optional, and no more than two should be non-`nil`. The object type should match the type of the property being animated.
+The [`fromValue`](./cabasicanimation/fromvalue.md), [`byValue`](./cabasicanimation/byvalue.md) and [`toValue`](./cabasicanimation/tovalue.md) properties define the values being interpolated between. All are optional, and no more than two should be non-`nil`. The object type should match the type of the property being animated.
 
 The interpolation values are used as follows:
 
-- Both [`fromValue`](cabasicanimation/fromvalue.md) and [`toValue`](cabasicanimation/tovalue.md) are non-`nil`. Interpolates between [`fromValue`](cabasicanimation/fromvalue.md) and [`toValue`](cabasicanimation/tovalue.md).
-- [`fromValue`](cabasicanimation/fromvalue.md) and [`byValue`](cabasicanimation/byvalue.md) are non-`nil`. Interpolates between [`fromValue`](cabasicanimation/fromvalue.md) and ([`fromValue`](cabasicanimation/fromvalue.md) + [`byValue`](cabasicanimation/byvalue.md)).
-- [`byValue`](cabasicanimation/byvalue.md) and [`toValue`](cabasicanimation/tovalue.md) are non-`nil`. Interpolates between ([`toValue`](cabasicanimation/tovalue.md) - [`byValue`](cabasicanimation/byvalue.md)) and [`toValue`](cabasicanimation/tovalue.md).
-- [`fromValue`](cabasicanimation/fromvalue.md) is non-`nil`. Interpolates between [`fromValue`](cabasicanimation/fromvalue.md) and the current presentation value of the property.
-- [`toValue`](cabasicanimation/tovalue.md) is non-`nil`. Interpolates between the current value of `keyPath` in the target layer’s presentation layer and [`toValue`](cabasicanimation/tovalue.md).
-- [`byValue`](cabasicanimation/byvalue.md) is non-`nil`. Interpolates between the current value of `keyPath` in the target layer’s presentation layer and that value plus [`byValue`](cabasicanimation/byvalue.md).
+- Both [`fromValue`](./cabasicanimation/fromvalue.md) and [`toValue`](./cabasicanimation/tovalue.md) are non-`nil`. Interpolates between [`fromValue`](./cabasicanimation/fromvalue.md) and [`toValue`](./cabasicanimation/tovalue.md).
+- [`fromValue`](./cabasicanimation/fromvalue.md) and [`byValue`](./cabasicanimation/byvalue.md) are non-`nil`. Interpolates between [`fromValue`](./cabasicanimation/fromvalue.md) and ([`fromValue`](./cabasicanimation/fromvalue.md) + [`byValue`](./cabasicanimation/byvalue.md)).
+- [`byValue`](./cabasicanimation/byvalue.md) and [`toValue`](./cabasicanimation/tovalue.md) are non-`nil`. Interpolates between ([`toValue`](./cabasicanimation/tovalue.md) - [`byValue`](./cabasicanimation/byvalue.md)) and [`toValue`](./cabasicanimation/tovalue.md).
+- [`fromValue`](./cabasicanimation/fromvalue.md) is non-`nil`. Interpolates between [`fromValue`](./cabasicanimation/fromvalue.md) and the current presentation value of the property.
+- [`toValue`](./cabasicanimation/tovalue.md) is non-`nil`. Interpolates between the current value of `keyPath` in the target layer’s presentation layer and [`toValue`](./cabasicanimation/tovalue.md).
+- [`byValue`](./cabasicanimation/byvalue.md) is non-`nil`. Interpolates between the current value of `keyPath` in the target layer’s presentation layer and that value plus [`byValue`](./cabasicanimation/byvalue.md).
 - All properties are `nil`. Interpolates between the previous value of `keyPath` in the target layer’s presentation layer and the current value of  `keyPath` in the target layer’s presentation layer.
 
 ## Topics
 
 ### Interpolation values
-- [var fromValue: Any?](cabasicanimation/fromvalue.md)
+- [var fromValue: Any?](./cabasicanimation/fromvalue.md)
   Defines the value the receiver uses to start interpolation.
-- [var toValue: Any?](cabasicanimation/tovalue.md)
+- [var toValue: Any?](./cabasicanimation/tovalue.md)
   Defines the value the receiver uses to end interpolation.
-- [var byValue: Any?](cabasicanimation/byvalue.md)
+- [var byValue: Any?](./cabasicanimation/byvalue.md)
   Defines the value the receiver uses to perform relative interpolation.
 
 ## Relationships
 
 ### Inherits From
-- [CAPropertyAnimation](capropertyanimation.md)
+- [CAPropertyAnimation](./capropertyanimation.md)
 ### Inherited By
-- [CASpringAnimation](caspringanimation.md)
+- [CASpringAnimation](./caspringanimation.md)
 ### Conforms To
-- [CAAction](caaction.md)
-- [CAMediaTiming](camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAAction](./caaction.md)
+- [CAMediaTiming](./camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CAAnimation](caanimation.md)
+### Animation
+- [class CAAnimation](./caanimation.md)
   The abstract superclass for animations in Core Animation.
-- [protocol CAAnimationDelegate](caanimationdelegate.md)
+- [protocol CAAnimationDelegate](./caanimationdelegate.md)
   Methods your app can implement to respond when animations start and stop.
-- [class CAPropertyAnimation](capropertyanimation.md)
+- [class CAPropertyAnimation](./capropertyanimation.md)
   An abstract subclass for creating animations that manipulate the value of layer properties.
-- [class CAKeyframeAnimation](cakeyframeanimation.md)
+- [class CAKeyframeAnimation](./cakeyframeanimation.md)
   An object that provides keyframe animation capabilities for a layer object.
-- [class CASpringAnimation](caspringanimation.md)
+- [class CASpringAnimation](./caspringanimation.md)
   An animation that applies a spring-like force to a layer’s properties.
-- [class CATransition](catransition.md)
+- [class CATransition](./catransition.md)
   An object that provides an animated transition between a layer’s states.
-- [class CAValueFunction](cavaluefunction.md)
+- [class CAValueFunction](./cavaluefunction.md)
   An object that provides a flexible method of defining animated transformations.
 
 

@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The leading edge inset value.
 
@@ -14,13 +15,18 @@ The leading edge inset value.
 var leading: CGFloat
 ```
 
+```c
+CGFloat leading;
+```
+
 ## See Also
 
-- [var bottom: CGFloat](nsdirectionaledgeinsets/bottom.md)
+### Getting the edge values
+- [var bottom: CGFloat](./bottom.md)
   The bottom edge inset value.
-- [var top: CGFloat](nsdirectionaledgeinsets/top.md)
+- [var top: CGFloat](./top.md)
   The top edge inset value.
-- [var trailing: CGFloat](nsdirectionaledgeinsets/trailing.md)
+- [var trailing: CGFloat](./trailing.md)
   The trailing edge inset value.
 
 

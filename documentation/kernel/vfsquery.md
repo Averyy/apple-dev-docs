@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct vfsquery {
     ...
 };
@@ -17,8 +17,8 @@ struct vfsquery {
 ## Topics
 
 ### Instance Properties
-- [vq_flags](vfsquery/1523456-vq_flags.md)
-- [vq_spare](vfsquery/1523549-vq_spare.md)
+- [vq_flags](./vfsquery/api-1523456-vq_flags.md)
+- [vq_spare](./vfsquery/api-1523549-vq_spare.md)
 
 
 ---

@@ -1,19 +1,20 @@
 # Setting up a Core Data stack
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Article
 
 Set up the classes that manage and persist your app’s objects.
 
 #### Overview
 
-After you create a data model file as described in [`Creating a Core Data model`](creating-a-core-data-model.md), set up the classes that collaboratively support your app’s model layer. These classes are collectively referred to as the Core Data stack.
+After you create a data model file as described in [Creating a Core Data model](./creating-a-core-data-model.md), set up the classes that collaboratively support your app’s model layer. These classes are collectively referred to as the Core Data stack.
 
-![Diagram showing that a persistent container instance contains references to a a managed object model, a managed object context, and a persistent store coordinator that connects to your app’s stores.](/images/com.apple.coredata/media-3122928@2x.png)
+![Diagram showing that a persistent container instance contains references to a a managed object model, a managed object context, and a persistent store coordinator that connects to your app’s stores.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3122928@2x.png)
 
-- An instance of [`NSManagedObjectModel`](nsmanagedobjectmodel.md) represents your app’s model file describing your app’s types, properties, and relationships.
-- An instance of [`NSManagedObjectContext`](nsmanagedobjectcontext.md) tracks changes to instances of your app’s types.
-- An instance of [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) saves and fetches instances of your app’s types from stores.
-- An instance of [`NSPersistentContainer`](nspersistentcontainer.md) sets up the model, context, and store coordinator all at once.
+- An instance of [`NSManagedObjectModel`](./nsmanagedobjectmodel.md) represents your app’s model file describing your app’s types, properties, and relationships.
+- An instance of [`NSManagedObjectContext`](./nsmanagedobjectcontext.md) tracks changes to instances of your app’s types.
+- An instance of [`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md) saves and fetches instances of your app’s types from stores.
+- An instance of [`NSPersistentContainer`](./nspersistentcontainer.md) sets up the model, context, and store coordinator all at once.
 
 ##### Initialize a Persistent Container
 
@@ -45,11 +46,11 @@ class CoreDataStack: ObservableObject {
 }
 ```
 
-Once created, the persistent container holds references to the model, context, and store coordinator instances in its [`managedObjectModel`](nspersistentcontainer/managedobjectmodel.md), [`viewContext`](nspersistentcontainer/viewcontext.md), and [`persistentStoreCoordinator`](nspersistentcontainer/persistentstorecoordinator.md) properties, respectively.
+Once created, the persistent container holds references to the model, context, and store coordinator instances in its [`managedObjectModel`](./nspersistentcontainer/managedobjectmodel.md), [`viewContext`](./nspersistentcontainer/viewcontext.md), and [`persistentStoreCoordinator`](./nspersistentcontainer/persistentstorecoordinator.md) properties, respectively.
 
 You can now use the Core Data stack througout your app.
 
-##### Inject the Managed Object Context
+##### Inject the managed object context
 
 Create an instance of the Core Data stack and inject its managed object context into your app environment:
 
@@ -83,7 +84,7 @@ struct ContentView: View {
 }
 ```
 
-##### Add Functionality to the Stack
+##### Add functionality to the stack
 
 Your Core Data stack is a convenient place to put related code, such as methods to save changes and delete managed objects in the persistent store:
 
@@ -115,18 +116,19 @@ The `save` method improves performance by saving the context only when there are
 ## Topics
 
 ### Legacy Stack Setup
-- [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
+- [Setting up a Core Data stack manually](./setting-up-a-core-data-stack-manually.md)
   Create the individual components that Core Data requires manually, to support earlier versions of Apple operating systems.
 
 ## See Also
 
-- [Creating a Core Data model](creating-a-core-data-model.md)
+### Essentials
+- [Creating a Core Data model](./creating-a-core-data-model.md)
   Define your app’s object structure with a data model file.
-- [Core Data stack](core-data-stack.md)
+- [Core Data stack](./core-data-stack.md)
   Manage and persist your app’s model layer.
-- [Handling Different Data Types in Core Data](handling-different-data-types-in-core-data.md)
+- [Handling Different Data Types in Core Data](./handling-different-data-types-in-core-data.md)
   Create, store, and present records for a variety of data types.
-- [Linking Data Between Two Core Data Stores](linking-data-between-two-core-data-stores.md)
+- [Linking Data Between Two Core Data Stores](./linking-data-between-two-core-data-stores.md)
   Organize data in two different stores and implement a link between them.
 
 

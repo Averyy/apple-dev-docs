@@ -1,7 +1,8 @@
 # headTracking
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device supports head tracking for audio spatialization
 

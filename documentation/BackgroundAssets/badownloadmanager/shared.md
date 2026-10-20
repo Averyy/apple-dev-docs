@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The download manager that both the app and the extension share.
 
@@ -19,9 +20,13 @@ The download manager that both the app and the extension share.
 class var shared: BADownloadManager { get }
 ```
 
+```objc
+@property (class, strong, readonly) BADownloadManager * sharedManager;
+```
+
 #### Discussion
 
-Because the download manager is a shared resource, use the `BADownloadManager/withExclusiveControl(_:)` or [`withExclusiveControl(beforeDate:perform:)`](badownloadmanager/withexclusivecontrol(beforedate:perform:).md) methods to acquire exclusive control of the manager before you use it to access, schedule, or cancel downloads.
+Because the download manager is a shared resource, use the `BADownloadManager/withExclusiveControl(_:)` or [`withExclusiveControl(beforeDate:perform:)`](./withexclusivecontrol%28beforedate,perform%29.md) methods to acquire exclusive control of the manager before you use it to access, schedule, or cancel downloads.
 
 
 ---

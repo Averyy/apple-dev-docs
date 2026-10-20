@@ -1,7 +1,8 @@
 # onSuggestionSelected
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A function the system calls when the user selects a suggestion on a search field.
 
@@ -10,17 +11,18 @@ A function the system calls when the user selects a suggestion on a search field
 
 ## Declaration
 
-```swift
+```
 attribute function onSuggestionSelected;
 ```
 
 #### Discussion
 
-Provide a callback function for the [`onSuggestionSelected`](keyboard/3678707-onsuggestionselected.md) attribute to respond to the user selecting one of a `searchField`’s [`suggestions`](keyboard/3589336-suggestions.md). This value of this attribute must be a function; for example, k`eyboard.onSuggestionSelected = function (searchTerm) {}`.
+Provide a callback function for the [`onSuggestionSelected`](./api-3678707-onsuggestionselected.md) attribute to respond to the user selecting one of a `searchField`’s [`suggestions`](./api-3589336-suggestions.md). This value of this attribute must be a function; for example, k`eyboard.onSuggestionSelected = function (searchTerm) {}`.
 
 ## See Also
 
-- [suggestions](keyboard/3589336-suggestions.md)
+### Providing and Handling Search Suggestions
+- [suggestions](./api-3589336-suggestions.md)
   Search parameters to offer as shortcuts.
 
 

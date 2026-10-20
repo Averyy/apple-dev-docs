@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the bound property.
 
@@ -22,7 +23,8 @@ var wrappedValue: Value { get nonmutating set }
 
 ## See Also
 
-- [var projectedValue: FocusState<Value>.Binding](focusstate/binding/projectedvalue.md)
+### Inspecting the binding
+- [var projectedValue: FocusState<Value>.Binding](./projectedvalue.md)
   A projection of the binding value that returns a binding.
 
 

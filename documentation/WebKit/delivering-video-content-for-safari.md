@@ -1,6 +1,7 @@
 # Delivering Video Content for Safari
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: Article
 
 Improve the performance and appearance of video in your website in Safari.
 
@@ -8,9 +9,9 @@ Improve the performance and appearance of video in your website in Safari.
 
 When adding video content to your website you have several playback and optimization options which can help to improve the playback controls and performance of video for the user:
 
-- For video streaming, use HTTP Live Streaming. See [`HTTP Live Streaming`](https://developer.apple.com/documentation/http-live-streaming).
+- For video streaming, use HTTP Live Streaming. See [HTTP Live Streaming](../HTTP-Live-Streaming/HTTP-Live-Streaming.md).
 - For static video files, use H.264-encoded MP4 files.
-- For more customization and control over the loading process, use Media Source Extensions (MSE). See [`Advanced Media for the Web`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2014/504/).
+- For more customization and control over the loading process, use Media Source Extensions (MSE). See [Advanced Media for the Web](https://developer.apple.com/videos/play/wwdc2014/504/).
 
 To deliver video content in your website:
 
@@ -26,9 +27,9 @@ Safari honors the `preload="metadata"` attribute, allowing `<video>` and `<audio
 
 ###### Enable Video Autoplay
 
-Video elements that include `<video autoplay>` play automatically when the video loads in Safari on macOS and iOS, only if those elements also include the  `playsinline` attribute. For more information on inline playback, see [`Enable Inline Video Playback`](delivering-video-content-for-safari#Enable-Inline-Video-Playback.md).
+Video elements that include `<video autoplay>` play automatically when the video loads in Safari on macOS and iOS, only if those elements also include the  `playsinline` attribute. For more information on inline playback, see [Enable Inline Video Playback](./delivering-video-content-for-safari.md#Enable-Inline-Video-Playback).
 
-By default, autoplay executes only if the video doesn’t contain an audio track, or if the video element includes the `muted` attribute. Video playback pauses if the element gains an audio track, becomes unmuted without user interaction, or if the video is no longer onscreen (either by CSS or due to the user scrolling the page). The video doesn’t pause unless the user clicks or taps the video. This same expectation applies to WebRTC one-way video conferencing. For more information on WebRTC playback controls, see [`Add WebRTC Playback Controls`](delivering-video-content-for-safari#Add-WebRTC-Playback-Controls.md).
+By default, autoplay executes only if the video doesn’t contain an audio track, or if the video element includes the `muted` attribute. Video playback pauses if the element gains an audio track, becomes unmuted without user interaction, or if the video is no longer onscreen (either by CSS or due to the user scrolling the page). The video doesn’t pause unless the user clicks or taps the video. This same expectation applies to WebRTC one-way video conferencing. For more information on WebRTC playback controls, see [Add WebRTC Playback Controls](./delivering-video-content-for-safari.md#Add-WebRTC-Playback-Controls).
 
 Autoplay video when the user expects it to autoplay in your website. For example, autoplay video in interfaces where video playback is the purpose of the webpage, like a video-sharing or hosting website.
 
@@ -44,7 +45,7 @@ Low-power mode is available for a video element that is in full screen, against 
 
 Set the CSS property `display:none` for all non-video elements on your webpage while the video is playing, to ensure that low-power mode is enabled for your video element. Then, check that the remaining background behind the video is black.
 
-###### Use Quartz Debug to Test Low Power Regions
+###### Use Quartz Debug to Test Low-Power Regions
 
 To ensure that low-power mode is working correctly, test the efficiency of your web content using the Show Detached Regions feature of Quartz Debug.
 
@@ -52,17 +53,17 @@ First, test on your machine’s built-in or primary monitor, and ensure that you
 
 Then, open the Quartz Debug app. Quartz Debug is part of the Graphics Tools package for Xcode, available from the Mac Developer Portal. In Quartz Debug, choose Tools > Show Detached Regions.
 
-![Enable Show Detached Regions in the Quartz Debug Tools menu.](/images/com.apple.webkit/media-3030255@2x.png)
+![Enable Show Detached Regions in the Quartz Debug Tools menu.](https://developer.apple.com/tutorials/images/com.apple.webkit/media-3030255@2x.png)
 
 This tool places a color overlay on the desktop. Red represents normal power usage (where everything is composited), and no overlay represents low-power usage for video. If the full-screen video display is using low-power mode, the red color overlay disappears.
 
-![A red overlay appears over video content that is not using low-power mode.](/images/com.apple.webkit/media-3030260@2x.png)
+![A red overlay appears over video content that is not using low-power mode.](https://developer.apple.com/tutorials/images/com.apple.webkit/media-3030260@2x.png)
 
 > **Note**:  Use Web Inspector to adjust CSS properties in the browser to see which changes enable low-power mode. Check to see if there are sub-layers attached to the displayed element that contains your video. If there are, adjust your stylesheets with these changes so that there are no sub-layers, then low-power mode can take effect.
 
-If you use `<video controls>`, then in full screen your video will get low-power mode automatically when the controls disappear. If you make your own custom media controls, then make sure everything is hidden when the user is watching the video. Avoid having items such as timelines remain after it’s clear the user is just watching the video. For more information on debugging low-power mode and other media issues, see [`Debugging Media in Web Inspector`](https://developer.apple.comhttps://webkit.org/blog/8923/debugging-media-in-web-inspector/).
+If you use `<video controls>`, then in full screen your video will get low-power mode automatically when the controls disappear. If you make your own custom media controls, then make sure everything is hidden when the user is watching the video. Avoid having items such as timelines remain after it’s clear the user is just watching the video. For more information on debugging low-power mode and other media issues, see [Debugging Media in Web Inspector](https://webkit.org/blog/8923/debugging-media-in-web-inspector/).
 
-###### Use Mp4 Video Instead of Animated Gifs
+###### Use MP4 Video Instead of Animated GIFs
 
 GIFs can be up to 12 times as expensive in bandwidth and twice as expensive in energy use when compared to a modern video codec. Instead, use H.264-encoded MP4 files for animations; for example:
 
@@ -92,15 +93,15 @@ When you want to display short-form content, it is more optimal to play your vid
 
 Without the `playsinline` attribute, videos must be in full-screen mode for playback on iPhone. If videos do play in full-screen mode, they will continue to play inline when the user exits full-screen mode, even if the video element doesn’t contain the `playsinline` property.
 
-###### Enable Full Screen Video Playback
+###### Enable Full-Screen Video Playback
 
 When you want to display long-form content, it is more optimal to display your video in full-screen mode. On iPhone, when users play a video, they enter full screen automatically, unless inline playback has been explicitly specified. For all other platforms, if you use the video element’s default playback controls, the full-screen button is always available.
 
-If, however, you want to add custom playback controls to your video element, you can specify custom UI controls that trigger full-screen behavior. To enter or exit full-screen mode, use [`webkitEnterFullscreen`](https://developer.apple.com/documentation/webkitjs/htmlvideoelement/1633500-webkitenterfullscreen) and [`webkitExitFullscreen`](https://developer.apple.com/documentation/webkitjs/htmlvideoelement/1629468-webkitexitfullscreen).
+If, however, you want to add custom playback controls to your video element, you can specify custom UI controls that trigger full-screen behavior. To enter or exit full-screen mode, use [`webkitEnterFullscreen`](../webkitjs/htmlvideoelement/api-1633500-webkitenterfullscreen.md) and [`webkitExitFullscreen`](../webkitjs/htmlvideoelement/api-1629468-webkitexitfullscreen.md).
 
-To see all full-screen functions in the API, see Displaying Video Fullscreen. To add additional playback controls for Picture in Picture and AirPlay, see [`Adding Picture in Picture to your Safari media controls`](https://developer.apple.com/documentation/webkitjs/adding_picture_in_picture_to_your_safari_media_controls) and [`Adding an AirPlay button to your Safari media controls`](https://developer.apple.com/documentation/webkitjs/adding_an_airplay_button_to_your_safari_media_controls).
+To see all full-screen functions in the API, see Displaying Video Fullscreen. To add additional playback controls for Picture in Picture and AirPlay, see [Adding Picture in Picture to your Safari media controls](../webkitjs/adding_picture_in_picture_to_your_safari_media_controls.md) and [Adding an AirPlay button to your Safari media controls](../webkitjs/adding_an_airplay_button_to_your_safari_media_controls.md).
 
-###### Add Webrtc Playback Controls
+###### Add WebRTC Playback Controls
 
 WebRTC is also available for video broadcasting and conferencing in Safari. There is an expectation when joining a conference or webinar, that any remote video autoplays.
 
@@ -108,17 +109,19 @@ For a two-way video conference, video automatically plays after the user accepts
 
 However, for a one-way video conferencing scenario, such as a webinar, the user does not give explicit permission to the camera. Without a user gesture to indicate playback, the video cannot start. Add a play button to your media controls for one-way WebRTC experiences, so the user can start the video.
 
-For more details on WebRTC, see [`Announcing WebRTC and Media Capture`](https://developer.apple.comhttps://webkit.org/blog/7726/announcing-webrtc-and-media-capture/) and [`A Closer Look into WebRTC`](https://developer.apple.comhttps://webkit.org/blog/7763/a-closer-look-into-webrtc/).
+For more details on WebRTC, see [Announcing WebRTC and Media Capture](https://webkit.org/blog/7726/announcing-webrtc-and-media-capture/) and [A Closer Look into WebRTC](https://webkit.org/blog/7763/a-closer-look-into-webrtc/).
 
 ## See Also
 
+### Related Documentation
 - [Adding an AirPlay button to your Safari media controls](../webkitjs/adding_an_airplay_button_to_your_safari_media_controls.md)
   Create a custom control that adds AirPlay to your Safari media player. 
 - [Adding Picture in Picture to your Safari media controls](../webkitjs/adding_picture_in_picture_to_your_safari_media_controls.md)
   Create a custom control that adds Picture in Picture to your Safari media player. 
-- [Optimizing Your Website for Safari](optimizing-your-website-for-safari.md)
+### Safari Support
+- [Optimizing Your Website for Safari](./optimizing-your-website-for-safari.md)
   Improve your website by optimizing it for Safari.
-- [Promoting Apps with Smart App Banners](promoting-apps-with-smart-app-banners.md)
+- [Promoting Apps with Smart App Banners](./promoting-apps-with-smart-app-banners.md)
   Create a banner to promote your app on the App Store from a website.
 
 

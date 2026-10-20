@@ -1,7 +1,8 @@
 # postDecodeProcessingSequenceMetadata
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+

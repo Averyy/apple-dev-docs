@@ -1,7 +1,8 @@
 # init(switchMetaParameterDefinition:identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named node that invokes a child node based on the value of the given parameter.
 
@@ -19,6 +20,10 @@ Creates a named node that invokes a child node based on the value of the given p
 convenience init(switchMetaParameterDefinition: PHASEStringMetaParameterDefinition, identifier: String)
 ```
 
+```objc
+- (instancetype) initWithSwitchMetaParameterDefinition:(PHASEStringMetaParameterDefinition *) switchMetaParameterDefinition identifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `switchMetaParameterDefinition`: A string meta parameter that specifies the child node identifier to pass invocation on to.
@@ -26,7 +31,8 @@ convenience init(switchMetaParameterDefinition: PHASEStringMetaParameterDefiniti
 
 ## See Also
 
-- [init(switchMetaParameterDefinition: PHASEStringMetaParameterDefinition)](phaseswitchnodedefinition/init(switchmetaparameterdefinition:).md)
+### Creating a Node
+- [init(switchMetaParameterDefinition: PHASEStringMetaParameterDefinition)](./init%28switchmetaparameterdefinition%29.md)
   Creates a node that invokes a child node based on the value of the given parameter.
 
 

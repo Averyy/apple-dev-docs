@@ -7,7 +7,7 @@ TCP/IP checksums that may be supported by the hardware.
 
 ## Declaration
 
-```swift
+```c
 enum {
    kChecksumFamilyTCPIP = 0x00000001,
    kChecksumIP = 0x0001,
@@ -28,15 +28,15 @@ Checksums
 ## Topics
 
 ### Constants
-- [kChecksumFamilyTCPIP](ionetworkcontroller/tcp_ip/kchecksumfamilytcpip.md)
-- [kChecksumIP](ionetworkcontroller/tcp_ip/kchecksumip.md)
-- [kChecksumTCP](ionetworkcontroller/tcp_ip/kchecksumtcp.md)
-- [kChecksumUDP](ionetworkcontroller/tcp_ip/kchecksumudp.md)
-- [kChecksumTCPIPv6](ionetworkcontroller/tcp_ip/kchecksumtcpipv6.md)
-- [kChecksumUDPIPv6](ionetworkcontroller/tcp_ip/kchecksumudpipv6.md)
-- [kChecksumTCPNoPseudoHeader](ionetworkcontroller/tcp_ip/kchecksumtcpnopseudoheader.md)
-- [kChecksumUDPNoPseudoHeader](ionetworkcontroller/tcp_ip/kchecksumudpnopseudoheader.md)
-- [kChecksumTCPSum16](ionetworkcontroller/tcp_ip/kchecksumtcpsum16.md)
+- [kChecksumFamilyTCPIP](./tcp_ip/kchecksumfamilytcpip.md)
+- [kChecksumIP](./tcp_ip/kchecksumip.md)
+- [kChecksumTCP](./tcp_ip/kchecksumtcp.md)
+- [kChecksumUDP](./tcp_ip/kchecksumudp.md)
+- [kChecksumTCPIPv6](./tcp_ip/kchecksumtcpipv6.md)
+- [kChecksumUDPIPv6](./tcp_ip/kchecksumudpipv6.md)
+- [kChecksumTCPNoPseudoHeader](./tcp_ip/kchecksumtcpnopseudoheader.md)
+- [kChecksumUDPNoPseudoHeader](./tcp_ip/kchecksumudpnopseudoheader.md)
+- [kChecksumTCPSum16](./tcp_ip/kchecksumtcpsum16.md)
 
 
 ---

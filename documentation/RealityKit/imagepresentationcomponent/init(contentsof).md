@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new component by loading a monoscopic texture and (if present) a pair of spatial textures from the provided image file URL.
 
@@ -16,11 +17,12 @@ init(contentsOf url: URL) async throws
 
 #### Discussion
 
-> **Note**: Throws an error if it is not possible to load even a monoscopic texture from the image file.
+> **Throws**: Throws an error if it is not possible to load even a monoscopic texture from the image file.
 
 ## See Also
 
-- [init(imageSource: CGImageSource) async throws](imagepresentationcomponent/init(imagesource:).md)
+### Creating a component from a 2D image or spatial photo
+- [init(imageSource: CGImageSource) async throws](./init%28imagesource%29.md)
   Creates a new component by loading a monoscopic texture and (if present) a pair of spatial textures from the provided image source.
 
 

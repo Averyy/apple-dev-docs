@@ -1,7 +1,8 @@
 # paymentPass
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payment pass object currently selected to complete the payment.
 
@@ -11,19 +12,20 @@ The payment pass object currently selected to complete the payment.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentPass paymentPass;
 ```
 
 ## See Also
 
-- [displayName](applepaypaymentmethod/displayname.md)
+### Accessing payment method data
+- [displayName](./displayname.md)
   A string, suitable for display, that describes the card.
-- [network](applepaypaymentmethod/network.md)
+- [network](./network.md)
   A string, suitable for display, that is the name of the payment network backing the card.
-- [type](applepaypaymentmethod/type.md)
+- [type](./type.md)
   A string value representing the card’s type of payment.
-- [billingContact](applepaypaymentmethod/billingcontact.md)
+- [billingContact](./billingcontact.md)
   The billing contact associated with the card.
 
 

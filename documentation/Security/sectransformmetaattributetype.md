@@ -1,12 +1,15 @@
 # SecTransformMetaAttributeType
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The keys that describe the metadata attributes of transform attributes.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,47 +17,51 @@ The keys that describe the metadata attributes of transform attributes.
 enum SecTransformMetaAttributeType
 ```
 
+```c
+enum SecTransformMetaAttributeType : CFIndex;
+```
+
 #### Overview
 
-Use one of these values as the `type` parameter in a call to the [`SecTransformCustomSetAttribute(_:_:_:_:)`](sectransformcustomsetattribute(_:_:_:_:).md) or [`SecTransformCustomGetAttribute(_:_:_:)`](sectransformcustomgetattribute(_:_:_:).md) function. These values allow you to access not only the value of an attribute, as you would do directly with calls the [`SecTransformSetAttribute(_:_:_:_:)`](sectransformsetattribute(_:_:_:_:).md) or [`SecTransformGetAttribute(_:_:)`](sectransformgetattribute(_:_:).md) function, but also the metadata associated with that attribute, such as the name of an attribute, or whether it is required to have a value.
+Use one of these values as the `type` parameter in a call to the [`SecTransformCustomSetAttribute(_:_:_:_:)`](./sectransformcustomsetattribute%28_,_,_,_%29.md) or [`SecTransformCustomGetAttribute(_:_:_:)`](./sectransformcustomgetattribute%28_,_,_%29.md) function. These values allow you to access not only the value of an attribute, as you would do directly with calls the [`SecTransformSetAttribute(_:_:_:_:)`](./sectransformsetattribute%28_,_,_,_%29.md) or [`SecTransformGetAttribute(_:_:)`](./sectransformgetattribute%28_,_%29.md) function, but also the metadata associated with that attribute, such as the name of an attribute, or whether it is required to have a value.
 
 ## Topics
 
 ### Constants
-- [SecTransformMetaAttributeType.canCycle](sectransformmetaattributetype/cancycle.md)
+- [SecTransformMetaAttributeType.canCycle](./sectransformmetaattributetype/cancycle.md)
   The transform allows cyclic behavior.
-- [SecTransformMetaAttributeType.deferred](sectransformmetaattributetype/deferred.md)
+- [SecTransformMetaAttributeType.deferred](./sectransformmetaattributetype/deferred.md)
   The attribute defers notifications.
-- [SecTransformMetaAttributeType.externalize](sectransformmetaattributetype/externalize.md)
+- [SecTransformMetaAttributeType.externalize](./sectransformmetaattributetype/externalize.md)
   The attribute is exportable.
-- [SecTransformMetaAttributeType.hasInboundConnection](sectransformmetaattributetype/hasinboundconnection.md)
+- [SecTransformMetaAttributeType.hasInboundConnection](./sectransformmetaattributetype/hasinboundconnection.md)
   The attribute has an inbound connection.
-- [SecTransformMetaAttributeType.hasOutboundConnections](sectransformmetaattributetype/hasoutboundconnections.md)
+- [SecTransformMetaAttributeType.hasOutboundConnections](./sectransformmetaattributetype/hasoutboundconnections.md)
   The attribute has an outbound connection.
-- [SecTransformMetaAttributeType.name](sectransformmetaattributetype/name.md)
+- [SecTransformMetaAttributeType.name](./sectransformmetaattributetype/name.md)
   The name of the attribute.
-- [SecTransformMetaAttributeType.ref](sectransformmetaattributetype/ref.md)
+- [SecTransformMetaAttributeType.ref](./sectransformmetaattributetype/ref.md)
   A direct reference to an attribute’s value.
-- [SecTransformMetaAttributeType.required](sectransformmetaattributetype/required.md)
+- [SecTransformMetaAttributeType.required](./sectransformmetaattributetype/required.md)
   Indicates whether the attribute value is optional.
-- [SecTransformMetaAttributeType.requiresOutboundConnection](sectransformmetaattributetype/requiresoutboundconnection.md)
+- [SecTransformMetaAttributeType.requiresOutboundConnection](./sectransformmetaattributetype/requiresoutboundconnection.md)
   The attribute requires an outbound connection.
-- [SecTransformMetaAttributeType.stream](sectransformmetaattributetype/stream.md)
+- [SecTransformMetaAttributeType.stream](./sectransformmetaattributetype/stream.md)
   The attribute expects stream operation.
-- [SecTransformMetaAttributeType.value](sectransformmetaattributetype/value.md)
+- [SecTransformMetaAttributeType.value](./sectransformmetaattributetype/value.md)
   The actual value of the attribute.
 ### Initializers
-- [init?(rawValue: CFIndex)](sectransformmetaattributetype/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./sectransformmetaattributetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

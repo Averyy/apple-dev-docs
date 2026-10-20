@@ -1,7 +1,8 @@
 # CKQuery
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query that describes the criteria to apply when searching for records in a database.
 
@@ -10,7 +11,7 @@ A query that describes the criteria to apply when searching for records in a dat
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,42 +21,52 @@ A query that describes the criteria to apply when searching for records in a dat
 class CKQuery
 ```
 
+```objc
+@interface CKQuery : NSObject
+```
+
 #### Overview
 
-You create a query as the first step in the search process. The query stores the search parameters, including the type of records to search, the match criteria (predicate) to apply, and the sort parameters to apply to the results. Then you use the query to initialize an instance of [`CKQueryOperation`](ckqueryoperation.md), which you execute to generate the results.
+You create a query as the first step in the search process. The query stores the search parameters, including the type of records to search, the match criteria (predicate) to apply, and the sort parameters to apply to the results. Then you use the query to initialize an instance of [`CKQueryOperation`](./ckqueryoperation.md), which you execute to generate the results.
 
 Always designate a record type and predicate when you create a query object. The record type narrows the scope of the search to one type of record, and the predicate defines the conditions for matching records of that type. Predicates usually compare one or more fields of a record to constant values, but you can create predicates that return all records of a specific type or perform more nuanced searches.
 
-Because you can’t change the record type and predicate after initialization, you can use the same query to initialize multiple instances of [`CKQueryOperation`](ckqueryoperation.md), each of which targets a different database or record zone.
+Because you can’t change the record type and predicate after initialization, you can use the same query to initialize multiple instances of [`CKQueryOperation`](./ckqueryoperation.md), each of which targets a different database or record zone.
 
 ##### Building Your Predicates
 
-An [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object defines the logical conditions for determining whether a record is a match for a query. Queries support only a subset of the predicate behaviors that the `NSPredicate` class offers.
+An [`NSPredicate`](../Foundation/nspredicate.md) object defines the logical conditions for determining whether a record is a match for a query. Queries support only a subset of the predicate behaviors that the `NSPredicate` class offers.
 
 ###### Predicate Rules for Query Objects
 
 The predicates you create for your query objects must follow these rules:
 
 - Predicates derive from a format string. You can’t use value or block-based predicates.
-- Predicates use only the operators in [`Supported Predicate Operators`](ckquery#Supported-Predicate-Operators.md).
-- Predicates operate only on fields that contain the following types of data: - [`NSString`](https://developer.apple.com/documentation/foundation/nsstring)
-- [`NSData`](https://developer.apple.com/documentation/foundation/nsdata)
-- [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate)
-- [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)
-- [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray)
-- [`CKRecord.Reference`](ckrecord/reference.md)
-- [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation)
+- Predicates use only the operators in [Supported Predicate Operators](./ckquery.md#Supported-Predicate-Operators).
+- Predicates operate only on fields that contain the following types of data:
+
+  - [`NSString`](../Foundation/nsstring.md)
+  - [`NSData`](../Foundation/nsdata.md)
+  - [`NSDate`](../Foundation/nsdate.md)
+  - [`NSNumber`](../Foundation/nsnumber.md)
+  - [`NSArray`](../Foundation/nsarray.md)
+  - [`CKRecord.Reference`](./ckrecord/reference.md)
+  - [`CLLocation`](../CoreLocation/cllocation.md)
 - Key names in predicates correspond to fields in the currently evaluated record. Key names can include the names of the record’s metadata properties, such as `creationDate`, or any data fields you add to the record. You can’t use key paths to specify fields in related records.
-- Predicates support the following variable substitution strings: - Use `%@` for value objects, such as strings, numbers, and dates.
-- Use `%K` for the name of a field. This substitution variable indicates that the system uses the substitution string to look up a field name.
+- Predicates support the following variable substitution strings:
+
+  - Use `%@` for value objects, such as strings, numbers, and dates.
+  - Use `%K` for the name of a field. This substitution variable indicates that the system uses the substitution string to look up a field name.
 - With one exception, the `CONTAINS` operator is only for testing list membership. The exception is when you use it to perform full-text searches in conjunction with the `self` key path. The `self` key path causes the server to look in searchable string-based fields for the specified token string. For example, a predicate string of `@"self contains 'blue'"` searches for the word *blue* in all fields that you mark for inclusion in full-text searches. You can’t use the `self` key path to search in fields with a type that isn’t a string.
 - You can combine the `ANY` and `SOME` aggregate operators with the `IN` and `CONTAINS` operators to perform list membership tests.
 - The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
 - CloudKit doesn’t support the `ALL` aggregate operator.
-- CloudKit doesn’t support the `NOT` compound operator in the following cases: - You can’t use it to negate an `AND` compound predicate.
-- You can’t use it in tokenized queries, such as `self CONTAINS 'value'`.
-- You can’t use it with the `distanceToLocation:fromLocation:` function.
-- You can’t use it in `BETWEEN` queries.
+- CloudKit doesn’t support the `NOT` compound operator in the following cases:
+
+  - You can’t use it to negate an `AND` compound predicate.
+  - You can’t use it in tokenized queries, such as `self CONTAINS 'value'`.
+  - You can’t use it with the `distanceToLocation:fromLocation:` function.
+  - You can’t use it in `BETWEEN` queries.
 
 ###### Supported Predicate Operators
 
@@ -63,18 +74,18 @@ The following table lists the operators you can use in predicates for a query.
 
 | Operation | Supported operators |
 | --- | --- |
-| Basic comparisons | `=`, `==` ![None](/images/com.apple.cloudkit/spacer.png) `>=`, `=>` ![None](/images/com.apple.cloudkit/spacer.png) `<=`, `=<` ![None](/images/com.apple.cloudkit/spacer.png) `<` ![None](/images/com.apple.cloudkit/spacer.png) `>` ![None](/images/com.apple.cloudkit/spacer.png) `!=`, `<>` ![None](/images/com.apple.cloudkit/spacer.png) `BETWEEN` |
-| Boolean value predicates | `TRUEPREDICATE` ![None](/images/com.apple.cloudkit/spacer.png) `FALSEPREDICATE` |
-| Basic compound predicates | `AND`, `&&` ![None](/images/com.apple.cloudkit/spacer.png) `NOT` |
+| Basic comparisons | `=`, `==` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `>=`, `=>` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `<=`, `=<` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `<` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `>` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `!=`, `<>` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `BETWEEN` |
+| Boolean value predicates | `TRUEPREDICATE` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `FALSEPREDICATE` |
+| Basic compound predicates | `AND`, `&&` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `NOT` |
 | String comparisons | `BEGINSWITH` |
-| Aggregate operations | `IN` ![None](/images/com.apple.cloudkit/spacer.png) `CONTAINS` |
-| Functions | `distanceToLocation:fromLocation:` ![None](/images/com.apple.cloudkit/spacer.png) `now` ![None](/images/com.apple.cloudkit/spacer.png) `tokenize:using:` |
+| Aggregate operations | `IN` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `CONTAINS` |
+| Functions | `distanceToLocation:fromLocation:` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `now` ![](https://developer.apple.com/tutorials/images/com.apple.cloudkit/spacer.png) `tokenize:using:` |
 
-Specifying an unsupported operator or data type in your query’s predicate results in an error when you execute the query. For more information about creating predicate objects, see [`Predicate Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
+Specifying an unsupported operator or data type in your query’s predicate results in an error when you execute the query. For more information about creating predicate objects, see [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
 
 ###### Sample Predicate Format Strings
 
-To match records that link to a different record with an ID you know, create a predicate that matches a field that contains a reference as Listing 1 shows. In the example, the `employee` field of the record contains a [`CKRecord.Reference`](ckrecord/reference.md) object that points to another record. When CloudKit executes the query, a match occurs when the ID in the locally-created [`CKRecord.Reference`](ckrecord/reference.md) object is the same ID as in the specified field of the record.
+To match records that link to a different record with an ID you know, create a predicate that matches a field that contains a reference as Listing 1 shows. In the example, the `employee` field of the record contains a [`CKRecord.Reference`](./ckrecord/reference.md) object that points to another record. When CloudKit executes the query, a match occurs when the ID in the locally-created [`CKRecord.Reference`](./ckrecord/reference.md) object is the same ID as in the specified field of the record.
 
 Listing 1. Matching the ID of a record
 
@@ -136,7 +147,7 @@ NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"self contains 'bob' AND self contains 'smith'"];
 ```
 
-To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
+To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a [`CLLocation`](../CoreLocation/cllocation.md) object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
 
 Listing 7. Matching by distance from a location
 
@@ -158,7 +169,7 @@ NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
 ```
 
-##### Indexes and Full Text Search
+##### Indexes and Full-Text Search
 
 Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database, and require time to generate and maintain. So when migrating to a production environment, remove the indexes for any fields that you don’t use in queries.
 
@@ -181,48 +192,49 @@ In a full-text search, CloudKit ignores the following words if they appear in th
 
 To execute a query, do one of the following:
 
-- Create an instance of [`CKQueryOperation`](ckqueryoperation.md) using your query. Run the operation directly or add it to an operation queue to perform the query and deliver the results.
-- Call the [`perform(_:inZoneWith:completionHandler:)`](ckdatabase/perform(_:inzonewith:completionhandler:).md) method of [`CKDatabase`](ckdatabase.md) to execute the query. Process the results in your completion handler.
+- Create an instance of [`CKQueryOperation`](./ckqueryoperation.md) using your query. Run the operation directly or add it to an operation queue to perform the query and deliver the results.
+- Call the [`perform(_:inZoneWith:completionHandler:)`](./ckdatabase/perform%28_,inzonewith,completionhandler%29.md) method of [`CKDatabase`](./ckdatabase.md) to execute the query. Process the results in your completion handler.
 
 Queries always run asynchronously and deliver results to a completion handler that you provide.
 
 ## Topics
 
 ### Creating a Query
-- [init(coder: NSCoder)](ckquery/init(coder:).md)
+- [init(coder: NSCoder)](./ckquery/init%28coder%29.md)
   Creates a query from a serialized instance.
-- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](ckquery/init(recordtype:predicate:).md)
+- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](./ckquery/init%28recordtype,predicate%29.md)
   Creates a query with the specified record type and predicate.
 ### Accessing the Query Parameters
-- [var recordType: CKRecord.RecordType](ckquery/recordtype-6ajii.md)
+- [var recordType: CKRecord.RecordType](./ckquery/recordtype-6ajii.md)
   The record type to search.
-- [var predicate: NSPredicate](ckquery/predicate.md)
+- [var predicate: NSPredicate](./ckquery/predicate.md)
   The predicate to use for matching records.
-- [var sortDescriptors: [NSSortDescriptor]?](ckquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]?](./ckquery/sortdescriptors.md)
   The sort descriptors for organizing the query’s results.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKQueryOperation](ckqueryoperation.md)
+### Queries
+- [class CKQueryOperation](./ckqueryoperation.md)
   An operation for executing queries in a database.
-- [class CKLocationSortDescriptor](cklocationsortdescriptor.md)
+- [class CKLocationSortDescriptor](./cklocationsortdescriptor.md)
   An object for sorting records that contain location data.
 
 

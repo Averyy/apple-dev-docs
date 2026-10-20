@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns by reference a C array of objects over which the sender should iterate, and as the return value the number of objects in the array.
@@ -19,6 +20,10 @@ Returns by reference a C array of objects over which the sender should iterate, 
 
 ```swift
 func countByEnumerating(with state: UnsafeMutablePointer<NSFastEnumerationState>, objects buffer: AutoreleasingUnsafeMutablePointer<AnyObject?>, count len: Int) -> Int
+```
+
+```objc
+- (NSUInteger) countByEnumeratingWithState:(NSFastEnumerationState *) state objects:(id[]) buffer count:(NSUInteger) len;
 ```
 
 #### Return Value

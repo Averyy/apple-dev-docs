@@ -1,7 +1,8 @@
 # ExtAudioFileCreateWithURL(_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new audio file and associates it with a new extended audio file object.
 
@@ -19,6 +20,10 @@ Creates a new audio file and associates it with a new extended audio file object
 func ExtAudioFileCreateWithURL(_ inURL: CFURL, _ inFileType: AudioFileTypeID, _ inStreamDesc: UnsafePointer<AudioStreamBasicDescription>, _ inChannelLayout: UnsafePointer<AudioChannelLayout>?, _ inFlags: UInt32, _ outExtAudioFile: UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus
 ```
 
+```c
+extern OSStatus ExtAudioFileCreateWithURL(CFURLRef inURL, AudioFileTypeID inFileType, const AudioStreamBasicDescription *inStreamDesc, const AudioChannelLayout *inChannelLayout, UInt32 inFlags, ExtAudioFileRef*outExtAudioFile);
+```
+
 #### Return Value
 
 A result code.
@@ -30,19 +35,20 @@ If the file to be created is in a compressed format, you may set the sample rate
 ## Parameters
 
 - `inURL`: The URL of the new audio file.
-- `inFileType`: The type of file to create, specified as a constant from the [`AudioFileTypeID`](audiofiletypeid.md) enumeration.
+- `inFileType`: The type of file to create, specified as a constant from the [`AudioFileTypeID`](./audiofiletypeid.md) enumeration.
 - `inStreamDesc`: The format of the audio data to be written to the file.
 - `inChannelLayout`: The channel layout of the audio data. If non-null, this must be consistent with the number of channels specified by the `inStreamDesc` parameter.
-- `inFlags`: Flags for creating or opening the file. If the [`eraseFile`](audiofileflags/erasefile.md) flag is set, it erases an existing file. If the flag is not set, the function fails fails if the URL points to an existing file.
+- `inFlags`: Flags for creating or opening the file. If the [`eraseFile`](./audiofileflags/erasefile.md) flag is set, it erases an existing file. If the flag is not set, the function fails fails if the URL points to an existing file.
 - `outExtAudioFile`: On output, a newly allocated extended audio file object.
 
 ## See Also
 
-- [func ExtAudioFileDispose(ExtAudioFileRef) -> OSStatus](extaudiofiledispose(_:).md)
+### Managing Extended Audio File Objects
+- [func ExtAudioFileDispose(ExtAudioFileRef) -> OSStatus](./extaudiofiledispose%28_%29.md)
   Disposes of an extended audio file object and closes the associated file.
-- [func ExtAudioFileOpenURL(CFURL, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](extaudiofileopenurl(_:_:).md)
+- [func ExtAudioFileOpenURL(CFURL, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](./extaudiofileopenurl%28_,_%29.md)
   Opens an existing audio file for reading, and associates it with a new extended audio file object.
-- [func ExtAudioFileWrapAudioFileID(AudioFileID, Bool, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](extaudiofilewrapaudiofileid(_:_:_:).md)
+- [func ExtAudioFileWrapAudioFileID(AudioFileID, Bool, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](./extaudiofilewrapaudiofileid%28_,_,_%29.md)
   Wraps an audio file object in an extended audio file object.
 
 

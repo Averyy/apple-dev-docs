@@ -1,7 +1,8 @@
 # activeStateIdentifier
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the template’s current voice control state.
 
@@ -16,9 +17,14 @@ The identifier of the template’s current voice control state.
 var activeStateIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * activeStateIdentifier;
+```
+
 ## See Also
 
-- [func activateVoiceControlState(withIdentifier: String)](cpvoicecontroltemplate/activatevoicecontrolstate(withidentifier:).md)
+### Activating a State
+- [func activateVoiceControlState(withIdentifier: String)](./activatevoicecontrolstate%28withidentifier%29.md)
   Changes the template’s state to the one matching the specified identifier.
 
 

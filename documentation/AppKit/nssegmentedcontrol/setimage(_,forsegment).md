@@ -1,12 +1,13 @@
 # setImage(_:forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the image for the specified segment.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,18 +15,23 @@ Sets the image for the specified segment.
 func setImage(_ image: NSImage?, forSegment segment: Int)
 ```
 
+```objc
+- (void) setImage:(NSImage *) image forSegment:(NSInteger) segment;
+```
+
 ## Parameters
 
 - `image`: The image to apply to the segment or `nil` if you want to clear the existing image. Images are not scaled to fit inside a segment. If the image is larger than the available space, it is clipped.
-- `segment`: The index of the segment whose image you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
+- `segment`: The index of the segment whose image you want to set. This method raises an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) if the index is out of bounds.
 
 ## See Also
 
-- [func image(forSegment: Int) -> NSImage?](nssegmentedcontrol/image(forsegment:).md)
+### Configuring a segment image
+- [func image(forSegment: Int) -> NSImage?](./image%28forsegment%29.md)
   Returns the image associated with the specified segment.
-- [func setImageScaling(NSImageScaling, forSegment: Int)](nssegmentedcontrol/setimagescaling(_:forsegment:).md)
+- [func setImageScaling(NSImageScaling, forSegment: Int)](./setimagescaling%28_,forsegment%29.md)
   Sets the scaling mode used to display the specified segment’s image.
-- [func imageScaling(forSegment: Int) -> NSImageScaling](nssegmentedcontrol/imagescaling(forsegment:).md)
+- [func imageScaling(forSegment: Int) -> NSImageScaling](./imagescaling%28forsegment%29.md)
   Returns the scaling mode used to display the specified segment’s image.
 
 

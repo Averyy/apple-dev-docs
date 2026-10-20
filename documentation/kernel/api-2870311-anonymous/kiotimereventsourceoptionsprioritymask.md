@@ -1,14 +1,15 @@
 # kIOTimerEventSourceOptionsPriorityMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kIOTimerEventSourceOptionsPriorityMask = 0x000000ff
 ```
 

@@ -1,14 +1,15 @@
 # IFNET_LRO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_LRO = 0x10000000
 ```
 

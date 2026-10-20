@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the row is selected.
 
@@ -14,13 +15,18 @@ Determines whether the row is selected.
 var isSelected: Bool { get set }
 ```
 
+```objc
+@property (getter=isSelected) BOOL selected;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if selected, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if selected, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var selectionHighlightStyle: NSTableView.SelectionHighlightStyle](nstablerowview/selectionhighlightstyle.md)
+### Row Selection
+- [var selectionHighlightStyle: NSTableView.SelectionHighlightStyle](./selectionhighlightstyle.md)
   Specifies the selection highlight style.
 
 

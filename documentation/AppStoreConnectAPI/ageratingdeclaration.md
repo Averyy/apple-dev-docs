@@ -1,7 +1,8 @@
 # AgeRatingDeclaration
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A set of content descriptors for your app that App Store Connect uses to assign an age rating.
 
@@ -10,19 +11,19 @@ A set of content descriptors for your app that App Store Connect uses to assign 
 
 ## Declaration
 
-```swift
+```
 object AgeRatingDeclaration
 ```
 
 ## Mentions
 
-- [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
-- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+- [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
+- [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
 
 ## Topics
 
 ### Objects
-- [object AgeRatingDeclaration.Attributes](ageratingdeclaration/attributes-data.dictionary.md)
+- [object AgeRatingDeclaration.Attributes](./ageratingdeclaration/attributes-data.dictionary.md)
   Attributes that describe an Age Rating Declarations resource.
 
 ## Properties
@@ -32,24 +33,27 @@ object AgeRatingDeclaration
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ageRatingDeclarations`
+
 ## See Also
 
-- [object AgeRatingDeclarationResponse](ageratingdeclarationresponse.md)
+### Objects and data types
+- [object AgeRatingDeclarationResponse](./ageratingdeclarationresponse.md)
   A response containing a single age rating declaration with your app’s content descriptors.
-- [object AgeRatingDeclarationUpdateRequest](ageratingdeclarationupdaterequest.md)
+- [object AgeRatingDeclarationUpdateRequest](./ageratingdeclarationupdaterequest.md)
   The request body you use to update an Age Rating Declaration.
-- [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
-- [object AppInfoTerritoryAgeRatingsLinkagesResponse](appinfoterritoryageratingslinkagesresponse.md)
+- [object AppInfoAgeRatingDeclarationLinkageResponse](./appinfoageratingdeclarationlinkageresponse.md)
+- [object AppInfoTerritoryAgeRatingsLinkagesResponse](./appinfoterritoryageratingslinkagesresponse.md)
   A response containing the resource identifiers of territory-specific age ratings for an app info record.
-- [type AppStoreAgeRating](appstoreagerating.md)
+- [type AppStoreAgeRating](./appstoreagerating.md)
   A string that represents the app’s age rating as it appears on the App Store for all platforms.
-- [type BrazilAgeRating](brazilagerating.md)
+- [type BrazilAgeRating](./brazilagerating.md)
   String that represents the app’s age rating as it appears on the App Store in Brazil for all platforms.
-- [type KidsAgeBand](kidsageband.md)
+- [type KidsAgeBand](./kidsageband.md)
   String that represents the age band for a Made for Kids app.
-- [object TerritoryAgeRating](territoryagerating.md)
+- [object TerritoryAgeRating](./territoryagerating.md)
   The data structure that represent a territory age-rating resource.
-- [object TerritoryAgeRatingsResponse](territoryageratingsresponse.md)
+- [object TerritoryAgeRatingsResponse](./territoryageratingsresponse.md)
   A response containing a list of age ratings assigned to an app across App Store territories.
 
 

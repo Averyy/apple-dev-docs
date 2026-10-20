@@ -1,7 +1,8 @@
 # document
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app entity describes a document.
 
@@ -50,7 +51,7 @@ struct ReaderDocumentEntity: AppEntity {
 }
 ```
 
-For more information about the `.reader` app intent domain, see [`Reader`](app-schema-domain-reader.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.reader` app intent domain, see [Reader](../../app-schema-domain-reader.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # kSKMinTermLength
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The minimum term length to index. Specified as a CFNumber object. If this optional key is not present, Search Kit indexing defaults to a minimum term length of 1.
 
@@ -12,6 +13,10 @@ The minimum term length to index. Specified as a CFNumber object. If this option
 
 ```swift
 let kSKMinTermLength: CFString!
+```
+
+```c
+const CFStringRef kSKMinTermLength;
 ```
 
 

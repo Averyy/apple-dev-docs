@@ -1,7 +1,8 @@
 # Decoder
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can decode values from a native format into in-memory representations.
 
@@ -23,25 +24,26 @@ protocol Decoder
 ## Topics
 
 ### Instance Properties
-- [var codingPath: [any CodingKey]](decoder/codingpath.md)
+- [var codingPath: [any CodingKey]](./decoder/codingpath.md)
   The path of coding keys taken to get to this point in decoding.
-- [var userInfo: [CodingUserInfoKey : Any]](decoder/userinfo.md)
+- [var userInfo: [CodingUserInfoKey : Any]](./decoder/userinfo.md)
   Any contextual information set by the user for decoding.
 ### Instance Methods
-- [func container<Key>(keyedBy: Key.Type) throws -> KeyedDecodingContainer<Key>](decoder/container(keyedby:).md)
+- [func container<Key>(keyedBy: Key.Type) throws -> KeyedDecodingContainer<Key>](./decoder/container%28keyedby%29.md)
   Returns the data stored in this decoder as represented in a container keyed by the given key type.
-- [func singleValueContainer() throws -> any SingleValueDecodingContainer](decoder/singlevaluecontainer.md)
+- [func singleValueContainer() throws -> any SingleValueDecodingContainer](./decoder/singlevaluecontainer%28%29.md)
   Returns the data stored in this decoder as represented in a container appropriate for holding a single primitive value.
-- [func unkeyedContainer() throws -> any UnkeyedDecodingContainer](decoder/unkeyedcontainer.md)
+- [func unkeyedContainer() throws -> any UnkeyedDecodingContainer](./decoder/unkeyedcontainer%28%29.md)
   Returns the data stored in this decoder as represented in a container appropriate for holding values with no keys.
 
 ## See Also
 
-- [protocol Encoder](encoder.md)
+### Encoders and Decoders
+- [protocol Encoder](./encoder.md)
   A type that can encode values into a native format for external representation.
-- [enum EncodingError](encodingerror.md)
+- [enum EncodingError](./encodingerror.md)
   An error that occurs during the encoding of a value.
-- [enum DecodingError](decodingerror.md)
+- [enum DecodingError](./decodingerror.md)
   An error that occurs during the decoding of a value.
 
 

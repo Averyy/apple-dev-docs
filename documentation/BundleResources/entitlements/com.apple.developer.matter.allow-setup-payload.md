@@ -1,7 +1,8 @@
 # Matter Allow Setup Payload
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that allows an app to provide an optional Matter Setup payload while setting up a Matter device in an ecosystem.
 
@@ -14,9 +15,12 @@ A Boolean value that allows an app to provide an optional Matter Setup payload w
 - visionOS 1.0+
 - watchOS 9.0+
 
+## Details
+
+- **Name**: `com.apple.developer.matter.allow-setup-payload`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -32,7 +36,8 @@ If the caller provides the setup payload, the framework doesn’t show the user 
 
 ## See Also
 
-- [HomeKit Entitlement](entitlements/com.apple.developer.homekit.md)
+### Home automation
+- [HomeKit Entitlement](./com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
 
 

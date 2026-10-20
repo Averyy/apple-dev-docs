@@ -1,7 +1,8 @@
 # argmax()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the element with the highest value.
 
@@ -20,9 +21,12 @@ Returns the index of the element with the highest value.
 func argmax() -> FilledColumn<Base>.Index?
 ```
 
+Available when `Base` conforms to `OptionalColumnProtocol` and `Base.WrappedElement` conforms to `Comparable`.
+
 ## See Also
 
-- [func argmin() -> Base.Index?](filledcolumn/argmin.md)
+### Finding an Element Index
+- [func argmin() -> Base.Index?](./argmin%28%29.md)
   Returns the index of the element with the lowest value.
 
 

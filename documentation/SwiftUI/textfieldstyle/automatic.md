@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default text field style, based on the text field’s context.
 
@@ -21,15 +22,18 @@ The default text field style, based on the text field’s context.
 static var automatic: DefaultTextFieldStyle { get }
 ```
 
+Available when `Self` is `DefaultTextFieldStyle`.
+
 #### Discussion
 
 The default style represents the recommended style based on the current platform and the text field’s context within the view hierarchy.
 
 ## See Also
 
-- [static var bordered: BorderedTextFieldStyle](textfieldstyle/bordered.md)
-  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
-- [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
+### Getting built-in text field styles
+- [static var bordered: BorderedTextFieldStyle](./bordered.md)
+  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](../view/textinputbordershape%28_%29.md) modifier.
+- [static var plain: PlainTextFieldStyle](./plain.md)
   A text field style with no decoration.
 
 

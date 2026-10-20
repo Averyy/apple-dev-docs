@@ -1,11 +1,12 @@
 # Encodable Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any Encoder) throws](pose/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the pose value into the given encoder.
 
 

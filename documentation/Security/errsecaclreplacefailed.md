@@ -1,7 +1,8 @@
 # errSecACLReplaceFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An ACL replace operation failed.
 
@@ -18,6 +19,10 @@ An ACL replace operation failed.
 
 ```swift
 var errSecACLReplaceFailed: OSStatus { get }
+```
+
+```c
+errSecACLReplaceFailed
 ```
 
 

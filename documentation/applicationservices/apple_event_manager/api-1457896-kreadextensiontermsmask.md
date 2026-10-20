@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kReadExtensionTermsMask: Int](../coreservices/kreadextensiontermsmask.md)
+- [var kReadExtensionTermsMask: Int](../../coreservices/kreadextensiontermsmask.md)
 
 
 ---

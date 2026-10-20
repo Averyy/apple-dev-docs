@@ -1,7 +1,8 @@
 # remove(id:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove an instance by name.
 
@@ -11,7 +12,7 @@ Remove an instance by name.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,13 +23,14 @@ mutating func remove(id: String) -> MeshResource.Instance?
 
 ## See Also
 
-- [func insert(MeshResource.Instance) -> Bool](meshinstancecollection/insert(_:).md)
+### Using the collection
+- [func insert(MeshResource.Instance) -> Bool](./insert%28_%29.md)
   Add a new instance to the container. Returns true if added. Returns false if it already exists.
-- [func removeAll()](meshinstancecollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Remove all the instances.
-- [func update(MeshResource.Instance) -> MeshResource.Instance?](meshinstancecollection/update(_:).md)
+- [func update(MeshResource.Instance) -> MeshResource.Instance?](./update%28_%29.md)
   Update an existing instance. The old instance is returned.
-- [subscript(String) -> MeshResource.Instance?](meshinstancecollection/subscript(_:).md)
+- [subscript(String) -> MeshResource.Instance?](./subscript%28_%29.md)
   Read an instance given its name.
 
 

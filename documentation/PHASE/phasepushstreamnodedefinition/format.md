@@ -1,7 +1,8 @@
 # format
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the audio stream data.
 
@@ -17,6 +18,10 @@ The format of the audio stream data.
 
 ```swift
 var format: AVAudioFormat { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) AVAudioFormat * format;
 ```
 
 

@@ -1,7 +1,8 @@
 # VASReadResult.ReadEntry
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object containing encrypted data associated with a customer’s loyalty or reward pass.
 
@@ -19,27 +20,28 @@ struct ReadEntry
 ## Topics
 
 ### Getting the customer data
-- [let customerVASData: Data?](vasreadresult/readentry/customervasdata.md)
+- [let customerVASData: Data?](./readentry/customervasdata.md)
   The encrypted content of the pass stored in Wallet, which contains the loyalty or reward pass identifier.
 ### Getting the status word
-- [let status: VASReadResult.ReadEntry.Status](vasreadresult/readentry/status-swift.property.md)
+- [let status: VASReadResult.ReadEntry.Status](./readentry/status-swift.property.md)
   The status word that represents the outcome of the VAS read attempt for this reward pass.
-- [VASReadResult.ReadEntry.Status](vasreadresult/readentry/status-swift.enum.md)
+- [VASReadResult.ReadEntry.Status](./readentry/status-swift.enum.md)
   Status words that indicate the possible read outcomes.
 ### Getting the entry ID
-- [let id: String](vasreadresult/readentry/id.md)
+- [let id: String](./readentry/id.md)
   The merchant identifier you used to retrieve the loyalty program information from Wallet.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let entries: [VASReadResult.ReadEntry]](vasreadresult/entries.md)
+### Getting the entry details
+- [let entries: [VASReadResult.ReadEntry]](./entries.md)
   The list of loyalty reward card entries received from the customer.
 
 

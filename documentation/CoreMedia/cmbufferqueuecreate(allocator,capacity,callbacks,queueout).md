@@ -1,7 +1,8 @@
 # CMBufferQueueCreate(allocator:capacity:callbacks:queueOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a buffer queue with callbacks to inspect buffers.
 
@@ -18,6 +19,10 @@ Creates a buffer queue with callbacks to inspect buffers.
 
 ```swift
 func CMBufferQueueCreate(allocator: CFAllocator?, capacity: CMItemCount, callbacks: UnsafePointer<CMBufferCallbacks>, queueOut: UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus
+```
+
+```c
+extern OSStatus CMBufferQueueCreate(CFAllocatorRef allocator, CMItemCount capacity, const CMBufferCallbacks *callbacks, CMBufferQueueRef*queueOut);
 ```
 
 #### Return Value
@@ -37,9 +42,10 @@ On return, the caller owns the returned `CMBufferQueue`, and must release it whe
 
 ## See Also
 
-- [func CMBufferQueueCreateWithHandlers(CFAllocator?, CMItemCount, OpaquePointer, UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](cmbufferqueuecreatewithhandlers(_:_:_:_:).md)
+### Creating a Queue
+- [func CMBufferQueueCreateWithHandlers(CFAllocator?, CMItemCount, OpaquePointer, UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](./cmbufferqueuecreatewithhandlers%28_,_,_,_%29.md)
   Creates a buffer queue with handlers to inspect buffers.
-- [struct CMBufferCallbacks](cmbuffercallbacks.md)
+- [struct CMBufferCallbacks](./cmbuffercallbacks.md)
   A structure that stores the callbacks that perform buffer operations.
 
 

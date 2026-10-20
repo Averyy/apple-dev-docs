@@ -1,7 +1,8 @@
 # SunEvents
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enumeration that represents dates of solar events, including sunrise, sunset, dawn, and dusk.
 
@@ -23,43 +24,44 @@ struct SunEvents
 ## Topics
 
 ### Getting the sun events
-- [var astronomicalDawn: Date?](sunevents/astronomicaldawn.md)
+- [var astronomicalDawn: Date?](./sunevents/astronomicaldawn.md)
   The time of astronomical sunrise when the sun’s center is 18° below the horizon.
-- [var astronomicalDusk: Date?](sunevents/astronomicaldusk.md)
+- [var astronomicalDusk: Date?](./sunevents/astronomicaldusk.md)
   The time of astronomical sunset, when the sun’s center is 18° below the horizon.
-- [var civilDawn: Date?](sunevents/civildawn.md)
+- [var civilDawn: Date?](./sunevents/civildawn.md)
   The time of civil sunrise when the sun’s center is 6° below the horizon.
-- [var civilDusk: Date?](sunevents/civildusk.md)
+- [var civilDusk: Date?](./sunevents/civildusk.md)
   The time of civil sunset, when the sun’s center is 6° below the horizon.
-- [var nauticalDawn: Date?](sunevents/nauticaldawn.md)
+- [var nauticalDawn: Date?](./sunevents/nauticaldawn.md)
   The time of nautical sunrise when the sun’s center is 12° below the horizon.
-- [var nauticalDusk: Date?](sunevents/nauticaldusk.md)
+- [var nauticalDusk: Date?](./sunevents/nauticaldusk.md)
   The time of nautical sunset, when the sun’s center is 12° below the horizon.
-- [var solarMidnight: Date?](sunevents/solarmidnight.md)
+- [var solarMidnight: Date?](./sunevents/solarmidnight.md)
   Represents solar midnight, the time when the sun reaches its lowest point in the sky.
-- [var solarNoon: Date?](sunevents/solarnoon.md)
+- [var solarNoon: Date?](./sunevents/solarnoon.md)
   Represents solar noon, the time when the sun reaches its highest point in the sky.
-- [var sunrise: Date?](sunevents/sunrise.md)
+- [var sunrise: Date?](./sunevents/sunrise.md)
   The sunrise time immediately before the solar transit closest to calendar noon.
-- [var sunset: Date?](sunevents/sunset.md)
+- [var sunset: Date?](./sunevents/sunset.md)
   The sunset time immediately after the solar transit closest to calendar noon.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MoonEvents](moonevents.md)
+### Celestial information
+- [struct MoonEvents](./moonevents.md)
   A structure that represents lunar events.
-- [enum MoonPhase](moonphase.md)
+- [enum MoonPhase](./moonphase.md)
   An enumeration that specifies the moon phase kind.
 
 

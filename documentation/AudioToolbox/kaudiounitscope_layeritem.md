@@ -1,15 +1,16 @@
 # kAudioUnitScope_LayerItem
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,19 +18,24 @@
 var kAudioUnitScope_LayerItem: AudioUnitScope { get }
 ```
 
+```c
+kAudioUnitScope_LayerItem
+```
+
 ## See Also
 
-- [var kAudioUnitScope_Global: AudioUnitScope](kaudiounitscope_global.md)
-- [var kAudioUnitScope_Group: AudioUnitScope](kaudiounitscope_group.md)
+### Constants
+- [var kAudioUnitScope_Global: AudioUnitScope](./kaudiounitscope_global.md)
+- [var kAudioUnitScope_Group: AudioUnitScope](./kaudiounitscope_group.md)
   In macOS, a context specific to the control scope of audio unit parameters.
-- [var kAudioUnitScope_Input: AudioUnitScope](kaudiounitscope_input.md)
+- [var kAudioUnitScope_Input: AudioUnitScope](./kaudiounitscope_input.md)
   The context for audio data coming into an audio unit.
-- [var kAudioUnitScope_Layer: AudioUnitScope](kaudiounitscope_layer.md)
-- [var kAudioUnitScope_Note: AudioUnitScope](kaudiounitscope_note.md)
+- [var kAudioUnitScope_Layer: AudioUnitScope](./kaudiounitscope_layer.md)
+- [var kAudioUnitScope_Note: AudioUnitScope](./kaudiounitscope_note.md)
   In macOS, a scope for changes to an individual musical note. The element identifier used with this scope is the unique note identifier returned from a started note (see the `MusicDeviceStartNote` function in `AudioUnit/MusicDevice.h`).
-- [var kAudioUnitScope_Output: AudioUnitScope](kaudiounitscope_output.md)
+- [var kAudioUnitScope_Output: AudioUnitScope](./kaudiounitscope_output.md)
   The context for audio data leaving an audio unit.
-- [var kAudioUnitScope_Part: AudioUnitScope](kaudiounitscope_part.md)
+- [var kAudioUnitScope_Part: AudioUnitScope](./kaudiounitscope_part.md)
 
 
 ---

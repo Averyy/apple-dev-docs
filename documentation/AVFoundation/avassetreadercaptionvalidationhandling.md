@@ -1,7 +1,8 @@
 # AVAssetReaderCaptionValidationHandling
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods for caption validation events.
 
@@ -17,20 +18,25 @@ A protocol that defines the methods for caption validation events.
 protocol AVAssetReaderCaptionValidationHandling : NSObjectProtocol
 ```
 
+```objc
+@protocol AVAssetReaderCaptionValidationHandling <NSObject>
+```
+
 ## Topics
 
 ### Validating captions
-- [func captionAdaptor(AVAssetReaderOutputCaptionAdaptor, didVendCaption: AVCaption, skippingUnsupportedSourceSyntaxElements: [String])](avassetreadercaptionvalidationhandling/captionadaptor(_:didvendcaption:skippingunsupportedsourcesyntaxelements:).md)
+- [func captionAdaptor(AVAssetReaderOutputCaptionAdaptor, didVendCaption: AVCaption, skippingUnsupportedSourceSyntaxElements: [String])](./avassetreadercaptionvalidationhandling/captionadaptor%28_,didvendcaption,skippingunsupportedsourcesyntaxelements%29.md)
   Tells the delegate that the adaptor ignored one or more syntax elements when it created the caption object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var validationDelegate: (any AVAssetReaderCaptionValidationHandling)?](avassetreaderoutputcaptionadaptor/validationdelegate.md)
+### Managing the validation delegate
+- [var validationDelegate: (any AVAssetReaderCaptionValidationHandling)?](./avassetreaderoutputcaptionadaptor/validationdelegate.md)
   A delegate object that handles callbacks to the caption adaptor.
 
 

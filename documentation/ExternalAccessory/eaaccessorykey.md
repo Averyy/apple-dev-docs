@@ -1,7 +1,8 @@
 # EAAccessoryKey
 
 **Framework**: External Accessory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the accessory object whose status changed.
 
@@ -19,21 +20,26 @@ A key that indicates the accessory object whose status changed.
 let EAAccessoryKey: String
 ```
 
+```c
+extern NSString * const EAAccessoryKey;
+```
+
 #### Discussion
 
-The [`EAAccessoryDidConnectNotification`](eaaccessorydidconnectnotification.md) and [`EAAccessoryDidDisconnectNotification`](eaaccessorydiddisconnectnotification.md) notifications contain this key in their userInfo dictionary. The value is an [`EAAccessory`](eaaccessory.md) object.
+The [`EAAccessoryDidConnectNotification`](./eaaccessorydidconnectnotification.md) and [`EAAccessoryDidDisconnectNotification`](./eaaccessorydiddisconnectnotification.md) notifications contain this key in their userInfo dictionary. The value is an [`EAAccessory`](./eaaccessory.md) object.
 
 ## See Also
 
-- [func registerForLocalNotifications()](eaaccessorymanager/registerforlocalnotifications.md)
+### Managing Connection Status Changes
+- [func registerForLocalNotifications()](./eaaccessorymanager/registerforlocalnotifications%28%29.md)
   Begins the delivery of accessory-related notifications to the current application.
-- [func unregisterForLocalNotifications()](eaaccessorymanager/unregisterforlocalnotifications.md)
+- [func unregisterForLocalNotifications()](./eaaccessorymanager/unregisterforlocalnotifications%28%29.md)
   Stops the delivery of accessory-related notifications to the current application.
-- [static let EAAccessoryDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/eaaccessorydidconnect.md)
+- [static let EAAccessoryDidConnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/eaaccessorydidconnect.md)
   A notification that the system sends when an accessory becomes connected and available for your application to use.
-- [static let EAAccessoryDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/eaaccessorydiddisconnect.md)
+- [static let EAAccessoryDidDisconnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/eaaccessorydiddisconnect.md)
   A notification that is posted when an accessory is disconnected and no longer available for your application to use.
-- [let EAAccessorySelectedKey: String](eaaccessoryselectedkey.md)
+- [let EAAccessorySelectedKey: String](./eaaccessoryselectedkey.md)
   A key that indicates the accessory object that the user selected.
 
 

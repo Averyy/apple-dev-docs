@@ -1,7 +1,8 @@
 # state
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the alarm.
 
@@ -22,13 +23,14 @@ This is a snapshot of the state captured when the alarm was fetched from the dae
 
 ## See Also
 
-- [struct CountdownDuration](alarm/countdownduration-swift.struct.md)
+### Defining a countdown duration
+- [struct CountdownDuration](./countdownduration-swift.struct.md)
   An object that defines the durations used in an alarm that has a countdown.
-- [var countdownDuration: Alarm.CountdownDuration?](alarm/countdownduration-swift.property.md)
+- [var countdownDuration: Alarm.CountdownDuration?](./countdownduration-swift.property.md)
   The time left before an alert, in seconds.
-- [var id: UUID](alarm/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of the alarm.
-- [Alarm.State](alarm/state-swift.enum.md)
+- [Alarm.State](./state-swift.enum.md)
   An enum that lists all possible states of an alarm.
 
 

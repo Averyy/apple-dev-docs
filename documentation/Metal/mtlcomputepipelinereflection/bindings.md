@@ -1,7 +1,8 @@
 # bindings
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var bindings: [any MTLBinding] { get }
+```
+
+```objc
+@property (readonly, nonnull) NSArray<id<MTLBinding>> * bindings;
 ```
 
 

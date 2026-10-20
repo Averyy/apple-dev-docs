@@ -1,7 +1,8 @@
 # data
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The game-specific exchange data that GameKit sends to participants.
 
@@ -20,19 +21,32 @@ The game-specific exchange data that GameKit sends to participants.
 var data: Data? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSData * data;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) NSData * data;
+```
+
 ## See Also
 
-- [var exchangeID: String](gkturnbasedexchange/exchangeid.md)
+### Retrieving Exchange Details
+- [var exchangeID: String](./exchangeid.md)
   The identifier for the exchange request.
-- [var sender: GKTurnBasedParticipant](gkturnbasedexchange/sender.md)
+- [var sender: GKTurnBasedParticipant](./sender.md)
   The participant who sends the exchange request to recipients.
-- [var recipients: [GKTurnBasedParticipant]](gkturnbasedexchange/recipients.md)
+- [var recipients: [GKTurnBasedParticipant]](./recipients.md)
   The participants who receives the exchange request.
-- [var message: String?](gkturnbasedexchange/message.md)
+- [var message: String?](./message.md)
   A localized message from the sender to the recipients of an exchange request.
-- [var sendDate: Date](gkturnbasedexchange/senddate.md)
+- [var sendDate: Date](./senddate.md)
   The date that the sender initiates the exchange request.
-- [var timeoutDate: Date?](gkturnbasedexchange/timeoutdate.md)
+- [var timeoutDate: Date?](./timeoutdate.md)
   The date that the recipients must reply by before the exchange request times out.
 
 

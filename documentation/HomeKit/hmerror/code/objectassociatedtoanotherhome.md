@@ -1,7 +1,8 @@
 # HMError.Code.objectAssociatedToAnotherHome
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to associate an object with a home when it’s already associated with another home.
 
@@ -19,13 +20,18 @@ An attempt to associate an object with a home when it’s already associated wit
 case objectAssociatedToAnotherHome
 ```
 
+```c
+HMErrorCodeObjectAssociatedToAnotherHome
+```
+
 ## See Also
 
-- [HMError.Code.invalidAssociatedServiceType](hmerror/code/invalidassociatedservicetype.md)
+### Association errors
+- [HMError.Code.invalidAssociatedServiceType](./invalidassociatedservicetype.md)
   An error indicating an invalid service type.
-- [HMError.Code.objectAlreadyAssociatedToHome](hmerror/code/objectalreadyassociatedtohome.md)
+- [HMError.Code.objectAlreadyAssociatedToHome](./objectalreadyassociatedtohome.md)
   An attempt to associate an object with a home when it’s already associated with that home.
-- [HMError.Code.objectNotAssociatedToAnyHome](hmerror/code/objectnotassociatedtoanyhome.md)
+- [HMError.Code.objectNotAssociatedToAnyHome](./objectnotassociatedtoanyhome.md)
   An attempt to perform an operation on an object that is not associated to any home.
 
 

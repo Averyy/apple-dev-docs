@@ -1,7 +1,8 @@
 # manufacturer
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the accessory’s manufacturer.
 
@@ -19,21 +20,26 @@ The name of the accessory’s manufacturer.
 var manufacturer: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * manufacturer;
+```
+
 ## See Also
 
-- [var name: String](eaaccessory/name.md)
+### Getting the Manufacturer-Supplied Attributes
+- [var name: String](./name.md)
   The display name of the accessory.
-- [var modelNumber: String](eaaccessory/modelnumber.md)
+- [var modelNumber: String](./modelnumber.md)
   The model information for the accessory.
-- [var serialNumber: String](eaaccessory/serialnumber.md)
+- [var serialNumber: String](./serialnumber.md)
   The serial number of the accessory.
-- [var firmwareRevision: String](eaaccessory/firmwarerevision.md)
+- [var firmwareRevision: String](./firmwarerevision.md)
   The current firmware version for the accessory.
-- [var hardwareRevision: String](eaaccessory/hardwarerevision.md)
+- [var hardwareRevision: String](./hardwarerevision.md)
   The hardware version of the accessory.
-- [var protocolStrings: [String]](eaaccessory/protocolstrings.md)
+- [var protocolStrings: [String]](./protocolstrings.md)
   The communication protocols supported by the accessory.
-- [var dockType: String](eaaccessory/docktype.md)
+- [var dockType: String](./docktype.md)
 
 
 ---

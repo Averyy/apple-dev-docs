@@ -1,22 +1,24 @@
 # MD5Init
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void MD5Init(MD5_CTX *);
 ```
 
 ## See Also
 
-- [MD5_CTX](md5_ctx.md)
-- [MD5Final](1537348-md5final.md)
-- [MD5Update](1537352-md5update.md)
+### Cryptography
+- [MD5_CTX](./md5_ctx.md)
+- [MD5Final](./api-1537348-md5final.md)
+- [MD5Update](./api-1537352-md5update.md)
 
 
 ---

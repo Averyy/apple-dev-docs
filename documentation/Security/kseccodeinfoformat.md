@@ -1,7 +1,8 @@
 # kSecCodeInfoFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string representing the type and format of the code in a form suitable for display to a knowledgeable user.
 
@@ -15,11 +16,15 @@ A key whose value is a string representing the type and format of the code in a 
 let kSecCodeInfoFormat: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoFormat;
+```
+
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
+The value is a [`CFString`](../CoreFoundation/cfstring.md) object.
 
-This is generic information returned regardless of which [`Code Signing Information Flags`](code-signing-information-flags.md)  you pass to the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function.
+This is generic information returned regardless of which [Code Signing Information Flags](./code-signing-information-flags.md)  you pass to the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function.
 
 
 ---

@@ -1,7 +1,8 @@
 # horizontalScrollIndicatorVisibility
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visibility to apply to scroll indicators of any horizontally scrollable content.
 
@@ -22,15 +23,16 @@ var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility { get set }
 
 ## See Also
 
-- [func scrollIndicatorsFlash(onAppear: Bool) -> some View](view/scrollindicatorsflash(onappear:).md)
+### Showing scroll indicators
+- [func scrollIndicatorsFlash(onAppear: Bool) -> some View](../view/scrollindicatorsflash%28onappear%29.md)
   Flashes the scroll indicators of a scrollable view when it appears.
-- [func scrollIndicatorsFlash(trigger: some Equatable) -> some View](view/scrollindicatorsflash(trigger:).md)
+- [func scrollIndicatorsFlash(trigger: some Equatable) -> some View](../view/scrollindicatorsflash%28trigger%29.md)
   Flashes the scroll indicators of scrollable views when a value changes.
-- [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](view/scrollindicators(_:axes:).md)
+- [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](../view/scrollindicators%28_,axes%29.md)
   Sets the visibility of scroll indicators within this view.
-- [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](environmentvalues/verticalscrollindicatorvisibility.md)
+- [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](./verticalscrollindicatorvisibility.md)
   The visiblity to apply to scroll indicators of any vertically scrollable content.
-- [struct ScrollIndicatorVisibility](scrollindicatorvisibility.md)
+- [struct ScrollIndicatorVisibility](../scrollindicatorvisibility.md)
   The visibility of scroll indicators of a UI element.
 
 

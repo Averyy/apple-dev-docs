@@ -1,14 +1,15 @@
 # kIOMediumEthernet1000BaseSX
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMediumEthernet1000BaseSX = ( IFM_1000_SX | IFM_ETHER )
 ```
 

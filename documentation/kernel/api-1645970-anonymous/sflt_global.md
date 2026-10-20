@@ -1,14 +1,15 @@
 # SFLT_GLOBAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 SFLT_GLOBAL = 0x01
 ```
 

@@ -1,7 +1,8 @@
 # ImagePresentationComponent.ViewingMode
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Image content’s rendering mode.
 
@@ -17,26 +18,26 @@ struct ViewingMode
 ## Topics
 
 ### Monoscopic presentation
-- [static let mono: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/mono.md)
+- [static let mono: ImagePresentationComponent.ViewingMode](./viewingmode-swift.struct/mono.md)
   Displays the image with a monoscopic presentation.
 ### Stereoscopic presentation of spatial photos
-- [static let spatialStereo: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md)
+- [static let spatialStereo: ImagePresentationComponent.ViewingMode](./viewingmode-swift.struct/spatialstereo.md)
   Displays the image’s spatial stereo representation (if available) with a windowed presentation style.
-- [static let spatialStereoImmersive: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md)
+- [static let spatialStereoImmersive: ImagePresentationComponent.ViewingMode](./viewingmode-swift.struct/spatialstereoimmersive.md)
   Displays the image’s spatial stereo representation (if available) with an immersive presentation style.
 ### 3D presentation of generated spatial scenes
-- [static let spatial3D: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)
+- [static let spatial3D: ImagePresentationComponent.ViewingMode](./viewingmode-swift.struct/spatial3d.md)
   Displays the image’s spatial 3D representation (if generated) with a windowed presentation style.
-- [static let spatial3DImmersive: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md)
+- [static let spatial3DImmersive: ImagePresentationComponent.ViewingMode](./viewingmode-swift.struct/spatial3dimmersive.md)
   Displays the image’s spatial 3D representation (if generated) with an immersive presentation style.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

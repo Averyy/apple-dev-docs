@@ -1,7 +1,8 @@
 # LinearTimeSeriesForecaster.Model
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A linear time-series forecasting model.
 
@@ -20,6 +21,8 @@ A linear time-series forecasting model.
 struct Model
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 #### Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
@@ -27,46 +30,47 @@ struct Model
 ## Topics
 
 ### Inspecting the model
-- [var annotationSize: Int](lineartimeseriesforecaster/model/annotationsize.md)
+- [var annotationSize: Int](./model/annotationsize.md)
   The number of annotations per sample.
-- [var bias: MLShapedArray<Scalar>?](lineartimeseriesforecaster/model/bias.md)
+- [var bias: MLShapedArray<Scalar>?](./model/bias.md)
   The bias coefficients.
-- [var featureSize: Int](lineartimeseriesforecaster/model/featuresize.md)
+- [var featureSize: Int](./model/featuresize.md)
   The number of features per sample.
-- [var forecastWindowSize: Int](lineartimeseriesforecaster/model/forecastwindowsize.md)
+- [var forecastWindowSize: Int](./model/forecastwindowsize.md)
   The number of prediction samples.
-- [var inputWindowSize: Int](lineartimeseriesforecaster/model/inputwindowsize.md)
+- [var inputWindowSize: Int](./model/inputwindowsize.md)
   The number of input samples.
-- [var stride: Int](lineartimeseriesforecaster/model/stride.md)
+- [var stride: Int](./model/stride.md)
   The number of samples between windows.
-- [var weight: MLShapedArray<Scalar>](lineartimeseriesforecaster/model/weight.md)
+- [var weight: MLShapedArray<Scalar>](./model/weight.md)
   The linear coefficients.
 ### Applying the model
-- [func applied(to:eventHandler:)](lineartimeseriesforecaster/model/applied(to:eventhandler:).md)
+- [func applied(to:eventHandler:)](./model/applied%28to,eventhandler%29.md)
   Performs a prediction on a shaped array of features.
-- [func applied(toWindow: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](lineartimeseriesforecaster/model/applied(towindow:eventhandler:).md)
+- [func applied(toWindow: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](./model/applied%28towindow,eventhandler%29.md)
   Performs a prediction on a window of input features.
 ### Exporting the model
-- [func export(to: URL) throws](lineartimeseriesforecaster/model/export(to:).md)
+- [func export(to: URL) throws](./model/export%28to%29.md)
   Exports this transformer as a CoreML model package.
-- [func export(to: URL, metadata: ModelMetadata) throws](lineartimeseriesforecaster/model/export(to:metadata:).md)
+- [func export(to: URL, metadata: ModelMetadata) throws](./model/export%28to,metadata%29.md)
   Exports this transformer as a CoreML model package with user-supplied metadata.
 ### Default Implementations
-- [TemporalTransformer Implementations](lineartimeseriesforecaster/model/temporaltransformer-implementations.md)
+- [TemporalTransformer Implementations](./model/temporaltransformer-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TemporalTransformer](temporaltransformer.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [TemporalTransformer](../temporaltransformer.md)
+- [Transformer](../transformer.md)
 
 ## See Also
 
-- [LinearTimeSeriesForecaster.Configuration](lineartimeseriesforecaster/configuration-swift.typealias.md)
+### Supporting types
+- [LinearTimeSeriesForecaster.Configuration](./configuration-swift.typealias.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # pixelBufferAttributes
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel buffer attributes of the video frames the view controller presents.
 
@@ -15,6 +16,10 @@ The pixel buffer attributes of the video frames the view controller presents.
 
 ```swift
 var pixelBufferAttributes: [String : Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * pixelBufferAttributes;
 ```
 
 

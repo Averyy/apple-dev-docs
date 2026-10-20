@@ -1,7 +1,8 @@
 # assumingType(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the underlying typed column.
 

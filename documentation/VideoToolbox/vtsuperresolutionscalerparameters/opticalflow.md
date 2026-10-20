@@ -1,7 +1,8 @@
 # opticalFlow
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional object that contains forward and backward optical flow with the previous frame.
 
@@ -17,21 +18,26 @@ Optional object that contains forward and backward optical flow with the previou
 var opticalFlow: VTFrameProcessorOpticalFlow? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) VTFrameProcessorOpticalFlow * opticalFlow;
+```
+
 #### Discussion
 
 You only need this if optical flow is pre-computed. For the first frame this is `nil`.
 
 ## See Also
 
-- [var sourceFrame: VTFrameProcessorFrame](vtsuperresolutionscalerparameters/sourceframe.md)
+### Inspecting the parameters
+- [var sourceFrame: VTFrameProcessorFrame](./sourceframe.md)
   Current source frame, which must be non `nil`.
-- [var previousFrame: VTFrameProcessorFrame?](vtsuperresolutionscalerparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame?](./previousframe.md)
   Previous source frame in presentation time order, which is `nil` for the first frame.
-- [var previousOutputFrame: VTFrameProcessorFrame?](vtsuperresolutionscalerparameters/previousoutputframe.md)
+- [var previousOutputFrame: VTFrameProcessorFrame?](./previousoutputframe.md)
   Previous output frame in presentation time order, which is `nil` for the first frame.
-- [var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode](vtsuperresolutionscalerparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode](./submissionmode-swift.property.md)
   Ordering of the input frames in this submission relative to the previous submission.
-- [VTSuperResolutionScalerParameters.SubmissionMode](vtsuperresolutionscalerparameters/submissionmode-swift.enum.md)
+- [VTSuperResolutionScalerParameters.SubmissionMode](./submissionmode-swift.enum.md)
   Indicates the order of input frames.
 
 

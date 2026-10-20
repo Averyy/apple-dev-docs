@@ -1,7 +1,8 @@
 # city
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name for the location if it’s inside a city.
 
@@ -16,7 +17,8 @@ var city: String?
 
 ## See Also
 
-- [var place: String?](journalingsuggestion/location/place.md)
+### Identifying the location
+- [var place: String?](./place.md)
   A place name that commonly refers to the location.
 
 

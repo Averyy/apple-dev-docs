@@ -1,7 +1,8 @@
 # NSItemProvider.PreferredPresentationStyle.unspecified
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A presentation style indicating that no preferred style is specified.
 
@@ -21,9 +22,10 @@ case unspecified
 
 ## See Also
 
-- [NSItemProvider.PreferredPresentationStyle.inline](nsitemprovider/preferredpresentationstyle-swift.enum/inline.md)
+### Presentation Styles
+- [NSItemProvider.PreferredPresentationStyle.inline](./inline.md)
   A presentation style indicating that the item provider data should be presented inline.
-- [NSItemProvider.PreferredPresentationStyle.attachment](nsitemprovider/preferredpresentationstyle-swift.enum/attachment.md)
+- [NSItemProvider.PreferredPresentationStyle.attachment](./attachment.md)
   A presentation style indicating that the item provider data should be presented as an attachment.
 
 

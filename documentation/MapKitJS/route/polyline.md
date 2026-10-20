@@ -1,7 +1,8 @@
 # polyline
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An instance of a polyline overlay that represents the path of a route.
 
@@ -10,13 +11,13 @@ An instance of a polyline overlay that represents the path of a route.
 
 ## Declaration
 
-```swift
+```
 get polyline(): PolylineOverlay;
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 

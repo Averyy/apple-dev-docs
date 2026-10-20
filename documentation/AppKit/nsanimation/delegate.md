@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The animation delegate.
 weak var delegate: (any NSAnimationDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSAnimationDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must conform to the [`NSAnimationDelegate`](nsanimationdelegate.md).
+The delegate must conform to the [`NSAnimationDelegate`](../nsanimationdelegate.md).
 
 
 ---

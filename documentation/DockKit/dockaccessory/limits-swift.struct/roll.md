@@ -1,7 +1,8 @@
 # roll
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The side to side limit.
 
@@ -19,9 +20,10 @@ let roll: DockAccessory.Limits.Limit?
 
 ## See Also
 
-- [let pitch: DockAccessory.Limits.Limit?](dockaccessory/limits-swift.struct/pitch.md)
+### Getting properties
+- [let pitch: DockAccessory.Limits.Limit?](./pitch.md)
   The up and down limit.
-- [let yaw: DockAccessory.Limits.Limit?](dockaccessory/limits-swift.struct/yaw.md)
+- [let yaw: DockAccessory.Limits.Limit?](./yaw.md)
   The left and right limit.
 
 

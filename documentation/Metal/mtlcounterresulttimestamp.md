@@ -1,7 +1,8 @@
 # MTLCounterResultTimestamp
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data structure for storing the data you resolve from a timestamp counter set.
 
@@ -19,40 +20,45 @@ The data structure for storing the data you resolve from a timestamp counter set
 struct MTLCounterResultTimestamp
 ```
 
+```c
+typedef struct { ... } MTLCounterResultTimestamp;
+```
+
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Overview
 
-For steps that explain how to resolve data from a counter set, such as [`timestamp`](mtlcounterresulttimestamp/timestamp.md), see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For steps that explain how to resolve data from a counter set, such as [`timestamp`](./mtlcounterresulttimestamp/timestamp.md), see [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md).
 
 ## Topics
 
 ### Timestamp values
-- [var timestamp: UInt64](mtlcounterresulttimestamp/timestamp.md)
+- [var timestamp: UInt64](./mtlcounterresulttimestamp/timestamp.md)
   A timestamp value from a GPU at a particular point in time during an operation, typically at the beginning or ending of a render stage.
 ### Swift support
-- [init()](mtlcounterresulttimestamp/init.md)
+- [init()](./mtlcounterresulttimestamp/init%28%29.md)
   Creates a default timestamp result.
-- [init(timestamp: UInt64)](mtlcounterresulttimestamp/init(timestamp:).md)
+- [init(timestamp: UInt64)](./mtlcounterresulttimestamp/init%28timestamp%29.md)
   Creates a timestamp result from a value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+### Counter sample data output
+- [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md)
   Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
-- [struct MTLCounterResultStatistic](mtlcounterresultstatistic.md)
+- [struct MTLCounterResultStatistic](./mtlcounterresultstatistic.md)
   The data structure for storing the data you resolve from a statistic counter set.
-- [struct MTLCounterResultStageUtilization](mtlcounterresultstageutilization.md)
+- [struct MTLCounterResultStageUtilization](./mtlcounterresultstageutilization.md)
   The data structure for storing the data you resolve from a stage-utilization counter set.
-- [var MTLCounterErrorValue: UInt64](mtlcountererrorvalue.md)
+- [var MTLCounterErrorValue: UInt64](./mtlcountererrorvalue.md)
   A sentinel value for an entry in a counter sample buffer that indicates the entry’s data is invalid.
 
 

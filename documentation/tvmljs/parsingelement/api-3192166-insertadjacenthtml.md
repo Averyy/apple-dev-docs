@@ -1,14 +1,15 @@
 # insertAdjacentHTML
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 void insertAdjacentHTML(
     in String position, 
     in String text

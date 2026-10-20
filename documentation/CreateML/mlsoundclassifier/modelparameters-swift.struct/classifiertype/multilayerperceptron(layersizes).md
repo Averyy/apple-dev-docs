@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.ClassifierType.multilayerPerceptron(layerSizes:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A neural network model that uses three or more layers to classify an input into a category.
 
@@ -30,7 +31,8 @@ The number of integers in your `layerSizes` array determines the number of hidde
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.ClassifierType.logisticRegressor](mlsoundclassifier/modelparameters-swift.struct/classifiertype/logisticregressor.md)
+### Designating an algorithm’s classifier
+- [MLSoundClassifier.ModelParameters.ClassifierType.logisticRegressor](./logisticregressor.md)
   A statistical model that uses logistic regression to classify an input vector into a category.
 
 

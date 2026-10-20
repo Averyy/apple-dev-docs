@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Exception Handling  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the singleton `NSExceptionHandler` instance.
 
@@ -15,9 +16,14 @@ Returns the singleton `NSExceptionHandler` instance.
 class func `default`() -> NSExceptionHandler!
 ```
 
+```objc
++ (NSExceptionHandler *) defaultExceptionHandler;
+```
+
 ## See Also
 
-- [Exception Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Exceptions/Exceptions.html#//apple_ref/doc/uid/10000012i)
+### Related Documentation
+- [Exception Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Exceptions/Exceptions.html#//apple_ref/doc/uid/10000012i)
 
 
 ---

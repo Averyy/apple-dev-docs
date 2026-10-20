@@ -1,12 +1,13 @@
 # preview
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Send to Preview application.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Send to Preview application.
 static let preview: NSPrintInfo.JobDisposition
 ```
 
+```c
+extern NSPrintJobDispositionValue const NSPrintPreviewJob;
+```
+
 ## See Also
 
-- [static let spool: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct/spool.md)
+### Constants
+- [static let spool: NSPrintInfo.JobDisposition](./spool.md)
   Normal print job.
-- [static let save: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct/save.md)
+- [static let save: NSPrintInfo.JobDisposition](./save.md)
   Save to a file.
-- [static let cancel: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct/cancel.md)
+- [static let cancel: NSPrintInfo.JobDisposition](./cancel.md)
   Cancel print job.
 
 

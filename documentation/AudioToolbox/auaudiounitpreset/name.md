@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preset’s name.
 
@@ -19,9 +20,22 @@ The preset’s name.
 var name: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * name;
+```
+
 ## See Also
 
-- [var number: Int](auaudiounitpreset/number.md)
+### Preset Properties
+- [var number: Int](./number.md)
   The preset’s unique numeric identifier.
 
 

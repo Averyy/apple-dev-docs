@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the kernel that must be a positive, odd number.
 
@@ -11,7 +12,7 @@ The height of the kernel that must be a positive, odd number.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let height: vImagePixelCount
 
 ## See Also
 
-- [let width: vImagePixelCount](vimage/convolutionkernel2d/width.md)
+### Instance Properties
+- [let width: vImagePixelCount](./width.md)
   The width of the kernel that must be a positive, odd number.
-- [let values: [ComponentType]](vimage/convolutionkernel2d/values.md)
+- [let values: [ComponentType]](./values.md)
   The kernel weights or structuring element values that must contain `height * width` elements.
 
 

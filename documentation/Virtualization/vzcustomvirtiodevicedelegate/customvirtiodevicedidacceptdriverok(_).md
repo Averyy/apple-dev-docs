@@ -1,7 +1,8 @@
 # customVirtioDeviceDidAcceptDriverOk(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when the device and driver successfully complete Virtio negotiation.
 
@@ -12,6 +13,10 @@ The method the framework calls when the device and driver successfully complete 
 
 ```swift
 optional func customVirtioDeviceDidAcceptDriverOk(_ device: VZCustomVirtioDevice)
+```
+
+```objc
+- (void) customVirtioDeviceDidAcceptDriverOk:(VZCustomVirtioDevice *) device;
 ```
 
 #### Discussion

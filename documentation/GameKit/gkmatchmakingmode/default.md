@@ -1,7 +1,8 @@
 # GKMatchmakingMode.default
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default matchmaking mode.
 
@@ -19,13 +20,18 @@ The default matchmaking mode.
 case `default`
 ```
 
+```c
+GKMatchmakingModeDefault
+```
+
 ## See Also
 
-- [GKMatchmakingMode.nearbyOnly](gkmatchmakingmode/nearbyonly.md)
+### Modes
+- [GKMatchmakingMode.nearbyOnly](./nearbyonly.md)
   A mode that matches the local player only with nearby players.
-- [GKMatchmakingMode.automatchOnly](gkmatchmakingmode/automatchonly.md)
+- [GKMatchmakingMode.automatchOnly](./automatchonly.md)
   A mode that matches the local player only with players who are also actively looking for a match.
-- [GKMatchmakingMode.inviteOnly](gkmatchmakingmode/inviteonly.md)
+- [GKMatchmakingMode.inviteOnly](./inviteonly.md)
   A mode that matches the local player only with players who they invite, and doesn’t use automatch to fill empty slots.
 
 

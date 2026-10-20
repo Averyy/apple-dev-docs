@@ -1,7 +1,8 @@
 # init(output:rasterSampleCount:enableTonemap:enableColorMatch:alphaPremultiply:maxCameraCount:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration with the given output format, MSAA sample count, and flags.
 

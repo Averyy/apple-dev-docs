@@ -1,7 +1,8 @@
 # glBlendEquationOES(_:)
 
 **Framework**: OpenGL ES  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func glBlendEquationOES(_ mode: GLenum)
+```
+
+```c
+extern GLvoid glBlendEquationOES(GLenum mode);
 ```
 
 

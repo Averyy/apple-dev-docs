@@ -1,7 +1,8 @@
 # init(bezierPath:creationDate:pointProvider:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
 
@@ -20,7 +21,7 @@ init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.Conver
 
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
 #### Discussion
 
@@ -38,13 +39,14 @@ The output B-Spline will have continuous curvature and 0 curvature at the endpoi
 
 ## See Also
 
-- [init()](pkstrokepath-swift.struct/init.md)
+### Creating a new stroke path
+- [init()](./init%28%29.md)
   Creates an empty stroke path.
-- [init<T>(controlPoints: T, creationDate: Date)](pkstrokepath-swift.struct/init(controlpoints:creationdate:).md)
+- [init<T>(controlPoints: T, creationDate: Date)](./init%28controlpoints,creationdate%29.md)
   Creates a stroke path with the cubic B-spline control points and a date that you specify.
-- [init<T>(controlPoints: T, creationDate: Date, id: UUID)](pkstrokepath-swift.struct/init(controlpoints:creationdate:id:).md)
+- [init<T>(controlPoints: T, creationDate: Date, id: UUID)](./init%28controlpoints,creationdate,id%29.md)
   Creates a stroke path with the specified cubic B-spline control points and a unique identifier.
-- [PKStrokePath.ConvertedBezierPoint](pkstrokepath-swift.struct/convertedbezierpoint.md)
+- [PKStrokePath.ConvertedBezierPoint](./convertedbezierpoint.md)
   Information about a B-spline control point converted from a Bézier path.
 
 

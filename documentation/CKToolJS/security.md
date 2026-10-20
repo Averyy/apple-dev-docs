@@ -1,7 +1,8 @@
 # Security
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dictionary of your authorization tokens.
 
@@ -10,7 +11,7 @@ A dictionary of your authorization tokens.
 
 ## Declaration
 
-```swift
+```
 dictionary Security {
 	string? CloudKitAPITokenAuth;
 	string? CloudKitWebAuthTokenAuth;
@@ -28,20 +29,21 @@ You pass this dictionary when creating an instance of a promises API class as on
 ## Topics
 
 ### Instance Properties
-- [CloudKitAPITokenAuth](security/cloudkitapitokenauth.md)
+- [CloudKitAPITokenAuth](./security/cloudkitapitokenauth.md)
   Your CloudKit API token.
-- [CloudKitWebAuthTokenAuth](security/cloudkitwebauthtokenauth.md)
+- [CloudKitWebAuthTokenAuth](./security/cloudkitwebauthtokenauth.md)
   Your CloudKit Web Authentication token.
-- [ManagementTokenAuth](security/managementtokenauth.md)
+- [ManagementTokenAuth](./security/managementtokenauth.md)
   Your management token.
-- [UserTokenAuth](security/usertokenauth.md)
+- [UserTokenAuth](./security/usertokenauth.md)
   Your user token.
 
 ## See Also
 
-- [PromisesApi](promisesapi/promisesapi.md)
+### Initialization
+- [PromisesApi](./promisesapi/promisesapi.md)
   Creates a `PromisesApi` object.
-- [PromisesApiOptions](promisesapioptions.md)
+- [PromisesApiOptions](./promisesapioptions.md)
   A dictionary of options for promises API classes.
 
 

@@ -1,7 +1,8 @@
 # async
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that requests that the file system module flush metadata I/O asynchronously.
 
@@ -14,11 +15,16 @@ A flag that requests that the file system module flush metadata I/O asynchronous
 static var async: FSCompleteIOFlags { get }
 ```
 
+```c
+FSCompleteIOFlagsAsync
+```
+
 ## See Also
 
-- [static var read: FSCompleteIOFlags](fscompleteioflags/read.md)
+### Declaring I/O completion behaviors
+- [static var read: FSCompleteIOFlags](./read.md)
   A flag that describes a read operation.
-- [static var write: FSCompleteIOFlags](fscompleteioflags/write.md)
+- [static var write: FSCompleteIOFlags](./write.md)
   A flag that describes a write operation.
 
 

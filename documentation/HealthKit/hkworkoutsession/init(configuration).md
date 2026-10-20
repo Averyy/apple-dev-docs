@@ -1,17 +1,24 @@
 # init(configuration:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly instantiated workout session.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 5.0
+
+> **Deprecated**: Use [`init(healthStore:configuration:)`](./init%28healthstore,configuration%29.md) instead.
 
 ## Declaration
 
 ```swift
 init(configuration workoutConfiguration: HKWorkoutConfiguration) throws
+```
+
+```objc
+- (instancetype) initWithConfiguration:(HKWorkoutConfiguration *) workoutConfiguration error:(NSError **) error;
 ```
 
 #### Return Value
@@ -28,11 +35,12 @@ HealthKit uses the session’s configuration data to fine tune Apple Watch’s s
 
 ## See Also
 
-- [init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)](hkworkoutsession/init(activitytype:locationtype:).md)
+### Deprecated methods
+- [init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)](./init%28activitytype,locationtype%29.md)
   Returns a newly instantiated workout session.
-- [var activityType: HKWorkoutActivityType](hkworkoutsession/activitytype.md)
+- [var activityType: HKWorkoutActivityType](./activitytype.md)
   The workout activity performed during this session.
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutsession/locationtype.md)
+- [var locationType: HKWorkoutSessionLocationType](./locationtype.md)
   A value that indicates whether the workout session occurred indoors or outdoors.
 
 

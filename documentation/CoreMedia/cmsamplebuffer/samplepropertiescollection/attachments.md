@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access sample attachments.
 
@@ -22,7 +23,7 @@ var attachments: [CMSampleBuffer.SampleAttachments]? { get set }
 
 #### Discussion
 
-When setting attachments array, the number of entries must match [`count`](cmsamplebuffer/samplepropertiescollection/count.md).
+When setting attachments array, the number of entries must match [`count`](./count.md).
 
 
 ---

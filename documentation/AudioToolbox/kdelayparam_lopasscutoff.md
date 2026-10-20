@@ -1,15 +1,16 @@
 # kDelayParam_LopassCutoff
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kDelayParam_LopassCutoff: AudioUnitParameterID { get }
 ```
 
+```c
+kDelayParam_LopassCutoff
+```
+
 ## See Also
 
-- [var kDelayParam_DelayTime: AudioUnitParameterID](kdelayparam_delaytime.md)
-- [var kDelayParam_Feedback: AudioUnitParameterID](kdelayparam_feedback.md)
-- [var kDelayParam_WetDryMix: AudioUnitParameterID](kdelayparam_wetdrymix.md)
+### Constants
+- [var kDelayParam_DelayTime: AudioUnitParameterID](./kdelayparam_delaytime.md)
+- [var kDelayParam_Feedback: AudioUnitParameterID](./kdelayparam_feedback.md)
+- [var kDelayParam_WetDryMix: AudioUnitParameterID](./kdelayparam_wetdrymix.md)
 
 
 ---

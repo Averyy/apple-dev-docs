@@ -1,7 +1,8 @@
 # DeviceLockCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remotely and immediately lock a device.
 
@@ -15,18 +16,18 @@ The command to remotely and immediately lock a device.
 
 ## Declaration
 
-```swift
+```
 object DeviceLockCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object DeviceLockCommand.Command](devicelockcommand/command-data.dictionary.md)
+- [object DeviceLockCommand.Command](./devicelockcommand/command-data.dictionary.md)
   The command to remotely and immediately lock a device.
 
 ## Properties
@@ -36,7 +37,8 @@ object DeviceLockCommand
 
 ## See Also
 
-- [object DeviceLockResponse](devicelockresponse.md)
+### Commands and responses
+- [object DeviceLockResponse](./devicelockresponse.md)
   A response from the device after it processes the command to remotely and immediately lock a device.
 
 

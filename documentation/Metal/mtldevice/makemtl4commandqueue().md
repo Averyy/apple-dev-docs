@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new command queue.
@@ -20,13 +21,17 @@ Creates a new command queue.
 func makeMTL4CommandQueue() -> (any MTL4CommandQueue)?
 ```
 
+```objc
+- (id<MTL4CommandQueue>) newMTL4CommandQueue;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Return Value
 
-A [`MTL4CommandQueue`](mtl4commandqueue.md) instance, or `nil` if the function failed.
+A [`MTL4CommandQueue`](../mtl4commandqueue.md) instance, or `nil` if the function failed.
 
 
 ---

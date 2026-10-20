@@ -1,7 +1,8 @@
 # allPartitionsAndEjectDisk
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that all partitions on an unmountable disk should be unmounted.
 
@@ -14,15 +15,20 @@ Specifies that all partitions on an unmountable disk should be unmounted.
 static var allPartitionsAndEjectDisk: FileManager.UnmountOptions { get }
 ```
 
+```c
+NSFileManagerUnmountAllPartitionsAndEjectDisk
+```
+
 #### Discussion
 
 If the volume is on a partitioned disk, this option unmounts all volumes on that disk. Then, then the disk is ejected (if it is ejectable).
 
 ## See Also
 
-- [init(rawValue: UInt)](filemanager/unmountoptions/init(rawvalue:).md)
+### Unmount Behavior
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates an unmount option set from the given raw value.
-- [static var withoutUI: FileManager.UnmountOptions](filemanager/unmountoptions/withoutui.md)
+- [static var withoutUI: FileManager.UnmountOptions](./withoutui.md)
   Specifies that no UI should accompany the unmount operation.
 
 

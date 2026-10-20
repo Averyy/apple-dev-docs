@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainer.Event
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents activity in a persistent CloudKit container.
 
@@ -20,50 +21,55 @@ An object that represents activity in a persistent CloudKit container.
 class Event
 ```
 
+```objc
+@interface NSPersistentCloudKitContainerEvent : NSObject
+```
+
 ## Topics
 
 ### Inspecting Event Properties
-- [var type: NSPersistentCloudKitContainer.EventType](nspersistentcloudkitcontainer/event/type.md)
+- [var type: NSPersistentCloudKitContainer.EventType](./event/type.md)
   The type of event, either setup, import, or export.
-- [var identifier: UUID](nspersistentcloudkitcontainer/event/identifier.md)
+- [var identifier: UUID](./event/identifier.md)
   A unique identifier for the event in a container.
-- [var storeIdentifier: String](nspersistentcloudkitcontainer/event/storeidentifier.md)
+- [var storeIdentifier: String](./event/storeidentifier.md)
   The associated store identifier in the container for the event.
-- [var succeeded: Bool](nspersistentcloudkitcontainer/event/succeeded.md)
+- [var succeeded: Bool](./event/succeeded.md)
   A Boolean value that indicates whether the operation the event represents is successful.
-- [var startDate: Date](nspersistentcloudkitcontainer/event/startdate.md)
+- [var startDate: Date](./event/startdate.md)
   The start date of the operation that the event represents.
-- [var endDate: Date?](nspersistentcloudkitcontainer/event/enddate.md)
+- [var endDate: Date?](./event/enddate.md)
   The end date of the operation that the event represents.
-- [var error: (any Error)?](nspersistentcloudkitcontainer/event/error.md)
+- [var error: (any Error)?](./event/error.md)
   An error that indicates why an operation fails.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSPersistentCloudKitContainer.EventType](nspersistentcloudkitcontainer/eventtype.md)
+### Monitoring Container Events
+- [NSPersistentCloudKitContainer.EventType](./eventtype.md)
   The type of event in a persistent CloudKit container, either setup, import, or export.
-- [class NSPersistentCloudKitContainerEventRequest](nspersistentcloudkitcontainereventrequest.md)
+- [class NSPersistentCloudKitContainerEventRequest](../nspersistentcloudkitcontainereventrequest.md)
   A request to fetch setup, import, or export events in a persistent CloudKit container.
-- [class NSPersistentCloudKitContainerEventResult](nspersistentcloudkitcontainereventresult.md)
+- [class NSPersistentCloudKitContainerEventResult](../nspersistentcloudkitcontainereventresult.md)
   The result of a request to fetch persistent CloudKit container events.
-- [class let eventChangedNotification: NSNotification.Name](nspersistentcloudkitcontainer/eventchangednotification.md)
+- [class let eventChangedNotification: NSNotification.Name](./eventchangednotification.md)
   A notification that contains details about an event in a persistent CloudKit container.
-- [class let eventNotificationUserInfoKey: String](nspersistentcloudkitcontainer/eventnotificationuserinfokey.md)
+- [class let eventNotificationUserInfoKey: String](./eventnotificationuserinfokey.md)
   The user info dictionary key for the persistent CloudKit container event.
 
 

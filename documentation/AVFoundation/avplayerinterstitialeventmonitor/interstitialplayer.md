@@ -1,7 +1,8 @@
 # interstitialPlayer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that plays interstitial content.
 
@@ -20,9 +21,14 @@ An object that plays interstitial content.
 var interstitialPlayer: AVQueuePlayer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVQueuePlayer * interstitialPlayer;
+```
+
 ## See Also
 
-- [var primaryPlayer: AVPlayer?](avplayerinterstitialeventmonitor/primaryplayer.md)
+### Accessing the players
+- [var primaryPlayer: AVPlayer?](./primaryplayer.md)
   An object that plays primary content.
 
 

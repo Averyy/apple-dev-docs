@@ -1,12 +1,13 @@
 # printInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The printing information associated with the print operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The printing information associated with the print operation.
 var printInfo: NSPrintInfo { get set }
 ```
 
+```objc
+@property (copy) NSPrintInfo * printInfo;
+```
+
 ## Parameters
 
 - `aPrintInfo`: The new print settings for the receiver.
 
 ## See Also
 
-- [class NSPrintInfo](nsprintinfo.md)
+### Modifying the Printing Information
+- [class NSPrintInfo](../nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 
 

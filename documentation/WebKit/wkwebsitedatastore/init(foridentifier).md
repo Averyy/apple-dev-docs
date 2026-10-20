@@ -1,7 +1,8 @@
 # init(forIdentifier:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the persistent data store with the unique identifier you provide.
 
@@ -18,6 +19,10 @@ Returns the persistent data store with the unique identifier you provide.
 init(forIdentifier identifier: UUID)
 ```
 
+```objc
++ (WKWebsiteDataStore *) dataStoreForIdentifier:(NSUUID *) identifier;
+```
+
 #### Discussion
 
 If the data store for the unique identifier you provide does not exist, the system creates and returns it. Use this method to get a data store for a profile.
@@ -30,9 +35,10 @@ This method throws an exception if the identifier is not valid.
 
 ## See Also
 
-- [class func `default`() -> WKWebsiteDataStore](wkwebsitedatastore/default.md)
+### Creating a data store object
+- [class func `default`() -> WKWebsiteDataStore](./default%28%29.md)
   Returns the default data store, which stores data persistently to disk.
-- [class func nonPersistent() -> WKWebsiteDataStore](wkwebsitedatastore/nonpersistent.md)
+- [class func nonPersistent() -> WKWebsiteDataStore](./nonpersistent%28%29.md)
   Creates a new data store object that stores website data in memory, and doesn’t write that data to disk.
 
 

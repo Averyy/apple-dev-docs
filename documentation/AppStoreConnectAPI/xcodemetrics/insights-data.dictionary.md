@@ -1,7 +1,8 @@
 # xcodeMetrics.Insights
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Analysis of power and performance data collected for your app that includes regressions and trends.
 
@@ -10,7 +11,7 @@ Analysis of power and performance data collected for your app that includes regr
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.Insights
 ```
 
@@ -21,7 +22,8 @@ object xcodeMetrics.Insights
 
 ## See Also
 
-- [object xcodeMetrics.ProductData](xcodemetrics/productdata-data.dictionary.md)
+### Objects
+- [object xcodeMetrics.ProductData](./productdata-data.dictionary.md)
   The metrics information of an app on a specific platform.
 
 

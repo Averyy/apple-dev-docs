@@ -1,7 +1,8 @@
 # availableChapterLocales
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locales of the asset’s chapter metadata.
 
@@ -22,9 +23,10 @@ var availableChapterLocales: [Locale] { get }
 
 ## See Also
 
-- [func chapterMetadataGroups(bestMatchingPreferredLanguages: [String]) -> [AVTimedMetadataGroup]](avcomposition/chaptermetadatagroups(bestmatchingpreferredlanguages:).md)
+### Accessing chapter metadata
+- [func chapterMetadataGroups(bestMatchingPreferredLanguages: [String]) -> [AVTimedMetadataGroup]](./chaptermetadatagroups%28bestmatchingpreferredlanguages%29.md)
   Returns an array of chapters with a locale that best matches the list of preferred languages.
-- [func chapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]?) -> [AVTimedMetadataGroup]](avcomposition/chaptermetadatagroups(withtitlelocale:containingitemswithcommonkeys:).md)
+- [func chapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]?) -> [AVTimedMetadataGroup]](./chaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
   Returns an array of chapters that contain the specified title locale and common keys.
 
 

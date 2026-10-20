@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this value into the given encoder.
 
@@ -30,7 +31,8 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](string/init(from:).md)
+### Encoding and Decoding
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

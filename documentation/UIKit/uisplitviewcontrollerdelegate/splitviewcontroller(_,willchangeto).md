@@ -1,7 +1,8 @@
 # splitViewController(_:willChangeTo:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the display mode for the split view controller is about to change.
 
@@ -9,13 +10,17 @@ Tells the delegate that the display mode for the split view controller is about 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func splitViewController(_ svc: UISplitViewController, willChangeTo displayMode: UISplitViewController.DisplayMode)
+```
+
+```objc
+- (void) splitViewController:(UISplitViewController *) svc willChangeToDisplayMode:(UISplitViewControllerDisplayMode) displayMode;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ The split view controller calls this method when its display mode is about to ch
 
 ## See Also
 
-- [func targetDisplayModeForAction(in: UISplitViewController) -> UISplitViewController.DisplayMode](uisplitviewcontrollerdelegate/targetdisplaymodeforaction(in:).md)
+### Responding to display mode changes
+- [func targetDisplayModeForAction(in: UISplitViewController) -> UISplitViewController.DisplayMode](./targetdisplaymodeforaction%28in%29.md)
   Asks the delegate to provide the display mode to apply when a split view controller action occurs.
 
 

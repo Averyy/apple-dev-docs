@@ -1,7 +1,8 @@
 # setCertificate(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the certificate that’s displayed in the view.
 
@@ -14,13 +15,18 @@ Specifies the certificate that’s displayed in the view.
 func setCertificate(_ certificate: SecCertificate!)
 ```
 
+```objc
+- (void) setCertificate:(SecCertificateRef) certificate;
+```
+
 ## Parameters
 
 - `certificate`: The new certificate for the view.
 
 ## See Also
 
-- [func certificate() -> Unmanaged<SecCertificate>!](sfcertificateview/certificate.md)
+### Related Documentation
+- [func certificate() -> Unmanaged<SecCertificate>!](./certificate%28%29.md)
   Returns the certificate currently displayed in the view.
 
 
